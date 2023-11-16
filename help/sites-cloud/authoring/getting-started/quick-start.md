@@ -2,9 +2,9 @@
 title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1561'
 ht-degree: 4%
 
 ---
@@ -258,7 +258,7 @@ Deze acties kunnen allemaal worden geactiveerd door:
 
    * [Verplaatsen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
-      * De wizard wordt geopend om de gegevens te verzamelen die nodig zijn om de pagina te verplaatsen. Volg de aanwijzingen op het scherm.
+      * De wizard wordt geopend om de informatie te verzamelen die nodig is om de pagina te verplaatsen. Volg de aanwijzingen op het scherm.
 
    * [Verwijderen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
@@ -292,7 +292,7 @@ Het slotpictogram ziet er bijvoorbeeld als volgt uit:
 
    ![Weergave Verwijzingen](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Tik/klik op het gewenste type verwijzing om meer details weer te geven en (indien van toepassing) verdere acties te ondernemen.
+1. Tik/klik op het gewenste type verwijzing om meer details weer te geven en (indien van toepassing) verdere handelingen uit te voeren.
 
 ### Een versie van uw pagina maken {#creating-a-version-of-your-page}
 
@@ -318,7 +318,7 @@ Hetzelfde basismechanisme wordt gebruikt bij het herstellen en/of vergelijken va
 
    Als er al een versie van de pagina is opgeslagen, wordt deze weergegeven in de tijdlijn.
 
-1. Tik/klik op de versie die u wilt herstellen. Hier worden extra actieknoppen weergegeven:
+1. Tik/klik op de versie die u wilt herstellen. Hier worden extra knoppen voor handelingen weergegeven:
 
    * **Deze versie herstellen**
 

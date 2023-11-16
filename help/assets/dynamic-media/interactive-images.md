@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '4142'
 ht-degree: 1%
@@ -134,7 +134,7 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de resulterende ho
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>In dit geval bevat de URL twee verschillende onderdelen. SKU wordt opgeslagen in <code>prodId</code> parameter en categorie-id<code></code> wordt opgeslagen in het dialoogvenster <code>category=</code> parameter.</p> <p>Daarom zijn de hotspot-definities paren. Namelijk een waarde SKU en een extra geroepen variabele <code>categoryId</code>. De resulterende paren zijn:</p>
+    </ul> <p>In dit geval bevat de URL twee verschillende onderdelen. De SKU wordt opgeslagen in de <code>prodId</code> parameter en categorie-id<code></code> wordt opgeslagen in het dialoogvenster <code>category=</code> parameter.</p> <p>Daarom zijn de hotspot-definities paren. Dat wil zeggen, een SKU-waarde en een extra variabele genaamd <code>categoryId</code>. De resulterende paren zijn als volgt:</p>
     <ul>
       <li><p>SKU is <strong><code>305466</code></strong> en <code>categoryId</code> is <code>1100004</code>.</p> </li>
       <li><p>SKU is <strong><code>310181</code></strong> en <code>categoryId</code> is <strong><code>1100004</code></strong>.</p> </li>
@@ -148,7 +148,7 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de resulterende ho
 
 U kunt dezelfde aanpak in de drie bovenstaande voorbeelden toepassen op de [demo-webpagina](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
-De demo-webpagina heeft verschillende productminiaturen, elk met een Quickview-knop met het label &quot;Meer weergeven&quot;. Zorg dat het foutopsporingsprogramma van uw webbrowser nog is geactiveerd en selecteer elke knop en noteer de opgenomen URL&#39;s van de Snelle weergave. Nadat u alle vier de product Snelle meningen activeert beschikbaar op de pagina, hebt u de volgende lijst van de verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
+De demo-webpagina heeft verschillende productminiaturen, elk met een Quickview-knop met het label &quot;Meer weergeven&quot;. Selecteer elke knop terwijl het foutopsporingsprogramma van uw webbrowser nog is geactiveerd en noteer de opgenomen URL&#39;s van de Snelle weergave. Nadat u alle vier de product Snelle meningen activeert beschikbaar op de pagina, hebt u de volgende lijst van de verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -179,7 +179,7 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
 **Een voorinstelling voor een interactieve afbeeldingsviewer maken:**
 
 1. Ga in het linkerspoor naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Create]**.
+1. Tik rechtsboven op de pagina op **[!UICONTROL Create]**.
 1. Typ in het dialoogvenster Nieuwe voorinstelling voor viewer een naam om de voorinstelling voor de interactieve bannerviewer te beschrijven.
 
    Deze titel wordt weergegeven op de pagina met de lijst met voorinstellingen voor viewers nadat u de titel hebt opgeslagen.
@@ -192,7 +192,7 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
    * Tik op het pictogram Asset Picker om uw eigen hotspot-afbeelding te uploaden die u voor afbeeldingen wilt gebruiken. Navigeer op de pagina Inhoud selecteren naar de gewenste hotspot-afbeelding en selecteer deze. Selecteer het pictogram Vinkje in de rechterbovenhoek.
    * Tik op het pictogram Hotspot-galerie om een vooraf gedefinieerde hotspot-afbeelding te selecteren. Tik in het palet van de hotspot op de hotspot die u wilt gebruiken.
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
+1. Tik rechtsboven op de pagina op **[!UICONTROL Save]**.
 
    Zorg ervoor dat u de nieuwe viewervoorinstelling publiceert.
 
@@ -210,7 +210,7 @@ Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de vol
 
    Zie [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets).
 
-   U kunt nu hotspots toevoegen aan de afbeeldingsbanner. zie de volgende taak hieronder.
+   U kunt nu hotspots toevoegen aan de afbeeldingsbanner. Zie de volgende taak hieronder.
 
 ## Hotspots toevoegen aan een afbeeldingsbanner {#adding-hotspots-to-an-image-banner}
 
@@ -234,7 +234,7 @@ Zie [(Optioneel) Interactieve afbeeldingen voorvertonen](#optional-previewing-in
 >
 Wanneer u hotspots toevoegt aan een afbeelding in een interactieve afbeelding of een carrouselbanner, worden de hotspotgegevens opgeslagen op dezelfde metagegevenslocatie. Deze locatie is relatief ten opzichte van de locatie van de afbeelding, ongeacht of het een interactieve afbeelding of een carrouselbanner betreft. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
 >
-Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt in plaats daarvan interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
+Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. Interactieve afbeeldingen bieden dat niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt in plaats daarvan interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
 >
 Zie ook [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md).
 
@@ -247,9 +247,9 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 1. Navigeer in de weergave Elementen naar de afbeeldingsbanner die u interactief wilt maken.
 1. Voer een van de volgende handelingen uit:
 
-   * Houd de aanwijzer boven de afbeelding en tik vervolgens op **[!UICONTROL Select]** (vinkje). Tik op de werkbalk op **[!UICONTROL Edit]**.
+   * Houd de afbeelding aan en tik vervolgens op **[!UICONTROL Select]** (vinkje). Tik op de werkbalk op **[!UICONTROL Edit]**.
 
-   * Houd de aanwijzer boven de afbeelding en tik vervolgens op **[!UICONTROL More actions]** (pictogram met drie punten) **[!UICONTROL > Edit]**.
+   * Houd de afbeelding aan en tik vervolgens op **[!UICONTROL More actions]** (pictogram met drie punten) **[!UICONTROL > Edit]**.
 
    * Tik op de afbeelding om deze te openen op de pagina Detailweergave. Tik in de werkbalk op **[!UICONTROL Edit]**.
 
@@ -266,11 +266,11 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 
    * Selecteer **[!UICONTROL Quickview]**.
 
-      * Als u een Experience Manager Sites- of eCommerce-klant bent, selecteert u het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Selecteer het product dat u wilt gebruiken en tik vervolgens op **Selecteren** in de rechterbovenhoek van de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
+      * Als u een Experience Manager Sites- of eCommerce-klant bent, selecteert u het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Selecteer het product dat u wilt gebruiken en tik vervolgens op **Selecteren** rechtsboven op de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
       * Als u *niet* een Experience Manager Sites- of eCommerce-klant
 
-         * Zie [Hotspotvariabelen identificeren](#optional-identifying-hotspot-variables); U moet deze variabelen definiëren.
-         * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU van het product. De ingevoerde waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening. Het zorgt ervoor dat het systeem weet om geëtste hotspot met een bepaalde Snelle mening van SKU te associëren.
+         * Zie [Hotspotvariabelen identificeren](#optional-identifying-hotspot-variables); u moet deze variabelen definiëren.
+         * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU van het product. De ingevoerde waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening. Het zorgt ervoor dat het systeem weet om geplakte hotspot met een bepaalde Snelle mening van SKU te associëren.
          * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]**. Geef in het tekstveld een extra variabele op. Bijvoorbeeld: `category=Mens` is een toegevoegde variabele.
 
    * Selecteer **[!UICONTROL Hyperlink]**.
@@ -284,7 +284,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 
    * Selecteer **[!UICONTROL Experience Fragment]**.
 
-      * Als u een Experience Manager Sites-klant bent, selecteert u het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Selecteer het ervaringsfragment dat u wilt gebruiken. Tik vervolgens op **[!UICONTROL Select]** in de rechterbovenhoek van de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
+      * Als u een Experience Manager Sites-klant bent, selecteert u het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Selecteer het ervaringsfragment dat u wilt gebruiken. Tik vervolgens op **[!UICONTROL Select]** rechtsboven op de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
 Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Geef de breedte en hoogte van het ervaringsfragment op zoals u het wilt weergeven op de banner.
@@ -342,7 +342,7 @@ De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat 
 
 **Voorbeeld**
 
-Met de [demo-website als voorbeeld](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), merkt u op dat het beeld van de drie individuen statisch is `IMG` tag:
+Met de [demo-website als voorbeeld](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), merkt u op dat het beeld van de drie personen statisch is `IMG` tag:
 
 ```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
@@ -405,7 +405,7 @@ De insluitcode die door Experience Manager Assets wordt geretourneerd, heeft een
              s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
-                    //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
+                    //To pass other parameter from the hotspot, add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
                     //See your Quickviewer plugin for the Quickview call
                  },
@@ -425,7 +425,7 @@ Met behulp van de vorige URL-voorbeelden van Quickview kunt u in de volgende voo
 <table>
  <tbody>
   <tr>
-   <td><p>Single SKU, gevonden in het vraagkoord</p> </td>
+   <td><p>Enige SKU, die in het vraagkoord wordt gevonden</p> </td>
    <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";

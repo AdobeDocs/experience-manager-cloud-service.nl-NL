@@ -2,9 +2,9 @@
 title: Programma's en programmatypen
 description: Leer meer over de hiërarchie van Cloud Manager en hoe de verschillende typen programma's in de structuur passen en hoe ze verschillen.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Een voorbeeld is vaak handig bij het contextualiseren van deze hiërarchie.
 
 Er wordt automatisch een programma voor Cloud Manager geleverd met een eigen git-opslagruimte.
 
-Om tot de gegevensopslagplaats van de Manager van de Wolk toegang te hebben, zullen de gebruikers een git cliënt met een bevel-lijn hulpmiddel, een standalone visuele git cliënt, of winde van de gebruiker van keus zoals Eclipse, IntelliJ, of NetBeans moeten gebruiken.
+Om tot de gegevensopslagplaats van de Manager van de Wolk toegang te hebben, moeten de gebruikers een git cliënt met een bevel-lijn hulpmiddel, een standalone visuele git cliënt, of winde van de gebruiker van keus zoals Eclipse, IntelliJ, of NetBeans gebruiken.
 
 Zodra een client is ingesteld, kunt u de git-opslagruimte beheren vanuit de gebruikersinterface van Cloud Manager. Ga voor meer informatie over het beheren van git met de gebruikersinterface van Cloud Manager naar [Toegang tot it](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 

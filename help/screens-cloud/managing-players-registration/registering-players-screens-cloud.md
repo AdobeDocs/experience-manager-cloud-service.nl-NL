@@ -2,9 +2,9 @@
 title: Afspeellagen registreren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u spelers kunt registreren in as a Cloud Service schermen.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Nadat u spelers voor de as a Cloud Service schermen hebt geïnstalleerd en gecon
 
 Met dit document krijgt u meer inzicht in het registreren van spelers bij de Screens Services Provider. Na het lezen moet u in staat zijn om:
 
-* begrijpen hoe spelers kunnen worden geregistreerd
+* begrijpen hoe spelers worden geregistreerd
 * hoe te om het registratieproces van de Leverancier van de Diensten van het Scherm te voltooien
 
 ## Stappen om een schermspeler te registreren {#register-players}
@@ -39,23 +39,23 @@ Volg de onderstaande stappen om uw speler te registreren:
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player2.png)
 
-   1. **Registratiecode**: Naam voor je inschrijvingscode
-   1. **Vervaldatum registratiecode**: Vervaldatum van je inschrijvingscode
+   1. **Registratiecode**: Naam voor uw registratiecode
+   1. **Vervaldatum registratiecode**: Vervaldatum voor je inschrijvingscode
    1. **Gebruik beperken**: Schakel de knop in en uit om de gebruikslimiet van de registratiecode uit te schakelen. Standaard is de optie Gebruik beperken uitgeschakeld.
    1. **Gebruikslimiet**: Kies het nummer voor uw gebruikslimiet
 
-1. Klikken op **Maken** om de registratiecode te maken. U ziet de speler met de registratiecode in de lijst.
+1. Klikken **Maken** om de registratiecode te maken. U kunt de speler met de registratiecode in de lijst zien.
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player3.png)
 
 1. Klik op de waarde onder de kolom **REGISTRATIECODE**  om de waarde naar het klembord te kopiëren.
 
-1. Plak deze waarde in het dialoogvenster **Code invoeren** in het **Spelerregistratie** van de interface voor beheer van de AEM Screens-speler en klik op **Registreren**.
+1. Plak deze waarde in het dialoogvenster **Code invoeren** in het veld **Spelerregistratie** van de Admin UI van de speler van AEM Screens en klik **Registreren**.
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player4.png)
 
 
-1. Nadat u de code hebt toegevoegd, wordt de speler nu geregistreerd via de interface voor beheer van de speler.
+1. Wanneer u de code hebt toegevoegd, ziet u dat de speler nu is geregistreerd via de beheerdersinterface van de speler.
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player5.png)
 

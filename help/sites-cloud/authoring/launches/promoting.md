@@ -2,9 +2,9 @@
 title: Lanceringen promoten
 description: U moet opstartiepagina's promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
@@ -50,9 +50,9 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
       1. Selecteren **Starten bevorderen** om de wizard te openen.
    * De **Sites** console bij navigeren door opstartiepagina&#39;s:
       1. Selecteer de vereiste startpagina met [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-      1. De **Bevorderen** Deze handeling is beschikbaar op de werkbalk.
+      1. De **Bevorderen** is beschikbaar in de werkbalk.
    * De **Starten** console:
-      1. Selecteer de start (tik op de miniatuur of klik erop).
+      1. Selecteer de start (tik op de miniatuur of klik op deze).
       1. Selecteren **Bevorderen**.
 1. In de eerste stap kunt u het volgende opgeven:
    * **Doel**
@@ -72,7 +72,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
      >
      >Dit geldt voor één keer starten, als u geneste lanceringen hebt, zie [Een geneste start bevorderen](#promoting-a-nested-launch).
 1. Selecteren **Volgende** om verder te gaan.
-1. U kunt de pagina&#39;s bekijken die u wilt promoten. deze zijn afhankelijk van het gekozen paginabereik:
+1. U kunt de pagina&#39;s bekijken die u wilt promoten. Deze zijn afhankelijk van het gekozen paginabereik:
 
    ![Aanbieding bekijken](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -132,6 +132,6 @@ Gebruik workflowmodellen voor bulkverwerking van geconverteerde startpagina&#39;
 
 Als u een workflow automatisch wilt starten wanneer pagina&#39;s worden geconverteerd, configureert u een workflow voor het pakketknooppunt. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
 
-U kunt bijvoorbeeld automatisch aanvragen voor paginanactivering genereren wanneer auteurs pagina&#39;s starten promoten. Configureer een werkstroomstartprogramma om de workflow voor activering van aanvragen te starten wanneer het pakketknooppunt wordt gewijzigd.
+U kunt bijvoorbeeld automatisch aanvragen voor paginanactivering genereren wanneer auteurs pagina&#39;s voor Starten promoten. Configureer een werkstroomstartprogramma om de workflow voor activering van aanvragen te starten wanneer het pakketknooppunt wordt gewijzigd.
 
 ![Aanbiedingsworkflow](/help/sites-cloud/authoring/assets/launches-create-workflow.png)

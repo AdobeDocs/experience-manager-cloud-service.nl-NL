@@ -2,7 +2,7 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 0%
@@ -40,7 +40,7 @@ De meest gangbare gebruiksgevallen voor het gebruik van omgevingsvariabelen zijn
 1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer het bestand dat u wilt beheren.
 1. Selecteer de **Omgevingen** selecteert u vervolgens in het linkernavigatievenster de omgeving waarvoor u een omgevingsvariabele wilt maken.
 1. Selecteer binnen de details van de omgeving de optie **Configuratie** dan selecteert u **Toevoegen** om de **Omgevingsconfiguratie** in.
-   * Als u voor het eerst een omgevingsvariabele toevoegt, ziet u een **Configuratie toevoegen** midden op de pagina. U kunt deze knop of **Toevoegen** om de **Omgevingsconfiguratie** in.
+   * Als u voor het eerst een omgevingsvariabele toevoegt, kunt u een **Configuratie toevoegen** midden op de pagina. U kunt deze knop of **Toevoegen** om de **Omgevingsconfiguratie** in.
 
    ![Tabblad Configuratie](assets/configuration-tab.png)
 

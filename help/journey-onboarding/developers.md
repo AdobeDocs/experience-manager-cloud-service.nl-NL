@@ -4,9 +4,9 @@ description: Zodra zij de systeembeheerder opstelling de noodzakelijke wolkenmid
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1411'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Taken van ontwikkelaar- en implementatiebeheer {#developer-deployment-manager}
 
-In dit facultatieve deel van [aan boord gaan,](overview.md) u zult leren hoe de ontwikkelaars en plaatsingsmanagers tot git kunnen toegang hebben om toepassingen te ontwikkelen en pijpleidingen te gebruiken om hen op te stellen.
+In dit facultatieve deel van [aan boord gaan,](overview.md) u leert hoe de ontwikkelaars en plaatsingsmanagers tot git kunnen toegang hebben om toepassingen te ontwikkelen en pijpleidingen te gebruiken om hen op te stellen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -82,7 +82,7 @@ Voer de volgende stappen uit om uw eerste niet-productie implementatiepijplijn t
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Toegang krijgen tot de **Pijpleidingen** kaart van het startscherm van Cloud Manager. Klikken op **+Toevoegen** en selecteert u **Niet-productiepijpleiding toevoegen**.
+1. Toegang krijgen tot de **Pijpleidingen** kaart van het startscherm van Cloud Manager. Klikken **+Toevoegen** en selecteert u **Niet-productiepijpleiding toevoegen**.
 
    ![Niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
@@ -119,7 +119,7 @@ Nu de ontwikkelaars hun douanecode aan de gokbewaarplaatsen hebben toegevoegd en
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in de vorige sectie creeerde en selecteer **Uitvoeren** in het menu.
+1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ovaalknop naast de pijplijn die u in de vorige sectie hebt gemaakt en selecteer **Uitvoeren** in het menu.
 
 1. De pijpleidingslooppas begint en door **Status** kolom.
 

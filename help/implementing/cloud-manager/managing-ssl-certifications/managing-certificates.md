@@ -2,9 +2,9 @@
 title: SSL-certificaten beheren
 description: Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Wanneer een certificaat verloopt, werken domeinen die in gebruik zijn met het ve
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 1. Navigeren naar **Omgevingen** van het scherm **Overzicht** pagina.
 1. Ga naar de **SSL-certificaten** van het scherm **Omgevingen** scherm.
-1. Er wordt een tabel met een rij weergegeven voor elk SSL-certificaat dat is geïnstalleerd in uw programma. Klik op de knop met de ovaal helemaal rechts in de rij van het certificaat dat u wilt bijwerken en selecteer **Weergeven en bijwerken**.
+1. U ziet een tabel met een rij voor elk SSL-certificaat dat in uw programma is geïnstalleerd. Klik op de knop Ovaal helemaal rechts in de rij van het certificaat dat u wilt bijwerken en selecteer **Weergeven en bijwerken**.
 1. De certificaatdetails worden weergegeven en kunnen worden bijgewerkt.
-1. Voer de pijplijn uit om het bijgewerkte certificaat in te voeren.
+1. Stel de pijpleiding in werking om het bijgewerkte certificaat op te stellen.
 
 >[!NOTE]
 >
@@ -56,9 +56,9 @@ Ga als volgt te werk om een SSL-certificaat te verwijderen.
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 1. Navigeren naar **Omgevingen** van het scherm **Overzicht** pagina.
 1. Ga naar de **SSL-certificaten** van het scherm **Omgevingen** scherm.
-1. Er wordt een tabel met een rij weergegeven voor elk SSL-certificaat dat is geïnstalleerd in uw programma. Klik op de knop met de ovaal helemaal rechts in de rij van het certificaat dat u wilt verwijderen en selecteer **Verwijderen**.
+1. U ziet een tabel met een rij voor elk SSL-certificaat dat in uw programma is geïnstalleerd. Klik op de ellips helemaal rechts in de rij van het certificaat dat u wilt verwijderen en selecteer **Verwijderen**.
 1. Bevestig de verwijdering in de **SSL-certificaat verwijderen** in.
-1. Voer de pijplijn uit om het verwijderde certificaat ongedaan te maken.
+1. Stel de pijpleiding in werking om het geschrapte certificaat ongedaan te maken.
 
 >[!NOTE]
 >

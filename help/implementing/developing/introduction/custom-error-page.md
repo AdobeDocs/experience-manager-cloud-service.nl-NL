@@ -2,16 +2,16 @@
 title: Aangepaste foutpagina's
 description: AEM wordt geleverd met een standaardfouthandler voor de afhandeling van HTTP-fouten, die kan worden aangepast.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
 
 # Foutpagina&#39;s aanpassen {#customizing-error-pages}
 
-AEM wordt geleverd met een standaardfouthandler voor de afhandeling van HTTP-fouten; bijvoorbeeld door het volgende weer te geven:
+AEM wordt geleverd met een standaardfouthandler voor de afhandeling van HTTP-fouten, bijvoorbeeld door het volgende weer te geven:
 
 ![Standaardfoutbericht](assets/error-message-standard.png)
 
@@ -36,7 +36,7 @@ U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de
    * Van `/libs/sling/servlet/errorhandler/`
    * tot `/apps/sling/servlet/errorhandler/`
 
-   Het doelpad bestaat niet standaard, dus moet u het voor het eerst maken.
+   Het doelpad bestaat niet standaard. U moet het dus maken wanneer u dit voor het eerst doet.
 
 1. Ga naar `/apps/sling/servlet/errorhandler`. Hier kunt u:
 
@@ -47,7 +47,7 @@ U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de
 
 >[!CAUTION]
 >
->De `404.jsp` het script is specifiek ontworpen om op AEM authenticatie in te spelen; met name om systeemaanmelding mogelijk te maken in het geval van deze fouten.
+>De `404.jsp` het script is specifiek ontworpen om rekening te houden met AEM verificatie, met name om systeemaanmelding mogelijk te maken in het geval van deze fouten.
 >
 >Daarom zou de vervanging van dit manuscript met grote voorzichtigheid moeten worden gedaan.
 
@@ -60,9 +60,9 @@ Wanneer de verzoekverwerking in een uitzondering resulteert, het kader Apache Sl
 * Hiermee wordt de uitzondering geregistreerd
 * En retourneert in de hoofdtekst van de respons:
    * De HTTP-responscode 500
-   * De trace van de uitzonderingsstapel
+   * De uitzonderingsstapeltracering
 
-Door [aanpassen van de pagina&#39;s die worden weergegeven door de fouthandler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` kan worden gemaakt. Het wordt echter alleen gebruikt als `HttpServletResponse.sendError(500)` uitdrukkelijk wordt uitgevoerd; dat wil zeggen, van een uitzonderingsvanger.
+Door [aanpassen van de pagina&#39;s die worden weergegeven door de fouthandler](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` kan worden gemaakt. Het wordt echter alleen gebruikt als `HttpServletResponse.sendError(500)` wordt uitgevoerd uitdrukkelijk; namelijk van een uitzonderingsvanger.
 
 Anders is de antwoordcode ingesteld op 500, maar wordt de `500.jsp` script niet uitgevoerd.
 

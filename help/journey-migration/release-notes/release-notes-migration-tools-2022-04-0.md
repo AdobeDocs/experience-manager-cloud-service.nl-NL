@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Se
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.4.0
 feature: Release Information
 exl-id: 4941736b-82cd-4050-b3e9-aef250d5c4c7
-source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De releasedatum voor de analyse van best practices v2.1.28 is 22 april 2022.
 
 * Mogelijkheid om het gebruik van niet-ondersteunde API&#39;s van Asset Manager te detecteren en hierover verslag uit te brengen. Er zijn vier API&#39;s die niet meer worden ondersteund in AEM as a Cloud Service. Klanten moeten ervoor zorgen dat ze deze API&#39;s niet meer gebruiken en moeten de nieuwe methode voor het uploaden van middelen gebruiken.
 
-* Mogelijkheid om het gebruik van sjablonen voor inhoudsfragmenten te detecteren. Sjablonen voor inhoudsfragmenten worden niet meer ondersteund voor het maken van nieuwe inhoudsfragmenten op AEM as a Cloud Service. Klanten moeten contentfragmentmodellen maken om sjablonen voor inhoudsfragmenten te vervangen.
+* Mogelijkheid om het gebruik van sjablonen voor inhoudsfragmenten te detecteren. Sjablonen voor inhoudsfragmenten worden niet meer ondersteund voor het maken van nieuwe inhoudsfragmenten op AEM as a Cloud Service. Klanten moeten modellen van inhoudsfragmenten maken om sjablonen voor inhoudsfragmenten te vervangen.
 
 * Mogelijkheid om activa met meer dan 100 afstammingen onder het metadatknooppunt van het actief in de repository te detecteren. Het wordt aanbevolen om metagegevensknooppunten te verwijderen die niet nodig zijn om de prestaties te verbeteren wanneer mappen met dergelijke elementen worden geladen.
 

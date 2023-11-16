@@ -2,10 +2,10 @@
 title: Uw inbox
 description: Leer hoe u de meldingen in uw Postvak IN kunt gebruiken om uw taken te beheren.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 15%
+source-wordcount: '912'
+ht-degree: 14%
 
 ---
 
@@ -142,7 +142,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * Een wizard Handelingen is gestart
    * Er wordt een documentatiepagina geopend
 
-   Bijvoorbeeld: **Delegeren** wordt een dialoogvenster geopend:
+   Bijvoorbeeld: **Delegeren** Hiermee wordt een dialoogvenster geopend:
 
    ![Inbox-taak delegeren](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

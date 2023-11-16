@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2411'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/enhanced-smart-tags.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar hun digitale activa te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u de elementen gemakkelijk herkennen en ophalen in zoekopdrachten.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren op basis van bedrijfstaxonomie de activa met de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen. Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer er wordt gezocht naar een promotiecampagne.
 
@@ -59,7 +59,7 @@ U kunt de volgende typen elementen labelen:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-AEM voegt de slimme tags standaard toe aan de op tekst gebaseerde elementen en aan video&#39;s. Als u slimme tags automatisch wilt toevoegen aan afbeeldingen, voert u de volgende taken uit.
+AEM voegt de slimme tags standaard toe aan de tekstelementen en aan video&#39;s. Als u slimme tags automatisch wilt toevoegen aan afbeeldingen, voert u de volgende taken uit.
 
 * [Leer labelmodellen en -richtlijnen](#understand-tag-models-guidelines).
 * [Het model trainen](#train-model).
@@ -68,7 +68,7 @@ AEM voegt de slimme tags standaard toe aan de op tekst gebaseerde elementen en a
 
 ## Leer labelmodellen en -richtlijnen {#understand-tag-models-guidelines}
 
-Een labelmodel is een groep gerelateerde tags die zijn gekoppeld aan verschillende visuele aspecten van afbeeldingen die worden gecodeerd. Tags hebben betrekking op de duidelijk verschillende visuele aspecten van afbeeldingen, zodat de tags, wanneer deze worden toegepast, helpen bij het zoeken naar specifieke typen afbeeldingen. Een schoenenverzameling kan bijvoorbeeld verschillende tags hebben, maar alle tags zijn gerelateerd aan schoenen en kunnen tot hetzelfde tagmodel behoren. Wanneer de labels worden toegepast, kunt u verschillende soorten schoenen vinden, bijvoorbeeld op basis van ontwerp of gebruik. Om de inhoudrepresentatie van een trainingsmodel te begrijpen in [!DNL Experience Manager]U kunt een trainingsmodel visualiseren als een entiteit op hoofdniveau die bestaat uit een groep handmatig toegevoegde tags en voorbeeldafbeeldingen voor elke tag. Elke tag kan uitsluitend op een afbeelding worden toegepast.
+Een labelmodel is een groep gerelateerde tags die zijn gekoppeld aan verschillende visuele aspecten van afbeeldingen die worden gecodeerd. Tags hebben betrekking op de duidelijk verschillende visuele aspecten van afbeeldingen, zodat de tags, wanneer deze worden toegepast, helpen bij het zoeken naar specifieke typen afbeeldingen. Een schoenenverzameling kan bijvoorbeeld verschillende tags hebben, maar alle tags zijn gerelateerd aan schoenen en kunnen tot hetzelfde tagmodel behoren. Wanneer de labels worden toegepast, kunt u verschillende soorten schoenen vinden, bijvoorbeeld op basis van ontwerp of gebruik. De inhoudrepresentatie van een trainingsmodel begrijpen in [!DNL Experience Manager]U kunt een trainingsmodel visualiseren als een entiteit op hoofdniveau die bestaat uit een groep handmatig toegevoegde tags en voorbeeldafbeeldingen voor elke tag. Elke tag kan uitsluitend op een afbeelding worden toegepast.
 
 Voordat u een tagmodel maakt en de service traint, moet u een set unieke tags identificeren die de objecten in de afbeeldingen het beste beschrijven in de context van uw bedrijf. Zorg ervoor dat de elementen in de beheerde set overeenkomen met [de opleidingsrichtsnoeren](#training-guidelines).
 
@@ -78,7 +78,7 @@ Zorg ervoor dat de afbeeldingen in de trainingsset voldoen aan de volgende richt
 
 **Hoeveelheid en grootte:** Minimaal 10 afbeeldingen en maximaal 50 afbeeldingen per tag.
 
-**Coherentie**: Zorg ervoor dat de afbeeldingen voor een tag visueel overeenkomen. U kunt de tags met betrekking tot dezelfde visuele aspecten (zoals hetzelfde type objecten in een afbeelding) het beste aan één tagmodel toevoegen. Het is bijvoorbeeld geen goed idee om al deze afbeeldingen van tags te voorzien `my-party` (voor training) omdat ze niet op elkaar lijken.
+**Coherentie**: Zorg ervoor dat de afbeeldingen voor een tag visueel op elkaar lijken. U kunt de tags met betrekking tot dezelfde visuele aspecten (zoals hetzelfde type objecten in een afbeelding) het beste aan één tagmodel toevoegen. Het is bijvoorbeeld geen goed idee om al deze afbeeldingen van tags te voorzien `my-party` (voor training) omdat ze niet op elkaar lijken.
 
 ![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](assets/do-not-localize/coherence.png)
 
@@ -96,11 +96,11 @@ Zorg ervoor dat de afbeeldingen in de trainingsset voldoen aan de volgende richt
 
 **Aantal tags**: Adobe raadt u aan een model op te leiden met ten minste twee verschillende tags en ten minste tien verschillende afbeeldingen voor elke tag. Voeg in één tagmodel niet meer dan 50 tags toe.
 
-**Aantal voorbeelden**: Voeg voor elke tag ten minste tien voorbeelden toe. Adobe beveelt echter ongeveer 30 voorbeelden aan. Er worden maximaal 50 voorbeelden per tag ondersteund.
+**Aantal voorbeelden**: Voeg voor elke tag ten minste tien voorbeelden toe. De Adobe beveelt echter ongeveer 30 voorbeelden aan. Er worden maximaal 50 voorbeelden per tag ondersteund.
 
-**Voorkomen van valse positieven en conflicten**: Adobe raadt u aan één tagmodel te maken voor één visueel aspect. Structuur de labelmodellen zodanig dat overlappende codes tussen de modellen worden voorkomen. Gebruik bijvoorbeeld geen algemene tags, zoals `sneakers` in twee verschillende tagmodellen `shoes` en `footwear`. Het trainingsproces overschrijft het ene getrainde tagmodel met het andere voor een algemeen trefwoord.
+**Voorkomen van valse positieven en conflicten**: Adobe raadt u aan één tagmodel te maken voor één visueel aspect. Structuur de labelmodellen zodanig dat overlappende codes tussen de modellen worden voorkomen. Gebruik bijvoorbeeld geen algemene tags, zoals `sneakers` in twee verschillende tagmodellen: `shoes` en `footwear`. Het trainingsproces overschrijft het ene getrainde tagmodel met het andere voor een algemeen trefwoord.
 
-**Voorbeelden**: Hier volgen nog enkele voorbeelden van:
+**Voorbeelden**: Meer voorbeelden hiervan zijn:
 
 * Maak een tagmodel dat alleen het volgende bevat:
 
@@ -122,7 +122,7 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
 
 1. Maak de benodigde labels en de juiste codestructuur. Upload de relevante afbeeldingen in de DAM-opslagplaats.
 1. In [!DNL Experience Manager] gebruikersinterface, toegang **[!UICONTROL Assets]** > **[!UICONTROL Smart Tag Training]**.
-1. Klik op **[!UICONTROL Create]**. Een **[!UICONTROL Title]**, **[!UICONTROL Description]**.
+1. Klik op **[!UICONTROL Create]**. Geef een **[!UICONTROL Title]**, **[!UICONTROL Description]**.
 1. Klik op het mappictogram in **[!UICONTROL Tags]** veld. Er wordt een pop-upvenster geopend.
 1. Zoek of selecteer de juiste tags van de bestaande tags in `cq-tags` die u aan het model wilt toevoegen. Klik op **[!UICONTROL Next]**.
 
@@ -131,28 +131,28 @@ Voer de volgende stappen uit om een model voor uw bedrijfsspecifieke tags te mak
    >U kunt de codestructuur in oplopende of aflopende volgorde sorteren op basis van de opties **[!UICONTROL Name]** (alfabetische volgorde), **[!UICONTROL Created]** datum, of **[!UICONTROL Modified]** datum.
 
 
-1. In de **[!UICONTROL Select Assets]** dialoogvenster, klikt u op **[!UICONTROL Add Assets]** op elke tag. Zoek in de DAM-opslagplaats of blader door de opslagplaats om ten minste 10 en ten hoogste 50 afbeeldingen te selecteren. Selecteer elementen en niet de map. Nadat u de afbeeldingen hebt geselecteerd, klikt u op **[!UICONTROL Select]**.
+1. In de **[!UICONTROL Select Assets]** dialoogvenster, klikt u op **[!UICONTROL Add Assets]** op elke tag. Zoek in de DAM-opslagplaats of blader door de opslagplaats om ten minste 10 en ten hoogste 50 afbeeldingen te selecteren. Selecteer elementen en niet de map. Klik op **[!UICONTROL Select]**.
 
    ![Trainingsstatus weergeven](assets/smart-tags-training-status.png)
 
-1. Als u een voorvertoning van de miniaturen van de geselecteerde afbeeldingen wilt weergeven, klikt u op de accordeon vóór een tag. U kunt uw selectie wijzigen door op **[!UICONTROL Add Assets]**. Als u tevreden bent met de selectie, klikt u op **[!UICONTROL Submit]**. In de gebruikersinterface wordt onder aan de pagina een melding weergegeven dat de training wordt gestart.
-1. Controleer de status van de training in de **[!UICONTROL Status]** kolom voor elk tagmodel. Mogelijke statussen [!UICONTROL Pending], [!UICONTROL Trained], en [!UICONTROL Failed].
+1. Als u een voorvertoning van de miniaturen van de geselecteerde afbeeldingen wilt weergeven, klikt u op de accordeon vóór een tag. U kunt uw selectie wijzigen door op **[!UICONTROL Add Assets]**. Als u tevreden bent met de selectie, klikt u **[!UICONTROL Submit]**. In de gebruikersinterface wordt onder aan de pagina een melding weergegeven dat de training wordt gestart.
+1. Controleer de status van de training in het deelvenster **[!UICONTROL Status]** kolom voor elk tagmodel. Mogelijke statussen zijn [!UICONTROL Pending], [!UICONTROL Trained], en [!UICONTROL Failed].
 
 ![Workflow voor het trainen van coderingsmodel voor slimme tags](assets/smart-tag-model-training-flow.png)
 
-*Afbeelding: Stappen van de trainingsworkflow om het coderingsmodel te trainen.*
+*Afbeelding: Stappen van de trainingsworkflow om het coderingsmodel op te leiden.*
 
 ### Trainingsstatus en rapport weergeven {#training-status}
 
 Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de trainingsset met elementen, raadpleegt u het workflowrapport voor training in de rapportconsole.
 
 1. In [!DNL Experience Manager] interface, ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
-1. In de **[!UICONTROL Asset Reports]** pagina, klikt u op **[!UICONTROL Create]**.
-1. Selecteer **[!UICONTROL Smart Tags Training]** rapport, en klik dan **[!UICONTROL Next]** op de werkbalk.
+1. In de **[!UICONTROL Asset Reports]** pagina, klikt u **[!UICONTROL Create]**.
+1. Selecteer de **[!UICONTROL Smart Tags Training]** rapport, en klik dan **[!UICONTROL Next]** op de werkbalk.
 1. Geef een titel en beschrijving voor het rapport op. Laat onder **[!UICONTROL Schedule Report]** de optie **[!UICONTROL Now]** ingeschakeld. Als u het rapport voor later wilt plannen, selecteert u **[!UICONTROL Later]** en geeft u een datum en tijd op. Klik vervolgens op **[!UICONTROL Create]** op de werkbalk.
 1. Selecteer op de pagina **[!UICONTROL Asset Reports]** het rapport dat u hebt gegenereerd. Klik op **[!UICONTROL View]** op de werkbalk.
 1. Bekijk de details van het rapport. Het rapport geeft de trainingsstatus weer voor de tags die u hebt getraind. De groene kleur in het dialoogvenster **[!UICONTROL Training Status]** de kolom wijst erop dat de Slimme dienst van Markeringen voor de markering wordt getraind. Gele kleur geeft aan dat de service gedeeltelijk is opgeleid voor een bepaalde tag. Als u de service volledig wilt trainen voor een tag, voegt u meer afbeeldingen met de desbetreffende tag toe en voert u de trainingsworkflow uit. Als dit rapport uw tags niet bevat, voert u de trainingsworkflow opnieuw uit voor deze tags.Tags
-1. Als u het rapport wilt downloaden, selecteert u het in de lijst en klikt u op **[!UICONTROL Download]** op de werkbalk. Het rapport wordt gedownload als een spreadsheet.
+1. Om het rapport te downloaden, selecteer het van de lijst, en klik **[!UICONTROL Download]** op de werkbalk. Het rapport wordt gedownload als een spreadsheet.
 
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
@@ -191,7 +191,7 @@ Als u wilt controleren of de service Slimme tags is opgeleid voor uw tags in de 
 
 ## Elementen labelen met slimme tags in AEM {#tag-assets}
 
-Alle typen ondersteunde elementen worden automatisch gelabeld door [!DNL Experience Manager Assets] wanneer geüpload. Tags worden standaard ingeschakeld en werkt. AEM past de juiste slimme tags toe in bijna real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Alle typen ondersteunde elementen worden automatisch gelabeld door [!DNL Experience Manager Assets] bij uploaden. Tags worden standaard ingeschakeld en werkt. AEM past de juiste slimme tags toe in bijna real-time. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Voor afbeeldingen en video&#39;s zijn de slimme tags gebaseerd op een visueel aspect.
 
@@ -211,19 +211,19 @@ Slimme tags toepassen op uw digitale elementen:
 
 1. Om de digitale activa te identificeren die u niet relevant voor uw onderzoek vindt, inspecteer de onderzoeksresultaten.
 
-1. Selecteer een element en selecteer vervolgens ![Tagpictogram beheren](assets/do-not-localize/manage-tags-icon.png) op de werkbalk.
+1. Selecteer een element en selecteer vervolgens ![Tags beheren, pictogram](assets/do-not-localize/manage-tags-icon.png) op de werkbalk.
 
 1. Van de **[!UICONTROL Manage Tags]** pagina, controleert u de tags. Als u het element niet wilt doorzoeken op basis van een specifieke tag, selecteert u de tag en selecteert u ![Pictogram Verwijderen](assets/do-not-localize/delete-icon.png) op de werkbalk. U kunt ook `X` naast het label.
 
 1. Als u een hogere rang aan een tag wilt toewijzen, selecteert u de tag en selecteert u ![Pictogram Promoten](assets/do-not-localize/promote-icon.png) op de werkbalk. De tag die u promoot, wordt verplaatst naar de **[!UICONTROL Tags]** sectie.
 
-1. Selecteren **[!UICONTROL Save]** en selecteer vervolgens **[!UICONTROL OK]** om de [!UICONTROL Success] .
+1. Selecteren **[!UICONTROL Save]** en selecteer vervolgens **[!UICONTROL OK]** om de [!UICONTROL Success] in.
 
 1. Ga naar de [!UICONTROL Properties] pagina voor het element. Let erop dat de tag die u hebt bevorderd een grote relevantie krijgt en daarom hoger wordt weergegeven in de zoekresultaten.
 
 ### Begrijpen [!DNL Experience Manager] zoekresultaten met slimme tags {#understand-search}
 
-Standaard, [!DNL Experience Manager] zoektermen worden gecombineerd met een `AND` clausule. Het gebruik van slimme tags verandert dit standaardgedrag niet. Slimme tags gebruiken voegt een `OR` om een zoekterm te zoeken in de toegepaste slimme tags. Kijk bijvoorbeeld naar `woman running`. Middelen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat echter is gelabeld met een van de `woman` of `running` het gebruik van slimme tags wordt weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
+Standaard, [!DNL Experience Manager] zoektermen worden gecombineerd met een `AND` clausule. Het gebruik van slimme tags verandert dit standaardgedrag niet. Slimme tags gebruiken voegt een `OR` om een zoekterm te zoeken in de toegepaste slimme tags. Kijk bijvoorbeeld eens naar `woman running`. Middelen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat echter is gelabeld met een van de `woman` of `running` het gebruik van slimme tags wordt weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
 
 * Middelen met `woman` en `running` trefwoorden in de metagegevens.
 

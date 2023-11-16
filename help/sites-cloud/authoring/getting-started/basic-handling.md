@@ -2,9 +2,9 @@
 title: Basisbewerkingen
 description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2970'
 ht-degree: 3%
 
 ---
@@ -133,7 +133,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   In het midden van de spoorstaaf, en altijd tonend de beschrijving van het momenteel geselecteerde punt, staan de broodkruimels u toe om binnen een specifieke console te navigeren. In de **Sites** kunt u door de niveaus van uw website navigeren.
 
-  Klik gewoon op de tekst van de broodkruimel om een vervolgkeuzelijst weer te geven met de niveaus van de hiërarchie van het momenteel geselecteerde item. Klik op een bericht om naar die locatie te gaan.
+  Klik op de tekst van de broodkruimel om een vervolgkeuzelijst weer te geven met de niveaus van de hiërarchie van het geselecteerde item. Klik op een vermelding om naar die locatie te gaan.
 
   ![Voorbeeld van uitvouwen broodkruimels](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -171,7 +171,7 @@ Er zijn verschillende beschikbare Help-bronnen:
 
 * **Console, werkbalk**
 
-  Afhankelijk van uw locatie **Help** het pictogram zal de aangewezen middelen openen:
+  Afhankelijk van uw locatie **Help** het pictogram opent de aangewezen middelen:
 
   ![Help-pictogram](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -304,7 +304,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
    * De naam en het chevron van de bron worden benadrukt wanneer getikt of geklikt.
    * De kinderen van het geklikte/geplakte middel worden getoond in de kolom rechts van het aangeklikte/geplakte middel.
-   * Als u op een middelnaam tikt of klikt die geen kinderen heeft, worden zijn details getoond in de definitieve kolom.
+   * Als u tikt of op een middelnaam klikt die geen kinderen heeft, worden zijn details getoond in de definitieve kolom.
 
 * Als u op de miniatuur tikt of erop klikt, wordt de bron geselecteerd.
 
@@ -475,6 +475,6 @@ Zie het document [Het Siterail gebruiken om uw Sitethema te beheren](/help/sites
 
 ### Filter {#filter}
 
-Hiermee wordt een deelvenster geopend dat vergelijkbaar is met [zoeken](/help/sites-cloud/authoring/getting-started/search.md) terwijl de juiste locatiefilters al zijn ingesteld, kunt u de inhoud die u wilt bekijken verder filteren.
+Hiermee wordt een deelvenster geopend dat lijkt op [zoeken](/help/sites-cloud/authoring/getting-started/search.md) terwijl de juiste locatiefilters al zijn ingesteld, kunt u de inhoud die u wilt bekijken verder filteren.
 
 ![Voorbeeld van filter](/help/sites-cloud/authoring/assets/filter.png)

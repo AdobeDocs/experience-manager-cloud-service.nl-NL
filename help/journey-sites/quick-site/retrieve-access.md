@@ -2,9 +2,9 @@
 title: Toegang tot Git Repository ophalen
 description: Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot gegevensopslagruimte.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '889'
 ht-degree: 3%
 
 ---
@@ -15,11 +15,11 @@ Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen 
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Als u een front-end ontwikkelaar bent die slechts verantwoordelijk voor de aanpassing van het plaatsthema bent, hebt u geen kennis van nodig hoe AEM opstelling was en aan kan overslaan [Doelstelling](#objective) van dit document.
+Als u een front-end ontwikkelaar bent die alleen verantwoordelijk is voor de aanpassing van het site-thema, hebt u geen kennis nodig van de manier waarop AEM is ingesteld en kunt u naar de [Doelstelling](#objective) van dit document.
 
 Als u ook de rol van Cloud Manager of AEM beheerder en front-end ontwikkelaar vervult, hebt u in het vorige document van de AEM Quick Site Creation-reis geleerd, [Toegang verlenen aan de Front-End Developer,](grant-access.md) hoe u de front-end ontwikkelaar aan boord kunt nemen, zodat ze toegang hebben tot de git-opslagplaats, en u moet nu weten:
 
-* Hoe te om een front-end ontwikkelaar als gebruiker toe te voegen.
+* Een front-end ontwikkelaar toevoegen als een gebruiker.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
 
 Dit artikel neemt de volgende stap om te tonen hoe de front-end ontwikkelaar de toegang van de Manager van de Wolk gebruikt om geloofsbrieven terug te winnen om tot de AEM git bewaarplaats toegang te hebben.
@@ -76,9 +76,9 @@ Neem contact op met de beheerder van Cloud Manager als u deze e-mail niet hebt o
 
 ## Cloud Manager openen {#access-cloud-manager}
 
-1. Meld u aan bij Adobe Experience Cloud op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) of klik op de koppeling in de welkomstmail.
+1. Aanmelden bij Adobe Experience Cloud [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) of klik op de koppeling in de welkomstmail.
 
-1. Cloud Manager geeft een overzicht van de verschillende beschikbare programma&#39;s. Tik of klik op het bestand dat u wilt openen, zoals opgegeven door de beheerder van Cloud Manager. Als dit uw eerste front-end project voor AEMaaCS is, hebt u waarschijnlijk slechts één programma beschikbaar.
+1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Tik of klik op het bestand dat u wilt openen, zoals opgegeven door de beheerder van Cloud Manager. Als dit uw eerste front-end project voor AEMaaCS is, hebt u waarschijnlijk slechts één programma beschikbaar.
 
    ![Een programma selecteren in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -111,10 +111,10 @@ Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 * Begrijp op een hoog niveau wat Cloud Manager is.
 * Uw referenties zijn opgehaald voor toegang tot de AEM, zodat u uw aanpassingen kunt doorvoeren.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het document opnieuw te bekijken [Pas het thema Site aan,](customize-theme.md) waar u leert hoe het thema van de site is opgebouwd, hoe u het kunt aanpassen en hoe u kunt testen met live AEM-inhoud.
+Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het document opnieuw te bekijken [Pas het thema Site aan,](customize-theme.md) Hier leert u hoe het thema van de site is opgebouwd, hoe u het kunt aanpassen en hoe u het gebruik van live AEM-inhoud kunt testen.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site maken te gaan door het document te bekijken [Pas het thema Site aan,](customize-theme.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
 
-* [Documentatie Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Raadpleeg de documentatie van Cloud Manager voor meer informatie over de functies ervan.
+* [Documentatie Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Verken de documentatie van Cloud Manager voor meer informatie over de functies ervan.

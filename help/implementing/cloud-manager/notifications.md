@@ -2,9 +2,9 @@
 title: Meldingen
 description: Leer hoe te om informatie over pijpleidingsplaatsingen te ontvangen gebruikend het het berichtsysteem van Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De **Aankondigingen** bevat productmededelingen voor Adoben. Aankondigingen betr
 
 ![Zijbalk voor meldingen](assets/notificaitons-announcements.png)
 
-Klik op een bericht of aankondiging om de details ervan weer te geven. De berichten verbonden aan activiteiten zoals pijpleidingsplaatsingen nemen u aan het detail van die activiteit zoals het venster van de pijpleidingsuitvoering.
+Klik op een melding of aankondiging om de details weer te geven. De berichten verbonden aan activiteiten zoals pijpleidingsplaatsingen nemen u aan het detail van die activiteit zoals het venster van de pijpleidingsuitvoering.
 
 Klik op de knop **Alles weergeven** onder in het deelvenster om alle aankondigingen in uw Postvak IN weer te geven.
 
@@ -54,7 +54,7 @@ In abonnementen wordt gedefinieerd voor welke producten u meldingen ontvangt en 
 
 ![Abonnementen op meldingen](assets/notifications-subscriptions.png)
 
-Standaard ontvangt u alle meldingen voor alle producten, zowel in de toepassing als via e-mail. Klik op het chevron naast een productnaam om de gedetailleerde opties weer te geven en de typen meldingen te definiëren die u voor dat product ontvangt. U kunt ook de opties op productniveau in- of uitschakelen om alle opties voor het product in of uit te schakelen.
+Standaard ontvangt u alle meldingen voor alle producten, zowel in de toepassing als via e-mail. Klik op het pictogram naast een productnaam om de gedetailleerde opties weer te geven en de typen meldingen te definiëren die u voor dat product ontvangt. U kunt ook de opties op productniveau in- of uitschakelen om alle opties voor het product in of uit te schakelen.
 
 ![Aanpassing van berichtabonnement](assets/notifications-subscriptions-customize.png)
 

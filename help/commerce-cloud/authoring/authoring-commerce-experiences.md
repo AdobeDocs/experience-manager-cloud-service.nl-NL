@@ -2,9 +2,9 @@
 title: Ervaringen op het gebied van authoringhandel
 description: Leer hoe u op efficiënte wijze ervaringen met betrekking tot handel kunt maken en opbouwen door toegang te krijgen tot productgegevens en inhoud zonder de context te verlaten.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De toe:voegen-on CIF breidt AEM creatie met handel-specifieke mogelijkheden uit. Dit laat auteurs toe om handel-verwante ervaringen efficiënt te bouwen en te beheren door toegang tot productgegevens en inhoud te krijgen zonder de context te verlaten.
+De CIF toe:voegen-on breidt AEM het schrijven met handel-specifieke mogelijkheden uit. Dit laat auteurs toe om handel-verwante ervaringen efficiënt te bouwen en te beheren door toegang tot productgegevens en inhoud te krijgen zonder de context te verlaten.
 
 ## Kaarten {#pickers}
 
@@ -33,7 +33,7 @@ Als u op de bovenliggende categorie klikt, gaat de auteur terug naar het product
 
 ![Teasercomponent zonder selectie](../assets/authoring/teaser_component_without_selection.png)
 
-Het configuratiedialoogvenster van deze component vereist een product. CIF gebruikt SKU als product herkenningsteken. Auteurs kunnen de skin handmatig invoeren of op het mappictogram klikken om de productkiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster met componenten de naam van het geselecteerde product weergegeven
+Het configuratiedialoogvenster van deze component vereist een product. CIF gebruikt SKU als product-id. Auteurs kunnen de skin handmatig invoeren of op het mappictogram klikken om de productkiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster met componenten de naam van het geselecteerde product weergegeven
 
 ![Taser-component met selectie](../assets/authoring/teaser_component_with_selection.png)
 
@@ -47,7 +47,7 @@ Deze kiezer kan door de catalogusstructuur bladeren om de categorie te zoeken.
 
 ![Carrouselcomponent zonder selectie](../assets/authoring/carousel_component_without_selection.png)
 
-Het configuratiedialoogvenster van deze component vereist 1 : n-categorieën. CIF gebruikt UID/ID als categorie-id. Auteurs kunnen de id handmatig invoeren of op het mappictogram klikken om de categoriekiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster dat de component bevat de naam van de geselecteerde categorie weergegeven.
+Het configuratiedialoogvenster van deze component vereist 1 : n-categorieën. CIF gebruikt de UID /-id als de categorie-id. Auteurs kunnen de id handmatig invoeren of op het mappictogram klikken om de categoriekiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster dat de component bevat de naam van de geselecteerde categorie weergegeven.
 
 ![Carrousel-component met selectie](../assets/authoring/carousel_component_with_selection.png)
 
@@ -65,7 +65,7 @@ Analoog aan activa, kunnen de producten op een pagina worden toegevoegd (die tot
 
 ### Koppelingen toevoegen in tekstvelden met RTE {#rte}
 
-CCIF-productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden weergegeven. Het is dus niet mogelijk hyperlinks in te sluiten, zoals bij gewone AEM pagina&#39;s. CIF voegt een nieuwe actie &quot;de Verbindingen van de Handel&quot;aan RTE (Rich Text Editor) toe. Deze actie werkt precies zoals de gewone &quot;Hyperlink&quot;actie, maar staat auteurs toe om of een product of een categorie te selecteren gebruikend de plukkers.
+CIF productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden weergegeven. Het is dus niet mogelijk hyperlinks in te sluiten, zoals bij gewone AEM pagina&#39;s. CIF voegt een nieuwe actie &quot;de Verbindingen van de Handel&quot;aan RTE (Rich Text Editor) toe. Deze actie werkt precies zoals de gewone &quot;Hyperlink&quot;actie, maar staat auteurs toe om of een product of een categorie te selecteren gebruikend de plukkers.
 
 ![RTE](../assets/authoring/RTE.png)
 

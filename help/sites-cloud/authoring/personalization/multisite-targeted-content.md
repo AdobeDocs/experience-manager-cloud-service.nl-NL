@@ -2,9 +2,9 @@
 title: Werken met getargete content in meerdere sites
 description: Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2890'
+source-wordcount: '2889'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Gebieden kunnen activiteiten en aanbiedingen omvatten. Nadat u een gebied in Ã©Ã
 
 >[!NOTE]
 >
->Het standaardgebied genaamd Mastergebied wordt standaard samengevouwen wanneer u op de naam van een merk tikt of klikt **totdat** u een ander gebied maakt. Wanneer u vervolgens een merk selecteert in de console **Activiteit** of **Aanbiedingen**, ziet u de console **Gebied**.
+>Het standaardgebied Master Area wordt standaard samengevouwen wanneer u op de naam van een merk tikt of erop klikt **tot** u maakt een ander gebied. Wanneer u vervolgens een merk selecteert in de console **Activiteit** of **Aanbiedingen**, ziet u de console **Gebied**.
 
 Een nieuw gebied maken:
 

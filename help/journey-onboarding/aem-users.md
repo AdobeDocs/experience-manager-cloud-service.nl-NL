@@ -4,9 +4,9 @@ description: Zodra zij de systeembeheerder opstelling de noodzakelijke wolkenmid
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # AEM {#aem-user-tasks}
 
-In dit facultatieve deel van [aan boord gaan,](overview.md) u leert hoe AEM gebruikers toegang hebben tot AEM as a Cloud Service aan auteursinhoud.
+In dit facultatieve deel van [aan boord gaan,](overview.md) u leert hoe AEM gebruikers tot AEM as a Cloud Service aan auteursinhoud kunnen toegang hebben.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Je bent ver gekomen op je instapreis! Gefeliciteerd! De systeembeheerder heeft de instapreis voltooid door de benodigde cloudbronnen in te stellen en toegang te verlenen in het document [AEM productprofielen toewijzen.](assign-profiles-aem.md)
+Je hebt een lange weg afgelegd op je instapreis! Gefeliciteerd! De systeembeheerder heeft de instapreis voltooid door de benodigde cloudbronnen in te stellen en toegang te verlenen in het document [AEM productprofielen toewijzen.](assign-profiles-aem.md)
 
 Op dit moment kunnen AEM gebruikers beginnen met het maken van inhoud. In die zin is uw instapsysteem voltooid en nu is het tijd om uw nieuwe AEM as a Cloud Service systeem te gebruiken, zoals dit document illustreert.
 

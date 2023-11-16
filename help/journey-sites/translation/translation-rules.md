@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -53,16 +53,16 @@ Er kunnen meerdere regels worden gemaakt ter ondersteuning van complexe vertaalv
 
 De vertaalregels worden ontworpen om dergelijke scenario&#39;s te behandelen. Nochtans in dit voorbeeld illustreren wij hoe te om regels tot stand te brengen door zich op een eenvoudige, enige configuratie te concentreren.
 
-Er is een **Configuratie vertaling** console beschikbaar voor het vormen van vertaalregels.
+Er is een **Omzetconfiguratie** console beschikbaar voor het vormen van vertaalregels.
 
 Toegang tot dit bestand:
 
 1. Navigeren naar **Gereedschappen** -> **Algemeen**.
-1. Tik of klik op **Configuratie vertaling**.
+1. Tik of klik op **Omzetconfiguratie**.
 
 AEM maakt automatisch vertaalregels voor alle inhoud. Deze regels weergeven:
 
-1. Selecteer `/content` en vervolgens de **Bewerken** van de werkbalk.
+1. Selecteer de `/content` en vervolgens de **Bewerken** van de werkbalk.
 1. De redacteur van de Regels van de Vertaling opent met de regels die automatisch voor AEM creeerden `/content` pad.
 
    ![Editor voor vertaalregels](assets/translation-rules-editor.png)
@@ -82,22 +82,22 @@ U hebt nu uw vertaalregels geconfigureerd.
 
 >[!TIP]
 >
->Het is ook mogelijk om regels te maken alleen voor uw specifieke pad of project door te tikken op of te klikken op de knop **Context toevoegen** in de console van de Configuratie van de Vertaling. Dit valt buiten het bereik van deze reis.
+>Het is ook mogelijk om regels te maken alleen voor uw specifieke pad of project door te tikken op **Context toevoegen** in de console van de Configuratie van de Vertaling. Dit valt buiten het bereik van deze reis.
 
 ## Geavanceerd gebruik {#advanced-usage}
 
 Er zijn een aantal extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
 
-Dergelijke functies zijn gewoonlijk niet nodig om uw inhoud te lokaliseren, maar u kunt er in het dialoogvenster [Aanvullende bronnen](#additional-resources) als u geïnteresseerd bent.
+Dergelijke functies zijn meestal niet nodig om uw inhoud te lokaliseren, maar u kunt er in het dialoogvenster [Aanvullende bronnen](#additional-resources) als u geïnteresseerd bent.
 
 ## Volgende functies {#what-is-next}
 
-Nu u dit deel van de AEM Sites vertaalreis hebt voltooid, moet u:
+Nu u dit deel van de AEM Sites-vertaalreis hebt voltooid, moet u:
 
 * Begrijp wat de vertaalregels doen.
 * U kunt uw eigen vertaalregels definiëren.
 
-Gebaseerd op deze kennis en uw AEM Sites-vertaalreis voortzetten door het document opnieuw te bekijken [Inhoud vertalen](translate-content.md) waar u zult leren hoe uw schakelaar en regels samenwerken om inhoud te vertalen.
+Gebaseerd op deze kennis en uw AEM Sites-vertaalreis voortzetten door het document opnieuw te bekijken [Inhoud vertalen](translate-content.md) waar u leert hoe uw schakelaar en regels samenwerken om inhoud te vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 

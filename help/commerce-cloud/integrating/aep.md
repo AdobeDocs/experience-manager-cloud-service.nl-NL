@@ -1,5 +1,5 @@
 ---
-title: AEM-CIF kerncomponenten en integratie van Adobe Experience Platform
+title: AEM-CIF kerncomponenten en Adobe Experience Platform-integratie
 description: Leer hoe te om storefront gebeurtenisgegevens van een AEM-teruggegeven productpagina naar het Experience Platform te verzenden gebruikend CIF - de Schakelaar van het Experience Platform.
 sub-product: Commerce
 version: Cloud Service
@@ -11,16 +11,16 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
 
-# AEM-CIF kerncomponenten en integratie van Adobe Experience Platform {#aem-cif-aep-integration}
+# AEM-CIF kerncomponenten en Adobe Experience Platform-integratie {#aem-cif-aep-integration}
 
-De [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) kerncomponenten bieden naadloze integratie met [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) om storefront gebeurtenissen en hun gegevens van cliënt-zijinteractie zoals door:sturen __toevoegen aan winkelwagentje__.
+De [Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components) kerncomponenten bieden naadloze integratie met [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) om storefront gebeurtenissen en hun gegevens van cliënt-zijinteractie zoals door:sturen __toevoegen aan winkelwagentje__.
 
 De [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) project bevat een JavaScript-bibliotheek met de naam [Adobe Experience Platform-connector voor Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) om gebeurtenisgegevens te verzamelen van uw Opslag van de Handel. Deze gebeurtenisgegevens worden naar het Experience Platform verzonden waar ze worden gebruikt in andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, om een profiel van 360 graden te maken dat een klantentraject bestrijkt. Door de gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
 
@@ -28,7 +28,7 @@ Meer informatie over de [Gegevensverzameling Experience Platform](https://experi
 
 ## Verzenden `addToCart` gebeurtenisgegevens naar Experience Platform {#send-addtocart-to-aep}
 
-In de volgende stappen wordt getoond hoe u de `addToCart` gebeurtenisgegevens van AEM-teruggegeven productpagina&#39;s aan het Experience Platform gebruikend CIF - de Schakelaar van het Experience Platform. Met de browserextensie van het Adobe Experience Platform Debugger kunt u de verzonden gegevens testen en bekijken.
+In de volgende stappen wordt getoond hoe u de `addToCart` gebeurtenisgegevens van AEM-teruggegeven productpagina&#39;s aan het Experience Platform gebruiken CIF - de Schakelaar van het Experience Platform. Met de browserextensie van het Adobe Experience Platform Debugger kunt u de verzonden gegevens testen en bekijken.
 
 ![AddToCart-gebeurtenisgegevens in Adobe Experience Platform Debugger controleren](../assets/aep-integration/EventData-AEM-AEP.png)
 
@@ -48,7 +48,7 @@ Volg de [Lokale instelling](https://experienceleague.adobe.com/docs/experience-m
 
 ### Projectinstelling
 
-Volg de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) stappen om een gloednieuw CIF-project (AEM Commerce) op te zetten.
+Volg de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) stappen om een gloednieuw project AEM Commerce (CIF) te creëren.
 
 >[!TIP]
 >
@@ -170,9 +170,9 @@ Voor [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-co
    ]
    ```
 
-### Peregrine- en CIF-kerncomponenten initialiseren
+### Peregrine en CIF basiscomponenten initialiseren
 
-Om React-based kerncomponenten te initialiseren Peregrine en CIF, creeer de vereiste configuratie en dossiers JavaScript.
+Om React-based Peregrine en CIF kerncomponenten te initialiseren, creeer de vereiste configuratie en dossiers JavaScript.
 
 1. Ga naar de `ui.frontend` en maak de volgende map: `src/main/webpack/components/commerce/App`
 
@@ -226,7 +226,7 @@ Om React-based kerncomponenten te initialiseren Peregrine en CIF, creeer de vere
 
    >[!IMPORTANT]
    >
-   >Terwijl u reeds vertrouwd met zou kunnen zijn [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) bestand van __AEM-hulplijnen - CIF Venia-project__ Er zijn enkele wijzigingen die u in dit bestand moet aanbrengen. Eerst alle __TODO__ opmerkingen. Dan, binnen `eventsCollector` eigenschap, zoek de `eventsCollector > aed` object en werk de `orgId` en `datastreamId` eigenschappen voor de juiste waarden. [Meer informatie](./aep.md#add-aep-values-to-aem).
+   >Terwijl u reeds vertrouwd met zou kunnen zijn [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) bestand van __AEM - CIF Venia-project__ Er zijn enkele wijzigingen die u in dit bestand moet aanbrengen. Eerst alle __TODO__ opmerkingen. Dan, binnen `eventsCollector` eigenschap, zoek de `eventsCollector > aed` object en werk de `orgId` en `datastreamId` eigenschappen voor de juiste waarden. [Meer informatie](./aep.md#add-aep-values-to-aem).
 
 1. Een `App.js` bestand met de volgende inhoud. Dit bestand lijkt op een typisch React-startpuntbestand en bevat React en aangepaste haken en React-contextgebruik om de integratie van het Experience Platform te vergemakkelijken.
 
@@ -462,7 +462,7 @@ Als u de gebeurtenis wilt activeren, kunt u AEM auteur of de publicatieservice g
 
 ## Implementatiedetails {#implementation-details}
 
-De [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is op de bovenkant van [Experience Platform Connector voor Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), die deel uitmaakt van het [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
+De [CIF Experience Platform-aansluiting](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is op de bovenkant van [Experience Platform Connector voor Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), die deel uitmaakt van het [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
 
 Het project van de PWA Studio laat u Progressive Web Application (PWA) opslagplaatsen tot stand brengen die door Adobe Commerce of Magento Open Source worden aangedreven. Het project bevat ook een componentenbibliotheek genoemd [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) voor het toevoegen van logica aan visuele componenten. De [Peregrin-bibliotheek](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) biedt ook de aangepaste React-haken die worden gebruikt door [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) naadloos met Experience Platform te integreren.
 

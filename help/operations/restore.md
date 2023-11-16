@@ -2,9 +2,9 @@
 title: Inhoud herstellen in AEM as a Cloud Service
 description: Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bf8493909fa995ec30d67646aec5b712318dbf75
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1162'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,13 @@ Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens 
 
 >[!NOTE]
 >
->Een gebruiker met de **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet worden het programma geopend, om een herstellingsverrichting in werking te stellen.
+>Een gebruiker met de **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een herzettingsverrichting in werking te stellen.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klik op het programma waarvoor u een terugzetbewerking wilt starten.
+1. Klik op het programma waarvoor u een herstelbewerking wilt starten.
 
-1. Van de **Programmaoverzicht** pagina, in de **Omgevingen** -kaart, klikt u op de knop met de ovaal naast de omgeving waarvoor u een terugzetbewerking wilt starten en selecteert u **Inhoud herstellen**.
+1. Van de **Programmaoverzicht** pagina, in de **Omgevingen** -kaart, klikt u op de knop voor ovaal naast de omgeving waarvoor u een terugzetbewerking wilt starten en selecteert u **Inhoud herstellen**.
 
    ![Herstellen, optie](assets/backup-option.png)
 

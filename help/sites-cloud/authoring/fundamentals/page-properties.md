@@ -2,10 +2,10 @@
 title: Pagina-eigenschappen bewerken
 description: Leer hoe u de eigenschappen definieert die vereist zijn voor het beheer van een pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2279'
-ht-degree: 3%
+source-wordcount: '2280'
+ht-degree: 2%
 
 ---
 
@@ -227,7 +227,7 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als li
 
 ### Voorvertoning {#preview}
 
-Wanneer een voorvertoningsomgeving is ingeschakeld, ziet u:
+Wanneer een omgeving van de Voorproef wordt toegelaten, ziet u het volgende:
 
 * Voorbeeld-URL - de URL die wordt gebruikt voor toegang tot de inhoud in de voorvertoningsomgeving
 
@@ -286,7 +286,7 @@ Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** om de pagina-eigensch
 
 1. Open de pagina waarvan u de eigenschappen wilt bewerken.
 1. Selecteer de **Pagina-informatie** pictogram om het selectiemenu te openen:
-1. Selecteer **Eigenschappen openen** en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
+1. Selecteren **Eigenschappen openen** en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
    * **Annuleren**
    * **Opslaan en sluiten**
 1. Gebruik de **Opslaan en sluiten** om de wijzigingen op te slaan.

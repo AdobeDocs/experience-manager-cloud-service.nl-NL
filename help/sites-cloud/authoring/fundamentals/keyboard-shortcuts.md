@@ -2,9 +2,9 @@
 title: Sneltoetsen voor paginabewerking
 description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele voor paginabewerking
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 
 >[!NOTE]
 >
->Wanneer de gebruiker in de voorvertoningsmodus begint te communiceren met de pagina, wordt de `Ctrl-Shift-m` sneltoets is niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
+>Wanneer de gebruiker in de voorvertoningsmodus begint te communiceren met de pagina, wordt de `Ctrl-Shift-m` sneltoets is niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar wanneer de gebruiker op de bovenste editor-balk klikt of terugkeert naar de modus Bewerken.
 
 Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), en met name de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 

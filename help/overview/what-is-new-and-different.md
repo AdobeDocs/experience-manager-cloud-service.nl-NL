@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 76%
+source-wordcount: '1895'
+ht-degree: 75%
 
 ---
 
@@ -144,7 +144,7 @@ Er zijn ook aanzienlijke verschillen door de aanwezigheid van:
 
 * Implementatievereisten:
 
-   * Code-updates; alle klantapplicaties die voor een vorige versie van AEM zijn ontwikkeld, moeten worden herzien en mogelijk bijgewerkt.
+   * Code-updates; alle klanttoepassingen die voor een vorige versie van AEM zijn ontwikkeld, moeten worden gecontroleerd en eventueel worden bijgewerkt.
 
    * Contentmigratie
 

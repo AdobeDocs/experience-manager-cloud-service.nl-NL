@@ -2,9 +2,9 @@
 title: SLA-rapportage
 description: Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken ten opzichte van de overeenkomst voor serviceniveau (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ SLA-rapporteringsgegevens zijn beschikbaar voor elk productieprogramma via **Rap
 
 ![SLA-grafiekvoorbeeld](assets/sla-reporting-1.png)
 
-Schuif de cursor over een gegevenspunt om de specifieke waarden voor dat punt weer te geven.
+Plaats de cursor op een gegevenspunt om de specifieke waarden voor dat punt weer te geven.
 
 ![Gedetailleerde gegevens weergeven](assets/sla-reporting-b.png)
 
@@ -34,13 +34,13 @@ Schuif de cursor over een gegevenspunt om de specifieke waarden voor dat punt we
 
 De grafiek van het geselecteerde jaar bevat een aantal gegevenssets.
 
-* **Tier-contract publiceren** - Dit is SLA die in uw contract met Adobe voor publicatielaag wordt bepaald.
+* **Tier-contract publiceren** - Dit is de SLA die is gedefinieerd in uw contract met Adobe voor de publicatielijst.
 
-* **Reële reeks publiceren** - Dit is de gemeten uptime van de productie publiceer tier factoring die door Adobe of Adobe incidenten wordt veroorzaakt.
+* **Reële reeks publiceren** - Dit is de gemeten uptime van de productie, waarbij voorvallen in de lijst met productielijnen worden gepubliceerd die worden veroorzaakt door Adoben of verkopers van Adoben.
 
 * **Tier-contract voor auteur** - Dit is SLA die in uw contract met Adobe voor de auteursrij wordt bepaald.
 
-* **Reële lijst van auteur** - Dit is de gemeten uptime van de productiefabrikant die door Adobe of Adobe incidenten wordt veroorzaakt.
+* **Auteur-reeks werkelijk** - Dit is de gemeten uptime van de productiefabrikant van de laag die door Adobe of de verkopers van de Adobe wordt veroorzaakt.
 
 ## Gebeurtenisanalyse {#event-analysis}
 

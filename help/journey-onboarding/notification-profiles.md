@@ -4,9 +4,9 @@ description: Leer hoe u gebruikersprofielen maakt in de Admin Console voor het b
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Omdat gebruikersprofielen worden gemaakt en onderhouden in de Admin Console, moe
 
 ## Nieuwe productprofielen voor Cloud Manager maken {#create-profiles}
 
-Als u de ontvangst van meldingen correct wilt instellen, moet u twee gebruikersprofielen maken. Deze stappen moeten slechts eenmaal worden uitgevoerd.
+Maak twee gebruikersprofielen om de ontvangst van meldingen correct in te stellen. Deze stappen worden slechts één keer uitgevoerd.
 
 1. Aanmelden bij Admin Console bij [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ Als u de ontvangst van meldingen correct wilt instellen, moet u twee gebruikersp
 
    ![Lijst met instanties in de Admin Console](assets/cloud_manager_instance.png)
 
-1. De lijst met alle geconfigureerde productprofielen van Cloud Manager wordt weergegeven.
+1. U kunt de lijst met alle geconfigureerde productprofielen van Cloud Manager bekijken.
 
    ![Productprofielen in de Admin Console](assets/cloud_manager_profiles.png)
 

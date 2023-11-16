@@ -2,9 +2,9 @@
 title: Pagina's maken en indelen
 description: Leer hoe u uw website kunt ordenen door pagina's met AEM te maken en te beheren.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2451'
+source-wordcount: '2449'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ad
 
 ## Uw website ordenen {#organizing-your-website}
 
-Als auteur moet u uw website binnen AEM organiseren. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
+Als auteur moet u uw website organiseren binnen AEM. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
 
 * U kunt deze gemakkelijk vinden in de ontwerpomgeving
 * Bezoekers naar uw site kunnen deze gemakkelijk in de publicatieomgeving bekijken
@@ -225,7 +225,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    >
    >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bestaat al, wordt een nieuwe pagina `beach1`.
 
-1. Als u terugkeert naar de console, zult u uw nieuwe pagina zien:
+1. Als u terugkeert naar de console kunt u uw nieuwe pagina zien:
 
    ![Resulterende nieuwe pagina](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 
@@ -309,7 +309,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    ![Knop Verplaatsen](/help/sites-cloud/authoring/assets/move.png)
 
-   Hiermee wordt de wizard Verplaatsen van de pagina geopend.
+   Hiermee opent u de wizard Verplaatsen pagina.
 
 1. Van de **Naam wijzigen** het werkgebied van de wizard dat u kunt instellen:
 

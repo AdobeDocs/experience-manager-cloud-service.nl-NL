@@ -1,10 +1,10 @@
 ---
 title: Regels voor gegevensbescherming en gegevensbescherming - gereedheid voor Adobe Experience Manager as a Cloud Service-sites
-description: Meer informatie over de ondersteuning van Adobe Experience Manager as a Cloud Service Sites voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuw AEM as a Cloud Service project moet worden uitgevoerd.
+description: Leer over de steun van de Plaatsen van Adobe Experience Manager as a Cloud Service voor de diverse Regels van de Bescherming van Gegevens en van de Privacy van Gegevens; met inbegrip van de Algemene Verordening van de EU van de Bescherming van Gegevens (GDPR), de Wet van de Consumentenprivacy van Californië en hoe te om bij de implementatie van een nieuw AEM as a Cloud Service project na te leven.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over Adobe aan privacykwesties, en dit betekent voor u als klant van de Adobe, zie [Adobe](https://www.adobe.com/privacy.html).
+>Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat dit voor u als Adobe klant betekent, zie [Privacy Center van Adobe](https://www.adobe.com/privacy.html).
 
 Adobe Experience Manager as a Cloud Service Sites is klaar om klanten te helpen bij hun verplichtingen inzake privacy en bescherming van gegevens. Deze pagina begeleidt klanten door de procedures om dergelijke verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
-Zie voor meer informatie de [Adobe Privacy Center](https://www.adobe.com/privacy.html).
+Zie de klasse [Adobe Privacy Center](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
@@ -50,15 +50,15 @@ Adobe Experience Manager is onderworpen aan een cookie-uitschakelservice die wor
 Naar Weigeren:
 
 1. Ga naar:
-   [Adobe Privacy Center - Uitschakelen](https://www.adobe.com/privacy/opt-out.html)
+   [Adobe Privacy Center - Weigeren](https://www.adobe.com/privacy/opt-out.html)
 
-1. Omlaag schuiven naar **Services** - **Experience Cloud-servicegebruiksgegevens**.
+1. Omlaag schuiven naar **Services** - **Gebruikersgegevens Experience Cloud-service**.
 
-1. Selecteer de koppeling waarnaar wordt verwezen. momenteel getiteld **hier**.
+1. Selecteer de koppeling waarnaar wordt verwezen; momenteel gemarkeerd **hier**.
 
 1. U krijgt de volgende details te zien, samen met de opties om te weigeren of in te schakelen:
 
-   * Als u aggregatie en analyse van gegevens over uw bezoek aan deze site wilt uitschakelen, moet u een cookie installeren op uw browser. Deze cookie identificeert dat u hebt uitgeschakeld.
+   * Als u aggregatie en analyse van gegevens over uw bezoek aan deze site wilt uitschakelen, moet u een cookie installeren op uw browser. Deze cookie identificeert dat u hebt uitgekozen.
 
      Als u de uitschakelcookie verwijdert of als u van computer of webbrowser verandert, moet u de functie opnieuw uitschakelen.
 
@@ -70,19 +70,19 @@ Naar Weigeren:
 
    >[!NOTE]
    >
-   > Er wordt een nadere beschrijving gegeven in het gedeelte **2. Privacy.** van de [Adobe Algemene gebruiksvoorwaarden](https://www.adobe.com/legal/terms.html).
+   > Er wordt een nadere beschrijving gegeven in het gedeelte **2. Privacy.** van de [Algemene gebruiksvoorwaarden van de Adobe](https://www.adobe.com/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sites biedt een optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Analytics raadpleegt u [Adobe Analytics en gegevensbescherming](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+Zie voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Analytics [Adobe Analytics en gegevensbescherming](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Personalisatie Stichting door Doel {#personalization-foundation-by-target}
 
-AEM Sites bevat een optionele integratie met Personalization Foundation by Target die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
+AEM Sites bevat een optionele integratie met Personalization Foundation by Target, die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Voor informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Target raadpleegt u [Adobe Target - Privacy- en algemene gegevensbeschermingsverordening](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Zie voor informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Target [Adobe Target - Privacy- en algemene gegevensbeschermingsverordening](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -92,13 +92,13 @@ AEM provides an optional data layer with [ContextHub](/help/sites-developing/con
 
 AEM verstrekt een facultatieve gegevenslaag met ContextHub. Dit houdt bezoekersspecifieke gegevens in browser, die voor op regel-gebaseerde verpersoonlijking moeten worden gebruikt.
 
-Deze bezoekergegevens worden standaard niet in AEM opgeslagen. AEM verzendt regels naar de gegevenslaag om verpersoonlijkingsbesluiten in browser te nemen.
+Door gebrek, wordt dit bezoeker-gegeven niet opgeslagen in AEM; AEM verzendt regels naar de gegevenslaag om verpersoonlijkingsbesluiten in browser te nemen.
 
 ### Opt-in/Opt-out implementeren {#implementing-opt-in-opt-out}
 
 De eigenaar van de site moet een opt-out-component implementeren in overeenstemming met de volgende richtlijnen.
 
-Deze richtlijnen voeren opt-in als gebrek uit. Daarom moet een websitebezoeker duidelijk hiermee instemmen voordat persoonlijke gegevens worden opgeslagen in de (client-side) persistentie van de browser.
+Deze richtlijnen voeren opt-in als gebrek uit. Daarom moet een websitebezoeker duidelijk hiermee instemmen, voordat persoonlijke gegevens worden opgeslagen in de (client-side) persistentie van de browser.
 
 * De opt-out component zou moeten worden omvat telkens als de component ContextHub inbegrepen is.
 * De bepalingen en voorwaarden die betrekking hebben op gegevensbescherming en privacy voor de website moeten aan de websitebezoeker worden getoond, zodat deze:
@@ -130,7 +130,7 @@ Deze richtlijnen voeren opt-in als gebrek uit. Daarom moet een websitebezoeker d
 
 Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
 
-* Gebruik de browserconsole; bijvoorbeeld:
+* Gebruik de browserconsole, bijvoorbeeld:
 
    * Chroom:
 
@@ -154,7 +154,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
       * Ontwikkelen openen > JavaScript-console tonen
 
          * Console > Opslag > Lokale Opslag > (website) > ContextHubPersistence
-         * Console > Storage > Session Storage > (website) > ContextHubPersistence
+         * Console > Opslag > Sessieopslag > (website) > ContextHubPersistence
          * Console > Opslag > Cookies > (website) > ContextHubPersistence
 
    * Internet Explorer:
@@ -229,7 +229,7 @@ Om de persistentie te ontruimen ContextHub:
   ContextHub.resetAllStores();
   ```
 
-* een specifieke persistentielaag te wissen; bijvoorbeeld sessionStorage:
+* Om een specifieke persistentielaag te ontruimen, bijvoorbeeld, sessionStorage:
 
   ```
   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });

@@ -2,9 +2,9 @@
 title: Werken met uw eigen GitHub-opslagplaatsen in Cloud Manager
 description: Leer hoe te de Manager van de opstelling Cloud om met uw eigen bewaarplaatsen te werken GitHub.
 feature: Release Information
-source-git-commit: 8d689ea08ab7caf9cb0fa84df23d7e0fd906f379
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ De configuratie bestaat uit twee hoofdstappen:
 
 ### Opslagplaats toevoegen {#add-repo}
 
-1. In Cloud Manager, via de **Programmaoverzicht** pagina, tik of klik op **Opslagplaatsen** tab naar **Opslagplaatsen** pagina en klik op **Opslagplaats toevoegen**.
+1. In Cloud Manager, via de **Programmaoverzicht** pagina, tik of klik op de knop **Opslagplaatsen** tab naar **Opslagplaatsen** pagina en klik op **Opslagplaats toevoegen**.
 
 1. In de **Opslagplaats toevoegen** dialoogvenster, selecteren **Particuliere opslagplaats** als het type opslagplaats.
 
@@ -81,7 +81,7 @@ Tot de validatie wordt de repository weergegeven met een rood pictogram dat aang
 
 Let erop dat de **Type** kolom identificeert gemakkelijk door Adobe verschafte opslagplaatsen (**Adobe**) en uw eigen GitHub-opslagplaatsen (**GitHub**).
 
-Als u op een latere datum naar de opslagplaats moet terugkeren om de validatie te voltooien, gaat u naar de **Opslagplaatsen** pagina, tik of klik de ellipsknoop in de rij die de bewaarplaats vertegenwoordigt GitHub u enkel toevoegde en selecteert **Eigenaarsvalidatie** in het keuzemenu.
+Als u op een latere datum naar de opslagplaats moet terugkeren om de validatie te voltooien, gaat u op de **Opslagplaatsen** pagina, tik of klik de ellipsknoop in de rij die de bewaarplaats vertegenwoordigt GitHub u enkel toevoegde en selecteert **Eigenaarsvalidatie** in het keuzemenu.
 
 ## Uw eigen GitHub-opslagplaatsen gebruiken met Cloud Manager {#using}
 

@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -216,7 +216,7 @@ Wanneer de redacteur eerst opent ziet u:
 
 Een fragment kan bijvoorbeeld:
 
-* Vereisen veelvoudige stukken van informatie, sommige met een specifiek type. Voor inhoud zonder kop zijn verwijzingen van essentieel belang (hierover leert u later op de reis).
+* Vereisen veelvoudige stukken van informatie, sommige met een specifiek type. Voor inhoud zonder kop zijn verwijzingen essentieel (u leert hierover later op uw reis).
 
 * Hiermee kunt u een lange sectie tekst schrijven. Hier zijn aanvullende opties voor het beheren en opmaken van de tekst. U kunt zelfs de afzonderlijke tekstvelden openen in een volledige-schermeditor (met het kleine schermachtige pictogram rechts)
 
@@ -240,7 +240,7 @@ Dit lijkt misschien een iets vreemde sectie, maar zodra u de Content Fragment Ed
 
 * **Modellen van contentfragmenten**
 
-  De naam van het model van het inhoudsfragment wordt weergegeven in het rechterdeelvenster van de editor. Dit is ook een verbinding die u aan de modelredacteur neemt.
+  U kunt de naam van het model van het Fragment van de Inhoud in het juiste paneel van de redacteur zien. Dit is ook een verbinding die u aan de modelredacteur neemt.
 Modellen van inhoudsfragmenten zijn in feite van vitaal belang voor inhoudsfragmenten als ze de structuur definiëren die u gebruikt. Het maken en bewerken van deze bestanden valt (gewoonlijk) echter onder de verantwoordelijkheid van een andere persoon, de Content Architect.
 
   >[!NOTE]

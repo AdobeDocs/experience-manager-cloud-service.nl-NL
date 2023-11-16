@@ -3,9 +3,9 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Om de configuratie van de full-stack de productiepijplijn van de codeproductie t
    * U kunt maximaal 25 paden toevoegen.
    * Als u geen paden definieert, wordt de homepage van de site standaard opgenomen in de Experience Audit.
 
-1. Klikken op **Opslaan** om uw pijpleiding te redden.
+1. Klikken **Opslaan** om uw pijpleiding te redden.
 
 De wegen die voor de Controle van de Ervaring worden gevormd worden voorgelegd aan de dienst en worden geëvalueerd volgens de prestaties, de toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests wanneer de pijpleiding loopt. Zie [Werken met de resultaten van Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
 

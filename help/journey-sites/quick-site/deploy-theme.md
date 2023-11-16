@@ -2,9 +2,9 @@
 title: Uw aangepaste thema implementeren
 description: Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ Dit deel van de reis geldt voor de front-end ontwikkelaar.
 
 ## De pijplijn starten {#start-pipeline}
 
-Als u de wijzigingen in de themaaanpassing hebt toegewezen aan de AEM-git-opslagplaats, kunt u [de pijpleiding die de beheerder creeerde](pipeline-setup.md) om de wijzigingen te implementeren.
+Nadat u de wijzigingen in de themaaanpassing hebt doorgevoerd in de AEM-git-opslagplaats, kunt u [de pijpleiding die de beheerder creeerde](pipeline-setup.md) om de wijzigingen te implementeren.
 
-1. Aanmelden bij Cloud Manager [zoals u deed om uw toegangsinformatie van de it terug te winnen](retrieve-access.md) En heb toegang tot uw programma. Op de **Overzicht** tabblad ziet u een kaart voor **Pijpleidingen**.
+1. Aanmelden bij Cloud Manager [zoals u deed om uw toegangsinformatie van de it terug te winnen](retrieve-access.md) En heb toegang tot uw programma. Op de **Overzicht** tab, u ziet een kaart voor **Pijpleidingen**.
 
    ![Overzicht van Cloud Manager](assets/cloud-manager-overview.png)
 
@@ -68,7 +68,7 @@ U kunt de status van de pijpleiding controleren om de details van zijn vooruitga
 
 >[!TIP]
 >
->In het venster van pijpleidingsdetails, kunt u tikken of klikken **Logbestand downloaden** voor om het even welke stap van de pijpleiding voor het zuiveren doeleinden als om het even welke stap zou moeten ontbreken. Het zuiveren van de pijpleiding valt buiten het bereik van deze reis. Raadpleeg de technische documentatie voor Cloud Manager in het dialoogvenster [Aanvullende bronnen](#additional-resources) van deze pagina.
+>In het venster van pijpleidingsdetails, kunt u tikken of klikken **Logbestand downloaden** voor om het even welke stap van de pijpleiding voor het zuiveren doeleinden als om het even welke stap zou moeten ontbreken. Het zuiveren van de pijpleiding is voorbij het werkingsgebied van deze reis. Raadpleeg de technische documentatie voor Cloud Manager in het dialoogvenster [Aanvullende bronnen](#additional-resources) van deze pagina.
 
 ## Valideer de Ingevoerde Aanpassingen {#view-customizations}
 
@@ -93,7 +93,7 @@ Gefeliciteerd! U hebt de AEM Quick Site Creation-reis voltooid! Nu moet u:
 
 U kunt nu de thema&#39;s van uw eigen AEM site aanpassen. Voordat u echter verschillende werkstromen gaat maken met behulp van meerdere front-end pijpleidingen, moet u het document controleren [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Het kan u helpen optimaal uit uw front-end ontwikkeling door te halen:
 
-* Eén bron van waarheid behouden.
+* Behoud van één enkele bron van waarheid.
 * Handhaving van een scheiding van zorgen.
 
 AEM is een krachtig hulpmiddel en er zijn veel extra opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
@@ -107,7 +107,7 @@ Hieronder vindt u een aantal aanvullende bronnen die dieper ingaan op bepaalde c
 * [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.
 * [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Zie dit document voor details over deze rollen en hoe te om hen te beheren.
 * [Opslagplaatsen voor Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Raadpleeg dit document als u meer informatie nodig hebt over het instellen en beheren van git-opslagruimten voor uw AEMaaCS-project.
-* [CI/CD-pijpleiding configureren - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Meer informatie over het instellen van pijpleidingen, zowel volledige stapel als front-end, vindt u in dit document.
+* [CI/CD-pijpleiding configureren - Cloud Servicen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Meer informatie over het instellen van pijpleidingen, zowel volledige stapel als front-end, vindt u in dit document.
 * [Standaardsitemplate AEM](https://github.com/adobe/aem-site-template-standard) - Dit is de bewaarplaats GitHub van het AEM Standaardmalplaatje van de Plaats.
 * [Sitethema AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - Dit is de bewaarplaats GitHub van het Thema van de Plaats van de AEM.
 * [npm](https://www.npmjs.com) - AEM thema&#39;s die worden gebruikt om sites snel te bouwen, zijn gebaseerd op npm.
@@ -115,6 +115,6 @@ Hieronder vindt u een aantal aanvullende bronnen die dieper ingaan op bepaalde c
 * [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In deze handleiding wordt beschreven hoe u pagina&#39;s van uw AEM Site kunt beheren als u deze verder wilt aanpassen nadat u deze vanuit de sjabloon hebt gemaakt.
 * [Hoe te met Pakket werken](/help/implementing/developing/tools/package-manager.md) - Pakketten maken het importeren en exporteren van inhoud in de opslagplaats mogelijk. In dit document wordt uitgelegd hoe u met pakketten werkt in AEM 6.5. Dit geldt ook voor AEMaaCS.
 * [Onboarding Journaal](/help/journey-onboarding/overview.md) - Deze gids dient als uitgangspunt om ervoor te zorgen dat uw teams opstelling zijn en toegang tot AEM as a Cloud Service hebben.
-* [Documentatie Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Raadpleeg de documentatie van Cloud Manager voor meer informatie over de functies ervan.
+* [Documentatie Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Verken de documentatie van Cloud Manager voor meer informatie over de functies ervan.
 * [Documentatie voor sitebeheer](/help/sites-cloud/administering/site-creation/create-site.md) - Ontdek de technische documentatie bij het maken van de site voor meer informatie over de functies van het gereedschap Snel maken.
 * [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - In dit document worden enkele overwegingen beschreven die u in acht moet nemen, zodat u het volledige potentieel van het front-end ontwikkelingsproces kunt benutten met behulp van de front-end pijplijn.

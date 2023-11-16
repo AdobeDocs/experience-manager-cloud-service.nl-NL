@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Meer informatie over de basisbeginselen van Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2874'
 ht-degree: 0%
 
 ---
@@ -232,7 +232,7 @@ Wanneer een verzoek van HEAD bij de Adobe CDN voor een middel wordt ontvangen da
 
 URL&#39;s van websites bevatten vaak parameters voor marketingcampagnes die worden gebruikt om het succes van een campagne te volgen.
 
-Voor milieu&#39;s die in Oktober 2023 of recenter worden gecreeerd, om geheime voorgeheugenverzoeken te verbeteren, zal CDN gemeenschappelijke marketing verwante vraagparameters, specifiek die verwijderen die het volgende regex patroon aanpassen:
+Voor milieu&#39;s die in Oktober 2023 of recenter worden gecreeerd, aan betere geheim voorgeheugenverzoeken, zal CDN gemeenschappelijke marketing verwante vraagparameters, specifiek die verwijderen die het volgende regex patroon aanpassen:
 
 ```
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$

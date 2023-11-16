@@ -4,9 +4,9 @@ description: Leer hoe vertaalregels inhoud identificeren die moet worden vertaal
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ In de interface met vertaalregels kunt u:
 
    ![Context selecteren](../assets/select-context.png)
 
-1. Vervolgens moet u de context selecteren en vervolgens op **Bewerken**. Hiermee opent u de Editor voor de vertaalregels.
+1. Vervolgens moet u de context selecteren en vervolgens op **Bewerken**. Hiermee opent u de Editor voor vertaalregels.
 
    ![Editor voor omzettingsregels](../assets/translation-rules-editor.png)
 

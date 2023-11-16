@@ -2,9 +2,9 @@
 title: JSON-export inschakelen voor een component
 description: Componenten kunnen worden aangepast om JSON-export van hun inhoud te genereren op basis van een modellerframework.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '468'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Componenten kunnen worden aangepast om JSON-export van hun inhoud te genereren o
 
 De JSON-export is gebaseerd op [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html)en de [Verkoopmodel exporteren](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) kader (dat zelf op [Jackson-annotaties](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-Dit betekent dat de component een Sling Model moet hebben als het JSON moet uitvoeren. Daarom zult u deze twee stappen moeten volgen om de uitvoer van JSON op om het even welke component toe te laten.
+Dit betekent dat de component een Sling Model moet hebben als het JSON moet uitvoeren. Voer daarom de volgende twee stappen uit om JSON-export voor een willekeurige component mogelijk te maken.
 
 * [Definieer een verkoopmodel voor de component](#define-a-sling-model-for-the-component)
 * [Annoteer de interface van het Verkoopmodel](#annotate-the-sling-model-interface)

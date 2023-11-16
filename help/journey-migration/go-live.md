@@ -2,9 +2,9 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >title="Go-Live-voorbereiding"
 >abstract="Om ervoor te zorgen dat AEM as a Cloud Service probleemloos en succesvol kan gaan werken, moet u plannen voor het bevriezen van code en inhoud, testversies, aanvullingen op inhoud, prestatietests, beveiligingstests en meer."
 
-In dit deel van de reis, zult u leren hoe te om de migratie te plannen en uit te voeren zodra zowel de code als de inhoud klaar zijn om over aan AEM as a Cloud Service te worden bewogen. Bovendien leert u wat de beste praktijken en bekende beperkingen zijn wanneer u de migratie uitvoert.
+In dit deel van de reis, leert u hoe te om de migratie te plannen en uit te voeren zodra zowel de code als de inhoud klaar zijn om over aan AEM as a Cloud Service te worden bewogen. Bovendien leert u wat de beste praktijken en bekende beperkingen zijn wanneer het uitvoeren van de migratie.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -138,7 +138,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
 * Vorm CDN, SSL en DNS.
    * Als u uw eigen CDN gebruikt, ga een steunkaartje in om aangewezen het verpletteren te vormen.
       * Zie de sectie [CDN van de klant wijst naar AEM Beheerde CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in de CDN-documentatie voor meer informatie.
-      * U zult SSL en DNS volgens de documentatie van uw verkoper moeten vormen CDN.
+      * Vorm SSL en DNS volgens de documentatie van uw verkoper CDN.
    * Als u geen extra CDN gebruikt, beheer SSL en DNS volgens de volgende documentatie:
       * SSL-certificaten beheren
          * [Inleiding tot het beheren van SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

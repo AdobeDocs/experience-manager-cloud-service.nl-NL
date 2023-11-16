@@ -2,9 +2,9 @@
 title: De vertaalintegratie configureren voor inhoud zonder kop
 description: Leer hoe u verbinding AEM maken met een vertaalservice.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1230'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
 * Uw eigen verbinding met uw vertaalservice instellen.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Inhoud vertalen,](translation-rules.md) waar u zult leren hoe te om uw configuratie tot dusverre te gebruiken om uw inhoud daadwerkelijk te vertalen.
+Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Inhoud vertalen,](translation-rules.md) waar u leert hoe u uw configuratie tot nu toe gebruikt om uw inhoud te vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 

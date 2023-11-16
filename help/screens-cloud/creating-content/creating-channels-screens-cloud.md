@@ -2,9 +2,9 @@
 title: Kanalen maken en beheren in as a Cloud Service schermen
 description: In deze pagina wordt beschreven hoe u kanalen in as a Cloud Service schermen maakt en beheert.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Navigeer naar het kanaal vanuit uw project en selecteer het kanaal, zoals in de 
 
 Ga als volgt te werk om inhoud aan een kanaal toe te voegen of te bewerken:
 
-1. Selecteer het kanaal dat u wilt bewerken, zoals in de onderstaande afbeelding wordt getoond. Klikken op **Bewerken** in de linkerbovenhoek van de actiebalk om de editor te openen.
+1. Selecteer het kanaal dat u wilt bewerken, zoals in de onderstaande afbeelding wordt getoond. Klikken **Bewerken** in de linkerbovenhoek van de actiebalk om de editor te openen.
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
@@ -76,7 +76,7 @@ Ga als volgt te werk om inhoud aan een kanaal toe te voegen of te bewerken:
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >Klikken op **Voorvertoning** om de inhoud van het kanaal voor te vertonen.
+   >Klikken **Voorvertoning** om de inhoud van het kanaal voor te vertonen.
    >![bewerken, kanaalvoorbeeld](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Beschikbare sjablonen in wizard Maken {#available-templates}

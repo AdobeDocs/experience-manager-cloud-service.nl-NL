@@ -2,9 +2,9 @@
 title: Startfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de Go-live-fase in Cloud Acceleration Manager.
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '147'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 De Go Live-kaart biedt alle relevante inhoud die de nadruk legt op voorbereiding, specifieke acties die moeten worden ondernomen en grondig onderzoek om een vlotte en succesvolle go-live op AEM as a Cloud Service te waarborgen.
 
-Klik op uw projectkaart om de bestemmingspagina van het project te openen en naar het project te navigeren **Live gaan** in de onderstaande afbeelding.
+Klik op uw projectkaart om de bestemmingspagina van het project te openen en naar de **Live gaan** in de onderstaande afbeelding.
 
 ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 

@@ -2,7 +2,7 @@
 title: Aanbiedingen maken en beheren (console Aanbiedingen)
 description: Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen kunt gebruiken
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Aanbiedingen maken en beheren (console Aanbiedingen) {#creating-and-managing-offers}
 
-De **Aanbiedingen** console zal in de toekomst verouderd zijn. Het is dus vanaf nu:
+De **Aanbiedingen** console zal in de toekomst verouderd zijn. Dus vanaf nu is het:
 
 * Alleen beschikbaar voor klanten met *verouderd* reeds gedefinieerde aanbiedingen (d.w.z. reeds bestaand)
 * Aanbevolen dat dergelijke verouderde aanbiedingen worden geconverteerd naar Experience Fragment-aanbiedingen
@@ -33,7 +33,7 @@ A **Omzetten in ervaring met fragmentvariatie** en workflow zijn geïmplementeer
 
 >[!NOTE]
 >
->Dit is de aanbevolen workflow voor het converteren van verouderde aanbiedingen naar ervaren fragmenten.
+>Dit is de aanbevolen workflow voor het converteren van verouderde aanbiedingen naar ervaringsfragmenten.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ A **Omzetten in ervaring met fragmentvariatie** en workflow zijn geïmplementeer
 
 1. Open een pagina die de aanbieding voor bewerking bevat.
 
-1. Overschakelen op **Doelstelling** voor die pagina.
+1. Overschakelen op **Targeting** voor die pagina.
 
 1. Selecteren **Doelstelling starten**.
 
@@ -86,7 +86,7 @@ Voeg indien nodig codes toe.
 
 1. Bevestigen met **Gereed**.
 
-   Als u nu naar de **Geniet van fragmentatieaanbiedingen** -console, ziet u het nieuwe ervaringsfragment samen met de bijbehorende variaties.
+   Als u nu naar de **Geniet van fragmentatieaanbiedingen** -console, kunt u het nieuwe ervaringsfragment zien, samen met de bijbehorende variaties.
 
 ### Aanwijzen met de aanbiedingensjabloon {#targeting-offers-template}
 
@@ -157,14 +157,14 @@ Voeg een aanbieding toe aan de aanbiedingsbibliotheek van een merk zodat deze aa
 
 Nadat u het voorstel hebt gemaakt, kunt u het openen om de inhoud te ontwerpen.
 
-1. Open in de console van Aanbiedingen de locatie waar u de aanbieding wilt maken. Open bijvoorbeeld het merk om een aanbieding op hoofdniveau te maken of open een map in de bibliotheek.
+1. In de console van Aanbiedingen, open de plaats waar u de aanbieding wilt tot stand brengen. Open bijvoorbeeld het merk om een aanbieding op hoofdniveau te maken of open een map in de bibliotheek.
 1. Klikken of tikken **Maken** > **Map of voorstel maken**.
 
    ![Aanbiedingsmap maken](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. Selecteer **Aanbiedingspagina** sjabloon en klik of tik op **Volgende**.
+1. Selecteer de **Pagina voorstellen** sjabloon en klik of tik op **Volgende**.
 1. Typ een titel voor de aanbieding en selecteer of typ desgewenst een of meer tags die u aan de aanbieding wilt koppelen. Klik of tik vervolgens op **Maken**.
-1. Klik of tik op **Pagina openen**.
+1. Klik of tik in het bevestigingsdialoogvenster om de aanbieding voor bewerken te openen **Pagina openen**.
 
 ### Een voorstel bewerken {#editing-an-offer}
 
@@ -177,7 +177,7 @@ U kunt een voorstel van een omslag in een aanbiedingsbibliotheek of van onderzoe
 
 ### Een voorstel verwijderen {#deleting-an-offer}
 
-Een voorstel verwijderen wanneer het niet meer nodig is. Wanneer u probeert om een voorstel te schrappen dat in een ervaring wordt gebruikt, wordt u ertoe aangezet om de schrapping te bevestigen. Als u bevestigt, wordt het aanbod verwijderd en wordt het uit de ervaringen verwijderd.
+Een voorstel verwijderen wanneer het niet meer nodig is. Wanneer u een aanbieding probeert te verwijderen die in een ervaring wordt gebruikt, wordt u gevraagd de verwijdering te bevestigen. Als u bevestigt, wordt het aanbod verwijderd en wordt het uit de ervaringen verwijderd.
 
 U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibliotheek of de zoekresultaten bekijkt.
 

@@ -2,9 +2,9 @@
 title: Opslagplaatsen voor Cloud Manager
 description: Leer hoe u uw git-opslagruimten maakt, weergeeft en verwijdert in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Volg deze stappen om opslagruimten in Cloud Manager weer te geven en te beheren.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Van de **Programmaoverzicht** pagina, tik of klik op **Opslagplaatsen** tab naar **Opslagplaatsen** pagina.
+1. Van de **Programmaoverzicht** pagina, tik of klik op de knop **Opslagplaatsen** tab naar **Opslagplaatsen** pagina.
 
-1. Klikken op **Opslagplaats toevoegen**.
+1. Klikken **Opslagplaats toevoegen**.
 
    ![Opslagplaats toevoegen, knop](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 
@@ -36,7 +36,7 @@ Volg deze stappen om opslagruimten in Cloud Manager weer te geven en te beheren.
 
 Wanneer de wizard wordt gesloten, wordt uw nieuwe opslagplaats weergegeven in de tabel.
 
-U kunt de gegevensopslagruimte in de tabel selecteren, op de knop voor weglatingsteken klikken en **Repository-URL kopiëren**, **Weergeven en bijwerken**, of **Verwijderen**.
+U kunt de gegevensopslagruimte in de tabel selecteren en op de knop voor weglatingsteken klikken en **Repository-URL kopiëren**, **Weergeven en bijwerken**, of **Verwijderen**.
 
 ![Opties voor opslagplaats](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,7 +58,7 @@ Als u een opslagplaats verwijdert, gebeurt het volgende:
 
 Ga als volgt te werk om een opslagplaats in Cloud Manager te verwijderen.
 
-1. Van de **Programmaoverzicht** pagina, klik op **Opslagplaatsen** en navigeer naar de **Opslagplaatsen** pagina.
+1. Van de **Programmaoverzicht** pagina, klikt u op de **Opslagplaatsen** en navigeer naar de **Opslagplaatsen** pagina.
 
 1. Selecteer de opslagplaats en klik op de knop voor weglatingsteken en selecteer **Verwijderen** om de gegevensopslagruimte te verwijderen.
 

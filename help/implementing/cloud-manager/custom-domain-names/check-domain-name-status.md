@@ -2,9 +2,9 @@
 title: Status domeinnaam controleren
 description: Leer hoe u kunt bepalen of uw aangepaste domeinnaam is geverifieerd door Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ U kunt de status van uw aangepaste domeinnaam bepalen in Cloud Manager.
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
-1. Klikken op **Domeininstellingen** in het linkernavigatievenster.
+1. Klikken **Domeininstellingen** in het linkernavigatievenster.
 
 1. Klik op de knop **Status** pictogram voor de domeinnaam.
 
@@ -60,7 +60,7 @@ Deze fout kan tijdens domeinbevestiging van het TXT- verslag voorkomen zelfs nad
 
 #### Fout bij maken {#cause}
 
-Hiermee vergrendelt u snel een domein op de initiële account die het heeft geregistreerd en kan geen enkele andere account een subdomein registreren zonder toestemming te vragen. Bovendien kunt u met Snelheid alleen een apex-domein en bijbehorende subdomeinen toewijzen aan één Fastly-service en -account. Als u een bestaande Fastly-account hebt die dezelfde map en subdomeinen koppelt die worden gebruikt voor uw AEM Cloud Service-domeinen, wordt deze fout weergegeven.
+Hiermee vergrendelt u snel een domein op de initiële account die het heeft geregistreerd en kan geen enkele andere account een subdomein registreren zonder toestemming te vragen. Bovendien kunt u met Snelheid alleen een apex-domein en bijbehorende subdomeinen toewijzen aan één Fastly-service en -account. Deze fout wordt weergegeven als u een bestaande Fastly-account hebt waarmee dezelfde map en subdomeinen worden gekoppeld die worden gebruikt voor uw AEM Cloud Service-domeinen.
 
 #### Foutresolutie {#resolution}
 

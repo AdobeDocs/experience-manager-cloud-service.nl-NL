@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Een pagina bewerken:
 
    ![Een pagina bewerken](assets/sites-editor-title.png)
 
-U kunt naar de plaatsenconsole terugkeren door terug naar dat lusje in uw browser op elk ogenblik te schakelen. Met behulp van de site-editor kunt u snel de inhoud van de pagina weergeven als de auteurs van de inhoud en uw publiek deze zullen zien.
+U kunt naar de plaatsenconsole terugkeren door terug naar dat lusje in uw browser op elk ogenblik te schakelen. Met de site-editor kunt u de inhoud van de pagina snel weergeven als de auteurs van de inhoud en uw publiek deze kunnen zien.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Nu u dit deel van de AEM Sites-vertaalreis hebt voltooid, moet u:
 * Begrijp hoe AEM inhoud opslaat.
 * Wees vertrouwd met AEM vertaalhulpmiddelen.
 
-Gebaseerd op deze kennis en uw AEM Sites-vertaalreis voortzetten door het document opnieuw te bekijken [De vertaalaansluiting configureren](configure-connector.md) waar u leert hoe u AEM kunt maken met een vertaalservice.|
+Gebaseerd op deze kennis en uw AEM Sites-vertaalreis voortzetten door het document opnieuw te bekijken [De vertaalaansluiting configureren](configure-connector.md) waar u leert hoe u verbinding AEM maken met een vertaalservice.|
 
 ## Aanvullende bronnen {#additional-resources}
 

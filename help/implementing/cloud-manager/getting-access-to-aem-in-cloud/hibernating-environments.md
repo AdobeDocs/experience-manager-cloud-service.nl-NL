@@ -2,9 +2,9 @@
 title: Sluiende en ontsmette zandbakomgevingen
 description: Leer hoe omgevingen van een sandboxprogramma automatisch overschakelen op een hibernatiemodus en hoe u deze kunt deorganiseren.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ Sluimerstand kan automatisch of handmatig plaatsvinden.
 * **Automatisch** - Sandbox-programmaomgevingen worden automatisch gehiberd na acht uur inactiviteit. Inactiviteit wordt gedefinieerd als het ontvangen van aanvragen door de auteurservice of door voorvertonings- of publicatieservices.
 * **Handmatig** - Als gebruiker kunt u de omgeving van een sandboxprogramma handmatig moderniseren. Dit is niet verplicht, aangezien de herberging automatisch plaatsvindt, zoals eerder beschreven.
 
-Het kan een paar minuten duren voordat de slaapstand wordt geactiveerd in sandboxprogrammaomgevingen. De gegevens blijven behouden tijdens de hibernatie.
+Het kan een paar minuten duren voordat de slaapstand wordt geactiveerd in sandboxprogrammaomgevingen. De gegevens blijven behouden tijdens de winterslaap.
 
 ### Handmatige slaapstand gebruiken {#using-manual-hibernation}
 
-U kunt uw sandboxprogramma handmatig via de Developer Console herbergen. Alle gebruikers van Cloud Manager hebben toegang tot de Developer Console voor een sandboxprogramma.
+U kunt uw sandboxprogramma handmatig via de ontwikkelaarsconsole herbergen. Alle gebruikers van Cloud Manager hebben toegang tot de Developer Console voor een sandboxprogramma.
 
 Voer de volgende stappen uit om de omgevingen van uw sandboxprogramma handmatig te hiberneren.
 
@@ -47,7 +47,7 @@ Voer de volgende stappen uit om de omgevingen van uw sandboxprogramma handmatig 
 
    ![Horizontaal bevestigen](assets/hibernate-2.png)
 
-Als de winterslaap is gelukt, wordt het hibernatieproces volledig op de hoogte gebracht van uw omgeving in de **Ontwerpconsole** scherm.
+Wanneer de winterslaap succesvol is, ziet u het hibernatieproces volledige melding voor uw milieu in **Ontwerpconsole** scherm.
 
 ![Sluimerbevestiging](assets/hibernate-4.png)
 
@@ -71,7 +71,7 @@ U kunt uw Sandbox-programma handmatig via de ontwikkelaarsconsole herbergen.
 
    * Zie [Developer Console openen](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor meer informatie over de Developer Console.
 
-1. Klikken op **De-hibernate**.
+1. Klikken **De-hibernate**.
 
    ![De-hibernate knop](assets/de-hibernation-img1.png)
 
@@ -112,7 +112,7 @@ In gesluimerde omgevingen zijn implementaties en handmatige AEM nog steeds mogel
 
 ## Sluimerstand en verwijdering {#hibernation-deletion}
 
-* De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genormaliseerd.
+* De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genummerd.
    * Inactiviteit wordt gedefinieerd als het ontvangen van aanvragen door de auteurservice of door voorvertonings- of publicatieservices.
    * Als ze eenmaal zijn gehiberd, kunnen ze [handmatig ontbonden.](#de-hibernation-introduction)
 * Sandboxprogramma&#39;s worden verwijderd na zes maanden van continuhibernatiemodus, waarna ze opnieuw kunnen worden gemaakt.

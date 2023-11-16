@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor query en indexering
 description: Leer hoe u indexen en query's optimaliseert op basis van de richtlijnen die de Adobe hanteert.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3133'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ De tabellen &#39;Trage query&#39;s&#39; en &#39;Populaire query&#39;s&#39; bevat
 * De query-instructie zelf.
 * Details van de laatste Draad die de vraag uitvoerde, toestaand de pagina of toepassingseigenschap die de vraag uitvoeren om worden geïdentificeerd.
 * De score &#39;Leesoptimalisatie&#39; voor de query.
-   * Dit wordt berekend als de verhouding tussen het aantal rijen / knooppunten dat is gescand om de query uit te voeren en het aantal overeenkomende resultaten dat wordt gelezen.
+   * Dit wordt berekend als de verhouding tussen het aantal rijen/knopen die worden gescand om de vraag in werking te stellen en het aantal passende gelezen resultaten.
    * Een vraag waarvoor elke beperking (en om het even welke opdracht) bij de index kan worden behandeld 90% of hierboven zal typisch scoren.
 * Details van het maximumaantal rijen -
    * Lezen - geeft aan dat een rij is opgenomen als onderdeel van een resultaatset.
@@ -132,15 +132,16 @@ De `Reset Statistics` er is een optie om alle bestaande statistieken die in de t
 
 ### Query uitvoeren
 
-Met het gereedschap Uitdrukkelijke query kunnen ontwikkelaars het uitvoeringsplan van de query begrijpen (zie [Het uitvoeringsplan voor de query lezen](#reading-query-execution-plan)), met inbegrip van details van om het even welke indexen die worden gebruikt wanneer het uitvoeren van de vraag. Dit kan worden gebruikt om te begrijpen hoe effectief een vraag wordt geïndexeerd om zijn prestaties te voorspellen, of retrospectief te analyseren.
+Met het gereedschap Uitdrukkelijke query kunnen ontwikkelaars het uitvoeringsplan van de query begrijpen (zie [Het uitvoeringsplan voor de query lezen](#reading-query-execution-plan)), met inbegrip van details van om het even welke indexen die worden gebruikt wanneer het uitvoeren van de vraag. Dit kan worden gebruikt om te begrijpen hoe effectief een vraag wordt geïndexeerd om te voorspellen, of met terugwerkende kracht zijn prestaties te analyseren.
 
 #### Een query verklaren
 
 Ga als volgt te werk om een query uit te leggen:
+
 * Selecteer de gewenste querytaal met de `Language` vervolgkeuzelijst.
 * Voer de queryinstructie in het dialoogvenster `Query` veld.
 * Indien nodig, selecteer hoe de vraag gebruikend de verstrekte checkboxes zal worden uitgevoerd.
-   * Door gebrek, te hoeven de vragen JCR niet worden uitgevoerd om het Plan van de Uitvoering van de Vraag te identificeren (dit is niet het geval voor vragen QueryBuilder).
+   * Standaard hoeven JCR-query&#39;s niet te worden uitgevoerd om het uitvoeringsplan van de query te identificeren (dit is niet het geval voor QueryBuilder-query&#39;s).
    * Er zijn drie opties beschikbaar voor het uitvoeren van de query -
       * `Include Execution Time` - voer de query uit, maar probeer geen resultaten te lezen.
       * `Read first page of results` - voer de vraag uit en lees de eerste &quot;pagina&quot;van 20 resultaten (herhalend de beste praktijken voor het uitvoeren van vragen).
@@ -238,7 +239,7 @@ In dit deel van het plan staat: -
 
 Dit plan van de vraaguitvoering zal in elk element onder resulteren `/content/dam` die van de index worden gelezen, en dan verder door de vraagmotor worden gefilterd (die slechts die die aanpassen de niet-geïndexeerde bezitsbeperking in de resultaatreeks).
 
-Zelfs als slechts een klein percentage van de activa de beperking aanpast `jcr:content/metadata/myProperty = "My Property Value"`, zal de vraag een groot aantal knopen moeten lezen (poging om) de gevraagde &quot;pagina&quot;van resultaten te vullen. Dit kan in een slecht presterende vraag resulteren, die als laag zal worden getoond `Read Optimization` score in het hulpmiddel van de Prestaties van de Vraag) en kan tot berichten leiden WAARSCHUWING die erop wijzen dat de grote aantallen knopen (zie [Indextraversal](#index-traversal)).
+Zelfs als slechts een klein percentage van de activa de beperking aanpast `jcr:content/metadata/myProperty = "My Property Value"`, moet de query een groot aantal knooppunten lezen om de gevraagde &#39;pagina&#39; met resultaten te vullen (poging om deze te vullen). Dit kan in een slecht presterende vraag resulteren, die als laag zal worden getoond `Read Optimization` score in het hulpmiddel van de Prestaties van de Vraag) en kan tot berichten leiden WAARSCHUWING die erop wijzen dat de grote aantallen knopen (zie [Indextraversal](#index-traversal)).
 
 Als u de prestaties van deze tweede query wilt optimaliseren, maakt u een aangepaste versie van de `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) en voeg de volgende eigenschapdefinitie toe -
 

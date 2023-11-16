@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing w
 
    >[!NOTE]
    >
-   >Als u niet de zelfde gebiedsbeschrijvingen gebruikte zoals die in de vorige modules worden beschreven, zult u de gebiedsnamen in deze vraag moeten bijwerken.
+   >Als u niet de zelfde gebiedsbeschrijvingen gebruikte zoals die in de vorige modules worden beschreven, werk de gebiedsnamen in deze vraag bij.
    >
    >Gebruik de GraphQL-functie voor automatisch aanvullen (Ctrl+Spatiebalk of Option+Spatiebalk), zoals eerder beschreven, om de beschikbare eigenschappen beter te kunnen identificeren.
 
@@ -183,7 +183,7 @@ U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing w
 
 1. De vraag wordt voortgeduurd zoals bevestigd door een bannerbericht bij de bodem van het scherm. De query wordt nu ook weergegeven in het linkerdeelvenster met doorlopende query&#39;s in het venster.
 
-1. Opdat de persistente query openbaar beschikbaar is, moet deze worden gepubliceerd, ongeveer zoals hoe de Content Fragments moeten worden gepubliceerd. Klik op de knop **Publiceren** knoop bij het hoogste recht van de vraagredacteur om de vraag te publiceren.
+1. Voor de persisted vraag om openbaar beschikbaar te zijn, moet het worden gepubliceerd, veel als hoe uw Fragments van de Inhoud moeten worden gepubliceerd. Klikken **Publiceren** bij het hoogste recht van de vraagredacteur om de vraag te publiceren.
 
 1. De publicatie wordt bevestigd door een bannerkennisgeving.
 

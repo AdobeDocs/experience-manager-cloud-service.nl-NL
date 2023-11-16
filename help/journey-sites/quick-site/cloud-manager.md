@@ -2,9 +2,9 @@
 title: Inzicht krijgen in Cloud Manager en de workflow voor snel maken van sites
 description: Leer meer over Cloud Manager en hoe dit het nieuwe proces voor het maken van de Snelle site samenbrengt.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer meer over Cloud Manager en hoe dit het nieuwe proces voor het maken van de 
 
 >[!TIP]
 >
->Als uw rol exclusief front-end ontwikkeling is, kunt u aan het artikel overslaan [Toegangsgegevens van opslagplaats ophalen](retrieve-access.md) tijdens deze reis.
+>Als uw rol exclusief front-end ontwikkeling is, kunt u aan het artikel overslaan [Toegangsgegevens van de opslagplaats ophalen](retrieve-access.md) tijdens deze reis.
 >
 >Als u een AEM beheerder bent, is een beheerder van de Manager van de Wolk, verantwoordelijk voor zowel front-end ontwikkeling als beheerderstaken, of eenvoudig het proces van begin tot eind in AEM voor front-end ontwikkeling wilt begrijpen, blijven lezend het huidige document en ga op deze reis verder.
 
@@ -76,7 +76,7 @@ Voor de front-end ontwikkelaar, is geen gebruik van AEM noodzakelijk.
 
 Cloud Manager is een essentieel onderdeel van AEM as a Cloud Service en fungeert als één ingangspunt voor het platform.
 
-Om klanten met de montages van de ondernemingsontwikkeling te steunen, AEM as a Cloud Service volledig met de Manager van de Wolk en zijn doel-gebouwde CI/CD pijpleidingen integreren. Met het gereedschap Snel site maken kunt u deze functies uitbreiden voor ondersteuning van speciale front-end ontwikkelingspijplijnen.
+Om klanten met de montages van de ondernemingsontwikkeling te steunen, AEM as a Cloud Service volledig integreert met de Manager van de Wolk en zijn doel-gebouwde CI/CD pijpleidingen. Met het gereedschap Snel site maken kunt u deze functies uitbreiden voor ondersteuning van speciale front-end ontwikkelingspijplijnen.
 
 Voor deze reis is een volledig begrip van Cloud Manager niet nodig. Op hoog niveau bestaat Cloud Manager uit verschillende structuurniveaus.
 
@@ -91,10 +91,10 @@ Voor deze reis is een volledig begrip van Cloud Manager niet nodig. Op hoog nive
 Een voorbeeld is vaak handig bij het contextualiseren van deze hiërarchie.
 
 * WKND Travel and Adventure Enterprises zou een **huurder** die zich richt op reisgerelateerde media.
-* De huurder van WKND Reizen en Adventure Enterprises zou twee kunnen hebben **programma&#39;s**: Eén Sites-programma voor WKND Magazine en één Assets-programma voor WKND Media.
+* De huurder van WKND Reizen en Adventure Enterprises zou twee kunnen hebben **programma&#39;s**: één Sites-programma voor WKND Magazine en één Assets-programma voor WKND Media.
 * De programma&#39;s WKND Magazine en WKND Media zouden zowel dev, stadium, als productie hebben **omgevingen**.
 
-## De snelle ontwikkeling van de Site Creation Front-End {#flow}
+## De snelle ontwikkeling van de Site Creation Front-End-ontwikkelingsstroom {#flow}
 
 De algehele flow is eenvoudig en intuïtief, zelfs als u nog geen uitgebreide ervaring hebt met Cloud Manager.
 
@@ -117,7 +117,7 @@ Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 * Begrijp hoe AEM Sites en Cloud Manager samenwerken om de ontwikkeling op de voorgrond te vergemakkelijken
 * Ontdek hoe de stap voor aanpassing volledig losgekoppeld is van AEM en geen AEM kennis vereist.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het document opnieuw te bekijken [Site maken van sjabloon,](create-site.md) Hier leert u hoe u snel een nieuwe AEM site kunt maken met een sjabloon.
+Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het document opnieuw te bekijken [Site maken van sjabloon,](create-site.md) Hier leert u hoe u snel een nieuwe AEM-site kunt maken met een sjabloon.
 
 ## Aanvullende bronnen {#additional-resources}
 

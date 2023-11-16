@@ -2,9 +2,9 @@
 title: Meer informatie over CMS Headless Development
 description: In dit deel van de AEM Headless Developer Journey, leer over technologie zonder kop en waarom je het zou gebruiken.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1636'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Het is onmogelijk om de toekomst te voorspellen, maar zonder kop geeft u de flex
 
 ## AEM en zonder kop {#aem-and-headless}
 
-Terwijl u deze ontwikkelaarstraject doorloopt, leert u hoe AEM levering zonder kop ondersteunt naast de volledige leveringsmogelijkheden voor de stapel.
+Terwijl u deze ontwikkelaarstraject doorloopt, leert u hoe AEM levering zonder kop ondersteunt langs de volledige leveringsmogelijkheden van de stapel.
 
 Als marktleider op het gebied van digitaal ervaringsbeheer realiseert de Adobe zich dat de ideale oplossing voor echte uitdagingen die ontwerpers ervaren zelden een binaire keuze is. Daarom AEM niet alleen beide modellen worden ondersteund, maar ook de naadloze hybride combinatie van beide, waarbij de voordelen van een volledig en zonder kop stapel worden gecombineerd, zodat u de consumenten van uw inhoud het beste kunt dienen, waar ze zich ook bevinden.
 
@@ -120,7 +120,7 @@ Bedankt dat je aan de slag bent gegaan met je AEM tocht zonder kop! Nu u dit doc
 * Begrijp waarom en wanneer de kop niet nodig is.
 * Op hoog niveau weten hoe headless-concepten worden gebruikt en hoe ze met elkaar verweven zijn.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM zonder hoofd door het document opnieuw te bekijken [Aan de slag met AEM headless as a Cloud Service](getting-started.md) waar u zult leren hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen te denken over hoe AEM de levering van inhoud zonder kop en zijn eerste vereisten benadert.
+Gebaseerd op deze kennis en doorgaan met uw AEM zonder hoofd door het document opnieuw te bekijken [Aan de slag met AEM headless as a Cloud Service](getting-started.md) waar u leert om de noodzakelijke hulpmiddelen op te zetten en hoe te beginnen te denken over hoe AEM de levering van inhoud zonder kop en zijn eerste vereisten benadert.
 
 ## Aanvullende bronnen {#additional-resources}
 

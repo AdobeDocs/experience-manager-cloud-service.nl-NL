@@ -2,9 +2,9 @@
 title: Pagina's en sjablonen van productcatalogi beheren
 description: Meer informatie over het beheren van productcataloguspagina's en -sjablonen
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Meer weten over het beheren van productcataloguspagina&#39;s en -sjablonen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Content and Commerce authoring trip: [Aan de slag met AEM basisbeginselen van CIF-authoring](getting-started.md)U leerde de basis van CIF-authoring.
+In het vorige document van de AEM Content and Commerce authoring trip: [Aan de slag met AEM basisbeginselen van CIF authoring](getting-started.md), u leerde de basis van CIF creatie.
 
 Dit artikel bouwt voort op die grondbeginselen.
 
@@ -23,7 +23,7 @@ Dit artikel bouwt voort op die grondbeginselen.
 
 Dit document helpt u begrijpen hoe te om de pagina&#39;s en de malplaatjes van de productcatalogus te beheren. Na het lezen moet u:
 
-* begrijpen wat de concepten van catalogussjablonen zijn
+* begrijpen de concepten van catalogussjablonen
 * hoe generieke sjablonen werken
 * een afzonderlijke sjabloon hebben gemaakt
 
@@ -31,7 +31,7 @@ Dit document helpt u begrijpen hoe te om de pagina&#39;s en de malplaatjes van d
 
 De Venia-winkel wordt geleverd met een typische ervaring in de productcatalogus met navigatie, landen, categorieën (PLP) en productdetails (PDP).
 
-De pagina&#39;s van de catalogus worden gebouwd dynamisch gebruikend een AEM CIF catalogusmalplaatje en productgegevens in real time die van het handelseindpunt wanneer nodig worden gehaald. Elke catalogus heeft een algemene sjabloon voor product- en categoriepagina&#39;s.
+Cataloguspagina&#39;s worden dynamisch gebouwd gebruikend een AEM CIF catalogusmalplaatje en productgegevens in real time die van het handelseindpunt wanneer nodig worden gehaald. Elke catalogus heeft een algemene sjabloon voor product- en categoriepagina&#39;s.
 ![catalogusstructuur](assets/catalog-structure.png)
 
 De navigatiecomponent toont inhoud en cataloguspagina&#39;s. Het is mogelijk om de bestemmingspagina van de catalogus of de categorieën van het eerste niveau in de navigatie te tonen. Als u de muisaanwijzer boven een categorie houdt, worden de categorieën op het tweede niveau weergegeven als een tweede regel.
@@ -61,7 +61,7 @@ Sjablonen kunnen worden bewerkt door de sjabloonpagina rechtstreeks te openen of
 
 ### Categorie- of productspecifieke sjablonen {#specific}
 
-CIF steunt veelvoudige malplaatjes in enkel een paar kliks. Als u een andere sjabloon wilt maken, selecteert u de algemene sjabloon in de desbetreffende categorie en maakt u een nieuwe pagina met de **Maken** handeling.
+CIF ondersteunt meerdere sjablonen met slechts een paar klikken. Als u een andere sjabloon wilt maken, selecteert u de algemene sjabloon in de desbetreffende categorie en maakt u een nieuwe pagina met de **Maken** handeling.
 
 ![sjabloonpagina maken](assets/create-template-page.png)
 
@@ -103,15 +103,15 @@ Dezelfde workflow kan worden toegepast om afzonderlijke productsjablonen te make
 
 Nu u dit deel van de reis hebt voltooid, moet u:
 
-* begrijpen wat de concepten van catalogussjablonen zijn
+* begrijpen de concepten van catalogussjablonen
 * hoe generieke sjablonen werken
 * een afzonderlijke sjabloon hebben gemaakt
 
-Gebaseerd op deze kennis en doorgaan met uw reis door het document opnieuw te bekijken [Ervaringen met gefaseerde productcatalogi beheren](staged-catalog.md), waar u leert werken met gefaseerde productgegevens en AEM Launches.
+Gebaseerd op deze kennis en doorgaan met uw reis door het document opnieuw te bekijken [Ervaringen met gefaseerde productcatalogi beheren](staged-catalog.md), waar u leert werken met gefaseerde productgegevens en AEM.
 
 ## Aanvullende bronnen {#additional-resources}
 
 U kunt het beste naar het volgende gedeelte van de rit gaan door het document te bekijken [Ervaringen met gefaseerde productcatalogi beheren](staged-catalog.md)Hieronder volgt een aantal aanvullende, optionele bronnen die een dieper inzicht geven in bepaalde concepten die in dit document worden genoemd, maar die niet nodig zijn om verder te gaan op de weg zonder kop:
 
 * [Meerdere categorieën en productpagina&#39;s maken](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Migratiehandleiding voor de Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Hoe migreren naar de AEM Commerce Integration Framework (CIF)-invoegtoepassing uit een oude versie
+* [Migratiehandleiding voor de Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Migreren naar de AEM Commerce integration framework (CIF)-invoegtoepassing vanuit een oude versie

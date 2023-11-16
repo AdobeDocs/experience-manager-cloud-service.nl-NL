@@ -1,13 +1,13 @@
 ---
 title: Aangepaste machtigingen
 description: Leer hoe u douanetoestemmingen kunt gebruiken om nieuwe profielen van de douanetoestemming met configureerbare toestemmingen tot stand te brengen om toegang tot programma's, pijpleidingen en milieu's voor de gebruikers van de Managers van de Wolk te beperken.
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+exl-id: 167da985-7f19-45b3-90a3-884817907da2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
-
 
 # Aangepaste machtigingen {#custom-permissions}
 
@@ -44,7 +44,7 @@ In deze sectie worden deze stappen beschreven. Het kan handig zijn te verwijzen 
 
 >[!NOTE]
 >
->U moet over de rechten van de productbeheerder in Admin Console voor Adobe Experience Manager as a Cloud Service beschikken om nieuwe profielen te creëren en toestemmingen voor de Manager van de Wolk te beheren.
+>Adobe Experience Manager as a Cloud Service kan alleen nieuwe profielen maken en machtigingen voor Cloud Manager beheren als Admin Console beschikt over de rechten van productbeheerders.
 
 ### Een nieuw productprofiel maken {#create}
 

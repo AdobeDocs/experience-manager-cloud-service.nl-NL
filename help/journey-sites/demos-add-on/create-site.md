@@ -2,9 +2,9 @@
 title: Demo-site maken
 description: Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Zodra de pijpleiding toe:voegen-aan van de Demo van de Verwijzing heeft opgestel
 
    ![Toegang tot ontwerpomgeving](assets/access-author.png)
 
-1. Tik of klik in het hoofdmenu van AEM op **Sites**.
+1. Tik of klik in het hoofdmenu van AEM **Sites**.
 
    ![Toegang tot sites](assets/access-sites.png)
 
-1. Tik of klik in de siteconsole op **Maken** rechtsboven in het scherm en selecteer **Site van sjabloon** in de vervolgkeuzelijst.
+1. Tik of klik in de siteconsole op **Maken** rechtsboven in het scherm en selecteert u **Site van sjabloon** in de vervolgkeuzelijst.
 
    ![Site maken van sjabloon](assets/create-site-from-template.png)
 
@@ -104,7 +104,7 @@ Nu u dit deel van de AEM Toelage van de Demo van de Verwijzing hebt voltooid zou
 U kunt nu de functies van AEM testen met add-on inhoud. U hebt twee opties om uw reis voort te zetten:
 
 * Als u AEM Screens-inhoud volledig wilt demo- en testen, moet u een site implementeren op basis van de **We.Cafe-sitesjabloon** zoals hierboven beschreven en doorgaan [Schakel AEM Screens for Your Demo Site in.](screens.md)
-* Als u alleen Sites-inhoud wilt demo, gaat u verder [Uw demosites beheren,](manage.md) waar u informatie krijgt over de beschikbare gereedschappen om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
+* Als u alleen Sites-inhoud wilt demo, gaat u verder [Uw demosites beheren,](manage.md) waar u meer te weten komt over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
 
 ## Aanvullende bronnen {#additional-resources}
 

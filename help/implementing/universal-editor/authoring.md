@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Als u inhoud voor een app wilt ontwerpen met de Universal Editor, moet de app va
 
 ## Aanmelden {#sign-in}
 
-Wanneer de app van instrumenten is voorzien om met de Universal Editor te werken, moet u zich aanmelden bij de Universal Editor. U hebt een Adobe ID nodig om u aan te melden en [toegang hebben tot de Universal Editor.](getting-started.md#request-access)
+Meld u aan bij de Universal Editor nadat de app van instrumenten is voorzien om te werken met de Universal Editor. U hebt een Adobe ID nodig om u aan te melden en [toegang hebben tot de Universal Editor.](getting-started.md#request-access)
 
 Nadat u bent aangemeld, voert u de URL van de pagina die u wilt bewerken in het dialoogvenster [locatiebalk.](#location-bar) zodat u inhoud zoals [tekstinhoud](#text-mode) of [media-inhoud.](#media-mode)
 
@@ -146,7 +146,7 @@ Als u op het emulatiepictogram tikt of erop klikt, worden de opties weergegeven.
 
 ![Opties voor emulatie](assets/emulation-options.png)
 
-Standaard wordt de editor geopend in een computerlay-out waarin de hoogte en breedte automatisch door de browser worden gedefinieerd.
+Standaard wordt de editor geopend in de computerlay-out, waarbij de hoogte en breedte automatisch door de browser worden gedefinieerd.
 
 U kunt er ook voor kiezen om een mobiel apparaat te emuleren en in de Universele Editor:
 
@@ -192,7 +192,7 @@ In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op
 
 #### Componentmodus {#component-mode}
 
-In de modus Componenten kan de auteur van de inhoud klikken om componenten te selecteren en deze te bewerken, waaronder:
+In de modus Componenten kan de auteur van de inhoud componenten selecteren om deze te bewerken, waaronder:
 
 * [Onbewerkte tekst bewerken](#editing-content) op zijn plaats.
 * [RTF-tekst bewerken](#editing-rich-text) op zijn plaats met extra opmaakopties die in de eigenschappen rail worden getoond.

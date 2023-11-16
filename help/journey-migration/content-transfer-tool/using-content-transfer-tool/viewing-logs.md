@@ -2,9 +2,9 @@
 title: Logbestanden voor een migratieset weergeven in het gereedschap Inhoud overbrengen
 description: Logbestanden voor een migratieset weergeven in het gereedschap Inhoud overbrengen
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 11%
 
 ---
@@ -38,6 +38,6 @@ Voer vervolgens de onderstaande stappen uit:
 
 ### Ingestielogbestanden
 
-Ga naar de lijst Ingestietaak-taken in Cloud Acceleratiebeheer, zoek de gewenste migratietaak en klik op de drie punten (**...**) van de baan. U kunt vervolgens klikken op **Logbestand downloaden** om logbestanden te downloaden.
+Ga naar de lijst Ingestietaken in Cloud Acceleration Manager, zoek de gewenste migratietaak en klik op de drie punten (**...**) van de baan. U kunt vervolgens op **Logbestand downloaden** om logbestanden te downloaden.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

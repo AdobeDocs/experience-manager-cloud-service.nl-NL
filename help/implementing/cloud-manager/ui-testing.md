@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2389'
+source-wordcount: '2385'
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ Als u een `testing.properties` bestand in het constructieartefact toevoegen `inc
 
 >[!NOTE]
 >
->Als uw project deze lijn niet omvat, zult u het dossier moeten uitgeven om in het testen UI te kiezen.
+>Als uw project deze lijn niet omvat, geef het dossier uit om in het testen UI te kiezen.
 >
 >Het bestand kan een regel bevatten die u adviseert het bestand niet te bewerken. Dit is toe te schrijven aan het worden geïntroduceerd in uw project alvorens het opt-in testen UI werd geïntroduceerd en de cliënten waren niet bedoeld om het dossier uit te geven. Dit kan veilig worden genegeerd.
 

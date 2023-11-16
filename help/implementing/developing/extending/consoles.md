@@ -1,13 +1,13 @@
 ---
 title: Consoles aanpassen
 description: Leer over de verschillende opties die AEM verstrekt om de consoles van uw auteursinstantie aan te passen.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
-
 
 # Consoles aanpassen {#customizing-consoles}
 
@@ -117,4 +117,4 @@ Als u aanvullende gegevens wilt invoegen, moet u een [PageInfoProvider](https://
 
 Wanneer het gebruiken van een console, moet een gebruiker vaak uit middelen zoals pagina&#39;s, componenten, of activa selecteren. Dit kan de vorm hebben van een lijst waaruit de auteur een punt moet kiezen.
 
-Om de lijst tot een redelijke grootte te houden en ook relevant voor het gebruiksgeval, kan een filter in de vorm van een douane predikaat worden uitgevoerd. Zie het document[Paginaontwerp aanpassen](/help/implementing/developing/extending/page-authoring.md#filtering-resources) voor meer informatie.
+Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie het document[Paginaontwerp aanpassen](/help/implementing/developing/extending/page-authoring.md#filtering-resources) voor meer informatie.

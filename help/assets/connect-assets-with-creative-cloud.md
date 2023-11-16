@@ -1,16 +1,16 @@
 ---
 title: AEM Assets verbinden met Creative Cloud
 description: Leer hoe u AEM Assets configureert en verbindt met Creative Cloud. Verbind met een Creative Cloud recht dat aan een verschillende organisatie IMS wordt geleverd om de recentste integratie van het Creative Cloud in AEM Assets, met inbegrip van Uitdrukkelijke en Bibliotheken van het Creative Cloud gemakkelijk te gebruiken.
-source-git-commit: 8c0c01be301ccaeac4e658c16d63227e55b67fcf
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
 
 # AEM Assets verbinden met Creative Cloud  {#cross-org-entitlements}
 
-Experience Manager Assets heeft de mogelijkheid om verbinding te maken met een machtiging voor een Creative Cloud die is ingericht voor een andere IMS-organisatie om eenvoudig de nieuwste integraties van Creatives Cloud in AEM Assets te kunnen gebruiken, waaronder Express en Creative Cloud Libraries.
+Experience Manager Assets heeft de mogelijkheid om verbinding te maken met een machtiging voor een Creative Cloud die is ingericht voor een andere IMS-organisatie om eenvoudig de nieuwste integratie van Creatives Cloud in AEM Assets te kunnen gebruiken, inclusief Express en Creative Cloud Libraries.
 
 Als uw producten van het Creative Cloud en AEM Assets aan afzonderlijke organisaties IMS worden geleverd, kunt u met een verschillende organisatie van het Creative Cloud verbinden om geïntegreerde werkschema&#39;s tussen de twee oplossingen uit te voeren.
 

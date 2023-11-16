@@ -3,9 +3,9 @@ title: "[!DNL Assets view] gebruikersinterface"
 description: De gebruikersinterface en navigatie begrijpen in [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ In [!DNL Assets view]kunt u elementen, mappen en zoekresultaten in vier verschil
 
 Als u een element wilt zoeken, kunt u de elementen in oplopende of aflopende volgorde sorteren van `Name`, `Relevancy`, `Size`, `Modified`, en `Created`.
 
-Als u naar een map wilt navigeren, dubbelklikt u op de miniaturen van de map of selecteert u de map in de linkerzijbalk. Als u de details van een map wilt weergeven, selecteert u de map en klikt u op Details op de werkbalk boven in het scherm. Als u omhoog en omlaag wilt navigeren in de hiërarchie, gebruikt u de linkerzijbalk of de broodkruimels bovenaan.
+Als u in een map wilt navigeren, dubbelklikt u op de miniaturen van de map of selecteert u de map in de linkerzijbalk. Als u de details van een map wilt weergeven, selecteert u de map en klikt u op Details op de werkbalk boven in het scherm. Als u omhoog en omlaag wilt navigeren in de hiërarchie, gebruikt u de linkerzijbalk of de broodkruimels bovenaan.
 
 ![Bladeren door mappen](assets/browsing-folders.png)
 

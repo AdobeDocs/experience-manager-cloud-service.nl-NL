@@ -2,9 +2,9 @@
 title: Lanceringen maken
 description: U kunt een lancering tot stand brengen om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1042'
 ht-degree: 12%
 
 ---
@@ -25,7 +25,7 @@ U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de 
 >
 >* `/libs/launches/templates/outofscope`
 >
->Deze pagina&#39;s kunnen niet worden bewerkt. Het bericht wordt weergegeven:
+>Deze pagina&#39;s kunnen niet worden bewerkt. U ziet het bericht:
 >
 >* **Deze pagina maakt geen deel uit van de opstart. Ga naar productiepagina**
 
@@ -37,7 +37,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    >[!NOTE]
    >
-   >Wanneer u de **Sites** console is het gebruikelijk om naar de plaats van de bronpagina te navigeren, maar dit is niet verplicht aangezien u kunt navigeren wanneer het selecteren van **Bron starten** in de wizard.
+   >Wanneer u de opdracht **Sites** console is het gebruikelijk om naar de plaats van de bronpagina te navigeren, maar dit is niet verplicht aangezien u kunt navigeren wanneer het selecteren van **Bron starten** in de wizard.
 
 1. Afhankelijk van de console die u gebruikt:
    * **Lanceringen**:
@@ -62,7 +62,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    >[!NOTE]
    >
-   >Als u pagina&#39;s en/of vertakkingen wilt toevoegen aan een lancering, moeten deze zich binnen een site bevinden. dat wil zeggen, onder een gemeenschappelijke hoofdmap.
+   >Als u pagina&#39;s en/of vertakkingen wilt toevoegen aan een introductie, moeten deze zich binnen een site bevinden, dus onder een gemeenschappelijke hoofdmap op hoofdniveau.
    >
    >Als een site taalwortels onder het bovenste niveau bevat, moeten de pagina&#39;s en vertakkingen voor een introductie zich onder een gemeenschappelijke hoofdtaalbasis bevinden.
 
@@ -79,10 +79,10 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 1. In de **Eigenschappen** stap van de wizard die u kunt opgeven:
 
    * **Titel starten**: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
-   * **met bestaande inhoud**: de oorspronkelijke inhoud wordt gebruikt om de lancering tot stand te brengen.
-   * **een nieuwe sjabloon gebruiken om de pagina te vervangen**: Zie [Starten met nieuwe sjabloon maken](#create-launch-with-new-template) voor meer informatie .
-   * **Live-gegevens van bronpagina overnemen**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de introductie van [Live kopie](/help/sites-cloud/administering/msm/overview.md). Deze optie is standaard geselecteerd.—>
-   * **Opstartdatum**: De datum en het tijdstip waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** vlag; zie [Starten - de volgorde van gebeurtenissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
+   * **met bestaande inhoud**: de oorspronkelijke inhoud wordt gebruikt om de opstart te maken.
+   * **de pagina vervangen met een nieuwe sjabloon**: Zie [Starten met nieuwe sjabloon maken](#create-launch-with-new-template) voor meer informatie .
+   * **Live-gegevens van bronpagina overnemen**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de introductie van een [Live kopie](/help/sites-cloud/administering/msm/overview.md). Deze optie is standaard geselecteerd.—>
+   * **Opstartdatum**: De datum en tijd waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** markering; zie [Starten - de volgorde van gebeurtenissen](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Starteigenschappen](/help/sites-cloud/authoring/assets/launches-properties.png)
 
@@ -143,7 +143,7 @@ Een geneste opstart maken vanuit de **Starten** console is in wezen het zelfde a
 
 Als u een geneste opstart wilt maken vanuit de **Sites** console - gebaseerd op een bestaande lancering:
 
-1. Toegang krijgen tot [Starten vanuit verwijzingen (Sites-console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
+1. Toegang krijgen tot de [Starten vanuit verwijzingen (Sites-console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
 1. Selecteer **Start maken** om de wizard te openen (aangezien de bron al is geselecteerd, wordt de stap **Bron selecteren** overgeslagen).
 1. Voer de **Titel starten** en alle andere vereiste gegevens (zoals bij een normale start).
 1. Gebruiken **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.

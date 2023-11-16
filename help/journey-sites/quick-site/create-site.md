@@ -2,9 +2,9 @@
 title: Site maken van sjabloon
 description: Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1504'
 ht-degree: 0%
 
 ---
@@ -75,13 +75,13 @@ Het is heel eenvoudig om een nieuwe site te maken met een sjabloon.
 
    ![Een nieuwe site maken op basis van een sjabloon](assets/create-site-from-template.png)
 
-1. Tik of klik op **Importeren** boven aan de linkerkolom.
+1. Tik of klik in de wizard Site maken op **Importeren** boven aan de linkerkolom.
 
    ![Wizard Site maken](assets/site-creation-wizard.png)
 
 1. Zoek de sjabloon in de bestandenbrowser [u hebt eerder gedownload](#obtaining-template) tikken of klikken **Uploaden**.
 
-1. Nadat de sjabloon is geüpload, wordt deze weergegeven in de lijst met beschikbare sjablonen. Tik of klik erop om de sjabloon te selecteren (zodat ook informatie over de sjabloon in de rechterkolom wordt weergegeven) en tik of klik op de sjabloon **Volgende**.
+1. Zodra het geüpload, verschijnt het in de lijst van beschikbare malplaatjes. Tik of klik erop om de sjabloon te selecteren (zodat ook informatie over de sjabloon in de rechterkolom wordt weergegeven) en tik of klik op de sjabloon **Volgende**.
 
    ![Een sjabloon selecteren](assets/select-site-template.png)
 
@@ -90,11 +90,11 @@ Het is heel eenvoudig om een nieuwe site te maken met een sjabloon.
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
 
-1. Tik of klik op **Maken** en de nieuwe site wordt gemaakt op basis van de sitesjabloon.
+1. Tik of klik op **Maken** en de nieuwe site wordt gemaakt van de sitesjabloon.
 
    ![Details van de nieuwe site](assets/create-site-details.png)
 
-1. Tik of klik op **Gereed**.
+1. Tik of klik in het bevestigingsvenster dat verschijnt op **Gereed**.
 
    ![Dialoogvenster Succes](assets/success.png)
 
@@ -113,9 +113,9 @@ Sitesjablonen zijn zeer krachtig en flexibel en elk gewenst aantal kan worden ge
 
 ## Voorbeeld van pagina {#example-page}
 
-Als u extra front-end aanpassing vereist, houd in mening dat de front-end ontwikkelaar niet met de details van uw inhoud vertrouwd kan zijn. Daarom is het een goed idee om de ontwikkelaar van een weg aan typische inhoud te voorzien die als basis van verwijzing kan worden gebruikt aangezien het thema wordt aangepast. Een typisch voorbeeld is de homepage voor de master taal van de plaats.
+Als u extra front-end aanpassing vereist, houd in mening dat de front-end ontwikkelaar niet met de details van uw inhoud vertrouwd kan zijn. Daarom is het een goed idee om de ontwikkelaar van een weg aan typische inhoud te voorzien die als basis van verwijzing kan worden gebruikt aangezien het thema wordt aangepast. Een typisch voorbeeld is de homepage voor de hoofdtaal van de plaats.
 
-1. Navigeer in de browser van de sites naar de startpagina van de master taal van de site en tik op de pagina of klik op de pagina om deze te selecteren. Tik vervolgens op de pagina of klik op **Bewerken** in de menubalk.
+1. Navigeer in de browser van de sites naar de startpagina van de hoofdtaal van de site en tik op de pagina of klik op de pagina om deze te selecteren. Tik vervolgens op de pagina of klik op **Bewerken** in de menubalk.
 
    ![Standaardstartpagina](assets/home-page-in-console.png)
 
@@ -123,7 +123,7 @@ Als u extra front-end aanpassing vereist, houd in mening dat de front-end ontwik
 
    ![De startpagina bewerken](assets/home-page-edit.png)
 
-1. Kopieer op het tabblad dat wordt geopend het pad van de inhoud van de adresbalk. Het ziet er ongeveer zo uit `/content/<your-site>/en/home.html?wcmmode=disabled`.
+1. Kopieer op het tabblad dat wordt geopend het pad van de inhoud van de adresbalk. Het zal er ongeveer zo uitzien `/content/<your-site>/en/home.html?wcmmode=disabled`.
 
    ![Homepage](assets/home-page.png)
 
@@ -143,7 +143,7 @@ Nu de site is gemaakt, kan het thema van de site dat door de sjabloon wordt gege
 
 U hebt nu een kopie van de bronbestanden voor thema&#39;s in uw downloadbestanden.
 
-## Proxygebruiker instellen {#proxy-user}
+## Proxy-gebruiker instellen {#proxy-user}
 
 Als u wilt dat de ontwikkelaar aan de voorzijde de aanpassingen voorvertoont met behulp van werkelijke AEM inhoud van uw site, moet u een proxygebruiker instellen.
 
@@ -164,7 +164,7 @@ Als u wilt dat de ontwikkelaar aan de voorzijde de aanpassingen voorvertoont met
 
 1. Tik of klik op **Opslaan en sluiten**.
 
-U hebt de configuratie nu voltooid. Inhoudsauteurs kunnen nu beginnen met het maken van inhoud voor het voorbereiden van de site. Deze inhoud kan dan vooraf worden aangepast in de volgende stap van de reis.
+U hebt de configuratie nu voltooid. Inhoudsauteurs kunnen nu beginnen met het maken van inhoud voor het voorbereiden van de site, zodat ze deze in de volgende stap van de reis op de voorgrond kunnen aanpassen.
 
 ## Volgende functies {#what-is-next}
 

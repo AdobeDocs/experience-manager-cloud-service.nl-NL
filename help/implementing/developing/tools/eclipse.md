@@ -2,9 +2,9 @@
 title: AEM Developer Tools for Eclipse
 description: Leer hoe u de AEM Developer Tools for Eclipse, een Eclipse-plug-in op basis van de Eclipse-plug-in voor Apache Sling, gebruikt.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1192'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
 >[!NOTE]
 >
->In macOS moet u met de rechtermuisknop klikken op **Eclipse.app** en selecteer vervolgens **Toon de Inhoud van het Pakket** om uw `eclipse.ini`**.**
+>In macOS moet u met de rechtermuisknop klikken **Eclipse.app** en selecteer vervolgens **Toon de Inhoud van het Pakket** om uw `eclipse.ini`**.**
 
 ## Hoe te om de Hulpmiddelen van de Ontwikkelaar van de AEM voor Eclipse te installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -194,7 +194,7 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
 
 Als u klaar bent, moet het pakket op de instantie worden uitgevoerd en als u het bestand opslaat, wordt elke wijziging automatisch gesynchroniseerd met de instantie.
 
-Als u een pakket opnieuw wilt samenstellen vanuit uw project, klikt u met de rechtermuisknop op de knop `PROJECT.ui.apps` of `PROJECT.ui.content` en kiest u **Uitvoeren als** -> **Maven Install**.
+Als u een pakket opnieuw wilt maken uit uw project, klikt u met de rechtermuisknop op de knop `PROJECT.ui.apps` of `PROJECT.ui.content` en kiest u **Uitvoeren als** -> **Maven Install**.
 
 U hebt nu een doelmap gemaakt met daarin uw pakket (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 

@@ -2,16 +2,16 @@
 title: De Admin Console openen
 description: Zodra u de voorbereiding noodzakelijk aan het aan boord gaan en de grondbeginselen van structuur AEMaaCS begrijpt, bent u bereid om in de Admin Console voor het eerst te registreren.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1098'
 ht-degree: 0%
 
 ---
 
 # De Admin Console openen {#accessing-admin-console}
 
-In dit deel van het [aan boord gaan,](overview.md) u zult over de voorbereiding nodig leren alvorens u in het systeem voor het eerst kunt registreren.
+In dit deel van het [aan boord gaan,](overview.md) u leert over de voorbereiding noodzakelijk alvorens u in het systeem voor het eerst kunt registreren.
 
 ## Doelstelling {#objective}
 
@@ -54,7 +54,7 @@ Alvorens u de Admin Console kunt gebruiken om gebruikers binnen uw team te beher
 
    ![Welkom-e-mail](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Meld u aan met uw Adobe ID. Als u zich met succes hebt aangemeld, ziet u de **Overzicht** pagina van de Adobe Admin Console.
+1. Meld u aan met uw Adobe ID. Bij een geslaagde aanmelding ziet u de **Overzicht** pagina van de Adobe Admin Console.
 
    ![De Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +66,7 @@ Alvorens u de Admin Console kunt gebruiken om gebruikers binnen uw team te beher
 
    ![Revisiebeheerders](/help/journey-onboarding/assets/get-started2.png)
 
-1. Wanneer u op **Beheerders** van de **Gebruikers** -kaart, kunt u zoeken door uw Adobe ID-e-mail, gebruikersnaam, voornaam of achternaam in te voeren.
+1. Nadat u op **Beheerders** van de **Gebruikers** -kaart, kunt u zoeken door uw Adobe ID-e-mail, gebruikersnaam, voornaam of achternaam in te voeren.
 
    ![Gebruikers zoeken](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +82,7 @@ AEM as a Cloud Service wordt vooraf geconfigureerd met Adobe Identity Management
 
 Door IMS te gebruiken, consolideert AEM as a Cloud Service de login ervaring tussen AEM en de rest van Adobe Experience Cloud. Organisaties met meerdere producten van de Adobe hebben vooral baat bij het maken van op rol gebaseerde groepen in de Admin Console en het toewijzen van toegang tot meerdere producten, waaronder AEM as a Cloud Service via IMS.
 
-In het volgende gedeelte van deze instapreis leert u meer over productprofielen en kunt u gebruikers toewijzen.
+Meer informatie over productprofielen en het toewijzen van gebruikers in het volgende gedeelte van deze instapreis.
 
 ## Contact opnemen met Adobe-ondersteuning {#support}
 

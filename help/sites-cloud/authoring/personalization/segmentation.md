@@ -2,16 +2,16 @@
 title: Inzicht in segmentering
 description: Segmentering is een belangrijke overweging bij het maken van een campagne
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # Inzicht in segmentering {#understanding-segmentation}
 
-Segmentering is een belangrijke overweging bij het maken van een campagne. In de meeste gevallen zult u segmenten moeten hebben die reeds worden bepaald alvorens uw campagne te beginnen.
+Segmentering is een belangrijke overweging bij het maken van een campagne. In de meeste gevallen moet u segmenten al hebben gedefinieerd voordat u de campagne start.
 
 De bezoekers van de plaats hebben verschillende belangen en doelstellingen wanneer zij aan een plaats komen. Kennis van deze doelstellingen en het voldoen aan de verwachtingen is een belangrijke succesfactor voor online marketing.
 
@@ -35,10 +35,10 @@ Bij het bespreken van segmentatie wordt de volgende terminologie gebruikt:
 * **Gebruiker** - Een gebruiker is een bezoeker die zich bij de website registreert om een accountprofiel te ontvangen. Om hun profiel te genereren, bieden ze aanvullende identificatie, zoals een e-mailadres en geslacht. Er kan ook aanvullende informatie worden verzameld, waaronder activiteiten in de gemeenschap en aankooppatronen, ook hier weer. Op basis van de informatie in het profiel kan een demografisch profiel worden gemaakt.
 * **Trait** - Een eigenschap is een eigenschap of eigenschap van een bezoeker die kan worden gebruikt om het lidmaatschap van een bepaald segment te bepalen.
 * **Segment** - Een segment is een verzameling bezoekers die bepaalde kenmerken delen. Segmenten moeten onderscheidend zijn, met een minimum aan overlapping met andere segmenten.
-* **Gedragkarakteristieken** - Gedragskenmerken zijn die welke verband houden met het gedrag van een bezoeker op de website. Deze omvatten:
-   * interesse binnen uw website; inclusief bezochte pagina&#39;s en aangekochte producten
-   * rente op de verwijzende website; inclusief gebruikte zoektermen of advertenties waarop is geklikt
-   * rente op andere locaties; bepaald met gereedschappen zoals Spyjax
+* **Gedragkarakteristieken** - Gedragskenmerken zijn die welke betrekking hebben op het gedrag van een bezoeker op de website. Deze omvatten:
+   * Interesse op uw website, inclusief bezochte pagina&#39;s en aangekochte producten
+   * Interesse op de verwijzende website; inclusief gebruikte zoektermen of advertenties waarop is geklikt
+   * Belang op andere sites; bepaald met behulp van gereedschappen zoals Spyjax
    * loyaliteit van de bezoeker; duur van het bezoek, frequentie van de bezoeken
 * **Demografische kenmerken** - Dit zijn geselecteerde populatiekenmerken, waaronder:
    * Leeftijd

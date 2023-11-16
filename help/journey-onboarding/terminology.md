@@ -2,22 +2,22 @@
 title: as a Cloud Service terminologie AEM
 description: Voordat u zich aanmeldt bij AEMaaCS, is het handig om enkele terminologie van het systeem en de basisstructuur te begrijpen.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
 # as a Cloud Service terminologie AEM {#terminology}
 
-In dit deel van het [aan boord gaan,](overview.md) u zult wat van de terminologie van AEM as a Cloud Service en zijn basisstructuur leren.
+In dit deel van het [aan boord gaan,](overview.md) u leert wat van de terminologie van AEM as a Cloud Service en zijn basisstructuur.
 
 ## Doelstelling {#objective}
 
 Nu begrijpt u wat tot het onboarding proces heeft geleid door het document te lezen [Voorbereiding aan boord,](preparation.md) het is nuttig om enkele terminologie van het systeem en zijn basisstructuur te begrijpen alvorens het programma te openen.
 
-AEM as a Cloud Service is een krachtig en flexibel hulpmiddel en om om het even welk hulpmiddel te gebruiken zou u met zijn organisatie en de terminologie en de taal vertrouwd moeten zijn die worden gebruikt om het te beschrijven. Dit document bevat een overzicht van enkele belangrijke termen die u moet begrijpen voordat u het systeem gaat gebruiken.
+AEM as a Cloud Service is een krachtig en flexibel hulpmiddel en om om het even welk hulpmiddel te gebruiken zou u met zijn organisatie en de terminologie en de taal vertrouwd moeten zijn om het te beschrijven. Dit document bevat een overzicht van enkele belangrijke termen die u moet begrijpen voordat u het systeem gaat gebruiken.
 
 Na het lezen van dit document zult u begrijpen:
 
@@ -53,4 +53,4 @@ Nu u dit deel van de AEM onboarding trip hebt voltooid, moet u begrijpen:
 * De verschillende lagen waaruit AEMaaCS bestaat.
 * De basisbeginselen van wat elke laag doet.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM instapreis bij volgende lezing van het document [De Admin Console openen](admin-console.md), waar u zult leren hoe toegang tot de console en uw status als systeembeheerder verifiëren.
+Gebaseerd op deze kennis en doorgaan met uw AEM instapreis bij volgende lezing van het document [De Admin Console openen](admin-console.md), waar u leert hoe toegang tot de console en uw status als systeembeheerder verifieert.

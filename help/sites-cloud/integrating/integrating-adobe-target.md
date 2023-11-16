@@ -1,10 +1,10 @@
 ---
 title: Integreren met Adobe Target
-description: Leer hoe u Adobe Target kunt integreren met AEM as a Cloud Service met de Touch-gebruikersinterface en Adobe Launch.
+description: Leer hoe u Adobe Target kunt integreren met AEM as a Cloud Service met de Touch-gebruikersinterface en het starten van de Adobe.
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Als onderdeel van de Adobe Experience Cloud kunt u met Adobe Target de relevanti
 * het gebruiken van Touch UI om een Configuratie van het Doel in AEM as a Cloud Service (vereiste configuratie IMS) te creëren.
 * Adobe Target toevoegen en configureren als extensie in [Adobe starten](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
-Adobe Starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). Dat gezegd hebbende, is de integratie met Lancering nodig voor &quot;Ervaring gericht&quot;.
+Adobe starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). Dat gezegd hebbende, is de integratie met Lancering nodig voor &quot;Ervaring gericht&quot;.
 
 Voor het uitvoeren van de Fragmenten van de Ervaring en/of de Fragmenten van de Inhoud aan Doel, hebt u slechts nodig [Adobe Target Configuration and IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
@@ -28,7 +28,7 @@ Voor het uitvoeren van de Fragmenten van de Ervaring en/of de Fragmenten van de 
 
 ## Adobe Target-configuratie maken {#create-configuration}
 
-1. Navigeren naar **Gereedschappen** → **Cloud Services**.
+1. Navigeren naar **Gereedschappen** → **Cloud Servicen**.
    ![Navigatie](assets/cloudservice1.png "Navigatie")
 2. Selecteren **Adobe Target**.
 3. Selecteer de **Maken** knop.
@@ -76,13 +76,13 @@ Ga als volgt te werk om de doelconfiguratie te bewerken:
 
 Ga als volgt te werk om een Touch UI-configuratie op een site toe te passen: **Sites** > **Een sitepagina selecteren** > **Eigenschappen** > **Geavanceerd** > **Configuratie** > Selecteer de configuratieteuse.
 
-## Adobe Target integreren op AEM sites met behulp van Adobe starten {#integrate-target-launch}
+## Adobe Target integreren op AEM sites met behulp van Adobe Launch {#integrate-target-launch}
 
 AEM biedt een out of the box integratie met Experience Platform Launch. Door de Adobe Target-extensie toe te voegen aan Experience Platform Launch, kunt u de functies van Adobe Target op AEM webpagina&#39;s gebruiken. Doelbibliotheken worden alleen weergegeven met Launch.
 
 >[!NOTE]
 >
->Bestaande (verouderde) frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. Adobe raadt u aan de configuraties voor variabele toewijzingen opnieuw samen te stellen in Launch.
+>Bestaande (verouderde) frameworks werken nog, maar kunnen niet worden geconfigureerd in de aanraakinterface. De Adobe adviseert u de veranderlijke toewijzingsconfiguraties in Lancering opnieuw op te bouwen.
 
 Als algemeen overzicht, zijn de integratiestappen:
 

@@ -2,9 +2,9 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Leer hoe u een aangepaste domeinnaam kunt toevoegen met Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Dome
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
-1. Klikken op **Domeininstellingen** in het linkernavigatievenster.
+1. Klikken **Domeininstellingen** in het linkernavigatievenster.
 
    ![Het venster Domeininstellingen](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -50,7 +50,7 @@ Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Dome
 
 1. Selecteer de **Domain SSL-certificaat** gekoppeld aan de domeinnaam in de vervolgkeuzelijst en selecteert u **Doorgaan**.
 
-1. De **Domeinnaam toevoegen** wordt weergegeven en gaat u naar het proces voor domeinnaamverificatie. Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewijzen. Klikken op **Maken**.
+1. De **Domeinnaam toevoegen** wordt weergegeven en gaat u naar het proces voor domeinnaamverificatie. Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewijzen. Klikken **Maken**.
 
    ![Domeinnaamverificatie](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
@@ -82,7 +82,7 @@ Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Omge
 
    1. Voer de aangepaste domeinnaam in.
    1. Selecteer het SSL-certificaat dat aan deze naam is gekoppeld in de vervolgkeuzelijst.
-   1. Klikken op **+Toevoegen**.
+   1. Klikken **+Toevoegen**.
 
    ![Aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
@@ -94,7 +94,7 @@ Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Omge
    >
    >Niet opnemen `http://`, `https://`of spaties bij het invoeren in de domeinnaam.
 
-1. De **Domeinnaam toevoegen** wordt weergegeven en gaat u naar het proces voor domeinnaamverificatie. Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewijzen. Klikken op **Maken**.
+1. De **Domeinnaam toevoegen** wordt weergegeven en gaat u naar het proces voor domeinnaamverificatie. Volg de instructies die worden gegeven om domeineigendom voor uw milieu te bewijzen. Klikken **Maken**.
 
    ![Domeinnaamverificatie](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 

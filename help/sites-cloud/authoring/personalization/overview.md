@@ -2,9 +2,9 @@
 title: Aanpassing en doelgerichtheid van inhoud
 description: Leer hoe u gepersonaliseerde, gerichte inhoud met AEM kunt creëren
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Aanpassing en doelgerichtheid van inhoud {#personalization-and-content-targeting}
 
-De personalisering van de webinhoud die u aan klanten verstrekt, betekent het aanpassen van die ervaringen aan hun belangen en behoeften. U kunt dit doen op basis van de informatie die u over hen hebt; bijvoorbeeld een samenvattend winkeloverzicht , leeftijd , geslacht , geografie .
+De personalisering van de webinhoud die u aan klanten verstrekt, betekent het aanpassen van die ervaringen aan hun belangen en behoeften. Je kan dit doen op basis van de informatie die je over hen hebt, bijvoorbeeld: samenvattend winkelen, leeftijd, geslacht, geografie, enzovoort.
 
-Met Adobe Experience Manager as a Cloud Service (AEM) kunt u een selectie van inhoud maken en vervolgens opgeven welk publiek (groepen eindgebruikers) elke afzonderlijke ervaring zal zien. Dit betekent dat u zich richt op uw persoonlijke ervaringen op een bepaald publiek.
+Met Adobe Experience Manager as a Cloud Service (AEM) kunt u een selectie van inhoud maken en vervolgens opgeven welk publiek (groepen eindgebruikers) elke afzonderlijke ervaring ziet. Dit betekent dat u zich richt op uw persoonlijke ervaringen op een bepaald publiek.
 
 Wanneer uw lezer online is, controleert uw doelprogramma de informatie die beschikbaar is over de eindgebruiker en vergelijkt deze met de ervaringsdefinities. De motor *&quot;besluit&quot;* welke persoonlijke ervaring moet worden weergegeven.
 
@@ -22,7 +22,7 @@ AEM biedt een kader voor instrumenten voor:
 
 * Het ontwerpen van gerichte inhoud, geschikt voor een waaier van publiek, afhankelijk van de beschikbare klanteninformatie.
 * Het bepalen van de regels die worden gebruikt om de bekende gebruikersinformatie tegen een publieksdefinitie op te lossen.
-* Het vormen van uw pagina&#39;s om gerichte gepersonaliseerde ervaringen voor te stellen; om de specifieke inhoud te renderen die op de huidige eindgebruiker van toepassing is.
+* Het vormen van uw pagina&#39;s om gerichte gepersonaliseerde ervaringen voor te stellen; om de specifieke inhoud terug te geven toepasselijk op de huidige eindgebruiker.
 
 In het volgende overzicht worden enkele termen weergegeven die worden gebruikt voor personalisatie in AEM as a Cloud Service, gevolgd door een aanbevolen volgorde van actie.
 
@@ -40,13 +40,13 @@ Wanneer u pagina&#39;s maakt, definieert u meerdere ervaringen, waarbij elke erv
 
 Een aanbieding is een persoonlijke ervaring, die vaak voor een beperkte periode beschikbaar is.
 
-Een pagina van een voorbeeldwebsite kan bijvoorbeeld aanbiedingen gebruiken als de laserafbeelding die boven aan de pagina wordt weergegeven. Een persoon boven de 30 en een persoon onder de 30 zien verschillende aanbiedingen als het ervaringsteken.
+Een pagina van een voorbeeldwebsite kan bijvoorbeeld aanbiedingen gebruiken als de laserafbeelding die boven aan de pagina wordt weergegeven. Een persoon boven de 30 en een persoon onder de 30 kunnen verschillende aanbiedingen zien als het ervaringsteken.
 
 ## Publiek {#audience}
 
 Een publiek is een groep eindgebruikers die u wilt aanwijzen met gepersonaliseerde inhoud. Wanneer een bezoeker een webpagina opent, bepaalt de pagina-logica het publiek waartoe ze behoren op basis van bekende informatie. Gebaseerd op die beoordeling AEM toont de inhoud die u voor dat publiek hebt gecreeerd.
 
-Het publiek is gebaseerd op marketingsegmenten. Zij worden opgericht in AEM of Adobe Target; u kunt Adobe Target-publiek rechtstreeks in AEM maken met behulp van de console Soorten publiek.
+Het publiek is gebaseerd op marketingsegmenten. Ze worden gemaakt in AEM of Adobe Target. U kunt Adobe Target-soorten publiek rechtstreeks AEM maken met behulp van de console Soorten publiek.
 
 ### Segment {#segment}
 
@@ -58,7 +58,7 @@ Een activiteit:
 
 * definieert de toewijzing van een specifiek publiek (segment) met een specifieke ervaring
 * wordt de periode gedefinieerd gedurende welke de streefwaarde wordt toegepast
-* de [doelmotor](#targeting-engine) die uw pagina&#39;s gebruiken
+* identificeert de [doelmotor](#targeting-engine) die uw pagina&#39;s gebruiken
 
 De activiteit kan of een verpersoonlijkingsactiviteit, of A/B de activiteit van de Test (in het geval van het AEM en de verpersoonlijkingswerkschema van Adobe Target) zijn.
 
@@ -88,13 +88,13 @@ U kunt [Doelinhoud auteur](/help/sites-cloud/authoring/personalization/targeted-
 
 Een gegroepeerde set componenten die een ervaring opbouwen.
 
-[Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) zijn gemaakt van inhoud en informatie (opmaken, enz.) om een ervaring te creëren; deze bestanden kunnen direct worden gebruikt tijdens het ontwerpen van pagina&#39;s. Ze kunnen worden beschouwd als een subset van een AEM pagina. Hiermee kunnen auteurs van inhoud inhoud inhoud hergebruiken via kanalen, waaronder sitepagina&#39;s en systemen van derden.
+[Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) zijn gemaakt van inhoud en informatie (opmaak, enz.) om een ervaring te creëren; deze kunnen direct worden gebruikt bij het ontwerpen van pagina&#39;s. Ze kunnen worden beschouwd als een subset van een AEM pagina. Hiermee kunnen auteurs van inhoud inhoud inhoud hergebruiken via kanalen, waaronder sitepagina&#39;s en systemen van derden.
 
 Voor een verpersoonlijkingsvoorbeeld, kunnen een Titel, Beeld, Beschrijving, en Vraag aan de Knoop van de Actie worden gecombineerd om een laserervaring te vormen. Het gebruiken van de Fragmenten van de Ervaring is een zeer belangrijk deel van het gebruiken van de verpersoonlijking van Adobe Target.
 
 ## Richtingsmotor {#targeting-engine}
 
-De doelengine is het mechanisme dat de logica voor doelgerichte inhoud oplost. [Activiteiten](/help/sites-cloud/authoring/personalization/activities.md) zijn geconfigureerd voor het gebruik van een van de volgende twee motoren: AEM en Adobe Target.
+De doelengine is het mechanisme dat de logica voor doelgerichte inhoud oplost. [Activiteiten](/help/sites-cloud/authoring/personalization/activities.md) zijn geconfigureerd voor het gebruik van een van de twee beschikbare motoren voor gerichte toepassingen: AEM en Adobe Target.
 
 De gerichte Motor is het platform of het mechanisme dat bepaalt welk verpersoonlijkingssysteem aan gebruik.
 
@@ -139,4 +139,4 @@ Er zijn verschillende stappen en definities vereist voor het leveren van uw gepe
 
 1. Maak een selectie van ervaringen die u aan de verschillende doelgroepen wilt laten zien.
 
-1. Deze ervaringen personaliseren, door [doelgericht](/help/sites-cloud/authoring/personalization/targeted-content.md) zij worden gericht aan het specifieke publiek (segmenten).
+1. Deze ervaringen personaliseren, door [doelgerichtheid](/help/sites-cloud/authoring/personalization/targeted-content.md) zij worden gericht aan het specifieke publiek (segmenten).

@@ -2,9 +2,9 @@
 title: Weergaven maken en beheren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u weergaven in as a Cloud Service schermen maakt en beheert.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '659'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Dit document helpt u te begrijpen hoe u vertoningen in de Dienstverlener van de 
 Voer de onderstaande stappen uit om de weergave te maken van de Screens Services Provider:
 
 1. Navigeer naar Screens Services Provider vanuit uw AEM Cloud Service-exemplaar.
-1. Selecteren **Weergaven** in het linkernavigatievenster en klik op **Maken** in de rechterbovenhoek van het scherm.
+1. Selecteren **Weergaven** in het linkernavigatievenster en klik op **Maken** rechtsboven in het scherm.
 
    ![afbeelding](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -78,7 +78,7 @@ U kunt mappen maken om uw weergaven beter te organiseren.
 
    Opmerking: **Alle weergaven** moet worden geselecteerd in de omslagzijspoor en mag de breadcrumb-navigatie alleen worden getoond **Weergaven**.
 
-1. Klik op de knop Maken rechtsboven en selecteer de knop **Map** optie.
+1. Klik op de knop Maken rechtsboven en selecteer de knop **Map** -optie.
 
    ![afbeelding](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -98,7 +98,7 @@ U kunt mappen maken om uw weergaven beter te organiseren.
    * De map moet in de omslagzijrail worden geselecteerd.
    * De navigatie breadcrumb moet de huidige mapnaam weergeven naast **Weergaven**.
 
-1. Klikken  **Maken**  in de rechterbovenhoek en selecteert u de **Map** optie.
+1. Klikken  **Maken**  in de rechterbovenhoek en selecteert u de **Map** -optie.
 
    ![afbeelding](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -118,7 +118,7 @@ U kunt inhoud naar de nieuwe mappen verplaatsen om de weergaven beter te organis
 
 ![afbeelding](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Opmerking**: De map moet in de omslagzijrail worden geselecteerd. Daarnaast moet in de navigatie met de breadcrumb de huidige mapnaam worden weergegeven naast **Weergaven**.
+**Opmerking**: De map moet worden geselecteerd in de omslagside rail. Daarnaast moet in de navigatie met de breadcrumb de huidige mapnaam worden weergegeven naast **Weergaven**.
 
 ## Inhoud uit een map verwijderen {#delete-folder}
 

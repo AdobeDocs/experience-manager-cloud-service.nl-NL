@@ -3,13 +3,13 @@ title: Contentfragmenten beheren
 description: Leer hoe te om uw AEM Contentfragmenten van de console en de redacteur, als basis van uw hoofdloze inhoud, of voor paginacreatie te beheren.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
+exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
-
 
 # Contentfragmenten beheren {#managing-content-fragments}
 
@@ -70,7 +70,7 @@ Zie voor meer informatie:
 
 ### Basisstructuur en verwerking van de console {#basic-structure-handling-content-fragments-console}
 
-Selecteren **Inhoudsfragmenten** opent de console in een nieuw lusje.
+Selecteren **Inhoudsfragmenten** Hiermee opent u de console op een nieuw tabblad.
 
 ![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
 
@@ -223,7 +223,7 @@ Een inhoudsfragment maken:
    >
    >Als u de locatie van het nieuwe fragment vooraf wilt definiëren, navigeert u naar de map waar u het fragment wilt maken of kunt u de locatie opgeven tijdens het maken.
 
-1. De **Nieuw inhoudsfragment** wordt geopend, vanaf hier kunt u het volgende opgeven:
+1. De **Nieuw inhoudsfragment** wordt geopend, kunt u vanaf dit punt het volgende opgeven:
 
    * **Locatie** - deze wordt automatisch ingevuld met de huidige locatie, maar u kunt desgewenst een andere locatie selecteren
    * **Inhoudsfragmentmodel** - selecteer in de vervolgkeuzelijst het model dat u als basis voor het fragment wilt gebruiken

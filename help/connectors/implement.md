@@ -1,10 +1,10 @@
 ---
 title: Een AEM-connector implementeren
-description: Leer hoe te om een AEM schakelaar te bouwen, te testen en uit te voeren. Ook leert u veel over algemene integratiepatronen.
+description: Leer hoe te om, een AEM schakelaar te bouwen te testen en uit te voeren. Ook, leert u over gemeenschappelijke integratiepatronen.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '979'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ AEM is een geavanceerde oplossing voor het beheer van webervaring en biedt vele 
 * Handelend op activa met een partnerdienst. Bijvoorbeeld het verzenden van middelen naar een videoplatform wanneer een pagina wordt gepubliceerd.
 * Een site, pagina of element analyseren in de AEM-beheerconsole. Bijvoorbeeld: SEO-aanbevelingen doen voor een bestaande of niet-gepubliceerde pagina.
 * Toegang op paginaniveau tot gebruikersgegevens die door een externe service worden onderhouden. Gebruik bijvoorbeeld demografische informatie om de site-ervaring aan te passen. Lees over ContextHub, een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens.
-* Metagegevens van sitekopieën of middelen omzetten. Zie de [Bootstrap-connector AEM vertaalframework](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) voor voorbeeldcode die het AEM Vertaalkader gebruikt, dat de aangewezen implementatie van vertaalschakelaars is.
+* Metagegevens van sitekopieën of middelen omzetten. Zie de [AEM Bootstrap-aansluiting voor vertaalframework](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) voor voorbeeldcode die het AEM Vertaalkader gebruikt, dat de aangewezen implementatie van vertaalschakelaars is.
 
 
 Nuttige documentatie
@@ -43,10 +43,10 @@ Experience Manager as a Cloud Service [documentatie](../overview/introduction.md
 Communautaire middelen
 --------------------
 
-Naast de statische documentatie hierboven, bieden Adobe en de AEM gemeenschap middelen om een schakelaar aan markt te helpen brengen:
+Naast de bovenstaande statische documentatie bieden de Adobe en de AEM gemeenschap middelen om een aansluiting op de markt te brengen:
 
-* De Adobe-gemeenschap [AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) is een actieve site waarop uw collega&#39;s vragen stellen en antwoorden op vragen
-* De extra technische middelen van Adobe zijn beschikbaar aan bepaalde partnerniveaus. Meer informatie over de [Adobe Exchange-programma](https://partners.adobe.com/exchangeprogram/experiencecloud).
+* De Adobe Gemeenschap [AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) is een actieve site waarop uw collega&#39;s vragen stellen en antwoorden op vragen
+* De extra technische middelen van de Adobe zijn beschikbaar aan bepaalde partnerniveaus. Meer informatie over de [Adobe Exchange-programma](https://partners.adobe.com/exchangeprogram/experiencecloud).
 * Als uw organisatie implementatiehulp nodig heeft, kunt u contact opnemen met het [Professionele services-team](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) van Adobe of [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) raadplegen voor een lijst van partners van Adobe over de hele wereld
 
 Pakketstructuurregels
@@ -65,16 +65,16 @@ De bestaande schakelaars kunnen ook refactoring moeten zijn om het even welke co
 
 Het is raadzaam de meeste verbindingscode onder te plaatsen `/apps/connectors/<vendor>` het bevorderen van een schone opslagplaats voor klanten die verschillende connectoren hebben.
 
-Configuraties van Cloud Services
+Configuraties van Cloud Servicen
 -----------------------------
 
-Één aspect van de schakelaarimplementatie is code die de configuratie van de schakelaar steunt. Met deze code wordt een kaart met de naam van de connector weergegeven onder Opties > Bewerkingen > Cloud Services. Als erop wordt geklikt, wordt een [configuratievenster](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) verschijnt op de plaats waar de klant de ouderomslag selecteert om de schakelaarconfiguratie te bevatten. De code van de schakelaar zou in een vorm met alle eigenschappen moeten resulteren die moeten worden gevormd, uiteindelijk het opslaan van de waarden in een configuratiemap onder `/conf`. Deze map kan later worden geselecteerd op het tabblad Sites-eigenschappen of Elementeigenschappen.
+Één aspect van de schakelaarimplementatie is code die de configuratie van de schakelaar steunt. Met deze code wordt een kaart met de naam van de connector weergegeven onder Opties > Bewerkingen > Cloud Servicen. Als erop wordt geklikt, wordt een [configuratievenster](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) verschijnt op de plaats waar de klant de ouderomslag selecteert om de schakelaarconfiguratie te bevatten. De code van de schakelaar zou in een vorm met alle eigenschappen moeten resulteren die moeten worden gevormd, uiteindelijk het opslaan van de waarden in een configuratiemap onder `/conf`. Deze map kan later worden geselecteerd op het tabblad Sites-eigenschappen of Elementeigenschappen.
 
 
 Contextbewuste configuraties
 -----------------------------
 
-[Contextbewuste configuraties](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) staat toe aan laagconfiguratie over verschillende omslagen, met inbegrip van `/libs`, `/apps`, `/conf` en submappen onder `/conf`. Het steunt overerving zodat kan een klant globale configuratie vormen terwijl het aanbrengen van specifieke veranderingen voor elke microsite. Omdat het mogelijk is om deze eigenschap voor de Configuraties van Cloud Services te gebruiken, zou de schakelaarcode configuratie moeten van verwijzingen voorzien gebruikend context-Aware Configuratie API in plaats van het van verwijzingen voorzien van een specifieke configuratieknoop.
+[Contextbewuste configuraties](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) staat toe aan laagconfiguratie over verschillende omslagen, met inbegrip van `/libs`, `/apps`, `/conf` en submappen onder `/conf`. Het steunt overerving zodat kan een klant globale configuratie vormen terwijl het aanbrengen van specifieke veranderingen voor elke microsite. Omdat het mogelijk is om deze eigenschap voor de Configuraties van Cloud Servicen te gebruiken, zou de schakelaarcode configuratie moeten van verwijzingen voorzien gebruikend context-Aware Configuratie API in plaats van het van verwijzingen voorzien van een specifieke configuratieknoop.
 
 Als de gewijzigde configuraties in de Schakelaar worden gebruikt, architect de Schakelaar om het omvatten van/het samenvoegen van om het even welke toekomstige updates aan schakelaar-verstrekte standaardconfiguraties met om het even welke klantenconfiguraties te behandelen. Herinner dat het veranderen van aangepaste (zoals in veranderd door de klant) inhoud of configuratie zonder klantenwaarschuwing en toestemming (of tot onverwacht gedrag) met hun Schakelaar kan breken.
 

@@ -1,21 +1,21 @@
 ---
 title: Adobe Analytics integreren met Experience Cloud Setup Automation
-description: De Automatisering van de Opstelling van de Experience Cloud verstrekt een eenvoudige en geautomatiseerde manier om Experience Manager Sites met de Markeringen van het Experience Platform en Adobe Analytics met een eenvoudige interface van de tovenaar UI te integreren en te voorzien. Leer hoe u de automatische installatie kunt gebruiken met uw eigen site.
+description: De Automatisering van de Opstelling van het Experience Cloud verstrekt een eenvoudige en geautomatiseerde manier om Experience Manager Sites met de Markeringen van het Experience Platform en Adobe Analytics met een eenvoudige interface van de tovenaar UI te integreren en te voorzien. Leer hoe u de automatische installatie kunt gebruiken met uw eigen site.
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics integreren met Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
 
-De Automatisering van de Opstelling van de Experience Cloud verstrekt een eenvoudige en geautomatiseerde manier om Experience Manager Sites met de Markeringen van het Experience Platform en Adobe Analytics met een eenvoudige interface van de tovenaar UI te integreren en te voorzien.
+De Automatisering van de Opstelling van het Experience Cloud verstrekt een eenvoudige en geautomatiseerde manier om Experience Manager Sites met de Markeringen van het Experience Platform en Adobe Analytics met een eenvoudige interface van de tovenaar UI te integreren en te voorzien.
 
-Het is nooit eenvoudiger geweest om Adobe Analytics met AEM Sites te integreren. Met de Automatisering van de Opstelling van Experience Cloud, vestiging, het integreren, en het van instrumenten voorzien van uw plaats om prestatiesanalyses te vangen om te begrijpen hoe goed uw klanten engaging en het omzetten allen behandeld met slechts een paar kliks worden.
+Het is nooit eenvoudiger geweest om Adobe Analytics met AEM Sites te integreren. Met de Automatisering van de Opstelling van het Experience Cloud, vestiging, het integreren, en het van instrumenten voorzien van uw plaats om prestatiesanalyses te vangen om te begrijpen hoe goed uw klanten engaging en het omzetten allen behandeld met slechts een paar klikken.
 
 In deze video wordt uitgelegd hoe een AEM site is geïntegreerd met Experience Platform Tags en Analytics met behulp van Experience Cloud Setup Automation:
 
@@ -23,14 +23,14 @@ In deze video wordt uitgelegd hoe een AEM site is geïntegreerd met Experience P
 
 ## Vereisten
 
-De automatiseringsinstelling is ontworpen om uit de verpakking te werken met een AEM site die is gemaakt met [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) met de [Gegevenslaag Adobe-client](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) ingeschakeld. U kunt een nieuwe site maken waarvoor deze functies automatisch zijn ingeschakeld met de functie [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) of door een site te maken met een [Sitesjabloon](/help/journey-sites/quick-site/create-site.md).
+De automatiseringsinstelling is ontworpen om uit de verpakking te werken met een AEM site die is gemaakt met [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) met de [Gegevenslaag client-Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) ingeschakeld. U kunt een nieuwe site maken waarvoor deze functies automatisch zijn ingeschakeld met de functie [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) of door een site te maken met een [Sitesjabloon](/help/journey-sites/quick-site/create-site.md).
 
 ## Vereisten {#prerequisites}
 
 Voordat u deze functie gebruikt, is het belangrijk dat u deze instructies opvolgt om ervoor te zorgen dat de vereiste services op de juiste wijze zijn ingesteld in uw omgeving:
 
-1. Meld u aan bij Adobe Admin Console (https://adminconsole.adobe.com/).
-1. Controleer of de juiste IMS-organisatie-id in de rechterbovenhoek is geselecteerd.
+1. Log in bij Adobe Admin Console (https://adminconsole.adobe.com/).
+1. Zorg ervoor dat de juiste IMS-organisatie-id in de rechterbovenhoek is geselecteerd.
 1. Klik op de optie voor productnavigatie.
 1. Controleer of &quot;Adobe Experience Manager as a Cloud Service&quot; is ingericht voor de IMS Org.
 1. Controleer of &quot;Adobe Analytics&quot; is ingericht voor de IMS Org.
@@ -46,15 +46,15 @@ De omgeving moet nu gereed zijn voor Experience Cloud Setup Automation.
 1. Navigeren naar **Sites** en selecteert u de hoofdmap van de site die u wilt integreren met Adobe Analytics.
 1. Het zijspoormenu uitvouwen en tikken **Analyses instellen**.
 
-   Dit is een nieuwe optie in de zijspoorstaaf die een paneel zal openen dat controles en status voor de Automatisering van de Opstelling van de Experience Cloud zal verstrekken.
+   Dit is een nieuwe optie in de zijspoorstaaf die een paneel opent dat controles en status voor de Automatisering van de Opstelling van het Experience Cloud verstrekt.
 1. Tik op de knop **Analyse integreren** knop.
-1. Geef in het dialoogvenster dat wordt weergegeven een naam op voor de **ID van rapportsuite**.
+1. Geef in het dialoogvenster dat wordt weergegeven een naam op voor het dialoogvenster **ID van rapportsuite**.
 
    Deze tekenreeks wordt gebruikt om een nieuwe tekenreeks te maken [ID van rapportsuite](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) in Adobe Analytics als de gegevensopslagruimte voor de analysegegevens voor de geselecteerde AEM. De opgegeven tekenreeks wordt toegevoegd met omgeving- en tier-id&#39;s om ervoor te zorgen dat deze uniek zijn.
 
 1. Pagina en venster vernieuwen en tikken **Integratiestatus controleren** de status van de automatisering te controleren.
 
-   De automatiseringsopstelling komt asynchroon voor. De **Integratiestatus controleren** zal de huidige status van de integratie aantonen.
+   De automatische opstelling komt asynchroon voor. De **Integratiestatus controleren** zal de huidige status van de integratie aantonen.
 
    * **In uitvoering** - geeft aan dat de taak wordt uitgevoerd.
    * **Integratie voltooid** - Hiermee wordt aangegeven dat de taak is voltooid met het integreren van Analytics en Tags, het instellen van Tags-extensies en -regels en het maken van de nieuwe rapportsuite in Adobe Analytics.
@@ -76,7 +76,7 @@ Navigeer vervolgens naar Adobe Analytics om de gegevens weer te geven die afkoms
 1. Navigeer naar Adobe Analytics in dezelfde IMS Org als uw AEM site.
 1. Een nieuw overzichtsrapport maken waarin AEM Sites navigeert naar **Rapporten** > **Betrokkenheid** > **Adobe Experience Manager** > **Overzicht van siteprestaties**.
 1. Tikken **Rapport openen**.
-1. Selecteer **ID van rapportsuite** die overeenkomt met de naam van de rapportsuite die in de vorige exercitie is gebruikt.
+1. Selecteer de **ID van rapportsuite** die overeenkomt met de naam van de rapportsuite die in de vorige exercitie is gebruikt.
 1. De gegevensstroom van de meningsanalyse in de nieuwe malplaatje in tijd.
 
    >[!NOTE]

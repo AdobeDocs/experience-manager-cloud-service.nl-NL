@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten beheren (elementen - Inhoudsfragmenten)
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1873'
 ht-degree: 5%
 
 ---
@@ -185,7 +185,7 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
 * Onder de fragmentnaam ziet u de naam van de component [Inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md) gebruikt voor het maken van het huidige fragment:
 
-   * De naam is ook een verbinding die de modelredacteur zal openen.
+   * De naam is ook een verbinding die de modelredacteur opent.
 
 * Zie de status van het fragment, bijvoorbeeld informatie over wanneer het is gemaakt, gewijzigd of gepubliceerd. De status heeft ook een kleurcode:
 
@@ -319,7 +319,7 @@ Bijvoorbeeld:
 
 De **Vergelijken met huidige** actie is beschikbaar via de [Tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
 
-Hiermee wordt het volgende geopend:
+Dit wordt geopend:
 
 * de **Huidig** (meest recente) versie (links)
 

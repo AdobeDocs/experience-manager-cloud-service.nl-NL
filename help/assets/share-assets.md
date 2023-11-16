@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1299'
 ht-degree: 2%
 
 ---
@@ -89,11 +89,11 @@ Elke gebruiker die toegang heeft tot de koppeling voor gedeelde elementen, kan d
 
   ![Downloaden van wachtrij](assets/queue-download.png)
 
-* Klik tijdens het voorbereiden van het downloadbestand op de knop **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
+* Klik tijdens het voorbereiden van het downloadbestand op **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
 
   ![Postvak IN downloaden](assets/link-sharing-download-inbox.png)
 
-* Als de verwerking is voltooid, klikt u op de knop **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
+* Als de verwerking is voltooid, klikt u op **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.

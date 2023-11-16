@@ -3,9 +3,9 @@ title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 01a89f779689733fb82a556291e091026def63e0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ De **Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het g
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Van de **Programmaoverzicht** pagina, tik of klik op **Pijpleidingen** tab naar **Pijpleidingen** venster.
+1. Van de **Programmaoverzicht** pagina, tik of klik op de knop **Pijpleidingen** tab naar **Pijpleidingen** venster.
 
 1. Hier kunt u een lijst van alle pijpleidingen voor het programma zien evenals begin en stop pijpleidingsuitvoering zoals u in **Pijppijplijnkaart**.
 
@@ -57,7 +57,7 @@ De **Activiteiten** toont een volledige lijst van alle pijpleiding uitvoeringen 
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Van de **Programmaoverzicht** pagina, tik of klik op **Activiteit** tab naar **Activiteit** venster.
+1. Van de **Programmaoverzicht** pagina, tik of klik op de knop **Activiteit** tab naar **Activiteit** venster.
 
 1. Hier ziet u een lijst van alle pijpleiding uitvoeringen voor het programma met inbegrip van huidige en historische executies.
 
@@ -71,7 +71,7 @@ Tikken of klikken **Details weergeven** neemt u mee naar de [details over de uit
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in werking stelt selecteren **Uitvoeren** in het menu.
+1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik de ellipsknoop naast de pijpleiding u in werking stelt uitgezocht **Uitvoeren** in het menu.
 
 1. De pijpleidingslooppas begint en door **Status** kolom.
 
@@ -83,7 +83,7 @@ Afhankelijk van het type pijplijn, kunt u de looppas kunnen annuleren door de el
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u wilt uitgeven en dan selecteren **Bewerken** in het menu.
+1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik de ellipsknoop naast de pijpleiding u wilt uitgeven en dan selecteren **Bewerken** in het menu.
 
 1. De **Productiepijpleiding bewerken** of **Niet-productiepijplijn bewerken** wordt weergegeven, zodat u dezelfde details kunt bewerken als u hebt ingevoerd bij het maken van de pijplijn.
 
@@ -91,7 +91,7 @@ Afhankelijk van het type pijplijn, kunt u de looppas kunnen annuleren door de el
       * [Productiepijpleidingen configureren](configuring-production-pipelines.md)
       * [Niet-productiepijpleidingen configureren](configuring-non-production-pipelines.md)
 
-1. Klikken op **Bijwerken** zodra u klaar bent met het bewerken van de pijplijn.
+1. Klikken **Bijwerken** zodra u klaar bent met het bewerken van de pijplijn.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Afhankelijk van het type pijplijn, kunt u de looppas kunnen annuleren door de el
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in werking stelt selecteren **Verwijderen** in het menu.
+1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik de ellipsknoop naast de pijpleiding u in werking stelt uitgezocht **Verwijderen** in het menu.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ U kunt de details van een pijpleiding bekijken om de status en de logboeken van 
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op de ellipsieknoop naast de pijpleiding u in werking stelt selecteren **Details weergeven** in het menu.
+1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik de ellipsknoop naast de pijpleiding u in werking stelt uitgezocht **Details weergeven** in het menu.
 
 1. U wordt genomen aan de detailspagina van de lopende pijpleiding.
 

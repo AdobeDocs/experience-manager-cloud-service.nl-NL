@@ -3,7 +3,7 @@ title: GraphiQL IDE gebruiken in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Gebruikend GraphQL kunt u de Kopballen van het Geheime voorgeheugen van HTTP vor
 
    ![Blijvende HTTP-cache-headers van query](assets/cfm-graphqlapi-headers-01.png "Blijvende HTTP-cache-headers van query")
 
-1. Als u deze optie selecteert, wordt het dialoogvenster **Cacheconfiguratie** dialoogvenster:
+1. Als u dit selecteert, wordt het dialoogvenster **Cacheconfiguratie** dialoogvenster:
 
    ![Instellingen voor blijvende HTTP-cachekoptekst voor query](assets/cfm-graphqlapi-headers-02.png "Instellingen voor blijvende HTTP-cachekoptekst voor query")
 
@@ -159,7 +159,7 @@ De **URL kopiëren** Met deze optie kunt u een query simuleren door de URL te ko
 <!--
   >[!NOTE]
   >
-  >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
+  >The URL needs [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >
   >The target environment might need adjusting, depending on your requirements.
 -->

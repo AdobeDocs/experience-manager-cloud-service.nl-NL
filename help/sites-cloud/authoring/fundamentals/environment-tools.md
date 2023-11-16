@@ -2,9 +2,9 @@
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2166'
+source-wordcount: '2164'
 ht-degree: 9%
 
 ---
@@ -149,7 +149,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
   De middelenbrowser wordt links in het venster geopend.
 
-  Als u een element aan de pagina wilt toevoegen, klikt u op het gewenste element en sleept u het naar de gewenste component of locatie.
+  Als u een element aan uw pagina wilt toevoegen, klikt u op het gewenste element en sleept u het naar de gewenste component of locatie.
 
   ![Elementenbrowser op bureaublad](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 

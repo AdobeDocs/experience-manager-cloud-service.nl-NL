@@ -2,9 +2,9 @@
 title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
 description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2631'
 ht-degree: 0%
 
 ---
@@ -362,7 +362,7 @@ Het thema wordt opgesteld gebruikend [pijpleiding aan de voorzijde.](https://exp
 
    Nadat de pijpleidingsopstelling volledig is, wordt de vraag-aan-actie kaart bijgewerkt.
 
-1. Klik met de rechtermuisknop op de gemaakte pijpleiding.
+1. Klik de gecreeerde pijpleiding met de rechtermuisknop aan.
 1. Klik op **[!UICONTROL Run]** .
 
    ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)

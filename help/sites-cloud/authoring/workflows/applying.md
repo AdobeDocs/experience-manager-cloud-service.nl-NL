@@ -1,24 +1,24 @@
 ---
 title: Workflows toepassen op pagina's
-description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. het is ook mogelijk meerdere werkschema's toe te passen.
+description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. Het is ook mogelijk om meerdere workflows toe te passen.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '657'
 ht-degree: 11%
 
 ---
 
 # Workflows toepassen op pagina&#39;s {#applying-workflows-to-pages}
 
-Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina&#39;s. het is ook mogelijk meerdere werkstromen toe te passen .
+Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina&#39;s. Het is ook mogelijk om meerdere workflows toe te passen.
 
 Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
 * De workflow die moet worden toegepast.
    * U kunt elke workflow toepassen (waartoe u toegang hebt, zoals is toegewezen door uw AEM-beheerder).
 * Naar keuze, een titel die helpt de werkschemainstantie in Inbox van een gebruiker identificeren.
-* de workflow-lading; dit kan een of meer pagina&#39;s zijn.
+* De nuttige werkstroom. Dit kunnen een of meer pagina&#39;s zijn.
 
 Workflows kunnen worden gestart vanaf:
 
@@ -52,9 +52,7 @@ U kunt een workflow starten vanuit:
 * [De optie Maken op de werkbalk Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [de tijdlijnrail van de Sites-console](#starting-a-workflow-from-the-timeline).
 
-In beide gevallen moet u:
-
-* [Geef de workflowdetails op in de wizard Workflow maken](#specifying-workflow-details-in-the-create-workflow-wizard).
+In beide gevallen moet u [Geef de workflowdetails op in de wizard Workflow maken](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Een workflow starten op de werkbalk Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -83,12 +81,12 @@ Van de **Tijdlijn** u kunt een workflow starten die op de geselecteerde bron moe
 
 De **Workflow maken** De wizard helpt u de workflow te selecteren en de vereiste details op te geven.
 
-Na het openen van het dialoogvenster **Workflow maken** wizard van:
+Na het openen van de **Workflow maken** wizard van:
 
 * [De optie Maken op de werkbalk Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [de tijdlijnrail van de Sites-console](#starting-a-workflow-from-the-timeline).
 
-U kunt details opgeven:
+U kunt details specificeren:
 
 1. In de **Eigenschappen** De basisopties van de workflow worden nu gedefinieerd:
 
@@ -118,11 +116,11 @@ U kunt details opgeven:
 
 1. In de **Toepassingsgebied** stap die u kunt selecteren:
 
-   * **Inhoud toevoegen** om de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) en selecteer aanvullende middelen; wanneer u in de browser klikt of tikt **Selecteren** om de inhoud aan de werkstroominstantie toe te voegen.
+   * **Inhoud toevoegen** om de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) en selecteer aanvullende bronnen; klik in de browser op **Selecteren** om de inhoud aan de werkstroominstantie toe te voegen.
 
    * Een bestaande bron voor het weergeven van extra handelingen:
 
-      * **Inclusief kinderen** om te specificeren dat de kinderen van die bron in het werkschema inbegrepen zijn.
+      * **Inclusief onderliggende items** om te specificeren dat de kinderen van die bron in het werkschema inbegrepen zijn.
 Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis van:
 
          * Alleen directe kinderen opnemen.

@@ -2,9 +2,9 @@
 title: Uw pijplijn instellen
 description: Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is 
 
 ![Overzicht van Cloud Manager](assets/cloud-manager-overview.png)
 
-Noteer de naam van het programma dat u hebt geopend of kopieer de URL. U moet dit later aan de front-end ontwikkelaar aanbieden.
+Noteer de naam van het programma dat u hebt geopend of kopieer de URL. U moet dit later aan de front-end ontwikkelaar verstrekken.
 
 ## Een voorste pijplijn maken {#create-front-end-pipeline}
 

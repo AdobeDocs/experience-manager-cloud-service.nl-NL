@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen
 description: Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma's van Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Ga als volgt te werk om een certificaat toe te voegen met gebruik van Cloud Mana
 
 1. Navigeren naar **Omgevingen** van het scherm **Overzicht** pagina.
 
-1. Klikken op **SSL-certificaten** in het navigatievenster aan de linkerkant. Een tabel met details van bestaande SSL-certificaten wordt weergegeven op het hoofdscherm.
+1. Klikken **SSL-certificaten** in het navigatievenster aan de linkerkant. Een tabel met details van bestaande SSL-certificaten wordt weergegeven op het hoofdscherm.
 
    ![Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Klikken op **SSL-certificaat toevoegen** openen **SSL-certificaat toevoegen** in.
+1. Klikken **SSL-certificaat toevoegen** openen **SSL-certificaat toevoegen** in.
 
    * Geef een naam op voor uw certificaat in **Certificaatnaam**.
       * Dit is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar uw certificaat kunt verwijzen.
@@ -47,7 +47,7 @@ Ga als volgt te werk om een certificaat toe te voegen met gebruik van Cloud Mana
 
 1. Klikken **Opslaan** om uw certificaat op te slaan.
 
-Nadat u het certificaat hebt opgeslagen, wordt het weergegeven als een nieuwe rij in de tabel.
+Als het certificaat eenmaal is opgeslagen, wordt het weergegeven als een nieuwe rij in de tabel.
 
 ![Opgeslagen SSL-certificaat](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 

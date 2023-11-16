@@ -1,12 +1,12 @@
 ---
 title: AEM productprofielen toewijzen
-description: Zodra u uw wolkenmiddelen hebt gevormd, zult u uw teamtoegang tot AEM moeten verlenen gebruikend AEM productprofielen.
+description: Nadat u uw wolkenmiddelen hebt gevormd, geef uw teamtoegang tot AEM zich gebruikend AEM productprofielen.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 0%
 >title="AEM productprofielen toewijzen"
 >abstract="Je mag Experience Manager Assets niet gebruiken. Neem contact op met de beheerder."
 
-In dit deel van het [aan boord gaan,](overview.md) u zult leren hoe te om u teamtoegang tot AEM te verlenen gebruikend AEM productprofielen.
+In dit deel van het [aan boord gaan,](overview.md) u leert hoe te om u teamtoegang tot AEM te verlenen gebruikend AEM productprofielen.
 
 ## Doelstelling {#objective}
 
-Nadat u het vorige document in deze instapreis hebt gelezen, [Omgevingen maken,](create-environments.md) en uw cloudbronnen geconfigureerd hebben, moet u uw team toegang verlenen tot AEM zelf met behulp van AEM productprofielen. Als systeembeheerder, doet u dit door AEM productprofielen toe te wijzen.
+Nadat u het vorige document in deze instapreis hebt gelezen, [Omgevingen maken,](create-environments.md) en uw cloudbronnen geconfigureerd hebben, verleent u uw team toegang tot AEM zelf met behulp van AEM productprofielen. Als systeembeheerder, doet u dit door AEM productprofielen toe te wijzen.
 
 Na het lezen van dit document moet u begrijpen:
 
@@ -74,7 +74,7 @@ Voer de volgende stappen uit om de AEM productprofielen van de Admin Console te 
 
    ![Instantie selecteren](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. U zult de lijst van AEM as a Cloud Service productprofielen zien die aan een gebruiker kunnen worden toegewezen die op hun rollen wordt gebaseerd.
+1. U kunt de lijst van AEM as a Cloud Service productprofielen zien die aan een gebruiker kunnen worden toegewezen die op hun rollen wordt gebaseerd.
 
    ![Productprofielen](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -106,8 +106,8 @@ Gefeliciteerd! De gebruikers die u hebt toegewezen aan AEM as a Cloud Service pr
 
 Als u echter beter wilt begrijpen hoe auteurs en ontwikkelaars het systeem gebruiken, kunt u doorgaan met twee optionele onderdelen van deze instapreis:
 
-* [Taken van ontwikkelaar- en implementatiebeheer](developers.md) - Waar u leert hoe ontwikkelaars toegang krijgen tot git om hun aangepaste code op te slaan en te implementeren met behulp van Cloud Manager-pijpleidingen.
-* [AEM](aem-users.md) - Waar leert u hoe u toegang krijgt tot de AEM omgeving waar u inhoud kunt gaan maken.
+* [Taken van ontwikkelaar- en implementatiebeheer](developers.md) - Waar u leert hoe ontwikkelaars toegang hebben tot git om hun aangepaste code op te slaan en te implementeren met behulp van Cloud Manager-pijpleidingen.
+* [AEM](aem-users.md) - Waar u leert hoe u toegang krijgt tot de AEM omgeving waar u inhoud kunt gaan maken.
 
 ## Aanvullende bronnen {#additional-resources}
 

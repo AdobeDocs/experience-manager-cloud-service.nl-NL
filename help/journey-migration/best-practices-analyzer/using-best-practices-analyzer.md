@@ -1,11 +1,11 @@
 ---
 title: Analysator van best practices gebruiken
-description: Leer hoe u de Analysator voor aanbevolen werkwijzen gebruikt om te begrijpen hoe u de upgrade kunt uitvoeren.
+description: Leer hoe u de Analysator voor aanbevolen werkwijzen gebruikt om de gereedheid voor upgrades te begrijpen.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 37%
+source-wordcount: '2478'
+ht-degree: 38%
 
 ---
 
@@ -61,7 +61,7 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Klikken op **Rapport genereren** om de Analysator van Beste praktijken uit te voeren.
+1. Klikken **Rapport genereren** om de Analysator van Beste praktijken uit te voeren.
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -69,7 +69,7 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. Zodra het BPA- rapport wordt geproduceerd, toont het een samenvatting en het aantal bevindingen in een tabelformaat dat door het type van bevinding en het belangrijkheidsniveau wordt georganiseerd. Als u meer informatie wilt over een bepaalde bevinding, klikt u op het nummer dat overeenkomt met het type bevinding in de tabel.
+1. Nadat het BPA-rapport is gegenereerd, worden een samenvatting en het aantal bevindingen weergegeven in een tabelvorm die is ingedeeld op basis van het type bevinding en het belangrijkste niveau. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 

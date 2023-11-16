@@ -2,9 +2,9 @@
 title: Page Diff-optie
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd
 
 ### Volledig scherm en afsluiten {#fullscreen-and-exiting}
 
-Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de zijden van het deelvenstervak om dit aan het volledige browservenster te vergroten.
+Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om dit naar het volledige browservenster te vergroten.
 
 ![Knop Volledig scherm](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

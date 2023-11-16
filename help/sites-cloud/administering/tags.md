@@ -1,13 +1,13 @@
 ---
 title: Tags beheren
 description: Leer hoe u tags kunt beheren in AEM om uw inhoud te ordenen.
-source-git-commit: af60a2b8f1e2dd7fc55247ecb0251d7b85f63eb3
+exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2272'
+source-wordcount: '2268'
 ht-degree: 0%
 
 ---
-
 
 # Tags beheren {#administering-tags}
 
@@ -207,7 +207,7 @@ Als de wijzigingen die u hebt aangebracht, een reeds gepubliceerde tag zijn, kun
 
 ### Publicatie van labels ongedaan maken {#unpublishing-tags}
 
-Als u de tag op de instantie van de auteur wilt deactiveren en deze uit uw publicatie-instantie wilt verwijderen, kunt u de publicatie ongedaan maken.
+Als u de tag op de instantie van de auteur wilt deactiveren en deze uit uw publicatie-instantie wilt verwijderen, kunt u de publicatie ervan ongedaan maken.
 
 1. Als u de publicatie van een tag ongedaan wilt maken, opent u het dialoogvenster [taggen-console.](#tagging-console)
 

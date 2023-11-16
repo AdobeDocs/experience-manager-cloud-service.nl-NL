@@ -2,9 +2,9 @@
 title: Zoekformulieren configureren
 description: Zoeken in Forms voor Adobe Experience Manager as a Cloud Service configureren.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2035'
 ht-degree: 2%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 2%
 
 Adobe Experience Manager as a Cloud Service is uitgerust met een krachtig [Zoeken](/help/sites-cloud/authoring/getting-started/search.md) mechanisme.
 
-In combinatie hiermee is er ook een set vooraf gedefinieerde opties beschikbaar waarmee u de inhoud kunt filteren. Deze bevatten vooraf gedefinieerde facetten, zoals **Wijzigingsdatum**, **Status publiceren**, of **Status van bioscoop** om u te helpen snel tot de middelen doordringen u wenst.
+In combinatie hiermee is er ook een set vooraf gedefinieerde opties waarmee u de inhoud kunt filteren. Deze bevatten vooraf gedefinieerde facetten, zoals **Wijzigingsdatum**, **Status publiceren**, of **Status van bioscoop** om u te helpen snel tot de middelen doordringen u nodig hebt.
 
 ![zoeken en filteren](assets/csf-usage.png)
 
-Samen helpen u uw inhoud snel en gemakkelijk te vinden van:
+Samen helpen u om uw inhoud snel en gemakkelijk te vinden van:
 
 * [Zoeken en filteren](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [Spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
@@ -67,7 +67,7 @@ De standaardconfiguraties (alfabetisch weergegeven) zijn:
 >Zie voor meer informatie over aan middelen gerelateerde zoekformulieren [Middelen - zoekfactoren](/help/assets/search-facets.md)
 
 
-## Voorspellen en instellingen {#predicates-and-their-settings}
+## Voorspellen en de bijbehorende instellingen {#predicates-and-their-settings}
 
 ### Voorspellen {#predicates}
 
@@ -231,7 +231,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
    </td>
   </tr>
   <tr>
-   <td>Lid van collectie</td>
+   <td>Lid van herkomst</td>
    <td>Zoeken naar elementen die lid zijn van een verzameling</td>
    <td>
     <ul>
@@ -414,7 +414,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Sjablonen</td>
-   <td>Zoeken op basis van de geselecteerde sjabloon.</td>
+   <td>Zoeken volgens de geselecteerde sjabloon.</td>
    <td>
     <ul>
      <li>Plaatsaanduiding</li>
@@ -425,7 +425,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Vertaalstatus</td>
-   <td>Zoeken op basis van de vertaalstatus.</td>
+   <td>Zoeken volgens de vertaalstatus.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -489,7 +489,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
 >
 -->
 
-### Voorspelinstellingen {#predicate-settings}
+### Instellingen voor voorspelling {#predicate-settings}
 
 Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar voor de configuratie, waaronder:
 
@@ -513,11 +513,11 @@ Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar v
 
 * **Diepte van eigenschap**
 
-  De maximumdiepte om naar dat bezit binnen de middelen te zoeken. Een zoekopdracht naar die eigenschap kan dus worden uitgevoerd op een resource en recursieve onderliggende elementen totdat het niveau van de onderliggende elementen overeenkomt met de opgegeven diepte.
+  De maximumdiepte om naar dat bezit binnen de middelen te zoeken. Een zoekopdracht naar die eigenschap kan dus worden uitgevoerd op een resource en recursieve onderliggende elementen totdat het niveau van de onderliggende objecten gelijk is aan de opgegeven diepte.
 
 * **Waarde van eigenschap**
 
-  De eigenschapswaarde als een absolute tekenreeks of als expressietaal; bijvoorbeeld: `cq:Page` of
+  De eigenschapswaarde als een absolute tekenreeks of als expressietaal, bijvoorbeeld `cq:Page` of
 
   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
@@ -534,7 +534,7 @@ Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar v
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Pad naar knooppunt Opties**
-In feite hetzelfde als **Pad naar opties** Alleen dit gebeurt in het gemeenschappelijke voorspelde veld, het andere is specifiek voor elementen.
+In feite hetzelfde als het **Pad naar opties** Alleen dit gebeurt in het gemeenschappelijke voorspelde veld, het andere is specifiek voor elementen.
 
 * **Enkel selecteren**
 Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
@@ -551,8 +551,8 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
 1. Navigeren naar **Gereedschappen**, **Algemeen**, **Zoeken in Forms**.
 
 1. Selecteer de configuratie die u wilt aanpassen.
-1. Gebruik de **Bewerken** pictogram om de configuratie voor het bijwerken te openen.
-1. Als u een nieuwe aanpassing wilt maken, zult u waarschijnlijk [nieuwe basisvelden toevoegen en de instellingen definiëren](#add-edit-a-predicate-field-and-define-field-settings) zoals vereist. Als een bestaande aanpassing u een bestaand gebied kunt selecteren en [de instellingen bijwerken](#add-edit-a-predicate-field-and-define-field-settings).
+1. Gebruik de **Bewerken** om de configuratie voor bijwerken te openen.
+1. Als u een nieuwe aanpassing wilt maken, zult u waarschijnlijk [nieuwe basisvelden toevoegen en de instellingen definiëren](#add-edit-a-predicate-field-and-define-field-settings) zoals vereist. Als een bestaande aanpassing u een bestaand gebied en [de instellingen bijwerken](#add-edit-a-predicate-field-and-define-field-settings).
 1. Selecteren **Gereed** om de configuratie op te slaan. De volgende keer dat de configuratie wordt gebruikt, zijn uw wijzigingen zichtbaar.
 
    >[!NOTE]
@@ -567,7 +567,7 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
 U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bijwerken:
 
 1. [Open de aangepaste configuratie](#creating-opening-a-customized-configuration) voor bijwerken.
-1. Als u een nieuw veld wilt toevoegen, opent u het dialoogvenster **Predicate selecteren** en sleep de vereiste voorspelling naar de gewenste locatie. De **Datumbereik**:
+1. Als u een nieuw gebied wilt toevoegen, open **Predicate selecteren** en sleep de vereiste voorspelling naar de gewenste locatie. Bijvoorbeeld de **Datumbereik**:
 
    ![voorspelling toevoegen](assets/csf-add-predicate.png)
 
@@ -575,7 +575,7 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    * U voegt een nieuw veld toe:
 
-     Na het toevoegen van predikaat **Instellingen** worden de eigenschappen die kunnen worden gedefinieerd, geopend en weergegeven.
+     Na het toevoegen van predikaat, **Instellingen** wordt geopend en worden de eigenschappen weergegeven die kunnen worden gedefinieerd.
 
    * U wilt een bestaande voorspelling bijwerken:
 
@@ -628,24 +628,24 @@ Het schrappen van een aangepaste configuratie wordt gedaan van de console:
 
 ### Voorwaarden voor opties toevoegen {#adding-options-predicates}
 
-De voorspelling van de optie (Opties, het Bezit van Opties) staat u toe om een punt te vormen dat moet worden gezocht naar. Deze worden meestal gebruikt om rechtstreeks onder de pagina naar iets te zoeken. bijvoorbeeld een eigenschap op het paginaknooppunt.
+De voorspelling van de optie (Opties, het Bezit van Opties) staat u toe om een punt te vormen dat moet worden gezocht naar. Deze worden meestal gebruikt om rechtstreeks onder de pagina naar iets te zoeken, bijvoorbeeld een eigenschap op het paginaknooppunt.
 
 In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebruikt om een pagina te maken) worden de desbetreffende stappen geïllustreerd:
 
 1. Maak het knooppunt waarin de eigenschap wordt gedefinieerd waarop moet worden gezocht.
 
-   U hebt een basisknooppunt nodig met definities van de afzonderlijke opties die beschikbaar zijn voor de gebruiker.
+   U hebt een basisknooppunt met definities van de afzonderlijke opties nodig om beschikbaar te zijn voor de gebruiker.
 
    De knooppunten voor de afzonderlijke opties hebben de volgende eigenschappen nodig:
 
-   * `jcr:title` - het veldetiket dat in de zoekrail moet worden aangebracht;
+   * `jcr:title` - het veldetiket dat in de zoekrail moet worden aangebracht
    * `value` - de waarde van de eigenschap waarop moet worden gezocht
 
    ![Predicate definitie](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
    >
-   >U ***moet*** niets wijzigen in de `/libs` pad.
+   >U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
    >
    >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >

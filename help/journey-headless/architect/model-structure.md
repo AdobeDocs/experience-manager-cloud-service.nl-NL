@@ -2,9 +2,9 @@
 title: Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM
 description: Leer over de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '686'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Bevestigen met **Maken** en u kunt **Openen** uw model om de structuur te beginn
 
 ## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
-Wanneer u voor het eerst een nieuw model opent, ziet u dit - een grote lege ruimte links en een lange lijst met **Gegevenstypen** rechts:
+Wanneer u voor het eerst een nieuw model opent, ziet u een groot, leeg vak aan de linkerkant en een lange lijst met **Gegevenstypen** rechts:
 
 ![Leeg model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 

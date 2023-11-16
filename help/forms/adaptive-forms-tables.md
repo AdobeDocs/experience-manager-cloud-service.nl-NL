@@ -4,9 +4,9 @@ description: Gebruik de tabelcomponent om tabellen toe te voegen aan een adaptie
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Als u de rij wilt toevoegen, verwijderen of verplaatsen, klikt u op een cel van 
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-Dubbelklik op de rij om de eigenschappen van een rij te configureren, zoals Naam, Verwijzing binden, Instellingen herhalen, CSS-klasse.
+Dubbelklik op de rij om de eigenschappen van een rij te configureren, zoals Naam, Verwijzing binden, Instellingen herhalen en CSS-klasse.
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 

@@ -2,9 +2,9 @@
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1682'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [Segmentering begrijpen](segmentation.md) voor informatie over hoe de segmentatie werkt en zeer belangrijke termijnen.
 
-Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, zult u de segmenten en de strategieën nodig voor uw gerichte inhoud moeten bepalen.
+Afhankelijk van de informatie u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, bepaal de segmenten en de strategieën nodig voor uw gerichte inhoud.
 
 Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. [Activiteiten](activities.md) Hier gedefinieerd kan op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 

@@ -4,9 +4,9 @@ description: Onderzoek hoe u de Universele Redacteur kunt gebruiken om om het ev
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Het op plaats en in context bewerken kan vaak voordelig zijn in vergelijking met
 
 >[!NOTE]
 >
->Als u de Universal Editor in deze proefversie wilt gebruiken, moet u Chrome gebruiken als browser en niet in de incognitomodus. Dit is een beperking van de proefversie, niet van de Universal Editor.
+>Als u de Universal Editor in deze proefversie wilt gebruiken, moet u Chrome gebruiken als uw browser en niet in de incognitomodus. Dit is een beperking van de proefversie, niet van de Universal Editor.
 
 Met de Universal Editor kunt u tekst op een flexibele manier in context en op zijn plaats bewerken, zodat u eenvoudig en intuïtief inhoud kunt ontwerpen.
 
@@ -87,7 +87,7 @@ Met de Universal Editor kunt u in de context van de editor communiceren met uw i
 
 1. Zet de emulator terug naar de bureaubladmodus.
 
-U kunt ook exacte afmetingen voor de emulator opgeven en het geëmuleerde apparaat roteren om de inhoud op elk mogelijk doelapparaat te bekijken.
+U kunt ook exacte afmetingen voor de emulator opgeven en het geëmuleerde apparaat roteren om de inhoud op elk mogelijk doelapparaat weer te geven.
 
 ## Voorvertonen en publiceren {#preview}
 

@@ -2,9 +2,9 @@
 title: Koploze inhoud omzetten
 description: Gebruik de vertaalaansluiting om uw inhoud zonder kop te vertalen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Wanneer u het vertaalproject automatisch maakt, beoordeelt AEM de inhoud zonder 
 
 U kunt als volgt de details van de inhoud zonder kop in dit project bekijken:
 
-1. Tik of klik op de knop voor de ovaal onder aan het dialoogvenster **Vertaaltaak** kaart.
+1. Tik of klik op de ovaalknop onder aan het dialoogvenster **Vertaaltaak** kaart.
 1. De **Vertaaltaak** worden alle items in de taak weergegeven.
    ![Taakdetails voor vertaling](assets/translation-job-detail.png)
 1. Tik of klik op een regel om de details van die regel weer te geven. Houd er rekening mee dat één regel meerdere inhoudsitems kan vertegenwoordigen die moeten worden vertaald.
@@ -226,7 +226,7 @@ Als u via **Navigatie** -> **Bestanden** -> **Activa**, ziet u de vertaalde inho
 
 AEM vertaalkader ontvangt de vertalingen van de vertaalschakelaar en leidt dan automatisch tot de inhoudsstructuur die op de taalwortel wordt gebaseerd en gebruikend de vertalingen die door de schakelaar worden verstrekt.
 
-Het is belangrijk om te begrijpen dat deze inhoud niet wordt gepubliceerd en daarom niet beschikbaar voor uw headless diensten. We zullen meer leren over deze publicatiestructuur van auteurs en zien hoe we onze vertaalde inhoud in de volgende stap van de vertaalreis kunnen publiceren.
+Het is belangrijk om te begrijpen dat deze inhoud niet wordt gepubliceerd en daarom niet beschikbaar voor uw headless diensten. U leert over deze auteur-publicatiestructuur en ziet hoe u vertaalde inhoud kunt publiceren in de volgende stap van de vertaalreis.
 
 ## Menselijke vertaling {#human-translation}
 
@@ -242,7 +242,7 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * U kunt nieuwe vertaalprojecten maken.
 * Gebruik vertaalprojecten om uw inhoud zonder kop te vertalen.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Vertaalde inhoud publiceren](publish-content.md) waar u leert hoe u uw vertaalde inhoud publiceert en hoe u deze vertalingen bijwerkt wanneer de inhoud van de hoofdtaal verandert.
+Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Vertaalde inhoud publiceren](publish-content.md) waar u leert hoe u uw vertaalde inhoud publiceert en hoe te om die vertalingen bij te werken aangezien uw inhoud van de taalwortel verandert.
 
 ## Aanvullende bronnen {#additional-resources}
 

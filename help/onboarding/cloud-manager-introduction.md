@@ -2,9 +2,9 @@
 title: Inleiding tot Cloud Manager
 description: Meer informatie over hoe Cloud Manager uw AEM project ondersteunt via programma's, omgevingen en pijpleidingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Progr
 
 1. Selecteren **Experience Manager**.
 
-1. Op de **Cloud Manager** kaart, klik op **Starten**
+1. Op de **Cloud Manager** kaart, klik **Starten**
 
 ## Op rollen gebaseerde machtigingen in Cloud Manager {#role-based-permissions}
 

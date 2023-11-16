@@ -2,16 +2,16 @@
 title: Aan de slag met de migratiereis om as a Cloud Service te AEM
 description: De migratiejourney starten door u vertrouwd te maken met de basis van de overgang naar AEM as a Cloud Service
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '582'
 ht-degree: 10%
 
 ---
 
 # Aan de slag met de migratiereis om as a Cloud Service te AEM {#getting-started}
 
-In dit gedeelte van de AEM as a Cloud Service Migratiereis leert u over de basisbeginselen van het verplaatsen van uw Managed Services-installatie op locatie of Adobe van AEM naar de cloud.
+In dit gedeelte van de AEM as a Cloud Service Migratiereis leert u over de basisbeginselen van het verplaatsen van uw on-premise of Adobe Managed Services-installatie van AEM naar de cloud.
 
 ## Doelstelling {#objective}
 

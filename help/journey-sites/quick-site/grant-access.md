@@ -2,9 +2,9 @@
 title: Toegang verlenen aan de front-end ontwikkelaar
 description: Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ U moet nu uw front-end ontwikkelaar toegang tot Cloud Manager verlenen via het i
 
 Het proces om toegang tot Cloud Manager te verlenen en gebruikersrollen toe te wijzen aan uw gebruikers wordt genoemd onboarding. In dit document wordt een overzicht gegeven van de belangrijkste stappen voor het instappen van een front-end ontwikkelaar. Na het lezen weet u:
 
-* Hoe te om een front-end ontwikkelaar als gebruiker toe te voegen.
+* Een front-end ontwikkelaar toevoegen als een gebruiker.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
 
 >[!TIP]
@@ -65,7 +65,7 @@ Eerst moet u de front-end ontwikkelaar als gebruiker toevoegen door de Admin Con
 
    ![Productprofielen](assets/product-profiles.png)
 
-1. Tik op of klik op het tabblad **Gebruikers** en vervolgens de **Gebruiker toevoegen** knop.
+1. Tik of klik op de knop **Gebruikers** en vervolgens de **Gebruiker toevoegen** knop.
 
    ![Gebruiker toevoegen](assets/add-user.png)
 
@@ -73,7 +73,7 @@ Eerst moet u de front-end ontwikkelaar als gebruiker toevoegen door de Admin Con
 
    ![Gebruiker toevoegen aan team](assets/add-to-team.png)
 
-1. In de **Product** selecteren, tikken of klikken op het plusteken en vervolgens selecteren **Adobe Experience Manager as a Cloud Service** en wijst **Implementatiebeheer** en **Ontwikkelaar** productprofielen voor de gebruiker.
+1. In de **Product** selecteren, tikken of klikken op het plusteken en vervolgens selecteren **Adobe Experience Manager as a Cloud Service** en wijst de **Implementatiebeheer** en **Ontwikkelaar** productprofielen voor de gebruiker.
 
    ![Teamprofielen toewijzen](assets/assign-team.png)
 
@@ -87,15 +87,15 @@ Met een e-mailuitnodiging aan Cloud Manager onderweg naar de front-end ontwikkel
 
 * A [pad naar typische inhoud](#example-page)
 * De themabron die [u hebt gedownload](#download-theme)
-* De [gebruikersgegevens proxy](#proxy-user)
-* De naam van het programma of de URL naar het programma [gekopieerd uit Cloud Manager](pipeline-setup.md#login)
+* De [gebruikersgegevens voor proxy](#proxy-user)
+* De naam van het programma of de URL ervan [gekopieerd uit Cloud Manager](pipeline-setup.md#login)
 * De ontwerpvereisten aan de voorzijde
 
 ## Volgende functies {#what-is-next}
 
 Nu u dit gedeelte van de AEM snelle reis van de Plaats hebt voltooid zou u moeten weten:
 
-* Hoe te om een front-end ontwikkelaar als gebruiker toe te voegen.
+* Een front-end ontwikkelaar toevoegen als een gebruiker.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
 
 Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het document opnieuw te bekijken [Haal toegangsgegevens uit Git Repository op,](retrieve-access.md) waarin het perspectief exclusief wordt overgeschakeld naar de front-end ontwikkelaar en wordt uitgelegd hoe de front-end ontwikkelaarsgebruikers Cloud Manager toegang krijgen tot informatie over de git-opslagplaats.

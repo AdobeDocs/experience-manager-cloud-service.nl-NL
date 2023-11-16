@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Leer hoe u aan de slag kunt met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1427'
 ht-degree: 6%
 
 ---
@@ -98,7 +98,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
    >
    >De naam moet dezelfde conventies van een AEM gebruiken, zodat deze geen van de volgende tekens kan bevatten: . / : [ ] | *
 
-1. De migratielijst wordt nu weergegeven in de lijstweergave. Klik op het symbool van de drie stippen (**...**) om het vervolgkeuzemenu te openen en op **Extractietoets kopiëren**. U hebt deze sleutel nodig tijdens de extractiefase. Kopieer deze extractietoets.
+1. De migratielijst wordt nu weergegeven in de lijstweergave. Selecteer de drie puntensymbolen (**...**) om de vervolgkeuzelijst te openen en **Extractietoets kopiëren**. U hebt deze sleutel nodig tijdens de extractiefase. Kopieer deze extractietoets.
 
    >[!NOTE]
    >
@@ -118,7 +118,7 @@ Als u de migratieset wilt vullen die u hebt gemaakt in het beheer voor cloudvers
 
 1. Nadat u de nieuwste versie van het gereedschap Inhoud overbrengen op uw Adobe Experience Manager-bronexemplaar hebt geïnstalleerd, gaat u naar **Bewerkingen - Migratie van inhoud**
 
-1. Klikken op **Migratieset maken**
+1. Klikken **Migratieset maken**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -149,7 +149,7 @@ Als u de migratieset wilt vullen die u hebt gemaakt in het beheer voor cloudvers
       >* `/home`
       >* `/etc` (sommige `/etc` paden mogen worden geselecteerd in CTT)
 
-1. Klikken op **Opslaan** nadat u alle velden in het dialoogvenster **Migratieset maken** detailscherm.
+1. Klikken **Opslaan** nadat u alle velden in het dialoogvenster **Migratieset maken** detailscherm.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
@@ -161,7 +161,7 @@ Als u de migratieset wilt vullen die u hebt gemaakt in het beheer voor cloudvers
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
@@ -179,11 +179,11 @@ Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Hierdoor wordt de **Formaat controleren** in.
+1. Dit opent de **Formaat controleren** in.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Klikken op **Formaat controleren** om het proces te starten. Vervolgens gaat u terugkeren naar de lijstweergave van de migratieset. Er wordt dan een bericht weergegeven dat aangeeft dat **Formaat controleren** wordt uitgevoerd.
+1. Klikken **Formaat controleren** om het proces te starten. Vervolgens gaat u terugkeren naar de lijstweergave van de migratieset. Er wordt dan een bericht weergegeven dat aangeeft dat **Formaat controleren** wordt uitgevoerd.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 

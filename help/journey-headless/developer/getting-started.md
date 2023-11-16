@@ -2,9 +2,9 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3096'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ AEM biedt twee robuuste API&#39;s om uw inhoud zonder problemen aan te passen.
 * Met de GraphQL API kunt u aanvragen maken voor toegang tot en levering van inhoudsfragmenten.
 * Met de REST API voor middelen kunt u inhoudsfragmenten (en andere elementen) maken en wijzigen.
 
-U leert over deze API&#39;s en hoe u deze kunt gebruiken in een later deel van de AEM headless-tocht. Of zie [extra middelen](#additional-resources) voor aanvullende documentatie.
+U leert over deze API&#39;s en hoe u ze kunt gebruiken in een later deel van de AEM tocht zonder kop. Of zie [extra middelen](#additional-resources) voor meer documentatie.
 
 ## Niveaus voor toploze integratie {#integration-levels}
 
@@ -273,7 +273,7 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 * Wees op de hoogte van AEM integratieniveaus zonder kop.
 * U kunt uw project definiëren in termen van bereik.
 
-U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Pad naar uw eerste ervaring met AEM zonder kop](path-to-first-experience.md) waar u zult leren hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen te denken over het modelleren van uw gegevens in AEM.
+U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Pad naar uw eerste ervaring met AEM zonder kop](path-to-first-experience.md) waar u leert hoe u de benodigde gereedschappen instelt en hoe u begint te denken over het modelleren van uw gegevens in AEM.
 
 ## Aanvullende bronnen {#additional-resources}
 

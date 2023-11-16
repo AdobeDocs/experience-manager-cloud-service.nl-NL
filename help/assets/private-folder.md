@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '603'
 ht-degree: 2%
 
 ---
@@ -31,19 +31,19 @@ U kunt een privémap maken in het dialoogvenster [!DNL Adobe Experience Manager 
 
 Een persoonlijke map maken en delen:
 
-1. In de [!DNL Assets] console, klik op **[!UICONTROL Create]** klikt op de werkbalk en selecteert u vervolgens **[!UICONTROL Folder]** in het menu.
+1. In de [!DNL Assets] console, klik **[!UICONTROL Create]** klikt op de werkbalk en selecteert u vervolgens **[!UICONTROL Folder]** in het menu.
 
    ![Map met elementen maken](assets/create-folder.png)
 
 1. In de **[!UICONTROL Create Folder]** voert u een `Title` en `Name` (optioneel) voor de map.
 
-   Selecteer **[!UICONTROL Private]** selectievakje en klik op **[!UICONTROL Create]**.
+   Selecteer de **[!UICONTROL Private]** selectievakje en klik op **[!UICONTROL Create]**.
 
    ![chlimage_1-413](assets/create-private-folder.png)
 
    Er wordt een persoonlijke map gemaakt. U kunt nu [elementen toevoegen](add-assets.md#upload-assets) naar de map en deze delen met andere gebruikers of groepen. De map is pas zichtbaar voor andere gebruikers als u deze deelt en er rechten aan toewijst.
 
-1. Als u de map wilt delen, selecteert u de map en klikt u op **[!UICONTROL Properties]** op de werkbalk.
+1. Als u de map wilt delen, selecteert u de map en klikt u **[!UICONTROL Properties]** op de werkbalk.
 
 1. In de **[!UICONTROL Folder Properties]** pagina, selecteert u een gebruiker of groep in het menu **[!UICONTROL Add User]** lijst, een rol toewijzen (`Viewer`, `Editor`, of `Owner`) in uw persoonlijke map en klik op **[!UICONTROL Add]**.
 
@@ -79,7 +79,7 @@ U kunt een map verwijderen door de map te selecteren en [!UICONTROL Delete] in h
 >
 >Als u een map verwijdert met de bovenstaande methode uit de gebruikersinterface, worden ook de bijbehorende gebruikersgroepen verwijderd.
 >
->De bestaande overbodige, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter uit de opslagplaats worden verwijderd met `clean` methode in JMX in de instantie van de auteur (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>De bestaande overbodige, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter uit de opslagplaats worden verwijderd met `clean` methode in JMX in de auteurinstantie (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
 **Zie ook**
 

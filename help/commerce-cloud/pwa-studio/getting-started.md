@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -62,11 +62,11 @@ Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruike
 
    U kunt meer details over de aanpassing van de component van de Navigatie in vinden [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) en in de [Uitbreidingskader](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentatie van de PWA Studio.
 
-1. De Apollo-client verwacht het AEM GraphQL-eindpunt op `<https://pwa-studio/endpoint.js>`. Om het eindpunt aan deze plaats in kaart te brengen, zult u de configuratie UPWARD van uw toepassing van de PWA Studio moeten aanpassen: a. Voeg de variabele AEM_CFM_GRAPHQL aan pwa-root/.env toe en pas het aan punt aan uw AEM het eindpunt van GraphQL van de Fragments van de Inhoud aan.
+1. De Apollo-client verwacht het AEM GraphQL-eindpunt op `<https://pwa-studio/endpoint.js>`. Om het eindpunt aan deze plaats in kaart te brengen, pas de configuratie UPWARD van uw toepassing van de PWA Studio aan: a. Voeg de variabele AEM_CFM_GRAPHQL aan pwa-root/.env toe en pas het aan punt aan uw AEM het eindpunt van GraphQL van de Fragmenten van de Inhoud aan.
 
    Voorbeeld: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
-   b. Voeg een volmachtsoplosser aan uw configuratie UPWARD toe. Een voorbeeld-UPWARD-configuratie kan er als volgt uitzien:
+   b. Voeg een proxyoplosser toe aan uw UPWARD-configuratie. Een voorbeeld-UPWARD-configuratie kan er als volgt uitzien:
 
 ```json
    response:
@@ -91,17 +91,17 @@ Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruike
 
 Volg de documentatie van de Fragmenten van de Inhoud van de AEM aan opstelling een eindpunt van GraphQL voor uw AEM project. Bovendien, in uw AEM project, voeg de volgende configuraties toe om uw toepassing van de PWA Studio toe te staan om tot het eindpunt van GraphQL toegang te hebben:
 
-* Beleid voor het delen van bronnen tussen verschillende Adobe-oorsprong (com.adobe.granite.cors.impl.CORSPopolicyImpl)
+* Beleid voor het delen van bronnen tussen verschillende bronnen van Adoben (com.adobe.granite.cors.impl.CORSPopolicyImpl)
 
-   Stel de toegestane oorspronkelijke eigenschap in op de volledige hostnaam van de PWA-toepassing.
+  Stel de toegestane oorspronkelijke eigenschap in op de volledige hostnaam van de PWA-toepassing.
 
-   Voorbeeld:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Voorbeeld:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer-filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Stel de eigenschap allow.hosts in op de hostnaam van uw PWA-toepassing.
+  Stel de eigenschap allow.hosts in op de hostnaam van uw PWA-toepassing.
 
-   Voorbeeld: `pwa-studio-test-vflyn.local.pwadev`
+  Voorbeeld: `pwa-studio-test-vflyn.local.pwadev`
 
 Hier vindt u volledige voorbeelden van beide configuraties: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

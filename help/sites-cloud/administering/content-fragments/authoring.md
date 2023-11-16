@@ -4,9 +4,9 @@ description: Begrijp hoe te om inhoud voor uw Contentfragmenten te ontwerpen, da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2252'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ In het linkerpaneel kunt u zien:
 
 ### Koppelingen volgen {#follow-links}
 
-In verschillende delen van de editor wordt het koppelingspictogram weergegeven. Hiermee kunt u het weergegeven item openen, bijvoorbeeld een Content Fragment Model, een Parent Reference of een fragment waarnaar wordt verwezen:
+In verschillende delen van de editor ziet u het koppelingspictogram. Hiermee kunt u het weergegeven item openen, bijvoorbeeld een Content Fragment Model, een Parent Reference of een fragment waarnaar wordt verwezen:
 
 ![Inhoudsfragmenteditor - Koppelingspictogram](assets/cf-authoring-link-icon.png)
 

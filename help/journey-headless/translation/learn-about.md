@@ -2,9 +2,9 @@
 title: Meer informatie over inhoud zonder koppen en het vertalen in AEM
 description: Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theorie van AEM vertaling.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Naast robuuste tools voor het maken, beheren en leveren van traditionele webpagi
 
 Dankzij de kracht van AEM kan de inhoud zonder kop, volledig of in beide modellen tegelijk worden geleverd. Voor de vertaalspecialist, kan de zelfde reeks vertaalhulpmiddelen op beide types van inhoud worden toegepast, die u een verenigde benadering geven voor het vertalen van uw inhoud.
 
-Op reis leert u hoe AEM inhoud vertaalt, maar op een hoog niveau is het concept eenvoudig:
+Op reis leert u de details over hoe AEM inhoud vertaalt, maar op een hoog niveau is het concept eenvoudig:
 
 1. Definieer een verbinding met een vertaalservice door het framework voor vertaalintegratie te configureren.
 1. Bepaal welke inhoud met behulp van vertaalregels moet worden vertaald.

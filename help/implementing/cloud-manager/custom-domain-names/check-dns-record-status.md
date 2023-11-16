@@ -2,9 +2,9 @@
 title: DNS-recordstatus controleren
 description: Leer hoe te om te bepalen of uw DNS montages behoorlijk door de Manager van de Wolk te gebruiken oplossen.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ In Cloud Manager kunt u bepalen of uw domeinnaam correct wordt omgezet in uw AEM
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 
-1. Klikken op **Domeininstellingen** in het linkernavigatievenster.
+1. Klikken **Domeininstellingen** in het linkernavigatievenster.
 
 1. Klik op de knop **Status** pictogram voor de domeinnaam.
 

@@ -2,10 +2,10 @@
 title: Responsieve lay-out
 description: Met AEM kunt u een responsieve lay-out voor uw pagina's maken
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 7%
+source-wordcount: '1734'
+ht-degree: 6%
 
 ---
 
@@ -121,7 +121,7 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
    ![De vouw](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
    * De vouw kan ook worden beschouwd als het pagina-regeleinde (niet te verwarren met het [onderbrekingspunten](#layout-definitions-device-emulation-and-breakpoints)) voor de inhoud. Dit wordt voor het gemak weergegeven om aan te geven welk deel van de inhoud de gebruiker op het apparaat ziet voordat hij of zij schuift.
-   * De lijn voor de vouwlijn wordt niet weergegeven als de hoogte van het geëmuleerde apparaat groter is dan de schermgrootte.
+   * De lijn voor de vouw wordt niet getoond als de hoogte van het apparaat dat wordt geëmuleerd hoger is dan de het schermgrootte.
    * De vouw wordt getoond voor het gemak van de auteur en niet op de gepubliceerde pagina getoond.
 
 ## Een lay-outcontainer en de bijbehorende content toevoegen (modus Bewerken) {#adding-a-layout-container-and-its-content-edit-mode}
@@ -136,7 +136,7 @@ A **Layout Container** is een alineasysteem dat:
 >
 >Indien niet reeds beschikbaar, **Layout Container** moet expliciet worden geactiveerd voor een alineasysteem/pagina. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. De **lay-outcontainer** is beschikbaar als standaardcomponent in de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Van hieruit kunt u het naar de vereiste locatie op de pagina slepen waarna u de tijdelijke aanduiding **Componenten hierheen slepen** zult zien.
+1. De **lay-outcontainer** is beschikbaar als standaardcomponent in de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Hier kunt u het naar de gewenste locatie op de pagina slepen waarna u de **Componenten hierheen slepen** plaatsaanduiding.
 1. Vervolgens kunt u componenten aan de lay-outcontainer toevoegen. Deze componenten bevatten de werkelijke inhoud:
 
    ![Lay-outcontainer](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -202,7 +202,7 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
   ![Component verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In **Layout** modus waarop u kunt tikken of klikken op de knop **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk wordt weergegeven voor deze modus.
+* In **Layout** -modus kunt u tikken of op de knop **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk wordt weergegeven voor deze modus.
 
   De werkbalk heeft verschillende opties, afhankelijk van de status van de lay-outcomponent en de onderdelen ervan. Bijvoorbeeld:
 

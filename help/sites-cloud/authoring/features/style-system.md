@@ -2,9 +2,9 @@
 title: Stijlsysteem
 description: Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1319'
 ht-degree: 1%
 
 ---
@@ -64,11 +64,11 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 1. CSS installeren als clientbibliotheken zoals beschreven in de sectie [Overzicht](#overview).
 1. CSS-klassen configureren die u beschikbaar wilt maken voor de auteurs van de inhoud, zoals wordt beschreven in de sectie [Als sjabloonauteur](#as-a-template-author).
-1. De auteurs van de inhoud kunnen dan de stijlen gebruiken zoals die in de sectie worden beschreven [Als inhoudsauteur](#as-a-content-author).
+1. Inhoudsauteurs kunnen vervolgens de stijlen gebruiken zoals beschreven in de sectie [Als inhoudsauteur](#as-a-content-author).
 
 ### Als inhoudsauteur {#as-a-content-author}
 
-1. Na het installeren van het WKND-project navigeert u naar de master homepage van de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en` en bewerkt u de pagina.
+1. Na het installeren van het WKND-project navigeert u naar de hoofdpagina voor de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en` en bewerkt u de pagina.
 1. Selecteer een **Titel** component verder omlaag op de pagina
 
    ![Stijlsysteem voor de auteur](/help/sites-cloud/authoring/assets/style-system-author1.png)
@@ -83,7 +83,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 ### Als sjabloonauteur {#as-a-template-author}
 
-1. Tijdens het bewerken van de master homepage van de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, bewerkt u de sjabloon van de pagina via **Paginagegevens -> Sjabloon bewerken**.
+1. Tijdens het bewerken van de hoofdpagina voor de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, bewerkt u de sjabloon van de pagina via **Paginagegevens -> Sjabloon bewerken**.
 
    ![Sjabloon bewerken](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -95,7 +95,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
    ![Eigenschappen bewerken](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **Groepsnaam:** Stijlen kunnen worden gegroepeerd in het stijlmenu dat de auteur van de inhoud ziet wanneer het vormen van de stijl van de component.
+   * **Groepsnaam:** Stijlen kunnen worden gegroepeerd in het stijlmenu dat de auteur van de inhoud ziet bij het configureren van de stijl van de component.
    * **Stijlen kunnen worden gecombineerd:** Hiermee kunt u meerdere stijlen in die groep tegelijk selecteren.
    * **Stijlnaam:** De beschrijving van de stijl die aan de inhoudsauteur wanneer het vormen van de stijl van de component zal tonen.
    * **CSS-klassen:** De werkelijke naam van de CSS-klasse die aan de stijl is gekoppeld.
@@ -114,13 +114,13 @@ De volgende stappen zijn alleen nodig om het Stijlsysteem in te schakelen voor u
 
 ### Het tabblad Stijl in het dialoogvenster Ontwerpen inschakelen {#enable-styles-tab-design}
 
-Een component werkt alleen met AEM Stijlsysteem en geeft het stijltabblad weer in het ontwerpdialoogvenster als de ontwikkelaar van de component het tabblad Stijl met de volgende instellingen in de component heeft opgenomen:
+Een component werkt alleen met AEM stijlsysteem en geeft het stijltabblad weer in het dialoogvenster Ontwerp, als de ontwikkelaar van de component het tabblad Stijl met de volgende instellingen in de component heeft:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-Dit gebruikt [bedekkingen](/help/implementing/developing/introduction/overlays.md)door [Samenvoegen van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md).
+Dit gebruikt [bedekkingen](/help/implementing/developing/introduction/overlays.md)door de [Samenvoeging van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Met de gevormde component, worden de stijlen die door de paginaauteurs worden gevormd automatisch opgenomen door AEM op het decoratie element dat AEM automatisch rond elke editable component verpakt. De component zelf hoeft niets anders te doen om dit te bewerkstelligen.
 
@@ -128,13 +128,13 @@ Met de gevormde component, worden de stijlen die door de paginaauteurs worden ge
 
 Er is ook een optioneel tabblad Stijlen beschikbaar in het dialoogvenster Bewerken. In tegenstelling tot het tabblad Ontwerpdialoogvenster is het tabblad in het dialoogvenster Bewerken niet essentieel voor het functioneren van het Stijlsysteem, maar is het een optionele alternatieve interface voor de auteur van inhoud om stijlen in te stellen.
 
-Het tabblad Bewerken van het dialoogvenster kan op vergelijkbare wijze worden opgenomen als het tabblad Ontwerpdialoogvenster:
+Het tabblad Bewerken kan op vergelijkbare wijze worden opgenomen als het tabblad van het dialoogvenster Ontwerpen:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
-Dit gebruikt [bedekkingen](/help/implementing/developing/introduction/overlays.md)door [Samenvoegen van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md).
+Dit gebruikt [bedekkingen](/help/implementing/developing/introduction/overlays.md)door de [Samenvoeging van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Deze eigenschap is ingesteld op het tabblad `cq:Component` knooppunt. Bijvoorbee
 
 >[!CAUTION]
 >
-Definieer geen elementnamen voor stijlen die kunnen worden gecombineerd. Wanneer meerdere elementnamen zijn gedefinieerd, is de volgorde van prioriteit:
+Definieer geen elementnamen voor stijlen die kunnen worden gecombineerd. Wanneer de veelvoudige elementnamen worden bepaald, is de orde van prioriteit:
 >
 1. HTML heeft voorrang op alles: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 1. Dan onder veelvoudige actieve stijlen, wordt de eerste stijl in de lijst van stijlen die in het beleid van de component worden gevormd genomen.

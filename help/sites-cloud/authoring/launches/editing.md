@@ -2,7 +2,7 @@
 title: Lanceringen bewerken
 description: Nadat u een opstartafbeelding voor de pagina (of set pagina's) hebt gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina('s).
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 17%
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina(&#39;s).
 
-1. Toegang krijgen tot [Starten vanuit verwijzingen (Sites-console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
+1. Toegang krijgen tot de [Starten vanuit verwijzingen (Sites-console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
 1. Selecteren **Ga naar de pagina** om de pagina voor bewerking te openen.
 
 Wanneer u de pagina bewerkt, ziet u een indicatie in de bovenste werkbalk, samen met de **Verlaten** en **Navigeren** opties:
@@ -26,7 +26,7 @@ Wanneer u de pagina bewerkt, ziet u een indicatie in de bovenste werkbalk, samen
 >
 >U mag een pagina niet verplaatsen binnen een startperiode. Als u deze handeling uitvoert, wordt een waarschuwingsbericht weergegeven:
 >
->* Waarschuwing: Deze pagina is de bron van een opstart. Het verplaatsen van de pagina is niet toegestaan.
+>* Waarschuwing: deze pagina is de bron van een opstart. Het verplaatsen van de pagina is niet toegestaan.
 
 ### Pagina&#39;s starten bewerken die zijn onderworpen aan een live kopie {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -37,7 +37,7 @@ Als uw lancering op a gebaseerd is [Live kopie](/help/sites-cloud/administering/
 
 Een livekopie wordt gebruikt om content te synchroniseren *van* de bronvertakking *naar* de startvertakking (om uw lancering up-to-date te houden als er veranderingen in de bron worden aangebracht).
 
-U kunt wijzigingen aanbrengen op dezelfde manier als waarop u een standaard live kopie kunt bewerken. bijvoorbeeld:
+U kunt wijzigingen aanbrengen op dezelfde manier als u een standaard live kopie kunt bewerken, bijvoorbeeld:
 
 * Als u op een gesloten hangslot klikt, wordt deze synchronisatie verbroken en kunt u nieuwe updates voor de inhoud uitvoeren wanneer u de toepassing start. Als de vergrendeling is opgeheven (open hanglock), worden de wijzigingen niet overschreven door wijzigingen die op dezelfde locatie in de bronvertakking zijn aangebracht.
 * **Overname** voor een bepaalde pagina onderbreken (en **hervatten**).
@@ -56,7 +56,7 @@ Als u de door u aangebrachte wijzigingen wilt bijhouden, kunt u de start weergev
 
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
 
-   Voor volledige informatie over het gebruik van deze functie raadpleegt u [Pagina grijs](/help/sites-cloud/authoring/features/page-diff.md).
+   Zie voor meer informatie over het gebruik van deze functie [Pagina grijs](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## De gebruikte bronpagina&#39;s wijzigen {#changing-the-source-pages-used}
 
@@ -72,7 +72,7 @@ U kunt op elk gewenst moment pagina&#39;s toevoegen aan of verwijderen uit het b
 
 >[!NOTE]
 >
->Als u pagina&#39;s wilt toevoegen aan een opstart, moeten deze zich onder een gemeenschappelijke taalbasis bevinden. dat wil zeggen, binnen één site.
+>Als u pagina&#39;s wilt toevoegen aan een introductie, moeten deze zich onder een gemeenschappelijke hoofdtaalmap bevinden, dat wil zeggen binnen één site.
 
 ## Een opstartconfiguratie bewerken {#editing-a-launch-configuration}
 
@@ -91,4 +91,4 @@ U kunt op elk gewenst moment de eigenschappen voor een opstart bewerken:
 
 De status wordt weergegeven wanneer u een specifieke start selecteert op het tabblad Referenties (zie [Starten in verwijzingen (siteconsole)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 
-![Status van opstarten weergeven](/help/sites-cloud/authoring/assets/launches-status.png)
+![Status van opstart vaststellen](/help/sites-cloud/authoring/assets/launches-status.png)

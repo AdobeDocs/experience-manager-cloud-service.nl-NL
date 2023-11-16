@@ -2,9 +2,9 @@
 title: Inhoud voorvertonen
 description: Leer hoe u de AEM voorvertoningsservice gebruikt om inhoud voor te vertonen voordat u live gaat.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ Zie voor meer informatie over de voorvertoningsomgevingen [Omgevingen beheren](/
 
 U kunt inhoud naar de voorvertoningsservice publiceren met de opdracht **Beheerde publicatie** UI.
 
-1. Selecteer in de Sites-console de pagina of pagina&#39;s die u wilt verzenden voor de voorvertoning en klik op de knop **Publicatie beheren** knop
-1. Selecteer in de volgende wizard de optie **Voorvertoning** als bestemming
+1. Selecteer in de Sites-console de pagina of pagina&#39;s die u wilt verzenden voor de voorvertoning en klik op de knop **Publicatie beheren** knop.
+1. Selecteer in de volgende wizard de optie **Voorvertoning** als de bestemming.
 
    ![beheerde publicatie](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 

@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.11.0 in Adobe Experience Ma
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,6 @@ Als de **Pauzeren vóór implementatie naar productie** optie wordt vereist voor
 
 1. Voer de pijplijn uit.
 1. Test de code in de testomgeving.
-1. Wanneer het opstellen en de goedkeuring beschikbaar wordt, klik op **Afwijzen**.
+1. Wanneer het opstellen en de goedkeuring beschikbaar wordt, klik **Afwijzen**.
 1. Bewerk de pijplijn om de **Pauzeren vóór implementatie naar productie** -optie.
 1. Voer de pijplijn opnieuw uit. Het zal opnieuw lopen op het opvoeren toen op productie.

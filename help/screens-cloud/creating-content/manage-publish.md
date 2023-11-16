@@ -2,9 +2,9 @@
 title: Een kanaal publiceren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u een kanaal in as a Cloud Service schermen publiceert.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Voer de onderstaande stappen uit om het kanaal te publiceren:
 
    ![Kanaal selecteren](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. Klikken op **Publicatie beheren** in de actiebalk.
+1. Klikken **Publicatie beheren** in de actiebalk.
 
 1. Selecteer de **Handeling** als **Publiceren** en **Planning** als **Nu** van de **De wizard Publicatie beheren** en klik op **Volgende**.
 
@@ -42,7 +42,7 @@ Voer de onderstaande stappen uit om het kanaal te publiceren:
    >[!NOTE]
    >Klikken **Inclusief onderliggende items** in de actiebalk en schakel alle opties uit om alle modules in uw project te publiceren en klik op Toevoegen om te publiceren. Door gebrek, worden alle dozen gecontroleerd en u moet manueel uncheck de dozen om alle modules in uw project te publiceren.
 
-1. Nadat u het kanaal hebt geselecteerd in het menu **Publicatie beheren** wizard, klik op **Publiceren** het kanaal publiceren.
+1. Nadat u het kanaal hebt geselecteerd in het menu **Publicatie beheren** wizard, klikt u op **Publiceren** het kanaal publiceren.
 
    ![Het kanaal publiceren](/help/screens-cloud/assets/create-content/managepub-3.png)
 

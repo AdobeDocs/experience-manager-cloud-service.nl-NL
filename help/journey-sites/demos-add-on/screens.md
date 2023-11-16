@@ -2,9 +2,9 @@
 title: AEM Screens inschakelen voor uw demo-site
 description: Leer de stappen voor het inschakelen van de volledige as a Cloud Service AEM Screens-ervaring op uw demo-site.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Door de AEM Reference Demos Add-on te installeren, beschikt u automatisch over W
 De We.Cafe-koffiewinkel bestaat uit drie winkels op drie locaties in de VS. Alle drie winkels hebben drie vergelijkbare ervaringen:
 
 * Een menukaart boven de teller met twee of drie verticale panelen
-* Een toegangsscherm dat de straat onder ogen ziet met een horizontaal of verticaal paneel dat klanten in de winkel uitnodigt
+* Een ingangsscherm dat de straat onder ogen ziet met een horizontaal of verticaal paneel dat klanten in de winkel uitnodigt
 * Een snelle zelfrangschikkende kioskcabine om de rij met één verticale tablet te mijden
 
 >[!NOTE]
@@ -70,7 +70,7 @@ De locatie in New York wordt verondersteld zich in een kleinere winkel te bevind
 
 >[!NOTE]
 >
->Als u besluit verbinding te maken met de Cloud Service Schermen in het dialoogvenster [as a Cloud Service Connect-schermen](#connect-screens) , maakt u de locaties als mappen onder Weergave. Zie de [Aanvullende bronnen](#additional-resources) aan het einde van dit document voor meer informatie over de weergave.
+>Als u besluit verbinding te maken met de Cloud Service Schermen in het dialoogvenster [As a Cloud Service Connect-schermen](#connect-screens) , maakt u de locaties als mappen onder Weergave. Zie de [Aanvullende bronnen](#additional-resources) aan het einde van dit document voor meer informatie over de weergave.
 
 ### Cafe-indelingen {#care-layouts}
 
@@ -135,7 +135,7 @@ Ten eerste moet u een Google API-sleutel maken om de gegevensuitwisseling te ver
 
    ![API&#39;s en services](assets/apis-services.png)
 
-1. Klik in het linkerdeelvenster van het venster API&#39;s en services op **Credentials** boven aan het venster klikt u op **CREDENTIALS MAKEN** en **API-sleutel**.
+1. Klik in het linkerdeelvenster van het venster API&#39;s en services op **Credentials** boven aan het venster klikt u op **CREDENTIALS** en **API-sleutel**.
 
    ![Credentials](assets/credentials.png)
 
@@ -223,7 +223,7 @@ Voor demo-doeleinden kunnen de waarden in het blad worden gewijzigd. ContextHub 
 
 1. Ga voor de auteur van AEMaaCS naar **Globale Navigatie -> Hulpmiddelen -> Plaatsen -> ContextHub**.
 1. Selecteer de configuratiecontainer die de zelfde naam heeft zoals wat u het project gaf toen u het project van de Schermen van creeerde **We.Cafe-websitesjabloon**.
-1. Selecteren **Configuratie -> ContextHub Configuration -> Google Sheets** klik vervolgens op **Volgende** rechtsboven.
+1. Selecteren **Configuratie -> ContextHub Configuration -> Google Sheets** klik vervolgens op **Volgende** aan de rechterbovenhoek.
 1. De configuratie zou reeds JSON gegevens moeten hebben pre-gevormd. Er zijn twee waarden die moeten worden gewijzigd:
    1. Vervangen `[your Google Sheets id]` met de pagina-id die [eerder opgeslagen](#create-spreadsheet).
    1. Vervangen `[your Google API Key]` met de API-sleutel die [eerder opgeslagen](#create-api-key).
@@ -256,7 +256,7 @@ Op basis van de temperatuursverandering van een vriestemperatuur van 32°F (0°C
 >
 >Gebruik de beschreven Google Sheets-oplossing alleen voor demo-doeleinden. Adobe biedt geen ondersteuning voor het gebruik van Google Sheets voor productieomgevingen.
 
-## as a Cloud Service Connect-schermen {#connect-screens}
+## As a Cloud Service Connect-schermen {#connect-screens}
 
 Als u ook een echte digitale handtekening wilt instellen, inclusief een speler die op een digitaal signaalapparaat of op uw computer wordt uitgevoerd, voert u de volgende stappen uit.
 
@@ -264,7 +264,7 @@ U kunt de demo ook eenvoudig voorvertonen in de Kanaaleditor op AEMaaCS.
 
 >[!TIP]
 >
->Voor alle details van de Redacteur van het Kanaal, zie [Aanvullende bronnen](#additional-resources) aan het einde van dit document.
+>Zie voor alle informatie over de Kanaaleditor de [Aanvullende bronnen](#additional-resources) aan het einde van dit document.
 
 ### AEM Screens as a Cloud Service configureren {#configure-screens}
 
@@ -284,11 +284,11 @@ Eerst moet u de inhoud van uw schermdemo publiceren naar AEM Screens as a Cloud 
 
    ![Scherminstelling](assets/screens-settings.png)
 
-1. Wanneer de schermen zijn aangesloten op uw demo-instanties, worden de kanalen zichtbaar in uw kanaalinhoud. Klikken **Kanalen** in het linkerpaneel zodat kunt u uw gepubliceerde kanalen zien. Het kan even duren voordat de informatie wordt ingevuld. U kunt op blauw klikken **Synchroniseren** aan de rechterbovenhoek van het scherm om de informatie bij te werken.
+1. Wanneer de schermen zijn aangesloten op uw demo-instanties, worden de kanalen zichtbaar in uw kanaalinhoud. Klikken **Kanalen** in het linkerpaneel zodat kunt u uw gepubliceerde kanalen zien. Het kan even duren voordat de informatie wordt ingevuld. U kunt op blauw klikken **Sync** aan de rechterbovenhoek van het scherm om de informatie bij te werken.
 
    ![Info demokanaal](assets/screens-channels.png)
 
-1. Klikken **Weergaven** in het linkerdeelvenster. U hebt nog geen bestanden voor uw demo gemaakt. U kunt de locaties van Web.Cafe simuleren door voor elke locatie mappen te maken. Klikken **Maken** rechtsboven in het scherm en selecteer **Map**.
+1. Klikken **Weergaven** in het linkerdeelvenster. U hebt nog geen bestanden voor uw demo gemaakt. U kunt de locaties van Web.Cafe simuleren door voor elke locatie mappen te maken. Klikken **Maken** rechtsboven in het scherm en selecteert u **Map**.
 
    ![Weergave maken](assets/screens-displays.png)
 
@@ -329,7 +329,7 @@ Eerst moet u een registratiecode maken om een speler veilig te verbinden met as 
 
 ![Registratiecodes](assets/registration-codes.png)
 
-1. Voer een naam voor de code in en klik op **Maken**.
+1. Voer een naam in voor de code en klik op **Maken**.
 
    ![Code maken](assets/create-code.png)
 
@@ -347,9 +347,9 @@ Eerst moet u een registratiecode maken om een speler veilig te verbinden met as 
 
 1. De speler verandert automatisch in de **Spelerregistratie** tab. Voer de code in die u eerder hebt gegenereerd en klik op **Registreren**.
 
-   ![Player registration](assets/player-registration-code.png)
+   ![Spelregistratie](assets/player-registration-code.png)
 
-1. Naar de **Systeeminformatie** om te bevestigen dat de speler is geregistreerd.
+1. Schakel over naar de **Systeeminformatie** om te bevestigen dat de speler is geregistreerd.
 
    ![Geregistreerde speler](assets/player-registered.png)
 
@@ -388,9 +388,9 @@ Nu u dit deel van de AEM Invoegtoepassing van de Demo van de Verwijzing hebt vol
 * Begrijp de Web.Cafe demo-inhoud.
 * Weet hoe u AEM Screens for We.Cafe kunt configureren.
 
-U kunt nu de mogelijkheden van AEM Screens verkennen met uw eigen demo-sites. Ga door met het volgende traject, [Uw demosites beheren,](manage.md) waar u informatie krijgt over de beschikbare gereedschappen om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
+U kunt nu de mogelijkheden van AEM Screens verkennen met uw eigen demo-sites. Ga door met het volgende traject, [Uw demosites beheren,](manage.md) waar u meer te weten komt over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
 
-U kunt ook enkele extra bronnen bekijken die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
+U kunt ook een aantal extra bronnen bekijken die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
 
 ## Aanvullende bronnen {#additional-resources}
 

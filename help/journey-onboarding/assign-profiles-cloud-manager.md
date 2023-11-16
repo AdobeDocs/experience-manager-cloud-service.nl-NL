@@ -4,9 +4,9 @@ description: Volg deze pagina om te leren hoe u teamleden kunt toewijzen aan pro
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1528'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 # Teamleden toewijzen aan productprofielen van Cloud Manager {#assign-team-members}
 
-In dit deel van het [aan boord gaan,](overview.md) u leert teamleden toewijzen aan productprofielen van Cloud Manager.
+In dit deel van het [aan boord gaan,](overview.md) leert u hoe u teamleden kunt toewijzen aan productprofielen van Cloud Manager.
 
 ## Doelstelling {#objective}
 
 In de vorige stap van deze reis: [Toegang tot de Admin Console,](admin-console.md) u hebt nu login aan de Admin Console geleerd en uw voorrechten als systeembeheerder verifiëren. U kunt uw teamleden nu toegang verlenen tot Cloud Manager. U doet dit door productprofielen toe te wijzen.
 
-Wanneer het verlenen van toegang tot een oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. De profielen van het product laten elke oplossing toe om zijn eigen reeks gebruikerstoestemmingen te hebben. U gebruikt de Admin Console om productprofielen toe te wijzen.
+Wanneer het verlenen van toegang tot een oplossing van de Adobe, wilt u hen niet noodzakelijk volledige toegang verlenen. Met productprofielen kan elke oplossing beschikken over een eigen set gebruikersrechten. U gebruikt de Admin Console om productprofielen toe te wijzen.
 
-In de eerste stap hebt u toegang tot Cloud Manager. Cloud Manager ondersteunt u met instellingen voor bedrijfsontwikkeling en de speciaal daarvoor gebouwde CI-/CD-pijpleidingen, die zijn uitgerust voor grondig testen en de hoogste codekwaliteit voor uitzonderlijke ervaringen.
+In de eerste stap geeft u gebruikers toegang tot Cloud Manager. Cloud Manager ondersteunt u met instellingen voor bedrijfsontwikkeling en de speciaal daarvoor gebouwde CI-/CD-pijpleidingen, die zijn uitgerust voor grondig testen en de hoogste codekwaliteit voor uitzonderlijke ervaringen.
 
 Nadat u dit document hebt gelezen, moet u:
 
@@ -33,7 +33,7 @@ Nadat u dit document hebt gelezen, moet u:
 
 ## Vereisten {#prerequisites}
 
-Om teamleden aan productprofielen toe te wijzen, zult u details over uw teamleden moeten hebben, die tot AEM as a Cloud Service, met inbegrip van toegang hebben:
+Om teamleden aan productprofielen toe te wijzen, moet u details over uw teamleden hebben, die tot AEM as a Cloud Service moeten toegang hebben, met inbegrip van:
 
 * Namen
 * E-mailadressen
@@ -41,7 +41,7 @@ Om teamleden aan productprofielen toe te wijzen, zult u details over uw teamlede
 
 >[!TIP]
 >
->Met het oog op het instappen, adviseert Adobe dat u eerst gebruikers toevoegt die aan de directe taken, zoals beheerders, ontwikkelaars, en inhoudsauteurs zullen deelnemen.
+>Met het oog op het instappen, adviseert de Adobe dat u aanvankelijk gebruikers toevoegt die aan de directe taken, zoals beheerders, ontwikkelaars, en inhoudsauteurs zullen deelnemen.
 >
 >U kunt het instapproces voortzetten zonder alle gebruikers toe te voegen. Nadat u het instappen hebt gebeëindigd, kunt u extra gebruikers toevoegen.
 
@@ -73,7 +73,7 @@ Met de Admin Console kunt u de lijst met Cloud Manager-profielen weergeven.
 
    ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. De lijst met vooraf geconfigureerde productprofielen van Cloud Manager wordt weergegeven.
+1. U kunt de lijst met vooraf geconfigureerde productprofielen van Cloud Manager bekijken.
 
    ![Productprofielen](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -81,7 +81,7 @@ De belangrijkste profielen die in het kader van het eerste instapproces moeten w
 
 * **Zakelijke eigenaar** - Deze gebruikers beheren verschillende programma&#39;s.
 * **Implementatiebeheer** - Deze gebruikers implementeren code van uw opslagruimten naar AEM omgevingen.
-* **Ontwikkelaar** - Deze gebruikers ontwikkelen uw aangepaste AEM toepassingen en wijzen code toe aan uw opslagplaatsen.
+* **Ontwikkelaar** - Deze gebruikers ontwikkelen uw aangepaste AEM toepassingen en wijzen code toe aan uw opslagruimten.
 
 Als u weet wat deze rollen zijn en wat ze doen, controleert u uw lijst met teamleden om te bepalen wie welk profiel nodig heeft. Houd in mening dat de gebruikers veelvoudige rollen in uw team kunnen hebben en vaak hebben en daarom ook veelvoudige profielen nodig hebben.
 
@@ -91,11 +91,11 @@ U kunt nu gebruikers toevoegen en deze toewijzen aan de **Zakelijke eigenaar** p
 
 1. Identificeer de gebruikers die Cloud Manager-programma&#39;s moeten beheren. Dit zijn uw **Bedrijfseigenaren**.
 
-1. Meld u aan bij de Admin Console op `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **Overzicht** pagina, selecteert u **Adobe Experience Manager as a Cloud Service** product van **Producten en diensten** kaart.
+1. Log in bij de Admin Console `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **Overzicht** pagina, selecteert u **Adobe Experience Manager as a Cloud Service** product van **Producten en diensten** kaart.
 
    ![Producten en diensten](/help/journey-onboarding/assets/assign-team1.png)
 
-1. Selecteer **Gebruikers** tabblad van de bovenste navigatie en selecteer vervolgens **Gebruiker toevoegen**.
+1. Selecteer de **Gebruikers** tabblad van de bovenste navigatie en selecteer vervolgens **Gebruiker toevoegen**.
 
    ![Gebruiker toevoegen](/help/journey-onboarding/assets/assign-team4.png)
 
@@ -122,11 +122,11 @@ Uw **Zakelijke eigenaar** is toegewezen en heeft nu toegang tot Cloud Manager. V
 
 1. Identificeer de gebruiker(s) die code moet opstellen.
 
-1. Meld u aan bij de Admin Console op `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **Overzicht** pagina selecteren **Adobe Experience Manager as a Cloud Service** product uit de **Producten en diensten** kaart.
+1. Log in bij de Admin Console op `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **Overzicht** pagina selecteren **Adobe Experience Manager as a Cloud Service** product uit de **Producten en diensten** kaart.
 
    ![Producten en diensten](/help/journey-onboarding/assets/assign-team1.png)
 
-1. Selecteer **Gebruikers** van de hoogste navigatie en selecteer dan **Gebruiker toevoegen**.
+1. Selecteer de **Gebruikers** van de hoogste navigatie en selecteer dan **Gebruiker toevoegen**.
 
    ![Gebruiker toevoegen](/help/journey-onboarding/assets/assign-team4.png)
 
@@ -146,11 +146,11 @@ Uw **Implementatiebeheer** is toegewezen en heeft nu toegang tot Cloud Manager. 
 
 1. Identificeer de gebruiker(s) die AEM toepassingen moet ontwikkelen en code moet beheren.
 
-1. Meld u aan bij de Admin Console op `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **Overzicht** pagina selecteren **Adobe Experience Manager as a Cloud Service** product uit de **Producten en diensten** kaart.
+1. Log in bij de Admin Console op `[adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview)` en op de **Overzicht** pagina selecteren **Adobe Experience Manager as a Cloud Service** product uit de **Producten en diensten** kaart.
 
    ![Producten en diensten](/help/journey-onboarding/assets/assign-team1.png)
 
-1. Selecteer **Gebruikers** van de hoogste navigatie en selecteer dan **Gebruiker toevoegen**.
+1. Selecteer de **Gebruikers** van de hoogste navigatie en selecteer dan **Gebruiker toevoegen**.
 
    ![Gebruiker toevoegen](/help/journey-onboarding/assets/assign-team4.png)
 
@@ -185,5 +185,5 @@ Het verdient aanbeveling de hierboven beschreven instapreis voort te zetten. Dit
 
 * [Introductie van Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Meer informatie over Cloud Manager, Cloud Manager-programma&#39;s en omgevingen.
 * [Productprofielen van Cloud Manager](/help/onboarding/aem-cs-team-product-profiles.md) - Meer informatie over AEM as a Cloud Service teams en productprofielen.
-* [Identiteitstypen in Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Adobe identiteitsbeheer maakt en beheert gebruikerstoegang tot toepassingen en services. Adobe biedt deze identiteitstypen of accounts aan om gebruikers te verifiëren en autoriseren.
+* [Identiteitstypen in Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html) - Met het identiteitsbeheersysteem van de Adobe kunnen beheerders de toegang van gebruikers tot toepassingen en services creëren en beheren. Met Adobe kunt u deze typen identiteiten of accounts verifiëren en autoriseren.
 

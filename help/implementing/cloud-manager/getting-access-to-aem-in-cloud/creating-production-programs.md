@@ -2,9 +2,9 @@
 title: Productieprogramma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Ga als volgt te werk om een productieprogramma te maken.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klikken op **Programma toevoegen** in de rechterbovenhoek van het scherm.
+1. Klikken **Programma toevoegen** in de rechterbovenhoek van het scherm.
 
    ![Stationspagina van Cloud Manager](assets/log-in.png)
 
@@ -49,7 +49,7 @@ Ga als volgt te werk om een productieprogramma te maken.
 
    ![Oplossingen selecteren](assets/setup-prod-select.png)
 
-1. Klik op het chevron vóór de namen van de oplossingen om optionele invoegtoepassingen te tonen, zoals het selecteren van de **Handel** invoegoptie onder **Sites**.
+1. Klik op het chevron voor de namen van de oplossingen om optionele invoegtoepassingen te tonen, zoals het selecteren van de **Handel** invoegoptie onder **Sites**.
 
    ![Invoegtoepassingen selecteren](assets/setup-prod-commerce.png)
 
@@ -70,7 +70,7 @@ Uw programma wordt gemaakt door Cloud Manager en wordt weergegeven en geselectee
 
 ## Toegang tot uw programma {#accessing}
 
-1. Zodra u uw programmakaart op de landingspagina ziet, selecteer de elliptische knoop om de menuopties te bekijken beschikbaar aan u.
+1. Wanneer u uw programmacokaart op de landingspagina ziet, selecteer de elliptische knoop om de menuopties te bekijken beschikbaar aan u.
 
    ![Overzicht van programma](assets/program-overview.png)
 
@@ -80,7 +80,7 @@ Uw programma wordt gemaakt door Cloud Manager en wordt weergegeven en geselectee
 
    ![Overzicht van programma](assets/set-up-prod5.png)
 
-Als u op een bepaald moment naar een ander programma moet schakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om het **Navigeren naar** -optie.
+Als u op een bepaald moment naar een ander programma moet schakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om de **Navigeren naar** -optie.
 
 ![Ga naar](assets/create-program-a1.png)
 

@@ -2,9 +2,9 @@
 title: Vertaalde inhoud zonder kop publiceren
 description: Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de inhoud wordt bijgewerkt.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de 
 In het vorige document van de AEM zonder kop [Inhoud vertalen,](configure-connector.md) u hebt geleerd hoe u AEM vertaalprojecten kunt gebruiken om uw inhoud zonder kop te vertalen. Nu moet u:
 
 * Begrijp wat een vertaalproject is.
-* Nieuwe vertaalprojecten kunnen maken.
+* U kunt nieuwe vertaalprojecten maken.
 * Gebruik vertaalprojecten om uw inhoud zonder kop te vertalen.
 
 Nu uw eerste vertaling is voltooid, wordt in dit artikel de volgende stap gezet voor het publiceren van die inhoud en wat u moet doen om uw vertalingen bij te werken wanneer de onderliggende inhoud in de hoofdtaalwijziging verandert.
@@ -88,7 +88,7 @@ Vertaling is zelden een eenmalige exercitie. Meestal blijven auteurs van inhoud 
 
 De specifieke projectvereisten bepalen hoe vaak u uw vertalingen moet bijwerken en welk besluitvormingsproces wordt gevolgd alvorens een update uit te voeren. Zodra u hebt besloten uw vertalingen bij te werken, is het proces in AEM zeer eenvoudig. Aangezien de eerste vertaling gebaseerd was op een vertaalproject, zijn ook updates mogelijk.
 
-Net als voorheen verschilt het proces enigszins als u ervoor kiest om automatisch uw vertaalproject te maken of uw vertaalproject handmatig te maken.
+Het proces verschilt echter enigszins als u ervoor kiest om uw vertaalproject automatisch te maken of uw vertaalproject handmatig te maken.
 
 ### Een automatisch gemaakt vertaalproject bijwerken {#updating-automatic-project}
 
@@ -97,7 +97,7 @@ Net als voorheen verschilt het proces enigszins als u ervoor kiest om automatisc
 1. Tik of klik op de railkiezer en toon de **Verwijzingen** deelvenster.
 1. Tik of klik op **Taalkopieën**.
 1. Controleer de **Taalkopieën** selectievakje.
-1. De sectie uitvouwen **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
+1. De sectie uitbreiden **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
 1. In de **Project** vervolgkeuzelijst, selecteren **Toevoegen aan een bestaand vertaalproject**.
 1. In de **Bestaand vertaalproject** selecteert u het project dat u voor de eerste vertaling hebt gemaakt.
 1. Tik of klik op **Start**.
@@ -116,7 +116,7 @@ U ziet dat er een nieuwe banenkaart aan het project is toegevoegd. In dit voorbe
 
 U kunt zien dat de statistieken op de nieuwe kaart (aantal activa en inhoudsfragmenten) verschillend zijn. Dit komt omdat AEM herkent wat er is veranderd sinds de laatste vertaling en alleen de inhoud bevat die moet worden vertaald. Dit omvat het opnieuw vertalen van bijgewerkte inhoud en het voor het eerst vertalen van nieuwe inhoud.
 
-Vanaf dit punt [start en beheer uw vertaaltaak op dezelfde manier als het origineel.](translate-content.md#using-translation-project)
+Vanaf dit punt kunt u [start en beheer uw vertaaltaak op dezelfde manier als het origineel.](translate-content.md#using-translation-project)
 
 ### Een handmatig gemaakt vertaalproject bijwerken {#updating-manual-project}
 
@@ -133,12 +133,12 @@ Als u een vertaling wilt bijwerken, kunt u een nieuwe taak toevoegen aan uw best
 
    ![Doel bijwerken](assets/update-target.png)
 
-1. In de **Doeltaal selecteren** gebruiken om de taal te selecteren en tikken of klikken **Gereed**.
+1. In de **Doeltaal selecteren** gebruiken om de taal te selecteren en op **Gereed**.
 
    ![Doeltaal selecteren](assets/select-target-language.png)
 
-1. Als de doeltaal van uw nieuwe vertaaltaak is ingesteld, tikt u of klikt u op de knop met de ellips onder aan de taakkaart om de details van de taak weer te geven.
-1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Inhoud aan de taak toevoegen door te tikken of op de knop **Toevoegen** en de padbrowser gebruiken [zoals u dat eerder deed toen u het vertaalproject oorspronkelijk creeerde.](translate-content.md##manually-creating)
+1. Als de doeltaal van uw nieuwe vertaaltaak is ingesteld, tikt u op de knop voor de weglatingsteken onder aan de taakkaart om de details van de taak weer te geven.
+1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Inhoud aan de taak toevoegen door te tikken of op de knop **Toevoegen** en het gebruiken van wegbrowser [zoals u dat eerder deed toen u het vertaalproject oorspronkelijk creeerde.](translate-content.md##manually-creating)
 
 >[!TIP]
 >
@@ -146,18 +146,18 @@ Als u een vertaling wilt bijwerken, kunt u een nieuwe taak toevoegen aan uw best
 >
 >Meer informatie over de padbrowser vindt u in het dialoogvenster [sectie aanvullende bronnen.](#additional-resources)
 
-Vanaf dit punt [start en beheer uw vertaaltaak op dezelfde manier als het origineel.](translate-content.md#using-translation-project)
+Vanaf dit punt kunt u [start en beheer uw vertaaltaak op dezelfde manier als het origineel.](translate-content.md#using-translation-project)
 
 ## Einde van de reis? {#end-of-journey}
 
 Gefeliciteerd! U hebt de reis zonder kop voltooid! Nu moet u:
 
-* Heb een overzicht van wat de levering van inhoud zonder kop is.
+* Heb een overzicht van wat koploze inhoudlevering is.
 * U hebt een basiskennis AEM functies zonder kop.
 * Begrijp AEM vertaalfuncties en hoe deze verwant zijn aan inhoud zonder kop.
 * De mogelijkheid hebben om uw eigen inhoud zonder kop te vertalen.
 
-U bent nu klaar om uw eigen inhoud zonder kop in AEM te vertalen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
+U kunt nu uw eigen inhoud zonder kop in AEM vertalen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
 
 ## Aanvullende bronnen {#additional-resources}
 

@@ -3,9 +3,9 @@ title: Aan de slag met [!DNL Assets view]
 description: Hoe kan ik toegang krijgen tot, login ervaring van, gesteunde gebruiksgevallen van, en bekende kwesties van [!DNL Assets view].
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 88cbaae2ad8b610b8cd14b3ba0a92e7238ae8e9f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Te gebruiken [!DNL Assets view], aanmelden bij [https://experience.adobe.com/#/a
 
 ## Toegang ontvangen tot [!DNL Assets view] {#get-access}
 
-Adobe voorziet de oplossing en voegt de aangewezen persoon van uw organisatie als beheerder toe. De beheerders kunnen toegang tot diverse gebruikers van de organisatie verlenen door te gebruiken [[!DNL Admin Console]](https://helpx.adobe.com/nl/enterprise/using/admin-console.html). Voor verzoeken met betrekking tot uw toegang, contacteer de beheerder van uw organisatie.
+De bepalingen van de Adobe de oplossing en voegt de aangewezen persoon van uw organisatie als beheerder toe. De beheerders kunnen toegang tot diverse gebruikers van de organisatie verlenen door te gebruiken [[!DNL Admin Console]](https://helpx.adobe.com/nl/enterprise/using/admin-console.html). Voor verzoeken met betrekking tot uw toegang, contacteer de beheerder van uw organisatie.
 
-Wanneer het programma openen, na het verstrekken van de geloofsbrieven, [!DNL Assets view] vraagt u een account te selecteren. In dit geval selecteert u `Company or School Account` om verder te gaan.
+Wanneer het programma openen, na het verstrekken van de geloofsbrieven [!DNL Assets view] vraagt u een account te selecteren. In dit geval selecteert u `Company or School Account` om verder te gaan.
 
 ## Configureren [!DNL Assets view] {#configuration}
 

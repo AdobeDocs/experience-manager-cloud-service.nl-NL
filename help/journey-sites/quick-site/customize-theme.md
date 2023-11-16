@@ -1,17 +1,17 @@
 ---
 title: Het sitethema aanpassen
-description: Leer hoe u het sitethema hebt gemaakt, hoe u het kunt aanpassen en hoe u het kunt testen met live AEM-inhoud.
+description: Leer hoe het thema van de site is opgebouwd, hoe u het kunt aanpassen en hoe u live-AEM kunt testen.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
 
 # Het sitethema aanpassen {#customize-the-site-theme}
 
-Leer hoe u het sitethema hebt gemaakt, hoe u het kunt aanpassen en hoe u het kunt testen met live AEM-inhoud.
+Leer hoe het thema van de site is opgebouwd, hoe u het kunt aanpassen en hoe u live-AEM kunt testen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -108,7 +108,7 @@ U kunt doorgaan met het aanpassen van het thema op basis van de vereisten die de
 Zodra uw aanpassingen volledig zijn, kunt u hen aan de AEM git bewaarplaats begaan. Eerst moet u de repository klonen op uw lokale computer.
 
 1. Navigeer vanaf de opdrachtregel naar de locatie waar u de repo wilt klonen.
-1. Voer het bevel uit u [eerder opgehaald uit Cloud Manager.](retrieve-access.md) Het zou gelijkaardig moeten zijn aan `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Gebruik de gebruikersnaam en het wachtwoord voor de it [u in het vorige gedeelte van deze reis terugwint.](retrieve-access.md)
+1. Voer het bevel uit u [eerder opgehaald uit Cloud Manager.](retrieve-access.md) Het moet vergelijkbaar zijn met `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. Gebruik de gebruikersnaam en het wachtwoord voor de it [u in het vorige gedeelte van deze reis terugwint.](retrieve-access.md)
 
    ![Kloonrepo](assets/clone-repo.png)
 
@@ -135,7 +135,7 @@ Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 * Zie hoe u themaaanpassingen kunt testen met echte AEM inhoud via lokale proxy.
 * Weet hoe u uw wijzigingen in de AEM-git-opslagplaats kunt doorvoeren.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het document opnieuw te bekijken [Uw aangepast thema implementeren,](deploy-theme.md) waar u zult leren hoe te om het thema op te stellen gebruikend de front-end pijpleiding.
+Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het document opnieuw te bekijken [Uw aangepast thema implementeren,](deploy-theme.md) waar u leert hoe te om het thema op te stellen gebruikend de front-end pijpleiding.
 
 ## Aanvullende bronnen {#additional-resources}
 
