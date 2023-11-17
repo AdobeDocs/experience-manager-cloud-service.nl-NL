@@ -2,9 +2,9 @@
 title: Uw pijplijn instellen
 description: Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Maak een front-end pijplijn om de aanpassing van het thema van uw site te behere
 In het vorige document van de AEM Snelle reis van de Plaats, [Site maken van sjabloon,](create-site.md) U hebt geleerd hoe u een sitesjabloon kunt gebruiken om snel een AEM site te maken die verder kan worden aangepast met front-end hulpprogramma&#39;s. Nu moet u het volgende doen:
 
 * Begrijp hoe u AEM Sitesjablonen kunt verkrijgen.
-* Leer hoe u een nieuwe site maakt met een sjabloon.
+* Leer hoe u een site maakt met een sjabloon.
 * Zie hoe u de sjabloon van uw nieuwe site kunt downloaden en aan de front-end ontwikkelaar kunt leveren.
 
 Dit artikel bouwt op die grondbeginselen voort zodat kunt u opstelling een front-end pijpleiding, die de front-end ontwikkelaar later in de reis zal gebruiken om front-end aanpassingen op te stellen.

@@ -4,9 +4,9 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 Inhoudsfragmenten vertegenwoordigen uw inhoud zonder kop en zijn gebaseerd op vooraf gedefinieerde structuren, de zogenaamde Content Fragment-modellen. U hebt al een model gemaakt in een vorige module.
 
-In deze module maakt u een nieuw inhoudsfragment op basis van dat model met de console voor inhoudsfragmenten. U kunt de Content Fragment-console beschouwen als een bibliotheek met inhoud zonder kop. Gebruik dit besturingselement om nieuwe inhoudsfragmenten te maken en bestaande fragmenten te beheren.
+In deze module, creeert u een Fragment van de Inhoud dat op dat model door de console van het Fragment van de Inhoud te gebruiken wordt gebaseerd. U kunt de Content Fragment-console beschouwen als een bibliotheek met inhoud zonder kop. Gebruik dit besturingselement om nieuwe inhoudsfragmenten te maken en bestaande fragmenten te beheren.
 
 De console van het Fragment van de Inhoud wordt gebruikt om inhoud zonder kop over leveringskanalen en onafhankelijk van context tot stand te brengen en uit te geven, die de meest efficiënte methode in vele auteursgevallen kan zijn. In een recentere module zullen wij het uitgeven van inhoud zonder titel in context en op zijn plaats onderzoeken.
 

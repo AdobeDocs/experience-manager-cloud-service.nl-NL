@@ -2,9 +2,9 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3287'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
 1. Gebruik dit besturingselement om inhoudspagina&#39;s te maken.
 
-   * Wanneer u een sjabloon gebruikt om een nieuwe pagina te maken, is er geen zichtbaar verschil en is er geen indicatie tussen statische en bewerkbare sjablonen.
+   * Wanneer u een sjabloon gebruikt om een pagina te maken, is er geen zichtbaar verschil en is er geen indicatie tussen statische en bewerkbare sjablonen.
    * Voor de auteur van de pagina is het proces transparant.
 
    Zie voor meer informatie over hoe een auteur van een pagina sjablonen gebruikt om een pagina te maken [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -141,11 +141,11 @@ Voor het organiseren van uw sjablonen kunt u de volgende mappen gebruiken:
 >
 >Ook al kunt u uw mappen nesten, wanneer de gebruiker ze in het dialoogvenster **Sjablonen** worden weergegeven als een platte structuur.
 
-In een standaardinstelling AEM `global` bestaat al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden. U kunt uw standaardsjablonen toevoegen aan deze map of een nieuwe map maken (aanbevolen).
+In een standaardinstelling AEM `global` bestaat al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden. U kunt uw standaardsjablonen toevoegen aan deze map of een map maken (aanbevolen).
 
 >[!NOTE]
 >
->Het is aan te raden een nieuwe map te maken waarin uw aangepaste sjablonen staan en niet de `global` map.
+>Het is aan te raden een map te maken waarin uw aangepaste sjablonen staan en niet de `global` map.
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ Sjabloontypen en beleid worden in alle mappen overgeërfd volgens de volgende pr
 
 Er wordt een lijst met alle toegestane vermeldingen gemaakt. Als een van de configuraties elkaar overlappen ( `path`/ `label`), wordt alleen de instantie die zich het dichtst bij de huidige map bevindt, aan de gebruiker getoond.
 
-Als u een nieuwe map wilt maken, kunt u het volgende doen:
+Als u een map wilt maken, kunt u het volgende doen:
 
 * Programmaticaal of met CRXDE Lite
 * Met de [Configuratiebrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)

@@ -2,9 +2,9 @@
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2163'
 ht-degree: 9%
 
 ---
@@ -120,7 +120,7 @@ Als u een element aan de pagina wilt toevoegen, selecteert u het element en slee
 
 * Een bestaand onderdeel van het desbetreffende type.
    * U kunt bijvoorbeeld een element van het type afbeelding naar een afbeeldingscomponent slepen.
-* A [plaatsaanduiding](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in het alineasysteem om een nieuw onderdeel van het juiste type te maken.
+* A [plaatsaanduiding](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in het alineasysteem om een onderdeel van het juiste type te maken.
    * U kunt bijvoorbeeld een element van het type afbeelding naar het alineasysteem slepen om een component Image te maken.
 
 >[!NOTE]

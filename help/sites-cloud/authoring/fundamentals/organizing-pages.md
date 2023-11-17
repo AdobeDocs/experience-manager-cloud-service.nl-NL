@@ -2,9 +2,9 @@
 title: Pagina's maken en indelen
 description: Leer hoe u uw website kunt ordenen door pagina's met AEM te maken en te beheren.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2448'
 ht-degree: 2%
 
 ---
@@ -213,7 +213,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    >
    >Zie [Naamgevingsconventies voor pagina](#page-naming-conventions).
 
-   De minimale informatie die nodig is om een nieuwe pagina te maken, is de **Titel**.
+   De minimale informatie die nodig is om een pagina te maken, is de **Titel**.
 
    ![Paginatitel opgeven](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 

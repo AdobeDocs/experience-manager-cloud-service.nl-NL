@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '934'
 ht-degree: 11%
 
 ---
@@ -41,9 +41,9 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![select_form](assets/select_form.png)
 
-1. (Optioneel) Maak in de Schema-editor voor metagegevens een nieuw veld dat u wilt conditionaliseren. Geef een naam- en eigenschappenpad op in het dialoogvenster **[!UICONTROL Settings]** tab.
+1. (Optioneel) Maak in de Schema-editor voor metagegevens een veld dat u wilt conditionaliseren. Geef een naam- en eigenschappenpad op in het dialoogvenster **[!UICONTROL Settings]** tab.
 
-   Tik/klik om een nieuw tabblad te maken `+` om een tabblad toe te voegen en vervolgens een metagegevensveld toe te voegen.
+   Tik/klik om een tab te maken `+` om een tabblad toe te voegen en vervolgens een metagegevensveld toe te voegen.
 
    ![add_tab](assets/add_tab.png)
 

@@ -2,9 +2,9 @@
 title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 4%
 
 ---
@@ -76,7 +76,7 @@ Er zijn verschillende aspecten om een pagina te zoeken. U kunt navigeren en/of z
 
 ### Een nieuwe pagina maken {#creating-a-new-page}
 
-Naar [een nieuwe pagina maken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+Naar [een pagina maken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Naar de locatie navigeren](#finding-your-page) op de plaats waar u de nieuwe pagina wilt maken.
 1. Gebruik de **Maken** pictogram en selecteer vervolgens **Pagina** in de lijst:

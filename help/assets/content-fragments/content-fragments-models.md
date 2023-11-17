@@ -2,9 +2,9 @@
 title: Content Fragment Models (Assets - Content Fragments)
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 2%
 
 ---
@@ -297,7 +297,7 @@ Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 
 * **Fragment maken toestaan**
 
-  Hierdoor kan de auteur van het fragment een nieuw fragment maken op basis van het juiste model.
+  Hierdoor kan de auteur van het fragment een fragment maken op basis van het juiste model.
 
    * **fragmentreferencecomponent** - stelt de auteur van het fragment in staat een samenstelling samen te stellen door meerdere fragmenten te selecteren
 

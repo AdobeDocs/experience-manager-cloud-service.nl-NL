@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -69,10 +69,10 @@ Bekijk de video Overzicht van de release van oktober 2022 voor een overzicht van
    * **[Formuliergegevensmodel in sjablooneditor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: U kunt een formuliergegevensmodelschema koppelen aan een adaptieve formuliersjabloon in de sjablooneditor. Het vermindert de tijd die nodig is om een adaptief formulier te maken. De optie wordt ook toegevoegd aan de Adaptive Forms-editor, zodat gebruikers het formuliergegevensmodel voor bestaande formulieren kunnen selecteren of wijzigen.
    * **[Document met record in sjablooneditor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: U kunt het genereren van documenten nu standaardiseren voor alle formulieren die met een sjabloon zijn gemaakt. Dit helpt naleving en normalisatie voor org vereisten verbeteren.
 
-* **[De wizard Adaptief formulier starten vanaf een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites-pagina biedt uitgebreide ondersteuning voor Adaptive Forms. U kunt nu een nieuw adaptief formulier maken of een bestaand adaptief formulier insluiten terwijl u op de AEM Sites-pagina blijft staan.
+* **[De wizard Adaptief formulier starten vanaf een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites-pagina biedt uitgebreide ondersteuning voor Adaptive Forms. U kunt nu een adaptief formulier maken of een bestaand adaptief formulier insluiten terwijl u op de AEM Sites-pagina blijft staan.
 * **[De vertoningsgroepering van de verandering voor controledozen en radioknoop in DoR](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: U kunt nu de gewenste uitlijning (Horizontaal, Verticaal, Hetzelfde als Adaptief Forms) instellen voor het selectievakje en het keuzerondje in het Document of Record. Met deze optie bepaalt u de positie van de opties voor het selectievakje en het keuzerondje in het document of record.
 
-## CIF-invoegtoepassing {#cloud-services-cif}
+## CIF invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 

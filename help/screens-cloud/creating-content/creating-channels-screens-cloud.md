@@ -2,9 +2,9 @@
 title: Kanalen maken en beheren in as a Cloud Service schermen
 description: In deze pagina wordt beschreven hoe u kanalen in as a Cloud Service schermen maakt en beheert.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Met dit document krijgt u meer inzicht in het maken en beheren van kanalen voor 
 >**Vereisten**
 >Voordat u deze sectie van de Guide start, moet u [Projecten maken en beheren in as a Cloud Service schermen](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-Voer de onderstaande stappen uit om een nieuw volgnummer te maken in as a Cloud Service schermen:
+Voer de onderstaande stappen uit om een volgnummer te maken in as a Cloud Service schermen:
 
 1. Navigeer naar de Inhoudsprovider voor schermen.
 

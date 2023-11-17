@@ -4,9 +4,9 @@ description: Gebruik een voorbeeld van een React-app om te leren hoe u inhoud ku
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
 
 1. Selecteer de **Mtn Biking - Shopable** laag.
 
-1. Om een nieuwe vraag-uit op dit paneel tot stand te brengen, moet u een nieuw shoppable ogenblikFragment van de Inhoud tot stand brengen. Tik of klik op de knop **+ Nieuw fragment maken** knop.
+1. Als u een call-out wilt maken in dit deelvenster, maakt u een schokkend moment met een inhoudsfragment. Tik of klik op de knop **+ Nieuw fragment maken** knop.
 
    ![Een schokkend moment toevoegen](assets/do-not-localize/add-reference-1-5.png)
 

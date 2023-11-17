@@ -2,9 +2,9 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Content not found
 >See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
 -->
 
-Als u een nieuwe widget wilt maken voor gebruik in een componentdialoogvenster, moet u een nieuwe granite UI-veldcomponent maken.
+Als u een widget wilt maken voor gebruik in een componentdialoogvenster, moet u een graniet UI-veldcomponent maken.
 
 Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een nieuw formulierveld moet u een brontype maken. Dit is hetzelfde als het maken van een nieuwe component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`):
 

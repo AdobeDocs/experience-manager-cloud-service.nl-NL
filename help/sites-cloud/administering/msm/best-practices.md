@@ -4,9 +4,9 @@ description: Leer de beste praktijken die door Adobe engineering en raadplegende
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ U ziet dat AEM twee hoofdbenaderingen heeft voor het maken van actieve kopieën:
 
 Houd rekening met het volgende wanneer u een site maakt:
 
-* Als u een nieuwe site wilt maken, hebt u een [blauwdrukconfiguratie](creating-live-copies.md#managing-blueprint-configurations).
+* Als u een site wilt maken, hebt u een [blauwdrukconfiguratie](creating-live-copies.md#managing-blueprint-configurations).
 * Als u wilt dat de taalpaden op een nieuwe site kunnen worden geselecteerd, moeten de overeenkomstige taalwortels in de blauwdruk (bron) aanwezig zijn.
 * Eenmaal [nieuwe site is gemaakt als een live kopie](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (gebruiken **Maken** vervolgens **Site**), zijn de eerste twee niveaus van deze Live Copy *onbeschaamd*. Onderliggende items van de pagina behoren niet tot de live-relatie, maar de rollout neemt wel af als een live-relatie wordt gevonden die overeenkomt met de trigger.
 

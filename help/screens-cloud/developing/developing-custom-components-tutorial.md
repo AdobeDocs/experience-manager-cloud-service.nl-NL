@@ -2,9 +2,9 @@
 title: Een aangepaste component voor as a Cloud Service schermen ontwikkelen
 description: De volgende zelfstudie doorloopt de stappen om een aangepaste component voor AEM Screens te maken. AEM Screens gebruikt veel bestaande ontwerppatronen en technologieën van andere AEM. In de zelfstudie worden verschillen en speciale overwegingen benadrukt bij het ontwikkelen voor AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -329,7 +329,7 @@ AEM Screens-componenten worden in de bewerkingsmodus anders weergegeven dan in d
 
 1. Kopieer en plak de `shared` clientbibliotheekmap om een clientbibliotheek te maken met de naam `production`.
 
-   ![Kopieer de gedeelde clientbibliotheek om een nieuwe productieclientbibliotheek te maken](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![Kopieer de gedeelde clientbibliotheek om een productieclientbibliotheek te maken](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Kopieer de gedeelde clientbibliotheek om een productieclientbibliotheek te maken.
 

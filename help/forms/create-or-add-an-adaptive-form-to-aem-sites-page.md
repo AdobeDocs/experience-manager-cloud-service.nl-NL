@@ -4,9 +4,9 @@ description: Ontdek hoe u een adaptief formulier kunt maken of toevoegen aan uw 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3123'
+source-wordcount: '3120'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Met AEM Forms kunt u naadloos een formulier toevoegen aan uw AEM Sites-pagina. Z
 
 Met AEM paginaeditor kunt u snel meerdere formulieren maken en toevoegen aan uw AEM Sites-pagina&#39;s. Met AEM Pagina-editor kunnen auteurs van inhoud naadloze ervaringen met het vastleggen van gegevens maken op een sitepagina met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van records en de automatisering van bedrijfsprocessen. Met deze functie kunt u ook verschillende functies van AEM Sites-pagina&#39;s gebruiken, zoals versioning, adressering, vertaling en beheer voor meerdere sites.
 
-AEM Forms Cloud Service biedt adaptieve Form Container en Adaptive Forms - Embed-componenten. Met de component Adaptief Forms - Insluiten kunt u een bestaand adaptief formulier toevoegen of een nieuw formulier maken met de Adaptief Forms Editor.
+AEM Forms Cloud Service biedt adaptieve Form Container en Adaptive Forms - Embed-componenten. Met de component Adaptief Forms - Insluiten kunt u een bestaand adaptief formulier toevoegen of een formulier maken met de Adaptief Forms Editor.
 
 ![Een voorbeeld van een adaptief formulier in een AEM Sites-pagina](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -187,7 +187,7 @@ Een adaptief formulier in AEM Sites-pagina converteren naar een Experience-fragm
    Er wordt een dialoogvenster weergegeven waarin u de container Adaptief formulier kunt converteren naar een nieuw Ervaringsfragment of een bestaand Erviteitsfragment kunt uitbreiden
 1. Stel in het dialoogvenster Converteren naar ervaringsfragmentvariatie waarden in voor de volgende opties:
 
-   * **Handeling:** Selecteer deze optie om een nieuw ervaringsfragment te maken of Toevoegen aan een bestaand ervaringsfragment.
+   * **Handeling:** Selecteer deze optie om een ervaringsfragment te maken of aan een bestaand ervaringsfragment toe te voegen.
    * **Bovenliggend pad:** Geef het pad van de map op waarin u het ervaringsfragment wilt plaatsen. De optie is alleen beschikbaar voor het maken van een nieuw Ervingsfragment.
    * **Template:** Geef het pad van de fragmentsjabloon voor ervaring op. Als u geen fragmentsjabloon voor ervaring hebt, [maken](/help/implementing/developing/extending/experience-fragments.md). De optie is alleen beschikbaar als u een adaptief formulier toevoegt aan een bestaand ervaringsfragment.
    * **Fragmenttitel:** Geef de titel van het ervaringsfragment op. De titel identificeert op unieke wijze een ervaringsfragment

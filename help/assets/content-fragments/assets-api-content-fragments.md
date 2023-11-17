@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service Content Fragments Support in 
 description: Meer informatie over ondersteuning voor Content Fragments in de HTTP API Middelen, een belangrijke Adobe Experience Manager-functie voor headless-levering.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1791'
 ht-degree: 1%
 
 ---
@@ -263,7 +263,7 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 
 Er zijn een paar beperkingen:
 
-* **Inhoudsfragmentmodellen worden momenteel niet ondersteund**: ze kunnen niet worden gelezen of gemaakt. Ontwikkelaars moeten het juiste pad naar het inhoudsfragmentmodel weten om een nieuw inhoudsfragment te kunnen maken of een bestaand inhoudsfragment bij te werken. Momenteel is de enige methode om een overzicht van deze te krijgen door het beleid UI.
+* **Inhoudsfragmentmodellen worden momenteel niet ondersteund**: ze kunnen niet worden gelezen of gemaakt. Ontwikkelaars moeten het juiste pad naar het inhoudsfragmentmodel weten om een bestaand inhoudsfragment te kunnen maken of bijwerken. Momenteel is de enige methode om een overzicht van deze te krijgen door het beleid UI.
 * **Verwijzingen worden genegeerd**. Er wordt momenteel niet gecontroleerd of naar een bestaand inhoudsfragment wordt verwezen. Daarom kan het verwijderen van een inhoudsfragment bijvoorbeeld resulteren in problemen op een pagina die een verwijzing naar het verwijderde inhoudsfragment bevat.
 * **JSON-gegevenstype** De REST API-uitvoer van de *JSON-gegevenstype* is *op tekenreeks gebaseerde uitvoer*.
 

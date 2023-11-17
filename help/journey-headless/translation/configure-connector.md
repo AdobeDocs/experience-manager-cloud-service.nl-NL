@@ -2,9 +2,9 @@
 title: De vertaalintegratie configureren voor inhoud zonder kop
 description: Leer hoe u verbinding AEM maken met een vertaalservice.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -68,9 +68,9 @@ Nadat het schakelaarpakket voor uw aangewezen vertaaldienst wordt geïnstalleerd
 * Of het vertalen van mensen of machines moet worden uitgevoerd
 * Of andere inhoud die aan het inhoudsfragment is gekoppeld, zoals tags, moet worden vertaald
 
-Een nieuwe vertaalconfiguratie maken:
+Een vertaalconfiguratie maken:
 
-1. Klik of tik op **Gereedschappen** -> **Cloud Servicen** -> **Cloud Servicen voor vertaling**.
+1. Klik of tik op **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
    * In dit geval zou een configuratie globaal kunnen worden gemaakt om op alle inhoud, of enkel voor het WKND project van toepassing te zijn.
 

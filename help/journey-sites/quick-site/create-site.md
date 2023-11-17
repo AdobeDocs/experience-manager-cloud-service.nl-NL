@@ -1,17 +1,17 @@
 ---
 title: Site maken van sjabloon
-description: Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.
+description: Leer hoe u snel een AEM site kunt maken met een sitesjabloon.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
 
 # Site maken van sjabloon {#create-site-from-template}
 
-Leer hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon.
+Leer hoe u snel een AEM site kunt maken met een sitesjabloon.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
@@ -20,14 +20,14 @@ In het vorige document van de AEM Snelle reis van de Plaats, [Begrijp Cloud Mana
 * Begrijp hoe AEM Sites en Cloud Manager samenwerken om de ontwikkeling op de voorgrond te vergemakkelijken
 * Ontdek hoe de stap voor aanpassing volledig losgekoppeld is van AEM en geen AEM kennis vereist.
 
-Dit artikel bouwt op die grondbeginselen voort zodat kunt u de eerste configuratiestap nemen en een nieuwe plaats tot stand brengen van een malplaatje dat u later kunt aanpassen gebruikend front-end hulpmiddelen.
+Dit artikel bouwt op die grondbeginselen voort zodat kunt u de eerste configuratiestap nemen en een plaats voor een malplaatje tot stand brengen dat u later kunt aanpassen gebruikend voorste-eindhulpmiddelen.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u te begrijpen hoe u snel een nieuwe AEM site kunt maken met een sitesjabloon. Na het lezen moet u:
+Dit document helpt u te begrijpen hoe u snel een AEM site kunt maken met een sitesjabloon. Na het lezen moet u:
 
 * Begrijp hoe u AEM Sitesjablonen kunt verkrijgen.
-* Leer hoe u een nieuwe site maakt met een sjabloon.
+* Leer hoe u een site maakt met een sjabloon.
 * Zie hoe u de sjabloon van uw nieuwe site kunt downloaden en aan de front-end ontwikkelaar kunt leveren.
 
 ## Verantwoordelijke rol {#responsible-role}
@@ -65,7 +65,7 @@ Nadat u het bestand hebt gedownload, kunt u het net als elk ander pakket uploade
 
 ## Sjabloon van site installeren {#installing-template}
 
-Het is heel eenvoudig om een nieuwe site te maken met een sjabloon.
+Het is eenvoudig om een site te maken met een sjabloon.
 
 1. Onderteken in uw AEM ontwerpomgeving en navigeer naar de Sites-console
 
@@ -171,7 +171,7 @@ U hebt de configuratie nu voltooid. Inhoudsauteurs kunnen nu beginnen met het ma
 Nu u dit gedeelte van de AEM Quick Site Creation-reis hebt voltooid, moet u:
 
 * Begrijp hoe u AEM Sitesjablonen kunt verkrijgen.
-* Leer hoe u een nieuwe site maakt met een sjabloon.
+* Leer hoe u een site maakt met een sjabloon.
 * Zie hoe u de sjabloon van uw nieuwe site kunt downloaden en aan de front-end ontwikkelaar kunt leveren.
 
 Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het document opnieuw te bekijken [Opstelling uw pijpleiding,](pipeline-setup.md) waar u een front-end pijpleiding zult creëren om de aanpassing van het thema van uw plaats te beheren.

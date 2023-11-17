@@ -1,12 +1,12 @@
 ---
 title: Een nieuwe site maken
-description: Leer hoe beheerders AEM gebruiken om een nieuwe site te maken met behulp van sitesjablonen om de stijl en structuur van uw site te definiëren.
+description: Leer hoe beheerders AEM gebruiken om een site te maken met behulp van sitesjablonen om de stijl en structuur van uw site te definiëren.
 feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Een nieuwe site maken {#new-site}
 
-Leer hoe beheerders een nieuwe site maken AEM sitesjablonen gebruiken om de stijl en structuur van uw site te definiëren.
+Leer hoe beheerders een site maken AEM sitesjablonen gebruiken om de stijl en structuur van uw site te definiëren.
 
 {{edge-delivery-authoring}}
 

@@ -2,9 +2,9 @@
 title: Aangepaste machtigingen
 description: Leer hoe u douanetoestemmingen kunt gebruiken om nieuwe profielen van de douanetoestemming met configureerbare toestemmingen tot stand te brengen om toegang tot programma's, pijpleidingen en milieu's voor de gebruikers van de Managers van de Wolk te beperken.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1501'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ In deze sectie worden deze stappen beschreven. Het kan handig zijn te verwijzen 
 
 ### Een nieuw productprofiel maken {#create}
 
-U moet eerst een nieuw productprofiel maken voordat u aangepaste machtigingen kunt toewijzen.
+U moet eerst een productprofiel maken voordat u aangepaste machtigingen kunt toewijzen.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
@@ -123,10 +123,10 @@ De volgende machtigingen zijn beschikbaar voor het maken van aangepaste profiele
 
 | Machtiging | Beschrijving |
 |---|---|
-| Programma maken | Gebruikers toestaan een nieuw programma te maken |
+| Programma maken | Gebruikers toestaan een programma te maken |
 | Programmatoegang | Gebruikers toegang geven tot programma&#39;s |
 | Programmabewerking | Gebruikers mogen programma&#39;s bewerken |
-| Omgeving maken | Gebruikers toestaan een nieuwe omgeving te maken |
+| Omgeving maken | Gebruikers toestaan een omgeving te maken |
 | Omgevingsbewerking | Gebruikers toestaan omgevingen bij te werken en te bewerken |
 | Omgevingslogboeken gelezen | Gebruikers toestaan omgevingslogboeken te lezen |
 | Pipet maken | Gebruikers toestaan nieuwe pijpleidingen te maken |
@@ -145,7 +145,7 @@ Machtigingen op organisatieniveau verwijzen naar machtigingen die altijd worden 
 
 De volgende machtigingen zijn bevoegdheden op organisatieniveau:
 
-* **Programma maken** - Met deze machtiging kunnen gebruikers een nieuw programma in de organisatie maken.
+* **Programma maken** - Met deze machtiging kunnen gebruikers een programma in de organisatie maken.
 * **Toegang tot opslaggegevens** Deze huurder/organisatie niveautoestemming staat gebruikers toe om gebruikersbenaming, wachtwoord en bewaarplaats URL voor toegang te produceren en tot klantenproject bij te dragen.
    * Gebruikersnaam en wachtwoord voor toegang tot opslagplaats zijn hetzelfde voor alle repos op de org, maar de URL van de opslagplaats is uniek voor elk programma.
    * Zie het document [Toegang tot opslagplaatsen](/help/implementing/cloud-manager/managing-code/accessing-repos.md) voor meer informatie .

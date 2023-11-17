@@ -4,9 +4,9 @@ description: Leer hoe u AEM kunt gebruiken om een site te maken met behulp van s
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Leer hoe u een site kunt gebruiken AEM maken met sitesjablonen om de stijl en st
 
 Voordat auteurs van inhoud pagina&#39;s met inhoud kunnen maken, moet de site eerst worden gemaakt. Dit wordt over het algemeen uitgevoerd door een AEM beheerder die de aanvankelijke structuur van de plaats bepaalt. Door het gebruik van sitesjablonen kunt u snel en flexibel sites maken.
 
-Met het gereedschap Snel site maken AEM kunnen niet-ontwikkelaars snel een nieuwe site maken met behulp van sitesjablonen.
+Met het gereedschap AEM Snel site maken kunnen niet-ontwikkelaars snel een geheel nieuwe site maken met behulp van sitesjablonen.
 
 Nadat u de site hebt gemaakt, kunt u met het gereedschap Snel site maken het thema en de opmaak van de AEM site (JavaScript, CSS en statische bronnen) snel aanpassen. Hierdoor kan de front-end ontwikkelaar, die geen kennis van AEM nodig heeft, onafhankelijk van en parallel met de makers van de inhoud werken. De AEM beheerder downloadt eenvoudig het plaatsthema en verstrekt het aan de front-end ontwikkelaar die het gebruikend hun favoriete hulpmiddelen aanpast en dan de veranderingen in de AEM codebewaarplaats vastlegt, die dan wordt opgesteld.
 

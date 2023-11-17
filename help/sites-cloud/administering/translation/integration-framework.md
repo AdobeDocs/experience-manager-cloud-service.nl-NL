@@ -4,9 +4,9 @@ description: Leer hoe te om het Kader van de Integratie van de Vertaling te vorm
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Nadat u een vertaalintegratieframework hebt geconfigureerd, kunt u [koppelen aan
 >
 >Voor een overzicht van de functies voor het vertalen van inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](overview.md).
 
-Eén configuratie van het framework bepaalt hoe pagina-inhoud en elementen worden vertaald. Een nieuwe vertaalconfiguratie maken:
+Eén configuratie van het framework bepaalt hoe pagina-inhoud en elementen worden vertaald. Een vertaalconfiguratie maken:
 
 1. In de [algemeen navigatiemenu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) klikken of tikken **Gereedschappen -> Cloud Servicen - en Cloud Servicen voor vertaling**.
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaalde site of kan globaal zijn.

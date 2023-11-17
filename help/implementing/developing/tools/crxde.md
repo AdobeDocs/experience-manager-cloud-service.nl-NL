@@ -2,9 +2,9 @@
 title: CRXDE Lite gebruiken
 description: CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toegang te krijgen tot en wijzigingen aan te brengen in de opslagruimte in uw lokale ontwikkelomgevingen in de browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,7 @@ Een eigenschap maken met CRXDE Lite:
 
 ## Een bestand maken {#creating-a-file}
 
-Een nieuw bestand maken met CRXDE Lite:
+Een bestand maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
 1. In de [**Deelvenster Exploderer**,](#explorer-pane) Klik met de rechtermuisknop op de component waar u het bestand wilt maken, selecteer **Maken** vervolgens **Bestand maken**.

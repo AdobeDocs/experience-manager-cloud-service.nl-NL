@@ -2,9 +2,9 @@
 title: Pagina's en sjablonen van productcatalogi beheren
 description: Meer informatie over het beheren van productcataloguspagina's en -sjablonen
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Sjablonen kunnen worden bewerkt door de sjabloonpagina rechtstreeks te openen of
 
 ### Categorie- of productspecifieke sjablonen {#specific}
 
-CIF ondersteunt meerdere sjablonen met slechts een paar klikken. Als u een andere sjabloon wilt maken, selecteert u de algemene sjabloon in de desbetreffende categorie en maakt u een nieuwe pagina met de **Maken** handeling.
+CIF ondersteunt meerdere sjablonen met slechts een paar klikken. Als u een andere sjabloon wilt maken, selecteert u de algemene sjabloon in de desbetreffende categorie en maakt u een pagina met de **Maken** handeling.
 
 ![sjabloonpagina maken](assets/create-template-page.png)
 

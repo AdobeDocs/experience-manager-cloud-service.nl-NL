@@ -2,10 +2,10 @@
 title: Projecten beheren
 description: De projecten laten u uw project organiseren door middelen in één entiteit te groeperen die in de console van Projecten kan worden betreden en worden geleid
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 12%
+source-wordcount: '892'
+ht-degree: 11%
 
 ---
 
@@ -31,7 +31,7 @@ Uit de doos, verstrekt AEM deze malplaatjes om van te kiezen wanneer u een proje
 * Product Photo Shoot Project 
 -->
 
-De procedure om een project tot stand te brengen is voor alle projecten hetzelfde. Het verschil tussen de soorten projecten omvat beschikbare [gebruikersrollen](/help/sites-cloud/authoring/projects/overview.md) en [workflows](/help/sites-cloud/authoring/projects/workflows.md).  Een nieuw project maken:
+De procedure om een project tot stand te brengen is voor alle projecten hetzelfde. Het verschil tussen de soorten projecten omvat beschikbare [gebruikersrollen](/help/sites-cloud/authoring/projects/overview.md) en [workflows](/help/sites-cloud/authoring/projects/workflows.md).  Een project maken:
 
 1. Tik of klik in **Projecten** op **Maken** om de wizard **Project maken** te openen:
 1. Selecteer een sjabloon en klik op **Volgende**.
@@ -48,7 +48,7 @@ De procedure om een project tot stand te brengen is voor alle projecten hetzelfd
 
 Aangezien de projecten u toelaten om middelen in één entiteit te groeperen, wilt u middelen aan uw project associëren. Deze bronnen worden **Tegels**. De typen bronnen die u kunt toevoegen, worden beschreven in [Projectblokken](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-Bronnen aan uw project koppelen:
+Om middelen met uw project te associëren:
 
 1. Open uw project vanuit de **Projecten** console.
 1. Tikken/klikken **Tegel toevoegen** en selecteer de tegel die u aan uw project wilt koppelen. U kunt meerdere typen tegels selecteren.
@@ -117,7 +117,7 @@ De projecttijdlijn biedt informatie over wanneer de elementen in het project het
 
 ### Actieve/Inactieve projecten weergeven {#viewing-active-inactive-projects}
 
-Om tussen uw actieve en inactieve projecten, in te schakelen **Projecten** console, klik **Actieve projecten schakelen**. Als er naast het pictogram een vinkje staat, worden de actieve projecten weergegeven.
+Om tussen uw actieve en inactieve projecten, in te schakelen **Projecten** console, klik **Actieve projecten in-/uitschakelen**. Als er naast het pictogram een vinkje staat, worden de actieve projecten weergegeven.
 
 ![Knop Actieve projecten in-/uitschakelen](/help/sites-cloud/authoring/assets/projects-active.png)
 

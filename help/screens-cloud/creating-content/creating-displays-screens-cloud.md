@@ -2,9 +2,9 @@
 title: Weergaven maken en beheren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u weergaven in as a Cloud Service schermen maakt en beheert.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '657'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ U kunt de maprail verplaatsen van het weergeven van alle mappen naar specifieke 
 
 1. Selecteren **Mappen verbergen** om het opnieuw te sluiten.
 
-## Een nieuwe map maken {#create-folder}
+## Een map maken {#create-folder}
 
 U kunt mappen maken om uw weergaven beter te organiseren.
 
@@ -86,7 +86,7 @@ U kunt mappen maken om uw weergaven beter te organiseren.
 
    ![afbeelding](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## Een nieuwe geneste map maken {#nested-folder}
+## Een geneste map maken {#nested-folder}
 
 1. Navigeer naar de overzichtsweergave voor weergaven.
 

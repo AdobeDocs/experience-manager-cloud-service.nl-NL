@@ -2,9 +2,9 @@
 title: Aanbiedingen maken en beheren (console Aanbiedingen)
 description: Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen kunt gebruiken
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ A **Omzetten in ervaring met fragmentvariatie** en workflow zijn geïmplementeer
 
 >[!NOTE]
 >
->U kunt zelf ook een nieuw Experience Fragment maken, de inhoud van uw verouderde aanbieding handmatig overbrengen naar het fragment en vervolgens de verouderde aanbieding verwijderen.
+>U kunt ook zelf een Experience Fragment maken, de inhoud van uw verouderde aanbieding handmatig overbrengen naar het fragment en vervolgens de verouderde aanbieding verwijderen.
 
 >[!CAUTION]
 >

@@ -4,9 +4,9 @@ description: Leer hoe u de krachtige synchronisatieopties van Live Copy kunt con
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2425'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Elke rollout configuratie gebruikt een rollout trekker die de rollout veroorzaak
 
 De volgende lijst maakt een lijst van de rollout configuraties die uit-van-de-doos met AEM worden verstrekt. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie.
 
-Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [een nieuwe rollout-configuratie maken.](#creating-a-rollout-configuration)
+Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [een rollout-configuratie maken.](#creating-a-rollout-configuration)
 
 | Naam | Beschrijving | Trigger | [Synchronisatiehandelingen](#synchronization-actions) |
 |---|---|---|---|

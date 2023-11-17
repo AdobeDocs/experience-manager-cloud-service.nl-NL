@@ -2,9 +2,9 @@
 title: Aangepaste HTTP-headers
 description: Leer hoe te om de kopballen van douaneHTTP te vormen die naar de handelingsmotor, samen met degenen zouden worden verzonden die reeds door CIF worden verzonden.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ Om de kopballen van douaneHTTP te vormen, moet men hen eerst bepalen. De aangepa
 
 U kunt de waarden van de kopballen van HTTP in de pagina van de Configuratie van de Cloud Service voor uw project vormen:
 
-1. Ga naar de configuratiepagina van de Cloud Service in Hulpmiddelen -> Cloud Services -> Configuratie CIF
-1. Een bestaande configuratie openen of een nieuwe configuratie maken
+1. Ga naar de configuratiepagina van de Cloud Service in Hulpmiddelen -> Clouden Services -> CIF Configuratie
+1. Een bestaande configuratie openen of maken
 1. Ga naar het tabblad &quot;Geavanceerd&quot; en zoek het multiveld &quot;Aangepaste HTTP-headers&quot;. U kunt de eerder gedefinieerde kopteksten selecteren en er waarden aan toewijzen.
 
 De componenten die de bovenstaande cloudserviceconfiguratie gebruiken, verzenden deze HTTP-headers met elke GraphQL-aanvraag.

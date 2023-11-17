@@ -2,9 +2,9 @@
 title: Inleiding tot Sandbox-programma's
 description: Leer welke sandboxprogramma's verschillen van productieprogramma's.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Leer welke sandboxprogramma&#39;s verschillen van productieprogramma&#39;s.
 
 Een zandbakprogramma wordt typisch gecreeerd om ten behoeve van opleiding, lopende demo&#39;s, enablement, of het bewijs van concepten (POCs) te dienen en daarom niet bedoeld om levend verkeer te vervoeren.
 
-Een sandboxprogramma is een van de twee soorten programma&#39;s die beschikbaar zijn in AEM Cloud Service, terwijl het andere een [productieprogramma.](introduction-production-programs.md) Zie [Programma&#39;s en programmatypen begrijpen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer informatie over programmatypen.
+Een sandboxprogramma is een van de twee soorten programma&#39;s die beschikbaar zijn in AEM Cloud Service, terwijl het andere een [productieprogramma.](introduction-production-programs.md) Zie [Programma&#39;s en programmatypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer informatie over programmatypen.
 
 ## Automatisch maken {#auto-creation}
 
-Sandboxprogramma&#39;s maken automatisch ontwerp mogelijk. Telkens wanneer u een nieuw sandboxprogramma maakt, wordt Cloud Manager automatisch:
+Sandboxprogramma&#39;s maken automatisch ontwerp mogelijk. Wanneer u een sandboxprogramma maakt, wordt Cloud Manager automatisch:
 
 * Hiermee voegt u AEM Sites en AEM Assets toe als oplossingen in uw programma.
 * Stelt een projectgit-opslagplaats in met een voorbeeldproject dat is gebaseerd op de [AEM Projectarchetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
@@ -64,7 +64,7 @@ Zie [Omgeving bijwerken](/help/implementing/cloud-manager/manage-environments.md
 
 ### Sluimerstand en verwijdering {#hibernation}
 
-De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genormaliseerd. Sandbox-omgevingen worden verwijderd na zes opeenvolgende maanden van hibernatie.
+De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genummerd. Sandbox-omgevingen worden verwijderd na zes opeenvolgende maanden van hibernatie.
 
 Zie [Sluiende en ontsmette zandbakomgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) voor meer informatie over hoe u omgevingen kunt dehiberneren en het automatisch verwijderen van sandboxen.
 

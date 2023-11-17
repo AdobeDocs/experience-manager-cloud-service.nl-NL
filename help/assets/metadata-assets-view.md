@@ -4,9 +4,9 @@ description: Leer hoe u metagegevens beheert in de weergave Middelen. Een beter 
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Bekijk deze video om de reeks stappen weer te geven:
 
 Nadat een formulier is gemaakt, wordt het automatisch toegepast wanneer gebruikers een element van het overeenkomende MIME-type uploaden.
 
-Als u een bestaand formulier opnieuw wilt gebruiken om een nieuw formulier te maken, selecteert u een metagegevensformulier. Klik op **[!UICONTROL Copy]** Geef een naam op in de werkbalk en klik op **[!UICONTROL Confirm]**. U kunt een metagegevensformulier bewerken om het te wijzigen. Wanneer u een formulier wijzigt, wordt dit gebruikt voor elementen die na de wijziging worden geüpload. De bestaande activa blijven ongewijzigd.
+Als u een bestaand formulier opnieuw wilt gebruiken om een formulier te maken, selecteert u een metagegevensformulier. Klik op **[!UICONTROL Copy]** Geef een naam op in de werkbalk en klik op **[!UICONTROL Confirm]**. U kunt een metagegevensformulier bewerken om het te wijzigen. Wanneer u een formulier wijzigt, wordt dit gebruikt voor elementen die na de wijziging worden geüpload. De bestaande activa blijven ongewijzigd.
 
 ## Eigenschapcomponenten {#property-components}
 
@@ -145,7 +145,7 @@ Hieronder ziet u een overzicht van elk type eigenschap en de manier waarop deze 
 * Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
-To reuse an existing form to create a new form, do one of these:
+To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
 

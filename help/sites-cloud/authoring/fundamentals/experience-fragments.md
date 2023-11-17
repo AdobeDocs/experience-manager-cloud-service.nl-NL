@@ -2,9 +2,9 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2043'
 ht-degree: 4%
 
 ---
@@ -279,7 +279,7 @@ U kunt een of meer componenten selecteren om een bouwsteen voor recycling binnen
 
 ### Een bouwblok maken {#creating-a-building-block}
 
-Een nieuw bouwblok maken:
+Een bouwblok maken:
 
 1. In de redacteur van het Fragment van de Ervaring, selecteer de componenten u wilt hergebruiken:
 

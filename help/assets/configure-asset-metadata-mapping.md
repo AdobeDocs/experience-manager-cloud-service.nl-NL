@@ -2,9 +2,9 @@
 title: Metagegevenstoewijzing tussen Workfront en Experience Manager Assets configureren
 description: Wijs de gebieden van activa meta-gegevens tussen Adobe Workfront en Experience Manager as a Cloud Service toepassingen toe. Als u metagegevensvelden toewijst aan Experience Manager Assets en een element verzendt van Workfront naar, kunt u de metagegevens van de toegewezen elementen weergeven in Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '946'
 ht-degree: 2%
 
 ---
@@ -41,12 +41,12 @@ Als u metagegevenstoewijzing wilt instellen voor de velden Projectnaam, Document
 
 1. Selecteer de Experience Manager Assets-integratie en klik op **[!UICONTROL Edit]**.
 
-1. Klik op **[!UICONTROL Metadata]**. In de **[!UICONTROL Assets]** tab, wijs de [!UICONTROL Project] > [!UICONTROL Name] Workfront-veld naar de `wm:projectName` Experience Manager Assets-veld. Als u niet de nauwkeurige gelijke vindt, adviseert Adobe om naar de beste gelijke te zoeken om het gebied van Workfront en van Experience Manager Assets in kaart te brengen. U kunt toewijzingsvelden van verschillende gegevenstypen vermijden. U kunt bijvoorbeeld een Workfront-datumveld toewijzen aan een beschrijvingsmiddelenveld.
-1. Wijs de [!UICONTROL Document] > [!UICONTROL Name] Workfront-veld naar de `wm:documentName` Experience Manager Assets-veld.
+1. Klik op **[!UICONTROL Metadata]**. In de **[!UICONTROL Assets]** tab, wijs de [!UICONTROL Project] > [!UICONTROL Name] Workfront-veld naar de `wm:projectName` Experience Manager Assets. Als u niet de nauwkeurige gelijke vindt, adviseert de Adobe om naar de beste gelijke te zoeken om het gebied van Workfront en van Experience Manager Assets in kaart te brengen. U kunt toewijzingsvelden van verschillende gegevenstypen vermijden. U kunt bijvoorbeeld een Workfront-datumveld toewijzen aan een beschrijvingsmiddelenveld.
+1. Wijs de [!UICONTROL Document] > [!UICONTROL Name] Workfront-veld naar de `wm:documentName` Experience Manager Assets.
 
    ![Toewijzing in Workfront](assets/workfront-metadata-mapping.png)
 
-1. Wijs de [!UICONTROL Document] > [!UICONTROL Description] Workfront-veld naar de `dc:description` Experience Manager Assets-veld.
+1. Wijs de [!UICONTROL Document] > [!UICONTROL Description] Workfront-veld naar de `dc:description` Experience Manager Assets.
 
    >[!VIDEO](https://video.tv.adobe.com/v/344255)
 
@@ -56,13 +56,13 @@ De afbeelding verzenden van Workfront naar Experience Manager Assets:
 
 1. Klik op het pictogram Hoofdmenu ![Menu tonen](assets/show-menu.svg) beschikbaar in de rechterbovenhoek van de Adobe Workfront-toepassing en klik vervolgens op **[!UICONTROL Projects]**.
 
-1. Klikken **[!UICONTROL New Project]** om een nieuw project te maken.
+1. Klikken **[!UICONTROL New Project]** om een project te maken.
 
 1. Klikken **[!UICONTROL Documents]** in het linkervenster beschikbaar, sleept u en selecteert u de afbeelding die u naar Experience Manager Assets wilt verzenden.
 
 1. Klikken **[!UICONTROL Send to]** en kiest u vervolgens de naam van de Experience Manager Assets Essentials-integratie.
 
-   ![Verzenden naar AEM](assets/send-to-aem.png)
+   ![Naar AEM](assets/send-to-aem.png)
 
 1. Kies de doelmap voor het element en klik op **[!UICONTROL Select Folder]**.
 
@@ -72,7 +72,7 @@ De afbeelding verzenden van Workfront naar Experience Manager Assets:
 
 Na [assetmetagegevenstoewijzing configureren in Adobe Workfront](#set-up-metadata-mapping)Als u de juiste metagegevensresultaten voor de afbeelding wilt weergeven, moet u dezelfde toewijzing gebruiken in de as a Cloud Service Experience Manager Assets-toepassing.
 
-Metagegevenstoewijzing wordt uitgevoerd met gebruik van metagegevensschema&#39;s in Experience Manager Assets. U kunt een nieuw toegevoegd of bestaand schema voor metagegevens bewerken. Het metagegevensschema bevat tabbladen en formulieritems binnen tabbladen. U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metagegevensknooppunt in de CRX-opslagruimte. U kunt tabs of formulieritems toevoegen aan het metagegevensschemaformulier. Zie voor meer informatie [Metagegevensschema&#39;s](metadata-schemas.md).
+Metagegevenstoewijzing wordt uitgevoerd met gebruik van metagegevensschema&#39;s in Experience Manager Assets. U kunt een nieuw toegevoegd of bestaand schema voor metagegevens bewerken. Het metagegevensschema bevat tabbladen en formulieritems binnen tabbladen. U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metagegevensknooppunt in de CRX-opslagruimte. U kunt tabs of formulieritems toevoegen aan het metagegevensschema. Zie voor meer informatie [Metagegevensschema&#39;s](metadata-schemas.md).
 
 U kunt als volgt de toewijzing van metagegevens configureren met een nieuw metagegevensformulier in as a Cloud Service Experience Manager Assets:
 
@@ -82,7 +82,7 @@ U kunt als volgt de toewijzing van metagegevens configureren met een nieuw metag
 
 1. Selecteer het schema en klik op **[!UICONTROL Edit]**.
 
-1. (Optioneel) Klik in de formuliereditor voor metagegevensschema op `+` om een nieuw tabblad voor de Workfront-velden te maken.
+1. (Optioneel) Klik in de formuliereditor voor metagegevensschema op `+` om een tabblad te maken voor de Workfront-velden.
 
 1. Klik op de knop **[!UICONTROL Build Form]** en sleep de **[!UICONTROL Single Line Text]** aan het formulier. Klik op de component in het formulier. In de **[!UICONTROL Build Form]** tab:
 
@@ -91,27 +91,27 @@ U kunt als volgt de toewijzing van metagegevens configureren met een nieuw metag
    1. Opgeven `./jcr:content/metadata/wm:projectName` in de **[!UICONTROL Map to property]** veld. Gebruik als richtlijn de volgende sjabloon om de veldtoewijzingen in Experience Manager-elementen te definiëren:
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
-      Tijdens het configureren van toewijzingen in Workfront hebt u toegewezen `wm:projectName` Experience Manager Assets-veld naar project > Workfront-veld een naam geven.
+      Tijdens het configureren van toewijzingen in Workfront, hebt u toegewezen `wm:projectName` Experience Manager Assets-veld naar project > Naam Workfront-veld.
 
       `wm` verwijst naar de naamruimte en `projectName` verwijst naar de titel van de eigenschap. Gebruik de `namespace:propertyTitle` opmaak voor het definiëren van toewijzingen van metagegevensvelden.
 
-      ![Verzenden naar AEM](assets/metadata-schema-mapping.png)
+      ![Naar AEM](assets/metadata-schema-mapping.png)
 
 1. Klik op de knop **[!UICONTROL Build Form]** en sleep de **[!UICONTROL Single Line Text]** aan het formulier. Klik op de component in het formulier. In de **[!UICONTROL Build Form]** tab:
 
    1. Opgeven `Document Name` in de **[!UICONTROL Field Label]** veld.
 
    1. Opgeven `./jcr:content/metadata/wm:documentName` in de **[!UICONTROL Map to property]** veld.
-Tijdens het configureren van toewijzingen in Workfront hebt u toegewezen `wm:documentName` Experience Manager Assets field to Document > Name Workfront field.
+Tijdens het configureren van toewijzingen in Workfront, hebt u toegewezen `wm:documentName` Experience Manager Assets field to Document > Name Workfront field.
 
 1. Klik op de knop **[!UICONTROL Build Form]** en sleep de **[!UICONTROL Multi Line Text]** aan het formulier. Klik op de component in het formulier. In de **[!UICONTROL Build Form]** tab:
 
    1. Opgeven `Document Description` in de **[!UICONTROL Field Label]** veld.
 
    1. Opgeven `./jcr:content/metadata/dc:description` in de **[!UICONTROL Map to property]** veld.
-Tijdens het configureren van toewijzingen in Workfront hebt u toegewezen `dc:description` Experience Manager Assets field to Document > Description Workfront field.
+Tijdens het configureren van toewijzingen in Workfront, hebt u toegewezen `dc:description` Experience Manager Assets field to Document > Description Workfront field.
 
-1. Klikken **[!UICONTROL Save]** om de wijzigingen op te slaan.
+1. Klikken **[!UICONTROL Save]** om de wijzigingen op te slaan
 
    >[!VIDEO](https://video.tv.adobe.com/v/344314)
 

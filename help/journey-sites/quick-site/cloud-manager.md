@@ -2,7 +2,7 @@
 title: Inzicht krijgen in Cloud Manager en de workflow voor snel maken van sites
 description: Leer meer over Cloud Manager en hoe dit het nieuwe proces voor het maken van de Snelle site samenbrengt.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%

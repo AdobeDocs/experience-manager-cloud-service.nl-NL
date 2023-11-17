@@ -3,13 +3,13 @@ title: Doelkiezer voor AEM as a Cloud Service
 description: Met de AEM Doelkiezer kunt u elementen weergeven en selecteren die u als een kopie van het oorspronkelijke element kunt gebruiken.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
+exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
-
 
 # Micro-front-bestemmingskiezer {#Overview}
 
@@ -212,7 +212,7 @@ U kunt de doelkiezer definiëren [eigenschappen](#destination-selector-propertie
 
 ### Voorbeeld 1: Een map maken in de doelkiezer
 
-Met Doelkiezer kunt u een nieuwe map maken om elementen op de desbetreffende locatie te uploaden, te verplaatsen of te kopiëren.
+Met Doelkiezer kunt u een map maken om elementen op de desbetreffende locatie te uploaden, verplaatsen of kopiëren.
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -261,7 +261,7 @@ Het is een voorbeeld van het `optionsFormSetup` eigenschap. U kunt dit gebruiken
 
 ### Nieuwe map maken {#create-new-folder}
 
-Hiermee kunt u een nieuwe map maken in de doelmap van uw [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
+Hiermee kunt u een map maken in de doelmap van uw [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 
 ### Weergavetypen {#types-of-view}
 

@@ -2,9 +2,9 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2978'
+source-wordcount: '2975'
 ht-degree: 4%
 
 ---
@@ -161,7 +161,7 @@ U kunt een nieuwe component toevoegen door de **Componenten hierheen slepen** va
 
 ### Een component invoegen met de middelenbrowser {#inserting-a-component-using-the-assets-browser}
 
-U kunt ook een nieuwe component aan de pagina toevoegen door een element van de [middelenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Hiermee wordt automatisch een nieuwe component van het juiste type gemaakt (en die het element bevat).
+U kunt ook een nieuwe component aan de pagina toevoegen door een element van de [middelenbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). Hiermee wordt automatisch een component van het juiste type gemaakt (en die het element bevat).
 
 Dit gedrag kan voor uw installatie worden gevormd. Zie Een alineasysteem configureren, zodat een componentinstantie wordt gemaakt voor meer informatie. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -261,7 +261,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
 * **Omzetten in een ervaringsfragmentvariatie**
 
-  Hiermee kunt u een nieuwe [ervaren, fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
+  Hiermee kunt u een [ervaren, fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
 
   ![Omzetten in knop Fragment ervaren](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 

@@ -2,9 +2,9 @@
 title: Demo-site maken
 description: Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde
 
 In het vorige document van de AEM Reference Demos Add-on trip, [Programma maken](create-program.md) u nam de eerste configuratiestap om een programma voor testende doeleinden tot stand te brengen en gebruikte een pijpleiding om toe:voegen-op inhoud op te stellen. Nu moet u:
 
-* Begrijp hoe u met Cloud Manager een nieuw programma kunt maken.
+* Begrijp hoe u met Cloud Manager een programma kunt maken.
 * Zorg dat u weet hoe u de Add-on Reference Demos voor het nieuwe programma activeert.
 * Kan een pijpleiding in werking stellen om toe:voegen-op inhoud op te stellen.
 
@@ -25,7 +25,7 @@ In dit artikel wordt de volgende stap van het proces beschreven door een nieuwe 
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe te om een nieuwe plaats tot stand te brengen die op de malplaatjes van de Toevoeging van de Demo van de Verwijzing wordt gebaseerd. Na het lezen moet u:
+Dit document helpt u begrijpen hoe te om een plaats tot stand te brengen die op de malplaatjes van de Toevoeging van de Demo van de Verwijzing wordt gebaseerd. Na het lezen moet u:
 
 * Begrijp hoe te om tot het AEM auteursmilieu toegang te hebben.
 * Weet hoe u een site kunt maken op basis van een sjabloon.

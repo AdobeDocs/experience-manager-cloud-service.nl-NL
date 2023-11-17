@@ -4,9 +4,9 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4077'
+source-wordcount: '4075'
 ht-degree: 0%
 
 ---
@@ -448,9 +448,10 @@ U kunt als volgt de taalkopieën vergelijken met de hoofdtaal:
 
 ## Een bronpagina verplaatsen of de naam ervan wijzigen {#move-source}
 
-Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, wordt er een nieuwe taalkopie gemaakt op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie blijft aanwezig.
+Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, maakt u een taalkopie op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie blijft aanwezig.
 
 De beste praktijk in dit scenario is deze procedure te volgen:
+
 1. Publiceer de taalkopieën die zijn gekoppeld aan de bronpagina die u wilt verplaatsen.
 1. Verwijder ze.
 1. Maak nieuwe taalkopieën van de nieuw verplaatste bronpagina.

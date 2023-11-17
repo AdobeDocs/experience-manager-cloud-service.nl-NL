@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4198'
+source-wordcount: '4196'
 ht-degree: 9%
 
 ---
@@ -31,7 +31,7 @@ Bij het organiseren van een verzameling elementen, bijvoorbeeld alle `Nature` af
 >* Een map Middelen van het type `sling:OrderedFolder`, wordt niet ondersteund bij delen naar Experience Cloud. Selecteer [!UICONTROL Ordered] wanneer u een map maakt.
 >* Experience Manager staat het gebruik niet toe `subassets` woord als de naam van een map. Het is een trefwoord dat is gereserveerd voor knooppunten die subassets voor samengestelde elementen bevatten
 
-1. Navigeer naar de plaats in de map met digitale elementen waar u een nieuwe map wilt maken. Klik op **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
+1. Navigeer naar de plaats in de map met digitale elementen waar u een map wilt maken. Klik op **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
 1. In de **[!UICONTROL Title]** veld, geef een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
 1. Klik op **[!UICONTROL Create]**. De map wordt weergegeven in de map met digitale middelen.
 
@@ -54,7 +54,7 @@ Voer de volgende stappen uit om de ZIP-bestanden te extraheren:
 1. Klik op de knop **[!UICONTROL Extract Archive]** beschikbaar op de actiebalk.
 1. Selecteer de map waarin u de geëxtraheerde elementen wilt opslaan die beschikbaar zijn in de gecomprimeerde map.
 1. Klik op **[!UICONTROL Next]**.
-1. Selecteer het juiste gedrag om conflicten met bestandsnamen tijdens het uitpakken te verwerken. U kunt selecteren om een nieuwe versie van een bestaand element te maken, het element te vervangen, beide elementen in de doelmap te houden of de extractie van het nieuwe element over te slaan.
+1. Selecteer het juiste gedrag om conflicten met bestandsnamen tijdens het uitpakken te verwerken. U kunt selecteren om een versie van een bestaand element te maken, het element te vervangen, beide elementen in de doelmap te houden of de extractie van het nieuwe element over te slaan.
 1. Klik op **[!UICONTROL Extract]**. Het Zip-extractieproces wordt gestart. Nadat het proces is voltooid, kunt u de geëxtraheerde elementen weergeven in de doelmap.
 
    ![ZIP-extractie](assets/zip-extraction.png)

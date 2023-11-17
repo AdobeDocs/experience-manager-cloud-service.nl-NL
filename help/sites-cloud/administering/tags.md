@@ -2,9 +2,9 @@
 title: Tags beheren
 description: Leer hoe u tags kunt beheren in AEM om uw inhoud te ordenen.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2265'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Er zijn een aantal stappen om tags te maken en te gebruiken om uw inhoud te orde
 
 Een naamruimte wordt gebruikt om andere tags te ordenen. Het kan worden beschouwd als de laag-vlakke markering en typisch gebruikt om andere markeringen te groeperen.
 
-1. Als u een nieuwe naamruimte wilt maken, opent u het dialoogvenster [tagconsole](#tagging-console) en tik of klik op de knop **Maken** in de werkbalk en vervolgens **Naamruimte maken**.
+1. Als u een naamruimte wilt maken, opent u de [tagconsole](#tagging-console) en tik of klik op de knop **Maken** in de werkbalk en vervolgens **Naamruimte maken**.
 
    ![Het dialoogvenster Namespace toevoegen](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -101,7 +101,7 @@ Een naamruimte hoeft geen subtags te bevatten. Omdat een naamruimte zelf een tag
 
 Tags worden over het algemeen toegevoegd aan naamruimten.
 
-1. Als u een nieuwe tag wilt maken, opent u het dialoogvenster [taggen-console.](#tagging-console)
+1. Als u een tag wilt maken, opent u de [taggen-console.](#tagging-console)
 
 1. Selecteer de naamruimte waarin u de tag wilt maken. Of selecteer een andere tag om een subtag eronder te maken.
 
@@ -123,11 +123,11 @@ De tag wordt gemaakt en de console wordt bijgewerkt om de nieuwe tag weer te gev
 Met tags kunt u op basis van uw organisatorische behoeften uw eigen taxonomie op flexibele wijze maken.
 
 * U kunt onderliggende tags van bestaande tags maken door de bovenliggende tag in de console te selecteren voordat u de nieuwe tag maakt.
-* Als u een tag maakt zonder een naamruimte of een andere tag te selecteren, maakt u in feite een nieuwe naamruimte.
+* Als u een tag maakt zonder een naamruimte of een andere tag te selecteren, maakt u in feite een naamruimte.
 
 ### Codes publiceren {#publishing-tags}
 
-Net als bij het maken van andere inhoud in AEM, bestaat een tag (of naamruimte) alleen in de ontwerpomgeving. De tags zijn alleen beschikbaar voor gebruikers als u deze publiceert.
+Net als bij het maken van andere inhoud in AEM, bestaat een tag (of naamruimte) alleen in de ontwerpomgeving nadat u een tag hebt gemaakt. De tags zijn alleen beschikbaar voor gebruikers als u deze publiceert.
 
 1. Als u een tag wilt publiceren, opent u de [taggen-console.](#tagging-console)
 

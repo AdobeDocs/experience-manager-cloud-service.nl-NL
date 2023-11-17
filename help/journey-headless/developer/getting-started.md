@@ -2,9 +2,9 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3096'
+source-wordcount: '3095'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Dit integratieniveau bouwt voort op niveau twee door de meeste inhoud in de exte
 
 ### U hebt nog geen externe consument van de inhoud zonder kop, zoals een toepassing voor één pagina (SPA). {#do-not-have-a-spa}
 
-Als u een nieuwe SPA wilt maken die zonder problemen inhoud van AEM verbruikt, kunt u functies zoals Content Fragments gebruiken om uw inhoud zonder kop te beheren en ook een SPA maken met AEM Editor-framework.
+Als u een SPA wilt maken die zonder problemen inhoud van AEM verbruikt, kunt u functies zoals Content Fragments gebruiken om uw inhoud zonder kop te beheren en ook een SPA maken met AEM Editor-framework.
 
 Met behulp van de SPA Editor verbruikt de SPA niet alleen inhoud van AEM, maar is deze ook volledig bewerkbaar binnen AEM van de auteurs van de inhoud, zodat u zowel de mogelijkheid hebt om zonder kop te leveren als in de context te bewerken binnen AEM.
 

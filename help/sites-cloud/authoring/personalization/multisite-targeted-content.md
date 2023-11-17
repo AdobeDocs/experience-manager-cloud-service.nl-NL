@@ -2,9 +2,9 @@
 title: Werken met getargete content in meerdere sites
 description: Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2885'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ In dit document wordt het volgende beschreven:
 
 Als u wilt instellen hoe uw sites gepersonaliseerde inhoud delen, moet u de volgende stappen uitvoeren:
 
-1. [Een nieuw gebied maken](#creating-new-areas) of [een nieuw gebied maken als actieve kopie](#creating-new-areas). Een gebied omvat alle activiteiten die voor een *gebied* van de pagina, dat wil zeggen de locatie op de pagina waarop de component is aangewezen. Als u een nieuw gebied maakt, wordt een leeg gebied gemaakt, terwijl u door een nieuw gebied te maken als een live kopie inhoud kunt overnemen in de sitestructuren.
+1. [Een nieuw gebied maken](#creating-new-areas) of [een gebied maken als actieve kopie](#creating-new-areas). Een gebied omvat alle activiteiten die voor een *gebied* van de pagina, dat wil zeggen de locatie op de pagina waarop de component is aangewezen. Als u een nieuw gebied maakt, wordt een leeg gebied gemaakt, terwijl u door een nieuw gebied te maken als een live kopie inhoud kunt overnemen in de sitestructuren.
 
 1. [Uw site of pagina koppelen](#linking-sites-to-an-area) naar een gebied.
 
@@ -119,9 +119,9 @@ U kunt de overerving op elk gewenst moment opschorten of de overerving volledig 
 
 ### Een nieuw gebied maken in plaats van een nieuw gebied te maken als livecopie {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-In AEM kunt u een nieuw gebied maken of nieuwe gebieden maken als een livecopy. Het creëren van een nieuw gebied groepeert activiteiten en om het even wat die tot die activiteiten behoren, zoals aanbiedingen, ervaringen, etc. U maakt een nieuw gebied als u een volledig aparte set doelinhoud wilt maken of als u een set doelinhoud wilt delen.
+In AEM kunt u een nieuw gebied maken of nieuwe gebieden maken als een livecopy. Het creëren van een nieuw gebied groepeert activiteiten en om het even wat die tot die activiteiten behoren, zoals aanbiedingen, ervaringen, etc. U maakt een gebied wanneer u een volledig aparte set doelinhoud wilt maken of wanneer u een set doelinhoud wilt delen.
 
-Als, echter, u erfenisopstelling via MSM tussen de twee plaatsen hebt, dan kunt u de activiteiten willen erven. In dit geval maakt u een nieuw gebied als een live kopie, waarbij Y een live kopie van X is en dus ook alle activiteiten overneemt.
+Als, echter, u erfenisopstelling via MSM tussen de twee plaatsen hebt, dan kunt u de activiteiten willen erven. In dit geval maakt u een gebied als een live kopie, waarbij Y een live kopie van X is en dus ook alle activiteiten overneemt.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Gebieden kunnen activiteiten en aanbiedingen omvatten. Nadat u een gebied in é�
 >
 >Het standaardgebied Master Area wordt standaard samengevouwen wanneer u op de naam van een merk tikt of erop klikt **tot** u maakt een ander gebied. Wanneer u vervolgens een merk selecteert in de console **Activiteit** of **Aanbiedingen**, ziet u de console **Gebied**.
 
-Een nieuw gebied maken:
+Een gebied maken:
 
 1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
 1. Tik of klik op **Gebied maken**.

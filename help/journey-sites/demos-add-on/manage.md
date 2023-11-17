@@ -2,9 +2,9 @@
 title: Uw demo-sites beheren
 description: Leer meer over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ U kunt sjablonen op dezelfde manier verwijderen onder de kop **Sitesjablonen ver
 Gefeliciteerd! U hebt de reis AEM de Toelage van de Demos van de Verwijzing voltooid! Nu moet u:
 
 * U hebt een basiskennis van Cloud Manager en begrijpt hoe pijpleidingen inhoud en configuratie leveren aan AEM.
-* Begrijp hoe u met Cloud Manager een nieuw programma kunt maken.
+* Begrijp hoe u met Cloud Manager een programma kunt maken.
 * Weet hoe te om toe:voegen-aan van de Demos van de Verwijzing voor het nieuwe programma te activeren en een pijpleiding in werking te stellen om toe:voegen-op inhoud op te stellen.
 * Begrijp hoe te om tot het AEM auteursmilieu toegang te hebben om een plaats tot stand te brengen die op een malplaatje wordt gebaseerd.
 * Begrijp hoe te om tot de Hulpmiddelen van de Demo van de Zelfbediening toegang te hebben.

@@ -2,9 +2,9 @@
 title: Authoring van getargete content met targetingmodus
 description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen te creëren
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '5409'
+source-wordcount: '5408'
 ht-degree: 5%
 
 ---
@@ -102,7 +102,7 @@ Een activiteit toevoegen:
 
    >[!NOTE]
    >
-   >Wanneer u een nieuwe activiteit creeert en een de wolkenconfiguratie van Adobe Target verbonden aan de pagina of één van zijn ouder hebt, AEM automatisch Adobe Target als motor veronderstelt.
+   >Wanneer u een activiteit creeert en een de wolkenconfiguratie van Adobe Target verbonden aan de pagina of één van zijn ouder hebt, AEM automatisch Adobe Target als motor veronderstelt.
 
 1. In de **Targeting** vervolgkeuzemenu voor de engine, selecteert u de doelengine.
 

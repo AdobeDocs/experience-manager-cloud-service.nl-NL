@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Meer informatie over Inhoud zoeken en indexeren in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Indexdefinities kunnen als volgt in drie gevallen van primair gebruik worden ing
 2. **Bijwerken** een bestaande indexdefinitie door een nieuwe versie toe te voegen.
 3. **Verwijderen** een indexdefinitie die niet meer nodig is.
 
-Voor zowel de punten 1 als 2 hierboven moet u een nieuwe indexdefinitie maken als onderdeel van uw aangepaste codebasis in het respectievelijke releaseprogramma voor Cloud Manager. Zie de klasse [Distribueren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentatie.
+Voor zowel de punten 1 als 2 hierboven moet u een indexdefinitie maken als onderdeel van uw aangepaste codebasis in het respectievelijke releaseprogramma voor Cloud Manager. Zie de klasse [Distribueren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentatie.
 
 ## Indexnamen {#index-names}
 

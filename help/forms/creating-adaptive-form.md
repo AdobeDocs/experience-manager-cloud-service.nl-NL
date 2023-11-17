@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -62,13 +62,13 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
 * **Machtigingen**: Voeg uw gebruikers toe aan [!DNL forms-users] om hun machtigingen te verlenen voor het maken van een adaptief formulier. Zie voor een gedetailleerde lijst met formulierspecifieke gebruikersgroepen [Groepen en machtigingen](forms-groups-privileges-tasks.md).
 
-* **Een adaptief formulierthema**: Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. U kunt [een nieuw thema maken](themes.md) of [een bestaand thema importeren](import-export-forms-templates.md#uploading-a-theme). U kunt ook de [nieuwste archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) voor sommige voorbeeldthema&#39;s.
+* **Een adaptief formulierthema**: Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. U kunt [een thema maken](themes.md) of [een bestaand thema importeren](import-export-forms-templates.md#uploading-a-theme). U kunt ook de [nieuwste archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) voor sommige voorbeeldthema&#39;s.
 
 * **Een adaptieve formuliersjabloon**: Een sjabloon biedt een basisstructuur en definieert de vormgeving (lay-outs en stijlen) van een adaptief formulier. Het heeft vooraf opgemaakte componenten die bepaalde eigenschappen en inhoudsstructuur bevatten. Het biedt ook de opties om een thema en een verzendactie te definiëren. In het thema wordt de actie look and feel and submit gedefinieerd voor de actie die moet worden ondernomen bij het verzenden van een adaptief formulier. Bijvoorbeeld, verzendend de verzamelde gegevens naar een gegevensbron. De cloudservice ondersteunt twee typen sjablonen:
 
-   * **Bewerkbare sjabloon**: U kunt [een nieuwe](template-editor.md) of [een bestaande bewerkbare sjabloon importeren](migrate-to-forms-as-a-cloud-service.md). U kunt ook de [nieuwste archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) om een aantal voorbeelden bewerkbare sjablonen te verkrijgen.
+   * **Bewerkbare sjabloon**: U kunt [een](template-editor.md) of [een bestaande bewerkbare sjabloon importeren](migrate-to-forms-as-a-cloud-service.md). U kunt ook de [nieuwste archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) om een aantal voorbeelden bewerkbare sjablonen te verkrijgen.
 
-   * **Statische sjabloon**: Dit zijn verouderde sjablonen en worden alleen aanbevolen voor klanten die migreren uit Adobe Managed Services (AMS) en AEM Forms-installaties op locatie (AEM 6.5 Forms of eerder). Deze laten u uw bestaande investering in statische malplaatjes blijven gebruiken. Als u een nieuw adaptief formulier maakt, is het raadzaam een bewerkbare sjabloon te gebruiken.
+   * **Statische sjabloon**: Dit zijn verouderde sjablonen en worden alleen aanbevolen voor klanten die migreren uit Adobe Managed Services (AMS) en AEM Forms-installaties op locatie (AEM 6.5 Forms of eerder). Deze laten u uw bestaande investering in statische malplaatjes blijven gebruiken. Wanneer u een adaptief formulier maakt, gebruikt u een bewerkbare sjabloon.
 
 
 
@@ -89,7 +89,7 @@ U hebt het volgende nodig om een adaptief formulier te maken:
      >
      > U kunt ook [!UICONTROL Document of Record] sjabloon met een Adaptieve Forms-editor. Zie voor meer informatie [Document met ondersteuning voor records in de Adaptive Form Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
-   * Wanneer u een statische sjabloon selecteert, zijn de opties voor gegevens, stijl, verzending, levering en voorvertoning niet beschikbaar. Als u een nieuw adaptief formulier maakt, is het raadzaam een bewerkbare sjabloon te gebruiken.
+   * Wanneer u een statische sjabloon selecteert, zijn de opties voor gegevens, stijl, verzending, levering en voorvertoning niet beschikbaar. Wanneer u een adaptief formulier maakt, gebruikt u een bewerkbare sjabloon.
 
 1. In de **[!UICONTROL Style]** selecteert u een thema:
 

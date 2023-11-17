@@ -4,9 +4,9 @@ description: Configureren [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1654'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Metagegevenstoewijzing tussen Adobe Workfront-documenten en -elementen wordt ged
 Voer de volgende stappen uit om de toewijzingen te configureren:
 
 1. Navigeren naar **Gereedschappen** > **Activa** > **Metagegevensschema&#39;s**.
-1. Selecteer het schema voor metagegevens dat u wilt bewerken en klik op **Bewerken** of maak een geheel nieuw metagegevensschema.
+1. Selecteer het schema voor metagegevens dat u wilt bewerken en klik op **Bewerken** of maak een volledig nieuw metagegevensschema.
 1. Selecteer het formulierveld voor het metagegevensschema dat u wilt bewerken en selecteer **Instellingen** in het rechterdeelvenster.
 1. In [!DNL Workfront] Selecteer de naam van het veld Aangepast formulier [!DNL Workfront] veld dat u wilt toewijzen aan de geselecteerde AEM-eigenschap. Beschikbare opties zijn:
 
