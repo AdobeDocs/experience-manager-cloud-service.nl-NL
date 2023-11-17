@@ -4,9 +4,9 @@ description: Leer over het gebruiken van de Tovenaar van het Exemplaar van de Ta
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,15 @@ De wizard Taalkopie is een begeleide ervaring voor het maken en van instrumenten
 
 De wizard openen:
 
-1. Selecteer een pagina in de siteconsole en tik of klik op **Maken** en selecteert u **Taalkopie**.
+1. Selecteer een pagina in de siteconsole en selecteer **Maken** en selecteert u **Taalkopie**.
 
    ![Taalkopie maken van wizard](../assets/language-copy-wizard.png)
 
-1. De wizard wordt geopend voor de **Bron selecteren** stap waarmee u pagina&#39;s kunt toevoegen/verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten. Selecteer de pagina&#39;s die u wilt opnemen en tik of klik op **Volgende**.
+1. De wizard wordt geopend voor de **Bron selecteren** stap waarmee u pagina&#39;s kunt toevoegen/verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten. Selecteer de pagina&#39;s die u wilt opnemen en selecteer **Volgende**.
 
    ![Pagina&#39;s toevoegen met de wizard](../assets/language-copy-wizard-add-pages.png)
 
-1. De **Configureren** Met de stap van de wizard kunt u talen toevoegen of verwijderen en een vertaalmethode selecteren. Tik of klik op **Volgende**.
+1. De **Configureren** Met de stap van de wizard kunt u talen toevoegen of verwijderen en een vertaalmethode selecteren. Selecteren **Volgende**.
 
    ![Stap configureren van wizard](../assets/language-copy-wizard-configure.png)
 
@@ -41,7 +41,7 @@ De wizard openen:
    >
    >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [Het Kader voor de Integratie van de Vertaling vormen](integration-framework.md).
 
-1. In de **Vertalen** kunt u kiezen tussen het maken van alleen de structuur, het maken van een nieuw vertaalproject of het toevoegen aan een bestaand vertaalproject.
+1. In de **Vertalen** kunt u kiezen tussen het maken van alleen de structuur, het maken van een vertaalproject of het toevoegen aan een bestaand vertaalproject.
 
    >[!NOTE]
    >
@@ -49,6 +49,6 @@ De wizard openen:
 
    ![Vertaalstap van wizard](../assets/language-copy-wizard-translate.png)
 
-1. De **Maken** de knop beëindigt de wizard. Tik of klik op **Gereed** om de wizard of **Openen** om het resulterende vertaalproject te bekijken.
+1. De **Maken** de knop beëindigt de wizard. Selecteren **Gereed** om de wizard of **Openen** om het resulterende vertaalproject te bekijken.
 
    ![wizard End](../assets/language-copy-wizard-done.png)

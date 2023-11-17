@@ -2,9 +2,9 @@
 title: Uw pijplijn instellen
 description: Maak een front-end pijplijn om de aanpassing van het thema van uw site te beheren.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Op deze manier kan de ontwikkeling aan de voorzijde afzonderlijk van en parallel
 
 1. Aanmelden bij Adobe Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Tik of klik op de knop die u wilt beheren. Als u slechts met AEM as a Cloud Service begint, hebt u waarschijnlijk slechts één programma beschikbaar.
+1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer de map die u wilt beheren. Als u slechts met AEM as a Cloud Service begint, hebt u waarschijnlijk slechts één programma beschikbaar.
 
    ![Een programma selecteren in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -71,7 +71,7 @@ Noteer de naam van het programma dat u hebt geopend of kopieer de URL. U moet di
 
 Nu u Cloud Manager hebt benaderd, kunt u een pijplijn voor front-end implementatie maken.
 
-1. In de **Pijpleidingen** tikken of klikken op de pagina Cloud Manager **Toevoegen** knop.
+1. In de **Pijpleidingen** van de pagina Cloud Manager selecteert u de optie **Toevoegen** knop.
 
    ![Pijpleidingen](assets/pipelines-add.png)
 
@@ -83,7 +83,7 @@ Nu u Cloud Manager hebt benaderd, kunt u een pijplijn voor front-end implementat
 
    ![Pijpconfiguratie toevoegen](assets/add-pipeline-configuration.png)
 
-1. Tik of klik op **Doorgaan**.
+1. Selecteren **Doorgaan**.
 
 1. Op de **Broncode** tab:
    * Selecteren **Code frontend** als het type code dat moet worden geïmplementeerd.
@@ -94,7 +94,7 @@ Nu u Cloud Manager hebt benaderd, kunt u een pijplijn voor front-end implementat
 
    ![Broncode-info voor het toevoegen van pijpleidingen](assets/add-pipeline-source-code.png)
 
-1. Tik of klik op **Opslaan**.
+1. Selecteren **Opslaan**.
 
 De nieuwe pijpleiding wordt gecreeerd en zichtbaar in **Pijpleidingen** in het venster Cloud Manager. Tik op de ellips nadat u de naam van de pijplijn hebt weergegeven. U kunt dan desgewenst nog meer details bewerken of weergeven.
 

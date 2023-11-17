@@ -2,9 +2,9 @@
 title: Audiences beheren
 description: Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-account maken, organiseren en beheren of segmenten voor ContextHub beheren
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '932'
 ht-degree: 9%
 
 ---
@@ -33,8 +33,8 @@ U kunt een segment ContextHub of in de console van het publiek of tijdens het he
 
 Om een segment ContextHub in de console van het publiek tot stand te brengen:
 
-1. Klik of tik in de navigatieconsole op **Personalisatie**. Klikken of tikken **Soorten publiek**.
-1. Tik of klik op **ContextHub-segment maken**.
+1. Selecteer in de navigatieconsole de optie **Personalisatie**. Selecteren **Soorten publiek**.
+1. Selecteren **ContextHub-segment maken**.
 
    ![Een segment maken](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -60,20 +60,20 @@ Wanneer u meer dan één regel gebruikt, worden deze regels gecombineerd door de
 
 Een Adobe Target-publiek maken:
 
-1. Klik of tik in de navigatieconsole op **Personalisatie**. Klikken of tikken **Soorten publiek**.
+1. Selecteer in de navigatieconsole de optie **Personalisatie**. Selecteren **Soorten publiek**.
 
    ![Navigeren naar publiek](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. Tik of klik in de console Soorten publiek op **Maken** en vervolgens **Doelpubliek maken**.
+1. Selecteer in de console Soorten publiek de optie **Maken** en vervolgens **Doelpubliek maken**.
 
    ![Doelgroep maken](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. In de **Adobe Target-configuratie** Selecteer de doelconfiguratie en tik of klik op **OK**.
-1. Tik of klik in het gebied Rule#1 op het kenmerktype en voer in de velden die beschikbaar zijn kenmerkgegevens in. Als u klaar bent, selecteert u het vinkje rechts van het kenmerk om het op te slaan. Zie [Kenmerken en de bijbehorende opties](#attributes-and-their-options) voor informatie over alle kenmerken.
+1. In de **Adobe Target-configuratie** selecteert u de doelconfiguratie en selecteert u **OK**.
+1. In het gebied Rule#1, selecteer het attributentype en ga om het even welke attributeninformatie op de gebieden in die beschikbaar zijn. Als u klaar bent, selecteert u het vinkje rechts van het kenmerk om het op te slaan. Zie [Kenmerken en de bijbehorende opties](#attributes-and-their-options) voor informatie over alle kenmerken.
 1. Klik op **Regel toevoegen** om nog een regel toe te voegen. Voer zoveel regels in als nodig is. De regels worden gecombineerd met de booleaanse operator AND, wat betekent dat de doelgroep aan alle vereisten van elke regel moet voldoen om voor een activiteit in aanmerking te komen.
-1. Tik of klik op **Volgende**.
-1. Voer een naam in voor het publiek en tik of klik op **Opslaan**.
-1. Tik of klik op **Opslaan**. Uw publiek wordt vermeld in de lijst van het Publiek.
+1. Selecteren **Volgende**.
+1. Voer een naam in voor het publiek en selecteer **Opslaan**.
+1. Selecteren **Opslaan**. Uw publiek wordt vermeld in de lijst van het Publiek.
 
 ### Kenmerken en hun opties {#attributes-and-their-options}
 
@@ -97,6 +97,6 @@ U kunt het richten regels voor elk van de volgende attributen tot stand brengen:
 
 U kunt om het even welk publiek ContextHub van de console van het Publiek uitgeven. U kunt ook het Adobe Target-publiek bewerken, maar alleen het publiek dat is gemaakt in AEM:
 
-1. Klik of tik in de navigatieconsole op **Personalisatie**. Klikken of tikken **Soorten publiek**.
-1. Tik of klik op het pictogram naast het ContextHub-segment dat u wilt bewerken en tik of klik op **Bewerken**.
+1. Selecteer in de navigatieconsole de optie **Personalisatie**. Selecteren **Soorten publiek**.
+1. Selecteer het pictogram naast het segment ContextHub u wilt uitgeven, en selecteren **Bewerken**.
 1. Breng om het even welke veranderingen in de segmentredacteur aan. Zie de documentatie ContextHub voor meer informatie. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

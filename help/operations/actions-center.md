@@ -1,10 +1,10 @@
 ---
 title: Handelingencentrum
-description: Gebruik het actiecentrum om gemakkelijk actie te ondernemen tegen incidenten en andere belangrijke informatie
+description: Gebruik het actiecentrum om incidenten en andere belangrijke informatie op een gemakkelijke manier aan te pakken
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ In het Centrum van Acties, kunt u een lijst van andere recente berichten zien. M
 
 ![Lijst met meldingen](/help/operations/assets/notification-list.png)
 
-In de meeste gevallen moet de popup alle noodzakelijke context bieden om het probleem op te lossen. Als er echter vragen zijn voor ondersteuning van Adobe, kunt u op de knop **Contact opnemen met ondersteuning** in de pop-up. Dit zal omhoog een vorm van waar u de vraag kunt beschrijven en het voorleggen om een kaartje van de Steun te creëren, dat ook een verwijzing naar de specifieke kennisgeving zal omvatten zodat heeft een Ingenieur van de Steun van Adobe de relevante context.
+In de meeste gevallen moet de popup alle noodzakelijke context bieden om het probleem op te lossen. Als er echter vragen zijn voor ondersteuning van Adoben, kunt u op de knop **Contact opnemen met ondersteuning** in de pop-up. Dit zal omhoog een vorm van waar u de vraag kunt beschrijven en het voorleggen om een kaartje van de Steun te creëren, dat ook een verwijzing naar de specifieke kennisgeving zal omvatten zodat heeft een Ingenieur van de Steun van de Adobe de relevante context.
 
 ![Contact opnemen met ondersteuning 1](/help/operations/assets/contact-support1.png)
 

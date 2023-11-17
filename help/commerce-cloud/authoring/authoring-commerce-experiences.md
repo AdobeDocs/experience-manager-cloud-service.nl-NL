@@ -2,9 +2,9 @@
 title: Ervaringen op het gebied van authoringhandel
 description: Leer hoe u op efficiënte wijze ervaringen met betrekking tot handel kunt maken en opbouwen door toegang te krijgen tot productgegevens en inhoud zonder de context te verlaten.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Hierdoor wordt een koppeling voor plaatsaanduidingen gemaakt die wordt vervangen
 
 ### Gekoppelde productinhoud openen {#associated-content}
 
-Als de Universele Redacteur 1:n producten op een pagina erkent, zal het zijpaneel automatisch het lusje &quot;Bijbehorende Inhoud van de Handel tonen&quot;. Op dit tabblad hebben auteurs snel toegang tot AEM inhoud die is gelabeld met het product (zie [productgegevens verrijken met de bijbehorende AEM-inhoud](./enrich-product-associated-content.md) voor meer informatie ) . Op dit tabblad kunt u vervolgkeuzelijsten gebruiken om te filteren op inhoudstype en specifieke producten als er meerdere producten op de pagina staan. Het gebruik van de inhoud werkt precies hetzelfde als het gebruik van inhoud op het tabblad &quot;Middelen&quot;.
+Als de Universele Redacteur 1:n producten op een pagina erkent, zal het zijpaneel automatisch het lusje &quot;Bijbehorende Inhoud van de Handel tonen&quot;. Op dit tabblad hebben auteurs snel toegang tot AEM inhoud die is gelabeld met het product (zie [productgegevens verrijken met de bijbehorende AEM-inhoud](./enrich-product-associated-content.md) voor meer informatie ) . Op dit tabblad vindt u vervolgkeuzelijsten waarmee u kunt filteren op inhoudstype en specifieke producten als er meerdere producten op de pagina staan. Het gebruik van de inhoud werkt precies hetzelfde als het gebruik van inhoud op het tabblad &quot;Middelen&quot;.
 
 ![Tabblad Productgegevens](../assets/authoring/associated-commerce-content-tab.png)
 

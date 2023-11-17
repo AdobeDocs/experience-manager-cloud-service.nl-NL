@@ -2,10 +2,10 @@
 title: Een configuratie maken - installatie zonder kop
 description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloos in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 0%
+source-wordcount: '325'
+ht-degree: 1%
 
 ---
 
@@ -25,8 +25,8 @@ Als u vertrouwd bent met [paginasjablonen in een volledige AEM-implementatie,](/
 
 Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, of zeer seldomly wanneer een nieuwe werkruimte voor het organiseren van uw Modellen van de Inhoud wordt vereist. Voor deze gids aan de slag, moeten wij slechts één configuratie tot stand brengen.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen -> Algemeen -> Configuratiebrowser**.
-1. Een **Titel** en **Naam** voor uw configuratie.
+1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen > Algemeen > Configuratiebrowser**.
+1. Geef een **Titel** en **Naam** voor uw configuratie.
    * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
       * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
@@ -37,7 +37,7 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
 
    ![Configuratie maken](../assets/create-configuration.png)
 
-1. Tik of klik op **Maken**
+1. Selecteer **Maken**
 
 Indien nodig kunt u meerdere configuraties maken. Configuraties kunnen ook worden genest.
 

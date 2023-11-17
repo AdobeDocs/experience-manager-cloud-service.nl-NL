@@ -1,15 +1,15 @@
 ---
-title: AEM
+title: Gereedschap AEM
 description: Het gereedschap AEM repo is een eenvoudige oplossing voor het overbrengen van JCR-inhoud tussen uw lokale bestandssysteem en de AEM server via een opdrachtregel die vergelijkbaar is met FTP.
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
 
 ---
 
-# AEM {#aem-repo-tool}
+# Gereedschap AEM {#aem-repo-tool}
 
 Het gereedschap AEM repo is een eenvoudige oplossing voor het overbrengen van JCR-inhoud tussen uw lokale bestandssysteem en de AEM server via een opdrachtregel die vergelijkbaar is met FTP. Het gereedschap AEM herhalen is vergelijkbaar met het gereedschap [Jackrabbit FileVault Maven-plug-in](https://jackrabbit.apache.org/filevault-package-maven-plugin), maar is sneller, heeft minimale gebiedsdelen, en is een eenvoudig bash manuscript.
 
@@ -19,7 +19,7 @@ Dit hulpmiddel vereenvoudigt de overdracht van dossiers voor de ontwikkelaar en 
 
 Voor een bepaald pad binnen een `jcr_root` De FileVault-structuur op het bestandssysteem maakt met het AEM Repo Tool een pakket met één filter voor de gehele substructuur en plaatst dat op de server (vergelijkbaar met FTP) `put`), haalt het op van de server ( `get`) of vergelijkt de verschillen ( `status` en `diff`).
 
-Het gereedschap biedt geen ondersteuning voor meerdere filterpaden of FileVault-paden `filter.xml`.
+Het gereedschap ondersteunt geen meerdere filterpaden of FileVault-paden `filter.xml`.
 
 >[!CAUTION]
 >
@@ -29,7 +29,7 @@ Het gereedschap biedt geen ondersteuning voor meerdere filterpaden of FileVault-
 
 De [AEM Repo Tool is beschikbaar op GitHub via deze koppeling](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) samen met gedetailleerde installatie- en gebruiksinstructies.
 
-Als u wenst om de bron van het AEM Hulpmiddel van de Repo te downloaden, zie het hieronder verbonden project GitHub.
+Als u de bron van het Hulpmiddel van de AEM wilt downloaden, zie het hieronder verbonden project GitHub.
 
 CODE VOOR GITHUB
 

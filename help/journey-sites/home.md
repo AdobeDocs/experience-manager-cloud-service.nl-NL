@@ -2,9 +2,9 @@
 title: AEM Sites-reizen
 description: Begin hier voor een overzicht van de geleide reizen beschikbaar om AEM krachtige plaatseigenschappen te begrijpen.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Begin hier voor een overzicht van de geleide reizen beschikbaar om AEM krachtige
 
 ## AEM Documentenreizen {#documentation-journeys}
 
-[Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+[Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende, ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als je wilt weten hoe Adobe zaken met AEM Sites kan oplossen, kun je beginnen met AEM Sites Jourards.
+Als je wilt weten hoe Adobe aanbeveelt om zakelijke kwesties met AEM Sites op te lossen, dan is AEM Sites Jourards de plek waar je moet beginnen.
 
 ## Soorten publiek {#audiences}
 
@@ -31,7 +31,7 @@ De Reizen van Plaatsen worden ontworpen voor variërende karakters, die de verei
 
 Een individuele reis wordt bepaald voor een specifiek persoon of een publiek, maar ook bepaalt extra karakters waarmee de lezer interactie aangaat.
 
-Informatie over reizen kan natuurlijk nuttig zijn voor meerdere personen, maar een reis is gericht op een bepaalde persoon en sommige informatie kan overbodig zijn voor bepaalde rollen.
+Informatie over reizen kan nuttig zijn voor meerdere personen, maar een reis is gericht op een specifieke persoon en sommige informatie kan voor bepaalde rollen overbodig zijn.
 
 ## Sites-reizen {#sites-journeys}
 

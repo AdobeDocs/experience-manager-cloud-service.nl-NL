@@ -2,9 +2,9 @@
 title: Tags beheren
 description: Leer hoe u tags kunt beheren in AEM om uw inhoud te ordenen.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2265'
+source-wordcount: '2210'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Er zijn een paar technische details om in mening te houden wanneer het creëren 
    * Een tag die geen containertag is, wordt een bladtag genoemd.
    * Een naamruimte van een tag kan een blad- of containertag zijn.
 
-Raadpleeg het document voor meer technische details over hoe tags werken [AEM Tagingframework.](/help/implementing/developing/introduction/tagging-framework.md)
+Voor meer technische details over hoe markeringen werken, zie [Kader voor tags AEM](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Tagingsconsole {#tagging-console}
 
@@ -62,14 +62,14 @@ De coderingsconsole wordt gebruikt om labels en hun taxonomieën te maken en te 
 De tagconsole openen:
 
 1. Meld u aan bij een ontwerpomgeving met beheerdersrechten.
-1. Selecteer in het algemene navigatiemenu de optie **`Tools`** -> **`General`** ->
+1. Selecteer in het algemene navigatiemenu de optie **`Tools`** > **`General`** ->
    **`Tagging`**.
 
 ![De tagconsole in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
 
 ## Nieuwe tags maken {#creating-new-tags}
 
-Er zijn een aantal stappen om tags te maken en te gebruiken om uw inhoud te ordenen.
+Er zijn verschillende stappen om tags te maken en te gebruiken om uw inhoud te ordenen.
 
 1. [Een naamruimte maken voor uw tags](#creating-namespaces) (of kies een bestaande die u wilt hergebruiken).
 1. [Maak een nieuwe tag.](#creating-tags)
@@ -79,7 +79,7 @@ Er zijn een aantal stappen om tags te maken en te gebruiken om uw inhoud te orde
 
 Een naamruimte wordt gebruikt om andere tags te ordenen. Het kan worden beschouwd als de laag-vlakke markering en typisch gebruikt om andere markeringen te groeperen.
 
-1. Als u een naamruimte wilt maken, opent u de [tagconsole](#tagging-console) en tik of klik op de knop **Maken** in de werkbalk en vervolgens **Naamruimte maken**.
+1. Als u een naamruimte wilt maken, opent u de [tagconsole](#tagging-console) en selecteert u de **Maken** in de werkbalk en vervolgens **Naamruimte maken**.
 
    ![Het dialoogvenster Namespace toevoegen](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -89,7 +89,7 @@ Een naamruimte wordt gebruikt om andere tags te ordenen. Het kan worden beschouw
    * **Naam** - Als er geen naam is opgegeven, wordt een geldige knooppuntnaam gemaakt op basis van de **Titel**. Zie het document [Kader voor tags AEM](/help/implementing/developing/introduction/tagging-framework.md#tagid) voor meer informatie .
    * **Beschrijving** - Een beschrijving van de naamruimte (optioneel)
 
-1. Tik eenmaal op de vereiste informatie of klik op **Maken**.
+1. Nadat de vereiste informatie is ingevoerd, selecteert u **Maken**.
 
 De naamruimte wordt gemaakt. Merk op dat in de etiketterende console namespaces op het laagste niveau (bij de uiterst linkerkolom in de console) zijn en door omslagpictogrammen worden vertegenwoordigd, die op hun aard als &quot;container&quot;of groepering van andere markeringen wijzen.
 
@@ -103,9 +103,9 @@ Tags worden over het algemeen toegevoegd aan naamruimten.
 
 1. Als u een tag wilt maken, opent u de [taggen-console.](#tagging-console)
 
-1. Selecteer de naamruimte waarin u de tag wilt maken. Of selecteer een andere tag om een subtag eronder te maken.
+1. Selecteer de naamruimte waar u de tag wilt maken. Of selecteer een andere tag om een subtag eronder te maken.
 
-1. Tik of klik op de knop **Maken** op de werkbalk **Tag maken**.
+1. Selecteer de **Maken** op de werkbalk **Tag maken**.
 
 1. De **Tag maken** wordt geopend. Geef de vereiste informatie voor de nieuwe tag op.
 
@@ -116,7 +116,7 @@ Tags worden over het algemeen toegevoegd aan naamruimten.
 
    ![Tagdialoogvenster maken](assets/create-tag.png)
 
-1. Tik of klik op **Verzenden**.
+1. Selecteren **Verzenden**.
 
 De tag wordt gemaakt en de console wordt bijgewerkt om de nieuwe tag weer te geven.
 
@@ -135,7 +135,7 @@ Net als bij het maken van andere inhoud in AEM, bestaat een tag (of naamruimte) 
 
    ![Tags selecteren in de console](assets/select-tags.png)
 
-1. De **Tag publiceren** vraagt om een bevestiging om de geselecteerde tags te publiceren. Tik of klik op **Publiceren**.
+1. De **Tag publiceren** vraagt om een bevestiging om de geselecteerde tags te publiceren. Selecteren **Publiceren**.
 
    ![De bevestigingsmodus van de publicatiemarkering](assets/publish-tag.png)
 
@@ -153,7 +153,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## Tags beheren {#managing-tags}
 
-Er zijn een aantal acties die u kunt uitvoeren op bestaande tags en naamruimten om deze te beheren en te ordenen. Selecteer gewoon een tag of naamruimte in het dialoogvenster [tagconsole](#tagging-console) om de beschikbare acties op de werkbalk weer te geven.
+Er zijn verschillende acties die u kunt uitvoeren op bestaande tags en naamruimten om deze te beheren en te ordenen. Selecteer gewoon een tag of naamruimte in het dialoogvenster [tagconsole](#tagging-console) om de beschikbare acties op de werkbalk weer te geven.
 
 * [Eigenschappen weergeven](#viewing-tag-properties)
 * [Bewerken](#editing-tags)
@@ -183,7 +183,7 @@ U kunt meer details over de markering bekijken met inbegrip van wie het laatst p
 
    ![Tageigenschappen weergeven](assets/tag-properties.png)
 
-Zie het document voor meer informatie over het selecteren van weergavemodi en de spoorstaaf [Basisverwerking.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Zie voor meer informatie over het selecteren van weergavemodi en de spoorstaaf [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Tags bewerken {#editing-tags}
 
@@ -199,7 +199,7 @@ Tags en naamruimten kunnen na het maken worden bewerkt.
    * **Beschrijving**
    * [**Lokalisatie**](#managing-tags-in-different-languages)
 
-1. Tik of klik op **Verzenden**.
+1. Nadat de bewerkingen zijn aangebracht, selecteert u **Verzenden**.
 
 Zie de sectie over het toevoegen van taalvertalingen voor meer informatie over het toevoegen van taalvertalingen [Tags beheren in verschillende talen](#managing-tags-in-different-languages).
 
@@ -215,7 +215,7 @@ Als u de tag op de instantie van de auteur wilt deactiveren en deze uit uw publi
 
    ![Tags selecteren in de console](assets/select-tags.png)
 
-1. De **Label onbekend** vraagt om een bevestiging om de geselecteerde tags te publiceren. Tik of klik op **Publiceren**.
+1. De **Label onbekend** vraagt om een bevestiging om de geselecteerde tags te publiceren. Selecteren **Publiceren**.
 
    ![De bevestigingsmodus van de publicatiemarkering](assets/unpublish-tag.png)
 
@@ -239,13 +239,13 @@ Het kan handig zijn om te zien op welke inhoud een bepaalde tag wordt toegepast.
 
    ![Tagverwijzingen weergeven](assets/tag-references.png)
 
-1. Tik of klik op het aantal tagverwijzingen om de gedetailleerde lijst met inhoud weer te geven die aan de tag is toegewezen.
+1. Selecteer het aantal tagverwijzingen om de gedetailleerde lijst weer te geven met inhoud die aan de tag is toegewezen.
 
    ![De details van de verwijzingen van de tag weergeven](assets/tag-references-detail.png)
 
 Houd de muis of tik op een inhoud die naar verwijzingen verwijst in de lijst om het volledige pad van de inhoud weer te geven.
 
-Zie het document voor meer informatie over het selecteren van weergavemodi en de spoorstaaf [Basisverwerking.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Zie voor meer informatie over het selecteren van weergavemodi en de spoorstaaf [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Labels verplaatsen {#moving-tags}
 
@@ -257,20 +257,20 @@ Het kan nodig zijn om de tagtaxonomie op een andere manier op te schonen of te r
 
 1. Als u een tag wilt verplaatsen of de naam ervan wilt wijzigen, opent u het dialoogvenster [taggen-console.](#tagging-console)
 
-1. Selecteer de tag die u wilt verplaatsen of wijzig de naam ervan en tik erop of klik op **Verplaatsen** in de werkbalk.
+1. Selecteer de tag die u wilt verplaatsen of wijzig de naam en selecteer **Verplaatsen** in de werkbalk.
 
 1. In de **Tag verplaatsen** geeft u op welke eigenschap u wilt wijzigen.
 
-   * **Naam wijzigen in** - De nieuwe naam die u het label wilt geven
+   * **Naam wijzigen in** - De nieuwe naam die u de tag wilt geven
       * Dit veld wordt vooraf gevuld met de huidige naam van de tag.
-      * Laat het veld ongewijzigd als u alleen de tag wilt verplaatsen en de naam niet wilt wijzigen.
+      * Laat het veld ongewijzigd als u alleen de code wilt verplaatsen en de naam ervan niet wilt wijzigen.
    * **Verplaatsen naar** - Waar u de tag wilt verplaatsen
       * Dit veld wordt vooraf gevuld met de huidige locatie van de tag.
-      * Laat het veld ongewijzigd als u alleen de naam van de tag wilt wijzigen en het niet wilt verplaatsen.
+      * Laat het veld ongewijzigd als u alleen de naam van de tag wilt wijzigen en deze niet wilt verplaatsen.
 
    ![Tag verplaatsen](assets/move-tag.png)
 
-1. Tik of klik op **Verzenden**.
+1. Selecteren **Verzenden**.
 
 De naam van de tag wordt gewijzigd en/of naar de nieuwe locatie verplaatst. Wanneer de geselecteerde tag een containertag is, worden bij het verplaatsen van de tag ook alle onderliggende tags verplaatst.
 
@@ -280,15 +280,15 @@ Als de codeertaxonomie gelijksoortige duplicaten of tags bevat, kan het handig z
 
 1. Als u twee tags wilt samenvoegen, opent u het dialoogvenster [taggen-console.](#tagging-console)
 
-1. Selecteer de tag die u wilt samenvoegen in een andere tag en tik op de tag of klik op **Samenvoegen** in de werkbalk.
+1. Selecteer de tag die u in een andere tag wilt samenvoegen en selecteer vervolgens **Samenvoegen** in de werkbalk.
 
-1. In de **Tag samenvoegen** tikken of op de knop **Bladeren** pictogram van de **Samenvoegen in** veld waarin u wilt opgeven in welk label u de geselecteerde tag wilt samenvoegen.
+1. In de **Tag samenvoegen** selecteert u de **Bladeren** pictogram van de **Samenvoegen in** veld waarin u wilt opgeven in welk label u de geselecteerde tag wilt samenvoegen.
 
    ![Het dialoogvenster Code samenvoegen](assets/merge-tag.png)
 
-1. Tik of klik op **Verzenden**.
+1. Selecteren **Verzenden**.
 
-De tag die in de console is geselecteerd, wordt samengevoegd met de tag die in het dialoogvenster is opgegeven. Wanneer een tag waarnaar wordt verwezen wordt verplaatst of samengevoegd, wordt de tag niet fysiek verwijderd, zodat verwijzingen behouden kunnen blijven. Zie het document [Kader voor tags AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) voor meer informatie .
+De tag die in de console is geselecteerd, wordt samengevoegd met de tag die in het dialoogvenster is opgegeven. Wanneer een tag waarnaar wordt verwezen wordt verplaatst of samengevoegd, wordt de tag niet fysiek verwijderd, zodat verwijzingen behouden kunnen blijven. Zie [Kader voor tags AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) voor meer informatie .
 
 ### Tags verwijderen {#deleting-tags}
 
@@ -296,15 +296,15 @@ Als de codeertaxonomie verandert en een tag of naamruimte onnodig maakt, kan dez
 
 1. Als u een tag wilt verwijderen, opent u het dialoogvenster [taggen-console.](#tagging-console)
 
-1. Selecteer de tag die u wilt verwijderen en tik op de tag of klik op **Verwijderen** in de werkbalk.
+1. Selecteer het label dat u wilt verwijderen en selecteer vervolgens **Verwijderen** in de werkbalk.
 
-1. De **Label verwijderen** vraagt om een bevestiging om de geselecteerde tag(s) te verwijderen. Tik of klik op **Verwijderen**.
+1. De **Label verwijderen** vraagt om een bevestiging om de geselecteerde tag(s) te verwijderen. Selecteren **Verwijderen**.
 
    ![De bevestigingsmodus van de tag verwijderen](assets/delete-tag.png)
 
 1. AEM controleert of er niet naar de tag wordt verwezen.
 
-   1. Als er geen verwijzingen worden gevonden, AEM vraagt om definitieve bevestiging om te schrappen. Tik of klik op **Verwijderen**
+   1. Als er geen verwijzingen worden gevonden, AEM vraagt om definitieve bevestiging om te schrappen. Selecteren **Verwijderen**
 
       ![Geen verwijzingen gevonden](assets/no-references-found.png)
 
@@ -353,11 +353,11 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 De `title` De eigenschap van een tag kan in meerdere talen worden vertaald. Nadat de code is vertaald, kan de juiste tagtitel worden weergegeven op basis van de taal van de gebruiker of inhoud.
 
-Laten we aannemen dat we een tag hebben met de naam `Animals` dat wij in het Duits en het Frans willen vertalen.
+Laten we aannemen dat we een tag hebben met de naam `Animals` dat we in het Duits en Frans willen vertalen.
 
 1. Open de [taggen-console.](#tagging-console)
 
-1. Selecteer de tag die u wilt vertalen en tik op de tag of klik op **Bewerken** in de werkbalk.
+1. Selecteer de tag die u wilt vertalen en selecteer vervolgens **Bewerken** in de werkbalk.
 
 1. In de **Tag bewerken** in het dialoogvenster **Lokalisatie** de doeltaal, bijvoorbeeld Duits.
 
@@ -367,7 +367,7 @@ Laten we aannemen dat we een tag hebben met de naam `Animals` dat wij in het Dui
 
    ![Tagtitels omzetten](assets/translate-tag.png)
 
-1. Tik of klik op **Verzenden**.
+1. Selecteren **Verzenden**.
 
 Voor inhoudspagina&#39;s, wordt de taal gekozen voor de markering genomen van de paginalaal, indien beschikbaar.
 
@@ -377,4 +377,4 @@ Zie het document als u een nieuwe taal wilt toevoegen aan het dialoogvenster [Ta
 
 >[!TIP]
 >
->Raadpleeg het document voor meer informatie over AEM lokalisatiefuncties [Uw inhoud voor meertalige sites vertalen.](/help/sites-cloud/administering/translation/overview.md)
+>Ga voor meer informatie over AEM lokalisatiefuncties naar [Inhoud vertalen voor meertalige sites](/help/sites-cloud/administering/translation/overview.md).

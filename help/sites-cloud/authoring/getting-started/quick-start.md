@@ -2,9 +2,9 @@
 title: Handleiding Snel aan de slag met de authoring van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1541'
 ht-degree: 4%
 
 ---
@@ -51,7 +51,7 @@ Voordat u met de snelstartgids begint, volgt hier een kleine verzameling algemen
 
 >[!NOTE]
 >
->Er zijn een aantal sneltoetsen die de ontwerpervaring kunnen vereenvoudigen.
+>Er zijn verschillende sneltoetsen waarmee u het schrijven van documenten eenvoudiger kunt maken.
 >
 >* [Sneltoetsen bij het bewerken van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -87,17 +87,17 @@ Naar [een pagina maken](/help/sites-cloud/authoring/fundamentals/organizing-page
 
 ### Uw pagina selecteren voor verdere actie {#selecting-your-page-for-further-action}
 
-U kunt een pagina selecteren zodat u actie kunt ondernemen. Als u een pagina selecteert, wordt de werkbalk automatisch bijgewerkt, zodat de acties die voor die bron relevant zijn, worden weergegeven.
+U kunt een pagina selecteren zodat u erop kunt reageren. Als u een pagina selecteert, wordt de werkbalk automatisch bijgewerkt, zodat de acties die voor die bron relevant zijn, worden weergegeven.
 
 Hoe te om een pagina te selecteren hangt van welke mening af u in de console gebruikt:
 
 1. Kolomweergave:
 
-   * Tik/klik op de miniatuur voor de vereiste bron - de miniatuur wordt bedekt met een verdeelstreepje om aan te geven dat deze is geselecteerd.
+   * Selecteer de miniatuur voor de vereiste bron - de miniatuur wordt bedekt met een verdeelstreepje om aan te geven dat deze is geselecteerd.
 
 1. Lijstweergave:
 
-   * Tik/klik op de miniatuur voor de vereiste bron - de miniatuur wordt bedekt met een verdeelstreepje om aan te geven dat deze is geselecteerd.
+   * Selecteer de miniatuur voor de vereiste bron - de miniatuur wordt bedekt met een verdeelstreepje om aan te geven dat deze is geselecteerd.
 
 1. Kaartweergave:
 
@@ -114,7 +114,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
 [Snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) zijn beschikbaar:
 
-1. [Naar de pagina navigeren](#finding-your-page) Je wilt actie ondernemen.
+1. [Naar de pagina navigeren](#finding-your-page) je wilt handelen.
 1. Houd de muisaanwijzer boven de kaart die uw vereiste bron vertegenwoordigt. De snelle acties worden weergegeven:
 
    ![Kaarthandelingen](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -147,7 +147,7 @@ Uw pagina bewerken:
 
    * [De inhoud van een bestaande component bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) op de pagina:
 
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Bewerken** (potlood) pictogram om het dialoogvenster te openen.
+      * Open de componentwerkbalk met een van de twee knoppen. Gebruik de **Bewerken** (potlood) pictogram om het dialoogvenster te openen.
       * Open de editor op plaats voor de component met Tikken en vasthouden of dubbelklikken. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
       * Als u alle beschikbare acties wilt weergeven, opent u de modus Volledig scherm met:
 
@@ -155,16 +155,16 @@ Uw pagina bewerken:
 
    * [De eigenschappen van een bestaande component configureren](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Configureren** (moersleutel) om het dialoogvenster te openen.
+      * Open de componentwerkbalk met een van de twee knoppen. Gebruik de **Configureren** (moersleutel) om het dialoogvenster te openen.
 
    * [Een component verplaatsen](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) ofwel:
 
       * Sleep de vereiste component naar de nieuwe locatie.
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Knippen** dan **Plakken** pictogrammen, indien nodig.
+      * Open de componentwerkbalk met een van de twee knoppen. Gebruik de **Knippen** dan **Plakken** pictogrammen, indien nodig.
 
    * [Kopiëren (en Plakken)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) een component:
 
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Kopiëren** dan **Plakken** pictogrammen naar wens.
+      * Open de componentwerkbalk met een van de twee knoppen. Gebruik de **Kopiëren** dan **Plakken** pictogrammen naar wens.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ Uw pagina bewerken:
 
    * [Verwijderen](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) een component:
 
-      * Open de werkbalk van de component met Tik of klik en gebruik vervolgens de knop **Verwijderen** pictogram.
+      * Open de componentwerkbalk met een van de twee knoppen en gebruik vervolgens de knop **Verwijderen** pictogram.
 
    * [Annotaties toevoegen](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) op de pagina:
 
@@ -292,7 +292,7 @@ Het slotpictogram ziet er bijvoorbeeld als volgt uit:
 
    ![Weergave Verwijzingen](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Tik/klik op het gewenste type verwijzing om meer details weer te geven en (indien van toepassing) verdere handelingen uit te voeren.
+1. Selecteer het vereiste type verwijzing om meer details weer te geven en (indien van toepassing) verdere acties te ondernemen.
 
 ### Een versie van uw pagina maken {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ Een [versie](/help/sites-cloud/authoring/features/page-versions.md) van uw pagin
 
    ![Weergave tijdlijn, optie](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Tik/klik op de ellips rechtsonder in de kolom Tijdlijn om extra knoppen weer te geven, waaronder **Opslaan als versie**.
+1. Selecteer de ellips rechtsonder in de kolom Tijdlijn om extra knoppen weer te geven, waaronder **Opslaan als versie**.
 
    ![Tijdlijnweergave](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ Hetzelfde basismechanisme wordt gebruikt bij het herstellen en/of vergelijken va
 
    Als er al een versie van de pagina is opgeslagen, wordt deze weergegeven in de tijdlijn.
 
-1. Tik/klik op de versie die u wilt herstellen. Hier worden extra knoppen voor handelingen weergegeven:
+1. Selecteer de versie die u wilt herstellen. Hier worden extra actieknoppen weergegeven:
 
    * **Deze versie herstellen**
 

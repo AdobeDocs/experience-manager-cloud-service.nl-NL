@@ -4,9 +4,9 @@ description: Met de AEM Doelkiezer kunt u elementen weergeven en selecteren die 
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1896'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ Met de doelkiezer kunt u ook gegevens bekijken in de opslagruimte die u in de AE
 
 Het is een voorbeeld van het `optionsFormSetup` eigenschap. U kunt dit gebruiken om de selectie te bevestigen, wordt het overgegaan op `onConfirm` gebeurtenis.
 
-### Nieuwe map maken {#create-new-folder}
+### Een map maken {#create-new-folder}
 
 Hiermee kunt u een map maken in de doelmap van uw [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 
@@ -274,7 +274,7 @@ Met de optie Doelselectie kunt u het element in vier verschillende weergaven wee
 
 ### Info {#info}
 
-Met het informatie- of infopictogram kunt u metagegevens van het geselecteerde element weergeven. Het bevat verschillende details, zoals afmetingen, grootte, beschrijving, pad, gewijzigde datum en datum. De metagegevens worden weergegeven tijdens het uploaden of kopiëren of het maken van een nieuw element.
+Met het informatie- of infopictogram kunt u metagegevens van het geselecteerde element weergeven. Het bevat verschillende details, zoals afmetingen, grootte, beschrijving, pad, gewijzigde datum en datum. De metagegevens worden weergegeven tijdens het uploaden of kopiëren of het maken van een element.
 
 ### Map selecteren {#select-folder}
 

@@ -5,7 +5,7 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruike
 
 ## AEM instellen {#setup-aem}
 
-Volg de documentatie van de Fragmenten van de Inhoud van de AEM aan opstelling een eindpunt van GraphQL voor uw AEM project. Bovendien, in uw AEM project, voeg de volgende configuraties toe om uw toepassing van de PWA Studio toe te staan om tot het eindpunt van GraphQL toegang te hebben:
+Volg de documentatie van de Fragmenten van de Inhoud van de AEM aan opstelling een eindpunt van GraphQL voor uw AEM project. Ook, in uw AEM project, voeg de volgende configuraties toe om uw toepassing van de PWA Studio toe te staan om tot het eindpunt van GraphQL toegang te hebben:
 
 * Beleid voor het delen van bronnen tussen verschillende bronnen van Adoben (com.adobe.granite.cors.impl.CORSPopolicyImpl)
 

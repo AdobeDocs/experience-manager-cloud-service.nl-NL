@@ -2,9 +2,9 @@
 title: Responsieve lay-out
 description: Met AEM kunt u een responsieve lay-out voor uw pagina's maken
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1731'
 ht-degree: 6%
 
 ---
@@ -45,7 +45,7 @@ Met deze responsieve rastermechanismen kunt u:
 * Componenten verbergen voor specifieke apparaatlay-outs.
 * Kolombesturingselement realiseren.
 
-Afhankelijk van uw project, zou de Container van de Lay-out als standaardparagraafsysteem voor uw pagina&#39;s of als component beschikbaar kunnen worden gebruikt om aan uw pagina via componentenbrowser (of allebei) worden toegevoegd.
+Afhankelijk van uw project, zou de Container van de Lay-out als standaardparagraafsysteem voor uw pagina&#39;s of als component beschikbaar kunnen worden gebruikt om aan uw pagina door componentenbrowser (of allebei) worden toegevoegd.
 
 >[!TIP]
 >
@@ -108,7 +108,7 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 1. Als u een specifiek apparaat wilt selecteren om te emuleren, kunt u:
 
    * Gebruik het pictogram Apparaat selecteren en selecteer een keuze in een vervolgkeuzelijst.
-   * Tik/klik op de apparaatindicator op de emulatorwerkbalk.
+   * Selecteer de apparaatindicator in de emulatorwerkbalk.
 
    ![Vervolgkeuzelijst Apparaat selecteren](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -143,7 +143,7 @@ A **Layout Container** is een alineasysteem dat:
 
 ## Handeling selecteren en uitvoeren in een container Layout (modus Bewerken) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Net als bij andere componenten kunt u een Layout Container selecteren en vervolgens actie ondernemen (knippen, kopiëren, verwijderen) (wanneer u zich aanmeldt **Bewerken** modus):
+Net als bij andere componenten kunt u een Layout Container selecteren en vervolgens een handeling uitvoeren (knippen, kopiëren, verwijderen) (wanneer u zich **Bewerken** modus):
 
 >[!CAUTION]
 >
@@ -195,14 +195,14 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
   >
   >Verhoudingen en verhoudingen blijven behouden wanneer componenten zoals **Afbeeldingen** worden vergroot of verkleind.
 
-* Klik/tik op een inhoudscomponent, de toolbar laat u:
+* Selecteer een inhoudcomponent, laat de toolbar u:
    * **Bovenliggend** - Hiermee kunt u de volledige containercomponent voor de lay-out selecteren om actie te ondernemen over het geheel.
    * **Zweven naar nieuwe regel** - De component wordt naar een nieuwe regel verplaatst, afhankelijk van de ruimte die beschikbaar is in het raster.
    * **Component verbergen** - De component is onzichtbaar gemaakt (u kunt deze herstellen vanaf de werkbalk van de container voor lay-outs).
 
   ![Component verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In **Layout** -modus kunt u tikken of op de knop **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk wordt weergegeven voor deze modus.
+* In **Layout** -modus kunt u **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk wordt weergegeven voor deze modus.
 
   De werkbalk heeft verschillende opties, afhankelijk van de status van de lay-outcomponent en de onderdelen ervan. Bijvoorbeeld:
 

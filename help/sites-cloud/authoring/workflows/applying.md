@@ -1,17 +1,17 @@
 ---
 title: Workflows toepassen op pagina's
-description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. Het is ook mogelijk om meerdere workflows toe te passen.
+description: Tijdens het ontwerpen kunt u workflows aanroepen om op uw pagina's te reageren. Het is ook mogelijk om meerdere workflows toe te passen.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '654'
 ht-degree: 11%
 
 ---
 
 # Workflows toepassen op pagina&#39;s {#applying-workflows-to-pages}
 
-Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina&#39;s. Het is ook mogelijk om meerdere workflows toe te passen.
+Tijdens het ontwerpen kunt u workflows aanroepen om op uw pagina&#39;s te reageren. Het is ook mogelijk om meerdere workflows toe te passen.
 
 Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
@@ -116,7 +116,7 @@ U kunt details specificeren:
 
 1. In de **Toepassingsgebied** stap die u kunt selecteren:
 
-   * **Inhoud toevoegen** om de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) en selecteer aanvullende bronnen; klik in de browser op **Selecteren** om de inhoud aan de werkstroominstantie toe te voegen.
+   * **Inhoud toevoegen** om de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) en selecteer aanvullende bronnen; selecteer in de browser de optie **Selecteren** om de inhoud aan de werkstroominstantie toe te voegen.
 
    * Een bestaande bron voor het weergeven van extra handelingen:
 

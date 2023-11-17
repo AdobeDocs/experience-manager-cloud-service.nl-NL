@@ -2,9 +2,9 @@
 title: Reis AEM Commerce Content Author
 description: Begin hier voor een geleide reis door AEM Commerce Authoring
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '453'
 ht-degree: 1%
 
 ---
@@ -18,14 +18,14 @@ Begin hier voor een geleide reis door AEM Inhoud en Handel om te leren hoe te om
 Deze gids leidt u door de belangrijkste AEM Inhoud en de auteursonderwerpen van de Handel zodat bij voltooiing u:
 
 * Leer de basisbeginselen AEM Inhoud en Handel
-* Aan de slag AEM de grondbeginselen van CIF-authoring
+* Aan de slag AEM de grondbeginselen van CIF
 * Ervaringen met productcatalogi maken met afzonderlijke sjablonen en inhoud
 * Ervaringen met gefaseerde productcatalogi beheren
 * Productgegevens verrijken met inhoud met behulp van Product Experience Management Tools
 
 ## AEM Documentenreizen {#documentation-journeys}
 
-[Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+[Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende, ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
 Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
@@ -35,7 +35,7 @@ Als u wilt weten hoe de Adobe aanbeveelt om vestigingenzaken met AEM op te losse
 
 Deze reis wordt ontworpen voor de AEM Inhoudsauteur van de Handel. Deze reis beschrijft de vereisten, de stappen, en de benadering om aan de slag te gaan en cataloguspagina&#39;s, malplaatjes en volledige productervaringen te beheren.
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie is overbodig voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
+Informatie op deze reis kan nuttig zijn voor andere personen, maar sommige informatie is overbodig voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
 
 ## De reis {#the-journey}
 
@@ -47,7 +47,7 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 |---|---|---|
 | 0 | AEM Content and Commerce Developer Journey | Dit document |
 | 1 | [Meer informatie over AEM inhoud en handel](/help/commerce-cloud/introduction.md) | Leer concepten en grondbeginselen over AEM Inhoud en Handel. |
-| 2 | [Aan de slag met AEM basisbeginselen van CIF-authoring](getting-started.md) | Leer hoe u productgegevens kunt openen en gebruiken voor uw gebruiksscenario&#39;s. |
+| 2 | [Aan de slag met AEM basisbeginselen van CIF authoring](getting-started.md) | Leer hoe u productgegevens kunt openen en gebruiken voor uw gebruiksscenario&#39;s. |
 | 3 | [Productcataloguspagina&#39;s en -sjabloon beheren](catalog-templates.md) | Leer hoe u een typische ervaring met productcatalogi maakt. |
 | 4 | [Ervaringen met gefaseerde productcatalogi beheren](staged-catalog.md) | Leer hoe u een toekomstige productcataloguservaring kunt maken met gefaseerde gegevens en AEM. |
 | 5 | [Ervaringen maken met producten](product-experience-management.md) | Krijg om te weten hoe te om productgegevens met overweldigende inhoud in AEM te verhogen. |

@@ -2,7 +2,7 @@
 title: ContextHub Diagnostics
 description: ContextHub verstrekt een diagnostische pagina waar u een overzicht van het kader ContextHub kunt zien
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ContextHub Diagnostics {#contexthub-diagnostics}
 
-ContextHub verstrekt een diagnostische pagina waar u een overzicht van het kader kunt zien ContextHub. Ga naar de `contexthub.diagnostics.html` pagina van de AEM auteur, bijvoorbeeld:
+ContextHub verstrekt een diagnostische pagina waar u een overzicht van het kader kunt zien ContextHub. Ga naar de pagina om de pagina te openen `contexthub.diagnostics.html` pagina van de AEM auteur, bijvoorbeeld:
 
 `http://<host>:<port>/conf/<site>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
@@ -41,7 +41,7 @@ De sectie van Modules maakt een lijst van alle modules ContextHub UI die zijn ge
 
 ## Clientlibs {#clientlibs}
 
-In de sectie Clientlibs worden alle [clientbibliotheekmappen](/help/implementing/developing/introduction/clientlibs.md) die ContextHub heeft geladen. De clientbibliotheken worden als volgt gecategoriseerd:
+In de sectie Clientlibs worden alle clips weergegeven[clientbibliotheekmappen](/help/implementing/developing/introduction/clientlibs.md) die ContextHub heeft geladen. De clientbibliotheken worden als volgt gecategoriseerd:
 
 * **kernel.js:** De bibliotheken van de cliënt die het kader ContextHub, de segmentmotor, en opslagtypes uitvoeren.
 * **ui.js:** De bibliotheken van de cliënt die ContextHub UI en UI moduletypes uitvoeren.

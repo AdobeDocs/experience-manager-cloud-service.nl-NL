@@ -2,9 +2,9 @@
 title: URL's extern maken
 description: ExternalAlizer is de dienst OSGi die u programmatically een middelweg in een externe en absolute URL laat omzetten.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Om een domeinafbeelding voor de dienst te bepalen Externalzer:
 
    * **`scheme`** is meestal http of https, maar kan een ander protocol zijn.
 
-      * Het wordt aanbevolen https te gebruiken om https-koppelingen af te dwingen.
+      * Adobe raadt u aan https te gebruiken om https-koppelingen af te dwingen.
       * Deze wordt gebruikt als de clientcode het schema niet overschrijft wanneer wordt gevraagd om externalisatie van een URL.
 
    * **`server`** is de gastheernaam (of een domeinnaam of ip adres).

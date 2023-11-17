@@ -2,9 +2,9 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager as a Cloud Service maken (WCAG 2.1-compatibiliteit)
 description: Gebruik AEM as a Cloud Service om webinhoud toegankelijk en bruikbaar te maken voor personen met een handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '13861'
+source-wordcount: '13859'
 ht-degree: 3%
 
 ---
@@ -476,7 +476,7 @@ Zo kan bijvoorbeeld iemand met een rode-groene kleur een gebrek aan gezichtsverm
 
 Kleuren kunnen ook niet worden waargenomen door mensen die alleen tekst weergeven, monochrome weergaveapparaten of een zwart-witafdruk van de pagina gebruiken.
 
-Een andere overweging is de *geselecteerd* status voor een interface-element (bijvoorbeeld tabbladen, schakelknoppen, enz.), dat op een andere manier moet worden overgebracht dan alleen met kleur en niet alleen met een visuele presentatie. Voor dergelijke elementen is het extra gebruik van patronen, vormen en programmatische informatie nuttig bij het creëren van een volledig inclusieve gebruikerservaring die niet op een specifieke zin steunt.
+Een andere overweging is de *geselecteerd* status voor een interface-element (bijvoorbeeld tabbladen, schakelknoppen, enz.), die op een andere manier dan alleen met kleur en verder dan alleen een visuele presentatie moet worden overgebracht. Voor dergelijke elementen is het extra gebruik van patronen, vormen en programmatische informatie nuttig bij het creëren van een volledig inclusieve gebruikerservaring die niet op een specifieke zin steunt.
 
 #### Voldoen aan - gebruik van kleur (1.4.1) {#how-to-meet-use-of-color}
 
@@ -671,7 +671,7 @@ Volg de onderstaande richtlijnen [Voldoen aan criteria 2.1.2](https://www.w3.org
 
 [Richtsnoer 2.2 Voldoende tijd: geef gebruikers voldoende tijd om inhoud te lezen en te gebruiken.](https://www.w3.org/TR/WCAG/#enough-time)
 
-Hierbij wordt ervoor gezorgd dat gebruikers voldoende tijd hebben om te lezen en actie te ondernemen.
+Het gaat erom ervoor te zorgen dat gebruikers genoeg tijd hebben om te lezen en te handelen.
 
 ### Aanpasbare timing (2.2.1)  {#timing-adjustable}
 

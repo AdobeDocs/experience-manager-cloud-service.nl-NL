@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 9%
+source-wordcount: '432'
+ht-degree: 2%
 
 ---
 
@@ -24,13 +24,13 @@ Metagegevens bewerken:
 
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer het element in de interface Elementen en klik op het element **[!UICONTROL View Properties]** op de werkbalk.
+   * Selecteer het element in de interface Elementen en selecteer het **[!UICONTROL View Properties]** op de werkbalk.
    * Selecteer in de miniatuur van het element de optie **[!UICONTROL View Properties]** snelle actie.
-   * Klik/tik op de elementpagina **[!UICONTROL View Properties]** op de werkbalk.
+   * Selecteer op de elementpagina de optie **[!UICONTROL View Properties]** op de werkbalk.
 
-   Op de elementpagina worden alle metagegevens van het element weergegeven. Deze metagegevens worden automatisch geëxtraheerd bij het uploaden (invoegen) naar Experience Manager Assets.
+   Op de elementpagina worden de metagegevens van het element weergegeven. Deze metagegevens worden automatisch geëxtraheerd bij het uploaden (invoegen) naar Experience Manager Assets.
 
-1. Bewerk desgewenst de metadata op de verschillende tabbladen en klik of tik wanneer u klaar bent op **[!UICONTROL Save]** op de werkbalk om de wijzigingen op te slaan. Klik of tik op **[!UICONTROL Close]** om terug te keren naar de webinterface voor assets.
+1. Breng desgewenst wijzigingen aan in de metagegevens op de verschillende tabbladen en selecteer vervolgens, wanneer u klaar bent, **[!UICONTROL Save]** van de toolbar om uw veranderingen te bewaren. Selecteren **[!UICONTROL Close]** om terug te keren naar de middelenwebinterface.
 
    >[!NOTE]
    >
@@ -49,10 +49,10 @@ Voor meer informatie over het bewerken van het metagegevensschema raadpleegt u [
 U kunt uw eigen naamruimten in de Experience Manager toevoegen. Net zoals er vooraf gedefinieerde naamruimten zijn, zoals cq, jcr en sling, kunt u een naamruimte hebben voor de metagegevens van de gegevensopslagruimte en de verwerking van de xml.
 
 1. Naar de beheerpagina voor knooppunttypen *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. Klikken of tikken **[!UICONTROL Namespaces]** boven aan de pagina. De pagina voor naamruimtebeheer wordt weergegeven in een venster.
+1. Selecteren **[!UICONTROL Namespaces]** boven aan de pagina. De pagina voor naamruimtebeheer wordt weergegeven in een venster.
 
-1. Als u een naamruimte wilt toevoegen, klikt u of tikt u op **[!UICONTROL New]** onderaan.
-1. Geef een aangepaste naamruimte op in de XML-naamruimteconventie (geef de id op in de vorm van een URI en een bijbehorend voorvoegsel voor de id) en klik of tik **[!UICONTROL Save]**.
+1. Als u een naamruimte wilt toevoegen, selecteert u **[!UICONTROL New]** onderaan.
+1. Geef een aangepaste naamruimte op in de XML-naamruimteconventie (geef de id op in de vorm van een URI en een bijbehorend voorvoegsel voor de id) en selecteer **[!UICONTROL Save]**.
 
 **Zie ook**
 

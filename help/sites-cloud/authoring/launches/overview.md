@@ -2,9 +2,9 @@
 title: Lanceringen
 description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '899'
 ht-degree: 5%
 
 ---
@@ -96,7 +96,7 @@ Met Launches kunt u:
 
    ![Referenties van lanceringen in plaatsenconsole](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Tik/klik op de juiste start. De lijst met mogelijke acties wordt weergegeven:
+1. Selecteer de juiste start en de lijst met mogelijke acties wordt weergegeven:
 
    ![Handelingen om lanceringen in plaatsenconsole over te nemen](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

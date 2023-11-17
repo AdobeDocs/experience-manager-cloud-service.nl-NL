@@ -2,9 +2,9 @@
 title: Ga aan de slag met AEM headless Translation
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Dit document helpt u begrijpen hoe u aan de slag kunt gaan met het vertalen van 
 
 ## Eisen en voorwaarden {#requirements-prerequisites}
 
-Er zijn een aantal vereisten voordat u begint met het vertalen van inhoud zonder kop AEM inhoud.
+Er zijn verschillende vereisten waaraan u moet voldoen voordat u inhoud zonder kop gaat vertalen AEM inhoud.
 
 ### Kennis {#knowledge}
 
@@ -78,15 +78,15 @@ De inhoudarchitect werkt in een vroeg stadium van het project om deze structuur 
 
 Omdat de inhoudsmodellen de structuur van uw inhoud bepalen, moet u weten welke gebieden van uw modellen moeten worden vertaald. In het algemeen werkt u met de inhoudarchitect om dit te definiëren. Volg onderstaande stappen om door de velden van uw inhoudsmodellen te bladeren.
 
-1. Navigeren naar **Gereedschappen** -> **Algemeen** -> **Modellen van inhoudsfragmenten**.
-1. Modellen van inhoudsfragmenten worden over het algemeen opgeslagen in een mapstructuur. Tik of klik op de map voor uw project.
-1. De modellen worden vermeld. Tik of klik op het model om de details weer te geven.
+1. Navigeren naar **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**.
+1. Modellen van inhoudsfragmenten worden over het algemeen opgeslagen in een mapstructuur. Selecteer de map voor uw project.
+1. De modellen worden vermeld. Selecteer het model om de details weer te geven.
    ![Modellen van contentfragmenten](assets/content-fragment-models.png)
 1. De **Inhoudsfragmentmodeleditor** wordt geopend.
    1. De linkerkolom bevat de velden van het model. Deze kolom interesseert ons.
    1. De rechterkolom bevat de velden die aan het model kunnen worden toegevoegd. Deze kolom kunnen wij negeren.
       ![Inhoudsfragmentmodeleditor](assets/content-fragment-model-editor.png)
-1. Tik of klik op een van de velden van het model. AEM worden het en de details van dat gebied getoond in de juiste kolom.
+1. Selecteer een van de velden van het model. AEM worden het en de details van dat gebied getoond in de juiste kolom.
    ![Details van de Editor van het inhoudsfragmentmodel](assets/content-fragment-model-editor-detail.png)
 1. De inhoudarchitect schakelt de **Vertaalbaar** veld op elk veld Inhoudsmodel dat moet worden vertaald.
 

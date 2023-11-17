@@ -2,9 +2,9 @@
 title: Uw aangepaste thema implementeren
 description: Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ Nadat u de wijzigingen in de themaaanpassing hebt doorgevoerd in de AEM-git-opsl
 
    ![Overzicht van Cloud Manager](assets/cloud-manager-overview.png)
 
-1. Tik of klik op de ellips naast de pijplijn die u moet starten. Selecteer in het keuzemenu de optie **Uitvoeren**.
+1. Selecteer de ellips naast de pijpleiding u moet beginnen. Selecteer in het keuzemenu de optie **Uitvoeren**.
 
    ![Gasleiding uitvoeren](assets/run-pipeline.png)
 
-1. In de **Pipet uitvoeren** bevestigingsvenster, tik of klik **Ja**.
+1. In de **Pipet uitvoeren** bevestigingsvenster, selecteren **Ja**.
 
    ![Uitvoeren pijpleiding bevestigen](assets/pipeline-confirm.png)
 
@@ -58,7 +58,7 @@ Nadat u de wijzigingen in de themaaanpassing hebt doorgevoerd in de AEM-git-opsl
 
 U kunt de status van de pijpleiding controleren om de details van zijn vooruitgang op elk ogenblik te zien.
 
-1. Tik of klik op de ellips naast de pijplijn.
+1. Selecteer de ellips naast uw pijpleiding.
 
    ![Details van pijpleiding weergeven](assets/view-pipeline-details.png)
 
@@ -68,7 +68,7 @@ U kunt de status van de pijpleiding controleren om de details van zijn vooruitga
 
 >[!TIP]
 >
->In het venster van pijpleidingsdetails, kunt u tikken of klikken **Logbestand downloaden** voor om het even welke stap van de pijpleiding voor het zuiveren doeleinden als om het even welke stap zou moeten ontbreken. Het zuiveren van de pijpleiding is voorbij het werkingsgebied van deze reis. Raadpleeg de technische documentatie voor Cloud Manager in het dialoogvenster [Aanvullende bronnen](#additional-resources) van deze pagina.
+>In het venster van pijpleidingsdetails, kunt u selecteren **Logbestand downloaden** voor om het even welke stap van de pijpleiding voor het zuiveren doeleinden als om het even welke stap zou moeten ontbreken. Het zuiveren van de pijpleiding is voorbij het werkingsgebied van deze reis. Raadpleeg de technische documentatie voor Cloud Manager in het dialoogvenster [Aanvullende bronnen](#additional-resources) van deze pagina.
 
 ## Valideer de Ingevoerde Aanpassingen {#view-customizations}
 
@@ -112,7 +112,7 @@ Hieronder vindt u een aantal aanvullende bronnen die dieper ingaan op bepaalde c
 * [Sitethema AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - Dit is de bewaarplaats GitHub van het Thema van de Plaats van de AEM.
 * [npm](https://www.npmjs.com) - AEM thema&#39;s die worden gebruikt om sites snel te bouwen, zijn gebaseerd op npm.
 * [webpack](https://webpack.js.org) - AEM thema&#39;s die worden gebruikt om sites snel op te bouwen, zijn gebaseerd op webpack.
-* [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In deze handleiding wordt beschreven hoe u pagina&#39;s van uw AEM Site kunt beheren als u deze verder wilt aanpassen nadat u deze vanuit de sjabloon hebt gemaakt.
+* [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In deze handleiding wordt beschreven hoe u pagina&#39;s van uw AEM Site kunt beheren als u deze verder wilt aanpassen nadat u de site hebt gemaakt op basis van de sjabloon.
 * [Hoe te met Pakket werken](/help/implementing/developing/tools/package-manager.md) - Pakketten maken het importeren en exporteren van inhoud in de opslagplaats mogelijk. In dit document wordt uitgelegd hoe u met pakketten werkt in AEM 6.5. Dit geldt ook voor AEMaaCS.
 * [Onboarding Journaal](/help/journey-onboarding/overview.md) - Deze gids dient als uitgangspunt om ervoor te zorgen dat uw teams opstelling zijn en toegang tot AEM as a Cloud Service hebben.
 * [Documentatie Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Verken de documentatie van Cloud Manager voor meer informatie over de functies ervan.

@@ -2,9 +2,9 @@
 title: Werken met paginaversies
 description: Leer hoe u versies van uw pagina's in AEM maakt, vergelijkt en terugzet.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1505'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ U kunt een versie van uw bron maken op basis van:
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
 1. Selecteer de pagina in [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open de **Tijdlijn** spoorwegen.
-1. Klik/tik op de ellips door het commentaargebied om de opties te tonen:
+1. Selecteer de ellips op het commentaarveld om de opties weer te geven:
 
    ![Versies in de tijdlijn](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -209,7 +209,7 @@ Deze functie gebruiken:
 
 Timewaring is een [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) van de pagina-editor. Om het te beginnen, eenvoudig schakelaar het zoals u een andere wijze.
 
-1. Start de editor voor de pagina waarop u Tijdverdraaiing wilt starten en selecteer vervolgens **Timewarp** in de modusselectie.
+1. Start de editor voor de pagina waarop u Timewarp wilt starten en selecteer **Timewarp** in de modusselectie.
 
    ![Modus Tijdlijn verdraaien](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

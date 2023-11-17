@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2601'
+source-wordcount: '2585'
 ht-degree: 0%
 
 ---
@@ -87,9 +87,9 @@ Wanneer u een omgeving toevoegt, kunt u ervoor kiezen om naast het primaire gebi
 1. Selecteer de optie **Extra publicatiegebieden toevoegen** en een nieuwe **Aanvullende publicatiegebieden** verschijnt een keuzelijst met opties.
 1. In de **Aanvullende publicatiegebieden** selecteert u een extra gebied.
 1. Het geselecteerde gebied wordt onder de vervolgkeuzelijst toegevoegd om de selectie ervan aan te geven.
-   * Tik of klik op de knop `X` naast het geselecteerde gebied, zodat u het kunt desselecteren.
+   * Selecteer de `X` naast het geselecteerde gebied, zodat u het kunt desselecteren.
 1. Selecteer een ander gebied in het menu **Aanvullende publicatiegebieden** vervolgkeuzelijst om een ander gebied toe te voegen.
-1. Tik of klik op **Opslaan** als u klaar bent om uw omgeving te maken.
+1. Selecteren **Opslaan** als u klaar bent om uw omgeving te maken.
 
 ![Meerdere gebieden selecteren](assets/select-multiple-regions.png)
 
@@ -115,7 +115,7 @@ U kunt ook extra publicatiegebieden verwijderen. U kunt echter slechts gebieden 
 
    ![Omgeving bewerken](assets/edit-environment.png)
 
-1. Tik of klik op **Opslaan** om de wijzigingen op te slaan
+1. Selecteren **Opslaan** om de wijzigingen op te slaan
 
 Wijzigingen in de productieomgeving zijn van toepassing op zowel de productie- als de testomgeving. Wijzigingen in meerdere publicatiegebieden kunnen alleen worden bewerkt in de productieomgeving.
 
@@ -189,7 +189,7 @@ U kunt dezelfde informatie ook openen via het dialoogvenster **Omgevingen** tab.
 
 1. Op de **Overzicht** pagina, selecteert u de **Omgevingen** tab.
 
-1. Op de **Omgevingen** selecteert u in het linkernavigatievenster de omgeving waarin u een query wilt uitvoeren.
+1. Op de **Omgevingen** selecteert u in het navigatievenster aan de linkerkant de omgeving waarop u een query wilt uitvoeren.
 
 1. Nadat een omgeving is geselecteerd:
 
@@ -200,12 +200,12 @@ U kunt dezelfde informatie ook openen via het dialoogvenster **Omgevingen** tab.
 
 Als er problemen zijn gemeld met extra publicatiegebieden:
 
-1. Wees geduldig. Cloud Manager probeert het gebied voortdurend te herstellen en kan op elk moment beschikbaar komen.
-1. Als het probleem na een aantal uren voortduurt, kunt u het extra publicatiegebied verwijderen en het (of het zelfde gebied of een andere regio) opnieuw toevoegen om een volledige plaatsing teweeg te brengen.
+1. Wees geduldig. Cloud Manager probeert het gebied voortdurend te herstellen en kan op elk gewenst moment beschikbaar komen.
+1. Als het probleem zich na enkele uren blijft voordoen, kunt u het aanvullende publicatiegebied verwijderen en het opnieuw toevoegen (hetzelfde gebied of een ander gebied) om een volledige implementatie te activeren.
 
 Hoe lang u wacht tot het systeem op zich terugkrijgt alvorens extra actie te ondernemen hangt van de invloed af het mislukken van dat gebied op uw systemen heeft.
 
-Houd er rekening mee dat in ieder geval: [het verkeer zal altijd aan het andere dichtstbijzijnde gebied worden verpletterd dat online is.](/help/operations/additional-publish-regions.md) Neem contact op met de klantenservice van de Adobe als de problemen zich blijven voordoen.
+In ieder geval [verkeer wordt altijd verpletterd aan het andere dichtstbijzijnde gebied dat online is.](/help/operations/additional-publish-regions.md) Neem contact op met de klantenservice van de Adobe als de problemen zich blijven voordoen.
 
 ## Bijwerken van omgevingen {#updating-dev-environment}
 
@@ -333,7 +333,7 @@ De IP lijst van gewenste personen moet in de Manager van de Wolk bestaan om het 
 **Om een IP lijst van gewenste personen toe te passen:**
 
 1. Navigeer vanuit de **Omgevingen** tabblad van het programma **Overzicht** en navigeer naar het **IP-Lijsten van gewenste personen** tabel.
-1. Gebruik de inputgebieden bij de bovenkant van de IP lijst van de lijst van gewenste personen zodat kunt u de IP lijst van gewenste personen en de auteur selecteren of de publicatieservice u wenst om het op toe te passen.
+1. Gebruik de inputgebieden bij de bovenkant van de IP lijst van de lijst van gewenste personen zodat kunt u de IP lijst van gewenste personen en de auteur selecteren of de publicatiedienst u het op wilt toepassen.
 1. Klikken **Toepassen** en bevestig uw inzending.
 
 ### Het toepassen van een IP lijst van gewenste personen ongedaan maken {#unapply-ip-allow-list}

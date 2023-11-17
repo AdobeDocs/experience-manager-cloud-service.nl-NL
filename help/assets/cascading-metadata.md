@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 11%
+source-wordcount: '921'
+ht-degree: 5%
 
 ---
 
@@ -36,14 +36,14 @@ Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis
 
 Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verplicht veld.
 
-1. Tik/klik op de knop [!DNL Experience Manager] logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
-1. Selecteer op de pagina **[!UICONTROL Schema Forms]** een schemaformulier en tik of klik op **[!UICONTROL Edit]** op de werkbalk om het schema te bewerken.
+1. Selecteer de [!DNL Experience Manager] logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. In de **[!UICONTROL Schema Forms]** pagina, selecteert u een schema en selecteert u vervolgens **[!UICONTROL Edit]** op de werkbalk om het schema te bewerken.
 
    ![select_form](assets/select_form.png)
 
 1. (Optioneel) Maak in de Schema-editor voor metagegevens een veld dat u wilt conditionaliseren. Geef een naam- en eigenschappenpad op in het dialoogvenster **[!UICONTROL Settings]** tab.
 
-   Tik/klik om een tab te maken `+` om een tabblad toe te voegen en vervolgens een metagegevensveld toe te voegen.
+   Als u een tabblad wilt maken, selecteert u `+` om een tabblad toe te voegen en vervolgens een metagegevensveld toe te voegen.
 
    ![add_tab](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
 1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
 
-   * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** en tikken/klikken **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. U kunt bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding opgeven.
+   * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** en selecteert u **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. U kunt bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding opgeven.
 
    * Selecteer **[!UICONTROL Add Through JSON Path]** en geef het pad van het JSON-bestand op. [!DNL Experience Manager] Hiermee haalt u de sleutelwaardeparen op in real-time wanneer het formulier aan de gebruiker wordt gepresenteerd.
 
@@ -80,7 +80,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Kies onder **[!UICONTROL Requirement]** de optie **[!UICONTROL Required, based on new rule]**.
-1. Tik of klik op **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik of klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
+1. Selecteren **[!UICONTROL Add Rule]** en kiest u **[!UICONTROL Asset Type]** veld om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Selecteren **[!UICONTROL Done]** om de wijzigingen op te slaan
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,13 +90,13 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
 1. Kies onder **[!UICONTROL Visibility]** de optie **[!UICONTROL Visible, based on new rule]**.
 
-1. Tik of klik op **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik of klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
+1. Selecteren **[!UICONTROL Add Rule]** en kiest u **[!UICONTROL Asset Type]** veld om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Selecteren **[!UICONTROL Done]** om de wijzigingen op te slaan
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >Als u de waarden opnieuw wilt instellen, klikt of tikt u op witruimte of op een willekeurige plaats in de interface, behalve op de waarden. Als de waarden opnieuw zijn ingesteld, selecteert u de waarden opnieuw.
+   >Als u de waarden opnieuw wilt instellen, selecteert u op een willekeurige plaats in de interface behalve de waarden. Als de waarden opnieuw zijn ingesteld, selecteert u de waarden opnieuw.
 
    >[!NOTE]
    >

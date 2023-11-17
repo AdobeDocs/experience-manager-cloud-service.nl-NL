@@ -2,9 +2,9 @@
 title: as a Cloud Service terminologie AEM
 description: Voordat u zich aanmeldt bij AEMaaCS, is het handig om enkele terminologie van het systeem en de basisstructuur te begrijpen.
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Nu begrijpt u wat tot het onboarding proces heeft geleid door het document te le
 
 AEM as a Cloud Service is een krachtig en flexibel hulpmiddel en om om het even welk hulpmiddel te gebruiken zou u met zijn organisatie en de terminologie en de taal vertrouwd moeten zijn om het te beschrijven. Dit document bevat een overzicht van enkele belangrijke termen die u moet begrijpen voordat u het systeem gaat gebruiken.
 
-Na het lezen van dit document zult u begrijpen:
+Nadat u dit document hebt gelezen, moet u
 
 * De verschillende lagen waaruit AEMaaCS bestaat.
 * De basisbeginselen van wat elke laag doet.
@@ -44,7 +44,7 @@ Een voorbeeld is vaak handig bij het contextualiseren van deze hiërarchie.
    * One Assets program for WKND Media Division
 * De programma&#39;s WKND Magazine en WKND Media zouden zowel ontwikkeling, het opvoeren als productie hebben **omgevingen**.
 * **Opslagplaatsen** worden gebruikt om de douanecode en de toepassingen voor het Tijdschrift van WKND en Media te handhaven WKND.
-* Diversen **gereedschappen en workflows** werk over de repos om code op te stellen gebruikend CI/CD pijpleidingen, toegangslogboeken, AEM, enz.
+* Diversen **gereedschappen en workflows** het werk over de repo&#39;s om code op te stellen gebruikend CI/CD pijpleidingen, toegangslogboeken, AEM, etc.
 
 ## Volgende functies {#what-is-next}
 

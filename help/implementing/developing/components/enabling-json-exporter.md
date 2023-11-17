@@ -2,9 +2,9 @@
 title: JSON-export inschakelen voor een component
 description: Componenten kunnen worden aangepast om JSON-export van hun inhoud te genereren op basis van een modellerframework.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -75,8 +75,6 @@ De modelinterface moet behoorlijk worden geannoteerd om te bepalen welke methode
 Een voorbeeld vindt u in de implementatie Sling Model van de Image Core-component en de bijbehorende geannoteerde interface.
 
 ## Verwante documentatie {#related-documentation}
-
-Zie voor meer informatie:
 
 * [Contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

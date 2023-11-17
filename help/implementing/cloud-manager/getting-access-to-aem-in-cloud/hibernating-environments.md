@@ -2,9 +2,9 @@
 title: Sluiende en ontsmette zandbakomgevingen
 description: Leer hoe omgevingen van een sandboxprogramma automatisch overschakelen op een hibernatiemodus en hoe u deze kunt deorganiseren.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ U kunt uw Sandbox-programma handmatig via de ontwikkelaarsconsole herbergen.
    ![De-hibernatie voltooid](assets/de-hibernation-img4.png)
 
 
-In de Developer Console kunt u ook op de knop **Omgevingen** link in de breadcrumbs boven de **Pod** dropdown voor een lijst van milieu&#39;s aan de-hibernate.
+In de Developer Console kunt u ook op de knop **Omgevingen** link in de breadcrumbs boven de **Pod** vervolgkeuzelijst voor een lijst met omgevingen die moeten worden gedehiberneerd.
 
 ![Lijst met gedownloade pods](assets/de-hibernate-1b.png)
 

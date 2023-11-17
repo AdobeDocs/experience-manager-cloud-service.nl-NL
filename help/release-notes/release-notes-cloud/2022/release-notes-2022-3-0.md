@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2022.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Kijk eens naar de [Overzicht release maart 2022](https://video.tv.adobe.com/v/34
 
 ### Nieuwe functies beschikbaar in [!DNL Sites] prerelease-kanaal {#prerelease-features-sites}
 
-* De gegevenstypen van het inhoudsmodel kunnen nu worden gedefinieerd als vertaalbaar met behulp van een eenvoudig selectievakje in de inhoudsmodeleditor. Daarnaast worden AEM vertaalregels en -configuraties automatisch bijgewerkt.
+* De gegevenstypen van het inhoudsmodel kunnen nu worden gedefinieerd als vertaalbaar met behulp van een eenvoudig selectievakje in de inhoudsmodeleditor. Bovendien worden AEM vertaalregels en -configuraties automatisch bijgewerkt.
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 

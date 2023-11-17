@@ -1,8 +1,8 @@
 ---
-title: Team instellen voor bedrijfsontwikkeling
+title: Teaminstallatie voor bedrijfsontwikkeling
 description: Leer hoe u uw ontwikkelingsteam voor bedrijven kunt instellen en schalen en hoe AEM as a Cloud Service uw ontwikkelingsproces kan ondersteunen.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1437'
 ht-degree: 0%
@@ -15,13 +15,13 @@ Leer hoe u uw ontwikkelingsteam voor bedrijven kunt instellen en schalen en hoe 
 
 ## Inleiding {#introduction}
 
-Om klanten met bedrijfsontwikkelingsmontages te steunen, AEM as a Cloud Service volledig met de Manager van de Wolk en zijn doelgericht-gebouwd integreren, [Eiwitpijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Deze pijpleidingen en diensten zijn gebaseerd op de beste praktijken en zorgen voor een degelijke [testen en de hoogste codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md).
+Om klanten met bedrijfsontwikkelingsmontages te steunen, AEM as a Cloud Service volledig met de Manager van de Wolk en zijn doelgericht-gebouwd integreren, [geopinioneerde CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Deze pijpleidingen en diensten zijn gebaseerd op de beste praktijken en zorgen voor een degelijke [testen en de hoogste codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## De Steun van de Manager van de wolk in de Opstelling van de Ontwikkeling van het Team van de Onderneming {#cloud-manager}
 
 Om snel aan boord te kunnen gaan, biedt Cloud Manager alles wat nodig is om meteen aan de slag te gaan met het ontwikkelen van digitale ervaringen, waaronder een git-opslagplaats voor aanpassingen die vervolgens worden gebouwd, geverifieerd en geïmplementeerd door Cloud Manager.
 
-Met behulp van Cloud Manager kunnen ontwikkelingsteams regelmatig wijzigingen doorvoeren zonder afhankelijk te zijn van Adobe-personeel.
+Met behulp van Cloud Manager kunnen ontwikkelingsteams regelmatig wijzigingen doorvoeren zonder afhankelijk te zijn van het personeel van de Adobe.
 
 Er zijn drie typen omgevingen beschikbaar in Cloud Manager.
 
@@ -39,7 +39,7 @@ Cloud Manager ondersteunt flexibele instellingen voor meerdere teams die kunnen 
 
 ## Voorbeeld van een echte wereld {#real-world-example}
 
-Elke onderneming heeft verschillende vereisten met inbegrip van verschillende teamopstelling, processen, en ontwikkelingswerkschema&#39;s. De hieronder beschreven opstelling wordt gebruikt door Adobe voor verscheidene projecten die ervaringen bovenop AEM as a Cloud Service leveren.
+Elke onderneming heeft verschillende vereisten met inbegrip van verschillende teamopstelling, processen, en ontwikkelingswerkstromen. De hieronder beschreven opstelling wordt gebruikt door Adobe voor verscheidene projecten die ervaringen bovenop AEM as a Cloud Service leveren.
 
 De Adobe Creative Cloud-toepassingen, zoals Adobe Photoshop of Adobe Illustrator, bevatten bijvoorbeeld inhoudsbronnen, zoals zelfstudies, voorbeelden en hulplijnen die beschikbaar zijn voor eindgebruikers. Deze inhoud wordt door de clienttoepassingen verbruikt met behulp van AEM as a Cloud Service zonder kop, door API-aanroepen uit te voeren naar de AEM Cloud-publicatielaag om de gestructureerde inhoud op te halen als JSON-streams en door de [CDN (Content Delivery Network) in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) om zowel gestructureerde als ongestructureerde inhoud met optimale prestaties te dienen.
 
@@ -90,7 +90,7 @@ Deze real-world opstelling kan als blauwdruk worden gebruikt en dan aan de behoe
 
 >[!TIP]
 >
->Zie [Werken met Meerdere opslagplaatsen voor Git-bronnen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) voor meer informatie over deze installatie.
+>Zie [Werken met Meerdere bronopslaglocaties voor Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) voor meer informatie over deze installatie.
 
 ### Overwegingen voor een Opstelling van het Meerdere Team {#considerations}
 
@@ -98,7 +98,7 @@ Met de git-opslagplaats van Cloud Manager en de productiepijplijn wordt de volle
 
 Zonder een dergelijk systeem is er daarentegen een risico dat een update van één team tot problemen met productiestabiliteit kan leiden, omdat elk team afzonderlijk kan implementeren. Daarnaast is coördinatie en geplande uitvaltijd nodig om updates uit te voeren. Met een toenemend aantal teams wordt de coördinatie-inspanning veel complexer en snel onbeheersbaar.
 
-Als er een probleem wordt vastgesteld in de kwaliteitskates, heeft dit geen invloed op de productie en kan het probleem worden opgespoord en opgelost zonder dat Adobe personeel nodig is om in te stappen. Zonder Cloud Service en zonder altijd de volledige plaatsing te testen, kunnen de gedeeltelijke plaatsingen stroomonderbrekingen veroorzaken die een verzoek vereisen om terug te draaien of zelfs volledig te herstellen van een steun. De gedeeltelijke tests kunnen ook leiden tot andere problemen die vervolgens moeten worden opgelost nadat opnieuw coördinatie en steun van het personeel van de Adobe vereist is.
+Als een probleem wordt ontdekt in de kwaliteitskates, wordt de productie niet beïnvloed, en het probleem kan worden ontdekt en worden bevestigd zonder het personeel van de Adobe dat wordt vereist om binnen te stappen. Zonder Cloud Service en zonder altijd de volledige plaatsing te testen, kunnen de gedeeltelijke plaatsingen stroomonderbrekingen veroorzaken die een verzoek vereisen om terug te draaien of zelfs volledig te herstellen van een steun. De gedeeltelijke tests kunnen ook leiden tot andere problemen die vervolgens moeten worden opgelost nadat het personeel van de Adobe opnieuw moet worden gecoördineerd en ondersteund.
 
 >[!TIP]
 >

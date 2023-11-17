@@ -4,9 +4,9 @@ description: In dit artikel wordt beschreven hoe u zoekfacetten in de Experience
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2389'
+source-wordcount: '2387'
 ht-degree: 16%
 
 ---
@@ -108,7 +108,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 1. Voer een van de volgende handelingen uit:
 
    * In de **[!UICONTROL Property Name]** vermeld het pad van het JSON-bestand, waarin u de knooppunten voor de opties definieert en corresponderende sleutelwaardeparen opgeeft.
-   * Tikken ![Pictogram Middelen toevoegen](assets/do-not-localize/aem_assets_add_icon.png) naast het veld Opties om de weergavetekst en de waarde op te geven voor de opties die u in het deelvenster Filters wilt opgeven. Tik/klik om nog een optie toe te voegen ![Pictogram Middelen toevoegen](assets/do-not-localize/aem_assets_add_icon.png) en herhaal de stap.
+   * Tikken ![Pictogram Middelen toevoegen](assets/do-not-localize/aem_assets_add_icon.png) naast het veld Opties om de weergavetekst en de waarde op te geven voor de opties die u in het deelvenster Filters wilt opgeven. Als u nog een optie wilt toevoegen, selecteert u ![Pictogram Middelen toevoegen](assets/do-not-localize/aem_assets_add_icon.png) en herhaal de stap.
 
 1. Zorg ervoor dat **[!UICONTROL Single Select]** is uitgeschakeld, zodat de gebruiker meerdere opties voor bestandstypen tegelijk kan selecteren (bijvoorbeeld Afbeeldingen, Documenten, Multimedia en Archieven). Als u **[!UICONTROL Single Select]** selecteert, kan de gebruiker slechts één optie tegelijk selecteren voor bestandstypen.
 
@@ -145,7 +145,7 @@ De `Tags` Met predicate kunt u op tags gebaseerde zoekopdrachten naar elementen 
 
    ![Typische instellingen van labels voorspellen](assets/tags_predicate.png)
 
-1. In de **[!UICONTROL Description]** veld, voer een optionele beschrijving in en klik/tik op **[!UICONTROL Done]**.
+1. In de **[!UICONTROL Description]** veld, voer een optionele beschrijving in en selecteer **[!UICONTROL Done]**.
 1. Navigeer naar het deelvenster Zoeken. De **[!UICONTROL Tags]** predicate wordt toegevoegd aan het deelvenster Zoeken.
 1. Geef tags op op basis waarvan u de elementen wilt zoeken of een selectie wilt maken in de lijst met suggesties.
 1. Selecteren **[!UICONTROL Match all]** om te zoeken naar overeenkomsten die alle tags bevatten die u opgeeft.

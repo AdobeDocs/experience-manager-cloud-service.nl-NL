@@ -2,9 +2,9 @@
 title: Pagina-annotaties toevoegen
 description: Annotatiemodus gebruiken om annotaties en schetsen op pagina's te laten zoals u notities gebruikt om het revisieproces van de inhoud te begeleiden
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ Annotaties zijn alleen zichtbaar in de modus Annotatie.
 
    ![Voorbeelden van annotaties](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Klik of tik op de annotatie om het dialoogvenster met annotaties te openen en de details ervan weer te geven.
+1. Selecteer de annotatie om het dialoogvenster met annotaties te openen en de details ervan weer te geven.
 
    ![Details van aantekening](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. Tik op de x-knop rechts van de bovenste werkbalk om de modus Annotatie af te sluiten en terug te keren naar de eerder gebruikte modus.
+1. Als u de modus Annotatie wilt afsluiten en wilt terugkeren naar de eerder gebruikte modus, selecteert u de x-knop rechts van de bovenste werkbalk.
 
 ## Annotaties toevoegen en bewerken {#annotating-a-component}
 
@@ -55,9 +55,9 @@ In de modus Annotatie kunt u niet alleen annotaties weergeven, maar ook annotati
 
 1. [Annotatiemodus starten](#annotate-mode) op de pagina.
 
-1. Klik of tik op het pictogram Annotatie toevoegen (plus symbool links op de werkbalk) om annotaties toe te voegen.
+1. Selecteer het pictogram Annotatie toevoegen (plus symbool links op de werkbalk) om annotaties toe te voegen.
 
-1. Klik of tik op de vereiste component (componenten die kunnen worden geannoteerd, worden gemarkeerd met een blauwe rand) om de annotatie toe te voegen en het dialoogvenster te openen:
+1. Selecteer de vereiste component (componenten die kunnen worden geannoteerd worden gemarkeerd met een blauwe rand) om de annotatie toe te voegen en het dialoogvenster te openen:
 
    ![Een aantekening toevoegen](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -80,9 +80,9 @@ In de modus Annotatie kunt u niet alleen annotaties weergeven, maar ook annotati
 
 1. Nadat u een specifieke annotatie hebt bewerkt, kunt u:
 
-   * Klik of tik op de tekstmarkering om de aantekening te openen. Als u de volledige tekst hebt geopend, kunt u wijzigingen aanbrengen of [de annotatie verwijderen.](#deleting-annotations)
+   * Selecteer de tekstmarkering om de aantekening te openen. Als u de volledige tekst hebt geopend, kunt u wijzigingen aanbrengen of [de annotatie verwijderen.](#deleting-annotations)
    * Verander de positie van de tekstmarkering.
-   * Klik of tik op een schetslijn om die schets te selecteren en sleep deze naar de gewenste positie.
+   * Selecteer een schetslijn om die schets te selecteren en sleep deze naar de gewenste positie.
    * Een component verplaatsen of kopiëren
       * Eventuele verwante annotaties en de bijbehorende schetsen worden ook verplaatst of gekopieerd, maar hun positie ten opzichte van de alinea blijft ongewijzigd.
 
@@ -101,9 +101,9 @@ Annotaties en de bijbehorende schetsen kunnen worden verwijderd.
 
 1. [Annotatiemodus starten](#annotate-mode) op de pagina.
 
-1. Klik of tik op de tekstmarkering om de annotatie te openen.
+1. Selecteer de tekstmarkering om de aantekening te openen.
 
-1. Klik of tik op het pictogram Verwijderen.
+1. Selecteer het pictogram Verwijderen.
 
    ![Annotatie verwijderen](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -119,7 +119,7 @@ U kunt alleen specifieke schetsen verwijderen in plaats van de gehele annotatie 
 
 1. [Annotatiemodus starten](#annotate-mode) op de pagina.
 
-1. Klik of tik op de schets. AEM markeert deze met een donkerder blauw vak.
+1. Selecteer de schets. AEM markeert deze met een donkerder blauw vak.
 
    ![Schets selecteren om te verwijderen](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

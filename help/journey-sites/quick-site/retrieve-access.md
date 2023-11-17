@@ -2,9 +2,9 @@
 title: Toegang tot Git Repository ophalen
 description: Leer hoe de front-end ontwikkelaar Cloud Manager gebruikt om toegang te krijgen tot gegevensopslagruimte.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '880'
 ht-degree: 3%
 
 ---
@@ -78,7 +78,7 @@ Neem contact op met de beheerder van Cloud Manager als u deze e-mail niet hebt o
 
 1. Aanmelden bij Adobe Experience Cloud [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) of klik op de koppeling in de welkomstmail.
 
-1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Tik of klik op het bestand dat u wilt openen, zoals opgegeven door de beheerder van Cloud Manager. Als dit uw eerste front-end project voor AEMaaCS is, hebt u waarschijnlijk slechts één programma beschikbaar.
+1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer het bestand dat u wilt openen, zoals opgegeven door de beheerder van Cloud Manager. Als dit uw eerste front-end project voor AEMaaCS is, hebt u waarschijnlijk slechts één programma beschikbaar.
 
    ![Een programma selecteren in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -88,7 +88,7 @@ U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is 
 
 ## Toegang tot opslagplaats ophalen {#repo-access}
 
-1. In de **Pijpleidingen** tikken of klikken op de pagina Cloud Manager **Repo-info openen** knop.
+1. In de **Pijpleidingen** van de pagina Cloud Manager selecteert u de optie **Repo-info openen** knop.
 
    ![Pijpleidingen](assets/pipelines-repo-info.png)
 
@@ -96,13 +96,13 @@ U ziet nu een overzicht van uw programma. De pagina ziet er anders uit, maar is 
 
    ![Repo-info](assets/repo-info.png)
 
-1. Tik of klik op de knop **Wachtwoord genereren** om een wachtwoord voor uzelf te maken.
+1. Selecteer de **Wachtwoord genereren** om een wachtwoord voor uzelf te maken.
 
 1. Sla het gegenereerde wachtwoord op in een beveiligd wachtwoordbeheer. Het wachtwoord wordt nooit meer weergegeven.
 
 1. Kopieer ook de **gebruikersnaam** en **Git, opdrachtregel** velden. U gebruikt deze gegevens later om toegang te krijgen tot het bericht.
 
-1. Tik of klik op **Sluiten**.
+1. Selecteren **Sluiten**.
 
 ## Volgende functies {#what-is-next}
 

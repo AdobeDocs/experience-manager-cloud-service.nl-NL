@@ -5,7 +5,7 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 2%
@@ -134,7 +134,6 @@ Laten we nu de **[!UICONTROL Destination]** in het bovenstaande geval **[!UICONT
 >
 >U kunt de bestaande aanpassing echter verwijderen om de nieuwe [!DNL Manager Publication] functies.
 
-
 ## Assets later publiceren {#publish-assets-later}
 
 De publicatieworkflow van elementen op een latere datum of tijd plannen:
@@ -179,9 +178,10 @@ U kunt elementen, mappen en verzamelingen publiceren naar de [!DNL Experience Ma
 
 ## Aanvraag voor publicatie {#request-publication}
 
-De `Request Publication` Deze optie helpt de workflow van Elementen te verifiëren voordat deze worden gepubliceerd op [!DNL AEM] Elementenomgeving. [!DNL AEM] biedt verschillende machtigingsniveaus voor verschillende gebruikers. U kunt een *contribuant* die elementen uploadt, maar deze pas kunnen publiceren nadat de uploads zijn geverifieerd. Bovendien, zijn *Beheerder* u kunt workflows van de Elementen lezen en schrijven.
+De `Request Publication` Deze optie helpt de workflow van Elementen te verifiëren voordat deze worden gepubliceerd op [!DNL AEM] Elementenomgeving. [!DNL AEM] biedt verschillende machtigingsniveaus voor verschillende gebruikers. U kunt een *contribuant* die elementen uploadt, maar deze pas kunnen publiceren nadat de uploads zijn geverifieerd. Ook als u een *Beheerder* u kunt workflows van de Elementen lezen en schrijven.
 
 De optie Publicatie aanvragen is beschikbaar voor de volgende gebruikers:
+
 * **Medewerker:** Als u een gebruiker bent die kan bijdragen aan [!DNL AEM] Middelen, dan hebt u beperkte toegang tot de [!DNL AEM] Workflow Elementen. `Manage publication` is verborgen voor u. Als medewerker kunt u alleen een bijdrage leveren door Elementen toe te voegen, maar u kunt deze niet publiceren of hebt geen leestoegang tot de workflow.
 
 * **Werkstroomgebruiker:** Deze gebruiker kan geen elementen publiceren, maar heeft wel leestoegang tot de workflow. Als workflowgebruiker kunt u het volgende doen:

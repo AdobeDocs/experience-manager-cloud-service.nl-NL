@@ -2,9 +2,9 @@
 title: Indexeren na migreren van inhoud
 description: Leer hoe het migratieproces de opgenomen inhoud op de Cloud Service-instantie van de bestemming zal indexeren.
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 Zodra de Cloud Acceleration Manager de opname van inhoud in de Cloud Service-instantie heeft voltooid, kan deze worden gebruikt. In eerste instantie wordt de inhoud niet geïndexeerd, wat waarschijnlijk resulteert in een instabiele omgeving waarin problemen zoals ondoorzoekbare inhoud en verminderde prestaties kunnen worden verwacht.
 Voor optimale prestaties op de instantie wordt de inhoud automatisch geïndexeerd tijdens het migratieproces. Er hoeft niets te worden gedaan, behalve om de voortgang van de indexering te volgen.
 
-> Voor informatie over het starten van een inname, zie [Inhoud in Cloud Service invoegen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
+> Voor informatie over het starten van een inname raadpleegt u [Inhoud in Cloud Service invoegen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
 De volgende stappen tonen de algemene stroom u in UI tijdens het indexeren kunt verwachten te zien. Sommige labels bieden handige context in knopinfo. Houd de muisaanwijzer boven items om meer te weten te komen over de huidige indexstatus.
 
@@ -29,7 +29,7 @@ Ga om te beginnen naar Cloud Acceleration Manager. Klik op de projectkaart en kl
 en zie de vermelde banen.
 
 >[!NOTE]
->U kunt de indexerende logboeken bekijken of downloaden door de acties van de innametaak te gebruiken, gebruikend.. dropdown. De logbestanden zijn beschikbaar in het
+>U kunt de indexerende logboeken bekijken of downloaden door de acties van de innametaak te gebruiken, gebruikend.. drop-down lijst. De logbestanden zijn beschikbaar in het
 > &#39;Indexering logbestand&#39;-actiesectie, nadat de indexeertaak is voltooid
 
 ### In behandeling
@@ -52,7 +52,7 @@ Wanneer de indexeertaak succesvol is, is de instantie gereed om te worden gebrui
 
 ### Fouten
 
-Het indexeren van de instantie van de bestemmings Cloud Service zal zeer waarschijnlijk slagen. In sommige gevallen kan dit mislukken en wordt de rij met ingevulde taken als volgt weergegeven. In alle gevallen, kunt u sommige details van de mislukking ontdekken door over de mislukkingsstatus te hangen, en het kan meer informatie verstrekken om u te helpen volgende stappen bepalen. Op dit punt, zijn de indexerende baanlogboeken beschikbaar aan mening of download helpen de bron van de mislukking ontdekken. Als de volgende stap niet duidelijk is, gelieve de Steun van de Adobe met details van de opname en het indexerende logboek te contacteren.
+Het indexeren van de instantie van de bestemmings Cloud Service zal zeer waarschijnlijk slagen. In sommige gevallen kan dit mislukken en wordt de rij met ingevulde taken als volgt weergegeven. In alle gevallen, kunt u sommige details van de mislukking ontdekken door over de mislukkingsstatus te hangen, en het kan meer informatie verstrekken om u te helpen volgende stappen bepalen. Op dit punt, zijn de indexerende baanlogboeken beschikbaar aan mening of download helpen de bron van de mislukking ontdekken. Als de volgende stap niet duidelijk is, contacteer de Steun van de Adobe met details van de opname en het indexerende logboek.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

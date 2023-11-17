@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -73,23 +73,23 @@ Nadat het schakelaarpakket voor uw aangewezen vertaaldienst wordt geïnstalleerd
 
 Een vertaalconfiguratie maken:
 
-1. Klik of tik op **Gereedschappen** -> **Cloud Servicen** -> **Cloud Servicen voor vertaling**.
-1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
+1. Selecteer in het algemene navigatiemenu de optie **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
+1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt creëren. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
    * In dit geval zou een configuratie globaal kunnen worden gemaakt om op alle inhoud, of enkel voor het WKND project van toepassing te zijn.
 
    ![Locatie vertaalconfiguratie](assets/translation-configuration-location.png)
 
-1. Klikken of tikken **Maken** in de werkbalk om de nieuwe configuratie te maken.
-1. Geef de volgende informatie op in de velden en klik of tik op **Maken**.
+1. Selecteren **Maken** in de werkbalk om de nieuwe configuratie te maken.
+1. Geef de volgende informatie op in de velden en selecteer **Maken**.
    1. Selecteren **Configuratietype** in de vervolgkeuzelijst. Selecteren **Translation Integration** in de lijst.
    1. Voer een **Titel** voor uw configuratie. De **Titel** identificeert de configuratie in de **Cloud Servicen** console en in de drop-down lijsten van het paginabezit.
    1. Typ desgewenst een **Naam** om te gebruiken voor het gegevensopslagknooppunt dat de configuratie opslaat.
 
    ![Vertaalconfiguratie maken](assets/create-translation-configuration.png)
 
-1. Tik of klik op **Maken** en de **Configuratie bewerken** verschijnt waar u de configuratieeigenschappen kunt vormen.
+1. Selecteren **Maken** en de **Configuratie bewerken** verschijnt waar u de configuratieeigenschappen kunt vormen.
 
-1. Tik of klik op de knop **Sites** tab.
+1. Aangezien uw inhoud wordt beheerd als sites, selecteert u de optie **Sites** tab.
 
 ![Eigenschappen van vertaalconfiguratie](assets/translation-configuration.png)
 
@@ -103,7 +103,7 @@ Een vertaalconfiguratie maken:
    1. **Tags vertalen** - Schakel dit selectievakje in om codes te vertalen die aan de pagina zijn gekoppeld.
    1. **Vertaling automatisch uitvoeren** - Schakel deze eigenschap in als u vertalingen automatisch naar uw vertaalservice wilt verzenden.
 
-1. Tik of klik op **Opslaan en sluiten**.
+1. Selecteren **Opslaan en sluiten**.
 
 U hebt nu de schakelaar aan uw vertaaldienst gevormd.
 
@@ -117,12 +117,12 @@ Navigeer hiertoe naar de hoofdtaalmap van de inhoud. Voor ons voorbeelddoel is d
 /content/<your-project>/en
 ```
 
-1. Ga naar de globale navigatie en ga naar **Navigatie** -> **Activa** -> **Bestanden**.
-1. Selecteer in de middelenconsole de hoofdtaal die u wilt configureren en klik of tik op **Eigenschappen**.
-1. Tik of klik op de knop **Cloud Servicen** tab.
-1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** dropdown, selecteer uw schakelaar. Het moet in het vervolgkeuzemenu worden weergegeven wanneer u het pakket als [hierboven beschreven.](#connect-translation-provider)
-1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** ook uw configuratie selecteren.
-1. Tik of klik op **Opslaan en sluiten**.
+1. Ga naar de globale navigatie en ga naar **Navigatie** > **Activa** > **Bestanden**.
+1. Selecteer in de middelenconsole de hoofdtaal die u wilt configureren en selecteer **Eigenschappen**.
+1. Selecteer de **Cloud Servicen** tab.
+1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** drop-down lijst, selecteer uw schakelaar. Het moet in de vervolgkeuzelijst worden weergegeven wanneer u het pakket hebt geïnstalleerd als [hierboven beschreven.](#connect-translation-provider)
+1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** vervolgkeuzelijst, ook uw configuratie selecteren.
+1. Selecteren **Opslaan en sluiten**.
 
 ![Cloudserviceconfiguraties selecteren](assets/select-cloud-service-configurations.png)
 

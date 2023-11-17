@@ -1,13 +1,13 @@
 ---
 title: Bulk bewerken van pagina-eigenschappen configureren
 description: Leer hoe u bulkbewerking kunt configureren, zodat u de eigenschappen van meerdere pagina's tegelijk kunt bewerken.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
-
 
 # Bulk bewerken van pagina-eigenschappen configureren {#configuring-bulk-editing-of-page-properties}
 
@@ -20,7 +20,7 @@ Pagina-eigenschappen zijn standaard niet ingeschakeld voor bulkbewerking. Ze moe
 * Bepaalde velden zijn gewoonlijk uniek. U moet beslissen of het zinvol is dergelijke velden in te schakelen voor bulkbewerking, wanneer er één waarde wordt toegepast.
    * Paginatitels zijn bijvoorbeeld bijna altijd uniek.
 * Bepaalde velden kunnen meerdere waarden hebben die een betekenisvolle weergave vereisen bij het renderen.
-   * Bijvoorbeeld een vervolgkeuzelijst met status **Gereed voor publicatie**. Dit kan verschillende waarden hebben voordat bulkbewerkingen worden uitgevoerd, zoals **klaar**, **tijdens de herziening**, **in uitvoering**, enz.
+   * Bijvoorbeeld een vervolgkeuzelijst met status **Gereed voor publicatie**. Dit kan verschillende waarden hebben voordat bulkbewerkingen worden uitgevoerd, zoals **klaar**, **tijdens de herziening**, **in uitvoering**, enzovoort.
 
 Vanwege de mogelijkheid van meerdere waarden wordt aangeraden alleen de volgende veldtypen in te schakelen voor bulkbewerking.
 

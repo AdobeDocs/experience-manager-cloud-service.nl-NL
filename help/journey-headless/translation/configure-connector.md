@@ -2,9 +2,9 @@
 title: De vertaalintegratie configureren voor inhoud zonder kop
 description: Leer hoe u verbinding AEM maken met een vertaalservice.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -70,22 +70,22 @@ Nadat het schakelaarpakket voor uw aangewezen vertaaldienst wordt geïnstalleerd
 
 Een vertaalconfiguratie maken:
 
-1. Klik of tik op **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
-1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
+1. Selecteer in het algemene navigatiemenu de optie **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
+1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt creëren. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
    * In dit geval zou een configuratie globaal kunnen worden gemaakt om op alle inhoud, of enkel voor het WKND project van toepassing te zijn.
 
    ![Locatie vertaalconfiguratie](assets/translation-configuration-location.png)
 
-1. Geef de volgende informatie op in de velden en klik of tik op **Maken**.
+1. Geef de volgende informatie op in de velden en selecteer **Maken**.
    1. Selecteren **Configuratietype** in de vervolgkeuzelijst. Selecteren **Translation Integration** in de lijst.
    1. Voer een **Titel** voor uw configuratie. De **Titel** identificeert de configuratie in de **Cloud Servicen** console en in de drop-down lijsten van het paginabezit.
    1. Typ desgewenst een **Naam** om te gebruiken voor het gegevensopslagknooppunt dat de configuratie opslaat.
 
    ![Vertaalconfiguratie maken](assets/create-translation-configuration.png)
 
-1. Tik of klik op **Maken** en de **Configuratie bewerken** verschijnt waar u de configuratieeigenschappen kunt vormen.
+1. Selecteren **Maken** en de **Configuratie bewerken** verschijnt waar u de configuratieeigenschappen kunt vormen.
 
-1. Inhoudsfragmenten worden opgeslagen als elementen in AEM. Tik of klik op de knop **Activa** tab.
+1. Inhoudsfragmenten worden opgeslagen als elementen in AEM. Selecteer de **Activa** tab.
 
 ![Eigenschappen van vertaalconfiguratie](assets/translation-configuration.png)
 
@@ -102,7 +102,7 @@ Een vertaalconfiguratie maken:
    1. **Alleen-bijwerken translatie uitschakelen** - Als deze optie is ingeschakeld, worden bij het bijwerken van het vertaalproject alle vertaalbare velden voor vertaling ingediend, en niet alleen de velden die zijn gewijzigd sinds de laatste vertaling. Het bijwerken van uw vertaalproject wordt later in de reis besproken.
    1. **Velden voor inhoudsmodellen inschakelen voor vertaling** - Schakel deze optie in zodat de vertaalconfiguratie automatisch velden in de inhoudsmodellen herkent die zijn gebaseerd op de **Vertaalbaar** markering.
 
-1. Tik of klik op **Opslaan en sluiten**.
+1. Selecteren **Opslaan en sluiten**.
 
 U hebt nu de schakelaar aan uw vertaaldienst gevormd.
 
@@ -116,12 +116,12 @@ Navigeer hiertoe naar de hoofdtaalmap van de inhoud. Voor ons voorbeelddoel is d
 /content/dam/<your-project>/en
 ```
 
-1. Ga naar de globale navigatie en ga naar **Navigatie** -> **Activa** -> **Bestanden**.
-1. Selecteer in de middelenconsole de hoofdtaal die u wilt configureren en klik of tik op **Eigenschappen**.
-1. Tik of klik op de knop **Cloud Servicen** tab.
-1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** dropdown, selecteer uw schakelaar. Het moet in het vervolgkeuzemenu worden weergegeven wanneer u het pakket als [hierboven beschreven.](#connect-translation-provider)
-1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** ook uw configuratie selecteren.
-1. Tik of klik op **Opslaan en sluiten**.
+1. Ga naar de globale navigatie en ga naar **Navigatie** > **Activa** > **Bestanden**.
+1. Selecteer in de middelenconsole de hoofdtaal die u wilt configureren en selecteer **Eigenschappen**.
+1. Selecteer de **Cloud Servicen** tab.
+1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** drop-down lijst, selecteer uw schakelaar. Het moet in de vervolgkeuzelijst worden weergegeven wanneer u het pakket hebt geïnstalleerd als [hierboven beschreven.](#connect-translation-provider)
+1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** vervolgkeuzelijst, ook uw configuratie selecteren.
+1. Selecteren **Opslaan en sluiten**.
 
 ![Cloudserviceconfiguraties selecteren](assets/select-cloud-service-configurations.png)
 

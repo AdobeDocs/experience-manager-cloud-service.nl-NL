@@ -4,9 +4,9 @@ description: Onderzoek hoe u de Universele Redacteur kunt gebruiken om om het ev
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,9 @@ Het op plaats en in context bewerken kan vaak voordelig zijn in vergelijking met
 
 Met de Universal Editor kunt u tekst op een flexibele manier in context en op zijn plaats bewerken, zodat u eenvoudig en intuïtief inhoud kunt ontwerpen.
 
-1. De editor moet standaard in **Componenten** -modus. Als dat niet het geval is, tikt u op de knop **Componenten** pictogram in de modusrail links van de redacteur.
+1. De editor moet standaard in **Componenten** -modus. Als dat niet het geval is, selecteert u de **Componenten** pictogram in de modusrail links van de redacteur.
 
-1. Dubbeltik of klik op de titel van het meest recente artikel om dit te bewerken.
+1. Dubbelselecteer de titel van het meest recente artikel om dit te bewerken.
 
    ![De Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
@@ -49,7 +49,7 @@ Met de Universal Editor kunt u tekst op een flexibele manier in context en op zi
 
    ![Tekst bewerken in de Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Druk op Enter/Return of tik of klik buiten de tekstcomponent en uw wijzigingen worden automatisch opgeslagen.
+1. Druk op Enter/Return of selecteer buiten de tekstcomponent en uw wijzigingen worden automatisch opgeslagen.
 
 De Universal Editor slaat uw wijzigingen automatisch op in de ontwerpomgeving. U moet ze nog publiceren zodat uw lezers ze kunnen zien, wat we in een latere stap zullen doen.
 
@@ -57,15 +57,15 @@ De Universal Editor slaat uw wijzigingen automatisch op in de ontwerpomgeving. U
 
 Met de Universal Editor kunt u ook afbeeldingen omwisselen terwijl u in de context van uw inhoud blijft.
 
-1. Resterend in **Componenten** tikt of klikt u op de afbeelding van de surfer om deze te selecteren.
+1. Resterend in **Componenten** selecteert u de afbeelding van de surfer om deze te selecteren.
 
-1. In de componentrail kunt u de details van het element zien. Tik of klik op de knop **Aanbevolen afbeelding** miniatuur.
+1. In de componentrail kunt u de details van het element zien. Selecteer de **Aanbevolen afbeelding** miniatuur.
 
    ![Een afbeelding selecteren om te bewerken](assets/do-not-localize/ue-edit-media.png)
 
-1. In de **Elementen selecteren** venster, omlaag schuiven en tikken of op de knop `surfer-wave-02.JPG` afbeelding om deze te selecteren.
+1. In de **Elementen selecteren** venster, omlaag schuiven en de `surfer-wave-02.JPG` afbeelding om deze te selecteren.
 
-1. Tik of klik op **Selecteren** in de **Elementen selecteren** venster.
+1. Selecteren **Selecteren** in de **Elementen selecteren** venster.
 
    ![Een afbeelding selecteren met het venster Element selecteren](assets/do-not-localize/ue-select-asset.png)
 
@@ -75,7 +75,7 @@ De afbeelding wordt vervangen door de afbeelding die u hebt geselecteerd.
 
 Met de Universal Editor kunt u in de context van de editor communiceren met uw inhoud, waarbij de inhoud wordt weergegeven zoals deze aan de apparaten van uw gebruikers wordt geleverd.
 
-1. Standaard rendert de editor de bureaubladversie van uw inhoud. Tik of klik op de emulatorknop rechtsboven in de editor om het doelapparaat te wijzigen.
+1. Standaard rendert de editor de bureaubladversie van uw inhoud. Selecteer de emulatorknop rechtsboven in de editor om het doelapparaat te wijzigen.
 
    ![Het menu-item Emulator](assets/do-not-localize/ue-emulator-1.png)
 
@@ -83,7 +83,7 @@ Met de Universal Editor kunt u in de context van de editor communiceren met uw i
 
    ![Het menu-item Emulator](assets/do-not-localize/ue-emulator-2.png)
 
-1. Zie de inhoudswijziging in de editor. Het pictogram voor de emulator verandert ook om de modus aan te geven waarin deze zich bevindt. Tik of klik ergens buiten het emulatormenu om het te sluiten en te communiceren met de inhoud.
+1. Zie de inhoudswijziging in de editor. Het pictogram voor de emulator verandert ook om de modus aan te geven waarin deze zich bevindt. Selecteer een willekeurige locatie buiten het emulatormenu om het te sluiten en te communiceren met de inhoud.
 
 1. Zet de emulator terug naar de bureaubladmodus.
 
@@ -91,11 +91,11 @@ U kunt ook exacte afmetingen voor de emulator opgeven en het geëmuleerde appara
 
 ## Voorvertonen en publiceren {#preview}
 
-Omdat u op de inhoud moet tikken of erop moet klikken om deze in de editor te selecteren, kunt u in de editor geen koppelingen volgen of communiceren met de inhoud door te tikken of te klikken wanneer de inhoud in de bewerkingsmodus staat. In de voorbeeldmodus kunt u de koppelingen in de inhoud volgen en ervaart u deze net als uw gebruikers voordat u gaat publiceren.
+Omdat u de inhoud moet selecteren om deze in de editor te selecteren, kunt u in de editor geen koppelingen volgen of communiceren met de inhoud door te tikken of te klikken wanneer de inhoud in de bewerkingsmodus staat. In de voorbeeldmodus kunt u de koppelingen in de inhoud volgen en ervaart u deze net als uw gebruikers voordat u gaat publiceren.
 
-1. Tik of klik in de modus rail links van de editor op **Voorvertoning**.
+1. Selecteer in de modus rail aan de linkerkant van de editor de optie **Voorvertoning**.
 
-1. Tik nu of klik op de knop **Meer informatie** koppeling voor het hoofdartikel.
+1. Selecteer nu de optie **Meer informatie** koppeling voor het hoofdartikel.
 
    ![Voorvertoningsmodus](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -103,7 +103,7 @@ Omdat u op de inhoud moet tikken of erop moet klikken om deze in de editor te se
 
    ![Terug naar de hoofdpagina met de koppeling Terug](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Tik nu of klik op de knop **Publiceren** klikt u rechtsboven in de editor om uw inhoud te publiceren.
+1. Selecteer nu de optie **Publiceren** klikt u rechtsboven in de editor om uw inhoud te publiceren.
 
    ![De menu-items Voorvertoning en Publiceren](assets/do-not-localize/ue-preview-publish-4.png)
 
@@ -117,12 +117,12 @@ Als u het schrijven van inhoud wilt versnellen terwijl het gestructureerd bewerk
 
 1. Selecteer in de modus rail aan de linkerkant van de editor de optie **Componenten**. Hiermee kunt u paginacomponenten in de editor selecteren.
 
-1. Tik of klik op een van de avonturen, zoals **Bali Surf Camp** om het te selecteren.
+1. Selecteer een van de avonturen, zoals **Bali Surf Camp** om het te selecteren.
 
    * Maak een notitie van de blauwe omtrek van de geselecteerde component. Wanneer u een inhoudsfragment selecteert, moet op het tabblad de naam van het inhoudsfragment worden weergegeven. In dit geval **Bali Surf Camp**.
-   * Omdat in de Universal Editor elk object op de pagina kan worden geselecteerd, kunnen componenten die onderdeel zijn van een inhoudsfragment ook afzonderlijk worden geselecteerd. Tik of klik op de plaats die in de illustratie is aangegeven om de volledige component Inhoudsfragment te selecteren.
+   * Omdat in de Universal Editor elk object op de pagina kan worden geselecteerd, kunnen componenten die onderdeel zijn van een inhoudsfragment ook afzonderlijk worden geselecteerd. Selecteer de locatie die in de illustratie wordt aangegeven om de volledige component Content Fragment te selecteren.
 
-1. De **Bewerken** verschijnt op de componentrail. Tik of klik op de knop **Bewerken** pictogram om de editor voor inhoudsfragmenten te openen op een nieuw tabblad.
+1. De **Bewerken** verschijnt op de componentrail. Selecteer de **Bewerken** pictogram om de editor voor inhoudsfragmenten te openen op een nieuw tabblad.
 
 ![Inhoudsfragmenten selecteren in de Universal Editor](assets/do-not-localize/ue-content-fragments.png)
 

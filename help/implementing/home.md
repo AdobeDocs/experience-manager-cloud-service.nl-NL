@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service implementeren
 description: Zelfhulpbronnen en documentatiekoppelingen voor de implementatie van Adobe Experience Manager as a Cloud Service
 landing-page-description: Leer hoe u de Experience Manager as a Cloud Service-implementatie kunt aanpassen.
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '404'
 ht-degree: 74%
 
 ---
@@ -26,7 +26,7 @@ Vind zelf-hulp middelen over implementatie voor as a Cloud Service Experience Ma
 
 | Handboek | Beschrijving |
 |---|---|
-| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager als cloudservice, inclusief een inleiding, terminologie, architectuur, enzovoort. |
+| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager als cloudservice, inclusief een inleiding, terminologie, architectuur enzovoort. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
 | [Onboarding Journaal](/help/journey-onboarding/overview.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
@@ -37,7 +37,7 @@ Vind zelf-hulp middelen over implementatie voor as a Cloud Service Experience Ma
 | [Overstappen naar AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Krijg inzicht in het overgangstraject naar Cloud Service. |
 | [Handboek voor connectors](/help/connectors/home.md) | Leer hoe u connectors integreert in Experience Manager as a Cloud Service. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
-| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer informatie over Commerce Integration Framework op AEM as a Cloud Service. |
+| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer weten over Commerce integration framework op AEM as a Cloud Service? |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 

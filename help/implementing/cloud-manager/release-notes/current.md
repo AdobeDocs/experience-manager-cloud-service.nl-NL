@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.11.0 in Adobe Experience Ma
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -44,13 +44,13 @@ Maak deel uit van ons programma voor vroegtijdige goedkeuring en heb de kans om 
 
 Als u GitHub gebruikt om uw bewaarplaatsen te beheren, [u kunt code binnen uw bewaarplaatsen van GitHub door de Manager van de Wolk nu bevestigen.](/help/implementing/cloud-manager/managing-code/byo-github.md) Door deze integratie is het niet nodig de code consistent te synchroniseren met de opslagplaats van de Adobe en kunt u terugtrekkingsverzoeken verifiëren voordat u ze samenvoegt in de hoofdvertakkingen.
 
-Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `Grp-CloudManager_BYOG@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
+Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `Grp-CloudManager_BYOG@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
 
 ### Aangepaste machtigingen {#custom-permissions}
 
 [Aangepaste machtigingen voor Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) Hiermee kunt u nieuwe aangepaste machtigingsprofielen maken met configureerbare machtigingen om de toegang tot programma&#39;s, pijpleidingen en omgevingen voor gebruikers van Cloud Manager te beperken.
 
-Als u interesse hebt in het testen van deze nieuwe functie en het delen van uw feedback, kunt u een e-mail sturen `Grp-CloudManager-custom-permissions@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
+Als u deze nieuwe functie wilt testen en uw feedback wilt delen, stuurt u een e-mail naar `Grp-CloudManager-custom-permissions@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
 
 ### Self-Service inhoud herstellen {#content-restore}
 
@@ -59,7 +59,7 @@ Als u interesse hebt in het testen van deze nieuwe functie en het delen van uw f
 * Point-in-time back-upherstel voor de voorgaande 24 uur
 * Herstel van vaste tijd tot zeven dagen
 
-Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-restorefrombackup-adopter@adobe.com` van uw e-mail die aan uw Adobe ID is gekoppeld. Opmerking:
+Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `aemcs-restorefrombackup-adopter@adobe.com` van uw e-mail die aan uw Adobe ID is gekoppeld.
 
 * Het programma voor vroege adoptie is beperkt tot ontwikkelomgevingen.
 * De beschikbaarheid van het programma voor vroege adoptie van deze functie is beperkt.
@@ -71,7 +71,7 @@ Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een 
 
 Het dashboard maakt gebruik van Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
 
-Geïnteresseerd in het testen van het nieuwe dashboard? Stuur een e-mail naar `aem-lighthouse-pilot@adobe.com` via je e-mail die aan je Adobe ID is gekoppeld. We kunnen je aan de slag.
+Geïnteresseerd in het testen van het nieuwe dashboard? Een e-mail verzenden naar `aem-lighthouse-pilot@adobe.com` via je e-mail die aan je Adobe ID is gekoppeld. We kunnen je aan de slag.
 
 ## Bekende problemen {#known-issues}
 

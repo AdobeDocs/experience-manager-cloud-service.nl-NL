@@ -3,9 +3,9 @@ title: AEM Documentenreizen
 description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en ongelijke functies te koppelen, zodat u een zakelijk doel op een manier van best practices kunt oplossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ De reizen zorgen ervoor dat de lezer weet hoe AEM een probleem kan oplossen in p
 
 ### Oriëntatie van best practices {#best-practices}
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op het nieuwste onderzoek, bewezen ervaring met de implementatie van Adobe-services en feedback van klantprojecten.
+Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie van Adobe-services en feedback van klantprojecten.
 
-Als u wilt weten hoe Adobe adviseert om een bedrijfsgeval met AEM op te lossen, zijn de Reizen van de Documentatie waar te beginnen.
+Als u wilt weten hoe de Adobe adviseert om een bedrijfsgeval met AEM op te lossen, zijn de Reizen van de Documentatie waar te beginnen.
 
 ## Hoe wordt een documentatiereis gestructureerd? {#structure}
 
@@ -49,7 +49,7 @@ Een typisch Documentatiereis heeft de volgende delen.
 * Beschrijving van de theorie die nodig is om het probleem op te lossen
 * Vereisten en vereisten
 * Beschrijving van het beoogde publiek
-* Uitvoeringsstappen
+* Implementatiestappen
 
 Het doel van een documentatiereis is de lezer vertrouwd te maken met de basisbeginselen van hoe AEM verschillende functies en gereedschappen gebruikt om één bedrijfsprobleem op te lossen. Om deze reden, illustreren de implementatiestappen de gemeenschappelijkste gebruikspatronen en de belangrijkste eigenschappen en de opties. Gedetailleerde configuratieopties zijn gekoppeld aan de technische documentatie voor verdere lezing.
 
@@ -65,7 +65,7 @@ Er zijn echter veel verschillende soorten AEM gebruikers met verschillende behoe
 * Ontwikkelaars
 * Inhoudsauteurs
 * Vertaalspecialisten
-* Inhoudsarchitecten
+* Inhoud architecten
 
 Elke reis begint met een duidelijke verklaring van het beoogde publiek voor de reis. Omdat niemand in een vacuüm werkt, wanneer de lezer de hulp van een systeemgebruiker of een persoon vereist, wordt dit duidelijk verklaard binnen de reis.
 
@@ -77,12 +77,12 @@ Documentatiereizen zijn bedoeld als aanvulling op bestaande AEM technische docum
 |---|---|---|---|---|---|---|
 | Documentatiereis | Een reis bepaalt hoe AEM een algemeen bedrijfsprobleem door een verhaal kan oplossen dat lezers door complexe, onderling verbonden processen en eigenschappen begeleidt. Het illustreert hoe de veelvoudige eigenschappen samenwerken om een bedrijfsbehoefte op een beste praktijkwijze op te lossen. | Readers die nieuw zijn voor AEM | Algemene kennis van CMS | Gedetailleerde opties en configuratie | Tekst | Ca. 1 uur |
 | Technische documenten | De technische documenten richten zich op individuele eigenschappen, die de technische werking van de eigenschap en elke optie specificeren beschikbaar aan de gebruiker. | Ervaren AEM gebruikers | AEM | Context en achtergrond | Tekst | Varieert |
-| Zelfstudie | Een zelfstudie is een diepgaand duiken in een onderwerp dat een ontwikkelaar of beheerder toont hoe te om een technisch doel (over het algemeen programmering of systeemconfiguratie) op een geleidelijke manier te bereiken, die specifieke voorbeelden en voorbeeldcode verstrekt, gewoonlijk leveraging een beperkte reeks eigenschappen. | AEM ontwikkelaars of beheerders | AEM | Achtergrond en theorie | Video | > 1 uur |
-| Aan de slag | Een gids Aan de slag is een bliksemsnelle analyse van een specifieke nieuwe AEM eigenschap. Het is een snel overzicht van een individuele eigenschap, die de gebruiker door de belangrijke (maar niet alle) stappen leidt aan het vormen en het gebruiken van een eenvoudig gebruiksgeval. | AEM Admins | AEM | Achtergrond, theorie, gedetailleerde opties | Tekst | &lt;1 uur |
+| Zelfstudie | Een leerprogramma is een diepgaande duik in een onderwerp dat een ontwikkelaar of admin toont hoe te om een technisch doel (over het algemeen programmering of systeemconfiguratie) op een geleidelijke manier te bereiken, die specifieke voorbeelden en voorbeeldcode verstrekken, gewoonlijk gebruikend een beperkte reeks eigenschappen. | AEM ontwikkelaars of beheerders | AEM | Achtergrond en theorie | Video | > 1 uur |
+| Aan de slag | Een gids Aan de slag is een bliksemsnelle analyse van een specifieke nieuwe AEM eigenschap. Het is een snel overzicht van een individuele eigenschap, die de gebruiker door de belangrijke (maar niet alle) stappen leidt aan het vormen en het gebruiken van een eenvoudig gebruiksgeval. | AEM | AEM | Achtergrond, theorie, gedetailleerde opties | Tekst | &lt;1 uur |
 
 ## Welke reizen zijn er? {#journeys}
 
-Er zijn een aantal Documentatiereizen reeds beschikbaar aan u. Aangezien elke reis als verhaal wordt ontworpen, begin met de inleiding en gelezen helemaal door zodat kunt u een volledig inzicht van het onderwerp in de context van AEM krijgen.
+Er zijn verschillende documentatiereizen die u al hebt. Aangezien elke reis als verhaal wordt ontworpen, begin met de inleiding en gelezen helemaal door zodat kunt u een volledig inzicht van het onderwerp in de context van AEM krijgen.
 
 | Reis | Beschrijving |
 |---|---|
@@ -93,6 +93,6 @@ Er zijn een aantal Documentatiereizen reeds beschikbaar aan u. Aangezien elke re
 | [AEM Onboarding Journey](/help/journey-onboarding/overview.md) | Begin hier om snel aan de slag te gaan met uw nieuwe AEM as a Cloud Service omgeving! |
 | [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md) | Begin hier voor een begeleide reis door het eenvoudig te gebruiken AEM Snelle hulpmiddel van de Verwezenlijking van de Plaats om de front-end ontwikkeling van uw AEM Plaats te stroomlijnen en snel uw plaats aan te passen zonder AEM achtergrondkennis. |
 | AEM Commerce-reis | Binnenkort verkrijgbaar! |
-| [AEM as a Cloud Service migratiereis](/help/journey-migration/getting-started.md) | Begin hier voor een stapsgewijze reis over hoe te om van uw op-gebouw of Adobe Beheerde AEM installatie aan de volledig op wolk gebaseerde AEM as a Cloud Service te migreren en aan zijn vele voordelen worden geïntroduceerd. |
+| [AEM as a Cloud Service migratiereis](/help/journey-migration/getting-started.md) | Begin hier voor een stapsgewijze reis over hoe te om van uw op-gebouw of Adobe Beheerde AEM installatie aan volledig op wolk gebaseerde AEM as a Cloud Service te migreren en aan zijn vele voordelen worden geïntroduceerd. |
 
 Ga terug voor meer inhoud wanneer nieuwe reizen beschikbaar worden.

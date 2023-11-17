@@ -4,9 +4,9 @@ description: Begrijp hoe te om inhoud voor uw Contentfragmenten te ontwerpen, da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2251'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
    * in de **Eigenschappen** kunt u de **Titel** en **Beschrijving** voor het fragment, of **Variatie**
 * centraal deelvenster: geeft de daadwerkelijke velden en inhoud van de geselecteerde variatie weer
    * kunt u de inhoud bewerken
-   * indien **Tijdelijke aanduiding voor tab** velden worden gedefinieerd binnen het model dat ze hier worden weergegeven en kunnen worden gebruikt voor navigatie; ze worden horizontaal weergegeven of als een vervolgkeuzelijst
+   * indien **Tijdelijke aanduiding voor tab** de velden worden gedefinieerd binnen het model dat ze hier worden weergegeven en kunnen worden gebruikt voor navigatie; ze worden horizontaal weergegeven of als een vervolgkeuzelijst.
 
 ![Inhoudsfragmenteditor - Overzicht](assets/cf-authoring-overview.png)
 
@@ -345,7 +345,7 @@ Op het tabblad Eigenschappen (rechterdeelvenster) kunt u ook het volgende bewerk
 
 * **Titel**
 * **Beschrijving**
-* **Tags**: het vervolgkeuzemenu of het selectiedialoogvenster gebruiken
+* **Tags**: gebruiken van de drop-down lijst, of de selectiedialoog
 
   ![Content Fragment Editor - Tags beheren](assets/cf-authoring-edit-tags.png)
 
@@ -475,8 +475,6 @@ De **Velden** worden alle velden in het inhoudsfragment weergegeven. Het pictogr
 </table>
 
 ## Goed om te weten {#good-to-know}
-
-Daarnaast:
 
 * U moet een inhoudsfragment bewerken [de juiste machtigingen](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
 

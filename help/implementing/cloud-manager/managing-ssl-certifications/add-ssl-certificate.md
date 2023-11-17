@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen
 description: Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma's van Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma&#39;
 
 ## Certificaatvereisten {#certificate-requirements}
 
-Controleer de sectie **Certificaatvereisten** van het document [Inleiding tot het beheren van SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) om ervoor te zorgen dat het certificaat u wenst toe te voegen door AEM as a Cloud Service wordt gesteund.
+De sectie bekijken **Certificaatvereisten** van het document [Inleiding tot het beheren van SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) om ervoor te zorgen dat het certificaat u wilt toevoegen door AEM as a Cloud Service wordt gesteund.
 
 ## Een certificaat toevoegen {#adding-a-cert}
 

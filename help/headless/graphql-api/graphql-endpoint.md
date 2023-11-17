@@ -3,9 +3,9 @@ title: GraphQL-eindpunten beheren in AEM
 description: Leer hoe u GraphQL-eindpunten in Adobe Experience Manager as a Cloud Service beheert voor levering van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Om het overeenkomstige eindpunt toe te laten:
 1. Selecteer **Maken**.
 1. De **Nieuw GraphQL-eindpunt maken** wordt geopend. Hier kunt u opgeven:
    * **Naam**: naam van het eindpunt; u kunt elke tekst invoeren.
-   * **GraphQL-schema gebruiken dat wordt geleverd door**: gebruik het vervolgkeuzemenu om de gewenste site of het vereiste project te selecteren.
+   * **GraphQL-schema gebruiken dat wordt geleverd door**: gebruik de vervolgkeuzelijst om de gewenste site of het vereiste project te selecteren.
 
    >[!NOTE]
    >

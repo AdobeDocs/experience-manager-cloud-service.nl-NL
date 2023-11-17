@@ -4,9 +4,9 @@ description: Nadat u uw wolkenmiddelen hebt gevormd, geef uw teamtoegang tot AEM
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '885'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ In dit deel van het [aan boord gaan,](overview.md) u leert hoe te om u teamtoega
 
 Nadat u het vorige document in deze instapreis hebt gelezen, [Omgevingen maken,](create-environments.md) en uw cloudbronnen geconfigureerd hebben, verleent u uw team toegang tot AEM zelf met behulp van AEM productprofielen. Als systeembeheerder, doet u dit door AEM productprofielen toe te wijzen.
 
-Na het lezen van dit document moet u begrijpen:
+Na het lezen van dit document is het verstandig:
 
 * Wat AEM productprofielen zijn.
 * Teamleden toevoegen aan AEM gebruikersproductprofiel.

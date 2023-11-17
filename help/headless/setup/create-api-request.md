@@ -2,9 +2,9 @@
 title: Een API-verzoek maken - headless Setup
 description: Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van inhoudsfragmenten en AEM middelen REST API voor het beheer van inhoudsfragmenten.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Voordat de GraphQL API&#39;s kunnen worden gebruikt, moet een GraphQL-eindpunt w
 1. Selecteer **Maken**.
 1. De **Nieuw GraphQL-eindpunt maken** wordt geopend. Hier kunt u opgeven:
    * **Naam**: naam van het eindpunt; u kunt elke tekst invoeren.
-   * **GraphQL-schema gebruiken dat wordt geleverd door**: gebruik dropdown om de vereiste configuratie te selecteren.
+   * **GraphQL-schema gebruiken dat wordt geleverd door**: gebruik de vervolgkeuzelijst om de vereiste configuratie te selecteren.
 1. Bevestigen met **Maken**.
 1. In de console **Pad** wordt weergegeven op basis van de eerder gemaakte configuratie. Dit pad wordt gebruikt om GraphQL-query&#39;s uit te voeren.
 

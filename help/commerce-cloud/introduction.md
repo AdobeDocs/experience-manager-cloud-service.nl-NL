@@ -1,11 +1,11 @@
 ---
 title: Inleiding en overzicht
-description: Inleiding en overzicht van inhoud en handel. Het Kader van de Integratie van de Handel van de Experience Manager (CIF) wordt geadviseerd Adobe om de handelsdiensten van Adobe Commerce en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
+description: Inleiding en overzicht van inhoud en handel. Het Commerce integration framework van de Experience Manager (CIF) is het geadviseerde patroon van de Adobe om handelsdiensten van Adobe Commerce en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -24,58 +24,58 @@ Merken kunnen Experience Manager met Adobe Commerce, een deel van Adobe Experien
 * Ervaringen aanpassen om conversie te stimuleren
 * Eenmaal maken en overal publiceren
 * Ervaringen voor klanten verrijken en onderscheiden
-* Het schrijven stroomlijnen met commerciële gegevenstoegang
+* Het schrijven van programmacode stroomlijnen met commerciële gegevenstoegang
 
-## Inleiding tot AEM Commerce Integration Framework (CIF) {#cif-intro}
+## Inleiding tot AEM Commerce integration framework (CIF) {#cif-intro}
 
-Aangezien deze projecten te maken hebben met de complexiteit van de integratie van een handelsoplossing. Een handelsoplossing kan om het even wat van een commerciële oplossing zoals Adobe Commerce Cloud aan een reeks douanehandelsdiensten zijn. De integratie is in hoge mate afhankelijk van de gebruiksgevallen en het ecosysteem. Het raakt gewoonlijk verschillende plaatsen en komt in vele verschillende aroma&#39;s voor:
+Aangezien deze projecten te maken hebben met de complexiteit van de integratie van een handelsoplossing. Een handelsoplossing kan om het even wat van een commerciële oplossing zoals Adobe Commerce Cloud aan een reeks van de douanehandelsdiensten zijn. De integratie is in hoge mate afhankelijk van de gebruiksgevallen en het ecosysteem. Het raakt gewoonlijk verschillende plaatsen en komt in vele verschillende aroma&#39;s voor:
 
 * Integratie van een complex en dynamisch ecosysteem (bijvoorbeeld productcatalogi)
-* Zakelijk moet productinhoud met zijn eigen levenscyclus efficiënt en alomvattend beheren
+* Bedrijven moeten de productinhoud met hun eigen levenscyclus op een efficiënte en alomtegenwoordige manier beheren
 * Het bouwen van complexe en gepersonaliseerde winkelreizen voor verschillende koppen
 * Mogelijkheid om snel op de achtergrond en op de voorgrond aan te passen en te innoveren
-* Het runnen van een scalable en stabiele E2E infrastructuur die voor piekprestaties (verkoop van Flash, Zwarte Vrijdag,...) wordt gebouwd. Dit omvat verenigd onderzoek en geheim voorgeheugenbeheer.
+* Het runnen van een scalable en stabiele E2E infrastructuur die voor piekprestaties (de verkoop van de Flash, Zwarte Vrijdag,...) wordt gebouwd. Dit omvat verenigd onderzoek en geheim voorgeheugenbeheer.
 
-Deze ingewikkeldheid opent de deur naar potentiële punt van mislukkingen, verhoogde TCO, vertragingen, en verminderde waardesrealisatie. Deze redenen hebben geleid tot de ontwikkeling van het kader voor de integratie van de handel (CIF), dat een aanvulling vormt voor de Experience Manager. CIF breidt de Experience Manager met handelsmogelijkheden uit en normaliseert de integratie met een commerciële motor. Het resultaat is een toekomstbestendige, stabiele en schaalbare oplossing met lagere totale eigendomskosten. Het ontgrendelt technische en bedrijfsinnovatie met flexibele gereedschappen en naadloos geïntegreerde functies om aantrekkelijke ervaringen op handelsgebied op te bouwen.
+Deze ingewikkeldheid opent de deur naar potentiële punt van mislukkingen, verhoogde TCO, vertragingen, en verminderde waardesrealisatie. Deze redenen hebben geleid tot de ontwikkeling van het Commerce integration framework (CIF), dat een aanvulling vormt voor de Experience Manager. CIF breidt de Experience Manager met handelsmogelijkheden uit en normaliseert de integratie met een handelscultuur. Het resultaat is een toekomstbestendige, stabiele en schaalbare oplossing met lagere totale eigendomskosten. Het ontgrendelt technische en bedrijfsinnovatie met flexibele gereedschappen en naadloos geïntegreerde functies om aantrekkelijke ervaringen op handelsgebied op te bouwen.
 
-![CIF-elementen](./assets/CIF/CIF_Overview.png)
+![CIF Elements](./assets/CIF/CIF_Overview.png)
 
-## CIF met succes steunend Klanten sinds 2013 {#support}
+## CIF klanten sinds 2013 met succes ondersteunen {#support}
 
 Met meer dan 200 klanten, heeft CIF zich als succesvol ingrediënt voor een succesvol inhoud &amp; handelproject gevestigd. Dit biedt vandaag en in de toekomst waarde voor IT en bedrijven. Recente klantprojecten beschrijven CIF als een &quot;Grote accelerator en een enorme tijdbesparende server met veel waarde&quot;.
 
-## CIF-uitkeringen {#cif-benefits}
+## CIF {#cif-benefits}
 
-CIF verstrekt out-of-the-box belangrijkste componenten van de handel die de behoefte aan douanecode verminderen, die de tijd aan markt voor merken versnelt. Alle kerncomponenten van de doos met Adobe-zijgegevenslaag aan hydraatklantenprofielen, zoals het verenigde profiel zijn geïntegreerd. Dit profiel legt in detail het gedrag van een bezoeker vast, dat kan worden gebruikt om de reis van de klant in real time te voorspellen en te personaliseren.
+CIF verstrekt uit-van-de-doos de kerncomponenten van de handel die de behoefte aan douanecode verminderen, die de tijd aan markt voor merken versnelt. Alle kerncomponenten worden geïntegreerd uit de doos met cliënt-zijgegevenslaag van de Adobe om klantenprofielen, zoals het verenigde profiel te hydrateren. Dit profiel legt in detail het gedrag van een bezoeker vast, dat kan worden gebruikt om de reis van de klant in real time te voorspellen en te personaliseren.
 
-De toe:voegen-on CIF brengt productcontext in Experience Manager en verstrekt auteurshulpmiddelen zoals een productconsole en product/categoriekiezers die de marktleider machtigen om onvoorstelbare ervaringen in Experience Manager tot stand te brengen en te leveren zonder op de ontwikkelaar te vertrouwen. De voordelen zijn:
+De CIF toe:voegen-op brengt productcontext in Experience Manager en verstrekt auteurshulpmiddelen zoals een productconsole en product/categoriekiezers die de tellers machtigen om onvoorstelbare ervaringen in Experience Manager tot stand te brengen en te leveren zonder op de ontwikkelaar te vertrouwen. De voordelen zijn onder meer:
 
 ### Ervaringen {#experiences}
 
-De krachtige hulpmiddelen van CIF in AEM laten inhoudsscheppers toe om rijke en gepersonaliseerde handelservaringen op een scalable en levering agnostische manier snel te bouwen om van bedrijfskansen te profiteren.
+De krachtige CIF hulpmiddelen in AEM laten inhoudsscheppers toe om rijke en gepersonaliseerde handelservaringen op een scalable en levering agnostische manier snel te bouwen om van bedrijfskansen te profiteren.
 
-![CIF-elementen](./assets/CIF/CIF_Product_Experience_Management.png)
+![CIF Elements](./assets/CIF/CIF_Product_Experience_Management.png)
 
 ### Tijd-aan-Waarde (TTV) {#ttv}
 
-Versnelt projectontwikkeling met [AEM kerncomponenten](https://www.aemcomponents.dev/), [AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)en integratiepatronen voor PWA (headless content &amp; commerce).
+Versnelt projectontwikkeling met [AEM kerncomponenten](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)en integratiepatronen voor PWA (headless content &amp; commerce).
 
-CIF wordt gebouwd voor ononderbroken innovatie met een altijd bijgewerkte toe:voegen-op, die klant toestaan om tot nieuwe en betere eigenschappen toegang te hebben.
+CIF wordt gebouwd voor voortdurende innovatie met een altijd bijgewerkte toe:voegen-aan, die klant toestaan om tot nieuwe en betere eigenschappen toegang te hebben.
 
 ### Integrations {#integrations}
 
-Sluit uw ecosysteem (bijvoorbeeld handelsoplossing) met de Experience Cloud aan gebruikend  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), een serverloze PaaS op basis van microservices, en [Referentie-uitvoering van CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Sluit uw ecosysteem (bijvoorbeeld handelsoplossing) met het Experience Cloud aan gebruikend  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), een serverloze PaaS zonder microservice, en [CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Beproefde patronen en beste praktijken {#proven}
 
-CIF steunt klanten met gestandaardiseerde integratiepatronen die op beste praktijken worden gebaseerd. Dit helpt klanten om vandaag succesvol te zijn en is flexibel om met de klant te groeien en aan toekomstige vereisten aan te passen:
+CIF ondersteunt klanten met gestandaardiseerde integratiepatronen op basis van best practices. Dit helpt klanten om vandaag succesvol te zijn en is flexibel om met de klant te groeien en aan toekomstige vereisten aan te passen:
 
 * Hiermee worden typische problemen met de integratie van productcatalogi die zich kunnen voordoen, uit de weg geruimd. Voorbeelden:
    * Prestatieproblemen met verhoogde catalogushoeveelheid of complexiteit
    * Geen toegang tot gefaseerde gegevens
    * Behoefte aan real-time productgegevens en ervaringen
-* Een groeiende digitale volwassenheid leidt tot een behoefte aan ervaringsbeheer. CIF wordt geleverd met mogelijkheden voor het beheer van productervaring die stapsgewijs kunnen worden geïntegreerd zonder extra IT-inspanningen.
-* Gereed voor omnichannel: CIF steunt een verscheidenheid van aanraakpunttechnologieën (server-kant, hybride, cliënt-kant) met patronen, versnellers en kerncomponenten.
+* Een groeiende digitale volwassenheid leidt tot een behoefte aan ervaringsbeheer. CIF wordt geleverd met beheermogelijkheden voor productervaring die stapsgewijs kunnen worden geïntegreerd zonder extra IT-inspanningen.
+* Gereed voor omnichannel: CIF ondersteunt diverse aanraakpunttechnologieën (server-side, hybride, client-side) met patronen, versnellers en kerncomponenten.
 
 ## Reis {#journey}
 

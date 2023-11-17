@@ -3,7 +3,7 @@ title: "[!DNL Assets view] gebruikersinterface"
 description: De gebruikersinterface en navigatie begrijpen in [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Wanneer u zich aanmeldt [!DNL Assets view], ziet u de volgende interface.
 U kunt door de mappen bladeren vanuit de hoofdgebruikersinterface of vanuit de linkerzijbalk. Wanneer u bladert, kunt u de interface gebruiken om elementminiaturen weer te geven en visueel door de opslagplaats te bladeren of elementdetails weer te geven om snel het gewenste element te vinden. In de linkerzijbalk zijn de volgende opties beschikbaar:
 
 * [Mijn werkruimte](/help/assets/my-workspace-assets-view.md): Middelen bevatten nu een aanpasbare werkruimte die widgets biedt voor eenvoudige toegang tot belangrijke gebieden van de gebruikersinterface van Elementen en informatie die voor u het meest relevant is. Deze pagina dient als een one-stop oplossing om een overzicht van uw het werkpunten te verstrekken en snelle toegang tot zeer belangrijke werkschema&#39;s te geven. Een handiger toegang tot deze opties verhoogt de efficiëntie en snelheid van de inhoud.
-* [Taken](/help/assets/my-workspace-assets-view.md): U kunt de taken bekijken die onder **Mijn taken** tab. U kunt de taken die u hebt gemaakt onder **Toegewezen taken** tab. Bovendien worden de taken die u voltooit gevestigd onder **Voltooide taken** tab.
+* [Taken](/help/assets/my-workspace-assets-view.md): U kunt de taken bekijken die onder **Mijn taken** tab. U kunt de taken die u hebt gemaakt onder **Toegewezen taken** tab. De taken die u uitvoert, bevinden zich ook onder **Voltooide taken** tab.
 * [Activa](/help/assets/manage-organize-assets-view.md): Lijst met alle mappen in een boomstructuurweergave waartoe u toegang hebt.
 * **Onlangs bekeken**: Lijst met elementen waarvan u onlangs een voorvertoning hebt weergegeven. [!DNL Assets view] geeft alleen de elementen weer die u voorvertoont. De elementen die u voorbij schuift tijdens het bladeren door de bestanden of mappen in de opslagplaats worden niet weergegeven.
 * [Verzamelingen](/help/assets/manage-collections-assets-view.md): Een verzameling is een set elementen, mappen of andere verzamelingen in de weergave Adobe Experience Manager Assets. Gebruik verzamelingen om elementen tussen gebruikers te delen. In tegenstelling tot mappen kan een verzameling elementen van verschillende locaties bevatten. U kunt meerdere verzamelingen delen met een gebruiker. Elke verzameling bevat verwijzingen naar elementen. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.

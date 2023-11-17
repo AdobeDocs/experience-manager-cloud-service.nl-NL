@@ -2,9 +2,9 @@
 title: Architectuur van Universal Editor
 description: Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Dit document schetst elk van deze bouwstenen en hoe zij gegevens uitwisselen.
 
 >[!TIP]
 >
->Als u de Universal Editor en de bijbehorende architectuur in actie wilt zien, raadpleegt u het document [Aan de slag met de Universal Editor in AEM](getting-started.md) om te leren hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
+>Zie voor informatie over de Universal Editor en de bijbehorende architectuur [Aan de slag met de Universal Editor in AEM](getting-started.md) om te leren hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 
 ### Editors {#editors}
 

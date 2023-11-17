@@ -2,9 +2,9 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De meest gangbare gebruiksgevallen voor het gebruik van omgevingsvariabelen zijn
 >U moet lid zijn van de [**Implementatiebeheer** rol](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) om omgevingsvariabelen toe te voegen of te wijzigen.
 
 1. Aanmelden bij Adobe Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer het bestand dat u wilt beheren.
+1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer de map die u wilt beheren.
 1. Selecteer de **Omgevingen** selecteert u vervolgens in het linkernavigatievenster de omgeving waarvoor u een omgevingsvariabele wilt maken.
 1. Selecteer binnen de details van de omgeving de optie **Configuratie** dan selecteert u **Toevoegen** om de **Omgevingsconfiguratie** in.
    * Als u voor het eerst een omgevingsvariabele toevoegt, kunt u een **Configuratie toevoegen** midden op de pagina. U kunt deze knop of **Toevoegen** om de **Omgevingsconfiguratie** in.
@@ -72,13 +72,13 @@ Een indicator met de status **Bijwerken** wordt getoond bij de bovenkant van de 
 Nadat u omgevingsvariabelen hebt gemaakt, kunt u deze bijwerken met de opdracht **Toevoegen/bijwerken** knop om het dialoogvenster **Omgevingsconfiguratie** in.
 
 1. Aanmelden bij Adobe Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer het bestand dat u wilt beheren.
+1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer de map die u wilt beheren.
 1. Selecteer de **Omgevingen** selecteert u vervolgens in het linkernavigatievenster de omgeving waarvoor u een omgevingsvariabele wilt maken.
 1. Selecteer binnen de details van de omgeving de optie **Configuratie** dan selecteert u **Toevoegen/bijwerken** in de rechterbovenhoek **Omgevingsconfiguratie** in.
 
    ![Knop Toevoegen/Bijwerken voor variabelen](assets/add-update-variables.png)
 
-1. Selecteer met de knop Ovaal in de laatste kolom van de rij van de variabele die u wilt wijzigen de optie **Bewerken** of **Verwijderen**.
+1. Selecteer met de knop Ovaal in de laatste kolom van de rij van de variabele die u wilt wijzigen **Bewerken** of **Verwijderen**.
 
    ![Variabele bewerken of verwijderen](assets/edit-delete-variable.png)
 
@@ -88,13 +88,13 @@ Nadat u omgevingsvariabelen hebt gemaakt, kunt u deze bijwerken met de opdracht 
 
    ![Variabele bewerken](assets/edit-variable.png)
 
-1. Nadat u alle vereiste configuratiewijzigingen hebt aangebracht, selecteert u **Opslaan**.
+1. Nadat u de vereiste configuratiewijzigingen hebt aangebracht, selecteert u **Opslaan**.
 
 [Zoals bij het toevoegen van variabelen](#add-variables) een indicator met de status **Bijwerken** boven aan de tabel en naast de nieuw bijgewerkte variabele(n) om aan te geven dat de omgeving met de configuratie wordt bijgewerkt. Na voltooiing, zijn de bijgewerkte milieuvariabelen zichtbaar in de lijst.
 
 >[!TIP]
 >
->Als u meerdere variabelen wilt bijwerken, kunt u het beste de opdracht **Omgevingsconfiguratie** om alle benodigde variabelen tegelijk bij te werken voordat u tikt of klikt **Opslaan**. Op deze manier kunt u ze met één update toevoegen aan de omgeving.
+>Als u meerdere variabelen wilt bijwerken, kunt u het beste de opdracht **Omgevingsconfiguratie** dialoogvenster om alle benodigde variabelen tegelijk bij te werken voordat u tikt of klikt op **Opslaan**. Op deze manier kunt u ze met één update toevoegen aan de omgeving.
 
 ## Omgevingsvariabelen gebruiken {#using}
 
@@ -110,7 +110,7 @@ Zie de [officiële documentatie van Maven](https://maven.apache.org/settings.htm
 
 ## Beschikbaarheid van omgevingsvariabele {#availability}
 
-Omgevingsvariabelen kunnen op een aantal plaatsen worden gebruikt.
+Omgevingsvariabelen kunnen op verschillende plaatsen worden gebruikt.
 
 ### Auteur, Voorvertoning en Publiceren {#author-preview-publish}
 

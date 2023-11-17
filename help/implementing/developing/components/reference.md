@@ -2,9 +2,9 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3642'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
 | `component.html` | `nt:file` | Dit is het HTML-scriptbestand van de component. |
 | `cq:icon` | `String` | Deze waarde wijst naar de [pictogram van de component](#component-icon) en wordt weergegeven in de Componentbrowser. |
 
-Als we kijken naar de **Tekst** een aantal van de volgende elementen:
+Als u kijkt naar de **Tekst** kunt u verschillende van de volgende elementen zien:
 
 ![Structuur van tekstcomponent](assets/components-text.png)
 
@@ -250,7 +250,7 @@ Content not found
 
 Als u een widget wilt maken voor gebruik in een componentdialoogvenster, moet u een graniet UI-veldcomponent maken.
 
-Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een nieuw formulierveld moet u een brontype maken. Dit is hetzelfde als het maken van een nieuwe component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`):
+Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een nieuw formulierveld moet u een brontype maken. Dit is hetzelfde als het maken van een component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 

@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1030'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] Versie 202.8.0 is 6 augustus 202
 
 ### Wat is er nieuw? {#what-is-new-cloud-manager}
 
-* De Controle van de inhoud is een eigenschap die op de Pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk wordt toegelaten. De configuratie van de Pijpleiding van de Productie voor programma&#39;s met Plaatsen omvat nu een derde genoemd lusje **Controle van inhoud**. Wanneer een productiepijpleiding in werking wordt gesteld, is een nieuwe stap van de Controle van de Inhoud inbegrepen in de pijpleiding na douane functioneel testen die de plaats tegen een aantal dimensies met inbegrip van prestaties, SEO (de Optimalisering van de Motor van het Onderzoek), toegankelijkheid, beste praktijken en PWA (Progressieve App van het Web) evalueert.
+* De Controle van de inhoud is een eigenschap die op de Pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk wordt toegelaten. De configuratie van de Pijpleiding van de Productie voor programma&#39;s met Plaatsen omvat nu een derde genoemd lusje **Controle van inhoud**. Wanneer een productiepijplijn in werking wordt gesteld, is een nieuwe stap van de Controle van de Inhoud inbegrepen in de pijpleiding na douane functioneel testen die de plaats tegen verscheidene dimensies met inbegrip van prestaties, SEO (de Optimalisering van de Motor van het Onderzoek), toegankelijkheid, beste praktijken en PWA (Progressieve App van het Web) evalueert.
 
 
   >[!NOTE]

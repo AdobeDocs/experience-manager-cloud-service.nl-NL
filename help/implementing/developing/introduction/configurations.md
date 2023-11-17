@@ -2,9 +2,9 @@
 title: Configuraties en de Configuratiebrowser
 description: Begrijp Adobe Experience Manager (AEM) configuraties en hoe zij werkruimtemontages in AEM beheren.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -68,8 +68,8 @@ Browser van de Configuratie staat een beheerder toe om, toegangsrechten aan conf
 
 Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Browser van de Configuratie.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
-1. Tik of klik op **Maken**.
+1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
+1. Selecteer **Maken**.
 1. Geef een **Titel** en **Naam** voor uw configuratie.
 
    ![Configuratie maken](assets/configuration-create.png)
@@ -83,7 +83,7 @@ Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Brow
    * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Bewerkbare sjablonen](/help/sites-cloud/authoring/features/templates.md)
    * diverse cloudconfiguraties
-1. Tik of klik op **Maken**.
+1. Selecteer **Maken**.
 
 >[!TIP]
 >
@@ -93,9 +93,9 @@ Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Brow
 
 Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die configuraties worden geplaatst om af te dwingen wie tot die werkruimten kan en niet kan toegang hebben.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
+1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
 1. Selecteer de configuratie die u wilt uitgeven, en dan selecteren **Eigenschappen** in de werkbalk.
-1. Selecteer om het even welke extra eigenschappen die u wenst om aan de configuratie toe te voegen.
+1. Selecteer om het even welke extra eigenschappen die u aan de configuratie wilt toevoegen.
 
    >[!NOTE]
    >
@@ -110,7 +110,7 @@ Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die 
 1. Controleer de toegangsopties die een of meer geselecteerde gebruikers of rollen zouden moeten hebben en klik **Toevoegen**.
    ![Toegangsrechten toevoegen aan een configuratie](assets/configuration-edit.png)
 1. Herhaal de stappen zodat u gebruikers of rollen kunt selecteren en zonodig extra toegangsrechten kunt toewijzen.
-1. Tik of klik op **Opslaan en sluiten** wanneer gereed.
+1. Selecteren **Opslaan en sluiten** wanneer gereed.
 
 ## Configuraties als ontwikkelaar {#configurations-developer}
 
@@ -196,9 +196,9 @@ Om dit te steunen heeft de configuratieraadpleging, AEM een overerving en een re
 
 ### Configuraties gebruiken {#using-configurations}
 
-Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Contextbewuste configuraties zijn configuraties die verwant zijn aan een inhoudsmiddel of een middelboom zoals was [beschreven in het vorige voorbeeld.](#developer-example)
+Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Contextbewuste configuraties zijn configuraties die verwant zijn aan een inhoudsmiddel of een middelboom zoals was [beschreven in het vorige voorbeeld](#developer-example).
 
-Voor meer informatie over Context-Aware Configuraties, voorbeelden, en hoe te om hen te gebruiken, [zie de documentatie van het Verkopen.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+Voor meer details over Context-Aware Configuraties, voorbeelden, en hoe te om hen te gebruiken, zie [Verkoopdocumentatie.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr-webconsole {#confmgr-web-console}
 

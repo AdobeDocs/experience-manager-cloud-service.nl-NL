@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1028'
 ht-degree: 1%
 
 ---
@@ -33,13 +33,13 @@ De releasedatum voor [!DNL Experience Manager] as a Cloud Service 2020.7.0 is 30
 
 ### Nieuwe functies in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] is de scalable en verlengbare dienst om activa te verwerken. Beheerders kunnen configureren [!DNL Experience Manager] om aangepaste toepassingen aan te roepen die zijn gemaakt met de [!DNL Asset Compute Service]. De ontwikkelaars kunnen de dienst gebruiken om gespecialiseerde douanetoepassingen tot stand te brengen die aan complexe gebruiksgevallen behandelen. Met deze webservice kunt u miniaturen genereren voor verschillende bestandstypen, afbeeldingen van hoge kwaliteit renderen in Adobe-bestandsindelingen, video&#39;s coderen (in de toekomst), metagegevens extraheren, volledige tekst uitnemen als voorloper voor indexering en een element uitvoeren via alle beschikbare opties [!DNL Sensei] diensten. zie [gebruik microservices en verwerkingsprofielen voor bedrijfsmiddelen](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] is de scalable en verlengbare dienst om activa te verwerken. Beheerders kunnen [!DNL Experience Manager] om aangepaste toepassingen aan te roepen die zijn gemaakt met de [!DNL Asset Compute Service]. De ontwikkelaars kunnen de dienst gebruiken om gespecialiseerde douanetoepassingen tot stand te brengen die aan complexe gebruiksgevallen behandelen. Met deze webservice kunt u miniaturen genereren voor verschillende bestandstypen, afbeeldingen van hoge kwaliteit renderen in de bestandsindelingen voor Adoben, video&#39;s coderen (in de toekomst), metagegevens extraheren, volledige tekst uitnemen als voorloper voor indexering en een element uitvoeren via alle beschikbare opties [!DNL Sensei] diensten. zie [gebruik microservices en verwerkingsprofielen voor bedrijfsmiddelen](/help/assets/asset-microservices-configure-and-use.md).
 
 * De eerste configuratie van [!DNL Dynamic Media] in [!DNL Experience Manager] as a Cloud Service is verbeterd om robuuster te zijn. Het verstrekt nu vooruitgang van de processen aan de beheerders.
 
 * Publiceren van activa naar [!DNL Dynamic Media] wordt vereenvoudigd en robuuster gemaakt door van deze pijpleiding een integrerend deel uit te maken van de algemene assetverwerkingpijplijn met behulp van asset microservices en de back-end voor het publiceren van batches te verbeteren.
 
-* Workflowstappen die niet compatibel zijn met een Cloud Service-implementatie worden nu gemarkeerd met een waarschuwing in het gedeelte [!UICONTROL workflow model] editor. Bovendien, wanneer het uitvoeren van de bestaande werkschema&#39;s op het milieu van de Cloud Service, worden de incompatibele werkschemasstappen overgeslagen.
+* Workflowstappen die niet compatibel zijn met een Cloud Service-implementatie worden nu gemarkeerd met een waarschuwing in het gedeelte [!UICONTROL workflow model] editor. Bij het uitvoeren van de bestaande workflows in de omgeving van de Cloud Service worden ook de incompatibele workflowstappen overgeslagen.
 
 * De modellen van het werkschema die door klanten worden gecreeerd die aan worden opgesteld `/conf/global` in het Git-project dat verband houdt met het milieu in [!DNL Cloud Manager] worden automatisch geïmplementeerd op `/var` en dus beschikbaar in [!DNL Experience Manager]. Productworkflowmodellen onder `/libs` die door de klant zijn gewijzigd, niet automatisch worden geïmplementeerd op `/var`.
 
@@ -68,7 +68,7 @@ Release 2.11.0 van de [AEM kerncomponenten](https://experienceleague.adobe.com/d
 * Ondersteuning voor versnelde mobiele pagina&#39;s (AMP) van kerncomponenten is nu beschikbaar. Het helpt klanten sneller ervaringen op te doen door de paginaovergang onmiddellijk te maken wanneer ze de site betreden vanuit een mobiel zoekresultaat van Google, wat de betrokkenheid van gebruikers en SEO verbetert.
 Zie [AMP-ondersteuning voor de kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) voor meer informatie .
 
-* Compatibiliteit met versie 1.0.2 van de [Gegevenslaag Adobe-client](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html).
+* Compatibiliteit met versie 1.0.2 van de [Gegevenslaag client-Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html).
 
 * Bugfixes en verbeteringen van de codekwaliteit.
 
@@ -76,7 +76,7 @@ Zie [AMP-ondersteuning voor de kerncomponenten](https://experienceleague.adobe.c
 
 ### Releasedatum {#release-date-cm}
 
-De releasedatum voor [!UICONTROL Cloud Manager] Versie 2020.7.0 is 9 juli 2020.
+De releasedatum voor [!UICONTROL Cloud Manager] Versie 202.7.0 is 9 juli 2020.
 
 ### Wat is er nieuw? {#what-is-new-cloud-manager}
 
@@ -105,7 +105,7 @@ Zie Java 11-ondersteuning gebruiken voor meer informatie.
 
 * Bepaalde fouten in het proces van de codekwaliteit kunnen ertoe leiden dat het logbestand niet correct wordt gegenereerd.
 
-* Bij het maken van een nieuw programma retourneert de voorgestelde naam soms een duplicaat van een bestaande programmanaam.
+* Bij het maken van een programma retourneert de voorgestelde naam soms een duplicaat van een bestaande programmanaam.
 
 * Sommige logboeken van grote pijpleidingsstappen konden niet constant door het gebruikersinterface worden gedownload.
 
@@ -115,19 +115,19 @@ Zie Java 11-ondersteuning gebruiken voor meer informatie.
 
 ### Bekende problemen {#known-issues}
 
-* Als gevolg van een wijziging in de manier waarop de codedekking wordt berekend, wordt de *minimum* De versie van de Jacoco-plug-in is nu 0.7.5.201505241946 (uitgebracht in mei 2015). Klanten die expliciet verwijzen naar een oudere versie ontvangen een foutbericht in het proces voor de kwaliteit van de code.
+* Als gevolg van een wijziging in de manier waarop de codedekking wordt berekend, wordt de *minimum* De versie van de Jacoco-plug-in is nu 0.7.5.201505241946 (uitgebracht in mei 2015). Klanten die expliciet verwijzen naar een oudere versie ontvangen een foutbericht in het proces voor codekwaliteit.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
 
 ### Wat is er nieuw? {#what-is-new-foundations}
 
-* [De logboeken kunnen aan de rekeningen van de Splunk door:sturen](/help/implementing/developing/introduction/logging.md#splunk-logs), waardoor organisaties hun Splunk-investering kunnen gebruiken.
+* [Logboeken kunnen naar Splunk-accounts worden doorgestuurd](/help/implementing/developing/introduction/logging.md#splunk-logs), waardoor organisaties hun Splunk-investering kunnen gebruiken.
 
 * [Een statisch, toegewijd IP adres van het uitgang](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) kan voor uitgaand verkeer worden toegewezen dat in code van Java wordt geprogrammeerd, die voor sommige integratie nuttig kan zijn.
 
-* GePorted AEM Analytics Cloud Service UI van Klassieke UI naar nieuwe AEM UI. Ook de locatie van de Analytics-cloudservice in AEM opslagplaats verplaatst van `/etc` tot `/conf`, om deze uit te lijnen met andere AEM-cloudservices.
+* GePorted AEM Analytics Cloud Service UI van Klassieke UI naar nieuwe AEM UI. Ook de locatie van de Analytics-cloudservice in AEM opslagplaats verplaatst van `/etc` tot `/conf`, om deze uit te lijnen met andere AEM cloudservices.
 
-* GePorted AEM Target cloud service UI van klassieke UI naar nieuwe AEM UI. Ook de locatie van de doelcloudservice in AEM opslagplaats verplaatst van `/etc` tot `/conf`, om deze uit te lijnen met andere AEM-cloudservices.
+* GePorted AEM Target cloud service UI van klassieke UI naar nieuwe AEM UI. Ook de locatie van de doelcloudservice in AEM opslagplaats verplaatst van `/etc` tot `/conf`, om deze uit te lijnen met andere AEM cloudservices.
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 

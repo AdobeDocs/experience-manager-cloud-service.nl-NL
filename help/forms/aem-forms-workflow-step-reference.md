@@ -4,9 +4,9 @@ description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebase
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Gebruik AEM werkstromen, gebruik taakstappen, zet om in stap PDF/A, produceer document van geregistreerde stap, gebruik werkschema's, de stap van het Document van het Ondertekenen, produceer gedrukte outputstap, produceer niet interactieve PDF output
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '6795'
+source-wordcount: '6793'
 ht-degree: 0%
 
 ---
@@ -396,7 +396,7 @@ De stap Document ondertekenen heeft de volgende eigenschappen:
 * **[!UICONTROL Signature Process]**: U kunt een document in een opeenvolgende of parallelle volgorde ondertekenen. Eén ondertekenaar ontvangt het document op volgorde voor ondertekening. Nadat de eerste ondertekenaar het ondertekenen van het document heeft voltooid, wordt het document verzonden naar de tweede ondertekenaar, enzovoort. Parallel hieraan kunnen meerdere ondertekenaars een document tegelijk ondertekenen.
 * **[!UICONTROL Redirection URL]**: Geef een URL voor omleiding op. Nadat het document is ondertekend, kunt u de ontvanger omleiden naar een URL. Gewoonlijk bevat deze URL een bedankbericht of verdere instructies.
 * **[!UICONTROL Workflow Stage]**: Een werkstroom kan uit meerdere fasen bestaan. Deze stadia worden getoond in AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model ( **[!UICONTROL Sidekick]** > **[!UICONTROL Page]** > **[!UICONTROL Page Properties]** > **[!UICONTROL Stages]**).
-* **[!UICONTROL Select Recipients]**: Geef de methode op waarmee u ontvangers voor het document wilt kiezen. U kunt de workflow dynamisch toewijzen aan een gebruiker of groep of gegevens van een ontvanger handmatig toevoegen. Wanneer u Handmatig selecteert in het vervolgkeuzemenu, voegt u gegevens over ontvangers toe, zoals E-mail, Rol en Verificatie.
+* **[!UICONTROL Select Recipients]**: Geef de methode op waarmee u ontvangers voor het document wilt kiezen. U kunt de workflow dynamisch toewijzen aan een gebruiker of groep of gegevens van een ontvanger handmatig toevoegen. Wanneer u Handmatig selecteert in de vervolgkeuzelijst, voegt u de gewenste gegevens toe, zoals E-mail, Rol en Verificatiemethode.
 
   >[!NOTE]
   >
@@ -546,7 +546,7 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 
 * **[!UICONTROL Select Content Root location using]**: De inhoudsbasis is een tekenreekswaarde die de URI, absolute verwijzing of locatie in de gegevensopslagruimte opgeeft voor het ophalen van relatieve elementen die door het formulierontwerp worden gebruikt. Als het formulierontwerp bijvoorbeeld relatief verwijst naar een afbeelding, zoals `../myImage.gif`, `myImage.gif` moet `repository://`. De standaardwaarde is `repository://`, die verwijst naar het hoofdniveau van de gegevensopslagruimte.
 
-  Wanneer u een element kiest uit uw toepassing, moet het pad van de URI van de inhoudsbasis de juiste structuur hebben. Als een formulier bijvoorbeeld wordt gekozen uit een toepassing met de naam SampleApp en wordt geplaatst op `SampleApp/1.0/forms/Test.xdp`, moet de URI van de inhoudswortel worden gespecificeerd zoals `repository://administrator@password/Applications/SampleApp/1.0/forms/`, of `repository:/Applications/SampleApp/1.0/forms/` (als deze waarde null is). Wanneer de URI voor de inhoudswortel op deze manier wordt opgegeven, worden de paden van alle middelen waarnaar wordt verwezen in het formulier omgezet met deze URI.
+  Wanneer u een element kiest uit uw toepassing, moet het pad van de URI van de inhoudsbasis de juiste structuur hebben. Als een formulier bijvoorbeeld wordt gekozen uit een toepassing met de naam SampleApp en wordt geplaatst op `SampleApp/1.0/forms/Test.xdp`, moet de URI van de inhoudswortel worden gespecificeerd zoals `repository://administrator@password/Applications/SampleApp/1.0/forms/`, of `repository:/Applications/SampleApp/1.0/forms/` (als deze waarde null is). Wanneer de URI voor de inhoudsbasis op deze manier wordt opgegeven, worden de paden van alle middelen waarnaar wordt verwezen in het formulier, omgezet met deze URI.
 
 * **[!UICONTROL Select XCI file using]**: XCI-bestanden worden gebruikt om lettertypen en andere eigenschappen te beschrijven die voor formulierontwerpelementen worden gebruikt. U kunt een XCI-bestand relatief ten opzichte van de payload, op een absoluut pad houden of een variabele van het gegevenstype Document gebruiken.
 

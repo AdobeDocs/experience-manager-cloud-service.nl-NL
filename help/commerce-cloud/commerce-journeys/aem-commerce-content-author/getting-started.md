@@ -2,9 +2,9 @@
 title: Aan de slag met CIF Authoring
 description: Aan de slag met CIF ontwerpen.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Dit document helpt u begrijpen hoe te om CIF voor Inhoud en Handel te gebruiken 
 
 CIF breidt de Universele Redacteur met mogelijkheden uit om tot de productgegevens in real time toegang te hebben zonder de context te verlaten:
 
-Open het zijpaneel en selecteer &#39;Producten&#39; in de vervolgkeuzelijst.
+Open het zijpaneel en selecteer &quot;Producten&quot;van de drop-down lijst.
 ![Producttype selecteren](assets/asset-finder-overview.png)
 
 U kunt door de productcatalogus bladeren of producten zoeken met het volledige tekstzoekveld.

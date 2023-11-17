@@ -2,7 +2,7 @@
 title: Snelgids voor WCAG 2.1
 description: A Quick Guide to the Web Content Accessibility Guidelines (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1782'
 ht-degree: 90%
@@ -27,7 +27,7 @@ WCAG 2.1 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescr
 
 Als u bijvoorbeeld een afbeelding (of andere niet-tekstuele content) beschrijft met het `alt`-kenmerk in HTML, heeft dit grote voordelen voor blinden of slechtzienden. De tekstuele beschrijving in het `alt`-kenmerk kan worden omgezet naar spraakuitvoer of worden verzonden naar elektronische vernieuwbare brailleweergaven.
 
-Daarnaast kan WCAG 2.1 voordelen opleveren voor andere begunstigden, waaronder personen die mogelijk als *arbeidsongeschikt* worden beschouwd. Personen die door omstandigheden problemen ondervinden met bladertechnologie, netwerkverbindingssnelheid of bladeromgeving, kunnen te maken hebben met belemmeringen die vergelijkbaar zijn met mensen met een handicap.
+WCAG 2.1 kan ook voordelen opleveren voor andere begunstigden, waaronder personen die in aanmerking kunnen worden genomen *situationeel gehandicapt*. Personen die door omstandigheden problemen ondervinden met bladertechnologie, netwerkverbindingssnelheid of bladeromgeving, kunnen te maken hebben met belemmeringen die vergelijkbaar zijn met mensen met een handicap.
 
 Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webcontent maken die voldoet aan de relevante succescriteria van WCAG 2.1 niveau A en niveau AA.
 

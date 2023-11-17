@@ -2,9 +2,9 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3095'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Met behulp van de SPA Editor verbruikt de SPA niet alleen inhoud van AEM, maar i
 
 ## Eisen en voorwaarden {#requirements-prerequisites}
 
-Er zijn een aantal vereisten voordat u begint met een project zonder kop AEM.
+Er zijn verscheidene vereisten alvorens u met uw hoofd AEM project begint.
 
 ### Kennis {#knowledge}
 

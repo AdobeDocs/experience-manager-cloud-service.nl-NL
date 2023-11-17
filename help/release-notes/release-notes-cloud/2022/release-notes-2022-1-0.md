@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.1.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.1.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
@@ -88,12 +88,12 @@ Kijk eens naar de [Overzicht release januari 2022](https://video.tv.adobe.com/v/
 * Verbeterde myAccount-componenten
 * De component van de Aanbeveling van het product steunt extra paginatypes (homepage, winkelwagentje, ordesbevestiging)
 * **Wishlist**
-   * Aangemeld door bezoekers kunnen producten toevoegen aan een verlanglijst
-   * Beheer van de verlanglijst en de bijbehorende producten is mogelijk via mijn account
-   * De knop &quot;Toevoegen aan wenslijst&quot; kan worden ingeschakeld/uitgeschakeld op componentniveau via beleid (bijvoorbeeld productgummetje, productdetails)
+   * Aangemeld door bezoekers kunnen producten toevoegen aan een wanlijst
+   * Het beheren van de wantlist en zijn producten is mogelijk via mijnAccount
+   * De knop &quot;Toevoegen aan wantlist&quot; kan worden ingeschakeld/uitgeschakeld op componentniveau via beleid (bijvoorbeeld productgummetje, productdetails)
    * Beschikbaar als een kerncomponent en in de AEM Venia Storefront
 
-![Wishlist](/help/assets/CIF/wishlist.png)
+<!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
 
 ## Cloud Manager {#cloud-manager}
 

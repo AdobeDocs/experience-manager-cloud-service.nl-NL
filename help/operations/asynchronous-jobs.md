@@ -2,9 +2,9 @@
 title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert de prestaties door sommige hulpbronintensieve taken als achtergrondbewerkingen asynchroon te voltooien.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '808'
 ht-degree: 71%
 
 ---
@@ -21,7 +21,7 @@ Deze bewerkingen omvatten:
 * Assets die boven de ingestelde drempelwaarde liggen, importeren vanaf een externe Experience Manager-implementatie
 * Actieve exemplaren uitrollen
 
-U kunt de status van asynchrone taken weergeven in het menu **[!UICONTROL Background Operations]** dashboard op **Algemene navigatie** -> **Gereedschappen** -> **Algemeen** -> **Taken**.
+U kunt de status van asynchrone taken weergeven in het menu **[!UICONTROL Background Operations]** dashboard op **Algemene navigatie** > **Gereedschappen** > **Algemeen** > **Taken**.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Wanneer AEM een bewerking asynchroon verwerkt, ontvangt u een bericht in uw [inb
 
 Navigeer naar de pagina **[!UICONTROL Background Operations]** om de status van de asynchrone bewerkingen in detail weer te geven.
 
-1. Selecteer in de interface Experience Manager **Algemene navigatie** -> **Gereedschappen** -> **Algemeen** -> **Taken**.
+1. Selecteer in de interface Experience Manager **Algemene navigatie** > **Gereedschappen** > **Algemeen** > **Taken**.
 
 1. Controleer op de pagina **[!UICONTROL Background Operations]** de details van de bewerkingen.
 
@@ -71,7 +71,7 @@ Navigeer naar de pagina **[!UICONTROL Background Operations]** om de status van 
 
 ## Asynchrone opties voor taakverwerking configureren {#configure}
 
-Er zijn een aantal opties rond asynchrone banen die kunnen worden gevormd. De volgende voorbeelden tonen hoe dit kan worden gedaan gebruikend de configuratiemanager op een lokaal ontwikkelingssysteem.
+Er zijn verscheidene opties rond asynchrone banen die kunnen worden gevormd. De volgende voorbeelden tonen hoe dit kan worden gedaan gebruikend de configuratiemanager op een lokaal ontwikkelingssysteem.
 
 >[!NOTE]
 >

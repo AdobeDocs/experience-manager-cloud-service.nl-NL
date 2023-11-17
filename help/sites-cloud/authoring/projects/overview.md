@@ -2,10 +2,10 @@
 title: Projecten
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 9%
+source-wordcount: '1253'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelij
 Als gebruiker kunt u het volgende doen:
 
 * Projecten maken
-* Inhoud en elementmappen aan een project koppelen
+* Inhoud- en middelenmappen koppelen aan een project
 * Projecten verwijderen
 * Inhoudskoppelingen uit project verwijderen
 
@@ -37,9 +37,9 @@ De projectenconsole is waar u tot uw projecten binnen AEM toegang hebt en leidt.
 ![De projectenconsole](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Selecteren **Tijdlijn** en vervolgens een project om de bijbehorende tijdlijn weer te geven.
-* Klikken/tikken **Selecteren** om naar de selectiemodus te gaan.
-* Klikken **Maken** om projecten toe te voegen.
-* **Actieve projecten schakelen** Hiermee kunt u schakelen tussen alle projecten en alleen projecten die actief zijn.
+* Selecteren **Selecteren** om naar de selectiemodus te gaan.
+* Klikken **Maken** projecten toevoegen.
+* **Actieve projecten in-/uitschakelen** Hiermee kunt u schakelen tussen alle projecten en alleen projecten die actief zijn.
 * **Statistische weergave tonen** laat u projectstatistieken over taakvoltooiing zien.
 
 ## Projectblokken {#project-tiles}
@@ -173,9 +173,9 @@ Alle projecten steunen de volgende standaardrollen om u veiligheid en controleto
 | Rol | Beschrijving | Machtigingen | Groepslidmaatschap |
 |---|---|---|---|
 | Waarnemer | Een gebruiker in deze rol kan projectdetails, met inbegrip van de projectstatus bekijken. | Alleen-lezen machtigingen voor een project | `workflow-users` groep |
-| Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa; rechten om een opnamelijst te uploaden en elementen te controleren en goed te keuren; schrijfmachtigingen voor /etc/commerce; machtiging wijzigen voor een specifiek project | werkstroom-gebruikersgroep |
-| Eigenaar | Een gebruiker met deze rol kan een project initiëren. Een eigenaar kan een project tot stand brengen, het werk in een project in werking stellen, en ook goedgekeurde activa naar de omslag van de Productie verplaatsen. Hoewel alle andere taken in het project ook door de eigenaar kunnen worden bekeken en worden uitgevoerd. | Schrijfmachtiging ingeschakeld `/etc/commerce` | `dam-users` groep (om een project te kunnen tot stand brengen) project-beheerders groep (om tot een project te kunnen leiden en activa te bewegen) |
+| Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa; voorrechten om een ontsproten lijst te uploaden, en activa te herzien en goed te keuren; schrijf toestemming op /etc/commerce; wijzig toestemming op een specifiek project | werkstroom-gebruikersgroep |
+| Eigenaar | Een gebruiker met deze rol kan een project initiëren. Een eigenaar kan een project tot stand brengen, het werk in een project in werking stellen, en ook goedgekeurde activa naar de omslag van de Productie verplaatsen. Hoewel alle andere taken in het project ook door de eigenaar kunnen worden bekeken en worden uitgevoerd. | Machtiging schrijven op `/etc/commerce` | `dam-users` groep (om een project te kunnen tot stand brengen) project-beheerders groep (om tot een project te kunnen leiden en activa te bewegen) |
 
 >[!NOTE]
 >
->Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
+>Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen in **Gereedschappen** > **Beveiliging** > **Groepen**.

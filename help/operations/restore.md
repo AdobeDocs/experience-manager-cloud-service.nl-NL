@@ -2,9 +2,9 @@
 title: Inhoud herstellen in AEM as a Cloud Service
 description: Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1158'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met g
 >* De functie is alleen beschikbaar in ontwikkelomgevingen.
 >* Het terugzetten van inhoud is beperkt tot twee per maand per programma.
 >
->Raadpleeg het document voor meer informatie over het bestaande back-up- en herstelsysteem voor AEM as a Cloud Service [Back-up en herstel in AEM as a Cloud Service](/help/operations/backup.md)
+>Voor meer informatie over het bestaande back-up- en herstelsysteem voor AEM as a Cloud Service raadpleegt u [Back-up en herstel in AEM as a Cloud Service](/help/operations/backup.md).
 
 ## Overzicht {#overview}
 
@@ -78,7 +78,7 @@ Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens 
 
    * De tijdstempel die voor de terugzetopties wordt weergegeven, is allemaal gebaseerd op de tijdzone van de computer van de gebruiker.
 
-1. Klik op de knop **Herstellen** pictogram rechts van de rij die de back-up vertegenwoordigt die u wilt herstellen om het herstelproces te starten.
+1. Klik op de knop **Herstellen** pictogram rechts van de rij die de back-up vertegenwoordigt die u wilt herstellen om het terugzetproces te starten.
 
 1. Bekijk de details op de **Inhoud herstellen** voordat u uw verzoek bevestigt door op **Herstellen**.
 
@@ -103,7 +103,7 @@ Er zijn verschillende scenario&#39;s.
    * In dit geval wordt een id voor vastleggen niet weergegeven.
    * Het wordt ten zeerste aanbevolen beide opslagruimten te klonen en een bestandsvergelijkingsprogramma te gebruiken om de vertakkingen te vergelijken.
 
-Houd er bovendien rekening mee dat een herstelbewerking ertoe kan leiden dat uw productie- en testomgevingen niet meer synchroon zijn. U bent verantwoordelijk voor de gevolgen van het herstellen van inhoud.
+Houd er ook rekening mee dat een herstelbewerking ertoe kan leiden dat uw productie- en testomgevingen niet meer synchroon zijn. U bent verantwoordelijk voor de gevolgen van het herstellen van inhoud.
 
 ## Activiteit herstellen {#restore-activity}
 

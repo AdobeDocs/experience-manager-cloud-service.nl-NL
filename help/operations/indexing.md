@@ -2,9 +2,9 @@
 title: Inhoud zoeken en indexeren
 description: Meer informatie over Inhoud zoeken en indexeren in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2428'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Beperkingen:
 
 >[!TIP]
 >
->Voor meer informatie over de indexering en de Vragen van de Eik, met inbegrip van een gedetailleerde beschrijving van geavanceerde onderzoek en het indexeren eigenschappen, zie [Documentatie voor Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+>Voor meer informatie over de indexering en de Vragen van het Eak, met inbegrip van een gedetailleerde beschrijving van geavanceerde onderzoek en het indexeren eigenschappen, zie [Documentatie voor Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
 
 
 ## Het gebruik {#how-to-use}
@@ -61,13 +61,13 @@ Een indexdefinitie kan in één van de volgende categorieën vallen:
 
 >[!NOTE]
 >
->Nieuwe indexen introduceren op de `dam:Asset` nodetype (in het bijzonder fulltext-indexen) wordt sterk afgeraden, omdat deze in conflict kunnen komen met OOTB-productkenmerken, wat kan leiden tot functionele en prestatieproblemen. In het algemeen voegt u aanvullende eigenschappen toe aan de huidige `damAssetLucene-*` indexversie is de meest geschikte manier om query&#39;s te indexeren op de `dam:Asset` nodetype (deze wijzigingen worden automatisch samengevoegd in een nieuwe productversie van de index als deze daarna wordt vrijgegeven). Neem voor advies contact op met de Adobe Support.
+>Nieuwe indexen introduceren op de `dam:Asset` nodetype (in het bijzonder fulltext-indexen) wordt sterk afgeraden, omdat deze in conflict kunnen komen met OOTB-productkenmerken, wat kan leiden tot functionele en prestatieproblemen. In het algemeen voegt u aanvullende eigenschappen toe aan de huidige `damAssetLucene-*` indexversie is de meest geschikte manier om query&#39;s te indexeren op de `dam:Asset` nodetype (deze wijzigingen worden automatisch samengevoegd in een nieuwe productversie van de index als deze daarna wordt vrijgegeven). In geval van twijfel kunt u contact opnemen met de Adobe Support voor advies.
 
 ## De nieuwe indexdefinitie voorbereiden {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Als u een index buiten het vak aanpast, bijvoorbeeld `damAssetLucene-8`, kopieer de meest recente out-of-box-indexdefinitie van een *Cloud Service* met behulp van CRX DE Package Manager (`/crx/packmgr/`). Naam wijzigen in `damAssetLucene-8-custom-1` (of hoger) en voeg uw aanpassingen toe in het XML-bestand. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. Bijvoorbeeld de `tika` knooppunt onder `/oak:index/damAssetLucene-8/tika` is vereist in de aangepaste index die wordt geïmplementeerd in een AEM Cloud Service-omgeving, maar niet in de lokale AEM SDK.
+>Als u een index buiten het vak aanpast, bijvoorbeeld `damAssetLucene-8`, kopieert u de meest recente out-of-box-indexdefinitie van een *Cloud Service* met behulp van CRX DE Package Manager (`/crx/packmgr/`). Naam wijzigen in `damAssetLucene-8-custom-1` (of hoger) en voeg uw aanpassingen toe in het XML-bestand. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. Bijvoorbeeld de `tika` knooppunt onder `/oak:index/damAssetLucene-8/tika` is vereist in de aangepaste index die wordt geïmplementeerd in een AEM Cloud Service-omgeving, maar niet in de lokale AEM SDK.
 
 Maak voor aanpassingen van een OOTB-index een nieuw pakket met de feitelijke indexdefinitie die volgt op dit naamgevingspatroon:
 
@@ -240,7 +240,7 @@ Nadat u de nieuwe indexdefinitie hebt toegevoegd, implementeert u de nieuwe toep
 
 >[!TIP]
 >
->Zie het document voor meer informatie over de vereiste pakketstructuur voor AEM as a Cloud Service [AEM projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Ga voor meer informatie over de vereiste pakketstructuur voor AEM as a Cloud Service naar [AEM projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Indexbeheer met behulp van rollende implementaties {#index-management-using-rolling-deployments}
 

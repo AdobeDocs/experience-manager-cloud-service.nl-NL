@@ -2,9 +2,9 @@
 title: SPA en rendering op de server
 description: Door SSR (Server-Side Rendering) in uw SPA te gebruiken, kunt u de eerste laadbewerking van de pagina versnellen en vervolgens verdere rendering aan de client doorgeven.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruik
 
 >[!NOTE]
 >
->Cloud Manager ondersteunt geen implementatie op Adobe I/O Runtime. Als gevolg hiervan moet uw eigen infrastructuur zijn ingesteld om SSR-code te implementeren in de Adobe I/O Runtime.
+>Cloud Manager ondersteunt geen implementatie op Adobe I/O Runtime. Als gevolg hiervan moet uw eigen infrastructuur zo zijn ingesteld dat SSR-code op de Adobe I/O Runtime kan worden geïmplementeerd.
 
 ## Configuratie van externe renderer {#remote-content-renderer-configuration}
 

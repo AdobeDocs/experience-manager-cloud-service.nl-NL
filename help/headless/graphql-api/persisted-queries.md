@@ -3,9 +3,9 @@ title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten voor optimale prestaties. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1676'
 ht-degree: 1%
 
 ---
@@ -392,7 +392,7 @@ Het veld `Respond with application/graphql-response+json` (`responseContentTypeG
 
   >[!NOTE]
   >
-  >Zie voor meer informatie https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Zie https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
 

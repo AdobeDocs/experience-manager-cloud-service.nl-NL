@@ -4,9 +4,9 @@ description: Leer hoe u Content Fragments en de GraphQL API gebruikt als een beh
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -119,9 +119,9 @@ Nu u de twee primaire soorten vragen in werking hebt gesteld, bent u bereid om u
 
 1. Definieer de items die de query moet bevatten voor het model Inhoudsfragment dat u hebt geselecteerd. Typ nogmaals haakje openen `{`Druk vervolgens op Ctrl+Space of Option+Space voor een lijst die automatisch wordt voltooid. Selecteren `items` van de opties.
 
-1. Tik of klik op de knop **prettiseren** om de code automatisch op te maken zodat deze gemakkelijker kan worden gelezen.
+1. Selecteer de **prettiseren** om de code automatisch op te maken zodat deze gemakkelijker kan worden gelezen.
 
-1. Tik of klik op de knop **Afspelen** knoop bij de bovenkant verlaten van de redacteur om de vraag in werking te stellen. De redacteur auto voltooit `items`, die kort geel worden gemarkeerd, en de query wordt uitgevoerd.
+1. Selecteer de optie **Afspelen** knoop bij de bovenkant verlaten van de redacteur om de vraag in werking te stellen. De redacteur auto voltooit `items`, die kort geel worden gemarkeerd, en de query wordt uitgevoerd.
 
 1. De resultaten worden getoond in het juiste paneel, naast de vraagredacteur.
 
@@ -177,7 +177,7 @@ U maakt een doorlopende query die gegevens bevat die u van uw clienttoepassing w
 
 1. In de **Naam van query** pop-up, geef uw vraag de naam `adventure-list`.
 
-1. Tik of klik op **Opslaan als**.
+1. Selecteren **Opslaan als**.
 
    ![Query voortzetten](assets/do-not-localize/persist-query.png)
 

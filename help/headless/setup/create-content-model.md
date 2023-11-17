@@ -2,9 +2,9 @@
 title: Modellen voor inhoudsfragmenten maken - Instellingen zonder kop
 description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -24,14 +24,14 @@ Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en i
 Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist. Om aan de slag te kunnen gaan, hoeven we maar één model te maken.
 
 1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen**, **Algemeen**, **Modellen van inhoudsfragmenten**.
-1. Tik of klik op de map die u hebt gemaakt door uw configuratie te maken.
+1. Selecteer de map die u hebt gemaakt door uw configuratie te maken.
 
    ![De map Modellen](../assets/models-folder.png)
-1. Tik of klik op **Maken**.
+1. Selecteer **Maken**.
 1. Geef een **Modeltitel**, **Tags** en **Beschrijving**. U kunt ook selecteren/deselecteren **Model inschakelen** om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
 
    ![Een model maken](../assets/models-create.png)
-1. Tik in het bevestigingsvenster op **Openen** om uw model te configureren.
+1. Selecteer in het bevestigingsvenster **Openen** om uw model te configureren.
 
    ![Bevestigingsvenster](../assets/models-confirmation.png)
 1. Met de **Inhoudsfragmentmodeleditor** kunt u het inhoudsfragmentmodel samenstellen door velden te slepen en neer te zetten vanaf het tabblad **Gegevenstypen** kolom.
@@ -42,14 +42,14 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 
    ![Eigenschappen configureren](../assets/models-configure-properties.png)
 
-1. Tik of klik op **Opslaan**.
+1. Wanneer u klaar bent met het samenstellen van uw model, selecteert u **Opslaan**.
 
 1. De modus van het nieuwe model is afhankelijk van of u **Model inschakelen** bij het maken van het model:
    * geselecteerd - het nieuwe model zal reeds worden geselecteerd **Ingeschakeld**
    * niet geselecteerd - het nieuwe model wordt gecreeerd in **Concept** mode
 
 1. Als dit nog niet het geval is, moet het model **Ingeschakeld** om het te gebruiken.
-   1. Selecteer het model dat u net hebt gemaakt en tik of klik op **Inschakelen**.
+   1. Selecteer het model dat u net hebt gemaakt en selecteer **Inschakelen**.
 
       ![Het model inschakelen](../assets/models-enable.png)
    1. Bevestig het toelaten van het model door te tikken of te klikken **Inschakelen** in het bevestigingsdialoogvenster.

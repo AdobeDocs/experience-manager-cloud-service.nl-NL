@@ -2,10 +2,10 @@
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 9%
+source-wordcount: '2158'
+ht-degree: 8%
 
 ---
 
@@ -90,7 +90,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
    * Componenten filteren op naam.
    * Beperk de weergave tot een specifieke groep met behulp van de vervolgkeuzelijst.
 
-  Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor **Inhoudsfragment**:
+  Voor een meer gedetailleerde beschrijving van de component kunt u het informatiepictogram naast de component in het dialoogvenster **Componenten** browser (indien beschikbaar). Bijvoorbeeld voor **Inhoudsfragment**:
 
   ![Informatie over Componentbrowser](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -169,7 +169,7 @@ De inhoudsstructuur is een tabblad in het zijpaneel (samen met de browser met co
 
 ![Knop Inhoudsstructuur](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Als u het zijpaneel opent, wordt het geopend (van de linkerkant). Selecteer de **Inhoudsstructuur** indien nodig. Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Bovendien wordt het op een complexe pagina gemakkelijker om tussen componenten van de pagina te springen.
+Als u het zijpaneel opent, wordt het geopend (van de linkerkant). Selecteer de **Inhoudsstructuur** indien nodig. Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Op een complexe pagina is het bovendien gemakkelijker om tussen componenten van de pagina te schakelen.
 
 ![Inhoudsstructuur](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -315,7 +315,7 @@ De padbrowser is geordend als de [kolomweergave](/help/sites-cloud/authoring/get
 
 ![Padbrowser](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Wanneer een bron is geselecteerd, wordt de **Selecteren** in de rechterbovenhoek van het dialoogvenster wordt geactiveerd. Klik of tik om de selectie te bevestigen of **Annuleren** om af te breken.
+* Wanneer een bron is geselecteerd, wordt de **Selecteren** in de rechterbovenhoek van het dialoogvenster wordt geactiveerd. Selecteer deze optie om de selectie te bevestigen of **Annuleren** om af te breken.
 * Als de selectie van meerdere assets is toegestaan binnen de context, activeert het selecteren van een resource ook de knop **Selecteren**, maar wordt er ook een telling van het aantal geselecteerde resources in de rechterbovenhoek van het venster toegevoegd. Klik op de **X** naast het getal om de selectie op te heffen.
 * Wanneer u door de boom navigeert, wordt uw plaats weerspiegeld in de broodkruimels bij de bovenkant van de dialoog. Deze broodkruimels kunnen ook worden gebruikt om snel binnen de middelhiërarchie te springen.
 * U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik op de knop **X** in het zoekveld om de zoekopdracht te wissen.

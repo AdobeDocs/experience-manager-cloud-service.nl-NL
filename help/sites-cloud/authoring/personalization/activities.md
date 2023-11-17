@@ -2,10 +2,10 @@
 title: Activiteiten beheren
 description: Met de activiteitenconsole kunt u de marketingactiviteiten van uw merken maken, organiseren en beheren
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2020'
-ht-degree: 18%
+source-wordcount: '1960'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +21,7 @@ Met de Activiteiten-console kunt u de marketing [activiteiten](/help/sites-cloud
 >
 >Als u Adobe Target gebruikt als de doelengine, kunt u ook [prestatiegegevens van uw activiteiten weergeven](#viewing-performance-and-converting-winning-experiences-a-b-test). Als u A/B test, kunt u [winnaars omzetten](#viewing-performance-and-converting-winning-experiences-a-b-test).
 
-Op de Activity Console worden de activiteiten georganiseerd door merk. U kunt merken en mappen gebruiken om de organisatie van uw activiteiten te structureren. U navigeert aan de console van Activiteiten door te tikken/te klikken **Personalisatie** en tikken/klikken **Activiteiten**.
+Op de Activity Console worden de activiteiten georganiseerd door merk. U kunt merken en mappen gebruiken om uw activiteiten te structureren. U navigeert aan de console van Activiteiten door te tikken/te klikken **Personalisatie** en tikken/klikken **Activiteiten**.
 
 Activiteiten zijn beschikbaar in de modus Doel voor [ontwerpen, doelinhoud](/help/sites-cloud/authoring/personalization/targeted-content.md), waar u ook activiteiten kunt maken. De activiteiten die u op het richten wijze creeert verschijnen in de console van Activiteiten.
 
@@ -58,14 +58,14 @@ Maak een merk waarvoor u marketingactiviteiten wilt beheren.
 
 Wanneer u een merk maakt met de Activiteitenconsole, wordt dit ook weergegeven in het dialoogvenster [Aanbiedingsconsole](/help/sites-cloud/authoring/personalization/offers.md) waar u aanbiedingen kunt maken voor de ervaringen van uw activiteiten.
 
-1. Klik of tik in de navigatieconsole op **Personalisatie**. Klikken of tikken **Activiteiten**.
+1. Selecteer in de navigatieconsole de optie **Personalisatie**. Selecteren **Activiteiten**.
 
    ![Navigeren naar activiteiten](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
-1. Klik of tik in de activiteitenconsole op **Maken** dan **Merk maken**.
-1. Selecteer de merksjabloon en klik of tik op **Volgende**.
+1. Selecteer in de activiteitenconsole de optie **Maken** dan **Merk maken**.
+1. Selecteer de merksjabloon en selecteer **Volgende**.
 1. Typ een titel voor het merk zoals u deze wilt weergeven in de consoles Activiteiten en Aanbiedingen. Typ of selecteer eventueel een of meer tags die u aan het merk wilt koppelen.
-1. Klikken of tikken **Maken**. Uw merk wordt weergegeven in de Activiteitenconsole.
+1. Selecteer **Maken**. Uw merk wordt weergegeven in de Activiteitenconsole.
 
 ## Een activiteit toevoegen/bewerken met de activiteitenconsole {#adding-editing-an-activity-using-the-activities-console}
 
@@ -94,32 +94,32 @@ Voeg een activiteit toe of bewerk een bestaande activiteit om uw marketing inspa
 
 Een activiteit toevoegen:
 
-1. Klik of tik op het merk waarvoor u de activiteit maakt en klik of tik vervolgens op **Maken** en vervolgens op **Activiteit maken**. Selecteer bij het bewerken de activiteit in het scherm Mastergebied en klik of tik op **Activiteit bewerken**.
-1. Geef de volgende informatie op en klik of tik op **Volgende**:
+1. Selecteer het merk waarvoor u de activiteit maakt en selecteer **Maken** dan **Activiteit maken**. Selecteer bij het bewerken de activiteit in het scherm Mastergebied en klik of tik op **Activiteit bewerken**.
+1. Geef de volgende informatie op en selecteer **Volgende**:
    * Een naam voor de activiteit.
    * De doelengine die moet worden gebruikt. ContextHub (AEM) wordt geselecteerd door gebrek. Als u Adobe Target moet gebruiken, maakt u de activiteit in de beoogde inhoudseditor.
    * Als u Adobe Target hebt geselecteerd als de doelengine, selecteert of bewerkt u de cloudconfiguratie die u wilt gebruiken om verbinding te maken met Adobe Target. (Zorg ervoor dat u geen framework selecteert dat u hebt gemaakt voor uw cloudconfiguratie.)
    * (Optioneel) Het doel of een beschrijving van de activiteit.
    * Selecteer het type activiteit.
-1. Voeg een of meer ervaringen toe aan de activiteit. Klik of tik op **Ervaring toevoegen**.
+1. Voeg een of meer ervaringen toe aan de activiteit. Selecteren **Ervaring toevoegen**.
 1. Als u gebruikmaakt van AEM of Adobe Target-ervaring als doelwit:
-   1. Klikken of tikken **Publiek selecteren** en selecteer het segment dat uw ervaring richt.
-   1. Klikken of tikken **Ervaring toevoegen**, typt u een naam en klikt of tikt **OK**.
-   1. Klikken of tikken **Volgende**.
+   1. Selecteren **Publiek selecteren** en selecteer het segment dat uw ervaring richt.
+   1. Selecteren **Ervaring toevoegen**, typt u een naam en selecteert u **OK**.
+   1. Selecteren **Volgende**.
 Als u Adobe Target A/B Testen gebruikt:
-   1. Klik of tik op het potlood in het vak Soorten publiek om een publiek te selecteren.
-   1. Klikken of tikken **Ervaring toevoegen**, typt u een naam en klikt of tikt **OK**.
+   1. Selecteer het potlood in het vak Soorten publiek om een publiek te selecteren.
+   1. Selecteren **Ervaring toevoegen**, typt u een naam en selecteert u **OK**.
    1. Ga het percentage van verkeer in dat elke ervaring toont.
-   1. Klikken of tikken **Volgende**.
+   1. Selecteren **Volgende**.
 1. Als u wilt opgeven wanneer de activiteit begint, gebruikt u de opdracht **Start** vervolgkeuzelijst om een van de volgende waarden te selecteren:
    * **Indien geactiveerd:** De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
-   * **Opgegeven datum en tijd:** Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
+   * **Opgegeven datum en tijd:** Een specifieke tijd. Wanneer u deze optie selecteert, selecteert u het kalenderpictogram, selecteert u een datum en geeft u de begintijd voor de activiteit op.
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u het vervolgkeuzemenu Einde om een van de volgende waarden te selecteren:
    * **Wanneer gedeactiveerd**: De activiteit eindigt wanneer de pagina die de beoogde inhoud bevat, wordt gedeactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
-1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om een van de **Laag**, **Normaal**, of **Hoog**.
-1. Als u Adobe Target gebruikt als de doelengine, selecteert u wat u met deze activiteit wilt meten. Zie [Het vormen van de Activiteit en het Plaatsen Doelstellingen](/help/sites-cloud/authoring/personalization/targeted-content.md) voor meer informatie over de beschikbare succescijfers. U moet ten minste één doel selecteren.
-1. Klikken of tikken **Opslaan**.
+   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, selecteert u het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
+1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om **Laag**, **Normaal**, of **Hoog**.
+1. Als u Adobe Target gebruikt als de doelengine, selecteert u wat u met deze activiteit wilt meten. Zie [Het vormen van de Activiteit en het Plaatsen Doelstellingen](/help/sites-cloud/authoring/personalization/targeted-content.md) voor meer informatie over de beschikbare succescijfers. Selecteer ten minste één doel.
+1. Selecteren **Opslaan**.
 
    >[!NOTE]
    >
@@ -135,12 +135,12 @@ U moet activiteiten publiceren om deze beschikbaar te maken. Omgekeerd kunt u ac
 
 Om activiteiten te publiceren of unpublish:
 
-1. Klik of tik op het merk en vervolgens het gebied met de activiteit die u wilt publiceren of de publicatie ongedaan wilt maken.
-1. Tik of klik op het pictogram naast de activiteit of activiteiten die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken.
+1. Selecteer het merk en vervolgens het gebied dat de activiteit bevat die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken.
+1. Selecteer het pictogram naast de activiteit of de activiteiten u wilt publiceren of unpublish.
 
    ![Publiceren vanaf de activiteitenconsole](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Tik of klik om te publiceren **Publiceren**. Tik of klik om de publicatie ongedaan te maken **Publiceren ongedaan maken**. Uw activiteit of activiteiten worden gepubliceerd of niet gepubliceerd en hun statusveranderingen in de console van de Activiteiten (kan vereisen verfrissen).
+1. Selecteer **Publiceren**. Als u de publicatie ongedaan wilt maken, selecteert u **Publiceren ongedaan maken**. Uw activiteit of activiteiten worden gepubliceerd of niet gepubliceerd en hun statusveranderingen in de console van de Activiteiten (kan vereisen verfrissen).
 
 ## Activiteiten met betrekking tot instanties Auteur en Publiceren {#activities-on-author-and-publish-instances}
 
@@ -155,13 +155,13 @@ U kunt de prestaties van elke Adobe Target-activiteit (XT of A/B) bekijken. Als 
 
 Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te zetten:
 
-1. In **Personalisatie**, klikken of tikken **Activiteiten** om naar de **Activiteiten** console.
-1. Klik of tik op het merk waarvoor u activiteiten wilt zien.
-1. Selecteer de activiteit, klik of tik op **Weergave-eigenschappen**, klik op het tabblad **Rapporten** en selecteer de activiteit waarvoor u prestaties wilt bekijken of waarvoor u winnende ervaringen wilt converteren. Prestatiedata worden weergegeven.
+1. In **Personalisatie**, selecteert u **Activiteiten** om naar de **Activiteiten** console.
+1. Selecteer het merk waarvoor u activiteiten wilt zien.
+1. Selecteer de activiteit en selecteer **Eigenschappen weergeven** en klik op de knop **Rapporten** en selecteert u de activiteit waarvoor u de prestaties voor het winnen/omzetten van winnende ervaringen wilt bekijken. Prestatiedata worden weergegeven.
 
    ![Prestaties van activiteiten controleren](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. Klik of tik op **Push-winnaar** een koppeling om die ervaring als de standaardervaring te gebruiken.
+1. Selecteer de **Push-winnaar** een koppeling om die ervaring als de standaardervaring te gebruiken.
 
    Als u de winnaar omzet, gebeurt het volgende:
 
@@ -172,7 +172,7 @@ Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te ze
 
    Een winnende ervaring is de ervaring die meer Lift in de rapporten produceert, die op de omrekeningskoers gebaseerd is.
 
-1. Klikken of tikken **Ja** om te bevestigen dat u de winnaar wilt converteren, de huidige ervaring uit te schakelen en deze te vervangen door de inhoud van de winnende ervaring.
+1. Selecteren **Ja** om te bevestigen dat u de winnaar wilt converteren, de huidige ervaring uit te schakelen en deze te vervangen door de inhoud van de winnende ervaring.
 
 ## Synchroniseren van activiteiten met Adobe Target {#synchronizing-activities-with-adobe-target}
 
@@ -213,7 +213,7 @@ Gebruik altijd unieke namen voor activiteiten om synchronisatieproblemen te voor
 
 >[!NOTE]
 >
->Wanneer u een campagne maakt in Adobe Target, wordt een eigenschap toegewezen met de naam `thirdPartyId` naar elke campagne. Wanneer u de campagne in Adobe Target verwijdert, `thirdPartyId` wordt niet verwijderd. U kunt de `thirdPartyId` voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Geef elke campagne een unieke naam om dit probleem te voorkomen. campagnemenamen kunnen daarom niet opnieuw worden gebruikt in verschillende soorten campagnes.
+>Wanneer u een campagne maakt in Adobe Target, wordt een eigenschap toegewezen met de naam `thirdPartyId` naar elke campagne. Wanneer u de campagne in Adobe Target verwijdert, `thirdPartyId` wordt niet verwijderd. U kunt de `thirdPartyId` voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Om dit probleem te voorkomen, geeft u elke campagne een unieke naam. De naam van de campagne kan daarom niet opnieuw worden gebruikt in verschillende typen campagnes.
 >
 >Als u dezelfde naam gebruikt in hetzelfde type campagne, overschrijft u de bestaande campagne.
 >

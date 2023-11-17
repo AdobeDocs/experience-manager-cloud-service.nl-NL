@@ -3,9 +3,9 @@ title: CI/CD-pijpleidingen
 description: Leer meer over de CI/CD-pijpleidingen van Cloud Manager en hoe deze kunnen worden gebruikt om uw code efficiënt te implementeren.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Deze worden later in dit document uitgebreid beschreven.
 
 ### CI-CD-pijpleidingen begrijpen in Cloud Manager {#understand-pipelines}
 
-In de volgende tabel vindt u een overzicht van alle pijpleidingen die beschikbaar zijn in Cloud Manager en het gebruik ervan.
+De volgende tabel geeft een overzicht van de pijpleidingen die beschikbaar zijn in Cloud Manager en het gebruik ervan.
 
 | Type pijpleiding | Implementatie- of codekwaliteit | Broncode | Doel | Notities |
 |--- |--- |--- |---|---|
@@ -115,7 +115,7 @@ Leren hoe te om volledig-stapelpijpleidingen te vormen, zie de volgende document
 
 Met een config pijpleiding kunt u de regels van de verkeersfilter, met inbegrip van de regels van WAF, binnen notulen vormen en opstellen.
 
-Zie het document [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md) om te leren hoe u de configuraties in uw opslagplaats kunt beheren, zodat deze correct worden geïmplementeerd.
+Zie [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md) om te leren hoe u de configuraties in uw opslagplaats kunt beheren, zodat deze correct worden geïmplementeerd.
 
 ### Config Pipelines configureren {#configure-config-deployment}
 
@@ -157,7 +157,7 @@ Zie [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/de
 
 ## Webservicepijpleidingen {#web-tier-config-pipelines}
 
-De configuratiepijpleidingen van de rij van het Web laten exclusieve plaatsing van configuratie HTTPD/Dispatcher aan AEM runtime toe door het van andere codeveranderingen te ontkoppelen. Het is een gestroomlijnde pijpleiding die gebruikers verstrekt die wensen om de configuratieveranderingen van de verzender slechts op te stellen, een versnelde manier om dit in slechts een paar minuten te doen.
+De configuratiepijpleidingen van de rij van het Web laten exclusieve plaatsing van configuratie HTTPD/Dispatcher aan AEM runtime toe door het van andere codeveranderingen te ontkoppelen. Het is een gestroomlijnde pijpleiding die gebruikers verstrekt die de configuratieveranderingen van de verzender slechts willen opstellen, een versnelde manier om dit in slechts een paar minuten te doen.
 
 >[!TIP]
 >

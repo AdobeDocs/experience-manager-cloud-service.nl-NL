@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2443'
-ht-degree: 11%
+source-wordcount: '2442'
+ht-degree: 10%
 
 ---
 
@@ -266,7 +266,7 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
    >[!NOTE]
    >
-   >Zorg ervoor dat u de juiste IMS-organisatie (Brand Portal-huurder) hebt geselecteerd in de vervolgkeuzelijst (organisatie) in de rechterbovenhoek.
+   >Zorg ervoor dat u de correcte organisatie IMS (Brand Portal huurder) van de drop-down (organisatie) lijst hebt geselecteerd die bij de hoger-juiste hoek wordt gevestigd.
 
 1. Klik op **[!UICONTROL Create new project]**. Er wordt een leeg project met een door het systeem gegenereerde naam gemaakt voor uw organisatie.
 
@@ -313,7 +313,7 @@ U kunt nu de client-id (API-sleutel), het clientgeheim en de JWT-payload gebruik
 
    ![Create New Integration](assets/create-new-integration1.png)
 
-1. Create a new integration page opens. 
+1. Create an integration page. 
    
    Select your organization from the drop-down list.
 
@@ -377,7 +377,7 @@ Voer de volgende stappen uit om de IMS-account te configureren.
 >
 >U kunt slechts één IMS-configuratie hebben.
 >
->Zorg ervoor dat de IMS-configuratie slaagt voor de statuscontrole. Als de configuratie niet slaagt voor de statuscontrole, is deze ongeldig. U moet deze dan verwijderen en een nieuwe, geldige configuratie maken.
+>Zorg ervoor dat de IMS-configuratie slaagt voor de statuscontrole. Als de configuratie niet slaagt voor de statuscontrole, is deze ongeldig. U moet het schrappen en een andere geldige configuratie tot stand brengen.
 
 ### Cloudservice configureren {#configure-the-cloud-service}
 

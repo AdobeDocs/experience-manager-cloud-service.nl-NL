@@ -3,10 +3,10 @@ title: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 description: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 24c6e5e78e3e1b30e4becfad2f4f6e57e75ad4e9
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1451'
-ht-degree: 16%
+source-wordcount: '1455'
+ht-degree: 14%
 
 ---
 
@@ -93,7 +93,7 @@ Voer de Dispatcher-validator in uw map uit, met de `httpd` subopdracht:
 $ validator httpd .
 ```
 
-Als er fouten optreden over ontbrekende Include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
+Als u fouten ziet die gaan over ontbrekende include-bestanden, controleert u of u de naam van die bestanden correct hebt gewijzigd.
 
 Als u Apache-instructies ziet die niet zijn gevoegd op lijst van gewenste personen, verwijdert u deze.
 
@@ -227,7 +227,7 @@ Voer de AEM as a Cloud Service Dispatcher-validator in uw directory uit met de `
 $ validator dispatcher .
 ```
 
-Als er fouten optreden over ontbrekende Include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
+Als u fouten ziet die gaan over ontbrekende include-bestanden, controleert u of u de naam van die bestanden correct hebt gewijzigd.
 
 Als er fouten optreden met betrekking tot een niet-gedefinieerde variabele `PUBLISH_DOCROOT`, wijzigt u de naam hiervan naar `DOCROOT`.
 

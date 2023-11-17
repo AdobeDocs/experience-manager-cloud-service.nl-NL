@@ -3,13 +3,13 @@ title: Contentfragmenten - Overwegingen verwijderen
 description: Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
-
 
 # Overwegingen voor inhoudsfragmenten verwijderen {#delete-considerations-content-fragments}
 
@@ -76,4 +76,3 @@ De voorwaarde voor machtigingen om een bepaalde gebruiker en/of groep toe te sta
 * Voor alle onderstaande knooppunten `jcr:content` van alle inhoudsfragmenten:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`, en `jcr:removeChildNodes`, `jcr:removeNode`
-

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ U kunt de waarden van objecten in het laaggeladen fragment als globaal markeren,
 
 Enkele beperkingen, aanbevelingen en belangrijke punten waarmee u rekening moet houden bij het werken met lazy laden zijn:
 
-* Aanbevolen wordt om adaptieve Forms over XFA-gebaseerde Adaptieve Forms op basis van XSD-schema&#39;s te gebruiken voor het configureren van lui laden op grote formulieren. De prestatiewinst als gevolg van de lazy loading-implementatie in op XFA gebaseerde Adaptive Forms is relatief minder dan de toename in op XSD gebaseerde Adaptive Forms.
+* Adobe raadt u aan om Adaptieve Forms met XSD-schema&#39;s te gebruiken in Adaptief Forms over XFA-gebaseerde indeling voor het configureren van lui laden op grote formulieren. De prestatiewinst als gevolg van de lazy loading-implementatie in op XFA gebaseerde Adaptive Forms is relatief minder dan de toename in op XSD gebaseerde Adaptive Forms.
 * Het laden van fragmenten in een adaptieve vorm die gebruikmaken van **[!UICONTROL Responsive -everything on one page without navigation]** layout voor het hoofddeelvenster. Als resultaat van de responsieve lay-outconfiguratie, laden alle fragmenten gelijktijdig in een Adaptief Vorm. Het kan ook leiden tot verminderde prestaties.
 * Het wordt aanbevolen om het laden van fragmenten in het eerste deelvenster dat wordt weergegeven bij het laden van het adaptieve formulier, niet te configureren.
 * Lazy loading wordt ondersteund tot twee niveaus in de fragmenthiërarchie.

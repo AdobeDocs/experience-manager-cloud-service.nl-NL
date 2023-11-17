@@ -2,7 +2,7 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 >title="Go-Live-voorbereiding"
 >abstract="Om ervoor te zorgen dat AEM as a Cloud Service probleemloos en succesvol kan gaan werken, moet u plannen voor het bevriezen van code en inhoud, testversies, aanvullingen op inhoud, prestatietests, beveiligingstests en meer."
 
-In dit deel van de reis, leert u hoe te om de migratie te plannen en uit te voeren zodra zowel de code als de inhoud klaar zijn om over aan AEM as a Cloud Service te worden bewogen. Bovendien leert u wat de beste praktijken en bekende beperkingen zijn wanneer het uitvoeren van de migratie.
+In dit deel van de reis, leert u hoe te om de migratie te plannen en uit te voeren zodra zowel de code als de inhoud klaar zijn om over aan AEM as a Cloud Service te worden bewogen. Bovendien leert u wat de beste praktijken en bekende beperkingen zijn wanneer u de migratie uitvoert.
 
 ## Het verhaal tot nu toe {#story-so-far}
 

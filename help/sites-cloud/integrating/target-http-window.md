@@ -1,9 +1,9 @@
 ---
 title: Adobe AEM HTTP-doelvenster
 description: Adobe AEM HTTP-doelvenster
-source-git-commit: c193b38718622cd2e960a8e8833c2d295822dc33
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Inleiding {#introduction}
 
-Deze pagina beschrijft de configureerbare parameters huidig in het Venster van HTTP van het Doel van de Adobe AEM.
+Deze pagina beschrijft de configureerbare parameters huidig in de Adobe AEM het Venster van HTTP van het Doel.
 
 ## Parameters {#parameters}
 

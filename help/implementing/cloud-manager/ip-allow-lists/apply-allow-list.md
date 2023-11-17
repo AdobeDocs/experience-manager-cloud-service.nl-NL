@@ -2,7 +2,7 @@
 title: IP-Lijsten van gewenste personen toepassen en niet toepassen
 description: Leer om IP lijsten van gewenste personen op milieu's toe te passen en ongedaan te maken.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Wanneer het toepassen van een IP lijst van gewenste personen, worden alle IP waa
 
 ## IP-Lijsten van gewenste personen toepassen {#applying}
 
-Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** De rol kan deze stappen volgen om een IP lijst van gewenste personen toe te passen.
+Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeheer** De rol kan deze stappen volgen om een IP lijst van gewenste personen toe te passen.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
@@ -27,11 +27,11 @@ Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** De rol kan
 
 ## Lijsten van gewenste personen niet toepassen {#un-applying}
 
-Een gebruiker in de **Zakelijke eigenaar** of **Implementatiebeheer** De rol kan deze stappen volgen om een IP lijst van gewenste personen ongedaan te maken.
+Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeheer** De rol kan deze stappen volgen om een IP lijst van gewenste personen ongedaan te maken.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 1. Navigeer naar de pagina met specifieke omgevingsdetails op het tabblad **Omgevingen** en navigeer naar het **IP-Lijst van gewenste personen** tabel.
-1. Identificeer de rij van de IP lijst van gewenste personen u wenst om unapply.
+1. Identificeer de rij van de IP lijst van gewenste personen u wilt unapply.
 1. Selecteer de ellipsknop helemaal rechts van de rij.
-1. Selecteer **Toepassen ongedaan maken** en bevestig uw verzending.
+1. Selecteer de **Toepassen ongedaan maken** en bevestig uw verzending.

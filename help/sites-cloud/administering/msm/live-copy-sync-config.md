@@ -4,9 +4,9 @@ description: Leer hoe u de krachtige synchronisatieopties van Live Copy kunt con
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2414'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Synchronisatie van actieve kopie configureren {#configuring-live-copy-synchronization}
 
-Adobe Experience Manager biedt een aantal synchronisatieconfiguraties uit de verpakking. Voordat u Actieve kopieën gebruikt, moet u het volgende in overweging nemen om te bepalen hoe en wanneer Live kopieën worden gesynchroniseerd met de broninhoud ervan.
+Adobe Experience Manager biedt verschillende synchronisatieconfiguraties uit de verpakking. Voordat u Actieve kopieën gebruikt, moet u het volgende in overweging nemen om te bepalen hoe en wanneer Live kopieën worden gesynchroniseerd met de broninhoud ervan.
 
 1. Bepaal of de bestaande rollout configuraties aan uw vereisten voldoen
 1. Als de bestaande rollout configuraties niet, beslissen of u uw moet creëren.
@@ -68,7 +68,7 @@ Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u [Maak een ni
 | `contentDelete` | Met deze handeling verwijdert u knooppunten van de actieve kopie die niet op de bron aanwezig zijn. [Vorm **CQ MSM-inhoud Handeling verwijderen** service](#excluding-properties-and-node-types-from-synchronization) om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. |  |
 | `contentUpdate` | Met deze actie werkt u de inhoud van Live kopie bij met de wijzigingen van de bron. [Vorm **Update-actie CQ MSM-inhoud** service](#excluding-properties-and-node-types-from-synchronization) om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. |  |
 | `editProperties` | Met deze handeling bewerkt u de eigenschappen van de actieve kopie. De `editMap` Deze eigenschap bepaalt welke eigenschappen worden bewerkt en de waarde ervan. De waarde van `editMap` eigenschap moet de volgende notatie gebruiken:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` en `new_value` zijn reguliere expressies en `n` is een verhoogd geheel getal.<br>Neem bijvoorbeeld de volgende waarde voor `editMap`:<br>`sling:resourceType#/(contentpage`bekrachtigen`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Met deze waarde worden de eigenschappen van de knooppunten van Live Copy als volgt bewerkt:<br>De `sling:resourceType` eigenschappen die zijn ingesteld op `contentpage` of aan `homepage` zijn ingesteld op `mobilecontentpage`.<br>De `cq:template` eigenschappen die zijn ingesteld op `contentpage` zijn ingesteld op `mobilecontentpage`. | `editMap: (String)` identificeert de eigenschap, de huidige waarde en de nieuwe waarde. Zie de beschrijving voor meer informatie. |
-| `notify` | Met deze actie wordt een paginagebeurtenis verzonden die de pagina heeft opgerold. Om op de hoogte te worden gebracht, moet u zich eerst abonneren op rollout-gebeurtenissen. |  |
+| `notify` | Met deze actie wordt een paginagebeurtenis verzonden die de pagina heeft opgerold. Om op de hoogte te worden gesteld, moet u zich eerst abonneren op rollout-gebeurtenissen. |  |
 | `orderChildren` | Met deze handeling worden de onderliggende knooppunten gesorteerd op basis van de volgorde op de blauwdruk. |  |
 | `referencesUpdate` | Deze synchronisatiehandeling werkt verwijzingen naar Live Copy bij.<br>Er wordt gezocht naar paden op de pagina&#39;s van Live Copy die naar een bron in de blauwdruk verwijzen. Als deze optie wordt gevonden, wordt het pad bijgewerkt zodat deze naar de gerelateerde bron in de Live kopie verwijst. Verwijzingen die doelen buiten de blauwdruk hebben, worden niet gewijzigd. <br>[Vorm **Update-actie CQ MSM-verwijzingen** service](#excluding-properties-and-node-types-from-synchronization) om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. |  |
 | `targetVersion` | Met deze handeling maakt u een versie van Live Copy.<br>Deze actie moet de enige synchronisatieactie inbegrepen in een rollout configuratie zijn. |  |
@@ -156,8 +156,8 @@ De volgende lijst met locaties waar u de te gebruiken rollout-configuraties kunt
 
 Een blauwdruk gebruikt bijvoorbeeld de [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) site als broninhoud. Op basis van de blauwdruk wordt een site gemaakt. Elk punt in de volgende lijst beschrijft een verschillend scenario betreffende het gebruik van rollout configuraties:
 
-* Geen van de pagina&#39;s van de blauwdruk of de Live Copy-pagina&#39;s is geconfigureerd om een rollout-configuratie te gebruiken. MSM gebruikt de standaardconfiguratie van de systeemuitrol voor alle Actieve pagina&#39;s van het Exemplaar.
-* De wortelpagina van de plaats WKND wordt gevormd met verscheidene rollout configuraties. MSM gebruikt deze rollout configuraties voor alle Actieve pagina&#39;s van het Exemplaar.
+* Geen van de pagina&#39;s van de blauwdruk of de Live Copy-pagina&#39;s is geconfigureerd om een rollout-configuratie te gebruiken. MSM gebruikt de standaardconfiguratie van de systeemuitloop voor alle Live Copy-pagina&#39;s.
+* De wortelpagina van de plaats WKND wordt gevormd met verscheidene rollout configuraties. MSM gebruikt deze rollout configuraties voor alle Live Copy pagina&#39;s.
 * De hoofdpagina van de WKND-site is geconfigureerd met verschillende rollout-configuraties en de hoofdpagina van de Live Copy-site is geconfigureerd met een andere set rollout-configuraties. MSM gebruikt de rollout configuraties die op de wortelpagina van de Levende plaats van het Exemplaar worden gevormd.
 
 ### De rollout-configuraties instellen voor een Live Copy-pagina {#setting-the-rollout-configurations-for-a-live-copy-page}
@@ -182,7 +182,7 @@ U kunt ook de rollout-configuraties configureren voor een Live Copy-pagina wanne
 
    ![Live Copy-configuratieovererving overschrijven](../assets/live-copy-inherit-override.png)
 
-1. Klikken of tikken **Opslaan en sluiten**.
+1. Selecteren **Opslaan en sluiten**.
 
 ### De configuratie van de Output instellen voor een vervagingspagina {#setting-the-rollout-configuration-for-a-blueprint-page}
 

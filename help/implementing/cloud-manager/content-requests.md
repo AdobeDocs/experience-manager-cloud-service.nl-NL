@@ -2,9 +2,9 @@
 title: Inhoudsverzoeken van Cloud Servicen begrijpen
 description: Als u licenties voor inhoudsaanvragen van Adobe hebt aangeschaft, leert u meer over de typen inhoudsaanvragen die Adobe Experience Cloud als een service meet en over de verschillen met de analytische rapportagehulpprogramma's van een organisatie.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Zie ook [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.m
 
 ## Inhoudsverzoeken van Cloud Servicen begrijpen {#about-content-request}
 
-Inhoudsverzoeken worden automatisch bijgehouden aan de rand van de as a Cloud Service Adobe Experience Manager (AEM), via geautomatiseerde analyse van de logbestanden die afkomstig zijn van de AEM as a Cloud Service CDN, waarbij de aanvragen die HTML (text/html) of JSON (application/json) inhoud retourneren, van de CDN worden geïsoleerd en op basis van een aantal hieronder beschreven opname- en uitsluitingsregels. Een inhoudsverzoek gebeurt onafhankelijk van de teruggekeerde inhoud die van CDN caches wordt gediend of die terug naar de oorsprong van CDN (AEM verzenders) gaat.
+Inhoudsverzoeken worden automatisch bijgehouden aan de rand van de as a Cloud Service Adobe Experience Manager (AEM), via geautomatiseerde analyse van de logbestanden die afkomstig zijn van de AEM as a Cloud Service CDN, waarbij de aanvragen die HTML (text/html) of JSON (application/json) inhoud retourneren van de CDN worden geïsoleerd en op basis van verschillende hieronder beschreven opname- en uitsluitingsregels. Een inhoudsverzoek gebeurt onafhankelijk van de teruggekeerde inhoud die van CDN caches wordt gediend of die terug naar de oorsprong van CDN (AEM verzenders) gaat.
 
 Voor klanten die hun eigen CDN bovenop AEM as a Cloud Service brengen, zal dit volgen in aantallen resulteren die niet kunnen worden gebruikt om met de vergunning gegeven inhoudsverzoeken te vergelijken, die door de klant bij de rand van buitenste CDN zullen moeten worden gemeten.
 

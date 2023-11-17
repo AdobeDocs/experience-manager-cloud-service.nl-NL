@@ -2,7 +2,7 @@
 title: Invoegtoepassing demodemodus begrijpen
 description: Leer meer over Cloud Manager en hoe deze wordt gebruikt om de invoegtoepassing te installeren.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Er zijn minimale vereisten om over te leren en te beginnen gebruiken de Add-on v
 
 Cloud Manager is een essentieel onderdeel van AEM as a Cloud Service en fungeert als één ingangspunt voor het platform.
 
-Cloud Manager wordt gebruikt om de cloudbronnen te beheren die uw AEM projecten ondersteunen, inclusief de omgevingen en tools die nodig zijn. Voor deze reis is een volledig begrip van Cloud Manager niet nodig. Nochtans, moet u met sommige basisconcepten vertrouwd zijn.
+Cloud Manager wordt gebruikt voor het beheer van de cloudbronnen die uw AEM projecten ondersteunen, inclusief de omgevingen en tools die nodig zijn. Voor deze reis is een volledig begrip van Cloud Manager niet nodig. Nochtans, moet u met sommige basisconcepten vertrouwd zijn.
 
 >[!TIP]
 >
@@ -65,7 +65,7 @@ Als u zich aanmeldt bij Cloud Manager die **WKND Reizen- en avontuurbedrijven** 
 
 ### Sandboxen {#sandboxes}
 
-Programma&#39;s kunnen productieprogramma&#39;s of sandboxprogramma&#39;s zijn.
+De programma&#39;s kunnen of productieprogramma&#39;s of zandbakprogramma&#39;s zijn.
 
 * **Een productieprogramma** wordt gecreeerd om levend verkeer uiteindelijk toe te staan wanneer uw programma klaar is om te leven.
 * **Een sandboxprogramma** wordt gecreeerd voor opleiding, lopende demo&#39;s, enablement, POCs, etc., en is niet bedoeld voor levend verkeer.
@@ -108,6 +108,6 @@ Bouw op deze kennis voort en zet uw AEM snelle reis van de Plaats door te herzie
 
 Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site maken te gaan door het volgende gedeelte te bekijken [Een programma en een pijplijn maken](create-program.md)Hieronder volgen enkele aanvullende, optionele bronnen. Deze middelen nemen een diepere duik in concepten in dit document worden vermeld. Zij zijn echter niet verplicht de reis voort te zetten.
 
-* [Programma&#39;s en programmatypen begrijpen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) - Begin hier om de verschillen tussen live- en sandboxprogramma&#39;s te begrijpen.
+* [Programma&#39;s en programmatypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) - Begin hier om de verschillen tussen live- en sandboxprogramma&#39;s te begrijpen.
 * [Sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md) - Raadpleeg dit document als u meer wilt weten over de structuur van sitesjablonen en hoe u deze gebruikt om sites te maken.
 * [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.

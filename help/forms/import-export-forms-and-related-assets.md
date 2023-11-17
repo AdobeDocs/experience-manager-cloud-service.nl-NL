@@ -1,9 +1,9 @@
 ---
 title: Elementen importeren en exporteren naar [!DNL AEM Forms]?
 description: Leer hoe u DocuSign met een adaptief formulier kunt gebruiken om e-handtekeningen te verzamelen.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Forms en Documenten downloaden:
 1. Selecteer de formulierelementen en tik op de **[!UICONTROL Download]** pictogram.
 1. Kies in het (de) downloadmiddel(en) een van de volgende opties en tik **[!UICONTROL Download]**.
 
-   * **Downloaden als CRX-pakket:** Gebruik de optie om alle geselecteerde elementen en gerelateerde afhankelijkheden te downloaden en te verplaatsen van een [!DNL AEM Forms] aan een andere instantie. Alle elementen en mappen worden als crx-pakket gedownload. Alle formulierelementen, waaronder de formulieren die zijn geschreven in AEM (Adaptieve Forms en Adaptieve formulierfragmenten), PDF-documenten en bronnen (XSD&#39;s, XFS, afbeeldingen), kunnen worden gedownload als pakket van [!DNL AEM Forms] UI.
+   * **Downloaden als CRX-pakket:** Gebruik de optie om alle geselecteerde elementen en gerelateerde afhankelijkheden te downloaden en verplaatsen vanuit een [!DNL AEM Forms] aan een andere instantie. Alle elementen en mappen worden als crx-pakket gedownload. Alle formulierelementen, zoals de formulieren die zijn geschreven in AEM (Adaptieve Forms en Adaptieve formulierfragmenten), PDF-documenten en bronnen (XSD&#39;s, XFS, afbeeldingen) kunnen worden gedownload als pakket van [!DNL AEM Forms] UI.
 Het voordeel van het downloaden van elementen als pakket is dat ook elementen worden gedownload die door het geselecteerde element zijn gebruikt om te downloaden. Als u bijvoorbeeld een adaptief formulier hebt waarin een formuliersjabloon, XSD en een afbeelding worden gebruikt. Wanneer u dit adaptieve formulier selecteert en het als pakket downloadt, bevat het gedownloade pakket ook de formuliersjabloon, XSD en de afbeelding. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload.
 
    * **Elementen downloaden als binaire bestanden:** Gebruik de optie om alleen formuliersjablonen (XDP), PDF forms (PDF), documenten (PDF) en bronnen (afbeeldingen, schema&#39;s, opmaakmodellen) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De formulierbestanden met binaire bestanden, zoals XSD&#39;s, XDP&#39;s, afbeeldingen, PDF en XDP&#39;s, worden gedownload als ZIP-bestand.

@@ -2,9 +2,9 @@
 title: Inleiding tot aangepaste domeinnamen
 description: Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren met een unieke merknaam.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ In één milieu kunt u beide domeinen hebben die in AEM-beheerde CDN worden geï
 
 ## Workflow {#workflow}
 
-Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-service en Cloud Manager vereist. Wegens dit zijn er een aantal stappen die worden vereist om, de namen van het douanedomein te installeren te vormen en te verifiëren. In de volgende tabel vindt u een overzicht van de vereiste stappen, inclusief wat u moet doen als er algemene fouten optreden.
+Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-service en Cloud Manager vereist. Wegens dit zijn er verscheidene stappen die worden vereist om, douanedomeinamen te installeren te vormen en te verifiëren. In de volgende tabel vindt u een overzicht van de vereiste stappen, inclusief wat u moet doen als er algemene fouten optreden.
 
 | Stap | Beschrijving | Verantwoordelijkheid | Meer informatie |
 |--- |--- |--- |---|
@@ -66,7 +66,7 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 
 ## Beperkingen {#limitations}
 
-Er gelden een aantal beperkingen voor het gebruik van aangepaste domeinnamen met AEMaaCS.
+Er gelden verschillende beperkingen voor het gebruik van aangepaste domeinnamen met AEMaaCS.
 
 * Aangepaste domeinnamen worden ondersteund in Cloud Manager voor zowel publicatie- als voorvertoningsservices voor Sites-programma&#39;s. Aangepaste domeinen voor auteursservices worden niet ondersteund.
 * Elke Cloud Manager-omgeving kan maximaal 500 aangepaste domeinen per omgeving hosten.

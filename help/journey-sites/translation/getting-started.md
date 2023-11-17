@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Met dit document kunt u begrijpen hoe u de inhoud van sites in AEM kunt gaan ver
 
 ## Eisen en voorwaarden {#requirements-prerequisites}
 
-Er zijn een aantal vereisten voordat u begint met het vertalen van AEM inhoud.
+Er zijn verschillende vereisten voordat u begint met het vertalen van AEM inhoud.
 
 ### Kennis {#knowledge}
 
@@ -65,7 +65,7 @@ De siteconsole biedt een overzicht van de structuur van uw inhoud waardoor u een
 
 Toegang tot de siteconsole:
 
-1. Klik of tik op **Navigatie** -> **Sites**.
+1. Selecteer in het algemene navigatiemenu de optie **Navigatie** > **Sites**.
 1. De siteconsole wordt geopend op het hoogste niveau van uw inhoud.
 1. Zorg ervoor dat de **Kolomweergave** is geselecteerd met de weergavekiezer rechtsboven in het venster.
 
@@ -75,7 +75,7 @@ Toegang tot de siteconsole:
 
    ![Inhoudshiërarchie](assets/sites-console-hierarchy.png)
 
-1. Door op het selectievakje van een item in een kolom te tikken of erop te klikken, wordt dat item geselecteerd en worden de details van het geselecteerde item in de kolom rechts weergegeven, zodat een aantal beschikbare acties voor het geselecteerde item op de bovenstaande werkbalk zichtbaar wordt.
+1. Door op het selectievakje van een item in een kolom te tikken of erop te klikken, wordt dat item geselecteerd en worden de details van het geselecteerde item in de kolom rechts weergegeven, zodat verschillende beschikbare acties voor het geselecteerde item op de bovenstaande werkbalk zichtbaar worden.
 
    ![Inhoud selecteren](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ Met de siteconsole kunt u door de inhoud navigeren en krijgt u een overzicht van
 
 Een pagina bewerken:
 
-1. Gebruik de siteconsole om een pagina te zoeken en te selecteren. Tik of klik op het selectievakje van een afzonderlijke pagina om deze te selecteren.
+1. Gebruik de siteconsole om een pagina te zoeken en te selecteren. U moet het selectievakje van een afzonderlijke pagina inschakelen om deze te selecteren.
 
    ![Een pagina selecteren om te bewerken](assets/sites-editor-select-page.png)
 

@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3060'
+source-wordcount: '3058'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
 1. **Een veld verwijderen**
 
-   Selecteer het gewenste veld en klik op het pictogram van de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
+   Selecteer het vereiste veld en selecteer vervolgens het prullenbakpictogram. U wordt gevraagd de actie te bevestigen.
 
    ![Verwijderen](assets/cf-cfmodels-remove-icon.png)
 
@@ -161,7 +161,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 * **Datum en tijd**
    * Een datum en/of tijd toevoegen
 * **Opsomming**
-   * Een set selectievakjes, keuzerondjes of vervolgkeuzelijsten toevoegen
+   * Een set selectievakjes, keuzerondjes of vervolgkeuzelijstvelden toevoegen
 * **Tags**
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
 * **Content Reference**
@@ -196,7 +196,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
   >[!CAUTION]
   >
-  >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
+  >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
 * **Renderen als**
 De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hier kunt u vaak definiëren of de auteur één instantie van het veld ziet of meerdere instanties mag maken.
@@ -374,7 +374,7 @@ U kunt **Inschakelen** of **Uitschakelen** uw modellen van het Fragment van de I
 
 Nadat een model is gemaakt, moet het zijn ingeschakeld zodat het:
 
-* Deze optie is beschikbaar voor selectie wanneer u een nieuw inhoudsfragment maakt.
+* Deze optie is beschikbaar voor selectie wanneer u een inhoudsfragment maakt.
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
 * Is beschikbaar aan GraphQL; zo wordt het schema geproduceerd.
 

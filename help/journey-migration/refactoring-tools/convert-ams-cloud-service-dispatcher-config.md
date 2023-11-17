@@ -1,9 +1,9 @@
 ---
 title: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
 description: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1282'
 ht-degree: 39%
 
 ---
@@ -79,7 +79,7 @@ Verwijder de secties die verwijzen naar variabelen met de naam DISP_ID, PUBLISH_
    Voer de Dispatcher-validator in uw map uit met de httpd-subopdracht:
 
    `$ validator httpd`
-Als er fouten optreden bij ontbrekende include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
+Als er fouten optreden die betrekking hebben op ontbrekende include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
 
    Als u Apache-instructies ziet die op de whitelist staan, verwijdert u deze.
 
@@ -89,7 +89,7 @@ Als er fouten optreden bij ontbrekende include-bestanden, controleert u of de na
 
 1. **De naam van farmbestanden wijzigen**
 
-   Alle landbouwbedrijven in conf.dispatcher.d/enabled_farm moeten worden anders genoemd om het patroon *.farm aan te passen. Wijzig bijvoorbeeld de naam `customerX_farm.any` tot `customerX.farm`.
+   Alle landbouwbedrijven in conf.dispatcher.d/enabled_farm moeten worden anders genoemd om het patroon *.farm aan te passen. Naam wijzigen `customerX_farm.any` tot `customerX.farm`.
 
 1. **Cache controleren**
 
@@ -190,7 +190,7 @@ met de instructie:
 
      `$ validator dispatcher`
 
-   * Als er fouten optreden bij ontbrekende include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
+   * Als er fouten optreden die betrekking hebben op ontbrekende include-bestanden, controleert u of de naam van die bestanden correct is gewijzigd.
 
    * Als er fouten optreden met betrekking tot een niet-gedefinieerde variabele `PUBLISH_DOCROOT`, wijzigt u de naam hiervan naar `DOCROOT`.
 

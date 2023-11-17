@@ -4,9 +4,9 @@ description: Meer informatie over de vereiste speciale voorwaarden om Gesloten g
 hide: true
 hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -45,5 +45,5 @@ Samengevat, zijn deze stappen om CUG na een migratie toe te laten:
 1. Zorg ervoor dat elke groep die in CUG-beleid wordt gebruikt, bestaat bij Publiceren na de migratie.
    - Een groep kan bestaan als inbegrepen in ACL van gemigreerde inhoud.
    - Als dit niet het geval is, gebruikt u Packages om de toepassing op de doelinstantie te installeren (of maakt u deze daar handmatig) en activeert u de instantie en de betreffende leden. Controleer vervolgens of het bestand aanwezig is in Publiceren.
-1. Publiceer alle pagina&#39;s verbonden aan een beleid van de GING, die ervoor zorgen het door, bijvoorbeeld, eerst het uitgeven van de pagina wordt gepubliceerd. Het is belangrijk dat ze allemaal opnieuw worden gepubliceerd.
+1. Publiceer alle pagina&#39;s verbonden aan een beleid van de GING, die ervoor zorgen het door, bijvoorbeeld, eerst het uitgeven van de pagina wordt gepubliceerd. Het is van belang dat ze allemaal opnieuw worden gepubliceerd.
    - Nadat alle pagina&#39;s opnieuw zijn gepubliceerd, controleert u de functionaliteit voor elke pagina die met CUG is beveiligd.

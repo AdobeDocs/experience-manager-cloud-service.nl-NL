@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten - Configuratie-browser (middelen - Inhoudsfragmenten)
 description: Leer hoe te om de functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '355'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebro
 
 >[!CAUTION]
 >
->Als u deze optie niet inschakelt **Modellen van inhoudsfragmenten**:
+>Als u niet inschakelt **Modellen van inhoudsfragmenten**:
 >
 >* de **Maken** is niet beschikbaar voor het maken van modellen.
 >* u kunt [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/headless/graphql-api/graphql-endpoint.md).
@@ -34,11 +34,11 @@ U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schak
 
 ### Functionaliteit van inhoudsfragment inschakelen in configuratievenster {#enable-content-fragment-functionality-in-configuration-browser}
 
-Als u bepaalde [Functionaliteit van inhoudsfragment](#creating-a-content-fragment-model), u **moet** eerst de **Configuratiebrowser**:
+Bepaalde [Functionaliteit van inhoudsfragment](#creating-a-content-fragment-model), u **moet** eerst de **Configuratiebrowser**:
 
 >[!NOTE]
 >
->Zie voor meer informatie [Configuratiebrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Zie [Configuratiebrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Als u bepaalde [Functionaliteit van inhoudsfragment](#creating-a-content-fragmen
    1. De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
       * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
       * U kunt deze desgewenst aanpassen.
-   1. Selecteer
+   1. Om hun gebruik toe te laten selecteer
       * **Modellen van contentfragmenten**
       * **Aangehouden GraphQL-query&#39;s**
 
@@ -76,6 +76,6 @@ Als u bepaalde [Functionaliteit van inhoudsfragment](#creating-a-content-fragmen
 
 Wanneer de configuratie **globaal** is ingeschakeld voor de functionaliteit van inhoudsfragmenten en wordt vervolgens toegepast op elke map Middelen.
 
-Als u andere configuraties (behalve algemene configuraties) wilt gebruiken in een vergelijkbare map Elementen, moet u de verbinding definiëren. Deze verbinding wordt tot stand gebracht door de juiste **Configuratie** in de **Cloud Services** tabblad van het dialoogvenster **Eigenschappen van map** van de desbetreffende map.
+Als u andere configuraties (behalve algemene configuraties) wilt gebruiken in een vergelijkbare map Elementen, moet u de verbinding definiëren. Deze verbinding wordt tot stand gebracht door de juiste **Configuratie** in de **Cloud Servicen** tabblad van het **Eigenschappen van map** van de desbetreffende map.
 
 ![Configuratie toepassen](assets/cfm-conf-02.png)

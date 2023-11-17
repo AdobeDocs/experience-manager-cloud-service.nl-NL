@@ -2,9 +2,9 @@
 title: SLA-rapportage
 description: Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken ten opzichte van de overeenkomst voor serviceniveau (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Plaats de cursor op een gegevenspunt om de specifieke waarden voor dat punt weer
 
 ## SLA-waarden {#sla-metrics}
 
-De grafiek van het geselecteerde jaar bevat een aantal gegevenssets.
+De grafiek van het geselecteerde jaar bevat verschillende gegevenssets.
 
 * **Tier-contract publiceren** - Dit is de SLA die is gedefinieerd in uw contract met Adobe voor de publicatielijst.
 

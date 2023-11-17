@@ -2,9 +2,9 @@
 title: Pagina's beheren in uw startpagina
 description: U kunt nieuwe pagina's maken in de Launch. U kunt ook ongewenste pagina's verwijderen.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Al deze ingangspunten opent de lancering in de console van Plaatsen, waar u kunt
 
 * Navigeren,
 * **Maken** nieuwe pagina&#39;s,
-* Bestaande pagina&#39;s selecteren en actie ondernemen, bijvoorbeeld **Bewerken**, open **Eigenschappen**, **Vergrendelen**, **Kopiëren**, **Plakken** en **Verwijderen**
+* Bestaande pagina&#39;s selecteren en handelen, bijvoorbeeld **Bewerken**, open **Eigenschappen**, **Vergrendelen**, **Kopiëren**, **Plakken** en **Verwijderen**
   ![Navigeren door Starten in Siteconsole vanuit Inhoud beheren](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Gebruik de **Verwijzingen** spoorwegen naar de **Bron starten** pagina&#39;s:
   ![Siteconsole - Bron starten](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

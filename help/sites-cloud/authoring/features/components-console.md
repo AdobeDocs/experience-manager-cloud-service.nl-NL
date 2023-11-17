@@ -2,9 +2,9 @@
 title: Onderdelenconsole
 description: Met de componentenconsole kunt u door alle componenten bladeren die voor uw instantie zijn gedefinieerd
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 17%
 
 ---
@@ -29,7 +29,7 @@ Met het pictogram **Alleen content** (linksboven) kunt u het deelvenster **Zoeke
 
 ### Componentdetails {#component-details}
 
-Tik op de gewenste resource om details over een bepaalde component weer te geven. Drie tabbladen bieden:
+Als u details over een bepaalde component wilt weergeven, selecteert u de gewenste bron. Drie tabbladen bieden:
 
 * **Eigenschappen**
 

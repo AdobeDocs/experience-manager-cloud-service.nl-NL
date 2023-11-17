@@ -2,10 +2,10 @@
 title: Werken met taken
 description: De taken vertegenwoordigen punten van werk dat op inhoud moet worden gedaan en in projecten worden gebruikt om het niveau van volledigheid van huidige taken te bepalen
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 11%
+source-wordcount: '573'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ U kunt projectvooruitgang volgen door de actieve/voltooide taken binnen een proj
 
 Zowel de taken van het lijstwerkschema als taken u direct in creeert **Taken** tegel.
 
-### Taaktegel {#task-tile}
+### Tegel {#task-tile}
 
 Als een project om het even welke verwante taken heeft, wordt een Tegel van de Taak getoond binnen het project. De Taaktegel toont het huidige statuut van het project. Dit is gebaseerd op bestaande taken binnen de workflow en bevat geen taken die in de toekomst worden gegenereerd wanneer de workflow doorgaat. De volgende informatie is zichtbaar in de taaktegel:
 
@@ -35,7 +35,7 @@ Als een project om het even welke verwante taken heeft, wordt een Tegel van de T
 
 ![Taaktegel](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
-### Het bekijken of het Wijzigen van de Taken in een Project {#viewing-or-modifying-the-tasks-in-a-project}
+### Het bekijken van of het Wijzigen van de Taken in een Project {#viewing-or-modifying-the-tasks-in-a-project}
 
 Naast het volgen van vooruitgang, kunt u meer informatie over het project willen bekijken of het wijzigen.
 
@@ -47,7 +47,7 @@ Klik de ellips (...) in de tegel van de Taak om de lijst van de taken met betrek
 
 #### Taakdetails {#task-details}
 
-Voor meer informatie over een bepaalde taak, in de Lijst van de Taak, tik/klik de taak en **Openen**.
+Voor meer informatie over een bepaalde taak, in de Lijst van de Taak, selecteer de taak en **Openen**.
 
 ![Taakdetails](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,12 +63,12 @@ U kunt nieuwe taken aan projecten toevoegen. Deze taken verschijnen dan in de te
 
 Een taak toevoegen:
 
-1. Tik of klik in het project in de tegel **Taken** op het +-pictogram. Het venster **Taak toevoegen** wordt geopend.
+1. In het project **Taken** Selecteer + pictogram. Het venster **Taak toevoegen** wordt geopend.
 1. Voer informatie in over de taak. De titel van de taak en de groep waaraan deze is toegewezen, zijn verplicht. Aanvullende informatie zoals het inhoudspad, de beschrijving, de taakprioriteit en de vervaldatum zijn optioneel. Daarnaast kunt u de opdracht **Geavanceerd** om de naam van de taak in te voeren. Deze naam wordt gebruikt om de URL een naam te geven.
 
    ![Een taak toevoegen](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. Tikken/klikken **Maken**.
+1. Selecteer **Maken**.
 
 ## Werken met taken in het Postvak In {#working-with-tasks-in-the-inbox}
 
@@ -76,6 +76,6 @@ Een andere manier om tot taken toegang te hebben is van Inbox. Vanuit het Postva
 
 ![Taken in het Postvak IN](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Als u een taak wilt voltooien, selecteert u de taak en klikt u op **Voltooid**. Voeg informatie toe aan de taak en klik vervolgens op **Gereed**. Zie [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md) voor meer informatie .
+Selecteer de taak en klik op **Voltooid**. Voeg informatie toe aan de taak en klik vervolgens op **Gereed**. Zie [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md) voor meer informatie .
 
 ![Taakmeldingen](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

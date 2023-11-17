@@ -2,7 +2,7 @@
 title: Gereedheidsfase
 description: Leer meer over de stappen die u moet ondernemen om ervoor te zorgen dat uw AEM installatie klaar is om naar de cloud te worden verplaatst.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 2%
@@ -80,7 +80,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Ingebouwd CDN en krijgt uw eigen CDN</td>
     <td></td>
-    <td>AEM as a Cloud Service omvat CDN voor alle milieu's die voor de meeste gebruiksgevallen wordt geoptimaliseerd.<br>Als u aan opstelling uw eigen CDN wenst, moet u een verzoek aan de Steun van de Adobe voor het indienen om worden goedgekeurd.<br>Als het wordt goedgekeurd, wijst CDN aan Vast en niet aan AEM instanties in om het even welke milieu's.</td>
+    <td>AEM as a Cloud Service omvat CDN voor alle milieu's die voor de meeste gebruiksgevallen wordt geoptimaliseerd.<br>Als u opstelling uw eigen CDN wilt, moet u een verzoek aan de Steun van de Adobe voor het indienen om worden goedgekeurd.<br>Als het wordt goedgekeurd, wijst CDN aan Vast en niet aan AEM instanties in om het even welke milieu's.</td>
   </tr>
   <tr>
     <td>Lange banen</td>

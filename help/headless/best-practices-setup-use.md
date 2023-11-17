@@ -2,9 +2,9 @@
 title: Beste praktijken voor de opstelling en het gebruik van AEM GraphQL met Inhoudsfragmenten
 description: Leer de geadviseerde Beste praktijken voor de opstelling en het gebruik van AEM GraphQL met de Fragments van de Inhoud.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 5%
 
 ---
@@ -201,7 +201,7 @@ Voor:
 
 ### Aanvullende bronnen
 
-Zie voor meer informatie over AEM GraphQL en Content Fragments:
+Raadpleeg de volgende secties voor meer informatie over AEM GraphQL en Content Fragments:
 
 * [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
 * [GraphiQL IDE gebruiken](/help/headless/graphql-api/graphiql-ide.md)

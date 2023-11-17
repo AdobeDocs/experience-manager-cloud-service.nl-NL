@@ -2,9 +2,9 @@
 title: Programma maken
 description: Leer hoe te opstelling een nieuw programma en een pijpleiding om toe:voegen-op op te stellen.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
@@ -46,30 +46,30 @@ Nadat u zich hebt aangemeld bij Cloud Manager, kunt u een sandboxprogramma maken
 
    ![Overzicht van Cloud Manager](assets/cloud-manager.png)
 
-1. Tik of klik op **Programma toevoegen** rechtsboven in het venster.
+1. Selecteren **Programma toevoegen** rechtsboven in het venster.
 
 1. In de **Laten we uw programma maken** dialoogvenster:
 
    1. Geef een **Programmanaam** om uw programma te beschrijven.
-   1. Tik of klik op **Een sandbox instellen** voor uw **Programmadoelstelling**
-   1. Tik of klik op **Doorgaan**.
+   1. Selecteren **Een sandbox instellen** voor uw **Programmadoelstelling**
+   1. Selecteren **Doorgaan**.
 
    ![Dialoogvenster Programma maken](assets/create-program.png)
 
 1. In de **Sandbox instellen** in het dialoogvenster **Oplossingen en invoegtoepassingen** tabel uitvouwen **Sites** item in de lijst door erop te tikken of erop te klikken en vervolgens te controleren **Demo van referenties**.
 
-   * Als u ook demo&#39;s voor AEM Screens wilt maken, schakelt u het selectievakje **Schermen** in de lijst. Tik of klik op **Bijwerken**.
+   * Als u ook demo&#39;s voor AEM Screens wilt maken, schakelt u het selectievakje **Schermen** in de lijst. Selecteren **Bijwerken**.
 
    ![Invoegtoepassing selecteren voor verwijzingsdemo in programma-instelling](assets/select-reference-demo-add-on.png)
 
 
-1. Tik of klik op **Maken** en Cloud Manager wordt gestart met het instellen van uw sandboxprogramma. U wordt naar het scherm met het programmaoverzicht geleid en een korte bannermelding geeft aan dat het proces is gestart. Er is een kaart toegevoegd aan de overzichtspagina voor uw nieuwe programma. Het installatieproces duurt een paar minuten.
+1. Selecteren **Maken** en Cloud Manager wordt gestart met het instellen van uw sandboxprogramma. U wordt naar het scherm met het programmaoverzicht geleid en een korte bannermelding geeft aan dat het proces is gestart. Er is een kaart toegevoegd aan de overzichtspagina voor uw nieuwe programma. Het installatieproces duurt een paar minuten.
 
-1. Zodra de installatie is voltooid, geeft de kaart voor de omgeving op de overzichtspagina zijn status als **Gereed**. Tik of klik op de kaart zodat u de omgeving kunt openen.
+1. Zodra de installatie is voltooid, geeft de kaart voor de omgeving op de overzichtspagina zijn status als **Gereed**. Selecteer de kaart zodat u de omgeving kunt openen.
 
    ![Programma is voltooid](assets/ready.png)
 
-1. Uw omgeving is gereed en de invoegtoepassing is nu ingeschakeld als optie, maar de inhoud van de demo moet worden geïmplementeerd om beschikbaar te AEM. Om dit te doen, tik of klik de ellipsknoop naast Deploy aan Dev pijpleiding in **Pijpleidingen** kaart en selecteer **Uitvoeren**.
+1. Uw omgeving is gereed en de invoegtoepassing is nu ingeschakeld als optie, maar de inhoud van de demo moet worden geïmplementeerd om beschikbaar te AEM. Om dit te doen, selecteer de ellipsknoop naast Deploy aan Dev pijpleiding in **Pijpleidingen** kaart en selecteer **Uitvoeren**.
 
    ![Start](assets/run.png)
 

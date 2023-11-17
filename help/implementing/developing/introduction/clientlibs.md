@@ -2,9 +2,9 @@
 title: Client-Side bibliotheken gebruiken op AEM as a Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2551'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Als de map met clientbibliotheken een of meer bronbestanden bevat die tijdens ru
 Clientbibliotheekmappen bevatten de volgende items:
 
 * JS- en/of CSS-bronbestanden
-* Statische bronnen die CSS-stijlen ondersteunen, zoals pictogrammen, weblettertypen, enz.
+* Statische bronnen die CSS-stijlen ondersteunen, zoals pictogrammen, weblettertypen, enzovoort.
 * Eén `js.txt` bestand en/of één `css.txt` bestand met de bronbestanden die moeten worden samengevoegd in de gegenereerde JS- en/of CSS-bestanden
 
 ![Clientlib-architectuur](assets/clientlib-architecture.drawio.png)
@@ -170,7 +170,7 @@ De `dumplibs` component omvat een testselecteur die de broncode toont die voor w
 
 ## Extra functies voor clientbibliotheekmappen {#additional-features}
 
-Er zijn een aantal andere functies die in AEM door clientbibliotheekmappen worden ondersteund. Deze zijn echter niet vereist voor AEM as a Cloud Service en daarom wordt het gebruik ervan afgeraden. Zij worden hier vermeld voor volledigheid.
+Er zijn verscheidene andere eigenschappen die door de omslagen van de cliëntbibliotheek in AEM worden gesteund. Deze zijn echter niet vereist voor AEM as a Cloud Service en daarom wordt het gebruik ervan afgeraden. Zij worden hier vermeld voor volledigheid.
 
 >[!WARNING]
 >
@@ -339,7 +339,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Voor meer informatie over GCC-opties raadpleegt u de [GCC-documentatie](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Zie voor meer informatie over GCC-opties [GCC-documentatie](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Systeemstandaardminiatuur instellen {#set-system-default-minifier}
 

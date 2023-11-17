@@ -2,9 +2,9 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 
 ## Optimalisatie van inhoudspakketscannen {#content-package-scanning-optimization}
 
-In het kader van het kwaliteitsanalyseproces voert Cloud Manager een analyse uit van de inhoudspakketten die door de Maven-build worden geproduceerd. Cloud Manager biedt optimalisaties om dit proces te versnellen, die effectief zijn wanneer bepaalde verpakkingsbeperkingen worden nageleefd. Het meest significant is de optimalisering die voor projecten wordt uitgevoerd die één enkel inhoudspakket uitvoeren, dat algemeen als &quot;allen&quot;pakket wordt bedoeld, dat een aantal andere inhoudspakketten bevat die door de bouwstijl worden geproduceerd, die als overgeslagen worden gemerkt. Wanneer Cloud Manager dit scenario detecteert in plaats van het &quot;all&quot;-pakket uit te pakken, worden de afzonderlijke inhoudspakketten direct gescand en gesorteerd op basis van afhankelijkheden. Neem bijvoorbeeld de volgende build-uitvoer.
+In het kader van het kwaliteitsanalyseproces voert Cloud Manager een analyse uit van de inhoudspakketten die door de Maven-build worden geproduceerd. Cloud Manager biedt optimalisaties om dit proces te versnellen, die effectief zijn wanneer bepaalde verpakkingsbeperkingen worden nageleefd. Het meest significant is de optimalisering die voor projecten wordt uitgevoerd die één enkel inhoudspakket uitvoeren, dat algemeen als &quot;allen&quot;pakket wordt bedoeld, dat verscheidene andere inhoudspakketten bevat die door de bouwstijl worden geproduceerd, die als overgeslagen worden gemerkt. Wanneer Cloud Manager dit scenario detecteert in plaats van het &quot;all&quot;-pakket uit te pakken, worden de afzonderlijke inhoudspakketten direct gescand en gesorteerd op basis van afhankelijkheden. Neem bijvoorbeeld de volgende build-uitvoer.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (overgeslagen-content-package)

@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3598'
+source-wordcount: '3594'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM as a Clo
 
 Het vormen van specifiek uitgang IP adres is identiek aan [flexibel poortbereik](#configuring-flexible-port-egress-provision).
 
-Het belangrijkste verschil is dat het verkeer altijd van specifieke, unieke IP zal weggaan. Om dat IP te vinden, gebruik een DNS resolver om het IP adres te identificeren verbonden aan `p{PROGRAM_ID}.external.adobeaemcloud.com`. Het IP adres wordt niet verwacht te veranderen, maar als het in de toekomst moet veranderen, wordt het geavanceerde bericht verstrekt.
+Het belangrijkste verschil is dat het verkeer altijd van specifieke, unieke IP zal weggaan. Om dat IP te vinden, gebruik een DNS resolver om het IP adres te identificeren verbonden aan `p{PROGRAM_ID}.external.adobeaemcloud.com`. Het IP adres wordt verwacht niet te veranderen, maar als het in de toekomst moet veranderen, wordt het geavanceerde bericht verstrekt.
 
 Naast de verpletterende regels die door flexibele havenuitgang in worden gesteund `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` eindpunt, specifiek uitgangIP adres steunt a `nonProxyHosts` parameter. Dit laat u een reeks gastheren verklaren die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten leiden, die nuttig kan zijn aangezien het verkeer dat door gedeelde IPs wordt behandeld verder kan worden geoptimaliseerd. De `nonProxyHost` URL&#39;s kunnen de patronen volgen van `example.com` of `*.example.com`, waarbij het jokerteken alleen wordt ondersteund aan het begin van het domein.
 
@@ -336,7 +336,7 @@ Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres,
 ## Verouderde, specifieke klanten van het Adres van de Afstuwing {#legacy-dedicated-egress-address-customers}
 
 Als u van een specifieke uitgang IP vóór 2021.09.30 bent voorzien, steunt uw specifieke uitgangIP eigenschap slechts havens HTTP en HTTPS.
-Dit omvat HTTP/1.1 en HTTP/2 wanneer gecodeerd. Bovendien kan één specifiek uitgang eindpunt met om het even welk doel slechts over HTTP/HTTPS op havens 80/443 spreken respectievelijk.
+Dit omvat HTTP/1.1 en HTTP/2 wanneer gecodeerd. Ook, kan één specifiek uitgang eindpunt met om het even welk doel slechts over HTTP/HTTPS op havens 80/443 spreken respectievelijk.
 
 ## Virtual Private Network (VPN) {#vpn}
 
@@ -371,7 +371,7 @@ Merk op dat zelfs als er geen milieuverkeer is dat regels (gastheren of bypasses
 
 De programma-vlakke configuratie van VPN kan worden bijgewerkt door het aanhalen van `PUT /api/program/<program_id>/network/<network_id>` eindpunt.
 
-Merk op dat de adresruimte niet na de aanvankelijke levering van VPN kan worden veranderd. Neem indien nodig contact op met de klantenondersteuning. Bovendien `kind` parameter (`flexiblePortEgress`, `dedicatedEgressIP` of `VPN`) kan niet worden gewijzigd. Neem voor hulp contact op met de klantenondersteuning en beschrijf wat er al is gemaakt en de reden voor de wijziging.
+De adresruimte kan niet na de aanvankelijke levering van VPN worden veranderd. Neem indien nodig contact op met de klantenondersteuning. Bovendien `kind` parameter (`flexiblePortEgress`, `dedicatedEgressIP` of `VPN`) kan niet worden gewijzigd. Neem voor hulp contact op met de klantenondersteuning en beschrijf wat er al is gemaakt en de reden voor de wijziging.
 
 Het per-milieu dat regels verplettert kan worden bijgewerkt door opnieuw het aanhalen van `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` eindpunt, ervoor zorgen om de volledige reeks configuratieparameter, eerder dan een ondergroep te omvatten. Het duurt doorgaans 5 tot 10 minuten om omgevingsupdates toe te passen.
 
@@ -543,7 +543,7 @@ Als de onderbreking significante bedrijfsgevolgen zou veroorzaken, contacteer kl
 
 ## Geavanceerde netwerkconfiguratie voor extra publicatiegebieden {#advanced-networking-configuration-for-additional-publish-regions}
 
-Wanneer een extra gebied aan een milieu wordt toegevoegd dat reeds gevormd geavanceerd voorzien van een netwerk heeft, zal het verkeer van het extra publiceer gebied dat de geavanceerde voorzien van een netwerkregels aanpast door standaardroute door het primaire gebied. Nochtans, als het primaire gebied niet beschikbaar wordt, wordt het geavanceerde voorzien van een netwerkverkeer gelaten vallen als het geavanceerde voorzien van een netwerk niet in het extra gebied is toegelaten. Als u de latentie wilt optimaliseren en de beschikbaarheid wilt verhogen in het geval dat een van de regio&#39;s een onderbreking ondergaat, is het noodzakelijk geavanceerde netwerken in te schakelen voor de aanvullende publicatiegebieden. In de volgende secties worden twee verschillende scenario&#39;s beschreven.
+Wanneer een extra gebied aan een milieu wordt toegevoegd dat reeds gevormd geavanceerd voorzien van een netwerk heeft, zal het verkeer van het extra publiceer gebied dat de geavanceerde voorzien van een netwerkregels aanpast door standaardroute door het primaire gebied. Nochtans, als het primaire gebied niet beschikbaar wordt, wordt het geavanceerde voorzien van een netwerkverkeer gelaten vallen als het geavanceerde voorzien van een netwerk niet in het extra gebied is toegelaten. Als u de latentie wilt optimaliseren en de beschikbaarheid wilt verhogen in het geval dat een van de regio&#39;s een onderbreking ondergaat, is het noodzakelijk geavanceerde netwerken in te schakelen voor de extra publicatiegebieden. In de volgende secties worden twee verschillende scenario&#39;s beschreven.
 
 >[!NOTE]
 >

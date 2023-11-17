@@ -1,15 +1,13 @@
 ---
 title: Hoe maak je toegankelijke Adaptive Forms?
 description: AEM Forms biedt u gereedschappen om toegankelijke Adaptieve Forms te maken en voldoet aan toegankelijkheidsnormen.
-uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2002'
 ht-degree: 0%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Een toegankelijk formulier is een formulier dat iedereen kan gebruiken, inclusief gebruikers met speciale behoeften. Adaptieve Forms bevat een aantal functies en mogelijkheden die de bruikbaarheid voor gebruikers met verschillende mogelijkheden verbeteren. Door toegankelijkheid in Adaptive Forms te creëren, is niet alleen een zo breed mogelijk publiek voor inhoud mogelijk, maar is het ook een vereiste bij het verstrekken van documenten in geografische gebieden waar naleving van toegankelijkheidsnormen verplicht is. [!DNL AEM Forms] Help formulierontwikkelaars zich aan de toegankelijkheidsnormen te houden.
+Een toegankelijk formulier is een formulier dat iedereen kan gebruiken, inclusief gebruikers met speciale behoeften. Adaptieve Forms bevat verschillende functies en mogelijkheden die de bruikbaarheid voor gebruikers met verschillende mogelijkheden verbeteren. Door toegankelijkheid in Adaptive Forms te creëren, is niet alleen een zo breed mogelijk publiek voor inhoud mogelijk, maar is het ook een vereiste bij het verstrekken van documenten in geografische gebieden waar naleving van toegankelijkheidsnormen verplicht is. [!DNL AEM Forms] Help formulierontwikkelaars zich aan de toegankelijkheidsnormen te houden.
 
 Tijdens het ontwerpen van een adaptief formulier moet de auteur de volgende punten in overweging nemen om toegankelijke adaptieve formulieren te maken:
 

@@ -2,9 +2,9 @@
 title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2732'
 ht-degree: 1%
 
 ---
@@ -243,7 +243,7 @@ Zie de [AEM 6.5-documentatie](https://experienceleague.adobe.com/docs/experience
 
 De SMTP serverhaven zou als `portDest` waarde die is ingesteld in de parameter portForwards die wordt gebruikt in de API-aanroep bij het configureren van geavanceerde netwerken en de `portOrig` De waarde moet een betekenisvolle waarde zijn die binnen het vereiste bereik van 30000 - 30999 ligt. Bijvoorbeeld, als de SMTP serverhaven 465 is, zou haven 30465 als moeten worden gebruikt `portOrig` waarde.
 
-In dit geval en het veronderstellen van SSL moet worden toegelaten, in de configuratie van **Day CQ Mail Service OSGI** service:
+In dit geval, en het veronderstellen van SSL moet worden toegelaten, in de configuratie van **Day CQ Mail Service OSGI** service:
 
 * Set `smtp.port` tot `30465`
 * Set `smtp.ssl` tot `true`

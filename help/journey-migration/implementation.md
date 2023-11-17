@@ -2,7 +2,7 @@
 title: Implementatiefase
 description: Zorg ervoor dat uw code en inhoud klaar zijn voor de migratie naar de cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2339'
 ht-degree: 8%
@@ -75,7 +75,7 @@ Eerst, bekijk de documentatie detailleert het basistooling, en begin het refacto
 * Leer hoe u een lokale ontwikkelomgeving kunt instellen door de [AS A CLOUD SERVICE SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
 * Tot slot moet u zich vertrouwd maken met de [as a Cloud Service Java API AEM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
-Bovendien kunt u ook:
+Ook kunt u het volgende doen:
 
 * Bekijk deze video om te begrijpen hoe u de Dispatcher SDK lokaal kunt installeren:
 

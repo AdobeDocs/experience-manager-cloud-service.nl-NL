@@ -1,12 +1,12 @@
 ---
 title: Werken met Dynamic Media
-description: Leer hoe u met Dynamic Media middelen kunt leveren voor gebruik op internet, mobiele apparaten en sociale sites.
+description: Leer hoe u Dynamic Media kunt gebruiken om middelen te leveren voor gebruik op internet, mobiele apparaten en sociale sites.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '396'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360° draaien en 
 
 ## Wat u met Dynamic Media kunt doen {#what-you-can-do-with-dynamic-media}
 
-Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Hoe met middelen in het algemeen kan worden gewerkt, wordt in detail besproken [Werken met digitale middelen](/help/assets/manage-digital-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van middelen; weergeven en bewerken van eigenschappen en zoeken naar elementen.
+Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Hoe met middelen in het algemeen kan worden gewerkt, wordt in detail besproken [Werken met digitale middelen](/help/assets/manage-digital-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
 
 Alleen Dynamic Media biedt de volgende functies:
 
@@ -81,7 +81,7 @@ Inclusief Dynamic Media-middelen `pyramid.tiffs`.
 
 ### Weergave van element wijzigen {#asset-views-change}
 
-Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knop `+` en `-` knoppen. U kunt ook op een bepaald gebied klikken of erop tikken. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld wordt als volgt weergegeven:
+Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knop `+` en `-` knoppen. U kunt ook selecteren om in bepaalde gebieden in te zoomen. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld wordt als volgt weergegeven:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

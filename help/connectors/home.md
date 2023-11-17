@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service-connector
 description: Meer informatie over connectoren, wat ze kunnen doen en hoe u deze waardevolle tools implementeert in Experience Manager.
 landing-page-description: Meer informatie over connectoren, wat ze kunnen doen en hoe u deze waardevolle tools implementeert in Experience Manager.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '397'
 ht-degree: 68%
 
 ---
@@ -24,7 +24,7 @@ Leer over Connectors voor as a Cloud Service Experience Manager, wat zij kunnen 
 
 | Handboek | Beschrijving |
 |---|---|
-| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een inleidende beschrijving van Experience Manager als cloudservice, zoals een inleiding, terminologie, architectuur, enz. |
+| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een inleidende beschrijving van Experience Manager als cloudservice, zoals een inleiding, terminologie, architectuur enzovoort. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
 | [Onboarding Journaal](/help/journey-onboarding/overview.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |
@@ -34,7 +34,7 @@ Leer over Connectors voor as a Cloud Service Experience Manager, wat zij kunnen 
 | [Handboek voor implementatie](/help/implementing/home.md) | Begrijp hoe te om ervaringen te bouwen en aan te passen gebruikend AEM krachtige eigenschappen door deze ontwikkeling en plaatsingsonderwerpen te onderzoeken. |
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | Ontdek deze geleide reis door de krachtige en flexibele headless eigenschappen van AEM om zich voor te bereiden op uw eerste project zonder kop. |
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
-| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer informatie over Commerce Integration Framework op AEM as a Cloud Service. |
+| [Handboek voor handel](/help/commerce-cloud/home.md) | Meer weten over Commerce integration framework op AEM as a Cloud Service? |
 
 ## Andere bronnen voor Experience Manager {#other-resources}
 

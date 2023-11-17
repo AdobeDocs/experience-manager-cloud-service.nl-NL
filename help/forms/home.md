@@ -3,9 +3,9 @@ title: Inleiding tot [!DNL AEM Forms] as a Cloud Service
 description: Ontdek AEM Forms om bedrijfsklare formulieren te maken, workflows voor bedrijfsprocessen te maken en documentservices te gebruiken om documenten te maken en te beveiligen.
 landing-page-description: Inzicht in hoe u formulieren in AEM as a Cloud Service kunt gebruiken.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1149'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klant-centric op
 
 ## Inschrijving en instapervaring digitaliseren en stroomlijnen
 
-Met deze service kunt u interactieve en aantrekkelijke digitale formulieren maken en implementeren. Bijvoorbeeld, neem een organisatie die zijn reis van de klanteninschrijving probeert te digitaliseren. Zij hebben veelvoudige gegevensbronnen met bestaande klantengegevens. Ze willen formulieren vooraf invullen, hun formulieren elektronisch ondertekenen en ingevulde formulieren archiveren als PDF-bestanden. Bovendien beschikt de organisatie over meerdere afdrukformulieren (PDF forms), maar proberen zij ook al hun afdrukformulieren om te zetten in digitale formulieren.
+Met deze service kunt u interactieve en aantrekkelijke digitale formulieren maken en implementeren. Bijvoorbeeld, neem een organisatie die zijn reis van de klanteninschrijving probeert te digitaliseren. Zij hebben veelvoudige gegevensbronnen met bestaande klantengegevens. Ze willen formulieren vooraf invullen, hun formulieren elektronisch ondertekenen en ingevulde formulieren archiveren als PDF-bestanden. Bovendien heeft de organisatie meerdere afdrukformulieren (PDF forms), maar proberen ze ook hun afdrukformulieren om te zetten in digitale formulieren.
 
 De organisatie kan [!DNL AEM Forms] as a Cloud Service om digitale formulieren te maken, formulieren te verbinden met bestaande gegevensbronnen, formulieren te integreren met [!DNL Adobe Sign] om e-handtekeningen toe te voegen aan formulieren en om Ingesloten formulieren als PDF-bestanden te archiveren. De organisatie kan de service ook gebruiken om bestaande PDF forms om te zetten in digitale formulieren.
 

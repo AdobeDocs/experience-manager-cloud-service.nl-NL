@@ -2,7 +2,7 @@
 title: Meer informatie over CMS Headless Development
 description: In dit deel van de AEM Headless Developer Journey, leer over technologie zonder kop en waarom je het zou gebruiken.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Sinds de opkomst van gebruiksvriendelijke, grootschalige contentbeheersystemen (
 
 ![De klassieke full-stack CMS](assets/full-stack.png)
 
-In een volledig-stapel CMS, is alle functionaliteit voor het manipuleren van uw inhoud in CMS. De functies van het systeem bestaan uit verschillende onderdelen van de CMS-stapel. De full-stack oplossing heeft veel voordelen.
+In een volledig-stapel CMS, is de functionaliteit voor het manipuleren van uw inhoud in CMS. De functies van het systeem bestaan uit verschillende onderdelen van de CMS-stapel. De full-stack oplossing heeft veel voordelen.
 
 * U hebt één systeem om te onderhouden.
 * Inhoud wordt centraal beheerd.
@@ -62,7 +62,7 @@ Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft h
 
 ![CMS zonder hoofd](assets/headless-cms.png)
 
-De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enz., nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
+De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enzovoort, nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
 Het weglaten van het hoofd vereenvoudigt CMS door ingewikkeldheid te verwijderen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
 
@@ -96,7 +96,7 @@ Met headless hebt u de beschikking over een wereld van flexibiliteit om uw digit
 
 Als er veel verschillende kanalen zijn, kan dat betekenen dat ze elk hun eigen presentatiesystemen hebben. Hoewel ze allemaal dezelfde inhoud gebruiken via dezelfde API&#39;s, kan de ervaring verschillen vanwege de verschillende presentaties. De consistentie van de ervaring van de klant moet in het oog worden gehouden en er moet zorg voor worden gedragen.
 
-Door zorgvuldige ontwerpsystemen te implementeren, patroonbibliotheken te delen en herbruikbare ontwerpcomponenten en bestaande open clientframeworks te benutten, kunnen consistente ervaringen worden gegarandeerd, maar dit moet worden gepland.
+Door zorgvuldige ontwerpsystemen uit te voeren, patroonbibliotheken te delen, herbruikbare ontwerpcomponenten te gebruiken en gevestigde open client-side frameworks te gebruiken, kunnen consistente ervaringen worden gegarandeerd, maar dit moet worden gepland.
 
 ## De toekomst is zonder kop en de toekomst is nu {#future}
 

@@ -2,9 +2,9 @@
 title: Zoeken
 description: Vind sneller uw inhoud dankzij uitgebreide zoekopdracht
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '492'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,7 @@ Zoeken is beschikbaar op de bovenste werkbalk:
 Met de zoekrail kunt u:
 
 * Zoeken naar een specifiek trefwoord, pad of tag
-* Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte, enzovoort.
+* Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte enzovoort.
 * Definieer een [opgeslagen zoekopdracht](#saved-searches) - op basis van bovenstaande criteria
 
 >[!NOTE]

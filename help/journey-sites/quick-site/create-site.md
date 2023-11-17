@@ -2,9 +2,9 @@
 title: Site maken van sjabloon
 description: Leer hoe u snel een AEM site kunt maken met een sitesjabloon.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1474'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,8 @@ Sitesjablonen zijn een manier om basissite-inhoud te combineren tot een handig e
 
 * `files`: Map met de UI-kit, XD bestand en mogelijk andere bestanden
 * `previews`: Map met screenshots van de sitesjabloon
-* `site`: Inhoudspakket van de inhoud die wordt gekopieerd voor elke site die met deze sjabloon wordt gemaakt, zoals paginasjablonen, pagina&#39;s, enzovoort.
-* `theme`: Bronnen van het sjabloonthema om de weergave van de site te wijzigen, zoals CSS, JavaScript, enz.
+* `site`: Inhoudspakket van de inhoud die wordt gekopieerd voor elke site die met deze sjabloon wordt gemaakt, zoals paginasjablonen, pagina&#39;s enzovoort.
+* `theme`: Bronnen van het sjabloonthema om de weergave van de site te wijzigen, zoals CSS, JavaScript enzovoort.
 
 Sjablonen zijn krachtig omdat ze herbruikbaar zijn, zodat de auteurs van de inhoud snel een site kunnen maken. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om aan diverse bedrijfsbehoeften te voldoen.
 
@@ -71,17 +71,17 @@ Het is eenvoudig om een site te maken met een sjabloon.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tik of klik op **Maken** rechtsboven in het scherm en in het keuzemenu selecteert u **Site van sjabloon**.
+1. Selecteren **Maken** rechtsboven in het scherm en in het keuzemenu selecteert u **Site van sjabloon**.
 
    ![Een nieuwe site maken op basis van een sjabloon](assets/create-site-from-template.png)
 
-1. Tik of klik in de wizard Site maken op **Importeren** boven aan de linkerkolom.
+1. Selecteer in de wizard Site maken de optie **Importeren** boven aan de linkerkolom.
 
    ![Wizard Site maken](assets/site-creation-wizard.png)
 
-1. Zoek de sjabloon in de bestandenbrowser [u hebt eerder gedownload](#obtaining-template) tikken of klikken **Uploaden**.
+1. Zoek de sjabloon in de bestandenbrowser [u hebt eerder gedownload](#obtaining-template) en selecteert u **Uploaden**.
 
-1. Zodra het geüpload, verschijnt het in de lijst van beschikbare malplaatjes. Tik of klik erop om de sjabloon te selecteren (zodat ook informatie over de sjabloon in de rechterkolom wordt weergegeven) en tik of klik op de sjabloon **Volgende**.
+1. Zodra het geüpload, verschijnt het in de lijst van beschikbare malplaatjes. Selecteer deze optie om deze te selecteren (zodat ook informatie over de sjabloon in de rechterkolom wordt weergegeven) en selecteer vervolgens **Volgende**.
 
    ![Een sjabloon selecteren](assets/select-site-template.png)
 
@@ -90,11 +90,11 @@ Het is eenvoudig om een site te maken met een sjabloon.
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
 
-1. Tik of klik op **Maken** en de nieuwe site wordt gemaakt van de sitesjabloon.
+1. Selecteren **Maken** en de nieuwe site wordt gemaakt van de sitesjabloon.
 
    ![Details van de nieuwe site](assets/create-site-details.png)
 
-1. Tik of klik in het bevestigingsvenster dat verschijnt op **Gereed**.
+1. Selecteer in het bevestigingsvenster dat wordt weergegeven **Gereed**.
 
    ![Dialoogvenster Succes](assets/success.png)
 
@@ -115,7 +115,7 @@ Sitesjablonen zijn zeer krachtig en flexibel en elk gewenst aantal kan worden ge
 
 Als u extra front-end aanpassing vereist, houd in mening dat de front-end ontwikkelaar niet met de details van uw inhoud vertrouwd kan zijn. Daarom is het een goed idee om de ontwikkelaar van een weg aan typische inhoud te voorzien die als basis van verwijzing kan worden gebruikt aangezien het thema wordt aangepast. Een typisch voorbeeld is de homepage voor de hoofdtaal van de plaats.
 
-1. Navigeer in de browser van de sites naar de startpagina van de hoofdtaal van de site en tik op de pagina of klik op de pagina om deze te selecteren. Tik vervolgens op de pagina of klik op **Bewerken** in de menubalk.
+1. Navigeer in de browser sites naar de homepage van de hoofdtaal van de site en selecteer vervolgens de pagina die u wilt selecteren en selecteer vervolgens **Bewerken** in de menubalk.
 
    ![Standaardstartpagina](assets/home-page-in-console.png)
 
@@ -137,7 +137,7 @@ Nu de site is gemaakt, kan het thema van de site dat door de sjabloon wordt gege
 
    ![Trapper plaatsen](assets/show-site-rail.png)
 
-1. Tik of klik op de hoofdmap van uw nieuwe site en tik of klik op **Themabronnen downloaden** in het terrein.
+1. Selecteer de hoofdmap van uw nieuwe site en selecteer **Themabronnen downloaden** in het terrein.
 
    ![Themabronnen downloaden](assets/download-theme-sources.png)
 
@@ -147,8 +147,8 @@ U hebt nu een kopie van de bronbestanden voor thema&#39;s in uw downloadbestande
 
 Als u wilt dat de ontwikkelaar aan de voorzijde de aanpassingen voorvertoont met behulp van werkelijke AEM inhoud van uw site, moet u een proxygebruiker instellen.
 
-1. Ga in AEM van hoofdnavigatie naar **Gereedschappen** -> **Beveiliging** -> **Gebruikers**.
-1. Tik of klik in de gebruikersbeheerconsole op **Maken**.
+1. Ga in AEM van hoofdnavigatie naar **Gereedschappen** > **Beveiliging** > **Gebruikers**.
+1. Selecteer in de gebruikersbeheerconsole de optie **Maken**.
 
    ![Gebruikersbeheerconsole](assets/user-management-console.png)
 1. In de **Nieuwe gebruiker maken** venster moet u minstens verstrekken:
@@ -162,7 +162,7 @@ Als u wilt dat de ontwikkelaar aan de voorzijde de aanpassingen voorvertoont met
 
    ![Toevoegen aan groep](assets/add-to-group.png)
 
-1. Tik of klik op **Opslaan en sluiten**.
+1. Selecteren **Opslaan en sluiten**.
 
 U hebt de configuratie nu voltooid. Inhoudsauteurs kunnen nu beginnen met het maken van inhoud voor het voorbereiden van de site, zodat ze deze in de volgende stap van de reis op de voorgrond kunnen aanpassen.
 
@@ -181,7 +181,7 @@ Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het doc
 Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site maken te gaan door het document te bekijken [Opstelling uw pijpleiding,](pipeline-setup.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
 
 * [Standaardsitemplate AEM](https://github.com/adobe/aem-site-template-standard) - Dit is de bewaarplaats GitHub van het AEM Standaardmalplaatje van de Plaats.
-* [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In deze handleiding wordt beschreven hoe u pagina&#39;s van uw AEM Site kunt beheren als u deze verder wilt aanpassen nadat u deze vanuit de sjabloon hebt gemaakt.
+* [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In deze handleiding wordt beschreven hoe u pagina&#39;s van uw AEM Site kunt beheren als u deze verder wilt aanpassen nadat u de site hebt gemaakt op basis van de sjabloon.
 * [Hoe te met Pakket werken](/help/implementing/developing/tools/package-manager.md) - Pakketten maken het importeren en exporteren van inhoud in de opslagplaats mogelijk. In dit document wordt uitgelegd hoe u met pakketten werkt in AEM 6.5. Dit geldt ook voor AEMaaCS.
 * [Documentatie voor sitebeheer](/help/sites-cloud/administering/site-creation/create-site.md) - Ontdek de technische documentatie bij het maken van de site voor meer informatie over de functies van het gereedschap Snel maken.
 * [Formulieren maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Leer stapsgewijze technieken en tips en trucs voor het integreren van formulieren in uw website, zodat u uw digitale ervaringen optimaal kunt benutten.

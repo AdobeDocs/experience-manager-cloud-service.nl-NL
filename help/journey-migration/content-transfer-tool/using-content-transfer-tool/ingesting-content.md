@@ -2,9 +2,9 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2326'
 ht-degree: 3%
 
 ---
@@ -139,7 +139,7 @@ Als de &quot;Updates van de Versie van de AEM&quot;op het bestemmingsprogramma w
 >
 > Er is niet langer een behoefte om een steunkaartje te registreren om &quot;AEM de Updates van de Versie&quot;gehandicapt te krijgen.
 
-Als &quot;AEM de Updates van de Versie&quot;actief is (d.w.z. de updates lopen of een rij worden gevormd om te lopen), zal de ingang niet beginnen en het gebruikersinterface presenteert het volgende bericht. Zodra de updates volledig zijn, kan de opname worden begonnen. U kunt Cloud Manager gebruiken om de huidige status van de pijpleidingen van het programma te bekijken.
+Als &quot;AEM de Updates van de Versie&quot;actief is (namelijk de updates lopen of een rij worden gevormd om) in werking te stellen, zal de ingang niet beginnen en het gebruikersinterface presenteert het volgende bericht. Zodra de updates volledig zijn, kan de opname worden begonnen. U kunt Cloud Manager gebruiken om de huidige status van de pijpleidingen van het programma te bekijken.
 
 >[!NOTE]
 >
@@ -162,13 +162,14 @@ Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud,
 ### Opsommingsfout vanwege niet-verwijderen knooppunt waarnaar wordt verwezen
 
 Een andere veelvoorkomende oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) de mislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
+
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e 976a8
 
 Dit kan gebeuren als een knooppunt op de bestemming wordt gewijzigd tussen een opname en een volgende opname **Niet-sluitereffect** Inname zodanig dat er een nieuwe versie is gemaakt. Als de migratieset is geëxtraheerd met &#39;include-versies&#39; ingeschakeld, kan er een conflict optreden omdat de bestemming nu een recentere versie heeft waarnaar wordt verwezen door versiegeschiedenis en andere inhoud. Het insluitingsproces kan het conflicterende versieknooppunt niet verwijderen omdat ernaar wordt verwezen.
 
 De oplossing kan vereisen dat de top-up extractie opnieuw wordt gedaan zonder de beledigende knoop. Of u maakt een kleine migratieset van het aanstootgevende knooppunt, maar met &quot;include-versies&quot; uitgeschakeld.
 
-De beste praktijken wijzen erop dat als **Niet-sluitereffect** opname moet worden uitgevoerd met behulp van een migratieset die versies bevat (d.w.z. geëxtraheerd met &quot;include-versies&quot;=true), het is van cruciaal belang dat de inhoud op de bestemming zo weinig mogelijk wordt gewijzigd, totdat de migratie is voltooid. Anders kunnen deze conflicten optreden.
+De beste praktijken wijzen erop dat als **Niet-sluitereffect** opname moet worden uitgevoerd met behulp van een migratieset die versies bevat (dat wil zeggen, geëxtraheerd met &quot;include-versies&quot;=true), het is van cruciaal belang dat de inhoud op de bestemming zo weinig mogelijk wordt gewijzigd, totdat de migratie is voltooid. Anders kunnen deze conflicten optreden.
 
 ### Ingestie gestopt
 

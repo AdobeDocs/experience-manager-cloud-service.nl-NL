@@ -2,9 +2,9 @@
 title: Variaties - Fragmentinhoud ontwerpen (elementen - Inhoudsfragmenten)
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2530'
 ht-degree: 4%
 
 ---
@@ -79,7 +79,7 @@ U kunt:
 
 ### Volledige schermeditor {#full-screen-editor}
 
-Wanneer u een tekstveld met meerdere regels bewerkt, kunt u de volledige schermeditor openen. Tik of klik in de werkelijke tekst en selecteer vervolgens het volgende actiepictogram:
+Wanneer u een tekstveld met meerdere regels bewerkt, kunt u de volledige schermeditor openen. Selecteer de gewenste tekst en selecteer vervolgens het volgende actiepictogram:
 
 ![pictogram van volledige schermeditor](assets/cfm-variations-03.png)
 

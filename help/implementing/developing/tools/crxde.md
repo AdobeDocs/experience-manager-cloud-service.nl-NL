@@ -2,9 +2,9 @@
 title: CRXDE Lite gebruiken
 description: CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toegang te krijgen tot en wijzigingen aan te brengen in de opslagruimte in uw lokale ontwikkelomgevingen in de browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De gebruikersinterface van CRXDE Lite wordt als volgt weergegeven in uw browser:
 
 >[!TIP]
 >
->U kunt CRXDE Lite ook openen via het menu AEM. Selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **CRXDE Lite**.
+>U kunt CRXDE Lite ook openen via het menu AEM. Selecteer in het hoofdmenu **Gereedschappen** > **Algemeen** > **CRXDE Lite**.
 
 ## Overzicht van de gebruikersinterface {#overview-of-the-user-interface}
 
@@ -163,7 +163,7 @@ De **Aanmeldingswidget** geeft de momenteel aangemelde gebruiker weer.
 
 Klik op deze knop om u aan te melden of opnieuw aan te melden als een andere gebruiker. De `@crx.default` geeft aan dat u zich in de standaardwerkruimte (en alleen) in de repository bevindt.
 
-De **Voorkeuren** U kunt deze optie gebruiken om de taal van de gebruikersinterface in te stellen en de sneltoetsen voor verschillende handelingen, zoals opslaan, zoeken, notities maken, enzovoort, weer te geven en aan te passen.
+De **Voorkeuren** U kunt deze optie gebruiken om de taal van de gebruikersinterface in te stellen en de sneltoetsen voor verschillende handelingen, zoals opslaan, zoeken, notities maken enzovoort, weer te geven en aan te passen.
 
 ## Een map maken {#creating-a-folder}
 

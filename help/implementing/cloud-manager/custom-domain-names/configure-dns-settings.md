@@ -2,9 +2,9 @@
 title: DNS-instellingen configureren
 description: Leer hoe te om DNS montages voor uw namen van het douanedomein te vormen.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Meld u aan bij uw domeinregistrar en maak een `CNAME` registreert om uw naam van
 
 Een apex-domein is een aangepast domein dat geen subdomein bevat, zoals `example.com`. Een apex domein wordt gevormd met een `A` , `ALIAS` , of `ANAME` neemt door uw DNS leverancier op. Apex-domeinen moeten verwijzen naar specifieke IP-adressen.
 
-Voeg alle volgende elementen toe `A` verslagen aan DNS van uw domein montages via uw domeinleverancier.
+Voeg het volgende toe `A` records naar de DNS-instellingen van uw domein via uw domeinprovider.
 
 * `A RECORD`
 

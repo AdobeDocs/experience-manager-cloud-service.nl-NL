@@ -11,22 +11,22 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2842'
+source-wordcount: '2840'
 ht-degree: 0%
 
 ---
 
-# Dynamic Media-reis: Basisbeginselen, deel II  {#dm-journey-part2}
+# Dynamic Media Journey: The Basics, Part II  {#dm-journey-part2}
 
-Welkom bij Dynamic Media Journey: In de basisbeginselen, deel II, kunt u het volgende verwachten:
+Welkom bij Dynamic Media Journey: The Basics, Part II, waar u het volgende kunt verwachten:
 
 * Anatomie van een Dynamic Media URL en hoe Dynamic Media inhoud levert
 * Basisprincipes van het maken van voorinstellingen voor afbeeldingen om elementen te renderen
 * Afbeeldingssets, centrifuges en gemengde mediasets
 
-Zie ook [Dynamic Media Journey; Basisbeginselen, Deel I](/help/assets/dynamic-media/dm-journey-part1.md).
+Zie ook [Dynamic Media Journey; The Basics, Part I](/help/assets/dynamic-media/dm-journey-part1.md).
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ Het eerste deel van de rode URL verwijst naar het serverdomein zelf. In dit geva
 
 De accountnaam is het gedeelte in paars. In dit geval wordt de account aangeroepen `jpearldemo`.
 
-De ID of naam van het element `AdobeStock_28563982` is groen. Merk op dat het element _nee_ bestandsextensie zoals `.png` of `.jpg`. Wanneer middelen in Dynamic Media worden opgenomen, wordt de bestandsextensie verwijderd en wordt een ander type bestand gemaakt: een piramid-TIFF-bestand. Met de piramic-TIFF kan Dynamic Media snel uitvoeringen maken.
+De ID of naam van het element `AdobeStock_28563982` is groen. Merk op dat het element _nee_ bestandsextensie zoals `.png` of `.jpg`. Wanneer elementen in Dynamic Media worden opgenomen, wordt de bestandsextensie verwijderd en wordt een ander type bestand gemaakt: een piramid-TIFF-bestand. Met de piramic-TIFF kan Dynamic Media snel uitvoeringen maken.
 
 Tot slot zijn er enkele parameters voor beeldverwerking. `?wid=1000&fmt=jpeg&qlt=85`geel aan het uiteinde.
 
@@ -53,14 +53,14 @@ Zorg dat uw browservenster nog steeds open is voor de Dynamic Media URL en de ge
 
 ### De gecontroleerde afbeelding renderen via de URL
 
-Begin door slechts de beeldverwerkingsregels in de weg URL manueel te schrappen; de servernaam, accountnaam en de element-id of afbeeldingsnaam behouden. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target="_blank"}.
+Eerst verwijdert u alleen handmatig de regels voor afbeeldingsverwerking in het URL-pad. Laat de servernaam, accountnaam en de element-id of afbeeldingsnaam ongewijzigd. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target="_blank"}.
 
-Voeg nu een afbeeldingsverwerkingsparameter toe aan het einde van de URL. Typ rechts van de naam van de afbeelding in het veld URL het volgende: `?wid=500`en vervolgens drukt u op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target="_blank"}.
+Voeg nu een afbeeldingsverwerkingsparameter toe aan het einde van de URL. Typ rechts van de naam van de afbeelding in het veld URL het volgende. `?wid=500`en vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target="_blank"}.
 
 U ziet dat er een nieuwe uitvoering van het horloge wordt gegenereerd. Een belangrijke stap voorwaarts om te begrijpen dat u met deze eenvoudige oefening van het wijzigen van de afbeeldingsbreedte de afbeelding volledig dynamisch genereert.
 
-Wijzig nu de breedtewaarde van `500` pixels naar `1000` pixels en druk vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
-Het moment waarop u drukt **[!UICONTROL Enter]** gaat de browser terug naar de Dynamic Media Image Server. Het produceert een gloednieuwe vertoning van het horloge, die op de nieuwe breedtewaarde wordt gebaseerd u enkel inging, dan levert het nieuwe beeld terug aan browser, en caches het.
+Wijzig nu de breedte van `500` pixels naar `1000` pixels en druk vervolgens op **[!UICONTROL Enter]**. [Probeer het](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
+Het moment waarop u drukt **[!UICONTROL Enter]**, gaat browser terug naar de Server van het Beeld van Dynamic Media. Het produceert een gloednieuwe vertoning van het horloge, die op de nieuwe breedtewaarde wordt gebaseerd u enkel inging, dan levert het nieuwe beeld terug aan browser, en caches het.
 
 Dynamic Media beschikt over een groot aantal parameters voor beeldverwerking waarmee u uw afbeeldingselementen op webpagina&#39;s kunt perfectioneren. U kunt [zie hier een lijst](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
@@ -83,19 +83,19 @@ Stel je nu voor dat de Creative Director naar de beelden kijkt en zegt:
 
 _&quot;Ik wilde deze opname echt, zodat de grote hand naar de vier wijst, en de kleine hand naar de 1 wijst om de horlogewijzerplaat makkelijker te zien te maken.&quot;_
 
-De creatieve zou al deze nieuwe statische beelden opnieuw moeten opnemen.
+De creatieve zou alle nieuwe statische beelden opnieuw moeten opnemen.
 
 Als u echter verschillende voorinstellingen voor afbeeldingen hebt in Dynamic Media, kunt u deze afbeeldingen op elk gewenst moment gebruiken. Met de voorinstellingen voor afbeeldingen worden standaarden afgedwongen.
 
 ![Primaire bestandenbenadering](/help/assets/dynamic-media/assets/dm-onefile.png)
-_Best: één bestand met meerdere uitvoeringen die direct met behulp van voorinstellingen voor afbeeldingen zijn gemaakt, zoals `Search_Grid` en `Thumbnail`._
+_Best: één bestand met meerdere uitvoeringen die direct worden gemaakt met behulp van voorinstellingen voor afbeeldingen, zoals `Search_Grid` en `Thumbnail`._
 
 | **Waarom voorinstellingen voor afbeeldingen gebruiken?** | |
 |---|---|
 | Normen | Met voorinstellingen voor afbeeldingen wordt een standaardbehandeling voor afbeeldingsverwerking toegepast op elke afbeelding waarmee de voorinstelling wordt gemaakt. |
 | Wijzigingsbeheer | Als u de afbeeldingsverwerking moet wijzigen, bewerkt u gewoon de parameter van de bestaande voorinstelling. De bijgewerkte definitie wordt automatisch doorgegeven aan alle aanvragen. |
 
-Elke plaats die u nodig hebt om een bepaald type afbeelding te hebben, bijvoorbeeld
+Elke plaats die u een bepaald type beeld nodig hebt, bijvoorbeeld,
 
 * een pagina met productdetails,
 * zoekraster,
@@ -114,19 +114,19 @@ In het bovenstaande voorbeeld ziet u dat er een nieuwe voorinstelling voor de af
 
 De _Normaal_ de vooraf ingestelde afbeelding heeft een breedte van 500 pixels en een hoogte van 800 pixels. In Deel I van deze Reis leest u hoe u elementen in verschillende indelingen kunt leveren. Van de **[!UICONTROL Format]** keuzemenu, kunt u ervoor kiezen elementen te leveren als JPEG, PNG, TIFF of diverse andere indelingen. U hebt hier flexibiliteit.
 
-Het selecteren van **[!UICONTROL Advanced]** bevat opties voor de kleurruimte van het element. Afhankelijk van de indeling die u hebt geselecteerd in het dialoogvenster **[!UICONTROL Basic]** -tab - in het bovenstaande voorbeeld is JPEG geselecteerd - kunt u elementen leveren in RGB, Grijswaarden of CMYK. Van de **[!UICONTROL Color Profile]** vervolgkeuzemenu, kunt u opgeven hoe u een CMYK-afbeeldingselement wilt leveren dat u wilt afdrukken. Er zijn ook extra parameters die u kunt toepassen voor het verscherpen van afbeeldingen. In dit geval: **[!UICONTROL Unsharp Mask]** is toegepast.
+De **[!UICONTROL Advanced]** bevat opties voor de kleurruimte van het element. Afhankelijk van de indeling die u hebt geselecteerd in het dialoogvenster **[!UICONTROL Basic]** -tab - in het bovenstaande voorbeeld is JPEG geselecteerd - kunt u elementen leveren in RGB, Grijswaarden of CMYK. Van de **[!UICONTROL Color Profile]** vervolgkeuzemenu, kunt u opgeven hoe u een CMYK-afbeeldingselement wilt leveren dat u wilt afdrukken. Er zijn ook extra parameters die u kunt toepassen voor het verscherpen van afbeeldingen. In dit geval: **[!UICONTROL Unsharp Mask]** is toegepast.
 
 ![Een afbeeldingsvoorinstelling maken door opties te selecteren op het tabblad Geavanceerd](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
 _Een voorinstelling voor afbeeldingen maken door opties te selecteren op het tabblad Geavanceerd._
 
-U herinnert zich in [Anatomie van een Dynamic Media-URL](#dm-journey-d) eerder, dat u over Dynamic Media URL leest en hoe dat wordt gebouwd. De **[!UICONTROL Image Modifier]** In dit tekstvak kunt u extra gewenste parameters voor de afbeeldingsverwerking invoeren. De parameters worden opgenomen in de naam van de voorinstelling van de URL wanneer uw afbeeldingen worden geleverd, met behulp van de voorinstelling. In de bovenstaande schermafbeelding, de parameter `bgc=451B15` is toegevoegd. Er is dus een donkerbruine achtergrondkleur toegevoegd.
+U herinnert zich in [Anatomie van een Dynamic Media-URL](#dm-journey-d) eerder, dat u over Dynamic Media URL leest en hoe dat wordt gebouwd. De **[!UICONTROL Image Modifier]** In dit tekstvak kunt u eventueel extra gewenste parameters voor de afbeeldingsverwerking invoeren. De parameters worden opgenomen in de naam van de voorinstelling van de URL wanneer uw afbeeldingen worden geleverd, met behulp van de voorinstelling. In de bovenstaande schermafbeelding, de parameter `bgc=451B15` is toegevoegd. Er is dus een donkerbruine achtergrondkleur toegevoegd.
 
-U kunt een voorinstelling voor afbeeldingen zien als een recept voor uw afbeeldingen. Het zal om het even welke beelden leveren die vooraf ingesteld, constant, elke keer gebruiken; het zal hetzelfde zijn. De parameter `&op_brightness=+10` is ook toegevoegd om de helderheid iets te verhogen.
+U kunt een voorinstelling voor afbeeldingen zien als een recept voor uw afbeeldingen. Het zal om het even welke beelden leveren die de vooraf ingestelde, constant, elke keer gebruiken; het zal het zelfde zijn. De parameter `&op_brightness=+10` is ook toegevoegd om de helderheid iets te verhogen.
 
 Als u klaar bent, slaat u de voorinstelling op en is deze nu beschikbaar voor alle afbeeldingen die u hebt. In dit geval willen wij de _Normaal_ een voorinstelling voor een afbeelding van een kom met vloeibare chocolade.
 
 ![De voorinstelling voor afbeeldingen toepassen *Normaal* om een uitvoering van een afbeelding te genereren](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
-_Door de voorinstelling Medium voor afbeeldingen toe te passen, wordt een uitvoering van een afbeelding gegenereerd._
+_Door de voorinstelling Medium van de afbeelding toe te passen, genereert u een uitvoering van een afbeelding._
 
 U kopieert de URL en plakt deze in uw browser om de weergave van de afbeelding te controleren. [Probeer het](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target="_blank"}.
 
@@ -136,7 +136,7 @@ U kunt zien wat voor helderheid in de afbeelding wordt weergegeven. Deze kwalite
 
 Als alles er goed uitziet voor uw kom chocolade, plakt u de URL in uw webpagina&#39;s waar u de afbeelding op uw website wilt weergeven.
 
-Als u nogmaals kijkt naar de onderstaande afbeelding, ziet u dat er een `Cart` voorinstelling afbeelding, een `Grid` voorinstelling, een `Large` voorinstelling, een `PDP-page` (Productdetailpagina) en diverse andere voorinstellingen.
+Als u nogmaals kijkt naar de onderstaande afbeelding, ziet u dat er een `Cart` voorinstelling afbeelding, een `Grid` voorinstelling, `Large` voorinstelling, `PDP-page` (Productdetailpagina) en diverse andere voorinstellingen.
 
 ![Statische en dynamische voorinstellingen voor afbeeldingen](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Statische en dynamische voorinstellingen voor afbeeldingen. De gecontroleerde afbeelding is gerenderd met de `PDP-page` voorinstelling afbeelding._
@@ -152,14 +152,14 @@ Nadat u de voorinstelling van de afbeelding hebt gewijzigd en de cache hebt verw
 
 Een van de populairste toepassingen van Dynamic Media is de mogelijkheid voor u om afbeeldingssets, centrifuges en gemengde-mediasets te maken.
 
-Afbeeldingssets bestaan doorgaans uit een reeks afbeeldingselementen die als één entiteit worden gepresenteerd. Deze sets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door op een miniatuurafbeelding te klikken. Met afbeeldingssets kunt u alternatieve weergaven van iets presenteren en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen nauwkeurig kunt bekijken. [Een afbeeldingsset met de naam &quot;Running&quot; weergeven die de Flyout-viewer gebruikt](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
+Afbeeldingssets bestaan doorgaans uit een reeks afbeeldingselementen die als één entiteit worden gepresenteerd. Deze sets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door op een miniatuurafbeelding te klikken. Met afbeeldingssets kunt u andere weergaven van iets weergeven en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen op de juiste wijze kunt bekijken. [Een afbeeldingsset met de naam &quot;Running&quot; weergeven die de Flyout-viewer gebruikt](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Hier in Dynamic Media zie je verschillende beelden van loopschoenen. Het is een serie van de productlijn die verkoop en marketing klanten als één enkele presentatie willen bekijken; een Afbeeldingsset.
+Hier in Dynamic Media kun je verschillende beelden zien van loopschoenen. Het is een serie van de productlijn die verkoop en marketing klanten als één enkele presentatie willen bekijken; een reeks van het Beeld.
 
 ![Een afbeeldingsset maken](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _Het begin van het maken van een Afbeeldingsset._
 
-Als u de afbeeldingsset wilt maken, kiest u **[!UICONTROL Image Set]** van de **[!UICONTROL Create]** keuzemenu. In het menu ziet u dat er ook opties zijn om een **[!UICONTROL Mixed Media Set]**, **[!UICONTROL Spin Set]** en **[!UICONTROL Carousel Set]**. U maakt deze sets op ongeveer dezelfde manier als een afbeeldingsset.
+Als u de afbeeldingsset wilt maken, kiest u **[!UICONTROL Image Set]** van de **[!UICONTROL Create]** keuzelijst. In het menu ziet u dat er ook opties zijn om een **[!UICONTROL Mixed Media Set]**, **[!UICONTROL Spin Set]** en **[!UICONTROL Carousel Set]**. U maakt deze sets op ongeveer dezelfde manier als een afbeeldingsset.
 
 Een gemengde mediaset kan afbeeldingen, stalensets, centrifuges, video&#39;s en adaptieve videosets bevatten. [Probeer het](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Een reeks van de Draai simuleert de echte handeling van het draaien van een voorwerp om het te onderzoeken. Met centrifuges kunt u de belangrijkste visuele details vanuit elke hoek bekijken. [Probeer het](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}.
 
@@ -185,11 +185,11 @@ _De `Running` Afbeelding ingesteld in voorvertoning terwijl de optie Viewers is 
 In het voorbeeld kunt u de actieve schoenstalen selecteren en in- en uitzoomen op de schoenen. Als u een viewer wilt toepassen op de set, selecteert u **[!UICONTROL Viewers]** in het keuzemenu.
 
 ![De uitvoerafbeelding die is ingesteld met de Flyout-viewer erop is toegepast](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
-_De `Running` Afbeelding ingesteld met de Flyout-viewer erop toegepast._
+_De `Running` Afbeelding die is ingesteld terwijl de Flyout-viewer erop is toegepast._
 
 In dit geval worden de `Flyout` viewer is geselecteerd. Op dit punt kunt u een voorvertoning van de afbeeldingsset weergeven in de viewer. Maar het is beter om het in uw browser te zien, enkel hoe een klant het ziet. U selecteert **[!UICONTROL URL]** linksonder, kopieert u de URL en plakt u deze in uw browser. [Probeer het](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
 
-Met de enkele URL kunt u de afbeeldingsset en de viewer gebruiken waar u deze nodig hebt op uw website. In het vorige voorbeeld hebt u wellicht opgemerkt dat: **[!UICONTROL Embed]** bevindt zich rechts van de URL-knop. Door **[!UICONTROL Embed]** kunt u de code voor deze afbeeldingsset/viewer kopiëren en toevoegen aan een webpagina of een Experience Manager Sites-component.
+Met de enkele URL kunt u de afbeeldingsset en de viewer gebruiken waar u deze nodig hebt op uw website. In het vorige voorbeeld hebt u wellicht opgemerkt dat: **[!UICONTROL Embed]** rechts van de URL-knop. Door **[!UICONTROL Embed]** kunt u de code voor deze afbeeldingsset/viewer kopiëren en toevoegen aan een webpagina of een Experience Manager Sites-component.
 
 De Flyout-viewer is een standaardviewer zonder vak waarvan u de eigenschappen kunt bewerken. U kunt ook, net als bij het maken van een voorinstelling voor afbeeldingen, uw eigen aangepaste viewer maken.
 
@@ -199,7 +199,7 @@ Wanneer u de muisaanwijzer over de schoen beweegt, zoomt u in op die afbeelding 
 
 Als je denkt dat je als consument leeft, of als je je dagelijkse rol vervult, en als je naar verschillende websites gaat, zie je dit soort dingen. Denk na over hoe dat gebeurt en hoe je de kracht van Dynamic Media kunt gebruiken in je eigen werk en op de website van je bedrijf.
 
-U leest alleen over afbeeldingssets en viewers. Laten we naar een paar andere kijkers kijken en ze uitproberen op één manier. Als u de viewer opnieuw wilt instellen, klikt u op de knop **[!UICONTROL Refresh]** in de linkerbenedenhoek.
+U leest alleen over afbeeldingssets en viewers. Laten we naar een paar andere kijkers kijken en ze uitproberen op één manier. Als u de viewer opnieuw wilt instellen, klikt u op de knop **[!UICONTROL Refresh]** linksonder.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
@@ -213,7 +213,7 @@ Als u meer wilt weten over wat u zojuist leest, gebruikt u de onderstaande mater
 _Dynamic Media Help-onderwerpen_
 
 * [Voorinstellingen voor afbeeldingen maken](/help/assets/dynamic-media/image-presets.md)
-* Een lijst van [parameters voor beeldverwerking](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) die u kunt gebruiken in het veld Afbeeldingsmodifier wanneer u een voorinstelling voor een afbeelding maakt
+* Een lijst van [parameters voor afbeeldingsverwerking](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) die u kunt gebruiken in het veld Afbeeldingsmodifier wanneer u een voorinstelling voor een afbeelding maakt
 * [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
 * [Een voorvertoning weergeven van 3D-elementen](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [Afbeeldingssets maken](/help/assets/dynamic-media/image-sets.md)

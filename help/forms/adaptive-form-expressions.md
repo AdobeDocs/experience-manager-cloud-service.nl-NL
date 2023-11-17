@@ -1,9 +1,9 @@
 ---
 title: Wat zijn adaptieve formulierexpressies?
 description: Met Adaptieve Forms-expressies kunt u automatische validatie, berekening en de zichtbaarheid van een sectie in- of uitschakelen.
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2698'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ De optiesuitdrukking wordt gebruikt om opties van een drop-down lijstgebied dyna
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Wanneer de waarde van **huwelijks_status** wijzigingen in het veld, wordt de expressie opnieuw geactiveerd. U kunt dropdown van de dienst van REST ook bevolken. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+Wanneer de waarde van **huwelijks_status** wijzigingen in het veld, wordt de expressie opnieuw geactiveerd. U kunt de drop-down lijst van de dienst van REST ook bevolken. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### Samenvattingsexpressie {#summary}
 

@@ -2,9 +2,9 @@
 title: Lanceringen promoten
 description: U moet opstartiepagina's promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '811'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
       1. Selecteer de vereiste startpagina met [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md).
       1. De **Bevorderen** is beschikbaar in de werkbalk.
    * De **Starten** console:
-      1. Selecteer de start (tik op de miniatuur of klik op deze).
+      1. Selecteer de startknop (selecteer de miniatuur).
       1. Selecteren **Bevorderen**.
 1. In de eerste stap kunt u het volgende opgeven:
    * **Doel**

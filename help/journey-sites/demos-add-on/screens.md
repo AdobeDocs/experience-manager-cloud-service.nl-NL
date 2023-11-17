@@ -2,7 +2,7 @@
 title: AEM Screens inschakelen voor uw demo-site
 description: Leer de stappen voor het inschakelen van de volledige as a Cloud Service AEM Screens-ervaring op uw demo-site.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2665'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Nadat de wizard is voltooid, vindt u de inhoud die onder Sites is geïmplementee
 
 ![Web.Cafe-inhoud](assets/wecafe-content.png)
 
-Nu we Web.Cafe-inhoud hebben, hebt u een keuze over hoe u AEM Screens wilt testen:
+Nu we Web.Cafe-demo-inhoud hebben, hebt u een keuze over hoe u AEM Screens wilt testen:
 
 * Als u alleen de inhoud binnen de AEM Sites-console wilt verkennen, kunt u gewoon meer verkennen en ontdekken in de [Aanvullende bronnen](#additional-resources) sectie! er is geen actie meer nodig .
 * Ga naar de volgende sectie als u de volledige dynamische eigenschappen van AEM Screens wilt ervaren, [Scherminhoud dynamisch wijzigen.](#dynamically-change)
@@ -145,7 +145,7 @@ Ten eerste moet u een Google API-sleutel maken om de gegevensuitwisseling te ver
 
 Als u de uitwisseling van Google Sheets-gegevens met behulp van uw API-sleutel wilt toestaan, moet u de Google Sheets API inschakelen.
 
-1. Ga terug naar de Google Cloud Console op `https://console.cloud.google.com` voor uw project en gebruik vervolgens het hamburgermenu om **API&#39;s en services -> Bibliotheek**.
+1. Ga terug naar de Google Cloud Console op `https://console.cloud.google.com` voor uw project en gebruik vervolgens het hamburgermenu om **API&#39;s en services > Bibliotheek**.
 
    ![API-bibliotheek](assets/api-library.png)
 
@@ -221,9 +221,9 @@ Wanneer de het scherminhoud wordt getoond, roept ContextHub uw weerdienst om de 
 
 Voor demo-doeleinden kunnen de waarden in het blad worden gewijzigd. ContextHub erkent dit feit en de inhoud past in het kanaal volgens de bijgewerkte temperatuur aan.
 
-1. Ga voor de auteur van AEMaaCS naar **Globale Navigatie -> Hulpmiddelen -> Plaatsen -> ContextHub**.
+1. Ga voor de auteur van AEMaaCS naar **Algemene navigatie > Gereedschappen > Sites > ContextHub**.
 1. Selecteer de configuratiecontainer die de zelfde naam heeft zoals wat u het project gaf toen u het project van de Schermen van creeerde **We.Cafe-websitesjabloon**.
-1. Selecteren **Configuratie -> ContextHub Configuration -> Google Sheets** klik vervolgens op **Volgende** aan de rechterbovenhoek.
+1. Selecteren **Configuration > ContextHub Configuration > Google Sheets** klik vervolgens op **Volgende** aan de rechterbovenhoek.
 1. De configuratie zou reeds JSON gegevens moeten hebben pre-gevormd. Er zijn twee waarden die moeten worden gewijzigd:
    1. Vervangen `[your Google Sheets id]` met de pagina-id die [eerder opgeslagen](#create-spreadsheet).
    1. Vervangen `[your Google API Key]` met de API-sleutel die [eerder opgeslagen](#create-api-key).
@@ -236,7 +236,7 @@ Nu kunt u de temperatuurwaarde in uw spreadsheet van Google veranderen en de Upd
 Nu AEM Screens en ContextHub met uw weerdienst worden verbonden, kunt u het testen om te zien hoe de schermen inhoud dynamisch kunnen bijwerken.
 
 1. Toegang tot de instantie van de maker van de sandbox.
-1. Navigeren naar de siteconsole via **Algemene navigatie -> Sites** en selecteer de volgende pagina **Schermen -> &lt;project-name> -> Kanalen -> Binnenkomst (staand)**.
+1. Navigeren naar de siteconsole via **Algemene navigatie > Sites** en selecteer de volgende pagina **Schermen > &lt;project-name> > Kanalen > Intrance Morning (staand)**.
 
    ![Projectinhoud demo selecteren](assets/project-content.png)
 
@@ -325,7 +325,7 @@ Eerst moet u een registratiecode maken om een speler veilig te verbinden met as 
 
    ![Controleer uw schermbeveiliging](assets/screens-org.png)
 
-1. Klik in het linkerdeelvenster op **Player Management -> Registratiecodes** en klik vervolgens op **Code maken** rechtsboven in het scherm.
+1. Klik in het linkerdeelvenster op **Player Management > Registratiecodes** en klik vervolgens op **Code maken** rechtsboven in het scherm.
 
 ![Registratiecodes](assets/registration-codes.png)
 
@@ -360,7 +360,7 @@ Eerst moet u een registratiecode maken om een speler veilig te verbinden met as 
 
    ![Controleer uw schermbeveiliging](assets/screens-org.png)
 
-1. Klik in het linkerdeelvenster op **Player Management -> Players** en u ziet de speler die u eerder installeerde en registreerde.
+1. Klik in het linkerdeelvenster op **Player Management > Players** en u ziet de speler die u eerder installeerde en registreerde.
 
    ![Players](assets/players.png)
 

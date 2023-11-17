@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4196'
-ht-degree: 9%
+source-wordcount: '4153'
+ht-degree: 8%
 
 ---
 
@@ -73,7 +73,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
 1. In de voorvertoningsmodus zijn zoomopties beschikbaar voor [ondersteunde afbeeldingstypen](/help/assets/file-format-support.md) (met interactieve bewerkingen).
 
-   Tik/klik op een element om in te zoomen `+` (Of tik/klik op het vergrootglas op het element). Tik/klik om uit te zoomen `-`. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave.
+   Als u wilt inzoomen op een element, selecteert u `+` (of selecteer het vergrootglas op het element). Als u wilt uitzoomen, selecteert u `-`. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave.
 
    Tikken **[!UICONTROL Reset]** om de weergave weer in te stellen op de oorspronkelijke grootte.
 
@@ -81,7 +81,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
 1. Navigeer naar de locatie van het element waarvan u de metagegevens wilt bewerken.
 
-1. Selecteer het element en tik/klik op **[!UICONTROL Properties]** op de werkbalk om de eigenschappen van elementen weer te geven. U kunt ook de optie **[!UICONTROL Properties]** snelle actie op de asset card.
+1. Selecteer het element en selecteer **[!UICONTROL Properties]** op de werkbalk om de eigenschappen van elementen weer te geven. U kunt ook de optie **[!UICONTROL Properties]** snelle actie op de asset card.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -106,7 +106,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
    >
    > Als u tags wilt maken, moet u schrijfmachtigingen hebben op `/content/cq:tags/default` pad in de CRX-opslagplaats.
 
-1. Tik of klik op **[!UICONTROL Save & Close]**.
+1. Selecteer **[!UICONTROL Save & Close]**.
 
 1. Navigeer naar de gebruikersinterface Elementen. De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving en tags, worden weergegeven op de elementenkaart in de Kaart-weergave en onder de desbetreffende kolommen in de lijstweergave.
 
@@ -138,7 +138,7 @@ Enkele kenmerken die uniek zijn voor een bepaalde kopie van een element, worden 
 
 De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeeltelijke kopie gemaakt wanneer een element wordt gekopieerd.
 
-1. Selecteer een of meer elementen in de interface Middelen en tik op de knop **[!UICONTROL Copy]** op de werkbalk. U kunt ook de **[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png) snelle actie van de assetkaart.
+1. Selecteer in de interface Elementen een of meer elementen en selecteer vervolgens de **[!UICONTROL Copy]** op de werkbalk. U kunt ook de **[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png) snelle actie van de assetkaart.
 
    >[!NOTE]
    >
@@ -162,13 +162,13 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
-1. Selecteer het element en tik/klik op de knop **[!UICONTROL Move]** pictogram ![move_icon](assets/move_icon.png) op de werkbalk.
+1. Selecteer het element en selecteer het **[!UICONTROL Move]** pictogram ![move_icon](assets/move_icon.png) op de werkbalk.
 
 1. Voer een van de volgende handelingen uit in de wizard Elementen verplaatsen:
 
-   * Geef de naam voor het element op nadat het is verplaatst. Tik/klik op **[!UICONTROL Next]** om verder te gaan.
+   * Geef de naam voor het element op nadat het is verplaatst. Selecteer vervolgens **[!UICONTROL Next]** om verder te gaan.
 
-   * Tikken/klikken **[!UICONTROL Cancel]** om het proces te stoppen.
+   * Selecteren **[!UICONTROL Cancel]** om het proces te stoppen.
 
    >[!NOTE]
    >
@@ -177,20 +177,20 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Op de **[!UICONTROL Select Destination]** voert u een van de volgende handelingen uit:
 
-   * Navigeer naar de nieuwe locatie voor de elementen en tik/klik vervolgens op **[!UICONTROL Next]** om verder te gaan.
+   * Ga naar de nieuwe locatie voor de elementen en selecteer **[!UICONTROL Next]** om verder te gaan.
 
-   * Tikken/klikken **[!UICONTROL Back]** om terug te keren naar de **[!UICONTROL Rename]** scherm.
+   * Selecteren **[!UICONTROL Back]** om terug te keren naar de **[!UICONTROL Rename]** scherm.
 
 1. Als de elementen die worden verplaatst, verwijzen naar pagina&#39;s, elementen of verzamelingen, wordt het **[!UICONTROL Adjust References]** wordt weergegeven naast de **[!UICONTROL Select Destination]** tab.
 
    Voer een van de volgende handelingen uit in de **[!UICONTROL Adjust References]** scherm:
 
-   * Geef de referenties op die u wilt aanpassen op basis van de nieuwe details en tik/klik op **[!UICONTROL Move]** om verder te gaan.
+   * Geef de referenties op die u wilt aanpassen op basis van de nieuwe details en selecteer **[!UICONTROL Move]** om verder te gaan.
 
    * Van de **[!UICONTROL Adjust]** -kolom, verwijzingen naar de elementen selecteren of de selectie ervan opheffen.
-   * Tikken/klikken **[!UICONTROL Back]** om terug te keren naar de **[!UICONTROL Select Destination]** scherm.
+   * Selecteren **[!UICONTROL Back]** om terug te keren naar de **[!UICONTROL Select Destination]** scherm.
 
-   * Tikken/klikken **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
+   * Selecteren **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
 
    Als u verwijzingen niet bijwerkt, blijven ze naar het vorige pad van het element wijzen. Als u de referenties aanpast, worden deze bijgewerkt naar het nieuwe middelenpad.
 
@@ -198,11 +198,11 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. U kunt uitvoeringen voor een element toevoegen of verwijderen, behalve voor het origineel. Navigeer naar de locatie van het element waaraan u uitvoeringen wilt toevoegen of verwijderen.
 
-1. Tik/klik op het element om de elementpagina te openen.
+1. Selecteer het element om de elementpagina te openen.
 
    <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
-1. Tik/klik op het pictogram GlobalNav en selecteer **[!UICONTROL Renditions]** in de lijst.
+1. Selecteer het GlobalNav-pictogram en selecteer **[!UICONTROL Renditions]** in de lijst.
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -218,13 +218,13 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    **Een vertoning verwijderen**
 
-   Selecteer een vertoning in het menu **[!UICONTROL Renditions]** en tikt of klikt u op de knop **[!UICONTROL Delete Rendition]** op de werkbalk. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
+   Selecteer een vertoning in het menu **[!UICONTROL Renditions]** en selecteert u vervolgens de **[!UICONTROL Delete Rendition]** op de werkbalk. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **Een nieuwe uitvoering uploaden**
 
-   Ga naar de pagina met assetdetails voor de asset en tik of klik op het pictogram **[!UICONTROL Add Rendition]** op de werkbalk om een nieuwe uitvoering voor de asset te uploaden.
+   Navigeer naar de pagina met elementdetails voor het element en selecteer de optie **[!UICONTROL Add Rendition]** op de werkbalk om een nieuwe uitvoering voor het element te uploaden.
 
    <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
@@ -314,7 +314,7 @@ Er wordt een gesloten gebruikersgroep (CUG) gebruikt om de toegang te beperken t
 
 CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U kunt ook een aanmeldingspagina voor de map configureren.
 
-1. Selecteer een map in de interface Middelen en tik op het pictogram Eigenschappen op de werkbalk of klik erop om de pagina met eigenschappen weer te geven.
+1. Selecteer een map in de interface Middelen en selecteer het pictogram Eigenschappen op de werkbalk om de pagina met eigenschappen weer te geven.
 1. Van de **[!UICONTROL Permissions]** tabblad, leden of groepen toevoegen onder **[!UICONTROL Closed User Group]**.
 
    ![add_user](assets/add_user.png)
@@ -355,13 +355,13 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. Do one of the following to open an asset in edit mode:
 
-    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
-    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
-    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the asset and then select the **[!UICONTROL Edit]** icon in the toolbar.
+    * Select the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, select the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. To crop the image, select the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -378,15 +378,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
+1. Select the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
+1. Select the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Tap/click the **Finish** icon to save the changes.
+1. Select the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -425,7 +425,7 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 >Voor inhoudsfragmenten, [annotaties worden gemaakt in de fragmenteditor](content-fragments/content-fragments.md).
 
 1. Navigeer naar de locatie van het element waaraan u annotaties wilt toevoegen.
-1. Tik/klik op de knop **[!UICONTROL Annotate]** pictogram uit een van de volgende opties:
+1. Selecteer de **[!UICONTROL Annotate]** pictogram uit een van de volgende opties:
 
    * [Snelle acties](#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent gegaan
@@ -454,18 +454,18 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
    >
    >U kunt meerdere annotaties toevoegen voordat u ze opslaat.
 
-1. Tikken/klikken **[!UICONTROL Close]** om de Annotatiemodus te verlaten.
+1. Selecteren **[!UICONTROL Close]** om de Annotatiemodus te verlaten.
 1. Meld u aan bij Middelen met de gegevens van Aaron MacDonald en klik op de knop **[!UICONTROL Notifications]** pictogram om het bericht weer te geven.
 
    >[!NOTE]
    >
    >U kunt ook annotaties toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Zie voor meer informatie [beheren, video-elementen](manage-video-assets.md). De MXF-video-indeling wordt echter nog niet ondersteund met video-annotaties.
 
-1. Als u een andere kleur wilt kiezen, zodat u onderscheid kunt maken tussen gebruikers, klikt of tikt u op het pictogram Profiel en klikt/tikt u op **[!UICONTROL My Preferences]**.
+1. Als u een andere kleur wilt kiezen, zodat u onderscheid kunt maken tussen gebruikers, selecteert u het pictogram Profiel en selecteert u **[!UICONTROL My Preferences]**.
 
    <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
-   Geef de gewenste kleur op in het vak **[!UICONTROL Annotation Color]** en klik of tik op **[!UICONTROL Accept]**.
+   Geef de gewenste kleur op in het dialoogvenster **[!UICONTROL Annotation Color]** en selecteer vervolgens **[!UICONTROL Accept]**.
 
 <!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
@@ -485,7 +485,7 @@ U kunt slechts één annotatie tegelijk weergeven.
 
 1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
 
-1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Timeline]** in de lijst.
+1. Selecteer het GlobalNav-pictogram en kies **[!UICONTROL Timeline]** in de lijst.
 
    <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
@@ -493,11 +493,11 @@ U kunt slechts één annotatie tegelijk weergeven.
 
    <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
-   Tik/klik op een opmerking in het dialoogvenster **[!UICONTROL Timeline]** om de bijbehorende annotatie in de afbeelding weer te geven.
+   Selecteer een opmerking in het dialoogvenster **[!UICONTROL Timeline]** om de bijbehorende annotatie in de afbeelding weer te geven.
 
    <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
-   Tikken/klikken **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
+   Selecteren **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
 
 ### Annotaties afdrukken {#printing-annotations}
 
@@ -509,7 +509,7 @@ U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 >
 >U kunt meerdere annotaties selecteren wanneer u het geannoteerde element afdrukt als PDF.
 
-Tik of klik op de knop **[!UICONTROL Print]** en volgt u de instructies in de wizard. De **[!UICONTROL Print]** wordt alleen op de werkbalk weergegeven als aan het element ten minste één aantekening of revisiestatus is toegewezen.
+Als u de annotaties en de revisiestatus wilt afdrukken, selecteert u de optie **[!UICONTROL Print]** en volgt u de instructies in de wizard. De **[!UICONTROL Print]** wordt alleen op de werkbalk weergegeven als aan het element ten minste één aantekening of revisiestatus is toegewezen.
 
 1. Open vanuit de interface Middelen de voorvertoningspagina voor een element.
 1. Voer een van de volgende handelingen uit:
@@ -525,7 +525,7 @@ Tik of klik op de knop **[!UICONTROL Print]** en volgt u de instructies in de wi
 
    <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
-1. Tik of klik op het pictogram **[!UICONTROL Print]** op de werkbalk.
+1. Selecteer de **[!UICONTROL Print]** op de werkbalk.
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
@@ -565,21 +565,21 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 * De huidige revisie voor een element weergeven.
 * Herstel het element naar een vorige versie.
 
-1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en tik op het element of klik erop om de elementpagina te openen.
+1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en selecteer het element om de elementpagina te openen.
 
-1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Timeline]** in het menu.
+1. Selecteer het GlobalNav-pictogram en kies **[!UICONTROL Timeline]** in het menu.
 
    ![tijdlijn](assets/timeline.png)
 
-1. Tik/klik op de knop **[!UICONTROL Actions]** (pijl) onder aan om de beschikbare acties weer te geven die u op het element kunt uitvoeren.
+1. Selecteer de **[!UICONTROL Actions]** (pijl) onder aan om de beschikbare acties weer te geven die u op het element kunt uitvoeren.
 
    <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
-1. Tikken/klikken **[!UICONTROL Save as Version]** om een versie voor het element te maken.
+1. Selecteren **[!UICONTROL Save as Version]** om een versie voor het element te maken.
 
 <!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
-1. Voeg een label en een opmerking toe en klik vervolgens op **[!UICONTROL Create]** om een versie te maken. Of tik/klik **Annuleren** om de bewerking af te sluiten.
+1. Voeg een label en een opmerking toe en klik vervolgens op **[!UICONTROL Create]** om een versie te maken. U kunt ook **Annuleren** om de bewerking af te sluiten.
 
    <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
@@ -595,9 +595,9 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
    ![save_version](assets/save_version.png)
 
-1. Om een voorvertoning voor de versie te genereren tikt of klikt u op **[!UICONTROL Preview Version]**
+1. Als u een voorvertoning voor de versie wilt genereren, selecteert u **[!UICONTROL Preview Version]**.
 1. Selecteer **[!UICONTROL Revert to this Version]**.
-1. Als u twee versies wilt vergelijken, gaat u naar de elementpagina van het element en tikt u op de versie die u met de huidige versie wilt vergelijken.
+1. Als u twee versies wilt vergelijken, gaat u naar de elementenpagina van het element en selecteert u de versie die u met de huidige versie wilt vergelijken.
 
    ![select_version_to_compare](assets/select_version_tocompare.png)
 
@@ -607,16 +607,16 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
 ### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 
-1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en tik op het element of klik op het element om de elementpagina te openen.
-1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Timeline]** in het menu om de tijdlijn weer te geven.
+1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en selecteer het element om de elementpagina te openen.
+1. Selecteer het GlobalNav-pictogram en kies **[!UICONTROL Timeline]** in het menu om de tijdlijn weer te geven.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Tik/klik op de knop **[!UICONTROL Actions]** (pijl) onderaan om de lijst met acties te openen die beschikbaar zijn voor het element.
+1. Selecteer de **[!UICONTROL Actions]** (pijl) onderaan om de lijst met acties te openen die beschikbaar zijn voor het element.
 
    <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
-1. Tikken/klikken **[!UICONTROL Start Workflow]** in de lijst.
+1. Selecteren **[!UICONTROL Start Workflow]** in de lijst.
 
    <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
@@ -628,7 +628,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
    <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
-1. Tik of klik op **[!UICONTROL Start]** en tik of klik vervolgens op **[!UICONTROL Proceed]** in het dialoogvenster om te bevestigen. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
+1. Selecteren **[!UICONTROL Start]** en selecteer vervolgens **[!UICONTROL Proceed]** in het te bevestigen dialoogvenster. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
 
    <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 

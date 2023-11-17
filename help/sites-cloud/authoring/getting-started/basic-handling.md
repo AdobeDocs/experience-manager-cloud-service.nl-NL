@@ -2,9 +2,9 @@
 title: Basisbewerkingen
 description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2970'
+source-wordcount: '2943'
 ht-degree: 3%
 
 ---
@@ -31,21 +31,21 @@ Onmiddellijk nadat u zich hebt aangemeld, arriveert u op de [Navigatievenster](#
 
 ![Navigatievenster](/help/sites-cloud/authoring/assets/navigation.png)
 
-Voor een goed inzicht in het basisgebruik van AEM is dit document gebaseerd op de **Sites** console. Klik of tik op **Sites** aan de slag.
+Voor een goed inzicht in het basisgebruik van AEM is dit document gebaseerd op de **Sites** console. Selecteren op **Sites** aan de slag.
 
 ## Productnavigatie {#product-navigation}
 
-Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Neem een minuut om te klikken of door te tikken voor een goed overzicht van de basisbehandeling van AEM.
+Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Neem een minuut om door te selecteren om een goed overzicht van de basisbehandeling van AEM te krijgen.
 
 ![Navigatiezelfstudie](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Klikken of tikken **Volgende** om naar de volgende pagina van het overzicht te gaan. Klikken of tikken **Sluiten** of klik of tik buiten het overzichtsdialoogvenster om te sluiten.
+Selecteren **Volgende** om naar de volgende pagina van het overzicht te gaan. Selecteren **Sluiten** of selecteer buiten het overzichtsdialoogvenster om te sluiten.
 
 Het overzicht zal de volgende keer opnieuw beginnen u tot een console toegang hebt tenzij u of alle dia&#39;s bekijkt of de optie controleert **Dit niet meer weergeven**.
 
 ## Algemene navigatie {#global-navigation}
 
-U kunt tussen de consoles navigeren met het algemene navigatievenster. Deze wordt geactiveerd als een vervolgkeuzelijst op volledig scherm wanneer u op de Adobe Experience Manager-koppeling klikt of tikt linksboven in het scherm.
+U kunt tussen de consoles navigeren met het algemene navigatievenster. Deze wordt geactiveerd als een vervolgkeuzelijst met volledig scherm wanneer u de Adobe Experience Manager-koppeling linksboven in het scherm selecteert.
 
 U kunt het globale navigatievenster sluiten door te klikken of te tikken **Sluiten** om terug te keren naar uw vorige locatie.
 
@@ -79,7 +79,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 
 ## Deelvenster Gereedschappen {#tools-panel}
 
-In het deelvenster Gereedschappen heeft u een zijpaneel met een reeks categorieën, waarin vergelijkbare gereedschapsconsoles worden gegroepeerd. De gereedschapsconsoles bieden toegang tot een aantal gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale elementen en andere aspecten van de opslagplaats voor inhoud te beheren. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+In het deelvenster Gereedschappen heeft u een zijpaneel met een reeks categorieën, waarin vergelijkbare gereedschapsconsoles worden gegroepeerd. De gereedschapsconsoles bieden toegang tot verschillende gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale elementen en andere aspecten van de opslagplaats voor inhoud te beheren. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Deelvenster Gereedschappen](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -304,7 +304,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
    * De naam en het chevron van de bron worden benadrukt wanneer getikt of geklikt.
    * De kinderen van het geklikte/geplakte middel worden getoond in de kolom rechts van het aangeklikte/geplakte middel.
-   * Als u tikt of op een middelnaam klikt die geen kinderen heeft, worden zijn details getoond in de definitieve kolom.
+   * Als u een middelnaam selecteert die geen kinderen heeft, worden zijn details getoond in de definitieve kolom.
 
 * Als u op de miniatuur tikt of erop klikt, wordt de bron geselecteerd.
 
@@ -331,7 +331,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
    * De paginatitel
    * Belangrijke datums (zoals laatst bewerkt, laatst gepubliceerd)
    * Als de pagina vergrendeld, verborgen of gedeeltelijk is
-   * Indien van toepassing, wanneer u actie moet ondernemen als onderdeel van een werkstroom
+   * Indien van toepassing, wanneer u moet optreden als onderdeel van een workflow
       * Markeertekens die aangeven dat handelingen vereist zijn, kunnen betrekking hebben op items in uw [Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 * [Snelle acties](#quick-actions) zijn ook beschikbaar in deze weergave, zoals selectie en algemene handelingen zoals bewerken.
@@ -352,12 +352,12 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
    * Wanneer alle items in de lijst zijn geselecteerd, wordt dit selectievakje ingeschakeld.
 
-      * Klik of tik checkbox om allen te schrappen.
+      * Schakel het selectievakje in om alles te deselecteren.
 
    * Wanneer slechts enkele punten worden geselecteerd, verschijnt het met een minteken.
 
-      * Klik of tik checkbox om allen te selecteren.
-      * Klik of tik opnieuw checkbox om allen te schrappen.
+      * Schakel het selectievakje in om alles te selecteren.
+      * Schakel nogmaals het selectievakje in als u alles wilt uitschakelen.
 
 * Selecteer de kolommen die u wilt weergeven **Instellingen weergeven** onder de knop Weergaven. De volgende kolommen zijn beschikbaar voor weergave:
 
@@ -383,7 +383,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
   ![Kolomvolgorde](/help/sites-cloud/authoring/assets/column-order.png)
 
-  Klik of tik op de verticale selectiebalk en sleep het item naar een nieuwe positie in de lijst.
+  Selecteer de verticale selectiebalk en sleep het item naar een nieuwe positie in de lijst.
 
   ![Orderlijst](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -471,7 +471,7 @@ Zie het document [Het Siterail gebruiken om uw Sitethema te beheren](/help/sites
 
 >[!TIP]
 >
->Een end-to-end beschrijving van het proces om een nieuwe plaats van een malplaatje te creëren en zijn thema aan te passen kan in worden gevonden [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md).
+>Een end-to-end beschrijving van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in worden gevonden [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md).
 
 ### Filter {#filter}
 

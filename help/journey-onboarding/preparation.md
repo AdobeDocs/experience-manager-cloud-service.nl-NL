@@ -2,9 +2,9 @@
 title: Voorbereiding aan boord
 description: Alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Nu weet u wat er voor u in het instapproces in opslag is door het artikel te heb
 
 AEM as a Cloud Service is een krachtig en flexibel hulpmiddel met talrijke oplossingen, toe:voegen-ons, en beschikbare plaatsingsmodellen. De oplossing die uw organisatie mag gebruiken, wordt gedefinieerd in uw contract met Adobe, dat het begin van het instapproces begeleidt.
 
-Na het lezen van dit document zult u begrijpen
+Nadat u dit document hebt gelezen, moet u
 
 * Wat uw contract met Adobe bepaalt.
 * Welke bepalingen inzake Adobe?
@@ -34,7 +34,7 @@ Deze video geeft een overzicht van het instapproces dat in deze reis wordt besch
 
 ## Uw contract {#contract}
 
-Aan boord gaan op AEM as a Cloud Service begint met een ondertekend contract tussen uw organisatie en Adobe. De reden hiervoor is dat in het contract een aantal belangrijke overeenkomsten tussen Adobe en uw organisatie worden vastgelegd, zoals:
+Aan boord gaan op AEM as a Cloud Service begint met een ondertekend contract tussen uw organisatie en Adobe. De reden hiervoor is dat in het contract verschillende belangrijke overeenkomsten tussen Adobe en uw organisatie zijn opgenomen, zoals:
 
 * Welke oplossingen en toe:voegen-ons uw organisatie kan gebruiken.
 * Het aantal en de typen omgevingen waartoe u toegang hebt
@@ -73,7 +73,7 @@ Het doel van de oproep is om u de gelegenheid te geven vragen te stellen, over h
 
 Na voltooiing van het proces voor de levering van de omgeving ontvangt de in het contract gedefinieerde systeembeheerder een welkomstbericht met de bevestiging dat hun toegang tot de Adobe Experience Cloud is verleend. Als u deze documentatiereis leest, is die persoon waarschijnlijk u!
 
-Het e-mailbericht bevat uitgebreide informatie over hoe u aan de slag kunt gaan met de services van het Experience Cloud en het zelfserviceportaal van Cloud Manager. Bovendien bevat de e-mail belangrijke informatie, zoals waar u naar ondersteuningsbronnen, forums, veelgestelde vragen en nog veel meer wilt gaan. In de lijst met bronnen in de e-mail krijgt u ook informatie over hoe u toegang kunt krijgen tot uw AEM cloudomgevingen.
+Het e-mailbericht bevat uitgebreide informatie over hoe u aan de slag kunt gaan met de services van het Experience Cloud en het zelfserviceportaal van Cloud Manager. Het e-mailbericht bevat ook belangrijke informatie, zoals waar u ondersteuningsbronnen, forums, veelgestelde vragen en nog veel meer wilt vinden. In de lijst met bronnen in de e-mail krijgt u ook informatie over hoe u toegang kunt krijgen tot uw AEM cloudomgevingen.
 
 >[!TIP]
 >

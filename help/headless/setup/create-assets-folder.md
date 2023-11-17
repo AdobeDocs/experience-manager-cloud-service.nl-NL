@@ -2,9 +2,9 @@
 title: Een middelenmap maken - Instellingen zonder kop
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ Elementenmappen worden gebruikt om [traditionele inhoudselementen ordenen](/help
 
 Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordenen terwijl deze wordt gemaakt. Voor deze gids Aan de slag hoeven we slechts één map te maken.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Navigation -> Middelen -> Bestanden**.
-1. Tik of klik op **Maken -> Map**.
+1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Navigation > Middelen > Bestanden**.
+1. Selecteren **Maken > Map**.
 1. Geef een **Titel** en **Naam** voor uw map.
    * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
@@ -38,12 +38,12 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
 1. In de **Eigenschappen** venster, selecteert u de **Cloud Servicen** tab.
 1. Voor de **Cloud Configuration** Selecteer de [eerder gemaakte configuratie.](create-configuration.md)
    ![Map met middelen configureren](../assets/assets-folder-configure.png)
-1. Tik of klik op **Opslaan en sluiten**.
-1. Tik of klik op **OK** in het bevestigingsvenster.
+1. Selecteren **Opslaan en sluiten**.
+1. Selecteren **OK** in het bevestigingsvenster.
 
    ![Bevestigingsvenster](../assets/assets-folder-confirmation.png)
 
-U kunt extra submappen maken in de map die u net hebt gemaakt. De submappen nemen de **Cloud Configuration** van de bovenliggende map. Dit kan echter worden genegeerd als u modellen uit een andere configuratie wilt gebruiken.
+U kunt extra submappen maken in de map die u net hebt gemaakt. De submappen nemen de **Cloud Configuration** van de bovenliggende map. Dit kan worden met voeten getreden echter als u modellen van een andere configuratie wilt gebruiken.
 
 U kunt een gelokaliseerde sitestructuur gebruiken [een hoofdmap voor een taal maken](/help/assets/translate-assets.md) onder uw nieuwe map.
 

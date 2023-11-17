@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2496'
-ht-degree: 19%
+source-wordcount: '2452'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 19%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager Assets kunt u workflows automatiseren voor het vertalen van elementen (waaronder binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
+Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten. Met Adobe Experience Manager Assets kunt u workflows automatiseren voor het vertalen van middelen (inclusief binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
 Om AEM middelenvertaling te automatiseren, integreert u de leveranciers van vertaaldiensten met Experience Manager en creeert projecten voor het vertalen van activa in veelvoudige talen. Experience Manager ondersteunt workflows voor het vertalen van mensen en machines.
 
@@ -88,33 +88,33 @@ Als u de hoofdmap van de taal wilt maken, maakt u een map en gebruikt u een ISO-
 
 De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bijvoorbeeld `it` als de eigenschap Name. Het bezit van de Naam wordt gebruikt als naam van de activaknoop in de bewaarplaats, en bepaalt daarom de weg van de activa. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
 
-1. Klik of tik op de assetconsole op **[!UICONTROL Create]** en kies **[!UICONTROL Folder]** in het menu.
+1. Selecteer in de middelenconsole de optie **[!UICONTROL Create]** en kiest u **[!UICONTROL Folder]** in het menu.
 1. Typ in het veld Naam de landcode in de notatie `<language-code>`.
-1. Klikken of tikken **[!UICONTROL Create]**. De taalwortel wordt gecreeerd in de console van Activa.
+1. Selecteer **[!UICONTROL Create]**. De taalwortel wordt gecreeerd in de console van Activa.
 
 ### Taalwortels weergeven {#view-language-roots}
 
 De interface die is geoptimaliseerd voor aanrakingen bevat een paneel Referenties met een lijst met taalbasissen die zijn gemaakt in [!DNL Assets].
 
 1. Selecteer in de middelenconsole de primaire taal waarvoor u taalkopieën wilt maken.
-1. Klik of tik op het GlobalNav-pictogram en kies **[!UICONTROL References]** om het paneel Referentie te openen.
-1. Klik of tik in het venster Referenties op **[!UICONTROL Language Copies]**. In het deelvenster Taalkopieën worden de taalkopieën van de elementen weergegeven.
+1. Selecteer het GlobalNav-pictogram en kies **[!UICONTROL References]** om het paneel Referentie te openen.
+1. Selecteer in het venster Referenties de optie **[!UICONTROL Language Copies]**. In het deelvenster Taalkopieën worden de taalkopieën van de elementen weergegeven.
 
 ### Een nieuw vertaalproject maken {#create-a-new-translation-project}
 
 Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taalwortel van de taal waaraan u wilt vertalen. Afhankelijk van de opties u kiest, wordt een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 
 1. Selecteer in de interface Elementen de bronmap waarvoor u een taalkopie wilt maken.
-1. Open het deelvenster **[!UICONTROL References]** en klik of tik op **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]**.
-1. Klikken/tikken **[!UICONTROL Create & Translate]** onderaan.
-1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal of talen waarvoor u een mappenstructuur wilt maken.
+1. Open de **[!UICONTROL References]** en selecteert u **[!UICONTROL Language Copies]** krachtens **[!UICONTROL Copies]**.
+1. Selecteren **[!UICONTROL Create & Translate]** onderaan.
+1. Van de **[!UICONTROL Target Languages]** Selecteer de talen waarvoor u een mappenstructuur wilt maken.
 1. Van de **[!UICONTROL Project]** list, selecteer **[!UICONTROL Create a new translation project]**.
 1. Voer in het veld **[!UICONTROL Project Title]** een titel in voor het project.
-1. Klikken/tikken op **[!UICONTROL Create]**. Middelen uit de bronmap worden gekopieerd naar de doelmappen voor de landinstellingen die u in stap 4 hebt geselecteerd.
+1. Selecteren op **[!UICONTROL Create]**. Middelen uit de bronmap worden gekopieerd naar de doelmappen voor de landinstellingen die u in stap 4 hebt geselecteerd.
 1. Om aan de omslag te navigeren, selecteer het taalexemplaar, en klik **[!UICONTROL Reveal in Assets]**.
 1. Navigeer aan de console van Projecten. De vertaalomslag wordt gekopieerd aan de console van Projecten.
 1. Open de map om het vertaalproject weer te geven.
-1. Klik of tik op het project om de detailpagina te openen.
+1. Selecteer het project om de detailpagina te openen.
 1. Als u de status van de vertaaltaak wilt weergeven, klikt u op de ovaal onder aan het dialoogvenster **[!UICONTROL Translation Job]** tegel. <!-- For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Open in de gebruikersinterface Elementen de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
@@ -128,18 +128,18 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
 1. Navigeer in de interface Elementen naar de bronmap die niet-vertaalde elementen bevat.
 1. Selecteer een asset die u wilt vertalen en open het **[!UICONTROL Reference pane]**. In de sectie **[!UICONTROL Language Copies]** wordt het aantal momenteel beschikbare vertaalkopieën weergegeven.
-1. Klik of tik op **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]**. Er wordt een lijst met beschikbare vertaalkopieën weergegeven.
-1. Klikken/tikken **[!UICONTROL Create & Translate]** onderaan.
-1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal of talen waarvoor u een mappenstructuur wilt maken.
+1. Selecteren **[!UICONTROL Language Copies]** krachtens **[!UICONTROL Copies]**. Er wordt een lijst met beschikbare vertaalkopieën weergegeven.
+1. Selecteren **[!UICONTROL Create & Translate]** onderaan.
+1. Van de **[!UICONTROL Target Languages]** Selecteer de talen waarvoor u een mappenstructuur wilt maken.
 1. Selecteer in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Add to existing translation project]** om de vertaalworkflow in de map uit te voeren.
    >[!NOTE]
    >
    >Als u **[!UICONTROL Add to existing translation project]** wordt uw vertaalproject alleen toegevoegd aan een reeds bestaand project als uw projectinstellingen exact overeenkomen met de instellingen van het reeds bestaande project. Anders wordt een nieuw project gemaakt.
 1. Van de **[!UICONTROL Existing translation project]** Selecteer een project om het element voor vertaling toe te voegen.
-1. Klik of tik op **[!UICONTROL Create]**. De te vertalen assets worden toegevoegd aan de doelmap. De bijgewerkte map wordt weergegeven onder de sectie **[!UICONTROL Language Copies]**.
+1. Selecteer **[!UICONTROL Create]**. De te vertalen assets worden toegevoegd aan de doelmap. De bijgewerkte map wordt weergegeven onder de sectie **[!UICONTROL Language Copies]**.
 1. Navigeer aan de console van Projecten, en open het bestaande vertaalproject u aan toevoegde.
-1. Klik/tik de mening van het vertaalproject de pagina van projectdetails.
-1. Klik of tik op de ellips onder aan het dialoogvenster **Vertaaltaak** tegels om de elementen in de vertaalworkflow weer te geven. In de lijst met vertaaltaken worden ook items voor metagegevens en tags van elementen weergegeven. Deze vermeldingen geven aan dat de metagegevens en tags voor de elementen ook worden vertaald.
+1. Selecteer de weergave van het vertaalproject op de pagina met projectdetails.
+1. Selecteer de ellips onder aan het dialoogvenster **Vertaaltaak** tegels om de elementen in de vertaalworkflow weer te geven. In de lijst met vertaaltaken worden ook items voor metagegevens en tags van elementen weergegeven. Deze vermeldingen geven aan dat de metagegevens en tags voor de elementen ook worden vertaald.
 
    >[!NOTE]
    >
@@ -147,8 +147,8 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
    >* Als u Machine Translation gebruikt, worden binaire bestanden met elementen niet vertaald.
    >* Als het element dat u toevoegt aan de vertaaltaak subelementen bevat, selecteert u de subelementen en verwijdert u deze zodat de vertaling zonder scheuren kan worden uitgevoerd.
 
-1. Als u de vertaling voor de elementen wilt starten, klikt of tikt u op de pijl op de knop **[!UICONTROL Translation Job]** tegel en selecteer **[!UICONTROL Start]** in de lijst. Een bericht brengt het begin van de vertaalbaan op de hoogte.
-1. Als u de status van de vertaaltaak wilt weergeven, klikt of tikt u op de ellips onder aan het dialoogvenster **[!UICONTROL Translation Job]** tegel. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
+1. Als u de vertaling voor de elementen wilt starten, selecteert u de pijl op de knop **[!UICONTROL Translation Job]** tegel en selecteer **[!UICONTROL Start]** in de lijst. Een bericht brengt het begin van de vertaalbaan op de hoogte.
+1. Als u de status van de vertaaltaak wilt weergeven, selecteert u de ovaal onder aan het dialoogvenster **[!UICONTROL Translation Job]** tegel. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Nadat de vertaling is voltooid, verandert de status in Klaar voor revisie. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
 ### Taalkopieën bijwerken {#update-language-copies}
@@ -163,31 +163,31 @@ Voer deze workflow uit om extra elementen te vertalen en deze op te nemen in een
 Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand vertaalproject en wordt de taalkopie bijgewerkt voor de landinstelling die u kiest.
 
 1. Selecteer in de interface Middelen de bronmap waaraan u een elementmap hebt toegevoegd.
-1. Open de pagina **[!UICONTROL References pane]** en klik of tik op **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]** om de lijst met taalkopieën weer te geven.
+1. Open de **[!UICONTROL References pane]** en selecteert u **[!UICONTROL Language Copies]** krachtens **[!UICONTROL Copies]** om de lijst met taalkopieën weer te geven.
 1. Schakel het selectievakje voor **[!UICONTROL Language Copies]** in om alle taalkopieën te selecteren. Hef de selectie van andere kopieën op, met uitzondering van de taalkopieën die overeenkomen met de landinstellingen waarnaar u wilt vertalen.
-1. Klikken/tikken **[!UICONTROL Update language copies]** onderaan.
+1. Selecteren **[!UICONTROL Update language copies]** onderaan.
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Add to existing translation project]**.
 1. Van de **[!UICONTROL Existing translation project]** Selecteer een project om het element voor vertaling toe te voegen.
-1. Klik of tik op **[!UICONTROL Start]**.
+1. Selecteer **[!UICONTROL Start]**.
 1. Zie de stappen 9-14 van [Toevoegen aan bestaand vertaalproject](#add-to-existing-translation-project) de rest van de procedure af te ronden.
 
 ### Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
 
-Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Assets] Hiermee slaat u de nieuw vertaalde elementen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
+Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Assets] Hiermee slaat u de nieuw vertaalde elementen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de elementen expliciet hebt goedgekeurd. Als u de elementen afwijst, blijft de taalkopie ongewijzigd.
 
-1. Klik of tik op de hoofdmap van de bron onder **[!UICONTROL Language Copies]** waarvoor u al een taalkopie hebt gemaakt, en klik of tik vervolgens op **[!UICONTROL Reveal in Assets]** om de map te openen in [!DNL Assets].
-1. Selecteer in de interface Elementen een element dat u al hebt vertaald en klik op **[!UICONTROL Edit]** van de werkbalk om het element in de bewerkingsmodus te openen.
+1. Selecteer de bronhoofdmap onder **[!UICONTROL Language Copies]** waarvoor u reeds een taalexemplaar creeerde en dan selecteert **[!UICONTROL Reveal in Assets]** om de map te openen in [!DNL Assets].
+1. Selecteer in de interface Elementen een element dat u al hebt vertaald en selecteer het **[!UICONTROL Edit]** van de werkbalk om het element in de bewerkingsmodus te openen.
 1. Bewerk het element en sla de wijzigingen op.
 1. Voer stap 2-14 van de [Toevoegen aan bestaand vertaalproject](#add-to-existing-translation-project) procedure voor het bijwerken van de taalkopie.
-1. Klik of tik op de ellips onder aan het dialoogvenster **[!UICONTROL Translation Job]** tegel. Uit de lijst met elementen in de **[!UICONTROL Translation Job]** pagina, kunt u duidelijk de tijdelijke plaats bekijken waar de vertaalde versie van het middel wordt opgeslagen.
+1. Selecteer de ellips onder aan het dialoogvenster **[!UICONTROL Translation Job]** tegel. Uit de lijst met elementen in de **[!UICONTROL Translation Job]** pagina, kunt u duidelijk de tijdelijke plaats bekijken waar de vertaalde versie van het middel wordt opgeslagen.
 1. Schakel het selectievakje in naast **[!UICONTROL Title]**.
-1. Klik of tik op de werkbalk op **[!UICONTROL Accept Translation]** en klik of tik vervolgens op **[!UICONTROL Accept]** in het dialoogvenster om de vertaalde asset in de doelmap te overschrijven met de vertaalde versie van de bewerkte asset.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Accept Translation]** en selecteer vervolgens **[!UICONTROL Accept]** in het dialoogvenster om het vertaalde element in de doelmap te overschrijven met de vertaalde versie van het bewerkte element.
 
    >[!NOTE]
    >
-   >Accepteer zowel het element als de metagegevens om de vertaalworkflow in staat te stellen het doelmiddel bij te werken.
+   >Accepteer zowel het element als de metagegevens om de vertaalworkflow in staat te stellen de doelelementen bij te werken.
 
-   Klikken/tikken **[!UICONTROL Reject Translation]** om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
+   Selecteren **[!UICONTROL Reject Translation]** om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
 
 1. Navigeer naar de middelenconsole en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
@@ -229,12 +229,12 @@ Met de workflow Maken en vertalen kunt u voor het eerst voor een bepaalde taal e
 Met de optie **Alleen structuur maken** kunt u een doelmaphiërarchie in de hoofdmap van de doeltaal maken die overeenkomt met de hiërarchie van de bronmap in de hoofdmap van de brontaal. In dit geval worden bronassets naar de doelmap gekopieerd. Er wordt echter geen vertaalproject gegenereerd.
 
 1. Selecteer in de interface Elementen de bronmap waarvoor u een structuur wilt maken in de hoofdmap van de doeltaal.
-1. Open het deelvenster **[!UICONTROL References]** en klik of tik op **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]**.
-1. Klikken/tikken **[!UICONTROL Create & Translate]** onderaan.
+1. Open de **[!UICONTROL References]** en selecteert u **[!UICONTROL Language Copies]** krachtens **[!UICONTROL Copies]**.
+1. Selecteren **[!UICONTROL Create & Translate]** onderaan.
 1. Van de **[!UICONTROL Target Languages]** selecteert u de taal waarvoor u een mappenstructuur wilt maken.
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Create structure only]**.
-1. Klik of tik op **[!UICONTROL Create]**. De nieuwe structuur voor de doeltaal wordt onder **[!UICONTROL Language Copies]**.
-1. Klik of tik op de structuur in de lijst en klik/tik vervolgens op **[!UICONTROL Reveal in Assets]** om naar de mapstructuur in de doeltaal te navigeren.
+1. Selecteer **[!UICONTROL Create]**. De nieuwe structuur voor de doeltaal wordt onder **[!UICONTROL Language Copies]**.
+1. Selecteer de structuur in de lijst en selecteer vervolgens **[!UICONTROL Reveal in Assets]** om naar de mapstructuur in de doeltaal te navigeren.
 
 ## Vertaalcloudservices toepassen op mappen {#applying-translation-cloud-services-to-folders}
 
@@ -247,7 +247,7 @@ U kunt de vertaalcloudservice rechtstreeks toepassen op de map met middelen, zod
 Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoeft u geen vertaalservices te configureren wanneer u vertaalworkflows maakt of bijwerkt.
 
 1. Selecteer in de gebruikersinterface Middelen de map waarop u vertaalservices wilt toepassen.
-1. Klik of tik op het pictogram **[!UICONTROL Properties]** op de werkbalk om de pagina **[!UICONTROL Folder Properties]** weer te geven.
+1. Selecteer in de werkbalk de optie **[!UICONTROL Properties]** pictogram om het **[!UICONTROL Folder Properties]** pagina.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -260,23 +260,23 @@ Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoef
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Klik of tik op de werkbalk op **[!UICONTROL Save]** en klik vervolgens op **[!UICONTROL OK]** om het dialoogvenster te sluiten. De vertaalservice wordt toegepast op de map.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Save]** en klik vervolgens op **[!UICONTROL OK]** om het dialoogvenster te sluiten. De vertaalservice wordt toegepast op de map.
 
 ### Aangepaste vertaalaansluiting toepassen {#applying-custom-translation-connector}
 
 Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt gebruiken in vertaalworkflows. Als u een aangepaste connector wilt toepassen, moet u eerst de connector installeren vanaf [Pakketbeheer](/help/implementing/developing/tools/package-manager.md). Vervolgens configureert u de connector vanaf de Cloud Services-console. Nadat u de connector hebt geconfigureerd, is deze beschikbaar in de lijst met connectors op het tabblad Cloud Services die wordt beschreven in [De vertaalservices toepassen](#applying-the-translation-services). Nadat u de aangepaste connector hebt toegepast en vertaalworkflows hebt uitgevoerd, geeft de tegel **[!UICONTROL Translation Summary]** van het vertaalproject de connectordetails weer onder de koppen **[!UICONTROL Provider]** en **[!UICONTROL Method]**.
 
 1. De aansluiting installeren vanaf [Pakketbeheer](/help/implementing/developing/tools/package-manager.md).
-1. Klik op het logo van de Experience Manager of tik erop en navigeer naar **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Selecteer het logo van de Experience Manager en ga naar **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. Zoek de connector die u onder de pagina **[!UICONTROL Third Party Services]** in de **[!UICONTROL Cloud Services]** hebt geïnstalleerd.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Klik op de knop **[!UICONTROL Configure now]** de koppeling openen **[!UICONTROL Create Configuration]** in.
+1. Selecteer de **[!UICONTROL Configure now]** de koppeling openen **[!UICONTROL Create Configuration]** in.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Geef een titel en een naam op voor de connector en klik of tik vervolgens op **[!UICONTROL Create]**. De aangepaste connector is beschikbaar in de lijst met connectors op het tabblad **[!UICONTROL Cloud Services]** zoals beschreven in stap 5 van [De vertaalservices toepassen](#applying-the-translation-services).
+1. Geef een titel en een naam voor de connector op en selecteer **[!UICONTROL Create]**. De aangepaste connector is beschikbaar in de lijst met connectors op het tabblad **[!UICONTROL Cloud Services]** zoals beschreven in stap 5 van [De vertaalservices toepassen](#applying-the-translation-services).
 1. Voer een vertaalworkflow uit die in het maken van vertaalprojecten wordt beschreven nadat u de aangepaste connector hebt toegepast. Verifieer de details van de connector in de tegel **[!UICONTROL Translation Summary]** van het vertaalproject in de **[!UICONTROL Projects]**-console.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)

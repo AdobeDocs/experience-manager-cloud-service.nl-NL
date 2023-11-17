@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 75%
+source-wordcount: '1889'
+ht-degree: 73%
 
 ---
 
@@ -36,13 +36,13 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM as a Clo
 
 >[!NOTE]
 >
->Raadpleeg de documentatieset voor [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html) voor meer informatie over de versies On-Premise en Managed Service.
+>Voor meer details over de Versies van de Dienst Op locatie en Beheerde, zie [AEM 6.5-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65.html) .
 
 ## Architectuur {#architecture}
 
 >[!NOTE]
 >
->Zie [Architectuur](/help/overview/architecture.md) voor meer informatie.
+>Zie voor meer informatie [Architectuur](/help/overview/architecture.md).
 
 AEM as a Cloud Service heeft nu:
 
@@ -87,7 +87,7 @@ Er zijn twee typen AEM versie-updates:
 
 >[!TIP]
 >
->Zie voor meer informatie de [Versie-updates AEM](/help/implementing/deploying/aem-version-updates.md).
+>Zie voor meer informatie [Versie-updates AEM](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -156,7 +156,7 @@ Er zijn ook aanzienlijke verschillen door de aanwezigheid van:
 
 >[!NOTE]
 >
->Voor meer informatie kunt u beginnen met [Ontwikkelingsrichtlijnen](/help/implementing/developing/introduction/development-guidelines.md) en [Ontwikkelen - de WKND-tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>Voor meer details kunt u beginnen met [Richtlijnen voor ontwikkeling](/help/implementing/developing/introduction/development-guidelines.md) en [Ontwikkelen - De WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 De nieuwe architectuur die AEM as a Cloud Service ondersteunt, omvat een paar belangrijke wijzigingen in de algemene ontwikkelaarservaring. Een van de belangrijkste doelstellingen voor AEM as a Cloud Service is om ervaren klanten (die AEM op locatie of in de context van Adobe Managed Services hebben gebruikt) de mogelijkheid te bieden om zo snel mogelijk te migreren naar AEM as a Cloud Service, zonder het grootste deel van hun aangepaste code te hoeven herschrijven. Hiervoor zijn mogelijk wat aanpassingen vereist.
 
@@ -206,7 +206,7 @@ Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AE
 
 >[!NOTE]
 >
->Voor meer informatie begint u met [inhoudsherstel](/help/operations/backup.md), [Indexeren](/help/operations/indexing.md), en [overige onderhoudstaken](/help/operations/maintenance.md).
+>Voor meer details, begin met [inhoudsherstel](/help/operations/backup.md), [Indexeren](/help/operations/indexing.md), en [overige onderhoudstaken](/help/operations/maintenance.md).
 
 Met AEM as a Cloud Service worden dergelijke bewerkingen geautomatiseerd, zodat de service niet meer hoeft te worden onderbroken.
 
@@ -224,7 +224,7 @@ Bewerkingen voor AEM as a Cloud Service worden ook ondersteund door een nieuwe i
 
 >[!NOTE]
 >
->Zie [Beveiliging - IMS-ondersteuning](/help/security/ims-support.md) voor meer informatie.
+>Zie [Beveiliging - IMS-ondersteuning](/help/security/ims-support.md).
 
 Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag.
 
@@ -240,7 +240,7 @@ Dit biedt een combinatie van de volgende voordelen:
 
 >[!NOTE]
 >
->Voor meer informatie is de sectie [Basisbewerkingen](/help/sites-cloud/authoring/getting-started/basic-handling.md) een goed uitgangspunt.
+>Voor meer details, [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) is een goed uitgangspunt.
 
 De basisbeginselen van het auteursgebruikersinterface (UI), voor zowel Plaatsen als Activa, zullen aan iedereen vertrouwd zijn die in het verleden AEM heeft gebruikt.
 
@@ -274,6 +274,6 @@ Zie voor meer informatie:
 
 >[!TIP]
 >
->Als u een overzicht hebt van AEM as a Cloud Service, kunt u snel aan boord gaan door de [Onboarding Journaal](/help/journey-onboarding/overview.md).
+>Wanneer u een overzicht hebt van AEM as a Cloud Service, kunt u snel aan boord gaan door het [Onboarding Journaal](/help/journey-onboarding/overview.md).
 >
 >Hebt u al een functie voor het testen van AEM? Installeer de [AEM Reference Demos Add-on](/help/journey-sites/demos-add-on/overview.md) om AEM krachtige functies te verkennen aan de hand van rijke voorbeelden.

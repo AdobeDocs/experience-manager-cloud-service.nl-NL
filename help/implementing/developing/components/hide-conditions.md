@@ -2,16 +2,16 @@
 title: Voorwaarden verbergen gebruiken
 description: De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
 
 # Voorwaarden verbergen gebruiken {#using-hide-conditions}
 
-De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet. Een voorbeeld hiervan zou zijn wanneer een malplaatjeauteur de Component van de Kern vormt [lijstcomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) in de [sjablooneditor](/help/sites-cloud/authoring/features/templates.md) en besluit de opties uit te schakelen om de lijst op onderliggende pagina&#39;s samen te stellen. Als u deze optie in het ontwerpdialoogvenster uitschakelt, wordt een eigenschap zo ingesteld dat wanneer de component List wordt gerenderd, de voorwaarde hide wordt geëvalueerd en de optie om onderliggende pagina&#39;s weer te geven niet wordt weergegeven.
+De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet. Een voorbeeld hiervan zou zijn wanneer een sjabloonauteur de Core Component configureert [list, component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) in de [sjablooneditor](/help/sites-cloud/authoring/features/templates.md) en besluit de opties uit te schakelen om de lijst op onderliggende pagina&#39;s samen te stellen. Als u deze optie in het ontwerpdialoogvenster uitschakelt, wordt een eigenschap zo ingesteld dat wanneer de component List wordt gerenderd, de voorwaarde hide wordt geëvalueerd en de optie om onderliggende pagina&#39;s weer te geven niet wordt weergegeven.
 
 ## Overzicht {#overview}
 
@@ -27,7 +27,7 @@ Door huidenvoorwaarden te gebruiken, hebben de beheerders, de ontwikkelaars, en 
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` is verantwoordelijk voor het filteren van de bronnen op basis van het bestaan en de waarde van de `granite:hide` eigenschap, die zich in het te filteren veld bevindt. De uitvoering van `/libs/cq/gui/components/authoring/dialog/dialog.jsp` omvat een geval van `FilteringResourceWrapper.`
 
-De implementatie maakt gebruik van de graniet [ELResolver-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) en voegt een `cqDesign` douanevariabele via ExpressionCustomizer.
+De implementatie maakt gebruik van de graniet [ELResolver-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) en voegt een `cqDesign` aangepaste variabele via ExpressionCustomizer.
 
 Hier zijn een paar voorbeelden van huidencondities op een ontwerpknoop die onder of onder wordt gevestigd `etc/design` of als een inhoudsbeleid.
 
@@ -51,11 +51,11 @@ Houd rekening met het volgende wanneer u de expressie hide definieert:
 
 Voorbeelden van huidenomstandigheden zijn te vinden in AEM en de [kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in het bijzonder. Neem bijvoorbeeld de [lijstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) zoals die in de [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-[De sjablooneditor gebruiken](/help/sites-cloud/authoring/features/templates.md)kan de sjabloonauteur in het ontwerpdialoogvenster definiëren welke opties van de lijstcomponent beschikbaar zijn voor de auteur van de pagina. U kunt bijvoorbeeld instellen of de lijst een statische lijst moet zijn, een lijst met onderliggende pagina&#39;s, een lijst met gecodeerde pagina&#39;s, enzovoort. kan worden in- of uitgeschakeld.
+[De sjablooneditor gebruiken](/help/sites-cloud/authoring/features/templates.md)kan de sjabloonauteur in het ontwerpdialoogvenster definiëren welke opties van de lijstcomponent beschikbaar zijn voor de auteur van de pagina. U kunt bijvoorbeeld instellen of de lijst een statische lijst moet zijn, een lijst met onderliggende pagina&#39;s, een lijst met gecodeerde pagina&#39;s enzovoort in- of uitschakelen.
 
 Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit te schakelen, wordt een ontwerpeigenschap ingesteld en wordt een voorwaarde voor verbergen aan de hand hiervan geëvalueerd. Hierdoor wordt de optie niet gerenderd voor de auteur van de pagina.
 
-1. De auteur van de pagina kan standaard de kerncomponent van de lijst gebruiken om een lijst samen te stellen met behulp van onderliggende pagina&#39;s door de optie **Onderliggende pagina&#39;s**.
+1. Standaard kan de auteur van de pagina de kerncomponent van de lijst gebruiken om een lijst samen te stellen met behulp van onderliggende pagina&#39;s door de optie **Onderliggende pagina&#39;s**.
 
    ![Componentinstellingen weergeven](assets/hide-conditions-list-settings.png)
 
@@ -63,7 +63,7 @@ Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit
 
    ![Dialoogvenster Componentontwerp weergeven](assets/hide-conditions-list-design.png)
 
-1. Een beleidsknooppunt wordt gemaakt onder `/conf/wknd/settings/wcm/policies/wknd/components/list` met een eigenschap `disableChildren` instellen op `true`.
+1. Een beleidsknooppunt onder `/conf/wknd/settings/wcm/policies/wknd/components/list` met een eigenschap `disableChildren` instellen op `true`.
 
    ![Knooppuntstructuur van toestand Verbergen](assets/hide-conditions-node-structure.png)
 
@@ -71,7 +71,7 @@ Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit
 
    ![Evaluatie van de toestand van de huid](assets/hide-conditions-evaluation.png)
 
-1. De waarde van `disableChildren` uit de ontwerpconfiguratie en de expressie `${cqDesign.disableChildren}` evalueert aan `false`, wat betekent dat de optie niet wordt gerenderd als onderdeel van de component.
+1. De waarde van `disableChildren` uit de ontwerpconfiguratie en de expressie `${cqDesign.disableChildren}` evalueert aan `false`, wat betekent dat de optie niet wordt weergegeven als onderdeel van de component.
 
 1. De optie **Onderliggende pagina&#39;s** wordt niet meer weergegeven voor de auteur van de pagina wanneer de component List wordt gebruikt.
 

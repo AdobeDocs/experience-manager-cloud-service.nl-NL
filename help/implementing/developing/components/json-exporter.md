@@ -2,9 +2,9 @@
 title: JSON-exportfunctie voor services voor inhoud
 description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden gebruikt.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '398'
 ht-degree: 2%
 
 ---
@@ -67,8 +67,6 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
 ### Aanvullende informatie {#further-information}
 
-Zie ook:
-
 * HTTP-API voor assets
    * [HTTP-API voor assets](/help/assets/developer-reference-material-apis.md)
 * Modellen voor verkopen:
@@ -77,8 +75,6 @@ Zie ook:
    * [JSON-export inschakelen voor een component](enabling-json-exporter.md)
 
 ## Verwante documentatie {#related-documentation}
-
-Zie voor meer informatie:
 
 * [Contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

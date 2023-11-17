@@ -2,16 +2,16 @@
 title: Generieke Lucene-index verwijderen
 description: Leer over de geplande verwijdering van generische indexen van Lucene en hoe u kan worden beïnvloed.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
 
 # Generieke Lucene-index verwijderen {#generic-lucene-index-removal}
 
-Adobe is van plan om de generieke Lucene-index (`/oak:index/lucene-*`) van Adobe Experience Manager as a Cloud Service. Deze index is vervangen sinds AEM 6.5. In dit document wordt het effect van dit besluit beschreven, samen met een gedetailleerde beschrijving van de wijze waarop moet worden onderzocht of een AEM instantie wordt beïnvloed. Het bevat ook manieren om vragen te veranderen zodat blijven zij zonder de generische index van Lucene functioneren.
+Adobe is van plan de generieke Lucene-index (`/oak:index/lucene-*`) van Adobe Experience Manager as a Cloud Service. Deze index is vervangen sinds AEM 6.5. In dit document wordt het effect van dit besluit beschreven, samen met een gedetailleerde beschrijving van de wijze waarop moet worden onderzocht of een AEM instantie wordt beïnvloed. Het bevat ook manieren om vragen te veranderen zodat blijven zij zonder de generische index van Lucene functioneren.
 
 ## Achtergrond {#background}
 
@@ -38,11 +38,11 @@ Zoekopdrachten voor verwijzingen, zoals in het volgende voorbeeld, moeten nu bij
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Om grotere volumes van klantengegevens te steunen, leidt Adobe niet meer tot de generische index van Lucene op nieuwe AEM as a Cloud Service milieu&#39;s. Daarnaast verwijdert Adobe de index uit bestaande opslagruimten. [Zie de tijdlijn](#timeline) aan het einde van dit document voor meer informatie.
+Om grotere volumes van klantengegevens te steunen, leidt de Adobe niet meer tot de generische index van Lucene op nieuwe AEM as a Cloud Service milieu&#39;s. Bovendien verwijdert Adobe de index uit bestaande opslagruimten. [Zie de tijdlijn](#timeline) aan het einde van dit document voor meer informatie.
 
 Adobe heeft de indexkosten al aangepast via de `costPerEntry` en `costPerExecution` eigenschappen om ervoor te zorgen dat andere indexen, zoals `/oak:index/pathreference` worden waar mogelijk bij voorkeur gebruikt.
 
-De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die indien nodig kunnen worden aangepast. U kunt ook nieuwe aangepaste indexen toevoegen aan de klanttoepassing. Volledige instructies voor indexbeheer in AEM as a Cloud Service zijn te vinden in de [indexeringsdocumentatie](/help/operations/indexing.md).
+De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die indien nodig kunnen worden aangepast. U kunt ook nieuwe aangepaste indexen toevoegen aan de toepassing van de klant. Volledige instructies voor indexbeheer in AEM as a Cloud Service zijn te vinden in de [indexeringsdocumentatie](/help/operations/indexing.md).
 
 ## Betrokken bent u? {#are-you-affected}
 
@@ -74,7 +74,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## Potentiële afhankelijkheden van generieke Lucene-indexen {#potential-dependencies}
 
-Er zijn een aantal gebieden waar uw toepassingen en AEM installaties van generische indexen van Lucene zowel op auteur als publicatieinstanties afhankelijk kunnen zijn.
+Er zijn verscheidene gebieden waar uw toepassingen en AEM installaties van generische indexen van Lucene zowel op auteur als publicatieinstanties afhankelijk kunnen zijn.
 
 ### Exemplaar publiceren {#publish-instance}
 
@@ -121,7 +121,7 @@ Als dusdanig, valt de vraag terug op de generische volledige tekstindex waar all
 
 ### Instantie van auteur {#author-instance}
 
-Naast vragen in de servers van de klantentoepassing, componenten OSGi, en het teruggeven van manuscripten kan er een aantal auteur-specifieke toepassingen van de generische index van Lucene zijn.
+Naast vragen in de servers van de klantentoepassing, componenten OSGi, en het teruggeven van manuscripten kan er verscheidene auteur-specifieke toepassingen van de generische index van Lucene zijn.
 
 #### Referentie zoeken {#reference-search}
 
@@ -149,7 +149,7 @@ Voordat de generieke Lucene-index wordt verwijderd, moet de `pathfield` wordt bi
 >
 >**Actie van klant vereist**
 >
->Als de klant de zoekfunctionaliteit in de padveldkiezer wil behouden, voert u een `nodeTypes` Het bezit zou moeten worden verstrekt die van de knooptypes een lijst maken waartegen zij zouden willen vragen. Deze kunnen als komma-gescheiden lijst van knooptypes in a worden gespecificeerd `String` eigenschap. Als geen onderzoek wordt vereist, wordt geen actie vereist van de klant.
+>Als de klant de zoekfunctionaliteit in de padveldkiezer wil behouden, voert u een `nodeTypes` eigenschap moet worden opgegeven met de knooppunttypen waarop ze een query willen uitvoeren. Deze kunnen als komma-gescheiden lijst van knooptypes in a worden gespecificeerd `String` eigenschap. Als geen onderzoek wordt vereist, wordt geen actie vereist van de klant.
 
 >[!NOTE]
 >
@@ -160,13 +160,13 @@ Voordat de generieke Lucene-index wordt verwijderd, moet de `pathfield` wordt bi
 
 ## Tijdlijn voor algemene Lucene-verwijdering {#timeline}
 
-Adobe zal een twee-fasenbenadering nemen om de generische index van Lucene te verwijderen.
+De Adobe zal een bifasenbenadering nemen om de generische index van Lucene te verwijderen.
 
-* **Fase 1** (gepland voor 31 januari 2022): Niet langer maken `/oak:index/lucene-*` over nieuwe AEM as a Cloud Service omgevingen.
-* **Fase 2** (gepland voor 31 maart 2022): Verwijderen `/oak:index/lucene-*` index van bestaande AEM as a Cloud Service omgevingen.
+* **Fase 1** (gepland begin 31 januari 2022): niet langer maken `/oak:index/lucene-*` over nieuwe AEM as a Cloud Service omgevingen.
+* **Fase 2** (gepland begin 31 maart 2022): Verwijderen `/oak:index/lucene-*` index van bestaande AEM as a Cloud Service omgevingen.
 
-Adobe zal de hierboven vermelde logboekberichten controleren en zal proberen om klanten te contacteren die afhankelijk van de generische index van Lucene blijven.
+De Adobe zal de hierboven vermelde logboekberichten controleren en zal proberen om klanten te contacteren die van de generische index van Lucene afhankelijk blijven.
 
-Als kortetermijnmatiging, zal Adobe de definities van de douaneindex direct aan klantensystemen toevoegen om functionele of prestatieskwesties als resultaat van de verwijdering van de generische index van Lucene zonodig te verhinderen.
+Als kortetermijnmatiging, zal de Adobe de definities van de douaneindex direct aan klantensystemen toevoegen om functionele of prestatieskwesties als resultaat van de verwijdering van de generische index van Lucene zonodig te verhinderen.
 
 In dergelijke gevallen krijgt de klant de bijgewerkte indexdefinitie en wordt hem geadviseerd deze op te nemen in toekomstige versies van zijn toepassing via Cloud Manager.

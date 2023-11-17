@@ -4,9 +4,9 @@ description: Leer om te vormen [!DNL Adobe Experience Manager] Insteekmodules vo
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4277'
+source-wordcount: '4276'
 ht-degree: 0%
 
 ---
@@ -233,7 +233,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 
    * **Naam** `externalStyleSheets`
    * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in CRXDE)
-   * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
+   * **Waarden** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
 
    >[!NOTE]
    >
@@ -376,7 +376,7 @@ Alinea-indelingen worden beschikbaar gesteld voor selectie door:
 
    * **Naam** `tag`
    * **Type** `String`
-   * **Waarde** De bloktag voor de indeling, bijvoorbeeld: p, h1, h2, enz.
+   * **Waarde** De bloktag voor de indeling, bijvoorbeeld: p, h1, h2, enzovoort.
 
      U hoeft de punthaakjes voor scheidingstekens niet in te voeren.
 
@@ -586,9 +586,9 @@ Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 >
 De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen.
 >
-Als u de spellingcontrole wilt uitvoeren, tikt u op of klikt u op de knop Spellingcontrole op de werkbalk. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
+Selecteer de knop Spellingcontrole op de werkbalk om de spellingcontrole uit te voeren. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
 >
-Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
+Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Selecteer nogmaals Spellingcontrole om de spellingcontrole uit te voeren.
 
 ## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
 

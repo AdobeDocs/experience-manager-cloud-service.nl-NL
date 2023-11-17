@@ -4,9 +4,9 @@ description: Bekijk een overzicht van het vertalen van inhoud voor meertalige si
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Automatiseer de vertaling van pagina-inhoud en -elementen om meertalige websites te maken en te onderhouden. Om vertaalworkflows te automatiseren, integreert u de leveranciers van vertaaldiensten met AEM en creeert projecten voor het vertalen van inhoud in veelvoudige talen. AEM ondersteunt workflows voor het vertalen van mensen en machines.
 
 * **Menselijke vertaling:** Inhoud wordt naar uw vertaalbureau verzonden en door professionele vertalers vertaald. Wanneer de vertaalde inhoud is voltooid, wordt deze geretourneerd en in AEM geïmporteerd. Wanneer uw vertaalbureau is geïntegreerd met AEM, wordt de inhoud automatisch verzonden tussen AEM en de vertaalprovider.
-* **Machinevertaling:** De vertaalservice van de computer zet uw inhoud onmiddellijk om.
+* **Machine transleren:** De vertaalservice van de computer zet uw inhoud onmiddellijk om.
 
 >[!TIP]
 >
@@ -25,9 +25,9 @@ Automatiseer de vertaling van pagina-inhoud en -elementen om meertalige websites
 Voor het vertalen van inhoud worden de volgende stappen uitgevoerd:
 
 1. [AEM met uw vertaalserviceprovider verbinden](integration-framework.md#connecting-to-a-translation-service-provider) en [configuraties voor vertaalintegratie maken](integration-framework.md).
-1. [Pagina&#39;s van uw master taal koppelen](integration-framework.md#configuring-pages-for-translation) met de vertaalservice en frameworkconfiguraties.
+1. [Pagina&#39;s van uw taalstramien koppelen](integration-framework.md#configuring-pages-for-translation) met de vertaalservice en frameworkconfiguraties.
 1. [Het type inhoud identificeren](rules.md) om te vertalen.
-1. [De inhoud voorbereiden voor vertaling](preparation.md) door de master taal te ontwerpen en de basispagina&#39;s van taalkopieën te maken.
+1. [De inhoud voorbereiden voor vertaling](preparation.md) door het taalstramien te ontwerpen en de basispagina&#39;s van taalkopieën te maken.
 1. [Vertaalprojecten maken](managing-projects.md) de te vertalen inhoud te verzamelen en het vertaalproces voor te bereiden.
 1. Gebruik de vertaalprojecten om [het contentvertaalproces beheren](managing-projects.md).
 

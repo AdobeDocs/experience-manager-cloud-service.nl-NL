@@ -1,13 +1,13 @@
 ---
 title: Paginaontwerp aanpassen
 description: Leer over de mechanismen die AEM as a Cloud Service verstrekt om de functionaliteit van de paginascreatie aan te passen.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
-
 
 # Paginaontwerp aanpassen {#customizing-page-authoring}
 
@@ -22,7 +22,7 @@ Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe clien
 * Afhankelijk van de publicatieclib `cq.authoring.editor.sites.page`.
 * Maak deel uit van de `cq.authoring.editor.sites.page.hook` categorie.
 
-Raadpleeg het document voor meer informatie over clientlibs [Client-Side Libraries gebruiken op AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Zie [Client-Side bibliotheken gebruiken op AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Bedekkingen {#overlays}
 
@@ -30,9 +30,9 @@ Bedekkingen zijn gebaseerd op knooppuntdefinities en maken het mogelijk de stand
 
 Bij het maken van een bedekking is een 1:1-kopie van het origineel niet vereist, omdat de [fusie van bronnen](/help/implementing/developing/introduction/sling-resource-merger.md) staat overerving toe.
 
-Zie voor meer informatie de [JS-documentatieset](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+Zie de klasse [JS-documentatieset](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-Zie het document voor meer informatie over overlays [Bedekkingen voor Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Zie voor meer informatie over overlays [Bedekkingen voor Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Nieuwe laag toevoegen (modus) {#add-new-layer-mode}
 

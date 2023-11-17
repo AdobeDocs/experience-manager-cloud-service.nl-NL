@@ -2,9 +2,9 @@
 title: Snel site maken en front-end aanpassen
 description: Leer hoe het Snelle hulpmiddel van de Aanmaak van de Plaats plaatsmalplaatjes, thema's, en de front-end pijpleiding gebruikt om snelle plaatsing van nieuwe plaatsen en ontkoppelde front-end ontwikkeling toe te laten.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Het gereedschap Snel site maken is een gebruiksvriendelijk hulpmiddel waarmee be
 
 Hiertoe gebruikt het gereedschap Snel site maken verschillende krachtige AEM as a Cloud Service functies:
 
-1. **Sitesjablonen AEM** worden gebruikt om de inhoud en structuur van de basissite en de sitestijl te definiëren en worden door een beheerder geselecteerd bij het maken van een nieuwe site.
+1. **Sitesjablonen AEM** worden gebruikt om de inhoud en structuur van de basissite en de sitestijl te definiëren en worden door een beheerder geselecteerd bij het maken van een site.
 1. An **Sitethema AEM** is opgenomen in de sjabloon en bevat de CSS-, JavaScript- en statische bronnen die de opmaak van de site definiëren.
 1. De **Pijpleiding aan de voorzijde** kan worden gebruikt om aanpassingen aan het plaatsthema onafhankelijk van achterste-eindontwikkeling op te stellen.
 

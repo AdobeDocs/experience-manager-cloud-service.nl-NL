@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: Een overzicht van de AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: 33ba3e88a4116674c70c44a29273a04544b6b39b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1232'
 ht-degree: 1%
 
 ---
@@ -25,18 +25,18 @@ Bovendien gebruiken sommige klanten die eerder met AEM 6.5 of vroegere versies w
 
 ## Samenstellen voor de SDK {#building-for-the-sdk}
 
-De AEM as a Cloud Service SDK wordt gebruikt om aangepaste code te maken en in te voeren. Raadpleeg voor meer informatie de [AEM documentatie van het type Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). Op een hoog niveau worden de volgende stappen uitgevoerd:
+De AEM as a Cloud Service SDK wordt gebruikt om aangepaste code te maken en in te voeren. Zie de [AEM documentatie van het type Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). Op een hoog niveau worden de volgende stappen uitgevoerd:
 
 * **Code compileren**. Zoals verwacht, wordt de broncode gecompileerd die de resulterende inhoudspakketten produceert
 * **Artefacten maken**. Tijdens dit proces worden artefacten gemaakt
 * **Bundels analyseren**. Bundels worden geanalyseerd met de Maven analyzer plug-in, die zoekt naar problemen in het Maven-project, zoals ontbrekende afhankelijkheden
 * **Artefacten implementeren**. Artefacten worden opgesteld aan de lokale server.
 
-Dezelfde stappen worden uitgevoerd door Cloud Manager bij de implementatie naar Cloud-omgevingen. Het uitvoeren bouwt plaatselijk voor lokale ontwikkeling en het testen toe. Ontwikkelaars kunnen op efficiënte wijze code- of structurele problemen detecteren voordat ze de broncontrole activeren en de implementatie van Cloud Manager activeren. Dit kan langer duren.
+Dezelfde stappen worden uitgevoerd door Cloud Manager bij de implementatie naar Cloud Environment. Het uitvoeren bouwt plaatselijk voor lokale ontwikkeling en het testen toe. Ontwikkelaars kunnen op efficiënte wijze code- of structurele problemen detecteren voordat ze de broncontrole activeren en de implementatie van Cloud Manager activeren. Dit kan langer duren.
 
 >[!NOTE]
 >
->De AEM as a Cloud Service SDK moet worden gemaakt met een Java-verspreiding en -versie die worden ondersteund door [De buildomgeving van Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEM as a Cloud Service klanten kunnen de JDK voor het Oracle downloaden van de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en hebt Java 11 Extended Support tot september 2026 vanwege de licentie- en ondersteuningsvoorwaarden van Adobe voor de Oracle Java-technologie bij gebruik in Adobe Experience Manager-projecten.
+>De AEM as a Cloud Service SDK moet worden gemaakt met een Java-verspreiding en -versie die worden ondersteund door [De buildomgeving van Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEM as a Cloud Service klanten kunnen het Oracle JDK downloaden van de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en u hebt tot september 2026 Java 11 Extended Support vanwege de licentievoorwaarden en ondersteuningsvoorwaarden van de Adobe voor de Oracle Java-technologie bij gebruik in Adobe Experience Manager-projecten.
 
 ## Toegang tot de AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
@@ -93,7 +93,7 @@ AEM is standaard geconfigureerd om de sleutelgegevens op te slaan in de gegevens
 
 Voer de volgende stappen uit om inhoudspakketten met de gecodeerde waarden opnieuw te kunnen gebruiken:
 
-* Wanneer u eerst de lokale quickstart.jar start, moet u de onderstaande parameter toevoegen: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Het wordt aanbevolen, maar optioneel, om deze altijd toe te voegen.
+* Wanneer u de lokale quickstart.jar voor het eerst start, moet u de onderstaande parameter toevoegen: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Het wordt aanbevolen, maar optioneel, om deze altijd toe te voegen.
 * De eerste keer dat u een instantie hebt gestart, maakt u een pakket met een filter voor de hoofdmap &quot;`/etc/key`&quot;. Dit pakket bevat het geheim dat opnieuw moet worden gebruikt in alle omgevingen waarvoor u ze opnieuw wilt gebruiken.
 * Exporteer alle inhoud die geheimen bevat of zoek de gecodeerde waarden op via `/crx/de` zodat kunt u het aan het pakket toevoegen dat over installaties opnieuw wordt gebruikt.
-* Wanneer u een nieuwe instantie opspant (om deze te vervangen door een nieuwe versie of als meerdere ontwikkelomgevingen de gegevens voor de test moeten delen), installeert u het pakket dat u in stap 2 en 3 maakt. Zo kunt u de inhoud opnieuw gebruiken zonder dat u de inhoud handmatig opnieuw hoeft te configureren. De reden is dat de cryptosleutel nu synchroon is.
+* Wanneer u een nieuwe instantie opspant (om deze te vervangen door een nieuwe versie of als meerdere ontwikkelomgevingen de gegevens voor de test moeten delen), installeert u het pakket dat u in stap 2 en 3 maakt. Dit laat u de inhoud zonder de behoefte opnieuw gebruiken om manueel te vormen. De reden is dat de cryptosleutel nu synchroon is.

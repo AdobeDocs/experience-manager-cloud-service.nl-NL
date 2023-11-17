@@ -2,9 +2,9 @@
 title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
 description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2630'
 ht-degree: 0%
 
 ---
@@ -367,7 +367,7 @@ Het thema wordt opgesteld gebruikend [pijpleiding aan de voorzijde.](https://exp
 
    ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-Zodra de bouwstijl volledig is, wordt het thema beschikbaar bij de auteursinstantie voor het gebruik. Het verschijnt onder de **[!UICONTROL Style]** in de wizard Adaptief formulier maken, terwijl u een nieuw adaptief formulier maakt.
+Zodra de bouwstijl volledig is, wordt het thema beschikbaar bij de auteursinstantie voor het gebruik. Het verschijnt onder de **[!UICONTROL Style]** in de wizard Adaptief formulier maken, terwijl u een adaptief formulier maakt.
 
 ![aangepast thema beschikbaar onder tabblad Stijl](/help/forms/assets/custom-theme-style-tab.png)
 

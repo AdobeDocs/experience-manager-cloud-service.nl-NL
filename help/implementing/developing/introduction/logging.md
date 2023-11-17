@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
+source-wordcount: '2753'
 ht-degree: 0%
 
 ---
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding nuttig zijn. De CDN-logindeling kan niet worden aangepast en er bestaat geen concept om de indeling in te stellen op verschillende modi, zoals info, warn of error.
 
-Merk op dat de Splunk het door:sturen eigenschap nog geen CDN logboeken steunt.
+De functie Splunk forward ondersteunt nog geen CDN-logbestanden.
 
 **Voorbeeld**
 
@@ -643,7 +643,7 @@ Hieronder vindt u een voorbeeld van een verzoek voor klantenondersteuning:
 Programma 123, Production Env
 
 * Splunk HEC eindpuntadres: `splunk-hec-ext.acme.com`
-* Splunk-index: acme_123prod (de klant kan kiezen welke naamgevingsconventie hij wenst)
+* Splunk-index: acme_123prod (de klant kan kiezen welke naamgevingsconventie hij wil)
 * Splondepoort: 443
 * Splunk HEC token: ABC123
 

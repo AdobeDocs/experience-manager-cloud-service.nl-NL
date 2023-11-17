@@ -4,7 +4,7 @@ seo-title: Repository Browser
 description: De repository browser biedt een alleen-lezen weergave in de repository voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Ga als volgt te werk om Developer Console te openen:
 Toegang tot de browser voor gegevensopslagruimte:
 
 * Gebruikers moeten beschikken over de **Cloud Manager - Ontwikkelaar** Rol in de Admin Console om instanties van Auteur en van de Publicatie te bekijken.
-* Bovendien kunnen gebruikers met het AEM Gebruikersprofiel de browser van de gegevensopslagruimte met minimale leestoegang bekijken. de machtigingen van de gebruiker worden gerespecteerd bij het bladeren in de opslagplaats. Gebruikers met het productprofiel AEM Beheerders kunnen de browser van de opslagplaats bekijken met volledige leestoegang.
+* Bovendien kunnen gebruikers met het AEM Gebruikersprofiel de browser van de gegevensopslagruimte met minimale leestoegang weergeven. De machtigingen van de gebruiker worden gerespecteerd wanneer ze door de gegevensopslagruimte bladeren. Gebruikers met het productprofiel AEM Beheerders kunnen de browser van de opslagplaats bekijken met volledige leestoegang.
 
 Voor meer informatie over het instellen van gebruikersmachtigingen raadpleegt u de [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
@@ -99,7 +99,7 @@ Ga als volgt te werk om deze locaties zichtbaar te maken.
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. De **beheerders** en de nieuwe **DEV - AEM Beheerders publiceren** groeperen zodat deze beschikbaar zijn voor publicatie
+1. Activeer **beheerders** en de nieuwe **DEV - AEM Beheerders publiceren** groeperen zodat deze beschikbaar zijn voor publicatie
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 

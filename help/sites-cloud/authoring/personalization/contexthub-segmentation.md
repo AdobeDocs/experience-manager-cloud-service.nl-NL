@@ -2,9 +2,9 @@
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -88,11 +88,11 @@ Het nieuwe segment definiëren:
 
 1. Na [toegang krijgen tot de segmenten](#accessing-segments), [naar de map navigeren](#organizing-segments) waar u het segment wilt maken.
 
-1. Tik of klik op de knop **Maken** en selecteert u **ContextHub-segment maken**.
+1. Selecteer de **Maken** en selecteert u **ContextHub-segment maken**.
 
    ![Segment toevoegen](../assets/contexthub-create-segment.png)
 
-1. In de **Nieuw ContextHub-segment** Voer een titel voor het segment in en geef desgewenst een opstartitewaarde op en tik of klik op **Maken**.
+1. In de **Nieuw ContextHub-segment** Voer een titel voor het segment in en geef indien nodig een opstartoptie op en selecteer vervolgens **Maken**.
 
    ![Nieuw segment](../assets/contexthub-new-segment.png)
 
@@ -103,7 +103,7 @@ Het nieuwe segment definiëren:
 
 1. Van de segmentconsole, geef uw onlangs-gecreeerd segment uit om het in de segmentredacteur te openen.
 1. Sleep een vergelijking of een verwijzing naar de segmentredacteur het in het gebrek EN container zal verschijnen.
-1. Dubbelklik op of tik op de configureoptie van de nieuwe verwijzing of het nieuwe segment om de specifieke parameters te bewerken. In dit voorbeeld testen we mensen in Bazel.
+1. Dubbelselecteer de configureoptie van de nieuwe verwijzing of het nieuwe segment om de specifieke parameters uit te geven. In dit voorbeeld testen we mensen in Bazel.
 
    ![Testen op mensen in Bazel](../assets/contexthub-comparing-property-value.png)
 
@@ -193,7 +193,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ### Een nieuwe map maken {#create-folder}
 
-1. Na [toegang krijgen tot de segmenten](#accessing-segments), klikt u of tikt u op **Maken** en selecteert u **Map**.
+1. Na [toegang krijgen tot de segmenten](#accessing-segments), selecteert u de **Maken** en selecteert u **Map**.
 
    ![Map toevoegen](../assets/contexthub-create-segment.png)
 
@@ -205,24 +205,24 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
    ![Map maken](../assets/contexthub-create-folder.png)
 
-1. Tik of klik op **Maken**.
+1. Selecteer **Maken**.
 
    ![Map bevestigen](../assets/contexthub-confirm-folder.png)
 
 1. De map wordt weergegeven in de lijst met segmenten.
    * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map verschijnt.
-   * Tik of klik op de kolomkoppen om de sortering aan te passen.
+   * U kunt de kolomkoppen selecteren om de sortering aan te passen.
      ![De nieuwe map](../assets/contexthub-folder.png)
 
 ### Bestaande mappen wijzigen {#modify-folders}
 
-1. Na [toegang krijgen tot de segmenten](#accessing-segments), klikt of tikt op de map die u wilt wijzigen om deze te selecteren.
+1. Na [toegang krijgen tot de segmenten](#accessing-segments)selecteert u de map die u wilt wijzigen om deze te selecteren.
 
    ![Map selecteren](../assets/contexthub-select-folder.png)
 
-1. Tik of klik op **Naam wijzigen** in de werkbalk om de naam van de map te wijzigen.
+1. Selecteren **Naam wijzigen** in de werkbalk om de naam van de map te wijzigen.
 
-1. Nieuwe **Maptitel** tikken of klikken **Opslaan**.
+1. Nieuwe **Maptitel** en selecteert u **Opslaan**.
 
    ![Naam map wijzigen](../assets/contexthub-rename-folder.png)
 
@@ -232,25 +232,25 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ### Een map verwijderen
 
-1. Na [toegang krijgen tot de segmenten](#accessing-segments), klikt of tikt op de map die u wilt wijzigen om deze te selecteren.
+1. Na [toegang krijgen tot de segmenten](#accessing-segments)selecteert u de map die u wilt wijzigen om deze te selecteren.
 
    ![Map selecteren](../assets/contexthub-select-folder.png)
 
-1. Tik of klik op **Verwijderen** om de map te verwijderen.
+1. Selecteren **Verwijderen** om de map te verwijderen.
 
 1. Een dialoogvenster bevat een lijst met mappen die zijn geselecteerd om te worden verwijderd.
 
    ![Verwijderen bevestigen](../assets/contexthub-confirm-segment-delete.png)
 
-   * Tik of klik op **Verwijderen** ter bevestiging.
-   * Tik of klik op **Annuleren** om af te breken.
+   * Selecteren **Verwijderen** ter bevestiging.
+   * Selecteren **Annuleren** om af te breken.
 
 1. Als een van de geselecteerde mappen submappen of segmenten bevat, moet de verwijdering ervan worden bevestigd.
 
    ![Verwijderen van kinderen bevestigen](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tik of klik op **Verwijderen forceren** ter bevestiging.
-   * Tik of klik op **Annuleren** om af te breken.
+   * Selecteren **Verwijderen forceren** ter bevestiging.
+   * Selecteren **Annuleren** om af te breken.
 
 >[!NOTE]
 >

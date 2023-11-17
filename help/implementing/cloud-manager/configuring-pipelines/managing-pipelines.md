@@ -3,9 +3,9 @@ title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ De **Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het g
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Van de **Programmaoverzicht** pagina, tik of klik op de knop **Pijpleidingen** tab naar **Pijpleidingen** venster.
+1. Van de **Programmaoverzicht** pagina, selecteert u de **Pijpleidingen** tab naar **Pijpleidingen** venster.
 
 1. Hier kunt u een lijst van alle pijpleidingen voor het programma zien evenals begin en stop pijpleidingsuitvoering zoals u in **Pijppijplijnkaart**.
 
@@ -57,7 +57,7 @@ De **Activiteiten** toont een volledige lijst van alle pijpleiding uitvoeringen 
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Van de **Programmaoverzicht** pagina, tik of klik op de knop **Activiteit** tab naar **Activiteit** venster.
+1. Van de **Programmaoverzicht** pagina, selecteert u de **Activiteit** tab naar **Activiteit** venster.
 
 1. Hier ziet u een lijst van alle pijpleiding uitvoeringen voor het programma met inbegrip van huidige en historische executies.
 
@@ -87,7 +87,7 @@ Afhankelijk van het type pijplijn, kunt u de looppas kunnen annuleren door de el
 
 1. De **Productiepijpleiding bewerken** of **Niet-productiepijplijn bewerken** wordt weergegeven, zodat u dezelfde details kunt bewerken als u hebt ingevoerd bij het maken van de pijplijn.
 
-   * Zie de volgende pagina&#39;s voor details op alle gebieden en configuratieopties beschikbaar voor pijpleidingen.
+   * Zie de volgende pagina&#39;s voor details over de gebieden en configuratieopties beschikbaar voor pijpleidingen.
       * [Productiepijpleidingen configureren](configuring-production-pipelines.md)
       * [Niet-productiepijpleidingen configureren](configuring-non-production-pipelines.md)
 
@@ -127,7 +127,7 @@ Zodra een pijpleidingsstap volledig is, wordt een samenvatting voorgesteld.
 
 ![Overzicht stap](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-Tik of klik op de knop **Details weergeven** koppeling om de **Duur** sectie. Dit omvat de gemiddelde duur van de pijpleiding op basis van de historische trend voor dat programma.
+Selecteer de **Details weergeven** koppeling om de **Duur** sectie. Dit omvat de gemiddelde duur van de pijpleiding op basis van de historische trend voor dat programma.
 
 ![Duur](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
@@ -145,16 +145,16 @@ Als een pijpleiding in de bevestiging of bouwt beeldfase is kunt u veilig de pij
 
    ![Een pijpleiding annuleren](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
-1. Tik of klik op **Annuleren**.
+1. Selecteren **Annuleren**.
 
 Alternatief kunt u een pijpleiding van de pagina van pijpleidingsdetails annuleren.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Pijpleidingen** van de **Programmaoverzicht** pagina en tik of klik op de pijplijn die u wilt annuleren.
+1. Ga naar de **Pijpleidingen** van de **Programmaoverzicht** pagina en selecteer de pijpleiding u wilt annuleren.
 
 1. U wordt genomen aan de detailspagina van de lopende pijpleiding.
 
    ![Details van pijplijn annuleren](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
-1. Tik of klik op **Annuleren**.
+1. Selecteren **Annuleren**.

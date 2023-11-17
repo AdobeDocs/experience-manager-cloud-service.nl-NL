@@ -1,13 +1,13 @@
 ---
 title: Weergaven van pagina-eigenschappen aanpassen
 description: Leer hoe u pagina-eigenschappen kunt weergeven en bewerken door auteurs.
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
+exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
-
 
 # Weergaven van pagina-eigenschappen aanpassen{#customizing-views-of-page-properties}
 
@@ -70,10 +70,10 @@ Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-cloud/aut
 
 >[!NOTE]
 >
->Wanneer u pagina-eigenschappen configureert voor gebruik met live kopieën, raadpleegt u het document [Het beheer van meerdere sites uitbreiden](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) voor meer informatie .
+>Wanneer het vormen van paginaeigenschappen voor gebruik met levende exemplaren, zie [Het beheer van meerdere sites uitbreiden](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) voor meer informatie .
 
 ## Voorbeeldconfiguratie van pagina-eigenschappen {#sample-configuration-of-page-properties}
 
 In dit voorbeeld ziet u de dialoochtechniek van het dialoogvenster [Samenvoeging van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md) inclusief het gebruik van [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Het illustreert ook het gebruik van beide `cq:showOnCreate` en `cq:hideOnEdit`.
 
-U kunt de code van deze pagina vinden op [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+U kunt de code van deze pagina vinden op [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

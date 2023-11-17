@@ -3,9 +3,9 @@ title: Aan de slag met Edge Delivery Services
 description: Aan de slag met Edge Delivery Services (EDS).
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '870'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Met Edge Delivery Services biedt AEM buitengewone ervaringen die de betrokkenheid en conversies stimuleren. AEM doet dit door het bieden van ervaringen met grote impact die snel bij de auteur en de ontwikkeling zijn. Het is een samenstellbare reeks diensten die een snelle ontwikkelomgeving toelaat waar de auteurs kunnen bijwerken en publiceren snel, en de nieuwe plaatsen worden gelanceerd snel. Als zodanig kunt u met Edge Delivery Services de conversie verbeteren, de kosten verlagen en de snelheid van de inhoud extreem verhogen.
 
-Door gebruik te maken van Edge Delivery kunt u:
+Met Edge Delivery kunt u:
 
 * Maak snelle sites met een perfecte Lighthouse Score en controleer de prestaties van uw site voortdurend via RUM (real user monitoring).
 * Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel AEM ontwerpen als op documenten gebaseerd schrijven. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
@@ -50,7 +50,7 @@ Het is eenvoudig om aan de slag te gaan met Edge Delivery Services. Ga aan de sl
 
 ## Help van Adobe ophalen {#adobe-gethelp}
 
-U kunt met de productteams van de Adobe via uw leverings productsamenwerkingskanaal (zie hieronder voor toegangsdetails) in gesprek gaan om vragen over productgebruik of beste praktijken te beantwoorden. Houd er rekening mee dat er geen SLT (Service Level Terms) aan de gesprekken via het kanaal voor productsamenwerking zijn gekoppeld. Als een productkwestie extra onderzoek en het oplossen van problemen vereist, en reactie SLTs moet ontmoeten, kunt u een steunkaartje na indienen [supportproces](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+U kunt met de productteams van de Adobe via uw leverings productsamenwerkingskanaal (zie hieronder voor toegangsdetails) in gesprek gaan om vragen over productgebruik of beste praktijken te beantwoorden. Er zijn geen Termen van het Niveau van de Dienst (SLT) verbonden aan de gesprekken via het kanaal van de productsamenwerking. Als een productkwestie extra onderzoek en het oplossen van problemen vereist, en reactie SLTs moet ontmoeten, kunt u een steunkaartje na indienen [supportproces](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 Adobe biedt drie kanalen om u te helpen met Edge Delivery Services:
 
@@ -80,7 +80,7 @@ Stappen om een steunkaartje via de Admin Console te registreren:
 
 ## Volgende functies {#whats-next}
 
-Ga aan de slag door het volgende artikel te bekijken: [Edge Delivery Services gebruiken](/help/edge/using.md).
+Aan de slag met controleren [Edge Delivery Services gebruiken](/help/edge/using.md).
 
 ## Nuttige bronnen {#useful-resources}
 

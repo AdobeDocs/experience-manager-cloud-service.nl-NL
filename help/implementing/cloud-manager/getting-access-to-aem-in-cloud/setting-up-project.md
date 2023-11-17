@@ -2,9 +2,9 @@
 title: Projectinstelling
 description: Leer hoe AEM projecten met Maven en de normen worden gebouwd u moet waarnemen wanneer het creëren van uw eigen project.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1399'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Voor een geslaagde ontwikkeling en implementatie met Cloud Manager moeten AEM pr
    * Toegang tot [met wachtwoord beveiligde gegevensbanken voor artefacten](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
 * Implementeerbare inhoudspakketten worden gedetecteerd door te zoeken naar een inhoudspakket `.zip` bestanden, die zich in een map met de naam `target`.
    * Elk aantal submodules kan inhoudspakketten produceren.
-* Inzetbare verzenders worden gedetecteerd door te scannen op `.zip` bestanden (ook opgenomen in de map met de naam `target`), die mappen met naam hebben `conf` en `conf.d`.
+* Inzetbare verzenders worden gedetecteerd door te scannen op `.zip` bestanden (ook opgenomen in de map genaamd `target`), die mappen met naam hebben `conf` en `conf.d`.
 * Als er meer dan één inhoudspakket is, wordt de volgorde van pakketimplementaties niet gegarandeerd.
    * Als een specifieke orde nodig is, kunnen de gebiedsdelen van het inhoudspakket worden gebruikt om de orde te bepalen.
 * Verpakkingen kunnen [overgeslagen](#skipping-content-packages) tijdens de implementatie.
 
 ## GeMaven profielen activeren in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
-In sommige beperkte gevallen moet u het constructieproces mogelijk enigszins variëren wanneer u werkt in Cloud Manager, in tegenstelling tot wanneer u werkt op ontwikkelaarswerkstations. In deze gevallen [Geweven profielen](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) kan worden gebruikt om te definiëren hoe de build in verschillende omgevingen moet verschillen, waaronder Cloud Manager.
+In sommige beperkte gevallen moet u het constructieproces mogelijk enigszins variëren wanneer u werkt in Cloud Manager, in tegenstelling tot wanneer u werkt op ontwikkelaarswerkstations. In deze gevallen: [Geweven profielen](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) kan worden gebruikt om te definiëren hoe de build in verschillende omgevingen moet verschillen, waaronder Cloud Manager.
 
 Als u een Maven-profiel activeert in de ontwerpomgeving van Cloud Manager, moet u zoeken naar de `CM_BUILD` [omgevingsvariabele](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Op dezelfde manier moet een profiel dat alleen buiten de buildomgeving van Cloud Manager moet worden gebruikt, worden uitgevoerd door te zoeken naar de afwezigheid van deze variabele.
 
@@ -72,7 +72,7 @@ Als u bijvoorbeeld alleen een eenvoudig bericht wilt uitvoeren wanneer de build 
 >
 >Als u dit profiel op een werkstation voor ontwikkelaars wilt testen, kunt u het op de opdrachtregel inschakelen (met `-PcmBuild`) of in uw geïntegreerde ontwikkelomgeving (IDE).
 
-En als u een eenvoudig bericht wilt uitvoeren slechts wanneer de bouwstijl buiten de Manager van de Wolk in werking wordt gesteld, zou u dit doen.
+En als u een eenvoudig bericht alleen wilt uitvoeren wanneer de build buiten Cloud Manager wordt uitgevoerd, doet u dit.
 
 ```xml
         <profile>
@@ -110,7 +110,7 @@ En als u een eenvoudig bericht wilt uitvoeren slechts wanneer de bouwstijl buite
 
 >[!NOTE]
 >
->Artefacten van een met wachtwoord beveiligde Maven-opslagplaats mogen alleen zeer voorzichtig worden gebruikt, aangezien code die via dit mechanisme wordt geïmplementeerd momenteel niet door alle [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) geïmplementeerd in de kwaliteitspoort van Cloud Manager. Daarom mag het alleen worden gebruikt in zeldzame gevallen en voor code die niet aan AEM is gekoppeld. Het wordt geadviseerd om de bronnen van Java en de volledige code van de projectbron samen met het binaire getal op te stellen.
+>Artefacten van een met wachtwoord beveiligde Maven-opslagplaats moeten voorzichtig worden gebruikt omdat code die via dit mechanisme wordt geïmplementeerd, momenteel niet wordt uitgevoerd [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) geïmplementeerd in de kwaliteitspoort van Cloud Manager. Daarom mag het alleen worden gebruikt in zeldzame gevallen en voor code die niet aan AEM is gekoppeld. Het wordt geadviseerd om de bronnen van Java en de volledige code van de projectbron samen met het binaire getal op te stellen.
 
 Een met wachtwoord beveiligde Maven-opslagplaats gebruiken in Cloud Manager:
 
@@ -240,7 +240,7 @@ Om dit te doen, vorm maven-assemblage-stop in uw project.
 
 ## Inhoudspakketten worden overgeslagen {#skipping-content-packages}
 
-In Cloud Manager kunnen builds een willekeurig aantal inhoudspakketten produceren. Om diverse redenen is het wellicht wenselijk een inhoudspakket te maken, maar dit niet te implementeren. Een voorbeeld zou kunnen zijn wanneer het bouwen van inhoudspakketten die slechts voor het testen worden gebruikt of die door een andere stap in het bouwstijlproces worden herverpakt. Dat wil zeggen, een subpakket van een ander pakket.
+In Cloud Manager kunnen builds een willekeurig aantal inhoudspakketten produceren. Om diverse redenen is het misschien gewenst om een inhoudspakket te maken, maar dit niet te implementeren. Een voorbeeld zou kunnen zijn wanneer het bouwen van inhoudspakketten die slechts voor het testen worden gebruikt of die door een andere stap in het bouwstijlproces worden herverpakt. Dit is een subpakket van een ander pakket.
 
 Voor deze scenario&#39;s zoekt Cloud Manager naar een eigenschap met de naam `cloudManagerTarget` in de eigenschappen van samengestelde inhoudspakketten. Als deze eigenschap is ingesteld op `none`, wordt het pakket overgeslagen en niet geïmplementeerd.
 
@@ -302,7 +302,7 @@ Het logboek van de stap van de codekwaliteit zal gelijkaardige informatie bevatt
 
 Houd er rekening mee dat uw programma twee ontwikkelingspijplijnen heeft:
 
-* Pijpleiding 1 op tak `foo`
+* Pijpleiding 1 op vertakking `foo`
 * Pijpleiding 2 op vertakking `bar`
 
 Beide vertakkingen zijn op zelfde verbind identiteitskaart
@@ -331,7 +331,7 @@ Indien gewenst, kan het hergebruikgedrag voor specifieke pijpleidingen door de p
 1. Er wordt een nieuwe pijpleiding gemaakt.
 1. De pijpleiding wordt uitgevoerd (uitvoering #1) en de huidige HEAD begaan is `becdddb`. De uitvoering is geslaagd en de resulterende artefacten worden opgeslagen.
 1. De `CM_DISABLE_BUILD_REUSE` variable is set.
-1. De pijpleiding wordt opnieuw uitgevoerd zonder code te veranderen. Hoewel er opgeslagen artefacten verbonden aan zijn `becdddb`, worden zij niet opnieuw gebruikt vanwege de `CM_DISABLE_BUILD_REUSE` variabele.
+1. De pijpleiding wordt opnieuw uitgevoerd zonder code te veranderen. Hoewel er opgeslagen artefacten verbonden aan zijn `becdddb`, worden zij niet opnieuw gebruikt vanwege `CM_DISABLE_BUILD_REUSE` variabele.
 1. De code wordt veranderd en de pijpleiding wordt uitgevoerd. De HEAD commit is nu `f6ac5e6`. De uitvoering is geslaagd en de resulterende artefacten worden opgeslagen.
 1. De `CM_DISABLE_BUILD_REUSE` variabele wordt verwijderd.
 1. De pijpleiding wordt re-uitgevoerd zonder de code te veranderen. Aangezien er opgeslagen artefacten verbonden aan zijn `f6ac5e6`, worden deze artefacten opnieuw gebruikt.

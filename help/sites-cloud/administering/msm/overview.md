@@ -4,9 +4,9 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2702'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Deze pagina biedt een overzicht van het hergebruiken van inhoud met MSM. Op de v
 
 >[!NOTE]
 >
->MSM kan ook voor Activa, met inbegrip van Inhoudsfragmenten worden gebruikt. Zie voor meer informatie [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](/help/assets/reuse-assets-using-msm.md) (alleen beschikbaar via de middelenconsole).
+>MSM kan ook voor Activa, met inbegrip van Inhoudsfragmenten worden gebruikt. Zie [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](/help/assets/reuse-assets-using-msm.md) (alleen beschikbaar via de middelenconsole).
 
 ## Mogelijke scenario&#39;s {#possible-scenarios}
 
@@ -172,7 +172,7 @@ Als inleiding, verstrekt de volgende lijst een overzicht van de belangrijkste te
 
 >[!TIP]
 >
->Zie het document [Het beheer van meerdere sites uitbreiden](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) voor de objectnamen.
+>Zie [Het beheer van meerdere sites uitbreiden](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) voor de objectnamen.
 
 ## Actieve kopieën {#live-copies}
 
@@ -278,7 +278,7 @@ Een rollout is de centrale actie MSM die Levende Kopieën met hun bronnen synchr
 Een rollout-configuratie bepaalt wanneer en hoe een Live Copy wordt gesynchroniseerd met de broninhoud. Een rollout-configuratie bestaat uit een trigger en een of meer synchronisatiehandelingen:
 
 * **Trigger** - Een trigger is een gebeurtenis die ervoor zorgt dat de synchronisatie van een live actie plaatsvindt, zoals de activering van een bronpagina. MSM bepaalt de trekkers die u kunt gebruiken.
-* **Synchronisatiehandelingen** - Er worden synchronisatiehandelingen uitgevoerd op de Live kopie om deze te synchroniseren met de bron. Voorbeelden van handelingen zijn het kopiëren van inhoud, het bestellen van onderliggende knooppunten en het activeren van de pagina Live kopie. MSM biedt een aantal synchronisatiehandelingen.
+* **Synchronisatiehandelingen** - Er worden synchronisatiehandelingen uitgevoerd op de Live kopie om deze te synchroniseren met de bron. Voorbeelden van handelingen zijn het kopiëren van inhoud, het bestellen van onderliggende knooppunten en het activeren van de pagina Live kopie. MSM biedt diverse synchronisatiehandelingen.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ De volgende stappen beschrijven de standaardprocedure voor het gebruiken van MSM
 1. De inhoud van de bronsite ontwikkelen.
 1. Bepaal de rollout configuratie aan gebruik.
 
-   1. MSM [installeert verscheidene rollout configuraties](live-copy-sync-config.md#installed-rollout-configurations) die aan een aantal gebruiksgevallen kunnen voldoen.
+   1. MSM [installeert verscheidene rollout configuraties](live-copy-sync-config.md#installed-rollout-configurations) die aan verschillende gebruiksgevallen kunnen voldoen.
    1. U kunt desgewenst [een rollout-configuratie maken](live-copy-sync-config.md#creating-a-rollout-configuration) indien nodig.
 
 1. Bepaal waar u wilt [Geef de rollout-configuraties op die u wilt gebruiken](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) en configureren naar wens.

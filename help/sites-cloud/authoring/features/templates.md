@@ -2,10 +2,10 @@
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4567'
-ht-degree: 9%
+source-wordcount: '4538'
+ht-degree: 8%
 
 ---
 
@@ -40,7 +40,7 @@ Raadpleeg het document voor ontwikkelaars voor gedetailleerde informatie over ho
 >
 >Een beheerder moet een sjabloonmap configureren in het dialoogvenster **Configuratiebrowser** en pas de juiste machtigingen toe voordat een sjabloonauteur een sjabloon in die map kan maken.
 
-Voordat u begint, is het belangrijk om te bedenken dat voor het maken van een nieuwe sjabloon samenwerking vereist is. Daarom [Rol](#roles) wordt aangegeven voor elke taak. Dit heeft geen invloed op de manier waarop u een sjabloon gebruikt om een pagina te maken, maar het heeft wel invloed op de manier waarop een pagina betrekking heeft op de sjabloon.
+Voordat u begint, is het belangrijk om te bedenken dat voor het maken van een sjabloon samenwerking vereist is. Daarom [Rol](#roles) wordt aangegeven voor elke taak. Dit heeft geen invloed op de manier waarop u een sjabloon gebruikt om een pagina te maken, maar het heeft wel invloed op de manier waarop een pagina betrekking heeft op de sjabloon.
 
 ### Rollen {#roles}
 
@@ -67,7 +67,7 @@ De in dit document beschreven taken worden weergegeven met de rol die verantwoor
 
 ## Sjablonen maken en beheren {#creating-and-managing-templates}
 
-Bij het maken van een nieuwe bewerkbare sjabloon:
+Bij het maken van een bewerkbare sjabloon:
 
 * Gebruik de **Sjabloon** console. Dit is beschikbaar in het dialoogvenster **Algemeen** van de **Gereedschappen** console.
    * Of rechtstreeks bij: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
@@ -89,7 +89,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
 >[!TIP]
 >
->Voer nooit informatie in die u wilt internationaliseren in een sjabloon. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
 >Voor sjabloonelementen zoals kop- en voetteksten die moeten worden gelokaliseerd, gebruikt u de opdracht [lokalisatiefuncties van de kerncomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
@@ -161,11 +161,11 @@ De sjabloonminiatuur definiëren:
 
 1. Bewerk de sjablooneigenschappen.
 1. Kies of u een miniatuur wilt uploaden of wilt dat deze wordt gegenereerd op basis van de sjablooninhoud.
-   * Als u een miniatuur wilt uploaden, klikt u of tikt u op **Afbeelding uploaden**
-   * Als u een miniatuur wilt genereren, klikt u of tikt u op **Voorvertoning genereren**
+   * Als u een miniatuur wilt uploaden, selecteert u **Afbeelding uploaden**
+   * Als u een miniatuur wilt genereren, selecteert u **Voorvertoning genereren**
 1. Voor beide methoden wordt een voorbeeld van de miniatuur weergegeven.
-   * Klik of tik op **Wissen** om een andere afbeelding te uploaden of de miniatuur opnieuw te genereren.
-1. Als u tevreden bent met de miniatuur, klikt u of tikt u op **Opslaan en sluiten**.
+   * Als het niet bevredigend is, selecteert u **Wissen** om een andere afbeelding te uploaden of de miniatuur opnieuw te genereren.
+1. Als u tevreden bent met de miniatuur, selecteert u **Opslaan en sluiten**.
 
 ### Een sjabloon inschakelen en toestaan - Sjabloonauteur {#enabling-and-allowing-a-template-template-author}
 
@@ -184,7 +184,7 @@ Een sjabloon kan worden in- of uitgeschakeld, zodat deze beschikbaar of niet bes
 
 1. In de **Sjabloonconsole** selecteert u de sjabloon.
 1. Selecteren **Inschakelen** of **Uitschakelen** op de werkbalk en nogmaals in het bevestigingsdialoogvenster.
-1. U kunt nu uw sjabloon gebruiken wanneer [een nieuwe pagina maken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), hoewel u waarschijnlijk [de sjabloon bewerken](#editing-templates-template-authors) volgens uw vereisten.
+1. U kunt nu uw sjabloon gebruiken wanneer [een pagina maken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), hoewel u waarschijnlijk [de sjabloon bewerken](#editing-templates-template-authors) volgens uw vereisten.
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ In **Structuur** in deze modus definieert u componenten en inhoud voor de sjablo
 
 ![Paginastructuur van de sjablooneditor](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-Er zijn een aantal acties die u kunt uitvoeren in de modus **Structuur** van de sjablooneditor en een aantal functies om u te helpen:
+Er zijn verschillende acties die u kunt uitvoeren in het dialoogvenster **Structuur** wijze van de malplaatjeredacteur en verscheidene eigenschappen om u te helpen:
 
 #### Componenten toevoegen {#add-components}
 
@@ -360,15 +360,15 @@ De beschikbare eigenschappen zijn afhankelijk van de geselecteerde component. Vo
 
 Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-Onder **Beleid** u kunt een bestaand beleid selecteren om op de component via drop-down toe te passen.
+Onder **Beleid** u kunt een bestaand beleid selecteren om op de component door middel van drop-down toe te passen.
 
 ![Beleid selecteren](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel in het **Beleidstitel** veld.
+Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Geef een nieuwe titel op in het dialoogvenster **Beleidstitel** veld.
 
 ![Beleidsknop toevoegen](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
+Het geselecteerde bestaande beleid in de **Beleid selecteren** de vervolgkeuzelijst kan als nieuw beleid worden gekopieerd gebruikend de exemplaarknoop naast de drop-down lijst. Geef een nieuwe titel op in het dialoogvenster **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
 
 ![De knop Beleid kopiëren](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -395,13 +395,13 @@ Op de **Hoofd** worden de belangrijkste instellingen van de component gedefiniee
 
 Voor een afbeeldingscomponent kunnen bijvoorbeeld de toegestane breedten worden gedefinieerd en kan het laden worden ingeschakeld.
 
-Als een instelling meerdere configuraties toestaat, klikt of tikt u op de knop **Toevoegen** om een andere configuratie toe te voegen.
+Als het plaatsen voor veelvoudige configuraties toestaat, selecteer **Toevoegen** om een andere configuratie toe te voegen.
 
 ![Knop Toevoegen](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Verwijderen** knoop die aan het recht van de configuratie wordt gevestigd.
+Om een configuratie te verwijderen, selecteer **Verwijderen** knoop die aan het recht van de configuratie wordt gevestigd.
 
-Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Verwijderen** knop.
+Om een configuratie te verwijderen, selecteer **Verwijderen** knop.
 
 ![Knop Verwijderen](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -461,9 +461,9 @@ Op de **Toegestane componenten** -tab, definieert u welke componenten beschikbaa
 
 Op de **Standaardcomponenten** , bepaalt u welke componenten automatisch aan bepaalde media types worden geassocieerd zodat wanneer een auteur activa van elementenbrowser sleept, AEM weet met welke component om het te associëren. Merk op dat slechts de componenten met dalingsstreken voor dergelijke configuratie beschikbaar zijn.
 
-Klikken of tikken **Toewijzing toevoegen** om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
+Selecteren **Toewijzing toevoegen** om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
 
-Selecteer een component in de lijst en klik of tik op **Type toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
+Selecteer een component in de lijst en selecteer **Tekst toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
 
 ![Standaardcomponenten, tabblad](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -568,11 +568,11 @@ U kunt een inhoudsbeleid toepassen op de sjabloon of de resulterende pagina&#39;
 
   ![Beleidskiezer](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel in het **Beleidstitel** veld.
+  Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Geef een nieuwe titel op in het dialoogvenster **Beleidstitel** veld.
 
   ![Beleidsknop toevoegen](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
+  Het geselecteerde bestaande beleid in de **Beleid selecteren** de vervolgkeuzelijst kan als nieuw beleid worden gekopieerd gebruikend de exemplaarknoop naast de drop-down lijst. Geef een nieuwe titel op in het dialoogvenster **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
 
   ![De knop Beleid kopiëren](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 

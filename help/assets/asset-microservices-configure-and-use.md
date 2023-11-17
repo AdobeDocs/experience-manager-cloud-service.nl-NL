@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2864'
 ht-degree: 1%
 
 ---
@@ -194,7 +194,7 @@ nabewerkingsworkflows, of [Workflow voor automatisch starten](https://experience
 Een workflowconfiguratie voor na verwerking toevoegen aan [!DNL Experience Manager]Voer de volgende stappen uit:
 
 * Maak een of meer workflowmodellen. Deze aangepaste modellen worden *workflowmodellen voor nabewerking* in deze documentatie. Deze zijn regelmatig [!DNL Experience Manager] workflowmodellen.
-* Voeg de vereiste workflowstappen toe aan deze modellen. Controleer de stappen in de standaardworkflow en voeg alle vereiste standaardstappen toe aan de aangepaste workflow. De stappen worden uitgevoerd op de activa die op een configuratie van het werkschemamodel worden gebaseerd. Als u bijvoorbeeld automatisch slimme tags wilt toepassen bij het uploaden van elementen, voegt u de stap toe aan het aangepaste workflowmodel voor nabewerking.
+* Voeg de vereiste workflowstappen toe aan deze modellen. Controleer de stappen in de standaardworkflow en voeg alle vereiste standaardstappen toe aan de aangepaste workflow. De stappen worden uitgevoerd op de middelen die op een configuratie van het werkschemamodel worden gebaseerd. Als u bijvoorbeeld automatisch slimme tags wilt toepassen bij het uploaden van elementen, voegt u de stap toe aan het aangepaste workflowmodel voor nabewerking.
 * Toevoegen [!UICONTROL DAM Update Asset Workflow Completed Process] stap aan het einde. Als u deze stap toevoegt, weet de Experience Manager wanneer de verwerking eindigt en het element kan worden gemarkeerd als verwerkt, dat wil zeggen *Nieuw* wordt weergegeven op het element.
 * Creeer een configuratie voor de Dienst van de Runner van het Werkschema van de Douane die toestaat om uitvoering van een model van het post-verwerkingswerkschema of door een weg (omslagplaats) of door een regelmatige uitdrukking te vormen.
 

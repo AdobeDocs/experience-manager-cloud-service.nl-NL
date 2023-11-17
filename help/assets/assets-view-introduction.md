@@ -2,13 +2,13 @@
 title: Hoe heeft de weergave van middelen in AEM voordeel?
 description: Meer informatie over de belangrijkste voordelen van de weergave Middelen vindt u in AEM. Adobe, die gebruik maakt van zijn expertise op het gebied van het versterken van marketing en creatieve professionals, introduceert een game veranderende nieuwe gebruikerservaring.
 mini-toc-levels: 3
-source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
 
 ---
-
 
 # De middelenweergave introduceren {#assets-view}
 
@@ -128,9 +128,3 @@ Gebruik de volgende koppelingen om snel aan de slag te gaan met de weergave Midd
 
 * [Mijn werkruimte](/help/assets/my-workspace-assets-view.md)
 * [Aan de slag met de weergave Middelen](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-

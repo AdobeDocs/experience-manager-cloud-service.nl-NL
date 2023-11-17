@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud uit hun productieomgeving kopiëren op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Als u het gereedschap Inhoud kopiëren wilt gebruiken, zijn bepaalde machtiginge
 | Maken en wijzigen [inhoudssets](#create-content-set) | Niet vereist | Vereist |
 | Start of annuleer de [kopiëren van inhoud, proces](#copy-content) | Vereist | Vereist |
 
-Raadpleeg het document voor meer informatie over machtigingen en hoe u deze kunt instellen [AEM as a Cloud Service team en productprofielen.](/help/onboarding/aem-cs-team-product-profiles.md)
+Zie voor meer informatie over machtigingen en hoe u deze kunt instellen [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Een inhoudsset maken {#create-content-set}
 
@@ -57,7 +57,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nad
 
    ![Inhoudssets](assets/content-sets.png)
 
-1. Op de **Details** Geef een naam en een beschrijving voor de inhoudenset op en tik of klik op **Doorgaan**.
+1. Op de **Details** Geef een naam en beschrijving op voor de inhoudenset en selecteer **Doorgaan**.
 
    ![Details van inhoudsset](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nad
 
    1. Klik in de lijst met opgenomen paden op **Subpaden uitsluiten toevoegen** naast het pad dat u wilt beperken.
    1. Voer het subpad in dat u onder het geselecteerde pad wilt uitsluiten.
-   1. Tik of klik op **Pad uitsluiten**.
-   1. Tik of klik op **Subpaden uitsluiten toevoegen** nogmaals om extra paden toe te voegen om deze uit te sluiten.
+   1. Selecteren **Pad uitsluiten**.
+   1. Selecteren **Subpaden uitsluiten toevoegen** nogmaals om extra paden toe te voegen om deze uit te sluiten.
       * Uitgesloten paden moeten relatief zijn ten opzichte van het ingesloten pad.
       * Het aantal uitgesloten paden is niet beperkt.
 
@@ -88,7 +88,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nad
 
    ![Padlijst bewerken](assets/add-content-set-excluded-paths.png)
 
-1. Tik of klik op **Maken** om de inhoudenset te maken.
+1. Selecteren **Maken** om de inhoudenset te maken.
 
 De inhoudenset kan nu worden gebruikt om inhoud tussen omgevingen te kopiëren.
 
@@ -136,7 +136,7 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
 
 1. Indien nodig kunt u ook **Lijsten met toegangsbeheer opnemen** in uw kopieerproces.
 
-1. Tik of klik op **Kopiëren**.
+1. Selecteren **Kopiëren**.
 
 Het kopieerproces wordt gestart. De status van het kopieerproces wordt weerspiegeld in de console voor de geselecteerde inhoudenset.
 

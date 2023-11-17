@@ -2,9 +2,9 @@
 title: Introductie van Universal Editor
 description: Leer hoe de Universele Redacteur wat-u-ziet-is-wat-u-krijgt (WYSIWYG) het uitgeven van om het even welke headless en belangrijke ervaring toelaat. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '925'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Gebruikers denken vaak dat een implementatie zonder kop de auteurs beperkt tot h
 De vereisten voor een implementatie om de Universele Redacteur te gebruiken zijn recht-voorwaarts en steunen het volgende:
 
 * **Elke architectuur** - Server-side rendering, edge-side rendering, client-side rendering, enzovoort.
-* **Willekeurig kader** - Vanilla AEM, of een ander raamwerk van derden zoals React, Next.js, Angular, enz.
+* **Willekeurig kader** - Vanilla AEM, of een ander framework van derden zoals React, Next.js, Angular enzovoort.
 * **Willekeurig hosten** - Kan lokaal worden gehost op AEM of op een extern domein
 
 ### Willekeurige inhoud {#any-content}
@@ -50,7 +50,7 @@ De auteur van een inhoud moet dezelfde krachtige bewerkingservaring hebben als d
 
 Voor de auteur van inhoud gaat de inhoud niet alleen over de informatie in de inhoud, maar ook over de manier waarop deze wordt gerenderd en ontvangen. De inhoud wordt geleverd met extra meta-gegevens en instrumentatieregels, die de Universele Redacteur kan begrijpen en uitgeven met inbegrip van:
 
-* **Lay-out en stijl toepassen** - Door gebruik te maken van een stijlsysteem kunnen de marketingdeskundige en de auteur van de inhoud verschillende stijlen toepassen op de inhoud ervan en verschillende lay-outs maken voor de inhoud, zoals kolommen, carrousels, tabs, accordeons, enz.
+* **Lay-out en stijl toepassen** - Door gebruik te maken van een stijlsysteem kunnen de marketingdeskundige en de auteur van de inhoud verschillende stijlen toepassen op de inhoud ervan en verschillende lay-outs maken voor de inhoud, zoals kolommen, carrousels, tabs, accordeons, enzovoort.
 
 ## Waarde {#value}
 

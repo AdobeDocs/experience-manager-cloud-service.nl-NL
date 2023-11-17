@@ -2,9 +2,9 @@
 title: SPA Inleiding en Analyse
 description: Dit artikel introduceert de concepten van een SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
@@ -207,9 +207,9 @@ de volgende afdeling, [Een SPA laden](#loading-a-spa-application), gaat dieper i
 
 ### Interactie met de SPA Editor {#interaction-with-the-spa-editor}
 
-Met behulp van de voorbeeldtoepassing van WKND SPA Project is het duidelijk hoe de app zich gedraagt en wordt geladen wanneer deze wordt gepubliceerd, waarbij gebruik wordt gemaakt van inhoudsservices voor het leveren van JSON-inhoud en het asynchroon laden van bronnen.
+Met behulp van de voorbeeldtoepassing WKND SPA Project is het duidelijk hoe de app zich gedraagt en wordt geladen wanneer deze wordt gepubliceerd, met behulp van inhoudsservices voor het leveren van JSON-inhoud en het asynchroon laden van bronnen.
 
-Voor de auteur van de inhoud is het maken van inhoud met een SPA-editor bovendien naadloos in AEM.
+Voor de auteur van de inhoud is het maken van inhoud met een SPA-editor ook naadloos in AEM.
 
 In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur toestaat om componenten binnen de SPA met AEM componenten te verbinden en deze naadloze het uitgeven ervaring te bereiken.
 
@@ -229,7 +229,7 @@ In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur to
 
    Met dit pad kunt u het contextconfiguratieobject van elke component ophalen en koppelen.
 
-   Dit is het enige prijsverhogingsattribuut dat voor de redacteur wordt vereist om dit als editable component binnen de SPA te erkennen. Op basis van dit kenmerk bepaalt de SPA Editor welke bewerkbare configuratie aan de component is gekoppeld, zodat het juiste frame, de juiste werkbalk, enzovoort. is geladen.
+   Dit is het enige prijsverhogingsattribuut dat voor de redacteur wordt vereist om dit als editable component binnen de SPA te erkennen. Gebaseerd op dit attribuut, zal de SPA Redacteur bepalen welke editable configuratie met de component wordt geassocieerd, zodat het correcte kader, de toolbar, etc. wordt geladen.
 
    Bepaalde specifieke klassenamen worden ook toegevoegd voor het markeren van plaatsaanduidingen en voor het slepen en neerzetten van elementen.
 
@@ -241,7 +241,7 @@ In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur to
 
 ## Hoofdletters en headless in AEM {#headful-headless}
 
-SPA kunnen worden ingeschakeld met flexibele integratieniveaus binnen AEM, met inbegrip van SPA die buiten AEM zijn ontwikkeld en onderhouden. Bovendien, kan SPA binnen AEM worden gebruikt terwijl ook het gebruiken van AEM om inhoud aan extra eindpunten zonder oprecht te leveren.
+SPA kunnen worden ingeschakeld met flexibele integratieniveaus binnen AEM, met inbegrip van SPA die buiten AEM zijn ontwikkeld en onderhouden. Ook, kan SPA binnen AEM worden gebruikt terwijl ook het gebruiken van AEM om inhoud aan extra eindpunten zonder oprecht te leveren.
 
 >[!TIP]
 >

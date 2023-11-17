@@ -3,9 +3,9 @@ title: GraphiQL IDE gebruiken in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ U kunt een nieuwe vraag in werking stellen onmiddellijk, of u kunt een voortgeze
 
 In beide gevallen is de query die in het editorpaneel wordt weergegeven, de query die wordt uitgevoerd wanneer u een van de volgende twee doet:
 
-* klikken/tikken op de knop **Query uitvoeren** pictogram
+* selecteren op de **Query uitvoeren** pictogram
 * de toetsenbordcombinatie gebruiken `Control-Enter`
 
 ## Query-variabelen {#query-variables}
@@ -99,7 +99,7 @@ Bijvoorbeeld:
 
 >[!NOTE]
 >
->Zie voor meer informatie [Door uw doorlopende query&#39;s in cache te plaatsen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Zie [Door uw doorlopende query&#39;s in cache te plaatsen](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

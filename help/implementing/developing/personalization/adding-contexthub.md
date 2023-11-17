@@ -2,20 +2,20 @@
 title: ContextHub toevoegen aan Pagina's en Toegang tot Sporen
 description: Voeg ContextHub aan uw pagina's toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
 
 # ContextHub toevoegen aan Pagina&#39;s en Toegang tot Sporen {#adding-contexthub-to-pages-and-accessing-stores}
 
-Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te laten en met de bibliotheken van JavaScript te verbinden ContextHub.
+Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub.
 
 De JavaScript-API van ContextHub biedt toegang tot de contextgegevens die door ContextHub worden beheerd. Deze pagina beschrijft kort de belangrijkste eigenschappen van API voor de toegang tot van en het manipuleren van contextgegevens. Volg de koppelingen naar de API-naslagdocumentatie voor gedetailleerde informatie en codevoorbeelden.
 
-## ContextHub toevoegen aan een component Page {#adding-contexthub-to-a-page-component}
+## ContextHub toevoegen aan een paginacomponent {#adding-contexthub-to-a-page-component}
 
 Om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub, omvat `contexthub` in de `head` van uw pagina. De HTML-code voor uw paginacomponent moet op het volgende voorbeeld lijken:
 
@@ -34,7 +34,7 @@ De opslag van ContextHub van het gebruik om contextgegevens voort te zetten. Con
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Alle winkeltypen zijn extensies van de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) klasse. Voor informatie over het maken van een nieuw winkeltype raadpleegt u [Aangepaste winkels maken](extending-contexthub.md#creating-custom-store-candidates). Voor informatie over de types van steekproefopslag, zie [Voorbeeld van ContextHub Store-kandidaten](sample-stores.md).
+Alle winkeltypen zijn extensies van de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) klasse. Voor informatie over het maken van een winkeltype raadpleegt u [Aangepaste winkels maken](extending-contexthub.md#creating-custom-store-candidates). Voor informatie over de types van steekproefopslag, zie [Voorbeeld van ContextHub Store-kandidaten](sample-stores.md).
 
 ### Persistentiemodi {#persistence-modes}
 
@@ -85,7 +85,7 @@ De boomstructuur bepaalt gegevenspunten in de opslag als sleutel/waardeparen. In
 
 ContextHub biedt de [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) klasse voor het bewerken van JavaScript-objecten. Gebruik de functies van deze klasse voor het bewerken van JavaScript-objecten voordat u deze toevoegt aan een winkel of nadat u ze hebt opgehaald uit een winkel.
 
-Daarnaast worden de [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) klasse biedt functies voor het serieel ordenen van objecten op tekenreeksen en het ongedaan maken van tekenreeksen op objecten. Gebruik deze klasse voor het verwerken van JSON-gegevens ter ondersteuning van browsers die zelf geen `JSON.parse` en `JSON.stringify` functies.
+Ook de [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) klasse biedt functies voor het serieel ordenen van objecten op tekenreeksen en het ongedaan maken van tekenreeksen op objecten. Gebruik deze klasse voor het verwerken van JSON-gegevens ter ondersteuning van browsers die zelf geen `JSON.parse` en `JSON.stringify` functies.
 
 ## Interactief werken met ContextHub-winkels {#interacting-with-contexthub-stores}
 
@@ -113,7 +113,7 @@ Merk op dat de kandidaten van de douaneopslag extra functies kunnen bepalen die 
 
 ### ContextHub Event {#contexthub-eventing}
 
-ContextHub omvat een gebeurteniskader dat u toelaat om automatisch te reageren om gebeurtenissen op te slaan. Elk winkelobject bevat een [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object dat beschikbaar is als de opslagruimte [`eventing`](contexthub-api.md#eventing) eigenschap. Gebruik de [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) of [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) om een JavaScript-functie aan een store-gebeurtenis te binden.
+ContextHub omvat een gebeurteniskader dat u toelaat om automatisch te reageren om gebeurtenissen op te slaan. Elk winkelobject bevat een [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object dat beschikbaar is als de opslagruimte [`eventing`](contexthub-api.md#eventing) eigenschap. Gebruik de [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) of [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) functie om een JavaScript-functie te binden aan een store-gebeurtenis.
 
 ## Contexthub gebruiken om cookies te manipuleren {#using-context-hub-to-manipulate-cookies}
 
@@ -143,7 +143,7 @@ De regels die worden gebruikt om deze segmenten op te lossen zijn als volgt same
 
 ## Foutopsporing in ContextHub {#debugging-contexthub}
 
-Er zijn een aantal opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [Het vormen ContextHub voor meer informatie.](configuring-contexthub.md#logging-debug-messages-for-contexthub)
+Er zijn verscheidene opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [Het vormen ContextHub voor meer informatie.](configuring-contexthub.md#logging-debug-messages-for-contexthub)
 
 ## Zie een Overzicht van het Kader ContextHub {#see-an-overview-of-the-contexthub-framework}
 

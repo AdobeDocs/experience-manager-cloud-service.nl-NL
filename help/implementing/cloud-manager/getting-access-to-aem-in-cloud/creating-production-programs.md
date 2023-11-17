@@ -2,9 +2,9 @@
 title: Productieprogramma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Ga als volgt te werk om een productieprogramma te maken.
 
    ![Programmawizard maken](assets/create-production-program.png)
 
-1. U kunt desgewenst een afbeelding aan het programma toevoegen door een afbeeldingsbestand naar het **Een programmaafbeelding toevoegen** Selecteer een afbeelding in een bestandenbrowser of klik erop. Tik of klik op **Doorgaan**.
+1. U kunt desgewenst een afbeelding aan het programma toevoegen door een afbeeldingsbestand naar het **Een programmaafbeelding toevoegen** Selecteer een afbeelding in een bestandenbrowser of klik erop. Selecteren **Doorgaan**.
 
-1. Als u over de nodige rechten beschikt, **Beveiliging** wordt weergegeven en krijgt de optie om **HIPAA** en/of **WAF-DDOS-beveiliging** voor uw productieprogramma. Indien vereist voor het programma dat u maakt, controleert u de toepasselijke optie(s) en tikt u op of klikt u op **Doorgaan**.
+1. Als u over de nodige rechten beschikt, **Beveiliging** wordt weergegeven en krijgt de optie om **HIPAA** en/of **WAF-DDOS-beveiliging** voor uw productieprogramma. Indien vereist voor het programma dat u maakt, controleert u de toepasselijke optie(s) en selecteert u **Doorgaan**.
 
    * HIPAA kan niet worden ingeschakeld of uitgeschakeld na het maken van het programma.
       * [Meer informatie](https://www.adobe.com/go/hipaa-ready) over de HIPAA-gereed implementatie van de oplossing van Adobe.

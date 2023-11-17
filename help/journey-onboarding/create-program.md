@@ -3,9 +3,9 @@ title: Een programma maken
 description: Leer hoe u Cloud Manager gebruikt om uw eerste programma te maken.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Omdat ze verschillende doelen dienen, hebben de verschillende omgevingen verschi
 
    ![Openingspagina van Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. Selecteer in de wizard Programma maken de optie **Een sandbox instellen** Geef vervolgens een naam voor het programma op en tik of klik op **Doorgaan**.
+1. Selecteer in de wizard Programma maken de optie **Een sandbox instellen** Geef vervolgens een naam voor het programma op en selecteer **Doorgaan**.
 
    ![Programma-type maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 

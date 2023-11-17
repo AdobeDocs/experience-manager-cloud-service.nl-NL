@@ -4,9 +4,9 @@ description: Leer hoe vertaalregels inhoud identificeren die moet worden vertaal
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De in dit document beschreven vertaalregels zijn alleen van toepassing op inhoud
 
 Als de **Velden voor inhoudsmodellen inschakelen voor vertaling** -optie is actief, AEM gebruikt de optie **Vertaalbaar** veld op [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) om te bepalen of het veld moet worden vertaald, worden automatisch vertaalregels vastgesteld. Deze optie vervangt de vertaalregels die u hebt gemaakt en vereist geen interventie of extra stappen.
 
-Als u vertaalregels wilt gebruiken voor het vertalen van uw inhoudsfragmenten, **Velden voor inhoudsmodellen inschakelen voor vertaling** Deze optie in de configuratie van het vertaalintegratieframework moet worden uitgeschakeld en u moet de onderstaande stappen volgen om uw regels te maken.
+Als u vertaalregels wilt gebruiken voor het vertalen van uw Content Fragments, **Velden voor inhoudsmodellen inschakelen voor vertaling** Deze optie in de configuratie van het vertaalintegratieframework moet worden uitgeschakeld en u moet de onderstaande stappen volgen om uw regels te maken.
 
 ## Overzicht {#overview}
 
@@ -167,7 +167,7 @@ In de interface met vertaalregels kunt u:
 
    ![Vertaalcontext toevoegen](../assets/add-translation-context.png)
 
-1. Gebruik de padbrowser om de vereiste context te selecteren en tik op de knop **Bevestigen** op te slaan.
+1. Gebruik de padbrowser om de vereiste context te selecteren en selecteer de **Bevestigen** op te slaan.
 
    ![Context selecteren](../assets/select-context.png)
 

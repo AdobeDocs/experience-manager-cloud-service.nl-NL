@@ -4,9 +4,9 @@ description: Leer over de steun van AEM as a Cloud Service voor integratie met A
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '173'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Leer over de steun van AEM as a Cloud Service voor integratie met Adobe Campaign
 
 ## Integreren met Adobe Campaign Classic {#acc}
 
-Er zijn een aantal Adobe Campaign Classic (ACC)-versies. De ondersteuning voor integratie met AEM as a Cloud Service is afhankelijk van de ACC-versie die u hebt geïmplementeerd.
+Er zijn verschillende Adobe Campaign Classic-versies (ACC). De ondersteuning voor integratie met AEM as a Cloud Service is afhankelijk van de ACC-versie die u hebt geïmplementeerd.
 
 | ACC-versie | Integratie met AEMaaCS |
 |---|---|

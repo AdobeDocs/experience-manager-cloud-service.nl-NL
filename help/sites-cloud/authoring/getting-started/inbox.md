@@ -2,9 +2,9 @@
 title: Uw inbox
 description: Leer hoe u de meldingen in uw Postvak IN kunt gebruiken om uw taken te beheren.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '910'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ U kunt meldingen ontvangen van verschillende AEM, waaronder workflows en project
       * Dit is het product van de workflow **Deelnemer** stappen.
    * Items mislukken, zodat beheerders de mislukte stap opnieuw kunnen proberen
 
-U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en actie kunt ondernemen.
+U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en er actie op kunt ondernemen.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoo
 
 U opent als volgt het AEM-vak:
 
-1. Klik/tik op de indicator in de werkbalk.
+1. Selecteer de indicator in de toolbar.
 
 1. Selecteer **Alles bekijken**. De **AEM Inbox** wordt geopend. In de inbox ziet u items uit workflows, projecten en taken.
 1. De standaardweergave is [Lijstweergave](#inbox-list-view), maar u kunt ook schakelen naar [Kalenderweergave](#inbox-calendar-view). Dit gebeurt met de weergavekiezer (werkbalk, rechtsboven).

@@ -2,7 +2,7 @@
 title: Weergaven maken en beheren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u weergaven in as a Cloud Service schermen maakt en beheert.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 2%
@@ -118,7 +118,7 @@ U kunt inhoud naar de nieuwe mappen verplaatsen om de weergaven beter te organis
 
 ![afbeelding](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Opmerking**: De map moet worden geselecteerd in de omslagside rail. Daarnaast moet in de navigatie met de breadcrumb de huidige mapnaam worden weergegeven naast **Weergaven**.
+**Opmerking**: De map moet worden geselecteerd in de omslagside rail. De navigatie breadcrumb moet ook de huidige mapnaam weergeven naast **Weergaven**.
 
 ## Inhoud uit een map verwijderen {#delete-folder}
 

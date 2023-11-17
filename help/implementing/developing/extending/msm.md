@@ -2,9 +2,9 @@
 title: Het beheer van meerdere sites uitbreiden
 description: Leer hoe u de functionaliteit van beheer voor meerdere sites uitbreidt.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2435'
+source-wordcount: '2425'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Bijvoorbeeld een `LiveAction` moet de naam van de auteur van de blauwdruk opslaa
 
 De parameter van [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) methode is een `Resource` object. Dit `Resource` object staat voor `cq:LiveSyncAction` knoop voor deze levende actie in de rollout configuratie.
 
-Zie het document [Een rollout-configuratie maken](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) voor meer informatie .
+Zie [Een rollout-configuratie maken](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) voor meer informatie .
 
 Zoals gebruikelijk wanneer het gebruiken van een configuratieknoop, zou u het aan een moeten aanpassen `ValueMap` object:
 
@@ -136,7 +136,7 @@ De volgende objecten worden opgegeven als parameters van de `execute` van de `Li
    * De `autoSave` waarde geeft aan of uw `LiveAction` moeten wijzigingen opslaan die in de repository zijn aangebracht
    * De `reset` waarde geeft de terugzetmodus aan.
 
-Met deze objecten kunt u alle informatie over de `LiveCopy`. U kunt ook de opdracht `Resource` te verkrijgen objecten `ResourceResolver`, `Session`, en `Node` objecten. Deze objecten zijn handig voor het bewerken van inhoud in opslagruimten:
+Via deze objecten kunt u informatie opvragen over de `LiveCopy`. U kunt ook de opdracht `Resource` te verkrijgen objecten `ResourceResolver`, `Session`, en `Node` objecten. Deze objecten zijn handig voor het bewerken van inhoud in opslagruimten:
 
 In de eerste regel van de volgende code is de bron de `Resource` object van de bronpagina:
 
@@ -349,7 +349,7 @@ Afhankelijkheden toevoegen zodat de compiler Eclipse naar de klassen kan verwijz
 
 Het volgende `LiveActionFactory` klasse implementeert een klasse `LiveAction` die berichten over de bron en doelpagina&#39;s registreert, en kopieert `cq:lastModifiedBy` eigenschap van het bronknooppunt naar het doelknooppunt. De naam van de live actie is `exampleLiveAction`.
 
-1. In de Ontdekkingsreiziger van het Project van de Verduistering, klik met de rechtermuisknop aan `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` verpakken en klikken **Nieuw** -> **Klasse**.
+1. In de Ontdekkingsreiziger van het Project van de Verduistering, klik met de rechtermuisknop aan `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` verpakken en klikken **Nieuw** > **Klasse**.
 
 1. Voor de **Naam**, enter `ExampleLiveActionFactory` en klik vervolgens op **Voltooien**.
 
@@ -617,7 +617,7 @@ Daarna moet u ervoor zorgen dat:
 * E-mailadres contactpersoon:
 
    * Is uitgesloten van de opgerolde eigenschappen.
-   * Zie het document [Synchronisatie van actieve kopie configureren](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) voor meer informatie .
+   * Zie [Synchronisatie van actieve kopie configureren](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) voor meer informatie .
 
 * Belangrijke visuele stijl:
 

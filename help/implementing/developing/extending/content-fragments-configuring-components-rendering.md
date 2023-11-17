@@ -2,9 +2,9 @@
 title: Contentfragmenten die componenten voor rendering configureren
 description: Contentfragmenten die componenten voor rendering configureren
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '521'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ Deze informatie is vereist wanneer:
 * U moet uw eigen op fragmenten gebaseerde component voor inhoudsfragmenten implementeren,
 * We moeten gebruik maken van de geavanceerde services.
 
-U wordt aangeraden de Core Components (Basiscomponenten) te gebruiken.
+Adobe raadt u aan de Core Components (Basiscomponenten) te gebruiken.
 
 >[!CAUTION]
 >
@@ -73,22 +73,22 @@ De configuratie OSGi is:
   <tr>
    <td><strong>Het type Resource</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>Het type bron dat moet worden geregistreerd; bijvoorbeeld: <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>Het brontype dat moet worden geregistreerd, bijvoorbeeld <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Verwijzing, eigenschap</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>De naam van de eigenschap die de verwijzing naar het fragment bevat; bijvoorbeeld: <code>fragmentPath</code> of <code>fileReference</code></td>
+   <td>De naam van de eigenschap die de verwijzing naar het fragment bevat, bijvoorbeeld <code>fragmentPath</code> of <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Element(en), eigenschap</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>De naam van de eigenschap die de naam of namen bevat van het element of de elementen die moeten worden gerenderd; bijvoorbeeld:<code>elementName</code></td>
+   <td>De naam van de eigenschap die de naam/namen bevat van het element/de elementen die moeten worden gerenderd, bijvoorbeeld<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Variatie, eigenschap</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>De naam van de eigenschap die de naam bevat van de wijziging die moet worden gerenderd; bijvoorbeeld:<code>variationName</code></td>
+   <td>De naam van de eigenschap die de naam bevat van de variatie die moet worden gerenderd, bijvoorbeeld<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
@@ -107,8 +107,8 @@ Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde co
    <td><code>paragraphScope</code></td>
    <td><p>Een tekenreekseigenschap die definieert hoe alinea's moeten worden uitgevoerd als ze zich in <em>rendermodus voor één element</em>.</p> <p>Waarden:</p>
     <ul>
-     <li><code>all</code> : om alle alinea's te renderen</li>
-     <li><code>range</code> : om het bereik van alinea's te bepalen dat wordt verschaft door <code>paragraphRange</code></li>
+     <li><code>all</code> : alle alinea's renderen</li>
+     <li><code>range</code> : voor het weergeven van het bereik van alinea's die worden geleverd door <code>paragraphRange</code></li>
     </ul> </td>
   </tr>
   <tr>

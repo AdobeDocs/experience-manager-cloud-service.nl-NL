@@ -2,9 +2,9 @@
 title: Stijlsysteem
 description: Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1317'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Dit elimineert de behoefte om een douanecomponent voor elke stijl te ontwikkelen
 
 ## Hoofdletters gebruiken {#use-case}
 
-De auteurs van het malplaatje vergen niet alleen de capaciteit om te vormen hoe de componenten voor de inhoudsauteurs functioneren, maar ook om een aantal alternatieve visuele variaties van een component te vormen.
+De auteurs van het malplaatje vergen niet alleen de capaciteit om te vormen hoe de componenten voor de inhoudsauteurs functioneren, maar ook om verscheidene alternatieve visuele variaties van een component te vormen.
 
 Op dezelfde manier hebben inhoudsauteurs niet alleen de mogelijkheid nodig om de inhoud te structureren en te rangschikken, maar ook om te selecteren hoe de inhoud visueel wordt weergegeven.
 
@@ -73,7 +73,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
    ![Stijlsysteem voor de auteur](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Tik of klik op de knop **Stijlen** op de werkbalk van de **Lijst** om het stijlmenu te openen en de weergave van de component te wijzigen.
+1. Selecteer de **Stijlen** op de werkbalk van de **Lijst** om het stijlmenu te openen en de weergave van de component te wijzigen.
 
    ![Stijlen selecteren](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 ### Als sjabloonauteur {#as-a-template-author}
 
-1. Tijdens het bewerken van de hoofdpagina voor de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, bewerkt u de sjabloon van de pagina via **Paginagegevens -> Sjabloon bewerken**.
+1. Tijdens het bewerken van de hoofdpagina voor de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, bewerkt u de sjabloon van de pagina via **Paginagegevens > Sjabloon bewerken**.
 
    ![Sjabloon bewerken](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -159,4 +159,4 @@ Definieer geen elementnamen voor stijlen die kunnen worden gecombineerd. Wanneer
 
 Deze mogelijkheid om stijlnamen te definiëren is handig voor algemene componenten, zoals de container van de layout of de component Content Fragment, zodat ze een extra betekenis krijgen.
 
-Zo kan een container voor lay-out bijvoorbeeld semantiek krijgen `<main>`, `<aside>`, `<nav>`, enz.
+Zo kan een container voor lay-out bijvoorbeeld semantiek krijgen `<main>`, `<aside>`, `<nav>`, enzovoort.

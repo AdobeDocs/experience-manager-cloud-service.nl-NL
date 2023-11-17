@@ -2,9 +2,9 @@
 title: JavaScript API-naslaggids voor ContextHub
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4620'
+source-wordcount: '4612'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ De volgende lijst maakt een lijst van de namengebeurtenissen die voor Winkels Co
 | `ContextHub.Constants.EVENT_STORE_REGISTERED` | Wordt geactiveerd wanneer een winkel is geregistreerd | `store-registered` |
 | `ContextHub.Constants.EVENT_STORE_READY` | Geeft aan dat winkels klaar zijn om te werken. Het wordt teweeggebracht onmiddellijk na registratie, behalve JSONP slaat op, waar het in brand wordt gestoken wanneer het gegeven wordt opgehaald). | `store-ready` |
 | `ContextHub.Constants.EVENT_STORE_UPDATED` | Wordt geactiveerd wanneer een winkel de persistentie bijwerkt | `store-updated` |
-| `ContextHub.Constants.PERSISTENCE_CONTAINER_NAME` | Naam container voor persistentie | `ContextHubPersistence` |
+| `ContextHub.Constants.PERSISTENCE_CONTAINER_NAME` | Naam van container voor persistentie | `ContextHubPersistence` |
 | `ContextHub.Constants.SERVICE_RAW_RESPONSE_KEY` | Hiermee wordt de specifieke naam van de persistentiesleutel opgeslagen waar het Raw JSON-resultaat wordt opgeslagen | `/_/raw-response` |
 | `ContextHub.Constants.SERVICE_RESPONSE_TIME_KEY` | Hiermee wordt een specifieke tijdstempel opgeslagen die aangeeft wanneer JSON-gegevens zijn opgehaald | `/_/response-time` |
 | `ContextHub.Constants.SERVICE_LAST_URL_KEY` | Hiermee wordt de specifieke URL van de JSON-service opgeslagen die tijdens de laatste aanroep is gebruikt | `/_/url` |
@@ -143,7 +143,7 @@ De basisklasse voor opslag ContextHub.
 
 #### voorkomen {#eventing}
 
-A [`ContextHub.Utils.Eventing`](#contexthub-utils-eventing) object. Gebruik dit object voor het binden van functies om gebeurtenissen op te slaan. Voor informatie over de standaardwaarde en initialisatie raadpleegt u [`init(name,config)`](#init-name-config).
+A [`ContextHub.Utils.Eventing`](#contexthub-utils-eventing) object. Gebruik dit object voor het binden van functies om gebeurtenissen op te slaan. Zie voor informatie over de standaardwaarde en initialisatie [`init(name,config)`](#init-name-config).
 
 #### name {#name}
 
@@ -151,7 +151,7 @@ De naam van de winkel.
 
 #### volharding {#persistence}
 
-A `ContextHub.Utils.Persistence` object. Voor informatie over de standaardwaarde en initialisatie raadpleegt u [`init(name,config)`](#init-name-config).
+A `ContextHub.Utils.Persistence` object. Zie voor informatie over de standaardwaarde en initialisatie [`init(name,config)`](#init-name-config).
 
 ### Functies (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
@@ -195,7 +195,7 @@ A `boolean` waarde:
 
 #### noticeReadiness() {#announcereadiness}
 
-Hiermee wordt het dialoogvenster `ready` voor deze winkel. Deze functie heeft geen parameters en retourneert geen waarde.
+Hiermee activeert u de `ready` voor deze winkel. Deze functie heeft geen parameters en retourneert geen waarde.
 
 #### clean() {#clean}
 
@@ -233,7 +233,7 @@ Haalt de verwijzingen uit de opslag op.
 
 Een array die naar toetsen verwijst als indexen voor de toetsen waarnaar wordt verwezen:
 
-* Verwijzen naar sleutels komt overeen met de `key` parameter van de `addReference` functie.
+* Referentiesleutels komen overeen met de `key` parameter van de `addReference` functie.
 * Sleutels waarnaar wordt verwezen, komen overeen met de `anotherKey` parameter van de `addReference` functie.
 
 #### getTree(includeInternal) {#gettree-includeinternals}
@@ -273,8 +273,8 @@ Bepaalt of de gebeurtenis voor deze opslag wordt gepauzeerd.
 
 Een Booleaanse waarde:
 
-* `true`: De gebeurtenis wordt gepauzeerd zodat geen gebeurtenissen voor deze opslag worden teweeggebracht.
-* `false`: De gebeurtenis wordt niet gepauzeerd zodat de gebeurtenissen voor deze opslag worden teweeggebracht.
+* `true`: De gebeurtenis wordt gepauzeerd zodat er geen gebeurtenissen worden geactiveerd voor deze opslag.
+* `false`: De gebeurtenis wordt niet gepauzeerd zodat gebeurtenissen voor deze opslag worden teweeggebracht.
 
 #### pauseEvent() {#pauseeventing}
 
@@ -292,7 +292,7 @@ U kunt desgewenst het activeren van de `data` gebeurtenis.
 
 * **`key`:** (String) De naam van de toets die moet worden verwijderd.
 * **`options`:** (Object) Een object met opties. De volgende objecteigenschappen zijn geldig:
-   * stil: Een waarde van `true` voorkomt dat de `data` gebeurtenis. De standaardwaarde is `false`.
+   * silent: een waarde van `true` voorkomt dat de `data` gebeurtenis. De standaardwaarde is `false`.
 
 ##### Retourneert {#returns-removeitem}
 
@@ -307,7 +307,7 @@ Hiermee verwijdert u een verwijzing uit de winkel.
 
 ##### Parameters {#parameters-removereference}
 
-* **`key`:** De belangrijkste verwijzing om te verwijderen. Deze parameter komt overeen met `key` parameter van de `addReference` functie.
+* **`key`:** De belangrijkste verwijzing om te verwijderen. Deze parameter komt overeen met de `key` parameter van de `addReference` functie.
 
 ##### Retourneert {#returns-removereference}
 
@@ -332,7 +332,7 @@ Hiermee wordt een toets waarnaar wordt verwezen, opgehaald. U kunt desgewenst he
 
 ##### Parameters {#parameters-resolvereference}
 
-* **`key`:** (String) De sleutel waarvoor de verwijzing moet worden opgelost. Dit `key` parameter komt overeen met `key` parameter van de `addReference` functie.
+* **`key`:** (String) De sleutel waarvoor de verwijzing moet worden opgelost. Dit `key` parameter komt overeen met de `key` parameter van de `addReference` functie.
 * **`retry`:** (Number) Het aantal herhalingen dat moet worden gebruikt.
 
 ##### Retourneert {#returns-resolvereference}
@@ -347,7 +347,7 @@ Hervat de gebeurtenis voor deze opslag zodat de gebeurtenissen worden teweeggebr
 
 Voegt een sleutel/waardepaar aan de opslag toe.
 
-Hiermee wordt het dialoogvenster `data` alleen als de waarde voor de toets afwijkt van de waarde die momenteel voor de toets is opgeslagen. U kunt desgewenst voorkomen dat het `data` gebeurtenis.
+Hiermee activeert u de `data` alleen als de waarde voor de toets afwijkt van de waarde die momenteel voor de toets is opgeslagen. U kunt desgewenst voorkomen dat het `data` gebeurtenis.
 
 De gebeurtenisgegevens omvatten de opslagnaam, de sleutel, de vorige waarde, de nieuwe waarde en het actietype van `set`.
 
@@ -369,7 +369,7 @@ A `boolean` waarde:
 
 Een opslag die JSON-gegevens bevat. De gegevens worden teruggewonnen van de externe dienst JSONP, of naar keuze van de dienst die JSON- gegevens terugkeert. Geef de servicedetails op met de [`init`](#init-name-config) wanneer u een instantie van deze klasse maakt.
 
-De opslag gebruikt persistentie in het geheugen (variabele JavaScript). De gegevens van de opslag zijn beschikbaar slechts tijdens het leven van de pagina.
+De opslag gebruikt persistentie in het geheugen (JavaScript-variabele). De gegevens van de opslag zijn beschikbaar slechts tijdens het leven van de pagina.
 
 ContextHub.Store.JSONPStore extends [ContextHub.Store.Core](#contexthub-store-core) en neemt de functies van die klasse over.
 
@@ -382,11 +382,11 @@ Vormt de details voor het verbinden met de dienst JSONP die dit voorwerp gebruik
 ##### Parameters {#parameters-configureservice}
 
 * **`serviceConfig`:** Een object dat de volgende eigenschappen bevat:
-   * `host`: (Tekenreeks) De servernaam of het IP-adres.
-   * `jsonp`: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de callback: &quot;ContextHub.Callbacks.*Object.name*}-object wordt toegevoegd aan het object service.params.
+   * `host`: (String) De servernaam of het IP-adres.
+   * `jsonp`: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Wanneer waar, {callback: &quot;ContextHub.Callbacks.*Object.name*}-object wordt toegevoegd aan het object service.params.
    * `params`: (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
-   * `path`: (Tekenreeks) Het pad naar de service.
-   * `port`: (Aantal) het havenaantal van de dienst.
+   * `path`: (String) Het pad naar de service.
+   * `port`: (Number) Het poortnummer van de service.
    * `secure`: (String of Boolean) Bepaalt het protocol dat voor de service-URL moet worden gebruikt:
       * `auto`: //
       * `true`: https://
@@ -403,14 +403,14 @@ Een object dat de onbewerkte reactie vertegenwoordigt.
 
 #### getServiceDetails() {#getservicedetails}
 
-Hiermee wordt het serviceobject voor dit ContextHub.Store.JSONPStore-object opgehaald. Het serviceobject bevat alle informatie die nodig is om de service-URL te maken.
+Hiermee wordt het serviceobject voor dit ContextHub.Store.JSONPStore-object opgehaald. Het serviceobject bevat de informatie die nodig is om de service-URL te maken.
 
 ##### Retourneert {#returns-getservicedetails}
 
 Een object met de volgende eigenschappen:
 
-* **`host`:** (Tekenreeks) De servernaam of het IP-adres.
-* **`jsonp`:** (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de callback: &quot;ContextHub.Callbacks.*Object.name*}-object wordt toegevoegd aan het object service.params.
+* **`host`:** (String) De servernaam of het IP-adres.
+* **`jsonp`:** (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Wanneer waar, {callback: &quot;ContextHub.Callbacks.*Object.name*}-object wordt toegevoegd aan het object service.params.
 * **`params`:** (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
 * **`path`:** (Tekenreeks) Het pad naar de service.
 * **`port`:** (Aantal) het havenaantal van de dienst.
@@ -443,11 +443,11 @@ initialiseert de `ContextHub.Store.JSONPStore` object.
    * `eventing`: Het object ContextHub.Utils.Event voor deze winkel. De standaardwaarde is `ContextHub.eventing` object.
    * `persistence`: Het object ContextHub.Utils.Persistence voor deze winkel. Standaard wordt geheugenpersistentie gebruikt (JavaScript-object).
    * `service`: (Object)
-      * `host`: (Tekenreeks) De servernaam of het IP-adres.
+      * `host`: (String) De servernaam of het IP-adres.
       * `jsonp`: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt `{callback: "ContextHub.Callbacks.*Object.name*}`object wordt toegevoegd aan `service.params`.
       * `params`: (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen en -waarden zijn respectievelijk namen en waarden van objecteigenschappen.
-      * `path`: (Tekenreeks) Het pad naar de service.
-      * `port`: (Aantal) het havenaantal van de dienst.
+      * `path`: (String) Het pad naar de service.
+      * `port`: (Number) Het poortnummer van de service.
       * `secure`: (String of Boolean) Bepaalt het protocol dat voor de service-URL moet worden gebruikt:
          * `auto`: //
          * `true`: https://
@@ -457,7 +457,7 @@ initialiseert de `ContextHub.Store.JSONPStore` object.
 
 #### queryService(reload) {#queryservice-reload}
 
-Zoekt de verre dienst JSONP en caches de reactie. Als de hoeveelheid tijd sinds de vorige aanroep van deze functie kleiner is dan de waarde van `config.service.ttl`, wordt de dienst niet geroepen en de caching reactie wordt niet veranderd. Naar keuze, kunt u de dienst dwingen om worden geroepen. De `config.service.ttl`eigenschap wordt ingesteld wanneer het aanroepen van de [init](#init-name-config) om de winkel te initialiseren.
+Zoekt de verre dienst JSONP en caches de reactie. Als de hoeveelheid tijd sinds de vorige aanroep van deze functie kleiner is dan de waarde van `config.service.ttl`, wordt de dienst niet geroepen en de caching reactie wordt niet veranderd. Naar keuze, kunt u de dienst dwingen om worden geroepen. De `config.service.ttl`eigenschap wordt ingesteld wanneer de [init](#init-name-config) om de winkel te initialiseren.
 
 De gebeurtenis ready wordt geactiveerd wanneer de query is voltooid. Wanneer de URL van de JSONP-service niet is ingesteld, doet de functie niets.
 
@@ -509,7 +509,7 @@ Registreert een UI modulerenderer met ContextHub. Nadat de renderer is geregistr
 
 ##### Voorbeeld {#example-registerrenderer}
 
-In het volgende voorbeeld wordt een renderer geregistreerd als de `contexthub.browserinfo` moduletype.
+In het volgende voorbeeld wordt een renderer geregistreerd als de `contexthub.browserinfo` type module.
 
 ```javascript
 ContextHub.UI.registerRenderer('contexthub.browserinfo', new SurferinfoRenderer());
@@ -547,11 +547,11 @@ Retourneert alle cookies met sleutels die overeenkomen met een filter.
 
 ##### Parameters {#parameters-getallitems}
 
-* **`filter`:** (Optioneel) Criteria voor het afstemmen van cookies. Geef geen waarde op om alle cookies te retourneren. De volgende typen worden ondersteund:
-   * Tekenreeks: De tekenreeks wordt vergeleken met de cookie-toets.
-   * Array: Elk item in de array is een filter.
-   * Een RegExp-object: De testfunctie van het object wordt gebruikt om cookies aan te passen.
-   * Een functie: Een functie die een koekjessleutel voor een gelijke test. De functie moet de koekjessleutel als parameter nemen en waar terugkeren als de test een gelijke bevestigt.
+* **`filter`:** (Optioneel) Criteria voor het afstemmen van cookies. Als u alle cookies wilt retourneren, geeft u geen waarde op. De volgende typen worden ondersteund:
+   * Tekenreeks: de tekenreeks wordt vergeleken met de cookie-toets.
+   * Array: elk item in de array is een filter.
+   * Een object RegExp: de testfunctie van het object wordt gebruikt om cookies aan te passen.
+   * A function: A function that test a cookie key for a match. De functie moet de koekjessleutel als parameter nemen en waar terugkeren als de test een gelijke bevestigt.
 
 ##### Retourneert {#returns-getallitems}
 
@@ -588,10 +588,10 @@ Retourneert een array met de sleutels van bestaande cookies die overeenkomen met
 ##### Parameters {#parameters-getkeys-1}
 
 * **`filter`:** Criteria voor het afstemmen van cookies. De volgende typen worden ondersteund:
-   * Tekenreeks: De tekenreeks wordt vergeleken met de cookie-toets.
-   * Array: Elk item in de array is een filter.
-   * Een RegExp-object: De testfunctie van het object wordt gebruikt om cookies aan te passen.
-   * Een functie: Een functie die een koekjessleutel voor een gelijke test. De functie moet de cookiesleutel als parameter nemen en terugkeren `true` als de test een gelijke bevestigt.
+   * Tekenreeks: de tekenreeks wordt vergeleken met de cookie-toets.
+   * Array: elk item in de array is een filter.
+   * Een object RegExp: de testfunctie van het object wordt gebruikt om cookies aan te passen.
+   * A function: A function that test a cookie key for a match. De functie moet de cookiesleutel als parameter nemen en terugkeren `true` als de test een gelijke bevestigt.
 
 ##### Retourneert {#returns-getkeys-1}
 
@@ -609,7 +609,7 @@ Hiermee verwijdert u een cookie. Als u het cookie wilt verwijderen, wordt de waa
 
 ##### Parameters {#parameters-removeitem-1}
 
-* **`key`:** A `String` waarde die staat voor de sleutel van het cookie dat moet worden verwijderd.
+* **`key`:** A `String` waarde die de sleutel van het te verwijderen cookie vertegenwoordigt.
 * **`options`:** Een object dat eigenschapwaarden bevat voor het configureren van de cookie-kenmerken. Zie de [`setItem`](#setitem-key-value-options) functie voor informatie. De `expires` eigenschap heeft geen effect.
 
 ##### Retourneert {#returns-removeitem-1}
@@ -656,8 +656,8 @@ Hiermee verwijdert u alle cookies die overeenkomen met een opgegeven filter. Coo
 
 ##### Parameters {#parameters-vanish}
 
-* **`filter`:** De `filter` in de oproep tot [`getKeys`](#getkeys-filter) functie.
-* **`options`:** De `options` in de oproep tot [`removeItem`](#removeitem-key-options) functie.
+* **`filter`:** De `filter` in de vraag naar de [`getKeys`](#getkeys-filter) functie.
+* **`options`:** De `options` in de vraag naar de [`removeItem`](#removeitem-key-options) functie.
 
 ##### Retourneert {#returns-vanish}
 
@@ -676,7 +676,7 @@ Hiermee wordt de binding van een functie met een gebeurtenis opgeheven.
 ##### Parameters {#parameters-off}
 
 * **`name`:** De [naam van de gebeurtenis](#contexthub-utils-eventing) waarvoor u de binding van de functie ongedaan maakt.
-* **`selector`:** De kiezer die de binding aangeeft. (Zie de `selector` parameter voor de [`on`](#on-name-handler-selector-triggerforpastevents) en [`once`](#once-name-handler-selector-triggerforpastevents) functies).
+* **`selector`:** De kiezer die de binding identificeert. (Zie de `selector` parameter voor de [`on`](#on-name-handler-selector-triggerforpastevents) en [`once`](#once-name-handler-selector-triggerforpastevents) functies).
 
 ##### Retourneert {#returns-off}
 
@@ -690,15 +690,15 @@ Bindt een functie aan een gebeurtenis. De functie wordt aangeroepen telkens wann
 
 * **`name`:** (String) De [naam van de gebeurtenis](#contexthub-utils-eventing) waaraan u de functie bindt.
 * **`handler`:** (Functie) De functie die aan de gebeurtenis wordt gebonden.
-* **`selector`:** (Tekenreeks) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de `off` functie om de binding te verwijderen.
+* **`selector`:** (Tekenreeks) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de optie `off` functie om de binding te verwijderen.
 * **`triggerForPastEvents`:** (Boolean) Geeft aan of de handler moet worden uitgevoerd voor gebeurtenissen die zich in het verleden hebben voorgedaan. Een waarde van `true` roept de manager voor vroegere gebeurtenissen aan. Een waarde van `false` roept de manager voor toekomstige gebeurtenissen aan. De standaardwaarde is `true`.
 
 ##### Retourneert {#returns-on}
 
 Wanneer de `triggerForPastEvents` argument is `true`Deze functie retourneert een `boolean` waarde die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
 
-* `true`: De gebeurtenis vond in het verleden plaats en de manager wordt geroepen.
-* `false`: De gebeurtenis heeft zich in het verleden niet voorgedaan.
+* `true`: De gebeurtenis is in het verleden opgetreden en de handler wordt aangeroepen.
+* `false`: De gebeurtenis is niet in het verleden opgetreden.
 
 Indien `triggerForPastEvents` is `false`, retourneert deze functie geen waarde.
 
@@ -730,15 +730,15 @@ Bindt een functie aan een gebeurtenis. De functie wordt slechts eenmaal aangeroe
 
 * **`name`:** (String) De [naam van de gebeurtenis](#contexthub-utils-eventing) waaraan u de functie bindt.
 * **`handler`:** (Functie) De functie die aan de gebeurtenis wordt gebonden.
-* **`selector`:** (Tekenreeks) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de `off` functie om de binding te verwijderen.
+* **`selector`:** (Tekenreeks) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de optie `off` functie om de binding te verwijderen.
 * **`triggerForPastEvents`:** (Boolean) Geeft aan of de handler moet worden uitgevoerd voor gebeurtenissen die zich in het verleden hebben voorgedaan. Een waarde van `true` roept de manager voor vroegere gebeurtenissen aan. Een waarde van `false` roept de manager voor toekomstige gebeurtenissen aan. De standaardwaarde is `true`.
 
 ##### Retourneert {#returns-once}
 
 Wanneer de `triggerForPastEvents` argument is `true`Deze functie retourneert een `boolean` waarde die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
 
-* `true`: De gebeurtenis vond in het verleden plaats en de manager wordt geroepen.
-* `false`: De gebeurtenis heeft zich in het verleden niet voorgedaan.
+* `true`: De gebeurtenis is in het verleden opgetreden en de handler wordt aangeroepen.
+* `false`: De gebeurtenis is niet in het verleden opgetreden.
 
 Indien `triggerForPastEvents` is `false`, retourneert deze functie geen waarde.
 
@@ -803,7 +803,7 @@ Hiermee worden JavaScript-waarden en -objecten geserialiseerd naar tekenreekswaa
 
 ##### Retourneert {#returns-stringify}
 
-De geserialiseerde tekenreekswaarde. Wanneer `data` is een R `egExp` waarde, retourneert deze functie een leeg object. Wanneer `data` is een functie, retourneert `undefined`.
+De geserialiseerde tekenreekswaarde Wanneer `data` is een R `egExp` waarde, retourneert deze functie een leeg object. Wanneer `data` is een functie, retourneert `undefined`.
 
 ##### Voorbeeld {#example-stringify}
 
@@ -1005,7 +1005,7 @@ myObject {
 
 Hiermee worden tekenreekswaarden gesimuleerd zodat deze als toetsen kunnen worden gebruikt. Om een tekenreeks te ontsmetten, voert deze functie de volgende handelingen uit:
 
-* Hiermee worden meerdere opeenvolgende slashes tot één schuine streep verkleind.
+* Hiermee worden meerdere opeenvolgende slashes tot één slash verkleind.
 * Verwijdert witruimte aan het begin en einde van de tekenreeks.
 * Splitst het resultaat in een array van tekenreeksen die worden afgebakend door slashes.
 
@@ -1031,7 +1031,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(tree, key, value) {#setitem-tree-key-value}
 
-Hiermee voegt u een sleutel-/waardepaar toe aan de gegevensstructuur van een kopie van een object. Voor informatie over gegevensbomen raadpleegt u [Persistentie.](contexthub.md#persistence)
+Voegt een sleutel/waardepaar aan de gegevensboom van een exemplaar van een voorwerp toe. Zie voor informatie over gegevensstructuren [Persistentie.](contexthub.md#persistence)
 
 ##### Parameters {#parameters-setitem-2}
 
@@ -1113,7 +1113,7 @@ De prioriteit is een aantal dat op het belang van de zelfde-genoemde opslag wijs
 ##### Parameters {#parameters-registerstorecandidate}
 
 * **`store`:** (Object) Het opslagobject dat moet worden geregistreerd als opslagkandidaat.
-* **`storeType`:** (String) De naam van de opslagkandidaat. Deze waarde wordt vereist wanneer het creëren van een geval van de opslagkandidaat.
+* **`storeType`:** (Tekenreeks) De naam van de opslagkandidaat. Deze waarde wordt vereist wanneer het creëren van een geval van de opslagkandidaat.
 * **`priority`:** (Aantal) De prioriteit van de opslagkandidaat.
 * **`applies`:** (Functie) De functie die moet worden aangeroepen die de toepasselijkheid van de opslag in de huidige omgeving evalueert. De functie moet worden geretourneerd `true` indien de opslagplaats van toepassing is, en `false` anders. De standaardwaarde is een functie die waar retourneert: `function() {return true;}`
 

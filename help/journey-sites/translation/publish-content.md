@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -66,13 +66,13 @@ De eenvoudigste manier om de vertalingen te publiceren is aan de projectomslag t
 
 Onder dit pad hebt u submappen voor elke vertaaltaal en kunt u kiezen welke taal u wilt publiceren.
 
-1. Ga naar **Navigatie** -> **Sites** -> **Bestanden** en opent u de projectmap.
+1. Ga naar **Navigatie** > **Sites** > **Bestanden** en opent u de projectmap.
 1. Hier ziet u de hoofdmap van de taal en alle andere taalmappen. Selecteer de gelokaliseerde taal of talen die u wilt publiceren.
    ![Taalmap selecteren](assets/select-language-folder.png)
-1. Tik of klik op **Publicatie beheren**.
-1. In de **Publicatie beheren** venster, zorg ervoor dat **Publiceren** wordt automatisch geselecteerd onder **Handeling** en dat **Nu** is geselecteerd onder **Planning**. Tik of klik op **Volgende**.
+1. Selecteren **Publicatie beheren**.
+1. In de **Publicatie beheren** venster, zorg ervoor dat **Publiceren** wordt automatisch geselecteerd onder **Handeling** en dat **Nu** is geselecteerd onder **Planning**. Selecteren **Volgende**.
    ![Publicatieopties beheren](assets/manage-publication-options.png)
-1. In het volgende **Publicatie beheren** bevestigen dat het juiste pad of de juiste paden is of zijn geselecteerd. Tik of klik op **Publiceren**.
+1. In het volgende **Publicatie beheren** bevestigen dat het juiste pad of de juiste paden is of zijn geselecteerd. Selecteren **Publiceren**.
    ![Publicatiebereik beheren](assets/manage-publication-scope.png)
 1. AEM bevestigt de publicatieactie met een pop-upbericht onder aan het scherm.
    ![Bronnen gepubliceerde banner](assets/resources-published-message.png)
@@ -95,23 +95,23 @@ Het proces verschilt echter enigszins als u ervoor kiest om uw vertaalproject au
 
 ### Een automatisch gemaakt vertaalproject bijwerken {#updating-automatic-project}
 
-1. Navigeren naar **Navigatie** -> **Activa** -> **Bestanden**. Houd er rekening mee dat inhoud in AEM onder wordt opgeslagen `/content`.
+1. Navigeren naar **Navigatie** > **Activa** > **Bestanden**. Houd er rekening mee dat inhoud in AEM onder wordt opgeslagen `/content`.
 1. Selecteer de taalwortel van uw project. In dit geval hebben we `/content/wknd/en`.
-1. Tik of klik op de railkiezer en toon de **Verwijzingen** deelvenster.
-1. Tik of klik op **Taalkopieën**.
+1. Selecteer de spoorkiezer en geef de **Verwijzingen** deelvenster.
+1. Selecteren **Taalkopieën**.
 1. Controleer de **Taalkopieën** selectievakje.
 1. De sectie uitbreiden **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
-1. In de **Project** vervolgkeuzelijst, selecteren **Toevoegen aan een bestaand vertaalproject**.
+1. In de **Project** vervolgkeuzelijst, selecteert u **Toevoegen aan een bestaand vertaalproject**.
 1. In de **Bestaand vertaalproject** selecteert u het project dat u voor de eerste vertaling hebt gemaakt.
-1. Tik of klik op **Bijwerken**.
+1. Selecteren **Bijwerken**.
 
 ![Items toevoegen aan bestaand vertaalproject](assets/add-to-existing-project.png)
 
 De inhoud wordt toegevoegd aan het bestaande vertaalproject. Het vertaalproject weergeven:
 
-1. Navigeren naar **Navigatie** -> **Projecten**.
-1. Tik of klik op het project dat u zojuist hebt bijgewerkt.
-1. Tik of klik op de taal of een van de talen die u hebt bijgewerkt.
+1. Navigeren naar **Navigatie** > **Projecten**.
+1. Selecteer het project dat u net hebt bijgewerkt.
+1. Selecteer de taal of een van de talen die u hebt bijgewerkt.
 
 U ziet dat er een nieuwe banenkaart aan het project is toegevoegd. In dit voorbeeld is een andere Spaanse vertaling toegevoegd.
 
@@ -125,22 +125,22 @@ Vanaf dit punt kunt u [start en beheer uw vertaaltaak op dezelfde manier als het
 
 Als u een vertaling wilt bijwerken, kunt u een nieuwe taak toevoegen aan uw bestaande project die verantwoordelijk is voor het vertalen van de bijgewerkte inhoud.
 
-1. Navigeren naar **Navigatie** -> **Projecten**.
-1. Tik of klik op het project dat u wilt bijwerken.
-1. Tik of klik op de knop **Toevoegen** boven in het venster.
-1. In de **Tegel toevoegen** venster, tikken of klikken **Vertaaltaak** en vervolgens **Verzenden**.
+1. Navigeren naar **Navigatie** > **Projecten**.
+1. Selecteer het project dat u moet bijwerken.
+1. Selecteer de **Toevoegen** boven in het venster.
+1. In de **Tegel toevoegen** venster, selecteert u **Vertaaltaak** en vervolgens **Verzenden**.
 
    ![Tegel toevoegen](assets/add-translation-job-tile.png)
 
-1. Tik op de kaart van de nieuwe vertaaltaak of klik op de chevron-knop boven aan de kaart en selecteer **Doel bijwerken** om de doeltaal van de nieuwe baan te bepalen.
+1. Selecteer op de kaart van de nieuwe vertaalbaan de chevron knoop bij de bovenkant van de kaart, en selecteer **Doel bijwerken** om de doeltaal van de nieuwe baan te bepalen.
 
    ![Doel bijwerken](assets/update-target.png)
 
-1. In de **Doeltaal selecteren** gebruiken om de taal te selecteren en op **Gereed**.
+1. In de **Doeltaal selecteren** , gebruikt u de vervolgkeuzelijst om de taal te selecteren en **Gereed**.
 
    ![Doeltaal selecteren](assets/select-target-language.png)
 
-1. Als de doeltaal van uw nieuwe vertaaltaak is ingesteld, tikt u op de knop voor de weglatingsteken onder aan de taakkaart om de details van de taak weer te geven.
+1. Als de doeltaal van uw nieuwe vertaaltaak is ingesteld, selecteert u de knop voor de weglatingsteken onder aan de taakkaart om de details van de taak weer te geven.
 1. De taak is leeg wanneer deze voor het eerst wordt gemaakt. Inhoud aan de taak toevoegen door te tikken of op de knop **Toevoegen** en het gebruiken van wegbrowser [zoals u dat eerder deed toen u het vertaalproject oorspronkelijk creeerde.](translate-content.md##manually-creating)
 
 >[!TIP]

@@ -3,7 +3,7 @@ title: Bevoegdheidsoverwegingen voor inhoud zonder kop
 description: Leer over verschillende toestemmings en ACL overwegingen voor een headless implementatie met Adobe Experience Manager. Begrijp de verschillende personen en de potentiële toestemmingsniveaus nodig voor zowel auteur als Publish milieu's.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -64,7 +64,7 @@ De mogelijkheid om te wijzigen **Modellen van inhoudsfragmenten** moet worden ov
 >
 >Wijzigingen in modellen van inhoudsfragmenten veranderen de onderliggende GraphQL API waarop toepassingen zonder kop vertrouwen.
 
-Als u wenst om een groep tot stand te brengen die de Modellen van het Fragment van de Inhoud maar niet volledige beheerderstoegang beheert, kunt u een groep met de volgende ingangen van de toegangscontrole tot stand brengen:
+Als u een groep wilt creëren die de Modellen van het Fragment van de Inhoud maar niet volledige beheerderstoegang beheert, kunt u een groep met de volgende ingangen van de toegangscontrole tot stand brengen:
 
 | Pad | Machtiging | Rechten |
 |-----| -------------| ---------|

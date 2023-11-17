@@ -2,9 +2,9 @@
 title: Het uitvoeren van een Evaluator van de Predicatie van de Douane voor de Bouwer van de Vraag
 description: De Bouwer van de Vraag in AEM biedt een gemakkelijke, klantgerichte manier om de inhoudsbewaarplaats te vragen
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Een aangepaste predikaat kan ook andere dingen uitvoeren die niet direct mogelij
 
 >[!TIP]
 >
->U vindt voorbeelden van query&#39;s in het dialoogvenster [Query Builder](query-builder-api.md) document.
+>U kunt voorbeelden van vragen in vinden [Query Builder](query-builder-api.md) document.
 
 >[!TIP]
 >
@@ -101,7 +101,7 @@ Het groeperen van replicatiemagegevens predikt met een douane predikaat evaluato
 >
 >De opzet van nieuwe AEM met inbegrip van het gebruik van maven wordt in detail toegelicht door [de WKND-zelfstudie.](develop-wknd-tutorial.md)
 
-Eerst moet u de Geweven gebiedsdelen van uw project bijwerken. De `PredicateEvaluator` maakt deel uit van de `cq-search` artefact zodat moet het aan uw Gepompdossier van Maven worden toegevoegd.
+Eerst moet u de Geweven gebiedsdelen van uw project bijwerken. De `PredicateEvaluator` maakt deel uit van de `cq-search` artefact, dus moet deze worden toegevoegd aan het pomabestand Maven.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ De `cq-search` het project bevat `AbstractPredicateEvaluator` abstracte klasse. 
 
 >[!NOTE]
 >
->De volgende procedure laat zien hoe u een `Xpath` expressie om gegevens te filteren. Een andere mogelijkheid zou zijn om de `includes` methode die gegevens op rijbasis selecteert. Zie de [Java-documentatie](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) voor meer informatie .
+>De volgende procedure laat zien hoe u een `Xpath` expressie om gegevens te filteren. Een andere mogelijkheid zou zijn om de `includes` methode waarmee gegevens op rijbasis worden geselecteerd. Zie de [Java-documentatie](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) voor meer informatie .
 
 1. Een nieuwe Java-klasse maken die een uitbreiding `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. Annoteer uw klasse met een `@Component` zoals fragmenten in [Unified Diff-indeling](https://en.wikipedia.org/wiki/Diff#Unified_format)
@@ -155,7 +155,7 @@ De `cq-search` het project bevat `AbstractPredicateEvaluator` abstracte klasse. 
 
    >[!NOTE]
    >
-   >De naam van de `PredicateEvaluator` is de predicaatnaam, die wordt gebruikt wanneer het bouwen van vragen.
+   >De naam van `PredicateEvaluator` is de predicaatnaam, die wordt gebruikt wanneer het bouwen van vragen.
 
 1. Overschrijven:
 

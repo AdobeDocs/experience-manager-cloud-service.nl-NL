@@ -1,17 +1,17 @@
 ---
-title: as a Cloud Service veelgestelde vragen weergeven
+title: As a Cloud Service veelgestelde vragen weergeven
 description: Op deze pagina worden de as a Cloud Service veelgestelde vragen beschreven.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
-# as a Cloud Service veelgestelde vragen weergeven {#screens-cloud-faqs}
+# As a Cloud Service veelgestelde vragen weergeven {#screens-cloud-faqs}
 
-De volgende sectie geeft antwoorden op Veelgestelde vragen (FAQs) met betrekking tot het as a Cloud Service project van Screens.
+In de volgende sectie worden antwoorden gegeven op veelgestelde vragen (FAQ&#39;s) over een as a Cloud Service project met schermen.
 
 ## Wat moet ik doen als AEM Screens Player die naar as a Cloud Service schermen wijst, de aangepaste clientlibs niet plukt met de indeling /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
 
@@ -38,12 +38,12 @@ scripts=[
 
 ## Welke afbeeldingsindelingen worden aanbevolen voor een naadloze uitvoering van afbeeldingen in een as a Cloud Service AEM Screens-kanaal?{#screens-cloud-image-format}
 
-Het wordt aanbevolen afbeeldingen in de indeling te gebruiken `.png` en `.jpeg` in een as a Cloud Service AEM Screens-kanaal, voor de beste digitale signaalervaring.
-De afbeeldingen in de indeling `*.tif` (Bestandsindeling voor tagafbeeldingen) wordt niet ondersteund in AEM Screens as a Cloud Service. Als een kanaal deze afbeeldingsindeling heeft, wordt de afbeelding aan de afspeelzijde niet gerenderd.
+Adobe raadt aan afbeeldingen in de indeling te gebruiken `.png` en `.jpeg` in een as a Cloud Service AEM Screens-kanaal, voor de beste digitale signaalervaring.
+De afbeeldingen in de indeling `*.tif` (Bestandsindeling voor tagafbeeldingen) wordt niet ondersteund in AEM Screens as a Cloud Service. Als een kanaal deze afbeeldingsindeling heeft, wordt de afbeelding aan de afspeelzijde niet weergegeven.
 
 ## Wat moet ik doen als een Kanaal in de modus Ontwikkelaar (online) niet wordt weergegeven op AEM Screens Player?{#screens-cloud-online-channel-blank-iframe}
 
-Adobe raadt u aan om AEM Screens-caching te gebruiken. Als u uw Channel echter in de modus Ontwikkelaar moet uitvoeren en de AEM Screens Player een leeg scherm weergeeft, controleert u de ontwikkelaarsgereedschappen van uw speler en zoekt u naar `X-Frame-Options` of `frame-ancestors` fouten. De resolutie is om de Dispatcher te configureren zodat inhoud in iFrames kan worden uitgevoerd. Meestal werkt de volgende configuratie:
+Adobe raadt u aan om AEM Screens-caching-mogelijkheden te gebruiken. Als u uw Channel echter in de modus Ontwikkelaar moet uitvoeren en de AEM Screens Player een leeg scherm weergeeft, controleert u de ontwikkelaarsgereedschappen van uw speler en zoekt u naar `X-Frame-Options` of `frame-ancestors` fouten. De resolutie is om de Dispatcher te configureren zodat inhoud in iFrames kan worden uitgevoerd. Meestal werkt de volgende configuratie:
 
 ```
 Header set Content-Security-Policy "frame-ancestors 'self' file: localhost:*;"

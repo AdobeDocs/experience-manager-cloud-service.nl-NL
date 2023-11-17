@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release van Adobe Experience Manager as a Cloud Service voor 2020.6.0
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.6.0."
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1908'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor AEM Sites 
 
 Release 2.9.0 van de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) is nu beschikbaar als onderdeel van AEM Sites, waaronder:
 
-* Integratie tussen [Gegevenslaag Adobe-client](https://github.com/adobe/adobe-client-data-layer) en de kerncomponenten
+* Integratie tussen [Gegevenslaag client-Adobe](https://github.com/adobe/adobe-client-data-layer) en de kerncomponenten
 * Configureerbare HTML ID-kenmerken voor alle componenten
 * Een nieuwe component ProgressBar
 * Veel opgeloste problemen
@@ -119,7 +119,7 @@ Organisaties kunnen nu 3D-bestanden opslaan en gebruiken in AEM Assets. De gebru
 
 Met de nieuwste release, [!DNL Experience Manager Assets] ondersteunt een nieuwe [!DNL Adobe Asset Link] insteekmodule die wordt losgelaten met [!DNL Adobe XD] v29.3 Dankzij de integratie hebben ontwerpers toegang tot middelen en kunnen ze deze gebruiken vanuit [!DNL Experience Manager] in hun ontwerpen, zonder dat het nodig is [!DNL Adobe XD] toepassing. Zie [Adobe Asset Link voor Adobe XD-documentatie](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
-Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middelen die worden beheerd in [!DNL AEM Assets] gebruiken [!DNL Adobe Asset Link] in een aantal Creative Cloud-bureaubladtoepassingen, waaronder [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator], en [!DNL InDesign].
+Met deze release kunnen creatieve gebruikers en ontwerpers nu werken met middelen die worden beheerd in [!DNL AEM Assets] gebruiken [!DNL Adobe Asset Link] in een reeks bureaubladtoepassingen voor Creatives Cloud, waaronder [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator], en [!DNL InDesign].
 
 **Verbeteringen voor toegankelijkheid**
 

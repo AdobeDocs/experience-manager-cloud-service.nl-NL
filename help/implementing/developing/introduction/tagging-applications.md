@@ -2,9 +2,9 @@
 title: Tags samenstellen in AEM toepassingen
 description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM.
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ Voor gerelateerde informatie over codering:
 
 De uitvoering van de [coderingskader](tagging-framework.md) in AEM staat het beheer van tags en tag-inhoud met behulp van de JCR API toe. `TagManager` zorgt ervoor dat tags die zijn ingevoerd als waarden in het dialoogvenster `cq:tags` array-eigenschap string wordt niet gedupliceerd, maar verwijderd `TagID`verwijst naar niet-bestaande tags en updates `TagID`s voor verplaatste of samengevoegde markeringen. `TagManager` gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De hoofdklassen bevinden zich in de [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) pakket:
 
-* `JcrTagManagerFactory` - geeft een JCR-gebaseerde implementatie van een `TagManager`. Dit is de referentie-implementatie van de API voor labelen.
+* `JcrTagManagerFactory` - retourneert een JCR-gebaseerde implementatie van een `TagManager`. Dit is de referentie-implementatie van de API voor labelen.
 * `TagManager` - Hiermee kunt u tags oplossen en maken op basis van paden en namen.
 * `Tag` - definieert het labelobject.
 
 ### Een op JCR gebaseerde tagbeheer ophalen {#getting-a-jcr-based-tagmanager}
 
-Om een `TagManager` -instantie, hebt u een JCR nodig `Session` en om `getTagManager(Session)`:
+Om een `TagManager` -instantie, hebt u een JCR nodig `Session` en te bellen `getTagManager(Session)`:
 
 ```java
 @Reference
@@ -51,7 +51,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Een tagobject ophalen {#retrieving-a-tag-object}
 
-A `Tag` kan worden opgehaald via de `TagManager`door een bestaande tag op te lossen of een nieuwe tag te maken:
+A `Tag` kan worden opgehaald via de `TagManager`door een bestaande tag op te lossen of een bestaande tag te maken:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -127,7 +127,7 @@ De opschoonfunctie voor tags wordt standaard eenmaal per dag uitgevoerd. Dit kan
 
 `http://<host>:<port>/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector`
 
-## Zoeken en taglijst {#tag-search-and-tag-listing}
+## Zoeken naar tags en taglijst {#tag-search-and-tag-listing}
 
 De zoekopdracht naar tags en het tagoverzicht werkt als volgt:
 
@@ -138,7 +138,7 @@ De zoekopdracht naar tags en het tagoverzicht werkt als volgt:
 
 Een tag `title` kunnen in verschillende talen worden gedefinieerd. Vervolgens wordt een taalgevoelige eigenschap toegevoegd aan het tagknooppunt. Deze eigenschap heeft de indeling `jcr:title.<locale>`, bijvoorbeeld `jcr:title.fr` voor de Franse vertaling. `<locale>` moet een ISO-tekenreeks voor kleine letters zijn en een onderstrepingsteken gebruiken (`_`) in plaats van koppelteken/streepje (`-`), bijvoorbeeld: `de_ch`.
 
-Wanneer bijvoorbeeld **Dieren** -tag wordt toegevoegd aan de **Producten** pagina, de waarde `stockphotography:animals` wordt toegevoegd aan de eigenschap `cq:tags` van het knooppunt `/content/wknd/en/products/jcr:content`. Er wordt naar de vertaling verwezen vanuit het tagknooppunt.
+Als u bijvoorbeeld **Dieren** -tag wordt toegevoegd aan de **Producten** pagina, de waarde `stockphotography:animals` wordt toegevoegd aan de eigenschap `cq:tags` van het knooppunt `/content/wknd/en/products/jcr:content`. Er wordt naar de vertaling verwezen vanuit het tagknooppunt.
 
 De server-side API heeft gelokaliseerd `title`-gerelateerde methoden:
 
@@ -155,7 +155,7 @@ De server-side API heeft gelokaliseerd `title`-gerelateerde methoden:
 
 In AEM kan de taal worden opgehaald uit de paginataal of uit de taal van de gebruiker.
 
-Bij het labelen is lokalisatie afhankelijk van de context als tag `titles` kan worden weergegeven in de paginataal, in de taal van de gebruiker of in een andere taal.
+Bij het labelen is lokalisatie afhankelijk van de context als tag `titles` kan worden weergegeven in de paginataal, in de gebruikerstaal of in een andere taal.
 
 ### Een nieuwe taal toevoegen aan het dialoogvenster Tag bewerken {#adding-a-new-language-to-the-edit-tag-dialog}
 
@@ -168,4 +168,4 @@ Het Fins is nu beschikbaar in het tagdialoogvenster van de pagina-eigenschappen 
 
 >[!NOTE]
 >
->De nieuwe taal moet een van de AEM erkende talen zijn, dat wil zeggen dat deze beschikbaar moet zijn als een knooppunt hieronder `/libs/wcm/core/resources/languages`.
+>De nieuwe taal moet een van de AEM erkende talen zijn. Dit wil zeggen dat het bestand beschikbaar moet zijn als een hieronder opgegeven knooppunt `/libs/wcm/core/resources/languages`.

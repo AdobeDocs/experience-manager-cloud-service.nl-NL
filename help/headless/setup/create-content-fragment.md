@@ -2,9 +2,9 @@
 title: Inhoudsfragmenten maken - Instellingen zonder kop
 description: Leer hoe u AEM inhoudsfragmenten kunt gebruiken voor het ontwerpen, maken, beheren en gebruiken van pagina-onafhankelijke inhoud voor levering zonder kop.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,10 @@ Inhoudsfragmenten bevatten gestructureerde inhoud en kunnen in JSON-indeling wor
 
 Inhoudsauteurs maken een willekeurig aantal Inhoudsfragmenten om de inhoud weer te geven die zij maken. Dat is hun belangrijkste taak in AEM. Met het oog op deze gids voor het op gang brengen van de werkzaamheden zullen we slechts één gids hoeven te maken.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Navigatie** -> **Inhoudsfragmenten**.
+1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Navigatie** > **Inhoudsfragmenten**.
 
-1. Tik of klik op de knop [eerder gemaakte map.](create-assets-folder.md)
-1. Tik of klik op **Maken**.
+1. Selecteer de [eerder gemaakte map.](create-assets-folder.md)
+1. Selecteer **Maken**.
 1. Het maken van een inhoudsfragment wordt weergegeven als een dialoogvenster.
 Selecteer de locatie en het model waarmee u het inhoudsfragment wilt maken.
 
@@ -39,7 +39,7 @@ Selecteer de locatie en het model waarmee u het inhoudsfragment wilt maken.
 
    ![Dialoogvenster Nieuw inhoudsfragment maken](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Tik of klik op **Maken** of  **Maken en openen**.
+1. Selecteren **Maken** of  **Maken en openen**.
 
 Inhoudsfragmenten kunnen verwijzen naar andere inhoudsfragmenten, waarbij zo nodig een geneste inhoudsstructuur mogelijk is.
 

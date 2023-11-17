@@ -3,9 +3,9 @@ title: AEM Content en Commerce
 description: Begrijp hoe u Experience Manager Content en Commerce as a Cloud Service kunt gebruiken en beheren.
 landing-page-description: Begrijp hoe u Experience Manager Content en Commerce as a Cloud Service kunt gebruiken en beheren.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '369'
 ht-degree: 66%
 
 ---
@@ -16,7 +16,8 @@ Begrijp hoe u Experience Manager Content en Commerce as a Cloud Service kunt geb
 
 >[!NOTE]
 >
->Voor AEM Inhoud en Handel met AEM 6.5 en klassieke CIF, zie [AEM 6.5 Inhoud en handel](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>Voor AEM Inhoud en Handel met AEM 6.5 en klassieke CIF raadpleegt u [AEM 6.5 Inhoud en handel](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>
 
 ## Belangrijke artikelen voor inhoud en handel {#key-articles}
 
@@ -28,7 +29,7 @@ Begrijp hoe u Experience Manager Content en Commerce as a Cloud Service kunt geb
 
 | Handboek | Beschrijving |
 |---|---|
-| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager als cloudservice, inclusief een inleiding, terminologie, architectuur, enzovoort. |
+| [Overzicht](/help/overview/home.md) | Deze handleiding biedt een overzicht van Experience Manager als cloudservice, inclusief een inleiding, terminologie, architectuur enzovoort. |
 | [Releaseopmerkingen](/help/release-notes/home.md) | Deze handleiding bevat belangrijke informatie over de nieuwste versie van Experience Manager as a Cloud Service, waaronder nieuwe functies, verouderde en verwijderde functies, en bekende problemen. |
 | [Handboek voor beveiliging](/help/security/home.md) | Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service. |
 | [Onboarding Journaal](/help/journey-onboarding/overview.md) | Deze handleiding bevat een overzicht van hoe u aan de slag kunt met Experience Manager as a Cloud Service, inclusief toegang en belangrijke informatie over gegevensbescherming. |

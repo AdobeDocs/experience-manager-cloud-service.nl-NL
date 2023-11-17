@@ -2,9 +2,9 @@
 title: Exporteren van ervaringsfragmenten naar Adobe Target
 description: Leer hoe u uw Experience Fragments naar Adobe Target exporteert, om ervaringen te testen en te personaliseren.
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -189,7 +189,7 @@ U kunt nu de nieuwe configuratie selecteren om te bewerken.
 
    * **Gebruik nauwkeurige doelframes:** Dit selectievakje is standaard ingeschakeld. Als deze optie is geselecteerd, wacht de configuratie van de cloudservice tot de context is geladen voordat inhoud wordt geladen. Zie het volgende.
 
-   * **Segmenten uit Adobe Target synchroniseren:** Selecteer deze optie om segmenten te downloaden die in Doel zijn gedefinieerd om deze in AEM te gebruiken. U moet deze optie selecteren wanneer het bezit van het Type API REST is, omdat de gealigneerde segmenten niet worden gesteund en u altijd segmenten van Doel moet gebruiken. (De AEM term &#39;segment&#39; komt overeen met de doelterm &#39;publiek&#39;.)
+   * **Segmenten uit Adobe Target synchroniseren:** Selecteer deze optie om segmenten te downloaden die in Doel zijn gedefinieerd om deze in AEM te gebruiken. Selecteer deze optie als de eigenschap API Type REST is, omdat inline-segmenten niet worden ondersteund en u altijd segmenten van Target moet gebruiken. (De AEM term &#39;segment&#39; komt overeen met de doelterm &#39;publiek&#39;.)
 
    * **Clientbibliotheek:** dit gebrek aan AT.js (mbox.js wordt afgekeurd)
 
@@ -290,8 +290,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
@@ -301,7 +301,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -315,7 +315,7 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Voor media-elementen, zoals afbeeldingen, wordt alleen een verwijzing naar Doel geëxporteerd. Het element zelf blijft opgeslagen in AEM Assets en wordt geleverd via de AEM-publicatie-instantie.
 >
->Daarom moet het ervaringsfragment, met alle gerelateerde elementen, worden gepubliceerd voordat het naar Target kan worden geëxporteerd.
+>Daarom moet het ervaringsfragment met alle gerelateerde elementen worden gepubliceerd voordat u het exporteert naar Target.
 
 Een ervaringsfragment exporteren van AEM naar doel (na het opgeven van de cloudconfiguratie):
 
@@ -326,19 +326,19 @@ Een ervaringsfragment exporteren van AEM naar doel (na het opgeven van de cloudc
    >
    >Het moet een variant van het Web van het Fragment van de Ervaring zijn.
 
-1. Tikken/klikken **Exporteren naar Adobe Target**.
+1. Selecteren **Exporteren naar Adobe Target**.
 
    >[!NOTE]
    >
    >Als het Experience Fragment al is geëxporteerd, selecteert u **Bijwerken in Adobe Target**.
 
-1. Tikken/klikken **Exporteren zonder publiceren** of **Publiceren** zoals vereist.
+1. Selecteren **Exporteren zonder publiceren** of **Publiceren** zoals vereist.
 
    >[!NOTE]
    >
    >Selecteren **Publiceren** publiceert het ervaringsfragment meteen en verzendt het naar Target.
 
-1. Tikken/klikken **OK** in het bevestigingsdialoogvenster.
+1. Selecteren **OK** in het bevestigingsdialoogvenster.
 
    Het ervaringsfragment moet nu in Doel staan.
 

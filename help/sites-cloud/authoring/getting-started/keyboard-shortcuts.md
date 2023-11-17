@@ -2,9 +2,9 @@
 title: Sneltoetsen voor consoles
 description: Bespaar tijd bij het ontwerpen met deze sneltoetsen
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Daarnaast zijn sneltoetsen voor alle landinstellingen en toetsenbordindelingen h
 
 ## Sneltoetsen deactiveren {#deactivating-keyboard-shortcuts}
 
-AEM biedt sneltoetsen voor een aantal veelgebruikte functies (bewerken, eigenschappen, kopiëren/plakken, verschillende menu&#39;s aan de zijlijn weergeven, enz.).
+AEM biedt sneltoetsen voor enkele veelgebruikte functies (bewerken, eigenschappen, kopiëren/plakken, verschillende menu&#39;s aan de zijspoor weergeven, enzovoort).
 
 Voor gebruikers die geen sneltoetsen gebruiken of bepaalde toegankelijkheidsvereisten hebben, kunnen alle sneltoetsen worden uitgeschakeld.
 

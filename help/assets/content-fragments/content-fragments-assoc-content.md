@@ -2,9 +2,9 @@
 title: Gekoppelde inhoud (elementen - inhoudsfragmenten)
 description: Begrijp hoe AEM bijbehorende inhoudseigenschap de verbinding verstrekt zodat de activa facultatief met het fragment kunnen worden gebruikt.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 4%
 
 ---
@@ -25,14 +25,14 @@ Als u de koppeling wilt maken, moet u eerst [media-elementen toevoegen aan een v
 
    ![Gekoppelde inhoud](assets/cfm-assoc-content-01.png)
 
-1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u een van de volgende opties:
+1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u:
 
    * **Inhoud koppelen** - dit is de eerste bijbehorende verzameling
-   * **Verzameling koppelen** - bijbehorende verzamelingen zijn al geconfigureerd
+   * **Verzameling koppelen** - de bijbehorende inzamelingen worden reeds gevormd
 
 1. Selecteer de gewenste verzameling.
 
-   U kunt optioneel het fragment zelf toevoegen aan de geselecteerde verzameling. dit is het volgen van hulpmiddelen .
+   U kunt desgewenst het fragment zelf toevoegen aan de geselecteerde verzameling. Dit is nuttig bij het bijhouden van gegevens.
 
    ![Verzameling selecteren](assets/cfm-assoc-content-02.png)
 

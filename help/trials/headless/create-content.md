@@ -4,9 +4,9 @@ description: Gebruik het model Inhoudsfragment dat u eerder hebt gemaakt om inho
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -37,15 +37,15 @@ In deze module, creeert u een Fragment van de Inhoud dat op dat model door de co
 
 De console van het Fragment van de Inhoud wordt gebruikt om inhoud zonder kop over leveringskanalen en onafhankelijk van context tot stand te brengen en uit te geven, die de meest efficiënte methode in vele auteursgevallen kan zijn. In een recentere module zullen wij het uitgeven van inhoud zonder titel in context en op zijn plaats onderzoeken.
 
-1. Tik of klik op de knop **Maken** knoop bij top-right van de console.
+1. Selecteer de **Maken** knoop bij top-right van de console.
 
-1. De **Nieuw inhoudsfragment** wordt geopend waar u kunt beginnen met het maken van een nieuw inhoudsfragment. **Locatie** wordt automatisch gevuld met de locatie waar de nieuwe inhoud wordt opgeslagen.
+1. De **Nieuw inhoudsfragment** wordt geopend waar u een inhoudsfragment kunt beginnen te maken. **Locatie** wordt automatisch gevuld met de locatie waar de nieuwe inhoud wordt opgeslagen.
 
 1. In de **Inhoudsfragmentmodel** vervolgkeuzelijst, selecteert u de **Adventure** Model voor inhoudsfragment dat u eerder hebt gemaakt.
 
 1. Toevoegen `Tuscany` als beschrijvend **Titel** voor het inhoudsfragment. Hiermee identificeert u het fragment in de console.
 
-1. Tik of klik op **Maken en openen**.
+1. Selecteren **Maken en openen**.
 
 ![Een nieuw inhoudsfragment maken](assets/do-not-localize/create-content.png)
 
@@ -71,7 +71,7 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. Een **Afbeelding** dat representatief is voor de reis door te tikken of te klikken **Element toevoegen** in de **Afbeelding** veld.
 
-1. Tik of klik in het element-pop-upvenster op **Zoeken in middelen** om te selecteren uit een bestaand element in de bibliotheek met elementen.
+1. Selecteer in het pop-upvenster Middelen de optie **Zoeken in middelen** om te selecteren uit een bestaand element in de bibliotheek met elementen.
 
    ![Element toevoegen](assets/do-not-localize/add-asset.png)
 
@@ -79,17 +79,17 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. De inhoud van de **wielrennen** aan de rechterkant. Selecteer de afbeelding `ADOBESTOCK_141786166.JPEG`.
 
-1. Tik of klik op **Selecteren**.
+1. Selecteren **Selecteren**.
 
    ![Element selecteren](assets/do-not-localize/select-asset.png)
 
 1. De geselecteerde afbeelding wordt weergegeven in het inhoudsfragment. De editor slaat de wijzigingen automatisch op.
 
-1. Tik of klik op de knop **Publiceren** in de rechterbovenhoek van de editor. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps. Selecteer vervolgens **Nu** in de vervolgkeuzelijst. U kunt ook plannen dat de presentatie op een later tijdstip wordt gepubliceerd.
+1. Als u klaar bent met het toevoegen van inhoud, selecteert u de **Publiceren** in de rechterbovenhoek van de editor. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps. Selecteer vervolgens **Nu** in de vervolgkeuzelijst. U kunt ook plannen dat de presentatie op een later tijdstip wordt gepubliceerd.
 
    ![Inhoud publiceren](assets/do-not-localize/publish.png)
 
-1. De **Inhoudsfragmenten publiceren** wordt weergegeven. AEM voert automatisch een verwijzingscontrole uit om ervoor te zorgen dat alle noodzakelijke middelen voor uw Inhoudsfragment worden gepubliceerd. In dit geval moet u ook het model publiceren dat u hebt gemaakt. Tik of klik op **Publiceren**.
+1. De **Inhoudsfragmenten publiceren** wordt weergegeven. AEM voert automatisch een verwijzingscontrole uit om ervoor te zorgen dat alle noodzakelijke middelen voor uw Inhoudsfragment worden gepubliceerd. In dit geval moet u ook het model publiceren dat u hebt gemaakt. Selecteren **Publiceren**.
 
    ![Publiceren en referentiecontrole](assets/do-not-localize/publish-confirm.png)
 

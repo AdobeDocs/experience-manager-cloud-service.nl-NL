@@ -4,9 +4,9 @@ description: Leer hoe u Actieve kopieën maakt en synchroniseert om uw inhoud op
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4270'
 ht-degree: 0%
 
 ---
@@ -110,11 +110,11 @@ Een actieve kopie maken:
 
    ![Live kopie maken](../assets/create-live-copy.png)
 
-1. Selecteer de bronpagina en klik of tik op **Volgende**. Bijvoorbeeld:
+1. Selecteer de bronpagina en selecteer **Volgende**. Bijvoorbeeld:
 
    ![Bron van live kopie selecteren](../assets/live-copy-from.png)
 
-1. Geef het doelpad van de Live kopie op (open de bovenliggende map of pagina van de Live kopie) en klik of tik op **Volgende**.
+1. Geef het doelpad van de actieve kopie op (open de bovenliggende map of pagina van de actieve kopie) en selecteer **Volgende**.
 
    ![Doel voor live kopiëren selecteren](../assets/live-copy-to.png)
 
@@ -135,7 +135,7 @@ Een actieve kopie maken:
    * Niet geselecteerd: maak een actieve kopie die alle onderliggende elementen van de geselecteerde pagina bevat (diepe Live kopie)
 
 1. (Optioneel) Als u een of meer rollout-configuraties wilt opgeven die u wilt gebruiken voor Live kopie, gebruikt u de opdracht **Rollout Configs** vervolgkeuzelijst om ze te selecteren. Geselecteerde configuraties worden weergegeven onder de keuzelijst.
-1. Klikken of tikken **Maken**. Er wordt een bevestigingsbericht weergegeven. Hier kunt u een van de volgende opties selecteren **Openen** of **Gereed**.
+1. Selecteer **Maken**. Er wordt een bevestigingsbericht weergegeven. Hier kunt u een van de volgende opties selecteren **Openen** of **Gereed**.
 
    >[!NOTE]
    >
@@ -169,9 +169,9 @@ Een actieve kopie van een site maken op basis van een blauwdrukconfiguratie:
 
    ![Site maken van blauwdruk](../assets/create-site-from-blueprint.png)
 
-1. Gebruik de **Oorspronkelijke talen** om de taal of talen van de blauwdruksite op te geven die voor Live Copy moet worden gebruikt.
+1. Gebruik de **Oorspronkelijke talen** om de talen op te geven van de blauwdruksite die u wilt gebruiken voor Live Copy.
 
-   Standaard zijn alle beschikbare talen geselecteerd. Als u een taal wilt verwijderen, klikt of tikt u op de knop **X** naast de taal.
+   Standaard zijn alle beschikbare talen geselecteerd. Als u een taal wilt verwijderen, selecteert u de **X** naast de taal.
 
    Bijvoorbeeld:
 
@@ -252,7 +252,7 @@ Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op 
 1. In de **Sites** console, selecteer de pagina in het levende exemplaar en open **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** van de werkbalk.
 1. Selecteer de **Blauwdruk** om de aan deze pagina gekoppelde blauwdrukken weer te geven.
 1. Selecteer de gewenste blauwdruk in de lijst.
-1. Klikken of tikken **Uitrol**.
+1. Selecteren **Uitrol**.
 
    ![Uitvoeren van blauwdruk van referentieslep](../assets/rollout-blueprint-from-references.png)
 
@@ -305,7 +305,7 @@ Synchroniseer een actieve kopie om wijzigingen van de bron naar de actieve kopie
 
 1. In de **Sites** selecteert u de pagina Live kopie en opent u de eigenschappen.
 1. Open de **Live kopie** tab.
-1. Klikken of tikken **Synchroniseren**.
+1. Selecteren **Synchroniseren**.
 
    ![Knop Synchroniseren](../assets/synchronize.png)
 
@@ -368,7 +368,7 @@ U kunt de overerving van Live kopie voor een pagina van Live kopie onderbreken, 
 Overerving op een pagina opschorten:
 
 1. Open de eigenschappen van de pagina Live Copy met de **Eigenschappen weergeven** de **Sites** console of gebruiken **Pagina-informatie** op de pagina-werkbalk.
-1. Klik of tik op **Live kopie** tab.
+1. Selecteer de **Live kopie** tab.
 1. Selecteren **Onderbreken** op de werkbalk. U kunt vervolgens een van de volgende opties selecteren:
 
    * **Onderbreken**: alleen huidige pagina schorsen.
@@ -451,7 +451,7 @@ Op een bestaande live kopie kunt u de diepte van een pagina wijzigen, dat wil ze
 U kunt als volgt de diepte opgeven of wijzigen:
 
 1. Open de eigenschappen van de pagina Live Copy met de **Eigenschappen weergeven** de **Sites** console of gebruiken **Pagina-informatie** op de pagina-werkbalk.
-1. Klik of tik op **Live kopie** tab.
+1. Selecteer de **Live kopie** tab.
 1. In de **Configuratie** de sectie instellen of wissen **Overerving van Actieve kopie** afhankelijk van of onderliggende pagina&#39;s worden opgenomen:
 
    * Ingeschakeld - een diepe, actieve kopie (de onderliggende pagina&#39;s worden opgenomen)
@@ -463,7 +463,7 @@ U kunt als volgt de diepte opgeven of wijzigen:
    >
    >Zie [Actieve kopieën - Compositie](overview.md#live-copies-composition) voor meer informatie .
 
-1. Klikken of tikken **Opslaan** om uw updates voort te zetten.
+1. Selecteren **Opslaan** om uw updates voort te zetten.
 
 ### Overerving voor een component annuleren {#cancelling-inheritance-for-a-component}
 
@@ -475,11 +475,11 @@ Annuleer de overerving van Live kopie voor een component zodat de component niet
 
 Overerving annuleren om de inhoud van de component te wijzigen of de component te verwijderen:
 
-1. Klik of tik op de component waarvoor u overname wilt annuleren.
+1. Selecteer de component waarvoor u overname wilt annuleren.
 
    ![Overerving op de werkbalk van de component](../assets/inheritance-toolbar.png)
 
-1. Klik of tik op de componentwerkbalk op de **Overerving annuleren** pictogram.
+1. Selecteer op de werkbalk van de component de optie **Overerving annuleren** pictogram.
 
    ![Overervingspictogram annuleren](../assets/cancel-inheritance-icon.png)
 
@@ -489,7 +489,7 @@ Overerving annuleren om de inhoud van de component te wijzigen of de component t
 
 ### Overerving voor een component opnieuw inschakelen {#re-enabling-inheritance-for-a-component}
 
-Als u overerving voor een component wilt inschakelen, klikt of tikt u op de knop **Overerving opnieuw inschakelen** op de werkbalk van de component.
+Als u overerving voor een component wilt inschakelen, selecteert u de optie **Overerving opnieuw inschakelen** op de werkbalk van de component.
 
 ![Overervingspictogram opnieuw inschakelen](../assets/re-enable-inheritance-icon.png)
 
@@ -530,15 +530,15 @@ U kunt overerving later opnieuw inschakelen voor een eigenschap als dat nodig is
 >Wanneer u overerving weer inschakelt, wordt de pagina-eigenschap Live Copy niet automatisch gesynchroniseerd met de eigenschap source. U kunt handmatig een synchronisatie aanvragen als dit vereist is.
 
 1. Open de eigenschappen van de pagina Live Copy met de **Eigenschappen weergeven** van de **Sites** console of **Pagina-informatie** op de werkbalk Pagina.
-1. Als u de overerving van een eigenschap wilt annuleren, klikt of tikt u op het koppelingspictogram rechts van de eigenschap.
+1. Als u de overerving van een eigenschap wilt annuleren, selecteert u het koppelingspictogram dat rechts van de eigenschap wordt weergegeven.
 
    ![Knop Overerving annuleren](../assets/cancel-inheritance-button.png)
 
-1. In de **Overerving annuleren** bevestigingsvenster, klikken of tikken **Ja**.
+1. In de **Overerving annuleren** bevestigingsvenster, selecteren **Ja**.
 
 ### Eigenschappen van een Live Copy-pagina herstellen {#revert-properties-of-a-live-copy-page}
 
-Als u overerving voor een eigenschap wilt inschakelen, klikt of tikt u op de knop **Overerving herstellen** wordt weergegeven naast de eigenschap.
+Als u overerving voor een eigenschap wilt inschakelen, selecteert u de optie **Overerving herstellen** wordt weergegeven naast de eigenschap.
 
 ![De knop Overerving herstellen](../assets/revert-inheritance-button.png)
 
@@ -635,7 +635,7 @@ Er zijn implicaties voor waar binnen de boom die u gebruikt **Loskoppelen**:
 
 Een actieve kopie loskoppelen:
 
-1. In de **Sites** console, selecteert u de pagina Live kopiëren en klikt of tikt **Eigenschappen weergeven**.
+1. In de **Sites** console, selecteert u de pagina Live kopiëren en selecteert u **Eigenschappen weergeven**.
 1. Open de **Live kopie** tab.
 1. Selecteer op de werkbalk de optie **Loskoppelen**.
 

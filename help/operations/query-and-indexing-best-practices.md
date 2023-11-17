@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor query en indexering
 description: Leer hoe u indexen en query's optimaliseert op basis van de richtlijnen die de Adobe hanteert.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3133'
+source-wordcount: '3128'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Bij het ontwerpen van de taxonomie van een gegevensopslagruimte moeten verschill
 
 Terwijl het ontwerpen van een taxonomie die deze zorgen richt, is het ook belangrijk om de &quot;draagbaarheid&quot;van het indexeren ontwerp te overwegen. In dit verband is de verhandelbaarheid het vermogen van een taxonomie om inhoud toe te staan om voorspelbaar te worden betreden gebaseerd op zijn weg. Dit maakt voor een efficiënter systeem dat gemakkelijker is te handhaven dan één die veelvoudige vragen vereist om worden uitgevoerd.
 
-Bovendien, wanneer het ontwerpen van een taxonomie, is het belangrijk om te overwegen of het opdracht geven belangrijk is. Wanneer expliciete volgorde niet vereist is en een groot aantal knooppunten op hetzelfde niveau wordt verwacht, wordt u beter een ongeordend knooppunttype gebruikt, zoals `sling:Folder` of `oak:Unstructured`. In gevallen waarin bestelling vereist is, `nt:unstructured` en `sling:OrderedFolder` zou beter zijn.
+Ook, wanneer het ontwerpen van een taxonomie, is het belangrijk om te overwegen of het opdracht geven belangrijk is. Wanneer expliciete volgorde niet vereist is en een groot aantal knooppunten op hetzelfde niveau wordt verwacht, wordt u beter een ongeordend knooppunttype gebruikt, zoals `sling:Folder` of `oak:Unstructured`. In gevallen waarin bestelling vereist is, `nt:unstructured` en `sling:OrderedFolder` zou beter zijn.
 
 ### Zoekopdrachten in componenten {#queries-in-components}
 
@@ -46,7 +46,7 @@ Als de inhoud bijvoorbeeld wordt opgeslagen in een taxonomie die lijkt op:
 
 de `/content/myUnstructuredContent/parentCategory/childCategory` de knoop kan eenvoudig worden teruggewonnen, zijn kinderen kunnen worden ontleed en worden gebruikt om de component terug te geven.
 
-Bovendien, wanneer u met een kleine of homogene resultaatreeks te maken hebt, kan het sneller zijn om de bewaarplaats over te steken en de vereiste knopen te verzamelen, eerder dan het ontwerpen van een vraag om de zelfde resultaatreeks terug te keren. In het algemeen moeten vragen worden vermeden wanneer dat mogelijk is.
+Wanneer u te maken hebt met een kleine of homogene resultaatset, kan het bovendien sneller zijn om de gegevensopslagruimte te doorlopen en de vereiste knooppunten te verzamelen in plaats van een query te maken om dezelfde resultatenset te retourneren. In het algemeen moeten vragen worden vermeden wanneer dat mogelijk is.
 
 ### Voorkeursresultaten {#prefetching-results}
 
@@ -85,7 +85,7 @@ De primaire beperking op om het even welke vraag zou een bezitsgelijke moeten zi
 
 De query-engine beschouwt slechts één index. Dat betekent dat een bestaande index kan en moet worden aangepast door er meer aangepaste indexeigenschappen aan toe te voegen.
 
-De [JCR-query-werkblad](#jcr-query-cheatsheet) in dit document worden de beschikbare beperkingen vermeld en ook uitgelegd hoe een indexdefinitie eruit moet zien zodat deze kan worden opgepikt. Gebruik de [Query-prestaties](#query-performance-tool) om de vraag te testen en ervoor te zorgen dat de juiste index wordt gebruikt en dat de vraagmotor geen beperkingen buiten de index hoeft te evalueren.
+De [JCR-query-werkblad](#jcr-query-cheatsheet) in dit document worden de beschikbare beperkingen vermeld en ook uitgelegd hoe een indexdefinitie eruit moet zien zodat deze wordt opgepikt. Gebruik de [Query-prestaties](#query-performance-tool) om de vraag te testen en ervoor te zorgen dat de juiste index wordt gebruikt en dat de vraagmotor geen beperkingen buiten de index hoeft te evalueren.
 
 ### Volgorde {#ordering}
 
@@ -239,7 +239,7 @@ In dit deel van het plan staat: -
 
 Dit plan van de vraaguitvoering zal in elk element onder resulteren `/content/dam` die van de index worden gelezen, en dan verder door de vraagmotor worden gefilterd (die slechts die die aanpassen de niet-geïndexeerde bezitsbeperking in de resultaatreeks).
 
-Zelfs als slechts een klein percentage van de activa de beperking aanpast `jcr:content/metadata/myProperty = "My Property Value"`, moet de query een groot aantal knooppunten lezen om de gevraagde &#39;pagina&#39; met resultaten te vullen (poging om deze te vullen). Dit kan in een slecht presterende vraag resulteren, die als laag zal worden getoond `Read Optimization` score in het hulpmiddel van de Prestaties van de Vraag) en kan tot berichten leiden WAARSCHUWING die erop wijzen dat de grote aantallen knopen (zie [Indextraversal](#index-traversal)).
+Zelfs als slechts een klein percentage van de activa de beperking aanpast `jcr:content/metadata/myProperty = "My Property Value"`De query moet een groot aantal knooppunten lezen om de opgevraagde &#39;pagina&#39; met resultaten te kunnen vullen (poging daartoe). Dit kan in een slecht presterende vraag resulteren, die als laag zal worden getoond `Read Optimization` score in het hulpmiddel van de Prestaties van de Vraag) en kan tot berichten leiden WAARSCHUWING die erop wijzen dat de grote aantallen knopen (zie [Indextraversal](#index-traversal)).
 
 Als u de prestaties van deze tweede query wilt optimaliseren, maakt u een aangepaste versie van de `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) en voeg de volgende eigenschapdefinitie toe -
 
@@ -308,7 +308,8 @@ Vragen die een index gebruiken, maar nog steeds grote aantallen knopen lezen wor
 05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
 ```
 
-Dit kan om een aantal redenen voorkomen -
+Dit kan om verschillende redenen voorkomen -
+
 1. Niet kunnen alle beperkingen in de vraag bij de index worden behandeld.
    * In dit geval, wordt een superset van de definitieve resultaatreeks gelezen van de index en daarna gefilterd in de vraagmotor.
    * Dit is vele tijden langzamer dan het toepassen van beperkingen in de onderliggende indexvraag.
@@ -316,7 +317,7 @@ Dit kan om een aantal redenen voorkomen -
    * In dit geval, moeten alle resultaten die door de index zijn teruggekeerd door de vraagmotor worden gelezen en in geheugen worden gesorteerd.
    * Dit is vele tijden langzamer dan het toepassen van sortering in de onderliggende indexvraag.
 1. De uitvoerder van de query probeert een grote resultaatset te doorlopen.
-   * Deze situatie kan om een aantal redenen, zoals hieronder vermeld, gebeuren:
+   * Deze situatie kan om verschillende redenen, zoals hieronder vermeld, plaatsvinden:
 
 | Oorzaak | Oplossing |
 |----------|--------------|

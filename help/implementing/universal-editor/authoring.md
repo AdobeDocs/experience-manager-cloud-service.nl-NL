@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2398'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Selecteer de verbinding van Adobe Experience Cloud bij de linkerzijde van de kop
 
 #### Organisatie {#organization}
 
-Hier wordt de organisatie weergegeven waarmee u momenteel bent aangemeld. Tik of klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere.
+Hier wordt de organisatie weergegeven waarmee u momenteel bent aangemeld. Schakel deze optie in om over te schakelen naar een andere organisatie als uw Adobe ID aan meerdere organisaties is gekoppeld.
 
 ![Organisatie-indicator](assets/organization.png)
 
@@ -92,7 +92,7 @@ Dit pictogram is gemarkeerd met het aantal momenteel toegewezen onvolledige [mel
 
 #### Gebruikerseigenschappen {#user-properties}
 
-Tik of klik op het pictogram dat uw gebruiker vertegenwoordigt om toegang te krijgen tot uw gebruikersinstellingen. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
+Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmontages toegang te hebben. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 ![Gebruikerseigenschappen](assets/user-properties.png)
 
@@ -118,7 +118,7 @@ Op de startpagina kunt u de URL invoeren van de site die u wilt bewerken met de 
 
 #### Locatiebalk {#location-bar}
 
-Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Tik of klik om het adres in te voeren van een andere pagina die u wilt bewerken.
+Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze optie om het adres in te voeren van een andere pagina die u wilt bewerken.
 
 ![Locatiebalk](assets/location-bar.png)
 
@@ -132,13 +132,13 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Tik of klik om h
 
 #### Instellingen voor verificatiekoptekst {#authentication-settings}
 
-Tik of klik op het pictogram met instellingen voor de verificatieheader als u een verificatiegeheim moet instellen.
+Selecteer het de montagespictogram van de authentificatiekop als u een authentificatiegeheim moet plaatsen.
 
 ![Knop Instellingen van verificatieheader](assets/authentication-header-settings.png)
 
 #### Emulatorinstellingen {#emulator}
 
-Tik of klik op het emulatiepictogram om te bepalen hoe de Universal Editor de pagina weergeeft.
+Selecteer het emulatiepictogram om te bepalen hoe de Universal Editor de pagina weergeeft.
 
 ![Emulatorpictogram](assets/emulator.png)
 
@@ -156,7 +156,7 @@ U kunt er ook voor kiezen om een mobiel apparaat te emuleren en in de Universele
 
 #### App-voorvertoning openen {#open-app-preview}
 
-Tik of klik op het pictogram met de voorvertoning van de geopende app om de pagina die u momenteel bewerkt te openen op een eigen browsertabblad, zodat de editor er geen voorvertoning van kan weergeven.
+Selecteer het pictogram voor de voorvertoning van de geopende app om de pagina die u momenteel bewerkt te openen op een eigen browsertabblad, zodat de editor geen voorvertoning van uw inhoud kan weergeven.
 
 ![App-voorvertoning openen](assets/open-app-preview.png)
 
@@ -166,7 +166,7 @@ Tik of klik op het pictogram met de voorvertoning van de geopende app om de pagi
 
 #### Publicatie {#publish}
 
-Tik of klik op de knop Publiceren zodat u de wijzigingen in de live inhoud kunt publiceren voor gebruik door uw lezers.
+Selecteer de knop Publiceren zodat u de wijzigingen in de inhoud live kunt publiceren voor gebruik door de lezers.
 
 ![Knop Publiceren](assets/publish.png)
 
@@ -182,7 +182,7 @@ De modusrail bevindt zich net onder de thuisknop en is altijd aanwezig aan de li
 
 #### Voorvertoningsmodus {#preview-mode}
 
-In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op uw gepubliceerde dienst zou worden gezien. Hierdoor kan de auteur van de inhoud door de inhoud navigeren door op koppelingen te klikken, enz.
+In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op uw gepubliceerde dienst zou worden gezien. Hierdoor kan de auteur van de inhoud door de inhoud navigeren door op koppelingen te klikken, enzovoort.
 
 ![Voorvertoningsmodus](assets/preview-mode.png)
 
@@ -254,13 +254,13 @@ Wanneer het selecteren van een punt in de inhoudsboom, scrolt de redacteur aan d
 
 ##### Bewerken {#edit}
 
-Wanneer in [componentmodus,](#component-mode) de bewerkingsopties voor de geselecteerde component worden weergegeven in de eigenschappenrails. In de eigenschappenrails kunt u de geselecteerde component bewerken. Als de geselecteerde component een inhoudsfragment is, kunt u ook tikken of op de bewerkingsknop klikken.
+Wanneer in [componentmodus,](#component-mode) de bewerkingsopties voor de geselecteerde component worden weergegeven in de eigenschappenrails. In de eigenschappenrails kunt u de geselecteerde component bewerken. Als de geselecteerde component een inhoudsfragment is, kunt u ook de knop Bewerken selecteren.
 
 ![Pictogram Bewerken](assets/edit.png)
 
 Als u op de knop Bewerken tikt of erop klikt, wordt het dialoogvenster [Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) op een nieuw tabblad. Hierdoor hebt u toegang tot alle mogelijkheden van de Content Fragment Editor om het bijbehorende Content Fragment te bewerken.
 
-Afhankelijk van de behoeften van uw workflow kunt u het inhoudsfragment bewerken in de universele editor of rechtstreeks in de editor voor inhoudsfragmenten.
+Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht bewerken in de universele editor of rechtstreeks in de editor voor inhoudsfragmenten.
 
 >[!TIP]
 >
@@ -310,23 +310,23 @@ Als u binnen [componentmodus](#component-mode) en selecteert u een tekstcomponen
 
 ![Inhoud bewerken](assets/editing-content.png)
 
-Druk op Enter/Return of tik of klik buiten het tekstvak om de wijzigingen op te slaan.
+Druk op Enter/Return of selecteer buiten het tekstvak om uw wijzigingen op te slaan.
 
-Wanneer u tikt of klikt om de tekstcomponent te selecteren, worden de details weergegeven in de eigenschappen-rail. U kunt de tekst ook in de rails bewerken.
+Wanneer u ervoor kiest om de tekstcomponent te selecteren, worden de details weergegeven in de eigenschappen rail. U kunt de tekst ook in de rails bewerken.
 
 ![Tekst bewerken in de eigenschappenbalk](assets/ue-editing-text-component-rail.png)
 
-Bovendien zijn de details op uw tekst beschikbaar in het eigenschappen spoor. Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat in de eigenschappenrails.
+De details van uw tekst zijn ook beschikbaar in de eigenschappen rail. Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat in de eigenschappenrails.
 
 ### RTF-tekst bewerken {#edit-rich-text}
 
 Als u binnen [componentmodus](#component-mode) en selecteert u een tekstcomponent met tekstopmaak, kunt u de tekst op zijn plaats bewerken door te dubbelklikken op de component of erop te dubbeltikken.
 
-Druk op Enter/Return of tik of klik buiten het tekstvak om de wijzigingen op te slaan.
+Druk op Enter/Return of selecteer buiten het tekstvak om uw wijzigingen op te slaan.
 
 ![Een RTF-component bewerken](assets/rich-text-editing.png)
 
-Bovendien zijn opmaakopties en details in de tekst beschikbaar in de eigenschappenrails. Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat in de eigenschappenrails.
+Opmaakopties en details in de tekst zijn ook beschikbaar in de eigenschappenrails. Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat in de eigenschappenrails.
 
 ### Media bewerken {#edit-media}
 
@@ -334,11 +334,11 @@ Als u binnen [componentmodus](#component-mode) en als u een afbeelding selecteer
 
 ![Media bewerken](assets/ue-edit-media.png)
 
-Tik of klik op de knop **Vervangen** onder de voorvertoning van de geselecteerde afbeelding in de eigenschappenrails om de afbeelding te vervangen door een andere afbeelding uit de bibliotheek met elementen.
+Selecteer de **Vervangen** onder de voorvertoning van de geselecteerde afbeelding in de eigenschappenrails om de afbeelding te vervangen door een andere afbeelding uit de bibliotheek met elementen.
 
 1. De [middelenkiezer](/help/assets/asset-selector.md#using-asset-selector) wordt geopend zodat u een element kunt selecteren.
-1. Tik of klik om een nieuw element te selecteren.
-1. Tik of klik op **Selecteren** om terug te keren naar de spoorstaaf waar het activum is vervangen.
+1. Selecteer deze optie om een nieuw element te selecteren.
+1. Selecteren **Selecteren** om terug te keren naar de spoorstaaf waar het activum is vervangen.
 
 Wijzigingen worden automatisch in de inhoud opgeslagen.
 
@@ -360,12 +360,12 @@ Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat
 
 Als u het inhoudsfragment in het dialoogvenster [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md) in plaats daarvan, klik [bewerkknop](#edit) in de modusrail.
 
-Afhankelijk van de behoeften van uw workflow kunt u het inhoudsfragment bewerken in de universele editor of rechtstreeks in de editor voor inhoudsfragmenten.
+Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht bewerken in de universele editor of rechtstreeks in de editor voor inhoudsfragmenten.
 
 ### Componenten toevoegen aan containers {#adding-components}
 
 1. Selecteer een containercomponent in de inhoudsstructuur of in de editor.
-1. Tik vervolgens op het pictogram Toevoegen of klik op het pictogram in de eigenschappentrack.
+1. Selecteer vervolgens het invoegpictogram in de eigenschappenrails.
 
    ![Een component selecteren om aan een container toe te voegen](assets/ue-add-component.png)
 
@@ -378,9 +378,9 @@ De component wordt opgenomen in de container en kan in de redacteur worden uitge
 ### Componenten uit containers verwijderen {#deleting-components}
 
 1. Selecteer een containercomponent in de inhoudsstructuur of in de editor.
-1. Tik of klik op het chevron-pictogram van de container om de inhoud ervan in de inhoudsstructuur uit te vouwen.
+1. Selecteer het chevron-pictogram van de container om de inhoud ervan in de inhoudsstructuur uit te vouwen.
 1. Selecteer vervolgens in de inhoudsstructuur een component in de container.
-1. Tik of klik op het verwijderpictogram in de eigenschappenrails.
+1. Selecteer het verwijderingspictogram in de eigenschappenrails.
 
    ![Een component verwijderen](assets/ue-delete-component.png)
 
@@ -394,7 +394,7 @@ De geselecteerde component is verwijderd.
 
 1. Selecteer een containercomponent in de inhoudsstructuur of in de editor.
 1. Indien nog niet in [de modus Inhoudsboomstructuur,](#content-tree-mode) ga naar de site.
-1. Tik of klik op het chevron-pictogram van de container om de inhoud ervan in de inhoudsstructuur uit te vouwen.
+1. Selecteer het chevron-pictogram van de container om de inhoud ervan in de inhoudsstructuur uit te vouwen.
 1. De greeppictogrammen van de belemmering naast de componenten binnen de container tonen dat u hen kunt herschikken. Sleep de componenten om deze binnen de container opnieuw te ordenen.
 
    ![Componenten opnieuw ordenen](assets/ue-reordering-components.png)

@@ -2,9 +2,9 @@
 title: Ontwikkeling van lokale AEM met de Universal Editor
 description: Leer hoe de Universele Redacteur het uitgeven op lokale AEM instanties voor ontwikkelingsdoeleinden steunt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ De Universal Editor-service bindt de Universal Editor en het back-endsysteem. Om
 
 [NodeJS versie 16](https://nodejs.org/en/download/releases) is vereist om een lokale kopie van de Universal Editor Service uit te voeren
 
-De Universal Editor Service wordt rechtstreeks door AEM Engineering gedistribueerd. gelieve uw ingenieurcontact in het VIP programma voor een lokaal exemplaar te bereiken.
+De Universal Editor Service wordt rechtstreeks door AEM Engineering gedistribueerd. Neem contact op met uw technicus in het VIP programma voor een lokale kopie.
 
 De techniek zal u van een `universal-editor-service.cjs` bestand. Sla dit op in uw lokale ontwikkelomgeving.
 

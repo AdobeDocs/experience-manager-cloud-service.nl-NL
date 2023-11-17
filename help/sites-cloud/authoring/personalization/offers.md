@@ -2,9 +2,9 @@
 title: Aanbiedingen maken en beheren (console Aanbiedingen)
 description: Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen kunt gebruiken
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 De **Aanbiedingen** console zal in de toekomst verouderd zijn. Dus vanaf nu is het:
 
-* Alleen beschikbaar voor klanten met *verouderd* reeds gedefinieerde aanbiedingen (d.w.z. reeds bestaand)
+* Alleen beschikbaar voor klanten met *verouderd* reeds gedefinieerde aanbiedingen (dat wil zeggen, bestaande aanbiedingen)
 * Aanbevolen dat dergelijke verouderde aanbiedingen worden geconverteerd naar Experience Fragment-aanbiedingen
    * Zodra het laatste verouderde aanbod is omgezet/verwijderd, wordt het **Aanbiedingen** console is niet meer beschikbaar.
 
@@ -116,7 +116,7 @@ Voor klanten met bestaande, oudere aanbiedingen geldt dat de **Aanbiedingssjablo
 Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u kunt [gebruik in de praktijk](/help/sites-cloud/authoring/personalization/targeted-content.md). Het creëren van aanbiedingen in de console van Aanbiedingen bespaart tijd wanneer verscheidene ervaringen de zelfde aanbieding vereisen:
 
 * Maak het aanbod eenmaal in de bibliotheek en gebruik het in meerdere ervaringen met uw merkactiviteiten.
-* Wijzig de aanbieding in de bibliotheek en de wijziging heeft invloed op alle ervaringen die met de wijziging worden gemaakt.
+* Wijzig de aanbieding in de bibliotheek en de wijziging is van invloed op alle ervaringen die er gebruik van maken.
 
 De console van Aanbiedingen organiseert aanbiedingen door merk. Elk merk bevat een bibliotheek met aanbiedingen die in de ervaringen van een merk kunnen worden gebruikt. Gebruik mappen om een hiërarchische structuur te definiëren voor het organiseren van aanbiedingen in elke bibliotheek. Met een logische mapstructuur kunnen auteurs eenvoudig aanbiedingen zoeken door te bladeren. Met tags en zoekgereedschappen kunnen auteurs ook aanbiedingen vinden.
 
@@ -126,21 +126,21 @@ Maak een merk waaraan uw aanbiedingen zijn gekoppeld. Open een merk in de consol
 
 Wanneer u een merk maakt met de console Aanbiedingen, wordt dit ook weergegeven in het dialoogvenster [Activiteitenconsole](/help/sites-cloud/authoring/personalization/activities.md) waar u activiteiten voor het merk kunt toevoegen en beheren.
 
-1. Klik of tik in de navigatieconsole op **Personalisatie** > **Aanbiedingen**.
+1. Selecteer in de navigatieconsole de optie **Personalisatie** > **Aanbiedingen**.
 
    ![Navigeren naar de console Aanbiedingen](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Klikken of tikken **Maken** en vervolgens **Maken** **Merk**.
-1. Selecteer de merksjabloon en klik of tik op **Volgende**.
+1. Selecteren **Maken** en vervolgens **Maken** **Merk**.
+1. Selecteer de merksjabloon en selecteer **Volgende**.
 1. Typ een titel voor het merk zoals u deze wilt weergeven in de consoles van Aanbiedingen en Activiteiten. Typ of selecteer eventueel een of meer tags die u aan het merk wilt koppelen.
-1. Klikken of tikken **Maken**.
+1. Selecteer **Maken**.
 
 ### Een map toevoegen aan een aanbiedingsbibliotheek {#add-a-folder-to-an-offer-library}
 
 Voeg een map toe aan de aanbiedingsbibliotheek van een merk om aanbiedingen te organiseren en op te slaan. U kunt een map maken onder het merk of onder andere mappen.
 
 1. Open in de console Aanbiedingen de locatie waar u de map wilt maken. Open bijvoorbeeld het merk om een map op hoofdniveau te maken of open een andere map in de bibliotheek.
-1. Klikken of tikken **Maken** > **Map of voorstel maken**.
+1. Selecteren **Maken** > **Map of voorstel maken**.
 
    ![Aanbiedingsmap maken](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
@@ -149,7 +149,7 @@ Voeg een map toe aan de aanbiedingsbibliotheek van een merk om aanbiedingen te o
 
    ![Mapeigenschappen definiëren](/help/sites-cloud/authoring/assets/offers-folder-properties.png)
 
-1. Klikken of tikken **Maken**.
+1. Selecteer **Maken**.
 
 ### Een voorstel toevoegen aan een bibliotheek met aanbiedingen {#add-an-offer-to-an-offer-library}
 
@@ -158,13 +158,13 @@ Voeg een aanbieding toe aan de aanbiedingsbibliotheek van een merk zodat deze aa
 Nadat u het voorstel hebt gemaakt, kunt u het openen om de inhoud te ontwerpen.
 
 1. In de console van Aanbiedingen, open de plaats waar u de aanbieding wilt tot stand brengen. Open bijvoorbeeld het merk om een aanbieding op hoofdniveau te maken of open een map in de bibliotheek.
-1. Klikken of tikken **Maken** > **Map of voorstel maken**.
+1. Selecteren **Maken** > **Map of voorstel maken**.
 
    ![Aanbiedingsmap maken](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. Selecteer de **Pagina voorstellen** sjabloon en klik of tik op **Volgende**.
-1. Typ een titel voor de aanbieding en selecteer of typ desgewenst een of meer tags die u aan de aanbieding wilt koppelen. Klik of tik vervolgens op **Maken**.
-1. Klik of tik in het bevestigingsdialoogvenster om de aanbieding voor bewerken te openen **Pagina openen**.
+1. Selecteer de **Pagina voorstellen** sjabloon en selecteer vervolgens **Volgende**.
+1. Typ een titel voor de aanbieding en selecteer desgewenst een of meer tags die u aan de aanbieding wilt koppelen. Selecteer vervolgens **Maken**.
+1. Selecteer in het bevestigingsdialoogvenster de optie voor het openen van de aanbieding voor bewerken **Pagina openen**.
 
 ### Een voorstel bewerken {#editing-an-offer}
 
@@ -172,7 +172,7 @@ Open een aanbieding en bewerk de inhoud zoals u die in de ervaringen wilt weerge
 
 U kunt een voorstel van een omslag in een aanbiedingsbibliotheek of van onderzoeksresultaten openen. Je kunt ook een voorstel openen vanuit een ervaring die gebruikmaakt van het voorstel.
 
-1. Tik of klik op het pictogram naast de aanbieding in de console Aanbiedingen en klik of tik op **Bewerken**.
+1. Selecteer in de console Aanbiedingen het pictogram naast de aanbieding en selecteer **Bewerken**.
 1. Voeg componenten toe aan de aanbieding en bewerk de componenteninhoud zoals gebruikelijk.
 
 ### Een voorstel verwijderen {#deleting-an-offer}
@@ -181,15 +181,15 @@ Een voorstel verwijderen wanneer het niet meer nodig is. Wanneer u een aanbiedin
 
 U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibliotheek of de zoekresultaten bekijkt.
 
-1. Tik of klik op het pictogram naast de aanbieding in de console Aanbiedingen en klik of tik op **Verwijderen**.
+1. Selecteer in de console Aanbiedingen het pictogram naast de aanbieding en selecteer **Verwijderen**.
 
-   Selecteer de aanbieding en klik of tik op **Verwijderen**.
+   Selecteer de aanbieding en selecteer **Verwijderen**.
 
-1. Klik of tik op **Verwijderen** om de schrapping te bevestigen.
+1. Selecteer in het dialoogvenster dat wordt weergegeven **Verwijderen** om de schrapping te bevestigen.
 1. Als de aanbieding in een of meer ervaringen wordt gebruikt, verschijnt er een dialoogvenster waarin wordt aangegeven dat naar de aanbieding wordt verwezen:
 
-   * Als u de aanbieding wilt verwijderen en deze uit de ervaringen wilt verwijderen, klikt u of tikt u op **Verwijderen forceren**.
-   * Klik of tik op **Annuleren**.
+   * Als u het voorstel wilt verwijderen en uit de ervaringen wilt verwijderen, selecteert u **Verwijderen forceren**.
+   * Selecteer **Annuleren**.
 
 ### Zoeken naar voorstellen {#searching-for-offers}
 
@@ -201,5 +201,5 @@ De huidige zoekcriteria worden naast de zoekresultaten weergegeven. U kunt de re
 
 Zoekvoorstellen:
 
-1. Klik of tik op het vergrootglaspictogram boven aan de console Aanbiedingen. Standaard is de zoekopdracht beperkt tot voorstellen.
+1. Selecteer boven aan de console Aanbiedingen het vergrootglaspictogram. Standaard is de zoekopdracht beperkt tot voorstellen.
 1. Voer uw trefwoord in om naar voorstellen te zoeken. Maak een keuze uit de resultaten.

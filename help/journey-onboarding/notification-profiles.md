@@ -4,9 +4,9 @@ description: Leer hoe u gebruikersprofielen maakt in de Admin Console voor het b
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Leer hoe u gebruikersprofielen maakt in de Admin Console voor het beheer van de 
 
 ## Overzicht {#overview}
 
-Van tijd tot tijd, moet de Adobe gebruikers betreffende hun AEM as a Cloud Service milieu&#39;s contacteren. Naast productmeldingen wordt in Adobe soms ook e-mail gebruikt voor meldingen. Er zijn twee typen e-mailmeldingen:
+Van tijd tot tijd, contacteert de Adobe gebruikers betreffende hun AEM as a Cloud Service milieu&#39;s. Naast productmeldingen wordt in Adobe soms ook e-mail gebruikt voor meldingen. Er zijn twee typen e-mailmeldingen:
 
 * **Melding incident** - Deze meldingen worden verzonden tijdens een incident of wanneer de Adobe een potentieel probleem met de beschikbaarheid van uw AEM as a Cloud Service omgeving heeft vastgesteld.
 * **Proactieve kennisgeving** - Deze meldingen worden verzonden wanneer een medewerker van het ondersteuningsteam van de Adobe advies wil geven over een mogelijke optimalisatie of aanbeveling die uw AEM as a Cloud Service omgeving ten goede kan komen.
@@ -148,4 +148,4 @@ De uitgenodigde gebruiker zal nu de berichten ontvangen. Herhaal deze stappen vo
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-* [Handelingencentrum](/help/operations/actions-center.md) - Gebruik het actiecentrum om op een gemakkelijke manier actie te ondernemen tegen incidenten en andere belangrijke informatie.
+* [Handelingencentrum](/help/operations/actions-center.md) - Gebruik het actiecentrum om incidenten en andere belangrijke informatie op een gemakkelijke manier aan te pakken.

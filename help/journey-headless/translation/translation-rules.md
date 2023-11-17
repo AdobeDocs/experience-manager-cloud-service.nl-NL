@@ -2,9 +2,9 @@
 title: Vertaalregels configureren voor inhoud zonder kop
 description: Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Omdat de Modellen van het Fragment van de Inhoud, die de structuur van uw Inhoud
 
 >[!TIP]
 >
->Over het algemeen biedt de architect van de inhoud de vertaler **Eigenschapnaam** s van alle velden die nodig zijn voor vertaling. Deze namen zijn nodig om vertaalregels te configureren. Als vertaler [kan deze vinden **Eigenschapnaam** zoals uzelf](getting-started.md#content-modlels) zoals eerder beschreven in deze reis.
+>Over het algemeen verschaft de contentarchitect de vertaalspecialist de **Eigenschapnaam** s van alle velden die nodig zijn voor vertaling. Deze namen zijn nodig om vertaalregels te configureren. Als vertaler [kan deze vinden **Eigenschapnaam** zoals uzelf](getting-started.md#content-modlels) zoals eerder beschreven in deze reis.
 
 ## Vertaalregels maken {#creating-rules}
 
@@ -64,32 +64,30 @@ De vertaalregels worden ontworpen om dergelijke scenario&#39;s te behandelen. No
 
 Er is een **Omzetconfiguratie** console beschikbaar voor het vormen van vertaalregels. Toegang tot dit bestand:
 
-1. Navigeren naar **Gereedschappen** -> **Algemeen**.
-1. Tik of klik op **Omzetconfiguratie**.
+1. Navigeren naar **Gereedschappen** > **Algemeen**.
+1. Selecteren **Omzetconfiguratie**.
 
-In de **Omzetconfiguratie** UI, zijn er een aantal opties beschikbaar voor uw vertaalregels. Hier benadrukken wij de meest noodzakelijke en typische stappen die voor een basisconfiguratie zonder kop worden vereist.
+In de **Omzetconfiguratie** UI, zijn er verscheidene opties beschikbaar voor uw vertaalregels. Hier benadrukken wij de meest noodzakelijke en typische stappen die voor een basisconfiguratie zonder kop worden vereist.
 
-1. Tik of klik op **Context toevoegen**, waarmee u een pad kunt toevoegen. Dit is het pad van de inhoud waarop de regel van toepassing is.
+1. Selecteren **Context toevoegen** een pad toevoegen. Dit is het pad van de inhoud waarop de regel van toepassing is.
    ![Context toevoegen](assets/add-translation-context.png)
-1. Gebruik de padbrowser om het vereiste pad te selecteren en tik of klik op de knop **Bevestigen** op te slaan. Onthoud dat Content Fragments, die inhoud zonder kop bevatten, zich doorgaans onder `/content/dam/<your-project>`.
+1. Gebruik de padbrowser om het gewenste pad te selecteren en selecteer **Bevestigen** opslaan. Onthoud dat Content Fragments, die inhoud zonder kop bevatten, zich doorgaans onder `/content/dam/<your-project>`.
    ![Het pad selecteren](assets/select-context.png)
-1. AEM slaat de configuratie op.
-1. Selecteer de context die u zojuist hebt gemaakt en tik of klik op **Bewerken**. Hierdoor wordt het **Editor voor omzettingsregels** om de eigenschappen te configureren.
+1. Selecteer de context die u net hebt gemaakt en selecteer **Bewerken**. Hierdoor wordt het **Editor voor omzettingsregels** om de eigenschappen te configureren.
    ![Editor voor vertaalregels](assets/translation-rules-editor.png)
 1. Standaard worden alle configuraties overgenomen van het bovenliggende pad, in dit geval `/content/dam`. Schakel de optie uit **Overnemen van`/content/dam`** zodat kunt u extra gebieden aan de configuratie toevoegen.
 1. Als deze optie is uitgeschakeld, onder de knop **Algemeen** in de lijst, voegt u de eigenschapnamen toe van de inhoudsfragmentmodellen die u gebruikt [eerder geïdentificeerd als velden voor vertaling.](getting-started.md#content-models)
-   1. Voer de naam van de eigenschap in het dialoogvenster **Nieuwe eigenschap** veld.
-   1. De opties **Vertalen** en **Overnemen** worden automatisch ingeschakeld.
-   1. Tik of klik op **Toevoegen**.
+   1. In de **Nieuwe eigenschap** voert u de naam van de eigenschap in. De opties **Vertalen** en **Overnemen** worden automatisch ingeschakeld.
+   1. Selecteren **Toevoegen**.
    1. Herhaal deze stappen voor alle velden die u moet vertalen.
-   1. Tik of klik op **Opslaan**.
+   1. Selecteren **Opslaan**.
       ![Eigenschap toevoegen](assets/add-property.png)
 
 U hebt nu uw vertaalregels geconfigureerd.
 
 ## Geavanceerd gebruik {#advanced-usage}
 
-Er zijn een aantal extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
+Er zijn verscheidene extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
 
 Dergelijke functies zijn meestal niet nodig om uw inhoud zonder kop te lokaliseren, maar u kunt er meer over lezen in het dialoogvenster [Aanvullende bronnen](#additional-resources) als u geïnteresseerd bent.
 

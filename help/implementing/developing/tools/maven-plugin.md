@@ -1,10 +1,10 @@
 ---
 title: Insteekmodule Adobe-inhoudspakket
-description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
+description: Gebruik de Content Package Maven-plug-in om AEM toepassingen te implementeren
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Met de plug-in Adobe Content Package Maven kunt u taken voor pakketimplementatie en -beheer integreren in uw Maven-projecten.
 
-De plaatsing van de geconstrueerde pakketten aan AEM wordt uitgevoerd door de Insteekmodule van het Pakket van de Inhoud van de Adobe en laat de automatisering van taken toe normaal die gebruikend AEM worden uitgevoerd [Pakketbeheer:](/help/implementing/developing/tools/package-manager.md)
+De plaatsing van de geconstrueerde pakketten aan AEM wordt uitgevoerd door de Insteekmodule van het Pakket van de Inhoud van de Adobe Maven en laat de automatisering van taken toe normaal die gebruikend AEM worden uitgevoerd [Pakketbeheer:](/help/implementing/developing/tools/package-manager.md)
 
 * Nieuwe pakketten maken van bestanden in het bestandssysteem.
 * Installeer en verwijder pakketten op AEM.
@@ -26,8 +26,9 @@ In dit document wordt beschreven hoe u deze taken beheert met de Maven. Het is e
 >[!NOTE]
 >
 >Pakket **creatie** is nu eigendom van de [Apache Jackrabbit FileVault Package Maven plugin.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>
 >* De `content-package-maven-plugin` ondersteunt geen pakket meer uit versie 1.0.2.
->* In dit artikel worden de **implementatie** van de geconstrueerde pakketten die moeten worden AEM, wordt uitgevoerd door de plug-in Adobe Content Package Maven.
+>* In dit artikel worden de **implementatie** van de geconstrueerde pakketten die moeten worden AEM, wordt uitgevoerd door de Adobe Content Package Maven plugin.
 
 ## Pakketten en de AEM projectstructuur {#aem-project-structure}
 
@@ -35,11 +36,11 @@ AEM as a Cloud Service houdt zich aan de recentste beste praktijken voor pakketb
 
 >[!TIP]
 >
->Zie voor meer informatie de [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) artikel in de AEM as a Cloud Service documentatie en de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentatie. Beide worden volledig ondersteund voor AEM 6.5.
+>Zie de [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) artikel in de AEM as a Cloud Service documentatie en de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentatie. Beide worden volledig ondersteund voor AEM 6.5.
 
 ## De insteekmodule voor het inhoudspakket verkrijgen {#obtaining-the-content-package-maven-plugin}
 
-De insteekmodule is beschikbaar via de [Centrale opslagplaats.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+De insteekmodule is beschikbaar via de [Centrale gegevensopslagruimte.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
 
 ## Doelstellingen en parameters van insteekmodule voor inhoudspakket
 
@@ -120,14 +121,14 @@ Naast de volgende parameters, zie de beschrijvingen in [Algemene parameters](#co
 
 | Naam | Type | Vereist | Standaardwaarde | Beschrijving |
 |---|---|---|---|---|
-| `artifact` | `String` | Nee | De waarde van de `artifactId` eigendom van het Maven-project | Een tekenreeks van het formulier `groupId:artifactId:version[:packaging]` |
-| `artifactId` | `String` | Nee | Geen | De id van het artefact dat moet worden geïnstalleerd |
+| `artifact` | `String` | Nee | De waarde van `artifactId` eigendom van het Maven-project | Een tekenreeks van het formulier `groupId:artifactId:version[:packaging]` |
+| `artifactId` | `String` | Nee | Geen | De id van het te installeren artefact |
 | `groupId` | `String` | Nee | Geen | De `groupId` van het te installeren artefact |
 | `install` | `boolean` | Nee | `true` | Hiermee wordt bepaald of het pakket automatisch moet worden uitgepakt wanneer het wordt geüpload |
-| `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | Nee | De waarde van de `localRepository` systeemvariabele | De lokale Maven opslagplaats die niet kan worden gevormd gebruikend de plugin configuratie aangezien het systeembezit altijd wordt gebruikt |
+| `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | Nee | De waarde van `localRepository` systeemvariabele | De lokale Maven opslagplaats die niet kan worden gevormd gebruikend de plugin configuratie aangezien het systeembezit altijd wordt gebruikt |
 | `packageFile` | `java.io.File` | Nee | Het primaire artefact dat voor het Maven project wordt bepaald | De naam van het te installeren pakketbestand |
 | `packaging` | `String` | Nee | `zip` | Het type verpakking van het te installeren artefact |
-| `pomRemoteRepositories` | `java.util.List` | Ja | De waarde van de `remoteArtifactRepositories` eigenschap die is gedefinieerd voor het Maven-project | Deze waarde kan niet worden gevormd gebruikend de pluginconfiguratie en moet in het project worden gespecificeerd. |
+| `pomRemoteRepositories` | `java.util.List` | Ja | De waarde van `remoteArtifactRepositories` eigenschap die is gedefinieerd voor het Maven-project | Deze waarde kan niet worden gevormd gebruikend de pluginconfiguratie en moet in het project worden gespecificeerd. |
 | `project` | `org.apache.maven.project.MavenProject` | Ja | Het project waarvoor de insteekmodule is geconfigureerd | Het Maven-project dat impliciet is omdat het project de plug-inconfiguratie bevat |
 | `repositoryId` (POM), `repoID` (opdrachtregel) | `String` | Nee | `temp` | De id van de opslagplaats waarvan het artefact wordt opgehaald |
 | `repositoryUrl` (POM), `repoURL` (opdrachtregel) | `String` | Nee | Geen | De URL van de opslagplaats waarvan het artefact wordt opgehaald |
@@ -143,7 +144,7 @@ Alle parameters van het doel ls worden beschreven in [Algemene parameters](#comm
 
 ### rm {#rm}
 
-Hiermee wordt een pakket verwijderd uit [Pakketbeheer](/help/implementing/developing/tools/package-manager.md).
+Een pakket verwijderen uit [Pakketbeheer](/help/implementing/developing/tools/package-manager.md).
 
 #### Parameters {#parameters-3}
 
@@ -159,7 +160,7 @@ Alle parameters van het doel voor verwijderen worden beschreven in het dialoogve
 
 ### package {#package}
 
-Maakt een inhoudspakket. De standaardconfiguratie van het pakketdoel bevat de inhoud van de map waarin gecompileerde bestanden worden opgeslagen. De uitvoering van het pakketdoel vereist dat de compilatiefase is voltooid. Het pakketdoel is gebonden aan de pakketfase van de Maven-levenscyclus.
+Maakt een inhoudspakket. De standaardconfiguratie van het pakketdoel omvat de inhoud van de folder waar de gecompileerde dossiers worden bewaard. De uitvoering van het pakketdoel vereist dat de compilatiefase is voltooid. Het pakketdoel is gebonden aan de pakketfase van de Maven-levenscyclus.
 
 #### Parameters {#parameters-5}
 
@@ -184,7 +185,7 @@ Naast de volgende parameters, zie de beschrijving van `name` in de [Algemene par
 | `requiresRoot` | `boolean` | Ja | false | Definieert of het pakket root vereist. Wordt de `requiresRoot` eigendom van de `properties.xml` bestand. |
 | `subPackages` | `java.util.List` | Nee | Geen |  |
 | `version` | `java.lang.String` | Ja | De versie die is gedefinieerd in het Maven-project | De versie van het inhoudspakket |
-| `workDirectory` | `java.io.File` | Ja | De folder die in het Maven project (bouwstijlfase wordt bepaald) | De map met de inhoud die in het pakket moet worden opgenomen |
+| `workDirectory` | `java.io.File` | Ja | De folder die in het Maven project (bouwstijlfase wordt bepaald) | De map die de inhoud bevat die in het pakket moet worden opgenomen |
 
 #### Filters gebruiken {#using-filters}
 
@@ -208,7 +209,7 @@ In het volgende filtervoorbeeld wordt de XML-structuur getoond die moet worden g
 
 ##### Importmodus {#import-mode}
 
-De `mode` element definieert hoe de inhoud van de opslagplaats wordt beïnvloed wanneer het pakket wordt geïmporteerd. De volgende waarden kunnen worden gebruikt:
+De `mode` element definieert hoe inhoud wordt beïnvloed door de repository wanneer het pakket wordt geïmporteerd. De volgende waarden kunnen worden gebruikt:
 
 * **Samenvoegen:** Inhoud in het pakket die zich nog niet in de opslagplaats bevindt, wordt toegevoegd. De inhoud in zowel het pakket als de opslagplaats blijft ongewijzigd. Er wordt geen inhoud uit de opslagplaats verwijderd.
 * **Vervangen:** Inhoud in het pakket die zich niet in de opslagplaats bevindt, wordt toegevoegd aan de opslagplaats. Inhoud in de opslagplaats wordt vervangen door overeenkomende inhoud in het pakket. Inhoud wordt verwijderd uit de opslagplaats wanneer deze niet bestaat in het pakket.
@@ -267,4 +268,4 @@ De nieuwste AEM Project Archetype implementeert de pakketstructuur met best prac
 
 >[!TIP]
 >
->Zie voor meer informatie de [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) artikel in de AEM as a Cloud Service documentatie en de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentatie. Beide worden volledig ondersteund voor AEM 6.5.
+>Zie de [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) artikel in de AEM as a Cloud Service documentatie en de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentatie. Beide worden volledig ondersteund voor AEM 6.5.

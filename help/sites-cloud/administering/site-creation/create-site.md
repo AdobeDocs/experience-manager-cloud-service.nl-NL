@@ -4,9 +4,9 @@ description: Leer hoe u AEM kunt gebruiken om een site te maken met behulp van s
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -55,19 +55,19 @@ Het is eenvoudig om een site te maken met een sjabloon.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tik of klik op **Maken** rechtsboven in het scherm en in het keuzemenu selecteert u **Site van sjabloon**.
+1. Selecteren **Maken** rechtsboven in het scherm en in het keuzemenu selecteert u **Site van sjabloon**.
 
    ![Een site maken op basis van een sjabloon](../assets/create-site-from-template.png)
 
-1. Tik of klik in de wizard Site maken op een bestaande sjabloon in het linkerdeelvenster of op **Importeren** boven aan de linkerkolom om een nieuwe sjabloon te importeren.
+1. Selecteer in de wizard Site maken een bestaande sjabloon in het linkerdeelvenster of in **Importeren** boven aan de linkerkolom om een nieuwe sjabloon te importeren.
 
    ![Wizard Site maken](../assets/site-creation-wizard.png)
 
-   1. Als u ervoor kiest om in de bestandenbrowser de sjabloon te importeren die u wilt gebruiken en tikt of klikt u op **Uploaden**.
+   1. Als u ervoor kiest om in de bestandenbrowser de sjabloon te importeren die u wilt gebruiken en selecteert u **Uploaden**.
 
    1. Zodra het geüpload, verschijnt het in de lijst van beschikbare malplaatjes.
 
-1. Als u een sjabloon selecteert, wordt informatie over de sjabloon in de rechterkolom weergegeven. Selecteer de gewenste sjabloon en tik of klik op **Volgende**.
+1. Als u een sjabloon selecteert, wordt informatie over de sjabloon in de rechterkolom weergegeven. Selecteer de gewenste sjabloon en selecteer **Volgende**.
 
    ![Een sjabloon selecteren](../assets/select-site-template.png)
 
@@ -77,11 +77,11 @@ Het is eenvoudig om een site te maken met een sjabloon.
    * De sitenaam wordt onderdeel van de URL.
    * De sitenaam moet voldoen aan [Naamconventies voor pagina&#39;s AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. Tik of klik op **Maken** en de site wordt gemaakt van de sitesjabloon.
+1. Selecteren **Maken** en de site wordt gemaakt van de sitesjabloon.
 
    ![Details van de nieuwe site](../assets/create-site-details.png)
 
-1. Tik of klik in het bevestigingsvenster dat verschijnt op **Gereed**.
+1. Selecteer in het bevestigingsvenster dat wordt weergegeven **Gereed**.
 
    ![Dialoogvenster Succes](../assets/success.png)
 
@@ -93,7 +93,7 @@ Inhoudsauteurs kunnen nu beginnen met ontwerpen!
 
 ## Aanpassing van site {#site-customization}
 
-Als voor uw site aanpassingen nodig zijn die verder gaan dan de beschikbare sjablonen, hebt u een aantal opties.
+Als voor uw site aanpassingen nodig zijn die verder gaan dan de sjablonen die beschikbaar zijn, hebt u verschillende opties.
 
 * Als de sitestructuur of initiële inhoud moet worden aangepast, [de sitesjabloon kan aan uw vereisten worden aangepast](site-templates.md).
 * Als de sitestijl moet worden aangepast, [het site-thema kan worden gedownload en aangepast](/help/journey-sites/quick-site/overview.md).

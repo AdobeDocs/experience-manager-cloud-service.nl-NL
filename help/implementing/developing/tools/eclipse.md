@@ -2,9 +2,9 @@
 title: AEM Developer Tools for Eclipse
 description: Leer hoe u de AEM Developer Tools for Eclipse, een Eclipse-plug-in op basis van de Eclipse-plug-in voor Apache Sling, gebruikt.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ In Eclipse, bepaalt het Perspectief de acties en de meningen beschikbaar binnen 
 
 _Experience Manager Development Tools for Eclipse_ Geef een AEM perspectief dat u volledige controle over uw AEM Projecten en instanties biedt. Het AEM perspectief openen:
 
-1. Selecteer in de menubalk Eclipse de optie **Venster** -> **Perspectief** -> **Perspectief openen** -> **Overige**.
+1. Selecteer in de menubalk Eclipse de optie **Venster** > **Perspectief** > **Perspectief openen** > **Overige**.
 1. Selecteren **AEM** in het dialoogvenster en klik op **Openen**.
 
 ![Het AEM perspectief in Eclipse](assets/eclipse-aem-perspective.png)
@@ -83,7 +83,7 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
    >[!NOTE]
    >
-   >Deze stap kan even duren omdat m2eclipse de archetype catalogi moet scannen.
+   >Deze stap kan even duren omdat m2eclipse de catalogi van archetype moet aftasten.
 
 1. Kies `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` in het menu en klik vervolgens op **Volgende**.
 
@@ -139,7 +139,7 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
 1. Doe dan het zelfde voor `PROJECT.ui.content` en vervang de inhoudsmap door een van de pakketten:
 
    1. In het paneel van de Ontdekkingsreiziger van het Project, ontvouw `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. Klik met de rechtermuisknop op de diepere inhoudsmap en kies **Tonen in** -> **Systeemverkenner**.
+   1. Klik met de rechtermuisknop op de diepere inhoudsmap en kies **Tonen in** > **Systeemverkenner**.
    1. Verwijder de inhoudsmap die u nu moet zien en plaats hier de inhoudsmap van het inhoudspakket.
    1. Klik in Eclipse met de rechtermuisknop op de knop `PROJECT.ui.content` project en kies **Vernieuwen**.
 
@@ -194,7 +194,7 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
 
 Als u klaar bent, moet het pakket op de instantie worden uitgevoerd en als u het bestand opslaat, wordt elke wijziging automatisch gesynchroniseerd met de instantie.
 
-Als u een pakket opnieuw wilt maken uit uw project, klikt u met de rechtermuisknop op de knop `PROJECT.ui.apps` of `PROJECT.ui.content` en kiest u **Uitvoeren als** -> **Maven Install**.
+Als u een pakket uit uw project wilt opnieuw bouwen, klik met de rechtermuisknop aan `PROJECT.ui.apps` of `PROJECT.ui.content` en kiest u **Uitvoeren als** > **Maven Install**.
 
 U hebt nu een doelmap gemaakt met daarin uw pakket (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
@@ -206,7 +206,7 @@ Om ongeldige gebiedsdelen en projectdefinitie op te lossen ga als volgt te werk:
 
 1. Selecteer alle gemaakte projecten.
 1. Klik met de rechtermuisknop.
-1. Selecteer in het contextmenu **Maven** -> **Projecten bijwerken**.
+1. Selecteer in het contextmenu **Maven** > **Projecten bijwerken**.
 1. Controleren **Updates van momentopname/releases forceren**.
 1. Klikken **OK**.
 

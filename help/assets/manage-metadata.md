@@ -6,14 +6,14 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1987'
 ht-degree: 3%
 
 ---
 
-# Metagegevens van uw digitale middelen beheren {#managing-metadata-for-digital-assets}
+# Metagegevens van uw digitale elementen beheren {#managing-metadata-for-digital-assets}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -33,9 +33,9 @@ Metagegevens zijn gegevens over gegevens. In dit verband verwijzen gegevens naar
 Metagegevens zijn de verzameling van alle gegevens die beschikbaar zijn voor een element, maar die niet noodzakelijkerwijs in die afbeelding voorkomen. Voorbeelden van metagegevens zijn:
 
 * Naam van het element.
-* Tijdstip en datum van laatste wijziging.
+* Tijd en datum van laatste wijziging.
 * Grootte van het middel zoals het in de bewaarplaats werd opgeslagen.
-* Naam van de map waarin deze zich bevindt.
+* Naam van de map waarin de map zich bevindt.
 * Gerelateerde elementen of toegepaste tags.
 
 Het bovenstaande zijn de basiseigenschappen van metagegevens die [!DNL Experience Manager] kan beheren voor elementen, waardoor gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde of gewijzigde elementen probeert te detecteren.
@@ -62,10 +62,10 @@ Om deze redenen [!DNL Assets] biedt u de juiste middelen voor het maken, beheren
 
 De twee basistypen metagegevens zijn technische metagegevens en beschrijvende metagegevens.
 
-Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. [!DNL Experience Manager Assets] en andere software bepalen automatisch de technische metagegevens en de metagegevens kunnen veranderen wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Voorbeelden van technische metagegevens zijn:
+Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. [!DNL Experience Manager Assets] en andere software bepalen automatisch de technische metagegevens en de metagegevens kunnen veranderen wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Enkele technische metagegevens zijn:
 
 * Grootte van een bestand.
-* Dimension (hoogte en breedte) van een afbeelding.
+* Dimensionen (hoogte en breedte) van een afbeelding.
 * Bitsnelheid van een audio- of videobestand.
 * Resolutie (detailniveau) van een afbeelding.
 
@@ -90,12 +90,12 @@ De laatste wijzigingsdatum en -gebruiker worden niet gewijzigd:
 
 ## Coderingsnormen {#encoding-standards}
 
-Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Een selectie coderingsstandaarden wordt ondersteund:
+Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Er wordt ondersteuning geboden voor een selectie coderingsstandaarden:
 
 * XMP: gebruikt door [!DNL Assets] om de geëxtraheerde metagegevens op te slaan in de gegevensopslagruimte.
 * ID3: voor audio- en videobestanden.
-* EXIF: voor afbeeldingsbestanden.
-* Overige/Verouderd: van [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
+* Exif: voor afbeeldingsbestanden.
+* Overig/Verouderd: van [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
 
 ### XMP {#xmp}
 
@@ -125,17 +125,17 @@ Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch v
 
 Andere metagegevens die kunnen worden ingesloten vanuit bestanden, zijn onder andere [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
 
-## Metagegevens van uw digitale middelen beheren {#manage-assets-metadata}
+## Metagegevens van uw digitale elementen beheren {#manage-assets-metadata}
 
-Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in elementen bulksgewijs kunt doorgeven. Gebruik de [!UICONTROL Properties] pagina om de eigenschappen van metagegevens te wijzigen in een algemene waarde of om tags toe te voegen of te wijzigen. Gebruik de Schema-editor om de pagina Eigenschappen van metagegevens aan te passen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens.
+Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in meerdere elementen kunt doorgeven. Gebruik de [!UICONTROL Properties] pagina om de eigenschappen van metagegevens te wijzigen in een algemene waarde of om tags toe te voegen of te wijzigen. Gebruik de Schema-editor om de pagina Eigenschappen van metagegevens aan te passen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens.
 
 >[!NOTE]
 >
->De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de elementen die beschikbaar zijn in verschillende mappen of die overeenkomen met een algemeen criterium, is het mogelijk om [bulksgewijs bijwerken van metagegevens na het zoeken](/help/assets/search-assets.md#metadata-updates).
+>De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de elementen die beschikbaar zijn in verschillende mappen of die overeenkomen met een algemeen criterium, is het mogelijk om [bulkupdate van metagegevens na het zoeken](/help/assets/search-assets.md#metadata-updates).
 
 1. Navigeer naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
-1. Tik/klik op de werkbalk **[!UICONTROL Properties]** om de [!UICONTROL Properties] pagina voor de geselecteerde elementen.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Properties]** om de [!UICONTROL Properties] pagina voor de geselecteerde elementen.
 
    >[!NOTE]
    >
@@ -147,11 +147,10 @@ Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen te
    >[!NOTE]
    >
    >* In de [!UICONTROL Properties] pagina, kunt u elementen uit de elementenlijst verwijderen door de selectie te annuleren. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
-   >* Selecteer boven aan de lijst met elementen het selectievakje bij **[!UICONTROL Title]** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
+   >* Selecteer boven aan de lijst met elementen het selectievakje bij **[!UICONTROL Title]** schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
-
-1. Tik op een ander metagegevensschema voor de elementen of klik op **[!UICONTROL Settings]** op de werkbalk en selecteer het gewenste schema. Sla de wijzigingen op.
-1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Tik of klik op **[!UICONTROL Submit]**.
+1. Selecteer een ander metagegevensschema voor de elementen door **[!UICONTROL Settings]** op de werkbalk en selecteer het gewenste schema. Sla de wijzigingen op.
+1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Selecteer **[!UICONTROL Submit]**.
 
    >[!CAUTION]
    >
@@ -266,4 +265,3 @@ Door workflows te maken die op metagegevens zijn gebaseerd, kunt u bepaalde proc
 >
 >* [XMP-metadata](xmp-metadata.md)
 >* [Metagegevens bewerken of toevoegen](meta-edit.md)
-

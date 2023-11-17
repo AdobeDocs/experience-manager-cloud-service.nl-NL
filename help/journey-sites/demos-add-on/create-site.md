@@ -2,9 +2,9 @@
 title: Demo-site maken
 description: Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In het vorige document van de AEM Reference Demos Add-on trip, [Programma maken]
 * Zorg dat u weet hoe u de Add-on Reference Demos voor het nieuwe programma activeert.
 * Kan een pijpleiding in werking stellen om toe:voegen-op inhoud op te stellen.
 
-In dit artikel wordt de volgende stap van het proces beschreven door een nieuwe site of een AEM Screens-project te maken in AEM op basis van de sjablonen van de invoegtoepassing voor de demodus van de referentie.
+In dit artikel wordt de volgende stap van het proces beschreven door een site of AEM Screens-project te maken in AEM op basis van de sjablonen van de invoegtoepassing voor demo van referentie.
 
 ## Doelstelling {#objective}
 
@@ -35,23 +35,23 @@ Dit document helpt u begrijpen hoe te om een plaats tot stand te brengen die op 
 
 Zodra de pijpleiding toe:voegen-aan van de Demo van de Verwijzing heeft opgesteld, kunt u tot het AEM auteursmilieu toegang hebben om demoplaatsen tot stand te brengen die op de toe:voegen-op inhoud worden gebaseerd.
 
-1. Tik op de pagina met het programmaoverzicht in Cloud Manager of klik op de koppeling naar de AEM ontwerpomgeving.
+1. Selecteer op de pagina met het programmaoverzicht in Cloud Manager de koppeling naar de AEM ontwerpomgeving.
 
    ![Toegang tot ontwerpomgeving](assets/access-author.png)
 
-1. Tik of klik in het hoofdmenu van AEM **Sites**.
+1. Selecteer in het hoofdmenu van AEM **Sites**.
 
    ![Toegang tot sites](assets/access-sites.png)
 
-1. Tik of klik in de siteconsole op **Maken** rechtsboven in het scherm en selecteert u **Site van sjabloon** in de vervolgkeuzelijst.
+1. Selecteer in de siteconsole de optie **Maken** rechtsboven in het scherm en selecteert u **Site van sjabloon** in de vervolgkeuzelijst.
 
    ![Site maken van sjabloon](assets/create-site-from-template.png)
 
-1. De wizard voor het maken van de site wordt gestart. In de linkerkolom kunt u de demo malplaatjes zien die de pijpleiding aan uw auteursinstantie opstelde. Tik of klik op een pictogram om het te selecteren en details in de rechterkolom weer te geven. Als u AEM Screens wilt testen of demo, moet u de optie **We.Cafe-sitesjabloon**. Tik of klik op **Volgende**.
+1. De wizard voor het maken van de site wordt gestart. In de linkerkolom kunt u de demo malplaatjes zien die de pijpleiding aan uw auteursinstantie opstelde. Selecteer een optie om deze te selecteren en geef details weer in de rechterkolom. Als u AEM Screens wilt testen of demo, moet u **We.Cafe-sitesjabloon**. Selecteren **Volgende**.
 
    ![Wizard Site maken](assets/site-creation-wizard.png)
 
-1. Geef in het volgende scherm een titel op voor uw site of schermproject. U kunt een sitenaam opgeven of genereren op basis van de titel, als u deze weglaat. Tik of klik op **Maken**.
+1. Geef in het volgende scherm een titel op voor uw site of schermproject. U kunt een sitenaam opgeven of genereren op basis van de titel, als u deze weglaat. Selecteer **Maken**.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
@@ -59,7 +59,7 @@ Zodra de pijpleiding toe:voegen-aan van de Demo van de Verwijzing heeft opgestel
 
    ![Sitegegevens](assets/site-details.png)
 
-1. Het maken van de site wordt bevestigd door een dialoogvenster. Tik of klik op **Gereed**.
+1. Het maken van de site wordt bevestigd door een dialoogvenster. Selecteren **Gereed**.
 
    ![Site maken voltooid](assets/site-creation-complete.png)
 
@@ -77,11 +77,11 @@ Nu uw demosite is gemaakt, kunt u deze op dezelfde manier gebruiken als elke and
 
    ![Kolomweergave](assets/column-view.png)
 
-1. Tik of klik op de site om de structuur en inhoud ervan te bekijken. De kolomweergave wordt voortdurend uitgebreid terwijl u door de inhoudsstructuur van de demosite navigeert.
+1. Selecteer de site om de structuur en inhoud ervan te bekijken. De kolomweergave wordt voortdurend uitgebreid terwijl u door de inhoudsstructuur van de demosite navigeert.
 
    ![Sitestructuur](assets/site-structure.png)
 
-1. Tik of klik op een pagina om deze te selecteren en tik of klik op een pagina **Bewerken** in de werkbalk.
+1. Selecteer een pagina om deze te selecteren en selecteer vervolgens **Bewerken** in de werkbalk.
 
    ![Pagina selecteren](assets/select-page.png)
 
@@ -103,7 +103,7 @@ Nu u dit deel van de AEM Toelage van de Demo van de Verwijzing hebt voltooid zou
 
 U kunt nu de functies van AEM testen met add-on inhoud. U hebt twee opties om uw reis voort te zetten:
 
-* Als u AEM Screens-inhoud volledig wilt demo- en testen, moet u een site implementeren op basis van de **We.Cafe-sitesjabloon** zoals hierboven beschreven en doorgaan [Schakel AEM Screens for Your Demo Site in.](screens.md)
+* Als u AEM Screens-inhoud volledig wilt demo- en testen, controleert u of u een site hebt geïmplementeerd op basis van de **We.Cafe-sitesjabloon** zoals hierboven beschreven en doorgaan [Schakel AEM Screens for Your Demo Site in.](screens.md)
 * Als u alleen Sites-inhoud wilt demo, gaat u verder [Uw demosites beheren,](manage.md) waar u meer te weten komt over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
 
 ## Aanvullende bronnen {#additional-resources}

@@ -2,9 +2,9 @@
 title: Progressieve webtoepassingsfuncties inschakelen
 description: AEM Sites stelt de auteur van de inhoud in staat om via eenvoudige configuratie progressieve webtoepassingsmogelijkheden voor elke site in te schakelen in plaats van codering.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1998'
 ht-degree: 0%
 
 ---
@@ -102,8 +102,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 Met [de voorwaarden](#prerequisites) , is het voor de auteur van de inhoud eenvoudig om PWA-functies in te schakelen voor een site. Hieronder volgt een basisoverzicht van hoe u dit kunt doen. Afzonderlijke opties worden gedetailleerd in de sectie [Gedetailleerde opties.](#detailed-options)
 
 1. Log in AEM.
-1. Tik of klik in het hoofdmenu op **Navigatie** -> **Sites**.
-1. Selecteer uw siteproject en tik of klik op [**Eigenschappen**](/help/sites-cloud/authoring/fundamentals/page-properties.md) of gebruik de sneltoets `p`.
+1. Selecteer in het hoofdmenu de optie **Navigatie** > **Sites**.
+1. Selecteer uw siteproject en selecteer [**Eigenschappen**](/help/sites-cloud/authoring/fundamentals/page-properties.md) of gebruik de sneltoets `p`.
 1. Selecteer de **Progressieve webtoepassing** en configureert u de toepasselijke eigenschappen. U wilt ten minste:
    1. Selecteer de optie **PWA inschakelen**.
    1. Definieer de **OpstartURL**.
@@ -123,7 +123,7 @@ Met [de voorwaarden](#prerequisites) , is het voor de auteur van de inhoud eenvo
 
       ![Offline PWA-paden definiëren](../assets/pwa-offline.png)
 
-1. Tik of klik op **Opslaan en sluiten**.
+1. Selecteren **Opslaan en sluiten**.
 
 Uw site is nu geconfigureerd en u kunt [installeer de toepassing als een lokale toepassing.](#using-pwa-enabled-site)
 

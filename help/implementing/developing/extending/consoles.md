@@ -2,9 +2,9 @@
 title: Consoles aanpassen
 description: Leer over de verschillende opties die AEM verstrekt om de consoles van uw auteursinstantie aan te passen.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ AEM biedt opties voor het aanpassen van de consoles (en de [functionaliteit voor
 
 Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit aan te bieden, terwijl het hergebruiken van standaardfuncties, voorwerpen, en methodes. Wanneer het aanpassen met clientlibs, kunt u uw eigen clientlib onder creëren `/apps.` Het kan bijvoorbeeld de code bevatten die voor uw aangepaste component wordt vereist.
 
-Raadpleeg het document voor meer informatie over clientlibs [Client-Side Libraries gebruiken op AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Zie [Client-Side bibliotheken gebruiken op AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Bedekkingen {#overlays}
 
@@ -25,11 +25,11 @@ Bedekkingen zijn gebaseerd op knooppuntdefinities en bieden u de mogelijkheid om
 
 Bedekkingen kunnen op verschillende manieren worden gebruikt om uw AEM uit te breiden. In de volgende secties worden verschillende voorbeelden gegeven.
 
-Zie het document voor meer informatie over overlays [Bedekkingen voor Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+Zie ook [Bedekkingen voor Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->Raadpleeg het document als u interesse hebt in opties om de ontwerpervaring aan te passen [Paginaontwerp aanpassen.](/help/implementing/developing/extending/page-authoring.md)
+>Als u geïnteresseerd bent in opties om de ontwerpervaring aan te passen, raadpleegt u [Paginaontwerp aanpassen](/help/implementing/developing/extending/page-authoring.md).
 
 ## De standaardweergave voor een console aanpassen {#customizing-the-default-view-for-a-console}
 
@@ -117,4 +117,4 @@ Als u aanvullende gegevens wilt invoegen, moet u een [PageInfoProvider](https://
 
 Wanneer het gebruiken van een console, moet een gebruiker vaak uit middelen zoals pagina&#39;s, componenten, of activa selecteren. Dit kan de vorm hebben van een lijst waaruit de auteur een punt moet kiezen.
 
-Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie het document[Paginaontwerp aanpassen](/help/implementing/developing/extending/page-authoring.md#filtering-resources) voor meer informatie.
+Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [Paginaontwerp aanpassen](/help/implementing/developing/extending/page-authoring.md#filtering-resources) voor meer informatie.

@@ -4,9 +4,9 @@ description: Leer de beste praktijken die door Adobe engineering en raadplegende
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ De extra voordelen van het gebruiken van een blauwdrukconfiguratie zijn dat zij:
 
 Als er niet naar een blauwdrukconfiguratie wordt verwezen, kunnen rollouts alleen worden geïnitieerd vanuit de live kopieën zelf, waarbij inhoud van de bron wordt opgehaald.
 
-Wanneer u een nieuwe site maakt met Live Copy, is het handig om blauwdrukconfiguraties te maken om ervoor te zorgen dat de volledige MSM-functieset beschikbaar is.
+Wanneer u een site maakt met Live Copy, is het handig om blauwdrukconfiguraties te maken om ervoor te zorgen dat de volledige MSM-functieset beschikbaar is.
 
 >[!NOTE]
 >

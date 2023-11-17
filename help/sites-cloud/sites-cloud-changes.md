@@ -2,9 +2,9 @@
 title: Opvallende wijzigingen in AEM Sites in AEM Cloud Service
 description: Meer informatie over opmerkelijke wijzigingen in AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '535'
 ht-degree: 13%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 13%
 
 # Belangrijke wijzigingen in AEM Sites as a Cloud Service {#notable-changes}
 
-AEM Sites as a Cloud Service biedt mogelijkheden voor ervaringsbeheer als onderdeel van het cloud-native AEM as a Cloud Service platform. Naast de belangrijkste voordelen van AEM as a Cloud Service, zoals wolkenkrabber-inheemse scalability, uptime, en altijd bijgewerkt zijn, verstrekt as a Cloud Service AEM Sites ook een aantal plaatsen-specifieke veranderingen en toevoegingen.
+AEM Sites as a Cloud Service biedt mogelijkheden voor ervaringsbeheer als onderdeel van het cloud-native AEM as a Cloud Service platform. Naast de belangrijkste voordelen van AEM as a Cloud Service, zoals wolkenbestendige schaalbaarheid, uptime en altijd up-to-date zijn, biedt AEM Sites as a Cloud Service ook verschillende Sites-specifieke wijzigingen en toevoegingen.
 
 >[!NOTE]
 >In dit document worden de belangrijkste wijzigingen in AEM Sites gemarkeerd. Voor veranderingen algemeen in AEM as a Cloud Service, en andere modules, zie:

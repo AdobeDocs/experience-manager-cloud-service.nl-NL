@@ -2,9 +2,9 @@
 title: Content Fragment Models (Assets - Content Fragments)
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2931'
 ht-degree: 2%
 
 ---
@@ -88,7 +88,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
 1. **Een veld verwijderen**
 
-   Selecteer het gewenste veld en klik op het pictogram van de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
+   Selecteer het vereiste veld en selecteer vervolgens het prullenbakpictogram. U wordt gevraagd de actie te bevestigen.
 
    ![remove](assets/cfm-models-06.png)
 
@@ -113,7 +113,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 * **Datum en tijd**
    * Een datum en/of tijd toevoegen
 * **Opsomming**
-   * Een set selectievakjes, keuzerondjes of vervolgkeuzelijsten toevoegen
+   * Een set selectievakjes, keuzerondjes of vervolgkeuzelijstvelden toevoegen
 * **Tags**
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
 * **Content Reference**
@@ -331,9 +331,9 @@ Voor volledige controle over het gebruik van uw modellen van het Fragment van de
 
 ### Een inhoudsfragmentmodel inschakelen {#enabling-a-content-fragment-model}
 
-Nadat een model is gemaakt, moet het worden ingeschakeld zodat het:
+Wanneer een model wordt gecreeerd moet het worden toegelaten zodat het:
 
-* Deze optie is beschikbaar voor selectie wanneer u een nieuw inhoudsfragment maakt.
+* Deze optie is beschikbaar voor selectie wanneer u een inhoudsfragment maakt.
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
 * Is beschikbaar aan GraphQL; zo wordt het schema geproduceerd.
 

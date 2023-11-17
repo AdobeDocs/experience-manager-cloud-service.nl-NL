@@ -1,17 +1,17 @@
 ---
-title: Het toelaten van de Voor-Eind Pijpleiding
+title: Het toelaten van de Voorste Pijpleiding
 description: Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt toelaten om plaatsthema's te gebruiken om uw plaats sneller aan te passen.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# Het toelaten van de Voor-Eind Pijpleiding {#enable-front-end-pipeline}
+# Het toelaten van de Voorste Pijpleiding {#enable-front-end-pipeline}
 
 Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt toelaten om plaatsthema&#39;s te gebruiken om uw plaats sneller aan te passen.
 
@@ -19,7 +19,7 @@ Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt toelaten om pla
 
 De front-end pijpleiding is een mechanisme dat enkel de front-end code van uw websites kan snel opstellen die op worden gebaseerd [sitethema&#39;s](site-themes.md) en [sitesjablonen.](site-templates.md)
 
-In plaats van de full-stack te implementeren, wordt alleen front-end code afgehandeld door deze pijplijn waardoor het proces sneller verloopt en ontwikkelaars aan de voorkant ook in staat zijn uw site eenvoudig en snel aan te passen zonder kennis van AEM.
+In plaats van de full-stack te implementeren, wordt alleen front-end code afgehandeld door deze pijplijn, waardoor het proces sneller verloopt. Bovendien kunnen front-end ontwikkelaars uw site eenvoudig en snel aanpassen zonder kennis van AEM.
 
 De plaatsen die op plaatsmalplaatjes worden gebaseerd kunnen de front-end pijpleiding door gebrek gebruiken. Dit document beschrijft hoe u uw bestaande plaatsen kunt aanpassen om uit de front-end pijpleiding voordeel te halen.
 
@@ -31,7 +31,7 @@ Als u uw bestaande site niet hebt gemaakt op basis van sitesjablonen en -thema&#
 
 ## Technische details {#technical-details}
 
-Wanneer u de front-end pijpleiding voor een plaats activeert, AEM brengt de volgende veranderingen in uw plaatsstructuur aan.
+Wanneer u de front-end pijplijn voor een plaats activeert, AEM brengt de volgende veranderingen in uw plaatsstructuur aan.
 
 * Alle pagina&#39;s van de site bevatten één extra CSS- en JS-bestand, dat kan worden gewijzigd door updates te implementeren via een speciale front-end pipe van Cloud Manager.
 * De toegevoegde CSS- en JS-bestanden zijn aanvankelijk leeg, maar u kunt een map met &quot;themabronnen&quot; downloaden om de mapstructuur te starten waarmee u CSS- en JS-code-updates via die pijplijn kunt implementeren.
@@ -43,16 +43,16 @@ Wanneer u de front-end pijpleiding voor een plaats activeert, AEM brengt de volg
 
 ## Vereisten {#requirements}
 
-AEM kan uw bestaande plaats automatisch aanpassen om de front-end pijpleiding te gebruiken. Om dit te kunnen doen, moet uw site [v2 of hoger van de paginacomponent van de kerncomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/page.html)
+AEM kan uw bestaande plaats automatisch aanpassen om de front-end pijpleiding te gebruiken. Uw site moet [v2 of hoger van de paginacomponent van de kerncomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/page.html)
 
 ## Het toelaten van Voorste Pijl-Eind {#enabling}
 
 Het toelaten van uw plaats doet van de console van Plaatsen gebruikend [Sitemlek.](site-rail.md)
 
 1. Meld u aan bij AEM en navigeer naar uw site via **Algemene navigatie** > **Sites**.
-1. Selecteer uw site in de console. U moet de hoofdmap van de site selecteren en geen onderliggende pagina&#39;s.
+1. Selecteer uw site in de console. Selecteer de hoofdmap van de site en geen onderliggende pagina&#39;s.
 1. Selecteer uw site en open het dialoogvenster [spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) links en kiest u **Site**.
-1. In de **Site** spoor, klik de knoop **Vooruiteinde pijplijn inschakelen**.
+1. In de **Site** rails, klik op de knop **Vooruiteinde pijplijn inschakelen**.
 
    ![Pijpleiding aan de voorzijde inschakelen](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
@@ -61,5 +61,5 @@ Het toelaten van uw plaats doet van de console van Plaatsen gebruikend [Sitemlek
 Nu is uw plaats klaar om de front-end pijpleiding te gebruiken. Meer over de front-end pijpleiding en het beheren van uw plaatsthema leren zie:
 
 * [Het Siterail gebruiken om uw Sitethema te beheren](site-rail.md)
-* [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md) - Deze documentatietraject biedt u een overzicht van het proces van het snel implementeren van een site met behulp van de front-end pijplijn en het hulpprogramma Snel site maken.
+* [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md) - Deze documentatietraject biedt u een overzicht van het proces waarbij u snel een site implementeert met behulp van de front-end pijplijn en het hulpprogramma Snel site maken.
 * [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - In dit document wordt de front-end pijplijn beschreven in de context van de full-stack en web-tier pijpleidingen.

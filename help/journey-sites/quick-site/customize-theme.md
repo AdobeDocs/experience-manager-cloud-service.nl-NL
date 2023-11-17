@@ -2,9 +2,9 @@
 title: Het sitethema aanpassen
 description: Leer hoe het thema van de site is opgebouwd, hoe u het kunt aanpassen en hoe u live-AEM kunt testen.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '960'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Zodra u met de structuur van het themaproject vertrouwd bent, begin de lokale vo
 
    ![npm live](assets/npm-run-live.png)
 
-1. Wanneer de proxyserver wordt gestart, wordt automatisch een browser geopend voor `http://localhost:7001/`. Tik of klik op **LOKAAL AANMELDEN (ALLEEN TAKEN BEHEREN)** en meld u aan met de gegevens van de proxygebruiker die u van de AEM beheerder hebt ontvangen.
+1. Wanneer de proxyserver wordt gestart, wordt automatisch een browser geopend voor `http://localhost:7001/`. Selecteren **LOKAAL AANMELDEN (ALLEEN TAKEN BEHEREN)** en meld u aan met de gegevens van de proxygebruiker die u van de AEM beheerder hebt ontvangen.
 
    ![Lokaal aanmelden](assets/sign-in-locally.png)
 

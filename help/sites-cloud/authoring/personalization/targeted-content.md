@@ -2,9 +2,9 @@
 title: Authoring van getargete content met targetingmodus
 description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen te creëren
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '5408'
+source-wordcount: '5306'
 ht-degree: 5%
 
 ---
@@ -68,11 +68,11 @@ Schakel over naar de modus Doel om toegang te krijgen tot de gereedschappen voor
 Ga naar de modus Doel:
 
 1. Open de pagina waarvoor u doelinhoud wilt ontwerpen.
-1. Klik of tik op de werkbalk boven aan de pagina op de vervolgkeuzelijst met modi om de beschikbare modustypen weer te geven.
+1. Selecteer in de werkbalk boven aan de pagina de vervolgkeuzelijst Modus om de beschikbare modustypen weer te geven.
 
    ![Doelmodus](../assets/targeted-mode.png)
 
-1. Klikken of tikken **Targeting**. De doelopties worden boven aan de pagina weergegeven.
+1. Selecteren **Targeting**. De doelopties worden boven aan de pagina weergegeven.
 
    ![Doelwerkbalk](../assets/targeted-toolbar.png)
 
@@ -97,7 +97,7 @@ Een activiteit toevoegen:
    >
    >Als u op een andere manier een merk maakt, moet u ervoor zorgen dat het knooppunt `/campaigns/<brand>/master` bestaat of er een fout optreedt wanneer u een activiteit probeert te maken.
 
-1. Klik of tik + naast **Activiteit** vervolgkeuzelijst.
+1. Selecteer + naast de **Activiteit** vervolgkeuzelijst.
 1. Typ een naam voor de activiteit.
 
    >[!NOTE]
@@ -106,7 +106,7 @@ Een activiteit toevoegen:
 
 1. In de **Targeting** vervolgkeuzemenu voor de engine, selecteert u de doelengine.
 
-   * Als u **ContextHub-AEM**, worden de overige velden grijs weergegeven en niet beschikbaar. Klikken of tikken **Maken**.
+   * Als u **ContextHub-AEM**, worden de overige velden grijs weergegeven en niet beschikbaar. Selecteer **Maken**.
 
    * Als u **Adobe Target**, kunt u een configuratie (door gebrek selecteren, is het de configuratie u verstrekte toen u de rekening vormde) en Type van Activiteit. <!--If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.-->
 
@@ -133,13 +133,13 @@ Een activiteit toevoegen:
 
 1. In de **Merk** selecteert u het merk dat de activiteit bevat waaraan u werkt.
 1. In de **Activiteit** selecteert u de activiteit waarvoor u doelinhoud ontwerpt.
-1. Klik of tik om de besturingselementen weer te geven die u door het doelproces begeleiden **Doelstelling starten**.
+1. Als u de besturingselementen wilt weergeven die u door het doelproces begeleiden, selecteert u **Doelstelling starten**.
 
    ![Doelgerichtheid starten](../assets/targeted-start-targeting.png)
 
    >[!NOTE]
    >
-   >Als u de activiteit wilt wijzigen waarmee u werkt, klikt of tikt u op **Vorige**.
+   >Als u de activiteit wilt wijzigen waarmee u werkt, selecteert u **Vorige**.
 
 ## Maken: de ervaringen ontwerpen {#create-authoring-the-experiences}
 
@@ -191,14 +191,14 @@ De stap Maken van [het doelproces](#the-targeting-process-create-target-and-goal
 
 Een ervaring toevoegen:
 
-1. Als u een ervaring wilt toevoegen, klikt u of tikt u op **+** **Doelstelling voor ervaring toevoegen** dat hieronder de bestaande ervaringen in het **Soorten publiek** venster.
-1. Selecteer en publiek. Standaard is die naam de naam van de ervaring. U kunt desgewenst een andere naam typen. Klikken of tikken **OK**.
+1. Als u een ervaring wilt toevoegen, selecteert u **+** **Doelstelling voor ervaring toevoegen** dat hieronder de bestaande ervaringen in het **Soorten publiek** venster.
+1. Selecteer en publiek. Standaard is die naam de naam van de ervaring. U kunt desgewenst een andere naam typen. Selecteren **OK**.
 
 #### Ervaringen verwijderen met de doelmodus {#removing-experiences-using-targeting-mode}
 
 Een ervaring verwijderen:
 
-1. Klik of tik op de pijl naast de naam van de ervaring.
+1. Selecteer de pijl naast de ervaringsnaam.
 
    ![Verwijderen en ervaren](../assets/targeted-delete-experiene.png)
 
@@ -208,15 +208,15 @@ Een ervaring verwijderen:
 
 Ervaringen een andere naam geven in de doelmodus:
 
-1. Klik of tik op de pijl naast de naam van de ervaring.
+1. Selecteer de pijl naast de ervaringsnaam.
 1. Klikken **Ervaring hernoemen** en typ de nieuwe naam.
-1. Klik of tik ergens anders op het scherm om de wijzigingen op te slaan.
+1. Selecteer ergens anders op het scherm om de wijzigingen op te slaan.
 
 #### Soorten publiek bewerken met doelmodus {#editing-audiences-using-targeting-mode}
 
 U kunt als volgt het publiek bewerken in de doelmodus:
 
-1. Klik of tik op de pijl naast de naam van de ervaring.
+1. Selecteer de pijl naast de ervaringsnaam.
 1. Klikken **Publiek bewerken** en selecteer een nieuw publiek.
 1. Klikken **OK**.
 
@@ -224,7 +224,7 @@ U kunt als volgt het publiek bewerken in de doelmodus:
 
 Ervaringen kopiëren met de doelmodus:
 
-1. Klik of tik op de pijl naast de naam van de ervaring.
+1. Selecteer de pijl naast de ervaringsnaam.
 1. Klikken **Dupliceren** en kiest u het publiek.
 1. Wijzig desgewenst de naam van de ervaring en klik op **OK**.
 
@@ -254,11 +254,11 @@ Wanneer u een component als doel instelt, kan alleen die component in de aanbied
 
 Voer de volgende procedure uit na [starten van het doelproces](#the-targeting-process-create-target-and-goals-settings).
 
-1. Klik of tik op de component om het doel in te stellen. De werkbalk voor de component wordt weergegeven, net als in het volgende voorbeeld.
+1. Selecteer de component die u als doel wilt instellen. De werkbalk voor de component wordt weergegeven, net als in het volgende voorbeeld.
 
    ![Doelcomponent](../assets/targeted-component.png)
 
-1. Klik of tik op het pictogram Doel.
+1. Selecteer het pictogram Doel.
 
    ![Doelknop](../assets/targeted-target-button.png)
 
@@ -292,10 +292,10 @@ Wanneer u een component aan de component van het Doel toevoegt, verstrekt het in
 
 U kunt een doelcomponent aan de pagina toevoegen in de modus Bewerken of in de modus Doel. U kunt componenten alleen in de modus Doel aan de component Doel toevoegen. De component van het Doel behoort tot de de componentengroep van de Personalisatie.
 
-Als u doelinhoud bewerkt, moet u klikken of tikken **Doelstelling starten** voordat u dit kunt doen.
+Als u de doelinhoud wilt bewerken, moet u **Doelstelling starten** voordat u dit kunt doen.
 
 1. Sleep de component Target naar de pagina waar u het aanbod wilt weergeven.
-1. Standaard is er geen locatie-id ingesteld. Klik of tik de Configure cog wiel om de plaats te plaatsen.
+1. Standaard is er geen locatie-id ingesteld. Selecteer vormen cog wiel om de plaats te plaatsen.
 
    >[!NOTE]
    >
@@ -318,15 +318,15 @@ Maak een aanbieding door de inhoud van een doelcomponent te ontwerpen in de modu
 Als u besluit dat de aanbieding voor andere ervaringen kan worden gebruikt, kunt u een aangepaste aanbieding maken en [toevoegen aan de bibliotheek](#adding-a-custom-offer-to-a-library). Voor informatie over het gebruiken van de console van Aanbiedingen om een herbruikbare aanbieding tot stand te brengen, zie [Een voorstel toevoegen aan een bibliotheek met aanbiedingen](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Selecteer de ervaring waaraan u het voorstel wilt toevoegen.
-1. Als u het deelvenstermenu wilt weergeven, klikt of tikt u op de doelcomponent waaraan u de aanbieding wilt toevoegen.
+1. Als u het menu van de component wilt weergeven, selecteert u de doelcomponent waaraan u de aanbieding wilt toevoegen.
 
    ![Een voorstel toevoegen](../assets/targeted-component-menu.png)
 
-1. Klik op of tik op het +-pictogram.
+1. Selecteer het pictogram +.
 
    De inhoud van de standaardaanbieding wordt gebruikt als de aanbieding voor de huidige ervaring.
 
-1. Klik of tik op de aanbieding om het aanbiedingsmenu weer te geven en klik of tik op het bewerkingspictogram.
+1. Selecteer de aanbieding om het aanbiedingsmenu weer te geven en selecteer vervolgens het bewerkingspictogram.
 
    ![Werkbalk Doelcomponent](../assets/targeted-offer-menu.png)
 
@@ -339,25 +339,25 @@ Voeg een voorstel van toe de [aanbiedingsbibliotheek](/help/sites-cloud/authorin
 U kunt geen bibliotheekaanbiedingen toevoegen aan de standaardervaring.
 
 1. Selecteer de ervaring waaraan u het voorstel wilt toevoegen.
-1. Als u het deelvenstermenu wilt weergeven, klikt of tikt u op de doelcomponent waaraan u de aanbieding wilt toevoegen.
+1. Als u het menu van de component wilt weergeven, selecteert u de doelcomponent waaraan u de aanbieding wilt toevoegen.
 
    ![Gericht aanbod](../assets/targeted-add-offer-large.png)
 
-1. Klik of tik op het mappictogram.
+1. Selecteer het mappictogram.
 
    ![Mappictogram](../assets/targeted-folder-button.png)
 
-1. Selecteer de aanbieding in de bibliotheek en klik of tik op het pictogram van het vinkje.
+1. Selecteer de aanbieding in de bibliotheek en selecteer vervolgens het pictogram van het vinkje.
 
    ![Bibliotheek van aanbieding](../assets/targeted-select-content.png)
 
    Met de aanbiedingenkiezer kunt u naar voorstellen bladeren of filteren. Wanneer u bladert of filtert, kunt u de aanbiedingen ook willen sorteren en veranderen hoe u hen bekijkt. Het getal in de rechterbovenhoek geeft aan hoeveel aanbiedingen beschikbaar zijn in de huidige bibliotheek.
 
-   * Klikken of tikken **Bladeren** om naar een andere map te navigeren. Het navigatievenster wordt geopend en u klikt op de pijl om naar de mappen te gaan. Klikken of tikken **Bladeren** nogmaals om het navigatiegebied te sluiten.
+   * Selecteren **Bladeren** om naar een andere map te navigeren. Het navigatievenster wordt geopend en u klikt op de pijl om naar de mappen te gaan. Selecteren **Bladeren** nogmaals om het navigatiegebied te sluiten.
 
    ![Bladeren door inhoud](../assets/targeted-select-content-browse.png)
 
-   * Klikken of tikken **Filter** om de aanbiedingen te filteren op trefwoorden of tags. U voert trefwoorden in en u selecteert tags in het keuzemenu. Klikken of tikken **Filter** nogmaals om het filtervenster te sluiten.
+   * Selecteren **Filter** om de aanbiedingen te filteren op trefwoorden of tags. U voert trefwoorden in en u selecteert tags in het keuzemenu. Selecteren **Filter** nogmaals om het filtervenster te sluiten.
 
    ![Inhoud filteren](../assets/targeted-filter.png)
 
@@ -365,7 +365,7 @@ U kunt geen bibliotheekaanbiedingen toevoegen aan de standaardervaring.
 
    ![Sorteervolgorde filteren](../assets/targeted-filter-sort.png)
 
-   Klik of tik op het pictogram naast **Weergeven als** om voorstellen als tegels of als lijst weer te geven.
+   Selecteer het pictogram naast **Weergeven als** om voorstellen als tegels of als lijst weer te geven.
 
    ![Weergeven als knop](../assets/targeted-view-as-button.png)
 
@@ -376,18 +376,18 @@ Voeg een aangepaste aanbieding toe aan de [aanbiedingsbibliotheek](/help/sites-c
 Voor informatie over het gebruiken van de console van Aanbiedingen om een herbruikbare aanbieding tot stand te brengen, zie [Een voorstel toevoegen aan een bibliotheek met aanbiedingen](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Selecteer de ervaring om de aangepaste aanbieding weer te geven.
-1. Klik of tik op de aangepaste aanbieding om het aanbiedingsmenu weer te geven en klik of tik op de knop **Aanbieding opslaan naar aanbiedingenbibliotheek** pictogram.
+1. Selecteer de aangepaste aanbieding om het aanbiedingsmenu weer te geven en selecteer vervolgens de optie **Aanbieding opslaan naar aanbiedingenbibliotheek** pictogram.
 
    ![Aanbieding opslaan om bibliotheek aan te bieden](../assets/targeted-save-offer-library-button.png)
 
-1. Typ een naam voor de aanbieding, selecteer de bibliotheek waaraan u de aanbieding toevoegt, dan klik of tik het controlemerkpictogram.
+1. Typ een naam voor de aanbieding, selecteer de bibliotheek waaraan u de aanbieding toevoegt, en selecteer dan het controlemerkpictogram.
 
 #### Een bibliotheekaanbod omzetten in een aangepaste bibliotheek {#converting-a-library-offer-to-a-custom-library}
 
 Een bibliotheekaanbieding omzetten in een aangepaste aanbieding om de aanbieding voor de huidige ervaring te wijzigen zonder de aanbieding in andere ervaringen te wijzigen.
 
 1. Selecteer de ervaring om het bibliotheekaanbod weer te geven.
-1. Klik of tik op de bibliotheekaanbieding om het aanbiedingsmenu weer te geven en klik vervolgens op het pictogram Omzetten in inline-aanbieding of tik op dit pictogram.
+1. Selecteer de bibliotheekaanbieding om het aanbiedingsmenu weer te geven en selecteer vervolgens het pictogram Omzetten in onlineaanbieding.
 
    ![Omzetten in inline aanbieding](../assets/targeted-convert-inline.png)
 
@@ -423,9 +423,9 @@ Een publiek mag niet door meer dan één ervaring worden gebruikt. Er verschijnt
 
 Gebruik de volgende procedure om een ervaring met een publiek te associëren wanneer het gebruiken van AEM richten (of de ervaring van Adobe Target het richten):
 
-1. Klik of tik de drop-down pijl naast in de publieksdoos die aan de ervaring wordt toegewezen.
-1. (Optioneel) Klik of tik op **Bewerken** en typ vervolgens een trefwoord om naar het gewenste segment te zoeken.
-1. Selecteer het publiek in de lijst met soorten publiek en klik of tik op **OK**.
+1. Selecteer de vervolgkeuzepijl in het publieksvak dat aan de ervaring is toegewezen.
+1. (Optioneel) Selecteer **Bewerken** en typ vervolgens een trefwoord om naar het gewenste segment te zoeken.
+1. Selecteer in de lijst met doelgroepen het publiek en selecteer **OK**.
 
 ### Als u A/B Testen gebruikt (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
@@ -437,9 +437,9 @@ U kunt de percentages wijzigen zolang ze maar optellen tot 100 procent. Een publ
 
 ### Soorten publiek en verkeerspercentages koppelen aan A/B-tests {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
-1. Klik of tik de drop-down doos naast het publiek dat aan de ervaring wordt toegewezen.
+1. Selecteer de vervolgkeuzelijst naast het publiek dat aan de ervaring wordt toegewezen.
 1. (Optioneel) Klik op **Bewerken** Typ vervolgens een trefwoord om naar het gewenste segment te zoeken.
-1. Klikken of tikken **OK.**
+1. Selecteren **OK.**
 1. Ga in percentages in om te vormen hoe het publieksverkeer aan elke ervaringen wordt verpletterd. Het totale getal moet 100 zijn.
 1. (Optioneel) Bewerk de ervaringsnaam door te klikken op het keuzemenu naast de naam van de ervaring.
 
@@ -490,12 +490,12 @@ Om montages te vormen wanneer het gebruiken van AEM richten:
 1. Als u wilt opgeven wanneer de activiteit begint, gebruikt u de opdracht **Start** vervolgkeuzelijst om een van de volgende waarden te selecteren:
 
    * **Indien geactiveerd**: De activiteit wordt gestart wanneer de pagina met de doelinhoud wordt geactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
+   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, selecteert u het kalenderpictogram, selecteert u een datum en geeft u de begintijd voor de activiteit op.
 
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u de opdracht **Einde** vervolgkeuzelijst om een van de volgende waarden te selecteren:
 
    * **Wanneer gedeactiveerd**: De activiteit eindigt wanneer de pagina die de beoogde inhoud bevat, wordt gedeactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
+   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, selecteert u het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
 
 1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om **Laag**, **Normaal**, of **Hoog**.
 
@@ -506,12 +506,12 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
 1. Als u wilt opgeven wanneer de activiteit begint, gebruikt u de opdracht **Start** vervolgkeuzelijst om een van de volgende waarden te selecteren:
 
    * **Indien geactiveerd**: De activiteit wordt gestart wanneer de pagina met de doelinhoud wordt geactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
+   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, selecteert u het kalenderpictogram, selecteert u een datum en geeft u de begintijd voor de activiteit op.
 
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u de opdracht **Einde** vervolgkeuzelijst om een van de volgende waarden te selecteren:
 
    * **Wanneer gedeactiveerd**: De activiteit eindigt wanneer de pagina die de beoogde inhoud bevat, wordt gedeactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
+   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, selecteert u het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
 
 1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om **Laag**, **Normaal**, of **Hoog**.
 1. Als u Adobe Analytics hebt geconfigureerd voor uw Adobe Target-account, wordt het vervolgkeuzemenu **Bron van rapportage** weergegeven. Selecteer **Adobe Target** of **Adobe Analytics** als bron.
@@ -546,7 +546,7 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
    >
    >U kunt aanvullende doelen verwijderen door op de drie punten te klikken of erop te tikken en te klikken of te tikken **Verwijderen**. AEM vereist dat u ten minste één doel hebt gedefinieerd.
 
-1. Als u meer controle wilt hebben over de manier waarop succesmetriek worden geteld, klikt u of tikt u op **Geavanceerde instellingen** toegang tot deze gegevens.
+1. Selecteer **Geavanceerde instellingen** toegang tot deze gegevens.
 1. Klikken **Opslaan**.
 
 Na het configureren kunt u [de prestaties van uw activiteiten bekijken](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) die gebruikmaken van Adobe Target (ervaring of A/B-test gericht). Daarnaast kunt u met een A/B-test [winnaars omzetten](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
@@ -574,12 +574,12 @@ Gebruik de volgende gereedschappen om de ervaring van de bezoeker te simuleren:
 * De simulatieactiviteit op het richten wijze: De pagina toont de aanbiedingen voor de gebruiker die momenteel in de Hub van de Context wordt geselecteerd. U kunt de aanbiedingen bewerken die op de gebruiker zijn gericht.
 * De wijze van de voorproef: De Hub van de Context van het gebruik om de gebruikers en de plaatsen te selecteren die aan de criteria van de segmenten voldoen die uw ervaringen op gebaseerd zijn. Wanneer uw selecties van de Hub van de Context veranderen, verandert de gerichte inhoud dienovereenkomstig.
 
-1. Klik of tik op de werkbalk om te schakelen naar de modus Voorbeeld **Voorvertoning**.
-1. Voor de hulpmiddelbar, klik of tik het pictogram van de Hub van de Context.
+1. Als u wilt overschakelen naar de modus Voorbeeld, selecteert u op de werkbalk de optie **Voorvertoning**.
+1. Selecteer op de werkbalk het pictogram Context Hub.
 
    ![Knop ContextHub](../assets/targeted-contexthub-button.png)
 
-1. Gebruik Context Hub om context-eigenschappen te wijzigen. Klik of tik bijvoorbeeld op de eigenschap Person om een andere gebruiker te selecteren.
+1. Gebruik Context Hub om context-eigenschappen te wijzigen. Selecteer bijvoorbeeld de eigenschap Person om een andere gebruiker te selecteren.
 
    ![ContextHub-werkbalk](../assets/targeted-contexthub-toolbar.png)
 
@@ -591,7 +591,7 @@ Gebruik de volgende gereedschappen om de ervaring van de bezoeker te simuleren:
 
 U kunt de component van het Doel aanpassen door tot de opties van de component op één van twee manieren toegang te hebben:
 
-1. Nadat u de component hebt aangewezen, in de component van het Doel, klik of tik de component en toen het montagespictogram (versnelling).
+1. Nadat u de component hebt aangewezen, in de component van het Doel, selecteer de component en toen het montagespictogram (versnelling).
 
    ![Componentinstellingen](../assets/targeted-component-settings.png)
 
@@ -599,7 +599,7 @@ U kunt de component van het Doel aanpassen door tot de opties van de component o
 
    ![Doel, dialoogvenster](../assets/targeted-dialog.png)
 
-1. U kunt deze instellingen ook openen in de modus Volledig scherm door in het venster met opties voor de doelcomponent op het pictogram voor het volledige scherm te klikken of te tikken.
+1. U kunt deze instellingen ook openen in de modus Volledig scherm door in het venster met opties voor de doelcomponent het pictogram voor het volledige scherm te selecteren.
 
    ![Knop Volledig scherm](../assets/targeted-fullscreen.png)
 
@@ -623,8 +623,8 @@ Als u Adobe Target als engine selecteert:
 | Nauwkeurige bestemming | Wanneer u nauwkeurige adressering inschakelt, weet de component dat deze moet wachten totdat de context- of contexthubgegevens beschikbaar zijn voordat de aanvraag naar Adobe Target wordt verzonden. Hierdoor kan de laadtijd toenemen. Voor creatie, wordt het nauwkeurige richten altijd toegelaten. Als u het selectievakje Nauwkeurig aanwijzen inschakelt, voert het selectievakje eerst een mboxDefine uit en later een mboxUpdate. Dit resulteert in een Ajax-aanvraag zodra de gegevens beschikbaar zijn. Als u het selectievakje Nauwkeurig aanwijzen niet inschakelt, voert de mbox een mboxCreate uit die onmiddellijk een synchrone aanvraag oplevert (in dit geval zijn mogelijk nog niet alle contextgegevens beschikbaar). Opmerking: het in- of uitschakelen van het nauwkeurig opgeven van een bepaald onderdeel heeft geen invloed op de instellingen die u globaal hebt ingesteld. U kunt globale instellingen altijd overschrijven door Accurate doelen selecteren in de component. |
 | Omgezette segmenten opnemen | Het selecteren van deze controledoos omvat alle opgeloste segmenten in de mbox vraag en om het even welke parameters die in de pagina en in het kader worden gevormd. Dit werkt alleen in situaties met XML API waarin u AEM segmenten synchroniseert. Als u segmenten in AEM hebt die niet door Adobe Target (als manuscriptsegmenten) worden behandeld, dan laat deze optie u het segment in AEM oplossen en informatie verzenden naar Adobe Target dat het segment actief is. |
 | Overgenomen contextparameters | Hier worden eventueel van het Adobe Target-framework overgeërfde contextparameters weergegeven die aan de geselecteerde pagina zijn gekoppeld. |
-| Contextparameters | Klik of tik Add gebied om extra contextparameters te vormen (het zelfde als wat in het kader van het Doel beschikbaar is). Contextparameters die aan de component worden toegevoegd, gelden alleen voor de component en niet voor andere componenten, zoals het geval zou zijn als u contextparameters rechtstreeks aan het framework toevoegt. |
-| Statische parameters | Klik of tik Add gebied om extra statische parameters (het zelfde als wat in het kader van het Doel beschikbaar is) te vormen. Statische parameters die aan de component zijn toegevoegd, gelden alleen voor de component en niet voor andere componenten, zoals het geval zou zijn als u statische parameters rechtstreeks aan het framework hebt toegevoegd. Statische parameters komen niet uit context (cliëntcontext van inhoudshub). |
+| Contextparameters | Selecteer Add gebied om extra contextparameters (het zelfde als wat in het kader van het Doel beschikbaar is) te vormen. Contextparameters die aan de component worden toegevoegd, gelden alleen voor de component en niet voor andere componenten, zoals het geval zou zijn als u contextparameters rechtstreeks aan het framework toevoegt. |
+| Statische parameters | Selecteer Add gebied om extra statische parameters (het zelfde als wat in het kader van het Doel beschikbaar is) te vormen. Statische parameters die aan de component zijn toegevoegd, gelden alleen voor de component en niet voor andere componenten, zoals het geval zou zijn als u statische parameters rechtstreeks aan het framework hebt toegevoegd. Statische parameters komen niet uit context (cliëntcontext van inhoudshub). |
 
 >[!NOTE]
 >

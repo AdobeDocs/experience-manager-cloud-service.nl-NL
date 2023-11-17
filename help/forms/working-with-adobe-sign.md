@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3003'
 ht-degree: 0%
@@ -168,13 +168,13 @@ Een Cloud Service en volgorde voor ondertekening selecteren:
 
    Als de **[!UICONTROL Adobe Sign Cloud Service]** lijst is leeg, volgt de [Configureren [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) artikel om de dienst te vormen.
 
-   In het vervolgkeuzemenu worden de Cloud Servicen weergegeven die in het dialoogvenster `global` map in Gereedschappen > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Daarnaast worden in het vervolgkeuzemenu ook de Cloud Servicen weergegeven die aanwezig zijn in de map die u selecteert in het dialoogvenster **[!UICONTROL Configuration Container]** wanneer u een adaptief formulier maakt.
+   De vervolgkeuzelijst bevat een lijst met Cloud Servicen in het dialoogvenster `global` map in Gereedschappen > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Bovendien worden in de vervolgkeuzelijst ook de Cloud Servicen weergegeven die aanwezig zijn in de map die u selecteert in het dialoogvenster **[!UICONTROL Configuration Container]** wanneer u een adaptief formulier maakt.
 
 1. Selecteer de handtekeningvolgorde in het menu **[!UICONTROL Recipients can complete]** in. De ontvangers kunnen een adaptief formulier ondertekenen **[!UICONTROL Sequentially]** - een na een andere ontvanger, of **[!UICONTROL Simultaneously]** - in willekeurige volgorde.
 
    Op volgorde ontvangt één ontvanger de Adobe Sign-overeenkomst tegelijk. Nadat de ontvanger de toegewezen actie voltooit, wordt de overeenkomst verzonden naar de volgende ontvanger, etc.
 
-   Tegelijkertijd ontvangen alle ontvangers de Adobe Sign-overeenkomst en kunnen ze tegelijkertijd actie ondernemen.
+   Tegelijkertijd ontvangen alle ontvangers de Adobe Sign-overeenkomst en kunnen zij parallel met elkaar handelen.
 
 1. Gebruik het veld Overeenkomst-id om een bindref aan overeenkomst-id (agreementId) te koppelen. Het voegt Overeenkomst ID aan de sectie afBoundData van voorlegt gegevens voor op schema-gebaseerde vormen toe. De overeenkomst-id wordt ook toegevoegd aan het gedeelte afSubmissionInfo in de verzonden gegevens voor alle formulieren die geschikt zijn voor Adobe Sign. U kunt de overeenkomst-id gebruiken voor het bijhouden van de status van de overeenkomst met behulp van aangepaste code (aangepaste implementatie is vereist).
 
@@ -286,7 +286,7 @@ U kunt desgewenst ook een bindref aan overeenkomst-id (agreementId) koppelen. Er
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 Uw ervaring voor het ondertekenen van formulieren is gereed. U kunt een voorbeeld van het formulier bekijken om de ondertekeningservaring te verifiëren. Op het gepubliceerde formulier: [!DNL Adobe Sign] Blokvelden worden weergegeven wanneer een ontvanger het formulier voor ondertekening via een e-mail ontvangt. Wanneer de **[!UICONTROL When Is the recipient and the person filling the form same?]** als deze optie is ingeschakeld en als aan de voorwaarde is voldaan, wordt de gebruiker na verzending omgeleid naar de Adobe Sign-overeenkomst en kan de gebruiker het document direct ondertekenen in plaats van te wachten tot de overeenkomst per e-mail wordt weergegeven.

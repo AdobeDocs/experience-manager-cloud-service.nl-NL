@@ -2,9 +2,9 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2973'
 ht-degree: 4%
 
 ---
@@ -341,7 +341,7 @@ In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de la
 
    ![De componentwerkbalk van een pagina-component](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Klik of tik op **Layout** actie om de lay-out van de component aan te passen.
+   Selecteer de **Layout** actie om de lay-out van de component aan te passen.
 
    ![De knop Lay-out van de componentwerkbalk](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

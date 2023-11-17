@@ -2,9 +2,9 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3279'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Dit document:
 
 Het maken van paginasjablonen gebeurt vooral met de opdracht [sjabloonconsole en sjablooneditor](/help/sites-cloud/authoring/features/templates.md) door een sjabloonauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
 
-Bij het maken van een nieuwe bewerkbare sjabloon:
+Bij het maken van een bewerkbare sjabloon:
 
 1. Een [map voor de sjablonen](#template-folders). Dit is niet verplicht, maar aanbevolen beste praktijken.
 1. Selecteer een [sjabloontype](#template-type). Deze wordt gekopieerd om de [sjabloondefinitie](#template-definitions).
@@ -112,7 +112,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
 >[!TIP]
 >
->Voer nooit informatie in die u wilt internationaliseren in een sjabloon. Voor internaliseringsdoeleinden wordt de [lokalisatiefuncties van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
+>Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. Voor internaliseringsdoeleinden wordt de [lokalisatiefuncties van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ Als u een map wilt maken, kunt u het volgende doen:
 
 ### De configuratiebrowser gebruiken {#using-the-configuration-browser}
 
-1. Ga naar **Algemene navigatie** -> **Gereedschappen** > [**Configuratiebrowser**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. Ga naar **Algemene navigatie** > **Gereedschappen** > [**Configuratiebrowser**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    De bestaande mappen worden links weergegeven, inclusief `global` map.
 
@@ -289,9 +289,9 @@ Deze standaard `template-authors` groep omvat alleen de projectinstellingen, waa
 
 ## Sjabloontype {#template-type}
 
-Wanneer u een nieuwe sjabloon maakt, moet u een sjabloontype opgeven:
+Wanneer u een sjabloon maakt, moet u een sjabloontype opgeven:
 
-* Sjabloontypen bieden sjablonen voor een sjabloon. Wanneer u een nieuwe sjabloon maakt, worden de structuur en initiële inhoud van het geselecteerde sjabloontype gebruikt om aan de nieuwe sjabloon te maken.
+* Sjabloontypen bieden sjablonen voor een sjabloon. Wanneer u een sjabloon maakt, worden de structuur en de initiële inhoud van het geselecteerde sjabloontype gebruikt om aan de nieuwe sjabloon te maken.
 
    * Het sjabloontype wordt gekopieerd om de sjabloon te maken.
    * Zodra het exemplaar is voorgekomen, is de enige verbinding tussen het malplaatje en het malplaatjetype een statische verwijzing voor informatiedoeleinden.
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -432,7 +432,7 @@ Dit knooppunt bevat eigenschappen voor de sjabloon:
 
 Hiermee definieert u de structuur van de resulterende pagina:
 
-* Is samengevoegd met de oorspronkelijke inhoud ( `/initial`) bij het maken van een nieuwe pagina.
+* Is samengevoegd met de oorspronkelijke inhoud ( `/initial`) bij het maken van een pagina.
 * Wijzigingen in de structuur worden weerspiegeld in alle pagina&#39;s die met de sjabloon zijn gemaakt.
 * De `root` ( `structure/jcr:content/root`) definieert de lijst met componenten die beschikbaar zijn op de resulterende pagina.
    * Componenten die zijn gedefinieerd in de sjabloonstructuur kunnen niet worden verplaatst op of verwijderd van resulterende pagina&#39;s.
@@ -446,7 +446,7 @@ Hiermee definieert u de structuur van de resulterende pagina:
 Definieert de eerste inhoud die een nieuwe pagina krijgt wanneer deze wordt gemaakt:
 
 * Bevat een `jcr:content` knooppunt dat naar nieuwe pagina&#39;s wordt gekopieerd.
-* Is samengevoegd met de structuur ( `/structure`) bij het maken van een nieuwe pagina.
+* Is samengevoegd met de structuur ( `/structure`) bij het maken van een pagina.
 * Bestaande pagina&#39;s worden niet bijgewerkt als de oorspronkelijke inhoud na het maken wordt gewijzigd.
 * De `root` het knooppunt bevat een lijst met componenten om te definiëren wat beschikbaar is in de resulterende pagina.
 * Als er inhoud wordt toegevoegd aan een component in de structuurmodus en die component vervolgens wordt ontgrendeld (of vice versa), wordt deze inhoud gebruikt als initiële inhoud.
@@ -545,7 +545,7 @@ Bij het weergeven van een pagina:
 
 ### Beschikbaarheid sjabloon {#template-availability}
 
-Wanneer u een nieuwe pagina maakt in de interface voor sitebeheer, is de lijst met beschikbare sjablonen afhankelijk van de locatie van de nieuwe pagina en de plaatsingsbeperkingen die in elke sjabloon zijn opgegeven.
+Wanneer u een pagina maakt in de interface voor sitebeheer, is de lijst met beschikbare sjablonen afhankelijk van de locatie van de nieuwe pagina en de plaatsingsbeperkingen die in elke sjabloon zijn opgegeven.
 
 De volgende eigenschappen bepalen of een sjabloon `T` mag worden gebruikt voor een nieuwe pagina die als onderliggend item van een pagina moet worden geplaatst `P`. Elk van deze eigenschappen is een tekenreeks met meerdere waarden die nul of meer reguliere expressies bevat die worden gebruikt voor overeenkomsten met paden:
 

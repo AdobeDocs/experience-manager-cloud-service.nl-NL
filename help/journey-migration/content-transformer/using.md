@@ -1,9 +1,10 @@
 ---
 title: Inhoudstransformator gebruiken
 description: Leer hoe u uw inhoudsstructuur kunt transformeren ter voorbereiding op het migreren naar AEM as a Cloud Service.
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '642'
 ht-degree: 1%
 
 ---

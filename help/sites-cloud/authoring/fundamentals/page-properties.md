@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: Leer hoe u de eigenschappen definieert die vereist zijn voor het beheer van een pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
+source-wordcount: '2270'
 ht-degree: 2%
 
 ---
@@ -87,9 +87,9 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
   >* Geen ondersteuning voor regex-patronen.
   >* Deze mag niet op een bestaande pagina worden ingesteld.
 
-   * **Toevoegen** - Tik of klik om een veld weer te geven waarin een vanity-URL voor de pagina wordt gedefinieerd.
-      * Tik of klik nogmaals om meerdere items toe te voegen.
-      * Tik of klik op de knop **Verwijderen** pictogram om de vanity URL te verwijderen.
+   * **Toevoegen** - Selecteer deze optie om een veld weer te geven waarin een vanity-URL voor de pagina wordt gedefinieerd.
+      * Selecteer nogmaals om meerdere items toe te voegen.
+      * Selecteer de **Verwijderen** pictogram om de vanity URL te verwijderen.
    * **Redirect Vanity URL** - Geeft aan of de pagina de vanity-URL moet gebruiken.
 
 ### Geavanceerd {#advanced}
@@ -105,7 +105,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
       * Als u bijvoorbeeld een alias definieert van `private` voor de pagina `/content/wknd/us/en/magazine/members-only`, kan deze pagina ook worden geopend via `/content/wknd/us/en/magazine/private`
       * Het creëren van een aliasreeksen `sling:alias` eigenschap op het paginaknooppunt, die alleen invloed heeft op de bron, niet op het pad naar de opslagplaats.
       * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [Publicatieopties](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
-      * Zie voor meer informatie [Gelokaliseerde paginanamen onder SEO- en URL-beheertips](/help/overview/seo-and-url-management.md#localized-page-names).
+      * Zie [Gelokaliseerde paginanamen onder SEO- en URL-beheertips](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuratie**
 
@@ -237,7 +237,7 @@ Dankzij een eenvoudige configuratie kan een auteur van inhoud nu functies (PWA) 
 
 >[!NOTE]
 >
->Zie voor meer informatie [Progressieve webtoepassingsfuncties inschakelen](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Zie [Progressieve webtoepassingsfuncties inschakelen](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Installeerbare ervaring configureren**
 

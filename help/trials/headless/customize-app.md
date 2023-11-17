@@ -4,9 +4,9 @@ description: Gebruik een voorbeeld van een React-app om te leren hoe u inhoud ku
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 U start in de editor voor inhoudsfragmenten met de voorbeeldtoepassing die bij de proefversie zonder AEM is geleverd, al geladen. De voorbeeld-app wordt aangedreven door Content Fragments die via GraphQL worden geleverd. Gebruik de editor voor inhoudsfragmenten om de editor te leren kennen door een voorbeeld van de voorbeeld-app te bekijken.
 
-1. Tik of klik op de knop **Voorvertoning** knop rechtsboven in het editorscherm.
+1. Selecteer de **Voorvertoning** knop rechtsboven in het editorscherm.
 
 1. De demo-app wordt op een nieuw tabblad geopend. De app is voor het fictieve WKND-merk voor outdoorlifestyle. Schuif omlaag op de pagina om door de voorbeeldinhoud te navigeren.
 
@@ -45,7 +45,7 @@ U start in de editor voor inhoudsfragmenten met de voorbeeldtoepassing die bij d
 
 In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven als een pagina-inhoudsfragment. De **Deelvensters** vertegenwoordigen verschillende pagina&#39;s van de app, die elk een eigen inhoudsfragment zijn. Door deze fragmenten te wijzigen, kunt u de inhoud van de app wijzigen.
 
-1. Tik of klik op **Mtn Biker in Canyon** in de **Deelvensters** sectie.
+1. Selecteren **Mtn Biker in Canyon** in de **Deelvensters** sectie.
 
    ![Tekstvenster selecteren](assets/do-not-localize/edit-header-1.png)
 
@@ -57,7 +57,7 @@ In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven
 
 1. De tekst wijzigen vanuit `Your next great adventure is calling` tot `Choose your own adventure`. De wijziging wordt automatisch opgeslagen door de editor.
 
-1. Tik of klik op **Voorvertoning** rechtsboven in het venster om de wijzigingen te zien. De voorvertoning van de demo-app wordt op een nieuw tabblad geopend.
+1. Selecteren **Voorvertoning** rechtsboven in het venster om de wijzigingen te zien. De voorvertoning van de demo-app wordt op een nieuw tabblad geopend.
 
    ![Voorvertoning van toepassing demo](assets/do-not-localize/edit-header-5-6.png)
 
@@ -75,19 +75,19 @@ Nu u een kopregel in de app hebt gewijzigd, kunt u proberen een afbeelding te wi
 
 1. Selecteer de **Mtn Biking - Biker** afbeeldingslaag Hiermee opent u de editor voor inhoudsfragmenten
 
-1. Tik of klik op de knop **X** om de fietsafbeelding te verwijderen. De afbeelding verdwijnt en in de editor wordt een fout weergegeven omdat de afbeelding vereiste gegevens is voor dit model van inhoudsfragment.
+1. Selecteer de **X** om de fietsafbeelding te verwijderen. De afbeelding verdwijnt en in de editor wordt een fout weergegeven omdat de afbeelding vereiste gegevens is voor dit model van inhoudsfragment.
 
    ![Afbeelding verwijderen uit fragment](assets/do-not-localize/swap-image-4.png)
 
-1. Tik of klik op **Element toevoegen** en vervolgens **Zoeken in middelen** in het pop-upmenu.
+1. Selecteren **Element toevoegen** en vervolgens **Zoeken in middelen** in het pop-upmenu.
 
 1. De **Element selecteren** wordt geopend en het pad **voorbeeldapp** > **en** > **afbeeldingsbestanden** wordt automatisch voor u geselecteerd.
 
-1. Selecteer de afbeelding `biker-yellow.png` tikken of klikken op **Selecteren**.
+1. Selecteer de afbeelding `biker-yellow.png` en selecteer vervolgens **Selecteren**.
 
 1. De afbeelding van de fietser wordt vervangen door de geselecteerde afbeelding. De editor slaat de wijzigingen automatisch op.
 
-1. Tik of klik op **Voorvertoning** rechtsboven in het venster om de wijzigingen te zien. De voorvertoning van de demo-app wordt op een nieuw tabblad geopend. Klik op Vernieuwen in de browser en u ziet de nieuwe fietsafbeelding met gele korte tekst in de app.
+1. Selecteren **Voorvertoning** rechtsboven in het venster om de wijzigingen te zien. De voorvertoning van de demo-app wordt op een nieuw tabblad geopend. Klik op Vernieuwen in de browser en u ziet de nieuwe fietsafbeelding met gele korte tekst in de app.
 
 Het is zo eenvoudig om afbeeldingen en middelen in uw apps bij te werken met AEM CMS zonder kop.
 
@@ -99,13 +99,13 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
 
 1. Keer terug naar het browserlusje van de redacteur van het Fragment van de Inhoud van het voorproeflusje.
 
-1. U moet terugkeren naar de juiste plaats in de editor voor inhoudsfragmenten. De broodkruimels bij top-left van de redacteur tonen waar u in uw inhoudshiërarchie bent. Tik of klik op **WKND Home** in de breadcrumbs om terug te keren naar die pagina.
+1. U moet terugkeren naar de juiste plaats in de editor voor inhoudsfragmenten. De broodkruimels bij top-left van de redacteur tonen waar u in uw inhoudshiërarchie bent. Selecteren **WKND Home** in de breadcrumbs om terug te keren naar die pagina.
 
 1. Selecteer de **Mtn Biker op WKND Yellow** deelvenster.
 
 1. Selecteer de **Mtn Biking - Shopable** laag.
 
-1. Als u een call-out wilt maken in dit deelvenster, maakt u een schokkend moment met een inhoudsfragment. Tik of klik op de knop **+ Nieuw fragment maken** knop.
+1. Als u een call-out wilt maken in dit deelvenster, maakt u een schokkend moment met een inhoudsfragment. Selecteer de **+ Nieuw fragment maken** knop.
 
    ![Een schokkend moment toevoegen](assets/do-not-localize/add-reference-1-5.png)
 
@@ -113,7 +113,7 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
 
 1. Geef het inhoudsfragment een naam. Voer bijvoorbeeld `Shorts` in de **Naam** veld.
 
-1. Tik of klik op **Maken en openen**.
+1. Selecteren **Maken en openen**.
 
    ![Geef het onoverzichtelijke moment een naam](assets/do-not-localize/add-reference-6-7-8.png)
 
@@ -126,7 +126,7 @@ Nu u de afbeelding van de fietser hebt bijgewerkt, gaan we door hoe u nieuwe inh
    * **X**: `-5`
    * **Y**: `-10`
 
-1. Tik of klik op **Voorvertoning** rechtsboven in het venster om de wijzigingen te zien. De voorvertoning van de demo-app wordt op een nieuw tabblad geopend. Klik verfrissen zich op browser om het plaatsen te testen en aanpassingen aan te brengen zoals nodig in de redacteur.
+1. Selecteren **Voorvertoning** rechtsboven in het venster om de wijzigingen te zien. De voorvertoning van de demo-app wordt op een nieuw tabblad geopend. Klik verfrissen zich op browser om het plaatsen te testen en aanpassingen aan te brengen zoals nodig in de redacteur.
 
    ![Voorvertoning](assets/do-not-localize/add-reference-10-11-12.png)
 

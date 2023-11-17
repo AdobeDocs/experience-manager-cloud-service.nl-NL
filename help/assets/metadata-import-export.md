@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 10%
+source-wordcount: '664'
+ht-degree: 9%
 
 ---
 
@@ -18,20 +18,20 @@ Met Adobe Experience Manager Assets kunt u metagegevens van elementen in bulk im
 
 ## Metagegevens importeren {#import-metadata}
 
-De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan bronintensief zijn vanwege de activiteit voor het terugschrijven van metagegevens met behulp van de asset microservices. Adobe raadt u aan om bulkbewerkingen tijdens het gebruik van een slanke server te plannen, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
+De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan bronintensief zijn vanwege de activiteit voor het terugschrijven van metagegevens met behulp van de asset microservices. De Adobe adviseert dat u om het even welke bulkverrichtingen tijdens slank servergebruik plant zodat de prestaties voor andere gebruikers niet worden beïnvloed.
 
 >[!NOTE]
 >
 >Registreer de naamruimten eerst om metagegevens in aangepaste naamruimten te importeren.
 
 1. Navigeren naar [!DNL Assets] gebruikersinterface, selecteren **[!UICONTROL Create]** op de werkbalk en selecteert u **[!UICONTROL Metadata]** in het menu.
-1. In de **[!UICONTROL Metadata Import]** pagina, klikt u op **[!UICONTROL Select File]**. Selecteer het CSV-bestand met de metadata.
+1. In de **[!UICONTROL Metadata Import]** pagina, klikt u **[!UICONTROL Select File]**. Selecteer het CSV-bestand met de metadata.
 1. Geef de volgende parameters op:
 
    | Parameter | Beschrijving |
    | ---------------------- | ------- |
    | Batchgrootte | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
-   | Veldscheidingsteken | Standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
+   | Veldscheider | Standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
    | Scheidingsteken voor meerdere waarden | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|`. |
    | Workflows starten | Standaard false. Wanneer ingesteld op `true` en de standaardinstellingen zijn van kracht voor de DAM Metadata WriteBack-workflow (die metagegevens naar de binaire XMP schrijft). Als u de workflows inschakelt, wordt het systeem trager. |
    | Kolomnaam elementpad | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
@@ -70,12 +70,12 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 
 1. In de **[!UICONTROL Properties to be exported]** -veld, geeft u op of u alle of specifieke eigenschappen wilt exporteren. Als u Selectieve eigenschappen kiest die u wilt exporteren, voegt u de gewenste eigenschappen toe.
 
-1. Tik/klik op de werkbalk **[!UICONTROL Export]**. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
-1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Open]** op de werkbalk. Tik of klik op **[!UICONTROL CSV Download]** op de werkbalk om het CSV-bestand met de metadata te downloaden. Klik op **[!UICONTROL Close]**.
+1. Selecteer **[!UICONTROL Export]** in de werkbalk. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
+1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Open]** op de werkbalk. Selecteer **[!UICONTROL CSV Download]** op de werkbalk. Klik op **[!UICONTROL Close]**.
 
-   ![Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd](assets/csv_download.png)
+   ![Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die in bulk zijn geëxporteerd](assets/csv_download.png)
 
-   *Afbeelding: Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd.*
+   *Afbeelding: Dialoogvenster waarin u het CSV-bestand met metagegevens kunt downloaden die in bulk zijn geëxporteerd.*
 
 **Zie ook**
 
@@ -94,4 +94,3 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 >[!MORELIKETHIS]
 >
 >* [Metagegevens importeren bij het importeren van elementen in bulk](/help/assets/add-assets.md#asset-bulk-ingestor)
-

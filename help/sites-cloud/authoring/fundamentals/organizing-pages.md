@@ -2,10 +2,10 @@
 title: Pagina's maken en indelen
 description: Leer hoe u uw website kunt ordenen door pagina's met AEM te maken en te beheren.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 2%
+source-wordcount: '2429'
+ht-degree: 1%
 
 ---
 
@@ -16,17 +16,17 @@ In dit document wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ad
 
 >[!NOTE]
 >
->Uw account heeft de juiste toegangsrechten en machtigingen nodig om actie te kunnen ondernemen op pagina&#39;s zoals maken, kopiëren, verplaatsen, bewerken en verwijderen.
+>Uw account heeft de juiste toegangsrechten en machtigingen nodig om op pagina&#39;s te kunnen werken, zoals maken, kopiëren, verplaatsen, bewerken en verwijderen.
 >
 >Als u om het even welke problemen ontmoet wij adviseren u uw systeembeheerder contacteert.
 
 <!--
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to act on pages such as create, copy, move, edit, and delete.
 -->
 
 >[!TIP]
 >
->Er zijn een aantal [sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) die u kunt gebruiken vanuit de websiteconsole om uw pagina&#39;s efficiënter te ordenen.
+>Er zijn verschillende [sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) die u kunt gebruiken vanuit de websiteconsole om uw pagina&#39;s efficiënter te ordenen.
 
 {{edge-delivery-authoring}}
 
@@ -70,7 +70,7 @@ Vanuit elk punt kunt u de vertakking naar boven zien vanuit de broodkruimels in 
 
 ### Naamgevingsconventies voor pagina {#page-naming-conventions}
 
-Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
+Bij het maken van een pagina zijn er twee sleutelvelden:
 
 * **[Titel](#title)**:
 
@@ -95,7 +95,7 @@ De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar 
 >
 >Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
 
-Wanneer u een nieuwe pagina maakt, AEM [De paginanaam valideren volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en het GCO.
+Wanneer u een pagina maakt, AEM [valideert de paginanaam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en het GCO.
 
 De minimaal toegestane tekens zijn:
 
@@ -113,7 +113,7 @@ Alle tekens die zijn toegestaan, zijn beschikbaar in [naamconventies](/help/impl
 
 #### Titel {#title}
 
-Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd.](/help/implementing/developing/introduction/naming-conventions.md)
+Als u alleen een pagina opgeeft **Titel** wanneer u een pagina maakt, wordt AEM de pagina afgeleid **Naam** van deze tekenreeks en [De naam valideren volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en JCR.
 
 A **Titel** veld met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
 
@@ -124,7 +124,7 @@ A **Titel** veld met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide
 
 #### Naam {#name}
 
-Wanneer u een pagina opgeeft **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het dialoogvenster **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een uitleg.
+Wanneer u een pagina opgeeft **Naam** bij het maken van een pagina, AEM [valideert de naam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het dialoogvenster **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een uitleg.
 
 ![Voorbeeld van het invoeren van een ongeldige paginanaam](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -185,7 +185,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
 1. Vanaf de eerste fase van de wizard kunt u:
 
-   * Selecteer de sjabloon die u wilt gebruiken om de nieuwe pagina te maken en klik/tik **Volgende** om verder te gaan.
+   * Selecteer de sjabloon die u wilt gebruiken om de nieuwe pagina te maken en selecteer vervolgens **Volgende** om verder te gaan.
 
    * **Annuleren** om het proces af te breken.
 
@@ -193,7 +193,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
 1. Vanaf het laatste werkgebied van de wizard kunt u:
 
-   * Gebruik de drie tabbladen om de [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) u wilt toewijzen aan de nieuwe pagina en klikt/tikt u vervolgens op **Maken** om de pagina te maken.
+   * Gebruik de drie tabbladen om de [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) u wilt toewijzen aan de nieuwe pagina en selecteert u vervolgens **Maken** om de pagina te maken.
 
    * Gebruiken **Vorige** om terug te keren naar de sjabloonselectie.
 
@@ -206,7 +206,7 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u een pagina **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en JCR.
+      * Als u een pagina **Naam** bij het maken van een pagina, AEM [valideert de naam volgens de conventies](/help/implementing/developing/introduction/naming-conventions.md) opgelegd door AEM en JCR.
       * U **kan geen ongeldige tekens verzenden** in de **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
    >[!TIP]
@@ -269,7 +269,7 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
    ![Kopiëren](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Navigeer naar de locatie voor de nieuwe kopie van de pagina.
-1. Tik of klik op de knop **Plakken** pictogram dat beschikbaar kwam.
+1. Selecteer de **Plakken** pictogram dat beschikbaar kwam.
 
    ![Plakken](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -279,7 +279,7 @@ U kunt een pagina en alle subpagina&#39;s ervan naar een nieuwe locatie kopiëre
 
    ![Dialoogvenster Plakken](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Tik of klik op de knop **Plakken** om de plaktransactie te bevestigen en de nieuwe pagina(&#39;s) te maken.
+1. Selecteer de **Plakken** om de plaktransactie te bevestigen en de nieuwe pagina(&#39;s) te maken.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 1. Van de **Naam wijzigen** het werkgebied van de wizard dat u kunt instellen:
 
-   * Geef de naam op die de pagina moet hebben nadat deze is verplaatst en klik/tik op **Volgende** om verder te gaan.
+   * Geef de naam op die de pagina moet krijgen nadat deze is verplaatst en selecteer **Volgende** om verder te gaan.
    * **Annuleren** om het proces af te breken.
 
    ![Pagina verplaatsen en hernoemen](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -383,7 +383,7 @@ Handelingen voor het verplaatsen van pagina&#39;s worden altijd asynchroon verwe
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** -> **Gereedschappen** -> **Bewerkingen** -> **Taken**
+De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** > **Gereedschappen** > **Bewerkingen** > **Taken**
 
 >[!NOTE]
 >

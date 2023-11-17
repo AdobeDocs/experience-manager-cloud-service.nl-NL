@@ -2,10 +2,10 @@
 title: Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie
 description: Inleiding tot Adobe Experience Manager as a Cloud Service - Terminologie.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: e83ce89aedb3c5ea22243d0f86a528286e994338
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 88%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ De volgende termen gebruikt in relatie tot Adobe Experience Manager (AEM) as a C
 
 | Product | Beschrijving |
 |---|---|
-| AEM as a Cloud Service | De &#39;cloud-native&#39; manier om de AEM-applicaties te benutten |
+| AEM as a Cloud Service | De in de cloud geïntegreerde manier om de AEM toepassingen te gebruiken |
 | AEM Assets as a Cloud Service | DAM-mogelijkheden (Digital Asset Management) als cloud-native, schaalbare oplossing voor het opnemen, verwerken en beheren van uw digitale assets, en tegelijk integreren met het bredere ecosysteem van Adobe Experience Cloud en Adobe Creative Cloud. |
 | AEM Sites as a Cloud Service | Een instantie van AEM as a Cloud Service met de applicatie AEM Sites. |
 
@@ -27,7 +27,7 @@ De volgende termen gebruikt in relatie tot Adobe Experience Manager (AEM) as a C
 |---|---|
 | Adobe Pipeline | Het mechanisme voor contentpublicatie vanaf auteur tot aan publicatie. |
 | AEM-auteurlaag | Beschrijft de authoringomgeving voor Sites en Assets. |
-| AEM | Beschrijft de voorvertoningsomgeving voor sites. |
+| Voorvertoningsniveau AEM | Beschrijft de voorvertoningsomgeving voor sites. |
 | AEM-publicatielaag | Beschrijft de publicatieomgeving voor Sites. |
 
 

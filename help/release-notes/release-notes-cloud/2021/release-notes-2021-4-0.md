@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * Wanneer op de pagina Eigenschappen een selectie wordt gemaakt om metagegevens bij te werken, reageert de interface langzaam wanneer het schema veel opties bevat. (CQ-4318538)
 
-* Tijdens het bijwerken en opslaan van de metagegevenswaarde in een tekstveld met één regel, worden de waarden in het vervolgkeuzemenu verwijderd, zelfs als de bewerkingen zijn uitgeschakeld in het vervolgkeuzemenu. (CQ-4317077)
+* Tijdens het bijwerken en opslaan van de metagegevenswaarde in een tekstveld met één regel worden de waarden in het vervolgkeuzemenu verwijderd, zelfs als de bewerkingen zijn uitgeschakeld in het vervolgkeuzemenu. (CQ-4317077)
 
 * U kunt ellips gebruiken als een aantekening om elementen te bekijken. Wanneer een kleine ellips wordt gebruikt, overlapt de ellips met het aantal van de annotatie in de drukversie. (CQ-4316792)
 
@@ -132,7 +132,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * AEM extensie voor PWA Studio incl. voorbeeld-integratie
 
-* Nieuwe CIF-kerncomponent voor navigatie die de WCM-kerncomponent uitbreidt
+* Nieuwe CIF kerncomponent voor navigatie die de WCM-kerncomponent voor navigatie uitbreidt
 
 * Visuele indicator voor gefaseerde catalogusgegevens in AEM storefront
 

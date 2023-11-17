@@ -4,9 +4,9 @@ description: Leer de krachtige functies van de Site-rail om u te helpen uw site 
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Terwijl de Site-rail in de siteconsole wordt weergegeven, selecteert u de hoofdm
 
 ![Themabronnen downloaden](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Tik of klik op **Themabronnen downloaden** om een lokale kopie van het sitethema te downloaden als `.zip` bestand voor aanpassingsdoeleinden.
+Selecteren **Themabronnen downloaden** om een lokale kopie van het sitethema te downloaden als `.zip` bestand voor aanpassingsdoeleinden.
 
 ## Sjabloonbronnen downloaden {#downloading-template-resources}
 
@@ -48,7 +48,7 @@ Als uw site is gebaseerd op een sitesjabloon en de Site-rail in de siteconsole w
 
 ![Themabronnen downloaden](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Tik of klik op de knop of knoppen onder de kop **Aanvullende sjabloonbronnen downloaden** om een lokale kopie van de beschikbare bestanden te downloaden.
+Selecteer de knop of knoppen onder de kop **Aanvullende sjabloonbronnen downloaden** om een lokale kopie van de beschikbare bestanden te downloaden.
 
 ## Themaversies weergeven en wijzigen {#them-versions}
 
@@ -60,11 +60,11 @@ Terwijl de Site-rail in de siteconsole wordt weergegeven, selecteert u de hoofdm
 
 De huidige versie van het thema wordt weergegeven met de knoeiboel voor vastleggen samen met de tijdstempel van de laatste update.
 
-Tik of klik op **Versie selecteren** om vorige versies van het thema weer te geven.
+Selecteren **Versie selecteren** om vorige versies van het thema weer te geven.
 
 ![Themaversie selecteren](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Tik of klik op de versie die u wilt wijzigen en tik op **Toepassen** om de wijziging aan te brengen.
+Selecteer de versie die u wilt wijzigen en selecteer **Toepassen** om de wijziging aan te brengen.
 
 Als AEM ontdekt dat een nieuwere versie van het thema via de front-end pijpleiding is opgesteld maar niet op uw plaats is toegepast, zal een berichtpictogram tonen.
 
@@ -78,7 +78,7 @@ Als uw plaats niet gebruikend een plaatsmalplaatje werd gecreeerd, is het niet m
 
 Nochtans kunt u de front-end pijpleiding voor uw plaats toelaten gebruikend de spoorstaaf van de Plaats.
 
-Selecteer, terwijl Site-rail wordt weergegeven in de siteconsole, de hoofdmap van uw site om themagegevens over de site weer te geven en tik of klik op **Vooruiteinde pijplijn inschakelen**.
+Selecteer, terwijl Site-rail wordt weergegeven in de siteconsole, de hoofdmap van uw site om themagegevens over de site weer te geven en selecteer vervolgens **Vooruiteinde pijplijn inschakelen**.
 
 ![Het toelaten van front-end pijpleiding](/help/sites-cloud/administering/assets/enable-fep.png)
 

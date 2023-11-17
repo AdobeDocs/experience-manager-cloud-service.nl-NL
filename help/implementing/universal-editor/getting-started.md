@@ -2,9 +2,9 @@
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van
 
 Hoewel de Universal Editor inhoud uit elke bron kan bewerken, wordt in dit document een AEM-app als voorbeeld gebruikt.
 
-Er zijn een aantal stappen om uw AEM-app in te schrijven en van instrumenten te voorzien voor gebruik van de Universal Editor.
+Er zijn verschillende stappen om uw AEM-app aan te melden en van instrumenten te voorzien voor gebruik van de Universal Editor.
 
 1. [Toegang aanvragen tot de Universal Editor.](#request-access)
 1. [Neem de kernbibliotheek van de Universal Editor op.](#core-library)
@@ -103,7 +103,7 @@ Deze eigenschap moet worden ingesteld in het dialoogvenster `org.apache.sling.en
 
 Voor de Universal Editor-service is een [Naam van uniforme bron (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het juiste back-endsysteem te identificeren en te gebruiken voor de inhoud in de app die wordt bewerkt. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
 
-De instrumentatiekenmerken die aan de pagina worden toegevoegd, bestaan voornamelijk uit: [HTML Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) een industriestandaard die ook kan worden gebruikt om HTML semantischer te maken, HTML-documenten indexeerbaar te maken, enz.
+De instrumentatiekenmerken die aan de pagina worden toegevoegd, bestaan voornamelijk uit: [HTML Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) een industriestandaard die ook kan worden gebruikt om HTML semantischer te maken, HTML documenten indexeerbaar te maken, etc.
 
 ### Verbindingen maken {#connections}
 

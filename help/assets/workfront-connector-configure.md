@@ -4,7 +4,7 @@ description: Configureren [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Voer de volgende stappen uit om u te abonneren op de gebeurtenissen:
 
 ### Mapmetagegevenstoewijzing configureren {#folder-metadata-mapping}
 
-Metagegevenstoewijzing tussen Workfront-projecten en AEM mappen wordt gedefinieerd in AEM schema&#39;s met metagegevens van mappen. Metagegevensschema&#39;s voor mappen moeten op de gebruikelijke wijze in AEM worden gemaakt en geconfigureerd. Workfront Tools voegt een automatisch aanvullen vervolgkeuzelijst toe aan het tabblad Settings-configuratie van elk formulierveld voor het schema van metagegevens van de map. In dit keuzemenu voor automatisch aanvullen kunt u opgeven aan welk Workfront-veld elke AEM mapeigenschap moet worden toegewezen.
+Metagegevenstoewijzing tussen Workfront-projecten en AEM mappen wordt gedefinieerd in AEM schema&#39;s met metagegevens van mappen. Metagegevensschema&#39;s voor mappen moeten op de gebruikelijke wijze in AEM worden gemaakt en geconfigureerd. Workfront Tools voegt een automatisch aangevulde vervolgkeuzelijst toe aan het tabblad Settings-configuratie van elk formulierveld voor het schema van metagegevens van de map. In dit keuzemenu voor automatisch aanvullen kunt u opgeven aan welk Workfront-veld elke AEM mapeigenschap moet worden toegewezen.
 
 Voer de volgende stappen uit om de toewijzingen te configureren:
 

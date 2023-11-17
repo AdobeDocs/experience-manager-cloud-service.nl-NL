@@ -1,9 +1,10 @@
 ---
 title: AEM Assets-invoegtoepassing voor Adobe Express
 description: Met de invoegtoepassing AEM Assets voor Adobe Express hebt u rechtstreeks vanuit de gebruikersinterface van de Adobe Express toegang tot de elementen die in AEM Assets zijn opgeslagen.
-source-git-commit: e9ff2f2b15642288e82ac6f900dc567231bf85c7
+exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Voer de volgende stappen uit om de AEM Assets-invoegtoepassing aan de Adobe Expr
 
 1. Open de Adobe Express webtoepassing.
 
-1. Open een nieuw leeg canvas door een nieuwe sjabloon of een project te laden of door een nieuw element te maken.
+1. Open een nieuw leeg canvas door een nieuwe sjabloon of een project te laden of door een element te maken.
 
 1. Klikken **[!UICONTROL Add-ons]** beschikbaar in het linkernavigatiegebied.
 
@@ -64,4 +65,3 @@ Nadat u de juiste wijzigingen hebt aangebracht in het Express-canvas, kunt u het
 1. Klikken **[!UICONTROL Upload]** om het middel te uploaden naar AEM Assets.
 
    ![Elementen opslaan in AEM](assets/aem-assets-add-on-save.png)
-

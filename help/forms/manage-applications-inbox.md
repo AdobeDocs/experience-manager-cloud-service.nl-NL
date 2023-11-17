@@ -5,9 +5,9 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebie
 
 Op de werkbalk Handelingen staan alle beschikbare opties voor de taak. Terwijl sparen, het Terugstellen, en de Delegatie standaardacties zijn, worden andere beschikbare acties gevormd in [Taakstap toewijzen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). In het bovenstaande voorbeeld worden Goedkeuren en Afwijzen geconfigureerd in de workflow.
 
-Wanneer u de taak uitvoert, gaat deze verder in de workflow.
+Als u de taak uitvoert, gaat deze verder in de workflow.
 
 ### Voltooide taken weergeven {#view-completed-tasks}
 

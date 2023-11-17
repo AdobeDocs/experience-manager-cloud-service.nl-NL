@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -57,22 +57,22 @@ Er is een **Omzetconfiguratie** console beschikbaar voor het vormen van vertaalr
 
 Toegang tot dit bestand:
 
-1. Navigeren naar **Gereedschappen** -> **Algemeen**.
-1. Tik of klik op **Omzetconfiguratie**.
+1. Navigeren naar **Gereedschappen** > **Algemeen**.
+1. Selecteren **Omzetconfiguratie**.
 
 AEM maakt automatisch vertaalregels voor alle inhoud. Deze regels weergeven:
 
-1. Selecteer de `/content` en vervolgens de **Bewerken** van de werkbalk.
+1. Selecteer de `/content` context.
+1. Selecteer op de werkbalk de optie **Bewerken**.
 1. De redacteur van de Regels van de Vertaling opent met de regels die automatisch voor AEM creeerden `/content` pad.
 
    ![Editor voor vertaalregels](assets/translation-rules-editor.png)
 
 1. De pagina-eigenschappen die worden vertaald, bevinden zich onder de **Algemeen** van de lijst. U kunt bestaande eigenschapsnamen toevoegen of bijwerken die u expliciet wilt opnemen in de vertaling.
-   1. Voer de naam van de eigenschap in het dialoogvenster **Nieuwe eigenschap** veld.
-   1. De opties **Vertalen** en **Overnemen** worden automatisch ingeschakeld.
-   1. Tik of klik op **Toevoegen**.
+   1. In de **Nieuwe eigenschap** voert u de naam van de eigenschap in. De opties **Vertalen** en **Overnemen** worden automatisch ingeschakeld.
+   1. Selecteren **Toevoegen**.
    1. Herhaal deze stappen voor alle velden die u moet vertalen.
-   1. Tik of klik op **Opslaan**.
+   1. Selecteren **Opslaan**.
 
 U hebt nu uw vertaalregels geconfigureerd.
 
@@ -86,7 +86,7 @@ U hebt nu uw vertaalregels geconfigureerd.
 
 ## Geavanceerd gebruik {#advanced-usage}
 
-Er zijn een aantal extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
+Er zijn verscheidene extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
 
 Dergelijke functies zijn meestal niet nodig om uw inhoud te lokaliseren, maar u kunt er in het dialoogvenster [Aanvullende bronnen](#additional-resources) als u geïnteresseerd bent.
 

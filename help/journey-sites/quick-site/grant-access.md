@@ -2,9 +2,9 @@
 title: Toegang verlenen aan de front-end ontwikkelaar
 description: Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toegang tot uw AEM plaats git bewaarplaats en pijpleiding.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Eerst moet u de front-end ontwikkelaar als gebruiker toevoegen door de Admin Con
 
    ![Productprofielen](assets/product-profiles.png)
 
-1. Tik of klik op de knop **Gebruikers** en vervolgens de **Gebruiker toevoegen** knop.
+1. Als u de front-end ontwikkelaar wilt toewijzen aan de juiste profielen, selecteert u de optie **Gebruikers** en vervolgens de **Gebruiker toevoegen** knop.
 
    ![Gebruiker toevoegen](assets/add-user.png)
 
@@ -73,11 +73,11 @@ Eerst moet u de front-end ontwikkelaar als gebruiker toevoegen door de Admin Con
 
    ![Gebruiker toevoegen aan team](assets/add-to-team.png)
 
-1. In de **Product** selecteren, tikken of klikken op het plusteken en vervolgens selecteren **Adobe Experience Manager as a Cloud Service** en wijst de **Implementatiebeheer** en **Ontwikkelaar** productprofielen voor de gebruiker.
+1. In de **Product** Selecteer eerst het plusteken en selecteer vervolgens **Adobe Experience Manager as a Cloud Service** en wijst de **Implementatiebeheer** en **Ontwikkelaar** productprofielen voor de gebruiker.
 
    ![Teamprofielen toewijzen](assets/assign-team.png)
 
-1. Tik of klik op **Opslaan** en er wordt een welkomstbericht verzonden naar de front-end ontwikkelaar die u als gebruiker hebt toegevoegd.
+1. Selecteren **Opslaan** en er wordt een welkomstbericht verzonden naar de front-end ontwikkelaar die u als gebruiker hebt toegevoegd.
 
 De uitgenodigde front-end ontwikkelaar kan tot de Manager van de Wolk toegang hebben door de verbinding in welkome e-mail te klikken en zich binnen te ondertekenen gebruikend hun Adobe ID.
 

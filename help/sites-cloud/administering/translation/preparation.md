@@ -4,9 +4,9 @@ description: Leer hoe u inhoud voorbereidt voor vertaling bij het ontwikkelen va
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,14 @@ De [WKND-zelfstudiesite](/help/implementing/developing/introduction/develop-wknd
             |- it
 ```
 
-De taalkopie waarvoor u oorspronkelijk site-inhoud hebt gemaakt, is de master taal. De master taal is de bron die in andere talen wordt vertaald.
+De taalkopie waarvoor u oorspronkelijk site-inhoud hebt gemaakt, is de hoofdtaal. De taalmaster is de bron die in andere talen wordt vertaald.
 
 Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/wknd/fr` Dit is de hoofdtaalkennis van de Franse taalkopie. Taalkopieën moeten een [correct geconfigureerde taalhoofdmap](preparation.md#creating-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van een bronsite worden uitgevoerd.
 
 Gebruik de volgende stappen om uw site voor te bereiden op vertaling:
 
-1. Maak de hoofdmap van de master taal. De hoofdtaalsite van de Engelse WKND-demosite is bijvoorbeeld `/content/wknd/language-masters/en`. Zorg ervoor dat de taalwortel correct volgens de informatie in wordt gevormd [Een hoofdmap voor talen maken](preparation.md#creating-a-language-root).
-1. Ontwerp de inhoud van uw master taal.
+1. Maak de hoofdmap van de taal van het stramien. De hoofdtaalsite van de Engelse WKND-demosite is bijvoorbeeld `/content/wknd/language-masters/en`. Zorg ervoor dat de taalwortel correct volgens de informatie in wordt gevormd [Een hoofdmap voor talen maken](preparation.md#creating-a-language-root).
+1. Ontwerp de inhoud van uw taalstramien.
 1. Maak de hoofdmap van elke taalkopie voor uw site. De Franse taalkopie van de WKND-voorbeeldsite is bijvoorbeeld `/content/wknd/language-masters/fr`.
 
 Nadat u de inhoud hebt voorbereid voor vertaling, kunt u automatisch ontbrekende pagina&#39;s maken in uw taalkopieën en bijbehorende vertaalprojecten. (Zie [Een vertaalproject maken](managing-projects.md).) Voor een overzicht van het vertaalproces van de inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige websites](overview.md).
@@ -71,20 +71,20 @@ Als u de hoofdtaal wilt maken, maakt u een pagina en gebruikt u een ISO-taalcode
 * `<language-code>` - De ondersteunde taalcode is bijvoorbeeld een tweelettercode zoals gedefinieerd in ISO-639-1 `en`.
 * `<language-code>_<country-code>` of `<language-code>-<country-code>` - De ondersteunde landcode is bijvoorbeeld een tweelettercode in kleine letters of hoofdletters, zoals gedefinieerd in ISO 3166. `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen. De hoofdpagina van de Franse taalkopie van de WKND-site heeft bijvoorbeeld `fr` als de **Naam** eigenschap. Let erop dat de **Naam** eigenschap wordt gebruikt als de naam van het paginaknooppunt in de repository en bepaalt daarom het pad van de pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen. De hoofdpagina van de Franse taalkopie van de WKND-site heeft bijvoorbeeld `fr` als de **Naam** eigenschap. De **Naam** eigenschap wordt gebruikt als de naam van het paginaknooppunt in de repository en bepaalt daarom het pad van de pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navigeer naar sites.
-1. Klik of tik op de site waarvoor u een taalkopie wilt maken.
-1. Klikken of tikken **Maken** en klik of tik op **Pagina**.
+1. Selecteer de site waarvoor u een taalkopie wilt maken.
+1. Selecteren **Maken** en selecteer vervolgens **Pagina**.
 
    ![Pagina maken](../assets/create-page.png)
 
-1. Selecteer de paginasjabloon en klik of tik op **Volgende**.
+1. Selecteer de paginasjabloon en selecteer vervolgens **Volgende**.
 1. In de **Naam** veldtype de landcode in het formaat `<language-code>` of `<language-code>_<country-code>`bijvoorbeeld `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Typ een titel voor de pagina.
 
    ![Hoofdpagina van taal maken](../assets/create-language-root.png)
 
-1. Klikken of tikken **Maken**. Klik of tik in het bevestigingsdialoogvenster op **Gereed** om naar de console van Plaatsen terug te keren, of **Openen** om de taalkopie te openen.
+1. Selecteer **Maken**. Selecteer in het bevestigingsdialoogvenster een van de volgende opties **Gereed** om naar de console van Plaatsen terug te keren, of **Openen** om de taalkopie te openen.
 
 ## De status van taalwortels bekijken {#seeing-the-status-of-language-roots}
 
@@ -94,11 +94,11 @@ AEM biedt **Verwijzingen** rail die een lijst toont van taalwortels die zijn gec
 
 Gebruik de volgende procedure om de taalkopieën voor een pagina te bekijken met de [spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
-1. Selecteer in de siteconsole een pagina van de site en klik of tik op **Verwijzingen**.
+1. Selecteer in de siteconsole een pagina van de site en selecteer vervolgens **Verwijzingen**.
 
    ![Open Reference rail](../assets/opening-references-rail.png)
 
-1. Klik of tik in de referentiespoor **Taalkopieën**. De spoorstaaf toont de taalexemplaren van de website.
+1. Selecteer in de referentiespoor **Taalkopieën**. De spoorstaaf toont de taalexemplaren van de website.
 
 ## Taalkopieën op meerdere niveaus {#multiple-levels}
 

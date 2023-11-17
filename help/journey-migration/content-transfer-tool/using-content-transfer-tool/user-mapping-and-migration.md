@@ -2,9 +2,9 @@
 title: Toewijzing van gebruikers en belangrijkste migratie
 description: Overzicht van gebruikerstoewijzing en belangrijkste migratie in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1004'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Met het gereedschap Inhoud overbrengen en het beheer van cloudversnelling kunt u
 AEM gebruikers kunnen worden toegewezen aan overeenkomstige gebruikers van Adobe IMS met hetzelfde e-mailadres.  Deze toewijzing kan automatisch plaatsvinden in CTT (tijdens de extractiestap) en of dit gebeurt of niet door een knevel kan worden geregeld voordat de extractie wordt gestart. De standaardinstelling van de schakeloptie kan door de gebruiker worden genegeerd wanneer de extractie wordt gestart.
 
 * Als het bronsysteem een auteurinstantie is, door gebrek is de keus om de afbeelding te doen _op_, omdat dit het aanbevolen proces is.
-* Als het bronsysteem een publicatie-instantie is, kunt u de toewijzing standaard uitvoeren _uit_, omdat gebruikers gewoonlijk niet worden gemigreerd of gebruikt op publicatieinstanties; of als zij worden gebruikt, wordt een verschillend authentificatiesysteem (d.w.z., niet IMS) typisch gebruikt voor hen.
+* Als het bronsysteem een publicatie-instantie is, kunt u de toewijzing standaard uitvoeren _uit_, omdat gebruikers gewoonlijk niet worden gemigreerd of gebruikt op publicatieinstanties; of als zij worden gebruikt, wordt een verschillend authentificatiesysteem (namelijk niet IMS) typisch gebruikt voor hen.
 
 Of gebruikers tijdens de extractie al dan niet worden toegewezen, ze worden samen met de groepen tijdens de opname naar het wolkensysteem gemigreerd als ze zijn gekoppeld aan inhoud die wordt gemigreerd.
 

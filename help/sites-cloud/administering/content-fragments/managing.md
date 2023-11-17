@@ -4,9 +4,9 @@ description: Leer hoe te om uw AEM Contentfragmenten van de console en de redact
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2531'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Bepaalde acties zijn beschikbaar via de console, zonder een specifiek inhoudsfra
 
   >[!NOTE]
   >
-  >De **Activa** -console wordt gebruikt om toegang te krijgen tot elementen, zoals afbeeldingen, video&#39;s, enz.  U hebt toegang tot deze console:
+  >De **Activa** -console wordt gebruikt om toegang te krijgen tot elementen, zoals afbeeldingen, video&#39;s, enzovoort.  U hebt toegang tot deze console:
   >
   >* met de **Openen in elementen** koppeling (in de console Inhoudsfragmenten)
   >* rechtstreeks van de wereld **Navigatie** ruit
@@ -200,7 +200,7 @@ Als u de muis boven de mapnaam houdt, wordt het JCR-pad weergegeven.
 
      ![Content Fragments console - Language indicator](assets/cf-managing-console-language-indicator.png)
 
-   * Klik/tik op de telling om een dialoog te openen die alle taalexemplaren toont. Als u een specifieke taalkopie wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
+   * Selecteer de telling om een dialoog te openen die alle taalexemplaren toont. Als u een specifieke taalkopie wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
 
      ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
@@ -299,7 +299,7 @@ U kunt inhoudsfragmenten publiceren naar:
 
   >[!NOTE]
   >
-  >Voor meer informatie over de Voorvertoningsomgevingen raadpleegt u:
+  >Raadpleeg de volgende secties voor meer informatie over de voorvertoningsomgevingen:
   >
   >* [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [OSGi-instellingen configureren voor de voorvertoningsreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -413,7 +413,7 @@ Het pictogram geeft de landinstelling van het inhoudsfragment aan, samen met het
 
 ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
 
-Klik/tik op de telling om een dialoog te openen die alle taalexemplaren toont. Als u een specifieke taalkopie wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
+Selecteer de telling om een dialoog te openen die alle taalexemplaren toont. Als u een specifieke taalkopie wilt openen, klikt u op de knop **Titel** in het dialoogvenster.
 
 ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
