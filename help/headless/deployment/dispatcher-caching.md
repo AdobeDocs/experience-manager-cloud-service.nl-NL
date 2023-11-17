@@ -2,13 +2,13 @@
 title: GraphQL Persisted Queries - caching inschakelen in Dispatcher
 description: De Dispatcher is een caching- en beveiligingslaag voor Adobe Experience Manager-publicatieomgevingen. U kunt caching voor Verlengde Vragen in AEM Zwaartepunt toelaten.
 feature: Dispatcher, GraphQL API
-source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
+exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
+source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
-
 
 # GraphQL Persisted Queries - caching inschakelen in Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
@@ -37,6 +37,27 @@ Om het in cache plaatsen van persistente query&#39;s in te schakelen, definieert
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
    ```
+
+>[!NOTE]
+>
+>Wanneer het cachegeheugen van de Verzender voor voortgezette vragen door te gebruiken wordt toegelaten `Define CACHE_GRAPHQL_PERSISTED_QUERIES` een `ETag` wordt toegevoegd aan de reactie van de Dispatcher.
+>
+>Standaard worden de `ETag` header is geconfigureerd met de volgende instructie:
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>Nochtans, kan dit het plaatsen problemen veroorzaken wanneer gebruikt op de voortgezette vraagreacties, omdat het geen rekening voor kleine veranderingen in de reactie houdt.
+>
+>Om individuele `ETag` berekeningen *elk* unieke reactie `FileETag Digest` instelling moet worden gebruikt in de configuratie van de verzender:
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
 
 >[!NOTE]
 >
