@@ -2,9 +2,9 @@
 title: Aan de slag met het gereedschap Inhoud overbrengen
 description: Leer hoe u aan de slag kunt met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1424'
 ht-degree: 6%
 
 ---
@@ -74,7 +74,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 >abstract="Leer hoe u een migratieset maakt en beheert en hoe u de extractiesleutel kopieert."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Zelfstudie - gebruik van het gereedschap Inhoud overbrengen"
 
-<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
+<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
 1. Meld u aan bij Cloud Acceleration Manager (CAM) en klik op het CAM-project dat u eerder hebt gemaakt om te beoordelen of u klaar bent om naar AEM as a Cloud Service te gaan. Als u geen CAM project hebt gecreeerd, verwijs naar het Creëren van en het Leiden van een Project in CAM.
 
@@ -111,7 +111,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
 >title="Migratieset vullen"
->abstract="Nadat een migratieset is gemaakt, moet deze worden gevuld met de inhoud van de broninstantie die naar de AEM as a Cloud Service omgeving moet worden verplaatst. Hiervoor moet het gereedschap Inhoud overbrengen op de broninstantie zijn geïnstalleerd."
+>abstract="Nadat u een migratieset hebt gemaakt, moet deze zijn gevuld met de inhoud van de broninstantie die naar de AEM as a Cloud Service omgeving moet worden verplaatst. Hiervoor moet het gereedschap Inhoud overbrengen op de broninstantie zijn geïnstalleerd."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Inhoud uitnemen"
 
 Als u de migratieset wilt vullen die u hebt gemaakt in het beheer voor cloudversnelling, moet u de nieuwste versie van het gereedschap Inhoud overbrengen installeren op uw Adobe Experience Manager-broninstantie (AEM). Volg deze sectie om te leren hoe u de migratieset kunt vullen.
