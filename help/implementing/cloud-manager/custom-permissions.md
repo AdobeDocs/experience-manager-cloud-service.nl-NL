@@ -2,9 +2,9 @@
 title: Aangepaste machtigingen
 description: Leer hoe u douanetoestemmingen kunt gebruiken om nieuwe profielen van de douanetoestemming met configureerbare toestemmingen tot stand te brengen om toegang tot programma's, pijpleidingen en milieu's voor de gebruikers van de Managers van de Wolk te beperken.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 33d14ac66fa46c25f1e027aa86848768fd0271ff
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -96,11 +96,6 @@ Nu u een nieuw productprofiel hebt, kunt u er aangepaste machtigingen aan toewij
 
 1. Selecteer de **Alles toevoegen** aan de bovenkant van de **Beschikbare machtigingen** kolom om alle machtigingen toe te voegen.
 
-1. Als het profiel altijd alle machtigingsitems moet hebben, kunt u het **Automatisch opnemen** -optie.
-
-   * **Aan** - Alle huidige machtigingsitems en toekomstige machtigingsitems worden verplaatst naar Opgenomen machtigingsitems en bij opslaan zijn van overeenkomstige toepassing.
-   * **Uit** - Alle machtigingsitems worden teruggezet naar beschikbare machtigingsitems en bij opslaan zijn dienovereenkomstig van toepassing.
-
 1. Selecteren **Opslaan** als u klaar bent met het definiëren van de machtigingsitems voor uw nieuwe productprofiel.
 
 Uw nieuwe productprofiel wordt nu opgeslagen met de aangepaste machtigingen.
@@ -129,6 +124,10 @@ De volgende machtigingen zijn beschikbaar voor het maken van aangepaste profiele
 | Omgeving maken | Gebruikers toestaan een omgeving te maken |
 | Omgevingsbewerking | Gebruikers toestaan omgevingen bij te werken en te bewerken |
 | Omgevingslogboeken gelezen | Gebruikers toestaan omgevingslogboeken te lezen |
+| Omgevingsvariabelen beheren | Gebruikers toestaan omgevingsconfiguraties te maken/te bewerken/te verwijderen |
+| Omgevingsherstel maken | Gebruikers toestaan om de omgeving te herstellen |
+| Rapid Dev Environment opnieuw instellen | Gebruikers toestaan om de omgeving voor snel ontwikkelen opnieuw in te stellen |
+| Inhoud kopiëren beheren | Gebruikers toestaan bewerkingen voor het kopiëren van inhoud te beheren |
 | Pipet maken | Gebruikers toestaan nieuwe pijpleidingen te maken |
 | Pipet verwijderen | Gebruikers toestaan pijpleidingen te verwijderen |
 | Pipet bewerken | Gebruikers toestaan pijpleidingen te bewerken |
@@ -138,6 +137,15 @@ De volgende machtigingen zijn beschikbaar voor het maken van aangepaste profiele
 | Belangrijke metrische fouten negeren/negeren | Gebruikers toestaan belangrijke metrische fouten te negeren/af te wijzen |
 | Plan voor productieimplementaties | Gebruikers toestaan een stap voor productieimplementatie te plannen |
 | Toegang tot opslaggegevens | Gebruikers toegang geven tot dataopslag en een wachtwoord voor toegang genereren |
+| Opslagplaats maken | Gebruikers toestaan nieuwe it-opslagruimten te maken |
+| Opslagplaats verwijderen | Gebruikers mogen it-opslagruimten verwijderen |
+| Bewerken opslagplaats | Gebruikers mogen it-opslagruimten bewerken |
+| Code opslagplaats genereren | Gebruikers toestaan een project te genereren op basis van het archetype |
+| Domeinnaam beheren | Gebruikers toestaan domeinnamen te maken, te bewerken/te verwijderen |
+| IP Lijst van gewenste personen beheert | Sta gebruikers toe om IP lijst van gewenste personen en IP lijst van gewenste personen tot stand te brengen uit te geven/te schrappen binden |
+| Netwerkinfrastructuur beheren | Gebruikers toestaan netwerkinfrastructuur te maken/te bewerken/te verwijderen |
+| SSL-certificaatbeheer | Gebruikers toestaan een SSL-certificaat te maken, te bewerken/te verwijderen |
+| Gebruikersbeheer subaccount van New Relic | Gebruikers toestaan nieuwe betrouwbare gebruikers van subaccounts te lezen/te bewerken |
 
 ### Rechten op organisatieniveau {#organization-level}
 
