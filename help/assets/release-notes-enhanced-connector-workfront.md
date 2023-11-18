@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 681d4b9f300280e5a6723bd00a9ccfde0545f401
+source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De releasedatum voor de laatste versie 1.9.15 van [!DNL Workfront for Experience
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende opgeloste problemen:
 
-* Wanneer de lijst met AEM mappen wordt weergegeven, duurt het langer dan een minuut om het dialoogvenster te laden.
+* Wanneer u de lijst met AEM mappen weergeeft, duurt het langer dan een minuut om het dialoogvenster te laden.
 * Geautoriseerd [!DNL Workfront] gebruikers ontvangen consequent logboeken met fouten in de verificatie.
 
 >[!NOTE]
