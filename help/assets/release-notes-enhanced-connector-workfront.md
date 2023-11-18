@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 681d4b9f300280e5a6723bd00a9ccfde0545f401
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -15,20 +15,14 @@ In de volgende sectie worden de algemene opmerkingen bij de release beschreven v
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor de laatste versie 1.9.14 van [!DNL Workfront for Experience Manager enhanced connector] is 13 oktober 2023.
+De releasedatum voor de laatste versie 1.9.15 van [!DNL Workfront for Experience Manager enhanced connector] is 17 november 2023.
 
 ## Geen hooglichten {#release-highlights}
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende opgeloste problemen:
 
-* Als gebeurtenisabonnementen zijn uitgeschakeld onder Geavanceerde instellingen, kunt u nog steeds de opties selecteren voor **Abonneren op update-gebeurtenissen voor document om metagegevens AEM elementen bij te werken**, **Alle projectelementen na voltooiing van het project publiceren naar Brand Portal**, en **Synchronisatie van opmerkingen inschakelen**.
-
-* Sommige elementen die in Experience Manager zijn opgeslagen, worden niet correct gerenderd wanneer u deze in Workfront bekijkt.
-
-* Tijdens het opnieuw configureren van de Experience Manager-verbinding met Workfront, worden gebeurtenisabonnementen zoals synchronisatie van opmerkingen, verwijderen en documentupdate niet gemaakt.
-
-* Belangrijke verbeteringen in de API-prestaties voor het maken, bijwerken, inschakelen van gekoppelde map, inschakelen van synchronisatie met opmerkingen, in- en uitschakelen, instellingen van te voren opslaan op aansluiting.
-
+* Wanneer de lijst met AEM mappen wordt weergegeven, duurt het langer dan een minuut om het dialoogvenster te laden.
+* Geautoriseerd [!DNL Workfront] gebruikers ontvangen consequent logboeken met fouten in de verificatie.
 
 >[!NOTE]
 >
@@ -37,7 +31,7 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.14](/help/assets/workfront-connector-install.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.15](/help/assets/workfront-connector-install.md) van de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekende problemen {#known-issues}
 
@@ -46,6 +40,16 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 * Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** de drop-down lijst staat u niet toe om de doelbestemming binnen Experience Manager te selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** vervolgkeuzelijst beschikbaar in de nieuwe Workfront-ervaring.
 
 ## Eerdere versies {#previous-releases}
+
+### Release oktober 2023 {#october-2023-release}
+
+* Als gebeurtenisabonnementen zijn uitgeschakeld onder Geavanceerde instellingen, kunt u nog steeds de opties selecteren voor **Abonneren op update-gebeurtenissen voor document om metagegevens AEM elementen bij te werken**, **Alle projectelementen na voltooiing van het project publiceren naar Brand Portal**, en **Synchronisatie van opmerkingen inschakelen**.
+
+* Sommige elementen die in Experience Manager zijn opgeslagen, worden niet correct gerenderd wanneer u deze in Workfront bekijkt.
+
+* Tijdens het opnieuw configureren van de Experience Manager-verbinding met Workfront, worden gebeurtenisabonnementen zoals synchronisatie van opmerkingen, verwijderen en documentupdate niet gemaakt.
+
+* Belangrijke verbeteringen in de API-prestaties voor het maken, bijwerken, inschakelen van gekoppelde map, inschakelen van synchronisatie met opmerkingen, in- en uitschakelen, instellingen van te voren opslaan op aansluiting.
 
 ### Release september 2023 {#september-2023-release}
 
