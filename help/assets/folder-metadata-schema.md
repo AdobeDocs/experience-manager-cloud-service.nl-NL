@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 4%
@@ -48,7 +48,7 @@ U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metage
 
 1. Als u een component wilt configureren, selecteert u deze en wijzigt u de eigenschappen ervan in het dialoogvenster **[!UICONTROL Settings]** tab.
 
-   Verwijder indien nodig een component uit het dialoogvenster **[!UICONTROL Settings]** tab.
+   Verwijder zo nodig een component uit het dialoogvenster **[!UICONTROL Settings]** tab.
 
    ![configure_properties](assets/configure_properties.png)
 

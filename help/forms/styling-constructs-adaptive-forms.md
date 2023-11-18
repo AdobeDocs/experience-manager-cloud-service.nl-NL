@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2314'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Momenteel zijn LESS-variabelen alleen gedefinieerd voor deze eigenschappen van d
 
 ## Componentstijl wijzigen {#changing-component-style}
 
-U kunt de weergave, lay-out, positionering en zichtbaarheid van elementen wijzigen. U kunt deze taak uitvoeren door uw aangepaste CSS-bestanden te maken of bij te werken, zodat deze de opmaakconstructies bevatten die in dit artikel worden vermeld.
+U kunt de vormgeving, lay-out, positionering en zichtbaarheid van elementen wijzigen. U kunt deze taak uitvoeren door uw aangepaste CSS-bestanden te maken of bij te werken, zodat deze de opmaakconstructies bevatten die in dit artikel worden vermeld.
 
 Als u een stijl wilt toepassen op een adaptief formulier, opent u het adaptieve formulier in voor bewerking, opent u de eigenschappen van de container van het adaptieve formulier en geeft u het pad van het aangepaste CSS-bestand op op het tabblad Standaard. Standaardstijlconstructies van het adaptieve formulier en overschreven met de constructies die in het aangepaste CSS-bestand worden vermeld.
 

@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2023.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1687'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,7 @@ Download CDN-logbestanden vanuit Cloud Manager. Dit is handig voor optimalisatie
 ### Voortijdig-adoptieprogramma voor CDN- en WAF-regels {#waf-early-adopter}
 
 Het verkeer van de filter bij CDN die op wordt gebaseerd:
+
 * aanvraagheaders en -eigenschappen (bijvoorbeeld IP-adres)
 * verkeerspatronen gekend om met kwaadwillig verkeer worden geassocieerd
 

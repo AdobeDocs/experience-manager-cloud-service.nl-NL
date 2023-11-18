@@ -2,7 +2,7 @@
 title: Client-Side bibliotheken gebruiken op AEM as a Cloud Service
 description: AEM biedt clientbibliotheekmappen, waarmee u uw clientcode (clientlibs) in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Clientlibs zijn de ingebouwde oplossing voor het leveren van CSS en JavaScript v
 
 ## Wat zijn clientbibliotheken? {#what-are-clientlibs}
 
-Voor sites moeten JavaScript- en CSS-bronnen en statische bronnen, zoals pictogrammen en weblettertypen, op de client worden verwerkt. Een clientlib is AEM mechanisme om (per categorie indien vereist) naar dergelijke middelen te verwijzen en te dienen.
+Voor sites moeten JavaScript- en CSS-bronnen en statische bronnen, zoals pictogrammen en weblettertypen, op de client worden verwerkt. Een clientlib is AEM mechanisme om (indien nodig per categorie) naar dergelijke middelen te verwijzen en te dienen.
 
 AEM verzamelt de CSS en JavaScript van de site in één bestand, op een centrale locatie, om ervoor te zorgen dat slechts één kopie van een bron wordt opgenomen in de HTML-uitvoer. Hierdoor wordt de efficiëntie van de levering gemaximaliseerd en kunnen dergelijke bronnen centraal in de opslagplaats worden onderhouden via proxy, zodat de toegang veilig blijft.
 

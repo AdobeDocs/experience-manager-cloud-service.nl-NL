@@ -2,9 +2,9 @@
 title: Basisbeginselen van Content Modeling
 description: Leer de basis van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Fragments van de Inhoud.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '900'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 
 >[!NOTE]
 >
->U kunt ook ad-hocverwijzingen maken met koppelingen in tekstblokken.
+>U kunt ook geïmproviseerde verwijzingen maken met behulp van koppelingen in tekstblokken.
 
 ## Structuurniveaus (geneste fragmenten) {#levels-of-structure-nested-fragments}
 

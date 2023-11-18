@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
 1. De viewer die u gebruikt, moet weten hoe u de Snelle weergave kunt gebruiken.
 
-   De viewer gebruikt een handler met de naam `QuickViewActive`.
+   De kijker gebruikt een manager genoemd `QuickViewActive`.
 
    **Voorbeeld**
 Stel dat u de volgende voorbeeldcode voor insluiten op uw webpagina gebruikte voor een interactieve afbeelding:
@@ -105,7 +105,7 @@ Stel dat u de volgende voorbeeldcode voor insluiten op uw webpagina gebruikte vo
    * Interactieve afbeeldingsviewer - [zeegrepen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Interactieve videoviewer - [zeegrepen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Configureer nu de `quickViewActivate` handler.
+1. Vorm nu `quickViewActivate` handler.
 
    De `quickViewActivate` De manager controleert de Snelle mening in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening wordt geplaatst. Er wordt ook een monster genomen `loadQuickView` functieaanroep.
 
@@ -144,9 +144,10 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
    * Wijs om het even welke extra variabelen in de Snelle mening toe.
 
       * Werk de `loadQuickView(sku,*var1*,*var2*)` Vraag als u meer variabelen toevoegt.
+
    * Eenvoudig maken `loadQuickView` () op pagina, buiten de viewer.
 
-      Bijvoorbeeld, schrijft het volgende de waarde van SKU aan de browser console:
+     Bijvoorbeeld, schrijft het volgende de waarde van SKU aan de browser console:
 
    ```xml {.line-numbers}
    function loadQuickView(sku){
@@ -156,11 +157,9 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
 
    * Upload een HTML-pagina voor de test naar een webserver en open deze.
 
-      De variabelen in de Snelle weergave worden toegewezen. De functieaanroep is ingesteld. En de browser console schrijft de veranderlijke waarde aan de browser console. Dit doet hij met behulp van de meegeleverde voorbeeldfunctie.
+     De variabelen in de Snelle weergave worden toegewezen. De functieaanroep is ingesteld. En de browser console schrijft de veranderlijke waarde aan de browser console. Dit doet hij met behulp van de meegeleverde voorbeeldfunctie.
 
-
-
-1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een `DIV` voor een popup.
+1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een `DIV` voor een pop-up.
 1. De pop-up opmaken `DIV` op de volgende wijze. Voeg desgewenst extra stijlen toe.
 
    ```xml {.line-numbers}
@@ -192,7 +191,7 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
-           document.getElementById("quickview_div").style.display="block"; // show popup
+           document.getElementById("quickview_div").style.display="block"; // show pop-up
        }
    </script>
    ```
@@ -200,7 +199,7 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
 1. Upload een HTML-pagina voor de test naar uw webserver en open deze. De pop-up wordt weergegeven door de viewer `DIV` wanneer een gebruiker een Snelle mening aanhaalt.
 1. **Het aangepaste pop-upvenster weergeven in de modus Volledig scherm**
 
-   Sommige viewers, zoals de Interactieve Video-viewer, ondersteunen weergave op volledig scherm. Als u de pop-up echter gebruikt zoals in de vorige stappen wordt beschreven, wordt deze achter de viewer weergegeven in de modus Volledig scherm.
+   Sommige viewers, zoals de Interactieve Video-viewer, ondersteunen weergave in de modus Volledig scherm. Als u de pop-up echter gebruikt zoals in de vorige stappen wordt beschreven, wordt deze achter de viewer weergegeven in de modus Volledig scherm.
 
    Als u het pop-upvenster in de modi Standaard en Volledig scherm wilt weergeven, koppelt u het pop-upvenster aan de viewercontainer. In dit geval gebruikt u een tweede handlermethode, `initComplete`.
 

@@ -2,9 +2,9 @@
 title: Hoe te om Azure opslag te vormen?
 description: Leer hoe u formulieren kunt integreren met Azure-opslagserver.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 [[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) verstrekt een [!DNL Azure] opslagconfiguratie om formulieren te integreren met [!DNL Azure] opslagservices. Met het formuliergegevensmodel kunt u een adaptieve Forms maken die interactief werkt met [!DNL Azure] server om bedrijfswerkstromen toe te laten. Bijvoorbeeld:
 
 * Gegevens schrijven naar [!DNL Azure] op Aangepast formulier verzenden.
-* Gegevens schrijven in [!DNL Azure] door aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel en andersom.
+* Gegevens schrijven in [!DNL Azure] door aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel, en omgekeerd.
 * Query [!DNL Azure] voor gegevens en vult Adaptive Forms vooraf in.
 * Gegevens lezen van [!DNL Azure] server.
 

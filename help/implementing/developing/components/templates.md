@@ -2,9 +2,9 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3279'
+source-wordcount: '3278'
 ht-degree: 0%
 
 ---
@@ -449,7 +449,7 @@ Definieert de eerste inhoud die een nieuwe pagina krijgt wanneer deze wordt gema
 * Is samengevoegd met de structuur ( `/structure`) bij het maken van een pagina.
 * Bestaande pagina&#39;s worden niet bijgewerkt als de oorspronkelijke inhoud na het maken wordt gewijzigd.
 * De `root` het knooppunt bevat een lijst met componenten om te definiëren wat beschikbaar is in de resulterende pagina.
-* Als er inhoud wordt toegevoegd aan een component in de structuurmodus en die component vervolgens wordt ontgrendeld (of vice versa), wordt deze inhoud gebruikt als initiële inhoud.
+* Als er inhoud wordt toegevoegd aan een component in de structuurmodus en die component vervolgens wordt ontgrendeld (of omgekeerd), wordt deze inhoud gebruikt als initiële inhoud.
 
 ### Layout {#layout}
 

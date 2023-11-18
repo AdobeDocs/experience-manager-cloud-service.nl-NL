@@ -2,9 +2,9 @@
 title: Inhoudsoverdrachten valideren
 description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten te valideren
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1073'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Aan de slag {#getting-started}
 
-Gebruikers kunnen op betrouwbare wijze bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Deze validatiefunctie werkt door een overzicht te vergelijken van de paden van alle knooppunten die bij de extractie betrokken waren, met een overzicht van de paden van alle knooppunten die bij de opname betrokken waren. Als er knoopwegen inbegrepen in de extractiesamenvatting zijn die van de opname digest missen, wordt de bevestiging beschouwd als ontbroken, en de extra handbevestiging kan noodzakelijk zijn.
+Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Deze validatiefunctie werkt door een overzicht te vergelijken van de paden van alle knooppunten die bij de extractie betrokken waren, met een overzicht van de paden van alle knooppunten die bij de opname betrokken waren. Als er knoopwegen inbegrepen in de extractiesamenvatting zijn die van de opname digest missen, wordt de bevestiging beschouwd als ontbroken, en de extra handbevestiging kan noodzakelijk zijn.
 
 >[!INFO]
 >

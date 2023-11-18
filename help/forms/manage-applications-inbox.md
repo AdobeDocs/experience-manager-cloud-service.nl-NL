@@ -5,9 +5,9 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitvoeren. De acties beschikbaar voor een taak worden bepaald in de Assign taakstap van de bijbehorende Forms Workflow.
 
 1. Tik om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de geselecteerde taak worden bovenaan weergegeven.
-1. Tikken **Openen** om taakdetails te bekijken en acties te ondernemen. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en acties ondernemen voor de taak.
+1. Selecteren **Openen** om taakdetails en beschikbare acties te bekijken. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en op een taak reageren.
 
    >[!NOTE]
    >

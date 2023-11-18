@@ -2,9 +2,9 @@
 title: Sneltoetsen voor paginabewerking
 description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele voor paginabewerking
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 
 | Locatie | Sneltoets | Beschrijving |
 |---|---|---|
-| Willekeurige modus van venster bewerken | `Ctrl-Shift-m` | Schakelen tussen **Voorvertoning** en de momenteel geselecteerde [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (bijvoorbeeld **Bewerken**, **Layout**, enz.* |
+| Willekeurige modus van venster bewerken | `Ctrl-Shift-m` | Schakelen tussen **Voorvertoning** en de momenteel geselecteerde [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (bijvoorbeeld **Bewerken**, **Layout**, enzovoort)* |
 | **Bewerken** mode | `Ctrl-z` | [Laatste wijziging ongedaan maken](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Laatste wijziging opnieuw](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Meerdere alinea&#39;s selecteren |

@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ Gefeliciteerd! U hebt de AEM Sites vertaalreis voltooid! Nu moet u:
 
 * U hebt een basiskennis AEM functies voor inhoudsbeheer.
 * Begrijp AEM vertaaleigenschappen en hoe zij met uw plaatsinhoud verwant.
-* U kunt beginnen met het vertalen van uw eigen inhoud.
+* Ga meteen door met het vertalen van uw eigen inhoud.
 
 U bent nu klaar om uw eigen inhoud in AEM te vertalen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
 

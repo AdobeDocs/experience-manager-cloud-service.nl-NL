@@ -2,7 +2,7 @@
 title: Voorwaarden verbergen gebruiken
 description: De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Houd rekening met het volgende wanneer u de expressie hide definieert:
 
 * Om geldig te zijn, moet het bereik waarin de eigenschap wordt gevonden worden uitgedrukt (bijvoorbeeld `cqDesign.myProperty`).
 * Waarden zijn alleen-lezen.
-* Functies (indien vereist) moeten worden beperkt tot een bepaalde set die door de dienst wordt geleverd.
+* De functies (indien nodig) moeten beperkt blijven tot een bepaalde reeks die door de dienst wordt geleverd.
 
 ## Voorbeeld {#example}
 

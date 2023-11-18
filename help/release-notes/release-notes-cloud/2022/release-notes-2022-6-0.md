@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Bekijk de video Overzicht van de release van juni 2022 voor een overzicht van de
 
 ### Nieuwe functies in [!DNL Sites] {#sites-features}
 
-* Een nieuwe [gebruikersinterface](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) is nu beschikbaar voor inhoudsbeheerders en inhoudsauteurs om efficiënt te beheren (acties als publiceren, verwijderen, kopiëren, verplaatsen enzovoort), te zoeken/filteren en inhoudsfragmenten te maken voor gebruik in hoofdletters.
+* Een nieuwe [gebruikersinterface](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) is nu beschikbaar voor beheerders van inhoud en auteurs van inhoud om efficiënt te beheren (zoals publiceren, ongedaan maken, kopiëren, verplaatsen enzovoort), te zoeken/filteren en inhoudsfragmenten te maken voor gebruik in hoofdletters.
 
   ![Console voor inhoudsfragment](/help/release-notes/assets/cf-ui.png)
 
@@ -59,7 +59,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
   ![Wizard voor het maken van een adaptief formulier](/help/release-notes/assets/wizard.png)
 
-## CIF-invoegtoepassing {#cloud-services-cif}
+## CIF invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
@@ -71,7 +71,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
 * Verbeterde ondersteuning voor overschreven GQL Client-configuratie (bijvoorbeeld aangepaste caching-functionaliteit instellen)
 
-* Meerdere eindpunten voor handel worden nu offline ondersteund en kunnen worden geconfigureerd via Cloud Manager. Meer informatie vindt u op de CIF-blog [hier](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
+* Meerdere eindpunten voor handel worden nu offline ondersteund en kunnen worden geconfigureerd via Cloud Manager. Meer informatie vindt u in de CIF blog [hier](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
 
 
 ### Bugfixes {#bug-fixes-cif}
@@ -84,7 +84,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
 ### Nieuwe functies {#what-is-new-demos}
 
-* Nieuwe WKND-sjabloon voor Inhoud en Handel die WKND uitbreidt met een E2E-ervaring voor winkelen met productcatalogus, winkelwagentje, kassa en mijnAccount. Dit malplaatje gebruikt CIF en zijn Componenten van de Kern van CIF, zodat moet u ook toe:voegen-op CIF installeren. Meer informatie vindt u op de CIF-blog [hier](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+* Nieuwe WKND-sjabloon voor Inhoud en Handel die WKND uitbreidt met een E2E-ervaring voor winkelen met productcatalogus, winkelwagentje, kassa en mijnAccount. Dit malplaatje gebruikt CIF en zijn CIF Componenten van de Kern, zodat moet u ook CIF toe:voegen-op installeren. Meer informatie vindt u in de CIF blog [hier](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
 
 ![WKND-winkel](/help/assets/CIF/wknd_shop.png)
 

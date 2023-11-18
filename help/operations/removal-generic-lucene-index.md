@@ -2,7 +2,7 @@
 title: Generieke Lucene-index verwijderen
 description: Leer over de geplande verwijdering van generische indexen van Lucene en hoe u kan worden beïnvloed.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Om grotere volumes van klantengegevens te steunen, leidt de Adobe niet meer tot 
 
 Adobe heeft de indexkosten al aangepast via de `costPerEntry` en `costPerExecution` eigenschappen om ervoor te zorgen dat andere indexen, zoals `/oak:index/pathreference` worden waar mogelijk bij voorkeur gebruikt.
 
-De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die indien nodig kunnen worden aangepast. U kunt ook nieuwe aangepaste indexen toevoegen aan de toepassing van de klant. Volledige instructies voor indexbeheer in AEM as a Cloud Service zijn te vinden in de [indexeringsdocumentatie](/help/operations/indexing.md).
+De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die zonodig kunnen worden aangepast. U kunt ook nieuwe aangepaste indexen toevoegen aan de toepassing van de klant. Volledige instructies voor indexbeheer in AEM as a Cloud Service zijn te vinden in de [indexeringsdocumentatie](/help/operations/indexing.md).
 
 ## Betrokken bent u? {#are-you-affected}
 
@@ -129,7 +129,7 @@ Historisch is de generische index van Lucene gebruikt om verwijzings onderzoek o
 
 #### Zoekopdracht padveldkiezer {#picker-search}
 
-AEM omvat een component van de douanedialoog met het Verdelen middeltype `granite/ui/components/coral/foundation/form/pathfield`, die een browser/kiezer biedt voor het selecteren van een ander AEM pad. De standaardpadveldkiezer, die wordt gebruikt wanneer er geen aangepaste `pickerSrc` wordt gedefinieerd in de inhoudsstructuur. Er wordt een zoekbalk weergegeven in het dialoogvenster.
+AEM omvat een component van de douanedialoog met het Verdelen middeltype `granite/ui/components/coral/foundation/form/pathfield`, die een browser/kiezer biedt voor het selecteren van een ander AEM pad. De standaardpadveldkiezer, die wordt gebruikt wanneer er geen aangepaste `pickerSrc` wordt gedefinieerd in de inhoudsstructuur, wordt een zoekbalk weergegeven in het pop-updialoogvenster.
 
 De knooptypes waartegen om te zoeken kunnen worden gespecificeerd gebruikend `nodeTypes` eigenschap.
 

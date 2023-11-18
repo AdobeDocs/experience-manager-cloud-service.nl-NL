@@ -2,7 +2,7 @@
 title: Paginacontent bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 4%
@@ -173,7 +173,7 @@ Een component maken door een van de bovenstaande elementtypen te slepen:
 
    Een component die geschikt is voor het type element, wordt op de vereiste locatie gemaakt en bevat het geselecteerde element.
 
-1. [Bewerken](#edit-content) de component, indien vereist.
+1. [Bewerken](#edit-content) het onderdeel, indien nodig.
 
 >[!NOTE]
 >

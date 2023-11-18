@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Kijk eens naar de [Overzicht release augustus 2021](https://video.tv.adobe.com/v
 
 * **Maak eenvoudig verbinding met AEM Forms met Microsoft® Dynamics en Salesforce.com** - De service biedt de configuratie van de box-gegevensbron en gegevensmodellen voor Microsoft® Dynamics en Salesforce.com. Zo kunnen ontwikkelaars Microsoft® Dynamics en Salesforce.com sneller en eenvoudiger configureren als gegevensbronnen voor een adaptieve vorm.
 
-## CIF-invoegtoepassing {#cloud-services-cif}
+## CIF invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 

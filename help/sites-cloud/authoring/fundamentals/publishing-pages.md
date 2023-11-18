@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Leer hoe u uw pagina's op verschillende manieren in AEM publiceert en publiceert.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1805'
 ht-degree: 5%
 
 ---
@@ -66,7 +66,7 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 
    * De pagina wordt rechtstreeks gepubliceerd als er geen referenties zijn die moeten worden gepubliceerd.
    * Als de pagina verwijzingen bevat die moeten worden gepubliceerd, worden deze vermeld in de **Publiceren** wizard, waarbij u:
-      * Geef aan welke elementen/tags/etc. u wilt samen met de pagina publiceren, dan gebruiken **Publiceren** om het proces te voltooien.
+      * Geef op welke elementen, tags enzovoort, u samen met de pagina wilt publiceren en gebruik vervolgens **Publiceren** om het proces te voltooien.
       * Gebruiken **Annuleren** om de handeling af te breken.
 
    ![Referenties publiceren met de pagina](/help/sites-cloud/authoring/assets/publishing-references.png)

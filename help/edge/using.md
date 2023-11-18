@@ -3,9 +3,9 @@ title: Edge Delivery Services gebruiken
 description: Edge Delivery Services gebruiken (EDS)
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ De hefboomwerkingen van de Levering van de rand GitHub zodat kunnen de klanten c
 
 ## De Sidekick gebruiken {#using-sidekick}
 
-De AEM sidekick biedt een werkbalk met contextbewuste opties, zodat u inhoud gemakkelijk kunt bewerken, voorvertonen en publiceren. Na [installeren](https://www.hlx.live/docs/sidekick-extension) De extensie AEM sidekick kan worden gebruikt in een projectomgeving of wanneer u de inhoud bewerkt (bijvoorbeeld in Google Docs). Afhankelijk van de omgeving zijn er verschillende acties beschikbaar, zoals Voorvertonen, Opnieuw laden, Bewerken en Publiceren. U kunt ook van omgeving wisselen wanneer u het hulpprogramma gebruikt dat van voorvertoning naar productie gaat en andersom.
+De AEM sidekick biedt een werkbalk met contextbewuste opties, zodat u inhoud gemakkelijk kunt bewerken, voorvertonen en publiceren. Na [installeren](https://www.hlx.live/docs/sidekick-extension) De extensie AEM sidekick kan worden gebruikt in een projectomgeving of wanneer u de inhoud bewerkt (bijvoorbeeld in Google Docs). Afhankelijk van de omgeving zijn er verschillende acties beschikbaar, zoals Voorvertonen, Opnieuw laden, Bewerken en Publiceren. U kunt ook van omgeving wisselen wanneer u het hulpprogramma gebruikt dat van voorvertoning naar productie gaat en omgekeerd.
 
 **Publiceren**, opent u het Help-item op een voorvertoningspagina en gebruikt u de actie Publiceren. Nadat u op Publiceren hebt geklikt, is de huidige voorvertoningsversie van de pagina beschikbaar in een live- en productieomgeving.
 

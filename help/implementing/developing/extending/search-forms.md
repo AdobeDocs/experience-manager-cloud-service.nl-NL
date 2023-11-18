@@ -2,9 +2,9 @@
 title: Zoekformulieren configureren
 description: Zoeken in Forms voor Adobe Experience Manager as a Cloud Service configureren.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2033'
 ht-degree: 2%
 
 ---
@@ -480,7 +480,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
 >De algemene zoekvoorspelling wordt gedefinieerd in:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->Deze informatie is alleen ter referentie. U mag geen wijzigingen aanbrengen in `/libs`.
+>Deze informatie is alleen ter referentie. U kunt deze niet wijzigen `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -527,7 +527,7 @@ Afhankelijk van de voorspelling zijn er verschillende instellingen beschikbaar v
 
 * **Optiepad**
 
-  De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Na het selecteren van **+** wordt gebruikt om de selectie toe te voegen aan de lijst met geldige opties (en **-** pictogram dat moet worden verwijderd, indien vereist).
+  De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Na het selecteren van **+** wordt gebruikt om de selectie toe te voegen aan de lijst met geldige opties (en **-** pictogram om indien nodig te verwijderen).
 
   De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt en die de volgende structuur hebben:
 

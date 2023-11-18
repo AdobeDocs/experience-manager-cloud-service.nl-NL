@@ -4,7 +4,7 @@ description: Leer hoe te om uw AEM Contentfragmenten van de console en de redact
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2531'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Leer hoe u uw **Inhoudsfragmenten** in Adobe Experience Manager (AEM) as a Cloud
 
 >[!NOTE]
 >
->Uw projectteam kan de console en de redacteur aanpassen als vereist. Zie [De console en Editor voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor nadere bijzonderheden.
+>Uw projectteam kan de console en de redacteur indien nodig aanpassen. Zie [De console en Editor voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor nadere bijzonderheden.
 
 Na het definiëren van uw [Modellen van inhoudsfragmenten](#creating-a-content-model) U kunt deze gebruiken om:
 
@@ -225,10 +225,10 @@ Een inhoudsfragment maken:
 
 1. De **Nieuw inhoudsfragment** wordt geopend, kunt u vanaf dit punt het volgende opgeven:
 
-   * **Locatie** - deze wordt automatisch ingevuld met de huidige locatie, maar u kunt desgewenst een andere locatie selecteren
+   * **Locatie** - deze wordt automatisch voltooid met de huidige locatie, maar u kunt desgewenst een andere locatie selecteren
    * **Inhoudsfragmentmodel** - selecteer in de vervolgkeuzelijst het model dat u als basis voor het fragment wilt gebruiken
    * **Titel**
-   * **Naam** - dit wordt automatisch voltooid op basis van de **Titel**, maar u kunt deze desgewenst bewerken
+   * **Naam** - dit wordt automatisch voltooid op basis van de **Titel**, maar u kunt deze indien nodig bewerken
    * **Beschrijving**
 
    ![Dialoogvenster Nieuw inhoudsfragment](assets/cf-managing-new-cf-dialog.png)

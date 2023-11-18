@@ -2,7 +2,7 @@
 title: CRXDE Lite gebruiken
 description: CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toegang te krijgen tot en wijzigingen aan te brengen in de opslagruimte in uw lokale ontwikkelomgevingen in de browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 0%
@@ -226,7 +226,7 @@ Een definitie van een knooptype exporteren in CRXDE Lite:
 1. Selecteer het vereiste knooppunt.
 1. Selecteren **Gereedschappen** dan **Notitietype exporteren**.
 1. De definitie wordt weergegeven in CND-notatie op een nieuw tabblad in uw browser.
-1. Sla de gegevens indien nodig op.
+1. Sla indien nodig de gegevens op.
 
 Een definitie van het knooppunttype importeren:
 

@@ -2,9 +2,9 @@
 title: Samengestelde onderdelen in SPA
 description: Leer hoe u uw eigen samengestelde componenten maakt, componenten die uit andere componenten bestaan, die werken met de AEM Single-Page Application (SPA) Editor.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
    MapTo('wknd-spa/components/image')(Image, ImageEditConfig);
    ```
 
-1. Aangezien er geen inhoud is voor de `imagecard` voegt u de kaart toe aan de pagina. Neem de bestaande container van AEM op in de SPA.
+1. Aangezien er geen inhoud is voor de `imagecard` de kaart aan de pagina toevoegen. Neem de bestaande container van AEM op in de SPA.
    * Als er al een container in het AEM project is, kunnen wij dit in de SPA in plaats daarvan omvatten en de component aan de container van AEM in plaats daarvan toevoegen.
    * Zorg ervoor dat de kaartcomponent is toegewezen aan het corresponderende brontype in de SPA.
 
@@ -156,7 +156,7 @@ U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
     itemPath='root/responsivegrid' />
    ```
 
-1. De gemaakte `wknd-spa/components/imagecard` component aan de toegestane componenten voor de containercomponent [in de paginasjabloon](/help/sites-cloud/authoring/features/templates.md).
+1. Het gemaakte object toevoegen `wknd-spa/components/imagecard` component aan de toegestane componenten voor de containercomponent [in de paginasjabloon](/help/sites-cloud/authoring/features/templates.md).
 
 Nu de `imagecard` kan direct aan de container in de AEM redacteur worden toegevoegd.
 

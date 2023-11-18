@@ -2,9 +2,9 @@
 title: Hoe kan ik tags beheren in de weergave Elementen?
 description: Leer hoe u tags beheert in de weergave Middelen. Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
 >title="Tags beheren"
->abstract="Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Beheerders kunnen gebruikmaken van de hiërarchische coderingsstructuur, die het toepassen van relevante metagegevens, het indelen van elementen, het ondersteunen van zoeken, het hergebruiken van tags, het verbeteren van de ontdekkingsmogelijkheden enzovoort vergemakkelijkt."
+>abstract="Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Beheerders kunnen de hiërarchische coderingsstructuur gebruiken, die het toepassen van relevante metagegevens, het indelen van elementen, het ondersteunen van zoeken, het hergebruiken van tags, het verbeteren van de ontdekkingsmogelijkheden, enzovoort, vergemakkelijkt."
 
 Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Tags helpen andere gebruikers en workflows de juiste taxonomie te geven.
 
-Vlakke lijsten met gecontroleerde woordenboeken kunnen in de loop der tijd onbeheersbaar worden. Beheerders kunnen gebruikmaken van de hiërarchische coderingsstructuur, die het toepassen van relevante metagegevens, het indelen van elementen, het ondersteunen van zoeken, het hergebruiken van tags, het verbeteren van de ontdekkingsmogelijkheden enzovoort vergemakkelijkt.
+Vlakke lijsten met gecontroleerde woordenboeken kunnen in de loop der tijd onbeheersbaar worden. Beheerders kunnen de hiërarchische coderingsstructuur gebruiken, die het toepassen van relevante metagegevens, het indelen van elementen, het ondersteunen van zoeken, het hergebruiken van tags, het verbeteren van de ontdekkingsmogelijkheden, enzovoort, vergemakkelijkt.
 
 U kunt een naamruimte maken op hoofdniveau en een hiërarchische structuur van subtags maken binnen de naamruimte. U kunt bijvoorbeeld een `Activities` naamruimte op hoofdniveau en `Cycling`, `Hiking`, en `Running` -tags binnen de naamruimte. U kunt nog meer subtags hebben `Clothing` en `Shoes` binnen `Running`.
 

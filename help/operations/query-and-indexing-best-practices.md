@@ -3,7 +3,7 @@ title: Aanbevolen werkwijzen voor query en indexering
 description: Leer hoe u indexen en query's optimaliseert op basis van de richtlijnen die de Adobe hanteert.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 0%
@@ -151,8 +151,8 @@ Ga als volgt te werk om een query uit te leggen:
 
 ![Pop-up Query-uitleg](./assets/query-explanation-popup.png)
 
-Na het selecteren `Explain`, wordt de gebruiker voorgesteld met popup beschrijvend het resultaat van de vraag verklaart (en uitvoering, als geselecteerd).
-Deze pop-up bevat informatie over -
+Na het selecteren `Explain`, wordt de gebruiker een pop-up voorgesteld beschrijvend het resultaat van de vraag verklaart (en uitvoering, als geselecteerd).
+Deze pop-up bevat gegevens van -
 * De gebruikte indexen wanneer het uitvoeren van de vraag (of geen index als de vraag gebruikend zou worden uitgevoerd [Repository traversal](#repository-traversal)).
 * De uitvoeringstijd (als `Include Execution Time` selectievakje ingeschakeld) en aantal resultaten gelezen (als `Read first page of results` of `Include Node Count` selectievakjes ingeschakeld).
 * Het uitvoeringsplan, dat gedetailleerde analyse toestaat hoe de vraag wordt uitgevoerd - zie [Het uitvoeringsplan voor de query lezen](#reading-query-execution-plan) hoe dit te interpreteren.

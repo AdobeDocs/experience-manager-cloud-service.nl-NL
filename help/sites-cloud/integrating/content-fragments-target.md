@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten exporteren naar Adobe Target
 description: Leer hoe u uw Content Fragments naar Adobe Target exporteert om ervaringen te testen en te personaliseren.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 0%
@@ -98,7 +98,7 @@ U kunt de vereiste opties selecteren in **Pagina-eigenschappen** van de vereiste
    * de juiste configuratie
    * de optie voor de vereiste indeling
    * een Adobe Target-werkruimte
-   * indien vereist - het externalizer-domein
+   * indien nodig - het externalizer domein
 
    >[!CAUTION]
    >

@@ -2,9 +2,9 @@
 title: Aanvullende publicatieregio's
 description: Leer hoe AEM as a Cloud Service extra publicatiegebieden voor verhoogde beschikbaarheid en verminderde latentie steunt.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Als extra publicatiegebieden zijn ingeschakeld, worden afzonderlijke logbestande
 
 Houd rekening met de volgende beperkingen wanneer u overweegt extra publicatiegebieden te gebruiken.
 
-* Aanvullende publicatiegebieden mogen alleen aan AEM Sites worden toegevoegd. De extra publicatiegebieden strekken zich niet tot andere AEM oplossingen of verwante functionaliteit uit die in het zelfde programma (b.v. AEM Forms of de Leermanager van de Adobe) worden opgesteld.
+* Aanvullende publicatiegebieden mogen alleen aan AEM Sites worden toegevoegd. De extra publicatiegebieden strekken zich niet tot andere AEM oplossingen of verwante functionaliteit uit die in het zelfde programma worden opgesteld (bijvoorbeeld, AEM Forms of de Leermanager van de Adobe).
 * Aanvullende regio&#39;s kunnen alleen worden toegevoegd als de bijbehorende rechten beschikbaar en ongebruikt zijn in de huurder.
 * Er kunnen maximaal drie extra publicatiegebieden worden toegevoegd aan elke afzonderlijke omgeving.
 * Aanvullende regio&#39;s zijn alleen beschikbaar voor productieprogramma&#39;s. De functie is niet beschikbaar in sandboxprogramma&#39;s.

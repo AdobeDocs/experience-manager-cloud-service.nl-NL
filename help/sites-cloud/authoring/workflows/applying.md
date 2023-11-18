@@ -2,7 +2,7 @@
 title: Workflows toepassen op pagina's
 description: Tijdens het ontwerpen kunt u workflows aanroepen om op uw pagina's te reageren. Het is ook mogelijk om meerdere workflows toe te passen.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 11%
@@ -141,6 +141,6 @@ Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis
 
 ## Een workflow starten vanuit de Pagina-editor {#starting-a-workflow-from-the-page-editor}
 
-Als u een pagina bewerkt, kunt u **Pagina-informatie** op de werkbalk. Het vervolgkeuzemenu heeft de optie **Starten in workflow**. Hiermee wordt een dialoogvenster geopend waarin u de vereiste workflow kunt opgeven, en desgewenst een titel:
+Als u een pagina bewerkt, kunt u **Pagina-informatie** op de werkbalk. Het vervolgkeuzemenu heeft de optie **Starten in workflow**. Hiermee wordt een dialoogvenster geopend waarin u de vereiste workflow kunt opgeven, zo nodig met een titel:
 
 ![Een workflow starten vanuit de pagina-editor](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

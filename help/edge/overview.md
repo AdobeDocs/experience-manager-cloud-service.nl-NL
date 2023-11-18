@@ -3,9 +3,9 @@ title: Aan de slag met Edge Delivery Services
 description: Aan de slag met Edge Delivery Services (EDS).
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '862'
 ht-degree: 2%
 
 ---
@@ -22,15 +22,15 @@ Met Edge Delivery kunt u:
 
 ## Hoe Edge Delivery werkt {#edge-works}
 
-In het volgende diagram ziet u hoe u inhoud in Microsoft Word (op documenten gebaseerde bewerking) kunt bewerken en naar Edge Delivery kunt publiceren. Ook wordt met de verschillende editors de traditionele AEM-publicatiemethode weergegeven.
+In het volgende diagram ziet u hoe u inhoud in Microsoft® Word (op documenten gebaseerde bewerking) kunt bewerken en naar Edge Delivery kunt publiceren. Ook wordt met de verschillende editors de traditionele AEM-publicatiemethode weergegeven.
 
 ![Edge Delivery Architecture](assets/edgedelivery.png)
 
 De levering van de rand is een composable reeks diensten die voor een hoge graad van flexibiliteit in toestaat hoe u inhoud op uw website ontwerpt. Zoals eerder vermeld, kunt u beide [AEM maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) en [op documenten gebaseerd schrijven](https://www.hlx.live/docs/authoring).
 
-U kunt inhoud bijvoorbeeld rechtstreeks vanuit Microsoft Word of Google Docs gebruiken. Dit betekent dat documenten uit deze bronnen pagina&#39;s op uw website kunnen worden. Daarnaast kunnen koppen, lijsten, afbeeldingen en lettertype-elementen allemaal van de oorspronkelijke bron naar de website worden overgebracht. De nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
+U kunt inhoud bijvoorbeeld rechtstreeks vanuit Microsoft® Word of Google Docs gebruiken. Dit betekent dat documenten uit deze bronnen pagina&#39;s op uw website kunnen worden. Daarnaast kunnen koppen, lijsten, afbeeldingen en lettertype-elementen allemaal van de oorspronkelijke bron naar de website worden overgebracht. De nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
 
-De hefboomwerkingen van de Levering van de rand GitHub zodat kunnen de klanten code van hun bewaarplaats direct beheren en opstellen GitHub. U kunt bijvoorbeeld inhoud schrijven in Google Docs of Microsoft Word en de functionaliteit van uw site kan worden ontwikkeld met CSS en JavaScript in GitHub. Wanneer u klaar bent, kunt u de browser van de Sidekick extensie gebruiken om inhoudsupdates voor te vertonen en te publiceren.
+De Levering van de rand gebruikt GitHub zodat kunnen de klanten code van hun bewaarplaats direct beheren en opstellen GitHub. U kunt bijvoorbeeld inhoud schrijven in Google Docs of Microsoft® Word en de functionaliteit van uw site kan worden ontwikkeld met CSS en JavaScript in GitHub. Wanneer u klaar bent, kunt u de browser van de Sidekick extensie gebruiken om inhoudsupdates voor te vertonen en te publiceren.
 
 Verdere lezing:
 
@@ -42,7 +42,7 @@ Verdere lezing:
 
 Edge Delivery Services maken deel uit van Adobe Experience Manager en als zodanig kunnen Edge Delivery- en AEM-sites op hetzelfde domein naast elkaar bestaan. Dit is een veelvoorkomend geval voor het gebruik van grotere websites. Bovendien kan inhoud van Edge Delivery eenvoudig worden verbruikt in uw AEM Sites-pagina&#39;s en omgekeerd.
 
-U kunt Edge Delivery Services ook gebruiken in combinatie met Adobe Target, Analytics en Launch.
+U kunt Edge Delivery Services ook gebruiken met Adobe Target, Analytics en Launch.
 
 ## Toegang tot Edge Delivery Services krijgen {#getting-access}
 
@@ -64,7 +64,7 @@ Adobe streeft ernaar u de beste betrokkenheid en ondersteuning van de gemeenscha
 
 ### Toegang tot het kanaal voor samenwerking met producten {#collab-channel}
 
-Gezien de waarde van direct communicatiekanaal met klanten, zullen alle AEM klanten bij lancering een kanaal van de Slack voor snelheid, kritieke updates, en geschaalde rapportering over ervaringskwaliteit vestigen. U zult een uitnodiging van Adobe ontvangen om zich bij een kanaal van de Slack aan te sluiten specifiek voor uw organisatie.
+Gezien de waarde van direct communicatiekanaal met klanten, zullen alle AEM klanten bij lancering een Slack kanaal voor snelheid, kritieke updates, en geschaalde rapportering over ervaringskwaliteit vestigen. U ontvangt een uitnodiging van de Adobe om deel te nemen aan een kanaal van de Slack specifiek voor uw organisatie.
 
 Zie voor meer informatie [De Slack Bot gebruiken](https://www.hlx.live/docs/slack) voor meer informatie.
 

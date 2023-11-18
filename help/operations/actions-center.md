@@ -2,7 +2,7 @@
 title: Handelingencentrum
 description: Gebruik het actiecentrum om incidenten en andere belangrijke informatie op een gemakkelijke manier aan te pakken
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 AEM als Cloud Service verzendt de e-mailberichten van het Centrum van Acties wanneer de kritieke incidenten voorkomen die onmiddellijke actie vereisen, en pro-actieve aanbevelingen voor optimalisaties. De voorbeelden omvatten een geblokkeerde rij, of een het verlopen reeks geloofsbrieven; de volledige reeks berichten van het Centrum van Acties kunnen in worden bekeken [tabel hieronder](#supported-notification-types), die na verloop van tijd zal toenemen.
 
-Wanneer een e-mailbericht van het Centrum van Acties wordt ontvangen, kan het worden geklikt om AEM Centrum van Acties van het as a Cloud Service met popup te openen die extra context toont die de actie voor een klant verklaart te nemen.
+Wanneer een e-mailbericht van het Centrum van Acties wordt ontvangen, kan het worden geklikt om AEM Centrum van Acties van de as a Cloud Service met een pop-up te openen die extra context toont die de actie verklaart voor een klant te nemen.
 
 Naast het weergeven van informatie over het zojuist geklikte e-mailbericht, fungeert het Actions Center als een hub waarin u de set met huidige en oudere meldingen kunt weergeven en beheren. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ Om het ontvangen van de e-mailberichten van het Centrum van Acties te vormen, cr
 
 ## Gedetailleerde gebruikersstroom {#detailed-user-flow}
 
-Als u op de e-mail klikt, gaat u naar het Actions Center, met een pop-up waarin de context wordt weergegeven van de melding waarop u hebt geklikt en in sommige gevallen koppelingen naar aanvullende informatie waarin wordt beschreven hoe u corrigerende maatregelen kunt nemen. U hebt ook rechtstreeks toegang tot het Actions Center op [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), waar u het relevante programma en de omgeving kunt selecteren.
+Als u op de e-mail klikt, gaat u naar het Actions Center. In een pop-up ziet u de context van de melding waarop u hebt geklikt en in sommige gevallen gaat u naar aanvullende informatie over het uitvoeren van corrigerende maatregelen. U hebt ook rechtstreeks toegang tot het Actions Center op [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), waar u het relevante programma en de omgeving kunt selecteren.
 
 ![Gegevens over incidenten](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ In het Centrum van Acties, kunt u een lijst van andere recente berichten zien. M
 
 ![Lijst met meldingen](/help/operations/assets/notification-list.png)
 
-In de meeste gevallen moet de popup alle noodzakelijke context bieden om het probleem op te lossen. Als er echter vragen zijn voor ondersteuning van Adoben, kunt u op de knop **Contact opnemen met ondersteuning** in de pop-up. Dit zal omhoog een vorm van waar u de vraag kunt beschrijven en het voorleggen om een kaartje van de Steun te creëren, dat ook een verwijzing naar de specifieke kennisgeving zal omvatten zodat heeft een Ingenieur van de Steun van de Adobe de relevante context.
+In de meeste gevallen moet de pop-up alle noodzakelijke context bieden om het probleem op te lossen. Als er echter vragen zijn voor ondersteuning van Adoben, kunt u op de knop **Contact opnemen met ondersteuning** in het pop-upvenster. Dit zal omhoog een vorm van waar u de vraag kunt beschrijven en het voorleggen om een kaartje van de Steun te creëren, dat ook een verwijzing naar de specifieke kennisgeving zal omvatten zodat heeft een Ingenieur van de Steun van de Adobe de relevante context.
 
 ![Contact opnemen met ondersteuning 1](/help/operations/assets/contact-support1.png)
 

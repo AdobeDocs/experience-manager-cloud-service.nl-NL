@@ -3,9 +3,9 @@ title: AEM Headless CMS Developer Reis
 description: Meer informatie over ontwikkeling zonder kop met Adobe Experience Manager (AEM) als een headless CMS. Leer hoe u functies als Content Models, Content Fragments en een GraphQL API kunt gebruiken voor het leveren van inhoud zonder kop.
 landing-page-description: Krijg inzicht in de levering en implementatie van inhoud zonder kop. Meer weten over het ontwikkelen van uw strategie binnen uw bedrijf?
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1095'
 ht-degree: 1%
 
 ---
@@ -28,11 +28,11 @@ Leer over de krachtige en flexibele functies zonder koppen, hun mogelijkheden en
 
 Bij de headless-implementatie van AEM wordt gebruikgemaakt van Content Fragments Models en Content Fragments om de nadruk te leggen op het maken van gestructureerde, kanaalneutrale en herbruikbare fragmenten van inhoud en hun doorvoerkanalen. Hiervoor gaat het pagina- en componentbeheer verloren, zoals dat gebruikelijk is in volledige stapeloplossingen. Het is een modern en dynamisch ontwikkelingspatroon voor de implementatie van digitale ervaringen.
 
-Deze gids leidt u door hoofdloze implementatieonderwerpen in AEM zo wanneer u doet zult:
+Deze gids leidt u door hoofdloze implementatieonderwerpen in AEM zodat wanneer u doet kunt u:
 
 * U moet goed begrijpen wat de inhoud zonder kop levert en wat de voordelen ervan zijn.
 * Begrijp AEM functies zonder kop en hoe ze samenwerken om een eindeloze ervaring te bieden.
-* Heb de capaciteit om de eerste stappen uit te voeren die uw eerste AEM hoofdloze project uitvoeren.
+* Voer de eerste stappen uit die uw eerste AEM project zonder kop uitvoeren.
 
 >[!TIP]
 >

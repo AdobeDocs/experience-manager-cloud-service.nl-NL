@@ -2,9 +2,9 @@
 title: Uw inbox
 description: Leer hoe u de meldingen in uw Postvak IN kunt gebruiken om uw taken te beheren.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '911'
 ht-degree: 14%
 
 ---
@@ -148,7 +148,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
    Afhankelijk van of een dialoogvenster, wizard, documentatiepagina is geopend, kunt u:
 
-   * Bevestig de juiste actie, bijvoorbeeld door opnieuw toe te wijzen.
+   * Bevestig de juiste handeling, bijvoorbeeld opnieuw toewijzen.
    * De handeling annuleren
    * Selecteer de pijl Vorige om terug te keren naar het Postvak IN, bijvoorbeeld als een handelingstovenaar of documentatiepagina is geopend, kunt u terugkeren naar het Postvak In.
 

@@ -2,9 +2,9 @@
 title: Hoe te om een document van verslag (DoR) voor AEM Forms te produceren?
 description: Leer een sjabloon te genereren voor een Document of Record (DoR) voor Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4002'
+source-wordcount: '4000'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ U kunt de verzendactie E-mail, Workflow en Experience Manager gebruiken in combi
 
 Aangepaste formulieren en het bijbehorende document met recordsjablonen kunnen zich over een bepaalde periode ontwikkelen. U kunt velden toevoegen, verwijderen of wijzigen aan een adaptief formulier of een document met een recordsjabloon.
 
-Wanneer u wijzigingen aanbrengt in een Document of Record-sjabloon en het gewijzigde Document of Record-sjabloon uploadt naar AEM Forms, detecteert de Adaptive Forms-editor automatisch de gewijzigde bindingen en wordt u geïnformeerd over de adaptieve formuliercomponenten die nieuwe bindingen vereisen. Hiermee kunt u incrementele updates uitvoeren voor een Document of Record-sjabloon.
+Wanneer u een Document of Record-sjabloon wijzigt en het gewijzigde Document of Record-sjabloon uploadt naar AEM Forms, detecteert de Adaptive Forms-editor automatisch de gewijzigde bindingen en wordt u geïnformeerd over de adaptieve formuliercomponenten die nieuwe bindingen vereisen. Hiermee kunt u incrementele updates uitvoeren voor een Document of Record-sjabloon.
 
 Een organisatie, *Wij.Detailhandel*, een op AcroForm gebaseerd Document met een Record-sjabloon heeft, *we-retail-factuur.pdf*. De sjabloon ziet er als volgt uit:
 

@@ -2,9 +2,9 @@
 title: Reis van architect zonder hoofdinhoud AEM
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '793'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
 
 * Begrijp wat de inhoud zonder kop levert en zijn voordelen.
 * Begrijp hoe u uw inhoud kunt modelleren voor AEM functies zonder kop.
-* Heb de capaciteit om de eerste stappen te nemen die uw inhoud voor uw eerste AEM zonder hoofd modelleren project.
+* Neem de eerste stappen die uw inhoud modelleren voor uw eerste AEM zonder hoofd project.
 
 ## AEM Documentenreizen {#documentation-journeys}
 

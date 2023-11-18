@@ -2,9 +2,9 @@
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
+source-wordcount: '4535'
 ht-degree: 8%
 
 ---
@@ -73,7 +73,7 @@ Bij het maken van een bewerkbare sjabloon:
    * Of rechtstreeks bij: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Kan [een map maken voor de sjablonen](#creating-a-template-folder-admin) indien nodig
 * [Een nieuwe sjabloon maken](#creating-a-new-template-template-author), die aanvankelijk leeg zal zijn
-* [Aanvullende eigenschappen definiëren](#defining-template-properties-template-author) voor de sjabloon indien vereist
+* [Aanvullende eigenschappen definiëren](#defining-template-properties-template-author) voor de template, indien nodig
 * [De sjabloon bewerken](#editing-templates-template-authors) om de volgende waarden te definiëren:
    * [Structuur](#editing-a-template-structure-template-author) - Vooraf gedefinieerde inhoud die niet kan worden gewijzigd op pagina&#39;s die met de sjabloon zijn gemaakt.
    * [Oorspronkelijke inhoud](#editing-a-template-initial-content-author) - Vooraf gedefinieerde inhoud die kan worden gewijzigd op pagina&#39;s die met de sjabloon zijn gemaakt.

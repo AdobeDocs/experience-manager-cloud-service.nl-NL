@@ -2,7 +2,7 @@
 title: Voorbeeld van UI-moduletypen van ContextHub
 description: ContextHub verstrekt verscheidene modules van steekproefUI die u in uw oplossingen kunt gebruiken
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -186,7 +186,7 @@ Instanties van de `contexthub.screen-orientation` UI de module vereist geen waar
 
 ## Contextthub.tagcloud-UI-moduletype {#contexthub-tagcloud-ui-module-type}
 
-De `contexthub.tagcloud` UI-module geeft informatie over tags weer. In de werkbalk wordt in de gebruikersinterface het aantal codes weergegeven. De pop-up onthult een geëtiketteerde wolk en een texbox voor het toevoegen van nieuwe markeringen. De module UI verkrijgt informatie van een opslag ContextHub genoemd tagcloud die op gebaseerd is `contexthub.tagcloud` opslagkandidaat.
+De `contexthub.tagcloud` UI-module geeft informatie over tags weer. In de werkbalk wordt in de gebruikersinterface het aantal codes weergegeven. Het pop-upvenster toont een tagcloud en een tekstvak voor het toevoegen van nieuwe tags. De module UI verkrijgt informatie van een opslag ContextHub genoemd tagcloud die op gebaseerd is `contexthub.tagcloud` opslagkandidaat.
 
 ![contexthub.tagcloud, module](assets/tagcloud-module.png)
 
@@ -210,7 +210,7 @@ Instanties van de `contexthub.tagcloud` UI de module vereist geen waarde voor de
 
 ## Type module granite.profile {#granite-profile-ui-module-type}
 
-De `granite.profile` De module van ContextHub UI toont de vertoningsnaam van de huidige gebruiker. De pop-up openbaart de login naam van de gebruiker en laat u toe om de waarde van de vertoningsnaam te veranderen. De module UI verkrijgt informatie van een opslag ContextHub genoemd profiel dat op gebaseerd is [graniet.profile](sample-stores.md#granite-profile-sample-store-candidate) opslagkandidaat.
+De `granite.profile` De module van ContextHub UI toont de vertoningsnaam van de huidige gebruiker. In het pop-upvenster wordt de aanmeldnaam van de gebruiker weergegeven en kunt u de waarde van de weergavenaam wijzigen. De module UI verkrijgt informatie van een opslag ContextHub genoemd profiel dat op gebaseerd is [graniet.profile](sample-stores.md#granite-profile-sample-store-candidate) opslagkandidaat.
 
 ![granite.profile, module](assets/profile-module.png)
 

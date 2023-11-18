@@ -2,9 +2,9 @@
 title: Lanceringen
 description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '898'
 ht-degree: 5%
 
 ---
@@ -102,7 +102,7 @@ Met Launches kunt u:
 
 ## De opstartconsole {#the-launches-console}
 
-De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u acties op die vermelde ondernemen. De console is toegankelijk via:
+De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u op die vermelde handelen. De console is toegankelijk via:
 
 * De **Gereedschappen** Console: **Gereedschappen**, **Sites**, **Starten**.
 

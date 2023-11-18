@@ -2,9 +2,9 @@
 title: AEM Schrijverreis zonder kopinhoud
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om inhoud voor uw project te ontwerpen.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '873'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
 
 * Een basisbegrip hebben van wat de inhoud zonder kop levert en de voordelen ervan.
 * Begrijp AEM functies zonder kop en hoe ze samenwerken om een eindeloze ervaring te bieden.
-* Heb de capaciteit om inhoud voor uw AEM hoofdloze project te ontwerpen.
+* Kan inhoud ontwerpen voor uw AEM project zonder kop.
 
 ## AEM Documentenreizen {#documentation-journeys}
 

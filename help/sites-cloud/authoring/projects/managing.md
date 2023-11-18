@@ -2,9 +2,9 @@
 title: Projecten beheren
 description: De projecten laten u uw project organiseren door middelen in één entiteit te groeperen die in de console van Projecten kan worden betreden en worden geleid
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '875'
 ht-degree: 9%
 
 ---
@@ -38,7 +38,7 @@ De procedure om een project tot stand te brengen is voor alle projecten hetzelfd
 
    ![Een project maken](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definieer de **Titel** en **Beschrijving** en voeg een **Miniatuur** afbeelding, indien vereist. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Klik bovendien op **Geavanceerd** om een naam toe te voegen die in URL wordt gebruikt.
+1. Definieer de **Titel** en **Beschrijving** en voeg een **Miniatuur** afbeelding, indien nodig. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Klik bovendien op **Geavanceerd** om een naam toe te voegen die in URL wordt gebruikt.
 
    ![Projectdetails toevoegen](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

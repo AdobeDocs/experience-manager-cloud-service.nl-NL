@@ -2,9 +2,9 @@
 title: Inhoud publiceren met de Universal Editor
 description: Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Als de app extern wordt gehost, zorgt de webtoepassing ervoor dat inhoud uit de 
 
 U kunt bepalen of de auteur- of publicatielaag toegang moet hebben door een eenvoudige voorwaardelijke instructie in de app te kiezen om de juiste auteur of het juiste publicatiepunt te kiezen wanneer wordt gedetecteerd dat deze wordt geopend in de editor.
 
-Een andere optie is de app te implementeren in twee verschillende omgevingen die anders zijn geconfigureerd, zodat de inhoud wordt opgehaald uit de auteurslaag en een omgeving die deze ophaalt uit de publicatielaag. Om auteurs in staat te stellen de gepubliceerde URL te openen in de Universal Editor, kan een klein script worden gemaakt om de publicatie-side URL om te zetten in een equivalent ervan in de auteursomgeving (bijvoorbeeld door een voorinstelling van een `author` subdomein), zodat de auteurs automatisch worden omgeleid.
+Een andere optie is de app te implementeren in twee verschillende omgevingen die anders zijn geconfigureerd, zodat de inhoud wordt opgehaald uit de auteurslaag en een omgeving die deze ophaalt uit de publicatielaag. Als u wilt dat auteurs de gepubliceerde URL kunnen openen in de Universal Editor, kunt u een klein script maken om de publicatie-side URL om te zetten in een equivalente URL in de auteursomgeving (bijvoorbeeld door een voorvoegsel van een `author` subdomein), zodat de auteurs automatisch worden omgeleid.
 
 ## Samenvatting {#summary}
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Metagegevens zijn aanvullende informatie over het element die kan worden doorzocht. Deze wordt automatisch uitgepakt wanneer u een afbeelding uploadt. U kunt de bestaande metagegevens bewerken of nieuwe eigenschappen van metagegevens toevoegen aan bestaande velden (bijvoorbeeld wanneer een metagegevensveld leeg is).
 
-Omdat bedrijven gecontroleerde en betrouwbare metagegevenswoordenboeken nodig hebben, [!DNL Experience Manager Assets] is het niet mogelijk om ad-hoc nieuwe eigenschappen van metagegevens toe te voegen. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [Nieuwe eigenschap metagegevens maken voor elementen](meta-edit.md#editing-metadata-schema).
+Omdat bedrijven gecontroleerde en betrouwbare metagegevenswoordenboeken nodig hebben, [!DNL Experience Manager Assets] staat het toevoegen van nieuwe eigenschappen van metagegevens niet toe op aanvraag. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [Nieuwe eigenschap metagegevens maken voor elementen](meta-edit.md#editing-metadata-schema).
 
 ## Metagegevens voor een element bewerken {#editing-metadata-for-an-asset}
 

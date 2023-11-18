@@ -4,7 +4,7 @@ description: Begrijp hoe te om inhoud voor uw Contentfragmenten te ontwerpen, da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 0%
@@ -486,4 +486,4 @@ De **Velden** worden alle velden in het inhoudsfragment weergegeven. Het pictogr
 
 * Zie de documentatie bij Middelen voor volledige informatie over de [oorspronkelijke editor voor inhoudsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) - het is verkrijgbaar bij **Activa** en de **Inhoudsfragmenten** console.
 
-* Uw projectteam kan de redacteur aanpassen indien nodig. Zie [De console en Editor voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor nadere bijzonderheden.
+* Uw projectteam kan de redacteur indien nodig aanpassen. Zie [De console en Editor voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor nadere bijzonderheden.

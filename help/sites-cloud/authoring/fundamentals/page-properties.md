@@ -2,7 +2,7 @@
 title: Pagina-eigenschappen bewerken
 description: Leer hoe u de eigenschappen definieert die vereist zijn voor het beheer van een pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 2%
@@ -315,7 +315,7 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
 * **Weergave**
 
    * Een lijst met de betrokken pagina&#39;s
-      * U kunt desgewenst selecteren/deselecteren
+      * U kunt desgewenst selecteren of deselecteren
       * Tabs
          * Net als bij het weergeven van eigenschappen voor één pagina, worden de eigenschappen onder tabbladen geordend.
    * Een subset van eigenschappen

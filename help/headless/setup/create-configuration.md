@@ -2,7 +2,7 @@
 title: Een configuratie maken - installatie zonder kop
 description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloos in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
 
 1. Selecteer **Maken**
 
-Indien nodig kunt u meerdere configuraties maken. Configuraties kunnen ook worden genest.
+U kunt indien nodig meerdere configuraties maken. Configuraties kunnen ook worden genest.
 
 >[!NOTE]
 >

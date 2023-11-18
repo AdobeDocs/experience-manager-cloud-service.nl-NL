@@ -2,10 +2,10 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 73%
+source-wordcount: '1891'
+ht-degree: 72%
 
 ---
 
@@ -182,7 +182,7 @@ Een andere veelvoorkomende eis voor ontwikkelaars is snelle toegang tot de logbe
 
 Dankzij de duidelijke scheiding van code en content kunnen ontwikkelaars een bepaald proces gebruiken voor het bijwerken van content als onderdeel van een implementatie. Vaak voorkomende gebruiksgevallen van veranderlijke content zijn:
 
-* *Standaard* content die deel uitmaakt van het klantproject (bijvoorbeeld mappen, sjablonen, workflows, enz.)
+* Standaard *default* inhoud die deel uitmaakt van het klantenproject (bijvoorbeeld mappen, sjablonen, workflows, enzovoort)
 
 * Zoekindexdefinities
 

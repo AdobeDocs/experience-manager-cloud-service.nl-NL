@@ -4,7 +4,7 @@ description: Leer hoe u Actieve kopieën maakt en synchroniseert om uw inhoud op
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 0%
@@ -417,7 +417,7 @@ Eenmaal [opgeschort](#suspending-inheritance-from-page-properties) de **Hervatte
 
 ![Knop Hervatten](../assets/resume.png)
 
-Als deze optie is geselecteerd, wordt het dialoogvenster weergegeven. U kunt desgewenst een synchronisatie selecteren en de handeling vervolgens bevestigen.
+Als deze optie is geselecteerd, wordt het dialoogvenster weergegeven. U kunt, indien nodig, een synchronisatie selecteren en de actie vervolgens bevestigen.
 
 #### Een Live Copy-pagina hervatten vanuit het Live Copy-overzicht {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -467,7 +467,7 @@ U kunt als volgt de diepte opgeven of wijzigen:
 
 ### Overerving voor een component annuleren {#cancelling-inheritance-for-a-component}
 
-Annuleer de overerving van Live kopie voor een component zodat de component niet meer wordt gesynchroniseerd met de broncomponent. Indien nodig kunt u overerving later inschakelen.
+Annuleer de overerving van Live kopie voor een component zodat de component niet meer wordt gesynchroniseerd met de broncomponent. U kunt overerving indien nodig op een later tijdstip inschakelen.
 
 >[!NOTE]
 >
@@ -523,7 +523,7 @@ Wanneer u overerving annuleert, kunt u de waarde van de eigenschap wijzigen. Een
 
 ![Eigenschappen niet overgeërfd](../assets/properties-not-inherited.png)
 
-U kunt overerving later opnieuw inschakelen voor een eigenschap als dat nodig is.
+U kunt overerving voor een eigenschap indien nodig later opnieuw inschakelen.
 
 >[!NOTE]
 >

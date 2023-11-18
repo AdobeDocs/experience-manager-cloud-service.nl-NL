@@ -4,9 +4,9 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2702'
+source-wordcount: '2698'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Met MSM (Multi Site Manager) kunt u dezelfde site-inhoud op meerdere locaties ge
    * Inhoud eenmaal maken en vervolgens
    * Deze inhoud opnieuw gebruiken in andere gebieden (via [Actieve kopieën](#live-copies)) van dezelfde of andere sites.
 * MSM onderhoudt dan de levende verhoudingen tussen uw broninhoud en zijn Levende Kopieën zodat:
-   * Wanneer u wijzigingen aanbrengt in de broninhoud, worden de bron en Actieve kopieën gesynchroniseerd.
+   * Wanneer u de broninhoud wijzigt, worden de bron en Live kopieën gesynchroniseerd.
    * U kunt alleen de inhoud van de actieve kopieën aanpassen door de live relatie voor afzonderlijke subpagina&#39;s en/of componenten te verbreken.
 
 Deze pagina biedt een overzicht van het hergebruiken van inhoud met MSM. Op de volgende pagina&#39;s worden verwante kwesties uitgebreid besproken.
@@ -189,7 +189,7 @@ In het vorige voorbeeld: `/content/wknd/language-masters/en` is de algemene hoof
 
 * De onderstaande inhoud `/content/wknd/language-masters/en` is de bron.
 * De onderstaande inhoud `/content/wknd/language-masters/en` wordt gekopieerd onder de `/content/wknd/us/en/` en `/content/wknd/ca/en` knooppunten. Dit zijn de actieve kopieën.
-* Auteurs brengen wijzigingen aan onderstaande pagina&#39;s aan `/content/wknd/language-masters/en`.
+* Auteurs wijzigen onderstaande pagina&#39;s `/content/wknd/language-masters/en`.
 * Wanneer teweeggebracht, synchroniseert MSM deze veranderingen in Levende Exemplaren.
 
 ### Actieve kopieën - Compositie {#live-copies-composition}
@@ -323,7 +323,7 @@ De volgende stappen beschrijven de standaardprocedure voor het gebruiken van MSM
    1. U kunt desgewenst [een rollout-configuratie maken](live-copy-sync-config.md#creating-a-rollout-configuration) indien nodig.
 
 1. Bepaal waar u wilt [Geef de rollout-configuraties op die u wilt gebruiken](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) en configureren naar wens.
-1. Indien vereist, [een blauwdrukconfiguratie maken](creating-live-copies.md#creating-a-blueprint-configuration) waarmee de broninhoud van de actieve kopie wordt geïdentificeerd.
+1. Indien nodig [een blauwdrukconfiguratie maken](creating-live-copies.md#creating-a-blueprint-configuration) waarmee de broninhoud van de actieve kopie wordt geïdentificeerd.
 1. [Maak een actieve kopie.](creating-live-copies.md#creating-a-live-copy)
 1. Breng de gewenste wijzigingen aan in de broninhoud. U dient het normale proces voor het beoordelen en goedkeuren van inhoud dat uw organisatie heeft ingesteld, te gebruiken.
 1. [Uitrollen](creating-live-copies.md#rolling-out-a-blueprint) de blauwdruk, of [Live kopie synchroniseren](creating-live-copies.md#synchronizing-a-live-copy) met de wijzigingen.

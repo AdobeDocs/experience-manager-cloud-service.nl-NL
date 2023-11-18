@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3435'
+source-wordcount: '3437'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
 De `kind` parameter moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie die momenteel is `1`. Zie onderstaande voorbeelden.
 
 
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. Als voor WAF-regels een licentie wordt verleend, moet u de functie inschakelen in Cloud Manager, zoals hieronder wordt beschreven voor zowel de nieuwe als de bestaande programmascenario&#39;s.
 
@@ -119,7 +119,7 @@ Voor RDEs, zal de bevellijn worden gebruikt, maar RDE wordt niet gesteund op dit
 
 **Notities**
 
-* U kunt `yq` om de opmaak van uw configuratiebestand (bijv. `yq cdn.yaml`).
+* U kunt `yq` om de opmaak van uw configuratiebestand lokaal te valideren (bijvoorbeeld `yq cdn.yaml`).
 
 ## Syntaxis verkeersfilterregels {#rules-syntax}
 
@@ -489,7 +489,7 @@ De regels gedragen zich als volgt:
 
 * De klant-verklaarde regelnaam van om het even welke passende regels zal in worden vermeld `match` kenmerk.
 * De `action` het attribuut bepaalt of de regels het effect van het blokkeren, het toestaan, of het registreren hadden.
-* Als WAF vergunning en toegelaten is, `waf` in het kenmerk worden alle WAF-markeringen (bijvoorbeeld SQLI) weergegeven die zijn gedetecteerd, ongeacht of de WAF-markeringen in een regel zijn vermeld. Dit moet inzicht verschaffen in mogelijke nieuwe regels die moeten worden gedeclareerd.
+* Als WAF vergunning en toegelaten is, `waf` in dit kenmerk worden alle WAF-markeringen (bijvoorbeeld SQLI) weergegeven die zijn gedetecteerd, ongeacht of de WAF-markeringen in een regel zijn vermeld. Dit moet inzicht verschaffen in mogelijke nieuwe regels die moeten worden gedeclareerd.
 * Als er geen door de klant gedeclareerde regels overeenkomen en er geen waf-regels overeenkomen, wordt de `rules` eigenschap is leeg.
 
 Zoals eerder vermeld, verschijnen de de regelovereenkomsten van WAF slechts in CDN- logboeken voor CDN missen en overgaan, niet klappen.

@@ -2,7 +2,7 @@
 title: Deelnemen aan workflows
 description: Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit op een pagina of element uitvoert.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 1%
@@ -59,7 +59,7 @@ U kunt een item voltooien zodat de workflow naar de volgende stap kan gaan.
 Op deze actie kunt u aangeven:
 
 * **Volgende stap**: de volgende stap die moet worden uitgevoerd; u kunt een keuze maken in een opgegeven lijst
-* **Opmerking**: indien vereist
+* **Opmerking** indien nodig:
 
 U kunt een deelnemersstap uitvoeren vanuit:
 
@@ -118,7 +118,7 @@ De gebruikers die voor delegatie beschikbaar zijn hangen af van wie het het werk
 Op deze actie kunt u aangeven:
 
 * **Gebruiker**: de gebruiker u aan wilt delegeren; u kunt uit een verstrekte lijst selecteren
-* **Opmerking**: indien vereist
+* **Opmerking** indien nodig:
 
 U kunt een deelnemersstap delegeren vanuit:
 
@@ -168,7 +168,7 @@ Als u ontdekt dat een stap, of een reeks stappen, moet worden herhaald kunt u ac
 Op deze actie kunt u aangeven:
 
 * **Vorige stap**: de stap waarnaar u wilt terugkeren; u kunt een keuze maken in een opgegeven lijst
-* **Opmerking**: indien vereist
+* **Opmerking** indien nodig:
 
 U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
 
@@ -245,7 +245,7 @@ U opent als volgt een workflowitem en bekijkt de details:
 1. Open de **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
 1. Selecteren **Openen** om de informatietabbladen te openen.
-1. Selecteer zo nodig de gewenste actie, geef details op en bevestig deze met **OK** (of **Annuleren**).
+1. Selecteer zo nodig de gewenste actie, geef details en bevestig deze met **OK** (of **Annuleren**).
 1. Gebruiken **Opslaan** of **Annuleren** om af te sluiten.
 
 #### Workflow Details openen - Pagina-editor {#opening-workflow-details-page-editor}
@@ -254,7 +254,7 @@ U opent als volgt een workflowitem en bekijkt de details:
 
 1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Selecteren **Details weergeven** van de statusbar om de informatielusjes te openen.
-1. Selecteer zo nodig de gewenste actie, geef details op en bevestig deze met **OK** (of **Annuleren**).
+1. Selecteer zo nodig de gewenste actie, geef details en bevestig deze met **OK** (of **Annuleren**).
 1. Gebruiken **Opslaan** of **Annuleren** om af te sluiten.
 
 ### Het bekijken van de Payload van het Werkschema (Veelvoudige Middelen) {#viewing-the-workflow-payload-multiple-resources}

@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4921'
+source-wordcount: '4923'
 ht-degree: 0%
 
 ---
@@ -503,7 +503,7 @@ Sommige types staan ook toe om extra opties te specificeren die wijzigen hoe een
 
 | Optie | Type(n) | Beschrijving |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | Negeert het geval van een tekenreeks, bijvoorbeeld een waarde van `time` komt overeen `TIME`, `time`, `tImE`, ... |
+| `_ignoreCase` | `String` | Negeert het geval van een tekenreeks, bijvoorbeeld een waarde van `time` overeenkomsten `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | Hiermee wordt een bepaalde marge toegestaan voor `float` als hetzelfde te beschouwen waarden (om technische beperkingen te omzeilen als gevolg van de interne representatie van `float` waarden; moet worden vermeden, aangezien deze optie een negatief effect kan hebben op de prestaties |
 
 Expressies kunnen met behulp van een logische operator worden gecombineerd tot een set (`_logOp`):
@@ -515,7 +515,7 @@ Elk veld kan met een eigen set expressies worden gefilterd. De expressiesets van
 
 Een filterdefinitie (doorgegeven als de `filter` argument voor een query) bevat:
 
-* Een subdefinitie voor elk veld (het veld kan via de naam ervan worden geopend, bijvoorbeeld er is een `lastName` veld in het filter voor de `lastName` veld in het gegevenstype (veld)
+* Een subdefinitie voor elk gebied (het gebied kan door zijn naam worden betreden, bijvoorbeeld, is er een `lastName` veld in het filter voor de `lastName` veld in het gegevenstype (veld)
 * Elke subdefinitie bevat de `_expressions` array, die de expressieset en de `_logOp` veld waarin de logische operator wordt gedefinieerd, moeten de expressies worden gecombineerd met
 * Elke expressie wordt gedefinieerd door de waarde (`value` veld) en de operator (`_operator` veld) de inhoud van een veld moet worden vergeleken met
 

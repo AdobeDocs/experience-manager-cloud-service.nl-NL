@@ -2,9 +2,9 @@
 title: Vertaalde inhoud zonder kop publiceren
 description: Leer hoe u uw vertaalde inhoud publiceert en de vertalingen bijwerkt terwijl de inhoud wordt bijgewerkt.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ Gefeliciteerd! U hebt de reis zonder kop voltooid! Nu moet u:
 * Heb een overzicht van wat koploze inhoudlevering is.
 * U hebt een basiskennis AEM functies zonder kop.
 * Begrijp AEM vertaalfuncties en hoe deze verwant zijn aan inhoud zonder kop.
-* De mogelijkheid hebben om uw eigen inhoud zonder kop te vertalen.
+* U kunt beginnen met het vertalen van uw eigen inhoud zonder kop.
 
 U kunt nu uw eigen inhoud zonder kop in AEM vertalen. AEM is echter een krachtig hulpmiddel en er zijn veel aanvullende opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) voor meer informatie over de functies die u tijdens deze reis hebt gezien.
 

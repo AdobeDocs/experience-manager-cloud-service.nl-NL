@@ -2,7 +2,7 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3642'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Uw component wordt weergegeven met [HTML](https://www.w3schools.com/htmL/html_in
 
 Het wordt aanbevolen de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
-Deze filosofie wordt ondersteund door [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), wordt een sjabloontaal die doelbewust beperkt is om een echte programmeertaal te garanderen, gebruikt om de onderliggende bedrijfslogica te definiëren. Dit mechanisme markeert de code die voor een bepaalde mening wordt geroepen en, indien vereist, staat specifieke logica voor verschillende meningen van de zelfde component toe.
+Deze filosofie wordt ondersteund door [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), wordt een sjabloontaal die doelbewust beperkt is om een echte programmeertaal te garanderen, gebruikt om de onderliggende bedrijfslogica te definiëren. Dit mechanisme benadrukt de code die voor een bepaalde mening wordt geroepen en, indien nodig, staat specifieke logica voor verschillende meningen van de zelfde component toe.
 
 Deze (facultatieve) logica kan op verschillende manieren worden uitgevoerd en wordt aangehaald van HTML met specifieke bevelen:
 

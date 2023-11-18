@@ -2,10 +2,10 @@
 title: Exporteren naar CSV
 description: Informatie over uw pagina's exporteren naar een CSV-bestand op uw lokale systeem
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 23%
+ht-degree: 18%
 
 ---
 
@@ -46,7 +46,7 @@ Het resultaat `export.csv` kan worden geopend in Excel of een andere compatibele
 
 Een CSV-export maken:
 
-1. Open de **Sites**-console en ga indien nodig naar de gewenste locatie.
+1. Open de **Sites** navigeer indien nodig naar de gewenste locatie.
    * De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites**-console bladert (in de lijstweergave)
    * Het is een optie van **Maken** vervolgkeuzelijst:
 

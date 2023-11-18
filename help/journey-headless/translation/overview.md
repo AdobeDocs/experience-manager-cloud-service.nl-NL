@@ -2,9 +2,9 @@
 title: AEM doorsnedenloze vertaalreis
 description: Begin hier voor een begeleide reis door uw inhoud zonder kop te vertalen met AEM krachtige vertaalhulpmiddelen.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1037'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Deze gids leidt u door de belangrijkste hoofdloze vertaalonderwerpen zodat u na 
 * Heb een overzicht van wat koploze inhoudlevering is.
 * U hebt een basiskennis AEM functies zonder kop.
 * Begrijp AEM vertaalfuncties en hoe deze verwant zijn aan inhoud zonder kop.
-* De mogelijkheid hebben om uw eigen inhoud zonder kop te vertalen.
+* U kunt beginnen met het vertalen van uw eigen inhoud zonder kop.
 
 Het doel is om u een breed begrip van technologie zonder kop te geven, hoe AEM inhoud zonder kop dient en hoe u het kunt vertalen. Als u met geen van deze onderwerpen vertrouwd bent, is dit uw ideale plaats om te beginnen.
 

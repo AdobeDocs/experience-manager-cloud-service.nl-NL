@@ -2,7 +2,7 @@
 title: Pagina's voorvertonen met ContextHub-gegevens
 description: De ContextHub toolbarvertoningen gegevens van Opslag ContextHub en laat u toe om opslaggegevens te veranderen en is nuttig om inhoud te previewing
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 2%
@@ -46,16 +46,16 @@ UI de modules kunnen gegevens van één of meerdere opslag ContextHub in de tool
 
 ### Inhoud pop-up {#popup-content}
 
-Sommige modules UI tonen een popup bekleding wanneer geklikt of getikt. Het pop-upmenu bevat doorgaans aanvullende informatie dan die op de werkbalk wordt weergegeven.
+Sommige modules UI tonen een pop-up bekleding wanneer geklikt of getikt. Het pop-upvenster bevat doorgaans aanvullende informatie dan die op de werkbalk wordt weergegeven.
 
 ![ContextHub-profielgegevens](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### Popup-Forms {#popup-forms}
 
-De popup bekleding van een module kan vormelementen omvatten die u toelaten om de gegevens in de opslag te veranderen ContextHub. Als de pagina-inhoud wordt bepaald door de opslaggegevens, kunt u het formulier gebruiken en de wijzigingen in de pagina-inhoud observeren.
+De pop-up bekleding van een module kan vormelementen omvatten die u toelaten om de gegevens in de opslag te veranderen ContextHub. Als de pagina-inhoud wordt bepaald door de opslaggegevens, kunt u het formulier gebruiken en de wijzigingen in de pagina-inhoud observeren.
 
 ### Modus Volledig scherm {#fullscreen-mode}
 
-Popup overlays kunnen een pictogram omvatten dat u selecteert om popup inhoud uit te breiden om het volledige browser venster of het scherm te behandelen.
+Popup overlays kunnen een pictogram omvatten dat u selecteert om pop-up inhoud uit te breiden om het volledige browser venster of het scherm te behandelen.
 
 ![Knop Volledig scherm](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

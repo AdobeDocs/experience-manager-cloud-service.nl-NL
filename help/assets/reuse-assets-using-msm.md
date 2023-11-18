@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 10%
@@ -57,7 +57,7 @@ MSM onderhoudt een live relatie tussen het bronelement en zijn live kopieën, zo
 
 **Uitvoeren:** Een handeling die de wijzigingen aan de bron stroomafwaarts doorvoert naar de live kopieën. Het is mogelijk om één of meerdere levende exemplaren in één keer bij te werken gebruikend rollout actie. Zie rollout.
 
-**Uitrolconfiguratie:** Regels die bepalen welke eigenschappen worden gesynchroniseerd, hoe en wanneer. Deze configuraties worden toegepast wanneer het creëren van levende exemplaren; kan later worden bewerkt; en een kind kan rollout configuratie van zijn ouderactiva erven. Voor MSM voor [!DNL Assets], gebruik slechts de Standaard rollout config. De andere rollout configuraties zijn niet beschikbaar voor MSM voor [!DNL Assets].
+**Rollout-configuratie:** Regels die bepalen welke eigenschappen worden gesynchroniseerd, hoe en wanneer. Deze configuraties worden toegepast bij het maken van live kopieën; kunnen later worden bewerkt en een onderliggend element kan rollout-configuratie overnemen van het bovenliggende element. Voor MSM voor [!DNL Assets], gebruik slechts de Standaard rollout config. De andere rollout configuraties zijn niet beschikbaar voor MSM voor [!DNL Assets].
 
 **Synchroniseren:** Een andere actie, naast rollout, die pariteit tussen bron en zijn levende exemplaar door de updates van bron naar levende exemplaren te verzenden brengt. Een synchronisatie wordt in werking gesteld voor een bepaalde levende kopie en de actie trekt de veranderingen van de bron. Met deze handeling is het mogelijk slechts een van de live kopieën bij te werken. Zie actie synchroniseren.
 
@@ -67,7 +67,7 @@ MSM onderhoudt een live relatie tussen het bronelement en zijn live kopieën, zo
 
 **Herstellen:** Met de handeling Herstellen wordt de actieve kopie opnieuw een kopie van de bron door lokale wijzigingen te overschrijven. Ook worden annuleringen door overerving verwijderd en wordt de overerving voor alle metagegevensvelden opnieuw ingesteld. Als u in de toekomst lokale wijzigingen wilt aanbrengen, moet u de overname van specifieke velden opnieuw annuleren. Zie lokale wijzigingen in LC.
 
-**Loskoppelen:** Verwijder onherroepelijk de live relatie van een live kopie van middelen/map. Nadat u de bewerking hebt losgekoppeld, kunnen de live kopieën nooit updates van de bron ontvangen en is het niet langer een live kopie meer. Zie relatie verwijderen.
+**Koppelen:** Verwijder onherroepelijk de live relatie van een live kopie van middelen/map. Nadat u de bewerking hebt losgekoppeld, kunnen de live kopieën nooit updates van de bron ontvangen en is het niet langer een live kopie meer. Zie relatie verwijderen.
 
 ## Live kopie van een element maken {#create-livecopy}
 
@@ -84,7 +84,7 @@ Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
    ![Live kopie maken van [!DNL Experience Manager] interface](assets/create_lc1.png)
 
-   *Afbeelding: Live kopie maken van [!DNL Experience Manager] interface.*
+   *Afbeelding: Een live kopie maken van [!DNL Experience Manager] interface.*
 
 1. Selecteer een doelmap. Klik op **[!UICONTROL Next]**.
 1. Geef een titel en naam op. Elementen hebben geen onderliggende elementen. Wanneer u een live kopie van mappen maakt, kunt u ervoor kiezen onderliggende items op te nemen of uit te sluiten.
@@ -92,11 +92,11 @@ Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
 Ga als volgt te werk om live kopieën te maken met de tweede methode:
 
-1. In [!DNL Experience Manager] interface, vanuit de rechterbovenhoek, klikt u op **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
+1. In [!DNL Experience Manager] interface, vanuit de rechterbovenhoek, klikken **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
    ![Live kopie maken van [!DNL Experience Manager] interface](assets/create_lc2.png)
 
-   *Afbeelding: Live kopie maken van [!DNL Experience Manager] interface.*
+   *Afbeelding: Een live kopie maken van [!DNL Experience Manager] interface.*
 
 1. Selecteer bronelement of -map. Klik op **[!UICONTROL Next]**.
 1. Doelmap selecteren. Klik op **[!UICONTROL Next]**.
@@ -129,7 +129,7 @@ Voer de volgende stappen uit om de informatie en status van een live kopie van e
 
    ![Informatie en status van live-kopieën worden in Eigenschappen op een console weergegeven](assets/lcfolder_info_properties.png)
 
-   *Afbeelding: Informatie en status van live kopieën.*
+   *Afbeelding: gegevens en statussen van actieve kopieën.*
 
 1. U kunt in- of uitschakelen als onderliggende elementen de configuratie van de live kopie lenen.
 
@@ -144,7 +144,7 @@ Voer de volgende stappen uit om de informatie en status van een live kopie van e
 
    ![Statussen van live kopieën weergeven in Live Copy Console van bron](assets/livecopy-statuses.png)
 
-   *Afbeelding: Statussen van live kopieën weergeven in [!UICONTROL Live Copy Console] van bron.*
+   *Afbeelding: statussen van live kopieën weergeven in [!UICONTROL Live Copy Console] van bron.*
 
 1. Selecteer een asset en klik op **[!UICONTROL Relationship Status]** op de werkbalk om de gedetailleerde informatie over elke asset in de map met livekopieën weer te geven.
 
@@ -176,7 +176,7 @@ Voor een specifieke live kopie klikt u op **[!UICONTROL Edit Live Copy]** om rel
 
 ![Voor een specifieke live kopie is de optie om de relatie op te schorten of de rollout-configuratie te wijzigen toegankelijk vanuit References rail wanneer bronelement is geselecteerd](assets/referencerail_editlc_options.png)
 
-*Afbeelding: Verhouding onderbreken of rollout-configuratie wijzigen van een specifieke live kopie.*
+*Afbeelding: Een relatie onderbreken of de rollout-configuratie van een specifieke live kopie wijzigen.*
 
 ### Snelle acties van References rail voor levende kopie {#ref-rail-lc}
 
@@ -190,7 +190,7 @@ Selecteer een asset of map met livekopieën, open het linkerspoor en klik op **[
 
 ![Acties die beschikbaar zijn in het spoor Referenties voor de geselecteerde livekopie](assets/referencerail_livecopy.png)
 
-*Afbeelding: Handelingen die beschikbaar zijn in de References-rail voor de geselecteerde live kopie.*
+*Afbeelding: Acties die beschikbaar zijn in de References-rail voor de geselecteerde live kopie.*
 
 ## Wijzigingen doorgeven van bron naar live kopieën {#rollout-sync}
 
@@ -207,7 +207,7 @@ U kunt een rollout-actie starten vanuit het bronelement en alle of enkele gesele
 
    ![De wijzigingen van de bron doorvoeren in enkele of alle live kopieën](assets/livecopy_rollout_page.png)
 
-   *Afbeelding: Leer de wijzigingen van bron aan een paar of alle levende exemplaren uit.*
+   *Afbeelding: voer de wijzigingen van de bron uit op een paar of alle actieve kopieën.*
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ U kunt ook een rollout-actie starten vanuit de References-rail nadat u een speci
 
 ![De wijzigingen van de bron doorvoeren in de geselecteerde live kopie](assets/livecopy_rollout_dialog.png)
 
-*Afbeelding: Leer de wijzigingen van bron aan het geselecteerde levende exemplaar uit.*
+*Figuur: Leer de wijzigingen van bron aan het geselecteerde levende exemplaar uit.*
 
 ### Actie voor synchroniseren {#about-sync}
 
@@ -227,7 +227,7 @@ Met een synchronisatiehandeling worden de wijzigingen alleen van een bron naar d
 |---|---|---|
 | [!UICONTROL References] spoor | Snel synchroniseren wanneer de bron al is geselecteerd. | Zie [Snelle acties van References rail voor bron](#ref-rail-source) |
 | Werkbalk in het dialoogvenster [!UICONTROL Properties] page | Een synchronisatie starten wanneer u de live kopieereigenschappen al hebt geopend. | Zie [Een live kopie synchroniseren](#sync-lc) |
-| [!UICONTROL Live Copy Overview] console | Synchroniseer snel meerdere elementen (niet noodzakelijkerwijs alle) wanneer de bronmap is geselecteerd of [!UICONTROL Live Copy Overview] -console is al geopend. De synchronisatiehandeling wordt gestart voor één element tegelijk, maar is een snellere manier om te synchroniseren voor meerdere middelen in één keer. | Zie [Handelingen op vele elementen in een live-kopieermap](#bulk-actions) |
+| [!UICONTROL Live Copy Overview] console | Synchroniseer snel meerdere elementen (niet noodzakelijkerwijs alle) wanneer de bronmap is geselecteerd of [!UICONTROL Live Copy Overview] -console is al geopend. De synchronisatiehandeling wordt uitgevoerd voor één element tegelijk, maar is een snellere manier om te synchroniseren voor meerdere middelen in één keer. | Zie [Handelingen op vele elementen in een live-kopieermap](#bulk-actions) |
 
 ### Een live kopie synchroniseren {#sync-lc}
 
@@ -237,7 +237,7 @@ Zie [Informatie en status van een livekopie](#status-lc-asset) en [Informatie en
 
 ![Synchroniseer actie trekt de veranderingen aan de bron aan](assets/livecopy_sync.png)
 
-*Afbeelding: Met de actie Synchroniseren worden de wijzigingen in de bron zichtbaar gemaakt.*
+*Figuur: De synchronisatieactie trekt de veranderingen aan de bron aan.*
 
 >[!NOTE]
 >
@@ -251,13 +251,13 @@ U kunt de overerving van Live kopie annuleren voor een:
 * Variatie van inhoudsfragment
 * Gegevensveld Inhoudsfragment
 
-Dit betekent dat het item niet meer wordt gesynchroniseerd met de broncomponent. Indien nodig kunt u overerving later inschakelen.
+Dit betekent dat het item niet meer wordt gesynchroniseerd met de broncomponent. U kunt overerving indien nodig op een later tijdstip inschakelen.
 
 ### Overerving annuleren {#cancel-inheritance}
 
 Overerving annuleren:
 
-1. Selecteer **Overerving annuleren** pictogram, naast het vereiste item:
+1. Selecteer de **Overerving annuleren** pictogram, naast het vereiste item:
 
    ![Synchroniseer actie trekt de veranderingen aan de bron aan](assets/cancel-inheritance-icon.png)
 
@@ -293,7 +293,7 @@ U kunt alle lokale wijzigingen ongedaan maken en de status van het element herst
 
 ![Met Handeling herstellen worden lokale bewerkingen overschreven en wordt de live kopie gedeeltelijk overschreven door de bron.](assets/livecopy_reset.png)
 
-*Afbeelding: Met Handeling herstellen worden lokale bewerkingen overschreven en wordt de live kopie gedeeltelijk overschreven door de bron.*
+*Figuur: De actie van het terugstellen beschrijft lokale uitgeeft en brengt het levende exemplaar bij deel met zijn bron.*
 
 ## Live relatie verwijderen {#detach}
 
@@ -305,7 +305,7 @@ U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de 
 
    ![Handeling ontkoppelen verwijdert de relatie tussen bron en live kopie volledig](assets/livecopy_detach.png)
 
-   *Afbeelding: Met Handeling ontkoppelen verwijdert u de relatie tussen bron en live kopie volledig.*
+   *Figuur: De actie van de losmaak verwijdert volledig het verband tussen bron en levende exemplaar.*
 
    >[!CAUTION]
    >
@@ -315,7 +315,7 @@ U kunt ook snel meerdere elementen in een live-kopieermap loskoppelen van de map
 
 ## Handelingen in een map met live kopieën bulken {#bulk-actions}
 
-Als u meerdere elementen in een live-kopieermap hebt, kan het lastig zijn om acties voor elk element te starten. U kunt de basishandelingen voor een groot aantal elementen snel starten vanuit [!UICONTROL Live Copy Console]. De bovenstaande methoden werken nog steeds voor afzonderlijke elementen.
+Als een live-kopieermap meerdere elementen bevat, kan het lastig zijn acties op elk element te starten. U kunt de basishandelingen voor een groot aantal elementen snel starten vanuit [!UICONTROL Live Copy Console]. De bovenstaande methoden werken nog steeds voor afzonderlijke elementen.
 
 1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Live Copy Overview]** om de console te openen.
@@ -363,11 +363,11 @@ In meer scenario&#39;s, MSM voor [!DNL Assets] past het gedrag van MSM voor de f
 
 >[!NOTE]
 >
->Herinner me MSM voor de Fragmenten van de Inhoud (die door **[!UICONTROL Assets]** console) gebruikt de functionaliteit Middelen; dit komt doordat ze als elementen worden opgeslagen (hoewel ze wel als een functie Sites worden beschouwd).
+>Herinner me MSM voor de Fragmenten van de Inhoud (die door **[!UICONTROL Assets]** console) gebruikt de functionaliteit van Activa; dit is omdat zij als Activa (hoewel beschouwd als een eigenschap van Plaatsen) worden opgeslagen.
 
 ## Beperkingen en bekende problemen met MSM voor [!DNL Assets] {#limitations}
 
-Hieronder vindt u beperkingen van MSM voor [!DNL Assets].
+De volgende beperkingen van MSM voor [!DNL Assets].
 
 * MSM werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
 

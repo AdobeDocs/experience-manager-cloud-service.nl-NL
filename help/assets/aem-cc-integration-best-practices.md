@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3489'
 ht-degree: 13%
@@ -82,7 +82,7 @@ Houd rekening met de volgende opties ter ondersteuning van het gebruik van geval
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) voor een configureerbare invoegtoepassing van Elementen om elementen te publiceren.
 
 * Aangepaste oplossingen worden gemaakt op basis van [Commentaar voor het delen van bedrijfsmiddelen](https://opensource.adobe.com/asset-share-commons/) code base.
-* Experience Manager [delen van koppeling](/help/assets/share-assets.md) om elementen ad hoc te delen met behulp van koppelingen.
+* Experience Manager [delen van koppeling](/help/assets/share-assets.md) om activa op bestelling te delen gebruikend verbindingen.
 * [Elementen van de webinterface](/help/assets/manage-digital-assets.md) met gebieden voor externe partijen die door de opstelling van het Toegangsbeheer van de Experience Manager en met noodzakelijke aanpassingen van de IT/netwerkconfiguratie worden beveiligd, die deze externe gebruikers toegang tot Experience Manager geven.
 
 ## Belangrijkste concepten en gebruiksgevallen {#key-concepts-and-use-cases}
