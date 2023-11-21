@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Gebruik AEM Forms Workflow om bedrijfsprocesworkflows te automatiseren en snel samen te stellen. Bijvoorbeeld, overzicht en goedkeuring, de Generatie van de PDF, de werkschema's van Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2367'
 ht-degree: 0%
@@ -66,7 +66,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 1. Open de console Workflowmodellen. De standaard-URL is `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Selecteren **Maken** vervolgens **Model maken**. Het dialoogvenster Workflowmodel toevoegen wordt weergegeven.
 1. Voer de **Titel** en **Naam** (optioneel). Bijvoorbeeld een hypotheekaanvraag. Tikken **Gereed**.
-1. Selecteer het nieuwe workflowmodel en tik op **Bewerken**. Nu kunt u workflowstappen toevoegen om bedrijfslogica te maken. Wanneer u voor het eerst een workflowmodel maakt, bevat dit:
+1. Selecteer het gemaakte workflowmodel en tik op **Bewerken**. Nu kunt u workflowstappen toevoegen om bedrijfslogica te maken. Wanneer u voor het eerst een workflowmodel maakt, bevat dit:
 
    * De stappen: Start en Einde stroom. Deze stappen vertegenwoordigen het begin en het einde van de workflow. Deze stappen zijn vereist en kunnen niet worden bewerkt of verwijderd.
    * Een stap van de voorbeelddeelnemer genoemd Stap 1. Deze stap wordt gevormd om een het werkpunt aan de admin gebruiker toe te wijzen. Verwijder deze stap.

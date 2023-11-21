@@ -2,9 +2,9 @@
 title: Hoe kan ik een [!DNL AEM Forms] als cloudserviceomgeving?
 description: Leer instellen en configureren van een [!DNL AEM Forms] as a Cloud Service omgeving.
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '640'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 * **AEM**: Een AEM beheerder helpt bij de algemene configuratie, zoals het instellen van gebruikers, het verharden van de omgeving, het configureren van gegevensbronnen, het configureren van e-mail en software van derden. AEM beheerder helpt ook bij integratie met Adobe Analytics, Adobe Target en Adobe Sign.
 
-* **Eindgebruiker**: Een eindgebruiker communiceert met en verzendt het gepubliceerde formulier, ondertekent verzonden formulieren, volgt ingediende toepassingen via een webportal en ontvangt gepersonaliseerde communicatie.
+* **Eindgebruiker**: Een gebruiker communiceert met en verzendt het gepubliceerde formulier, ondertekent verzonden formulieren, volgt ingediende toepassingen via een webportal en ontvangt gepersonaliseerde communicatie.
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 

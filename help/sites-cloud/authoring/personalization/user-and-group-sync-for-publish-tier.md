@@ -2,9 +2,9 @@
 title: Registratie, aanmelding en gebruikersprofiel
 description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Er zijn twee manieren om registratie uit te voeren, zoals hieronder beschreven.
 
 ### AEM Beheerd {#aem-managed-registration}
 
-U kunt aangepaste registratiecode schrijven die minimaal de gebruikersnaam en het wachtwoord van de eindgebruiker nodig heeft en waarmee een gebruikersrecord wordt gemaakt in AEM die u tijdens de aanmelding kunt gebruiken voor verificatie. De volgende stappen worden doorgaans gebruikt om dit registratiemechanisme samen te stellen:
+U kunt aangepaste registratiecode schrijven die minimaal de gebruikersnaam en het wachtwoord van de gebruiker nodig heeft en een gebruikersrecord maakt in AEM die u tijdens de aanmelding kunt gebruiken voor verificatie. De volgende stappen worden doorgaans gebruikt om dit registratiemechanisme samen te stellen:
 
 1. Een aangepaste AEM die registratiegegevens verzamelt weergeven
 1. Bij verzending wordt een naar behoren ingericht servicegebruiker gebruikt voor
@@ -67,13 +67,13 @@ De klanten kunnen met een IdP (identiteitsleverancier) integreren, die de gebrui
 
 **SAML GEBASEERD**
 
-De klanten kunnen op SAML-Gebaseerde authentificatie via hun aangewezen SAML IdP gebruiken. Wanneer het gebruiken van een IdP met AEM, is IdP verantwoordelijk voor het voor authentiek verklaren van de geloofsbrieven van de eindgebruiker en het tussenhandel drijven van de authentificatie van de gebruiker met AEM, die tot het gebruikersverslag in AEM zoals nodig leiden, en het groepslidmaatschap van de gebruiker in AEM, zoals die door de bewering van SAML wordt beschreven.
+De klanten kunnen op SAML-Gebaseerde authentificatie via hun aangewezen SAML IdP gebruiken. Wanneer het gebruiken van een IdP met AEM, is IdP verantwoordelijk voor het voor authentiek verklaren van de geloofsbrieven van de gebruiker en het tussenhandel drijven van de authentificatie van de gebruiker met AEM, die tot het gebruikersverslag in AEM zoals nodig leiden, en het groepslidmaatschap van de gebruiker in AEM, zoals die door de bewering van SAML wordt beschreven.
 
 >[!NOTE]
 >
 >Alleen de initiële verificatie van de gebruikersgegevens wordt geverifieerd door de IdP en volgende aanvragen om AEM worden uitgevoerd met behulp van een AEM token, zolang het cookie beschikbaar is.
 
-Zie de documentatie voor meer informatie over [SAML 2.0-verificatiehandler](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
+Zie de documentatie voor meer informatie over de [SAML 2.0-verificatiehandler](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
 
 **OAuth/SSO**
 
@@ -104,7 +104,7 @@ Realtime toegang tot derdediensten om profielattributen terug te winnen is mogel
 
 ## Machtigingen (gesloten gebruikersgroepen) {#permissions-closed-user-groups}
 
-Beleid voor toegang op de publicatielaag, ook wel &#39;Closed User Group&#39; (CUG&#39;s) genoemd, wordt in de auteur van de AEM gedefinieerd als [hier beschreven](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). Als u bepaalde gedeelten of pagina&#39;s van een website van bepaalde gebruikers wilt beperken, past u de CUG&#39;s waar nodig toe met de auteur van de AEM, zoals hier beschreven. U kopieert deze secties of pagina&#39;s vervolgens naar de publicatielijst.
+Beleid voor toegang op de publicatielaag, ook wel &#39;Closed User Group&#39; (CUG&#39;s) genoemd, wordt in de AEM als volgt gedefinieerd [hier beschreven](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). Als u bepaalde gedeelten of pagina&#39;s van een website van bepaalde gebruikers wilt beperken, past u de CUG&#39;s waar nodig toe met de auteur van de AEM, zoals hier beschreven. U kopieert deze secties of pagina&#39;s vervolgens naar de publicatielijst.
 
 * Als de gebruikers login door met een identiteitsleverancier (IdP) het gebruiken van SAML voor authentiek te verklaren, zal de authentificatiemanager de groepslidmaatschappen van de gebruiker identificeren (die CUGs op publiceren rij zouden moeten aanpassen), en zal de vereniging tussen de gebruiker en de groep door een verslag van de bewaarplaats aanhouden
 * Als login zonder integratie IdP wordt verwezenlijkt, kan de douanecode de zelfde de structuurverhoudingen van de bewaarplaats toepassen.

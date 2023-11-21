@@ -2,9 +2,9 @@
 title: Players in as a Cloud Service schermen installeren en configureren
 description: In deze pagina wordt beschreven hoe u spelers in as a Cloud Service schermen kunt installeren en configureren.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ Voer de onderstaande stappen uit om uw speler bij te werken:
    >[!NOTE]
    >U kunt kiezen of u wilt testen met specifieke hardwareapparaten of met een webextensie voor uw eigen speler.
 
-1. Klik op de knop **Configuratie** en klik op **Naar fabriek** knop onder **Herstellen** optie.
+1. Klik op de knop **Configuratie** en klik op **Naar fabriek** knop onder **Herstellen** -optie.
 
    ![afbeelding](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Klikken **Bevestigen** om de speler opnieuw in te stellen.
 
-1. Opnieuw vanaf de **Configuratie** en klik op **Wijzigen in de cloudmodus** knop onder **Runmode schakelen** optie.
+1. Opnieuw vanaf de **Configuratie** en klik op **Wijzigen in de cloudmodus** knop onder **Runmode schakelen** -optie.
 
    ![afbeelding](/help/screens-cloud/assets/player/installplayer-1.png)
 
@@ -53,7 +53,7 @@ Met de standaardafspeelcontrole in een AEM Screens-speler kunnen we:
 
 * Verbeter reactiviteit aan lege schermen of gebroken ervaringen op het gebied.
 
-* Vermindert het risico om een gebroken ervaring aan het eind - gebruiker te tonen.
+* Vermindert het risico om een gebroken ervaring aan de gebruiker te tonen.
 
 ### Eigenschappen {#understand-properties}
 
@@ -84,8 +84,8 @@ Hieronder worden enkele beperkingen weergegeven voor elementaire afspeelcontrole
 
 * Deze functie wordt alleen ondersteund voor reekskanalen en heeft nog geen betrekking op het gebruik van interactieve kanalen (SPA).
 
-* De cijfers zijn nog niet volledig toegankelijk voor klanten; Adobe werkt aan het snel mogelijk maken van een dashboardachtig rapportage- en waarschuwingsmechanisme.
+* De metriek worden nog niet volledig blootgesteld aan klanten; de Adobe werkt aan het toelaten van dashboard-als rapporterings en alarmeringsmechanisme spoedig.
 
 ## Volgende functies {#whats-next}
 
-Nu u de speler hebt geïnstalleerd en geconfigureerd voor de cloud-modus, gaat u door met de as a Cloud Service reis naar de schermen. Zie [Afspeellagen registreren in as a Cloud Service schermen](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van Screens Services Provider.
+Nu u de speler hebt geïnstalleerd en geconfigureerd in de cloud-modus, gaat u door met de as a Cloud Service reis naar de schermen. Zie [Afspeellagen registreren in as a Cloud Service schermen](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) van Screens Services Provider.

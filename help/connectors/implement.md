@@ -2,9 +2,9 @@
 title: Een AEM-connector implementeren
 description: Leer hoe te om, een AEM schakelaar te bouwen te testen en uit te voeren. Ook, leert u over gemeenschappelijke integratiepatronen.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '980'
 ht-degree: 6%
 
 ---
@@ -63,7 +63,7 @@ Daarnaast moet alleen Adobe code schrijven naar `/libs`, met klanten en partners
 
 De bestaande schakelaars kunnen ook refactoring moeten zijn om het even welke configuratie te bewegen die eens zou kunnen zijn geplaatst `/etc` in andere mappen op het hoogste niveau, zoals `/conf`. Deze herstructurering werd uitgevoerd als onderdeel van AEM 6.5 en wordt beschreven in de [AEM 6.5-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html).
 
-Het is raadzaam de meeste verbindingscode onder te plaatsen `/apps/connectors/<vendor>` het bevorderen van een schone opslagplaats voor klanten die verschillende connectoren hebben.
+Aanbevolen wordt de meeste verbindingscode onder te plaatsen `/apps/connectors/<vendor>` het bevorderen van een schone opslagplaats voor klanten die verschillende connectoren hebben.
 
 Configuraties van Cloud Servicen
 -----------------------------

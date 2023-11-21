@@ -2,9 +2,9 @@
 title: Ervaringsfragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2042'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ U kunt Experience Fragments gebruiken:
 Zonder Fragments van de Ervaring, zou de auteur dat fragment moeten kopiëren en kleven. Het maken en onderhouden van deze kopiëren/plakken-ervaringen kost veel tijd en is vaak het gevolg van gebruikersfouten.
 De Fragmenten van de ervaring elimineren de behoefte aan exemplaar/deeg.
 * Om het hoofdloze gebruik-geval CMS te steunen.
-Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan de klant. Een systeem/aanraakpunt van derden zou deze ervaring gebruiken en vervolgens leveren aan de eindgebruiker.
+Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan de klant. Een systeem/aanraakpunt van derden zou deze ervaring gebruiken en vervolgens leveren aan de gebruiker.
 
 >[!NOTE]
 >

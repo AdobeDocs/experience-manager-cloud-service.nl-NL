@@ -3,9 +3,9 @@ title: GraphiQL IDE gebruiken in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1138'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Bijvoorbeeld:
 >
 >Aangepaste herschrijfregels voor Dispatcher kunnen de standaardinstellingen van AEM publicatie overschrijven.
 >
->Als u op TTL-Gebaseerde cache-control kopballen van de verzender verzendt, die op een patroon van de plaatsovereenkomst wordt gebaseerd, dan, indien nodig, zou u kunnen willen uitsluiten `/graphql/execute.json/*` van de wedstrijden.
+>Als u op TTL-Gebaseerde cache-control kopballen van de verzender verzendt, die op een patroon van de plaatsovereenkomst wordt gebaseerd, dan als het noodzakelijk is, zou u kunnen willen uitsluiten `/graphql/execute.json/*` van de wedstrijden.
 
 Gebruikend GraphQL kunt u de Kopballen van het Geheime voorgeheugen van HTTP vormen om deze parameters voor uw individuele persisted vraag te controleren.
 

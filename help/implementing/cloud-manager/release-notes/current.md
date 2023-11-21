@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.11.0 in Adobe Experience Ma
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.11.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -25,20 +25,20 @@ De releasedatum voor Cloud Manager versie 2023.11.0 in AEM as a Cloud Service is
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Web Application Firewall-DDOS protection (WAF-DDOS) is nu beschikbaar voor aankoop als deel van uw AEM as a Cloud Service rechten en [kan op een zelfbediening manier worden gevormd.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+* Web Application Firewall-DDOS protection (WAF-DDOS) is nu beschikbaar voor aankoop als onderdeel van uw AEM as a Cloud Service machtiging en [kan op een zelfbediening manier worden gevormd.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 * Gespecialiseerd [configuratieleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) zijn nu beschikbaar om de regels van de verkeersfilter, met inbegrip van de regels van WAF, binnen notulen te vormen en op te stellen.
 * [Bij het kopiëren van inhoud](/help/implementing/developing/tools/content-copy.md) van een hogere omgeving tot een ontwikkelomgeving wordt nu een boodschap weergegeven waarin u wordt aangeraden grote inhoudssets te kopiëren omdat ontwikkelomgevingen beperkt zijn in de capaciteit.
-* [De pagina met details over de uitvoering van de pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) zullen nu alle stappen in een pijpleidingsuitvoering tonen met degenen die nog niet grayed zijn begonnen.
-* Op beide **[Activiteit](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** en **[Pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pagina&#39;s, is een samenvatting van de pijpleidingsuitvoering nu beschikbaar wanneer het klikken op een pijpleiding met een lopende status.
+* [De pagina met details over de uitvoering van de pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) toont nu alle stappen in een pijpleidingsuitvoering met degenen die nog niet begonnen grayed uit.
+* Op beide **[Activiteit](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** en **[Pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pagina&#39;s, is een samenvatting van de pijpleidingsuitvoering nu beschikbaar wanneer het selecteren van een pijpleiding met een lopende status.
 * Een nieuwe **Duur** is toegevoegd aan de [pagina met details over pijplijn](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) dit omvat de gemiddelde duur van de pijpleidingstap op basis van de historische trend voor dat programma.
 * Op de [pagina voor de uitvoering van pijpleidingen,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) de voltooide stappen geven nu de duur weer.
-* Uitvoeringen die [constructieartefacten opnieuw gebruiken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) De koppeling naar de uitvoering die deze artefacten aanvankelijk heeft gemaakt, wordt nu weergegeven.
+* Uitvoeringen die [constructieartefacten opnieuw gebruiken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) nu de koppeling weergeven naar de uitvoering die deze artefacten aanvankelijk heeft gemaakt.
 * De optie om te selecteren **Belangrijke metrische fouten** kan nu worden geconfigureerd voor [pijpleidingen van codekwaliteit](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ook.
 
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
-Maak deel uit van ons programma voor vroegtijdige goedkeuring en heb de kans om een aantal van de komende kenmerken te testen.
+Een kans om een aantal van de komende eigenschappen te testen, maakt deel uit van het programma van de Adobe voor vroegtijdige goedkeuring.
 
 ### Breng uw eigen GitHub {#byo-github}
 
@@ -48,9 +48,9 @@ Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mai
 
 ### Aangepaste machtigingen {#custom-permissions}
 
-[Aangepaste machtigingen voor Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) Hiermee kunt u nieuwe aangepaste machtigingsprofielen maken met configureerbare machtigingen om de toegang tot programma&#39;s, pijpleidingen en omgevingen voor gebruikers van Cloud Manager te beperken.
+[Aangepaste machtigingen voor Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) Hiermee kunt u aangepaste machtigingsprofielen maken met configureerbare machtigingen om de toegang tot programma&#39;s, pijpleidingen en omgevingen voor gebruikers van Cloud Manager te beperken.
 
-Als u deze nieuwe functie wilt testen en uw feedback wilt delen, stuurt u een e-mail naar `Grp-CloudManager-custom-permissions@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
+Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `Grp-CloudManager-custom-permissions@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
 
 ### Self-Service inhoud herstellen {#content-restore}
 
@@ -69,18 +69,18 @@ Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mai
 
 [Cloud Manager Experience Audit-dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) bevat een trendweergave van de prestatiesscores van uw pagina, samen met inzichten en aanbevelingen om u te helpen deze te verbeteren. Experience Audit is opgenomen als een stap in de productiepijplijn van Cloud Manager.
 
-Het dashboard maakt gebruik van Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
+Het dashboard gebruikt Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar, of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
 
-Geïnteresseerd in het testen van het nieuwe dashboard? Een e-mail verzenden naar `aem-lighthouse-pilot@adobe.com` via je e-mail die aan je Adobe ID is gekoppeld. We kunnen je aan de slag.
+Geïnteresseerd in het testen van het nieuwe dashboard? Om aan de slag te gaan, stuurt u een e-mail naar `aem-lighthouse-pilot@adobe.com` van uw e-mail die aan uw Adobe ID is gekoppeld.
 
 ## Bekende problemen {#known-issues}
 
-Er is een bekende bug die voorkomt [configuratieleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) van overschakelen op productie.
+Er is een bekende fout die voorkomt [configuratieleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) van overschakelen op productie.
 
 Als de **Pauzeren vóór implementatie naar productie** optie wordt vereist voor een config pijpleiding, is het volgende gesuggereerde tijdelijke oplossing tot de insect wordt opgelost.
 
 1. Voer de pijplijn uit.
 1. Test de code in de testomgeving.
 1. Wanneer het opstellen en de goedkeuring beschikbaar wordt, klik **Afwijzen**.
-1. Bewerk de pijplijn om de **Pauzeren vóór implementatie naar productie** -optie.
-1. Voer de pijplijn opnieuw uit. Het zal opnieuw lopen op het opvoeren toen op productie.
+1. Bewerk de pijpleiding zodat u de **Pauzeren vóór implementatie naar productie** -optie.
+1. Voer de pijplijn opnieuw uit, zodat hij weer kan draaien op het opvoeren en vervolgens op de productie.

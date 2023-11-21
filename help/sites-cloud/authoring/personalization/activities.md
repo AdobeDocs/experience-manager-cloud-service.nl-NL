@@ -2,9 +2,9 @@
 title: Activiteiten beheren
 description: Met de activiteitenconsole kunt u de marketingactiviteiten van uw merken maken, organiseren en beheren
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1958'
 ht-degree: 15%
 
 ---
@@ -213,7 +213,7 @@ Gebruik altijd unieke namen voor activiteiten om synchronisatieproblemen te voor
 
 >[!NOTE]
 >
->Wanneer u een campagne maakt in Adobe Target, wordt een eigenschap toegewezen met de naam `thirdPartyId` naar elke campagne. Wanneer u de campagne in Adobe Target verwijdert, `thirdPartyId` wordt niet verwijderd. U kunt de `thirdPartyId` voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Om dit probleem te voorkomen, geeft u elke campagne een unieke naam. De naam van de campagne kan daarom niet opnieuw worden gebruikt in verschillende typen campagnes.
+>Wanneer u een campagne maakt in Adobe Target, wordt een eigenschap toegewezen met de naam `thirdPartyId` naar elke campagne. Wanneer u de campagne in Adobe Target verwijdert, `thirdPartyId` wordt niet verwijderd. U kunt de `thirdPartyId` voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Om dit probleem te voorkomen, geeft u elke campagne een unieke naam. U kunt de campagnemenamen niet opnieuw gebruiken in verschillende typen campagnes.
 >
 >Als u dezelfde naam gebruikt in hetzelfde type campagne, overschrijft u de bestaande campagne.
 >

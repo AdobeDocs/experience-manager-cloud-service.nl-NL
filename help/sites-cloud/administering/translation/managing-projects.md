@@ -4,7 +4,7 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3971'
 ht-degree: 0%
@@ -455,7 +455,7 @@ De beste praktijk in dit scenario is deze procedure te volgen:
 1. Publiceer de taalkopieën die zijn gekoppeld aan de bronpagina die u wilt verplaatsen.
 1. Verwijder ze.
 1. Maak nieuwe taalkopieën van de nieuw verplaatste bronpagina.
-1. Publiceer de zojuist gemaakte taalkopieën.
+1. Publiceer de gemaakte taalkopieën.
 
 ## Vertaaltaken importeren en exporteren {#import-export}
 

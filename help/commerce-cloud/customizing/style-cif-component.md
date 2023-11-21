@@ -1,5 +1,5 @@
 ---
-title: Stijl Adobe Experience Manager CIF Core-componenten
+title: Stijl Adobe Experience Manager CIF Core-onderdelen
 description: Leer hoe u Adobe Experience Manager (AEM) CIF Core Components opmaakt. In de zelfstudie wordt uitgelegd hoe bibliotheken of clientlibs aan de clientzijde worden gebruikt voor de implementatie en het beheer van CSS en JavaScript voor een AEM Commerce-implementatie. Deze zelfstudie behandelt ook hoe de module ui.frontend en een webpack-project in het end-to-end buildproces zijn geïntegreerd.
 sub-product: Commerce
 topics: Development
@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2535'
 ht-degree: 0%
 
 ---
 
-# Stijl AEM CIF Core-componenten {#style-aem-cif-core-components}
+# Stijl AEM CIF kerncomponenten {#style-aem-cif-core-components}
 
-De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM CIF Core-componenten worden gebruikt, zijn geordend. U maakt ook een stijl met CSS om de standaardstijl van het dialoogvenster **Productteam** component.
+De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM Core-componenten worden gebruikt, zijn geordend. U maakt ook een stijl met CSS om de standaardstijl van het dialoogvenster **Productteam** component.
 
 >[!TIP]
 >
@@ -57,7 +57,7 @@ U gaat de [Venia-project](https://github.com/adobe/aem-cif-guides-venia)en overs
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. Voeg de noodzakelijke configuraties OSGi toe zodat kunt u uw AEM instantie met een instantie van Adobe Commerce verbinden of de configuraties toevoegen aan het onlangs-gecreeerd project.
+1. Voeg de noodzakelijke configuraties OSGi toe zodat kunt u uw AEM instantie met een instantie van Adobe Commerce verbinden of de configuraties toevoegen aan het gecreeerde project.
 
 1. Op dit moment hebt u een werkende versie van een winkel die is verbonden met een Adobe Commerce-instantie. Ga naar de `US` > `Home` pagina bij: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -69,7 +69,7 @@ U gaat de [Venia-project](https://github.com/adobe/aem-cif-guides-venia)en overs
 
 De CSS en JavaScript die verantwoordelijk zijn voor het renderen van het thema of de stijlen van de winkel, worden in AEM beheerd door een [clientbibliotheek](/help/implementing/developing/introduction/clientlibs.md) of &quot;clientlibs&quot; voor korte tijd. Clientbibliotheken bieden een mechanisme om CSS en JavaScript in de code van een project te organiseren en vervolgens op de pagina te leveren.
 
-Brand-specifieke stijlen kunnen worden toegepast op AEM CIF Core Components door CSS toe te voegen en met voeten te treden die door deze cliëntbibliotheken wordt geleid. Inzicht in de structuur van clientbibliotheken en de inhoud van deze bibliotheken op de pagina is essentieel.
+Brand-specifieke stijlen kunnen op AEM Componenten van de Kern worden toegepast door CSS toe te voegen en met voeten te treden die door deze cliëntbibliotheken wordt geleid. Inzicht in de structuur van clientbibliotheken en de inhoud van deze bibliotheken op de pagina is essentieel.
 
 De [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) is een speciale [webpack](https://webpack.js.org/) project voor het beheer van alle front-end activa voor een project. Met dit webpakket kunnen ontwikkelaars aan de voorzijde elk aantal talen en technologieën gebruiken, zoals [TypeScript](https://www.typescriptlang.org/), [Soort](https://sass-lang.com/)en nog veel meer.
 
@@ -469,7 +469,7 @@ AEM probeert ook clientbibliotheken in cache te plaatsen voor prestaties. Soms, 
 
 ## Gefeliciteerd {#congratulations}
 
-U hebt uw eerste AEM CIF Core Component opgemaakt en u hebt een webpack-ontwikkelserver gebruikt!
+U hebt uw eerste AEM Core Component opgemaakt en u hebt een webpack Dev-server gebruikt!
 
 ## Bonus Challenge {#bonus-challenge}
 

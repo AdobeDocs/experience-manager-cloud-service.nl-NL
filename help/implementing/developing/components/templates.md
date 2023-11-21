@@ -2,7 +2,7 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 0%
@@ -356,7 +356,7 @@ When creating an editable template, the value is copied from the template type t
 Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, kunt u deze sjabloon kopiëren als een sjabloontype.
 
 1. Een sjabloon maken zoals een paginasjabloon [zoals hier beschreven](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), die als basis voor uw sjabloontype zal dienen.
-1. Kopieer de nieuwe sjabloon met CRXDE Lite van de `templates` aan de `template-types` knooppunt onder [sjabloonmap](#template-folders).
+1. Kopieer de gemaakte sjabloon met CRXDE Lite uit de `templates` aan de `template-types` knooppunt onder [sjabloonmap](#template-folders).
 1. De sjabloon verwijderen uit het dialoogvenster `templates` knooppunt onder [sjabloonmap](#template-folders).
 1. In de kopie van de sjabloon die zich onder de `template-types` knooppunt, alles verwijderen `cq:template` en `cq:templateType` eigenschappen van alle `jcr:content` knooppunten.
 
@@ -595,6 +595,6 @@ Het volgende diagram toont het sjabloonevaluatieproces:
 
 Als u wilt beperken welke sjablonen kunnen worden gebruikt om onderliggende pagina&#39;s onder een bepaalde pagina te maken, gebruikt u de opdracht `cq:allowedTemplates` eigenschap van `jcr:content` knooppunt van de pagina om de lijst op te geven met sjablonen die als onderliggende pagina&#39;s zijn toegestaan. Elke waarde in de lijst moet een absoluut pad zijn naar een sjabloon voor een toegestane onderliggende pagina, bijvoorbeeld `/apps/wknd/templates/page-content`.
 
-U kunt de `cq:allowedTemplates` eigenschap op de sjabloon  `jcr:content` knoop om deze configuratie toe te passen op alle onlangs-gecreeerde pagina&#39;s die dit malplaatje gebruiken.
+U kunt de `cq:allowedTemplates` eigenschap op de sjabloon  `jcr:content` knoop om deze configuratie toe te passen op alle gecreeerde pagina&#39;s die dit malplaatje gebruiken.
 
 Als u meer beperkingen wilt toevoegen, bijvoorbeeld met betrekking tot de sjabloonhiërarchie, kunt u de opdracht `allowedParents/allowedChildren` eigenschappen op de sjabloon. U kunt dan uitdrukkelijk specificeren dat de pagina&#39;s die van een malplaatjeT worden gecreeerd ouderpagina/kinderen van pagina&#39;s moeten zijn die van een malplaatjeT worden gecreeerd.

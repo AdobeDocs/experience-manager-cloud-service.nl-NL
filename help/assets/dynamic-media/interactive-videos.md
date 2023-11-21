@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '5919'
+source-wordcount: '5917'
 ht-degree: 3%
 
 ---
@@ -586,7 +586,7 @@ De bestaande implementatie van QuickView vertegenwoordigt normaal gesproken een 
 1. De achterste logica keert de overeenkomstige gegevens of inhoud van de Snelle mening terug naar de front-end code.
 1. De front-end code laadt de gegevens of de inhoud van de Snelle mening.
 1. Naar keuze, zet de front-end code de geladen gegevens van de Snelle mening in een vertegenwoordiging van HTML om.
-1. De front-end code geeft een modaal dialoogvenster of deelvenster weer en geeft de HTML-inhoud op het scherm weer voor de eindgebruiker.
+1. De front-end code geeft een modaal dialoogvenster of deelvenster weer en geeft de HTML-inhoud op het scherm voor de gebruiker weer.
 
 Deze aanroepen vertegenwoordigen geen onafhankelijke openbare API-aanroepen die door de webpaginalogica kunnen worden aangeroepen vanuit een willekeurige stap. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.
 
@@ -598,7 +598,7 @@ In een dergelijke gebeurtenishandler doet de front-end code het volgende:
 * Hiermee maakt u een URL van de Snelle weergave op basis van de miniatuurgegevens.
 * Triggert het proces om de Snelle mening van het achtereind te laden en het terug te geven op het scherm voor vertoning.
 
-Bovendien ondersteunt de Interactieve Video-viewer de modus Volledig scherm. De eindgebruiker activeert Snelle weergaven door een miniatuur te selecteren zonder het volledige scherm te verlaten. Om deze functionaliteit te bereiken, wijzigt u de front-end code zodat het modale dialoogvenster van de Snelle weergave aan de container van de kijker wordt vastgemaakt. Voeg geen BODY van het document of een ander Webpagina-element toe dat niet beschikbaar is wanneer de kijker op volledig-schermwijze is. De code die deze taak uitvoert, luistert naar een andere viewer-callback die wordt verzonden nadat de viewer op de pagina is geladen.
+Bovendien ondersteunt de Interactieve Video-viewer de modus Volledig scherm. De gebruiker activeert Snelle weergaven door een miniatuur te selecteren zonder het volledige scherm te verlaten. Om deze functionaliteit te bereiken, wijzigt u de front-end code zodat het modale dialoogvenster van de Snelle weergave aan de container van de kijker wordt vastgemaakt. Voeg geen BODY van het document of een ander Webpagina-element toe dat niet beschikbaar is wanneer de kijker op volledig-schermwijze is. De code die deze taak uitvoert, luistert naar een andere viewer-callback die wordt verzonden nadat de viewer op de pagina is geladen.
 
 De insluitcode die door Experience Manager wordt geretourneerd, heeft al een gebruiksklare gebeurtenishandler. Er wordt opmerkingen toegevoegd zoals in het volgende gemarkeerde codefragment wordt getoond:
 

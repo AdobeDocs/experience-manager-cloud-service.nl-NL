@@ -2,9 +2,9 @@
 title: Wat zijn de lay-outmogelijkheden van Adaptive Forms?
 description: De lay-out en vormgeving van Adaptief Forms op verschillende apparaten worden bepaald door de lay-outinstellingen. Begrijp de verschillende lay-outs en hoe te om hen toe te passen.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Met deze lay-out kunt u de **[!UICONTROL Panel Adaptive Form]** in een deelvenster met accordeonstijlnavigatie. Met deze indeling kunt u ook herhaalbare deelvensters maken. Met herhalende deelvensters kunt u, indien nodig, deelvensters dynamisch toevoegen of verwijderen. U kunt het minimum en het maximum aantal keren bepalen dat een paneel herhaalt. De titel van het deelvenster kan ook dynamisch worden bepaald op basis van de informatie in de deelvensteritems.
 
-De summiere uitdrukking kan worden gebruikt om de waarden te tonen die door de eindgebruiker in de titel van het geminimaliseerde paneel worden verstrekt.
+De summiere uitdrukking kan worden gebruikt om de waarden te tonen die door de gebruiker in de titel van het geminimaliseerde paneel worden verstrekt.
 
 ![Herhaalbare deelvensters met de accordeonlay-out in Adaptive Forms](assets/accordion-layout.png)
 

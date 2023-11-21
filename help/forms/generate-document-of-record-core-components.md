@@ -2,9 +2,9 @@
 title: Hoe te om document van verslag voor Adaptive Forms te produceren?
 description: Leer een sjabloon te genereren voor een Document of Record (DoR) voor Adaptive Forms Core Components.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3004'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie. Voer de volgen
 1. Selecteer in het gedeelte Document of Record Template Configuration van het tabblad Formuliermodel de optie **Formuliersjabloon koppelen als Document of Record-sjabloon**. Als u deze optie selecteert, worden alle XFA-sjablonen (XDP-bestanden) die op uw computer beschikbaar zijn, weergegeven. Selecteer het juiste bestand. Zorg er ook voor dat hetzelfde schema (gegevensschema) wordt gebruikt voor Adaptief formulier en geselecteerde XFA-sjabloon (XDP-bestand).
 1. Klik op **[!UICONTROL Done.]**
 
-Het adaptieve formulier is nu geconfigureerd voor het gebruik van een XDP-bestand als sjabloon voor het document of record. De volgende stappen zijn: [Aangepaste formuliercomponenten binden met de bijbehorende sjabloonvelden](#bind-adaptive-form-components-with-template-fields).
+Het adaptieve formulier is nu geconfigureerd voor het gebruik van een XDP-bestand als sjabloon voor het document of record. De volgende stap is: [Aangepaste formuliercomponenten binden met de bijbehorende sjabloonvelden](#bind-adaptive-form-components-with-template-fields).
 
 ## Een op acroform gebaseerd document met records genereren {#generate-an-Acroform-based-document-of-record}
 
@@ -57,7 +57,7 @@ Upload uw Adobe Acrobat PDF (Acroform) naar uw AEM Forms-exemplaar. Voer de volg
 1. Selecteer in het gedeelte Document of Record Template Configuration van het tabblad Formuliermodel de optie **Formuliersjabloon koppelen als Document of Record-sjabloon**. Als u deze optie selecteert, worden alle Acrobat-PDF (Acroform) die op uw computer beschikbaar zijn, weergegeven. Selecteer het formulier dat u wilt gebruiken.
 1. Klik op **[!UICONTROL Done.]**
 
-Het adaptieve formulier is nu geconfigureerd voor het gebruik van een Acrobat-formulier als sjabloon voor het document met records. De volgende stappen zijn: [Aangepaste formuliercomponenten binden met de bijbehorende sjabloonvelden](#bind-adaptive-form-components-with-template-fields).
+Het adaptieve formulier is nu geconfigureerd voor het gebruik van een Acrobat-formulier als sjabloon voor het document met records. De volgende stap is: [Aangepaste formuliercomponenten binden met de bijbehorende sjabloonvelden](#bind-adaptive-form-components-with-template-fields).
 
 ## Automatisch een document met records genereren {#auto-generate-a-document-of-record}
 
@@ -136,7 +136,7 @@ Wanneer het adaptieve formulier wordt verzonden, wordt nu een bijgewerkt documen
 
 Houd rekening met de volgende overwegingen en beperkingen wanneer u werkt aan het Document of Record voor Adaptive Forms.
 
-* Document van de malplaatjes van het Verslag steunt rijke teksten niet. Alle RTF-tekst in het statische adaptieve formulier of in de informatie die door de eindgebruiker is ingevuld, wordt daarom als onbewerkte tekst weergegeven in het Document of Record.
+* Document van de malplaatjes van het Verslag steunt rijke teksten niet. Alle RTF-tekst in het statische adaptieve formulier of in de informatie die de gebruiker heeft ingevuld, wordt daarom als onbewerkte tekst weergegeven in het Document of Record.
 * Documentfragmenten in een adaptief formulier worden niet weergegeven in het Document of Record. Adaptieve formulierfragmenten worden echter wel ondersteund.
 * Inhoudsbinding in het document met records die zijn gegenereerd voor een adaptief formulier op basis van een XML-schema, wordt niet ondersteund.
 * De gelokaliseerde versie van Document van Verslag wordt gecreeerd op bestelling voor een scène wanneer de gebruiker om de teruggave van het Document van Verslag verzoekt. De lokalisatie van Document of Record vindt plaats samen met de lokalisatie van het adaptieve formulier. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->

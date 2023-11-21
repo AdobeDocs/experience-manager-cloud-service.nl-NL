@@ -2,9 +2,9 @@
 title: Hoe kunnen we metagegevens voor AEM Forms beheren?
 description: Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Beide</li> 
-    </ul> <p>Deze optie wordt gebruikt om de weergave-indeling van de formulieren alleen te beperken op het formulierportaal waar deze zichtbaar zijn voor de eindgebruiker.</p> </td> 
+    </ul> <p>Deze optie wordt gebruikt om de weergave-indeling van de formulieren alleen te beperken op de portal Formulieren waar ze zichtbaar zijn voor de gebruiker.</p> </td> 
   </tr> 
   <tr> 
    <td>Tags</td> 

@@ -2,9 +2,9 @@
 title: New Relic One
 description: Meer informatie over de service voor het controleren van de prestaties van New Relic One-toepassingen (APM) voor AEM as a Cloud Service en over hoe u deze service kunt gebruiken.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1726'
 ht-degree: 0%
 
 ---

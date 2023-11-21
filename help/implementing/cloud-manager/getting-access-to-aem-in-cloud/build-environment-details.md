@@ -2,7 +2,7 @@
 title: Build-omgeving
 description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 0%
@@ -157,9 +157,9 @@ Namen van variabelen moeten voldoen aan de volgende conventies.
 * Variabelen mogen alleen alfanumerieke tekens en het onderstrepingsteken (`_`).
 * De namen moeten allemaal hoofdletters zijn.
 * Er is een grens van 200 variabelen per pijpleiding.
-* Elke naam moet uit minder dan 100 tekens bestaan.
+* Elke naam moet 100 tekens of minder zijn.
 * Elk `string` waarde van variabele moet minder dan 2048 tekens zijn.
-* Elk `secretString` waarde van tekstvariabele moet minder dan 500 tekens zijn.
+* Elk `secretString` waarde van tekstvariabele moet maximaal 500 tekens zijn.
 
 Indien gebruikt in een Maven `pom.xml` , is het doorgaans handig om deze variabelen toe te wijzen aan Maven-eigenschappen met een vergelijkbare syntaxis.
 

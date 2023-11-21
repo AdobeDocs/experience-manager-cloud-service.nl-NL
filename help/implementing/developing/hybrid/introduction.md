@@ -2,9 +2,9 @@
 title: SPA Inleiding en Analyse
 description: Dit artikel introduceert de concepten van een SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2065'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Extra ontwerpgereedschappen, zoals het slepen en neerzetten van aanvullende comp
 
 ## Apps en de AEM SPA Editor SPA {#spa-apps-and-the-aem-spa-editor}
 
-Door te ervaren hoe een SPA zich gedraagt voor de eindgebruiker en vervolgens de SPA pagina te inspecteren, kunt u beter begrijpen hoe een SAP-app werkt met de SPA Editor in AEM.
+Door te ervaren hoe een SPA zich gedraagt voor de gebruiker en vervolgens de SPA pagina te inspecteren, kunt u beter begrijpen hoe een SAP-app werkt met de SPA Editor in AEM.
 
 ### Een SPA toepassing gebruiken {#using-an-spa-application}
 

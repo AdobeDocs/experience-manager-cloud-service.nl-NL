@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 5%
@@ -190,7 +190,7 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
    >
    >Wanneer u de afbeeldingsset maakt, kunt u de miniatuur van de afbeeldingsset wijzigen. Of u kunt Experience Managers de miniatuur automatisch laten selecteren op basis van de elementen in de afbeeldingsset. Selecteer een miniatuur door **[!UICONTROL Change thumbnail]** boven het veld Titel op de pagina Editor afbeeldingsset. Selecteer vervolgens een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd, kunt u desgewenst een Experience Manager genereren op basis van de set afbeeldingen. Selecteer **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]**.
 
-1. Klik op **[!UICONTROL Save]**. De nieuwe afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
+1. Klik op **[!UICONTROL Save]**. De gemaakte afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
 ## Afbeeldingssets weergeven {#viewing-image-sets}
 

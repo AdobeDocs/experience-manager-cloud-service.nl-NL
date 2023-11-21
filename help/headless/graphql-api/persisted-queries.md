@@ -3,7 +3,7 @@ title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten voor optimale prestaties. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 1%
@@ -440,7 +440,7 @@ Een pakket maken:
 1. Voer een versienummer in, bijvoorbeeld &quot;1.0&quot;.
 1. Onder **Filters** een nieuwe **Filter**. Gebruik de Finder van de Weg om te selecteren `persistentQueries` onder de configuratie. Bijvoorbeeld voor `wknd` configuratie, het volledige pad is `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tikken **Opslaan** om de nieuwe pakketdefinitie op te slaan en het dialoogvenster te sluiten.
-1. Tik op de knop **Opbouwen** in de nieuw-gecreeerde definitie van het Pakket.
+1. Tik op de knop **Opbouwen** in de gemaakte pakketdefinitie.
 
 Nadat het pakket is gemaakt, kunt u:
 

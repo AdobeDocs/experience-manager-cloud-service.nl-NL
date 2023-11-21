@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Volg de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experienc
 ![AEM Commerce-project](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Bouw en stel het onlangs-gecreeerde AEM project van de Handel aan lokale AEM SDK op door het volgende bevel van de de wortelfolder van het project in werking te stellen.
+Bouw en stel het gecreeerde AEM project van de Handel aan lokale AEM SDK op door het volgende bevel van de wortelfolder van het project in werking te stellen.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -403,11 +403,11 @@ Voer de volgende stappen uit om een DataStream in het Experience Platform te mak
 
    ![AEP-gegevensstromen maken](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Geef uw DataStream een naam met de __Naam__ vereist veld. Onder de __Gebeurtenisschema__ selecteert u het nieuwe schema en klikt u op __Opslaan__.
+1. Geef uw DataStream een naam met de __Naam__ vereist veld. Onder de __Gebeurtenisschema__ veld, selecteer het gemaakte schema en klik op __Opslaan__.
 
    ![AEP definieert gegevensstromen](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. Open de nieuwe DataStream, en klik __Service toevoegen__.
+1. Open de gemaakte DataStream en klik op __Service toevoegen__.
 
    ![AEP-gegevensstreams toevoegen service](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 

@@ -2,7 +2,7 @@
 title: Een externe SPA bewerken in AEM
 description: In dit document worden de aanbevolen stappen beschreven voor het uploaden van een zelfstandige SPA naar een AEM-instantie, het toevoegen van bewerkbare gedeelten van inhoud en het inschakelen van ontwerpen.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 0%
@@ -111,7 +111,7 @@ De `initializationAsync` kan optioneel een `options` object als parameter:
 
    ![Eigenschappen van tekstcomponent](assets/external-spa-text-properties.png)
 
-   Deze waarden worden als eigenschappen doorgegeven aan het nieuwe object `AEMText` React-component en kan worden gebruikt om de inhoud te renderen.
+   Deze waarden worden als eigenschappen doorgegeven aan het gemaakte object `AEMText` React-component en kan worden gebruikt om de inhoud te renderen.
 
    ```javascript
    import React from 'react';
@@ -343,7 +343,7 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
 
 1. Voeg helpers binnen SPA het verpletteren toe.
 
-   * De nieuw gemaakte pagina kan de verwachte inhoud nog niet in AEM weergeven. De reden is omdat de router een weg van verwacht `/test` overwegende dat het AEM actieve pad `/wknd-spa-react/us/en/test`. Om het AEM-specifieke gedeelte van URL aan te passen, moet u sommige helpers op de SPA toevoegen.
+   * De gemaakte pagina kan de verwachte inhoud nog niet in AEM weergeven. De reden is omdat de router een weg van verwacht `/test` overwegende dat het AEM actieve pad `/wknd-spa-react/us/en/test`. Om het AEM-specifieke gedeelte van URL aan te passen, moet u sommige helpers op de SPA toevoegen.
 
    ![Routeringshelper](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
 
 1. Verifieer het uitgeven van de pagina in AEM.
 
-   * Implementeer het project en navigeer naar het nieuwe project `test` pagina. De pagina-inhoud wordt nu gerenderd en AEM componenten kunnen worden bewerkt.
+   * Implementeer het project om het te AEM en naar het gemaakte object te navigeren `test` pagina. De pagina-inhoud wordt nu gerenderd en AEM componenten kunnen worden bewerkt.
 
 ## Kaderbeperkingen {#framework-limitations}
 

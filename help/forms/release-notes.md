@@ -2,9 +2,9 @@
 title: Opmerkingen bij de as a Cloud Service release van AEM Forms
 description: Meer informatie over nieuwe functies, bètareleases, pre-release informatie en meer voor AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 8074c0e9566b679830a56094bc9b47cb22f4bb4a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2024'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service ontvangt voortduren
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-- **Analyses voor Adaptive Forms**: U kunt nu gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) inhoud via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+- **Analyses voor Adaptive Forms**: U kunt nu het gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) bewerkingen via Adobe Analytics for Adaptive Forms om gebruikersinzichten te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms-oct-2021}
 
@@ -52,7 +52,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 - **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu [elke ontvanger van de overeenkomst de mogelijkheid bieden zijn rol in een adaptief formulier te configureren](working-with-adobe-sign.md#addsignerstoanadaptiveform), waarbij Ondertekenaar de standaardrol is.
 
-- **Analyses voor Adaptive Forms**: U kunt nu vastleggen en [eindgebruikersgedrag volgen via Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) voor Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+- **Analyses voor Adaptive Forms**: U kunt nu vastleggen en [gebruikersgedrag via Adobe Analytics volgen](integrate-aem-forms-with-adobe-analytics.md) voor Adaptive Forms om inzichten van gebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
 - **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce**: De dienst verstrekt uit de doos configuratie van de gegevensbron en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ontwikkelaars kunnen Microsoft Dynamics en Salesforce sneller en eenvoudiger configureren als gegevensbronnen voor een adaptief formulier](configure-msdynamics-salesforce.md).
 
@@ -61,7 +61,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 ### Bètafuncties van [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 - **Unified Storage-connector:** Gebruik Unified Storage Connector om procesgegevens in door de klant beheerde opslagruimten extern te maken. Bijvoorbeeld, kunt u in-proces AEM de gegevens van Werkstromen (AEM gegevens van de Variabelen van het Werkschema) opslaan die Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats bevatten.
-  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](aem-forms-cloud-service-communications.md) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    - Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
@@ -90,7 +90,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
   * Enable searching of forms based on a various criteria, such as form properties, metadata, and tags.
 
-  * Lists drafts and submissions related to Adaptive Form created by end user.
+  * Lists drafts and submissions related to Adaptive Form created by user.
 
   -->
 
@@ -110,7 +110,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 - **Unified Storage-connector:** Gebruik Unified Storage Connector om procesgegevens in door de klant beheerde opslagruimten extern te maken. U kunt bijvoorbeeld
 
-   - Schakel de functie Opslaan en hervatten van Forms Portal in en sla adaptieve formulierconcepten op in een gegevensopslagruimte onder klantbeheer.
+   - Schakel de functie Opslaan en hervatten van Forms Portal in en sla adaptieve formulierconcepten op in een gegevensopslagruimte onder beheer van de klant.
    - Sla AEM werkstroomgegevens (AEM gegevens van de Variabelen van het Werkschema) op die Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats bevatten.
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](aem-forms-cloud-service-communications.md) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
@@ -124,7 +124,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 - **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu [elke ontvanger van de overeenkomst de mogelijkheid bieden zijn rol in een adaptief formulier te configureren](working-with-adobe-sign.md#addsignerstoanadaptiveform), waarbij Ondertekenaar de standaardrol is.
 
-- **Analyses voor Adaptive Forms**: U kunt nu het gedrag van eindgebruikers vastleggen en bijhouden via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+- **Analyses voor Adaptive Forms**: U kunt nu gebruikersgedrag vastleggen en bijhouden via Adobe Analytics for Adaptive Forms om inzichten van gebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
 - **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce**: De dienst verstrekt uit de doos configuratie van de gegevensbron en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ontwikkelaars kunnen Microsoft Dynamics en Salesforce sneller en eenvoudiger configureren als gegevensbronnen voor een adaptief formulier](configure-msdynamics-salesforce.md).
 

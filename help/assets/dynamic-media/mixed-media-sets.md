@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 14%
@@ -118,7 +118,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 1. Als u een element wilt verwijderen, schakelt u het desbetreffende selectievakje in en selecteert u **[!UICONTROL Delete Asset]**.
 1. Als u een voorinstelling wilt toepassen, selecteert u **[!UICONTROL Preset]** in de rechterbovenhoek en selecteert u een voorinstelling die u op de elementen wilt toepassen.
-1. Selecteer **[!UICONTROL Save]**. De nieuwe gemengde mediaset wordt weergegeven in de map waarin u deze hebt gemaakt.
+1. Selecteer **[!UICONTROL Save]**. De gemaakte gemengde mediaset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
 ## Gemengde mediasets bewerken {#editing-mixed-media-sets}
 

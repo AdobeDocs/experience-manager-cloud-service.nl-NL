@@ -5,22 +5,22 @@ contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
 
 # 360/VR-video {#vr-video}
 
-In video&#39;s van 360° wordt een weergave in elke richting tegelijkertijd vastgelegd. Ze worden opgenomen met een omnidirectionele camera of een verzameling camera&#39;s. Tijdens het afspelen, op een plat beeldscherm, heeft de gebruiker controle over de kijkhoek; Bij het afspelen op mobiele apparaten worden doorgaans de ingebouwde gyroscopische besturingselementen toegepast.
+In video&#39;s van 360° wordt een weergave in elke richting tegelijkertijd vastgelegd. Ze worden opgenomen met een omnidirectionele camera of een verzameling camera&#39;s. Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; bij het afspelen op mobiele apparaten worden doorgaans de ingebouwde gyroscopische besturingselementen toegepast.
 
 Dynamic Media biedt native ondersteuning voor de levering van 360 video-elementen. Standaard is geen aanvullende configuratie nodig voor weergave of afspelen. U levert 360 Video gebruikend standaardvideouitbreidingen zoals .mp4, .mkv, en .mov. De meest algemene codec is H.264.
 
 Met de 360/VR-videoviewer kunt u rechthoekige video renderen. Het resultaat is een indrukwekkende kijkervaring van een kamer, eigenschap, locatie, landschap, medische procedure enzovoort.
 
-Ruimtelijke audio wordt momenteel niet ondersteund. als audio in stereo wordt gemengd, verandert de balans (L/R) niet aangezien de klant de kijkhoek van de camera verandert.
+Ruimtelijke audio wordt momenteel niet ondersteund. Als audio in stereo wordt gemengd, verandert de balans (L/R) niet omdat de klant de kijkhoek van de camera wijzigt.
 
 Zie [Dynamic Media 360-video&#39;s en aangepaste videominiatuur gebruiken voor AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
@@ -59,14 +59,16 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 
       * 1080p - 1920 x 1080, bekend als Full HD- of FHD-resolutie of,
       * 2160p - 3840 x 2160, bekend als 4k, UHD of Ultra HD-resolutie. Deze grote weergaveresolutie wordt meestal aangetroffen op hoogwaardige televisies en computermonitoren. De resolutie van 2160p wordt vaak &#39;4k&#39; genoemd omdat de breedte dichtbij 4000 pixels ligt. Met andere woorden, het biedt vier keer de pixels van 1080p.
+
    * [Een aangepast adaptief videoprofiel maken](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) met uitvoeringen van hogere kwaliteit. U kunt bijvoorbeeld een adaptief videoprofiel maken dat de volgende drie instellingen bevat:
 
-      * Breedte=automatisch; Hoogte=720; Bitsnelheid=2500 kbps
-      * Breedte=automatisch; Height=1080; Bitsnelheid=5000 kbps
-      * Breedte=automatisch; Hoogte=1440; Bitsnelheid=6600 kbps
+      * Width=auto; Height=720; Bitsnelheid=2500 kbps
+      * Breedte=automatisch; Hoogte=1080; Bitsnelheid=5000 kbps
+      * Breedte=auto; Hoogte=1440; Bitsnelheid=6600 kbps
+
    * Verwerk 360-video-inhoud in een map die exclusief is bestemd voor 360 video-elementen.
 
-   Deze benadering plaatst grotere eisen op het netwerk en cpu van het eind - gebruiker.
+   Deze benadering plaatst grotere eisen op het netwerk en cpu van de gebruiker.
 
 1. [Uw video uploaden naar de map](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
@@ -93,7 +95,7 @@ Start by uploading 360 Videos.
 
 ## Voorvertoning 360-video {#previewing-video}
 
-Met Voorvertoning kunt u zien hoe uw 360-video er uitziet voor klanten en kunt u controleren of deze zich gedraagt zoals u had verwacht.
+Met Voorvertoning kunt u zien hoe uw 360-video er uitziet voor klanten en kunt u controleren of deze goed functioneert.
 
 Zie ook [Viewer-voorinstellingen bewerken](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
 
@@ -111,7 +113,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-me
 
    Selecteer het 360-video-element om een voorvertoning van de video weer te geven.
 
-1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer vervolgens **[!UICONTROL Viewers]**.
+1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
 
    ![Screenshot van het selecteren van Viewers om de lijst met beschikbare videoviewers weer te geven.](assets/6_5_360video-preview-viewers.png)
 
@@ -124,7 +126,8 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-me
 
    * Selecteer in de lijst Viewers de optie **[!UICONTROL Video360VR]**.
 
-      VR-video (Virtual Reality) is overweldigende video-inhoud die wordt benaderd met headsets van virtuele realiteit. Net als bij gewone video&#39;s maakt u aan het begin VR-video&#39;s wanneer een video wordt opgenomen of vastgelegd met videocamera&#39;s van 360°.
+     VR-video (Virtual Reality) is overweldigende video-inhoud die wordt benaderd met headsets van virtuele realiteit. Net als bij gewone video&#39;s maakt u aan het begin VR-video&#39;s wanneer een video wordt opgenomen of vastgelegd met videocamera&#39;s van 360°.
+
    ![Screenshot van een gebruiker die de muisaanwijzer boven de Viewer-optie Video360VR houdt.](assets/6_5_360video-preview-video360vr.png)
    *Een videoschermafbeelding van 360 VR.*
 

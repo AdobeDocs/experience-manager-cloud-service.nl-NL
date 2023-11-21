@@ -1,8 +1,8 @@
 ---
 title: ContextHub
-description: ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens
+description: ContextHub is een kader om, contextgegevens op te slaan te manipuleren en voor te stellen
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De [ContextHub-werkbalk](/help/sites-cloud/authoring/personalization/contexthub.
 Elke module ContextHub UI is een geval van een vooraf bepaald moduletype:
 
 * ContextHub biedt verschillende [voorbeeldmoduletypen](sample-modules.md).
-* Consoles AEM gebruiken voor [UI-modules toevoegen](configuring-contexthub.md#adding-a-ui-module)en [groeperen hen in wijzen UI](configuring-contexthub.md#adding-a-ui-mode).
+* Consoles AEM gebruiken voor [UI-modules toevoegen](configuring-contexthub.md#adding-a-ui-module), en [groeperen hen in wijzen UI](configuring-contexthub.md#adding-a-ui-mode).
 * Ontwikkelaars kunnen [aangepaste moduletypen maken](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 Ontwikkelaars moeten [Voeg de component ContextHub aan de pagina toe](configuring-contexthub.md).
@@ -40,7 +40,7 @@ De opslag ContextHub handhaaft contextgegevens over de cliënt. Met de JavaScrip
 Elke opslag ContextHub is een geval van een vooraf bepaald opslagtype:
 
 * ContextHub biedt verschillende [voorbeeldwinkeltypen](sample-stores.md).
-* Consoles AEM gebruiken voor [winkels maken](configuring-contexthub.md#creating-a-contexthub-store).
+* Consoles AEM gebruiken voor [opslaan maken](configuring-contexthub.md#creating-a-contexthub-store).
 * Ontwikkelaars kunnen [aangepaste winkeltypen maken](extending-contexthub.md#creating-custom-store-candidates).
 * Ontwikkelaars kunnen [toegang opslaggegevens](adding-contexthub.md#interacting-with-contexthub-stores) in JavaScript.
 

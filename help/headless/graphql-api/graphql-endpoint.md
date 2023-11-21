@@ -3,9 +3,9 @@ title: GraphQL-eindpunten beheren in AEM
 description: Leer hoe u GraphQL-eindpunten in Adobe Experience Manager as a Cloud Service beheert voor levering van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Om het overeenkomstige eindpunt toe te laten:
    >* *GraphQL-eindpunten kunnen problemen met gegevensbeveiliging en -prestaties veroorzaken als deze niet zorgvuldig worden beheerd. Zorg ervoor dat de aangewezen toestemmingen na het creëren van een eindpunt worden geplaatst.*
 
 1. Bevestigen met **Maken**.
-1. De **Volgende stappen** de dialoog zal een directe verbinding aan de console van de Veiligheid verstrekken zodat u kunt ervoor zorgen dat het onlangs-gecreeerde eindpunt geschikte toestemmingen heeft.
+1. De **Volgende stappen** de dialoog zal een directe verbinding aan de console van de Veiligheid verstrekken zodat u kunt ervoor zorgen dat het gecreeerde eindpunt geschikte toestemmingen heeft.
 
    >[!CAUTION]
    >

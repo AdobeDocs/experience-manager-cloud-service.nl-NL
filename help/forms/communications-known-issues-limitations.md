@@ -2,9 +2,9 @@
 title: Wat zijn overwegingen, bekende kwesties en beste praktijken in AEM Forms?
 description: Bekende problemen en best practices voor AEM Forms Communication API's in overweging nemen.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ In de volgende tabel worden XCI-opties opgegeven.
 
 ## Best practices voor
 
-* Adobe raadt aan gegevensbestanden op te slaan in een blob-containerarchief in het cloudgebied dat door AEM Cloud Service wordt gebruikt.
+* Adobe raadt u aan gegevensbestanden in de blob-containeropslag te hosten in het cloudgebied dat door AEM Cloud Service wordt gebruikt.
 
 ## Veelgestelde vragen {#faq}
 

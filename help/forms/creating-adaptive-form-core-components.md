@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2229'
 ht-degree: 0%
@@ -85,7 +85,7 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
    * **Formuliergegevensmodel**: A [Formuliergegevensmodel](data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen tot een adaptief formulier. Kies Formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
 
-   * **JSON Schema**: [JSON-schema](adaptive-form-json-schema-form-model.md) Met ons adaptieve formulier op basis van Core-Components kunt u naadloze integratie tot stand brengen met het back-end systeem van uw organisatie door de mogelijkheid te bieden om een JSON-schema te koppelen, dat de structuur vertegenwoordigt van de gegevens die worden geproduceerd of verbruikt. Met deze koppeling kunnen auteurs dynamisch inhoud toevoegen aan het adaptieve formulier met behulp van de elementen van het schema. De elementen van het schema zijn tijdens het ontwerpproces gemakkelijk toegankelijk op het tabblad Gegevensmodelobjecten van de inhoudbrowser en alle velden worden automatisch toegevoegd aan elk nieuw gemaakt adaptief formulier.
+   * **JSON Schema**: [JSON-schema](adaptive-form-json-schema-form-model.md) Met ons adaptieve formulier op basis van Core-Components kunt u naadloze integratie tot stand brengen met het back-end systeem van uw organisatie door de mogelijkheid te bieden om een JSON-schema te koppelen, dat de structuur vertegenwoordigt van de gegevens die worden geproduceerd of verbruikt. Met deze koppeling kunnen auteurs dynamisch inhoud toevoegen aan het adaptieve formulier met behulp van de elementen van het schema. De elementen van het schema zijn tijdens het ontwerpproces gemakkelijk toegankelijk op het tabblad Gegevensmodelobjecten van de inhoudbrowser en alle velden worden automatisch toegevoegd aan elk gemaakt adaptief formulier.
 
    Standaard worden alle velden van het gekoppelde JSON-schema automatisch geselecteerd en geconverteerd naar de overeenkomstige componenten van het adaptieve formulier, waardoor het ontwerpproces wordt gestroomlijnd. De wizard biedt het extra gebruiksgemak waarmee u via selectievakjes kunt kiezen welke velden in het adaptieve formulier moeten worden opgenomen.
 

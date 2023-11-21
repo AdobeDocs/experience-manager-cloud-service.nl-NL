@@ -2,7 +2,7 @@
 title: Modellen voor inhoudsfragmenten maken - Instellingen zonder kop
 description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 
 1. Wanneer u klaar bent met het samenstellen van uw model, selecteert u **Opslaan**.
 
-1. De modus van het nieuwe model is afhankelijk van of u **Model inschakelen** bij het maken van het model:
+1. De modus van het gemaakte model is afhankelijk van of u **Model inschakelen** bij het maken van het model:
    * geselecteerd - het nieuwe model zal reeds worden geselecteerd **Ingeschakeld**
    * niet geselecteerd - het nieuwe model wordt gecreeerd in **Concept** mode
 

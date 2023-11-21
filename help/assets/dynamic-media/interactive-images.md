@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4142'
+source-wordcount: '4141'
 ht-degree: 1%
 
 ---
@@ -378,7 +378,7 @@ De bestaande implementatie van QuickView vertegenwoordigt normaal gesproken een 
 1. De achterste logica keert de overeenkomstige gegevens of inhoud van de Snelle mening terug naar de front-end code.
 1. De front-end code laadt de gegevens of de inhoud van de Snelle mening.
 1. Naar keuze, zet de front-end code de geladen gegevens van de Snelle mening in een vertegenwoordiging van HTML om.
-1. De front-end code geeft een modaal dialoogvenster of deelvenster weer en geeft de HTML-inhoud op het scherm weer voor de eindgebruiker.
+1. De front-end code geeft een modaal dialoogvenster of deelvenster weer en geeft de HTML-inhoud op het scherm voor de gebruiker weer.
 
 Deze vraag vertegenwoordigt niet noodzakelijk onafhankelijke openbare API vraag die door de Web-pagina logica van een willekeurige stap wordt geroepen. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.
 

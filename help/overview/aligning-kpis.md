@@ -2,9 +2,9 @@
 title: KPI's uitlijnen
 description: Leer hoe te om juiste KPIs voor uw AEM implementatie te kiezen
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ In een digitale wereld kun je bijna alles meten. Als u drie KPI&#39;s kiest voor
 
 1. **Bepaal op basis van uw doelstellingen uw doelen.** Uw doelstellingen zijn de specifieke resultaten die u wilt bereiken door Experience Manager als uw platform voor inhoudsbeheer aan te nemen. Als uw doelstelling is om online opbrengst te groeien, zou uw doel kunnen zijn om een 2 punttoename in omzetting voor alle pagina&#39;s met marketing inhoud te bereiken. Als u uw operationele uitgaven wilt verlagen, kunt u de productiviteit van teams die digitale inhoud maken met 20% verhogen.
 
-   Idealiter heeft elk doel een basisnummer, zoals de huidige conversiesnelheid voor een specifieke paginacategorie. Basisnummers met betrekking tot bezoeken ter plaatse of conversie of online-inkomsten zijn relatief gemakkelijk te vinden. Voor doelstellingen met betrekking tot productiviteit of tijd aan markt, vergt het waarschijnlijk wat werk om een basislijn te berekenen. Het is echter de moeite waard, omdat heldere doelen u helpen meer waarde te krijgen van uw investering in Experience Manager.
+   Idealiter heeft elk doel een basisnummer, zoals de huidige conversiesnelheid voor een specifieke paginacategorie. Basisnummers met betrekking tot bezoeken ter plaatse of conversie of online-inkomsten zijn relatief gemakkelijk te vinden. Voor doelstellingen met betrekking tot productiviteit of tijd aan markt, vergt het waarschijnlijk wat werk om een basislijn te berekenen. Het is echter de moeite waard, omdat duidelijke doelen u helpen meer waarde te krijgen van uw investering in Experience Manager.
 
 1. **Voor elk doel, identificeer prestatiesindicatoren.** Het kan bijvoorbeeld uw doel zijn om de juridische kosten voor DRM-overtredingen met $100.000 te verlagen. Een goede prestatie-indicator kan zijn &quot;100% van de verlopen elementen worden verwijderd uit digitale eigenschappen op of vóór de vervaldatum.&quot; Probeer om met veelvoudige indicatoren voor elk doel te komen. Als u met 2-3 bedrijfsdoelstellingen en 3-5 doelstellingen bent begonnen, zou u een lijst van 15-20 prestatiesindicatoren kunnen hebben.
 

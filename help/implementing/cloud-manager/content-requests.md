@@ -2,9 +2,9 @@
 title: Inhoudsverzoeken van Cloud Servicen begrijpen
 description: Als u licenties voor inhoudsaanvragen van Adobe hebt aangeschaft, leert u meer over de typen inhoudsaanvragen die Adobe Experience Cloud als een service meet en over de verschillen met de analytische rapportagehulpprogramma's van een organisatie.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ## Variaties in aanvragen voor inhoud van Cloud Servicen{#content-requests-variances}
 
-De Verzoeken van de inhoud kunnen variaties met Analytics van een organisatie hebben rapporteringshulpmiddelen zoals samengevat in de volgende lijst. In het algemeen, hulpmiddelen van de Analyse die gegevens via cliënt-zijinstrumentatie verzamelen <b>mag niet worden gebruikt</b> rapporteren over het aantal inhoudsaanvragen voor een bepaalde site, simpelweg omdat deze vaak afhankelijk zijn van de toestemming van de eindgebruiker om in werking te treden, waardoor ze ontbreken op een aanzienlijk deel van het verkeer. De hulpmiddelen van de analyse die gegevensserver-kant in logboekdossiers verzamelen, of CDN- rapporten voor klanten die hun eigen CDN bovenop AEM as a Cloud Service toevoegen, zullen betere tellingen verstrekken. Voor het melden van paginaweergaven en de bijbehorende prestaties is de Adobe RUM Data Service de aanbevolen optie voor de Adobe.
+De Verzoeken van de inhoud kunnen variaties met Analytics van een organisatie hebben rapporteringshulpmiddelen zoals samengevat in de volgende lijst. In het algemeen, hulpmiddelen van de Analyse die gegevens via cliënt-zijinstrumentatie verzamelen <b>mag niet worden gebruikt</b> rapporteren over het aantal verzoeken om inhoud voor een bepaalde site, simpelweg omdat deze vaak afhankelijk zijn van de toestemming van de gebruiker om in werking te treden, waardoor ze ontbreken voor een aanzienlijk deel van het verkeer. De hulpmiddelen van de analyse die gegevensserver-kant in logboekdossiers verzamelen, of CDN- rapporten voor klanten die hun eigen CDN bovenop AEM as a Cloud Service toevoegen, zullen betere tellingen verstrekken. Voor het melden van paginaweergaven en de bijbehorende prestaties is de Adobe RUM Data Service de aanbevolen optie voor de Adobe.
 
 | Reden voor variantie | Toelichting |
 |---|---|
-| Goedkeuring eindgebruiker | Analytische hulpmiddelen die afhankelijk zijn van instrumentvermelding aan de clientzijde zijn vaak afhankelijk van de toestemming van de eindgebruiker om te worden geactiveerd. Dit zou de meerderheid van het verkeer kunnen vertegenwoordigen dat niet wordt gevolgd. Voor klanten die inhoudsverzoeken op hun willen meten, wordt het geadviseerd om zich op analysehulpmiddelen te baseren die gegevensserver-kant of CDN- rapporten verzamelen. |
+| Goedkeuring eindgebruiker | Analytische hulpmiddelen die afhankelijk zijn van instrumentvermelding op de client zijn vaak afhankelijk van de toestemming van de gebruiker om te worden geactiveerd. Dit zou de meerderheid van het verkeer kunnen vertegenwoordigen dat niet wordt gevolgd. Voor klanten die inhoudsverzoeken op hun willen meten, wordt het geadviseerd om zich op analysehulpmiddelen te baseren die gegevensserver-kant of CDN- rapporten verzamelen. |
 | Tags | Alle pagina&#39;s of API-aanroepen die worden bijgehouden als Adobe Experience Manager-inhoudsaanvragen (AEM), worden mogelijk niet gelabeld met Analytics tracking. |
 | Tag Management-regels | Instellingen voor regels voor het beheer van tags kunnen leiden tot verschillende configuraties voor gegevensverzameling op een pagina. Dit leidt tot enige combinatie van verschillen met het bijhouden van de inhoudsaanvraag. |
 | Bots | Onbekende bots die niet vooraf zijn geïdentificeerd en door AEM zijn verwijderd, kunnen verschillen in het bijhouden van gegevens veroorzaken. |

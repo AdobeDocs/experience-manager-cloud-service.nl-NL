@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ De volgende release (2020.11.0) vindt plaats op 1 december 2020.
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analyses voor Adaptive Forms**: U kunt nu het gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) inhoud via Adobe Analytics voor Adaptive Forms om inzichten van eindgebruikers te verzamelen. Zakelijke gebruikers kunnen op basis van de verzamelde inzichten beslissingen nemen over aangepaste formulierinhoud, lay-out en stijl.
+* **Analyses voor Adaptive Forms**: U kunt nu het gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) gegevens via Adobe Analytics for Adaptive Forms om gebruikersinzichten te verzamelen. Zakelijke gebruikers kunnen op basis van de verzamelde inzichten beslissingen nemen over aangepaste formulierinhoud, lay-out en stijl.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms-oct-2021}
 
@@ -63,15 +63,15 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Uitgebrachte CIF Venia Reference Site - 2020.10.2 met de nieuwste versie van CIF Core Components v1.4.0. Zie [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) voor meer informatie .
+* Release CIF Venia Reference Site - 2020.10.2 die de nieuwste versie CIF Core Components versie v1.4.0 bevat. Zie [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) voor meer informatie .
 
-* Uitgebrachte CIF Core Components v1.4.0. Zie [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) voor meer informatie .
+* Uitgegeven CIF Core Components v1.4.0. Zie [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) voor meer informatie .
 
 ### Opgeloste problemen {#bug-fixes-commerce}
 
 * GraphQL-aanvragen die zich in de productconsole bevonden en Pickers werden uitgevoerd via HTTP-POST. Deze kwestie is opgelost om ervoor te zorgen dat de cliënt van Apollo GraphQL het plaatsen in de cliëntOSGi van GraphQL configuratie respecteert om GET verzoeken te steunen als gevormd.
 
-* De configuratiegebruikersinterface van de CIF-cloud gaf de knoppen &quot;Opslaan en sluiten&quot; weer voor configuraties in /lib en /apps/. Maar deze interfaces zijn read-only vandaar UI vast om &quot;dicht&quot;knoop slechts te tonen.
+* CIF Cloud config UI toonde &quot;sparen &amp; dicht&quot;knopen voor vormen in /lib en /apps/. Maar deze interfaces zijn read-only vandaar UI vast om &quot;dicht&quot;knoop slechts te tonen.
 
 ## Cloud Manager {#cloud-manager}
 

@@ -2,7 +2,7 @@
 title: Sandbox-programma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen sandboxprogramma te maken voor training, demo, POC of andere niet-productiedoeleinden.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -49,7 +49,7 @@ U ziet een nieuwe zandbakprogrammakaart op de landingspagina met een statusindic
 
 U kunt de details van uw zandbakopstelling bekijken en tot het milieu (zodra beschikbaar) toegang hebben door de pagina van het programmaoverzicht te bekijken.
 
-1. Klik op de landingspagina van Cloud Manager op de knop voor weglatingen in het zojuist gemaakte programma.
+1. Klik op de landingspagina van Cloud Manager op de knop voor weglatingen in het gemaakte programma.
 
    ![Overzicht van programma openen](assets/program-overview-sandbox.png)
 

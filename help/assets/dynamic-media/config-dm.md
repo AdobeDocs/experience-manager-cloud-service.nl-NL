@@ -4,7 +4,7 @@ description: Leer hoe u Dynamic Media in Adobe Experience Manager as a Cloud Ser
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3558'
 ht-degree: 2%
@@ -84,7 +84,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    Het nieuwe wachtwoord wordt opgeslagen wanneer u **[!UICONTROL Save]** in de rechterbovenhoek van het **[!UICONTROL Create Dynamic Media Configuration]** pagina.
 
-   Als u **[!UICONTROL Cancel]** in de **[!UICONTROL Change Password]** moet u nog steeds een nieuw wachtwoord invoeren wanneer u de nieuwe Dynamic Media-configuratie opslaat.
+   Als u **[!UICONTROL Cancel]** in de **[!UICONTROL Change Password]** moet u nog steeds een nieuw wachtwoord invoeren wanneer u de gemaakte Dynamic Media-configuratie opslaat.
 
    Zie ook [Het wachtwoord wijzigen in Dynamic Media](#change-dm-password).
 

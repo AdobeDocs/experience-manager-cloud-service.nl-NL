@@ -4,9 +4,9 @@ description: Met Forms-gerichte workflows kunt u snel adaptieve, op Forms gebase
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Gebruik AEM werkstromen, gebruik taakstappen, zet om in stap PDF/A, produceer document van geregistreerde stap, gebruik werkschema's, de stap van het Document van het Ondertekenen, produceer gedrukte outputstap, produceer niet interactieve PDF output
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6793'
+source-wordcount: '6797'
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **[!UICONTROL Priority]**: De geselecteerde prioriteit wordt weergegeven in het AEM Inbox. De beschikbare opties zijn Hoog, Normaal en Laag. De standaardwaarde is Normaal.
 * **[!UICONTROL Due Date]**: Geef het aantal dagen of uren op waarna de taak achterstallig is. Als u **[!UICONTROL Off]** En dan is de taak nooit achterstallig. U kunt ook een time-outhandler opgeven om specifieke taken uit te voeren nadat de taak is uitgevoerd.
 
-* **[!UICONTROL Days]**: Het aantal dagen vóór de voltooiing van de taak. Het aantal dagen wordt geteld nadat de taak aan een gebruiker is toegewezen. Als een taak niet volledig is en het aantal dagen overschrijdt specificeert op het gebied van Dagen, dan, als geselecteerd, wordt een onderbrekingsmanager teweeggebracht na de vervaldatum.
-* **[!UICONTROL Hours]**: Het aantal uren voordat de taak moet worden voltooid. Het aantal uren wordt geteld nadat de taak aan een gebruiker wordt toegewezen. Als een taak niet volledig is en het aantal uren overschrijdt specificeert op het gebied van Uren, dan, als geselecteerd, wordt een onderbrekingsmanager teweeggebracht na de verschuldigde uren.
+* **[!UICONTROL Days]**: Het aantal dagen vóór de voltooiing van de taak. Het aantal dagen wordt geteld nadat de taak aan een gebruiker is toegewezen. Als een taak niet volledig is en het aantal dagen overschrijdt die in het gebied van Dagen worden gespecificeerd, dan als het wordt geselecteerd, wordt een onderbrekingsmanager teweeggebracht na de correcte datum.
+* **[!UICONTROL Hours]**: Het aantal uren voordat de taak moet worden voltooid. Het aantal uren wordt geteld nadat de taak aan een gebruiker wordt toegewezen. Als een taak niet volledig is en het aantal uren overschrijdt specificeert op het gebied van Uren, dan als het wordt geselecteerd, wordt een onderbrekingsmanager teweeggebracht na de verschuldigde uren.
 * **[!UICONTROL Time-out after Due Date]**: Selecteer deze optie om het selectieveld Tijdlijnhandler in te schakelen.
 * **[!UICONTROL Timeout Handler]**: Selecteer het script dat moet worden uitgevoerd wanneer de taakstap voor toewijzen de vervaldatum overschrijdt. Scripts geplaatst in de CRX-opslagplaats op [apps]/fd/dashboard/scripts/timeoutHandler zijn beschikbaar voor selectie. Het opgegeven pad bestaat niet in de crx-gegevensopslagruimte. Een beheerder maakt het pad voordat het wordt gebruikt.
 * **[!UICONTROL Highlight the action and comment from the last task in Task Details]**: Selecteer deze optie om de laatste actie weer te geven die is uitgevoerd en de opmerking die is ontvangen in de sectie met taakdetails van een taak.

@@ -2,7 +2,7 @@
 title: Generieke Lucene-index verwijderen
 description: Leer over de geplande verwijdering van generische indexen van Lucene en hoe u kan worden beïnvloed.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -154,6 +154,7 @@ Voordat de generieke Lucene-index wordt verwijderd, moet de `pathfield` wordt bi
 >[!NOTE]
 >
 >De Inhoudsfragmentmodeleditor gebruikt een speciaal padveld met het brontype Sling `dam/cfm/models/editor/components/contentreference`.
+>
 > * Momenteel voeren deze vragen zonder gespecificeerde knooptypes uit, resulterend in WARN die wegens gebruik van de generische index van Lucene worden geregistreerd.
 > * Instanties van deze componenten worden binnenkort automatisch standaard `cq:Page` en `dam:Asset` knooptypes zonder verdere klantenactie.
 > * De `nodeTypes` Deze eigenschap kan worden toegevoegd om deze standaardknooppunttypen te overschrijven.
@@ -167,6 +168,6 @@ De Adobe zal een bifasenbenadering nemen om de generische index van Lucene te ve
 
 De Adobe zal de hierboven vermelde logboekberichten controleren en zal proberen om klanten te contacteren die van de generische index van Lucene afhankelijk blijven.
 
-Als kortetermijnmatiging, zal de Adobe de definities van de douaneindex direct aan klantensystemen toevoegen om functionele of prestatieskwesties als resultaat van de verwijdering van de generische index van Lucene zonodig te verhinderen.
+Als kortetermijnmatiging, voegt de Adobe de definities van de douaneindex aan klantensystemen direct toe om functionele of prestatieskwesties als resultaat van de verwijdering van de generische index van Lucene zonodig te verhinderen.
 
-In dergelijke gevallen krijgt de klant de bijgewerkte indexdefinitie en wordt hem geadviseerd deze op te nemen in toekomstige versies van zijn toepassing via Cloud Manager.
+In dergelijke gevallen krijgt de klant de bijgewerkte indexdefinitie te zien en wordt hem geadviseerd deze in toekomstige versies van zijn toepassing via Cloud Manager op te nemen.

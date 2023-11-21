@@ -2,7 +2,7 @@
 title: Hoe kan ik een lokale ontwikkelomgeving opzetten voor AEM Forms?
 description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2840'
 ht-degree: 1%
@@ -286,7 +286,7 @@ Voer de volgende stappen uit om lokale Dispatcher te vormen en dan Forms-specifi
 
 ### Lokale verzender instellen {#setup-local-dispatcher}
 
-De [!DNL Experience Manager] as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools, waarmee u Dispatcher lokaal kunt configureren, valideren en simuleren. De Hulpmiddelen van de afzender zijn op docker-Gebaseerde en verstrekken bevel-lijn hulpmiddelen om de configuratiedossiers van de Server en van de Verzender van het Web van Apache HTTP in een compatibel formaat te transpileren en hen op Verzender op te stellen die in de container van het Docker lopen.
+De [!DNL Experience Manager] as a Cloud Service SDK bevat de aanbevolen versie van Dispatcher Tools voor het lokaal configureren, valideren en simuleren van Dispatcher. De Hulpmiddelen van de afzender zijn op docker-Gebaseerde en verstrekken bevel-lijn hulpmiddelen om de configuratiedossiers van de Server en van de Verzender van het Web van Apache HTTP in een compatibel formaat te transpileren en hen op Verzender op te stellen die in de container van het Docker lopen.
 
 Caching op Dispatcher staat [!DNL AEM Forms] om Adaptieve Forms vooraf in te vullen op een client. Het verbetert de rendersnelheid van voorgevulde formulieren.
 
@@ -298,7 +298,7 @@ Voer de volgende stappen uit om de Dispatcher-cache voor Experience Manager Form
 
 1. Open uw AEM Project en navigeer naar `\src\conf.dispatcher.d\available_farms`
 1. Maak een kopie van het dialoogvenster `default.farm` bestand. Bijvoorbeeld, `forms.farm`.
-1. Open het nieuwe ontwerp `forms.farm` bestand voor bewerken en vervangen van de volgende code:
+1. Het gemaakte bestand openen `forms.farm` bestand voor bewerken en vervangen van de volgende code:
 
    ```json
    #/ignoreUrlParams {

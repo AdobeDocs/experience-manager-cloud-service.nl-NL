@@ -2,9 +2,9 @@
 title: Werken met uw eigen GitHub-opslagplaatsen in Cloud Manager
 description: Leer hoe te de Manager van de opstelling Cloud om met uw eigen bewaarplaatsen te werken GitHub.
 feature: Release Information
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Cloud Manager weet nu van uw bewaarplaats GitHub, maar het heeft nog toegang tot
 
 De app kan worden geïnstalleerd en een geheim bestand kan in elke willekeurige volgorde worden gemaakt. Beide stappen moeten echter worden uitgevoerd voordat u de validatie kunt uitvoeren.
 
-Tot de validatie wordt de repository weergegeven met een rood pictogram dat aangeeft dat deze nog niet is gevalideerd en nog niet kan worden gebruikt.
+Tot de validatie wordt de repository weergegeven met een rood pictogram dat aangeeft dat het nog niet is gevalideerd en nog niet kan worden gebruikt.
 
 ![Niet-gevalideerde repo](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 

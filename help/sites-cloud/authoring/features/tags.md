@@ -2,7 +2,7 @@
 title: Tags gebruiken
 description: Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 6%
@@ -47,7 +47,7 @@ Net als bij de manier waarop u pagina&#39;s kunt publiceren en de publicatie erv
 
 * Afzonderlijke tags activeren.
 
-  Net als bij pagina&#39;s moeten nieuwe tags worden geactiveerd voordat deze beschikbaar komen in de publicatieomgeving.
+  Net als bij pagina&#39;s moeten gemaakte tags worden geactiveerd voordat deze beschikbaar komen in de publicatieomgeving.
 
 >[!NOTE]
 >

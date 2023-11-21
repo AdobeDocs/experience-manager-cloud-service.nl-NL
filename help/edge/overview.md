@@ -3,9 +3,9 @@ title: Aan de slag met Edge Delivery Services
 description: Aan de slag met Edge Delivery Services (EDS).
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '863'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ U kunt Edge Delivery Services ook gebruiken met Adobe Target, Analytics en Launc
 
 ## Toegang tot Edge Delivery Services krijgen {#getting-access}
 
-Het is eenvoudig om aan de slag te gaan met Edge Delivery Services. Ga aan de slag met het volgende [Aan de slag - Zelfstudie voor ontwikkelaars](https://www.hlx.live/developer/tutorial).
+Het is eenvoudig om met Edge Delivery Services aan de slag te gaan. Ga aan de slag met het volgende [Aan de slag - Zelfstudie voor ontwikkelaars](https://www.hlx.live/developer/tutorial).
 
 ## Help van Adobe ophalen {#adobe-gethelp}
 

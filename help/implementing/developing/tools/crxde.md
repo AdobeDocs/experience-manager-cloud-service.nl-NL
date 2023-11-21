@@ -2,9 +2,9 @@
 title: CRXDE Lite gebruiken
 description: CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toegang te krijgen tot en wijzigingen aan te brengen in de opslagruimte in uw lokale ontwikkelomgevingen in de browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ U kunt het knooppunt nu aan uw behoeften aanpassen door eigenschappen te wijzige
 >
 De meeste bewerkingen, inclusief **Knooppunt maken**, houdt alle wijzigingen in het geheugen bij en slaat deze alleen op in de opslagplaats bij het opslaan (met de [**Alle knoppen opslaan**](#save-all-button)). Sommige bewerkingen, zoals verplaatsen, worden echter automatisch voortgezet.
 >
-De validatie met betrekking tot of het nieuwe knooppunt wordt toegestaan door het knooppunttype van het bovenliggende knooppunt, wordt ook uitgevoerd door de gegevensopslagruimte wanneer wijzigingen worden opgeslagen. Als u een foutbericht ontvangt tijdens het opslaan van een knooppunt, controleert u of de inhoudsstructuur geldig is (u kunt bijvoorbeeld geen `nt:unstructured` knooppunt als onderliggend element van `nt:folder` knooppunt).
+De validatie met betrekking tot of het gemaakte knooppunt wordt toegestaan door het knooppunttype van het bovenliggende knooppunt, wordt ook uitgevoerd door de gegevensopslagruimte wanneer wijzigingen worden opgeslagen. Als u een foutbericht ontvangt tijdens het opslaan van een knooppunt, controleert u of de inhoudsstructuur geldig is (u kunt bijvoorbeeld geen `nt:unstructured` knooppunt als onderliggend element van `nt:folder` knooppunt).
 
 ## Een eigenschap maken {#creating-a-property}
 

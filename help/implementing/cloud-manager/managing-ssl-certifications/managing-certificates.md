@@ -2,9 +2,9 @@
 title: SSL-certificaten beheren
 description: Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Ga als volgt te werk om een SSL-certificaat te verwijderen.
 
 ## Bestaande CDN-configuraties {#pre-existing-cdn}
 
-Als u een reeds bestaande CDN configuratie voor uw SSL certificaat hebt, is er een informatief bericht op het **SSL-certificaten** , waarbij u wordt aangemoedigd deze configuraties toe te voegen via de gebruikersinterface, zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
+Als u een reeds bestaande CDN configuratie voor uw SSL certificaat hebt, is er een informatief bericht op **SSL-certificaten** , waarbij u wordt aangemoedigd deze configuraties toe te voegen via de gebruikersinterface, zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
 
 Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 

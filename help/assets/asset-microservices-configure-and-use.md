@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 1%
@@ -246,7 +246,7 @@ Als naverwerking niet nodig is, maakt en gebruikt u een &quot;leeg&quot; workflo
    * Titel: Auto-start Workflow uitschakelen
    * Naam: disable-auto-start-workflow
 1. Selecteren __Gereed__ om het workflowmodel te maken
-1. __Selecteren__ en __Bewerken__ het nieuwe workflowmodel
+1. __Selecteren__ en __Bewerken__ het gemaakte workflowmodel
 1. Selecteer in de werkstroommodeleditor de optie __Stap 1__ uit de modeldefinitie en deze verwijderen
 1. Open de __Zijpaneel__ en selecteert u __Stappen__
 1. Sleep de __DAM Update Asset Workflow voltooid__ stap in de modeldefinitie

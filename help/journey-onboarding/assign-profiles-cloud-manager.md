@@ -4,7 +4,7 @@ description: Volg deze pagina om te leren hoe u teamleden kunt toewijzen aan pro
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 0%
@@ -181,7 +181,7 @@ U bent nu klaar om uw instapreis voort te zetten door het document opnieuw te be
 
 ## Aanvullende bronnen {#additional-resources}
 
-Het verdient aanbeveling de hierboven beschreven instapreis voort te zetten. Dit zijn enkele extra bronnen als je een diep duik wilt maken over een bepaald onderwerp van deze reis.
+U wordt aangeraden de instapreis voort te zetten zoals eerder beschreven. Dit zijn enkele extra bronnen als je een diep duik wilt maken over een bepaald onderwerp van deze reis.
 
 * [Introductie van Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Meer informatie over Cloud Manager, Cloud Manager-programma&#39;s en omgevingen.
 * [Productprofielen van Cloud Manager](/help/onboarding/aem-cs-team-product-profiles.md) - Meer informatie over AEM as a Cloud Service teams en productprofielen.

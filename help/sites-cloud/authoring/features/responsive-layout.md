@@ -2,9 +2,9 @@
 title: Responsieve lay-out
 description: Met AEM kunt u een responsieve lay-out voor uw pagina's maken
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1732'
 ht-degree: 6%
 
 ---
@@ -149,7 +149,7 @@ Net als bij andere componenten kunt u een Layout Container selecteren en vervolg
 >
 >Aangezien een lay-outcontainer een paragraafsysteem is, zal het schrappen van de component zowel het lay-outnet als alle componenten (en hun inhoud) schrappen die binnen de container worden gehouden.
 
-1. Als u de muisaanwijzer boven de tijdelijke aanduiding voor het raster houdt of erop tikt, wordt het menu Handeling weergegeven.
+1. Als u de muis boven of tikt op de tijdelijke aanduiding voor het raster, wordt het actiemenu weergegeven.
 
    ![Toevoegen aan de lay-outcontainer](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

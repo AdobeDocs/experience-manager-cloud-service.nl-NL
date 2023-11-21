@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Productie-instellingen kunnen in meerdere opzichten verschillen.
 
 * U kunt één gefederaliseerd GraphQL-eindpunt hebben, waarbij AEM- en Adobe Commerce GraphQL-gegevens worden gecombineerd in plaats van dat de Apollo-client wordt aangepast.
 * Uw toepassing van de PWA Studio kon het eindpunt URL van AEM GraphQL direct, zonder een volmacht met UPWARD gebruiken. De proxy kan ook naar een andere laag worden verplaatst (bijvoorbeeld CDN).
-* Welke benadering het beste voor u ook past hangt sterk af van hoe u de toepassing van de PWA Studio aan het eind - gebruiker levert.
+* Welke benadering het beste voor u ook past hangt sterk af van hoe u de toepassing van de PWA Studio aan de gebruiker levert.
 
 Deze extensie bevat twee voorbeelden.
 

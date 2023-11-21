@@ -2,9 +2,9 @@
 title: Metagegevenstoewijzing tussen Workfront en Experience Manager Assets configureren
 description: Wijs de gebieden van activa meta-gegevens tussen Adobe Workfront en Experience Manager as a Cloud Service toepassingen toe. Als u metagegevensvelden toewijst aan Experience Manager Assets en een element verzendt van Workfront naar, kunt u de metagegevens van de toegewezen elementen weergeven in Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '947'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Als u metagegevenstoewijzing wilt instellen voor de velden Projectnaam, Document
 
 1. Selecteer de Experience Manager Assets-integratie en klik op **[!UICONTROL Edit]**.
 
-1. Klik op **[!UICONTROL Metadata]**. In de **[!UICONTROL Assets]** tab, wijs de [!UICONTROL Project] > [!UICONTROL Name] Workfront-veld naar de `wm:projectName` Experience Manager Assets. Als u niet de nauwkeurige gelijke vindt, adviseert de Adobe om naar de beste gelijke te zoeken om het gebied van Workfront en van Experience Manager Assets in kaart te brengen. U kunt toewijzingsvelden van verschillende gegevenstypen vermijden. U kunt bijvoorbeeld een Workfront-datumveld toewijzen aan een beschrijvingsmiddelenveld.
+1. Klik op **[!UICONTROL Metadata]**. In de **[!UICONTROL Assets]** tab, wijs de [!UICONTROL Project] > [!UICONTROL Name] Workfront-veld naar de `wm:projectName` Experience Manager Assets. Als u niet de nauwkeurige gelijke vindt, adviseert de Adobe dat u naar de beste gelijke zoekt om het gebied van Workfront en van Experience Manager Assets in kaart te brengen. U kunt toewijzingsvelden van verschillende gegevenstypen vermijden. U kunt bijvoorbeeld een Workfront-datumveld toewijzen aan een beschrijvingsmiddelenveld.
 1. Wijs de [!UICONTROL Document] > [!UICONTROL Name] Workfront-veld naar de `wm:documentName` Experience Manager Assets.
 
    ![Toewijzing in Workfront](assets/workfront-metadata-mapping.png)

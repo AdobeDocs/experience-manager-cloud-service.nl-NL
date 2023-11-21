@@ -3,9 +3,9 @@ title: Procedure voor het vooraf invullen van adaptieve formuliervelden
 description: Bestaande gegevens gebruiken om velden van een adaptief formulier vooraf in te vullen. Gebruikers kunnen basisgegevens vooraf invullen in een formulier door zich aan te melden met hun sociale profielen.
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2040'
 ht-degree: 0%
 
 ---
@@ -261,7 +261,7 @@ Over het algemeen worden gebonden (formulierschema) en niet-gebonden velden gesc
 
 >[!NOTE]
 >
-> Als vuistregel geldt dat gebonden en niet-gebonden velden niet door elkaar mogen worden gebruikt als ze doorsnede hebben in gegevens die door de eindgebruiker in niet-gebonden velden worden ingevuld. Indien mogelijk, zou u het schema of het XFA vormmalplaatje moeten wijzigen en een ingang voor niet verbindende gebieden toevoegen, zodat het ook verbindend wordt en zijn gegevens zoals andere gebieden in voorgelegde gegevens beschikbaar zijn.
+> Als vuistregel geldt dat gebonden en niet-gebonden velden niet door elkaar mogen worden gebruikt als ze doorsnede hebben in gegevens die door de gebruiker in niet-gebonden velden worden ingevuld. Indien mogelijk, zou u het schema of het XFA vormmalplaatje moeten wijzigen en een ingang voor niet verbindende gebieden toevoegen, zodat het ook verbindend wordt en zijn gegevens zoals andere gebieden in voorgelegde gegevens beschikbaar zijn.
 
 ## Ondersteunde protocollen voor het vooraf invullen van gebruikersgegevens {#supported-protocols-for-prefilling-user-data}
 

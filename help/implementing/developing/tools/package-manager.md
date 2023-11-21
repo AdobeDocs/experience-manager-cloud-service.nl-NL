@@ -4,9 +4,9 @@ description: Leer de grondbeginselen van AE; pakketbeheer met de Manager van het
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3771'
+source-wordcount: '3774'
 ht-degree: 0%
 
 ---
@@ -401,7 +401,7 @@ Pakketbeheer kan de volgende validaties uitvoeren:
 
 Deze validatie inspecteert het pakket voor alle JAR-bestanden (OSGi-bundels), extraheert de bestanden `manifest.xml` (die de versioned gebiedsdelen bevat waarop OSGi bundel baseert), en verifieert de AEM instantie uitvoert genoemde gebiedsdelen met de correcte versies.
 
-**Hoe het is gemeld**
+**Hoe wordt het gemeld**
 
 Om het even welke versioned gebiedsdelen die niet door de AEM instantie kunnen worden tevredengesteld zijn vermeld in het Logboek van de Activiteit van de Manager van het Pakket.
 
@@ -425,7 +425,7 @@ Deze validatie bepaalt of het pakket dat wordt geïnstalleerd een bestand bevat 
 
 Als u bijvoorbeeld een bestaande overlay hebt van `/apps/sling/servlet/errorhandler/404.jsp`, een pakket dat `/libs/sling/servlet/errorhandler/404.jsp`, zodat het bestaande bestand wordt gewijzigd in `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Hoe het is gemeld**
+**Hoe wordt het gemeld**
 
 Dergelijke overlays worden beschreven in het activiteitenlogboek van Package Manager.
 
@@ -447,7 +447,7 @@ U kunt dit probleem oplossen door het bestand met de overlay in `/apps` moet de 
 
 Deze validatie controleert welke machtigingen worden toegevoegd, hoe deze worden verwerkt (samenvoegen/vervangen) en of de huidige machtigingen worden beïnvloed.
 
-**Hoe het is gemeld**
+**Hoe wordt het gemeld**
 
 De toestemmingen worden beschreven in het Logboek van de Activiteit van de Manager van het Pakket.
 

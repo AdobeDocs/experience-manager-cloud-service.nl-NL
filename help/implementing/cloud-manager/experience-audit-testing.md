@@ -2,9 +2,9 @@
 title: Ervaring controleren testen
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ De Audit van de ervaring is een eigenschap beschikbaar in de pijpleidingen van d
 
 1. Breng geen regressies aan.
 
-De controle van de ervaring in de Manager van de Wolk zorgt ervoor dat de ervaring van de eindgebruiker op de plaats van de hoogste normen is.
+De controle van de ervaring in de Manager van de Wolk zorgt ervoor dat de ervaring van de gebruiker op de plaats van de hoogste normen is.
 
 De controleresultaten zijn informatief en staan de plaatsingsmanager toe om de scores en de verandering tussen de huidige en vorige scores te zien. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing werd geïntroduceerd.
 

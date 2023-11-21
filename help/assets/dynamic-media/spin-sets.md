@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 8%
@@ -168,7 +168,7 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
    * Selecteer **[!UICONTROL Preset]** Selecteer vervolgens een voorinstelling die u op alle elementen tegelijk wilt toepassen.
 
-1. Selecteer **[!UICONTROL Save]**. De nieuwe centrifugeset wordt weergegeven in de map waarin u deze hebt gemaakt.
+1. Selecteer **[!UICONTROL Save]**. De door u gemaakte centrifugeset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
 ## Spin-sets weergeven {#viewing-spin-sets}
 

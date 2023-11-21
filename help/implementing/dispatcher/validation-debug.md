@@ -3,7 +3,7 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Leer meer over lokale validatie, foutopsporing, de bestandsstructuur in de flexibele modus en hoe u van de oude modus naar de flexibele modus kunt migreren.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2990'
 ht-degree: 0%
@@ -396,7 +396,7 @@ In de flexibele modus kunnen ook andere bestanden worden opgenomen, mits deze zi
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-U kunt bijvoorbeeld een bestand opnemen in een nieuwe map onder `conf.d/includes` map als volgt:
+U kunt bijvoorbeeld een bestand in een gemaakte map opnemen onder `conf.d/includes` map als volgt:
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

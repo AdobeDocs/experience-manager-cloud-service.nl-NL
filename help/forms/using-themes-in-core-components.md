@@ -2,7 +2,7 @@
 title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
 description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2630'
 ht-degree: 0%
@@ -319,7 +319,7 @@ U hebt een opslagplaats nodig om het thema te implementeren. Aanmelden bij uw [A
 
 ##### 5.2. Verhoog de wijzigingen in de gegevensopslagruimte {#committing-the-changes}
 
-Breng nu de wijzigingen aan in de themaopslagplaats van uw AEM Forms-Cloud Service. .
+Breng nu de wijzigingen aan in de themaopslagplaats van uw AEM Forms-Cloud Service.
 
 1. Navigeer naar de hoofdmap van de themamap.  In dit geval is de naam van de themamap `aem-forms-theme-canvas`.
 1. Open de opdrachtprompt of terminal.

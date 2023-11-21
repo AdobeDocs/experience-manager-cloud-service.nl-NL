@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2456'
 ht-degree: 12%
 
 ---
@@ -59,7 +59,7 @@ Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags i
 
 In Adobe Experience Manager Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
 
-Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/dam/it` is de Italiaanse taalbasis voor de Italiaanse taalkopie. Taalkopieën moeten een [correct geconfigureerde taalhoofdmap](#create-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van bronelementen worden uitgevoerd.
+Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/dam/it` is de Italiaanse taalbasis voor de Italiaanse taalkopie. Taalkopieën moeten een [correct gevormde taalwortel](#create-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van bronelementen worden uitgevoerd.
 
 De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de primaire taal. De primaire taal is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
 

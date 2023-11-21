@@ -3,7 +3,7 @@ title: Hoe te om Aangepast Forms of PDF forms op een instantie van AEM Forms in 
 description: Leer Adaptieve Forms, PDF forms, thema's en andere ondersteunende middelen migreren van en naar AEM instanties.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 1%
@@ -185,7 +185,7 @@ U kunt mappen gebruiken om elementen te rangschikken en te ordenen. Door documen
 
    Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutbericht weergeven door de muisaanwijzer op de fout te plaatsen ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) pictogram dat naast het naamveld wordt weergegeven.
 
-   Tik op de nieuwe map om naar de map te gaan en elementen of mappen in de map te maken. Bovendien kunt u een map selecteren en ervoor kiezen deze in de wachtrij te plaatsen voor downloaden, te verwijderen of de naam ervan te bewerken.
+   Tik op de gemaakte map om naar de map te gaan en elementen of mappen in de map te maken. Bovendien kunt u een map selecteren en ervoor kiezen deze in de wachtrij te plaatsen voor downloaden, te verwijderen of de naam ervan te bewerken.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

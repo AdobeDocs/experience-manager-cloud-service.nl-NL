@@ -2,7 +2,7 @@
 title: Audiences beheren
 description: Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-account maken, organiseren en beheren of segmenten voor ContextHub beheren
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 9%
@@ -42,7 +42,7 @@ Om een segment ContextHub in de console van het publiek tot stand te brengen:
 
    >[!NOTE]
    >
-   >U kunt de gewijzigde lijst sorteren door te tikken of te klikken **gewijzigd** om te sorteren op aflopende volgorde om nieuw gecreëerd publiek weer te geven.
+   >U kunt de gewijzigde lijst sorteren door te tikken of te klikken **gewijzigd** om te sorteren op aflopende volgorde om het gemaakte publiek te zien.
 
 Voor verder detail over het creëren van segmenten die ContextHub gebruiken, zie de het Vormen Segmentatie met documentatie ContextHub. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 

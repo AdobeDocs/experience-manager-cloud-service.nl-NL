@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De vertaalservice zet uw inhoud direct om in Adaptief formulier en Document of R
 1. In **Woordenboek toevoegen aan vertaalproject** scherm, selecteert u de **Een nieuw vertaalproject maken** of **Toevoegen aan een bestaand vertaalproject** -optie.
 1. In de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld, `Government Reference Site - German locale.`
 1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`) en klik op **Gereed**. U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld.
-1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**. Open het nieuwe project in het scherm Projecten.
+1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**. Open het gemaakte project in het scherm Projecten.
 1. Klik op de knop **ovalen** onder aan het dialoogvenster **Omzettingsoverzicht** tegel. Het scherm Translation Summary wordt geopend.
 1. Klik op de knop **Bewerken** pictogram boven aan **Omzettingsoverzicht** scherm. Open de **Vertaling** en selecteert u Machine Translation in het dialoogvenster **Omzettingsmethode** scherm. Selecteer de juiste **Vertaalbureau** en **Cloud Configuration**. Klik op de knop **Gereed** aan de bovenkant van het scherm.
 1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Start**. De status van de tegel verandert in Concept. Na de vertaling verandert de status in **Gereed voor revisie**. Vernieuw de pagina na een paar minuten en controleer de status.

@@ -3,9 +3,9 @@ title: CI/CD-pijpleidingen
 description: Leer meer over de CI/CD-pijpleidingen van Cloud Manager en hoe deze kunnen worden gebruikt om uw code efficiënt te implementeren.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ De volgende beperkingen zijn van toepassing.
 * U moet [deelnemen aan de flexibele modus van de verzendingsprogramma&#39;s](/help/implementing/dispatcher/disp-overview.md#validation-debug) om web-tier config pijpleidingen te gebruiken.
 * Een gebruiker moet met het programma worden geregistreerd **Implementatiebeheer** rol om pijpleidingen te vormen of te leiden.
 * Op elk ogenblik, kan er slechts één Web rij config pijpleiding per milieu zijn.
-* De gebruiker kan geen configuratiepijplijn van de Webrij vormen wanneer zijn overeenkomstige volledig-stapelpijpleiding loopt.
+* De gebruiker kan geen Web rij config pijpleiding vormen wanneer zijn overeenkomstige volledig-stapelpijpleiding loopt.
 * De structuur van de weblaag moet voldoen aan de structuur van de flexibele modus, zoals gedefinieerd in het document [Dispatcher in de cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 Houd er bovendien rekening mee dat de [volledige stapelpijplijn](#full-stack-pipeline) gedraagt zich wanneer het invoeren van een Web-rij pijpleiding.

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2021.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -58,7 +58,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analyses voor Adaptive Forms**: U kunt nu gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) inhoud via Adobe Analytics for Adaptive Forms om inzichten van eindgebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+* **Analyses voor Adaptive Forms**: U kunt nu het gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) bewerkingen door Adobe Analytics for Adaptive Forms om gebruikersinzichten te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms-oct-2021}
 

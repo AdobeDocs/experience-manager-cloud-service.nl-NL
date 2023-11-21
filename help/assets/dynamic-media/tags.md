@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6271'
+source-wordcount: '6269'
 ht-degree: 8%
 
 ---
@@ -52,7 +52,7 @@ De integratie maakt gebruik van twee aparte en onafhankelijke typen tracering vo
 
 ### Over reeksspatiëring in Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
-Met Adobe Analytics kunt u handelingen bijhouden die door de eindgebruiker worden uitgevoerd wanneer deze communiceert met Dynamic Media Viewers op uw website. Met Adobe Analytics kunt u ook viewerspecifieke gegevens bijhouden. U kunt bijvoorbeeld de laadgebeurtenissen van de weergave bijhouden en opnemen, samen met de naam van het element, eventuele zoomacties die hebben plaatsgevonden en handelingen voor het afspelen van video.
+Met Adobe Analytics kunt u handelingen bijhouden die door de gebruiker worden uitgevoerd wanneer deze communiceert met Dynamic Media Viewers op uw website. Met Adobe Analytics kunt u ook viewerspecifieke gegevens bijhouden. U kunt bijvoorbeeld de laadgebeurtenissen van de weergave bijhouden en opnemen, samen met de naam van het element, eventuele zoomacties die hebben plaatsgevonden en handelingen voor het afspelen van video.
 
 In de Markeringen van het Experience Platform, de concepten van *Gegevenselementen* en *Regels* samenwerken om het volgen van Adobe Analytics toe te laten.
 
@@ -221,9 +221,9 @@ De exacte waarde die door het gegevenselement wordt geretourneerd, is afhankelij
    * Gebruikt de belangrijkste persgebeurtenis van de uitbreiding van de Markeringen van het Experience Platform van de Kern als trekker.
    * Verzendt de waarde van **[!UICONTROL ZoomScale]** Gegevenselement naar Adobe Analytics.
 
-Nu, veronderstel de eindgebruiker de Web-pagina met de twee kijkers laadt. In *viewer1*, worden ze ingezoomd op een schaal van 50% en vervolgens op *viewer2* en zoomen ze in op een schaal van 25%. In *viewer1*, pannen zij beeld rond, en drukken tenslotte een sleutel op het toetsenbord.
+Nu, veronderstel de gebruiker de Web-pagina met de twee kijkers laadt. In *viewer1*, worden ze ingezoomd op een schaal van 50% en vervolgens op *viewer2* en zoomen ze in op een schaal van 25%. In *viewer1*, pannen zij beeld rond, en drukken tenslotte een sleutel op het toetsenbord.
 
-De activiteit van de eindgebruiker resulteert in de volgende twee volgende volgende vraag die aan Adobe Analytics wordt gemaakt:
+De activiteit van de gebruiker resulteert in de volgende twee het volgen vraag die aan Adobe Analytics wordt gemaakt:
 
 * De eerste oproep doet zich voor omdat **[!UICONTROL TrackPan]** De regel wordt geactiveerd wanneer de gebruiker het programma in *viewer1*. Die vraag verzendt 50% als waarde van **[!UICONTROL ZoomScale]** Het Element van gegevens omdat het Element van Gegevens weet dat de Regel door wordt teweeggebracht *viewer1* en haalt de overeenkomstige schaalwaarde op;
 * De tweede aanroep doet zich voor omdat **[!UICONTROL TrackKey]** De regel wordt geactiveerd wanneer de gebruiker op een toets op het toetsenbord drukt. Die vraag verzendt 25% als waarde van **[!UICONTROL ZoomScale]** Gegevenselement omdat de regel niet door de viewer is geactiveerd. Als dusdanig, keert het Element van Gegevens de meest bijgewerkte waarde terug.
@@ -519,7 +519,7 @@ Zie ook [Tikeigenschap configureren](https://experienceleague.adobe.com/docs/pla
 
 1. Selecteer **[!UICONTROL Save]**.
 
-   Selecteer de nieuwe eigenschap en ga verder met *Installatie en installatie van extensies*.
+   Selecteer de gemaakte eigenschap en ga vervolgens verder met *Installatie en installatie van extensies*.
 
 ### Extensies installeren en instellen {#installing-and-setup-of-extensions}
 

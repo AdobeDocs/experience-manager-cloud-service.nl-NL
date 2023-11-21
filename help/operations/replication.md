@@ -2,7 +2,7 @@
 title: Replicatie
 description: Leer over distributie en het oplossen van problemenreplicatie in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 0%
@@ -64,7 +64,7 @@ U kunt ook een workflowmodel maken waarin de `Publish Content Tree` processtap:
 1. Ga vanaf de AEM as a Cloud Service startpagina naar **Tools - Workflow - Modellen**.
 1. Druk op de pagina Workflowmodellen op **Maken** rechtsboven in het scherm.
 1. Voeg een titel en een naam toe aan uw model. Zie voor meer informatie [Workflowmodellen maken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. Selecteer het nieuwe model in de lijst en druk op **Bewerken**
+1. Selecteer het gemaakte model in de lijst en druk op **Bewerken**
 1. Sleep in het volgende venster de processtap naar de huidige modelstroom:
 
    ![Processtap](/help/operations/assets/processstep.png)

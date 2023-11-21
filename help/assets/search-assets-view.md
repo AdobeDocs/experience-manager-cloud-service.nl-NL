@@ -3,9 +3,9 @@ title: Leer hoe u middelen kunt zoeken en ontdekken in [!DNL Assets view]?
 description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Assets. Met de krachtige zoekfunctionaliteit kunt u snel de juiste middelen vinden en de snelheid van de inhoud verbeteren.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Aangepaste filters verwijderen:
 
 ## Opgeslagen zoekopdrachten {#saved-search}
 
-Zoekfuncties zijn heel eenvoudig in [!DNL Assets view]. Vanuit het zoekvak kunt u niet alleen een trefwoord typen en op Enter drukken om de resultaten weer te geven, maar u kunt ook snel met één klik nogmaals zoeken naar de laatst doorzochte trefwoorden.
+Zoekfuncties zijn heel eenvoudig in [!DNL Assets view]. Vanuit het zoekvak kunt u gewoon een trefwoord typen en op Enter drukken om de resultaten weer te geven. U kunt ook snel met één klik nogmaals zoeken naar de laatst doorzochte trefwoorden.
 
 U kunt de zoekresultaten ook filteren op basis van specifieke criteria voor metagegevens en het type element. Voor veelgebruikte filters om de zoekervaring te verbeteren, [!DNL Assets view] Hiermee kunt u de zoekparameters opslaan. Vervolgens kunt u de opgeslagen zoekopdracht selecteren en het filter toepassen met één klik.
 

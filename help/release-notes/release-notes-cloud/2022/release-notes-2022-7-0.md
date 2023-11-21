@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Bekijk de video Overzicht van de release van juli 2022 voor een overzicht van de
 
 * De [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) now supports [sneltoetsen](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM als Cloud Service [voor het web geoptimaliseerde afbeeldingslevering](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) staat toe om paginasnelheid beduidend te verbeteren door formaten zoals WebP te leveren. Deze nieuwe service biedt ook flexibelere opties voor het vergroten en verkleinen en transformeren van afbeeldingen. Alle versies van de [Component Core Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) staat toe om deze dienst te gebruiken en beelden als WebP te leveren door de klik van een optie in het beleid van de beeldcomponent.
+* AEM als Cloud Service [voor het web geoptimaliseerde afbeeldingslevering](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) staat toe om paginasnelheid beduidend te verbeteren door formaten zoals WebP te leveren. Deze nieuwe service biedt ook flexibelere opties voor het vergroten en verkleinen en transformeren van afbeeldingen. Alle versies van de [Component Core Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) laat u deze dienst gebruiken en beelden leveren als WebP door een optie in het beleid van de beeldcomponent te klikken.
 
 * AEM personaliseringsactiviteiten kunnen nu gebruikmaken van ervaringsfragmenten in plaats van onze verouderde aanbiedingen. Deze functie:
    * biedt een migratiepad waarin AEM inhoud ervaringsfragmentaanbiedingen zou bevorderen in plaats van oudere bibliotheekaanbiedingen, zodat op de juiste wijze gevormde inhoud wordt geleverd die zich op de volgende schaaldatum aan de personalisatie aanpast.
@@ -83,13 +83,13 @@ U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen 
 * **[Omzetten in PDF/A - Een stap voor AEM workflow](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A is een archiefindeling voor langdurige bewaring van de inhoud van het document, alle lettertypen worden ingesloten en het bestand wordt niet gecomprimeerd. Nu kunt u met de stap Omzetten in PDF/A en AEM Workflow uw documenten of bestanden in elke indeling converteren naar PDF/A-indeling.
 
 
-## CIF-invoegtoepassing {#cloud-services-cif}
+## CIF invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
 * Verrijking van productcatalogus ondersteunt nu AEM pagina&#39;s. Hierdoor kunnen auteurs pagina - productkoppeling beheren.
 
-* Verschillende verbeteringen voor CIF Core-componenten
+* Verschillende CIF Core-componentverbeteringen
 
 ### Bugfixes {#bug-fixes-cif}
 

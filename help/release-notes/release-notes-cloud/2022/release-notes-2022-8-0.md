@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -67,9 +67,9 @@ Bekijk de video Overzicht van de release van augustus 2022 voor een overzicht va
 
    * Statische sjablonen gebruiken: klanten met bestaande investeringen in verouderde statische sjablonen kunnen doorgaan met het toepassen van de cloud door statische sjablonen te gebruiken in de wizard voor het schrijven van adaptieve formulieren. Dit geeft klanten extra tijd om oude statische sjablonen te migreren naar moderne bewerkbare sjablonen.
 
-* [Verborgen velden verwijderen uit een Document of Record (DoR) tijdens verwerking op de server](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): U kunt het document met record PDF voor eindgebruikers genereren met alleen die velden die voor hen zichtbaar waren tijdens het vastleggen van gegevens. Bij het verzenden van het formulier controleert de server welke velden op basis van verzonden gegevens verborgen waren voor de eindgebruiker en sluit deze velden uit van het document met het oog op consistentie.
+* [Verborgen velden verwijderen uit een Document of Record (DoR) tijdens verwerking op de server](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): U kunt het document met record PDF voor eindgebruikers genereren met alleen die velden die voor hen zichtbaar waren tijdens het vastleggen van gegevens. Bij het verzenden van het formulier controleert de server welke velden aan de gebruiker zijn verborgen op basis van verzonden gegevens en sluit deze voor consistentie uit van het document van de record.
 
-## CIF-invoegtoepassing {#cloud-services-cif}
+## CIF invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 

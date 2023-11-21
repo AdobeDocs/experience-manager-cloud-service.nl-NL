@@ -2,7 +2,7 @@
 title: Een aangepaste component voor as a Cloud Service schermen ontwikkelen
 description: De volgende zelfstudie doorloopt de stappen om een aangepaste component voor AEM Screens te maken. AEM Screens gebruikt veel bestaande ontwerppatronen en technologieën van andere AEM. In de zelfstudie worden verschillen en speciale overwegingen benadrukt bij het ontwikkelen voor AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 0%
@@ -423,7 +423,7 @@ De Hello World-component is bedoeld voor gebruik op een Volgekanaal. Om de compo
 
    Ontwerpconfiguratie die wijst naar /apps/settings/wcm/designs/we-retail-run
 
-1. Bewerk het zojuist gemaakte niet-actieve kanaal zodat u het kunt openen.
+1. Bewerk het gemaakte onactieve kanaal zodat u het kunt openen.
 
 1. De paginamodus wijzigen in **Ontwerp** Modus.
 

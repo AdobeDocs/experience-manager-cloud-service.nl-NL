@@ -1,7 +1,7 @@
 ---
 title: Wat zijn adaptieve formulierexpressies?
 description: Met Adaptieve Forms-expressies kunt u automatische validatie, berekening en de zichtbaarheid van een sectie in- of uitschakelen.
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2698'
 ht-degree: 0%
@@ -121,7 +121,7 @@ De expressie Samenvatting wordt doorgaans gebruikt voor het herhalen van onderli
 
 **Retourneringstype:** De expressie retourneert een tekenreeks die de titel van de accordeon wordt.
 
-**Voorbeeld:** &quot;Rekeningnummer: &quot;+ textbox1.value
+**Voorbeeld:** &quot;Rekeningnummer: &quot; + textbox1.value
 
 ### Expressie valideren {#validate-expression}
 
@@ -187,7 +187,7 @@ De methoden om validaties toe te voegen aan een veld zijn:
 
 ### Vereist {#required}
 
-Om een onderdeel verplicht te maken, kunt u in het gedeelte **Bewerken** van de component, kunt u optie selecteren **Titel en tekst > Vereist**. U kunt ook het juiste vereiste bericht toevoegen (optioneel). .
+Om een onderdeel verplicht te maken, kunt u in het gedeelte **Bewerken** van de component, kunt u optie selecteren **Titel en tekst > Vereist**. U kunt ook het juiste vereiste bericht toevoegen (optioneel).
 
 ### Validatiepatronen {#validation-patterns}
 

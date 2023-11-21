@@ -2,7 +2,7 @@
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Het nieuwe segment definiëren:
    * Minimumwaarde: `0`
    * Maximumwaarde: `1000000`
 
-1. Van de segmentconsole, geef uw onlangs-gecreeerd segment uit om het in de segmentredacteur te openen.
+1. Bewerk het gemaakte segment vanuit de segmentconsole en open het in de segmenteditor.
 1. Sleep een vergelijking of een verwijzing naar de segmentredacteur het in het gebrek EN container zal verschijnen.
 1. Dubbelselecteer de configureoptie van de nieuwe verwijzing of het nieuwe segment om de specifieke parameters uit te geven. In dit voorbeeld testen we mensen in Bazel.
 

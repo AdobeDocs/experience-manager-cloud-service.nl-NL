@@ -3,7 +3,7 @@ title: Hoe kunnen we een op kerncomponenten gebaseerde adaptieve vorm vertalen?
 description: Leer een formuliergegevensmodel te maken in AEM Forms, het model te testen met voorbeeldgegevens en services en verschillende opties voor een model te configureren.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De vertaalservice zet uw inhoud direct om in Adaptief formulier en [Document van
    * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]**.
 1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
 1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**.
-1. Klik in het scherm Projecten op het nieuwe project. Klik bijvoorbeeld op de knop **Referentiesite van de overheid - Duitse landinstelling** tegel.
+1. Klik in het scherm Projecten op het gemaakte project. Klik bijvoorbeeld op de knop **Referentiesite van de overheid - Duitse landinstelling** tegel.
 1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Start**. De status van de tegel verandert in Concept. Na de vertaling verandert de status in **Goedgekeurd**. Vernieuw de pagina na een paar minuten en controleer de status.
 
    ![Vertaling starten](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
@@ -68,7 +68,7 @@ Voer de volgende stappen uit om een formulier en het bijbehorende document te lo
    * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]**.
 1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
 1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**.
-1. Klik in het scherm Projecten op het nieuwe project. Klik bijvoorbeeld op de knop **Referentiesite van de overheid - Duitse landinstelling** tegel.
+1. Klik in het scherm Projecten op het gemaakte project. Klik bijvoorbeeld op de knop **Referentiesite van de overheid - Duitse landinstelling** tegel.
 1. Onder aan het dialoogvenster **Samenvatting** tegel, klik op de knop **ovalen**. Het scherm Projecteigenschappen omzetten wordt geopend.
 1. Open de **[!UICONTROL Advanced]** tabblad boven aan het dialoogvenster **Eigenschappen van vertaalproject** scherm. Voor de **[!UICONTROL Translation field]**, selecteert u **[!UICONTROL Human Translation]**. Klikken **Opslaan en sluiten** boven aan het scherm.
 1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Exporteren**. Klik in het dialoogvenster Exporteren op de optie Geëxporteerd bestand downloaden. Er wordt een ZIP-bestand gedownload.

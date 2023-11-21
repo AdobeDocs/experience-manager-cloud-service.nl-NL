@@ -2,9 +2,9 @@
 title: Status domeinnaam controleren
 description: Leer hoe u kunt bepalen of uw aangepaste domeinnaam is geverifieerd door Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ De fout is als volgt gecorrigeerd:
 
 ## Bestaande CDN-configuraties voor aangepaste domeinnamen {#pre-existing-cdn}
 
-Als u een reeds bestaande configuratie CDN voor uw namen van het douanedomein hebt, is er een informatief bericht op het **Aangepaste domeinnamen** en **Omgeving** pagina&#39;s, die u aanmoedigen om deze configuraties toe te voegen via de gebruikersinterface zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
+Als u een reeds bestaande configuratie CDN voor uw namen van het douanedomein hebt, is er een informatief bericht op **Aangepaste domeinnamen** en **Omgeving** pagina&#39;s, die u aanmoedigen om deze configuraties toe te voegen via de gebruikersinterface zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
 
 Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 

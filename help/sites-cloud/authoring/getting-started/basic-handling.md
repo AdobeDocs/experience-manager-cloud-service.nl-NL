@@ -2,9 +2,9 @@
 title: Basisbewerkingen
 description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2945'
 ht-degree: 3%
 
 ---
@@ -231,7 +231,7 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 In [Kaartweergave](#card-view) bepaalde acties zijn beschikbaar als snelactiepictogrammen en staan op de werkbalk. Er zijn snelactiepictogrammen beschikbaar voor één item tegelijk, zodat u geen voorselectie hoeft te maken.
 
-De snelle acties zijn zichtbaar wanneer u de muis boven een resourcepard (bureaubladapparaat) houdt. De snelle beschikbare acties kunnen van de console en de context afhangen. Hier ziet u bijvoorbeeld de snelle acties voor een pagina in het dialoogvenster **Sites** console:
+De snelle acties zijn zichtbaar wanneer u de muis boven (desktopapparaat) een bronkaart houdt. De snelle beschikbare acties kunnen van de console en de context afhangen. Hier ziet u bijvoorbeeld de snelle acties voor een pagina in het dialoogvenster **Sites** console:
 
 ![Aanvullende opties](/help/sites-cloud/authoring/assets/quick-actions.png)
 

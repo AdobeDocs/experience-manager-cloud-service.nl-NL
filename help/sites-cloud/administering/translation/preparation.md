@@ -4,9 +4,9 @@ description: Leer hoe u inhoud voorbereidt voor vertaling bij het ontwikkelen va
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ De [WKND-zelfstudiesite](/help/implementing/developing/introduction/develop-wknd
 
 De taalkopie waarvoor u oorspronkelijk site-inhoud hebt gemaakt, is de hoofdtaal. De taalmaster is de bron die in andere talen wordt vertaald.
 
-Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/wknd/fr` Dit is de hoofdtaalkennis van de Franse taalkopie. Taalkopieën moeten een [correct geconfigureerde taalhoofdmap](preparation.md#creating-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van een bronsite worden uitgevoerd.
+Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/wknd/fr` Dit is de hoofdtaalkennis van de Franse taalkopie. Taalkopieën moeten een [correct gevormde taalwortel](preparation.md#creating-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van een bronsite worden uitgevoerd.
 
 Gebruik de volgende stappen om uw site voor te bereiden op vertaling:
 

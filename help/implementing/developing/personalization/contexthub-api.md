@@ -2,9 +2,9 @@
 title: JavaScript API-naslaggids voor ContextHub
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4612'
+source-wordcount: '4613'
 ht-degree: 0%
 
 ---
@@ -242,7 +242,7 @@ Hiermee wordt de gegevensstructuur uit de opslagruimte opgehaald. Naar keuze kun
 
 ##### Parameters {#parameters-gettree}
 
-* `includeInternals:` Een waarde van `true` neemt intern-gebruikte sleutel/waardeparen in de resultaten op. De sleutels van deze gegevens beginnen met het onderstrepingsteken (`_`). De standaardwaarde is `false`.
+* `includeInternals:` Een waarde van `true` neemt intern gebruikte sleutel/waardeparen in de resultaten op. De sleutels van deze gegevens beginnen met het onderstrepingsteken (`_`). De standaardwaarde is `false`.
 
 ##### Retourneert {#returns-gettree}
 
@@ -856,7 +856,7 @@ Een kopie van de boom die is schoongemaakt.
 
 #### getItem() {#getitem}
 
-Hiermee wordt de waarde opgehaald van een object voor de toets A.
+Hiermee wordt de waarde opgehaald van een object voor de toets.
 
 ##### Parameters {#parameters-getitem-2}
 

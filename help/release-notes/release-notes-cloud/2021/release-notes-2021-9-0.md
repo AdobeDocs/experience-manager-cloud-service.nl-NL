@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1572'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
 
-## CIF-invoegtoepassing {#cloud-services-cif}
+## CIF invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
@@ -111,7 +111,7 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 ### Nieuwe functies {#what-is-new-screens}
 
-* As a Cloud Service schermen ondersteunen nu elementaire afspeelcontrole. De speler rapporteert nu verschillende playbackmetriek met elk pingelt (gebrek aan 30 seconden). Op basis van de meetgegevens kunnen er verschillende randgevallen worden gedetecteerd (geplakte ervaring, leeg scherm, planningsprobleem, enzovoort). Met deze functie kan het team op afstand controleren of een speler inhoud correct afspeelt. Het verbetert de reactiviteit aan lege schermen of gebroken ervaringen op het gebied, en vermindert het risico om een gebroken ervaring aan het eind te tonen - gebruiker.
+* As a Cloud Service schermen ondersteunen nu elementaire afspeelcontrole. De speler rapporteert nu verschillende playbackmetriek met elk pingelt (gebrek aan 30 seconden). Op basis van de meetgegevens kunnen er verschillende randgevallen worden gedetecteerd (geplakte ervaring, leeg scherm, planningsprobleem, enzovoort). Met deze functie kan het team op afstand controleren of een speler inhoud correct afspeelt. Het verbetert de reactiviteit aan lege schermen of gebroken ervaringen op het gebied, en vermindert het risico om een gebroken ervaring aan de gebruiker te tonen.
 Zie [Standaardafspeelcontrole](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) voor meer informatie .
 
 * Ondersteuning van miniaturen voor video&#39;s wordt nu ondersteund in as a Cloud Service schermen. Een inhoudauteur kan een duimnagel voor video&#39;s bepalen zodat het beeld als placeholder wordt gebruikt en behoorlijk het playback en richten van inhoud test, terwijl de daadwerkelijke video door het aangewezen team wordt voltooid. De afbeelding kan ook worden gebruikt als het afspelen van de video mislukt.

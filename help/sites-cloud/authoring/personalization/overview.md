@@ -2,9 +2,9 @@
 title: Aanpassing en doelgerichtheid van inhoud
 description: Leer hoe u gepersonaliseerde, gerichte inhoud met AEM kunt creëren
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ AEM biedt een kader voor instrumenten voor:
 * Het bepalen van de regels die worden gebruikt om de bekende gebruikersinformatie tegen een publieksdefinitie op te lossen.
 * Het vormen van uw pagina&#39;s om gerichte gepersonaliseerde ervaringen voor te stellen; om de specifieke inhoud terug te geven toepasselijk op de huidige eindgebruiker.
 
-In het volgende overzicht worden enkele termen weergegeven die worden gebruikt voor personalisatie in AEM as a Cloud Service, gevolgd door een aanbevolen volgorde van actie.
+In het volgende overzicht worden enkele termen beschreven die worden gebruikt voor personalisatie in AEM as a Cloud Service, gevolgd door een aanbevolen handelingsvolgorde.
 
 ## Ervaring {#experience}
 

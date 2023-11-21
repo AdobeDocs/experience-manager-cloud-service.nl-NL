@@ -2,7 +2,7 @@
 title: Hoe voeg ik steun voor nieuwe scènes aan een Aangepast Vorm toe dat op de Componenten van de Stichting wordt gebaseerd?
 description: Voor Adaptief Forms kunt u naast de landinstellingen uit het tekstvak ook landinstellingen voor meer talen toevoegen.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Voer deze stap alleen uit als de `<locale>` u toevoegt behoort niet tot `en`, `d
 1. Voeg de `<locale-name>` standaardwaarden voor landinstellingen `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, indien niet aanwezig.
 
 1. Voeg de `<locale>` op de waarden van de `languages` eigenschap van `/etc/languages`.
-1. Voeg de nieuwe mappen toe aan het dialoogvenster `filter.xml` onder etc/META-INF/[maphiërarchie] als:
+1. Voeg de gemaakte mappen toe aan het dialoogvenster `filter.xml` onder etc/META-INF/[maphiërarchie] als:
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

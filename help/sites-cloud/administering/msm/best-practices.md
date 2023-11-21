@@ -4,7 +4,7 @@ description: Leer de beste praktijken die door Adobe engineering en raadplegende
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 0%
@@ -113,9 +113,9 @@ Houd rekening met de volgende aanbevolen procedures wanneer u overweegt pagina&#
    * Voeg geen andere acties aan deze configuratie toe.
 1. Plaats de nieuwe configuratie.
    * Als u de pagina volledig wilt uitrollen, verplaatst u de pagina terwijl u de desbetreffende pagina&#39;s op hun oude locatie in Live Copy verwijdert:
-      * Plaats de nieuw-gecreeerde configuratie vóór de standaardrollout configuratie. De standaardrollout configuratie zal ervoor zorgen om de pagina&#39;s in hun oude plaatsen te schrappen.
+      * Plaats de gecreeerde configuratie vóór de standaardrollout configuratie. De standaardrollout configuratie zal ervoor zorgen om de pagina&#39;s in hun oude plaatsen te schrappen.
       * Als u de pagina wilt uitrollen, verplaatst u de pagina terwijl de respectievelijke pagina&#39;s op hun oude locatie in Live kopieën blijven staan (de inhoud wordt in feite gedupliceerd):
-         * Plaats de nieuw-gecreeerde configuratie na de standaardrollout configuratie. Zo voorkomt u dat inhoud wordt verwijderd uit Live kopie of gedeactiveerd uit publicatie.
+         * Plaats de gecreeerde configuratie na de standaardrollout configuratie. Zo voorkomt u dat inhoud wordt verwijderd uit Live kopie of gedeactiveerd uit publicatie.
 
 ## Rollen aanpassen {#customizing-rollouts}
 

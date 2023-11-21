@@ -2,7 +2,7 @@
 title: OAuth2 Steun voor de Dienst van de Post
 description: Oauth2-ondersteuning voor de Mail Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: ede877212de3394cbdc81e1097d3d6eaf9f390cc
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Voor meer informatie over de AEM as a Cloud Service Dienst van de Post, zie [E-m
    ![Toepassingsregistratieproces starten](assets/oauth-outlook1.png)
 
 1. Vul de gegevens naar wens in en klik op **Registreren**.
-1. Ga naar de nieuwe app en selecteer **API-machtigingen**.
+1. Ga naar de gemaakte app en selecteer **API-machtigingen**.
 1. Klikken **Machtiging toevoegen** > **Grafiekmachtigingen** > **Gedelegeerde machtigingen**.
 1. Selecteer de onderstaande machtigingen voor uw app en klik op **Machtiging toevoegen**:
    * `https://outlook.office.com/SMTP.Send`

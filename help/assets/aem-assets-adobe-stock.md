@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 3%
@@ -271,7 +271,7 @@ U kunt een gebruikersgroep maken of machtigingen toewijzen aan een bestaande geb
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Selecteer de [!DNL Adobe Stock] cloudconfiguratie en klik op **[!UICONTROL Properties]**.
 
-1. Voeg de nieuwe gebruikersgroep toe aan de [!DNL Adobe Stock] configuratie. Klik op **[!UICONTROL Save & Close]**.
+1. Voeg de gemaakte gebruikersgroep toe aan de [!DNL Adobe Stock] configuratie. Klik op **[!UICONTROL Save & Close]**.
 
    ![assign-user](assets/aem-stock-adduser.png)
 

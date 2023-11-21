@@ -2,9 +2,9 @@
 title: Productieprogramma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Ga als volgt te werk om een productieprogramma te maken.
 
 1. Als u over de nodige rechten beschikt, **Beveiliging** wordt weergegeven en krijgt de optie om **HIPAA** en/of **WAF-DDOS-beveiliging** voor uw productieprogramma. Controleer indien nodig voor het programma dat u maakt de toepasselijke optie(s) en selecteer **Doorgaan**.
 
-   * HIPAA kan niet worden ingeschakeld of uitgeschakeld na het maken van het programma.
+   * HIPAA kan na het maken van het programma niet worden in- of uitgeschakeld.
       * [Meer informatie](https://www.adobe.com/go/hipaa-ready) over de HIPAA-gereed implementatie van de oplossing van Adobe.
    * Zodra geactiveerd, kan de bescherming WAF-DDOS dan door opstelling worden gevormd [niet-productiepijpleiding.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 

@@ -3,9 +3,9 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Een gebruiker moet beschikken over **[Implementatiebeheer](/help/onboarding/clou
 
 >[!NOTE]
 >
->Een productiepijpleiding kan niet worden opgezet tot de programmaverwezenlijking volledig is, heeft een git bewaarplaats minstens één tak, en een productie en het opvoeren milieu wordt geplaatst.
+>Een productiepijplijn kan pas worden ingesteld wanneer de programma&#39;s zijn gemaakt, een opslagplaats voor kompas ten minste één tak heeft en er een productie- en parkeeromgeving is ingesteld.
 
 Alvorens u begint uw code op te stellen, moet u uw pijpleidingsmontages van vormen [!UICONTROL Cloud Manager].
 

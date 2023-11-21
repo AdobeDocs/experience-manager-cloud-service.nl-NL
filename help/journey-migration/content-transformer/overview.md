@@ -2,7 +2,7 @@
 title: Overzicht tot Inhoud transformeren
 description: Leer hoe u aan inhoud gerelateerde problemen kunt detecteren en verhelpen die door de BPA zijn gemeld met Content Transformer.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -24,7 +24,7 @@ De Content Transformer kan helpen problemen op te lossen die onder de volgende [
 | DOPI | deprecated.ordered.index | Verwijder de vervangen indexen. |
 | OAUI | non.migrated.oauth.users | Verwijder deze gebruikers om ervoor te zorgen dat ze niet naar AEM as a Cloud Service worden gemigreerd. |
 | PCX | page.complex.medium <br> pagina.complex.high | Verwijder de pagina&#39;s/onderliggende items of verplaats deze naar een andere locatie om te voorkomen dat ze worden gemigreerd naar AEM as a Cloud Service. |
-| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Verwijder de nieuw gecreëerde replicatieagenten. <br> OF <br> Verwijder de gewijzigde/toegevoegde eigenschappen. |
+| REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Verwijder de gecreeerde replicatieagenten. <br> OF <br> Verwijder de gewijzigde/toegevoegde eigenschappen. |
 | URS | clientlibs.location <br> file.location <br> node.location <br> workflow.location | Ga naar de juiste locatie om problemen tijdens de migratie te voorkomen. |
 | URS | node.size | De knooppunten tijdelijk verplaatsen naar`/etc/packages/content-transformation/paths` om ervoor te zorgen dat zij niet naar AEM as a Cloud Service worden gemigreerd. |
 
