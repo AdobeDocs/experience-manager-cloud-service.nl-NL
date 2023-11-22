@@ -2,9 +2,9 @@
 title: OAuth2 Steun voor de Dienst van de Post
 description: Oauth2-ondersteuning voor de Mail Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -29,10 +29,12 @@ Voor meer informatie over de AEM as a Cloud Service Dienst van de Post, zie [E-m
 1. Ga naar de gemaakte app en selecteer **API-machtigingen**.
 1. Klikken **Machtiging toevoegen** > **Grafiekmachtigingen** > **Gedelegeerde machtigingen**.
 1. Selecteer de onderstaande machtigingen voor uw app en klik op **Machtiging toevoegen**:
+
+   >[!NOTE]
+   >
+   >De configuratie van toestemmingen kan in tijd evolueren. Werk met Microsoft als deze niet naar behoren werken.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
@@ -134,10 +136,12 @@ Alvorens te werk te gaan om OAuth op de AEM kant te vormen, zorg ervoor om zowel
 
 1. Vul de `authUrl`, `tokenUrl`, en `refreshURL` door ze te construeren zoals beschreven in de vorige sectie.
 1. Voeg de volgende Scopes aan de configuratie toe:
+
+   >[!NOTE]
+   >
+   >Scopes kunnen zich in de loop der tijd ontwikkelen. Werk met Microsoft als deze niet naar behoren werken.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
