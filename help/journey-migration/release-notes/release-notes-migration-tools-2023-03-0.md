@@ -1,8 +1,9 @@
 ---
 title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.03.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2022.03.0
+description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.03.0
 feature: Release Information
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
+source-git-commit: d7e5a14c2dfee41b4ab5af733218fe58d17871fa
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -11,7 +12,7 @@ ht-degree: 2%
 
 # Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.03.0 {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.03.0.
+Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2023.03.0.
 
 ## Analysator van best practices {#bpa-release}
 
@@ -32,7 +33,7 @@ De releasedatum voor de analyse van best practices v2.1.40 is 3 maart 2023.
 
 ### Releasedatum {#release-date-ctt}
 
-De releasedatum voor Content Transfer Tool v2.0.16 is 8 maart 2022.
+De releasedatum voor Content Transfer Tool v2.0.16 is 8 maart 2023.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
