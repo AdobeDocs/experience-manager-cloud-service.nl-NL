@@ -3,14 +3,14 @@ title: Best practices zoeken voor [!DNL Adobe Experience Manager] als [!DNL Clou
 description: Aanbevolen procedures voor het zoeken, zoeken en ophalen van metagegevens van elementen in uw toepassing.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
+source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2432'
 ht-degree: 1%
 
 ---
 
-# Aanbevolen werkwijzen AEM zoeken
+# Aanbevolen werkwijzen voor zoeken in AEM Assets
 
 [!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het zoeken naar elementen waarmee u een hogere snelheid van de inhoud kunt bereiken. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden. Zoekmiddelen in [!DNL Adobe Experience Manager Assets] is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa - of het nu gaat om verder gebruik door de creatieve sector, voor een robuust beheer van activa door de zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders.
 
