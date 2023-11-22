@@ -2,7 +2,7 @@
 title: Hoe te om een document van verslag (DoR) voor AEM Forms te produceren?
 description: Leer een sjabloon te genereren voor een Document of Record (DoR) voor Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
 workflow-type: tm+mt
 source-wordcount: '3999'
 ht-degree: 0%
@@ -500,7 +500,7 @@ Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een docume
 ### Een aangepast XCI-bestand gebruiken in uw lokale as a Cloud Service Forms-ontwikkelomgeving
 
 1. Upload het XCI-bestand naar uw lokale ontwikkelomgeving.
-1. Open Cloud Service SDK Configuration Manager. De standaard-URL is: <http://localhost:4502/system/console/configMgr>.
+1. Open Cloud Service SDK configuratiemanager. De standaard-URL is: <http://localhost:4502/system/console/configMgr>.
 1. Zoek en open de **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuratie.
 1. Geef het pad van het XCI-bestand op en klik op **[!UICONTROL Save]**.
 
