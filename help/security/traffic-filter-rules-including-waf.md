@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
 workflow-type: tm+mt
-source-wordcount: '3437'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -258,7 +258,6 @@ De `wafFlags` eigenschap, die kan worden gebruikt in de licentiebare WAF-regels 
 | JSON-ERROR | JSON-coderingsfout | Een POST, PUT, of PATCH- verzoeklichaam dat als bevattende JSON binnen de &quot;Content-Type&quot;verzoekkopbal wordt gespecificeerd maar JSON het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
 | MALFORMED-DATA | Onjuiste gegevens in de aanvraaginstantie | Een POST, een PUT, of PATCH verzoeken lichaam dat volgens de &quot;Inhoud-Type&quot;verzoekkopbal misvormd is. Bijvoorbeeld, als een &quot;Content-Type: application/x-www-form-urlencoded&quot;verzoekkopbal wordt gespecificeerd en een POST bevat die json is. Dit is vaak een programmeerfout, een geautomatiseerd of een kwaadwillig verzoek. Vereist agent 3.2 of hoger. |
 | SANS | Verkeer van kwaadwillige IP | [SANS Internet Storm Center](https://isc.sans.edu/) lijst van IP adressen die om aan kwaadwillige activiteit zijn gemeld te hebben betrokken |
-| SIGSCI-IP | Netwerkeffect | IP die door SignalSciences wordt gemarkeerd: Wanneer IP wegens een kwaadwillig signaal door de besluitvormingsmotor wordt gemarkeerd, zal dat IP aan alle klanten worden verspreid. De verdere verzoeken van die IP adressen die om het even welk extra signaal voor de duur van de vlag bevatten worden dan geregistreerd |
 | NO-CONTENT-TYPE | Ontbrekende aanvraagheader &quot;Content-Type&quot; | Een POST-, PUT- of PATCH-aanvraag die geen aanvraagheader &quot;Content-Type&quot; heeft. Standaard moeten toepassingsservers in dit geval &#39;Content-Type: text/plain; charset=us-ascii&#39; aannemen. Bij veel geautomatiseerde en kwaadaardige verzoeken ontbreekt mogelijk het type inhoud. |
 | NOUA | Geen gebruikersagent | Vele geautomatiseerde en kwaadwillige verzoeken gebruiken vals of ontbrekende Gebruiker-Agenten om het moeilijk te maken om het type van apparaat te identificeren dat de verzoeken maakt. |
 | TORNODE | Teerverkeer | Tor is software die de identiteit van een gebruiker verbergt. Een piek in het verkeer van de Tor kan op een aanvaller wijzen die probeert om hun plaats te maskeren. |
@@ -638,7 +637,6 @@ data:
         type: log
         wafFlags:
           - SANS
-          - SIGSCI-IP
           - TORNODE
           - NOUA
           - SCANNER
