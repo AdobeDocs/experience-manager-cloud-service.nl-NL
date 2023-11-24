@@ -2,7 +2,7 @@
 title: Verouderde API's
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde API's in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d2c7e3d88b5545eee3e6f1c511088c0f6638cfe7
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 5%
@@ -14,9 +14,8 @@ ht-degree: 5%
 Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwachte verwijderingsdatum. Van klanten wordt verwacht dat ze de API&#39;s verwijderen tegen de verwijderingsdatum van het doel uit hun code. Elk gebruik van de API na de verwijderingsdatum leidt tot fouten in de lokale SDK/Development Environment en het buildproces van Cloud Manager.
 
 
-<table>
-<thead>
 <table style="table-layout:auto">
+<thead>
   <tr>
     <th>Pakket/klasse</th>
     <th>Opmerkingen</th>
@@ -111,7 +110,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>Het metatype van Apache Felix en SCR APIs zijn verouderd.  Gebruik in plaats hiervan de OSGi-metatype- en Declarative Service-API's.</td>
+    <td>Het metatype van Apache Felix en SCR APIs zijn verouderd.  Gebruik in plaats hiervan de OSGi-metatype en Declarative Service API's.</td>
     <td>5/27/21</td>
     <td>verwijderd</td>
   </tr>
@@ -206,7 +205,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>Deze API is afgekeurd. Gebruik in plaats hiervan Apache Sling's Builders.</td>
+    <td>Deze API is vervangen. Gebruik in plaats hiervan Apache Sling's Builders.</td>
     <td>10/31/2022</td>
     <td>01/01/2023</td>
   </tr>
