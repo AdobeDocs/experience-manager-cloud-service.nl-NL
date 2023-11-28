@@ -3,7 +3,7 @@ title: Hoe heeft de weergave van middelen in AEM voordeel?
 description: Meer informatie over de belangrijkste voordelen van de weergave Middelen vindt u in AEM. Adobe, die gebruik maakt van zijn expertise op het gebied van het versterken van marketing en creatieve professionals, introduceert een game veranderende nieuwe gebruikerservaring.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -95,7 +95,7 @@ Stel snel een mapstructuur voor uw organisatie in met de weergave Middelen door 
 
 ### Eerste benadering zoeken om de efficiëntie te verbeteren {#search-first}
 
-Ontgrendel het potentieel van de digitale bibliotheek van uw organisatie met de kracht van zoekmogelijkheden met de meest geavanceerde functionaliteit. Je kunt afscheid nemen van het probleem van het handmatig doorzoeken van talloze bestanden en mappen. Elke gebruiker kan direct het perfecte beeld, de video, of het document vinden u moet creëren verbluffende marketing campagnes maken, presentaties fascineren, en het aansprekende inhoud. Met onze eerste zoekfunctie kunt u moeiteloos door elementtypen, metagegevens, slimme tags en zelfs de inhoud zelf navigeren zonder het exacte trefwoord te kennen. Met de functie Eerste zoeken kunt u de toekomst van de DAM benutten en het volledige potentieel van uw digitale assetbibliotheek benutten.
+Ontgrendel het potentieel van de digitale bibliotheek van uw organisatie met de kracht van zoekmogelijkheden met de meest geavanceerde functionaliteit. Je kunt afscheid nemen van de gedoe om handmatig door talloze bestanden en mappen te navigeren. Elke gebruiker kan direct het perfecte beeld, de video, of het document vinden u moet creëren verbluffende marketing campagnes maken, presentaties fascineren, en het aansprekende inhoud. Met onze eerste zoekfunctie kunt u moeiteloos door elementtypen, metagegevens, slimme tags en zelfs de inhoud zelf navigeren zonder het exacte trefwoord te kennen. Met de functie Eerste zoeken kunt u de toekomst van de DAM benutten en het volledige potentieel van uw digitale assetbibliotheek benutten.
 
 ![Eerste zoeken](assets/search-first.gif)
 
