@@ -2,7 +2,7 @@
 title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
 workflow-type: tm+mt
 source-wordcount: '3249'
 ht-degree: 0%
@@ -54,8 +54,6 @@ U kunt een handeling Verzenden configureren in het dialoogvenster **[!UICONTROL 
 >[!CAUTION]
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
-
-
 -->
 
 ## Verzenden naar REST-eindpunt {#submit-to-rest-endpoint}
@@ -173,10 +171,12 @@ Voordat u de **[!UICONTROL Invoke an AEM Workflow]** Met Handeling verzenden wor
 ## Verzenden naar SharePoint {#submit-to-sharedrive}
 
 De **[!UICONTROL Submit to SharePoint]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® SharePoint-opslag. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag.
-
-<!-- Using Submit to SharePoint, you can:
+<!--
+Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) 
+
+-->
 
 ### Een adaptief formulier aansluiten op de SharePoint-documentbibliotheek {#connect-af-sharepoint-doc-library}
 
@@ -194,7 +194,7 @@ AEM Forms verbinden met uw Microsoft® Sharepoint Document Library Storage:
 1. Selecteer een **Configuratie-container**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klikken **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
 
-![SharePoint-configuratie](/help/forms/assets/sharepoint_configuration.png)
+   ![SharePoint-configuratie](/help/forms/assets/sharepoint_configuration.png)
 1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft®-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * U kunt de `Client ID` en `Client Secret` van uw app via de Microsoft® Azure-portal.
    * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Vervangen `[author-instance]` met de URL van uw instantie Auteur.
@@ -236,6 +236,7 @@ Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven 
 De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/month/date/submission_id/data`.
 
 <!--
+
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
@@ -268,13 +269,6 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
 
@@ -287,14 +281,14 @@ You can use the created SharePoint List configuration in an Adaptive Form, to sa
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
-    
+>[!NOTE]
+>
+> In Microsoft® SharePoint List, the following column types are not supported:
+> * image column
+> * metadata column
+> * person column
+> * external data column
+
 -->
 
 ## Verzenden naar OneDrive {#submit-to-onedrive}
