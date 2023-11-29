@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: De repository browser biedt een alleen-lezen weergave in de repository voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '866'
 ht-degree: 1%
 
 ---
@@ -25,20 +25,20 @@ ht-degree: 1%
 
 De verslagbrowser is een ontwikkelaarshulpmiddel dat een read-only mening in de bewaarplaats voor alle milieu&#39;s op auteur, publiceert, en voorproefrijen verstrekt. Deze is ontworpen om het weergeven van de inhoudsstructuur te vergemakkelijken, zodat u de inhoud beter kunt zien of fouten erin kunt opsporen.
 
-Toegankelijk vanuit de ontwikkelaarsconsole, kan deze worden gebruikt om door de opslagplaats van een auteur te bladeren of instantie voor een geselecteerde omgeving te publiceren.
+Toegankelijk van de [AEM as a Cloud Service ontwikkelaarsconsole](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), kan deze worden gebruikt om door de opslagplaats van een auteur te bladeren of instantie voor een geselecteerde omgeving te publiceren.
 
 ### Toegangsvoorwaarden {#access-prerequisites}
 
-Aan de volgende voorwaarden moet zijn voldaan om toegang te krijgen tot de Developer Console of de Repository-browser
+Aan de volgende voorwaarden moet zijn voldaan om toegang te krijgen tot de AEM as a Cloud Service Developer Console of de browser Repository
 
-Ga als volgt te werk om Developer Console te openen:
+Ga als volgt te werk om de AEM as a Cloud Service ontwikkelaarsconsole te openen:
 
-* Voor productieprogramma&#39;s moeten gebruikers beschikken over **Cloud Manager - Rol voor ontwikkelaars** in de Admin Console
+* Voor productieprogramma&#39;s moeten gebruikers beschikken over **Cloud Manager - Rol voor ontwikkelaars** in Adobe Admin Console
 * Voor zandbakprogramma&#39;s, is het beschikbaar aan om het even welke gebruiker met een productprofiel die hen toegang tot AEM as a Cloud Service geeft.
 
 Toegang tot de browser voor gegevensopslagruimte:
 
-* Gebruikers moeten beschikken over de **Cloud Manager - Ontwikkelaar** Rol in de Admin Console om instanties van Auteur en van de Publicatie te bekijken.
+* Gebruikers moeten beschikken over de **Cloud Manager - Ontwikkelaar** Rol in de AEM as a Cloud Service Ontwikkelaarsconsole om instanties van Auteurs en van de Publish te bekijken.
 * Bovendien kunnen gebruikers met het AEM Gebruikersprofiel de browser van de gegevensopslagruimte met minimale leestoegang weergeven. De machtigingen van de gebruiker worden gerespecteerd wanneer ze door de gegevensopslagruimte bladeren. Gebruikers met het productprofiel AEM Beheerders kunnen de browser van de opslagplaats bekijken met volledige leestoegang.
 
 Voor meer informatie over het instellen van gebruikersmachtigingen raadpleegt u de [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
