@@ -2,9 +2,9 @@
 title: Rapporten beheren in de middelenweergave
 description: Open de gegevens in de sectie Rapporten van de mening van Activa om product en eigenschapgebruik te beoordelen en inzichten van zeer belangrijke succesmetriek af te leiden.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -26,13 +26,23 @@ Alle gebruikers die zijn toegewezen aan het productprofiel voor middelenweergave
 
 In de weergave Elementen kunt u realtime gegevens voor de weergave Elementen weergeven met het dashboard Inzichten. U kunt real-time gebeurtenismetriek tijdens de laatste 30 dagen of voor de laatste 12 maanden bekijken.
 
-![Werkbalkopties wanneer u een element selecteert](assets/assets-essentials-live-statistics.png)
+<!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
 Klikken **[!UICONTROL Insights]** U kunt de volgende automatisch gegenereerde grafieken weergeven in het linkernavigatiegebied:
+
+![Inzichten](assets/insights.png)
 
 * **Downloads**: Het aantal elementen dat in de afgelopen 30 dagen of 12 maanden is gedownload van de weergaveomgeving Elementen, uitgedrukt met behulp van een lijngrafiek.
 
 * **Uploads**: Het aantal elementen dat in de weergaveomgeving van Elementen is geüpload in de laatste 30 of 12 maanden die met behulp van een lijngrafiek worden weergegeven.
+
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+
+* **Opslaggebruik**: Het opslaggebruik, in bytes, voor de de meningsmilieu van Activa die gebruikend een bar grafiek wordt vertegenwoordigd.
+
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+
+<!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Meest gebruikte zoekopdrachten**: Bekijk de belangrijkste gezochte termen samen met het aantal keren dat deze termen in de weergaveomgeving van de Middelen zijn doorzocht in de laatste 30 dagen of 12 maanden, weergegeven in een tabelindeling.
 

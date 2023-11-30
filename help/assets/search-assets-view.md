@@ -3,9 +3,9 @@ title: Leer hoe u middelen kunt zoeken en ontdekken in [!DNL Assets view]?
 description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Assets. Met de krachtige zoekfunctionaliteit kunt u snel de juiste middelen vinden en de snelheid van de inhoud verbeteren.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
@@ -141,6 +141,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## Werken met zoekresultaten {#work-with-search-results}
+
+U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de volgende handelingen uitvoeren:
+
+* **Details**: Elementeigenschappen weergeven en bewerken.
+
+* **Toevoegen aan verzameling**: Voeg het geselecteerde element toe aan een verzameling.
+
+* **Downloaden**: Download een middel.
+
+* **Verwijderen**: Een element verwijderen.
+
+* **Kopiëren**: Kopieer een element naar een andere maplocatie.
+
+* **Verplaatsen**: Verplaats een element naar een andere maplocatie.
+
+* **Naam wijzigen**: Wijzig de naam van een element.
+
+* **Taken toewijzen**: Taken toewijzen aan gebruikers voor een element.
+
+* **Koppeling delen**: [Koppelingen delen](share-links-for-assets-view.md) voor een middel met andere gebruikers zodat zij tot het kunnen toegang hebben en downloaden.
+
+* **Controle**: [De bewerkingen controleren](manage-notifications-assets-view.md) uitgevoerd op een element.
+
+* **Bestandslocatie tonen**: Navigeer naar de locatie van de elementmap.
+
+* **Vastmaken aan snelle toegang**: [Een element vastzetten](my-workspace-assets-view.md) voor snellere toegang wanneer u het later nodig hebt. Alle vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** van Mijn werkruimte.
+
+## Eerste homepage van zoekopdracht configureren {#configuring-search-first-homepage}
+
+Op de eerste homepage van zoekopdrachten kunt u direct door verschillende bestanden en mappen navigeren. U kunt gemakkelijk door elementtypen, metagegevens, slimme tags en zelfs de inhoud zelf navigeren zonder het exacte trefwoord te kennen. [!DNL Assets view] staat u toe om uw homepage te vormen door te controleren wat zou moeten verschijnen wanneer u login aan [!DNL Assets view].
+
+Voer de onderstaande stappen uit om de eerste homepage van de zoekopdracht te configureren:
+
+1. Ga naar **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
+1. Selecteer **[!UICONTROL Search first]**. Het opent verder onderzoek eerst verwante configuratie. U kunt instellen [uitlijning](#setting-alignment-search-bar) of [achtergrond- en logoafbeelding instellen](#setting-background-image-and-logo) van uw homepage.
+
+### Uitlijning van zoekbalk instellen {#setting-alignment-search-bar}
+
+[!DNL Assets view] kunt u de uitlijning van de zoekbalk wijzigen. U kunt de zoekbalk in het midden of boven aan het scherm weergeven. Selecteer de gewenste uitlijning en klik op **[!UICONTROL Save]**.
+
+![Eerste homepage-uitlijning zoeken](assets/search-first-alignment.png)
+
+### Achtergrond- en logoafbeelding van homepage instellen {#setting-background-image-and-logo}
+
+U kunt het merklogo en de achtergrondafbeelding toevoegen aan uw eerste zoekpagina. Voer de volgende stappen uit:
+
+1. Navigeren naar **[!UICONTROL Background and Logo image]** deel onder **[!UICONTROL Homepage]**.
+1. Klikken **[!UICONTROL Replace]** om afbeeldingen te zoeken in de bestaande gegevensopslagruimte.
+1. Klik op **[!UICONTROL Save]**. [Voorvertoning](#preview-configured-homepage) de wijzigingen die moeten worden doorgevoerd.
+
+### Voorvertoning geconfigureerde homepage {#preview-configured-homepage}
+
+U kunt een voorvertoning weergeven om de lay-out en opmaak van de eerste homepage van de zoekopdracht te controleren. Gebruiken **[!UICONTROL Preview]** kunt u de layout herstellen of de layout naar wens wijzigen. Voer de onderstaande stappen uit om een voorvertoning van de geconfigureerde homepage weer te geven:
+
+1. Klik op **[!UICONTROL General Settings]** en selecteer **[!UICONTROL Search first]**.
+1. Navigeren naar **[!UICONTROL Customize search first homepage]** en klik op **[!UICONTROL Preview]**. Doorschakelen **[!UICONTROL Dark theme]** om de homepage in het donkere of lichte thema voor te vertonen.
+1. Klikken **[!UICONTROL Close]** om het voorvertoningsscherm te sluiten.
+
+   ![Eerste homepatievoorvertoning zoeken](assets/search-first-preview.gif)
 
 ## Volgende stappen {#next-steps}
 
