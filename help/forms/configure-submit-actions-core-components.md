@@ -3,9 +3,9 @@ title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken
 keywords: hoe u verzendactie voor een adaptief formulier selecteert, een adaptief formulier koppelt aan een SharePoint-lijst, een adaptief formulier aansluit op een SharePoint-documentbibliotheek, een adaptief formulier aansluit op een formuliergegevensmodel
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 24b0871e75280d0125c13b1605c0e8b5e555c8e7
+source-git-commit: 6ebc40b501472025cafffa258e253a53139a0301
 workflow-type: tm+mt
-source-wordcount: '3449'
+source-wordcount: '3853'
 ht-degree: 0%
 
 ---
@@ -107,10 +107,9 @@ Om het [!UICONTROL Attach Document of Record] Raadpleeg de documentatie bij [Het
 
 De **[!UICONTROL Submit to SharePoint]** Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® SharePoint-opslag. U kunt het bestand met formuliergegevens, bijlagen of het document met records verzenden naar de aangesloten Microsoft® SharePoint-opslag.
 
-<!--
-Using Submit to SharePoint, you can:
-* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+Met Verzenden naar SharePoint kunt u:
+* [Een adaptief formulier aansluiten op de SharePoint-documentbibliotheek](#connect-af-sharepoint-doc-library)
+* [Een adaptief formulier verbinden met de SharePoint-lijst](#connect-af-sharepoint-list)
 
 ### Een adaptief formulier aansluiten op de SharePoint-documentbibliotheek {#connect-af-sharepoint-doc-library}
 
@@ -169,61 +168,57 @@ U kunt de gemaakte SharePoint Document Library-configuratie in een adaptief form
 Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® Sharepoint Document Library Storage.
 De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/month/date/submission_id/data`.
 
-<!--
+### Een adaptief formulier verbinden met de Microsoft® SharePoint-lijst {#connect-af-sharepoint-list}
 
-### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Dit is een pre-release functie die toegankelijk is via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
+Als u de opdracht [!UICONTROL Submit to SharePoint List] Actie verzenden in een adaptieve vorm:
 
-1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
-1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+1. [Een SharePoint List-configuratie maken](#create-sharepoint-list-configuration): AEM Forms wordt aangesloten op uw Microsoft® Sharepoint List Storage.
+1. [Verzenden met gebruik van het formuliergegevensmodel in een adaptief formulier gebruiken](#use-submit-using-fdm): Het maakt een verbinding tussen uw Adaptief formulier en de geconfigureerde Microsoft® SharePoint.
 
-#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
+#### Een SharePoint List-configuratie maken {#create-sharepoint-list-configuration}
 
-To connect AEM Forms to your Microsoft&reg; Sharepoint List:
+AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
-1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
-1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
-1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
-    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
-    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Selecteer een **Configuratie-container**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Klikken **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** in de vervolgkeuzelijst. De configuratietovenaar van SharePoint verschijnt.
+1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]**. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheim, identiteitskaart van de Aannemer voor OAuth URL, zie [Microsoft®-documentatie](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * U kunt de `Client ID` en `Client Secret` van uw app via de Microsoft® Azure-portal.
+   * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Vervangen `[author-instance]` met de URL van uw instantie Auteur.
+   * API-machtigingen toevoegen `offline_access` en `Sites.Manage.All` in de **Microsoft® Graph** om lees-/schrijfmachtigingen te bieden. Toevoegen `AllSites.Manage` toestemming in de **Sharepoint** -tabbladen gebruiken om op afstand te werken met SharePoint-gegevens.
+   * OAuth-URL gebruiken: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervangen `<tenant-id>` met de `tenant-id` van uw app via de Microsoft® Azure-portal.
 
-      >[!NOTE]
-      >
-      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+     >[!NOTE]
+     >
+     > De **clientgeheim** het gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
 
-1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
-1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt de `Connection Successful` wordt weergegeven.
+1. Selecteren **[!UICONTROL SharePoint Site]** en **[!UICONTROL SharePoint List]** in de vervolgkeuzelijst.
+1. Tikken **[!UICONTROL Create]** om de cloudconfiguratie voor de Microsoft® SharePointList te maken.
 
 
-#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+#### Verzenden met gebruik van het formuliergegevensmodel in een adaptief formulier gebruiken {#use-submit-using-fdm}
 
-You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+U kunt de gemaakte SharePoint List-configuratie in een adaptief formulier gebruiken om gegevens of het gegenereerde Document of Record in een SharePoint-lijst op te slaan. Voer de volgende stappen uit om een SharePoint-lijst in een adaptief formulier te gebruiken als:
 
-1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
-1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
-1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
-1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Een formuliergegevensmodel maken met de configuratie Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
+1. [Het formuliergegevensmodel configureren voor het ophalen en verzenden van gegevens](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
+1. [Verzendactie configureren met een formuliergegevensmodel](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
-When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
+Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® Sharepoint List Storage.
 
 >[!NOTE]
 >
-> In Microsoft® SharePoint List, the following column types are not supported:
-> * image column
-> * metadata column
-> * person column
-> * external data column
-
--->
+> In Microsoft® SharePoint List worden de volgende kolomtypen niet ondersteund:
+> * afbeeldingskolom
+> * metagegevenskolom
+> * persoonlijke kolom
+> * kolom externe gegevens
 
 ## Verzenden met gebruik van formuliergegevensmodel {#submit-using-form-data-model}
 
