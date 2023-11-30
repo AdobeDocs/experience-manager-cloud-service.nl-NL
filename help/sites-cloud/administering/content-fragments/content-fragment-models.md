@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '3058'
+source-wordcount: '3121'
 ht-degree: 1%
 
 ---
@@ -199,7 +199,8 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
   >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
 * **Renderen als**
-De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hier kunt u vaak definiëren of de auteur één instantie van het veld ziet of meerdere instanties mag maken.
+
+  De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken. Wanneer **Meerdere velden** wordt gebruikt U kunt het minimum en maximum aantal objecten definiëren - zie [Validatie](#validation) voor nadere bijzonderheden.
 
 * **Veldlabel**
 Een **Veldlabel** automatisch een **Eigenschapnaam**, die indien nodig handmatig kan worden bijgewerkt.
@@ -257,6 +258,14 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
    * Er kan alleen worden verwezen naar afbeeldingen met een vooraf gedefinieerde breedte en/of hoogte (in pixels).
 * **Fragmentverwijzing**
    * Testen op een specifiek model van een inhoudsfragment.
+* **Min. aantal items** / **Max. aantal objecten**
+
+  Velden die zijn gedefinieerd als een **Meerdere velden** (instellen met **Renderen als**) beschikt over de volgende opties:
+
+   * **Min. aantal items**
+   * **Max. aantal objecten**
+
+  Deze worden gevalideerd in het dialoogvenster [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Referenties gebruiken om geneste inhoud te vormen {#using-references-to-form-nested-content}
 

@@ -4,9 +4,9 @@ description: Begrijp hoe te om inhoud voor uw Contentfragmenten te ontwerpen, da
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,10 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
 * centraal deelvenster: geeft de daadwerkelijke velden en inhoud van de geselecteerde variatie weer
    * kunt u de inhoud bewerken
    * indien **Tijdelijke aanduiding voor tab** de velden worden gedefinieerd binnen het model dat ze hier worden weergegeven en kunnen worden gebruikt voor navigatie; ze worden horizontaal weergegeven of als een vervolgkeuzelijst.
+
+  >[!NOTE]
+  >
+  >Afhankelijk van definities in het onderliggende model kunnen velden worden onderworpen aan bepaalde typen [Validatie](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ![Inhoudsfragmenteditor - Overzicht](assets/cf-authoring-overview.png)
 

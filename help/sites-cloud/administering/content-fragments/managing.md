@@ -4,9 +4,9 @@ description: Leer hoe te om uw AEM Contentfragmenten van de console en de redact
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2622'
 ht-degree: 0%
 
 ---
@@ -142,10 +142,7 @@ Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toege
 * **[Verplaatsen](/help/assets/manage-digital-assets.md)**
 * **[Naam wijzigen](/help/assets/manage-digital-assets.md)**
 * **[Verwijderen](#deleting-a-fragment)**
-
-<!--
-* **[Replace](#find-and-replace)**
--->
+* **[Vervangen](#find-and-replace)**
 
 >[!NOTE]
 >
@@ -368,13 +365,22 @@ Wanneer het relevante dialoogvenster wordt geopend, kunt u de juiste service sel
 >
 >Als er al vanuit een ander fragment of een pagina naar het fragment wordt verwezen, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan.
 
-<!--
-## Find and Replace {#find-and-replace}
+## Zoeken en vervangen {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+De **Vervangen** Er is een handeling beschikbaar (op de bovenste werkbalk) om opgegeven tekst in geselecteerde inhoudsfragmenten te zoeken en te vervangen.
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![Zoeken en vervangen](assets/cf-managing-find-replace.png)
+
+Voordat de validatiecriteria worden vervangen, worden deze gecontroleerd en worden eventuele conflicten gemeld. Zo kunt u de vervangende tekenreeks wijzigen of alleen de gevalideerde instanties vervangen.
+
+>[!NOTE]
+>
+>De actie Zoeken en vervangen kan alleen worden uitgevoerd op maximaal 20 geselecteerde inhoudsfragmenten (tegelijk).
+>
+>Als u meer dan 20 inhoudsfragmenten selecteert, wordt het bericht weergegeven **Kan niet vinden en vervangen**.
+
+![Vervangen bevestigen](assets/cf-managing-confirm-replace.png)
+
 
 ## Een fragment verwijderen {#deleting-a-fragment}
 

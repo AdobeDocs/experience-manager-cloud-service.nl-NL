@@ -2,9 +2,9 @@
 title: Content Fragment Models (Assets - Content Fragments)
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '3005'
 ht-degree: 2%
 
 ---
@@ -150,7 +150,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
   >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
 * **Renderen als**
-De verschillende opties voor het realiseren/renderen van het veld in een fragment. Met deze eigenschap kunt u vaak definiëren of de auteur één instantie van het veld ziet of meerdere instanties mag maken.
+De verschillende opties voor het realiseren/renderen van het veld in een fragment. Met deze eigenschap kunt u vaak definiëren of de auteur één instantie van het veld ziet of meerdere instanties mag maken. Wanneer **Meerdere velden** wordt gebruikt U kunt het minimum en maximum aantal objecten definiëren - zie [Validatie](#validation) voor nadere bijzonderheden.
 
 * **Veldlabel**
 Een **Veldlabel** zal automatisch een **Eigenschapnaam**, die indien nodig handmatig kan worden bijgewerkt.
@@ -212,6 +212,17 @@ Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te d
    * Er kan alleen worden verwezen naar afbeeldingen met een vooraf gedefinieerde breedte en/of hoogte (in pixels).
 * **Fragmentverwijzing**
    * Testen op een specifiek inhoudsfragmentmodel.
+* **Min. aantal items** / **Max. aantal objecten**
+
+  Velden die zijn gedefinieerd als een **Meerdere velden** (instellen met **Renderen als**) beschikt over de volgende opties:
+
+   * **Min. aantal items**
+   * **Max. aantal objecten**
+
+  Deze worden gevalideerd:
+
+   * De maximumwaarde wordt gevalideerd in het dialoogvenster [oorspronkelijke editor voor inhoudsfragmenten](/help/assets/content-fragments/content-fragments-variations.md).
+   * Beide worden gevalideerd in het dialoogvenster [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Referenties gebruiken om geneste inhoud te vormen {#using-references-to-form-nested-content}
 
