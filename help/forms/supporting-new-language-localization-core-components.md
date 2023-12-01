@@ -2,9 +2,9 @@
 title: Hoe voeg ik ondersteuning voor nieuwe landinstellingen toe aan een adaptief formulier op basis van kerncomponenten?
 description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formulier.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 | Elementaire componenten | [Klik hier](supporting-new-language-localization.md) |
 | Kernonderdelen | Dit artikel |
 
-AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR). U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN).
+AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR). U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN). U kunt Adaptief Forms ook weergeven in een RTL-taal (rechts naar links), zoals Arabisch, Perzisch en Urdu, door deze landinstellingen toe te voegen.
 
 ## Hoe wordt de landinstelling geselecteerd voor een adaptief formulier?
 

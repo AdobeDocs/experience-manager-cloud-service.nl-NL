@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0290e40094147a1c85eacf157904c7ef7388c5e7
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 0%
 
 ---
@@ -146,6 +146,6 @@ U vindt een volledige lijst met de releases van de migratiehulpmiddelen [hier](/
 
 ## Bekende problemen {#known-issues}
 
-* Gebruikers kunnen Adaptive Forms niet indienen op basis van Core Components. Dit probleem doet zich voor bij Adaptive Forms die is gebouwd met Core Components versies 2.0.38 - 2.0.60.
+* Kan Adaptieve Forms niet verzenden op basis van Core Components. Dit probleem doet zich voor bij Adaptive Forms die is gebouwd met Core Components versies 2.0.38 - 2.0.60.
 
   U lost dit probleem op. u kunt overschakelen naar Adaptive Form Core Components versie 2.0.62 of hoger. Een versie van Adaptive Forms Core Components instellen voor uw omgeving [versies instellen van de component core.forms.components.version, core.forms.components.af.version en core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) afhankelijkheden in uw as a Cloud Service Forms-opslagplaats of op Archetype gebaseerd project en [de wijzigingen in uw as a Cloud Service Forms-omgeving implementeren](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). U vindt de nieuwste versie van Adaptive Forms Core Components Afhankelijkheden via [Adaptive Forms Core Components Git-opslagplaats](https://github.com/adobe/aem-core-forms-components#system-requirements).
