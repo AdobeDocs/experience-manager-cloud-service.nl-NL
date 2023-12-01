@@ -3,9 +3,9 @@ title: Afbeeldingen bewerken
 description: Afbeeldingen bewerken met [!DNL Adobe Photoshop Express] Aangedreven opties en sparen bijgewerkte beelden als versies.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -82,12 +82,12 @@ U kunt een JPEG-afbeelding snel met Adobe Express omzetten in een PNG-indeling. 
 
 ## Afbeeldingen bewerken met de ingesloten Adobe Express-editor {#edit-using-embedded-editor}
 
-[!DNL Assets view] biedt een uitgebreide bewerking van de afbeeldingen rechtstreeks vanuit de opslagplaats voor elementen. Met de ingesloten editor kunt u een afbeelding gemakkelijk en intuïtief bewerken met [!DNL Adobe Express]. Het versnelt herbruikbaarheid van de activa door malplaatjes te gebruiken of de bestaande activa te wijzigen. U kunt vooraf gedefinieerde elementen gebruiken om uw element er verbluffend uit te laten zien of u kunt snel actie ondernemen om uw afbeelding met slechts een paar klikken te bewerken.
+Gebruikers met toegang tot Express beschikken nu over geïntegreerde gereedschappen voor het bewerken en maken van afbeeldingen op basis van Adobe Express en Adobe Firefly die rechtstreeks in AEM Assets beschikbaar zijn om het hergebruik van inhoud te verbeteren en de snelheid van de inhoud te versnellen. U kunt ook vooraf gedefinieerde elementen gebruiken om uw elementen er verbluffend uit te laten zien of snelle acties uitvoeren om uw afbeelding met slechts een paar klikken te bewerken.
 
 Afbeeldingen bewerken met [!DNL Adobe Express] ingesloten editor, voert u de onderstaande stappen uit:
 
 1. Selecteer een afbeelding in uw [!DNL Experience Manager] Middelenopslagplaats.
-1. Klik op **[!UICONTROL Open in Adobe Express]**. [!DNL Adobe Express] wordt weergegeven.
+1. Klik op **[!UICONTROL Open in Adobe Express]**.
 
    ![Ingesloten editor voor Adobe Express](assets/embedded-editor.png)
 
@@ -95,20 +95,20 @@ Afbeeldingen bewerken met [!DNL Adobe Express] ingesloten editor, voert u de ond
 
 1. Nadat u de afbeeldingsbewerkingen hebt voltooid, kunt u een element downloaden als een nieuw element of het element opslaan als een nieuwe versie.
 
-## Nieuw element maken met Adobe Express {#create-new-embedded-editor}
+## Nieuwe elementen maken met Adobe Express {#create-new-embedded-editor}
 
-[!DNL Assets view] biedt functionaliteit voor het maken van een geheel nieuwe sjabloon met [!DNL Adobe Express] ingesloten editor. Een nieuw element maken met [!DNL Adobe Expresss]Voer de volgende stappen uit:
+[!DNL Assets view] biedt functionaliteit voor het maken van een geheel nieuwe sjabloon met [!DNL Adobe Express] ingesloten editor. Een nieuw element maken met [!DNL Adobe Express]Voer de volgende stappen uit:
 
-1. Navigeren naar **[!UICONTROL My Workspace]** en klik op **[!UICONTROL Create]**. [!DNL Adobe Express] leeg canvas wordt weergegeven in het dialoogvenster [!DNL Assets view] gebruikersinterface.
+1. Navigeren naar **[!UICONTROL My Workspace]** en klik op **[!UICONTROL Create]** in de Adobe Express-banner die boven de [!UICONTROL Quick access] sectie. [!DNL Adobe Express] leeg canvas wordt weergegeven in het dialoogvenster [!DNL Assets view] gebruikersinterface.
 1. Uw inhoud maken met [Sjablonen](https://helpx.adobe.com/in/express/using/work-with-templates.html). Anders navigeert u naar **[!UICONTROL Your Stuff]** bestaande inhoud wijzigen.
 1. Als u klaar bent met bewerken, klikt u op **[!UICONTROL Save as new asset]**.
-1. Geef het doelpad voor het gemaakte element op.
+1. Doelpad opgeven voor het gemaakte element en klikken **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
->* U kunt alleen wijzigen `JPEG` en `PNG` indelingen.
+>* U kunt alleen afbeeldingen wijzigen van `JPEG` en `PNG` opmaaktypen.
 >* De grootte van het element moet kleiner zijn dan 14 MB.
->* U kunt een afbeelding opslaan als `PDF`, `JPEG`, of `PNG` indelingen.
+>* U kunt een afbeelding opslaan in `PDF`, `JPEG`, of `PNG` indelingen.
 
 ## Afbeeldingen bewerken met [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
