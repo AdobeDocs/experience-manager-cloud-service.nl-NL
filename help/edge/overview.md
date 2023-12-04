@@ -3,10 +3,10 @@ title: Aan de slag met Edge Delivery Services
 description: Aan de slag met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 185a192b0d40e25cdb09fd8a1f222d9d9b1bd631
+source-git-commit: c3c1a2c89031b6a7a44ac8d16ecb2e64f37490a8
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 2%
+source-wordcount: '823'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ Het is eenvoudig om met Edge Delivery Services aan de slag te gaan. Ga aan de sl
 
 ## Help van Adobe ophalen {#adobe-gethelp}
 
-U kunt met de productteams van de Adobe via uw leverings productsamenwerkingskanaal (zie hieronder voor toegangsdetails) in gesprek gaan om vragen over productgebruik of beste praktijken te beantwoorden. Er zijn geen Termen van het Niveau van de Dienst (SLT) verbonden aan de gesprekken via het kanaal van de productsamenwerking. Als een productkwestie extra onderzoek en het oplossen van problemen vereist, en reactie SLTs moet ontmoeten, kunt u een steunkaartje na indienen [supportproces](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+U kunt met de productteams van de Adobe via uw leverings productsamenwerkingskanaal (zie hieronder voor toegangsdetails) in gesprek gaan om vragen over productgebruik of beste praktijken te beantwoorden. Er zijn geen Doelen van het Niveau van de Dienst (SLTs) verbonden aan de gesprekken via het kanaal van de productsamenwerking. Als een productkwestie extra onderzoek en het oplossen van problemen vereist, en reactie SLTs moet ontmoeten, kunt u een steunkaartje na indienen [supportproces](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 Adobe biedt drie kanalen om u te helpen met Edge Delivery Services:
 
