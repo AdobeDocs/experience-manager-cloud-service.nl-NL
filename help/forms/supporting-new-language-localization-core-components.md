@@ -2,9 +2,9 @@
 title: Hoe voeg ik ondersteuning voor nieuwe landinstellingen toe aan een adaptief formulier op basis van kerncomponenten?
 description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formulier.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | Elementaire componenten | [Klik hier](supporting-new-language-localization.md) |
 | Kernonderdelen | Dit artikel |
+
+<span class="preview"> De ondersteuning voor talen die van rechts naar links worden geschreven, is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-early-adopter-program@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
 AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR). U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN). U kunt Adaptief Forms ook weergeven in een RTL-taal (rechts naar links), zoals Arabisch, Perzisch en Urdu, door deze landinstellingen toe te voegen.
 
@@ -44,7 +46,7 @@ Voordat u een landinstelling toevoegt:
 * Installeer een normale tekstverwerker (IDE) voor eenvoudige bewerking. De voorbeelden in dit document zijn gebaseerd op [Microsoft® Visual Studio-code](https://code.visualstudio.com/download).
 * Een versie van [Git](https://git-scm.com), indien niet beschikbaar op uw computer.
 * Klonen met [Adaptieve Forms Core-componenten](https://github.com/adobe/aem-core-forms-components) opslagplaats. De gegevensopslagruimte klonen:
-   1. Open de opdrachtregel of het terminalvenster en navigeer naar een locatie waar u de opslagplaats wilt opslaan. Bijvoorbeeld, `/adaptive-forms-core-components`
+   1. Open de opdrachtregel of het terminalvenster en navigeer naar een locatie waar u de opslagplaats wilt opslaan. Bijvoorbeeld: `/adaptive-forms-core-components`
    1. Voer de volgende opdracht uit om de gegevensopslagruimte te klonen:
 
       ```SHELL
@@ -100,7 +102,7 @@ AEM Forms biedt een voorbeeldclientbibliotheek waarmee u eenvoudig nieuwe landin
 
 ### 4. Maak een bestand dat specifiek is voor de landinstelling {#locale-specific-file}
 
-1. Ga naar `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
+1. Navigeren naar `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Zoek de [English locale.json file on GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), die de meest recente set standaardtekenreeksen bevat die in het product zijn opgenomen.
 1. Maak een .json-bestand voor uw specifieke landinstelling.
 1. In het nieuwe .json-bestand weerspiegelt u de structuur van het Engelse landinstellingsbestand.

@@ -3,9 +3,9 @@ title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken
 keywords: hoe u verzendactie voor een adaptief formulier selecteert, een adaptief formulier koppelt aan een SharePoint-lijst, een adaptief formulier aansluit op een SharePoint-documentbibliotheek, een adaptief formulier aansluit op een formuliergegevensmodel
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 6ebc40b501472025cafffa258e253a53139a0301
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3796'
 ht-degree: 0%
 
 ---
@@ -205,7 +205,7 @@ AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
 
 U kunt de gemaakte SharePoint List-configuratie in een adaptief formulier gebruiken om gegevens of het gegenereerde Document of Record in een SharePoint-lijst op te slaan. Voer de volgende stappen uit om een SharePoint-lijst in een adaptief formulier te gebruiken als:
 
-1. [Een formuliergegevensmodel maken met de configuratie Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
+1. [Een formuliergegevensmodel maken met Microsoft](/help/forms/create-form-data-models.md)
 1. [Het formuliergegevensmodel configureren voor het ophalen en verzenden van gegevens](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
 1. [Verzendactie configureren met een formuliergegevensmodel](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -215,10 +215,10 @@ Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven 
 >[!NOTE]
 >
 > In Microsoft® SharePoint List worden de volgende kolomtypen niet ondersteund:
-> * afbeeldingskolom
-> * metagegevenskolom
-> * persoonlijke kolom
-> * kolom externe gegevens
+* afbeeldingskolom
+* metagegevenskolom
+* persoonlijke kolom
+* kolom externe gegevens
 
 ## Verzenden met gebruik van formuliergegevensmodel {#submit-using-form-data-model}
 
@@ -259,11 +259,11 @@ Zoals in de onderstaande afbeelding wordt getoond: `param1` en `param2` worden d
 
 ![Rest Endpoint-verzendhandeling configureren](assets/action-config.png)
 
-U kunt **[!UICONTROL Enable POST request]** en geef een URL op om de aanvraag te posten. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld, `/content/forms/af/SampleForm.html`. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
+U kunt **[!UICONTROL Enable POST request]** en geef een URL op om de aanvraag te posten. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld: `/content/forms/af/SampleForm.html`. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
 >[!NOTE]
 >
->Als u de velden als parameters in een REST-URL wilt doorgeven, moeten alle velden verschillende elementnamen hebben, zelfs als de velden op verschillende deelvensters zijn geplaatst.
+Als u de velden als parameters in een REST-URL wilt doorgeven, moeten alle velden verschillende elementnamen hebben, zelfs als de velden op verschillende deelvensters zijn geplaatst.
 
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
@@ -340,7 +340,7 @@ AEM Forms aansluiten op uw Microsoft® OneDrive-opslag:
 
    >[!NOTE]
    >
-   > De **clientgeheim** het gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
+   De **clientgeheim** het gebied is verplicht of facultatief hangt van uw Azure Actieve de toepassingsconfiguratie van de Folder af. Als uw toepassing wordt gevormd om een cliëntgeheim te gebruiken, is het verplicht om het cliëntgeheim te verstrekken.
 
 1. Klik op **[!UICONTROL Connect]**. Bij een geslaagde verbinding wordt de `Connection Successful` wordt weergegeven.
 
@@ -348,8 +348,8 @@ AEM Forms aansluiten op uw Microsoft® OneDrive-opslag:
 
    >[!NOTE]
    >
-   >* Standaard, `forms-ootb-storage-adaptive-forms-submission` is aanwezig in OneDrive Container.
-   > * Een map maken als `forms-ootb-storage-adaptive-forms-submission`, indien nog niet aanwezig, klikt u op **Map maken**.
+   * Standaard, `forms-ootb-storage-adaptive-forms-submission` is aanwezig in OneDrive Container.
+   * Een map maken als `forms-ootb-storage-adaptive-forms-submission`, indien nog niet aanwezig, klikt u op **Map maken**.
 
 U kunt deze OneDrive-opslagconfiguratie nu gebruiken voor de verzendactie in een adaptief formulier.
 
@@ -360,8 +360,8 @@ U kunt de gemaakte OneDrive-opslagconfiguratie in een adaptief formulier gebruik
 
    >[!NOTE]
    >
-   > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw OneDrive-opslag hebt gemaakt.
-   > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
+   * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw OneDrive-opslag hebt gemaakt.
+   * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
 
 1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to OneDrive]**.
    ![OneDrive-GIF](/help/forms/assets/onedrive-video.gif)
@@ -403,8 +403,8 @@ U kunt de gemaakte Azure Storage Container-configuratie in een Adaptief formulie
 
    >[!NOTE]
    >
-   > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw OneDrive-opslag hebt gemaakt.
-   > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
+   * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw OneDrive-opslag hebt gemaakt.
+   * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
 
 1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to Azure Blob Storage]**.
    ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
@@ -469,7 +469,7 @@ Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt
 
 >[!NOTE]
 >
->Servervalidatie valideert het formuliermodel. U wordt aangeraden een aparte clientbibliotheek voor validaties te maken en deze niet te mengen met andere elementen, zoals HTML styling en DOM-bewerking in dezelfde clientbibliotheek.
+Servervalidatie valideert het formuliermodel. U wordt aangeraden een aparte clientbibliotheek voor validaties te maken en deze niet te mengen met andere elementen, zoals HTML styling en DOM-bewerking in dezelfde clientbibliotheek.
 
 ### Aangepaste functies ondersteunen in validatie-expressies {#supporting-custom-functions-in-validation-expressions-br}
 
