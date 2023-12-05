@@ -1,8 +1,8 @@
 ---
-title: Handleiding Snel aan de slag met de authoring van pagina's
+title: Handleiding Snel aan de slag voor het ontwerpen van pagina's
 description: Een snelle gids op hoog niveau waarmee u pagina-inhoud kunt gaan ontwerpen
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 4%
@@ -10,7 +10,7 @@ ht-degree: 4%
 ---
 
 
-# Handleiding Snel aan de slag met de authoring van pagina&#39;s {#quick-guide-to-authoring-pages}
+# Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s {#quick-guide-to-authoring-pages}
 
 Dit document is bedoeld als een snelle startgids op hoog niveau voor de belangrijkste paginaontwerphandelingen in AEM. Dit document:
 
@@ -20,7 +20,7 @@ Dit document is bedoeld als een snelle startgids op hoog niveau voor de belangri
 Zie voor meer informatie over ontwerpen met AEM:
 
 * [Concepten van authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
-* [Basisbewerkingen](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md)
 
 {{edge-delivery-authoring}}
 
@@ -103,7 +103,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
    * Selectiemodus openen met [de vereiste bron selecteren](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). Hoe u dit doet, hangt af van uw apparaat:
 
-      * Op een mobiel apparaat: tik en houd de kaart vast
+      * Op een mobiel apparaat: de kaart selecteren en ingedrukt houden
       * Op een desktopapparaat: gebruik de [snelle actie](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) aangeduid met het verdeelstreepje:
 
    * De kaart wordt bedekt met een vinkje om aan te geven dat de pagina is geselecteerd.
@@ -148,7 +148,7 @@ Uw pagina bewerken:
    * [De inhoud van een bestaande component bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) op de pagina:
 
       * Open de componentwerkbalk met een van de twee knoppen. Gebruik de **Bewerken** (potlood) pictogram om het dialoogvenster te openen.
-      * Open de editor op plaats voor de component met Tikken en vasthouden of dubbelklikken. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
+      * Open de op plaats-editor voor de component met select-and-hold of een dubbelklik. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
       * Als u alle beschikbare acties wilt weergeven, opent u de modus Volledig scherm met:
 
         ![Knop Volledig scherm](/help/sites-cloud/authoring/assets/full-screen.png)

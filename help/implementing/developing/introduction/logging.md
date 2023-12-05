@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2720'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie 
 <tbody>
 <tr>
 <td>Datum en tijd</td>
-<td>29.04.2020 21:50:13.398</td>
+<td>29.4.2020 21:50:13,398</td>
 </tr>
 <tr>
 <td>as a Cloud Service node-id AEM</td>
@@ -190,14 +190,14 @@ Hieronder volgen voorbeelden van de aanbevolen logboekconfiguraties (met behulp 
 
 AEM as a Cloud Service HTTP- verzoekregistreren verstrekt inzicht in de HTTP- verzoeken die aan AEM en hun reacties van HTTP in tijdorde worden gemaakt. Dit logboek is nuttig om de Verzoeken van HTTP te begrijpen die aan AEM worden gemaakt en de orde zij worden verwerkt en aan geantwoord.
 
-De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- verzoek en antwoordparen door hun IDs, die door de numerieke waarde in de steunen wordt aangegeven. Merk op dat vaak de verzoeken en hun overeenkomstige reacties andere HTTP- verzoeken en reacties tussen hen in het logboek worden geworpen.
+De sleutel tot het begrip van dit logboek is het in kaart brengen van de HTTP- verzoek en antwoordparen door hun IDs, die door de numerieke waarde in de steunen wordt aangegeven. Vaak hebben verzoeken en hun overeenkomstige reacties andere HTTP- verzoeken en reacties tussen hen in het logboek worden geworpen.
 
 **Voorbeeldlogboek**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -285,7 +285,7 @@ Deze reeks logboeken verstrekt inzichten in HTTP- verzoeken aan de AEM as a Clou
 
 ### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
 
-Het toegangslogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke HTTP- aanvraag die de Publish server/de Verzender van het Web van de rij bereikt. Merk op dat de verzoeken die van upstream CDN worden gediend niet in deze logboeken worden weerspiegeld.
+Het toegangslogboek van de Server van het Web van Apache HTTP verstrekt verklaringen voor elke HTTP- aanvraag die de Publish server/de Verzender van het Web van de rij bereikt. De verzoeken die van upstream CDN worden gediend worden niet weerspiegeld in deze logboeken.
 
 Zie de informatie over de indeling van het foutenlogboek in het dialoogvenster [officiële documentatie van apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -454,7 +454,7 @@ Define REWRITE_LOG_LEVEL debug
 </tr>
 <tr>
 <td>Duur</td>
-<td>1949ms</td>
+<td>1949 ms</td>
 </tr>
 <tr>
 <td>Landbouwbedrijf</td>
@@ -611,7 +611,7 @@ Klanten die Splunk-accounts hebben, kunnen via een ticket voor klantenondersteun
 
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
-Merk op dat het Splunk door:sturen nog geen CDN- logboeken steunt.
+Splunk door:sturen ondersteunt nog geen CDN-logboeken.
 
 ### Splunk Forwarding inschakelen {#enabling-splunk-forwarding}
 

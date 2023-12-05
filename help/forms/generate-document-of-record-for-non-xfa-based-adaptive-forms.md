@@ -2,9 +2,9 @@
 title: Hoe te om een document van verslag (DoR) voor AEM Forms te produceren?
 description: Leer een sjabloon te genereren voor een Document of Record (DoR) voor Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 00a905a08de1c14ef0ded7475d2f95abacc50af1
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '3984'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Upload uw XFA-sjabloon (XDP-bestand) naar uw AEM Forms-instantie. Voer de volgen
 
 1. Klik in de auteur van Experience Manager op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
 1. Selecteer een formulier en klik op **[!UICONTROL Properties]**.
-1. Tik in het venster Eigenschappen op **[!UICONTROL Form Model]**.
+1. Selecteer in het venster Eigenschappen de optie **[!UICONTROL Form Model]**.
 1. Op de  **[!UICONTROL Form Model]** tabblad, in de **[!UICONTROL Select From]** vervolgkeuzelijst, selecteert u **[!UICONTROL Schema]** of **[!UICONTROL None]**. U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
 1. Selecteer in het gedeelte Document of Record Template Configuration van het tabblad Formuliermodel de optie **Formuliersjabloon koppelen als Document of Record-sjabloon**. Als u deze optie selecteert, worden alle XFA-sjablonen (XDP-bestanden) die op uw computer beschikbaar zijn, weergegeven. Selecteer het juiste bestand. Zorg er ook voor dat hetzelfde schema (gegevensschema) wordt gebruikt voor Adaptief formulier en geselecteerde XFA-sjabloon (XDP-bestand).
-1. Klik op **[!UICONTROL Done.]**
+1. Klikken **[!UICONTROL Done.]**
 
 Het adaptieve formulier is nu geconfigureerd voor het gebruik van een XDP-bestand als sjabloon voor het document of record. De volgende stap is: [Aangepaste formuliercomponenten binden met de bijbehorende sjabloonvelden](#bind-adaptive-form-components-with-template-fields).
 
@@ -61,10 +61,10 @@ Upload uw Adobe Acrobat PDF (Acroform) naar uw AEM Forms-exemplaar. Voer de volg
 
 1. Klik in de auteur van Experience Manager op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
 1. Selecteer een formulier en klik op **[!UICONTROL Properties]**.
-1. Tik in het venster Eigenschappen op **[!UICONTROL Form Model]**.
+1. Selecteer in het venster Eigenschappen de optie **[!UICONTROL Form Model]**.
 1. Op de  **[!UICONTROL Form Model]** tabblad, in de **[!UICONTROL Select From]** vervolgkeuzelijst, selecteert u **[!UICONTROL Schema]** of **[!UICONTROL None]**. U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
 1. Selecteer in het gedeelte Document of Record Template Configuration van het tabblad Formuliermodel de optie **Formuliersjabloon koppelen als Document of Record-sjabloon**. Als u deze optie selecteert, worden alle Acrobat PDF (Acroform) die op uw computer beschikbaar zijn, weergegeven. Selecteer het juiste bestand.
-1. Klik op **[!UICONTROL Done.]**
+1. Klikken **[!UICONTROL Done.]**
 
 Het adaptieve formulier is nu geconfigureerd voor het gebruik van een Acrobat-formulier als sjabloon voor het document met records. De volgende stap is: [Aangepaste formuliercomponenten binden met de bijbehorende sjabloonvelden](#bind-adaptive-form-components-with-template-fields).
 
@@ -82,10 +82,10 @@ Voer de volgende stappen uit om een adaptief formulier te configureren zodat aut
 
 1. Klik in de auteur van Experience Manager op **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents].**
 1. Selecteer een formulier en klik op **[!UICONTROL Properties]**.
-1. Tik in het venster Eigenschappen op **[!UICONTROL Form Model]**.
+1. Selecteer in het venster Eigenschappen de optie **[!UICONTROL Form Model]**.
 1. Op de  **[!UICONTROL Form Model]** tabblad, in de **[!UICONTROL Select From]** vervolgkeuzelijst, selecteert u **[!UICONTROL Schema]** of **[!UICONTROL None]**. U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
 1. Selecteer in het gedeelte Document of Record Template Configuration van het tabblad Formuliermodel de optie **Document van record genereren**.
-1. Klik op **[!UICONTROL Done.]**
+1. Klikken **[!UICONTROL Done.]**
 
 ## Aangepaste formuliercomponenten binden met sjabloonvelden {#bind-adaptive-form-components-with-template-fields}
 
@@ -310,11 +310,11 @@ Een basissjabloon wordt gebruikt om de kop-, voettekst-, opmaak- en vormgeving v
 
 Ga als volgt te werk in Forms Designer om een basissjabloon te maken.
 
-1. Klik op **[!UICONTROL File]** > **[!UICONTROL New]**.
+1. Klikken **[!UICONTROL File]** > **[!UICONTROL New]**.
 1. Selecteer de **[!UICONTROL Based on a template]** -optie.
 
 1. Selecteer de **[!UICONTROL Forms - Document of Record]** categorie.
-1. Selecteer **[!UICONTROL DoR Base Template]**.
+1. Selecteren **[!UICONTROL DoR Base Template]**.
 1. Klikken **[!UICONTROL Next]** en verstrekt de vereiste informatie.
 
 1. (Optioneel) Wijzig de opmaak en weergave van de velden die u wilt toepassen op de velden in het Document of Record.
@@ -335,10 +335,10 @@ Tijdens het genereren van een Document of Record kunt u de brandinggegevens voor
 
 Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt lokaliseren, moet u controleren of de landinstelling van de browser correct is ingesteld. Voer de volgende stappen uit om de brandinggegevens van Document of Record aan te passen:
 
-1. Selecteer een deelvenster (hoofddeelvenster) in het document of Record en tik vervolgens op ![vormen](assets/configure.png).
-1. Tikken ![dortab](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
+1. Selecteer een deelvenster (hoofddeelvenster) in het document of record en selecteer vervolgens ![vormen](assets/configure.png).
+1. Selecteren ![dortab](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
 1. Selecteer de standaardsjabloon of een aangepaste sjabloon voor het weergeven van het Document of Record. Als u de standaardsjabloon selecteert, wordt een miniatuurvoorvertoning van het Document of Record weergegeven onder de vervolgkeuzelijst Sjabloon.
-1. Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon selecteert, worden enkele of alle volgende eigenschappen weergegeven op het tabblad Document of Record. Geef de onderstaande eigenschappen op om de weergave van het Document of Record te definiëren:
+1. Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon selecteert, worden enkele van de volgende eigenschappen of alle eigenschappen weergegeven op het tabblad Document of Record. Geef de onderstaande eigenschappen op om de weergave van het Document of Record te definiëren:
 
    1. **Basiseigenschappen**:
       * **Sjabloon**: Als u een aangepaste sjabloon wilt selecteren, bladert u door een selectie van een XDP-bestand in uw [!DNL AEM Forms] server. Als u een sjabloon wilt gebruiken die nog niet op uw [!DNL AEM Forms] server, moet u eerst de XDP naar uw [!DNL AEM Forms] server.
@@ -384,7 +384,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
    </proto>
    ```
 
-1. Tik op **[!UICONTROL Done]**.
+1. Als u de wijzigingen in de branding wilt opslaan, selecteert u **[!UICONTROL Done]**.
 
 ## Document met ondersteuning voor records in de Adaptive Form Editor {#dor-support-in-adaptiveform}
 
@@ -401,7 +401,7 @@ Voer de volgende stappen uit vanuit de auteur-instantie van de Adaptieve formuli
 
    * **[!UICONTROL Generate Document of Record]**: Als deze optie is geselecteerd, wordt de [!UICONTROL Document of Record] wordt automatisch gegenereerd voor uw adaptieve formulier.
 
-1. Tikken ![Opslaan](/help/forms/assets/check-button.png) om de eigenschappen op te slaan.
+1. Selecteren ![Opslaan](/help/forms/assets/check-button.png) om de eigenschappen op te slaan.
 
 ![Document met ondersteuning voor recordsjablonen](/help/forms/assets/dor-templatesupport.png)
 
@@ -487,7 +487,7 @@ Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een docume
     }
    ```
 
-   Bijvoorbeeld,
+   Bijvoorbeeld:
 
    ```JSON
     {

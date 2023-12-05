@@ -5,9 +5,9 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ U kunt de **Krabbelhandtekening** en **Handtekeningstap** te tekenen (krabbelen)
 * **C:** Klik op de knop **Geolocation** pictogram om geolocatie toe te voegen samen met de handtekening.
 * **D:** Klik op de knop **Toetsenbord** pictogram om uw naam op canvas te typen.
 
-Zodra u gereed tikt ![aem_forms_save](assets/aem_forms_save.png) in het venster Krabbelhandtekening kunt u de handtekening niet bewerken. Als u de handtekening wilt bewerken, moet u de huidige handtekening negeren en opnieuw ondertekenen met de bovenstaande optie Penseel/toetsenbord.
+Zodra u Gereed selecteert ![aem_forms_save](assets/aem_forms_save.png) in het venster Krabbelhandtekening kunt u de handtekening niet bewerken. Als u de handtekening wilt bewerken, moet u de huidige handtekening negeren en opnieuw ondertekenen met de bovenstaande optie Penseel/toetsenbord.
 
-U kunt op de knop **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram om de hoogte-breedteverhouding van het canvas Krabbelen in te stellen.
+U kunt de **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram om de hoogte-breedteverhouding van het canvas Krabbelen in te stellen.
 * Als de hoogte-breedteverhouding van het canvas voor Krabbelhandtekeningen kleiner is dan 1, worden de gegevens over de geolocatie toegevoegd onder aan het canvas voor Krabbelhandtekeningen.
 
 
@@ -55,20 +55,20 @@ U kunt op de knop **Configureren** ![Configuratiepictogram](assets/configure.png
 
 1. Maak een optie Document of Record ingeschakeld of maak een op een formuliersjabloon gebaseerd adaptief formulier. Voor geleidelijke informatie, zie [Een adaptief formulier maken](creating-adaptive-form.md).
 1. Sleep de **Krabbelhandtekening** van componentbrowser naar het adaptieve formulier.
-1. Tik op de knop **Configureren** ![vormen](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de component Krabbelen handtekening worden weergegeven. Configureer eigenschappen van de component Krabbelhandtekening.
+1. Selecteer de **Configureren** ![vormen](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de component Krabbelen handtekening worden weergegeven. Configureer eigenschappen van de component Krabbelhandtekening.
 1. Sleep de component Signature Step van de componentbrowser naar het Adaptieve formulier.
 
    >[!NOTE]
    >
    >De component voor de stap Handtekening gebruikt de volledige breedte die beschikbaar is voor het formulier. Het wordt aanbevolen geen andere component op te nemen in de sectie die de component voor de stap Handtekening bevat.
 
-1. Tik in de inhoudbrowser op **Formuliercontainer** en tik op de knop **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeren naar **Aangepaste formuliercontainer** > **Elektronische handtekening** en deselecteer de **Adobe Sign inschakelen** -optie. Tik op Gereed ![aem_forms_save](assets/aem_forms_save.png) om de wijzigingen op te slaan.
+1. Selecteer in de inhoudbrowser de optie **Formuliercontainer** en selecteert u de **Configureren** ![Configuratiepictogram](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeren naar **Aangepaste formuliercontainer** > **Elektronische handtekening** en deselecteer de **Adobe Sign inschakelen** -optie. Selecteer Gereed ![aem_forms_save](assets/aem_forms_save.png) om de wijzigingen op te slaan.
 
    >[!NOTE]
    >
    >Wanneer u een component Handtekeningstap toevoegt aan een adaptief formulier, wordt de optie Adobe Sign inschakelen automatisch geselecteerd.
 
-1. Tik op de knop **Configureren** ![vormen](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen voor stap Handtekening worden weergegeven. Configureer de volgende eigenschappen:
+1. Selecteer de **Configureren** ![vormen](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen voor stap Handtekening worden weergegeven. Configureer de volgende eigenschappen:
 
    * **Elementnaam**: Geef een naam op voor de component.
 
@@ -78,7 +78,7 @@ U kunt op de knop **Configureren** ![Configuratiepictogram](assets/configure.png
 
    * **CSS-klasse**: Geef eventueel de CSS-klasse van de clientbibliotheek op. Adobe raadt u aan [thema&#39;s](themes.md) en [inline stijlen](inline-style-adaptive-forms.md) in plaats van CSS-klasse.
 
-   Tik op Gereed ![aem_forms_save](assets/aem_forms_save.png) om de wijzigingen op te slaan. De handtekening is geconfigureerd.
+   Selecteer Gereed ![aem_forms_save](assets/aem_forms_save.png) om de wijzigingen op te slaan. De handtekening is geconfigureerd.
 
    Wanneer u nu een formulier invult, wordt een PDF-versie van het adaptieve formulier weergegeven en worden opties voor de ondertekening van het PDF-document weergegeven. Zie voor meer informatie [Een adaptief formulier ondertekenen met behulp van een scripthandtekening](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 

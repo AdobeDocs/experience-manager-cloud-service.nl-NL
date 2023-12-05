@@ -3,9 +3,9 @@ title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: OSGi-configuratie met geheime waarden en milieu-specifieke waarden
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3265'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ De JSON geformatteerde OSGi configuratiedossiers kunnen door hand in het AEM pro
 1. In uw winde, open `ui.apps` project, bepaal de plaats van of creeer de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi moet uitvoeren
 1. In deze configuratiemap maakt u een `<PID>.cfg.json` bestand. PID is de Persistente Identiteit van de component OSGi. Het is gewoonlijk de volledige klassennaam van de OSGi componentimplementatie. Bijvoorbeeld:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Merk op dat OSGi de namen van de configuratiefabrieksdossiers gebruiken `<factoryPID>-<name>.cfg.json` naamgevingsconventie
+Voor de OSGi-configuratiefabrieksbestandsnamen wordt het `<factoryPID>-<name>.cfg.json` naamgevingsconventie
 1. De nieuwe openen `.cfg.json` dossier, en bepaal de sleutel/waardecombinaties voor het bezit OSGi en waardeparen, na [JSON OSGi-configuratie-indeling](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Sla uw wijzigingen op in de nieuwe `.cfg.json` file
 1. Voeg en bewijs uw nieuw OSGi configuratiedossier aan Git toe
@@ -191,14 +191,14 @@ De AEM QuickStart Jar&#39;s AEM Web Console van SDK kan worden gebruikt vormt co
 
 1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als beheerder
 1. Navigeren naar **OSGi** > **Configuratie**
-1. Om te vormen, bepaal de plaats van de component OSGi en tik zijn titel om uit te geven
+1. Om te vormen, bepaal de plaats van de component OSGi en selecteer zijn te uitgeven titel
    ![OSGi-configuratie](./assets/configuring-osgi/configuration.png)
 1. Bewerk indien nodig de OSGi-waarden van het configuratiebezit via de webinterface
 1. Registreer de Persistent Identity (PID) op een veilige plaats. Dit wordt later gebruikt om de configuratie te produceren OSGi JSON
-1. Tik op Opslaan
+1. Selecteer Opslaan
 1. Ga naar OSGi > OSGi Installer Configuration Printer
 1. Plak in PID die in Stap 5 wordt gekopieerd, zorg ervoor de Formaat van de Rangschikking wordt geplaatst aan &quot;OSGi Configurator JSON&quot;
-1. Afdrukken tikken
+1. Afdrukken selecteren
 1. De configuratie OSGi in formaat JSON zal in de Serialized sectie van de Eigenschappen van de Configuratie tonen
    ![OSGi-installateursconfiguratieserver](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. In uw winde, open `ui.apps` project, bepaal de plaats van of creeer de config omslag (`/apps/.../config.<runmode>`) die de runmodes richt de nieuwe configuratie OSGi moet uitvoeren.

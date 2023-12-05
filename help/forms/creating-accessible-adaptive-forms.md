@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '1997'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Het Ultramarijn-Toegankelijke thema is een verwijzingsthema. Hiermee kunt u demo
 
 1. Download het themapakket.
 1. Navigeren naar **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigatie](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** op uw AEM.
-1. Tik op **[!UICONTROL Create]** > **[!UICONTROL File Upload]**. Selecteer en upload het bestand x Ultramarine-Accessible-Theme.zip. Het thema wordt geüpload naar uw AEM.
+1. Selecteren **[!UICONTROL Create]** > **[!UICONTROL File Upload]**. Selecteer en upload het bestand x Ultramarine-Accessible-Theme.zip. Het thema wordt geüpload naar uw AEM.
 
 ## Een adaptief formulier toegankelijk maken
 
@@ -58,8 +58,8 @@ U moet de nadruk leggen op vier belangrijke aspecten: toetsenbordnavigatie, kleu
 Pas het Ultramarijn-Toegankelijke thema op uw bestaande AanpassingsVorm toe. Het thema toepassen:
 
 1. Open het adaptieve formulier voor bewerking.
-1. Selecteer een component en tik op het bovenliggende pictogram. Tik in het contextmenu **[!UICONTROL Adaptive Form Container]** en tik dan het configpictogram.
-1. Selecteer het Ultramarijn-Toegankelijke thema in eigenschappen browser en tik **[!UICONTROL Save]** pictogram.
+1. Selecteer een component en selecteer het bovenliggende pictogram. Selecteer in het contextmenu **[!UICONTROL Adaptive Form Container]** en selecteer dan vormen pictogram.
+1. Selecteer het Ultramarijn-Toegankelijke thema in eigenschappen browser en selecteer **[!UICONTROL Save]** pictogram.
 1. Vernieuw het browservenster. Het thema wordt toegepast op het adaptieve formulier.
 
 Nadat u een toegankelijk thema hebt toegepast, voert u de onderstaande aanvullende oplossingen uit. De oplossingen zijn naast toegankelijkheidsoplossingen die in het toegankelijke thema worden behandeld:
@@ -100,7 +100,7 @@ Het label dat door schermlezers wordt waargenomen, hoeft niet noodzakelijkerwijs
 
 Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 
-1. Selecteer een component en tik op ![cmppr](assets/cmppr.png).
+1. Selecteer een component en selecteer ![cmppr](assets/cmppr.png).
 1. Klikken **[!UICONTROL Accessibility]** in het zijpaneel om de gewenste toegankelijkheidsoptie te kiezen.
 
 ### Toegankelijkheidsopties in formuliercomponenten {#accessibility-options-in-form-components}
@@ -128,7 +128,7 @@ Afbeeldingen kunnen sommige gebruikers helpen het begrip te verbeteren. Voor geb
 
 Zorg ervoor dat in de tekst het object en het doel ervan in het formulier worden beschreven. Een schermlezer leest deze alternatieve tekst wanneer een afbeelding wordt aangetroffen. Voor een afbeelding moet altijd een alternatieve tekst worden opgegeven.
 
-Selecteer een afbeeldingscomponent en tik op ![cmppr](assets/cmppr.png). Geef in het zijpaneel onder Eigenschappen alternatieve tekst op voor een afbeelding.
+Selecteer een afbeeldingscomponent en selecteer ![cmppr](assets/cmppr.png). Geef in het zijpaneel onder Eigenschappen alternatieve tekst op voor een afbeelding.
 
 ![Alternatieve tekst voor een afbeelding](assets/image-properties.png)
 
@@ -157,7 +157,7 @@ De volgende sneltoetsen zijn beschikbaar in [!DNL AEM Forms].
 | De gevulde gegevens in een formulier opnieuw instellen | Alt+R |
 | Een formulier verzenden | Alt+S |
 
-Daarnaast zijn er verschillende sneltoetsen beschikbaar voor de **[!UICONTROL Date Picker]** in Adaptief Forms. Tik op de knop **[!UICONTROL Date Picker]** component en tik ![Configureren](assets/configure-icon.svg) om de eigenschappen te openen. In de **[!UICONTROL Patterns]** selecteert u een weergavepatroon met de **[!UICONTROL Type]** en **[!UICONTROL Pattern]** vervolgkeuzelijsten. Sla de eigenschappen op om het gebruik van sneltoetsen voor de **[!UICONTROL Date Picker]** component.
+Daarnaast zijn er verschillende sneltoetsen beschikbaar voor de **[!UICONTROL Date Picker]** in Adaptief Forms. Als u de sneltoetsen wilt inschakelen, selecteert u de **[!UICONTROL Date Picker]** en selecteert u ![Configureren](assets/configure-icon.svg) om de eigenschappen te openen. In de **[!UICONTROL Patterns]** selecteert u een weergavepatroon met de **[!UICONTROL Type]** en **[!UICONTROL Pattern]** vervolgkeuzelijsten. Sla de eigenschappen op om het gebruik van sneltoetsen voor de **[!UICONTROL Date Picker]** component.
 
 De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adaptive Forms:
 

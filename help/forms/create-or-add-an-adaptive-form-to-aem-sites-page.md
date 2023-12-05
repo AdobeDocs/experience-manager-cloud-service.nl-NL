@@ -4,9 +4,9 @@ description: Ontdek hoe u een adaptief formulier kunt maken of toevoegen aan uw 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3119'
+source-wordcount: '3088'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
 * **[Een adaptief formulier converteren naar fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Converteer een adaptief formulier dat aan een AEM Sites-pagina is toegevoegd naar een Experience-fragment en gebruik het formulier opnieuw op meerdere AEM Sites-pagina&#39;s.
 
-* **[Formulieren op basis van goedgekeurde sjablonen maken en toevoegen aan een AEM Sites-pagina:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** U kunt vooraf goedgekeurde sjablonen gebruiken om snel een adaptieve Forms te maken die aansluit bij de richtlijnen en ontwerpstandaarden van uw organisatie voor het brandmerken. Deze optie is alleen beschikbaar voor Adaptive Forms die is gemaakt met de Adaptive Forms Editor of de Adaptive Forms - Embed-component.
+* **[Formulieren op basis van goedgekeurde sjablonen maken en toevoegen aan een AEM Sites-pagina:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** U kunt vooraf goedgekeurde sjablonen gebruiken om snel een adaptieve Forms te maken die is afgestemd op de richtlijnen en ontwerpstandaarden van uw organisatie. Deze optie is alleen beschikbaar voor Adaptive Forms die is gemaakt met de Adaptive Forms Editor of de Adaptive Forms - Embed-component.
 
 * **[Bestaande formulieren toevoegen aan een AEM Sites-pagina:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** U kunt formulieren die u al hebt gemaakt, eenvoudig integreren in uw websites, zodat bezoekers direct met hen kunnen communiceren. Deze optie is alleen beschikbaar voor Adaptive Forms die is gemaakt met de Adaptive Forms Editor of de Adaptive Forms - Embed-component.
 

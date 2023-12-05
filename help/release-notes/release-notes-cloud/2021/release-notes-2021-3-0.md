@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ De volgende release is gepland voor 8 april 2021.
 
 * Gebruikers met de vereiste machtigingen kunnen nu een programma bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen:
 
-   * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa of vice versa toe.
+   * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa toe of omgekeerd.
    * Sites of middelen verwijderen uit een bestaand programma met zowel sites als middelen.
    * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
 
@@ -130,7 +130,7 @@ De volgende release is gepland voor 8 april 2021.
 
 * Alle bestaande productiepijpleidingen worden automatisch ingeschakeld met de stap Experience Audit.
 
-## De tool Content Transfer {#content-transfer-tool}
+## Inhoud overbrengen {#content-transfer-tool}
 
 ### Releasedatum {#release-date-ctt}
 
@@ -163,7 +163,7 @@ De releasedatum voor de analyse van best practices v2.1.8 is 22 maart 2021.
 
 * Mogelijkheid om ACS-gemeenschappelijke bevindingen uit het BPA- rapport in het gebruikersinterface en uit het rapport uit te filteren dat als CSV- dossier wordt uitgevoerd.
 
-## Tools voor herstructurering van code {#code-refactoring-tools}
+## Gereedschappen voor het verfijnen van code {#code-refactoring-tools}
 
 ### Nieuw in de Hulpmiddelen van de Refactoring van de Code {#what-is-new-crt}
 

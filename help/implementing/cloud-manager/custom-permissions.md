@@ -2,9 +2,9 @@
 title: Aangepaste machtigingen
 description: Leer hoe u douanetoestemmingen kunt gebruiken om profielen van de douanetoestemming met configureerbare toestemmingen tot stand te brengen om toegang tot programma's, pijpleidingen, en milieu's voor de gebruikers van de Managers van de Wolk te beperken.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1525'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Voor het maken en gebruiken van uw eigen aangepaste machtigingen zijn drie stapp
 1. [Wijs aangepaste machtigingen toe aan het productprofiel.](#assign-permissions)
 1. [Gebruikers toewijzen aan het productprofiel.](#assign-users)
 
-In deze sectie worden deze stappen beschreven. Het kan handig zijn te verwijzen naar de [Voorwaarden](#terms) en [Configureerbare machtigingen](#configurable-permissions) secties als u uw eigen aangepaste machtigingen maakt.
+In deze sectie worden deze stappen beschreven. Het kan handig zijn om te zien [Voorwaarden](#terms) en [Configureerbare machtigingen](#configurable-permissions) secties als u uw eigen aangepaste machtigingen maakt.
 
 >[!NOTE]
 >

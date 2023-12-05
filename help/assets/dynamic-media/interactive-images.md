@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4141'
-ht-degree: 1%
+source-wordcount: '4039'
+ht-degree: 0%
 
 ---
 
 # Interactieve afbeeldingen{#interactive-images}
 
-U kunt statische afbeeldingen eenvoudig verrijken en aantrekkelijke ervaringen voor klanten creëren door &#39;onoverzichtelijke&#39; hotspots naar een afbeelding te slepen. Slepbare hotspots combineren aanvullende informatie over een product of service met een directe, verkooppuntfunctie &#39;Toevoegen aan winkelwagentje&#39; of &#39;Kopen&#39;. Klanten kunnen op deze hotspots tikken die rechtstreeks zijn gekoppeld aan het product of de service, deze toevoegen aan een winkelwagentje of zijn gekoppeld aan een webpagina. Directe ervaringen zoals deze verhogen de betrokkenheid van klanten en conversies op uw website.
+U kunt statische afbeeldingen eenvoudig verrijken en aantrekkelijke ervaringen voor klanten creëren door &#39;onoverzichtelijke&#39; hotspots naar een afbeelding te slepen. Slepbare hotspots combineren aanvullende informatie over een product of service met een directe, verkooppuntfunctie &#39;Toevoegen aan winkelwagentje&#39; of &#39;Kopen&#39;. Klanten kunnen deze hotspots selecteren die rechtstreeks aan het product of de service zijn gekoppeld, deze aan een winkelwagentje toevoegen of aan een webpagina zijn gekoppeld. Directe ervaringen zoals deze verhogen de betrokkenheid van klanten en conversies op uw website.
 
 Hier volgt een blaasbare banner met een pop-upvenster van QuickView. Een gebruiker activeert de Snelle weergave door op de cirkel of de hotspot op het model te tikken.
 
@@ -179,20 +179,20 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
 **Een voorinstelling voor een interactieve afbeeldingsviewer maken:**
 
 1. Ga in het linkerspoor naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
-1. Tik rechtsboven op de pagina op **[!UICONTROL Create]**.
+1. Selecteer rechtsboven in de pagina de optie **[!UICONTROL Create]**.
 1. Typ in het dialoogvenster Nieuwe voorinstelling voor viewer een naam om de voorinstelling voor de interactieve bannerviewer te beschrijven.
 
    Deze titel wordt weergegeven op de pagina met de lijst met voorinstellingen voor viewers nadat u de titel hebt opgeslagen.
 
 1. Selecteer in het vervolgkeuzemenu Uitgebreid mediatype de optie **[!UICONTROL Interactive Image]**.
-1. Selecteer **[!UICONTROL Create]**.
-1. Tik op de pagina Voorinstelling viewer bewerken op de knop **[!UICONTROL Appearance]** tab.
+1. Selecteren **[!UICONTROL Create]**.
+1. Selecteer op de pagina Voorinstelling viewer bewerken de optie **[!UICONTROL Appearance]** tab.
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op het pictogram Asset Picker om uw eigen hotspot-afbeelding te uploaden die u voor afbeeldingen wilt gebruiken. Navigeer op de pagina Inhoud selecteren naar de gewenste hotspot-afbeelding en selecteer deze. Selecteer het pictogram Vinkje in de rechterbovenhoek.
-   * Tik op het pictogram Hotspot-galerie om een vooraf gedefinieerde hotspot-afbeelding te selecteren. Tik in het palet van de hotspot op de hotspot die u wilt gebruiken.
+   * Als u uw eigen hotspot-afbeelding wilt uploaden die u voor afbeeldingen wilt gebruiken, selecteert u het pictogram Asset Picker. Navigeer op de pagina Inhoud selecteren naar de gewenste hotspot-afbeelding en selecteer deze. Selecteer het pictogram Vinkje in de rechterbovenhoek.
+   * Als u een vooraf gedefinieerde hotspot-afbeelding wilt selecteren, selecteert u het pictogram Hotspot-galerie. Selecteer in het palet van de hotspot de hotspot die u wilt gebruiken.
 
-1. Tik rechtsboven op de pagina op **[!UICONTROL Save]**.
+1. Selecteer rechtsboven in de pagina de optie **[!UICONTROL Save]**.
 
    Zorg ervoor dat u de nieuwe viewervoorinstelling publiceert.
 
@@ -247,44 +247,44 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 1. Navigeer in de weergave Elementen naar de afbeeldingsbanner die u interactief wilt maken.
 1. Voer een van de volgende handelingen uit:
 
-   * Houd de afbeelding aan en tik vervolgens op **[!UICONTROL Select]** (vinkje). Tik op de werkbalk op **[!UICONTROL Edit]**.
+   * Houd de aanwijzer boven de afbeelding en selecteer vervolgens **[!UICONTROL Select]** (vinkje). Selecteer op de werkbalk de optie **[!UICONTROL Edit]**.
 
-   * Houd de afbeelding aan en tik vervolgens op **[!UICONTROL More actions]** (pictogram met drie punten) **[!UICONTROL > Edit]**.
+   * Houd de aanwijzer boven de afbeelding en selecteer vervolgens **[!UICONTROL More actions]** (pictogram met drie punten) **[!UICONTROL > Edit]**.
 
-   * Tik op de afbeelding om deze te openen op de pagina Detailweergave. Tik in de werkbalk op **[!UICONTROL Edit]**.
+   * Selecteer de afbeelding om deze te openen op de pagina Detailweergave. Selecteer in de werkbalk de optie **[!UICONTROL Edit]**.
 
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Add Hotspot]** (vingertikpictogram) om de pagina Hotspotbeheer te openen.
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Hotspot]**.
+1. Selecteer in de linkerbovenhoek van de pagina de optie **[!UICONTROL Add Hotspot]** (vinger selecteren pictogram) om de pagina Hotspot-beheer te openen.
+1. Selecteer in de linkerbovenhoek van de pagina de optie **[!UICONTROL Hotspot]**.
 
-   1. Tik in de linkerbovenhoek van de pagina Hotspot Management (Hotspot-beheer) op **[!UICONTROL Hotspot]**.
-   1. Tik in de afbeelding op een locatie waar u de hotspot wilt weergeven. Sleep indien nodig de hotspot om de locatie ervan aan te passen. Of gebruik de pijltoetsen op het toetsenbord om de positie van een geselecteerde hotspot te bepalen.
+   1. Selecteer in de linkerbovenhoek van de pagina Hotspot-beheer de optie **[!UICONTROL Hotspot]**.
+   1. Selecteer in de afbeelding een locatie waar u de hotspot wilt weergeven. Sleep indien nodig de hotspot om de locatie aan te passen. Of gebruik de pijltoetsen op het toetsenbord om de positie van een geselecteerde hotspot te bepalen.
    1. Voeg desgewenst meer hotspots toe door de stappen a en b te herhalen.
-   1. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u deze in de afbeelding en tikt u op **[!UICONTROL Delete]** (prullenbakpictogram) onder het pictogram **[!UICONTROL Hotspots]** kop.
+   1. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u deze in de afbeelding en selecteert u vervolgens **[!UICONTROL Delete]** (prullenbakpictogram) onder het pictogram **[!UICONTROL Hotspots]** kop.
 
 1. Typ in het tekstveld Naam de naam van de hotspot. Deze naam wordt ook weergegeven in de vervolgkeuzelijst Geselecteerde hotspot.
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer **[!UICONTROL Quickview]**.
+   * Selecteren **[!UICONTROL Quickview]**.
 
-      * Als u een Experience Manager Sites- of eCommerce-klant bent, selecteert u het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Selecteer het product dat u wilt gebruiken en tik vervolgens op **Selecteren** rechtsboven op de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
+      * Als u een Experience Manager Sites- of eCommerce-klant bent, selecteert u het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Selecteer het product dat u wilt gebruiken en selecteer **Selecteren** rechtsboven op de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
       * Als u *niet* een Experience Manager Sites- of eCommerce-klant
 
          * Zie [Hotspotvariabelen identificeren](#optional-identifying-hotspot-variables); u moet deze variabelen definiëren.
          * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU van het product. De ingevoerde waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening. Het zorgt ervoor dat het systeem weet om geplakte hotspot met een bepaalde Snelle mening van SKU te associëren.
-         * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]**. Geef in het tekstveld een extra variabele op. Bijvoorbeeld: `category=Mens` is een toegevoegde variabele.
+         * (Optioneel) Als er andere variabelen in de Snelle weergave zijn die worden gebruikt om een product verder te identificeren, selecteert u **[!UICONTROL Add Generic Variable]**. Geef in het tekstveld een extra variabele op. Bijvoorbeeld: `category=Mens` is een toegevoegde variabele.
 
-   * Selecteer **[!UICONTROL Hyperlink]**.
+   * Selecteren **[!UICONTROL Hyperlink]**.
 
-      * Tik als u een Experience Manager Sites-klant op het pictogram Sitekiezer (map). Navigeer naar een URL. De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
+      * Als u een Experience Manager Sites-klant bent, selecteert u het pictogram Site-kiezer (map). Navigeer naar een URL. De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
       * Als u een zelfstandige klant bent, geeft u in het tekstveld HREF het volledige URL-pad naar een gekoppelde webpagina op.
 
    Zorg ervoor dat u opgeeft of u de koppeling wilt openen in een nieuw browsertabblad (aanbevolen standaard) of op hetzelfde tabblad.
 
    Zie [Werken met kiezers](/help/assets/dynamic-media/working-with-selectors.md) voor meer informatie .
 
-   * Selecteer **[!UICONTROL Experience Fragment]**.
+   * Selecteren **[!UICONTROL Experience Fragment]**.
 
-      * Als u een Experience Manager Sites-klant bent, selecteert u het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Selecteer het ervaringsfragment dat u wilt gebruiken. Tik vervolgens op **[!UICONTROL Select]** rechtsboven op de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
+      * Als u een Experience Manager Sites-klant bent, selecteert u het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Selecteer het ervaringsfragment dat u wilt gebruiken. Selecteer vervolgens **[!UICONTROL Select]** rechtsboven op de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
 Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Geef de breedte en hoogte van het ervaringsfragment op zoals u het wilt weergeven op de banner.
@@ -317,10 +317,10 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-me
 
 **Een voorvertoning weergeven van interactieve afbeeldingen:**
 
-1. Navigeer in de weergave Middelen naar een bestaande, door u gemaakte interactieve afbeelding en tik erop om deze te openen in Voorvertoning.
-1. Tik in de vervolgkeuzelijst Inhoud linksboven op de pagina Voorvertoning in **[!UICONTROL Viewers]**.
-1. Tik in de lijst Viewers op **[!UICONTROL Shoppable_Banner]** of de naam van de voorinstelling voor de interactieve afbeeldingsviewer die u hebt gemaakt.
-1. Tik op hotspots in de afbeelding om de bijbehorende acties van hotspots te testen.
+1. Navigeer in de weergave Elementen naar een bestaande interactieve afbeelding die u hebt gemaakt en selecteer deze om deze te openen in Voorvertoning.
+1. Selecteer in de vervolgkeuzelijst Inhoud linksboven op de pagina Voorvertoning de optie **[!UICONTROL Viewers]**.
+1. Selecteer in de lijst Viewers de optie **[!UICONTROL Shoppable_Banner]** of de naam van de voorinstelling voor de interactieve afbeeldingsviewer die u hebt gemaakt.
+1. Selecteer hotspots in de afbeelding om de bijbehorende acties van hotspots te testen.
 
 ## Interactieve afbeeldingselementen publiceren {#publishing-interactive-image-assets}
 

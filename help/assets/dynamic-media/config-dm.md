@@ -4,10 +4,10 @@ description: Leer hoe u Dynamic Media in Adobe Experience Manager as a Cloud Ser
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3558'
-ht-degree: 2%
+source-wordcount: '3575'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +68,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Selecteer links van de console het pictogram Gereedschappen en ga naar **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Selecteer in het linkerdeelvenster van de Dynamic Media Configuration Browser-pagina de optie **[!UICONTROL global]** (selecteer het mappictogram niet links van **[!UICONTROL global]**). Selecteer vervolgens **[!UICONTROL Create]**.
 1. Op de **[!UICONTROL Create Dynamic Media Configuration]** Voer de titel, het e-mailadres van de Dynamic Media-account en het wachtwoord van de bedrijfsbeheerder van de Dynamic Media-account in en selecteer vervolgens uw regio. Deze informatie wordt u per Adobe verstrekt in de levering e-mail. Neem contact op met de klantenondersteuning van de Adobe als u dit e-mailbericht niet hebt ontvangen.
-1. Selecteer **[!UICONTROL Connect to Dynamic Media]**.
+1. Selecteren **[!UICONTROL Connect to Dynamic Media]**.
 1. In de **[!UICONTROL Change Password]** in het dialoogvenster **[!UICONTROL New Password]** voert u een nieuw wachtwoord in dat uit 8-25 tekens bestaat. Het wachtwoord moet ten minste een van de volgende elementen bevatten:
 
    * Hoofdletter
@@ -272,7 +272,7 @@ U kunt de volgende eigenschappen voor kleurcorrectie instellen:
    | RGB, standaardkleurruimte | Naam van het standaardkleurprofiel RGB. |
    | Render-intentie kleurconversie | Geeft de render-intentie aan. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe beveelt aan **[!UICONTROL relative]** als de standaardinstelling. |
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
 U kunt bijvoorbeeld **[!UICONTROL RGB Default Color Space]** instellen op *sRGB* en **[!UICONTROL CMYK Default Color Space]** op *WebCoated*.
 
@@ -311,9 +311,9 @@ Zie [Elementen uploaden](/help/assets/add-assets.md).
 1. Selecteer een MIME-type onder de map mimeTypes.
 1. Aan de rechterkant van de pagina CRXDE Lite, in het onderste gedeelte:
 
-   * Dubbeltik op de knop **[!UICONTROL enabled]** veld. Standaard zijn alle MIME-elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de activa voor verwerking naar Dynamic Media worden gesynchroniseerd. Als u dit MIME-type van element wilt uitsluiten van verwerking, wijzigt u deze instelling in **[!UICONTROL false]**.
+   * Selecteer de **[!UICONTROL enabled]** veld. Standaard zijn alle MIME-elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de activa voor verwerking naar Dynamic Media worden gesynchroniseerd. Als u dit MIME-type van element wilt uitsluiten van verwerking, wijzigt u deze instelling in **[!UICONTROL false]**.
 
-   * Dubbeltikken **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [Ondersteunde MIME-typen](/help/assets/file-format-support.md) voor een lijst met toegestane waarden voor de verwerkingsparameters die u kunt gebruiken voor een bepaald MIME-type.
+   * Dubbelselecteren **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [Ondersteunde MIME-typen](/help/assets/file-format-support.md) voor een lijst met toegestane waarden voor de verwerkingsparameters die u kunt gebruiken voor een bepaald MIME-type.
 
 1. Voer een van de volgende handelingen uit:
    * Herhaal stap 3-4 om meer MIME-typen te bewerken.
@@ -336,7 +336,7 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. Schuif op de pagina omlaag naar de naam *Adobe CQ Scene7 Asset MIME type Service*, zoals u in de volgende schermafbeelding ziet. Tik rechts van de naam op **[!UICONTROL Edit the configuration values]** (potloodpictogram).
+1. Schuif op de pagina omlaag naar de naam *Adobe CQ Scene7 Asset MIME type Service*, zoals u in de volgende schermafbeelding ziet. Selecteer rechts van de naam de optie **[!UICONTROL Edit the configuration values]** (potloodpictogram).
 
    ![De configuratiewaarden bewerken](assets/2019-08-02_16-44-56.png)
 
@@ -369,7 +369,7 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
    ![Een DWG-bestand bewerken in CRXDE Lite](assets/crxdelite_cqdoc-14627.png)
 
-1. Met het MIME-type `image_vnd.dwg` nog steeds geselecteerd, uit de **[!UICONTROL Properties]** tabblad, in de **[!UICONTROL enabled]** rij, onder de **[!UICONTROL Value]** kolomkop, dubbeltikt u op de waarde. De **[!UICONTROL Value]** vervolgkeuzelijst wordt geopend.
+1. Met het MIME-type `image_vnd.dwg` nog steeds geselecteerd, uit de **[!UICONTROL Properties]** tabblad, in de **[!UICONTROL enabled]** rij, onder de **[!UICONTROL Value]** kolomkop, dubbelselecteer de waarde. De **[!UICONTROL Value]** vervolgkeuzelijst wordt geopend.
 1. Type `false` in het veld (of selecteer **[!UICONTROL false]** in de vervolgkeuzelijst).
 
    ![Mimenttypen bewerken in CRXDE Lite](assets/2019-08-02_16-60-30.png)
@@ -433,7 +433,7 @@ Als u geen toegang tot OSGi hebt, zie [OSGi-configuratie](/help/implementing/dev
 
    ![Configuratie van een wachtrij voor taakverwerking](assets/chlimage_1-1.jpeg)
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
 #### Werk de vooraf bepaalde de arbeidersthreads bij van de Rij van de Rij van de Rij van de Granite Transiet {#update-granite-transient-workflow-queue-worker-threads-images}
 
@@ -462,7 +462,7 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
 #### De maximale uploadverbindingen naar de Dynamic Media Classic (Scene7)-server bijwerken {#update-max-s7-upload-connections}
 
@@ -474,7 +474,7 @@ Met de instelling Dynamic Media Classic (Scene7) Upload Connection synchroniseer
 
 **Zo werkt u de maximale uploadverbindingen naar de Dynamic Media Classic (Scene7)-server bij:**
 
-1. Ga naar `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Navigeren naar `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. In de **[!UICONTROL Number of connections]** of de **[!UICONTROL Active job timeout]** of beide, wijzig het nummer naar wens.
 
    De **[!UICONTROL Number of connections]** Met deze instelling bepaalt u het maximum aantal HTTP-verbindingen dat Experience Manager naar Dynamic Media-upload is toegestaan. Doorgaans is de vooraf gedefinieerde waarde van tien verbindingen voldoende.
@@ -485,7 +485,7 @@ Met de instelling Dynamic Media Classic (Scene7) Upload Connection synchroniseer
 
    ![Adobe Scene7 Upload Service](assets/chlimage_1-2.jpeg)
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 

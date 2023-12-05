@@ -4,9 +4,9 @@ description: Leer om te vormen [!DNL Adobe Experience Manager] Insteekmodules vo
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: '4281'
 ht-degree: 0%
 
 ---
@@ -228,7 +228,7 @@ Hiervoor schakelt u de insteekmodule Stijlen in.
 
 Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verwijzen:
 
-1. Ga bijvoorbeeld naar het hoofdknooppunt van de tekstcomponent `/apps/<myProject>/components/text`.
+1. Ga bijvoorbeeld naar het hoofdknooppunt van de tekstcomponent. `/apps/<myProject>/components/text`.
 1. De eigenschap toevoegen `externalStyleSheets` naar het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam** `externalStyleSheets`
@@ -329,7 +329,7 @@ Alle tekst die in RTE is geschreven, wordt binnen een bloktag geplaatst, waarbij
 
 >[!NOTE]
 >
->Als een bloktag, bijvoorbeeld een `<hr>` -tag, kan niet worden toegewezen aan een alinea, het is geen geldig gebruiksgeval voor een `paraformat` insteekmodule.
+>Als een bloktag bijvoorbeeld een `<hr>` -tag, kan niet worden toegewezen aan een alinea, het is geen geldig gebruiksgeval voor een `paraformat` insteekmodule.
 
 Wanneer de insteekmodule Alineopmaak voor het eerst is ingeschakeld, zijn er geen standaardalineaopmaak beschikbaar. De pop-uplijst is leeg. Ga als volgt te werk om de auteurs alinea-indelingen te bieden:
 

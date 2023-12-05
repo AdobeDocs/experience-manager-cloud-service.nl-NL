@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '3703'
+source-wordcount: '3682'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ In het CDN-systeem wordt webinhoud opgeslagen in webcaches via internet. Vervolg
 
 Historisch, levert CDN 3.5 petabytes van verkeer aan klanten, elke maand. Het systeem kan 52 miljard activa in één enkele dag leveren. Dit aantal komt overeen met 864.000 afbeeldingen en video&#39;s die succesvol aan klanten zijn geleverd, _elke seconde_.
 
-### Smart Imaging
+### Slimme afbeeldingen
 
 Dynamic Media is al heel goed in het optimaliseren van elementen en het ervoor zorgen dat elk element via de CDN snel wordt geladen op mobiele en desktopsystemen. Hiervoor worden in Dynamic Media afbeeldingsvoorinstellingen gebruikt om de kwaliteit van de afbeelding te definiëren. Ze definiëren ook het type afbeelding dat u verzendt, de scherpte en andere delen voor verschillende delen van uw ervaringen of pagina&#39;s.
 
@@ -182,7 +182,7 @@ Een ander gebruiksgeval waarvoor Dynamic Media oplost is video. Video is complex
 
 Klanten komen naar Dynamic Media met het volgende probleem dat ze hopen op te lossen:
 
-&quot;_We hebben de video, en we hebben er veel geld aan besteed. Maar we kozen ervoor om het niet op pagina&#39;s te zetten, of te leveren, omdat we de kwaliteit van de video niet kunnen garanderen, of dat het echt gaat spelen. En uiteindelijk beïnvloedt dat onze merken en mogelijk onze rol voor zelfs conversie._&quot;
+&quot;_Mijn bedrijf heeft de video, en onze afdeling besteedde veel geld aan het creëren van de video, maar verschroeide van het plaatsen van de video op pagina&#39;s, of het leveren van het. De reden was dat de kwaliteit van de video niet gegarandeerd kon worden door onze tests, of zelfs niet als het echt zou spelen. En uiteindelijk beïnvloedt dat onze merken en mogelijk onze rol voor zelfs conversie._&quot;
 
 Dynamic Media&#39;s oplossing is dat één primair videobestand wordt gebruikt en dat Dynamic Media alle formaten laat doormaken via zijn transcoderingsproces. Dan, koppel dat met de intelligente videospeler van Dynamic Media. Deze workflow garandeert dat de video die u gebruikt op de hoofdbestemmingspagina of op een categorie- of productdetailpagina, overal consistent zal zijn en van hoge kwaliteit zal worden geleverd.
 
@@ -272,7 +272,7 @@ _Dynamic Media Help-onderwerpen_
 * [Werken met Dynamic Media in Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
 * [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md)
 * [Aangepaste videosets maken](/help/assets/dynamic-media/video.md)
-* [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
+* [Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Elementen uploaden](/help/assets/add-assets.md#upload-assets)
 * [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
 * [Een voorvertoning weergeven van 3D-elementen](/help/assets/dynamic-media/previewing-3d-assets.md)

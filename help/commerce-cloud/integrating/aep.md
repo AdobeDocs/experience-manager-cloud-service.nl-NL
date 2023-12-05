@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '1870'
 ht-degree: 0%
 
 ---
@@ -266,7 +266,7 @@ Om React-based Peregrine en CIF kerncomponenten te initialiseren, creeer de vere
        useDataLayerEvents();
    
        useEffect(() => {
-           // implement a proper marketing opt-in, for demo purpose we hard-set the consent cookie
+           // implement a proper marketing opt-in, for demo purpose you hard-set the consent cookie
            if (document.cookie.indexOf('mg_dnt') < 0) {
                document.cookie += '; mg_dnt=track';
            }
@@ -347,7 +347,7 @@ Voer de volgende stappen uit om de gebeurtenisgegevens die afkomstig zijn van de
 
 Om de structuur voor de gegevens van de handelsgebeurtenis te bepalen, moet u een schema van de Gegevens van de Ervaring van het Model (XDM) tot stand brengen. Een schema is een set regels die de structuur en indeling van gegevens vertegenwoordigen en valideren.
 
-1. Navigeer in de browser naar de knop __Adobe Experience Platform__ startpagina product. Bijvoorbeeld, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1. Navigeer in de browser naar de knop __Adobe Experience Platform__ startpagina product. Bijvoorbeeld: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
 1. Zoek de __Schemas__ in de linkernavigatiesectie klikt u op de knop __Schema maken__ in de rechterbovensectie en selecteert u __XDM ExperienceEvent__.
 
@@ -370,7 +370,7 @@ Om de structuur voor de gegevens van de handelsgebeurtenis te bepalen, moet u ee
 
 Om de gebeurtenisgegevens op te slaan, moet u een Dataset tot stand brengen die aan de schemadefinitie voldoet. Een dataset is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst, die een schema (kolommen) en gebieden (rijen) bevat.
 
-1. Navigeer in de browser naar de knop __Adobe Experience Platform__ startpagina product. Bijvoorbeeld, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1. Navigeer in de browser naar de knop __Adobe Experience Platform__ startpagina product. Bijvoorbeeld: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
 1. Zoek de __Gegevenssets__ in de linkernavigatiesectie en klik op de knop __Gegevensset maken__ in de rechterbovensectie.
 
@@ -397,7 +397,7 @@ Om de gebeurtenisgegevens op te slaan, moet u een Dataset tot stand brengen die 
 
 Voer de volgende stappen uit om een DataStream in het Experience Platform te maken.
 
-1. Navigeer in de browser naar de knop __Adobe Experience Platform__ startpagina product. Bijvoorbeeld, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1. Navigeer in de browser naar de knop __Adobe Experience Platform__ startpagina product. Bijvoorbeeld: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
 1. Zoek de __Gegevensstromen__ in de linkernavigatiesectie en klik op de knop __Nieuwe DataStream__ in de rechterbovensectie.
 

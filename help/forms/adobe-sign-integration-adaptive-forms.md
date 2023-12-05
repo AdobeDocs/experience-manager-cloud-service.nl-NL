@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 4d1e70c19caab23df13ed6fdc29b30e41106501f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1837'
 ht-degree: 0%
 
 ---
@@ -44,16 +44,16 @@ U hebt de volgende setup nodig om te integreren [!DNL Adobe Acrobat Sign] with [
 Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om te vormen [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms] op de instanties Auteur.
 
 1. Navigeer in AEM Forms-auteurinstantie naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
-1. Op de **[!UICONTROL Configuration Browser]** pagina, tikken **[!UICONTROL Create]**.
-1. In de **[!UICONTROL Create Configuration]** dialoogvenster, geeft u een **[!UICONTROL Title]** voor de configuratie, laat toe **[!UICONTROL Cloud Configurations]** en tikken **[!UICONTROL Create]**. Het leidt tot een configuratiecontainer om Cloud Servicen op te slaan. Zorg ervoor dat de mapnaam geen ruimte bevat.
+1. Op de **[!UICONTROL Configuration Browser]** pagina, selecteert u **[!UICONTROL Create]**.
+1. In de **[!UICONTROL Create Configuration]** dialoogvenster, geeft u een **[!UICONTROL Title]** voor de configuratie, laat toe **[!UICONTROL Cloud Configurations]** en selecteert u **[!UICONTROL Create]**. Het leidt tot een configuratiecontainer om Cloud Servicen op te slaan. Zorg ervoor dat de mapnaam geen ruimte bevat.
 1. Navigeren naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Acrobat Sign]** en open de configuratiecontainer u in de vorige stap creeerde.
 
    >[!NOTE]
    >
    >Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het dialoogvenster **[!UICONTROL Configuration Container]** veld.
 
-1. Tik op de configuratiepagina **[!UICONTROL Create]** om [!DNL Adobe Acrobat Sign] in AEM Forms.
-1. In de **[!UICONTROL General]** tabblad van het **[!UICONTROL Create Adobe Acrobat Sign Configuration]** pagina, geeft u een **[!UICONTROL Name]** voor de configuratie en tik **[!UICONTROL Next]**. U kunt desgewenst een **[!UICONTROL Title]** en bladert u om een **[!UICONTROL Thumbnail]** voor de configuratie.
+1. Selecteer op de configuratiepagina **[!UICONTROL Create]** om [!DNL Adobe Acrobat Sign] in AEM Forms.
+1. In de **[!UICONTROL General]** tabblad van het **[!UICONTROL Create Adobe Acrobat Sign Configuration]** pagina, geeft u een **[!UICONTROL Name]** voor de configuratie, en selecteer **[!UICONTROL Next]**. U kunt desgewenst een **[!UICONTROL Title]** en bladert u om een **[!UICONTROL Thumbnail]** voor de configuratie.
 
 1. Nu kunt u **[!UICONTROL Select solution]** om [!DNL Adobe Acrobat Sign].
 
@@ -64,7 +64,7 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
 [create URL](#create-a-redirect-url-for-your-aem-instance)
  -->
 
-1. Kopieer de URL in het huidige browservenster naar een laptop en verwijder het onderdeel `/ui#/aem` via de URL. De gewijzigde URL wordt dan vereist om te vormen [!DNL Adobe Acrobat Sign] toepassing met [!DNL AEM Forms], in een latere stap. Tik op **[!UICONTROL Next]**.
+1. Kopieer de URL in het huidige browservenster naar een laptop en verwijder het onderdeel `/ui#/aem` via de URL. De gewijzigde URL wordt dan vereist om te vormen [!DNL Adobe Acrobat Sign] toepassing met [!DNL AEM Forms], in een latere stap. Selecteren **[!UICONTROL Next]**.
 
 1. In de **[!UICONTROL Settings]** tab,
    * de **[!UICONTROL OAuth URL]** bevat het veld de standaard-URL die het Adobe Sign-databasespoor bevat. De opmaak van de URL is:
@@ -93,7 +93,7 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
 1. OAuth-instellingen configureren voor de [!DNL Adobe Acrobat Sign] toepassing:
 
    1. Een browservenster openen en aanmelden bij uw [!DNL Adobe Acrobat Sign] ontwikkelaarsaccount.
-   1. Selecteer de toepassing waarvoor [!DNL AEM Forms]en tikken **[!UICONTROL Configure OAuth for Application]**.
+   1. Selecteer de toepassing waarvoor [!DNL AEM Forms]en selecteert u **[!UICONTROL Configure OAuth for Application]**.
    1. In de **[!UICONTROL Redirect URL]** voegt u de URL toe die u in een vorige stap hebt gekopieerd (stap 8) en klikt u op **[!UICONTROL Save]**.
    1. Het volgende bereik inschakelen voor de [!DNL Adobe Acrobat Sign] toepassing en klik **[!UICONTROL Save]**.
 
@@ -112,11 +112,11 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
 
 1. Selecteer de **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** aan een adaptief formulier gekoppelde bestanden toevoegen aan de corresponderende [!DNL Adobe Acrobat Sign] document verzonden voor ondertekening.
 
-1. Tik op **[!UICONTROL Connect to Adobe Acrobat Sign]**. Geef bij de aanwijzing voor referenties de volgende informatie op **gebruikersnaam** en **password** van de account die wordt gebruikt tijdens het maken van [!DNL Adobe Acrobat Sign] toepassing. Wanneer gevraagd om te bevestigen, toegang voor `your developer account`, klik op **[!UICONTROL Allow Access]**. Als de gegevens juist zijn en u [!DNL AEM Forms] om toegang te krijgen tot [!DNL Adobe Acrobat Sign] ontwikkelaarsaccount, een succesbericht dat lijkt op het volgende:
+1. Selecteer **[!UICONTROL Connect to Adobe Acrobat Sign]**. Geef bij de aanwijzing voor referenties de volgende informatie op **gebruikersnaam** en **password** van de account die wordt gebruikt tijdens het maken van [!DNL Adobe Acrobat Sign] toepassing. Wanneer gevraagd om te bevestigen, toegang voor `your developer account`, klik op **[!UICONTROL Allow Access]**. Als de gegevens juist zijn en u [!DNL AEM Forms] om toegang te krijgen tot [!DNL Adobe Acrobat Sign] ontwikkelaarsaccount, een succesbericht dat lijkt op het volgende:
 
    ![Adobe Acrobat Sign Cloud-configuratie gelukt](assets/adobe-sign-cloud-configuration-success.png)
 
-1. Tikken **[!UICONTROL Create]** om de [!DNL Adobe Acrobat Sign] configuratie.
+1. Selecteren **[!UICONTROL Create]** om de [!DNL Adobe Acrobat Sign] configuratie.
 
 1. Selecteer de configuratie en klik op **[!UICONTROL Publish]**, selecteert u de configuratie en klikt u op **[!UICONTROL Publish]**. De configuratie wordt in overeenkomende publicatieomgevingen gerepliceerd.
 
@@ -152,10 +152,10 @@ Voordat u AEM Forms gaat verbinden met Adobe Acrobat Sign Solution, dient u ervo
 #### Een omleidings-URL voor uw AEM maken
 
 1. Ga in de as a Cloud Service auteurinstantie van Forms naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
-1. Op de **[!UICONTROL Configuration Browser]** pagina, tikken **[!UICONTROL Create]**.
-1. In de **[!UICONTROL Create Configuration]** dialoogvenster, geeft u een **[!UICONTROL Title]** voor de configuratie, laat toe **[!UICONTROL Cloud Configurations]** en tikken **[!UICONTROL Create]**. Het leidt tot een configuratiecontainer om Cloud Servicen op te slaan. Zorg ervoor dat de mapnaam geen ruimte bevat.
+1. Op de **[!UICONTROL Configuration Browser]** pagina, selecteert u **[!UICONTROL Create]**.
+1. In de **[!UICONTROL Create Configuration]** dialoogvenster, geeft u een **[!UICONTROL Title]** voor de configuratie, laat toe **[!UICONTROL Cloud Configurations]** en selecteert u **[!UICONTROL Create]**. Het leidt tot een configuratiecontainer om Cloud Servicen op te slaan. Zorg ervoor dat de mapnaam geen ruimte bevat.
 1. Navigeren naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Acrobat Sign]** en open de configuratiecontainer u in de vorige stap creeerde. Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het dialoogvenster **[!UICONTROL Configuration Container]** veld.
-1. Tik op de configuratiepagina **[!UICONTROL Create]** om [!DNL Adobe Acrobat Sign] in AEM Forms.
+1. Selecteer op de configuratiepagina **[!UICONTROL Create]** om [!DNL Adobe Acrobat Sign] in AEM Forms.
 1. Kopieer de URL van het huidige browservenster naar een laptop en verwijder deze `/ui#/aem` via de URL. Deze URL wordt `re-direct URL`.
 In de volgende sectie deelt u de opdracht `re-direct URL` en `Scopes` met Adobe Sign-team en aanvraagreferenties (client-id en clientgeheim).
 
@@ -181,7 +181,7 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
 1. Open de `re-direct URL` in uw browser. U hebt de `re-direct URL` in de laatste stap van de [een omleidings-URL maken op uw AEM-instantie](#create-a-redirect-url-for-your-aem-instance) sectie.
 
-1. In de **[!UICONTROL General]** tabblad van het **[!UICONTROL Create Adobe Sign Configuration]** pagina, geeft u een **[!UICONTROL Name]** voor de configuratie en tik **[!UICONTROL Next]**. U kunt desgewenst een **[!UICONTROL Title]** en bladert u om een **[!UICONTROL Thumbnail]** voor de configuratie. Klik op **[!UICONTROL Next]**.
+1. In de **[!UICONTROL General]** tabblad van het **[!UICONTROL Create Adobe Sign Configuration]** pagina, geeft u een **[!UICONTROL Name]** voor de configuratie, en selecteer **[!UICONTROL Next]**. U kunt desgewenst een **[!UICONTROL Title]** en bladert u om een **[!UICONTROL Thumbnail]** voor de configuratie. Klik op **[!UICONTROL Next]**.
 
 1. In de **[!UICONTROL Settings]** tabblad van het **[!UICONTROL Create Adobe Sign Configuration]** pagina, voor de **[!UICONTROL Select solution]** selecteert u [!DNL Adobe Acrobat Sign Solutions for Government].
 
@@ -217,13 +217,13 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
 1. Selecteer de **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** aan een adaptief formulier gekoppelde bestanden toevoegen aan de corresponderende [!DNL Adobe Acrobat Sign] document verzonden voor ondertekening.
 
-1. Tik op **[!UICONTROL Connect to Adobe Sign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt tijdens het maken van [!DNL Adobe Acrobat Sign] toepassing. Wanneer gevraagd om toegang te bevestigen voor `your developer account`, klik op **[!UICONTROL Allow Access]**. Als de gegevens juist zijn en u [!DNL AEM Forms] om toegang te krijgen tot [!DNL Adobe Acrobat Sign] ontwikkelaarsaccount, een succesbericht dat lijkt op het volgende:
+1. Selecteer **[!UICONTROL Connect to Adobe Sign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt tijdens het maken van [!DNL Adobe Acrobat Sign] toepassing. Wanneer gevraagd om toegang te bevestigen voor `your developer account`, klik op **[!UICONTROL Allow Access]**. Als de gegevens juist zijn en u [!DNL AEM Forms] om toegang te krijgen tot [!DNL Adobe Acrobat Sign] ontwikkelaarsaccount, een succesbericht dat lijkt op het volgende:
 
    ![Adobe Acrobat Sign Cloud-configuratie gelukt](assets/adobe-sign-cloud-configuration-success.png)
 
    <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
 
-1. Tikken **[!UICONTROL Create]** om de configuratie te maken.
+1. Selecteren **[!UICONTROL Create]** om de configuratie te maken.
 
 1. Selecteer de configuratie en klik op **[!UICONTROL Publish]**, selecteert u de configuratie en klikt u op **[!UICONTROL Publish]**. De configuratie wordt gerepliceerd naar de overeenkomstige publicatieomgevingen.
 

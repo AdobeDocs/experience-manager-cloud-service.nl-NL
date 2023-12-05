@@ -2,9 +2,9 @@
 title: Uw inhoud modelleren
 description: In dit deel van de Adobe Experience Manager (AEM) Headless Developer Journey leert u hoe u uw inhoud kunt modelleren voor AEM levering zonder kop met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1814'
 ht-degree: 0%
 
 ---
@@ -210,7 +210,7 @@ Aan het begin moet u Modellen van inhoudsfragmenten voor uw site inschakelen. Di
 >
 >Zie Extra Middelen - de Fragmenten van de Inhoud in Browser van de Configuratie
 
-Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. Dit kan worden gedaan in het kader van **Gereedschappen** -> **Algemeen** -> **Modellen van inhoudsfragmenten**. Bijvoorbeeld:
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. Dit kan worden gedaan in het kader van **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**. Bijvoorbeeld:
 
 ![Inhoudsfragmentmodel](assets/cfm-model.png)
 
@@ -224,7 +224,7 @@ Inhoudsfragmenten zijn altijd gebaseerd op een inhoudsfragmentmodel. Het model b
 
 ### Het juiste model selecteren {#select-model}
 
-De eerste stap voor het maken van uw inhoud is het maken van een inhoudsfragment. Dit gebeurt met Maken -> Inhoudsfragment in de vereiste map onder Middelen -> Bestanden. De wizard begeleidt u door de stappen.
+De eerste stap voor het maken van uw inhoud is het maken van een inhoudsfragment. Dit doet u door Maken > Inhoudsfragment te kiezen in de vereiste map onder Middelen > Bestanden. De wizard begeleidt u door de stappen.
 
 Een inhoudsfragment is gebaseerd op een specifiek inhoudsfragmentmodel dat u selecteert als de eerste stap van het ontwerpproces.
 

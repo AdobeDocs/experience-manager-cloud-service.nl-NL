@@ -2,7 +2,7 @@
 title: Een API-verzoek maken - headless Setup
 description: Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van inhoudsfragmenten en AEM middelen REST API voor het beheer van inhoudsfragmenten.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De rest van deze handleiding is gericht op GraphQL-toegang en levering van inhou
 Voordat de GraphQL API&#39;s kunnen worden gebruikt, moet een GraphQL-eindpunt worden gemaakt.
 
 1. Navigeren naar **Gereedschappen**, **Algemeen** selecteert u vervolgens **GraphQL**.
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 1. De **Nieuw GraphQL-eindpunt maken** wordt geopend. Hier kunt u opgeven:
    * **Naam**: naam van het eindpunt; u kunt elke tekst invoeren.
    * **GraphQL-schema gebruiken dat wordt geleverd door**: gebruik de vervolgkeuzelijst om de vereiste configuratie te selecteren.
@@ -51,7 +51,7 @@ GraphiQL is een IDE die in uw AEM milieu inbegrepen is; het is toegankelijk/zich
 
    U kunt tot de vraagredacteur van één van beiden toegang hebben:
 
-   * **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
+   * **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**
    * rechtstreeks; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
 1. GraphiQL winde is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen zonder hoofd als JSON te leveren.

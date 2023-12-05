@@ -2,9 +2,9 @@
 title: ContextHub configureren
 description: Leer hoe te om de Hub van de Context, een kader te vormen om, contextgegevens op te slaan te manipuleren en voor te stellen.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden
 
 1. Selecteer Extra > Sites > ContextHub in de Experience Manager.
 1. Selecteer de Container van de Configuratie waaraan u een module UI wilt toevoegen.
-1. Klik of typ de Configuratie ContextHub waaraan u de module UI wilt toevoegen.
+1. Selecteer of typ de Configuratie ContextHub waaraan u de module UI wilt toevoegen.
 1. Selecteer de wijze UI waaraan u de module UI toevoegt.
 1. Selecteer de Create knoop, dan uitgezochte Module ContextHub UI (algemeen).
 

@@ -4,9 +4,9 @@ description: Gebruik Adaptief Form Core-componenten op een AEM Sites-pagina om e
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '1948'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Inschakelen [!UICONTROL Adaptive Forms Container] in het sjabloonbeleid voert u 
 Als u Aangepaste Forms-componenten op een AEM Sites-pagina wilt gebruiken, neemt u de Client libraries Customheaderlibs en Customfooterlibs op naar de AEM Sites-pagina met behulp van de AEM Archetype/Git Repository and Deployment-pijplijn.
 
 1. Open uw [AEM Forms Archetype of Cloned Git Repository](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) in een teksteditor. Bijvoorbeeld, de Code van Visual Studio.
-1. Ga naar `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
+1. Navigeren naar `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
 1. De waarde kopiëren van `sling:resourceSuperType`. De waarde is bijvoorbeeld `core/wcm/components/page/v3/page`.
 
    ![slingerbron](/help/forms/assets/slingresource.png)
@@ -95,7 +95,7 @@ Uw formulier is klaar. Wanneer u de AEM Sites-pagina publiceert, worden automati
 
 #### Eigenschappen van adaptieve formuliercontainers configureren {#configure-additional-settings-container}
 
-U kunt de geavanceerde instellingen van het dialoogvenster [!UICONTROL Adaptive Form Container] component. Bijvoorbeeld,
+U kunt de geavanceerde instellingen van het dialoogvenster [!UICONTROL Adaptive Form Container] component. Bijvoorbeeld:
 
 * U kunt de Prefill-service zodanig configureren dat een adaptief formulier met vooraf ingevulde waarden op de pagina van een site wordt geladen.
 * U kunt de instellingen van het gegevensmodel zo configureren dat het adaptieve formulier wordt gekoppeld aan een gegevensbron.
@@ -168,7 +168,7 @@ Wanneer de **[!UICONTROL When form covers entire width of a page]** is geselecte
 Als u Adaptieve Forms-componenten wilt gebruiken op een AEM Sites-pagina, neemt u de opdracht `Customheaderlibs` en `Customfooterlibs` clientbibliotheken naar de AEM Sites-pagina met behulp van de AEM Archetype/Git Repository en distributiepijplijn.
 
 1. Open uw [AEM Forms Archetype of Cloned Git Repository](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) in een teksteditor. Bijvoorbeeld, de Code van Visual Studio.
-1. Ga naar `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
+1. Navigeren naar `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
 1. De waarde kopiëren van `sling:resourceSuperType`. De waarde is bijvoorbeeld `core/wcm/components/page/v3/page`.
 
    ![slingerbron](/help/forms/assets/slingresource.png)
@@ -203,7 +203,7 @@ Als u Adaptieve Forms-componenten wilt gebruiken op een AEM Sites-pagina, neemt 
 
 1. Open de AEM Sites-pagina in de bewerkingsmodus.
 1. Sleep vanuit het deelvenster Componentbrowser de [!UICONTROL Adaptive Forms - Embed] op de pagina.
-1. Tik op de knop [!UICONTROL Adaptive Forms - Embed] op de sitepagina en tikt u op ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) op de actiebalk. De **[!UICONTROL Edit Adaptive Forms - Embed]** wordt geopend.
+1. Selecteer de [!UICONTROL Adaptive Forms - Embed] in de sitepagina en selecteert u ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) op de actiebalk. De **[!UICONTROL Edit Adaptive Forms - Embed]** wordt geopend.
 1. Blader naar het adaptieve formulier dat u wilt insluiten in het dialoogvenster [!UICONTROL Asset Path].
 1. Sla de instellingen op. Het adaptieve formulier is nu ingesloten in de pagina.
 
@@ -253,7 +253,7 @@ Overweeg de volgende scenario&#39;s voor het publiceren van toegevoegde Adaptiev
 Voer een van de volgende handelingen uit om een configuratie of eigenschap van een adaptief formulier te wijzigen:
 
 * Open het oorspronkelijke formulier in een adaptief formulier in de desbetreffende editor en wijzig deze.
-* Tik in de bewerkingsmodus op het adaptieve formulier en tik vervolgens op **[!UICONTROL Edit in a new window]**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus die u kunt wijzigen.
+* Selecteer het adaptieve formulier in de bewerkingsmodus van de sitepagina en selecteer vervolgens **[!UICONTROL Edit in a new window]**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus die u kunt wijzigen.
 
 ## Lay-out wijzigen van een adaptief formulier dat is toegevoegd aan een AEM Sites-pagina {#change-layout-af-aem-sites-page}
 

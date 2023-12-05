@@ -1,15 +1,13 @@
 ---
 title: Hoe wijzigt u de pagina Nul-inhoud in Designer?
 description: Wijzig het bericht dat wordt weergegeven op Pagina Nul van een XFA-PDF voor niet-Adobe PDF-viewers.
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 2%
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +16,7 @@ ht-degree: 2%
 
 Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer, zoals de standaard PDF-viewer in [!DNL Chrome] of [!DNL Firefox], kan de inhoud van het PDF/XFA-formulier niet lezen. Het standaardbericht Pagina Nul wordt hieronder weergegeven.
 
-![defaultpage0message](assets/defaultpage0message.png)
+![defaultPage0message](assets/defaultpage0message.png)
 
 [!DNL AEM Forms] Met de versie van Designer kunt u het bericht wijzigen dat wordt weergegeven op Pagina Nul. Voer de volgende stappen uit om het bericht Pagina nul te wijzigen:
 
@@ -26,7 +24,7 @@ Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer,
 
 1. Open het formulier waarvoor u de inhoud Pagina nul wilt wijzigen.
 
-1. Klik op **[!UICONTROL File]** > **[!UICONTROL Form Properties]**.
+1. Klikken **[!UICONTROL File]** > **[!UICONTROL Form Properties]**.
 
 1. In de [!UICONTROL Form Properties] dialoogvenster, klikt u op ![plus](assets/plus.png) (Plus-pictogram) om een aangepaste eigenschap toe te voegen.
 
@@ -44,7 +42,7 @@ Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer,
 
 >[!NOTE]
 >
->De aangepaste eigenschap die u zojuist hebt gemaakt, wordt mogelijk niet correct weergegeven in het dialoogvenster Formuliereigenschappen wanneer u het formulier opnieuw opent. Het werkt echter prima en in het formulier wordt het bijgewerkte bericht Pagina nul weergegeven.
+>De aangepaste eigenschap die u hebt gemaakt, wordt mogelijk niet correct weergegeven in het dialoogvenster Formuliereigenschappen wanneer u het formulier opnieuw opent. Het werkt echter prima en in het formulier wordt het bijgewerkte bericht Pagina nul weergegeven.
 
 >[!MORELIKETHIS]
 >

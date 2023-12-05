@@ -1,18 +1,18 @@
 ---
-title: Spin Sets
+title: Sets draaien
 description: Leer hoe u met centrifuges werkt in Dynamic Media.
 contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1862'
-ht-degree: 8%
+source-wordcount: '1892'
+ht-degree: 7%
 
 ---
 
-# Spin Sets{#spin-sets}
+# Sets draaien{#spin-sets}
 
 Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek ophalen.
 
@@ -128,7 +128,7 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
 **Om centrifuges te maken:**
 
-1. Navigeer in Elementen naar de plaats waar u een centrifugeset wilt maken en selecteer **[!UICONTROL Create]** en selecteer vervolgens **[!UICONTROL Spin Set]**. U kunt de set ook maken vanuit een map die uw assets bevat.
+1. Navigeer in Elementen naar de plaats waar u een centrifugeset wilt maken en selecteer **[!UICONTROL Create]** en selecteer vervolgens **[!UICONTROL Spin Set]**. U kunt de set ook maken vanuit een map die uw elementen bevat.
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -144,7 +144,7 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
    * Selecteer in de linkerbovenhoek van de pagina van de Editor voor centrifugeset de optie **[!UICONTROL Add Asset]**.
 
-   * Selecteer in het midden van de pagina van de Editor voor de centrifugeset de optie **[!UICONTROL Tap to open Asset Selector]**.
+   * Selecteer in het midden van de pagina van de Editor voor de centrifugeset de optie **[!UICONTROL Select to open Asset Selector]**.
 
    Selecteer elementen die u in de centrifugeset wilt opnemen. Geselecteerde assets hebben een vinkje. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Select]**.
 

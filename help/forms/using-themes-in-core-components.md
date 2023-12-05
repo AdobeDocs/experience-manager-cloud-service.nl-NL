@@ -2,9 +2,9 @@
 title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
 description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2630'
+source-wordcount: '2564'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ U kunt afzonderlijke componenten aanpassen of wijzigingen op themaniveau aanbren
 De `variable.scss` Het bestand bevat de algemene themavariabelen. Door deze variabelen bij te werken, kunt u op themaniveau op stijl betrekking hebbende veranderingen aanbrengen. Voer de volgende stappen uit om stijlen op themaniveau toe te passen:
 
 1. Open de `<your-theme-sources>/src/site/_variables.scss` bestand voor bewerking.
-1. Wijzig de waarde van een willekeurige eigenschap. De standaardfoutkleur is bijvoorbeeld `red`. De foutkleur wijzigen van `red` tot `blue`wijzigt u de hexkleurcode van de `$errorvariable`. Bijvoorbeeld, `$error: #196ee5`.
+1. Wijzig de waarde van een willekeurige eigenschap. De standaardfoutkleur is bijvoorbeeld `red`. De foutkleur wijzigen van `red` tot `blue`wijzigt u de hexkleurcode van de `$errorvariable`. Bijvoorbeeld: `$error: #196ee5`.
 1. Sla het bestand op en sluit het.
 
    ![Thema bewerken](/help/forms/assets/edit_theme.png)
@@ -363,7 +363,7 @@ Het thema wordt opgesteld gebruikend [pijpleiding aan de voorzijde.](https://exp
    Nadat de pijpleidingsopstelling volledig is, wordt de vraag-aan-actie kaart bijgewerkt.
 
 1. Klik de gecreeerde pijpleiding met de rechtermuisknop aan.
-1. Klik op **[!UICONTROL Run]** .
+1. Klikken **[!UICONTROL Run]** .
 
    ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
 
@@ -377,7 +377,7 @@ De stappen voor het toepassen van een thema op een adaptief formulier zijn:
 
 1. Meld u aan bij de AEM Forms-auteur.
 
-1. Tikken **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+1. Selecteren **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
 
 1. Klikken **Maken** > **Adaptieve Forms**. De wizard voor het maken van adaptief formulier wordt geopend.
 

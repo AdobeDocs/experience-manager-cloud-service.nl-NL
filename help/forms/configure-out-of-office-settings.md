@@ -2,9 +2,9 @@
 title: Hoe te om uit de montages van het Bureau in AEM Forms te vormen?
 description: Taken delegeren tijdens of buiten het kantoor voor een naadloze workflowuitvoering.
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '817'
 ht-degree: 0%
 
 ---
@@ -37,17 +37,17 @@ U kunt item-delegatie scheiden op basis van de workflowmodellen. Bijvoorbeeld, k
 
 Voer de volgende stappen uit om de instelling Buiten-Office voor uw account in te schakelen en uw Inbox-items te delegeren aan een andere gebruiker:
 
-1. Meld u aan bij uw AEM. Tik op de knop ![Inbox](assets/bell.svg) pictogram en tik **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
-1. Tik op de knop ![Kiezer weergeven](assets/viewlist.svg) of ![Kiezer weergeven](assets/calendar.svg) pictogram naast **[!UICONTROL Create]** knop en tik **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
+1. Meld u aan bij uw AEM. Selecteer de ![Inbox](assets/bell.svg) pictogram en selecteer **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
+1. Selecteer de ![Kiezer weergeven](assets/viewlist.svg) of ![Kiezer weergeven](assets/calendar.svg) pictogram naast **[!UICONTROL Create]** en selecteert u **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
 1. Open de **[!UICONTROL Out of Office]** in het dialoogvenster Instellingen.
-1. Tik op de knop **[!UICONTROL Enable/Disable]** knoop om uit Bureau het plaatsen toe te laten.
+1. Selecteer de **[!UICONTROL Enable/Disable]** knoop om uit Bureau het plaatsen toe te laten.
 1. Geef de **[!UICONTROL Start Time]**  en **[!UICONTROL End Time]** voor de instelling. De items worden alleen gedelegeerd tijdens de opgegeven periode. Laat de **[!UICONTROL End Time]** veld leeg om items voor onbepaalde tijd te delegeren.
 1. Selecteer de **[!UICONTROL Forward my items during this period]** selectievakje. Als je deze optie niet selecteert en geen ontvanger opgeeft, worden je objecten niet doorgestuurd naar een gebruiker. Hoewel u weg bent en het plaatsen wordt toegelaten, blijven de punten in uw Inbox.
-1. Tik op **[!UICONTROL Add Assignee]**. Geef een gebruiker op in het dialoogvenster **[!UICONTROL Assignee]** veld waarin u de items wilt delegeren. Geef de **[!UICONTROL Workflow Model]** aan afgevaardigde aan de gespecificeerde gebruiker. U kunt meerdere workflowmodellen selecteren.
+1. Selecteer **[!UICONTROL Add Assignee]**. Geef een gebruiker op in het dialoogvenster **[!UICONTROL Assignee]** veld waarin u de items wilt delegeren. Geef de **[!UICONTROL Workflow Model]** aan afgevaardigde aan de gespecificeerde gebruiker. U kunt meerdere workflowmodellen selecteren.
 
    Als u bovendien alle items aan een bepaalde gebruiker wilt toewijzen, ongeacht het workflowmodel, selecteert u **[!UICONTROL All Workflows]** in de vervolgkeuzelijst Werkstroommodel. <br>
 
-   Als u items wilt toewijzen aan een bepaalde gebruiker voor alle workflowmodellen, behalve een paar, selecteert u **[!UICONTROL All Workflows]** tikken in de vervolgkeuzelijst Werkstroommodel **[!UICONTROL + Add Exceptions]**en geeft u de workflowmodellen op die u wilt uitsluiten.
+   Als u items wilt toewijzen aan een bepaalde gebruiker voor alle workflowmodellen, behalve een paar, selecteert u **[!UICONTROL All Workflows]** in de vervolgkeuzelijst Werkstroommodel selecteert u **[!UICONTROL + Add Exceptions]**en geeft u de workflowmodellen op die u wilt uitsluiten.
    <br>
 
    Herhaal de stap om meer toewijzingen toe te voegen. <br>
@@ -57,7 +57,7 @@ Voer de volgende stappen uit om de instelling Buiten-Office voor uw account in t
    >De volgorde van de toewijzingen is belangrijk. Wanneer een punt aan een gebruiker wordt toegewezen die uit bureau het plaatsen hebben toegelaten, wordt het punt geëvalueerd tegen de gespecificeerde toewijzingslijst in de orde worden de wijzers toegevoegd. Wanneer een item voldoet aan de criteria, wordt het toegewezen aan de ontvanger en wordt de volgende toegewezen persoon niet gecontroleerd.
 
 
-1. Tik op **[!UICONTROL Save]**. De instelling wordt van kracht op de opgegeven begindatum en -tijd. Als u zich aanmeldt terwijl u zich buiten het kantoor bevindt, wordt u pas overwogen op het kantoor wanneer u uw instellingen wijzigt.
+1. Selecteer **[!UICONTROL Save]**. De instelling wordt van kracht op de opgegeven begindatum en -tijd. Als u zich aanmeldt terwijl u zich buiten het kantoor bevindt, wordt u pas overwogen op het kantoor wanneer u uw instellingen wijzigt.
 
 Nu, worden de punten die aan u tijdens uit de periode van het Bureau worden toegewezen automatisch toegewezen aan de gespecificeerde ontvanger.
 ![Buiten kantoor](assets/out-of-office.png)

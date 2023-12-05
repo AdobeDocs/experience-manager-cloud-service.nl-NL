@@ -1,15 +1,15 @@
 ---
-title: Ervaringsfragmenten
+title: Ervaar fragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 4%
+source-wordcount: '2035'
+ht-degree: 2%
 
 ---
 
-# Ervaringsfragmenten {#experience-fragments}
+# Ervaar fragmenten {#experience-fragments}
 
 In Adobe Experience Manager as a Cloud Service:
 
@@ -196,7 +196,7 @@ Een ervaringsfragment maken:
 
 1. Klikken **Maken**.
 
-   Er wordt een -bericht weergegeven. Selecteer:
+   Er wordt een bericht weergegeven. Selecteren:
 
    * **Gereed** om naar de console terug te keren
    * **Openen** om de fragmenteditor te openen
@@ -382,7 +382,7 @@ Deze modus werkt op dezelfde manier als bij paginabewerking. Zie [Doelmodus voor
 Details van het fragment kunt u zien:
 
 1. Navigeer naar de locatie van uw ervaringsfragmenten (navigeer niet verder naar beneden naar de variaties in het fragment).
-Details worden getoond in alle weergaven van de console voor **Experience-fragmenten**, met de **Lijstweergave**[ inclusief details van een exportbewerking naar het doel](/help/sites-cloud/integrating/integrating-adobe-target.md):
+De details worden getoond in alle meningen van **Ervaar fragmenten** console, met de **Lijstweergave** , met inbegrip van nadere gegevens over een [exporteren naar doel](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![Ervaar fragmentdetails](/help/sites-cloud/authoring/assets/xf-15.png)
 
@@ -408,7 +408,7 @@ Details worden getoond in alle weergaven van de console voor **Experience-fragme
       * **Aantal webvarianten** - alleen informatie
       * **Aantal niet-webvarianten** - alleen informatie
       * **Aantal pagina&#39;s dat dit fragment gebruikt** - alleen informatie
-   * **Cloud Services**
+   * **Cloud Servicen**
       * **Cloud Configuration**
       * **Configuraties van Cloud Servicen**
       * **Facebook-pagina-id**

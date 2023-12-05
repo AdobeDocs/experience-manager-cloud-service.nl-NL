@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -62,19 +62,19 @@ Middelen kunnen de volgende statussen hebben:
 1. Aanmelden bij de [!DNL AEM Forms] server.
 1. Gebruik een van de volgende opties om een element te selecteren en te publiceren.
 
-   1. Plaats de aanwijzer op een element en tik op **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. Voer een van de volgende handelingen uit en tik op Publiceren:
+   1. Plaats de aanwijzer op een element en selecteer **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. Voer een van de volgende handelingen uit en selecteer vervolgens Publiceren:
 
-      * Tik op **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)en tikt u op het element. Het element is geselecteerd.
+      * Als u in de kaartweergave werkt, selecteert u **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)en selecteert u het element. Het element is geselecteerd.
       * Als u zich in de lijstweergave bevindt, schakelt u het selectievakje van een element in. Het element is geselecteerd.
-      * Tik op een element om de details ervan weer te geven.
+      * Selecteer een element om de details ervan weer te geven.
       * De eigenschappen van een element weergeven door op Weergave-eigenschappen te tikken ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
       >Selecteer geen meerdere elementen. Het tegelijkertijd publiceren van meerdere elementen wordt niet ondersteund.
 
-1. Wanneer het publicatieproces wordt gestart, wordt een bevestigingsvenster weergegeven met alle gerelateerde elementen en bronnen. Tik in het dialoogvenster met verwante elementen op **[!UICONTROL Publish]**. Het element wordt gepubliceerd en het dialoogvenster Elementen publiceren wordt weergegeven.
+1. Wanneer het publicatieproces wordt gestart, wordt een bevestigingsvenster weergegeven met alle gerelateerde elementen en bronnen. Selecteer in het dialoogvenster dat gerelateerde elementen bevat de optie **[!UICONTROL Publish]**. Het element wordt gepubliceerd en het dialoogvenster Elementen publiceren wordt weergegeven.
 
    >[!NOTE]
    >
@@ -99,9 +99,9 @@ Middelen kunnen de volgende statussen hebben:
 Voer de volgende stappen uit om alle Correspondence Management-elementen op een server te publiceren:
 
 1. Aanmelden bij de [!DNL AEM Forms] server.
-1. Tikken **Adobe Experience Manager** in de algemene navigatiebalk.
-1. Tikken ![gereedschappen](assets/tools.png)en tikt u vervolgens op **Forms**.
-1. Tikken **Correspondentenbeheermiddelen publiceren**.
+1. Selecteren **Adobe Experience Manager** in de algemene navigatiebalk.
+1. Selecteren ![gereedschappen](assets/tools.png)en selecteer vervolgens **Forms**.
+1. Selecteren **Correspondentenbeheermiddelen publiceren**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -109,7 +109,7 @@ Voer de volgende stappen uit om alle Correspondence Management-elementen op een 
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. Tikken **Publiceren** en tik in het bevestigingsbericht op **OK**.
+1. Selecteren **Publiceren** en, in het bevestigingsbericht, selecteer **OK**.
 
    Nadat een batchproces is voltooid, kunt u de details van de laatste uitvoering weergeven. Dit omvat informatie zoals de login van de Beheerder en als de partij met succes of ontbrak.
 
@@ -123,27 +123,27 @@ Voer de volgende stappen uit om alle Correspondence Management-elementen op een 
 
 Voer de volgende stappen uit om de datum en het tijdstip van publicatie en het verwijderen van de publicatie van Forms &amp; Documents-elementen te plannen:
 
-1. Middelen selecteren en tikken **[!UICONTROL View Properties]**. De pagina Eigenschappen van metagegevens wordt geopend.
-1. Tik op de pagina Eigenschappen van metagegevens op **[!UICONTROL Advanced]** en tikt u vervolgens op **[!UICONTROL Edit]** ![illustrator_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Selecteer een element en selecteer **[!UICONTROL View Properties]**. De pagina Eigenschappen van metagegevens wordt geopend.
+1. Selecteer op de pagina Eigenschappen van metagegevens de optie **[!UICONTROL Advanced]** en selecteer vervolgens **[!UICONTROL Edit]** ![illustrator_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. In de **[!UICONTROL Publish On Time]** en **[!UICONTROL Publish Off Time]** selecteert u de datum en tijd.\
-   Tikken **[!UICONTROL Done]** ![aem6forms_check](assets/aem6forms_check.png).
+   Selecteren **[!UICONTROL Done]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Een element verwijderen {#unpublish-an-asset}
 
-1. Selecteer een middel dat wordt gepubliceerd en tik **[!UICONTROL Unpublish]** ![ongedaan maken](assets/unpublish.png).
+1. Selecteer een middel dat wordt gepubliceerd en selecteer **[!UICONTROL Unpublish]** ![ongedaan maken](assets/unpublish.png).
 1. Gebruik een van de volgende opties om elementen te selecteren en de publicatie ervan ongedaan te maken.
 
-   1. Plaats de aanwijzer op een element en tik op **[!UICONTROL Unpublish]** ![ongedaan maken](assets/unpublish.png).
-   1. Voer een van de volgende handelingen uit en tik op Publiceren ongedaan maken:
+   1. Plaats de aanwijzer op een element en selecteer **[!UICONTROL Unpublish]** ![ongedaan maken](assets/unpublish.png).
+   1. Voer een van de volgende handelingen uit en selecteer vervolgens Publiceren ongedaan maken:
 
-      * Tik op **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)en tikt u op het element. Het element is geselecteerd.
+      * Als u in de kaartweergave werkt, selecteert u **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)en selecteert u het element. Het element is geselecteerd.
 
-      * Als u zich in de lijstweergave bevindt, houdt u de muisaanwijzer boven een element en tikt u op ![selectassetcheckmark](assets/selectassetcheckmark.png) . Het element is geselecteerd.
+      * Als u zich in de lijstweergave bevindt, houdt u de muisaanwijzer boven een element en selecteert u ![selectassetcheckmark](assets/selectassetcheckmark.png) . Het element is geselecteerd.
 
-      * Tik op een element om de details ervan weer te geven.
+      * Selecteer een element om de details ervan weer te geven.
       * De eigenschappen van een element weergeven door op Weergave-eigenschappen te tikken ![viewproperties](assets/viewproperties.png).
 
-1. Wanneer het Unpublish-proces wordt gestart, wordt een bevestigingsvenster weergegeven. Tik op **[!UICONTROL Unpublish]**.
+1. Wanneer het Unpublish-proces wordt gestart, wordt een bevestigingsvenster weergegeven. Selecteren **[!UICONTROL Unpublish]**.
 
    >[!NOTE]
    >
@@ -157,8 +157,8 @@ Elke keer dat u een element of brief publiceert nadat u deze hebt bewerkt, wordt
 >
 >Keer geen brief aan een laatst gepubliceerde staat terug als om het even welk afhankelijk element dat in die gepubliceerde brief wordt gebruikt van het systeem wordt geschrapt.
 
-1. Middelen selecteren en tikken **[!UICONTROL Revert to Previously Published Version]** ![reverttopreviousouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. Voordat het element wordt teruggedraaid, verschijnt er een bevestigingsvenster. Tik op **[!UICONTROL Revert]**.
+1. Selecteer een element en selecteer **[!UICONTROL Revert to Previously Published Version]** ![reverttopreviousouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Voordat het element wordt teruggedraaid, verschijnt er een bevestigingsvenster. Selecteren **[!UICONTROL Revert]**.
 
    Het element of de letter wordt teruggedraaid naar de eerder gepubliceerde versie.
 
@@ -168,17 +168,17 @@ Elke keer dat u een element of brief publiceert nadat u deze hebt bewerkt, wordt
 >
 >Als u een element verwijdert, wordt dit verwijderd uit de publicatie-instantie. Wanneer u elementen verwijdert, verwijdert u ook de versiehistorie, met uitzondering van de basisversie.
 
-1. Middelen selecteren en tikken **[!UICONTROL Delete]** ![delete](assets/delete.png).
+1. Selecteer een element en selecteer **[!UICONTROL Delete]** ![delete](assets/delete.png).
 
    >[!NOTE]
    >
    >De optie Verwijderen is ook beschikbaar als u elementdetails weergeeft door op een element te tikken of als u de eigenschappen van een element weergeeft door op Eigenschappen weergeven te tikken ![viewproperties](assets/viewproperties.png).
 
-1. Voordat het element wordt verwijderd, verschijnt er een bevestigingsvenster. Tik op **[!UICONTROL Delete]**.
+1. Voordat het element wordt verwijderd, verschijnt er een bevestigingsvenster. Selecteren **[!UICONTROL Delete]**.
 
    >[!NOTE]
    >
-   >Alleen het geselecteerde element wordt verwijderd en de afhankelijke elementen worden niet verwijderd. Tik op Verwijzingen naar een element om de verwijzingen naar dat element te controleren ![verwijzingen](assets/references.png) en selecteer vervolgens een element.
+   >Alleen het geselecteerde element wordt verwijderd en de afhankelijke elementen worden niet verwijderd. Als u verwijzingen naar een element wilt controleren, selecteert u ![verwijzingen](assets/references.png) en selecteer vervolgens een element.
    >
    >
    >Als het element dat u wilt verwijderen, een onderliggend element van een ander element is, wordt het niet verwijderd. Als u een dergelijk element wilt verwijderen, verwijdert u verwijzingen van dit element uit andere elementen en probeert u het vervolgens opnieuw.

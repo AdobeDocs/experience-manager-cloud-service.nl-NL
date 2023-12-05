@@ -2,9 +2,9 @@
 title: Voorlopige naslaggids voor Query Builder
 description: Predicate reference for the Query Builder API in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2270'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag; het is impliciet.
 
 * **`p.offset`** - getal dat het begin van de resultatenpagina aangeeft, dat wil zeggen het aantal items dat moet worden overgeslagen.
 * **`p.limit`** - getal dat het paginaformaat aangeeft.
-* **`p.guessTotal`** - aanbevolen: het volledige resultaattotaal, dat kostbaar kan zijn, niet berekenen. Of een aantal die op het maximumtotaal om te tellen tot (bijvoorbeeld 1000, een aantal wijst dat gebruikers genoeg terugkoppelt op de ruwe grootte en nauwkeurige aantallen voor kleinere resultaten). Of, `true` slechts tot het noodzakelijke minimum te tellen `p.offset` + `p.limit`.
+* **`p.guessTotal`** - aanbevolen: het volledige resultaattotaal, dat kostbaar kan zijn, niet berekenen. Of een aantal die op het maximumtotaal om te tellen tot (bijvoorbeeld, 1000, een aantal wijst dat gebruikers genoeg terugkoppelt op de ruwe grootte en nauwkeurige aantallen voor kleinere resultaten). Of, `true` slechts tot het noodzakelijke minimum te tellen `p.offset` + `p.limit`.
 * **`p.excerpt`** - indien ingesteld op `true`, neemt u het volledige tekstfragment op in het resultaat.
 * **`p.indexTag`** - als de reeks een optie van de indexmarkering in de vraag zal omvatten (zie [Index-tag voor zoekopties](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
 * **`p.facetStrategy`** - indien ingesteld op `oak`, zal de Bouwer van de Vraag facetextractie aan Oak (zie [Facetten](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
@@ -76,7 +76,7 @@ Op deze manier kunt u de resultaten sorteren. Als het opdracht geven door veelvo
 
 #### Eigenschappen {#properties-13}
 
-* **`orderby`** - JCR-eigenschapsnaam aangeduid door een regelafstand @, bijvoorbeeld `@jcr:lastModified` of `@jcr:content/jcr:title`of een andere voorspelling in de query, bijvoorbeeld `2_property`, waarop wordt gesorteerd
+* **`orderby`** - ofwel de naam van de JCR-eigenschap die wordt aangegeven door een regelafstand @, bijvoorbeeld `@jcr:lastModified` of `@jcr:content/jcr:title`of een andere voorspelling in de query, bijvoorbeeld `2_property`, waarop wordt gesorteerd
 * **`sort`** - sorteerrichting: `desc` voor aflopende of `asc` voor oplopend (standaard)
 * **`case`** - indien ingesteld op `ignore`wordt het sorteren ongevoelig voor hoofdletters en kleine letters `a` komt voor `B`; als de sortering leeg is of wordt weggelaten, is de sortering hoofdlettergevoelig (dus `B` komt voor `a`
 
@@ -135,7 +135,7 @@ Filteren wordt niet ondersteund.
 #### Eigenschappen {#properties-3}
 
 * **`property`** - relatief pad naar `DATE` eigenschap, bijvoorbeeld `jcr:lastModified`
-* **`lowerBound`** - lagere datum gebonden aan controlebezit voor, bijvoorbeeld `2014-10-01`
+* **`lowerBound`** - lagere datum gebonden aan controle eigenschap voor, bijvoorbeeld, `2014-10-01`
 * **`lowerOperation`** - `>` (nieuwer) of `>=` (bij of hoger), van toepassing op `lowerBound`. De standaardwaarde is `>`
 * **`upperBound`** - bovengrens voor het controleren van eigenschappen, bijvoorbeeld `2014-10-01T12:15:00`
 * **`upperOperation`** - `<` (ouder) of `<=` (bij of ouder) `upperBound`. De standaardwaarde is `<`
@@ -174,7 +174,7 @@ Een alleen-filteren-voorspelling en kan geen zoekindex gebruiken. Het ondersteun
 
 #### Eigenschappen {#properties-7}
 
-* **`hasPermission`** - alle door komma&#39;s gescheiden JCR-bevoegdheden die de huidige gebruikerssessie moet hebben voor het desbetreffende knooppunt. Bijvoorbeeld, `jcr:write`, `jcr:modifyAccessControl`
+* **`hasPermission`** - alle door komma&#39;s gescheiden JCR-bevoegdheden die de huidige gebruikerssessie moet hebben voor het desbetreffende knooppunt. Bijvoorbeeld: `jcr:write`, `jcr:modifyAccessControl`
 
 ### taal {#language}
 
@@ -347,7 +347,7 @@ Deze biedt ondersteuning voor het extraheren van facetten en biedt emmers voor e
 
 #### Eigenschappen {#properties-21}
 
-* **`tag`** - pad naar labeltitel, bijvoorbeeld `properties:orientation/landscape`
+* **`tag`** - het pad naar de codetitel, bijvoorbeeld `properties:orientation/landscape`
 * **`N_value`** - gebruik `1_value`, `2_value`, ... om te controleren op meerdere tags (gecombineerd met `OR` standaard, met `AND` indien `and=true`)
 * **`property`** - eigenschap (of relatief pad naar eigenschap) om naar te kijken (standaard `cq:tags`)
 
@@ -359,7 +359,7 @@ De tag ondersteunt facetextractie en biedt emmers voor elke unieke tag, waarbij 
 
 #### Eigenschappen {#properties-22}
 
-* **`tagid`** - tag-id, bijvoorbeeld `properties:orientation/landscape`
+* **`tagid`** - tag-id om bijvoorbeeld naar te zoeken `properties:orientation/landscape`
 * **`N_value`** - gebruik `1_value`, `2_value`, ... om te controleren op meerdere tag-id&#39;s (gecombineerd met `OR` standaard, met `AND` indien `and=true`)
 * **`property`** - eigenschap (of relatief pad naar eigenschap) om naar te kijken (standaard `cq:tags`)
 

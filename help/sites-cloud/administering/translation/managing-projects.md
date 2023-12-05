@@ -4,9 +4,9 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3960'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Na het vertalen kunt u [de vertaling bekijken](#reviewing-and-promoting-updated-
 
    ![Vertaalproject maken](../assets/create-translation-project.png)
 
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 
 ### Vertaalprojecten maken voor een bestaande taalkopie {#create-translation-projects-for-an-existing-language-copy}
 
@@ -112,7 +112,7 @@ Na het vertalen kunt u [de vertaling bekijken](#reviewing-and-promoting-updated-
 
    ![Project maken om taalkopieën bij te werken](../assets/create-update-language-copies-project.png)
 
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 
 ### Pagina&#39;s toevoegen aan een vertaalproject {#adding-pages-to-a-translation-project}
 
@@ -463,7 +463,7 @@ Hoewel AEM diverse vertaaloplossingen en interfaces biedt, is het ook mogelijk o
 
 ### Een vertaaltaak exporteren {#exporting-a-translation-job}
 
-U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld om naar een vertaalleverancier te verzenden die niet met AEM via een schakelaar geïntegreerd is, of om de inhoud te herzien.
+U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld, om naar een vertaalleverancier te verzenden die niet met AEM via een schakelaar geïntegreerd is, of de inhoud te herzien.
 
 1. Selecteer in het keuzemenu van de tegel voor vertaaltaken de optie **Exporteren**.
 1. Selecteer in het dialoogvenster **Geëxporteerd bestand downloaden** en het bestand indien nodig opslaan in het dialoogvenster van de webbrowser.
@@ -471,7 +471,7 @@ U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld om naar een vertaa
 
 ### Een vertaaltaak importeren {#importing-a-translation-job}
 
-U kunt vertaalde inhoud in AEM importeren, bijvoorbeeld wanneer uw vertaalbureau de inhoud naar u stuurt omdat deze niet via een connector is geïntegreerd met AEM.
+U kunt vertaalde inhoud bijvoorbeeld importeren in AEM, wanneer uw vertaalbureau de inhoud naar u stuurt omdat deze niet is geïntegreerd met AEM via een connector.
 
 1. Selecteer in het keuzemenu van de tegel voor vertaaltaken de optie **Importeren**.
 1. Selecteer in het dialoogvenster van de webbrowser het bestand dat u wilt importeren.

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -52,8 +52,8 @@ Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebrui
 Voer de volgende stappen uit om het laden in een adaptief formulierfragment mogelijk te maken:
 
 1. Open het adaptieve formulier in de ontwerpmodus met het fragment dat u wilt inschakelen voor wazig laden.
-1. Selecteer het adaptieve formulierfragment en tik op ![vormen](assets/configure-icon.svg).
-1. Schakel in de zijbalk de optie **[!UICONTROL Load fragment lazily]** en tikken **Gereed**.
+1. Selecteer het adaptieve formulierfragment en selecteer ![vormen](assets/configure-icon.svg).
+1. Schakel in de zijbalk de optie **[!UICONTROL Load fragment lazily]** en selecteert u **Gereed**.
 
    ![Lazy loading inschakelen voor het adaptieve formulierfragment](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Voer de volgende stappen uit om het laden in een adaptief formulierfragment moge
 U kunt de waarden van objecten in het laaggeladen fragment als globaal markeren, zodat deze beschikbaar zijn voor gebruik in scripts wanneer het bevattende fragment niet is geladen. Ga als volgt te werk:
 
 1. Open het adaptieve formulierfragment in de ontwerpmodus.
-1. Tik op het veld waarvan u de waarde als globaal wilt markeren en tik vervolgens op ![vormen](assets/configure-icon.svg).
+1. Selecteer het veld waarvan u de waarde als globaal wilt markeren en selecteer vervolgens ![vormen](assets/configure-icon.svg).
 1. Schakel in de zijbalk de optie **[!UICONTROL Use value during lazy loading]**.
 
    ![Lazy loading field in sidebar](assets/enable-lazy-loading.png)

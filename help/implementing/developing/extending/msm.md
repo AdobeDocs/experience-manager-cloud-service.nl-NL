@@ -2,9 +2,9 @@
 title: Het beheer van meerdere sites uitbreiden
 description: Leer hoe u de functionaliteit van beheer voor meerdere sites uitbreidt.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ De `LiveActionFactory` maakt instanties van de `LiveAction` klasse voor een bepa
 
    * `getName` - Retourneert de naam van de handeling
 
-      * De naam wordt gebruikt om naar de actie, bijvoorbeeld in rollout configuraties te verwijzen.
+      * De naam wordt gebruikt om naar de actie, bijvoorbeeld, in rollout configuraties te verwijzen.
 
    * `execute` - Voert de taken van de actie uit
 

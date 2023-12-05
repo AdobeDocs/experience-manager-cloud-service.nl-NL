@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '6269'
-ht-degree: 8%
+source-wordcount: '6305'
+ht-degree: 7%
 
 ---
 
@@ -257,7 +257,7 @@ De eenvoudigste methode om dat te doen is het volgende twee-stap proces te volto
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Het is echter mogelijk om een alternatieve manier te gebruiken en het maken van data-elementen te omzeilen. U kunt rechtstreeks verwijzen naar een argument van een Dynamic Media Viewer-gebeurtenis. Voer de volledig gekwalificeerde naam van het gebeurtenisargument in het dialoogvenster **[!UICONTROL value]** invoerveld van de variabele Analytics-toewijzing. Zorg ervoor dat u de procentuele (%) tekens omringt. Bijvoorbeeld,
+Het is echter mogelijk om een alternatieve manier te gebruiken en het maken van data-elementen te omzeilen. U kunt rechtstreeks verwijzen naar een argument van een Dynamic Media Viewer-gebeurtenis. Voer de volledig gekwalificeerde naam van het gebeurtenisargument in het dialoogvenster **[!UICONTROL value]** invoerveld van de variabele Analytics-toewijzing. Zorg ervoor dat u de procentuele (%) tekens omringt. Bijvoorbeeld:
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -479,7 +479,7 @@ Zie ook [Handleiding voor analytische implementatie](https://experienceleague.ad
 
    Het is echter voldoende om te weten dat de rapporten Aangepast verkeer automatisch beschikbaar worden in Adobe Analytics nadat u aangepaste verkeersvariabelen hebt ingesteld in **[Adobe Analytics-variabelen instellen](#setting-up-adobe-analytics-variables)**.
 
-   Het rapport voor de variabele **[!UICONTROL Viewer asset (prop 30)]** is bijvoorbeeld beschikbaar in het menu Rapporten onder **[!UICONTROL Custom Traffic]** > **[!UICONTROL Custom Traffic 21-30]** > **[!UICONTROL Viewer asset (prop 30)]**.
+   Het rapport voor **[!UICONTROL Viewer asset (prop 30)]** variabele is beschikbaar in het menu Rapporten onder **[!UICONTROL Custom Traffic]** > **[!UICONTROL Custom Traffic 21-30]** > **[!UICONTROL Viewer asset (prop 30)]**.
 
    Als u dit rapport meteen na het maken van **[!UICONTROL Viewer asset (prop 30)]** bezoekt, worden er geen data weergegeven. Dat wordt op dit moment in de integratie verwacht.
 
@@ -506,18 +506,18 @@ Nadat u de Markeringen van het Experience Platform vormt, wordt het volgende ops
 
 Een bezit in de Markeringen van het Experience Platform is een genoemde configuratie die al uw montages bij elkaar houdt. Er wordt een bibliotheek met de configuratie-instellingen gegenereerd en gepubliceerd op verschillende milieuniveaus (ontwikkeling, staging en productie).
 
-Zie ook [Tikeigenschap configureren](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
+Zie ook [Vorm een uitgezochte bezit](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **Een eigenschap maken in Experience Platform-tags:**
 
 1. Selecteer in Experience Platform-tags de optie **[!UICONTROL New Property]**.
-1. Typ in het dialoogvenster **[!UICONTROL Create Property]** in het veld **[!UICONTROL Name]** een beschrijvende naam, zoals de titel van uw website. Bijvoorbeeld, `DynamicMediaViewersProp.`
+1. Typ in het dialoogvenster **[!UICONTROL Create Property]** in het veld **[!UICONTROL Name]** een beschrijvende naam, zoals de titel van uw website. Bijvoorbeeld: `DynamicMediaViewersProp.`
 1. In de **[!UICONTROL Domains]** , voert u het domein van uw website in.
 1. Schakel in de vervolgkeuzelijst **[!UICONTROL Advanced Options]** de optie **[!UICONTROL Configure for extension development (cannot be modified later)]** in als de uitbreiding die u wilt gebruiken (in dit geval *Dynamische mediaviewers*) nog niet wordt vrijgegeven.
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. Selecteer **[!UICONTROL Save]**.
+1. Selecteren **[!UICONTROL Save]**.
 
    Selecteer de gemaakte eigenschap en ga vervolgens verder met *Installatie en installatie van extensies*.
 
@@ -551,7 +551,7 @@ Voer op de pagina Uitbreiding installeren de rapportsuite-id in het veld **[!UIC
 
 Op de **[!UICONTROL Install Extension]** pagina, uitbreiden **[!UICONTROL General]** en geeft u vervolgens de trackingserver op. De volgende server volgt de sjabloon `<trackingNamespace>.sc.omtrdc.net`, waarbij `<trackingNamespace>` Dit is de informatie die wordt verkregen in de e-mail met provisioning.
 
-Selecteer **[!UICONTROL Save]**.
+Selecteren **[!UICONTROL Save]**.
 
 Zie [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
@@ -606,7 +606,7 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
-1. Op de pagina Nieuwe bibliotheek maken klikt u in het dialoogvenster **[!UICONTROL Name]** Voer een beschrijvende naam in voor de nieuwe bibliotheek. Bijvoorbeeld,
+1. Op de pagina Nieuwe bibliotheek maken klikt u in het dialoogvenster **[!UICONTROL Name]** Voer een beschrijvende naam in voor de nieuwe bibliotheek. Bijvoorbeeld:
 
    *DynamicMediaViewersLib*
 
@@ -674,7 +674,7 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
 
 1. Selecteer in de Adobe-IMC-configuratiepagina in de linkerbovenhoek de optie **[!UICONTROL Create]**.
 1. Op de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina, in de **[!UICONTROL Cloud Solution]** vervolgkeuzelijst, selecteert u **[!UICONTROL Experience Platform Data Collection]**.
-1. Inschakelen **[!UICONTROL Create new certificate]** Voer vervolgens in het tekstveld een betekenisvolle waarde voor het certificaat in. Bijvoorbeeld: *AdobeLaunchIMSCert*. Selecteer **[!UICONTROL Create certificate]**.
+1. Inschakelen **[!UICONTROL Create new certificate]** Voer vervolgens in het tekstveld een betekenisvolle waarde voor het certificaat in. Bijvoorbeeld: *AdobeLaunchIMSCert*. Selecteren **[!UICONTROL Create certificate]**.
 
    Het volgende Info-bericht wordt weergegeven:
 
@@ -701,7 +701,7 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
 
 1. Schakel op de tweede pagina **[!UICONTROL Create a new integration]** het keuzerondje **[!UICONTROL Experience Platform Tags API]** in. Selecteer in de rechterbenedenhoek van de pagina de optie **[!UICONTROL Continue]**.
 
-   ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
+   ![2019-07-25_13-14](assets/2019-07-25_13-13-54.png)
 
 1. Op de derde **[!UICONTROL Create a new integration]** pagina, ga als volgt te werk:
 
@@ -717,7 +717,7 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
-1. Selecteer **[!UICONTROL Create integration]**.
+1. Selecteren **[!UICONTROL Create integration]**.
 1. Op de **[!UICONTROL Integration created]** pagina, selecteert u **[!UICONTROL Continue to integration details]**.
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
@@ -748,7 +748,7 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
    * **[!UICONTROL Title]** - Voer een beschrijvende accounttitel in.
    * **[!UICONTROL Authorization Server]** - Ga terug naar de pagina met integratiegegevens die u eerder hebt geopend. Selecteer de **[!UICONTROL JWT]** tab. Kopieer de servernaam - zonder het pad - zoals hieronder gemarkeerd.
 
-   Ga terug naar de pagina **[!UICONTROL Account]** en plak de naam in het desbetreffende veld.
+   Terugkeren naar de **[!UICONTROL Account]** en plakt u de naam in het desbetreffende veld.
 Bijvoorbeeld: `https://ims-na1.adobelogin.com/`
 (De naam van de voorbeeldserver is alleen bedoeld voor uitleg)
 
@@ -759,7 +759,7 @@ Bijvoorbeeld: `https://ims-na1.adobelogin.com/`
 
    Ga terug naar de pagina **[!UICONTROL Account]** en plak de toets in het desbetreffende veld.
 
-   ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
+   ![2019-07-25_14-35-33](assets/2019-07-25_14-35-333.png)
    *Pagina met integratiedetails*
 
 1. **[!UICONTROL Client Secret]**- Ga terug naar de pagina met integratiedetails. Van de **[!UICONTROL Overview]** tab, selecteert u **[!UICONTROL Retrieve Client Secret]**. Rechts van het **[!UICONTROL Client secret]** veld, selecteren **[!UICONTROL Copy]**.
@@ -798,7 +798,7 @@ Bijvoorbeeld: `https://ims-na1.adobelogin.com/`
 1. Selecteer in de linkerbovenhoek van de pagina de optie **[!UICONTROL Create]**.
 1. Vul op de pagina **[!UICONTROL General]** (1/3 pagina&#39;s) van het venster **[!UICONTROL Create Experience Platform Tags Configuration]** de volgende velden in:
 
-   * **[!UICONTROL Title]** - Voer een beschrijvende configuratitel in. Bijvoorbeeld, `We.Retail Tags cloud configuration`.
+   * **[!UICONTROL Title]** - Voer een beschrijvende configuratitel in. Bijvoorbeeld: `We.Retail Tags cloud configuration`.
 
    * **[!UICONTROL Associated Adobe IMS Configuration]** - Selecteer de IMS-configuratie die u eerder hebt gemaakt in [Experience Manager-IMS configureren](#configuring-aem-ims).
 

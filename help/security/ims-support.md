@@ -2,10 +2,10 @@
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
 description: Ondersteuning voor Image Management System voor Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 37%
+source-wordcount: '1917'
+ht-degree: 32%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 37%
 
 {{ims-group-profiles}}
 
-## Belangrijkste kenmerken {#key-highlights}
+## Belangrijkste hooglichten {#key-highlights}
 
 AEM as a Cloud Service biedt alleen ondersteuning voor IMS-verificatie voor auteur-, Admin- en Dev-gebruikers. Het programma biedt geen ondersteuning voor externe eindgebruikers van klantsites, zoals sitebezoekers.
 
@@ -42,7 +42,7 @@ De gebruikersopenings van een sessiestroom wordt hieronder weergegeven, de gebru
 
 ## Instellen {#how-to-set-up}
 
-### Organisaties on-boarden in Adobe Admin Console {#onboarding-orgs-to-adobe-admin-console}
+### Organisaties aan boord nemen naar Adobe Admin Console {#onboarding-orgs-to-adobe-admin-console}
 
 Als u Adobe IMS voor AEM-verificatie wilt gebruiken, is het on-boarden van de klant een eerste vereiste voor het gebruik van de Adobe IMS voor AEM-verificatie.
 
@@ -55,7 +55,7 @@ Nadat een klant als IMS Organisatie bestaat, moeten zij hun systeem vormen zoals
 ![IMS on-boarden](/help/security/assets/ims2.png)
 
 1. De aangewezen systeembeheerder ontvangt een uitnodiging om zich aan te melden bij Cloud Manager. Na aanmelding bij Cloud Manager kunnen de systeembeheerders ervoor kiezen AEM-programma&#39;s en -omgevingen in te stellen of naar de Admin Console te gaan voor beheertaken.
-1. De systeembeheerder claimt een domein om het eigenaarschap van het respectieve domein (bijvoorbeeld acme.com) te bevestigen
+1. De systeembeheerder beweert een domein om de eigendom van het respectieve domein (bijvoorbeeld, acme.com) te bevestigen
 1. De systeembeheerder stelt gebruikersdirectory&#39;s in
 1. De systeembeheerder voert IDP-configuratie in Admin Console uit om Single Sign On in te stellen.
 1. De AEM-beheerder beheert de lokale groepen en toestemmingen en machtigingen, zoals gebruikelijk.
@@ -64,7 +64,7 @@ De basisbeginselen van Adobe Identity Management, inclusief de IDP-configuratie,
 
 Het gebruik van Enterprise Administration en Admin Console wordt [hier](https://helpx.adobe.com/enterprise/admin-guide.html) besproken.
 
-### Gebruikers on-boarden in Admin Console {#onboarding-users-in-admin-console}
+### Gebruikers aan boord in Admin Console {#onboarding-users-in-admin-console}
 
 Er zijn drie manieren om aan boord van gebruikers te gaan. Elke methode is afhankelijk van de grootte van de klant en zijn voorkeur. U kunt gebruikers manueel tot stand brengen in Admin Console, een .csv dossier uploaden, of gebruikers van de onderneming Actieve Folder van de klant synchroniseren.
 
@@ -112,7 +112,7 @@ Documentatie voor Adobe Developer Console vindt u [hier](https://developer.adobe
 
 De User Management-API die door de User Sync Tool wordt gebruikt, wordt [hier](https://adobe-apiplatform.github.io/user-sync.py/en/) besproken.
 
-## Adobe Experience as a Cloud Service configureren {#aem-configuration}
+## Adobe Ervaring as a Cloud Service Configuratie {#aem-configuration}
 
 >[!NOTE]
 >
@@ -126,9 +126,9 @@ Hieronder ziet u de belangrijkste OSGI-configuraties die moeten worden gewijzigd
 
 <!-- Arun to provide list of osgi configs -->
 
-## Het gebruik {#how-to-use}
+## Hoe wordt het gebruikt {#how-to-use}
 
-### Producten en gebruikerstoegang beheren in Admin Console {#managing-products-and-user-access-in-admin-console}
+### Producten en gebruikerstoegang in Admin Console beheren {#managing-products-and-user-access-in-admin-console}
 
 Wanneer de Beheerder van het Product aan Admin Console het programma opent, zien zij veelvoudige instanties van de AEM as a Cloud Service Context van het Product, zoals hieronder getoond. Selecteer bijvoorbeeld een van de producten in het menu **Overzicht** pagina:
 
@@ -185,7 +185,7 @@ Nadat de authentificatie volledig is, wordt de gebruiker opnieuw gericht naar AE
 
 ![IMS-aanmelding5](/help/security/assets/ims14.png)
 
-### Toestemmingen en ACL&#39;s beheren in Adobe Experience Manager as a Cloud Service {#managing-permissions-in-aem}
+### Bevoegdheden en ACL&#39;s beheren in Adobe Experience Manager as a Cloud Service {#managing-permissions-in-aem}
 
 ACLs en de toestemmingen blijven in AEM worden beheerd. De gebruikersgroepen die vanaf IMS worden gesynchroniseerd, kunnen worden toegewezen aan lokale groepen waar ACL&#39;s en rechten zijn gedefinieerd.
 

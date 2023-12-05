@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ In dit artikel wordt uitgelegd hoe u AEM vertaalworkflow kunt gebruiken met Adap
 
 De vertaalservice zet uw inhoud direct om in Adaptief formulier en Document of Record. [!DNL AEM Forms] is vooraf geconfigureerd voor het gebruik van een proefversie van [!DNL Microsoft Translator] voor automatische vertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw Adaptieve Forms en Document of Record:
 
-1. Op de [!DNL AEM Forms] UI, selecteert u een formulier en tikt u op **Woordenboek toevoegen** -optie.
+1. Op de [!DNL AEM Forms] UI, selecteert u een formulier en selecteert u de **Woordenboek toevoegen** -optie.
 1. In **Woordenboek toevoegen aan vertaalproject** scherm, selecteert u de **Een nieuw vertaalproject maken** of **Toevoegen aan een bestaand vertaalproject** -optie.
-1. In de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld, `Government Reference Site - German locale.`
+1. In de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld: `Government Reference Site - German locale.`
 1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`) en klik op **Gereed**. U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld.
 1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**. Open het gemaakte project in het scherm Projecten.
 1. Klik op de knop **ovalen** onder aan het dialoogvenster **Omzettingsoverzicht** tegel. Het scherm Translation Summary wordt geopend.
@@ -48,7 +48,7 @@ De vertaalservice zet uw inhoud direct om in Adaptief formulier en Document of R
 [Document met recordinstellingen](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [De brandinggegevens van het document of Record aanpassen](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) en zorg ervoor dat de landinstelling van de browser wordt ingesteld op de taal waarin u het Adaptief formulier hebt gelokaliseerd met de computertaal. Met de landinstelling van de browser kunt u de brandinggegevens in het document of Record lokaliseren.
-1. Tik op Voorvertoning genereren om het gelokaliseerde document met records weer te geven. Het PDF Document of Record wordt gegenereerd en geopend op een nieuw tabblad in uw browser.
+1. Als u het gelokaliseerde document met records wilt weergeven, selecteert u Voorvertoning genereren. Het PDF Document of Record wordt gegenereerd en geopend op een nieuw tabblad in uw browser.
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

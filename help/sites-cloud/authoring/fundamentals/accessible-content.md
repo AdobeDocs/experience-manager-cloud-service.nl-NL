@@ -2,21 +2,21 @@
 title: Toegankelijke inhoud voor Adobe Experience Manager as a Cloud Service maken (WCAG 2.1-compatibiliteit)
 description: Gebruik AEM as a Cloud Service om webinhoud toegankelijk en bruikbaar te maken voor personen met een handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '13859'
-ht-degree: 3%
+source-wordcount: '13685'
+ht-degree: 2%
 
 ---
 
-# Toegankelijke content maken (WCAG 2.1-compatibiliteit) {#creating-accessible-content-wcag-conformance}
+# Toegankelijke inhoud maken (WCAG 2.1-compatibiliteit) {#creating-accessible-content-wcag-conformance}
 
-De [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) wordt opgesteld door [een werkgroep van het World Wide Web Consortium](https://www.w3.org/groepen/#Accessibility_Guidelines_Working_Group). Het bestaat uit een reeks technologie-onafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webinhoud toegankelijk en bruikbaar is voor personen met een handicap.
+De [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/) wordt opgesteld door [een werkgroep van het World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group). Het bestaat uit een reeks technologie-onafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webinhoud toegankelijk en bruikbaar is voor personen met een handicap.
 
 Als inleiding geeft het consortium een reeks secties en ondersteunende documenten:
 
 * [Nieuwe functies in WCAG 2.1](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1)
-* [Voldoen aan WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+* [Hoe te om WCAG 2.1 te ontmoeten](https://www.w3.org/WAI/WCAG21/quickref/)
 * [WCAG 2.1 begrijpen](https://www.w3.org/WAI/WCAG21/Understanding/)
 * [Technieken voor WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/)
 * [De WCAG-documenten](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
@@ -335,7 +335,7 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur krijgen door, wa
 
   >[!NOTE]
   >
-  Deze elementen en kenmerken zijn standaard niet rechtstreeks beschikbaar, maar de systeembeheerder kan wel ondersteuning voor deze waarden toevoegen in het dialoogvenster **Tabeleigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+  Door gebrek, zijn deze elementen en attributen niet direct beschikbaar, hoewel het voor de systeembeheerder mogelijk is om steun voor deze waarden in toe te voegen **Tabeleigenschappen** dialoogvenster (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
   Als u het dialoogvenster **Tabel** het dialoogvenster waarin u **Tabeleigenschappen** tab:
 
@@ -357,7 +357,7 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur krijgen door, wa
      >
      Ze zijn in feite hetzelfde, maar `<strong>` en `<em>` verdienen de voorkeur, aangezien deze semantisch correct HTML zijn. Uw ontwikkelingsteam kan RTE vormen om te gebruiken `<strong>` en `<em>` (in plaats van `<b>` en `<i>`) wanneer u uw projectinstantie ontwikkelt.
 
-* **Complexe gegevenstabellen**: Wanneer er complexe tabellen zijn met twee of meer headerniveaus, is het mogelijk dat de basistabeleigenschappen niet voldoende zijn om alle benodigde structuurinformatie te verschaffen. Voor dit soort complexe tabellen moeten er directe relaties worden gemaakt tussen de koppen en de bijbehorende cellen met behulp van de kenmerken **header** en **id.**
+* **Complexe gegevenstabellen**: Wanneer er complexe tabellen zijn met twee of meer headerniveaus, is het mogelijk dat de basistabeleigenschappen niet voldoende zijn om alle benodigde structuurinformatie te verschaffen. Voor dit soort complexe tabellen moeten er directe relaties worden gemaakt tussen de koppen en de bijbehorende cellen met behulp van de **header** en **id** kenmerken.
 
   >[!NOTE]
   >
@@ -1195,7 +1195,7 @@ Waar afbeeldingsknoppen worden gebruikt (bijvoorbeeld **Afbeeldingsknop** van he
 
 In het WKND-project, waar een groep gerelateerde controles bestaat, zoals **Groep keuzerondjes**, kan een titel voor de groep en individuele controles nodig zijn. Wanneer u een set keuzerondjes toevoegt in AEM, wordt in het veld **Titel** deze groepstitel weergegeven, terwijl afzonderlijke titels worden opgegeven wanneer de keuzerondjes (**Items**) worden gemaakt.
 
-Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. Sjablooneditors moeten de titel in de benodigde `fieldset`- en `legend`-tags plaatsen om deze koppeling te maken. Dit kan alleen door de broncode van de pagina te bewerken. Een systeembeheerder kan ook ondersteuning voor deze elementen toevoegen, zodat deze worden weergegeven in het dialoogvenster **Veldeigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/implementing/developing/extending/rte-accessible-content.md)).
+Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. Sjablooneditors moeten de titel in de benodigde `fieldset`- en `legend`-tags plaatsen om deze koppeling te maken. Dit kan alleen door de broncode van de pagina te bewerken. Alternatief, kan een systeembeheerder steun voor deze elementen toevoegen zodat zij in **Veldeigenschappen** dialoogvenster (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/implementing/developing/extending/rte-accessible-content.md)).
 
 ###### Aanvullende overwegingen voor Forms {#additional-considerations-for-forms}
 

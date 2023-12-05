@@ -2,9 +2,9 @@
 title: Pagina-eigenschappen bewerken
 description: Leer hoe u de eigenschappen definieert die vereist zijn voor het beheer van een pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2268'
 ht-degree: 2%
 
 ---
@@ -166,7 +166,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    * **Afbeelding selecteren** - Selecteer een bestaand element dat u als miniatuur wilt gebruiken
    * **Vorige versie** - Deze optie wordt beschikbaar nadat u een wijziging in de miniatuur hebt aangebracht. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
 
-### Cloud Services {#cloud-services}
+### Cloud Servicen {#cloud-services}
 
 * **Configuraties van Cloud Servicen** - Eigenschappen definiëren voor cloudservices
 
@@ -323,12 +323,12 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
       * Als u de paginaselectie tot één pagina reduceert, zijn alle eigenschappen zichtbaar.
    * Algemene eigenschappen met een gemeenschappelijke waarde
       * Alleen eigenschappen met een gemeenschappelijke waarde worden weergegeven in de weergavemodus.
-      * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), worden waarden alleen weergegeven als *alles* vaak voorkomen. Als slechts enkele van de algemene voorbeelden worden weergegeven, worden deze alleen weergegeven tijdens het bewerken.
+      * Als het veld meerdere waarden heeft (bijvoorbeeld tags), worden waarden alleen weergegeven als *alles* vaak voorkomen. Als slechts enkele van de algemene voorbeelden worden weergegeven, worden deze alleen weergegeven tijdens het bewerken.
       * Wanneer er geen eigenschappen met een gemeenschappelijke waarde bestaan, wordt een bericht weergegeven.
 
 * **Bewerken**
 
    * U kunt de waarden in de beschikbare velden bijwerken.
       * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Gereed**.
-      * Wanneer het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
+      * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
    * Velden die veel voorkomen, maar die verschillende waarden op de verschillende pagina&#39;s hebben, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`.

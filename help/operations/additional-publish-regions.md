@@ -2,9 +2,9 @@
 title: Aanvullende publicatieregio's
 description: Leer hoe AEM as a Cloud Service extra publicatiegebieden voor verhoogde beschikbaarheid en verminderde latentie steunt.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Organisaties kunnen maximaal drie extra publicatiegebieden licenties verlenen.
 
 >[!NOTE]
 >
->Deze functie is momenteel alleen beschikbaar voor AEM Sites. Het kan ook niet worden toegepast op sandboxprogramma&#39;s. Houd er rekening mee dat uw programma moet worden bijgewerkt naar AEM versie 12142 of hoger met de functie voor extra publicatiegebieden.
+>Deze functie is momenteel alleen beschikbaar voor AEM Sites. Het kan ook niet worden toegepast op sandboxprogramma&#39;s. Voor aanvullende publicatiegebieden is het vereist dat uw programma wordt bijgewerkt om versie 12142 of hoger AEM te kunnen uitbrengen.
 
 ## Gevallen gebruiken {#use-cases}
 

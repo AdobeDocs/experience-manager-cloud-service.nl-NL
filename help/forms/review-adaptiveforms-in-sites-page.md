@@ -4,9 +4,9 @@ description: Revisie is een mechanisme waarmee revisoren verschillende taken voo
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Met de [Stap toewijzen](https://experienceleague.adobe.com/docs/experience-manag
 1. Open de auteurinstantie in geef wijze uit.
 1. Ga naar **[!UICONTROL Tools]** >  **[!UICONTROL Workflow]** >  **[!UICONTROL Models]** > **[!UICONTROL Create]** > **[!UICONTROL Create Model]**
 1. Geef de titel van de workflow op en voeg de **[Taak toewijzen]** stap
-1. Tikken ![settings_icon](assets/settings_icon.png) op de actiebalk. De **[!UICONTROL Assign Task]** wordt geopend.
+1. Selecteren ![settings_icon](assets/settings_icon.png) op de actiebalk. De **[!UICONTROL Assign Task]** wordt geopend.
 1. Openen [!UICONTROL Form and Document] tab en open [!UICONTROL Pre-populated] vervolgkeuzelijst en geef op:
 
    * Invoergegevensbestand selecteren met
@@ -44,7 +44,7 @@ Met de [Stap toewijzen](https://experienceleague.adobe.com/docs/experience-manag
 Configureer nu de handeling Verzenden van een component Adaptive Form Container op de pagina van de site:
 
 1. Ga naar de pagina van de Site.
-1. Tikken ![settings_icon](assets/settings_icon.png) van een container van een adaptief formulier. De **[!UICONTROL Adaptive Form Container]** wordt geopend.
+1. Selecteren ![settings_icon](assets/settings_icon.png) van een container van een adaptief formulier. De **[!UICONTROL Adaptive Form Container]** wordt geopend.
 1. Open de **[!UICONTROL Submission]** en geeft **[!UICONTROL Submit Action]** tot [Een AEM-workflow aanroepen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. Klikken [Gereed] om de instellingen op te slaan.

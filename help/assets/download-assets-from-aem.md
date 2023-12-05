@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 2%
+source-wordcount: '1300'
+ht-degree: 0%
 
 ---
 
@@ -139,7 +139,7 @@ Om het `OnOffTimeAssetAccessFilter` de dienst, moet u een configuratie tot stand
 1. In uw projectcode in Git, creeer een configuratiedossier bij `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. Het bestand moet het volgende bevatten `{}` als inhoud, die een lege configuratie OSGi voor de overeenkomstige component OSGi betekent. Deze actie laat de dienst toe.
 1. Implementeer uw code, inclusief deze nieuwe configuratie, via [!DNL Cloud Manager].
 1. Nadat de uitvoeringen en metagegevens zijn geïmplementeerd, zijn deze toegankelijk volgens de instellingen voor aan- en uittijd van de elementen. Als de huidige datum of tijd vóór de on-time of na de off-time valt, wordt een foutenmelding getoond.
-Voor meer details bij het toevoegen van een lege configuratie OSGi, kunt u naar dit verwijzen [hulplijn](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
+Voor meer details bij het toevoegen van een lege configuratie OSGi, zie dit [hulplijn](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Tips en beperkingen {#tips-limitations}
 
@@ -148,14 +148,14 @@ Voor meer details bij het toevoegen van een lege configuratie OSGi, kunt u naar 
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
 

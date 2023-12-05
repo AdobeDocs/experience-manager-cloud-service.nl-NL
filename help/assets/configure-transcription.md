@@ -9,9 +9,9 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Laten we nu de transcriptie in dit videoprofiel configureren. Ga naar de **[!UIC
 
 Als het verwerkingsprofiel is geconfigureerd voor het transcripten van audio- en videobestanden, kunt u dit verwerkingsprofiel op een van de volgende manieren toepassen op mappen:
 
-* Selecteer een definitie van het verwerkingsprofiel in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** en gebruik **[!UICONTROL Apply Profile to Folder(s)]** handeling. Met de inhoudbrowser kunt u naar een specifieke map navigeren, map selecteren en de toepassing van het profiel bevestigen.
+* Selecteer een definitie van het verwerkingsprofiel in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** en gebruik **[!UICONTROL Apply Profile to Folders]** handeling. Met de inhoudbrowser kunt u naar een specifieke map navigeren, map selecteren en de toepassing van het profiel bevestigen.
 * Selecteer een map in de gebruikersinterface Elementen en klik op **[!UICONTROL Properties]** handeling om mapeigenschappen te openen. Klik op de knop **[!UICONTROL Asset Processing]** en selecteert u het juiste verwerkingsprofiel voor de map in de **[!UICONTROL Processing Profile]** lijst. Klik op **[!UICONTROL Save & Close]**.
 
   ![configure-transcriptie-dienst](assets/video-processing-profile3.png)
@@ -168,14 +168,14 @@ Aanmelden bij uw [!DNL Azure Media Services] account met de zelfde geloofsbrieve
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)

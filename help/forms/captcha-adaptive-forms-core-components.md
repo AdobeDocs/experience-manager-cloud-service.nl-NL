@@ -4,9 +4,9 @@ description: Verbeter de formulierbeveiliging zonder problemen met de Google reC
 topic-tags: Adaptive Forms, author
 keywords: De Google reCAPTCHA-service, Adaptive Forms, CAPTCHA-uitdaging, Boot Prevention, Core Components, Security Formulierverzending, Preventie van formulierspam
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -40,16 +40,16 @@ Om uw AEM Forms-omgeving te verbinden met de reCAPTCHA-service van Google
       * Een map maken en de optie Cloud Configurations inschakelen:
          1. In Browser van de Configuratie, klik **[!UICONTROL Create]**.
          1. Geef in het dialoogvenster Configuratie maken een naam, titel en selecteer de optie **[!UICONTROL Cloud Configurations]** -optie.
-         1. Klik op **[!UICONTROL Create]**
+         1. Klikken **[!UICONTROL Create]**
       * De optie Cloud Configurations inschakelen voor een bestaande map:
-         1. Selecteer de map in de configuratiegrowser en tik op **[!UICONTROL Properties]**.
+         1. Selecteer de map in de configuratiegrowser en selecteer **[!UICONTROL Properties]**.
          1. Schakel in het dialoogvenster Configuratieeigenschappen de optie **[!UICONTROL Cloud Configurations]**.
-         1. Tikken **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
+         1. Selecteren **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
 1. Configureer de Cloud Service:
-   1. Ga naar de AEM ![gereedschappen-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en tikken **[!UICONTROL reCAPTCHA]**.
-   1. Selecteer een Container van de Configuratie, die in vorige sectie wordt gecreeerd of wordt bijgewerkt. Tik op **[!UICONTROL Create]**.
-   1. Opgeven **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de service reCAPTCHA (verkregen in stap 1). Tik op **[!UICONTROL Create]**.
+   1. Ga naar de AEM ![gereedschappen-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en selecteert u **[!UICONTROL reCAPTCHA]**.
+   1. Selecteer een Container van de Configuratie, die in vorige sectie wordt gecreeerd of wordt bijgewerkt. Selecteren **[!UICONTROL Create]**.
+   1. Opgeven **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de service reCAPTCHA (verkregen in stap 1). Selecteren **[!UICONTROL Create]**.
 
    ![Configureer de Cloud Service om uw AEM Forms-omgeving te verbinden met de reCAPTCHA-service van Google](/help/forms/assets/captcha-configuration.gif)
 
@@ -61,23 +61,23 @@ ReCAPTCHA gebruiken in Adaptive Forms:
 
 1. Open uw as a Cloud Service AEM Forms-exemplaar.
 1. Ga naar **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]**.
-1. Selecteer een adaptieve Forms en tik op **[!UICONTROL Properties]**. Voor de **[!UICONTROL Configuration Container]** Selecteer de configuratiecontainer die de Cloud Configuration bevat die AEM Forms verbindt met de reCAPTCHA-service van Google en tik **[!UICONTROL Save & Close]**.
+1. Selecteer een adaptieve Forms en selecteer **[!UICONTROL Properties]**. Voor de **[!UICONTROL Configuration Container]** Selecteer de configuratiecontainer die de Cloud Configuration bevat die AEM Forms verbindt met de reCAPTCHA-service van Google en selecteer **[!UICONTROL Save & Close]**.
 
    Als u niet zulk een Container van de Configuratie hebt, zie sectie [Verbind uw AEM Forms-omgeving met de reCAPTCHA-service van Google](#connect-your-forms-environment-with-recaptcha-service-by-google) om te leren hoe te om zulk een Container van de Configuratie tot stand te brengen.
 
    ![Configuratiecontainer selecteren](/help/forms/assets/captcha-properties.png)
 
-1. Selecteer een adaptieve Forms en tik op **[!UICONTROL Edit]**. Het adaptieve formulier wordt geopend in de Adaptive Forms Editor.
+1. Selecteer een adaptieve Forms en selecteer **[!UICONTROL Edit]**. Het adaptieve formulier wordt geopend in de Adaptive Forms Editor.
 1. Sleep vanuit de componentbrowser de **[!UICONTROL Adaptive Form reCAPTCHA]** naar het adaptieve formulier.
 
    De Google reCAPTCHA-validatie is tijdgevoelig en verloopt over een paar minuten. Daarom beveelt de Adobe aan de **[!UICONTROL Adaptive Form reCAPTCHA]** component vlak voor de **[!UICONTROL Submit]** knop.
 
-1. Selecteer de **[!UICONTROL Adaptive Form reCAPTCHA]** component en tik op de eigenschappen ![Pictogram Eigenschappen](assets/configure-icon.svg) pictogram. Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende verplichte eigenschappen op:
+1. Selecteer de **[!UICONTROL Adaptive Form reCAPTCHA]** en selecteert u de eigenschappen ![Pictogram Eigenschappen](assets/configure-icon.svg) pictogram. Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende verplichte eigenschappen op:
    * **[!UICONTROL Name]:** U kunt een formuliercomponent gemakkelijk herkennen met de unieke naam, zowel in het formulier als in de regeleditor, maar de naam mag geen spaties of speciale tekens bevatten.
    * **[!UICONTROL CAPTCHA Configuration]:** Selecteer een Cloud-configuratie die is geconfigureerd om het Google reCAPTCHA-dialoogvenster weer te geven voor het formulier. U kunt voor vergelijkbare doeleinden meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als er geen service wordt vermeld, raadpleegt u [Verbind uw AEM Forms-omgeving met de reCAPTCHA-service van Google](#connect-your-forms-environment-with-recaptcha-service-by-google) om te leren hoe u een Cloud Service kunt maken die uw AEM Forms-omgeving verbindt met de reCAPTCHA-service van Google.
    * **Grootte captcha:** U kunt de weergavegrootte van het Google reCAPTCHA-dialoogvenster selecteren. Gebruik de **[!UICONTROL Compact]** als u een klein formaat en de **[!UICONTROL Normal]** optie om een relatief grote Google reCAPTCHA-uitbreidingsdialoog weer te geven.
 
-1. Tik op **[!UICONTROL Done]**.
+1. Selecteren **[!UICONTROL Done]**.
 
    Nu, **beveiligd door reCAPTCHA** wordt weergegeven op uw Adaptief formulier. Het wordt weergegeven op alle Adaptive Forms die zijn geconfigureerd om de Google reCAPTCHA-service te gebruiken.
 
@@ -87,11 +87,11 @@ ReCAPTCHA gebruiken in Adaptive Forms:
 <!--
 ### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
 
-You can select to show or hide the CAPTCHA component based on rules that you apply on a component in an Adaptive Form. Tap the component, select ![edit rules](assets/edit-rules-icon.svg), and tap **[!UICONTROL Create]** to create a rule. For more information on creating rules, see [Rule Editor](rule-editor.md).
+You can select to show or hide the CAPTCHA component based on rules that you apply on a component in an Adaptive Form. Select the component, select ![edit rules](assets/edit-rules-icon.svg), and select **[!UICONTROL Create]** to create a rule. For more information on creating rules, see [Rule Editor](rule-editor.md).
 
 For example, the CAPTCHA component must display in an Adaptive Form only if the Currency Value field in the form has a value of more than 25000.
 
-Tap the **[!UICONTROL Currency Value]** field in the form and create the following rules:
+Select the **[!UICONTROL Currency Value]** field in the form and create the following rules:
 
 ![Show or hide rules](assets/rules-show-hide-captcha.png)
 

@@ -2,9 +2,9 @@
 title: Registratie, aanmelding en gebruikersprofiel
 description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Onafhankelijk van login, kan de douanecode ook het groepslidmaatschap van een ge
 
 ## Gegevenssynchronisatie {#data-synchronization}
 
-Eindgebruikers van een website hebben een verwachting van een consistente ervaring op elk verzoek van een webpagina of zelfs wanneer ze zich aanmelden met een andere browser, zelfs als ze deze niet kennen, worden ze naar verschillende serverknooppunten van de infrastructuur van de publicatielaag gebracht. AEM as a Cloud Service verwezenlijkt dit door snel te synchroniseren `/home` maphiërarchie (gebruikersprofielgegevens, groepslidmaatschap, enz.) voor alle knooppunten van de publicatielijst.
+Eindgebruikers van een website hebben een verwachting van een consistente ervaring op elk verzoek van een webpagina of zelfs wanneer ze zich aanmelden met een andere browser, zelfs als ze deze niet kennen, worden ze naar verschillende serverknooppunten van de infrastructuur van de publicatielaag gebracht. AEM as a Cloud Service verwezenlijkt dit door snel te synchroniseren `/home` de omslaghiërarchie (de informatie van het gebruikersprofiel, groepslidmaatschap, etc.) over alle knopen van publiceren rij.
 
 In tegenstelling tot andere AEM oplossingen, gebruikt de gebruiker en de synchronisatie van het groepslidmaatschap in AEM as a Cloud Service geen punt aan punt overseinenbenadering, in plaats van het uitvoeren van een publish-subscribe benadering die klantenconfiguratie niet vereist.
 

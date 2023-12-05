@@ -3,9 +3,9 @@ title: Hoe te om een Aangepast malplaatje van de Vorm tot stand te brengen dat o
 description: Maak adaptieve formuliersjablonen op basis van de kerncomponent om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,13 @@ Experience Manager biedt een algemene map voor het organiseren van sjablonen. De
 
 Nadat u een map hebt gemaakt, opent u de map en voert u de volgende stappen uit om een sjabloon te maken:
 
-1. Tikken **[!UICONTROL Create]** in de map die u hebt gemaakt.
-1. In de **[!UICONTROL Pick a Template Type]** sectie, selecteert u **[!UICONTROL Adaptive Form (Core Component) template]** en tikken **[!UICONTROL Next]**.
+1. Selecteren **[!UICONTROL Create]** in de map die u hebt gemaakt.
+1. In de **[!UICONTROL Pick a Template Type]** sectie, selecteert u **[!UICONTROL Adaptive Form (Core Component) template]** en selecteert u **[!UICONTROL Next]**.
 
-1. In de **[!UICONTROL Template Details]** een **Sjabloontitel** en tikken **[!UICONTROL Create]**.
+1. In de **[!UICONTROL Template Details]** een **Sjabloontitel** en selecteert u **[!UICONTROL Create]**.
 U kunt ook een beschrijving opgeven.
 
-1. Tikken **[!UICONTROL Done]** om terug te keren naar de console, of tikken **[!UICONTROL Open]** om de sjabloon in de editor te openen.
+1. Selecteren **[!UICONTROL Done]** om naar de console terug te keren, of selecteer **[!UICONTROL Open]** om de sjabloon in de editor te openen.
 
 ## UI voor sjablooneditor {#template-editor-ui}
 
@@ -119,7 +119,7 @@ U voegt bijvoorbeeld de koptekstcomponent in de sjabloon toe. Wanneer u de compo
 
 Als de optie Begininhoud is geselecteerd, wordt de container van het adaptieve formulier van de sjabloon geopend als een adaptief formulier voor bewerking. Hiermee kunt u een vooraf gedefinieerde inhoud maken die kan worden gewijzigd wanneer u een adaptieve Forms maakt die aan de sjabloon is gekoppeld. Net als bij het ontwerpen van een adaptief formulier kunt u initiële instellingen opgeven, zoals een thema selecteren en Handelingen verzenden.
 
-Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, tikt u vóór de voorvertoning op de pagina-werkbalk op ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Initial Content]**.
+Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, selecteert u voordat u een voorbeeld weergeeft op de pagina-werkbalk ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Initial Content]**.
 
 ![Koptekst en voettekst die zijn toegevoegd in de laag Oorspronkelijke inhoud](assets/header-and-footer.png)
 
@@ -145,7 +145,7 @@ Wanneer u een sjabloon maakt, wordt deze toegevoegd als concept. Schakel de sjab
 
 1. Navigeren naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Templates]**en opent u de map waarin u de sjabloon hebt gemaakt.
 De sjabloon die u hebt gemaakt, is gemarkeerd als Concept.
-1. Selecteer de sjabloon en tik op **[!UICONTROL Enable]** in de werkbalk.
+1. Selecteer de sjabloon en selecteer **[!UICONTROL Enable]** in de werkbalk.
 Wanneer u een adaptief formulier maakt, wordt de sjabloon weergegeven wanneer u wordt gevraagd een sjabloon te kiezen.
 
 ## Een sjabloon importeren of exporteren {#importing-or-exporting-a-template}
@@ -160,9 +160,9 @@ Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt 
 
 Auteurs kunnen een [!UICONTROL Form Data Model Schema] naar een sjabloon voor een adaptief formulier in de sjablooneditor. Auteurs kunnen een schema in de sjablooneditor selecteren. Wanneer u een schema aan een sjabloon koppelt en een auteur van een formulier een formulier maakt op basis van de sjabloon, wordt het schema vooraf geselecteerd voor het formulier. Hiermee kunnen auteurs van formulieren het gebruik van schema&#39;s reguleren en besparen ze ook tijd voor auteurs van formulieren. Een formuliergegevensmodelschema selecteren in een sjablooneditor:
 
-1. Tikken **[!UICONTROL Content Browser]** aan de linkerkant.
+1. Selecteren **[!UICONTROL Content Browser]** aan de linkerkant.
 1. Ga naar de formuliercontainer **[!UICONTROL Setting]**.
-1. Selecteer **[!UICONTROL Data Model]**.
+1. Selecteren **[!UICONTROL Data Model]**.
 1. Kies het formuliergegevensmodel via **[!UICONTROL Select Form Data Model]** en sla de configuratie op.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
@@ -185,7 +185,7 @@ Change the layer from **Structure** to **Initial Content**, and start adding con
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 ### Adding content in tabs {#adding-content-in-tabs}
 
@@ -224,10 +224,10 @@ Wanneer u minstens één groep van het douanebezit gebruikend het malplaatjebele
 #### Een aangepaste groepsnaam selecteren in het dialoogvenster voor bewerken van een kerncomponent {#select-a-custom-group-name}
 
 1. Open een adaptief formulier in de bewerkingsmodus.
-1. Tik op de component waarvoor de aangepaste eigenschappen zijn gedefinieerd in de sjablooneditor en tik op ![settings_icon](assets/configure-icon.svg) om het dialoogvenster voor bewerken van de component te openen.
+1. Selecteer de component waarvoor de aangepaste eigenschappen in de sjablooneditor zijn gedefinieerd en selecteer ![settings_icon](assets/configure-icon.svg) om het dialoogvenster voor bewerken van de component te openen.
 1. Selecteer de **[!UICONTROL Advanced]** tab.
 1. Selecteer de naam van de aangepaste groep eigenschappen uit **[!UICONTROL Custom Property Select]** vervolgkeuzelijst. Alle gedefinieerde aangepaste groepnamen worden automatisch ingevuld in de vervolgkeuzelijst.
-1. Tikken **[!UICONTROL Done]** om de eigenschappen op te slaan.
+1. Selecteren **[!UICONTROL Done]** om de eigenschappen op te slaan.
 
 ![aangepaste naam groep eigenschappen selecteren](/help/forms/assets/select-custom-properties-group-name.png)
 
@@ -276,9 +276,9 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 >To use the same container policy as of the source Adaptive Form, it is recommended to save the template in the same folder as of the source Adaptive Form. In case, the template is saved in any other folder, than the created template uses a default container policy.
 -->
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
-* Maak sjablonen met gebruik van de componenten die zijn gebaseerd op kerncomponenten, zoals adaptieve formuliertekst, adaptieve formuliercontainer en meer. Voor meer informatie over Adaptive Forms Core Components, [klik hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
+* Maak sjablonen met gebruik van de componenten die zijn gebaseerd op kerncomponenten, zoals Adaptieve formuliertekst, Adaptieve formuliercontainer en meer. Voor meer informatie over Adaptive Forms Core Components, [klik hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
 * Beperk het aantal sjablonen zodat deze overeenkomen met de fundamenteel verschillende formuliertypen die op de websites beschikbaar zijn
 * Verstrek de noodzakelijke flexibiliteit en configuratiemogelijkheden aan uw douanecomponenten die in een malplaatje worden gebruikt.
 

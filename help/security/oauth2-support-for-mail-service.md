@@ -2,9 +2,9 @@
 title: OAuth2 Steun voor de Dienst van de Post
 description: Oauth2-ondersteuning voor de Mail Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Voor meer informatie over de AEM as a Cloud Service Dienst van de Post, zie [E-m
 
    >[!NOTE]
    >
-   >De configuratie van toestemmingen kan in tijd evolueren. Werk met Microsoft als deze niet naar behoren werken.
+   >De configuratie van toestemmingen kan in tijd evolueren. Werken met Microsoft als deze niet werken zoals u had verwacht.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -139,7 +139,7 @@ Alvorens te werk te gaan om OAuth op de AEM kant te vormen, zorg ervoor om zowel
 
    >[!NOTE]
    >
-   >Scopes kunnen zich in de loop der tijd ontwikkelen. Werk met Microsoft als deze niet naar behoren werken.
+   >Scopes kunnen zich in de loop der tijd ontwikkelen. Werken met Microsoft als deze niet werken zoals u had verwacht.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`

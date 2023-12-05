@@ -4,9 +4,9 @@ description: Sluit Adaptieve Forms naadloos in op een AEM Sites-pagina of een we
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2953'
+source-wordcount: '2934'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
-* **[Een adaptief formulier maken met goedgekeurde sjablonen en dit insluiten op een AEM Sites-pagina](#embed-form-using-adaptive-form-wizzard-aem-sites):** U kunt vooraf goedgekeurde sjablonen gebruiken om snel een adaptieve Forms te maken en in te sluiten die voldoet aan de richtlijnen en ontwerpstandaarden van uw organisatie voor het brandmerken.
+* **[Een adaptief formulier maken met goedgekeurde sjablonen en dit insluiten op een AEM Sites-pagina](#embed-form-using-adaptive-form-wizzard-aem-sites):** U kunt vooraf goedgekeurde sjablonen gebruiken om snel een adaptieve Forms te maken en in te sluiten die is afgestemd op de richtlijnen en ontwerpstandaarden van uw organisatie voor het merken van producten.
 
 * **[Bestaande formulieren insluiten op een AEM Sites-pagina](#embed-an-adaptive-form-in-sites-editor):** U kunt formulieren die u al hebt gemaakt, eenvoudig integreren in uw websites, zodat bezoekers direct met hen kunnen communiceren.
 
@@ -201,7 +201,7 @@ Een bestaand adaptief formulier insluiten in een sitepagina:
 
 1. Open de AEM Sites-pagina in de bewerkingsmodus.
 1. Sleep de **[!UICONTROL Adaptive Forms - Embed(v2)]** van de Browser van de Component aan de pagina van Plaatsen.
-1. Tik op de knop **[!UICONTROL Adaptive Forms - Embed]** component op de pagina Sites en tik op ![Eigenschappen van adaptieve formuliercontainers](/help/forms/assets/configure-icon.svg) op de actiebalk. De **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** wordt geopend.
+1. Selecteer de **[!UICONTROL Adaptive Forms - Embed]** op de pagina Sites en selecteer ![Eigenschappen van adaptieve formuliercontainers](/help/forms/assets/configure-icon.svg) op de actiebalk. De **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** wordt geopend.
 1. Blader naar het adaptieve formulier dat u wilt insluiten in het dialoogvenster **[!UICONTROL Asset Path]**.
 1. Sla de instellingen op. Het adaptieve formulier is nu ingesloten in de pagina.
 
@@ -215,7 +215,7 @@ U kunt de toegankelijkheid van uw formulieren ook uitbreiden door deze in te slu
 
 1. Open een Experience Fragment in de bewerkingsmodus.
 1. Sleep de **[!UICONTROL Adaptive Forms - Embed(v2)]** van Componentbrowser naar Experience Fragment.
-1. Tik op de knop **[!UICONTROL Adaptive Forms - Embed]** component in Experience Fragment en tik ![Eigenschappen van adaptieve formuliercontainers](/help/forms/assets/configure-icon.svg) op de actiebalk. De **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** wordt geopend.
+1. Selecteer de **[!UICONTROL Adaptive Forms - Embed]** in het fragment van de Ervaring en selecteer ![Eigenschappen van adaptieve formuliercontainers](/help/forms/assets/configure-icon.svg) op de actiebalk. De **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** wordt geopend.
 1. Blader naar het adaptieve formulier dat u wilt insluiten in het dialoogvenster **[!UICONTROL Asset Path]**.
 1. Sla de instellingen op. Het adaptieve formulier is nu ingesloten in het ervaringsfragment.
 
@@ -310,9 +310,9 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
    >
    >Multiple Adaptive Forms - Embed components on a page are not supported.
 
-1. To create and embed a new form, on the component toolbar, tap the **Create Form** icon. A window to create the form opens. 
+1. To create and embed a new form, on the component toolbar, select the **Create Form** icon. A window to create the form opens. 
 
-1. Tap the embedded Adaptive Forms - Embed component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the embedded Adaptive Forms - Embed component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. In the Edit Adaptive Forms - Embed dialog, specify the following.
 
     **Asset Type:** Select the type of asset to embed. 
@@ -356,7 +356,7 @@ Overweeg de volgende scenario&#39;s voor het publiceren van een ingebedde Aangep
 Voer een van de volgende handelingen uit om een configuratie of eigenschap van het ingesloten adaptieve formulier te wijzigen.
 
 * Open het oorspronkelijke formulier in een adaptief formulier in de desbetreffende editor en wijzig deze.
-* Tik in de bewerkingsmodus op het adaptieve formulier en tik vervolgens op **[!UICONTROL Edit in a new window]**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus die u kunt wijzigen.
+* Selecteer het adaptieve formulier in de bewerkingsmodus van de sitepagina en selecteer vervolgens **[!UICONTROL Edit in a new window]**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus die u kunt wijzigen.
 
 >[!NOTE]
 >

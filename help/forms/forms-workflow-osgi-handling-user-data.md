@@ -5,9 +5,9 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -136,8 +136,8 @@ U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te ve
 1. Voer deze stap uit voor workflowinstanties in **UITVOEREN**, **GESCHORST**, of **STAAL** status:
 
    1. Ga naar `https://'[server]:[port]'/aem/start.html` en aanmelden met beheerdersreferenties.
-   1. Ga naar **[!UICONTROL Tools > Workflow> Instances]**.
-   1. Selecteer relevante workflowinstanties voor de gebruiker en tik op **[!UICONTROL Terminate]** om actieve exemplaren te beëindigen.
+   1. Navigeren naar **[!UICONTROL Tools > Workflow> Instances]**.
+   1. Selecteer relevante workflowinstanties voor de gebruiker en selecteer **[!UICONTROL Terminate]** om actieve exemplaren te beëindigen.
 
       Zie voor meer informatie over het werken met workflowinstanties [Workflowinstanties beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#authoring).
 

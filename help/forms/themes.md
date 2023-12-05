@@ -2,9 +2,9 @@
 title: Hoe kunnen we thema's maken en gebruiken om een adaptief formulier op te maken?
 description: Gebruik thema's met een adaptief formulier om een adaptief formulier een visuele identiteit te geven. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5441'
+source-wordcount: '5421'
 ht-degree: 0%
 
 ---
@@ -363,7 +363,7 @@ Wanneer u een component selecteert in het canvas, ziet u de componentwerkbalk er
 * **[!UICONTROL Numeric Box Widget]**: Hiermee kunt u de component selecteren om het uiterlijk in het zijpaneel aan te passen.
 * **[!UICONTROL Field Widget]**: Hiermee kunt u de algemene component voor opmaak selecteren. In dit voorbeeld worden alle tekstinvoercomponenten (tekstvak/numeriek vak/numerieke stepper/datum-invoer) geselecteerd voor opmaak.
 
-* ![op veldniveau](assets/select_parent_icon.svg): Hiermee kunt u de bovenliggende component selecteren voor opmaak. Als u een numeriek vak selecteert en op dit pictogram tikt, wordt de veldcomponent geselecteerd. Als u een veldcomponent selecteert en op dit pictogram tikt, wordt het deelvenster geselecteerd. Als u op dit pictogram blijft tikken om het te selecteren, selecteert u uiteindelijk de lay-out voor opmaak.
+* ![op veldniveau](assets/select_parent_icon.svg): Hiermee kunt u de bovenliggende component selecteren voor opmaak. Als u een numeriek vak selecteert en dit pictogram selecteert, wordt de veldcomponent geselecteerd. Als u een veldcomponent selecteert en dit pictogram selecteert, wordt het deelvenster geselecteerd. Als u op dit pictogram blijft tikken om het te selecteren, selecteert u uiteindelijk de lay-out voor opmaak.
 
 >[!NOTE]
 >
@@ -447,7 +447,7 @@ Voer de volgende stappen uit om de opmaak voor een bepaalde component (een numer
    * **[!UICONTROL Numeric Box Widget]**
    * **[!UICONTROL Field Widget]**
 
-1. Selecteer **[!UICONTROL Numeric Box Widget]**.
+1. Selecteren **[!UICONTROL Numeric Box Widget]**.
 1. De titel van het zijpaneel verandert in de widget Numerieke vak en bevat opties waarmee u de vormgeving kunt aanpassen.
 Gebruiken **[!UICONTROL Dimension & Position]** in de zijbalk om de grootte van de component aan te passen. Ervoor zorgen dat de staat **[!UICONTROL Default]**.
 
@@ -587,7 +587,7 @@ Voer de volgende stappen uit om een thema te kopiëren:
 
 1. Navigeer in ontwerpinstantie naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Themes]**.
 1. Open de map Themabibliotheek.
-1. Houd de aanwijzer in de map Themabibliotheek boven het corresponderende, uit-de-box thema en tik **[!UICONTROL Copy]**.
+1. Houd de aanwijzer in de map Themabibliotheek boven het overeenkomende thema dat buiten de keuzelijst valt en selecteer **[!UICONTROL Copy]**.
 1. Plak het gekopieerde thema buiten de map Themabibliotheek.
 1. Pas het gekopieerde thema aan.
 

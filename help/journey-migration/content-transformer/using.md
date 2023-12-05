@@ -2,9 +2,9 @@
 title: Inhoudstransformator gebruiken
 description: Leer hoe u uw inhoudsstructuur kunt transformeren ter voorbereiding op het migreren naar AEM as a Cloud Service.
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ De Content Transformer wordt gebundeld met de [Inhoud overbrengen](/help/journey
 1. U kunt alle of specifieke problemen selecteren en deze verplaatsen, verwijderen of hernoemen om ze op te lossen. Aangepaste paden kunnen ook worden toegevoegd met **Paden toevoegen** in de rechterbovenhoek.
 
    >[!NOTE]
-   > Als u de verplaatsingsbewerking gebruikt, is het raadzaam alle paden naar één map te verplaatsen (bijvoorbeeld onder `/etc/packages/content-transformation/paths`), dus wanneer de back-uppakketten zijn geïnstalleerd om de instantie terug naar de oorspronkelijke staat te brengen, wordt de map (`/etc/packages/content-transformation/paths`) kan worden verwijderd door verwijderen om de grootte van de opslagplaats te reduceren.
+   > Als u de verplaatsingsbewerking gebruikt, is het raadzaam alle paden naar slechts één map te verplaatsen (bijvoorbeeld onder `/etc/packages/content-transformation/paths`), dus wanneer de back-uppakketten zijn geïnstalleerd om de instantie terug naar de oorspronkelijke staat te brengen, wordt de map (`/etc/packages/content-transformation/paths`) kan worden verwijderd door verwijderen om de grootte van de opslagplaats te reduceren.
 
    ![afbeelding](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![afbeelding](/help/journey-migration/content-transformer/assets/ct-6.png)

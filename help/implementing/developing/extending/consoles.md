@@ -2,9 +2,9 @@
 title: Consoles aanpassen
 description: Leer over de verschillende opties die AEM verstrekt om de consoles van uw auteursinstantie aan te passen.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ AEM biedt opties voor het aanpassen van de consoles (en de [functionaliteit voor
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit aan te bieden, terwijl het hergebruiken van standaardfuncties, voorwerpen, en methodes. Wanneer het aanpassen met clientlibs, kunt u uw eigen clientlib onder creëren `/apps.` Het kan bijvoorbeeld de code bevatten die voor uw aangepaste component wordt vereist.
+Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit aan te bieden, terwijl het hergebruiken van standaardfuncties, voorwerpen, en methodes. Wanneer het aanpassen met clientlibs, kunt u uw eigen clientlib onder creëren `/apps.` Het kan bijvoorbeeld de code bevatten die is vereist voor uw aangepaste component.
 
 Zie [Client-Side bibliotheken gebruiken op AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 

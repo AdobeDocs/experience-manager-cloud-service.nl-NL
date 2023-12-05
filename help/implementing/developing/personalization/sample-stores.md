@@ -2,9 +2,9 @@
 title: Voorbeeld van ContextHub Store-kandidaten
 description: ContextHub verstrekt verscheidene kandidaten van de steekproefopslag die u in uw oplossingen kunt gebruiken
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ContextHub verstrekt verscheidene kandidaten van de steekproefopslag die u in uw
 
 >[!WARNING]
 >
->De kandidaten van de steekproefopslag worden verstrekt als verwijzingsconfiguraties om u te helpen uw eigen specifieke configuratie voor uw project bouwen en als zodanig niet direct zouden moeten worden gebruikt.
+>De kandidaten van de steekproefopslag worden verstrekt als verwijzingsconfiguraties om u te helpen uw eigen specifieke configuratie voor uw project bouwen. Niet direct gebruiken.
 
 ## aem.segmentation Voorbeeld Store Candidate {#aem-segmentation-sample-store-candidate}
 
@@ -57,7 +57,7 @@ De `contexthub.geolocation` de kandidaat van de voorbeeldopslag gebruikt de Kaar
 
 ### Basisimplementatie {#base-implementation-geolocation}
 
-De `contexthub.geolocation` opslagkandidaat breidt zich uit [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+De `contexthub.geolocation` opslagkandidaat breidt uit [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuratie {#configuration-geolocation}
 
@@ -117,7 +117,7 @@ Hiermee slaat u informatie op over de huidige clientomgeving, zoals het apparaat
 
 ### Basisimplementatie {#base-implementation-surferinfo}
 
-De `contexthub.surferinfo` opslagkandidaat breidt zich uit [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+De `contexthub.surferinfo` opslagkandidaat breidt uit [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuratie {#configuration-surferinfo}
 
@@ -184,7 +184,7 @@ De `granite.emulators` de kandidaat van de voorbeeldopslag slaat informatie over
 
 ### Basisimplementatie {#base-implementation-emulators}
 
-De `granite.emulators` opslagkandidaat breidt zich uit [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+De `granite.emulators` opslagkandidaat breidt uit [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuratie {#configuration-emulators}
 
@@ -317,7 +317,7 @@ Hiermee worden gegevens over de huidige gebruiker opgeslagen.
 
 ### Basisimplementatie {#base-implementation-profile}
 
-De `granite.profile` opslagkandidaat breidt zich uit [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+De `granite.profile` opslagkandidaat breidt uit [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuratie {#configuration-profile}
 

@@ -2,10 +2,10 @@
 title: Hoe kan ik een lokale ontwikkelomgeving opzetten voor AEM Forms?
 description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2840'
-ht-degree: 1%
+source-wordcount: '2676'
+ht-degree: 0%
 
 ---
 
@@ -89,7 +89,7 @@ Als u de nieuwste versie van de SDK van Adobe Experience Manager as a Cloud Serv
 1. Ga naar het tabblad **[!UICONTROL AEM as a Cloud Service]**.
 1. Sorteren op gepubliceerde datum in aflopende volgorde.
 1. Klik op de nieuwste Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms-functiearchief (AEM Forms add-on), formulieren met naslaginformatie of Forms Designer.
-1. De EULA evalueren en aanvaarden. Tik op de knop **[!UICONTROL Download]** knop.
+1. De EULA evalueren en aanvaarden. Selecteer de **[!UICONTROL Download]** knop.
 
 ## Ontwikkelingshulpmiddelen instellen voor AEM projecten {#setup-development-tools-for-AEM-projects}
 
@@ -297,7 +297,7 @@ Voor gedetailleerde instructies voor het instellen van Dispatcher raadpleegt u [
 Voer de volgende stappen uit om de Dispatcher-cache voor Experience Manager Forms as a Cloud Service te configureren:
 
 1. Open uw AEM Project en navigeer naar `\src\conf.dispatcher.d\available_farms`
-1. Maak een kopie van het dialoogvenster `default.farm` bestand. Bijvoorbeeld, `forms.farm`.
+1. Maak een kopie van het dialoogvenster `default.farm` bestand. Bijvoorbeeld: `forms.farm`.
 1. Het gemaakte bestand openen `forms.farm` bestand voor bewerken en vervangen van de volgende code:
 
    ```json

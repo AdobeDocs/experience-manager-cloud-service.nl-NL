@@ -2,9 +2,9 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1697'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Als u de eerste vraag wilt beantwoorden, moet u rekening houden met de tijd die 
 
 Bovendien moet u plannen dat de inhoud wordt vastgezet wanneer de laatste aanvulling op de inhoud gepland is.
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 Houd bij het plannen of uitvoeren van de migratie rekening met de volgende richtlijnen:
 
@@ -86,7 +86,7 @@ Wanneer u de productiemigratie uitvoert, moet u het gereedschap Inhoud overbreng
 
 **De belasting van de AEM optimaliseren tijdens het migreren van de inhoud**
 
-Vergeet niet dat de belasting op de AEM tijdens de extractiefase groter is. U moet weten dat:
+Vergeet niet dat de belasting op de AEM tijdens de extractiefase groter is. Let op het volgende:
 
 * Het gereedschap Inhoud overbrengen is een extern Java-proces dat een JVM-heap van 4 GB gebruikt
 * De niet-AzCopy versie downloadt binaire getallen, slaat hen op een tijdelijke ruimte op de bron AEM auteur, verbruikt schijf I/O, dan uploadt in de Azure container die netwerkbandbreedte verbruikt

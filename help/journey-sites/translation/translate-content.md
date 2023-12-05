@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2526'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Voor eigenaars van inhoud die ook verantwoordelijk zijn voor vertaling, is het v
 
 1. Navigeren naar **Navigatie** > **Sites** en selecteer uw project.
 1. Zoek de taalhoofdmap van uw project. Als de hoofdtaal bijvoorbeeld Engels is, `/content/<your-project>/en`.
-   * Voor de eerste vertaling zijn de andere taalmappen lege plaatsaanduidingen. Deze worden gewoonlijk gemaakt door de inhoudarchitect.
+   * Vóór de eerste vertaling is dat de andere taalomslagen lege placeholders zijn. Deze worden gewoonlijk gemaakt door de inhoudarchitect.
 1. Zoek de taalhoofdmap van uw project.
 1. Selecteer de spoorkiezer en geef de **Verwijzingen** deelvenster.
 1. Selecteren **Taalkopieën**.
@@ -98,7 +98,7 @@ Voor managers van vertaalprojecten, is het vaak noodzakelijk om specifieke inhou
 
    ![Tabblad Projectbasis](assets/project-basic-tab.png)
 
-1. Op de **Geavanceerd** gebruiken **Doeltaal** om de talen te selecteren waarin de inhoud moet worden vertaald. Selecteer **Maken**.
+1. Op de **Geavanceerd** gebruiken **Doeltaal** om de talen te selecteren waarin de inhoud moet worden vertaald. Selecteren **Maken**.
 
    ![Tabblad Project geavanceerd](assets/project-advanced-tab.png)
 

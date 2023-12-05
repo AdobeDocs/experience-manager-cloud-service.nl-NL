@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -738,7 +738,7 @@ Voer de volgende stappen uit om alle op JSON-schema&#39;s gebaseerde Adaptieve F
 
 1. Ga naar Experience Manager webconsole op `https://server:host/system/console/configMgr`.
 1. Zoeken **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**.
-1. Tik om de configuratie te openen in de bewerkingsmodus.
+1. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
 1. Selecteer de **[!UICONTROL Generate Schema Compliant Data]** selectievakje.
 1. Sla de instellingen op.
 

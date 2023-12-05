@@ -4,9 +4,9 @@ description: De Automatisering van de Opstelling van het Experience Cloud verstr
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -44,15 +44,15 @@ De omgeving moet nu gereed zijn voor Experience Cloud Setup Automation.
 ## Hoe te Opstelling
 
 1. Navigeren naar **Sites** en selecteert u de hoofdmap van de site die u wilt integreren met Adobe Analytics.
-1. Het zijspoormenu uitvouwen en tikken **Analyses instellen**.
+1. Vouw het menu voor de zijbalk uit en selecteer **Analyses instellen**.
 
    Dit is een nieuwe optie in de zijspoorstaaf die een paneel opent dat controles en status voor de Automatisering van de Opstelling van het Experience Cloud verstrekt.
-1. Tik op de knop **Analyse integreren** knop.
+1. Selecteer de **Analyse integreren** knop.
 1. Geef in het dialoogvenster dat wordt weergegeven een naam op voor het dialoogvenster **ID van rapportsuite**.
 
    Deze tekenreeks wordt gebruikt om een [ID van rapportsuite](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) in Adobe Analytics als de gegevensopslagruimte voor de analysegegevens voor de geselecteerde AEM. De opgegeven tekenreeks wordt toegevoegd met omgeving- en tier-id&#39;s om ervoor te zorgen dat deze uniek zijn.
 
-1. Pagina en venster vernieuwen en tikken **Integratiestatus controleren** de status van de automatisering te controleren.
+1. Pagina en deelvenster vernieuwen en selecteren **Integratiestatus controleren** de status van de automatisering te controleren.
 
    De automatische opstelling komt asynchroon voor. De **Integratiestatus controleren** zal de huidige status van de integratie aantonen.
 
@@ -75,7 +75,7 @@ Navigeer vervolgens naar Adobe Analytics om de gegevens weer te geven die afkoms
 
 1. Navigeer naar Adobe Analytics in dezelfde IMS Org als uw AEM site.
 1. Een nieuw overzichtsrapport maken waarin AEM Sites navigeert naar **Rapporten** > **Betrokkenheid** > **Adobe Experience Manager** > **Overzicht van siteprestaties**.
-1. Tikken **Rapport openen**.
+1. Selecteren **Rapport openen**.
 1. Selecteer de **ID van rapportsuite** die overeenkomt met de naam van de rapportsuite die in de vorige exercitie is gebruikt.
 1. De gegevensstroom van de meningsanalyse in de nieuwe malplaatje in tijd.
 

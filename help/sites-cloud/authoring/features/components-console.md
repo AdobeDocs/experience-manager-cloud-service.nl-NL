@@ -1,19 +1,19 @@
 ---
-title: Onderdelenconsole
+title: Componentenconsole
 description: Met de componentenconsole kunt u door alle componenten bladeren die voor uw instantie zijn gedefinieerd
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 17%
+ht-degree: 12%
 
 ---
 
-# Onderdelenconsole {#components-console}
+# Componentenconsole {#components-console}
 
 Met de componentenconsole kunt u door alle componenten bladeren die voor uw instantie zijn gedefinieerd en sleutelinformatie voor elke component bekijken.
 
-U kunt deze openen via **Gereedschappen ->** **Algemeen ->** **Componenten**. Omdat er geen boomstructuur voor componenten is, is alleen de lijstweergave beschikbaar.
+Het kan worden benaderd van **Gereedschappen >** **Algemeen >** **Componenten**. Omdat er geen boomstructuur voor componenten is, is alleen de lijstweergave beschikbaar.
 
 ![De componentenconsole](/help/sites-cloud/authoring/assets/components-console.png)
 

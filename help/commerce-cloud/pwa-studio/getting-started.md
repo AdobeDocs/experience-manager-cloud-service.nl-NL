@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -105,9 +105,9 @@ Volg de documentatie van de Fragmenten van de Inhoud van de AEM aan opstelling e
 
 Hier vindt u volledige voorbeelden van beide configuraties: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Om het eindpunt van GraphQL te tonen, hebben wij sommige modellen en gegevens van het fragment van de steekproefinhoud via een inhoudspakket voorbereid. Deze werken goed samen met de React Componenten die van de uitbreiding van de PWA Studio worden voorzien.
+Als u het GraphQL-eindpunt wilt laten zien, hebt u een aantal voorbereide modellen en gegevens voor voorbeeldinhoudsfragmenten via een inhoudspakket. Deze werken goed samen met de React Componenten die van de uitbreiding van de PWA Studio worden voorzien.
 
-## Het gebruik {#how-to-use}
+## Hoe wordt het gebruikt {#how-to-use}
 
 Deze extensie wordt beschouwd als een voorbeeldimplementatie voor het tot stand brengen van een verbinding tussen een PWA Studio-toepassing en AEM om inhoud op te halen en weer te geven via GraphQL.
 

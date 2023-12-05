@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3357'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Dit artikel is onderverdeeld in de volgende secties:
 * **Overzicht verkeersbeveiliging:** Leer hoe u tegen kwaadwillig verkeer wordt beschermd.
 * **Voorgesteld proces voor het configureren van regels:** Lees meer over een methode op hoog niveau voor het beschermen van uw website.
 * **Instellen:** Ontdek hoe te opstelling, vorm, en stel de regels van de verkeersfilter, met inbegrip van de geavanceerde regels van WAF op.
-* **Syntaxis regels:** Lees over hoe te om de regels van de verkeersfilter in te verklaren `cdn.yaml` configuratiebestand. Dit omvat zowel de regels van de verkeersfilter beschikbaar aan alle Sites en klanten van Forms, als de subcategorie van de regels van WAF voor degenen die van dat vermogen vergunning geven.
+* **Syntaxis regels:** Lees over hoe te om de regels van de verkeersfilter in te verklaren `cdn.yaml` configuratiebestand. Dit omvat zowel de regels van de verkeersfilter beschikbaar aan alle klanten van Plaatsen en van Forms, als de subcategorie van de regels van WAF voor degenen die van dat vermogen vergunning geven.
 * **Voorbeelden van regels:** Bekijk voorbeelden van gedeclareerde regels om u op weg te helpen.
 * **Regels voor tarieflimieten:** Leer hoe u regels voor snelheidsbeperking gebruikt om uw site te beschermen tegen aanvallen met een hoog volume.
 * **CDN-logbestanden:** Zie welke verklaarde regels en de Vlaggen van WAF uw verkeer aanpassen.
@@ -148,7 +148,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-Het formaat van de regels van de verkeersfilter in `cdn.yaml` wordt hieronder beschreven. Zie sommige [andere voorbeelden](#examples) in een later gedeelte, alsmede in een apart gedeelte over [Regels voor tarieflimieten](#rate-limit-rules).
+Het formaat van de regels van de verkeersfilter in `cdn.yaml` wordt hieronder beschreven. Zie sommige [andere voorbeelden](#examples) in een latere sectie en een afzonderlijke sectie over [Regels voor tarieflimieten](#rate-limit-rules).
 
 
 | **Eigenschap** | **De meeste regels van de verkeersfilter** | **Regels voor WAF-verkeersfilters** | **Type** | **Standaardwaarde** | **Beschrijving** |
@@ -205,7 +205,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 | **doesNotEqual** | `string` | true als het resultaat van de getter niet gelijk is aan de opgegeven waarde |
 | **leuk** | `string` | true als het resultaat van de getter overeenkomt met het opgegeven patroon |
 | **notlike** | `string` | true als het resultaat van de getter niet overeenkomt met het opgegeven patroon |
-| **matches** | `string` | true als het resultaat van de getter overeenkomt met opgegeven regex |
+| **overeenkomsten** | `string` | true als het resultaat van de getter overeenkomt met opgegeven regex |
 | **doesNotMatch** | `string` | true als het resultaat van de getter niet overeenkomt met opgegeven regex |
 | **in** | `array[string]` | true als de opgegeven lijst het resultaat getter bevat |
 | **notIn** | `array[string]` | true als de opgegeven lijst geen resultaat voor getter bevat |
@@ -415,9 +415,9 @@ Snelheidslimieten worden berekend per CDN POP. Als voorbeeld, veronderstel dat P
 | **Eigenschap** | **Type** | **Standaard** | **BETEKENEN** |
 |---|---|---|---|
 | limiet | geheel getal van 10 tot en met 10000 | vereist | Het tarief van het verzoek (per CDN POP) in verzoeken per seconde waarvoor de regel wordt teweeggebracht. |
-| venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend. De nauwkeurigheid van de tellers hangt af van de grootte van het venster (grotere vensternauwkeurigheid). U kunt bijvoorbeeld een nauwkeurigheid van 50% verwachten voor het venster van 1 seconde en een nauwkeurigheid van 90% voor het venster van 60 seconden. |
+| venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend. De nauwkeurigheid van de tellers hangt af van de grootte van het venster (grotere vensternauwkeurigheid). U kunt bijvoorbeeld een nauwkeurigheid van 50% verwachten voor het tweede venster en een nauwkeurigheid van 90% voor het tweede venster van 60 seconden. |
 | straf | geheel getal van 60 tot 3600 | 300 | Een periode in seconden waarvoor overeenkomstige verzoeken worden geblokkeerd (afgerond naar de dichtstbijzijnde minuut). |
-| groupBy | array[Getter] | none | De teller van de snelheidsbegrenzer zal door een reeks verzoekeigenschappen (bijvoorbeeld clientIp) worden bijeengevoegd. |
+| groupBy | array[Getter] | none | De teller van de snelheidsbegrenzer zal door een reeks verzoekeigenschappen (bijvoorbeeld, clientIp) worden bijeengevoegd. |
 
 
 ### Voorbeelden {#ratelimiting-examples}
@@ -470,7 +470,7 @@ data:
 
 AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van de regels van de verkeersfilter nuttig zijn. CDN-logboeken worden weergegeven in Cloud Manager **Logbestanden downloaden** wanneer u de service Auteur of Publiceren selecteert.
 
-CDN-logbestanden kunnen maximaal 5 minuten worden vertraagd.
+CDN-logbestanden kunnen maximaal vijf minuten worden vertraagd.
 
 De `rules` De eigenschap beschrijft welke regels voor verkeersfilters worden aangepast en heeft het volgende patroon:
 

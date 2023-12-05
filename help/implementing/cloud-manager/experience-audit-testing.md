@@ -2,9 +2,9 @@
 title: Ervaring controleren testen
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool v
 
 >[!INFO]
 >
->Met ingang van 31 augustus 2023 zal Experience Audit een overgang maken naar toonaangevende resultaten die specifiek zijn voor het mobiele platform. Merk op dat mobiele prestatiesmetriek typisch lager dan die van Desktop registreren, zodat zou u een verschuiving in de gemelde prestaties na deze verandering moeten voorzien.
+>Met ingang van 31 augustus 2023 zal Experience Audit een overgang maken naar toonaangevende resultaten die specifiek zijn voor het mobiele platform. Metrische gegevens over mobiele prestaties zijn doorgaans lager dan die van desktopcomputers. Daarom moet u een verschuiving in de gerapporteerde prestaties na deze wijziging verwachten.
 
 >[!TIP]
 >
@@ -58,11 +58,11 @@ Er is een score voor het geaggregeerde niveau voor elk type test, zoals prestati
 
 De metrische wijziging kan een van de volgende waarden hebben.
 
-* **Positieve waarde** - De pagina(&#39;s) is (zijn) verbeterd ten opzichte van de geselecteerde test sinds de laatste productiepijpleiding.
+* **Positieve waarde** - De pagina&#39;s zijn verbeterd ten opzichte van de geselecteerde test sinds de laatste productiepijpleiding.
 
-* **Negatieve waarde** - de pagina(&#39;s) sinds de laatste productiepijpleiding op de geselecteerde test is (zijn) teruggelopen.
+* **Negatieve waarde** - de pagina&#39;s zijn teruggelopen op de geselecteerde test sinds de laatste productiepijpleiding.
 
-* **Geen wijziging** - De pagina(&#39;s) hebben dezelfde score gekregen sinds de laatste productiepijpleiding.
+* **Geen wijziging** - De pagina&#39;s hebben hetzelfde gescand sinds de laatste productiepijpleiding.
 
 * **NVT** - Er was geen vorige score beschikbaar om te vergelijken.
 

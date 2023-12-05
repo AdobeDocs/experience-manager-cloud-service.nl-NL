@@ -2,10 +2,10 @@
 title: Hoe te om Verenigde Schakelaar van de Opslag (USC) voor AEM Forms te vormen?
 description: Leer hoe te om Verenigde Schakelaar van de Opslag (USC) voor AEM Forms te beheren. Gebruik de Unified Storage Connector (USC) om AEM Forms te verbinden met externe gegevensopslag.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 1%
+source-wordcount: '582'
+ht-degree: 0%
 
 ---
 
@@ -25,31 +25,31 @@ Controleer voordat u deze stappen uitvoert of u een [!DNL Azure] opslagaccount e
 
 Voer de volgende stappen uit om een [!DNL Azure] opslagconfiguratie:
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]**.
-1. Selecteer een map om de configuratie te maken en tik op **[!UICONTROL Create]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]**.
+1. Selecteer een map om de configuratie te maken en selecteer **[!UICONTROL Create]**.
 1. Geef een titel voor de configuratie op in het dialoogvenster **[!UICONTROL Title]** veld.
 1. Geef de naam van de [!DNL Azure] opslagaccount in de **[!UICONTROL Azure Storage Account]** veld.
-1. Geef de sleutel op voor toegang tot Azure-opslagaccount in het dialoogvenster **[!UICONTROL Azure Access Key]** veld en tik **[!UICONTROL Save]**.
+1. Geef de sleutel op voor toegang tot Azure-opslagaccount in het dialoogvenster **[!UICONTROL Azure Access Key]** veld en selecteer **[!UICONTROL Save]**.
 
 ### Unified Storage Connector (USC) voor AEM workflows configureren {#configure-unified-storage-connector-workflows}
 
 Voer de volgende stappen uit om Verenigde Verbinding van de Opslag (USC) voor AEM Workflows te vormen:
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]**.
 
 1. In de **[!UICONTROL Workflow]** sectie, selecteren **[!UICONTROL Azure]** in de vervolgkeuzelijst Opslag.
 1. Geef de [configuratiepad voor de Azure-opslagconfiguratie](#create-azure-storage-configuration) in de **[!UICONTROL Storage Configuration Path]** veld.
-1. Tikken **[!UICONTROL Publish]** en tikt u vervolgens op **[!UICONTROL Save]** om de configuratie op te slaan.
+1. Selecteren **[!UICONTROL Publish]** en selecteer vervolgens **[!UICONTROL Save]** om de configuratie op te slaan.
 
 ### Een AEM workflowmodel voor externe gegevensopslag configureren {#configure-workflow-external-data-storage}
 
 Voer de volgende stappen uit om een AEM workflowmodel voor een externe gegevensopslag te configureren:
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. Selecteer een modelnaam en tik op **[!UICONTROL Edit]**.
-1. Tik op het pictogram Pagina-informatie en tik op **[!UICONTROL Open Properties]**.
-1. Selecteer **[!UICONTROL Externalize workflow data storage]**.
-1. Tikken **[!UICONTROL Save & Close]** om de eigenschappen op te slaan.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Selecteer een modelnaam en selecteer **[!UICONTROL Edit]**.
+1. Selecteer het pictogram Pagina-informatie en selecteer **[!UICONTROL Open Properties]**.
+1. Selecteren **[!UICONTROL Externalize workflow data storage]**.
+1. Selecteren **[!UICONTROL Save & Close]** om de eigenschappen op te slaan.
 
 >[!NOTE]
 >

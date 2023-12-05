@@ -4,9 +4,9 @@ description: Leer hoe u inhoud voorbereidt voor vertaling bij het ontwikkelen va
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -68,8 +68,8 @@ Maak een taalhoofdmap als de hoofdpagina van een taalkopie die de taal van de in
 
 Als u de hoofdtaal wilt maken, maakt u een pagina en gebruikt u een ISO-taalcode als waarde voor de **Naam** eigenschap. De taalcode moet een van de volgende notaties hebben:
 
-* `<language-code>` - De ondersteunde taalcode is bijvoorbeeld een tweelettercode zoals gedefinieerd in ISO-639-1 `en`.
-* `<language-code>_<country-code>` of `<language-code>-<country-code>` - De ondersteunde landcode is bijvoorbeeld een tweelettercode in kleine letters of hoofdletters, zoals gedefinieerd in ISO 3166. `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - De ondersteunde taalcode is bijvoorbeeld een tweelettercode zoals gedefinieerd in ISO-639-1, `en`.
+* `<language-code>_<country-code>` of `<language-code>-<country-code>` - De ondersteunde landcode is bijvoorbeeld een tweelettercode in kleine letters of hoofdletters, zoals gedefinieerd in ISO 3166, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen. De hoofdpagina van de Franse taalkopie van de WKND-site heeft bijvoorbeeld `fr` als de **Naam** eigenschap. De **Naam** eigenschap wordt gebruikt als de naam van het paginaknooppunt in de repository en bepaalt daarom het pad van de pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -80,7 +80,7 @@ U kunt beide indelingen gebruiken op basis van de structuur die u voor uw global
    ![Pagina maken](../assets/create-page.png)
 
 1. Selecteer de paginasjabloon en selecteer vervolgens **Volgende**.
-1. In de **Naam** veldtype de landcode in het formaat `<language-code>` of `<language-code>_<country-code>`bijvoorbeeld `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Typ een titel voor de pagina.
+1. In de **Naam** veldtype de landcode in het formaat `<language-code>` of `<language-code>_<country-code>`, bijvoorbeeld `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Typ een titel voor de pagina.
 
    ![Hoofdpagina van taal maken](../assets/create-language-root.png)
 
@@ -102,7 +102,7 @@ Gebruik de volgende procedure om de taalkopieën voor een pagina te bekijken met
 
 ## Taalkopieën op meerdere niveaus {#multiple-levels}
 
-Taalwortels kunnen ook worden gegroepeerd onder knooppunten, bijvoorbeeld per regio, terwijl ze nog steeds worden herkend als wortels van taalkopieën.
+De wortels van de taal kunnen ook onder knopen, bijvoorbeeld, door regio worden gegroepeerd, terwijl nog als wortels van taalexemplaren worden erkend.
 
 ```text
 /content

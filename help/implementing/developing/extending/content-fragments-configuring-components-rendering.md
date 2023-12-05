@@ -1,15 +1,15 @@
 ---
-title: Contentfragmenten die componenten voor rendering configureren
-description: Contentfragmenten die componenten voor rendering configureren
+title: Inhoudsfragmenten die componenten voor rendering configureren
+description: Inhoudsfragmenten die componenten voor rendering configureren
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 4%
+source-wordcount: '519'
+ht-degree: 0%
 
 ---
 
-# Contentfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
+# Inhoudsfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
 
 Er zijn verschillende [geavanceerde services](#definition-of-advanced-services-that-need-configuration) gerelateerd aan de rendering van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
 
@@ -18,7 +18,7 @@ Dit wordt gedaan door te vormen [OSGi Service - Configuratie van de Component va
 Deze informatie is vereist wanneer:
 
 * U moet uw eigen op fragmenten gebaseerde component voor inhoudsfragmenten implementeren,
-* We moeten gebruik maken van de geavanceerde services.
+* En de geavanceerde services moeten worden gebruikt.
 
 Adobe raadt u aan de Core Components (Basiscomponenten) te gebruiken.
 

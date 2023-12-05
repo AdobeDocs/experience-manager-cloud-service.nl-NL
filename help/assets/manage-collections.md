@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2247'
-ht-degree: 14%
+source-wordcount: '2238'
+ht-degree: 13%
 
 ---
 
@@ -81,7 +81,7 @@ Een slimme verzameling gebruikt zoekcriteria om elementen dynamisch te vullen. U
 1. Navigeer naar de interface Middelen en selecteer de **[!UICONTROL Search]** pictogram.
 1. Voer het trefwoord in het vak Universeel zoeken in en selecteer `Enter`. Selecteer het GlobalNav-pictogram om het deelvenster Filters weer te geven en een zoekfilter toe te passen in het deelvenster Zoeken.
 1. Van de **[!UICONTROL Files & Folders]** list, selecteer **[!UICONTROL Files]**.
-1. Selecteer **[!UICONTROL Save Smart Collection]**.
+1. Selecteren **[!UICONTROL Save Smart Collection]**.
 1. Geef een naam op voor de verzameling. Selecteren **[!UICONTROL Public]** om de groep van Gebruikers DAM met de rol van de Kijker aan de slimme inzameling toe te voegen.
 
    >[!NOTE]
@@ -134,7 +134,7 @@ U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functi
 1. Selecteer in de werkbalk de optie **[!UICONTROL Properties]** pictogram.
 1. Bewerk desgewenst de metadata op de pagina **[!UICONTROL Collection Metadata]** onder de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]**.
 1. Selecteren **[!UICONTROL Save & Close]** op de werkbalk en sluit vervolgens het bevestigingsvenster om het proces te voltooien.
-1. Selecteer **[!UICONTROL Apend mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Selecteer **[!UICONTROL Submit]**.
+1. Selecteer **[!UICONTROL Apend mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Selecteren **[!UICONTROL Submit]**.
 
    >[!NOTE]
    >
@@ -231,7 +231,7 @@ U kunt een verzameling toevoegen aan een andere verzameling en zo een geneste ve
 
 In de gebruikersinterface Assets kunt u op basis van bepaalde regels, zoekcriteria of aangepaste zoekfacetten zoeken of filteren. Als u deze opslaat als **[!UICONTROL Saved Searches]**, kunt u ze later openen vanuit de lijst **[!UICONTROL Saved Searches]** in het deelvenster Filteren. Als u een opgeslagen zoekopdracht maakt, wordt ook een slimme verzameling gemaakt.
 
-Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst met **[!UICONTROL Saved Searches]**. De query voor opgeslagen zoekopdrachten voor de verzameling wordt opgeslagen in de eigenschap `dam:query` in CRXDE op de relatieve locatie `/content/dam/collections/`. Er gelden geen limieten voor de zoekopdrachten die u kunt opslaan en voor de opgeslagen zoekopdrachten die in de lijst worden weergegeven.
+Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst met **[!UICONTROL Saved Searches]**. De opgeslagen zoekopdracht voor de verzameling wordt opgeslagen in het dialoogvenster `dam:query` eigenschap in CRXDE op de relatieve locatie `/content/dam/collections/`. Er gelden geen limieten voor de zoekopdrachten die u kunt opslaan en voor de opgeslagen zoekopdrachten die in de lijst worden weergegeven.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verza
 
 1. Selecteer in de console Verzamelingen een verzameling waarop u een workflow wilt uitvoeren.
 1. Selecteer het GlobalNav-pictogram en kies **[!UICONTROL Timeline]** in de lijst.
-1. Selecteer of tik in de tijdlijn op het pictogram Caret onderaan en selecteer **[!UICONTROL Start Workflow]**.
+1. Selecteer in de tijdlijn het pictogram Caret onderaan en selecteer **[!UICONTROL Start Workflow]**.
 1. In de **[!UICONTROL Start Workflow]** selecteert u een workflowmodel in de lijst. Selecteer bijvoorbeeld de **[!UICONTROL DAM Update Asset]** model.
 1. Voer een titel in voor de workflow en selecteer **[!UICONTROL Start]**.
 1. Selecteer in het dialoogvenster **[!UICONTROL Proceed]**. De workflow wordt uitgevoerd op alle elementen in de verzameling.
@@ -262,15 +262,15 @@ U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verza
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
 
 >[!MORELIKETHIS]

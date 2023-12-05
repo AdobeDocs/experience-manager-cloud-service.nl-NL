@@ -2,9 +2,9 @@
 title: ContextHub toevoegen aan Pagina's en Toegang tot Sporen
 description: Voeg ContextHub aan uw pagina's toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScrip
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Merk op dat u ook moet vormen of de toolbar ContextHub op de wijze van de Voorproef verschijnt. Zie [Het tonen van en het Verbergen van ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+U moet ook vormen of de toolbar ContextHub op de wijze van de Voorproef verschijnt. Zie [Het tonen van en het Verbergen van ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## Informatie over ContextHub-winkels {#about-contexthub-stores}
 
@@ -103,7 +103,7 @@ Afzonderlijke gegevensitems worden opgeslagen als een set sleutel-/waardeparen. 
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Merk op dat de kandidaten van de douaneopslag extra functies kunnen bepalen die toegang verlenen om gegevens op te slaan.
+De opslagkandidaten van de douane kunnen extra functies bepalen die toegang verlenen om gegevens op te slaan.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ De regels die worden gebruikt om deze segmenten op te lossen zijn als volgt same
 
 >[!WARNING]
 >
->De geïnstalleerde segmenten worden verstrekt als verwijzingsconfiguraties om u te helpen uw eigen specifieke configuratie voor uw project bouwen en als zodanig niet direct zouden moeten worden gebruikt.
+>De geïnstalleerde segmenten worden verstrekt als verwijzingsconfiguraties om u te helpen uw eigen specifieke configuratie voor uw project bouwen. Niet direct gebruiken.
 
 ## Foutopsporing in ContextHub {#debugging-contexthub}
 

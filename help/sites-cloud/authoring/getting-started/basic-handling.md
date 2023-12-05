@@ -1,16 +1,16 @@
 ---
-title: Basisbewerkingen
+title: Basisverwerking
 description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2945'
+source-wordcount: '2943'
 ht-degree: 3%
 
 ---
 
 
-# Basisbewerkingen {#basic-handling}
+# Basisverwerking {#basic-handling}
 
 Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij het gebruik van de AEM-auteursomgeving. Het gebruikt de **Sites** console als basis.
 
@@ -23,7 +23,7 @@ Dit document is ontworpen om een overzicht te geven van de basisafhandeling bij 
 
 ## Een interface met aanraakbediening {#a-touch-enabled-ui}
 
-AEM gebruikersinterface is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u aanrakingen gebruiken om met de software te communiceren via bewegingen zoals tikken, aanraken en vasthouden en vegen. Omdat de AEM-interface aanraakbediening is, kunt u de aanraakbewegingen gebruiken op uw aanraakapparaten, zoals uw mobiele telefoon of tablet. De muishandelingen op een traditioneel desktopapparaat zijn echter ook beschikbaar, zodat u op een flexibele manier uw inhoud kunt ontwerpen.
+AEM gebruikersinterface is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u via aanraking met de software communiceren, bijvoorbeeld door middel van bewegingen voor selecteren, aanraken en vasthouden en vegen. Omdat de AEM-interface aanraakbediening is, kunt u de aanraakbewegingen gebruiken op uw aanraakapparaten, zoals uw mobiele telefoon of tablet. De muishandelingen op een traditioneel desktopapparaat zijn echter ook beschikbaar, zodat u op een flexibele manier uw inhoud kunt ontwerpen.
 
 ## Eerste stappen {#first-steps}
 
@@ -72,10 +72,10 @@ Vanuit Navigatie zijn de beschikbare consoles:
 |---|---|
 | Projecten | De console van Projecten geeft u directe toegang tot uw projecten. [Projecten zijn virtuele dashboards](/help/sites-cloud/authoring/projects/overview.md) die kan worden gebruikt om een team te bouwen. U kunt dat team dan toegang tot middelen, werkschema&#39;s, en taken geven, zo toestaand mensen om aan een gemeenschappelijk doel te werken. |
 | Sites | Met de siteconsoles kunt u [sites maken, weergeven en beheren](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) uitvoeren op uw AEM. Via deze console kunt u pagina&#39;s maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina&#39;s publiceren. |
-| Ervaringsfragmenten | An [Ervaar fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een stand-alone ervaring die kan worden hergebruikt over kanalen en variaties hebben, die het probleem van het herhaaldelijk kopiëren en het kleven ervaringen of delen van ervaringen bespaart. |
+| Ervaar fragmenten | An [Ervaar fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een stand-alone ervaring die kan worden hergebruikt over kanalen en variaties hebben, die het probleem van het herhaaldelijk kopiëren en het kleven ervaringen of delen van ervaringen bespaart. |
 | Assets | Met de middelenconsole kunt u importeren en beheren [digitale elementen, zoals afbeeldingen, video&#39;s, documenten en audiobestanden](/help/assets/overview.md). Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd. U kunt ook maken en beheren [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) vanaf de middelenconsole. |
 | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor [doelgerichte inhoud ontwerpen en persoonlijke ervaringen presenteren](/help/sites-cloud/authoring/personalization/overview.md). |
-| Contentfragmenten | [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Met deze sjablonen kunt u gestructureerde inhoud voorbereiden, klaar voor gebruik op meerdere locaties/via meerdere kanalen, en ideaal voor zowel paginaontwerp als levering zonder kop. |
+| Inhoudsfragmenten | [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Met deze sjablonen kunt u gestructureerde inhoud voorbereiden, klaar voor gebruik op meerdere locaties/via meerdere kanalen, en ideaal voor zowel paginaontwerp als levering zonder kop. |
 
 ## Deelvenster Gereedschappen {#tools-panel}
 
@@ -255,9 +255,9 @@ Het selecteren van een specifieke bron is afhankelijk van een combinatie van de 
 
 | Weergave | Aanraken selecteren | Bureaublad selecteren | Deselecteer Aanraken | Selectie van bureaublad opheffen |
 |---|---|---|---|---|
-| Kolom | Tik op de miniatuur | Klik op de miniatuur | Tik op de miniatuur | Klik op de miniatuur |
-| Kaart | Tik en houd de kaart ingedrukt | Muisknop erboven gebruikt vervolgens de handeling Snel vinkje | Tik op de kaart | Klik op de kaart |
-| Lijst | Tik op de miniatuur | Klik op de miniatuur | Tik op de miniatuur | Klik op de miniatuur |
+| Kolom | Selecteer de miniatuur | Klik op de miniatuur | Selecteer de miniatuur | Klik op de miniatuur |
+| Kaart | De kaart selecteren en de muisknop ingedrukt houden | Muisknop erboven gebruikt vervolgens de handeling Snel vinkje | Selecteer de kaart | Klik op de kaart |
+| Lijst | Selecteer de miniatuur | Klik op de miniatuur | Selecteer de miniatuur | Klik op de miniatuur |
 
 #### Alles selecteren {#select-all}
 

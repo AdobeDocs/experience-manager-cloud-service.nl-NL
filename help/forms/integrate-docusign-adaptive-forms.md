@@ -2,9 +2,9 @@
 title: Hoe te om DocuSign met een Aangepast Vorm te integreren?
 description: Leer hoe u DocuSign met een adaptief formulier kunt gebruiken om e-handtekeningen te verzamelen.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
@@ -126,8 +126,8 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit te i
 
 1. Navigeren naar **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL DocuSign]** en selecteer een map die de configuratie host.
 
-1. Tik op de configuratiepagina **[!UICONTROL Create]** om [!DNL DocuSign] in AEM Forms.
-1. In de **[!UICONTROL General]** tabblad van het **[!UICONTROL Create DocuSign Configuration]** pagina, geeft u een **[!UICONTROL Name]** voor de configuratie en tik **[!UICONTROL Next]**. U kunt desgewenst een **[!UICONTROL Title]**.
+1. Selecteer op de configuratiepagina de optie **[!UICONTROL Create]** om [!DNL DocuSign] in AEM Forms.
+1. In de **[!UICONTROL General]** tabblad van het **[!UICONTROL Create DocuSign Configuration]** pagina, geeft u een **[!UICONTROL Name]** voor de configuratie, en selecteer **[!UICONTROL Next]**. U kunt desgewenst een **[!UICONTROL Title]**.
 
 1. Kopieer de URL in het huidige browservenster naar een laptop. De URL is vereist om te configureren [!DNL DocuSign] toepassing met [!DNL AEM Forms] in een latere stap.
 
@@ -146,9 +146,9 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit te i
 
 1. Geef de **[!UICONTROL Client ID]** (DocuSign Integration Key) en **[!UICONTROL Client Secret]** (Geheime sleutel DocuSign).
 
-1. Tik op **[!UICONTROL Connect to DocuSign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt tijdens het maken van [!DNL DocuSign] toepassing. Wanneer gevraagd om toegang te bevestigen voor `your developer account`, klikt u op **[!UICONTROL Allow Access]**. Als de gegevens juist zijn, wordt een succesbericht weergegeven.
+1. Selecteer **[!UICONTROL Connect to DocuSign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt tijdens het maken van [!DNL DocuSign] toepassing. Wanneer gevraagd om toegang te bevestigen voor `your developer account`, klikt u op **[!UICONTROL Allow Access]**. Als de gegevens juist zijn, wordt een succesbericht weergegeven.
 
-1. Tikken **[!UICONTROL Create]** om de [!DNL DocuSign] configuratie.
+1. Selecteren **[!UICONTROL Create]** om de [!DNL DocuSign] configuratie.
 
 1. Selecteer de configuratie en klik op **[!UICONTROL Publish]**, selecteert u de configuratie en klikt u op **[!UICONTROL Publish]**. De configuratie wordt in overeenkomende publicatieomgevingen gerepliceerd.
 
@@ -167,8 +167,8 @@ U kunt [!DNL DocuSign] voor een bestaand adaptief formulier of een [!DNL DocuSig
 
 Een adaptief formulier maken dat geschikt is voor ondertekenen:
 
-1. Ga naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tikken **[!UICONTROL Create]** en selecteert u **[!UICONTROL Adaptive Form]**. Er wordt een lijst met sjablonen weergegeven. Selecteer een sjabloon en tik op **[!UICONTROL Next]**.
+1. Navigeren naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteren **[!UICONTROL Create]** en selecteert u **[!UICONTROL Adaptive Form]**. Er wordt een lijst met sjablonen weergegeven. Selecteer een sjabloon en selecteer **[!UICONTROL Next]**.
 1. In de **[!UICONTROL Basic]** tab:
 
    1. Geef de **[!UICONTROL Name]** en **[!UICONTROL Title]** voor het adaptieve formulier.
@@ -183,23 +183,23 @@ Een adaptief formulier maken dat geschikt is voor ondertekenen:
 
    - Als u geen aangepaste formuliersjabloon hebt, selecteert u de optie **[!UICONTROL Generate Document of Record]** -optie. Als u deze optie gebruikt, worden in het document dat voor ondertekening is verzonden alle velden van het adaptieve formulier weergegeven.
 
-1. Tikken **[!UICONTROL Create.]** Er wordt een adaptief formulier gemaakt dat geschikt is voor ondertekening. U kunt uw [!DNL DocuSign] velden naar het formulier en verzenden voor ondertekening.
-1. Open het adaptieve formulier in de bewerkingsmodus. In de **[!UICONTROL Content]** tikt u op de **[!UICONTROL Form Container]** en tikken ![Configureren](assets/configure-icon.svg).
+1. Selecteren **[!UICONTROL Create.]** Er wordt een adaptief formulier gemaakt dat geschikt is voor ondertekening. U kunt uw [!DNL DocuSign] velden naar het formulier en verzenden voor ondertekening.
+1. Open het adaptieve formulier in de bewerkingsmodus. In de **[!UICONTROL Content]** selecteert u de **[!UICONTROL Form Container]** en selecteert u ![Configureren](assets/configure-icon.svg).
 
 1. In de **[!UICONTROL Submission]** sectie, selecteert u **[!UICONTROL Submit with DocuSign electronic signatures]** van de **[!UICONTROL Submit Action]** vervolgkeuzelijst.
 
-1. In de **[!UICONTROL Action Configuration]** sectie, tikken **[!UICONTROL Add]** om een ontvanger toe te voegen en het e-mailadres van de ontvanger op te geven. Tikken **[!UICONTROL Add]** nogmaals om meer ontvangers toe te voegen.
+1. In de **[!UICONTROL Action Configuration]** sectie, selecteert u **[!UICONTROL Add]** om een ontvanger toe te voegen en het e-mailadres van de ontvanger op te geven. Selecteren **[!UICONTROL Add]** nogmaals om meer ontvangers toe te voegen.
 
 1. Geef het onderwerp voor het e-mailbericht op in het dialoogvenster **[!UICONTROL Email Subject]** veld. Selecteren **Bijlagen opnemen** om bijlagen in het e-mailbericht op te nemen.
 
-1. Tikken ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+1. Selecteren ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
 
 #### Inschakelen [!DNL DocuSign] voor een adaptief formulier {#editafsign}
 
 Te gebruiken [!DNL DocuSign] in een bestaand adaptief formulier:
 
-1. Ga naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteer het adaptieve formulier en tik op **[!UICONTROL Properties]**.
+1. Navigeren naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteer het adaptieve formulier en selecteer **[!UICONTROL Properties]**.
 1. In de **[!UICONTROL Basic]** selecteert u de [configuratieconsole](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) gemaakt tijdens het integreren [!DNL DocuSign] with [!DNL AEM Forms].
 1. In de **[!UICONTROL Form Model]** selecteert u een van de volgende opties:
 
@@ -207,14 +207,14 @@ Te gebruiken [!DNL DocuSign] in een bestaand adaptief formulier:
 
    - Als u geen aangepaste formuliersjabloon hebt, selecteert u de optie **[!UICONTROL Generate Document of Record]** -optie. Als u deze optie gebruikt, worden in het document dat voor ondertekening is verzonden alle velden van het adaptieve formulier weergegeven.
 
-1. Tik op **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL DocuSign]. Nu kunt u uw [!DNL DocuSign] velden naar het formulier en verzenden voor ondertekening.
+1. Selecteer **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL DocuSign]. Nu kunt u uw [!DNL DocuSign] velden naar het formulier en verzenden voor ondertekening.
 
-1. Open het adaptieve formulier in de bewerkingsmodus. In de **[!UICONTROL Content]** tikt u op de **[!UICONTROL Form Container]** en tikken ![Configureren](assets/configure-icon.svg).
+1. Open het adaptieve formulier in de bewerkingsmodus. In de **[!UICONTROL Content]** selecteert u de **[!UICONTROL Form Container]** en selecteert u ![Configureren](assets/configure-icon.svg).
 
 1. In de **[!UICONTROL Submission]** sectie, selecteert u **[!UICONTROL Submit with DocuSign electronic signatures]** van de **[!UICONTROL Submit Action]** vervolgkeuzelijst.
 
-1. In de **[!UICONTROL Action Configuration]** sectie, tikken **[!UICONTROL Add]** om een ontvanger toe te voegen en het e-mailadres van de ontvanger op te geven. Tikken **[!UICONTROL Add]** nogmaals om meer ontvangers toe te voegen.
+1. In de **[!UICONTROL Action Configuration]** sectie, selecteert u **[!UICONTROL Add]** om een ontvanger toe te voegen en het e-mailadres van de ontvanger op te geven. Selecteren **[!UICONTROL Add]** nogmaals om meer ontvangers toe te voegen.
 
 1. Geef het onderwerp voor het e-mailbericht op in het dialoogvenster **[!UICONTROL Email Subject]** veld. Selecteren **Bijlagen opnemen** om bijlagen in het e-mailbericht op te nemen.
 
-1. Tikken ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+1. Selecteren ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.

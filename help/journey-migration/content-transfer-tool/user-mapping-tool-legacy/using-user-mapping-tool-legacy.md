@@ -4,10 +4,10 @@ description: Gebruikerstoewijzing gebruiken (verouderd)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 2%
+source-wordcount: '806'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 >
 >Deze documentatie verwijst naar een verouderde versie van het hulpmiddel. Voor meer informatie over de meest recente versie raadpleegt u [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
-Het hulpmiddel van de Toewijzing van de Gebruiker gebruikt API die het toestaat om gebruikers van het Systeem van Adobe Identity Management (IMS) per e-mail op te zoeken en hun IMS IDs terug te keren. Deze API vereist de gebruiker om een identiteitskaart van de Cliënt voor hun organisatie, een Geheim van de Cliënt, en een Token van de Toegang of van de Drager tot stand te brengen.
+Het hulpmiddel van de Toewijzing van de Gebruiker gebruikt API die het toestaat om Adobe gebruikers van het Systeem van Identity Management (IMS) per e-mail op te zoeken en hun IMS IDs terug te keren. Deze API vereist de gebruiker om een identiteitskaart van de Cliënt voor hun organisatie, een Geheim van de Cliënt, en een Token van de Toegang of van de Drager tot stand te brengen.
 
 ## Het gereedschap Toewijzing gebruiker instellen {#setting-up-user-mapping}
 
@@ -35,11 +35,11 @@ Voer de onderstaande stappen uit om dit in te stellen:
 1. Genereer een toegangstoken (of token voor toonder) door uw inhoud van de persoonlijke sleutel in het tekstvak te plakken en op **Token genereren**.
 1. Alle informatie opslaan, zoals **Client-id**, **Clientgeheim**, **Technisch account-id**, **E-mail technische account**, **Org-id**, en **Toegangstoken** veilig.
 
-## De gebruikersinterface openen voor het Hulpmiddel van de Toewijzing van de Gebruiker {#user-interface}
+## De gebruikersinterface openen voor het Hulpprogramma voor gebruikerstoewijzing {#user-interface}
 
 Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmiddel van de Overdracht van de Inhoud. U kunt het gereedschap Inhoud overbrengen downloaden van [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Ga voor meer informatie over de nieuwste versie naar [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Selecteer de Adobe Experience Manager en navigeer naar de gereedschappen -> **Bewerkingen** -> **Inhoud migreren**.
+1. Selecteer de Adobe Experience Manager en navigeer naar gereedschappen > **Bewerkingen** > **Inhoud migreren**.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
 
@@ -62,7 +62,7 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
    * **Org-id**: Voer de Adobe Identity Management System (IMS) Org ID in voor de organisatie waarop de gebruikers worden gemigreerd.
 
      >[!NOTE]
-     >Meld u aan bij de [Admin Console](https://adminconsole.adobe.com/) en kies uw organisatie (in het hoger-juiste gebied) als u tot meer dan één behoort. De organisatie-id staat in de URL van die pagina, in de notatie `xx@AdobeOrg`, waarbij xx de IMS Org ID is. U kunt de organisatie-id ook vinden in het dialoogvenster [Adobe Developer Console](https://developer.adobe.com/console/) pagina waar u het Token van de Toegang produceert.
+     >Als u de organisatie-id wilt ophalen, meldt u zich aan bij de [Admin Console](https://adminconsole.adobe.com/) en kies uw organisatie (in het hoger-juiste gebied) als u tot meer dan één behoort. De organisatie-id staat in de URL van die pagina, in de notatie `xx@AdobeOrg`, waarbij xx de IMS Org ID is. U kunt de organisatie-id ook vinden in het dialoogvenster [Adobe Developer Console](https://developer.adobe.com/console/) pagina waar u het Token van de Toegang produceert.
 
    * **Client-id**: Ga identiteitskaart van de Cliënt in die u van de stap van de Opstelling bewaarde.
 
@@ -71,11 +71,11 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
      >[!NOTE]
      >De token Access verloopt elke 24 uur en er moet een nieuwe token worden gemaakt. Ga terug naar [Adobe Developer Console](https://developer.adobe.com/console/), kies uw project, klik **Gebruikersbeheer-API** en plak dezelfde persoonlijke sleutel in het vak.
 
-1. Nadat u de velden hebt gevuld, klikt u op **Configuratie testen** om de verbinding met de API-service voor gebruikersbeheer te testen. Als de verbinding tot stand is gebracht, kunt u op **Opslaan** om de configuratie op te slaan.
+1. Klik op **Configuratie testen** om de verbinding met de API-service voor gebruikersbeheer te testen. Als de verbinding tot stand is gebracht, kunt u op **Opslaan** om de configuratie op te slaan.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
-1. Nadat u de configuratie hebt opgeslagen, selecteert u de configuratie en klikt u op **Gebruikerstoewijzing starten**.
+1. Na het bewaren van de configuratie, selecteer de configuratie en klik **Gebruikerstoewijzing starten**.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
@@ -88,13 +88,13 @@ Het hulpmiddel van de Toewijzing van de Gebruiker is geïntegreerd in het Hulpmi
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. Klik op **Resultaten** om de samenvatting te bekijken.
+1. Nadat de Toewijzing van de Gebruiker volledig is, klik **Resultaten** om de samenvatting te bekijken.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
    >
-   >* Nadat de Toewijzing van de Gebruiker volledig is, kunt u terug naar de pagina van de Migratie van de Inhoud navigeren gebruikend breadcrumb. Op de kaart met gebruikerstoewijzing worden de status en het tijdstempel weergegeven. Klikken **Inhoud overbrengen** zodat u een migratieset kunt maken om extractie uit te voeren. Zie [Het gereedschap Inhoud overbrengen uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) voor meer informatie .
+   >* Nadat de Toewijzing van de Gebruiker volledig is, kunt u terug naar de pagina van de Migratie van de Inhoud navigeren gebruikend breadcrumb. Op de kaart met gebruikerstoewijzing worden de status en het tijdstempel weergegeven. Klikken **Inhoud overbrengen** zodat u een migratieset kunt maken die wordt uitgevoerd. Zie [Het gereedschap Inhoud overbrengen uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) voor meer informatie .
 
 ### De gebruikerstoewijzingsprocedure hervatten {#resume-user-mapping-process}
 

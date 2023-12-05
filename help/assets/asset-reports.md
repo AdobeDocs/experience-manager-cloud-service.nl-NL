@@ -5,14 +5,14 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 5%
+source-wordcount: '886'
+ht-degree: 3%
 
 ---
 
-# Rapporten over assets {#asset-reports}
+# Elementen rapporteren {#asset-reports}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -37,7 +37,7 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
 * Downloaden
 * Verlopen
 * Wijziging
-* Publicatie
+* Publiceren
 * [!DNL Brand Portal] publish
 * Schijfgebruik
 * Bestanden
@@ -61,7 +61,7 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
 
    ![Pagina Gereedschappen om te navigeren in middelenrapport](assets/navigation.png)
 
-1. Op de [!UICONTROL Asset Reports] pagina, klikt u op **[!UICONTROL Create]** op de werkbalk.
+1. Op de [!UICONTROL Asset Reports] pagina, klikt u **[!UICONTROL Create]** op de werkbalk.
 1. Van de **[!UICONTROL Create Report]** pagina, kiest u het rapport dat u wilt maken en klikt u op **[!UICONTROL Next]**.
 
    ![Rapporttype selecteren](assets/choose_report.png)
@@ -76,15 +76,15 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via <!-- through a
    >
    >Als u ervoor kiest om het rapport later te plannen, zorg ervoor dat u de datum en de tijd in de gebieden van de Datum en van de Tijd specificeert. Als u geen waarde specificeert, behandelt de rapportmotor het als een rapport dat onmiddellijk moet worden geproduceerd.
 
-   De gebieden van de configuratie kunnen verschillen gebaseerd op het type van rapport u creeert. De **[!UICONTROL Disk Usage]** rapport biedt opties voor het opnemen van elementen bij het berekenen van de schijfruimte die door elementen wordt gebruikt. U kunt ervoor kiezen om elementen in submappen op te nemen of uit te sluiten voor het berekenen van het schijfgebruik.
+   De gebieden van de configuratie kunnen verschillen gebaseerd op het type van rapport u creeert. Bijvoorbeeld de **[!UICONTROL Disk Usage]** rapport biedt opties voor het opnemen van elementen bij het berekenen van de schijfruimte die door elementen wordt gebruikt. U kunt ervoor kiezen om elementen in submappen op te nemen of uit te sluiten voor het berekenen van het schijfgebruik.
 
    >[!NOTE]
    >
    >Het rapport **[!UICONTROL Disk Usage]** bevat geen datumbereikvelden omdat het alleen het huidige gebruik van schijfruimte aangeeft.
 
-   ![Detailpagina van rapport Schijfgebruik](assets/disk_usage_configuration.png)
+   ![Pagina met details van rapport Schijfgebruik](assets/disk_usage_configuration.png)
 
-   Wanneer u de **[!UICONTROL Files]** rapport, kunt u submappen opnemen/uitsluiten. U kunt echter geen elementuitvoeringen opnemen voor dit rapport.
+   Wanneer u de opdracht **[!UICONTROL Files]** rapport, kunt u submappen opnemen/uitsluiten. U kunt echter geen elementuitvoeringen opnemen voor dit rapport.
 
    ![Pagina met details van rapport Bestanden](assets/files_report.png)
 
@@ -132,16 +132,16 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 * Uploaden
 * Verlopen
 * Wijziging
-* Publicatie
+* Publiceren
 * [!DNL Brand Portal] publish
 * Bestanden
 
 Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
 1. In de [!DNL Manager interface], klikt u op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
-1. Op de [!UICONTROL Asset Reports] pagina, klikt u op **[!UICONTROL Create]** op de werkbalk.
+1. Op de [!UICONTROL Asset Reports] pagina, klikt u **[!UICONTROL Create]** op de werkbalk.
 
-1. Van de **[!UICONTROL Create Report]** kiest u een rapport dat u wilt maken. Klik op **[!UICONTROL Next]**.
+1. Van de **[!UICONTROL Create Report]** pagina, kiest u een rapport dat u wilt maken. Klik op **[!UICONTROL Next]**.
 
 1. Configureer de rapportdetails, zoals titel, beschrijving, miniatuur, mappad en datumbereik. Klik op **[!UICONTROL Next]**.
 
@@ -153,7 +153,7 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
    ![Eigenschappenpad toewijzen vanuit paden in jcr:content](assets/property_picker.png)
 
-   Als u meer aangepaste kolommen wilt toevoegen, klikt u op **[!UICONTROL Add]** en herhaal de bovenstaande stappen.
+   Klik op **[!UICONTROL Add]** en herhaal de bovenstaande stappen.
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht deelt mee dat de rapportgeneratie in werking wordt gesteld.
 
@@ -194,13 +194,13 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)

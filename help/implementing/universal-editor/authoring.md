@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Selecteer het pictogram voor de voorvertoning van de geopende app om de pagina d
 >
 >De sneltoets gebruiken `O` (de letter O) om de voorvertoning van de app te openen.
 
-#### Publicatie {#publish}
+#### Publiceren {#publish}
 
 Selecteer de knop Publiceren zodat u de wijzigingen in de inhoud live kunt publiceren voor gebruik door de lezers.
 
@@ -232,7 +232,7 @@ Afhankelijk van het type component dat u selecteert, kunnen details worden weerg
 
 ![Componentdetails](assets/component-details.png)
 
-Niet alle componenten hebben details die kunnen worden weergegeven en/of bewerkt.
+Niet alle componenten hebben details die kunnen worden getoond en/of worden uitgegeven.
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ Inhoud bewerken is eenvoudig en intuïtief. In [componentmodus](#component-mode)
 
 >[!TIP]
 >
->Houd er rekening mee dat als u in de componentmodus op de inhoud tikt of erop klikt, deze wordt geselecteerd voor bewerking. Als u door de inhoud wilt navigeren door de koppelingen te volgen, schakelt u over naar [voorvertoningsmodus.](#preview-mode)
+>Als u in de componentmodus op inhoud tikt of erop klikt, wordt deze geselecteerd voor bewerking. Als u door de inhoud wilt navigeren door de koppelingen te volgen, schakelt u over naar [voorvertoningsmodus.](#preview-mode)
 
 Afhankelijk van de inhoud die u selecteert, zijn er mogelijk verschillende opties voor lokale bewerking en kunt u aanvullende informatie en opties voor de inhoud in het dialoogvenster [eigenschappen rail.](#properties-rail)
 
@@ -407,7 +407,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsstructuur als de e
 
 Wanneer u klaar bent met het bewerken van inhoud, wilt u er vaak door navigeren om te zien hoe de inhoud er op andere pagina&#39;s uitziet. In [voorbeeldmodus](#preview-mode) u kunt op koppelingen klikken om door de inhoud te navigeren zoals een lezer zou doen. De inhoud wordt in de editor gerenderd zoals deze zou worden gepubliceerd.
 
-Houd er rekening mee dat in de voorvertoningsmodus tikken of klikken op inhoud reageert op de manier waarop dit voor een lezer van de inhoud gebeurt. Als u de te bewerken inhoud wilt selecteren, schakelt u over naar [componentmodus.](#component-mode)
+In de voorvertoningsmodus reageert de gebruiker op de inhoud door erop te tikken of erop te klikken, net als bij een lezer van de inhoud. Als u de te bewerken inhoud wilt selecteren, schakelt u over naar [componentmodus.](#component-mode)
 
 ## Aanvullende bronnen {#additional-resources}
 

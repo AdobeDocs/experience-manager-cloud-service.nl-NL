@@ -2,7 +2,7 @@
 title: Zoeken
 description: Vind sneller uw inhoud dankzij uitgebreide zoekopdracht
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 6%
@@ -44,7 +44,7 @@ U kunt als volgt uw bronnen zoeken en filteren:
 1. Indien nodig kunt u het locatiefilter verwijderen (selecteer **X** op het filter dat u wilt verwijderen) om te zoeken in alle consoles/middeltypen.
 1. De resultaten worden getoond, gegroepeerd volgens console en verwant middeltype.
 
-   U kunt een specifieke bron selecteren (voor verdere actie) of naar beneden boren door het vereiste middeltype te selecteren, bijvoorbeeld **Alle sites weergeven**:
+   U kunt een bepaalde bron selecteren (voor verdere actie) of naar beneden boren door het vereiste type resource te selecteren, bijvoorbeeld **Alle sites weergeven**:
 
    ![Zoekresultaten](/help/sites-cloud/authoring/assets/search-results.png)
 

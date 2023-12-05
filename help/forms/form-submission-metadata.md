@@ -4,9 +4,9 @@ description: Leer hoe u met door de gebruiker verstrekte gegevens informatie aan
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Een ander voorbeeld van een formulier waarin e-mailadres en telefoonnummer worde
 Voer de volgende stappen uit om een element toe te voegen aan de metagegevens:
 
 1. Open het adaptieve formulier in de bewerkingsmodus.\
-   Als u het formulier wilt openen in de bewerkingsmodus, selecteert u het formulier in het formulierbeheer en tikt u op **[!UICONTROL Open]**.
-1. Selecteer in de bewerkingsmodus een component en tik op ![op veldniveau](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** en tikt u vervolgens op ![cmppr](assets/configure-icon.svg).
+   Als u het formulier wilt openen in de bewerkingsmodus, selecteert u in het formulierbeheer het gewenste formulier en selecteert u **[!UICONTROL Open]**.
+1. Selecteer in de bewerkingsmodus een component en selecteer ![op veldniveau](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** en selecteer vervolgens ![cmppr](assets/configure-icon.svg).
 1. Klik in de zijbalk op **[!DNL Metadata]**.
 1. Klik in het gedeelte Metagegevens op **[!DNL Add]**.
 1. Voeg scripts toe in het veld Waarde van het tabblad Metagegevens. Met de scripts die u toevoegt, worden gegevens verzameld uit elementen op het formulier en worden waarden berekend die worden doorgegeven aan de metagegevens.

@@ -2,10 +2,10 @@
 title: Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM
 description: Leer over de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ Dit artikel bouwt op deze voort zodat begrijpt u hoe te om uw eigen Modellen van
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
 
-Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. Dit kan worden gedaan in het kader van **Gereedschappen** -> **Algemeen** -> **Modellen van inhoudsfragmenten**.
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. Dit kan worden gedaan in het kader van **Gereedschappen** > **Algemeen** > **Modellen van inhoudsfragmenten**.
 
 ![Modellen van inhoudsfragmenten in gereedschappen](assets/cfm-tools.png)
 
@@ -108,13 +108,13 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw ei
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Authoring van concepten](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Concepten ontwerpen](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** -console, maar veel/de meeste functies zijn ook relevant voor het navigeren naar en het uitvoeren van actie op **Modellen van inhoudsfragmenten** onder de **Algemeen** console.
 
-* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
       * [Het model van het inhoudsfragment definiëren](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
 

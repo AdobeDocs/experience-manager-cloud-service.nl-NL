@@ -2,9 +2,9 @@
 title: Vertaalregels configureren voor inhoud zonder kop
 description: Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ In de **Omzetconfiguratie** UI, zijn er verscheidene opties beschikbaar voor uw 
    ![Context toevoegen](assets/add-translation-context.png)
 1. Gebruik de padbrowser om het gewenste pad te selecteren en selecteer **Bevestigen** opslaan. Onthoud dat Content Fragments, die inhoud zonder kop bevatten, zich doorgaans onder `/content/dam/<your-project>`.
    ![Het pad selecteren](assets/select-context.png)
-1. Selecteer de context die u net hebt gemaakt en selecteer **Bewerken**. Hierdoor wordt het **Editor voor omzettingsregels** om de eigenschappen te configureren.
+1. Selecteer de context die u hebt gemaakt en selecteer **Bewerken**. Hierdoor wordt het **Editor voor omzettingsregels** om de eigenschappen te configureren.
    ![Editor voor vertaalregels](assets/translation-rules-editor.png)
 1. Standaard worden alle configuraties overgenomen van het bovenliggende pad, in dit geval `/content/dam`. Schakel de optie uit **Overnemen van`/content/dam`** zodat kunt u extra gebieden aan de configuratie toevoegen.
 1. Als deze optie is uitgeschakeld, onder de knop **Algemeen** in de lijst, voegt u de eigenschapnamen toe van de inhoudsfragmentmodellen die u gebruikt [eerder geïdentificeerd als velden voor vertaling.](getting-started.md#content-models)

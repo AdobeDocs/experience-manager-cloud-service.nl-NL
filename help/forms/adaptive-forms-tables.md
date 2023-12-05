@@ -4,9 +4,9 @@ description: Gebruik de tabelcomponent om tabellen toe te voegen aan een adaptie
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Als u een kolom wilt toevoegen of verwijderen, klikt u op de tekstcel in de kopt
 
 U kunt een beschrijving van de tabel toevoegen om uit te leggen hoe de informatie is ingedeeld die schermlezers kunnen interpreteren en lezen. De beschrijving toevoegen:
 
-1. Selecteer de tabel en tik ![cmppr](assets/cmppr.png) om de eigenschappen in de zijbalk weer te geven.
+1. Selecteer de tabel en selecteer ![cmppr](assets/cmppr.png) om de eigenschappen in de zijbalk weer te geven.
 1. Geef een overzicht op op het tabblad Toegankelijkheid.
 1. Klikken **Gereed**.
 
@@ -107,9 +107,9 @@ Als u sortering wilt toepassen op tabelkolommen, moeten de cellen in de tabelkol
 
 Sorteren inschakelen:
 
-1. Selecteer de tabel en tik ![configure_icon](assets/configure_icon.png) (Configureren). U kunt de tabel ook selecteren met de **Inhoud** browser in het hulpje van de Interactieve Communicatie.
+1. Selecteer de tabel en selecteer ![configure_icon](assets/configure_icon.png) (Configureren). U kunt de tabel ook selecteren met de **Inhoud** browser in het hulpje van de Interactieve Communicatie.
 1. Selecteren **Sorteren inschakelen**.
-1. Tikken ![done_icon](assets/done_icon.png) om de tabeleigenschappen op te slaan. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
+1. Selecteren ![done_icon](assets/done_icon.png) om de tabeleigenschappen op te slaan. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
 
    ![Sorteren inschakelen](assets/enable_sorting_new.png)
 
@@ -128,7 +128,7 @@ Sorteren inschakelen:
 
 Voer de volgende stappen uit om de kolombreedte voor een tabel in te stellen:
 
-1. In de **[!UICONTROL Content]** tikt u op de **[!UICONTROL Table]** component en tik Configure (![Configureren](assets/configure-icon.svg)).
+1. In de **[!UICONTROL Content]** selecteert u de **[!UICONTROL Table]** component en selecteer Configure (![Configureren](assets/configure-icon.svg)).
 
 1. Voer de lijst met door komma&#39;s gescheiden waarden in het dialoogvenster **[!UICONTROL Column Width]** veld om de proportionele breedte van elke kolom in de tabel op te geven. Bijvoorbeeld voor een tabel die 3 kolommen bevat en die 2,4,6 opgeeft als de waarde in het dialoogvenster **[!UICONTROL Column Width]** resulteert in het instellen van de breedte van kolommen op 2/12 voor de eerste kolom, op 4/12 voor de tweede kolom en op 6/12 voor de derde kolom. 2/12, aangezien de breedte voor de eerste kolom verwijst naar een zesde van de tabelbreedte. Zo stelt 4/12 de tweede kolombreedte in als een derde van de tabelbreedte en 6/12 stelt de derde kolombreedte in als de helft van de tabelbreedte.
 
@@ -136,9 +136,9 @@ Voer de volgende stappen uit om de kolombreedte voor een tabel in te stellen:
 
 U kunt de stijl voor een tabel definiëren met de modus Stijl op de paginaboolbalk. Ga als volgt te werk om over te schakelen op de stijlmodus en de tabelopmaak te bewerken
 
-1. Tik vóór Voorvertoning op de pagina-werkbalk op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
+1. Selecteer op de pagina-werkbalk vóór Voorvertoning de optie ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
 
-1. Selecteer de tabel in de zijbalk en tik op de knop Bewerken ![bewerken, knop](assets/edit-button.png).
+1. Selecteer in de zijbalk de tabel en klik op de knop Bewerken ![bewerken, knop](assets/edit-button.png).
 De opmaakeigenschappen worden weergegeven in het zijpaneel.
 
 ![Stijleigenschappen van een tabel](assets/style-table.png)
@@ -151,7 +151,7 @@ De opmaakeigenschappen worden weergegeven in het zijpaneel.
 
 Tabellen bieden ondersteuning voor het dynamisch toevoegen of verwijderen van rijen tijdens runtime.
 
-1. Selecteer een tabelrij en tik op ![cmppr](assets/cmppr.png).
+1. Selecteer een tabelrij en selecteer ![cmppr](assets/cmppr.png).
 1. Geef op het tabblad Herhalingsinstellingen het minimale en maximale aantal rijen op om het aantal rijen in de tabel te beperken.
 1. Klikken **Gereed**.
 
@@ -328,7 +328,7 @@ Bovendien kunt u een groep XSD-complexe tekstelementen slepen en neerzetten om e
 * Als u rijen omhoog en omlaag verplaatst tijdens het ontwerpen van een op XSD gebaseerde tabel, wordt enig gegevensverlies uit tabelrijen gezien in de gegevens-XML die bij het verzenden van het formulier worden gegenereerd.
 * Aan elke hoofdcel in een standaardtabel is een vooraf gedefinieerde elementnaam gekoppeld. Als u een andere tabel in het aangepaste formulier toevoegt, hebben de standaardhoofdtekstcellen in de nieuwe tabel dezelfde elementnaam als in de eerste tabel. In dat geval bevatten de gegevens die bij het verzenden van het formulier worden gegenereerd, gegevens in de standaardhoofdtekstcellen van slechts een van de tabellen. Zorg er daarom voor dat u de elementnamen voor standaardlichaamscellen hernoemt om ze uniek te houden in verschillende tabellen en gegevensverlies te voorkomen.
 
-  Dit is alleen van toepassing op de standaardlichaamscellen. Als u meer rijen of kolommen aan een tabel toevoegt, worden automatisch unieke elementnamen voor niet-standaardlichaamscellen gegenereerd.
+  Alleen van toepassing op de standaardlichaamscellen. Als u meer rijen of kolommen aan een tabel toevoegt, worden automatisch unieke elementnamen voor niet-standaardlichaamscellen gegenereerd.
 
 ## Zie ook {#see-also}
 

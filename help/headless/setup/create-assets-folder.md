@@ -2,9 +2,9 @@
 title: Een middelenmap maken - Instellingen zonder kop
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
       * Deze kan zo nodig worden aangepast.
 
    ![Map maken](../assets/assets-folder-create.png)
-1. Selecteer de map die u zojuist hebt gemaakt door de muis boven het vinkje te houden en erop te tikken. Selecteer vervolgens **Eigenschappen** van de werkbalk (of gebruik de `p` [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
+1. Selecteer de map die u hebt gemaakt door op het vinkje te tikken en erop te klikken. Selecteer vervolgens **Eigenschappen** van de werkbalk (of gebruik de `p` [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
 1. In de **Eigenschappen** venster, selecteert u de **Cloud Servicen** tab.
 1. Voor de **Cloud Configuration** Selecteer de [eerder gemaakte configuratie.](create-configuration.md)
    ![Map met middelen configureren](../assets/assets-folder-configure.png)
@@ -43,7 +43,7 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
 
    ![Bevestigingsvenster](../assets/assets-folder-confirmation.png)
 
-U kunt extra submappen maken in de map die u net hebt gemaakt. De submappen nemen de **Cloud Configuration** van de bovenliggende map. Dit kan worden met voeten getreden echter als u modellen van een andere configuratie wilt gebruiken.
+U kunt aanvullende submappen maken in de map die u hebt gemaakt. De submappen nemen de **Cloud Configuration** van de bovenliggende map. Dit kan worden met voeten getreden echter als u modellen van een andere configuratie wilt gebruiken.
 
 U kunt een gelokaliseerde sitestructuur gebruiken [een hoofdmap voor een taal maken](/help/assets/translate-assets.md) onder uw nieuwe map.
 

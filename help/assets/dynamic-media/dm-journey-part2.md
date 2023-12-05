@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2842'
+source-wordcount: '2647'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ U herinnert zich in [Anatomie van een Dynamic Media-URL](#dm-journey-d) eerder, 
 
 U kunt een voorinstelling voor afbeeldingen zien als een recept voor uw afbeeldingen. Het zal om het even welke beelden leveren die de vooraf ingestelde, constant, elke keer gebruiken; het zal het zelfde zijn. De parameter `&op_brightness=+10` is ook toegevoegd om de helderheid iets te verhogen.
 
-Als u klaar bent, slaat u de voorinstelling op en is deze nu beschikbaar voor alle afbeeldingen die u hebt. In dit geval willen wij de _Normaal_ een voorinstelling voor een afbeelding van een kom met vloeibare chocolade.
+Als u klaar bent, slaat u de voorinstelling op en is deze nu beschikbaar voor alle afbeeldingen die u hebt. In dit geval wilt u de opdracht _Normaal_ een voorinstelling voor een afbeelding van een kom met vloeibare chocolade.
 
 ![De voorinstelling voor afbeeldingen toepassen *Normaal* om een uitvoering van een afbeelding te genereren](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Door de voorinstelling Medium van de afbeelding toe te passen, genereert u een uitvoering van een afbeelding._

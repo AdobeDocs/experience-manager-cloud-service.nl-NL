@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 1%
+source-wordcount: '1357'
+ht-degree: 0%
 
 ---
 
@@ -94,7 +94,7 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn 
 
 1. Download en installeer de [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) en [!DNL AEM Forms] as a Cloud Service migratiehulpprogramma van [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) over de gekloonde omgeving. U kunt AEM Package Manager gebruiken om het hulpmiddel en het nut te installeren.
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Content Migration]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Content Migration]**.
 
 1. Open de **[!UICONTROL Prepare Forms for migration]** kaart. In de browser worden vijf opties weergegeven:
    * **[!UICONTROL AEM Forms Assets Migration]**
@@ -105,20 +105,20 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn 
 
 1. Gebruik de optie een voor een om uw [!DNL AEM Forms] activa die verenigbaar zijn met [!DNL AEM] as a Cloud Service:
 
-   1. Tikken **[!UICONTROL AEM Forms Assets Migration]** en tikt u op het volgende scherm **[!UICONTROL Start Migration]**. Het maakt Adaptieve Forms en thema&#39;s op uw [!DNL AEM Forms] milieu verenigbaar met [!DNL AEM] AS A CLOUD SERVICE .
+   1. Selecteren **[!UICONTROL AEM Forms Assets Migration]** en in het volgende scherm selecteert u **[!UICONTROL Start Migration]**. Het maakt Adaptieve Forms en thema&#39;s op uw [!DNL AEM Forms] milieu verenigbaar met [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. Tikken **[!UICONTROL Adaptive Forms Custom Components Migration]** en tikken op de pagina Custom Components Migration **[!UICONTROL Start Migration]**. Elke aangepaste component die is ontwikkeld voor Adaptive Forms en componentoverlays op uw [!DNL AEM Forms] milieu verenigbaar met [!DNL AEM] AS A CLOUD SERVICE .
+   1. Selecteren **[!UICONTROL Adaptive Forms Custom Components Migration]** en selecteert u op de pagina Custom Components Migration de optie **[!UICONTROL Start Migration]**. Elke aangepaste component die is ontwikkeld voor Adaptive Forms en componentoverlays op uw [!DNL AEM Forms] milieu verenigbaar met [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. Tikken **[!UICONTROL Adaptive Forms Template Migration]** en tikken op de pagina Custom Components Migration **[!UICONTROL Start Migration]**. Er worden adaptieve formuliersjablonen gemaakt op `/apps` of `/conf` en gemaakt met AEM Sjablooneditor die compatibel is met [!DNL AEM] AS A CLOUD SERVICE .
+   1. Selecteren **[!UICONTROL Adaptive Forms Template Migration]** en selecteert u op de pagina Custom Components Migration de optie **[!UICONTROL Start Migration]**. Er worden adaptieve formuliersjablonen gemaakt op `/apps` of `/conf` en gemaakt met AEM Sjablooneditor die compatibel is met [!DNL AEM] AS A CLOUD SERVICE .
 
-   1. Tikken **[!UICONTROL AEM Forms Cloud Configurations Migration]** en tikt u vervolgens op de pagina Configuration Migration **[!UICONTROL Start Migration]**. De volgende Cloud Servicen worden bijgewerkt en naar een nieuwe locatie verplaatst:
+   1. Selecteren **[!UICONTROL AEM Forms Cloud Configurations Migration]** en vervolgens op de pagina Configuratie-migratie selecteert u **[!UICONTROL Start Migration]**. De volgende Cloud Servicen worden bijgewerkt en naar een nieuwe locatie verplaatst:
 
       * Cloud Service formuliergegevensmodel
       * Google reCAPTCHA Cloud Service
       * [!DNL Adobe Sign] Cloud Service
       * Adobe Fonts Cloud Service
 
-   1. Tikken **[!UICONTROL Code Editor Script Migration]**, geeft u een locatie op waar herbruikbare functies moeten worden opgeslagen en tikt op **[!UICONTROL Start Migration].
+   1. Selecteren **[!UICONTROL Code Editor Script Migration]**, geeft u een locatie op waar herbruikbare functies moeten worden opgeslagen en selecteert u **[!UICONTROL Start Migration].
 
    De Cloud Service ondersteunt geen regeleditorscripts. De **[!UICONTROL Code editor script migration]** het hulpmiddel zet alle regelmanuscripten op uw milieu in herbruikbare functies om en past de herbruikbare functies op visuele redacteur op aangewezen plaats toe. Deze herbruikbare functies worden opgeslagen in de vorm van clientbibliotheken en zorgen ervoor dat de bestaande functionaliteit behouden blijft. Het gereedschap past automatisch de gegenereerde herbruikbare functies toe op de overeenkomstige adaptieve Forms.
 
@@ -135,7 +135,7 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn 
 Wanneer u van AEM Forms 6.5 naar de cloudservice migreert, kunt u de AEM Forms-specifieke middelen vinden op:
 
 * **Adaptieve Forms**: U kunt Adaptieve formulieren vinden op `/content/dam/formsanddocuments/`en `/content/forms/af`. Voeg bijvoorbeeld paden toe voor een adaptief formulier met de naam WKND-registratie `/content/dam/formsanddocuments/wknd-registration` en `/content/forms/af/wknd-registration`.
-* **Formuliergegevensmodel**: U kunt alle modellen van de Gegevens van de Vorm vinden bij `/content/dam/formsanddocuments-fdm`. Bijvoorbeeld, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Formuliergegevensmodel**: U kunt alle modellen van de Gegevens van de Vorm vinden bij `/content/dam/formsanddocuments-fdm`. Bijvoorbeeld: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Clientbibliotheken**: Het standaardpad van clientbibliotheken is `/etc/clientlibs/fd/theme`.
 

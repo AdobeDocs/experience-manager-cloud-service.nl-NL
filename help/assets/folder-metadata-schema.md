@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 4%
+source-wordcount: '1002'
+ht-degree: 3%
 
 ---
 
@@ -141,9 +141,9 @@ Als u een metagegevensschema voor een map configureert, wordt het pad naar het s
 
 1. Selecteer de [!DNL Experience Manager] logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]**> **[!UICONTROL Folder Metadata Schemas]**.
 1. Selecteer op de pagina Forms van het schema Metagegevens map het schema dat u op een map wilt toepassen.
-1. Selecteer **[!UICONTROL Apply to Folder(s)]** in de werkbalk.
+1. Selecteer **[!UICONTROL Apply to Folders]** in de werkbalk.
 
-1. Selecteer de map waarop u het schema wilt toepassen en selecteer vervolgens **[!UICONTROL Apply]**. Als er al een metagegevensschema op de map is toegepast, verschijnt er een waarschuwingsbericht dat u het bestaande metagegevensschema wilt overschrijven. Selecteer **[!UICONTROL Overwrite]**.
+1. Selecteer de map waarop u het schema wilt toepassen en selecteer vervolgens **[!UICONTROL Apply]**. Als er al een metagegevensschema op de map is toegepast, verschijnt er een waarschuwingsbericht dat u het bestaande metagegevensschema wilt overschrijven. Selecteren **[!UICONTROL Overwrite]**.
 1. Open de eigenschappen van de metagegevens voor de map waarop u het metagegevensschema hebt toegepast.
 
    ![folder_properties](assets/folder_properties.png)
@@ -176,14 +176,14 @@ Geef waarden voor metagegevens op in de verschillende velden en selecteer **[!UI
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)

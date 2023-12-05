@@ -5,9 +5,9 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
 
 ## Instance Manager gebruiken via scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. Selecteer in de bewerkingsmodus een deelvenster en tik vervolgens op ![cmppr](assets/cmppr.png). Schakel in de zijbalk onder Eigenschappen de optie **[!UICONTROL Make Panel Repeatable]**. Geef waarden op voor de **[!UICONTROL Maximum]** en **[!UICONTROL Minimum]** velden.
+1. Selecteer in de bewerkingsmodus een deelvenster en selecteer ![cmppr](assets/cmppr.png). Schakel in de zijbalk onder Eigenschappen de optie **[!UICONTROL Make Panel Repeatable]**. Geef waarden op voor de **[!UICONTROL Maximum]** en **[!UICONTROL Minimum]** velden.
 
    In het veld Maximaal wordt het maximale aantal keer opgegeven dat een deelvenster op de pagina kan worden weergegeven. U kunt -1 opgeven in het veld Maximum aantal om het deelvenster een oneindig aantal keren weer te geven.
 
@@ -35,7 +35,7 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
 
 1. Het bovenliggende element van het deelvenster, dat moet worden herhaald, moet knoppen voor toevoegen en verwijderen bevatten om instanties van de herhaalbare deelvensters te beheren. Voer de volgende stappen uit om knoppen in te voegen in het bovenliggende element en om scripts in de knoppen in te schakelen:
 
-   1. Sleep vanuit het zijpaneel een knopcomponent naar het bovenliggende element van het deelvenster. Selecteer de component en tik op ![bewerkingsregels](assets/edit-rules.png). De regels van de knoop open in de regelredacteur.
+   1. Sleep vanuit het zijpaneel een knopcomponent naar het bovenliggende element van het deelvenster. Selecteer de component en selecteer ![bewerkingsregels](assets/edit-rules.png). De regels van de knoop open in de regelredacteur.
    1. Klik in het venster Regeleditor op **Maken**.
 
       Selecteren **Visuele editor** in de rij Formulierobjecten en -functies.
@@ -95,8 +95,8 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
 
 Een deelvenster heeft verschillende layoutopties. De optie Layout voor accordeonontwerp biedt geen ondersteuning voor herhaalbare deelvensters. Voer de volgende stappen uit naar het herhaalbare deelvenster met de optie Layout voor accordeonontwerp:
 
-1. Tik op het bovenliggende deelvenster dat u wilt herhalen ![cmppr](assets/cmppr.png). U kunt de eigenschappen in de zijbalk zien. In de **Layout** vervolgkeuzelijst, selecteert u **Accordeon**.
-1. Tik op een deelvenster dat moet worden herhaald ![cmppr](assets/cmppr.png). U kunt de deelvenstereigenschappen in de zijbalk zien. De optie **Deelvenster opnieuw instellen** en geeft waarden op voor de **Maximum** en **Minimaal** velden.
+1. Selecteer in het bovenliggende deelvenster dat u wilt herhalen de optie ![cmppr](assets/cmppr.png). U kunt de eigenschappen in de zijbalk zien. In de **Layout** vervolgkeuzelijst, selecteert u **Accordeon**.
+1. Selecteer in een deelvenster dat moet worden herhaald de optie ![cmppr](assets/cmppr.png). U kunt de deelvenstereigenschappen in de zijbalk zien. De optie **Deelvenster opnieuw instellen** en geeft waarden op voor de **Maximum** en **Minimaal** velden.
 
    Nu kunt u de plusknop (+) en de verwijderknop ( ![delete-panel](assets/delete-panel.png)) om de deelvensters toe te voegen en te verwijderen.
 

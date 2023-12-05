@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1136'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ U kunt [Adaptieve Forms](creating-adaptive-form.md) en Adaptieve formulierfragme
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Tik om uit te breiden **[!UICONTROL Select Form Data Model]**. Alle beschikbare formuliergegevensmodellen worden weergegeven.
+1. Selecteren om uit te breiden **[!UICONTROL Select Form Data Model]**. Alle beschikbare formuliergegevensmodellen worden weergegeven.
 
    Selecteer een gegevensmodel.
 
@@ -93,14 +93,14 @@ Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelo
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-Als u een voorbeeld van een adaptief formulier wilt bekijken met voorbeeldgegevens, opent u het adaptieve formulier in de modus Ontwerpen en tikt u op **[!UICONTROL Preview]**.
+Als u een voorbeeld van een adaptief formulier wilt bekijken met voorbeeldgegevens, opent u het adaptieve formulier in de modus Ontwerpen en selecteert u **[!UICONTROL Preview]**.
 
 ## Vooraf invullen met service Formuliergegevensmodel {#prefill}
 
@@ -130,10 +130,10 @@ U kunt ook formulierbijlagen verzenden naar een gegevensbron met binaire objecte
 
 1. Voeg een gegevensmodelobject dat een binaire eigenschap bevat toe aan het formuliergegevensmodel.
 1. Sleep de knop **[!UICONTROL File Attachment]** van de browser Components naar het adaptieve formulier.
-1. Tik om de toegevoegde component te selecteren en tik ![settings_icon](assets/configure-icon.svg) om de browser van Eigenschappen voor de component te openen.
-1. Tik in het veld Bindverwijzing op ![mapSearch_18](assets/folder-search-icon.svg) en navigeer om de binaire eigenschap te selecteren die u in het formuliergegevensmodel hebt toegevoegd. Configureer desgewenst andere eigenschappen.
+1. Selecteer de toegevoegde component en selecteer ![settings_icon](assets/configure-icon.svg) om de browser van Eigenschappen voor de component te openen.
+1. Selecteer in het veld Bindverwijzing de optie ![mapSearch_18](assets/folder-search-icon.svg) en navigeer om de binaire eigenschap te selecteren die u in het formuliergegevensmodel hebt toegevoegd. Configureer desgewenst andere eigenschappen.
 
-   Tikken ![knop controleren](assets/save_icon.svg) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
+   Selecteren ![knop controleren](assets/save_icon.svg) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
 
 1. Schakel in het gedeelte Verzending van de eigenschappen van de container van adaptieve formulieren de optie **[!UICONTROL Submit Form Attachments]**. De bijlage in het binaire-eigenschapveld wordt naar de gegevensbron verzonden bij het verzenden van het formulier.
 

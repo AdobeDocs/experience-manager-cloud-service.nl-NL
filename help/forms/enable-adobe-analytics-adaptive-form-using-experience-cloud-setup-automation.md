@@ -3,9 +3,9 @@ title: Hoe kan Adobe Analytics inschakelen voor een adaptief formulier?
 description: Met de Experience Cloud Setup Automation kunt u Adobe Analytics verbinden met een adaptief formulier om inzichten in de interactie en betrokkenheid van bezoekers bij te houden.
 keywords: Adobe Analytics inschakelen voor een adaptief formulier met Experience Cloud Setup Automation, Adobe Analytics inschakelen in Forms, Adobe Analytics in Adaptive Forms, Forms Analytics Integration, Forms en Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1521'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Voer de onderstaande stappen uit om Adobe Analytics voor uw Adaptive Forms in te
 1. Een configuratiecontainer maken voor cloudservices:
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]**.
    1. Selecteer of creeer een Container van de Configuratie en laat de omslag voor toe **[!UICONTROL Cloud Configurations]**.
-   1. Tikken **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
+   1. Selecteren **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 1. Ga op uw AEM naar **[Forms]** >> **[Forms en Document]**.
 1. Selecteer uw **[!UICONTROL Form]** >> **[!UICONTROL Properties]** in de **[!UICONTROL Configuration Container]** selecteert u de configuratiecontainer die u in het dialoogvenster **[!UICONTROL Configuration Browser]** in Stap 1.
 1. Selecteer het taakvenster op het linkerspoor en klik op **Analyses instellen** en **Adobe Analytics activeren**.

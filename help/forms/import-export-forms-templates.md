@@ -3,10 +3,10 @@ title: Hoe te om Aangepast Forms of PDF forms op een instantie van AEM Forms in 
 description: Leer Adaptieve Forms, PDF forms, thema's en andere ondersteunende middelen migreren van en naar AEM instanties.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 1%
+source-wordcount: '1127'
+ht-degree: 0%
 
 ---
 
@@ -21,15 +21,15 @@ Wanneer u een adaptief formulier exporteert, worden het inhoudsbeleid en de sjab
 Formulieren of gerelateerde elementen downloaden:
 
 1. Aanmelden bij uw [!DNL AEM Forms] -instantie.
-1. Tikken **[!UICONTROL Adobe Experience Manager]** ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > **[!UICONTROL Navigation]** ![kompas](assets/Smock_Compass_18_N.svg) pictogram > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteer de elementen en tik op de **[!UICONTROL Download]** pictogram.
-1. Kies in het (de) downloadmiddel(en) een van de volgende opties en tik **[!UICONTROL Download]**.
+1. Selecteren **[!UICONTROL Adobe Experience Manager]** ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > **[!UICONTROL Navigation]** ![kompas](assets/Smock_Compass_18_N.svg) pictogram > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteer de elementen en selecteer de **[!UICONTROL Download]** pictogram.
+1. Kies in het (de) downloadmiddel(en) een van de volgende opties en selecteer **[!UICONTROL Download]**.
 
    * **Downloaden als CRX-pakket:** Gebruik de optie om alle geselecteerde elementen en gerelateerde afhankelijkheden te downloaden en verplaatsen vanuit een [!DNL AEM Forms] aan een andere instantie. Alle bestanden en mappen worden gedownload als een CRX-pakket, inclusief de formulieren die zijn geschreven in AEM (adaptieve Forms en adaptieve formulierfragmenten), formuliersets, formuliergegevensmodel, formuliersjablonen, PDF-documenten en bronnen waarnaar wordt verwezen (XSD&#39;s en afbeeldingen).
 Het voordeel van het downloaden van elementen als een pakket is dat deze ook worden gedownload waarnaar wordt verwezen door geselecteerde elementen. Als u bijvoorbeeld een adaptief formulier hebt dat gebruikmaakt van een formuliersjabloon, XSD en een afbeelding. Wanneer u dit adaptieve formulier selecteert en het als een pakket downloadt, bevat het gedownloade pakket ook de formuliersjabloon, XSD en de afbeelding. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload.
 
    * **Elementen downloaden als binaire bestanden:** Gebruik de optie om alleen formuliersjablonen (XDP), PDF forms (PDF), documenten (PDF) en bronnen (afbeeldingen, schema&#39;s, opmaakmodellen) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De elementen met binaire elementen, zoals afbeeldingen, PDF en andere ondersteunde indelingen, worden als ZIP-bestand gedownload.
-U kunt geen adaptieve Forms, adaptieve formulierfragmenten, thema&#39;s en formuliersets downloaden met **[!UICONTROL Download asset(s) as binary files]** -optie. Als u deze middelen wilt downloaden, kunt u het beste **[!UICONTROL Download as CRX Package]** -optie.
+U kunt geen adaptieve Forms, adaptieve formulierfragmenten, thema&#39;s en formuliersets downloaden met **[!UICONTROL Download assets as binary files]** -optie. Als u deze middelen wilt downloaden, kunt u het beste **[!UICONTROL Download as CRX Package]** -optie.
 
    De geselecteerde elementen worden gedownload als een archief (.zip-bestand).
 
@@ -43,11 +43,11 @@ U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. Vo
 Een formulier of een verwant element uploaden:
 
 1. Aanmelden bij uw [!DNL AEM Forms] -instantie.
-1. Tikken **[!UICONTROL Adobe Experience Manager]** ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > **[!UICONTROL Navigation]** ![kompas](assets/Smock_Compass_18_N.svg) pictogram > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tik op **[!UICONTROL Create]** > **[!UICONTROL File Upload]**. Er wordt een dialoogvenster weergegeven.
-1. Blader in het dialoogvenster naar het pakket of het archief dat u wilt importeren en selecteer dit. U kunt ook andere ondersteunde bestandstypen selecteren. Tik op **[!UICONTROL Open]**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
+1. Selecteren **[!UICONTROL Adobe Experience Manager]** ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > **[!UICONTROL Navigation]** ![kompas](assets/Smock_Compass_18_N.svg) pictogram > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteren **[!UICONTROL Create]** > **[!UICONTROL File Upload]**. Er wordt een dialoogvenster weergegeven.
+1. Blader in het dialoogvenster naar het pakket of het archief dat u wilt importeren en selecteer dit. U kunt ook andere ondersteunde bestandstypen selecteren. Selecteer **[!UICONTROL Open]**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
 
-   Controleer in het dialoogvenster de details van de te uploaden middelen en tik op **[!UICONTROL Upload]**.
+   Controleer in het dialoogvenster de details van de elementen die worden geüpload en selecteer **[!UICONTROL Upload]**.
 
    Als u een bestaand formulierelement uploadt, wordt het element bijgewerkt.
 
@@ -64,8 +64,8 @@ U kunt thema&#39;s exporteren in [!DNL AEM Forms] die u kunt gebruiken in andere
 Een thema downloaden:
 
 1. Aanmelden bij uw [!DNL AEM Forms] -instantie.
-1. Tikken **[!UICONTROL Adobe Experience Manager]** ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > **[!UICONTROL Navigation]** ![kompas](assets/Smock_Compass_18_N.svg) pictogram > **[!UICONTROL Forms]** > **[!UICONTROL Themes]**.
-1. Selecteer het thema en tik op **[!UICONTROL Download]**. Het thema wordt gedownload als een archief (.zip-bestand).
+1. Selecteren **[!UICONTROL Adobe Experience Manager]** ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > **[!UICONTROL Navigation]** ![kompas](assets/Smock_Compass_18_N.svg) pictogram > **[!UICONTROL Forms]** > **[!UICONTROL Themes]**.
+1. Selecteer het thema en selecteer **[!UICONTROL Download]**. Het thema wordt gedownload als een archief (.zip-bestand).
 
 ## Een thema uploaden {#uploading-a-theme}
 
@@ -81,15 +81,15 @@ To share assets, such as data dictionaries, letters, and document fragments, bet
 
 ### Export Document Fragments, Letters, and/or Data Dictionaries {#export-document-fragments-letters-and-or-data-dictionaries}
 
-1. In the letters, document fragments, or data dictionary pages, tap and select the assets you want to export to a single package, and then tap Queue For Download. The assets are lined-up for export.
+1. In the letters, document fragments, or data dictionary pages, select and select the assets you want to export to a single package, and then select Queue For Download. The assets are lined-up for export.
 1. As required, repeat the above step to add letters, document fragments, and data dictionaries.
-1. Tap **Download**.
+1. Select **Download**.
 1. Correspondence Management displays Download Asset(s) dialog with a list of assets in the export list.
 
    ![export](assets/export.png)
 
-1. To view the dependencies that are exported, Tap Resolve. Or skip to the next step. Even if you do not tap resolve, the dependencies are still exported.
-1. To download the .cmp file, tap **OK**.
+1. To view the dependencies that are exported, Select Resolve. Or skip to the next step. Even if you do not select resolve, the dependencies are still exported.
+1. To download the .cmp file, select **OK**.
 1. Correspondence Management downloads a .cmp file to your computer.
 
    The .cmp file includes the exported assets. You can share the .cmp file with others. Other users can import the .cmp file in a different server to get all the assets in the new server.
@@ -103,9 +103,9 @@ For example, if Correspondence Management has a letter that uses an image and te
 To download all the Correspondence Management assets and related dependencies as a package, complete the following steps:
 
 1. Log in to [!DNL AEM Forms] server as a forms user.
-1. Tap **Adobe Experience Manager** in the Global Navigation bar.
-1. Tap tools ( ![tools](assets/tools.png)) and then tap **Forms**.
-1. Tap **Export Correspondence Management Assets**.
+1. Select **Adobe Experience Manager** in the Global Navigation bar.
+1. Select tools ( ![tools](assets/tools.png)) and then select **Forms**.
+1. Select **Export Correspondence Management Assets**.
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
@@ -113,7 +113,7 @@ To download all the Correspondence Management assets and related dependencies as
 
    ![export-last-run-details](assets/export-last-run-details.png)
 
-1. Tap **Export** and, in the confirm message, tap **OK**.
+1. Select **Export** and, in the confirm message, select **OK**.
 
    After a batch process is complete, the last run details and the link to download the package are updated. This includes information such as the Administrator login and if the batch run successfully or failed. The assets are exported to a package and the Download Exported Package link appears.
 
@@ -121,7 +121,7 @@ To download all the Correspondence Management assets and related dependencies as
    >
    >The Export All Assets process cannot be canceled once initiated. Also, while the export all operation is in process, do not create, delete, modify, or publish any assets or initiate Publish All Assets process.a
 
-1. Tap the **Download Exported Package** link to download the package file.
+1. Select the **Download Exported Package** link to download the package file.
 
    To add the assets in the package to another instance of Correspondence Management, [import the package to an [!DNL AEM Forms] instance](import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
@@ -133,8 +133,8 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 >
 >While importing old Correspondence Management assets for migration, log in using an Admin account. For more information on Migrating old Correspondence Management assets, see [Migrate Correspondence Management assets to AEM 6.1 forms](migration-utility.md).
 
-1. On the data dictionary, letters, or document fragments page, tap **Create &gt; File Upload** and select the .cmp file.
-1. Correspondence Management displays the Import Assets dialog with the list of assets that are imported. Tap **Import**.
+1. On the data dictionary, letters, or document fragments page, select **Create &gt; File Upload** and select the .cmp file.
+1. Correspondence Management displays the Import Assets dialog with the list of assets that are imported. Select **Import**.
 
    After importing the assets, the following properties of the assets are updated while the other properties remain the same:
 
@@ -170,8 +170,8 @@ U kunt mappen gebruiken om elementen te rangschikken en te ordenen. Door documen
 ### Een map maken {#create-a-folder}
 
 1. Aanmelden bij uw [!DNL AEM Forms] -instantie.
-1. Tikken, Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tik op **[!UICONTROL Create]** > **[!UICONTROL Folder]**.
+1. Experience Manager selecteren ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteren **[!UICONTROL Create]** > **[!UICONTROL Folder]**.
 1. Voer de volgende gegevens in:
 
    * **[!UICONTROL Title]**: Naam weergeven voor de map
@@ -185,7 +185,7 @@ U kunt mappen gebruiken om elementen te rangschikken en te ordenen. Door documen
 
    Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutbericht weergeven door de muisaanwijzer op de fout te plaatsen ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) pictogram dat naast het naamveld wordt weergegeven.
 
-   Tik op de gemaakte map om naar de map te gaan en elementen of mappen in de map te maken. Bovendien kunt u een map selecteren en ervoor kiezen deze in de wachtrij te plaatsen voor downloaden, te verwijderen of de naam ervan te bewerken.
+   U kunt de gemaakte map selecteren om naar de map te gaan en elementen of mappen in de map te maken. Bovendien kunt u een map selecteren en ervoor kiezen deze in de wachtrij te plaatsen voor downloaden, te verwijderen of de naam ervan te bewerken.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
@@ -195,17 +195,17 @@ You can use an existing assets to quickly create an asset with similar propertie
 Complete the following steps to create copies of assets and letters:
 
 1. On the relevant assets page, select one or more assets. The UI displays the Copy icon.
-1. Tap **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
-1. Tap **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
+1. Select **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
+1. Select **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
 
    If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
 
 1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
-1. Tap **[!UICONTROL Paste]**. New copies of the copied assets are created.
+1. Select **[!UICONTROL Paste]**. New copies of the copied assets are created.
 
 ## Search {#search-forms}
 
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
+You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also select ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 

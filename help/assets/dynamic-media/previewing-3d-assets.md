@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 1%
+source-wordcount: '615'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Manager genereert standaard miniaturen voor de volgende bestandsindel
 | FBX | Autodesk FBX | application/octet-stream |  |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
 | 3DS | 3D Studio-model | application/x-3ds |  |
-| USDz | Universal Scene Description | model/vnd.usdz+zip |  |
+| USDz | Universele beschrijving van scène | model/vnd.usdz+zip |  |
 
 ## Ondersteunde indelingen voor interactieve 3D-voorvertoning in Experience Manager{#supported-3d-previewing-assets}
 
@@ -85,13 +85,13 @@ Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-ass
    _Interactieve voorvertoning van een 3D-element op de pagina met de elementdetails._
 1. Voer een van de volgende handelingen uit op de pagina met de elementdetails voor het 3D-element:
 
-   | Weergave | Beschrijving | Muishandeling | Handeling op aanraakscherm |
+   | Weergave | Beschrijving | Muishandeling | Handeling op het aanraakscherm |
    | --- | --- | --- | --- |
    | **De camera draaien** | Draai de weergave rond de 3D-scène en -objecten. | Klik met de linkermuisknop en sleep. | Druk met één vinger en sleep. |
    | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
    | **Uw camera zoomen** | Ga in en uit gebieden van de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
-   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
+   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbelselecteren. |
    | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
-   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |   |   |
+   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, klikt u op het pictogram Volledig scherm rechtsonder op de pagina. |   |   |
 
 1. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Close]**.

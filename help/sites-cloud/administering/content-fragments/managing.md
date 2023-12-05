@@ -1,17 +1,17 @@
 ---
-title: Contentfragmenten beheren
+title: Inhoudsfragmenten beheren
 description: Leer hoe te om uw AEM Contentfragmenten van de console en de redacteur, als basis van uw hoofdloze inhoud, of voor paginacreatie te beheren.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2622'
+source-wordcount: '2617'
 ht-degree: 0%
 
 ---
 
-# Contentfragmenten beheren {#managing-content-fragments}
+# Inhoudsfragmenten beheren {#managing-content-fragments}
 
 Leer hoe u uw **Inhoudsfragmenten** in Adobe Experience Manager (AEM) as a Cloud Service, van de toegewijde [Content Fragments-console](#content-fragments-console), en [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Deze inhoudsfragmenten kunnen worden gebruikt als basis voor inhoud zonder kop of voor het ontwerpen van pagina&#39;s.
 
@@ -222,10 +222,10 @@ Een inhoudsfragment maken:
 
 1. De **Nieuw inhoudsfragment** wordt geopend, kunt u vanaf dit punt het volgende opgeven:
 
-   * **Locatie** - deze wordt automatisch voltooid met de huidige locatie, maar u kunt desgewenst een andere locatie selecteren
-   * **Inhoudsfragmentmodel** - selecteer in de vervolgkeuzelijst het model dat u als basis voor het fragment wilt gebruiken
+   * **Locatie** - Automatisch voltooid met de huidige locatie, maar u kunt desgewenst een andere locatie selecteren.
+   * **Inhoudsfragmentmodel** - Selecteer in de vervolgkeuzelijst het model dat u als basis voor het fragment wilt gebruiken.
    * **Titel**
-   * **Naam** - dit wordt automatisch voltooid op basis van de **Titel**, maar u kunt deze indien nodig bewerken
+   * **Naam** - Automatisch voltooid op basis van de **Titel**, maar u kunt deze desgewenst bewerken.
    * **Beschrijving**
 
    ![Dialoogvenster Nieuw inhoudsfragment](assets/cf-managing-new-cf-dialog.png)

@@ -3,9 +3,9 @@ title: Hoe kunnen we een op kerncomponenten gebaseerde adaptieve vorm vertalen?
 description: Leer een formuliergegevensmodel te maken in AEM Forms, het model te testen met voorbeeldgegevens en services en verschillende opties voor een model te configureren.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ Met gelokaliseerde formulieren hebt u een groter publiek in verschillende regio&
 
 De vertaalservice zet uw inhoud direct om in Adaptief formulier en [Document van record](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service is vooraf geconfigureerd voor het gebruik van een proefversie van Microsoft Translator voor machinevertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw Adaptieve Forms en Document of Record:
 
-1. Selecteer een formulier in de gebruikersinterface van AEM Forms en tik op **[!UICONTROL Add Dictionary]** -optie.
+1. Selecteer in de gebruikersinterface van AEM Forms een formulier en selecteer de **[!UICONTROL Add Dictionary]** -optie.
 1. In Add Woordenboek aan het scherm van het Project van de Vertaling, voor **[!UICONTROL Project]** option
 
-   * Als u een vertaalproject wilt maken, selecteert u de optie **[!UICONTROL Create a new translation project]** en in de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld, `Government Reference Site - German locale.`
+   * Als u een vertaalproject wilt maken, selecteert u de optie **[!UICONTROL Create a new translation project]** en in de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld: `Government Reference Site - German locale.`
    * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]**.
 1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
 1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**.
@@ -31,7 +31,7 @@ De vertaalservice zet uw inhoud direct om in Adaptief formulier en [Document van
    ![Vertaling starten](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
 1. Nadat de status is gewijzigd in **Goedgekeurd** op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Voltooid**.
 
-1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klik op **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u het `afAcceptLang=<locale code>` naar de URL van het formulier. Voeg bijvoorbeeld `afAcceptLang=de`om de Duitse versie van het formulier te openen.
+1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klikken **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u het `afAcceptLang=<locale code>` naar de URL van het formulier. Voeg bijvoorbeeld `afAcceptLang=de`om de Duitse versie van het formulier te openen.
 
 
    >[!NOTE]
@@ -49,7 +49,7 @@ De vertaalservice zet uw inhoud direct om in Adaptief formulier en [Document van
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 -->
 
@@ -61,10 +61,10 @@ Voor vertaling wordt een woordenboek met bestanden in XLIFF-indeling gedeeld met
 
 Voer de volgende stappen uit om een formulier en het bijbehorende document te lokaliseren met behulp van Human Translators:
 
-1. Selecteer een formulier in de gebruikersinterface van AEM Forms en tik op **[!UICONTROL Add Dictionary]** -optie.
+1. Selecteer in de gebruikersinterface van AEM Forms een formulier en selecteer de **[!UICONTROL Add Dictionary]** -optie.
 1. In Add Woordenboek aan het scherm van het Project van de Vertaling, voor **[!UICONTROL Project]** option
 
-   * Als u een vertaalproject wilt maken, selecteert u de optie **[!UICONTROL Create a new translation project]** en in de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld, `Government Reference Site - German locale.`
+   * Als u een vertaalproject wilt maken, selecteert u de optie **[!UICONTROL Create a new translation project]** en in de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld: `Government Reference Site - German locale.`
    * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]**.
 1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
 1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**.
@@ -82,7 +82,7 @@ Voer de volgende stappen uit om een formulier en het bijbehorende document te lo
 
    ![Omzetbestand importeren](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
-1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klik op **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u het `afAcceptLang=<locale code>` naar de URL van het formulier. Voeg bijvoorbeeld `afAcceptLang=de`om de Duitse versie van het formulier te openen.
+1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klikken **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u het `afAcceptLang=<locale code>` naar de URL van het formulier. Voeg bijvoorbeeld `afAcceptLang=de`om de Duitse versie van het formulier te openen.
 
 ## Zie ook {#see-also}
 

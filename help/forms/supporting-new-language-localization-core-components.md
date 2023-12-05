@@ -2,9 +2,9 @@
 title: Hoe voeg ik ondersteuning voor nieuwe landinstellingen toe aan een adaptief formulier op basis van kerncomponenten?
 description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formulier.
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1333'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Ga als volgt te werk als u ondersteuning voor een nieuwe landinstelling wilt toe
    git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/
    ```
 
-   Vervangen `<my-org>` en `<my-program>` in de bovenstaande URL met de naam van uw organisatie en het programma. Voor gedetailleerde instructies voor het verkrijgen van de naam van de organisatie, de naam van het programma of het volledige pad van uw Git-opslagplaats en de gegevens die nodig zijn om de opslagplaats te klonen, raadpleegt u de [Toegang tot it](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) artikel.
+   Vervangen `<my-org>` en `<my-program>` in de bovenstaande URL met de naam van uw organisatie en het programma. Voor gedetailleerde instructies voor het verkrijgen van de naam van de organisatie, de naam van het programma of het volledige pad van uw Git-opslagplaats en de gegevens die nodig zijn om de opslagplaats te klonen, raadpleegt u [Toegang tot it](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) artikel.
 
    Na succesvolle voltooiing van bevel, een omslag `<my-program>` wordt gemaakt. Het bevat de inhoud die is gekloond uit de Git-opslagplaats. In de rest van het artikel wordt de map aangeduid als: `[AEM Forms as a Cloud Service Git repository]`.
 

@@ -3,9 +3,9 @@ title: Afbeeldingen bewerken
 description: Afbeeldingen bewerken met [!DNL Adobe Photoshop Express] Aangedreven opties en sparen bijgewerkte beelden als versies.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Afbeeldingen bewerken met [!DNL Adobe Express] ingesloten editor, voert u de ond
 
    ![Ingesloten editor voor Adobe Express](assets/embedded-editor.png)
 
-   U kunt de functionaliteit van [!DNL Adobe Express] om alle bewerkingen op afbeeldingen uit te voeren, zoals [formaat afbeelding wijzigen](https://helpx.adobe.com/in/express/using/resize-image.html), [achtergrondkleur verwijderen of wijzigen](https://helpx.adobe.com/in/express/using/remove-background.html), [afbeelding uitsnijden](https://helpx.adobe.com/in/express/using/crop-image.html)en nog veel meer.
+   U kunt de functies van [!DNL Adobe Express] om alle bewerkingen op afbeeldingen uit te voeren, zoals [formaat afbeelding wijzigen](https://helpx.adobe.com/in/express/using/resize-image.html), [achtergrondkleur verwijderen of wijzigen](https://helpx.adobe.com/in/express/using/remove-background.html), [afbeelding uitsnijden](https://helpx.adobe.com/in/express/using/crop-image.html)en nog veel meer.
 
 1. Nadat u de afbeeldingsbewerkingen hebt voltooid, kunt u een element downloaden als een nieuw element of het element opslaan als een nieuwe versie.
 

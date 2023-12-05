@@ -3,9 +3,9 @@ title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ De **Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het g
 
 1. Van de **Programmaoverzicht** pagina, selecteert u de **Pijpleidingen** tab naar **Pijpleidingen** venster.
 
-1. Hier kunt u een lijst van alle pijpleidingen voor het programma zien evenals begin en stop pijpleidingsuitvoering zoals u in **Pijppijplijnkaart**.
+1. Hier ziet u een lijst met alle pijpleidingen voor het programma en start en stop de uitvoering van de pijpleiding zoals u in het dialoogvenster **Pijppijplijnkaart**.
 
 Als een pijpleiding uitvoert, beweegt over zijn **Status** de kolom zal details over de uitvoering openbaren.
 

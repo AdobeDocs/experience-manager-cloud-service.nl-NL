@@ -2,10 +2,10 @@
 title: JSON-exportfunctie voor services voor inhoud
 description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden gebruikt.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 2%
+source-wordcount: '383'
+ht-degree: 0%
 
 ---
 
@@ -67,8 +67,8 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
 ### Aanvullende informatie {#further-information}
 
-* HTTP-API voor assets
-   * [HTTP-API voor assets](/help/assets/developer-reference-material-apis.md)
+* Elementen HTTP-API
+   * [Elementen HTTP-API](/help/assets/developer-reference-material-apis.md)
 * Modellen voor verkopen:
    * [Sling Models - Associerend een modelklasse met een middeltype sinds 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM met JSON:
@@ -76,7 +76,7 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
 ## Verwante documentatie {#related-documentation}
 
-* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

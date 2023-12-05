@@ -3,9 +3,9 @@ title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
 description: Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1754'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 >
 >U kunt tot de vraagredacteur van één van beiden toegang hebben:
 >
->* **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
+>* **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**
 >* rechtstreeks; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]

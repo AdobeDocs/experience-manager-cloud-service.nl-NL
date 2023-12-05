@@ -2,9 +2,9 @@
 title: Modellen voor inhoudsfragmenten maken - Instellingen zonder kop
 description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 1. Selecteer de map die u hebt gemaakt door uw configuratie te maken.
 
    ![De map Modellen](../assets/models-folder.png)
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 1. Geef een **Modeltitel**, **Tags** en **Beschrijving**. U kunt ook selecteren/deselecteren **Model inschakelen** om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
 
    ![Een model maken](../assets/models-create.png)
@@ -49,7 +49,7 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
    * niet geselecteerd - het nieuwe model wordt gecreeerd in **Concept** mode
 
 1. Als dit nog niet het geval is, moet het model **Ingeschakeld** om het te gebruiken.
-   1. Selecteer het model dat u net hebt gemaakt en selecteer **Inschakelen**.
+   1. Selecteer het model dat u hebt gemaakt en selecteer **Inschakelen**.
 
       ![Het model inschakelen](../assets/models-enable.png)
    1. Bevestig het toelaten van het model door te tikken of te klikken **Inschakelen** in het bevestigingsdialoogvenster.

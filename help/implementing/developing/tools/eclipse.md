@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: Leer hoe u de AEM Developer Tools for Eclipse, een Eclipse-plug-in op basis van de Eclipse-plug-in voor Apache Sling, gebruikt.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 1%
+source-wordcount: '1138'
+ht-degree: 0%
 
 ---
 
@@ -196,7 +196,7 @@ Als u klaar bent, moet het pakket op de instantie worden uitgevoerd en als u het
 
 Als u een pakket uit uw project wilt opnieuw bouwen, klik met de rechtermuisknop aan `PROJECT.ui.apps` of `PROJECT.ui.content` en kiest u **Uitvoeren als** > **Maven Install**.
 
-U hebt nu een doelmap gemaakt met daarin uw pakket (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Er is nu een doelmap gemaakt met het pakket in de map (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Problemen oplossen {#troubleshooting}
 

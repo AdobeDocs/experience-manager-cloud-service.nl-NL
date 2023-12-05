@@ -1,9 +1,9 @@
 ---
 title: Wat zijn adaptieve formulierexpressies?
 description: Met Adaptieve Forms-expressies kunt u automatische validatie, berekening en de zichtbaarheid van een sectie in- of uitschakelen.
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2683'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ JavaScript™ is de expressietaal van Adaptive Forms. Alle expressies zijn geldi
 
 ## Aanbevolen werkwijzen voor het schrijven van expressies {#best-practices-for-writing-expressions}
 
-* Wanneer u expressies schrijft, kunt u de naam van een veld of deelvenster gebruiken om velden en deelvensters te openen. Gebruik de eigenschap value om toegang te krijgen tot de waarde van een veld. Bijvoorbeeld, `field1.value`
+* Wanneer u expressies schrijft, kunt u de naam van een veld of deelvenster gebruiken om velden en deelvensters te openen. Gebruik de eigenschap value om toegang te krijgen tot de waarde van een veld. Bijvoorbeeld: `field1.value`
 * Gebruik unieke namen voor velden en deelvensters in het formulier. Hiermee voorkomt u mogelijke conflicten met veldnamen die tijdens het schrijven van expressies worden gebruikt.
 * Gebruik tijdens het schrijven van expressies met meerdere regels een puntkomma om een instructie te beëindigen.
 
@@ -63,7 +63,7 @@ U kunt de toegangsuitdrukking gebruiken om een gebied toe te laten of onbruikbaa
 
 ### Expressie berekenen {#calculate-expression}
 
-De expressie calculate wordt gebruikt om de waarde van een veld automatisch te berekenen met behulp van een expressie. In dergelijke expressies wordt doorgaans de eigenschap value van een ander veld gebruikt. Bijvoorbeeld, `field2.value + field3.value`. Wanneer de waarde van `field2`of `field3`wijzigt, wordt de expressie opnieuw geactiveerd en wordt de waarde opnieuw berekend.
+De expressie calculate wordt gebruikt om de waarde van een veld automatisch te berekenen met behulp van een expressie. In dergelijke expressies wordt doorgaans de eigenschap value van een ander veld gebruikt. Bijvoorbeeld: `field2.value + field3.value`. Wanneer de waarde van `field2`of `field3`wijzigt, wordt de expressie opnieuw geactiveerd en wordt de waarde opnieuw berekend.
 
 **Van toepassing op**: velden
 
@@ -138,7 +138,7 @@ Als in het bovenstaande voorbeeld de niet-lege waarde niet overeenkomt met het p
 
 >[!NOTE]
 >
->Als u een validatie-expressie schrijft voor een niet-verplicht of verplicht veld, wordt de expressie geëvalueerd, ongeacht de zichtbaarheidsstatus van het veld. Als u de validatie voor de verborgen velden wilt stoppen, stelt u de eigenschap validationsDisabled in het script Initialization of Value Commit in op true. Bijvoorbeeld, `this.validationsDisabled=true`
+>Als u een validatie-expressie schrijft voor een niet-verplicht of verplicht veld, wordt de expressie geëvalueerd, ongeacht de zichtbaarheidsstatus van het veld. Als u de validatie voor de verborgen velden wilt stoppen, stelt u de eigenschap validationsDisabled in het script Initialization of Value Commit in op true. Bijvoorbeeld: `this.validationsDisabled=true`
 
 ### Waarde script vastleggen {#value-commit-script}
 

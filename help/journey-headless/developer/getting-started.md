@@ -2,9 +2,9 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3057'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,11 @@ AEM Headless bouwt voort op deze technische basis door krachtige tools te bieden
 
 De headless mogelijkheden van AEM zijn gebaseerd op een paar zeer belangrijke eigenschappen. Deze worden in latere delen van de reis uitgebreid toegelicht. Het is nu belangrijk om alleen maar te weten wat ze doen en wat ze noemen.
 
-### Modellen van contentfragmenten {#content-fragment-models}
+### Modellen van inhoudsfragmenten {#content-fragment-models}
 
 Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u maakt en beheert in AEM. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een van de door u gedefinieerde modellen van inhoudsfragmenten die u als hulplijnen bij het maken van inhoud gebruikt.
 
-### Contentfragmenten {#content-fragments}
+### Inhoudsfragmenten {#content-fragments}
 
 Met inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties en via meerdere kanalen.
 
@@ -181,7 +181,7 @@ Maak een plan voor wat u nodig hebt voor het vertalen van inhoud.
 
 Wis over uw workflow voor het bijwerken van inhoud. Wat is het goedkeuringsproces dat het systeem moet ondersteunen? Kunnen AEM workflows worden gebruikt om dit proces te automatiseren?
 
-Let erop dat uw [inhoudshiërarchie](#content-hierarchy) kan worden gebruikt om het vertalen te vergemakkelijken.
+Uw [inhoudshiërarchie](#content-hierarchy) kan worden gebruikt om het vertalen te vergemakkelijken.
 
 Zie de [extra middelen](#additional-resources) voor aanvullende documentatie over AEM workflows en vertaalhulpmiddelen, waaronder koppelingen naar de AEM Headless Translation Journey.
 

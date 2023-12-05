@@ -1,15 +1,15 @@
 ---
-title: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
-description: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
+title: AEM - Integratie van de handel met veelgestelde vragen over Commerce integration framework
+description: AEM - Integratie van de handel met veelgestelde vragen over Commerce integration framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
-# AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
+# AEM - Integratie van de handel met veelgestelde vragen over Commerce integration framework
 
 ## 1. Wordt CIF GraphQL alleen gebruikt voor handel of is dit beschikbaar voor het opvragen van inhoud die is geschreven op AEM JCR?
 
@@ -23,7 +23,7 @@ Of als tijdelijke oplossing kunt u productelementen (afbeeldingen) opslaan in AE
 
 ## 3. Maakt het uit waar de handelsoplossing wordt ingezet? (Op prem of in de cloud)
 
-Nee, het maakt niet uit waar uw handelsoplossing wordt geïmplementeerd. CIF en de AEM storefront werken ongeacht het plaatsingsmodel. Als de oplossing echter wordt geïmplementeerd met de aanbevolen E2E-referentiearchitectuur, kunnen E2E-tests worden uitgevoerd met prestatie-KPI&#39;s die een typisch bedrijfsklantprofiel vertegenwoordigen. Deze methode biedt aanvullende informatie die als benchmark kan worden gebruikt.
+Nee, het maakt niet uit waar uw handelsoplossing wordt geïmplementeerd. CIF en de AEM werken ongeacht het implementatiemodel. Als de oplossing echter wordt geïmplementeerd met de aanbevolen E2E-referentiearchitectuur, kunnen E2E-tests worden uitgevoerd met prestatie-KPI&#39;s die een typisch bedrijfsklantprofiel vertegenwoordigen. Deze methode biedt aanvullende informatie die als benchmark kan worden gebruikt.
 
 ## 4. Hoe worden cataloguspagina&#39;s of productpagina&#39;s in AEM gemaakt? Hoe blijven ze in AEM?
 
@@ -31,9 +31,9 @@ Cataloguspagina&#39;s en productpagina&#39;s worden dynamisch gemaakt en in het 
 
 ## 5. Wanneer u productgegevens in uw handelsoplossing bijwerkt, is dat een druk in real time aan AEM? Of is het een batchproces?
 
-De toe:voegen-op CIF gebruikt met AEM Cloud Service laat gegevens toe om van de handelsoplossing aan AEM op bestelling te stromen. Daarom is dit geen real-time duw of een partijproces wanneer er een update in uw handelsoplossing is.
+De CIF toe:voegen-op gebruikt met AEM Cloud Service laat gegevens toe om van de handelsoplossing aan AEM op bestelling te stromen. Daarom is dit geen real-time duw of een partijproces wanneer er een update in uw handelsoplossing is.
 
-## 6. Welke catalogusgrootte AEM CIF-ondersteuning?
+## 6. Welke catalogusgrootte AEM met CIF ondersteuning?
 
 Dit hangt af van een paar extra aspecten die u in overweging moet nemen. Wat is de cacheverhouding van uw catalogusgegevens en -pagina&#39;s? Hoeveel gezamenlijke verzoeken verwacht u tijdens piekuren? Hoe scalable zijn APIs van uw handelsoplossingen?
 
@@ -53,9 +53,9 @@ Adobe raadt aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s
 
 Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar er is geen uniforme zoekopdracht met inhoud. Deze eigenschap is klant-specifiek en beter opgelost op een project-specifiek niveau.
 
-## 11. Hoe werkt zoeken met AEM en handel met behulp van CIF?
+## 11. Hoe werkt Zoeken met AEM en handel met behulp van CIF?
 
-CIF verstrekt de bar van het Onderzoek en de componenten van het Resultaat van het Onderzoek. De component van de bar van het Onderzoek verzendt een verzoek van GraphQL met de onderzoekstermijn naar de handelsoplossing die dan een productlijst terugkeert die productnaam, prijs, SLUG, etc. omvat. De component van het Resultaat van het Onderzoek toont dan de onderzoeksresultaten in een galeriemening op een pagina van het onderzoeksresultaat die in AEM wordt gecreeerd. De zoekfunctie ondersteunt standaard zoeken in volledige tekst. Wij gebruiken de sleutel SLUG/url om een verwijzing naar PDP te bouwen.
+CIF biedt componenten Zoekbalk en Zoekresultaat. De component van de bar van het Onderzoek verzendt een verzoek van GraphQL met de onderzoekstermijn naar de handelsoplossing die dan een productlijst terugkeert die productnaam, prijs, SLUG, etc. omvat. De component van het Resultaat van het Onderzoek toont dan de onderzoeksresultaten in een galeriemening op een pagina van het onderzoeksresultaat die in AEM wordt gecreeerd. De zoekfunctie ondersteunt standaard zoeken in volledige tekst. Wij gebruiken de sleutel SLUG/url om een verwijzing naar PDP te bouwen.
 
 ## 12. Hoe kunnen productgegevens in MSM&#39;s of vertalingen worden gebruikt?
 
@@ -65,7 +65,7 @@ Productgegevens zijn al vertaald in PIM of in Adobe Commerce. De integratie AEM 
 
 Adobe beveelt aan om marketinggerelateerde gegevens en inhoud in AEM te beheren. Decoreer productgegevens van uw handelsoplossing met extra attributen gebruikend de Fragmenten van de Inhoud of creeer en verbind de Fragmenten van de Ervaring voor ongestructureerde inhoud met uw producten.
 
-## 14. Hoe kunnen wij naleving PCI verzekeren wanneer het gebruiken van AEM voor de volledige presentatielaag?
+## 14. Hoe kan naleving PCI worden gewaarborgd wanneer het gebruiken van AEM voor de volledige presentatielaag?
 
 Adobe raadt aan gebruik te maken van abstracte betalingsmethoden. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch de Adobe of de handelsoplossingen kaarthoudergegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Zie voor meer informatie over Adobe Commerce PCI-compatibiliteit [PGB-compatibiliteitseisen](https://business.adobe.com/products/magento/pci-compliance.html).
 

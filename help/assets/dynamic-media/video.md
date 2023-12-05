@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '9329'
+source-wordcount: '9322'
 ht-degree: 1%
 
 ---
@@ -315,10 +315,10 @@ In de volgende tabel wordt beschreven hoe de resultaten van de formule worden om
 
 | Formulerresultaat | Hoogte-breedteverhouding |
 |--- |--- |
-| 1.33 | 4:3 |
-| 0.75 | 3:4 |
-| 1.78 | 16:9 |
-| 0.56 | 9:16 |
+| 1,33 | 4:3 |
+| 0,75 | 3:4 |
+| 1,78 | 16:9 |
+| 0,56 | 9:16 |
 
 Een video van 1440 x 1080 hoogte heeft bijvoorbeeld een hoogte-breedteverhouding van 1440/1080 of 1,33. In dit geval kiest u een voorinstelling voor videocodering met een hoogte-breedteverhouding van 4:3 om het videobestand te coderen.
 
@@ -360,8 +360,8 @@ Resolutie en gegevenssnelheid zijn twee geïntegreerde gekoppelde factoren die d
 
 | Resolutie | Pixels per frame |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 x 240 | 76.800 |
+| 640 x 480 | 307.200 |
 
 Het bestand van 640 x 480 heeft vier keer zoveel pixels per frame. Als u voor deze twee voorbeeldresoluties dezelfde gegevenssnelheid wilt bereiken, past u viermaal de compressie toe op het bestand van 640 x 480, waardoor de kwaliteit van de video kan afnemen. Daarom levert een videogegevenssnelheid van 250 Kbps beelden van hoge kwaliteit bij een resolutie van 320 x 240, maar niet bij een resolutie van 640 x 480.
 
@@ -619,7 +619,7 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
    ![Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen van de video.*
 
 1. (Optioneel) Ga als volgt te werk om een of meer ondertitelingsbestanden (of bijschriftbestanden) aan een video toe te voegen:
-   * Selecteer **[!UICONTROL Upload Subtitles]**.
+   * Selecteren **[!UICONTROL Upload Subtitles]**.
    * Navigeer naar en selecteer een of meer .vtt-bestanden (videoteksttracks) en open deze.
    * Als ondertitels zichtbaar moeten zijn op de mediaspeler, kunt u *moet* vereiste details (metagegevens) toevoegen over *elk* ondertitelingsbestand dat u hebt geüpload. Selecteer het potloodpictogram rechts van de bestandsnaam van een ondertitel. In de **Ondertitel bewerken** voert u de volgende vereiste gegevens over het bestand in en selecteert u **[!UICONTROL Save]**. Herhaal dit proces voor elk ondertitelbestand dat u hebt geüpload:
 
@@ -628,12 +628,12 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
      | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra ondertitelingsbestanden en audiotrackbestanden. |
      | Taal | Selecteer de taal van de ondertitel. |
      | Type | Selecteer het type ondertitel dat u gebruikt.<br>**Ondertitel** - De ondertiteltekst die wordt weergegeven met de video die het dialoogvenster vertaalt of transcripeert.<br>**Bijschrift** - De bijschrifttekst bevat ook achtergrondgeluiden, sprekersdifferentiatie en andere relevante informatie, samen met de vertaling of transcriptie van de dialoog, waardoor de inhoud toegankelijker wordt voor doven of slechthorenden. |
-     | Label | De tekst die voor de naam van de ondertitel wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld, `English (CC)`. |
+     | Label | De tekst die voor de naam van de ondertitel wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld: `English (CC)`. |
 
      U kunt metagegevens van ondertitels indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
 1. (Optioneel) Ga als volgt te werk om een of meer audiotracks aan een video toe te voegen:
-   * Selecteer **[!UICONTROL Upload Audio Tracks]**.
+   * Selecteren **[!UICONTROL Upload Audio Tracks]**.
    * Navigeer naar en selecteer een of meer MP3-bestanden en open deze.
    * Voor audiotracks die zichtbaar moeten zijn in het dialoogvenster **[!UICONTROL Select audio or caption]** op de mediaspeler, kunt u *moet* vereiste gegevens toevoegen over *elk* audiotrackbestand dat u hebt toegevoegd. Selecteer het potloodpictogram rechts van de bestandsnaam van een audiotrack. In de **Audiotrack bewerken** voert u de volgende vereiste gegevens in en selecteert u **[!UICONTROL Save]**. Herhaal dit proces voor elk audiospoordossier dat u uploadde.
 
@@ -642,7 +642,7 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
      | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra audiotrackbestanden of ondertitelingsbestanden. |
      | Taal | Selecteer de taal van de audiotrack. |
      | Type | Selecteer het type audiotrack dat u gebruikt.<br>**Origineel** - De audiotrack die oorspronkelijk aan de video was gekoppeld en die werd weergegeven als `[Original]` op het etiket met `English` taal die standaard is geselecteerd. while **[!UICONTROL Label]** en **[!UICONTROL Language]** kan worden gewijzigd in het dialoogvenster **[!UICONTROL Edit Audio Track]** de oorspronkelijke waarden als de primaire video opnieuw wordt verwerkt.<br>**Standaard** - Een add-on audiotrack voor een andere taal dan het origineel.<br>**Audiobeschrijving** - Een audiotrack die ook een beschrijvende beschrijving van niet-verbale handelingen en bewegingen in de video bevat, waardoor inhoud toegankelijker wordt voor personen met een visuele handicap. |
-     | Label | De tekst die als naam van de audiotrack wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld, `English [Original]`. Het label van de audio die aan een video is gekoppeld, is ingesteld op `[Original|` standaard. |
+     | Label | De tekst die als naam van de audiotrack wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld: `English [Original]`. Het label van de audio die aan een video is gekoppeld, is ingesteld op `[Original|` standaard. |
 
      U kunt deze metagegevens van de audiotrack indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
@@ -726,7 +726,7 @@ Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardau
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
 1. Selecteer op de pagina Eigenschappen de optie **[!UICONTROL Subtitles & Audio Tracks]** tab.
 1. Onder de **Audiotracks** Selecteer het audiotrackbestand dat u wilt instellen als de standaardnaam van de video.
-1. Selecteer **[!UICONTROL Set as default]**.
+1. Selecteren **[!UICONTROL Set as default]**.
 In de **Instellen als standaard** dialoogvenster selecteert u **[!UICONTROL Replace]**.
 
    ![De kop Audiotracks bevat een geselecteerde naam voor het audiotrackbestand en de gemarkeerde knop &quot;Instellen als standaard&quot;.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*De standaardaudiotrack voor een video instellen.*
@@ -813,7 +813,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
    | Een aparte map maken voor elk element | Maak een map voor elk ondertitelbestand of audiotrackbestand dat u hebt geselecteerd om te downloaden. |
    | E-mail | Gebruik uw standaard e-mailprogramma om het .zip-bestand naar een opgegeven e-mailadres te verzenden. |
    | Assets | Hiermee geeft u het aantal bestanden op dat u downloadt en de gecombineerde totale grootte van alle geselecteerde bestanden. Als u deze optie uitschakelt, wordt het dialoogvenster **[!UICONTROL Download]** , zodat u geen bestanden kunt downloaden. |
-1. Selecteer **[!UICONTROL Download]**.
+1. Selecteren **[!UICONTROL Download]**.
 1. Publiceer de video. Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
 
@@ -999,7 +999,7 @@ De mogelijkheid om een videominiatuur aan te passen is alleen beschikbaar nadat 
    * Een afbeeldingselement gebruiken als de nieuwe miniatuur:
 
       * Selecteer op de werkbalk de optie **[!UICONTROL Select Thumbnail from Assets]**.
-      * Selecteer **[!UICONTROL Select Thumbnail]**.
+      * Selecteren **[!UICONTROL Select Thumbnail]**.
       * Navigeer naar een eerder geüpload en gepubliceerd afbeeldingselement dat u wilt gebruiken. De grootte van het element wordt automatisch gewijzigd om te dienen als miniatuurafbeelding voor de video.
       * Selecteer het afbeeldingselement en selecteer vervolgens **[!UICONTROL Select]**.
 
@@ -1063,7 +1063,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
    if the directory panel is not visible, you may need to select the >> icon to the left of the Home tab.
 
-1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
+1. On the lower-right panel, in the Properties tab, double-select `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
 
     * Select the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.

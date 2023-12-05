@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 1%
+source-wordcount: '734'
+ht-degree: 0%
 
 ---
 
@@ -27,8 +27,8 @@ U kunt de algemene weergave en stijl van een adaptief formulier definiëren door
 
 Inline stijlen toevoegen aan een component:
 
-1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Tik op de pagina op ![canvas-drop-down](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
-1. Selecteer een component op de pagina en tik op de knop Bewerken ![bewerken, knop](assets/edit.svg). Stijleigenschappen worden geopend in de zijbalk.
+1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Als u de modus wilt wijzigen in de opmaakmodus, selecteert u op de pagina-werkbalk de optie ![canvas-drop-down](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
+1. Selecteer een component op de pagina en selecteer de knop Bewerken ![bewerken, knop](assets/edit.svg). Stijleigenschappen worden geopend in de zijbalk.
 
    U kunt ook componenten selecteren in de boomstructuur van de formulierhiërarchie in het zijpaneel. De boomstructuur in de formulierhiërarchie is beschikbaar als formulierobjecten op de zijbalk.
 
@@ -46,7 +46,7 @@ Inline stijlen toevoegen aan een component:
    * [!UICONTROL Advanced] (Hiermee kunt u aangepaste CSS voor de component schrijven)
 
 1. Op dezelfde manier kunt u stijlen toepassen op andere delen van een component, zoals [!UICONTROL Widget], [!UICONTROL Caption], en [!UICONTROL Help].
-1. Tikken **[!UICONTROL Done]** om de wijzigingen te bevestigen of **[!UICONTROL Cancel]** om de wijzigingen te verwijderen.
+1. Selecteren **[!UICONTROL Done]** om de wijzigingen te bevestigen of **[!UICONTROL Cancel]** om de wijzigingen te verwijderen.
 
 ## Voorbeeld: inline stijlen voor een veldcomponent {#example-inline-styles-for-a-field-component}
 
@@ -81,7 +81,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
   <tr>
    <td><p>Label</p> </td>
    <td><p>Dimensionen en positie &gt; breedte</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100 px</p> </td>
    <td><p>Hiermee stelt u de breedte in op 100 px voor het label</p> </td>
   </tr>
   <tr>
@@ -111,9 +111,9 @@ Na de bovenstaande stappen kunt u andere componenten selecteren en opmaken, zoal
 
 ## Stijlen kopiëren en plakken {#copy-paste-styles}
 
-U kunt ook een stijl van de ene component naar een andere component in een adaptief formulier kopiëren en plakken. In de **[!UICONTROL Style]** tik op de component en tik op het pictogram Kopiëren ![Kopiëren](assets/property-copy-icon.svg).
+U kunt ook een stijl van de ene component naar een andere component in een adaptief formulier kopiëren en plakken. In de **[!UICONTROL Style]** Selecteer de component en selecteer het pictogram Kopiëren ![Kopiëren](assets/property-copy-icon.svg).
 
-Tik op de andere component van hetzelfde type en tik op het pictogram Plakken ![Kopiëren](assets/Smock_Paste_18_N.svg) om de gekopieerde stijl te plakken. U kunt ook op het pictogram Stijl wissen tikken ![Kopiëren](assets/clear-style-icon.svg) om de toegepaste stijl te wissen.
+Selecteer de andere component van hetzelfde type en selecteer het pictogram Plakken ![Kopiëren](assets/Smock_Paste_18_N.svg) om de gekopieerde stijl te plakken. U kunt ook het pictogram Stijl wissen selecteren ![Kopiëren](assets/clear-style-icon.svg) om de toegepaste stijl te wissen.
 
 ## Stijlen instellen voor verschillende statussen van een component {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ U kunt stijlen instellen voor verschillende toestanden van een componenttype. De
 
 Stijl definiëren voor een status van een component:
 
-1. In de **[!UICONTROL Style]** tik op de component en tik op het pictogram Bewerken ![Bewerken](assets/Smock_Edit_18_N.svg).
+1. In de **[!UICONTROL Style]** Selecteer de component en selecteer het pictogram Bewerken ![Bewerken](assets/Smock_Edit_18_N.svg).
 
 1. Selecteer de status voor de component met de opdracht **[!UICONTROL State]** vervolgkeuzelijst.
 
    ![Status selecteren](assets/select-state.png)
 
-1. De stijl definiëren voor de geselecteerde status van de component en tikken ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+1. Definieer de opmaak voor de geselecteerde status van de component en selecteer ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
 
-U kunt ook de status van succes en fout simuleren. Tik op het pictogram Uitvouwen om het dialoogvenster **[!UICONTROL Simulate Success]** en **[!UICONTROL Simulate Error]** opties.
+U kunt ook de status van succes en fout simuleren. Selecteer het pictogram Uitvouwen om het dialoogvenster **[!UICONTROL Simulate Success]** en **[!UICONTROL Simulate Error]** opties.
 
 ![Frames simuleren](assets/simulate-states.png)
 

@@ -3,10 +3,10 @@ title: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 description: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 14%
+source-wordcount: '1459'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 14%
 
 De Apache- en Dispatcher-configuratie in AEM as a Cloud Service lijkt sterk op de AMS-configuratie. De belangrijkste verschillen zijn:
 
-* In AEM as a Cloud Service kunnen sommige Apache-richtlijnen niet worden gebruikt (bijvoorbeeld `Listen` of `LogLevel`)
+* In AEM as a Cloud Service mogen sommige Apache-richtlijnen niet worden gebruikt (bijvoorbeeld `Listen` of `LogLevel`)
 * In AEM as a Cloud Service, slechts kunnen sommige stukken van de configuratie van de Verzender in omvat dossiers worden gezet en hun het noemen is belangrijk. Bijvoorbeeld, moeten de filterregels die u over verschillende gastheren wilt hergebruiken in een dossier worden gezet genoemd `filters/filters.any`. Zie de referentiepagina voor meer informatie.
 * In AEM as a Cloud Service is er extra validatie om filterregels die zijn geschreven met `/glob` om beveiligingsproblemen te voorkomen. Omdat `deny *` wordt gebruikt in plaats van `allow *` (wat niet kan worden gebruikt), profiteren klanten van het uitvoeren van de Dispatcher plaatselijk en het doen van proef en fout, die de logboeken bekijken om precies te weten welke wegen de filters van de Verzender blokkeren opdat die kunnen worden toegevoegd.
 
@@ -52,7 +52,7 @@ Als u nog secties in uw virtuele gastheerdossiers hebt die uitsluitend naar ande
 </VirtualHost>
 ```
 
-verwijder deze dan of plaats een opmerking. Instructies in deze secties worden niet verwerkt, maar als u ze niet verwijdert, kan het gebeuren dat u ze alsnog bewerkt, zonder effect. En dat kan verwarrend zijn.
+verwijderen of opmerkingen maken. Instructies in deze secties worden niet verwerkt, maar als u ze in de buurt houdt, kunt u ze waarschijnlijk nog steeds zonder effect bewerken. Dat is verwarrend.
 
 ### Herschrijvingen controleren
 
@@ -85,7 +85,7 @@ In alle virtuele hostbestanden:
 Naam wijzigen `PUBLISH_DOCROOT` tot `DOCROOT`
 Secties verwijderen die verwijzen naar benoemde variabelen `DISP_ID`, `PUBLISH_FORCE_SSL` of `PUBLISH_WHITELIST_ENABLED`
 
-### Uw status controleren door de validatietool uit te voeren
+### Controleer uw status door validator uit te voeren
 
 Voer de Dispatcher-validator in uw map uit, met de `httpd` subopdracht:
 
@@ -97,12 +97,12 @@ Als u fouten ziet die gaan over ontbrekende include-bestanden, controleert u of 
 
 Als u Apache-instructies ziet die niet zijn gevoegd op lijst van gewenste personen, verwijdert u deze.
 
-### Alle niet-publicatiefarms verwijderen
+### Alle niet-publicatiebedrijven verwijderen
 
 Verwijder alle bestanden uit een farm in `conf.dispatcher.d/enabled_farms` dat `author`, `unhealthy`, `health`,
 `lc` of `flush` in zijn naam. Alle landbouwbedrijfdossiers in `conf.dispatcher.d/available_farms` die niet zijn gekoppeld aan, kunnen ook worden verwijderd.
 
-### De naam van farmbestanden wijzigen
+### Naam van landbouwhuisbestanden wijzigen
 
 Alle bedrijven in `conf.dispatcher.d/enabled_farms` moet worden hernoemd om overeen te komen met het patroon `*.farm`, dus bijvoorbeeld, een landbouwbedrijfdossier genoemd `customerX_farm.any` naam wijzigen `customerX.farm`.
 
@@ -130,7 +130,7 @@ In elk landbouwbedrijfdossier, verwijder om het even welke inhoud in `cache/allo
 $include "../cache/default_invalidate.any"
 ```
 
-### Clientheaders controleren
+### Clientkoppen controleren
 
 Map invoeren `conf.dispatcher.d/clientheaders`.
 
@@ -219,7 +219,7 @@ met de instructie:
 $include "../virtualhosts/default_virtualhosts.any"
 ```
 
-### Uw status controleren door de validatietool uit te voeren
+### Controleer uw status door validator uit te voeren
 
 Voer de AEM as a Cloud Service Dispatcher-validator in uw directory uit met de `dispatcher` subopdracht:
 
@@ -231,7 +231,7 @@ Als u fouten ziet die gaan over ontbrekende include-bestanden, controleert u of 
 
 Als er fouten optreden met betrekking tot een niet-gedefinieerde variabele `PUBLISH_DOCROOT`, wijzigt u de naam hiervan naar `DOCROOT`.
 
-Bij andere fouten bekijkt u de sectie Problemen oplossen in de documentatie over de validatietool.
+Zie de sectie Problemen oplossen in de documentatie over het validatieprogramma voor elke andere fout.
 
 ### Test uw configuratie met een lokale plaatsing (vereist de installatie van Docker)
 
@@ -257,6 +257,6 @@ Hierdoor wordt de container gestart en is Apache beschikbaar op de lokale poort 
 
 ### De nieuwe Dispatcher-configuratie gebruiken
 
-Gefeliciteerd! Als de validatietool geen problemen meer rapporteert en de dockercontainer wordt gestart zonder fouten of waarschuwingen, kunt u uw configuratie verplaatsen naar een `dispatcher/src`-submap van uw Git-repository.
+Gefeliciteerd! Als de validator geen problemen meer rapporteert en de dockercontainer zonder fouten of waarschuwingen wordt gestart, kunt u de configuratie naar een `dispatcher/src` subdirectory van uw it-opslagplaats.
 
 **Klanten die AMS Dispatcher Configuration versie 1 gebruiken, dienen contact op te nemen met de klantenondersteuning om hen te helpen bij de migratie van versie 1 naar versie 2, zodat bovenstaande instructies kunnen worden opgevolgd.**

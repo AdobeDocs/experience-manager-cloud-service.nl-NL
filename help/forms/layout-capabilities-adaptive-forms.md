@@ -2,9 +2,9 @@
 title: Wat zijn de lay-outmogelijkheden van Adaptive Forms?
 description: De lay-out en vormgeving van Adaptief Forms op verschillende apparaten worden bepaald door de lay-outinstellingen. Begrijp de verschillende lay-outs en hoe te om hen toe te passen.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Als u de indeling van een adaptief formulier wilt wijzigen, gebruikt u de ontwer
 
 Een auteur van een formulier kan een indeling koppelen aan elk deelvenster van een adaptief formulier, inclusief het hoofdvenster.
 
-De schermindelingen van het deelvenster zijn beschikbaar op `/libs/fd/af/layouts/panel` locatie. Tik op het deelvenster en selecteer ![cmppr1](assets/configure-icon.svg) om de deelvenstereigenschappen weer te geven.
+De schermindelingen van het deelvenster zijn beschikbaar op `/libs/fd/af/layouts/panel` locatie. Selecteer het deelvenster en selecteer ![cmppr1](assets/configure-icon.svg) om de deelvenstereigenschappen weer te geven.
 
 ![Lijst met deelvensterindelingen voor het hoofdvenster van een adaptief formulier](assets/layouts.png)
 

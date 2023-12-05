@@ -2,9 +2,9 @@
 title: URL's extern maken
 description: ExternalAlizer is de dienst OSGi die u programmatically een middelweg in een externe en absolute URL laat omzetten.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Deze sectie toont een paar voorbeelden van hoe de dienst Externalzer kan worden 
 
 >[!NOTE]
 >
->In de context van HTML mogen geen absolute koppelingen worden gemaakt. Daarom dient dit nut in dergelijke gevallen niet te worden gebruikt.
+>In de context van HTML mogen geen absolute koppelingen worden gemaakt. Gebruik dit hulpprogramma daarom in dergelijke gevallen niet.
 
 * **Een pad extern maken met het domein &#39;publish&#39;:**
 

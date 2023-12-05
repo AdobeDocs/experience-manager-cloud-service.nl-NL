@@ -4,9 +4,9 @@ description: Gebruik een voorbeeld van een React-app om te leren hoe u inhoud ku
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Nu u een kopregel in de app hebt gewijzigd, kunt u proberen een afbeelding te wi
 
 1. Ga vanuit de voorvertoning terug naar het browsertabblad van de editor voor inhoudsfragmenten.
 
-1. U moet terugkeren naar de juiste plaats in de editor voor inhoudsfragmenten. De broodkruimels bij top-left van de redacteur tonen waar u in uw inhoudshiërarchie bent. Tik of klik op **Mtn Biker in Canyon** in de breadcrumbs om terug te keren naar die pagina.
+1. U moet terugkeren naar de juiste plaats in de editor voor inhoudsfragmenten. De broodkruimels bij top-left van de redacteur tonen waar u in uw inhoudshiërarchie bent. Selecteren **Mtn Biker in Canyon** in de breadcrumbs om terug te keren naar die pagina.
 
    ![Broodkruimels](assets/do-not-localize/swap-image-2.png)
 

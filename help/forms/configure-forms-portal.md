@@ -2,9 +2,9 @@
 title: Hoe maak je een Forms Portal op een Experience Manager Sites-pagina?
 description: Leer hoe u een Forms Portal kunt maken en de kerncomponenten van een AEM Sites-pagina kunt gebruiken die niet in de verpakking staan.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1705'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,8 @@ Voer de volgende stappen uit als u Forms Portal-componenten buiten de box wilt i
 
 Voordat u deze stappen uitvoert, moet u controleren of u beschikt over een Azure-opslagaccount en een toegangstoets om toegang tot de [!DNL Azure] opslagaccount.
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]**.
-1. Selecteer een map om de configuratie te maken en tik op **[!UICONTROL Create]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]**.
+1. Selecteer een map om de configuratie te maken en selecteer **[!UICONTROL Create]**.
 1. Geef een titel voor de configuratie op in het dialoogvenster **[!UICONTROL Title]** veld.
 1. Geef de naam van de [!DNL Azure] opslagaccount in de **[!UICONTROL Azure Storage Account]** veld.
 
@@ -97,10 +97,10 @@ Voordat u deze stappen uitvoert, moet u controleren of u beschikt over een Azure
 
 Voer de volgende stappen uit om de Verenigde Verbinding van de Opslag voor AEM Workflows te vormen:
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]**.
 1. In de **[!UICONTROL Forms Portal]** sectie, selecteert u **[!UICONTROL Azure]** van de **[!UICONTROL Storage]** vervolgkeuzelijst.
 1. Geef de [configuratiepad voor de Azure-opslagconfiguratie](#create-azure-storage-configuration) in de **[!UICONTROL Storage Configuration Path]** veld.
-1. Tikken **[!UICONTROL Publish]** en tikt u vervolgens op **[!UICONTROL Save]** om de configuratie op te slaan.
+1. Selecteren **[!UICONTROL Publish]** en selecteer vervolgens **[!UICONTROL Save]** om de configuratie op te slaan.
 
 ## Forms Portal-componenten inschakelen {#enable-forms-portal-components}
 
@@ -112,11 +112,11 @@ Zodra een poortcomponent wordt toegelaten, kunt u het in de auteursinstantie van
 
 U kunt Forms Portal maken en aanpassen op websites die zijn gemaakt met AEM door de portalcomponenten toe te voegen en te configureren. Zorg ervoor dat de [componenten zijn ingeschakeld](#enable-forms-portal-components) voordat u ze in de Forms Portal gebruikt.
 
-Als u een component wilt toevoegen, sleept u de component van het deelvenster Componenten naar de lay-outcontainer op de pagina of tikt u op het pictogram Toevoegen op de lay-outcontainer en voegt u de component toe vanuit het deelvenster [!UICONTROL Insert New Component] in.
+Als u een component wilt toevoegen, sleept u de component van het deelvenster Componenten naar de container voor de layout op de pagina of selecteert u het pictogram Toevoegen op de container voor de layout en voegt u de component toe vanuit het deelvenster [!UICONTROL Insert New Component] in.
 
 ### Concepten en verzendingen configureren {#configure-drafts-submissions-component}
 
-In het onderdeel Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Tik op de component om deze te configureren en tik vervolgens op de ![Pictogram Configureren](assets/configure_icon.png). In de [!UICONTROL Drafts and Submissions] geeft u de titel op om de formulierlijst aan te geven als concept of als verzonden formulieren. Selecteer ook of de component concepten of verzonden formulieren in kaart- of lijstindeling moet vermelden.
+In het onderdeel Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Selecteer de component en selecteer vervolgens de ![Pictogram Configureren](assets/configure_icon.png). In de [!UICONTROL Drafts and Submissions] geeft u de titel op om de formulierlijst aan te geven als concept of als verzonden formulieren. Selecteer ook of de component concepten of verzonden formulieren in kaart- of lijstindeling moet vermelden.
 
 ![Concepten, pictogram](assets/drafts-component.png)
 
@@ -128,7 +128,7 @@ Met de component Zoeken en register kunt u adaptieve formulieren op een pagina w
 
 ![Pictogram Zoeken en registreren](assets/search-and-lister-component.png)
 
-Tik op de component om deze te configureren en tik vervolgens op de ![Pictogram Configureren](assets/configure_icon.png). De [!UICONTROL Search and Lister] wordt geopend.
+Selecteer de component en selecteer vervolgens de ![Pictogram Configureren](assets/configure_icon.png). De [!UICONTROL Search and Lister] wordt geopend.
 
 1. In de [!UICONTROL Display] kunt u het volgende configureren:
    * In **[!UICONTROL Title]**, geeft u de titel op voor de component Zoeken &amp; register. Aan de hand van een indicatieve titel kunnen gebruikers snel zoeken in de formulierlijst.
@@ -140,7 +140,7 @@ Tik op de component om deze te configureren en tik vervolgens op de ![Pictogram 
 
 ### Koppelingscomponent configureren {#configure-link-component}
 
-Met de koppelingscomponent kunt u koppelingen naar een adaptief formulier op de pagina maken. Tik op de component om deze te configureren en tik vervolgens op de ![Pictogram Configureren](assets/configure_icon.png). De [!UICONTROL Edit Link Component] wordt geopend.
+Met de koppelingscomponent kunt u koppelingen naar een adaptief formulier op de pagina maken. Selecteer de component en selecteer vervolgens de ![Pictogram Configureren](assets/configure_icon.png). De [!UICONTROL Edit Link Component] wordt geopend.
 
 1. In de [!UICONTROL Display] kunt u het bijschrift en de knopinfo voor de koppeling opgeven, zodat u gemakkelijker kunt zien welke formulieren door de koppeling worden vertegenwoordigd.
 1. In de [!UICONTROL Asset Info] , geeft u het opslagpad op waarin het element is opgeslagen.
@@ -151,34 +151,35 @@ Met de koppelingscomponent kunt u koppelingen naar een adaptief formulier op de 
 U kunt configureren om alleen een adaptief formulier te verzenden wanneer alle ontvangers de ondertekeningsceremonie hebben voltooid. Voer de onderstaande stappen uit om de instelling te configureren met Adobe Sign.
 
 1. Open in de auteur een adaptief formulier in de bewerkingsmodus.
-1. Tik in het linkerdeelvenster op het pictogram Eigenschappen en vouw de **[!UICONTROL ELECTRONIC SIGNTATURE]** -optie.
+1. Selecteer in het linkerdeelvenster het pictogram Eigenschappen en vouw het pictogram **[!UICONTROL ELECTRONIC SIGNTATURE]** -optie.
 1. Selecteer **[!UICONTROL Enable Adobe Sign]**. Verschillende configuratieopties worden weergegeven.
 1. In de [!UICONTROL Submit the form] selecteert u de **[!UICONTROL after every recipient completes signing ceremony]** Hiermee configureert u de handeling Formulier verzenden, waarbij het formulier voor het eerst naar alle ontvangers wordt verzonden voor ondertekening. Nadat alle ontvangers het formulier hebben ondertekend, wordt het formulier alleen verzonden.
 
 ## Aangepaste Forms opslaan als concepten {#save-adaptive-forms-as-drafts}
 
 U kunt formulieren opslaan als concepten en deze later invullen. Er zijn twee manieren waarop een formulier wordt opgeslagen als concept:
-* Maak een regel voor Formulier opslaan op een formuliercomponent, bijvoorbeeld een knop. Als u op de knop klikt, wordt de regel geactiveerd en wordt het formulier opgeslagen in een concept.
+
+* Maak bijvoorbeeld een regel voor Formulier opslaan op een formuliercomponent. Als u op de knop klikt, wordt de regel geactiveerd en wordt het formulier opgeslagen in een concept.
 * Schakel de functie Automatisch opslaan in, die het formulier opslaat volgens de opgegeven gebeurtenis of na een geconfigureerd tijdsinterval.
 
 ### Regels maken om een adaptief formulier op te slaan als concept {#rule-to-save-adaptive-form-as-draft}
 
-Volg onderstaande stappen om een regel voor Formulier opslaan op een formuliercomponent, bijvoorbeeld een knop, te maken:
+Als u bijvoorbeeld een knop wilt gebruiken om de regel Formulier opslaan op een formuliercomponent toe te passen, volgt u de onderstaande stappen:
 
 1. Open in de auteur een adaptief formulier in de bewerkingsmodus.
-1. Tik vanuit het linkervenster op ![Pictogram Componenten](assets/components_icon.png) en sleep de [!UICONTROL Button] aan het formulier.
-1. Tik op de knop [!UICONTROL Button] en tik vervolgens op de ![Pictogram Configureren](assets/configure_icon.png).
-1. Tik op de knop [!UICONTROL Edit Rules] om de Regeleditor te openen.
-1. Tikken **[!UICONTROL Create]** om de regel te vormen en te creëren.
+1. Selecteer in het linkerdeelvenster de optie ![Pictogram Componenten](assets/components_icon.png) en sleep de [!UICONTROL Button] aan het formulier.
+1. Selecteer de [!UICONTROL Button] en selecteert u vervolgens de ![Pictogram Configureren](assets/configure_icon.png).
+1. Selecteer de [!UICONTROL Edit Rules] om de Regeleditor te openen.
+1. Selecteren **[!UICONTROL Create]** om de regel te vormen en te creëren.
 1. In de [!UICONTROL When] selecteert u &quot;klikt op&quot; en in het dialoogvenster [!UICONTROL Then] selecteert u de opties voor Formulier opslaan.
-1. Tikken **[!UICONTROL Done]** om de regel op te slaan.
+1. Selecteren **[!UICONTROL Done]** om de regel op te slaan.
 
 ### Automatisch opslaan inschakelen {#enable-auto-save}
 
 U kunt de functie voor automatisch opslaan als volgt configureren voor een adaptief formulier:
 
 1. Open in de auteur een adaptief formulier in de bewerkingsmodus.
-1. Tik in het linkervenster op de knop ![Pictogram Eigenschappen](assets/configure_icon.png) en breid de [!UICONTROL AUTO-SAVE] -optie.
+1. Selecteer in het linkerdeelvenster de optie ![Pictogram Eigenschappen](assets/configure_icon.png) en breid de [!UICONTROL AUTO-SAVE] -optie.
 1. Selecteer de **[!UICONTROL Enable]** schakelt u het automatisch opslaan van het formulier in. U kunt het volgende configureren:
 * Standaard worden de [!UICONTROL Adaptive Form Event] is ingesteld op &quot;true&quot;, wat betekent dat het formulier na elke gebeurtenis automatisch wordt opgeslagen.
 * In [!UICONTROL Trigger], configureert u voor het activeren van automatisch opslaan op basis van het optreden van een gebeurtenis of na een bepaald tijdsinterval.

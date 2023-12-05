@@ -4,9 +4,9 @@ description: Belangrijke beveiligingsoverwegingen bij het gebruik van AEM as a C
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Om asymmetrische, cryptografische verrichtingen te steunen, AEM slaat certificat
 
 ### Kenmerken van de Trust Store {#truststore-characteristics}
 
-* De vertrouwde-opslag bevindt zich hieronder `/etc/truststore` en bestaat uit een Java-sleutelarchiefbestand, het sleutelarchiefwachtwoord en de gegevensopslaggegevens. Merk op dat zowel het wachtwoord als keystore zelf om technische redenen worden gecodeerd, ook al zijn de ingesloten certificaten standaard toegankelijk voor iedereen via de API
+* De vertrouwde-opslag bevindt zich hieronder `/etc/truststore` en bestaat uit een Java-sleutelarchiefbestand, het sleutelarchiefwachtwoord en de gegevensopslaggegevens. Zowel het wachtwoord als het sleutelarchief zelf zijn om technische redenen gecodeerd, ook al zijn de ingesloten certificaten standaard voor iedereen toegankelijk via de API
 * Buiten het vak worden de certificaten alleen gebruikt voor HTTPS- en SAML-ondersteuning en moet de winkel eerst handmatig worden gemaakt
 * Klanten kunnen het in hun eigen code gebruiken door [sleutelarchief-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * De trust-opslag kan door UI bij worden beheerd **Gereedschappen** - **Beveiliging** - **Trust Store** of door toegang *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, zoals hieronder weergegeven:
@@ -30,7 +30,7 @@ Om asymmetrische, cryptografische verrichtingen te steunen, AEM slaat certificat
 
 >[!NOTE]
 >
->Adobe raadt aan de standaardtoegangscontroles te gebruiken voor de Opslag van het Vertrouwen, wat betekent dat het openbaar toegankelijk blijft. Voor de veiligste configuratie, kunt u een beleid gebruiken van ontkennen jcr:allen voor iedereen.
+>De Adobe adviseert de standaardtoegangscontroles voor de Opslag van het Vertrouwen worden gebruikt, wat betekent dat het openbaar toegankelijk blijft. Voor de veiligste configuratie, kunt u een beleid gebruiken van ontkennen jcr:allen voor iedereen.
 
 <!--
 Commenting out section for now as requested by Lars

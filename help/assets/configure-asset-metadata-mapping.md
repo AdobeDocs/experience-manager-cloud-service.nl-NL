@@ -2,10 +2,10 @@
 title: Metagegevenstoewijzing tussen Workfront en Experience Manager Assets configureren
 description: Wijs de gebieden van activa meta-gegevens tussen Adobe Workfront en Experience Manager as a Cloud Service toepassingen toe. Als u metagegevensvelden toewijst aan Experience Manager Assets en een element verzendt van Workfront naar, kunt u de metagegevens van de toegewezen elementen weergeven in Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 2%
+source-wordcount: '929'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +76,7 @@ Metagegevenstoewijzing wordt uitgevoerd met gebruik van metagegevensschema&#39;s
 
 U kunt als volgt de toewijzing van metagegevens configureren met een nieuw metagegevensformulier in as a Cloud Service Experience Manager Assets:
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Geef in het dialoogvenster de titel van het schema op en klik op **[!UICONTROL Create]** om het maken van het formulier te voltooien.
 
@@ -121,9 +121,9 @@ Nadat u de metagegevensinstellingen hebt geconfigureerd in de as a Cloud Service
 
 Instellingen voor metagegevens toepassen op de afbeeldingsmap:
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
-1. Selecteer het metagegevensschema in de beschikbare lijst en klik op **[!UICONTROL Apply to Folder(s)]**.
+1. Selecteer het metagegevensschema in de beschikbare lijst en klik op **[!UICONTROL Apply to Folders]**.
 
 1. Selecteer de doelmap waarnaar [de afbeelding wordt verzonden vanuit de Adobe Workfront-toepassing](#send-image-workfront-assets) en klik op **[!UICONTROL Apply]**.
 
@@ -132,14 +132,14 @@ U kunt naar de afbeelding navigeren in Experience Manager Assets en de metagegev
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)

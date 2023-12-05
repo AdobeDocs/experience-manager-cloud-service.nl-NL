@@ -2,7 +2,7 @@
 title: Pagina's en sjablonen van productcatalogi beheren
 description: Meer informatie over het beheren van productcataloguspagina's en -sjablonen
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
@@ -89,7 +89,7 @@ U kunt een voorbeeld van de sjabloon bekijken in elke gewenste categorie/product
 
 ![sjabloon maken ](assets/create-template-picker.png)
 
-Nu moeten we deze template toewijzen aan de specifieke categorie. Eigenschappen openen in het dialoogvenster **Pagina-informatie** en schakelen naar het tabblad Handel. Klik op het mappictogram om het **De look kopen** categorie uit de categoriekiezer. Het is mogelijk meerdere categorieën aan een sjabloon toe te wijzen en ook subcategorieën op te nemen door het selectievakje in te schakelen.
+Nu moet u deze sjabloon toewijzen aan de specifieke categorie. Eigenschappen openen in het dialoogvenster **Pagina-informatie** en schakelen naar het tabblad Handel. Klik op het mappictogram om het **De look kopen** categorie uit de categoriekiezer. Het is mogelijk meerdere categorieën aan een sjabloon toe te wijzen en ook subcategorieën op te nemen door het selectievakje in te schakelen.
 
 ![sjabloonkoppeling maken](assets/create-template-associate.png)
 

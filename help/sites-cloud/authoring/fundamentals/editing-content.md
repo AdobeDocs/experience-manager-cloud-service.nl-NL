@@ -1,16 +1,16 @@
 ---
-title: Paginacontent bewerken
+title: Pagina-inhoud bewerken
 description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2974'
 ht-degree: 4%
 
 ---
 
 
-# Paginacontent bewerken{#editing-page-content}
+# Pagina-inhoud bewerken{#editing-page-content}
 
 Nadat u de pagina hebt gemaakt (nieuw of als onderdeel van een opstart of live kopie), kunt u de inhoud bewerken en de gewenste updates uitvoeren.
 
@@ -322,7 +322,7 @@ Bijvoorbeeld de **Tekst** component:
 
 Een alinea-component verplaatsen:
 
-1. Selecteer de alinea die u wilt verplaatsen met Tikken en vasthouden of klikken en vasthouden.
+1. Selecteer de alinea die u wilt verplaatsen met de optie voor selecteren en vasthouden of met klikken en vasthouden.
 1. Sleep de alinea naar de nieuwe locatie. AEM geeft aan waar de alinea kan worden geplaatst. Zet het neer op de gewenste plaats.
 
    ![Een component verplaatsen](/help/sites-cloud/authoring/assets/editing-moving-component.png)

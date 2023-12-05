@@ -2,9 +2,9 @@
 title: Hoe voegt u voetnoot aan een adaptief formulier toe?
 description: Gebruik Rich Text Editor (RTE) voor voetnoten in een adaptieve vorm.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ In Adaptive Forms: [!UICONTROL footnote] wordt gebruikt om informatie weer te ge
 Voer de volgende stappen uit om voetnoot toe te voegen in Adaptive Forms:
 1. Een adaptief formulier openen in **Bewerken** -modus.
 1. Sleep vanuit de componentbrowser de **[!UICONTROL Text]** naar het adaptieve formulier.
-1. Selecteer de **[!UICONTROL Text]** component die u hebt toegevoegd en tikt ![cmppr](assets/configure-icon.svg) om de eigenschappen te bewerken.
+1. Selecteer de **[!UICONTROL Text]** component die u hebt toegevoegd en geselecteerd ![cmppr](assets/configure-icon.svg) om de eigenschappen te bewerken.
 
    ![Voetnoot in Adaptive Forms](/help/forms/assets/footnote_rte.png)
 

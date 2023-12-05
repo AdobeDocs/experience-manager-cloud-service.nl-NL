@@ -2,10 +2,10 @@
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4535'
-ht-degree: 8%
+source-wordcount: '4523'
+ht-degree: 7%
 
 ---
 
@@ -49,7 +49,7 @@ Om een nieuwe sjabloon te maken met behulp van de **sjabloonconsole** en de **sj
 * **Beheerder**:
    * Hiermee maakt u een nieuwe map voor sjablonen die u nodig hebt `admin` rechten.
    * Dergelijke taken kunnen vaak ook door een ontwikkelaar worden uitgevoerd
-* **Developer**:
+* **Ontwikkelaar**:
    * Concentraties op de technische/interne details
    * Heeft ervaring nodig met de ontwikkelomgeving.
    * Verstrekt de malplaatjeauteur van noodzakelijke informatie.
@@ -95,11 +95,11 @@ Bij het maken van een bewerkbare sjabloon:
 
 ### Sjabloonmap maken - Beheer {#creating-a-template-folder-admin}
 
-Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-specifieke malplaatjes te houden. Dit is een beheertaak die in het document wordt beschreven [Paginasjablonen](/help/implementing/developing/components/templates.md#template-folders).—>
+Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-specifieke malplaatjes te houden. Dit is een beheertaak die in het document wordt beschreven [Paginasjablonen](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Een nieuwe sjabloon maken - Sjabloonauteur {#creating-a-new-template-template-author}
 
-1. Open de **sjabloonconsole** (via **Gereedschappen ->** **Algemeen**) en ga vervolgens naar de vereiste map.
+1. Open de **Sjabloonconsole** (als **Gereedschappen >** **Algemeen**) en navigeer naar de vereiste map.
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ Een sjabloon kan de volgende eigenschappen hebben:
 * Titel
    * Een titel die wordt gebruikt voor de identificatie van de sjabloon, zoals in de **Pagina maken** wizard.
 * Beschrijving
-   * Een facultatieve beschrijving om meer informatie over het malplaatje en zijn gebruik te verstrekken, dat bijvoorbeeld in **Pagina maken** wizard.
+   * Een optionele beschrijving voor meer informatie over de sjabloon en het gebruik ervan, die bijvoorbeeld in de **Pagina maken** wizard.
 
 De eigenschappen weergeven en/of bewerken:
 
@@ -415,7 +415,7 @@ Voor een afbeeldingscomponent kunt u bijvoorbeeld de uitsnijdverhoudingen, de to
 
 >[!CAUTION]
 >
->Let op: in AEM snijdverhoudingen worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die de pagina schrijven, zijn zich niet bewust van enig verschil, op voorwaarde dat u de **Naam** duidelijk aangezien dit is wat in UI wordt getoond.
+>In AEM uitsnijdverhoudingen worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die de pagina schrijven, zijn zich niet bewust van enig verschil, op voorwaarde dat u de **Naam** duidelijk aangezien dit is wat in UI wordt getoond.
 
 >[!NOTE]
 >
@@ -459,7 +459,7 @@ Op de **Toegestane componenten** -tab, definieert u welke componenten beschikbaa
 
 ###### Standaardcomponenten {#default-components}
 
-Op de **Standaardcomponenten** , bepaalt u welke componenten automatisch aan bepaalde media types worden geassocieerd zodat wanneer een auteur activa van elementenbrowser sleept, AEM weet met welke component om het te associëren. Merk op dat slechts de componenten met dalingsstreken voor dergelijke configuratie beschikbaar zijn.
+Op de **Standaardcomponenten** , bepaalt u welke componenten automatisch aan bepaalde media types worden geassocieerd zodat wanneer een auteur activa van elementenbrowser sleept, AEM weet met welke component om het te associëren. Alleen componenten met dropzones zijn beschikbaar voor een dergelijke configuratie.
 
 Selecteren **Toewijzing toevoegen** om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
 
@@ -621,7 +621,7 @@ Met de **Oorspronkelijke pagina-eigenschappen** kunt u het eerste [pagina-eigens
 
 1. Bevestig uw definities met **Gereed**.
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 Houd bij het maken van sjablonen rekening met:
 

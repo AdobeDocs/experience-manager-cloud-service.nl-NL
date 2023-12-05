@@ -2,10 +2,10 @@
 title: Hoe kunnen we een adaptieve formuliersjabloon maken?
 description: Maak adaptieve formuliersjablonen om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 1%
+source-wordcount: '1994'
+ht-degree: 0%
 
 ---
 
@@ -38,13 +38,13 @@ Experience Manager biedt een algemene map voor het organiseren van sjablonen. De
 
 Nadat u een map hebt gemaakt, opent u de map en voert u de volgende stappen uit om een sjabloon te maken:
 
-1. Tikken **[!UICONTROL Create]** in de map die u hebt gemaakt.
-1. Selecteer in de sectie Sjabloontype kiezen de optie **[!UICONTROL Adaptive Form template]** en tikken **[!UICONTROL Next]**.
+1. Selecteren **[!UICONTROL Create]** in de map die u hebt gemaakt.
+1. Selecteer in de sectie Sjabloontype kiezen de optie **[!UICONTROL Adaptive Form template]** en selecteert u **[!UICONTROL Next]**.
 
-1. Geef in de sectie Sjabloondetails een sjabloontitel op en tik op **[!UICONTROL Create]**.
+1. Geef in de sectie Sjabloondetails een sjabloontitel op en selecteer **[!UICONTROL Create]**.
 U kunt ook een beschrijving opgeven.
 
-1. Tikken **[!UICONTROL Done]** om terug te keren naar de console, of tikken **[!UICONTROL Open]** om de sjabloon in de editor te openen.
+1. Selecteren **[!UICONTROL Done]** om naar de console terug te keren, of selecteer **[!UICONTROL Open]** om de sjabloon in de editor te openen.
 
 ### UI voor sjablooneditor {#template-editor-ui}
 
@@ -105,7 +105,7 @@ U voegt bijvoorbeeld de koptekstcomponent in de sjabloon toe. Wanneer u de compo
 
 Als de optie Begininhoud is geselecteerd, wordt de container van het adaptieve formulier van de sjabloon geopend als een adaptief formulier voor bewerking. Net als bij het ontwerpen van een adaptief formulier kunt u initiële instellingen opgeven, zoals een thema selecteren en Handelingen verzenden.
 
-Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, tikt u vóór de voorvertoning op de pagina-werkbalk op ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Initial Content]**.
+Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, selecteert u voordat u een voorbeeld weergeeft op de pagina-werkbalk ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Initial Content]**.
 
 
 In de Eerste laag van de Inhoud, creeert u het Adaptieve malplaatje van de Vorm dat uw auteurs als basis gebruiken. Het ontwerpen van een sjabloon lijkt op het ontwerpen van een formulier. U gebruikt de opties in de zijbalk. Sidebar verstrekt inhoud, eigenschappen, activa, en componentenbrowsers.
@@ -132,7 +132,7 @@ Wijzig de laag van Structuur in Begininhoud en voeg inhoud toe aan het formulier
 * U kunt de deelvenstercomponent slepen en neerzetten vanuit de deelvensterbrowser in de zijbalk.
 * U kunt een onderliggend deelvenster van het dialoogvenster `guideRootPanel` op de werkbalk van de component.
 
-Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster met onderliggende items van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en tik ![cmppr](assets/configure-icon.svg) om de eigenschappen in de zijbalk te openen. De elementnamen wijzigen als `general-info` en `professional-info`en titels als algemene informatie en beroepsinformatie. Tik in de zijbalk op inhoud om de inhoudbrowser te openen. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Tikken ![cmppr](assets/configure-icon.svg) in de componentwerkbalk om de eigenschappen te openen. Selecteer in het veld Indeling van deelvenster de optie **[!UICONTROL Tabs on Top]** en tikken **[!UICONTROL Done]**. De sjabloonstructuur met tabs wordt toegepast.
+Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster met onderliggende items van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en selecteer ![cmppr](assets/configure-icon.svg) om de eigenschappen in de zijbalk te openen. De elementnamen wijzigen als `general-info` en `professional-info`en titels als algemene informatie en beroepsinformatie. Selecteer in het zijpaneel de inhoud die u wilt openen in de inhoudbrowser. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Selecteren ![cmppr](assets/configure-icon.svg) in de componentwerkbalk om de eigenschappen te openen. Selecteer in het veld Indeling van deelvenster de optie **[!UICONTROL Tabs on Top]** en selecteert u **[!UICONTROL Done]**. De sjabloonstructuur met tabs wordt toegepast.
 
 #### Inhoud toevoegen op tabbladen {#adding-content-in-tabs}
 
@@ -151,7 +151,7 @@ Wanneer u een sjabloon maakt, wordt deze toegevoegd als concept. Schakel de sjab
 1. Navigeren naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Templates]** en opent u de map waarin u de sjabloon hebt gemaakt.
 
 1. De sjabloon die u hebt gemaakt, is gemarkeerd als Concept.
-1. Selecteer de sjabloon en tik op **[!UICONTROL Enable]** in de werkbalk.
+1. Selecteer de sjabloon en selecteer **[!UICONTROL Enable]** in de werkbalk.
 Wanneer u een adaptief formulier maakt, wordt de sjabloon weergegeven wanneer u wordt gevraagd een sjabloon te kiezen.
 
 ## Een sjabloon importeren of exporteren {#importing-or-exporting-a-template}
@@ -167,9 +167,9 @@ Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt 
 
 Auteurs kunnen een [!UICONTROL Form Data Model Schema] naar een sjabloon voor een adaptief formulier in de sjablooneditor. Auteurs kunnen een schema in de sjablooneditor selecteren. Wanneer u een schema aan een sjabloon koppelt en een auteur van een formulier een formulier maakt op basis van de sjabloon, wordt het schema vooraf geselecteerd voor het formulier. Hiermee kunnen auteurs van formulieren het gebruik van schema&#39;s reguleren en besparen ze ook tijd voor de auteur van formulieren. Een formuliergegevensmodelschema selecteren in een sjablooneditor:
 
-1. Tikken **[!UICONTROL Content Browser]** aan de linkerkant.
+1. Selecteren **[!UICONTROL Content Browser]** aan de linkerkant.
 1. Ga naar de formuliercontainer **[!UICONTROL Setting]**.
-1. Selecteer **[!UICONTROL Data Model]**.
+1. Selecteren **[!UICONTROL Data Model]**.
 1. Kies het formuliergegevensmodel via **[!UICONTROL Select Form Data Model]** en sla de configuratie op.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)

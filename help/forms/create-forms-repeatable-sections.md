@@ -3,9 +3,9 @@ title: Hoe te om herhaalbare panelen in de Aangepaste Componenten van de Kern va
 description: Leer herhaalbare secties of velden maken in een adaptief formulier.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1256'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Als u een deelvenster in het formulier wilt herhalen of herhaalbare deelvensters
 ![Toegankelijkheid, tabblad](/help/forms/assets/repeat-panel.png)
 
 Voer de volgende stappen uit om een deelvenster herhaalbaar te maken:
-1. Selecteer een deelvenstercontainer en tik op ![cmppr](/help/forms/assets/cmppr.png).
+1. Selecteer een deelvenstercontainer en selecteer ![cmppr](/help/forms/assets/cmppr.png).
 1. Klik op de knop **deelvenster herhalen** en schakel de schakeloptie in op **deelvenster herhaalbaar maken**.
 1. Set **minimale herhalingen** zoals vereist voor minimale herhaalbare secties, kunt u instellen **minimale herhalingen** op nul zetten om deelvensters niet te vervangen of om de herhaalde deelvensters te verwijderen. De standaardwaarde voor minimale herhaling is nul.
 1. Set **maximale herhalingen** om het paneel te herhalen vereist aantal tijden, door gebrek is de waarde oneindig.
@@ -63,7 +63,7 @@ Voer de volgende stappen uit om een deelvenster herhaalbaar te maken:
 
 Het bovenliggende element van het deelvenster dat moet worden herhaald, moet een knop voor het toevoegen van knoppen bevatten om herhalende instanties van het deelvenster te beheren. Voer de volgende stappen uit om knoppen in te voegen in het bovenliggende element en om scripts in de knoppen in te schakelen:
 
-1. Voeg een **knopcomponent** aan het bovenliggende element van het deelvenster. In de onderstaande voorbeeldvideo ziet u een knopcomponent met de labelnaam **Toevoegen** en veldnaam **AddPanel**, wordt gebruikt. Selecteer de component en tik op ![bewerkingsregels](/help/forms/assets/edit-rules.png). De regels van de knoopcomponent open in de regelredacteur.
+1. Voeg een **knopcomponent** aan het bovenliggende element van het deelvenster. In de onderstaande voorbeeldvideo ziet u een knopcomponent met de labelnaam **Toevoegen** en veldnaam **AddPanel**, wordt gebruikt. Selecteer de component en selecteer ![bewerkingsregels](/help/forms/assets/edit-rules.png). De regels van de knoopcomponent open in de regelredacteur.
 1. Klik in het venster Regeleditor op **Maken**.
 
    Selecteren **Visuele editor** in de rij Formulierobjecten en -functies.
@@ -84,7 +84,7 @@ Het bovenliggende element van het deelvenster dat moet worden herhaald, moet een
 
 Het bovenliggende element van het deelvenster moet een verwijderknop bevatten om een exemplaar van de herhaalbare deelvensters te verwijderen. Voer de volgende stappen uit om knopen aan de ouder op te nemen en manuscripten op de knopen toe te laten om herhaalbare panelen te schrappen:
 
-1. Voeg een **knopcomponent** aan het bovenliggende element van het deelvenster: in de video hieronder, een knopcomponent met de labelnaam **delete** en veldnaam **DeletePanel** wordt gebruikt. Selecteer de component en tik op ![bewerkingsregels](/help/forms/assets/edit-rules.png). De regels van de knoopcomponent open in de regelredacteur.
+1. Voeg een **knopcomponent** aan het bovenliggende element van het deelvenster: in de video hieronder, een knopcomponent met de labelnaam **delete** en veldnaam **DeletePanel** wordt gebruikt. Selecteer de component en selecteer ![bewerkingsregels](/help/forms/assets/edit-rules.png). De regels van de knoopcomponent open in de regelredacteur.
 1. Klik in het venster Regeleditor op **Maken**.
 
    Selecteren **Visuele editor** in de rij Formulierobjecten en -functies.
@@ -151,8 +151,8 @@ Het bovenliggende element van het deelvenster moet een verwijderknop bevatten om
 
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
+1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ De CIF invoegtoepassing en de [CIF Core-componenten](https://github.com/adobe/ae
 
 Deze configuratie kan voor het project als CIF Cloud Service worden aangepast config die deze stappen volgt:
 
-1. Ga in AEM naar Extra -> Cloud Servicen -> CIF Configuratie.
+1. Ga in AEM naar Gereedschappen > Cloud Servicen > Configuratie CIF.
 
 2. Selecteer de handelsconfiguratie die u wilt veranderen.
 

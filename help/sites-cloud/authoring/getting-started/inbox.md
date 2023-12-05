@@ -1,15 +1,15 @@
 ---
-title: Uw inbox
+title: Uw Postvak IN
 description: Leer hoe u de meldingen in uw Postvak IN kunt gebruiken om uw taken te beheren.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 14%
+source-wordcount: '910'
+ht-degree: 13%
 
 ---
 
-# Uw inbox {#your-inbox}
+# Uw Postvak IN {#your-inbox}
 
 U kunt meldingen ontvangen van verschillende AEM, waaronder workflows en projecten. U ontvangt bijvoorbeeld meldingen over:
 
@@ -33,7 +33,7 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en er a
 
 ## Postvak IN van koptekst {#inbox-in-the-header}
 
-Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoond in de kopbal. De indicator kan ook worden geopend om snel toegang te krijgen tot de pagina(&#39;s) waarvoor een actie(s) vereist is of om toegang te krijgen tot het Postvak IN:
+Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoond in de kopbal. De indicator kan ook worden geopend om snel toegang te geven tot de pagina&#39;s waarvoor een of meer handelingen vereist zijn, of om toegang te krijgen tot het Postvak IN:
 
 ![Overzicht van Postvak In koptekst](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -150,7 +150,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
    * Bevestig de juiste handeling, bijvoorbeeld opnieuw toewijzen.
    * De handeling annuleren
-   * Selecteer de pijl Vorige om terug te keren naar het Postvak IN, bijvoorbeeld als een handelingstovenaar of documentatiepagina is geopend, kunt u terugkeren naar het Postvak In.
+   * Selecteer de pijl Vorige om terug te keren naar het Postvak IN. Als bijvoorbeeld een handelingstovenaar of documentatiepagina is geopend, kunt u terugkeren naar het Postvak In.
 
 ## Een taak maken {#creating-a-task}
 

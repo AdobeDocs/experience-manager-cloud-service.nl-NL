@@ -1,18 +1,18 @@
 ---
-title: Image Sets
+title: Afbeeldingssets
 description: Leer hoe u in Dynamic Media werkt met sets afbeeldingen.
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 5%
+source-wordcount: '2078'
+ht-degree: 3%
 
 ---
 
-# Image Sets {#image-sets}
+# Afbeeldingssets {#image-sets}
 
 Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door op een miniatuurafbeelding te klikken. Met Afbeeldingssets kunt u alternatieve weergaven van een item presenteren en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen op de juiste wijze kunt bekijken.
 
@@ -128,7 +128,7 @@ U kunt Afbeeldingssets maken via de gebruikersinterface of via de API.
 >[!NOTE]
 >
 >U kunt ook automatisch afbeeldingssets maken via [voorinstellingen voor batchsets](/help/assets/dynamic-media/batch-set-presets-dm.md).
->**Belangrijk:** Batchsets worden gecreëerd door IPS (Image Production System) als onderdeel van assetopname.
+>**Belangrijk:** De reeksen van de partij worden gecreeerd door IPS (het Systeem van de Productie van het Beeld) als deel van activa opnemen.
 
 Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumerieke volgorde toegevoegd. U kunt elementen handmatig opnieuw ordenen of sorteren nadat u ze hebt toegevoegd.
 
@@ -148,9 +148,9 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 **Afbeeldingssets maken:**
 
 1. Selecteer in Adobe Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole.
-1. Tik op **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigeer naar de plaats waar u een afbeeldingsset wilt maken en ga vervolgens naar **[!UICONTROL Create]** > **[!UICONTROL Image Set]** om de pagina van de Editor van de set Afbeeldingen te openen.
+1. Selecteren **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigeer naar de plaats waar u een afbeeldingsset wilt maken en ga vervolgens naar **[!UICONTROL Create]** > **[!UICONTROL Image Set]** om de pagina van de Editor van de set Afbeeldingen te openen.
 
-   U kunt de set ook maken vanuit een map die uw assets bevat.
+   U kunt de set ook maken vanuit een map die uw elementen bevat.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -164,7 +164,7 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/dynamic-media/limitations.md).
 
    * Selecteer in het midden van de pagina Editor afbeeldingsset de optie **[!UICONTROL Tap to open Asset Selector]**.
 
-   Tik om elementen te selecteren die u in de afbeeldingsset wilt opnemen. Geselecteerde elementen hebben een vinkje. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Select]**.
+   Selecteer deze optie om elementen te selecteren die u in de afbeeldingsset wilt opnemen. Geselecteerde elementen hebben een vinkje. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Select]**.
 
    Met de Asset Selector kunt u naar elementen zoeken door een trefwoord in te voeren en **[!UICONTROL Return]**. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het filter **[!UICONTROL Filter]** in de werkbalk. De weergave wijzigen door het pictogram Weergave te selecteren en **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, of **[!UICONTROL List View]**.
 
@@ -236,7 +236,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
    * Houd de cursor boven een afbeeldingsset-element en selecteer **[!UICONTROL Edit]** (potloodpictogram).
    * Als u de cursor op een afbeeldingsset plaatst, selecteert u **[!UICONTROL Select]** (pictogram vinkje), selecteert u vervolgens **[!UICONTROL Edit]** in de werkbalk.
-   * Tik op een afbeeldingsset-element en selecteer **[!UICONTROL Edit]** (potloodpictogram) op de werkbalk.
+   * Selecteer een afbeeldingsset en selecteer vervolgens **[!UICONTROL Edit]** (potloodpictogram) op de werkbalk.
 
 1. Voer een van de volgende handelingen uit om de afbeeldingen in de Afbeeldingsset te bewerken:
 
@@ -255,7 +255,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
    >
    >U kunt de afbeeldingen in een Afbeeldingsset bewerken. Ga naar de set en selecteer **[!UICONTROL Set Members]** in het linkerspoor. Als u het bewerkingsvenster wilt openen, selecteert u het potloodpictogram op een element.
 
-1. Tikken **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
+1. Selecteren **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
 
 ## Voorvertoning van afbeeldingssets {#previewing-image-sets}
 

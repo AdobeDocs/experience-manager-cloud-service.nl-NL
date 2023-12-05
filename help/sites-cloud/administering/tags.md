@@ -2,9 +2,9 @@
 title: Tags beheren
 description: Leer hoe u tags kunt beheren in AEM om uw inhoud te ordenen.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2200'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ De coderingsconsole wordt gebruikt om labels en hun taxonomieën te maken en te 
 De tagconsole openen:
 
 1. Meld u aan bij een ontwerpomgeving met beheerdersrechten.
-1. Selecteer in het algemene navigatiemenu de optie **`Tools`** > **`General`** ->
+1. Selecteer in het algemene navigatiemenu de optie **`Tools`** > **`General`** >
    **`Tagging`**.
 
 ![De tagconsole in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ Een naamruimte wordt gebruikt om andere tags te ordenen. Het kan worden beschouw
 
 1. Nadat de vereiste informatie is ingevoerd, selecteert u **Maken**.
 
-De naamruimte wordt gemaakt. Merk op dat in de etiketterende console namespaces op het laagste niveau (bij de uiterst linkerkolom in de console) zijn en door omslagpictogrammen worden vertegenwoordigd, die op hun aard als &quot;container&quot;of groepering van andere markeringen wijzen.
+De naamruimte wordt gemaakt. In de coderingsconsole bevinden de naamruimten zich op het laagste niveau (helemaal links in de console) en worden deze weergegeven door mappictogrammen, die hun aard weerspiegelen als een &#39;container&#39; of groepering van andere tags.
 
 U kunt nu [nieuwe tags maken](#creating-tags) in deze naamruimte of [bestaande tags beheren.](#managing-tags)
 
@@ -163,7 +163,7 @@ Er zijn verschillende acties die u kunt uitvoeren op bestaande tags en naamruimt
 * [Samenvoegen](#merging-tags)
 * [Verwijderen](#deleting-tags)
 
-Let op: als er voldoende ruimte beschikbaar is op de werkbalk, zijn er extra opties beschikbaar achter het ellipspictogram.
+Als er voldoende notitie beschikbaar is op de werkbalk, zijn er extra opties beschikbaar achter het ellipspictogram.
 
 ### Tageigenschappen weergeven {#viewing-tag-properties}
 
@@ -243,7 +243,7 @@ Het kan handig zijn om te zien op welke inhoud een bepaalde tag wordt toegepast.
 
    ![De details van de verwijzingen van de tag weergeven](assets/tag-references-detail.png)
 
-Houd de muis of tik op een inhoud die naar verwijzingen verwijst in de lijst om het volledige pad van de inhoud weer te geven.
+Houd de muis boven een verwijzing of selecteer een inhoud in de lijst om het volledige pad van de inhoud weer te geven.
 
 Zie voor meer informatie over het selecteren van weergavemodi en de spoorstaaf [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -359,7 +359,7 @@ Laten we aannemen dat we een tag hebben met de naam `Animals` dat we in het Duit
 
 1. Selecteer de tag die u wilt vertalen en selecteer vervolgens **Bewerken** in de werkbalk.
 
-1. In de **Tag bewerken** in het dialoogvenster **Lokalisatie** de doeltaal, bijvoorbeeld Duits.
+1. In de **Tag bewerken** in het dialoogvenster **Lokalisatie** , selecteert u de doeltaal, bijvoorbeeld Duits.
 
 1. In de **Duits** Geef de vertaalde titel op in het veld dat wordt weergegeven.
 

@@ -2,9 +2,9 @@
 title: Experience Audit Dashboard
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO door een duidelijke, informatieve dashboardinterface voldoen.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ In de **Lighthoudesscores** , vindt u een trendweergave van de verschillende sco
 
 ![Lighthouderscores grafiek](assets/lighthouse-scores.png)
 
-Merk op dat elk punt op de grafiek het gemiddelde over alle plaatsingen in de maand van belang is.
+Elk punt op de grafiek is het gemiddelde over alle plaatsingen in de maand van belang.
 
 Om terug naar de de uitvoeringspagina van de productiepijplijn te navigeren, selecteer eenvoudig de achterpijl op uw browser.
 

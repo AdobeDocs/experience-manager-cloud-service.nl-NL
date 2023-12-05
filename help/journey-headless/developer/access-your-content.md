@@ -2,9 +2,9 @@
 title: Toegang tot uw inhoud via AEM levering-API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u GraphQL-query's kunt gebruiken om toegang te krijgen tot de inhoud van Content Fragments.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Inhoudsfragmenten kunnen worden gebruikt als basis voor GraphQL voor AEM schema&
 * Ze zijn gebaseerd op een Content Fragment Model, dat de structuur voor het resulterende fragment vooraf definieert met behulp van een selectie van gegevenstypen.
 * Er kunnen extra structuurlagen worden bereikt met het gegevenstype Fragmentverwijzing, dat beschikbaar is wanneer u een model definieert.
 
-### Modellen van contentfragmenten {#content-fragments-models}
+### Modellen van inhoudsfragmenten {#content-fragments-models}
 
 Deze modellen van inhoudsfragmenten:
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Voordat u begint met query&#39;s op uw inhoud, moet u:
 
 * Uw eindpunt inschakelen
-   * Gereedschappen gebruiken -> Algemeen -> GraphQL
+   * Extra > Algemeen > GraphQL
    * [GraphQL Endpoint inschakelen](/help/headless/graphql-api/graphql-endpoint.md)
       * Dit zal ook GrahiQL winde toelaten.
 
@@ -269,7 +269,7 @@ De fragmentmodellen worden gebruikt:
 
 De vragen kunnen in de interface worden ingegaan GraphiQL. U kunt tot de vraagredacteur van één van beiden toegang hebben:
 
-* **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
+* **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**
 * rechtstreeks; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
@@ -370,8 +370,8 @@ Nu u hebt geleerd hoe u toegang kunt krijgen tot inhoud zonder kop en deze kunt 
    * [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [Voorbeeldquery - Alle steden met een benoemde variatie](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [Functionaliteit van inhoudsfragment inschakelen in configuratievenster](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
-* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
-   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [JSON-uitvoer](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Werken met het delen van bronnen tussen verschillende bronnen (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [GraphQL Persisted Queries - caching inschakelen in Dispatcher](/help/headless/deployment/dispatcher-caching.md)

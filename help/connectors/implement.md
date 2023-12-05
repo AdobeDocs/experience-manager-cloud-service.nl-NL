@@ -1,15 +1,15 @@
 ---
-title: Een AEM-connector implementeren
+title: Implementeren van een AEM-aansluiting
 description: Leer hoe te om, een AEM schakelaar te bouwen te testen en uit te voeren. Ook, leert u over gemeenschappelijke integratiepatronen.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 6%
+source-wordcount: '935'
+ht-degree: 5%
 
 ---
 
-Een AEM-connector implementeren
+Implementeren van een AEM-aansluiting
 =============================
 
 Hieronder vindt u nuttige verwijzingen voor het bouwen van [AEM-connectors](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) en deze dienen te worden gelezen in combinatie met richtlijnen voor het [verzenden](submit.md) en [onderhouden](maintain.md) van connectors.
