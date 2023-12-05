@@ -3,9 +3,9 @@ title: AEM en Adobe Commerce Integration met Commerce integration framework
 description: AEM en Adobe Commerce zijn naadloos geïntegreerd met behulp van het Commerce integration framework (CIF). CIF biedt AEM toegang tot een Adobe Commerce-exemplaar en communiceert met Adobe Commerce via GraphQL. Ook kunnen AEM auteurs product- en rubriekkiezers en de productconsole gebruiken om door product- en categoriegegevens te bladeren die op verzoek van Adobe Commerce zijn opgehaald. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -49,3 +49,8 @@ De bedrijfslogica en de achtergrondcommunicatie met Adobe Commerce voor de AEM C
 >De [Aanpassen AEM kerncomponenten](../customizing/customize-cif-components.md) Deze pagina bevat een gedetailleerd voorbeeld en aanbevolen methoden voor het aanpassen van CIF Core Components.
 
 Binnen projecten, AEM CIF de Componenten van de Kern en de componenten van het douaneproject gemakkelijk de gevormde cliënt voor een opslag van Adobe Commerce verbonden aan een AEM pagina via het Verdelen van context-Aware configuratie terugwinnen.
+
+## Zoeken {#search}
+
+CIF biedt een [Core-component zoeken](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) dat een gerenderde zoekervaring op de server is op basis van [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/). Klanten met een koopvaardij hebben de mogelijkheid om [Live zoeken](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) in plaats daarvan. Hierna volgen [link](/help/commerce-cloud/integrating/live-search-plp.md) voor meer informatie over de integratie CIF - Live zoeken.
+

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
+source-git-commit: ce98053371c8a40db3935c47356213e712a4e39e
 workflow-type: tm+mt
-source-wordcount: '4420'
+source-wordcount: '4429'
 ht-degree: 4%
 
 ---
@@ -727,6 +727,8 @@ ht-degree: 4%
          + [Ervaringen maken met producten](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + Integraties {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
+      + [CIF component Live zoeken](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [Pop-up Live zoeken CIF component](/help/commerce-cloud/integrating/live-search-popover.md)
       + [Oplossing voor handel van derden](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
