@@ -4,8 +4,8 @@ description: Leer hoe u aan de slag kunt met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 6%
+source-wordcount: '1370'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
 >title="Downloaden"
->abstract="Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw AEM-broninstantie (Adobe Experience Manager). Download de nieuwste versie."
+>abstract="Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket via Package Manager installeren op uw Adobe Experience Manager-bronexemplaar (AEM). Download de nieuwste versie."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release-opmerkingen"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
@@ -55,7 +55,7 @@ Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optred
 >[!NOTE]
 >Deze markering is alleen voor foutopsporing in SSL-problemen. Zorg ervoor dat de markering is uitgeschakeld voordat u de extractie uitvoert, omdat dit veel schijfruimte kan vereisen. Hierdoor kan de stationscapaciteit worden gevuld en kan het extractieproces mislukken.
 
-## De Content Transfer-tool uitvoeren {#running-tool}
+## Het gereedschap Inhoud overbrengen uitvoeren {#running-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
@@ -132,7 +132,7 @@ Als u de migratieset wilt vullen die u hebt gemaakt in het beheer voor cloudvers
 
 1. Selecteer vervolgens de volgende parameters om een migratieset te maken:
 
-   1. **Include Version**: Selecteer de versie die u wilt opnemen. Wanneer versies worden opgenomen, wordt het pad `/var/audit` wordt automatisch opgenomen om auditgebeurtenissen te migreren.
+   1. **Inclusief versie**: Selecteer de gewenste optie. Wanneer versies worden opgenomen, wordt het pad `/var/audit` wordt automatisch opgenomen om auditgebeurtenissen te migreren.
 
       ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
 
@@ -140,7 +140,7 @@ Als u de migratieset wilt vullen die u hebt gemaakt in het beheer voor cloudvers
       >Als u van plan bent versies op te nemen als onderdeel van een migratieset en als u aanvullende versies uitvoert met `wipe=false`Vervolgens moet u versiebeheer uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld wilt houden en extra-ups wilt uitvoeren in een migratieset, moet u de opname uitvoeren als `wipe=true`.
 
 
-   1. **Paths to be included**: Gebruik de padbrowser om paden te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren.
+   1. **In te sluiten paden**: Gebruik padbrowser om paden te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren.
 
       >[!IMPORTANT]
       >Voor de volgende paden gelden beperkingen bij het maken van een migratieset:

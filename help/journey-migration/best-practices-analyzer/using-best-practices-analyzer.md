@@ -2,10 +2,10 @@
 title: Analysator van best practices gebruiken
 description: Leer hoe u de Analysator voor aanbevolen werkwijzen gebruikt om de gereedheid voor upgrades te begrijpen.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 36%
+source-wordcount: '2418'
+ht-degree: 35%
 
 ---
 
@@ -57,7 +57,7 @@ De Analysator van Beste praktijken kan als zip dossier van het portaal van de Di
 
 Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste praktijken te bekijken:
 
-1. Selecteer Adobe Experience Manager en navigeer naar gereedschappen -> **Bewerkingen** -> **Analysator van best practices**.
+1. Selecteer Adobe Experience Manager en navigeer naar gereedschappen > **Bewerkingen** > **Analysator van best practices**.
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -125,7 +125,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
 >title="Het rapport met de analyse van best practices interpreteren"
->abstract="Er zijn twee opties om BPA- rapportoutput te bekijken: UI en CSV. Wanneer het hulpmiddel van de Analysator van Beste praktijken in de AEM instantie in werking wordt gesteld, wordt het rapport UI getoond als resultaten in het hulpmiddelvenster. De CSV-indeling van het rapport bevat informatie die wordt gegenereerd op basis van de Pattern Detector-uitvoer. Deze informatie is gesorteerd en ingedeeld op categorietype, subtype en belang."
+>abstract="Er zijn twee opties om BPA- rapportoutput te bekijken: UI en CSV. Wanneer het hulpmiddel van de Analysator van Beste praktijken in de AEM instantie in werking wordt gesteld, wordt het rapport UI getoond als resultaten in het hulpmiddelvenster. De CSV-indeling van het rapport bevat informatie die wordt gegenereerd op basis van de uitvoer van de patroondetector, gesorteerd en ingedeeld op categorietype, subtype en belangrijkheidsniveau."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Rapport Analyse van beste praktijken"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="De categorieën van het Rapport van de Analyse van Beste praktijken begrijpen"
 
@@ -197,7 +197,7 @@ U kunt ook een opdrachtregelprogramma gebruiken, zoals `curl` of `wget` en elke 
 Hieronder ziet u hoe u dit kunt doen:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
 
-### Headers en parameters {#http-headers-and-parameters}
+### Kopteksten en parameters {#http-headers-and-parameters}
 
 De volgende HTTP-headers worden door deze interface gebruikt:
 
@@ -220,7 +220,7 @@ De volgende opdracht vormt een eenvoudige manier om de productie van het rapport
 
 Zodra een aanvraag is ingediend, hoeft de client niet actief te zijn voor het produceren van het rapport. De rapportgeneratie zou met één cliënt kunnen in werking worden gesteld gebruikend een verzoek van de GET van HTTP en, zodra het rapport is geproduceerd, bekeken van het geheime voorgeheugen met een andere cliënt of met het hulpmiddel BPA in het AEM gebruikersinterface.
 
-### Respons {#http-responses}
+### Reacties {#http-responses}
 
 De volgende responswaarden zijn mogelijk:
 
@@ -233,7 +233,7 @@ De volgende responswaarden zijn mogelijk:
 
 ## Beheerdersinformatie
 
-### Levensduur van cache aanpassen {#cache-adjustment}
+### Aanpassing van levensduur cache {#cache-adjustment}
 
 De standaardlevensduur van de BPA-cache is 24 uur. Met de optie om een rapport te verfrissen, en het geheime voorgeheugen, in zowel de AEM instantie als de interface van HTTP te regenereren, zal deze standaardwaarde waarschijnlijk voor de meeste toepassingen van BPA aangewezen zijn. Als de tijd van de rapportgeneratie voor uw AEM instantie bijzonder lang is, kunt u het geheim voorgeheugenleven willen aanpassen om de regeneratie van het rapport te minimaliseren.
 

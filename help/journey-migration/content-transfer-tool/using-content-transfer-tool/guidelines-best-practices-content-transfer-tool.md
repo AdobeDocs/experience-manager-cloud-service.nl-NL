@@ -4,14 +4,14 @@ description: Leer de richtlijnen en de beste werkwijzen voor het gebruik van het
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1401'
 ht-degree: 11%
 
 ---
 
 # Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen {#guidelines}
 
-## Richtlijnen en best practices {#best-practices}
+## Richtlijnen en beste praktijken {#best-practices}
 
 <!-- Alexandru: hiding for now
 

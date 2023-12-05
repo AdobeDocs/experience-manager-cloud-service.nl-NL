@@ -1,16 +1,16 @@
 ---
-title: Implementeren naar AEM as a Cloud Service
+title: Distribueren naar AEM as a Cloud Service
 description: Leer over de grondbeginselen en beste praktijken van plaatsing aan AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3470'
+source-wordcount: '3429'
 ht-degree: 0%
 
 ---
 
-# Implementeren naar AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
+# Distribueren naar AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Inleiding {#introduction}
 
@@ -71,7 +71,7 @@ Aangezien de toepassingsveranderingen toe te schrijven aan het plaatsingspatroon
 
 Voor klanten met bestaande codebases is het van essentieel belang dat de in AEM documentatie beschreven herstructureringsoefening in de opslagplaats wordt doorlopen om ervoor te zorgen dat inhoud die voorheen onder de /etc. viel, naar de juiste locatie wordt verplaatst.
 
-Voor deze codepakketten gelden enkele aanvullende beperkingen, bijvoorbeeld [installatiekoppels](https://jackrabbit.apache.org/filevault/installhooks.html) worden niet ondersteund.
+Voor deze codepakketten gelden bijvoorbeeld enkele aanvullende beperkingen: [installatiekoppels](https://jackrabbit.apache.org/filevault/installhooks.html) worden niet ondersteund.
 
 ## OSGI-configuratie {#osgi-configuration}
 
@@ -150,7 +150,7 @@ Wanneer de toepassing wordt geïmplementeerd in Cloud Manager, worden deze instr
 Om te creëren `repoinit` de verklaringen, volgen de hieronder procedure:
 
 1. OSGi-configuratie toevoegen voor fabriek-PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in een configuratiemap van het project. Gebruik als een beschrijvende naam voor de configuratie **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
-1. Toevoegen `repoinit` verklaringen aan het manuscripteigenschap van config. De syntaxis en opties worden beschreven in [Verkoopdocumentatie](https://sling.apache.org/documentation/bundles/repository-initialization.html). Er moet een bovenliggende map expliciet worden gemaakt voordat de onderliggende mappen worden gemaakt. Bijvoorbeeld een expliciete creatie van `/content` voor `/content/myfolder`, vóór `/content/myfolder/mysubfolder`. Voor ACLs die op laag-vlakke structuren worden geplaatst, wordt het geadviseerd om hen op een hoger niveau te plaatsen en met a te werken `rep:glob` beperking. Bijvoorbeeld, `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
+1. Toevoegen `repoinit` verklaringen aan het manuscripteigenschap van config. De syntaxis en opties worden beschreven in [Verkoopdocumentatie](https://sling.apache.org/documentation/bundles/repository-initialization.html). Er moet een bovenliggende map expliciet worden gemaakt voordat de onderliggende mappen worden gemaakt. Bijvoorbeeld een expliciete creatie van `/content` voor `/content/myfolder`, vóór `/content/myfolder/mysubfolder`. Voor ACLs die op laag-vlakke structuren worden geplaatst, wordt het geadviseerd om hen op een hoger niveau te plaatsen en met a te werken `rep:glob` beperking. Bijvoorbeeld: `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Valideren in de lokale ontwikkelomgeving bij uitvoering.
 
 <!-- last statement in step 2 to be clarified with Brian -->
@@ -175,7 +175,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Pakketbeheer - Meerdere inhoudspakketten migreren"
 >abstract="Verken het gebruik van Package Manager voor gebruik waarbij een inhoudspakket moet worden geïnstalleerd als &#39;one off&#39;. De installatie omvat het invoeren van specifieke inhoud van productie aan het opvoeren om een productieprobleem te zuiveren, het overbrengen van klein inhoudspakket van het milieu op-gebouw aan AEM milieu&#39;s van de Wolk, en meer."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="De tool Content Transfer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="Inhoud overbrengen"
 
 Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld, het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) kan in milieu&#39;s op AEM as a Cloud Service worden gebruikt.
 

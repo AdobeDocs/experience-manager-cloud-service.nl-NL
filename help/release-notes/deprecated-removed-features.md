@@ -4,8 +4,8 @@ description: Opmerkingen bij de release die specifiek zijn voor vervangen en ver
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: 459e6cbf91f9b7f995bd1fd9c8758962c41c9341
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 4%
+source-wordcount: '657'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 >abstract="AEM as a Cloud Service heeft een implementatiemodel in de cloud. Bepaalde mogelijkheden en functies zijn vervangen door in de cloud geïntegreerde tegenhangers en op dit tabblad worden die functies weergegeven."
 
 
-Adobe evalueert continu de productfuncties, zodat oudere functies na verloop van tijd kunnen worden bijgewerkt of vervangen door modernere alternatieven om de algehele waarde voor de klant te verbeteren. Hierbij wordt altijd zorgvuldig gekeken naar compatibiliteit met oudere versies. Ook, als [!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt een implementatiemodel in de cloud, bepaalde mogelijkheden en functies zijn vervangen door in de cloud geïntegreerde tegenhangers.
+Adobe evalueert voortdurend de productmogelijkheden, om oudere eigenschappen met modernere alternatieven te heruitvinden of te vervangen om de algemene waarde van de klant te verbeteren, altijd onder zorgvuldige overweging van achterwaartse verenigbaarheid. Ook, als [!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt een implementatiemodel in de cloud, bepaalde mogelijkheden en functies zijn vervangen door in de cloud geïntegreerde tegenhangers.
 
 De aanstaande verwijdering/vervanging van [!DNL Experience Manager] vermogens zijn de volgende regels van toepassing :
 

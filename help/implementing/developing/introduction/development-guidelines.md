@@ -1,19 +1,19 @@
 ---
-title: Ontwikkelingsrichtlijnen voor AEM as a Cloud Service
+title: as a Cloud Service ontwikkelingsrichtsnoeren AEM
 description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 1%
+source-wordcount: '2745'
+ht-degree: 0%
 
 ---
 
-# Ontwikkelingsrichtlijnen voor AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+# as a Cloud Service ontwikkelingsrichtsnoeren AEM {#aem-as-a-cloud-service-development-guidelines}
 
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
->title="Ontwikkelingsrichtlijnen voor AEM as a Cloud Service"
+>title="as a Cloud Service ontwikkelingsrichtsnoeren AEM"
 >abstract="Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service en belangrijke manieren waarop het verschilt van AEM in gebouwen en AEM in AMS."
 >additional-url="https://video.tv.adobe.com/v/330555/" text="Demo van pakketstructuur"
 
@@ -33,7 +33,7 @@ De staat moet niet in geheugen worden bewaard maar in bewaarplaats voortgeduurd.
 
 ## Status van het bestandssysteem {#state-on-the-filesystem}
 
-Het bestandssysteem van de instantie mag niet worden gebruikt in AEM as a Cloud Service. De schijf is ephemraal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatieve invloed op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
+Gebruik het bestandssysteem van de instantie niet in AEM as a Cloud Service. De schijf is ephemraal en wordt verwijderd wanneer instanties worden gerecycled. Beperkt gebruik van het bestandssysteem voor tijdelijke opslag in verband met de verwerking van afzonderlijke aanvragen is mogelijk, maar mag niet worden misbruikt voor grote bestanden. Dit is omdat het een negatieve invloed op het hulpmiddelgebruiksquotum kan hebben en op schijfbeperkingen in werking kan stellen.
 
 Als voorbeeld waar het gebruik van het dossiersysteem niet wordt gesteund, zou de Publish rij ervoor moeten zorgen dat om het even welke gegevens die moeten worden voortgeduurd naar een externe dienst voor opslag op langere termijn wordt verscheept.
 
@@ -47,7 +47,7 @@ Code die als achtergrondtaken wordt uitgevoerd, moet ervan uitgaan dat de instan
 
 Om de problemen tot een minimum te beperken, moeten zo mogelijk langdurige banen worden vermeden, en deze moeten ten minste herbruikbaar zijn. Voor het uitvoeren van dergelijke banen gebruikt u Sling Jobs, die minstens eenmaal een garantie hebben en die daarom zo snel mogelijk opnieuw zal worden uitgevoerd als ze worden onderbroken. Maar ze zouden waarschijnlijk niet opnieuw van het begin moeten beginnen. Voor het plannen van dergelijke taken kunt u het beste de opdracht [Verkooptaken](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) planner als dit opnieuw verzekert minstens eenmaal uitvoering.
 
-De Sling Commons Planner zou niet voor het plannen moeten worden gebruikt aangezien de uitvoering niet kan worden gewaarborgd. Het is nog waarschijnlijker dat het gepland is.
+Gebruik de Sling Commons Planner niet voor het plannen aangezien de uitvoering niet kan worden gewaarborgd. Het is nog waarschijnlijker dat het gepland is.
 
 Op dezelfde manier, met alles dat asynchroon gebeurt, zoals handelend op observatiegebeurtenissen, (het zijn gebeurtenissen JCR of Sling resource), kan niet worden gewaarborgd om worden uitgevoerd en daarom moet met voorzichtigheid worden gebruikt. Dit geldt al voor AEM implementaties in het heden.
 
@@ -109,7 +109,7 @@ Als voorbeeld, kan het veranderen van een indexdefinitie op een grote inhoudsbew
 
 Voor lokale ontwikkeling worden logbestandvermeldingen geschreven naar lokale bestanden in het dialoogvenster `/crx-quickstart/logs` map.
 
-In cloudomgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manager of een opdrachtregelprogramma gebruiken om de logbestanden vast te zetten. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+In cloudomgevingen kunnen ontwikkelaars logbestanden downloaden via Cloud Manager of een opdrachtregelprogramma gebruiken om de logbestanden vast te zetten. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Logniveau instellen**
 
@@ -172,7 +172,7 @@ Thread dumps op Cloud-omgevingen worden voortdurend verzameld, maar kunnen op di
 
 Voor lokale ontwikkeling hebben ontwikkelaars volledige toegang tot CRXDE Lite (`/crx/de`) en de AEM webconsole (`/system/console`).
 
-Merk op dat bij lokale ontwikkeling (met behulp van de SDK), `/apps` en `/libs` U kunt rechtstreeks naar deze map schrijven. Dit is anders dan in een cloud-omgeving waar deze mappen op hoofdniveau onveranderlijk zijn.
+Bij lokale ontwikkeling (met de SDK) `/apps` en `/libs` U kunt rechtstreeks naar deze map schrijven. Dit is anders dan in een cloud-omgeving waar deze mappen op hoofdniveau onveranderlijk zijn.
 
 ### as a Cloud Service ontwikkelingsinstrumenten AEM {#aem-as-a-cloud-service-development-tools}
 

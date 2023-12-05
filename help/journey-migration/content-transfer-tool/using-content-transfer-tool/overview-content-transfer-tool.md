@@ -4,8 +4,8 @@ description: Leer hoe u met het gereedschap Inhoud overbrengen inhoud van een on
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 31%
+source-wordcount: '655'
+ht-degree: 28%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 31%
 >id="aemcloud_ctt_overview"
 >title="Overzicht"
 >abstract="Het hulpmiddel van de Overdracht van de inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen. Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Richtlijnen en best practices"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Richtlijnen en beste praktijken"
 
 Het hulpmiddel van de Overdracht van de Inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen.
 
-Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen.  Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer informatie .
+Met dit gereedschap worden ook opdrachtgevers (gebruikers of groepen) automatisch overgedragen.  Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer informatie .
 
 Met het gereedschap Inhoud overbrengen kunt u het proces voor inhoudsoverdracht integreren met Cloud Acceleration Manager. Hierdoor krijgt de gebruiker alle voordelen die het biedt:
 

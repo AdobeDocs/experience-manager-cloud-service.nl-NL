@@ -4,8 +4,8 @@ description: Leer hoe u inhoud van een Adobe Experience Manager-broninstantie (A
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 21%
+source-wordcount: '728'
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="Inhoud extraheren"
->abstract="Extractie heeft betrekking op het extraheren van inhoud van de Adobe Experience Manager-instantie (AEM) van de bron naar een tijdelijk gebied dat migratieset wordt genoemd. Een migratieset is een opslaggebied op de cloud dat door Adobe wordt geleverd om overgedragen content tijdelijk op te slaan tussen de AEM-broninstantie en de AEM Cloud Service-instantie."
+>abstract="Extractie heeft betrekking op het extraheren van inhoud van de Adobe Experience Manager-instantie (AEM) van de bron naar een tijdelijk gebied dat migratieset wordt genoemd. Een migratieset is een gebied van de wolkenopslag dat door Adobe wordt verstrekt om de overgebracht inhoud tussen de bron AEM instantie en de AEM van de Cloud Service tijdelijk op te slaan."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="Extractie naar boven"
 
 
@@ -61,15 +61,15 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
-## Extractie aanvullen {#top-up-extraction-process}
+## Extractie bovenaan {#top-up-extraction-process}
 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
 
 >[!NOTE]
->Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service. Als u de stap voor het vooraf kopiëren hebt gebruikt voor de eerste volledige extractie, kunt u de voorkopie voor volgende aanvullende extracties overslaan (als de ingestelde grootte voor de bovenste migratie kleiner is dan 200 GB). De reden is dat het tijd kan toevoegen aan het hele proces.
+>Na de eerste overdracht van inhoud wordt aanbevolen regelmatig differentiële toevoegingen toe te passen om de periode waarin de inhoud wordt vastgezet voor de uiteindelijke differentiële overdracht van inhoud te verkorten voordat deze live gaat met de Cloud Service. Als u de stap voor het vooraf kopiëren hebt gebruikt voor de eerste volledige extractie, kunt u de voorkopie voor volgende aanvullende extracties overslaan (als de ingestelde grootte voor de bovenste migratie kleiner is dan 200 GB). De reden is dat het tijd kan toevoegen aan het hele proces.
 >Het is ook van essentieel belang dat de inhoudstructuur van bestaande inhoud niet wordt gewijzigd vanaf het moment dat de eerste extractie wordt uitgevoerd tot het moment dat de aanvullende extractie wordt uitgevoerd. Top-ups kunnen niet worden uitgevoerd op inhoud waarvan de structuur is gewijzigd sinds de eerste extractie. Zorg ervoor dat u dit tijdens het migratieproces beperkt.
 
-Als het extractieproces is voltooid, kunt u deltacontent overdragen via de extractiemethode voor aanvullen.
+Als het extractieproces is voltooid, kunt u delta-inhoud overbrengen met behulp van de extractiemethode top-up.
 
 Voer de onderstaande stappen uit:
 
@@ -77,7 +77,7 @@ Voer de onderstaande stappen uit:
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. Het dialoogvenster voor de **extractie van de migratieset** wordt weergegeven. Klikken **Extraheren**.
+1. De **Extractie van migratieset** wordt weergegeven. Klikken **Extraheren**.
 
    >[!IMPORTANT]
    >Zorg dat de optie **Overwrite staging container during extraction** (voor het overschrijven van de stagingcontainer tijdens de extractie) is uitgeschakeld.

@@ -4,7 +4,7 @@ description: Onderzoek hoe u de Universele Redacteur kunt gebruiken om om het ev
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%
@@ -17,12 +17,12 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Bewerken in context met de universele editor"
->abstract="Ontdek hoe uw toepassingen zonder kop de Universal Editor kunnen gebruiken om weinig wrijving te veroorzaken, in context bewerken tot de vingertoppen van uw auteurs."
+>abstract="Ontdek hoe uw headless-apps de Universal Editor kunnen gebruiken om weinig wrijving te veroorzaken, in context-bewerking tot de vingertoppen van uw auteurs."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="De Universal Editor starten"
->abstract="In deze handleiding bekijken we de Universal Editor en hoe iedereen hiermee elk aspect van uw inhoud in een implementatie kan bewerken. Dit leidt tot een verbeterde snelheid van de inhoud.<br><br>Start deze module op een nieuw tabblad door hieronder te klikken en volg deze handleiding."
+>abstract="In deze handleiding verkent u de Universal Editor en hoe iedereen hiermee elk aspect van uw inhoud in een implementatie kan bewerken. Dit leidt tot een hogere snelheid van de inhoud.<br><br>Start deze module op een nieuw tabblad door hieronder te klikken en volg deze handleiding."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"

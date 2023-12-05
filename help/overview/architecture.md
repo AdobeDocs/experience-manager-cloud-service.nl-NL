@@ -2,14 +2,14 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 10%
+source-wordcount: '2658'
+ht-degree: 8%
 
 ---
 
-# Een inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+# Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
@@ -133,7 +133,7 @@ Er zijn andere aangrenzende services:
    * Is verantwoordelijk voor het blootstellen van klantgegevens zoals licentiemetriek (bijvoorbeeld inhoudsverzoeken, opslag, gebruikers) of gebruiksrapporten (zoals het aantal uploads, downloads).
    * De klantgegevens kunnen worden weergegeven via API&#39;s en binnen gebruikersinterfaces van het product (zoals Cloud Manager).
 * De Real-User Metric (RUM) dienst:
-   * Is verantwoordelijk voor het verzamelen van zeer belangrijke metriek van een klantenervaring (zoals paginameningen, kernWeb vitals, omzettingsgebeurtenissen), evenals het antwoorden aan bijbehorende vragen (bijvoorbeeld, hoogste paginameningen voor een bepaald domein in de laatste 7 dagen).
+   * Is verantwoordelijk voor het verzamelen van zeer belangrijke metriek van een klantenervaring (zoals paginameningen, kernWeb vitals, omzettingsgebeurtenissen), en het antwoorden aan bijbehorende vragen (bijvoorbeeld, hoogste paginameningen voor een bepaald domein in de laatste 7 dagen).
 * The Assets Compute service:
    * is verantwoordelijk voor het verwerken van geüploade afbeeldingen, video&#39;s en documenten, bijvoorbeeld PDF- en Adobe Photoshop-bestanden. Bij verwerking kunt u Adobe Sensei gebruiken om metagegevens van afbeeldingen en video te extraheren (zoals beschrijvende tags of primaire kleurtonen) en vervolgens uitvoeringen genereren (zoals verschillende formaten of formaten), met toegang tot API&#39;s zoals de Adobe Photoshop- en Adobe Lightroom-API&#39;s.
 * De Identity Management Service (IMS):
@@ -184,13 +184,13 @@ Zie voor meer informatie over clientlibs [Client-Side Libraries gebruiken op AEM
 
 ### Plaatsingspijpleidingen {#deployment-pipelines}
 
-Ontwikkelaars en beheerders beheren de applicatie AEM as a Cloud Service met behulp van een CI/CD-service (Continuous Integration/Continuous Delivery), die beschikbaar wordt gesteld via de Cloud Manager. Cloud Manager stelt ook alles bloot wat te maken heeft met bewaking, onderhoud, probleemoplossing (bijvoorbeeld toegang tot logbestanden) en licenties.
+Ontwikkelaars en beheerders beheren de AEM as a Cloud Service toepassing met behulp van de Continuous Integration/Continuous Delivery (CI/CD)-service, die beschikbaar wordt gesteld via de Cloud Manager. Cloud Manager stelt ook alles bloot wat te maken heeft met bewaking, onderhoud, probleemoplossing (bijvoorbeeld toegang tot logbestanden) en licenties.
 
 ![AEM as a Cloud Service - Implementatiearchitectuur](assets/architecture-aem-edge-deployment-pipelines.png "AEM as a Cloud Service - Implementatiearchitectuur")
 
 Cloud Manager beheert alle updates van de as a Cloud Service AEM. Het is verplicht, omdat dit de enige manier is om de klanttoepassing te maken, testen en implementeren voor de auteur, de voorvertoning en de publicatielagen. Deze updates kunnen worden geactiveerd door Adobe, wanneer een nieuwe versie van de AEM Cloud Service gereed is of door uzelf wanneer een nieuwe versie van de toepassing gereed is.
 
-Dit wordt uitgevoerd door een plaatsingspijpleiding, die aan elk milieu binnen een programma wordt gekoppeld. Wanneer een Cloud Manager-pijplijn wordt uitgevoerd, maakt deze een nieuwe versie van de klantapplicatie, zowel voor de authoring- als voor de publicatielaag. Dit wordt bereikt door de nieuwste klantpakketten te combineren met de nieuwste Adobe-basisinstallatiekopie.
+Dit wordt uitgevoerd door een plaatsingspijpleiding, die aan elk milieu binnen een programma wordt gekoppeld. Wanneer een Cloud Manager-pijplijn wordt uitgevoerd, maakt deze een nieuwe versie van de klantapplicatie, zowel voor de authoring- als voor de publicatielaag. Dit wordt bereikt door de nieuwste klantpakketten te combineren met de nieuwste Adobe image voor de basislijn.
 
 De plaatsingspijpleiding wordt teweeggebracht of wanneer de klanten codeveranderingen aanbrengen, of wanneer de Adobe een nieuwe onderhoudsversie opstelt.
 

@@ -2,10 +2,10 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 3%
+source-wordcount: '2275'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van 
 
    * **Sluitereffect:** Kies de optie `Wipe` value
       * De **Sluitereffect** Hiermee stelt u het beginpunt van de opname van het doel in. Indien **Sluitereffect** is ingeschakeld, wordt de bestemming, inclusief alle inhoud, teruggezet naar de versie van AEM die is opgegeven in Cloud Manager. Als deze optie niet is ingeschakeld, behoudt de bestemming de huidige inhoud als beginpunt.
-      * Houd er rekening mee dat deze optie **NOT** van invloed op de manier waarop de inname van inhoud wordt uitgevoerd. De inname gebruikt altijd een strategie voor het vervangen van inhoud en _niet_ een samenvoegstrategie voor inhoud, zowel in **Sluitereffect** en **Niet-sluitereffect** In bepaalde gevallen overschrijft de opname van een migratieset de inhoud van hetzelfde pad op de bestemming. Als de migratieset bijvoorbeeld `/content/page1` en de bestemming bevat al `/content/page1/product1`wordt de hele `page1` pad en de bijbehorende subpagina&#39;s, inclusief `product1`en vervangt u deze door de inhoud in de migratieset. Dit betekent dat een zorgvuldige planning moet worden uitgevoerd wanneer een **Niet-sluitereffect** opname naar een bestemming die inhoud bevat die behouden moet blijven.
+      * Deze optie doet **NOT** van invloed op de manier waarop de inname van inhoud wordt uitgevoerd. De inname gebruikt altijd een strategie voor het vervangen van inhoud en _niet_ een samenvoegstrategie voor inhoud, zowel in **Sluitereffect** en **Niet-sluitereffect** In bepaalde gevallen overschrijft de opname van een migratieset de inhoud van hetzelfde pad op de bestemming. Als de migratieset bijvoorbeeld `/content/page1` en de bestemming bevat al `/content/page1/product1`wordt de hele `page1` pad en de bijbehorende subpagina&#39;s, inclusief `product1`en vervangt u deze door de inhoud in de migratieset. Dit betekent dat een zorgvuldige planning moet worden uitgevoerd wanneer een **Niet-sluitereffect** opname naar een bestemming die inhoud bevat die behouden moet blijven.
 
    >[!IMPORTANT]
    > Als de instelling **Sluitereffect** wordt toegelaten voor de opname, stelt het de volledige bestaande bewaarplaats met inbegrip van de gebruikerstoestemmingen op de instantie van de doelCloud Service opnieuw in. Dit opnieuw instellen geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep en die gebruiker moet opnieuw aan de beheerdersgroep worden toegevoegd om een opname te beginnen.
@@ -73,18 +73,18 @@ Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van 
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
-## Opname aanvullen {#top-up-ingestion-process}
+## Top Up-inname {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
->title="Opname aanvullen"
+>title="Top Up-inname"
 >abstract="Gebruik de functie top-up om gewijzigde inhoud te verplaatsen sinds de vorige activiteit van de inhoudsoverdracht. Na voltooiing van Ingestie, controleer de logboeken om het even welke fout/waarschuwingen. Eventuele fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de klantenservice van de Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Logbestanden weergeven"
 
 Het gereedschap Inhoud overbrengen heeft een functie waarmee u differentiële inhoud kunt extraheren door een *top-up* van de migratieset. Hierdoor kan de migratieset worden gewijzigd, zodat alleen de inhoud wordt opgenomen die sinds de vorige extractie is gewijzigd, zonder dat alle inhoud opnieuw moet worden geëxtraheerd.
 
 >[!NOTE]
->Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service. Als u de pre-exemplaarstap voor de eerste opname hebt gebruikt, kunt u pre-exemplaar voor verdere bovenop-up ingestions overslaan (als de top-up migratie vastgestelde grootte minder dan 200 GB is). De reden is dat het tijd kan toevoegen aan het hele proces.
+>Na de eerste overdracht van inhoud wordt aanbevolen regelmatig differentiële toevoegingen toe te passen om de periode waarin de inhoud wordt vastgezet voor de uiteindelijke differentiële overdracht van inhoud te verkorten voordat deze live gaat met de Cloud Service. Als u de pre-exemplaarstap voor de eerste opname hebt gebruikt, kunt u pre-exemplaar voor verdere bovenop-up ingestions overslaan (als de top-up migratie vastgestelde grootte minder dan 200 GB is). De reden is dat het tijd kan toevoegen aan het hele proces.
 
 Als u differentiële inhoud wilt innemen nadat bepaalde indelingen zijn voltooid, moet u een [Extractie bovenaan](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)en gebruikt u vervolgens de innamemethode met de **Sluitereffect** option **uitgeschakeld**. Zorg ervoor dat u de **Sluitereffect** uitleg hierboven om te voorkomen dat inhoud die al op de bestemming staat, verloren gaat.
 
