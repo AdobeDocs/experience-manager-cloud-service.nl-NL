@@ -2,7 +2,7 @@
 title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
+source-git-commit: 738a0ceeb0a8cc9b08a1871ef3b2939cbcf2f80a
 workflow-type: tm+mt
 source-wordcount: '3709'
 ht-degree: 0%
@@ -410,7 +410,6 @@ Na een succesvolle configuratie, gebruik [Een Microsoft® Power Automate-flow aa
 U kunt een adaptief formulier configureren om gegevens bij verzending naar Workfront Fusion te verzenden. Met Workfront Fusion kunnen processen worden geautomatiseerd, zodat de gebruiker zich kan concentreren op nieuwe taken in plaats van dezelfde taken steeds opnieuw uit te voeren. Het automatiseert zowel eenvoudige als complexe taken, bespaart tijd en verzekert consistente procesuitvoering.
 
 De Adaptive Forms-editor biedt de **Een Workfront Fusion-scenario aanroepen** verzendt actie om Adaptive Forms-gegevens of -bijlagen naar een Workfront Fusion-scenario te verzenden. Als u de handeling Verzenden wilt gebruiken voor het verzenden van vastgelegde gegevens naar een Workfront Fusion-scenario, raadpleegt u [Een adaptief formulier verzenden naar Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
-
 
 ## Synchrone of asynchrone verzending gebruiken {#use-synchronous-or-asynchronous-submission}
 
