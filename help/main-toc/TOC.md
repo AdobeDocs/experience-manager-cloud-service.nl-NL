@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54ab961b9689075f6a34ff51ecf92bf1ae68ebf1
+source-git-commit: d3af2812e4f9e50937fbefbf9a0fb67004a460a9
 workflow-type: tm+mt
 source-wordcount: '4429'
 ht-degree: 4%
@@ -580,8 +580,8 @@ ht-degree: 4%
          + [AEM Forms as a Cloud Service met Adobe Analytics integreren](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Adaptieve Forms integreren in Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Adaptief Forms Analytics-rapport weergeven en begrijpen](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Een adaptief formulier integreren met Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Een adaptief formulier verzenden naar Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Een adaptief formulier integreren met Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Een adaptieve Forms insluiten in een AEM Sites-pagina](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Adaptief formulier insluiten op basis van Core Components op een externe webpagina](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Het aangepaste formulier insluiten op basis van Foundation Components op een externe webpagina](/help/forms/embed-adaptive-form-external-web-page.md)

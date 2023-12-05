@@ -3,7 +3,7 @@ title: Integratie van Adobe Workfront Fusion met AEM Forms-verzending
 description: Met Adobe Workfront Fusion kunt u zich richten op nieuwe taken in plaats van zich te richten op herhaalde taken. U kunt Adobe Workfront Fusion via Formulierverzending verbinden met een adaptief formulier.
 keywords: Een adaptief formulier verzenden naar Adobe Workfront Fusion, Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms en Workfront Fusion, How to connect Workfront Fusion with AEM Forms, Connect Workfront Fusion to a Form?
 topic-tags: author, developer
-source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
+source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -128,6 +128,7 @@ Een verbinding toevoegen:
 #### 1.3 Het Workfront-scenario activeren {#activate-scenario}
 
 Het scenario activeren:
+
 1. Klikken **[!UICONTROL Scenarios]** ![Pictogram Delen](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in het linkerdeelvenster.
 1. Klik op de knop **[!UICONTROL Inactive Scenario]** tab.
 1. Klik op de knop **AAN/UIT** schakelknop voor je AEM Forms-scenario.
