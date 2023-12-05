@@ -3,9 +3,9 @@ title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken
 keywords: hoe u verzendactie voor een adaptief formulier selecteert, een adaptief formulier koppelt aan een SharePoint-lijst, een adaptief formulier aansluit op een SharePoint-documentbibliotheek, een adaptief formulier aansluit op een formuliergegevensmodel
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3904'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ Een handeling voor verzenden selecteren en configureren voor uw formulier:
    * [Verzenden naar OneDrive](#submit-to-onedrive)
    * [Een AEM-workflow aanroepen](#invoke-an-aem-workflow)
    * [Verzenden naar Power Automate](#microsoft-power-automate)
+   * [Verzenden naar Workfront Fusion](#workfront-fusion)
 
 ## E-mail verzenden {#send-email}
 
@@ -432,6 +433,12 @@ U kunt een adaptief formulier configureren om een Microsoft® Power Automate Clo
 De Adaptive Forms-editor biedt de **Een Microsoft® Power Automate-flow aanroepen** verzenden actie om adaptieve formuliergegevens, bijlagen en Document of Record naar Power Automate Cloud Flow te verzenden. De handeling Verzenden gebruiken om vastgelegde gegevens naar Microsoft® Power Automate te verzenden, [Sluit uw as a Cloud Service Forms-exemplaar aan met Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
 Na een succesvolle configuratie, gebruik [Een Microsoft® Power Automate-flow aanroepen](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) verzenden actie om gegevens naar een Power Automate Flow te verzenden.
+
+## Verzenden naar Workfront Fusion {#workfront-fusion}
+
+U kunt een adaptief formulier configureren om gegevens bij verzending naar Workfront Fusion te verzenden. Met Workfront Fusion kunnen processen worden geautomatiseerd, zodat de gebruiker zich kan concentreren op nieuwe taken in plaats van dezelfde taken steeds opnieuw uit te voeren. Het automatiseert zowel eenvoudige als complexe taken, bespaart tijd en verzekert consistente procesuitvoering.
+
+De Adaptive Forms-editor biedt de **Een Workfront Fusion-scenario aanroepen** verzendt actie om Adaptive Forms-gegevens of -bijlagen naar een Workfront Fusion-scenario te verzenden. Als u de handeling Verzenden wilt gebruiken voor het verzenden van vastgelegde gegevens naar een Workfront Fusion-scenario, raadpleegt u [Een adaptief formulier verzenden naar Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
 ## Synchrone of asynchrone verzending gebruiken {#use-synchronous-or-asynchronous-submission}
 
