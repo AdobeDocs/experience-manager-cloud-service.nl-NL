@@ -3,9 +3,9 @@ title: Integratie van Adobe Workfront Fusion met AEM Forms-verzending
 description: Met Adobe Workfront Fusion kunt u zich richten op nieuwe taken in plaats van zich te richten op herhaalde taken. U kunt Adobe Workfront Fusion via Formulierverzending verbinden met een adaptief formulier.
 keywords: Een adaptief formulier verzenden naar Adobe Workfront Fusion, Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms en Workfront Fusion, How to connect Workfront Fusion with AEM Forms, Connect Workfront Fusion to a Form?
 topic-tags: author, developer
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ U kunt de verzendactie voor Workfont Fusion configureren voor:
 - [Nieuwe adaptieve Forms](#new-af-submit-action)
 - [Bestaande adaptieve formulieren](#existing-af-submit-action)
 
-#### 2.1 De verzendactie van een nieuw adaptief formulier voor Workfront Fusion configureren {#new-af-submit-action}
+#### Verzendactie voor nieuw adaptief formulier voor Workfront Fusion configureren {#new-af-submit-action}
 
 Verzendactie van nieuw adaptief formulier voor Workfront Fusion configureren:
 
@@ -165,7 +165,7 @@ Verzendactie van nieuw adaptief formulier voor Workfront Fusion configureren:
 1. Klik op **[!UICONTROL Create]**.
 1. Geef de naam voor het nieuwe adaptieve formulier op en klik op **[!UICONTROL Create]**.
 
-#### 2.2 Verzendactie configureren van bestaand adaptief formulier voor Workfront Fusion {#existing-af-submit-action}
+#### Verzendactie van bestaand adaptief formulier voor Workfront Fusion configureren {#existing-af-submit-action}
 
 Verzendactie van bestaand adaptief formulier voor Workfront Fusion configureren:
 
@@ -178,7 +178,7 @@ Verzendactie van bestaand adaptief formulier voor Workfront Fusion configureren:
    ![Handeling verzenden voor Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. Open de **[!UICONTROL Submission]** tab.
-1. Selecteer de **[Handeling verzenden]** als **[!UICONTROL Invoke a WorkFront Fusion Scenario]**
+1. Selecteer de **[!UICONTROL Submit action]** als **[!UICONTROL Invoke a WorkFront Fusion Scenario]**
 1. Selecteren **[!UICONTROL Workfront Fusion scenario]** in de vervolgkeuzelijst.
 1. Klik op **[!UICONTROL Done]**.
 
