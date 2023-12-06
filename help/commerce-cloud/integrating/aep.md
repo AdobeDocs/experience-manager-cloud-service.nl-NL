@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -215,10 +215,9 @@ Om React-based Peregrine en CIF kerncomponenten te initialiseren, creeer de vere
            baseUrl: storeConfig.storeRootUrl
        },
        eventsCollector: {
-           // Enable the Experience Platform Connector and define the org and datastream to use
-           aep: {
-               orgId: // TODO: add your orgId
-               datastreamId: // TODO: add your datastreamId
+           eventForwarding: {
+               commerce: true,
+               aep: false,
            }
        }
    };
@@ -432,7 +431,7 @@ Nadat u de bovenstaande installatie van het Experience Platform hebt voltooid, h
 
 ## Trigger `addToCart` gebeurtenis en verifieer gegevensverzameling {#event-trigger-verify}
 
-De bovenstaande stappen voltooien de installatie van AEM Commerce en Experience Platform. U kunt nu een `addToCart` gebeurtenis en verifieer gegevensinzameling gebruikend debugger en dataset van het Experience Platform __Statistieken en grafieken__ schakelen in de gebruikersinterface van het product.
+De bovenstaande stappen voltooien de installatie van AEM Commerce en Experience Platform. U kunt nu een `addToCart` gebeurtenis en verifieer gegevensinzameling gebruikend [Inspecteur gloed](https://chromewebstore.google.com/detail/snowplow-inspector/maplkdomeamdlngconidoefjpogkmljm?pli=1) en gegevensset __Statistieken en grafieken__ schakelen in de gebruikersinterface van het product.
 
 Als u de gebeurtenis wilt activeren, kunt u AEM auteur of de publicatieservice gebruiken vanuit uw lokale instellingen. In dit voorbeeld gebruikt u AEM auteur door u aan te melden bij uw account.
 
@@ -443,9 +442,7 @@ Als u de gebeurtenis wilt activeren, kunt u AEM auteur of de publicatieservice g
 1. Klik op de gewenste productkaart in het dialoogvenster __Productpagina__ selecteert u vervolgens __kleur, grootte__ de __Toevoegen aan winkelwagentje__ knop.
 
 
-1. Open de __Adobe Experience Platform Debugger__ in het extensiepaneel van de browser en selecteert u __Experience Platform Wed SDK__ in het linkerspoor.
-
-   ![AEP-foutopsporing](../assets/aep-integration/AEP-Debugger.png)
+1. Open de __Inspecteur gloed__ in het extensiepaneel van de browser en selecteert u __Experience Platform Wed SDK__ in het linkerspoor.
 
 
 1. Terugkeren naar de __Productpagina__ en klik op __Toevoegen aan winkelwagentje__ knop. Hiermee worden gegevens naar het Experience Platform verzonden. De __Adobe Experience Platform Debugger__ De extensie geeft de gebeurtenisdetails weer.
@@ -462,9 +459,9 @@ Als u de gebeurtenis wilt activeren, kunt u AEM auteur of de publicatieservice g
 
 ## Implementatiedetails {#implementation-details}
 
-De [CIF Experience Platform-aansluiting](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is op de bovenkant van [Experience Platform Connector voor Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), die deel uitmaakt van het [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
+De [CIF Experience Platform-aansluiting](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is op de bovenkant van [Gegevensverbinding voor Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), die deel uitmaakt van het [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
 
-Het project van de PWA Studio laat u Progressive Web Application (PWA) opslagplaatsen tot stand brengen die door Adobe Commerce of Magento Open Source worden aangedreven. Het project bevat ook een componentenbibliotheek genoemd [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) voor het toevoegen van logica aan visuele componenten. De [Peregrin-bibliotheek](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) biedt ook de aangepaste React-haken die worden gebruikt door [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) naadloos met Experience Platform te integreren.
+Het project van de PWA Studio laat u Progressive Web Application (PWA) opslagplaatsen tot stand brengen die door Adobe Commerce of Magento Open Source worden aangedreven. Het project bevat ook een componentenbibliotheek genoemd [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) voor het toevoegen van logica aan visuele componenten. De [Peregrin-bibliotheek](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) biedt ook de aangepaste React-haken die worden gebruikt door [CIF Experience Platform-aansluiting](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) naadloos met Experience Platform te integreren.
 
 
 ## Ondersteunde gebeurtenissen {#supported-events}
