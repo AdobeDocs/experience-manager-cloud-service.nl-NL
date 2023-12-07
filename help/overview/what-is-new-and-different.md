@@ -2,14 +2,14 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: d4502c7558fca7ecee89b2ce9429fd1c749d8e92
 workflow-type: tm+mt
-source-wordcount: '1891'
-ht-degree: 72%
+source-wordcount: '1883'
+ht-degree: 66%
 
 ---
 
-# Nieuwe en aangepaste functies {#what-is-new-and-what-is-different}
+# Wat is nieuw en wat is anders {#what-is-new-and-what-is-different}
 
 AEM is al vele jaren beschikbaar:
 
@@ -23,10 +23,10 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM as a Clo
 * [Upgrades](#upgrades)
 * [Cloud Manager](#cloud-manager)
 * [Onboarding](#onboarding)
-* [Ontwikkeling](#developing)
-* [Bewerkingen en prestaties](#operations-and-performance)
+* [Ontwikkelen](#developing)
+* [Exploitatie en prestaties](#operations-and-performance)
 * [Identity Management](#identity-management)
-* [Gebruikersinterface voor authoring](#authoring-user-interface)
+* [Gebruikersinterface voor ontwerpen](#authoring-user-interface)
 * [AEM Sites](#aem-sites)
 * [AEM Assets](#aem-assets)
 
@@ -115,9 +115,9 @@ Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangr
 
 * Nieuwe programma&#39;s maken en beheren. Zie [Programma&#39;s en programmatypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer informatie .
 
-* De AEM-omgevingen binnen deze programma&#39;s maken en beheren. Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie .
+* De AEM omgevingen binnen deze programma&#39;s maken en beheren. Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie .
 
-* De pijplijnen creëren en beheren voor implementatie van de klantcode en de bijbehorende configuratie in een bepaalde omgeving. Zie [Het vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie .
+* Het creëren van en het leiden van de pijpleidingen voor het opstellen van de klantencode en de verwante configuratie aan een specifiek milieu. Zie [Het vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie .
 
 * Meldingen ontvangen van belangrijke levenscyclusgebeurtenissen voor deze onderdelen (zoals productupdates).
 
@@ -152,7 +152,7 @@ Er zijn ook aanzienlijke verschillen door de aanwezigheid van:
 >
 >Voor een volledig overzicht van het instapproces raadpleegt u de [instapreis](/help/journey-onboarding/overview.md).
 
-## Ontwikkeling {#developing}
+## Ontwikkelen {#developing}
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ Er zijn ook aanzienlijke verschillen door de aanwezigheid van:
 
 De nieuwe architectuur die AEM as a Cloud Service ondersteunt, omvat een paar belangrijke wijzigingen in de algemene ontwikkelaarservaring. Een van de belangrijkste doelstellingen voor AEM as a Cloud Service is om ervaren klanten (die AEM op locatie of in de context van Adobe Managed Services hebben gebruikt) de mogelijkheid te bieden om zo snel mogelijk te migreren naar AEM as a Cloud Service, zonder het grootste deel van hun aangepaste code te hoeven herschrijven. Hiervoor zijn mogelijk wat aanpassingen vereist.
 
-### Cloudontwikkeling {#aem-as-a-cloud-service-developing-cloud-development}
+### Cloud Development {#aem-as-a-cloud-service-developing-cloud-development}
 
 Voor bestaande AEM-applicaties die worden uitgevoerd in AEM as a Cloud Service, worden de volgende stappen verwacht:
 
@@ -202,7 +202,7 @@ Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AE
 >
 >Houd er rekening mee dat in Cloud QuickStart niet alle functies van AEM Sites en AEM Assets mogelijk zijn. Het programma bestaat uit een eenvoudige authoringomgeving waar de meeste uitbreidingen kunnen worden ontwikkeld en getest.
 
-## Bewerkingen en prestaties {#operations-and-performance}
+## Exploitatie en prestaties {#operations-and-performance}
 
 >[!NOTE]
 >
@@ -236,13 +236,13 @@ Dit biedt een combinatie van de volgende voordelen:
 
 * Gebruikersvoorkeuren blijven lokaal voor elke specifieke instantie van AEM as a Cloud Service.
 
-## Gebruikersinterface voor authoring {#authoring-user-interface}
+## Gebruikersinterface voor ontwerpen {#authoring-user-interface}
 
 >[!NOTE]
 >
 >Voor meer details, [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) is een goed uitgangspunt.
 
-De basisbeginselen van het auteursgebruikersinterface (UI), voor zowel Plaatsen als Activa, zullen aan iedereen vertrouwd zijn die in het verleden AEM heeft gebruikt.
+De basisbeginselen van de authoringgebruikersinterface (UI), zowel voor Sites als Assets, zullen heel vertrouwd zijn voor iedereen die AEM vroeger heeft gebruikt.
 
 Het belangrijkste verschil is dat de gebruikersinterface alleen met aanraking werkt. De klassieke interface is niet meer beschikbaar. Verder zijn de basisbeginselen ongewijzigd, met alleen kleine zichtbare wijzigingen.
 
@@ -260,16 +260,16 @@ Het Assets-aanbod omvat assetverwerking van de volgende generatie in de cloud, e
 
 Zie [overzicht en inleiding tot Assets as a Cloud Service](/help/assets/overview.md) voor meer informatie.
 
-## Kennismaken met Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
+## Adobe Experience Manager as a Cloud Service leren kennen {#getting-to-know-aem-as-cloud-service}
 
 Zie voor meer informatie:
 
 * [Inleiding tot Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 * De [architectuur](/help/overview/architecture.md) van Adobe Experience Manager as a Cloud Service
-* [Belangrijke wijzigingen in AEM as a Cloud Service (releaseopmerkingen)](/help/release-notes/aem-cloud-changes.md)
-* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
-* [Belangrijke wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
-* [Inleiding tot AEM Assets as a Cloud Service](/help/assets/overview.md)
+* [Opvallende wijzigingen in AEM as a Cloud Service (opmerkingen bij de release)](/help/release-notes/aem-cloud-changes.md)
+* [Opvallende wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Opvallende wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+* [Introductie van AEM Assets as a Cloud Service](/help/assets/overview.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 >[!TIP]
