@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d3af2812e4f9e50937fbefbf9a0fb67004a460a9
+source-git-commit: 021fa3631aae7aa202c544deb3685daf4dc71aa7
 workflow-type: tm+mt
-source-wordcount: '4429'
+source-wordcount: '4434'
 ht-degree: 4%
 
 ---
@@ -543,6 +543,7 @@ ht-degree: 4%
       + [Tags beheren](/help/assets/tagging-management-assets-view.md)
    + Aanbevolen procedures{#best-practices}
       + [Beste werkwijzen zoeken](/help/assets/search-best-practices.md)
+      + [Metagegevensbeheer en best practices](/help/assets/metadata-best-practices.md)
    + Integratie met Adobe Workfront {#integrations}
       + [Integratie met [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Toewijzing van metagegevens van elementen configureren](/help/assets/configure-asset-metadata-mapping.md)

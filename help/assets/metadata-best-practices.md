@@ -1,0 +1,169 @@
+---
+title: Metagegevensbeheer en best practices
+description: Leer meer over best practices voor metagegevens om uw digitale middelen effectief te beheren.
+role: User, Admin
+hide: true
+hidefromtoc: true
+source-git-commit: 8434cb580ba8afc018a5a4357a4d249a06c566c2
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 0%
+
+---
+
+
+<!-- Keywords to focus on:
+metadata best practices
+aem metadata 
+experience manager metadata-->
+
+# Metagegevensbeheer en best practices {#metadata-best-practices}
+
+Om uw bedrijf te laten opvallen en meer klanten aan te trekken, is het van cruciaal belang gebruik te maken van beelden, video&#39;s en andere digitale middelen van hoge kwaliteit. Hiervoor hebt u een proces nodig waarmee u metagegevens kunt toevoegen aan alle digitale elementen, zodat u deze gemakkelijk kunt doorzoeken. Metagegevens zijn de gegevens die essentiële gegevens bevatten over digitale elementen, zoals de naam, het type, de wijzigingshistorie, de locatie in een opslagplaats en de bijbehorende tags. Metagegevens stroomlijnen middelenbeheer verbetert zoekbaarheid en toegankelijkheid en zorgt voor effectieve versiebeheer.
+
+Leer hoe u metagegevens in het Digital Asset Management (DAM)-systeem kunt gebruiken om effectief te werken [metagegevens van uw digitale elementen beheren](manage-metadata.md).
+
+## Typen metagegevens
+
+Op basis van de verschillende aspecten van gegevens worden metagegevens gecategoriseerd als technische metagegevens, informatieve metagegevens en metagegevens van het beheer.
+
+### Technische metagegevens
+
+Technische metagegevens omvatten de technische aspecten van een element. Dit soort metagegevens is van cruciaal belang voor de gebruikers om inzicht te krijgen in de inherente kenmerken van digitale elementen, waardoor een efficiënte verwerking en een efficiënt gebruik mogelijk worden.
+Het bevat details zoals:
+
+* Bestandsgrootte
+* Indeling
+* Resolutie
+* Dimensionen
+* Kleurmodus
+
+### Informatieve metagegevens
+
+Informatiemetagegevens omvatten beschrijvende informatie die het begrip van de inhoud van een element verbetert. Deze metagegevens zijn van cruciaal belang voor het detecteren van inhoud, doorzoekbaarheid en het begrijpen van de betekenis van het element. De informatieve meta-gegevens omvatten sleutelwoorden, titels, en beschrijvingen.
+
+Wanneer u bijvoorbeeld een video beheert in Experience Manager Assets, kunnen we de volgende metagegevens over informatie opnemen:
+
+* **Trefwoorden**: marketing, productintroductie, promotie
+* **Bijschrift**: Maak kennis met ons nieuwste product met spannende functies
+* **Beschrijving**: Een gedetailleerd overzicht van de video-inhoud.
+
+Gebruikers die op zoek zijn naar marketinggerelateerde inhoud, kunnen de betekenis van de bovenstaande video gemakkelijk vinden en begrijpen.
+
+
+### Administratieve metagegevens
+
+Administratieve metagegevens hebben betrekking op de beheeraspecten van digitale elementen. Het zorgt voor toegangsbeheer, naleving en beheer van de algemene levenscyclus van middelen binnen het systeem voor beheer van digitale middelen. Het bevat informatie over:
+
+* Eigendom van activa
+* Gebruiksrechten
+* Machtigingen
+* Overige administratieve gegevens
+
+De administratieve meta-gegevens verzekeren het correcte activabeheer, controlerend toegang, en naleving binnen het digitale systeem van het activabeheer.
+
+## Best practices voor metagegevens
+
+### De strategie voor metagegevens vanaf het begin definiëren
+
+Metagegevensbeheer begint met het definiëren van een metagegevensstrategie die een basis vormt voor het beoordelen van de langetermijnwaarde.
+
+Het maken van een aangepast metagegevensschema naar wens is van cruciaal belang wanneer u uw strategie voor metagegevens plant. Een goed ontworpen schema biedt een gestructureerd kader voor het indelen en indelen van elementen in Adobe Experience Manager.
+
+#### Video: Aangepaste velden toevoegen aan het metagegevensschema
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425977)
+
+Uw strategie voor metagegevens kan het volgende definiëren:
+
+* **Doelstellingen:** Beschrijf duidelijk de doelstellingen en de verwachte resultaten van de metagegevens. Bepaal wat u wilt bereiken door de metagegevens toe te voegen.
+
+* **Doel:** Bepaal waarom u meta-gegevens vangt. Geef de waarde op die aan uw processen, systemen of organisatie wordt toegevoegd.
+
+* **Toegankelijkheidsplan:** Maak een plan om de metagegevens gemakkelijk toegankelijk en te vinden. Verklaar wie het zal gebruiken, en de hulpmiddelen of methodes om te gebruiken.
+
+* **Eigenschappen van metagegevens:** Identificeer en bepaal zorgvuldig elke meta-gegevensbezit. Ervoor zorgen dat elke eigenschap een duidelijke reden heeft om in de overeenkomst te worden opgenomen, zodat deze aansluit bij de doelstellingen en het doel.
+
+Plan de strategie zonder twijfel om consistente resultaten in de hele opslagplaats te garanderen.
+
+### Een beheerplan voor metagegevens maken
+
+Het beheer van gegevens zorgt ervoor dat de inspanningen van de organisatie voor het beheer van metagegevens worden afgestemd op de algemene bedrijfsdoelstellingen.
+De governancestrategie kan omvatten:
+
+* Vaststelling van beleid en procedures voor het beheer van gegevens en metagegevens.
+* Vaststellen van normen voor gegevenskwaliteit en -integriteit.
+* Rollen en verantwoordelijkheden in gegevensbeheer definiëren.
+
+Bepaal waar de informatie vandaan komt en bestudeer de details van de metagegevensstrategie, inclusief de eigenschappen en de bronnen ervan. De schaal kan afhankelijk zijn van de complexiteit van de strategie. In grotere ondernemingen, is er een hoofdsysteem van het meta-gegevensbeheer dat veelvoudige systemen in de hoofdstapel controleert.
+
+<br>
+
+>[!NOTE]
+>
+>Leer hoe u [metagegevens van uw digitale elementen beheren](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
+
+### Verenigbaar zijn met de metagegevensstrategie
+
+Een consistente metagegevensstrategie zorgt voor een effectieve organisatie en opvraging van digitale elementen. Een strategische aanpak hanteren voor het vastleggen en implementeren van metagegevenswaarden, zodat de evolutie soepel verloopt zonder onnodige wijzigingen. <br>
+Bij het beheer van metagegevens in de hele onderneming is consistentie belangrijk bij het benoemen van en verwijzen naar elementen. Wanneer u bijvoorbeeld meerdere elementen tegelijk beheert, kunt u overwegen metagegevens in bulk toe te voegen. <br>
+Hieronder volgen enkele aanbevolen procedures:
+
+* **Gebruik geen dubbele waarden:** Als u een verzameling afbeeldingen uit een marketingcampagne hebt, gebruikt u consistente namen en vermijdt u dubbele afbeeldingen.<br>
+In plaats van bijvoorbeeld dubbele namen te gebruiken, *campagne_image_001* en *campagne_image_002*, een systematisch naamgevingsverdrag zoals *product_launch_001* en *product_launch_002*, waarbij een duidelijke en geordende identificatie wordt gewaarborgd.
+
+* **Gebruik op effectieve wijze gecontroleerde woordenboeken:** Implementeer gecontroleerde woordenboeken door gebruik te maken van gestandaardiseerde termen voor tags. <br>
+Zo kunt u termen zoals *product_launch* of *event_Promotie* bij het labelen van afbeeldingen met thema&#39;s om een systematische volgorde te behouden.
+
+* **Nauwkeurigheid en volledigheid behouden:** Voor het consistent houden van metagegevens zijn nauwkeurigheid, volledigheid en uitlijning tussen verschillende bronnen van cruciaal belang.<br>
+Wanneer u bijvoorbeeld metagegevens toevoegt aan een PDF-document, moet u controleren of details zoals auteurnamen en trefwoorden correct en volledig zijn.
+
+#### Video: bulkmetagegevens toevoegen aan elementen
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425978)
+
+### De doorzoekbaarheid van metagegevens beoordelen en verbeteren
+
+Beoordeel uw strategie voor metagegevens om de zoekbaarheid van metagegevens te verbeteren. Vereenvoudig workflows en verbeter zoekmogelijkheden voor efficiënt hergebruik. Vermijd het omgaan met metagegevens die geen duidelijk doel hebben.<br>
+U kunt de volgende aanbevolen procedures in overweging nemen om uw zoekbaarheid van metagegevens te optimaliseren:
+
+* **Trefwoordoptimalisatie:** Verbeter de doorzoekbaarheid van metagegevens door trefwoorden te optimaliseren die aan elementen zijn gekoppeld. U kunt de relevantie van trefwoorden voor bepaalde elementen in Assets Manager verbeteren door de volgende stappen uit te voeren:
+
+   1. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL File]** > **[!UICONTROL [Asset folder]]**.
+   1. Selecteer het element waarvan u de metagegevens wilt bijwerken en klik op **[!UICONTROL Properties]**.
+   1. Ga naar de **[!UICONTROL Advanced]** en klikt u op **[!UICONTROL Add]** onder de **[!UICONTROL Elevate for search keywords]**.
+   1. Voer het trefwoord in waarvoor u de zoekopdracht wilt opvoeren en klik vervolgens op **[!UICONTROL Add]**.<br>
+U kunt meerdere trefwoorden toevoegen en deze rangschikken naar prioriteit.
+   1. Klik op **[!UICONTROL Save & Close]**.<br>
+Zoek het element met de trefwoorden die u hebt toegevoegd. Het element wordt weergegeven in de bovenste zoekresultaten.
+
+  Leer hoe u [zoekopdracht opvoeren in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+
+* **Aangepaste metagegevensvelden:** Pas de velden met metagegevens aan om aanvullende informatie over elementen vast te leggen. Voeg bijvoorbeeld specifieke velden toe voor projectdetails, copyrightinformatie of andere relevante gegevens die de zoekmogelijkheden verbeteren.
+
+* **Metagegevensvalidatie:** Validatiecontroles uitvoeren op metagegevensinvoer om consistentie en nauwkeurigheid te waarborgen. Dit kan het instellen van richtlijnen voor bepaalde eigenschappen van metagegevens vereisen om dubbelzinnige of inconsistente informatie te voorkomen.
+
+* **Gebruik bijhouden:** De relevantie en het gebruik van verschillende eigenschappen van metagegevens in de loop der tijd beoordelen. Veelgebruikte metagegevens identificeren en de prioriteit ervan bepalen of een belangrijke bijdrage leveren aan zoek- en herstelprocessen.
+
+#### Video: Trefwoorden toevoegen om zoekbaarheid te verbeteren
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425979)
+
+### Metagegevens eenvoudig en begrijpelijk houden
+
+Vereenvoudig metagegevens voor beter bestuur en gebruikerstoepassing. Houd het eenvoudig en gemakkelijk te begrijpen, en moedig gebruikers aan om essentiële informatie toe te voegen. <br>
+Gebruik de volgende aanbevolen procedures om de metagegevens te vereenvoudigen:
+
+* **Opties voor eigenschappen optimaliseren:** Focus op het markeren van essentiële eigenschappen zonder de gebruikers te belasten met te veel metagegevensvelden om in te vullen. Als u bijvoorbeeld metagegevens voor een afbeelding toevoegt, neemt u alleen sleutelvelden op zoals titel, beschrijving en tags voor een effectieve categorisering.
+
+* **Overbodige standaardeigenschappen verwijderen:** Vereenvoudig het formulier met metagegevens door de standaardeigenschappen van de box te verwijderen die niet van belang zijn voor uw gebruik. Verwijder zelden-gebruikte standaardeigenschappen voor een schonere interface en ervaring.
+
+* **Metagegevens periodiek controleren en bijwerken:** Metagegevens regelmatig bijwerken en aanpassen aan veranderende behoeften en technologieën om ervoor te zorgen dat gebruikers in de loop der tijd waardevolle informatie verschaffen.
+
+### De reis van inhoud analyseren
+
+Onderzoek de leveringsketen van de inhoud om meta-gegevensbronnen te vinden en alle belanghebbenden, van bovenaf, voor een grondige beste praktijken benadering te betrekken. Neem verschillende personeelsleden op om volledige ondersteuning in de hele organisatie te garanderen. Neem meta-gegevens in diverse stadia op om de verantwoordelijkheid te delen om activa details tijdens het uploaden te verstrekken.
+
+Geef vroegtijdig informatie over doelstellingen, vooruitgang, mijlpalen en uitdagingen, zodat alle belanghebbenden er hun bijdrage aan kunnen leveren en kunnen samenwerken. Stimuleer samenwerking in de hele organisatie om efficiënte processen en waardevolle metagegevens te maken.
+
+Meer informatie over [metagegevens en de bijbehorende concepten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) om de metagegevens van uw Experience Manager effectief te beheren.
