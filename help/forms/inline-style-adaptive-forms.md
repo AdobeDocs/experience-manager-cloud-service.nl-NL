@@ -1,11 +1,11 @@
 ---
 title: Hoe kunt u inline stijlen toepassen op adaptieve formuliercomponenten?
 description: Leer aangepaste stijlen toe te passen op een adaptief formulier, kunt u ook inline CSS-eigenschappen toepassen op afzonderlijke componenten van een adaptief formulier.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 0%

@@ -1,11 +1,11 @@
 ---
 title: Hoe gebruik ik de lay-outmodus om het formaat van componenten voor adaptieve formulieren te wijzigen?
 description: Definieer de positie van AEM Forms-componenten, leer toegang te krijgen tot de lay-outmodus, wijzig de grootte van componenten, wijzig de grootte van deelvensters en definieer de lay-out met meerdere kolommen voor een deelvenster.
-feature: Adaptive Forms
 role: User
 level: Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 0%

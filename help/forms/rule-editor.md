@@ -1,11 +1,11 @@
 ---
 title: Hoe te om de regelredacteur te gebruiken om regels aan vormgebieden toe te voegen om dynamisch gedrag toe te voegen en complexe logica aan een adaptieve vorm te bouwen?
 description: Met de Adaptive Forms-regeleditor kunt u dynamisch gedrag toevoegen en complexe logica in formulieren opnemen zonder codes of scripts.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '6257'
 ht-degree: 0%

@@ -1,11 +1,11 @@
 ---
 title: Hoe te om een Redirect Pagina of Dank u bericht te vormen?
 description: Leer hoe gebruikers een bedankt-uw-bericht kunnen worden getoond of aan een webpagina kunnen worden opnieuw gericht die de vormauteurs kunnen vormen terwijl het creëren van het formulier.
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%

@@ -2,10 +2,11 @@
 title: Procedure voor het vooraf invullen van adaptieve formuliervelden
 description: Bestaande gegevens gebruiken om velden van een adaptief formulier vooraf in te vullen. Gebruikers kunnen basisgegevens vooraf invullen in een formulier door zich aan te melden met hun sociale profielen.
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
