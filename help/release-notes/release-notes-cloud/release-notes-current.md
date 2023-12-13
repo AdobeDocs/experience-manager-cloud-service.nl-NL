@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: ac7af61751c3cf751a7370b454855c5361fabe02
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,12 @@ Heb een blik bij de Video van het Overzicht van de Versie van november 2023 voor
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
 
 ### Programma voor vroegtijdige adoptie {#sites-early-adopter}
+
+**U kunt de [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om client-side verzameling voor AEM as a Cloud Service in te schakelen.
+
+Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt geboden. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-beheerde CDN of niet-Adobe-beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
+
+Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor de productie-, stage- en ontwikkelomgeving via uw e-mailadres dat aan uw Adobe ID is gekoppeld. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
 
 **[Tekenreeksen zoeken en vervangen in inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: Met de inhoudsfragmentconsole kunnen gebruikers op eenvoudige en intuïtieve wijze een tekenreeks die in meerdere inhoudsfragmenten tegelijk wordt weergegeven, vervangen om de snelheid van de inhoud te versnellen.
 

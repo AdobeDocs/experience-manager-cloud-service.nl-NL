@@ -2,16 +2,35 @@
 title: Inhoudsverzoeken van Cloud Servicen begrijpen
 description: Als u licenties voor inhoudsaanvragen van Adobe hebt aangeschaft, leert u meer over de typen inhoudsaanvragen die Adobe Experience Cloud als een service meet en over de verschillen met de analytische rapportagehulpprogramma's van een organisatie.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '2690'
 ht-degree: 0%
 
 ---
 
 # Verzoeken om Cloud Service-inhoud
 
-## Variaties in aanvragen voor inhoud van Cloud Servicen{#content-requests-variances}
+## Inleiding {#introduction}
+
+De de inhoudsverzoeken van de Cloud Service worden gemeten via server-zijinzameling van gegevens. De inzameling wordt toegelaten via CDN logboekanalyse.
+
+>[!NOTE]
+>Daarnaast geldt voor een beperkt aantal [Klanten met vroege adoptie](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter), wordt de inzameling aan de clientzijde ook toegelaten via RUM (Real User Monitoring) meting. U kunt meer leren door de documentatie te raadplegen in [dit artikel](#real-user-monitoring-for-aem-as-a-cloud-service).
+
+## Inhoudsverzoeken van Cloud Servicen begrijpen {#understaing-cloud-service-content-requests}
+
+Aanvragen voor inhoud worden automatisch op de server aan de rand van Adobe Experience Manager as a Cloud Service verzameld, via automatische analyse van de logbestanden die afkomstig zijn van de AEM as a Cloud Service CDN. Dit wordt gedaan door de verzoeken te isoleren die HTML terugkeren `(text/html)` of JSON `(application /Json)` inhoud van CDN, en gebaseerd op verscheidene hieronder gedetailleerde opname en uitsluitingsregels. Een inhoudsverzoek komt onafhankelijk van de teruggekeerde inhoud voor die van de CDN geheime voorgeheugens wordt gediend of de inhoud die terug naar de oorsprong van CDN (AEM verzenders) gaat.
+
+De Real User Monitoring (RUM) Data Service, de client-side collectie, biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt gegarandeerd. Dit geeft klanten geavanceerde inzichten in hun paginaverkeer en prestaties. Terwijl dit voor beide klanten voordelig is die of de Adobe beheerde CDN of een niet-Adobe beheerde CDN gebruiken. Bovendien kan het automatische verkeer die voor klanten nu rapporteren worden toegelaten die een niet-Adobe beheerde CDN gebruiken, waarbij de behoefte wordt verwijderd om het even welke verkeersrapporten met Adobe te delen.
+
+Voor klanten die hun eigen CDN bovenop AEM as a Cloud Service brengen, zal de server-zijrapportering in aantallen resulteren die niet kunnen worden gebruikt om met de vergunning gegeven inhoudsverzoeken te vergelijken. Deze aantallen zullen door de klant bij de rand van buitenste CDN moeten worden gemeten. Voor deze klanten, cliënt-zijrapportering en bijbehorende prestaties, [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) Dit is de aanbevolen Adobe. Zie de [releaseopmerkingen](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) voor informatie over de wijze van opt-in.
+
+## Verzameling op server {#serverside-collection}
+
+Er bestaan regels om bekende bots uit te sluiten, waaronder bekende services die regelmatig de site bezoeken om hun zoekindex of service te vernieuwen.
+
+### Variaties in aanvragen voor inhoud van Cloud Servicen {#content-requests-variances}
 
 De Verzoeken van de inhoud kunnen variaties met Analytics van een organisatie hebben rapporteringshulpmiddelen zoals samengevat in de volgende lijst. In het algemeen: *niet* analytische hulpmiddelen gebruiken die gegevens door middel van instrumentatie aan de clientzijde verzamelen om over het aantal inhoudsverzoeken voor een bepaalde plaats te rapporteren, eenvoudig omdat zij vaak afhankelijk zijn van de toestemming van de gebruiker om in werking te worden gesteld, waardoor zij ontbreken op een significant deel van het verkeer. De hulpmiddelen van de analyse die gegevensserver-kant in logboekdossiers verzamelen, of CDN- rapporten voor klanten die hun eigen CDN bovenop AEM as a Cloud Service toevoegen, zullen betere tellingen verstrekken. Voor het melden van paginaweergaven en de bijbehorende prestaties is de Adobe RUM Data Service de aanbevolen optie voor de Adobe.
 
@@ -31,15 +50,7 @@ De Verzoeken van de inhoud kunnen variaties met Analytics van een organisatie he
 
 Zie ook [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
-## Inhoudsverzoeken van Cloud Servicen begrijpen {#about-content-request}
-
-Inhoudsverzoeken worden automatisch bijgehouden aan de rand van de as a Cloud Service Adobe Experience Manager (AEM), via geautomatiseerde analyse van de logbestanden die afkomstig zijn van de AEM as a Cloud Service CDN, waarbij de aanvragen die HTML (text/html) of JSON (application/json) inhoud retourneren van de CDN worden geïsoleerd en op basis van verschillende hieronder beschreven opname- en uitsluitingsregels. Een inhoudsverzoek gebeurt onafhankelijk van de teruggekeerde inhoud die van CDN caches wordt gediend of die terug naar de oorsprong van CDN (AEM verzenders) gaat.
-
-Voor klanten die hun eigen CDN bovenop AEM as a Cloud Service brengen, zal dit volgen in aantallen resulteren die niet kunnen worden gebruikt om met de vergunning gegeven inhoudsverzoeken te vergelijken, die door de klant bij de rand van buitenste CDN zullen moeten worden gemeten.
-
-Er bestaan regels om bekende bots uit te sluiten, waaronder bekende services die regelmatig de site bezoeken om hun zoekindex of service te vernieuwen.
-
-### Typen opgenomen inhoudsaanvragen{#included-content-requests}
+### Typen opgenomen inhoudsaanvragen {#included-content-requests}
 
 | Type aanvraag | Content Request | Beschrijving |
 | --- | --- | --- |
@@ -51,7 +62,7 @@ Er bestaan regels om bekende bots uit te sluiten, waaronder bekende services die
 
 Zie ook [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
-### Typen verzoeken om uitgesloten inhoud{#excluded-content-request}
+### Typen verzoeken om uitgesloten inhoud {#excluded-content-request}
 
 | Type aanvraag | Content Request | Beschrijving |
 | --- | --- | --- |
@@ -67,3 +78,103 @@ Zie ook [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.m
 | Commerce integration framework-aanroepen uitsluiten | Uitgesloten | Dit zijn verzoeken aan AEM die door:sturen aan het Commerce integration framework-URL begint met `/api/graphql`—om dubbeltellingen te voorkomen, kunnen zij niet voor Cloud Service in rekening worden gebracht. |
 | Uitsluiten `manifest.json` | Uitgesloten | Manifest is geen API-aanroep. Het is hier om informatie op te geven over het installeren van websites op computers of mobiele telefoons. Adobe mag JSON-verzoek niet tellen voor `/etc.clientlibs/*/manifest.json` |
 | Uitsluiten `favicon.ico` | Uitgesloten | Terwijl de teruggekeerde inhoud niet HTML of JSON zou moeten zijn, zien wij dat in sommige scenario&#39;s zoals de authentificatiestromen van SAML, de favicons kunnen zijn teruggekeerd aangezien HTML daarom uitdrukkelijk van de telling wordt uitgesloten. |
+
+## Clientverzameling {#cliendside-collection}
+
+## Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+
+>[!INFO]
+>
+>Deze functie is alleen beschikbaar voor programma voor vroege adoptie.
+>U moet de AEM Cloud Service-versie gebruiken **2023 11 1427** en hoger om de RUM-datadienst mogelijk te maken.
+
+### Overzicht {#overview}
+
+Real User Monitoring (RUM) is een type technologie voor het controleren van de prestaties waarmee de digitale gebruikerservaring van een website of toepassing in real time wordt vastgelegd en geanalyseerd. Het biedt inzicht in de real-time prestaties van een webtoepassing en biedt een accuraat inzicht in de gebruikerservaring.
+
+De echte Controle van de Gebruiker (RUM) verstrekt diep inzicht in zeer belangrijke prestatiesmetriek direct vanaf de opening van URL tot het verzoek terug naar browser wordt gediend allen die de ontwikkelaars helpen de toepassing verbeteren om het voor het eind gemakkelijk te gebruiken - gebruikers te maken.
+
+### Wie kan profiteren van de RUM Data Monitoring Service? {#who-can-benefit-from-rum-data-monitoring-service}
+
+De Dienst van Gegevens RUM is voordelig voor degenen die CDN van de Adobe gebruiken, aangezien het een nauwkeurigere weerspiegeling van gebruikersinteractie aanbiedt, die een betrouwbare maatregel van websitebetrokkenheid verzekeren door het aantal Paginameningen op de cliënt-kant te weerspiegelen die met de bestaande server-kant CDN logboekmeningen van de Pagina kunnen worden vergeleken. Bovendien, voor klanten die hun eigen CDN gebruiken, kan de Adobe automatisch verkeer nu stroomlijnen die de Mening van de Pagina voor hen omvat, zo betekent zij geen verkeersrapport met Adobe moeten delen.
+
+Het is ook een grote kans om geavanceerde inzichten in uw paginaprestaties voor zowel de klanten te bereiken die, CDN van de Adobe gebruiken als voor hen die hun eigen CDN gebruiken.
+
+### Begrijp hoe de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) werkt {#understand-how-the-rum-data-service-works}
+
+Adobe Experience Manager gebruikt Real User Monitoring (RUM) om klanten en Adobe te helpen begrijpen, hoe bezoekers op Adobe Experience Manager-gebaseerde sites reageren, prestatieproblemen te diagnosticeren en de doeltreffendheid van experimenten te meten. RUM behoudt de privacy van bezoekers door middel van steekproeven - slechts een klein deel van alle paginaweergaven zal worden gecontroleerd - en oordeelkundige uitsluiting van alle persoonlijk identificeerbare informatie (PII).
+
+### Real User Monitoring (RUM) en Privacy {#rum-and-privacy}
+
+Real User Monitoring in Adobe Experience Manager is ontworpen om de privacy van bezoekers te behouden en gegevensverzameling tot een minimum te beperken. Als bezoeker betekent dit dat er geen persoonlijke gegevens worden verzameld op de site die u bezoekt of ter beschikking van de Adobe worden gesteld.
+
+Als plaatsexploitant, betekent dit geen extra opt-in wordt vereist om controle door deze eigenschap toe te laten.Zo, zal er geen extra pop-up voor de eindgebruikers zijn om voor het toelaten van controle RUM te aanvaarden.
+
+### RUM-gegevensbemonstering {#rum-data-sampling}
+
+Traditionele webanalytische oplossingen proberen gegevens te verzamelen voor elke bezoeker. Met Adobe Experience Manager Real User Monitoring wordt alleen informatie uit een klein deel van de paginaweergaven vastgelegd. Real User Monitoring (RUM) is bedoeld om te worden bemonsterd en geanonimiseerd in plaats van een vervanging voor analyses. Pagina&#39;s hebben standaard een bemonsteringsverhouding van 1:100. Site-beheerders kunnen dit aantal niet configureren om het bemonsteringsfrequentie vanaf vandaag te verhogen of te verlagen. Om het totale verkeer nauwkeurig te schatten, voor elke 100 paginagezichten, verzamelen wij gedetailleerde gegevens van één, die u een betrouwbare benadering van algemeen verkeer geven.&quot;
+
+Aangezien de beslissing of de gegevens worden verzameld, per paginaweergave wordt genomen, is het vrijwel onmogelijk interacties op meerdere pagina&#39;s bij te houden. RUM heeft geen concept van bezoeken, bezoekers, of zittingen, slechts van paginameningen. Dit is door ontwerp.
+
+### Welke gegevens worden verzameld {#what-data-is-being-collected}
+
+Real User Monitoring (RUM) wordt ontworpen om het verzamelen van persoonlijk identificeerbare informatie te verhinderen. De volledige reeks informatie die kan worden verzameld door Adobe Experience Manager Real User Monitoring wordt hieronder weergegeven:
+
+* De hostnaam van de site die wordt bezocht, bijvoorbeeld: `experienceleague.adobe.com`
+* Het algemene type gebruikersagent waarmee de pagina wordt weergegeven, bijvoorbeeld: bureaublad of mobiel
+* De tijd van de gegevensverzameling, zoals: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
+* De URL van de pagina die wordt bezocht, bijvoorbeeld: `https://experienceleague.adobe.com/docs`
+* De URL van de verwijzer (de URL van de pagina die aan de huidige pagina is gekoppeld, als de gebruiker een koppeling heeft gevolgd)
+* Een willekeurig gegenereerde id van de paginaweergave, in een indeling die vergelijkbaar is met: `2Ac6`
+* het gewicht of de omkering van de bemonsteringsfrequentie, zoals: `100`. Dit betekent dat slechts één op de honderd paginaweergaven wordt opgenomen
+* Het controlepunt of de naam van een bepaalde gebeurtenis in de volgorde waarin de pagina wordt geladen of waarmee de gebeurtenis als bezoeker wordt gebruikt
+* De bron, of herkenningsteken van het element DOM dat de gebruiker met voor het hierboven vermelde controlepunt in wisselwerking staat. Dit kan bijvoorbeeld een afbeelding zijn
+* Het doel, of verbinding met een externe pagina of een middel dat de gebruiker met voor het hierboven vermelde controlepunt in wisselwerking staat. Bijvoorbeeld: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
+* De prestatiemetriek van het Web van de Kern (CWV), de Grootste Inhoudelijke Verf (LCP), de Eerste Vertraging van de Input (FID), en Cumulatieve Verschuiving van de Lay-out (CLS) die de kwaliteit van de ervaring van de bezoeker beschrijven.
+
+### Hoe te opstelling de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) {#how-to-set-up-them-rum-data-service}
+
+* Als u wilt deelnemen aan ons programma voor vroege adoptie, kunt u een e-mail sturen naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor de productie-, stage- en ontwikkelomgeving via uw e-mailadres dat aan uw Adobe ID is gekoppeld. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
+* Zodra dit is voltooid, zal het productteam van Adobe een Kanaal van de Samenwerking van de Klant creëren.
+* Het team van het Product van de Adobe zal naar u richten om u van de domeinsleutel en het gegevensdashboard URL te voorzien waar u de Mening van de Pagina kunt bekijken en [De Kernwebinstellingen (CWV)](https://web.dev/vitals/) metriek die door de cliënt-kant Echte inzameling van de Controle van de Gebruiker (RUM) wordt verzameld.
+* Vervolgens wordt u begeleid hoe u de domeinsleutel kunt gebruiken om toegang te krijgen tot de URL van het gegevensdashboard en de metriek te bekijken.
+
+### Hoe de Echte Gegevens van de Controle van de Gebruiker (RUM) worden gebruikt {#how-rum-data-is-being-used}
+
+RUM-gegevens zijn nuttig voor de volgende doeleinden:
+
+* Om prestatiesknelpunten voor klantenplaatsen te identificeren en te bevestigen
+* Gestroomlijnd, automatisch verkeer rapporteert dat de Mening van de Pagina voor klanten gebruikend hun eigen CDN omvat, wat betekent zij geen verkeersrapport met Adobe moeten delen.
+* Als u wilt begrijpen hoe Adobe Experience Manager werkt met andere scripts (zoals analyses, doelwitten of externe bibliotheken) op dezelfde pagina, kunt u de compatibiliteit verbeteren.
+
+### Beperkingen en begrip van variatie in paginaweergaven en prestatiewaarden {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+
+Aangezien u deze gegevens zult analyseren, zouden er misschien variaties in paginameningen en andere prestatiesmetriek kunnen zijn die door Reële Controle van de Gebruiker (RUM) worden gemeld. Deze variaties kunnen worden toegeschreven aan verschillende factoren die inherent zijn aan realtime bewaking aan de clientzijde. Hier zijn belangrijke overwegingen voor klanten om in mening te houden wanneer het interpreteren van hun gegevens RUM:
+
+1. **Blokkeringen van Beheer**
+
+   * Eindgebruikers die tracker blockers of privacyuitbreidingen gebruiken kunnen de gegevensinzameling van de Controle van de Echte Gebruiker verhinderen (RUM), aangezien deze hulpmiddelen de uitvoering van de volgende manuscripten beperken. Deze beperking kan leiden tot ondergemelde paginaweergaven en gebruikersinteracties, waardoor een discrepantie ontstaat tussen de werkelijke siteactiviteit en de gegevens die door RUM worden vastgelegd.
+
+1. **Beperkingen bij het vastleggen van API/JSON-aanroepen**
+
+   * De de gegevensdienst van het RUM concentreert zich op de cliënt-zijervaring en vangt niet de achterste API of vraag JSON op dit ogenblik. De uitsluiting van deze vraag van de gegevens van de Controle van de Echte Gebruiker (RUM) zal tot variaties van de inhoudsverzoeken leiden die door Analytics CDN worden gemeten.
+
+### Veelgestelde vragen {#faq}
+
+1. **Hoe kan ik wegen vormen om in controle te omvatten of uit te sluiten?**
+
+   Klanten kunnen paden configureren om de URL&#39;s voor controle op te nemen of uit te sluiten door de omgevingsvariabelen in de configuratie in Cloud Manager in te stellen met behulp van de volgende variabelen: `AEM_WEBVITALS_EXCLUDE` en `AEM_WEBVITALS_INCLUDE_PATHS`
+
+   Houd er rekening mee dat de instelling voor &#39;include&#39; standaard is ingesteld op target &#39;/content&#39;. Het is belangrijk om te herinneren dat de wegen u hier moet vormen inhoudswegen binnen het systeem, niet de wegen URL u in uw browser ziet. Dit onderscheid is zeer belangrijk voor nauwkeurige vestiging en het aanpassen van uw configuratie om aan uw specifieke behoeften te voldoen.
+
+1. **Zou de Adobe alle paginameningen kunnen volgen alvorens de interactie klant beheerde CDN of op het punt bereikt wanneer de interactie de klant beheerde CDN bereikt?**
+
+   Ja.
+
+1. **Zullen de klanten de gegevensdienstmanuscripten van RUM met derdesystemen zoals Dynatrace kunnen integreren?**
+
+   Ja.
+
+1. **Worden &quot;Interactie met volgende verf&quot;, &quot;Tijd tot eerste byte&quot; en &quot;Eerste contenteuze verf&quot; webvitals Metrics verzameld?**
+
+   De interactie met volgende verf (INP) en Tijd aan eerste byte (TTFB) wordt verzameld.  De eerste inhoudelijke verf wordt momenteel niet verzameld.
