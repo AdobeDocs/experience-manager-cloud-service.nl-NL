@@ -2,9 +2,9 @@
 title: Inhoud voor Edge Delivery Services publiceren
 description: Leer hoe het publiceren van inhoud met Edge Delivery Services werkt en hoe te om AEM inhoud met Edge Delivery Services te publiceren.
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: e3bbcfa3fcef1ed1e5b6cf2da5a17c7e636b9539
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Met Edge Delivery Services verloopt het publiceren van inhoud naadloos, ongeacht de inhoudsbron:
 
-* Op documenten gebaseerde inhoud - Zie [Sectie Publiceren](https://www.aem.live/docs/#publish) van de documentatie bij Edge Delivery Services.
+* Op documenten gebaseerde inhoud - Zie [Sectie Publiceren](/help/edge/docs/authoring.md) van de documentatie bij Edge Delivery Services.
 * AEM inhoud - Zie de onderstaande details.
 
 ## Stroom publiceren vanuit AEM {#publishing-flow}

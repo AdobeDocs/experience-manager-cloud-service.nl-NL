@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen voor Edge Delivery Services
 description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM inhoud ontwerpt met Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U hebt twee
 
 In het geval van op documenten gebaseerde authoring kunt u werken met diverse bronnen, zoals Microsoft Word en Google Docs. Documenten uit deze bronnen worden pagina&#39;s op uw website. Koppen, lijsten, afbeeldingen, lettertype-elementen en video&#39;s kunnen allemaal van de oorspronkelijke bron naar uw website worden overgebracht. U kunt metagegevens toevoegen voor SEO-doeleinden of blokken gebruiken om met gestructureerde inhoud te werken en functionaliteit toe te voegen.
 
-Voor meer informatie over het schrijven van documenten raadpleegt u [dit document in de documentatie van Edge Delivery Services.](https://www.aem.live/docs/authoring)
+Voor meer informatie over het schrijven van documenten raadpleegt u [dit document in de documentatie van Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Universal Editor Authoring {#universal-editor}
 
@@ -40,7 +40,7 @@ Wanneer het gebruiken van Edge Delivery Services met AEM as a Cloud Service, is 
    * De inhoud blijft opgeslagen in AEM.
    * AEM geeft semantische HTML die nodig is voor inname.
    * Inhoud wordt gepubliceerd naar Edge Delivery Services.
-1. [Edge Delivery Services](https://www.aem.live/home) een 100% Lighthouse score behalen.
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) een 100% Lighthouse score behalen.
 
 Blokken zijn basisonderdelen van een pagina die door Edge Delivery Services wordt geleverd. De auteurs kunnen van standaardblokken kiezen die door Adobe worden verstrekt of van blokken die voor uw project door uw ontwikkelaars worden aangepast.
 

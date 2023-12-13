@@ -2,9 +2,9 @@
 title: Edge Delivery Services gebruiken met bestaande AEM projecten
 description: Leer hoe u de voordelen van Edge Delivery Services voor uw bestaande AEM kunt benutten
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ De AEM Pagina-editor werkt alleen met [AEM componenten](/help/implementing/devel
 
 In fase één kunt u de bestaande AEM sitestructuur, componenten en ontwerpgereedschappen blijven gebruiken. De websiterendering wordt herbouwd met behulp van blokken die JavaScript en CSS gebruiken en wordt via Edge Delivery Services geleverd.
 
-Zie de [Sectie Samenstellen](https://www.aem.live/docs/#build) van de documentatie van Edge Delivery Services voor meer informatie over blokken en hoe te om voor de diensten van de Levering van de Rand te ontwikkelen.
+Zie de [Sectie Samenstellen](/help/edge/developer/block-collection.md) van de documentatie van Edge Delivery Services voor meer informatie over blokken en hoe te om voor de diensten van de Levering van de Rand te ontwikkelen.
 
 Een converter in App Builder is vereist om de AEM gerenderde HTML-uitvoer te converteren en naar Edge Delivery Services te verzenden.
 
