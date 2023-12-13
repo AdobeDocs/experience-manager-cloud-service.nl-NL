@@ -2,9 +2,9 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2392'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van 
       * De Reeksen van de migratie zullen verlopen na een lange periode van inactiviteit, zodat wordt verwacht dat de inname vrij snel na de extractie plaatsvindt. Controleren [Vervaldatum migratieset](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor meer informatie.
 
    >[!TIP]
-   > Als de extractie momenteel wordt uitgevoerd, wordt dit in het dialoogvenster aangegeven. Nadat de extractie is voltooid, wordt de inname automatisch gestart. Als de extractie mislukt of wordt gestopt, wordt de innametaak geannuleerd.
+   > Als de extractie wordt uitgevoerd, wordt dit in het dialoogvenster aangegeven. Nadat de extractie is voltooid, wordt de inname automatisch gestart. Als de extractie mislukt of wordt gestopt, wordt de innametaak geannuleerd.
 
    * **Doel:** Selecteer de doelomgeving. In deze omgeving wordt de inhoud van de migratieset opgenomen.
       * De oplossingen steunen geen bestemming van de Milieu van de Snelle Ontwikkeling (RDE), en zij verschijnen niet als mogelijke bestemmingskeus, zelfs als de gebruiker toegang tot het heeft.
@@ -45,17 +45,17 @@ Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van 
       * Als de bron `Author`, wordt aanbevolen het geneesmiddel in te nemen in de `Author` laag op het doel. Evenzo als de bron `Publish`, moet het doel `Publish` ook.
 
    >[!NOTE]
-   > Als de doellaag `Author`, wordt de auteurinstantie gesloten tijdens de lengte van de opname en niet beschikbaar voor gebruikers (bijvoorbeeld, auteurs of iedereen die onderhoud uitvoert). De reden is om het systeem te beschermen en om eventuele veranderingen te voorkomen die verloren zouden kunnen gaan of een innameconflict zouden kunnen veroorzaken. Zorg ervoor dat uw team zich hiervan bewust is. Houd er ook rekening mee dat de omgeving tijdens de opname door de auteur wordt genegeerd.
+   > Als de doellaag `Author`, wordt de auteurinstantie gesloten tijdens de lengte van de opname en niet beschikbaar voor gebruikers (bijvoorbeeld, auteurs of iedereen die onderhoud uitvoert). De reden is om het systeem te beschermen en om eventuele veranderingen te voorkomen die verloren zouden kunnen gaan of een innameconflict zouden veroorzaken. Zorg ervoor dat uw team zich hiervan bewust is. Houd er ook rekening mee dat de omgeving tijdens de opname door de auteur wordt genegeerd.
 
    * **Sluitereffect:** Kies de optie `Wipe` value
       * De **Sluitereffect** Hiermee stelt u het beginpunt van de opname van het doel in. Indien **Sluitereffect** is ingeschakeld, wordt de bestemming, inclusief alle inhoud, teruggezet naar de versie van AEM die is opgegeven in Cloud Manager. Als deze optie niet is ingeschakeld, behoudt de bestemming de huidige inhoud als beginpunt.
-      * Deze optie doet **NOT** van invloed op de manier waarop de inname van inhoud wordt uitgevoerd. De inname gebruikt altijd een strategie voor het vervangen van inhoud en _niet_ een samenvoegstrategie voor inhoud, zowel in **Sluitereffect** en **Niet-sluitereffect** In bepaalde gevallen overschrijft de opname van een migratieset de inhoud van hetzelfde pad op de bestemming. Als de migratieset bijvoorbeeld `/content/page1` en de bestemming bevat al `/content/page1/product1`wordt de hele `page1` pad en de bijbehorende subpagina&#39;s, inclusief `product1`en vervangt u deze door de inhoud in de migratieset. Dit betekent dat een zorgvuldige planning moet worden uitgevoerd wanneer een **Niet-sluitereffect** opname naar een bestemming die inhoud bevat die behouden moet blijven.
+      * Deze optie doet **NOT** van invloed op de manier waarop de inname van inhoud wordt uitgevoerd. De inname gebruikt altijd een strategie voor het vervangen van inhoud en _niet_ een samenvoegstrategie voor inhoud, zowel in **Sluitereffect** en **Niet-sluitereffect** In bepaalde gevallen overschrijft de opname van een migratieset de inhoud van hetzelfde pad op de bestemming. Als de migratieset bijvoorbeeld `/content/page1` en de bestemming bevat al `/content/page1/product1`, verwijdert de inname de gehele `page1` pad en de bijbehorende subpagina&#39;s, inclusief `product1`en vervangt u deze door de inhoud in de migratieset. Dit betekent dat een zorgvuldige planning moet worden uitgevoerd wanneer een **Niet-sluitereffect** opname naar een bestemming die inhoud bevat die behouden moet blijven.
 
    >[!IMPORTANT]
    > Als de instelling **Sluitereffect** wordt toegelaten voor de opname, stelt het de volledige bestaande bewaarplaats met inbegrip van de gebruikerstoestemmingen op de instantie van de doelCloud Service opnieuw in. Dit opnieuw instellen geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep en die gebruiker moet opnieuw aan de beheerdersgroep worden toegevoegd om een opname te beginnen.
 
    * **Pre-kopie:** Kies de optie `Pre-copy` value
-      * U kunt de optionele pre-copy stap uitvoeren om de inname aanzienlijk te versnellen. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
+      * U kunt de optionele stap voor het kopiëren uitvoeren om de opname aanzienlijk te versnellen. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
       * Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om te lopen `Author` Inname eerst alleen. Zo versnelt u de `Publish` inname wanneer deze later wordt uitgevoerd.
 
    >[!IMPORTANT]
@@ -78,7 +78,7 @@ Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Top Up-inname"
->abstract="Gebruik de functie top-up om inhoud te verplaatsen die is gewijzigd sinds de vorige activiteit van de inhoudsoverdracht. Na voltooiing van Ingestie, controleer de logboeken om het even welke fout/waarschuwingen. Eventuele fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de klantenservice van de Adobe."
+>abstract="Gebruik de functie top-up om inhoud te verplaatsen die is gewijzigd sinds de vorige activiteit van de inhoudsoverdracht. Controleer de logboeken op fouten of waarschuwingen na voltooiing van de inname. Eventuele fouten moeten onmiddellijk worden verholpen door de gemelde problemen te verhelpen of door contact op te nemen met de klantenservice van de Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Logbestanden weergeven"
 
 Het gereedschap Inhoud overbrengen heeft een functie waarmee u differentiële inhoud kunt extraheren door een *top-up* van de migratieset. Hierdoor kan de migratieset worden gewijzigd, zodat alleen de inhoud wordt opgenomen die sinds de vorige extractie is gewijzigd, zonder dat alle inhoud opnieuw moet worden geëxtraheerd.
@@ -97,7 +97,7 @@ Begin met het maken van een Ingestietaak en zorg ervoor dat **Sluitereffect** is
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Problemen met inslikken van inhoud oplossen"
->abstract="Verwijs naar de innamelogboeken en de documentatie om oplossingen aan gemeenschappelijke redenen te vinden waarom een inname kan ontbreken, de manier vinden om het probleem te bevestigen en de inname opnieuw in werking te stellen."
+>abstract="Verwijs naar de innamelogboeken en de documentatie om oplossingen aan gemeenschappelijke redenen te vinden waarom een inname kan ontbreken en de manier vinden om het probleem te bevestigen. Zodra de injectie is opgelost, kan deze weer worden uitgevoerd."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Inhoudsoverdrachten valideren"
 
 ### CAM Kan migratietoken niet ophalen {#cam-unable-to-retrieve-the-migration-token}
@@ -135,11 +135,11 @@ Dit bericht geeft aan dat de Cloud Acceleration Manager de migratieservice van d
 * Als een [IP de Lijst van gewenste personen is toegepast](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager wordt het bereiken van de migratieservice door Cloud Acceleration Manager geblokkeerd. Een IP adres kan niet voor ingesties worden toegevoegd omdat zijn adres dynamisch is. Momenteel, is de enige oplossing de IP lijst van gewenste personen tijdens de opname en het indexeren proces onbruikbaar te maken.
 * Er kunnen andere redenen zijn die een onderzoek vereisen. Neem contact op met de klantenservice van de Adobe als de opname of indexering nog steeds mislukt.
 
-### Updates en oplossingen AEM versie
+### Updates en oplossingen AEM versie {#aem-version-updates-and-ingestions}
 
 [Versie-updates AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) worden automatisch toegepast op omgevingen om deze up-to-date te houden met de meest recente AEM as a Cloud Service versie. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving.
 
-Als de &quot;Updates van de Versie van de AEM&quot;op het bestemmingsprogramma wordt ingezien, zal het innameproces proberen om zijn rij onbruikbaar te maken alvorens het begint. Wanneer de opname is voltooid, wordt de updaterstatus van de versie geretourneerd naar de staat waarin deze zich bevond voordat de opname(en) werd gestart.
+Als de &quot;Updates van de Versie van de AEM&quot;op het bestemmingsprogramma wordt ingezien, probeert het innameproces om zijn rij onbruikbaar te maken alvorens het begint. Wanneer de opname volledig is, wordt de status van de versieupdater teruggegeven aan hoe het was alvorens ingestions begonnen.
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ Als &quot;AEM de Updates van de Versie&quot;actief is (namelijk de updates lopen
 
 >[!NOTE]
 >
-> De &quot;AEM Updates van de Versie&quot;wordt in werking gesteld in de pijpleiding van het milieu en zal wachten tot de pijpleiding duidelijk is. Als updates langer dan verwacht in de wachtrij worden geplaatst, moet u ervoor zorgen dat de pijplijn niet onbedoeld is vergrendeld in een aangepaste workflow.
+> De &quot;AEM Updates van de Versie&quot;wordt in werking gesteld in de pijpleiding van het milieu en wacht tot de pijpleiding duidelijk is. Als updates langer in de wachtrij worden geplaatst dan u had verwacht, moet u ervoor zorgen dat de pijpleiding niet per ongeluk is vergrendeld in een aangepaste workflow.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Bijkomende congestiefout als gevolg van Uniqueness Constraint
+### Bijkomende congestiefout als gevolg van Uniqueness Constraint {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 Een gemeenschappelijke oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) error is een conflict in knoop ids. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
@@ -165,7 +165,7 @@ Het kan ook gebeuren als een knoop op de bestemming tussen een inname en een ver
 
 Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud, moet beslissen welke van de twee knooppunten moet worden verwijderd, rekening houdend met andere inhoud die ernaar verwijst. De oplossing kan vereisen dat de top-up extractie opnieuw wordt gedaan zonder de beledigende knoop.
 
-### Opsommingsfout vanwege niet-verwijderen knooppunt waarnaar wordt verwezen
+### Opsommingsfout vanwege niet-verwijderen knooppunt waarnaar wordt verwezen {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 Een andere veelvoorkomende oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) de mislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
@@ -175,11 +175,17 @@ Dit kan gebeuren als een knooppunt op de bestemming wordt gewijzigd tussen een o
 
 De oplossing kan vereisen dat de top-up extractie opnieuw wordt gedaan zonder de beledigende knoop. Of u maakt een kleine migratieset van het aanstootgevende knooppunt, maar met &quot;include-versies&quot; uitgeschakeld.
 
-De beste praktijken wijzen erop dat als **Niet-sluitereffect** opname moet worden uitgevoerd met behulp van een migratieset die versies bevat (dat wil zeggen, geëxtraheerd met &quot;include-versies&quot;=true), het is van cruciaal belang dat de inhoud op de bestemming zo weinig mogelijk wordt gewijzigd, totdat de migratie is voltooid. Anders kunnen deze conflicten optreden.
+De beste praktijken wijzen erop dat als **Niet-sluitereffect** opname moet worden uitgevoerd met behulp van een migratieset die versies bevat. Het is van cruciaal belang dat de inhoud op de bestemming zo weinig mogelijk wordt gewijzigd, totdat de migratie is voltooid. Anders kunnen deze conflicten optreden.
 
-### Ingestie gestopt
+### Ingestiefout vanwege waarden voor eigenschappen van grote knooppunten {#ingestion-failure-due-to-large-node-property-values}
 
-Een opname die met een lopende extractie als zijn reeks van bronmigratie werd gecreeerd zal geduldig wachten tot die extractie slaagt, en op dat punt zal normaal beginnen. Als de extractie mislukt of wordt gestopt, beginnen de opname en de indexeertaak niet, maar worden deze geannuleerd. In dit geval controleert u de extractie om te bepalen waarom dit is mislukt, verhelpt u het probleem en begint u opnieuw te extraheren. Als de vaste extractie eenmaal is uitgevoerd, kan een nieuwe opname worden gepland.
+Eigenschapwaarden voor knooppunten die zijn opgeslagen in MongoDB, mogen niet groter zijn dan 16 MB. Als een nodewaarde de gesteunde grootte overschrijdt, ontbreekt het opnemen en het logboek zal een bevatten `BSONObjectTooLarge` fout en geef op welk knooppunt het maximum heeft overschreden. Dit is een MongoDB-beperking.
+
+Zie de `Node property value in MongoDB` notitie in [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) voor meer informatie en een koppeling naar een gereedschap voor eikenhout waarmee u alle grote knooppunten kunt vinden. Als alle knooppunten met grote afmetingen zijn verholpen, voert u de extractie en inname opnieuw uit.
+
+### Ingestie gestopt {#ingestion-rescinded}
+
+Een opname die met een lopende extractie werd gecreeerd aangezien zijn bronmigratie wordt geplaatst wacht geduldig tot die extractie slaagt, en op dat punt begint normaal. Als de extractie mislukt of wordt gestopt, beginnen de opname en de indexeertaak niet, maar worden deze geannuleerd. In dit geval controleert u de extractie om te bepalen waarom dit is mislukt, verhelpt u het probleem en begint u opnieuw te extraheren. Als de vaste extractie eenmaal is uitgevoerd, kan een nieuwe opname worden gepland.
 
 ## Volgende functies {#whats-next}
 
