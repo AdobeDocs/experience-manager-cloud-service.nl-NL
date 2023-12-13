@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
-source-wordcount: '2962'
+source-wordcount: '3070'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ Een document kan ook meerdere ontvangers hebben. Een creditcardtoepassing kan bi
 
 Een Cloud Service en volgorde voor ondertekening selecteren:
 
-![Cloud-service](assets/cloud-service.png)
+![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. Selecteer in de inhoudbrowser de optie **[!UICONTROL Form Container]** en selecteert u de **[!UICONTROL Configure]** ![vormen](assets/Smock_Wrench_18_N.svg) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven.
 1. Vouw in de eigenschappenbrowser de optie **[!UICONTROL Electronic Signature]** en selecteert u de **[!UICONTROL Enable Adobe Sign]** -optie. Het maakt [!DNL Adobe Sign] voor een adaptief formulier.
@@ -170,6 +170,10 @@ Een Cloud Service en volgorde voor ondertekening selecteren:
 
    De vervolgkeuzelijst bevat een lijst met Cloud Servicen in het dialoogvenster `global` map in Gereedschappen > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Bovendien worden in de vervolgkeuzelijst ook de Cloud Servicen weergegeven die aanwezig zijn in de map die u selecteert in het dialoogvenster **[!UICONTROL Configuration Container]** wanneer u een adaptief formulier maakt.
 
+1. Selecteer de optie om de verzendactie te configureren met **[!UICONTROL Submit the form]**. U kunt een van de volgende twee opties selecteren:
+   * **Het formulier verzenden (en de overeenkomst verzenden voor ondertekening)**: Met deze optie wordt het formulier direct verzonden en vervolgens het formulier voor ondertekening verzonden naar de ontvangers.
+   * **Het formulier verzenden (nadat elke ontvanger de ondertekeningsceremonie heeft voltooid)**: Met deze optie wordt Adaptive Forms alleen verzonden nadat alle ondertekenaars het ondertekeningsproces hebben voltooid. U kunt het interval vormen om de het ondertekenen status voor alle ondertekenaars te controleren. Zie voor meer informatie  [Configureren [!DNL Adobe Acrobat Sign] planner](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+
 1. Selecteer de handtekeningvolgorde in het menu **[!UICONTROL Recipients can complete]** in. De ontvangers kunnen een adaptief formulier ondertekenen **[!UICONTROL Sequentially]** - een na een andere ontvanger, of **[!UICONTROL Simultaneously]** - in willekeurige volgorde.
 
    Op volgorde ontvangt één ontvanger de Adobe Sign-overeenkomst tegelijk. Nadat de ontvanger de toegewezen actie voltooit, wordt de overeenkomst verzonden naar de volgende ontvanger, etc.
@@ -177,6 +181,10 @@ Een Cloud Service en volgorde voor ondertekening selecteren:
    Tegelijkertijd ontvangen alle ontvangers de Adobe Sign-overeenkomst en kunnen zij parallel met elkaar handelen.
 
 1. Gebruik het veld Overeenkomst-id om een bindref aan overeenkomst-id (agreementId) te koppelen. Het voegt Overeenkomst ID aan de sectie afBoundData van voorlegt gegevens voor op schema-gebaseerde vormen toe. De overeenkomst-id wordt ook toegevoegd aan het gedeelte afSubmissionInfo in de verzonden gegevens voor alle formulieren die geschikt zijn voor Adobe Sign. U kunt de overeenkomst-id gebruiken voor het bijhouden van de status van de overeenkomst met behulp van aangepaste code (aangepaste implementatie is vereist).
+
+   >[!NOTE]
+   >
+   > Als een adaptief formulier wordt gemaakt met een formuliergegevensmodel, wordt het veld Overeenkomst-id weergegeven in het dialoogvenster.
 
 1. [Ontvangers toevoegen aan een adaptief formulier](working-with-adobe-sign.md#addsignerstoanadaptiveform) en selecteer Gereed ![Opslaan](assets/save_icon.svg) om de wijzigingen op te slaan.
 

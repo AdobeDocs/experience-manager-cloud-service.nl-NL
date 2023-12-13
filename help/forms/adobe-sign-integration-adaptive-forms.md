@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -231,9 +231,12 @@ De vertegenwoordiger genereert en deelt referenties met u. In de volgende sectie
 
 Nu kunt u [Adobe Acrobat Sign-velden toevoegen aan een adaptief formulier gebruiken](working-with-adobe-sign.md) of [AEM](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Zorg ervoor dat u de configuratiecontainer die voor de configuratie van de Cloud Service wordt gebruikt aan al Adaptive Forms toevoegt die voor wordt toegelaten [!DNL Adobe Acrobat Sign]. U kunt een configuratiecontainer opgeven met de eigenschappen van een adaptief formulier.
 
-## (Alleen voor AEM workflows) Configureren [!DNL Adobe Acrobat Sign] planner om de ondertekeningsstatus te synchroniseren {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## Configureren [!DNL Adobe Acrobat Sign] planner om de ondertekeningsstatus te synchroniseren {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-Wanneer u [!DNL Adobe Acrobat Sign] Workflowstap voor het ondertekenen van een adaptief formulier: het formulier kan door ondertekenaars worden doorgegeven of tegelijkertijd naar alle ondertekenaars worden verzonden, afhankelijk van de configuratie van de workflowstap. [!DNL Adobe Acrobat Sign] Aangepaste adaptieve Forms worden alleen naar Experience Manager Forms Server verzonden nadat alle ondertekenaars het ondertekeningsproces hebben voltooid.
+AEM Forms as a Cloud Service, verleent de plannerdienst die de status van ondertekenaars met bepaalde intervallen controleert. De scenario&#39;s waarin u de plannerdienst vormt:
+
+* Als u [Het formulier verzenden (nadat elke ontvanger de ondertekeningsceremonie heeft voltooid)](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) om een document te ondertekenen, wordt het formulier pas verzonden nadat alle ondertekenaars het formulier hebben ondertekend.
+* Als u het [Stap aanmelden in een AEM workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) als u een document wilt ondertekenen, wacht de stap voor ondertekenen tot alle ondertekenaars het document ondertekenen, voordat wordt doorgegaan met de volgende stap van de workflow.
 
 Standaard worden de [!DNL Adobe Acrobat Sign] De diensten van de planner controleren (opiniepeilingen) ondertekeningsreactie na om de 24 uur. U kunt het standaardinterval voor uw milieu veranderen.
 
