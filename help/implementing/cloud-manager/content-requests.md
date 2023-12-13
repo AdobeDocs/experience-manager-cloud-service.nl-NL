@@ -2,7 +2,7 @@
 title: Inhoudsverzoeken van Cloud Servicen begrijpen
 description: Als u licenties voor inhoudsaanvragen van Adobe hebt aangeschaft, leert u meer over de typen inhoudsaanvragen die Adobe Experience Cloud als een service meet en over de verschillen met de analytische rapportagehulpprogramma's van een organisatie.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
+source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
 workflow-type: tm+mt
 source-wordcount: '2690'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Zie ook [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.m
 
 ## Clientverzameling {#cliendside-collection}
 
-## Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
