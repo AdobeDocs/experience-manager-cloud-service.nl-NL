@@ -2,9 +2,9 @@
 title: Uw inhoud bijwerken via AEM Assets API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u de REST API kunt gebruiken om toegang te krijgen tot de inhoud van de Content Fragments en deze bij te werken.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -321,6 +321,7 @@ U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Alle
 
 ## Aanvullende bronnen {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service API&#39;s](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [Elementen HTTP-API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API-naslag](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)

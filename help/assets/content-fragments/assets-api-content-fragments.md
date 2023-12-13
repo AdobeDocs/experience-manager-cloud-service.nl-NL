@@ -3,14 +3,14 @@ title: Adobe Experience Manager as a Cloud Service Content Fragments Support in 
 description: Meer informatie over ondersteuning voor Content Fragments in de HTTP API Middelen, een belangrijke Adobe Experience Manager-functie voor headless-levering.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 38cb2605e2133e858c60644084cf515a03b54f60
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 1%
+source-wordcount: '1747'
+ht-degree: 0%
 
 ---
 
-# Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+# Ondersteuning voor inhoudsfragmenten in AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 
 ## Overzicht {#overview}
 
@@ -29,6 +29,10 @@ Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een b
 >* inclusief ondersteuning voor inhoudsfragmenten
 >
 >De huidige implementatie van de HTTP-API voor middelen is gebaseerd op de [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) architectonische stijl.
+
+>[!NOTE]
+>
+>Voor de meest recente informatie over Experience Manager-API&#39;s gaat u ook naar [Adobe Experience Manager as a Cloud Service API&#39;s](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 De [REST-API voor middelen](/help/assets/mac-api-assets.md) Hiermee kunnen ontwikkelaars voor Adobe Experience Manager as a Cloud Service via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen) rechtstreeks toegang krijgen tot inhoud (opgeslagen in AEM) via de HTTP-API.
 
@@ -215,7 +219,7 @@ De binaire gegevens van een element worden blootgesteld als een verbinding SIREN
 
 Elementen kunnen meerdere uitvoeringen hebben. Deze worden doorgaans weergegeven als onderliggende entiteiten, waarbij één uitzondering een miniatuuruitvoering is die wordt weergegeven als een koppeling van het type `thumbnail` ( `rel="thumbnail"`).
 
-### Contentfragmenten {#content-fragments}
+### Inhoudsfragmenten {#content-fragments}
 
 A [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal soort actief. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals tekst, getallen, datums.
 
@@ -345,7 +349,7 @@ Zie hier voor gedetailleerde API-referenties:
 
 * [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
-* [HTTP-API voor assets](/help/assets/mac-api-assets.md)
+* [Elementen HTTP-API](/help/assets/mac-api-assets.md)
 
    * [Beschikbare functies](/help/assets/mac-api-assets.md#available-features)
 

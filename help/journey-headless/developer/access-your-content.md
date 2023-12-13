@@ -2,9 +2,9 @@
 title: Toegang tot uw inhoud via AEM levering-API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u GraphQL-query's kunt gebruiken om toegang te krijgen tot de inhoud van Content Fragments.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 0d0b91551582040c39d57b29c8f2141c2ff6d553
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1344'
 ht-degree: 0%
 
 ---
@@ -356,6 +356,7 @@ Nu u hebt geleerd hoe u toegang kunt krijgen tot inhoud zonder kop en deze kunt 
 
 ## Aanvullende bronnen {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service API&#39;s](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [GraphQL.org](https://graphql.org)
    * [Schemas](https://graphql.org/learn/schema/)
    * [Variabelen](https://graphql.org/learn/queries/#variables)
