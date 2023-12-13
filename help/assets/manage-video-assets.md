@@ -1,18 +1,18 @@
 ---
-title: Videoassets beheren
+title: Video-elementen beheren
 description: Video-elementen uploaden, voorvertonen, notities aanbrengen en publiceren in [!DNL Adobe Experience Manager].
 contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
 workflow-type: tm+mt
-source-wordcount: '4595'
-ht-degree: 5%
+source-wordcount: '4563'
+ht-degree: 4%
 
 ---
 
-# Videoassets beheren {#manage-video-assets}
+# Video-elementen beheren {#manage-video-assets}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -73,8 +73,7 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
 **Google Cloud-instellingen configureren:**
 
-1. Maak een Google-account.
-   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+1. [Een Google-account maken](https://accounts.google.com/lifecycle/flows/signup?flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;dsh=S-1878016829%3A1702493284416645&amp;theme=glif).
 
    Als u al een Google-account hebt, kunt u de volgende stap overslaan.
 
@@ -89,7 +88,7 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
    Uw project-id is gebaseerd op uw projectnaam. Kies daarom de projectnaam zorgvuldig en deze kan niet worden gewijzigd nadat deze is gemaakt. U moet dezelfde project-id opnieuw invoeren wanneer u YouTube later instelt in Experience Manager. Schrijf het daarom op.
 
-1. Selecteer **[!UICONTROL Create]**.
+1. Selecteren **[!UICONTROL Create]**.
 
 1. Voer een van de volgende handelingen uit:
 
@@ -122,7 +121,7 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
    `https://<servername.domain>:<port_number>`
 
-   Bijvoorbeeld, `https://1a2b3c.mycompany.com:4321`
+   Bijvoorbeeld: `https://1a2b3c.mycompany.com:4321`
 
    >[!NOTE]
    >
@@ -133,7 +132,7 @@ Google wijzigt regelmatig de gebruikersinterface. De stappen voor het publiceren
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   Bijvoorbeeld, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   Bijvoorbeeld: `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    >[!NOTE]
    >
@@ -222,19 +221,19 @@ Laat de pagina YouTube-configuratie maken open. U keert er zo meteen naar terug.
 
    Stel nu YouTube-kanalen in Experience Manager in.
 
-1. Selecteer **[!UICONTROL Add Channel]**.
+1. Selecteren **[!UICONTROL Add Channel]**.
 1. Voer in het veld Kanaalnaam de naam in van het kanaal dat u in de taak hebt gemaakt **[!UICONTROL Adding one or more channels to YouTube]** eerder.
 
    U kunt desgewenst een beschrijving toevoegen.
 
-1. Selecteer **[!UICONTROL Add]**.
+1. Selecteren **[!UICONTROL Add]**.
 1. YouTube/Google-verificatie wordt weergegeven. Als u zich nog niet hebt aangemeld bij het Google Cloud-account, slaat u deze stap over.
 
    * Voer de Google-gebruikersnaam en het wachtwoord in die aan de Google Project ID en de JSON-tekst hierboven zijn gekoppeld.
    * Afhankelijk van hoeveel kanalen uw account twee of meer items bevat. Selecteer een kanaal. Selecteer het e-mailadres niet, het is geen kanaal.
    * Selecteer op de volgende pagina de optie **[!UICONTROL Accept]** toegang tot dit kanaal toestaan.
 
-1. Selecteer **[!UICONTROL Allow]**.
+1. Selecteren **[!UICONTROL Allow]**.
 
    Stel nu labels in voor publicatie.
 
@@ -255,7 +254,7 @@ Laat de pagina YouTube-configuratie maken open. U keert er zo meteen naar terug.
 1. Selecteer in de linkerbovenhoek van de Experience Manager het logo van de Experience Manager en navigeer vervolgens in de linkerspoorstaaf naar **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
 1. Selecteer onder YouTube onder de kop Services van derden de optie **[!UICONTROL Configure now]**.
 1. Voer in het dialoogvenster Configuratie maken een titel (verplicht) en een naam (optioneel) in de desbetreffende velden in.
-1. Selecteer **[!UICONTROL Create]**.
+1. Selecteren **[!UICONTROL Create]**.
 1. Voer in het veld **[!UICONTROL Application Name]** in het dialoogvenster YouTube-accountinstellingen de Google-project-id in.
 
    U hebt de project-id opgegeven toen u het eerst [geconfigureerde Google Cloud-instellingen](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) eerder.
@@ -264,7 +263,7 @@ Laat het dialoogvenster YouTube-accountinstellingen open. U keert er zo meteen n
 1. Open met een teksteditor zonder opmaak het JSON-bestand dat u eerder hebt gedownload en opgeslagen in de taak Google Cloud-instellingen configureren.
 1. Selecteer en kopieer de volledige JSON-tekst.
 1. Ga terug naar het dialoogvenster YouTube-accountinstellingen. Plak de JSON-tekst in het veld **[!UICONTROL JSON Config]**.
-1. Selecteer **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL OK]**.
 
    Stel nu YouTube-kanalen in Experience Manager in.
 
@@ -273,14 +272,14 @@ Laat het dialoogvenster YouTube-accountinstellingen open. U keert er zo meteen n
 
    U kunt desgewenst een beschrijving toevoegen.
 
-1. Selecteer **[!UICONTROL OK]**.
+1. Selecteren **[!UICONTROL OK]**.
 1. YouTube/Google-verificatie wordt weergegeven. Als u zich nog niet hebt aangemeld bij het Google Cloud-account, slaat u deze stap over.
 
    * Voer de Google-gebruikersnaam en het wachtwoord in die aan de Google Project ID en de JSON-tekst hierboven zijn gekoppeld.
    * Afhankelijk van hoeveel kanalen uw account twee of meer items bevat. Selecteer een kanaal. Selecteer het e-mailadres niet, het is geen kanaal.
    * Selecteer op de volgende pagina de optie **[!UICONTROL Accept]** toegang tot dit kanaal toestaan.
 
-1. Selecteer **[!UICONTROL Allow]**.
+1. Selecteren **[!UICONTROL Allow]**.
 
    Stel nu labels in voor publicatie.
 
@@ -458,7 +457,7 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
 
    ![chlimage_1-429](/help/assets/dynamic-media/assets/chlimage_1-429.png)
 
-   * In de lijstweergave wordt de voortgang van de videocodering weergegeven in het dialoogvenster **[!UICONTROL Processing Status]** kolom. Als er een fout is, wordt dit bericht in dezelfde kolom weergegeven.
+   * In de lijstweergave wordt de voortgang van de videocodering weergegeven in het dialoogvenster **[!UICONTROL Processing Status]** kolom. Als er een fout is, toont dit bericht in die zelfde kolom.
 
    ![chlimage_1-430](/help/assets/dynamic-media/assets/chlimage_1-430.png)
 
@@ -614,15 +613,15 @@ MXF-video-indeling wordt nog niet ondersteund met aantekeningen van video-elemen
   **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
 
