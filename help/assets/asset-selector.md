@@ -4,20 +4,19 @@ description: Gebruik de functie Asset Selector om de metagegevens en vertoningen
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 0%
 
 ---
 
+# Micro-Frontend element selecteren {#Overview}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | Dit artikel |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
-
-# Micro-Frontend element selecteren {#Overview}
+| AEM as a Cloud Service | Dit artikel |
 
 Micro-Frontend Asset Selector biedt een gebruikersinterface die eenvoudig kan worden geïntegreerd met de [!DNL Experience Manager Assets as a Cloud Service] zodat u door de in de opslagplaats beschikbare digitale middelen kunt bladeren of deze kunt zoeken en kunt gebruiken in de ontwerpervaring van uw toepassing.
 
