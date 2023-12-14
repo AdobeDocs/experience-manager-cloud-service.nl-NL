@@ -1,17 +1,23 @@
 ---
-title: Digitale middelen beheren
+title: Gedupliceerde elementen zoeken voor [!DNL Adobe Experience Manager] als [!DNL Cloud Service]
 description: Leer hoe u dubbele elementen kunt detecteren
 contentOwner: KK
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '188'
+ht-degree: 3%
 
 ---
+
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Dit artikel |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
 
 # Gedupliceerde elementen detecteren {#detect-duplicate-assets}
 
@@ -19,7 +25,7 @@ Als een DAM-gebruiker een of meer middelen uploadt die al in de gegevensopslagru
 
 De functie inschakelen:
 
-1. Ga naar **[!UICONTROL Tools > Assets > Assets Configurations]**.
+1. Navigeren naar **[!UICONTROL Tools > Assets > Assets Configurations]**.
 
 1. Klik op **[!UICONTROL Asset Duplication Detector]**.
 

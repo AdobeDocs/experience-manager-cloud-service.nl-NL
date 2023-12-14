@@ -1,15 +1,21 @@
 ---
 title: Asset Selector voor [!DNL Adobe Experience Manager] als [!DNL Cloud Service]
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
-contentOwner: Adobe
+contentOwner: KK
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
 workflow-type: tm+mt
-source-wordcount: '2361'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
+
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | Dit artikel |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
 
 # Micro-Frontend element selecteren {#Overview}
 
@@ -372,18 +378,18 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *filterFormProps* | Object | Nee | | Geef de filtereigenschappen op die u nodig hebt om de zoekopdracht te verfijnen. Bijvoorbeeld MIME-type JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nee |                 | Geselecteerde elementen opgeven wanneer de Asset Selector wordt weergegeven. Een array van objecten is vereist die een id-eigenschap van de elementen bevat. Bijvoorbeeld: `[{id: 'urn:234}, {id: 'urn:555'}]` Een element moet beschikbaar zijn in de huidige directory. Als u een andere map moet gebruiken, geeft u een waarde op voor de `path` ook eigenschap. |
 | *acvConfig* | Object | Nee | | De bezit van de Mening van de Inzameling van activa dat voorwerp bevat dat douaneconfiguratie bevat om gebreken met voeten te treden. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |                 | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen aangepaste gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` prop. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Als u de overschrijving wilt uitvoeren, moet u een geldige waarde opgeven [Berichtbeschrijving](https://formatjs.io/docs/react-intl/api/#message-descriptor) naar de toets van `i18nSymbols` die u wilt overschrijven. |
+| *i18nSymbolen* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |                 | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen aangepaste gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` prop. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Als u de overschrijving wilt uitvoeren, moet u een geldige waarde opgeven [Berichtbeschrijving](https://formatjs.io/docs/react-intl/api/#message-descriptor) naar de toets van `i18nSymbols` die u wilt overschrijven. |
 | *intl* | Object | Nee | | Asset Selector biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige landinstelling op te geven via het dialoogvenster `intl.locale` prop. Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> De landinstellingstekenreeksen die worden ondersteund volgen de [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 | *repositoryId* | string | Nee | &#39;&#39; | Opslagplaats waar de inhoud wordt geladen door de Asset Selector. |
 | *additionalAemSolutions* | `Array<string>` | Nee | [ ] | Hiermee kunt u een lijst met extra AEM opslagplaatsen toevoegen. Als deze eigenschap geen informatie bevat, worden alleen mediawisselaars of AEM Assets-opslagruimten in aanmerking genomen. |
 | *hideTreeNav* | boolean | Nee |  | Hiermee geeft u op of de zijbalk met boomnavigatie met elementen moet worden weergegeven of verborgen. Het wordt alleen in modale zin gebruikt en daarom heeft dit onroerend goed geen effect in de spoorwegen. |
-| *onDrop* | -functie | Nee | | Met de eigenschap kan een element worden neergezet. |
+| *onDrop* | Functie | Nee | | Met de eigenschap kan een element worden neergezet. |
 | *dropOptions* | `{allowList?: Object}` | Nee | | Vormt dalingsopties gebruikend &quot;lijst van gewenste personen&quot;. |
 | *colorScheme* | string | Nee | | Thema configureren (`light` of `dark`) voor de Asset Selector. |
-| *handleSelection* | -functie | Nee | | Wordt aangeroepen met een array van Asset-items wanneer activa worden geselecteerd en de `Select` op de modale knop wordt geklikt. Deze functie wordt alleen aangeroepen in de modale weergave. Voor de spoorstaafweergave gebruikt u de `handleAssetSelection` of `onDrop` functies. Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {..}</pre> Zie [Geselecteerd elementtype](#selected-asset-type) voor meer informatie. |
-| *handleAssetSelection* | -functie | Nee | | Wordt aangeroepen met een array van items wanneer de elementen worden geselecteerd of niet geselecteerd. Dit is handig wanneer u naar elementen wilt luisteren terwijl de gebruiker deze selecteert. Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {..}</pre> Zie [Geselecteerd elementtype](#selected-asset-type) voor meer informatie. |
-| *onClose* | -functie | Nee | | Wordt aangeroepen wanneer `Close` wordt in de modale weergave ingedrukt. Dit wordt alleen aangeroepen in `modal` in `rail` weergeven. |
-| *onFilterSubmit* | -functie | Nee | | Wordt aangeroepen met filteritems wanneer de gebruiker andere filtercriteria wijzigt. |
+| *handleSelection* | Functie | Nee | | Wordt aangeroepen met een array van Asset-items wanneer activa worden geselecteerd en de `Select` op de modale knop wordt geklikt. Deze functie wordt alleen aangeroepen in de modale weergave. Voor de spoorstaafweergave gebruikt u de `handleAssetSelection` of `onDrop` functies. Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {..}</pre> Zie [Geselecteerd elementtype](#selected-asset-type) voor meer informatie. |
+| *handleAssetSelection* | Functie | Nee | | Wordt aangeroepen met een array van items wanneer de elementen worden geselecteerd of niet geselecteerd. Dit is handig wanneer u naar elementen wilt luisteren terwijl de gebruiker deze selecteert. Voorbeeld: <pre>handleSelection=(assets: Asset[])=> {..}</pre> Zie [Geselecteerd elementtype](#selected-asset-type) voor meer informatie. |
+| *onClose* | Functie | Nee | | Wordt aangeroepen wanneer `Close` wordt in de modale weergave ingedrukt. Dit wordt alleen aangeroepen in `modal` in `rail` weergeven. |
+| *onFilterSubmit* | Functie | Nee | | Wordt aangeroepen met filteritems wanneer de gebruiker andere filtercriteria wijzigt. |
 | *selectionType* | string | Nee | enkel | Configuratie voor `single` of `multiple` selectie van elementen tegelijk. |
 
 ## Voorbeelden voor het gebruik van de eigenschappen van Asset Selector {#usage-examples}
