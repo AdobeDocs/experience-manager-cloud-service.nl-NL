@@ -2,9 +2,9 @@
 title: New Relic One
 description: Meer informatie over de service voor het controleren van de prestaties van New Relic One-toepassingen (APM) voor AEM as a Cloud Service en over hoe u deze service kunt gebruiken.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1843'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe legt een grote nadruk op de controle, beschikbaarheid, en prestaties van u
 
 In dit document wordt beschreven hoe u de toegang beheert tot de APM-functies (Application Performance Monitoring) van de New Relic One-toepassing die in uw AEM as a Cloud Service omgevingen zijn ingeschakeld, zodat u de prestaties kunt ondersteunen en optimaal kunt profiteren van AEM as a Cloud Service.
 
-Wanneer een nieuw productieprogramma wordt gecreeerd, wordt de subrekening van New Relic One verbonden aan uw AEM as a Cloud Service Programma automatisch gecreeerd.
+Wanneer een nieuw productieprogramma wordt gecreeerd, wordt de subrekening van New Relic One verbonden aan uw AEM as a Cloud Service Programma automatisch gecreeerd. [Deze subaccount moet worden geactiveerd](#activate-sub-account) om te beginnen met het innemen van gegevens.
 
 ## Functies {#transaction-monitoring}
 
@@ -33,6 +33,28 @@ New Relic One APM for AEM as a Cloud Service heeft veel functies.
 * Holistische optimalisatie van prestaties door belangrijke metriek van infrastructuur-vlakke controle en toepassing (Adobe Experience Manager) controle te combineren
 
 * Blootstelling van AEM as a Cloud Service JMX-bonen en gezondheidscontroles direct binnen New Relic Insights-meetgegevens, waardoor een grondige inspectie van de prestaties van de toepassingsstapel en gezondheidsmaatstaven mogelijk is.
+
+## Je New Relic One-subaccount activeren {#activate-sub-account}
+
+Voor een nieuw gemaakt programma wordt een New Relic One-subaccount voor u gemaakt. U moet het echter activeren om gegevens in te voeren. Dit wordt niet automatisch gedaan. Voer de volgende stappen uit om uw subaccount te activeren.
+
+>[!NOTE]
+>
+>Een gebruiker in **Zakelijke eigenaar** of **Implementatiebeheer** Deze rol moet zijn aangemeld voor het beheer van de New Relic One-subaccount.
+
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+
+1. Klik op het programma waarvoor u de New Relic One-gebruikers wilt beheren.
+
+1. Onder aan het dialoogvenster **Omgevingen** kaart op de pagina van het programmaoverzicht, klik de ellipsieknoop en selecteer **New Relic activeren**.
+
+   ![Gebruikers beheren](assets/newrelic-activate-sub-account.png)
+
+   * U hebt ook toegang tot de **Gebruikers beheren** optie via de ellipsieknop boven aan de **Omgevingen** van uw programma.
+
+1. [Een pijplijn uitvoeren](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) voor dezelfde omgeving tot een geslaagde voltooiing om de activering van de subrekening te voltooien.
+
+Wanneer de subaccount wordt gedeactiveerd, worden geen gegevens ingevoerd.
 
 ## New Relic One-gebruikers beheren {#manage-users}
 
@@ -66,7 +88,7 @@ Nadat de gebruikers zijn gedefinieerd, stuurt New Relic een bevestigingsbericht 
 >
 >Als u de New Relic One-gebruikers beheert, moet u uzelf ook toevoegen als gebruiker om toegang te hebben. Het zijn **Zakelijke eigenaar** of **Implementatiebeheer** volstaat niet om toegang te hebben tot New Relic One. U moet uzelf ook als gebruiker maken.
 
-## Je New Relic One-gebruikersaccount activeren {#activate-account}
+## Je New Relic One-gebruikersaccount activeren {#activate-user-account}
 
 Zodra een New Relic One-gebruikersaccount is gemaakt zoals wordt beschreven in de voorbeeldsectie [New Relic One-gebruikers beheren](#manage-users), stuurt New Relic deze gebruikers een bevestigingsbericht naar het opgegeven adres. Als gebruikers deze accounts willen gebruiken, moeten ze eerst hun accounts bij New Relic activeren door hun wachtwoorden opnieuw in te stellen.
 
@@ -118,7 +140,7 @@ Als u uw e-mailadres niet verifieert, probeert New Relic u aan te melden met de 
 
 Voor meer hulp, open een steunkaartje door [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
-## Problemen met New Relic One Access oplossen {#troubleshooting}
+## Problemen met New Relic One-gebruikerstoegang oplossen {#troubleshooting}
 
 Als u bent toegevoegd als New Relic One-gebruiker, zoals beschreven in de sectie [New Relic One-gebruikers beheren](#manage-users) en kan de originele accountbevestigingsmail niet vinden volg deze stappen.
 
@@ -152,11 +174,11 @@ Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperking
 
 >[!NOTE]
 >
->Als er gedurende 90 dagen of langer geen activiteit in uw New Relic One-account wordt gedetecteerd, wordt de APM-agent gestopt.
+>Als er gedurende 90 dagen of langer geen activiteit wordt gedetecteerd in uw New Relic One-subaccount, wordt de APM-agent gestopt.
 >
->Open een ondersteuningsticket via de [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) als u APM-agent opnieuw wilt inschakelen voor uw AEMaaCS-omgevingen.
+>Voer dezelfde stappen uit in het dialoogvenster [Je New Relic One-subaccount activeren](#activate-sub-account) in dit document om uw New Relic One-subaccount opnieuw te activeren.
 
-Voor meer hulp of extra hulp bij New Relic One-aanbiedingen voor uw AEM as a Cloud Service Programma, open een steunkaartje via [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Voor meer hulp of extra hulp bij New Relic One-aanbiedingen voor uw AEM as a Cloud Service Programma, open een steunkaartje via [AEM Support Portal.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
 
 ## Veelgestelde vragen over New Relic One {#faqs}
 
@@ -202,4 +224,4 @@ Terwijl de steun van de Adobe de AEM as a Cloud Service toepassing zal controler
 
 ### De APM-agent voor mijn New Relic One-account wordt gestopt. Wat is er gebeurd? {#deactivated}
 
-[APM-agents worden gestopt](#limitations) als gedurende 90 dagen of langer geen activiteit wordt gedetecteerd. Open een ondersteuningsticket via de [Ondersteuningsportaal voor AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) als u APM-agent opnieuw wilt inschakelen voor uw AEMaaCS-omgevingen.
+[APM-agents worden gestopt](#limitations) als gedurende 90 dagen of langer geen activiteit wordt gedetecteerd. Voer dezelfde stappen uit in het dialoogvenster [Je New Relic One-subaccount activeren](#activate-sub-account) in dit document om uw New Relic One-subaccount opnieuw te activeren.

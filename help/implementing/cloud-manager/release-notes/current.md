@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2023.11.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.11.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release Cloud Manager 2023.12.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.12.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2023.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2023.12.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release 2023.11.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
+Op deze pagina worden de opmerkingen bij de release 2023.12.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
 
 >[!NOTE]
 >
@@ -21,36 +21,42 @@ Op deze pagina worden de opmerkingen bij de release 2023.11.0 van Cloud Manager 
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2023.11.0 in AEM as a Cloud Service is 14 november 2023. De volgende release is gepland voor 7 december 2023.
+De releasedatum voor Cloud Manager versie 2023.12.0 in AEM as a Cloud Service is 14 december 2023. De volgende release is gepland voor 18 januari 2024.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* Web Application Firewall-DDOS protection (WAF-DDOS) is nu beschikbaar voor aankoop als onderdeel van uw AEM as a Cloud Service machtiging en [kan op een zelfbediening manier worden gevormd.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Gespecialiseerd [configuratieleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) zijn nu beschikbaar om de regels van de verkeersfilter, met inbegrip van de regels van WAF, binnen notulen te vormen en op te stellen.
-* [Bij het kopiëren van inhoud](/help/implementing/developing/tools/content-copy.md) van een hogere omgeving tot een ontwikkelomgeving wordt nu een boodschap weergegeven waarin u wordt aangeraden grote inhoudssets te kopiëren omdat ontwikkelomgevingen beperkt zijn in de capaciteit.
-* [De pagina met details over de uitvoering van de pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) toont nu alle stappen in een pijpleidingsuitvoering met degenen die nog niet begonnen grayed uit.
-* Op beide **[Activiteit](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** en **[Pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pagina&#39;s, is een samenvatting van de pijpleidingsuitvoering nu beschikbaar wanneer het selecteren van een pijpleiding met een lopende status.
-* Een nieuwe **Duur** is toegevoegd aan de [pagina met details over pijplijn](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) dit omvat de gemiddelde duur van de pijpleidingstap op basis van de historische trend voor dat programma.
-* Op de [pagina voor de uitvoering van pijpleidingen,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) de voltooide stappen geven nu de duur weer.
-* Uitvoeringen die [constructieartefacten opnieuw gebruiken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) nu de koppeling weergeven naar de uitvoering die deze artefacten aanvankelijk heeft gemaakt.
-* De optie om te selecteren **Belangrijke metrische fouten** kan nu worden geconfigureerd voor [pijpleidingen van codekwaliteit](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) ook.
-
+* [Aangepaste machtigingen voor Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) Hiermee kunt u aangepaste machtigingsprofielen maken met configureerbare machtigingen om de toegang tot programma&#39;s, pijpleidingen en omgevingen voor gebruikers van Cloud Manager te beperken.
+   * Deze functie wordt gefaseerd geïmplementeerd, naar verwachting met de release van Cloud Manager van februari 2024.
+   * Stuur een e-mail naar `Grp-CloudManager-custom-permissions@adobe.com` van het e-mailadres dat aan uw Adobe ID is gekoppeld, als u liever eerder wilt worden ingeschakeld.
+* Build containers ondersteunen nu Node.js versie 18 voor [voorpijpleidingen.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+* Voor nieuwe Cloud Manager-programma&#39;s: [de bijbehorende New Relic-subrekening](/help/implementing/cloud-manager/user-access-new-relic.md) is niet standaard geactiveerd.
+   * Voor bestaande programma&#39;s waarvoor de New Relic-subrekening niet langer dan 90 dagen toegankelijk is, wordt deze gedeactiveerd.
+   * Als u de New Relic-subaccount wilt gebruiken, moet u zich aanmelden via Cloud Manager.
+* De rollouts van kleine versies voor Java 8 en 11 en updates voor maven [aangekondigd en begonnen met de release van Cloud Manager in oktober](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) zijn voltooid.
+   * Node 18 werd gesteund voor voorste en volledige stapelpijpleidingen.
+   * Kleine Java 8-versie bijgewerkt naar `jdk1.8.0_371`.
+   * Kleine Java 11-versie bijgewerkt naar `jdk-11.0.20`.
+   * Ondersteuning voor Java 17 is toegevoegd.
+   * Maven is bijgewerkt naar versie 3.8.8
+   * De basisafbeelding van de build-container is bijgewerkt naar Ubuntu 22.04.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
 Een kans om een aantal van de komende eigenschappen te testen, maakt deel uit van het programma van de Adobe voor vroegtijdige goedkeuring.
+
+### Clientverzameling via Real User Monitoring (RUM) {#rum}
+
+U kunt de [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) om client-side verzameling voor AEM as a Cloud Service in te schakelen.
+
+Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt geboden. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Dit is voordelig voor klanten die of Adobe-geleide CDN of niet-Adobe beheerde CDN gebruiken. Voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
+
+Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com` van het e-mailadres dat aan uw Adobe ID is gekoppeld. Neem de domeinnaam voor productie-, werkgebied- en ontwikkelomgevingen op in uw e-mail.  De beschikbaarheid van het programma voor vroege adoptie van deze functie is beperkt.
 
 ### Breng uw eigen GitHub {#byo-github}
 
 Als u GitHub gebruikt om uw bewaarplaatsen te beheren, [u kunt code binnen uw bewaarplaatsen van GitHub door de Manager van de Wolk nu bevestigen.](/help/implementing/cloud-manager/managing-code/byo-github.md) Door deze integratie is het niet nodig de code consistent te synchroniseren met de opslagplaats van de Adobe en kunt u terugtrekkingsverzoeken verifiëren voordat u ze samenvoegt in de hoofdvertakkingen.
 
 Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `Grp-CloudManager_BYOG@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
-
-### Aangepaste machtigingen {#custom-permissions}
-
-[Aangepaste machtigingen voor Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md) Hiermee kunt u aangepaste machtigingsprofielen maken met configureerbare machtigingen om de toegang tot programma&#39;s, pijpleidingen en omgevingen voor gebruikers van Cloud Manager te beperken.
-
-Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `Grp-CloudManager-custom-permissions@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
 
 ### Self-Service inhoud herstellen {#content-restore}
 
@@ -72,15 +78,3 @@ Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mai
 Het dashboard gebruikt Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar, of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
 
 Geïnteresseerd in het testen van het nieuwe dashboard? Om aan de slag te gaan, stuurt u een e-mail naar `aem-lighthouse-pilot@adobe.com` van uw e-mail die aan uw Adobe ID is gekoppeld.
-
-## Bekende problemen {#known-issues}
-
-Er is een bekende fout die voorkomt [configuratieleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) van overschakelen op productie.
-
-Als de **Pauzeren vóór implementatie naar productie** optie wordt vereist voor een config pijpleiding, is het volgende gesuggereerde tijdelijke oplossing tot de insect wordt opgelost.
-
-1. Voer de pijplijn uit.
-1. Test de code in de testomgeving.
-1. Wanneer het opstellen en de goedkeuring beschikbaar wordt, klik **Afwijzen**.
-1. Bewerk de pijpleiding zodat u de **Pauzeren vóór implementatie naar productie** -optie.
-1. Voer de pijplijn opnieuw uit, zodat hij weer kan draaien op het opvoeren en vervolgens op de productie.

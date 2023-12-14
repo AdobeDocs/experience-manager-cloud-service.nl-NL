@@ -2,9 +2,9 @@
 title: Build-omgeving
 description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en t
 
 Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmilieu.
 
-* De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 18.04.
+* De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
 * Apache Maven 3.8.8 is geïnstalleerd.
 * De geïnstalleerde Java-versies zijn Oracle JDK 8u371 en Oracle JDK 11.0.20.
 * Standaard worden de `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk1.8.0_371` die Oracle JDK 8u371 bevat. Zie de [JDK-versie van alternatieve uitvoering](#alternate-maven-jdk-version) voor meer informatie.
@@ -35,6 +35,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is geconfigureerd op systeemniveau met een `settings.xml` bestand, dat automatisch de openbare gegevensopslagruimte voor Adoben bevat met een profiel genaamd `adobe-public`. (Zie [Adobe openbaar gemaakte opslagplaats](https://repo1.maven.org/) voor meer informatie ).
+* Node.js 18 is beschikbaar voor [voorkant en volledige stapelleidingen.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
