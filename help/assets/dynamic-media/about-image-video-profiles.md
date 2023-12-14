@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -40,11 +40,11 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor he
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand Dynamic Media-afbeeldingsprofiel heeft of een Dynamic Media-videoprofiel dat u later hebt gewijzigd.
 
-Stel dat u een Dynamic Media-afbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Op alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het afbeeldingsprofiel. Nu hoeft u de elementen niet meer opnieuw naar de map te selecteren en te uploaden, maar hoeft u gewoon de *Scene7: Elementen opnieuw verwerken* workflow.
+Stel dat u een Dynamic Media-afbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Op alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het afbeeldingsprofiel. Nu hoeft u de elementen niet meer opnieuw naar de map te selecteren en te uploaden, maar hoeft u gewoon de *Dynamic Media opnieuw verwerken* workflow.
 
 U kunt de herverwerkingsworkflow uitvoeren op een element waarvoor de verwerking de eerste keer is mislukt. Zelfs als u geen afbeeldingsprofiel of videoprofiel hebt bewerkt of als u al een afbeeldingsprofiel of videoprofiel hebt toegepast, kunt u de workflow voor het opnieuw verwerken van een map met elementen altijd uitvoeren.
 
-U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u de _Scene7: Elementen opnieuw verwerken_ In een map worden de middelen gegroepeerd in batches en vervolgens naar de Dynamic Media-server verzonden voor verwerking. Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op [!DNL Adobe Experience Manager]. Als de partij groot is, kunt u een vertraging in verwerking ervaren. Als de batch te klein is, kan dit ook leiden tot te veel retourvluchten naar de Dynamic Media-server.
+U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u de _Scene7: Middelen opnieuw verwerken_ In een map worden de middelen gegroepeerd in batches en vervolgens naar de Dynamic Media-server verzonden voor verwerking. Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op [!DNL Adobe Experience Manager]. Als de partij groot is, kunt u een vertraging in verwerking ervaren. Als de batch te klein is, kan dit ook leiden tot te veel roundtrips op de Dynamic Media-server.
 
 Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjusting-load).
 
@@ -56,13 +56,13 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
-Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
 -->
 
 **Dynamic Media-elementen in een map opnieuw verwerken:**
 
-1. In [!DNL Experience Manager]Navigeer vanaf de elementenpagina naar een map met elementen waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de opdracht **Scene7: Element opnieuw verwerken** workflow.
+1. In [!DNL Experience Manager]Navigeer vanaf de elementenpagina naar een map met elementen waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de opdracht **Dynamic Media opnieuw verwerken** workflow.
 
    Mappen waaraan een afbeeldingsprofiel of videoprofiel is toegewezen, krijgen de naam van het profiel direct onder de mapnaam in de Kaartweergave.
 
@@ -77,37 +77,37 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![Screenshot van middelen in Experience Manager met een geselecteerde map met elementen, de vervolgkeuzelijst Tijdlijn gemarkeerd, de knop Workflow starten gemarkeerd en het karatpictogram rechts van het veld Opmerking gemarkeerd.](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
-1. Selecteer **[!UICONTROL Start Workflow]**.
-1. Van de **[!UICONTROL Start Workflow]** vervolgkeuzelijst kiest u **[!UICONTROL Scene7: Reprocess Assets]**.
+1. Selecteren **[!UICONTROL Start Workflow]**.
+1. Van de **[!UICONTROL Start Workflow]** vervolgkeuzelijst kiest u **[!UICONTROL Dynamic Media Reprocess]**.
 1. (Optioneel) In het dialoogvenster **Titel van workflow invoeren** in het tekstveld een naam voor de workflow invoeren. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
-   ![Schermafbeelding van de tijdlijngebruikersinterface met &quot;Scene7: Elementen opnieuw verwerken&quot; geselecteerd in de vervolgkeuzelijst Workflow starten en de knop Start gemarkeerd](/help/assets/dynamic-media/assets/reprocess-assets2.png).
+   ![Screenshot van de tijdlijngebruikersinterface met &quot;Dynamic Media Reprocess&quot; geselecteerd in de vervolgkeuzelijst Start Workflow en de knop Start gemarkeerd](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Selecteren **[!UICONTROL Start]** selecteert u vervolgens **[!UICONTROL Confirm]**.
 
-   Om de werkstroom te controleren of zijn vooruitgang te controleren, van [!DNL Experience Manager] hoofdconsolepagina, selecteer **[!UICONTROL Tools > Workflow]**. Selecteer een workflow op de pagina Workflowinstanties. Selecteer in de menubalk de optie **[!UICONTROL Open History]**. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
+   Om de werkstroom te controleren of zijn vooruitgang te controleren, van [!DNL Experience Manager] hoofdconsolepagina, selecteer **[!UICONTROL Tools > Workflow]**. Selecteer een workflow op de pagina Workflowinstanties. Selecteer in de menubalk de optie **[!UICONTROL Open History]**. U kunt een geselecteerde workflow ook beëindigen, opschorten of de naam ervan wijzigen vanuit dezelfde pagina Workflowinstanties.
 
 ### De batchgrootte van de workflow voor opnieuw verwerken aanpassen (optioneel) {#adjusting-load}
 
-(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partij wordt bepaald door de gemiddelde omvang van de activa en de MIME-typen van activa waarop het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één opwerkingstaak hebt. De verwerkingsbanner blijft dus ingeschakeld [!DNL Experience Manager] activa voor een langere tijd. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot enkele 100, maar nooit meer dan 1000. Als de gemiddelde bestandsgrootte honderden megabytes is, raadt Adobe u aan de batch tot 10 te verkleinen.
+(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partij wordt bepaald door de gemiddelde omvang van de activa en de MIME-typen van activa waarop het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één opwerkingstaak hebt. De verwerkingsbanner blijft dus ingeschakeld [!DNL Experience Manager] activa voor een langere tijd. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot enkele 100, maar nooit meer dan 1000. Als de gemiddelde bestandsgrootte honderden megabytes is, wordt u door de Adobe aangeraden de batch tot 10 te verkleinen.
 
 **U kunt de batchgrootte van de workflow voor opnieuw verwerken desgewenst aanpassen:**
 
 1. In [!DNL Experience Manager], selecteert u **[!UICONTROL Adobe Experience Manager]** om tot de globale navigatieconsole toegang te hebben, dan selecteer **[!UICONTROL Tools]** (hamer) pictogram > **[!UICONTROL Workflow > Models]**.
-1. Selecteer op de pagina Workflowmodellen in Kaartweergave of Lijstweergave de optie **[!UICONTROL Scene7: Reprocess Assets]**.
+1. Selecteer op de pagina Workflowmodellen in Kaartweergave of Lijstweergave de optie **[!UICONTROL Dynamic Media Reprocess]**.
 
-   ![Screenshot van de pagina Workflowmodellen met &quot;Scene7: Workflow voor opnieuw verwerken van middelen&quot; die is geselecteerd in de Kaartweergave van Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
+   ![Screenshot van de pagina Workflowmodellen met de workflow &quot;Dynamic Media Reprocess&quot; geselecteerd in de kaartweergave van de Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
-1. Selecteer in de werkbalk de optie **[!UICONTROL Edit]**. Met een nieuw browsertabblad wordt de Scene7 geopend: Modelpagina voor middelenwerkstroom opnieuw verwerken.
-1. Op de Scene7: De pagina met de workflow Elementen opnieuw verwerken, in de rechterbovenhoek, selecteert u **[!UICONTROL Edit]** om de workflow te &quot;ontgrendelen&quot;.
+1. Selecteer in de werkbalk de optie **[!UICONTROL Edit]**. Een nieuw browsertabblad opent de pagina Dynamic Media Reprocess workflowmodel.
+1. Selecteer in de rechterbovenhoek van de Dynamic Media Reprocess-workflowpagina de optie **[!UICONTROL Edit]** om de workflow te &quot;ontgrendelen&quot;.
 1. Selecteer in de workflow de Scene7-component Batch uploaden om de werkbalk te openen en selecteer vervolgens **[!UICONTROL Configure]** in de werkbalk.
 
-   ![Screenshot van de component &quot;Scene7 Batch Upload&quot; op de &quot;Scene7: Pagina Middelen opnieuw verwerken&quot; met de muisaanwijzer boven het pictogram &quot;Configureren&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
+   ![Screenshot van de component &quot;Scene7 Batch Upload&quot; op de pagina &quot;Dynamic Media Reprocess&quot; met de muisaanwijzer boven het pictogram &quot;Configure&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. Op de **[!UICONTROL Batch Upload to Scene7—Step Properties]** stelt u het volgende in:
    * In de **[!UICONTROL Title]** en **[!UICONTROL Description]** tekstvelden, voer desgewenst een nieuwe titel en beschrijving voor de taak in.
    * Selecteren **[!UICONTROL Handler Advance]** als uw manager aan de volgende stap zal verdergaan.
-   * In de **[!UICONTROL Timeout]** -veld, voert u de time-out van het externe proces (seconden) in.
+   * In de **[!UICONTROL Timeout]** in. Voer de time-out van het externe proces (seconden) in.
    * In de **[!UICONTROL Period]** Voer een opiniepeilinterval (seconden) in om te testen of het externe proces is voltooid.
    * In de **[!UICONTROL Batch field]** Voer het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor batchverwerking van een Dynamic Media-server.
    * Selecteren **[!UICONTROL Advance on timeout]** als u verder wilt gaan wanneer de time-out is bereikt. Schakel deze optie uit als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
@@ -116,11 +116,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. In de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialoogvenster selecteert u **[!UICONTROL Done]**.
 
-1. In de rechterbovenhoek van de Scene7: Pagina met het workflowmodel voor middelen opnieuw verwerken, selecteert u **[!UICONTROL Sync]**. Wanneer u ziet **[!UICONTROL Synced]**, is het workflowruntimemodel gesynchroniseerd en klaar om elementen in een map opnieuw te verwerken.
+1. Selecteer in de rechterbovenhoek van de pagina Dynamic Media Reprocess workflowmodel de optie **[!UICONTROL Sync]**. Wanneer u **[!UICONTROL Synced]**, is het workflowruntimemodel gesynchroniseerd en klaar om elementen in een map opnieuw te verwerken.
 
    ![Screenshot van middelen in Experience Manager met een geselecteerde map met elementen, de vervolgkeuzelijst Tijdlijn gemarkeerd, de knop Workflow starten gemarkeerd en het karatpictogram rechts van het veld Opmerking gemarkeerd.](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
-1. Sluit het browsertabblad waarin de Scene7 wordt weergegeven: Workflowmodel voor opnieuw verwerken van middelen.
+1. Sluit het browsertabblad waarin het workflowmodel voor opnieuw verwerken van Dynamic Media wordt weergegeven.
 
 <!-- MAY BE NEEDED IN THE FUTURE
 
@@ -142,6 +142,6 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
 
 -->
