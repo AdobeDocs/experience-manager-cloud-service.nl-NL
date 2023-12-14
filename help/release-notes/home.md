@@ -2,10 +2,10 @@
 title: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
 description: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 626f38141bafba8f5463c8793d52ea15448ed433
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 29%
+source-wordcount: '599'
+ht-degree: 25%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 29%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2023.11.0 |
+| Versie | 2023 12,0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
@@ -42,10 +42,10 @@ Een release voorbereiden:
 * [Opmerkingen bij de release met functies](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [Opmerkingen bij de onderhoudsrelease](/help/release-notes/maintenance/latest.md)
 * [Nieuwe functies](what-is-new.md)
-* [Belangrijke wijzigingen](aem-cloud-changes.md)
+* [Opmerkelijke wijzigingen](aem-cloud-changes.md)
 * [Verouderde en verwijderde functies](deprecated-removed-features.md)
 
-## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
+## as a Cloud Service hulplijnen voor Experience Manager {#aem-guides}
 
 | Handboek | Beschrijving |
 |---|---|
@@ -61,14 +61,14 @@ Een release voorbereiden:
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
 | [Handboek voor handel](/help/commerce-cloud/home.md) | Meer weten over Commerce integration framework op AEM as a Cloud Service? |
 
-## Andere bronnen voor Experience Manager {#other-resources}
+## Andere bronnen van Experience Managers {#other-resources}
 
 * [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
-* [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
+* [Documentatie van verzender](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Documentatie over kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html)
-* [Gereedheid voor GDPR (AVG)](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR gereedheid](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
