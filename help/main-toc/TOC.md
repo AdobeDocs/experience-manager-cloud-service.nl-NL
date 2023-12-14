@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 475505fc8b5eb63c3563e8fabb28f515ff690393
+source-git-commit: a768eddbddb4b418b228839fdf5a9cdaf1488991
 workflow-type: tm+mt
-source-wordcount: '4456'
+source-wordcount: '4545'
 ht-degree: 4%
 
 ---
@@ -761,6 +761,45 @@ ht-degree: 4%
    + [Inhoud publiceren voor Edge Delivery](/help/edge/publishing.md)
    + [Ontwikkelen voor Edge Delivery](/help/edge/developing.md)
    + [Bestaande projecten en Edge Delivery](/help/edge/existing-projects.md)
+   + Edge Delivery-toepassingen samenstellen {#build}
+      + [Aan de slag - Zelfstudie voor ontwikkelaars](/help/edge/developer/tutorial.md)
+      + [Anatomie van een project](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [Blokverzameling](/help/edge/developer/block-collection.md)
+      + [Werkbladen](/help/edge/developer/spreadsheets.md)
+      + [Forms](/help/edge/developer/forms.md)
+      + [Indexeren](/help/edge/developer/indexing.md)
+      + [Behouden 100](/help/edge/developer/keeping-it-100.md)
+      + [Opmaak - secties](/help/edge/developer/markup-sections-blocks.md)
+      + [favicon](/help/edge/developer/favicon.md)
+      + [Aangepaste koppen](/help/edge/docs/custom-headers.md)
+      + [Beste praktijken voor Ontwikkelaars](/help/edge/docs/dev-collab-and-good-practices.md)
+   + Toepassingen voor Edge Delivery publiceren {#publish}
+      + [Authoring](/help/edge/docs/authoring.md)
+      + [Bulkmetagegevens](/help/edge/docs/bulk-metadata.md)
+      + [Slack Bot](/help/edge/docs/slack.md)
+      + [Plaatsaanduidingen](/help/edge/docs/placeholders.md)
+      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
+   + Edge-leveringstoepassingen starten {#launch}
+      + [Live checklist](/help/edge/docs/go-live-checklist.md)
+      + [Push Invalidation](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+      + [Setup van Cloudflare Worker](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+      + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
+      + [Snelle installatie](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [Omleiding](/help/edge/docs/redirects.md)
+   + Bronnen voor Edge Delivery {#resources}
+      + Sidekick {#sidekick}
+         + [Sidekick gebruiken](/help/edge/docs/sidekick.md)
+         + [Extensie installeren](/help/edge/docs/sidekick-extension.md)
+         + [Projectconfiguratie](https://www.aem.live/tools/sidekick/)
+         + [Sidekick Library](/help/edge/docs/sidekick-library.md)
+      + [Veelgestelde vragen](/help/edge/docs/faq.md)
+      + [Admin-API](https://www.aem.live/docs/admin.html)
+      + [status.hlx.live](https://status.hlx.live/history)
+      + Gereedschappen {#tools}
+         + [Chrome-extensie Sidekick](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Github Bot](https://github.com/apps/aem-code-sync)
+         + [Controlelogboek](/help/edge/docs/auditlog.md)
 + Koploos {#headless}
    + [Wat is een headless CMS?](/help/headless/what-is-headless.md)
    + [Inleiding tot AEM zonder kop](/help/headless/introduction.md)
