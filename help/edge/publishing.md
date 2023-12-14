@@ -2,7 +2,7 @@
 title: Inhoud voor Edge Delivery Services publiceren
 description: Leer hoe het publiceren van inhoud met Edge Delivery Services werkt en hoe te om AEM inhoud met Edge Delivery Services te publiceren.
 feature: Edge Delivery Services
-source-git-commit: e3bbcfa3fcef1ed1e5b6cf2da5a17c7e636b9539
+source-git-commit: 166525b6987215a64521d1ff63a222187376ba65
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De informatiestroom bij publicatie ziet er als volgt uit. Zodra de auteur begint
 1. De auteur van de inhoud publiceert AEM inhoud in de Universal Editor.
 1. Een publicatiegebeurtenis wordt geduwd aan de Rij van de Pijpleiding van de Adobe.
 1. De Edge Delivery Publish Service stuurt de relevante gebeurtenissen door naar de Edge Delivery Admin API.
-1. De Levering van de rand trekt en neemt semantische HTML van AEM Auteur in.
+1. De Levering van de rand trekt en neemt semantische HTML van AEM Auteur op.
 1. AEM wordt bijgewerkt met publicatiestatus.
 
 ## Aan de slag {#how-to-get-started}
