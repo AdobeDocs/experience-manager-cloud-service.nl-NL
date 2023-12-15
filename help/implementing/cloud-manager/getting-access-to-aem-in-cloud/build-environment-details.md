@@ -2,9 +2,9 @@
 title: Build-omgeving
 description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
 * Apache Maven 3.8.8 is geïnstalleerd.
+   * Adobe raadt gebruikers aan [hun Maven repositories bijwerken om HTTPS in plaats van HTTP te gebruiken.](#https-maven)
 * De geïnstalleerde Java-versies zijn Oracle JDK 8u371 en Oracle JDK 11.0.20.
 * Standaard worden de `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk1.8.0_371` die Oracle JDK 8u371 bevat. Zie de [JDK-versie van alternatieve uitvoering](#alternate-maven-jdk-version) voor meer informatie.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn.
@@ -40,6 +41,14 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 >[!NOTE]
 >
 >Hoewel in Cloud Manager geen specifieke versie van het dialoogvenster `jacoco-maven-plugin`moet de gebruikte versie ten minste `0.7.5.201505241946`.
+
+## Via HTTPS gemaakte opslagplaatsen {#https-maven}
+
+Cloud Manager [release 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Maven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Met name Maven schakelt nu alles onveilig uit `http://*` spiegels standaard, zoals wordt beschreven in het dialoogvenster [Opmerkingen bij de release Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+Als gevolg van deze beveiligingsuitbreiding kunnen sommige gebruikers problemen ondervinden tijdens de constructiestap, met name wanneer ze artefacten downloaden van Geweven opslagplaatsen die onveilige HTTP-verbindingen gebruiken.
+
+Om ervoor te zorgen dat de bijgewerkte versie probleemloos wordt uitgevoerd, raadt Adobe gebruikers aan hun Geweven opslagplaatsen bij te werken om HTTPS in plaats van HTTP te gebruiken. Deze aanpassing sluit aan op de groeiende verschuiving van de industrie naar veilige communicatieprotocollen en helpt een veilig en betrouwbaar bouwproces in stand te houden.
 
 ### Een specifieke Java-versie gebruiken {#using-java-support}
 
