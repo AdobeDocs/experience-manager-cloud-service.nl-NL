@@ -2,9 +2,9 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1721'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,8 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
       * TTL is de hoeveelheid tijd een DNS verslag in een geheim voorgeheugen alvorens de server om een update te vragen blijft.
       * Als u zeer hoge TTL hebt, zullen de updates aan uw DNS verslag langer duren om zich te verspreiden.
 * Voer prestatie- en beveiligingstests uit die voldoen aan uw zakelijke vereisten en doelstellingen.
+   * Test de werkgebiedomgeving.  Het is even groot als de productie.
+   * Ontwikkelomgevingen hebben niet dezelfde grootte als stadium en productie.
 * Besnoeiing over en zorg ervoor dat daadwerkelijke go-live zonder enige nieuwe plaatsing of inhoudsupdate wordt uitgevoerd.
 * Maak profielen voor gebruikersmeldingen van Admin Consoles. Zie [Meldingsprofielen](/help/journey-onboarding/notification-profiles.md)
 
