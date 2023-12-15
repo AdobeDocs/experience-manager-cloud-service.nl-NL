@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: efca024511b5d79553864fbcefda3649ab7af7b6
 workflow-type: tm+mt
-source-wordcount: '2585'
+source-wordcount: '2607'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voo
 
 Een gebruiker met de vereiste toestemmingen kan de volgende milieutypes (binnen de grenzen van wat aan de specifieke huurder beschikbaar is) tot stand brengen.
 
-* **Productie + werkgebied** - De productie- en testomgevingen zijn als twee beschikbaar en worden respectievelijk voor productie- en testdoeleinden gebruikt.
+* **Productie + werkgebied** - De productie- en testomgevingen zijn als twee beschikbaar en worden respectievelijk voor productie- en testdoeleinden gebruikt. Prestatie- en beveiligingstests uitvoeren op de werkgebiedomgeving. Het is even groot als de productie.
 
-* **Ontwikkeling** - Een ontwikkelomgeving kan worden gecreëerd voor ontwikkelings- en testdoeleinden en kan alleen worden geassocieerd met niet-productiepijpleidingen.
+* **Ontwikkeling** - Een ontwikkelomgeving kan worden gecreëerd voor ontwikkelings- en testdoeleinden en kan alleen worden geassocieerd met niet-productiepijpleidingen.  Ontwikkelomgevingen hebben niet dezelfde grootte als stadium en productie en mogen niet worden gebruikt om prestatie- en veiligheidstests uit te voeren.
 
 * **Snelle ontwikkeling** - Met een snelle ontwikkelomgeving (RDE) kan een ontwikkelaar snel wijzigingen implementeren en evalueren, waardoor de tijd die nodig is om functies te testen waarvan is aangetoond dat ze werken in een lokale ontwikkelomgeving, tot een minimum wordt beperkt. Zie [documentatie over de snelle ontwikkelomgeving](/help/implementing/developing/introduction/rapid-development-environments.md) voor details over hoe te om RDE te gebruiken.
 
