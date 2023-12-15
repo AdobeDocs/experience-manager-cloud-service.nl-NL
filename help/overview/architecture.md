@@ -2,9 +2,9 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3e40832ee4351c92ffc4eb22540223e331323821
 workflow-type: tm+mt
-source-wordcount: '2658'
+source-wordcount: '2696'
 ht-degree: 8%
 
 ---
@@ -56,9 +56,11 @@ Er zijn vier typen [milieu](/help/implementing/cloud-manager/manage-environments
       * Dit is onafhankelijk van de veranderingen die of door Adobe als deel van een onderhoudsupdate, of door uw codeplaatsingen in werking worden gesteld.
       * U kunt handtests ook uitvoeren in het geval van een code-implementatie.
    * De inhoud van de werkgebiedomgeving wordt meestal gesynchroniseerd gehouden met de productie-inhoud met de functie voor het kopiëren van zelfbedieningsinhoud.
+   * Prestatie- en beveiligingstests uitvoeren op de werkgebiedomgeving.  Het is even groot als de productie.
 * Ontwikkelomgeving:
    * Met een ontwikkelomgeving kunnen uw ontwikkelaars AEM toepassingen implementeren en testen onder dezelfde runtimevoorwaarden als in de fase- en productieomgeving.
    * De veranderingen gaan door een plaatsingspijpleiding toe die voor de zelfde codekwaliteit en veiligheidspoorten zoals in de pijpleidingen van de productieleiding toestaat.
+   * Ontwikkelomgevingen hebben niet dezelfde grootte als stadium en productie en mogen niet worden gebruikt om prestatie- en veiligheidstests uit te voeren.
 * Snelle ontwikkelomgeving (RDE):
    * Een milieu RDE staat voor snelle ontwikkelingsherhalingen toe wanneer het opstellen van nieuwe of bestaande code in de instanties RDE, zonder het gaan door een formele plaatsingspijpleiding zoals die op regelmatige ontwikkelomgevingen wordt gevonden.
 
