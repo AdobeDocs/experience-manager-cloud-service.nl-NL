@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2023.12.0 in Adobe Experience Ma
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2023.12.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 71ce915413cd968a78a33b7a52d02e09841e1707
+source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ De releasedatum voor Cloud Manager versie 2023.12.0 in AEM as a Cloud Service is
 * Voor nieuwe Cloud Manager-programma&#39;s: [de bijbehorende New Relic-subrekening](/help/implementing/cloud-manager/user-access-new-relic.md) is niet standaard geactiveerd.
    * Voor bestaande programma&#39;s waarvoor de New Relic-subrekening niet langer dan 90 dagen toegankelijk is, wordt deze gedeactiveerd.
    * Als u de New Relic-subaccount wilt gebruiken, moet u zich aanmelden via Cloud Manager.
-* De rollouts van kleine versies voor Java 8 en 11 en updates voor maven [aangekondigd en begonnen met de release van Cloud Manager in oktober](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) zijn voltooid.
-   * Node 18 werd gesteund voor voorste en volledige stapelpijpleidingen.
+* De rollouts van updates aan [omgeving bouwen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) die [aangekondigd en begonnen met de release van Cloud Manager in oktober](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) zijn voltooid.
+   * Ondersteuning voor Node 18 is toegevoegd voor [voorkant en volledige stapelleidingen.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * Kleine Java 8-versie bijgewerkt naar `jdk1.8.0_371`.
    * Kleine Java 11-versie bijgewerkt naar `jdk-11.0.20`.
-   * Maven is bijgewerkt naar versie 3.8.8
+   * Maven is bijgewerkt naar versie 3.8.8.
       * Maven schakelt nu alles onveilig uit `http://*` spiegels standaard.
       * [Adobe beveelt aan](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) gebruikers werken hun Geweven opslagplaatsen bij om HTTPS in plaats van HTTP te gebruiken.
    * De basisafbeelding van de build-container is bijgewerkt naar Ubuntu 22.04.
