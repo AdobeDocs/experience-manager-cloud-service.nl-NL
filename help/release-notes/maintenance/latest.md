@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2677e8fbdf6b21ce2d1d848000401c826bc5f289
+source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -13,20 +13,20 @@ ht-degree: 1%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 14538 {#release-14538}
+## Release 14697 {#release-14697}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14538 samengevat, die op 6 december 2023 openbaar werd gemaakt. Deze onderhoudrelease is een update van eerdere onderhoudrelease 14227.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14697 samengevat, die op 18 december 2023 openbaar werd gemaakt. Het vervangt release 14538, die een probleem had. De vorige onderhoudsrelease was release 14227.
 
 2023.12.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
-### Verbeteringen {#enhancements-14538}
+### Verbeteringen {#enhancements-14697}
 
 * GRANITE-46723: Gebruikerssynchronisatie - SAML-migratie van standaardsynchronisatie naar op IDP gebaseerde synchronisatie.
 * OAK-10311: Replicatie - Optimaliseer blob vergelijking om replicatietijd van grote partij activa in AEM te verminderen.
 * OAK-10511: Replicatie - Verminder netwerk round-trips om replicatietijd van grote activa in AEM te verminderen.
 * GRANITE-48334: Uitgevers - het manuscript van de Inzameling ontbreekt voor RUM.
 
-### Opgeloste problemen {#fixed-issues-14538}
+### Opgeloste problemen {#fixed-issues-14697}
 
 * CQ-4354867: verwijzing ToggleCondition verwijst naar een niet-bestaand veld in InstanceActionServlet.
 * CQ-4349948: Lokalisatie van &#39;Profieleigenschappen&#39;-tekenreeksen in Gebruikersinstellingen bewerken onder Gereedschappen → Beveiliging → Gebruikers.
@@ -40,11 +40,11 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14538 same
 * ASSETS-30811: Reference Updates for Blocktag Service bound.
 * GRANITE-46418: Update Sling-gebeurtenissen in AEM: GaugeSupport heeft een oneindige herhaling in registerWithSuffix (SLING-11918).
 
-### Bekende problemen {#known-issues-14538}
+### Bekende problemen {#known-issues-14697}
 
 Geen.
 
-### Ingesloten technologieën {#embedded-tech-14538}
+### Ingesloten technologieën {#embedded-tech-14697}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
