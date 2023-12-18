@@ -2,9 +2,9 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2407'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ Begin met het maken van een Ingestietaak en zorg ervoor dat **Sluitereffect** is
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Problemen met inslikken van inhoud oplossen"
->abstract="Verwijs naar de innamelogboeken en de documentatie om oplossingen aan gemeenschappelijke redenen te vinden waarom een inname kan ontbreken en de manier vinden om het probleem te bevestigen. Zodra de injectie is opgelost, kan deze weer worden uitgevoerd."
+>abstract="Verwijs naar de innamelogboeken en de documentatie om oplossingen aan gemeenschappelijke redenen te vinden waarom een inname kan ontbreken en de manier vinden om het probleem te bevestigen. Als de injectie eenmaal is vastgezet, kan deze weer worden uitgevoerd."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Inhoudsoverdrachten valideren"
 
 ### CAM Kan migratietoken niet ophalen {#cam-unable-to-retrieve-the-migration-token}
@@ -159,9 +159,11 @@ Een gemeenschappelijke oorzaak van een [Bovenste inname](/help/journey-migration
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] met waarde a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Elk knooppunt in AEM moet een unieke uuid hebben. Deze fout geeft aan dat een knooppunt dat wordt ingesloten, dezelfde uuid heeft als een knooppunt dat zich elders in een ander pad op de doelinstantie bevindt.
-Deze situatie kan zich voordoen als een knooppunt van de bron wordt verplaatst tussen een extractie en een volgende [Extractie bovenaan](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-Het kan ook gebeuren als een knoop op de bestemming tussen een inname en een verdere top-up inname wordt bewogen.
+Elk knooppunt in AEM moet een unieke uuid hebben. Deze fout geeft aan dat een knooppunt dat wordt ingesloten, dezelfde uuid heeft als een knooppunt dat zich in een ander pad op de doelinstantie bevindt. Deze situatie kan om twee redenen gebeuren:
+
+* Een knooppunt wordt verplaatst naar de bron tussen een extractie en een volgende [Extractie bovenaan](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _ONTHOUDEN_: Voor Top-Up-extracties bestaat het knooppunt nog steeds in de migratieset, zelfs als het niet meer bestaat op de bron.
+* Een knoop op de bestemming wordt bewogen tussen een ingestie en een verdere top-up ingestie.
 
 Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud, moet beslissen welke van de twee knooppunten moet worden verwijderd, rekening houdend met andere inhoud die ernaar verwijst. De oplossing kan vereisen dat de top-up extractie opnieuw wordt gedaan zonder de beledigende knoop.
 
@@ -171,7 +173,7 @@ Een andere veelvoorkomende oorzaak van een [Bovenste inname](/help/journey-migra
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e 976a8
 
-Dit kan gebeuren als een knooppunt op de bestemming wordt gewijzigd tussen een opname en een volgende opname **Niet-sluitereffect** Inname zodanig dat er een nieuwe versie is gemaakt. Als de migratieset is geëxtraheerd met &#39;include-versies&#39; ingeschakeld, kan er een conflict optreden omdat de bestemming nu een recentere versie heeft waarnaar wordt verwezen door versiegeschiedenis en andere inhoud. Het insluitingsproces kan het conflicterende versieknooppunt niet verwijderen omdat ernaar wordt verwezen.
+Dit kan gebeuren als een knooppunt op de bestemming wordt gewijzigd tussen een opname en een volgende opname **Niet-sluitereffect** Inname zodanig dat er een nieuwe versie is gemaakt. Als de migratieset is geëxtraheerd met &#39;include-versies&#39; ingeschakeld, kan er een conflict optreden omdat de bestemming nu een recentere versie heeft waarnaar wordt verwezen door versiegeschiedenis en andere inhoud. Het opnameproces kan het beledigende versieknooppunt niet verwijderen omdat ernaar wordt verwezen.
 
 De oplossing kan vereisen dat de top-up extractie opnieuw wordt gedaan zonder de beledigende knoop. Of u maakt een kleine migratieset van het aanstootgevende knooppunt, maar met &quot;include-versies&quot; uitgeschakeld.
 
