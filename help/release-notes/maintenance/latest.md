@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
+source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14697 same
 * ASSETS-31297: het verwijderen van gekopieerde elementen uit dynamische media voorkomen.
 * ASSETS-30811: Reference Updates for Blocktag Service bound.
 * GRANITE-46418: Update Sling-gebeurtenissen in AEM: GaugeSupport heeft een oneindige herhaling in registerWithSuffix (SLING-11918).
+* GRANITE-48937: Los regressie van Maintenance Release 14538 op, waar Omnissearch niet werkt op aem/start.html pagina.
 
 ### Bekende problemen {#known-issues-14697}
 
