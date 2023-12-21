@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a5121436b2e48302fcf14478764aede1495e089c
+source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -53,13 +53,21 @@ Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebr
 Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor de productie-, stage- en ontwikkelomgeving via uw e-mailadres dat aan uw Adobe ID is gekoppeld. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
 
 
+## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
+
+### Nieuwe functies in de weergave Elementen {#assets-view-features}
+
+**GenAI-afbeeldingen maken met Adobe Firefly**
+
+Maak nieuwe afbeeldingen op basis van zoekquery&#39;s met een Adobe Firefly van de functie voor tekst naar afbeelding (licentie voor Adobe Firefly vereist).
+
+![Integratie van Fireflys](/help/assets/assets/assets-firefly-integration.png)
+
+**Gelijksoortige afbeeldingen zoeken**
+
+U kunt nu eenvoudig inhoud zoeken door een afbeelding te selecteren en vergelijkbare afbeeldingen weer te geven in de Experience Manager Assets-opslagplaats.
+
 <!--
-
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
-
-### New Features in Admin View {#admin-view-features}
-
-
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
