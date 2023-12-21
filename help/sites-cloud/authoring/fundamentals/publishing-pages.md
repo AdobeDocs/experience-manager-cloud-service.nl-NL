@@ -2,10 +2,10 @@
 title: Pagina's publiceren
 description: Leer hoe u uw pagina's op verschillende manieren in AEM publiceert en publiceert.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 5%
+source-wordcount: '1847'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +39,7 @@ Wanneer u met Adobe Experience Manager (AEM) as a Cloud Service werkt, kunnen er
 
 Afhankelijk van uw locatie kunt u publiceren:
 
-* [Vanuit de pagina-editor](#publishing-from-the-editor)
+* [Vanuit de paginaeditor](#publishing-from-the-editor)
 * [Van de plaatsenconsole](#publishing-from-the-console)
 
 >[!NOTE]
@@ -49,6 +49,12 @@ Afhankelijk van uw locatie kunt u publiceren:
 >* Er wordt een workflow gestart om de juiste persoon op de hoogte te stellen van uw verzoek om te publiceren.
 >* Deze workflow is mogelijk aangepast door uw ontwikkelingsteam.
 >* Er wordt kort een bericht weergegeven om u te melden dat de workflow is geactiveerd.
+
+>[!NOTE]
+>
+>Als u de paginavolgorde wilt behouden, moet u de bovenliggende pagina publiceren wanneer u onderliggende pagina&#39;s publiceert.
+>
+>De paginavolgorde is niet gegarandeerd als alleen onderliggende pagina&#39;s zijn geselecteerd voor publicatie (aangezien de ordergegevens op de bovenliggende pagina staan).
 
 >[!NOTE]
 >
@@ -219,7 +225,7 @@ Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw 
 
 In een [vergelijkbare manier van publiceren](#publishing-pages), kan de publicatie van een of meer pagina&#39;s ongedaan worden gemaakt vanaf het gewenste doel:
 
-* [Vanuit de pagina-editor](#unpublishing-from-the-editor)
+* [Vanuit de paginaeditor](#unpublishing-from-the-editor)
 * [Van de plaatsenconsole](#unpublishing-from-the-console)
 
 ### Publicatie ongedaan maken vanuit de Editor {#unpublishing-from-the-editor}
