@@ -1,9 +1,9 @@
 ---
 title: Dynatrace OneAgent
 description: Leer hoe u de OneAgent van Dynatrace met AEM as a Cloud Service
-source-git-commit: 2e70c8be73915bea860b98e02c08772bb4f5dcd2
+source-git-commit: 9379e6a1ec323ff4f05e994e9265da1363b4a3df
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ De details die voor connectiviteitsverzoeken worden vereist worden hieronder bes
 
 | **Veld** | **Beschrijving** |
 |---|---|
-| URL van dynamische omgeving | De URL van uw Dynatrace-omgeving.<br><br>Voor klanten van Dynatrace SaaS is de indeling `https://<environment>.live.dynatrace.com`.<br><br>Voor klanten met Dynatrace Managed is de indeling `https://<your-managed-url>/e/<environmentId>` |
+| URL van dynamische omgeving | De URL van uw Dynatrace-omgeving.<br><br>Voor klanten van Dynatrace SaaS is de indeling `https://<you-environment-id>.live.dynatrace.com`.<br><br>Voor klanten met Dynatrace Managed is de indeling `https://<your-managed-url>/e/<environmentId>` |
 | ID Dynatracie | Uw milieu-id van de Dynatrace, die u vindt in de URL van het milieu |
 | Dynatrace Environment Token | Uw OneAgent-omgevingstoken. Raadpleeg de documentatie bij Dynatrace voor meer informatie.<br><br>Dit moet als een geheim worden beschouwd, dus gebruik passende veiligheidspraktijken. Het wachtwoord beveiligt het bijvoorbeeld in een website, zoals **zerobin.net**, waarnaar het klantenondersteuningsticket kan verwijzen, samen met het wachtwoord. |
 | Toegangstoken API van Dynatrace | Het API toegangstoken van uw milieu van de Naslaggids. Raadpleeg de documentatie bij Dynatrace voor meer informatie.<br><br>Dit moet als een geheim worden beschouwd, dus gebruik maken van passende veiligheidspraktijken. Het wachtwoord beveiligt het bijvoorbeeld in een website, zoals **zerobin.net**, waarnaar het klantenondersteuningsticket kan verwijzen, samen met het wachtwoord.<br><br>Opmerking: dit is alleen vereist voor Dynatrace Managed. |
-| Dynatrace-bestemmingspoort | De Dynatrace bestemmingshaven.<br><br>Opmerking: dit is alleen vereist voor Dynatrace Managed. |
+| Dynatrace ActiveGate-poort | Uw ActiveGate-poort van Dynatrace waarmee OneAgent verbinding moet maken.<br><br>Opmerking: dit is alleen vereist voor Dynatrace Managed. |
 | AEM milieu-id(&#39;s) | De AEM milieu-id(s) voor Dynatrace om te controleren. |
 
 
