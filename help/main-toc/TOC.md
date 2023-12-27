@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c54ef4f80703497e9f26847be2fe99867b74c094
+source-git-commit: 4968921cadcee7eb023d5761abfa0373a24c5ed2
 workflow-type: tm+mt
-source-wordcount: '4556'
+source-wordcount: '4560'
 ht-degree: 4%
 
 ---
@@ -724,7 +724,7 @@ ht-degree: 4%
    + Handelsreizen {#journeys}
       + Reis van auteur van inhoud {#author}
          + [Reis AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
-         + [Aan de slag met CIF Authoring](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+         + [Aan de slag met CIF ontwerpen](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
          + [Productcataloguspagina&#39;s en -sjabloon beheren](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
          + [Werken met nog niet voltooide productcataloguservaringen](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
          + [Ervaringen maken met producten](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
@@ -750,9 +750,9 @@ ht-degree: 4%
          + [Aangepaste HTTP-headers](/help/commerce-cloud/configuring/custom-http-headers.md)
       + Ontwikkeling {#developing}
          + [Ontwikkelen met AEM Cloud Service SDK](/help/commerce-cloud/develop.md)
-         + [CIF-componenten opmaken](/help/commerce-cloud/customizing/style-cif-component.md)
-         + [CIF-componenten aanpassen](/help/commerce-cloud/customizing/customize-cif-components.md)
-         + [CIF Catalog Pickers gebruiken](/help/commerce-cloud/customizing/use-cif-pickers.md)
+         + [CIF opmaken](/help/commerce-cloud/customizing/style-cif-component.md)
+         + [CIF componenten aanpassen](/help/commerce-cloud/customizing/customize-cif-components.md)
+         + [CIF cataloguskiezers gebruiken](/help/commerce-cloud/customizing/use-cif-pickers.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migratie](/help/commerce-cloud/migration.md)
    + [Veelgestelde vragen](/help/commerce-cloud/faq.md)
@@ -1109,6 +1109,7 @@ ht-degree: 4%
    + [Inhoud ontwerpen met de Universal Editor](/help/implementing/universal-editor/authoring.md)
    + [Inhoud publiceren met de Universal Editor](/help/implementing/universal-editor/publishing.md)
    + [Aan de slag met de Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+   + [Overzicht van Universal Editor-ontwikkelaars](/help/implementing/universal-editor/developer-overview.md)
    + [Architectuur van Universal Editor](/help/implementing/universal-editor/architecture.md)
    + [Kenmerken en typen](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor-verificatie](/help/implementing/universal-editor/authentication.md)
