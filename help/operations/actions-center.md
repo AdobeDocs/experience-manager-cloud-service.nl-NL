@@ -2,9 +2,9 @@
 title: Handelingencentrum
 description: Gebruik het actiecentrum om incidenten en andere belangrijke informatie op een gemakkelijke manier aan te pakken
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ AEM as a Cloud Service heeft verschillende soorten meldingen, maar er wordt alle
 In de volgende tabel worden de berichttypen weergegeven die momenteel worden ondersteund in Actions Center. Meldingen zijn momenteel beperkt tot productieomgevingen.
 
 | Meldingstype | Verwante productprofiel | Correctieve actie |
-|---|---|---|
+|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Geblokkeerde replicatiewachtrij | Incident | Blokkeren van wachtrij opheffen door instructies in het dialoogvenster [Replicatiedocumentatie](/help/operations/replication.md#troubleshooting) |
+| Ongeldige aaneengesloten GraphQL-query | Incident | Corrigeer de ongeldige GraphQL-query door te verwijzen naar de [Blijvende documentatie over probleemoplossing voor GraphQL-query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
 | S2S-certificaat vervalt | Proactief | Leer hoe u een referentie kunt vernieuwen in het dialoogvenster [Access Tokens genereren voor documentatie van server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) |
-
