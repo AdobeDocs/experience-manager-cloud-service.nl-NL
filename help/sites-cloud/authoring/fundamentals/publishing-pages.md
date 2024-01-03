@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Leer hoe u uw pagina's op verschillende manieren in AEM publiceert en publiceert.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
+source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1925'
 ht-degree: 4%
 
 ---
@@ -52,9 +52,11 @@ Afhankelijk van uw locatie kunt u publiceren:
 
 >[!NOTE]
 >
->Als u de paginavolgorde wilt behouden, moet u de bovenliggende pagina publiceren wanneer u onderliggende pagina&#39;s publiceert.
+>Als u de paginavolgorde wilt behouden, gebruikt u [Publicatie beheren](#manage-publication) de bovenliggende pagina samen met eventuele onderliggende pagina&#39;s in één actie publiceren.
 >
->De paginavolgorde is niet gegarandeerd als alleen onderliggende pagina&#39;s zijn geselecteerd voor publicatie (aangezien de ordergegevens op de bovenliggende pagina staan).
+>Paginavolgorde is niet gegarandeerd:
+>* als alleen onderliggende pagina&#39;s zijn geselecteerd voor publicatie (aangezien de orderinformatie op de bovenliggende pagina staat)
+>* als de bovenliggende en onderliggende pagina&#39;s in afzonderlijke handelingen worden gepubliceerd
 
 >[!NOTE]
 >
@@ -123,6 +125,14 @@ Een pagina publiceren met Snel publiceren:
 #### Publicatie beheren {#manage-publication}
 
 **Publicatie beheren** biedt meer opties dan **Snel publiceren**, zodat onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en alle toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om op een latere datum te publiceren.
+
+>[!NOTE]
+>
+>Als u de paginavolgorde wilt behouden, gebruikt u **Publicatie beheren** om de bovenliggende pagina samen met eventuele onderliggende pagina&#39;s in één handeling te publiceren.
+>
+>Paginavolgorde is niet gegarandeerd:
+>* als alleen onderliggende pagina&#39;s zijn geselecteerd voor publicatie (aangezien de orderinformatie op de bovenliggende pagina staat)
+>* als de bovenliggende en onderliggende pagina&#39;s in afzonderlijke handelingen worden gepubliceerd
 
 Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beheren:
 
