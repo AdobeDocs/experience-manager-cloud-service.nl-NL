@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Leer hoe u uw pagina's op verschillende manieren in AEM publiceert en publiceert.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: c05cf17749f63e713e4fb3fbf2a840a9f82877b3
+source-git-commit: 00520bff0f3b0d36610d8601077198856c8b71dd
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1927'
 ht-degree: 4%
 
 ---
@@ -52,7 +52,7 @@ Afhankelijk van uw locatie kunt u publiceren:
 
 >[!NOTE]
 >
->Als u de paginavolgorde wilt behouden, gebruikt u [Publicatie beheren](#manage-publication) de bovenliggende pagina samen met eventuele onderliggende pagina&#39;s in één actie publiceren.
+>Als u de paginavolgorde wilt behouden, moet u [Publicatie beheren](#manage-publication) de bovenliggende pagina samen met eventuele onderliggende pagina&#39;s in één actie publiceren.
 >
 >Paginavolgorde is niet gegarandeerd:
 >* als alleen onderliggende pagina&#39;s zijn geselecteerd voor publicatie (aangezien de orderinformatie op de bovenliggende pagina staat)
@@ -128,7 +128,7 @@ Een pagina publiceren met Snel publiceren:
 
 >[!NOTE]
 >
->Als u de paginavolgorde wilt behouden, gebruikt u **Publicatie beheren** om de bovenliggende pagina samen met eventuele onderliggende pagina&#39;s in één handeling te publiceren.
+>Als u de paginavolgorde wilt behouden, moet u **Publicatie beheren** om de bovenliggende pagina samen met eventuele onderliggende pagina&#39;s in één handeling te publiceren.
 >
 >Paginavolgorde is niet gegarandeerd:
 >* als alleen onderliggende pagina&#39;s zijn geselecteerd voor publicatie (aangezien de orderinformatie op de bovenliggende pagina staat)
