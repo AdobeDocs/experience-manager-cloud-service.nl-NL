@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
@@ -44,11 +44,10 @@ Nadat u bent aangemeld, voert u de URL van de pagina die u wilt bewerken in het 
 
 ## De gebruikersinterface begrijpen {#ui}
 
-De interface is verdeeld in vijf hoofdgebieden.
+De interface is verdeeld in deze hoofdgebieden.
 
 * [De koptekst van het Experience Cloud](#experience-cloud-header)
-* [De koptekst van de Universal Editor](#universal-editor-header)
-* [De modusrail](#mode-rail)
+* [De werkbalk van de Universal Editor](#universal-editor-toolbar)
 * [De editor](#editor)
 * [De eigenschappen per spoor](#properties-rail)
 
@@ -96,11 +95,11 @@ Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmo
 
 ![Gebruikerseigenschappen](assets/user-properties.png)
 
-### De koptekst van de Universal Editor {#universal-editor-header}
+### De werkbalk Universele editor {#universal-editor-toolbar}
 
-De Universal Editor-koptekst bevindt zich altijd boven aan het scherm net onder [de koptekst van het Experience Cloud.](#experience-cloud-header) Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
+De werkbalk Universele editor bevindt zich altijd boven in het scherm net onder [de koptekst van het Experience Cloud.](#experience-cloud-header) Hiermee kunt u snel naar een andere pagina navigeren om deze te bewerken en te publiceren.
 
-![De koptekst van de Universal Editor](assets/universal-editor-header.png)
+![De werkbalk van de Universal Editor](assets/universal-editor-toolbar.png)
 
 #### De knop Home {#home-button}
 
@@ -132,7 +131,7 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze o
 
 #### Instellingen voor verificatiekoptekst {#authentication-settings}
 
-Selecteer het de montagespictogram van de authentificatiekop als u een authentificatiegeheim moet plaatsen.
+Selecteer het pictogram voor de instellingen van de verificatiekoptekst als u [Stel een aangepaste verificatieheader in voor lokale ontwikkelingsdoeleinden.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![Knop Instellingen van verificatieheader](assets/authentication-header-settings.png)
 
@@ -154,6 +153,16 @@ U kunt er ook voor kiezen om een mobiel apparaat te emuleren en in de Universele
 * Breedte en hoogte definiëren
 * De richting wijzigen
 
+#### Voorvertoningsmodus {#preview-mode}
+
+In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op uw gepubliceerde dienst zou worden gezien. Hierdoor kan de auteur van de inhoud door de inhoud navigeren door op koppelingen te klikken, enzovoort.
+
+![Voorvertoningsmodus](assets/preview-mode.png)
+
+>[!TIP]
+>
+>De sneltoets gebruiken `P` om van en naar voorvertoningsmodus te schakelen.
+
 #### App-voorvertoning openen {#open-app-preview}
 
 Selecteer het pictogram voor de voorvertoning van de geopende app om de pagina die u momenteel bewerkt te openen op een eigen browsertabblad, zodat de editor geen voorvertoning van uw inhoud kan weergeven.
@@ -174,47 +183,13 @@ Selecteer de knop Publiceren zodat u de wijzigingen in de inhoud live kunt publi
 >
 >Zie het document [Inhoud publiceren met de Universal Editor](publishing.md) voor meer informatie over publiceren met de Universele Redacteur.
 
-### De Modus Rail {#rail}
-
-De modusrail bevindt zich net onder de thuisknop en is altijd aanwezig aan de linkerkant van de editor. Het staat gemakkelijke omschakeling van de redacteur tussen verschillende gebruikswijzen toe.
-
-![De modusrail](assets/mode-rail.png)
-
-#### Voorvertoningsmodus {#preview-mode}
-
-In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op uw gepubliceerde dienst zou worden gezien. Hierdoor kan de auteur van de inhoud door de inhoud navigeren door op koppelingen te klikken, enzovoort.
-
-![Voorvertoningsmodus](assets/preview-mode.png)
-
->[!TIP]
->
->De sneltoets gebruiken `P` om over te schakelen naar de voorvertoningsmodus.
-
-#### Componentmodus {#component-mode}
-
-In de modus Componenten kan de auteur van de inhoud componenten selecteren om deze te bewerken, waaronder:
-
-* [Onbewerkte tekst bewerken](#editing-content) op zijn plaats.
-* [RTF-tekst bewerken](#editing-rich-text) op zijn plaats met extra opmaakopties die in de eigenschappen rail worden getoond.
-* [Media-inhoud bewerken](#editing-media)
-* [Inhoudsfragmenten bewerken](#edit-content-fragment)
-
-![Componentmodus](assets/component-mode.png)
-
-Wanneer u een component selecteert, worden de details van de inhoud weergegeven in het dialoogvenster [eigenschappen rail.](#properties-rail) Afhankelijk van het inhoudstype kunt u op zijn plaats of in de eigenschappenrails bewerken.
-
->[!TIP]
->
->De sneltoets gebruiken `C` om naar componentenwijze over te schakelen.
-
 ### De Editor {#editor}
 
 De editor neemt het grootste deel van het venster in beslag en is de locatie van de pagina die is opgegeven in [de locatiebalk](#location-bar) wordt weergegeven.
 
-* Als de editor zich bevindt in [componentmodus,](#component-mode) de inhoud kan worden bewerkt, maar u kunt geen koppelingen volgen.
-* Als de editor zich bevindt in [voorvertoningsmodus,](#preview-mode) U kunt wel navigeren naar de inhoud en koppelingen volgen, maar u kunt de inhoud niet bewerken.
-
 ![Editor](assets/editor.png)
+
+Als de editor zich bevindt in [voorvertoningsmodus,](#preview-mode) U kunt wel navigeren naar de inhoud en koppelingen volgen, maar u kunt de inhoud niet bewerken.
 
 ### Eigenschappenspoorlijn {#properties-rail}
 
@@ -254,7 +229,7 @@ Wanneer het selecteren van een punt in de inhoudsboom, scrolt de redacteur aan d
 
 ##### Bewerken {#edit}
 
-Wanneer in [componentmodus,](#component-mode) de bewerkingsopties voor de geselecteerde component worden weergegeven in de eigenschappenrails. In de eigenschappenrails kunt u de geselecteerde component bewerken. Als de geselecteerde component een inhoudsfragment is, kunt u ook de knop Bewerken selecteren.
+Tijdens het bewerken worden de opties voor de geselecteerde component weergegeven in de eigenschappenbalk, waar u de geselecteerde component kunt bewerken. Als de geselecteerde component een inhoudsfragment is, kunt u ook de knop Bewerken selecteren.
 
 ![Pictogram Bewerken](assets/edit.png)
 
@@ -294,19 +269,19 @@ Tikken of klikken op de knop Verwijderen [verwijdert de component.](#deleting-co
 
 ## Inhoud bewerken {#editing-content}
 
-Inhoud bewerken is eenvoudig en intuïtief. In [componentmodus](#component-mode)Terwijl u de muis over de inhoud in de editor beweegt, wordt bewerkbare inhoud gemarkeerd met een blauw vak.
+Inhoud bewerken is eenvoudig en intuïtief. Terwijl u de muis over de inhoud in de editor beweegt, wordt bewerkbare inhoud gemarkeerd met een blauw vak.
 
 ![Bewerkbare inhoud wordt gemarkeerd door een blauw vak](assets/editable-content.png)
 
 >[!TIP]
 >
->Als u in de componentmodus op inhoud tikt of erop klikt, wordt deze geselecteerd voor bewerking. Als u door de inhoud wilt navigeren door de koppelingen te volgen, schakelt u over naar [voorvertoningsmodus.](#preview-mode)
+>Door gebrek, selecteert het tikken of het klikken op inhoud het voor het uitgeven. Als u door de inhoud wilt navigeren door de koppelingen te volgen, schakelt u over naar [voorvertoningsmodus.](#preview-mode)
 
 Afhankelijk van de inhoud die u selecteert, zijn er mogelijk verschillende opties voor lokale bewerking en kunt u aanvullende informatie en opties voor de inhoud in het dialoogvenster [eigenschappen rail.](#properties-rail)
 
 ### Onbewerkte tekst bewerken {#edit-plain-text}
 
-Als u binnen [componentmodus](#component-mode) en selecteert u een tekstcomponent zonder opmaak, kunt u de tekst op zijn plaats bewerken door te dubbelklikken op de component of erop te dubbeltikken.
+U kunt de tekst op zijn plaats bewerken door te dubbelklikken op de component of erop te dubbeltikken.
 
 ![Inhoud bewerken](assets/editing-content.png)
 
@@ -320,7 +295,7 @@ De details van uw tekst zijn ook beschikbaar in de eigenschappen rail. Wijziging
 
 ### RTF-tekst bewerken {#edit-rich-text}
 
-Als u binnen [componentmodus](#component-mode) en selecteert u een tekstcomponent met tekstopmaak, kunt u de tekst op zijn plaats bewerken door te dubbelklikken op de component of erop te dubbeltikken.
+U kunt de tekst op zijn plaats bewerken door te dubbelklikken op de component of erop te dubbeltikken.
 
 Druk op Enter/Return of selecteer buiten het tekstvak om uw wijzigingen op te slaan.
 
@@ -330,25 +305,20 @@ Opmaakopties en details in de tekst zijn ook beschikbaar in de eigenschappenrail
 
 ### Media bewerken {#edit-media}
 
-Als u binnen [componentmodus](#component-mode) en als u een afbeelding selecteert, kunt u de details ervan bekijken in de eigenschappen rail.
+U kunt de details bekijken in de eigenschappen rail.
 
 ![Media bewerken](assets/ue-edit-media.png)
 
-Selecteer de **Vervangen** onder de voorvertoning van de geselecteerde afbeelding in de eigenschappenrails om de afbeelding te vervangen door een andere afbeelding uit de bibliotheek met elementen.
-
+1. Tik of klik op de voorvertoning van de geselecteerde afbeelding in de eigenschappenbalk.
 1. De [middelenkiezer](/help/assets/asset-selector.md#using-asset-selector) wordt geopend zodat u een element kunt selecteren.
 1. Selecteer deze optie om een nieuw element te selecteren.
 1. Selecteren **Selecteren** om terug te keren naar de spoorstaaf waar het activum is vervangen.
 
 Wijzigingen worden automatisch in de inhoud opgeslagen.
 
->[!TIP]
->
->De sneltoets gebruiken `R` om de elementkiezer te openen en de geselecteerde afbeelding te vervangen.
-
 ### Inhoudsfragmenten bewerken {#edit-content-fragment}
 
-Als u binnen [componentmodus](#component-mode) en selecteert u een [Inhoudsfragment](/help/sites-cloud/administering/content-fragments/overview.md) u kunt de details ervan in de eigenschappen rail uitgeven.
+Als u een [Inhoudsfragment](/help/sites-cloud/administering/content-fragments/overview.md) u kunt de details ervan in de eigenschappen rail uitgeven.
 
 ![Een inhoudsfragment bewerken](assets/ue-edit-cf.png)
 
@@ -407,7 +377,7 @@ De componenten worden opnieuw gerangschikt in zowel de inhoudsstructuur als de e
 
 Wanneer u klaar bent met het bewerken van inhoud, wilt u er vaak door navigeren om te zien hoe de inhoud er op andere pagina&#39;s uitziet. In [voorbeeldmodus](#preview-mode) u kunt op koppelingen klikken om door de inhoud te navigeren zoals een lezer zou doen. De inhoud wordt in de editor gerenderd zoals deze zou worden gepubliceerd.
 
-In de voorvertoningsmodus reageert de gebruiker op de inhoud door erop te tikken of erop te klikken, net als bij een lezer van de inhoud. Als u de te bewerken inhoud wilt selecteren, schakelt u over naar [componentmodus.](#component-mode)
+In de voorvertoningsmodus reageert de gebruiker op de inhoud door erop te tikken of erop te klikken, net als bij een lezer van de inhoud. Als u de te bewerken inhoud wilt selecteren, schakelt u uit van [voorvertoningsmodus.](#preview-mode)
 
 ## Aanvullende bronnen {#additional-resources}
 
