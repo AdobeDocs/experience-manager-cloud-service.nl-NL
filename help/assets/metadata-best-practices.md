@@ -4,7 +4,7 @@ description: Leer meer over best practices voor metagegevens om uw digitale midd
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 8434cb580ba8afc018a5a4357a4d249a06c566c2
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 0%
@@ -97,25 +97,25 @@ De governancestrategie kan omvatten:
 
 Bepaal waar de informatie vandaan komt en bestudeer de details van de metagegevensstrategie, inclusief de eigenschappen en de bronnen ervan. De schaal kan afhankelijk zijn van de complexiteit van de strategie. In grotere ondernemingen, is er een hoofdsysteem van het meta-gegevensbeheer dat veelvoudige systemen in de hoofdstapel controleert.
 
-<br>
-
 >[!NOTE]
 >
 >Leer hoe u [metagegevens van uw digitale elementen beheren](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Verenigbaar zijn met de metagegevensstrategie
 
-Een consistente metagegevensstrategie zorgt voor een effectieve organisatie en opvraging van digitale elementen. Een strategische aanpak hanteren voor het vastleggen en implementeren van metagegevenswaarden, zodat de evolutie soepel verloopt zonder onnodige wijzigingen. <br>
-Bij het beheer van metagegevens in de hele onderneming is consistentie belangrijk bij het benoemen van en verwijzen naar elementen. Wanneer u bijvoorbeeld meerdere elementen tegelijk beheert, kunt u overwegen metagegevens in bulk toe te voegen. <br>
+Een consistente metagegevensstrategie zorgt voor een effectieve organisatie en opvraging van digitale elementen. Een strategische aanpak hanteren voor het vastleggen en implementeren van metagegevenswaarden, zodat de evolutie soepel verloopt zonder onnodige wijzigingen.
+
+Bij het beheer van metagegevens in de hele onderneming is consistentie belangrijk bij het benoemen van en verwijzen naar elementen. Wanneer u bijvoorbeeld meerdere elementen tegelijk beheert, kunt u overwegen metagegevens in bulk toe te voegen.
+
 Hieronder volgen enkele aanbevolen procedures:
 
-* **Gebruik geen dubbele waarden:** Als u een verzameling afbeeldingen uit een marketingcampagne hebt, gebruikt u consistente namen en vermijdt u dubbele afbeeldingen.<br>
+* **Gebruik geen dubbele waarden:** Als u een verzameling afbeeldingen uit een marketingcampagne hebt, gebruikt u consistente namen en vermijdt u dubbele afbeeldingen.
 In plaats van bijvoorbeeld dubbele namen te gebruiken, *campagne_image_001* en *campagne_image_002*, een systematisch naamgevingsverdrag zoals *product_launch_001* en *product_launch_002*, waarbij een duidelijke en geordende identificatie wordt gewaarborgd.
 
-* **Gebruik op effectieve wijze gecontroleerde woordenboeken:** Implementeer gecontroleerde woordenboeken door gebruik te maken van gestandaardiseerde termen voor tags. <br>
+* **Gebruik op effectieve wijze gecontroleerde woordenboeken:** Implementeer gecontroleerde woordenboeken door gebruik te maken van gestandaardiseerde termen voor tags.
 Zo kunt u termen zoals *product_launch* of *event_Promotie* bij het labelen van afbeeldingen met thema&#39;s om een systematische volgorde te behouden.
 
-* **Nauwkeurigheid en volledigheid behouden:** Voor het consistent houden van metagegevens zijn nauwkeurigheid, volledigheid en uitlijning tussen verschillende bronnen van cruciaal belang.<br>
+* **Nauwkeurigheid en volledigheid behouden:** Voor het consistent houden van metagegevens zijn nauwkeurigheid, volledigheid en uitlijning tussen verschillende bronnen van cruciaal belang.
 Wanneer u bijvoorbeeld metagegevens toevoegt aan een PDF-document, moet u controleren of details zoals auteurnamen en trefwoorden correct en volledig zijn.
 
 #### Video: bulkmetagegevens toevoegen aan elementen
@@ -124,7 +124,8 @@ Wanneer u bijvoorbeeld metagegevens toevoegt aan een PDF-document, moet u contro
 
 ### De doorzoekbaarheid van metagegevens beoordelen en verbeteren
 
-Beoordeel uw strategie voor metagegevens om de zoekbaarheid van metagegevens te verbeteren. Vereenvoudig workflows en verbeter zoekmogelijkheden voor efficiënt hergebruik. Vermijd het omgaan met metagegevens die geen duidelijk doel hebben.<br>
+Beoordeel uw strategie voor metagegevens om de zoekbaarheid van metagegevens te verbeteren. Vereenvoudig workflows en verbeter zoekmogelijkheden voor efficiënt hergebruik. Vermijd het omgaan met metagegevens die geen duidelijk doel hebben.
+
 U kunt de volgende aanbevolen procedures in overweging nemen om uw zoekbaarheid van metagegevens te optimaliseren:
 
 * **Trefwoordoptimalisatie:** Verbeter de doorzoekbaarheid van metagegevens door trefwoorden te optimaliseren die aan elementen zijn gekoppeld. U kunt de relevantie van trefwoorden voor bepaalde elementen in Assets Manager verbeteren door de volgende stappen uit te voeren:
@@ -132,9 +133,9 @@ U kunt de volgende aanbevolen procedures in overweging nemen om uw zoekbaarheid 
    1. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL File]** > **[!UICONTROL [Asset folder]]**.
    1. Selecteer het element waarvan u de metagegevens wilt bijwerken en klik op **[!UICONTROL Properties]**.
    1. Ga naar de **[!UICONTROL Advanced]** en klikt u op **[!UICONTROL Add]** onder de **[!UICONTROL Elevate for search keywords]**.
-   1. Voer het trefwoord in waarvoor u de zoekopdracht wilt opvoeren en klik vervolgens op **[!UICONTROL Add]**.<br>
+   1. Voer het trefwoord in waarvoor u de zoekopdracht wilt opvoeren en klik vervolgens op **[!UICONTROL Add]**.
 U kunt meerdere trefwoorden toevoegen en deze rangschikken naar prioriteit.
-   1. Klik op **[!UICONTROL Save & Close]**.<br>
+   1. Klikken **[!UICONTROL Save & Close]**.
 Zoek het element met de trefwoorden die u hebt toegevoegd. Het element wordt weergegeven in de bovenste zoekresultaten.
 
   Leer hoe u [zoekopdracht opvoeren in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
@@ -151,7 +152,7 @@ Zoek het element met de trefwoorden die u hebt toegevoegd. Het element wordt wee
 
 ### Metagegevens eenvoudig en begrijpelijk houden
 
-Vereenvoudig metagegevens voor beter bestuur en gebruikerstoepassing. Houd het eenvoudig en gemakkelijk te begrijpen, en moedig gebruikers aan om essentiële informatie toe te voegen. <br>
+Vereenvoudig metagegevens voor beter bestuur en gebruikerstoepassing. Houd het eenvoudig en gemakkelijk te begrijpen, en moedig gebruikers aan om essentiële informatie toe te voegen.
 Gebruik de volgende aanbevolen procedures om de metagegevens te vereenvoudigen:
 
 * **Opties voor eigenschappen optimaliseren:** Focus op het markeren van essentiële eigenschappen zonder de gebruikers te belasten met te veel metagegevensvelden om in te vullen. Als u bijvoorbeeld metagegevens voor een afbeelding toevoegt, neemt u alleen sleutelvelden op zoals titel, beschrijving en tags voor een effectieve categorisering.

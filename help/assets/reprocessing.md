@@ -2,9 +2,9 @@
 title: Digitale middelen opnieuw verwerken
 description: Meer informatie over verschillende methoden voor het opwerken van digitale elementen
 contentOwner: KK
-source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -33,21 +33,21 @@ Als u een map selecteert:
 
    ![Opties voor opwerking van middelen](assets/reprocessing-assets-options.png)
 
-* **[!UICONTROL Full Process]:** Selecteer deze optie als u het algemene proces wilt uitvoeren, inclusief standaardprofiel, aangepast profiel, dynamische verwerking (indien geconfigureerd) en naverwerkingsworkflows.
-* **[!UICONTROL Advanced]:** Selecteer deze optie om geavanceerde opwerking te kiezen.
+   * **[!UICONTROL Full Process]:** Selecteer deze optie als u het algemene proces wilt uitvoeren, inclusief standaardprofiel, aangepast profiel, dynamische verwerking (indien geconfigureerd) en naverwerkingsworkflows.
+   * **[!UICONTROL Advanced]:** Selecteer deze optie om geavanceerde opwerking te kiezen.
 
-  ![Geavanceerde opties voor opwerkingsmiddelen](assets/reprocessing-assets-options-advanced.png)
+     ![Geavanceerde opties voor opwerkingsmiddelen](assets/reprocessing-assets-options-advanced.png)
 
-Kies een van de volgende geavanceerde opties:
+     Kies een van de volgende geavanceerde opties:
 
-* **[!UICONTROL Default Preview Renditions]:** Kies deze optie als u de uitvoeringen wilt verwerken waarvan de voorvertoning standaard wordt weergegeven.
+      * **[!UICONTROL Default Preview Renditions]:** Kies deze optie als u de uitvoeringen wilt verwerken waarvan de voorvertoning standaard wordt weergegeven.
 
-* **[!UICONTROL Metadata]:** Kies deze optie als u metagegevens en slimme tags voor de geselecteerde elementen wilt extraheren.
+      * **[!UICONTROL Metadata]:** Kies deze optie als u metagegevens en slimme tags voor de geselecteerde elementen wilt extraheren.
 
-* **[!UICONTROL Processing Profiles]:** Kies deze optie als u een geselecteerd profiel opnieuw wilt verwerken. U kunt **[!UICONTROL Full Process]** gebruiken om de standaardverwerking en het aangepaste profiel op te nemen die op mapniveau zijn toegewezen.
-  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL Processing Profiles]:** Kies deze optie als u een geselecteerd profiel opnieuw wilt verwerken. U kunt **[!UICONTROL Full Process]** gebruiken om de standaardverwerking en het aangepaste profiel op te nemen die op mapniveau zijn toegewezen.
+        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL Post-processing Workflow]:** Kies deze optie als aanvullende verwerking van elementen vereist is die niet met de verwerkingsprofielen kunnen worden bereikt. Er kunnen extra nabewerkingsworkflows worden toegevoegd aan de configuratie. Na de verwerking kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
+      * **[!UICONTROL Post-processing Workflow]:** Kies deze optie als aanvullende verwerking van elementen vereist is die niet met de verwerkingsprofielen kunnen worden bereikt. Er kunnen extra nabewerkingsworkflows worden toegevoegd aan de configuratie. Na de verwerking kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
 
 Zie [gebruik microservices en verwerkingsprofielen voor bedrijfsmiddelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) voor meer informatie over verwerkingsprofielen en de workflow voor nabewerking.
 
