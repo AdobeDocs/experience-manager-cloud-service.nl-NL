@@ -4,7 +4,7 @@ description: Open de gegevens in de sectie Rapporten van de mening van Activa om
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '800'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="Rapporten"
->abstract="Middelenrapportage geeft beheerders inzicht in de activiteiten van de weergaveomgeving van Adobe Experience Manager Assets. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken. Alle gebruikers die aan het het productprofiel van Beheerders worden toegewezen kunnen tot het dashboard van Inzichten toegang hebben of user-defined rapporten creëren."
+>abstract="Middelenrapportage geeft beheerders inzicht in de activiteiten van de Adobe Experience Manager Assets-weergaveomgeving. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken. Alle gebruikers die aan het het productprofiel van Beheerders worden toegewezen kunnen tot het dashboard van Inzichten toegang hebben of user-defined rapporten creëren."
 
-Middelenrapportage geeft beheerders inzicht in de activiteiten van de weergaveomgeving van Adobe Experience Manager Assets. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken.
+Middelenrapportage geeft beheerders inzicht in de activiteiten van de Adobe Experience Manager Assets-weergaveomgeving. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken.
 
 ## Toegangsrapporten {#access-reports}
 
