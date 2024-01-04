@@ -2,7 +2,7 @@
 title: Ontwikkeling van lokale AEM met de Universal Editor
 description: Leer hoe de Universele Redacteur het uitgeven op lokale AEM instanties voor ontwikkelingsdoeleinden steunt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Ontwikkeling van lokale AEM met de Universal Editor {#local-dev-ue}
 
 Leer hoe de Universele Redacteur het uitgeven op lokale AEM instanties voor ontwikkelingsdoeleinden steunt.
+
+{{universal-editor-status}}
+
+## Overzicht {#overview}
 
 In dit document wordt uitgelegd hoe u AEM uitvoert in HTTPS naast een lokale kopie van de Universal Editor-service, zodat u zich lokaal kunt ontwikkelen op AEM met de Universal Editor.
 

@@ -2,7 +2,7 @@
 title: Universal Editor-verificatie
 description: Leer hoe de Universele Redacteur het Systeem van Identity Management van de Adobe (IMS) voor authentificatie gebruikt.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 # Universal Editor-verificatie {#authentication}
 
 Leer hoe de Universal Editor wordt geverifieerd.
+
+{{universal-editor-status}}
 
 ## Opties {#options}
 
