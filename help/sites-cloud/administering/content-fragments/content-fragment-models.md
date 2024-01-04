@@ -1,17 +1,17 @@
 ---
-title: Modellen van contentfragmenten
-description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw Fragments van de Inhoud in AEM dienen. Met deze fragmenten kunt u gestructureerde inhoud maken voor gebruik in koploze weergave of voor het ontwerpen van pagina's.
+title: Modellen van inhoudsfragmenten
+description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw Fragmenten van de Inhoud in AEM dienen, toestaand u om gestructureerde inhoud voor gebruik in hoofdloze levering, of paginaontwerp tot stand te brengen.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '3121'
+source-wordcount: '3125'
 ht-degree: 1%
 
 ---
 
-# Modellen van contentfragmenten {#content-fragment-models}
+# Modellen van inhoudsfragmenten {#content-fragment-models}
 
 Met Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service wordt de structuur voor de inhoud van uw [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md). Deze fragmenten kunnen vervolgens worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop.
 
@@ -32,7 +32,7 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
    >
    >Als de [het gebruik van Content Fragment-modellen is niet ingeschakeld](/help/sites-cloud/administering/content-fragments/setup.md)de **Maken** deze optie is niet beschikbaar.
 
-1. Geef de **modeltitel** op.
+1. Geef de **Modeltitel**.
 U kunt ook verschillende eigenschappen definiëren, bijvoorbeeld **Tags**, **Beschrijving**, selecteert u **Model inschakelen** tot [het model inschakelen](#enabling-disabling-a-content-fragment-model) indien nodig en definieert de
    **URL-standaardvoorvertoningspatroon**.
 

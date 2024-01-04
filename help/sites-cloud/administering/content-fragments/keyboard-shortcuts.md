@@ -1,15 +1,15 @@
 ---
 title: Sneltoetsen voor de console van inhoudsfragmenten
-description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele voor het beheer van Content Fragments
+description: Er zijn verschillende sneltoetsen beschikbaar voor AEM, waaronder een selectie voor het beheer van inhoudsfragmenten.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
+exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
-
 
 # Sneltoetsen voor de console van inhoudsfragmenten {#keyboard-shortcuts-content-fragments-console}
 

@@ -1,12 +1,12 @@
 ---
 title: Inhoudsfragmenten beheren
-description: Leer hoe te om uw AEM Contentfragmenten van de console en de redacteur, als basis van uw hoofdloze inhoud, of voor paginacreatie te beheren.
+description: Leer hoe te om uw AEM Contentfragmenten van de console en de redacteur te beheren, om inhoud als basis van uw koploze inhoud, of voor paginaontwerp te creëren.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2620'
 ht-degree: 0%
 
 ---

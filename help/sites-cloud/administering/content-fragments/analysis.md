@@ -1,15 +1,15 @@
 ---
 title: Inhoudsfragmenten analyseren
-description: Begrijp de structuur en de inhoudslevering van uw Inhoudsfragmenten. Dit biedt informatie over zowel levering zonder kop als het ontwerpen van pagina's.
+description: Begrijp de structuur van uw die Fragmenten van de Inhoud voor inhoudslevering worden gebruikt. Dit verstrekt informatie relevant voor zowel krantenloze levering als pagina creatie.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '132'
 ht-degree: 1%
 
 ---
-
 
 # Structuur van inhoudsfragment analyseren {#analyzing-content-fragments-structure}
 
@@ -19,7 +19,7 @@ Experience Manager (AEM) biedt verschillende methoden voor het weergeven en anal
 
 ## Verwijzingen {#references}
 
-De structuur wordt opgebouwd gebruikend Verwijzingen:
+De structuur met meerdere lagen wordt opgebouwd met behulp van verwijzingen:
 
 * [Gegevenstypen voor verwijzingen worden gedefinieerd in het inhoudsfragmentmodel](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
 * Bij het ontwerpen kunt u het volgende doen:

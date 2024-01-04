@@ -1,15 +1,15 @@
 ---
 title: Inhoudsfragmenten - Setup
-description: Leer hoe u de functionaliteit voor inhoudsfragmenten en GraphQL kunt inschakelen om AEM functies voor levering zonder kop te gebruiken.
+description: Leer hoe u Content Fragment en GraphQL inschakelt voor gebruik met AEM functies voor levering zonder kop en het ontwerpen van pagina's.
 feature: Content Fragments
 role: Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
+exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '392'
 ht-degree: 3%
 
 ---
-
 
 # Inhoudsfragmenten - Setup {#content-fragments-setup}
 
