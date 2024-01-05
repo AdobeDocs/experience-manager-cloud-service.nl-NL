@@ -3,7 +3,7 @@ title: Distribueren naar AEM as a Cloud Service
 description: Leer over de grondbeginselen en beste praktijken van plaatsing aan AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 0%
@@ -175,7 +175,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Pakketbeheer - Meerdere inhoudspakketten migreren"
 >abstract="Verken het gebruik van Package Manager voor gebruik waarbij een inhoudspakket moet worden geïnstalleerd als &#39;one off&#39;. De installatie omvat het invoeren van specifieke inhoud van productie aan het opvoeren om een productieprobleem te zuiveren, het overbrengen van klein inhoudspakket van het milieu op-gebouw aan AEM milieu&#39;s van de Wolk, en meer."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="Inhoud overbrengen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="Inhoud overbrengen"
 
 Er zijn gebruiksgevallen waarin een inhoudspakket als &quot;één uit&quot; moet worden geïnstalleerd. Bijvoorbeeld, het invoeren van specifieke inhoud van productie aan het opvoeren om een productiekwestie te zuiveren. Voor deze scenario&#39;s [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) kan in milieu&#39;s op AEM as a Cloud Service worden gebruikt.
 

@@ -2,9 +2,9 @@
 title: KPI's openen
 description: Leer hoe te om tot uw KPIs toegang te hebben en het rapporteringsproces te bepalen
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 0%
 >id="aemcloud_assesskpis"
 >title="KPI&#39;s evalueren"
 >abstract="Voordat u begint met het lanceren van Adobe Experience Manager, moet iedereen die belang heeft in het project weten wat uw top drie KPI&#39;s zijn en waarom ze er toe doen."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPI&#39;s uitlijnen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Het juiste team kiezen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI&#39;s uitlijnen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Het juiste team kiezen"
 
 Voordat u begint met het lanceren van Adobe Experience Manager, moet iedereen die belang heeft in het project weten wat uw top drie KPI&#39;s zijn en waarom ze er toe doen.
 

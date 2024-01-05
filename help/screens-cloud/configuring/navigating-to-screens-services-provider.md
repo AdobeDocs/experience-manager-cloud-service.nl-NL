@@ -2,9 +2,9 @@
 title: Navigeren naar de Serviceverlener voor schermen
 description: In deze pagina wordt beschreven hoe u naar de Serviceverlener voor schermen kunt navigeren.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: ad5a8656b200ba35a0a6f58afd4be03202138f47
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '280'
 ht-degree: 1%
 
 ---
@@ -56,4 +56,4 @@ Voer de onderstaande stappen uit om de Serviceverlener voor schermen in te stell
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u de Serviceverlener voor schermen instelt, navigeert u naar [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) voor meer informatie .
+Nadat u hebt geleerd hoe u de Serviceverlener voor schermen instelt, navigeert u naar [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) voor meer informatie .

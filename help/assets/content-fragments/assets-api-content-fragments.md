@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service Content Fragments Support in 
 description: Meer informatie over ondersteuning voor Content Fragments in de HTTP API Middelen, een belangrijke Adobe Experience Manager-functie voor headless-levering.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van de  (AEM) hoofdloze leveringseigenschap van Adobe Experience Manager.
@@ -153,8 +153,8 @@ Als de REST API van Middelen binnen een milieu zonder specifieke authentificatie
 >
 >Zie voor meer informatie:
 >
->* [CORS/AEM toegelicht](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
->* [Video - Ontwikkeling voor CORS met AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
+>* [CORS/AEM toegelicht](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video - Ontwikkeling voor CORS met AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 In omgevingen met specifieke verificatievereisten wordt OAuth aanbevolen.
@@ -358,4 +358,4 @@ Zie hier voor gedetailleerde API-referenties:
 Zie voor meer informatie:
 
 * [Elementen HTTP API-documentatie](/help/assets/mac-api-assets.md)
-* [AEM Gem-sessie: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=en)
+* [AEM Gem-sessie: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)

@@ -1,10 +1,10 @@
 ---
 title: Rollen en verantwoordelijkheden
 description: Rollen en verantwoordelijkheden
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 2%
+source-wordcount: '484'
+ht-degree: 0%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 2%
 >id="aemcloud_raci"
 >title="Rollen en verantwoordelijkheden"
 >abstract="Adobe levert een reeks diensten met betrekking tot de levering, ontwikkeling, staging en productie van as a Cloud Service Experience Manager. Voor de ontwikkeling en plaatsing van de oplossing om zo efficiënt mogelijk te werk te gaan, is het belangrijk dat de klant en de klant hun rollen begrijpen en vervullen, zoals hier beschreven."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Rechts personen, rechterrollen kiezen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPI&#39;s uitlijnen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Rechts personen, rechterrollen kiezen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="KPI&#39;s uitlijnen"
 
 <br></br>
 Adobe levert een reeks diensten met betrekking tot de levering, ontwikkeling, staging en productie van as a Cloud Service Experience Manager. Voor de ontwikkeling en plaatsing van de oplossing om zo efficiënt mogelijk te werk te gaan, is het belangrijk dat de klant en de klant hun rollen begrijpen en vervullen, zoals hieronder beschreven.

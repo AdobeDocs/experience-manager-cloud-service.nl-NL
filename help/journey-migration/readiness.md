@@ -2,10 +2,10 @@
 title: Gereedheidsfase
 description: Leer meer over de stappen die u moet ondernemen om ervoor te zorgen dat uw AEM installatie klaar is om naar de cloud te worden verplaatst.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 2%
+source-wordcount: '1900'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
 <tbody>
   <tr>
     <td>Meerdere en onveranderbare filters scheiden in overeenkomende pakketten</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">as a Cloud Service opmerkelijke wijzigingen AEM</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM projectstructuur voor AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">as a Cloud Service opmerkelijke wijzigingen AEM</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM projectstructuur voor AEM as a Cloud Service</a></td>
     <td>Een enkel pakket dat in AEM as a Cloud Service kan worden geïmplementeerd, kan subpakketten bevatten, voornamelijk om muteerbare en onveranderlijke inhoud te bevatten die in hun eigen pakketten is gescheiden.</td>
   </tr>
   <tr>
@@ -89,12 +89,12 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   </tr>
   <tr>
     <td>Overschakelen naar asynchrone bewerkingen</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">Asynchrone bewerkingen configureren</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html#configuring-asynchronous-msm-operations">Asynchrone bewerkingen configureren</a></td>
     <td>Om de algemene prestaties van uw milieu's te verbeteren, worden bepaalde verrichtingen in asynchrone wijze in werking gesteld. De async banen worden een rij gevormd en lopen wanneer de systeemmiddelen beschikbaar zijn.</td>
   </tr>
   <tr>
     <td>Tokengebaseerde verificatie- en integratiestrategieën</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">Toegangstokens genereren voor server-side API's</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">Zelfstudie over verificatie op basis van token</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow">Toegangstokens genereren voor server-side API's</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication">Zelfstudie over verificatie op basis van token</a></td>
     <td>Het is gebruikelijk dat systemen buiten de AEM HTTP-bewerkingen binnen AEM uitvoeren.<br>De geadviseerde benadering is de strategieën uit te voeren die hier eerder dan het baseren op het creëren van lokale gebruikersnamen met wachtwoorden in AEM worden geschetst.</td>
   </tr>
   <tr>
@@ -104,32 +104,32 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   </tr>
   <tr>
     <td>DAM Update Asset Workflow</td>
-    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=en">Asset compute</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html">Asset compute</a></td>
     <td>De stappen voor mediaverwerking die deel uitmaken van de DAM Update Asset-workflow worden nu vervangen door de Asset compute Service</td>
   </tr>
   <tr>
     <td>Methoden voor het uploaden van middelen en ondersteunde stappen voor workflowproces in AEM as a Cloud Service</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">Upload API-vergelijkingen en ondersteunde stappen voor het WF-proces</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html#post-processing-workflows-steps">Upload API-vergelijkingen en ondersteunde stappen voor het WF-proces</a></td>
     <td>In AEM as a Cloud Service, of tijdens het uploaden of het downloaden van activa stromen de activa direct binnen of uit binaire opslag. <br>Niet alle stappen van het werkstroomproces worden ondersteund in AEMaaCS.</td>
   </tr>
   <tr>
     <td>Workflowstartprogramma's</td>
     <td></td>
-    <td>Verwijder om het even welke Lanceerders van het Werkschema die of uit-van-de-doos of de douaneWerkschema van het Activa van de Update DAM uit uw code teweegbrengen. <br>Alle in AEM as a Cloud Service geüploade activa worden door de Asset Processing Service verwerkt. Zie voor aangepaste stappen <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Workflows na verwerking</a> voor het instellen en configureren van workflows na verwerking.</td>
+    <td>Verwijder om het even welke Lanceerders van het Werkschema die of uit-van-de-doos of de douaneWerkschema van het Activa van de Update DAM uit uw code teweegbrengen. <br>Alle in AEM as a Cloud Service geüploade activa worden door de Asset Processing Service verwerkt. Zie voor aangepaste stappen <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> Workflows na verwerking</a> voor het instellen en configureren van workflows na verwerking.</td>
   </tr>
   <tr>
     <td>Aangepaste stappen voor vertoning</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en">Profielen verwerken</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">Profielen verwerken</a></td>
     <td>Elke aangepaste renditie, afbeeldingsconversie of videocodering moet naar de Asset Processing Service worden verschoven door de bijbehorende verwerkingsprofielen te maken.</td>
   </tr>
   <tr>
     <td>Inhoud zoeken en indexeren</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=en">Wijzigingen in zoeken en indexeren van inhoud</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html">Wijzigingen in zoeken en indexeren van inhoud</a></td>
     <td>Er zijn aanzienlijke veranderingen in de onderliggende verwerking van indexen en wanneer deze begint.<br>Begrijp en vernieuw volledig de Indexen van de Eik alvorens hen in de code te beheren die u opstelt.</td>
   </tr>
   <tr>
     <td>Niet zijn alle onderhoudstaken configureerbaar</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=en">as a Cloud Service onderhoudstaken AEM</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">as a Cloud Service onderhoudstaken AEM</a></td>
     <td>U kunt slechts bepaalde onderhoudstaken met AEM as a Cloud Service vormen.</td>
   </tr>
   <tr>
@@ -139,17 +139,17 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   </tr>
   <tr>
     <td>Dispatcher Configurations en Caching</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher in de cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=en#other-content">Cachebeheer<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html">Dispatcher in de cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Cachebeheer<br></td>
     <td>De Dispatcher-configuraties moeten een specifieke structuur volgen.<br>De configuraties moeten als onderdeel van code worden beheerd en via de pijplijn van de Manager van de Wolk worden opgesteld.</td>
   </tr>
   <tr>
     <td>Back-up en herstel</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en">as a Cloud Service back-up en herstel AEM</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">as a Cloud Service back-up en herstel AEM</a></td>
     <td></td>
   </tr>
   <tr>
     <td>Wijzigingen in verificatie</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">IMS-ondersteuning voor AEM as a Cloud Service</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html">IMS-ondersteuning voor AEM as a Cloud Service</td>
     <td>Als u eerder SAML 2.0-integratie op zowel auteur als publicatie gebruikte voordat u naar Cloud Service ging, is de belangrijkste wijziging dat AEM as a Cloud Service auteur alleen integreert met Adobe IMS. Nochtans, AEM de as a Cloud Service Publish rij kan nog SAML of andere authentificatieintegratie gebruiken. AEM as a Cloud Service biedt alleen ondersteuning voor IMS-verificatie voor auteur-, Admin- en Dev-gebruikers. De IMS-verificatie biedt geen ondersteuning voor externe eindgebruikers van klantsites zoals sitebezoekers.</td>
   </tr>
 </tbody>

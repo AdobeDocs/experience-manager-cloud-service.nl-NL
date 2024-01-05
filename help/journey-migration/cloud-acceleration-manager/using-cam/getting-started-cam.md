@@ -2,9 +2,9 @@
 title: Aan de slag met Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van het gebruik en het gebruik van Cloud Acceleration Manager.
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '514'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Ga als volgt te werk om naar CAM (Cloud Acceleration Manager) te navigeren:
 >id="aemcloud_cam_gettingstarted"
 >title="Aan de slag met Cloud Acceleration Manager"
 >abstract="Maak uw project en start uw reis naar AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="Voordelen van het gebruik van Cloud Acceleration Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html" text="Voordelen van het gebruik van Cloud Acceleration Manager"
 
 Met de openingspagina van de CAM (Cloud Acceleration Manager) kunt u meerdere projecten maken en bewerken.
 
@@ -97,4 +97,4 @@ Voer de onderstaande stappen uit om uw project te verwijderen:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd zich aan te melden bij de Manager van de Versnelling van de Wolk en hoe te om een project tot stand te brengen, bent u bereid om de volgende stap in te herzien [Gereedheidsfase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+Nadat u hebt geleerd zich aan te melden bij de Manager van de Versnelling van de Wolk en hoe te om een project tot stand te brengen, bent u bereid om de volgende stap in te herzien [Gereedheidsfase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
