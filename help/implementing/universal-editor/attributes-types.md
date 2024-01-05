@@ -1,10 +1,10 @@
 ---
-title: Kenmerken en typen
-description: Leer over de gegevensattributen en de types die de Universele Redacteur vereist.
+title: Kenmerken en itemtypen
+description: Leer over de gegevensattributen en de punttypes die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Kenmerken en typen {#attributes-types}
 
-Leer over de gegevensattributen en de types die de Universele Redacteur vereist.
+Leer over de gegevensattributen en de punttypes die de Universele Redacteur vereist.
 
 {{universal-editor-status}}
 
 ## Inleiding {#introduction}
 
-Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correct van instrumenten is voorzien. Dit omvat onder andere de juiste metagegevens, zodat de editor de inhoud van de app kan bewerken. In dit document worden de kenmerken en typen van deze metagegevens beschreven.
+Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correct van instrumenten is voorzien. Dit omvat onder andere de juiste metagegevens, zodat de editor de inhoud van de app kan bewerken. In dit document worden de kenmerken en itemtypen van deze metagegevens beschreven.
 
 >[!NOTE]
 >

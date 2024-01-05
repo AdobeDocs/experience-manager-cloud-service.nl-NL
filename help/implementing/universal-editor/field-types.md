@@ -1,29 +1,29 @@
 ---
-title: Veldtypen voor de universele editor
-description: Leer meer over de verschillende typen velden die de Universal Editor ondersteunt en wat u voor uw eigen apps kunt gebruiken.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+title: Veldtypen
+description: Leer meer over de verschillende typen velden die de Universal Editor in de componentrails kan bewerken met voorbeelden van hoe u uw eigen app kunt bewerken.
+source-git-commit: b1a188d01371665b4375087847625d89e47d8927
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
 
-# Veldtypen voor de universele editor {#field-types}
+# Veldtypen {#field-types}
 
-Leer meer over de verschillende typen velden die de Universal Editor ondersteunt en wat u voor uw eigen apps kunt gebruiken.
+Leer meer over de verschillende typen velden die de Universal Editor in de componentrails kan bewerken met voorbeelden van hoe u uw eigen app kunt bewerken.
 
 {{universal-editor-status}}
 
 ## Overzicht {#overview}
 
-Wanneer u uw eigen toepassingen aanpast voor gebruik met de Universal Editor, moet u de componenten van instrumenten voorzien en bepalen welke gegevenstypen deze in de editor kunnen manipuleren.
+Wanneer u uw eigen toepassingen aanpast voor gebruik met de Universal Editor, moet u de componenten instrumenten en definiëren welke gegevenstypen deze kunnen manipuleren in de componentrail van de editor.
 
-Dit document biedt een overzicht van de veldtypen die beschikbaar zijn in de editor.
+Dit document biedt een overzicht van de veldtypen die u kunt gebruiken, samen met voorbeeldconfiguraties.
 
 >[!TIP]
 >
->Als u niet bekend bent met het instrumenteren van uw app voor de Universal Editor, raadpleegt u het document [Overzicht van de Universal Editor voor AEM ontwikkelaars.](help/implementing/universal-editor/developer-overview.md)
+>Als u niet bekend bent met het instrumenteren van uw app voor de Universal Editor, raadpleegt u het document [Overzicht van de Universal Editor voor AEM ontwikkelaars.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Boolean {#boolean}
 
