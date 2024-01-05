@@ -1,17 +1,17 @@
 ---
 title: Inhoudsfragmenten beheren (elementen - Inhoudsfragmenten)
-description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
+description: Leer hoe te om de console van Middelen te gebruiken om uw AEM Contentfragmenten, als of basis van uw inhoud zonder kop of voor paginaontwerp te beheren.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 5%
+source-wordcount: '1885'
+ht-degree: 4%
 
 ---
 
 # Inhoudsfragmenten beheren {#managing-content-fragments}
 
-Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
+Leer hoe te om de console van Middelen te gebruiken om uw AEM Contentfragmenten, als of basis van uw inhoud zonder kop of voor paginaontwerp te beheren.
 
 Na het definiëren van uw [Modellen van inhoudsfragmenten](#creating-a-content-model) U kunt deze [Inhoudsfragmenten maken](#creating-a-content-fragment).
 

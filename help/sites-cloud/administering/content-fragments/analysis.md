@@ -1,12 +1,12 @@
 ---
 title: Inhoudsfragmenten analyseren
-description: Begrijp de structuur van uw die Fragmenten van de Inhoud voor inhoudslevering worden gebruikt. Dit verstrekt informatie relevant voor zowel krantenloze levering als pagina creatie.
+description: Begrijp de structuur van de inhoudsfragmenten. Dit verstrekt informatie relevant voor zowel krantenloze levering als pagina creatie.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '128'
 ht-degree: 1%
 
 ---

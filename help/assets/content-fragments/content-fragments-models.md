@@ -1,15 +1,15 @@
 ---
 title: Content Fragment Models (Assets - Content Fragments)
-description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
+description: Leer hoe Content Fragment Models fungeert als basis voor inhoud zonder kop in AEM, zodat u inhoudsfragmenten met gestructureerde inhoud kunt maken.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3011'
 ht-degree: 2%
 
 ---
 
-# Modellen van contentfragmenten {#content-fragment-models}
+# Modellen van inhoudsfragmenten {#content-fragment-models}
 
 Content Fragment Models in AEM de structuur van de inhoud voor uw [inhoudsfragmenten,](/help/assets/content-fragments/content-fragments.md) fungeren als basis voor uw inhoud zonder kop.
 
@@ -30,7 +30,7 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
    >
    >Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/assets/content-fragments/content-fragments-configuration-browser.md)de **Maken** deze optie is niet beschikbaar.
 
-1. Geef de **modeltitel** op.
+1. Geef de **Modeltitel**.
 U kunt ook verschillende eigenschappen definiëren, bijvoorbeeld **Tags**, **Beschrijving** en selecteert u **Model inschakelen** tot [het model inschakelen](#enabling-disabling-a-content-fragment-model) indien nodig.
 
    >[!NOTE]

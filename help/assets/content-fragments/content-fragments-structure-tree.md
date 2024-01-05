@@ -2,16 +2,16 @@
 title: Structuuromvang van inhoudsfragment (elementen - inhoudsfragmenten)
 description: Gebruik de functie Structuur van de Content Fragment Editor in AEM om uw inhoud zonder kop beter te begrijpen.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # Structuuromvang van inhoudsfragment {#content-fragment-structure-tree}
 
-Gebruik de functie Structuur van de Content Fragment Editor in AEM om uw inhoud zonder kop beter te begrijpen.
+Gebruik de functie Structuur van de Content Fragment Editor in AEM om de inhoud beter te begrijpen, met name voor koploze weergave.
 
 >[!NOTE]
 >

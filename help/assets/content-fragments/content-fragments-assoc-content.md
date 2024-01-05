@@ -1,17 +1,23 @@
 ---
 title: Gekoppelde inhoud (elementen - inhoudsfragmenten)
-description: Begrijp hoe AEM bijbehorende inhoudseigenschap de verbinding verstrekt zodat de activa facultatief met het fragment kunnen worden gebruikt.
+description: Begrijp hoe de bijbehorende inhoudseigenschap voor AEM Inhoudsfragmenten de verbinding verstrekt zodat de activa naar keuze met het fragment kunnen worden gebruikt.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 4%
+source-wordcount: '281'
+ht-degree: 3%
 
 ---
 
 # Gekoppelde inhoud{#associated-content}
 
-AEM functie Gekoppelde inhoud biedt de verbinding, zodat elementen optioneel met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit voor het leveren van inhoud zonder kop door [een reeks elementen bieden die toegankelijk zijn wanneer het inhoudsfragment op een pagina wordt gebruikt;](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) en de tijd die nodig is om het juiste middel te zoeken, te verkorten.
+Voor as a Cloud Service inhoudsfragmenten van Adobe Experience Manager (AEM) biedt de bijbehorende inhoudsfunctie (beschikbaar in de oorspronkelijke editor) de verbinding, zodat elementen optioneel met het fragment kunnen worden gebruikt. Dit biedt flexibiliteit door [een reeks elementen bieden die toegankelijk zijn wanneer het inhoudsfragment wordt gebruikt](/help/assets/content-fragments/content-fragments.md#using-associated-content)en helpt u tevens de tijd te verkorten die nodig is om het juiste middel te zoeken. Deze functie kan worden gebruikt voor het leveren van inhoud zonder kop en voor het ontwerpen van pagina&#39;s.
+
+>[!NOTE]
+>
+>Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. In deze sectie wordt de oorspronkelijke editor beschreven, die voornamelijk wordt geopend vanuit de **Activa** console.
 
 ## Gekoppelde inhoud toevoegen {#adding-associated-content}
 

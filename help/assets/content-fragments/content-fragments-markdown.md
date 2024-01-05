@@ -4,16 +4,16 @@ description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringss
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '586'
 ht-degree: 2%
 
 ---
 
 # Markering {#markdown}
 
-Wanneer u [ontwerpen](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), gebruikt de inhoudfragmenteditor *markeren* syntaxis waarmee u eenvoudig inhoud zonder kop kunt schrijven:
+Wanneer u [ontwerpen](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), gebruikt de inhoudfragmenteditor *markeren* syntaxis waarmee u eenvoudig inhoud kunt schrijven voor levering zonder kop of voor het ontwerpen van pagina&#39;s:
 
 >[!NOTE]
 >

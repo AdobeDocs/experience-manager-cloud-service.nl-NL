@@ -2,14 +2,14 @@
 title: Werken met inhoudsfragmenten (elementen - inhoudsfragmenten)
 description: Leer hoe u met Inhoudsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken, ideaal voor het ontwerpen van pagina's en het leveren zonder kop. Ook hoe zij samen met MSM kunnen worden gebruikt.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2222'
 ht-degree: 2%
 
 ---
 
-# Werken met contentfragmenten {#working-with-content-fragments}
+# Werken met inhoudsfragmenten {#working-with-content-fragments}
 
 Met Adobe Experience Manager (AEM) as a Cloud Service, laat de Fragmenten van de Inhoud u, ontwerp, leiden, en [pagina-onafhankelijke inhoud publiceren](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Zo kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop. Zij kunnen ook samen met [Beheer van meerdere sites, zodat u uw inhoud opnieuw kunt gebruiken](#reusing-content-fragments-with-msm-assets).
 
@@ -212,7 +212,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
      >[!NOTE]
      >
-     >Elementen kunnen ook worden toegevoegd als [extra inhoud (tussen)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) wanneer u een fragment op een pagina gebruikt; gekoppelde inhoud of elementen uit de middelenbrowser gebruiken.
+     >Elementen kunnen ook worden toegevoegd als aanvullende (tussen) inhoud wanneer een fragment op een pagina wordt gebruikt. Hierbij wordt een van de volgende [Gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) of elementen van de middelenbrowser.
 
 * **Gekoppelde inhoud**
 

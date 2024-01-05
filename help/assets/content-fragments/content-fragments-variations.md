@@ -1,17 +1,17 @@
 ---
 title: Variaties - Fragmentinhoud ontwerpen (elementen - Inhoudsfragmenten)
-description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
+description: Begrijp hoe de variaties van het Fragment van de Inhoud u toestaan om inhoud voor het fragment te ontwerpen, dan variaties van die inhoud tot stand te brengen volgens doel, daarom verhogend de flexibiliteit.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2474'
 ht-degree: 4%
 
 ---
 
-# Variaties - Authoring van content voor fragmenten{#variations-authoring-fragment-content}
+# Variaties - Fragmentinhoud ontwerpen{#variations-authoring-fragment-content}
 
-[Variaties](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een belangrijk kenmerk van AEM inhoudsfragmenten. De reden is dat u hiermee kopieën van de basisinhoud kunt maken en bewerken voor gebruik op specifieke kanalen en scenario&#39;s, waardoor de levering van inhoud zonder kop nog flexibeler wordt.
+[Variaties](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een significante eigenschap van de Fragments van de Inhoud in as a Cloud Service Manager van de Belichting van de Adobe (AEM). De reden hiervoor is dat u hiermee kopieën van de **Master** inhoud voor gebruik op specifieke kanalen en scenario&#39;s. Dit maakt met name de levering van inhoud zonder kop nog flexibeler.
 
 >[!NOTE]
 >
@@ -208,7 +208,7 @@ De optie **Nieuw inhoudsfragment** Hiermee kunt u een fragment maken. Hiervoor w
    1. **Gereed**:
       * retourneert (naar het oorspronkelijke fragment)
       * verwijst naar het nieuwe fragment
-   1. **Open**:
+   1. **Openen**:
       * verwijst naar het nieuwe fragment
       * Hiermee opent u het nieuwe fragment om het te bewerken in een nieuw browsertabblad
 
