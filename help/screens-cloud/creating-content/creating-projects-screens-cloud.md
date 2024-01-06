@@ -2,10 +2,10 @@
 title: Een project maken in as a Cloud Service schermen
 description: Leer hoe u een project maakt in as a Cloud Service schermen.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ De eerste stap bij het uitvoeren van een nieuw project in as a Cloud Service Sch
 
 ## Doelstelling {#objective}
 
-Met dit document kunt u begrijpen hoe u een AEM Screens-project maakt in de Inhoudsprovider voor schermen. Na het lezen, zou u uw AEM Screens project, in termen van werkingsgebied moeten kunnen tot stand brengen.
+Met dit document kunt u begrijpen hoe u een AEM Screens-project maakt in de Inhoudsprovider voor schermen. Na het lezen moet u uw AEM Screens-project in termen van bereik kunnen maken.
 
 ## Een nieuw project maken {#create-new-project}
 
@@ -24,9 +24,9 @@ Voer de onderstaande stappen uit om een project te maken in as a Cloud Service s
 1. Navigeer naar de Inhoudsprovider voor schermen.
 
    >[!NOTE]
-   >Zie [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) om te leren hoe te tot de Leverancier van de Inhoud van Schermen voor het creëren van uw project toegang hebben.
+   >Zie [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html) om te leren hoe te tot de Leverancier van de Inhoud van Schermen voor het creëren van uw project toegang hebben.
 
-1. Klik in de rechterbovenhoek van de actiebalk op **Schermproject maken**.
+1. Klik rechts boven in de actiebalk op **Schermproject maken**.
 
    ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 

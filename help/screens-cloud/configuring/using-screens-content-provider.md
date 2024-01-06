@@ -2,9 +2,9 @@
 title: Scherminhoudprovider gebruiken
 description: Op deze pagina wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken om inhoud te maken.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ## Doelstelling {#objective}
 
-In de volgende sectie wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken als u de instellingen hebt ingesteld [Schermserviceprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en).
+In de volgende sectie wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken als u de instellingen hebt ingesteld [Schermserviceprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
 
 ## Scherminhoudprovider gebruiken {#screens-content-provider}
 
 >[!NOTE]
 >**Vereiste**
->Voordat u deze sectie gaat lezen, raadpleegt u [Schermserviceprovider instellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) om te leren hoe te aan deze gebruikersinterface van de Leverancier van de Diensten van het Scherm navigeren.
+>Voordat u deze sectie gaat lezen, raadpleegt u [Schermserviceprovider instellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html) om te leren hoe te aan deze gebruikersinterface van de Leverancier van de Diensten van het Scherm navigeren.
 
 Voer de onderstaande stappen uit om u aan te melden bij de Inhoudsprovider voor schermen:
 
@@ -40,7 +40,7 @@ Voer de onderstaande stappen uit om u aan te melden bij de Inhoudsprovider voor 
    ![Pictogram voor de overzichtspagina van Cloud Manager wordt helemaal links op een werkbalk weergegeven.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >Als u geen programma hebt gemaakt, raadpleegt u [Eerste aanmelding bij schermen as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). Het onderwerp begeleidt u door het toevoegen van een programma voor as a Cloud Service schermen, in de Manager van de Wolk.
+   >Als u geen programma hebt gemaakt, raadpleegt u [Eerste aanmelding bij schermen as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html). Het onderwerp begeleidt u door het toevoegen van een programma voor as a Cloud Service schermen, in de Manager van de Wolk.
 
 1. Selecteer de koppeling in het menu **Omgevingen** -kaart zodat u toegang kunt krijgen tot de Inhoudsprovider voor schermen.
 
@@ -48,7 +48,7 @@ Voer de onderstaande stappen uit om u aan te melden bij de Inhoudsprovider voor 
 
    Nadat u zich hebt aangemeld bij de Inhoudsprovider voor schermen, kunt u nu inhoud maken om de inhoud af te spelen.
 
-   Met Scherminhoudprovider kunt u het volgende maken en beheren:
+   Gebruik Scherminhoudprovider om het volgende te maken en te beheren:
 
    * Projecten
    * Kanalen
@@ -56,4 +56,4 @@ Voer de onderstaande stappen uit om u aan te melden bij de Inhoudsprovider voor 
 
 ## Volgende functies {#whats-next}
 
-Nu u hebt geleerd hoe u naar de Inhoudsprovider voor schermen kunt navigeren, gaat u door met de as a Cloud Service reis van de schermen door het document te bekijken. [Een project maken en beheren in as a Cloud Service schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
+Nu u hebt geleerd hoe u naar de Inhoudsprovider voor schermen kunt navigeren, gaat u door met de as a Cloud Service reis van de schermen door het document te bekijken. [Een project maken en beheren in as a Cloud Service schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html).

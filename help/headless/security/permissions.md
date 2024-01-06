@@ -3,9 +3,9 @@ title: Bevoegdheidsoverwegingen voor inhoud zonder kop
 description: Leer over verschillende toestemmings en ACL overwegingen voor een headless implementatie met Adobe Experience Manager. Begrijp de verschillende personen en de potentiële toestemmingsniveaus nodig voor zowel auteur als Publish milieu's.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ In de service Auteur kunnen interne gebruikers inhoud maken, beheren en publicer
 
 Als beste praktijken, zouden de toestemmingen op Groepen in AEM moeten worden geplaatst. Deze groepen, die ook als lokale groepen worden bekend, kunnen binnen het AEM auteursmilieu worden beheerd.
 
-De eenvoudigste manier om groepslidmaatschap te beheren is om Adobe Identity Management System (IMS)-groepen te gebruiken en toe te wijzen [IMS-groepen naar lokale AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en#managing-permissions-in-aem).
+De eenvoudigste manier om groepslidmaatschap te beheren is om Adobe Identity Management System (IMS)-groepen te gebruiken en toe te wijzen [IMS-groepen naar lokale AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem).
 
 ![Toestemmingsstroom beheerconsole](assets/admin-console-aem-group-permissions.png)
 

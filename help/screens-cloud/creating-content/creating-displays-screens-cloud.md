@@ -2,9 +2,9 @@
 title: Weergaven maken en beheren in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u weergaven in as a Cloud Service schermen maakt en beheert.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '649'
 ht-degree: 2%
 
 ---
@@ -133,4 +133,4 @@ Alle mapbewerkingen zijn toegankelijk via de selectieactiebalk in de overzichtsw
 
 ## Volgende functies {#whats-next}
 
-Nu, dat u hebt geleerd hoe te om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw as a Cloud Service reis van de Schermen door het document te herzien moeten voortzetten [Kanaal toewijzen aan een as a Cloud Service weergave in schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+Nu, dat u hebt geleerd hoe te om vertoningen voor uw project tot stand te brengen en te beheren, zou u uw as a Cloud Service reis van de Schermen door het document te herzien moeten voortzetten [Kanaal toewijzen aan een as a Cloud Service weergave in schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

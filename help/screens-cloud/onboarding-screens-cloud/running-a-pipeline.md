@@ -2,10 +2,10 @@
 title: Een pijplijn uitvoeren
 description: Deze pagina beschrijft het runnen van een pijpleiding voor Schermen als project van de Cloud Service in de Manager van de Wolk.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 1%
+source-wordcount: '271'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 1%
 Deze sectie beschrijft hoe te om de pijpleiding in werking te stellen en uw code voor uw programma in de Manager van de Wolk op te stellen.
 
 >[!NOTE]
->Zie [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) en [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) om te leren hoe u de pijplijn voor uw programma in de Manager van de Wolk kunt in werking stellen.
+>Zie [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) en [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) om te leren hoe u de pijplijn voor uw programma in de Manager van de Wolk kunt in werking stellen.
 
 ## Doelstelling {#objective}
 
@@ -35,14 +35,14 @@ De volgende sectie beschrijft hoe te om de pijpleiding te vormen CI/CD en uw cod
 1. Selecteer de gewenste opties in het menu **Pipet instellen** wizard. Klikken **Opslaan**.
 
    >[!NOTE]
-   >Om over de opties in de tovenaar van de Pijl van de Opstelling te leren, zie [Instellingen voor de pijplijn configureren vanuit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) voor meer informatie .
+   >Om over de opties in de tovenaar van de Pijl van de Opstelling te leren, zie [Instellingen voor de pijplijn configureren vanuit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) voor meer informatie .
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Nadat de opstellingspijpleiding volledig is, wordt de vraag-aan-actie kaart bijgewerkt.
 
    >[!NOTE]
-   >Ga voor meer informatie over de fasen in de implementatie in Cloud Manager naar [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=en) voor meer informatie .
+   >Ga voor meer informatie over de fasen in de implementatie in Cloud Manager naar [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) voor meer informatie .
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

@@ -2,7 +2,7 @@
 title: AS A CLOUD SERVICE SDK AEM
 description: Een overzicht van de AEM as a Cloud Service Software Development Kit
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Bovendien gebruiken sommige klanten die eerder met AEM 6.5 of vroegere versies w
 
 ## Samenstellen voor de SDK {#building-for-the-sdk}
 
-De AEM as a Cloud Service SDK wordt gebruikt om aangepaste code te maken en in te voeren. Zie de [AEM documentatie van het type Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). Op een hoog niveau worden de volgende stappen uitgevoerd:
+De AEM as a Cloud Service SDK wordt gebruikt om aangepaste code te maken en in te voeren. Zie de [AEM documentatie van het type Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html). Op een hoog niveau worden de volgende stappen uitgevoerd:
 
 * **Code compileren**. Zoals verwacht, wordt de broncode gecompileerd die de resulterende inhoudspakketten produceert
 * **Artefacten maken**. Tijdens dit proces worden artefacten gemaakt

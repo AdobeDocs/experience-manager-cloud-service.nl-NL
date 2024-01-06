@@ -2,7 +2,7 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 0%
@@ -126,7 +126,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
 * Voer de laatste top-up van de inhoud uit.
 * Valideer de configuraties van de verzender.
    * Gebruik een lokale verzender-validator waarmee de verzender lokaal kan worden geconfigureerd, gevalideerd en gesimuleerd
-      * [Stel de lokale verzendprogramma&#39;s in.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+      * [Stel de lokale verzendprogramma&#39;s in.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
    * Herzie zorgvuldig de virtuele gastheerconfiguratie.
       * De eenvoudigste (en standaard) oplossing moet `ServerAlias *` in uw virtuele hostbestand in het dialoogvenster `/dispatcher/src/conf.d/available_vhostsfolder`.
          * Hierdoor kunnen de hostaliassen die door productfunctionele tests, cachevalidatie van de verzender en klonen worden gebruikt, functioneren.

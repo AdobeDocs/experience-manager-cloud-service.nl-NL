@@ -2,9 +2,9 @@
 title: Implementatiefase
 description: Zorg ervoor dat uw code en inhoud klaar zijn voor de migratie naar de cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2282'
 ht-degree: 8%
 
 ---
@@ -61,7 +61,7 @@ De Migratie van de inhoud is een multi-step proces dat planning, het volgen, en 
 
 Zie voor meer informatie over de werking van het gereedschap en de manier waarop de Adobe u aanraadt het te gebruiken de [Documentatie van het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
-## Herstructurering van code {#code-refactor}
+## Code Refactoring {#code-refactor}
 
 ### Instellen voor ontwikkeling {#set-up-for-development}
 
@@ -71,8 +71,8 @@ Eerst, bekijk de documentatie detailleert het basistooling, en begin het refacto
 
 
 * Tijdens planning, is het een goed idee om een lijst van gebieden te hebben die moeten worden bewaakt om met AEM as a Cloud Service compatibel te zijn. U kunt revisie [Richtlijnen voor ontwikkeling](/help/implementing/developing/introduction/development-guidelines.md) voor meer informatie over hoe te om code voor Cloud Service te beproeven en te optimaliseren.
-* Lees meer over hoe u [Configuraties beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) in AEM as a Cloud Service.
-* Leer hoe u een lokale ontwikkelomgeving kunt instellen door de [AS A CLOUD SERVICE SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
+* Lees meer over hoe u [Configuraties beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) in AEM as a Cloud Service.
+* Leer hoe u een lokale ontwikkelomgeving kunt instellen door de [AS A CLOUD SERVICE SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
 * Tot slot moet u zich vertrouwd maken met de [as a Cloud Service Java API AEM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Ook kunt u het volgende doen:
@@ -104,8 +104,8 @@ De Adobe verstrekt verscheidene hulpmiddelen helpen sommige van uw code refactor
 
 * [Workflowmigratie van middelen](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), een hulpmiddel dat wordt gebruikt om werkstromen voor de verwerking van bedrijfsmiddelen automatisch te migreren
 * [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), een hulpmiddel dat uw bestaande configuraties van de Verzender in een formaat omzet dat klaar voor AEM as a Cloud Service is.
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en), een hulpmiddel dat een AEM Multimode project als input neemt en het in AEM as a Cloud Service omzet
-* [Indexconversie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en), een gereedschap waarmee indexen worden omgezet in een formulier dat compatibel is met AEM as a Cloud Service
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), een hulpmiddel dat een AEM Multimode project als input neemt en het in AEM as a Cloud Service omzet
+* [Indexconversie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), een gereedschap waarmee indexen worden omgezet in een formulier dat compatibel is met AEM as a Cloud Service
 * [Moderniseringsinstrumenten](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), een reeks hulpprogramma&#39;s die kunnen worden gebruikt om bestaande AEM te converteren naar de moderne en ondersteunde mogelijkheden van AEM as a Cloud Service.
 
 Als u de lokale ontwikkelomgeving hebt ingesteld, kunt u de AEM as a Cloud Service SDK leren kennen door de [documentatie](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
@@ -119,7 +119,7 @@ Zodra de projectherstructurering wordt gedaan, kunt u nieuwe codeontwikkeling he
 >[!NOTE]
 >De taken Inhoudsoverdracht en Codereflector hoeven niet opeenvolgend te worden uitgevoerd. Deze taken kunnen onafhankelijk van elkaar worden uitgevoerd. De juiste projectstructuur is echter vereist om ervoor te zorgen dat de content correct wordt weergegeven in uw Cloud Service-omgeving.
 
-## Best practices voor het implementeren en testen van code {#best-practices}
+## Beste praktijken voor de Plaatsing van de Code en het Testen {#best-practices}
 
 De pijplijn van de Manager van de Wolk steunt uitvoering van tests die tegen het werkgebiedmilieu lopen.
 

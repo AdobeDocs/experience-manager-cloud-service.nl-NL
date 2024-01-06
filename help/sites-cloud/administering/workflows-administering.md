@@ -3,9 +3,10 @@ title: Workflowinstanties beheren
 description: Leer hoe u workflowinstanties beheert met de workflowconsole
 feature: Administering
 role: Admin
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -46,7 +47,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
    >[!NOTE]
    >
-   > Om werkstroominstantie gezond te houden, volgt u de aanbevolen procedures op [regelmatige zuivering van workflowinstanties](#regular-purging-of-workflow-instances) of [best practices voor workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
+   > Om werkstroominstantie gezond te houden, volgt u de aanbevolen procedures op [regelmatige zuivering van workflowinstanties](#regular-purging-of-workflow-instances) of [best practices voor workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Workflowinstanties zoeken {#search-workflow-instances}
 
@@ -264,5 +265,3 @@ public interface UserMetaDataPersistenceProvider {
  
 } 
 ```
-
-

@@ -3,10 +3,10 @@ title: De middelen van de steun voor Experience Manager as a Cloud Service Plaat
 description: Ontvang een volledige lijst met al onze Adobe AEM Cloud Services-ondersteuningsbronnen. Zoek antwoorden op uw vragen over AEM Sites as Cloud Service.
 landing-page-description: Begrijp hoe u met AEM Sites as a Cloud Service kunt ontwerpen en beheren.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 50%
+source-wordcount: '383'
+ht-degree: 39%
 
 ---
 
@@ -14,21 +14,21 @@ ht-degree: 50%
 
 Deze pagina bevat een volledige lijst met alle Adoben AEM Cloud Servicen die bronnen ondersteunen. Ontvang antwoorden op je vraag over [!DNL AEM Sites as a Cloud Service].
 
-## Belangrijke artikelen over Sites {#key-articles}
+## Artikelen voor belangrijke sites {#key-articles}
 
-* [Belangrijke wijzigingen in AEM Sites as a Cloud Service](sites-cloud-changes.md)
-* [Handleiding Snel aan de slag met authoring](authoring/getting-started/quick-start.md)
+* [Opvallende wijzigingen in AEM Sites as a Cloud Service](sites-cloud-changes.md)
+* [Handleiding Snel starten voor ontwerpen](authoring/getting-started/quick-start.md)
 * [Pagina&#39;s publiceren](authoring/fundamentals/publishing-pages.md)
 * [Authoring met Edge Delivery Services](/help/edge/overview.md)
-* [Authoring van responsieve lay-out](authoring/features/responsive-layout.md)
-* [Authoring van sjablonen](authoring/features/templates.md)
-* [Ervaringsfragmenten gebruiken](authoring/fundamentals/experience-fragments.md)
-* [Lanceringen gebruiken](authoring/launches/overview.md)
-* [Content personaliseren met ContextHub](authoring/personalization/contexthub.md)
+* [Responsieve lay-out ontwerpen](authoring/features/responsive-layout.md)
+* [Ontwerpsjablonen](authoring/features/templates.md)
+* [Beleidsfragmenten gebruiken](authoring/fundamentals/experience-fragments.md)
+* [Starten gebruiken](authoring/launches/overview.md)
+* [Inhoud aanpassen met ContextHub](authoring/personalization/contexthub.md)
 * [Integreren met Adobe Analytics](integrating/integrating-adobe-analytics.md)
 * [Integreren met Adobe Target](integrating/integrating-adobe-target.md)
 
-## Handleidingen voor Experience Manager as a Cloud Service {#aem-guides}
+## as a Cloud Service hulplijnen voor Experience Manager {#aem-guides}
 
 | Handboek | Beschrijving |
 |---|---|
@@ -44,14 +44,14 @@ Deze pagina bevat een volledige lijst met alle Adoben AEM Cloud Servicen die bro
 | [Handboek voor bewerkingen](/help/operations/home.md) | Leer meer over de back-endbewerkingen van Experience Manager as a Cloud Service, zoals indexerings- en onderhoudstaken. |
 | [Handboek voor handel](/help/commerce-cloud/home.md) | Meer weten over Commerce integration framework op AEM as a Cloud Service? |
 
-## Andere bronnen voor Experience Manager {#other-resources}
+## Andere bronnen van Experience Managers {#other-resources}
 
-* [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
-* [Dispatcher-documentatie](/help/implementing/dispatcher/overview.md)
+* [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [Documentatie van verzender](/help/implementing/dispatcher/overview.md)
 * [HTL-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Documentatie over kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
-* [Gereedheid voor GDPR (AVG)](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR gereedheid](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
 * [AEM-communityforum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

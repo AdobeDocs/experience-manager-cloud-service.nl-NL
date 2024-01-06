@@ -2,9 +2,9 @@
 title: Een vertakking maken
 description: Op deze pagina wordt beschreven hoe u een vertakking maakt in Cloud Manager for Screens as a Cloud Service.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '210'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 In deze sectie wordt beschreven hoe u een vertakking voor uw programma maakt in Cloud Manager.
 
 >[!NOTE]
->Zie [De wizard gebruiken in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en) voor meer informatie over het maken van een AEM toepassingsproject in Cloud Manager met de wizard.
+>Zie [De wizard gebruiken in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html) voor meer informatie over het maken van een AEM toepassingsproject in Cloud Manager met de wizard.
 
 ## Doelstelling {#objective}
 

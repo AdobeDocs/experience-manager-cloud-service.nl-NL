@@ -2,10 +2,10 @@
 title: Integreren met Adobe Target
 description: Integreren met Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 1%
+source-wordcount: '615'
+ht-degree: 0%
 
 ---
 
@@ -33,18 +33,18 @@ Voer de volgende taken uit om met Doel te integreren:
 
    * [Integratie met Adobe Target met Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
    * [Launch by Adobe integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-   * [AEM integreren met Adobe starten via Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=en)
+   * [AEM integreren met Adobe starten door middel van Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
    * [Inzicht in AEM integratie met Launch by Adobe, Analyses en Doel](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
 
 >[!NOTE]
 >
 >De configuratie IMS (technische rekeningen) voor Launch by Adobe wordt preconfigured in AEM as a Cloud Service. Gebruikers hoeven deze configuratie niet te maken.
 
-1. [Activiteiten configureren](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html): Koppel uw activiteiten aan de doelwolkenconfiguratie.
+1. [Activiteiten configureren](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html): Koppel uw activiteiten aan de configuratie van de doelcloud.
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service, wordt de replicatieagent die Aanbiedingen en Activiteiten van AEM aan Adobe Target synchroniseert onbruikbaar gemaakt door gebrek. Contact opnemen met de [Adobe-ondersteuning](https://experienceleague.adobe.com/?support-solution=General#support) team als u de replicatieagent moet opnieuw toelaten.
+>In AEM as a Cloud Service, wordt de replicatieagent die Aanbiedingen en Activiteiten van AEM aan Adobe Target synchroniseert onbruikbaar gemaakt door gebrek. Contact opnemen met de [Ondersteuning voor Adobe](https://experienceleague.adobe.com/?support-solution=General#support) team als u de replicatieagent moet opnieuw toelaten.
 
 >[!NOTE]
 >
@@ -80,5 +80,5 @@ Voor de integratie van AEM as a Cloud Service met Adobe Target is kennis van Ado
 >
 >* 50 locaties
 >* 2.000 ervaringen
->* 50 metriek
+>* 50 cijfers
 >* 50 rapporteringssegmenten

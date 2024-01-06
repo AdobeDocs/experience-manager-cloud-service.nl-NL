@@ -2,9 +2,9 @@
 title: Inleiding tot AEM Screens as a Cloud Service
 description: Deze pagina fungeert als een inleiding tot Adobe Experience Manager Screens as a Cloud Service.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ AEM Screens as a Cloud Service is een digitale signaaloplossing waarmee marketer
 
 De as a Cloud Service schermen bestaan uit twee hoofdcomponenten, namelijk:
 
-* **[Inhoudsprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**, de invoegtoepassing Schermen die op AEM Cloud Service of op Adobe Managed Services (AMS) wordt uitgevoerd. Met de Inhoudsprovider voor schermen kan de auteur van de inhoud kanalen maken en beheren. De auteurs van de inhoud kunnen nieuwe inhoud toevoegen, de inhoud bewerken zonder zich zorgen te maken over de details van het maken van weergaven of spelerregistratie. De Content Provider biedt een abstractie van de onderliggende details van het ontwikkelen van inhoud, weergaven of spelerregistratie.
+* **[Inhoudsprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html)**, de invoegtoepassing Schermen die op AEM Cloud Service of op Adobe Managed Services (AMS) wordt uitgevoerd. Met de Inhoudsprovider voor schermen kan de auteur van de inhoud kanalen maken en beheren. De auteurs van de inhoud kunnen nieuwe inhoud toevoegen, de inhoud bewerken zonder zich zorgen te maken over de details van het maken van weergaven of spelerregistratie. De Content Provider biedt een abstractie van de onderliggende details van het ontwikkelen van inhoud, weergaven of spelerregistratie.
 
-* **[Serviceprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**, de dienst voor het beheer van digitale signalen die op Adobe I/O Runtime wordt uitgevoerd. Met Screens Services Provider kunnen auteurs, ontwikkelaars en beheerders van inhoud weergaven en spelers voor het afspelen van inhoud beheren zodra de inhoud aan de kanalen is toegevoegd. Bovendien informeert de leverancier van de Diensten van het Scherm de organisator waar en wanneer de inhoud op een hoog niveau gaat spelen.
+* **[Serviceprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)**, de dienst voor het beheer van digitale signalen die op Adobe I/O Runtime wordt uitgevoerd. Met Screens Services Provider kunnen auteurs, ontwikkelaars en beheerders van inhoud weergaven en spelers voor het afspelen van inhoud beheren zodra de inhoud aan de kanalen is toegevoegd. Bovendien informeert de leverancier van de Diensten van het Scherm de organisator waar en wanneer de inhoud op een hoog niveau gaat spelen.
 
 
 ## Overzicht van architectuur {#architectural-overview}

@@ -2,7 +2,7 @@
 title: Richtlijnen en tips en trucs voor het gebruik van het gereedschap Inhoud overbrengen
 description: Leer de richtlijnen en de beste werkwijzen voor het gebruik van het gereedschap Inhoud overbrengen.
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 11%
@@ -35,7 +35,7 @@ Versies die ouder zijn dan 2.0.0 worden niet ondersteund en u wordt geadviseerd 
 
 De volgende Richtlijnen en Beste praktijken zijn op de nieuwe versie van het Hulpmiddel van de Overdracht van de Inhoud van toepassing:
 
-* Uitvoeren [Revisie opschonen](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) en [consistentiecontroles gegevensopslag](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) op de **bron** bewaarplaats zodat u potentiële problemen kunt identificeren en de grootte van de bewaarplaats kunt verminderen.
+* Uitvoeren [Revisie opschonen](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) en [consistentiecontroles gegevensopslag](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) op de **bron** bewaarplaats zodat u potentiële problemen kunt identificeren en de grootte van de bewaarplaats kunt verminderen.
 
 * In de innamefase, adviseert de Adobe om de inname uit te voeren met behulp van de *vegen* Modus ingeschakeld waarbij de bestaande opslagplaats (auteur of publicatie) in de Adobe Experience Manager-omgeving (AEM) van het doel wordt verwijderd. Werk vervolgens bij met de gegevens van de migratieset. Deze modus is sneller dan de modus Vegen, waarbij de migratieset boven op de huidige inhoud wordt toegepast.
 

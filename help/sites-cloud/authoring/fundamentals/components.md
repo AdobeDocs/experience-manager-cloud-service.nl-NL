@@ -2,9 +2,9 @@
 title: Onderdelen
 description: Componenten vormen de fundamentele bouwsteen voor inhoudspagina's in AEM
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ De [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-c
 
 Zij bouwen gebruikend AEM beste praktijken en zijn de basis van de AEM creatieve ervaring. De Componenten van de kern kunnen gemakkelijk door ontwikkelaars worden uitgebreid om aan specifieke projectbehoeften te voldoen.
 
-Samen met de componenten van de Kern WCM kunt u ook gebruiken [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Deze Core Components bieden een standaard en eenvoudigere methode voor [formulieren maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Samen met de componenten van de Kern WCM kunt u ook gebruiken [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Deze Core Components bieden een standaard en eenvoudigere methode voor [formulieren maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Sjablonen configureren {#configuring-templates}
 

@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.11.0."
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 * **Opname van bulkactiva**: Bied klanten een schaalbare, in de cloud geïntegreerde service die gebruikmaakt van [!DNL Experience Manager] as a Cloud Service architectuur, met inbegrip van de diensten van activa microservices. Belangrijke gebruiksgevallen zijn onder andere schaling op schaal met bewaking, rapportage en planning, terwijl de mogelijkheid bestaat om middelen eerst over te brengen naar de gegevensopslag in de cloud met gebruik van de gebruikelijke tools voor uploaden naar de cloud. Zie [gereedschap voor het bulkmiddel](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-  Dit hulpmiddel is voor systeembeheerder, adviseur, of de persona&#39;s van de implementatiepartner. Deze functie maakt het mogelijk om op grote schaal in te nemen en wordt bij voorkeur gebruikt tijdens de eerste opname of bij incidentele grote inname. Gebruik voor kleinere taken de opdracht [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) of [uploaden met de gebruikersinterface van Elementen](/help/assets/add-assets.md#upload-assets).
+  Dit hulpmiddel is voor systeembeheerder, adviseur, of de persona&#39;s van de implementatiepartner. Deze functie maakt het mogelijk om op grote schaal in te nemen en wordt bij voorkeur gebruikt tijdens de eerste opname of bij incidentele grote inname. Gebruik voor kleinere taken de opdracht [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) of [uploaden met de gebruikersinterface van Elementen](/help/assets/add-assets.md#upload-assets).
 
   ![Configuratie van bulkimporteur](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -73,9 +73,9 @@ De volgende release (20.12.0) vindt plaats op 17 december 2020
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Release CIF Venia Reference Site - 2020.11.05 die de snelste versie CIF Core Components v1.5.0 bevat. Zie [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) voor meer informatie .
+* Release CIF Venia Reference Site - 2020.11.05 die de snelste versie CIF Core Components v1.5.0 bevat. Zie [CIF Venia-referentiegebied](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) voor meer informatie .
 
-* Uitgegeven CIF Core Components v1.5.0. Zie [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) voor meer informatie .
+* Uitgegeven CIF Core Components v1.5.0. Zie [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) voor meer informatie .
 
 ### Opgeloste problemen {#bug-fixes-commerce}
 
@@ -113,13 +113,13 @@ Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md
 
 ### SDK Build Analyzers {#analyzers}
 
-De AEM as a Cloud Service SDK bouwt Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling op te sporen, ruim voordat ze met Cloud Manager naar een cloud-omgeving implementeren. Raadpleeg de documentatie voor meer informatie [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) en [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+De AEM as a Cloud Service SDK bouwt Analyzer Maven Plugin ontdekt problemen in een bepaald project, met inbegrip van ontbrekende gebiedsdelen. Het biedt ontwikkelaars de mogelijkheid om problemen tijdens lokale ontwikkeling op te sporen, ruim voordat ze met Cloud Manager naar een cloud-omgeving implementeren. Raadpleeg de documentatie voor meer informatie [hier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing) en [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
 ### Overige {#others-foundation}
 
 Nieuw [syntaxis &quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) controleren of de configuratie van apache en dispatcher is uitgevoerd tijdens de build van Cloud Manager, die ook kan worden uitgevoerd met AEM Dispatcher Tools van as a Cloud Service SDK.
 
-## De tool Content Transfer {#content-transfer-tool}
+## Inhoud overbrengen {#content-transfer-tool}
 
 Volg deze sectie voor meer informatie over nieuwe functies en de updates voor [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 

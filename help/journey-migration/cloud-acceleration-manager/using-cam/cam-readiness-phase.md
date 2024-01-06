@@ -2,10 +2,10 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 5%
+source-wordcount: '944'
+ht-degree: 3%
 
 ---
 
@@ -40,12 +40,12 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 1. Download Best Practices Analyzer (BPA).
 
    >[!NOTE]
-   >Om een effect op bedrijfskritieke instanties te vermijden, raadt de Adobe u aan BPA in een Auteuromgeving uit te voeren. De omgeving moet zich zo dicht mogelijk bij de productieomgeving bevinden op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. CRA kan ook worden uitgevoerd op een kloon van de auteurlaag van de productieomgeving.
+   >Om een effect op bedrijfskritieke instanties te vermijden, raadt de Adobe u aan BPA in een Auteuromgeving uit te voeren. De omgeving moet zich zo dicht mogelijk bij de productieomgeving bevinden op het gebied van aanpassingen, configuraties, inhoud en gebruikerstoepassingen. Het kan ook worden uitgevoerd op een kloon van de productieauteur-omgeving.
 
    1. Ga naar de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) de Analysator van Beste praktijken als zip dossier openen en downloaden.
 
       >[!NOTE]
-      >Controleren [Analysator van best practices gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) om te leren hoe u BPA kunt uitvoeren.
+      >Controleren [Analysator van best practices gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) om te leren hoe u BPA kunt uitvoeren.
 
    1. Het rapport exporteren in CSV-indeling
 
@@ -97,7 +97,7 @@ Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te gev
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Klik op **...**.
+1. Klikken **...**.
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
@@ -159,7 +159,7 @@ U kunt het rapport filtreren dat op belangrijkheid, subtype, of telling wordt ge
 ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Zie [Het rapport met de analyse van best practices interpreteren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) voor meer informatie over de categorieën bevindingen en de belangrijkste niveaus.
+>Zie [Het rapport met de analyse van best practices interpreteren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) voor meer informatie over de categorieën bevindingen en de belangrijkste niveaus.
 
 #### Evaluatie van best practices {#best-practices-assessment}
 
@@ -202,7 +202,7 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Klik op **...**.
+1. Klikken **...**.
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
@@ -220,4 +220,4 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u zich kunt aanmelden bij de functie voor de functie voor het maken van een project, kunt u nu verdergaan met het evalueren van de volgende stap in het dialoogvenster [Implementatiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Nadat u hebt geleerd hoe u zich kunt aanmelden bij de functie voor de functie voor het maken van een project, kunt u nu verdergaan met het evalueren van de volgende stap in het dialoogvenster [Implementatiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).

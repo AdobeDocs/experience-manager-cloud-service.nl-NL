@@ -2,9 +2,9 @@
 title: Video-uitvoeringen maken in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u video-uitvoeringen kunt maken in as a Cloud Service schermen.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Voer de onderstaande stappen uit om video-uitvoeringen te maken in rasters die z
 1. Navigeer naar uw kanaal in de Inhoudsprovider voor schermen.
 
    >[!NOTE]
-   >Zie [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) voor meer informatie .
+   >Zie [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) voor meer informatie .
 
 1. Klik op de sectie Gereedschappen in de linkernavigatiebalk en klik op **Activa** en klik vervolgens op **Profielen verwerken**.
 

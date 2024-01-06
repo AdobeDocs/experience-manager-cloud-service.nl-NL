@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2023.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Bekijk de video Overzicht van de release van augustus 2023 voor een overzicht va
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] {#sites-features}
 
-* De [Console voor inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) Gebruikers kunnen nu tags weergeven en zoeken op tags die als metagegevens zijn toegepast op Inhoudsfragmenten. Gebruikers hoeven voor deze mogelijkheid niet meer over te schakelen op de interface Elementen, waardoor contextomschakeling wordt beperkt en de efficiëntie wordt verbeterd.
+* De [Console voor inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) Gebruikers kunnen nu tags weergeven en zoeken op tags die als metagegevens zijn toegepast op Inhoudsfragmenten. Gebruikers hoeven voor deze mogelijkheid niet meer over te schakelen op de interface Elementen, waardoor contextomschakeling wordt beperkt en de efficiëntie wordt verbeterd.
 
   ![Tags toevoegen in Content Fragment Console](/help/assets/content-fragments-console-tags.png)
 * De nieuwe Inhoudsfragmenteditor is nu beschikbaar op AEM as a Cloud Service. Het stelt inhoudsauteurs in staat productiever te zijn door hun ontwerptaken te stroomlijnen en de noodzaak om tussen verschillende apps te schakelen tijdens het bewerken van inhoud te verminderen.

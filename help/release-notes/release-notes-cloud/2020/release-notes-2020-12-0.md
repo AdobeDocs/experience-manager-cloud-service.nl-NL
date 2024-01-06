@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2020.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2020.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ De volgende release (2021.1.0) is 28 januari 2021.
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Release CIF Venia Reference Site - 2020.12.01 die de nieuwste versie CIF Core Components v1.6.0 bevat. Zie [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) voor meer informatie .
+* Release CIF Venia Reference Site - 2020.12.01 die de nieuwste versie CIF Core Components v1.6.0 bevat. Zie [CIF Venia-referentiegebied](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) voor meer informatie .
 
-* Uitgegeven CIF Core Components v1.6.0. Zie [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) voor meer informatie .
+* Uitgegeven CIF Core Components v1.6.0. Zie [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) voor meer informatie .
 
 ## Cloud Manager {#cloud-manager}
 
@@ -60,11 +60,11 @@ De releasedatum voor Cloud Manager in Adobe Experience Manager (AEM) as a Cloud 
 
 * De milieucard gaf niet consistent de **Toevoegen** knop.
 
-## Tools voor herstructurering van code {#code-refactoring-tools}
+## Gereedschappen voor het verfijnen van code {#code-refactoring-tools}
 
 ### Nieuwe functies in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [Unieke ervaring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) waar u meer kunt weten over deze plug-in.
+* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [Unieke ervaring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) waar u meer kunt weten over deze plug-in.
 
 * De Omzetter van de index is een nut dat kan worden gebruikt om de Definities van de Index van de Eik van de Douane van een klant om te zetten in AEM as a Cloud Service compatibele Definities van de Index van de Eik. Zie [Indexconversie](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer informatie .
 

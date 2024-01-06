@@ -1,15 +1,15 @@
 ---
-title: Een AEM-connector verzenden
+title: Een AEM-connector indienen
 description: Leer hoe u in Adobe Experience Manager (AEM) as a Cloud Service naar connectors kunt verwijzen en deze kunt implementeren.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 2%
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
 
-# Een AEM-connector verzenden
+# Een AEM-connector indienen
 
 Hieronder vindt u nuttige informatie over het verzenden van Adobe Experience Manager (AEM) Connectors en deze informatie moet worden gelezen met artikelen over [uitvoeren](implement.md) en  [handhaven](maintain.md) connectors.
 
@@ -20,7 +20,7 @@ In eerdere AEM oplossingen [Pakketbeheer](/help/implementing/developing/tools/pa
 Er zijn verschillende opties voor het opnemen van pakketten in een project:
 
 1. Openbare opslagplaats van de partner - een partner zou het inhoudspakket in een openbaar toegankelijke beheerde opslagplaats ontvangen
-1. Opslagplaats met wachtwoordbeveiliging voor partners - een partner zou het inhoudspakket hosten in een met wachtwoord beveiligde gegevensopslagruimte. Zie [met wachtwoord beveiligde gegevensopslagruimten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) voor instructies.
+1. Opslagplaats met wachtwoordbeveiliging voor partners - een partner zou het inhoudspakket hosten in een met wachtwoord beveiligde gegevensopslagruimte. Zie [met wachtwoord beveiligde gegevensopslagruimten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories) voor instructies.
 1. Gebundelde vervorming - in dit geval is het aansluitingspakket lokaal opgenomen in het door de klant gemaakte project.
 
 Ongeacht waar zij worden ontvangen, moeten de pakketten als gebiedsdelen in pom.xml worden van verwijzingen voorzien, zoals die door de verkoper worden verstrekt.

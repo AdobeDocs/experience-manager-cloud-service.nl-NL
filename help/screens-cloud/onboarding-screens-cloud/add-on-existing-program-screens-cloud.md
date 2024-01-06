@@ -2,9 +2,9 @@
 title: Scherminvoegtoepassing toevoegen aan een bestaand programma in Cloud Manager
 description: Leer hoe u een invoegtoepassing voor schermen toevoegt aan een bestaand programma in Cloud Manager for Screens as a Cloud Service.
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 In deze sectie wordt beschreven hoe u schermen kunt toevoegen als een invoegtoepassing aan een bestaand programma in Cloud Manager.
 
 >[!NOTE]
->Zie [Programma&#39;s en programmatypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=en) voor meer informatie over programma&#39;s van Cloud Manager.
+>Zie [Programma&#39;s en programmatypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) voor meer informatie over programma&#39;s van Cloud Manager.
 
 ## Doelstelling {#objective}
 
@@ -27,7 +27,7 @@ Voer de onderstaande stappen uit om schermen toe te voegen aan een bestaand prog
 1. Navigeren naar [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Zie [Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=en) voor meer informatie over Cloud Manager.
+   >Zie [Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html) voor meer informatie over Cloud Manager.
 
 1. Navigeer naar uw project en klik op de knop **Programma bewerken** van Cloud Manager **Overzicht** pagina.
 

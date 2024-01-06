@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release 2021.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 1%
+source-wordcount: '1430'
+ht-degree: 0%
 
 ---
 
@@ -153,7 +153,7 @@ De releasedatum voor AEM Screens as a Cloud Service is 24 juni 2021.
 ### Wat is er nieuw? {#what-is-new-screens-june}
 
 >[!NOTE]
->Zie [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Handleiding voor basiskennis die vereist is voor het correct installeren, configureren en uitvoeren van rasters as a Cloud Service en koppeling naar gedetailleerde technische documentatie.
+>Zie [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) Handleiding voor basiskennis die vereist is voor het correct installeren, configureren en uitvoeren van rasters as a Cloud Service en koppeling naar gedetailleerde technische documentatie.
 
 * Bulk Device Registration Management betekent dat het provisioning van enorme hoeveelheden spelerapparaten sneller en efficiënter verloopt.
 
@@ -174,7 +174,7 @@ De releasedatum voor AEM Screens as a Cloud Service is 24 juni 2021.
 * Verbeterde SEO-vriendelijke URL&#39;s voor categoriepagina&#39;s
 * Ondersteuning voor aangepaste HTTP-headers per site/config
 
-## De tool Content Transfer {#content-transfer-tool}
+## Inhoud overbrengen {#content-transfer-tool}
 
 ### Releasedatum {#release-date-ctt-latest}
 
@@ -182,7 +182,7 @@ De releasedatum voor Content Transfer Tool v1.5.4 is 28 juni 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt-latest}
 
-* Ondersteuning voor een optionele [voorkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) toegevoegd aan gebruik met CTT. De pre-exemplaarstap kan worden gebruikt om de extractie en inname fasen van de activiteit van de inhoudoverdracht beduidend te versnellen wanneer de bron AEM instantie wordt gevormd om een gegevensbestand van de Opslag van Amazon S3 of van Azure Blob te gebruiken.
+* Ondersteuning voor een optionele [voorkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) toegevoegd aan gebruik met CTT. De pre-exemplaarstap kan worden gebruikt om de extractie en inname fasen van de activiteit van de inhoudoverdracht beduidend te versnellen wanneer de bron AEM instantie wordt gevormd om een gegevensbestand van de Opslag van Amazon S3 of van Azure Blob te gebruiken.
 
 * Guardrail toegevoegd aan CTT om te voorkomen dat gebruikers een opname stoppen en mogelijk gegevens beschadigen zodra deze het kritieke punt tijdens de innamefase heeft bereikt.
 

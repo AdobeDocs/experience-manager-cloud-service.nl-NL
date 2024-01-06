@@ -3,9 +3,9 @@ title: Ondersteuning voor miniaturen voor video's in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u ondersteuning voor miniaturen voor video's in as a Cloud Service schermen toevoegt.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 1. Navigeer naar een bestaand rasterkanaal of maak een kanaal.
 
    >[!NOTE]
-   >Ga voor meer informatie over het maken van een kanaal en het toevoegen van inhoud aan een kanaal naar [Een kanaal maken en beheren in as a Cloud Service schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >Ga voor meer informatie over het maken van een kanaal en het toevoegen van inhoud aan een kanaal naar [Een kanaal maken en beheren in as a Cloud Service schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
 
-1. Selecteer het kanaal. Klik op de actiebalk op **Bewerken** om de editor te openen.
+1. Selecteer het kanaal. Klik op de actiebalk op **Bewerken** de editor openen.
 
 
    ![De knop Bewerken op de actiebalk](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
@@ -65,7 +65,7 @@ Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
 1. Klikken **Voorvertoning**.
 
-1. Wanneer een video op de component is ingesteld, wordt de video afgespeeld. Als dat niet het geval is en de miniatuur is ingesteld, wordt de miniatuur afgespeeld. Anders, wordt de component beschouwd als niet gevormd en overgeslagen.
+1. Als een video op de component wordt geplaatst, speelt de video. Als dat niet het geval is en de miniatuur is ingesteld, wordt de miniatuur afgespeeld. Anders, wordt de component beschouwd als niet gevormd en overgeslagen.
 
 ## Ondersteunde gevallen voor gebruik tijdens het gebruik van miniaturen in video&#39;s {#understand-use-case}
 

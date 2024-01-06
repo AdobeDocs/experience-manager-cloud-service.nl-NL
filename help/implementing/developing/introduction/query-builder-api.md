@@ -2,9 +2,9 @@
 title: Query Builder-API
 description: De functionaliteit van de Asset Share Query Builder wordt weergegeven via een Java&trade; API en een REST API.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ De REST API biedt toegang tot dezelfde functies via HTTP, waarbij reacties worde
 
 ## Gem-sessie {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) Dit is een reeks technische diepteduiken in Adobe Experience Manager die door experts van de Adobe worden geleverd.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) Dit is een reeks technische diepteduiken in Adobe Experience Manager die door experts van de Adobe worden geleverd.
 
-U kunt [herzie de zitting specifiek aan de vraagbouwer wordt gewijd](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=en) voor een overzicht en gebruik van het gereedschap.
+U kunt [herzie de zitting specifiek aan de vraagbouwer wordt gewijd](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) voor een overzicht en gebruik van het gereedschap.
 
 ## Voorbeeldquery&#39;s {#sample-queries}
 
@@ -281,7 +281,7 @@ property.3_value=Whistler Mountain Biking
 
 Door gebrek, keert QueryBuilder JSON Servlet een standaardreeks eigenschappen voor elke knoop in het onderzoeksresultaat (bijvoorbeeld, weg, naam, en titel) terug. Als u de controle wilt verkrijgen over de eigenschappen die worden geretourneerd, kunt u een van de volgende handelingen uitvoeren:
 
-Geef het volgende op
+Opgeven
 
 ```xml
 p.hits=full
@@ -320,7 +320,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Een ander ding u kunt doen is kindknopen in de reactie van de Bouwer van de Vraag omvatten. Geef het volgende op
+Een ander ding u kunt doen is kindknopen in de reactie van de Bouwer van de Vraag omvatten. Opgeven
 
 ```xml
 p.nodedepth=n
@@ -458,7 +458,7 @@ De `path=/tmp` is slechts een voorbeeld.
 Uitleggen **alles** vragen tijdens de ontwikkelingscyclus tegen de reeks van de doelindex.
 
 1. Laat de logboeken van de BUG voor QueryBuilder toe om onderliggende, verklaarbare vraag van XPath te verkrijgen
-   * Ga naar `https://<host>:<port>/system/console/slinglog`. Een logger maken voor `com.day.cq.search.impl.builder.QueryImpl` om **DEBUG**.
+   * Navigeren naar `https://<host>:<port>/system/console/slinglog`. Een logger maken voor `com.day.cq.search.impl.builder.QueryImpl` om **DEBUG**.
 1. Nadat DEBUG voor de bovengenoemde klasse wordt toegelaten, tonen de logboeken XPath dat door de Bouwer van de Vraag wordt geproduceerd.
 1. Kopieer de vraag van XPath van de logboekingang voor de bijbehorende vraag van de Bouwer van de Vraag, bijvoorbeeld:
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`

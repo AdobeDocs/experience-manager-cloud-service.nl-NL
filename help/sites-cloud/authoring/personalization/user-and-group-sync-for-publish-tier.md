@@ -2,7 +2,7 @@
 title: Registratie, aanmelding en gebruikersprofiel
 description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Afhankelijk van de aard van de gegevens zijn er verschillende benaderingen voor 
 Gebruikersprofielgegevens kunnen op twee manieren worden geschreven en gelezen:
 
 * Gebruik op de server met de `com.adobe.granite.security.user` Interface UserPropertiesManager interface, die gegevens onder de knoop van de gebruiker in zal plaatsen `/home/users`. Zorg ervoor dat de pagina&#39;s die per gebruiker uniek zijn niet in het voorgeheugen onder worden gebracht.
-* Client-kant die ContextHub gebruikt, zoals die door wordt beschreven [de documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=en#personalization).
+* Client-kant die ContextHub gebruikt, zoals die door wordt beschreven [de documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 ### Gegevensopslag van derden {#third-party-data-stores}
 
@@ -104,7 +104,7 @@ Realtime toegang tot derdediensten om profielattributen terug te winnen is mogel
 
 ## Machtigingen (gesloten gebruikersgroepen) {#permissions-closed-user-groups}
 
-Beleid voor toegang op de publicatielaag, ook wel &#39;Closed User Group&#39; (CUG&#39;s) genoemd, wordt in de AEM als volgt gedefinieerd [hier beschreven](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). Als u bepaalde gedeelten of pagina&#39;s van een website van bepaalde gebruikers wilt beperken, past u de CUG&#39;s waar nodig toe met de auteur van de AEM, zoals hier beschreven. U kopieert deze secties of pagina&#39;s vervolgens naar de publicatielijst.
+Beleid voor toegang op de publicatielaag, ook wel &#39;Closed User Group&#39; (CUG&#39;s) genoemd, wordt in de AEM als volgt gedefinieerd [hier beschreven](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Als u bepaalde gedeelten of pagina&#39;s van een website van bepaalde gebruikers wilt beperken, past u de CUG&#39;s waar nodig toe met de auteur van de AEM, zoals hier beschreven. U kopieert deze secties of pagina&#39;s vervolgens naar de publicatielijst.
 
 * Als de gebruikers login door met een identiteitsleverancier (IdP) het gebruiken van SAML voor authentiek te verklaren, zal de authentificatiemanager de groepslidmaatschappen van de gebruiker identificeren (die CUGs op publiceren rij zouden moeten aanpassen), en zal de vereniging tussen de gebruiker en de groep door een verslag van de bewaarplaats aanhouden
 * Als login zonder integratie IdP wordt verwezenlijkt, kan de douanecode de zelfde de structuurverhoudingen van de bewaarplaats toepassen.

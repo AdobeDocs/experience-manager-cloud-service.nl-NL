@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Meer informatie over de basisbeginselen van Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2775'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Deze methode is bijvoorbeeld handig wanneer uw bedrijfslogica een nauwkeurige af
   ```
 
   >[!NOTE]
-  >De header Surrogate-Control is van toepassing op de Adobe beheerde CDN. Als u een [door de klant beheerde CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), kan een verschillende kopbal afhankelijk van uw leverancier CDN worden vereist.
+  >De header Surrogate-Control is van toepassing op de Adobe beheerde CDN. Als u een [door de klant beheerde CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), kan een verschillende kopbal afhankelijk van uw leverancier CDN worden vereist.
 
   Wees voorzichtig bij het instellen van algemene cachebeheerkoppen of vergelijkbare cachekoppen die overeenkomen met een brede regex, zodat deze niet worden toegepast op inhoud die u privé moet houden. Overweeg meerdere richtlijnen te gebruiken om ervoor te zorgen dat regels op een fijnkorrelige manier worden toegepast. Met dit gezegd, verwijdert AEM as a Cloud Service de geheim voorgeheugenkopbal als het ontdekt dat het is toegepast op wat het ontdekt om door Dispatcher oncacheable te zijn, zoals die in de documentatie van de Verzender wordt beschreven. Als u AEM wilt dwingen om altijd de in cache plaatsen koppen toe te passen, kunt u de opdracht **`always`** optie als volgt:
 
@@ -240,7 +240,7 @@ Voor milieu&#39;s die in Oktober 2023 of recenter worden gecreeerd, aan betere g
 
 Verzend een ondersteuningsticket als u dit gedrag wilt uitschakelen.
 
-Voor milieu&#39;s die vóór Oktober 2023 worden gecreeerd, wordt het geadviseerd om de configuratie van de Dispatcher te vormen `ignoreUrlParams` eigenschap as [hier gedocumenteerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Voor milieu&#39;s die vóór Oktober 2023 worden gecreeerd, wordt het geadviseerd om de configuratie van de Dispatcher te vormen `ignoreUrlParams` eigenschap as [hier gedocumenteerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 
 ## Ongeldige validatie van cache-verzending {#disp}
@@ -312,7 +312,7 @@ De benaderingen verschillen in termen van laagbeschikbaarheid, de capaciteit om 
   </tr>
   <tr>
     <td>Replicatie-API</td>
-    <td>Publicatie</td>
+    <td>Publiceren</td>
     <td>Niet mogelijk. De gebeurtenis wordt op elke publicatie-instantie weergegeven.</td>
     <td>Beste inspanning.</td>
     <td>

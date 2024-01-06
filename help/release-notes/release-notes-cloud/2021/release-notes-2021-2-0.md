@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.2.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 ### Beheer van inhoud zonder hoofd {#headless}
 
-* **[GraphQL API voor levering van inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)**: Mogelijkheid om inhoudsfragmenten te controleren met GraphQL-syntaxis en schema&#39;s op basis van modellen van inhoudsfragmenten, voor uitvoer in JSON-indeling.
+* **[GraphQL API voor levering van inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)**: Mogelijkheid om inhoudfragmenten te controleren met gebruik van GraphQL-syntaxis en schema&#39;s die zijn gebaseerd op modellen van inhoudsfragmenten, voor uitvoer in JSON-indeling.
 
 * **[Verificatieondersteuning voor GraphQL API-verzoeken](/help/headless/security/authentication.md)**: Mogelijkheid om GraphQL API-aanvragen te verifiëren met toegangstokens voor server-side API&#39;s.
 
@@ -55,7 +55,7 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 * Elementen kunnen worden aangekocht met [!DNL Experience Manager Assets Brand Portal]. Het helpt om activa van de uitzendingsgebruikers voor nieuwe marketing campagnes, foto&#39;s, en projecten te betrekken.
 
-* [!DNL Experience Manager Assets] als [!DNL Cloud Service] heeft het recht om een pre-gevormde [!DNL Brand Portal] -instantie. De [!DNL Cloud Manager] gebruiker kan activeren [!DNL Brand Portal] op [!DNL Experience Manager Assets] als [!DNL Cloud Service]. Zie [Brand Portal activeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
+* [!DNL Experience Manager Assets] als [!DNL Cloud Service] heeft het recht om een pre-gevormde [!DNL Brand Portal] -instantie. De [!DNL Cloud Manager] gebruiker kan activeren [!DNL Brand Portal] op [!DNL Experience Manager Assets] als [!DNL Cloud Service]. Zie [Brand Portal activeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 * Bedrijven kunnen nu elementen bronnen met [!DNL Brand Portal]. Functie voor het aanschaffen van bedrijfsmiddelen gebruikt [!DNL Brand Portal] om klanten te helpen bij het aantrekken van middelen voor nieuwe marketingcampagnes, foto&#39;s en projecten. Zie [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
@@ -74,13 +74,13 @@ De volgende release (2021.3.0) vindt plaats op 25 maart 2021.
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Product Experience Management: Verrijk de pagina&#39;s van de productcatalogus individueel met de Fragmenten van de Ervaring.
+* Product Experience Management: verrijk de productcataloguspagina&#39;s afzonderlijk met Experience Fragments.
 
 * Uitgebreide eigenschappen van de productconsole om verbonden Middelen en de Fragmenten van de Ervaring te tonen, met inbegrip van actie om snel aan de bijbehorende inhoud te navigeren.
 
-* Uitgebrachte CIF Venia Reference Site - 2021.02.24 met de nieuwste versie van CIF Core Components v1.8.0. Zie [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) voor meer informatie .
+* Release CIF Venia Reference Site - 2021.02.24 die de nieuwste versie CIF Core Components versie v1.8.0 bevat. Zie [CIF Venia-referentiegebied](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) voor meer informatie .
 
-* Uitgebrachte CIF Core Components v1.8.0. Zie [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) voor meer informatie .
+* Uitgegeven CIF Core Components v1.8.0. Zie [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) voor meer informatie .
 
 ## Cloud Manager {#cloud-manager}
 
@@ -119,7 +119,7 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.2.0 is 11 febr
 
 * Sommige pijpleidingsmislukkingen werden verkeerd gemeld als pijpleidingsfouten.
 
-## De tool Content Transfer {#content-transfer-tool}
+## Inhoud overbrengen {#content-transfer-tool}
 
 ### Releasedatum {#release-date-ctt}
 
@@ -135,7 +135,7 @@ De releasedatum voor Content Transfer Tool v1.2.2 is 1 februari 2021.
 
 ### Nieuw in gereedschap voor inhoudsoverdracht {#what-is-new-ctt}
 
-* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System-id&#39;s als onderdeel van de migratie van inhoud.
+* Nieuwe mogelijkheid en interface toegevoegd aan het gereedschap voor inhoudsoverdracht - Toewijzing van gebruikers. Deze functie wijst automatisch bestaande gebruikers en groepen toe aan hun Adobe Identity Management System IDs als deel van de activiteit van de inhoudsmigratie.
 Zie [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) voor meer informatie .
 * Met het gereedschap Inhoud overbrengen worden nu alle groepen en gebruikers gemigreerd waarnaar in de migratieset wordt verwezen, inclusief kinderen.
 * Gebruikers mogen bepaalde paden selecteren onder `/etc` bij het maken van migratiesets.
@@ -146,7 +146,7 @@ Zie [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/exp
 
 De releasedatum voor de analyse van best practices v2.1.2 is 18 februari 2021.
 
-### Nieuw in Analyzer van Beste praktijken {#what-is-new-bpa}
+### Nieuwe functies in Analyzer best practices {#what-is-new-bpa}
 
 * Mogelijkheid om het gebruik van de implementatie van AEM Forms en AEM Forms te detecteren en gebieden aan te geven die relevant zijn voor de migratie naar AEM Forms as a Cloud Service.
 * Mogelijkheid om het gebruik en het aantal aangepaste componenten en sjablonen te detecteren en te rapporteren.
@@ -154,14 +154,14 @@ De releasedatum voor de analyse van best practices v2.1.2 is 18 februari 2021.
 * Mogelijkheid om het gebruik van Dynamic Media te detecteren.
 * Mogelijkheid om de gebruikte Java-versie te detecteren.
 
-## Tools voor herstructurering van code {#code-refactoring-tools}
+## Gereedschappen voor het verfijnen van code {#code-refactoring-tools}
 
 ### Nieuw in de Hulpmiddelen van de Refactoring van de Code {#what-is-new-crt}
 
 * Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat verschillende foutoplossingen voor de Repository Modernizer.
-Zie [Unieke ervaring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) voor meer informatie over deze plug-in.
+Zie [Unieke ervaring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) voor meer informatie over deze plug-in.
 
 ### Opgeloste problemen {#bug-fixes-crt}
 
 * Verschillende opgeloste problemen zijn opgelost in de Repository Modernizer.
-Zie [GitHub-bron: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie .
+Zie [GitHub Resource: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie .
