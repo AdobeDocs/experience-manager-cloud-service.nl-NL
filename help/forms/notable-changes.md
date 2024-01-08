@@ -3,9 +3,9 @@ title: Wat zijn de verschillen tussen AEM 6,5 Forms en AEM Cloud Servicen?
 description: Vergelijk AEM 6.5 Forms en AEM Clouden Services en leer de belangrijkste wijzigingen voordat u een upgrade uitvoert of naar Cloud Service migreert.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1317'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,9 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
   De [migratiehulpprogramma](/help/forms/migrate-to-forms-as-a-cloud-service.md) helpt u bij het migreren van formulieren met aangepaste regels (gemaakt in de code-editor). Het hulpprogramma converteert dergelijke regels naar aangepaste functies die worden ondersteund op as a Cloud Service Forms. U kunt de herbruikbare functies met de redacteur van de Regel gebruiken om resultaten te blijven verkrijgen die met regelmanuscripten worden verkregen. De `onSubmitError` of `onSubmitSuccess` functies zijn nu beschikbaar als handelingen in de Editor voor regels.
 
-* **Prefill-service:** Standaard voegt de Prefill-service gegevens samen met een Adaptief formulier op de client in plaats van gegevens op de server samen te voegen in AEM 6.5 Forms. De functie helpt de tijd te verbeteren die nodig is om een adaptief formulier vooraf in te vullen. U kunt altijd configureren om de samenvoegactie op de Adobe Experience Manager Forms-server uit te voeren.
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **Prefill-service:** Met de voorkeursservice worden gegevens opgehaald van de server en worden deze samengevoegd om de Adaptieve Forms vooraf op de client in te vullen. Met deze functie kunt u de tijd verbeteren die nodig is om een adaptief formulier in te vullen. U kunt altijd de [Prefill-service](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) om de samenvoegactie op de Adobe Experience Manager Forms-server uit te voeren.
 
 * **Handelingen verzenden:** De **E-mail** Verzenden bevat opties voor het verzenden van bijlagen en het toevoegen van een e-maildocument (DoR) bij het document Record. U kunt het gebruiken in plaats van **E-mailen als PDF** in AEM 6.5 Forms.
 
@@ -68,7 +70,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * De service behoudt geen metagegevens voor concepten en verzonden Adaptive Forms.
 
-## Document Services:
+## Documentservices:
 
 Forms as a Cloud Service biedt RESTful-API&#39;s voor het genereren en bewerken van documenten. U kunt deze API&#39;s gebruiken om documenten te genereren of te manipuleren op aanvraag of in batches, naar wens:
 
