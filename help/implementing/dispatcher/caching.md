@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Meer informatie over de basisbeginselen van Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
+source-wordcount: '2865'
 ht-degree: 0%
 
 ---
@@ -241,6 +241,28 @@ Voor milieu&#39;s die in Oktober 2023 of recenter worden gecreeerd, aan betere g
 Verzend een ondersteuningsticket als u dit gedrag wilt uitschakelen.
 
 Voor milieu&#39;s die vóór Oktober 2023 worden gecreeerd, wordt het geadviseerd om de configuratie van de Dispatcher te vormen `ignoreUrlParams` eigenschap as [hier gedocumenteerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+
+Er zijn twee mogelijkheden om marketingparameters te negeren. (Waar de eerste voorkeur cachebusting via queryparameters negeert):
+
+1. Negeer alle parameters en sta selectief parameters toe die worden gebruikt.
+Alleen in het volgende voorbeeld `page` en `product` parameters worden niet genegeerd en de aanvragen worden doorgestuurd naar de uitgever.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. Alle parameters behalve de marketingparameters toestaan. Het bestand [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) definieert een lijst met veelgebruikte marketingparameters die worden genegeerd. Adobe werkt dit bestand niet bij. Deze kan door gebruikers afhankelijk van hun marketingproviders worden uitgebreid.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Ongeldige validatie van cache-verzending {#disp}
