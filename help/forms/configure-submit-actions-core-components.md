@@ -4,9 +4,9 @@ description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een h
 keywords: hoe u verzendactie voor een adaptief formulier selecteert, een adaptief formulier koppelt aan een SharePoint-lijst, een adaptief formulier aansluit op een SharePoint-documentbibliotheek, een adaptief formulier aansluit op een formuliergegevensmodel
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
+source-git-commit: 3cd10760fa48f4aa1810877f79476be744f048d1
 workflow-type: tm+mt
-source-wordcount: '3892'
+source-wordcount: '3880'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Dit artikel |
-| Van toepassing op | ✅ adaptieve Form Core-componenten, ❎ [Aangepaste componenten van de Stichting van vormen](/help/forms/configuring-submit-actions.md) |
+
+<!--| Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |-->
 
 
 Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Forms as a Cloud Service, voor Adaptive Forms op basis van Core Components, biedt een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
