@@ -1,9 +1,9 @@
 ---
 title: Veldtypen
 description: Leer meer over de verschillende typen velden die de Universal Editor in de componentrails kan bewerken met voorbeelden van hoe u uw eigen app kunt bewerken.
-source-git-commit: b1a188d01371665b4375087847625d89e47d8927
+source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -281,3 +281,58 @@ Een tekstinvoer maakt het mogelijk om één regel tekst in te voeren.
 }
 ```
 
+## Tab {#tab}
+
+Op een tabblad kunt u andere invoervelden groeperen op meerdere tabbladen om de indeling van de auteurs te verbeteren.
+
+A `tab` definitie kan worden beschouwd als een scheidingsteken in de array van `fields`. Alles wat na een `tab` wordt op dat tabblad geplaatst totdat er een nieuwe `tab` aangetroffen, waarbij de volgende items op het nieuwe tabblad worden geplaatst.
+
+Als u items boven alle tabbladen wilt weergeven, moet u deze vóór alle tabbladen definiëren.
+
+### Monster {#sample-tab}
+
+```json
+{
+  "id": "title",
+  "fields": [
+    {
+      "component": "tab",
+      "label": "Tab",
+      "name": "tab1"
+    },
+    {
+      "component": "text-input",
+      "name": "tab-response",
+      "value": "",
+      "placeholder": "Tab? I can't give you a tab unless you order something.",
+      "label": "Lou",
+      "valueType": "string"
+    },
+    {
+      "component": "tab",
+      "label": "Pepsi Free",
+      "name": "tab2"
+    },
+    {
+      "component": "text-input",
+      "name": "pepsi-free-response",
+      "value": "",
+      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
+      "label": "Mr. Carruthers",
+      "valueType": "string"
+    },
+    {
+      "component": "select",
+      "name": "without-sugar",
+      "value": "coffee",
+      "label": "Something without sugar",
+      "valueType": "string",
+      "options": [
+        { "name": "Coffee", "value": "coffee" },
+        { "name": "Hot Coffee", "value": "hot-coffee" },
+        { "name": "Hotter Coffee", "value": "hotter-coffee" }
+      ]
+    }
+  ]
+}
+```
