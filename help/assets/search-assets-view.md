@@ -3,9 +3,9 @@ title: Leer hoe u middelen kunt zoeken en ontdekken in [!DNL Assets view]?
 description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Assets. Met de krachtige zoekfunctionaliteit kunt u snel de juiste middelen vinden en de snelheid van de inhoud verbeteren.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,20 @@ Als u elementen wilt zoeken,
    * Zoeken met een trefwoord en desgewenst map wijzigen. Druk op Return.
 
    * Begin met het werken met een onlangs weergegeven element door er direct naar te zoeken. Klik in het zoekvak en selecteer een element dat onlangs is weergegeven in de suggesties.
+
+## Middelen zoeken met behulp van Adobe Firefly
+
+Als u een middel zoekt dat niet beschikbaar in om het even welke elementenomslag is, gebruik [!UICONTROL Adobe Firefly] zoekfunctie voor elementen binnen [!UICONTROL Adobe Experience Manager Assets]. Hiermee kunt u op efficiënte wijze zoeken naar elementen die niet in de toegewezen mappen zijn opgeslagen. Deze functie is momenteel alleen toegankelijk voor gebruikers met de Express-machtiging. <br> U kunt bijvoorbeeld een element zoeken met het trefwoord `Bugatti Type 57`. Bij het zoeken naar `Bugatti Type 57`, worden er geen resultaten gevonden.
+
+![Integratie van Fireflys](assets/firefly-integration.jpg)
+*Afbeelding: Geen resultaten gevonden voor Bugatti Type 57 in de elementenmap.*
+
+Voer in de zoekbalk de naam van het element in en klik op **[!UICONTROL Generate]**.
+
+![Integratie van Fireflys](assets/bugatti-type-57.jpg)
+*Afbeelding: Referentie-elementen doorzocht met de zoekfunctie voor Adobe Firefly-elementen.*
+
+De voorbeeldelementen worden op het scherm weergegeven. U kunt deze elementen uploaden naar de map van uw voorkeur, zodat u ze gemakkelijk kunt openen.
 
 ## De zoekresultaten filteren {#refine-search-results}
 
@@ -120,7 +134,6 @@ Aangepaste filters verwijderen:
 
 1. Klikken **[!UICONTROL Confirm]** om de filters uit de gebruikersinterface te verwijderen.
 
-
 ## Opgeslagen zoekopdrachten {#saved-search}
 
 Zoekfuncties zijn heel eenvoudig in [!DNL Assets view]. Vanuit het zoekvak kunt u gewoon een trefwoord typen en op Enter drukken om de resultaten weer te geven. U kunt ook snel met één klik nogmaals zoeken naar de laatst doorzochte trefwoorden.
@@ -146,11 +159,21 @@ When userA is searching and userB add an asset that matches search results, will
 
 U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de volgende handelingen uitvoeren:
 
+* **Vergelijkbare afbeelding zoeken**: Zoek vergelijkbare afbeeldingselementen in de interface Middelen op basis van de metagegevens en slimme tags.
+
 * **Details**: Elementeigenschappen weergeven en bewerken.
+
+* **Downloaden**: Download een middel.
 
 * **Toevoegen aan verzameling**: Voeg het geselecteerde element toe aan een verzameling.
 
-* **Downloaden**: Download een middel.
+* **Vastmaken aan snelle toegang**: [Een element vastzetten](my-workspace-assets-view.md) voor snellere toegang wanneer u het later nodig hebt. Alle vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** van Mijn werkruimte.
+
+* **Openen in Adobe Express**: Bewerk een afbeelding in de geïntegreerde Adobe Express vanuit het Adobe Experience Manager Assets-scherm.
+
+* **Bewerken**: Bewerk de afbeelding met Adobe Express.
+
+* **Koppeling delen**: [Koppelingen delen](share-links-for-assets-view.md) voor een middel met andere gebruikers zodat zij tot het kunnen toegang hebben en downloaden.
 
 * **Verwijderen**: Een element verwijderen.
 
@@ -160,15 +183,11 @@ U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de
 
 * **Naam wijzigen**: Wijzig de naam van een element.
 
+* **Kopiëren naar bibliotheken**: Voeg een element toe aan de bibliotheek.
+
 * **Taken toewijzen**: Taken toewijzen aan gebruikers voor een element.
 
-* **Koppeling delen**: [Koppelingen delen](share-links-for-assets-view.md) voor een middel met andere gebruikers zodat zij tot het kunnen toegang hebben en downloaden.
-
 * **Controle**: [De bewerkingen controleren](manage-notifications-assets-view.md) uitgevoerd op een element.
-
-* **Bestandslocatie tonen**: Navigeer naar de locatie van de elementmap.
-
-* **Vastmaken aan snelle toegang**: [Een element vastzetten](my-workspace-assets-view.md) voor snellere toegang wanneer u het later nodig hebt. Alle vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** van Mijn werkruimte.
 
 ## Eerste homepage van zoekopdracht configureren {#configuring-search-first-homepage}
 
@@ -197,7 +216,7 @@ U kunt het merklogo en de achtergrondafbeelding toevoegen aan uw eerste zoekpagi
 
 U kunt een voorvertoning weergeven om de lay-out en opmaak van de eerste homepage van de zoekopdracht te controleren. Gebruiken **[!UICONTROL Preview]** kunt u de layout herstellen of de layout naar wens wijzigen. Voer de onderstaande stappen uit om een voorvertoning van de geconfigureerde homepage weer te geven:
 
-1. Klik op **[!UICONTROL General Settings]** en selecteer **[!UICONTROL Search first]**.
+1. Klikken **[!UICONTROL General Settings]** en selecteert u **[!UICONTROL Search first]**.
 1. Navigeren naar **[!UICONTROL Customize search first homepage]** en klik op **[!UICONTROL Preview]**. Doorschakelen **[!UICONTROL Dark theme]** om de homepage in het donkere of lichte thema voor te vertonen.
 1. Klikken **[!UICONTROL Close]** om het voorvertoningsscherm te sluiten.
 
