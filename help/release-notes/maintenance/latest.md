@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 4fc676bd975e44234b478ba57f12cbf0f4f5ba45
+source-git-commit: 0b4c820159f918cb9b3a93d9ab36dc26b1d8da47
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '381'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 14697 same
 
 ### Bekende problemen {#known-issues-14697}
 
-Geen.
+* GRANITE-49031: regressie resulterend in `@JsonIgnore` annotatie die wordt genegeerd in overgangsvelden.
 
 ### Ingesloten technologieën {#embedded-tech-14697}
 
