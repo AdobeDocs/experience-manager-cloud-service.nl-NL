@@ -4,9 +4,9 @@ description: Configureren [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Voer de volgende stappen uit om u te abonneren op de gebeurtenissen:
 1. Ga naar het tabblad Gekoppelde projectmappen in de cloudservices.
 1. Bovenliggend pad van gekoppelde map: selecteer een map in de DAM waar u de gekoppelde mappen wilt maken. Als het verlaten leeg blijft, zal het aan /content/dam in gebreke blijven. Controleer of het metagegevensschema voor Workfront Tools en het metagegevensschema voor de map Workfront Linked Folder zijn toegepast op de geselecteerde map.
 1. Gekoppelde mapstructuur: voer door komma&#39;s gescheiden waarden in. Elke waarde moet `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name of een of andere &#39;Letterlijke tekenreekswaarde&#39; (deze laatste met aanhalingstekens). Deze is momenteel ingesteld op Portfolio,Programma,Jaar,DE:Projecttype,Naam.
+1. Machtigingen configureren: toevoegen `jcr:all permissions` machtigingen voor `/conf/workfront-tools/settings/cloudconfigs` for `wf-workfront-users` groep.
 1. De functie voor het maken van gekoppelde mappen in Workfront met het selectievakje voor mapstructuurnamen moet zijn ingeschakeld als de titel van de map in Workfront alle mappen in de structuur moet bevatten. Anders is dit de titel van de laatste map.
 1. Met submappen met meerdere velden kunt u een lijst opgeven met mappen die moeten worden gemaakt als een onderliggende map van de gekoppelde map.
 1. Projectstatus: selecteer de status waarvoor het project moet worden ingesteld om de gekoppelde map te maken.
@@ -81,7 +82,7 @@ Metagegevenstoewijzing tussen Workfront-projecten en AEM mappen wordt gedefiniee
 Voer de volgende stappen uit om de toewijzingen te configureren:
 
 1. Toevoegen `jcr:read` machtigingen voor `/conf/global/settings/dam/adminui-extension/foldermetadataschema` for `wf-workfront-users` groep.
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Selecteer het schema voor metagegevens van de map dat u wilt bewerken en klik op Bewerken.
 1. Selecteer het formulierveld voor het metagegevensschema van de map dat u wilt bewerken en selecteer het tabblad Instellingen in het rechterdeelvenster.
 1. In [!UICONTROL Mapped from Workfront Field] in het veld selecteert u de naam van het Workfront-veld dat u wilt toewijzen aan de geselecteerde AEM-mapeigenschap. Beschikbare opties zijn:
