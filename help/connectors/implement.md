@@ -1,13 +1,14 @@
 ---
 title: Implementeren van een AEM-aansluiting
-description: Leer hoe te om, een AEM schakelaar te bouwen te testen en uit te voeren. Ook, leert u over gemeenschappelijke integratiepatronen.
+description: Meer informatie over connectoren, wat ze kunnen doen en hoe u deze waardevolle tools implementeert in Experience Manager.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
+
 
 Implementeren van een AEM-aansluiting
 =============================

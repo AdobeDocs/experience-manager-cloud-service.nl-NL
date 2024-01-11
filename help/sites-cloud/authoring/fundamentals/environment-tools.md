@@ -2,7 +2,7 @@
 title: Ontwerpomgeving en -gereedschappen
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 8%
@@ -102,7 +102,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 ## Browser voor middelen {#assets-browser}
 
-In de middelenbrowser worden alle [elementen](/help/assets/home.md) die beschikbaar zijn voor rechtstreeks gebruik op uw huidige pagina.
+In de middelenbrowser worden alle [elementen](/help/assets/overview.md) die beschikbaar zijn voor rechtstreeks gebruik op uw huidige pagina.
 
 De assetbrowser is een tabblad in het zijpaneel, samen met de [componentenbrowser](#components-browser) en de [contentstructuur](#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 

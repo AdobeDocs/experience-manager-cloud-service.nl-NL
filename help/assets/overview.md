@@ -1,22 +1,23 @@
 ---
 title: Inleiding tot elementen als een [!DNL Cloud Service]
-description: Meer weten over nieuwe functies en de voordelen van Experience Manager Assets als [!DNL Cloud Service]. Een geïntegreerde PaaS-oplossing voor bedrijven in de cloud.
+description: Leer hoe u Experience Manager Assets as a Cloud Service gebruikt en beheert.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '820'
 ht-degree: 1%
 
 ---
+
 
 # Elementen introduceren als een [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
-Adobe Experience Manager Assets as a [!DNL Cloud Service] biedt een cloud-native, PaaS-oplossing voor bedrijven om niet alleen hun Digital Asset Management- en Dynamic Media-bewerkingen met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerend is.
+Adobe Experience Manager Assets als [!DNL Cloud Service] biedt een cloud-native, PaaS-oplossing voor bedrijven om niet alleen hun Digital Asset Management- en Dynamic Media-bewerkingen met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerend is.
 
 Gelijktijdige inname van vele activa of complexe activa is middel-intensieve taak voor een instantie van de Auteur van de Experience Manager. De primaire instantie verbruikt aanzienlijke CPU-, geheugen- en I/O-bronnen wanneer middelen worden toegevoegd, verwerkt of zelfs gemigreerd. Dergelijke prestatieproblemen zijn van invloed op het ontwerpen en bladeren door eindgebruikers.
 
@@ -69,14 +70,14 @@ De belangrijkste nieuwe mogelijkheden zijn:
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)

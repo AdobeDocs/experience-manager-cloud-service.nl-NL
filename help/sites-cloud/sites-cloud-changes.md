@@ -1,10 +1,10 @@
 ---
 title: Opvallende wijzigingen in AEM Sites in AEM Cloud Service
-description: Meer informatie over opmerkelijke wijzigingen in AEM Sites in AEM Cloud Service
+description: Begrijp hoe u met AEM Sites as a Cloud Service kunt ontwerpen en beheren en hoe u opmerkelijke wijzigingen in AEM Sites in AEM Cloud Service kunt aanbrengen.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '527'
 ht-degree: 10%
 
 ---

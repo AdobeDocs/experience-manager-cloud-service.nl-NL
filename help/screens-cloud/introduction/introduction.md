@@ -1,13 +1,14 @@
 ---
 title: Inleiding tot AEM Screens as a Cloud Service
-description: Deze pagina fungeert als een inleiding tot Adobe Experience Manager Screens as a Cloud Service.
+description: Begrijp AEM Screens as a Cloud Service.
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
+
 
 # Inleiding tot AEM Screens as a Cloud Service {#introduction-screens-cloud}
 
