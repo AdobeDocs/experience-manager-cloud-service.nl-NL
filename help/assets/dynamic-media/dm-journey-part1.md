@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 20c12efb963bc1defd16f5b42b5efa5d4067e266
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3671'
 ht-degree: 0%
 
 ---
@@ -88,11 +88,11 @@ Terwijl u doorleest, gaat u meer leren over waarom dit concept van &quot;één p
 
 Wanneer u klaar bent om live te gaan met een afbeeldingselement of een video-element, wordt dit ondersteund door de ruggengraat van Dynamic Media, die bestaat uit een krachtig, bovenste leveringsnetwerk. Het netwerk dient elke dag honderden klanten over de hele wereld. De middelen worden verdeeld op het Netwerk van de Levering van de Inhoud - of CDN - dat door Akamai wordt ontvangen. CDN is een systeem van computerdiensten die samen samenwerken om inhoud, vooral grote rijke media inhoud, aan eind te leveren.
 
-In het CDN-systeem wordt webinhoud opgeslagen in webcaches via internet. Vervolgens wordt het bestand vanuit de webcache aan de eindgebruikers geleverd, zodat het sneller kan worden geleverd. Dus de eerste keer dat iemand een webpagina downloadt, worden de elementen die ze zien geleverd aan een CDN-cache. Ze worden opgeslagen op de server, zodat dezelfde cacheinhoud sneller wordt geleverd wanneer iemand in hetzelfde gebied de webpagina opnieuw benadert. De inhoud wordt sneller geleverd, omdat deze zich dichter bij de gebruiker bevindt. Een CDN maakt voor snellere Web-pagina vertoningen, en toch vermindert het bandbreedteeisen op de centrale server omdat de inhoud van een geheim voorgeheugennetwerk, niet van een centrale server in elke instantie wordt geleverd. Deze geoptimaliseerde stroom betekent een betere gebruikerservaring, die tot verhoogde verkoop leidt.
+In het CDN-systeem wordt webinhoud opgeslagen in webcaches via internet. Vervolgens wordt het bestand vanuit de webcache aan de eindgebruikers geleverd, zodat het sneller kan worden geleverd. Dus de eerste keer dat iemand een webpagina downloadt, worden de elementen die ze zien geleverd aan een CDN-cache. Ze worden opgeslagen op de server, zodat dezelfde inhoud sneller wordt geleverd wanneer iemand in hetzelfde gebied de webpagina weer opent. De inhoud wordt sneller geleverd, omdat deze zich dichter bij de gebruiker bevindt. Een CDN maakt voor snellere Web-pagina vertoningen, en toch vermindert het bandbreedteeisen op de centrale server omdat de inhoud van een geheim voorgeheugennetwerk, niet van een centrale server in elke instantie wordt geleverd. Deze geoptimaliseerde stroom betekent een betere gebruikerservaring, die tot verhoogde verkoop leidt.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-Historisch, levert CDN 3.5 petabytes van verkeer aan klanten, elke maand. Het systeem kan 52 miljard activa in één enkele dag leveren. Dit aantal komt overeen met 864.000 afbeeldingen en video&#39;s die succesvol aan klanten zijn geleverd, _elke seconde_.
+Historisch, levert CDN 3.5 petabytes van verkeer aan klanten elke maand. Het systeem kan 52 miljard activa in één enkele dag leveren. Dit aantal komt overeen met 864.000 afbeeldingen en video&#39;s die succesvol aan klanten zijn geleverd, _elke seconde_.
 
 ### Slimme afbeeldingen
 
@@ -117,12 +117,11 @@ Slimme beeldverwerking is niet standaard ingeschakeld, omdat hiervoor een gecoö
 
 ### Adaptieve videosets
 
-Wanneer er een video op een pagina, of een hoofdpagina is, neigen uw klanten om met die inhoud langer in dienst te nemen en langer op de pagina te blijven, wat typisch een goed ding is. Dit gedrag is gebleken uit analyses die de Adobe heeft uitgevoerd. Video kan echter complex zijn. Om te beginnen hebt u vaak een groot primair bestand. Het is ingewikkeld om te bepalen hoe te om en video te leveren, allen om ervoor te zorgen dat de ervaring regelmatig loopt ongeacht het apparaat het wordt bekeken, en ongeacht bandbreedte.
+Wanneer er een video op een pagina, of een hoofdpagina is, neigen uw klanten om met die inhoud langer in dienst te nemen en langer op de pagina te blijven, wat typisch een goed ding is. Dit gedrag wordt getoond door analyses die de Adobe heeft uitgevoerd. Video kan echter complex zijn. Om te beginnen hebt u vaak een groot primair bestand. Het is ingewikkeld om te bepalen hoe te en video te leveren, allen om ervoor te zorgen dat de ervaring regelmatig loopt ongeacht het apparaat het wordt bekeken, en ongeacht bandbreedte.
 
 Dynamic Media biedt u de mogelijkheid om dit probleem op te lossen _Adaptieve videosets_.
 
-![Aangepaste videoset](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_Met een adaptieve videoset worden versies van dezelfde video gegroepeerd die met verschillende bitsnelheden en indelingen zijn gecodeerd._
+Met een adaptieve videoset worden versies van dezelfde video gegroepeerd die met verschillende bitsnelheden en indelingen zijn gecodeerd.
 
 U begint met uw originele, primaire video, die u in het systeem uploadt. Dynamic Media automatisch vergroten of verkleinen, of _transcodes_, die video in meerdere video&#39;s. Op het moment van levering bepaalt het op intelligente wijze welk videoscherm, welke kwaliteit en welke indeling moet worden gebruikt en levert het aan de telefoon, tablet of desktopcomputer.
 
@@ -134,11 +133,11 @@ Het gebruik van Adaptieve videosets zorgt voor een vloeiende, hoogwaardige weerg
 
 ## Kwesties gebruiken voor Dynamic Media {#dm-journey-b}
 
-Hieronder vindt u veelvoorkomende gebruiksproblemen en oplossingen waarmee Dynamic Media u kan helpen bij het aansturen van een positieve betrokkenheid van klanten, loyaliteit, conversie en een verhoogd rendement op investeringen.
+Hieronder vindt u een aantal veelvoorkomende gebruiksproblemen en oplossingen waarmee Dynamic Media u kan helpen bij het aansturen van een positieve betrokkenheid van klanten, loyaliteit, conversie en een verhoogd rendement op investeringen.
 
 ### Hoofdlettergebruik: benadering primaire bestanden
 
-Een van de belangrijkste gebruiksgevallen voor Dynamic Media is ook een van de meest voor de hand liggende. Dat wil zeggen, het gewicht van pagina&#39;s en ervaringen verminderen, en de grootte van de inhoud, of het nu gaat om een afbeelding of een video, die wordt geleverd.
+Een van de belangrijkste gebruiksgevallen voor Dynamic Media is ook een van de meest voor de hand liggende. Dat wil zeggen, het gewicht van pagina&#39;s en ervaringen verminderen en de grootte van de inhoud verminderen, of het nu gaat om een afbeelding of een video die wordt geleverd.
 
 Hieronder ziet u een typische ervaring of webpagina. Ongeveer 90% van een pagina bestaat uit rijke media, zoals beelden en video&#39;s, die algemeen veel zwaardere dossiers zijn.
 
@@ -176,13 +175,13 @@ Een ander gebruiksgeval waarvoor Dynamic Media oplost is video. Video is complex
 | **Probleem** | **Dynamic Media-oplossing** |
 |---|---|
 | Moeilijk om video te beheren en te leveren die voor diverse apparaten wordt geoptimaliseerd. | Gebruik één video waarvan de grootte automatisch voor alle apparaten wordt aangepast. |
-| Video&#39;s worden vastgezet of worden op lage kwaliteit afgespeeld vanwege de beschikbare bandbreedte van de gebruiker. | Lever video via een HTML-speler die de beschikbare bandbreedte automatisch detecteert en de kwaliteit aanpast om een hoge kwaliteit en een vloeiende weergave te garanderen. |
+| Video&#39;s worden standaard of worden op lage kwaliteit afgespeeld vanwege de beschikbare bandbreedte van de gebruiker. | Lever video via een HTML-speler die de beschikbare bandbreedte automatisch detecteert en de kwaliteit aanpast om een hoge kwaliteit en een vloeiende weergave te garanderen. |
 | Onuitvoerbaar en tijdrovend om alle versies van een video handmatig te maken, alleen voor een goede weergave en weergave op verschillende apparaten. | Elimineer de uren van vervelende transcoderingswerk met een vereenvoudigde werkstroom. |
 | | Maak tijd vrij voor werk van hogere waarde. |
 
-Klanten komen naar Dynamic Media met het volgende probleem dat ze hopen op te lossen:
+Klanten komen naar Dynamic Media met de volgende problemen die ze hopen op te lossen:
 
-&quot;_Mijn bedrijf heeft de video, en onze afdeling besteedde veel geld aan het creëren van de video, maar verschroeide van het plaatsen van de video op pagina&#39;s, of het leveren van het. De reden was dat de kwaliteit van de video niet gegarandeerd kon worden door onze tests, of zelfs niet als het echt zou spelen. En uiteindelijk beïnvloedt dat onze merken en mogelijk onze rol voor zelfs conversie._&quot;
+&quot;_Mijn bedrijf heeft de video, en de afdeling besteedde een groot bedrag aan het creëren van het, maar verschrompelde van het plaatsen van het op pagina&#39;s, of het leveren van het. De reden was dat de kwaliteit van de video niet gegarandeerd kon worden door het testen, of zelfs niet als het echt zou spelen. En uiteindelijk beïnvloedt dat het merk van het bedrijf en mogelijk zijn rol in conversie._&quot;
 
 Dynamic Media&#39;s oplossing is dat één primair videobestand wordt gebruikt en dat Dynamic Media alle formaten laat doormaken via zijn transcoderingsproces. Dan, koppel dat met de intelligente videospeler van Dynamic Media. Deze workflow garandeert dat de video die u gebruikt op de hoofdbestemmingspagina of op een categorie- of productdetailpagina, overal consistent zal zijn en van hoge kwaliteit zal worden geleverd.
 
@@ -200,7 +199,7 @@ Hier zijn verscheidene meer te overwegen gebruiksgevallen.
 
 | **Probleem** | **Dynamic Media-oplossing** |
 |---|---|
-| Het tijdrovend en arbeidsintensief om handmatig afbeeldingen of video&#39;s te tekenen, te meten en te knippen om het brandpunt te benadrukken en op de juiste wijze weer te geven op alle schermgrootten en apparaten. | Gebruikt SmartCrop in Dynamic Media, een Adobe Sensei AI-mogelijkheid, om automatisch het brandpunt in een afbeelding of video te detecteren en uit te snijden om het brandpunt te behouden. |
+| Het tijdrovende en arbeidsintensieve tekenen, meten en knippen van afbeeldingen of video&#39;s om het brandpunt te benadrukken en op de juiste wijze weer te geven op alle schermgrootten en apparaten. | Gebruikt SmartCrop in Dynamic Media, een Adobe Sensei AI-mogelijkheid, om automatisch het brandpunt in een afbeelding of video te detecteren en uit te snijden om het brandpunt te behouden. |
 | Tijd verloren die beter kan worden besteed aan het creëren van ervaringen met een hoog effect. | Hiermee legt u het bedoelde interessepunt vast, ongeacht de schermgrootte. |
 | Elementen voor eenmalig gebruik die zijn gemaakt voor elke ervaring en elk apparaat. | Elimineert vervelende handmatige taken en biedt beelden en video van hoge kwaliteit die snel worden geladen en die er op elk apparaat of scherm goed uitzien. |
 
@@ -265,7 +264,7 @@ De bovenstaande vertoning is live! [Probeer het](https://s7d1.scene7.com/s7viewe
 
 ## Optioneel - Meer informatie
 
-Deel I van deze reis ging over de grondbeginselen van een verscheidenheid aan Dynamic Media-onderwerpen. Als u meer wilt weten over wat u net leest, gebruikt u de onderstaande materialen om concepten in detail te verkennen. Anders kunt u doorgaan met deel II van uw reis. Zie [Hoe verder in deze Dynamic Media-reis](#whats-next).
+Deel I van deze reis ging over de grondbeginselen van verschillende Dynamic Media-onderwerpen. Als u meer wilt weten over wat u leest, gebruikt u de onderstaande materialen om concepten in detail te verkennen. Anders kunt u doorgaan met deel II van uw reis. Zie [Hoe verder in deze Dynamic Media-reis](#whats-next).
 
 _Dynamic Media Help-onderwerpen_
 
@@ -291,7 +290,7 @@ _Dynamic Media-viewers_
 
 ## Hoe verder in deze Dynamic Media-reis {#whats-next}
 
-In deel II van deze reis, bekijkt u Dynamic Media URLs een wat dichter om beter te begrijpen wat aan de hand is wanneer een activa wordt geleverd. U leert ook meer over de grondbeginselen van het maken van voorinstellingen voor afbeeldingen om elementen te renderen, en leert over Afbeeldingssets, Spin-sets en Gemengde-mediasets en hoe deze worden gemaakt.
+In deel II van deze reis, onderzoekt u nauwgezet Dynamic Media URLs om beter te begrijpen wat aan de hand is wanneer een activa wordt geleverd. U leert ook meer over de grondbeginselen van het maken van voorinstellingen voor afbeeldingen om elementen te renderen, en leert over Afbeeldingssets, Spin-sets en Gemengde-mediasets en hoe deze worden gemaakt.
 
 Neem me mee naar [Dynamic Media Journey: The Basics, Part II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
