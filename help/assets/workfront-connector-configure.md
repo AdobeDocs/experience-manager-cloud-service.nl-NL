@@ -4,9 +4,9 @@ description: Configureren [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
+source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,7 @@ Voer de volgende stappen uit om u te abonneren op de gebeurtenissen:
 1. Projectstatus: selecteer de status waarvoor het project moet worden ingesteld om de gekoppelde map te maken.
 1. Maak een gekoppelde map in projecten met een portfolio: lijst met Portfolio&#39;s waartoe het project moet behoren, zodat u de gekoppelde map kunt maken. Laat deze lijst leeg om de gekoppelde map voor alle projectportfolio te maken.
 1. Maak een gekoppelde map in projecten met een aangepast formulierveld: aangepast formulierveld en de bijbehorende waarde die het project moet hebben om de gekoppelde map te kunnen maken. Deze configuratie wordt genegeerd als deze leeg wordt gelaten. Selecteren `CUSTOM FORMS: Create DAM Linked Folder` voor het veld en de invoer `Yes` voor de waarde.
+1. Vorm toestemming: Vorm deze toestemmingen, `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` voor de `wf-workfront-users group`.
 1. Klik op Automatisch maken van gekoppelde mappen inschakelen. Als u teruggaat naar het tabblad Gebeurtenisabonnementen, ziet u dat er nu een gebeurtenis create is.
 
 ![gekoppelde mapconfiguratie](/help/assets/assets/wf-linked-folder-config.png)
