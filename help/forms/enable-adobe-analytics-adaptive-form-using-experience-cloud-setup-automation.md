@@ -2,8 +2,10 @@
 title: Hoe kan Adobe Analytics inschakelen voor een adaptief formulier?
 description: Met de Experience Cloud Setup Automation kunt u Adobe Analytics verbinden met een adaptief formulier om inzichten in de interactie en betrokkenheid van bezoekers bij te houden.
 keywords: Adobe Analytics inschakelen voor een adaptief formulier met Experience Cloud Setup Automation, Adobe Analytics inschakelen in Forms, Adobe Analytics in Adaptive Forms, Forms Analytics Integration, Forms en Adobe Analytics
+feature: Adaptive Forms
+role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 0%

@@ -2,10 +2,12 @@
 title: Hoe kunnen we problemen met betrekking tot caching oplossen voor AEM Forms as a Cloud Service?
 description: Problemen met cachegeheugen voor as a Cloud Service AEM Forms oplossen.
 contentOwner: khsingh
+feature: Adaptive Forms, Troubleshooting
+role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,12 @@
 ---
 title: Gemakkelijk maken van PDF, moeiteloos maken - Maak kennis met de kunst met batterijverwerking - Uw zelfhulplijn voor het genereren van miljoenen PDF-documenten!
 description: Hoe te om merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen?
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1706'
 ht-degree: 0%
 
 ---
@@ -127,11 +129,11 @@ Als u een batch-API wilt gebruiken, maakt u een batchconfiguratie en voert u op 
 
 Als u een batch wilt maken, gebruikt u de opdracht `POST /config` API. Neem de volgende verplichte eigenschappen op in de hoofdtekst van de HTTP-aanvraag:
 
-* **configName**: Geef de unieke naam van de batch op. Bijvoorbeeld, `wknd-job`
+* **configName**: Geef de unieke naam van de batch op. Bijvoorbeeld: `wknd-job`
 * **dataSourceConfigUri**: Geef de locatie van de configuratie Batch Data Store op. Het kan relatieve of absolute weg van de configuratie zijn. Bijvoorbeeld: `/conf/global/settings/forms/usc/batch/wknd-batch`
 * **outputTypes**: Geef uitvoerindelingen op: PDF en PRINT. Als u het uitvoertype PRINT gebruikt, kunt u `printedOutputOptionsList` -eigenschap, geeft u ten minste één afdrukoptie op. De afdrukopties worden bepaald door hun rendertype, zodat er momenteel geen meerdere afdrukopties met hetzelfde rendertype zijn toegestaan. De ondersteunde indelingen zijn PS, PCL, DPL, IPL en ZPL.
 
-* **template**: Geef het absolute of relatieve pad van de sjabloon op. Bijvoorbeeld, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
+* **template**: Geef het absolute of relatieve pad van de sjabloon op. Bijvoorbeeld: `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
 Als u een relatief pad opgeeft, moet u ook een basisinhoud opgeven. Zie API-documentatie voor meer informatie over de hoofdmap van de inhoud.
 

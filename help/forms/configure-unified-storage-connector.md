@@ -1,8 +1,10 @@
 ---
 title: Hoe te om Verenigde Schakelaar van de Opslag (USC) voor AEM Forms te vormen?
 description: Leer hoe te om Verenigde Schakelaar van de Opslag (USC) voor AEM Forms te beheren. Gebruik de Unified Storage Connector (USC) om AEM Forms te verbinden met externe gegevensopslag.
+role: Admin, Developer, User
+feature: Adaptive Forms, Workflow
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%

@@ -1,11 +1,13 @@
 ---
 title: AEM Forms as a Cloud Service architectuur voor adaptieve Forms- en communicatie-API's
 description: De architectuur van [!DNL AEM Forms] as a Cloud Service om over de scalability, veerkracht, en prestatiesaspecten van het platform te leren.
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 1%
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +50,7 @@ Een auteur is een as a Cloud Service AEM Forms-instantie die wordt uitgevoerd in
 * Synchrone RESTful APIs (Echte - tijd APIs) en Partij APIs om, merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen samen te stellen en te leveren.
 * Synchrone API&#39;s om PDF-documenten te combineren, opnieuw te rangschikken en te valideren.
 
-### Publicatie
+### Publiceren
 
 Een instantie Publish is een as a Cloud Service AEM Forms die in de standaard Publish loopwijze loopt. Publicatie-instanties zijn bedoeld voor eindgebruikers van formuliertoepassingen, bijvoorbeeld gebruikers die een openbare website openen en formulieren verzenden. Het maakt de volgende functies mogelijk:
 
@@ -103,7 +105,7 @@ Cloud Manager is een essentieel onderdeel van [AEM as a Cloud Service](https://e
 * Het creëren van en het leiden van de pijpleidingen voor het opstellen van de klantencode en configuratie aan een bepaalde milieu
 * Informatie over belangrijke levenscyclusgebeurtenissen voor deze componenten (bijvoorbeeld productupdates) Raadpleeg voor meer informatie over Cloud Manager [Adobe Cloud Manager begrijpen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) en [Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
 
-### Developer Console
+### Ontwerpconsole
 
 Een ontwikkelaarsconsole biedt verschillende details over elke Forms die wordt uitgevoerd als een Cloud Service-omgeving. Deze details zijn nuttig in het zuiveren van het milieu. Zie voor meer informatie [Foutopsporing AEM as a Cloud Service met de ontwikkelaarsconsole](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
 

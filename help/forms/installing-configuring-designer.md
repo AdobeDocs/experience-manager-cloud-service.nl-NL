@@ -2,9 +2,10 @@
 title: Hoe kan ik Forms Designer downloaden en installeren om Document of Record-sjablonen te maken?
 description: Met Forms Designer kunt u XDP- en PDF-formuliersjablonen maken die fungeren als sjabloon voor een document met records.
 keywords: Designer installeren, Forms-ontwerper installeren, vereisten voor de installatie van Forms Designer
-feature: Forms Designer
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 1%

@@ -2,9 +2,11 @@
 title: Wat zijn overwegingen, bekende kwesties en beste praktijken in AEM Forms?
 description: Bekende problemen en best practices voor AEM Forms Communication API's in overweging nemen.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1733'
 ht-degree: 0%
 
 ---
@@ -165,11 +167,11 @@ In de volgende tabel worden XCI-opties opgegeven.
 
 * Voor asynchrone API&#39;s (batchverwerking) is het standaard recordniveau ingesteld op 2. U kunt een aangepaste XCI gebruiken om het recordniveau te wijzigen in 1.
 
-* Wanneer de standaard-XCI is geconfigureerd, bevat deze paden tot de oorspronkelijke uitvoering. Bijvoorbeeld, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* Wanneer de standaard-XCI is geconfigureerd, bevat deze paden tot de oorspronkelijke uitvoering. Bijvoorbeeld: `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 
-## Best practices voor
+## Aanbevolen procedures
 
 * Adobe raadt u aan gegevensbestanden in de blob-containeropslag te hosten in het cloudgebied dat door AEM Cloud Service wordt gebruikt.
 

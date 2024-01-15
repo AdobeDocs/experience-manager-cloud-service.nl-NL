@@ -2,11 +2,12 @@
 title: Veelgestelde vragen over AEM Forms as a Cloud Service
 description: Forms as a Cloud Service veelgestelde vragen
 contentOwner: khsingh
-exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+role: User
+feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ U kunt de referentiedocumentatie voor Java™ API downloaden van [!DNL Maven Cen
 
 * **Waar kan ik krijgen? [!DNL JavaScript™] API-referentie voor Adaptive Forms?**
 U kunt downloaden [!DNL JavaScript™] API-naslagdocumentatie van[!DNL  Maven Central Repository]. Downloaden:
-   1. Open [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
+   1. Openen [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Pagina met de nieuwste versie van [!DNL Experience Manager Forms] SDK.
    1. Klik op Alles weergeven om alle bestanden weer te geven.
    1. Download en extraheer de `aem-forms-sdk-api-<version>-jsdoc.jar`.

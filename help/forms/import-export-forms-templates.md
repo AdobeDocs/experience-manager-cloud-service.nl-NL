@@ -2,8 +2,9 @@
 title: Hoe te om Aangepast Forms of PDF forms op een instantie van AEM Forms in te voeren, uit te voeren en te organiseren?
 description: Leer Adaptieve Forms, PDF forms, thema's en andere ondersteunende middelen migreren van en naar AEM instanties.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%

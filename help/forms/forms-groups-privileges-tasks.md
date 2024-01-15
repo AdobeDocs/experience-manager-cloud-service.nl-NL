@@ -1,11 +1,12 @@
 ---
 title: Welke gebruikersgroepen zijn beschikbaar uit de doos in as a Cloud Service AEM Forms?
 description: Lijst van uit de doos gebruikersgroepen en toestemmingen die aan elke groep worden toegewezen
-exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 4%
+source-wordcount: '167'
+ht-degree: 3%
 
 ---
 
