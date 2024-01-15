@@ -1,12 +1,12 @@
 ---
 title: Een voorbeeld bekijken van een adaptief formulier?
-description: Gebruikers kunnen een voorbeeld van formulieren bekijken voordat ze het formulier publiceren of activeren, om er zeker van te zijn dat het aan de verwachtingen voldoet. Voorvertoningsopties kunnen per ondersteund formuliertype verschillen.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: Gebruikers kunnen een voorbeeld van een formulier bekijken voordat ze het publiceren of activeren, om te controleren of het formulier aan de verwachtingen voldoet. Voorvertoningsopties kunnen per ondersteund formuliertype verschillen.
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,10 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
    <td><strong>Type element</strong><br /> </td>
    <td><strong>Beschikbare voorvertoningsopties</strong><br /> </td>
   </tr>
-  <tr>
+  <!--<tr>
    <td>Document</td>
-   <td>PDF-voorvertoning</td>
-  </tr>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
    <td>PDF-formulier</td>
    <td>PDF-voorvertoning en -voorvertoning met gegevens<br /> </td>
@@ -40,10 +40,10 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
    <td>Adaptief formulier</td>
    <td>HTML-voorvertoning en HTML-voorvertoning met gegevens</td>
   </tr>
-  <tr>
-   <td>Formuliersjabloon</td>
-   <td>PDF-voorvertoning, PDF-voorvertoning met gegevens, HTML-voorvertoning, HTML-voorvertoning met gegevens<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
@@ -61,7 +61,7 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
 
    * Voorvertonen als HTML
    * Voorvertonen met gegevens
-   * Voorvertonen als PDF (beschikbaar voor formuliersjablonen)
+     <!--* Preview as PDF (available for form templates)-->
 
 ## Voorvertonen met gegevens {#preview-with-data}
 
