@@ -3,9 +3,9 @@ title: Niet-productiepijpleidingen configureren
 description: Leer hoe u niet-productiepijpleidingen configureert om de kwaliteit van uw code te testen voordat u deze implementeert in productieomgevingen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,9 @@ Er zijn twee soorten niet-productiepijpleidingen:
 
 Nadat u uw programma hebt ingesteld en minstens één omgeving hebt gebruikt met de interface van Cloud Manager, kunt u een niet-productiepijplijn toevoegen door deze stappen uit te voeren.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+
+Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
 
 1. Toegang krijgen tot de **Pijpleidingen** kaart van het startscherm van Cloud Manager. Klikken **+Toevoegen** en selecteert u **Niet-productiepijpleiding toevoegen**.
 

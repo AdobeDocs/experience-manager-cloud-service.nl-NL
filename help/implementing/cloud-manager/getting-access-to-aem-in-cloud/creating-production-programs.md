@@ -2,9 +2,9 @@
 title: Productieprogramma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Ga als volgt te werk om een productieprogramma te maken.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klikken **Programma toevoegen** in de rechterbovenhoek van het scherm.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** scherm, tikken of klikken **Programma toevoegen** rechtsboven in het scherm.
 
    ![Stationspagina van Cloud Manager](assets/log-in.png)
 
@@ -37,8 +37,6 @@ Ga als volgt te werk om een productieprogramma te maken.
    * HIPAA kan na het maken van het programma niet worden in- of uitgeschakeld.
       * [Meer informatie](https://www.adobe.com/go/hipaa-ready) over de HIPAA-gereed implementatie van de oplossing van Adobe.
    * Zodra geactiveerd, kan de bescherming WAF-DDOS dan door opstelling worden gevormd [niet-productiepijpleiding.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
 
    ![Beveiligingsopties](assets/create-production-program-security.png)
 
@@ -60,7 +58,7 @@ Ga als volgt te werk om een productieprogramma te maken.
    ![Geplande datum voor live gaan definiëren](assets/setup-go-live.png)
 
    * Deze datum kan op elk moment worden bewerkt.
-   * Deze datum is alleen bedoeld voor informatief gebruik en activeert de widget Go Live op de overzichtspagina van het programma om op tijd koppelingen naar AEM as a Cloud Service documentatie over best practices te bieden, zodat deze op de juiste manier kunnen worden afgestemd op uw reis en een geslaagde en vloeiende Go Live-ervaring tot resultaat hebben.
+   * Deze datum is alleen ter informatie en activeert de widget Go Live op het tabblad [**Programmaoverzicht** page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) om op tijd koppelingen naar AEM documentatie over best practices voor as a Cloud Service toepassingen aan te bieden die zijn afgestemd op uw reis en die uitmonden in een geslaagde en vloeiende Go Live-ervaring.
 
 1. Klikken **Maken**.
 
@@ -82,7 +80,7 @@ Uw programma wordt gemaakt door Cloud Manager en wordt weergegeven en geselectee
 
 Als u op een bepaald moment naar een ander programma moet schakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om de **Navigeren naar** -optie.
 
-![Ga naar](assets/create-program-a1.png)
+![Navigeren naar](assets/create-program-a1.png)
 
 >[!NOTE]
 >

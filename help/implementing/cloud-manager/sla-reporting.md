@@ -2,9 +2,9 @@
 title: SLA-rapportage
 description: Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken ten opzichte van de overeenkomst voor serviceniveau (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,9 @@ Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken ten opzicht
 
 SLA-rapporteringsgegevens zijn beschikbaar voor elk productieprogramma via **Rapporten** tab. Voer de volgende stappen uit om toegang te krijgen.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
 
 1. Ga naar de **Rapporten** van de **Overzicht** pagina.
 

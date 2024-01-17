@@ -2,9 +2,9 @@
 title: IP-Lijsten van gewenste personen toepassen en niet toepassen
 description: Leer om IP lijsten van gewenste personen op milieu's toe te passen en ongedaan te maken.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,9 @@ Wanneer het toepassen van een IP lijst van gewenste personen, worden alle IP waa
 
 Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeheer** De rol kan deze stappen volgen om een IP lijst van gewenste personen toe te passen.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 1. Navigeer naar de pagina met specifieke omgevingsdetails op het tabblad **Omgevingen** en navigeer naar het **IP-Lijst van gewenste personen** tabel.
 1. Gebruik de invoervelden boven aan de tabel, zodat u de IP-lijst van gewenste personen en de auteur of publicatieservice kunt selecteren waarop u deze wilt toepassen.

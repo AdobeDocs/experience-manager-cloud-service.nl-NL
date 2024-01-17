@@ -2,9 +2,9 @@
 title: Omgevingsvariabelen van Cloud Manager
 description: De standaardmilieuvariabelen kunnen via de Manager van de Wolk worden gevormd en worden beheerd en aan het runtime milieu worden verstrekt, dat in configuratie OSGi moet worden gebruikt.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De meest gangbare gebruiksgevallen voor het gebruik van omgevingsvariabelen zijn
 >U moet lid zijn van de [**Implementatiebeheer** rol](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) om omgevingsvariabelen toe te voegen of te wijzigen.
 
 1. Aanmelden bij Adobe Cloud Manager op [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager geeft de verschillende beschikbare programma&#39;s weer. Selecteer de map die u wilt beheren.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het scherm dat u wilt beheren.
 1. Selecteer de **Omgevingen** selecteert u vervolgens in het linkernavigatievenster de omgeving waarvoor u een omgevingsvariabele wilt maken.
 1. Selecteer binnen de details van de omgeving de optie **Configuratie** dan selecteert u **Toevoegen** om de **Omgevingsconfiguratie** in.
    * Als u voor het eerst een omgevingsvariabele toevoegt, kunt u een **Configuratie toevoegen** midden op de pagina. U kunt deze knop of **Toevoegen** om de **Omgevingsconfiguratie** in.

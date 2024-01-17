@@ -2,9 +2,9 @@
 title: Aangepaste domeinnamen beheren
 description: Leer hoe u met Cloud Manager aangepaste domeinnamen kunt weergeven, bijwerken, vervangen en verwijderen.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,9 @@ Met Cloud Manager kunt u aangepaste domeinnamen weergeven, bijwerken, vervangen 
 
 Gebruik de **Weergeven en bijwerken** om de details van om het even welk van uw namen van het douanedomein te bekijken.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
 
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 

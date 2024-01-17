@@ -2,9 +2,9 @@
 title: Uw code implementeren
 description: Leer hoe u uw code implementeert met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Als u eenmaal [Uw productiepijpleiding geconfigureerd](/help/implementing/cloud-
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klik het programma waarvoor u code wilt opstellen.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tikt of tikt op het programma waarvoor u code wilt implementeren.
 
 1. Klikken **Implementeren** van de oproep tot actie op de **Overzicht** scherm om het implementatieproces te starten.
 

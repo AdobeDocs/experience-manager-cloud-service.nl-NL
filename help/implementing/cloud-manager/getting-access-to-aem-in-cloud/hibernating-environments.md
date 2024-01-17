@@ -2,9 +2,9 @@
 title: Sluiende en ontsmette zandbakomgevingen
 description: Leer hoe omgevingen van een sandboxprogramma automatisch overschakelen op een hibernatiemodus en hoe u deze kunt deorganiseren.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Voer de volgende stappen uit om de omgevingen van uw sandboxprogramma handmatig 
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klik op het programma dat u wilt annuleren om de details weer te geven.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tikken of op het programma klikken dat u wilt markeren om de details weer te geven.
 
 1. Op de **Omgevingen** kaart, klikt u op de knop voor ovaal en selecteert u **Ontwerpconsole**.
 
@@ -65,7 +65,7 @@ U kunt uw Sandbox-programma handmatig via de ontwikkelaarsconsole herbergen.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klik op het programma dat u wilt annuleren om de details weer te geven.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tikken of op het programma klikken dat u wilt dehiberneren om de details weer te geven.
 
 1. Op de **Omgevingen** kaart, klikt u op de knop voor ovaal en selecteert u **Ontwerpconsole**.
 

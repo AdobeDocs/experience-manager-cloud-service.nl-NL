@@ -2,9 +2,9 @@
 title: Sandbox-programma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen sandboxprogramma te maken voor training, demo, POC of andere niet-productiedoeleinden.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Meer informatie over programmatypen in het document [Het begrip van Programma en
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klik in de openingspagina van Cloud Manager rechtsboven in het scherm op **Programma toevoegen**.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** scherm, tikken of klikken **Programma toevoegen** in de rechterbovenhoek van het scherm.
 
    ![Openingspagina van Cloud Manager](assets/cloud-manager-my-programs.png)
 
@@ -71,4 +71,4 @@ U kunt de details van uw zandbakopstelling bekijken en tot het milieu (zodra bes
 
 Als u naar een ander programma moet overschakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om de **Navigeren naar** -optie.
 
-![Ga naar](assets/create-program-a1.png)
+![Navigeren naar](assets/create-program-a1.png)

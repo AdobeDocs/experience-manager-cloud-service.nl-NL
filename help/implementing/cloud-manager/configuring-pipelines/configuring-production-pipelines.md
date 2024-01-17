@@ -3,9 +3,9 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,9 @@ Als u uw programma hebt ingesteld en ten minste één omgeving hebt die de [!UIC
 >
 >Alvorens u een front-end pijpleiding vormt, zie [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md) voor een end-to-end handleiding met het gebruiksvriendelijke AEM gereedschap Snel site maken. Deze reis zal u helpen de front-end ontwikkeling van uw AEM Plaats stroomlijnen, die u toestaat om uw plaats snel aan te passen zonder AEM achterste-eindkennis.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie
+
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
 
 1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op **Toevoegen** om **Productiepijpleiding toevoegen**.
 

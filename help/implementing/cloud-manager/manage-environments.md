@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2614'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Een gebruiker moet lid zijn van de **Zakelijke eigenaar** rol.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Klik op het programma waaraan u een omgeving wilt toevoegen.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tikken of tikken op het programma waaraan u een omgeving wilt toevoegen.
 
-1. Van de **Programmaoverzicht** pagina, klikt u **Omgeving toevoegen** op de **Omgevingen** -kaart om een omgeving toe te voegen.
+1. Van de **[Programmaoverzicht](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)** pagina, klikt u **Omgeving toevoegen** op de **Omgevingen** -kaart om een omgeving toe te voegen.
 
    ![Milieukaart](assets/no-environments.png)
 

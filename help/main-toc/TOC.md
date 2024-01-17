@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e25f3e74fa7fa18b92ffe0c40a19f20442d4c7a0
+source-git-commit: 3bc71fe59e0b0c257e6747f93b3d76bc801a39b4
 workflow-type: tm+mt
-source-wordcount: '4544'
+source-wordcount: '4549'
 ht-degree: 3%
 
 ---
@@ -878,7 +878,7 @@ ht-degree: 3%
          + [Productieprogramma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [Sandbox-programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [Sandbox-programma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [Programma&#39;s bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Programma&#39;s beheren en bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Sluimeromgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Een AEM-toepassingsproject maken {#create-application-project}
          + [Wizard Project maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
@@ -935,6 +935,7 @@ ht-degree: 3%
          + [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.md)
       + [Inhoudsverzoeken van Cloud Servicen begrijpen](/help/implementing/cloud-manager/content-requests.md)
+      + [Dashboard voor CDN-prestaties](/help/implementing/cloud-manager/cdn-performance.md)
       + [Veelgestelde vragen over Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Ontwikkelen voor AEM as a Cloud Service {#developing}
       + [AEM projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
