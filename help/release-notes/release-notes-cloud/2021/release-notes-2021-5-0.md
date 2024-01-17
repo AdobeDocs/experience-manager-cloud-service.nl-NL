@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 * [Prerelease-kanaal](/help/release-notes/prerelease.md): Bekijk de volgende functies een volledige maand voordat u live gaat in productie!
 
-* [API-veroudering](/help/release-notes/deprecated-apis.md): er is een lijst beschikbaar met de meest recente vervangen API&#39;s voor AEM as a Cloud Service.
+* [API-veroudering](/help/release-notes/deprecated-removed-features.md): er is een lijst beschikbaar met de meest recente vervangen API&#39;s voor AEM as a Cloud Service.
 
 * [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Werk uw gemaakte projecten bij naar de nieuwste versie, die een verouderde Java API-controle en andere verbeteringen bevat.
 
@@ -138,7 +138,7 @@ De volgende release is gepland voor 3 juni 2021.
 
 * Tijdens de opstelling van het programma Sandbox, zodra het project met steekproefcode met succes is gecreeerd, zal Manage Git als verbinding van de heldenkaart in de pagina van het Overzicht verschijnen.
 
-## De tool Content Transfer {#content-transfer-tool}
+## Inhoud overbrengen {#content-transfer-tool}
 
 ### Releasedatum {#release-date-ctt-latest}
 
