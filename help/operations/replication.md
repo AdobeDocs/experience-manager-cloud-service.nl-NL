@@ -2,7 +2,7 @@
 title: Replicatie
 description: Leer over distributie en het oplossen van problemenreplicatie in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 0%
@@ -89,7 +89,7 @@ U kunt ook een workflowmodel maken waarin de `Publish Content Tree` processtap:
 
 * `includeChildren` (booleaanse waarde, standaardwaarde): `false`). De waarde `false` betekent dat alleen het pad wordt gepubliceerd; `true` betekent dat ook kinderen worden gepubliceerd.
 * `replicateAsParticipant` (booleaanse waarde, standaardwaarde): `false`). Indien geconfigureerd als `true`, gebruikt de replicatie de `userid` van de opdrachtgever die de deelnemersstap heeft uitgevoerd.
-* `enableVersion` (booleaanse waarde, standaardwaarde): `true`). Deze parameter bepaalt als een nieuwe versie op replicatie wordt gecreeerd.
+* `enableVersion` (booleaanse waarde, standaardwaarde): `false`). Deze parameter bepaalt als een nieuwe versie op replicatie wordt gecreeerd.
 * `agentId` (tekenreekswaarde; de standaardwaarde betekent dat alleen agents voor publicatie worden gebruikt). Men adviseert om over agentId uitdrukkelijk te zijn; bijvoorbeeld, plaatsend het de waarde: publiceer. De agent instellen op `preview` publiceert naar de voorbeeldservice.
 * `filters` (standaardwaarde betekent dat alle paden zijn geactiveerd). Beschikbare waarden zijn:
    * `onlyActivated` - alleen pagina&#39;s activeren die (al) zijn geactiveerd. Werkt als een vorm van reactivering.
