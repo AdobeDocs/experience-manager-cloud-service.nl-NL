@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
+source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2776'
 ht-degree: 0%
 
 ---
@@ -611,7 +611,7 @@ Klanten die Splunk-accounts hebben, kunnen via een ticket voor klantenondersteun
 
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
-Splunk door:sturen ondersteunt nog geen CDN-logboeken.
+CDN de logboeken zullen aan Splunk voor nieuwe verzoeken van het steunkaartje door:sturen worden doorgestuurd; de klanten die reeds Splunk hebben toegelaten zullen CDN- logboeken in de toekomst kunnen toevoegen.
 
 ### Splunk Forwarding inschakelen {#enabling-splunk-forwarding}
 
