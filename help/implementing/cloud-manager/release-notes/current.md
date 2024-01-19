@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Cloud Manager 2024.1.0 in Adobe Experience Man
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2024.1.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,12 @@ Op deze pagina worden de opmerkingen bij de release 2024.1.0 van Cloud Manager i
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2024.1.0 in AEM as a Cloud Service is 18 januari 2024.
+De releasedatum voor Cloud Manager versie 2024.1.0 in AEM as a Cloud Service is 18 januari 2024. De volgende release is gepland voor 16 februari 2024.
+
+## Wat is er nieuw? {#what-is-new}
+
+* Cloud Manager valideert nu niet alleen de vervaldatums voor het hoofdmenu [certificaat,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) maar ook voor intermediaire certificaten .
+* CDN [logs](/help/implementing/cloud-manager/manage-logs.md) worden nu geretourneerd in een gecomprimeerde indeling.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
@@ -61,3 +66,8 @@ Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mai
 Het dashboard gebruikt Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar, of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
 
 Geïnteresseerd in het testen van het nieuwe dashboard? Om aan de slag te gaan, stuurt u een e-mail naar `aem-lighthouse-pilot@adobe.com` van uw e-mail die aan uw Adobe ID is gekoppeld.
+
+## Opgeloste problemen {#bug-fixes}
+
+* Een fout werd verbeterd waar configuratiepijpleidingen bij de bouwstijlstap met een onduidelijk foutenmelding zouden ontbreken als de plaats van de configuratiedossiers niet behoorlijk plaatste. Het foutbericht is nu duidelijk en geeft aan dat de gebruiker moet controleren of de configuratiebestanden op de juiste locatie staan.
+* Wanneer een bouwstijlstap met status eindigt `FAILED` vanwege een `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, wordt deze nu correct beschreven als een fout vanwege samenvoegconflicten met de doelvertakking.
