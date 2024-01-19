@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
+source-wordcount: '4600'
 ht-degree: 3%
 
 ---
@@ -609,6 +609,12 @@ ht-degree: 3%
             + [Pagina omleiden of bedankbericht configureren](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Formulieren maken met herhaalbare secties](/help/forms/create-forms-repeatable-sections.md)
             + [Handeling verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-actions-core-components.md)
+            + [Een adaptief formulier verzenden naar Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [Een adaptief formulier verzenden naar Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+            + [SharePoint-opslag configureren voor een adaptief formulier](/help/forms/configure-submit-action-sharepoint.md)
+            + [Integreer AEM adaptief formulier met AEM workflow](/help/forms/configure-submit-action-workflow.md)
+            + [Verzenden naar REST Endpoint-verzendactie configureren voor Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
+            + [De handeling E-mail verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-action-send-email.md)
             + [Google reCAPTCHA gebruiken in een adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Aangepaste fouthandler toevoegen in een adaptief formulier](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Een landinstelling toevoegen voor Adaptive Forms op basis van Core Components](/help/forms/supporting-new-language-localization-core-components.md)

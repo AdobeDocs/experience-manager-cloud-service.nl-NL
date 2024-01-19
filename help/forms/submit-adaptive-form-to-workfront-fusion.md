@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1187'
 ht-degree: 0%
 
 ---
@@ -21,21 +21,23 @@ ht-degree: 0%
 
 Met Workfront Fusion kunt u bijvoorbeeld een scenario maken voor het verzamelen van gegevens met Adaptief formulier, het verwerken van de gegevens en het verzenden van de gegevens naar een gegevensopslagruimte voor archivering. Wanneer een scenario is ingesteld, voert Workfront Fusion automatisch de taken uit wanneer een gebruiker een formulier invult en de gegevensopslag naadloos bijwerkt.
 
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak om acties in te dienen voor de verwerking van formulierverzendingen. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md)  artikel.
+
 ## Voordelen van het gebruik van Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
 Sommige voordelen van Adobe Workfront Fusion met AEM Forms zijn:
 
-- Gegevens die zijn vastgelegd met Adaptive Forms naar een Workfront Fusion-scenario verzenden
-- Taken automatiseren die minder vatbaar zijn voor fouten
-- Aanpassingsvereisten die specifiek zijn voor een organisatie en die niet rechtstreeks in Workfront zijn opgenomen.
-- Afhandeling van eenvoudige logics en eenvoudige beslissingen, bijvoorbeeld als/toen instructies.
+* Gegevens die zijn vastgelegd met Adaptive Forms naar een Workfront Fusion-scenario verzenden
+* Taken automatiseren die minder vatbaar zijn voor fouten
+* Aanpassingsvereisten die specifiek zijn voor een organisatie en die niet rechtstreeks in Workfront zijn opgenomen.
+* Afhandeling van eenvoudige logics en eenvoudige beslissingen, bijvoorbeeld als/toen instructies.
 
 ## Vereisten om AEM Forms te integreren met Adobe Workfront Fusion {#prerequisites}
 
 De volgende voorwaarden zijn vereist om Workfront Fusion te verbinden met AEM Forms:
 
-- Een geldige [Workfront Fusion-licentie](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- Een AEM gebruiker met toegangsrecht [Dev Console](https://my.cloudmanager.adobe.com/) tot [winnen de de dienstgeloofsbrieven terug](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* Een geldige [Workfront Fusion-licentie](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Een AEM gebruiker met toegangsrecht [Dev Console](https://my.cloudmanager.adobe.com/) tot [winnen de de dienstgeloofsbrieven terug](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## AEM Forms integreren met Adobe Workfront Fusion
 
@@ -100,16 +102,16 @@ Een verbinding toevoegen:
    > De `https://` in de **IMS-eindpunt** tekstvak tijdens toevoegen van `imsEndpoint` URL.
 
 1. Geef de volgende waarden op in het dialoogvenster **[!UICONTROL Create a Connection]** dialoogvenster:
-   - Opgeven **Client-id** met waarde van **clientId** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
-   - Opgeven **Clientgeheim** met waarde van **clientSecret** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
-   - Opgeven **Technisch account-id**  met waarde van **id** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
-   - Opgeven **Org-id**  met waarde van **org** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
-   - **Metabereiken**  met waarde van **metafoons** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
-   - **Persoonlijke toetsen**  met waarde van **privateKey** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
+   * Opgeven **Client-id** met waarde van **clientId** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
+   * Opgeven **Clientgeheim** met waarde van **clientSecret** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
+   * Opgeven **Technisch account-id**  met waarde van **id** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
+   * Opgeven **Org-id**  met waarde van **org** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
+   * **Metabereiken**  met waarde van **metafoons** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
+   * **Persoonlijke toetsen**  met waarde van **privateKey** van de de dienstgeloofsbrieven in de console van de Ontwikkelaar.
 
    >[!NOTE]
    >
-   >- Voor **Persoonlijke sleutel**, verwijderen `\r\n` van de waarde.
+   >* Voor **Persoonlijke sleutel**, verwijderen `\r\n` van de waarde.
    >  Als de waarde van de persoonlijke sleutel bijvoorbeeld:
    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`en vervolgens na het verwijderen van de `\r\n` bij de persoonlijke sleutel ziet de sleutel er als volgt uit, waarbij beide waarden op een aparte regel worden weergegeven:
    >
@@ -117,7 +119,7 @@ Een verbinding toevoegen:
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >- U kunt ook een persoonlijke sleutel of certificaat ophalen uit het bestand door de optie **Extraheren** knop.
+   >* U kunt ook een persoonlijke sleutel of certificaat ophalen uit het bestand door de optie **Extraheren** knop.
 
 1. Klikken **Doorgaan**.
 
@@ -144,8 +146,8 @@ Wanneer u op de schakelknop klikt, verschijnt het Workfront-scenario in het dial
 ### 2. De verzendactie van een adaptief formulier voor Workfront Fusion configureren
 
 U kunt de verzendactie voor Workfont Fusion configureren voor:
-- [Nieuwe adaptieve Forms](#new-af-submit-action)
-- [Bestaande adaptieve formulieren](#existing-af-submit-action)
+* [Nieuwe adaptieve Forms](#new-af-submit-action)
+* [Bestaande adaptieve formulieren](#existing-af-submit-action)
 
 #### Verzendactie voor nieuw adaptief formulier voor Workfront Fusion configureren {#new-af-submit-action}
 
@@ -187,7 +189,11 @@ Verzendactie van bestaand adaptief formulier voor Workfront Fusion configureren:
 
 ## Aanbevolen procedures {#best-practices}
 
-- U wordt aangeraden de naam van uw webhaak zorgvuldig te kiezen, omdat er geen manier is om de naam van het scenario op te halen bij het AEM. Als u de naam van de webhaak in de toekomst wijzigt, wordt deze niet meer weergegeven in de vervolgkeuzelijst Handeling voor verzenden van AEM Forms.
-- Een scenario kan veelvoudige webhaakverbindingen hebben maar tegelijkertijd is slechts één webhaakverbinding actief. U wordt aangeraden de ontkoppelde webhaak te verwijderen, zodat deze niet wordt weergegeven in de vervolgkeuzelijst Handeling verzenden van AEM Forms.
+* U wordt aangeraden de naam van uw webhaak zorgvuldig te kiezen, omdat er geen manier is om de naam van het scenario op te halen bij het AEM. Als u de naam van de webhaak in de toekomst wijzigt, wordt deze niet meer weergegeven in de vervolgkeuzelijst Handeling voor verzenden van AEM Forms.
+* Een scenario kan veelvoudige webhaakverbindingen hebben maar tegelijkertijd is slechts één webhaakverbinding actief. U wordt aangeraden de ontkoppelde webhaak te verwijderen, zodat deze niet wordt weergegeven in de vervolgkeuzelijst Handeling verzenden van AEM Forms.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## Verwante artikelen
+
+{{af-submit-action}}

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -120,11 +120,25 @@ Edit Properties dialog for an interactive communication-->
 
 Wanneer een gebruiker een formulier verzendt dat is gebaseerd op een formuliergegevensmodel, kunt u het formulier zo configureren dat de verzonden gegevens voor een gegevensmodelobject naar de bijbehorende gegevensbronnen worden geschreven. Om dit te bereiken, [!DNL Experience Manager Forms] verstrekken [Formuliergegevensmodel Handeling verzenden](configuring-submit-actions.md), alleen beschikbaar buiten de verpakking voor Adaptive Forms op basis van een formuliergegevensmodel. Het schrijft voorgelegde gegevens voor een voorwerp van het gegevensmodel in zijn gegevensbron.
 
-Als u het formuliergegevensmodel voor het verzenden van een handeling wilt configureren, opent u de eigenschappen van de adaptieve formuliercontainer en selecteert u **[!UICONTROL Submit using Form Data Model]** in de vervolgkeuzelijst Handeling verzenden onder de verzendaccordeon. Blader vervolgens naar een gegevensmodelobject en selecteer dit in het menu **[!UICONTROL Name of the data model object to submit]** vervolgkeuzelijst. Sla de eigenschappen op.
+De handeling Verzenden van het formuliergegevensmodel configureren:
 
-Bij het verzenden van formulieren worden gegevens voor het geconfigureerde gegevensmodelobject naar de desbetreffende gegevensbron geschreven.
+1. Open de Inhoudsbrowser en selecteer de **[!UICONTROL Guide Container]** van uw adaptieve formulier.
+1. Klik op de eigenschappen van de container van de hulplijn ![Eigenschappen van hulplijnen](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik op de knop  **[!UICONTROL Submission]** tab.
+1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Submit using Form Data Model]**.
+
+   ![Actieconfiguratie](/help/forms/assets/configure-submit-action-invoke-fdm.png)
+
+1. Geef de **[!UICONTROL Data model to submit]**.
+1. Klikken **[!UICONTROL Done]**
+
+Bij het verzenden van formulieren worden gegevens voor het geconfigureerde gegevensmodelobject naar de desbetreffende gegevensbron geschreven. Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron. Zie voor informatie over het formuliergegevensmodel [[!DNL AEM Forms] Gegevensintegratie](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
+
+>[!NOTE]
+>
+> AEM as a Cloud Service biedt verschillende mogelijkheden in het vak om acties in te dienen voor de verwerking van formulierverzendingen. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md)  artikel.
 
 U kunt ook formulierbijlagen verzenden naar een gegevensbron met binaire objecteigenschappen van gegevensmodellen. Ga als volgt te werk om bijlagen naar een JDBC-gegevensbron te verzenden:
 

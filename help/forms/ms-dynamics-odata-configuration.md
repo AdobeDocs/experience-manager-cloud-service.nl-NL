@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '954'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,9 @@ ht-degree: 1%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) is beschikbaar in alle uitvoermodi. Voor meer informatie over het vormen van looppaswijzen voor een [!DNL Experience Manager] -instantie, zie [Modi uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
+
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak om acties in te dienen voor de verwerking van formulierverzendingen. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md)  artikel.
+
 
 ## Vereisten {#prerequisites}
 
@@ -70,7 +73,7 @@ Voer de volgende handelingen uit om de antwoordURL in te stellen voor geregistre
 
 >[!NOTE]
 >
->Gebruik deze procedure alleen tijdens het integreren [!DNL Experience Manager Forms] met [!DNL Microsoft Dynamics] server.
+> Gebruik deze procedure alleen tijdens het integreren [!DNL Experience Manager Forms] met [!DNL Microsoft Dynamics] server.
 
 1. Configureren [!DNL Microsoft Dynamics] exemplaar ter plaatse voor IFD zoals beschreven in [IFD configureren voor [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. Stel de volgende bevelen in werking gebruikend Vensters PowerShell om claimmontages op IFD-Toegelaten te vormen [!DNL Microsoft Dynamics]:
@@ -158,14 +161,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Nadat u de cloudservice MS Dynamics OData Cloud Ser Form Data Model (ce) hebt geconfigureerd, kunt u de service gebruiken tijdens het maken van formuliergegevensmodellen. Zie voor meer informatie [Formuliergegevensmodel maken](create-form-data-models.md).
+Nadat u de MS Dynamics OData-cloudservice hebt geconfigureerd, kunt u deze service gebruiken tijdens het maken van formuliergegevensmodellen. Zie voor meer informatie [Formuliergegevensmodel maken](create-form-data-models.md).
 
-Vervolgens kunt u een adaptief formulier maken op basis van het formuliergegevensmodel en dit gebruiken in verschillende gebruiksgevallen van het adaptieve formulier, zoals:
+Vervolgens kunt u een adaptief formuliergegevensmodel maken en dit gebruiken in verschillende gebruiksgevallen van adaptieve formulieren, zoals:
 
 * Adaptief formulier vooraf invullen door informatie op te vragen van [!DNL Microsoft Dynamics] entiteiten en diensten
 * Invoeden [!DNL Microsoft Dynamics] serverbewerkingen die zijn gedefinieerd in een formuliergegevensmodel met behulp van adaptieve formulierregels
 * Verzonden formuliergegevens schrijven naar [!DNL Microsoft Dynamics] entiteiten
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+U kunt [De handeling Verzenden van formuliergegevensmodel configureren](/help/forms/using-form-data-model.md) voor een adaptief formulier om gegevens naar Microsoft Dynamics OData te verzenden.
 
 Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van het Formulier in bedrijfswerkschema&#39;s, zie [Gegevensintegratie](data-integration.md).

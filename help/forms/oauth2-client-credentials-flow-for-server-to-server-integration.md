@@ -5,9 +5,9 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '442'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,8 @@ U kunt OAuth 2.0 cliëntgeloofsbrieven gebruiken om AEM Forms met de toepassing 
 ![Workflow bij het instellen van communicatie tussen AEM Forms en Salesforce-toepassing](/help/forms/assets/salesforce-workflow.png)
 
 AEM Forms wisselt de aanmeldingsgegevens van de client uit (de sleutel van de consument en het consumentengeheim), die zijn gedefinieerd in de toepassing Salesforce waarmee verbinding wordt gemaakt, om een toegangstoken te verkrijgen.
+
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak om acties in te dienen voor de verwerking van formulierverzendingen. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md) artikel.
 
 Er zijn veelvoudige voordelen om OAuth 2.0 cliëntgeloofsbrieven voor authentificatie over de authentificatie van de Stroom van de Code van de Vergunning te gebruiken:
 
@@ -69,6 +71,9 @@ Voer de volgende stappen uit om Adaptief formulier te verbinden met de Salesforc
 1. Klik op **[!UICONTROL Test Connection]**.
 1. Als de verbinding succesvol is, klik **[!UICONTROL Create]** knop.
 
-Nu kunt u [Maak het formuliergegevensmodel](/help/forms/create-form-data-models.md) om adaptief formulier te verzenden naar Salesforce-toepassing.
+
+Nadat u de toepassing Salesforce hebt geconfigureerd, kunt u de configuratie gebruiken tijdens het maken van modellen met formuliergegevens. Zie voor meer informatie [Formuliergegevensmodel maken](create-form-data-models.md). [De handeling Verzenden van formuliergegevensmodel configureren](/help/forms/using-form-data-model.md) voor een adaptief formulier om gegevens naar Salesforce-toepassingen te verzenden.
+
+Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van het Formulier in bedrijfswerkschema&#39;s, zie [Gegevensintegratie](data-integration.md).
 
 
