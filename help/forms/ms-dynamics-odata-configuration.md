@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '956'
 ht-degree: 1%
 
 ---
@@ -174,3 +174,7 @@ Vervolgens kunt u een adaptief formuliergegevensmodel maken en dit gebruiken in 
 U kunt [De handeling Verzenden van formuliergegevensmodel configureren](/help/forms/using-form-data-model.md) voor een adaptief formulier om gegevens naar Microsoft Dynamics OData te verzenden.
 
 Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van het Formulier in bedrijfswerkschema&#39;s, zie [Gegevensintegratie](data-integration.md).
+
+## Verwante artikelen
+
+{{af-submit-action}}

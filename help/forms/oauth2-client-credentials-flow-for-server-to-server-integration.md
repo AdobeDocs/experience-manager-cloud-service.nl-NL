@@ -5,9 +5,9 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
+source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 1%
 
 ---
@@ -75,5 +75,9 @@ Voer de volgende stappen uit om Adaptief formulier te verbinden met de Salesforc
 Nadat u de toepassing Salesforce hebt geconfigureerd, kunt u de configuratie gebruiken tijdens het maken van modellen met formuliergegevens. Zie voor meer informatie [Formuliergegevensmodel maken](create-form-data-models.md). [De handeling Verzenden van formuliergegevensmodel configureren](/help/forms/using-form-data-model.md) voor een adaptief formulier om gegevens naar Salesforce-toepassingen te verzenden.
 
 Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van het Formulier in bedrijfswerkschema&#39;s, zie [Gegevensintegratie](data-integration.md).
+
+## Verwante artikelen
+
+{{af-submit-action}}
 
 
