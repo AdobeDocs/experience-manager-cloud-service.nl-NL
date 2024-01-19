@@ -2,9 +2,9 @@
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Dit document begeleidt u door deze stappen.
 
 ## Toegang tot de universele editor aanvragen {#request-access}
 
-U moet eerst om toegang tot de Universele Redacteur verzoeken. Zie [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)aanmelden en valideren als u toegang hebt tot de Universal Editor.
+U moet eerst om toegang tot de Universele Redacteur verzoeken. Openen [&quot;https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor)aanmelden en valideren als u toegang hebt tot de Universal Editor.
 
 Als u geen toegang hebt, kunt u een aanvraag indienen via een formulier dat is gekoppeld op dezelfde pagina.
 
@@ -59,7 +59,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternatief voor toepassingen die niet reageren {#alternative}
 
-Als u geen React app implementeert en/of rendering op de server vereist, kunt u ook het volgende opnemen in de hoofdtekst van het document.
+Als u geen React app implementeert en/of rendering op de server vereist, kunt u het volgende opnemen in de hoofdtekst van het document.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -124,10 +124,10 @@ Verbindingen die in de app worden gebruikt, worden opgeslagen als `<meta>` -tags
 
 De id `urn:adobe:aue:system` vertegenwoordigt de verbinding voor de Adobe Universele Redacteur.
 
-`itemid`s gebruikt de `urn` om de id te verkorten.
+`data-aue-resource`s gebruikt de `urn` om de id te verkorten.
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` - Dit is de benoemde referentie die wordt vermeld in het dialoogvenster `<meta>` -tag. Bijv. `aemconnection`

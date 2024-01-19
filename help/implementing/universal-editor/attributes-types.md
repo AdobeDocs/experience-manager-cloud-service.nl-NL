@@ -2,7 +2,7 @@
 title: Kenmerken en itemtypen
 description: Leer over de gegevensattributen en de punttypes die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -28,13 +28,13 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 
 | Eigenschap gegevens | Beschrijving |
 |---|---|
-| `itemid` | URL aan het middel, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
-| `itemprop` | Kenmerk van de bron, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
-| `itemtype` | Type van het bewerkbare item (bijvoorbeeld tekst, afbeelding en verwijzing) |
-| `data-editor-itemfilter` | Definieert welke verwijzingen kunnen worden gebruikt |
-| `data-editor-itemlabel` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven <br>In geval van `itemmodel` is ingesteld, wordt het label opgehaald via het model |
-| `data-editor-itemmodel` | Definieert een model dat wordt gebruikt voor bewerkingen op basis van formulieren in de rail Eigenschappen |
-| `data-editor-behavior` | Hiermee definieert u bijvoorbeeld het gedrag van een instrumentatie waarbij afzonderlijke tekst of afbeelding ook een component kan simuleren om deze verplaatsbaar of verschuifbaar te maken |
+| `data-aue-resource` | URL aan het middel, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
+| `data-aue-prop` | Kenmerk van de bron, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
+| `data-aue-type` | Type van het bewerkbare item (bijvoorbeeld tekst, afbeelding en verwijzing) |
+| `data-aue-filter` | Definieert welke verwijzingen kunnen worden gebruikt |
+| `data-aue-label` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven <br>In geval van `itemmodel` is ingesteld, wordt het label opgehaald via het model |
+| `data-aue-model` | Definieert een model dat wordt gebruikt voor bewerkingen op basis van formulieren in de rail Eigenschappen |
+| `data-aue-behavior` | Hiermee definieert u bijvoorbeeld het gedrag van een instrumentatie waarbij afzonderlijke tekst of afbeelding ook een component kan simuleren om deze verplaatsbaar of verschuifbaar te maken |
 
 ## Itemtypen {#item-types}
 
@@ -47,14 +47,14 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `component` | Het bewerkbare item is een component. Er wordt geen extra functionaliteit aan toegevoegd. Het is verplicht beweegbare/verhandelbare delen van het DOM aan te geven en de spoorstaaf en de velden ervan te openen. | Vereist | nvt | nvt | Optioneel | Optioneel | nvt |
 | `reference` | Bewerkbaar is een verwijzing, bijvoorbeeld Inhoudsfragment, Ervaring Fragment of Product | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>lijst met filtercriteria voor Content Fragment, Product of Experience Fragment die worden doorgegeven aan de referentiekiezer | Optioneel | Optioneel | nvt |
 
-Afhankelijk van het gebruiksgeval `itemprop` of `itemid` al dan niet verplicht zijn. Bijvoorbeeld:
+Afhankelijk van het gebruiksgeval `data-aue-prop` of `data-aue-resource` al dan niet verplicht zijn. Bijvoorbeeld:
 
-* `itemid` is vereist als u Content Fragments via GraphQL opvraagt en u de lijst in context bewerkbaar wilt maken.
-* `itemprop` is vereist voor het geval u een component hebt die de inhoud van een Content Fragment waarnaar wordt verwezen, rendert en u de verwijzing in de component wilt bijwerken.
+* `data-aue-resource` is vereist als u Content Fragments via GraphQL opvraagt en u de lijst in context bewerkbaar wilt maken.
+* `data-aue-prop` is vereist voor het geval u een component hebt die de inhoud van een Content Fragment waarnaar wordt verwezen, rendert en u de verwijzing in de component wilt bijwerken.
 
 ## Gedrag {#behaviors}
 
-| `data-editor-behavior` | Beschrijving |
+| `data-aue-behavior` | Beschrijving |
 |---|---|
 | `component` | Wordt gebruikt om zelfstandige tekst, richtext en mediamimicomponenten toe te staan, zodat deze ook kunnen worden verplaatst en verplaatst op de pagina |
 | `container` | Gebruikt om containers te laten behandelen als hun eigen componenten zodat zij beweegbaar en verhandelbaar op de pagina zijn |

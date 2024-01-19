@@ -1,9 +1,10 @@
 ---
 title: Overzicht van de universele editor voor AEM ontwikkelaars
 description: Als u een AEM ontwikkelaar bent geïnteresseerd in hoe de Universele Redacteur werkt en hoe te om het in uw project te gebruiken, geeft dit document u een inleiding van begin tot eind door u door het van instrumenten voorzien van instrumenten te leiden het WKND project om met de Universele Redacteur te werken.
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
+source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3112'
 ht-degree: 0%
 
 ---
@@ -36,6 +37,7 @@ Om dit overzicht te volgen, hebt u het volgende beschikbaar nodig.
    * [De WKND-demosite moet zijn geïnstalleerd.](https://github.com/adobe/aem-guides-wknd)
 * [Toegang tot de universele editor](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [Een lokale Universal Editor-service](/help/implementing/universal-editor/local-dev.md) uitvoeren voor ontwikkelingsdoeleinden
+   * Zorg ervoor dat u de browser naar stuurt [accepteer het zelfondertekende certificaat voor lokale services.](/help/implementing/universal-editor/local-dev.md#editing)
 
 Afgezien van de algemene kennis van webontwikkeling, gaat dit document uit van basiskennis van AEM ontwikkeling. Als u geen ervaring hebt met AEM ontwikkeling, kunt u overwegen om [de WKND-zelfstudie voordat u verdergaat.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
@@ -164,7 +166,7 @@ De pagina wordt nu geladen met de juiste JavaScript-bibliotheek zodat de Univers
 
 De WKND-pagina wordt nu geladen in de Universal Editor en de JavaScript-bibliotheek wordt geladen om de editor te verbinden met uw app.
 
-U hebt echter al snel gemerkt dat u niet kunt communiceren met de pagina in de Universal Editor. De Universal Editor kan uw pagina niet bewerken. Als u wilt dat de Universal Editor uw inhoud kan bewerken, moet u een verbinding definiëren zodat deze weet waar de inhoud moet worden geschreven. Voor lokale ontwikkeling moet u terugschrijven naar uw lokale AEM-ontwikkelingsinstantie op `https://localhost:8443`.
+U ziet waarschijnlijk echter dat u niet kunt communiceren met de pagina in de Universal Editor. De Universal Editor kan uw pagina niet bewerken. Als u wilt dat de Universal Editor uw inhoud kan bewerken, moet u een verbinding definiëren zodat deze weet waar de inhoud moet worden geschreven. Voor lokale ontwikkeling moet u terugschrijven naar uw lokale AEM-ontwikkelingsinstantie op `https://localhost:8443`.
 
 1. Open CRXDE Lite.
 
@@ -227,10 +229,9 @@ Uw componenten moeten ook van instrumenten voorzien zijn om met de Universele Re
 1. Aan het einde van de eerste `div` Voeg bij ongeveer regel 26 de instrumentdetails voor de component toe.
 
    ```text
-   itemscope
-   itemid="urn:aem:${resource.path}"
-   itemtype="component"
-   data-editor-itemlabel="Teaser"
+   data-aue-resource="urn:aem:${resource.path}"
+   data-aue-type="component"
+   data-aue-label="Teaser"
    ```
 
 1. Klikken **Alles opslaan** in de werkbalk en laadt u de Universal Editor opnieuw.
@@ -262,9 +263,9 @@ U kunt het gummetje nu selecteren, maar nog steeds niet bewerken. Dit komt doord
 1. Voeg de volgende eigenschappen in aan het einde van het dialoogvenster `h2` tag (nabij regel 17).
 
    ```text
-   itemprop="jcr:title"
-   itemtype="text"
-   data-editor-itemlabel="Title"
+   data-aue-prop="jcr:title"
+   data-aue-type="text"
+   data-aue-label="Title"
    ```
 
 1. Klikken **Alles opslaan** in de werkbalk en laadt u de Universal Editor opnieuw.
@@ -281,15 +282,14 @@ Nu u de titel van het gummetje kunt bewerken, nemen we even de tijd om te bekijk
 
 U hebt de lasercomponent geïdentificeerd aan de Universele Redacteur door het van instrumenten te voorzien.
 
-* `itemscope` Hiermee geeft u het item aan als een item voor de universele editor.
-* `itemid` identificeert de bron in AEM die wordt bewerkt.
-* `itemtype` definieert dat de items moeten worden behandeld als een paginacomponent (in tegenstelling tot een container).
-* `data-editor-itemlabel` Hiermee geeft u een gebruiksvriendelijk label in de gebruikersinterface weer voor het geselecteerde taser.
+* `data-aue-resource` identificeert de bron in AEM die wordt bewerkt.
+* `data-aue-type` definieert dat de items moeten worden behandeld als een paginacomponent (in tegenstelling tot een container).
+* `data-aue-label` Hiermee geeft u een gebruiksvriendelijk label in de gebruikersinterface weer voor het geselecteerde taser.
 
 U hebt ook de titelcomponent binnen de teaser component van instrumenten voorzien.
 
-* `itemprop` is het JCR-kenmerk dat wordt geschreven.
-* `itemtype` Dit is hoe het kenmerk moet worden bewerkt. In dit geval, met de tekstredacteur aangezien het een titel (in tegenstelling tot zeg, de rijke tekstredacteur) is.
+* `data-aue-prop` is het JCR-kenmerk dat wordt geschreven.
+* `data-aue-type` Dit is hoe het kenmerk moet worden bewerkt. In dit geval, met de tekstredacteur aangezien het een titel (in tegenstelling tot zeg, de rijke tekstredacteur) is.
 
 ## Verificatiekoppen definiëren {#auth-header}
 
@@ -299,13 +299,13 @@ Nu kunt u de titel van het gummetje online bewerken en worden de wijzigingen in 
 
 Als u de browser echter opnieuw laadt, wordt de vorige titel opnieuw geladen. Hoewel de Universele Redacteur weet hoe te om met uw AEM instantie te verbinden, kan het redacteur aan uw AEM instantie nog niet voor authentiek verklaren om veranderingen in JCR terug te schrijven.
 
-Als u het netwerklusje van de browser ontwikkelaarshulpmiddelen toont en onderzoek naar `update`, ziet u dat er een fout van 500 optreedt wanneer u de titel probeert te bewerken.
+Als u het netwerklusje van de browser ontwikkelaarshulpmiddelen toont en onderzoek naar `update`, ziet u dat er een fout van 401 optreedt wanneer u de titel probeert te bewerken.
 
 ![Fout tijdens het bewerken van de titel](assets/dev-edit-error.png)
 
 Wanneer u de Universal Editor gebruikt om uw productie AEM inhoud te bewerken, gebruikt de Universal Editor dezelfde IMS-token die u hebt gebruikt om u aan te melden bij de editor voor verificatie om het schrijven naar de JCR te vergemakkelijken.
 
-Wanneer u zich plaatselijk ontwikkelt, kunt u niet de AEM identiteitsleverancier gebruiken, zodat moet u een manier manueel verstrekken om voor authentiek te verklaren door een authentificatiekopbal uitdrukkelijk te plaatsen.
+Wanneer u zich plaatselijk ontwikkelt, kunt u niet de leverancier van de AEM gebruiken aangezien de tokens IMS slechts aan Adobe-bezeten domeinen worden overgegaan. U moet manueel een manier verstrekken om voor authentiek te verklaren door een authentificatiekopbal uitdrukkelijk te plaatsen.
 
 1. Klik in de interface van de Universal Editor op de knop **Verificatiekoppen** in de werkbalk.
 
@@ -323,22 +323,24 @@ Als u het verkeer in de browser ontwikkelt hulpmiddelen onderzoekt en zoekt naar
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://localhost:8443"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "text",
-    "itemprop": "jcr:title"
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "text",
+    "prop": "jcr:title"
   },
   "value": "Tiny Toon Adventures"
 }
 ```
 
-* `op` Dit is de bewerking, die in dit geval een patch is van de bestaande inhoud van het bewerkte veld.
 * `connections` is de verbinding met uw lokale AEM instantie
-* `path` Dit is het exacte knooppunt en de exacte eigenschappen die worden bijgewerkt in het JCR
+* `target` Dit is het exacte knooppunt en de exacte eigenschappen die worden bijgewerkt in het JCR
 * `value` Dit is de update die u hebt uitgevoerd.
 
 U kunt zien dat de wijziging aanhoudt in het JCR.
@@ -357,7 +359,7 @@ U hebt nu een app die van instrumenten is voorzien om te kunnen worden bewerkt m
 
 Het bewerken is momenteel beperkt tot het online bewerken van de titel van de taser. Er zijn echter gevallen waarin op plaats bewerken niet voldoende is. Tekst zoals de titel van het gummetje kan worden bewerkt op de plaats waar deze zich bevindt met behulp van het toetsenbord. Nochtans moeten de meer gecompliceerde punten kunnen tonen en het uitgeven van gestructureerde gegevens los van hoe het in browser wordt teruggegeven toestaan. Dat is waar de eigenschappen van de spoorwegen voor zijn.
 
-Werk nu uw app bij om de eigenschappenrails te gebruiken voor bewerking. U kunt dit doen door terug te keren naar het headerbestand van de paginacomponent van uw app, waar u al verbindingen tot stand hebt gebracht met uw lokale AEM ontwikkelingsinstantie en uw lokale Universal Editor-service. Hier moet u de componenten definiëren die bewerkbaar zijn in de app en de bijbehorende gegevensmodellen.
+Als u uw app wilt bijwerken zodat de eigenschappencontrole voor bewerking wordt gebruikt, gaat u terug naar het koptekstbestand van de paginacomponent van uw app. Dit is waar u reeds de verbindingen aan uw lokale AEM ontwikkelingsinstantie en uw lokale Universele dienst van de Redacteur vestigde. Hier moet u de componenten definiëren die bewerkbaar zijn in de app en de bijbehorende gegevensmodellen.
 
 1. Open CRXDE Lite.
 
@@ -369,10 +371,10 @@ Werk nu uw app bij om de eigenschappenrails te gebruiken voor bewerking. U kunt 
 
    ![Het bestand customheaderlibs.html bewerken](assets/dev-instrument-properties-rail.png)
 
-1. Voeg het vereiste script toe om de velden toe te wijzen aan het einde van het bestand.
+1. Voeg aan het einde van het bestand het script toe dat nodig is om de componenten te definiëren.
 
    ```html
-   <script type="application/vnd.adobe.aem.editor.component-definition+json">
+   <script type="application/vnd.adobe.aue.component+json">
    {
      "groups": [
        {
@@ -388,29 +390,69 @@ Werk nu uw app bij om de eigenschappenrails te gebruiken voor bewerking. U kunt 
                    "resourceType": "wknd/components/teaser"
                  }
                }
-             },
-             "model": {
-               "id": "teaser",
-               "fields": [
-                 {
-                   "component": "text-input",
-                   "name": "jcr:title",
-                   "label": "Title",
-                   "valueType": "string"
-                 },
-                 {
-                   "component": "text-area",
-                   "name": "jcr:description",
-                   "label": "Description",
-                   "valueType": "string"
+             }
+           },
+           {
+             "title": "Title",
+             "id": "title",
+             "plugins": {
+               "aem": {
+                 "page": {
+                   "resourceType": "wknd/components/title"
                  }
-               ]
+               }
              }
            }
          ]
        }
      ]
    }
+   </script>
+   ```
+
+1. Hieronder voegt u aan het einde van het bestand het script toe dat nodig is om het model te definiëren.
+
+   ```html
+   <script type="application/vnd.adobe.aue.model+json">
+   [
+     {
+       "id": "teaser",
+       "fields": [
+         {
+           "component": "text-input",
+           "name": "jcr:title",
+           "label": "Title",
+           "valueType": "string"
+         },
+         {
+           "component": "text-area",
+           "name": "jcr:description",
+           "label": "Description",
+           "valueType": "string"
+         }
+       ]
+     },
+     {
+       "id": "title",
+       "fields": [
+         {
+           "component": "select",
+           "name": "type",
+           "value": "h1",
+           "label": "Type",
+           "valueType": "string",
+           "options": [
+             { "name": "h1", "value": "h1" },
+             { "name": "h2", "value": "h2" },
+             { "name": "h3", "value": "h3" },
+             { "name": "h4", "value": "h4" },
+             { "name": "h5", "value": "h5" },
+             { "name": "h6", "value": "h6" }
+           ]
+         }
+       ]
+     }
+   ]
    </script>
    ```
 
@@ -457,15 +499,17 @@ U moet ook definiëren op componentniveau, welk model de component moet gebruike
 
    ![Het bestand teaser.html bewerken](assets/dev-edit-teaser.png)
 
-1. Aan het einde van de eerste `div` op ongeveer lijn 32, na de `itemscope` Voeg de instrumentdetails toe voor het model dat de teaser-component gebruikt.
+1. Aan het einde van de eerste `div` op ongeveer lijn 32, na de eigenschappen u eerder toevoegde, voeg de instrumentatiedetails voor het model toe de teaser component zal gebruiken.
 
    ```text
-   data-editor-itemmodel="teaser"
+   data-aue-model="teaser"
    ```
 
 1. Klikken **Alles opslaan** in de werkbalk en laadt u de Universal Editor opnieuw.
 
-1. Klik op de titel van het gummetje om deze nogmaals te bewerken.
+Nu bent u klaar om de eigenschappen spoorstaaf te testen die voor uw component van instrumenten worden voorzien.
+
+1. Klik in de Universal Editor op de titel van het gummetje om deze nogmaals te bewerken.
 
 1. Klik op de eigenschappen-rail om het tabblad Eigenschappen weer te geven en de velden te zien waarop u net van instrumenten hebt voorzien.
 
@@ -489,7 +533,7 @@ U kunt bijvoorbeeld een veld toevoegen om de opmaak van de component aan te pass
 
    ![Het bestand customheaderlibs.html bewerken](assets/dev-instrument-styles.png)
 
-1. Voeg een extra item toe aan de `fields` array voor het stijlveld. Vergeet niet na het laatste veld een komma toe te voegen voordat u de nieuwe invoegt.
+1. In het modeldefinitiescript, voeg een extra punt aan toe `fields` array voor het stijlveld. Vergeet niet na het laatste veld een komma toe te voegen voordat u de nieuwe invoegt.
 
    ```json
    {
