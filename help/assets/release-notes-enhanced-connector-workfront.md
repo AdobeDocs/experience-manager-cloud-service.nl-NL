@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
+source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1516'
 ht-degree: 0%
 
 ---
@@ -15,14 +15,27 @@ In de volgende sectie worden de algemene opmerkingen bij de release beschreven v
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor de laatste versie 1.9.15 van [!DNL Workfront for Experience Manager enhanced connector] is 17 november 2023.
+De releasedatum voor de laatste versie 1.9.16 van [!DNL Workfront for Experience Manager enhanced connector] is 19 januari 2024.
 
 ## Geen hooglichten {#release-highlights}
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende opgeloste problemen:
 
-* Wanneer u de lijst met AEM mappen weergeeft, duurt het langer dan een minuut om het dialoogvenster te laden.
-* Geautoriseerd [!DNL Workfront] gebruikers ontvangen consequent logboeken met fouten in de verificatie.
+* De [!DNL Workfront] configuratie in [!DNL CRX DE] slaat momenteel niet de `project ID`, wat fouten veroorzaakt bij het toepassen van alleen-lezen toestemming. Meer informatie over hoe [machtigingen configureren](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+
+* Geen openbare documentatie over hoe te om douanebezit aan uit de definitie van de kaderindex toe te voegen. Meer informatie over [aangepaste eigenschap toevoegen](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+
+* Het verwijderen van verbindingsconfiguraties op de verbeterde connector heeft een aanzienlijke invloed op gebeurtenisabonnementen en andere opgeslagen configuraties, waardoor deze naar een oude URL verwijzen.
+
+* Als u het pakket Formulieren toevoegen-aan installeert, wordt het pakket **[!UICONTROL Toggle Router]**, hetgeen leidt tot het mislukken van de [!DNL WFEC AMS environment Toggle] gebruiken.
+
+* Als u gebeurtenisabonnementen inschakelt op EWC-setup, resulteert dit in herhaalde API-aanroepfouten met `HTTP 400` fout bij instellen [!DNL Workfront] verbeterde connector voor de eerste keer.
+
+* Als u opmerkingen verwijdert over gekoppelde mapelementen in Workfront, wordt het gekoppelde mappad niet AEM.
+
+* Onvoldoende ondersteuning voor grote bestandsmiddelen in AEM resulteert in een probleem met 4-byte bestandsgrootte.
+
+* Geen tijdsverwerking voor aanvragen voor kritieke stromen in gekoppelde map, documentupdate en notitie-update.
 
 >[!NOTE]
 >
@@ -31,7 +44,7 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.15](/help/assets/workfront-connector-install.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.16](/help/assets/workfront-connector-install.md) van de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Bekende problemen {#known-issues}
 
@@ -40,6 +53,11 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 * Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** de drop-down lijst staat u niet toe om de doelbestemming binnen Experience Manager te selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** vervolgkeuzelijst beschikbaar in de nieuwe Workfront-ervaring.
 
 ## Eerdere versies {#previous-releases}
+
+### Release november 2023 {#november-2023-release}
+
+* Wanneer u de lijst met AEM mappen weergeeft, duurt het langer dan een minuut om het dialoogvenster te laden.
+* Geautoriseerd [!DNL Workfront] gebruikers ontvangen consequent logboeken met fouten in de verificatie.
 
 ### Release oktober 2023 {#october-2023-release}
 
