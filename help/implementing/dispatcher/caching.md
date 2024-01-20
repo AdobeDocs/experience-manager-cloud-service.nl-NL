@@ -3,9 +3,9 @@ title: Caching in AEM as a Cloud Service
 description: Meer informatie over de basisbeginselen van Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2894'
 ht-degree: 0%
 
 ---
@@ -223,6 +223,10 @@ Nu kunnen afbeeldingen in blob-opslag die als private zijn gemarkeerd, niet in d
         Header set Age 0
      </LocationMatch>
      ```
+
+### Hit-verhouding CDN-cache analyseren {#analyze-chr}
+
+Zie de [analysezelfstudie cacheverhouding](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) voor informatie over het downloaden van CDN-logboeken en het analyseren van de bitratio van de cache van uw site, via een dashboard.
 
 ### HEAD-aanvraaggedrag {#request-behavior}
 
