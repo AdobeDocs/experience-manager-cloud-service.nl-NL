@@ -1,6 +1,6 @@
 ---
-title: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
-description: Aanvullende opmerkingen voor Adobe Experience Manager (AEM) as a Cloud Service.
+title: Aanvullende informatie voor Adobe Experience Manager (AEM) as a Cloud Service.
+description: Aanvullende informatie voor Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
