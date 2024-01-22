@@ -2,12 +2,13 @@
 title: OAuth2 Steun voor de Dienst van de Post
 description: Oauth2-ondersteuning voor de Mail Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
+
 
 # OAuth2 Steun voor de Dienst van de Post {#oauth2-support-for-the-mail-service}
 
@@ -165,7 +166,7 @@ krachtens `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. D
    ```
 
 1. Voor de vooruitzichten `smtp.host` configuratiewaarde is `smtp.office365.com`
-1. Geef tijdens runtime de `refreshToken values` en `clientSecret` geheimen met de API voor variabelen van Cloud Manager zoals beschreven [hier](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api). De waarden voor de variabelen `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  en `SECRET_SMTP_OAUTH_CLIENT_SECRET` moeten worden gedefinieerd.
+1. Geef tijdens runtime de `refreshToken values` en `clientSecret` geheimen met de API voor variabelen van Cloud Manager zoals beschreven [hier](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) of door [Cloud Manager om variabelen toe te voegen.](/help/implementing/cloud-manager/environment-variables.md) De waarden voor de variabelen `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  en `SECRET_SMTP_OAUTH_CLIENT_SECRET` moeten worden gedefinieerd.
 
 ### Problemen oplossen {#troubleshooting}
 

@@ -3,24 +3,25 @@ title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: OSGi-configuratie met geheime waarden en milieu-specifieke waarden
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
 workflow-type: tm+mt
-source-wordcount: '3265'
+source-wordcount: '3269'
 ht-degree: 0%
 
 ---
 
-# OSGi configureren voor Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
->[!NOTE]
->
->AEM heeft de mogelijkheid geïntroduceerd om de gebruikersinterface van Cloud Manager te gebruiken voor het configureren van standaardomgevingsvariabelen met de release 2021.12.0. Raadpleeg de documentatie voor meer informatie [hier](/help/implementing/cloud-manager/environment-variables.md).
+# OSGi configureren voor Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en zijn configuraties te controleren.
 
 OSGi verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare, en samenwerkingscomponenten worden geconstrueerd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld. Dit staat gemakkelijk beheer van bundels OSGi toe aangezien zij kunnen worden tegengehouden, geïnstalleerd, individueel begonnen. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi is bevat in één van de diverse bundels. Zie de klasse [OSGi-specificatie](https://help.eclipse.org/latest/index.jsp).
 
 U kunt de configuratiemontages voor componenten OSGi door configuratiedossiers beheren die deel van een AEM codeproject uitmaken.
+
+>[!TIP]
+>
+>U kunt Cloud Manager gebruiken om omgevingsvariabelen te configureren. Raadpleeg de documentatie voor meer informatie [hier.](/help/implementing/cloud-manager/environment-variables.md)
 
 ## OSGi-configuratiebestanden {#osgi-configuration-files}
 
@@ -478,6 +479,10 @@ Zie [deze pagina](https://developer.adobe.com/experience-cloud/cloud-manager/doc
 >
 >Zorg ervoor dat de gebruikte API voor Cloud Manager de rol &quot;Deployment Manager - Cloud Service&quot; heeft toegewezen. Andere rollen kunnen niet alle onderstaande opdrachten uitvoeren.
 
+>[!TIP]
+>
+>U kunt Cloud Manager ook gebruiken om omgevingsvariabelen te configureren. Raadpleeg de documentatie voor meer informatie [hier.](/help/implementing/cloud-manager/environment-variables.md)
+
 ### Waarden instellen via API {#setting-values-via-api}
 
 Het roepen van API stelt de nieuwe variabelen en de waarden aan een milieu van de Wolk op, gelijkend op een typische pijpleiding van de de plaatsing van de klantencode. De auteur- en publicatieservices worden opnieuw gestart en er wordt een verwijzing naar de nieuwe waarden gemaakt. Dit duurt meestal enkele minuten.
@@ -486,8 +491,8 @@ Het roepen van API stelt de nieuwe variabelen en de waarden aan een milieu van d
 PATCH /program/{programId}/environment/{environmentId}/variables
 ```
 
-```
-]
+```json
+[
         {
                 "name" : "MY_VAR1",
                 "value" : "plaintext value",

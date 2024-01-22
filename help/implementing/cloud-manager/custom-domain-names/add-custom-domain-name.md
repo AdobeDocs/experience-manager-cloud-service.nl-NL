@@ -2,12 +2,13 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Leer hoe u een aangepaste domeinnaam kunt toevoegen met Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
+
 
 # Een aangepaste domeinnaam toevoegen {#adding-cdn}
 
@@ -60,17 +61,21 @@ Voor CDN-implementatie is een geldig SSL-certificaat en een geslaagde TXT-verifi
 
 Zie [Status aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie over de verschillende statussen en over de manier waarop mogelijke problemen kunnen worden aangepakt.
 
+>[!TIP]
+>
+>Lees het volgende artikel over de noodzaak om [Voeg daarna een NAAM of een Verslag toe](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) om dubbel inspanning te vermijden wanneer het toevoegen van DNS-verslagen aan uw douane-domein. De ingang TXT en CNAME of een Verslag kunnen gelijktijdig op de regerende DNS Server worden geplaatst.
+
+>[!TIP]
+>
+>Zie [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) voor meer informatie over TXT-records.
+
 >[!NOTE]
 >
 >DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.
 >
 >Cloud Manager controleert het eigendom en werkt de status bij die in de tabel met domeininstellingen kan worden weergegeven. Zie [Status aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie .
 
->[!TIP]
->
->Zie [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) voor meer informatie over TXT-records.
-
-## Een aangepaste domeinnaam uit de pagina Omgevingen toevoegen {#adding-cdn-environments}
+## Een aangepaste domeinnaam toevoegen vanaf de pagina Omgevingen {#adding-cdn-environments}
 
 Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Omgevingen** pagina.
 
