@@ -2,9 +2,9 @@
 title: SLA-rapportage
 description: Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken ten opzichte van de overeenkomst voor serviceniveau (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -51,3 +51,14 @@ De **Gebeurtenisanalyse** in het gedeelte onder de grafiek wordt de reeks incide
 Elk van de incidenten heeft een tijdbereik, een oorzaak en een reeks opmerkingen.
 
 ![Voorbeeld van gebeurtenisanalyse](assets/sla-reporting-c.png)
+
+## Interval vernieuwen {#refresh}
+
+SLA-rapportering geeft u inzicht in de prestaties van uw AEM productieomgeving en is up-to-date, maar niet onmiddellijk. SLA- rapportgeneratie gebeurt maandelijks en het wordt geproduceerd voor nieuwe programma&#39;s die als Productie vorige maand duidelijk zijn. Het is niet onmiddellijk. Wegens deze vertraging, te houden gelieve het volgende in mening aangezien u uw SLA rapport controleert:
+
+* De gerapporteerde SLA zal de SLA zijn die aan het begin van de maand bestond, zelfs als de SLA in die maand veranderde.
+* Als er aan het begin van de maand geen SLA was omdat het programma toen niet bestond, is de SLA van toepassing die bestond op de datum waarop het programma werd opgesteld.
+
+## Omgevingen voorvertonen {#preview}
+
+De voorvertoningsomgeving is bedoeld als een hulpmiddel voor auteurs van inhoud om de uiteindelijke ervaring van de inhoud te controleren voordat deze wordt gepubliceerd. Daarom zijn voorvertoningsomgevingen niet ontworpen met hoge beschikbaarheid en beschikken ze niet over een bijbehorende SLA.

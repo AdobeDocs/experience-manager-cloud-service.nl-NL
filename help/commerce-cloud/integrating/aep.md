@@ -11,18 +11,19 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
+source-git-commit: f7967c5374dd34315b2577cc9fd7606db3ef4cc7
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 0%
 
 ---
 
+
 # AEM-CIF kerncomponenten en Adobe Experience Platform-integratie {#aem-cif-aep-integration}
 
 De [Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components) kerncomponenten bieden naadloze integratie met [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) om storefront gebeurtenissen en hun gegevens van cliënt-zijinteractie zoals door:sturen __toevoegen aan winkelwagentje__.
 
-De [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) project bevat een JavaScript-bibliotheek met de naam [Adobe Experience Platform-connector voor Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) om gebeurtenisgegevens te verzamelen van uw Opslag van de Handel. Deze gebeurtenisgegevens worden naar het Experience Platform verzonden waar ze worden gebruikt in andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, om een profiel van 360 graden te maken dat een klantentraject bestrijkt. Door de gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
+De [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components) project bevat een JavaScript-bibliotheek met de naam [Adobe Experience Platform-connector voor Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) om gebeurtenisgegevens te verzamelen van uw Opslag van de Handel. Deze gebeurtenisgegevens worden naar het Experience Platform verzonden waar ze worden gebruikt in andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, om een profiel van 360 graden te maken dat een klantentraject bestrijkt. Door de gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
 
 Meer informatie over de [Gegevensverzameling Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) reeks technologieën waarmee u gegevens van de klantenervaring van cliënt-zijbronnen kunt verzamelen.
 
@@ -216,7 +217,7 @@ Om React-based Peregrine en CIF kerncomponenten te initialiseren, creeer de vere
        },
        eventsCollector: {
            eventForwarding: {
-               commerce: true,
+               acds: true,
                aep: false,
            }
        }
@@ -225,7 +226,7 @@ Om React-based Peregrine en CIF kerncomponenten te initialiseren, creeer de vere
 
    >[!IMPORTANT]
    >
-   >Terwijl u reeds vertrouwd met zou kunnen zijn [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) bestand van __AEM - CIF Venia-project__ Er zijn enkele wijzigingen die u in dit bestand moet aanbrengen. Eerst alle __TODO__ opmerkingen. Dan, binnen `eventsCollector` eigenschap, zoek de `eventsCollector > aed` object en werk de `orgId` en `datastreamId` eigenschappen voor de juiste waarden. [Meer informatie](./aep.md#add-aep-values-to-aem).
+   >Terwijl u reeds vertrouwd met zou kunnen zijn [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) bestand van __AEM - CIF Venia-project__ Er zijn enkele wijzigingen die u in dit bestand moet aanbrengen. Eerst alle __TODO__ opmerkingen. Dan, binnen `eventsCollector` eigenschap, zoek de `eventsCollector > aep` object en werk de `orgId` en `datastreamId` eigenschappen voor de juiste waarden. [Meer informatie](./aep.md#add-aep-values-to-aem).
 
 1. Een `App.js` bestand met de volgende inhoud. Dit bestand lijkt op een typisch React-startpuntbestand en bevat React en aangepaste haken en React-contextgebruik om de integratie van het Experience Platform te vergemakkelijken.
 
