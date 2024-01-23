@@ -2,9 +2,9 @@
 title: Back-up en herstel in AEM as a Cloud Service
 description: Meer informatie over Back-up en Herstellen in AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: b77ee0697e8f6f4aeaa6651336588f1c5321abd1
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ Als de plaatsing van een klant, die de opgestelde toepassingscode betekent of ge
 
 >[!CAUTION]
 >
->Deze functie moet alleen worden gebruikt bij ernstige problemen met code of inhoud. De recente gegevens tussen het tijdstip van de herstelde back-up en het moment waarop deze wordt gemaakt, gaan verloren. Het opvoeren wordt ook hersteld aan de oude versie.
+>Deze functie moet alleen worden gebruikt bij ernstige problemen met code of inhoud. De recente gegevens tussen het tijdstip van de herstelde back-up en het moment waarop deze wordt gemaakt, gaan verloren. Het opvoeren wordt ook hersteld aan de oude versie. Als recente gegevens worden bewaard, moet deze worden geëxporteerd via een inhoudspakket voordat de gegevens worden teruggezet en opnieuw worden geïnstalleerd in de herstelde opslagplaats.
 
-## Het gebruik {#how-to-use}
+## Hoe wordt het gebruikt {#how-to-use}
 
 Klanten dienen een ondersteuningsticket in te dienen waarin het probleem wordt beschreven dat zich voordoet. Het ondersteuningsticket leidt gewoonlijk tot een onderzoek door ondersteuning van de Adobe, die dan kan bepalen of een terugzetbewerking nodig is.
 
