@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '1940'
 ht-degree: 3%
 
 ---
@@ -60,18 +60,53 @@ Om deze redenen [!DNL Assets] biedt u de juiste middelen voor het maken, beheren
 
 ## Typen metagegevens {#types-of-metadata}
 
-De twee basistypen metagegevens zijn technische metagegevens en beschrijvende metagegevens.
+Metagegevens worden geclassificeerd als technische, informatieve en administratieve metagegevens.
 
-Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. [!DNL Experience Manager Assets] en andere software bepalen automatisch de technische metagegevens en de metagegevens kunnen veranderen wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Enkele technische metagegevens zijn:
+### Technische metagegevens
 
-* Grootte van een bestand.
-* Dimensionen (hoogte en breedte) van een afbeelding.
-* Bitsnelheid van een audio- of videobestand.
-* Resolutie (detailniveau) van een afbeelding.
+De technische metagegevens zijn toegespitst op de technische aspecten van digitale elementen en verschaffen cruciale informatie met betrekking tot:
 
-De beschrijvende meta-gegevens zijn meta-gegevens betrokken bij het toepassingsdomein, bijvoorbeeld, de zaken die een activa uit komt. Metagegevens met een beschrijving kunnen niet automatisch worden bepaald. Deze wordt handmatig of halfautomatisch gemaakt. Een camera met GPS-functionaliteit kan bijvoorbeeld automatisch de breedte en lengte bijhouden en geotaggen aan de afbeelding toevoegen.
+* Bestandsgrootte
+* Indeling
+* Resolutie
+* Dimensionen
+* Kleurmodus
 
-De kosten voor het handmatig maken van beschrijvende metagegevens zijn hoog. Er worden dus standaarden ingesteld om de uitwisseling van metagegevens tussen softwaresystemen en organisaties te vergemakkelijken. [!DNL Experience Manager Assets] ondersteunt alle relevante normen voor metagegevensbeheer.
+Dit type metagegevens helpt gebruikers om digitale elementen te begrijpen en efficiënt te gebruiken.
+
+### Informatieve metagegevens
+
+Informatiemetagegevens bieden beschrijvende informatie om het begrip van de inhoud te verbeteren, waardoor de inhoud gemakkelijker kan worden opgespoord en doorzocht. Het bevat trefwoorden, bijschriften en beschrijvingen. <br>Wanneer u bijvoorbeeld een video beheert in Experience Manager Assets, kunnen we de volgende metagegevens over informatie opnemen:
+
+* **Trefwoorden**: marketing, productintroductie, promotie
+* **Bijschrift**: Maak kennis met ons nieuwste product met spannende functies
+* **Beschrijving**: Een gedetailleerd overzicht van de video-inhoud.
+
+### Administratieve metagegevens
+
+Administratieve metagegevens hebben betrekking op de beheeraspecten van digitale elementen. Het zorgt voor toegangsbeheer, naleving en beheer van de algemene levenscyclus van middelen binnen het systeem voor beheer van digitale middelen. Het bevat informatie over:
+
+* Eigendom van activa
+* Gebruiksrechten
+* Machtigingen
+* Overige administratieve gegevens
+
+Dit type metagegevens zorgt voor een effectief beheer van bedrijfsmiddelen, toegangsbeheer en compatibiliteit.
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+
+* Size of a file.
+* Dimensions (height and width) of an image.
+* Bit rate of an audio or video file.
+* Resolution (level of detail) of an image.
+
+Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
+
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## Metagegevens en laatste wijziging {#last-modification}
 
@@ -150,7 +185,7 @@ Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen te
    >* Selecteer boven aan de lijst met elementen het selectievakje bij **[!UICONTROL Title]** schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
 1. Selecteer een ander metagegevensschema voor de elementen door **[!UICONTROL Settings]** op de werkbalk en selecteer het gewenste schema. Sla de wijzigingen op.
-1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Selecteer **[!UICONTROL Submit]**.
+1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Selecteren **[!UICONTROL Submit]**.
 
    >[!CAUTION]
    >
@@ -250,14 +285,14 @@ Door workflows te maken die op metagegevens zijn gebaseerd, kunt u bepaalde proc
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
 
