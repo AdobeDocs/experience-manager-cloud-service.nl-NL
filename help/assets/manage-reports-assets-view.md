@@ -2,25 +2,34 @@
 title: Rapporten beheren in de middelenweergave
 description: Open de gegevens in de sectie Rapporten van de mening van Activa om product en eigenschapgebruik te beoordelen en inzichten van zeer belangrijke succesmetriek af te leiden.
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '779'
 ht-degree: 1%
 
 ---
 
 # Rapporten beheren {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="Rapporten"
->abstract="Middelenrapportage geeft beheerders inzicht in de activiteiten van de Adobe Experience Manager Assets-weergaveomgeving. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken. Alle gebruikers die aan het het productprofiel van Beheerders worden toegewezen kunnen tot het dashboard van Inzichten toegang hebben of user-defined rapporten creëren."
-
-Middelenrapportage geeft beheerders inzicht in de activiteiten van de Adobe Experience Manager Assets-weergaveomgeving. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken.
+Middelenrapportage geeft beheerders inzicht in de activiteiten van de Adobe Experience Manager Assets-weergaveomgeving. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken. Alle gebruikers kunnen tot het dashboard van Inzichten toegang hebben en degenen die aan het het productprofiel van Beheerders worden toegewezen kunnen user-defined rapporten tot stand brengen.
 
 ## Toegangsrapporten {#access-reports}
 
 Alle gebruikers die zijn toegewezen aan het productprofiel voor middelenweergavebeheerders hebben toegang tot het dashboard Inzichten of kunnen door de gebruiker gedefinieerde rapporten maken in de weergave Elementen.
+
+Ga naar om rapporten te openen **[!UICONTROL Reports]** krachtens **[!UICONTROL Settings]**.
+
+![Rapporten](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
 
 ## Inzichten weergeven {#view-live-statistics}
 
@@ -32,9 +41,9 @@ Klikken **[!UICONTROL Insights]** U kunt de volgende automatisch gegenereerde gr
 
 ![Inzichten](assets/insights.png)
 
-* **Downloads**: Het aantal elementen dat in de afgelopen 30 dagen of 12 maanden is gedownload van de weergaveomgeving Elementen, uitgedrukt met behulp van een lijngrafiek.
+* **Downloads**: Het aantal elementen dat in de afgelopen 30 dagen of 12 maanden is gedownload van de weergaveomgeving Elementen dat met een lijngrafiek wordt weergegeven.
 
-* **Uploads**: Het aantal elementen dat in de weergaveomgeving van Elementen is geüpload in de laatste 30 of 12 maanden die met behulp van een lijngrafiek worden weergegeven.
+* **Uploads**: Het aantal elementen dat in de weergaveomgeving van Elementen is geüpload in de laatste 30 dagen of twaalf maanden die met een lijngrafiek worden weergegeven.
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -46,11 +55,10 @@ Klikken **[!UICONTROL Insights]** U kunt de volgende automatisch gegenereerde gr
 
 * **Meest gebruikte zoekopdrachten**: Bekijk de belangrijkste gezochte termen samen met het aantal keren dat deze termen in de weergaveomgeving van de Middelen zijn doorzocht in de laatste 30 dagen of 12 maanden, weergegeven in een tabelindeling.
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
 
 ## Een downloadrapport maken {#create-download-report}
 

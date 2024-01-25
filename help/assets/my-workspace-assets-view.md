@@ -2,9 +2,9 @@
 title: Mijn werkruimte voor de weergave Middelen
 description: Mijn werkruimte is een pagina die aanpasbare visuele modules voor gemakkelijke toegang tot zeer belangrijke gebieden van het gebruikersinterface van Activa en informatie verstrekt die voor de gebruiker het meest relevant is.
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
+source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Een element, map of verzameling vastzetten:
 
 1. Selecteer het item en klik op **[!UICONTROL Pin to Quick Access]**.
 
-1. Selecteer deze optie als u het item alleen voor u, voor de hele organisatie of voor geselecteerde groepen wilt vastzetten. Als u **[!UICONTROL For groups]**, definieert u de groepnamen in het dialoogvenster **[!UICONTROL Pin for groups]** veld.
+1. Selecteer deze optie als u het item alleen voor u, voor de hele organisatie of voor geselecteerde groepen wilt vastzetten. Als u **[!UICONTROL For groups]**, kiest u een bestaande groepsnaam in het dialoogvenster **[!UICONTROL Pin for groups]** veld.
 
    ![Items vastzetten voor groepen](assets/pin-items-for-groups.png)
 1. Klik op **[!UICONTROL Pin]**.
@@ -62,7 +62,7 @@ U kunt ook de belangrijkste gezochte termen weergeven, samen met het aantal kere
 
 **Taken**
 
-Toont de lijst van taken momenteel aan u in worden toegewezen **[!UICONTROL My Tasks]** door u gemaakt in het dialoogvenster **[!UICONTROL Assigned tasks]** en de taken die u al in het dialoogvenster **[!UICONTROL Completed]** tab. U kunt een taak selecteren en op **[!UICONTROL Complete Task]** om een taak goed te keuren of af te wijzen. U kunt ook een taak selecteren en op **[!UICONTROL Open Task Details]** om de taak weer te geven en deze goed te keuren, af te wijzen, te bewerken of te verwijderen.
+Toont de lijst van taken momenteel aan u in worden toegewezen **[!UICONTROL My Tasks]** door u gemaakt in het dialoogvenster **[!UICONTROL Assigned tasks]** en de taken die u al in het dialoogvenster **[!UICONTROL Completed tasks]** tab. U kunt een taak selecteren en op **[!UICONTROL Complete ask]** om een taak goed te keuren of af te wijzen. U kunt ook een taak selecteren en op **[!UICONTROL Open Task Details]** om de taak weer te geven en deze goed te keuren, af te wijzen, te bewerken of te verwijderen.
 
 ![Taken in de werkruimte](assets/tasks-workspace.png)
 

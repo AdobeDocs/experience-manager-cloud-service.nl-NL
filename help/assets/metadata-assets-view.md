@@ -4,9 +4,9 @@ description: Leer hoe u metagegevens beheert in de weergave Middelen. Een beter 
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Om deze redenen beschikt u over de juiste middelen om metagegevens voor uw digit
 
 Als u de metagegevens van een element wilt weergeven, bladert u naar het element of doorzoekt u het element, selecteert u het element en klikt u op **[!UICONTROL Details]** in de werkbalk.
 
-![Metagegevens van een element weergeven](assets/metadata-view1.png)
+![Metagegevens van een element weergeven](assets/metadata-view.png)
 
 *Afbeelding: Als u een element en de bijbehorende metagegevens wilt weergeven, klikt u op **[!UICONTROL Details]**op de werkbalk of dubbelklikt u op het element.*
 
@@ -71,14 +71,15 @@ Tags kunnen ook in een hiërarchie worden genest ter ondersteuning van relaties 
 De middelenweergave biedt standaard vele standaardmetagegevensvelden. Organisaties hebben extra behoeften aan metagegevens en hebben meer metagegevensvelden nodig om bedrijfsspecifieke metagegevens toe te voegen. Met metagegevensformulieren kunnen bedrijven aangepaste metagegevensvelden toevoegen aan het element [!UICONTROL Details] pagina. De bedrijfsspecifieke metagegevens verbeteren het beheer en de ontdekking van de bedrijfsmiddelen. U kunt geheel nieuwe formulieren maken of een bestaand formulier opnieuw gebruiken.
 
 U kunt metagegevensformulieren configureren voor verschillende typen elementen (verschillende MIME-typen). Gebruik dezelfde formuliernaam als het MIME-type van het bestand. In de middelenweergave wordt het MIME-type voor geüploade elementen automatisch afgestemd op de naam van het formulier en worden de metagegevens voor de geüploade elementen bijgewerkt op basis van de formuliervelden.
-
-Als een metagegevensformulier bijvoorbeeld op naam staat `PDF` of `pdf` bestaat, bevatten de geüploade PDF-documenten metagegevensvelden zoals gedefinieerd in het formulier.
-
+<!--
+For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
+-->
 In de middelenweergave wordt de volgende reeks gebruikt om te zoeken naar bestaande formuliernamen voor metagegevens om de metagegevensvelden toe te passen op de geüploade elementen van een bepaald type:
 
 MIME-subtype > MIME-type > `default` form > Out-of-the-box form
 
 Als een metagegevensformulier bijvoorbeeld op naam staat `PDF` of `pdf` bestaat, bevat het geüploade PDF-document metagegevensvelden zoals gedefinieerd in het formulier. Als een metagegevensformulier met de naam `PDF` of `pdf` bestaat niet. De middelenweergave komt overeen als er een metagegevensformulier met de naam bestaat `application`. Als er een metagegevensformulier met de naam `application`De geüploade PDF-documenten bevatten metagegevensvelden zoals gedefinieerd in het formulier. Als in de weergave Middelen nog steeds geen overeenkomend metagegevensformulier wordt gevonden, wordt gezocht naar de `default` metagegevensformulier waarmee u in het formulier gedefinieerde metagegevensvelden kunt toepassen op de geüploade PDF-documenten. Als geen van deze stappen werkt, worden in de weergave Middelen metagegevensvelden toegepast die in het formulier buiten het vak zijn gedefinieerd, op alle geüploade PDF-documenten.
+Maar als u een metagegevensformulier aan een map wilt toewijzen [zie](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -111,9 +112,9 @@ Bekijk deze video om de reeks stappen weer te geven:
 
 Nadat een formulier is gemaakt, wordt het automatisch toegepast wanneer gebruikers een element van het overeenkomende MIME-type uploaden.
 
-Als u een bestaand formulier opnieuw wilt gebruiken om een formulier te maken, selecteert u een metagegevensformulier. Klik op **[!UICONTROL Copy]** Geef een naam op in de werkbalk en klik op **[!UICONTROL Confirm]**. U kunt een metagegevensformulier bewerken om het te wijzigen. Wanneer u een formulier wijzigt, wordt dit gebruikt voor elementen die na de wijziging worden geüpload. De bestaande activa blijven ongewijzigd.
+Als u een bestaand formulier opnieuw wilt gebruiken om een nieuw formulier te maken, selecteert u een metagegevensformulier. Klik op **[!UICONTROL Copy]** Geef een naam op in de werkbalk en klik op **[!UICONTROL Confirm]**. U kunt een metagegevensformulier bewerken om het te wijzigen. Wanneer u een formulier wijzigt, wordt dit gebruikt voor elementen die na de wijziging worden geüpload. De bestaande activa blijven ongewijzigd.
 
-## Eigenschapcomponenten {#property-components}
+### Eigenschapcomponenten {#property-components}
 
 U kunt het metagegevensformulier aanpassen met een van de volgende eigenschapcomponenten. U sleept het componenttype gewoon naar het formulier op de gewenste locatie en wijzigt de componentinstellingen.
 Hieronder ziet u een overzicht van elk type eigenschap en de manier waarop deze worden opgeslagen.
@@ -133,6 +134,24 @@ Hieronder ziet u een overzicht van elk type eigenschap en de manier waarop deze 
 | Tags | Voeg een tag toe uit waarden die zijn opgeslagen in Taxonomy Management (toegewezen aan xcm:tags). |
 | Trefwoorden | Vrije-vormtrefwoorden toevoegen (toegewezen aan dc:subject). |
 | Slimme tags | U kunt zoekmogelijkheden uitbreiden door automatisch metagegevenstags toe te voegen. |
+
+### Metagegevensformulier toewijzen aan een map {#assign-metadata-form-folder}
+
+U kunt ook een metagegevensformulier toewijzen aan een map binnen de implementatie van de middelenweergave. Het metagegevensformulier dat volgens het MIME-type aan een map is toegewezen, wordt overschreven wanneer u handmatig een metagegevensformulier op een map toepast. Alle elementen in de map, inclusief de elementen in de submappen, geven vervolgens de eigenschappen weer die in het metagegevensformulier zijn gedefinieerd.
+
+Een metagegevensformulier toewijzen aan een map:
+
+1. Navigeren naar **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** en selecteert u een metagegevensformulier.
+
+2. Klik op **[!UICONTROL Assign to Folder]**.
+
+3. Selecteer de map en klik op **[!UICONTROL Assign]**.
+
+   ![metagegevensformulier toewijzen aan een map](assets/assign-to-folder.png)
+
+   U kunt ook naar de pagina met mapdetails navigeren en een metagegevensformulier selecteren uit de makeigenschappen in het rechterdeelvenster om het metagegevensformulier aan de map toe te wijzen.
+
+   ![Metagegevens uit mapeigenschappen](assets/metadata-from-folder-props.png)
 
 ## Volgende stappen {#next-steps}
 

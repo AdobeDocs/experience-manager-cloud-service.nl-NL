@@ -2,9 +2,9 @@
 title: Hoe kan ik tags beheren in de weergave Elementen?
 description: Leer hoe u tags beheert in de weergave Middelen. Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ea0978d09ce74d37487cd921496b03acbfd632d0
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1256'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Tags helpen andere gebruikers en workflows de juiste taxonomie te geven.
 
-Vlakke lijsten met gecontroleerde woordenboeken kunnen in de loop der tijd onbeheersbaar worden. Beheerders kunnen de hiërarchische coderingsstructuur gebruiken, die het toepassen van relevante metagegevens, het indelen van elementen, het ondersteunen van zoeken, het hergebruiken van tags, het verbeteren van de ontdekkingsmogelijkheden, enzovoort, vergemakkelijkt.
+Vlakke lijsten met gecontroleerde woordenboeken kunnen in de loop der tijd onbeheersbaar worden. Beheerders kunnen gebruikmaken van de hiërarchische coderingsstructuur, die het toepassen van relevante metagegevens, het indelen van elementen, het ondersteunen van zoeken, het hergebruiken van tags, het verbeteren van de ontdekkingsmogelijkheden enzovoort vergemakkelijkt.
 
 U kunt een naamruimte maken op hoofdniveau en een hiërarchische structuur van subtags maken binnen de naamruimte. U kunt bijvoorbeeld een `Activities` naamruimte op hoofdniveau en `Cycling`, `Hiking`, en `Running` -tags binnen de naamruimte. U kunt nog meer subtags hebben `Clothing` en `Shoes` binnen `Running`.
 
@@ -33,7 +33,7 @@ Tags bieden veel voordelen, zoals:
 
 * Tags kunnen in de loop der tijd evolueren als een organisatorische woordenwisseling.
 
-* Tags die in de beheerweergave worden beheerd, blijven synchroon met de tags die in de middelenweergave worden beheerd. Hierdoor zijn governance en integriteit van de metagegevens gegarandeerd.
+* Tags die worden beheerd in as a Cloud Service elementen, blijven synchroon met de tags die worden beheerd in de weergave Elementen, zodat u verzekerd bent van beheer en integriteit van metagegevens.
 
 Als u tags wilt toepassen op elementen, moet u eerst een naamruimte maken en er vervolgens tags aan toevoegen. U kunt ook tags maken en deze toevoegen aan een bestaande naamruimte. Alle tags die u maakt op hoofdniveau, worden automatisch toegevoegd aan de naamruimte Standaardtags. Vervolgens kunt u het veld Codes toevoegen aan het metagegevensformulier, zodat het wordt weergegeven op de pagina met gegevens over elementen. Nadat u deze instellingen hebt geconfigureerd, kunt u tags toepassen op elementen.
 
@@ -43,7 +43,7 @@ Als u tags wilt toepassen op elementen, moet u eerst een naamruimte maken en er 
 
 ![Tagbeheer](assets/tagging-taxonomy-management.png)
 
-Aanvullende mogelijkheden die verder gaan dan wat in dit artikel wordt vermeld, zoals tags samenvoegen, hernoemen, lokaliseren en publiceren, zijn beschikbaar in de beheerweergave.
+Aanvullende mogelijkheden die verder gaan dan wat in dit artikel wordt vermeld, zoals het samenvoegen, hernoemen, lokaliseren en publiceren van tags, zijn beschikbaar in as a Cloud Service elementen.
 
 ## Een naamruimte maken {#creating-a-namespace}
 
@@ -59,7 +59,6 @@ Voer de volgende stappen uit om een naamruimte te maken:
 
    <!--
     >[!NOTE]
-    >
     >You can use `Name` as a primary key if you are using any other metadata management tool is the source of truth for taxonomy values, you can use the name as a primary key.
     >
     -->
@@ -77,13 +76,6 @@ Voer de volgende stappen uit om tags toe te voegen aan een naamruimte:
    In dit voorbeeld vertegenwoordigt de afbeelding aan de linkerkant de tag direct onder de naamruimte `automobile-four-wheeler` weergegeven in het dialoogvenster `Path` veld. De afbeelding aan de rechterkant is een voorbeeld van subtags die binnen een tag worden toegevoegd, omdat er meer tagnamen zijn. `jeep` en `jeep-meridian`, weergegeven in de `Path` naast de naamruimte.
 1. Geef de titel, naam en beschrijving voor de tag op en klik op `Save`.
 
-
-   >[!NOTE]
-   >
-   >* De `Title` en `Name` velden zijn verplicht terwijl de `Description` veld is optioneel.
-   >* Standaard kopieert het gereedschap de tekst die u in het veld Titel typt, verwijdert het de lege spaties of speciale tekens (. &amp; / \ : * ? [ ] | &quot; %), en slaat het als Naam op.
-   >* U kunt de `Title` veld later, maar `Name` is alleen-lezen.
-
 ## Labels toevoegen aan standaardlabels {#adding-tags-to-standard-tags}
 
 Niet-gestructureerde tags of tags zonder hiërarchie worden onder `Standard Tags` naamruimte. Bovendien kunt u die waarde opslaan onder `Standard Tags`. U kunt deze waarden in de loop der tijd onder gestructureerde naamruimten verplaatsen. Bovendien kunt u de opdracht `Standard Tags` naamruimte als een gratis formulieritem voor trefwoorden.
@@ -91,10 +83,11 @@ Niet-gestructureerde tags of tags zonder hiërarchie worden onder `Standard Tags
 Als u een standaardcode wilt maken, klikt u op `Create Tag` op het hoofdniveau. Geef een titel, naam en beschrijving op en klik vervolgens op `Save`.
 
 ![Labels toevoegen aan standaardcodes](assets/adding-tags-to-standard-tags.png)
-
+<!--
 >[!NOTE]
 >
->Als u `Standard Tags` naamruimte gebruiken in de beheerweergave. De tags die op hoofdniveau zijn gemaakt, worden niet weergegeven in de lijst met beschikbare tags.
+>If you delete `Standard Tags` namespace using Assets as a Cloud Service, the tags created at the root-level do not display in the list of available tags. 
+-->
 
 ## Labels verplaatsen {#moving-tags}
 
@@ -117,7 +110,7 @@ Als u de titel van de tag wilt bewerken, selecteert u de tag en klikt u op `Edit
 >[!NOTE]
 >
 >* De `Name` van een tag kan niet worden bijgewerkt. Het hoofdpad van een tag is ook gebaseerd op de naam van de tag. Het pad blijft hetzelfde, ook als u het `Title` veld.
->* Extra bewerkingen zoals samenvoegen, lokaliseren en publiceren zijn beschikbaar in de beheerweergave.
+>* Extra bewerkingen zoals samenvoegen, lokaliseren en publiceren zijn beschikbaar in as a Cloud Service elementen.
 
 ## Tags verwijderen {#deleting-tags}
 
@@ -136,7 +129,7 @@ Voer de volgende stappen uit om tags te verwijderen:
 
 ## De component Tags toevoegen aan het formulier Metagegevens {#adding-tags-to-metadata-form}
 
-De component tags wordt toegevoegd aan de `default` automatisch een metagegevensformulier. U kunt een [Metagegevensformulier](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms) met behulp van een sjabloon of helemaal opnieuw. Als u geen bestaande sjabloon voor metagegevens gebruikt, kunt u het formulier Metagegevens wijzigen en de tagcomponent toevoegen. De toewijzing van de eigenschap metadata wordt automatisch ingevuld en kan op dit moment niet worden gewijzigd. Gebruikers in de Admin-weergave kunnen de toewijzing bijwerken om tagwaarden op te slaan met behulp van aangepaste naamruimten en alleen subsets van hiërarchieën beschikbaar maken met behulp van hoofdpaden.
+De component tags wordt toegevoegd aan de `default` automatisch een metagegevensformulier. U kunt een [Metagegevensformulier](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms) met behulp van een sjabloon of helemaal opnieuw. Als u geen bestaande sjabloon voor metagegevens gebruikt, kunt u het formulier Metagegevens wijzigen en de tagcomponent toevoegen. De toewijzing van de eigenschap metadata wordt automatisch ingevuld en kan op dit moment niet worden gewijzigd. As a Cloud Service gebruikers van elementen kunnen de toewijzing bijwerken om tagwaarden op te slaan met behulp van aangepaste naamruimten en alleen subsets van hiërarchieën toegankelijk maken met behulp van hoofdpaden.
 
 Bekijk deze korte video om te zien hoe u de component Tags aan het metagegevensformulier kunt toevoegen:
 
@@ -151,32 +144,10 @@ Bekijk deze korte video om te zien hoe u de component Tags aan het metagegevensf
    ![Tagingmiddelen](assets/adding-tags-to-assets.png)
 
 1. Selecteer een of meer tags. De subtag wordt automatisch geselecteerd samen met de bovenliggende tag of naamruimte.
-Tags die zijn gewijzigd in de weergave Middelen, worden ook toegepast in de beheerweergave.
+Tags die zijn gewijzigd in de weergave Elementen, worden ook toegepast in as a Cloud Service elementen.
 
-## Beperkingen {#limitations}
-
-De volgende geavanceerde taxonomiemogelijkheden zijn momenteel niet beschikbaar in de weergave Elementen en zijn alleen toegankelijk via de beheerweergave:
-
-* **Lokalisatie:** Elke lokalisatie moet plaatsvinden in de beheerweergave.
-* **Hoofdpad:** De wegen van de wortel zijn niet configureerbaar. Alle naamruimten die zijn opgeslagen in Taxonomy Management, worden weergegeven in de eigenschap Tags in de weergave Elementen.
-* **Standaardlabels:** De standaardlabels die worden toegepast in de beheerweergave zijn zichtbaar in de middelenweergave. U kunt geen nieuwe standaardlabels toevoegen in de weergave Middelen op de pagina Asset Details. De bestaande waarden die zijn opgeslagen in Standaardcodes worden toegepast op de pagina Elementdetails.
-* **Aangepaste naamruimten:** Labels kunnen niet worden toegewezen aan aangepaste naamruimten.
-* **Referenties weergeven:** Beheerders kunnen het taggebruik zien in de weergave Middelen. Dit heeft betrekking op alle elementen die actief een tag gebruiken. Beheerders kunnen echter geen afzonderlijke elementen zien die de tag in verwijzingen gebruiken.
-
-<!--
-*   Overview
-*   Benefits
-*   Prerequisites and Permissions
-*   Configuration
-*   Managing Tags
-    *   Creating a Namespace
-    *   Adding Tags to a Namespace
-    *   Adding Tags to Standard Tags
-    *   Moving Tags
-    *   Editing Tags
-    *   Deleting Tags
-*   Applying Tags
-    *   Adding Tags to the Metadata form
-    *   Adding Tags to Assets
-*   Limitations
--->
+>[!NOTE]
+>
+>* De `Title` en `Name` velden zijn verplicht terwijl de `Description` veld is optioneel.
+>* Standaard kopieert het gereedschap de tekst die u in het veld Titel typt, verwijdert het de lege spaties of speciale tekens (. &amp; / \ : * ? [ ] | &quot; %), en slaat het als Naam op.
+>* U kunt de `Title` veld later, maar `Name` is alleen-lezen.
