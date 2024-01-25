@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
+source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
 workflow-type: tm+mt
-source-wordcount: '4562'
+source-wordcount: '4635'
 ht-degree: 4%
 
 ---
@@ -25,12 +25,34 @@ Leer hoe u de video-elementen beheert en bewerkt in [!DNL Adobe Experience Manag
 
 ## Video-elementen uploaden en voorvertonen {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] Hiermee genereert u voorvertoningen voor video-elementen met de extensie MP4. U kunt de vertoningen voorvertonen in het dialoogvenster [!DNL Assets] gebruikersinterface.
+U kunt video-elementen met een ondersteunde indeling uploaden en bekijken naar [!DNL Experience Manager Assets].
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. Navigeer in de map met digitale elementen of in de submappen naar de locatie waar u digitale elementen wilt toevoegen.
-1. Klik op **[!UICONTROL Create]** op de werkbalk en kiest u **[!UICONTROL Files]**. U kunt ook een bestand naar de gebruikersinterface slepen. Zie [elementen uploaden](manage-digital-assets.md#uploading-assets) voor meer informatie.
-1. Als u een video wilt voorvertonen in de kaartweergave, klikt u op de knop **[!UICONTROL Play]** ![afspeeloptie](assets/do-not-localize/play.png) op het video-element. U kunt video alleen in de kaartweergave pauzeren of afspelen. De [!UICONTROL Play] en [!UICONTROL Pause] zijn niet beschikbaar in de lijstweergave.
-1. Selecteer **[!UICONTROL Edit]** op de kaart. De video wordt afgespeeld in de native videospeler van de browser. U kunt de video afspelen, pauzeren, het volume bepalen en op het volledige scherm in- of uitzoomen.
+### Video-elementen uploaden
+
+Voer de volgende stappen uit om een video-element te uploaden:
+
+1. Navigeer in de map met digitale elementen of in de submappen naar de locatie waar u het element wilt toevoegen.
+1. Klikken **[!UICONTROL Create]** op de werkbalk en kiest u **[!UICONTROL Files]**. <br>U kunt ook een bestand naar de gebruikersinterface slepen.
+Meer informatie over [uploaden, elementen](manage-digital-assets.md#uploading-assets) in [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### Video-elementen voorvertonen
+
+U kunt de MP4-uitvoeringen voorvertonen in het dialoogvenster [!DNL Assets] gebruikersinterface. Voer de volgende stappen uit om een voorvertoning van een video-element weer te geven:
+
+1. Een video-element met een ondersteunde indeling uploaden naar [!DNL Experience Manager Assets]. Meer informatie over de [ondersteunde video-indelingen](file-format-support.md#video-formats). <br>Nadat de video is geüpload, wordt het video-element verwerkt en wordt een voorvertoning gegenereerd.
+1. Klik op het element en selecteer ![optie Details](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]**  in de bovenste werkbalk. Het video-element wordt geopend in de videoviewer.
+1. Klik op de knop ![afspeeloptie](assets/do-not-localize/play.png) op de videominiatuur. <br>U kunt de video afspelen, pauzeren, het volume bepalen en op het volledige scherm in- of uitzoomen.
+
+Voor bestaande video-elementen in [!DNL Experience Manager Assets], moet u **[!UICONTROL Reprocess]** de activa in [!DNL Experience Manager] om de functie voor videovoorvertoning in te schakelen. Leer hoe u [digitale middelen opnieuw verwerken](reprocessing.md) in [!DNL Experience Manager].
+
+### Beperkingen van videovoorvertoning
+
+* In MXF-bestanden worden geen videovoorvertoningen weergegeven, ook al wordt de vertoning gegenereerd.
+* WebM-bestanden genereren geen voorvertoningsuitvoeringen omdat deze native door webbrowsers kunnen worden afgespeeld.
 
 ## Video-elementen publiceren {#publish-video-assets}
 

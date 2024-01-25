@@ -1,14 +1,14 @@
 ---
 title: Ondersteunde bestandsindelingen en MIME-typen
-description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Experience Manager Assets] als [!DNL Cloud Service].
+description: Bestandsindelingen en MIME-typen ondersteund door [!DNL Experience Manager Assets] als [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 4%
+source-wordcount: '1398'
+ht-degree: 0%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 4%
 
 [!DNL Adobe Experience Manager] als [!DNL Cloud Service] ondersteunt de basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
-Daarnaast [!DNL Experience Manager Assets] biedt uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met [assetmicroservices](asset-microservices-configure-and-use.md).
+Daarnaast [!DNL Experience Manager Assets] biedt uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met [microservices voor bedrijfsmiddelen](asset-microservices-configure-and-use.md).
 
 De hoogtepunten voor activaomzetting die de diensten van activa microservices gebruiken omvatten:
 
-* Sleutel [Adobe-bestandsindelingen](#adobe-formats) geproduceerd door Adobe-toepassingen en -diensten, waaronder [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF.
+* Sleutel [Bestandsindelingen voor Adoben](#adobe-formats) geproduceerd door Adobe van toepassingen en diensten, waaronder [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF.
 * Sleutel [afbeeldingsbestandsindelingen](#image-formats).
 * [Camera Raw bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
 * Vaak [documentindelingen](#document-formats), inclusief Microsoft® Office en Open Document-indelingen.
-* Breed scala aan [video](#video-formats)- en [audio](#audio-formats)-indelingen.
+* Breed bereik van [video](#video-formats) en [audio](#audio-formats) indelingen.
 
 De volgende legenda beschrijft het niveau van steun voor elk formaat.
 
@@ -127,7 +127,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
 | DOC | - | - | - | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ePub | - | ✓ | - | - | - | - |
+| EPUB | - | ✓ | - | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ | - |
 | ODF | ✓ | ✓ | ✓ | - | - | - |
 | ODM | ✓ | ✓ | ✓ | - | - | - |
@@ -147,35 +147,35 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Video-indelingen {#video-formats}
 
-| Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte |
-| ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| MXF | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte | Voorvertoning |
+| ----------- | -------------------- | ------------------- | ------------ | ------- |
+| 3G2 | - | ✓ | - | - |
+| 3GP | - | ✓ | - | - |
+| AVI | ✓ | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ | ✓ |
+| F4V | ✓ | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ | ✓ |
+| M2TS | ✓ | - | ✓ | ✓ |
+| M2V | ✓ | - | ✓ | ✓ |
+| M4V | ✓ | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ | ✓ |
+| MOV | ✓ | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ | ✓ |
+| MXF | ✓ | - | ✓ | ✓ |
+| OGV | ✓ | - | ✓ | ✓ |
+| QT | ✓ | - | ✓ | ✓ |
+| R3D | - | ✓ | ✓ | ✓ |
+| SWF | ✓ | - | ✓ | ✓ |
+| WebM | ✓ | - | ✓ | ✓ |
+| WMV | ✓ | ✓ | ✓ | ✓ |
 
 ## Audio-indelingen {#audio-formats}
 
-[!DNL Assets] als [!DNL Cloud Service] biedt ondersteuning voor XMP metagegevensextractie voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
+[!DNL Assets] als [!DNL Cloud Service] biedt XMP ondersteuning voor het ophalen van metagegevens voor de audio-indelingen AIF, ASF, M4A, MP3, WAV en WMA.
 
 ## Ondersteunde indelingen voor audio- en video-transcriptie {#audio-video-transcription-formats}
 
@@ -200,14 +200,14 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | --- | --- | --- | --- |
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vectoranimatiebestanden) |
-| M4V | Apple iTunes | H264/AVC | − |
-| MKV | Matroska | H264/AVC | − |
+| M4V | Apple iTunes | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
-| MP4 | MPEG-4 | H264/AVC (alle profielen) | − |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
-| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
-| OGV, OGG | OGG | Theora, VP3, Dirac | − |
-| WebM | WebM | Google VP8 | − |
+| MP4 | MPEG-4 | H264/AVC (alle profielen) | - |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| OGV, OGG | OGG | Theora, VP3, Dirac | - |
+| WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
 ‡ Deze video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media of voor gebruik met annotatie in Experience Manager Assets.
@@ -244,7 +244,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 De volgende subtypen van rasterafbeeldingsbestandsindelingen die *niet* ondersteund in [!DNL Dynamic Media]:
 
 * PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
-* PSB-bestanden.
+* PSB-bestanden
 * PSD-bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund. DuoTone-, Lab- en Geïndexeerde kleurruimten worden niet ondersteund.
 * PSD-bestanden met een bitdiepte groter dan 16.
 * TIFF-bestanden met zwevende-kommagegevens.
@@ -259,23 +259,23 @@ Zie ook [Ondersteunde 3D-indelingen](/help/assets/file-format-support.md#support
 | GLB | Binaire GL-transmissie | model/gltf-binair | Hiermee neemt u de materialen en structuren op als één enkel element. |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif | |
 | STL | Stereolithografie | application/vnd.ms-pki.stl | |
-| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Ondersteuning voor het genereren van ingewanden en miniaturen; 3D-voorvertoningen worden nog niet ondersteund.* USDZ is een 3D-indeling die door Safari of iOS kan worden weergegeven. |
+| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Ondersteuning voor insluiten en het genereren van miniaturen. 3D-voorvertoningen worden nog niet ondersteund.* USDZ is een 3D-indeling die door Safari of iOS kan worden weergegeven. |
 
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
-* [Assets doorzoeken](search-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
->* [Verwerking van bedrijfsmiddelen met behulp van asset-microservices](asset-microservices-overview.md)
+>* [Verwerking van bedrijfsmiddelen met behulp van asset microservices](asset-microservices-overview.md)
 >* [Ondersteunde bestandsindelingen voor slimme tags van op tekst gebaseerde elementen](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
