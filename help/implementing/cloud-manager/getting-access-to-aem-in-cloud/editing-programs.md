@@ -2,9 +2,9 @@
 title: Programma's beheren en bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+source-git-commit: 2dfae31e32d375c82c4f690624e48f7f09feb4df
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -99,38 +99,21 @@ De **Prestaties** kaart geeft een overzicht van de **[CDN-dashboard.](/help/impl
 
    ![Programma bewerken, optie](assets/edit-program-overview.png)
 
-1. De **Programma bewerken** pagina wordt geopend. Op de **Algemeen** de naam en beschrijving van het programma bewerken.
-
-   * Voor een programma moet ten minste één oplossing worden gekozen.
+1. De **Programma bewerken** pagina wordt geopend voor de **Algemeen** tab.
 
    ![Tabblad Algemeen](assets/edit-program-prod1.png)
 
-1. Op de **Oplossingen en invoegtoepassingen** wijzigt u de oplossingen voor het programma.
-
-   ![Oplossingen selecteren](assets/edit-prg.png)
-
-1. Klik op het chevron voor de naam van de oplossing om optionele invoegtoepassingen weer te geven, zoals het selecteren van de **Handel** invoegoptie onder **Sites**.
-
-   ![Invoegtoepassingen bewerken](assets/edit-program-add-on.png)
-
-1. Op de **Live-instellingen** wijzigen, wijzigt u de geplande datum voor de introductie van het programma.
-
-   ![Instellingen voor go-live bewerken](assets/edit-program-go-live.png)
-
-   * Deze datum is uitsluitend ter informatie. De widget Go Live wordt geactiveerd op de pagina met het programmaoverzicht. Het biedt op zijn beurt in-product koppelingen naar de as a Cloud Service documentatie over beste praktijken van Adobe Experience Manager (AEM), die op uw reis is afgestemd. Dit culmineert in een geslaagde Go Live-ervaring.
-   * Dit tabblad is niet beschikbaar voor sandboxprogramma&#39;s.
-
-1. Indien de vereiste rechten voor het programma beschikbaar zijn, **Beveiliging** wordt weergegeven waar u de beveiligingsopties voor het programma kunt wijzigen.
-
-   ![Beveiligingsinstellingen bewerken](assets/edit-program-security.png)
-
-   * HIPAA kan niet worden ingeschakeld of uitgeschakeld na [programma&#39;s maken.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-      * [Meer informatie](https://www.adobe.com/go/hipaa-ready) over de HIPAA-gereed implementatie van de oplossing van Adobe.
-   * Zodra geactiveerd, kan de bescherming WAF-DDOS dan door opstelling worden gevormd [niet-productiepijpleiding.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+1. De beschikbare opties voor het bewerken van het programma zijn dezelfde als die voor het maken van het programma.
+   * Zie de documenten [Productieprogramma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) en [Sandbox-programma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) voor meer informatie over de afzonderlijke opties.
+   * [Aanvullende opties](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) kan voor uw productieprogramma afhankelijk van de aanspraken van uw organisatie beschikbaar zijn.
 
 1. Klikken **Bijwerken** om uw wijzigingen in het programma op te slaan.
 
-Telkens wanneer een programma wordt uitgegeven, met inbegrip van het toevoegen van of het verwijderen van een oplossing of toe:voegen-op, worden die veranderingen van kracht na de volgende plaatsing.
+De wijzigingen in het programma worden opgeslagen.
+
+>[!NOTE]
+>
+>Telkens wanneer een programma wordt uitgegeven, met inbegrip van het toevoegen van of het verwijderen van een oplossing of toe:voegen-op, worden die veranderingen van kracht na de volgende plaatsing.
 
 ## Sandbox-programma&#39;s verwijderen {#delete-sandbox-program}
 
