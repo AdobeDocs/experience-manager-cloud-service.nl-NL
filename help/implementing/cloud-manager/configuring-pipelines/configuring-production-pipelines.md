@@ -3,9 +3,9 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -123,18 +123,17 @@ De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managin
 
 Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM toepassing op. In een dergelijke implementatie kunt u ervoor kiezen **Inclusief** een van de volgende typen code:
 
-* **[Config](#config)** - Configureer instellingen voor uw AEM, onderhoudstaken, CDN-regels en meer.
+* **Config** - Vorm montages voor de regels van de verkeersfilter op uw AEM milieu.
    * Zie het document [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md) om te leren hoe u de configuraties in uw opslagplaats kunt beheren, zodat deze correct worden geïmplementeerd.
-* **[Code frontend](#front-end-code)** - Configureer JavaScript en CSS voor de voorzijde van de AEM toepassing.
+   * Wanneer het runnen van een gerichte plaatsingspijpleiding, [WAF-configuraties](/help/security/traffic-filter-rules-including-waf.md) zal worden opgesteld, op voorwaarde dat zij aan milieu, bewaarplaats, en tak worden bewaard u in de pijpleiding bepaalde.
+   * Op elk ogenblik, kan er slechts één config pijpleiding per milieu zijn.
+* **Code frontend** - Configureer JavaScript en CSS voor de voorzijde van de AEM toepassing.
    * Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
    * Zie het document [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) hoe dit proces samen met een aantal overwegingen werkt , moet u zich ervan bewust zijn dat dit proces alle mogelijkheden biedt .
-* **[Config. web](#web-tier-config)** - Configureer de eigenschappen van de dispatcher voor het opslaan, verwerken en leveren van webpagina&#39;s aan de client.
-
->[!NOTE]
->
->* Als er voor de geselecteerde omgeving een pijpleiding voor code in de weblaag bestaat, is deze selectie uitgeschakeld.
->* Als u een bestaande full-stack pijpleiding die aan een milieu opstelt hebt, die tot een Web rij config pijpleiding voor het zelfde milieu leidt zal de bestaande configuratie van de Webrij in de full-stack pijpleiding worden genegeerd.
-> * Op elk ogenblik, kan er slechts één config pijpleiding per milieu zijn.
+* **Config. web** - Configureer de eigenschappen van de dispatcher voor het opslaan, verwerken en leveren van webpagina&#39;s aan de client.
+   * Zie het document [CI/CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) voor meer informatie .
+   * Als er voor de geselecteerde omgeving een pijpleiding voor code in de weblaag bestaat, is deze selectie uitgeschakeld.
+   * Als u een bestaande full-stack pijpleiding die aan een milieu opstelt hebt, die tot een Web rij config pijpleiding voor het zelfde milieu leidt zal de bestaande configuratie van de Webrij in de full-stack pijpleiding worden genegeerd.
 
 De stappen om de verwezenlijking van uw productie te voltooien, zijn de gerichte plaatsingspijpleiding het zelfde zodra u een plaatsingstype kiest.
 
@@ -165,8 +164,6 @@ De stappen om de verwezenlijking van uw productie te voltooien, zijn de gerichte
 1. Klikken **Opslaan**.
 
 De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
-
-Wanneer het runnen van een gerichte plaatsingspijpleiding, configuraties [zoals WAF-configuraties](/help/security/traffic-filter-rules-including-waf.md) zal worden opgesteld, op voorwaarde dat zij aan milieu, bewaarplaats, en tak worden bewaard u in de pijpleiding bepaalde.
 
 ## Verzendingspakketten overslaan {#skip-dispatcher-packages}
 
