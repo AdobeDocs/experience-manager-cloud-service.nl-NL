@@ -3,10 +3,10 @@ title: Best practices zoeken voor [!DNL Adobe Experience Manager] als [!DNL Clou
 description: Aanbevolen procedures voor het zoeken, zoeken en ophalen van metagegevens van elementen in uw toepassing.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
+source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 1%
+source-wordcount: '2437'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het zoeken naar elementen waarmee u een hogere snelheid van de inhoud kunt bereiken. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden. Zoekmiddelen in [!DNL Adobe Experience Manager Assets] is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa - of het nu gaat om verder gebruik door de creatieve sector, voor een robuust beheer van activa door de zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders.
 
-Dit Help-document bevat tips en trucs voor AEM zoekopdracht met behulp van verschillende scenario&#39;s om AEM gebruikers te helpen elementaire zoekopdrachten op een geavanceerd niveau uit te voeren.
+Dit Help-document bevat AEM best practices voor zoeken met behulp van verschillende scenario&#39;s om AEM gebruikers te helpen bij het uitvoeren van basiszoekopdrachten op een geavanceerd niveau.
 
 ## Zoeken naar Experience Managers openen {#access-experience-manager-search}
 
@@ -161,7 +161,7 @@ Voer de volgende stappen uit in **[!UICONTROL Admin view]**:
 
 1. Type `classic car` in de zoekbalk.
 1. Ga naar Filters. Onder [!UICONTROL File Type], uitbreiden [!UICONTROL Documents], verdere uitbreiding [!UICONTROL Word Processing].
-1. Selecteer [!UICONTROL PDF].
+1. Selecteren [!UICONTROL PDF].
 1. Ga naar [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Unpublished].
 
 <!--![Filter example 2](assets/filter-2.png)-->
@@ -169,7 +169,7 @@ Voer de volgende stappen uit in **[!UICONTROL Admin view]**:
 Voer de volgende stappen uit in **[!UICONTROL Assets view]**:
 
 1. Type `classic car` in de zoekbalk.
-1. Ga naar Filters. Selecteer onder [!UICONTROL MIME Type] de optie [!UICONTROL PDF].
+1. Ga naar Filters. Onder [!UICONTROL MIME Type], selecteert u [!UICONTROL PDF].
 1. Ga naar [!UICONTROL Asset Status], selecteert u [!UICONTROL All] alle gepubliceerde en niet-gepubliceerde activa op te nemen.
 
 **Scenario 5: alle afbeeldingen behalve PNG zoeken**
@@ -255,7 +255,11 @@ of Selecteer het element > navigeer naar de ellips rechtsboven > selecteer [!UIC
 
 1. Let op de zoekbalk. De miniatuur van het geselecteerde element verschijnt op de zoekbalk om aan te geven dat u een zoekopdracht wilt uitvoeren. Hierdoor worden elementen met vergelijkbare slimme tags geretourneerd.
 
-**[!UICONTROL Assets view]** ondersteunt de [!UICONTROL Find Similar] -optie.
+Voer de volgende stappen uit in **[!UICONTROL Assets view]**:
+
+1. Zoek het element naar uw wensen.
+1. Selecteer de afbeelding > navigeer naar [!UICONTROL Find Similar Image] aan de bovenkant bij navbar.
+U gaat naar de verzameling elementen met vergelijkbare kleuren en metagegevens.
 
 ## Aangepaste zoekfacetten {#custom-search-facets}
 
@@ -348,13 +352,13 @@ The newly added assets are not indexed.
         <td> 
             Ondersteunde opties zijn:
             <ul>
-            <li> Publicatie
+            <li> Publiceren
             <li> Gepubliceerde datum
             <li> Laatst gepubliceerd door
             <li> Goedkeuring 
             <li> Afhandeling
             <li> Vervaldatum
-            <li>  Dynamic Media 
+            <li> Dynamic Media
             </ul>
         </td>
         <td>
@@ -415,11 +419,6 @@ The newly added assets are not indexed.
             <li> Inhoudsfragmentmodel
             </ul> 
         </td>
-        <td> Niet ondersteund </td>
-    </tr>
-     <tr>
-        <td> Gelijkend zoeken </td>
-        <td> Ondersteund </td>
         <td> Niet ondersteund </td>
     </tr>
 </table>
