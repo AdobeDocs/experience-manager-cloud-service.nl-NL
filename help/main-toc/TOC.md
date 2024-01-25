@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9a15711c6352f35bcf21cd080b65552f94b46f48
+source-git-commit: 6b147f69ee877f75ff74bd044a2a02ff5a14d72c
 workflow-type: tm+mt
-source-wordcount: '4611'
+source-wordcount: '4610'
 ht-degree: 3%
 
 ---
@@ -922,7 +922,7 @@ ht-degree: 3%
       + [Aangepaste machtigingen](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA-rapportage](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [Dynatrace OneAgent](/help/implementing/cloud-manager/dynatrace-oneagent.md)
+      + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Meldingen](/help/implementing/cloud-manager/notifications.md)
       + SSL-certificaten {#manage-ssl-certificates}
          + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
