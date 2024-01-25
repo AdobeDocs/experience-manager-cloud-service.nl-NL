@@ -1,18 +1,17 @@
 ---
-title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: fa106c2e3fec70971e2c54572199e35c24db0aa7
+title: Opmerkingen bij de release 2023.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Opmerkingen bij de release 2023.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+source-git-commit: 348c6d29001c532c1eb7a3e534517efb2ba73151
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de release met functies voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+# Opmerkingen bij de release 2023.12.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2023.12.0 van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -26,7 +25,7 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2024.1.0) is 25 januari 2024. De volgende release met functies (2024.2.0) is gepland voor 29 februari 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.12.0) is 14 december 2023. De volgende release met functies (2024.1.0) is gepland voor 25 januari 2023.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -44,41 +43,45 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
 
-### Extension Manager in AEM Sites {#sites-extension-manager}
+### Programma voor vroege adoptie {#sites-early-adopter}
 
-**Ontdek de nieuwe [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** om uw AEM opstelling te personaliseren door uitbreidingen te vormen UI.
+**U kunt de [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om client-side verzameling voor AEM as a Cloud Service in te schakelen.
 
-![Extension Manager in AEM Sites](/help/assets/sites/extension-manager/homepage.png)
+Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt geboden. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-beheerde CDN of niet-Adobe-beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
 
-Met de Extension Manager in AEM Sites kunnen ontwikkelaars en professionals UI-extensies die zijn gemaakt om de functionaliteit van AEM Sites te verbeteren, openen, beheren en aanpassen.
-Met de Extension Manager kunt u:
+Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor de productie-, stage- en ontwikkelomgeving via uw e-mailadres dat aan uw Adobe ID is gekoppeld. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
 
-* Extensies per geval in- of uitschakelen;
-* Configureren van extensieparameters;
-* Een voorvertoning weergeven van extensies en een deelbare voorbeeldkoppeling genereren;
-* Detecteer functies voor uitbreidbaarheid van de gebruikersinterface via interactieve demo&#39;s.
-* Toegang tot experimentele functies van de Adobe via eersteklas uitbreidingen.
-
-We zijn actief op zoek naar feedback en nieuwe gebruiksgevallen voor UI-extensies. Stuur een e-mail naar `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
-### Functies van de vooruitgave in de beheerdersweergave {#admin-view-prerelease}
+### Nieuwe functies in de weergave Elementen {#assets-view-features}
 
-**Voorvertoning van vertoningen weergeven voor alle ondersteunde videotypen**
+**GenAI-afbeeldingen maken met Adobe Firefly**
 
-Experience Manager Assets genereert nu standaard voorvertoningen van alle ondersteunde videotypen zonder dat hiervoor een configuratie met een verwerkingsprofiel nodig is
+Maak nieuwe afbeeldingen op basis van zoekquery&#39;s met een Adobe Firefly van de functie voor tekst naar afbeelding (licentie voor Adobe Firefly vereist).
 
-### Weergave Elementen {#assets-view-features}
+![Integratie van Fireflys](/help/assets/assets/assets-firefly-integration.png)
 
-**Lijst van gewezen personen slimme tags**
+**Gelijksoortige afbeeldingen zoeken**
 
-Met Assets Essentials kunt u nu lijst van gewezen personen definiëren die woorden bevat die niet als slimme tags aan elementen mogen worden toegevoegd wanneer deze naar de opslagplaats worden geüpload. Met deze functie kunt u de naleving van het merk handhaven en de inspanningen voor het reduceren van slimme tags verminderen.
+U kunt nu eenvoudig inhoud zoeken door een afbeelding te selecteren en vergelijkbare afbeeldingen weer te geven in de Experience Manager Assets-opslagplaats.
 
-![Lijst van gewezen personen Slimme tags](/help/assets/assets/block-tags.png)
+<!--
 
+* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
+
+  ![storage usage insights](/help/assets/assets/block-tags.png)
+
+
+**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
+
+-->
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
+
+### Nieuwe functies in [!DNL Experience Manager Forms] {#forms-features}
+
+* **[Een adaptieve Forms verbinden met de Microsoft® SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms biedt een OOTB-integratie voor het rechtstreeks verzenden van formuliergegevens naar de SharePoint List, zodat u de mogelijkheden van SharePoint List kunt gebruiken. U kunt de Microsoft SharePoint List configureren als gegevensbron voor een formuliergegevensmodel en de **Verzenden met gebruik van formuliergegevensmodel** verzenden, actie om een adaptief formulier te verbinden met de SharePoint-lijst.
 
 <!-- 
 
@@ -100,13 +103,18 @@ Met Assets Essentials kunt u nu lijst van gewezen personen definiëren die woord
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
 
-### Ondersteuning voor Dynatrace {#dynatrace}
+### Programma voor vroege adopter van CDN-configuratie {#cdn-config-early-adopter}
 
-Dynatraciklanten kunnen hun AEM gebruiken controleren. [Lees hoe](/help/implementing/cloud-manager/dynatrace.md) om connectiviteit met uw milieu van de Accolade voor toepassingsprestatie controle te verzoeken. Merk op dat New Relic APM, dat voor alle klanten beschikbaar is, zal ophouden met het verzamelen van gegevens als Dynatrace wordt toegelaten.
+Naast de onlangs vrijgelaten [Regels voor verkeersfilters](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvat, is er een kans om de Pijpleiding van de Configuratie te gebruiken om andere types van configuratie te verklaren en op te stellen CDN. We zouden graag iets over uw gebruiksgevallen horen, zoals:
+* 301/302 omleidingen op de client
+* verzoeken aan de rand van willekeurige oorsprong proxying
+* URL-transformaties
+* verzoek- of antwoordheaders instellen of wijzigen
+* aangepaste foutpagina&#39;s wanneer de CDN AEM niet kan bereiken
+* verificatie via gebruikersnaam/wachtwoord
+* andere handige CDN-configuraties
 
-### RDE-ondersteuning voor front-end code met behulp van sitemenu&#39;s en sitesjablonen: Vroege adopter-programma {#rde-frontend-early-adopter}
-
-[Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) nu ondersteuning voor front-end code op basis van [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md), voor vroege adoptie. Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan een [front-end pijpleiding](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Neem contact op met **aemcs-rde-support@adobe.com** om het uit te proberen en feedback te geven.
+Een e-mail verzenden naar **aemcs-cdn-config-adopter@adobe.com** van je officiële e-mailadres met je feedback.
 
 ## Cloud Manager {#cloud-manager}
 

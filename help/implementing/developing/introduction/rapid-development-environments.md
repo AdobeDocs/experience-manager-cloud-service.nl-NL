@@ -2,9 +2,9 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
 workflow-type: tm+mt
-source-wordcount: '3304'
+source-wordcount: '3414'
 ht-degree: 0%
 
 ---
@@ -310,6 +310,56 @@ The analyser found the following errors for publish :
 
 Het bovenstaande codevoorbeeld illustreert het gedrag als een bundel niet oplost. In dat geval wordt het &quot;gefaseerd&quot; en wordt het alleen geïnstalleerd als aan de vereisten ervan (ontbrekende invoer, in dit geval) wordt voldaan door de installatie van andere code.
 
+<u>Voorste code implementeren op basis van sitethema&#39;s en sitesjablonen</u>
+
+>[!NOTE]
+>
+>Deze functie is nog niet GA, maar kan door beginnende gebruikers worden gebruikt. Neem contact op met **aemcs-rde-support@adobe.com** om het uit te proberen en feedback te geven.
+
+RDEs steunt front-end code die op wordt gebaseerd [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md). Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn om voorste-eindpakketten, eerder dan de Manager van de Wolk op te stellen [Pijpleiding aan de voorzijde](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) gebruikt voor andere omgevingstypen.
+
+Zoals gebruikelijk, bouw uw front-end pakket gebruikend npm:
+
+`npm run build`
+
+Het moet een `dist/` map, zodat uw voorste pakketmap een `package.json` en `dist` map:
+
+```
+ls ./path-to-frontend-pkg-folder/
+...
+dist
+package.json
+```
+Nu bent u bereid om het front-end pakket aan RDE op te stellen door aan de front-end pakketomslag te richten:
+
+```
+aio aem:rde:install -t frontend ./path-to-frontend-pkg-folder/
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+U kunt ook de `package.json` en `dist` map en implementeer dat ZIP-bestand:
+
+`zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
+
+```
+aio aem:rde:install -t frontend frontend-pkg.zip
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+>[!NOTE]
+>
+>De naamgeving van de bestanden in het front-end pakket moet voldoen aan de volgende naamgevingsconventies:
+> * map &quot;dist&quot;, voor de npm-bouwuitvoerpakketmap
+> * bestand &quot;package.json&quot;, voor het pakket voor npm-afhankelijkheden
+
 ### De status van de RDE controleren {#checking-rde-status}
 
 U kunt RDE CLI gebruiken om te controleren of het milieu klaar is om aan worden opgesteld, aangezien welke plaatsingen door middel van het elektrische toestel van RDE zijn gemaakt.
@@ -470,8 +520,9 @@ Om deze redenen, adviseert men dat na het bevestigen van code op een milieu RDE,
 Houd ook rekening met het volgende:
 
 * RDE&#39;s bevatten geen voorvertoningsniveau
-* RDEs steunt momenteel niet het bekijken en het zuiveren voorste code die gebruikend de Voorste-EindPijl van de Manager van de Wolk wordt opgesteld.
 * RDEs steunt momenteel niet het prereleasekanaal.
+* Terwijl RDE steun voor het bekijken van en het zuiveren van voorste code die op wordt gebaseerd [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md) De implementatie is nog niet klaar voor GA, het kan door vroege adopters worden gebruikt. Neem contact op met **aemcs-rde-support@adobe.com** om het uit te proberen en feedback te geven.
+
 
 
 ## Hoeveel RDEs heb ik nodig? {#how-many-rds-do-i-need}

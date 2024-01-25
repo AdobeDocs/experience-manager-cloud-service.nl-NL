@@ -1,17 +1,17 @@
 ---
 title: Opmerkingen bij de release 2023.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: c33874869bccae1e9837b30827a655e70636dd56
+exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 0%
 
 ---
 
-
 # Opmerkingen bij de release 2023.11.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de release met functies voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2023.11.0 van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
