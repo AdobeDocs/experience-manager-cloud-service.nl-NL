@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4635'
+source-wordcount: '4636'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Meer informatie over [uploaden, elementen](manage-digital-assets.md#uploading-as
 
 ### Video-elementen voorvertonen
 
-U kunt de MP4-uitvoeringen voorvertonen in het dialoogvenster [!DNL Assets] gebruikersinterface. Voer de volgende stappen uit om een voorvertoning van een video-element weer te geven:
+U kunt video&#39;s voorvertonen in ondersteunde uitvoeringen in het dialoogvenster [!DNL Assets] gebruikersinterface. Voer de volgende stappen uit om een voorvertoning van een video-element weer te geven:
 
 1. Een video-element met een ondersteunde indeling uploaden naar [!DNL Experience Manager Assets]. Meer informatie over de [ondersteunde video-indelingen](file-format-support.md#video-formats). <br>Nadat de video is geüpload, wordt het video-element verwerkt en wordt een voorvertoning gegenereerd.
 1. Klik op het element en selecteer ![optie Details](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]**  in de bovenste werkbalk. Het video-element wordt geopend in de videoviewer.
