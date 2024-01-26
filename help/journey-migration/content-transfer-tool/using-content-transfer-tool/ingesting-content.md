@@ -2,9 +2,9 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
+source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2410'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van 
    > Als de extractie wordt uitgevoerd, wordt dit in het dialoogvenster aangegeven. Nadat de extractie is voltooid, wordt de inname automatisch gestart. Als de extractie mislukt of wordt gestopt, wordt de innametaak geannuleerd.
 
    * **Doel:** Selecteer de doelomgeving. In deze omgeving wordt de inhoud van de migratieset opgenomen.
-      * De oplossingen steunen geen bestemming van de Milieu van de Snelle Ontwikkeling (RDE), en zij verschijnen niet als mogelijke bestemmingskeus, zelfs als de gebruiker toegang tot het heeft.
+      * De oplossingen steunen geen bestemmingen van het type Snelle Milieu van de Ontwikkeling (RDE) of Voorproef, en zij verschijnen niet als mogelijke bestemmingskeus, zelfs als de gebruiker toegang tot het heeft.
       * Terwijl een migratiereeks in veelvoudige bestemmingen gelijktijdig kan worden opgenomen, kan een bestemming het doel van slechts één lopende of wachtende opname tegelijkertijd zijn.
 
    * **Niveau:** Selecteer de laag. (Auteur/Publicatie).
