@@ -2,7 +2,7 @@
 title: Kenmerken en itemtypen
 description: Leer over de gegevensattributen en de punttypes die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
+source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 
 ## Itemtypen {#item-types}
 
-| `itemtype` | Beschrijving | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
+| `data-aue-type` | Beschrijving | `data-aue-resource` | `data-aue-prop` | `data-aue-filter` | `data-aue-label` | `data-aue-model` | `data-aue-behavior` |
 |---|---|---|---|---|---|---|---|
 | `text` | Tekst kan worden bewerkt binnen de HTML-tags, maar alleen in de eenvoudige tekstopmaak, zonder tekstopmaak, wordt deze doorgaans gebruikt voor titelcomponenten, bijvoorbeeld | Optioneel | Vereist | nvt | Optioneel | nvt | Optioneel |
 | `richtext` | Tekst kan worden bewerkt met volledige tekstopties. RTE wordt weergegeven in het rechterdeelvenster | Optioneel | Vereist | nvt | Optioneel | nvt | Optioneel |
