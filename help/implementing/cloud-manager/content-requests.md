@@ -2,9 +2,9 @@
 title: Inhoudsverzoeken van Cloud Servicen begrijpen
 description: Als u licenties voor inhoudsaanvragen van Adobe hebt aangeschaft, leert u meer over de typen inhoudsaanvragen die Adobe Experience Cloud als een service meet en over de verschillen met de analytische rapportagehulpprogramma's van een organisatie.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
+source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2683'
 ht-degree: 0%
 
 ---
@@ -96,9 +96,13 @@ De echte Controle van de Gebruiker (RUM) verstrekt diep inzicht in zeer belangri
 
 ### Wie kan profiteren van de RUM Data Monitoring Service? {#who-can-benefit-from-rum-data-monitoring-service}
 
-De Dienst van Gegevens RUM is voordelig voor degenen die CDN van de Adobe gebruiken, aangezien het een nauwkeurigere weerspiegeling van gebruikersinteractie aanbiedt, die een betrouwbare maatregel van websitebetrokkenheid verzekeren door het aantal Paginameningen op de cliënt-kant te weerspiegelen die met de bestaande server-kant CDN logboekmeningen van de Pagina kunnen worden vergeleken. Bovendien, voor klanten die hun eigen CDN gebruiken, kan de Adobe automatisch verkeer nu stroomlijnen die de Mening van de Pagina voor hen omvat, zo betekent zij geen verkeersrapport met Adobe moeten delen.
+De Dienst van Gegevens van het RUM is voordelig voor alle klanten of het gebruiken van Adobe, of hun eigen CDN. Deze weergave biedt een preciezere weergave van gebruikersinteracties, zodat een betrouwbare maatstaf voor de betrokkenheid van websites wordt verkregen door het aantal paginaweergaven op de client weer te geven.
 
-Het is ook een grote kans om geavanceerde inzichten in uw paginaprestaties voor zowel de klanten te bereiken die, CDN van de Adobe gebruiken als voor hen die hun eigen CDN gebruiken.
+Met name voor Adobe CDN-gebruikers worden gebruikersinteracties nauwkeurig bijgehouden voor een directe vergelijking van client-side paginaweergaven met server-side CDN-logboeken.
+
+Voor klanten die hun eigen CDN in dienst nemen kunnen zij van vereenvoudigd verkeer profiteren dat rapporteert, aangezien de Adobe nu direct deze Weergaven van Pagina integreert, die de behoefte aan afzonderlijke rapporten elimineren.
+
+Bovendien krijgen alle klanten diepgaande inzichten in paginaprestaties om hun digitale ervaringen effectief te optimaliseren.
 
 ### Begrijp hoe de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) werkt {#understand-how-the-rum-data-service-works}
 
