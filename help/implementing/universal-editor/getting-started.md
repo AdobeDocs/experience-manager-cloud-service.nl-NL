@@ -2,9 +2,9 @@
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: f9d584d7b117c24224079f581802f5f126890304
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -104,8 +104,6 @@ Deze eigenschap moet worden ingesteld in het dialoogvenster `org.apache.sling.en
 ## De pagina instrumenteren {#instrument-page}
 
 Voor de Universal Editor-service is een [Naam van uniforme bron (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het juiste back-endsysteem te identificeren en te gebruiken voor de inhoud in de app die wordt bewerkt. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
-
-De instrumentatiekenmerken die aan de pagina worden toegevoegd, bestaan voornamelijk uit: [HTML Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) een industriestandaard die ook kan worden gebruikt om HTML semantischer te maken, HTML documenten indexeerbaar te maken, etc.
 
 ### Verbindingen maken {#connections}
 
