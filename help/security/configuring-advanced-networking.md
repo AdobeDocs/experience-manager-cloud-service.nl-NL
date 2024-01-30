@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
 workflow-type: tm+mt
-source-wordcount: '3526'
+source-wordcount: '3540'
 ht-degree: 0%
 
 ---
@@ -350,6 +350,7 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
 
 * De steun wordt beperkt tot één enkele verbinding van VPN
 * Het Splunk door:sturen vermogen is niet mogelijk over een verbinding van VPN.
+* DNS Resolvers moeten in de ruimte van het Adres van de Gateway worden vermeld om privé hostnames op te lossen.
 
 ### Maken {#vpn-creation}
 

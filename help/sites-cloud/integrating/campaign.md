@@ -4,17 +4,17 @@ description: Leer over de steun van AEM as a Cloud Service voor integratie met A
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: c4daf04d5520da1e646f35ba72c9f53cb1d97d36
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 1%
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 
 
 # Integratie AEM as a Cloud Service met Adobe Campaign {#integrating-campaign}
 
-Leer over de steun van AEM as a Cloud Service voor integratie met Adobe Campaign.
+Meer informatie over AEM as a Cloud Service ondersteuning voor integratie met Adobe Campaign.
 
 >[!NOTE]
 >
