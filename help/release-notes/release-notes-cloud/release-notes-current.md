@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8c33426c38b087c83b945572374089ad9cb44daf
+source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Bekijk de video Overzicht van de release van januari 2024 voor een overzicht van
 
 ![Extension Manager in AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
-Met de Extension Manager in AEM Sites kunnen ontwikkelaars en professionals UI-extensies die zijn gemaakt om de functionaliteit van AEM Sites te verbeteren, openen, beheren en aanpassen.
+Met de Extension Manager in AEM Sites kunnen ontwikkelaars en beoefenaars toegang krijgen tot de toepassing, beheren en aanpassen [UI-extensies](https://developer.adobe.com/uix/docs/) gebouwd met [Adobe App Builder](https://developer.adobe.com/app-builder/) verbeteren van de functionaliteit van AEM Sites.
 Met de Extension Manager kunt u:
 
 * Extensies per geval in- of uitschakelen;
