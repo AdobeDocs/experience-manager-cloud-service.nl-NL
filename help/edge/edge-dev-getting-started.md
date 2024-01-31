@@ -2,9 +2,9 @@
 title: Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge Delivery Services
 description: Deze gids zal u met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoud creatie op de hoogte brengen
 feature: Edge Delivery Services
-source-git-commit: eae751441435949296eb76a7e9b4103393860a8d
+source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,6 @@ Eerst zult u een nieuw project op GitHub moeten tot stand brengen, dat op het ma
    ![Opslagproject kopiëren](assets/edge-dev-getting-started/use-template-project.png)
 
 1. Standaard wordt de opslagplaats aan u toegewezen. Wijzig dit zo nodig en geef een naam en beschrijving voor de gegevensopslagplaats op en klik op **Opslagplaats maken**.
-
-   * De gegevensopslagruimte moet **Openbaar**.
 
    ![De opslagplaats maken](assets/edge-dev-getting-started/create-repo.png)
 
