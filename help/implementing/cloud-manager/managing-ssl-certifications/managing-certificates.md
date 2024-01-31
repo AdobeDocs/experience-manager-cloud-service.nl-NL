@@ -2,7 +2,7 @@
 title: SSL-certificaten beheren
 description: Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -18,9 +18,9 @@ Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te contro
 
 De status van uw SSL-certificaten kan in één oogopslag worden geïnterpreteerd vanaf de pagina met het SSL-certificaat.
 
-* **Groen** - Deze status geeft aan dat uw certificaat ten minste 60 dagen geldig is vanaf de huidige datum.
+* **Groen** - Deze status geeft aan dat uw certificaat ten minste 14 dagen geldig is vanaf de huidige datum.
 
-* **Oranje** - Deze status geeft aan dat uw certificaat over minder dan 60 dagen verloopt.
+* **Oranje** - Deze status geeft aan dat uw certificaat over minder dan 14 dagen verloopt.
    * Het wordt tijd om ervoor te zorgen dat u een abonnement hebt om uw certificaat te vernieuwen en dit te vervangen door de gebruikersinterface van Cloud Manager om mogelijke toegang tot of uitval van sites te voorkomen.
    * Cloud Manager verzendt regelmatig meldingen in de gebruikersinterface om u te waarschuwen voor het binnenkort verlopen van een certificaat.
 
