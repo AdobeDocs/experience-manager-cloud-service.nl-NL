@@ -1,95 +1,298 @@
 ---
-title: Veldtypen
-description: Leer meer over de verschillende typen velden die de Universal Editor in de componentrails kan bewerken met voorbeelden van hoe u uw eigen app kunt bewerken.
+title: Modeldefinities, velden en componenttypen
+description: In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
+source-wordcount: '1000'
+ht-degree: 1%
 
 ---
 
 
-# Veldtypen {#field-types}
+# Modeldefinities, velden en componenttypen {#field-types}
 
-Leer meer over de verschillende typen velden die de Universal Editor in de componentrails kan bewerken met voorbeelden van hoe u uw eigen app kunt bewerken.
+In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 
 {{universal-editor-status}}
 
 ## Overzicht {#overview}
 
-Wanneer u uw eigen toepassingen aanpast voor gebruik met de Universal Editor, moet u de componenten instrumenten en definiëren welke gegevenstypen deze kunnen manipuleren in de componentrail van de editor.
+Wanneer u uw eigen toepassingen aanpast voor gebruik met de Universal Editor, moet u de componenten instrumenten en definiëren welke velden en componenttypen zij kunnen manipuleren in de eigenschappentrack van de editor. U doet dit door een model te creëren en met dat van de component te verbinden.
 
-Dit document biedt een overzicht van de veldtypen die u kunt gebruiken, samen met voorbeeldconfiguraties.
+Dit document biedt een overzicht van een modeldefinitie en van de velden en componenttypen waarover u beschikt, samen met voorbeeldconfiguraties.
 
 >[!TIP]
 >
 >Als u niet bekend bent met het instrumenteren van uw app voor de Universal Editor, raadpleegt u het document [Overzicht van de Universal Editor voor AEM ontwikkelaars.](/help/implementing/universal-editor/developer-overview.md)
 
-## Boolean {#boolean}
+## Modeldefinitiestructuur {#model-structure}
 
-In een Booleaans veld wordt een eenvoudige true/false-waarde opgeslagen die als een selectievakje wordt weergegeven.
+Om een component te configureren via de eigenschappen rail in de Universal Editor moet een modeldefinitie bestaan en aan de component zijn gekoppeld.
 
-### Monster {#sample-boolean}
+De modeldefinitie is een JSON-structuur, te beginnen met een array van modellen.
+
+```json
+[
+  {
+    "id": "model-id",        // must be unique
+    "fields": []             // array of fields which shall be rendered in the properties rail
+  }
+]
+```
+
+Zie de **[Velden](#fields)** voor meer informatie over het definiëren van uw `fields` array.
+
+Als u de modeldefinitie met een component wilt gebruiken, `data-aue-model` kan worden gebruikt.
+
+```html
+<div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
+```
+
+## Modeldefinitie laden {#loading-model}
+
+Wanneer een model is gemaakt, kan ernaar worden verwezen als een extern bestand.
+
+```html
+<script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
+```
+
+U kunt het model ook inline definiëren.
+
+```html
+<script type="application/vnd.adobe.aue.model+json">
+  { ... model definition ... }
+</script>
+```
+
+## Velden {#fields}
+
+Een veldobject heeft de volgende typedefinitie.
+
+| Configuratie | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `component` | `ComponentType` | Renderer van de component | Ja |
+| `name` | `string` | Eigenschap waar de gegevens moeten worden gecontinueerd | Ja |
+| `label` | `FieldLabel` | Label van het veld | Ja |
+| `description` | `FieldDescription` | Beschrijving van het veld | Nee |
+| `placeholder` | `string` | Plaatsaanduiding voor het veld | Nee |
+| `value` | `FieldValue` | Standaardwaarde | Nee |
+| `valueType` | `ValueType` | Standaardvalidatie, kan `string`, `string[]`, `number`, `date`, `boolean` | Nee |
+| `required` | `boolean` | Is het vereiste veld | Nee |
+| `readOnly` | `boolean` | Is het veld alleen-lezen | Nee |
+| `hidden` | `boolean` | Is het veld standaard verborgen | Nee |
+| `condition` | `RulesLogic` | Regel om het veld weer te geven of te verbergen | Nee |
+| `multi` | `boolean` | Is het veld een veld met meerdere velden | Nee |
+| `validation` | `ValidationType` | Validatieregel(s) voor het veld | Nee |
+| `raw` | `unknown` | Onbewerkte gegevens die door de component kunnen worden gebruikt | Nee |
+
+### Componenttypen {#component-types}
+
+Hieronder vindt u de componenttypen die u kunt gebruiken voor het weergeven van velden.
+
+#### AEM {#aem-tag}
+
+Een AEM-tagcomponenttype maakt een AEM tagkiezer mogelijk, die kan worden gebruikt om tags aan de component te koppelen.
+
+##### Monster {#sample-aem-tag}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "aem-tag-picker",
+  "fields": [
+    {
+      "component": "aem-tag",
+      "label": "AEM Tag Picker",
+      "name": "cq:tags",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### Schermafbeelding {#screenshot-aem-tag}
+
+![Screenshot van AEM type tagcomponent](assets/component-types/aem-tag-picker.png)
+
+#### Inhoud AEM {#aem-content}
+
+Een AEM type inhoudcomponent laat een AEM inhoudkiezer toe, die kan worden gebruikt om inhoudsverwijzingen te plaatsen.
+
+##### Monster {#sample-aem-content}
+
+```json
+{
+  "id": "aem-content-picker",
+  "fields": [
+    {
+      "component": "aem-content",
+      "name": "reference",
+      "value": "",
+      "label": "AEM Content Picker",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### Schermafbeelding {#screenshot-aem-content}
+
+![Screenshot van AEM type inhoudcomponent](assets/component-types/aem-content-picker.png)
+
+#### Boolean {#boolean}
+
+Een type van booleaanse component slaat een eenvoudige waar/vals waarde op die als knevel wordt teruggegeven. Het biedt een aanvullend validatietype aan.
+
+| Validatietype | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `customErrorMsg` | `string` | Bericht dat zal tonen als de ingevoerde waarde geen booleaanse waarde is | Nee |
+
+##### Monster {#sample-boolean}
+
+```json
+{
+  "id": "boolean",
+  "fields": [
+    {
       "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
+      "valueType": "boolean"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-boolean",
+  "fields": [
+    {
+      "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
       "valueType": "boolean",
-      "name": "field1",
-      "label": "Boolean Field",
-      "description": "This is a boolean field.",
-      "required": true,
-      "placeholder": null,
       "validation": {
-        "customErrorMsg": "This is an error."
+        "customErrorMsg": "Think, McFly. Think!"
       }
     }
   ]
 }
 ```
 
-## Groep selectievakjes {#checkbox-group}
+##### Schermafbeelding {#screenshot-boolean}
 
-Net als bij een booleaanse set, kunt u met een groep selectievakjes meerdere waar-/onwaar-items selecteren.
+![Screenshot van het type Boolean-component](assets/component-types/boolean.png)
 
-### Monster {#sample-checkbox-group}
+#### Groep selectievakjes {#checkbox-group}
+
+Net als bij een booleaanse component staat een componenttype voor selectievakjes het selecteren van meerdere true/false-items toe, die als meerdere selectievakjes worden weergegeven.
+
+##### Monster {#sample-checkbox-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "checkbox-group",
+  "fields": [
+    {
       "component": "checkbox-group",
-      "valueType": "string-array",
-      "name": "field1",
       "label": "Checkbox Group",
-      "description": "This is a checkbox group.",
-      "required": true,
-      "placeholder": null,
+      "name": "checkbox",
+      "valueType": "string[]",
       "options": [
-        { "name": "First option", "value": "one" },
-        { "name": "Second option", "value": "two" },
-        { "name": "Third option", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## Datum en tijd {#date-time}
+#### Schermafbeelding {#screenshot-checkbox-group}
 
-Met een datumtijdveld kan een datum of tijd of een combinatie daarvan worden opgegeven.
+![Screenshot van het componenttype van de checkbox groep](assets/component-types/checkbox-group.png)
 
-### Monster {#sample-date-time}
+#### Container {#container}
+
+Met een containercomponenttype kunnen componenten worden gegroepeerd. Het biedt een extra configuratie aan.
+
+| Configuratie | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `collapsible` | `boolean` | Is de container inklapbaar | Nee |
+
+##### Monster {#sample-container}
+
+```json
+ {
+  "id": "container",
+  "fields": [
+    {
+      "component": "container",
+      "label": "Container",
+      "name": "container",
+      "valueType": "string",
+      "collapsible": true,
+      "fields": [
+        {
+          "component": "text-input",
+          "label": "Simple Text 1",
+          "name": "text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "label": "Simple Text 2",
+          "name": "text2",
+          "valueType": "string"
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### Schermafbeelding {#screenshot-container}
+
+![Screenshot van het type containercomponent](assets/component-types/container.png)
+
+#### Datum en tijd {#date-time}
+
+Met een componenttype voor datumtijd kunt u een datum, tijd of combinatie daarvan opgeven. Het biedt extra configuraties aan.
+
+| Configuratie | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `displayFormat` | `string` | Indeling waarmee de datumtekenreeks moet worden weergegeven | Ja |
+| `valueFormat` | `string` | Indeling waarin de datumtekenreeks moet worden opgeslagen | Ja |
+
+Het biedt ook een aanvullend validatietype.
+
+| Validatietype | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `valueFormat` is niet voldaan | Nee |
+
+##### Monster {#sample-date-time}
 
 ```json
 {
-  "fields": [   
-      {
+  "id": "date-time",
+  "fields": [
+    {
       "component": "date-time",
-      "valueType": "date-time",
+      "label": "Date & Time",
+      "name": "date",
+      "valueType": "date"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-date-time",
+  "fields": [
+    {
+      "component": "date-time",
+       "valueType": "date-time",
       "name": "field1",
       "label": "Date Time",
       "description": "This is a date time field that stores both date and time.",
@@ -133,15 +336,103 @@ Met een datumtijdveld kan een datum of tijd of een combinatie daarvan worden opg
 }
 ```
 
-## Getal {#number}
+##### Schermafbeelding {#screenshot-date-time}
 
-In een nummerveld kan een getal worden ingevoerd.
+![Screenshot van componenttype voor datumtijd](assets/component-types/date-time.png)
 
-### Monster {#sample-number}
+#### Multiselect {#multiselect}
+
+Een multiselect componenttype stelt veelvoudige punten voor selectie in een drop-down met inbegrip van de capaciteit voor om de selecteerbare elementen te groeperen.
+
+##### Voorbeelden {#sample-multiselect}
 
 ```json
 {
-  "fields": [   
+  "id": "multiselect",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "multiselect",
+      "label": "Multi Select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "multiselect-grouped",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "property",
+      "label": "Multiselect field",
+      "valueType": "string",
+      "required": true,
+      "maxSize": 2,
+      "options": [
+        {
+          "name": "Theme",
+          "children": [
+            { "name": "Light", "value": "light" },
+            { "name": "Dark",  "value": "dark" }
+          ]
+        },
+        {
+          "name": "Type",
+          "children": [
+            { "name": "Alpha", "value": "alpha" },
+            { "name": "Beta", "value": "beta" },
+            { "name": "Gamma", "value": "gamma" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### Screenshots {#screenshot-multiselect}
+
+![Screenshot van multiselect componenttype](assets/component-types/multiselect.png)
+![Screenshot van multiselect componenttype met groepering](assets/component-types/multiselect-group.png)
+
+#### Getal {#number}
+
+Een type van aantalcomponent staat voor de input van een aantal toe. Er zijn aanvullende validatietypen.
+
+| Validatietype | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `numberMin` | `number` | Minimaal toegestane aantal | Nee |
+| `numberMax` | `number` | Maximaal toegestaan aantal | Nee |
+| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `numberMin` of `numberMax` is niet voldaan | Nee |
+
+##### Monster {#sample-number}
+
+```json
+{
+  "id": "number",
+  "fields": [
+    {
+      "component": "number",
+      "name": "number",
+      "label": "Number",
+      "valueType": "number",
+      "value": 0
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-number",
+  "fields": [
    {
       "component": "number",
       "valueType": "number",
@@ -151,189 +442,239 @@ In een nummerveld kan een getal worden ingevoerd.
       "required": true,
       "placeholder": null,
       "validation": {
-        "numberMin": null,
-        "numberMax": null,
-        "customErrorMsg": "Please don't do that."
+        "numberMin": 0,
+        "numberMax": 88,
+        "customErrorMsg": "You also need 1.21 gigawatts."
       }
     }
   ]
 }
 ```
 
-## Groep keuzerondjes {#radio-group}
+##### Schermafbeelding {#screenshot-number}
 
-Een groep keuzerondjes maakt het mogelijk een selectie uit te sluiten op basis van meerdere opties die worden weergegeven als een groep die lijkt op een groep selectievakjes.
+![Screenshot van type Number-component](assets/component-types/number.png)
 
-### Monster {#sample-radio-group}
+#### Groep keuzerondjes {#radio-group}
+
+Een componenttype voor een groep keuzerondjes maakt het mogelijk om meerdere opties die als een groep worden gerenderd, uit te sluiten, net als een groep selectievakjes.
+
+##### Monster {#sample-radio-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "radio-group",
+  "fields": [
+    {
       "component": "radio-group",
-      "valueType": "string",
-      "name": "field1",
       "label": "Radio Group",
-      "description": "This is a radio group.",
-      "required": true,
-      "placeholder": null,
+      "name": "radio",
+      "valueType": "string",
       "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## Referentie {#reference}
+##### Schermafbeelding {#screenshot-radio-group}
 
-Met een verwijzing kan een ander gegevensobject worden opgegeven als een referentie van het huidige object.
+![Screenshot van het componenttype van de groep keuzerondjes](assets/component-types/radio.png)
 
-## Selecteren {#select}
+#### Referentie {#reference}
 
-Met een selectie kunt u een of meer vooraf gedefinieerde opties in een vervolgkeuzemenu selecteren.
+Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject van het huidige object mogelijk.
 
-### Monster {#sample-select}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "select",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Select",
-      "description": "This is a select.",
-      "required": true,
-      "placeholder": null,
-      "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
-      ],
-      "emptyOption": true
-    }
-  ]
-}
-```
-
-## Tekstgebied {#text-area}
-
-Een tekstgebied staat voor multi-lijntekstinput toe.
-
-### Monster {#sample-text-area}
+##### Monster {#sample-reference}
 
 ```json
 {
-  "fields": [   
-   {
-      "component": "text-area",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Area",
-      "description": "This is a text area.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "mimeType": "text/x-markdown"
-    }
-  ]
-}
-```
-
-## Tekstinvoer {#text-input}
-
-Een tekstinvoer maakt het mogelijk om één regel tekst in te voeren.
-
-### Monster {#sample-text-input}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Input",
-      "description": "This is a text input.",
-      "required": true,
-      "multi": true,
-      "placeholder": null
-    },
+  "id": "reference",
+  "fields": [
     {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field2",
-      "label": "Another Text Input",
-      "description": "This is a text input with validation.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "validation": {
-        "minLength": 5,
-        "maxLength": 10,
-        "regExp": "^foo:.*",
-        "customErrorMsg": "I'm sorry, Dave. I can't do that."
-      }
+      "component": "reference",
+      "label": "Reference",
+      "name": "reference",
+      "valueType": "string"
     }
   ]
 }
 ```
 
-## Tab {#tab}
+##### Schermafbeelding {#screenshot-reference}
 
-Op een tabblad kunt u andere invoervelden groeperen op meerdere tabbladen om de indeling van de auteurs te verbeteren.
+![Screenshot van referentiecomponenttype](assets/component-types/reference.png)
+
+#### Selecteren {#select}
+
+Met een componenttype select kunt u één optie selecteren in een lijst met vooraf gedefinieerde opties in een vervolgkeuzemenu.
+
+##### Monster {#sample-select}
+
+```json
+{
+  "id": "select",
+  "fields": [
+    {
+      "component": "select",
+      "label": "Select",
+      "name": "select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+##### Schermafbeelding {#screenshot-select}
+
+![Screenshot van select componenttype](assets/component-types/select.png)
+
+#### Tab {#tab}
+
+Met een componenttype tab kunt u andere invoervelden groeperen op meerdere tabbladen om de indeling van de auteurs te verbeteren.
 
 A `tab` definitie kan worden beschouwd als een scheidingsteken in de array van `fields`. Alles wat na een `tab` wordt op dat tabblad geplaatst totdat er een nieuwe `tab` aangetroffen, waarbij de volgende items op het nieuwe tabblad worden geplaatst.
 
 Als u items boven alle tabbladen wilt weergeven, moet u deze vóór alle tabbladen definiëren.
 
-### Monster {#sample-tab}
+##### Monster {#sample-tab}
 
 ```json
 {
-  "id": "title",
+  "id": "tab",
   "fields": [
     {
       "component": "tab",
-      "label": "Tab",
+      "label": "Tab 1",
       "name": "tab1"
     },
     {
       "component": "text-input",
-      "name": "tab-response",
-      "value": "",
-      "placeholder": "Tab? I can't give you a tab unless you order something.",
-      "label": "Lou",
+      "label": "Text 1",
+      "name": "text1",
       "valueType": "string"
     },
     {
       "component": "tab",
-      "label": "Pepsi Free",
+      "label": "Tab 2",
       "name": "tab2"
     },
     {
       "component": "text-input",
-      "name": "pepsi-free-response",
-      "value": "",
-      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
-      "label": "Mr. Carruthers",
+      "label": "Text 2",
+      "name": "text2",
       "valueType": "string"
-    },
-    {
-      "component": "select",
-      "name": "without-sugar",
-      "value": "coffee",
-      "label": "Something without sugar",
-      "valueType": "string",
-      "options": [
-        { "name": "Coffee", "value": "coffee" },
-        { "name": "Hot Coffee", "value": "hot-coffee" },
-        { "name": "Hotter Coffee", "value": "hotter-coffee" }
-      ]
     }
   ]
 }
 ```
+
+##### Schermafbeelding {#screenshot-tab}
+
+![Screenshot van type component tab](assets/component-types/tab.png)
+
+#### Tekstgebied {#text-area}
+
+Een tekstgebied staat voor multi-lijn, rijke tekstinput toe. Er zijn aanvullende validatietypen.
+
+| Validatietype | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `maxSize` | `number` | Maximum aantal toegestane tekens | Nee |
+| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `maxSize` is overschreden | Nee |
+
+##### Monster {#sample-text-area}
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+##### Schermafbeelding {#screenshot-text-area}
+
+![Screenshot van het type tekstgebiedcomponent](assets/component-types/richtext.png)
+
+#### Tekstinvoer {#text-input}
+
+Een tekstinvoer maakt het mogelijk om één regel tekst in te voeren.  Het bevat aanvullende validatietypen.
+
+| Validatietype | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `minLength` | `number` | Minimum aantal toegestane tekens | Nee |
+| `maxLength` | `number` | Maximaal aantal tekens toegestaan | Nee |
+| `regExp` | `string` | Gewone expressie die moet overeenkomen met de invoertekst | Nee |
+| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `minLength`, `maxLength`, en/of `regExp` is/is overtreden | Nee |
+
+##### Monster {#sample-text-input}
+
+```json
+{
+  "id": "simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string",
+      "description": "This is a text input with validation.",
+      "required": true,
+      "validation": {
+        "minLength": 1955,
+        "maxLength": 1985,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
+      }
+    }
+  ]
+}
+```
+
+##### Schermafbeelding {#screenshot-text-input}
+
+![Screenshot van het type tekstinvoercomponent](assets/component-types/simpletext.png)
