@@ -1,18 +1,18 @@
 ---
-title: Importeer/exporteer metadata van assets bulksgewijs
+title: Metagegevens van elementen in bulk importeren en exporteren
 description: In dit artikel wordt beschreven hoe u metagegevens bulksgewijs kunt importeren en exporteren.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 9%
+source-wordcount: '710'
+ht-degree: 4%
 
 ---
 
-# Importeer/exporteer metadata van assets bulksgewijs {#import-and-export-asset-metadata-in-bulk}
+# Metagegevens van elementen in bulk importeren en exporteren {#import-and-export-asset-metadata-in-bulk}
 
 Met Adobe Experience Manager Assets kunt u metagegevens van elementen in bulk importeren met behulp van een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
 
@@ -32,7 +32,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    | ---------------------- | ------- |
    | Batchgrootte | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
    | Veldscheider | Standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
-   | Scheidingsteken voor meerdere waarden | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|`. |
+   | Scheidingsteken voor meerdere waarden | Scheidingsteken voor metagegevenswaarden. Standaardwaarde is `|`. |
    | Workflows starten | Standaard false. Wanneer ingesteld op `true` en de standaardinstellingen zijn van kracht voor de DAM Metadata WriteBack-workflow (die metagegevens naar de binaire XMP schrijft). Als u de workflows inschakelt, wordt het systeem trager. |
    | Kolomnaam elementpad | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
@@ -61,6 +61,10 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 * Test of controleer de metagegevens op conformiteit.
 * De metagegevens extern maken voor afzonderlijke lokalisatie.
 
+>[!NOTE]
+>
+>Metagegevens worden beperkt tot 1.048.575 Elementen, wat overeenkomt met de maximale werkbladgrootte in Microsoft Excel. Als een geëxporteerde hiërarchie meer dan dit aantal elementen bevat, worden alleen de metagegevens van de eerste 1.048.575 Elementen opgenomen in het CSV-bestand.
+
 1. Selecteer de elementenmap die elementen bevat waarvoor u metagegevens wilt exporteren. Selecteer **[!UICONTROL Export metadata]** in de werkbalk.
 1. Geef in het dialoogvenster Metagegevens exporteren een naam op voor het CSV-bestand. Selecteer **[!UICONTROL Include assets in subfolders]**.
 
@@ -80,15 +84,15 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 
 >[!MORELIKETHIS]
