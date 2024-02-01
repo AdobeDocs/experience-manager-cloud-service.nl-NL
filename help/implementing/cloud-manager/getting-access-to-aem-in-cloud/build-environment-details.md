@@ -2,9 +2,9 @@
 title: Build-omgeving
 description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
+source-git-commit: 30f2eaf4d2edba13e875cd1bfe767e83a2b7f1a5
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is geconfigureerd op systeemniveau met een `settings.xml` bestand, dat automatisch de openbare gegevensopslagruimte voor Adoben bevat met een profiel genaamd `adobe-public`. (Zie [Adobe openbaar gemaakte opslagplaats](https://repo1.maven.org/) voor meer informatie ).
-* Node.js 18 is beschikbaar voor [voorkant en volledige stapelleidingen.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >

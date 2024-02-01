@@ -2,9 +2,9 @@
 title: Sites ontwikkelen met behulp van de voorste pijplijn
 description: Met de front-end pijpleiding wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en het ontwikkelingsproces kan aanzienlijk sneller worden. In dit document worden enkele specifieke aspecten beschreven van het constructieproces aan de voorzijde die moeten worden vermeld.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
+source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,22 @@ ht-degree: 0%
 
 ## Front-end bouwcontract {#front-end-build-contract}
 
-Vergelijkbaar met de [volledige-stapelomgeving,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) de front-end pijpleiding heeft een eigen omgeving. Ontwikkelaars hebben enige flexibiliteit in deze pijpleiding zolang het volgende front-end bouwcontract wordt waargenomen.
+Vergelijkbaar met de [volledige-stapelomgeving,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) de front-end pijpleiding heeft een eigen omgeving. De ontwikkelaars hebben wat flexibiliteit gebruikend deze pijpleiding zolang het volgende front-end bouwcontract wordt waargenomen.
 
-De front-end pijpleiding vereist het front-end project Node.js om het te gebruiken `build` manuscriptrichtlijn om de bouwstijl te produceren die door de front-end pijpleiding wordt opgesteld. Cloud Manager gebruikt de opdracht `npm run build` om het plaatsbare project aan te produceren `dist` map.
+De front-end pijpleiding vereist het front-end project Node.js om het te gebruiken `build` manuscriptrichtlijn om de bouwstijl te produceren die het opstelt. Dit komt omdat Cloud Manager de opdracht gebruikt `npm run build` om het plaatsbare project voor de front-end bouwt te produceren.
 
-De inhoud van de `dist` Deze map is de map die uiteindelijk wordt geïmplementeerd om AEM as a Cloud Service te maken via de Cloud Manager-pijplijn.
+De daaruit voortvloeiende inhoud van de `dist` Deze map wordt uiteindelijk geïmplementeerd door Cloud Manager en fungeert als statische bestanden. Deze bestanden worden extern naar AEM gehost, maar worden via een `/content/...` URL op de geïmplementeerde omgeving.
 
-### Node-versies {#node-versions}
+## Node-versies {#node-versions}
 
-Door gebrek gebruikt de front-end pijpleiding Node 14, maar 12, 16 en 18 zijn ook beschikbaar.
+De front-end bouwt milieu steunt de volgende versies Node.js.
 
-U kunt de `NODE_VERSION` omgevingsvariabele om de gewenste versie in te stellen.
+* 12
+* 14 (standaard)
+* 16
+* 18
+
+U kunt de `NODE_VERSION` [omgevingsvariabele](/help/implementing/cloud-manager/environment-variables.md) om de gewenste versie in te stellen.
 
 ## Eén betrouwbare bron {#single-source-of-truth}
 
