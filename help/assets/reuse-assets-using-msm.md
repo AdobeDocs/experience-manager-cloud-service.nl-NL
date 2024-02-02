@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 10%
+source-wordcount: '3287'
+ht-degree: 9%
 
 ---
 
@@ -166,7 +166,7 @@ Voor een bronmiddel of een omslag, kunt u de volgende informatie zien en de volg
 * De verhouding van de onderbreking of veranderingsuitrolconfiguratie voor een specifieke levende kopie.
 * Open de overzichtsconsole van de live kopie.
 
-Selecteer het bronelement of de bronmap, open het linkerspoor en klik op **[!UICONTROL References]**. U kunt ook een asset of map selecteren en de sneltoets `Alt + 4` gebruiken. 
+Selecteer het bronelement of de bronmap, open het linkerspoor en klik op **[!UICONTROL References]**. U kunt ook een element of map selecteren en de sneltoets gebruiken `Alt + 4`.
 
 ![Handelingen en informatie die beschikbaar zijn in de referentiespoor voor de geselecteerde bron](assets/referencerail_source.png)
 
@@ -186,7 +186,7 @@ Voor een actief exemplaar of een omslag van het levende exemplaar, kunt u de vol
 * Een specifieke live kopie openen of weergeven in [!DNL Experience Manager] gebruikersinterface.
 * De updates uitvoeren.
 
-Selecteer een asset of map met livekopieën, open het linkerspoor en klik op **[!UICONTROL References]**. U kunt ook een asset of map selecteren en de sneltoets `Alt + 4` gebruiken. 
+Selecteer een asset of map met livekopieën, open het linkerspoor en klik op **[!UICONTROL References]**. U kunt ook een element of map selecteren en de sneltoets gebruiken `Alt + 4`.
 
 ![Acties die beschikbaar zijn in het spoor Referenties voor de geselecteerde livekopie](assets/referencerail_livecopy.png)
 
@@ -248,8 +248,8 @@ Zie [Informatie en status van een livekopie](#status-lc-asset) en [Informatie en
 U kunt de overerving van Live kopie annuleren voor een:
 
 * metagegevensveld
-* Variatie van inhoudsfragment
-* Gegevensveld Inhoudsfragment
+* [Variatie van inhoudsfragment](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [Gegevensveld Inhoudsfragment](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
 Dit betekent dat het item niet meer wordt gesynchroniseerd met de broncomponent. U kunt overerving indien nodig op een later tijdstip inschakelen.
 
@@ -319,7 +319,7 @@ Als een live-kopieermap meerdere elementen bevat, kan het lastig zijn acties op 
 
 1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Live Copy Overview]** om de console te openen.
-1. Selecteer in dit dashboard een asset van een livekopie van een map met livekopieën. Klik op de gewenste acties op de werkbalk. De beschikbare acties zijn **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]** en **[!UICONTROL Detach]**. U kunt deze handelingen snel uitvoeren op elk element in een willekeurig aantal mappen met live kopieën dat een live relatie heeft met de geselecteerde bronmap.
+1. Selecteer in dit dashboard een asset van een livekopie van een map met livekopieën. Klik op de gewenste acties op de werkbalk. De beschikbare acties zijn: **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, en **[!UICONTROL Detach]**. U kunt deze handelingen snel uitvoeren op elk element in een willekeurig aantal mappen met live kopieën dat een live relatie heeft met de geselecteerde bronmap.
 
    ![U kunt gemakkelijk veel elementen in mappen met live kopieën bijwerken vanuit de overzichtsconsole van Live Copy](assets/livecopyconsole_update_many_assets.png)
 
@@ -374,15 +374,15 @@ De volgende beperkingen van MSM voor [!DNL Assets].
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
+* [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
