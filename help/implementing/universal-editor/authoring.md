@@ -2,9 +2,9 @@
 title: Inhoud ontwerpen met de Universal Editor
 description: Leer hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: a616b27c5212b00d3b51778402ed52a68028fdaf
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2189'
 ht-degree: 0%
 
 ---
@@ -295,11 +295,14 @@ De details van uw tekst zijn ook beschikbaar in de eigenschappen rail. Wijziging
 
 U kunt de tekst op zijn plaats bewerken door te dubbelklikken op de component of erop te dubbeltikken.
 
-Druk op Enter/Return of selecteer buiten het tekstvak om uw wijzigingen op te slaan.
-
 ![Een RTF-component bewerken](assets/rich-text-editing.png)
 
-Opmaakopties en details in de tekst zijn ook beschikbaar in de eigenschappenrails. Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat in de eigenschappenrails.
+Voor uw gemak zijn opmaakopties en details op uw tekst beschikbaar op twee plaatsen.
+
+* De **contextmenu** wordt boven het tekstblok met tekstopmaak geopend en biedt in context basisopmaakopties. Vanwege ruimtebeperkingen kunnen sommige opties achter de knop voor ovaal worden verborgen.
+* De **eigenschappen per spoor** toont alle opmaakopties die beschikbaar zijn samen met de tekst.
+
+Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat.
 
 ### Media bewerken {#edit-media}
 
