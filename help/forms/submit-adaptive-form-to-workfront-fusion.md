@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
+source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
 workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 0%
@@ -22,6 +22,7 @@ ht-degree: 0%
 Met Workfront Fusion kunt u bijvoorbeeld een scenario maken voor het verzamelen van gegevens met Adaptief formulier, het verwerken van de gegevens en het verzenden van de gegevens naar een gegevensopslagruimte voor archivering. Wanneer een scenario is ingesteld, voert Workfront Fusion automatisch de taken uit wanneer een gebruiker een formulier invult en de gegevensopslag naadloos bijwerkt.
 
 AEM as a Cloud Service biedt verschillende mogelijkheden in het vak om acties in te dienen voor de verwerking van formulierverzendingen. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md)  artikel.
+
 
 ## Voordelen van het gebruik van Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
