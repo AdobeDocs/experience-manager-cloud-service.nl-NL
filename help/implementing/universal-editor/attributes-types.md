@@ -2,7 +2,7 @@
 title: Kenmerken en itemtypen
 description: Leer over de gegevensattributen en de punttypes die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: ff8a832d61e42ac17ca37e5a3c41e39119879af6
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -30,11 +30,11 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 |---|---|
 | `data-aue-resource` | URL aan het middel, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
 | `data-aue-prop` | Kenmerk van de bron, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
-| `data-aue-type` | Type van het bewerkbare item (bijvoorbeeld tekst, afbeelding en verwijzing) |
+| `data-aue-type` | [Type van het bewerkbare item](#item-types) (bijvoorbeeld tekst, afbeelding en verwijzing) |
 | `data-aue-filter` | Definieert welke verwijzingen kunnen worden gebruikt |
 | `data-aue-label` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven <br>In geval van `itemmodel` is ingesteld, wordt het label opgehaald via het model |
 | `data-aue-model` | Definieert een model dat wordt gebruikt voor bewerkingen op basis van formulieren in de rail Eigenschappen |
-| `data-aue-behavior` | Hiermee definieert u bijvoorbeeld het gedrag van een instrumentatie waarbij afzonderlijke tekst of afbeelding ook een component kan simuleren om deze verplaatsbaar of verschuifbaar te maken |
+| `data-aue-behavior` | Definieert de [gedrag van een instrumentatie;](#behaviors) zelfstandige tekst of afbeelding kan bijvoorbeeld ook een component simuleren om deze te verplaatsen of te verwijderen |
 
 ## Itemtypen {#item-types}
 
