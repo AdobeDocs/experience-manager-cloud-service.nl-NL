@@ -2,9 +2,9 @@
 title: Dynatrace
 description: Leer hoe u Dynatrace gebruikt met AEM as a Cloud Service
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: a234f2a00c51bcb23b0c52feac9971259d26b8c3
+source-git-commit: fec3aa6debec49014406ab241c3ce0338ec5a1d2
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ De details die voor connectiviteitsverzoeken worden vereist worden hieronder bes
 
 | **Veld** | **Beschrijving** |
 |---|---|
-| URL van dynamische omgeving | De URL van uw Dynatrace-omgeving.<br><br>Voor klanten van Dynatrace SaaS is de indeling `https://<your-environment-id>.live.dynatrace.com`.<br><br>Voor klanten met Dynatrace Managed is de indeling `https://<your-managed-url>/e/<environmentId>` |
-| ID Dynatracie | Uw ID van de dynatraciemilieu. Zie [Informatie over de dynamische omgeving ophalen](#get-dynatrace-env-info) voor hoe dit te krijgen. |
-| Dynatrace Environment Token | Uw Dynatrace-omgevingstoken. Zie [Informatie over de dynamische omgeving ophalen](#get-dynatrace-env-info) voor hoe dit te krijgen.<br><br>Dit moet als een geheim worden beschouwd, dus gebruik passende veiligheidspraktijken. Het wachtwoord beveiligt het bijvoorbeeld in een website, zoals **zerobin.net**, waarnaar het klantenondersteuningsticket kan verwijzen, samen met het wachtwoord. |
-| Toegangstoken API van Dynatrace | Het API toegangstoken van uw milieu van de Naslaggids.  Zie [Een API-toegangstoken voor dynamisch maken](#create-dynatrace-access-token) voor hoe u dit kunt maken.<br><br>Dit moet als een geheim worden beschouwd, dus gebruik maken van passende veiligheidspraktijken. Het wachtwoord beveiligt het bijvoorbeeld in een website, zoals **zerobin.net**, waarnaar het klantenondersteuningsticket kan verwijzen, samen met het wachtwoord.<br><br>Opmerking: dit is alleen vereist voor Dynatrace Managed. |
-| Dynatrace ActiveGate-poort | De ActiveGate-poort van de Dynatrace waarmee de AEM moet worden verbonden.<br><br>Opmerking: dit is alleen vereist voor Dynatrace Managed. |
-| Dynatrace ActiveGate Network Zone | Uw [Dynatrace ActiveGate-netwerkzone](https://docs.dynatrace.com/docs/manage/network-zones) om AEM controlegegevens efficiënt over gegevenscentra en netwerkgebieden te leiden.<br><br>Opmerking: een ActiveGate-netwerkzone van Dynarace is optioneel. |
-| AEM milieu-id(&#39;s) | De AEM milieu-id(s) voor Dynatrace om te controleren. |
+| [!DNL Dynatrace Environment URL] | De URL van uw Dynatrace-omgeving.<br><br>Voor klanten van Dynatrace SaaS is de indeling `https://<your-environment-id>.live.dynatrace.com`.<br><br>Voor klanten met Dynatrace Managed is de indeling `https://<your-managed-url>/e/<environmentId>` |
+| [!DNL Dynatrace Environment ID] | Uw ID van de dynatraciemilieu. Zie [Informatie over de dynamische omgeving ophalen](#get-dynatrace-env-info) voor hoe dit te krijgen. |
+| [!DNL Dynatrace Environment Token] | Uw Dynatrace-omgevingstoken. Zie [Informatie over de dynamische omgeving ophalen](#get-dynatrace-env-info) voor hoe dit te krijgen.<br><br>Dit moet als een geheim worden beschouwd, dus gebruik passende veiligheidspraktijken. Het wachtwoord beveiligt het bijvoorbeeld in een website, zoals **zerobin.net**, waarnaar het klantenondersteuningsticket kan verwijzen, samen met het wachtwoord. |
+| [!DNL Dynatrace API access token] | Het API toegangstoken van uw milieu van de Naslaggids.  Zie [Een API-toegangstoken voor dynamisch maken](#create-dynatrace-access-token) voor hoe u dit kunt maken.<br><br>Dit moet als een geheim worden beschouwd, dus gebruik maken van passende veiligheidspraktijken. Het wachtwoord beveiligt het bijvoorbeeld in een website, zoals **zerobin.net**, waarnaar het klantenondersteuningsticket kan verwijzen, samen met het wachtwoord.<br><br>Opmerking: dit is alleen vereist voor Dynatrace Managed. |
+| [!DNL Dynatrace ActiveGate Port] | De ActiveGate-poort van de Dynatrace waarmee de AEM moet worden verbonden.<br><br>Opmerking: dit is alleen vereist voor Dynatrace Managed. |
+| [!DNL Dynatrace ActiveGate Network Zone] | Uw [Dynatrace ActiveGate-netwerkzone](https://docs.dynatrace.com/docs/manage/network-zones) om AEM controlegegevens efficiënt over gegevenscentra en netwerkgebieden te leiden.<br><br>Opmerking: een ActiveGate-netwerkzone van Dynarace is optioneel. |
+| [!DNL AEM Environment ID(s)] | De AEM milieu-id(s) voor Dynatrace om te controleren. |
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ De details die voor connectiviteitsverzoeken worden vereist worden hieronder bes
 ## Een API-toegangstoken voor dynamisch maken {#create-dynatrace-access-token}
 
 1. Meld u aan bij uw Dynatrace-omgeving.
-1. Ga in het menu Naamruimte naar Beheren > Toegangstokens.
-1. Selecteer Nieuwe token genereren.
-1. Definieer een tokennaam.
+1. In de [!DNL Dynatrace] menu, ga naar [!DNL Manage] > [!DNL Access tokens].
+1. Selecteren [!DNL Generate new token].
+1. Een [!DNL token name].
 
-1. Optioneel: een vervaldatum instellen. Zorg ervoor dat u een nieuwe token genereert voordat deze verloopt.
-1. Stel het tokenbereik in op PaaS-integratie - Installer-download
-1. Selecteer token genereren.
+1. Optioneel: een [!DNL expiration date]. Zorg ervoor dat u een nieuwe token genereert voordat deze verloopt.
+1. Stel de [!DNL token scope] tot [!DNL PaaS integration - Installer download]
+1. Selecteren [!DNL Generate token].
 1. Kopieer het gegenereerde toegangstoken en sla deze op een veilige plaats op.
 
 
