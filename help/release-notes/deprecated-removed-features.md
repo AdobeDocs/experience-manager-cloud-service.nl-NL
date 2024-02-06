@@ -2,7 +2,7 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
+source-git-commit: 1da8d9395df3dd2efee7f6a57197aa3f2b27b1a4
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 0%
@@ -58,149 +58,6 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | [!DNL Foundation] | Ondersteuning voor JST-scriptsjablonen (OSGi bundle org.apache.sling.scripting.jst) | NVT | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor het Apache Felix Http-whiteboard | OSGi Http-whiteboard | maart 2022 |
 | [!DNL Foundation] | Ondersteuning voor com.adobe.granite.oauth.server | Adobe IMS-integratie | maart 2023 |
-
-## OSGI-configuratie {#osgi-configuration}
-
-De twee lijsten hieronder wijzen op de AEM as a Cloud Service OSGi configuratieoppervlakte, beschrijvend welke klanten kunnen vormen.
-
-1. Een lijst van configuraties OSGi die niet door klantencode moeten worden gevormd
-1. Een lijst van configuraties OSGi waarvan de eigenschappen kunnen worden gevormd, maar moet zich aan de vermelde bevestigingsregels houden. Deze regels omvatten of de verklaring van het bezit, zijn type, en in sommige gevallen, zijn toegestane waaier van waarden wordt vereist.
-
-Als een configuratie OSGI niet vermeld is, kan het door klantencode worden gevormd.
-
-Deze regels worden gevalideerd tijdens het ontwikkelingsproces van Cloud Manager. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, worden er fouten gegenereerd in het buildproces van Cloud Manager. De Maven-projecten moeten [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) om OSGI-configuratiefouten te markeren tijdens de ontwikkeling van de lokale SDK.
-
-Aanvullende informatie over de configuratie van OSGI is te vinden op [deze locatie](/help/implementing/deploying/configuring-osgi.md).
-
-+++OSGi configuraties die niet kunnen worden gewijzigd.
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-* **`org.apache.felix.http (Factory)`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Aankondigingsdatum: 25-8-2021, uitvoeringsdatum: 26-11-2021)
-+++
-
-+++OSGi configuraties onderworpen aan bouwstijlbevestigingsregels.
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-* `org.apache.felix.eventadmin.ThreadPoolSize`
-   * Type: geheel getal
-   * Vereist bereik: 2-100
-* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-   * Type: dubbel
-* `org.apache.felix.eventadmin.Timeout`
-   * Type: geheel getal
-* `org.apache.felix.eventadmin.RequireTopic`
-   * Type: boolean
-* `org.apache.felix.eventadmin.IgnoreTimeout`
-   * Vereist
-   * Type: array van tekenreeksen
-   * Vereist bereik: moet ten minste alle `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
-* `org.apache.felix.eventadmin.IgnoreTopic`
-   * Type: array van tekenreeksen
-* **`org.apache.felix.http`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-   * `org.apache.felix.http.timeout`
-      * Type: geheel getal
-   * `org.apache.felix.http.session.timeout`
-      * Type: geheel getal
-   * `org.apache.felix.http.jetty.threadpool.max`
-      * Type: geheel getal
-   * `org.apache.felix.http.jetty.headerBufferSize`
-      * Type: geheel getal
-   * `org.apache.felix.http.jetty.requestBufferSize`
-      * Type: geheel getal
-   * `org.apache.felix.http.jetty.responseBufferSize`
-      * Type: geheel getal
-   * `org.apache.felix.http.jetty.maxFormSize`
-      * Type: geheel getal
-   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
-      * Type: boolean
-   * `org.apache.felix.https.jetty.session.cookie.secure`
-      * Type: boolean
-   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
-      * Type: tekenreeks
-   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
-      * Type: boolean
-   * `org.eclipse.jetty.servlet.SessionCookie`
-      * Type: tekenreeks
-   * `org.eclipse.jetty.servlet.SessionDomain`
-      * Type: tekenreeks
-   * `org.eclipse.jetty.servlet.SessionPath`
-      * Type: tekenreeks
-   * `org.eclipse.jetty.servlet.MaxAge`
-      * Type: geheel getal
-   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
-      * Type: geheel getal
-   * `org.apache.felix.jetty.gziphandler.enable`
-      * Type: boolean
-   * `org.apache.felix.jetty.gzip.minGzipSize`
-      * Type: geheel getal
-   * `org.apache.felix.jetty.gzip.compressionLevel`
-      * Type: geheel getal
-   * `org.apache.felix.jetty.gzip.inflateBufferSize`
-      * Type: geheel getal
-   * `org.apache.felix.jetty.gzip.syncFlush`
-      * Type: boolean
-   * `org.apache.felix.jetty.gzip.excludedUserAgents`
-      * Type: tekenreeks
-   * `org.apache.felix.jetty.gzip.includedMethods`
-      * Type: array van tekenreeksen
-   * `org.apache.felix.jetty.gzip.excludedMethods`
-      * Type: array van tekenreeksen
-   * `org.apache.felix.jetty.gzip.includedPaths`
-      * Type: array van tekenreeksen
-   * `org.apache.felix.jetty.gzip.excludedPaths`
-      * Type: array van tekenreeksen
-   * `org.apache.felix.jetty.gzip.includedMimeTypes`
-      * Type: array van tekenreeksen
-   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
-      * Type: array van tekenreeksen
-   * `org.apache.felix.http.session.invalidate`
-      * Type: boolean
-   * `org.apache.felix.http.session.container.attribute`
-      * Type: array van tekenreeksen
-   * `org.apache.felix.http.session.uniqueid`
-      * Type: boolean
-* **`org.apache.sling.scripting.cache`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-   * `org.apache.sling.scripting.cache.size`
-      * Type: geheel getal
-      * Vereist bereik: >= 2048
-   * `org.apache.sling.scripting.cache.additional_extensions`
-      * Vereist
-      * Type: array van tekenreeksen
-      * Vereist bereik: moet JS bevatten
-* **`com.day.cq.mailer.DefaultMailService`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-   * `smtp.host`
-      * Type: tekenreeks
-   * `smtp.port`
-      * Type: geheel getal
-      * Vereist bereik: 465, 587 of 25
-   * `smtp.user`
-      * Type: tekenreeks
-   * `smtp.password`
-      * Type: tekenreeks
-   * `from.address`
-      * Type: tekenreeks
-   * `smtp.ssl`
-      * Type: tekenreeks
-   * `smtp.starttls`
-      * Type: boolean
-   * `smtp.requiretls`
-      * Type: boolean
-   * `debug.email`
-      * Type: boolean
-   * `oauth.flow`
-      * Type: boolean
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (Aankondigingsdatum: 16-11-21, Datum van tenuitvoerlegging: 16-20-21)
-   * `org.apache.sling.commons.log.level`
-      * Type: opsomming
-      * Vereist bereik: INFO, DEBUG of TRACE
-   * `org.apache.sling.commons.log.names`
-      * Type: tekenreeks
-   * `org.apache.sling.commons.log.file`
-      * Type: tekenreeks
-   * `org.apache.sling.commons.log.additiv`
-      * Type: boolean
-+++
 
 ## API&#39;s AEM {#aem-apis}
 
@@ -413,3 +270,147 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
 </tbody>
 </table>
 </details>
+
+## OSGI-configuratie {#osgi-configuration}
+
+De twee lijsten hieronder wijzen op de AEM as a Cloud Service OSGi configuratieoppervlakte, beschrijvend welke klanten kunnen vormen.
+
+1. Een lijst van configuraties OSGi die niet door klantencode moeten worden gevormd
+1. Een lijst van configuraties OSGi waarvan de eigenschappen kunnen worden gevormd, maar moet zich aan de vermelde bevestigingsregels houden. Deze regels omvatten of de verklaring van het bezit, zijn type, en in sommige gevallen, zijn toegestane waaier van waarden wordt vereist.
+
+Als een configuratie OSGI niet vermeld is, kan het door klantencode worden gevormd.
+
+Deze regels worden gevalideerd tijdens het ontwikkelingsproces van Cloud Manager. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, worden er fouten gegenereerd in het buildproces van Cloud Manager. De Maven-projecten moeten [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) om OSGI-configuratiefouten te markeren tijdens de ontwikkeling van de lokale SDK.
+
+Aanvullende informatie over de configuratie van OSGI is te vinden op [deze locatie](/help/implementing/deploying/configuring-osgi.md).
+
++++OSGi configuraties die niet kunnen worden gewijzigd.
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+* **`org.apache.felix.http (Factory)`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Aankondigingsdatum: 25-8-2021, uitvoeringsdatum: 26-11-2021)
++++
+
++++OSGi configuraties onderworpen aan bouwstijlbevestigingsregels.
+* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+* `org.apache.felix.eventadmin.ThreadPoolSize`
+   * Type: geheel getal
+   * Vereist bereik: 2-100
+* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
+   * Type: dubbel
+* `org.apache.felix.eventadmin.Timeout`
+   * Type: geheel getal
+* `org.apache.felix.eventadmin.RequireTopic`
+   * Type: boolean
+* `org.apache.felix.eventadmin.IgnoreTimeout`
+   * Vereist
+   * Type: array van tekenreeksen
+   * Vereist bereik: moet ten minste alle `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
+* `org.apache.felix.eventadmin.IgnoreTopic`
+   * Type: array van tekenreeksen
+* **`org.apache.felix.http`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+   * `org.apache.felix.http.timeout`
+      * Type: geheel getal
+   * `org.apache.felix.http.session.timeout`
+      * Type: geheel getal
+   * `org.apache.felix.http.jetty.threadpool.max`
+      * Type: geheel getal
+   * `org.apache.felix.http.jetty.headerBufferSize`
+      * Type: geheel getal
+   * `org.apache.felix.http.jetty.requestBufferSize`
+      * Type: geheel getal
+   * `org.apache.felix.http.jetty.responseBufferSize`
+      * Type: geheel getal
+   * `org.apache.felix.http.jetty.maxFormSize`
+      * Type: geheel getal
+   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
+      * Type: boolean
+   * `org.apache.felix.https.jetty.session.cookie.secure`
+      * Type: boolean
+   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
+      * Type: tekenreeks
+   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
+      * Type: boolean
+   * `org.eclipse.jetty.servlet.SessionCookie`
+      * Type: tekenreeks
+   * `org.eclipse.jetty.servlet.SessionDomain`
+      * Type: tekenreeks
+   * `org.eclipse.jetty.servlet.SessionPath`
+      * Type: tekenreeks
+   * `org.eclipse.jetty.servlet.MaxAge`
+      * Type: geheel getal
+   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
+      * Type: geheel getal
+   * `org.apache.felix.jetty.gziphandler.enable`
+      * Type: boolean
+   * `org.apache.felix.jetty.gzip.minGzipSize`
+      * Type: geheel getal
+   * `org.apache.felix.jetty.gzip.compressionLevel`
+      * Type: geheel getal
+   * `org.apache.felix.jetty.gzip.inflateBufferSize`
+      * Type: geheel getal
+   * `org.apache.felix.jetty.gzip.syncFlush`
+      * Type: boolean
+   * `org.apache.felix.jetty.gzip.excludedUserAgents`
+      * Type: tekenreeks
+   * `org.apache.felix.jetty.gzip.includedMethods`
+      * Type: array van tekenreeksen
+   * `org.apache.felix.jetty.gzip.excludedMethods`
+      * Type: array van tekenreeksen
+   * `org.apache.felix.jetty.gzip.includedPaths`
+      * Type: array van tekenreeksen
+   * `org.apache.felix.jetty.gzip.excludedPaths`
+      * Type: array van tekenreeksen
+   * `org.apache.felix.jetty.gzip.includedMimeTypes`
+      * Type: array van tekenreeksen
+   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
+      * Type: array van tekenreeksen
+   * `org.apache.felix.http.session.invalidate`
+      * Type: boolean
+   * `org.apache.felix.http.session.container.attribute`
+      * Type: array van tekenreeksen
+   * `org.apache.felix.http.session.uniqueid`
+      * Type: boolean
+* **`org.apache.sling.scripting.cache`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+   * `org.apache.sling.scripting.cache.size`
+      * Type: geheel getal
+      * Vereist bereik: >= 2048
+   * `org.apache.sling.scripting.cache.additional_extensions`
+      * Vereist
+      * Type: array van tekenreeksen
+      * Vereist bereik: moet JS bevatten
+* **`com.day.cq.mailer.DefaultMailService`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+   * `smtp.host`
+      * Type: tekenreeks
+   * `smtp.port`
+      * Type: geheel getal
+      * Vereist bereik: 465, 587 of 25
+   * `smtp.user`
+      * Type: tekenreeks
+   * `smtp.password`
+      * Type: tekenreeks
+   * `from.address`
+      * Type: tekenreeks
+   * `smtp.ssl`
+      * Type: tekenreeks
+   * `smtp.starttls`
+      * Type: boolean
+   * `smtp.requiretls`
+      * Type: boolean
+   * `debug.email`
+      * Type: boolean
+   * `oauth.flow`
+      * Type: boolean
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Aankondigingsdatum: 16-11-21, Datum van tenuitvoerlegging: 16-20-21)
+   * `org.apache.sling.commons.log.level`
+      * Type: opsomming
+      * Vereist bereik: INFO, DEBUG of TRACE
+   * `org.apache.sling.commons.log.names`
+      * Type: tekenreeks
+   * `org.apache.sling.commons.log.file`
+      * Type: tekenreeks
+   * `org.apache.sling.commons.log.additiv`
+      * Type: boolean
++++
+
