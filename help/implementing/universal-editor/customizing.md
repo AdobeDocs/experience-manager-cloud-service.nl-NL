@@ -1,18 +1,18 @@
 ---
-title: De gebruikersinterface aanpassen
-description: Leer over de verschillende uitbreidingspunten die u toestaan om UI van de Universele Redacteur aan te passen om de behoeften van uw inhoudsauteurs te steunen.
+title: De Universal Editor Authoring-ervaring aanpassen
+description: Leer over de verschillende uitbreidingspunten en andere eigenschappen die u toestaan om UI van de Universele Redacteur aan te passen om de behoeften van uw inhoudsauteurs te steunen.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: 1bc65e65e6ce074a050e21137ce538b5c086665f
+source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
 
-# De gebruikersinterface aanpassen {#customizing-ui}
+# De Universal Editor Authoring-ervaring aanpassen {#customizing-ue}
 
-Leer over de verschillende uitbreidingspunten die u toestaan om UI van de Universele Redacteur aan te passen om de behoeften van uw inhoudsauteurs te steunen.
+Leer over de verschillende uitbreidingspunten en andere eigenschappen die u toestaan om de auteurservaring van de Universele Redacteur aan te passen om de behoeften van uw inhoudsauteurs te steunen.
 
 ## Publiceren uitschakelen {#disable-publish}
 
@@ -59,3 +59,40 @@ De instelling van `components` kenmerk in een filterdefinitie aan `null` Hiermee
    }
 ]
 ```
+
+## Componenten voorwaardelijk tonen en verbergen in Eigenschapcontrole {#conditionally-hide}
+
+Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen kunt u componenten in de eigenschappen-rail verbergen door een `condition` aan de [velden van het componentmodel.](/help/implementing/universal-editor/field-types.md#fields)
+
+Voorwaarden kunnen worden gedefinieerd met behulp van [JsonLogic-schema.](https://jsonlogic.com/) Als de voorwaarde waar is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
+
+### Voorbeeldmodel {#sample-model}
+
+```json
+ {
+    "id": "conditionally-revealed-component",
+    "fields": [
+      {
+        "component": "boolean",
+        "label": "Shall the text field be revealed?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Hidden text field",
+        "name": "hidden-text",
+        "valueType": "string",
+        "condition": { "===": [{"var" : "reveal"}, true] }
+      }
+    ]
+ }
+```
+
+#### Onjuiste voorwaarde {#false}
+
+![Verborgen tekstveld](assets/hidden.png)
+
+#### Voorwaarde waar {#true}
+
+![Weergegeven tekstveld](assets/shown.png)
