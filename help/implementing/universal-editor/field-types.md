@@ -2,9 +2,9 @@
 title: Modeldefinities, velden en componenttypen
 description: In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
+source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1004'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Een veldobject heeft de volgende typedefinitie.
 | `required` | `boolean` | Is het vereiste veld | Nee |
 | `readOnly` | `boolean` | Is het veld alleen-lezen | Nee |
 | `hidden` | `boolean` | Is het veld standaard verborgen | Nee |
-| `condition` | `RulesLogic` | Regel om het veld weer te geven of te verbergen | Nee |
+| `condition` | `RulesLogic` | Regel om het gebied te tonen of te verbergen dat op een [conditie](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Nee |
 | `multi` | `boolean` | Is het veld een veld met meerdere velden | Nee |
 | `validation` | `ValidationType` | Validatieregel(s) voor het veld | Nee |
 | `raw` | `unknown` | Onbewerkte gegevens die door de component kunnen worden gebruikt | Nee |
