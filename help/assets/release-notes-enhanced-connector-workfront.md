@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 description: Opmerkingen bij de release [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
+source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1567'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,34 @@ In de volgende sectie worden de algemene opmerkingen bij de release beschreven v
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor de laatste versie 1.9.16 van [!DNL Workfront for Experience Manager enhanced connector] is 19 januari 2024.
+De releasedatum voor de laatste versie 1.9.17 van [!DNL Workfront for Experience Manager enhanced connector] is 7 februari 2024.
 
 ## Geen hooglichten {#release-highlights}
 
 De meest recente versie van de [!DNL Workfront for Experience Manager enhanced connector] bevat de volgende opgeloste problemen:
+
+* Schakel schakelfunctie in om AEM Cloud-klanten in staat te stellen een connector te configureren en in te stellen.
+
+* De sluiting van de `resourceResolver` zonder de onderliggende sessie expliciet te sluiten, veroorzaakt sessilekken in AEM instanties. Het is essentieel om de zitting uitdrukkelijk te sluiten, aangezien auto-sluit de Resolver van het Middel impliciet niet de zitting sluit.
+
+>[!NOTE]
+>
+>AEM 6.4 is het einde van de uitgebreide steun bereikt. Zie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/?lang=en).
+
+
+>[!IMPORTANT]
+>
+>Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.17](/help/assets/workfront-connector-install.md) van de [!DNL Workfront for Experience Manager enhanced connector].
+
+## Bekende problemen {#known-issues}
+
+* Tijdens het vormen van project verbonden omslagen met AEM 6.4, slaat de Experience Manager niet de waarden voor **[!UICONTROL sub-folders]** en **[!UICONTROL Create linked folder in projects with portfolio]** velden. De waarde voor de **[!UICONTROL sub-folders]** veld bijwerken naar **[!UICONTROL undefined]** en de waarde voor de **[!UICONTROL Create linked folder in projects with portfolio]** veld bijwerken naar **[!UICONTROL Default Portfolio]** automatisch na het opslaan van de configuratie.
+
+* Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** de drop-down lijst staat u niet toe om de doelbestemming binnen Experience Manager te selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** vervolgkeuzelijst beschikbaar in de nieuwe Workfront-ervaring.
+
+## Eerdere versies {#previous-releases}
+
+### Release januari 2024 {#january-2023-release}
 
 * De [!DNL Workfront] configuratie in [!DNL CRX DE] slaat momenteel niet de `project ID`, wat fouten veroorzaakt bij het toepassen van alleen-lezen toestemming. Meer informatie over hoe [machtigingen configureren](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
 
@@ -36,23 +59,6 @@ De meest recente versie van de [!DNL Workfront for Experience Manager enhanced c
 * Onvoldoende ondersteuning voor grote bestandsmiddelen in AEM resulteert in een probleem met 4-byte bestandsgrootte.
 
 * Geen tijdsverwerking voor aanvragen voor kritieke stromen in gekoppelde map, documentupdate en notitie-update.
-
->[!NOTE]
->
->AEM 6.4 is het einde van de uitgebreide steun bereikt. Zie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/?lang=en).
-
-
->[!IMPORTANT]
->
->Adobe raadt u aan [upgrade naar de nieuwste versie van 1.9.16](/help/assets/workfront-connector-install.md) van de [!DNL Workfront for Experience Manager enhanced connector].
-
-## Bekende problemen {#known-issues}
-
-* Tijdens het vormen van project verbonden omslagen met AEM 6.4, slaat de Experience Manager niet de waarden voor **[!UICONTROL sub-folders]** en **[!UICONTROL Create linked folder in projects with portfolio]** velden. De waarde voor de **[!UICONTROL sub-folders]** veld bijwerken naar **[!UICONTROL undefined]** en de waarde voor de **[!UICONTROL Create linked folder in projects with portfolio]** veld bijwerken naar **[!UICONTROL Default Portfolio]** automatisch na het opslaan van de configuratie.
-
-* Wanneer u de klassieke Workfront-ervaring gebruikt, kunt u de **[!UICONTROL Send to]** beschikbaar in het dialoogvenster **[!UICONTROL More]** de drop-down lijst staat u niet toe om de doelbestemming binnen Experience Manager te selecteren. De **[!UICONTROL Send to]** Deze optie werkt correct met de **[!UICONTROL Document Actions]** vervolgkeuzelijst. De **[!UICONTROL Send to]** deze optie werkt correct voor **[!UICONTROL More]** en de **[!UICONTROL Document Actions]** vervolgkeuzelijst beschikbaar in de nieuwe Workfront-ervaring.
-
-## Eerdere versies {#previous-releases}
 
 ### Release november 2023 {#november-2023-release}
 
