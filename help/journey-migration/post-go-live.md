@@ -4,8 +4,8 @@ description: Leer hoe u op problemen kunt controleren en de prestaties kunt verb
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 9%
+source-wordcount: '459'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,7 @@ In dit document worden de gereedschappen beschreven die beschikbaar zijn om prob
 * **CRXDE Lite**
 * **Tool voor beheren van logbestanden**
 
-## Developer Console {#developer-console}
+## Ontwerpconsole {#developer-console}
 
 Foutopsporing AEM as a Cloud Service ontwikkelaarsomgevingen is beschikbaar in de Developer Console voor ontwikkelings-, stage- en productieomgevingen.
 
@@ -40,7 +40,7 @@ Zie [Implementatie van AEM as a Cloud Service](/help/implementing/developing/int
 
 ## CRXDE Lite {#crxde-lite}
 
-Als gebruiker hebt u toegang tot CRXDE Lite in de ontwikkelomgeving, maar niet in de stage- of productieomgeving.
+Als gebruiker hebt u toegang tot CRXDE Lite in de ontwikkelomgeving, maar niet tot het werkgebied of de productie.
 
 >[!IMPORTANT]
 >Schrijven naar onveranderlijke opslagplaatsen zoals `/libs` en `/apps` resulteert in fouten. Bovendien hebt u geen toegang tot ontwikkelaarstools voor testomgevingen en productieomgevingen.

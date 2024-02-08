@@ -4,8 +4,8 @@ description: Leer hoe u bestaande configuraties op AEM Dispatcher omzet in confi
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 18%
+source-wordcount: '330'
+ht-degree: 13%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 
 Adobe Experience Manager Dispatcher Converter zet bestaande configuraties op AEM Dispatcher om in configuraties op AEM as a Cloud Service Dispatcher.
 
-## Inleiding tot Dispatcher {#introduction-dispatcher}
+## Introductie tot Dispatcher {#introduction-dispatcher}
 
 Dispatcher is een Adobe Experience Manager-programma voor het in cache plaatsen, of taakverdeling, of beide. Door AEM Dispatcher te gebruiken is uw AEM-server ook beter beschermd tegen aanvallen. Daarom kunt u de veiligheid van uw AEM instantie verhogen door Dispatcher met een onderneming-klasse Webserver te gebruiken.
 

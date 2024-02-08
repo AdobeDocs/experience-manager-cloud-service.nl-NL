@@ -15,8 +15,8 @@ ht-degree: 0%
 >id="aemcloud_ctt_prereqs"
 >title="Belangrijke overwegingen voor het gebruik van het gereedschap Inhoud overbrengen"
 >abstract="Houd rekening met belangrijke overwegingen voor het gebruik van het gereedschap Inhoud overbrengen, zoals Java™- en AEM-versies, ondersteunde gegevenstypen, gebruikersgroepoverwegingen en meer."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Belangrijke overwegingen voor het gebruik van het gereedschap Inhoud overbrengen"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="Beste praktijken en richtlijnen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Belangrijke overwegingen voor het gebruik van het gereedschap Inhoud overbrengen"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="Beste praktijken en richtlijnen"
 
 In de volgende tabel staan de voorwaarden voor het gebruik van het gereedschap Inhoud overbrengen.
 
