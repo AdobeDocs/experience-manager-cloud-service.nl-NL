@@ -4,9 +4,9 @@ description: Lijst met alle API's die als transacties worden beschouwd
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1598'
 ht-degree: 0%
 
 ---
@@ -31,44 +31,42 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Formulierverzendingenbeheer"
->abstract="Volg eenvoudig formulierverzendingen met een geconsolideerde weergave voor het totale aantal of duik in instantiespecifieke details. Met de intuïtieve staafgrafiek kunt u trends identificeren, instanties vergelijken en in één oogopslag geïnformeerde beslissingen nemen."
+>abstract="Volg eenvoudig formulierverzendingen op uw AEM Forms Publish-exemplaar met ons intuïtieve trackingdashboard. De grafiek geeft gegevens die specifiek zijn voor het huidige exemplaar, zodat u trends snel kunt analyseren en geïnformeerde beslissingen kunt nemen. Voor verzendgegevens van andere instanties hebt u eenvoudig toegang tot het dashboard van het betreffende exemplaar."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="Formulieromzettingsbeheer"
->abstract="Eenvoudig tabs op formulierconversies houden via een overzicht van het totale aantal, of details bekijken voor elk AEM Forms-exemplaar. Met de eenvoudig te lezen staafgrafiek kunt u trends waarnemen, instanties vergelijken en snel en met kennis van zaken beslissingen nemen."
+>abstract="Blijf op de hoogte van formulierconversies met een overzicht van het totale aantal conversies. De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish, waarmee u trends snel kunt analyseren en geïnformeerde beslissingen kunt nemen. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Gemiddelde duur voor genereren van formulieren"
->abstract="De grafiek toont de gemiddelde tijd die nodig is om een formulier te maken. Elke balk in de grafiek vertegenwoordigt een specifiek formulier en de hoogte van de balk geeft de gemiddelde duur aan die tijdens dat tijdframe voor het maken van het formulier is gebruikt. Door deze grafiek te analyseren, kunnen gebruikers de efficiëntie en snelheid van het maken van formulieren in verschillende perioden of binnen verschillende contexten begrijpen, zodat ze inzicht krijgen in mogelijke verbeteringen."
+>abstract="De grafiek toont de gemiddelde tijd die nodig is om een formulier te maken. Elke balk in de grafiek vertegenwoordigt een specifiek formulier en de hoogte van de balk geeft de gemiddelde duur aan die tijdens dat tijdframe voor het maken van het formulier is gebruikt. Door deze grafiek te analyseren, kunnen gebruikers de efficiëntie en snelheid van het maken van formulieren in verschillende perioden of binnen verschillende contexten begrijpen, zodat ze inzicht krijgen in mogelijke verbeteringen. De grafiek bevat specifieke gegevens voor de huidige AEM Forms Author-instantie. Als u gegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Gemiddelde duur voor het maken van formulieren"
->abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulier te maken en te publiceren, gemeten vanaf de eerste dag dat het formulier voor bewerking is geopend. Elke balk komt overeen met een specifiek tijdpad voor een formulier, waarbij de hoogte van de balk de gemiddelde tijd aangeeft die is verstreken tussen het begin van de formulierontwikkeling en het voltooien en publiceren ervan."
+>abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulier te maken en te publiceren, gemeten vanaf de eerste dag dat het formulier voor bewerking is geopend. Elke balk komt overeen met een specifiek tijdpad voor een formulier, waarbij de hoogte van de balk de gemiddelde tijd aangeeft die is verstreken tussen het begin van de formulierontwikkeling en het voltooien en publiceren ervan. De grafiek bevat specifieke gegevens voor de huidige AEM Forms Author-instantie. Als u gegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Nieuw Forms-beheer"
->abstract="De grafiek geeft informatie over het aantal of de frequentie van nieuwe formulieren tijdens specifieke tijdsperiodes. Elke balk in de grafiek vertegenwoordigt een afzonderlijke maateenheid, zoals dagen, weken of maanden. De hoogte van elke balk geeft de hoeveelheid of frequentie aan van nieuwe formulieren die tijdens dat specifieke interval worden gemaakt."
+>abstract="De grafiek geeft informatie over het aantal of de frequentie van nieuwe formulieren tijdens specifieke tijdsperiodes. Elke balk in de grafiek vertegenwoordigt een afzonderlijke maateenheid, zoals dagen, weken of maanden. De hoogte van elke balk geeft de hoeveelheid of frequentie aan van nieuwe formulieren die tijdens dat specifieke interval worden gemaakt. De grafiek bevat specifieke gegevens voor de huidige AEM Forms Author-instantie. Als u gegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Gepubliceerd Forms-beheer"
->abstract="De grafiek geeft informatie over het aantal of de frequentie van formulieren die tijdens specifieke tijdsperioden met succes zijn gepubliceerd. Op deze manier kunt u de trends, patronen of variaties in de publicatie van formulieren in de loop van de tijd begrijpen. Zo kunt u de productiviteit controleren, piektijdsperioden voor publicatie identificeren of het succes van wijzigingen in het publicatieproces van formulieren evalueren."
+>abstract="De grafiek geeft informatie over het aantal of de frequentie van formulieren die tijdens specifieke tijdsperioden met succes zijn gepubliceerd. Op deze manier kunt u de trends, patronen of variaties in de publicatie van formulieren in de loop van de tijd begrijpen. Zo kunt u de productiviteit controleren, piektijdsperioden voor publicatie identificeren of het succes van wijzigingen in het publicatieproces van formulieren evalueren. De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
-<!-- 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Form Fragments Tracker"
->abstract="This graph helps you see how many form fragments people use in their forms. It gives you a sense of how popular or common these reusable parts are in form building."
+>title="Gepubliceerd Forms-beheer"
+>abstract="Met deze grafiek kunt u zien hoeveel formulierfragmenten mensen in hun formulieren gebruiken. Het geeft je een idee hoe populair of gebruikelijk deze herbruikbare onderdelen zijn in formulieropbouw. De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Average Duration for Form Fragments Creation"
->abstract= "The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. Each bar corresponds to a specific time frame for a form fragment, with the bar height indicating the average time taken from the start of form fragment development to its finalization and publication."
-
+>title="Gepubliceerd Forms-beheer"
+>abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulierfragment te maken, gemeten vanaf de eerste dag dat het formulierfragment voor bewerking is geopend. Elke balk komt overeen met een specifiek tijdframe voor een formulierfragment. De hoogte van de balk geeft de gemiddelde tijd aan die is verstreken tussen het begin van de ontwikkeling van het formulierfragment en het voltooien en publiceren ervan. De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 <!-- 
 
