@@ -2,9 +2,9 @@
 title: Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge Delivery Services
 description: Deze gids zal u met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoud creatie op de hoogte brengen
 feature: Edge Delivery Services
-source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
+source-git-commit: 224cfe9853e8974c33b0e53e961a02d54f875a35
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -162,3 +162,9 @@ Als u klaar bent met het bewerken van uw nieuwe site met de Universal Editor, ku
 1. Bekijk de gepubliceerde inhoud.
 
    ![Gepubliceerde inhoud](assets/edge-dev-getting-started/published-site.png)
+
+## Volgende stappen {#next-steps}
+
+Nu u een werkend AEM met het project van Edge Delivery Services hebt, kunt u beginnen creërend en uw eigen blokken stileren.
+
+Zie de handleiding [Blokken maken met een instrument voor gebruik met de universele editor](/help/edge/create-block.md) voor meer informatie .
