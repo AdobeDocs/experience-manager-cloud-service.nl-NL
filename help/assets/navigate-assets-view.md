@@ -3,9 +3,9 @@ title: "[!DNL Assets view] gebruikersinterface"
 description: De gebruikersinterface en navigatie begrijpen in [!DNL Assets view].
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ U kunt door de mappen bladeren vanuit de hoofdgebruikersinterface of vanuit de l
 * [Verzamelingen](/help/assets/manage-collections-assets-view.md): Een verzameling is een set elementen, mappen of andere verzamelingen in de weergave Adobe Experience Manager Assets. Gebruik verzamelingen om elementen tussen gebruikers te delen. In tegenstelling tot mappen kan een verzameling elementen van verschillende locaties bevatten. U kunt meerdere verzamelingen delen met een gebruiker. Elke verzameling bevat verwijzingen naar elementen. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.
 
 * [Inzichten](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view]kunt u real-time inzichten op uw dashboard bekijken. In de weergave Elementen kunt u realtime gegevens voor de weergave Elementen weergeven met het dashboard Inzichten. U kunt real-time gebeurtenismetriek tijdens de laatste 30 dagen of voor de laatste 12 maanden bekijken.
-* **Prullenbak**: Maak een lijst met de elementen die uit de hoofdmap zijn verwijderd **[!UICONTROL Assets]** map. U kunt een middel in de omslag van het Afval selecteren om of het aan de originele plaats te herstellen of het permanent te schrappen. U kunt ook een trefwoord opgeven of standaard- of aangepaste filters toepassen om te zoeken naar de juiste elementen in de map Prullenbak. Ga voor meer informatie over het gebruik van standaard- en aangepaste filters naar [Middelen zoeken in de middelenweergave](/help/assets/search-assets-view.md).
+* **Prullenbak**: Maak een lijst met de elementen die uit de hoofdmap zijn verwijderd **[!UICONTROL Assets]** map. U kunt een middel in de omslag van het Afval selecteren om het aan zijn originele plaats te herstellen of het permanent te schrappen. U kunt een trefwoord opgeven of filters toepassen, zoals de status van het element, het bestandstype, het mime-type, de afbeeldingsgrootte, het maken van elementen, wijzigingen en vervaldatums, en het filteren op elementen die de huidige gebruiker heeft verwijderd. U kunt ook aangepaste filters toepassen om te zoeken naar de juiste middelen in de map met prullenmand. Voor meer informatie over het gebruiken van standaard en douanefilters, zie hoe te [zoekelementen in de middelenweergave](/help/assets/search-assets-view.md).
 * **Instellingen**: U kunt verschillende opties voor de weergave Elementen configureren met **Instellingen**, zoals metagegevensformulieren, rapporten en taxonomiebeheer.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
