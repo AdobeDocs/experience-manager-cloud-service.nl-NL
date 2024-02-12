@@ -2,13 +2,13 @@
 title: Inhoud voor Edge Delivery Services publiceren
 description: Leer hoe het publiceren van inhoud met Edge Delivery Services werkt en hoe te om AEM inhoud met Edge Delivery Services te publiceren.
 feature: Edge Delivery Services
-source-git-commit: 166525b6987215a64521d1ff63a222187376ba65
+exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
+source-git-commit: daad30dd74d389c631131a77655c9fabf4ff2967
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud voor Edge Delivery Services publiceren {#publishing-edge}
 
@@ -22,6 +22,10 @@ Met Edge Delivery Services verloopt het publiceren van inhoud naadloos, ongeacht
 Wanneer u de Universal Editor gebruikt om AEM inhoud te schrijven, kunt u alleen publiceren als u op de knop **Publiceren** in de Universal Editor. Zie het document [Inhoud publiceren met de Universal Editor.](/help/implementing/universal-editor/publishing.md)
 
 De informatiestroom bij publicatie ziet er als volgt uit. Zodra de auteur begint met de publicatie, is deze stroom automatisch en wordt deze hier ter informatie weergegeven.
+
+>[!NOTE]
+>
+>Per dag zijn maximaal 5000 paden toegestaan die zijn gepubliceerd vanuit de ontwerpinterface of via workflows. Integraties die werklasten voor bulkpublicaties maken, worden niet ondersteund.
 
 ![De stroom van informatie wanneer het publiceren van AEM aan Edge Delivery Services](assets/publishing-flow.png)
 
