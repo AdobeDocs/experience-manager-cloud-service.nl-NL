@@ -2,9 +2,9 @@
 title: Inhoudsverzoeken van Cloud Servicen begrijpen
 description: Als u licenties voor inhoudsaanvragen van Adobe hebt aangeschaft, leert u meer over de typen inhoudsaanvragen die Adobe Experience Cloud als een service meet en over de verschillen met de analytische rapportagehulpprogramma's van een organisatie.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 6212ad20cb427d6b2ccd4c467d571832f923ed2a
+source-git-commit: 13a2aad1fc8080fb0d5060fcc31c9b71f1a833ca
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2682'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Zie ook [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.m
 
 ## Clientverzameling {#cliendside-collection}
 
-### Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### Real User Monitoring Service voor AEM as a Cloud Service {#real-user-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
@@ -94,7 +94,7 @@ Real User Monitoring (RUM) is een type technologie voor het controleren van de p
 
 De echte Controle van de Gebruiker (RUM) verstrekt diep inzicht in zeer belangrijke prestatiesmetriek direct vanaf de opening van URL tot het verzoek terug naar browser wordt gediend allen die de ontwikkelaars helpen de toepassing verbeteren om het voor het eind gemakkelijk te gebruiken - gebruikers te maken.
 
-### Wie kan profiteren van de RUM Data Monitoring Service? {#who-can-benefit-from-rum-data-monitoring-service}
+### Wie kan van de Echte Dienst van de Controle van de Gebruiker profiteren? {#who-can-benefit-from-rum-service}
 
 De Dienst van Gegevens van het RUM is voordelig voor alle klanten of het gebruiken van Adobe, of hun eigen CDN. Deze weergave biedt een preciezere weergave van gebruikersinteracties, zodat een betrouwbare maatstaf voor de betrokkenheid van websites wordt verkregen door het aantal paginaweergaven op de client weer te geven.
 
@@ -104,17 +104,17 @@ Voor klanten die hun eigen CDN in dienst nemen kunnen zij van vereenvoudigd verk
 
 Bovendien krijgen alle klanten diepgaande inzichten in paginaprestaties om hun digitale ervaringen effectief te optimaliseren.
 
-### Begrijp hoe de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) werkt {#understand-how-the-rum-data-service-works}
+### Begrijp hoe de Echte Dienst van de Controle van de Gebruiker werkt {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager gebruikt Real User Monitoring (RUM) om klanten en Adobe te helpen begrijpen, hoe bezoekers op Adobe Experience Manager-gebaseerde sites reageren, prestatieproblemen te diagnosticeren en de doeltreffendheid van experimenten te meten. RUM behoudt de privacy van bezoekers door middel van steekproeven - slechts een klein deel van alle paginaweergaven zal worden gecontroleerd - en oordeelkundige uitsluiting van alle persoonlijk identificeerbare informatie (PII).
 
-### Real User Monitoring (RUM) en Privacy {#rum-and-privacy}
+### Real User Monitoring Service en Privacy {#rum-service-and-privacy}
 
 Real User Monitoring in Adobe Experience Manager is ontworpen om de privacy van bezoekers te behouden en gegevensverzameling tot een minimum te beperken. Als bezoeker betekent dit dat er geen persoonlijke gegevens worden verzameld op de site die u bezoekt of ter beschikking van de Adobe worden gesteld.
 
 Als plaatsexploitant, betekent dit geen extra opt-in wordt vereist om controle door deze eigenschap toe te laten.Zo, zal er geen extra pop-up voor de eindgebruikers zijn om voor het toelaten van controle RUM te aanvaarden.
 
-### RUM-gegevensbemonstering {#rum-data-sampling}
+### Real User Monitoring Service Data Sampling {#rum-service-data-sampling}
 
 Traditionele webanalytische oplossingen proberen gegevens te verzamelen voor elke bezoeker. Met Adobe Experience Manager Real User Monitoring wordt alleen informatie uit een klein deel van de paginaweergaven vastgelegd. Real User Monitoring (RUM) is bedoeld om te worden bemonsterd en geanonimiseerd in plaats van een vervanging voor analyses. Pagina&#39;s hebben standaard een bemonsteringsverhouding van 1:100. Site-beheerders kunnen dit aantal niet configureren om het bemonsteringsfrequentie vanaf vandaag te verhogen of te verlagen. Om het totale verkeer nauwkeurig te schatten, voor elke 100 paginagezichten, verzamelen wij gedetailleerde gegevens van één, die u een betrouwbare benadering van algemeen verkeer geven.&quot;
 
@@ -136,14 +136,14 @@ Real User Monitoring (RUM) wordt ontworpen om het verzamelen van persoonlijk ide
 * Het doel, of verbinding met een externe pagina of een middel dat de gebruiker met voor het hierboven vermelde controlepunt in wisselwerking staat. Bijvoorbeeld: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * De prestatiemetriek van het Web van de Kern (CWV), de Grootste Inhoudelijke Verf (LCP), de Eerste Vertraging van de Input (FID), en Cumulatieve Verschuiving van de Lay-out (CLS) die de kwaliteit van de ervaring van de bezoeker beschrijven.
 
-### Hoe te opstelling de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) {#how-to-set-up-them-rum-data-service}
+### Hoe te opstelling de Echte Dienst van de Controle van de Gebruiker {#how-to-set-up-the-rum-service}
 
 * Als u wilt deelnemen aan ons programma voor vroege adoptie, kunt u een e-mail sturen naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor de productie-, stage- en ontwikkelomgeving via uw e-mailadres dat aan uw Adobe ID is gekoppeld. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
 * Zodra dit is voltooid, zal het productteam van Adobe een Kanaal van de Samenwerking van de Klant creëren.
 * Het team van het Product van de Adobe zal naar u richten om u van de domeinsleutel en het gegevensdashboard URL te voorzien waar u de Mening van de Pagina kunt bekijken en [De Kernwebinstellingen (CWV)](https://web.dev/vitals/) metriek die door de cliënt-kant Echte inzameling van de Controle van de Gebruiker (RUM) wordt verzameld.
 * Vervolgens wordt u begeleid hoe u de domeinsleutel kunt gebruiken om toegang te krijgen tot de URL van het gegevensdashboard en de metriek te bekijken.
 
-### Hoe de Echte Gegevens van de Controle van de Gebruiker (RUM) worden gebruikt {#how-rum-data-is-being-used}
+### Hoe de Echte Gegevens van de Dienst van de Controle van de Gebruiker worden gebruikt {#how-rum-service-data-is-being-used}
 
 RUM-gegevens zijn nuttig voor de volgende doeleinden:
 
