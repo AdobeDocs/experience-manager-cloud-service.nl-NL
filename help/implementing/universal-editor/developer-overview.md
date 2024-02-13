@@ -2,9 +2,9 @@
 title: Overzicht van de universele editor voor AEM ontwikkelaars
 description: Als u een AEM ontwikkelaar bent geïnteresseerd in hoe de Universele Redacteur werkt en hoe te om het in uw project te gebruiken, geeft dit document u een inleiding van begin tot eind door u door het van instrumenten voorzien van instrumenten te leiden het WKND project om met de Universele Redacteur te werken.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '3112'
+source-wordcount: '3139'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ U moet de benodigde JavaScript-bibliotheek toevoegen aan de paginacomponent van 
 1. Voeg de JavaScript-bibliotheek toe aan het einde van het bestand.
 
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js"></script>
+   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
 1. Klikken **Alles opslaan** en laad vervolgens de Universal Editor opnieuw.
@@ -183,6 +183,8 @@ U ziet waarschijnlijk echter dat u niet kunt communiceren met de pagina in de Un
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
+
+   * De nieuwste versie van de bibliotheek wordt altijd aanbevolen. Raadpleeg het document als u een eerdere versie nodig hebt [Aan de slag met de Universal Editor in AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. Voeg de vereiste metagegevens toe voor de verbinding met uw lokale Universal Editor-service aan het einde van het bestand.
 
