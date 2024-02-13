@@ -5,9 +5,9 @@ keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een doua
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
+source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ In het bovenstaande voorbeeld wordt de aangepaste functie &quot;ValidateEmail&qu
 
 ### Gebruik van aangepaste functies {#uses-of-custom-function}
 
-Enkele voordelen van het gebruik van aangepaste functies in Adaptive Forms zijn:
+De voordelen van het gebruik van aangepaste functies in Adaptive Forms zijn:
 
 * **Manipulatie van gegevens**: Aangepaste functies bewerken en verwerken de gegevens die in de formuliervelden zijn ingevoerd.
 * **Validatie van gegevens**: Met aangepaste functies kunt u aangepaste controles uitvoeren op de invoer van formulieren en opgegeven foutberichten weergeven.
@@ -90,7 +90,7 @@ Some of the examples to create Arrow functions are:
 
 * **Functie-expressie met verplichte jsdoc-commentaar**
 
-Maak aangepaste functies in de volgende indelingen om deze weer te geven in de regeleditor van een adaptief formulier. Bijvoorbeeld:
+Als u aangepaste functies wilt weergeven in de regeleditor van een adaptief formulier, maakt u aangepaste functies in de volgende indeling:
 
 ```javascript
     /**
@@ -118,7 +118,7 @@ The functions that are not supported in the custom function list are:
 
 >[!NOTE]
 >
-> U kunt de `error.log` in het geval van fouten zoals aangepaste functies, worden deze niet weergegeven in de regeleditor.
+> U kunt de `error.log` bestand voor eventuele fouten, zoals aangepaste functies die niet in de regeleditor worden vermeld.
 
 <!--The `error.log` file also displays the methods and parameters that are not supported for custom functions. -->
 
@@ -136,13 +136,13 @@ Stappen voor het maken van aangepaste functies zijn:
 U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. Voer de volgende stappen uit om een clientbibliotheek te maken:
 
 1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Een map maken onder de `[AEM Forms as a Cloud Service repository folder]/apps/` map. Maak bijvoorbeeld een map met de naam `experience-league`
-1. Navigeren naar `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` en een `ClientLibraryFolder` als `es6clientlibs`.
-1. Een eigenschap toevoegen `categories`met tekenreekstype als waarde `es6customfunctions` aan de `es6clientlibs` map.
+1. Een map maken onder de `[AEM Forms as a Cloud Service repository folder]/apps/` map. Maak bijvoorbeeld een map met de naam `experience-league`.
+1. Navigeren naar `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` en een `ClientLibraryFolder`. Maak bijvoorbeeld een clientbibliotheekmap als `es6clientlibs`.
+1. Een eigenschap toevoegen `categories` met tekenreekstype. Wijs bijvoorbeeld de waarde toe `es6customfunctions` aan de `categories` eigenschap voor de `es6clientlibs` map.
 
    >[!NOTE]
    >
-   >`es6customfunctions`is een voorbeeldcategorie. U kunt elke naam voor de categorie kiezen.
+   > U kunt elke naam kiezen voor `client library folder` en `categories` eigenschap.
 
 1. Een map maken met de naam `js`.
 1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` map.
@@ -150,7 +150,7 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
 
    >[!NOTE]
    >
-   >* Als het JavaScript-bestand met code voor aangepaste functies een fout bevat, worden de aangepaste functies niet vermeld in de regeleditor van een adaptief formulier. U kunt ook de `error.log` bestand voor de fout.
+   > Als het JavaScript-bestand met code voor aangepaste functies een fout bevat, worden de aangepaste functies niet vermeld in de regeleditor van een adaptief formulier. U kunt ook de `error.log` bestand voor de fout.
 
    <!-- 
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
@@ -179,18 +179,22 @@ Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in 
 
 ### Clientbibliotheek toevoegen in een adaptief formulier{#use-custom-function}
 
-Nadat u de clientbibliotheek hebt toegevoegd, gebruikt u deze in het adaptieve formulier. Hiermee kunt u uw [aangepaste functie als regel in uw formulier](/help/forms/rule-editor.md#custom-functions). Voer de volgende stappen uit om de clientbibliotheek toe te voegen aan uw adaptieve formulier:
+Zodra u de clientbibliotheek hebt geïmplementeerd in uw Forms CS-omgeving, gebruikt u de mogelijkheden van de clientbibliotheek in uw adaptieve formulier. De clientbibliotheek toevoegen aan uw adaptieve formulier
 
-1. Open het formulier in de bewerkingsmodus.
-Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en selecteert u **[!UICONTROL Open]**.
-1. Selecteer in de bewerkingsmodus een component en selecteer vervolgens ![op veldniveau](assets/select_parent_icon.svg) > **[!UICONTROL Adaptive Form Container]** en selecteer vervolgens ![cmppr](assets/configure-icon.svg).
-1. Voeg in het zijpaneel, onder Naam van clientbibliotheek, uw clientbibliotheek toe. ( `es6customfunctions` in het voorbeeld.)
+1. Open het formulier in de bewerkingsmodus. Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en selecteert u **[!UICONTROL Edit]**.
+1. Open de Inhoudsbrowser en selecteer de **[!UICONTROL Guide Container]** van uw adaptieve formulier.
+1. Klik op de eigenschappen van de container van de hulplijn ![Eigenschappen van hulplijnen](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Open de **[!UICONTROL Basic]** en selecteert u de naam van de **[!UICONTROL client library category]** in de vervolgkeuzelijst (in dit geval selecteert u `es6customfunctions`).
 
    ![De aangepaste clientbibliotheek van de functie toevoegen](/help/forms/assets/clientlib-custom-function.png)
 
-Creeer een regel om douanefunctie in de regelredacteur te gebruiken.
+1. Klikken **[!UICONTROL Done]** .
+
+Nu, kunt u een regel tot stand brengen om douanefuncties in de regelredacteur te gebruiken.
 
 <!--
+
+Create a rule to use custom function in the rule editor. 
 
 ### Support for the optional parameters in custom functions{#support-for-optional-parameter}
 
