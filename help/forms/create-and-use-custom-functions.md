@@ -5,9 +5,9 @@ keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een doua
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 94a290964a92f8c6ed353d9c77f3dd3b8a5598a4
+source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,11 @@ U kunt een aangepaste functie maken met of zonder jsdoc-opmerkingen.
             // code to be executed
         }
 ```
+<!--
 
-* **Pijlfunctie met verplichte jsdoc-opmerking**
+* **Arrow function with mandatory jsdoc comment**
 
-Enkele voorbeelden om pijlfuncties te maken zijn:
-
+Some of the examples to create Arrow functions are:
 ```javascript
     /**
     * test function
@@ -82,7 +82,6 @@ Enkele voorbeelden om pijlfuncties te maken zijn:
     };
 ```
 
-<!-- 
     * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
