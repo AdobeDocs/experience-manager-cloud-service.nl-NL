@@ -1,9 +1,9 @@
 ---
 title: Inhoud modelleren voor AEM ontwerpen met projecten voor Edge Delivery Services
 description: Leer hoe het modelleren van inhoud voor AEM creatie met Edge Delivery Services projecten en hoe te om uw eigen inhoud te modelleren werkt.
-source-git-commit: 8f3c7524ae8ee642a9aee5989e03e6584a664eba
+source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '2097'
 ht-degree: 0%
 
 ---
@@ -109,16 +109,19 @@ Voor elk blok:
 
 * Moet de `core/franklin/components/block/v1/block` middeltype, de generische implementatie van de bloklogica in AEM.
 * U moet de bloknaam definiëren. Deze wordt weergegeven in de tabelkoptekst van het blok.
+   * De bloknaam wordt gebruikt om de juiste stijl en het script op te halen om het blok te versieren.
 * Kan een [model-id.](/help/implementing/universal-editor/field-types.md#model-structure)
+   * De model-id is een verwijzing naar het model van de component, dat de velden definieert die beschikbaar zijn voor de auteur in de eigenschappen-rail.
 * Kan een [filter-id.](/help/implementing/universal-editor/customizing.md#filtering-components)
+   * De filterID is een verwijzing naar het filter van de component, dat toestaat om het auteursgedrag te veranderen, bijvoorbeeld door te beperken welke kinderen aan het blok of de sectie kunnen worden toegevoegd, of welke eigenschappen RTE worden toegelaten.
 
-Al deze informatie wordt opgeslagen in AEM wanneer een blok aan een pagina wordt toegevoegd.
+Al deze informatie wordt opgeslagen in AEM wanneer een blok aan een pagina wordt toegevoegd. Als het middeltype of de bloknaam ontbreken, zal het blok niet op de pagina teruggeven.
 
 >[!WARNING]
 >
->Hoewel mogelijk, is het niet noodzakelijk om de componenten van de douane AEM uit te voeren. De door AEM geleverde onderdelen voor Edge Delivery Services zijn voldoende en bieden bepaalde relingen om de ontwikkeling te vergemakkelijken.
+>Hoewel mogelijk is het niet nodig of aanbevolen om aangepaste AEM te implementeren. De door AEM geleverde onderdelen voor Edge Delivery Services zijn voldoende en bieden bepaalde relingen om de ontwikkeling te vergemakkelijken.
 >
->Om deze reden, adviseert de Adobe niet gebruikend douane AEM middeltypes.
+>De componenten door AEM worden verstrekt geven een prijsverhoging terug die door kan worden verbruikt [helix-html2md](https://github.com/adobe/helix-html2md) bij publicatie aan Edge Delivery Services en door [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) bij het laden van een pagina in de Universal Editor. De prijsverhoging is het stabiele contract tussen AEM en de andere delen van het systeem, en staat geen aanpassingen toe. Daarom moeten de projecten de componenten niet veranderen en moeten geen douanecomponenten gebruiken.
 
 ### Blokstructuur {#block-structure}
 
@@ -130,7 +133,9 @@ In de eenvoudigste vorm geeft een blok elke eigenschap weer in één rij/kolom i
 
 In het volgende voorbeeld wordt de afbeelding eerst in het model gedefinieerd en vervolgens de tekst. Ze worden dus eerst met de afbeelding en vervolgens met de tekst gerenderd.
 
-##### Gegevens {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB Gegevens]
 
 ```json
 {
@@ -142,7 +147,7 @@ In het volgende voorbeeld wordt de afbeelding eerst in het model gedefinieerd en
 }
 ```
 
-##### Opmaak {#markup-simple}
+>[!TAB Opmaak]
 
 ```html
 <div class="hero">
@@ -161,6 +166,20 @@ In het volgende voorbeeld wordt de afbeelding eerst in het model gedefinieerd en
 </div>
 ```
 
+>[!TAB Tabel]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 Het kan opvallen dat bepaalde typen waarden het afleiden van semantiek in de opmaak toestaan en dat eigenschappen in één cel worden gecombineerd. Dit gedrag wordt beschreven in de sectie [Type-gevolgtrekking.](#type-inference)
 
 #### Key-Value-blok {#key-value}
@@ -171,7 +190,9 @@ In andere gevallen echter, wordt het blok gelezen als sleutel-waarde paar-als co
 
 Een voorbeeld hiervan is het [metagegevens van de sectie.](/help/edge/developer/markup-sections-blocks.md#sections) In dit gebruiksgeval, kan het blok worden gevormd om als sleutel-waarde paarlijst terug te geven. Zie de sectie [Secties en sectiemetagegevens](#sections-metadata) voor meer informatie .
 
-##### Gegevens {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB Gegevens]
 
 ```json
 {
@@ -184,7 +205,7 @@ Een voorbeeld hiervan is het [metagegevens van de sectie.](/help/edge/developer/
 }
 ```
 
-##### Opmaak {#markup-key-value}
+>[!TAB Opmaak]
 
 ```html
 <div class="featured-articles">
@@ -203,13 +224,31 @@ Een voorbeeld hiervan is het [metagegevens van de sectie.](/help/edge/developer/
 </div>
 ```
 
+>[!TAB Tabel]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### Containerblokken {#container}
 
 Beide structuren hebben één dimensie: de lijst met eigenschappen. Met behulp van containerblokken kunnen onderliggende elementen worden toegevoegd (meestal van hetzelfde type of model) en zijn deze dus tweedimensionaal. Deze blokken ondersteunen nog steeds hun eigen eigenschappen die worden gerenderd als rijen met eerst één kolom. Maar zij staan ook toe toevoegend kinderen, waarvoor elk punt als rij en elk bezit als kolom binnen die rij wordt teruggegeven.
 
 In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogrammen als onderliggende pictogrammen, waarbij elk gekoppeld pictogram een afbeelding en een koppeling heeft. Let op: [filter-id](/help/implementing/universal-editor/customizing.md#filtering-components) in de gegevens van het blok worden ingesteld om naar de filterconfiguratie te verwijzen.
 
-##### Gegevens {#data-container}
+>[!BEGINTABS]
+
+>[!TAB Gegevens]
 
 ```json
 {
@@ -232,7 +271,7 @@ In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogram
 }
 ```
 
-##### Opmaak {#markup-container}
+>[!TAB Opmaak]
 
 ```html
 <div class="our-partners">
@@ -263,6 +302,22 @@ In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogram
   </div>
 </div>
 ```
+
+>[!TAB Tabel]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### Semantische inhoudsmodellen maken voor blokken {#creating-content-models}
 
@@ -300,7 +355,9 @@ Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden 
 
 ##### Afbeeldingen {#image-collapse}
 
-###### Gegevens {#data-image}
+>[!BEGINTABS]
+
+>[!TAB Gegevens]
 
 ```json
 {
@@ -309,7 +366,7 @@ Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden 
 }
 ```
 
-###### Opmaak {#markup-image}
+>[!TAB Opmaak]
 
 ```html
 <picture>
@@ -317,9 +374,19 @@ Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden 
 </picture>
 ```
 
+>[!TAB Tabel]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### Koppelingen en knoppen {#links-buttons-collapse}
 
-###### Gegevens {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB Gegevens]
 
 ```json
 {
@@ -330,7 +397,7 @@ Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden 
 }
 ```
 
-###### Opmaak {#markup-links-buttons}
+>[!TAB Opmaak]
 
 Nee `linkType`, of `linkType=default`
 
@@ -354,9 +421,21 @@ Nee `linkType`, of `linkType=default`
 </em>
 ```
 
+>[!TAB Tabel]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### Koppen {#headings-collapse}
 
-###### Gegevens {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB Gegevens]
 
 ```json
 {
@@ -365,19 +444,31 @@ Nee `linkType`, of `linkType=default`
 }
 ```
 
-###### Opmaak {#markup-headings}
+>[!TAB Opmaak]
 
 ```html
 <h2>Getting started</h2>
 ```
 
+>[!TAB Tabel]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
+
 #### Elementgroepering {#element-grouping}
 
 while [veld samenvouwen](#field-collapse) Als u meerdere eigenschappen wilt combineren tot één semantisch element, gaat het bij het groeperen van elementen om het samenvoegen van meerdere semantische elementen in één cel. Dit is met name handig in gevallen waarin de auteur moet worden beperkt in het type en het aantal elementen dat hij kan maken.
 
-De auteur moet bijvoorbeeld alleen een ondertitel, titel en één alinea-beschrijving maken in combinatie met maximaal twee actieknoppen. Als u deze elementen groepeert, levert dit een semantische opmaak op die zonder verdere actie kan worden opgemaakt.
+Met een teaser-component kan de auteur bijvoorbeeld alleen een ondertitel, titel en een enkele alinealijn maken, gecombineerd met maximaal twee actieknoppen. Als u deze elementen groepeert, levert dit een semantische opmaak op die zonder verdere actie kan worden opgemaakt.
 
-##### Gegevens {#data-grouping}
+Bij elementgroepering wordt een naamgevingsconventie gebruikt, waarbij de groepsnaam van elke eigenschap in de groep wordt gescheiden door een onderstrepingsteken. Veldsamenvouwen van de eigenschappen in een groep werkt zoals eerder beschreven.
+
+>[!BEGINTABS]
+
+>[!TAB Gegevens]
 
 ```json
 {
@@ -397,7 +488,7 @@ De auteur moet bijvoorbeeld alleen een ondertitel, titel en één alinea-beschri
 }
 ```
 
-##### Opmaak {#markup-grouping}
+>[!TAB Opmaak]
 
 ```html
 <div class="teaser">
@@ -419,6 +510,24 @@ De auteur moet bijvoorbeeld alleen een ondertitel, titel en één alinea-beschri
   </div>
 </div>
 ```
+
+>[!TAB Tabel]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ## Secties en sectiemetagegevens {#sections-metadata}
 
@@ -500,18 +609,17 @@ Het is mogelijk metagegevens per pad of per padpatroonbasis op een tabelachtige 
 
 U maakt een dergelijke tabel door een pagina te maken en de sjabloon Metagegevens in de Sites-console te gebruiken.
 
->[!NOTE]
->
->Zorg ervoor dat u bij het bewerken van de spreadsheet met metagegevens schakelt naar **Voorvertoning** modus sinds het ontwerpen plaatsvindt op de pagina zelf, niet in de editor.
-
-Definieer in de pagina-eigenschappen van het werkblad de metagegevensvelden die u samen met de URL nodig hebt. Voeg vervolgens metagegevens toe per paginapad of paginapad, waarbij het URL-veld betrekking heeft op de toegewezen, openbare paden en niet op het inhoudspad in AEM.
+Definieer in de pagina-eigenschappen van het werkblad de metagegevensvelden die u samen met de URL nodig hebt. Voeg vervolgens metagegevens toe per paginapad of paginapad.
 
 Zorg ervoor dat het werkblad ook aan de padtoewijzing is toegevoegd voordat u het publiceert.
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### Pagina-eigenschappen {#page-properties}
