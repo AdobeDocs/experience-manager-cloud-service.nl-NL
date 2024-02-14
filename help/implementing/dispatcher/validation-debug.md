@@ -3,9 +3,9 @@ title: Validatie en foutopsporing met Dispatcher Tools
 description: Leer meer over lokale validatie, foutopsporing, de bestandsstructuur in de flexibele modus en hoe u van de oude modus naar de flexibele modus kunt migreren.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '3028'
 ht-degree: 0%
 
 ---
@@ -300,7 +300,7 @@ Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrol
 
 >[!NOTE]
 >
-Zie de [Automatisch opnieuw laden en valideren](#automatic-loading) voor een efficiënt alternatief voor het uitvoeren `validate.sh` na elke configuratiewijziging.
+>Zie de [Automatisch opnieuw laden en valideren](#automatic-loading) voor een efficiënt alternatief voor het uitvoeren `validate.sh` na elke configuratiewijziging.
 
 ### Fase 1 {#first-phase}
 
@@ -439,8 +439,8 @@ Deze fase controleert de Apache syntaxis door Apache HTTPD in een docker contain
 
 >[!NOTE]
 >
-Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Deze vereiste is een vereiste voor het uitvoeren van en het zuiveren van Dispatcher op een lokale computer.
-Voor zowel Windows als macOS raadt Adobe u aan Docker Desktop te gebruiken.
+>Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Deze vereiste is een vereiste voor het uitvoeren van en het zuiveren van Dispatcher op een lokale computer.
+>Voor zowel Windows als macOS raadt Adobe u aan Docker Desktop te gebruiken.
 
 Deze fase kan ook onafhankelijk worden uitgevoerd `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -509,13 +509,13 @@ Logbestanden voor cloudomgevingen worden weergegeven via de logbestandsservice d
 
 >[!NOTE]
 >
-Voor milieu&#39;s op AEM as a Cloud Service, is zuivert het maximale breedtepunt. Het niveau van het spoorlogboek wordt niet gesteund zodat zou u moeten vermijden plaatsend het wanneer het werken in wolkenmilieu&#39;s.
+>Voor milieu&#39;s op AEM as a Cloud Service, is zuivert het maximale breedtepunt. Het niveau van het spoorlogboek wordt niet gesteund zodat zou u moeten vermijden plaatsend het wanneer het werken in wolkenmilieu&#39;s.
 
 ### Automatisch opnieuw laden en valideren {#automatic-reloading}
 
 >[!NOTE]
 >
-Vanwege een beperking van het Windows-besturingssysteem is deze functie alleen beschikbaar voor macOS- en Linux®-gebruikers.
+>Vanwege een beperking van het Windows-besturingssysteem is deze functie alleen beschikbaar voor macOS- en Linux®-gebruikers.
 
 In plaats van lokale validatie uit te voeren (`validate.sh`) en het starten van de dockercontainer (`docker_run.sh`) telkens als de configuratie wordt gewijzigd, kunt u anders in werking stellen `docker_run_hot_reload.sh` script. Het script controleert op wijzigingen in de configuratie en laadt deze automatisch opnieuw en start de validatie opnieuw. Met deze optie kunt u veel tijd besparen tijdens het opsporen van fouten.
 
@@ -545,6 +545,25 @@ Cloud manager validator 2.0.43
 2022/07/04 09:53:55 No issues found
 INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
+
+### Aangepaste omgevingsvariabelen inspringen {#environment-variables}
+
+Aangepaste omgevingsvariabelen kunnen worden gebruikt met de verzender SDK door deze in een afzonderlijk bestand in te stellen en ernaar te verwijzen in het dialoogvenster `ENV_FILE` omgevingsvariabele voordat de lokale verzender wordt gestart.
+
+Een bestand met aangepaste omgevingsvariabelen ziet er als volgt uit:
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+En het kan in lokale verzender SDK met de volgende bevelen worden gebruikt:
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
 ```
 
 ## Verschillende Dispatcher-configuraties per omgeving {#different-dispatcher-configurations-per-environment}
@@ -620,7 +639,7 @@ Met de release van Cloud Manager 2021.7.0 genereren nieuwe programma&#39;s van C
 
    >[!NOTE]
    >
-   In de flexibele modus moet u relatieve paden gebruiken in plaats van absolute paden.
+   >In de flexibele modus moet u relatieve paden gebruiken in plaats van absolute paden.
 1. **Distribueren naar productie:**
    * Het bestand vastleggen `opt-in/USE_SOURCES_DIRECTLY` aan een git tak die door de productiepijpleiding aan het stadium van de Wolk en productiemilieu&#39;s wordt opgesteld.
    * Gebruik Cloud Manager om te implementeren in testfasen.
