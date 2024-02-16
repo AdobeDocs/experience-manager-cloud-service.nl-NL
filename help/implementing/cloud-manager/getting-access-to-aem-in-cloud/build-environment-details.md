@@ -2,9 +2,9 @@
 title: Build-omgeving
 description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 30f2eaf4d2edba13e875cd1bfe767e83a2b7f1a5
+source-git-commit: cb4c9711fc9c57546244b5b362027c255e5abc35
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,10 @@ Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en t
 Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmilieu.
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
-* Apache Maven 3.8.8 is geïnstalleerd.
+* Apache Maven 3.9.4 is geïnstalleerd.
    * Adobe raadt gebruikers aan [hun Maven repositories bijwerken om HTTPS in plaats van HTTP te gebruiken.](#https-maven)
-* De geïnstalleerde Java-versies zijn Oracle JDK 8u371 en Oracle JDK 11.0.20.
-* Standaard worden de `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk1.8.0_371` die Oracle JDK 8u371 bevat. Zie de [JDK-versie van alternatieve uitvoering](#alternate-maven-jdk-version) voor meer informatie.
+* De geïnstalleerde Java-versies zijn Oracle JDK 8u401 en Oracle JDK 11.0.22.
+* Standaard worden de `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk1.8.0_401` die Oracle JDK 8u401 bevat. Zie de [JDK-versie van alternatieve uitvoering](#alternate-maven-jdk-version) voor meer informatie.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn.
    * `bzip2`
    * `unzip`
@@ -120,7 +120,7 @@ Deze tabel verwijst naar de versienummers van het product. Java-buildnummers of 
 
 Het is ook mogelijk om Java 8 of Java 11 als JDK voor de volledige Geweven uitvoering te selecteren. In tegenstelling tot de opties van toolketins, verandert dit JDK die voor alle stop-ins wordt gebruikt tenzij de toolketenconfiguratie ook wordt geplaatst waarin de toolkettenconfiguratie nog voor toolketens-bewuste Maven plugins wordt toegepast. Hierdoor wordt de Java-versie gecontroleerd en afgedwongen met de [Insteekmodule Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werkt.
 
-Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de door de pijpleiding gebruikte vertakking van de git-opslagplaats. Dit bestand kan de inhoud 11 of 8 hebben. Eventuele andere waarden worden genegeerd. Indien 11 wordt gespecificeerd, wordt Oracle 11 gebruikt en `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk-11.0.2`. Indien 8 gespecificeerd is, wordt Oracle 8 gebruikt en de `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk1.8.0_202`.
+Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de door de pijpleiding gebruikte vertakking van de git-opslagplaats. Dit bestand kan de inhoud 11 of 8 hebben. Eventuele andere waarden worden genegeerd. Indien 11 wordt gespecificeerd, wordt Oracle 11 gebruikt en `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk-11.0.22`. Indien 8 gespecificeerd is, wordt Oracle 8 gebruikt en de `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Omgevingsvariabelen {#environment-variables}
 
@@ -147,44 +147,7 @@ Ter ondersteuning hiervan voegt Cloud Manager deze standaardomgevingsvariabelen 
 
 Uw bouwstijlproces kan van specifieke configuratievariabelen afhangen die om in de git bewaarplaats ongepast zouden zijn te plaatsen of u kunt hen tussen pijpleidinguitvoeringen moeten variëren gebruikend de zelfde tak.
 
-Met Cloud Manager kunnen deze variabelen per pijpleiding worden geconfigureerd via de Cloud Manager API of Cloud Manager CLI. Variabelen kunnen worden opgeslagen als normale tekst of in rust worden versleuteld. In beide gevallen worden variabelen binnen de ontwikkelomgeving beschikbaar gemaakt als een omgevingsvariabele die vervolgens van binnen de `pom.xml` of andere build-scripts.
-
-Dit CLI bevel plaatst een variabele.
-
-```shell
-$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
-```
-
-Deze opdracht geeft een overzicht van variabelen.
-
-```shell
-$ aio cloudmanager:list-pipeline-variables PIPELINEID
-```
-
-Namen van variabelen moeten voldoen aan de volgende conventies.
-
-* Variabelen mogen alleen alfanumerieke tekens en het onderstrepingsteken (`_`).
-* De namen moeten allemaal hoofdletters zijn.
-* Er is een grens van 200 variabelen per pijpleiding.
-* Elke naam moet 100 tekens of minder zijn.
-* Elk `string` waarde van variabele moet minder dan 2048 tekens zijn.
-* Elk `secretString` waarde van tekstvariabele moet maximaal 500 tekens zijn.
-
-Indien gebruikt in een Maven `pom.xml` , is het doorgaans handig om deze variabelen toe te wijzen aan Maven-eigenschappen met een vergelijkbare syntaxis.
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-            </activation>
-            <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-            </properties>
-        </profile>
-```
+Zie het document [Het vormen Variabelen van de Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) voor meer informatie
 
 ## Extra systeempakketten installeren {#installing-additional-system-packages}
 
