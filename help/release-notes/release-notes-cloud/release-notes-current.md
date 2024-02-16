@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 03293f49e583d8b40bafd95bbc89c9ba5c024da8
+source-git-commit: e2c1d30c035fc1f664efbd15fee977f5488dc5f8
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 0%
@@ -26,7 +26,7 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2024.1.0) is 25 januari 2024. De volgende release met functies (2024.2.0) is gepland voor 29 februari 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2024.1.0) is 25 januari 2024. De volgende release met functies (2024.3.0) is gepland voor 28 maart 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -116,3 +116,4 @@ U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/imp
 ## Migratiehulpmiddelen {#migration-tools}
 
 U vindt een volledige lijst met de releases van de migratiehulpmiddelen [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
