@@ -3,9 +3,10 @@ title: Hoe kan ik een [!DNL AEM Forms] als cloudserviceomgeving?
 description: Leer instellen en configureren van een [!DNL AEM Forms] as a Cloud Service omgeving.
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
+source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '605'
 ht-degree: 1%
 
 ---
@@ -46,21 +47,24 @@ ht-degree: 1%
 
 * (Alleen voor sandboxen) Na het instappen van de service, [maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) en [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) zowel productiepijpleidingen als niet-productiepijpleidingen. Het maakt en brengt de nieuwste functies van [!DNL AEM Forms] as a Cloud Service voor uw omgeving.
 
-U kunt Forms as a Cloud Service gebruiken om een adaptief formulier (Digital Enrollment) te maken of een klantcommunicatie te genereren. Na voltooiing [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) aan de [!DNL Adobe Experience Manager] as a Cloud Service, voer één van de volgende acties uit om Digitale Inschrijving of Communicatie van de Klant eigenschappen toe te laten. U kunt ook beide functies inschakelen:
+U kunt Forms as a Cloud Service gebruiken om een adaptief formulier (Digital Enrollment) te maken of een klantcommunicatie te genereren. Na voltooiing [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) aan de [!DNL Adobe Experience Manager] as a Cloud Service, voer de volgende acties uit om Forms - Digitale Inschrijving of Communicatie van de Klant eigenschappen toe te laten. <!--You can also enable both the features-->:
 
 1. Meld u aan bij Cloud Manager en open de as a Cloud Service AEM Forms-instantie.
+1. Open de optie Programma bewerken en ga naar het tabblad Oplossingen en invoegtoepassingen:
 
-1. Open de optie Programma bewerken, ga naar het tabblad Oplossingen en invoegtoepassingen en selecteer de optie **[!UICONTROL Forms - Communications]** -optie.
+   * Als u een productieomgeving hebt, selecteert u **[!UICONTROL Forms - Communications]** om Forms - Digital Enrollment en Forms - Communications Add-On in te schakelen.
 
-   ![Communicatie](assets/communications.png)
+     ![Communicatie](assets/communications.png)
 
-   Als u al **[!UICONTROL Forms - Digital Enrollment]** en selecteert u vervolgens de optie **[!UICONTROL Forms - Communications Add-On]** -optie.
+   <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   ![Addon](assets/add-on.png)
+   * Als u een sandboxomgeving hebt, selecteert u **[!UICONTROL Forms]** Forms - Digital Enrollment en Forms - Communications Add-On inschakelen.
+
+     ![Selectie van Form-Digital Enrollment](assets/forms-digital-enrollment1.png)
+
 
 1. Klik op **[!UICONTROL Update]**.
-
-1. Stel de bouwstijlpijpleiding in werking. Nadat de bouwstijlpijpleiding slaagt, Communicatie APIs wordt toegelaten voor uw milieu.
+1. Stel de bouwstijlpijpleiding in werking. Nadat de bouwstijlpijpleiding slaagt, wordt de geselecteerde oplossing toegelaten voor uw milieu.
 
 >[!NOTE]
 >
