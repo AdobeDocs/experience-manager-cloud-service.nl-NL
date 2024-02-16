@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,8 @@ De volgende voorwaarden zijn vereist om Workfront Fusion te verbinden met AEM Fo
 * Een AEM gebruiker met toegangsrecht [Dev Console](https://my.cloudmanager.adobe.com/) tot [winnen de de dienstgeloofsbrieven terug](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## AEM Forms integreren met Adobe Workfront Fusion
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 Verbinding maken [Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) Voer de volgende stappen uit voor een formulier:
 
@@ -129,16 +131,7 @@ Een verbinding toevoegen:
 1. De gemaakte verbinding selecteren **[!UICONTROL Connection]** in de vervolgkeuzelijst.
 1. Klik op **[!UICONTROL Save]**.
 1. Klikken **[!UICONTROL OK]** en sla de wijzigingen voor het scenario op.
-
-#### 1.3 Het Workfront-scenario activeren {#activate-scenario}
-
-Het scenario activeren:
-
-1. Klikken **[!UICONTROL Scenarios]** ![Pictogram Delen](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in het linkerdeelvenster.
-1. Klik op de knop **[!UICONTROL Inactive Scenario]** tab.
-1. Klik op de knop **AAN/UIT** schakelknop voor je AEM Forms-scenario.
-
-Wanneer u op de schakelknop klikt, verschijnt het Workfront-scenario in het dialoogvenster **[!UICONTROL Active Scenario]** tab.
+1. Als u het scenario wilt activeren, klikt u op de schakelknop AAN/UIT in de scenario-editor.
 
 >[!NOTE]
 >
