@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
+source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -35,7 +35,7 @@ AEM Forms as a Cloud Service biedt een OOTB-connector om een adaptief formulier 
 
 Voor het tot stand brengen van een verbinding tussen Workfront Fusion en AEM Forms is het volgende noodzakelijk:
 
-* Een geldige [Worfront- en Workfront Fusion-licentie](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Een geldige [Workfront- en Workfront Fusion-licentie](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * Een AEM gebruiker met toegangsrecht [Dev Console](https://my.cloudmanager.adobe.com/) tot [winnen de de dienstgeloofsbrieven terug](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## AEM Forms integreren met Adobe Workfront Fusion
@@ -135,7 +135,7 @@ Een verbinding toevoegen:
 
 ### 2. De verzendactie van een adaptief formulier voor Workfront Fusion configureren
 
-U kunt de verzendactie voor Workfont Fusion configureren voor:
+U kunt de verzendactie voor Workfront Fusion configureren voor:
 * [Nieuwe adaptieve Forms](#new-af-submit-action)
 * [Bestaande adaptieve formulieren](#existing-af-submit-action)
 
