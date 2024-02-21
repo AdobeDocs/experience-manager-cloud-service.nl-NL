@@ -4,9 +4,9 @@ description: Leer over de steun van AEM as a Cloud Service voor integratie met A
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: c4daf04d5520da1e646f35ba72c9f53cb1d97d36
+source-git-commit: a9296bba5d1ad3f6eb2190de9c15a1083f2ac6d5
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,16 @@ Meer informatie over AEM as a Cloud Service ondersteuning voor integratie met Ad
 >
 >Voor meer informatie over de integratie van Adobe Campaign met AEM 6.5, de op locatie of door AMS gehoste AEM oplossing, [dit document bekijken](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
 
-## Integreren met Adobe Campaign Classic {#acc}
+## Integreren met Adobe Campaign v7/v8 {#acc}
 
-Er zijn verschillende Adobe Campaign Classic-versies (ACC). De ondersteuning voor integratie met AEM as a Cloud Service is afhankelijk van de ACC-versie die u hebt geïmplementeerd.
+De ondersteuning voor integratie met AEM as a Cloud Service is afhankelijk van de versie van Campagne die u hebt geïmplementeerd.
 
-| ACC-versie | Integratie met AEMaaCS |
+| Campagneversie | Integratie met AEMaaCS |
 |---|---|
-| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | Niet ondersteund |
-| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html) | Niet ondersteund |
-| Webinterface* | Ondersteund |
+| [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | Niet ondersteund |
+| [Campagne v8 (clientconsole)](https://experienceleague.adobe.com/docs/campaign-v8.html) | Niet ondersteund |
+| Campagne Web User Interface | Ondersteund. [Meer informatie](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
 
-*De webinterface voor Adobe Campaign Classic wordt tegen eind 2023 verwacht.
 
 ## Integreren met Adobe Campaign Standard {#acs}
 
