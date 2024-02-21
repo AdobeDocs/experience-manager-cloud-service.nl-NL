@@ -4,9 +4,9 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,8 @@ Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Go
 
 ![Aan de slag met Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
-## Voeg het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand (EDS) toe {#add-forms-block-to-an-eds-project}
+
+## Stap 1: Voeg het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand (EDS) toe {#add-forms-block-to-an-eds-project}
 
 AEM Forms Edge Delivery bevat een formulierblok waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. Om het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand op te nemen:
 
@@ -81,7 +82,7 @@ AEM Forms Edge Delivery bevat een formulierblok waarmee u eenvoudig formulieren 
    > * Als er een fout optreedt &quot;Kan pad naar module &quot;&#39;../../scripts/lib-franklin.js&#39;&#39; niet omzetten, opent u het dialoogvenster `[EDS Project]/blocks/forms/form.js` bestand. Vervang in de importinstructie de opdracht `franklin-lib.js` met de `aem.js` bestand.
    > * Als u fouten met de koppeling tegenkomt, kunt u deze vrij negeren. Als u de controles wilt omzeilen, opent u het dialoogvenster `[EDS Project]\package.json` bestand en werk het &quot;lint&quot;-script bij `"lint": "npm run lint:js && npm run lint:css"` tot `"lint": "echo 'skipping linting for now'"`. Sparen het dossier en begaat het aan uw project GitHub.
 
-## Een formulier maken met Microsoft Excel of Google Sheet {#create-a-form-for-an-eds-project}
+## Stap 2: Een formulier maken met Microsoft Excel of Google Sheet
 
 In plaats van complexe processen kunt u eenvoudig een formulier maken met behulp van een spreadsheet. U begint door de rijen en kolomkoppen toe te voegen aan een spreadsheet, waar elke rij een formulierveld definieert en elke kolomkop de eigenschappen van de overeenkomstige formuliervelden definieert.
 
@@ -123,7 +124,7 @@ Een formulier maken:
 
 
 
-## Geef een voorbeeld van het formulier weer met de pagina Edge Delivery Service (EDS) {#add-a-form-to-your-eds-page}
+## Stap 3: Voorbeeld van het formulier weergeven met de pagina Edge Delivery Service (EDS)
 
 Tot nu toe hebt u het formulierblok voor uw EDS-project ingeschakeld en de structuur van het formulier voorbereid. Nu een voorbeeld van het formulier weergeven:
 
@@ -153,8 +154,9 @@ Tot nu toe hebt u het formulierblok voor uw EDS-project ingeschakeld en de struc
 
    ![fout bij het verzenden van formulier](/help/edge/assets/form-error.png)
 
+## Volgende stap
 
-   De volgende stap is: [spreadsheet voorbereiden voor acceptatie van gegevens](/help/edge/docs/forms/submit-forms.md).
+De volgende stap is: [spreadsheet voorbereiden voor acceptatie van gegevens](/help/edge/docs/forms/submit-forms.md).
 
 
 

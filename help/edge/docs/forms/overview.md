@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms Edge Delivery Service helpt u:
 
 * **Auteurs en verzendingen vereenvoudigen**: Maak formulieren met vertrouwde gereedschappen zoals Microsoft Excel of Google Sheets in plaats van met de traditionele ontwerpomgevingen. Verzend formulieren rechtstreeks naar uw Microsoft Excel- of Google-werkbladen en gebruik hun ecosysteem om verzonden gegevens gemakkelijk te verwerken.
 
-## Aan de slag met de AEM Forms Edge Delivery Service
+## Beginnen met de basisbeginselen
 
 <div>
 

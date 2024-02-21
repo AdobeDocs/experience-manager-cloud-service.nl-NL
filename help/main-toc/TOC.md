@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '4711'
+source-wordcount: '4692'
 ht-degree: 3%
 
 ---
@@ -810,13 +810,13 @@ ht-degree: 3%
          + [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-eds-forms.md)
          + [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
          + [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)
-      + Geavanceerde functies {#advanced-features-eds-forms}
-         + [Formulierfragmenten maken en toevoegen aan een formulier](/help/edge/docs/forms/form-fragments.md)
-         + [Een formulier vertalen](/help/edge/docs/forms/translate-forms.md)
-         + [Herhaalbare secties toevoegen aan een formulier](/help/edge/docs/forms/repeatable-forms.md)
-         + [reCAPTCHA toepassen op een formulier](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Aangepaste componenten maken](/help/edge/docs/forms/custom-components-forms.md)
-         + [Pagina voor bedankt toevoegen](/help/edge/docs/forms/thank-you-page-form.md)
+      + Mogelijkheden {#advanced-features-eds-forms}
+         + [Formulierfragmenten](/help/edge/docs/forms/form-fragments.md)
+         + [Herhaalbare secties](/help/edge/docs/forms/repeatable-forms.md)
+         + [Vertaling](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Bedankt, pagina](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Aangepaste componenten](/help/edge/docs/forms/custom-components-forms.md)
    + Bronnen voor Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Sidekick gebruiken](/help/edge/docs/sidekick.md)
