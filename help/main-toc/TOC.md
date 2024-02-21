@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
+source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
 workflow-type: tm+mt
-source-wordcount: '4648'
+source-wordcount: '4711'
 ht-degree: 3%
 
 ---
@@ -614,8 +614,8 @@ ht-degree: 3%
             + [Formulieren maken met herhaalbare secties](/help/forms/create-forms-repeatable-sections.md)
             + [Handeling verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-actions-core-components.md)
             + [Een adaptief formulier verzenden naar Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Een adaptief formulier verzenden naar Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
-            + [SharePoint-opslag configureren voor een adaptief formulier](/help/forms/configure-submit-action-sharepoint.md)
+            + [Een adaptief formulier verzenden naar Microsoft](/help/forms/configure-submit-action-onedrive.md)
+            + [Een adaptief formulier verbinden met Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [Integreer AEM adaptief formulier met AEM workflow](/help/forms/configure-submit-action-workflow.md)
             + [Verzenden naar REST Endpoint-verzendactie configureren voor Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [De handeling E-mail verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-action-send-email.md)
@@ -802,6 +802,21 @@ ht-degree: 3%
       + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Snelle installatie](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Omleiding](/help/edge/docs/redirects.md)
+   + Forms voor Edge Delivery {#build-forms}
+      + [Overzicht](/help/edge/docs/forms/overview.md)
+      + Aan de slag {#getting-started-eds-forms}
+         + [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
+         + [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
+         + [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-eds-forms.md)
+         + [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
+         + [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)
+      + Geavanceerde functies {#advanced-features-eds-forms}
+         + [Formulierfragmenten maken en toevoegen aan een formulier](/help/edge/docs/forms/form-fragments.md)
+         + [Een formulier vertalen](/help/edge/docs/forms/translate-forms.md)
+         + [Herhaalbare secties toevoegen aan een formulier](/help/edge/docs/forms/repeatable-forms.md)
+         + [reCAPTCHA toepassen op een formulier](/help/edge/docs/forms/recaptacha-forms.md)
+         + [Aangepaste componenten maken](/help/edge/docs/forms/custom-components-forms.md)
+         + [Pagina voor bedankt toevoegen](/help/edge/docs/forms/thank-you-page-form.md)
    + Bronnen voor Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Sidekick gebruiken](/help/edge/docs/sidekick.md)

@@ -2,9 +2,9 @@
 title: Gereedheidsfase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de gereedheidsfase in Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '984'
 ht-degree: 3%
 
 ---
@@ -60,10 +60,13 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
+   >[!NOTE]
+   >Als er meerdere rapporten zijn geüpload, is het rapport dat in detail wordt weergegeven altijd het rapport met de meest recente aanmaakdatum (geen uploaddatum).
+
 1. Het dashboard van de Analyse van Beste praktijken van het overzicht en onderzoek in CAM. Zie [Rapport Analyse van beste praktijken](#analysis-report) voor meer informatie .
 
    >[!NOTE]
-   >Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld.
+   >Als u een nieuw rapport uploadt, worden alle beoordelingen opnieuw ingesteld als dit nieuwer is dan het eerder geladen rapport.
 
 ### Afdrukvoorbeeld gebruiken {#print-preview-cam}
 
@@ -86,12 +89,12 @@ Voer de onderstaande stappen uit:
 
 ### Trendline weergeven gebruiken {#trendline-view-cam}
 
-Wanneer u meer dan één rapport van de Analysator van Beste praktijken (BPA) in een Project uploadt, kunt u selecteren **Trendline weergeven** optie om resultaten van de historische BPA-rapporten te bekijken en te vergelijken.
+Wanneer u meer dan één verschillend rapport van de Analysator van Beste praktijken (BPA) in een Project uploadt, kunt u selecteren **Trendline weergeven** optie om resultaten van de historische BPA-rapporten te bekijken en te vergelijken.
 
 Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te geven:
 
 >[!NOTE]
->Wanneer u meer dan één BPA- rapport in een Project uploadt, ziet u **...** pictogram.
+>Wanneer u meer dan één verschillend BPA- rapport in een Project uploadt, ziet u **...** pictogram. Rapporten worden als hetzelfde (niet als verschillend) beschouwd als de host en de aanmaaktijd gelijk zijn.
 
 1. Ga naar uw project en klik op **Controleren** van de **Analyse van best practices** in de **Gereedheid** fase.
 
@@ -100,9 +103,6 @@ Voer de onderstaande stappen uit om rapporten van de optie Trendline weer te gev
 1. Klikken **...**.
 
    ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >Het getoonde rapport is altijd het rapport dat de recentste rapportdatum heeft.
 
 1. Klik in de vervolgkeuzelijst op **Trendline weergeven**, zoals weergegeven in onderstaande afbeelding.
 

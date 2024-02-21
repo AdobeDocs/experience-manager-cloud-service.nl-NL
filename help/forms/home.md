@@ -5,7 +5,7 @@ landing-page-description: Inzicht in hoe u formulieren in AEM as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 3%
@@ -26,7 +26,6 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] biedt een cloud-native,
 De dienst is altijd huidig, altijd beschikbaar, en altijd het leren. Organisaties kunnen [!DNL AEM Forms] as a Cloud Service en ontvang al deze functies in de cloud zonder dat u hiervoor een lokale infrastructuur nodig hebt. De dienst bevrijdt organisaties van complexe verbeteringscycli aangezien het altijd met de recentste eigenschappen bijgewerkt is.
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] is een klant-centric oplossing om elke stap van de klantenreis te steunen:
-
 
 ## Inschrijving en instapervaring digitaliseren en stroomlijnen
 

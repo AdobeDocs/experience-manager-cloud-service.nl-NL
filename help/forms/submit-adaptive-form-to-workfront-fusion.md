@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -40,11 +40,17 @@ Voor het tot stand brengen van een verbinding tussen Workfront Fusion en AEM For
 
 ## AEM Forms integreren met Adobe Workfront Fusion
 
-Verbinding maken [Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) Voer de volgende stappen uit voor een formulier:
-
 ### 1. Een Workfront-scenario maken {#workflow-scenario}
 
-Een Workfront-scenario maken:
+Voer de volgende stappen uit om een Workfront-scenario te maken:
+
+1. [Een scenario maken](#create-scenario)
+1. [Een webhaak toevoegen aan een scenario](#add-webhook)
+1. [Een verbinding met een webhaak toevoegen](#add-connection)
+
+#### Een scenario maken {#create-scenario}
+
+Een scenario maken:
 1. Aanmelden bij uw [Workfront Fusion-account](https://app-qa.workfrontfusion.com/).
 1. Klikken **[!UICONTROL Scenarios]** ![Pictogram Delen](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in het linkerdeelvenster.
 1. Klikken **[!UICONTROL Create a new scenario]** rechtsboven op de pagina. Op het scherm verschijnt een pagina waarop u een nieuw scenario kunt maken.
@@ -61,7 +67,7 @@ Een Workfront-scenario maken:
 
 1. Selecteer de **[!UICONTROL Watch for Form Events]** verschijnt een venster waarin u een webhaak kunt toevoegen.
 
-#### 1.1 Een webhaak toevoegen {#add-webhook}
+#### Webhaak toevoegen {#add-webhook}
 
 ![Webhaak toevoegen](/help/forms/assets/workfront-add-webhook.png)
 
@@ -76,7 +82,7 @@ Een webhaak toevoegen:
 
 1. Klikken **[!UICONTROL Add]** om nieuwe verbinding toe te voegen. De **[!UICONTROL Create a Connection]** wordt weergegeven.
 
-#### 1.2 Een verbinding toevoegen aan een webhaak {#add-connection}
+#### Een verbinding met een webhaak toevoegen {#add-connection}
 
 ![Een verbinding toevoegen](/help/forms/assets/workfront-add-connection.png)
 
