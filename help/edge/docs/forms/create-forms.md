@@ -4,9 +4,9 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 7b497791c70fd588b7e8c9a94caa218189d3153a
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -18,33 +18,31 @@ In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendel
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
+![Aan de slag met Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
+
+
 ## Vereisten
 
-* U hebt een GitHub-account.
-* U hebt toegang tot Google Sheets of Microsoft SharePoint.
-* U begrijpt de grondbeginselen van Git, HTML, CSS en JavaScript.
-* U hebt Node en NPM geïnstalleerd voor lokale ontwikkeling.
-
-## Voordat u begint
+Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
 * Opstelling en kloon uw project van de Dienst van de Levering van de Rand (EDS). Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie.
-* Klonen met [Forms Block-opslagplaats](https://github.com/adobe/afb).
-
-  ![Aan de slag met Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
+* Klonen met [Forms Block-opslagplaats](https://github.com/adobe/afb). Het bevat de code waarmee het formulier op een EDS-sitepagina wordt weergegeven.
+* Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint.
 
 
 ## Een formulier maken
-
 
 +++ Stap 1: Voeg het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand (EDS) toe.
 
 AEM Forms Edge Delivery bevat een formulierblok waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. Om het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand op te nemen:
 
-1. Navigeren naar `[cloned Forms Block repository folder]`/blokken/.
+1. Navigeren naar `[cloned Forms Block repository folder]/blocks/`.
 
-1. De `forms` map naar `[Cloned EDS Project repository folder]\blocks` map.
+1. De `forms` map naar `[Cloned EDS Project repository folder]/blocks` map.
 
-1. Controleer in de &quot;vorm&quot;omslag en onderliggende dossiers aan uw project van de Dienst van de Levering van de Rand op GitHub.
+   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+
+1. Inchecken `form` omslag en onderliggende dossiers aan uw project van de Dienst van de Levering van de Rand op GitHub.
 
    ```Shell
    cd ..
@@ -112,7 +110,7 @@ Tot nu toe hebt u het formulierblok voor uw EDS-project ingeschakeld en de struc
 
 1. Ga naar uw Microsoft SharePoint- of Google Drive-account en open uw AEM Edge Delivery-projectdirectory.
 
-1. Open een documentbestand om het formulier in te sluiten. Open bijvoorbeeld het indexbestand. U kunt ook een nieuw bestand maken.
+1. Open een documentbestand om het formulier in te sluiten. Open bijvoorbeeld het indexbestand. U kunt ook een nieuw documentbestand maken.
 
 1. Navigeer naar de gewenste locatie in het document waar u het formulier wilt toevoegen.
 

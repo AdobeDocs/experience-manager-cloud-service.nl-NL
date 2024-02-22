@@ -4,9 +4,9 @@ description: Krachtige formulieren sneller maken met spreadsheets en formulierbl
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -14,65 +14,72 @@ ht-degree: 0%
 
 # Uw formulier inschakelen voor het verzenden van gegevens
 
-Nadat u het formulier hebt gemaakt en een voorbeeld ervan hebt weergegeven, schakelt u het bijbehorende blad in om gegevens te accepteren. Als u wilt beginnen met het accepteren van gegevens, stelt u in uw spreadsheet de koppen in die overeenkomen met de gegevens die u wilt verzamelen. Alle kopteksten die aan het &#39;gedeelde-gebrek&#39; blad worden toegevoegd zouden ook in het &quot;inkomende&quot;blad onder een lijst moeten aanwezig zijn.
+Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/create-forms.md), is het tijd om de overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen.
 
-In het volgende voorbeeld worden velden voor een formulier &quot;contact-us&quot; weergegeven:
+>[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-![Velden voor een formulier met contactgegevens](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+Het werkblad inschakelen:
 
-
-Zodra deze installatie is voltooid, kan het formulier opmerkingen accepteren. U kunt één van de volgende methodes gebruiken om uw spreadsheet toe te laten om gegevens goed te keuren:
-
-* [Een spreadsheet handmatig configureren voor het accepteren van gegevens](#manually-configure-a-spreadsheet-to-receive-data)
-
-* [Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens](#use-admin-apis-to-enable-a-spreadsheet-to-receive-data-use-admin-apis-to-enable-a-spreadsheet-to-recieve-data)
-
-## Een spreadsheet handmatig configureren voor het accepteren van gegevens
-
-Om een spreadsheet manueel te vormen om gegevens goed te keuren:
-
-
-1. Open het werkboek dat u hebt gecreeerd en verander de naam van het standaardblad in &quot;inkomend&quot;.
+1. Open het werkblad met het formulier en voeg er een werkblad aan toe en wijzig de naam van het werkblad in `incoming`.
 
    >[!WARNING]
    >
-   > Als het &quot;inkomende&quot;blad niet bestaat, zal AEM geen gegevens naar dit werkboek verzenden.
+   > Als de `incoming` Het blad bestaat niet, AEM verzendt geen gegevens naar dit werkboek.
 
-1. Bereid het blad door kopballen toe te voegen die de gegevens aanpassen u in zet. In het volgende voorbeeld worden velden voor een formulier &quot;contact-us&quot; weergegeven:
+1. In de `incoming` blad, alle kolomkoppen spiegelen naar `Name` kolom (namen van formuliervelden) in het dialoogvenster `shared-default` blad.
+
+   In het volgende voorbeeld worden kopteksten weergegeven voor een formulier &quot;contact-us&quot;:
 
    ![Velden voor een formulier met contactgegevens](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Geef een voorvertoning van het blad weer in het zijpaneel.
+1. Gebruik sidekick om een voorvertoning van het blad weer te geven.
 
    >[!NOTE]
    >
-   >Zelfs als u al eerder een voorvertoning van het blad hebt weergegeven, moet u dit opnieuw bekijken nadat u voor het eerst het &#39;binnenkomende&#39; blad hebt gemaakt.
+   >Zelfs als u al eerder een voorvertoning van het blad hebt weergegeven, moet u dit opnieuw bekijken nadat u het `incoming` blad voor het eerst.
 
 
-## Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens
+Nadat de veldnamen aan de `incoming` blad, kan uw formulier opmerkingen accepteren. U kunt een voorbeeld van het formulier bekijken en gegevens naar het blad verzenden.
 
-U kunt een verzoek van de POST aan de vormroute binnen de AEM Admin dienst in werking stellen. Na het ontvangen van de gegevens van het lichaamslichaam van de POST, analyseert de admin dienst het en produceert autonoom de essentiële kopballen, lijsten, en bladen nodig voor gegevensopname, die de functionaliteit van de vormendienst optimaliseren.
+U ziet ook de volgende wijzigingen in uw spreadsheet:
+
+Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek of Google-werkblad. In dit blad, kunt u automatische berichten voor een aangewezen kanaal van de Slack vormen wanneer de nieuwe gegevens in uw spreadsheet worden opgenomen. Momenteel steunt AEM berichten uitsluitend aan de organisatie van de Slack van de Techniek van de AEM en de organisatie van de Steun van de Onderneming van de Adobe.
+
+1. Als u meldingen voor Slacks wilt instellen, voert u &#39;teamId&#39; van de werkruimte van de Slack en &#39;kanaalnaam&#39; of &#39;ID&#39; in. U kunt ook de slack-bot (met de foutopsporingsopdracht) vragen naar &quot;teamId&quot; en &quot;channel ID&quot;. Het verdient de voorkeur de kanaalid te gebruiken in plaats van de kanaalnaam, omdat deze de kanaalnamen behoudt.
+
+   >[!NOTE]
+   >
+   > Oudere formulieren hadden niet de kolom &quot;teamId&quot;. &quot;teamId&quot; is opgenomen in de kanaalkolom, gescheiden door &quot;#&quot; of &quot;/&quot;.
+
+1. Voer een gewenste titel in en typ onder velden de namen van de velden die u wilt weergeven in het bericht Slack. Elke kop moet worden gescheiden door een komma (bijvoorbeeld naam, e-mail).
+
+   >[!WARNING]
+   >
+   >  De &quot;gedeelde-standaard&quot;bladen moeten nooit om het even welke persoonlijk identificeerbare informatie of gevoelige gegevens bevatten die u niet aan openbaar toegankelijk bent.
+
+
+## (Optioneel) Gebruik Admin API&#39;s om een spreadsheet in te schakelen voor het accepteren van gegevens
+
+U kunt ook een verzoek van de POST naar het formulier verzenden, zodat het gegevens kan accepteren en headers voor de `incoming` blad. Na ontvangst van het verzoek van de POST analyseert de dienst het lichaam van verzoek en produceert autonoom de essentiële kopballen en bladen nodig voor gegevensopname.
 
 Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
 
 
-1. Open het werkboek dat u hebt gecreeerd en verander de naam van het standaardblad in &quot;inkomend&quot;.
+1. Open het werkboek dat u hebt gecreeerd en verander de naam van het standaardblad in `incoming`.
 
    >[!WARNING]
    >
-   > Als het &quot;inkomende&quot;blad niet bestaat, zal AEM geen gegevens naar dit werkboek verzenden.
+   > Als de `incoming` Het blad bestaat niet, AEM verzendt geen gegevens naar dit werkboek.
 
 1. Geef een voorvertoning van het blad weer in het zijpaneel.
 
    >[!NOTE]
    >
-   >Zelfs als u al eerder een voorvertoning van het blad hebt weergegeven, moet u dit opnieuw bekijken nadat u voor het eerst het &#39;binnenkomende&#39; blad hebt gemaakt.
+   >Zelfs als u al eerder een voorvertoning van het blad hebt weergegeven, moet u dit opnieuw bekijken nadat u het `incoming` blad voor het eerst.
 
-1. Bereid het blad door kopballen toe te voegen die de gegevens aanpassen u in zet.
+1. Verzend het verzoek van de POST om de aangewezen kopballen in te produceren `incoming` en voegt de `shared-default` bladen naar het spreadsheet, als dit nog niet het geval is.
 
-   U kunt dit doen door een verzoek van de POST naar de vormroute in de AEM Admin dienst te verzenden. De admin dienst onderzoekt de gegevens in het lichaam van de POST en produceert de aangewezen kopballen, lijsten, en bladen nodig om gegevens effectief in te voeren en de dienst van Forms optimaal te maken.
-
-   Als u wilt weten hoe u de aanvraag van de POST voor het instellen van uw werkblad opmaakt, raadpleegt u de [Admin API-documentatie](https://www.hlx.live/docs/admin.html#tag/form). Bekijk ook het onderstaande voorbeeld:
+   Als u wilt weten hoe u de aanvraag van de POST voor het instellen van uw werkblad opmaakt, raadpleegt u de [Admin API-documentatie](https://www.hlx.live/docs/admin.html#tag/form). U kunt het onderstaande voorbeeld bekijken:
 
    **Verzoek**
 
@@ -135,27 +142,26 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
    }'
    ```
 
-   Het eerder vermelde verzoek van de POST bevat voorbeeldgegevens, waaronder zowel formuliervelden als hun respectieve samplewaarden. Deze gegevens worden door de beheerservice gebruikt om het formulier in te stellen.
+   Het bovenstaande verzoek om POST bevat voorbeeldgegevens, waaronder zowel formuliervelden als de bijbehorende samplewaarden. Deze gegevens worden door de beheerservice gebruikt om het formulier in te stellen.
 
-   Op het voorleggen van het verzoek van de POST aan de admin dienst, observeert u de volgende veranderingen in uw werkboek:
+   Uw formulier is nu ingeschakeld voor het accepteren van gegevens. U ziet ook de volgende wijzigingen in uw spreadsheet:
 
-* Er wordt een nieuw blad met de naam &quot;shared-default&quot; toegevoegd aan uw Excel-werkboek of Google-werkblad. De gegevens in het &quot;gedeelde-gebrek&quot;blad worden teruggewonnen wanneer het maken van een verzoek van de GET aan het blad. Dit blad fungeert als een optimale locatie voor het samenvatten van de binnenkomende gegevens met behulp van spreadsheetformules, waardoor het geschikt is voor consumptie in andere contexten.
+Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek of Google-werkblad. In dit blad, kunt u automatische berichten voor een aangewezen kanaal van de Slack vormen wanneer de nieuwe gegevens in uw spreadsheet worden opgenomen. Momenteel steunt AEM berichten uitsluitend aan de organisatie van de Slack van de Techniek van de AEM en de organisatie van de Steun van de Onderneming van de Adobe.
 
-  De &quot;gedeelde-standaard&quot;bladen moeten nooit om het even welke persoonlijk identificeerbare informatie of gevoelige gegevens bevatten die u niet aan openbaar toegankelijk bent.
+1. Als u meldingen voor Slacks wilt instellen, voert u &#39;teamId&#39; van de werkruimte van de Slack en &#39;kanaalnaam&#39; of &#39;ID&#39; in. U kunt ook de slack-bot (met de foutopsporingsopdracht) vragen naar &quot;teamId&quot; en &quot;channel ID&quot;. Het verdient de voorkeur de kanaalid te gebruiken in plaats van de kanaalnaam, omdat deze de kanaalnamen behoudt.
 
-* Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek of Google-werkblad. In dit blad, kunt u automatische berichten voor een aangewezen kanaal van de Slack vormen wanneer de nieuwe gegevens in uw spreadsheet worden opgenomen. Momenteel steunt AEM berichten uitsluitend aan de organisatie van de Slack van de Techniek van de AEM en de organisatie van de Steun van de Onderneming van de Adobe.
+   >[!NOTE]
+   >
+   > Oudere formulieren hadden niet de kolom &quot;teamId&quot;. &quot;teamId&quot; is opgenomen in de kanaalkolom, gescheiden door &quot;#&quot; of &quot;/&quot;.
 
-   1. Als u meldingen voor Slacks wilt instellen, voert u &#39;teamId&#39; van de werkruimte van de Slack en &#39;kanaalnaam&#39; of &#39;ID&#39; in. U kunt ook de slack-bot (met de foutopsporingsopdracht) vragen naar &quot;teamId&quot; en &quot;channel ID&quot;. Het verdient de voorkeur de kanaalid te gebruiken in plaats van de kanaalnaam, omdat deze de kanaalnamen behoudt.
+1. Voer een gewenste titel in en typ onder velden de namen van de velden die u wilt weergeven in het bericht Slack. Elke kop moet worden gescheiden door een komma (bijvoorbeeld naam, e-mail).
 
-      >[!NOTE]
-      >
-      > Oudere formulieren hadden niet de kolom &quot;teamId&quot;. &quot;teamId&quot; is opgenomen in de kanaalkolom, gescheiden door &quot;#&quot; of &quot;/&quot;.
-
-   1. Voer een gewenste titel in en typ onder velden de namen van de velden die u wilt weergeven in het bericht Slack. Elke kop moet worden gescheiden door een komma (bijvoorbeeld naam, e-mail).
 
 Het blad is nu ingesteld op het ontvangen van gegevens. U kunt [Een voorbeeld van het formulier weergeven met behulp van het formulierblok](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [aanvragen voor POST gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
 
-
+>[!WARNING]
+>
+>  De &quot;gedeelde-standaard&quot;bladen moeten nooit om het even welke persoonlijk identificeerbare informatie of gevoelige gegevens bevatten die u niet aan openbaar toegankelijk bent.
 
 ## Gegevens naar uw werkblad verzenden {#send-data-to-your-sheet}
 
@@ -271,7 +277,7 @@ Er zijn een paar verschillende manieren waarop u de formuliergegevens in de hoof
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-Vervolgens kunt u de dankbetuiging aanpassen, [een pagina voor bedankt configureren](/help/edge/docs/forms/thank-you-page-form.md), of [omleidingen instellen](/help/edge/docs/forms/thank-you-page-form.md).
+Vervolgens kunt u het bedankbericht aanpassen, [een pagina voor bedankt configureren](/help/edge/docs/forms/thank-you-page-form.md), of [omleidingen instellen](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Meer weergeven
 
