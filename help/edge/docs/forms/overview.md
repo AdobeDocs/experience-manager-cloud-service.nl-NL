@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,25 @@ ht-degree: 0%
 
 # AEM Forms Edge Delivery-service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service is een composable service die door Adobe wordt aangeboden en waarmee u snel presterende webformulieren kunt maken en leveren. Deze composable service kan naadloos worden geïntegreerd met Adobe Experience Manager (AEM) om u in staat te stellen geavanceerde, bliksemsnelle webformulieren te ontwerpen, samen te stellen en te implementeren met een intuïtieve en efficiënte workflow.
-
-AEM Forms Edge Delivery Service helpt u:
+AEM Forms Edge Delivery Service is een composable service die door Adobe wordt aangeboden en waarmee u snel presterende webformulieren kunt maken en leveren. U kunt de service gebruiken om:
 
 * **visueel verbluffende formulieren maken**: Ditch de bland, de koekjesvorm-koker ontwerpen en fascineer gebruikers met dynamische, moderne vormen die uw merkidentiteit weerspiegelen. Gebruik kant-en-klare onderdelen of maak uw eigen aangepaste onderdelen om uw visie snel en eenvoudig tot leven te brengen.
 
 * **Formulieren samenstellen met perfecte vuurtorenscore**: Formulieren maken die snel kunnen worden geladen en gegenereerd, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.
 
 * **Auteurs en verzendingen vereenvoudigen**: Maak formulieren met vertrouwde gereedschappen zoals Microsoft Excel of Google Sheets in plaats van met de traditionele ontwerpomgevingen. Verzend formulieren rechtstreeks naar uw Microsoft Excel- of Google-werkbladen en gebruik hun ecosysteem om verzonden gegevens gemakkelijk te verwerken.
+
+
+Deze componeerbare service is losgekoppeld van de inhoudsbron en biedt de flexibiliteit bij het maken van inhoud door gebruikers toe te staan hun voorkeursontwerpgereedschappen te gebruiken.
+
+![Edge Delivery-gereedschappen voor het schrijven van formulieren](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+Inhoudsmakers kunnen gereedschappen gebruiken waarmee ze vertrouwd zijn, zoals Microsoft Excel of Google Sheets (Document based authoring), JSON Editors of AEM Forms Adaptive Forms Editor voor WYSIWYG-bewerking (AEM Forms-projecten), om hun formulieren te ontwerpen en te maken.
+
+>[!NOTE]
+>
+>
+> WYSIWYG-bewerkingsfunctie en Cross Walk-ares zijn beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-early-adopter-program@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen.
 
 ## Beginnen met de basisbeginselen
 
@@ -47,7 +57,7 @@ AEM Forms Edge Delivery Service helpt u:
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Een formulier maken met een formulier met het type eds" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Een formulier maken</b>
+            <br><b style="margin-top: 5px;">Een formulier maken met Google Sheets of Microsoft Excel</b>
         </a>
         <p>Formulieren maken die snel en automatisch opnieuw worden geladen en gegenereerd op mobiele apparaten.</p>
     </div>

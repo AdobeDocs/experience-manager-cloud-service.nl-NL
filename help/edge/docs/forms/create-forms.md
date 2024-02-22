@@ -4,9 +4,9 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,13 @@ In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendel
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
-![Aan de slag met Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
-
 
 ## Vereisten
 
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
-* Opstelling en kloon uw project van de Dienst van de Levering van de Rand (EDS). Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie.
-* Klonen met [Forms Block-opslagplaats](https://github.com/adobe/afb). Het bevat de code waarmee het formulier op een EDS-sitepagina wordt weergegeven.
+* Opstelling en kloon uw project van de Dienst van de Levering van de Rand (EDS). Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie. De lokale map van uw Edge Delivery Service-project (EDS) wordt weergegeven als `[EDS Project repository]` in dit document.
+* Klonen met [Forms Block-opslagplaats](https://github.com/adobe/afb). Het bevat de code die het formulier op een EDS-webpagina moet weergeven. De lokale map van de Forms Block-opslagplaats wordt weergegeven als `[Forms Block repository]` in dit document.
 * Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint.
 
 
@@ -36,32 +34,25 @@ Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
 AEM Forms Edge Delivery bevat een formulierblok waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. Om het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand op te nemen:
 
-1. Navigeren naar `[cloned Forms Block repository folder]/blocks/`.
+1. Navigeren naar `[Forms Block repository]/blocks` en kopieer de `forms` map.
 
-1. De `forms` map naar `[Cloned EDS Project repository folder]/blocks` map.
+1. Navigeren naar `[EDS Project repository]/blocks/` en plak de `forms` map.
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
 
 1. Inchecken `form` omslag en onderliggende dossiers aan uw project van de Dienst van de Levering van de Rand op GitHub.
 
-   ```Shell
-   cd ..
-   git add .
-   git commit -m "Added form block"
-   git push origin
-   ```
+   Het formulierblok wordt toegevoegd aan de EDS-projectopslagplaats op Github. Zorg ervoor dat de Github-build niet mislukt:
 
-   Het blok van de Vorm wordt toegevoegd aan uw project EDS. U kunt nu een formulier maken en dit toevoegen aan uw site.
+   * Als er een fout optreedt &quot;Kan pad naar module &quot;&#39;../../scripts/lib-franklin.js&#39;&#39; niet omzetten, opent u het dialoogvenster `[EDS Project]/blocks/forms/form.js` bestand. Vervang in de importinstructie de opdracht `lib-franklin.js` met de `aem.js` bestand.
 
-   >[!NOTE]
-   >
-   > * Als er een fout optreedt &quot;Kan pad naar module &quot;&#39;../../scripts/lib-franklin.js&#39;&#39; niet omzetten, opent u het dialoogvenster `[EDS Project]/blocks/forms/form.js` bestand. Vervang in de importinstructie de opdracht `lib-franklin.js` met de `aem.js` bestand.
-   > * Als u fouten met de koppeling tegenkomt, kunt u deze vrij negeren. Als u de controles wilt omzeilen, opent u het dialoogvenster `[EDS Project]\package.json` bestand en werk het &quot;lint&quot;-script bij `"lint": "npm run lint:js && npm run lint:css"` tot `"lint": "echo 'skipping linting for now'"`. Sparen het dossier en begaat het aan uw project GitHub.
+   * Als u fouten met de koppeling tegenkomt, kunt u deze vrij negeren. Als u de controles wilt omzeilen, opent u het dialoogvenster `[EDS Project]\package.json` bestand en werk het &quot;lint&quot;-script bij `"lint": "npm run lint:js && npm run lint:css"` tot `"lint": "echo 'skipping linting for now'"`. Sparen het dossier en begaat het aan uw project GitHub.
+
+U kunt nu een formulier maken en dit toevoegen aan uw site.
 
 +++
 
-+++ Stap 2: Een formulier maken met Microsoft Excel of Google Sheet
-
++++ Stap 2: Een formulier ontwerpen met Microsoft Excel of Google Sheet.
 
 In plaats van complexe processen kunt u eenvoudig een formulier maken met behulp van een spreadsheet. U begint door de rijen en kolomkoppen toe te voegen aan een spreadsheet, waar elke rij een formulierveld definieert en elke kolomkop de eigenschappen van de overeenkomstige formuliervelden definieert.
 
@@ -103,10 +94,10 @@ Een formulier maken:
 
 +++
 
-+++ Stap 3: Voorbeeld van het formulier weergeven met de pagina Edge Delivery Service (EDS)
++++ Stap 3: Geef een voorbeeld van het formulier weer met de pagina Edge Delivery Service (EDS).
 
 
-Tot nu toe hebt u het formulierblok voor uw EDS-project ingeschakeld en de structuur van het formulier voorbereid. Nu een voorbeeld van het formulier weergeven:
+Tot nu toe hebt u het formulierblok aan uw EDS-project toegevoegd en de structuur van het formulier voorbereid. Nu een voorbeeld van het formulier weergeven:
 
 1. Ga naar uw Microsoft SharePoint- of Google Drive-account en open uw AEM Edge Delivery-projectdirectory.
 
@@ -118,14 +109,17 @@ Tot nu toe hebt u het formulierblok voor uw EDS-project ingeschakeld en de struc
 
    ![](/help/edge/assets/form-block-in-sites-page-example.png)
 
-   Neem in de tweede rij de URL op die u in de vorige sectie hebt genoteerd, als hyperlink. U kunt de voorbeeld-URL (.page URL) of de publicatie-URL (.live) gebruiken. De voorbeeld-URL kan worden gebruikt tijdens het maken of testen van het formulier en het publiceren van de URL voor productie.
+   Neem in de tweede rij de URL op die u in de vorige sectie als hyperlink hebt opgenomen. Gebruik de URL van de voorvertoning (.page URL) voor ontwikkelings- of testdoeleinden of de URL van de publicatie (.live) voor productiedoeleinden.
 
    >[!IMPORTANT]
    >
    >
-   > Zorg ervoor dat de URL niet wordt vermeld als normale tekst. Deze moet als hyperlink worden toegevoegd.
+   > Zorg ervoor dat de URL een hyperlink heeft en niet wordt weergegeven als onbewerkte tekst.
 
-1. Gebruiken [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om de pagina voor te vertonen. Het formulier wordt nu weergegeven op de pagina. Hier ziet u bijvoorbeeld het formulier dat is gebaseerd op de [contact opnemen met ons spreadsheet](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
+
+1. Gebruiken [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om de pagina voor te vertonen. Het formulier wordt nu weergegeven op de pagina.
+
+   Hier ziet u bijvoorbeeld het formulier dat is gebaseerd op de [contact opnemen met ons spreadsheet](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link):
 
 
    ![Een voorbeeld-EDS-formulier](/help/edge/assets/eds-form.png)
@@ -139,7 +133,7 @@ Tot nu toe hebt u het formulierblok voor uw EDS-project ingeschakeld en de struc
 
 ## Volgende stap
 
-De volgende stap is: [spreadsheet voorbereiden voor acceptatie van gegevens](/help/edge/docs/forms/submit-forms.md).
+[Werkblad voorbereiden](/help/edge/docs/forms/submit-forms.md) om gegevens te accepteren bij het verzenden van het formulier.
 
 
 

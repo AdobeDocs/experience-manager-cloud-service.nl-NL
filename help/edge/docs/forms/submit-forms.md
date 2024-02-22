@@ -1,18 +1,18 @@
 ---
-title: Van werkbladen tot Forms - Validaties voor formulierblokvelden beheren
-description: Krachtige formulieren sneller maken met spreadsheets en formulierblokvelden! Deze handleiding helpt u bij het maken van aangepaste validaties voor EDS Forms Block-velden.
+title: De spreadsheet voorbereiden voor het accepteren van gegevens
+description: Krachtige formulieren sneller maken met spreadsheets en formulierblokvelden!
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
 
-# Uw formulier inschakelen voor het verzenden van gegevens
+# De spreadsheet voorbereiden voor het accepteren van gegevens
 
 Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/create-forms.md), is het tijd om de overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen.
 
@@ -20,15 +20,15 @@ Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/cr
 
 Het werkblad inschakelen:
 
-1. Open het werkblad met het formulier en voeg er een werkblad aan toe en wijzig de naam van het werkblad in `incoming`.
+1. Open het werkblad met het formulier en voeg een nieuw blad toe, onder een andere naam `incoming`.
 
    >[!WARNING]
    >
-   > Als de `incoming` Het blad bestaat niet, AEM verzendt geen gegevens naar dit werkboek.
+   > Als de `incoming` blad is niet aanwezig, AEM verzendt geen gegevens naar het werkblad.
 
-1. In de `incoming` blad, alle kolomkoppen spiegelen naar `Name` kolom (namen van formuliervelden) in het dialoogvenster `shared-default` blad.
+1. De namen van formuliervelden en waarden van de `Name` in de`shared-default` blad, naar de koppen in het `incoming` blad.
 
-   In het volgende voorbeeld worden kopteksten weergegeven voor een formulier &quot;contact-us&quot;:
+   Elke waarde in het dialoogvenster `Name` kolom van de `shared-default` blad, met uitzondering van de verzendknop, fungeert als koptekst in het dialoogvenster `incoming` blad. Neem bijvoorbeeld de volgende afbeelding die kopteksten illustreert voor een formulier &quot;contact-us&quot;:
 
    ![Velden voor een formulier met contactgegevens](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -79,7 +79,7 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
 
 1. Verzend het verzoek van de POST om de aangewezen kopballen in te produceren `incoming` en voegt de `shared-default` bladen naar het spreadsheet, als dit nog niet het geval is.
 
-   Als u wilt weten hoe u de aanvraag van de POST voor het instellen van uw werkblad opmaakt, raadpleegt u de [Admin API-documentatie](https://www.hlx.live/docs/admin.html#tag/form). U kunt het onderstaande voorbeeld bekijken:
+   Als u wilt weten hoe u de aanvraag van de POST voor het instellen van uw werkblad opmaakt, raadpleegt u de [Admin API-documentatie](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). U kunt het onderstaande voorbeeld bekijken:
 
    **Verzoek**
 
