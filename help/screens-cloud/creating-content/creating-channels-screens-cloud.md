@@ -2,9 +2,9 @@
 title: Kanalen maken en beheren in as a Cloud Service schermen
 description: In deze pagina wordt beschreven hoe u kanalen in as a Cloud Service schermen maakt en beheert.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1103'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Met dit document krijgt u meer inzicht in het maken en beheren van kanalen voor 
 
 * begrijpen hoe u kanalen maakt voor de Inhoudsprovider voor schermen
 * inhoud in uw kanalen beheren en bewerken
-* activeringsschema voor uw kanalen
+* beheer het taak- en activeringsschema voor uw kanalen in [Serviceprovider voor schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 
 ## Stappen voor het maken van een nieuw sequentiekanaal in as a Cloud Service schermen {#create-new-channel}
 
@@ -73,7 +73,7 @@ Ga als volgt te werk om inhoud aan een kanaal toe te voegen of te bewerken:
 
 1. Sleep de elementen vanuit het linkerdeelvenster en voeg deze toe aan de editor.
 
-   ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
+   ![bewerkingskanaal2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
    >Klikken **Voorvertoning** om de inhoud van het kanaal voor te vertonen.
@@ -92,6 +92,8 @@ De volgende sjablonen zijn beschikbaar tijdens het gebruik van de **Maken** wiza
 ## Standaardtoewijzingsdetails gebruiken voor kanalen {#default-channels}
 
 Met deze functie kunt u een standaard activeringsschema voor een kanaal definiëren en dit standaard gebruiken voor elke toewijzing voor een weergave. Dit verstrekt een methode zodat de lastige programmadefinitie niet te hoeven worden herhaald.
+
+1. Ga vanuit [hier](https://experience.adobe.com/screens).
 
 ### Standaardtoewijzingsdetails maken voor een kanaal {#create-default}
 
@@ -119,7 +121,7 @@ In deze tegel wordt de volgende informatie weergegeven:
 Kanalen met standaardtoewijzingsdetails kunnen op dezelfde manier worden weergegeven als gewone kanalen, met de toegevoegde optie om de standaardtoewijzingsdetails te gebruiken in plaats van telkens handmatig aangepaste details te definiëren.
 
 1. Navigeer naar de pagina met weergavedetails waaraan u het kanaal wilt toewijzen en klik op de knop **Kanaal toewijzen**.
-Of selecteer de gewenste weergave in de overzichtsweergave en klik op de knop **Kanaal toewijzen**.
+Of selecteer de gewenste weergave in het dialoogvenster [voorraad](https://experience.adobe.com/screens/displays) weergeven en klikken op de knop **Kanaal toewijzen**.
 1. Het dialoogvenster Kanaaltoewijzing wordt geopend.
 
    ![afbeelding](/help/screens-cloud/assets/display/Assignments4.png)

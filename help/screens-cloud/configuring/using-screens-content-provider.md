@@ -2,9 +2,9 @@
 title: Scherminhoudprovider gebruiken
 description: Op deze pagina wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken om inhoud te maken.
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Doelstelling {#objective}
 
-In de volgende sectie wordt beschreven hoe u de Inhoudsprovider voor schermen kunt gebruiken als u de instellingen hebt ingesteld [Schermserviceprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
+In de volgende sectie wordt beschreven hoe u kanalen kunt maken in de Inhoudsprovider voor schermen nadat u de instellingen hebt ingesteld [Schermserviceprovider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en).
 
 ## Scherminhoudprovider gebruiken {#screens-content-provider}
 
@@ -46,7 +46,7 @@ Voer de onderstaande stappen uit om u aan te melden bij de Inhoudsprovider voor 
 
    ![Koppeling die is gemarkeerd via de kaart voor omgevingen waarmee u toegang krijgt tot de Content Provider voor schermen.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
-   Nadat u zich hebt aangemeld bij de Inhoudsprovider voor schermen, kunt u nu inhoud maken om de inhoud af te spelen.
+   Nadat u zich hebt aangemeld bij de Inhoudsprovider voor schermen, navigeert u naar Schermen > Inhoudsprovider. U kunt nu uw inhoud maken om deze af te spelen.
 
    Gebruik Scherminhoudprovider om het volgende te maken en te beheren:
 
