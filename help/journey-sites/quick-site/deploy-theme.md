@@ -2,9 +2,9 @@
 title: Uw aangepaste thema implementeren
 description: Leer hoe te om het plaatsthema op te stellen gebruikend de pijpleiding.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,9 @@ Hieronder vindt u een aantal aanvullende bronnen die dieper ingaan op bepaalde c
 * [Sitethema AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - Dit is de bewaarplaats GitHub van het Thema van de Plaats van de AEM.
 * [npm](https://www.npmjs.com) - AEM thema&#39;s die worden gebruikt om sites snel te bouwen, zijn gebaseerd op npm.
 * [webpack](https://webpack.js.org) - AEM thema&#39;s die worden gebruikt om sites snel op te bouwen, zijn gebaseerd op webpack.
-* [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In deze handleiding wordt beschreven hoe u pagina&#39;s van uw AEM Site kunt beheren als u deze verder wilt aanpassen nadat u de site hebt gemaakt op basis van de sjabloon.
+* [Pagina&#39;s ordenen](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - In deze handleiding wordt uitgelegd hoe u pagina&#39;s van uw AEM site kunt ordenen.
+* [Pagina&#39;s maken](/help/sites-cloud/authoring/sites-console/creating-pages.md) - In deze handleiding wordt uitgelegd hoe u nieuwe pagina&#39;s aan uw site kunt toevoegen.
+* [Pagina&#39;s beheren](/help/sites-cloud/authoring/sites-console/managing-pages.md) - In deze handleiding wordt beschreven hoe u de pagina&#39;s van uw site kunt beheren, zoals verplaatsen, kopiëren en verwijderen.
 * [Hoe te met Pakket werken](/help/implementing/developing/tools/package-manager.md) - Pakketten maken het importeren en exporteren van inhoud in de opslagplaats mogelijk. In dit document wordt uitgelegd hoe u met pakketten werkt in AEM 6.5. Dit geldt ook voor AEMaaCS.
 * [Onboarding Journaal](/help/journey-onboarding/overview.md) - Deze gids dient als uitgangspunt om ervoor te zorgen dat uw teams opstelling zijn en toegang tot AEM as a Cloud Service hebben.
 * [Documentatie Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Verken de documentatie van Cloud Manager voor meer informatie over de functies ervan.

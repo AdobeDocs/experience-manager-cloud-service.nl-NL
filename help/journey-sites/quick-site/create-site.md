@@ -2,9 +2,9 @@
 title: Site maken van sjabloon
 description: Leer hoe u snel een AEM site kunt maken met een sitesjabloon.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,9 @@ Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het doc
 Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site maken te gaan door het document te bekijken [Opstelling uw pijpleiding,](pipeline-setup.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
 
 * [Standaardsitemplate AEM](https://github.com/adobe/aem-site-template-standard) - Dit is de bewaarplaats GitHub van het AEM Standaardmalplaatje van de Plaats.
-* [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - In deze handleiding wordt beschreven hoe u pagina&#39;s van uw AEM Site kunt beheren als u deze verder wilt aanpassen nadat u de site hebt gemaakt op basis van de sjabloon.
+* [Pagina&#39;s ordenen](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - In deze handleiding wordt beschreven hoe u de pagina&#39;s van uw AEM site kunt ordenen.
+* [Pagina&#39;s maken](/help/sites-cloud/authoring/sites-console/creating-pages.md) - In deze handleiding wordt uitgelegd hoe u nieuwe pagina&#39;s aan uw site kunt toevoegen.
+* [Pagina&#39;s beheren](/help/sites-cloud/authoring/sites-console/managing-pages.md) - In deze handleiding wordt beschreven hoe u de pagina&#39;s van uw site kunt beheren, zoals verplaatsen, kopiëren en verwijderen.
 * [Hoe te met Pakket werken](/help/implementing/developing/tools/package-manager.md) - Pakketten maken het importeren en exporteren van inhoud in de opslagplaats mogelijk. In dit document wordt uitgelegd hoe u met pakketten werkt in AEM 6.5. Dit geldt ook voor AEMaaCS.
 * [Documentatie voor sitebeheer](/help/sites-cloud/administering/site-creation/create-site.md) - Ontdek de technische documentatie bij het maken van de site voor meer informatie over de functies van het gereedschap Snel maken.
 * [Formulieren maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Leer stapsgewijze technieken en tips en trucs voor het integreren van formulieren in uw website, zodat u uw digitale ervaringen optimaal kunt benutten.

@@ -2,7 +2,7 @@
 title: Deelnemen aan workflows
 description: Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit op een pagina of element uitvoert.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 1%
@@ -24,11 +24,11 @@ Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit
 
 Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), worden verschillende waarschuwingen en/of meldingen weergegeven:
 
-* Uw [melding](/help/sites-cloud/authoring/getting-started/inbox.md) indicator (werkbalk) wordt verhoogd:
+* Uw [melding](/help/sites-cloud/authoring/inbox.md) indicator (werkbalk) wordt verhoogd:
 
   ![Berichtwerkbalk](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* Het object wordt aangeboden in je bericht [Inbox](/help/sites-cloud/authoring/getting-started/inbox.md):
+* Het object wordt aangeboden in je bericht [Inbox](/help/sites-cloud/authoring/inbox.md):
 
   ![Meldingen in Postvak IN](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ U kunt een deelnemersstap uitvoeren vanuit:
 
 Voer de volgende procedure uit om het werkitem te voltooien:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
 1. Selecteren **Voltooid** op de werkbalk.
 1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop-down selecteur en voeg toe **Opmerking** indien nodig.
@@ -82,7 +82,7 @@ Voer de volgende procedure uit om het werkitem te voltooien:
 
 Voer de volgende procedure uit om het werkitem te voltooien:
 
-1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Selecteren **Voltooid** in de statusbalk boven in het scherm.
 1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop-down selecteur en voeg toe **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
@@ -131,7 +131,7 @@ U kunt een deelnemersstap delegeren vanuit:
 
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
 1. Selecteren **Delegeren** op de werkbalk.
 1. Het dialoogvenster wordt geopend. Geef de **Gebruiker** in de keuzelijst (dit kan ook een groep zijn) en voeg een **Opmerking** indien nodig.
@@ -141,7 +141,7 @@ Gebruik de volgende procedure om een het werkpunt te delegeren:
 
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
-1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Selecteren **Delegeren** in de statusbalk boven in het scherm.
 1. Het dialoogvenster wordt geopend. Geef de **Gebruiker** in de keuzelijst (dit kan ook een groep zijn) en voeg een **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
@@ -181,7 +181,7 @@ U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
 
 Gebruik de volgende procedure om terug te gaan:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
 1. Selecteren **Stap terug** het dialoogvenster openen.
 1. Geef de **Vorige stap** en voeg een **Opmerking** indien nodig.
@@ -191,7 +191,7 @@ Gebruik de volgende procedure om terug te gaan:
 
 Gebruik de volgende procedure om terug te gaan:
 
-1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Selecteren **Stap terug** in de statusbalk boven in het scherm.
 1. Geef de **Vorige stap** en voeg een **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
@@ -242,7 +242,7 @@ U kunt de details van het werkitem openen vanuit:
 
 U opent als volgt een workflowitem en bekijkt de details:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
 1. Selecteren **Openen** om de informatietabbladen te openen.
 1. Selecteer zo nodig de gewenste actie, geef details en bevestig deze met **OK** (of **Annuleren**).
@@ -252,7 +252,7 @@ U opent als volgt een workflowitem en bekijkt de details:
 
 U opent als volgt een workflowitem en bekijkt de details:
 
-1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
+1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Selecteren **Details weergeven** van de statusbar om de informatielusjes te openen.
 1. Selecteer zo nodig de gewenste actie, geef details en bevestig deze met **OK** (of **Annuleren**).
 1. Gebruiken **Opslaan** of **Annuleren** om af te sluiten.
@@ -263,7 +263,7 @@ U kunt details van de lading bekijken verbonden aan de werkschemainstantie. In e
 
 Om de lading, en middelen, van de werkschemainstantie te bekijken:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
 1. Selecteren **Payload weergeven** op de werkbalk om het dialoogvenster te openen.
    * Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Gebruik de **Brondefinitie** toe te voegen.

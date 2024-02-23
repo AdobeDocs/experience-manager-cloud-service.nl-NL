@@ -2,7 +2,7 @@
 title: Een middelenmap maken - Instellingen zonder kop
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
       * Deze kan zo nodig worden aangepast.
 
    ![Map maken](../assets/assets-folder-create.png)
-1. Selecteer de map die u hebt gemaakt door op het vinkje te tikken en erop te klikken. Selecteer vervolgens **Eigenschappen** van de werkbalk (of gebruik de `p` [sneltoets](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)).
+1. Selecteer de map die u hebt gemaakt door op het vinkje te tikken en erop te klikken. Selecteer vervolgens **Eigenschappen** van de werkbalk (of gebruik de `p` [sneltoets](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)).
 1. In de **Eigenschappen** venster, selecteert u de **Cloud Servicen** tab.
 1. Voor de **Cloud Configuration** Selecteer de [eerder gemaakte configuratie.](create-configuration.md)
    ![Map met middelen configureren](../assets/assets-folder-configure.png)

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '4039'
 ht-degree: 0%
@@ -38,7 +38,7 @@ De zelfstudie helpt u de stappen te illustreren voor het integreren van interact
 
 Stappen voor interactieve afbeeldingen:
 
-1. **(Optioneel) Hotspotvariabelen identificeren**. Als u Adobe Experience Manager Assets en Dynamic Media standalone gebruikt, identificeert u dynamische variabelen die worden gebruikt in uw bestaande QuickView-implementatie. Zo weet u zeker dat u hotspotgegevens kunt invoeren wanneer u de interactieve afbeelding maakt. Zie [(Optioneel) Hotspotvariabelen identificeren](#optional-identifying-hotspot-variables).
+1. **(Optioneel) Hotspotvariabelen identificeren**. Als u Adobe Experience Manager Assets en Dynamic Media standalone gebruikt, identificeer dynamische variabelen die in uw bestaande implementatie van de QuickView worden gebruikt. Zo weet u zeker dat u hotspotgegevens kunt invoeren wanneer u de interactieve afbeelding maakt. Zie [(Optioneel) Hotspotvariabelen identificeren](#optional-identifying-hotspot-variables).
 Nochtans, als u Experience Manager Sites, of Experience Manager eCommerce, of allebei gebruikt, dan is deze stap niet noodzakelijk.
 
 1. **(Optioneel) Een voorinstelling voor een interactieve afbeeldingsviewer maken**. Pas de grafische afbeelding aan die wordt gebruikt om hotspots te vertegenwoordigen. Het is niet nodig een eigen voorinstelling voor een interactieve afbeeldingsviewer te maken als u de voorinstelling voor de externe interactieve afbeeldingsviewer wilt gebruiken met de naam `Shoppable_Banner` in plaats daarvan.
@@ -65,7 +65,7 @@ Als u WCM (Web Content Manager) van derden gebruikt, integreert u de nieuwe inte
 >* U wilt interactiviteit aan uw beeld toevoegen door aan Snelle meningen te teweegbrengen.
 >* Uw implementatie van Experience Manager doet *niet* een eCommerce-integratiekader gebruiken om productgegevens uit elke eCommerce-oplossing in de Experience Manager te krijgen. Tot deze oplossingen behoren IBM® WebSphere® Commerce, Elastic Path, SAP Hybris of Intershop.
 >
-Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
+>Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
 
 Begin door dynamische variabelen te identificeren die door uw bestaande implementatie van QuickView worden gebruikt zodat u hotspot gegevens kunt ingaan om het interactieve beeld tot stand te brengen.
 
@@ -218,11 +218,11 @@ U kunt hotspots toevoegen aan een afbeeldingsbanner met de editor op de pagina H
 
 Wanneer u hotspots toevoegt, kunt u deze definiëren als een pop-upweergave in QuickView, als een hyperlink of als een Experience-fragment.
 
-Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
-De gereedschappen voor het delen van sociale media in interactieve afbeeldingen worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. Gebruik of maak in plaats daarvan viewervoorinstellingen die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
+>De gereedschappen voor het delen van sociale media in interactieve afbeeldingen worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. Gebruik of maak in plaats daarvan viewervoorinstellingen die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
 Opties voor Ongedaan maken en Opnieuw worden in de rechterbovenhoek van de pagina ondersteund tijdens de huidige sessie voor maken en bewerken.
 
@@ -232,15 +232,15 @@ Zie [(Optioneel) Interactieve afbeeldingen voorvertonen](#optional-previewing-in
 
 >[!NOTE]
 >
-Wanneer u hotspots toevoegt aan een afbeelding in een interactieve afbeelding of een carrouselbanner, worden de hotspotgegevens opgeslagen op dezelfde metagegevenslocatie. Deze locatie is relatief ten opzichte van de locatie van de afbeelding, ongeacht of het een interactieve afbeelding of een carrouselbanner betreft. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
+>Wanneer u hotspots toevoegt aan een afbeelding in een interactieve afbeelding of een carrouselbanner, worden de hotspotgegevens opgeslagen op dezelfde metagegevenslocatie. Deze locatie is relatief ten opzichte van de locatie van de afbeelding, ongeacht of het een interactieve afbeelding of een carrouselbanner betreft. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
 >
-Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. Interactieve afbeeldingen bieden dat niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt in plaats daarvan interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
+>Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. Interactieve afbeeldingen bieden dat niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt in plaats daarvan interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
 >
-Zie ook [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md).
+>Zie ook [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
 >
-Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
+>Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
 
 **Hotspots toevoegen aan een afbeeldingsbanner:**
 
@@ -285,13 +285,13 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
    * Selecteren **[!UICONTROL Experience Fragment]**.
 
       * Als u een Experience Manager Sites-klant bent, selecteert u het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Selecteer het ervaringsfragment dat u wilt gebruiken. Selecteer vervolgens **[!UICONTROL Select]** rechtsboven op de pagina. U wordt teruggestuurd naar de pagina Hotspot-beheer.
-Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * Geef de breedte en hoogte van het ervaringsfragment op zoals u het wilt weergeven op de banner.
 
         >[!NOTE]
         >
-        De gereedschappen voor het delen van sociale media in interactieve afbeeldingen worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. Gebruik of maak in plaats daarvan viewervoorinstellingen die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
+        >De gereedschappen voor het delen van sociale media in interactieve afbeeldingen worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. Gebruik of maak in plaats daarvan viewervoorinstellingen die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
 1. Selecteren **[!UICONTROL Save]** om uw werk op te slaan en terug te keren naar de pagina Bladeren.
 1. Publiceer de interactieve afbeelding. Publiceren zorgt voor de banner via de cloud en genereert ook insluitcode waarmee u kunt integreren met een website van derden.
@@ -304,7 +304,7 @@ Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-frag
 
    >[!NOTE]
    >
-   Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
+   >Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
 
 ### (Optioneel) Interactieve afbeeldingen voorvertonen {#optional-previewing-interactive-images}
 
@@ -352,7 +352,7 @@ Integratie is zo eenvoudig als het verwijderen van de `IMG` tags toepassen en de
 
 >[!NOTE]
 >
-Zoals dit punt, zijn de hotspots op het shoppable interactieve beeld van de demo website slechts voor vertoningsdoeleinden. Ze zijn nog niet geïntegreerd met de bestaande Snelle weergaven.
+>Zoals dit punt, zijn de hotspots op het shoppable interactieve beeld van de demo website slechts voor vertoningsdoeleinden. Ze zijn nog niet geïntegreerd met de bestaande Snelle weergaven.
 
 Als u een &#39;uitsnijding&#39; wilt toepassen op een verwisselbare interactieve afbeelding voor een responsieve omgeving, neemt u het configuratiekenmerk Interactive Image op `ZoomView.iscommand` naar het pad. In dit geval worden de `ZoomView` component wordt aangeroepen en `iscommand` Dit is de opdracht voor het uitsnijden van een afbeelding die fungeert als werkafbeelding die u toepast.
 
@@ -366,7 +366,7 @@ U bent nu klaar om de interactieve afbeelding te integreren met een bestaande Qu
 
 >[!NOTE]
 >
-Deze taak is alleen van toepassing als u een zelfstandige Experience Manager Assets-klant bent.
+>Deze taak is alleen van toepassing als u een zelfstandige Experience Manager Assets-klant bent.
 
 De laatste stap in dit proces is het integreren van de interactieve afbeelding met een bestaande Quickview-implementatie op uw website. Er is geen oplossing voor de integratie die in alle gevallen werkt. Elke implementatie van Quickview is uniek en een specifieke benadering is nodig. Daarom is het nuttig om de hulp van een front-end IT-persoon in te roepen.
 

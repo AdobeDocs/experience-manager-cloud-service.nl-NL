@@ -4,7 +4,7 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3125'
 ht-degree: 1%
@@ -119,9 +119,9 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
         >[!CAUTION]
         >
-        >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype moeten namen bevatten *alleen* A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot; als speciaal teken.
+        Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype moeten namen bevatten *alleen* A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot; als speciaal teken.
         >
-        >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
+        Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
      Bijvoorbeeld:
 
@@ -150,9 +150,9 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
   >[!NOTE]
   >
-  >Of het tekstgebied RTF, Onbewerkte Tekst, of Markdown is wordt bepaald in het model door het bezit **Standaardtype**.
+  Of het tekstgebied RTF, Onbewerkte Tekst, of Markdown is wordt bepaald in het model door het bezit **Standaardtype**.
   >
-  >Deze indeling kan niet worden gewijzigd vanuit het dialoogvenster [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md), maar alleen van het model.
+  Deze indeling kan niet worden gewijzigd vanuit het dialoogvenster [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md), maar alleen van het model.
 
 * **Getal**
    * Een of meer numerieke velden toevoegen
@@ -184,7 +184,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
      >[!NOTE]
      >
-     >Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
+     Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
 
 ## Eigenschappen {#properties}
 
@@ -196,7 +196,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
   >[!CAUTION]
   >
-  >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
+  Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
 * **Renderen als**
 
@@ -227,11 +227,11 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
   >[!NOTE]
   >
-  >Er wordt gezorgd voor uniformiteit per taalwortel.
+  Er wordt gezorgd voor uniformiteit per taalwortel.
 
   >[!NOTE]
   >
-  >Variaties kunnen hetzelfde hebben *uniek* waarde als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
+  Variaties kunnen hetzelfde hebben *uniek* waarde als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
 
 * Zie **[Content Reference](#content-reference)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
 
@@ -280,18 +280,16 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
      >[!NOTE]
      >
-     >Deze methode is van bijzonder belang wanneer u gebruikt [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     Deze methode is van bijzonder belang wanneer u gebruikt [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
 >[!NOTE]
 >
->AEM heeft terugkerende bescherming voor:
+AEM heeft terugkerende bescherming voor:
 >
->* Content References
->  Hierdoor wordt voorkomen dat de gebruiker een verwijzing naar het huidige fragment toevoegt en kan dit leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+* Inhoudsverwijzingen Dit voorkomt dat de gebruiker een verwijzing naar het huidige fragment toevoegt en kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzingen.
 >
->* Fragmentverwijzingen in GraphQL
->  Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze null bij de eerste instantie.
+* Fragmentverwijzingen in GraphQL Als u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze null bij de eerste instantie.
 
 ### Content Reference {#content-reference}
 
@@ -302,16 +300,16 @@ Naast de standaardeigenschappen kunt u opgeven:
 * De **Hoofdpad**, die aangeeft waar inhoud waarnaar wordt verwezen, moet worden opgeslagen
   >[!NOTE]
   >
-  >Dit is verplicht als u afbeeldingen in dit veld rechtstreeks wilt uploaden en ernaar wilt verwijzen wanneer u de Content Fragment-editor gebruikt.
+  Dit is verplicht als u afbeeldingen in dit veld rechtstreeks wilt uploaden en ernaar wilt verwijzen wanneer u de Content Fragment-editor gebruikt.
   >
-  >Zie [Referentieafbeeldingen](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor nadere bijzonderheden.
+  Zie [Referentieafbeeldingen](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor nadere bijzonderheden.
 
 * De inhoudstypen waarnaar kan worden verwezen
   >[!NOTE]
   >
-  >Deze moeten **Afbeelding** als u afbeeldingen in dit veld rechtstreeks wilt uploaden en ernaar wilt verwijzen wanneer u de Inhoudsfragmenteditor gebruikt.
+  Deze moeten **Afbeelding** als u afbeeldingen in dit veld rechtstreeks wilt uploaden en ernaar wilt verwijzen wanneer u de Inhoudsfragmenteditor gebruikt.
   >
-  >Zie [Referentieafbeeldingen](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor nadere bijzonderheden.
+  Zie [Referentieafbeeldingen](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor nadere bijzonderheden.
 
 * Beperkingen voor bestandsgrootten
 * Als naar een afbeelding wordt verwezen:
@@ -345,7 +343,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Fragmentverwijzingen zijn van bijzonder belang voor [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+Fragmentverwijzingen zijn van bijzonder belang voor [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Naast de standaardeigenschappen kunt u definiëren:
 
@@ -371,9 +369,9 @@ Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 
 >[!NOTE]
 >
->Er is een terugkerend beschermingsmechanisme ingesteld. Het is de gebruiker niet toegestaan het huidige inhoudsfragment in de fragmentverwijzing te selecteren en leidt mogelijk tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+Er is een terugkerend beschermingsmechanisme ingesteld. Het is de gebruiker niet toegestaan het huidige inhoudsfragment in de fragmentverwijzing te selecteren en leidt mogelijk tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
->Ook fragmentverwijzingen worden in GraphQL herhaaldelijk beschermd. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, keert het ongeldig terug.
+Ook fragmentverwijzingen worden in GraphQL herhaaldelijk beschermd. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, keert het ongeldig terug.
 
 ## Een inhoudsfragmentmodel in- of uitschakelen {#enabling-disabling-a-content-fragment-model}
 
@@ -422,7 +420,7 @@ Om inhoudsbeheer uit te voeren, kunt u vormen **Beleid** in de map Elementen om 
 
 >[!NOTE]
 >
->Het mechanisme lijkt op [toestaan, van paginasjablonen](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) voor een pagina en de onderliggende elementen, in geavanceerde eigenschappen van een pagina.
+Het mechanisme lijkt op [toestaan, van paginasjablonen](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) voor een pagina en de onderliggende elementen, in geavanceerde eigenschappen van een pagina.
 
 Om te vormen **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
 
@@ -456,7 +454,7 @@ De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als v
 
 >[!CAUTION]
 >
->Het verwijderen van een model van een inhoudsfragment kan invloed hebben op afhankelijke fragmenten.
+Het verwijderen van een model van een inhoudsfragment kan invloed hebben op afhankelijke fragmenten.
 
 Een model van een inhoudsfragment verwijderen:
 
@@ -467,7 +465,7 @@ Een model van een inhoudsfragment verwijderen:
 
    >[!NOTE]
    >
-   >Als naar het model wordt verwezen, wordt een waarschuwing gegeven, zodat u aangewezen actie kunt nemen.
+   Als naar het model wordt verwezen, wordt een waarschuwing gegeven, zodat u aangewezen actie kunt nemen.
 
 ## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
 
@@ -483,7 +481,7 @@ De gepubliceerde status wordt getoond in de console.
 
    >[!NOTE]
    >
-   >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+   Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
 ## Publicatie van een inhoudsfragmentmodel ongedaan maken {#unpublishing-a-content-fragment-model}
 
@@ -501,7 +499,7 @@ Als u de publicatie probeert ongedaan te maken van een model dat momenteel wordt
 
 ![Foutbericht van Content Fragment Model bij het ongedaan maken van de publicatie van een model dat in gebruik is](assets/cf-cfmodels-unpublish-error.png)
 
-Het bericht suggereert dat u de [Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel voor een nader onderzoek :
+Het bericht suggereert dat u de [Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references) panel voor een nader onderzoek :
 
 ![Inhoudsfragmentmodel in verwijzingen](assets/cf-cfmodels-references.png)
 
@@ -571,6 +569,6 @@ U kunt **Vergrendeld** modellen van of de console, of modelredacteur:
 
      >[!NOTE]
      >
-     >Mogelijk staat er nog een waarschuwing boven aan het scherm, maar dat is wanneer het model al wordt gebruikt door bestaande inhoudsfragmenten.
+     Mogelijk staat er nog een waarschuwing boven aan het scherm, maar dat is wanneer het model al wordt gebruikt door bestaande inhoudsfragmenten.
 
    * **Annuleren** keert u aan de console terug.

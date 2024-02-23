@@ -4,7 +4,7 @@ description: Er zijn verschillende sneltoetsen beschikbaar voor AEM, waaronder e
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Een selectie van toetsenbordkortere weg is beschikbaar voor gebruik in de console van de Fragmenten van de Inhoud.
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing wanneer [pagina&#39;s bewerken](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), andere [algemeen gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing wanneer [pagina&#39;s bewerken](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), andere [algemeen gebruik van consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing w
 | Selecteer een of meer inhoudsfragmenten | `u` | Het dialoogvenster Publiceren nu ongedaan maken openen |
 | Willekeurig geopend dialoogvenster | `esc` | Dialoogvenster wordt gesloten |
 
-Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers. Sommige zijn van toepassing wanneer [pagina&#39;s bewerken](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), andere aan het algemeen [gebruik van consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers. Sommige zijn van toepassing wanneer [pagina&#39;s bewerken](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), andere aan het algemeen [gebruik van consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Sneltoetsen in de Editor zijn altijd actief, ongeacht of [sneltoetsen voor de console zijn gedeactiveerd](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Sneltoetsen in de Editor zijn altijd actief, ongeacht of [sneltoetsen voor de console zijn gedeactiveerd](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 

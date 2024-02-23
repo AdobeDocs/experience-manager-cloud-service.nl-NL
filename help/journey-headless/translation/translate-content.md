@@ -2,9 +2,9 @@
 title: Koploze inhoud omzetten
 description: Gebruik de vertaalaansluiting om uw inhoud zonder kop te vertalen.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Voor managers van vertaalprojecten, is het vaak noodzakelijk om specifieke inhou
 
    ![Tabblad Projectbasis](assets/project-basic-tab.png)
 
-1. Op de **Geavanceerd** gebruiken **Doeltaal** om de talen te selecteren waarin de inhoud moet worden vertaald. Selecteer **Maken**.
+1. Op de **Geavanceerd** gebruiken **Doeltaal** om de talen te selecteren waarin de inhoud moet worden vertaald. Selecteren **Maken**.
 
    ![Tabblad Project geavanceerd](assets/project-advanced-tab.png)
 
@@ -249,4 +249,4 @@ Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het docum
 U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het document te bekijken [Vertaalde inhoud publiceren,](publish-content.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
 
 * [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md) - Leer de details van vertaalprojecten en aanvullende functies zoals workflows voor menselijke vertaling en meertalige projecten.
-* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.
+* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.

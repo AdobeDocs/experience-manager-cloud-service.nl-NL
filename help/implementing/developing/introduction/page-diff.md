@@ -2,7 +2,7 @@
 title: Developing and Page Diff
 description: Begrijp hoe de functie Pagina Diff werkt en hoe deze een ontwikkelaar kan beïnvloeden
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Inhoud maken is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheiding kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies enzovoort. Zie voor meer informatie over deze gebruikersfunctie [Pagina grijs](/help/sites-cloud/authoring/features/page-diff.md).
+Met het paginagecheiding kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies enzovoort. Zie voor meer informatie over deze gebruikersfunctie [Pagina grijs](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Bewerkingsdetails {#operation-details}
 
-Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken, op de achtergrond opnieuw gemaakt door AEM om het schuiven te vergemakkelijken. Deze vorige versie is nodig om de inhoud te renderen [voor vergelijking naast elkaar](/help/sites-cloud/authoring/features/page-diff.md).
+Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken, op de achtergrond opnieuw gemaakt door AEM om het schuiven te vergemakkelijken. Deze vorige versie is nodig om de inhoud te renderen [voor vergelijking naast elkaar](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 Deze recreatiebewerking wordt intern AEM uitgevoerd en is transparant voor de gebruiker en vereist geen interventie. Een beheerder die de gegevensopslagruimte bijvoorbeeld in CRXDE Lite bekijkt, ziet deze opnieuw gemaakte versies echter wel binnen de inhoudsstructuur.
 

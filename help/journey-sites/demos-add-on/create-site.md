@@ -2,9 +2,9 @@
 title: Demo-site maken
 description: Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde sjablonen.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '809'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Zodra de pijpleiding toe:voegen-aan van de Demo van de Verwijzing heeft opgestel
 
    ![Wizard Site maken](assets/site-creation-wizard.png)
 
-1. Geef in het volgende scherm een titel op voor uw site of schermproject. U kunt een sitenaam opgeven of genereren op basis van de titel, als u deze weglaat. Selecteer **Maken**.
+1. Geef in het volgende scherm een titel op voor uw site of schermproject. U kunt een sitenaam opgeven of genereren op basis van de titel, als u deze weglaat. Selecteren **Maken**.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
@@ -110,5 +110,5 @@ U kunt nu de functies van AEM testen met add-on inhoud. U hebt twee opties om uw
 
 * [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.
 * [Site maken](/help/sites-cloud/administering/site-creation/create-site.md) - Leer hoe u AEM kunt gebruiken om een site te maken met behulp van sitesjablonen om de stijl en structuur van uw site te definiëren.
-* [Naamconventies voor pagina&#39;s AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Zie deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
-* [AEM basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Onderzoek dit document als u nieuw bent om basisconcepten zoals navigatie en consoleorganisatie AEM te begrijpen.
+* [Naamconventies voor pagina&#39;s AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Zie deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
+* [AEM basisverwerking](/help/sites-cloud/authoring/basic-handling.md) - Onderzoek dit document als u nieuw bent om basisconcepten zoals navigatie en consoleorganisatie AEM te begrijpen.

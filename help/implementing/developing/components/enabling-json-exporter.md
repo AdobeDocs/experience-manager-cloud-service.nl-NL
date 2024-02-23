@@ -2,10 +2,10 @@
 title: JSON-export inschakelen voor een component
 description: Componenten kunnen worden aangepast om JSON-export van hun inhoud te genereren op basis van een modellerframework.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 1%
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +76,7 @@ Een voorbeeld vindt u in de implementatie Sling Model van de Image Core-componen
 
 ## Verwante documentatie {#related-documentation}
 
-* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

@@ -4,7 +4,7 @@ description: Leer hoe u Dynamic Media in Adobe Experience Manager as a Cloud Ser
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3575'
 ht-degree: 1%
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Wanneer de nieuwe configuratie van Dynamic Media zijn opstelling beëindigt, ontvangt u een statusbericht binnen as a Cloud Service Inbox van de Experience Manager.
    >
    >Dit Inbox bericht deelt u als de configuratie of succesvol of niet was.
-   > Zie [Een nieuwe Dynamic Media-configuratie oplossen](#troubleshoot-dm-config) en [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md) voor meer informatie .
+   > Zie [Een nieuwe Dynamic Media-configuratie oplossen](#troubleshoot-dm-config) en [Uw Postvak IN](/help/sites-cloud/authoring/inbox.md) voor meer informatie .
 
 1. Om Dynamic Media-inhoud veilig voor te vertonen voordat deze wordt gepubliceerd, gebruikt de as a Cloud Service Experience Manager een op token gebaseerde validatie en wordt daarom standaard de Dynamic Media-inhoud voorvertoond door de auteur van de Experience Manager. U kunt echter *lijst van gewenste personen* meer IPs om gebruikers toegang te verlenen tot veilig voorproef inhoud. Als u deze handeling wilt instellen in as a Cloud Service Experience Manager, raadpleegt u [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren - tabblad Beveiliging](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -139,7 +139,7 @@ Wanneer een nieuwe configuratie van Dynamic Media zijn opstelling beëindigt, on
 
 ![Fout in Experience Manager Inbox](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-Zie ook [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md).
+Zie ook [Uw Postvak IN](/help/sites-cloud/authoring/inbox.md).
 
 **Een nieuwe Dynamic Media-configuratie oplossen:**
 

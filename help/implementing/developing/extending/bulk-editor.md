@@ -2,7 +2,7 @@
 title: Bulk bewerken van pagina-eigenschappen configureren
 description: Leer hoe u bulkbewerking kunt configureren, zodat u de eigenschappen van meerdere pagina's tegelijk kunt bewerken.
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Bulk bewerken van pagina-eigenschappen configureren {#configuring-bulk-editing-of-page-properties}
 
-[Pagina-eigenschappen in bulk bewerken](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) Hiermee kunt u de eigenschappen van meerdere pagina&#39;s tegelijk bewerken.
+[Pagina-eigenschappen in bulk bewerken](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages) Hiermee kunt u de eigenschappen van meerdere pagina&#39;s tegelijk bewerken.
 
 ## Overwegingen {#considerations}
 

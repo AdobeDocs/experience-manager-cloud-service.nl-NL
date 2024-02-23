@@ -4,7 +4,7 @@ description: Leer hoe u inhoud voorbereidt voor vertaling bij het ontwikkelen va
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -92,7 +92,7 @@ AEM biedt **Verwijzingen** rail die een lijst toont van taalwortels die zijn gec
 
 ![Taalwortels](../assets/language-roots.png)
 
-Gebruik de volgende procedure om de taalkopieën voor een pagina te bekijken met de [spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Gebruik de volgende procedure om de taalkopieën voor een pagina te bekijken met de [spoorwegkiezer](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 1. Selecteer in de siteconsole een pagina van de site en selecteer vervolgens **Verwijzingen**.
 

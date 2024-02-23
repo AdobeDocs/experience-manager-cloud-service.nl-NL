@@ -2,7 +2,7 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 0%
@@ -169,7 +169,7 @@ Een gebruiker met de vereiste machtigingen moet de volgende stappen uitvoeren vo
 
 Nadat de toegang tot de voorvertoningsservice is ontgrendeld, wordt het vergrendelingspictogram vóór de naam van de voorvertoningsservice niet meer weergegeven.
 
-Nadat de functie is geactiveerd, kunt u inhoud publiceren naar de voorbeeldservice met behulp van de interface Publicatie beheren in AEM. Zie [Inhoud voorvertonen](/help/sites-cloud/authoring/fundamentals/previewing-content.md) voor meer informatie .
+Nadat de functie is geactiveerd, kunt u inhoud publiceren naar de voorbeeldservice met behulp van de interface Publicatie beheren in AEM. Zie [Inhoud voorvertonen](/help/sites-cloud/authoring/sites-console/previewing-content.md) voor meer informatie .
 
 >[!NOTE]
 >

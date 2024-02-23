@@ -2,18 +2,18 @@
 title: Overzicht van ervaringsfragmenten
 description: Breid de Fragmenten van de Ervaring van Adobe Experience Manager as a Cloud Service uit.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1642'
 ht-degree: 0%
 
 ---
 
-# Ervaringsfragmenten{#experience-fragments}
+# Ervaar fragmenten{#experience-fragments}
 
 ## De basisbeginselen {#the-basics}
 
-An [Ervaar fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s kunnen worden van verwijzingen voorzien.
+An [Ervaar fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s kunnen worden van verwijzingen voorzien.
 
 Een Master of Variant van het Fragment van de Ervaring, of beide, gebruikt:
 
@@ -89,7 +89,7 @@ Een ervaringsfragmentsjabloon maken die wordt gedetecteerd door de **Experience 
       `experience-fragments`
 Met dit patroon kunnen gebruikers ervaringsfragmenten maken in /content/experience-fragments als de `cq:allowedTemplates` eigenschap van deze map bevat alle sjablonen met namen die beginnen met `experience-fragment`. Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
 
-1. [Toegestane sjablonen](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) kan in de console van de Fragmenten van de Ervaring worden gevormd.
+1. [Toegestane sjablonen](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) kan in de console van de Fragmenten van de Ervaring worden gevormd.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -204,7 +204,7 @@ Om de interface te gebruiken, moet u eerst een bundel tot stand brengen die een 
 
 Deze service wordt gebruikt om in het dialoogvenster Exporteren naar doel van ervaringsfragment te stoppen zodat deze toegang kan hebben tot de verschillende koppelingen.
 
-Bijvoorbeeld, `ComponentService`:
+Bijvoorbeeld: `ComponentService`:
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;

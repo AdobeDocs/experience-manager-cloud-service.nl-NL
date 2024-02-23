@@ -3,7 +3,7 @@ title: Inhoud ontwerpen voor Edge Delivery Services
 description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM inhoud ontwerpt met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Wanneer het gebruiken van Edge Delivery Services met AEM as a Cloud Service, is 
 
 ![Hoe AEM creatie met Edge Delivery Services werkt](assets/how-aem-edge-works.png)
 
-1. [De AEM ontwerpomgeving](/help/sites-cloud/authoring/getting-started/quick-start.md) wordt gebruikt voor inhoudsbeheer, zoals het maken van nieuwe pagina&#39;s, ervaringsfragmenten, inhoudsfragmenten, enz.
+1. [De AEM ontwerpomgeving](/help/sites-cloud/authoring/quick-start.md) wordt gebruikt voor inhoudsbeheer, zoals het maken van nieuwe pagina&#39;s, ervaringsfragmenten, inhoudsfragmenten, enz.
    * Alle functies van AEM zijn beschikbaar, zoals workflows, MSM, transleren, Starten, enz.
 1. [De Universal Editor](/help/implementing/universal-editor/authoring.md) wordt gebruikt aan auteur de inhoud die in AEM wordt beheerd.
    * De Universal Editor biedt een nieuwe en moderne UI voor het schrijven van inhoud.

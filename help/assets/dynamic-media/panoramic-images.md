@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 15%
+source-wordcount: '149'
+ht-degree: 13%
 
 ---
 
@@ -16,19 +16,18 @@ ht-degree: 15%
 
 In deze sectie wordt beschreven hoe u met de Panorama-viewer werkt om bolvormige panoramische afbeeldingen te renderen voor een indrukwekkende kijkervaring van 360 graden van een kamer, eigenschap, locatie of landschap.
 
-Zie ook [Viewervoorinstellingen beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
+Zie ook [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![panoramic-image2](assets/panoramic-image2.png)
+![panoramisch beeld2](assets/panoramic-image2.png)
 
 ## Elementen uploaden voor gebruik met de Panorama-viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeelding die u wilt gebruiken met de Panorama-viewer, moet het element een van de volgende opties of beide hebben:
 
 * Een hoogte-breedteverhouding van 2.
-
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Gecodeerd met de trefwoorden `equirectangular`, of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md).
+* Gecodeerd met de trefwoorden `equirectangular`, of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags gebruiken](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van toepassing op panoramische assets voor de pagina met assetdetails en de `Panoramic Media` WCM-component.
 

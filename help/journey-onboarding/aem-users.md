@@ -4,9 +4,9 @@ description: Zodra zij de systeembeheerder opstelling de noodzakelijke wolkenmid
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -83,5 +83,5 @@ Als u geïnteresseerd bent in de manier waarop ontwikkelaars en implementatieman
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-[Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/getting-started/quick-start.md) - Begin hier voor een snel overzicht van de grondbeginselen van het ontwerpen in AEM.
+[Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/quick-start.md) - Begin hier voor een snel overzicht van de grondbeginselen van het ontwerpen in AEM.
 [Papierreis zonder koppen](/help/journey-headless/author/overview.md) - Als u inhoud zonder kop wilt ontwerpen, volgt u deze inleiding.

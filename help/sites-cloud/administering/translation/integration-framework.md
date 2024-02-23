@@ -4,9 +4,9 @@ description: Leer hoe te om het Kader van de Integratie van de Vertaling te vorm
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Nadat u een vertaalintegratieframework hebt geconfigureerd, kunt u [koppelen aan
 
 Eén configuratie van het framework bepaalt hoe pagina-inhoud en elementen worden vertaald. Een vertaalconfiguratie maken:
 
-1. In de [algemeen navigatiemenu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) selecteren **Gereedschappen > Cloud Servicen en Cloud Servicen voor vertaling**.
+1. In de [algemeen navigatiemenu,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) selecteren **Gereedschappen > Cloud Servicen en Cloud Servicen voor vertaling**.
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt creëren. Dit is vaak gebaseerd op een bepaalde site of kan globaal zijn.
 1. Geef de volgende informatie op in de velden en selecteer **Maken**.:
    1. Selecteren **Configuratietype** in de vervolgkeuzelijst.

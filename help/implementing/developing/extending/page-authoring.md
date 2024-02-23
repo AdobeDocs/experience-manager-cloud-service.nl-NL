@@ -2,7 +2,7 @@
 title: Paginaontwerp aanpassen
 description: Leer over de mechanismen die AEM as a Cloud Service verstrekt om de functionaliteit van de paginascreatie aan te passen.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Zie voor meer informatie over overlays [Bedekkingen voor Adobe Experience Manage
 
 ## Nieuwe laag toevoegen (modus) {#add-new-layer-mode}
 
-Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) beschikbaar. Deze modi worden geïmplementeerd met [lagen](/help/implementing/developing/introduction/ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. AEM modi zijn Bewerken, Layout, Ontwikkelaar, Tijdverdraaiing, Live Copy-status en Doel.
+Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) beschikbaar. Deze modi worden geïmplementeerd met [lagen](/help/implementing/developing/introduction/ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. AEM modi zijn Bewerken, Layout, Ontwikkelaar, Tijdverdraaiing, Live Copy-status en Doel.
 
 ### Voorbeeld van laag: status van actieve kopie {#layer-example-live-copy-status}
 

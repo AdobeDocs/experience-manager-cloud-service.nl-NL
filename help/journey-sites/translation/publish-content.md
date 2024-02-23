@@ -5,7 +5,7 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 0%
@@ -164,6 +164,6 @@ U bent nu klaar om uw eigen inhoud in AEM te vertalen. AEM is echter een krachti
 ## Aanvullende bronnen {#additional-resources}
 
 * [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md) - Leer de details van vertaalprojecten en aanvullende functies zoals workflows voor menselijke vertaling en meertalige projecten.
-* [Ontwerpconcepten](/help/sites-cloud/authoring/getting-started/concepts.md) - Meer informatie over de auteur en het publicatiemodel van AEM. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
-* [Pagina&#39;s publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Meer informatie over de extra functies die beschikbaar zijn wanneer u inhoud publiceert. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
-* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.
+* [Ontwerpconcepten](/help/sites-cloud/authoring/author-publish.md) - Meer informatie over de auteur en het publicatiemodel van AEM. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
+* [Pagina&#39;s publiceren](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - Meer informatie over de extra functies die beschikbaar zijn wanneer u inhoud publiceert. Dit document is gericht op het schrijven van pagina&#39;s in plaats van op inhoudfragmenten, maar de theorie blijft van toepassing.
+* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.

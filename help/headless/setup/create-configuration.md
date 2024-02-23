@@ -2,10 +2,10 @@
 title: Een configuratie maken - installatie zonder kop
 description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloos in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Browser van de Configuratie verstrekt een generische configuratie API, inhoudsst
 
 In de context van het beheer van inhoud zonder kop in AEM, denk aan een configuratie als werkplaats binnen AEM waar u uw Modellen van de Inhoud kunt tot stand brengen, die de structuur van uw toekomstige inhoud en de Fragmenten van de Inhoud bepalen. U kunt veelvoudige configuraties hebben om deze modellen te scheiden.
 
-Als u vertrouwd bent met [paginasjablonen in een volledige AEM-implementatie,](/help/sites-cloud/authoring/features/templates.md) het gebruik van configuraties voor het beheer van inhoudsmodellen is vergelijkbaar.
+Als u vertrouwd bent met [paginasjablonen in een volledige AEM-implementatie,](/help/sites-cloud/authoring/sites-console/templates.md) het gebruik van configuraties voor het beheer van inhoudsmodellen is vergelijkbaar.
 
 ## Hoe te om een Configuratie te creëren {#how-to-create-a-configuration}
 
@@ -37,7 +37,7 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
 
    ![Configuratie maken](../assets/create-configuration.png)
 
-1. Selecteer **Maken**
+1. Selecteren **Maken**
 
 U kunt indien nodig meerdere configuraties maken. Configuraties kunnen ook worden genest.
 

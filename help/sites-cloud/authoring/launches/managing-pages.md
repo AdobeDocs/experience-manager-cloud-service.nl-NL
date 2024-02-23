@@ -2,7 +2,7 @@
 title: Pagina's beheren in uw startpagina
 description: U kunt nieuwe pagina's maken in de Launch. U kunt ook ongewenste pagina's verwijderen.
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Nieuwe pagina&#39;s toevoegen aan uw lancering:
 
 1. [Navigeer naar de vereiste locatie bij het starten](#navigate-structure-of-launch).
 
-1. Selecteren **Maken** tot [een pagina maken](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) zoals gebruikelijk.
+1. Selecteren **Maken** tot [een pagina maken](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) zoals gebruikelijk.
 
 ## Pagina&#39;s verwijderen uit uw startpagina {#remove-pages-from-launch}
 
@@ -66,4 +66,4 @@ Pagina&#39;s verwijderen van uw lancering:
 
 1. [Navigeer naar de vereiste locatie bij het starten](#navigate-structure-of-launch).
 
-1. Selecteren **Verwijderen** tot [een pagina verwijderen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) zoals gebruikelijk.
+1. Selecteren **Verwijderen** tot [een pagina verwijderen](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) zoals gebruikelijk.

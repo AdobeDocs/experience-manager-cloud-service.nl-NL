@@ -4,9 +4,9 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2702'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 
 * **Verwijzingen** (**Sites**)
 
-   * De [Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) spoor verstrekt informatie **Actieve kopieën** en toegang tot passende maatregelen.
+   * De [Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references) spoor verstrekt informatie **Actieve kopieën** en toegang tot passende maatregelen.
 
 * **Overzicht van live kopiëren** (**Sites**)
 
@@ -338,6 +338,6 @@ MSM verstrekt hulpmiddelen zodat uw implementatie aan de uitzonderlijke ingewikk
 * **Custom Synchronization Actions** - [Create a custom synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) when the installed actions do not meet your specific application requirements. MSM provides a Java API for creating custom synchronization actions.
 -->
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 De [Aanbevolen MSM-procedures](best-practices.md) Deze pagina bevat belangrijke informatie over uw implementatie.

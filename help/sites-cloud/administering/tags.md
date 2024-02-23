@@ -2,7 +2,7 @@
 title: Tags beheren
 description: Leer hoe u tags kunt beheren in AEM om uw inhoud te ordenen.
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Tags zijn een intuïtieve methode om uw inhoud te classificeren. U kunt ze besch
 In Adobe Experience Manager (AEM) kan een tag een eigenschap zijn van:
 
 * Een inhoudsknooppunt voor een pagina
-   * Zie het document [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md) voor meer informatie .
+   * Zie het document [Tags gebruiken](/help/sites-cloud/authoring/sites-console/tags.md) voor meer informatie .
 * Een metagegevensknooppunt voor een element
    * Zie het document [Metagegevens voor digitale elementen beheren](/help/assets/manage-metadata.md) voor meer informatie .
 
@@ -183,7 +183,7 @@ U kunt meer details over de markering bekijken met inbegrip van wie het laatst p
 
    ![Tageigenschappen weergeven](assets/tag-properties.png)
 
-Zie voor meer informatie over het selecteren van weergavemodi en de spoorstaaf [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Zie voor meer informatie over het selecteren van weergavemodi en de spoorstaaf [Basisverwerking](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Tags bewerken {#editing-tags}
 
@@ -245,7 +245,7 @@ Het kan handig zijn om te zien op welke inhoud een bepaalde tag wordt toegepast.
 
 Houd de muis boven een verwijzing of selecteer een inhoud in de lijst om het volledige pad van de inhoud weer te geven.
 
-Zie voor meer informatie over het selecteren van weergavemodi en de spoorstaaf [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Zie voor meer informatie over het selecteren van weergavemodi en de spoorstaaf [Basisverwerking](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Labels verplaatsen {#moving-tags}
 

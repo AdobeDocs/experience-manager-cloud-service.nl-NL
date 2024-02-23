@@ -5,7 +5,7 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -62,5 +62,5 @@ Gebaseerd op deze kennis en uw AEM Sites-vertaalreis voortzetten door het docume
 
 U kunt het beste naar het volgende gedeelte van de site gaan door het document te bekijken [Ga aan de slag met AEM Sites vertaling,](getting-started.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
 
-* [Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/getting-started/quick-start.md) - Een kort overzicht van de belangrijkste concepten voor het maken van inhoud met AEM Sites
+* [Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/quick-start.md) - Een kort overzicht van de belangrijkste concepten voor het maken van inhoud met AEM Sites
 * [MSM en vertaling](/help/sites-cloud/administering/msm-and-translation.md) - De details van AEM beheer van meerdere sites en hoe deze werkt met de vertaalhulpmiddelen

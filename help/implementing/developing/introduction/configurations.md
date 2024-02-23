@@ -2,9 +2,9 @@
 title: Configuraties en de Configuratiebrowser
 description: Begrijp Adobe Experience Manager (AEM) configuraties en hoe zij werkruimtemontages in AEM beheren.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
@@ -34,8 +34,8 @@ De AEM beheerder en auteurs kunnen configuraties als werkruimten beschouwen. Dez
 Configuraties kunnen worden gemaakt voor vele verschillende functies in AEM.
 
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Bewerkbare sjablonen](/help/sites-cloud/authoring/features/templates.md)
+* [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Bewerkbare sjablonen](/help/sites-cloud/authoring/sites-console/templates.md)
 * diverse cloudconfiguraties
 
 ### Voorbeeld {#administrator-example}
@@ -69,7 +69,7 @@ Browser van de Configuratie staat een beheerder toe om, toegangsrechten aan conf
 Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Browser van de Configuratie.
 
 1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 1. Geef een **Titel** en **Naam** voor uw configuratie.
 
    ![Configuratie maken](assets/configuration-create.png)
@@ -80,10 +80,10 @@ Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Brow
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [Bewerkbare sjablonen](/help/sites-cloud/authoring/features/templates.md)
+   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Bewerkbare sjablonen](/help/sites-cloud/authoring/sites-console/templates.md)
    * diverse cloudconfiguraties
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 
 >[!TIP]
 >

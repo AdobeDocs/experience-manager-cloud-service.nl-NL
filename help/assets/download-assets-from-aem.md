@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 0%
@@ -42,7 +42,7 @@ U kunt elementen van Experience Manager downloaden met de volgende methoden:
 
 Experience Manager optimaliseert de downloadervaring op basis van de hoeveelheid en de grootte van het element. Kleinere bestanden worden in real-time gedownload vanuit de gebruikersinterface. [!DNL Experience Manager] downloadt direct enkele elementaanvragen voor het oorspronkelijke bestand in plaats van één element in een ZIP-archief te plaatsen, zodat sneller kan worden gedownload. Experience Manager ondersteunt grote downloads met asynchrone verzoeken. Downloadaanvragen die groter zijn dan 100 GB worden gesplitst in meerdere ZIP-archieven met een maximale grootte van 100 MB elk.
 
-Standaard, [!DNL Experience Manager] activeert een melding in de [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) bij het genereren van een downloadarchief.
+Standaard, [!DNL Experience Manager] activeert een melding in de [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/inbox.md) bij het genereren van een downloadarchief.
 
 ![Inbox-melding](assets/inbox-notification-for-large-downloads.png)
 

@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten beheren (elementen - Inhoudsfragmenten)
 description: Leer hoe te om de console van Middelen te gebruiken om uw AEM Contentfragmenten, als of basis van uw inhoud zonder kop of voor paginaontwerp te beheren.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 4%
@@ -29,7 +29,7 @@ De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt diverse [modi](#m
 >
 >Inhoudsfragmenten kunnen worden gebruikt:
 >
->* bij het ontwerpen van pagina&#39;s; zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* bij het ontwerpen van pagina&#39;s; zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* for [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 >[!NOTE]
@@ -94,7 +94,7 @@ De methode voor het maken van een inhoudsfragment is:
 In de **Activa** een reeks acties beschikbaar is voor uw inhoudsfragmenten:
 
 * Vanuit de werkbalk; nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar.
-* Als [snelle acties](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); een subset van acties beschikbaar voor de afzonderlijke fragmentkaarten.
+* Als [snelle acties](/help/sites-cloud/authoring/basic-handling.md#quick-actions); een subset van acties beschikbaar voor de afzonderlijke fragmentkaarten.
 
 ![Handelingen in werkbalk](assets/cfm-managing-02.png)
 
@@ -299,16 +299,16 @@ Naast de standaardopties [Tijdlijn](/help/assets/manage-digital-assets.md#timeli
 
 >[!NOTE]
 >
-Opmerkingen zijn:
+>Opmerkingen zijn:
 >
-* Standaardfunctionaliteit voor alle elementen
-* Gemaakt in tijdlijn
-* Verwant aan het fragmentelement
+>* Standaardfunctionaliteit voor alle elementen
+>* Gemaakt in tijdlijn
+>* Verwant aan het fragmentelement
 >
-Annotaties (voor inhoudsfragmenten) zijn:
+>Annotaties (voor inhoudsfragmenten) zijn:
 >
-* Opgegeven in de fragmenteditor
-* Specifiek voor een geselecteerd tekstsegment binnen het fragment
+>* Opgegeven in de fragmenteditor
+>* Specifiek voor een geselecteerd tekstsegment binnen het fragment
 >
 
 Bijvoorbeeld:
@@ -339,7 +339,7 @@ Zij worden naast elkaar getoond, waarbij:
 
 >[!NOTE]
 >
-U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
+>U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 
 ![Variaties vergelijken](assets/cfm-managing-06.png)
 
@@ -357,9 +357,9 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
 >[!CAUTION]
 >
-Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat de [model is gepubliceerd](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat de [model is gepubliceerd](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
-Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+>Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Dit wordt gedaan gebruikend de standaardfunctionaliteit van Activa:
 
@@ -371,11 +371,11 @@ Dit is toegankelijk:
 * Na het maken; gebruiken [acties beschikbaar in de middelenconsole](#actions-for-a-content-fragment-assets-console).
 * Van de [Inhoudsfragmenteditor](#toolbar-actions-in-the-content-fragment-editor).
 
-Wanneer u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.
+Wanneer u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.
 
 >[!CAUTION]
 >
-Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+>Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Een fragment verwijderen {#deleting-a-fragment}
 
@@ -386,11 +386,11 @@ Een fragment verwijderen:
 
    >[!NOTE]
    >
-   De **Verwijderen** Handeling is niet beschikbaar als een snelle handeling.
+   >De **Verwijderen** Handeling is niet beschikbaar als een snelle handeling.
 
 3. Selecteren **Verwijderen** op de werkbalk.
 4. Bevestig de **Verwijderen** handeling.
 
    >[!CAUTION]
    >
-   Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor inhoudsfragmenten verwijderd uit alle inhoudspagina&#39;s.
+   >Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor inhoudsfragmenten verwijderd uit alle inhoudspagina&#39;s.

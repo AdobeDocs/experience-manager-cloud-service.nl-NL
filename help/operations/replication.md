@@ -2,7 +2,7 @@
 title: Replicatie
 description: Leer over distributie en het oplossen van problemenreplicatie in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 0%
@@ -31,11 +31,11 @@ Adobe Experience Manager as a Cloud Service gebruikt de [Distributie van inhoud 
 
 Met deze functie kunt u de geselecteerde pagina&#39;s direct publiceren, zonder de extra opties die mogelijk zijn via de methode Publicatie beheren.
 
-Zie voor meer informatie [Publicatie beheren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+Zie voor meer informatie [Publicatie beheren](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
 ### Aan- en uittijden - Configuratie activeren {#on-and-off-times-trigger-configuration}
 
-De extra mogelijkheden van **Op tijd** en **Uit-tijd** zijn beschikbaar op [Het tabblad Standaard van Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
+De extra mogelijkheden van **Op tijd** en **Uit-tijd** zijn beschikbaar op [Het tabblad Standaard van Pagina-eigenschappen](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
 Om de automatische replicatie voor deze eigenschap te realiseren, laat toe **Automatisch repliceren** in de [OSGi-configuratie](/help/implementing/deploying/configuring-osgi.md) **Configuratie van activering uit**:
 
@@ -47,7 +47,7 @@ Publicatie beheren biedt meer opties dan Snel publiceren, waardoor onderliggende
 
 Als de onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de inhoudsstructuur publiceren geactiveerd, zoals in dit artikel wordt beschreven.
 
-U vindt meer gedetailleerde informatie over Publicatie beheren op het tabblad [Publicatie van documentatie over grondbeginselen](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+U vindt meer gedetailleerde informatie over Publicatie beheren op het tabblad [Publicatie van documentatie over grondbeginselen](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
 ### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
 

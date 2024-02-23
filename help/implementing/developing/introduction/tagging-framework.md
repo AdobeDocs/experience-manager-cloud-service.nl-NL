@@ -2,7 +2,7 @@
 title: Kader voor tags AEM
 description: Taginhoud en gebruik de AEM Tags toevoegen-infrastructuur om de inhoud te categoriseren en in te delen.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Door tags toe te wijzen, kunt u inhoud indelen en ordenen. Tags kunnen worden geclassificeerd door een naamruimte en een taxonomie. Voor gedetailleerde informatie over het gebruik van tags:
 
-* Zie [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md) voor informatie over het labelen van inhoud als auteur van inhoud.
+* Zie [Tags gebruiken](/help/sites-cloud/authoring/sites-console/tags.md) voor informatie over het labelen van inhoud als auteur van inhoud.
 * Zie Tags beheren voor een beheerder. Het standpunt van de beheerder over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
 
 Dit artikel richt zich op het onderliggende kader dat het etiketteren in AEM steunt en hoe te om het als ontwikkelaar te gebruiken.

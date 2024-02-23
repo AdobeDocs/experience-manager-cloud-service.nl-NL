@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 0%
@@ -39,7 +39,7 @@ De volgende release (2021.6.0) vindt plaats op 28 juni 2021.
 
 ### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* U kunt de inhoud binnenkort verifiëren op een nieuwe [Voorvertoning laag](/help/sites-cloud/authoring/fundamentals/previewing-content.md) om de definitieve ervaring te simuleren kijkt en voelt zoals u op de Publish rij. Dit wordt ingeschakeld door de AEM Sites Managed Publication-wizard, waarmee u nu een publicatiebestemming kunt kiezen tussen Publiceren of Voorvertoning. Ervaring met Voorvertoning is dan toegankelijk via een specifieke URL. Na validatie bij Voorvertoning kan inhoud op de gebruikelijke manier van Auteur worden gepubliceerd om te publiceren. Het inschakelen van de voorvertoningsservice in AEM as a Cloud Service omgevingen wordt in de komende weken geleidelijk uitgevoerd.
+* U kunt de inhoud binnenkort verifiëren op een nieuwe [Voorvertoning laag](/help/sites-cloud/authoring/sites-console/previewing-content.md) om de definitieve ervaring te simuleren kijkt en voelt zoals u op de Publish rij. Dit wordt ingeschakeld door de AEM Sites Managed Publication-wizard, waarmee u nu een publicatiebestemming kunt kiezen tussen Publiceren of Voorvertoning. Ervaring met Voorvertoning is dan toegankelijk via een specifieke URL. Na validatie bij Voorvertoning kan inhoud op de gebruikelijke manier van Auteur worden gepubliceerd om te publiceren. Het inschakelen van de voorvertoningsservice in AEM as a Cloud Service omgevingen wordt in de komende weken geleidelijk uitgevoerd.
 
 ## [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 

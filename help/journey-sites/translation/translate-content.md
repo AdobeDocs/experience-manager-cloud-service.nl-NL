@@ -5,7 +5,7 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 0%
@@ -285,4 +285,4 @@ Gebaseerd op deze kennis en uw AEM Sites-vertaalreis voortzetten door het docume
 U kunt het beste naar het volgende gedeelte van de vertaalreis gaan door het document te bekijken [Vertaalde inhoud publiceren,](publish-content.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
 
 * [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md) - Leer de details van vertaalprojecten en aanvullende functies zoals workflows voor menselijke vertaling en meertalige projecten.
-* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.
+* [Ontwerpomgeving en -gereedschappen](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.

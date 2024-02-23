@@ -2,16 +2,16 @@
 title: Weergaven van pagina-eigenschappen aanpassen
 description: Leer hoe u pagina-eigenschappen kunt weergeven en bewerken door auteurs.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
 
 # Weergaven van pagina-eigenschappen aanpassen{#customizing-views-of-page-properties}
 
-Elke pagina heeft een set [eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md) die door gebruikers kunnen worden weergegeven en bewerkt. Sommige zijn vereist voor het maken van de pagina (de weergave Maken), andere kunnen in een later stadium worden weergegeven en bewerkt (de weergave Bewerken). Deze pagina-eigenschappen worden gedefinieerd en beschikbaar gesteld door het dialoogvenster (`cq:dialog`) van het desbetreffende pagina-onderdeel.
+Elke pagina heeft een set [eigenschappen](/help/sites-cloud/authoring/sites-console/page-properties.md) die door gebruikers kunnen worden weergegeven en bewerkt. Sommige zijn vereist voor het maken van de pagina (de weergave Maken), andere kunnen in een later stadium worden weergegeven en bewerkt (de weergave Bewerken). Deze pagina-eigenschappen worden gedefinieerd en beschikbaar gesteld door het dialoogvenster (`cq:dialog`) van het desbetreffende pagina-onderdeel.
 
 De standaardstatus voor elke pagina-eigenschap is:
 
@@ -39,7 +39,7 @@ De gebieden moeten specifiek worden gevormd als om het even welke verandering wo
 
 U kunt ook de beschikbare velden configureren door het dialoogvenster van de paginacomponent te configureren en de juiste knoopeigenschappen toe te passen.
 
-Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) geeft de velden weer die onder zijn gegroepeerd **Meer titels en beschrijving**. Om deze te verbergen vormt u:
+Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) geeft de velden weer die onder zijn gegroepeerd **Meer titels en beschrijving**. Om deze te verbergen vormt u:
 
 1. De pagina-component maken onder `/apps`.
 1. Overschrijven maken (met *Diff* door de [Samenvoeging van verkoopbronnen](/help/implementing/developing/introduction/sling-resource-merger.md)) voor de `basic` sectie van uw paginacomponent; bijvoorbeeld:

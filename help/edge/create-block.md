@@ -1,7 +1,7 @@
 ---
 title: Blokken maken met een instrument voor gebruik met de universele editor
 description: Leer hoe te om blokken tot stand te brengen van instrumenten voor gebruik met de Universele Redacteur in AEM creatie met Edge Delivery Services projecten.
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, kunt u een citaatblok aan een bestaande pagina toevoegen.
 
-1. Meld u aan bij AEM as a Cloud Service in een browser. [De Sites-console gebruiken](/help/sites-cloud/authoring/getting-started/basic-handling.md) navigeer naar de site die u in het dialoogvenster [Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge Delivery Services](/help/edge/edge-dev-getting-started.md) en selecteer een pagina.
+1. Meld u aan bij AEM as a Cloud Service in een browser. [De Sites-console gebruiken](/help/sites-cloud/authoring/basic-handling.md) navigeer naar de site die u in het dialoogvenster [Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge Delivery Services](/help/edge/edge-dev-getting-started.md) en selecteer een pagina.
 
    * In dit geval: `index` wordt gebruikt voor illustratieve doeleinden.
 

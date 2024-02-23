@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4636'
 ht-degree: 4%
@@ -197,7 +197,7 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 
 ### Codes toevoegen voor publicatie {#adding-tags-for-publishing}
 
-Als u video&#39;s naar YouTube wilt publiceren, koppelt de Experience Manager de tags aan een of meer YouTube-kanalen. Als u tags wilt toevoegen voor publicatie, raadpleegt u [Tags beheren](/help/sites-cloud/authoring/features/tags.md).
+Als u video&#39;s naar YouTube wilt publiceren, koppelt de Experience Manager de tags aan een of meer YouTube-kanalen. Als u tags wilt toevoegen voor publicatie, raadpleegt u [Tags beheren](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Of als u de standaardlabels in de Experience Manager wilt gebruiken, kunt u deze taak overslaan en naar [YouTube instellen in Experience Manager](#setting-up-youtube-in-aem).
 
@@ -390,11 +390,11 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 
 >[!NOTE]
 >
-Voor het publiceren van inhoud vanuit YouTube gebruikt Experience Manager de optie **[!UICONTROL Publish to YouTube]** werkstroom, waarmee u de voortgang kunt controleren en eventuele foutgegevens kunt bekijken.
+>Voor het publiceren van inhoud vanuit YouTube gebruikt Experience Manager de optie **[!UICONTROL Publish to YouTube]** werkstroom, waarmee u de voortgang kunt controleren en eventuele foutgegevens kunt bekijken.
 >
-Zie [Video-codering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Zie [Video-codering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
-Voor gedetailleerdere voortgangsgegevens kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
+>Voor gedetailleerdere voortgangsgegevens kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
 **Video&#39;s publiceren naar uw YouTube-kanaal:**
 
@@ -430,7 +430,7 @@ U kunt een YouTube URL-tekenreeks verkrijgen die door Dynamic Media wordt gegene
 
 >[!NOTE]
 >
-De YouTube-URL kan pas worden gekopieerd nadat u het video-element naar YouTube hebt gepubliceerd.
+>De YouTube-URL kan pas worden gekopieerd nadat u het video-element naar YouTube hebt gepubliceerd.
 
 YouTube-URL&#39;s koppelen aan uw webtoepassing:
 
@@ -448,13 +448,13 @@ Wanneer u de publicatie van een video-element in Experience Manager ongedaan maa
 
 >[!CAUTION]
 >
-Als u een video rechtstreeks uit YouTube verwijdert, is de Experience Manager zich hiervan niet bewust en gedragen deze zich alsof de video nog steeds naar YouTube wordt gepubliceerd. Publiceer de publicatie van een video-element vanuit YouTube altijd ongedaan als Experience Manager.
+>Als u een video rechtstreeks uit YouTube verwijdert, is de Experience Manager zich hiervan niet bewust en gedragen deze zich alsof de video nog steeds naar YouTube wordt gepubliceerd. Publiceer de publicatie van een video-element vanuit YouTube altijd ongedaan als Experience Manager.
 
 >[!NOTE]
 >
-Om inhoud uit YouTube te verwijderen, gebruikt de Experience Manager **[!UICONTROL Unpublish from YouTube]** werkstroom, waarmee u de voortgang kunt controleren en eventuele foutgegevens kunt bekijken.
+>Om inhoud uit YouTube te verwijderen, gebruikt de Experience Manager **[!UICONTROL Unpublish from YouTube]** werkstroom, waarmee u de voortgang kunt controleren en eventuele foutgegevens kunt bekijken.
 >
-Zie [Video-codering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Zie [Video-codering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Publiceren van video&#39;s ongedaan maken om deze uit YouTube te verwijderen:**
 
@@ -495,19 +495,19 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
 
    >[!NOTE]
    >
-   Het kan lang duren voordat foutberichten of foutberichten definitief worden opgenomen omdat er meerdere workflowconfiguraties zijn **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
+   >Het kan lang duren voordat foutberichten of foutberichten definitief worden opgenomen omdat er meerdere workflowconfiguraties zijn **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    >
-   * Configuratie Apache Sling-taakwachtrij
-   * Adobe Granite Workflow External Process Handler
-   * Tijdelijke wachtrij voor Granite Workflow
+   >* Configuratie Apache Sling-taakwachtrij
+   >* Adobe Granite Workflow External Process Handler
+   >* Tijdelijke wachtrij voor Granite Workflow
    >
-   U kunt de **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** eigenschappen in deze configuraties.
+   >U kunt de **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** eigenschappen in deze configuraties.
 
 1. Zie Workflowinstanties beschikbaar via **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]** voor actieve workflows.
 
    >[!NOTE]
    >
-   U hebt beheerdersrechten nodig voor toegang tot de **[!UICONTROL Tools]** -menu.
+   >U hebt beheerdersrechten nodig voor toegang tot de **[!UICONTROL Tools]** -menu.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -521,25 +521,25 @@ U kunt de voortgang controleren, inclusief mislukte codering/YouTube-publicatie.
 
    >[!NOTE]
    >
-   U hebt beheerdersrechten nodig voor toegang tot de **[!UICONTROL Tools]** -menu.
+   >U hebt beheerdersrechten nodig voor toegang tot de **[!UICONTROL Tools]** -menu.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   Het kan lang duren voordat het foutbericht eindelijk is opgenomen omdat er meerdere workflowconfiguraties zijn **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
+   >Het kan lang duren voordat het foutbericht eindelijk is opgenomen omdat er meerdere workflowconfiguraties zijn **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    >
-   * Configuratie Apache Sling-taakwachtrij
-   * Adobe Granite Workflow External Process Handler
-   * Tijdelijke wachtrij voor Granite Workflow
+   >* Configuratie Apache Sling-taakwachtrij
+   >* Adobe Granite Workflow External Process Handler
+   >* Tijdelijke wachtrij voor Granite Workflow
    >
-   U kunt de **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** eigenschappen in deze configuraties.
+   >U kunt de **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** eigenschappen in deze configuraties.
 
 1. Zie Workflowarchief in **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Archive]** voor voltooide workflows. In **[!UICONTROL Workflow Archive]** vindt u een lijst met alle voltooide workflowactiviteiten.
 
    >[!NOTE]
    >
-   U hebt beheerdersrechten nodig voor toegang tot de **[!UICONTROL Tools]** -menu.
+   >U hebt beheerdersrechten nodig voor toegang tot de **[!UICONTROL Tools]** -menu.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -609,7 +609,7 @@ U kunt notities toevoegen aan video-elementen. Tijdens het annoteren van video&#
 
 >[!NOTE]
 >
-MXF-video-indeling wordt nog niet ondersteund met aantekeningen van video-elementen.
+>MXF-video-indeling wordt nog niet ondersteund met aantekeningen van video-elementen.
 
 1. Van de [!DNL Assets] console, selecteren **[!UICONTROL Edit]** op de elementenkaart om de pagina met elementdetails weer te geven.
 1. Klik op **[!UICONTROL Preview]**.
@@ -649,5 +649,5 @@ MXF-video-indeling wordt nog niet ondersteund met aantekeningen van video-elemen
 
 >[!MORELIKETHIS]
 >
-* [Dynamic Media-videodocumentatie](/help/assets/dynamic-media/video.md).
-* [Meer informatie over gebruik, typen en configuratie van verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md).
+>* [Dynamic Media-videodocumentatie](/help/assets/dynamic-media/video.md).
+>* [Meer informatie over gebruik, typen en configuratie van verwerkingsprofielen](/help/assets/asset-microservices-configure-and-use.md).

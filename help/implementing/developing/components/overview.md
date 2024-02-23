@@ -2,16 +2,16 @@
 title: Overzicht van componenten
 description: Componenten zijn modulaire eenheden die specifieke functionaliteit realiseren om uw inhoud op uw website weer te geven
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
 # Overzicht van componenten {#components-overview}
 
-Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals [gebruikt voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/fundamentals/components.md).
+Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals [gebruikt voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/page-editor/components.md).
 
 ## Wat zijn componenten? {#what-are-components}
 
@@ -48,7 +48,7 @@ De Core Components worden geleverd met AEM as a Cloud Service en de [WKND-zelfst
 
 ### Beschikbare componenten weergeven {#viewing-available-components}
 
-Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md).
+Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik [Componentenconsole](/help/sites-cloud/authoring/components-console.md).
 
 U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 

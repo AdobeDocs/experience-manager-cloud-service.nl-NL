@@ -2,9 +2,9 @@
 title: Samengestelde onderdelen in SPA
 description: Leer hoe u uw eigen samengestelde componenten maakt, componenten die uit andere componenten bestaan, die werken met de AEM Single-Page Application (SPA) Editor.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -156,7 +156,7 @@ U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
     itemPath='root/responsivegrid' />
    ```
 
-1. Het gemaakte object toevoegen `wknd-spa/components/imagecard` component aan de toegestane componenten voor de containercomponent [in de paginasjabloon](/help/sites-cloud/authoring/features/templates.md).
+1. Het gemaakte object toevoegen `wknd-spa/components/imagecard` component aan de toegestane componenten voor de containercomponent [in de paginasjabloon](/help/sites-cloud/authoring/sites-console/templates.md).
 
 Nu de `imagecard` kan direct aan de container in de AEM redacteur worden toegevoegd.
 

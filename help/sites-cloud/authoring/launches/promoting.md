@@ -1,15 +1,15 @@
 ---
-title: Lanceringen promoten
+title: Starten promoten
 description: U moet opstartiepagina's promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 1%
+source-wordcount: '812'
+ht-degree: 0%
 
 ---
 
-# Lanceringen promoten {#promoting-launches}
+# Starten promoten {#promoting-launches}
 
 U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen. Wanneer een startpagina wordt bevorderd, wordt de bijbehorende pagina van de bronpagina&#39;s vervangen door de inhoud van de gepromoveerde pagina. De volgende opties zijn beschikbaar bij het promoten van een startpagina:
 
@@ -42,14 +42,14 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 
 U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** console:
 
-1. Open:
+1. Openen:
    * De **Sites** console bij navigeren naar bronpagina&#39;s:
-      1. Open de [referentie-rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) en selecteert u de gewenste bronpagina met [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md) (of selecteer en open de referentie-rail, de volgorde is niet belangrijk). Alle verwijzingen worden weergegeven.
+      1. Open de [referentie-rail](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) en selecteert u de gewenste bronpagina met [selectiemodus](/help/sites-cloud/authoring/basic-handling.md) (of selecteer en open de referentie-rail, de volgorde is niet belangrijk). Alle verwijzingen worden weergegeven.
       1. Selecteren **Starten** (bijvoorbeeld Launches (1)) om een lijst weer te geven met de specifieke startacties.
       1. Selecteer de specifieke lancering om de beschikbare acties te tonen.
       1. Selecteren **Starten bevorderen** om de wizard te openen.
    * De **Sites** console bij navigeren door opstartiepagina&#39;s:
-      1. Selecteer de vereiste startpagina met [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. Selecteer de vereiste startpagina met [selectiemodus](/help/sites-cloud/authoring/basic-handling.md).
       1. De **Bevorderen** is beschikbaar in de werkbalk.
    * De **Starten** console:
       1. Selecteer de startknop (selecteer de miniatuur).
@@ -57,7 +57,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
 1. In de eerste stap kunt u het volgende opgeven:
    * **Doel**
       * **Starten na promotie verwijderen**
-   * **Scope**
+   * **Toepassingsgebied**
       * **Volledige introductie bevorderen**
       * **Gewijzigde pagina&#39;s promoten**
       * **Goedgekeurde pagina&#39;s promoten** - afhankelijk van de workflow voor goedkeuring van de lancering
@@ -122,7 +122,7 @@ Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de b
 
    ![In-startconsole](/help/sites-cloud/authoring/assets/launches-console.png)
 
-## Promotiepagina&#39;s verwerken met AEM-workflow {#processing-promoted-pages-using-aem-workflow}
+## Promotiepagina&#39;s verwerken met AEM workflow {#processing-promoted-pages-using-aem-workflow}
 
 Gebruik workflowmodellen voor bulkverwerking van geconverteerde startpagina&#39;s:
 

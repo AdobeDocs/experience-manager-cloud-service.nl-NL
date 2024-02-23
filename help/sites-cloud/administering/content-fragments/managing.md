@@ -4,7 +4,7 @@ description: Leer hoe te om uw AEM Contentfragmenten van de console en de redact
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '2620'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Na het definiëren van uw [Modellen van inhoudsfragmenten](#creating-a-content-m
 >Inhoudsfragmenten kunnen worden gebruikt:
 >
 >* for [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
->* bij het ontwerpen van pagina&#39;s; zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* bij het ontwerpen van pagina&#39;s; zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -339,7 +339,7 @@ Na publicatie wordt de fragmentstatus bijgewerkt en zichtbaar in de editor en co
 
 >[!NOTE]
 >
->Wanneer u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.
+>Wanneer u [Een pagina publiceren die het fragment gebruikt](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.
 
 ## Publicatie van een fragment ongedaan maken {#unpublishing-a-fragment}
 

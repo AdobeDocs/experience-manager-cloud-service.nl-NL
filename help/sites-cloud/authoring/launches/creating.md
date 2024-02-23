@@ -1,19 +1,19 @@
 ---
-title: Lanceringen maken
+title: Starten maken
 description: U kunt een lancering tot stand brengen om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 12%
+ht-degree: 11%
 
 ---
 
-# Lanceringen maken {#creating-launches}
+# Starten maken {#creating-launches}
 
 Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina&#39;s voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina:
 
-* De titel wordt weergegeven in het dialoogvenster [Verwijzingen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) spoorwegen, vanwaar auteurs toegang hebben tot hen om er aan te werken.
+* De titel wordt weergegeven in het dialoogvenster [Verwijzingen](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) spoorwegen, vanwaar auteurs toegang hebben tot hen om er aan te werken.
 * De onderliggende pagina&#39;s van de bronpagina worden standaard in de opstart opgenomen. U kunt desgewenst alleen de bronpagina gebruiken.
 * Standaard, [Live kopie](/help/sites-cloud/administering/msm/overview.md) werkt automatisch de startpagina&#39;s bij terwijl de bronpagina&#39;s veranderen. U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen.
 
@@ -40,7 +40,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    >Wanneer u de opdracht **Sites** console is het gebruikelijk om naar de plaats van de bronpagina te navigeren, maar dit is niet verplicht aangezien u kunt navigeren wanneer het selecteren van **Bron starten** in de wizard.
 
 1. Afhankelijk van de console die u gebruikt:
-   * **Lanceringen**:
+   * **Starten**:
       1. Selecteren **Starten maken** op de werkbalk om de wizard te openen.
    * **Sites**:
       1. Selecteren **Maken** van de werkbalk om het selectievak te openen.
@@ -48,7 +48,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    >[!NOTE]
    >
-   >In de **Sites**-console kunt u ook de [selectiemodus](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) gebruiken om een pagina te selecteren voordat u **Maken** selecteert.
+   >In de **Sites**-console kunt u ook de [selectiemodus](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) gebruiken om een pagina te selecteren voordat u **Maken** selecteert.
    >
    >Hiermee gebruikt u de geselecteerde pagina als de eerste bronpagina.
 
@@ -114,7 +114,7 @@ Selecteer deze optie:
 >
 >Omdat een andere sjabloon wordt gebruikt, is de nieuwe pagina leeg. Vanwege de verschillende paginastructuur wordt er geen inhoud over gekopieerd.
 >
->Dit mechanisme kan worden gebruikt om de sjabloon van een [bestaande pagina](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - het verlies van inhoud moet echter in overweging worden genomen.
+>Dit mechanisme kan worden gebruikt om de sjabloon van een [bestaande pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) - het verlies van inhoud moet echter in overweging worden genomen.
 
 ### Een geneste start maken {#creating-a-nested-launch}
 

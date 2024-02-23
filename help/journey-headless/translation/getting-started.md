@@ -2,9 +2,9 @@
 title: Ga aan de slag met AEM headless Translation
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1409'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Er zijn verschillende vereisten waaraan u moet voldoen voordat u inhoud zonder k
 
 >[!TIP]
 >
->Als u niet vertrouwd bent met het gebruik van een grootschalig CMS als AEM, kunt u overwegen om de [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentatie voordat u verdergaat. De documentatie van de Basisbehandeling maakt geen deel uit van de reis. Ga daarom terug naar deze pagina wanneer u klaar bent.
+>Als u niet vertrouwd bent met het gebruik van een grootschalig CMS als AEM, kunt u overwegen om de [Basisverwerking](/help/sites-cloud/authoring/basic-handling.md) documentatie voordat u verdergaat. De documentatie van de Basisbehandeling maakt geen deel uit van de reis. Ga daarom terug naar deze pagina wanneer u klaar bent.
 
 ### Gereedschappen {#tools}
 
@@ -94,7 +94,7 @@ Omdat de inhoudsmodellen de structuur van uw inhoud bepalen, moet u weten welke 
 >
 >Over het algemeen is de inhoudarchitect verantwoordelijk voor het identificeren van de velden die vereist zijn voor vertaling. De voorafgaande stappen zijn bedoeld voor het begrijpen van de vertaalspecialist.
 
-### Contentfragmenten {#content-fragments}
+### Inhoudsfragmenten {#content-fragments}
 
 Inhoudsmodellen worden door de auteurs van de inhoud gebruikt om de inhoud zonder kop te maken. Inhoudsauteurs selecteren op welk model ze hun inhoud willen baseren en maken vervolgens Inhoudsfragmenten. Inhoudsfragmenten zijn exemplaren van de modellen en vertegenwoordigen feitelijke inhoud die zonder kop moet worden geleverd.
 
@@ -184,7 +184,7 @@ Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het docum
 
 U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het document te bekijken [De vertaalaansluiting configureren](configure-connector.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
 
-* [AEM basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Leer de basisbeginselen van de AEM-interface om eenvoudig door essentiële taken te kunnen navigeren en deze uit te voeren, zoals het zoeken naar uw inhoud.
+* [AEM basisverwerking](/help/sites-cloud/authoring/basic-handling.md) - Leer de basisbeginselen van de AEM-interface om eenvoudig door essentiële taken te kunnen navigeren en deze uit te voeren, zoals het zoeken naar uw inhoud.
 * [Te vertalen inhoud identificeren](/help/sites-cloud/administering/translation/rules.md) - Leer hoe vertaalregels inhoud identificeren die moet worden vertaald.
 * [Het Kader voor de Integratie van de Vertaling vormen](/help/sites-cloud/administering/translation/integration-framework.md) - Leer hoe u het vertaalintegratieframework kunt configureren voor integratie met vertaalservices van derden.
 * [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md) - Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM kunt maken en beheren.

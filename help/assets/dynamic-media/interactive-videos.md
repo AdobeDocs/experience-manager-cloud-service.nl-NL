@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '5816'
 ht-degree: 2%
@@ -102,7 +102,7 @@ Als u een externe WCM (Web Content Manager) gebruikt, moet u de nieuwe interacti
 >* U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen te teweegbrengen.
 >* Uw implementatie van Experience Manager doet *niet* een eCommerce-integratieframework gebruiken om productgegevens vanuit elke eCommerce-oplossing, zoals IBM® WebSphere® Commerce, Elastic Path, SAP Hybris of Intershop, in de Experience Manager te krijgen. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
-Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
+>Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
 
 Begin door dynamische variabelen te identificeren die door uw bestaande implementatie van QuickView worden gebruikt zodat u productduimnagels aan hun overeenkomstige productSnelle mening tijdens het interactieve videoaanmaakproces kunt in kaart brengen.
 
@@ -243,7 +243,7 @@ Als u de video en miniatuurelementen al hebt geüpload, gaat u verder met [Inter
 
 >[!NOTE]
 >
-De MXF-video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media.
+>De MXF-video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media.
 
 Als u de verkeerde video&#39;s of afbeeldingen hebt geüpload of als u geüploade video&#39;s of afbeeldingen wilt verwijderen die u niet meer nodig hebt, raadpleegt u [Elementen verwijderen](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -262,15 +262,15 @@ U voegt tijdlijnsegmenten aan een video toe met de lokale visuele editor op de p
 
 Nadat u tijdlijnsegmenten hebt toegevoegd, voegt u miniatuurafbeeldingen toe binnen elk segment. Voor elke miniatuur die u toevoegt, past u er een actie op toe. U kunt bijvoorbeeld een Snelle weergave toepassen op de miniatuur, u kunt er een hyperlink aan toewijzen of u kunt een Experience-fragment toevoegen.
 
-Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+Zie [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
-Gereedschappen voor het delen van sociale media in interactieve video worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. In plaats daarvan kunt u voorinstellingen voor viewers gebruiken of maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
+>Gereedschappen voor het delen van sociale media in interactieve video worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. In plaats daarvan kunt u voorinstellingen voor viewers gebruiken of maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
 >[!NOTE]
 >
-De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
+>De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
 
 Opties voor Ongedaan maken en Opnieuw worden in de rechterbovenhoek van de pagina ondersteund tijdens de huidige sessie voor maken en bewerken.
 
@@ -432,7 +432,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
       <td>De geselecteerde miniatuurafbeelding aan een ervaringsfragment koppelen</td> 
       <td><p>Selecteer onder Type handeling de optie <strong>Ervaar fragment</strong>Voer vervolgens de volgende handelingen uit:<p> 
        <ul> 
-       <li>Als u een Experience Manager Sites-klant bent, selecteert u het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Selecteer het ervaringsfragment dat u wilt gebruiken en selecteer <strong>Als u op de vorige pagina wilt terugkeren naar het deelvenster Handelingen, selecteert u </strong>rechtsboven op de pagina.<br /> Zie <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">Ervaar fragmenten</a>.</li> 
+       <li>Als u een Experience Manager Sites-klant bent, selecteert u het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Selecteer het ervaringsfragment dat u wilt gebruiken en selecteer <strong>Als u op de vorige pagina wilt terugkeren naar het deelvenster Handelingen, selecteert u </strong>rechtsboven op de pagina.<br /> Zie <a href="/help/sites-cloud/authoring/fragments/content-fragments.md">Ervaar fragmenten</a>.</li> 
       </ul> 
        <ul> 
        <li>Geef de breedte en hoogte van het ervaringsfragment op zoals dit in de video wordt weergegeven.</li>
@@ -493,7 +493,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    >[!NOTE]
    >
-   Wanneer u uw interactieve video opslaat, wordt er automatisch een gekoppeld `.vtt`-bestand bij opgeslagen. De `.vtt` bestand wordt opgeslagen in de `_VTT` map in de hoofdmap van **[!UICONTROL Assets]**. Uw interactieve video kan alleen correct worden afgespeeld op uw website als het bestand en de map aanwezig zijn. Verplaats, bewerk of verwijder daarom de map `_VTT` of de content ervan niet.
+   >Wanneer u uw interactieve video opslaat, wordt er automatisch een gekoppeld `.vtt`-bestand bij opgeslagen. De `.vtt` bestand wordt opgeslagen in de `_VTT` map in de hoofdmap van **[!UICONTROL Assets]**. Uw interactieve video kan alleen correct worden afgespeeld op uw website als het bestand en de map aanwezig zijn. Verplaats, bewerk of verwijder daarom de map `_VTT` of de content ervan niet.
 
 1. Publiceer de interactieve video. Met Publiceren maakt u de insluitcode of URL die u uiteindelijk kopieert en plakt naar uw website.
 
@@ -503,7 +503,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    >[!NOTE]
    >
-   Als u een schokkende video wilt publiceren met Snelle weergaven, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
+   >Als u een schokkende video wilt publiceren met Snelle weergaven, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
 
    Nadat u tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze toevoegen aan de openingspagina van uw bestaande website. Zie [Een interactieve video integreren met uw website](#integrating-an-interactive-video-with-your-website).
 
@@ -529,9 +529,9 @@ De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat 
 
 >[!NOTE]
 >
-Als u nu alleen interactiviteit met hypergekoppelde webpagina&#39;s hebt toegevoegd, bent u klaar.
+>Als u nu alleen interactiviteit met hypergekoppelde webpagina&#39;s hebt toegevoegd, bent u klaar.
 >
-Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, zijn de miniaturen naast de interactieve video alleen bedoeld voor weergavedoeleinden; ze zijn nog niet geïntegreerd met uw bestaande Snelle weergaven. In dat geval moet u de interactieve video integreren met bestaande Snelle weergaven op uw website.
+>Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, zijn de miniaturen naast de interactieve video alleen bedoeld voor weergavedoeleinden; ze zijn nog niet geïntegreerd met uw bestaande Snelle weergaven. In dat geval moet u de interactieve video integreren met bestaande Snelle weergaven op uw website.
 
 **Voorbeeld**
 
@@ -574,7 +574,7 @@ Integratie is zo eenvoudig als het verwijderen van de video-insluitcode en het v
 
 >[!NOTE]
 >
-Deze taak is alleen van toepassing als u een zelfstandige Experience Manager Assets-klant bent.
+>Deze taak is alleen van toepassing als u een zelfstandige Experience Manager Assets-klant bent.
 
 De laatste stap in dit proces is het integreren van uw interactieve video met een bestaande implementatie van QuickView die op uw website wordt gebruikt. Er is geen oplossing voor de integratie die in alle gevallen werkt. Elke Quickview-implementatie is uniek. Daarom is een specifieke aanpak nodig die de hulp van een front-end IT-persoon omvat.
 

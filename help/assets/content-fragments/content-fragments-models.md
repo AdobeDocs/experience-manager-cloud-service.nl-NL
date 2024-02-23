@@ -2,7 +2,7 @@
 title: Content Fragment Models (Assets - Content Fragments)
 description: Leer hoe Content Fragment Models fungeert als basis voor inhoud zonder kop in AEM, zodat u inhoudsfragmenten met gestructureerde inhoud kunt maken.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3011'
 ht-degree: 2%
@@ -78,9 +78,9 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
         >[!CAUTION]
         >
-        >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, merk op dat de namen slechts A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
+        Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, merk op dat de namen slechts A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
         >
-        >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
+        Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
      Bijvoorbeeld:
 
@@ -135,7 +135,7 @@ Dit wordt getoond als verdeler in de modelredacteur, die secties van de lijst va
 In de fragmenteditor wordt elke instantie weergegeven als een tab.
      >[!NOTE]
      >
-     >Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
+     Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
 
 ## Eigenschappen {#properties}
 
@@ -147,7 +147,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
   >[!CAUTION]
   >
-  >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
+  Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
 * **Renderen als**
 De verschillende opties voor het realiseren/renderen van het veld in een fragment. Met deze eigenschap kunt u vaak definiëren of de auteur één instantie van het veld ziet of meerdere instanties mag maken. Wanneer **Meerdere velden** wordt gebruikt U kunt het minimum en maximum aantal objecten definiëren - zie [Validatie](#validation) voor nadere bijzonderheden.
@@ -177,15 +177,15 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
   >[!NOTE]
   >
-  >Er wordt gezorgd voor uniformiteit per taalwortel.
+  Er wordt gezorgd voor uniformiteit per taalwortel.
 
   >[!NOTE]
   >
-  >Variaties kunnen hetzelfde hebben *uniek* waarde als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
+  Variaties kunnen hetzelfde hebben *uniek* waarde als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
 
   >[!CAUTION]
   >
-  >Als u MSM (dat tot exemplaren van Inhoudsfragmenten leidt) wilt gebruiken, dan om het even welk **Uniek** de beperkingen zouden uit om het even welke Types moeten worden verwijderd die van Gegevens in de respectieve Modellen van het Fragment van de Inhoud worden gebruikt.
+  Als u MSM (dat tot exemplaren van Inhoudsfragmenten leidt) wilt gebruiken, dan om het even welk **Uniek** de beperkingen zouden uit om het even welke Types moeten worden verwijderd die van Gegevens in de respectieve Modellen van het Fragment van de Inhoud worden gebruikt.
 
 * Zie **[Content Reference](#content-reference)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
 
@@ -237,18 +237,16 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
      >[!NOTE]
      >
-     >Deze methode is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     Deze methode is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
 >[!NOTE]
 >
->AEM heeft een terugkerende bescherming voor:
+AEM heeft een terugkerende bescherming voor:
 >
->* Content References
->  Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+* Inhoudsverwijzingen Hiermee voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
->* Fragmentverwijzingen in GraphQL
->  Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
+* Fragmentverwijzingen in GraphQL Als u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
 
 ### Content Reference {#content-reference}
 
@@ -290,7 +288,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Dit is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Dit is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Naast de standaardeigenschappen kunt u definiëren:
 
@@ -316,9 +314,9 @@ Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 
 >[!NOTE]
 >
->Er is een terugkerend beschermingsmechanisme ingesteld. Hiermee wordt de gebruiker verboden het huidige inhoudsfragment in de fragmentverwijzing te selecteren. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
+Er is een terugkerend beschermingsmechanisme ingesteld. Hiermee wordt de gebruiker verboden het huidige inhoudsfragment in de fragmentverwijzing te selecteren. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
->Er is ook een herhalingsbescherming voor fragmentverwijzingen in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, zal het ongeldig terugkeren.
+Er is ook een herhalingsbescherming voor fragmentverwijzingen in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, zal het ongeldig terugkeren.
 
 ## Inhoudsfragmentmodel - eigenschappen {#content-fragment-model-properties}
 
@@ -333,7 +331,7 @@ U kunt de **Eigenschappen** van een inhoudsfragmentmodel:
 
      >[!NOTE]
      >
-     >Dit wordt alleen gebruikt door de *new* Inhoudsfragmenteditor. Zie [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) voor nadere informatie.
+     Dit wordt alleen gebruikt door de *new* Inhoudsfragmenteditor. Zie [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) voor nadere informatie.
 
 
 ## Een inhoudsfragmentmodel in- of uitschakelen {#enabling-disabling-a-content-fragment-model}
@@ -383,7 +381,7 @@ Om inhoudsbeheer uit te voeren, kunt u vormen **Beleid** in de map Elementen om 
 
 >[!NOTE]
 >
->Het mechanisme lijkt op [toestaan, van paginasjablonen](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) voor een pagina en de onderliggende elementen, in geavanceerde eigenschappen van een pagina.
+Het mechanisme lijkt op [toestaan, van paginasjablonen](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) voor een pagina en de onderliggende elementen, in geavanceerde eigenschappen van een pagina.
 
 Om te vormen **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
 
@@ -417,7 +415,7 @@ De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als v
 
 >[!CAUTION]
 >
->Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
+Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
 
 Een inhoudsfragmentmodel verwijderen:
 
@@ -428,7 +426,7 @@ Een inhoudsfragmentmodel verwijderen:
 
    >[!NOTE]
    >
-   >Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
+   Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
 
 ## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
 
@@ -444,7 +442,7 @@ De gepubliceerde status wordt vermeld in de console.
 
    >[!NOTE]
    >
-   >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, geeft een selectielijst dit aan en wordt het model gepubliceerd met het fragment.
+   Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, geeft een selectielijst dit aan en wordt het model gepubliceerd met het fragment.
 
 ## Publicatie van een inhoudsfragmentmodel ongedaan maken {#unpublishing-a-content-fragment-model}
 
@@ -462,7 +460,7 @@ Als u probeert de publicatie ongedaan te maken van een model dat momenteel wordt
 
 ![Foutbericht van Content Fragment Model bij het ongedaan maken van de publicatie van een model dat in gebruik is](assets/cfm-model-unpublish-error.png)
 
-Het bericht zal suggereren dat u de [Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel voor een nader onderzoek :
+Het bericht zal suggereren dat u de [Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references) panel voor een nader onderzoek :
 
 ![Inhoudsfragmentmodel in verwijzingen](assets/cfm-model-references.png)
 
@@ -532,6 +530,6 @@ U kunt **Vergrendeld** modellen van of de console, of modelredacteur:
 
      >[!NOTE]
      >
-     >Mogelijk staat er nog een waarschuwing boven aan het scherm, maar dat is wanneer het model al wordt gebruikt door bestaande inhoudsfragmenten.
+     Mogelijk staat er nog een waarschuwing boven aan het scherm, maar dat is wanneer het model al wordt gebruikt door bestaande inhoudsfragmenten.
 
    * **Annuleren** Hiermee keert u terug naar de console.

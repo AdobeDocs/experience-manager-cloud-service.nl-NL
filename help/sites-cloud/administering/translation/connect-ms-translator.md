@@ -4,7 +4,7 @@ description: Leer hoe u AEM kunt verbinden met Microsoft Translator vanuit de ve
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Nadat u de configuratie creeert, moet u [activeren](#activating-the-translator-s
 
 De volgende procedure leidt tot een configuratie van de Vertaler van Microsoft.
 
-1. In de [navigatievenster,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) selecteren **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
+1. In de [navigatievenster,](/help/sites-cloud/authoring/basic-handling.md#first-steps) selecteren **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
 1. Navigeer naar de plaats waar u de configuratie wilt creëren. Normaal gesproken bevindt dit zich in de hoofdmap van de site of kan het een algemene standaardconfiguratie zijn.
 1. Selecteer de **Maken** knop.
 1. Definieer uw configuratie.
@@ -56,7 +56,7 @@ De volgende procedure leidt tot een configuratie van de Vertaler van Microsoft.
 
 Microsoft-vertaalconfiguratiepagina&#39;s bieden een handige koppeling naar de Microsoft-website voor het verkrijgen van een accountabonnement dat geschikt is voor productiesystemen.
 
-1. In de [navigatievenster,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) selecteren **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
+1. In de [navigatievenster,](/help/sites-cloud/authoring/basic-handling.md#first-steps) selecteren **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
 1. Selecteer de bestaande Microsoft Translator-configuratie.
 1. Selecteren **Bewerken**.
 1. In de **Configuratie bewerken** venster, selecteert u **Abonnement voor upgrades**. Er wordt een Microsoft-webpagina met meer informatie over de service geopend.
@@ -65,13 +65,13 @@ Microsoft-vertaalconfiguratiepagina&#39;s bieden een handige koppeling naar de M
 
 Microsoft Translation Configuration-pagina&#39;s bieden een handige koppeling naar de Microsoft-website om uw Microsoft Translator-engine aan te passen.
 
-1. In de [navigatievenster,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) selecteren **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
+1. In de [navigatievenster,](/help/sites-cloud/authoring/basic-handling.md#first-steps) selecteren **Gereedschappen** > **Cloud Servicen** > **Cloud Servicen voor vertaling**.
 1. Selecteer de bestaande Microsoft Translator-configuratie.
 1. Selecteren **Bewerken**.
 1. In de **Configuratie bewerken** venster, selecteert u **Vertaler aanpassen**. Gebruik de Microsoft-webpagina die wordt geopend om uw service aan te passen.
 
 ## De configuraties van de vertaalservice activeren {#activating-the-translator-service-configurations}
 
-U moet uw configuraties van de wolkendienst activeren om vertaalde inhoud te steunen die aan de publicatie instantie wordt herhaald. Gebruik de methode [publiceren, boomstructuur](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree) om de opslagknooppunten te activeren die de Microsoft Translator-configuraties opslaan. De knooppunten bevinden zich onder de volgende bovenliggende knooppunten:
+U moet uw configuraties van de wolkendienst activeren om vertaalde inhoud te steunen die aan de publicatie instantie wordt herhaald. Gebruik de methode [publiceren, boomstructuur](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree) om de opslagknooppunten te activeren die de Microsoft Translator-configuraties opslaan. De knooppunten bevinden zich onder de volgende bovenliggende knooppunten:
 
 * `/libs/settings/cloudconfigs/translation/msft-translation`

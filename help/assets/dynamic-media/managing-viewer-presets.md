@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4208'
 ht-degree: 7%
@@ -114,7 +114,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
    <td><p>Met de Panoramische afbeelding en de Panoramische VR-viewers worden bolvormige panoramische afbeeldingen weergegeven zodat gebruikers deze kunnen bekijken in een 360°-kijkervaring van een ruimte, eigenschap, locatie of landschap.</p> <p>Een geüploade afbeelding kan alleen als een bolvormig panorama worden beschouwd als de afbeelding een van de volgende opties of beide heeft:</p>
     <ul>
      <li>Een hoogte-breedteverhouding van 2:1.</li>
-     <li>Gecodeerd met de trefwoorden <code>equirectangular</code>, of <code>spherical</code> en <code>panorama</code>, of <code>spherical </code>en <code>panoramic</code>. Zie <a href="/help/sites-cloud/authoring/features/tags.md">Tags gebruiken</a>.</li>
+     <li>Gecodeerd met de trefwoorden <code>equirectangular</code>, of <code>spherical</code> en <code>panorama</code>, of <code>spherical </code>en <code>panoramic</code>. Zie <a href="/help/sites-cloud/authoring/sites-console/tags.md">Tags gebruiken</a>.</li>
     </ul> <p>Zowel zijn de aspectverhouding als de sleutelwoordcriteria van toepassing op panoramische activa voor de de detailpagina van activa en de component van "Panoramische Media" WCM.</p></td>
   </tr>
     <tr>

@@ -4,7 +4,7 @@ description: Leer hoe u met Content Fragments in AEM as a Cloud Service inhoud k
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Een overzicht van het werken met inhoudsfragmenten {#overview-working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM) as a Cloud Service, staan de Fragments van de Inhoud u toe om te ontwerpen, tot stand te brengen, te leiden, en [pagina-onafhankelijke inhoud publiceren](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties en via meerdere kanalen, ideaal voor levering zonder kop en voor het ontwerpen van pagina&#39;s.
+Met Adobe Experience Manager (AEM) as a Cloud Service, staan de Fragments van de Inhoud u toe om te ontwerpen, tot stand te brengen, te leiden, en [pagina-onafhankelijke inhoud publiceren](/help/sites-cloud/authoring/fragments/content-fragments.md). Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties en via meerdere kanalen, ideaal voor levering zonder kop en voor het ontwerpen van pagina&#39;s.
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Met Adobe Experience Manager (AEM) as a Cloud Service, staan de Fragments van de
 >
 >* gebruik van de **Activa** console voor [beheren van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)
 >* gebruik van de [*origineel* Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-variations.md),
->* gebruiken [Inhoudsfragmenten voor paginaontwerp](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* gebruiken [Inhoudsfragmenten voor paginaontwerp](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 
 Inhoudsfragmenten bevatten gestructureerde inhoud:
@@ -74,7 +74,7 @@ Deze inhoudsfragmenten kunnen vervolgens worden samengesteld om ervaringen via v
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** Er zijn verschillende functies binnen AEM:
+>**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)** Er zijn verschillende functies binnen AEM:
 >* **Inhoudsfragmenten** redactionele inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals tekst, cijfers en datums.
 >* **Ervaar fragmenten** volledig opgemaakt zijn, een fragment van een webpagina.
 >
@@ -94,7 +94,7 @@ Nadat de fragmenten zijn gemaakt, kunt u:
 * [De editor Inhoudsfragmenten gebruiken](/help/sites-cloud/administering/content-fragments/authoring.md) - om uw fragmenten te bewerken, te publiceren (voor voorvertoning of productie) en ernaar te verwijzen
 * [Analyseren](/help/sites-cloud/administering/content-fragments/analysis.md)  de structuur van het inhoudsfragment met de editor
 * [Toegang tot uw fragmenten met GraphQL, zodat u uw toepassingen zonder kop kunt bedienen](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
-* [Of gebruik uw fragmenten voor paginaontwerp](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Of gebruik uw fragmenten voor paginaontwerp](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Nadat de fragmenten zijn gemaakt, kunt u:
 >* [Contentfragmenten die componenten voor rendering configureren](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
->* [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 ## Hoofd en Variaties {#main-and-variations}
 
@@ -172,7 +172,7 @@ Inhoudsfragmenten zijn:
 
 * Toegankelijk voor de levering van inhoud met de [GRAPHQL API AEM](/help/headless/graphql-api/content-fragments.md).
 
-* Beschikbaar in het dialoogvenster [pagina-editor met behulp van de component Inhoudsfragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (verwijzende component):
+* Beschikbaar in het dialoogvenster [pagina-editor met behulp van de component Inhoudsfragment](/help/sites-cloud/authoring/fragments/content-fragments.md) (verwijzende component):
 
    * De [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) is beschikbaar voor auteurs van pagina&#39;s. Hiermee kunnen ze naar het vereiste inhoudsfragment in HTML- of JSON-indeling verwijzen en dit leveren.
 
@@ -257,7 +257,7 @@ Als u de Content Fragments wilt gebruiken voor het ontwerpen van pagina&#39;s, h
 * A **Component Inhoudsfragment**
 
    * Instrumentaal voor het leveren van het fragment in HTML- en/of JSON-indeling.
-   * Vereist voor [verwijzen naar het fragment op een pagina](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+   * Vereist voor [verwijzen naar het fragment op een pagina](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Verantwoordelijk voor de lay-out en levering van een fragment, bijvoorbeeld kanalen.
    * Fragmenten hebben een of meer specifieke componenten nodig om de lay-out te definiëren en om enkele of alle elementen/variaties en bijbehorende inhoud te leveren.
    * Wanneer u een fragment naar een pagina sleept in de ontwerpfase, wordt de vereiste component automatisch gekoppeld.

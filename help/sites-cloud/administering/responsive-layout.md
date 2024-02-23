@@ -1,7 +1,7 @@
 ---
 title: De container voor lay-out en de lay-outmodus configureren
 description: Leer hoe u de lay-outcontainer en de lay-outmodus configureert om responsieve lay-outs voor de auteurs van de inhoud in te schakelen.
-source-git-commit: 4ae0ae4fbf8f6a97434628f5f6049720c6c43118
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 0%
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # De container voor lay-out en de lay-outmodus configureren {#configuring-layout-container-and-layout-mode}
 
-[Responsieve lay-out](/help/sites-cloud/authoring/features/responsive-layout.md) is een mechanisme om te realiseren [responsief webontwerp.](https://en.wikipedia.org/wiki/Responsive_web_design) Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
+[Responsieve lay-out](/help/sites-cloud/authoring/page-editor/responsive-layout.md) is een mechanisme om te realiseren [responsief webontwerp.](https://en.wikipedia.org/wiki/Responsive_web_design) Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
 
 AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinatie mechanismen:
 
-* **[Layout Container](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Deze component biedt een rasteralineasysteem waarmee u componenten kunt toevoegen en positioneren binnen een responsief raster.
+* **[Layout Container](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Deze component biedt een rasteralineasysteem waarmee u componenten kunt toevoegen en positioneren binnen een responsief raster.
    * Het kan als standaardparsys voor uw pagina worden gebruikt en/of ter beschikking gesteld aan auteurs in componentenbrowser.
    * De standaardwaarde **Layout Container** component wordt gedefinieerd onder `/libs/wcm/foundation/components/responsivegrid`.
    * U kunt lay-outcontainers definiëren:
@@ -23,8 +23,8 @@ AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinati
       * Als standaardparsys voor de pagina.
       * Als zowel component als standaard parsys.
          * U kunt de lay-outcontainer als standaard voor de pagina hebben, terwijl het toestaan van de gebruiker om verdere lay-outcontainers binnen dit toe te voegen; bijvoorbeeld, om kolomcontrole te bereiken.
-* **[Lay-outmodus](/help/sites-cloud/authoring/fundamentals/environment-tools.md)** - Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om de inhoud binnen het responsieve raster te plaatsen.
-* **[Emulator](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)** - Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
+* **[Lay-outmodus](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om de inhoud binnen het responsieve raster te plaatsen.
+* **[Emulator](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
 
 Met deze responsieve rastermechanismen kunt u:
 
@@ -220,9 +220,9 @@ Voor een effectieve responsieve lay-out moet de auteur van de inhoud instanties 
 
 Auteurs kunnen meer responsieve rasters toevoegen aan de inhoudspagina&#39;s als u de component Layout Container voor uw pagina wilt inschakelen. U kunt dit doen door:
 
-* **Via de auteursomgeving** - [Uw paginasjablonen bewerken](/help/sites-cloud/authoring/features/templates.md) om de container voor lay-out in te schakelen voor een pagina.
+* **Via de auteursomgeving** - [Uw paginasjablonen bewerken](/help/sites-cloud/authoring/sites-console/templates.md) om de container voor lay-out in te schakelen voor een pagina.
 * **Componentdefinitie** - Gebruik `allowedComponent` of een statische include-opdracht wanneer de component wordt gedefinieerd.
 
 ### Het raster van de container van de layout configureren {#configure-the-grid-of-the-layout-container}
 
-U kunt het aantal kolommen vormen beschikbaar voor elke specifieke instantie van lay-outcontainer [door uw paginasjablonen te bewerken.](/help/sites-cloud/authoring/features/templates.md)
+U kunt het aantal kolommen vormen beschikbaar voor elke specifieke instantie van lay-outcontainer [door uw paginasjablonen te bewerken.](/help/sites-cloud/authoring/sites-console/templates.md)

@@ -2,7 +2,7 @@
 title: Aangepaste en nieuwe functies - Adobe Experience Manager as a Cloud Service
 description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: d4502c7558fca7ecee89b2ce9429fd1c749d8e92
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 66%
@@ -240,7 +240,7 @@ Dit biedt een combinatie van de volgende voordelen:
 
 >[!NOTE]
 >
->Voor meer details, [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) is een goed uitgangspunt.
+>Voor meer details, [Basisverwerking](/help/sites-cloud/authoring/basic-handling.md) is een goed uitgangspunt.
 
 De basisbeginselen van de authoringgebruikersinterface (UI), zowel voor Sites als Assets, zullen heel vertrouwd zijn voor iedereen die AEM vroeger heeft gebruikt.
 

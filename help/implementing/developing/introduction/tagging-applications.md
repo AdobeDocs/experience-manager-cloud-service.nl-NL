@@ -2,9 +2,9 @@
 title: Tags samenstellen in AEM toepassingen
 description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM.
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ die met de
 
 Voor gerelateerde informatie over codering:
 
-* Zie [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md) voor informatie over het labelen van inhoud als auteur van inhoud.
+* Zie [Tags gebruiken](/help/sites-cloud/authoring/sites-console/tags.md) voor informatie over het labelen van inhoud als auteur van inhoud.
 * Zie Tags beheren voor een beheerder. Het standpunt van de beheerder over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
 
 ## Overzicht van de API voor tags {#overview-of-the-tagging-api}

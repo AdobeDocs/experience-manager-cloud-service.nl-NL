@@ -4,9 +4,9 @@ description: Leer hoe u AEM kunt gebruiken om een site te maken met behulp van s
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Het is eenvoudig om een site te maken met een sjabloon.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
-   * De sitenaam moet voldoen aan [Naamconventies voor pagina&#39;s AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
+   * De sitenaam moet voldoen aan [Naamconventies voor pagina&#39;s AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
 1. Selecteren **Maken** en de site wordt gemaakt van de sitesjabloon.
 

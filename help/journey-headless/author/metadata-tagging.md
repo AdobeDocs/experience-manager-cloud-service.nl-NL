@@ -2,10 +2,10 @@
 title: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
 description: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -38,6 +38,6 @@ Nu kunt u al deze kennis aan gebruik zetten en beginnen creërend de Fragments v
 
 * [Metagegevens - Fragmenteigenschappen](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
-* [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md)
+* [Tags gebruiken](/help/sites-cloud/authoring/sites-console/tags.md)
 
 * [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

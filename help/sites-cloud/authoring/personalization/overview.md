@@ -2,7 +2,7 @@
 title: Aanpassing en doelgerichtheid van inhoud
 description: Leer hoe u gepersonaliseerde, gerichte inhoud met AEM kunt creëren
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -88,7 +88,7 @@ U kunt [Doelinhoud auteur](/help/sites-cloud/authoring/personalization/targeted-
 
 Een gegroepeerde set componenten die een ervaring opbouwen.
 
-[Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) zijn gemaakt van inhoud en informatie (opmaak, enzovoort) om een ervaring te creëren; deze kunnen direct worden gebruikt bij het ontwerpen van pagina&#39;s. Ze kunnen worden beschouwd als een subset van een AEM pagina. Hiermee kunnen auteurs van inhoud inhoud inhoud hergebruiken via kanalen, waaronder sitepagina&#39;s en systemen van derden.
+[Ervaar fragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) zijn gemaakt van inhoud en informatie (opmaak, enzovoort) om een ervaring te creëren; deze kunnen direct worden gebruikt bij het ontwerpen van pagina&#39;s. Ze kunnen worden beschouwd als een subset van een AEM pagina. Hiermee kunnen auteurs van inhoud inhoud inhoud hergebruiken via kanalen, waaronder sitepagina&#39;s en systemen van derden.
 
 Voor een verpersoonlijkingsvoorbeeld, kunnen een Titel, Beeld, Beschrijving, en Vraag aan de Knoop van de Actie worden gecombineerd om een laserervaring te vormen. Het gebruiken van de Fragmenten van de Ervaring is een zeer belangrijk deel van het gebruiken van de verpersoonlijking van Adobe Target.
 

@@ -2,7 +2,7 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3057'
 ht-degree: 0%
@@ -286,8 +286,8 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder
 * [Tutorials zonder kop AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Gebruik deze praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.
 * [Beheer van inhoud zonder koppen met GraphQL API&#39;s](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Volg deze cursus voor een overzicht van de GraphQL API die in AEM is geïmplementeerd. Verificatie via AdobeID is vereist.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Dit GitHub-project bevat voorbeeldtoepassingen die AEM GraphQL API&#39;s markeren.
-* [Concepten ontwerpen](/help/sites-cloud/authoring/getting-started/concepts.md) - Technische documentatie voor de ontwerpomgeving van AEM, met inbegrip van details over de ontwerper-publicatieopstelling
-* [Pagina&#39;s publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Technische documentatie voor het publiceren van inhoud op AEM
+* [Concepten ontwerpen](/help/sites-cloud/authoring/author-publish.md) - Technische documentatie voor de ontwerpomgeving van AEM, met inbegrip van details over de ontwerper-publicatieopstelling
+* [Pagina&#39;s publiceren](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - Technische documentatie voor het publiceren van inhoud op AEM
 * [Naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md) - Technische documentatie van beperkingen voor paginanummering in AEM
 * [Beheer en vertaling van meerdere sites](/help/sites-cloud/administering/msm-and-translation.md) - Technische documentatie over AEM krachtige vertaalfuncties
 * [Workflows AEM](/help/sites-cloud/authoring/workflows/overview.md) - Technische documentatie over de automatisering van workflows in AEM

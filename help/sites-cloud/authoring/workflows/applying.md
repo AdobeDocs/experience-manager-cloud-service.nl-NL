@@ -2,10 +2,10 @@
 title: Workflows toepassen op pagina's
 description: Tijdens het ontwerpen kunt u workflows aanroepen om op uw pagina's te reageren. Het is ook mogelijk om meerdere workflows toe te passen.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 11%
+ht-degree: 9%
 
 ---
 
@@ -70,7 +70,7 @@ U kunt een workflow starten op de werkbalk van het dialoogvenster **Sites** cons
 
 Van de **Tijdlijn** u kunt een workflow starten die op de geselecteerde bron moet worden toegepast.
 
-1. [Selecteer de bron](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) en open [Tijdlijn](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (U kunt Tijdlijn openen en vervolgens de bron selecteren).
+1. [Selecteer de bron](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) en open [Tijdlijn](/help/sites-cloud/authoring/basic-handling.md#timeline) (U kunt Tijdlijn openen en vervolgens de bron selecteren).
 1. De pijlpunt op het veld Opmerking kan worden gebruikt om **Workflow starten**:
 
    ![Workflow maken vanuit de tijdlijn](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -116,7 +116,7 @@ U kunt details specificeren:
 
 1. In de **Toepassingsgebied** stap die u kunt selecteren:
 
-   * **Inhoud toevoegen** om de [padbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) en selecteer aanvullende bronnen; selecteer in de browser de optie **Selecteren** om de inhoud aan de werkstroominstantie toe te voegen.
+   * **Inhoud toevoegen** om de [padbrowser](/help/sites-cloud/authoring/path-selection.md) en selecteer aanvullende bronnen; selecteer in de browser de optie **Selecteren** om de inhoud aan de werkstroominstantie toe te voegen.
 
    * Een bestaande bron voor het weergeven van extra handelingen:
 

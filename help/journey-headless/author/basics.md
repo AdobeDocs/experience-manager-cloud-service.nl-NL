@@ -2,10 +2,10 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw eigen inhoud voor uw A
    * Inleiding tot ontwerpen met AEMaaCS
    * Inleiding tot inhoudsfragmenten
 
-## Basisbewerkingen {#basic-handling}
+## Basisverwerking {#basic-handling}
 
 Voordat u de stappen met inhoudsfragmenten gaat beheren, volgt een (zeer) korte inleiding op het gebruik van AEM...maar niets vervangt echt de ervaring van het aanmelden en het proberen om het systeem te gebruiken.
 
@@ -33,7 +33,7 @@ Voordat u de stappen met inhoudsfragmenten gaat beheren, volgt een (zeer) korte 
 Een AEM-installatie bestaat meestal uit drie omgevingen:
 
 * Auteur
-* Publicatie
+* Publiceren
 * Voorvertoning
 
 U meldt zich aan, en gebruikt het auteursmilieu om uw inhoud te produceren. Wanneer u klaar bent, publiceert u de inhoud zodat deze algemeen beschikbaar wordt. Voor koploze gebruikers is dit voor andere toepassingen, voor webpagina&#39;s is dit voor lezers op het web.
@@ -88,7 +88,7 @@ Nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikb
 
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-* **Open**
+* **Openen**
 * **Publiceren** (en **Publiceren ongedaan maken**)
 * **Kopiëren**
 * **Verplaatsen**
@@ -267,25 +267,25 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Authoring van concepten](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Concepten ontwerpen](/help/sites-cloud/authoring/author-publish.md)
 
-* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** console, maar veel/de meeste eigenschappen zijn ook relevant voor het ontwerpen **Inhoudsfragmenten** onder de **Activa** console.
+* [Basisverwerking](/help/sites-cloud/authoring/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** console, maar veel/de meeste eigenschappen zijn ook relevant voor het ontwerpen **Inhoudsfragmenten** onder de **Activa** console.
 
-   * [Deelvenster Navigatie](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+   * [Deelvenster Navigatie](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-   * [De koptekst](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+   * [De koptekst](/help/sites-cloud/authoring/basic-handling.md#the-header)
 
-   * [Werkbalk Handelingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+   * [Werkbalk Handelingen](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-   * [Snelle handelingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+   * [Snelle handelingen](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
 
-   * [Bronnen weergeven en selecteren](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+   * [Bronnen weergeven en selecteren](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+   * [Spoorwegkiezer](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
 
-* [Werken met contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Contentfragmenten beheren](/help/sites-cloud/administering/content-fragments/managing.md)
+   * [Inhoudsfragmenten beheren](/help/sites-cloud/administering/content-fragments/managing.md)
 
    * [De configuratie toepassen op de middelenmap](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
@@ -305,7 +305,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
          * [Een inhoudsfragment publiceren en voorvertonen](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
       * [Modellen van inhoudsfragmenten - gegevenstypen](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 

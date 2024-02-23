@@ -2,10 +2,10 @@
 title: Werken met taken
 description: De taken vertegenwoordigen punten van werk dat op inhoud moet worden gedaan en in projecten worden gebruikt om het niveau van volledigheid van huidige taken te bepalen
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
@@ -68,7 +68,7 @@ Een taak toevoegen:
 
    ![Een taak toevoegen](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 
 ## Werken met taken in het Postvak In {#working-with-tasks-in-the-inbox}
 
@@ -76,6 +76,6 @@ Een andere manier om tot taken toegang te hebben is van Inbox. Vanuit het Postva
 
 ![Taken in het Postvak IN](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Selecteer de taak en klik op **Voltooid**. Voeg informatie toe aan de taak en klik vervolgens op **Gereed**. Zie [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md) voor meer informatie .
+Selecteer de taak en klik op **Voltooid**. Voeg informatie toe aan de taak en klik vervolgens op **Gereed**. Zie [Uw Postvak IN](/help/sites-cloud/authoring/inbox.md) voor meer informatie .
 
 ![Taakmeldingen](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

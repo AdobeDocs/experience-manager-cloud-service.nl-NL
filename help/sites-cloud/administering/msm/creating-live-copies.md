@@ -4,7 +4,7 @@ description: Leer hoe u Actieve kopieën maakt en synchroniseert om uw inhoud op
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 0%
@@ -53,12 +53,12 @@ De volgende stappen zijn alleen voor test- en ontwikkelingsdoeleinden beschikbaa
 
 Een blauwdrukconfiguratie maken:
 
-1. [Navigeren](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) aan de **Gereedschappen** en selecteert u vervolgens de **Sites** -menu.
+1. [Navigeren](/help/sites-cloud/authoring/basic-handling.md#global-navigation) aan de **Gereedschappen** en selecteert u vervolgens de **Sites** -menu.
 1. Selecteren **Blauwdrukken** om de **Blauwdrukconfiguraties** console:
 
    ![Blauwdrukconfiguraties](../assets/blueprint-configurations.png)
 
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 1. Selecteer de blauwdruksjabloon en **Volgende** om door te gaan.
 1. Selecteer de bronpagina die als blauwdruk moet worden gebruikt; dan **Volgende** om door te gaan.
 1. Definiëren:
@@ -72,7 +72,7 @@ Een blauwdrukconfiguratie maken:
 
 U kunt een bestaande configuratie van de blauwdruk bewerken of verwijderen:
 
-1. [Navigeren](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) aan de **Gereedschappen** en selecteert u vervolgens de **Sites** -menu.
+1. [Navigeren](/help/sites-cloud/authoring/basic-handling.md#global-navigation) aan de **Gereedschappen** en selecteert u vervolgens de **Sites** -menu.
 1. Selecteren **Blauwdrukken** om de **Blauwdrukconfiguraties** console:
 
    ![Blauwdrukconfiguraties](../assets/blueprint-configurations.png)
@@ -211,7 +211,7 @@ De eigenschappen weergeven:
 
 ### De actieve kopieën van een vervagingspagina bekijken {#seeing-the-live-copies-of-a-blueprint-page}
 
-De pagina&#39;s van de blauwdruk (die in een blauwdrukconfiguratie van verwijzingen worden voorzien) verstrekken u een lijst van de Levende pagina&#39;s van het Exemplaar die de huidige (blauwdruk) pagina als bron gebruiken. Gebruik deze lijst om actieve kopieën bij te houden. De lijst wordt weergegeven in de **Blauwdruk** tabblad van het [pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+De pagina&#39;s van de blauwdruk (die in een blauwdrukconfiguratie van verwijzingen worden voorzien) verstrekken u een lijst van de Levende pagina&#39;s van het Exemplaar die de huidige (blauwdruk) pagina als bron gebruiken. Gebruik deze lijst om actieve kopieën bij te houden. De lijst wordt weergegeven in de **Blauwdruk** tabblad van het [pagina-eigenschappen](/help/sites-cloud/authoring/sites-console/page-properties.md).
 
 ![Tabblad Vervagen van pagina-eigenschappen](../assets/live-copy-blueprint-tab.png)
 
@@ -249,7 +249,7 @@ Rollouts worden verwerkt als asynchrone taken en kunnen worden gecontroleerd op 
 
 #### Een vervaging uitrollen vanuit de referentierail {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. In de **Sites** console, selecteer de pagina in het levende exemplaar en open **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** van de werkbalk.
+1. In de **Sites** console, selecteer de pagina in het levende exemplaar en open **[Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references)** van de werkbalk.
 1. Selecteer de **Blauwdruk** om de aan deze pagina gekoppelde blauwdrukken weer te geven.
 1. Selecteer de gewenste blauwdruk in de lijst.
 1. Selecteren **Uitrol**.
@@ -575,8 +575,8 @@ De [**Herstellen** Actie is ook beschikbaar via het Live Copy-overzicht](live-co
 
 Als u de aangebrachte wijzigingen wilt bijhouden, kunt u de blauwdrukpagina weergeven in **Verwijzingen** en deze vergelijken met de bijbehorende pagina Live Copy:
 
-1. In de **Sites** console, [navigeer naar een blauwdruk- of Live Copy-pagina en selecteer deze](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open de **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** en afhankelijk van de context:
+1. In de **Sites** console, [navigeer naar een blauwdruk- of Live Copy-pagina en selecteer deze](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open de **[Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references)** en afhankelijk van de context:
 
    * **Blauwdruk**
    * **Actieve kopieën**
@@ -592,7 +592,7 @@ Als u de aangebrachte wijzigingen wilt bijhouden, kunt u de blauwdrukpagina weer
 
 1. De pagina&#39;s Live kopiëren en Bladeren worden naast elkaar geopend.
 
-   Zie voor meer informatie over het gebruik van de vergelijkingsfunctie [Pagina grijs](/help/sites-cloud/authoring/features/page-diff.md).
+   Zie voor meer informatie over het gebruik van de vergelijkingsfunctie [Pagina grijs](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Een actieve kopie ontkoppelen {#detaching-a-live-copy}
 

@@ -1,19 +1,19 @@
 ---
-title: Contentfragmenten aanpassen en uitbreiden
+title: Inhoudsfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit. Leer hoe u ze kunt aanpassen.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 1%
+source-wordcount: '1689'
+ht-degree: 0%
 
 ---
 
-# Contentfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
+# Inhoudsfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
 
 In Adobe Experience Manager as a Cloud Service breidt een inhoudsfragment een standaard element uit. Zie:
 
-* [Inhoudsfragmenten maken en beheren](/help/sites-cloud/administering/content-fragments/overview.md) en [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md) voor meer informatie over inhoudsfragmenten.
+* [Inhoudsfragmenten maken en beheren](/help/sites-cloud/administering/content-fragments/overview.md) en [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md) voor meer informatie over inhoudsfragmenten.
 
 * [Elementen beheren](/help/assets/manage-digital-assets.md) voor meer informatie over standaardactiva.
 
@@ -96,7 +96,7 @@ Integreren met de kern Elementen:
 >
 >De [De component Inhoudsfragment maakt deel uit van de kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html). Zie [Basiscomponenten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) voor meer informatie .
 
-Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM biedt de **[Basiscomponent van inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - een [component waarmee u inhoudsfragmenten op uw pagina&#39;s kunt opnemen](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). U kunt dit ook uitbreiden **[Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** kerncomponent.
+Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM biedt de **[Basiscomponent van inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - een [component waarmee u inhoudsfragmenten op uw pagina&#39;s kunt opnemen](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). U kunt dit ook uitbreiden **[Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** kerncomponent.
 
 * De component gebruikt de `fragmentPath` eigenschap om naar het daadwerkelijke inhoudsfragment te verwijzen. De `fragmentPath` Deze eigenschap wordt op dezelfde manier verwerkt als soortgelijke eigenschappen van andere elementtypen, bijvoorbeeld wanneer het inhoudsfragment naar een andere locatie wordt verplaatst.
 

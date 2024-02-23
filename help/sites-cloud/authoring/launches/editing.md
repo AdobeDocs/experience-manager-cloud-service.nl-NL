@@ -2,7 +2,7 @@
 title: Starten bewerken
 description: Nadat u een opstartafbeelding voor de pagina (of set pagina's) hebt gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina's.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 17%
@@ -48,15 +48,15 @@ Zie [Live kopie van inhoud wijzigen](/help/sites-cloud/administering/msm/creatin
 
 Als u de door u aangebrachte wijzigingen wilt bijhouden, kunt u de start weergeven in **Referenties** en de startpagina vergelijken met de bijbehorende bronpagina:
 
-1. In de **Sites** console, [navigeer naar de bronpagina&#39;s van uw lancering en selecteer één](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open de **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** en selecteert u **Starten**.
+1. In de **Sites** console, [navigeer naar de bronpagina&#39;s van uw lancering en selecteer één](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open de **[Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references)** en selecteert u **Starten**.
 1. Selecteer vervolgens uw specifieke startpagina **Vergelijken met bron**:
 
    ![Starten vergelijken met bron](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
 
-   Zie voor meer informatie over het gebruik van deze functie [Pagina grijs](/help/sites-cloud/authoring/features/page-diff.md).
+   Zie voor meer informatie over het gebruik van deze functie [Pagina grijs](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## De gebruikte bronpagina&#39;s wijzigen {#changing-the-source-pages-used}
 

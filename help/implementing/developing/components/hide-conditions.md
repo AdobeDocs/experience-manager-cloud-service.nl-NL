@@ -2,16 +2,16 @@
 title: Voorwaarden verbergen gebruiken
 description: De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # Voorwaarden verbergen gebruiken {#using-hide-conditions}
 
-De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet. Een voorbeeld hiervan zou zijn wanneer een sjabloonauteur de Core Component configureert [list, component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) in de [sjablooneditor](/help/sites-cloud/authoring/features/templates.md) en besluit de opties uit te schakelen om de lijst op onderliggende pagina&#39;s samen te stellen. Als u deze optie in het ontwerpdialoogvenster uitschakelt, wordt een eigenschap zo ingesteld dat wanneer de component List wordt gerenderd, de voorwaarde hide wordt geëvalueerd en de optie om onderliggende pagina&#39;s weer te geven niet wordt weergegeven.
+De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet. Een voorbeeld hiervan zou zijn wanneer een sjabloonauteur de Core Component configureert [list, component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) in de [sjablooneditor](/help/sites-cloud/authoring/sites-console/templates.md) en besluit de opties uit te schakelen om de lijst op onderliggende pagina&#39;s samen te stellen. Als u deze optie in het ontwerpdialoogvenster uitschakelt, wordt een eigenschap zo ingesteld dat wanneer de component List wordt gerenderd, de voorwaarde hide wordt geëvalueerd en de optie om onderliggende pagina&#39;s weer te geven niet wordt weergegeven.
 
 ## Overzicht {#overview}
 
@@ -51,7 +51,7 @@ Houd rekening met het volgende wanneer u de expressie hide definieert:
 
 Voorbeelden van huidenomstandigheden zijn te vinden in AEM en de [kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in het bijzonder. Neem bijvoorbeeld de [lijstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) zoals die in de [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-[De sjablooneditor gebruiken](/help/sites-cloud/authoring/features/templates.md)kan de sjabloonauteur in het ontwerpdialoogvenster definiëren welke opties van de lijstcomponent beschikbaar zijn voor de auteur van de pagina. U kunt bijvoorbeeld instellen of de lijst een statische lijst moet zijn, een lijst met onderliggende pagina&#39;s, een lijst met gecodeerde pagina&#39;s enzovoort in- of uitschakelen.
+[De sjablooneditor gebruiken](/help/sites-cloud/authoring/sites-console/templates.md)kan de sjabloonauteur in het ontwerpdialoogvenster definiëren welke opties van de lijstcomponent beschikbaar zijn voor de auteur van de pagina. U kunt bijvoorbeeld instellen of de lijst een statische lijst moet zijn, een lijst met onderliggende pagina&#39;s, een lijst met gecodeerde pagina&#39;s enzovoort in- of uitschakelen.
 
 Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit te schakelen, wordt een ontwerpeigenschap ingesteld en wordt een voorwaarde voor verbergen aan de hand hiervan geëvalueerd. Hierdoor wordt de optie niet gerenderd voor de auteur van de pagina.
 

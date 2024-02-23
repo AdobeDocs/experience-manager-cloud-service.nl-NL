@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release 2020.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 1%
+source-wordcount: '1025'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor Experie
 
 ### Nieuwe functies in [!DNL Sites] {#what-is-new-sites}
 
-* Vermogen [pagina&#39;s en subpagina&#39;s (paginastructuren) herstellen naar een eerdere versie](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
+* Vermogen [pagina&#39;s en subpagina&#39;s (paginastructuren) herstellen naar een eerdere versie](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
 * Vermogen [Starten maken](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
 
@@ -118,7 +118,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] Versie 202.8.0 is 6 augustus 202
 
 * Om de stap van de Controle van de Inhoud te activeren, moeten de gebruikers de pijpleiding uitgeven en, naar keuze, pagina&#39;s toevoegen. Als er geen pagina&#39;s worden toegevoegd, wordt de startpagina gecontroleerd.
 
-## De tool Content Transfer {#content-transfer-tool}
+## Inhoud overbrengen {#content-transfer-tool}
 
 Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het Hulpmiddel van de Overdracht van de Inhoud v1.0.4.
 
@@ -132,7 +132,7 @@ Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het
 
 * De gebruikersinterface van eerdere versies toonde soms een geslaagde extractie, ook al toonde het logboek fouten.
 
-## Tools voor herstructurering van code {#code-refactoring-tools}
+## Gereedschappen voor het verfijnen van code {#code-refactoring-tools}
 
 Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen van het Refactoring van de Code is.
 

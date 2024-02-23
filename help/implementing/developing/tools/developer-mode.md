@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Modus voor ontwikkelaars {#developer-mode}
 
-Bij het bewerken van pagina&#39;s in AEM, diverse [modi](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) zijn beschikbaar, inclusief de modus Ontwikkelaar. In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar technische informatie over de huidige pagina bieden.
+Bij het bewerken van pagina&#39;s in AEM, diverse [modi](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) zijn beschikbaar, inclusief de modus Ontwikkelaar. In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar technische informatie over de huidige pagina bieden.
 
 Er zijn twee tabbladen:
 
@@ -41,7 +41,7 @@ De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-edit
 
 Het deelvenster bestaat uit twee tabbladen:
 
-* **[Componenten](#components)** - Dit toont een componentenboom, gelijkend op [inhoudsstructuur](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) voor auteurs
+* **[Componenten](#components)** - Dit toont een componentenboom, gelijkend op [inhoudsstructuur](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) voor auteurs
 * **[Fouten](#errors)** - Als er problemen optreden, worden de details voor elke component weergegeven.
 
 ### Tabblad Componenten {#components}
@@ -55,7 +55,7 @@ Dit toont een componentenboom die:
 * Hiermee kunt u de structuur uitvouwen en specifieke componenten in de structuur selecteren. De selectie biedt toegang tot componentdetails, zoals:
    * Pad naar opslagplaats
    * Koppelingen naar scripts (geopend in CRXDE Lite)
-   * Componentdetails zoals weergegeven in het dialoogvenster [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md)
+   * Componentdetails zoals weergegeven in het dialoogvenster [Componentenconsole](/help/sites-cloud/authoring/components-console.md)
 * De componenten die in de boom worden geselecteerd worden vermeld door een blauwe grens in de redacteur.
 
 Op het tabblad Deze componenten kunt u:
@@ -76,7 +76,7 @@ Elk componentitem kan de volgende opties hebben:
 
 * **Script bewerken:** Een koppeling waarmee het componentscript in CRXDE Lite wordt geopend.
 
-* **Componentdetails weergeven:** Hiermee opent u de details van de component in het dialoogvenster [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md).
+* **Componentdetails weergeven:** Hiermee opent u de details van de component in het dialoogvenster [Componentenconsole](/help/sites-cloud/authoring/components-console.md).
 
 U kunt een componentitem uitbreiden door te tikken op het chevron of erop te klikken. U kunt ook het volgende weergeven:
 

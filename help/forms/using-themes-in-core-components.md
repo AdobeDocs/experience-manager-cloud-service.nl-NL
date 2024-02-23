@@ -3,7 +3,7 @@ title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
 description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '2564'
 ht-degree: 0%
@@ -415,7 +415,7 @@ Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals e
 
 ## See next
 
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
@@ -431,7 +431,7 @@ Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals e
 ## Zie ook {#see-also}
 
 {{see-also}}
-* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Formulierindeling instellen voor verschillende schermgrootten en apparaattypen](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Document met record genereren voor adaptieve Forms (kerncomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Een adaptieve Forms maken met herhalende secties](/help/forms/create-forms-repeatable-sections.md)
 * [Voorbeeldthemasjablonen en formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

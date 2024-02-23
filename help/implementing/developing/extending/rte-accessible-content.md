@@ -3,16 +3,16 @@ title: Vorm RTE om toegankelijke Web-pagina's en plaatsen tot stand te brengen.
 description: Leer Rich Text Editor te configureren om toegankelijke sites te maken in [!DNL Adobe Experience Manager].
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 1%
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
 # RTE configureren om toegankelijke sites te maken {#configure-rte-accessible-sites}
 
-[!DNL Adobe Experience Manager] biedt ondersteuning voor standaardtoegankelijkheidsfuncties, zoals alternatieve tekst voor afbeeldingen, en extra functies die kunnen worden gebruikt bij het maken van inhoud. Inhoudsauteurs gebruiken deze functies met componenten die de RTE (RTE) gebruiken. Tot de functies behoren het toevoegen van alternatieve tekst, structuurinformatie via koppen en alinea-elementen, enzovoort.
+[!DNL Adobe Experience Manager] biedt ondersteuning voor standaardtoegankelijkheidsfuncties, zoals alternatieve tekst voor afbeeldingen, en extra functies die kunnen worden geopend bij het maken van inhoud. Inhoudsauteurs gebruiken deze functies met componenten die de RTE (RTE) gebruiken. Tot de functies behoren het toevoegen van alternatieve tekst, structuurinformatie via koppen en alinea-elementen, enzovoort.
 
 Voor een begrip van typische configuraties van RTE, zie [RTE configureren](rich-text-editor.md) en [vormen stop-ins RTE voor specifieke functionaliteit](configure-rich-text-editor-plug-ins.md).
 
@@ -26,7 +26,7 @@ Voor de `Text` component in [!DNL Experience Manager]In de volgende schermafbeel
 
 ## De functies voor insteekmodules configureren {#configuring-the-plugin-features}
 
-Voor instructies om RTE te vormen, zie [vormen de Rich Text Editor](rich-text-editor.md) pagina. Het artikel heeft betrekking op:
+Voor instructies om RTE te vormen, zie [vormen de Rich Text Editor](rich-text-editor.md) pagina. Het artikel betreft:
 
 * [Plug-ins en bijbehorende functies](rich-text-editor.md#aboutplugins)
 * [Configuratielocaties](rich-text-editor.md#understand-the-configuration-paths-and-locations)
@@ -148,5 +148,4 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Een snelle gids voor WCAG-standaarden](/help/compliance/accessibility/quick-guide-wcag.md)
->* [Toegankelijke inhoud maken in Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-
+>* [Toegankelijke inhoud maken in Experience Manager](/help/sites-cloud/authoring/page-editor/accessible-content.md)

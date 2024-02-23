@@ -2,9 +2,9 @@
 title: Referentiehandleiding voor componenten
 description: Een naslaggids voor ontwikkelaars voor de details van componenten en hun structuur
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '3642'
+source-wordcount: '3481'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 * **Hoofdknooppunt**:
    * `<mycomponent> (cq:Component)` - Hiërarchieknooppunt van component.
 * **Vitale eigenschappen**:
-   * `jcr:title` - Component title; bijvoorbeeld gebruikt als label wanneer de component wordt vermeld in de [Browser voor componenten](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) en [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:title` - Component title; bijvoorbeeld gebruikt als label wanneer de component wordt vermeld in de [Browser voor componenten](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) en [Componentenconsole](/help/sites-cloud/authoring/components-console.md)
    * `jcr:description` - Beschrijving voor de component; wordt gebruikt als muis-over wenk in Browser van Componenten en de Console van Componenten
    * Zie de sectie [Pictogram Component](#component-icon) voor meer informatie
 * **Vital Child Nodes**:
@@ -141,7 +141,7 @@ Als geen van de bovenstaande eigenschappen (`cq:icon`, `abbreviation`, `cq:icon.
 
 Als u de overerving van pictogrammen van supercomponenten wilt annuleren, stelt u een lege `abbreviation` eigenschap op de component wordt teruggezet naar het standaardgedrag.
 
-De [Component Console](/help/sites-cloud/authoring/features/components-console.md#component-details) geeft weer hoe het pictogram voor een bepaalde component is gedefinieerd.
+De [Component Console](/help/sites-cloud/authoring/components-console.md#component-details) geeft weer hoe het pictogram voor een bepaalde component is gedefinieerd.
 
 #### Voorbeeld van SVG-pictogram {#svg-icon-example}
 
@@ -166,7 +166,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
 | Naam | Type | Beschrijving |
 |---|---|---|
 | `.` | `cq:Component` | Dit vertegenwoordigt de huidige component. Een component is van het knooppunttype `cq:Component`. |
-| `componentGroup` | `String` | Dit vertegenwoordigt de groep waaronder de component in [Browser voor componenten](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Een waarde die begint met `.` wordt gebruikt voor componenten die niet beschikbaar voor selectie van UI zoals basiscomponenten zijn waarvan andere componenten erven. |
+| `componentGroup` | `String` | Dit vertegenwoordigt de groep waaronder de component in [Browser voor componenten](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Een waarde die begint met `.` wordt gebruikt voor componenten die niet beschikbaar voor selectie van UI zoals basiscomponenten zijn waarvan andere componenten erven. |
 | `cq:isContainer` | `Boolean` | Dit geeft aan of de component een containercomponent is en daarom andere componenten zoals een alineasysteem kan bevatten. |
 | `cq:dialog` | `nt:unstructured` | Dit is de definitie van het dialoogvenster Bewerken voor de component. |
 | `cq:design_dialog` | `nt:unstructured` | Dit is de definitie van het ontwerpdialoogvenster voor de component. |
@@ -199,7 +199,7 @@ Onderliggende knooppunten die van bijzonder belang zijn, zijn onder meer:
 
 ### Dialoogvensters {#dialogs}
 
-Dialoogvensters zijn een belangrijk element van uw component omdat ze een interface bieden waarmee auteurs de component op een inhoudspagina kunnen configureren en invoer voor die component kunnen leveren. Zie de [ontwerpdocumentatie](/help/sites-cloud/authoring/fundamentals/editing-content.md) voor meer informatie over hoe de auteurs van de inhoud met componenten werken.
+Dialoogvensters zijn een belangrijk element van uw component omdat ze een interface bieden waarmee auteurs de component op een inhoudspagina kunnen configureren en invoer voor die component kunnen leveren. Zie de [ontwerpdocumentatie](/help/sites-cloud/authoring/page-editor/edit-content.md) voor meer informatie over hoe de auteurs van de inhoud met componenten werken.
 
 Afhankelijk van de complexiteit van de component heeft uw dialoogvenster mogelijk een of meer tabbladen nodig.
 
@@ -221,9 +221,9 @@ In het dialoogvenster worden de afzonderlijke velden gedefinieerd:
 
 ### Ontwerpdialoogvensters {#design-dialogs}
 
-De dialoogvensters van het ontwerp zijn gelijkaardig aan de dialogen die worden gebruikt om inhoud uit te geven en te vormen, maar zij verstrekken de interface voor malplaatjeauteurs om ontwerpdetails voor die component op een paginasjabloon pro-vormen en te verstrekken. Paginasjablonen worden vervolgens door de auteurs van de inhoud gebruikt om inhoudspagina&#39;s te maken. Zie de [sjabloondocumentatie](/help/sites-cloud/authoring/features/templates.md) voor meer informatie over hoe sjablonen worden gemaakt.
+De dialoogvensters van het ontwerp zijn gelijkaardig aan de dialogen die worden gebruikt om inhoud uit te geven en te vormen, maar zij verstrekken de interface voor malplaatjeauteurs om ontwerpdetails voor die component op een paginasjabloon pro-vormen en te verstrekken. Paginasjablonen worden vervolgens door de auteurs van de inhoud gebruikt om inhoudspagina&#39;s te maken. Zie de [sjabloondocumentatie](/help/sites-cloud/authoring/sites-console/templates.md) voor meer informatie over hoe sjablonen worden gemaakt.
 
-[Ontwerpdialoogvensters worden gebruikt bij het bewerken van een paginasjabloon](/help/sites-cloud/authoring/features/templates.md), hoewel ze niet voor alle componenten nodig zijn. Bijvoorbeeld de **Titel** en **Afbeeldingscomponenten** beide hebben ontwerpdialoogvensters, terwijl de **Component voor delen van sociale media** niet.
+[Ontwerpdialoogvensters worden gebruikt bij het bewerken van een paginasjabloon](/help/sites-cloud/authoring/sites-console/templates.md), hoewel ze niet voor alle componenten nodig zijn. Bijvoorbeeld de **Titel** en **Afbeeldingscomponenten** beide hebben ontwerpdialoogvensters, terwijl de **Component voor delen van sociale media** niet.
 
 ### Gebruikersinterface voor koralen en graniet {#coral-and-granite}
 
@@ -278,7 +278,7 @@ Nadat u een component hebt gecreeerd, moet u het toelaten om het te gebruiken. H
 
 Nadat een component is gedefinieerd, moet deze beschikbaar worden gesteld voor gebruik. Als u een component beschikbaar wilt maken voor gebruik in een sjabloon, moet u de component inschakelen in het beleid van de lay-outcontainer van de sjabloon.
 
-Zie de [sjabloondocumentatie](/help/sites-cloud/authoring/features/templates.md) voor meer informatie over hoe sjablonen worden gemaakt.
+Zie de [sjabloondocumentatie](/help/sites-cloud/authoring/sites-console/templates.md) voor meer informatie over hoe sjablonen worden gemaakt.
 
 ### Componenten en de inhoud die ze maken {#components-and-the-content-they-create}
 
@@ -469,7 +469,7 @@ U hoeft alleen maar een `README.md` in de componentstructuur.
 
 ![README.md in componentenstructuur](assets/components-documentation.png)
 
-Deze markering wordt dan weergegeven in het dialoogvenster [Component Console](/help/sites-cloud/authoring/features/components-console.md).
+Deze markering wordt dan weergegeven in het dialoogvenster [Component Console](/help/sites-cloud/authoring/components-console.md).
 
 ![README.md zichtbaar in de Componentenconsole](assets/components-documentation-console.png)
 

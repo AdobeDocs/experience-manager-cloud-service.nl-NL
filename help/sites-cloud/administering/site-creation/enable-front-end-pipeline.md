@@ -4,9 +4,9 @@ description: Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt to
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Het toelaten van uw plaats doet van de console van Plaatsen gebruikend [Sitemlek
 
 1. Meld u aan bij AEM en navigeer naar uw site via **Algemene navigatie** > **Sites**.
 1. Selecteer uw site in de console. Selecteer de hoofdmap van de site en geen onderliggende pagina&#39;s.
-1. Selecteer uw site en open het dialoogvenster [spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) links en kiest u **Site**.
+1. Selecteer uw site en open het dialoogvenster [spoorwegkiezer](/help/sites-cloud/authoring/basic-handling.md#rail-selector) links en kiest u **Site**.
 1. In de **Site** rails, klik op de knop **Vooruiteinde pijplijn inschakelen**.
 
    ![Pijpleiding aan de voorzijde inschakelen](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)

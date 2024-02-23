@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Gebruik AEM Forms Workflow om bedrijfsprocesworkflows te automatiseren en snel samen te stellen. Bijvoorbeeld, overzicht en goedkeuring, de Generatie van de PDF, de werkschema's van Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2348'
 ht-degree: 0%
@@ -197,7 +197,7 @@ U kunt een Forms-centric workflow starten of activeren door:
 
 ### Een toepassing verzenden vanuit AEM Postvak In {#inbox}
 
-De workflowtoepassing die u hebt gemaakt, is beschikbaar als een toepassing in Inbox. Gebruikers die lid zijn van [!DNL workflow-users] de groep kan de toepassing die de bijbehorende workflow activeert, vullen en verzenden. Voor informatie over het gebruiken van AEM Inbox om toepassingen voor te leggen en taken te beheren, zie [Forms-toepassingen en -taken beheren in AEM Postvak In](manage-applications-inbox.md).
+De workflowtoepassing die u hebt gemaakt, is beschikbaar als een toepassing in Inbox. Gebruikers die lid zijn van [!DNL workflow-users] de groep kan de toepassing die de bijbehorende workflow activeert, vullen en verzenden. Voor informatie over het gebruiken van AEM Inbox om toepassingen voor te leggen en taken te beheren, zie [Forms-toepassingen en -taken beheren in AEM Postvak In](manage-applications-/help/sites-cloud/authoring/inbox.md).
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 

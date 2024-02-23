@@ -3,16 +3,16 @@ title: Configureer de Rich Text Editor naar de auteur van inhoud in [!DNL Adobe 
 description: Rich Text Editor configureren voor het schrijven van inhoud in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # De Rich Text Editor configureren {#configure-the-rich-text-editor}
 
-De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring bij het bewerken van tekst. De beheerders vormen RTE om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Ontwerpen bekijken [gebruik RTE voor creatie](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) webinhoud.
+De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring bij het bewerken van tekst. De beheerders vormen RTE om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Ontwerpen bekijken [gebruik RTE voor creatie](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) webinhoud.
 
 De concepten en de stappen van RTE die worden vereist om het te vormen zijn hieronder vermeld.
 
@@ -24,13 +24,13 @@ De concepten en de stappen van RTE die worden vereist om het te vormen zijn hier
 
 ## Begrijp de gebruikersinterface beschikbaar aan auteurs {#understand-rte-ui}
 
-De interface van RTE biedt a aan [responsief ontwerp](/help/sites-cloud/authoring/features/responsive-layout.md) voor de ontwerpomgeving. De interface is ontworpen voor gebruik op touch- en desktopapparaten.
+De interface van RTE biedt a aan [responsief ontwerp](/help/sites-cloud/authoring/page-editor/responsive-layout.md) voor de ontwerpomgeving. De interface is ontworpen voor gebruik op touch- en desktopapparaten.
 
 ![Rich Text Editor, werkbalk](assets/rte-toolbar-full-screen-mode.png)
 
 *Afbeelding: De werkbalk van de Rich Text Editor met alle beschikbare opties ingeschakeld.*
 
-De werkbalk bevat de opties voor de WYSIWYG-ontwerpervaring. [!DNL Experience Manager] beheerders kunnen de opties vormen beschikbaar in de toolbar op de interface. Er is standaard een uitgebreide set bewerkingsopties beschikbaar in [!DNL Experience Manager]. Ontwikkelaars kunnen [!DNL Experience Manager] om meer bewerkingsopties toe te voegen.
+De werkbalk bevat de opties voor de WYSIWYG-ontwerpervaring. [!DNL Experience Manager] beheerders kunnen de opties vormen beschikbaar in de toolbar op de interface. Er is standaard een uitgebreide set bewerkingsopties beschikbaar in [!DNL Experience Manager]. Ontwikkelaars kunnen [!DNL Experience Manager] voor meer bewerkingsopties.
 
 ## Verschillende bewerkingsmodi {#editingmodes}
 
@@ -38,14 +38,14 @@ Auteurs kunnen tekstinhoud maken en bewerken in [!DNL Experience Manager] met be
 
 | Bewerkmodus | Bewerkingsgebied | Aanbevolen functies om te worden ingeschakeld |
 |--- |--- |--- |
-| Inline | Op locatie bewerken voor snelle, kleine bewerkingen; Opmaken zonder dialoogvenster te openen. | Minimale RTE-functies. |
+| Inline | Lokaal bewerken voor snelle, kleine bewerkingen; opmaken zonder een dialoogvenster te openen. | Minimale RTE-functies. |
 | RTE volledig scherm | Behandelt de gehele pagina. | Alle vereiste eigenschappen van RTE. |
 | Dialoog | Het dialoogvenster boven op de pagina-inhoud, maar beslaat niet de gehele pagina. | Schakel functies correct in. |
-| Dialoogvenster op volledig scherm | Hetzelfde als de modus Volledig scherm; bevat gebieden van de dialoog naast RTE. | Alle vereiste eigenschappen van RTE. |
+| Dialoogvenster op volledig scherm | Hetzelfde als de modus Volledig scherm; bevat velden van het dialoogvenster naast RTE. | Alle vereiste eigenschappen van RTE. |
 
 >[!NOTE]
 >
->De functie voor bronbewerking is niet beschikbaar in de inline bewerkingsmodus. U kunt afbeeldingen niet slepen in de modus Volledig scherm. Alle andere functies werken in alle modi.
+>De functie voor bronbewerking is niet beschikbaar in de inline bewerkingsmodus. U kunt afbeeldingen niet naar het volledige scherm slepen. Alle andere functies werken in alle modi.
 
 ### Inline bewerken {#inline-editing}
 
@@ -53,7 +53,7 @@ Als u de inhoud binnen een pagina wilt bewerken, opent u de inhoud met een langz
 
 ![Inline bewerken met de basisopties op de werkbalk](assets/inline-editing-mode-basic-options.png)
 
-*Afbeelding: Inline bewerken met de basisopties op de werkbalk.*
+*Afbeelding: Inline bewerken met basisopties op de werkbalk.*
 
 ### Volledig scherm bewerken {#full-screen-editing}
 
@@ -63,15 +63,15 @@ In de modus Volledig scherm van het dialoogvenster zijn, samen met een gedetaill
 
 ![De gedetailleerde RTE toolbar wanneer het uitgeven op volledig-schermwijze](assets/rte-toolbar-full-screen-mode.png)
 
-*Afbeelding: De gedetailleerde RTE toolbar wanneer het uitgeven op volledig-schermwijze.*
+*Afbeelding: De gedetailleerde RTE-werkbalk tijdens het bewerken in de modus Volledig scherm.*
 
-### Dialoogbewerkingen {#dialog-editing}
+### Dialoogvenster bewerken {#dialog-editing}
 
 Wanneer dubbelgeklikt wordt op een component, wordt een dialoogvenster geopend voor het bewerken van de inhoud. Het dialoogvenster wordt boven op de bestaande pagina geopend. In sommige specifieke scenario&#39;s, opent de dialoog als pop-up venster. Wanneer een tekstcomponent bijvoorbeeld deel uitmaakt van een kolom in een paginalay-out met meerdere kolommen en het gebied dat beschikbaar is voor het dialoogvenster kleiner is.
 
 ![Dialoogbewerkingsmodus](assets/dialog_editing_modetouchui.png)
 
-*Afbeelding: De bewerkingsmodus van het dialoogvenster.*
+*Afbeelding: Bewerkingsmodus van dialoogvenster.*
 
 ## Informatie over RTE-plug-ins en de bijbehorende functies {#aboutplugins}
 
@@ -94,17 +94,17 @@ In de volgende tabel worden de huidige plug-ins weergegeven:
 
 | Plug-in-id | functies | Beschrijving |
 |--- |--- |--- |
-| bewerken | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [De drie plakmodi knippen, kopiëren en plakken](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
+| bewerken | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [De drie plakmodi knippen, kopiëren en](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
 | findreplace | `find`, `replace` | Zoeken en vervangen. |
 | format | `bold`, `italic`, `underline` | [Basistekstopmaak](configure-rich-text-editor-plug-ins.md#textstyles). |
-| afbeelding | `image` | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
+| image | `image` | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Finder). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
 | toetsen | - | Zie voor het definiëren van deze waarde [tabgrootte](configure-rich-text-editor-plug-ins.md#tabsize). |
 | uitvullen | `justifyleft`, `justifycenter`, `justifyright` | Alinea-uitlijning. |
 | koppelingen | `modifylink`, `unlink`, `anchor` | [Hyperlinks en ankers](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | lijsten | `ordered`, `unordered`, `indent`, `outdent` | Deze insteekmodule bestuurt beide [inspringing en lijsten](configure-rich-text-editor-plug-ins.md#indentmargin); inclusief geneste lijsten. |
 | misverstanden | `specialchars`, `sourceedit` | Met diverse gereedschappen kunnen auteurs items invoeren [speciale tekens](configure-rich-text-editor-plug-ins.md#spchar) of bewerk de HTML-bron. U kunt ook een [bereik van speciale tekens](configure-rich-text-editor-plug-ins.md#definerangechar) als u uw eigen lijst wilt bepalen. |
-| Paraformat | `paraformat` | De standaardindelingen voor alinea&#39;s zijn Alinea, Kop 1, Kop 2 en Kop 3 (`<p>`, `<h1>`, `<h2>`, en `<h3>`). U kunt [meer alineaopmaak toevoegen](configure-rich-text-editor-plug-ins.md#paraformats) of breid de lijst uit. |
-| spellingcontrole | `checktext` | [Spellingcontrole taalbewust](configure-rich-text-editor-plug-ins.md#adddict). |
+| Paraformat | `paraformat` | De standaardindelingen voor alinea&#39;s zijn Alinea, Kop 1, Kop 2 en Kop 3 (`<p>`, `<h1>`, `<h2>`, en `<h3>`). U kunt [meer alinea-indelingen toevoegen](configure-rich-text-editor-plug-ins.md#paraformats) of breid de lijst uit. |
+| spelling | `checktext` | [Spellingcontrole taalbewust](configure-rich-text-editor-plug-ins.md#adddict). |
 | stijlen | `styles` | Ondersteuning voor opmaak met behulp van een CSS-klasse. [Nieuwe tekststijlen toevoegen](configure-rich-text-editor-plug-ins.md#textstyles) als u uw eigen reeks stijlen wilt toevoegen (of uitbreiden) voor gebruik met tekst. |
 | subsuperscript | `subscript`, `superscript` | Extensies voor de basisindelingen, subscript en superscript toevoegen. |
 | table | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | Zie [tabelstijlen configureren](configure-rich-text-editor-plug-ins.md#tablestyles) om uw eigen stijlen voor volledige tabellen of afzonderlijke cellen toe te voegen. |
@@ -121,7 +121,7 @@ De [wijze van het uitgeven van RTE en de interface](#editingmodes) die u voor uw
 * Inline-modus: `cq:editConfig/cq:inplaceEditing`.
 * Modus Volledig scherm: `cq:editConfig/cq:inplaceEditing`.
 * Dialoogvenstermodus: `cq:dialog`.
-* Dialoogmodus Volledig scherm: `cq:dialog`.
+* Modus Volledig scherm: `cq:dialog`.
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ De [wijze van het uitgeven van RTE en de interface](#editingmodes) die u voor uw
 >
 >* **Naam**: `configPath`
 >* **Type**: `String`
->* **Waarde**: pad van het knooppunt met de feitelijke configuratie
+>* **Waarde**: pad van het knooppunt met de werkelijke configuratie
 >
 >Noem niet de knoop van de configuratie RTE als `config`. Anders, worden de configuraties RTE van kracht voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
 
 Configureer de volgende eigenschappen die van toepassing zijn in de bewerkingsmodus van dialoogvenster:
 
-* `useFixedInlineToolbar`: U kunt de werkbalk RTE vast maken in plaats van zwevend. Stel deze Booleaanse eigenschap in die op de RTE-node is gedefinieerd met sling:resourceType= `cq/gui/components/authoring/dialog/richtext` tot `True`. Wanneer deze eigenschap is ingesteld op `True`, wordt de RTF-bewerking gestart op het tabblad `foundation-contentloaded` gebeurtenis. Als u dit wilt voorkomen, stelt u de eigenschap in `customStart` tot `True` en activeert de `rte-start` om RTE-bewerking te starten. Wanneer deze eigenschap `true`, begint RTE niet bij het klikken en dit is het standaardgedrag.
+* `useFixedInlineToolbar`: U kunt de RTE-werkbalk vast maken in plaats van zwevend. Stel deze Booleaanse eigenschap in die op de RTE-node is gedefinieerd met sling:resourceType= `cq/gui/components/authoring/dialog/richtext` tot `True`. Wanneer deze eigenschap is ingesteld op `True`, wordt de RTF-bewerking gestart op het tabblad `foundation-contentloaded` gebeurtenis. Als u dit wilt voorkomen, stelt u de eigenschap in `customStart` tot `True` en activeert de `rte-start` om RTE-bewerking te starten. Wanneer deze eigenschap `true`, begint RTE niet bij het klikken en dit is het standaardgedrag.
 
-* `customStart`: Stel deze Booleaanse eigenschap die is gedefinieerd op het RTE-knooppunt in op `True`, om te controleren wanneer om RTE te beginnen door de gebeurtenis in werking te stellen `rte-start`.
+* `customStart`: Stel deze Booleaanse eigenschap die op het RTE-knooppunt is gedefinieerd in op `True`, om te controleren wanneer om RTE te beginnen door de gebeurtenis in werking te stellen `rte-start`.
 
-* `rte-start`: Deze gebeurtenis activeren op het tabblad `contenteditable-div` van RTE, wanneer beginnen RTE uit te geven. Het werkt alleen als `customStart` is ingesteld op `true`.
+* `rte-start`: activeer deze gebeurtenis op de `contenteditable-div` van RTE, wanneer beginnen RTE uit te geven. Het werkt alleen als `customStart` is ingesteld op `true`.
 
 Wanneer RTE wordt gebruikt in de aanraking-toegelaten dialoog, plaats het bezit `useFixedInlineToolbar` tot `true` om problemen te voorkomen.
 
@@ -147,12 +147,12 @@ Wanneer RTE wordt gebruikt in de aanraking-toegelaten dialoog, plaats het bezit 
 
 De functionaliteit van RTE wordt beschikbaar gemaakt via een reeks stop-ins, elk met eigenschappen bezit. U kunt de eigenschap features configureren om de verschillende functies van elke insteekmodule in of uit te schakelen.
 
-Voor gedetailleerde configuraties van de stop-ins van RTE, zie [hoe te om de stop-ins van RTE te activeren en te vormen](configure-rich-text-editor-plug-ins.md).
+Voor gedetailleerde configuraties van de stop-ins van RTE, zie [hoe te om de stop van RTE te activeren en te vormen](configure-rich-text-editor-plug-ins.md).
 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-De [Tekstcomponent Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) laat malplaatjeredacteurs om vele stop-ins te vormen RTE gebruikend het gebruikersinterface als inhoudsbeleid, eliminerend de behoefte aan technische configuratie. Het inhoudsbeleid kan werken met RTE UI-configuraties zoals in dit document wordt beschreven. Zie voor meer informatie [paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md) en de [Documentatie voor ontwikkelaars van kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+De [Tekstcomponent Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) laat malplaatjeredacteurs om vele stop-ins te vormen RTE gebruikend het gebruikersinterface als inhoudsbeleid, eliminerend de behoefte aan technische configuratie. Het inhoudsbeleid kan werken met RTE UI-configuraties, zoals in dit document wordt beschreven. Zie voor meer informatie [paginasjablonen maken](/help/sites-cloud/authoring/sites-console/templates.md) en de [Documentatie voor ontwikkelaars van kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >Ter referentie kunt u de standaardtekstcomponenten (geleverd als onderdeel van een standaardinstallatie) vinden op:
 >
@@ -218,7 +218,7 @@ Het pop-upknooppunt onder de modus Inline of Volledig scherm bevat een lijst met
 
 ## RTE-gebruikersinterface-instellingen en inhoudsbeleid {#rtecontentpolicies}
 
-De beheerders kunnen de opties controleren RTE gebruikend inhoudsbeleid, zeggen in plaats van de configuratie zoals hierboven beschreven. In het inhoudsbeleid worden de ontwerpeigenschappen van een component gedefinieerd wanneer deze als onderdeel van een component worden gebruikt [bewerkbare sjabloon](/help/sites-cloud/authoring/features/templates.md). Als bijvoorbeeld een tekstcomponent die de RTE gebruikt wordt gebruikt met een bewerkbare sjabloon, kan het inhoudsbeleid definiëren dat de optie Vet beschikbaar is en zijn enkele opties voor alineaopmaak beschikbaar. Het inhoudsbeleid is herbruikbaar en kan op meerdere sjablonen worden toegepast.
+De beheerders kunnen de opties controleren RTE gebruikend inhoudsbeleid, zeggen in plaats van de configuratie zoals hierboven beschreven. In het inhoudsbeleid worden de ontwerpeigenschappen van een component gedefinieerd wanneer deze als onderdeel van een component worden gebruikt [bewerkbare sjabloon](/help/sites-cloud/authoring/sites-console/templates.md). Als bijvoorbeeld een tekstcomponent die de RTE gebruikt wordt gebruikt met een bewerkbare sjabloon, kan het inhoudsbeleid definiëren dat de optie Vet beschikbaar is en zijn enkele opties voor alineaopmaak beschikbaar. Het inhoudsbeleid is herbruikbaar en kan op meerdere sjablonen worden toegepast.
 
 De beschikbare opties in RTE stromen stroomafwaarts van de configuraties van het gebruikersinterface aan het inhoudsbeleid.
 
@@ -273,12 +273,12 @@ Hieronder ziet u een voorbeeldfragment voor het toewijzen van de opdracht `Bold`
 
 ## Tips en trucs {#best-practices-and-tips}
 
-* Voor een zwevend dialoogvenster schakelt u alleen de plug-ins zonder pop-updialoogvenster in. Plug-ins zonder pop-up zijn kleiner en zijn het meest geschikt voor een zwevend dialoogvenster.
+* Voor een zwevend dialoogvenster schakelt u alleen de plug-ins in zonder een pop-updialoogvenster. Plug-ins zonder pop-up zijn kleiner en zijn het meest geschikt voor een zwevend dialoogvenster.
 * De plug-ins met grotere pop-ups inschakelen, zoals de `Paste` alleen in de modus Volledig scherm of in de modus Volledig scherm. Plug-ins met een grote pop-up hebben meer ruimte in het scherm nodig voor een goede ontwerpervaring.
 * Als u aangepaste plug-ins voor CoralUI3 RTE gebruikt, gebruikt u `rte.coralui3` bibliotheek.
 
 >[!MORELIKETHIS]
 >
 >* [RTE-plug-ins configureren](configure-rich-text-editor-plug-ins.md)
->* [Rich Text Editor gebruiken voor ontwerpen](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [Rich Text Editor gebruiken voor ontwerpen](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
 >* [RTE voor toegankelijke sites configureren](rte-accessible-content.md)

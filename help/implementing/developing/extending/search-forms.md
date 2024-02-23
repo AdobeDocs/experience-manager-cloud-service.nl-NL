@@ -1,17 +1,17 @@
 ---
-title: Zoekformulieren configureren
+title: Zoeken in Forms configureren
 description: Zoeken in Forms voor Adobe Experience Manager as a Cloud Service configureren.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 2%
+source-wordcount: '2036'
+ht-degree: 1%
 
 ---
 
-# Zoekformulieren configureren {#configuring-search-forms}
+# Zoeken in Forms configureren {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service is uitgerust met een krachtig [Zoeken](/help/sites-cloud/authoring/getting-started/search.md) mechanisme.
+Adobe Experience Manager as a Cloud Service is uitgerust met een krachtig [Zoeken](/help/sites-cloud/authoring/search.md) mechanisme.
 
 In combinatie hiermee is er ook een set vooraf gedefinieerde opties waarmee u de inhoud kunt filteren. Deze bevatten vooraf gedefinieerde facetten, zoals **Wijzigingsdatum**, **Status publiceren**, of **Status van bioscoop** om u te helpen snel tot de middelen doordringen u nodig hebt.
 
@@ -19,9 +19,9 @@ In combinatie hiermee is er ook een set vooraf gedefinieerde opties waarmee u de
 
 Samen helpen u om uw inhoud snel en gemakkelijk te vinden van:
 
-* [Zoeken en filteren](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [Spoorwegkiezer](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* de [Browser voor middelen](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (bij het bewerken van pagina&#39;s)
+* [Zoeken en filteren](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [Spoorwegkiezer](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* de [Browser voor middelen](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (bij het bewerken van pagina&#39;s)
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ De **Zoeken in Forms** een selectie buiten de box van [voorspellen](#predicates-
 
 * **Gereedschappen**
    * **Algemeen**
-      * **Zoeken in formulieren**
+      * **Zoeken in Forms**
 
 ## Standaard Forms {#default-forms}
 

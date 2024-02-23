@@ -2,10 +2,10 @@
 title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert de prestaties door sommige hulpbronintensieve taken als achtergrondbewerkingen asynchroon te voltooien.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 66%
+source-wordcount: '799'
+ht-degree: 65%
 
 ---
 
@@ -31,7 +31,7 @@ U kunt de status van asynchrone taken weergeven in het menu **[!UICONTROL Backgr
 
 ## De status van asynchrone bewerkingen controleren {#monitor-the-status-of-asynchronous-operations}
 
-Wanneer AEM een bewerking asynchroon verwerkt, ontvangt u een bericht in uw [inbox](/help/sites-cloud/authoring/getting-started/inbox.md) en via e-mail (mits ingeschakeld).
+Wanneer AEM een bewerking asynchroon verwerkt, ontvangt u een bericht in uw [inbox](/help/sites-cloud/authoring/inbox.md) en via e-mail (mits ingeschakeld).
 
 Navigeer naar de pagina **[!UICONTROL Background Operations]** om de status van de asynchrone bewerkingen in detail weer te geven.
 
@@ -136,6 +136,6 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 
 >[!MORELIKETHIS]
 >
->* [Pagina&#39;s maken en indelen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [Pagina&#39;s beheren](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Importeer/exporteer metadata van assets bulksgewijs](/help/assets/metadata-import-export.md).
 >* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).

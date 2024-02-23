@@ -4,7 +4,7 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '3960'
 ht-degree: 0%
@@ -196,7 +196,7 @@ De updates van het vertaalgeheugen kunnen worden onderschept en naar een douaneb
 
 Een bezit kan in de lijstmening van de plaatsenconsole worden geselecteerd die toont als een pagina is vertaald, in vertaling is, of nog niet is vertaald.
 
-1. Schakel in de siteconsole over naar [lijstweergave](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Schakel in de siteconsole over naar [lijstweergave](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Selecteren **Instellingen weergeven** in de weergave-vervolgkeuzelijst.
 1. Controleer in het dialoogvenster de **Vertaald** eigenschap en selecteer **Bijwerken**.
 
@@ -437,18 +437,18 @@ Wanneer de inhoud voor een bestaand taalexemplaar wordt vertaald, herzie de vert
 U kunt als volgt de taalkopieën vergelijken met de hoofdtaal:
 
 1. In de plaatsenconsole, navigeer aan het taalexemplaar u wilt vergelijken.
-1. Open de [Referenties spoorstaaf](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
+1. Open de [Referenties spoorstaaf](/help/sites-cloud/authoring/basic-handling.md#references).
 1. Onder de **Exemplaren** kop selecteren **Taalkopieën.**
 1. Selecteer uw specifieke taalkopie en klik op **Vergelijken met stramien** of **Vergelijken met vorige** indien van toepassing.
 
    ![Taalkopieën vergelijken](../assets/language-copy-compare.png)
 
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
-   * Zie voor meer informatie over het gebruik van deze functie [Pagina grijs](/help/sites-cloud/authoring/features/page-diff.md).
+   * Zie voor meer informatie over het gebruik van deze functie [Pagina grijs](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Een bronpagina verplaatsen of de naam ervan wijzigen {#move-source}
 
-Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, maakt u een taalkopie op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie blijft aanwezig.
+Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, maakt u een taalkopie op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie blijft aanwezig.
 
 De beste praktijk in dit scenario is deze procedure te volgen:
 

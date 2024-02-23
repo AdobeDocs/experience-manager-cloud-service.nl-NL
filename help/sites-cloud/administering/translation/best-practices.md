@@ -1,10 +1,10 @@
 ---
 title: Aanbevolen werkwijzen voor vertaling
-description: Leer over beste praktijken die door Adobe engineering en adviesteams worden samengesteld om u te helpen met vertaalprojecten aan de slag gaan.
+description: Leer over beste praktijken die door Adobe engineering en raadplegende teams worden samengesteld om u te helpen met vertaalprojecten op de proppen komen.
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 ## Algemeen {#general}
 
-Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een complex proces zijn, maar met goede voorspelling en goede planning kunnen AEM uw inspanningen vereenvoudigen en uw globale bedrijfsdoelstellingen ondersteunen.
+Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een complex proces zijn, maar met goede voorspelling en goede planning kunnen AEM uw inspanningen vereenvoudigen en uw wereldwijde bedrijfsdoelstellingen ondersteunen.
 
 * **Plan voor wereldwijde uitbreiding** voordat u uw eerste site implementeert. Het aanpassen van een bestaande site voor wereldwijde dekking op het moment dat de site op korte termijn werd geïmplementeerd, is doorgaans moeilijker dan aan het begin plannen voor wereldwijde uitbreiding:
    * Evalueer de huidige staat van de de localisatierijpheid van uw organisatie. Bepaal of u de **gereedschappen**, **processen** en **bronnen** ter ondersteuning van de mondiale expansie.
    * Wees op de hoogte van **mondiale regelgeving** en **Voorkeuren voor regionale talen**. Ontwerp flexibele inhoudsstructuren en processen die een veranderende globale bedrijfsomgeving kunnen aanpassen.
-* Een **bestuur** model dat uw globale zaken steunt en AEM mechanismen zoals MSM en gebruikerstoestemmingen gebruikt om uw gekozen model af te dwingen. Bepaal bijvoorbeeld of inhoud centraal is geschreven en naar regio&#39;s/landen wordt &quot;geduwd&quot; of &quot;getrokken&quot;. Bepaal welke inhoud in de geografische gebieden kan worden ontgrendeld en gewijzigd. Bepaal wie verantwoordelijk is voor het initiëren en beheren van vertalingen.
+* Bepaal een **bestuur** model dat uw globale zaken steunt en AEM mechanismen zoals MSM en gebruikerstoestemmingen gebruikt om uw gekozen model af te dwingen. Bepaal bijvoorbeeld of inhoud centraal is geschreven en naar regio&#39;s/landen wordt &quot;geduwd&quot; of &quot;getrokken&quot;. Bepaal welke inhoud in de geografische gebieden kan worden ontgrendeld en gewijzigd. Bepaal wie verantwoordelijk is voor het initiëren en beheren van vertalingen.
 * Als de middelen toestaan, is het best om vertaalactiviteit van een centraal team te beheren dat deskundigheid in de noodzakelijke hulpmiddelen, processen en verkopersverhoudingen kan ontwikkelen.
 * **Plan**, **prototype** en **test** uw globale structuur en processen om ervoor te zorgen dat zij het bedrijf steunen en dat u de vereiste steun van belanghebbenden in de aardrijkskunde hebt.
 
@@ -32,13 +32,13 @@ Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een comp
 
 * Wanneer u de sitestructuur ontwerpt, moet u eerst de inhoud bekijken en bepalen waar en in welke taal de inhoud is geschreven. Deze locatie moet het hoogste niveau van uw site zijn.
 * De beste praktijken zijn **taalstructuur** met niet meer dan drie niveaus tussen de hoogste auteur en landsites.
-* Een naamgevingsconventie voor taal/landsites gebruiken die volgt **[W3C-standaarden](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
+* Een naamgevingsconventie voor taal/landsites gebruiken die volgt **[W3C-standaarden](/help/sites-cloud/authoring/page-editor/accessible-content.md)**.
 * Bepaal hoe inhoud wordt verdeeld over regio&#39;s en landen. Bedenk welke landen talen delen. U wordt aangeraden om taalstramienen te maken, een laag van niet-geactiveerde pagina&#39;s, waarin vertaalde inhoud kan worden gecontroleerd en gewijzigd en vervolgens kan worden geduwd of naar een landsite met dezelfde taal kan worden gesleept.
-* Er zijn twee manieren om taalstramienen te maken: het gebruiken van taalexemplaren, en het gebruiken van MSM/levende exemplaren.
-   * De taalkopieerbenadering wordt gebruikt door AEM out-of-the-box vertaalintegratieframework, en daarom is het de eenvoudigste manier om aan de slag te gaan. Het framework biedt een gebruikersinterface waarmee u in eerste instantie gemakkelijk inhoudwijzigingen vanuit de hoofdtaal (bijvoorbeeld het Engels) master aan taalmeesters kunt doorgeven en vertalen. Naarmate het project groeit, wordt workflowautomatisering echter steeds noodzakelijker om de vertaling van het toegenomen aantal pagina&#39;s en/of talen te beheren.
-   * De MSM/levende exemplaarbenadering kan een alternatief voor geavanceerde gebruiksgevallen zijn, waar de plaatsen groter en complexer zijn. Sterk bestuur en automatisering van de workflow zijn van meet af aan nodig om de complexe overervingsrelaties tussen Engelse en taalmeesters aan te pakken en het risico van het overschrijven van bestaande vertalingen te verminderen. Deze behandeling kan met de hulp van sommige vertaalschakelaars worden verwezenlijkt. Zie [MSM en meertalige sites](/help/sites-cloud/administering/msm/best-practices.md#msm-and-multilingual-websites) voor meer informatie .
-* Als uw master taal globale variaties heeft, is een optie MSM te gebruiken om een levende kopie van algemeen master tot stand te brengen voor vertaling te gebruiken. Als bijvoorbeeld wereldwijd schrijven wordt uitgevoerd in een Amerikaans master Engels, maakt u een internationaal master Engels als een live kopie en als basis voor vertaling naar andere talen.
-* Gebruik MSM om landsites te maken van de vertaalde taalstramienen en om inhoud te implementeren voor sites die dezelfde taal delen. De master Franse taal kan bijvoorbeeld worden uitgerold naar de sites van Frankrijk, België en Zwitserland.
+* Er zijn twee manieren om taalmeesters te maken: het gebruiken van taalexemplaren, en het gebruiken van MSM/levende exemplaren.
+   * De taalkopieerbenadering wordt gebruikt door AEM out-of-the-box vertaalintegratieframework, en daarom is het de eenvoudigste manier om aan de slag te gaan. Het framework biedt een gebruikersinterface waarmee u in eerste instantie gemakkelijk inhoudwijzigingen van de hoofdtaal (bijvoorbeeld het Engels) kunt doorgeven en vertalen naar de hoofdtaal. Naarmate het project groeit, wordt workflowautomatisering echter steeds noodzakelijker om de vertaling van het toegenomen aantal pagina&#39;s en/of talen te beheren.
+   * De MSM/levende exemplaarbenadering kan een alternatief voor geavanceerde gebruiksgevallen zijn, waar de plaatsen groter en complexer zijn. Sterk bestuur en automatisering van de workflow zijn van meet af aan nodig om de complexe overervingsrelaties tussen Engelse en taalmeesters aan te pakken en om het risico van het overschrijven van bestaande vertalingen te verminderen. Deze behandeling kan met de hulp van sommige vertaalschakelaars worden verwezenlijkt. Zie [MSM en meertalige sites](/help/sites-cloud/administering/msm/best-practices.md#msm-and-multilingual-websites) voor meer informatie .
+* Als uw hoofdtaal globale variaties heeft, is een optie MSM te gebruiken om een levende kopie van het globale stramien tot stand te brengen voor vertaling. Als bijvoorbeeld wereldwijd schrijven wordt uitgevoerd in een Amerikaanse Engelse master, maakt u een internationale Engelse master als een live kopie en basis voor vertaling naar andere talen.
+* Gebruik MSM om landsites te maken van de vertaalde taalstramienen en om inhoud te implementeren voor sites die dezelfde taal delen. De Franse taalmaster kan bijvoorbeeld worden uitgerold naar sites in Frankrijk, België en Zwitserland.
 * Plan, prototype en test eerst, alvorens implementatie te beginnen.
 
 ## Vertaalprocessen en -methoden {#translation-processes-and-methods}

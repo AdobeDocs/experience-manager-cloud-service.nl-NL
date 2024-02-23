@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 3896dd657acdfc9feca1d3f624512dc23da084d4
 workflow-type: tm+mt
-source-wordcount: '4692'
+source-wordcount: '4713'
 ht-degree: 3%
 
 ---
@@ -264,42 +264,50 @@ ht-degree: 3%
 + Sites {#sites}
    + [Opvallende wijzigingen in AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
    + Authoring {#authoring}
-      + Aan de slag {#getting-started}
-         + [Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/getting-started/quick-start.md)
-         + [Concepten ontwerpen](/help/sites-cloud/authoring/getting-started/concepts.md)
-         + [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md)
-         + [Zoeken](/help/sites-cloud/authoring/getting-started/search.md)
-         + [Uw accountomgeving configureren](/help/sites-cloud/authoring/getting-started/account-environment.md)
-         + [Uw Postvak IN](/help/sites-cloud/authoring/getting-started/inbox.md)
-         + [Sneltoetsen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [Auteursreis zonder kopinhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
-      + Grondbeginselen van authoring {#fundamentals}
-         + [Omgeving en gereedschappen](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
-         + [Paginaannotaties toevoegen](/help/sites-cloud/authoring/fundamentals/annotations.md)
-         + [Een nieuwe site maken](/help/sites-cloud/authoring/fundamentals/create-site.md)
-         + [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-         + [Pagina-inhoud bewerken](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-         + [De Rich Text Editor](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
-         + [Pagina-eigenschappen](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-         + [Inhoud voorvertonen](/help/sites-cloud/authoring/fundamentals/previewing-content.md)
-         + [Pagina&#39;s publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
-         + [Inhoudsfragmenten](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-         + [Ervaar fragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
-         + [Exporteren naar CSV](/help/sites-cloud/authoring/fundamentals/csv-export.md)
-         + [Onderdelen](/help/sites-cloud/authoring/fundamentals/components.md)
-         + [Ontwerpen voor mobiele apparaten](/help/sites-cloud/authoring/fundamentals/mobile.md)
-         + [Toegankelijke inhoud maken (WCAG 2.1-compatibiliteit)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-         + [Problemen oplossen](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
-         + [Sneltoetsen](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-      + Functies voor authoring {#features}
-         + [Paginasjablonen](/help/sites-cloud/authoring/features/templates.md)
-         + [Stijlsysteem](/help/sites-cloud/authoring/features/style-system.md)
-         + [Paginaversies](/help/sites-cloud/authoring/features/page-versions.md)
-         + [Pagina grijs](/help/sites-cloud/authoring/features/page-diff.md)
-         + [Componentenconsole](/help/sites-cloud/authoring/features/components-console.md)
-         + [Responsieve lay-out](/help/sites-cloud/authoring/features/responsive-layout.md)
-         + [Tags gebruiken](/help/sites-cloud/authoring/features/tags.md)
-         + [Progressieve webtoepassingsfuncties inschakelen](/help/sites-cloud/authoring/features/enable-pwa.md)
+      + [Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/quick-start.md)
+      + [Basisverwerking](/help/sites-cloud/authoring/basic-handling.md)
+      + [Authoring en publicatie](/help/sites-cloud/authoring/author-publish.md)
+      + [Ontwerpmethoden](/help/sites-cloud/authoring/authoring-methods.md)
+      + [Zoeken](/help/sites-cloud/authoring/search.md)
+      + [Uw accountomgeving configureren](/help/sites-cloud/authoring/account-environment.md)
+      + [Uw Postvak IN](/help/sites-cloud/authoring/inbox.md)
+      + [Componentenconsole](/help/sites-cloud/authoring/components-console.md)
+      + [Padselectie](/help/sites-cloud/authoring/path-selection.md)
+      + [Problemen oplossen](/help/sites-cloud/authoring/troubleshooting.md)
+      + Sites-console {#sites-console}
+         + [De siteconsole](/help/sites-cloud/authoring/sites-console/introduction.md)
+         + [Zijpaneel console](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+         + [Een nieuwe site maken](/help/sites-cloud/authoring/sites-console/create-site.md)
+         + [Pagina&#39;s ordenen](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+         + [Pagina&#39;s maken](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+         + [Pagina&#39;s beheren](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+         + [Pagina-eigenschappen](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [Pagina&#39;s voorvertonen](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+         + [Pagina&#39;s publiceren](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+         + [Paginasjablonen](/help/sites-cloud/authoring/sites-console/templates.md)
+         + [Paginaversies](/help/sites-cloud/authoring/sites-console/page-versions.md)
+         + [Pagina grijs](/help/sites-cloud/authoring/sites-console/page-diff.md)
+         + [Tags gebruiken](/help/sites-cloud/authoring/sites-console/tags.md)
+         + [Progressieve webtoepassingsfuncties inschakelen](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
+         + [Sneltoetsen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
+         + [Exporteren naar CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
+      + Pagina-editor {#page-editor}
+         + [De pagina-editor](/help/sites-cloud/authoring/page-editor/introduction.md)
+         + [Editor zijpaneel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
+         + [Pagina&#39;s bewerken](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [Paginaannotaties toevoegen](/help/sites-cloud/authoring/page-editor/annotations.md)
+         + [De Rich Text Editor](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
+         + [Responsieve lay-out](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+         + [Onderdelen](/help/sites-cloud/authoring/page-editor/components.md)
+         + [Ontwerpen voor mobiele apparaten](/help/sites-cloud/authoring/page-editor/mobile.md)
+         + [Toegankelijke inhoud maken (WCAG 2.1-compatibiliteit)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
+         + [Sneltoetsen](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
+         + [Stijlsysteem](/help/sites-cloud/authoring/page-editor/style-system.md)
+         + [Opnieuw Beperkingen ongedaan maken](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + Fragmenten {#fragments}
+         + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
+         + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+         + [Auteursreis zonder kopinhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + Projecten {#projects}
          + [Werken met projecten](/help/sites-cloud/authoring/projects/overview.md)
          + [Projecten beheren](/help/sites-cloud/authoring/projects/managing.md)
@@ -345,6 +353,7 @@ ht-degree: 3%
          + [Voorste pijplijn inschakelen](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Het Siterail gebruiken](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [Sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md)
+         + [Responsieve lay-out](/help/sites-cloud/administering/responsive-layout.md)
          + [Sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md)
          + Reis voor snel maken van site AEM {#quick-site}
             + [Begrijp AEM Snel site maken](/help/journey-sites/quick-site/overview.md)
@@ -998,6 +1007,7 @@ ht-degree: 3%
          + [Pagina grijs](/help/implementing/developing/introduction/page-diff.md)
          + [Editor-beperkingen](/help/implementing/developing/introduction/editor-limitations.md)
          + [Naamgevingsconventies](/help/implementing/developing/introduction/naming-conventions.md)
+         + [Responsief ontwerp](/help/implementing/developing/introduction/responsive-design.md)
          + Componenten en sjablonen {#components-templates}
             + [Overzicht van componenten](/help/implementing/developing/components/overview.md)
             + [Sjablonen](/help/implementing/developing/components/templates.md)

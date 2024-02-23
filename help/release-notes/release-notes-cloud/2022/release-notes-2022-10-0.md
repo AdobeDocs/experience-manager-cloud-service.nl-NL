@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2022.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Bekijk de video Overzicht van de release van oktober 2022 voor een overzicht van
 
 ### Nieuwe functies in [!DNL Sites] {#sites-features}
 
-* De [Tab voor aanpassen aan ervaringsfragmenten](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) staat segmentatiespecificatiemogelijkheden aan de Redacteur van het Fragment van de Ervaring en de flexibiliteit toe om genestelde Fragmenten van de Ervaring tot stand te brengen waardoor de veranderingen van kopballen en footers voor veelvoudige segmenten kunnen worden gecreeerd. Vóór de lancering van deze eigenschap, personalisatie die door AEM wordt aangeboden is slechts beschikbaar voor plaatspagina&#39;s, maar niet voor de Fragments van de Ervaring
+* De [Tab voor aanpassen aan ervaringsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) staat segmentatiespecificatiemogelijkheden aan de Redacteur van het Fragment van de Ervaring en de flexibiliteit toe om genestelde Fragmenten van de Ervaring tot stand te brengen waardoor de veranderingen van kopballen en footers voor veelvoudige segmenten kunnen worden gecreeerd. Vóór de lancering van deze eigenschap, personalisatie die door AEM wordt aangeboden is slechts beschikbaar voor plaatspagina&#39;s, maar niet voor de Fragments van de Ervaring
 
 * De [Console voor inhoudsfragment](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) gebruikers kunnen nu op efficiënte wijze vertaalde inhoudsfragmenten beheren. Er is 1-klik toegang beschikbaar om ook alle taalkopieën weer te geven. Gebruikers kunnen de tabelweergave ook filteren op de landinstelling van hun interesse.
 

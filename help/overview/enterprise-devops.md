@@ -2,10 +2,10 @@
 title: Enterprise DevOps
 description: Leer over de processen, de methodes, en de mededeling die worden vereist om plaatsing te verlichten en samenwerking te vereenvoudigen.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 48%
+ht-degree: 46%
 
 ---
 
@@ -66,7 +66,7 @@ De testomgeving moet een spiegel zijn van de productieomgeving - configuratie, c
 
 ### Productie - Auteur en Publicatie {#production-author-and-publish}
 
-De productieomgeving bestaat uit de omgevingen die [auteur en publicatie](/help/sites-cloud/authoring/getting-started/concepts.md) uw implementatie.
+De productieomgeving bestaat uit de omgevingen die [auteur en publicatie](/help/sites-cloud/authoring/author-publish.md) uw implementatie.
 
 Een productieomgeving bestaat uit ten minste één auteurinstantie en één publicatie-instantie:
 
@@ -88,7 +88,7 @@ Content die is geactiveerd, wordt in een pakket geplaatst en naar de replicatiew
 
 Als u gegevens die in een publicatieomgeving zijn gegenereerd, wilt terugkeren naar de auteursomgeving, pollt een replicatielistener in de auteuromgeving de publicatieomgeving en haalt deze inhoud op uit de omgekeerde replicatieoutbox van de publicatieomgeving.
 
-#### Publicatie {#publish}
+#### Publiceren {#publish}
 
 Meestal bevindt een publicatie-omgeving zich in de DMZ (Demilitarisated Zone). In deze omgeving hebben bezoekers toegang tot uw inhoud (bijvoorbeeld via een website of in de vorm van een mobiele toepassing) en communiceren ze hiermee via het openbare programma of via uw intranet. Een publicatieomgeving:
 
@@ -113,11 +113,11 @@ Doorgaans wordt de code (bijvoorbeeld aangepaste functionaliteit van webtoepassi
 Projecten op AEM as a Cloud Service activeren vaak de implementatie van code:
 
 * Automatisch: voor overdracht naar de ontwikkelings- en kwaliteitscontroleomgevingen.
-* Handmatig: de implementatie in de staging- en productieomgevingen gebeurt op een meer beheerste en vaak handmatige manier; automatisering is echter mogelijk , indien nodig .
+* Handmatig: implementaties in de staging- en productieomgeving worden op een meer beheerste manier uitgevoerd, vaak handmatig; automatisering is echter mogelijk, indien nodig.
 
 ![Codeverplaatsing](assets/code-movement.png)
 
-## Content verplaatsen {#content-movement}
+## Inhoud verplaatsen {#content-movement}
 
 Content die is bedoeld voor productie, moet **altijd** worden geschreven op de productieauteurinstantie.
 
@@ -127,7 +127,7 @@ Productiecontent moet van de productieomgeving naar de stagingomgeving worden ve
 
 >[!NOTE]
 >
->Deze methode betekent niet dat de halteplaatsen voortdurend moeten worden gesynchroniseerd met de productie; regelmatige updates zijn voldoende , maar vooral voordat een nieuwe versie van code wordt getest . Inhoud in de QA- en ontwikkelomgevingen hoeft niet zo vaak te worden bijgewerkt. Het moet alleen een goede weergave zijn van de productie-inhoud.
+>Deze methode houdt niet in dat de staging-inhoud voortdurend moet worden gesynchroniseerd met de productie. Regelmatige updates zijn voldoende, maar vooral voordat een nieuwe codering wordt getest. Inhoud in de QA- en ontwikkelomgevingen hoeft niet zo vaak te worden bijgewerkt. Het moet alleen een goede weergave zijn van de productie-inhoud.
 
 Inhoud kan worden overgedragen:
 

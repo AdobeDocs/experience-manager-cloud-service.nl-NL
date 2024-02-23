@@ -2,7 +2,7 @@
 title: Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM
 description: Leer over de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -108,9 +108,9 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap het creëren van uw ei
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Concepten ontwerpen](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Concepten ontwerpen](/help/sites-cloud/authoring/author-publish.md)
 
-* [Basisverwerking](/help/sites-cloud/authoring/getting-started/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** -console, maar veel/de meeste functies zijn ook relevant voor het navigeren naar en het uitvoeren van actie op **Modellen van inhoudsfragmenten** onder de **Algemeen** console.
+* [Basisverwerking](/help/sites-cloud/authoring/basic-handling.md) - deze pagina is voornamelijk gebaseerd op de **Sites** -console, maar veel/de meeste functies zijn ook relevant voor het navigeren naar en het uitvoeren van actie op **Modellen van inhoudsfragmenten** onder de **Algemeen** console.
 
 * [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 

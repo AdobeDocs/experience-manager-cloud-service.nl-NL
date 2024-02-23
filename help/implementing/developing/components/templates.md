@@ -2,7 +2,7 @@
 title: Paginasjablonen
 description: Paginasjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '3267'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Wanneer u een pagina maakt, moet u een sjabloon selecteren. De paginasjabloon wordt gebruikt als basis voor de nieuwe pagina. De sjabloon definieert de structuur van de resulterende pagina, eventuele initiële inhoud en de componenten die kunnen worden gebruikt (ontwerpeigenschappen). Dit heeft verschillende voordelen:
 
-* Met paginasjablonen kunnen gespecialiseerde auteurs [sjablonen maken en bewerken](/help/sites-cloud/authoring/features/templates.md).
+* Met paginasjablonen kunnen gespecialiseerde auteurs [sjablonen maken en bewerken](/help/sites-cloud/authoring/sites-console/templates.md).
    * Dergelijke gespecialiseerde auteurs worden genoemd **sjabloonauteurs**
    * Sjabloonauteurs moeten lid zijn van de `template-authors` groep.
 * Paginasjablonen behouden een dynamische verbinding met alle pagina&#39;s die daaruit zijn gemaakt. Zo zorgt u ervoor dat wijzigingen in de sjabloon ook op de pagina&#39;s zelf worden doorgevoerd.
@@ -30,7 +30,7 @@ Dit document:
 
 >[!NOTE]
 >
->In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewerken van sjablonen. Zie het ontwerpdocument [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md), waarin de mogelijkheden van bewerkbare sjablonen worden beschreven zoals deze aan de sjabloonauteur worden getoond.
+>In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewerken van sjablonen. Zie het ontwerpdocument [Paginasjablonen maken](/help/sites-cloud/authoring/sites-console/templates.md), waarin de mogelijkheden van bewerkbare sjablonen worden beschreven zoals deze aan de sjabloonauteur worden getoond.
 
 >[!TIP]
 >
@@ -38,7 +38,7 @@ Dit document:
 
 ## Een nieuwe sjabloon maken {#creating-a-new-template}
 
-Het maken van paginasjablonen gebeurt vooral met de opdracht [sjabloonconsole en sjablooneditor](/help/sites-cloud/authoring/features/templates.md) door een sjabloonauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
+Het maken van paginasjablonen gebeurt vooral met de opdracht [sjabloonconsole en sjablooneditor](/help/sites-cloud/authoring/sites-console/templates.md) door een sjabloonauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
 
 Bij het maken van een bewerkbare sjabloon:
 
@@ -58,7 +58,7 @@ Bij het maken van een bewerkbare sjabloon:
    * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
    * Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u de initiële inhoud kunt definiëren.
 
-   Zie voor meer informatie over de manier waarop een sjabloonauteur de structuur definieert [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   Zie voor meer informatie over de manier waarop een sjabloonauteur de structuur definieert [Paginasjablonen maken](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    Voor technische details van de structuur, zie [Structuur](#structure) in dit document.
 
@@ -70,7 +70,7 @@ Bij het maken van een bewerkbare sjabloon:
 
    * Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-   Zie voor meer informatie over hoe een sjabloonauteur beleid definieert [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   Zie voor meer informatie over hoe een sjabloonauteur beleid definieert [Paginasjablonen maken](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    Voor technische details van het beleid raadpleegt u [Inhoudsbeleid](#content-policies) in dit document.
 
@@ -79,7 +79,7 @@ Bij het maken van een bewerkbare sjabloon:
    * Met Eerste inhoud wordt inhoud gedefinieerd die wordt weergegeven wanneer een pagina voor het eerst wordt gemaakt op basis van de sjabloon.
    * De initiële inhoud kan vervolgens worden bewerkt door auteurs van pagina&#39;s.
 
-   Zie voor meer informatie over de manier waarop een sjabloonauteur de structuur definieert [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
+   Zie voor meer informatie over de manier waarop een sjabloonauteur de structuur definieert [Paginasjablonen maken](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-initial-content-author).
 
    Voor technische details over de initiële inhoud raadpleegt u [Oorspronkelijke inhoud](#initial-content) in dit document.
 
@@ -88,7 +88,7 @@ Bij het maken van een bewerkbare sjabloon:
    * U kunt de sjabloonlay-out voor een reeks apparaten definiëren.
    * De responsieve indeling voor sjablonen werkt op dezelfde manier als voor het ontwerpen van pagina&#39;s.
 
-   Zie voor meer informatie over de manier waarop de sjabloonlay-out door de sjabloonauteur wordt gedefinieerd [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
+   Zie voor meer informatie over de manier waarop de sjabloonlay-out door de sjabloonauteur wordt gedefinieerd [Paginasjablonen maken](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author).
 
    Voor technische details over de indeling van de template raadpleegt u [Layout](#layout) in dit document.
 
@@ -97,7 +97,7 @@ Bij het maken van een bewerkbare sjabloon:
    * U kunt een sjabloon in- of uitschakelen om de sjabloon beschikbaar of niet beschikbaar te maken voor auteurs van pagina&#39;s.
    * Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
 
-   Voor details over hoe een malplaatjeauteur een malplaatje toelaat, zie [Paginasjablonen maken](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
+   Voor details over hoe een malplaatjeauteur een malplaatje toelaat, zie [Paginasjablonen maken](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author).
 
    Zie voor technische details over het inschakelen van een sjabloon [Een sjabloon voor ons inschakelen en toestaan](#enabling-and-allowing-a-template-for-use)e in dit document
 
@@ -106,7 +106,7 @@ Bij het maken van een bewerkbare sjabloon:
    * Wanneer u een sjabloon gebruikt om een pagina te maken, is er geen zichtbaar verschil en is er geen indicatie tussen statische en bewerkbare sjablonen.
    * Voor de auteur van de pagina is het proces transparant.
 
-   Zie voor meer informatie over hoe een auteur van een pagina sjablonen gebruikt om een pagina te maken [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
+   Zie voor meer informatie over hoe een auteur van een pagina sjablonen gebruikt om een pagina te maken [Pagina&#39;s maken en ordenen](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
 
    Voor technische details over het maken van pagina&#39;s met bewerkbare sjablonen raadpleegt u [Resulterende inhoudspagina&#39;s](#resultant-content-pages) in dit document.
 
@@ -355,7 +355,7 @@ When creating an editable template, the value is copied from the template type t
 
 Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, kunt u deze sjabloon kopiëren als een sjabloontype.
 
-1. Een sjabloon maken zoals een paginasjabloon [zoals hier beschreven](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), die als basis voor uw sjabloontype zal dienen.
+1. Een sjabloon maken zoals een paginasjabloon [zoals hier beschreven](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author), die als basis voor uw sjabloontype zal dienen.
 1. Kopieer de gemaakte sjabloon met CRXDE Lite uit de `templates` aan de `template-types` knooppunt onder [sjabloonmap](#template-folders).
 1. De sjabloon verwijderen uit het dialoogvenster `templates` knooppunt onder [sjabloonmap](#template-folders).
 1. In de kopie van de sjabloon die zich onder de `template-types` knooppunt, alles verwijderen `cq:template` en `cq:templateType` eigenschappen van alle `jcr:content` knooppunten.
@@ -453,7 +453,7 @@ Definieert de eerste inhoud die een nieuwe pagina krijgt wanneer deze wordt gema
 
 ### Layout {#layout}
 
-Wanneer [bewerken van een sjabloon die u kunt definiëren](/help/sites-cloud/authoring/features/templates.md)gebruikt [standaardresponsieve indeling](/help/sites-cloud/authoring/features/responsive-layout.md).
+Wanneer [bewerken van een sjabloon die u kunt definiëren](/help/sites-cloud/authoring/sites-console/templates.md)gebruikt [standaardresponsieve indeling](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -484,7 +484,7 @@ Met paginabeleid kunt u de [inhoudsbeleid](#content-policies) voor de pagina (be
 
    Voordat een sjabloon kan worden gebruikt, moet deze zijn ingeschakeld door:
 
-   * [De sjabloon inschakelen](/help/sites-cloud/authoring/features/templates.md) van de **Sjablonen** console.
+   * [De sjabloon inschakelen](/help/sites-cloud/authoring/sites-console/templates.md) van de **Sjablonen** console.
 
    * De statuseigenschap instellen op de knop `jcr:content` knooppunt.
 
@@ -499,7 +499,7 @@ Met paginabeleid kunt u de [inhoudsbeleid](#content-policies) voor de pagina (be
 
 1. **Toegestane sjablonen**
 
-   * [Definieer de toegestane sjabloonpaden op het tabblad **Pagina-eigenschappen**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) van de desbetreffende pagina of basispagina van een subvertakking.
+   * [Definieer de toegestane sjabloonpaden op het tabblad **Pagina-eigenschappen**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) van de desbetreffende pagina of basispagina van een subvertakking.
    * Stel de eigenschap in:
      `cq:allowedTemplates`
 Op de `jcr:content` knooppunt van de vereiste vertakking.

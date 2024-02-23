@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1924'
-ht-degree: 1%
+source-wordcount: '1897'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +80,7 @@ Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geacti
 
 ### Sneltoetsen in [!DNL Assets] {#keyboard-shortcuts}
 
-De volgende acties in [!DNL Assets] werken met de vermelde sneltoetsen. De meeste sneltoetsen die op [!DNL Experience Manager] Consoles gelden ook voor [!DNL Assets]. Zie [sneltoetsen voor consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Zie hoe te [de sneltoetsen in- of uitschakelen](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+De volgende acties in [!DNL Assets] werken met de vermelde sneltoetsen. De meeste sneltoetsen die op [!DNL Experience Manager] Consoles gelden ook voor [!DNL Assets]. Zie [sneltoetsen voor consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). Zie hoe te [de sneltoetsen in- of uitschakelen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | Gebruikersinterface of scenario | Sneltoets | Handeling |
 |---|---|---|
@@ -193,7 +193,7 @@ Bij het filteren van zoekresultaten:
 * Een schermlezer kondigt de opties in het zoekfilter aan als uitbreidbare accordeons.
 * Voorvertoningen met opties voor verschillende statussen worden door schermlezers aangekondigd.
 
-## Assets delen {#share-assets}
+## Elementen delen {#share-assets}
 
 <!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
@@ -220,15 +220,15 @@ Bij het delen van elementen verbeteren de volgende functies de toegankelijkheid:
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
 

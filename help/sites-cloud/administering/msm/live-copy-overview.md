@@ -4,7 +4,7 @@ description: Leer meer over de basisbeginselen van de overzichtsconsole van Live
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -32,8 +32,8 @@ U kunt het Live Copy-overzicht openen via het volgende:
 
 De **Overzicht van live kopiëren** kan worden geopend vanuit de **Verwijzingen** zijpaneel van **Sites** console:
 
-1. In de **Sites** console, [navigeer naar uw blauwdrukpagina en selecteer deze](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open de **[Verwijzingen](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** spoor en selecteer **Actieve kopieën**.
+1. In de **Sites** console, [navigeer naar uw blauwdrukpagina en selecteer deze](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open de **[Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references)** spoor en selecteer **Actieve kopieën**.
 
    ![Live kopie van referentiespoor](../assets/live-copy-references.png)
 

@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2342'
 ht-degree: 0%
 
 ---
 
 # Stijl AEM CIF kerncomponenten {#style-aem-cif-core-components}
 
-De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM Core-componenten worden gebruikt, zijn geordend. U maakt ook een stijl met CSS om de standaardstijl van het dialoogvenster **Productteam** component.
+De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM Core-componenten worden gebruikt, zijn geordend. U maakt ook een stijl met CSS om de standaardstijl van het dialoogvenster **Productteam** component.
 
 >[!TIP]
 >
@@ -180,9 +180,9 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de `u
 
    **clientlib-base** - Een lege clientbibliotheek waarmee eenvoudig de benodigde afhankelijkheden worden ingesloten vanuit [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). De categorie is `venia.base`.
 
-   **clientlib-cif** - Een lege clientbibliotheek waarmee eenvoudig de benodigde afhankelijkheden worden ingesloten vanuit [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). De categorie is `venia.cif`.
+   **clientlib-cif** - Een lege clientbibliotheek waarmee eenvoudig de benodigde afhankelijkheden worden ingesloten vanuit [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components). De categorie is `venia.cif`.
 
-   **clientlib-raster** - Bevat de CSS om AEM functie Responsief raster in te schakelen. Met het AEM schakelt u [Lay-outmodus](/help/sites-cloud/authoring/features/responsive-layout.md) in de AEM Editor en biedt de auteur van de inhoud de mogelijkheid om de grootte van componenten te wijzigen. De categorie is `venia.grid` en is ingesloten in de `venia.base` bibliotheek.
+   **clientlib-raster** - Bevat de CSS om AEM functie Responsief raster in te schakelen. Met het AEM schakelt u [Lay-outmodus](/help/sites-cloud/authoring/page-editor/responsive-layout.md) in de AEM Editor en biedt de auteur van de inhoud de mogelijkheid om de grootte van componenten te wijzigen. De categorie is `venia.grid` en is ingesloten in de `venia.base` bibliotheek.
 
 1. Inspect de bestanden `customheaderlibs.html` en `customfooterlibs.html` beneide `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
@@ -473,14 +473,14 @@ U hebt uw eerste AEM Core Component opgemaakt en u hebt een webpack Dev-server g
 
 ## Bonus Challenge {#bonus-challenge}
 
-Gebruik de [Systeem AEM](/help/sites-cloud/authoring/features/style-system.md) om twee stijlen te maken die door de auteur van de inhoud in- of uitgeschakeld kunnen worden. [Ontwikkelen met het Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) bevat gedetailleerde stappen en informatie over hoe u deze taak kunt uitvoeren.
+Gebruik de [Systeem AEM](/help/sites-cloud/authoring/page-editor/style-system.md) om twee stijlen te maken die door de auteur van de inhoud in- of uitgeschakeld kunnen worden. [Ontwikkelen met het Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) bevat gedetailleerde stappen en informatie over hoe u deze taak kunt uitvoeren.
 
 ![Bonus Challenge - Stijl Systeem](../assets/style-cif-component/bonus-challenge.png)
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)
-* [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
+* [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components)
 * [Een lokale AEM ontwikkelomgeving instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [Client-Side bibliotheken](/help/implementing/developing/introduction/clientlibs.md)
 * [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)

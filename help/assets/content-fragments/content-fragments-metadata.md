@@ -2,10 +2,10 @@
 title: Metagegevens - Fragmenteigenschappen (elementen - Inhoudsfragmenten)
 description: Zie hoe u de eigenschappen van metagegevens voor Content Fragments kunt weergeven en bewerken.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewer
    * **Titel**
    * **Beschrijving**
    * **Tags**
-      * [Tags](/help/sites-cloud/authoring/features/tags.md) bijzonder krachtig zijn wanneer het organiseren van uw fragmenten aangezien zij voor inhoudclassificatie en taxonomie kunnen worden gebruikt. Tags kunnen worden gebruikt om inhoud (door tags) te zoeken en om bewerkingen in bulk toe te passen.
+      * [Tags](/help/sites-cloud/authoring/sites-console/tags.md) bijzonder krachtig zijn wanneer het organiseren van uw fragmenten aangezien zij voor inhoudclassificatie en taxonomie kunnen worden gebruikt. Tags kunnen worden gebruikt om inhoud (door tags) te zoeken en om bewerkingen in bulk toe te passen.
 U kunt bijvoorbeeld relevante fragmenten labelen als &#39;kerstlancering&#39; om alleen deze fragmenten als een subset te kunnen doorbladeren, of om ze te kopiëren voor gebruik met een andere toekomstige start in een nieuwe map.
 
         >[!NOTE]
