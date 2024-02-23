@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
+source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3376'
 ht-degree: 0%
 
 ---
@@ -252,6 +252,7 @@ De `wafFlags` eigenschap, die kan worden gebruikt in de licentiebare WAF-regels 
 | GEBRUIKER | Gereedschap Bijsluiten | De Tooling van de aanval is het gebruik van geautomatiseerde software om veiligheidskwetsbaarheid te identificeren of te proberen om een ontdekte kwetsbaarheid te exploiteren. |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI-aanvallen proberen de [Log4Shell-kwetsbaarheid](https://en.wikipedia.org/wiki/Log4Shell) aanwezig in eerdere versies van Log4J dan 2.16.0 |
 | BHH | Onjuiste koppen | De slechte Kopballen van de Hop wijzen op een HTTP het smokkelen poging door of een misvormde overdracht-Codering (TE) of een inhoud-Lengte (CL) kopbal, of een goed gevormde TE en kopbal CL |
+| CODEINJECTIE | Code-injectie | De Injectie van de code is de poging om controle te verkrijgen of een doelsysteem door willekeurige bevelen van de toepassingscode door gebruikersinput te beschadigen. |
 | ABNORMALPATH | Abnormaal pad | Met Abnormal Path wordt aangegeven dat het oorspronkelijke pad afwijkt van het genormaliseerde pad (bijvoorbeeld `/foo/./bar` is genormaliseerd naar `/foo/bar`) |
 | DOUBLEENCODERING | Dubbele codering | De dubbele Codering controleert de ontduikingstechniek van het tweemaal coderen van HTML- karakters |
 | NOTUTF8 | Ongeldige codering | Ongeldige codering kan ertoe leiden dat de server schadelijke tekens van een verzoek in een reactie omzet, wat of een ontkenning van de dienst of XSS veroorzaakt |
