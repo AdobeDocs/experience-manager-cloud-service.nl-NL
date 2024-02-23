@@ -4,9 +4,9 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Go
 
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
-* Opstelling en kloon uw project van de Dienst van de Levering van de Rand (EDS). Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie. De lokale map van uw Edge Delivery Service-project (EDS) wordt weergegeven als `[EDS Project repository]` in dit document.
-* Klonen met [Forms Block-opslagplaats](https://github.com/adobe/afb). Het bevat de code die het formulier op een EDS-webpagina moet weergeven. De lokale map van de Forms Block-opslagplaats wordt weergegeven als `[Forms Block repository]` in dit document.
+* Opstelling en kloon uw project van de Dienst van de Levering van de Rand (EDS). Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie. In dit document wordt de lokale map van het EDS-project (Edge Delivery Service) `[EDS Project repository]` .
+* Klonen met [Forms Block-opslagplaats](https://github.com/adobe/afb). Het bevat de code die het formulier op een EDS-webpagina moet weergeven. In dit document wordt de lokale map van de Forms Block-opslagplaats aangeduid als `[Forms Block repository]` in dit document.
 * Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint.
 
 
@@ -42,7 +42,7 @@ AEM Forms Edge Delivery bevat een formulierblok waarmee u eenvoudig formulieren 
 
 1. Inchecken `form` omslag en onderliggende dossiers aan uw project van de Dienst van de Levering van de Rand op GitHub.
 
-   Het formulierblok wordt toegevoegd aan de EDS-projectopslagplaats op Github. Zorg ervoor dat de Github-build niet mislukt:
+   Het blok van de Vorm wordt toegevoegd aan uw EDS projectbewaarplaats op GitHub. Zorg ervoor dat de bouw GitHub niet ontbreekt:
 
    * Als er een fout optreedt &quot;Kan pad naar module &quot;&#39;../../scripts/lib-franklin.js&#39;&#39; niet omzetten, opent u het dialoogvenster `[EDS Project]/blocks/forms/form.js` bestand. Vervang in de importinstructie de opdracht `lib-franklin.js` met de `aem.js` bestand.
 

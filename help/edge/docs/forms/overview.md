@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,12 @@ Deze componeerbare service is losgekoppeld van de inhoudsbron en biedt de flexib
 
 ![Edge Delivery-gereedschappen voor het schrijven van formulieren](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Inhoudsmakers kunnen gereedschappen gebruiken waarmee ze vertrouwd zijn, zoals Microsoft Excel of Google Sheets (Document based authoring), JSON Editors of AEM Forms Adaptive Forms Editor voor WYSIWYG-bewerking (AEM Forms-projecten), om hun formulieren te ontwerpen en te maken.
+Inhoudsmakers kunnen gereedschappen gebruiken waarmee ze vertrouwd zijn, zoals Microsoft Excel of Google Sheets (Document based authoring), JSON-bestanden (Headless authoring) of AEM Forms Adaptive Forms editor (WYSIWYG authoring), om hun formulieren te ontwerpen en te maken.
 
 >[!NOTE]
 >
 >
-> WYSIWYG-bewerkingsfunctie en Cross Walk-ares zijn beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-early-adopter-program@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen.
+> WYSIWYG-ontwerpmogelijkheden zijn beschikbaar onder programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-early-adopter-program@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen.
 
 ## Beginnen met de basisbeginselen
 
@@ -67,13 +67,12 @@ Inhoudsmakers kunnen gereedschappen gebruiken waarmee ze vertrouwd zijn, zoals M
             <br><b style="margin-top: 5px;">Veldvalidaties toepassen</b>
         </a>
         <p>Verminder fouten en frustratie door de invoer van het formulier te controleren op een juiste opmaak.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Formulierfragmenten in een EDS-formulier gebruiken" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Formulierfragmenten maken</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Stijlen of thema&apos;s toepassen op een bewerkingsformulier" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Een thema aanpassen</b>
         </a>
-        <p>Vooraf geconfigureerde fragmenten opnieuw gebruiken in meerdere formulieren.</p>
+        <p>Maak een consistente merkafbeelding door hetzelfde thema toe te passen op verschillende formulieren.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -83,11 +82,11 @@ Inhoudsmakers kunnen gereedschappen gebruiken waarmee ze vertrouwd zijn, zoals M
         <p>Vergroot het bereik van uw formulieren en houd de kosten in de gaten.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Stijlen of thema&apos;s toepassen op een bewerkingsformulier" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Een thema aanpassen</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Formulierfragmenten in een EDS-formulier gebruiken" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Formulierfragmenten maken</b>
         </a>
-        <p>Maak een consistente merkafbeelding door hetzelfde thema toe te passen op verschillende formulieren.</p>
+        <p>Vooraf geconfigureerde fragmenten opnieuw gebruiken in meerdere formulieren.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
