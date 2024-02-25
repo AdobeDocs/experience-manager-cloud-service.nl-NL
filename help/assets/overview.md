@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '892'
 ht-degree: 1%
 
 ---
@@ -59,6 +59,10 @@ Voor informatie over hoe u toegang kunt krijgen tot de weergave Middelen en over
 Met Edge Delivery kunt u snel aantrekkelijke websites maken waar auteurs inhoud snel kunnen bijwerken en publiceren en nieuwe sites snel kunnen worden gestart.
 
 Integreer AEM Assets met op documenten gebaseerde authoring voor Edge Delivery Services zodat websiteauteurs afbeeldingen kunnen gebruiken die beschikbaar zijn in AEM Assets-opslagruimten tijdens het ontwerpen van documenten in Microsoft Word of Google Docs. Zie voor meer informatie [AEM Assets integreren met op documenten gebaseerde authoring](/help/edge/using.md#integrate-assets-edge).
+
+## Integratie met Adobe Journey Optimizer {#integration-with-ajo}
+
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) vereenvoudigt het reisbeheer voor klanten om omnichannel campagnes van intelligente besluitvorming en inzichten te voorzien. Wanneer u berichten ontwerpt met Journey Optimizer, hebt u rechtstreeks vanuit de Journey Optimizer-interface toegang tot de as a Cloud Service gegevensopslagruimte voor middelen. Gebruikers krijgen toegang tot elementen via de ingesloten gebruikersinterface van Experience Manager Assets. Zie voor meer informatie [Elementen maken en beheren met Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
 
 ## Nieuwe middelenmogelijkheden {#whats-new-assets}
 
