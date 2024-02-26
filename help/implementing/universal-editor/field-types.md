@@ -2,9 +2,9 @@
 title: Modeldefinities, velden en componenttypen
 description: In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
+source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
@@ -89,6 +89,23 @@ Een veldobject heeft de volgende typedefinitie.
 ### Componenttypen {#component-types}
 
 Hieronder vindt u de componenttypen die u kunt gebruiken voor het weergeven van velden.
+
+| Beschrijving | Componenttype |
+|---|---|
+| [AEM](#aem-tag) | `aem-tag` |
+| [Inhoud AEM](#aem-content) | `aem-content` |
+| [Boolean](#boolean) | `boolean` |
+| [Groep selectievakjes](#checkbox-group) | `checkbox-group` |
+| [Container](#container) | `container` |
+| [Datum en tijd](#date-time) | `date-time` |
+| [Multiselect](#multiselect) | `multiselect` |
+| [Getal](#number) | `number` |
+| [Groep keuzerondjes](#radio-group) | `radio-group` |
+| [Referentie](#reference) | `reference` |
+| [RTF](#rich-text) | `rich-text` |
+| [Selecteren](#select) | `select` |
+| [Tab](#tab) | `tab` |
+| [Tekst](#text) | `text` |
 
 #### AEM {#aem-tag}
 
@@ -624,6 +641,59 @@ Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject 
 
 >[!ENDTABS]
 
+#### RTF {#rich-text}
+
+RTF-tekst staat toe dat tekst met meerdere regels wordt ingevoerd. Er zijn aanvullende validatietypen.
+
+| Validatietype | Type waarde | Beschrijving | Vereist |
+|---|---|---|---|
+| `maxSize` | `number` | Maximum aantal toegestane tekens | Nee |
+| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `maxSize` is overschreden | Nee |
+
+>[!BEGINTABS]
+
+>[!TAB Voorbeeld 1]
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Voorbeeld 2]
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+>[!TAB Schermafbeelding]
+
+![Screenshot van het type tekstgebiedcomponent](assets/component-types/richtext.png)
+
+>[!ENDTABS]
+
 #### Selecteren {#select}
 
 Met een componenttype select kunt u één optie selecteren in een lijst met vooraf gedefinieerde opties in een vervolgkeuzemenu.
@@ -704,62 +774,9 @@ Als u items boven alle tabbladen wilt weergeven, moet u deze vóór alle tabblad
 
 >[!ENDTABS]
 
-#### Tekstgebied {#text-area}
+#### Tekst {#text}
 
-Een tekstgebied staat voor multi-lijn, rijke tekstinput toe. Er zijn aanvullende validatietypen.
-
-| Validatietype | Type waarde | Beschrijving | Vereist |
-|---|---|---|---|
-| `maxSize` | `number` | Maximum aantal toegestane tekens | Nee |
-| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `maxSize` is overschreden | Nee |
-
->[!BEGINTABS]
-
->[!TAB Voorbeeld 1]
-
-```json
-{
-  "id": "richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Voorbeeld 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
-    }
-  ]
-}
-```
-
->[!TAB Schermafbeelding]
-
-![Screenshot van het type tekstgebiedcomponent](assets/component-types/richtext.png)
-
->[!ENDTABS]
-
-#### Tekstinvoer {#text-input}
-
-Een tekstinvoer maakt het mogelijk om één regel tekst in te voeren.  Het bevat aanvullende validatietypen.
+Met tekst kunt u één regel tekst invoeren.  Het bevat aanvullende validatietypen.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -777,7 +794,7 @@ Een tekstinvoer maakt het mogelijk om één regel tekst in te voeren.  Het bevat
   "id": "simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string"
@@ -793,7 +810,7 @@ Een tekstinvoer maakt het mogelijk om één regel tekst in te voeren.  Het bevat
   "id": "another simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
@@ -812,6 +829,6 @@ Een tekstinvoer maakt het mogelijk om één regel tekst in te voeren.  Het bevat
 
 >[!TAB Schermafbeelding]
 
-![Screenshot van het type tekstinvoercomponent](assets/component-types/simpletext.png)
+![Schermafbeelding van type tekstcomponent](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
