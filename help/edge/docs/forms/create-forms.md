@@ -4,9 +4,9 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,15 @@ In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendel
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
+AEM Forms Edge Delivery biedt een formulierblok waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt het formulierblok opnemen in uw AEM EDS-project om een formulier te maken. Laten we beginnen:
+
 
 ## Vereisten
 
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
-* Opstelling en kloon uw project van de Dienst van de Levering van de Rand (EDS). Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie. In dit document wordt de lokale map van het EDS-project (Edge Delivery Service) `[EDS Project repository]` .
-* Klonen met [Forms Block-opslagplaats](https://github.com/adobe/afb). Het bevat de code die het formulier op een EDS-webpagina moet weergeven. In dit document wordt de lokale map van de Forms Block-opslagplaats aangeduid als `[Forms Block repository]` in dit document.
+* Stel Edge Delivery Service (EDS) Github-project in met AEM boilerplate en kloon de corresponderende Github-opslagplaats op uw lokale computer. Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie. In dit document wordt de lokale map van het EDS-project (Edge Delivery Service) `[EDS Project repository]` .
+* Klonen met [Forms Block-opslagplaats](https://github.com/adobe/afb) op uw lokale computer. Het bevat de code die het formulier op een EDS-webpagina moet weergeven. In dit document wordt de lokale map van de Forms Block-opslagplaats aangeduid als `[Forms Block repository]`.
 * Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint.
 
 
@@ -32,13 +34,11 @@ Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
 +++ Stap 1: Voeg het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand (EDS) toe.
 
-AEM Forms Edge Delivery bevat een formulierblok waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. Om het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand op te nemen:
+De `Form block` bevat de mogelijkheid om een formulier aan een EDS-site toe te voegen. Het blok is niet inbegrepen in een project dat gebruikend AEM boilerplate wordt gecreeerd. Om het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand op te nemen:
 
-1. Navigeren naar `[Forms Block repository]/blocks` en kopieer de `forms` map.
+1. Ga naar de `[Forms Block repository]/blocks` op uw lokale computer en kopieer de `form` map.
 
-1. Navigeren naar `[EDS Project repository]/blocks/` en plak de `forms` map.
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
+1. Ga naar de `[EDS Project repository]/blocks/` op uw lokale computer en plak de `form` map.
 
 1. Inchecken `form` omslag en onderliggende dossiers aan uw project van de Dienst van de Levering van de Rand op GitHub.
 

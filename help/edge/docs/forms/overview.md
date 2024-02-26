@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,14 @@ AEM Forms Edge Delivery Service is een composable service die door Adobe wordt a
 
 * **Formulieren samenstellen met perfecte vuurtorenscore**: Formulieren maken die snel kunnen worden geladen en gegenereerd, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.
 
-* **Auteurs en verzendingen vereenvoudigen**: Maak formulieren met vertrouwde gereedschappen zoals Microsoft Excel of Google Sheets in plaats van met de traditionele ontwerpomgevingen. Verzend formulieren rechtstreeks naar uw Microsoft Excel- of Google-werkbladen en gebruik hun ecosysteem om verzonden gegevens gemakkelijk te verwerken.
+* **Auteurs en verzendingen vereenvoudigen**: Gebruik ontwerpgereedschappen waarmee u vertrouwd bent, zoals Microsoft Excel of Google Sheets (Document-based authoring), JSON-bestanden (Headless authoring) of Adaptive Forms editor (WYSIWYG authoring) om formulieren te ontwerpen en te maken. De service is losgekoppeld van de inhoudsbron en biedt de flexibiliteit bij het maken van inhoud door u toe te staan de gewenste ontwerpgereedschappen te gebruiken.
 
+  ![Edge Delivery-gereedschappen voor het schrijven van formulieren](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Deze componeerbare service is losgekoppeld van de inhoudsbron en biedt de flexibiliteit bij het maken van inhoud door gebruikers toe te staan hun voorkeursontwerpgereedschappen te gebruiken.
-
-![Edge Delivery-gereedschappen voor het schrijven van formulieren](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-Inhoudsmakers kunnen gereedschappen gebruiken waarmee ze vertrouwd zijn, zoals Microsoft Excel of Google Sheets (Document based authoring), JSON-bestanden (Headless authoring) of AEM Forms Adaptive Forms editor (WYSIWYG authoring), om hun formulieren te ontwerpen en te maken.
-
->[!NOTE]
->
->
-> WYSIWYG-ontwerpmogelijkheden zijn beschikbaar onder programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-early-adopter-program@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen.
+  >[!NOTE]
+  >
+  >
+  > WYSIWYG-ontwerpmogelijkheden zijn beschikbaar onder programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-early-adopter-program@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen.
 
 ## Beginnen met de basisbeginselen
 
