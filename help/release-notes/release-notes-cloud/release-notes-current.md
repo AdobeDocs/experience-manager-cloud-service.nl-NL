@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e2c1d30c035fc1f664efbd15fee977f5488dc5f8
+source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 0%
@@ -26,7 +26,7 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2024.1.0) is 25 januari 2024. De volgende release met functies (2024.3.0) is gepland voor 28 maart 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2024.1.0) is 25 januari 2024. De volgende release met functies (2024.3.0) is gepland voor 4 april 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -103,7 +103,7 @@ Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebr
 
 ### Ondersteuning voor Dynatrace {#dynatrace}
 
-Dynatraciklanten kunnen hun AEM gebruiken controleren. [Lees hoe](/help/implementing/cloud-manager/dynatrace.md) om connectiviteit met uw milieu van de Accolade voor toepassingsprestatie controle te verzoeken. Merk op dat New Relic APM, dat voor alle klanten beschikbaar is, zal ophouden met het verzamelen van gegevens als Dynatrace wordt toegelaten.
+Dynatrace-klanten kunnen hun AEM controleren. [Lees hoe](/help/implementing/cloud-manager/dynatrace.md) om connectiviteit met uw milieu van de Accolade voor toepassingsprestatie controle te verzoeken. Houd er rekening mee dat New Relic APM, dat voor alle klanten beschikbaar is, geen gegevens meer zal verzamelen als Dynatrace is ingeschakeld.
 
 ### RDE-ondersteuning voor front-end code met behulp van sitemenu&#39;s en sitesjablonen: Vroege adopter-programma {#rde-frontend-early-adopter}
 
