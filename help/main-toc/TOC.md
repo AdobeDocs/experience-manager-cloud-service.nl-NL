@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3896dd657acdfc9feca1d3f624512dc23da084d4
+source-git-commit: b8d729ca384c4ebd7a74f2b6e7280bf6cff2e404
 workflow-type: tm+mt
-source-wordcount: '4713'
+source-wordcount: '4714'
 ht-degree: 3%
 
 ---
@@ -1158,3 +1158,4 @@ ht-degree: 3%
       + [Ontwikkeling van lokale AEM met de Universal Editor](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor-aanroepen](/help/implementing/universal-editor/calls.md)
       + [De universele editor aanpassen](/help/implementing/universal-editor/customizing.md)
+      + [Gebeurtenissen](/help/implementing/universal-editor/events.md)

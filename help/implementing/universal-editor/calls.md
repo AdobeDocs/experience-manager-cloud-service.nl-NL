@@ -2,9 +2,9 @@
 title: Universal Editor-aanroepen
 description: Leer over de verschillende soorten vraag die door de Universele Redacteur aan uw app wordt gemaakt om u te helpen wanneer het zuiveren.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ Voor de ontwikkelaar, echter, kan het begrip van deze vraag en wat zij doen waar
 * De **Payload** van de vraag bevat details van wat door de redacteur met inbegrip van het identificeren wordt bijgewerkt wat en hoe te om het bij te werken.
 * De **Antwoord** bevat details over wat precies door de redactedienst is bijgewerkt. Hiermee kunt u het vernieuwen van de inhoud in de editor vereenvoudigen. In bepaalde gevallen, zoals `move` vraag, moet de volledige pagina worden verfrist.
 
+Zodra een vraag met succes wordt voltooid, worden de gebeurtenissen teweeggebracht die de lading van het verzoek en van de reactie omvatten, die voor uw eigen app kan worden aangepast. Zie het document [Universal Editor-gebeurtenissen](/help/implementing/universal-editor/events.md) voor meer informatie .
+
 Hieronder volgt een lijst met de typen aanroepen die de Universal Editor naar uw app uitvoert, samen met voorbeeldladingen en reacties.
 
 ## Bijwerken {#update}
@@ -40,7 +42,9 @@ De nuttige lading omvat details van wat om aan JCR terug te schrijven.
 * `type`: Het JCR-waardetype van de eigenschap die wordt bijgewerkt
 * `value`: De bijgewerkte gegevens
 
-### Voorbeeld van nuttige lading {#update-payload}
+>[!BEGINTABS]
+
+>[!TAB Voorbeeld van nuttige lading]
 
 ```json
 {
@@ -60,7 +64,7 @@ De nuttige lading omvat details van wat om aan JCR terug te schrijven.
 }
 ```
 
-### Samplereactie {#update-response}
+>[!TAB Samplereactie]
 
 ```json
 {
@@ -74,6 +78,8 @@ De nuttige lading omvat details van wat om aan JCR terug te schrijven.
 }
 ```
 
+>[!ENDTABS]
+
 ## Details {#details}
 
 A `details` Er wordt aangeroepen wanneer u uw app in de Universal Editor laadt om de inhoud van de app op te halen.
@@ -83,7 +89,9 @@ Zijn nuttige lading omvat de gegevens die moeten worden teruggegeven evenals det
 * Voor een component haalt de Universal Editor alleen een `data` -object, aangezien het schema van de gegevens in de app is gedefinieerd.
 * Voor Inhoudsfragmenten haalt de Universal Editor ook een `schema` -object omdat het inhoudsfragmentmodel is gedefinieerd in de JCR.
 
-### Voorbeeld van nuttige lading {#details-payload}
+>[!BEGINTABS]
+
+>[!TAB Voorbeeld van nuttige lading]
 
 ```json
 {
@@ -102,7 +110,7 @@ Zijn nuttige lading omvat de gegevens die moeten worden teruggegeven evenals det
 }
 ```
 
-### Samplereactie {#details-response}
+>[!TAB Samplereactie]
 
 ```json
 {
@@ -134,6 +142,8 @@ Zijn nuttige lading omvat de gegevens die moeten worden teruggegeven evenals det
 }
 ```
 
+>[!ENDTABS]
+
 ## Toevoegen {#add}
 
 An `add` Er wordt aangeroepen wanneer u een nieuwe component in uw app plaatst met de Universal Editor.
@@ -142,7 +152,9 @@ De lading omvat een `path` -object dat de locatie bevat waar de inhoud moet word
 
 Het omvat tevens een `content` object met aanvullende objecten voor eindpuntspecifieke details van de inhoud die moet worden opgeslagen [voor elke insteekmodule.](/help/implementing/universal-editor/architecture.md) Als uw app bijvoorbeeld is gebaseerd op inhoud van AEM en Magento, bevat de payload voor elk systeem een gegevensobject.
 
-### Voorbeeld van nuttige lading {#add-payload}
+>[!BEGINTABS]
+
+>[!TAB Voorbeeld van nuttige lading]
 
 ```json
 {
@@ -174,7 +186,7 @@ Het omvat tevens een `content` object met aanvullende objecten voor eindpuntspec
 }
 ```
 
-### Samplereactie {#add-response}
+>[!TAB Samplereactie]
 
 ```json
 {
@@ -188,13 +200,17 @@ Het omvat tevens een `content` object met aanvullende objecten voor eindpuntspec
 }
 ```
 
+>[!ENDTABS]
+
 ## Verplaatsen {#move}
 
 A `move` Er wordt aangeroepen wanneer u een component in uw app verplaatst met de Universal Editor.
 
 De lading omvat een `from` object dat bepaalt waar de component zich bevond en een `to` object dat definieert waar het is verplaatst.
 
-### Voorbeeld van nuttige lading {#move-payload}
+>[!BEGINTABS]
+
+>[!TAB Voorbeeld van nuttige lading]
 
 ```json
 {
@@ -227,7 +243,7 @@ De lading omvat een `from` object dat bepaalt waar de component zich bevond en e
 }
 ```
 
-### Samplereactie {#move-response}
+>[!TAB Samplereactie]
 
 ```json
 {
@@ -240,13 +256,17 @@ De lading omvat een `from` object dat bepaalt waar de component zich bevond en e
 }
 ```
 
+>[!ENDTABS]
+
 ## Verwijderen {#remove}
 
 A `remove` Er treedt een aanroep op wanneer u een component in uw app verwijdert met de Universal Editor.
 
 De lading ervan bevat het pad van het object dat is verwijderd.
 
-### Voorbeeld van nuttige lading {#remove-payload}
+>[!BEGINTABS]
+
+>[!TAB Voorbeeld van nuttige lading]
 
 ```json
 {
@@ -272,7 +292,7 @@ De lading ervan bevat het pad van het object dat is verwijderd.
 }
 ```
 
-### Samplereactie {#remove-response}
+>[!TAB Samplereactie]
 
 ```json
 {
@@ -286,13 +306,17 @@ De lading ervan bevat het pad van het object dat is verwijderd.
 }
 ```
 
+>[!ENDTABS]
+
 ## Publiceren {#publish}
 
 A `publish` de vraag komt voor wanneer u klikt **Publiceren** in de Universal Editor om de inhoud te publiceren die u hebt bewerkt.
 
 De Universal Editor herhaalt de inhoud en genereert een lijst met verwijzingen die ook moeten worden gepubliceerd.
 
-### Voorbeeld van nuttige lading {#publish-payload}
+>[!BEGINTABS]
+
+>[!TAB Voorbeeld van nuttige lading]
 
 ```json
 {
@@ -332,7 +356,7 @@ De Universal Editor herhaalt de inhoud en genereert een lijst met verwijzingen d
 }
 ```
 
-### Samplereactie {#publish-response}
+>[!TAB Samplereactie]
 
 ```json
 {
@@ -355,3 +379,9 @@ De Universal Editor herhaalt de inhoud en genereert een lijst met verwijzingen d
   ]
 }
 ```
+
+>[!ENDTABS]
+
+## Aanvullende bronnen {#additional-resources}
+
+* [Universal Editor-gebeurtenissen](/help/implementing/universal-editor/events.md)
