@@ -4,9 +4,9 @@ description: Thema en stijl aanpassen voor een AEM Forms Edge Delivery Service-f
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Alle formuliervelden, met uitzondering van vervolgkeuzelijsten, groepen keuzeron
 * Invoer: De `input` element definieert het type gegevens dat moet worden ingevoerd. Bijvoorbeeld tekst, nummer, e-mail.
 * Beschrijving (optioneel): De `div` with, klasse `field-description` geeft aanvullende informatie of instructies voor de gebruiker.
 
-**Voorbeeld**
+**Voorbeeld van een HTML-structuur**
 
 ```HTML
 <div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
@@ -99,7 +99,7 @@ Alle formuliervelden, met uitzondering van vervolgkeuzelijsten, groepen keuzeron
 </div>
 ```
 
-#### CSS-kiezer voor algemene componenten
+**CSS-kiezer voor algemene componenten**
 
 ```CSS
 .form-{Type}-wrapper input {
@@ -121,7 +121,7 @@ Alle formuliervelden, met uitzondering van vervolgkeuzelijsten, groepen keuzeron
 * `.form-{Type}-wrapper`: Hiermee wordt de buitenzijde geactiveerd `div` element dat op het gebiedstype wordt gebaseerd. Bijvoorbeeld: `.form-text-wrapper` richt alle gebieden van de tekstinput.
 * `.form-{Name}`: Hiermee selecteert u het element verder op basis van de specifieke veldnaam. Bijvoorbeeld: `.form-first-name` wordt het tekstveld Voornaam gebruikt.
 
-**Voorbeeld:**
+**Voorbeeld-CSS-kiezers voor algemene componenten**
 
 ```CSS
 /*Target all text input fields */
@@ -159,7 +159,7 @@ Voor vervolgkeuzemenu&#39;s kunt u de opdracht `select` element wordt gebruikt i
 </div>
 ```
 
-**Voorbeeld**
+**Voorbeeld van HTML-structuur**
 
 ```HTML
     <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Voor vervolgkeuzemenu&#39;s kunt u de opdracht `select` element wordt gebruikt i
    </div>
 ```
 
-#### CSS-kiezers voor vervolgkeuzelijst
+#### Voorbeeld-CSS-kiezers voor vervolgkeuzelijst
 
 ```CSS
 /* Target the outer wrapper */
@@ -265,98 +265,95 @@ Net als vervolgkeuzecomponenten hebben groepen keuzerondjes en selectievakjes hu
 </div>
 ```
 
-#### CSS-kiezers voor groepen keuzerondjes en selectievakjes
+**Voorbeeld-CSS-kiezers voor groepen keuzerondjes en selectievakjes**
 
-**De buitenomsluiter als doel instellen**
-
-
-```CSS
-   /* Targets all radio group wrappers */
-.form-radio-group-wrapper {
-  margin-bottom: 20px; /* Adds space between radio groups */
-}
-
-/* Targets all checkbox group wrappers */
-.form-checkbox-group-wrapper {
-  margin-bottom: 20px; /* Adds space between checkbox groups */
-}
-```
-
-Deze kiezers richten zich op de buitenste containers van groepen keuzerondjes en selectievakjes, zodat u algemene stijlen kunt toepassen op de volledige groepsstructuur. Dit is handig voor het instellen van spatiëring, uitlijning of andere aan de layout gerelateerde eigenschappen.
-
-**Doelgroeplabels**
-
-```CSS
-.form-radio-group-wrapper .field-label,
-.form-checkbox-group-wrapper .field-label {
- font-weight: bold; /* Makes the group label bold */
-}
-```
-
-Deze kiezer richt zich op de `.field-label` element binnen zowel keuzerondjes als groepslappen voor selectievakjes. Hierdoor kunt u de labels specifiek voor deze groepen opmaken, waardoor deze beter opvallen.
-
-**Afzonderlijke invoer en labels als doel instellen**
-
-```CSS
-/* Styling radio buttons */
-.form-radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
-} 
-
-/* Styling radio button labels */
-.form-radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-
-/* Styling checkboxes */
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px;  /* Adds space between the input and its label */ 
-}
-
-/* Styling checkbox labels */
-.form-checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-```
-
-Deze kiezers bieden meer korrelige controle over afzonderlijke keuzerondjes, selectievakjes en de bijbehorende labels. U kunt deze stijlen gebruiken om het formaat, de spatiëring of de verschillende visuele stijlen aan te passen.
+* Doelstelling voor de buitenomsluitend omsluitend kader: deze kiezers richten zich op de buitenste containers van groepen keuzerondjes en selectievakjes, zodat u algemene stijlen kunt toepassen op de volledige groepsstructuur. Dit is handig voor het instellen van spatiëring, uitlijning of andere aan de layout gerelateerde eigenschappen.
 
 
-**De weergave van keuzerondjes en selectievakjes aanpassen**
-
-```CSS
-/* Hide the default radio button or checkbox */
-.form-radio-group-wrapper input[type="radio"],
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0; 
-  position: absolute; 
-}
-
-/* Create a custom radio button */
-.form-radio-group-wrapper input[type="radio"] + label::before { 
-  content: "";
-  display: inline-block;
-  width: 16px; 
-  height: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.form-radio-group-wrapper input[type="radio"]:checked + label::before {
-  background-color: #007bff; 
-}
-
-/* Create a custom checkbox */
-/* Similar styling as above, with adjustments for a square shape */
-```
-
-Deze techniek verbergt de standaardinvoer en gebruikt :before and :after pseudo-elementen om aangepaste visuele elementen te maken die de weergave wijzigen op basis van de &#39;ingeschakelde&#39; status.
+  ```CSS
+     /* Targets all radio group wrappers */
+  .form-radio-group-wrapper {
+    margin-bottom: 20px; /* Adds space between radio groups */
+  }
+  
+  /* Targets all checkbox group wrappers */
+  .form-checkbox-group-wrapper {
+    margin-bottom: 20px; /* Adds space between checkbox groups */
+  }
+  ```
 
 
-## Velden opmaken
+* Doelgroeplabels: deze kiezer richt zich op de `.field-label` element binnen zowel keuzerondjes als groepslappen voor selectievakjes. Hierdoor kunt u de labels specifiek voor deze groepen opmaken, waardoor deze beter opvallen.
 
-Naast de algemene opmaaktechnieken die eerder zijn beschreven, kunt u ook formuliervelden opmaken op basis van het specifieke type of de afzonderlijke namen. Hierdoor kunt u de weergave van het formulier korter beheren en aanpassen.
+  ```CSS
+  .form-radio-group-wrapper .field-label,
+  .form-checkbox-group-wrapper .field-label {
+   font-weight: bold; /* Makes the group label bold */
+  }
+  ```
+
+
+
+* Afzonderlijke invoer en labels als doel instellen: deze kiezers bieden meer korrelige controle over afzonderlijke keuzerondjes, selectievakjes en de bijbehorende labels. U kunt deze stijlen gebruiken om het formaat, de spatiëring of de verschillende visuele stijlen aan te passen.
+
+  ```CSS
+  /* Styling radio buttons */
+  .form-radio-group-wrapper input[type="radio"] {
+    margin-right: 5px; /* Adds space between the input and its   label */
+  } 
+  
+  /* Styling radio button labels */
+  .form-radio-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  
+  /* Styling checkboxes */
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    margin-right: 5px;  /* Adds space between the input and its  label */ 
+  }
+  
+  /* Styling checkbox labels */
+  .form-checkbox-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  ```
+
+
+
+
+* De weergave van keuzerondjes en selectievakjes aanpassen: hiermee wordt de standaardinvoer verborgen en wordt :before and :after pseudo-elementen gebruikt om aangepaste visuele elementen te maken die de weergave wijzigen op basis van de status &#39;checked&#39;.
+
+  ```CSS
+  /* Hide the default radio button or checkbox */
+  .form-radio-group-wrapper input[type="radio"],
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0; 
+    position: absolute; 
+  }
+  
+  /* Create a custom radio button */
+  .form-radio-group-wrapper input[type="radio"] + label::before { 
+    content: "";
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
+    background-color: #007bff; 
+  }
+  
+  /* Create a custom checkbox */
+  /* Similar styling as above, with adjustments for a square shape  */
+  ```
+
+
+## Stijlcomponenten
+
+U kunt ook formuliervelden opmaken op basis van het specifieke type of de afzonderlijke namen. Hierdoor kunt u de weergave van het formulier korter beheren en aanpassen.
 
 ### Stijlen op basis van veldtype
 
@@ -388,7 +385,7 @@ Met CSS-kiezers kunt u specifieke veldtypen als doel instellen en stijlen consis
 * De `data-required` geeft aan of het veld verplicht of optioneel is.
 * Elk veld heeft een overeenkomstig label, invoerelement en mogelijke aanvullende elementen, zoals plaatsaanduidingen en beschrijvingen.
 
-Bijvoorbeeld:
+**Voorbeeld-CSS-kiezers**
 
 ```CSS
 /* Target all text input fields */
@@ -403,7 +400,7 @@ Bijvoorbeeld:
 }
 ```
 
-### Stijlspecifieke veldtypen
+### Stijlen op basis van veldnaam
 
 U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe te passen.
 
@@ -416,7 +413,7 @@ U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe
 </div>
 ```
 
-**CSS-kiezer**
+**Voorbeeld-CSS-kiezer**
 
 ```CSS
 .form-otp input {
@@ -424,6 +421,6 @@ U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe
 }
 ```
 
-* Selector: deze CSS is gericht op alle invoerelementen die zich bevinden binnen een element dat de klasse heeft `form-otp`. De HTML-structuur volgt de conventies van het formulierblok. Dit betekent dat er een container is gemarkeerd met de klasse &quot;form-otp&quot; die het veld bevat met de naam &quot;otp&quot;.
+Deze CSS richt zich op alle inputelementen die binnen een element worden gevestigd dat de klasse heeft `form-otp`. De HTML-structuur van uw formulier volgt de conventies van het formulierblok. Dit houdt in dat er een container is gemarkeerd met de klasse &quot;form-otp&quot; die het veld bevat met de naam &quot;otp&quot;.
 
-* Eigenschap en waarde: de code past deze toe `letter-spacing: 2px`. Deze CSS-eigenschap bepaalt de afstand tussen afzonderlijke letters in de tekstinhoud van het invoerveld.
+
