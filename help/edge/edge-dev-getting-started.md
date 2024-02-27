@@ -2,7 +2,7 @@
 title: Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge Delivery Services
 description: Deze gids zal u met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoud creatie op de hoogte brengen
 feature: Edge Delivery Services
-source-git-commit: 224cfe9853e8974c33b0e53e961a02d54f875a35
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Nu u een project GitHub hebt, moet u een nieuwe AEM tot stand brengen plaats die
 
    ![Universele editor](assets/edge-dev-getting-started/universal-editor.png)
 
-U kunt uw site nu bewerken met de Universal Editor. Zie de [Universal Editor-documentatie](/help/implementing/universal-editor/authoring.md) voor meer informatie .
+U kunt uw site nu bewerken met de Universal Editor. Zie de [Universal Editor-documentatie](/help/sites-cloud/authoring/universal-editor/authoring.md) voor meer informatie .
 
 ### Uw nieuwe site publiceren {#publishing}
 

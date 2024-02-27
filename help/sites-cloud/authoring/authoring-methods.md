@@ -2,7 +2,7 @@
 title: Methoden voor het schrijven van inhoud in AEM
 description: Leer de verschillende manieren waarop u inhoud in AEM kunt ontwerpen en hoe deze verschillen.
 feature: Authoring
-source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Raadpleeg de documenten voor meer informatie over de AEM Content Fragment-editor
 
 >[!NOTE]
 >
->De *new* editor die in deze sectie is gemarkeerd, is alleen beschikbaar in de as a Cloud Service online Adobe Experience Manager (AEM).
+>De *new* editor die in deze sectie is gemarkeerd, is niet beschikbaar wanneer u lokaal ontwikkelt voor AEM as a Cloud Service.
 >
 >De [*origineel* Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-variations.md) is ook beschikbaar.
 
@@ -61,11 +61,11 @@ De Universele Redacteur is een moderne UI die u toestaat om AEM inhoud op een te
 
 De Universele Redacteur wordt betreden door de console van Plaatsen binnen AEM, maar biedt de macht en inhoud-agnostische flexibiliteit aan auteur niet alleen uw AEM inhoud, maar ook behoorlijk-instrumentated externe inhoud aan.
 
-Meer informatie over de Universal Editor vindt u in het document [Inhoud ontwerpen met de Universal Editor.](/help/implementing/universal-editor/authoring.md)
+Meer informatie over de Universal Editor vindt u in het document [Inhoud ontwerpen met de Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## Authoring op basis van documenten {#document-based}
 
-Als u Edge Delivery-services gebruikt, kunt u ervoor kiezen om uw inhoud als conventionele documenten zoals Microsoft Word of Google Docs geheel buiten AEM console te schrijven.
+Als u Edge Delivery-services gebruikt, kunt u ervoor kiezen om uw inhoud te ontwerpen als conventionele documenten zoals Microsoft Word of Google Docs die zich volledig buiten het [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Op documenten gebaseerde inhoud bewerken](assets/authoring-methods-document.jpg)
 

@@ -3,7 +3,7 @@ title: Inhoud ontwerpen voor Edge Delivery Services
 description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM inhoud ontwerpt met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Wanneer het gebruiken van Edge Delivery Services met AEM as a Cloud Service, is 
 
 1. [De AEM ontwerpomgeving](/help/sites-cloud/authoring/quick-start.md) wordt gebruikt voor inhoudsbeheer, zoals het maken van nieuwe pagina&#39;s, ervaringsfragmenten, inhoudsfragmenten, enz.
    * Alle functies van AEM zijn beschikbaar, zoals workflows, MSM, transleren, Starten, enz.
-1. [De Universal Editor](/help/implementing/universal-editor/authoring.md) wordt gebruikt aan auteur de inhoud die in AEM wordt beheerd.
+1. [De Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) wordt gebruikt aan auteur de inhoud die in AEM wordt beheerd.
    * De Universal Editor biedt een nieuwe en moderne UI voor het schrijven van inhoud.
    * Voor het ontwerpen, AEM geeft de HTML terug maar omvat de manuscripten, de stijlen, de pictogrammen en andere middelen van Edge Delivery Services.
    * Hoewel de Universal Editor wordt gebruikt, blijven alle wijzigingen AEM.
@@ -52,7 +52,7 @@ De details van de blokken kunnen dan in de spoorstaaf van Eigenschappen worden g
 
 ![Blokeigenschappen configureren](assets/block-properties.png)
 
-Zie het document voor meer informatie over hoe u de Universal Editor kunt gebruiken [Inhoud ontwerpen met de Universal Editor.](/help/implementing/universal-editor/authoring.md)
+Zie het document voor meer informatie over hoe u de Universal Editor kunt gebruiken [Inhoud ontwerpen met de Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 Zie de [Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge Delivery Services](/help/edge/edge-dev-getting-started.md) om te leren hoe u uw eigen project kunt starten voor auteur met AEM en Edge Delivery Services.
 

@@ -1,9 +1,9 @@
 ---
 title: Pagina's maken
 description: Leer hoe u nieuwe pagina's voor uw website maakt met de Sites-console.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0ba8faaa14d09d09fce5846bfff77287bfbd94c7
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Leer hoe u met de **Sites** console.
 
 Uw account heeft de juiste toegangsrechten en machtigingen nodig om pagina&#39;s te maken.
 
-Als u om het even welke problemen ontmoet wij adviseren u uw systeembeheerder contacteert.
+Neem contact op met de systeembeheerder als u problemen ondervindt.
 
 ## Een nieuwe pagina maken {#creating-a-new-page}
 
@@ -67,18 +67,22 @@ Tenzij alle pagina&#39;s van tevoren voor u zijn gemaakt, moet u een pagina make
 
    ![Paginatitel opgeven](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. Gebruiken **Maken** om het proces te voltooien en uw nieuwe pagina te maken. In het bevestigingsvenster wordt u gevraagd of u **Openen** de pagina direct of terug naar de console (**Gereed**):
+1. Tik of klik op **Maken** om het proces te voltooien en uw nieuwe pagina te maken. In het bevestigingsvenster wordt u gevraagd of u **Openen** de pagina direct of terug naar de console (**Gereed**). Selecteer een optie om het maken van de pagina te beëindigen.
 
    ![Maken van pagina voltooid](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   >[!NOTE]
-   >
-   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `beach` bestaat al, wordt een nieuwe pagina `beach1`.
+   * Als u **Openen** de **Sites** De console opent de aangewezen redacteur die op het malplaatje van de nieuwe pagina wordt gebaseerd, of:
+      * [De pagina-editor](/help/sites-cloud/authoring/page-editor/introduction.md)
+      * [De Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-1. Als u terugkeert naar de console kunt u uw nieuwe pagina zien:
+Als u terugkeert naar de console, kunt u uw nieuwe pagina zien:
 
-   ![Resulterende nieuwe pagina](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+![Resulterende nieuwe pagina](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+
+>[!NOTE]
+>
+>Als u een pagina maakt met een naam die al op dezelfde locatie bestaat, maakt AEM de pagina met een variatie in de opgegeven naam door een nummer toe te voegen. Als `beach` bestaat al. De nieuwe pagina wordt `beach1`.
 
 >[!CAUTION]
 >
->Nadat een pagina is gemaakt, kan de sjabloon ervan niet worden gewijzigd - tenzij u [een lancering met een nieuw malplaatje creëren](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), hoewel de bestaande inhoud hierdoor verloren zal gaan.
+>Nadat een pagina is gemaakt, kan de sjabloon ervan alleen worden gewijzigd als u [een lancering met een nieuw malplaatje creëren](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), hoewel de bestaande inhoud hierdoor verloren zal gaan.

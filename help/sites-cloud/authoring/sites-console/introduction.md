@@ -1,9 +1,9 @@
 ---
 title: De siteconsole
 description: Leer hoe u de Sites-console kunt gebruiken om uw AEM te beheren en in te delen.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1628'
 ht-degree: 3%
 
 ---
@@ -231,16 +231,18 @@ Wanneer een middel wordt geselecteerd, kunt u diverse acties op het geselecteerd
 
 De actietoolbar verschijnt slechts wanneer een middel in de console wordt geselecteerd. De actie beschikbaar in de actiestoolbar verandert om op de acties te wijzen u op de specifieke geselecteerde punten kunt nemen. De meest voorkomende acties zijn:
 
-* [Maken](#create-action) - Nieuwe handelingen maken die betrekking hebben op inhoud of inhoud
-* [Bewerken](/help/sites-cloud/authoring/page-editor/introduction.md) - De pagina bewerken
-* [Eigenschappen](/help/sites-cloud/authoring/sites-console/page-properties.md) - Hiermee opent u het venster met pagina-eigenschappen
-* [Vergrendelen](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Een pagina vergrendelen om te voorkomen dat anderen deze wijzigen
-* [Kopiëren](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Een pagina kopiëren
-* [Verplaatsen](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Een pagina verplaatsen of de naam ervan wijzigen
-* [Snel publiceren](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Een pagina of pagina&#39;s direct publiceren
-* [Publicatie beheren](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Een pagina of pagina&#39;s voor publicatie plannen
-* [Herstellen](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Een versie van een pagina of paginastructuur herstellen
-* [Verwijderen](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Een pagina of pagina&#39;s verwijderen
+* [**Maken**](#create-action) - Nieuwe handelingen maken die betrekking hebben op inhoud of inhoud
+* **Bewerken** - Afhankelijk van hoe de geselecteerde pagina is gemaakt, wordt **Bewerken** de actie zal de aangewezen redacteur openen.
+   * [Pagina-editor](/help/sites-cloud/authoring/page-editor/introduction.md) - Voor pagina&#39;s die zijn gemaakt met de AEM Pagina-editor
+   * [Universele editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Voor pagina&#39;s die zijn gemaakt met de Universal Editor
+* [**Eigenschappen**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Hiermee opent u het venster met pagina-eigenschappen
+* [**Vergrendelen**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Een pagina vergrendelen om te voorkomen dat anderen deze wijzigen
+* [**Kopiëren**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Een pagina kopiëren
+* [**Verplaatsen**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Een pagina verplaatsen of de naam ervan wijzigen
+* [**Snel publiceren**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Een pagina of pagina&#39;s direct publiceren
+* [**Publicatie beheren**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Een pagina of pagina&#39;s voor publicatie plannen
+* [**Herstellen**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Een versie van een pagina of paginastructuur herstellen
+* [**Verwijderen**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Een pagina of pagina&#39;s verwijderen
 
 Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Klikken of tikken op de ellips (de drie stippen of **...**) opent u een vervolgkeuzelijst met alle resterende handelingen.
 
@@ -248,13 +250,13 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 ### Handeling maken {#create-action}
 
-De handeling Maken biedt vergelijkbare opties als de knop voor het maken van werkbalken voor het maken van nieuwe pagina&#39;s en vergelijkbare items.
+De handeling Maken biedt vergelijkbare opties voor de [**Maken** werkbalkknop](#create-button) voor het maken van nieuwe pagina&#39;s en vergelijkbare items.
 
 Bovendien biedt het de mogelijkheid om paginagerelateerde acties te maken.
 
-* [Workflow](/help/sites-cloud/authoring/workflows/overview.md) - Een workflow toepassen op een pagina
-* [Versie](/help/sites-cloud/authoring/sites-console/page-versions.md) - Een versie van een pagina maken
+* [**Workflow**](/help/sites-cloud/authoring/workflows/overview.md) - Een workflow toepassen op een pagina
+* [**Versie**](/help/sites-cloud/authoring/sites-console/page-versions.md) - Een versie van een pagina maken
 
 ## Sjablonen
 
-U kunt gemakkelijk zien op welke sjabloon de pagina is gebaseerd wanneer u de pagina selecteert in de [kolomweergave](/help/sites-cloud/authoring/basic-handling.md#column-view) of de [lijstweergave](/help/sites-cloud/authoring/basic-handling.md#list-view).
+U kunt gemakkelijk zien op welke sjabloon de pagina is gebaseerd wanneer u de pagina selecteert in de [**kolomweergave**](/help/sites-cloud/authoring/basic-handling.md#column-view) of de [**lijstweergave**](/help/sites-cloud/authoring/basic-handling.md#list-view).

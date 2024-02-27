@@ -2,7 +2,7 @@
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
+source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 0%
@@ -200,15 +200,15 @@ Als u alleen bepaalde extensies wilt inschakelen voor een pagina, kunt u dit ins
 
 Uw app is nu van instrumenten voorzien om de Universal Editor te gebruiken.
 
-Zie [Inhoud ontwerpen met de Universal Editor](authoring.md) om te leren hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
+Zie [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) om te leren hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Zie deze documenten voor meer informatie over de Universal Editor.
 
 * [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken, zodat u uitzonderlijke ervaringen kunt opdoen, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
-* [Inhoud ontwerpen met de Universal Editor](authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
-* [Inhoud publiceren met de Universal Editor](publishing.md) - Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
+* [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
+* [Inhoud publiceren met de Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md) - Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.
 * [Universal Editor-verificatie](authentication.md) - Leer hoe de Universal Editor wordt geverifieerd.

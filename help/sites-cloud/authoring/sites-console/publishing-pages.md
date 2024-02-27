@@ -2,9 +2,9 @@
 title: Pagina's publiceren
 description: Leer hoe u uw pagina's op verschillende manieren in AEM publiceert en publiceert.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1936'
 ht-degree: 4%
 
 ---
@@ -39,8 +39,9 @@ Wanneer u met Adobe Experience Manager (AEM) as a Cloud Service werkt, kunnen er
 
 Afhankelijk van uw locatie kunt u publiceren:
 
-* [Vanuit de paginaeditor](#publishing-from-the-editor)
-* [Van de plaatsenconsole](#publishing-from-the-console)
+* [Vanuit de paginaeditor](#publishing-from-the-page-editor)
+* [Van de ](#publishing-from-the-sites-console)
+* [Van de universele editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ Afhankelijk van uw locatie kunt u publiceren:
 >
 > Zie voor meer mogelijkheden **Op tijd** en **Uit-tijd** in de [Het tabblad Standaard van Pagina-eigenschappen](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
-### Publiceren vanuit de Editor {#publishing-from-the-editor}
+### Publiceren vanuit de Pagina-editor {#publishing-from-the-page-editor}
 
-Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
+Als u een pagina bewerkt in het dialoogvenster [paginabewerker,](/help/sites-cloud/authoring/page-editor/introduction.md) het kan rechtstreeks vanuit de editor worden gepubliceerd .
 
 1. Selecteer de **Pagina-informatie** het pictogram om het menu te openen en dan **Pagina publiceren** -optie.
 
@@ -89,15 +90,15 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 
 >[!NOTE]
 >
->Publiceren vanuit de editor is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina(&#39;s) niet.
+>Publiceren vanuit de pagina-editor is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina(&#39;s) niet.
 
 >[!NOTE]
 >
 >Pagina&#39;s die worden benaderd door [aliassen](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) in de editor kan niet worden gepubliceerd. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
 
-### Publiceren vanuit de console {#publishing-from-the-console}
+### Publiceren vanuit de siteconsole {#publishing-from-the-sites-console}
 
-In de siteconsole zijn er twee opties voor publiceren:
+In de **Sites** console er zijn twee opties voor publiceren:
 
 * [Snel publiceren](#quick-publish)
 * [Publicatie beheren](#manage-publication)

@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5786283b75f28d594aea923a6d3490a9582a73a9
+source-git-commit: 87552743ef13d122864a676637138f72f87d8500
 workflow-type: tm+mt
 source-wordcount: '4721'
 ht-degree: 3%
@@ -305,6 +305,9 @@ ht-degree: 3%
          + [Sneltoetsen](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [Stijlsysteem](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [Opnieuw Beperkingen ongedaan maken](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + Universele editor {#universal-editor}
+         + [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [Inhoud publiceren met de Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -1028,6 +1031,18 @@ ht-degree: 3%
             + [Een aangepaste voorspellende evaluator implementeren](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [Aangepaste foutpagina&#39;s](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM knooppunttypen](/help/implementing/developing/introduction/node-types.md)
+      + Universele editor {#universal-editor}
+         + [Introductie van Universal Editor](/help/implementing/universal-editor/introduction.md)
+         + [Architectuur van Universal Editor](/help/implementing/universal-editor/architecture.md)
+         + [Aan de slag met de Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+         + [Overzicht van Universal Editor-ontwikkelaars](/help/implementing/universal-editor/developer-overview.md)
+         + [Kenmerken en itemtypen](/help/implementing/universal-editor/attributes-types.md)
+         + [Modeldefinities, velden en componenttypen](/help/implementing/universal-editor/field-types.md)
+         + [Universal Editor-verificatie](/help/implementing/universal-editor/authentication.md)
+         + [Ontwikkeling van lokale AEM met de Universal Editor](/help/implementing/universal-editor/local-dev.md)
+         + [Universal Editor-aanroepen](/help/implementing/universal-editor/calls.md)
+         + [Gebeurtenissen](/help/implementing/universal-editor/events.md)
+         + [De universele editor aanpassen](/help/implementing/universal-editor/customizing.md)
       + [Erviteitsbeheer zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + Hybride en SPA ontwikkeling {#hybrid}
          + [Hybride en SPA met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1144,19 +1159,3 @@ ht-degree: 3%
    + Toegankelijkheid {#accessibility}
       + [as a Cloud Service AEM en de Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
       + [Snelgids voor WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
-+ Universele editor {#universal-editor}
-   + [Introductie van Universal Editor](/help/implementing/universal-editor/introduction.md)
-   + [Architectuur van Universal Editor](/help/implementing/universal-editor/architecture.md)
-   + Authoring {#developing}
-      + [Inhoud ontwerpen met de Universal Editor](/help/implementing/universal-editor/authoring.md)
-      + [Inhoud publiceren met de Universal Editor](/help/implementing/universal-editor/publishing.md)
-   + Ontwikkeling {#developing}
-      + [Aan de slag met de Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
-      + [Overzicht van Universal Editor-ontwikkelaars](/help/implementing/universal-editor/developer-overview.md)
-      + [Kenmerken en itemtypen](/help/implementing/universal-editor/attributes-types.md)
-      + [Modeldefinities, velden en componenttypen](/help/implementing/universal-editor/field-types.md)
-      + [Universal Editor-verificatie](/help/implementing/universal-editor/authentication.md)
-      + [Ontwikkeling van lokale AEM met de Universal Editor](/help/implementing/universal-editor/local-dev.md)
-      + [Universal Editor-aanroepen](/help/implementing/universal-editor/calls.md)
-      + [De universele editor aanpassen](/help/implementing/universal-editor/customizing.md)
-      + [Gebeurtenissen](/help/implementing/universal-editor/events.md)

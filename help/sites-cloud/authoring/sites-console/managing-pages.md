@@ -1,9 +1,9 @@
 ---
 title: Pagina's beheren
 description: Leer hoe u de pagina's van uw website beheert in AEM, zoals verplaatsen, kopiëren en verwijderen.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,9 @@ Na [een pagina maken](/help/sites-cloud/authoring/sites-console/creating-pages.m
 
    ![Bewerken, knop](/help/sites-cloud/authoring/assets/edit.png)
 
-1. De pagina wordt geopend en u kunt [de pagina bewerken](/help/sites-cloud/authoring/page-editor/edit-content.md) zoals vereist.
+1. De pagina wordt geopend en u kunt de pagina naar wens bewerken. Afhankelijk van de manier waarop de geselecteerde pagina is gemaakt, wordt **Bewerken** de actie zal de aangewezen redacteur openen.
+   * [Pagina-editor](/help/sites-cloud/authoring/page-editor/introduction.md) - Voor pagina&#39;s die zijn gemaakt met de AEM Pagina-editor
+   * [Universele editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Voor pagina&#39;s die zijn gemaakt met de Universal Editor
 
 ## Pagina&#39;s kopiëren en plakken {#copying-and-pasting-a-page}
 

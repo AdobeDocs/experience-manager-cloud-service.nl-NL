@@ -1,9 +1,9 @@
 ---
 title: De AEM Pagina-editor
 description: De AEM pagina-editor is een krachtig hulpmiddel voor het ontwerpen van uw inhoud.
-source-git-commit: f11635b799a9154ff3fcaac5faca429a12f7a62b
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1431'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,11 @@ ht-degree: 0%
 
 # De AEM Pagina-editor {#editing-page-content}
 
-Nadat de pagina in het dialoogvenster **Sites** -console, kunt u de inhoud van de pagina bewerken met de AEM pagina-editor, een krachtig hulpmiddel voor het ontwerpen van uw inhoud.
+Nadat de pagina in het dialoogvenster [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) U kunt de inhoud van de pagina bewerken met de AEM pagina-editor, een krachtig gereedschap voor het ontwerpen van de inhoud.
+
+>[!NOTE]
+>
+>Wanneer u een pagina bewerkt in het dialoogvenster [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) de console zal de redacteur aangewezen aan de pagina openen [sjabloon:](/help/sites-cloud/authoring/sites-console/templates.md) de pagina-editor die in dit document wordt beschreven, of de [Universele editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
