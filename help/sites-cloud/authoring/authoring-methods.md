@@ -2,9 +2,9 @@
 title: Methoden voor het schrijven van inhoud in AEM
 description: Leer de verschillende manieren waarop u inhoud in AEM kunt ontwerpen en hoe deze verschillen.
 feature: Authoring
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,15 @@ De redacteur van het Fragment van de AEM Inhoud is de redacteur van keus voor he
 
 ![De AEM Content Fragment Editor](assets/authoring-methods-cf-editor.png)
 
-De redacteur van het Fragment van de AEM Inhoud stelt en duidelijke interface aan het creëren en het leiden van gestructureerde inhoud voor, ideaal voor hoofdloze levering.
+De redacteur van het Fragment van de AEM Inhoud stelt een duidelijke interface voor het creëren van en het beheren van gestructureerde inhoud voor, ideaal voor hoofdloze levering.
 
-Meer informatie over de AEM Content Fragment-editor vindt u in het document [Inhoudsfragmenten beheren.](/help/assets/content-fragments/content-fragments-managing.md)
+Raadpleeg de documenten voor meer informatie over de AEM Content Fragment-editor [Inhoudsfragmenten beheren](/help/sites-cloud/administering/content-fragments/managing.md) en [Inhoudsfragmenten ontwerpen](/help/sites-cloud/administering/content-fragments/managing.md).
+
+>[!NOTE]
+>
+>De *new* editor die in deze sectie is gemarkeerd, is alleen beschikbaar in de as a Cloud Service online Adobe Experience Manager (AEM).
+>
+>De [*origineel* Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-variations.md) is ook beschikbaar.
 
 ## Universele editor {#universal-editor}
 
