@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b8d729ca384c4ebd7a74f2b6e7280bf6cff2e404
+source-git-commit: 5786283b75f28d594aea923a6d3490a9582a73a9
 workflow-type: tm+mt
-source-wordcount: '4714'
+source-wordcount: '4721'
 ht-degree: 3%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 3%
    + [OAuth2 Steun voor de postdienst](/help/security/oauth2-support-for-mail-service.md)
    + [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md)
    + [Overwegingen bij as a Cloud Service beveiliging AEM](/help/security/security-considerations.md)
+   + [JWT Credentials Deprection in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Onboarding {#onboarding}
    + [Begin hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + Onboarding Journaal {#journey}
