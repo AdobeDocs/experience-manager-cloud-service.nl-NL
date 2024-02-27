@@ -4,15 +4,29 @@ description: Krachtige formulieren sneller maken met spreadsheets en formulierbl
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
 
 
-# Validaties van formulierblokvelden voor AEM Forms Edge Delivery Service uitvoeren
+# Validaties toevoegen aan formuliervelden
+
+Formulierblok heeft ingebouwde validatiefuncties. Deze validaties worden automatisch toegepast in moderne browsers op basis van het gekozen veldtype en de aanvullende eigenschappen die u opgeeft.
+
+## Veldtypen en validatie
+
+Het formulierblok ondersteunt een groot aantal [HTML-5-invoertypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), inclusief tekst, e-mail, nummer, datum en meer. Het biedt ook ruimte [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), selecteren en veldset, samen met uitgebreide invoervalideringsfuncties die inherent zijn aan HTML-5.
+
+gebruikt de het gebiedstypes van HTML om het soort gegevens te bepalen een gebruiker kan ingaan. Verschillende veldtypen hebben verschillende ingebouwde validatieregels:
+
+E-mail: Dit veldtype bevestigt automatisch gebruikersinvoer op een gemeenschappelijke e-mailadresformaat. Gebruikers die een ongeldig e-mailbericht invoeren, zien een foutbericht.
+Getal: dit veldtype staat alleen numerieke invoer toe. Gebruikers die niet-numerieke tekens invoeren, ontvangen een fout.
+Datum: dit veldtype valideert de gebruikersinvoer op basis van een standaarddatumnotatie. Datums buiten een redelijk bereik kunnen ook als ongeldig worden gemarkeerd.
+URL: Dit veldtype valideert de gebruikersinvoer op basis van een geldige URL-indeling. Gebruikers die een ongeldige URL invoeren, krijgen een foutbericht te zien.
+Tel: Dit veldtype is specifiek ontworpen voor telefoonnummers en kan validatie op basis van specifieke landindelingen (niet universeel ondersteund) activeren.
 
 
 ## Meer weergeven
