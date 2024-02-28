@@ -1,13 +1,17 @@
 ---
-description: Deze zelfstudie bevat alle informatie over EDS-componenten. .
-title: Formuliercomponenten die worden ondersteund in formulierblok - Zelfstudie voor ontwikkelaars
+title: AEM Forms Edge Delivery Service-formulieronderdelen
+description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestaties en stelt u in staat de toekomst van gestroomlijnde gegevensverzameling en de betrokkenheid van gebruikers in de gaten te houden. In het artikel worden alle formuliercomponenten weergegeven die in het vak voor EDD-formulieren beschikbaar zijn.
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
+
+
 
 
 # HTML-componenten die worden ondersteund in leveren van formulierblokranden
