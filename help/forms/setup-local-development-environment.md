@@ -3,9 +3,10 @@ title: Hoe kan ik een lokale ontwikkelomgeving opzetten voor AEM Forms?
 description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adobe Experience Manager Forms
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
 workflow-type: tm+mt
-source-wordcount: '2676'
+source-wordcount: '2718'
 ht-degree: 0%
 
 ---
@@ -129,7 +130,12 @@ Archief met as a Cloud Service functies van Adobe Experience Manager Forms biedt
 
 1. Navigeer naar de map crx-quickstart/install. Als de map niet bestaat, maakt u deze.
 
-1. Stop uw AEM instantie, plaats [!DNL AEM Forms] add-on functiearchief, `aem-forms-addon-<version>.far`in de installatiemap en start de instantie opnieuw.
+1. Stop uw AEM instantie, plaats [!DNL AEM Forms] add-on functiearchief, `aem-forms-addon-<version>.far`, in de installatiemap.
+1. Ga naar actief opdrachtvenster en druk op `Ctrl + C` om de SDK opnieuw te starten.
+
+   >[!NOTE]
+   >
+   > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
 ### Gebruikers en machtigingen configureren {#configure-users-and-permissions}
 
@@ -242,7 +248,7 @@ Met dit project kunt u Adaptive Forms maken, configuratie-updates, overlays impl
 >[!NOTE]
 >
 > Stel AEM project Archetype versie 30 of hoger in om Microsoft® Dynamics 365 en Salesforce-modellen van formuliergegevens te verkrijgen en te gebruiken met AEM Forms as a Cloud Service.
-Opstelling AEM Archetype versie 32 of later gebaseerd project om Tranquil, Urbane, en Ultramarine thema&#39;s met AEM Forms as a Cloud Service te krijgen en te gebruiken.
+> Opstelling AEM Archetype versie 32 of later gebaseerd project om Tranquil, Urbane, en Ultramarine thema&#39;s met AEM Forms as a Cloud Service te krijgen en te gebruiken.
 
 Het project instellen:
 
@@ -269,7 +275,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * Wanneer u een project Archetype maakt met versie 45, [Projectmap Archetype AEM]Met /pom.xml worden de kerncomponenten van formulieren aanvankelijk ingesteld op versie 2.0.64. Voordat u het project Archetype gaat maken of implementeren, moet u de kerncomponentversie van de formulieren bijwerken naar versie 2.0.62.
+     >* Wanneer u een project Archetype maakt met versie 45, [Projectmap Archetype AEM]Met /pom.xml worden de kerncomponenten van formulieren aanvankelijk ingesteld op versie 2.0.64. Voordat u het project Archetype gaat maken of implementeren, moet u de kerncomponentversie van de formulieren bijwerken naar versie 2.0.62.
 
 1. Implementeer het project in uw lokale ontwikkelomgeving. U kunt het volgende bevel gebruiken om aan uw lokale ontwikkelomgeving op te stellen
 
