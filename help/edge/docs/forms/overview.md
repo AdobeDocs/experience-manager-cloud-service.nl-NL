@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
+source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # AEM Forms Edge Delivery-service
 
-AEM Forms Edge Delivery Service is een composable service die door Adobe wordt aangeboden en waarmee u snel presterende webformulieren kunt maken en leveren.
+Het maken van formulieren stroomlijnen en hogere voltooiingssnelheden mogelijk maken met de AEM Forms Edge Delivery Service van de Adobe. Deze krachtige, composable service biedt u de mogelijkheid om formulieren van bedrijfsniveau te maken met uitzonderlijke prestaties en een visueel aantrekkingskracht. AEM geeft prioriteit aan zowel de gebruikerservaring als uw bedrijfsdoelstellingen, waardoor u kunt zorgen voor bliksemsnelle laadtijden en betere formulieraanvullen.
 
-![EDS Forms Key-functies](/help/edge/assets/eds-forms-key-features.png)
+![EDS Forms Key-functies](/help/edge/assets/eds-forms-key-features.png){width="70%"}
 
 U kunt de service gebruiken om:
 
