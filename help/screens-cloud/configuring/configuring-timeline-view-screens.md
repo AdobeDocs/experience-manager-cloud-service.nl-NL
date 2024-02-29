@@ -1,9 +1,9 @@
 ---
 title: Tijdlijnweergave voor AEM Screens configureren
 description: Deze pagina beschrijft hoe u een tijdlijnweergave in as a Cloud Service schermen configureert.
-source-git-commit: 30317d006142b3fbfc1b62fab5b4e28cb1b7dbb7
+source-git-commit: eb71ea3a1a739b08fb3154a5f41a0706bd81488c
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -28,17 +28,17 @@ Voer de volgende stappen uit om een tijdlijnweergave voor AEM Screens te maken:
 1. Een versie opslaan
 1. Een workflow starten
 
-In de volgende sectie worden deze stappen gedetailleerd beschreven.
+In de volgende secties worden deze stappen gedetailleerd beschreven.
 
 ### Een opmerking toevoegen {#addcomment}
 
 Door opmerkingen beschikbaar te maken via de tijdlijn kunnen gebruikers een gecentraliseerde en historische record maken voor discussies over het kanaal, de locatie of een map op het scherm.
 Opmerkingen bieden een mooie geconsolideerde manier voor AEM gebruikers om een manier te bespreken die kan worden voortgezet, zodat anderen belangrijke beslissingen kunnen begrijpen.
 
-1. Ga naar het kanaal waaraan u een opmerking wilt toevoegen
-1. Selecteer het kanaal
-1. De kolom Tijdlijn openen
-1. Voeg de gewenste opmerking toe en druk op Enter
+1. Navigeer naar het kanaal waaraan u een opmerking wilt toevoegen.
+1. Selecteer het kanaal.
+1. Open de **Tijdlijn** kolom.
+1. Voeg uw opmerking toe en druk op **Enter**.
 
 ![Een opmerking toevoegen](/help/screens-cloud/assets/configure/screen-timeline3.jpg)
 
@@ -58,91 +58,95 @@ Met Versioning maakt u een &#39;momentopname&#39; van een kanaal op een bepaald 
 
 #### Een nieuwe versie maken {#createnewversion}
 
-1. Ga naar het kanaal waaraan u een opmerking wilt toevoegen
-1. Selecteer het kanaal
-1. De kolom Tijdlijn openen
-1. Klik op de knop (drie punten) in het veld Opmerking onderaan.
+1. Navigeer naar het kanaal waaraan u een opmerking wilt toevoegen.
+1. Selecteer het kanaal.
+1. Open de **Tijdlijn** kolom.
+1. Klik op de knop (drie punten) in het veld Opmerking onder aan de pagina.
 
    ![Een opmerking toevoegen](/help/screens-cloud/assets/configure/screens-timeline5.jpg)
 
-1. Opslaan als versie selecteren
-1. Voer indien nodig een label en opmerking in
+1. Selecteren **Opslaan als versie**.
+1. Voer een **Label** en **Opmerking** voor de versie.
 
    ![Een opmerking toevoegen](/help/screens-cloud/assets/configure/screens-timeline6.jpg)
 
-1. Bevestig de nieuwe versie met Maken. De informatie in de tijdlijn wordt bijgewerkt en geeft de nieuwe versie aan.
+1. Bevestig de nieuwe versie door **Maken**.De informatie in de tijdlijn wordt bijgewerkt om op de nieuwe versie te wijzen.
 
 #### Een versie herstellen {#revertversion}
 
 De geselecteerde pagina herstellen naar een vorige versie:
-1. Ga naar het kanaal waaraan u een opmerking wilt toevoegen
-1. Selecteer het kanaal
-1. De kolom Tijdlijn openen
-1. Selecteer Alle of Versies tonen in het keuzemenu met filters. De kanaalversies voor het geselecteerde kanaal worden weergegeven
+
+1. Blader naar het kanaal om een opmerking toe te voegen.
+1. Selecteer het kanaal.
+1. Open de **Tijdlijn** kolom.
+1. Selecteer een van beide **Alles tonen** of **Versies** in de vervolgkeuzelijst met filters. De kanaalversies voor het geselecteerde kanaal worden vermeld.
 1. Selecteer de versie waarnaar u wilt terugkeren. De mogelijke opties worden weergegeven:
 
    ![Een opmerking toevoegen](/help/screens-cloud/assets/configure/screens-timeline7.jpg)
 
-1. Selecteer Vorige versie. De geselecteerde versie wordt hersteld en de informatie in de tijdlijn wordt bijgewerkt
+1. Selecteren **Deze versie herstellen**. De geselecteerde versie wordt hersteld en de informatie in de tijdlijn wordt bijgewerkt.
 
 #### Een versie voorvertonen {#previewversion}
 
 U kunt een voorvertoning van een specifieke versie weergeven:
-1. Ga naar het kanaal waaraan u een opmerking wilt toevoegen
-1. Selecteer het kanaal
-1. De kolom Tijdlijn openen
-1. Selecteer Alle of Versies tonen in het keuzemenu met filters. De kanaalversies voor het geselecteerde kanaal worden weergegeven
+
+1. Blader naar het kanaal om een opmerking toe te voegen.
+1. Selecteer het kanaal.
+1. Open de **Tijdlijn** kolom.
+1. Selecteer een van beide **Alles tonen** of **Versies** in de vervolgkeuzelijst met filters. De kanaalversies voor het geselecteerde kanaal worden vermeld.
 1. Selecteer de versie die u wilt voorvertonen. De mogelijke opties worden weergegeven:
 
    ![Voorvertoning versie](/help/screens-cloud/assets/configure/screens-timeline8.jpg)
 
-1. Selecteer Voorvertoning. Het kanaal wordt weergegeven op een nieuw tabblad.
+1. Selecteren **Voorvertoning**. Het kanaal wordt weergegeven op een nieuw tabblad.
 
 #### Een versie vergelijken met de huidige versie {#compareversion}
 
 U kunt een specifieke versie vergelijken met de huidige versie:
-1. Ga naar het kanaal waaraan u een opmerking wilt toevoegen
-1. Selecteer het kanaal
-1. De kolom Tijdlijn openen
-1. Selecteer Alle of Versies tonen in het keuzemenu met filters. De kanaalversies voor het geselecteerde kanaal worden weergegeven
+
+1. Navigeer naar het kanaal waaraan u een opmerking wilt toevoegen.
+1. Selecteer het kanaal.
+1. Open de **Tijdlijn** kolom
+1. Selecteer een van beide **Alles tonen** of **Versies** in de vervolgkeuzelijst met filters. De kanaalversies voor het geselecteerde kanaal worden vermeld.
 1. Selecteer de versie die u wilt vergelijken. De mogelijke opties worden weergegeven:
 
    ![Versie vergelijken](/help/screens-cloud/assets/configure/screens-timeline9.jpg)
 
-1. Selecteer Vergelijken met huidige. De pop-up wordt geopend om de verschillen te tonen
+1. Selecteren **Vergelijken met huidige**. De popup opent om de verschillen te tonen.
 
 ### Een workflow starten {#workflowstart}
 
 Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw kanalen. Het is ook mogelijk om meerdere workflows toe te passen.
 Wanneer u de workflow toepast, geeft u de volgende informatie op:
-* De workflow die moet worden toegepast
-* Naar keuze, een titel die helpt de werkschemainstantie in Inbox van een gebruiker identificeren
-* Het laden van de workflow
+
+* De workflow die moet worden toegepast.
+* Naar keuze, een titel die helpt de werkschemainstantie in Inbox van een gebruiker identificeren.
+* De lading van de werkstroom.
 
 #### De workflow starten
 
-1. Ga naar het kanaal waaraan u een opmerking wilt toevoegen
-1. Selecteer het kanaal
-1. De kolom Tijdlijn openen
-1. Klik op de knop (drie punten) in het veld Opmerking onderaan
+1. Navigeer naar het kanaal waaraan u een opmerking wilt toevoegen.
+1. Selecteer het kanaal.
+1. Open de **Tijdlijn** kolom.
+1. Klik op de knop (drie punten) in het veld Opmerking onderaan.
 
    ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
 
-1. Start Workflow selecteren
-1. De wizard Werkstroom maken wordt geopend en geeft de werkstroomgegevens op
-1. Selecteer workflowmodel in de vervolgkeuzelijst en voer de titel van de workflow in
+1. Selecteren **Workflow starten**.
+1. De wizard Werkstroom maken wordt geopend en geeft de workflowdetails op.
+1. Selecteren **Workflowmodel** in de vervolgkeuzelijst en voer de titel Werkstroom in.
 
    ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
-1. Ga verder door op Volgende te klikken
-1. In de stap Bereik kunt u
-* Inhoud toevoegen om extra bronnen aan de workflow toe te voegen
-* Inclusief onderliggende elementen om op te geven dat onderliggende elementen van die bron worden opgenomen in de workflow
-* Selectie verwijderen om die bron uit de workflow te verwijderen
+1. Doorgaan door te klikken **Volgende**.
+1. In de bereikstap kunt u:
+   * **Inhoud toevoegen** om extra bronnen aan de workflow toe te voegen.
+   * **Inclusief onderliggende items** om te specificeren dat de kinderen van die bron in het werkschema zullen worden omvat.
+   * **Selectie verwijderen** om die bron uit de workflow te verwijderen.
 
-  ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
+   ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
 
-1. Gebruik Maken om de wizard te sluiten en de werkstroominstantie te maken
-1. Afhankelijk van het geselecteerde workflowmodel moet u mogelijk enkele aanvullende acties uitvoeren om de workflow te voltooien
+1. Selecteren **Maken** om de wizard te sluiten en de instantie van de workflow te maken.
+1. Afhankelijk van het geselecteerde workflowmodel moet u mogelijk enkele aanvullende acties uitvoeren om de workflow te voltooien.
 
-![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
+   ![Workflow starten](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
