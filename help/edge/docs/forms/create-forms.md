@@ -4,9 +4,9 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Ga als volgt te werk om het formulier te maken:
 
    ![naam standaardblad wijzigen in &#39;shared-default&#39;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;standaard-gedeelde&#39; blad in. Elke rij moet een formulierveld vertegenwoordigen, met kolomkoppen die het bijbehorende veld definiëren [eigenschappen](/help/edge/docs/forms/eds-form-field-properties).
+1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;standaard-gedeelde&#39; blad in. Elke rij moet een [formulierveld](/help/edge/docs/forms/form-components.md), met kolomkoppen die het corresponderende veld definiëren [eigenschappen](/help/edge/docs/forms/eds-form-field-properties).
 
    Voor een snel begin kunt u de inhoud van het dialoogvenster [Opzoekblad](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) in uw spreadsheet. Sla het werkblad op nadat u de inhoud hebt gekopieerd.
 
@@ -153,6 +153,7 @@ Tot nu toe hebt u het formulierblok aan uw EDS-project toegevoegd en de structuu
 
 ## Meer weergeven
 
+* [Formuliercomponenten](/help/edge/docs/forms/form-components.md)
 * [Eigenschappen van formulierveld](/help/edge/docs/forms/eds-form-field-properties)
 * [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
 * [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
