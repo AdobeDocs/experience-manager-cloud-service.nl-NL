@@ -4,39 +4,27 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
 
-# AEM Forms Edge Delivery-service {#aem-forms-edge-delivery-service-overview}
+# AEM Forms Edge Delivery-service
 
+AEM Forms Edge Delivery Service is een composable service die door Adobe wordt aangeboden en waarmee u snel presterende webformulieren kunt maken en leveren.
 
-<div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
-        <main class="content">
-            <section class="content-section">
-                <p style="line-height: 1.5;">AEM Forms Edge Delivery Service is een composable service die door Adobe wordt aangeboden en waarmee u snel presterende webformulieren kunt maken en leveren. U kunt de service gebruiken om:</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate gebruikers met verbluffende formulieren</h2>
-                <img src="/help/edge/assets/enrollment-form.png" alt="Inschrijvingsformulier" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">Maak eenvoudig complexe en aantrekkelijke formulieren met een bibliotheek van vooraf gebouwde componenten. Eenvoudig reCAPTCHA te integreren, formulieren rechtstreeks naar e-mail te verzenden en bestanden naadloos te uploaden om opslagoplossingen zoals Sharepoint, Azure Storage en Amazon S3 te beveiligen. Creëer zelfs uw eigen componenten van douaneformulieren om uw unieke visie tot leven te brengen.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Formulieren samenstellen met perfecte vuurtorenscore</h2>
-                <img src="/help/edge/assets/lighthouse-forms.png" alt="perfecte vuurtoren voor uw formulieren" style="float: right; margin: 20px 0 0 20px; width: 30%;">
-                <p style="line-height: 1.5;"> Formulieren maken die snel kunnen worden geladen en gegenereerd, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Maak digitale inschrijvingen met de tools die u kiest</h2>
-                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Inschrijvingsformulier" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel AEM ontwerpen als op documenten gebaseerd schrijven. Als zodanig kunt u met meerdere inhoudsbronnen op dezelfde website werken en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of AEM Editors.</p>
-            </section>
-        </main>
-    </div>
+![EDS Forms Key-functies](/help/edge/assets/eds-forms-key-features.png)
+
+U kunt de service gebruiken om:
+
+* **Captivate gebruikers met verbluffende formulieren**: Ontwikkel eenvoudig complexe en aantrekkelijke formulieren met behulp van een bibliotheek met vooraf gebouwde componenten. Eenvoudig reCAPTCHA te integreren, formulieren rechtstreeks naar e-mail te verzenden en bestanden naadloos te uploaden om opslagoplossingen zoals Sharepoint, Azure Storage en Amazon S3 te beveiligen. Creëer zelfs uw eigen componenten van douaneformulieren om uw unieke visie tot leven te brengen.
+
+* **Maak digitale inschrijvingen met de tools die u kiest**: Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel op documenten gebaseerde ontwerpfuncties (Microsoft 365 en Google Workspace) als AEM ontwerpfuncties (AEM Editors) gebruiken. Als zodanig kunt u met meerdere inhoudsbronnen op dezelfde website werken en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of de Adaptive Forms Editor.
+
+* **Formulieren samenstellen met de perfecte Lighthouse-score**: Formulieren maken die snel kunnen worden geladen en gegenereerd, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.
 
 
 <!-- >
@@ -66,7 +54,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
 
     -->
 
-## Beginnen met de basisbeginselen
+## Formulieren maken
 
 <div>
 
