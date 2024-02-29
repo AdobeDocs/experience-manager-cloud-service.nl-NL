@@ -2,12 +2,13 @@
 title: Toegang tot opslagplaatsen
 description: Leer hoe u uw git-opslagplaats kunt openen en beheren met behulp van het beheer van een git-account voor zelfbediening vanuit Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1b24fa084577f2ba0dc718ee35d12e42ac9d609c
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
+
 
 # Toegang tot opslagplaatsen {#accessing-repos}
 
@@ -40,3 +41,9 @@ De **Repo-info openen** deze optie is ook beschikbaar op de **Niet-productie** p
 >[!NOTE]
 >
 >De **Repo-info openen** deze optie is zichtbaar voor gebruikers met **Ontwikkelaar** of **Implementatiebeheer** rollen.
+
+## Een toegangswachtwoord intrekken {#revoke-password}
+
+U kunt een toegangswachtwoord op elk ogenblik intrekken. Om dit te doen, gelieve [Maak een ondersteuningsticket voor dit verzoek.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+
+Het kaartje zal met hoge prioriteit worden behandeld en moet binnen één dag worden ingetrokken.
