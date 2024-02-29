@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -57,8 +57,8 @@ De volgende eigenschappen worden ondersteund voor formuliercomponenten van het f
    </td>
   </tr>
       <tr>
-   <td>Plaatsaanduiding</td>
-   <td>Tekst, Zoeken, URL, Tel, E-mail, Wachtwoord en Nummer</td>
+   <td>Beschrijving</td>
+   <td>Van toepassing op alle velden</td>
    <td> Het kenmerk placeholder geeft de gebruiker een korte tip over welk type informatie in het veld wordt verwacht.
    </td>
   </tr>

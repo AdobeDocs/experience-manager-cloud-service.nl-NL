@@ -4,7 +4,7 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -15,26 +15,28 @@ ht-degree: 0%
 # AEM Forms Edge Delivery-service {#aem-forms-edge-delivery-service-overview}
 
 
-<div>
-&lt;style="font-family: Arial, sans-serif; margin: 0; padding: 0;"&gt;
-    <main class="content">
-      <section class="content-section">
-        <p style="line-height: 1.5;">AEM Forms Edge Delivery Service is een composable service die door Adobe wordt aangeboden en waarmee u snel presterende webformulieren kunt maken en leveren. U kunt de service gebruiken om:</p>
-        </section> <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate gebruikers met verbluffende formulieren</h2>
-        <img src="/help/edge/assets/enrollment-form.png" alt="Inschrijvingsformulier" style="float: left; margin: 0 20px 20px 0; width: 150px;">
-        <p style="line-height: 1.5;">Maak eenvoudig complexe en aantrekkelijke formulieren met een bibliotheek van vooraf gebouwde componenten. Eenvoudig reCAPTCHA te integreren, formulieren rechtstreeks naar e-mail te verzenden en bestanden naadloos te uploaden om opslagoplossingen zoals Sharepoint, Azure Storage en Amazon S3 te beveiligen. Creëer zelfs uw eigen componenten van douaneformulieren om uw unieke visie tot leven te brengen.</p>
-        </section> <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">Formulieren samenstellen met perfecte vuurtorenscore</h2>
-        <img src="/help/edge/assets/lighthouse-forms.png" alt="perfecte vuurtoren voor uw formulieren" style="float: right; margin: 20px 0 0 20px; width: 150px;">
-        <p style="line-height: 1.5;"> Formulieren maken die snel kunnen worden geladen en gegenereerd, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.</p>
-        </section>
-        <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">Maak digitale inschrijvingen met de tools die u kiest</h2>
-        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Inschrijvingsformulier" style="float: left; margin: 0 20px 20px 0; width: 150px;">
-        <p style="line-height: 1.5;">Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel AEM ontwerpen als op documenten gebaseerd schrijven. Als zodanig kunt u met meerdere inhoudsbronnen op dezelfde website werken en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of AEM Editors.</p>
-        </section>
-</div>
+<div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+        <main class="content">
+            <section class="content-section">
+                <p style="line-height: 1.5;">AEM Forms Edge Delivery Service is een composable service die door Adobe wordt aangeboden en waarmee u snel presterende webformulieren kunt maken en leveren. U kunt de service gebruiken om:</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate gebruikers met verbluffende formulieren</h2>
+                <img src="/help/edge/assets/enrollment-form.png" alt="Inschrijvingsformulier" style="float: left; margin: 0 20px 20px 0; width: 30%;">
+                <p style="line-height: 1.5;">Maak eenvoudig complexe en aantrekkelijke formulieren met een bibliotheek van vooraf gebouwde componenten. Eenvoudig reCAPTCHA te integreren, formulieren rechtstreeks naar e-mail te verzenden en bestanden naadloos te uploaden om opslagoplossingen zoals Sharepoint, Azure Storage en Amazon S3 te beveiligen. Creëer zelfs uw eigen componenten van douaneformulieren om uw unieke visie tot leven te brengen.</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">Formulieren samenstellen met perfecte vuurtorenscore</h2>
+                <img src="/help/edge/assets/lighthouse-forms.png" alt="perfecte vuurtoren voor uw formulieren" style="float: right; margin: 20px 0 0 20px; width: 30%;">
+                <p style="line-height: 1.5;"> Formulieren maken die snel kunnen worden geladen en gegenereerd, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">Maak digitale inschrijvingen met de tools die u kiest</h2>
+                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Inschrijvingsformulier" style="float: left; margin: 0 20px 20px 0; width: 30%;">
+                <p style="line-height: 1.5;">Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel AEM ontwerpen als op documenten gebaseerd schrijven. Als zodanig kunt u met meerdere inhoudsbronnen op dezelfde website werken en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of AEM Editors.</p>
+            </section>
+        </main>
+    </div>
 
 
 <!-- >
@@ -112,19 +114,19 @@ Build complex and engaging forms with ease using a library of pre-built componen
         </a>
         <p>Verminder fouten en frustratie door de invoer van het formulier te controleren op een juiste opmaak.</p>
     </div> 
+            <div class="card-container">
+        <a href="/help/edge/docs/forms/rules-forms.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen</b>
+        </a>
+        <p>Vooraf geconfigureerde fragmenten opnieuw gebruiken in meerdere formulieren.</p>
+    </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
             <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Een EDS-formulier vertalen" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Een formulier vertalen</b>
         </a>
         <p>Vergroot het bereik van uw formulieren en houd de kosten in de gaten.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Formulierfragmenten in een EDS-formulier gebruiken" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Formulierfragmenten maken</b>
-        </a>
-        <p>Vooraf geconfigureerde fragmenten opnieuw gebruiken in meerdere formulieren.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
@@ -147,6 +149,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
         </a>
         <p>Gebruik OOTB reCAPTCHA-integratie voor robuuste bescherming van spam en bot.</p>
     </div>
+
 
 </div>
 

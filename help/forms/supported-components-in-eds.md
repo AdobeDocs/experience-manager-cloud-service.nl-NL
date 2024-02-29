@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 AEM Forms Edge Delivery bevat een formulierblok. Met het formulierblok kunt u eenvoudig formulieren maken voor het vastleggen en opslaan van vastgelegde gegevens.
 
-Het formulierblok ondersteunt HTML-5-componenten zoals tekst, e-mail, nummer, datum en nog veel meer. De klasse biedt ook ondersteuning voor tekstgebied-, selectie- en veldsetelementen en bevat functies voor invoervalidatie die eigen zijn aan HTML-5. Met het formulierblok wordt een uniforme HTML-structuur gemaakt voor alle veldtypen en -containers, zodat de consistentie wordt gewaarborgd. U kunt ook [stijl toepassen op de veldtypen](https://adobe-rnd.github.io/form-block/customization/styling_form) met de `form.css` bestand.
+Het formulierblok ondersteunt OTB HTML-5-componenten zoals tekst, e-mail, nummer, datum en nog veel meer. De klasse biedt ook ondersteuning voor tekstgebied-, selectie- en veldsetelementen en bevat functies voor invoervalidatie die eigen zijn aan HTML-5. Met het formulierblok wordt een uniforme HTML-structuur gemaakt voor alle veldtypen en -containers, zodat de consistentie wordt gewaarborgd. U kunt ook [stijl toepassen op de veldtypen](https://adobe-rnd.github.io/form-block/customization/styling_form) met de `form.css` bestand.
 
 ## Ondersteunde invoertypen voor HTML 5 in formulierblok
 
