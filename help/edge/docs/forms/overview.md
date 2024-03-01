@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: 1c6e44fd6652d93ba73bc2eb3604cd08eae7a33c
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -24,22 +24,36 @@ U kunt de service gebruiken om:
 
 * **Formulieren samenstellen met de perfecte Lighthouse-score**: Formulieren maken die snel kunnen worden geladen en gegenereerd, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.
 
-  <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Key-functies" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
+  <div>
+    <style>
+    .image-container {
+    width: 80%;
+    text-align: center; 
+    }
+    .image-container img {
+        width: 70%; /* Set image width to 70% of the container */
+        border: .5px solid; /* Maintain the border style */
+        padding: 15px; /* Maintain the padding */
+    }
+</style>
+    <div class="image-container">
+    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Key-functies">
+    </div>
 
-<!-- >
-* **Captivate users with stunning forms**: 
-Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
 
-    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
+</div>
+&lt;!— &gt; * ** Captivate gebruikers met verbluffende formulieren**: maak complexe en aantrekkelijke formulieren met behulp van een bibliotheek met vooraf gebouwde onderdelen. Eenvoudig reCAPTCHA te integreren, formulieren rechtstreeks naar e-mail te verzenden en bestanden naadloos te uploaden om opslagoplossingen zoals Sharepoint, Azure Storage en Amazon S3 te beveiligen. Creëer zelfs uw eigen componenten van douaneformulieren om uw unieke visie tot leven te brengen.
 
-* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+    ![Inschrijvingsformulieren](/help/edge/assets/enrollment-form.png)
 
-    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
+* **Formulieren samenstellen met perfecte vuurtorenscore**: Formulieren maken die snel kunnen worden geladen en gegenereerd, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.
 
-* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+  ![perfecte vuurtoren voor uw formulieren](/help/edge/assets/lighthouse-forms.png)
 
-    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-    
+* **Maak digitale inschrijvingen met de tools die u kiest**: Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel AEM ontwerpen als op documenten gebaseerd schrijven. Als zodanig kunt u met meerdere inhoudsbronnen op dezelfde website werken en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of AEM Editors.
+
+  ![Edge Delivery-gereedschappen voor het schrijven van formulieren](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 
