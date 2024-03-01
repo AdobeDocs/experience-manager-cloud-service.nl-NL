@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '2559'
+source-wordcount: '2298'
 ht-degree: 0%
 
 ---
 
 # Aanpassen AEM CIF kerncomponenten {#customize-cif-components}
 
-De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie breidt u de [Productteam](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) om een aangepast kenmerk van Adobe Commerce weer te geven. U leert ook meer over de GraphQL-integratie tussen AEM en Adobe Commerce en de uitbreidingshaken die worden geleverd door de CIF Core Components.
+De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie breidt u de [Productteam](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) om een aangepast kenmerk van Adobe Commerce weer te geven. U leert ook meer over de GraphQL-integratie tussen AEM en Adobe Commerce en de uitbreidingshaken die worden geleverd door de CIF Core Components.
 
 >[!TIP]
 >
@@ -34,9 +34,9 @@ Het merk Venia is onlangs begonnen met de productie van bepaalde producten met b
 
 ## Vereisten {#prerequisites}
 
-U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Deze omgeving bevat een actieve instantie van AEM die is geconfigureerd en is verbonden met een Adobe Commerce-instantie. De vereisten en stappen voor [een lokale ontwikkeling instellen met AEM as a Cloud Service SDK](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u machtigingen nodig om toe te voegen [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
+U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Deze omgeving bevat een actieve instantie van AEM die is geconfigureerd en is verbonden met een Adobe Commerce-instantie. De vereisten en stappen voor [een lokale ontwikkeling instellen met AEM as a Cloud Service SDK](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u toestemming nodig om [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
-U hebt ook GraphQL IDE nodig, zoals [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u de aanvraagheaders instellen. In Google Chrome: [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is één extensie die de taak kan uitvoeren.
+U hebt ook GraphQL IDE nodig, zoals [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u de aanvraagheaders instellen. In Google Chrome: _Altair GraphQL Client_ is één extensie die de taak kan uitvoeren.
 
 ## Het Venia-project klonen {#clone-venia-project}
 
@@ -59,7 +59,7 @@ Klonen met [Venia-project](https://github.com/adobe/aem-cif-guides-venia)en over
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Voeg de noodzakelijke configuraties OSGi toe zodat verbindt u uw AEM instantie met een instantie van Adobe Commerce, of voegt de configuraties aan het gecreeerde project toe.
+1. Voeg de noodzakelijke configuraties OSGi toe zodat verbindt u uw instantie AEM met een instantie van de Handel van Adobe, of voeg de configuraties aan het gecreeerde project toe.
 
 1. Op dit moment hebt u een werkende versie van een winkel die is verbonden met een Adobe Commerce-instantie. Ga naar de `US` > `Home` pagina bij: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -139,7 +139,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Co
 
 Voordat u naar AEM code gaat, is het handig om de [GraphQL - Overzicht](https://devdocs.magento.com/guides/v2.4/graphql/) een GraphQL-IDE gebruiken. De Adobe Commerce-integratie met AEM gebeurt voornamelijk via een reeks GraphQL-query&#39;s. Het begrijpen en wijzigen van de vragen van GraphQL is één van de belangrijkste manieren waarop de Componenten van de CIFKern kunnen worden uitgebreid.
 
-Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
+Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de _Altair GraphQL Client_ Google Chrome-extensie.
 
 1. GraphQL-IDE openen en URL invoeren `http://<commerce-server>/graphql` in de bar URL van uw winde of uitbreiding.
 2. Voeg het volgende toe [productquery](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) waar `YOUR_SKU` is de **SKU** van het product dat bij de vorige exercitie werd gebruikt:
@@ -186,7 +186,7 @@ Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmer
 
 ## Het verkoopmodel voor de producttaser bijwerken {#updating-sling-model-product-teaser}
 
-Daarna, breidt u de bedrijfslogica van de Teaser van het Product door een het Verkopen Model uit te voeren uit. [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html), zijn annotatiegestuurde &quot;POJO&#39;s&quot; (normale oude Java™-objecten) die bedrijfslogica implementeren die nodig is voor de component. Sling Models worden gebruikt met de manuscripten HTML als deel van de component. Volg de [delegatiepatroon voor verkoopmodellen](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) zodat u delen van het bestaande model van de Teaser van het Product kunt uitbreiden.
+Daarna, breidt u de bedrijfslogica van de Teaser van het Product door een het Verkopen Model uit te voeren uit. [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html) zijn annotatiegestuurde &quot;POJO&#39;s&quot; (normale oude Java™-objecten) die bedrijfslogica implementeren die nodig is voor de component. Sling Models worden gebruikt met de manuscripten HTML als deel van de component. Volg de [delegatiepatroon voor verkoopmodellen](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) zodat u delen van het bestaande model van de Teaser van het Product kunt uitbreiden.
 
 Sling Models worden geïmplementeerd als Java™ en zijn te vinden in het dialoogvenster **kern** module van het gegenereerde project.
 
@@ -419,7 +419,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
 1. De AEM openen `error.log` om de toegevoegde logboekverklaringen te zien. De `error.log` is om `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
 
-   Zoek in de AEM logboeken naar de toegevoegde logboekinstructies in het Sling Model:
+   Zoek in de AEM-logboeken naar de toegevoegde loginstructies in het Sling-model:
 
    ```plain
    2020-08-28 12:57:03.114 INFO [com.venia.core.models.commerce.MyProductTeaserImpl] *** Product is Eco Friendly**
@@ -497,7 +497,7 @@ Controleer de functionaliteit van de **Nieuw** badge die al is geïmplementeerd 
 ## Aanvullende bronnen {#additional-resources}
 
 - [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-- [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
+- [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components)
 - [Aanpassen AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html)
 - [Kerncomponenten aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
