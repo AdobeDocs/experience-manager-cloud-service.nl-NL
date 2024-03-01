@@ -4,9 +4,9 @@ description: Leer hoe u zowel machine- als menselijke vertaalprojecten in AEM ku
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: ae500923bac34689a28b9ff0bc78586f725829de
 workflow-type: tm+mt
-source-wordcount: '3960'
+source-wordcount: '4011'
 ht-degree: 0%
 
 ---
@@ -448,14 +448,26 @@ U kunt als volgt de taalkopieën vergelijken met de hoofdtaal:
 
 ## Een bronpagina verplaatsen of de naam ervan wijzigen {#move-source}
 
-Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, maakt u een taalkopie op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie blijft aanwezig.
+Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, wordt een kopie van de taal gemaakt op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie is er nog. Om dit te voorkomen, kunt u de functionaliteit voor het kopiëren van de updatetaal na de verplaatsing gebruiken:
 
-De beste praktijk in dit scenario is deze procedure te volgen:
+1. Verplaats een pagina met een taalkopie.
+1. Selecteer de hoofdmap van de taalkopie.
+1. Open de **Verwijzingen** deelvenster.
+1. Selecteren **Kopieën van talen**.
+1. Selecteer de doeltalen die u wilt bijwerken.
+1. Selecteren **Taalkopieën bijwerken**.
 
-1. Publiceer de taalkopieën die zijn gekoppeld aan de bronpagina die u wilt verplaatsen.
-1. Verwijder ze.
-1. Maak nieuwe taalkopieën van de nieuw verplaatste bronpagina.
-1. Publiceer de gemaakte taalkopieën.
+   ![bijwerken, taalkopieën](../assets/translation-move-to.png)
+
+1. Klikken **Bijwerken**. A [Starten](/help/sites-cloud/authoring/launches/promoting.md) wordt gemaakt.
+1. Navigeer naar de vereiste hoofdtaal en selecteer deze.
+1. Met de **Verwijzingen** deelvenster, selecteert u **Starten**.
+
+   ![promoten/vertalen](../assets/promote-launch-translation.png)
+
+1. Klik op de Launch die is gemaakt en klik op **Starten bevorderen**.
+
+Nu is de bronpagina verplaatst en de bijbehorende taalkopie.
 
 ## Vertaaltaken importeren en exporteren {#import-export}
 
