@@ -2,16 +2,16 @@
 title: Werken met inhoudsfragmenten (elementen - inhoudsfragmenten)
 description: Leer hoe u met Inhoudsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken, ideaal voor het ontwerpen van pagina's en het leveren zonder kop. Ook hoe zij samen met MSM kunnen worden gebruikt.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2222'
 ht-degree: 2%
 
 ---
 
 # Werken met inhoudsfragmenten {#working-with-content-fragments}
 
-Met Adobe Experience Manager (AEM) as a Cloud Service, laat de Fragmenten van de Inhoud u, ontwerp, leiden, en [pagina-onafhankelijke inhoud publiceren](/help/sites-cloud/authoring/fragments/content-fragments.md). Zo kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop. Zij kunnen ook samen met [Beheer van meerdere sites, zodat u uw inhoud opnieuw kunt gebruiken](#reusing-content-fragments-with-msm-assets).
+Met Adobe Experience Manager (AEM) as a Cloud Service, laat de Fragmenten van de Inhoud u, ontwerp, leiden, en [pagina-onafhankelijke inhoud publiceren](/help/sites-cloud/authoring/fragments/content-fragments.md). Zo kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen, ideaal voor levering zonder kop. Zij kunnen ook samen met [Beheer van meerdere sites, zodat u uw inhoud opnieuw kunt gebruiken](#reusing-content-fragments-with-msm).
 
 Inhoudsfragmenten bevatten gestructureerde inhoud:
 
@@ -50,7 +50,7 @@ Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren,
 * [Gekoppelde inhoud gebruiken](/help/assets/content-fragments/content-fragments-assoc-content.md) - gekoppelde inhoud toevoegen
 * [Metagegevens - Fragmenteigenschappen](/help/assets/content-fragments/content-fragments-metadata.md) - de fragmenteigenschappen weergeven en bewerken
 * Gebruiken [Inhoudsfragmenten, in combinatie met GraphQL, zodat u inhoud kunt leveren](/help/assets/content-fragments/content-fragments-graphql.md) voor gebruik in uw toepassingen. Om dit te helpen, kunt u een voorvertoning weergeven [JSON-uitvoer](/help/assets/content-fragments/content-fragments-json-preview.md).
-* [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](#reusing-content-fragments-with-msm-assets)
+* [Inhoudsfragmenten opnieuw gebruiken met MSM](#reusing-content-fragments-with-msm)
 
 >[!NOTE]
 >
@@ -288,13 +288,13 @@ Als u de Content Fragments wilt gebruiken voor het ontwerpen van pagina&#39;s, h
    * Fragmenten hebben een of meer specifieke componenten nodig om de lay-out te definiëren en om enkele of alle elementen/variaties en bijbehorende inhoud te leveren.
    * Wanneer u een fragment naar een pagina sleept in de ontwerpfase, wordt de vereiste component automatisch gekoppeld.
 
-## Inhoudsfragmenten opnieuw gebruiken met MSM (voor elementen) {#reusing-content-fragments-with-msm-assets}
+## Inhoudsfragmenten opnieuw gebruiken met MSM {#reusing-content-fragments-with-msm}
 
 Indien benaderd via de **Activa** kunt u MSM gebruiken en actieve kopieën maken voor uw fragmenten.
 
 Zie voor meer informatie:
 
-* [Inhoudsfragmenten opnieuw gebruiken met MSM (voor elementen)](/help/assets/content-fragments/content-fragments-msm.md)
+* [Inhoudsfragmenten opnieuw gebruiken met MSM](/help/assets/content-fragments/content-fragments-msm.md)
 * [Elementen hergebruiken met MSM voor middelen](/help/assets/reuse-assets-using-msm.md).
 
 Deze functie [overerving](/help/assets/content-fragments/content-fragments-variations.md#inheritance) voor zowel variaties als afzonderlijke velden van uw fragmenten.
