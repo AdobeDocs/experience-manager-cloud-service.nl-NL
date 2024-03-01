@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken die as a Cloud Service zijn met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -1125,6 +1125,31 @@ Om tegen potentiële problemen te beschermen worden er standaardbeperkingen opge
 * De query mag niet meer dan 1M (1024 * 1024) tekens bevatten
 * De query mag niet meer dan 15000 tokens bevatten
 * De query mag niet meer dan 200000 whitespace-tokens bevatten
+
+U moet zich ook bewust zijn van:
+
+* Er wordt een fout in een veldconflict geretourneerd wanneer uw GraphQL-query velden met dezelfde naam bevat in twee (of meer) modellen:
+
+   * Dus waar:
+
+      * Twee (of meer modellen) worden gebruikt als mogelijke verwijzingen; wanneer zij als toegestaan worden gedefinieerd **Modeltype** in de Content Fragment reference.
+
+     en:
+
+      * Deze twee modellen hebben gebieden met een gemeenschappelijke naam; dat betekent de zelfde naam voorkomt in beide modellen.
+
+     en
+
+      * Deze velden zijn van verschillende gegevenstypen.
+
+   * Bijvoorbeeld:
+
+      * Wanneer twee (of meer) fragmenten met verschillende modellen (bijvoorbeeld `M1`, `M2`) worden gebruikt als mogelijke verwijzingen (Content Reference of Fragment Reference) uit een ander fragment, bijvoorbeeld `Fragment1` `MultiField/List`
+      * Deze twee fragmenten met verschillende modellen (`M1`, `M2`) hebben velden met dezelfde naam, maar verschillende typen.
+Ter illustratie:
+         * `M1.Title` als `Text`
+         * `M2.Title` als `Text/MultiField`
+      * Dan zal een fout van het gebiedsconflict voorkomen als de vraag van GraphQL bevat `Title` veld.
 
 ## Veelgestelde vragen {#faqs}
 

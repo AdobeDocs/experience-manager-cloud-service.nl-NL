@@ -4,10 +4,10 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: e5a48cfd042c0e8d7448007854e1f73bded8cf7f
 workflow-type: tm+mt
-source-wordcount: '3125'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -43,6 +43,12 @@ U kunt ook verschillende eigenschappen definiëren, bijvoorbeeld **Tags**, **Bes
    ![Titel en beschrijving](assets/cf-cfmodels-create.png)
 
 1. Gebruiken **Maken** het lege model opslaan. Een bericht geeft het succes van de handeling aan. U kunt **Openen** het model onmiddellijk te bewerken, of **Gereed** om naar de console terug te keren.
+
+>[!CAUTION]
+>
+>Als u meerdere fragmenten waarnaar wordt verwezen, wilt opvragen, is het niet aan te raden dat de verschillende fragmentmodellen veldnamen met dezelfde naam hebben, maar verschillende typen.
+>
+>Zie voor meer informatie [GraphQL API AEM voor gebruik met inhoudsfragmenten - Beperkingen](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Inhoudsfragmentmodel - eigenschappen {#content-fragment-model-properties}
 
@@ -290,6 +296,12 @@ AEM heeft terugkerende bescherming voor:
 * Inhoudsverwijzingen Dit voorkomt dat de gebruiker een verwijzing naar het huidige fragment toevoegt en kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzingen.
 >
 * Fragmentverwijzingen in GraphQL Als u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze null bij de eerste instantie.
+
+>[!CAUTION]
+>
+Als u meerdere fragmenten waarnaar wordt verwezen, wilt opvragen, is het niet aan te raden dat de verschillende fragmentmodellen veldnamen met dezelfde naam hebben, maar verschillende typen.
+>
+Zie voor meer informatie [GraphQL API AEM voor gebruik met inhoudsfragmenten - Beperkingen](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Content Reference {#content-reference}
 
