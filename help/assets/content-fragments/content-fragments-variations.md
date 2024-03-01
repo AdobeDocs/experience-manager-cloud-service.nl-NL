@@ -2,7 +2,7 @@
 title: Variaties - Fragmentinhoud ontwerpen (elementen - Inhoudsfragmenten)
 description: Begrijp hoe de variaties van het Fragment van de Inhoud u toestaan om inhoud voor het fragment te ontwerpen, dan variaties van die inhoud tot stand te brengen volgens doel, daarom verhogend de flexibiliteit.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 4%
@@ -402,7 +402,7 @@ Ze worden als een referentie toegevoegd op de huidige locatie in het fragment.
 
 ## Overerving {#inheritance}
 
-Overerving is het mechanisme waarbij inhoud automatisch van het ene naar het andere fragment kan worden verplaatst. Overgenomen velden en variaties kunnen het product zijn van [Beheer van meerdere sites](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+Overerving is het mechanisme waarbij inhoud automatisch van het ene naar het andere fragment kan worden verplaatst. Overgenomen velden en variaties kunnen het product zijn van [Beheer van meerdere sites](/help/assets/content-fragments/content-fragments-msm.md).
 
 U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk van de context, kan dit voor een variatie, of een individueel gebied, beschikbaar zijn als het fragment deel van een levende kopie uitmaakt.
 

@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
 workflow-type: tm+mt
 source-wordcount: '4748'
 ht-degree: 3%
@@ -484,7 +484,7 @@ ht-degree: 3%
       + [Markering](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Voorvertoning - JSON-representatie](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [Inhoudsfragmenten opnieuw gebruiken met MSM (voor elementen)](/help/assets/content-fragments/content-fragments-msm.md)
    +  Dynamic Media {#dynamicmedia}
       + Dynamic Media Journey: De basis {#dm-journey}
          + [Deel I: Wat is Dynamic Media - Gebruik van gevallen - Hoe een actief door het systeem stroomt](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -845,7 +845,7 @@ ht-degree: 3%
       + [Admin-API](https://www.aem.live/docs/admin.html)
       + [AEM](https://www.aemstatus.net)
       + Gereedschappen {#tools}
-         + [Chrome-extensie Sidekick](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidetrap Chrome-uitbreiding](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github Bot](https://github.com/apps/aem-code-sync)
          + [Controlelogboek](/help/edge/docs/auditlog.md)
 + Koploos {#headless}

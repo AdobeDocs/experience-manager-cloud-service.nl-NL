@@ -2,9 +2,9 @@
 title: Werken met inhoudsfragmenten (elementen - inhoudsfragmenten)
 description: Leer hoe u met Inhoudsfragmenten in Adobe Experience Manager (AEM) as a Cloud Service inhoud kunt ontwerpen, maken, curven en gebruiken, ideaal voor het ontwerpen van pagina's en het leveren zonder kop. Ook hoe zij samen met MSM kunnen worden gebruikt.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2228'
 ht-degree: 2%
 
 ---
@@ -113,16 +113,6 @@ Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructu
 >[!NOTE]
 >
 >AEM ondersteunt ook het vertalen van fragmentinhoud. Zie [Elementen vertalen](/help/assets/translate-assets.md) voor nadere informatie.
-
-## Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen {#reusing-content-fragments-with-msm-assets}
-
-Indien benaderd via de **Activa** kunt u MSM gebruiken en actieve kopieën maken voor uw fragmenten.
-
-Zie voor meer informatie [Inhoudsfragmenten opnieuw gebruiken met MSM voor elementen](/help/assets/reuse-assets-using-msm.md). Dit schakelt [overerving](/help/assets/content-fragments/content-fragments-variations.md#inheritance) voor zowel variaties als afzonderlijke velden van uw fragmenten.
-
->[!CAUTION]
->
->Als u MSM (dat tot exemplaren van Inhoudsfragmenten leidt) wilt gebruiken, dan om het even welk **Uniek** de beperkingen moeten worden verwijderd uit alle gegevenstypen die in de respectieve [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Inhoudstype {#content-type}
 
@@ -297,6 +287,21 @@ Als u de Content Fragments wilt gebruiken voor het ontwerpen van pagina&#39;s, h
    * Verantwoordelijk voor de lay-out en levering van een fragment, dat wil zeggen, kanalen.
    * Fragmenten hebben een of meer specifieke componenten nodig om de lay-out te definiëren en om enkele of alle elementen/variaties en bijbehorende inhoud te leveren.
    * Wanneer u een fragment naar een pagina sleept in de ontwerpfase, wordt de vereiste component automatisch gekoppeld.
+
+## Inhoudsfragmenten opnieuw gebruiken met MSM (voor elementen) {#reusing-content-fragments-with-msm-assets}
+
+Indien benaderd via de **Activa** kunt u MSM gebruiken en actieve kopieën maken voor uw fragmenten.
+
+Zie voor meer informatie:
+
+* [Inhoudsfragmenten opnieuw gebruiken met MSM (voor elementen)](/help/assets/content-fragments/content-fragments-msm.md)
+* [Elementen hergebruiken met MSM voor middelen](/help/assets/reuse-assets-using-msm.md).
+
+Deze functie [overerving](/help/assets/content-fragments/content-fragments-variations.md#inheritance) voor zowel variaties als afzonderlijke velden van uw fragmenten.
+
+>[!CAUTION]
+>
+>Als u MSM (dat tot exemplaren van Inhoudsfragmenten leidt) wilt gebruiken, dan om het even welk **Uniek** de beperkingen moeten worden verwijderd uit alle gegevenstypen die in de respectieve [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Voorbeeldengebruik {#example-usage}
 
