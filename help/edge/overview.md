@@ -1,17 +1,17 @@
 ---
-title: AEM en Edge Delivery Services
+title: Aan de slag met AEM en Edge Delivery Services
 description: Ontdek hoe AEM as a Cloud Service baat kan hebben bij de prestaties en perfecte Lighthouse-scores van Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
+source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '874'
 ht-degree: 2%
 
 ---
 
 
-# AEM en Edge Delivery Services {#aem-edge}
+# Aan de slag met AEM en Edge Delivery Services {#aem-edge}
 
 Met Edge Delivery Services biedt AEM buitengewone ervaringen die de betrokkenheid en conversies stimuleren. AEM doet dit door het bieden van ervaringen met grote impact die snel bij de auteur en de ontwikkeling zijn. Het is een samenstellbare reeks diensten die een snelle ontwikkelomgeving toelaat waar de auteurs kunnen bijwerken en publiceren snel, en de nieuwe plaatsen worden gelanceerd snel. Als zodanig kunt u met Edge Delivery Services de conversie verbeteren, de kosten verlagen en de snelheid van de inhoud extreem verhogen.
 
