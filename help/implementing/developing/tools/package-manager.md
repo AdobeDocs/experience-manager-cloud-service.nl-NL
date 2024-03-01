@@ -4,9 +4,9 @@ description: Leer de grondbeginselen van AE; pakketbeheer met de Manager van het
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '3774'
+source-wordcount: '3769'
 ht-degree: 0%
 
 ---
@@ -612,4 +612,4 @@ AEM pakketten kunnen worden gebruikt om inhoud te maken en te delen in AEMaaCS-o
 
 [Softwaredistributie](https://downloads.experiencecloud.adobe.com) biedt AEM pakketten voor gebruik op de SDK voor lokale ontwikkeling AEM. AEM pakketten die op softwaredistributie worden geleverd, mogen niet worden geïnstalleerd in AEMaaCS-cloudomgevingen, tenzij dit uitdrukkelijk wordt goedgekeurd door ondersteuning voor Adoben.
 
-Kijk voor meer informatie naar de [Documentatie voor softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+Zie voor meer informatie de [Documentatie voor softwaredistributie.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
