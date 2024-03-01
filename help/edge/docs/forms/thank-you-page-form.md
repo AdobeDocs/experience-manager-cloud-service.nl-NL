@@ -1,12 +1,12 @@
 ---
-title: Hartelijk dank voor EDS Forms configureren
-description: Leer hoe u pagina's voor bedankt kunt configureren en omleiding kunt geven voor EDS Forms om de gebruikerservaring te optimaliseren en gebruikersreizen te stroomlijnen.
+title: Hartelijk dank voor de pagina configureren of formulier omleiden na verzending
+description: Leer hoe u pagina's voor bedankt en omleiding voor Forms Block configureert om de gebruikerservaring te optimaliseren en gebruikersreizen te stroomlijnen.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
+source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Nadat een gebruiker een formulier heeft verzonden, is het van cruciaal belang da
 In het blok Adaptive Forms is het standaardgedrag dat u een pagina voor bedankt weergeeft. U hebt echter de flexibiliteit om deze ervaring af te stemmen op uw specifieke behoeften. U kunt onder andere de volgende opties kiezen:
 
 * [De pagina en het bericht voor bedankt configureren zodat deze aansluiten op uw merk en communicatiedoelstellingen](#configuring-the-thank-you-page-and-message)
-* [Na verzending gebruikers omleiden naar een andere pagina](#redirect-users-to-another-page-post-submission)en hun reis verder te verbeteren
+* [Na verzending gebruikers omleiden naar een andere pagina voor verdere actie](#redirect-users-to-another-page-post-submission)
 
 ## De pagina en het bericht voor bedankt configureren
 
@@ -43,10 +43,10 @@ In het blok Adaptive Forms wordt de pagina &quot;Dankuwel&quot; weergegeven bij 
 
 Standaard leidt het blok Adaptive Forms de gebruikers om naar de pagina &quot;thanku&quot;. Als u gebruikers wilt omleiden naar een andere pagina dan de standaardpagina &quot;Thanku&quot;, hebt u twee opties:
 
-* de bestaande pagina &quot;thankyou&quot; vervangen door een andere pagina, of
-* leidt u de pagina &quot;bedankt&quot; om naar een andere pagina van uw keuze.
+* [De pagina &quot;Dankuwel&quot; vervangen door een andere pagina](#replace-the-existing-thankyou-page)
+* [Omleiding van website gebruiken voor paginaomleiding &quot;thankyou&quot;](#use-website-redirects-for-thankyou-page-redirection)
 
-### De bestaande &quot;thanku&quot;-pagina vervangen
+### De pagina &quot;Thankyou&quot; vervangen
 
 1. Open &quot;[EDS-project]/blocks/form/form.js&quot;.
 1. Wijzig de `thankyou` pagina in de volgende regel naar keuze:
@@ -70,9 +70,15 @@ Standaard leidt het blok Adaptive Forms de gebruikers om naar de pagina &quot;th
 1. Zorg ervoor dat de pagina in uw EDS-projectmap bestaat en publiceer deze.
 
 
-### Websiteomleidingen gebruiken
+### Omleiding van website gebruiken voor paginaomleiding &quot;thankyou&quot;
 
-Configureer een omleiding van een website om de pagina &quot;Thankyou&quot; naar een andere pagina te sturen. Zie de [Documentatie omleiden](https://www.aem.live/docs/redirects) voor gedetailleerde instructies.
+Het omleiden van een gebruiker naar een andere pagina na het verzenden van het formulier kan de gebruikerservaring verbeteren door relevante informatie op te geven, acties te bevestigen en gebruikers naar de gewenste resultaten te leiden. Bijvoorbeeld:
+
+* nadat een gebruiker een inkoopformulier heeft ingevuld, wordt hij of zij omgeleid naar een betalingspagina om de transactie veilig te voltooien.
+* wanneer een registratieformulier voor een gebeurtenis of webinar wordt verzonden, worden gebruikers omgeleid naar een bevestigingspagina met gebeurtenisdetails, zoals datum, tijd en locatie.
+
+Als u de pagina &quot;bedankt&quot; wilt omleiden naar een andere pagina, gebruikt u de [omleidingen van website](https://www.aem.live/docs/redirects) spreadsheet.
+
 
 ## Meer weergeven
 
