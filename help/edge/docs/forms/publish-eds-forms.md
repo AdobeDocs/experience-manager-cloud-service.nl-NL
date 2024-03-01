@@ -4,9 +4,9 @@ description: Een AEM Forms-formulier voor Edge Delivery Services publiceren
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -18,17 +18,53 @@ Als u klaar bent om uw formulier met uw klanten te delen voor gegevensverzamelin
 
 ## Voorwaarden
 
-* De [Formulierblok is ingeschakeld voor uw EDS-project op Github](/help/edge/docs/forms/create-forms.md).
+* De [Het adaptieve blok van de Vorm wordt toegelaten voor uw project EDS op GitHub](/help/edge/docs/forms/create-forms.md).
 * Uw formulier is volledig getest en klaar voor gebruik.
 * Uw [spreadsheet is geconfigureerd](/help/edge/docs/forms/submit-forms.md) om gegevens te accepteren.
 
 ## Uw formulier publiceren
 
-Het formulier publiceren:
++++ 1. Uw spreadsheet publiceren
+
+1. Open uw Microsoft SharePoint- of Google Drive-account en navigeer naar uw AEM Edge Delivery-projectdirectory.
+
+1. Open het werkblad met het formulier. Bijvoorbeeld de `enquiry` formulier Microsoft Excel-werkmap.
+
+1. Gebruiken [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om een voorvertoning van het blad weer te geven.
+
+   ![AEM Sidekick gebruiken om een voorvertoning van het blad weer te geven](/help/edge/assets/preview-form.png)
+
+   Wanneer de voorvertoningsbewerking met succes is voltooid, wordt de spreadsheetinhoud omgezet in de JSON-indeling. De voorvertoningspagina presenteert deze inhoud vervolgens in een gestructureerde tabelindeling. Het bijhorende beeld illustreert bijvoorbeeld de inhoud van een &#39;enquêteformulier&#39;.
+
+   ![Forms Preview JSON-indeling](/help/edge/assets/forms-preview-json-format.png)
+
+1. Gebruik AEM Sidekick om het blad te publiceren. Zorg ervoor dat u de publicatie-URL vastlegt, zoals is vereist voor het weergeven van het formulier in de volgende sectie. De URL-indeling is als volgt:
+
+
+   ```JSON
+       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+   ```
+
+   * `<branch>` Verwijst naar de tak van uw bewaarplaats GitHub.
+   * `<repository>` duidt uw bewaarplaats GitHub aan.
+   * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
+
+   Bijvoorbeeld, als de bewaarplaats van uw project &quot;portaal&quot;wordt genoemd, is het gevestigd onder de rekening &quot;wkndforms&quot;, en u gebruikt de &quot;belangrijkste&quot;tak, kijkt URL als het volgende:
+
+   `https://main--portal--wkndforms.hlx.page/enquiry.json`
+
++++
+
++++ 2. Voeg het formulier toe aan uw webpagina
+
+Voeg de `<form>.json` naar een webpagina om interactie met de klant te vergemakkelijken, zodat invullers het formulier moeiteloos kunnen invullen en verzenden.
+
+
+Het formulier toevoegen aan uw webpagina:
 
 1. Open uw Microsoft SharePoint- of Google Drive-account en navigeer naar uw `[AEM Edge Delivery project directory]`.
 
-1. Open een documentbestand waarin u het formulier wilt insluiten. U kunt bijvoorbeeld het indexbestand openen of een nieuw document maken.
+1. Open een documentbestand waarin u het formulier wilt insluiten. U kunt bijvoorbeeld het dialoogvenster `index.docx` of maak een nieuw document.
 
 1. Bepaal de gewenste sectie in het document waar u het formulier wilt invoegen en navigeer naar de gewenste sectie.
 
@@ -54,18 +90,20 @@ Het formulier publiceren:
    **URL publiceren**
 | Formulier | |—| | [https://main—portal—wkndforms.hlx.live/inquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
 
-1. Gebruiken [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om de pagina voor te vertonen. Het formulier wordt nu weergegeven op de pagina. Hier ziet u bijvoorbeeld het formulier dat is gebaseerd op de [spreadsheet vragen](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
+1. Gebruiken [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om een voorvertoning van de webpagina weer te geven. Het formulier wordt nu weergegeven op de pagina. Hier ziet u bijvoorbeeld het formulier dat is gebaseerd op de [spreadsheet vragen](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
    [![Een voorbeeld-EDS-formulier](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
-   Uw klanten kunnen het formulier nu invullen en verzenden.
+1. Gebruik AEM Sidekick om het formulier te publiceren. Uw klanten kunnen het formulier nu invullen en verzenden.
+
++++
 
 ## Problemen oplossen
 
 +++ Kan gegevens niet naar formulier verzenden
 
-Als er een fout optreedt die lijkt op het volgende bericht, geeft dit aan dat het spreadsheet nog niet is geconfigureerd voor het accepteren van de verzonden gegevens.
+Als u een fout die op het volgende bericht lijkt ontmoet, wijst het erop dat spreadsheet niet aan wordt gevormd [de ingediende](/help/edge/docs/forms/submit-forms.md) nog gegevens.
 
 ![fout bij het verzenden van formulier](/help/edge/assets/form-error.png)
 

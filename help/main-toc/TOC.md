@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
 source-wordcount: '4751'
 ht-degree: 3%
@@ -826,12 +826,12 @@ ht-degree: 3%
          + [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
          + [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)
          + [Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen](/help/edge/docs/forms/rules-forms.md)
+         + [Bedankt, pagina](/help/edge/docs/forms/thank-you-page-form.md)
       + Mogelijkheden {#advanced-features-eds-forms}
          + [Formulierfragmenten](/help/edge/docs/forms/form-fragments.md)
          + [Herhaalbare secties](/help/edge/docs/forms/repeatable-forms.md)
          + [Vertaling](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-         + [Bedankt, pagina](/help/edge/docs/forms/thank-you-page-form.md)
          + [Aangepaste componenten](/help/edge/docs/forms/custom-components-forms.md)
       + Verwijzingen {#forms-references}
          + [Lijst met formulierblokcomponenten](/help/edge/docs/forms/form-components.md)

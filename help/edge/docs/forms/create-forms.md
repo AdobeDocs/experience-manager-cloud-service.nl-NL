@@ -4,21 +4,21 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
 
 
-# Een formulier maken voor een EDS-site (Edge Delivery Service)
+# Een formulier maken met Adaptief formulierblok
 
 In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. Met AEM Forms Edge Delivery&#39;s kunt u formulieren maken met vertrouwde gereedschappen, zoals Word of Google Docs.
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
-AEM Forms Edge Delivery biedt een formulierblok waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt het formulierblok opnemen in uw AEM EDS-project om een formulier te maken. Laten we beginnen:
+AEM Forms Edge Delivery biedt een blok, ook wel Adaptief formulierblok genoemd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt het Adaptief formulierblok opnemen in uw AEM EDS-project om een formulier te maken. Laten we beginnen:
 
 
 ## Vereisten
@@ -26,23 +26,23 @@ AEM Forms Edge Delivery biedt een formulierblok waarmee u eenvoudig formulieren 
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
 * De Dienst van de Levering van de Rand van de opstelling (EDS) GitHub project gebruikend AEM boilerplate en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine. Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie. In dit document wordt de lokale map van het EDS-project (Edge Delivery Service) `[EDS Project repository]` .
-* Klonen met [Forms Block-opslagplaats](https://github.com/adobe/afb) op uw lokale computer. Het bevat de code die het formulier op een EDS-webpagina moet weergeven. In dit document wordt de lokale map van de Forms Block-opslagplaats aangeduid als `[Forms Block repository]`.
 * Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Als u Microsoft SharePoint wilt instellen als inhoudsbron, raadpleegt u [Hoe te om SharePoint te gebruiken](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Een formulier maken
 
-+++ Stap 1: Voeg het blok van de Vorm aan uw project van de Dienst van de Levering van de Rand (EDS) toe.
++++ Stap 1: Voeg het Adaptieve blok van de Vorm aan uw project van de Dienst van de Levering van de Rand (EDS) toe.
 
-Met het formulierblok kunnen gebruikers formulieren maken voor een Edge Delivery Service-site. Nochtans, is dit blok niet inbegrepen in het gebrek AEM boilerplate (die wordt gebruikt om een project van de Dienst van de Levering van de Rand tot stand te brengen). U kunt als volgt het formulierblok naadloos integreren in uw Edge Delivery Service-project:
+Met Adaptief kunnen gebruikers formulieren maken voor een Edge Delivery Service-site. Nochtans, is dit blok niet inbegrepen in het gebrek AEM boilerplate (die wordt gebruikt om een project van de Dienst van de Levering van de Rand tot stand te brengen). Om het Adaptief blok van de Vorm in uw project van de Dienst van de Levering van de Rand naadloos te integreren:
 
-1. **De formulierblokopslagplaats zoeken:** Toegang krijgen tot de [Forms Block-opslagplaats]/blokmap op uw lokale computer en kopieer de `form` map.
-1. **Plak het formulierblok in uw EDS-project:**
+1. **Clone the Adaptive Form blokgegevensopslagplaats**: Kloon de [Adaptieve opslagplaats voor formulierblokken](https://github.com/adobe/afb) op uw lokale computer. Het bevat de code die het formulier op een EDS-webpagina moet weergeven. In dit document wordt de lokale map van de Forms Block-opslagplaats aangeduid als `[Adaptive Form block repository]`.
+1. **Zoek de opslagplaats voor Adaptief formulierblok:** Toegang krijgen tot de [Adaptieve opslagplaats voor formulierblokken]/blokmap op uw lokale computer en kopieer de `form` map.
+1. **Plak het blok Adaptief formulier in uw EDS-project:**
 Ga naar de [EDS-projectopslagplaats]/bloks/ map op uw lokale computer en plak de formuliermap.
 1. **Wijzigingen in GitHub vastleggen:** Controle in de vormomslag en zijn onderliggende dossiers aan uw project van de Dienst van de Levering van de Rand op GitHub.
 
-Na het voltooien van deze stappen, is het blok van de Vorm met succes geïntegreerd in uw het projectbewaarplaats van de Dienst van de Levering van Randen (EDS) op GitHub.
+Na het voltooien van deze stappen, wordt het Adaptieve blok van de Vorm met succes toegevoegd aan uw het projectbewaarplaats van de Dienst van de Levering van Randen (EDS) op GitHub. U kunt nu formulieren maken en toevoegen aan een pagina EDS-sites.
 
 
 **Het oplossen van problemen GitHub bouwt kwesties**
@@ -90,7 +90,7 @@ Ga als volgt te werk om het formulier te maken:
 
    ![AEM Sidekick gebruiken om een voorvertoning van het blad weer te geven](/help/edge/assets/preview-form.png)
 
-   Als u een voorvertoning weergeeft en publiceert, wordt de inhoud van het blad op de tabbladen van de nieuwe browser in JSON-indeling weergegeven. Zorg ervoor dat u de voorbeeld-URL vastlegt, zoals is vereist voor het weergeven van het formulier in de volgende sectie. De URL-indeling is als volgt:
+   Als u een voorbeeld bekijkt, wordt de inhoud van het blad op de tabbladen van de nieuwe browser in JSON-indeling weergegeven. Zorg ervoor dat u de voorbeeld-URL vastlegt, zoals dit is vereist voor het weergeven van het formulier in de volgende sectie. De URL-indeling is als volgt:
 
 
    ```JSON
@@ -111,7 +111,7 @@ Ga als volgt te werk om het formulier te maken:
 +++ Stap 3: Geef een voorbeeld van het formulier weer met de pagina Edge Delivery Service (EDS).
 
 
-Tot nu toe hebt u het formulierblok aan uw EDS-project toegevoegd en de structuur van het formulier voorbereid. Nu een voorbeeld van het formulier weergeven:
+Tot nu toe hebt u het blok Adaptief formulier toegevoegd aan uw EDS-project en de structuur van het formulier voorbereid. Nu een voorbeeld van het formulier weergeven:
 
 1. **Toegang tot uw projectmap:** Open uw Microsoft SharePoint- of Google Drive-account en navigeer naar uw AEM Edge Delivery-projectdirectory.
 
@@ -119,7 +119,7 @@ Tot nu toe hebt u het formulierblok aan uw EDS-project toegevoegd en de structuu
 
 1. **Navigeer naar de gewenste locatie:** Ga naar de gewenste locatie in het document waar u het formulier wilt toevoegen.
 
-1. **Voeg het formulierblok toe:** Voeg een blok met de naam &#39;Form&#39; in het bestand in, zoals hieronder wordt geïllustreerd:
+1. **Voeg het adaptieve formulierblok toe:** Voeg een blok met de naam &#39;Form&#39; in het bestand in, zoals hieronder wordt geïllustreerd:
 
    | Formulier |
    |---|

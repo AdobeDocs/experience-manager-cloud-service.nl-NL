@@ -4,9 +4,9 @@ description: Thema en stijl aanpassen voor een AEM Forms Edge Delivery Service-f
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Formuliervelden opmaken
 
-Forms is van cruciaal belang voor gebruikersinteractie op websites, zodat deze gegevens kunnen invoeren. Deze handleiding behandelt de basisbeginselen van het opmaken van verschillende formuliervelden in de [Formulierblok](/help/edge/docs/forms/create-forms.md)en helpt u visueel aantrekkelijke en gebruiksvriendelijke formulieren te maken.
+Forms is van cruciaal belang voor gebruikersinteractie op websites, zodat deze gegevens kunnen invoeren. Deze handleiding behandelt de basisbeginselen van het opmaken van verschillende formuliervelden in de [Adaptief formulierblok](/help/edge/docs/forms/create-forms.md)en helpt u visueel aantrekkelijke en gebruiksvriendelijke formulieren te maken.
 
 ## Werken met formulierveldtypen
 
-Voordat u naar de stijl gaat, bekijkt u eerst de algemene formulierveldtypen die worden ondersteund door het formulierblok:
+Voordat u naar de stijl gaat, bekijkt u eerst de veelvoorkomende formulierveldtypen die worden ondersteund door het blok Adaptief formulier:
 
 * Invoervelden: dit zijn tekstinvoer, e-mailinvoer, wachtwoordinvoer en meer.
 * Selectievakjesgroepen: wordt gebruikt voor het selecteren van meerdere opties.
@@ -35,7 +35,7 @@ Kennis van de fundamentele CSS-concepten is van cruciaal belang voordat u specif
 * Vakmodel: in het CSS-kadermodel wordt de structuur van HTML-elementen beschreven als een inhoudsgebied dat wordt omgeven door opvulling, randen en marges.
 * Flexbox/Grid: CSS-lay-outs Flexbox en Raster zijn krachtige gereedschappen voor het maken van responsieve en flexibele ontwerpen.
 
-## Een formulier opmaken voor formulierblok
+## Een formulier opmaken voor adaptief formulierblok
 
 Het formulierblok biedt een gestandaardiseerde HTML-structuur, waardoor het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
 

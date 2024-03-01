@@ -4,9 +4,9 @@ description: Krachtige formulieren sneller maken met spreadsheets en formulierbl
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek
 1. Voer een gewenste titel in en typ onder velden de namen van de velden die u wilt weergeven in het bericht Slack. Elke kop moet worden gescheiden door een komma (bijvoorbeeld naam, e-mail).
 
 
-Het blad is nu ingesteld op het ontvangen van gegevens. U kunt [Een voorbeeld van het formulier weergeven met behulp van het formulierblok](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [aanvragen voor POST gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
+Het blad is nu ingesteld op het ontvangen van gegevens. U kunt [Een voorbeeld van het formulier weergeven met het blok Adaptief formulier](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [aanvragen voor POST gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
 
 >[!WARNING]
 >
@@ -168,7 +168,7 @@ Het blad is nu ingesteld op het ontvangen van gegevens. U kunt [Een voorbeeld va
 
 ## Gegevens naar uw werkblad verzenden {#send-data-to-your-sheet}
 
-Nadat het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van het formulier weergeven met behulp van het formulierblok](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [Admin API&#39;s gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
+Nadat het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van het formulier weergeven met het blok Adaptief formulier](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [Admin API&#39;s gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
 
 ### Admin API&#39;s gebruiken om gegevens naar uw werkblad te verzenden
 
