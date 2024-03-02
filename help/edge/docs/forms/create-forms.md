@@ -4,7 +4,7 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -18,7 +18,7 @@ In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendel
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
-![Op documenten gebaseerd ontwerpecosysteem](/help/edge/assets/document-based-authoring-workflow.png)
+![Op documenten gebaseerd ontwerpecosysteem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 AEM Forms Edge Delivery biedt een blok, ook wel Adaptief formulierblok genoemd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt het Adaptief formulierblok opnemen in uw AEM EDS-project om een formulier te maken. Laten we beginnen:
 

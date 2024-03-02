@@ -4,9 +4,9 @@ description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve f
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,10 @@ ht-degree: 0%
 
 # De spreadsheet voorbereiden voor het accepteren van gegevens
 
+![Op documenten gebaseerd ontwerpecosysteem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/create-forms.md), is het tijd om de overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen.
+
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -43,6 +46,7 @@ Het werkblad inschakelen:
 
 
 Nadat de veldnamen aan de `incoming` blad, kan uw formulier opmerkingen accepteren. U kunt een voorbeeld van het formulier bekijken en gegevens naar het blad verzenden.
+
 
 U ziet ook de volgende wijzigingen in uw spreadsheet:
 

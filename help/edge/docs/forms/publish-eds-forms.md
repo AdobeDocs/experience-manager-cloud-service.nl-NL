@@ -4,9 +4,9 @@ description: Een AEM Forms-formulier voor Edge Delivery Services publiceren
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 # Uw formulier publiceren
 
 Als u klaar bent om uw formulier met uw klanten te delen voor gegevensverzameling of verzending, kunt u het gewoon publiceren, zodat het formulier direct beschikbaar is voor uw klanten.
+
+![Op documenten gebaseerd ontwerpecosysteem](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## Voorwaarden
 

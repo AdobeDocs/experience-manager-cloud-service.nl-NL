@@ -4,20 +4,21 @@ description: Dit document biedt een overzicht van de formuliercomponenten en hun
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
 
-# Formuliercomponenten
+# A Developer&#39;s Guide to Form Components and Properties: AEM Forms Edge Delivery Service
 
 Met de AEM Forms Edge Delivery Service kunt u gebruikersvriendelijke en interactieve formulieren maken met behulp van verschillende componenten. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
 
-Het adaptieve formulierblok genereert een [uniforme HTML-structuur](/help/edge/docs/forms/style-theme-forms.md) voor alle veldtypen en -containers (panelen) die de consistentie waarborgen. Deze consistente structuur maakt het eenvoudiger om [een formulier opmaken](/help/edge/docs/forms/style-theme-forms.md).
+![Een voorbeeldspreadsheet met enkele componenten en eigenschappen](/help/edge/assets/sample-form-in-spreadsheet.png)
 
+Het adaptieve formulierblok genereert een [uniforme HTML-structuur](/help/edge/docs/forms/style-theme-forms.md) voor alle veldtypen en -containers (panelen) die de consistentie waarborgen. Deze consistente structuur maakt het eenvoudiger om [een formulier opmaken](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Beschikbare componenten
 
@@ -38,6 +39,8 @@ Hier volgt een overzicht van de beschikbare componenten:
 - Deelvensters/containers: gerelateerde formulierelementen groeperen voor een betere organisatie. Het is een combinatie van de [veldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) en [legenda](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
+
+
 ## Eigenschappen van componenten
 
 Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de weergave ervan kunt bepalen. Hier worden de eigenschappen ondersteund door de componenten Adaptief formulierblok:
@@ -45,7 +48,7 @@ Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de w
 
 | Eigenschap | Toepasselijke onderdelen | Details |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Type | Alles | Hiermee wordt het type component opgegeven. Deze eigenschap bepaalt het gedrag en de weergave van het invoerveld. Voor tekstinvoer kan het type bijvoorbeeld &#39;text&#39;, &#39;email&#39; voor e-mailinvoer en &#39;password&#39; voor wachtwoordinvoer zijn. Adaptief formulierblok ondersteunt alle geldige HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">invoertypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a> als type. |
+| Type | Alles | Hiermee wordt het type component opgegeven. Deze eigenschap bepaalt het gedrag en de weergave van het invoerveld. Voor tekstinvoer kan het type bijvoorbeeld &#39;text&#39;, &#39;email&#39; voor e-mailinvoer en &#39;password&#39; voor wachtwoordinvoer zijn. Ondersteuning voor adaptief formulierblok  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle geldige HTML5-invoertypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a> als type. |
 | Naam | Alles | Hiermee wordt de component aangegeven voor het verzenden van formulieren. Het kenmerk name wordt gebruikt wanneer de formuliergegevens naar de server worden verzonden, waarbij de gebruikersinvoer aan een specifiek veld wordt gekoppeld. |
 | Label | Alles | Biedt contextuele informatie aan gebruikers. Het label is de tekst die naast de component wordt weergegeven en geeft gebruikers aanwijzingen over welke informatie moet worden ingevoerd. |
 | Waarde | Tekst, wachtwoord, e-mail, Aantal, Waaier, Datum en zijn varianten (datetime-local, maand, week, tijd), Checkbox, Radio, Verborgen, Verzenden, Knoop | Specifies the initial value of the component. Voor tekstinvoer, tekstgebied en geselecteerde elementen is dit de standaardtekst of -optie die wordt weergegeven. Voor componenten van radio en checkbox, is dit de waarde/de gegevens die worden voorgelegd wanneer zij worden geselecteerd. Het kenmerk value is optioneel, maar moet als verplicht worden beschouwd voor selectievakjes en radio-invoer. |
@@ -192,4 +195,12 @@ Here is the table which outlines how core components correspond to their HTML-5 
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>
-</table>
+</table> -->
+
+## Meer weergeven
+
+- [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
+- [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
+- [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-eds-forms.md)
+- [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
+- [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)
