@@ -4,7 +4,7 @@ description: Een AEM Forms-formulier voor Edge Delivery Services publiceren
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Als u klaar bent om uw formulier met uw klanten te delen voor gegevensverzamelin
 
 ## Voorwaarden
 
-* De [Het adaptieve blok van de Vorm wordt toegelaten voor uw project EDS op GitHub](/help/edge/docs/forms/create-forms.md).
+* De [Het adaptieve Blok van de Vorm wordt toegelaten voor uw project EDS op GitHub](/help/edge/docs/forms/create-forms.md).
 * Uw formulier is volledig getest en klaar voor gebruik.
 * Uw [spreadsheet is geconfigureerd](/help/edge/docs/forms/submit-forms.md) om gegevens te accepteren.
 

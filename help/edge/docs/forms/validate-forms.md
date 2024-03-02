@@ -1,12 +1,12 @@
 ---
-title: Van werkbladen tot Forms - Validaties voor formulierblokvelden beheren
-description: Krachtige formulieren sneller maken met spreadsheets en formulierblokvelden! Deze handleiding helpt u bij het maken van aangepaste validaties voor EDS Forms Block-velden.
+title: Van spreadsheets naar Forms - Validaties voor adaptieve formulierblokvelden beheren
+description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve formulierblokvelden! Deze handleiding helpt u bij het maken van aangepaste validaties voor EDS Forms Block-velden.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Validaties toevoegen aan formuliervelden
 
-Formulierblok heeft ingebouwde validatiefuncties. Deze validaties worden automatisch toegepast in moderne browsers op basis van het gekozen veldtype en de aanvullende eigenschappen die u opgeeft.
+Adaptief formulierblok heeft ingebouwde validatiefuncties. Deze validaties worden automatisch toegepast in moderne browsers op basis van het gekozen veldtype en de aanvullende eigenschappen die u opgeeft.
 
 ## Veldtypen en validatie
 
-Het formulierblok ondersteunt een groot aantal [HTML-5-invoertypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), inclusief tekst, e-mail, nummer, datum en meer. Het biedt ook ruimte [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), selecteren en veldset, samen met uitgebreide invoervalideringsfuncties die inherent zijn aan HTML-5.
+Het adaptieve formulierblok ondersteunt diverse [HTML-5-invoertypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), inclusief tekst, e-mail, nummer, datum en meer. Het biedt ook ruimte [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), selecteren en veldset, samen met uitgebreide invoervalideringsfuncties die inherent zijn aan HTML-5.
 
 gebruikt de het gebiedstypes van HTML om het soort gegevens te bepalen een gebruiker kan ingaan. Verschillende veldtypen hebben verschillende ingebouwde validatieregels:
 

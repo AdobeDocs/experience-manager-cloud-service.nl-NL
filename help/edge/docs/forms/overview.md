@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1c6e44fd6652d93ba73bc2eb3604cd08eae7a33c
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -66,6 +66,21 @@ U kunt de service gebruiken om:
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
     -->
+
+## Belangrijkste mogelijkheden
+
+* **Op HTML5 gebaseerde componenten van het Gebied van de Vorm**: Met de AEM Forms Edge Delivery Service kunt u gebruikersvriendelijke en interactieve formulieren maken met formuliervelden die zijn gebaseerd op geldige HTML 5 [invoertypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a>  componenten. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
+
+* **Toegankelijkheid**: De velden in het formulierblok zijn toegankelijk. Elk label is gekoppeld aan het desbetreffende invoerelement en id&#39;s worden automatisch gegenereerd voor koppelingen. Beschrijvingen die aan velden zijn gekoppeld, worden gekoppeld via het kenmerk aria-beschreven door. Toetsenbordnavigatie met de standaardTab/Shift + Tab-toetsen wordt ondersteund.
+
+* **Formulierregels**: Maak logica die de zichtbaarheid, validatie en gedrag van velden aanpast op basis van gebruikersinvoer of vooraf gedefinieerde voorwaarden. Regels bieden een flexibele en intuïtieve manier om intelligentie toe te voegen aan uw formulieren, zodat deze zich naadloos kunnen aanpassen op basis van gebruikersinvoer.
+
+* **Bestand uploaden**: Verbeter uw formulieren met naadloze mogelijkheden voor bestandsbijlagen. Of u nu documenten, afbeeldingen of andere bestanden van uw gebruikers moet verzamelen, het Adaptief formulierblok stelt u in staat om de functionaliteit voor het uploaden van bestanden moeiteloos te integreren. Als er aangepaste afhandelingsopties beschikbaar zijn, kunt u het uploadproces voor het bestand aanpassen aan uw specifieke vereisten.
+
+* **Formuliervalidatie**: Voordat het formulier wordt verzonden, wordt het gevalideerd en worden ongeldige velden gemarkeerd met foutberichten die aan de gebruiker worden weergegeven. Voor de weergave van deze fouten zijn verschillende patronen beschikbaar.
+
+* **Styling Forms**: Elk formulierveld heeft een vaste HTML-structuur die verder kan worden versierd met behulp van aangepaste CSS- of JavaScript-bestanden. Kiezers voor het activeren van velden in CSS/JS worden opgegeven op basis van type en naam.
+
 
 ## Formulieren maken
 

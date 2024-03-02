@@ -4,9 +4,9 @@ description: Thema en stijl aanpassen voor een AEM Forms Edge Delivery Service-f
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Forms is van cruciaal belang voor gebruikersinteractie op websites, zodat deze g
 
 ## Werken met formulierveldtypen
 
-Voordat u naar de stijl gaat, bekijkt u eerst de veelvoorkomende formulierveldtypen die worden ondersteund door het blok Adaptief formulier:
+Voordat u naar de stijl gaat, bekijkt u eerst de veelvoorkomende formulierveldtypen die worden ondersteund door het Adaptief formulierblok:
 
 * Invoervelden: dit zijn tekstinvoer, e-mailinvoer, wachtwoordinvoer en meer.
 * Selectievakjesgroepen: wordt gebruikt voor het selecteren van meerdere opties.
@@ -37,9 +37,9 @@ Kennis van de fundamentele CSS-concepten is van cruciaal belang voordat u specif
 
 ## Een formulier opmaken voor adaptief formulierblok
 
-Het formulierblok biedt een gestandaardiseerde HTML-structuur, waardoor het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
+Het adaptieve formulierblok biedt een gestandaardiseerde HTML-structuur, waardoor het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
 
-* **Standaardstijlen bijwerken**: U kunt de standaardstijlen van een formulier wijzigen door de `/blocks/form/form.css file`. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Voor instructies bij het toevoegen van het Blok van de Vorm aan uw project, verwijs naar [een formulier maken](/help/edge/docs/forms/create-forms.md).
+* **Standaardstijlen bijwerken**: U kunt de standaardstijlen van een formulier wijzigen door de `/blocks/form/form.css file`. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Voor instructies over het toevoegen van het AanpassingsBlok van de Vorm aan uw project, verwijs naar [een formulier maken](/help/edge/docs/forms/create-forms.md).
 
 * **Aanpassing**: De standaardwaarde gebruiken `forms.css` als basis en pas deze aan om de vormgeving van uw formuliercomponenten te wijzigen, zodat het visueel aantrekkelijk en gebruiksvriendelijk wordt. De bestandsstructuur stimuleert de organisatie en handhaaft stijlen voor formulieren, waardoor consistente ontwerpen op uw website worden bevorderd.
 
@@ -60,7 +60,7 @@ Het formulierblok biedt een gestandaardiseerde HTML-structuur, waardoor het sele
 
 ## Structuur van componenten
 
-Het formulierblok biedt een consistente HTML-structuur voor verschillende formulierelementen, zodat u eenvoudig kunt opmaken en beheren. U kunt de componenten manipuleren met CSS voor opmaakdoeleinden.
+Het adaptieve formulierblok biedt een consistente HTML-structuur voor verschillende formulierelementen, waardoor de opmaak en het beheer worden vereenvoudigd. U kunt de componenten manipuleren met CSS voor opmaakdoeleinden.
 
 ### Algemene componenten (behalve dropdowns, radiegroepen, en checkbox groepen):
 
@@ -421,6 +421,6 @@ U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe
 }
 ```
 
-Deze CSS richt zich op alle inputelementen die binnen een element worden gevestigd dat de klasse heeft `form-otp`. De HTML-structuur van uw formulier volgt de conventies van het formulierblok. Dit houdt in dat er een container is gemarkeerd met de klasse &quot;form-otp&quot; die het veld bevat met de naam &quot;otp&quot;.
+Deze CSS richt zich op alle inputelementen die binnen een element worden gevestigd dat de klasse heeft `form-otp`. De HTML-structuur van het formulier volgt de conventies van het Adaptief formulierblok. Dit houdt in dat er een container is gemarkeerd met de klasse &quot;form-otp&quot; die het veld bevat met de naam &quot;otp&quot;.
 
 
