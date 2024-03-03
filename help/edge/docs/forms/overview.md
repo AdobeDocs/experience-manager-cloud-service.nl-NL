@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,10 @@ U kunt de service gebruiken om:
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,6 +39,8 @@ U kunt de service gebruiken om:
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -62,25 +61,33 @@ U kunt de service gebruiken om:
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
     -->
 
-## Belangrijkste mogelijkheden
+## Belangrijkste kenmerken
 
-* **Op HTML5 gebaseerde componenten van het Gebied van de Vorm**: Met de AEM Forms Edge Delivery Service kunt u gebruikersvriendelijke en interactieve formulieren maken met formuliervelden die zijn gebaseerd op geldige HTML 5 [invoertypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a>  componenten. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
+* **Op HTML5 gebaseerde componenten van het Gebied van de Vorm**: Met de AEM Forms Edge Delivery Service kunt u gebruikersvriendelijke en interactieve formulieren maken met behulp van formuliercomponenten op basis van HTML5 [invoertypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a>  elementen. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
 
 * **Toegankelijkheid**: De velden in het formulierblok zijn toegankelijk. Elk label is gekoppeld aan het desbetreffende invoerelement en id&#39;s worden automatisch gegenereerd voor koppelingen. Beschrijvingen die aan velden zijn gekoppeld, worden gekoppeld via het kenmerk aria-beschreven door. Toetsenbordnavigatie met de standaardTab/Shift + Tab-toetsen wordt ondersteund.
 
-* **Formulierregels**: Maak logica die de zichtbaarheid, validatie en gedrag van velden aanpast op basis van gebruikersinvoer of vooraf gedefinieerde voorwaarden. Regels bieden een flexibele en intuïtieve manier om intelligentie toe te voegen aan uw formulieren, zodat deze zich naadloos kunnen aanpassen op basis van gebruikersinvoer.
+* **Stijlen**: Elk formulierveld heeft een vaste HTML-structuur die eenvoudig kan worden versierd met behulp van aangepaste CSS- of JavaScript-bestanden. Kiezers voor velden in CSS en JS worden opgegeven op basis van type en naam. U kunt eenvoudig nieuwe kiezers maken vanwege de gestandaardiseerde structuur.
 
-* **Bestand uploaden**: Verbeter uw formulieren met naadloze mogelijkheden voor bestandsbijlagen. Of u nu documenten, afbeeldingen of andere bestanden van uw gebruikers moet verzamelen, het Adaptief formulierblok stelt u in staat om de functionaliteit voor het uploaden van bestanden moeiteloos te integreren. Als er aangepaste afhandelingsopties beschikbaar zijn, kunt u het uploadproces voor het bestand aanpassen aan uw specifieke vereisten.
+* **Regels**: Maak eenvoudig logica die de zichtbaarheid, validatie en functionaliteit van velden aanpast op basis van gebruikersinvoer of vooraf gedefinieerde voorwaarden. Regels bieden een flexibele en intuïtieve manier om intelligentie toe te voegen aan uw formulieren, zodat deze zich naadloos kunnen aanpassen op basis van gebruikersinvoer.
 
-* **Formuliervalidatie**: Voordat het formulier wordt verzonden, wordt het gevalideerd en worden ongeldige velden gemarkeerd met foutberichten die aan de gebruiker worden weergegeven. Voor de weergave van deze fouten zijn verschillende patronen beschikbaar.
+* **Validaties**: Voordat het formulier wordt verzonden, wordt het gevalideerd en worden ongeldige velden gemarkeerd met foutberichten die aan de gebruiker worden weergegeven. Voor de weergave van deze fouten zijn verschillende patronen beschikbaar.
 
-* **Styling Forms**: Elk formulierveld heeft een vaste HTML-structuur die verder kan worden versierd met behulp van aangepaste CSS- of JavaScript-bestanden. Kiezers voor het activeren van velden in CSS/JS worden opgegeven op basis van type en naam.
+Er zijn enkele geavanceerde functies die op verzoek beschikbaar zijn:
+
+* **Bestand uploaden**: U kunt mogelijkheden voor bestandsbijlagen toevoegen aan uw formulieren. Of u nu documenten, afbeeldingen of andere bestanden van uw gebruikers moet verzamelen, de functie voor het uploaden van bestanden is een handige manier. Als er aangepaste afhandelingsopties beschikbaar zijn, kunt u het uploadproces voor het bestand aanpassen aan uw specifieke vereisten.
+
+* **reCAPTCHA**: Profiteer van de naadloze integratie van Google reCAPTCHA in uw formulieren met onze OOTB-ondersteuning (out-of-the-box). Bescherm uw formulieren tegen frauduleuze activiteiten, spam en misbruik, terwijl u een soepele en ononderbroken gebruikerservaring behoudt.
+
+* **E-mailbericht verzenden bij het verzenden van het formulier**: Elimineer de gedoe met handmatige follow-ups en zorg voor tijdige communicatie met onze ingebouwde e-mailautomatisering voor het verzenden van formulieren. Met deze geïntegreerde oplossing kunt u eenvoudig relevante partijen op de hoogte stellen, inclusief het verzenden van formuliergegevens, wanneer iemand een formulier op uw website invult. Geen behoefte aan complexe configuraties of extra hulpmiddelen - het is klaar om uit de doos te gebruiken.
+
 
 ## Workflow
 

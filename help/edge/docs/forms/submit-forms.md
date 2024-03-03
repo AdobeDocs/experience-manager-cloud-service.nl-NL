@@ -4,9 +4,9 @@ description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve f
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
 
 Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/create-forms.md), is het tijd om de overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen.
 
+![Op documenten gebaseerd ontwerpecosysteem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -46,6 +47,7 @@ Het werkblad inschakelen:
 
 
 Nadat de veldnamen aan de `incoming` blad, kan uw formulier opmerkingen accepteren. U kunt een voorbeeld van het formulier bekijken en gegevens naar het blad verzenden.
+
 
 
 U ziet ook de volgende wijzigingen in uw spreadsheet:
@@ -290,6 +292,6 @@ Vervolgens kunt u het bedankbericht aanpassen, [een pagina voor bedankt configur
 
 * [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
 * [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
-* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-eds-forms.md)
+* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-forms.md)
 * [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
 * [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)

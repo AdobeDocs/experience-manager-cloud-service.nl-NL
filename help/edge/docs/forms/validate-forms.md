@@ -4,7 +4,7 @@ description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve f
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -33,6 +33,6 @@ Tel: Dit veldtype is specifiek ontworpen voor telefoonnummers en kan validatie o
 
 * [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
 * [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
-* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-eds-forms.md)
+* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-forms.md)
 * [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
 * [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)

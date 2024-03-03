@@ -4,7 +4,7 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Ga als volgt te werk om het formulier te maken:
 
    ![naam standaardblad wijzigen in &#39;shared-default&#39;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;standaard-gedeelde&#39; blad in. Elke rij moet een [formulierveld](/help/edge/docs/forms/form-components.md), met kolomkoppen die het corresponderende veld definiëren [eigenschappen](/help/edge/docs/forms/eds-form-field-properties).
+1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;standaard-gedeelde&#39; blad in. Elke rij moet een [formulierveld](/help/edge/docs/forms/form-components.md#available-components), met kolomkoppen die het corresponderende veld definiëren [eigenschappen](/help/edge/docs/forms/form-components.md#components-properties).
 
    Voor een snel begin kunt u de inhoud van het dialoogvenster [Opzoekblad](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) in uw spreadsheet. Sla het werkblad op nadat u de inhoud hebt gekopieerd.
 
@@ -159,6 +159,6 @@ Tot nu toe hebt u het Adaptief formulierblok toegevoegd aan uw EDS-project en de
 * [Eigenschappen van formulierveld](/help/edge/docs/forms/eds-form-field-properties)
 * [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
 * [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
-* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-eds-forms.md)
+* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-forms.md)
 * [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
 * [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)

@@ -2,9 +2,9 @@
 description: Deze zelfstudie bevat instructies om een sectie van een formulier herhaalbaar te maken
 title: Herhaalbare secties in Edge Delivery Services
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Neem bijvoorbeeld een formulier dat wordt gebruikt om informatie te verzamelen v
 
 ## Vereisten
 
-Stel Edge Delivery Service (EDS) Github-project in met AEM boilerplate en kloon de corresponderende Github-opslagplaats op uw lokale computer. Zie [zelfstudie ontwikkelaar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) voor meer informatie.
+De Dienst van de Levering van de Rand van de opstelling (EDS) GitHub project gebruikend AEM boilerplate en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine. Zie [zelfstudie ontwikkelaar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) voor meer informatie.
 
 ## Herhaalbare secties in Edge Delivery
 

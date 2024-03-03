@@ -4,7 +4,7 @@ description: Leer hoe u pagina's voor bedankt en omleiding voor Forms Block conf
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -86,6 +86,6 @@ Als u de pagina &quot;bedankt&quot; wilt omleiden naar een andere pagina, gebrui
 * [Eigenschappen van formulierveld](/help/edge/docs/forms/eds-form-field-properties)
 * [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
 * [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
-* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-eds-forms.md)
+* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-forms.md)
 * [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
 * [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)
