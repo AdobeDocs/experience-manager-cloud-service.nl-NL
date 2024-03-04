@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
+source-git-commit: ea61a794788ee2a59e05727fa3c4fd4fc1ca9956
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -227,15 +227,19 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 ## Dynamic Media - Ondersteunde rasterafbeeldingsindelingen {#image-support-dynamic-media}
 
 | Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden | Typen instellen die deze indeling ondersteunen |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
+|---|:---:|:---:|:---:|:---:|:---:| --- |
+| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | BMP | ✓ | - | - | - | - | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript&reg;-eps-and-pdf-file-formats-adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
+| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+<!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
