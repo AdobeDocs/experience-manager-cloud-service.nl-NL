@@ -1,8 +1,7 @@
 ---
 title: Meldingen beheren
 description: De bewerkingen die worden uitgevoerd op de middelen of mappen die beschikbaar zijn in de opslagplaats, controleren met behulp van de meldingen in de middelenweergave.
-exl-id: 5c0039a2-caa2-4b55-b963-0e7e9e542c47
-source-git-commit: bdbe47a8f06d2ec1cd75103905677fcd3955632d
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Middelen, mappen en verzamelingen controleren {#watch-assets-folders}
 
-Met de middelenweergavemeldingen kunt u de bewerkingen controleren die worden uitgevoerd op de middelen, mappen of verzamelingen die beschikbaar zijn in de opslagplaats. U moet de inhoud selecteren en zich erop abonneren waarvoor de meldingen naar u worden verzonden. U kunt ook de categorieën configureren waarvoor de meldingen naar u worden verzonden.
+Met de middelenweergavemeldingen kunt u de bewerkingen controleren die worden uitgevoerd op de middelen, mappen of verzamelingen in de opslagplaats. U moet de inhoud selecteren en zich erop abonneren waarvoor de meldingen naar u worden verzonden. U kunt ook de categorieën configureren waarvoor de meldingen naar u worden verzonden.
 
 ## Abonneren op berichtcategorieën {#subscribe-to-notification-categories}
 
@@ -90,7 +89,7 @@ In de weergave Elementen wordt een succesbericht weergegeven. U kunt op **[!UICO
 
 ![Meldingen in middelenweergave](assets/watch-assets.png)
 
-In de weergave Elementen worden nu meldingen verzonden voor de geabonneerde categorieën. U kunt ook meerdere elementen, mappen of verzamelingen selecteren en op **[!UICONTROL Watch]** om tijd te besparen. Als u echter meerdere entiteiten selecteert waarop een aantal van deze al is geabonneerd, **[!UICONTROL Watch]** wordt niet weergegeven.
+In de weergave Elementen worden nu meldingen verzonden voor de geabonneerde categorieën. U kunt ook meerdere elementen, mappen of verzamelingen selecteren en op **[!UICONTROL Watch]** tijd besparen. Als u echter meerdere entiteiten selecteert waarop een aantal van deze al is geabonneerd, **[!UICONTROL Watch]** wordt niet weergegeven.
 
 Als u uw abonnement wilt opzeggen, selecteert u het element, de map of de verzameling waarvoor u een abonnement hebt genomen en klikt u op **[!UICONTROL Unwatch]**.
 

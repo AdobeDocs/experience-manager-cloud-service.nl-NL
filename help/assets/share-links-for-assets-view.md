@@ -1,10 +1,9 @@
 ---
 title: Hoe kan ik koppelingen naar elementen delen?
 description: Een koppeling genereren en elementen delen met anderen die geen toegang hebben tot de [!DNL Assets view] toepassing.
-exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
