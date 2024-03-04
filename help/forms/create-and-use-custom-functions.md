@@ -5,9 +5,9 @@ keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een doua
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
+source-git-commit: 46fbed98a806f62dd1882eb0085d4338c5cd51a7
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 ## Inleiding
 
 AEM Forms biedt ondersteuning voor aangepaste functies, zodat gebruikers JavaScript-functies kunnen definiëren voor het implementeren van complexe bedrijfsregels. Deze aangepaste functies vergroten de mogelijkheden van formulieren door het bewerken en verwerken van ingevoerde gegevens te vergemakkelijken, zodat aan bepaalde vereisten wordt voldaan. Ze maken het ook mogelijk het formuliergedrag dynamisch te wijzigen op basis van vooraf gedefinieerde criteria.
-In Adaptive Forms kunt u aangepaste functies gebruiken in het dialoogvenster [regel-editor van een adaptief formulier](/help/forms/rule-editor.md#custom-functions) specifieke validatieregels voor formuliervelden te maken.
+In Adaptive Forms kunt u aangepaste functies gebruiken in het dialoogvenster [regel-editor van een adaptief formulier](/help/forms/rule-editor-core-components.md) specifieke validatieregels voor formuliervelden te maken.
 
 Laten we begrijpen hoe een aangepaste functie wordt gebruikt waarbij gebruikers het e-mailadres invoeren. Bovendien moet het ingevoerde e-mailadres een specifieke notatie hebben (het bevat een &#39;@&#39;-symbool en een domeinnaam). Maak een aangepaste functie als &quot;ValidateEmail&quot;, die het e-mailadres als invoer gebruikt en waar retourneert als het geldig en anders onwaar is.
 
@@ -49,6 +49,73 @@ De voordelen van het gebruik van aangepaste functies in Adaptive Forms zijn:
 * **Validatie van gegevens**: Met aangepaste functies kunt u aangepaste controles uitvoeren op de invoer van formulieren en opgegeven foutberichten weergeven.
 * **Dynamisch gedrag**: Met aangepaste functies kunt u het dynamische gedrag van uw formulieren bepalen op basis van specifieke omstandigheden. U kunt bijvoorbeeld velden weergeven/verbergen, veldwaarden wijzigen of de logica van het formulier dynamisch aanpassen.
 * **Integratie**: U kunt aangepaste functies gebruiken om te integreren met externe API&#39;s of services. Het helpt in het halen van gegevens uit externe bronnen, het verzenden van gegevens naar externe rustpunten, of het uitvoeren van douaneacties die op externe gebeurtenissen worden gebaseerd.
+
+## Ondersteunde JS-annotaties
+
+Zorg ervoor dat de aangepaste functie die u schrijft, vergezeld gaat van de `jsdoc` boven.
+
+Ondersteund `jsdoc` tags:
+
+* **Persoonlijk**
+Syntaxis: `@private`
+Een functie van het type private is niet opgenomen als een aangepaste functie.
+
+* **Naam**
+Syntaxis: `@name funcName <Function Name>`
+Alternatief `,` u kunt gebruiken: `@function funcName <Function Name>` **of** `@func` `funcName <Function Name>`.
+  `funcName` is de naam van de functie (geen spaties toegestaan).
+  `<Function Name>` is de weergavenaam van de functie.
+
+* **Parameter**
+Syntaxis: `@param {type} name <Parameter Description>`
+U kunt ook het volgende gebruiken: `@argument` `{type} name <Parameter Description>` **of** `@arg` `{type}` `name <Parameter Description>`.
+Geeft parameters weer die door de functie worden gebruikt. Een functie kan meerdere parametertags hebben, één tag voor elke parameter in de volgorde waarin deze voorkomt.
+  `{type}` vertegenwoordigt parametertype. Toegestane parametertypen zijn:
+
+   1. string
+   2. getal
+   3. boolean
+   4. bereik
+   5. string[]
+   6. getal[]
+   7. boolean[]
+   8. date
+   9. date[]
+   10. array
+   11. object
+
+  `scope` verwijst naar een speciaal globals object dat wordt geleverd door de runtime voor formulieren. Het moet de laatste parameter zijn en is niet zichtbaar aan de gebruiker in de regelredacteur. U kunt bereik gebruiken om toegang te krijgen tot leesbare formulier- en veldproxyobjecten voor het lezen van eigenschappen, gebeurtenissen die de regel hebben geactiveerd en een set functies om het formulier te bewerken.
+
+  `object` type wordt gebruikt om leesbaar veldobject in parameter door te geven aan een aangepaste functie in plaats van de waarde door te geven.
+
+  Alle parametertypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. Typen zijn niet hoofdlettergevoelig. Spaties zijn niet toegestaan in de parameternaam.  Parameterbeschrijving kan meerdere woorden bevatten.
+
+* **Optionele parameter**
+Syntaxis: `@param {type=} name <Parameter Description>`
+U kunt ook het volgende gebruiken: `@param {type} [name] <Parameter Description>`
+Standaard zijn alle parameters verplicht. U kunt een parameter optioneel markeren door `=` in het type van de parameter of door de naam van de parameter tussen vierkante haken te plaatsen.
+Laten we bijvoorbeeld declareren `Input1` als optionele parameter:
+   * `@param {type=} Input1`
+   * `@param {type} [Input1]`
+
+* **Retourtype**
+Syntaxis: `@return {type}`
+U kunt ook `@returns {type}`.
+Voegt informatie over de functie toe, zoals zijn doel.
+{type} vertegenwoordigt het terugkeertype van de functie. Toegestane retourtypen zijn:
+
+   1. string
+   2. getal
+   3. boolean
+   4. string[]
+   5. getal[]
+   6. boolean[]
+   7. date
+   8. date[]
+   9. array
+   10. object
+
+Alle andere retourneringstypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. De types van terugkeer zijn niet case-sensitive.
 
 ## Overwegingen bij het maken van aangepaste functies {#considerations}
 
@@ -137,15 +204,15 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
 
 1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 1. Een map maken onder de `[AEM Forms as a Cloud Service repository folder]/apps/` map. Maak bijvoorbeeld een map met de naam `experience-league`.
-1. Navigeren naar `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` en een `ClientLibraryFolder`. Maak bijvoorbeeld een clientbibliotheekmap als `es6clientlibs`.
-1. Een eigenschap toevoegen `categories` met tekenreekstype. Wijs bijvoorbeeld de waarde toe `es6customfunctions` aan de `categories` eigenschap voor de `es6clientlibs` map.
+1. Navigeren naar `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` en een `ClientLibraryFolder`. Maak bijvoorbeeld een clientbibliotheekmap als `customclientlibs`.
+1. Een eigenschap toevoegen `categories` met tekenreekstype. Wijs bijvoorbeeld de waarde toe `customfunctionscategory` aan de `categories` eigenschap voor de `customclientlibs` map.
 
    >[!NOTE]
    >
    > U kunt elke naam kiezen voor `client library folder` en `categories` eigenschap.
 
 1. Een map maken met de naam `js`.
-1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` map.
+1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` map.
 1. Voeg bijvoorbeeld een JavaScript-bestand toe. `function.js`. Het bestand bevat de code voor een aangepaste functie.
 
    >[!NOTE]
@@ -156,7 +223,7 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
 
 1. Sla de `function.js` bestand.
-1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` map.
+1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` map.
 1. Een tekstbestand toevoegen als `js.txt`. Het bestand bevat:
 
    ```javascript
@@ -175,7 +242,7 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
 
 1. [Voer de pijplijn uit.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
 
-Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in cliëntbibliotheek wordt toegevoegd beschikbaar in uw [Editor voor adaptieve formulierregels](/help/forms/rule-editor.md).
+Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in cliëntbibliotheek wordt toegevoegd beschikbaar in uw [Editor voor adaptieve formulierregels](/help/forms/rule-editor-core-components.md).
 
 ### Clientbibliotheek toevoegen in een adaptief formulier{#use-custom-function}
 
@@ -184,7 +251,7 @@ Zodra u de clientbibliotheek hebt geïmplementeerd in uw Forms CS-omgeving, gebr
 1. Open het formulier in de bewerkingsmodus. Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en selecteert u **[!UICONTROL Edit]**.
 1. Open de Inhoudsbrowser en selecteer de **[!UICONTROL Guide Container]** van uw adaptieve formulier.
 1. Klik op de eigenschappen van de container van de hulplijn ![Eigenschappen van hulplijnen](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
-1. Open de **[!UICONTROL Basic]** en selecteert u de naam van de **[!UICONTROL client library category]** in de vervolgkeuzelijst (in dit geval selecteert u `es6customfunctions`).
+1. Open de **[!UICONTROL Basic]** en selecteert u de naam van de **[!UICONTROL client library category]** in de vervolgkeuzelijst (in dit geval selecteert u `customfunctionscategory`).
 
    ![De aangepaste clientbibliotheek van de functie toevoegen](/help/forms/assets/clientlib-custom-function.png)
 
