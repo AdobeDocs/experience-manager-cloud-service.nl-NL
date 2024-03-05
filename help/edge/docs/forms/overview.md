@@ -4,9 +4,9 @@ description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestat
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -89,9 +89,36 @@ Er zijn enkele geavanceerde functies die op verzoek beschikbaar zijn:
 * **E-mailbericht verzenden bij het verzenden van het formulier**: Elimineer de gedoe met handmatige follow-ups en zorg voor tijdige communicatie met onze ingebouwde e-mailautomatisering voor het verzenden van formulieren. Met deze geïntegreerde oplossing kunt u eenvoudig relevante partijen op de hoogte stellen, inclusief het verzenden van formuliergegevens, wanneer iemand een formulier op uw website invult. Geen behoefte aan complexe configuraties of extra hulpmiddelen - het is klaar om uit de doos te gebruiken.
 
 
-## Workflow
+## Beschikbare Forms-blokken
 
-![Op documenten gebaseerd ontwerpecosysteem](/help/edge/assets/document-based-authoring-workflow.png)
+AEM Forms Edge Delivery Service biedt twee typen formulierblokken die aan verschillende behoeften voldoen:
+
+* **Basic Forms Block**: Dit is een veelzijdige optie die geschikt is voor het maken van eenvoudige formulieren met essentiële functies. Hiermee kunt u verschillende invoertypen integreren, zoals tekstvelden, vervolgkeuzemenu&#39;s en keuzerondjes, zodat u gebruikersgegevens op effectieve wijze kunt verzamelen.
+
+* **Adaptief Forms-blok**: Dit geavanceerde blok ontgrendelt aanvullende mogelijkheden buiten het Basic Forms Block, zodat u complexere en interactieve formulieren kunt maken. Hier volgt een overzicht van de belangrijkste kenmerken:
+
+   * Regels: definieer op logica gebaseerde handelingen in uw formulieren. U kunt regels gebruiken om formuliersecties voorwaardelijk weer te geven of te verbergen, velden vooraf in te vullen op basis van gebruikersinvoer en verschillende validaties uit te voeren om de gegevensintegriteit te waarborgen.
+
+   * Uitbreidbaarheid aan de serverzijde: breid de functionaliteit van uw formulieren uit door deze te integreren met logica aan de serverzijde. Hierdoor kunt u complexe berekeningen uitvoeren, communiceren met externe systemen en specifieke taken automatiseren op basis van gebruikersacties in het formulier.
+
+   * Cross Walk: Stroomlijn werkstromen en gegevensbeheer: Gebruik de kracht van AEM aan:
+
+      * Ontwerp gebruikersvriendelijke formulieren met AEM editors.
+
+      * Genereer een &quot;Document of Record&quot; voor een veilige en onvervalsbare archivering van verzonden gegevens.
+
+      * E-signing met Adobe Sign vergemakkelijken voor een vloeiende en veilige ondertekeningservaring.
+
+      * Automatiseer bedrijfsprocessen via AEM workflows en activeer acties op basis van formulierverzendingen.
+
+      * Efficiënte integratie met verschillende gegevensbronnen, zodat gegevens naadloos kunnen worden doorgestuurd en uitgewisseld.
+
+  Voor het gebruik van het Adaptive Forms Block is een extra licentie vereist.
+
+### De juiste Forms Block kiezen
+
+De keuze tussen de Standaard- en Adaptieve Forms-blokken is afhankelijk van uw specifieke vereisten. Als u een eenvoudige oplossing voor het verzamelen van basisgebruikersinformatie nodig hebt, is het Basic Forms Block perfect geschikt. Als uw formulieren echter ingewikkelde logica, gegevensmanipulatie, integratie met externe systemen of gestroomlijnde workflows vereisen met AEM functies, en **u beschikt over de benodigde licentie**, biedt het Adaptive Forms Block de benodigde kracht en flexibiliteit om uw doelen te bereiken.
+
 
 ## Formulieren maken
 
