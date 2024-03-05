@@ -1,9 +1,9 @@
 ---
 title: JWT Credentials Deprection in Adobe Developer Console
 description: Meer informatie over de gevolgen van de afschrijving van JWT-gebruikersgegevens in Adobe Developer Console voor AEM
-source-git-commit: e02e38a5267188111f0392a0a5c7b73e6a4f22b5
+source-git-commit: a354786f1ddfe50b01def85d3c83da09c6a35d2f
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -11,11 +11,15 @@ ht-degree: 0%
 
 # JWT Credentials Deprection in Adobe Developer Console {#jwt-credentials-deprecation-in-adobe-developer-console}
 
+>[!NOTE]
+>
+>AEM als Cloud Service dienen klanten te verwijzen naar [dit artikel](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) voor meer informatie .
+
 Adobe die klanten gebruiken [Adobe Developer Console](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Één van die credentietypes, de geloofsbrieven van de Rekening van de Dienst (JWT), is afgekeurd ten gunste van de geloofsbrieven van Server-aan-Server OAuth. De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 1 Mei, 2024 worden gecreeerd, en de bestaande geloofsbrieven van JWT zullen niet aan of na 1 Jan, 2025 werken. U kunt [lezen over de afgekeurde tekst](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
-Dit artikel verstrekt wat extra context over hoe AEM as a Cloud Service en AEM 6.5 klanten de afschrijving zouden moeten behandelen.
+Dit artikel biedt een extra context voor de manier waarop AEM as a Cloud Service de afleiding moet verwerken.
 
-Het belangrijkste op dit ogenblik weghalen is dat AEM eigenschappen nog niet de nieuwe geloofsbrieven van Server-aan-Server steunen OAuth. De steun zal spoedig — half april 2024 door een AEM versie voor AEM as a Cloud Service, en door een speciaal verenigbaarheidspakket voor AEM 6.5 worden geïnstalleerd, als u het recentste Service Pack 20 of lager (Service Pack 21 en hoger zal automatisch het omvatten) in werking stelt. U kunt een e-mail met instructies hebben ontvangen om uw geloofsbrieven van JWT te migreren, maar rust verzekerd dat u op de geloofsbrieven migratie kunt en zou moeten blokkeren tot AEM het nieuwe server-aan-server credentiële type van OAuth steunt.
+Het belangrijkste op dit ogenblik weghalen is dat AEM eigenschappen nog niet de nieuwe geloofsbrieven van Server-aan-Server steunen OAuth. De steun zal binnenkort — medio april 2024 door een AEM release voor AEM as a Cloud Service komen. U kunt een e-mail met instructies hebben ontvangen om uw geloofsbrieven van JWT te migreren, maar rust verzekerd dat u op de geloofsbrieven migratie kunt en zou moeten blokkeren tot AEM het nieuwe server-aan-server credentiële type van OAuth steunt.
 
 In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-gegevens (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, zodra AEM deze gegevens medio april ondersteunt. [Lees hoe](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) om de geloofsbrieven in de toekomst te vervangen.
 
@@ -28,8 +32,7 @@ In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun J
 
 **Handeling**: Wacht op migratie tot medio april 2024, wanneer AEM het ondersteunt.
 
-**Relevante AEM versies**: AEM as a Cloud Service en Adobe Managed Services (Service Pack 20 en lager).
-
+**Relevante AEM versies**: AEM AS A CLOUD SERVICE
 
 AEM klanten gebruiken AEM Auteur UI om integratie met alle andere oplossingen van de Adobe te vormen. Bijvoorbeeld Adobe Target, Adobe Analytics, Adobe Launch, AFCS en nog veel meer.
 
@@ -41,7 +44,7 @@ Hier ziet u bijvoorbeeld [de instructies](https://docs.mktossl.com/docs/experien
 
 **Handeling**: Wacht op migratie tot medio april 2024, wanneer AEM het ondersteunt.
 
-**Relevante AEM versies**: AEM as a Cloud Service en Adobe Managed Services (Service Pack 20 en lager).
+**Relevante AEM versies**: AEM AS A CLOUD SERVICE
 
 Klanten maken Adobe Developer Console-projecten zodat ze deze kunnen aanroepen [Cloud Manager-API&#39;s](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). De geloofsbrieven in het project van Adobe Developer zouden aan het OAuth server-aan-Server credentietype moeten worden gemigreerd, zodra AEM en de Manager van de Wolk het steunen.
 
@@ -49,7 +52,7 @@ Klanten maken Adobe Developer Console-projecten zodat ze deze kunnen aanroepen [
 
 **Handeling**: Niet migreren omdat de Adobe voor u zal migreren.
 
-**Relevante AEM versies**: Alleen AEM as a Cloud Service.
+**Relevante AEM versies**: AEM as a Cloud Service.
 
 Wanneer de bepalingen van de Manager van de Wolk AEM as a Cloud Service milieu&#39;s, het automatisch een project van de Console van Adobe Developer met geloofsbrieven JWT produceert. Dit project is gemarkeerd als alleen-lezen, zoals in de onderstaande schermafbeelding wordt geïllustreerd. De klanten kunnen en zouden niet moeten proberen om deze projecten aan geloofsbrieven van Server-aan-Server te migreren OAuth; in plaats daarvan, zal de Adobe deze projecten op zijn eigen migreren, alvorens de geloofsbrieven niet meer bruikbaar zijn.
 
