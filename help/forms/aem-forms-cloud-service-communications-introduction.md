@@ -5,9 +5,9 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1443'
 ht-degree: 1%
 
 ---
@@ -134,6 +134,10 @@ Afbeelding: Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meer
 ### Converteren naar en valideren van documenten die voldoen aan PDF/A
 
 U kunt de API&#39;s voor documentmanipulatie gebruiken om een PDF-document te converteren naar een document dat voldoet aan de PDF/A-standaard en om te bepalen of een PDF-document voldoet aan de PDF/A-standaard. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+
+>[!NOTE]
+>
+> AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. De lijst met ondersteunde lettertypen weergeven [klik hier](/help/forms/supported-out-of-the-box-fonts.md).
 
 <!-- 
 

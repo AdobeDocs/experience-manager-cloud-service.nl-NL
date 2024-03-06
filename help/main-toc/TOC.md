@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b2bd6fc61b0d8b79d03ebf9eca7d994a622cc6f2
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '4761'
+source-wordcount: '4768'
 ht-degree: 3%
 
 ---
@@ -694,6 +694,7 @@ ht-degree: 3%
       + [Forms Designer installeren en configureren](/help/forms/installing-configuring-designer.md)
       + [Forms Designer gebruiken om sjablonen te maken](/help/forms/use-forms-designer.md)
       + [Aangepaste lettertypen gebruiken in PDF-documenten](/help/forms/use-custom-fonts.md)
+      + [Lijst met ondersteunde lettertypen in PDF-documenten](/help/forms/supported-out-of-the-box-fonts.md)
       + [Bekende problemen, aanbevolen procedures en veelgestelde vragen](/help/forms/communications-known-issues-limitations.md)
    + Transactierapporten {#using-communications}
       + [Transactierapporten Billable API&#39;s](/help/forms/transaction-reports-billable-apis.md)

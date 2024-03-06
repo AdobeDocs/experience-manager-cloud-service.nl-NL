@@ -3,9 +3,9 @@ title: Hoe te om een document van verslag (DoR) voor AEM Forms te produceren?
 description: Leer een sjabloon te genereren voor een Document of Record (DoR) voor Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
 workflow-type: tm+mt
-source-wordcount: '3984'
+source-wordcount: '4030'
 ht-degree: 0%
 
 ---
@@ -345,13 +345,18 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
       * **Sjabloon**: Als u een aangepaste sjabloon wilt selecteren, bladert u door een selectie van een XDP-bestand in uw [!DNL AEM Forms] server. Als u een sjabloon wilt gebruiken die nog niet op uw [!DNL AEM Forms] server, moet u eerst de XDP naar uw [!DNL AEM Forms] server.
       * **Accentkleur**: De kleur waarin koptekst en scheidingslijnen worden gerenderd in het document of de record PDF.
       * **Lettertypefamilie**: Lettertypefamilie van de tekst in Document of Record PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. De lijst met ondersteunde lettertypen weergeven [klik hier](/help/forms/supported-out-of-the-box-fonts.md).
+
       * **Formulierobjecten opnemen die niet aan het gegevensmodel zijn gebonden**: Als u de eigenschap instelt, worden niet-gebonden velden van op schema gebaseerde adaptieve vorm opgenomen in Document of Record.
       * **Verborgen velden uitsluiten van het document of record**: Als u de eigenschap instelt, worden de verborgen velden aangegeven die kunnen worden uitgesloten van het document met records.
       * **Beschrijving van deelvensters verbergen**: Als u de eigenschap instelt, wordt de beschrijving van het deelvenster/de tabel niet opgenomen in Document of Record. Van toepassing op paneel en lijst.
 
       ![Basiseigenschappen](/help/forms/assets/basicpropertiesdor.png)
 
-   1. **Eigenschappen van formulierveld**:
+   2. **Eigenschappen van formulierveld**:
       * **Geef voor de componenten Selectievakje en Keuzerondje alleen de geselecteerde waarden weer**: Als u de eigenschap instelt, worden alleen geselecteerde waarden van selectievakje en keuzerondje weergegeven in [!UICONTROL Document of Record].
       * **Scheidingsteken voor meerdere waarden**: U kunt een scheidingsteken kiezen, zoals een komma of een regeleinde, om meerdere waarden weer te geven.
       * **Uitlijning opties**: U kunt de gewenste uitlijning (Horizontaal, Verticaal, Hetzelfde als adaptief formulier) selecteren om de uitlijning in te stellen voor velden zoals selectievakjes of keuzerondjes die moeten worden weergegeven op [!UICONTROL Document of Record]. Standaard wordt de verticale uitlijning ingesteld voor de velden in [!UICONTROL Document of Record]. Eigenschappen instellen via de [!UICONTROL Form Field Properties] van DoR overschrijft de eigenschappen die zijn ingesteld in het dialoogvenster [!UICONTROL Item Alignment] voor de velden op een adaptief formulier. In het geval dat u [!UICONTROL Same as Aaptive form] optie, wordt de groepering zoals gevormd in een Adaptief de auteursinstantie van de Vorm gebruikt voor [!UICONTROL Document of Record] velden.
@@ -359,7 +364,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 
       ![Eigenschappen van formulierveld](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **Eigenschappen basispagina**:
+   3. **Eigenschappen basispagina**:
       * **Logoafbeelding**: U kunt kiezen of u de logoafbeelding wilt gebruiken in het adaptieve formulier, een afbeelding kiezen in DAM of een afbeelding uploaden vanaf uw computer.
       * **Formuliertitel**: Titel van het Reglement
       * **Koptekst**: Tekst die wordt weergegeven in de koptekstsectie van het Document of Record.
@@ -476,6 +481,11 @@ Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een docume
 | config/present/pdf/pdfa/conformance | Hiermee wordt het compatibiliteitsniveau opgegeven met de PDF/A-specificatie. |
 | config/present/pdf/version | Hiermee wordt de versie van het te genereren PDF-document opgegeven |
 | config/present/pdf/version/map | Geeft de terugvalfonts voor het document aan |
+
+>[!NOTE]
+>
+> AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. De lijst met ondersteunde lettertypen weergeven [klik hier](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### Een aangepast XCI-bestand gebruiken in uw as a Cloud Service Forms-omgeving
 

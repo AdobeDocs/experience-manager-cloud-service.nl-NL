@@ -3,9 +3,9 @@ title: Hoe te om document van verslag voor Adaptive Forms te produceren?
 description: Leer een sjabloon te genereren voor een Document of Record (DoR) voor Adaptive Forms Core Components.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '3006'
+source-wordcount: '3029'
 ht-degree: 0%
 
 ---
@@ -327,6 +327,10 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
       * **Sjabloon**: Als u een aangepaste sjabloon wilt selecteren, bladert u en selecteert u een XDP op het tabblad [!DNL AEM Forms] server. Als u een sjabloon wilt gebruiken die niet beschikbaar is op uw [!DNL AEM Forms] server, moet u eerst de XDP naar uw [!DNL AEM Forms] server.
       * **Accentkleur**: De kleur waarin koptekst en scheidingslijnen worden gerenderd in het document van record PDF.
       * **Lettertypefamilie**: Lettertypefamilie van de tekst in Document of Record PDF.
+
+        >[!NOTE]
+        >
+        > AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. De lijst met ondersteunde lettertypen weergeven [klik hier](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Formulierobjecten opnemen die niet aan het gegevensmodel zijn gebonden**: Als u de eigenschap instelt, worden niet-gebonden velden van het op schema gebaseerde adaptieve formulier opgenomen in het document of record.
 
