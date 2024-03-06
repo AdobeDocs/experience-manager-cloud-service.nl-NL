@@ -2,9 +2,9 @@
 title: Onderhoudstaken in AEM as a Cloud Service
 description: Leer over onderhoudstaken in AEM as a Cloud Service en hoe te om hen te vormen.
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: af690ee4c1c0c13bffa179c68423993361385a45
+source-git-commit: 4ac5ec2a2b8da90820734e4fc06c084c810c0724
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
   <tr>
     <td>Versie wissen</td>
     <td>Adobe</td>
-    <td>Voor bestaande milieu's (die vóór 11 Maart, 2024) worden gecreeerd, wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, waarbij zij het met douanewaarden kunnen ook vormen.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Nieuwe omgevingen (die vanaf 11 maart 2024 zijn gemaakt) worden standaard leeggemaakt met de onderstaande waarden, waarbij klanten kunnen configureren met aangepaste waarden.
+    <td>Voor bestaande omgevingen (omgevingen die vóór 15 april 2024 zijn gemaakt) is leegmaken uitgeschakeld en in de toekomst mogelijk met een standaardinstelling van 7 jaar. Klanten kunnen deze omgeving configureren met lagere aangepaste waarden (zoals 30 dagen).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Nieuwe omgevingen (die vanaf 15 april 2024 zijn gemaakt) worden standaard leeggemaakt met de onderstaande waarden, waarbij klanten kunnen configureren met aangepaste waarden.
      <ol>
        <li>Versies ouder dan 30 dagen worden verwijderd</li>
        <li>De meest recente vijf versies in de laatste 30 dagen worden bewaard</li>
@@ -56,7 +56,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn op het mom
   <tr>
     <td>Logboek controleren leegmaken</td>
     <td>Adobe</td>
-    <td>Voor bestaande milieu's (die vóór 11 Maart, 2024) worden gecreeerd, wordt het zuiveren onbruikbaar gemaakt en zal niet in de toekomst worden toegelaten tenzij uitdrukkelijk toegelaten door de klant, waarbij zij het met douanewaarden kunnen ook vormen.<br><br> <!-- See above for the two line breaks -->In nieuwe omgevingen (die vanaf maart 2024 zijn gemaakt) wordt leegmaken standaard ingeschakeld onder de <code>/content</code> knooppunt van de repository volgens het volgende gedrag:
+    <td>Voor bestaande omgevingen (omgevingen die vóór 15 april 2024 zijn gemaakt) is leegmaken uitgeschakeld en in de toekomst mogelijk met een standaardinstelling van 7 jaar. Klanten kunnen deze omgeving configureren met lagere aangepaste waarden (zoals 30 dagen).<br><br> <!-- See above for the two line breaks -->In nieuwe omgevingen (die vanaf april 2024 zijn gemaakt) wordt leegmaken standaard ingeschakeld onder de <code>/content</code> knooppunt van de repository volgens het volgende gedrag:
      <ol>
        <li>Voor replicatiecontrole worden controlelogboeken ouder dan 3 dagen verwijderd</li>
        <li>Voor DAM-audits (Assets) worden auditlogboeken ouder dan 30 dagen verwijderd</li>

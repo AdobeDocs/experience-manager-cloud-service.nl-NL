@@ -2,9 +2,9 @@
 title: Go-Live
 description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn voor de cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,9 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat de migratie soepe
    * Ontwikkelomgevingen hebben niet dezelfde grootte als stadium en productie.
 * Besnoeiing over en zorg ervoor dat daadwerkelijke go-live zonder enige nieuwe plaatsing of inhoudsupdate wordt uitgevoerd.
 * Maak profielen voor gebruikersmeldingen van Admin Consoles. Zie [Meldingsprofielen](/help/journey-onboarding/notification-profiles.md)
+* Overweeg het vormen van de Regels van de Filter van het Verkeer om te controleren welk verkeer niet op uw website zou moeten worden toegestaan.
+   * De regels van de de beperkingsverkeersfilter van het tarief kunnen een efficiënt hulpmiddel tegen aanvallen zijn DDoS. Een speciale categorie van de regels van het verkeersfilter, genoemd de regels van WAF, vereist een afzonderlijke vergunning.
+   * Zie documentatie voor sommige [voorgestelde startersregels](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 U kunt altijd naar de lijst verwijzen als u uw taken opnieuw moet kalibreren tijdens het uitvoeren van de migratie.
 
