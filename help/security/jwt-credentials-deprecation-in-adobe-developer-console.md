@@ -1,9 +1,9 @@
 ---
 title: JWT Credentials Deprection in Adobe Developer Console
 description: Meer informatie over de gevolgen van de afschrijving van JWT-gebruikersgegevens in Adobe Developer Console voor AEM
-source-git-commit: a354786f1ddfe50b01def85d3c83da09c6a35d2f
+source-git-commit: b684d39d53b1895b8e20e5c6aca084033cfcf4b9
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM als Cloud Service dienen klanten te verwijzen naar [dit artikel](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) voor meer informatie .
+>AEM 6.5 [dit artikel](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) voor meer informatie .
 
 Adobe die klanten gebruiken [Adobe Developer Console](https://developer.adobe.com/console) om geloofsbrieven te produceren die toegang tot diverse APIs toelaten. Klanten kiezen uit verschillende soorten referentie, variërend van OAuth Server-to-Server tot Single-Page App. Één van die credentietypes, de geloofsbrieven van de Rekening van de Dienst (JWT), is afgekeurd ten gunste van de geloofsbrieven van Server-aan-Server OAuth. De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 1 Mei, 2024 worden gecreeerd, en de bestaande geloofsbrieven van JWT zullen niet aan of na 1 Jan, 2025 werken. U kunt [lezen over de afgekeurde tekst](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
