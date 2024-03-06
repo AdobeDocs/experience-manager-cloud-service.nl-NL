@@ -2,9 +2,9 @@
 title: Kenmerken en itemtypen
 description: Leer over de gegevensattributen en de punttypes die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: 5ddd4bbcce10c5cda97e3ea3f6750b209b5743f0
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `data-aue-prop` | Kenmerk van de bron, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
 | `data-aue-type` | [Type van het bewerkbare item](#item-types) (bijvoorbeeld tekst, afbeelding en verwijzing) |
 | `data-aue-filter` | Definieert welke verwijzingen kunnen worden gebruikt |
-| `data-aue-label` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven <br>In geval van `itemmodel` is ingesteld, wordt het label opgehaald via het model |
+| `data-aue-label` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven <br>In geval van `data-aue-model` is ingesteld, wordt het label opgehaald via het model |
 | `data-aue-model` | Definieert een model dat wordt gebruikt voor bewerkingen op basis van formulieren in de rail Eigenschappen |
 | `data-aue-behavior` | Definieert de [gedrag van een instrumentatie;](#behaviors) zelfstandige tekst of afbeelding kan bijvoorbeeld ook een component simuleren om deze te verplaatsen of te verwijderen |
 
