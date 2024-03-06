@@ -3,9 +3,9 @@ title: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 description: De Dispatcher-configuratie migreren van AMS naar AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6023a13eb4ea0533ba2f6cd00fb9f824b08a3f4a
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1499'
 ht-degree: 4%
 
 ---
@@ -19,6 +19,7 @@ De Apache- en Dispatcher-configuratie in AEM as a Cloud Service lijkt sterk op d
 * In AEM as a Cloud Service mogen sommige Apache-richtlijnen niet worden gebruikt (bijvoorbeeld `Listen` of `LogLevel`)
 * In AEM as a Cloud Service, slechts kunnen sommige stukken van de configuratie van de Verzender in omvat dossiers worden gezet en hun het noemen is belangrijk. Bijvoorbeeld, moeten de filterregels die u over verschillende gastheren wilt hergebruiken in een dossier worden gezet genoemd `filters/filters.any`. Zie de referentiepagina voor meer informatie.
 * In AEM as a Cloud Service is er extra validatie om filterregels die zijn geschreven met `/glob` om beveiligingsproblemen te voorkomen. Omdat `deny *` wordt gebruikt in plaats van `allow *` (wat niet kan worden gebruikt), profiteren klanten van het uitvoeren van de Dispatcher plaatselijk en het doen van proef en fout, die de logboeken bekijken om precies te weten welke wegen de filters van de Verzender blokkeren opdat die kunnen worden toegevoegd.
+* In AEM as a Cloud Service wordt momenteel ten zeerste aanbevolen [kiezen binnen om de flexibele bronwijze van verzender config te gebruiken](/help/implementing/dispatcher/disp-overview.md#validation-debug) bv. om web-tier config pijpleidingen te gebruiken of betere flexibiliteit op aantal en structuur van configuratiedossiers te hebben.
 
 ## Richtlijnen voor het migreren van de configuratie van de verzender van AMS naar AEM as a Cloud Service
 
