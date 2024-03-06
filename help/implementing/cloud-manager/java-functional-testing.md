@@ -1,10 +1,10 @@
 ---
-title: Java&trade; Functionele tests
+title: Java&trade; functietests
 description: Leer hoe u Java&trade schrijft; functionele tests voor AEM as a Cloud Service
-exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
+source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager,
 
 Wanneer u de inhoud van de `it.tests` kunt u de map gebruiken als basis voor uw eigen tests en vervolgens:
 
-1. [Ontwikkel uw testcase.](#writing-functional-tests)
+1. [Ontwikkel uw testdoosjes.](#writing-functional-tests)
 1. [Voer de tests lokaal uit.](#local-test-execution)
 1. Leg uw code vast in de gegevensopslagruimte van Cloud Manager en voer een pijplijn van Cloud Manager uit.
 
 ## Aangepaste functionele tests schrijven {#writing-functional-tests}
 
-De zelfde hulpmiddelen die Adobe gebruikt om product functionele tests te schrijven kunnen worden gebruikt om uw douane functionele tests te schrijven. Gebruik de [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
+De zelfde hulpmiddelen die de Adobe gebruikt om product functionele tests te schrijven kunnen worden gebruikt om uw douane functionele tests te schrijven. Gebruik de [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
 
 De code voor een aangepaste functionele test is Java™-code in het dialoogvenster `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. [Zie het AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor monstertests.
 
-De tests worden in werking gesteld op Adobe-handhaven testinfrastructuur met inbegrip van minstens twee auteurinstanties, twee publiceer instanties, en een configuratie van de Verzender. Deze opstelling betekent dat uw douane functionele tests tegen de volledige AEM stapel lopen.
+De tests worden in werking gesteld op Adobe-onderhouden testende infrastructuur met inbegrip van minstens twee auteurinstanties, twee publiceer instanties, en een configuratie van de Verzender. Deze opstelling betekent dat uw douane functionele tests tegen de volledige AEM stapel in werking stellen.
 
 ### Structuur van functionele tests {#functional-tests-structure}
 
@@ -102,19 +102,38 @@ Zie [`aem-testing-clients` GitHub-repo](https://github.com/adobe/aem-testing-cli
 
 | Type | Waarde | Beschrijving |
 |----------------------|-------|--------------------------------------------------------------------|
-| CPU | 0.5 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
+| CPU | 0,5 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
 | Geheugen | 0,5 Gi | Hoeveelheid geheugen dat aan de test is toegewezen, waarde in bytes |
 | Time-out | 30 m | De duur waarna de test wordt beëindigd. |
-| Aanbevolen duur | 15 m | Adobe raadt aan de tests te schrijven om deze tijd niet langer te laten duren. |
+| Aanbevolen duur | 15 m | De Adobe beveelt aan de tests te schrijven om deze tijd niet langer te laten duren. |
 
 >[!NOTE]
 >
-> Als u meer middelen nodig hebt, maakt u een geval voor de klantenservice en beschrijft u uw gebruiksscenario. Hulp nodig bij uw aanvraag en -aanbod
+> Als u meer middelen nodig hebt, maakt u een geval voor de klantenservice en beschrijft u uw gebruiksscenario. Het team van de Adobe evalueert uw verzoek en biedt de gewenste hulp.
 
+#### Afhankelijkheden
+
+* aem-cloud-testing-clients:
+
+Voor de komende wijzigingen in de containerinfrastructuur die wordt gebruikt om functionele tests uit te voeren, is de bibliotheek vereist [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) gebruikt in uw aangepaste functionele test die moet worden bijgewerkt naar ten minste versie **1.**
+Zorg ervoor dat uw afhankelijkheid binnen `it.tests/pom.xml` is bijgewerkt.
+
+```
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+>[!NOTE]
+>
+>Deze wijziging is vereist na 6 april 2024.
+>Als u er niet in slaagt de afhankelijkheidsbibliotheek bij te werken, treedt er een fout op bij de stap Aangepast functioneel testen.
 
 ### Uitvoering lokale test {#local-test-execution}
 
-Voordat u functionele tests activeert in een Cloud Manager-pijplijn, is het raadzaam de functionele tests lokaal uit te voeren met de [as a Cloud Service SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of een werkelijk AEM as a Cloud Service instantie.
+Alvorens functionele tests in een pijplijn van de Manager van de Wolk te activeren, adviseert het om de functionele tests plaatselijk in werking te stellen gebruikend [AS A CLOUD SERVICE SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of een werkelijk AEM as a Cloud Service instantie.
 
 #### Het lopen in winde {#running-in-an-ide}
 
@@ -140,7 +159,7 @@ De systeemeigenschappen zijn als volgt.
 
 #### Alle tests uitvoeren met Maven {#using-maven}
 
-1. Open een shell en navigeer naar de `it.tests` in uw opslagplaats.
+1. Open een shell en navigeer naar `it.tests` in uw opslagplaats.
 
 1. Voer het volgende bevel uit die de noodzakelijke parameters verstrekken om de tests te beginnen gebruikend Maven.
 
@@ -153,3 +172,4 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
+
