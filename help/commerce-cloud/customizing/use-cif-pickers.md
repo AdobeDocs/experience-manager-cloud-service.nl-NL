@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ AEM Content &amp; Commerce Authoring biedt een reeks ontwerpgereedschappen waarm
 
 ## Productkiezer {#product-picker}
 
-Om de productkiezer in een projectcomponent te gebruiken, moet een ontwikkelaar toevoegen `commerce/gui/components/common/cifproductfield` naar een componentdialoogvenster. Gebruik bijvoorbeeld het volgende voor de cq:dialog:
+Om de productkiezer in een projectcomponent te gebruiken, moet een ontwikkelaar toevoegen `commerce/gui/components/common/cifproductfield` naar een componentdialoogvenster. Gebruik bijvoorbeeld het volgende voor de `cq:dialog`:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"

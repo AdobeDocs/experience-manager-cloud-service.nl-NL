@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Een handeling Verzenden is een sling:map die het volgende bevat:
 
 * **addfields.jsp**: Dit script bevat de actievelden die tijdens de uitvoering aan het HTML-bestand worden toegevoegd. Gebruik dit script om verborgen invoerparameters toe te voegen die zijn vereist tijdens verzending in het script post.POST.jsp.
 * **dialog.xml**: Dit script is vergelijkbaar met het dialoogvenster CQ-component. Het verstrekt configuratieinformatie die de auteur aanpast. De velden worden weergegeven op het tabblad Handelingen verzenden in het dialoogvenster Formulier bewerken Adaptief wanneer u Handeling verzenden selecteert.
-* **post.POST.jsp**: De verzendserver roept dit script aan met de gegevens die u verzendt en de aanvullende gegevens in de vorige secties. Elke vermelding van het uitvoeren van een handeling op deze pagina houdt in dat het script post.POST.jsp wordt uitgevoerd. Als u de handeling Verzenden wilt registreren bij de Adaptief Forms en deze wilt weergeven in het dialoogvenster Formulier bewerken, voegt u deze eigenschappen toe aan de sling:Folder:
+* **post.POST.jsp**: De verzendserver roept dit script aan met de gegevens die u verzendt en de aanvullende gegevens in de vorige secties. Elke vermelding van het uitvoeren van een handeling op deze pagina houdt in dat het script post.POST.jsp wordt uitgevoerd. Als u de handeling Verzenden wilt registreren bij de Adaptief Forms en deze wilt weergeven in het dialoogvenster Formulier bewerken, voegt u deze eigenschappen toe aan het dialoogvenster `sling:Folder`:
 
    * **guideComponentType** van het type String en value **fd/af/components/guidesubmittype**
    * **guideDataModel** van het type String dat het type Adaptief formulier opgeeft waarvoor de handeling Verzenden van toepassing is. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** wordt ondersteund voor adaptieve Forms op basis van XSD. **basis** wordt ondersteund voor Adaptieve Forms die geen XDP of XSD gebruiken. Voeg de overeenkomende tekenreeksen toe om de handeling weer te geven op meerdere typen Adaptief Forms. Scheid elke tekenreeks door een komma. Als u bijvoorbeeld een handeling zichtbaar wilt maken op <!--XFA- and -->Aangepaste Forms op basis van XSD, geeft u de waarde op als <!--**xfa** and--> **xsd**.
