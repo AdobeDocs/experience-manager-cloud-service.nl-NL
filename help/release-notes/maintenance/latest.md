@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b51ee1ebffc63b56a5b758395427f5587bd165da
+source-git-commit: 87f76de41074debb2acc8ef4f71baf174d0d01ad
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,11 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15262 same
 
 ### Bekende problemen {#known-issues-15262}
 
-Geen.
+#### `UnsupportedClassVersionError` in de pijpleiding van CM bouwt stap na verbetering `aem-sdk-api` versie naar `2024.2.15262.20240224T002940Z-231200`
+
+De nieuwe versie van aem-sdk-api bevat klassen die met een doel Java 11 worden gecompileerd, die niet compatibel is met de milieu-standaard JDK versie 1.8 van de Manager van de Wolk bouwt. Deze update vereist dat Maven wordt uitgevoerd met JDK 11.
+
+Klanten wordt aangeraden een `.cloudmanager/java-version` bestand naar de hoofdmap van hun waarschuwingsbericht met de inhoud: `11`. [Build Environment / Setting the Maven JDK Version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
 
 ### Kennisgeving wijzigen {#change-notice-15262}
 
