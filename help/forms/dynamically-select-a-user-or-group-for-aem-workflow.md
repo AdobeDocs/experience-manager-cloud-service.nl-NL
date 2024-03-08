@@ -3,9 +3,9 @@ title: Hoe te om gebruikers in AEM Werkschema te selecteren?
 description: Leer hoe u een gebruiker of groep voor een [!DNL AEM Forms] tijdens de runtime.
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ In het volgende voorbeeld van ECMAScript wordt dynamisch een toewijzing voor de 
 >Bij gebruik van ECMAScript for [!DNL Adobe Sign], moet het script zich in de crx-repository op /apps/fd/workflow/scripts/adobesign/ bevinden en moet een functie met de naam getAdobeSignRecipients hebben om een lijst met gebruikers te retourneren.
 
 ```javascript
-function getAdobeSignRecipients() {
+function getAdobeSignRecipients () {
 
     var recipientSetInfos = new Packages.java.util.ArrayList();
 
@@ -99,10 +99,10 @@ function getAdobeSignRecipients() {
     email = "example@example.com";
     
     recipientInfo.setEmail(email);
-    recipientInfo.setSecurityOptions(securityOptions);
+    recipientInfo.setSecurityOptions (securityOptions);
     
     recipientInfoList.add(recipientInfo);
-    recipientInfoSet.setMemberInfos(recipientInfoList);
+    recipientInfoSet.setMemberInfos (recipientInfoList);
     recipientSetInfos.add(recipientInfoSet);
 
     return recipientSetInfos;
@@ -116,7 +116,7 @@ U kunt de [RecipientInfoSpecifier](https://developer.adobe.com/experience-manage
 
 U hebt [[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden om het hieronder vermelde codevoorbeeld te compileren. Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
-1. Open Eclipse IDE. Ga naar **[!UICONTROL File]**> **[!UICONTROL New Project]**.
+1. Open Eclipse IDE. Navigeren naar **[!UICONTROL File]**> **[!UICONTROL New Project]**.
 1. Selecteer in het scherm Selecteer een wizard de optie **[!UICONTROL Maven Project]** en klik op **[!UICONTROL Next]**.
 1. Voor het Nieuwe Maven project, houd gebreken, en klik **[!UICONTROL Next]**. Selecteer een archetype en klik op **[!UICONTROL Next]**. Bijvoorbeeld maven-archetype-quickstart. Opgeven **[!UICONTROL Group Id]**, **[!UICONTROL Artifact Id]**, **[!UICONTROL version]**, en **[!UICONTROL package]** voor het project en klik op **[!UICONTROL Finish]**. Het project wordt gemaakt.
 1. Open het bestand pom.xml voor bewerking en vervang alle inhoud van het bestand door:
@@ -279,7 +279,7 @@ import org.apache.felix.scr.annotations.Service;
 
 @Component(metatype = false)
 public class DummyRecipientChoser implements RecipientInfoSpecifier {
-    public List<RecipientSetInfo> getAdobeSignRecipients(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
+    public List<RecipientSetInfo> getAdobeSignRecipients (WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
 
         List<RecipientSetInfo> recipientSetInfos = new ArrayList<RecipientSetInfo>();
 
@@ -303,11 +303,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
                 email = "example@example.com";
 
                 recipientInfo1.setEmail(email);
-                recipientInfo1.setSecurityOptions(securityOptions);
+                recipientInfo1.setSecurityOptions (securityOptions);
 
                 recipientInfoList.add(recipientInfo1);  //Add member
 
-                recipientInfoSet1.setMemberInfos(recipientInfoList);
+                recipientInfoSet1.setMemberInfos (recipientInfoList);
 
                 //Second Recipient
 
@@ -328,11 +328,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
                 RecipientInfo recipientInfo2  = new RecipientInfo();
                 recipientInfo2.setEmail(email);
-                recipientInfo2.setSecurityOptions(securityOptions);
+                recipientInfo2.setSecurityOptions (securityOptions);
 
                 recipientInfoList2.add(recipientInfo2);  //Add member
 
-                recipientInfoSet2.setMemberInfos(recipientInfoList2);
+                recipientInfoSet2.setMemberInfos (recipientInfoList2);
 
                 //*********************************
 

@@ -4,7 +4,7 @@ description: Ontdek het ophalen van JSON-inhoud uit uw testomgeving met een Code
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Op regel 6 zijn de gegevens van uw publicatiehost gelezen van de `publishHost` q
 U vormt de Zwaarloze Cliënt van de AEM op lijn 12:
 
 ```javascript
-const aemHeadlessClient = new AdobeAemHeadlessClientJs({
+const aemHeadlessClient = new AdobeAemHeadlessClientJs ({
   // Use a proxy to avoid CORS issues
   serviceURL: 'https://102588-505tanocelot.adobeioruntime.net/api/v1/web/aem/proxy',
   headers: {

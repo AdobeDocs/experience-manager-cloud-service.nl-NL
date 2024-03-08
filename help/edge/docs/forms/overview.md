@@ -1,123 +1,78 @@
 ---
-title: AEM Forms Edge Delivery Service - Overzicht
-description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestaties en stelt u in staat de toekomst van gestroomlijnde gegevensverzameling en de betrokkenheid van gebruikers in de gaten te houden.
+title: Overzicht AEM Forms Edge Delivery Services
+description: AEM Forms-Edge Delivery Services zijn gebouwd voor optimale prestaties, waardoor u de toekomst van gestroomlijnde gegevensverzameling en de betrokkenheid van gebruikers kunt inzien.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
+exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
 
+# AEM Forms Edge Delivery Services
 
-# AEM Forms Edge Delivery-service
-
-Het maken van formulieren stroomlijnen en hogere voltooiingssnelheden mogelijk maken met de AEM Forms Edge Delivery Service van de Adobe. Deze krachtige, composable service biedt u de mogelijkheid om formulieren van bedrijfsniveau te maken met uitzonderlijke prestaties en een visueel aantrekkingskracht. AEM geeft prioriteit aan zowel de gebruikerservaring als uw bedrijfsdoelstellingen, waardoor u kunt zorgen voor bliksemsnelle laadtijden en betere formulieraanvullen.
+Het maken van formulieren stroomlijnen en hogere voltooiingssnelheden mogelijk maken met de AEM Forms-Edge Delivery Services van de Adobe. Deze krachtige, composable service biedt u de mogelijkheid om formulieren van bedrijfsniveau te maken met uitzonderlijke prestaties en een visueel aantrekkingskracht. AEM geeft prioriteit aan zowel de gebruikerservaring als aan uw bedrijfsdoelstellingen, waardoor u bliksemsnelle laadtijden en meer conversies van formulieren krijgt.
 
 U kunt de service gebruiken om:
 
-* **Captivate gebruikers met verbluffende formulieren**: Ontwikkel eenvoudig complexe en aantrekkelijke formulieren met behulp van een bibliotheek met vooraf gebouwde componenten. Eenvoudig reCAPTCHA te integreren, formulieren rechtstreeks naar e-mail te verzenden en bestanden naadloos te uploaden om opslagoplossingen zoals Sharepoint, Azure Storage en Amazon S3 te beveiligen. Creëer zelfs uw eigen componenten van douaneformulieren om uw unieke visie tot leven te brengen.
+* **Uitzonderlijke inschrijvingservaringen opbouwen**: Bouw een inschrijvingservaring op die snel kan worden geladen en weergegeven, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.
 
-* **Maak digitale inschrijvingen met de tools die u kiest**: Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel op documenten gebaseerde ontwerpfuncties (Microsoft 365 en Google Workspace) als AEM ontwerpfuncties (AEM Editors) gebruiken. Als zodanig kunt u met meerdere inhoudsbronnen op dezelfde website werken en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of de Adaptive Forms Editor.
+* **Inschrijvvaringen maken met de gewenste gereedschappen**: Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. Buiten het vak kunt u beide gebruiken **op documenten gebaseerd schrijven** (Microsoft SharePoint of Google Drive) en **AEM maken** (AEM Editors). Als zodanig kunt u met meerdere inhoudsbronnen werken op hetzelfde formulier en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of de Adaptive Forms Editor.
 
-* **Formulieren samenstellen met de perfecte Lighthouse-score**: Formulieren maken die snel kunnen worden geladen en gegenereerd, zelfs bij trage internetverbindingen. Snellere laadtijden en geoptimaliseerde gebruikerservaring dragen bij tot hogere voltooiingssnelheden en betere conversiesnelheden.
-
-  <div>
-    <style>
-    .image-container {
-    text-align: center; 
-    }
-    .image-container img {
-        width: 100%; /* Set image width to 100% of the container 
-    }
-</style>
-    <div class="image-container">
-    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Key-functies">
-    </div>
+* **Gebruik een ontwikkelaarsvriendelijke gereedschapset:** AEM Forms maakt gebruik van onbewerkte HTML, moderne CSS en vanilla JavaScript om buitengewone ervaringen te creëren zonder de gebruikelijke overhead. Elke ontwikkelaar met basiskennis van HTML, CSS en JS zou zijn eigen componenten moeten kunnen bouwen en geen specifieke taal of kader hoeven te leren. U hebt geen pijpleiding nodig of wacht, check uw code in bij Github en uw wijzigingen zijn live. Bovendien, is er geen behoefte aan om het even welke pijpleiding of wacht, controleer uw code in Github en uw veranderingen zijn levend.
 
 
-</div>
+## Digitale inschrijving maken
 
-<!--
+AEM Forms biedt beide **op documenten gebaseerd schrijven** (Microsoft SharePoint of Google Drive) en **AEM maken** (AEM Editors). U kunt de [Adaptief Forms-blok](/help/edge/docs/forms/create-forms.md) om een formulier toe te voegen aan uw site met Edge Delivery Services.
 
-<!--
 
-    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
+>[!BEGINTABS]
 
-* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+>[!TAB Op documenten gebaseerde ontwerpfuncties]
 
-    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
+Op documenten gebaseerde ontwerpen is een veelzijdige optie die geschikt is voor het maken van eenvoudige formulieren met essentiële functies. Hiermee kunt u verschillende invoertypen integreren, zoals tekstvelden, vervolgkeuzemenu&#39;s en keuzerondjes, zodat u gebruikersgegevens op effectieve wijze kunt verzamelen. Het biedt een basisversie van regels om dynamisch gedrag aan formulieren toe te voegen. Belangrijke kenmerken van op documenten gebaseerde ontwerpen zijn:
 
-* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
-
-    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-    
-<!--
-* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
-
-* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
-
-    
-    >[!NOTE]
-    >[!NOTE]
-    >
-    >
-    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
-
-    -->
-
-## Belangrijkste kenmerken
-
-* **Op HTML5 gebaseerde componenten van het Gebied van de Vorm**: Met de AEM Forms Edge Delivery Service kunt u gebruikersvriendelijke en interactieve formulieren maken met behulp van formuliercomponenten op basis van HTML5 [invoertypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a>  elementen. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
+* **[Op HTML5 gebaseerde componenten van het Gebied van de Vorm](/help/edge/docs/forms/form-components.md)**: Met AEM Forms-Edge Delivery Services kunt u gebruikersvriendelijke en interactieve formulieren maken met behulp van formuliercomponenten op basis van HTML 5 [invoertypen](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a>  elementen. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
 
 * **Toegankelijkheid**: De velden in het formulierblok zijn toegankelijk. Elk label is gekoppeld aan het desbetreffende invoerelement en id&#39;s worden automatisch gegenereerd voor koppelingen. Beschrijvingen die aan velden zijn gekoppeld, worden gekoppeld via het kenmerk aria-beschreven door. Toetsenbordnavigatie met de standaardTab/Shift + Tab-toetsen wordt ondersteund.
 
-* **Stijlen**: Elk formulierveld heeft een vaste HTML-structuur die eenvoudig kan worden versierd met behulp van aangepaste CSS- of JavaScript-bestanden. Kiezers voor velden in CSS en JS worden opgegeven op basis van type en naam. U kunt eenvoudig nieuwe kiezers maken vanwege de gestandaardiseerde structuur.
+* **[Stijlen](/help/edge/docs/forms/style-theme-forms.md)**: Elk formulierveld heeft een vaste HTML-structuur die eenvoudig kan worden versierd met behulp van aangepaste CSS- of JavaScript-bestanden. Kiezers voor velden in CSS en JS worden opgegeven op basis van type en naam. U kunt eenvoudig nieuwe kiezers maken vanwege de gestandaardiseerde structuur en stijl van het formulier.
 
-* **Regels**: Maak eenvoudig logica die de zichtbaarheid, validatie en functionaliteit van velden aanpast op basis van gebruikersinvoer of vooraf gedefinieerde voorwaarden. Regels bieden een flexibele en intuïtieve manier om intelligentie toe te voegen aan uw formulieren, zodat deze zich naadloos kunnen aanpassen op basis van gebruikersinvoer.
+* **Basisregels**: Maak eenvoudig logica die de zichtbaarheid, validatie en functionaliteit van velden aanpast op basis van gebruikersinvoer of vooraf gedefinieerde voorwaarden. Regels bieden een flexibele en intuïtieve manier om intelligentie toe te voegen aan uw formulieren, zodat deze zich naadloos kunnen aanpassen op basis van gebruikersinvoer.
 
-* **Validaties**: Voordat het formulier wordt verzonden, wordt het gevalideerd en worden ongeldige velden gemarkeerd met foutberichten die aan de gebruiker worden weergegeven. Voor de weergave van deze fouten zijn verschillende patronen beschikbaar.
-
-Er zijn enkele geavanceerde functies die op verzoek beschikbaar zijn:
+* **Validaties**: Voordat het formulier wordt verzonden, wordt het gevalideerd en worden ongeldige velden gemarkeerd met foutberichten die aan de gebruiker worden weergegeven. Adaptief Forms-blok ondersteunt alle validatie van het HTML-formulier, ondersteund door moderne browsers, en biedt een aanvullend validatiemechanisme, zoals validatiescript, bestandsgrootte, bestandstype, bestandsgrootte en meer.
 
 * **Bestand uploaden**: U kunt mogelijkheden voor bestandsbijlagen toevoegen aan uw formulieren. Of u nu documenten, afbeeldingen of andere bestanden van uw gebruikers moet verzamelen, de functie voor het uploaden van bestanden is een handige manier. Als er aangepaste afhandelingsopties beschikbaar zijn, kunt u het uploadproces voor het bestand aanpassen aan uw specifieke vereisten.
 
-* **reCAPTCHA**: Profiteer van de naadloze integratie van Google reCAPTCHA in uw formulieren met onze OOTB-ondersteuning (out-of-the-box). Bescherm uw formulieren tegen frauduleuze activiteiten, spam en misbruik, terwijl u een soepele en ononderbroken gebruikerservaring behoudt.
+* **reCAPTCHA**: Profiteer van de naadloze integratie van Google reCAPTCHA in uw formulieren met onze OOTB-ondersteuning (out-of-the-box). Bescherm uw formulieren tegen frauduleuze activiteiten, spam en misbruik, terwijl u een soepele en ononderbroken gebruikerservaring behoudt. Adaptief Forms-blok ondersteunt reCaptcha V3 en reCaptcha Enterprise.
 
 * **E-mailbericht verzenden bij het verzenden van het formulier**: Elimineer de gedoe met handmatige follow-ups en zorg voor tijdige communicatie met onze ingebouwde e-mailautomatisering voor het verzenden van formulieren. Met deze geïntegreerde oplossing kunt u eenvoudig relevante partijen op de hoogte stellen, inclusief het verzenden van formuliergegevens, wanneer iemand een formulier op uw website invult. Geen behoefte aan complexe configuraties of extra hulpmiddelen - het is klaar om uit de doos te gebruiken.
 
+>[!TAB AEM maken]
 
-## Beschikbare Forms-blokken
+AEM Authoring ontgrendelt aanvullende mogelijkheden naast het schrijven van documenten, waardoor u complexere en interactieve formulieren kunt maken. Naast de functies van op documenten gebaseerde ontwerpen, biedt AEM ontwerp de volgende extra functies:
 
-AEM Forms Edge Delivery Service biedt twee typen formulierblokken die aan verschillende behoeften voldoen:
+* Geavanceerde regels: definieer op logica gebaseerde handelingen in uw formulieren. U kunt regels gebruiken om formuliersecties voorwaardelijk weer te geven of te verbergen, velden vooraf in te vullen op basis van gebruikersinvoer en verschillende validaties uit te voeren om de gegevensintegriteit te waarborgen.
 
-* **Basic Forms Block**: Dit is een veelzijdige optie die geschikt is voor het maken van eenvoudige formulieren met essentiële functies. Hiermee kunt u verschillende invoertypen integreren, zoals tekstvelden, vervolgkeuzemenu&#39;s en keuzerondjes, zodat u gebruikersgegevens op effectieve wijze kunt verzamelen.
+* Uitbreidbaarheid aan de serverzijde: breid de functionaliteit van uw formulieren uit door deze te integreren met logica aan de serverzijde. Hierdoor kunt u complexe berekeningen uitvoeren, communiceren met externe systemen en specifieke taken automatiseren op basis van gebruikersacties in het formulier.
+* Stroomlijn workflows en gegevensbeheer: gebruik de kracht van AEM om:
+   * Ontwerp gebruikersvriendelijke formulieren met AEM editors.
+   * Genereer een &quot;Document of Record&quot; voor een veilige en onvervalsbare archivering van verzonden gegevens.
+   * E-signing met Adobe Sign vergemakkelijken voor een vloeiende en veilige ondertekeningservaring.
+   * Automatiseer bedrijfsprocessen via AEM workflows en activeer acties op basis van formulierverzendingen.
+   * Efficiënte integratie met verschillende gegevensbronnen, zodat gegevens naadloos kunnen worden doorgestuurd en uitgewisseld.
 
-* **Adaptief Forms-blok**: Dit geavanceerde blok ontgrendelt aanvullende mogelijkheden buiten het Basic Forms Block, zodat u complexere en interactieve formulieren kunt maken. Hier volgt een overzicht van de belangrijkste kenmerken:
+>[!ENDTABS]
 
-   * Regels: definieer op logica gebaseerde handelingen in uw formulieren. U kunt regels gebruiken om formuliersecties voorwaardelijk weer te geven of te verbergen, velden vooraf in te vullen op basis van gebruikersinvoer en verschillende validaties uit te voeren om de gegevensintegriteit te waarborgen.
 
-   * Uitbreidbaarheid aan de serverzijde: breid de functionaliteit van uw formulieren uit door deze te integreren met logica aan de serverzijde. Hierdoor kunt u complexe berekeningen uitvoeren, communiceren met externe systemen en specifieke taken automatiseren op basis van gebruikersacties in het formulier.
 
-   * Cross Walk: Stroomlijn werkstromen en gegevensbeheer: Gebruik de kracht van AEM aan:
 
-      * Ontwerp gebruikersvriendelijke formulieren met AEM editors.
 
-      * Genereer een &quot;Document of Record&quot; voor een veilige en onvervalsbare archivering van verzonden gegevens.
 
-      * E-signing met Adobe Sign vergemakkelijken voor een vloeiende en veilige ondertekeningservaring.
-
-      * Automatiseer bedrijfsprocessen via AEM workflows en activeer acties op basis van formulierverzendingen.
-
-      * Efficiënte integratie met verschillende gegevensbronnen, zodat gegevens naadloos kunnen worden doorgestuurd en uitgewisseld.
-
-  Voor het gebruik van het Adaptive Forms Block is een extra licentie vereist.
-
-### De juiste Forms Block kiezen
-
-De keuze tussen de Standaard- en Adaptieve Forms-blokken is afhankelijk van uw specifieke vereisten. Als u een eenvoudige oplossing voor het verzamelen van basisgebruikersinformatie nodig hebt, is het Basic Forms Block perfect geschikt. Als uw formulieren echter ingewikkelde logica, gegevensmanipulatie, integratie met externe systemen of gestroomlijnde workflows vereisen met AEM functies, en **u beschikt over de benodigde licentie**, biedt het Adaptive Forms Block de benodigde kracht en flexibiliteit om uw doelen te bereiken.
 
 
 ## Formulieren maken
@@ -209,12 +164,3 @@ De keuze tussen de Standaard- en Adaptieve Forms-blokken is afhankelijk van uw s
 
 
 </br>
-
-
-
-
-
-
-
-
-

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '9230'
 ht-degree: 0%
@@ -717,7 +717,7 @@ Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardau
 >Het afspelen van standaardaudio kan ook afhankelijk zijn van de instelling in de volgende browsers:
 >
 >* Chrome - De standaardaudio die in de video is ingesteld, wordt afgespeeld.
-* Safari - Als de standaardtaal in Safari wordt geplaatst, wordt de audio gespeeld met de vastgestelde standaardtaal, als beschikbaar met manifest van de video. Anders wordt de standaardaudio afgespeeld die is ingesteld als onderdeel van de eigenschappen van een video.
+>* Safari - Als de standaardtaal in Safari wordt geplaatst, wordt de audio gespeeld met de vastgestelde standaardtaal, als beschikbaar met manifest van de video. Anders wordt de standaardaudio afgespeeld die is ingesteld als onderdeel van de eigenschappen van een video.
 
 **U kunt als volgt de standaardaudio instellen voor een video met meerdere audiotracks:**
 
@@ -746,7 +746,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/dynamic-me
 
 >[!NOTE]
 >
-Het standaardtabblad voor voorvertoningen van Experience Managers geeft geen meerdere ondertitels en audiotracks weer. De reden hiervoor is dat deze tracks zijn gekoppeld aan Dynamic Media en alleen kunnen worden weergegeven met de voorvertoning van de Dynamic Media Viewer.
+>Het standaardtabblad voor voorvertoningen van Experience Managers geeft geen meerdere ondertitels en audiotracks weer. De reden hiervoor is dat deze tracks zijn gekoppeld aan Dynamic Media en alleen kunnen worden weergegeven met de voorvertoning van de Dynamic Media Viewer.
 
 **Een voorvertoning weergeven van een video met meerdere ondertitels en audiotracks:**
 
@@ -825,7 +825,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
 
 >[!IMPORTANT]
 >
-Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
+>Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Er verschijnen ondertitels in vreemde talen, zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 
@@ -833,7 +833,7 @@ Ondertiteling met gesloten deuren zorgt ook voor betere toegankelijkheid voor do
 
 >[!NOTE]
 >
-De videospeler die u gebruikt moet de vertoning van gesloten titels steunen.
+>De videospeler die u gebruikt moet de vertoning van gesloten titels steunen.
 
 Zie ook [Toegankelijkheid in Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
@@ -861,7 +861,7 @@ Volg de aanwijzingen op het scherm van een site om het WebVTT-bestand te ontwerp
 
 >[!NOTE]
 >
-Voor algemene ondersteuning van videoondertitels in meerdere talen, vereist de WebVTT-standaard dat u afzonderlijke .vtt-bestanden maakt en dat u voor elke taal die u wilt ondersteunen, een oproep doet.
+>Voor algemene ondersteuning van videoondertitels in meerdere talen, vereist de WebVTT-standaard dat u afzonderlijke .vtt-bestanden maakt en dat u voor elke taal die u wilt ondersteunen, een oproep doet.
 
 Over het algemeen wilt u het VTT-bestand van het bijschrift dezelfde naam geven als het videobestand en dit bestand toevoegen met de landinstelling van de taal, zoals -EN, of -FR of -DE. Op deze manier kunt u het genereren van video-URL&#39;s automatiseren met behulp van uw bestaande systeem voor webcontentbeheer.
 
@@ -892,7 +892,7 @@ U kunt lange-vormvideo&#39;s gemakkelijker bekijken en navigeren door hoofdstukm
 
 >[!NOTE]
 >
-De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
+>De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1238,7 +1238,7 @@ public class ManifestServlet extends HttpServlet {
     private void error(String errorMessage, HttpServletResponse response) throws IOException { 
         ManifestUrl errorManifest = new ManifestUrl(null); 
         errorManifest.setErrorMessage(errorMessage); 
-        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        response.setStatus (HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
         objectMapper.writeValue(response.getWriter(), errorManifest); 
     } 
 } 
@@ -1283,7 +1283,7 @@ public abstract class VideoResponse {
 ```java
 public final class Constants { 
 
-     private Constants() { 
+     private Constants () { 
      } 
 
      public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
@@ -1345,7 +1345,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
   */ 
  public static String getRealContextPath(HttpServletRequest req) { 
      final String path = req.getContextPath(); 
-     if (path.equals(CONTEXT_PATH)) { 
+     if (path.equals (CONTEXT_PATH)) { 
          return ""; 
      } 
      return path.substring(CONTEXT_PATH.length()); 

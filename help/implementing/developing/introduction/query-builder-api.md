@@ -2,7 +2,7 @@
 title: Query Builder-API
 description: De functionaliteit van de Asset Share Query Builder wordt weergegeven via een Java&trade; API en een REST API.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -15,7 +15,7 @@ De Bouwer van de Vraag biedt een gemakkelijke manier om de inhoudsbewaarplaats v
 
 De server-kant vraagbouwer ([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) accepteert een querybeschrijving, maakt en voert een XPath-query uit, filtert de resultaatset optioneel en extraheert facetten indien gewenst.
 
-De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een voorspelling in volledige tekst, die overeenkomt met de `jcr:contains()` in XPath.
+De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een voorspelling in volledige tekst, die overeenkomt met de `jcr:contains ()` in XPath.
 
 Voor elk predicaatype, is er een evaluatorcomponent ([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) die weet hoe te om dat specifieke predikaat voor XPath, het filtreren, en facetextractie te behandelen. Het is gemakkelijk om douanebeoordelaars tot stand te brengen, die door componenten OSGi runtime gestopt zijn.
 
@@ -125,7 +125,7 @@ Door gebrek zou de Bouwer van de Vraag ook het aantal treffers verstrekken. Afha
 
 De interface kan bijvoorbeeld de volgende benadering aanpassen:
 
-* De juiste telling van het aantal totaalresultaten ophalen en weergeven ([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) of totaal in de `querybuilder.json` respons) kleiner zijn dan of gelijk zijn aan 100;
+* De juiste telling van het aantal totaalresultaten ophalen en weergeven ([SearchResult.getTotalMatches ()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) of totaal in de `querybuilder.json` respons) kleiner zijn dan of gelijk zijn aan 100;
 * Set `guessTotal` tot 100 die de Bouwer van de Vraag roepen.
 
 * De reactie kan het volgende resultaat hebben:
@@ -381,8 +381,8 @@ Voor dergelijke belangrijkste eigenschappen kunt u de query verkorten en het geb
     SearchResult result = query.getResult();
 
     // paging metadata
-    int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
-    long totalMatches = result.getTotalMatches();
+    int hitsPerPage = result.getHits ().size(); // 20 (set above) or lower
+    long totalMatches = result.getTotalMatches ();
     long offset = result.getStartIndex();
     long numberOfPages = totalMatches / 20;
 
@@ -396,7 +396,7 @@ Voor dergelijke belangrijkste eigenschappen kunt u de query verkorten en het geb
     doc.appendChild( root );
 
     // iterating over the results
-    for (Hit hit : result.getHits()) {
+    for (Hit hit : result.getHits ()) {
        String path = hit.getPath();
 
       //Create a result element
@@ -461,7 +461,7 @@ Uitleggen **alles** vragen tijdens de ontwikkelingscyclus tegen de reeks van de 
    * Navigeren naar `https://<host>:<port>/system/console/slinglog`. Een logger maken voor `com.day.cq.search.impl.builder.QueryImpl` om **DEBUG**.
 1. Nadat DEBUG voor de bovengenoemde klasse wordt toegelaten, tonen de logboeken XPath dat door de Bouwer van de Vraag wordt geproduceerd.
 1. Kopieer de vraag van XPath van de logboekingang voor de bijbehorende vraag van de Bouwer van de Vraag, bijvoorbeeld:
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
+   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]`
 1. Plak de vraag van XPath in Verklaar Vraag als XPath zodat kunt u het vraagplan verkrijgen.
 
 ### Verkrijg Verklarende XPath via Debugger van de Bouwer van de Vraag {#obtain-explain-able-xpath-via-the-query-builder-debugger}
@@ -497,7 +497,7 @@ null=group: limit=20, offset=0[
     {path=path: path=/content}
     {type=type: type=cq:Page}
 ]
-com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]
+com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]
 com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```

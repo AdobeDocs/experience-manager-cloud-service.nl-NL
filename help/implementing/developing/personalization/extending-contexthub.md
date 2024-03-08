@@ -2,7 +2,7 @@
 title: ContextHub uitbreiden
 description: Bepaal nieuwe types van opslag ContextHub en modules wanneer de verstrekte niet aan uw oplossingsvereisten voldoen
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Maak en registreer de rendererklasse in een automatisch uitgevoerde anonieme fun
 ```javascript
 ;(function() {
 
-    var SurferinfoRenderer = new Class({
+    var SurferinfoRenderer = new Class ({
         extend: ContextHub.UI.BaseModuleRenderer,
 
         defaultConfig: {

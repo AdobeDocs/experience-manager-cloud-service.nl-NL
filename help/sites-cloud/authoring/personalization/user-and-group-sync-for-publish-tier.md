@@ -2,7 +2,7 @@
 title: Registratie, aanmelding en gebruikersprofiel
 description: Meer informatie over registratie, aanmelding, gebruikersgegevens en groepssynchronisatie voor AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
@@ -37,7 +37,7 @@ U kunt aangepaste registratiecode schrijven die minimaal de gebruikersnaam en he
 
 1. Een aangepaste AEM die registratiegegevens verzamelt weergeven
 1. Bij verzending wordt een naar behoren ingericht servicegebruiker gebruikt voor
-   1. Controleren of een bestaande gebruiker nog niet bestaat met een van de API&#39;s van UserManager `findAuthorizables()` methoden
+   1. Controleren of een bestaande gebruiker nog niet bestaat met een van de API&#39;s van UserManager `findAuthorizables ()` methoden
    1. Een gebruikersrecord maken met een van de API&#39;s van UserManager `createUser()` methoden
    1. Behoud om het even welke profielgegevens die gebruikend de Authorizable interface worden gevangen `setProperty()` methoden
 1. Optionele stromen, zoals de verplichting voor de gebruiker om zijn e-mail te valideren.

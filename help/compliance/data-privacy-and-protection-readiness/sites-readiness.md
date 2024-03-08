@@ -2,9 +2,9 @@
 title: Regels voor gegevensbescherming en gegevensbescherming - gereedheid voor Adobe Experience Manager as a Cloud Service-sites
 description: Leer over de steun van de Plaatsen van Adobe Experience Manager as a Cloud Service voor de diverse Regels van de Bescherming van Gegevens en van de Privacy van Gegevens; met inbegrip van de Algemene Verordening van de EU van de Bescherming van Gegevens (GDPR), de Wet van de Consumentenprivacy van Californië en hoe te om bij de implementatie van een nieuw AEM as a Cloud Service project na te leven.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Adobe Experience Manager is onderworpen aan een cookie-uitschakelservice die wor
 
 Naar Weigeren:
 
-1. Ga naar:
+1. Navigeren naar:
    [Adobe Privacy Center - Weigeren](https://www.adobe.com/privacy/opt-out.html)
 
 1. Omlaag schuiven naar **Services** - **Gebruikersgegevens Experience Cloud-service**.
@@ -223,10 +223,10 @@ Om de persistentie te ontruimen ContextHub:
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   
   // following call asks all currently loaded stores to clear their data
-  ContextHub.cleanAllStores();
+  ContextHub.cleanAllStores ();
   
   // following call asks all currently loaded stores to set back default values (provided in their configs)
-  ContextHub.resetAllStores();
+  ContextHub.resetAllStores ();
   ```
 
 * Om een specifieke persistentielaag te ontruimen, bijvoorbeeld, sessionStorage:

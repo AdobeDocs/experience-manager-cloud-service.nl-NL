@@ -2,13 +2,13 @@
 title: Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge Delivery Services
 description: Deze gids zal u met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoud creatie op de hoogte brengen
 feature: Edge Delivery Services
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
-
 
 # AEM met Edge Delivery Services {#edge-dev-getting-started}
 
@@ -20,7 +20,7 @@ Deze gids zal u aan de slag met een nieuwe plaats van Adobe Experience Manager g
 
 Voordat u met deze handleiding begint, dient u al op de hoogte te zijn van de basisbeginselen van en toegang te hebben tot Edge Delivery Services, zoals:
 
-* U hebt de [Zelfstudie over Edge Delivery Service.](/help/edge/developer/tutorial.md)
+* U hebt de [Edge Delivery Service-zelfstudie.](/help/edge/developer/tutorial.md)
 * U hebt toegang tot [AEM Cloud Service-sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * U hebt [heeft de Universal Editor ingeschakeld in dezelfde sandboxomgeving.](/help/implementing/universal-editor/getting-started.md)
 

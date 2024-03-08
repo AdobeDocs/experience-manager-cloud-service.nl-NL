@@ -4,13 +4,13 @@ description: Leer hoe u pagina's voor bedankt en omleiding voor Forms Block conf
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
 
 ---
-
 
 # De pagina Bedankt of het formulier omleiden na verzending weergeven
 
@@ -63,9 +63,9 @@ Standaard leidt het blok Adaptive Forms de gebruikers om naar de pagina &quot;th
 
    >[!NOTE]
    >
-   > Zorg ervoor dat er een pagina met dezelfde naam aanwezig is in uw Edge Delivery Service-projectmap op de Microsoft SharePoint- of Google Workspace. Als de pagina niet bestaat, gaat u verder en publiceert u deze.
+   > Zorg ervoor dat er een pagina met dezelfde naam aanwezig is in de projectmap van uw Edge Delivery Services op de Microsoft SharePoint- of Google Workspace. Als de pagina niet bestaat, gaat u verder en publiceert u deze.
 
-1. Ga aan controle in de bijgewerkte omslag &#39;form.js&#39; en zijn onderliggende dossiers aan uw project van de Dienst van de Levering van de Rand op GitHub te werk. Deze update zorgt ervoor dat het formulier nu naar de opgegeven bijgewerkte pagina wordt omgeleid.
+1. Ga te werk om in de bijgewerkte omslag &quot;form.js&quot;en zijn onderliggende dossiers aan uw Edge Delivery Services project op GitHub te controleren. Deze update zorgt ervoor dat het formulier nu naar de opgegeven bijgewerkte pagina wordt omgeleid.
 
 1. Zorg ervoor dat de pagina in uw EDS-projectmap bestaat en publiceer deze.
 

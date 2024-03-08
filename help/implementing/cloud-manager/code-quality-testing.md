@@ -2,9 +2,9 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 SonarQube zal dan een blokkeerkwetsbaarheid veroorzaken. Maar na het herzien van de code, erkent u dat dit geen kwetsbaarheid is en kan de code met aangewezen regelidentiteitskaart annoteren.
 
 ```java
-@SuppressWarnings("squid:S2068")
+@SuppressWarnings ("squid:S2068")
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```

@@ -2,7 +2,7 @@
 title: Een aangepaste component voor as a Cloud Service schermen ontwikkelen
 description: De volgende zelfstudie doorloopt de stappen om een aangepaste component voor AEM Screens te maken. AEM Screens gebruikt veel bestaande ontwerppatronen en technologieën van andere AEM. In de zelfstudie worden verschillen en speciale overwegingen benadrukt bij het ontwikkelen voor AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 0%
@@ -478,7 +478,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
   */
  @Nonnull
  @Override
- public String[] getSupportedResourceTypes() {
+ public String[] getSupportedResourceTypes () {
      return new String[] { … };
  }
 

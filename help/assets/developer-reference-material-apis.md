@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 0%
@@ -76,7 +76,7 @@ In [!DNL Experience Manager] als [!DNL Cloud Service]kunt u de elementen rechtst
 
 >[!IMPORTANT]
 >
-Voer de bovenstaande stappen uit in een externe toepassing en niet in de [!DNL Experience Manager] JVM.
+>Voer de bovenstaande stappen uit in een externe toepassing en niet in de [!DNL Experience Manager] JVM.
 
 Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrijfsmiddelen. De verschillen ten opzichte van [!DNL Experience Manager] 6,5 zijn:
 
@@ -85,11 +85,11 @@ Deze aanpak biedt een schaalbare en krachtigere verwerking van geüploade bedrij
 
 >[!NOTE]
 >
-Zie de cliëntcode om deze benadering in open-source uit te voeren [aem-upload bibliotheek](https://github.com/adobe/aem-upload).
+>Zie de cliëntcode om deze benadering in open-source uit te voeren [aem-upload bibliotheek](https://github.com/adobe/aem-upload).
 >
-[!IMPORTANT]
+>[!IMPORTANT]
 >
-In bepaalde omstandigheden kunnen wijzigingen zich niet volledig verspreiden tussen verzoeken om Experience Manager vanwege uiteindelijk consistente aard van de opslag in Cloud Service. Dit leidt tot 404 reacties om uploadvraag in werking te stellen of te voltooien toe te schrijven aan de vereiste omslagverwezenlijking die niet wordt verspreid. Clients moeten 404 reacties verwachten en deze afhandelen door een nieuwe strategie uit te voeren.
+>In bepaalde omstandigheden kunnen wijzigingen zich niet volledig verspreiden tussen verzoeken om Experience Manager vanwege uiteindelijk consistente aard van de opslag in Cloud Service. Dit leidt tot 404 reacties om uploadvraag in werking te stellen of te voltooien toe te schrijven aan de vereiste omslagverwezenlijking die niet wordt verspreid. Clients moeten 404 reacties verwachten en deze afhandelen door een nieuwe strategie uit te voeren.
 
 ### Uploaden starten {#initiate-upload}
 
@@ -159,7 +159,7 @@ Als het uploaden is gelukt, reageert de server op elke aanvraag met een `201` st
 
 >[!NOTE]
 >
-Voor meer informatie over het uploadalgoritme, zie [officiële functiedocumentatie](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) en [API-documentatie](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) in het Apache Jackrabbit Oak-project.
+>Voor meer informatie over het uploadalgoritme, zie [officiële functiedocumentatie](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) en [API-documentatie](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) in het Apache Jackrabbit Oak-project.
 
 ### Uploaden voltooien {#complete-upload}
 
@@ -179,7 +179,7 @@ Nadat alle delen van een binair dossier worden geupload, leg een verzoek van de 
 
 >[!NOTE]
 >
-Als het element bestaat en beide `createVersion` noch `replace` wordt opgegeven, dan [!DNL Experience Manager] werkt de huidige versie van het element met het nieuwe binaire getal bij.
+>Als het element bestaat en beide `createVersion` noch `replace` wordt opgegeven, dan [!DNL Experience Manager] werkt de huidige versie van het element met het nieuwe binaire getal bij.
 
 Net als bij het initiëringsproces kunnen de volledige aanvraaggegevens informatie voor meer dan één bestand bevatten.
 
@@ -215,7 +215,7 @@ function debug() {
 }
 
 # Function to check if a file exists
-function file_exists() {
+function file_exists () {
     [ -e "$1" ]
 }
 
@@ -431,7 +431,7 @@ Voor meer informatie over de uploadalgoritmen of om uw eigen uploadscripts en -g
 
 >[!NOTE]
 >
-Zowel de aem-upload bibliotheek als het bevel-lijn hulpmiddel gebruiken allebei [node-httptransfer-bibliotheek](https://github.com/adobe/node-httptransfer/)
+>Zowel de aem-upload bibliotheek als het bevel-lijn hulpmiddel gebruiken allebei [node-httptransfer-bibliotheek](https://github.com/adobe/node-httptransfer/)
 
 ### Verouderde API&#39;s voor middelenupload {#deprecated-asset-upload-api}
 
@@ -444,9 +444,9 @@ De nieuwe uploadmethode wordt alleen ondersteund voor [!DNL Adobe Experience Man
 
 >[!MORELIKETHIS]
 >
-* [Opensource-em-upload-bibliotheek](https://github.com/adobe/aem-upload).
-* [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem).
-* [Apache Jackrabbit Oak-documentatie voor direct uploaden](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+>* [Opensource-em-upload-bibliotheek](https://github.com/adobe/aem-upload).
+>* [Opensource opdrachtregelprogramma](https://github.com/adobe/aio-cli-plugin-aem).
+>* [Apache Jackrabbit Oak-documentatie voor direct uploaden](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## Workflows voor de verwerking en naverwerking van bedrijfsmiddelen {#post-processing-workflows}
 
@@ -551,4 +551,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
-* [[!DNL Experience Cloud] als [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] als [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

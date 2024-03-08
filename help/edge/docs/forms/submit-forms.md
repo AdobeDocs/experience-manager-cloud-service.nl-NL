@@ -4,17 +4,16 @@ description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve f
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
 
-
 # De spreadsheet voorbereiden voor het accepteren van gegevens
 
-![Op documenten gebaseerd ontwerpecosysteem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/create-forms.md), is het tijd om de overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen.
 
@@ -33,13 +32,21 @@ Het werkblad inschakelen:
    >
    > Als de `incoming` blad is niet aanwezig, AEM verzendt geen gegevens naar het werkblad.
 
-1. De namen van formuliervelden en waarden van de `Name` in de`shared-default` blad, naar de koppen in het `incoming` blad.
+1. Voeg op dit blad een tabel in met de naam &quot;take_form&quot;. Selecteer het aantal kolommen dat nodig is om overeen te komen met de namen van de formuliervelden. Ga vervolgens op de werkbalk naar Invoegen > Tabel en klik op OK.
 
-   Elke waarde in het dialoogvenster `Name` kolom van de `shared-default` blad, met uitzondering van de verzendknop, fungeert als koptekst in het dialoogvenster `incoming` blad. Neem bijvoorbeeld de volgende afbeelding die kopteksten illustreert voor een formulier &quot;contact-us&quot;:
+1. Wijzig de naam van de tabel in &quot;take_form&quot;. Als u in Microsoft Excel de naam van de tabel wilt wijzigen, selecteert u de tabel en klikt u op Tabelontwerp.
+
+1. Voeg vervolgens de namen van de formuliervelden toe als de tabelkoppen. Om ervoor te zorgen dat de velden exact hetzelfde zijn, kunt u deze kopiëren en plakken vanaf het standaardblad.  Selecteer en kopieer de formulier-id&#39;s onder de kolom Naam op het blad &#39;shared-default&#39;, behalve het verzendveld.
+
+1. Selecteer Plakken speciaal > Rijen omzetten in kolommen op het blad &#39;inkomend&#39; om de veld-id&#39;s als kolomkoppen op dit nieuwe blad te kopiëren. Alleen velden behouden waarvan de gegevens andere gegevens moeten vastleggen, kunnen worden genegeerd.
+
+   Elke waarde in het dialoogvenster `Name` kolom van de `shared-default` blad, met uitzondering van de verzendknop, kan dienen als koptekst in het dialoogvenster `incoming` blad. Neem bijvoorbeeld de volgende afbeelding die kopteksten illustreert voor een formulier &quot;contact-us&quot;:
 
    ![Velden voor een formulier met contactgegevens](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Gebruik sidekick om een voorvertoning van het blad weer te geven.
+
+
+1. Gebruik de extensie AEM Sidekick om een voorbeeld van de formulierupdates weer te geven. Uw blad is nu klaar om inkomende formulierverzendingen te accepteren.
 
    >[!NOTE]
    >
@@ -48,23 +55,11 @@ Het werkblad inschakelen:
 
 Nadat de veldnamen aan de `incoming` blad, kan uw formulier opmerkingen accepteren. U kunt een voorbeeld van het formulier bekijken en gegevens naar het blad verzenden.
 
+Zodra het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van het formulier weergeven met Adaptief formulierblok](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [aanvragen voor POST gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
 
-
-U ziet ook de volgende wijzigingen in uw spreadsheet:
-
-Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek of Google-werkblad. In dit blad, kunt u automatische berichten voor een aangewezen kanaal van de Slack vormen wanneer de nieuwe gegevens in uw spreadsheet worden opgenomen. Momenteel steunt AEM berichten uitsluitend aan de organisatie van de Slack van de Techniek van de AEM en de organisatie van de Steun van de Onderneming van de Adobe.
-
-1. Als u meldingen voor Slacks wilt instellen, voert u &#39;teamId&#39; van de werkruimte van de Slack en &#39;kanaalnaam&#39; of &#39;ID&#39; in. U kunt ook de slack-bot (met de foutopsporingsopdracht) vragen naar &quot;teamId&quot; en &quot;channel ID&quot;. Het verdient de voorkeur de kanaalid te gebruiken in plaats van de kanaalnaam, omdat deze de kanaalnamen behoudt.
-
-   >[!NOTE]
-   >
-   > Oudere formulieren hadden niet de kolom &quot;teamId&quot;. &quot;teamId&quot; is opgenomen in de kanaalkolom, gescheiden door &quot;#&quot; of &quot;/&quot;.
-
-1. Voer een gewenste titel in en typ onder velden de namen van de velden die u wilt weergeven in het bericht Slack. Elke kop moet worden gescheiden door een komma (bijvoorbeeld naam, e-mail).
-
-   >[!WARNING]
-   >
-   >  De &quot;gedeelde-standaard&quot;bladen moeten nooit om het even welke persoonlijk identificeerbare informatie of gevoelige gegevens bevatten die u niet aan openbaar toegankelijk bent.
+>[!WARNING]
+>
+>  De &quot;gedeelde-standaard&quot;bladen moeten nooit om het even welke persoonlijk identificeerbare informatie of gevoelige gegevens bevatten die u niet aan openbaar toegankelijk bent.
 
 
 ## (Optioneel) Gebruik Admin API&#39;s om een spreadsheet in te schakelen voor het accepteren van gegevens
@@ -155,6 +150,11 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
 
    Uw formulier is nu ingeschakeld voor het accepteren van gegevens. U ziet ook de volgende wijzigingen in uw spreadsheet:
 
+## Automatische wijzigingen in blad als dit is ingeschakeld voor het accepteren van gegevens.
+
+
+Wanneer het werkblad is ingesteld op het ontvangen van gegevens, ziet u de volgende wijzigingen in het werkblad:
+
 Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek of Google-werkblad. In dit blad, kunt u automatische berichten voor een aangewezen kanaal van de Slack vormen wanneer de nieuwe gegevens in uw spreadsheet worden opgenomen. Momenteel steunt AEM berichten uitsluitend aan de organisatie van de Slack van de Techniek van de AEM en de organisatie van de Steun van de Onderneming van de Adobe.
 
 1. Als u meldingen voor Slacks wilt instellen, voert u &#39;teamId&#39; van de werkruimte van de Slack en &#39;kanaalnaam&#39; of &#39;ID&#39; in. U kunt ook de slack-bot (met de foutopsporingsopdracht) vragen naar &quot;teamId&quot; en &quot;channel ID&quot;. Het verdient de voorkeur de kanaalid te gebruiken in plaats van de kanaalnaam, omdat deze de kanaalnamen behoudt.
@@ -165,12 +165,10 @@ Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek
 
 1. Voer een gewenste titel in en typ onder velden de namen van de velden die u wilt weergeven in het bericht Slack. Elke kop moet worden gescheiden door een komma (bijvoorbeeld naam, e-mail).
 
+   >[!WARNING]
+   >
+   >  De &quot;gedeelde-standaard&quot;bladen moeten nooit om het even welke persoonlijk identificeerbare informatie of gevoelige gegevens bevatten die u niet aan openbaar toegankelijk bent.
 
-Het blad is nu ingesteld op het ontvangen van gegevens. U kunt [Een voorbeeld van het formulier weergeven met Adaptief formulierblok](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [aanvragen voor POST gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
-
->[!WARNING]
->
->  De &quot;gedeelde-standaard&quot;bladen moeten nooit om het even welke persoonlijk identificeerbare informatie of gevoelige gegevens bevatten die u niet aan openbaar toegankelijk bent.
 
 ## Gegevens naar uw werkblad verzenden {#send-data-to-your-sheet}
 
@@ -288,10 +286,3 @@ Er zijn een paar verschillende manieren waarop u de formuliergegevens in de hoof
 
 Vervolgens kunt u het bedankbericht aanpassen, [een pagina voor bedankt configureren](/help/edge/docs/forms/thank-you-page-form.md), of [omleidingen instellen](/help/edge/docs/forms/thank-you-page-form.md).
 
-## Meer weergeven
-
-* [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
-* [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
-* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-forms.md)
-* [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
-* [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)

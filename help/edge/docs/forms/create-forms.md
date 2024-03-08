@@ -4,13 +4,13 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery do
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
-
 
 # Een formulier maken met Adaptief formulierblok
 
@@ -27,24 +27,26 @@ AEM Forms Edge Delivery biedt een blok, ook wel Adaptief formulierblok genoemd, 
 
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
-* De Dienst van de Levering van de Rand van de opstelling (EDS) GitHub project gebruikend AEM boilerplate en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine. Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie. In dit document wordt de lokale map van het EDS-project (Edge Delivery Service) `[EDS Project repository]` .
+* Het project van GitHub van de opstelling Edge Delivery Services (EDS) gebruikend AEM boilerplate en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine. Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie. In dit document wordt de lokale map van uw Edge Delivery Services-project (EDS) aangeduid als `[EDS Project repository]` .
 * Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Als u Microsoft SharePoint wilt instellen als inhoudsbron, raadpleegt u [Hoe te om SharePoint te gebruiken](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Een formulier maken
 
-+++ Stap 1: Voeg het Adaptive Form Block toe aan uw Edge Delivery Service-project (EDS).
++++ Stap 1: Voeg het Adaptieve Blok van de Vorm aan uw Edge Delivery Services (EDS) project toe.
 
-Met Adaptief kunnen gebruikers formulieren maken voor een Edge Delivery Service-site. Nochtans, is dit blok niet inbegrepen in het gebrek AEM boilerplate (die wordt gebruikt om een project van de Dienst van de Levering van de Rand tot stand te brengen). Het adaptieve formulierblok naadloos integreren in uw Edge Delivery Service-project:
+Met Adaptief kunnen gebruikers formulieren maken voor een Edge Delivery ServicesSite. Nochtans, is dit blok niet inbegrepen in het gebrek AEM boilerplate (dat wordt gebruikt om een project van Edge Delivery Services tot stand te brengen). Het adaptieve formulierblok naadloos integreren in uw Edge Delivery Services-project:
 
-1. **Klonen in de Adaptive Form Block-opslagplaats**: Kloon de [Adaptief opslagplaats voor formulierblokken](https://github.com/adobe/afb) op uw lokale computer. Het bevat de code die het formulier op een EDS-webpagina moet weergeven. In dit document wordt de lokale map van de Forms Block-opslagplaats aangeduid als `[Adaptive Form Block repository]`.
-1. **Zoek de adaptieve opslagplaats voor formulierblokken:** Toegang krijgen tot de [Adaptief opslagplaats voor formulierblokken]/blokmap op uw lokale computer en kopieer de `form` map.
-1. **Plak het Adaptief formulierblok in uw EDS-project:**
-Ga naar de [EDS-projectopslagplaats]/bloks/ map op uw lokale computer en plak de formuliermap.
-1. **Wijzigingen in GitHub vastleggen:** Controle in de vormomslag en zijn onderliggende dossiers aan uw project van de Dienst van de Levering van de Rand op GitHub.
+1. **Klonen in de Adaptive Form Block-opslagplaats**: Kloon de [Adaptief opslagplaats voor formulierblokken](https://github.com/adobe-rnd/form-block) op uw lokale computer. Het bevat de code die het formulier op een EDS-webpagina moet weergeven. In dit document wordt de lokale map van de Forms Block-opslagplaats aangeduid als `[Adaptive Form Block repository]`.
+1. **Zoek de adaptieve opslagplaats voor formulierblokken:** Toegang krijgen tot de [Adaptief opslagplaats voor formulierblokken]/block/src folder en kopieer zijn inhoud.
 
-Na het voltooien van deze stappen, wordt het Adaptieve Blok van de Vorm met succes toegevoegd aan uw het projectbewaarplaats van de Dienst van de Levering van Randen (EDS) op GitHub. U kunt nu formulieren maken en toevoegen aan een pagina EDS-sites.
+1. op uw lokale computer en kopieer de `form` map.
+1. **Plak de code van het Adaptief formulierblok in uw EDS-project:**
+Ga naar de [EDS-projectopslagplaats]/block/ map op uw lokale computer en maak een &#39;form&#39;-map. Plak de `[Adaptive Form Block repository]/blocks/src content`, gekopieerd naar de `[EDS Project repository]/blocks/form` map.
+1. **Wijzigingen in GitHub vastleggen:** Inchecken `[EDS Project repository]/blocks/form` de omslag en zijn onderliggende dossiers aan uw Edge Delivery Services project op GitHub.
+
+Na de voltooiing van deze stappen, wordt het Adaptieve Blok van de Vorm met succes toegevoegd aan uw Edge Delivery Services (EDS) projectbewaarplaats op GitHub. U kunt nu formulieren maken en toevoegen aan een pagina EDS-sites.
 
 
 **Het oplossen van problemen GitHub bouwt kwesties**
@@ -57,13 +59,11 @@ Als u de fout &quot;Kan pad naar module &quot;&#39;../../scripts/lib-franklin.js
 * **Fouten bij het koppelen van handgrepen:**
 Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open de [EDS-project]/package.json en wijzig het script &quot;lint&quot; van &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; naar &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;. Sparen het dossier en begaat de veranderingen in uw project GitHub.
 
-
-
 +++
 
 +++ Stap 2: Een formulier ontwerpen met Microsoft Excel of Google Sheet.
 
-In plaats van door complexe processen te navigeren, kunt u zonder problemen een formulier maken met behulp van een spreadsheet. U begint door de rijen en kolomkoppen toe te voegen aan een spreadsheet, waar elke rij een formulierveld vertegenwoordigt, terwijl elke kolomkop de eigenschappen van het overeenkomstige veld definieert.
+In plaats van door complexe processen te navigeren, kunt u zonder problemen een formulier maken met behulp van een spreadsheet. U kunt de rijen en kolommen definiëren die de formulierstructuur vormen. Elke rij vertegenwoordigt een individu [formulierveld](/help/edge/docs/forms/form-components.md#available-components) en de kolomkoppen definiëren de corresponderende [veldeigenschappen](/help/edge/docs/forms/form-components.md#components-properties).
 
 Neem bijvoorbeeld het volgende spreadsheet waar rijen omtrekvelden voor een `enquiry` de eigenschappen van formulier- en kolomkoppen worden gedefinieerd:
 
@@ -96,7 +96,7 @@ Ga als volgt te werk om het formulier te maken:
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
    ```
 
    * `<branch>` Verwijst naar de tak van uw bewaarplaats GitHub.
@@ -110,7 +110,7 @@ Ga als volgt te werk om het formulier te maken:
 
 +++
 
-+++ Stap 3: Geef een voorbeeld van het formulier weer met de pagina Edge Delivery Service (EDS).
++++ Stap 3: Geef een voorbeeld van het formulier weer met de pagina EDS (Edge Delivery Services).
 
 
 Tot nu toe hebt u het Adaptief formulierblok toegevoegd aan uw EDS-project en de structuur van het formulier voorbereid. Nu een voorbeeld van het formulier weergeven:
@@ -121,7 +121,7 @@ Tot nu toe hebt u het Adaptief formulierblok toegevoegd aan uw EDS-project en de
 
 1. **Navigeer naar de gewenste locatie:** Ga naar de gewenste locatie in het document waar u het formulier wilt toevoegen.
 
-1. **Voeg het adaptieve formulierblok toe:** Voeg een blok met de naam &#39;Form&#39; in het bestand in, zoals hieronder wordt geïllustreerd:
+1. **Voeg het adaptieve formulierblok toe:** Een formulierblok maken om het formulier te genereren. Selecteer Invoegen > Tabel en maak een tabel met één kolom en twee rijen. Geef de tabel een naam &quot;Formulier&quot; en plak de voorbeeld-URL in de tweede rij. Zorg ervoor dat de URL is opgemaakt als een hyperlink, niet als onbewerkte tekst, zoals hieronder wordt geïllustreerd:
 
    | Formulier |
    |---|
@@ -153,12 +153,4 @@ Tot nu toe hebt u het Adaptief formulierblok toegevoegd aan uw EDS-project en de
 
 
 
-## Meer weergeven
 
-* [Formuliercomponenten](/help/edge/docs/forms/form-components.md)
-* [Eigenschappen van formulierveld](/help/edge/docs/forms/eds-form-field-properties)
-* [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
-* [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
-* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-forms.md)
-* [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
-* [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)

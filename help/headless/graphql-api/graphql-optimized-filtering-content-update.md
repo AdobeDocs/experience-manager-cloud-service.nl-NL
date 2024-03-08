@@ -2,10 +2,10 @@
 title: Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters
 description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filters in Adobe Experience Manager as a Cloud Service kunt bijwerken voor levering van inhoud zonder kop.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 2%
+source-wordcount: '886'
+ht-degree: 0%
 
 ---
 
@@ -52,18 +52,18 @@ Er zijn voorwaarden voor deze taak:
    <tr>
       <td>1</td>
       <td>"CF_MIGRATION_ENABLED" </td>
-      <td>`1` </td>
-      <td>`0` </td>
+      <td>"1" </td>
+      <td>"0" </td>
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
-      <td>Schakelt in(!=0) of schakelt (0) het activeren van de migratietaak voor inhoudsfragmenten uit. </td>
+      <td>Schakelt in (!=0) of schakelt (0) het activeren van de migratietaak van het inhoudsfragment uit. </td>
      </tr>
      <tr>
       <td>2</td>
       <td>"CF_MIGRATION_ENFORCE" </td>
-      <td>`1` </td>
-      <td>`0` </td>
+      <td>"1" </td>
+      <td>"0" </td>
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
@@ -72,8 +72,8 @@ Er zijn voorwaarden voor deze taak:
      <tr>
       <td>3</td>
       <td>"CF_MIGRATION_BATCH" </td>
-      <td>`50` </td>
-      <td>`50` </td>
+      <td>"50" </td>
+      <td>"50" </td>
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
@@ -82,8 +82,8 @@ Er zijn voorwaarden voor deze taak:
      <tr>
       <td>4</td>
       <td>"CF_MIGRATION_LIMIT" </td>
-      <td>`1000` </td>
-      <td>`1000` </td>
+      <td>"1000" </td>
+      <td>"1000" </td>
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
@@ -92,8 +92,8 @@ Er zijn voorwaarden voor deze taak:
      <tr>
       <td>5</td>
       <td>"CF_MIGRATION_INTERVAL" </td>
-      <td>`60` </td>
-      <td>`600` </td>
+      <td>"60" </td>
+      <td>"600" </td>
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
@@ -169,13 +169,13 @@ Er zijn voorwaarden voor deze taak:
      </thead> 
      <tbody>
        <tr>
-         <td>2023-04-21 06:00:35.723</td>
+         <td>2023-04-21 06:00:35,723</td>
          <td>auteur</td>
          <td>cm-p1234-e1234-aem-auteur-76d6dc4b79-8lsb5</td>
          <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-baan-draad-pool)-1-Inhoud Config van de Rij van de Rij van de Verbetering van het Fragment (cfm/upgrader)] com.adobe.cq.dam.impl.upgrade.UpgradeJob Voltooide content fragments upgrade in 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade naar versie '1' is uitgevoerd.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
        </tr>
        <tr>
-         <td>2023-04-21 06:05:48.207</td>
+         <td>2023-04-21 06:05:48,207</td>
          <td>gouden publicatie</td>
          <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
          <td>[sling-threadpool-284b9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-baan-draad-pool)-1-Inhoud Config van de Rij van de Rij van de Verbetering van het Fragment (cfm/upgrader)] com.adobe.cq.dam.cfm.impl.impl.impl upgrade.UpgradeJob Voltooide content fragments upgrade in 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f3394ddfc_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade naar versie '1' is uitgevoerd.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
@@ -206,12 +206,12 @@ Er zijn voorwaarden voor deze taak:
      <tr>
       <td></td>
       <td>"CF_MIGRATION_ENABLED" </td>
-      <td>`0` </td>
-      <td>`0` </td>
+      <td>"0" </td>
+      <td>"0" </td>
       <td>Alles </td>
       <td> </td>
       <td>Variabele </td>
-      <td>Disables(0) (or Enables(!=0)) het activeren van de migratietaak voor inhoudsfragmenten. </td>
+      <td>Schakelt (0) uit (of schakelt (!=0)) het activeren van de migratietaak voor inhoudsfragmenten. </td>
      </tr>
     </tbody>
    </table>

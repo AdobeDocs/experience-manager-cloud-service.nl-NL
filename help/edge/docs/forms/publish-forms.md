@@ -4,13 +4,13 @@ description: Een AEM Forms-formulier voor Edge Delivery Services publiceren
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
-
 
 # Uw formulier publiceren
 
@@ -112,10 +112,6 @@ Als u een fout die op het volgende bericht lijkt ontmoet, wijst het erop dat spr
 +++
 
 
-## Meer weergeven
 
-* [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
-* [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
-* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-forms.md)
-* [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
-* [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)
+
+## Meer weergeven

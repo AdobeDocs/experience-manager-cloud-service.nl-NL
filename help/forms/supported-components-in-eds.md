@@ -1,12 +1,12 @@
 ---
-title: AEM Forms Edge Delivery Service-formulieronderdelen
-description: De AEM Forms Edge Delivery Service is gebouwd voor maximale prestaties en stelt u in staat de toekomst van gestroomlijnde gegevensverzameling en de betrokkenheid van gebruikers in de gaten te houden. In het artikel worden alle formuliercomponenten weergegeven die in het vak voor EDD-formulieren beschikbaar zijn.
+title: AEM Forms Edge Delivery ServicesForm Components
+description: De AEM Forms Edge Delivery Services zijn gebouwd voor optimale prestaties en stellen u in staat om de toekomst van gestroomlijnde gegevensverzameling en betrokkenheid van gebruikers te bekijken. In het artikel worden alle formuliercomponenten weergegeven die in het vak voor EDD-formulieren beschikbaar zijn.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
