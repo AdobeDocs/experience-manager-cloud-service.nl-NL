@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -198,31 +198,29 @@ Niet-gepubliceerde inhoud voorvertonen:
 
    [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### Uw formulier bijwerken
+### Een formulier maken
 
-1. Ga naar de map Microsoft SharePoint of Google Drive.
+De voorbeeldinhoud bestaat uit een blad &quot;vraag&quot; dat fungeert als sjabloon voor het formulier &quot;vraag&quot;. Elke rij van het blad vertegenwoordigt een [formulierveld](/help/edge/docs/forms/form-components.md#available-components)en de kolomkoppen definiëren de [veldeigenschappen](/help/edge/docs/forms/form-components.md#available-components). Met dit voorbeeldformulier begint u met het samenstellen van uw formulier.
 
-1. Open de `enquiry.xlsx` voor bewerken.
+![Invorderingsformulier](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-   ![Invorderingsformulier](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+Laten we beginnen met het bijwerken van een veldtabel. Open het blad &#39;Vraag&#39; voor bewerking, wijzig het label van de verzendknop in `Let's Chat`en gebruik sidekick om deze te publiceren.
 
-1. Wijzig het label van de verzendknop in `Let's Chat`.
+![Invorderingsformulier](/help/edge/assets/enquiry-form-preview-publish.png)
 
-   ![Invorderingsformulier](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. Gebruik AEM Sidekick om een voorvertoning weer te geven van de `enquiry.xlsx` bestand.
-
-   ![Invorderingsformulier](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. Ga naar de volgende URL om een voorbeeld van het enquêteformulier te bekijken:
+Ga naar de volgende URL om een voorbeeld van het bijgewerkte onderzoeksformulier te bekijken:
 
 
-   ```HTML
-   https://<branch>--<repository>--<owner>.hlx.page/enquiry
-   ```
+```HTML
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+```
 
-   Het label van de verzendknop wordt bijgewerkt. Vul nu het formulier in en klik op de knop Verzenden. Er treedt een fout op, vergelijkbaar met het volgende, omdat het spreadsheet niet is [ingesteld om de gegevens nog te accepteren](/help/edge/docs/forms/submit-forms.md).
+Het label van de verzendknop wordt bijgewerkt naar `Let's Chat`.
 
+![Invorderingsformulier](/help/edge/assets/updated-form.png)
+
+Ga voor meer informatie over het maken en publiceren van een nieuw formulier naar de [een formulier maken](/help/edge/docs/forms/create-forms.md) hulplijn.
 
 ### Beginnen met het ontwikkelen van stijlen en functionaliteit
 
