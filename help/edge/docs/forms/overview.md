@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ In het volgende diagram ziet u hoe u inhoud in Microsoft Excel of Google Sheets 
 
 ![Edge Delivery Architecture](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery-services zijn een set services die samengesteld kunnen worden en die een hoge mate van flexibiliteit mogelijk maken bij het schrijven van inhoud op uw website. Zoals eerder vermeld, kunt u beide [Inhoudsbeheer AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [AEM maken](/help/implementing/universal-editor/introduction.md) alsmede [op documenten gebaseerd schrijven](https://www.aem.live/docs/authoring)
+Edge Delivery-services zijn een set services die samengesteld kunnen worden en die een hoge mate van flexibiliteit mogelijk maken bij het schrijven van inhoud op uw website. U kunt zowel AEM inhoudsbeheer gebruiken met [AEM maken](/help/forms/creating-adaptive-form-core-components.md) alsmede [op documenten gebaseerd schrijven](/help/edge/docs/forms/create-forms.md)
 
 U kunt bijvoorbeeld inhoud rechtstreeks vanuit Microsoft Excel of Google Sheets gebruiken. Dit betekent dat inhoud uit deze bronnen formulieren op uw website kan worden. De nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
 

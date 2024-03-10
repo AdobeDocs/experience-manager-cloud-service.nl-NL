@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1786'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
 
 ### Aan de slag met de AEM Forms boilerplate-opslagsjabloon
 
-1. Maak een Github-opslagplaats voor uw AEM Project. Opslagplaats maken:
+1. Creeer een bewaarplaats GitHub voor uw AEM Project. Opslagplaats maken:
    1. Ga naar [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
@@ -65,7 +65,7 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
    >[!NOTE]
    >
    >
-   > Als u de Onderneming van Github met IP het filtreren gebruikt, kunt u volgende IP aan de lijst van gewenste personen toevoegen: 3.227.118.73
+   > Als u de Onderneming van GitHub met IP het filtreren gebruikt, kunt u volgende IP aan de lijst van gewenste personen toevoegen: 3.227.118.73
 
    Gefeliciteerd! Er wordt een nieuwe website uitgevoerd op `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -79,11 +79,11 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
 
 ### Uw eigen inhoudsbron koppelen
 
-Uw nieuwe Github-opslagplaats wijst naar [voorbeeldinhoud opgeslagen in een Google Drive-map](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Deze inhoud met het kenmerk Alleen-lezen biedt een fantastisch beginpunt voor uw formulieren. U kunt het bestand gratis kopiëren naar uw eigen Google Drive en het aanpassen aan uw wensen.
+Uw nieuwe GitHub-opslagplaats wijst naar [voorbeeldinhoud opgeslagen in een Google Drive-map](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Deze inhoud met het kenmerk Alleen-lezen biedt een fantastisch beginpunt voor uw formulieren. U kunt het bestand gratis kopiëren naar uw eigen Google Drive en het aanpassen aan uw wensen.
 
 ![Voorbeeldinhoud op Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-U kunt als volgt de voorbeeldinhoud naar uw eigen inhoudsmap kopiëren en deze naar uw eigen inhoudsmap verwijzen:
+Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaats GitHub aan uw eigen inhoudsomslag te richten:
 
 1. Maak een nieuwe map die specifiek voor uw AEM inhoud is bestemd in Google Drive of Microsoft SharePoint. In dit document wordt een map gebruikt die op Microsoft SharePoint is gemaakt.
 
@@ -106,7 +106,7 @@ U kunt als volgt de voorbeeldinhoud naar uw eigen inhoudsmap kopiëren en deze n
 
       ![Voorbeeldinhoud downloaden](/help/edge/assets/download-sample-content.png)
 
-      De `index`, `nav`, en `footer` de dossiers bepalen de basislay-out van uw pagina&#39;s en veranderen zelden door een project. Ze hebben ook een specifieke structuur die afwijkt van de meeste andere inhoudsbestanden. Door deze bestanden te bekijken, krijgt u een idee hoe inhoud in AEM projecten wordt georganiseerd.
+      De `index`, `nav`, en `footer` de dossiers bepalen de basislay-out van uw pagina&#39;s en veranderen zelden door een project. Ze hebben ook een specifieke structuur die afwijkt van de meeste andere inhoudsbestanden. Door deze bestanden te bekijken, krijgt u een idee hoe inhoud in AEM Projecten wordt georganiseerd.
 
 
    1. Upload deze bestanden naar de map Microsoft SharePoint of Google Drive.
@@ -164,17 +164,17 @@ Niet-gepubliceerde inhoud voorvertonen:
 
    ![Pin AEM Sidekick](/help/edge/assets/pin-aem-sidekick.png)
 
-1. Als u de Sidekick Chrome-extensie wilt instellen, gaat u naar de eerder gedeelde map Google Drive of Microsoft SharePoint en klikt u met de rechtermuisknop op het extensiepictogram op de browserwerkbalk en selecteert u `Add this project`.
+1. Als u de Sidekick Chrome-extensie wilt instellen, gaat u naar de eerder gedeelde map Google Drive of Microsoft SharePoint, klikt u met de rechtermuisknop op het extensiepictogram op de browserwerkbalk en selecteert u `Add this project`.
 
    ![AEM Sidekick - Een project toevoegen](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-   Zodra de extensie is geïnstalleerd en uw project is toegevoegd, kunt u een voorvertoning van uw inhoud weergeven en deze publiceren vanaf uw Google Drive.
+   Wanneer de extensie is geïnstalleerd en uw project is toegevoegd, kunt u een voorvertoning van uw inhoud weergeven en deze publiceren vanaf uw Google Drive.
 
 1. Selecteer alle documenten in de map Microsoft SharePoint of Google Drive. U kunt meerdere documenten kiezen door de Ctrl-toets (Windows/Linux) of de Cmd-toets (Mac) ingedrukt te houden terwijl u klikt.
 
    ![Alle bestanden selecteren](/help/edge/assets/select-all-files.png)
 
-1. Klik op het AEM Sidekick-pictogram dat op de uitbreidingsbalk van Chrome is vastgezet. Er verschijnt een werkbalk op het scherm. U kunt uw inhoud voorvertonen of publiceren.
+1. Klik op het AEM Sidekick-pictogram op de uitbreidingsbalk van Chrome. Er verschijnt een werkbalk op het scherm. U kunt uw inhoud voorvertonen of publiceren.
 
    Als u over hebt gekopieerd `index`, `nav`, `footer` en `enquiry` Dit zijn allemaal afzonderlijke documenten met een eigen voorvertoning en publicatiecyclus. Zorg er dus voor dat u een voorvertoning weergeeft (en publiceert) van al deze bestanden.
 
@@ -204,7 +204,7 @@ De voorbeeldinhoud bestaat uit een blad &quot;vraag&quot; dat fungeert als sjabl
 
 ![Invorderingsformulier](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Laten we beginnen met het bijwerken van een veldtabel. Open het blad &#39;Vraag&#39; voor bewerking, wijzig het label van de verzendknop in `Let's Chat`en gebruik sidekick om deze te publiceren.
+Laten we beginnen met het bijwerken van een veldlabel. Open het blad &#39;Vraag&#39; voor bewerking, wijzig het label van de verzendknop in `Let's Chat`en gebruik sidekick om deze te publiceren.
 
 ![Invorderingsformulier](/help/edge/assets/enquiry-form-preview-publish.png)
 
@@ -233,7 +233,7 @@ Zo kunt u snel aan de slag met een lokale AEM-ontwikkelomgeving:
        npm install -g @adobe/aem-cli
    ```
 
-1. Kloon uw project van Github: Kloon uw projectbewaarplaats van GitHub gebruikend het volgende bevel, die vervangt <owner> met de eigenaar van de opslagplaats en <repo> met de naam van de opslagplaats:
+1. Kloon uw project GitHub: Kloon uw projectbewaarplaats van GitHub gebruikend het volgende bevel, die vervangt <owner> met de eigenaar van de opslagplaats en <repo> met de naam van de opslagplaats:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,7 +281,7 @@ Verzeker een vlotte GitHub bouwt proces door potentiële kwesties te richten:
 Als u de fout &quot;Kan pad naar module &quot;&#39;../../scripts/lib-franklin.js&#39;&#39; niet omzetten, navigeert u naar de [EDS-project]/blocks/forms/form.js. Werk de importinstructie bij door het bestand lib-franklin.js te vervangen door het bestand aem.js.
 
 * **Fouten bij het koppelen van handgrepen:**
-Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open de [EDS-project]/package.json en wijzig het script &quot;lint&quot; van &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; naar &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;. Sparen het dossier en begaat de veranderingen in uw project GitHub.
+Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open de [EDS-project]/package.json en wijzig het &quot;lint&quot;manuscript van `"lint": "npm run lint:js && npm run lint:css"` tot `"lint": "echo 'skipping linting for now'"`. Sparen het dossier en begaat de veranderingen in uw project GitHub.
 
 
 ## Zie ook
@@ -289,9 +289,4 @@ Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open de [EDS-project]/pac
 * [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Formulieren rechtstreeks verzenden naar uw Microsoft Excel- of Google-werkbladen](/help/edge/docs/forms/submit-forms.md)
 * [De weergave van uw formulieren wijzigen](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 
