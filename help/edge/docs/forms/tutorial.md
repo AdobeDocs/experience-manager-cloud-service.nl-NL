@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1770'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendel
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
-AEM Forms biedt een blok, Adaptief formulierblok genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens.
+AEM Forms biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt een nieuw AEM-project maken dat vooraf is uitgerust met Adaptive Forms Block of het Adaptive Forms Block toevoegen aan een bestaand AEM project.
 
 Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publiceren van uw eigen aangepaste formulier met een nieuw Adobe Experience Manager (AEM) Forms-project. U leert ook Adaptive Forms Block aan een bestaand AEM-project toevoegen.
 
-* **[Een nieuw AEM-project maken dat vooraf is uitgerust met een adaptief Forms-blok](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
+* **[Een nieuw AEM-project maken dat vooraf is uitgerust met Adaptive Forms Block](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
 * **[Aangepast Forms-blok toevoegen aan een bestaand AEM-project](#add-adaptive-forms-block-to-an-existing-eds-project)**
 
 
@@ -37,20 +37,21 @@ Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publice
 **Koppen omhoog!** Deze zelfstudie gebruikt macOS, Chrome en Visual Studio Code. Terwijl de stappen voor andere montages kunnen worden aangepast, zouden de screenshots en specifieke elementen UI op uw gekozen werkend systeem, browser, en coderedacteur kunnen verschillen.
 
 
-## Een nieuw AEM-project maken dat vooraf is uitgerust met een adaptief Forms-blok
+## Een nieuw AEM-project maken dat vooraf is uitgerust met Adaptive Forms Block
 
-Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM project dat vooraf is geconfigureerd met het Adaptive Form Block. Het is de snelste en eenvoudigste manier om AEM best practices te volgen en meteen uw formulieren samen te stellen.
+Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM project dat vooraf is geconfigureerd met het Adaptive Forms Block. Het is de snelste en eenvoudigste manier om AEM best practices te volgen en meteen uw formulieren samen te stellen.
 
 ### Aan de slag met de AEM Forms boilerplate-opslagsjabloon
 
-1. Meld u aan bij uw Github-account.
-1. Ga naar [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
+1. Maak een Github-opslagplaats voor uw AEM Project. Opslagplaats maken:
+   1. Ga naar [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
-   ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
-1. Klikken **Deze sjabloon gebruiken** en selecteert u de **Een nieuwe opslagplaats maken** en selecteert u waar u deze gegevensopslagruimte wilt maken.
-   ![Nieuwe opslagplaats maken met AEM Forms Boilerplate](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+      ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
+   1. Klik op de knop **Deze sjabloon gebruiken** en selecteert u de **Een nieuwe opslagplaats maken** -optie. Het scherm van de nieuwe repository wordt geopend.
 
-   Adobe beveelt aan dat de gegevensopslagruimte wordt ingesteld op openbaar. Selecteer in het scherm Een nieuwe opslagplaats maken de optie **publiek** -optie.
+      ![Nieuwe opslagplaats maken met AEM Forms Boilerplate](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+
+   1. Selecteer in het scherm Nieuwe opslagplaats maken de optie **eigenaar** en geeft **Naam opslagplaats** . Adobe beveelt aan dat de opslagplaats wordt ingesteld op **Openbaar**. Selecteer dus de **publiek** en klik op **Opslagplaats maken**.
 
    ![De opslagplaats instellen op openbaar](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
@@ -61,35 +62,43 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
 
    ![De opslagplaats instellen op openbaar](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
 
-       >[!OPMERKING]
-       >
-       >
-       > Als u de Onderneming van Github met IP het filtreren gebruikt, kunt u volgende IP aan de lijst van gewenste personen toevoegen: 3.227.118.73
-   
-   Gefeliciteerd! Er wordt een nieuwe website uitgevoerd op `https://<branch>--<repo>--<owner>.hlx.page/`. In het bovenstaande voorbeeld is dat [https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   >[!NOTE]
+   >
+   >
+   > Als u de Onderneming van Github met IP het filtreren gebruikt, kunt u volgende IP aan de lijst van gewenste personen toevoegen: 3.227.118.73
+
+   Gefeliciteerd! Er wordt een nieuwe website uitgevoerd op `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>` Verwijst naar de tak van uw bewaarplaats GitHub.
    * `<repository>` duidt uw bewaarplaats GitHub aan.
    * `<owner>` verwijst naar gebruikersbenaming van uw rekening GitHub die gastheren uw bewaarplaats GitHub.
 
+   Als de naam van de vertakking bijvoorbeeld `main`, opslagplaats `wefinance`en de eigenaar `wkndforms`, wordt de website op [https://main—wefinance—wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
 
-### Uw eigen inhoudsbron koppelen met Google Drive
 
-Uw geforceerde opslagplaats van Boilerplate van GitHub wijst aan wat [voorbeeldinhoud opgeslagen in een Google Drive-map](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Deze inhoud met het kenmerk Alleen-lezen biedt een fantastisch beginpunt voor uw formulieren. U kunt het bestand gratis kopiëren naar uw eigen Google Drive en het aanpassen aan uw wensen.
+
+### Uw eigen inhoudsbron koppelen
+
+Uw nieuwe Github-opslagplaats wijst naar [voorbeeldinhoud opgeslagen in een Google Drive-map](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Deze inhoud met het kenmerk Alleen-lezen biedt een fantastisch beginpunt voor uw formulieren. U kunt het bestand gratis kopiëren naar uw eigen Google Drive en het aanpassen aan uw wensen.
 
 ![Voorbeeldinhoud op Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-Als u uw eigen inhoud wilt koppelen,
+U kunt als volgt de voorbeeldinhoud naar uw eigen inhoudsmap kopiëren en deze naar uw eigen inhoudsmap verwijzen:
 
 1. Maak een nieuwe map die specifiek voor uw AEM inhoud is bestemd in Google Drive of Microsoft SharePoint. In dit document wordt een map gebruikt die op Microsoft SharePoint is gemaakt.
 
 1. Deel de map met de Adobe Experience Manager-gebruiker (helix@adobe.com).
 
-   ![De optie Toegang beheren gebruiken om een map te delen met AEM gebruiker](/help/edge/assets/share-folder-with-aem-user.png)
+   ![Gebruik de optie Toegang beheren om een map te delen met AEM gebruiker - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
+
+   ![Gebruik de optie Toegang beheren om een map te delen met AEM gebruiker - Google Drive](/help/edge/assets/share-google-drive-folder.png)
+
 
    Zorg ervoor dat u bewerkingsrechten voor de map hebt opgegeven aan de Adobe Experience Manager-gebruiker.
 
-   ![Map delen met AEM gebruiker, bewerkingsrechten opgeven](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![Map delen met AEM gebruiker, bewerkingsrechten bieden-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+
+   ![Map delen met AEM gebruiker, bewerkingsrechten bieden - Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
 
 1. De [voorbeeldinhoud opgeslagen in de map Google Drive](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) naar uw map. Kopiëren:
 
@@ -108,7 +117,6 @@ Als u uw eigen inhoud wilt koppelen,
 
 1. Nu u uw opstelling van de inhoudsomslag hebt, is het tijd om het met uw project op GitHub te verbinden die u eerder gebruikend AEM Forms Boilerplate creeerde. Verbinding maken:
 
-   1. Meld u aan bij uw Github-account.
    1. Ga naar de bewaarplaats GitHub die u eerder gebruikend AEM Forms Boilerplate creeerde.
    1. Open de `fstab.yaml` voor bewerken.
    1. Vervang de bestaande verwijzing door het pad naar de map die u met de AEM gebruiker hebt gedeeld (helix@adobe.com).
@@ -132,17 +140,15 @@ Als u uw eigen inhoud wilt koppelen,
 
 
 
-   1. Leg het bijgewerkte bestand &#39;fsatb.yaml&#39; vast nadat u de verwijzing hebt bijgewerkt en alles er goed uitziet. Hiermee slaat u uw werk op en verbindt u uw inhoudsmap met uw website.
+   1. De bijgewerkte `fsatb.yaml` als u de referentie hebt bijgewerkt en alles er goed uitziet. Als u om het even welke bouwstijlkwesties ontmoet, zie [Het oplossen van problemen GitHub bouwt kwesties](#troubleshooting-github-build-issues).
+
+
 
       ![Bijgewerkt bestand fsatab.yaml vastleggen](/help/edge/assets/commit-updated-fstab-yaml.png)
 
+      Hiermee verbindt u de inhoudsmap met uw website. Na het bijwerken van de verwijzing kunnen fouten met &quot;404 Niet gevonden&quot; aanvankelijk optreden. Dit komt omdat er nog geen voorvertoning van uw inhoud is weergegeven. In de volgende sectie wordt uitgelegd hoe u begint met het ontwerpen en voorvertonen van uw inhoud.
 
-      >[!NOTE]
-      >
-      >
-      >Na het bijwerken van de verwijzing kunnen fouten met &quot;404 Niet gevonden&quot; aanvankelijk optreden. Dit komt omdat er nog geen voorvertoning van uw inhoud is weergegeven. In de volgende sectie wordt uitgelegd hoe u begint met het ontwerpen en voorvertonen van uw inhoud.
-
-
+      ![Bijgewerkt bestand fsatab.yaml vastleggen](/help/edge/assets/aem-forms-project-folder-error.png)
 
 ### Inhoud voorvertonen en publiceren
 
@@ -175,8 +181,8 @@ Niet-gepubliceerde inhoud voorvertonen:
    Nadat u de bestanden hebt voorvertoond, worden de documenten weergegeven op de tabbladen van de nieuwe browser. Ga naar de volgende URL om een voorbeeld van het voorbeeldformulier te bekijken:
 
 
-   ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.live
    ```
 
    * `<branch>` Verwijst naar de tak van uw bewaarplaats GitHub.
@@ -190,7 +196,32 @@ Niet-gepubliceerde inhoud voorvertonen:
 
 
 
-   [https://main—wefinance—wkndforms.hlx.page/inquiry](https://main--wefinance--wkndforms.hlx.page/enquiry).
+   [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+
+### Uw formulier bijwerken
+
+1. Ga naar de map Microsoft SharePoint of Google Drive.
+
+1. Open de `enquiry.xlsx` voor bewerken.
+
+   ![Invorderingsformulier](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. Wijzig het label van de verzendknop in `Let's Chat`.
+
+   ![Invorderingsformulier](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. Gebruik AEM Sidekick om een voorvertoning weer te geven van de `enquiry.xlsx` bestand.
+
+   ![Invorderingsformulier](/help/edge/assets/enquiry-form-preview-publish.png)
+
+1. Ga naar de volgende URL om een voorbeeld van het enquêteformulier te bekijken:
+
+
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.page/enquiry
+   ```
+
+   Het label van de verzendknop wordt bijgewerkt. Vul nu het formulier in en klik op de knop Verzenden. Er treedt een fout op, vergelijkbaar met het volgende, omdat het spreadsheet niet is [ingesteld om de gegevens nog te accepteren](/help/edge/docs/forms/submit-forms.md).
 
 
 ### Beginnen met het ontwikkelen van stijlen en functionaliteit
@@ -232,9 +263,9 @@ Gefeliciteerd! U hebt uw lokale ontwikkelomgeving ingesteld en uw wijzigingen ge
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-Als u een bestaand AEM project hebt, kunt u het Adaptief formulierblok integreren in uw huidige project om aan de slag te gaan met het maken van formulieren. Om te integreren:
+Als u een bestaand AEM project hebt, kunt u het Adaptive Forms Block integreren in uw huidige project om aan de slag te gaan met het maken van formulieren. Om te integreren:
 
-1. Kloont de Adaptief opslagplaats voor formulierblokken: https://github.com/adobe-rnd/aem-boilerplate-forms naar uw computer.
+1. Clone the Adaptive Forms Block repository: https://github.com/adobe-rnd/aem-boilerplate-forms to your computer.
 
 1. Zoek in de gedownloade map de `blocks/form` map. Deze map kopiëren. Navigeer nu naar de lokale AEM van uw project `blocks` en plak de gekopieerde formuliermap hier.
 
@@ -244,7 +275,7 @@ Als u een bestaand AEM project hebt, kunt u het Adaptief formulierblok integrere
 Dat is het! Het Adaptive Forms Block maakt nu deel uit van uw AEM project. U kunt beginnen met het maken en toevoegen van formulieren aan uw AEM.
 
 
-### Het oplossen van problemen GitHub bouwt kwesties
+## Het oplossen van problemen GitHub bouwt kwesties
 
 Verzeker een vlotte GitHub bouwt proces door potentiële kwesties te richten:
 
@@ -253,6 +284,14 @@ Als u de fout &quot;Kan pad naar module &quot;&#39;../../scripts/lib-franklin.js
 
 * **Fouten bij het koppelen van handgrepen:**
 Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open de [EDS-project]/package.json en wijzig het script &quot;lint&quot; van &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; naar &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;. Sparen het dossier en begaat de veranderingen in uw project GitHub.
+
+
+## Zie ook
+
+* [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Formulieren rechtstreeks verzenden naar uw Microsoft Excel- of Google-werkbladen](/help/edge/docs/forms/submit-forms.md)
+* [De weergave van uw formulieren wijzigen](/help/edge/docs/forms/style-theme-forms.md)
+
 
 
 

@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Met AEM Forms Edge Delivery Services kunt u gebruikersvriendelijke en interactie
 
 ![Een voorbeeldspreadsheet met enkele componenten en eigenschappen](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-Het adaptieve formulierblok genereert een [uniforme HTML-structuur](/help/edge/docs/forms/style-theme-forms.md) voor alle veldtypen en -containers (panelen) die de consistentie waarborgen. Deze consistente structuur maakt het eenvoudiger om [een formulier opmaken](/help/edge/docs/forms/style-theme-forms.md).
+Het Adaptive Forms Block genereert een [uniforme HTML-structuur](/help/edge/docs/forms/style-theme-forms.md) voor alle veldtypen en -containers (panelen) die de consistentie waarborgen. Deze consistente structuur maakt het eenvoudiger om [een formulier opmaken](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Beschikbare componenten
 
@@ -46,13 +46,13 @@ Hier volgt een overzicht van de beschikbare componenten:
 
 ## Eigenschappen van componenten
 
-Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de weergave ervan kunt bepalen. Hier worden de eigenschappen ondersteund door de componenten Adaptief formulierblok:
+Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de weergave ervan kunt bepalen. Hier worden de eigenschappen ondersteund door Adaptive Forms Block-componenten:
 
 
 | Eigenschap | Toepasselijke onderdelen | Details |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Type | Alles | Hiermee wordt het type component opgegeven. Deze eigenschap bepaalt het gedrag en de weergave van het invoerveld. Voor tekstinvoer kan het type bijvoorbeeld &#39;text&#39;, &#39;email&#39; voor e-mailinvoer en &#39;password&#39; voor wachtwoordinvoer zijn. Ondersteuning voor adaptief formulierblok  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle geldige HTML5-invoertypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a> als type. |
-| Type | Alles | Hiermee wordt het type component opgegeven. Deze eigenschap bepaalt het gedrag en de weergave van het invoerveld. Voor tekstinvoer kan het type bijvoorbeeld &#39;text&#39;, &#39;email&#39; voor e-mailinvoer en &#39;password&#39; voor wachtwoordinvoer zijn. Ondersteuning voor adaptief formulierblok  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle geldige HTML5-invoertypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a> als type. |
+| Type | Alles | Hiermee wordt het type component opgegeven. Deze eigenschap bepaalt het gedrag en de weergave van het invoerveld. Voor tekstinvoer kan het type bijvoorbeeld &#39;text&#39;, &#39;email&#39; voor e-mailinvoer en &#39;password&#39; voor wachtwoordinvoer zijn. Adaptief Forms-blok ondersteunt  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle geldige HTML5-invoertypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a> als type. |
+| Type | Alles | Hiermee wordt het type component opgegeven. Deze eigenschap bepaalt het gedrag en de weergave van het invoerveld. Voor tekstinvoer kan het type bijvoorbeeld &#39;text&#39;, &#39;email&#39; voor e-mailinvoer en &#39;password&#39; voor wachtwoordinvoer zijn. Adaptief Forms-blok ondersteunt  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle geldige HTML5-invoertypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a> als type. |
 | Naam | Alles | Hiermee wordt de component aangegeven voor het verzenden van formulieren. Het kenmerk name wordt gebruikt wanneer de formuliergegevens naar de server worden verzonden, waarbij de gebruikersinvoer aan een specifiek veld wordt gekoppeld. |
 | Label | Alles | Biedt contextuele informatie aan gebruikers. Het label is de tekst die naast de component wordt weergegeven en geeft gebruikers aanwijzingen over welke informatie moet worden ingevoerd. |
 | Waarde | Tekst, wachtwoord, e-mail, Aantal, Waaier, Datum en zijn varianten (datetime-local, maand, week, tijd), Checkbox, Radio, Verborgen, Verzenden, Knoop | Specifies the initial value of the component. Voor tekstinvoer, tekstgebied en geselecteerde elementen is dit de standaardtekst of -optie die wordt weergegeven. Voor componenten van radio en checkbox, is dit de waarde/de gegevens die worden voorgelegd wanneer zij worden geselecteerd. Het kenmerk value is optioneel, maar moet als verplicht worden beschouwd voor selectievakjes en radio-invoer. |
@@ -72,9 +72,9 @@ Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de w
 
 <!--
 
-## Supported HTML 5 input types in Adaptive Form Block
+## Supported HTML 5 input types in Adaptive Forms Block
 
-The Adaptive Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
+The Adaptive Forms Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
 Here is the table which outlines how core components correspond to their HTML-5 input types in Edge Delivery:
 <table>
  <tbody>
@@ -176,26 +176,26 @@ Here is the table which outlines how core components correspond to their HTML-5 
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html">Accordion<a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Allows user to create expandable and collapsible sections in a form. </td>
   </tr>
   <tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html">Horizontal tabs</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td>Organizes multiple sections of a form into separate tabs which are displayed horizontally.</td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/image.html">Image</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Allows user to include images in a form.</td>
   </tr><tr>
    <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/title.html">Title</a></td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> Refers to the text that appears at the top of the form. </td>
   </tr>
   <tr>
    <td><a href = "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/submit-button.html">Switch</td>
-   <td><i>Not yet supported in Adaptive Form Block</i></td>
+   <td><i>Not yet supported in Adaptive Forms Block</i></td>
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>

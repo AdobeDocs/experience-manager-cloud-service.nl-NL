@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '1819'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Formuliervelden opmaken
 
-Forms is van cruciaal belang voor gebruikersinteractie op websites, zodat deze gegevens kunnen invoeren. Deze handleiding behandelt de basisbeginselen van het opmaken van verschillende formuliervelden in de [Adaptief formulierblok](/help/edge/docs/forms/create-forms.md)en helpt u visueel aantrekkelijke en gebruiksvriendelijke formulieren te maken.
+Forms is van cruciaal belang voor gebruikersinteractie op websites, zodat deze gegevens kunnen invoeren. Deze handleiding behandelt de basisbeginselen van het opmaken van verschillende formuliervelden in de [Adaptief Forms-blok](/help/edge/docs/forms/create-forms.md)en helpt u visueel aantrekkelijke en gebruiksvriendelijke formulieren te maken.
 
 ## Werken met formulierveldtypen
 
-Voordat u naar de stijl gaat, bekijkt u eerst de veelvoorkomende formulierveldtypen die worden ondersteund door het Adaptief formulierblok:
+Voordat u naar de stijl gaat, bekijkt u eerst de algemene formulierveldtypen die worden ondersteund door het Adaptive Forms Block:
 
 * Invoervelden: dit zijn tekstinvoer, e-mailinvoer, wachtwoordinvoer en meer.
 * Selectievakjesgroepen: wordt gebruikt voor het selecteren van meerdere opties.
@@ -35,11 +35,11 @@ Kennis van de fundamentele CSS-concepten is van cruciaal belang voordat u specif
 * Vakmodel: in het CSS-kadermodel wordt de structuur van HTML-elementen beschreven als een inhoudsgebied dat wordt omgeven door opvulling, randen en marges.
 * Flexbox/Grid: CSS-lay-outs Flexbox en Raster zijn krachtige gereedschappen voor het maken van responsieve en flexibele ontwerpen.
 
-## Een formulier opmaken voor adaptief formulierblok
+## Een formulier opmaken voor Adaptief Forms-blok
 
-Het adaptieve formulierblok biedt een gestandaardiseerde HTML-structuur, waardoor het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
+Het Adaptive Forms Block biedt een gestandaardiseerde HTML-structuur waarmee het selecteren en opmaken van formulieronderdelen wordt vereenvoudigd:
 
-* **Standaardstijlen bijwerken**: U kunt de standaardstijlen van een formulier wijzigen door de `/blocks/form/form.css file`. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Voor instructies over het toevoegen van het AanpassingsBlok van de Vorm aan uw project, verwijs naar [een formulier maken](/help/edge/docs/forms/create-forms.md).
+* **Standaardstijlen bijwerken**: U kunt de standaardstijlen van een formulier wijzigen door de `/blocks/form/form.css file`. Dit bestand biedt uitgebreide opmaak voor een formulier, met ondersteuning voor uit meerdere stappen bestaande wizardformulieren. Het benadrukt het gebruiken van douaneCSS variabelen voor gemakkelijke aanpassing, onderhoud, en het eenvormige formatteren over vormen. Raadpleeg voor instructies over het toevoegen van het Adaptive Forms Block aan uw project: [een formulier maken](/help/edge/docs/forms/create-forms.md).
 
 * **Aanpassing**: De standaardwaarde gebruiken `forms.css` als basis en pas deze aan om de vormgeving van uw formuliercomponenten te wijzigen, zodat het visueel aantrekkelijk en gebruiksvriendelijk wordt. De bestandsstructuur stimuleert de organisatie en handhaaft stijlen voor formulieren, waardoor consistente ontwerpen op uw website worden bevorderd.
 
@@ -60,7 +60,7 @@ Het adaptieve formulierblok biedt een gestandaardiseerde HTML-structuur, waardoo
 
 ## Structuur van componenten
 
-Het adaptieve formulierblok biedt een consistente HTML-structuur voor verschillende formulierelementen, waardoor de opmaak en het beheer worden vereenvoudigd. U kunt de componenten manipuleren met CSS voor opmaakdoeleinden.
+Het Adaptive Forms Block biedt een consistente HTML-structuur voor verschillende formulierelementen, waardoor de opmaak en het beheer worden vereenvoudigd. U kunt de componenten manipuleren met CSS voor opmaakdoeleinden.
 
 ### Algemene componenten (behalve dropdowns, radiegroepen, en checkbox groepen):
 
@@ -821,5 +821,5 @@ U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe
 }
 ```
 
-Deze CSS richt zich op alle inputelementen die binnen een element worden gevestigd dat de klasse heeft `field-otp`. De HTML-structuur van het formulier volgt de conventies van het Adaptief formulierblok. Dit houdt in dat er een container is gemarkeerd met de klasse &quot;field-otp&quot; die het veld bevat met de naam &quot;otp&quot;.
+Deze CSS richt zich op alle inputelementen die binnen een element worden gevestigd dat de klasse heeft `field-otp`. De HTML-structuur van uw formulier volgt de conventies van het Adaptief Forms-blok. Dit houdt in dat er een container is gemarkeerd met de klasse &quot;field-otp&quot; die het veld bevat met de naam &quot;otp&quot;.
 

@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Herhaalbare secties toevoegen aan een formulier
 
-Met Adaptief formulierblok kunt u een sectie of een component van een formulier herhaalbaar maken of toevoegen. Hierdoor kunnen gebruikers meerdere keren informatie invoeren voor hetzelfde type gegevens, waardoor het gemakkelijker wordt om informatie te verzamelen, zoals werkervaring of educatieve achtergrond.
+Met Adaptief Forms-blok kunt u een sectie of een component van een formulier herhaalbaar maken of toevoegen. Hierdoor kunnen gebruikers meerdere keren informatie invoeren voor hetzelfde type gegevens, waardoor het gemakkelijker wordt om informatie te verzamelen, zoals werkervaring of educatieve achtergrond.
 
 Neem bijvoorbeeld een formulier dat wordt gebruikt om informatie over iemands werkervaring te verzamelen. U hebt mogelijk een herhaalbare sectie voor het vastleggen van details van elke vorige taak. De herhaalbare sectie zou doorgaans velden bevatten zoals de naam van het bedrijf, de functie, de datum van tewerkstelling en de verantwoordelijkheden op het gebied van de functie. De gebruiker kan veelvoudige instanties van de herhaalbare sectie toevoegen om informatie over elke baan in te gaan zij hebben gehouden.
 
@@ -81,7 +81,7 @@ The form allows users to provide personal information, including details of the 
 
 ## Prerequisites
 
-The [Adaptive Form block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
+The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
 
 ## Add a repeatable section to a form 
 

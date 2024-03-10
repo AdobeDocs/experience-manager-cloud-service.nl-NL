@@ -1,11 +1,11 @@
 ---
 title: De spreadsheet voorbereiden voor het accepteren van gegevens
-description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve formulierblokvelden!
+description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve Forms Block Fields!
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Het werkblad inschakelen:
 
 Nadat de veldnamen aan de `incoming` blad, kan uw formulier opmerkingen accepteren. U kunt een voorbeeld van het formulier bekijken en gegevens naar het blad verzenden.
 
-Zodra het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van het formulier weergeven met Adaptief formulierblok](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [aanvragen voor POST gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
+Zodra het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van het formulier weergeven met Adaptief Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [aanvragen voor POST gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
 
 >[!WARNING]
 >
@@ -172,7 +172,7 @@ Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek
 
 ## Gegevens naar uw werkblad verzenden {#send-data-to-your-sheet}
 
-Nadat het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van het formulier weergeven met Adaptief formulierblok](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [Admin API&#39;s gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
+Nadat het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van het formulier weergeven met Adaptief Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [Admin API&#39;s gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
 
 ### Admin API&#39;s gebruiken om gegevens naar uw werkblad te verzenden
 
