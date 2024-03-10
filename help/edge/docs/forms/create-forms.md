@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -27,41 +27,46 @@ AEM Forms Edge Delivery biedt een blok, ook wel Adaptief formulierblok genoemd, 
 
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
-* Het project van GitHub van de opstelling Edge Delivery Services (EDS) gebruikend AEM boilerplate en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine. Zie [zelfstudie ontwikkelaar](https://www.aem.live/developer/tutorial) voor meer informatie. In dit document wordt de lokale map van uw Edge Delivery Services-project (EDS) aangeduid als `[EDS Project repository]` .
+* Een [AEM project met AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) of [Voeg adaptieve formulierblokken toe aan uw bestaande AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine.
+In dit document wordt de lokale map van uw Edge Delivery Services-project (EDS) aangeduid als `[EDS Project repository]` .
 * Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Als u Microsoft SharePoint wilt instellen als inhoudsbron, raadpleegt u [Hoe te om SharePoint te gebruiken](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Een formulier maken
 
-+++ Stap 1: Voeg het Adaptieve Blok van de Vorm aan uw Edge Delivery Services (EDS) project toe.
+<!-- 
 
-Met Adaptief kunnen gebruikers formulieren maken voor een Edge Delivery ServicesSite. Nochtans, is dit blok niet inbegrepen in het gebrek AEM boilerplate (dat wordt gebruikt om een project van Edge Delivery Services tot stand te brengen). Het adaptieve formulierblok naadloos integreren in uw Edge Delivery Services-project:
++++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
 
-1. **Klonen in de Adaptive Form Block-opslagplaats**: Kloon de [Adaptief opslagplaats voor formulierblokken](https://github.com/adobe-rnd/form-block) op uw lokale computer. Het bevat de code die het formulier op een EDS-webpagina moet weergeven. In dit document wordt de lokale map van de Forms Block-opslagplaats aangeduid als `[Adaptive Form Block repository]`.
-1. **Zoek de adaptieve opslagplaats voor formulierblokken:** Toegang krijgen tot de [Adaptief opslagplaats voor formulierblokken]/block/src folder en kopieer zijn inhoud.
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
 
-1. op uw lokale computer en kopieer de `form` map.
-1. **Plak de code van het Adaptief formulierblok in uw EDS-project:**
-Ga naar de [EDS-projectopslagplaats]/block/ map op uw lokale computer en maak een &#39;form&#39;-map. Plak de `[Adaptive Form Block repository]/blocks/src content`, gekopieerd naar de `[EDS Project repository]/blocks/form` map.
-1. **Wijzigingen in GitHub vastleggen:** Inchecken `[EDS Project repository]/blocks/form` de omslag en zijn onderliggende dossiers aan uw Edge Delivery Services project op GitHub.
+1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
+1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
 
-Na de voltooiing van deze stappen, wordt het Adaptieve Blok van de Vorm met succes toegevoegd aan uw Edge Delivery Services (EDS) projectbewaarplaats op GitHub. U kunt nu formulieren maken en toevoegen aan een pagina EDS-sites.
+1. on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Form Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
+After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+ 
 
-**Het oplossen van problemen GitHub bouwt kwesties**
+**Troubleshooting GitHub build issues**
 
-Verzeker een vlotte GitHub bouwt proces door potentiële kwesties te richten:
+Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Fout in pad van module oplossen:**
-Als u de fout &quot;Kan pad naar module &quot;&#39;../../scripts/lib-franklin.js&#39;&#39; niet omzetten, navigeert u naar de [EDS-project]/blocks/forms/form.js. Werk de importinstructie bij door het bestand lib-franklin.js te vervangen door het bestand aem.js.
+* **Resolve Module Path Error:**
+    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Fouten bij het koppelen van handgrepen:**
-Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open de [EDS-project]/package.json en wijzig het script &quot;lint&quot; van &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; naar &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;. Sparen het dossier en begaat de veranderingen in uw project GitHub.
+* **Handle Linting Errors:**
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
 
 +++
 
-+++ Stap 2: Een formulier ontwerpen met Microsoft Excel of Google Sheet.
+-->
+
++++ Stap 1: Een formulier ontwerpen met Microsoft Excel of Google Sheet.
 
 In plaats van door complexe processen te navigeren, kunt u zonder problemen een formulier maken met behulp van een spreadsheet. U kunt de rijen en kolommen definiëren die de formulierstructuur vormen. Elke rij vertegenwoordigt een individu [formulierveld](/help/edge/docs/forms/form-components.md#available-components) en de kolomkoppen definiëren de corresponderende [veldeigenschappen](/help/edge/docs/forms/form-components.md#components-properties).
 
@@ -110,7 +115,7 @@ Ga als volgt te werk om het formulier te maken:
 
 +++
 
-+++ Stap 3: Geef een voorbeeld van het formulier weer met de pagina EDS (Edge Delivery Services).
++++ Stap 2: Geef een voorbeeld van het formulier weer met de pagina EDS (Edge Delivery Services).
 
 
 Tot nu toe hebt u het Adaptief formulierblok toegevoegd aan uw EDS-project en de structuur van het formulier voorbereid. Nu een voorbeeld van het formulier weergeven:
@@ -150,7 +155,6 @@ Tot nu toe hebt u het Adaptief formulierblok toegevoegd aan uw EDS-project en de
 ## Volgende stap
 
 [Werkblad voorbereiden](/help/edge/docs/forms/submit-forms.md) om gegevens te accepteren bij het verzenden van het formulier.
-
 
 
 
