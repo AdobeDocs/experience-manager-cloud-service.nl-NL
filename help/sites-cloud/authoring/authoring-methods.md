@@ -2,13 +2,13 @@
 title: Methoden voor het schrijven van inhoud in AEM
 description: Leer de verschillende manieren waarop u inhoud in AEM kunt ontwerpen en hoe deze verschillen.
 feature: Authoring
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Methoden voor het schrijven van inhoud in AEM {#authoring-methods}
 
@@ -63,12 +63,12 @@ De Universele Redacteur wordt betreden door de console van Plaatsen binnen AEM, 
 
 Meer informatie over de Universal Editor vindt u in het document [Inhoud ontwerpen met de Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-## Authoring op basis van documenten {#document-based}
+## Authoring op basis van documenten  {#document-based}
 
 Als u Edge Delivery-services gebruikt, kunt u ervoor kiezen om uw inhoud te ontwerpen als conventionele documenten zoals Microsoft Word of Google Docs die zich volledig buiten het [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Op documenten gebaseerde inhoud bewerken](assets/authoring-methods-document.jpg)
 
-Met op documenten gebaseerde authoring kunnen auteurs de gereedschappen gebruiken die ze al kennen en profiteren nog steeds van de snelheid en prestaties van AEM Edge Delivery Services om hun inhoud te publiceren. Voor schrijven op basis van documenten is geen gebruik van de AEM-console vereist.
+Met Document-based Authoring kunnen de auteurs de hulpmiddelen gebruiken die zij reeds kennen en nog van de snelheid en de prestaties van AEM Edge Delivery Services profiteren om hun inhoud te publiceren. Bij schrijven op basis van documenten hoeft u de AEM console niet te gebruiken.
 
-Raadpleeg het document voor meer informatie over het schrijven van documenten [Inhoud ontwerpen voor Edge Delivery Services.](/help/edge/authoring.md)
+Raadpleeg het document voor meer informatie over op documenten gebaseerde authoring [Inhoud ontwerpen voor Edge Delivery Services.](/help/edge/authoring.md)

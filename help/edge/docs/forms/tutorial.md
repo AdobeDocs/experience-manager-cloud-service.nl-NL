@@ -4,7 +4,7 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 0%
@@ -18,11 +18,11 @@ In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendel
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
-AEM Forms biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt een nieuw AEM-project maken dat vooraf is uitgerust met Adaptive Forms Block of het Adaptive Forms Block toevoegen aan een bestaand AEM project.
+AEM Forms biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt een nieuw AEM project tot stand brengen vooraf gevormd met het AanpassingsBlok van Forms of het AanpassingsBlok van Forms aan een bestaand AEM project toevoegen.
 
 Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publiceren van uw eigen aangepaste formulier met een nieuw Adobe Experience Manager (AEM) Forms-project. U leert ook Adaptive Forms Block aan een bestaand AEM-project toevoegen.
 
-* **[Een nieuw AEM-project maken dat vooraf is uitgerust met Adaptive Forms Block](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
+* **[Een nieuw AEM-project maken dat vooraf is geconfigureerd met Adaptive Forms Block](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
 * **[Aangepast Forms-blok toevoegen aan een bestaand AEM-project](#add-adaptive-forms-block-to-an-existing-eds-project)**
 
 
@@ -37,7 +37,7 @@ Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publice
 **Koppen omhoog!** Deze zelfstudie gebruikt macOS, Chrome en Visual Studio Code. Terwijl de stappen voor andere montages kunnen worden aangepast, zouden de screenshots en specifieke elementen UI op uw gekozen werkend systeem, browser, en coderedacteur kunnen verschillen.
 
 
-## Een nieuw AEM-project maken dat vooraf is uitgerust met Adaptive Forms Block
+## Een nieuw AEM-project maken dat vooraf is geconfigureerd met Adaptive Forms Block
 
 Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM project dat vooraf is geconfigureerd met het Adaptive Forms Block. Het is de snelste en eenvoudigste manier om AEM best practices te volgen en meteen uw formulieren samen te stellen.
 

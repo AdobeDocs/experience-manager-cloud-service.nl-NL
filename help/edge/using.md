@@ -3,7 +3,7 @@ title: Edge Delivery Services gebruiken
 description: Leer hoe AEM as a Cloud Service kan worden gebruikt met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 5b24b984ea738096ef67b72a3d96e9b5931d2200
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -23,13 +23,13 @@ Het gebruik van meerdere inhoudsbronnen biedt maximale flexibiliteit voor de geb
 
 Er zijn gevallen waarin de inhoudsbron vooraf is gedefinieerd of anderszins niet flexibel is (het project kan bijvoorbeeld geen gebruik maken van Sharepoint of Google Drive). Maar in veel gevallen is het gereedschap niet vooraf gedefinieerd en is de keuze van het gereedschap niet zwart-wit.
 
-Eenvoudigheid is het leidend beginsel van de Adobe. Begin met op documenten gebaseerde ontwerpen en voeg waar nodig complexiteit toe. Als een hulpprogramma moet worden gewijzigd, heeft AEM integratie van Edge Delivery Services betrekking op de migratie van inhoud.
+Eenvoudigheid is het leidend beginsel van de Adobe. Begin met Document-Gebaseerd Authoring en voeg ingewikkeldheid toe wanneer nodig. Als een hulpprogramma moet worden gewijzigd, heeft AEM integratie van Edge Delivery Services betrekking op de migratie van inhoud.
 
 ![Flexibiliteit inhoudsbron](assets/content-source-flexiblity.png)
 
 ## Authoring {#authoring-edge}
 
-Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U kunt de auteur kiezen door in AEM met de Universal Editor ontwerpfuncties te gebruiken die zijn gebaseerd op documenten.
+Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U kunt er ook voor kiezen om in AEM met de universele editor auteurs te maken met behulp van op documenten gebaseerde ontwerpen of ontwerpen.
 
 Zie het document [Inhoud ontwerpen voor Edge Delivery Services](authoring.md) voor meer informatie .
 

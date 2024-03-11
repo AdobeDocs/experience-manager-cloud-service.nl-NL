@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Een formulier maken met Adaptief Forms-blok
 
-AEM Forms Edge Delivery biedt een blok, genaamd Adaptive Forms Block, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt [een nieuw AEM-project maken dat vooraf is uitgerust met Adaptive Forms Block](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) of [het Adaptive Forms Block toevoegen aan een bestaand AEM-project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms Edge Delivery biedt een blok, genaamd Adaptive Forms Block, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt [een nieuw AEM-project maken dat vooraf is geconfigureerd met Adaptive Forms Block](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) of [het Adaptive Forms Block toevoegen aan een bestaand AEM-project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
-![Op documenten gebaseerd ontwerpecosysteem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
+![Ontwerpecosysteem op basis van documenten](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
 
@@ -27,7 +27,7 @@ Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Go
 
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
-* Een [AEM project met AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) of [Voeg Adaptive Forms Block toe aan uw bestaande AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine.
+* Een [AEM project met AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) of [Voeg Adaptive Forms Block toe aan uw bestaande AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine.
 In dit document wordt de lokale map van uw Edge Delivery Services-project (EDS) aangeduid als `[EDS Project repository]`.
 * Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Als u Microsoft SharePoint wilt instellen als inhoudsbron, raadpleegt u [Hoe te om SharePoint te gebruiken](https://www.aem.live/docs/setup-customer-sharepoint).
 

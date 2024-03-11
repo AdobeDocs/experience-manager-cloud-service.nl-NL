@@ -2,7 +2,7 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 25af074bcb32e47732b27bacf10c8d3435299440
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 7%
@@ -91,7 +91,7 @@ Voor ervaringslevering, wanneer het gebruiken van AEM Sites of AEM Forms, zijn e
    * Voert een landbouwbedrijf van standaard AEM uitgevers en verzenders in werking, die voor het dynamische teruggeven van Web-pagina&#39;s en API inhoud (bijvoorbeeld, GraphQL) toestaan die met gepubliceerde inhoud wordt samengesteld.
    * Is hoofdzakelijk gebaseerd op server-zijtoepassingslogica.
 * Het Edge Delivery-publicatieniveau:
-   * Hiermee wordt het dynamisch weergeven van webpagina&#39;s en API-inhoud vanuit diverse inhoudsbronnen toegestaan, zoals de AEM Auteur-laag of de op document gebaseerde ontwerplaag.
+   * Hiermee wordt het dynamisch weergeven van webpagina&#39;s en API-inhoud toegestaan vanuit diverse inhoudsbronnen, zoals de AEM Auteur-laag of de op documenten gebaseerde Authoring-laag.
    * Is gebaseerd op toepassingslogica aan de clientzijde en ontworpen voor maximale prestaties.
 
 Er zijn ook de belangrijkste aangrenzende services:
@@ -158,9 +158,9 @@ De AEM voorvertoningslaag bestaat uit één AEM. Dit wordt gebruikt voor kwalite
 
 De Edge Delivery Services worden boven op een CDN en serverloze infrastructuur gebruikt om de pagina&#39;s op de meest presterende manier samen te stellen. Wanneer een middel wordt gevraagd, is de serverinfrastructuur verantwoordelijk voor het omzetten van de gepubliceerde inhoud in semantische HTML en dient als oorsprong aan CDN.
 
-De conversie naar semantische HTML vindt plaats op basis van de gepubliceerde inhoud die wordt aangeboden in de AEM auteurslaag of de op documenten gebaseerde ontwerpomgeving.
+De conversie naar semantische HTML vindt plaats op basis van de gepubliceerde inhoud die wordt aangeboden in de AEM auteurslaag of de op document gebaseerde ontwerpomgeving.
 
-In het volgende diagram ziet u hoe u Sites-inhoud in Microsoft Word (op documenten gebaseerd ontwerp) kunt bewerken en naar Edge Delivery kunt publiceren. Ook wordt met de verschillende editors de traditionele AEM-publicatiemethode weergegeven.
+In het volgende diagram ziet u hoe u Sites-inhoud in Microsoft Word (Document-based Authoring) kunt bewerken en naar Edge Delivery kunt publiceren. Ook wordt met de verschillende editors de traditionele AEM-publicatiemethode weergegeven.
 
 ![AEM Sites as a Cloud Service - met Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - met Edge Delivery Services")
 

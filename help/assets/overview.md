@@ -5,7 +5,7 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 1%
@@ -58,7 +58,7 @@ Voor informatie over hoe u toegang kunt krijgen tot de weergave Middelen en over
 
 Met Edge Delivery kunt u snel aantrekkelijke websites maken waar auteurs inhoud snel kunnen bijwerken en publiceren en nieuwe sites snel kunnen worden gestart.
 
-Integreer AEM Assets met op documenten gebaseerde authoring voor Edge Delivery Services zodat websiteauteurs afbeeldingen kunnen gebruiken die beschikbaar zijn in AEM Assets-opslagruimten tijdens het ontwerpen van documenten in Microsoft Word of Google Docs. Zie voor meer informatie [AEM Assets integreren met op documenten gebaseerde authoring](/help/edge/using.md#integrate-assets-edge).
+Integreer AEM Assets met Document-based Authoring voor Edge Delivery Services zodat websiteauteurs afbeeldingen kunnen gebruiken die beschikbaar zijn in AEM Assets repositories tijdens het ontwerpen van documenten in Microsoft Word of Google Docs. Zie voor meer informatie [AEM Assets integreren met op documenten gebaseerde authoring](/help/edge/using.md#integrate-assets-edge).
 
 ## Integratie met Adobe Journey Optimizer {#integration-with-ajo}
 

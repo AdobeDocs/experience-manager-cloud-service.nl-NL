@@ -2,13 +2,13 @@
 title: Ontwikkelen voor Edge Delivery Services
 description: Leer hoe u blokken kunt ontwikkelen en uw AEM kunt aanpassen aan uw werk met Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelen voor Edge Delivery Services {#developing-edge}
 
@@ -26,7 +26,7 @@ Zie de [Sectie Samenstellen](/help/edge/developer/block-collection.md) van de do
 
 De hefboomwerkingen van de Levering van de rand GitHub zodat kunt u code direct van uw bewaarplaats beheren en opstellen GitHub.
 
-Uw auteurs kunnen inhoud maken door middel van op documenten gebaseerde ontwerpen of door middel van inhoud in AEM met de Universal Editor. Ontwikkelaars kunnen de functionaliteit van uw site aanpassen met CSS en JavaScript in GitHub, ongeacht hoe de auteurs hun inhoud maken.
+Uw auteurs kunnen inhoud maken met gebruik van op documenten gebaseerde ontwerpen of met gebruik van inhoud in AEM met de Universal Editor. Ontwikkelaars kunnen de functionaliteit van uw site aanpassen met CSS en JavaScript in GitHub, ongeacht hoe de auteurs hun inhoud maken.
 
 Er worden automatisch websites gemaakt voor elk van uw vertakkingen, van de voorvertoning van de inhoud tot de productie. Elk middel dat u in uw bewaarplaats GitHub zet is beschikbaar op uw website zonder een bouwstijlproces.
 

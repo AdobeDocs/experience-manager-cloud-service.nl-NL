@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2023.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -56,7 +56,7 @@ U kunt nu een metagegevensformulier toewijzen aan een specifieke map binnen uw i
 
 ### Nieuwe functies in de beheerweergave {#admin-view-features}
 
-* **AEM Assets as a Cloud Service integreren met op documenten gebaseerde authoring voor Edge Delivery Services**: Integreer AEM Assets met op documenten gebaseerde authoring voor Edge Delivery Services om websiteauteurs in staat te stellen [gebruiken afbeeldingen die beschikbaar zijn in AEM Assets-opslagruimten tijdens het ontwerpen van documenten in Microsoft Word of Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **AEM Assets as a Cloud Service integreren met op documenten gebaseerde authoring voor Edge Delivery Services**: Integreer AEM Assets met op documenten gebaseerde authoring voor Edge Delivery Services om auteurs van websites in staat te stellen [gebruiken afbeeldingen die beschikbaar zijn in AEM Assets-opslagruimten tijdens het ontwerpen van documenten in Microsoft Word of Google Docs](/help/edge/using.md#integrate-assets-edge).
 
 * **ZIP-archieven extraheren**: Mogelijkheid om ZIP-archieven te selecteren die in Experience Manager worden beheerd en [bestanden rechtstreeks uitpakken in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) zonder ze te downloaden.
 

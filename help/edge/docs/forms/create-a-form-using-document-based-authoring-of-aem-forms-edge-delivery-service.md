@@ -4,7 +4,7 @@ description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery + 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Een formulier maken met op documenten gebaseerde authoring voor AEM Forms Edge Delivery Service
 
-In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. Met de documentgebaseerde authoring van AEM Forms Edge Delivery kunt u formulieren maken met vertrouwde gereedschappen, zoals Word of Google Docs. Met deze formulieren worden gegevens rechtstreeks verzonden naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en krachtige API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om verzonden gegevens gemakkelijk te verwerken of een bestaande zakelijke workflow te starten.
+In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. Met de Document-based Authoring van AEM Forms Edge Delivery kunt u formulieren maken met vertrouwde gereedschappen, zoals Word of Google Docs. Met deze formulieren worden gegevens rechtstreeks verzonden naar een Microsoft Excel- of Google Sheets-bestand, waarmee u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om verzonden gegevens gemakkelijk te verwerken of een bestaande zakelijke workflow te starten.
 
 Deze gids begeleidt u door:
 

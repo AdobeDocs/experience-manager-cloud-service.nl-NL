@@ -3,7 +3,7 @@ title: Aan de slag met AEM en Edge Delivery Services
 description: Ontdek hoe AEM as a Cloud Service baat kan hebben bij de prestaties en perfecte Lighthouse-scores van Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 2%
@@ -18,7 +18,7 @@ Met Edge Delivery Services biedt AEM buitengewone ervaringen die de betrokkenhei
 Door Edge Delivery Services te gebruiken, kunt u:
 
 * Maak snelle sites met een perfecte Lighthouse Score en controleer de prestaties van uw site voortdurend via RUM (real user monitoring).
-* Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel AEM ontwerpen als op documenten gebaseerd schrijven. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
+* Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. In het vak kunt u zowel AEM authoring als Document-based Authoring gebruiken. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
 * Gebruik een ingebouwd raamwerk voor experimenteren dat het mogelijk maakt snel tests te maken, uit te voeren zonder invloed op de prestaties en snel vrij te maken voor de productie van een testwinnaar.
 
 ## Overzicht Edge Delivery Services {#edge-overview}
@@ -27,7 +27,7 @@ In het volgende diagram ziet u hoe u inhoud in Microsoft Word (op documenten geb
 
 ![Edge Delivery Architecture](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery-services zijn een set services die samengesteld kunnen worden en die een hoge mate van flexibiliteit mogelijk maken bij het schrijven van inhoud op uw website. Zoals eerder vermeld, kunt u beide [Inhoudsbeheer AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor ontwerpen](/help/implementing/universal-editor/introduction.md) alsmede [op documenten gebaseerde ontwerpen.](https://www.aem.live/docs/authoring)
+Edge Delivery-services zijn een set services die samengesteld kunnen worden en die een hoge mate van flexibiliteit mogelijk maken bij het schrijven van inhoud op uw website. Zoals eerder vermeld, kunt u beide [Inhoudsbeheer AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor ontwerpen](/help/implementing/universal-editor/introduction.md) alsmede [Authoring op basis van documenten.](https://www.aem.live/docs/authoring)
 
 U kunt inhoud bijvoorbeeld rechtstreeks vanuit Microsoft Word of Google Docs gebruiken. Dit betekent dat documenten uit deze bronnen pagina&#39;s op uw website kunnen worden. Daarnaast kunnen koppen, lijsten, afbeeldingen en lettertype-elementen allemaal van de oorspronkelijke bron naar de website worden overgebracht. De nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
 
@@ -63,7 +63,7 @@ Adobe biedt drie kanalen om u te helpen met Edge Delivery Services:
 
 ### Toegang tot communautaire bronnen {#community-resource}
 
-Adobe streeft ernaar u de beste betrokkenheid en ondersteuning van de gemeenschap voor Edge Delivery Services en op documenten gebaseerde authoring te bieden.
+De Adobe is vastbesloten u de beste betrokkenheid en ondersteuning van de gemeenschap voor Edge Delivery Services en op documenten gebaseerde authoring te bieden.
 
 * Deelnemen [Gemeenschap Experience League](https://adobe.ly/3Q6kTKl) vragen stellen, feedback delen, discussies starten, hulp vragen bij Adobe-experts en AEM Advisors/Champs, en contact opnemen met gelijkgestemde personen in real-time.
 * Deelnemen aan onze [Opslagkanaal](https://discord.gg/aem-live) een meer incidenteel platform voor realtime interacties en snelle uitwisseling van ideeën.

@@ -3,7 +3,7 @@ title: Inhoud ontwerpen voor Edge Delivery Services
 description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM inhoud ontwerpt met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -14,14 +14,14 @@ ht-degree: 0%
 
 Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U hebt twee opties om inhoud voor Edge Delivery Services te ontwerpen:
 
-* [Op documenten gebaseerde ontwerpfuncties](#document-based) - zoals Microsoft Word of Google Docs
+* [Authoring op basis van documenten](#document-based) - zoals Microsoft Word of Google Docs
 * [Universele editor](#universal-editor) - Een moderne gebruikersinterface voor het ontwerpen van inhoud binnen AEM
 
-## Authoring op basis van documenten {#document-based}
+## Authoring op basis van documenten  {#document-based}
 
-In het geval van op documenten gebaseerde authoring kunt u werken met diverse bronnen, zoals Microsoft Word en Google Docs. Documenten uit deze bronnen worden pagina&#39;s op uw website. Koppen, lijsten, afbeeldingen, lettertype-elementen en video&#39;s kunnen allemaal van de oorspronkelijke bron naar uw website worden overgebracht. U kunt metagegevens toevoegen voor SEO-doeleinden of blokken gebruiken om met gestructureerde inhoud te werken en functionaliteit toe te voegen.
+In het geval van Document-based Authoring, kunt u met een verscheidenheid van bronnen zoals Microsoft Word en Google Docs werken. Documenten uit deze bronnen worden pagina&#39;s op uw website. Koppen, lijsten, afbeeldingen, lettertype-elementen en video&#39;s kunnen allemaal van de oorspronkelijke bron naar uw website worden overgebracht. U kunt metagegevens toevoegen voor SEO-doeleinden of blokken gebruiken om met gestructureerde inhoud te werken en functionaliteit toe te voegen.
 
-Voor meer informatie over het schrijven van documenten raadpleegt u [dit document in de documentatie van Edge Delivery Services.](/help/edge/docs/authoring.md)
+Voor meer informatie over op documenten gebaseerde authoring raadpleegt u [dit document in de documentatie van Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Universal Editor Authoring {#universal-editor}
 
