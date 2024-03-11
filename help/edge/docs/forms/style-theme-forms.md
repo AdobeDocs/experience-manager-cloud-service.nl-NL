@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -823,3 +823,6 @@ U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe
 
 Deze CSS richt zich op alle inputelementen die binnen een element worden gevestigd dat de klasse heeft `field-otp`. De HTML-structuur van uw formulier volgt de conventies van het Adaptief Forms-blok. Dit houdt in dat er een container is gemarkeerd met de klasse &quot;field-otp&quot; die het veld bevat met de naam &quot;otp&quot;.
 
+## Zie ook
+
+{{see-more-forms-eds}}

@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 [!BADGE EARLY-ACCESS TECHNOLOGY - Vraag ons naar deze functie via de AEM Sites-labs op uw Slack-kanaal!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM creatie met Edge Delivery Services is een vroege-toegangstechnologie."}
 
-## Meer weergeven {#see-more-forms-eds}
+## Zie ook {#see-more-forms-eds}
 
 * [Aan de slag met AEM Forms-Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)

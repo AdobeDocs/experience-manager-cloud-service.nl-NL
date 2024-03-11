@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -112,6 +112,6 @@ Als u een fout die op het volgende bericht lijkt ontmoet, wijst het erop dat spr
 +++
 
 
+## Zie ook
 
-
-## Meer weergeven
+{{see-more-forms-eds}}

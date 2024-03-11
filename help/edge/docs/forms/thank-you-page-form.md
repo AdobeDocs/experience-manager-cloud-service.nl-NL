@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -80,12 +80,6 @@ Het omleiden van een gebruiker naar een andere pagina na het verzenden van het f
 Als u de pagina &quot;bedankt&quot; wilt omleiden naar een andere pagina, gebruikt u de [omleidingen van website](https://www.aem.live/docs/redirects) spreadsheet.
 
 
-## Meer weergeven
+## Zie ook
 
-* [Formuliercomponenten](/help/edge/docs/forms/form-components.md)
-* [Eigenschappen van formulierveld](/help/edge/docs/forms/eds-form-field-properties)
-* [Een formulier maken en een voorbeeld ervan bekijken](/help/edge/docs/forms/create-forms.md)
-* [Formulier verzenden van gegevens inschakelen](/help/edge/docs/forms/submit-forms.md)
-* [Een formulier publiceren naar sitepagina](/help/edge/docs/forms/publish-forms.md)
-* [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
-* [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}

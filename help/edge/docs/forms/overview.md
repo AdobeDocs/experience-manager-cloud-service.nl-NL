@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -27,21 +27,20 @@ Met deze services kunt u:
 
 ## Overzicht AEM Forms Edge Delivery Services {#edge-overview}
 
-In het volgende diagram ziet u hoe u formulieren in Microsoft Excel of Google Sheets (Document-based Authoring) kunt bewerken en naar Edge Delivery Services kunt publiceren. Ook wordt de AEM publicatiemethode weergegeven met de Adaptive Forms Editor (AEM Authoring).
+AEM Forms Edge Delivery-services zijn een set services die samengesteld kunnen worden en die een hoge mate van flexibiliteit mogelijk maken in de manier waarop u formulieren ontwerpt op uw website. U kunt zowel AEM inhoudsbeheer gebruiken met [AEM maken](/help/forms/creating-adaptive-form-core-components.md) alsmede [Authoring op basis van documenten](/help/edge/docs/forms/create-forms.md). AEM Forms-Edge Delivery Services bieden ook een formulierblok, ook wel bekend als [Adaptief Forms-blok](/help/edge/docs/forms/create-forms.md) om een formulier toe te voegen aan uw site met Edge Delivery Services.
+
+U ontwerpt formulieren bijvoorbeeld rechtstreeks in Microsoft Excel of Google Sheets en deze spreadsheets worden getransformeerd in formulieren voor uw website. Alle nieuwe formulieren of formulierinhoud, zoals een nieuw formulierveld, zijn direct beschikbaar op uw website zonder dat u een proces voor het opnieuw samenstellen van de formulieren hoeft te gebruiken.
+
+In het volgende diagram ziet u hoe u formulieren kunt bewerken in Microsoft Excel of Google Sheets (Document-based Authoring) en publiceren naar Edge Delivery Services. Ook wordt de AEM publicatiemethode weergegeven met de Adaptive Forms Editor (AEM Authoring).
 
 ![Edge Delivery Architecture](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery-services zijn een set services die samengesteld kunnen worden en die een hoge mate van flexibiliteit mogelijk maken in de manier waarop u formulieren ontwerpt op uw website. U kunt zowel AEM inhoudsbeheer gebruiken met [AEM maken](/help/forms/creating-adaptive-form-core-components.md) alsmede [Authoring op basis van documenten](/help/edge/docs/forms/create-forms.md).
-
-U ontwerpt formulieren bijvoorbeeld rechtstreeks in Microsoft Excel of Google Sheets en deze spreadsheets worden getransformeerd in formulieren voor uw website. Alle nieuwe formulieren of formulierinhoud, zoals een nieuw formulierveld, zijn direct beschikbaar op uw website zonder dat u een proces voor het opnieuw samenstellen van de formulieren hoeft te gebruiken.
 
 De Edge Delivery Services van AEM Forms gebruiken GitHub zodat kunnen de klanten code direct van hun bewaarplaats beheren en opstellen GitHub. U kunt bijvoorbeeld formulieren schrijven in [Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md) en de componenten van uw formulieren kunnen worden ontwikkeld met CSS en JavaScript in GitHub.
 
 Wanneer u klaar bent, kunt u de [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), een chrome browserextensie, voor het voorvertonen en publiceren van inhoudsupdates.
 
 ![AEM Sidekick installeren](/help/edge/assets/install-aem-sidekick.png)
-
-AEM Forms-Edge Delivery Services bieden een formulierblok, ook wel bekend als [Adaptief Forms-blok](/help/edge/docs/forms/create-forms.md) om een formulier toe te voegen aan uw site met Edge Delivery Services.
 
 De keuze tussen [Authoring op basis van documenten](#document-based-authoring-features) en [AEM maken](#aem-authoring-features) is afhankelijk van uw specifieke vereisten.
 

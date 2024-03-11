@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. Met AEM Forms Edge Delivery Services (EDS) kunt u formulieren maken met vertrouwde gereedschappen, zoals Google Docs en Microsoft Office.
 
-Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
+Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft SharePoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
 AEM Forms biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt een nieuw AEM project tot stand brengen vooraf gevormd met het AanpassingsBlok van Forms of het AanpassingsBlok van Forms aan een bestaand AEM project toevoegen.
 
@@ -127,16 +127,16 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
       Als u de Microsoft SharePoint gebruikt, gebruikt het mappad de volgende notatie:
 
       ```HTML
-      https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Bijvoorbeeld:
 
       ```HTML
-      https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+      https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Raadpleeg voor meer informatie over het beheren van bestanden met Microsoft SharePoint de [Hoe te om Adobe SharePoint te gebruiken](https://www.aem.live/docs/setup-customer-sharepoint).
+      Raadpleeg voor meer informatie over het beheren van bestanden met Microsoft SharePoint de [Adobe SharePoint gebruiken](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -299,7 +299,5 @@ Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open de [EDS-project]/pac
 
 ## Zie ook
 
-* [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Formulieren rechtstreeks verzenden naar uw Microsoft Excel- of Google-werkbladen](/help/edge/docs/forms/submit-forms.md)
-* [De weergave van uw formulieren wijzigen](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 
