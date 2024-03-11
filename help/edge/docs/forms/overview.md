@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,13 @@ Edge Delivery Services gebruiken GitHub zodat kunnen de klanten code van hun bew
 ![AEM Sidekick installeren](/help/edge/assets/install-aem-sidekick.png)
 
 AEM Forms-Edge Delivery Services bieden een formulierblok, ook wel bekend als [Adaptief Forms-blok](/help/edge/docs/forms/create-forms.md) om een formulier toe te voegen aan uw site met Edge Delivery Services.
+
+De keuze tussen [op documenten gebaseerd schrijven](#document-based-authoring-features) en [AEM maken](#aem-authoring-features) is afhankelijk van uw specifieke vereisten.
+
+Voor eenvoudige formulieren die alleen basisinformatie verzamelen, zoals namen en e-mails (neem contact met ons op, genereren formulieren voor leads of formulieren voor serviceaanvragen) en wanneer u alleen de gegevens nodig hebt om naar een spreadsheet te gaan, gaat u naar [Authoring op basis van documenten](/help/edge/docs/forms/create-forms.md) is een perfecte pasvorm. U kunt deze formulieren op dezelfde manier maken als een document in Google Docs.
+
+Als uw formulieren complexer worden, zoals het vereisen van meerdere deelvensters, complexe regels en bedrijfslogica, gegevensmanipulatie, integratie met externe systemen of gestroomlijnde workflows met AEM functies, dan [AEM maken](/help/forms/creating-adaptive-form-core-components.md) is een betere optie.
+
 
 ### Belangrijkste kenmerken van op documenten gebaseerde ontwerpen en AEM ontwerpen
 
@@ -119,6 +126,13 @@ AEM Authoring (met behulp van de Adaptive Forms Editor) biedt een WYSIWYG-interf
 * Mogelijkheid om meerdere verzendacties te configureren voor de verwerking van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
 
 In wezen bouwt AEM Authoring voort op de basis van op documenten gebaseerde authoring, die een geavanceerdere toolkit biedt voor het maken en beheren van complexe formulieren.
+
+### Ontwerpworkflow
+
+![Op documenten gebaseerde ontwerpfuncties](/help/edge/assets/document-based-authoring-workflow.png)
+
+![AEM maken](/help/edge/assets/aem-authoring-workflow.png)
+
 
 ## Formulieren maken
 
