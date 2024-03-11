@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,8 @@ Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Go
 Controleer voordat u begint of u de volgende stappen hebt uitgevoerd:
 
 * Een [AEM project met AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) of [Voeg Adaptive Forms Block toe aan uw bestaande AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) en kloon de overeenkomstige bewaarplaats GitHub op uw lokale machine.
-In dit document wordt de lokale map van uw Edge Delivery Services-project (EDS) aangeduid als `[EDS Project repository]` .
-* Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Als u Microsoft SharePoint wilt instellen als inhoudsbron, raadpleegt u [Hoe te om SharePoint te gebruiken](https://www.aem.live/docs/setup-customer-sharepoint)
+In dit document wordt de lokale map van uw Edge Delivery Services-project (EDS) aangeduid als `[EDS Project repository]`.
+* Zorg ervoor dat u toegang hebt tot Google Sheets of Microsoft SharePoint. Als u Microsoft SharePoint wilt instellen als inhoudsbron, raadpleegt u [Hoe te om SharePoint te gebruiken](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -80,6 +80,8 @@ Ga als volgt te werk om het formulier te maken:
 
 1. Maak een Microsoft Excel-werkboek of Google-werkblad in de projectmap voor AEM Edge Delivery. Maak bijvoorbeeld een werkblad met de naam `enquiry` op AEM Edge Delivery-projectdirectory op Google Drive.
 
+   ![Voorbeeldinhoud op Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+
 1. Zorg ervoor dat het blad wordt gedeeld met de juiste AEM (bijvoorbeeld `helix@adobe.com`) [volgens de configuraties die zijn opgegeven voor uw project](https://www.aem.live/docs/setup-customer-sharepoint). Hiermee geeft u de gebruiker bewerkingsmachtigingen voor het blad.
 
 1. Open het gemaakte werkblad en wijzig de naam van het standaardwerkblad in &#39;shared-default&#39;.
@@ -87,6 +89,7 @@ Ga als volgt te werk om het formulier te maken:
    ![naam standaardblad wijzigen in &#39;shared-default&#39;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
 1. Als u formuliervelden wilt toevoegen, voegt u rijen en kolomkoppen in het &#39;standaard-gedeelde&#39; blad in. Elke rij moet een [formulierveld](/help/edge/docs/forms/form-components.md#available-components), met kolomkoppen die het corresponderende veld definiëren [eigenschappen](/help/edge/docs/forms/form-components.md#components-properties).
+
 
    Voor een snel begin kunt u de inhoud van het dialoogvenster [Opzoekblad](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) in uw spreadsheet. Sla het werkblad op nadat u de inhoud hebt gekopieerd.
 
@@ -118,19 +121,24 @@ Ga als volgt te werk om het formulier te maken:
 +++ Stap 2: Geef een voorbeeld van het formulier weer met de pagina EDS (Edge Delivery Services).
 
 
-Tot nu toe hebt u het Adaptive Forms Block toegevoegd aan uw EDS-project en de structuur van het formulier voorbereid. Nu een voorbeeld van het formulier weergeven:
+Tot nu toe hebt u de structuur van het formulier voorbereid. Nu een voorbeeld van het formulier weergeven:
 
-1. **Toegang tot uw projectmap:** Open uw Microsoft SharePoint- of Google Drive-account en navigeer naar uw AEM Edge Delivery-projectdirectory.
+1. Open uw Microsoft SharePoint- of Google Drive-account en navigeer naar uw AEM Edge Delivery-projectdirectory.
 
-1. **Het formulier insluiten in een document:** Open een documentbestand (bijvoorbeeld een indexbestand) om het formulier in te sluiten. U kunt ook een nieuw document maken.
 
-1. **Navigeer naar de gewenste locatie:** Ga naar de gewenste locatie in het document waar u het formulier wilt toevoegen.
 
-1. **Voeg het Adaptief Forms-blok toe:** Een formulierblok maken om het formulier te genereren. Selecteer Invoegen > Tabel en maak een tabel met één kolom en twee rijen. Geef de tabel een naam &quot;Formulier&quot; en plak de voorbeeld-URL in de tweede rij. Zorg ervoor dat de URL is opgemaakt als een hyperlink, niet als onbewerkte tekst, zoals hieronder wordt geïllustreerd:
+1. Open een documentbestand (bijvoorbeeld een indexbestand) om het formulier in te sluiten. U kunt ook een nieuw document maken.
+
+1. Ga naar de gewenste locatie in het document waar u het formulier wilt toevoegen.
+
+1. Een formulierblok maken om het formulier te genereren. Selecteer Invoegen > Tabel en maak een tabel met één kolom en twee rijen. Geef de tabel een naam &quot;Formulier&quot; en plak de voorbeeld-URL in de tweede rij. Zorg ervoor dat de URL is opgemaakt als een hyperlink, niet als onbewerkte tekst, zoals hieronder wordt geïllustreerd:
 
    | Formulier |
    |---|
-   | [https://main—portal—wkndforms.hlx.live/inquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+
+   ![Adaptief Forms-blok toevoegen aan uw webpagina](/help/edge/assets/add-adaptive-forms-block.png)
 
    Dit blok fungeert als tijdelijke aanduiding voor het ingesloten formulier. Voeg in de tweede rij van het blok de voorbeeld-URL van uw `<form>.json` bestand als hyperlink.
 
