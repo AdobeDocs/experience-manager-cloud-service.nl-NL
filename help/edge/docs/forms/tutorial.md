@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1878'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 
       ![Voorbeeldinhoud downloaden](/help/edge/assets/download-sample-content.png)
 
-      De `index`, `nav`, en `footer` de dossiers bepalen de basislay-out van uw pagina&#39;s en veranderen zelden door een project. Ze hebben ook een specifieke structuur die afwijkt van de meeste andere inhoudsbestanden. Door deze bestanden te bekijken, krijgt u een idee hoe inhoud in AEM Projecten wordt georganiseerd.
+      De `nav` en `footer` de dossiers bepalen de basislay-out van uw pagina&#39;s en veranderen zelden door een project. Ze hebben ook een specifieke structuur die afwijkt van de meeste andere inhoudsbestanden. Door deze bestanden te bekijken, krijgt u een idee hoe inhoud in AEM Projecten wordt georganiseerd.
 
 
    1. Upload deze bestanden naar de map Microsoft SharePoint of Google Drive.
@@ -148,7 +148,7 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
 
       Hiermee verbindt u de inhoudsmap met uw website. Na het bijwerken van de verwijzing kunnen fouten met &quot;404 Niet gevonden&quot; aanvankelijk optreden. Dit komt omdat er nog geen voorvertoning van uw inhoud is weergegeven. In de volgende sectie wordt uitgelegd hoe u begint met het ontwerpen en voorvertonen van uw inhoud.
 
-      ![Bijgewerkt bestand fsatab.yaml vastleggen](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### Inhoud voorvertonen en publiceren
 
@@ -204,9 +204,22 @@ De voorbeeldinhoud bestaat uit een blad &quot;vraag&quot; dat fungeert als sjabl
 
 ![Invorderingsformulier](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Laten we beginnen met het bijwerken van een veldlabel. Open het blad &#39;Vraag&#39; voor bewerking, wijzig het label van de verzendknop in `Let's Chat`en gebruik sidekick om deze te publiceren.
+Laten we beginnen met het bijwerken van een veldlabel. Open het blad &#39;Vraag&#39; voor bewerking, wijzig het label van de verzendknop in `Let's Chat` en gebruik AEM Sidekick om het bestand voor te vertonen en te publiceren.
 
 ![Invorderingsformulier](/help/edge/assets/enquiry-form-preview-publish.png)
+
+Wanneer u een voorvertoning van het bestand weergeeft of het bestand publiceert, wordt een JSON-versie van het bestand op een nieuw tabblad weergegeven. Kopieer de voorvertoning (.hlx.page) of de publicatie (.hlx.live) URL van het bestand.
+
+![JSON van het spreadsheet van het formulier](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+Open de `enquiry` en vervangt u de URL in het formulierblok door de URL van het bestand die u in de vorige stap hebt gekopieerd. Controleer of de URL een hyperlink is.
+
+![Bezig met opvragen van bestand met de URL .json van spreadsheet](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+Gebruik AEM Sidekick om een voorvertoning van het enquêtedocument weer te geven en dit te publiceren.
+
+![Bezig met opvragen van bestand met de URL .json van spreadsheet](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 Ga naar de volgende URL om een voorbeeld van het bijgewerkte onderzoeksformulier te bekijken:
 
