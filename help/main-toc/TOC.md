@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: d29e1c588937d18dea2fe851df3818b6438d41c4
 workflow-type: tm+mt
-source-wordcount: '4776'
+source-wordcount: '4780'
 ht-degree: 3%
 
 ---
@@ -793,6 +793,7 @@ ht-degree: 3%
    + [Ontwikkelen voor Edge Delivery](/help/edge/developing.md)
    + [Inhoud modelleren](/help/edge/content-modeling.md)
    + [Blokken maken](/help/edge/create-block.md)
+   + [Tabelgegevens en spreadheets](/help/edge/tabular-data.md)
    + [Bestaande projecten en Edge Delivery](/help/edge/existing-projects.md)
    + Edge Delivery-toepassingen samenstellen {#build}
       + [Aan de slag - Zelfstudie voor ontwikkelaars](/help/edge/developer/tutorial.md)
