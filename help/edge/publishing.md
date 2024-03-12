@@ -3,12 +3,13 @@ title: Inhoud voor Edge Delivery Services publiceren
 description: Leer hoe het publiceren van inhoud met Edge Delivery Services werkt en hoe te om AEM inhoud met Edge Delivery Services te publiceren.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: 3ee1ba83518c3d4fba59b0c98b31e5c63a2eb6ab
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
+
 
 # Inhoud voor Edge Delivery Services publiceren {#publishing-edge}
 
@@ -30,10 +31,14 @@ De informatiestroom bij publicatie ziet er als volgt uit. Zodra de auteur begint
 ![De stroom van informatie wanneer het publiceren van AEM aan Edge Delivery Services](assets/publishing-flow.png)
 
 1. De auteur van de inhoud publiceert AEM inhoud in de Universal Editor.
-1. Een publicatiegebeurtenis wordt geduwd aan de Rij van de Pijpleiding van de Adobe.
-1. De Edge Delivery Publish Service stuurt de relevante gebeurtenissen door naar de Edge Delivery Admin API.
-1. De Levering van de rand trekt en neemt semantische HTML van AEM Auteur op.
+1. Een publicatiegebeurtenis wordt geduwd aan de pijpleidingsrij van de Adobe.
+1. De Edge Delivery Services publiceren de dienst door:sturen de relevante gebeurtenissen aan Edge Delivery Services admin API.
+1. De Levering van de rand trekt en neemt semantische HTML van AEM auteur op.
 1. AEM wordt bijgewerkt met publicatiestatus.
+
+>[!NOTE]
+>
+>Standaard is de API voor beheer van Edge Delivery Services niet beveiligd en kan deze worden gebruikt om documenten zonder verificatie te publiceren of de publicatie ervan ongedaan te maken. Voor het configureren van verificatie voor de API voor beheer, zoals beschreven in [Verificatie voor auteurs configureren](https://www.aem.live/docs/authentication-setup-authoring)moet uw project voorzien zijn van een API_KEY, die toegang tot de publicatieservice verleent. [Neem contact op met het team Adobe voor Slack](/help/edge/docs/slack.md) ter begeleiding.
 
 ## Aan de slag {#how-to-get-started}
 
