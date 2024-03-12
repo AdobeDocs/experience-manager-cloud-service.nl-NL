@@ -1,13 +1,13 @@
 ---
 title: Inhoud modelleren voor AEM ontwerpen met projecten voor Edge Delivery Services
 description: Leer hoe het modelleren van inhoud voor AEM creatie met Edge Delivery Services projecten en hoe te om uw eigen inhoud te modelleren werkt.
-source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
+source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2095'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud modelleren voor AEM ontwerpen met projecten voor Edge Delivery Services {#content-modeling}
 
@@ -351,7 +351,7 @@ Alle andere elementen worden weergegeven als onbewerkte tekst.
 
 #### Veld samenvouwen {#field-collapse}
 
-Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden in één semantisch element op basis van een naamgevingsconventie met de achtervoegsels `Title`, `Type`, `Alt`, en `Text` (alle hoofdletters/kleine letters). Een eigenschap die eindigt met een van deze achtervoegsels wordt niet als een waarde beschouwd, maar als een kenmerk van een andere eigenschap.
+Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden in één semantisch element op basis van een naamgevingsconventie met de achtervoegsels `Title`, `Type`, `MimeType`, `Alt`, en `Text` (alle hoofdletters/kleine letters). Een eigenschap die eindigt met een van deze achtervoegsels wordt niet als een waarde beschouwd, maar als een kenmerk van een andere eigenschap.
 
 ##### Afbeeldingen {#image-collapse}
 
@@ -624,7 +624,13 @@ Zorg ervoor dat het werkblad ook aan de padtoewijzing is toegevoegd voordat u he
 
 ### Pagina-eigenschappen {#page-properties}
 
-Het is ook mogelijk om een componentenmodel voor paginametagegevens te bepalen, die aan de auteur als lusje van het de paginaeigenschappen van AEM Sites ter beschikking zullen worden gesteld.
+Veel van de standaardpagina-eigenschappen die beschikbaar zijn in AEM, worden toegewezen aan de desbetreffende pagina-metagegevens in een document. Dat omvat bijvoorbeeld `title`, `description`, `robots`, `canonical url` of `keywords`. Er zijn ook enkele AEM-specifieke eigenschappen beschikbaar:
+
+* `cq:lastModified` als `modified-time` in ISO8601-indeling
+* De tijd waarop het document voor het laatst is gepubliceerd als `published-time` in ISO8601-indeling
+* `cq:tags` als `cq-tags` als door komma&#39;s gescheiden lijst met de tag-id&#39;s.
+
+Het is ook mogelijk om een componentenmodel voor meta-gegevens van de douanepagina te bepalen, die aan de auteur als lusje van het de paginaeigenschappen van AEM Sites beschikbaar zullen worden gemaakt.
 
 Hiertoe maakt u een componentmodel met de id `page-metadata`.
 
@@ -633,15 +639,10 @@ Hiertoe maakt u een componentmodel met de id `page-metadata`.
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-Er zijn een paar gebiedsnamen die een speciale betekenis hebben en zullen worden overgeslagen wanneer het dienen van de auteursdialoog UI:
-
-* **`cq:tags`** - Standaard, `cq:tags` niet aan de metagegevens worden toegevoegd. Deze toevoegen aan de `page-metadata` model voegt de tag-id&#39;s toe als een door komma&#39;s gescheiden lijst als een `tags` meta-tag naar de kop.
-* **`cq:lastModified`** - `cq:lastModified` voegt de gegevens toe zoals `last-modified` aan het hoofd.
