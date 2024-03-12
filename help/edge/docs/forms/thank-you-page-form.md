@@ -1,18 +1,18 @@
 ---
-title: Hartelijk dank voor de pagina configureren of formulier omleiden na verzending
+title: Een aangepast bedankbericht weergeven na het verzenden van het formulier
 description: Leer hoe u pagina's voor bedankt en omleiding voor Forms Block configureert om de gebruikerservaring te optimaliseren en gebruikersreizen te stroomlijnen.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '195'
 ht-degree: 2%
 
 ---
 
-# De pagina Bedankt of het formulier omleiden na verzending weergeven
+# Een aangepast bedankbericht weergeven na het verzenden van het formulier
 
 Nadat een gebruiker een formulier heeft verzonden, is het van cruciaal belang dat u een naadloze ervaring oplevert via een bedankbericht. Dit bevestigt niet alleen een succesvolle indiening, maar vergroot ook de tevredenheid van de gebruikers en begeleidt hen verder op hun reis.
 

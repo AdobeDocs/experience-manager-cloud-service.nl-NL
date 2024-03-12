@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -64,3 +64,6 @@ Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de w
 | Ingeschakeld | Selectievakje, Radio | Hiermee bepaalt u of het veld standaard is geselecteerd. Het geselecteerde kenmerk is een Booleaanse eigenschap die wordt gebruikt met selectievakje en radio-invoer. Als de waarde true is, wordt hiermee aangegeven dat het veld standaard is geselecteerd wanneer het formulier wordt geladen. |
 | Veldset | Alles | Hiermee groepeert u velden om visueel verschillende secties in een formulier te maken. Met de veldsetelementgroepen worden verwante velden in een formulier gegroepeerd, zodat u ze visueel kunt scheiden om de organisatie en gebruikerservaring te verbeteren. </br> Als u een set velden in een veldset wilt ordenen, gebruikt u de opdracht `fieldset` en geeft het naamkenmerk ervan op. In het onderstaande voorbeeld tonen we aan hoe keuzerondjes worden ingekapseld binnen een enkele veldset voor een betere organisatie. ![Voorbeeld van veldset](/help/edge/assets/fieldset-example.png) |
 
+## Zie ook
+
+{{see-more-forms-eds}}

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ Als u klaar bent om uw formulier met uw klanten te delen voor gegevensverzamelin
 
 ## Voorwaarden
 
-* De [Het adaptieve Blok van Forms wordt toegelaten voor uw EDS project op GitHub](/help/edge/docs/forms/create-forms.md).
+* U hebt een AEM project gebaseerd op [AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) of [Aangepast Forms-blok toegevoegd aan uw bestaande AEM-project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * Uw formulier is volledig getest en klaar voor gebruik.
 * Uw [spreadsheet is geconfigureerd](/help/edge/docs/forms/submit-forms.md) om gegevens te accepteren.
+
 
 ## Uw formulier publiceren
 
@@ -74,7 +75,9 @@ Het formulier toevoegen aan uw webpagina:
 
    | Formulier |
    |---|
-   | [https://main—portal—wkndforms.hlx.live/inquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+   ![Voeg een blok met de naam &#39;Form&#39; toe aan het bestand](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    Dit blok fungeert als tijdelijke aanduiding voor het ingesloten formulier. Voeg in de tweede rij van het blok de URL van de `<form>.json` bestand als hyperlink.
 
@@ -86,16 +89,16 @@ Het formulier toevoegen aan uw webpagina:
    Gebruik de URL van de voorvertoning (.page URL) voor ontwikkelings- of testdoeleinden of de URL van de publicatie (.live) voor productiedoeleinden. Hier volgen enkele voorbeelden van URL&#39;s voor voorvertonen en publiceren:
 
    **Voorbeeld-URL**
-| Formulier | |—| | [https://main—portal—wkndforms.hlx.page/inquiry.json](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
+| Formulier | |—| | [https://main—wefinance—wkndforms.hlx.page/inquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
    **URL publiceren**
-| Formulier | |—| | [https://main—portal—wkndforms.hlx.live/inquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+| Formulier | |—| | [https://main—wefinance—wkndforms.hlx.live/inquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. Gebruiken [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om een voorvertoning van de webpagina weer te geven. Het formulier wordt nu weergegeven op de pagina. Hier ziet u bijvoorbeeld het formulier dat is gebaseerd op de [spreadsheet vragen](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0):
 
 
-   [![Een voorbeeld-EDS-formulier](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   ![Een voorbeeld-EDS-formulier](/help/edge/assets/eds-form.png)
 
 1. Gebruik AEM Sidekick om het formulier te publiceren. Uw klanten kunnen het formulier nu invullen en verzenden.
 

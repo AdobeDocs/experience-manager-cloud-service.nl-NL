@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 # De spreadsheet voorbereiden voor het accepteren van gegevens
 
 
-Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/create-forms.md), is het tijd om de overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen.
+Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/create-forms.md), is het tijd om de overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen. U kunt de spreadsheet handmatig inschakelen voor het accepteren van gegevens of Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens.
 
 ![Ontwerpecosysteem op basis van documenten](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/cr
 
 -->
 
-Het werkblad inschakelen:
+
+## De spreadsheet handmatig inschakelen voor het accepteren van gegevens
+
+De spreadsheet inschakelen om gegevens te accepteren
 
 1. Open het werkblad met het formulier en voeg een nieuw blad toe, onder een andere naam `incoming`.
 
@@ -61,8 +64,7 @@ Zodra het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van 
 >
 >  De &quot;gedeelde-standaard&quot;bladen moeten nooit om het even welke persoonlijk identificeerbare informatie of gevoelige gegevens bevatten die u niet aan openbaar toegankelijk bent.
 
-
-## (Optioneel) Gebruik Admin API&#39;s om een spreadsheet in te schakelen voor het accepteren van gegevens
+### Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens
 
 U kunt ook een verzoek van de POST naar het formulier verzenden, zodat het gegevens kan accepteren en headers voor de `incoming` blad. Na ontvangst van het verzoek van de POST analyseert de dienst het lichaam van verzoek en produceert autonoom de essentiële kopballen en bladen nodig voor gegevensopname.
 
@@ -151,7 +153,6 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
    Uw formulier is nu ingeschakeld voor het accepteren van gegevens. U ziet ook de volgende wijzigingen in uw spreadsheet:
 
 ## Automatische wijzigingen in blad als dit is ingeschakeld voor het accepteren van gegevens.
-
 
 Wanneer het werkblad is ingesteld op het ontvangen van gegevens, ziet u de volgende wijzigingen in het werkblad:
 
@@ -284,7 +285,7 @@ Er zijn een paar verschillende manieren waarop u de formuliergegevens in de hoof
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-Vervolgens kunt u het bedankbericht aanpassen, [een pagina voor bedankt configureren](/help/edge/docs/forms/thank-you-page-form.md), of [omleidingen instellen](/help/edge/docs/forms/thank-you-page-form.md).
+Vervolgens kunt u [het bedankje aanpassen](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Zie ook
 
