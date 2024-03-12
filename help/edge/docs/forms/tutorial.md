@@ -4,9 +4,9 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1850'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,9 @@ In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendel
 
 Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft SharePoint kunt gebruiken om ingediende gegevens eenvoudig te verwerken of een bestaande zakelijke workflow te starten.
 
-AEM Forms biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt een nieuw AEM project tot stand brengen vooraf gevormd met het AanpassingsBlok van Forms of het AanpassingsBlok van Forms aan een bestaand AEM project toevoegen.
+AEM Forms biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt [een nieuw AEM-project maken dat vooraf is geconfigureerd met Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) of [het Adaptive Forms Block toevoegen aan een bestaand AEM-project](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publiceren van uw eigen aangepaste formulier met een nieuw Adobe Experience Manager (AEM) Forms-project. U leert ook Adaptive Forms Block aan een bestaand AEM-project toevoegen.
-
-* **[Een nieuw AEM-project maken dat vooraf is geconfigureerd met Adaptive Forms Block](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
-* **[Aangepast Forms-blok toevoegen aan een bestaand AEM-project](#add-adaptive-forms-block-to-an-existing-eds-project)**
+Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publiceren van uw eigen aangepaste formulier met een nieuw Adobe Experience Manager (AEM) Forms-project.
 
 
 
@@ -79,7 +76,7 @@ Met de AEM Forms Boilerplate-sjabloon kunt u snel aan de slag met een AEM projec
 
 ### Uw eigen inhoudsbron koppelen
 
-Uw nieuwe GitHub-opslagplaats wijst naar [voorbeeldinhoud opgeslagen in een Google Drive-map](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). Deze inhoud met het kenmerk Alleen-lezen biedt een fantastisch beginpunt voor uw formulieren. U kunt het bestand gratis kopiëren naar uw eigen Google Drive en het aanpassen aan uw wensen.
+Uw nieuwe GitHub-opslagplaats wijst naar [voorbeeldinhoud opgeslagen in een Google Drive-map](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). Deze inhoud met het kenmerk Alleen-lezen biedt een fantastisch beginpunt voor uw formulieren. U kunt het bestand gratis kopiëren naar uw eigen Google Drive en het aanpassen aan uw wensen.
 
 ![Voorbeeldinhoud op Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
@@ -194,8 +191,6 @@ Niet-gepubliceerde inhoud voorvertonen:
 
    Als de gegevensopslagruimte van uw project bijvoorbeeld &#39;wefinance&#39; heet, bevindt deze zich onder de eigenaar van de account &#39;wkndforms&#39; en gebruikt u de &#39;main&#39;-vertakking, is de URL:
 
-
-
    [https://main—wefinance—wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
 ### Een formulier maken
@@ -274,9 +269,16 @@ Gefeliciteerd! U hebt uw lokale ontwikkelomgeving ingesteld en uw wijzigingen ge
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-Als u een bestaand AEM project hebt, kunt u het Adaptive Forms Block integreren in uw huidige project om aan de slag te gaan met het maken van formulieren. Om te integreren:
+Als u een bestaand AEM project hebt, kunt u het Adaptive Forms Block integreren in uw huidige project om aan de slag te gaan met het maken van formulieren.
 
-1. Clone the Adaptive Forms Block repository: https://github.com/adobe-rnd/aem-boilerplate-forms to your computer.
+>
+>
+>
+> Deze stap is van toepassing op projecten die zijn gebouwd met de [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). Als u uw AEM project gebruikend creeerde [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)kunt u deze stap overslaan.
+
+Om te integreren:
+
+1. Clone the Adaptive Forms Block repository: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) naar uw computer.
 
 1. Zoek in de gedownloade map de `blocks/form` map. Deze map kopiëren. Navigeer nu naar de lokale AEM van uw project `blocks` en plak de gekopieerde formuliermap hier.
 

@@ -2,7 +2,7 @@
 title: JavaScript API-naslaggids voor ContextHub
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Het voorwerp ContextHub verleent toegang tot alle opslag.
 
 ### Functies (ContextHub) {#functions-contexthub}
 
-#### getAllStores () {#getallstores}
+#### getAllStores() {#getallstores}
 
 Retourneert alle geregistreerde ContextHub-winkels.
 
@@ -83,7 +83,7 @@ Een voorwerp dat alle opslag ContextHub bevat. Elke winkel is een object met dez
 In het volgende voorbeeld worden alle opslagruimten opgehaald en wordt vervolgens de geolocatieopslag opgehaald:
 
 ```javascript
-var allStores = ContextHub.getAllStores ();
+var allStores = ContextHub.getAllStores();
 var geoloc = allStores.geolocation
 ```
 
@@ -127,7 +127,7 @@ Verleent toegang tot segmenten ContextHub.
 
 ### Functies (ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments () {#getresolvedsegments}
+#### getResolvedSegments() {#getresolvedsegments}
 
 Retourneert de segmenten die zijn omgezet in de huidige context. Deze functie heeft geen parameters.
 
@@ -155,7 +155,7 @@ A `ContextHub.Utils.Persistence` object. Zie voor informatie over de standaardwa
 
 ### Functies (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
-#### addAllItems (structuur, opties) {#addallitems-tree-options}
+#### addAllItems(tree, options) {#addallitems-tree-options}
 
 Voegt een gegevensobject of een array samen met de opslaggegevens. Elk sleutelwaardepaar in het object of de array wordt aan de winkel toegevoegd (via de `setItem` functie):
 
@@ -193,7 +193,7 @@ A `boolean` waarde:
 * Een waarde van `true` geeft aan dat de verwijzing is toegevoegd.
 * Een waarde van `false` geeft aan dat er geen verwijzing is toegevoegd.
 
-#### noticeReadiness () {#announcereadiness}
+#### noticeReadiness() {#announcereadiness}
 
 Hiermee activeert u de `ready` voor deze winkel. Deze functie heeft geen parameters en retourneert geen waarde.
 
@@ -213,7 +213,7 @@ Retourneert de waarde die aan een toets is gekoppeld.
 
 Een object dat de waarde voor de toets vertegenwoordigt.
 
-#### getKeys (includeInternal) {#getkeys-includeinternals}
+#### getKeys(includeInternal) {#getkeys-includeinternals}
 
 Haalt de sleutels uit de opslag op. Naar keuze kunt u de sleutels terugwinnen die intern door het kader ContextHub worden gebruikt.
 
@@ -225,7 +225,7 @@ Haalt de sleutels uit de opslag op. Naar keuze kunt u de sleutels terugwinnen di
 
 Een array met sleutelnamen ( `string` waarden).
 
-#### getReferences () {#getreferences}
+#### getReferences() {#getreferences}
 
 Haalt de verwijzingen uit de opslag op.
 
@@ -401,7 +401,7 @@ Keert de ruwe reactie terug die sinds de laatste vraag aan de dienst JSONP in he
 
 Een object dat de onbewerkte reactie vertegenwoordigt.
 
-#### getServiceDetails () {#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
 Hiermee wordt het serviceobject voor dit ContextHub.Store.JSONPStore-object opgehaald. Het serviceobject bevat de informatie die nodig is om de service-URL te maken.
 
@@ -521,7 +521,7 @@ Een hulpprogrammaklasse voor interactie met cookies.
 
 ### Functies (ContextHub.Utils.Cookie) {#functions-contexthub-utils-cookie}
 
-#### exists (key) {#exists-key}
+#### exists(key) {#exists-key}
 
 Hiermee wordt bepaald of een cookie bestaat.
 
@@ -536,12 +536,12 @@ A `boolean` De waarde true geeft aan dat het cookie bestaat.
 ##### Voorbeeld {#example-exists}
 
 ```javascript
-if (ContextHub.Utils.Cookie.exists ("name")) {
+if (ContextHub.Utils.Cookie.exists("name")) {
    // conditionally-executed code
 }
 ```
 
-#### getAllItems (filter) {#getallitems-filter}
+#### getAllItems(filter) {#getallitems-filter}
 
 Retourneert alle cookies met sleutels die overeenkomen met een filter.
 
@@ -560,7 +560,7 @@ Een object van cookies. Objecteigenschappen zijn cookie sleutels en sleutelwaard
 ##### Voorbeeld {#example-getallitems}
 
 ```javascript
-ContextHub.Utils.Cookie.getAllItems ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### getItem(key) {#getitem-key-1}
@@ -600,7 +600,7 @@ Een array van tekenreeksen waarbij elke tekenreeks de sleutel is van een cookie 
 ##### Voorbeeld {#example-getkeys-1}
 
 ```javascript
-ContextHub.Utils.Cookie.getKeys ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### removeItem(sleutel, opties) {#removeitem-key-options-1}
@@ -829,7 +829,7 @@ Deze klasse vergemakkelijkt de manipulatie van gegevensvoorwerpen die moeten wor
 
 ### Functies (ContextHub.Utils.JSON.tree) {#functions-contexthub-utils-json-tree}
 
-#### addAllItems () {#addallitems}
+#### addAllItems() {#addallitems}
 
 Maakt een kopie van een gegevensobject en voegt er vanuit een tweede object de gegevensstructuur aan toe. De functie retourneert de kopie en wijzigt geen van de oorspronkelijke objecten. Wanneer de gegevensstructuren van de twee objecten identieke sleutels bevatten, overschrijft de waarde van het tweede object de waarde van het eerste object.
 
@@ -911,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys () {#getkeys}
+#### getKeys() {#getkeys}
 
 Hiermee worden alle sleutels opgehaald uit de gegevensstructuur van een object. U kunt desgewenst alleen de toetsen van de onderliggende toetsen van een specifieke toets ophalen. U kunt desgewenst ook een sorteervolgorde van de opgehaalde toetsen opgeven.
 
@@ -946,7 +946,7 @@ myObject {
 }
 ```
 
-De `ContextHub.Utils.JSON.tree.getKeys (myObject);` script retourneert de volgende array:
+De `ContextHub.Utils.JSON.tree.getKeys(myObject);` script retourneert de volgende array:
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1072,7 +1072,7 @@ Hiermee kunt u winkelkandidaten registreren en geregistreerde winkelkandidaten a
 
 ### Functies (ContextHub.Utils.storeCandidates) {#functions-contexthub-utils-storecandidates}
 
-#### getRegisteredCandidates (storeType) {#getregisteredcandidates-storetype}
+#### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
 
 Retourneert de winkeltypen die zijn geregistreerd als opslagkandidaten. Of wint de geregistreerde kandidaten van een specifiek archieftype of van alle archieftypes terug.
 
@@ -1084,7 +1084,7 @@ Retourneert de winkeltypen die zijn geregistreerd als opslagkandidaten. Of wint 
 
 Een object van winkeltypen. De objecteigenschappen zijn de namen van opslagtypen en de eigenschapswaarden zijn een array van geregistreerde opslagkandidaten.
 
-#### getStoreFromCandidates (storeType) {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
 Retourneert een winkeltype van de geregistreerde kandidaten. Als meer dan één opslagtype van de zelfde naam wordt geregistreerd, keert de functie het archieftype met de hoogste prioriteit terug.
 
@@ -1096,7 +1096,7 @@ Retourneert een winkeltype van de geregistreerde kandidaten. Als meer dan één 
 
 Een object dat de geregistreerde opslagkandidaat vertegenwoordigt. Als het gewenste opslagtype niet is geregistreerd, wordt een fout gegenereerd.
 
-#### getSupportedStoreTypes () {#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
 Retourneert de namen van de winkeltypen die als opslagkandidaten zijn geregistreerd. Deze functie vereist geen parameters.
 

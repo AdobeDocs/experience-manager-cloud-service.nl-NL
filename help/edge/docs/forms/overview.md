@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -79,16 +79,20 @@ AEM Authoring biedt een WYSIWYG-interface (Adaptive Forms Editor) voor het samen
 
 In wezen [AEM maken](/help/forms/creating-adaptive-form-core-components.md) bouwt voort op de stichting van [Authoring op basis van documenten](/help/edge/docs/forms/create-forms.md), met een geavanceerdere toolkit voor het maken en beheren van complexe formulieren.
 
+>[!NOTE]
+>
+>
+> De AEM-ontwerpcapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Als u geïnteresseerd bent, stuurt u een e-mail van uw werkadres naar aem-forms-ea@adobe.com om toegang tot de functie te vragen.
+
 ### AEM Forms Edge Delivery Services: Authoring. Publiceren en verzenden van Forms
 
 De volgende diagrammen illustreren het proces van het maken, publiceren en verzenden van formulieren met behulp van Document-based Authoring en AEM Authoring.
 
-
-
-
 ![Authoring op basis van documenten ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![AEM maken](/help/edge/assets/aem-authoring-workflow.png)
+
+
 
 
 ## Formulieren maken
@@ -101,6 +105,17 @@ De volgende diagrammen illustreren het proces van het maken, publiceren en verze
 * [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
 * [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

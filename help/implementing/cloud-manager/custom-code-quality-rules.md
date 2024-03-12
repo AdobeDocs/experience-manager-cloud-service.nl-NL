@@ -2,7 +2,7 @@
 title: Aangepaste regels voor codekwaliteit
 description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4167'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Het gebruiken van een formaatkoord van een externe bron (zoals een verzoekparame
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
   request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
-  response.sendStatus (HttpServletResponse.SC_OK);
+  response.sendStatus(HttpServletResponse.SC_OK);
 }
 ```
 
@@ -120,7 +120,7 @@ Wanneer het uitvoeren van HTTP- verzoeken van binnen een toepassing van de Exper
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void dontDoThis () {
+public void dontDoThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
 
@@ -149,7 +149,7 @@ public void dontDoThisEither() {
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void doThis () {
+public void doThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
     .setConnectTimeout(5000)
@@ -194,7 +194,7 @@ Eén relatief gebruikelijke misvatting is dat `ResourceResolver` objecten die me
 #### Niet-compatibele code {#non-compliant-code-4}
 
 ```java
-public void dontDoThis (Session session) throws Exception {
+public void dontDoThis(Session session) throws Exception {
   ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
   // do some stuff with the resolver
 }
@@ -203,7 +203,7 @@ public void dontDoThis (Session session) throws Exception {
 #### Compatibele code {#compliant-code-2}
 
 ```java
-public void doThis (Session session) throws Exception {
+public void doThis(Session session) throws Exception {
   ResourceResolver resolver = null;
   try {
     resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
@@ -215,7 +215,7 @@ public void doThis (Session session) throws Exception {
   }
 }
 
-public void orDoThis (Session session) throws Exception {
+public void orDoThis(Session session) throws Exception {
   try (ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object) session))){
     // do something with the resolver
   }
@@ -254,7 +254,7 @@ In het algemeen, zou een uitzondering precies één keer moeten worden geregistr
 #### Niet-compatibele code {#non-compliant-code-6}
 
 ```java
-public void dontDoThis () throws Exception {
+public void dontDoThis() throws Exception {
   try {
     someOperation();
   } catch (Exception e) {
@@ -267,7 +267,7 @@ public void dontDoThis () throws Exception {
 #### Compatibele code {#compliant-code-3}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someOperation();
   } catch (Exception e) {
@@ -275,7 +275,7 @@ public void doThis () {
   }
 }
 
-public void orDoThis () throws MyCustomException {
+public void orDoThis() throws MyCustomException {
   try {
     someOperation();
   } catch (Exception e) {
@@ -296,7 +296,7 @@ Een ander gemeenschappelijk patroon te vermijden is een bericht te registreren e
 #### Niet-compatibele code {#non-compliant-code-7}
 
 ```java
-public void dontDoThis () throws Exception {
+public void dontDoThis() throws Exception {
   logger.error("something went wrong");
   throw new RuntimeException("something went wrong");
 }
@@ -305,7 +305,7 @@ public void dontDoThis () throws Exception {
 #### Compatibele code {#compliant-code-4}
 
 ```java
-public void doThis () throws Exception {
+public void doThis() throws Exception {
   throw new RuntimeException("something went wrong");
 }
 ```
@@ -350,7 +350,7 @@ Als beste praktijken, zouden de logboekberichten contextuele informatie over moe
 #### Niet-compatibele code {#non-compliant-code-9}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -362,7 +362,7 @@ public void dontDoThis () {
 #### Compatibele code {#compliant-code-6}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -383,7 +383,7 @@ Zoals de naam al aangeeft, moeten Java™-uitzonderingen altijd in uitzonderlijk
 #### Niet-compatibele code {#non-compliant-code-10}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -395,7 +395,7 @@ public void dontDoThis () {
 #### Compatibele code {#compliant-code-7}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -416,7 +416,7 @@ Zoals vermeld, is de context kritiek wanneer het begrip van logboekberichten. Ge
 #### Niet-compatibele code {#non-compliant-code-11}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -428,7 +428,7 @@ public void dontDoThis () {
 #### Compatibele code {#compliant-code-8}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -449,7 +449,7 @@ Het registreren in Experience Manager zou altijd door het registrerenkader (SLF4
 #### Niet-compatibele code {#non-compliant-code-12}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -461,7 +461,7 @@ public void dontDoThis () {
 #### Compatibele code {#compliant-code-9}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -482,7 +482,7 @@ In het algemeen beginnen paden met `/libs` en `/apps` moeten niet worden gecodee
 #### Niet-compatibele code {#non-compliant-code-13}
 
 ```java
-public boolean dontDoThis (Resource resource) {
+public boolean dontDoThis(Resource resource) {
   return resource.isResourceType("/libs/foundation/components/text");
 }
 ```
@@ -490,7 +490,7 @@ public boolean dontDoThis (Resource resource) {
 #### Compatibele code {#compliant-code-10}
 
 ```java
-public void doThis (Resource resource) {
+public void doThis(Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```

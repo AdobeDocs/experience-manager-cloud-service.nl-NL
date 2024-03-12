@@ -1,9 +1,9 @@
 ---
 title: Wat zijn adaptieve formulierexpressies?
 description: Met Adaptieve Forms-expressies kunt u automatische validatie, berekening en de zichtbaarheid van een sectie in- of uitschakelen.
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interac
 
 * Als u formuliervelden opnieuw wilt instellen, kunt u de activering activeren `guideBridge.reset()` API op de klikuitdrukking van een knoop. Er is ook een API voor verzenden die kan worden aangeroepen als een klikexpressie `guideBridge.submit()`**.**
 
-* U kunt de `setFocus ()` API waarmee de focus in verschillende velden of deelvensters wordt ingesteld (voor de focus van het deelvenster wordt automatisch ingesteld op het eerste veld). `setFocus ()`biedt een breed scala aan opties voor navigatie, zoals navigatie tussen deelvensters, Vorige/Volgende verplaatsing, het instellen van de focus op een bepaald veld en nog veel meer. Als u bijvoorbeeld naar het volgende deelvenster wilt gaan, kunt u het volgende gebruiken: `guideBridge.setFocus (this.panel.somExpression, 'nextItem').`
+* U kunt de `setFocus()` API waarmee de focus in verschillende velden of deelvensters wordt ingesteld (voor de focus van het deelvenster wordt automatisch ingesteld op het eerste veld). `setFocus()`biedt een breed scala aan opties voor navigatie, zoals navigatie tussen deelvensters, Vorige/Volgende verplaatsing, het instellen van de focus op een bepaald veld en nog veel meer. Als u bijvoorbeeld naar het volgende deelvenster wilt gaan, kunt u het volgende gebruiken: ` guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
 
 * Als u een adaptief formulier of de specifieke deelvensters wilt valideren, gebruikt u `guideBridge.validate(errorList, somExpression).`
 

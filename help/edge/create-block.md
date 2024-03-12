@@ -2,9 +2,9 @@
 title: Blokken maken met een instrument voor gebruik met de universele editor
 description: Leer hoe te om blokken tot stand te brengen van instrumenten voor gebruik met de Universele Redacteur in AEM creatie met Edge Delivery Services projecten.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Deze gids verstrekt geleidelijke instructies voor hoe te om blokken tot stand te
 
 Deze gids vereist noodzakelijk bestaande kennis van AEM creatie met Edge Delivery Services projecten evenals de Universele Redacteur. Voordat u met deze handleiding begint, moet u al toegang hebben tot Edge Delivery Services en vertrouwd zijn met de basisbeginselen, zoals:
 
-* U hebt de [Edge Delivery Service-zelfstudie.](/help/edge/developer/tutorial.md)
+U hebt de [Zelfstudie over Edge Delivery Service.](/help/edge/developer/tutorial.md)
 * U hebt toegang tot [AEM Cloud Service-sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * U hebt [heeft de Universal Editor ingeschakeld in dezelfde sandboxomgeving.](/help/implementing/universal-editor/getting-started.md)
 * U hebt de [Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge Delivery Services](/help/edge/edge-dev-getting-started.md) hulplijn.
