@@ -4,7 +4,7 @@ description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 0%
@@ -124,7 +124,7 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
       Als u de Microsoft SharePoint gebruikt, gebruikt het mappad de volgende notatie:
 
       ```HTML
-      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Bijvoorbeeld:
@@ -271,7 +271,7 @@ Gefeliciteerd! U hebt uw lokale ontwikkelomgeving ingesteld en uw wijzigingen ge
 
 Als u een bestaand AEM project hebt, kunt u het Adaptive Forms Block integreren in uw huidige project om aan de slag te gaan met het maken van formulieren.
 
->
+>[!NOTE]
 >
 >
 > Deze stap is van toepassing op projecten die zijn gebouwd met de [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). Als u uw AEM project gebruikend creeerde [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)kunt u deze stap overslaan.
