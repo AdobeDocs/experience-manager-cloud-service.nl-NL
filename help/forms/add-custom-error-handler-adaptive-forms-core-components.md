@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: e0607ff37572a586f5a83f2974054ebfb4b7d98f
+source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2303'
 ht-degree: 0%
 
 ---
@@ -255,6 +255,7 @@ Voeg de volgende code aan het dossier JavaScript toe om de reactie en kopballen 
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
+   In de bovenstaande code: `return true` Hiermee wordt de standaardfouthandler automatisch aangeroepen. Als u wilt voorkomen dat de standaardfouthandler standaard wordt aangeroepen, neemt u `return false`.
 
    >[!NOTE]
    >
