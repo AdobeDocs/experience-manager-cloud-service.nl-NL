@@ -2,9 +2,7 @@
 title: Aan de slag met AEM Forms-Edge Delivery Services - Zelfstudie voor ontwikkelaars
 description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe Experience Manager Forms-project (AEM). Binnen tien tot twintig minuten hebt u uw eigen formulieren gemaakt.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 0%

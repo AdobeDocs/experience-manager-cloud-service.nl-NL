@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d29e1c588937d18dea2fe851df3818b6438d41c4
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
-source-wordcount: '4780'
+source-wordcount: '4786'
 ht-degree: 3%
 
 ---
@@ -831,7 +831,7 @@ ht-degree: 3%
          + [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
          + [Thema&#39;s en vormstijl wijzigen](/help/edge/docs/forms/style-theme-forms.md)
          + [Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen](/help/edge/docs/forms/rules-forms.md)
-         + [Bedankt, pagina](/help/edge/docs/forms/thank-you-page-form.md)
+         + [Een aangepast bedankbericht weergeven na het verzenden van het formulier](/help/edge/docs/forms/thank-you-page-form.md)
       + Mogelijkheden {#advanced-features-eds-forms}
          + [Formulierfragmenten](/help/edge/docs/forms/form-fragments.md)
          + [Herhaalbare secties](/help/edge/docs/forms/repeatable-forms.md)

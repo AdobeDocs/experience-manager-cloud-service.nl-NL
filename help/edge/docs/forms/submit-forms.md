@@ -2,10 +2,8 @@
 title: De spreadsheet voorbereiden voor het accepteren van gegevens
 description: Krachtige formulieren sneller maken met spreadsheets en Adaptieve Forms Block Fields!
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%

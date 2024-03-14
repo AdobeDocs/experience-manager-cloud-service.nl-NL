@@ -2,12 +2,10 @@
 title: Overzicht AEM Forms Edge Delivery Services
 description: AEM Forms-Edge Delivery Services zijn gebouwd voor optimale prestaties, waardoor u de toekomst van gestroomlijnde gegevensverzameling en de betrokkenheid van gebruikers kunt inzien.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -20,7 +18,7 @@ Met deze services kunt u:
 
 * **Ervaar zelf welke inschrijvingen u wilt maken met de gereedschappen van uw keuze:** Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel Document-based Authoring (Microsoft SharePoint of Google Drive) als AEM Authoring (Adaptive Forms Editor) gebruiken. U kunt met meerdere inhoudsbronnen werken op dezelfde formuliersite en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of de Adaptive Forms Editor.
 
-* **Uitzonderlijke ervaringen met digitaal inschrijven bieden:** Lever Digitale Inschrijving die snel laadt en teruggeeft. Snellere laadtijden en een geoptimaliseerde gebruikerservaring dragen bij tot een hogere snelheid voor het invullen en converteren van formulieren.
+* **Uitzonderlijke ervaringen met digitaal inschrijven bieden:** Lever de Digitale Inschrijving Ervaringen die snel en onophoudelijk uw vormprestaties door echte gebruiker controle (RUM) laden en teruggeven controleren. Snellere laadtijden en een geoptimaliseerde gebruikerservaring dragen bij tot een hogere snelheid voor het invullen en converteren van formulieren.
 
 * **Gebruik een ontwikkelaarsvriendelijke gereedschapset:** AEM Forms-Edge Delivery Services maken gebruik van normale HTML, moderne CSS en vanilla JavaScript om uitzonderlijke ervaringen te creëren, waarbij de steile leercurve van een bepaald framework wordt vermeden. Een ontwikkelaar met basisvaardigheden voor webontwikkeling kan formuliercomponenten en -ervaringen aanpassen en eenvoudig bouwen. Er is geen behoefte om op een pijpleiding te wachten om te lopen, enkel controle-binnen uw code in GitHub en uw veranderingen zijn levend.
 
@@ -62,6 +60,7 @@ Met Document-gebaseerde Authoring kunt u formulieren maken met vertrouwde gereed
 * Google reCAPTCHA-integratie voor spambescherming.
 * Mogelijkheid om aangepaste formuliercomponenten te maken voor specifieke behoeften.
 * Formuliergegevens rechtstreeks verzenden naar Microsoft Excel of Google-werkbladen of e-mailadressen.
+* De prestaties van uw formulieren controleren met behulp van RUM (real user Monitoring)
 
 #### AEM ontwerpfuncties
 
@@ -92,9 +91,6 @@ De volgende diagrammen illustreren het proces van het maken, publiceren en verze
 
 ![AEM maken](/help/edge/assets/aem-authoring-workflow.png)
 
-
-
-
 ## Formulieren maken
 
 * [Aan de slag met AEM Forms-Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
@@ -105,20 +101,7 @@ De volgende diagrammen illustreren het proces van het maken, publiceren en verze
 * [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
 * [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Realtime gebruikerscontrole](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
