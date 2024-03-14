@@ -3,20 +3,21 @@ title: Thema en stijl aanpassen voor een AEM Forms Edge Delivery ServicesForm
 description: Thema en stijl aanpassen voor een AEM Forms Edge Delivery ServicesForm
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
-# Formuliervelden opmaken
+
+# Het uiterlijk van uw formulieren aanpassen
 
 Forms is van cruciaal belang voor gebruikersinteractie op websites, zodat deze gegevens kunnen invoeren. Met CSS (Cascading Style Sheets) kunt u velden van een formulier opmaken, de visuele presentatie van formulieren verbeteren en de gebruikerservaring verbeteren.
 
 Het Adaptive Forms Block produceert een consistente structuur voor alle formuliervelden. De consistente structuur maakt het gemakkelijker om CSS-kiezers te ontwikkelen om formuliervelden te selecteren en op te maken op basis van veldtype- en veldnamen.
 
-In dit document wordt de HTML-structuur voor verschillende formuliercomponenten beschreven. Op deze manier kunt u leren hoe u CSS-kiezers voor verschillende formuliervelden kunt maken om formuliervelden van een adaptief Forms-blok op te maken.
+In dit document wordt de HTML-structuur voor verschillende formuliercomponenten beschreven. Aan de hand hiervan kunt u leren hoe u CSS-kiezers voor verschillende formuliervelden kunt maken om formuliervelden van een adaptief Forms-blok op te maken.
 
 Aan het einde van het artikel:
 
@@ -87,7 +88,7 @@ Alle formuliervelden, met uitzondering van vervolgkeuzelijsten, groepen keuzeron
 </div>
 ```
 
-* Klassen: het div-element heeft verschillende klassen voor het aanwijzen van specifieke elementen en opmaak. U hebt de opdracht `{Type}-wrapper` of `field-{Name}` klassen voor het ontwikkelen van een CSS-kiezer voor het opmaken van een formulierveld:
+* Klassen: het div-element heeft verschillende klassen voor het aanwijzen van specifieke elementen en opmaak. U hebt de opdracht `{Type}-wrapper` of `field-{Name}` klassen om een CSS-kiezer te ontwikkelen om een formulierveld op te maken:
    * {Type}: Identificeert de component op veldtype. Bijvoorbeeld tekst (tekstomloop), getal (nummeromloop), datum (datumomloop).
    * {Name}: Identificeert de component op naam. De naam van het veld mag alleen alfanumerieke tekens bevatten, de opeenvolgende streepjes in de naam worden vervangen door één streepje `(-)`en de begin- en eindstreepjes in een veldnaam worden verwijderd. Voornaam (veld-voornaam veld-wrapper).
    * {FieldId}: Het is een unieke id voor het veld, die automatisch wordt gegenereerd.
@@ -201,9 +202,9 @@ Voor vervolgkeuzemenu&#39;s kunt u de opdracht `select` element wordt gebruikt i
 
 +++
 
-+++ CSS-kiezers voor vervolgkeuzelijst
++++ CSS-kiezers voor vervolgkeuzecomponent
 
-In de volgende CSS worden enkele voorbeelden van CSS-kiezers voor vervolgkeuzelijsten weergegeven.
+In de volgende CSS-code worden enkele voorbeelden van CSS-kiezers voor vervolgkeuzecomponenten weergegeven.
 
 ```CSS
 /* Target the outer wrapper */
@@ -262,7 +263,7 @@ In de volgende CSS worden enkele voorbeelden van CSS-kiezers voor vervolgkeuzeli
 
 Keuzerondjes hebben, net als vervolgkeuzelijsten, een eigen HTML- en CSS-structuur:
 
-+++ HTML-structuur van groep keuzerondjes
++++ HTML Structuur van groep keuzerondjes
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,7 +301,7 @@ Keuzerondjes hebben, net als vervolgkeuzelijsten, een eigen HTML- en CSS-structu
 
 +++
 
-+++ CSS-kiezers voor vervolgkeuzelijst
++++ CSS-kiezers voor keuzerondjes
 
 * Doelstelling van de veldset
 
@@ -334,7 +335,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 
 ### Selectievakjesgroepen
 
-+++ HTML-structuur Selectievakje voor groep
++++ HTML Structuur van Selectievakjesgroep
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,7 +371,7 @@ Deze kiezer richt zich op elk veld dat met de klasse Radio-group-wrapper is inge
 
 +++
 
-+++ Voorbeeld-CSS-kiezers voor groepen keuzerondjes en selectievakjes**
++++ CSS-kiezers voor groepen selectievakjes
 
 * Doelstelling voor de buitenomsluitend omsluitend kader: deze kiezers richten zich op de buitenste containers van groepen keuzerondjes en selectievakjes, zodat u algemene stijlen kunt toepassen op de volledige groepsstructuur. Dit is handig voor het instellen van spatiëring, uitlijning of andere aan de layout gerelateerde eigenschappen.
 
@@ -796,9 +797,9 @@ U kunt formuliervelden opmaken op basis van het specifieke type (`{Type}-wrapper
 
 ### Stijlen op basis van veldtype
 
-Met CSS-kiezers kunt u specifieke veldtypen als doel instellen en stijlen consistent toepassen.
+U kunt CSS-kiezers gebruiken om specifieke veldtypen als doel in te stellen en stijlen consistent toe te passen.
 
-**HTML-structuur**
++++ HTML-structuur
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ Met CSS-kiezers kunt u specifieke veldtypen als doel instellen en stijlen consis
 * Elk veld heeft een overeenkomstig label, invoerelement en mogelijke aanvullende elementen, zoals plaatsaanduidingen en beschrijvingen.
 
 
++++
 
-**Voorbeeld-CSS-kiezers**
+
++++ Voorbeeld-CSS-kiezers
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ Met CSS-kiezers kunt u specifieke veldtypen als doel instellen en stijlen consis
 }
 ```
 
-
++++
 
 ### Stijlen op basis van veldnaam
 
 U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe te passen.
 
-**HTML-structuur**
++++ HTML-structuur
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe
 </div>
 ```
 
-**Voorbeeld-CSS-kiezer**
++++
+
++++ Voorbeeld-CSS-kiezer
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ U kunt afzonderlijke velden ook op naam als doel instellen om unieke stijlen toe
 }
 ```
 
+
+
 Deze CSS richt zich op alle inputelementen die binnen een element worden gevestigd dat de klasse heeft `field-otp`. De HTML-structuur van uw formulier volgt de conventies van het Adaptief Forms-blok. Dit houdt in dat er een container is gemarkeerd met de klasse &quot;field-otp&quot; die het veld bevat met de naam &quot;otp&quot;.
+
++++
 
 ## Zie ook
 
