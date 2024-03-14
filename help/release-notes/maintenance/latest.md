@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 87f76de41074debb2acc8ef4f71baf174d0d01ad
+source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -102,15 +102,22 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15262 same
 
 ### Bekende problemen {#known-issues-15262}
 
-#### `UnsupportedClassVersionError` in de pijpleiding van CM bouwt stap na verbetering `aem-sdk-api` versie naar `2024.2.15262.20240224T002940Z-231200`
+* ACTIVA-35923: `UnsupportedClassVersionError` in de pijpleiding van CM bouwt stap na verbetering `aem-sdk-api` versie naar `2024.2.15262.20240224T002940Z-231200`. **Vereist actie van klant om versie van CM Java aan 11 te plaatsen**, zie [Build Environment / Setting the Maven JDK Version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
+* ASSETS-35860: onjuiste tijdzoneconversie in de kolomweergave van AEM Assets.
+* SCRNS-4171: De Schermen van vensters gaan leeg en ophouden werkend wanneer bevordering aan 15262 en het publiceren van een kanaal.
+* GRANITE-50774: GraniteContent zou deterministische orde van bezit-waarden op init tijd moeten gebruiken.
+
+### Kennisgeving wijzigen {#change-notice-15262}
+
+**Handelingen vereist**
+
+#### CM Java-versie instellen op 11 {#set-java-version-11}
 
 De nieuwe versie van aem-sdk-api bevat klassen die met een doel Java 11 worden gecompileerd, die niet compatibel is met de milieu-standaard JDK versie 1.8 van de Manager van de Wolk bouwt. Deze update vereist dat Maven wordt uitgevoerd met JDK 11.
 
 Klanten wordt aangeraden een `.cloudmanager/java-version` bestand naar de hoofdmap van hun waarschuwingsbericht met de inhoud: `11`. [Build Environment / Setting the Maven JDK Version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
 
-### Kennisgeving wijzigen {#change-notice-15262}
-
-**Actie vereist**
+#### Aem-cloud-testing-clients bijwerken naar 1.2.1 {#update-aem-cloud-testing-clients}
 
 Voor komende wijzigingen is de bibliotheek vereist [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) gebruikt in uw aangepaste functionele tests die moeten worden bijgewerkt naar ten minste versie **1.**
 
