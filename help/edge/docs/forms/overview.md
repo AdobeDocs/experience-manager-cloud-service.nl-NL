@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ U ontwerpt formulieren bijvoorbeeld rechtstreeks in Microsoft Excel of Google Sh
 
 In het volgende diagram ziet u hoe u formulieren kunt bewerken in Microsoft Excel of Google Sheets (Document-based Authoring) en publiceren naar Edge Delivery Services. Ook wordt de AEM publicatiemethode weergegeven met de Adaptive Forms Editor (AEM Authoring).
 
-![Edge Delivery Architecture](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Publiceren naar Edge Delivery Services en AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 De Edge Delivery Services van AEM Forms gebruiken GitHub zodat kunnen de klanten code direct van hun bewaarplaats beheren en opstellen GitHub. U kunt bijvoorbeeld formulieren schrijven in [Google Sheets](/help/edge/docs/forms/create-forms.md) of [Microsoft Excel](/help/edge/docs/forms/create-forms.md) en de componenten van uw formulieren kunnen worden ontwikkeld met behulp van CSS en JavaScript in een GitHub-opslagplaats.
 
