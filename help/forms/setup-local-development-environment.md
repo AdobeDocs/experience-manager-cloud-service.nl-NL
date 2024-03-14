@@ -4,9 +4,9 @@ description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adob
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
+source-git-commit: e84d3ad2d7b549092ab7c616bead2f14f59be8c9
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2717'
 ht-degree: 0%
 
 ---
@@ -220,10 +220,21 @@ AEM Forms als Cloud Servicen biedt een docker-gebaseerde SDK-omgeving voor een e
 
 1. Opdrachtprompt openen en naar de `aem-forms-addon-native-<version>` map.
 
-1. Zorg ervoor dat uw lokale AEM Author-instantie actief is. Voer de volgende opdracht uit om de SDK te starten:
+1. Zorg ervoor dat uw lokale AEM Author-instantie actief is. Voer de volgende opdrachten uit om de SDK te starten:
 
-   * (in Microsoft® Windows) `sdk.bat start`
-   * (op Linux® of Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * Op Microsoft® Windows
+
+     ```shell
+     sdk.bat start
+     ```
+
+
+   * Linux® of Apple macOS
+
+   ```Shell
+       export AEM_HOME=[local AEM Author installation]
+       ./sdk.sh start
+   ```
 
    >[!NOTE]
    >
