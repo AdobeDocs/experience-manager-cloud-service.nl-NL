@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 10%
+source-wordcount: '2426'
+ht-degree: 8%
 
 ---
 
@@ -210,7 +210,7 @@ U hebt het volgende nodig om Experience Manager Assets met Brand Portal te confi
 
 * Een Experience Manager Assets als [!DNL Cloud Service] instance
 * URL Brand Portal-gebruiker
-* Een gebruiker met systeembeheerdersbevoegdheden op de IMS-organisatie van de Brand Portal-tenant
+* Een gebruiker met systeembeheerdersrechten voor de IMS-organisatie van de Brand Portal-huurder
 
 ## Configuratie maken {#create-new-configuration}
 
@@ -294,7 +294,8 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
    >[!NOTE]
    >
-   >U kunt de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, terugwinnen cliëntgeheim, etc.
+   >* U kunt de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, terugwinnen cliëntgeheim, etc.
+   >* Momenteel wordt alleen het JWT-verificatietype (Developer Console Service Account) van de Adobe ondersteund. Gebruik het OAuth Server-aan-Server credentiële type niet tot het in medio-April wordt gesteund. Lees meer op [JWT Credentials Deprection in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. Van de **[!UICONTROL Client Credentials]** -tabblad, kopieert u de **[!UICONTROL client ID]**.
 
@@ -375,7 +376,7 @@ Voer de volgende stappen uit om de IMS-account te configureren.
 
 >[!CAUTION]
 >
->U kunt slechts één IMS-configuratie hebben.
+>U moet slechts één configuratie IMS hebben.
 >
 >Zorg ervoor dat de IMS-configuratie slaagt voor de statuscontrole. Als de configuratie niet slaagt voor de statuscontrole, is deze ongeldig. U moet het schrappen en een andere geldige configuratie tot stand brengen.
 
@@ -410,8 +411,8 @@ De IP&#39;s van de uitgang zijn als volgt:
 | **Regio** | **IP van de uitgang** |
 |--- |--- |
 | NA | 130.248.160.68, 20.94.203.130 |
-| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
-| APAC | 63.140.44.54 |
+| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.2 48.244.210, 130.248.244.211, 13.248.244.212 |
+| APAC | 63 140 44 54 |
 
 <!--
 ### Test configuration {#test-configuration}
@@ -533,14 +534,14 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
