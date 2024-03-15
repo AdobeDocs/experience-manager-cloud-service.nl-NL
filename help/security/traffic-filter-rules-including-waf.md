@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
+source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
 workflow-type: tm+mt
-source-wordcount: '3376'
+source-wordcount: '3382'
 ht-degree: 0%
 
 ---
@@ -286,7 +286,7 @@ Hier volgen enkele regelvoorbeelden. Zie de [tarieflimiteringssectie](#rules-wit
 
 **Voorbeeld 1**
 
-Deze regel blokkeert verzoeken die van IP 192.168.1.1 komen:
+Deze regel blokkeert aanvragen afkomstig van **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -425,7 +425,7 @@ Snelheidslimieten worden berekend per CDN POP. Als voorbeeld, veronderstel dat P
 
 **Voorbeeld 1**
 
-Deze regel blokkeert een cliënt voor 5m wanneer het 100 req/sec (per CDN POP) in de laatste 60 sec overschrijdt:
+Deze regel blokkeert een cliënt voor 5m wanneer het een gemiddelde van 60 req/sec (per KNP CDN) in de laatste 10 sec overschrijdt:
 
 ```
 kind: "CDN"
@@ -450,7 +450,7 @@ data:
 
 **Voorbeeld 2**
 
-De verzoeken van het blok voor 60s op weg /kritiek/middel wanneer het 100 req/sec (per CDN POP) in de laatste 60 sec overschrijdt:
+De verzoeken van het blok op weg /kritiek/middel voor 60s wanneer het een gemiddelde van 100 req/sec (per CDN POP) in de laatste 60 sec overschrijdt:
 
 ```
 kind: "CDN"
