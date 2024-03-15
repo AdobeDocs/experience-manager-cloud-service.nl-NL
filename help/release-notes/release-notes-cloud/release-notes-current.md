@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
+source-git-commit: 4fdca70b3a711f747e44ac2a6c1d117ac990d49b
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,15 @@ Dynatrace-klanten kunnen hun AEM controleren. [Lees hoe](/help/implementing/clou
 ### RDE-ondersteuning voor front-end code met behulp van sitemenu&#39;s en sitesjablonen: Vroege adopter-programma {#rde-frontend-early-adopter}
 
 [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) nu ondersteuning voor front-end code op basis van [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md), voor vroege adoptie. Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan een [front-end pijpleiding](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Neem contact op met **aemcs-rde-support@adobe.com** om het uit te proberen en feedback te geven.
+
+### Programma voor vroege adopter van CDN-configuratie {#cdn-config-early-adopter}
+
+Naast de onlangs vrijgelaten [Regels voor verkeersfilters](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvat, is er een kans om de Pijpleiding van de Configuratie te gebruiken om andere types van configuratie te verklaren en op te stellen CDN. Deelnemen aan het programma voor vroege adoptie via e-mail **aemcs-cdn-config-adopter@adobe.com** toegang krijgen tot:
+* 301/302 omleidingen op de client
+* verzoeken aan de rand van willekeurige oorsprong proxying
+* URL-transformaties
+* verzoek- of antwoordheaders instellen of wijzigen
+* aangepaste foutpagina&#39;s wanneer de CDN AEM niet kan bereiken
 
 ## Cloud Manager {#cloud-manager}
 
