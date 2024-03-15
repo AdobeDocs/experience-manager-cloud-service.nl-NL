@@ -3,9 +3,9 @@ title: Niet-productiepijpleidingen configureren
 description: Leer hoe u niet-productiepijpleidingen configureert om de kwaliteit van uw code te testen voordat u deze implementeert in productieomgevingen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -145,10 +145,16 @@ De stappen om de verwezenlijking van uw niet-productie, gerichte plaatsingspijpl
    * **Git Branch** - Deze optie bepaalt waarvan de tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * Voer de eerste paar tekens in van de naam van de vertakking en de functie voor automatisch aanvullen van dit veld. U vindt de overeenkomende vertakkingen die u kunt selecteren.
    * **Codelocatie** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
+   * **Pijpleiding** - Voor niet-productiepijpleidingen aan de voorzijde hebt u de mogelijkheid om **[Ervaar controle.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![Config-pijplijn](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Config-pijplijn](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Klikken **Opslaan**.
+1. Tik of klik op **Doorgaan** aan de **Experience Audit** kunt u de paden definiëren die altijd moeten worden opgenomen in de controle van de ervaring.
+
+   * Als u **Experience Audit**, raadpleeg het document [Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) voor details over hoe te te vormen.
+   * Als u dit niet hebt gedaan, slaat u deze stap over.
+
+1. Tik of klik op **Opslaan** om de pijpleiding te redden.
 
 De pijpleiding wordt bewaard en u kunt nu [beheren van uw pijpleidingen](managing-pipelines.md) op de **Pijpleidingen** kaart op **Programmaoverzicht** pagina.
 

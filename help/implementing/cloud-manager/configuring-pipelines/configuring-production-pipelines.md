@@ -3,9 +3,9 @@ title: Productiepijpleidingen configureren
 description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -93,25 +93,13 @@ Om de configuratie van de full-stack de productiepijplijn van de codeproductie t
 
    ![Volledige stapelcode](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Klikken **Doorgaan** aan de **Experience Audit** kunt u de paden definiëren die altijd moeten worden opgenomen in de controle van de ervaring.
+1. Tik of klik op **Doorgaan** aan de **Experience Audit** kunt u de paden definiëren die altijd moeten worden opgenomen in de controle van de ervaring.
 
    ![Erviteitscontrole toevoegen](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. Geef een pad op dat moet worden opgenomen in de Experience Audit.
+1. Verstrek wegen die in de Controle van de Ervaring moeten worden omvat.
 
-   * Pagina-paden moeten beginnen met `/`.
-   * Als u bijvoorbeeld `https://wknd.site/us/en/about-us.html` Voer in de Experience Audit het pad in `/us/en/about-us.html`.
-
-   ![Een pad definiëren voor de Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. Klikken **Pagina toevoegen** en het pad wordt automatisch ingevuld met het adres van de omgeving en toegevoegd aan de padlijst.
-
-   ![Pad naar tabel opslaan](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. U kunt paden naar wens toevoegen door de vorige twee stappen te herhalen.
-
-   * U kunt maximaal 25 paden toevoegen.
-   * Als u geen paden definieert, wordt de homepage van de site standaard opgenomen in de Experience Audit.
+   * Zie het document [Ervaring controleren testen](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) voor meer informatie.
 
 1. Klikken **Opslaan** om uw pijpleiding te redden.
 

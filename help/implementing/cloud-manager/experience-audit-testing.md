@@ -2,9 +2,9 @@
 title: Ervaring controleren testen
 description: Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervoor te zorgen dat de ingevoerde veranderingen aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -31,15 +31,57 @@ De controle van de ervaring in de Manager van de Wolk zorgt ervoor dat de ervari
 
 De controleresultaten zijn informatief en staan de plaatsingsmanager toe om de scores en de verandering tussen de huidige en vorige scores te zien. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing werd geïntroduceerd.
 
-Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool van Google, en wordt ingeschakeld in alle productiepijpleidingen van Cloud Manager.
+Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool uit Google.
 
 >[!INFO]
 >
 >Met ingang van 31 augustus 2023 zal Experience Audit een overgang maken naar toonaangevende resultaten die specifiek zijn voor het mobiele platform. Metrische gegevens over mobiele prestaties zijn doorgaans lager dan die van desktopcomputers. Daarom moet u een verschuiving in de gerapporteerde prestaties na deze wijziging verwachten.
 
->[!TIP]
->
->U vormt welke pagina&#39;s inbegrepen in de Controle van de Ervaring wanneer u [de pijplijn instellen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+## Beschikbaarheid {#availability}
+
+Experience Audit is beschikbaar voor Cloud Manager:
+
+* Sites-productiepijpleidingen, standaard.
+* Voorkant ontwikkelingspijpleidingen, optioneel.
+
+Zie de [Configuratiesectie](#configuration) voor meer informatie over hoe te om de controle voor de facultatieve milieu&#39;s te vormen.
+
+## Configuratie {#configuration}
+
+De Experience Audit is standaard beschikbaar voor productiepijpleidingen. Het kan facultatief worden toegelaten voor front-end ontwikkelingspijpleidingen. In alle gevallen, moet u bepalen welke inhoudswegen tijdens pijpleidingsuitvoering worden geëvalueerd.
+
+U vormt welke pagina&#39;s inbegrepen in de Controle van de Ervaring wanneer u opstelling uw pijpleiding zijn.
+
+1. Afhankelijk van het type van pijpleiding u wenst te vormen, volg de richtingen aan:
+
+   * Een nieuwe toevoegen [productiepijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) als u de wegen wilt bepalen die door de controle moeten worden geëvalueerd.
+   * Een nieuwe toevoegen [niet-productiepijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) als u wenst om de controle op een front-end of ontwikkelings volledig-stapelpijpleiding toe te laten.
+   * Of u kunt [een bestaande pijpleiding bewerken;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) en werkt de bestaande opties bij.
+
+1. Als u toevoegt of een niet productiepijplijn uitgeeft waarvoor u de Controle van de Ervaring wilt gebruiken, moet u selecteren **Experience Audit** Selectievakje op de **Broncode** tab.
+
+   ![Ervaring controleren inschakelen](assets/experience-audit-enable.jpg)
+
+   * Dit is alleen nodig voor niet-productiepijpleidingen.
+   * De **Experience Audit** wordt weergegeven wanneer het selectievakje is ingeschakeld.
+
+1. Voor zowel productie als niet productie pijpleidingen, bepaalt u de wegen die in de Controle van de Ervaring op moeten worden omvat **Experience Audit** tab.
+
+   * Pagina-paden moeten beginnen met `/` en zijn relatief ten opzichte van uw site.
+   * Als uw site bijvoorbeeld `wknd.site` en zou graag `https://wknd.site/us/en/about-us.html` Voer in de Experience Audit het pad in `/us/en/about-us.html`.
+
+   ![Een pad definiëren voor de Experience Audit](assets/experience-audit-add-page.png)
+
+1. Tik of klik op **Pagina toevoegen** en het pad wordt automatisch ingevuld met het adres van de omgeving en toegevoegd aan de padlijst.
+
+   ![Pad naar tabel opslaan](assets/experience-audit-page-added.png)
+
+1. U kunt paden naar wens toevoegen door de vorige twee stappen te herhalen.
+
+   * U kunt maximaal 25 paden toevoegen.
+   * Als u geen paden definieert, wordt de homepage van de site standaard opgenomen in de Experience Audit.
+
+1. Klikken **Opslaan** om uw pijpleiding te redden.
 
 ## Werken met de resultaten van Experience Audit {#understanding-experience-audit-results}
 
