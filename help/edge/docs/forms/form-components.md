@@ -3,9 +3,9 @@ title: Aangepaste componenten van het Blok van de Vorm en hun eigenschappen
 description: Dit document biedt een overzicht van de formuliercomponenten en hun eigenschappen die beschikbaar zijn in AEM Forms Edge Delivery Service.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,6 @@ Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de w
 | Eigenschap | Toepasselijke onderdelen | Details |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | Type | Alles | Hiermee wordt het type component opgegeven. Deze eigenschap bepaalt het gedrag en de weergave van het invoerveld. Voor tekstinvoer kan het type bijvoorbeeld &#39;text&#39;, &#39;email&#39; voor e-mailinvoer en &#39;password&#39; voor wachtwoordinvoer zijn. Adaptief Forms-blok ondersteunt  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle geldige HTML5-invoertypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a> als type. |
-| Type | Alles | Hiermee wordt het type component opgegeven. Deze eigenschap bepaalt het gedrag en de weergave van het invoerveld. Voor tekstinvoer kan het type bijvoorbeeld &#39;text&#39;, &#39;email&#39; voor e-mailinvoer en &#39;password&#39; voor wachtwoordinvoer zijn. Adaptief Forms-blok ondersteunt  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">alle geldige HTML5-invoertypen</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecteren</a>, en <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">veldset</a> als type. |
 | Naam | Alles | Hiermee wordt de component aangegeven voor het verzenden van formulieren. Het kenmerk name wordt gebruikt wanneer de formuliergegevens naar de server worden verzonden, waarbij de gebruikersinvoer aan een specifiek veld wordt gekoppeld. |
 | Label | Alles | Biedt contextuele informatie aan gebruikers. Het label is de tekst die naast de component wordt weergegeven en geeft gebruikers aanwijzingen over welke informatie moet worden ingevoerd. |
 | Waarde | Tekst, wachtwoord, e-mail, Aantal, Waaier, Datum en zijn varianten (datetime-local, maand, week, tijd), Checkbox, Radio, Verborgen, Verzenden, Knoop | Specifies the initial value of the component. Voor tekstinvoer, tekstgebied en geselecteerde elementen is dit de standaardtekst of -optie die wordt weergegeven. Voor componenten van radio en checkbox, is dit de waarde/de gegevens die worden voorgelegd wanneer zij worden geselecteerd. Het kenmerk value is optioneel, maar moet als verplicht worden beschouwd voor selectievakjes en radio-invoer. |
@@ -61,6 +60,10 @@ Elke formuliercomponent bevat diverse eigenschappen waarmee u het gedrag en de w
 | Opties | Vervolgkeuzelijst | Hiermee geeft u keuzen op voor vervolgkeuzemenu&#39;s. De eigenschap options is een door komma&#39;s gescheiden lijst met opties voor vervolgkeuzemenu&#39;s, waarmee de selecteerbare opties worden gedefinieerd die aan de gebruiker worden weergegeven. |
 | Ingeschakeld | Selectievakje, Radio | Hiermee bepaalt u of het veld standaard is geselecteerd. Het geselecteerde kenmerk is een Booleaanse eigenschap die wordt gebruikt met selectievakje en radio-invoer. Als de waarde true is, wordt hiermee aangegeven dat het veld standaard is geselecteerd wanneer het formulier wordt geladen. |
 | Veldset | Alles | Hiermee groepeert u velden om visueel verschillende secties in een formulier te maken. Met de veldsetelementgroepen worden verwante velden in een formulier gegroepeerd, zodat u ze visueel kunt scheiden om de organisatie en gebruikerservaring te verbeteren. </br> Als u een set velden in een veldset wilt ordenen, gebruikt u de opdracht `fieldset` en geeft het naamkenmerk ervan op. In het onderstaande voorbeeld tonen we aan hoe keuzerondjes worden ingekapseld binnen een enkele veldset voor een betere organisatie. ![Voorbeeld van veldset](/help/edge/assets/fieldset-example.png) |
+| Herhalbaar | Alles | Een Booleaanse eigenschap voor `fieldset` erop wijzen dat een bepaalde veldset kan worden herhaald voor gespecificeerde `Min` en `Max` aantal keren. De `Min` eigenschap moet op 1 of hoger worden ingesteld, stel de eigenschap niet in `Min` eigenschap naar 0. |
+| Zichtbare expressie | Alles | Een zichtbare expressie verwijst naar een spreadsheetformule, aangeduid met de tag &#39;=&#39;, die wordt gebruikt om de zichtbaarheid van een veld te bepalen. In deze formule kan alleen de eigenschap value van andere velden worden gebruikt, zodat de zichtbaarheid van velden binnen het systeem eenvoudig kan worden beheerd. |
+| Waardeuitdrukking | Alles | Een waardexpressie verwijst naar een spreadsheetformule, aangeduid met de tag &#39;=&#39;, die wordt gebruikt om de waarde van een veld te bepalen. In deze formule kan alleen de eigenschap value van andere velden worden gebruikt, zodat de veldwaarde binnen het systeem eenvoudig kan worden beheerd. |
+
 
 ## Zie ook
 
