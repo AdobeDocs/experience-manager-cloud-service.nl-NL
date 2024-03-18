@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
+source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2797'
 ht-degree: 0%
 
 ---
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding nuttig zijn. De CDN-logindeling kan niet worden aangepast en er bestaat geen concept om de indeling in te stellen op verschillende modi, zoals info, warn of error.
 
-De functie Splunk forward ondersteunt nog geen CDN-logbestanden.
+CDN de logboeken zullen aan Splunk voor nieuwe Splunk door:sturen de verzoeken van het steunkaartje worden door:sturen; de klanten die reeds Splunk hebben toegelaten zullen CDN- logboeken in de toekomst kunnen toevoegen.
 
 **Voorbeeld**
 
