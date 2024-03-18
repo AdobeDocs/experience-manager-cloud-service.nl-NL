@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
 workflow-type: tm+mt
-source-wordcount: '3382'
+source-wordcount: '3634'
 ht-degree: 0%
 
 ---
@@ -234,9 +234,9 @@ De acties worden geprioriteerd volgens hun types in de volgende lijst, die wordt
 
 | **Naam** | **Toegestane eigenschappen** | **Betekenis** |
 |---|---|---|
-| **toestaan** | `wafFlags` (optioneel) | als wafFlags niet aanwezig is, houdt verdere regelverwerking tegen en gaat aan het dienen van reactie te werk. Als wafFlags aanwezig is, maakt het gespecificeerde bescherming van WAF onbruikbaar en gaat aan verdere regelverwerking te werk. |
-| **blok** | `status, wafFlags` (facultatief en wederzijds exclusief) | als wafFlags niet aanwezig is, retourneert de HTTP-fout waarbij alle andere eigenschappen worden overgeslagen, wordt de foutcode gedefinieerd door de status-eigenschap of is de standaardwaarde 406. Als wafFlags aanwezig is, laat het gespecificeerde bescherming van WAF toe en gaat aan verdere regelverwerking te werk. |
-| **log** | `wafFlags` (optioneel) | registreert het feit dat de regel werd teweeggebracht, anders beïnvloedt niet de verwerking. wafFlags heeft geen effect |
+| **toestaan** | `wafFlags` (facultatief), `alert` (optioneel, nog niet vrijgegeven) | als wafFlags niet aanwezig is, houdt verdere regelverwerking tegen en gaat aan het dienen van reactie te werk. Als wafFlags aanwezig is, maakt het gespecificeerde bescherming van WAF onbruikbaar en gaat aan verdere regelverwerking te werk. <br>Als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Deze functie wordt nog niet vrijgegeven. Zie de [Waarschuwing verkeersfilterregels](#traffic-filter-rules-alerts) voor meer informatie over de deelname aan het programma voor vroegtijdige adoptie . |
+| **blok** | `status, wafFlags` (facultatief en wederzijds exclusief), `alert` (optioneel, nog niet vrijgegeven) | als wafFlags niet aanwezig is, retourneert de HTTP-fout waarbij alle andere eigenschappen worden overgeslagen, wordt de foutcode gedefinieerd door de status-eigenschap of is de standaardwaarde 406. Als wafFlags aanwezig is, laat het gespecificeerde bescherming van WAF toe en gaat aan verdere regelverwerking te werk. <br>Als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Deze functie wordt nog niet vrijgegeven. Zie de [Waarschuwing verkeersfilterregels](#traffic-filter-rules-alerts) voor meer informatie over de deelname aan het programma voor vroegtijdige adoptie . |
+| **log** | `wafFlags` (facultatief), `alert` (optioneel, nog niet vrijgegeven) | registreert het feit dat de regel werd teweeggebracht, anders beïnvloedt niet de verwerking. wafFlags heeft geen effect. <br>Als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Deze functie wordt nog niet vrijgegeven. Zie de [Waarschuwing verkeersfilterregels](#traffic-filter-rules-alerts) voor meer informatie over de deelname aan het programma voor vroegtijdige adoptie . |
 
 ### Lijst met WAF-markeringen {#waf-flags-list}
 
@@ -465,6 +465,34 @@ data:
         action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
+```
+
+## Waarschuwing verkeersfilterregels {#traffic-filter-rules-alerts}
+
+>[!NOTE]
+>
+>Deze functie wordt nog niet vrijgegeven. Voor toegang via het programma voor vroege adoptie kunt u e-mail **aemcs-waf-adopter@adobe.com**.
+
+Een regel kan worden gevormd om een bericht van het Centrum van Acties te verzenden als het 10 keer binnen een 5 minieme venster wordt teweeggebracht, daardoor alarmerend u wanneer bepaalde verkeerspatronen voorkomen zodat kunt u om het even welke noodzakelijke maatregelen nemen. Meer informatie over [Handelingencentrum](/help/operations/actions-center.md), inclusief hoe u de vereiste meldingsprofielen kunt instellen voor het ontvangen van e-mailberichten.
+
+![Melding van actiecentra](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+
+
+De eigenschap alert (momenteel voorafgegaan door *experimenteel* aangezien de eigenschap nog niet wordt vrijgegeven) kan op de actieknooppunt voor alle actietypes (toestaan, blok, logboek) worden toegepast.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action:
+          type: block
+          experimental_alert: true
 ```
 
 ## CDN-logs {#cdn-logs}
