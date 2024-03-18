@@ -2,9 +2,9 @@
 title: Java&trade; functietests
 description: Leer hoe u Java&trade schrijft; functionele tests voor AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Zorg ervoor dat uw afhankelijkheid binnen `it.tests/pom.xml` is bijgewerkt.
 
 >[!NOTE]
 >
->Deze wijziging is vereist na 6 april 2024.
+>Deze wijziging moet worden uitgevoerd vóór 6 april 2024.
 >Als u er niet in slaagt de afhankelijkheidsbibliotheek bij te werken, treedt er een fout op bij de stap Aangepast functioneel testen.
 
 ### Uitvoering lokale test {#local-test-execution}
