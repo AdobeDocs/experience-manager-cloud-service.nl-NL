@@ -1,23 +1,36 @@
 ---
-title: Adobe ondersteunt lettertypen voor Document of Record en PDF die niet in het vak staan
-description: Adobe ondersteunt lettertypen voor Document of Record en PDF die niet in het vak staan
+title: AEM Forms as a Cloud Service ondersteunt out-of-the-box lettertypen voor het genereren van PDF.
+description: AEM Forms as a Cloud Service ondersteunt lettertypen die niet in de box staan voor Document of Record en PDF.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
+source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
+# Door OOTB ondersteunde lettertypen voor het genereren van PDF op Forms as a Cloud Service  {#ootb-supported-fonts-overview}
 
-# Ondersteunde lettertypen voor interactieve communicatie en Document of Record
+AEM Forms as a Cloud Service biedt verschillende ingebouwde OOTB-ondersteunde lettertypen die naadloos kunnen worden gebruikt binnen [Communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Document met record voor kerncomponenten](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), en [Document met gegevens over stichtingscomponenten](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
-AEM Forms biedt verschillende ingebouwde lettertypen die naadloos kunnen worden gebruikt in Document of Record- en PDF-bestanden.
+<!--
 
-U kunt as a Cloud Service Communicatie van Forms gebruiken om diverse types van dossiers, zoals malplaatjes XDP of PDF, met de gegevens van XML te combineren om PDF documenten te produceren. U kunt de PDF bewerken door PDF- of XDP-bestanden te combineren, opnieuw te rangschikken of samen te voegen. U kunt het Document of Record ook gebruiken om AEM formulieren en inhoud samen te archiveren in de PDF-indeling. Bovendien kunt u ondersteunde lettertypen of aangepaste lettertypen gebruiken om de PDF een specifieke vormgeving te geven.
+AEM Forms as a Cloud Service offers various built-in fonts that can be seamlessly used within a Document of Record and PDF files for any file formats to generate PDF documents. Additionally, you can use supported fonts or custom fonts to give the PDFs a specific look and feel. The OOTB supported fonts are:
 
-## Ondersteunde lettertypen
+AEM Forms offers various OOTB supported fonts that can be seamlessly used within a Document of Recordhttps://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms] and communication APIs[]. The OOTB supported fonts are available for PDF generation in Forms as a Cloud Service for any use cases such as:
+
+* To combine a template (XFA or PDF) with customer data (XML) to generate documents in various formats ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation)).
+
+* To manipulate the PDFs by combining, rearranging, or merging PDF or XDP files ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation)).
+
+* To generate Document of Record to archive AEM forms and content together in PDF format ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)).
+-->
+
+## Door OOTB ondersteunde lettertypen uit de verpakking {#ootb-supported-fonts}
+
+De volgende lettertypen worden door OOTB ondersteund:
 
 * AdobeArabic
 * AdobeFanHeitiStd
@@ -38,4 +51,6 @@ U kunt as a Cloud Service Communicatie van Forms gebruiken om diverse types van 
 * KozGoProVI
 * eurosign.ttf
 
-Als u andere lettertypen wilt opnemen, kunt u naast de vermelde lettertypen ook [Aangepaste lettertypen toevoegen aan uw Forms in de Cloud Service-omgeving](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts.html) met een geldige vergunning.
+
+Naast de bovengenoemde lettertypen kunt u aangepaste lettertypen gebruiken om de PDF een specifieke vormgeving te geven. Als u aangepaste lettertypen wilt inschakelen, [Aangepaste lettertypen toevoegen aan uw as a Cloud Service Forms-omgeving](/help/forms/use-custom-fonts.md) met een geldige vergunning.
+
