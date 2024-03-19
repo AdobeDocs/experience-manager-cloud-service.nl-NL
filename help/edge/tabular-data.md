@@ -2,9 +2,9 @@
 title: Werkbladen gebruiken om tabelgegevens te beheren
 description: Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschillende waarden, zoals metagegevens en omleidingen voor uw AEM naar de site Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 0fa88453a7d7c58a3ccb2a4baf7d2b143acf7ad5
+source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -81,25 +81,9 @@ In dit voorbeeld maakt u een spreadsheet voor het beheren van omleidingen voor u
    * De redacteur voegt nieuwe rijen aan spreadsheet toe zonodig.
    * Als u een rij wilt verwijderen of verplaatsen, gebruikt u de opdracht **Verwijderen** aan het einde van elke rij en de sleepgrepen aan het begin van elke rij.
 
-1. Wanneer u klaar bent met het definiëren van de omleidingen, sluit u de tab en gaat u terug naar de knop **Sites** console.
+## Een spreadsheetpad.json publiceren {#paths-json}
 
-1. Tik of klik om het werkblad voor omleiding te selecteren dat u in de console hebt gemaakt en tik of klik op **Snel publiceren** in de actiebalk om het werkblad te publiceren.
-
-   ![De spreadsheet selecteren in de Sites-console](assets/tabular-data/tabular-data-select-publish.png)
-
-1. In de **Snel publiceren** openen, tikken of klikken **Publiceren**.
-
-   ![Publiceren bevestigen](assets/tabular-data/tabular-data-quick-publish.png)
-
-1. Een banner bevestigt de publicatie.
-
-   ![Bannerbevestiging van publicatie](assets/tabular-data/tabular-data-publish-banner.png)
-
-Het spreadsheet voor omleiding wordt nu gepubliceerd en openbaar gemaakt.
-
-## Paden.json bijwerken {#paths-json}
-
-Als AEM de gegevens in uw spreadsheet wilt kunnen gebruiken, moet u bovendien de `paths.json` bestand van uw project.
+Als AEM de gegevens in uw spreadsheet wilt publiceren, moet u bovendien de `paths.json` bestand van uw project.
 
 1. Open de wortel van uw project in GitHub.
 
@@ -122,7 +106,21 @@ Als AEM de gegevens in uw spreadsheet wilt kunnen gebruiken, moet u bovendien de
 
    * Vastleggen aan `main` of maak een pull-aanvraag volgens uw proces.
 
-Als de `paths.json` worden samengevoegd, zijn de omleidingen live voor uw site.
+1. Wanneer u klaar bent met het definiëren van de omleidingen en u de padtoewijzing hebt bijgewerkt, gaat u terug naar de **Sites** console.
+
+1. Tik of klik om het werkblad voor omleiding te selecteren dat u in de console hebt gemaakt en tik of klik op **Snel publiceren** in de actiebalk om het werkblad te publiceren.
+
+   ![De spreadsheet selecteren in de Sites-console](assets/tabular-data/tabular-data-select-publish.png)
+
+1. In de **Snel publiceren** openen, tikken of klikken **Publiceren**.
+
+   ![Publiceren bevestigen](assets/tabular-data/tabular-data-quick-publish.png)
+
+1. Een banner bevestigt de publicatie.
+
+   ![Bannerbevestiging van publicatie](assets/tabular-data/tabular-data-publish-banner.png)
+
+Het spreadsheet voor omleiding wordt nu gepubliceerd en openbaar gemaakt.
 
 ## Andere spreadsheettypen {#other}
 
@@ -134,6 +132,12 @@ Nu u weet hoe u een spreadsheet voor omleidingen kunt maken, kunt u elk ander st
 * Configuratie
 
 Voer gewoon dezelfde stappen uit in de secties [Werkblad maken](#spreadsheet) en [Paden.json bijwerken](#paths-json) en kiest u de juiste sjabloon en werkt u de `paths.json` bestand naar behoren.
+
+Voor [Configuratie](https://www.aem.live/docs/configuration), [Kopteksten](https://www.aem.live/docs/custom-headers) en [Metagegevens](https://www.aem.live/docs/bulk-metadata) zorg ervoor dat u een toewijzing toevoegt om deze naar de standaardlocaties te publiceren:
+
+* Configuratie: `/.helix/config.json`
+* Kopteksten: `/.helix/headers.json`
+* Metagegevens: `/metadata.json`
 
 Bovendien kunt u [uw eigen spreadsheet maken](#own-spreadsheet) met willekeurige kolommen voor eigen gebruik.
 
