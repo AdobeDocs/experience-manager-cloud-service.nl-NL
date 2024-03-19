@@ -3,10 +3,10 @@ title: CDN in AEM as a Cloud Service
 description: Leer hoe te om AEM-geleide CDN te gebruiken en hoe te om uw eigen CDN aan AEM-beheerde CDN te richten.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 9%
+source-wordcount: '1118'
+ht-degree: 5%
 
 ---
 
@@ -40,6 +40,14 @@ Zie [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/
 >
 >Slechts worden de verzoeken van toegestane IPs gediend door AEM beheerde CDN. Als u uw eigen CDN aan AEM-beheerde CDN richt, dan zorg ervoor IPs van uw CDN in de lijst van gewenste personen inbegrepen is.
 
+### Het vormen van Verkeer bij CDN {#cdn-configuring-cloud}
+
+De regels om verkeer te vormen CDN en de filters kunnen in een configuratiedossier worden verklaard en aan CDN worden opgesteld, door te gebruiken [Configuratie-pijplijn van Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Zie voor meer informatie [Het vormen van Verkeer bij CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) en [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md).
+
+### CDN-foutpagina&#39;s configureren {#cdn-error-pages}
+
+Een CDN foutenpagina kan worden gevormd om de standaard, unbranded pagina met voeten te treden die aan browser in de zeldzame gebeurtenis wordt gediend die AEM niet kan worden bereikt. Zie voor meer informatie [CDN-foutpagina&#39;s configureren](/help/implementing/dispatcher/cdn-error-pages.md).
+
 ## CDN van de klant wijst aan AEM beheerde CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
@@ -57,7 +65,7 @@ Als een klant zijn bestaande CDN moet gebruiken, kunnen zij het leiden en het ri
 
 Configuratieinstructies:
 
-1. Wijs de CDN toe aan de ingangen van de Adobe CDN als zijn oorsprongdomein. Bijvoorbeeld, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Wijs de CDN toe aan de ingangen van de Adobe CDN als zijn oorsprongdomein. Bijvoorbeeld: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Stel SNI in op de invoer van de Adobe CDN.
 1. Stel de Hostkop in op het oorspronkelijke domein. Bijvoorbeeld: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Stel de `X-Forwarded-Host` header met de domeinnaam zodat AEM de hostheader kan bepalen. Bijvoorbeeld: `X-Forwarded-Host:example.com`.
