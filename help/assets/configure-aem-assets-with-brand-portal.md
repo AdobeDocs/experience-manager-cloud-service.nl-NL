@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
+source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2424'
 ht-degree: 8%
 
 ---
@@ -295,7 +295,7 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
    >[!NOTE]
    >
    >* U kunt de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, terugwinnen cliëntgeheim, etc.
-   >* Momenteel wordt alleen het JWT-verificatietype (Developer Console Service Account) van de Adobe ondersteund. Gebruik het OAuth Server-aan-Server credentiële type niet tot het in medio-April wordt gesteund. Lees meer op [JWT Credentials Deprection in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >* Momenteel wordt alleen het JWT-verificatietype (Developer Console Service Account) van de Adobe ondersteund. Gebruik de `OAuth Server-to-Server` referentietype tot dit medio april wordt ondersteund. Lees meer op [JWT Credentials Deprection in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. Van de **[!UICONTROL Client Credentials]** -tabblad, kopieert u de **[!UICONTROL client ID]**.
 
