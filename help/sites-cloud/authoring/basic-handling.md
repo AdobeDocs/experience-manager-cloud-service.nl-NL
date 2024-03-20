@@ -2,9 +2,9 @@
 title: Basisverwerking
 description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Voor een goed inzicht in het basisgebruik van AEM is dit document gebaseerd op d
 
 Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Neem een minuut om door te selecteren om een goed overzicht van de basisbehandeling van AEM te krijgen.
 
-![Navigatiezelfstudie](assets/tutorial.png)
+![Navigatiezelfstudie](assets/basic-handling-tutorial.png)
 
 Selecteren **Volgende** om naar de volgende pagina van het overzicht te gaan. Selecteren **Sluiten** of selecteer buiten het overzichtsdialoogvenster om te sluiten.
 
@@ -48,7 +48,7 @@ U kunt tussen de consoles navigeren met het algemene navigatievenster. Dit wordt
 
 U kunt het globale navigatievenster sluiten door te klikken of te tikken **Sluiten** om terug te keren naar uw vorige locatie.
 
-![Bovenste balk van het navigatievenster](assets/basic-handling-navigation-bar.png)
+![Bovenste balk van het navigatievenster](assets/basic-handling-navigation-options.png)
 
 Globale navigatie heeft twee deelvensters, weergegeven door pictogrammen aan de linkermarge van het scherm:
 
@@ -86,31 +86,37 @@ In de **Gereedschappen** paneel heeft een zijpaneel dat een waaier van categorie
 
 De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de koptekst ongewijzigd blijven, ongeacht waar u zich in het systeem bevindt, zijn sommige contextspecifiek.
 
-![Navigatiekop](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![Navigatiekop](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [Algemene navigatie](#global-navigation) - Selecteer de **Adobe Experience Manager** koppeling om tussen consoles te navigeren.
 
-  ![Algemene navigatie](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Algemene navigatie](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [Zoeken](/help/sites-cloud/authoring/search.md) - U kunt ook de [sneltoets](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (forward slash) om het zoeken vanuit elke console aan te roepen.
+* Feedback
 
-  ![Zoekpictogram](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Knop Feedback](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* Uw IMS-organisatie - selecteer indien nodig om deze te wijzigen.
 
 * [Oplossingen](https://www.adobe.com/experience-cloud.html) - Selecteer deze optie om toegang te krijgen tot uw andere Adobe-oplossingen.
 
-  ![Oplossingen, knop](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Oplossingen, knop](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [Zoeken](/help/sites-cloud/authoring/search.md) - U kunt ook de [sneltoets](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (forward slash) om het zoeken vanuit elke console aan te roepen.
+
+  ![Zoekpictogram](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [Help](#accessing-help)
 
-  ![Help, knop](/help/sites-cloud/authoring/assets/help.png)
+  ![Help, knop](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [Meldingen](/help/sites-cloud/authoring/inbox.md) - Dit pictogram is gemarkeerd met het aantal momenteel toegewezen onvolledige meldingen.
 
-  ![Knop Meldingen](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Knop Meldingen](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [Gebruikerseigenschappen](/help/sites-cloud/authoring/account-environment.md) - Selecteer deze optie om uw gebruikersinstellingen te wijzigen.
 
-  ![Gebruikerseigenschappen, knop](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Gebruikerseigenschappen, knop](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## Toegang tot Help {#accessing-help}
 
