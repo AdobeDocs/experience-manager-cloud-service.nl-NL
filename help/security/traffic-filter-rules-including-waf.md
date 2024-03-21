@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
+source-git-commit: 9f23b91df3139115ca442de03457bb50a1e1cb71
 workflow-type: tm+mt
-source-wordcount: '3634'
+source-wordcount: '3669'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Een subcategorie van de regels van het verkeersfilter vereist of een vergunning 
 De filterregels van het verkeer kunnen via de configuratiepijpleidingen van de Manager van de Wolk worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Steun voor RDEs zal in de toekomst komen.
 
 [Een zelfstudie doorlopen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) snel concrete expertise op dit gebied op te bouwen.
+
+>[!NOTE]
+>Geïnteresseerd in andere opties om verkeer bij CDN te vormen, met inbegrip van het wijzigen van het verzoek/de reactie, het verklaren van omleiding, en het proxying aan een niet-AEM oorsprong? [Meer informatie en probeer het uit](/help/implementing/dispatcher/cdn-configuring-traffic.md) door zich aan te sluiten bij het programma voor vroegtijdige adoptie .
+
 
 ## Hoe dit artikel is georganiseerd {#how-organized}
 

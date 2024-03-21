@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5f780f5e8fa9289b35eefbbd4c3a71d37a7f465a
+source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -111,7 +111,7 @@ Dynatrace-klanten kunnen hun AEM controleren. [Lees hoe](/help/implementing/clou
 
 ### Programma voor vroege adopter van CDN-configuratie {#cdn-config-early-adopter}
 
-Naast de onlangs vrijgelaten [Regels voor verkeersfilters](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvat, is er een kans om de Pijpleiding van de Configuratie te gebruiken om andere types van configuratie te verklaren en op te stellen CDN. Deelnemen aan het programma voor vroege adoptie via e-mail **aemcs-cdn-config-adopter@adobe.com** toegang krijgen tot:
+Naast de onlangs vrijgelaten [Regels voor verkeersfilters](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvat, is er een kans om de Pijpleiding van de Configuratie te gebruiken om te verklaren en op te stellen [andere typen CDN-configuratie](/help/implementing/dispatcher/cdn-configuring-traffic.md). Deelnemen aan het programma voor vroege adoptie via e-mail **aemcs-cdn-config-adopter@adobe.com** toegang krijgen tot:
 * 301/302 omleidingen op de client
 * verzoeken aan de rand van willekeurige oorsprong proxying
 * URL-transformaties
