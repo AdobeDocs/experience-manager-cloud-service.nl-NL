@@ -2,9 +2,9 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 1da8d9395df3dd2efee7f6a57197aa3f2b27b1a4
+source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2146'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,7 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 | [!DNL Assets] | MPEG-transcodering van video&#39;s. | Gebruik voor het genereren van miniaturen in MPEG [Middelenmicroservices](/help/assets/asset-microservices-overview.md). Gebruik voor MPEG-transcodering [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | De replicatie UI van de boom onder het &quot;Distribute&quot;lusje van de replicatieagent (verwijdering na 30 September, 2021) | [Publicatie beheren](/help/operations/replication.md#manage-publication) of [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) benaderingen |
 | [!DNL Foundation] | U kunt inhoudspakketten niet repliceren via het tabblad Distribute van het scherm van de replicatieagent en de Replicatie-API. In plaats daarvan kunt u beide [Publicatie beheren](/help/operations/replication.md#manage-publication) of [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Integraties die gebruikmaken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning van JWT-referenties (Service Account). De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet in de Console van Adobe Developer op of na 1 Mei 2024 worden gecreeerd, hoewel de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) nog voor reeds-gevormde integraties kunnen worden gebruikt tot 1 Januari, 2025, toen de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) niet meer zullen werken, en de klanten aan geloofsbrieven moeten migreren naar Server-aan Server-aan-aan-server. [Meer informatie](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migreren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) naar OAuth Server-to-Server referenties. |
 
 ## Verwijderde functies {#removed-features}
 
