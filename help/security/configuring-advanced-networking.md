@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a284c0139b45e618749866385cdcc81d1ceb61e7
+source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
 workflow-type: tm+mt
-source-wordcount: '5145'
+source-wordcount: '5142'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Bij het configureren van geavanceerde netwerkfuncties gelden de volgende beperki
 Het gebruik van geavanceerde netwerkfuncties vereist twee stappen:
 
 1. Configuratie van de geavanceerde netwerkoptie, of [flexibele uitgang van de haven,](#flexible-port-egress) [specifiek IP-adres van uitgang,](#dedicated-egress-ip-address) of [VPN](#vpn) moeten eerst op het niveau van het programma worden uitgevoerd.
-1. Om te worden gebruikt, moet de geavanceerde voorzien van een netwerkoptie dan op het milieuniveau worden toegelaten.
+1. Voor gebruik moet de geavanceerde netwerkoptie dan [ingeschakeld op milieuniveau.](#enabling)
 
 Beide stappen kunnen worden uitgevoerd met de interface van Cloud Manager of de API voor Cloud Manager.
 
@@ -212,7 +212,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## IP-adres van speciale egress {#dedicated-egress-ip-address}
 
-Een specifiek IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM as a Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van AEM Cloud Service van de klant wordt toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
+Een specifiek IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM as a Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van uw AEM Cloud Service wordt toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
 
 Het zelfde specifieke IP wordt toegepast op alle programma&#39;s in uw organisatie van de Adobe en voor alle milieu&#39;s in elk van uw programma&#39;s. Deze is van toepassing op zowel auteur- als publicatieservices.
 
@@ -425,7 +425,7 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
 1. In de **Netwerkinfrastructuur toevoegen** wizard die begint, selecteert u **Virtueel privé netwerk** en verstrekken de noodzakelijke informatie alvorens te tikken of te klikken **Doorgaan**.
 
    * **Regio** - Dit is de regio waarin infrastructuur moet worden gecreëerd.
-   * **Adresruimte** - De adresruimte kan slechts één /26 CIDR (64 IP adressen) of grotere IP waaier in de klantenruimte zijn.
+   * **Adresruimte** - De adresruimte kan slechts één /26 CIDR (64 IP adressen) of grotere IP waaier in uw eigen ruimte zijn.
       * Deze waarde kan later niet worden gewijzigd.
    * **DNS-informatie** - Dit is een lijst met externe DNS-oplossers.
       * Druk `Enter` na het invoeren van een DNS serveradres om een ander toe te voegen.
@@ -462,7 +462,7 @@ Er wordt een nieuwe record weergegeven onder de **Netwerkinfrastructuur** in het
 
 ### API-configuratie {#configuring-vpn-api}
 
-Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` het eindpunt wordt aangehaald, die in een lading van configuratieinformatie overgaan met inbegrip van: de waarde van **vpn** voor de `kind` parameter, gebied, adresruimte (lijst van CIDRs - merk op dat dit niet later kan worden gewijzigd), DNS oplossers (voor het oplossen van namen in het netwerk van de klant), en de verbindingsinformatie van VPN zoals gatewayconfiguratie, gedeelde sleutel van VPN, en het IP Veiligheidsbeleid. Het eindpunt reageert met het `network_id`en andere informatie, waaronder de status.
+Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` het eindpunt wordt aangehaald, die in een lading van configuratieinformatie overgaan met inbegrip van: de waarde van **vpn** voor de `kind` parameter, gebied, adresruimte (lijst van CIDRs - merk op dat dit niet later kan worden gewijzigd), DNS oplossers (voor het oplossen van namen in uw netwerk), en de verbindingsinformatie van VPN zoals gatewayconfiguratie, gedeelde sleutel van VPN, en het IP Veiligheidsbeleid. Het eindpunt reageert met het `network_id`en andere informatie, waaronder de status.
 
 Zodra geroepen, zal het typisch tussen 45 en 60 minuten voor de voorzien van een netwerkinfrastructuur duren. De methode van de GET van de API kan worden geroepen om de huidige status terug te keren, die uiteindelijk zal draaien van `creating` tot `ready`. Raadpleeg de API-documentatie voor alle staten.
 
@@ -582,12 +582,12 @@ Het hieronder diagram verstrekt een visuele vertegenwoordiging van een reeks dom
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>NVT</td>
-    <td>IP van de gateway van VPN op de AEM kant. Het team van de het netwerktechniek van een klant kan dit gebruiken om slechts de verbindingen van VPN aan hun gateway van VPN van een specifiek IP adres toe te staan. </td>
+    <td>IP van de gateway van VPN op de AEM kant. Uw team van de netwerktechniek kan dit gebruiken om slechts de verbindingen van VPN aan uw gateway van VPN van een specifiek IP adres toe te staan. </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>IP van verkeer dat van de AEM kant van VPN aan de klantenkant komt. Dit kan in de configuratie van de klant worden gevoegd op lijst van gewenste personen om ervoor te zorgen dat de verbindingen slechts van AEM kunnen worden gemaakt.</td>
-    <td>Als de klant de toegang van VPN tot AEM wil toestaan, zouden zij DNS CNAME ingangen moeten vormen om hun douanedomein en/of in kaart te brengen <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en/of <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en dit.</td>
+    <td>IP van verkeer dat van de AEM kant van VPN aan uw kant komt. Dit kan in uw configuratie worden gevoegd op lijst van gewenste personen om ervoor te zorgen dat de verbindingen slechts van AEM kunnen worden gemaakt.</td>
+    <td>Als u de toegang van VPN tot AEM wilt toestaan, zou u DNS van CNAME ingangen moeten vormen om uw douanedomein en/of in kaart te brengen <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en/of <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en dit.</td>
   </tr>
 </tbody>
 </table>
@@ -614,9 +614,9 @@ Zodra u een geavanceerde voorzien van een netwerkoptie voor een programma hebt g
 Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu toelaat, hebt u de capaciteit om facultatieve haven toe te laten door:sturen en niet volmachtsgastheren. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
 
 * **Poorten doorsturen** - Poorten die regels door:sturen zouden voor om het even welke bestemmingshavens buiten 80/443 moeten worden verklaard, maar slechts als het gebruiken van HTTP of HTTPS protocol niet.
-   * De haven die regels door:sturen wordt bepaald door de reeks bestemmingsgastheren (namen of IP, en havens) te specificeren.
+   * De haven die regels door:sturen wordt bepaald door de reeks bestemmingsgastheren (namen of IP en havens) te specificeren.
    * De cliëntverbinding die haven 80/443 over http/https gebruikt moet volmachtsmontages in hun verbinding nog gebruiken om de eigenschappen van geavanceerd voorzien van een netwerk toe te passen op de verbinding.
-   * Voor elke bestemmingsgastheer, moeten de klanten de voorgenomen bestemmingshaven aan een haven van 30000 door 30999 in kaart brengen.
+   * Voor elke bestemmingsgastheer, moet u de voorgenomen bestemmingshaven aan een haven van 30000 door 30999 in kaart brengen.
    * De haven die regels door:sturen is beschikbaar voor alle geavanceerde voorzien van een netwerktypes.
 
 * **Geen proxyhosts** - De niet volmachtsgastheren laten u een reeks gastheren verklaren die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten leiden.
@@ -648,7 +648,7 @@ Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu 
 
    ![Niet-proxyhosts toevoegen](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. Op de **Poort vooruit** tabblad, kunt u optioneel regels definiëren voor het doorsturen van poorten voor elke doelpoort anders dan 80/443 als u geen HTTP of HTTPS gebruikt. Geef een **Naam**, **Poortgericht**, en **Port Dest** tikken of klikken **Toevoegen**.
+1. Op de **Poort vooruit** kunt u optioneel regels definiëren voor het doorsturen van poorten voor andere doelpoorten dan 80/443 als u geen HTTP of HTTPS gebruikt. Geef een **Naam**, **Poortgericht**, en **Port Dest** tikken of klikken **Toevoegen**.
 
    * De regel wordt toegevoegd aan de lijst met regels op het tabblad.
    * Herhaal deze stap om meerdere regels toe te voegen.
