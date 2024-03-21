@@ -3,7 +3,7 @@ title: Caching in AEM as a Cloud Service
 description: Meer informatie over de basisbeginselen van Caching in AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: d6e522cc18441a642e3434b6e5eff893d8f69952
+source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 0%
@@ -278,7 +278,7 @@ Over het algemeen is het niet nodig om de Dispatcher-cache ongeldig te maken. In
 Net als bij eerdere versies van AEM worden bij het publiceren of verwijderen van pagina&#39;s de inhoud uit de Dispatcher-cache gewist. Als een cacheprobleem wordt vermoed, moet u de pagina&#39;s in kwestie opnieuw publiceren en ervoor zorgen dat er een virtuele host beschikbaar is die overeenkomt met de `ServerAlias` localhost, wat vereist is voor de ongeldigverklaring van de Dispatcher-cache.
 
 >[!NOTE]
->Voor een correcte validatie van de uitzender moet u ervoor zorgen dat aanvragen van &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;\*.adobeaemcloud.com&quot; en &quot;\*.adobeaemcloud.net&quot; allemaal overeenkomen en worden afgehandeld door een hostconfiguratie zodat de aanvraag kan worden uitgevoerd. U kunt deze taak doen door globale aanpassing &quot;*&quot; in een catch-all vhost configuratie volgens het patroon in de verwijzing [AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). U kunt er ook voor zorgen dat de eerder vermelde lijst wordt afgevangen door een van de hosts.
+>Voor een correcte validatie van de uitzender moet u ervoor zorgen dat aanvragen van &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; en &quot;\*.adobeaemcloud.net&quot; allemaal overeenkomen en worden afgehandeld door een hostconfiguratie zodat de aanvraag kan worden uitgevoerd. U kunt deze taak doen door globale aanpassing &quot;*&quot; in een catch-all vhost configuratie volgens het patroon in de verwijzing [AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). U kunt er ook voor zorgen dat de eerder vermelde lijst wordt afgevangen door een van de hosts.
 
 Wanneer de publicatieinstantie een nieuwe versie van een pagina of element van de auteur ontvangt, gebruikt deze de agent flush om de juiste paden op de Dispatcher ongeldig te maken. Het bijgewerkte pad wordt samen met de bovenliggende elementen uit de Dispatcher-cache verwijderd tot een niveau (u kunt dit niveau configureren met de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
