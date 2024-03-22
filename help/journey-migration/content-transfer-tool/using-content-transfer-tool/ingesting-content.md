@@ -2,9 +2,9 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
+source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2752'
 ht-degree: 1%
 
 ---
@@ -211,6 +211,14 @@ Zie de `Node property value in MongoDB` notitie in [Voorwaarden voor het gereeds
 >abstract="De extractie waarop de inname wachtte, is niet succesvol afgerond. De opname is geannuleerd omdat deze niet kon worden uitgevoerd."
 
 Een opname die met een lopende extractie werd gecreeerd aangezien zijn bronmigratie wordt geplaatst wacht geduldig tot die extractie slaagt, en op dat punt begint normaal. Als de extractie mislukt of wordt gestopt, beginnen de opname en de indexeertaak niet, maar worden deze geannuleerd. In dit geval controleert u de extractie om te bepalen waarom dit is mislukt, verhelpt u het probleem en begint u opnieuw te extraheren. Als de vaste extractie eenmaal is uitgevoerd, kan een nieuwe opname worden gepland.
+
+### Verwijderd element niet aanwezig na herhaalde opname
+
+Over het algemeen wordt het niet aanbevolen om de gegevens van de cloudomgeving tussen innames te wijzigen.
+
+Wanneer een element wordt verwijderd uit de bestemming Cloud Service met behulp van de interface voor middelenaanraking, worden de knooppuntgegevens verwijderd, maar wordt het elementblok met de afbeelding niet onmiddellijk verwijderd. Het is duidelijk voor schrapping zodat het niet meer in UI verschijnt; nochtans, blijft het in de datastore tot de huisvuilinzameling voorkomt en de blob wordt verwijderd.
+
+In het scenario waarin een eerder gemigreerd element wordt verwijderd en de volgende opname wordt uitgevoerd voordat de opschoonfunctie het element heeft verwijderd, wordt het verwijderde element niet hersteld wanneer dezelfde migratieset wordt gebruikt. Wanneer de opname de wolkenomgeving voor het middel controleert, zijn er geen knoopgegevens; daarom zal de opname de knoopgegevens aan het wolkenmilieu kopiëren. Als het echter de blob store controleert, ziet het dat de blob aanwezig is en wordt het kopiëren van de blob overgeslagen. Daarom zijn de metagegevens aanwezig na invoer wanneer u het element vanuit de aanraakinterface bekijkt, maar de afbeelding niet. Houd er rekening mee dat migratiesets en inname van inhoud niet zijn ontworpen om deze kwestie af te handelen. Ze zijn bedoeld om nieuwe inhoud toe te voegen aan de cloud-omgeving en eerder gemigreerde inhoud niet te herstellen.
 
 ## Volgende functies {#whats-next}
 
