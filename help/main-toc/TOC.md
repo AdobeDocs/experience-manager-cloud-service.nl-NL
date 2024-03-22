@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2c3be4b60396c5cf57c327fd5b858a3af65397f2
+source-git-commit: 96ec736b5774fc48d006264b316e390bf022c0e9
 workflow-type: tm+mt
-source-wordcount: '4829'
+source-wordcount: '4828'
 ht-degree: 3%
 
 ---
@@ -572,7 +572,7 @@ ht-degree: 3%
       + [Bijwerken [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integratie met Adobe Express {#integration-adobe-express}
-      + [AEM Assets-invoegtoepassing voor Adobe Express](/help/assets/addon-adobe-express.md)
+      + [Native integratie met Adobe Express](/help/assets/native-integration-adobe-express.md)
 
    + Integratie met Creative Cloud {#integration-creative-cloud}
       + [AEM Assets verbinden met Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2023.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
-source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
+source-git-commit: b323fbe3a09de220c61c9b409d8754e43fe0a8d3
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Bekijk de video Overzicht van de release van oktober 2023 voor een overzicht van
 
 ### Nieuwe functies {#assets-features}
 
-**AEM Assets-invoegtoepassing voor Adobe Express**: Experience Manager Assets biedt nu een [add-on voor Adobe Express](/help/assets/addon-adobe-express.md). Met de invoegtoepassing hebt u rechtstreeks vanuit de gebruikersinterface van de Adobe Express toegang tot de elementen die in Experience Manager Assets zijn opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, op het Express-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in een AEM Assets-opslagplaats. De invoegtoepassing biedt de volgende belangrijke voordelen:
+**AEM Assets-invoegtoepassing voor Adobe Express**: Experience Manager Assets biedt nu een invoegtoepassing voor Adobe Express. Met de invoegtoepassing hebt u rechtstreeks vanuit de gebruikersinterface van de Adobe Express toegang tot de elementen die in Experience Manager Assets zijn opgeslagen. U kunt inhoud die in AEM Assets wordt beheerd, op het Express-canvas plaatsen en vervolgens nieuwe of bewerkte inhoud opslaan in een AEM Assets-opslagplaats. De invoegtoepassing biedt de volgende belangrijke voordelen:
 
 * Groter hergebruik van inhoud door nieuwe elementen te bewerken en op te slaan in AEM
 
