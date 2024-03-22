@@ -2,9 +2,9 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
+source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2534'
 ht-degree: 1%
 
 ---
@@ -155,6 +155,12 @@ Als &quot;AEM de Updates van de Versie&quot;actief is (namelijk de updates lopen
 
 ### Bijkomende congestiefout als gevolg van Uniqueness Constraint {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_uuid"
+>title="Ongelijkheidsbeperking schending"
+>abstract="Een gemeenschappelijke oorzaak van een niet-sluitingsmislukking is een conflict in knoop ids. Er kan slechts een van de conflicterende knooppunten bestaan."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Bovenste inname"
+
 Een gemeenschappelijke oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) error is een conflict in knoop ids. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] met waarde a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
@@ -169,6 +175,12 @@ Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud,
 
 ### Opsommingsfout vanwege niet-verwijderen knooppunt waarnaar wordt verwezen {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
+>title="Kan knooppunt waarnaar wordt verwezen niet verwijderen"
+>abstract="Een gemeenschappelijke oorzaak van een niet-veeggebaren ingangsmislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. De versies van het knooppunt moeten worden hersteld."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Bovenste inname"
+
 Een andere veelvoorkomende oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) de mislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e 976a8
@@ -181,11 +193,22 @@ De beste praktijken wijzen erop dat als **Niet-sluitereffect** opname moet worde
 
 ### Ingestiefout vanwege waarden voor eigenschappen van grote knooppunten {#ingestion-failure-due-to-large-node-property-values}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_bson"
+>title="Eigenschap voor grote knooppunten"
+>abstract="Een veelvoorkomende oorzaak van een mislukte opname is dat de maximale grootte van eigenschapswaarden voor knooppunten wordt overschreden. Volg de documentatie, met inbegrip van de documentatie met betrekking tot het BPA-verslag, om deze situatie te verhelpen."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Migratievereisten"
+
 Eigenschapwaarden voor knooppunten die zijn opgeslagen in MongoDB, mogen niet groter zijn dan 16 MB. Als een nodewaarde de gesteunde grootte overschrijdt, ontbreekt het opnemen en het logboek zal een bevatten `BSONObjectTooLarge` fout en geef op welk knooppunt het maximum heeft overschreden. Dit is een MongoDB-beperking.
 
 Zie de `Node property value in MongoDB` notitie in [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) voor meer informatie en een koppeling naar een gereedschap voor eikenhout waarmee u alle grote knooppunten kunt vinden. Als alle knooppunten met grote afmetingen zijn verholpen, voert u de extractie en inname opnieuw uit.
 
 ### Ingestie gestopt {#ingestion-rescinded}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_rescinded"
+>title="Ingestie gestopt"
+>abstract="De extractie waarop de inname wachtte, is niet succesvol afgerond. De opname is geannuleerd omdat deze niet kon worden uitgevoerd."
 
 Een opname die met een lopende extractie werd gecreeerd aangezien zijn bronmigratie wordt geplaatst wacht geduldig tot die extractie slaagt, en op dat punt begint normaal. Als de extractie mislukt of wordt gestopt, beginnen de opname en de indexeertaak niet, maar worden deze geannuleerd. In dit geval controleert u de extractie om te bepalen waarom dit is mislukt, verhelpt u het probleem en begint u opnieuw te extraheren. Als de vaste extractie eenmaal is uitgevoerd, kan een nieuwe opname worden gepland.
 
