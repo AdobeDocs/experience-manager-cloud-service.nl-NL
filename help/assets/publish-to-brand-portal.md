@@ -1,18 +1,18 @@
 ---
 title: Assets, mappen en verzamelingen naar Brand Portal publiceren
 description: Publiceer assets, mappen en verzamelingen naar Brand Portal.
-contentOwner: Vishabh Gupta
+contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
+source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 86%
+source-wordcount: '1147'
+ht-degree: 80%
 
 ---
 
-# Assets publiceren naar Brand Portal {#publish-assets-to-brand-portal}
+# Elementen publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -25,7 +25,7 @@ U moet echter eerst AEM Assets configureren met Brand Portal. Zie [AEM Assets co
 
 Als u volgende wijzigingen aanbrengt in de oorspronkelijke asset, map of verzameling in AEM Assets, worden de wijzigingen pas doorgevoerd in Brand Portal als u opnieuw publiceert vanaf AEM Assets. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
 
-* [Assets publiceren naar Brand Portal](#publish-assets-to-bp)
+* [Elementen publiceren naar Brand Portal](#publish-assets-to-bp)
 * [Mappen publiceren naar Brand Portal](#publish-folders-to-brand-portal)
 * [Verzamelingen publiceren naar Brand Portal](#publish-collections-to-brand-portal)
 
@@ -35,7 +35,7 @@ Als u volgende wijzigingen aanbrengt in de oorspronkelijke asset, map of verzame
 >De activa moeten in partijen worden gepubliceerd. De aanbeveling voor de partijgrootte is 15K.
 > Voor [!DNL Experience Manager Assets] als [!DNL Cloud Service], is het overdrachtstarief onder laboratoriumvoorwaarde wordt waargenomen 1000 activa per uur die. De snelheid wordt waargenomen met een gemiddelde grootte van 10 MB activa.
 
-## Assets publiceren naar Brand Portal {#publish-assets-to-bp}
+## Elementen publiceren naar Brand Portal {#publish-assets-to-bp}
 
 Hier volgen de stappen voor het publiceren van assets van AEM Assets naar Brand Portal:
 
@@ -47,7 +47,7 @@ Hier volgen de stappen voor het publiceren van assets van AEM Assets naar Brand 
    * [Nu publiceren](#publish-to-bp-now) (assets onmiddellijk publiceren)
    * [Later publiceren](#publish-to-bp-later) (het publiceren van assets plannen)
 
-### Assets nu publiceren {#publish-to-bp-now}
+### Elementen nu publiceren {#publish-to-bp-now}
 
 Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand Portal te publiceren:
 
@@ -65,7 +65,7 @@ Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand P
 
 Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij zijn geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde assets te bekijken.
 
-### Assets later publiceren {#publish-to-bp-later}
+### Elementen later publiceren {#publish-to-bp-later}
 
 Voer de volgende handelingen uit om het publiceren van de assets naar Brand Portal op een latere datum of tijd te plannen:
 
@@ -75,7 +75,9 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 
    Selecteer **[!UICONTROL Later]** vanuit **[!UICONTROL Scheduling]**.
 
-   ![publishlaterbp-1](assets/publishlaterbp-1.png)
+   <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
+
+   ![later publiceren](assets/publish-later.png)
 
 1. Selecteer een **[!UICONTROL Activation date]** en geef de tijd op. Klik op **[!UICONTROL Next]**.
 
@@ -83,22 +85,20 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 
 1. Geef een **[!UICONTROL Workflow title]** op in **[!UICONTROL Workflows]**. Klik op **[!UICONTROL Publish Later]**.
 
-   ![publishworkflow](assets/publishworkflow.png)
+   <!--![publishworkflow](assets/publishworkflow.png)-->
 
-Meld u aan bij de Brand Portal-interface om de gepubliceerde assets te bekijken (afhankelijk van uw geplande datum of tijd).
-
-![bp_landingpage](assets/bp_landingpage.png)
+   ![publicatieworkflow](assets/publish-workflow.png)
 
 >[!NOTE]
 >
 > * Het bestaande gebruikersonderdeel van de groep DAM-Users heeft leestoegang op het pad &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
->* De nieuwe gebruikers (of gebruikers die geen beheerder zijn) hebben de volgende rechten nodig om op het merkportaal te publiceren.
+> * De nieuwe gebruikers (of gebruikers die geen beheerder zijn) hebben de volgende rechten nodig om op het merkportaal te publiceren.
 > Paden:
-> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
->/libs : jcr:read
->/conf : jcr:read
->/content: jcr:read, crx:replicate
->/content/dam/ : jcr:read,modify, crx:replicate
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 
@@ -131,8 +131,7 @@ U kunt mappen met assets direct publiceren of verwijderen of op een latere datum
    Er verschijnt een bericht waarin wordt aangegeven dat de map in de wachtrij is geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde map te bekijken.
 
 1. **Mappen later publiceren**
-
-   U kunt als volgt het publiceren van de mappen met assets op een latere datum of tijd plannen:
+U kunt als volgt de mappen met elementen op een latere datum of tijd publiceren:
 
    1. Selecteer de mappen die u wilt plannen voor publicatie en selecteer **[!UICONTROL Manage Publication]** in de werkbalk bovenaan.
    1. Selecteer vanaf **[!UICONTROL Action]** de optie **[!UICONTROL Publish to Brand Portal]**.
@@ -141,15 +140,31 @@ U kunt mappen met assets direct publiceren of verwijderen of op een latere datum
 
    1. Selecteer een **[!UICONTROL Activation date]** en geef de tijd op. Klik op **[!UICONTROL Next]**.
 
-      ![publishlaterbp](assets/publishlaterbp.png)
+      <!--![publishlaterbp](assets/publishlaterbp.png)-->
+
+   ![map Later publiceren](assets/publish-later-folder.png)
 
    1. Bevestig uw selectie in **[!UICONTROL Scope]**. Klik op **[!UICONTROL Next]**.
 
    1. Geef een titel voor de workflow op onder **[!UICONTROL Workflows]**. Klik op **[!UICONTROL Publish Later]**.
 
-      ![manageschedulepub](assets/manageschedulepub.png)
+      <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
-### De publicatie van mappen op Brand Portal ongedaan maken {#unpublish-folders-from-brand-portal}
+   ![publicatieworkflow](assets/publish-workflow.png)
+
+### Gepubliceerd bestand of map weergeven op Brand Portal {#view-published-file-folder}
+
+1. Meld u aan bij de Brand Portal-interface om de gepubliceerde assets te bekijken (afhankelijk van uw geplande datum of tijd).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. Overschakelen naar lijstweergave ![Lijstweergave](assets/list-view.svg) om de huidige publicatiestatus van het element te zien.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![gegenereerde rapportstatus](assets/report-status.JPG)
+
+### Mappen uit Brand Portal verwijderen {#unpublish-folders-from-brand-portal}
 
 U kunt elke map met assets die op Brand Portal is gepubliceerd, verwijderen door de publicatie ongedaan te maken van de AEM Assets-instantie. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor Brand Portal-gebruikers.
 
@@ -227,7 +242,7 @@ Hier volgen de stappen voor het publiceren van verzamelingen van AEM Assets naar
 
    ![published collection](assets/published_collection.png)
 
-### De publicatie van verzamelingen ongedaan maken {#unpublish-collections}
+### Publicatie van verzamelingen ongedaan maken {#unpublish-collections}
 
 U kunt elke verzameling die op Brand Portal is gepubliceerd, verwijderen door de publicatie ervan ongedaan te maken vanaf uw AEM Assets-instantie. Nadat u de publicatie van de oorspronkelijke verzameling ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor Brand Portal-gebruikers.
 
@@ -265,14 +280,14 @@ Raadpleeg de [Brand Portal-documentatie](https://experienceleague.adobe.com/docs
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
