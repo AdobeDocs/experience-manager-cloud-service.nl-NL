@@ -2,7 +2,7 @@
 title: Ontwikkeling van lokale AEM met de Universal Editor
 description: Leer hoe de Universele Redacteur het uitgeven op lokale AEM instanties voor ontwikkelingsdoeleinden steunt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -13,8 +13,6 @@ ht-degree: 0%
 # Ontwikkeling van lokale AEM met de Universal Editor {#local-dev-ue}
 
 Leer hoe de Universele Redacteur het uitgeven op lokale AEM instanties voor ontwikkelingsdoeleinden steunt.
-
-{{universal-editor-status}}
 
 ## Overzicht {#overview}
 

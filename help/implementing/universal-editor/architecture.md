@@ -2,7 +2,7 @@
 title: Architectuur van Universal Editor
 description: Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -13,8 +13,6 @@ ht-degree: 0%
 # Architectuur van Universal Editor {#architecture}
 
 Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
-
-{{universal-editor-status}}
 
 ## Bouwstenen voor architectuur {#building-blocks}
 

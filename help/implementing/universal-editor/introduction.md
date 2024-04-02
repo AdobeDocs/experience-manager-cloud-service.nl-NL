@@ -2,9 +2,9 @@
 title: Introductie van Universal Editor
 description: Leer hoe de Universele Redacteur wat-u-ziet-is-wat-u-krijgt (WYSIWYG) het uitgeven van om het even welke headless en belangrijke ervaring toelaat. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: b6548d39ce02006d91f1953c878e08a1c0903563
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 0%
 # Introductie van Universal Editor {#introduction}
 
 Leer hoe de Universele Redacteur wat-u-ziet-is-wat-u-krijgt (WYSIWYG) het uitgeven van om het even welke headless en belangrijke ervaring toelaat. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
-
-{{universal-editor-status}}
 
 ## Achtergrond {#background}
 
@@ -79,12 +77,6 @@ Een marketingdeskundige wil inhoud maken zonder de layout ervan te hoeven omschr
 Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van een bepaalde context en die een uitzonderlijke ervaring biedt.
 
 * De onderliggende taak die u moet uitvoeren, is op overtuigende wijze verbinding maken met de lezers.
-
-## Wegenkaart {#road-map}
-
-Het is belangrijk om op te merken dat de Universele Redacteur een werk in uitvoering is en sommige van de mogelijkheden die in dit document worden beschreven een visie van de definitieve redacteur zijn en niet noodzakelijk representatief voor zijn huidige mogelijkheden zijn.
-
-Neem contact op met de Adobe voor meer informatie over de functies die u voor de Universal Editor wilt gebruiken.
 
 ## Aanvullende bronnen {#additional-resources}
 
