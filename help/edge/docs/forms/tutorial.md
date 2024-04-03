@@ -2,13 +2,13 @@
 title: Aan de slag met AEM Forms-Edge Delivery Services - Zelfstudie voor ontwikkelaars
 description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe Experience Manager Forms-project (AEM). Binnen tien tot twintig minuten hebt u uw eigen formulieren gemaakt.
 feature: Edge Delivery Services
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
-source-wordcount: '1850'
+source-wordcount: '1848'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag - Zelfstudie voor ontwikkelaars
 
@@ -19,8 +19,6 @@ Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Go
 AEM Forms biedt een blok, Adaptive Forms Block genaamd, waarmee u eenvoudig formulieren kunt maken voor het vastleggen en opslaan van vastgelegde gegevens. U kunt [een nieuw AEM-project maken dat vooraf is geconfigureerd met Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) of [het Adaptive Forms Block toevoegen aan een bestaand AEM-project](#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Deze zelfstudie van AEM Forms begeleidt u bij het maken, voorvertonen en publiceren van uw eigen aangepaste formulier met een nieuw Adobe Experience Manager (AEM) Forms-project.
-
-
 
 ## Vereisten
 
@@ -131,8 +129,7 @@ Om de steekproefinhoud aan uw eigen inhoudsomslag te kopiëren en uw bewaarplaat
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Raadpleeg voor meer informatie over het beheren van bestanden met Microsoft SharePoint de [Adobe SharePoint gebruiken](https://www.aem.live/docs/setup-customer-SharePoint).
-
+      Ga voor meer informatie over het beheren van bestanden met Microsoft SharePoint naar [Adobe SharePoint gebruiken](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. De bijgewerkte `fsatb.yaml` als u de referentie hebt bijgewerkt en alles er goed uitziet. Als u om het even welke bouwstijlkwesties ontmoet, zie [Het oplossen van problemen GitHub bouwt kwesties](#troubleshooting-github-build-issues).
@@ -300,4 +297,3 @@ Als u tegenkomt met regelfouten, kunt u deze omzeilen. Open de [EDS-project]/pac
 ## Zie ook
 
 {{see-more-forms-eds}}
-

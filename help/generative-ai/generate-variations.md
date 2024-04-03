@@ -1,13 +1,13 @@
 ---
 title: Variaties genereren
 description: Meer informatie over Variaties genereren, toegankelijk via de Sidekick van Edge Delivery Services
-source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 0%
 
 ---
-
 
 # Variaties genereren {#generate-variations}
 
@@ -343,7 +343,7 @@ Een **Adobe Target** het publiek in de herinnering staat voor de generatie van i
 
    >[!NOTE]
    >
-   >Als u een **Adobe Target** voor het publiek moet het beschrijvingsveld worden ingevuld. Als dat niet het geval is, wordt in de vervolgkeuzelijst aangegeven dat het publiek niet beschikbaar is. Ga naar Doel en [een beschrijving voor het publiek toevoegen](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+   >Als u een **Adobe Target** voor het publiek moet het beschrijvingsveld worden ingevuld. Als dat niet het geval is, wordt in de vervolgkeuzelijst aangegeven dat het publiek niet beschikbaar is. Ga naar Doel en [een beschrijving voor het publiek toevoegen](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![Variaties genereren - publieksbron - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
