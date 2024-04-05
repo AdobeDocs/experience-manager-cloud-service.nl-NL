@@ -3,9 +3,9 @@ title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten voor optimale prestaties. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: ef6138af1735dc7aecbc4210a3fe9983d73348dd
+source-git-commit: 2fa76dbe93bcf31901ec0422470b05dadfe4f43f
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1870'
 ht-degree: 0%
 
 ---
@@ -256,6 +256,28 @@ Deze query kan worden uitgevoerd onder een pad `wknd/adventures-by-activity`. Om
 ```
 
 De UTF-8-codering `%3B` is for `;` en `%3D` is de codering voor `=`. De vraagvariabelen en om het even welke speciale karakters moeten [correct gecodeerd](#encoding-query-url) voor de Persisted query die moet worden uitgevoerd.
+
+### Query-variabelen gebruiken - Aanbevolen werkwijzen {#query-variables-best-practices}
+
+Wanneer het gebruiken van variabelen in uw vragen zijn er een paar beste praktijken die zouden moeten worden gevolgd:
+
+* Codering als algemene aanpak wordt altijd aangeraden alle speciale tekens te coderen, bijvoorbeeld `;`, `=`, `?`, `&`, onder andere.
+* Semicolon Persisted query&#39;s die meerdere variabelen gebruiken (die door puntkomma&#39;s worden gescheiden) moeten een van de volgende opties hebben:
+   * de gecodeerde puntkomma (`%3B`), en het coderen van URL zal dit ook bereiken
+   * of een volgpuntkomma die aan het einde van de query is toegevoegd
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+Wanneer `CACHE_GRAPHQL_PERSISTED_QUERIES` wordt toegelaten voor de Dispatcher, dan parameters die bevatten `/` of `\` tekens in hun waarde worden twee keer gecodeerd op Dispatcher-niveau.
+Om deze situatie te voorkomen:
+   * Inschakelen `DispatcherNoCanonURL` op de Dispatcher.
+Hierdoor wordt de Dispatcher opgedragen de oorspronkelijke URL door te sturen naar AEM, zodat dubbele coderingen worden voorkomen.
+Deze instelling werkt momenteel echter alleen op het tabblad `vhost` niveau, dus als u al Dispatcher-configuraties hebt om URL&#39;s te herschrijven (bijvoorbeeld bij het gebruik van verkorte URL&#39;s) hebt u mogelijk een aparte `vhost` voor doorlopende vraag-URL&#39;s.
+   * Verzenden `/` of `\` tekens niet gecodeerd.
+Wanneer het roepen van persistente vraag URL zorg ervoor dat allen `/` of `\` tekens blijven niet gecodeerd in de waarde van aanhoudend queryvariabelen.
+     >[!NOTE]
+     >
+     >Deze optie wordt alleen aanbevolen als de `DispatcherNoCanonURL` oplossing kan om welke reden dan ook niet worden geïmplementeerd.
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+Wanneer `CACHE_GRAPHQL_PERSISTED_QUERIES` is ingeschakeld voor de Dispatcher, en vervolgens de `;` kan niet worden gebruikt in de waarde van een variabele.
 
 ## Door uw doorlopende query&#39;s in cache te plaatsen {#caching-persisted-queries}
 
