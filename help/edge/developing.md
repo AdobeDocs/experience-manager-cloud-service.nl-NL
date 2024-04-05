@@ -3,9 +3,9 @@ title: Ontwikkelen voor Edge Delivery Services
 description: Leer hoe u blokken kunt ontwikkelen en uw AEM kunt aanpassen aan uw werk met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Blokken zijn het meest fundamentele onderdeel van een pagina die door Edge Deliv
 
 AEM biedt standaardblokken als onderdeel van het product binnen het bouwsteenbouwproject. Tot deze blokken behoren kop, tekst, afbeeldingen, koppelingen, lijsten, enzovoort.
 
-Zie de [Sectie Samenstellen](/help/edge/developer/block-collection.md) van de documentatie van Edge Delivery Services voor meer informatie over blokken en hoe te om voor de diensten van de Levering van de Rand te ontwikkelen.
+<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
 
 ## Edge Delivery Services en GitHub {#github-edge}
 
@@ -30,4 +30,4 @@ Uw auteurs kunnen inhoud maken met gebruik van op documenten gebaseerde ontwerpe
 
 Er worden automatisch websites gemaakt voor elk van uw vertakkingen, van de voorvertoning van de inhoud tot de productie. Elk middel dat u in uw bewaarplaats GitHub zet is beschikbaar op uw website zonder een bouwstijlproces.
 
-Zie de [Sectie Samenstellen](/help/edge/developer/block-collection.md) van de documentatie van Edge Delivery Services voor meer informatie over blokken en hoe te om voor de diensten van de Levering van de Rand te ontwikkelen.
+<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
