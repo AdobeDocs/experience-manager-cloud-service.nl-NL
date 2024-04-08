@@ -2,7 +2,7 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
 workflow-type: tm+mt
 source-wordcount: '3057'
 ht-degree: 0%
@@ -95,7 +95,7 @@ Om uw begrip van headless concepten te verzekeren, richt deze AEM Headless Ontwi
 
 U moet echter goed op de hoogte zijn van de extra hybride mogelijkheden die voor u beschikbaar zijn als u AEM functies zonder kop begrijpt. Deze gevallen worden hieronder beschreven voor uw bewustzijn. Aan het eind van de reis, wordt u geïntroduceerd aan deze concepten in detail voor het geval dat zulk flexibiliteit voor uw project wordt vereist.
 
-### U hebt al een externe verbruiker van inhoud zonder kop, zoals één paginatoepassing (SPA). {#already-have-a-spa}
+### U hebt al een externe verbruiker van inhoud zonder kop, zoals een toepassing van één pagina (SPA). {#already-have-a-spa}
 
 Laten we ervan uitgaan dat uw basisvereiste minimaal is om inhoud te leveren van AEM naar een bestaande externe service.
 
