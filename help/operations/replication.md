@@ -2,7 +2,7 @@
 title: Replicatie
 description: Leer over distributie en het oplossen van problemenreplicatie in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 0%
@@ -196,14 +196,17 @@ De grootte van de inhoud die per replicatievraag wordt overgebracht moet niet ov
 
 Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie in het Web UI van de Dienst van de AEM Auteur:
 
-1. Navigeer in het menu AEM Start naar **Extra > Implementatie > Distributie**
-2. Selecteer de kaart **publish**
+1. Navigeer in het menu AEM Start naar **Gereedschappen** > **Implementatie** > **Distributie**
+1. Selecteer de kaart **publish**
+
    ![Status](assets/publish-status.png "Status")
-3. Controleer de wachtrijstatus die groen moet zijn
-4. U kunt de verbinding met de replicatieservice testen
-5. Selecteer de **Logboeken** tabblad waarin de geschiedenis van publicaties met inhoud wordt weergegeven
+
+1. Controleer de wachtrijstatus die groen moet zijn
+1. U kunt de verbinding met de replicatieservice testen
+1. Selecteer de **Logboeken** tabblad waarin de geschiedenis van publicaties met inhoud wordt weergegeven
 
 ![Logboeken](assets/publish-logs.png "Logboeken")
 
 Als de inhoud niet kon worden gepubliceerd, wordt de volledige publicatie teruggezet van de AEM publicatieservice.
+
 In dat geval geeft de hoofdwachtrij een rode status weer en moet deze worden gecontroleerd om te bepalen welke items de annulering van de publicatie hebben veroorzaakt. Door op die wachtrij te klikken, worden de items in behandeling weergegeven, waaruit één item of alle items indien nodig kunnen worden gewist.
