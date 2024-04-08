@@ -5,9 +5,9 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 67d8de3cda921dcaeaac47e64828abbe6abe943f
+source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1946'
 ht-degree: 0%
 
 ---
@@ -127,6 +127,17 @@ Nu kunt u [Adobe Acrobat Sign-velden toevoegen aan een adaptief formulier](worki
 >[!NOTE]
 >
 > Als u de Adobe Sign-sandbox wilt configureren, kunt u dezelfde configuratiestappen volgen als in [Adobe Sign](#adobe-sign).
+
+#### Problemen oplossen {#resolve-config-error}
+
+Wanneer u verbinding maakt [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms] en zoeken naar een fout `Unable to authorize access because the client configuration is invalid: invalid_request` zoals weergegeven in de onderstaande afbeelding. U lost dit op door de hieronder gegeven stappen te volgen:
+
+![Configuratiefout](/help/forms/assets/config_error_sign.png)
+
+1. Kopieer de URL in het huidige browservenster naar een laptop en verwijder het onderdeel `/ui#/aem` via de URL.
+1. Een browservenster openen en aanmelden bij uw [!DNL Adobe Acrobat Sign] ontwikkelaarsaccount.
+1. Selecteer de toepassing waarvoor [!DNL AEM Forms]en selecteert u **[!UICONTROL Configure OAuth for Application]**.
+1. In de **[!UICONTROL Redirect URL]** voegt u de in een vorige stap gekopieerde URL toe en klikt u op **[!UICONTROL Save]**.
 
 ## Connect AEM Forms met Adobe Acrobat Sign Solutions for Government {#adobe-acrobat-sign-for-government}
 
