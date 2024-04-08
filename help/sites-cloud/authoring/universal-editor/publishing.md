@@ -2,7 +2,7 @@
 title: Inhoud publiceren met de Universal Editor
 description: Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 785a0db1ba302b8730480651802f98e802abc6d4
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -49,4 +49,3 @@ Zie deze ontwikkelaarsdocumenten voor meer informatie over de technische details
 * [Architectuur van Universal Editor](/help/implementing/universal-editor/architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Kenmerken en typen](/help/implementing/universal-editor/attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.
 * [Universal Editor-verificatie](/help/implementing/universal-editor/authentication.md) - Leer hoe de Universal Editor wordt geverifieerd.
-
