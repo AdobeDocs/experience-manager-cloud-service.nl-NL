@@ -2,7 +2,7 @@
 title: Kenmerken en itemtypen
 description: Leer over de gegevensattributen en de punttypes die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 36be262a7949bc66f97f5483ff463d755f5f78e5
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 | `data-aue-filter` | Definieert welke verwijzingen kunnen worden gebruikt |
 | `data-aue-label` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven <br>In geval van `data-aue-model` is ingesteld, wordt het label opgehaald via het model |
 | `data-aue-model` | Definieert een model dat wordt gebruikt voor bewerkingen op basis van formulieren in de rail Eigenschappen |
-| `data-aue-behavior` | Definieert de [gedrag van een instrumentatie;](#behaviors) zelfstandige tekst of afbeelding kan bijvoorbeeld ook een component simuleren om deze te verplaatsen of te verwijderen |
+| `data-aue-behavior` | Definieert de [gedrag van een instrumentatie](#behaviors)In een zelfstandige tekst of afbeelding kan een component bijvoorbeeld ook worden nagebootst om deze te verplaatsen of te verwijderen |
 
 ## Itemtypen {#item-types}
 
@@ -67,4 +67,3 @@ Zie deze documenten voor meer informatie over de Universal Editor.
 * [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 * [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
 * [Universal Editor-verificatie](authentication.md) - Leer hoe de Universal Editor wordt geverifieerd.
-
