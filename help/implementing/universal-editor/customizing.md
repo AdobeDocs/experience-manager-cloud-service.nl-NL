@@ -2,7 +2,7 @@
 title: De Universal Editor Authoring-ervaring aanpassen
 description: Leer over de verschillende uitbreidingspunten en andere eigenschappen die u toestaan om UI van de Universele Redacteur aan te passen om de behoeften van uw inhoudsauteurs te steunen.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -96,3 +96,4 @@ Voorwaarden kunnen worden gedefinieerd met behulp van [JsonLogic-schema.](https:
 #### Voorwaarde waar {#true}
 
 ![Weergegeven tekstveld](assets/shown.png)
+

@@ -2,7 +2,7 @@
 title: Overzicht van de universele editor voor AEM ontwikkelaars
 description: Als u een AEM ontwikkelaar bent geïnteresseerd in hoe de Universele Redacteur werkt en hoe te om het in uw project te gebruiken, geeft dit document u een inleiding van begin tot eind door u door het van instrumenten voorzien van instrumenten te leiden het WKND project om met de Universele Redacteur te werken.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%
@@ -593,3 +593,4 @@ Bekijk de volgende documenten voor meer informatie en details over de functies v
 * Zie het document [Architectuur van Universal Editor](/help/implementing/universal-editor/architecture.md#service) voor meer informatie over de structuur van de Universal Editor.
 * Zie het document [Ontwikkeling van lokale AEM met de Universal Editor](/help/implementing/universal-editor/local-dev.md) voor meer informatie over het maken van een verbinding met een zelfgehoste versie van de Universal Editor.
 * Zie het document [Het gebruiken van de Verzameling van Middel in Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) voor meer informatie over het bedekken van knooppunten.
+

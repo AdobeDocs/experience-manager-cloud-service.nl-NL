@@ -1,13 +1,13 @@
 ---
 title: Universal Editor-gebeurtenissen
 description: Leer over de verschillende gebeurtenissen die de Universele Redacteur verzendt die u kunt gebruiken om op inhoud of veranderingen UI in uw verre app te reageren.
-source-git-commit: e92a0be2213e3d5793fd077bd1968852336cc98b
+exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
 
 ---
-
 
 # Universal Editor-gebeurtenissen {#events}
 
@@ -279,3 +279,4 @@ De payload is leeg voor deze gebeurtenis.
 ## Aanvullende bronnen {#additional-resources}
 
 * [Universal Editor-aanroepen](/help/implementing/universal-editor/calls.md)
+

@@ -2,7 +2,7 @@
 title: Ontwikkeling van lokale AEM met de Universal Editor
 description: Leer hoe de Universele Redacteur het uitgeven op lokale AEM instanties voor ontwikkelingsdoeleinden steunt.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -119,3 +119,4 @@ Met de [Universal Editor Service wordt lokaal uitgevoerd](#running-ue) en uw [in
 1. Browser openen voor `https://localhost:8000/corslib/LATEST`.
 1. Stuur de browser om te accepteren [uw zelfondertekende certificaat.](#ue-https)
 1. Zodra het zelfondertekende certificaat wordt vertrouwd, kunt u de pagina bewerken met uw lokale Universal Editor-service.
+

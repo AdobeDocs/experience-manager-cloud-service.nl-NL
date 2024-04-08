@@ -2,7 +2,7 @@
 title: Universal Editor-aanroepen
 description: Leer over de verschillende soorten vraag die door de Universele Redacteur aan uw app wordt gemaakt om u te helpen wanneer het zuiveren.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -383,3 +383,4 @@ De Universal Editor herhaalt de inhoud en genereert een lijst met verwijzingen d
 ## Aanvullende bronnen {#additional-resources}
 
 * [Universal Editor-gebeurtenissen](/help/implementing/universal-editor/events.md)
+
