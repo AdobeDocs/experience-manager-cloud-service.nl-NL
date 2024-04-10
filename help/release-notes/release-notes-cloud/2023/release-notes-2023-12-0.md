@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release 2023.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 348c6d29001c532c1eb7a3e534517efb2ba73151
+exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release 2023.12.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -99,7 +99,7 @@ U kunt nu eenvoudig inhoud zoeken door een afbeelding te selecteren en vergelijk
 
 * **[Protect uw documenten met DocAssurance-API&#39;s (onderdeel van communicatie-API&#39;s)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance-API&#39;s stellen u in staat gevoelige informatie te beveiligen door de documenten te ondertekenen en te versleutelen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
 
-  U kunt schrijven naar `aem-forms-early-adopter-program@adobe.com` van uw officiële e-mailidentiteitskaart om zich bij het vroege adoptieprogramma aan te sluiten en toegang tot het vermogen te verzoeken.
+  U kunt schrijven naar `aem-forms-ea@adobe.com` van uw officiële e-mailidentiteitskaart om zich bij het vroege adoptieprogramma aan te sluiten en toegang tot het vermogen te verzoeken.
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
 
