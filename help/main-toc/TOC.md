@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: 89f2cd02e8318bd5900bffca752ffab4421c7fdc
 workflow-type: tm+mt
-source-wordcount: '4842'
+source-wordcount: '4855'
 ht-degree: 3%
 
 ---
@@ -833,6 +833,7 @@ ht-degree: 3%
          + [Stel uw Google-werkbladen of Microsoft Excel-bestanden in om te beginnen met het accepteren van &#x200B;](/help/edge/docs/forms/submit-forms.md)
          + [Uw formulier publiceren en gegevens verzamelen](/help/edge/docs/forms/publish-forms.md)
          + [Validaties toevoegen aan formuliervelden](/help/edge/docs/forms/validate-forms.md)
+         + [Opties vanuit een URL laden naar een formulier](/help/edge/docs/forms/load-options-from-url.md)
          + [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen](/help/edge/docs/forms/rules-forms.md)
          + [Een aangepast bedankbericht weergeven na het verzenden van het formulier](/help/edge/docs/forms/thank-you-page-form.md)
@@ -842,6 +843,7 @@ ht-degree: 3%
          + [Vertaling](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Aangepaste componenten](/help/edge/docs/forms/custom-components-forms.md)
+         + [Realtime gebruikerscontrole voor formulieren](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Verwijzingen {#forms-references}
          + [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
    + Bronnen voor Edge Delivery {#resources}
