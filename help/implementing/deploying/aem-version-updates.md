@@ -3,9 +3,9 @@ title: Versie-updates AEM
 description: Leer hoe Adobe Experience Manager (AEM) as a Cloud Service ononderbroken integratie en levering (CI/CD) gebruikt om uw projecten op de recentste versie te houden.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 9bfea65c07da5da044df8f698e409eab5c4320fb
+source-git-commit: 72fc611e006f80fdda672f08b0b795432f5899e2
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,24 @@ Leer hoe Adobe Experience Manager (AEM) as a Cloud Service ononderbroken integra
 
 AEM as a Cloud Service gebruik ononderbroken integratie en ononderbroken levering (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn. Met dit proces worden uw productie-, staging- en ontwikkelingsinstanties naadloos bijgewerkt, zonder dat dit uw gebruikers verstoort.
 
-Voordat uw exemplaren automatisch worden bijgewerkt, wordt 3-5 dagen van tevoren een nieuwe AEM-onderhoudrelease gepubliceerd. Tijdens deze periode kunt u desgewenst [triggerhandmatige updates voor uw ontwikkelingsinstanties](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Nadat deze tijd is verstreken, worden de versie-updates automatisch toegepast op uw ontwikkelomgevingen. Als de update succesvol is, gaat het updateproces naar uw werkgebied en productieinstanties. De ontwikkelings- en staging-instanties fungeren als een geautomatiseerde kwaliteitspoort, waar uw op maat geschreven tests worden uitgevoerd voordat de update wordt toegepast op uw productieomgeving.
+>[!NOTE]
+> Aangezien ontwikkelingsinstanties al automatisch worden bijgewerkt, zijn de handmatige updates voor ontwikkelingsinstanties mogelijk niet beschikbaar voor _sommige_ van uw programma&#39;s. Deze functie wordt overgebracht naar automatische updates.
+
+Voordat uw exemplaren automatisch worden bijgewerkt, wordt 3-5 dagen van tevoren een nieuwe AEM-onderhoudrelease gepubliceerd. Tijdens deze periode kan uw ontwikkelingsexemplaar automatisch worden bijgewerkt of in het geval dat deze beschikbaar is, kunt u dit optioneel doen [activeer de update voor uw ontwikkelingsinstanties](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). De updates van de versie worden automatisch toegepast op uw ontwikkelomgevingen eerst. Als de update succesvol is, gaat het updateproces naar uw werkgebied en productieinstanties. De ontwikkelings- en staging-instanties fungeren als een geautomatiseerde kwaliteitspoort, waar uw op maat geschreven tests worden uitgevoerd voordat de update wordt toegepast op uw productieomgeving.
+
+### NIMU (Non-Intrusive Maintenance Updates) {#nimu}
+
+Niet-opdringerige onderhoudsupdates zijn automatische updates die worden toegepast zonder de klantenpijpleidingen erbij te betrekken.
+Door NIMU, kan de klant de pijpleiding op elk ogenblik gebruiken, zelfs als een AEM versieupdate gepland of lopend is en de Updates van het Onderhoud zullen niet meer in de de pijpleidingsgeschiedenis van de Klant verschijnen, makend het gemakkelijker om de geschiedenis van codeplaatsingen te volgen.
+
+#### Activiteiten bijwerken
+
+De huidige AEM kan nog steeds voor elke omgeving worden gecontroleerd, zoals voorheen, via het deelvenster Omgevingen van de gebruikersinterface van Cloud Manager. De zelfde kwaliteitsspoorten die in de pijpleiding worden gebruikt worden door de Updates van het Onderhoud van het Non-Intrusive, met inbegrip van de klant geschreven tests.
+Er wordt een melding naar de interface van Cloud Manager verzonden wanneer een update voor niet-opdringerig onderhoud wordt toegepast op de omgevingen van uw programma. U kunt instellen dat deze ook naar uw e-mail wordt verzonden.
 
 >[!NOTE]
 >
-> Opmerking: de automatische updates voor ontwikkelomgevingen zijn in 2023 geleidelijk beschikbaar voor alle klanten. Als uw ontwikkelomgevingen niet automatisch worden bijgewerkt, kunt u handmatige updates gebruiken om ze synchroon te houden met uw werkgebied- en productieomgeving.
+> Opmerking: in 2024 zullen de updates voor niet-indringend onderhoud geleidelijk aan voor alle klanten worden ingeschakeld.
 
 
 ## Type updates {#update-types}
@@ -35,7 +48,7 @@ Er zijn twee typen AEM versie-updates:
    * Ze zijn vooral bedoeld voor onderhoudsdoeleinden, inclusief de nieuwste oplossingen voor problemen en beveiligingsupdates.
    * Het heeft minimale gevolgen, omdat de wijzigingen regelmatig worden toegepast.
 
-* [**Nieuwe functies bijwerken**](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [**AEM Functie activeren**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
    * Ze worden op een voorspelbaar maandelijks schema vrijgegeven.
 
@@ -56,7 +69,7 @@ En als een geautomatiseerde update van een ontwikkelomgeving mislukt, worden de 
 >
 >Als de douanecode aan het opvoeren en niet aan productie werd geduwd, verwijdert de volgende AEM update die veranderingen om op de git markering van de laatste succesvolle klantenversie aan productie te wijzen. Daarom moet de douanecode die slechts op het opvoeren beschikbaar was opnieuw worden opgesteld.
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 * **Gebruik van Stage-omgeving**
    * Gebruik een andere omgeving (geen werkgebied) voor lange QA/UAT-cycli.

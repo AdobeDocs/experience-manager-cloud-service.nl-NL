@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
 workflow-type: tm+mt
-source-wordcount: '2614'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -209,9 +209,9 @@ In ieder geval [verkeer wordt altijd verpletterd aan het andere dichtstbijzijnde
 
 ## Bijwerken van omgevingen {#updating-dev-environment}
 
-Als cloudservice worden updates van uw testomgeving en productieomgevingen binnen productieprogramma&#39;s automatisch door Adobe beheerd.
+Als cloudservice worden updates van uw ontwikkelings-, staging- en productieomgevingen binnen productieprogramma&#39;s automatisch door Adobe beheerd.
 
-Updates voor ontwikkelomgevingen en omgevingen in sandboxprogramma&#39;s worden echter binnen de programma&#39;s beheerd. Wanneer een dergelijke omgeving niet de meest recente openbaar beschikbare AEM versie uitvoert, wordt de status op de **Omgevingen** kaart op **Overzicht** scherm van de programma-shows **Update beschikbaar**.
+Updates voor omgevingen in sandboxprogramma&#39;s worden echter binnen de programma&#39;s beheerd. Wanneer een dergelijke omgeving niet de meest recente openbaar beschikbare AEM versie uitvoert, wordt de status op de **Omgevingen** kaart op **Overzicht** scherm van de programma-shows **Update beschikbaar**.
 
 ![Status van update van omgeving](assets/environ-update.png)
 
@@ -228,7 +228,10 @@ Het proces van actualisering bestaat daarom uit twee stappen:
 
 ### Uw omgevingen bijwerken {#updating-your-environments}
 
-De **Bijwerken** Deze optie is beschikbaar via de **Omgevingen** -kaart voor ontwikkelomgevingen en -omgevingen in sandboxprogramma&#39;s door op de knop voor ovaal van de omgeving te klikken.
+>[!NOTE]
+> Vanaf 2024 worden ontwikkelingsinstanties en sommige sandboxprogramma&#39;s al automatisch bijgewerkt, zodat er geen noodzaak is om updates voor deze instanties handmatig te beheren. Als gevolg van deze overgang is de optie om de omgeving handmatig bij te werken voor ontwikkelingsinstanties mogelijk niet beschikbaar voor _sommige_ van uw programma&#39;s.
+
+De **Bijwerken** Deze optie is beschikbaar via de **Omgevingen** -kaart voor bepaalde ontwikkelomgevingen en -omgevingen in sandboxprogramma&#39;s door op de knop voor ovaal van de omgeving te klikken.
 
 ![Optie bijwerken vanaf de kaart met omgevingen](assets/environ-update2.png)
 
@@ -246,7 +249,7 @@ De **Bijwerken** het gedrag van de optie is afhankelijk van de configuratie en d
 
 * Als de pijpleiding reeds is bijgewerkt, **Bijwerken** de optie zet de gebruiker ertoe aan om de pijpleiding uit te voeren.
 * Als de pijpleiding reeds wordt bijgewerkt, **Bijwerken** wordt de gebruiker geïnformeerd dat een update al wordt uitgevoerd.
-* Als een geschikte pijpleiding niet wordt gesloten, **Bijwerken** vraagt de gebruiker om er een te maken.
+* Als er geen geschikte pijpleiding bestaat, wordt de **Bijwerken** vraagt de gebruiker om er een te maken.
 
 ## Ontwikkelomgevingen verwijderen {#deleting-environment}
 
