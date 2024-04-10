@@ -2,9 +2,9 @@
 title: Inhoud modelleren voor AEM ontwerpen met projecten voor Edge Delivery Services
 description: Leer hoe het modelleren van inhoud voor AEM creatie met Edge Delivery Services projecten en hoe te om uw eigen inhoud te modelleren werkt.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: eef58b59cd528743702e3d436acec02dbba58211
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2095'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Voordat u begint met het modelleren van inhoud voor uw project, moet u eerst de 
 
 * [Aan de slag - Zelfstudie voor ontwikkelaars](/help/edge/developer/tutorial.md)
 * [Markeringen, secties, blokken en automatische blokkering](/help/edge/developer/markup-sections-blocks.md)
-  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
+* [Blokverzameling](/help/edge/developer/block-collection.md)
 
 Het is van essentieel belang dat u deze concepten begrijpt om te komen tot een aansprekend inhoudsmodel dat op een bronagnostische manier werkt. Dit document bevat details over de mechanismen die specifiek zijn geïmplementeerd voor AEM ontwerpen.
 
@@ -323,7 +323,7 @@ In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogram
 
 Met de [uitleg over de mechanismen van de blokstructuur;](#block-structure) het is mogelijk om een inhoudsmodel te maken waarmee inhoud die in AEM een-op-een wordt gepresteerd, wordt toegewezen aan de leveringslaag.
 
-Vroeg in elk project, moet een inhoudsmodel zorgvuldig worden overwogen voor elk blok. De functie moet niet op de hoogte zijn van de inhoudsbron en de ervaring die u hebt opgedaan om auteurs de mogelijkheid te geven om te schakelen of te combineren terwijl ze blokimplementaties en -stijlen opnieuw gebruiken. Meer details en algemene richtlijnen zijn te vinden in [David&#39;s Model (neem 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
+Vroeg in elk project, moet een inhoudsmodel zorgvuldig worden overwogen voor elk blok. De functie moet niet op de hoogte zijn van de inhoudsbron en de ervaring die u hebt opgedaan om auteurs de mogelijkheid te geven om te schakelen of te combineren terwijl ze blokimplementaties en -stijlen opnieuw gebruiken. Meer details en algemene richtlijnen zijn te vinden in [David&#39;s Model (neem 2).](https://www.aem.live/docs/davidsmodel) Meer in het bijzonder [blokverzameling](/help/edge/developer/block-collection.md) Bevat een uitgebreide reeks inhoudsmodellen voor specifieke gebruiksgevallen van gemeenschappelijke gebruikersinterfacepatronen.
 
 Voor AEM creatie met Edge Delivery Services, roept dit de vraag op hoe te om een dwingende semantische inhoudsmodel te dienen wanneer de informatie met vormen wordt authored die uit veelvoudige gebieden in plaats van het uitgeven semantische prijsverhoging in-context zoals rijke teksten worden samengesteld.
 
