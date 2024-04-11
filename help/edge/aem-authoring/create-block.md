@@ -2,7 +2,7 @@
 title: Blokken maken met een instrument voor gebruik met de universele editor
 description: Leer hoe te om blokken tot stand te brengen van instrumenten voor gebruik met de Universele Redacteur in AEM creatie met Edge Delivery Services projecten.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: cc41ff626f6fc6d72785401e3ba38b189945bf74
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -255,3 +255,4 @@ Zie het document [Inhoud modelleren voor AEM ontwerpen met projecten voor Edge D
 >[!TIP]
 >
 >Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor AEM creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [deze AEM GEM&#39;s webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

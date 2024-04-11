@@ -3,7 +3,7 @@ title: Werkbladen gebruiken om tabelgegevens te beheren
 description: Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschillende waarden, zoals metagegevens en omleidingen voor uw AEM naar de site Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -163,3 +163,4 @@ Bovendien kunt u [uw eigen spreadsheet maken](#own-spreadsheet) met willekeurige
 1. Maak het spreadsheet en publiceer dit volgens de instructies voor het spreadsheet omleiden.
 
 1. Een toewijzing toevoegen aan de `paths.json` gebruiken volgens de instructies voor het spreadsheet omleiden.
+

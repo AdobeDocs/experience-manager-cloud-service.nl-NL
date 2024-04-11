@@ -3,7 +3,7 @@ title: Inhoud ontwerpen voor Edge Delivery Services
 description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM inhoud ontwerpt met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -56,3 +56,4 @@ Zie de [Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge D
 Wanneer u op documenten gebaseerde documenten gebruikt, kunt u met diverse bronnen werken, zoals Microsoft Word- en Google Docs-documenten. Documenten uit deze bronnen worden pagina&#39;s op uw website. Koppen, lijsten, afbeeldingen, lettertype-elementen en video&#39;s kunnen allemaal van de oorspronkelijke bron naar uw website worden overgebracht. U kunt metagegevens toevoegen voor SEO-doeleinden of blokken gebruiken om met gestructureerde inhoud te werken en functionaliteit toe te voegen.
 
 Voor meer informatie over het schrijven van documenten raadpleegt u [dit document in de documentatie van Edge Delivery Services.](/help/edge/docs/authoring.md)
+

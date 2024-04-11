@@ -2,7 +2,7 @@
 title: Inhoud modelleren voor AEM ontwerpen met projecten voor Edge Delivery Services
 description: Leer hoe het modelleren van inhoud voor AEM creatie met Edge Delivery Services projecten en hoe te om uw eigen inhoud te modelleren werkt.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: bf6d0ff2f4aebb6620be46704072743578b096d2
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 0%
@@ -657,3 +657,4 @@ Als u al vertrouwd bent met het maken van blokken, raadpleegt u het document [Aa
 >[!TIP]
 >
 >Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor AEM creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [deze AEM GEM&#39;s webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

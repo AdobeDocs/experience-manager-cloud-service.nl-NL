@@ -3,7 +3,7 @@ title: Inhoud voor Edge Delivery Services publiceren
 description: Leer hoe het publiceren van inhoud met Edge Delivery Services werkt en hoe te om AEM inhoud met Edge Delivery Services te publiceren.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -39,3 +39,4 @@ De informatiestroom bij publicatie ziet er als volgt uit. Zodra de auteur begint
 >[!NOTE]
 >
 >Standaard is de API voor beheer van Edge Delivery Services niet beveiligd en kan deze worden gebruikt om documenten zonder verificatie te publiceren of de publicatie ervan ongedaan te maken. Voor het configureren van verificatie voor de API voor beheer, zoals beschreven in [Verificatie voor auteurs configureren](https://www.aem.live/docs/authentication-setup-authoring)moet uw project voorzien zijn van een API_KEY, die toegang tot de publicatieservice verleent. [Neem contact op met het team Adobe voor Slack](/help/edge/docs/slack.md) ter begeleiding.
+
