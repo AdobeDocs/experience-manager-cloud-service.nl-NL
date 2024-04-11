@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: aaae2986d0b807b34055a48c810c32167d3715d0
+source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
 workflow-type: tm+mt
-source-wordcount: '4862'
+source-wordcount: '4850'
 ht-degree: 3%
 
 ---
@@ -790,18 +790,25 @@ ht-degree: 3%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migratie](/help/commerce-cloud/migration.md)
    + [Veelgestelde vragen](/help/commerce-cloud/faq.md)
-+ AEM met Edge Delivery Services {#edge-delivery}
-   + [Aan de slag met Edge Delivery Services](/help/edge/overview.md)
-   + [Edge-levering gebruiken](/help/edge/using.md)
-   + [Aan de slag met ontwikkelaar](/help/edge/edge-dev-getting-started.md)
-   + [Inhoud ontwerpen voor Edge-levering](/help/edge/authoring.md)
-   + [Inhoud publiceren voor Edge Delivery](/help/edge/publishing.md)
-   + [Ontwikkelen voor Edge Delivery](/help/edge/developing.md)
-   + [Inhoud modelleren](/help/edge/content-modeling.md)
-   + [Blokken maken](/help/edge/create-block.md)
-   + [Tabelgegevens en spreadheets](/help/edge/tabular-data.md)
-   + [Bestaande projecten en Edge Delivery](/help/edge/existing-projects.md)
-   + Edge Delivery-toepassingen samenstellen {#build}
++ Edge Delivery Services {#edge-delivery}
+   + [Overzicht Edge Delivery Services](/help/edge/overview.md)
+   + [Edge Delivery Services met AEM gebruiken](/help/edge/using.md)
+   + AEM maken {#aem-authoring}
+      + [Inhoud ontwerpen voor Edge-levering](/help/edge/aem-authoring/authoring.md)
+      + [Inhoud publiceren voor Edge Delivery](/help/edge/aem-authoring/publishing.md)
+      + [Aan de slag met ontwikkelaar](/help/edge/aem-authoring/edge-dev-getting-started.md)
+      + [Blokken maken](/help/edge/aem-authoring/create-block.md)
+      + [Inhoud modelleren](/help/edge/aem-authoring/content-modeling.md)
+      + [Tabelgegevens en spreadheets](/help/edge/aem-authoring/tabular-data.md)
+      + [Bestaande projecten en Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + Authoring op basis van documenten {#document-authoring}
+      + [Authoring](/help/edge/docs/authoring.md)
+      + [Bulkmetagegevens](/help/edge/docs/bulk-metadata.md)
+      + [Plaatsaanduidingen](/help/edge/docs/placeholders.md)
+      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack Bot](/help/edge/docs/slack.md)
+   + Toepassingen maken {#build}
       + [Aan de slag - Zelfstudie voor ontwikkelaars](/help/edge/developer/tutorial.md)
       + [Anatomie van een project](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [Blokverzameling](/help/edge/developer/block-collection.md)
@@ -813,21 +820,14 @@ ht-degree: 3%
       + [favicon](/help/edge/developer/favicon.md)
       + [Aangepaste koppen](/help/edge/docs/custom-headers.md)
       + [Beste praktijken voor Ontwikkelaars](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Toepassingen voor Edge Delivery publiceren {#publish}
-      + [Authoring](/help/edge/docs/authoring.md)
-      + [Bulkmetagegevens](/help/edge/docs/bulk-metadata.md)
-      + [Plaatsaanduidingen](/help/edge/docs/placeholders.md)
-      + [Sitemap](/help/edge/developer/sitemap.md)
-      + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack Bot](/help/edge/docs/slack.md)
-   + Edge-leveringstoepassingen starten {#launch}
+   + Toepassingen starten {#launch}
       + [Live checklist](/help/edge/docs/go-live-checklist.md)
       + [Push Invalidation](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Setup van Cloudflare Worker](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Snelle installatie](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Omleiding](/help/edge/docs/redirects.md)
-   + Forms voor Edge Delivery {#build-forms}
+   + Forms samenstellen {#build-forms}
       + [Overzicht](/help/edge/docs/forms/overview.md)
       + Aan de slag {#getting-started-eds-forms}
          + [Aan de slag](/help/edge/docs/forms/tutorial.md)
@@ -848,7 +848,7 @@ ht-degree: 3%
          + [Realtime gebruikerscontrole voor formulieren](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Verwijzingen {#forms-references}
          + [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
-   + Bronnen voor Edge Delivery {#resources}
+   + Edge Delivery-bronnen {#resources}
       + Sidekick {#sidekick}
          + [Sidekick gebruiken](/help/edge/docs/sidekick.md)
          + [Extensie installeren](/help/edge/docs/sidekick-extension.md)

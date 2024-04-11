@@ -3,7 +3,7 @@ title: Aan de slag met AEM Forms-Edge Delivery Services - Zelfstudie voor ontwik
 description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe Experience Manager Forms-project (AEM). Binnen tien tot twintig minuten hebt u uw eigen formulieren gemaakt.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 0%
@@ -192,7 +192,7 @@ Niet-gepubliceerde inhoud voorvertonen:
 
 De voorbeeldinhoud bestaat uit een blad &quot;vraag&quot; dat fungeert als sjabloon voor het formulier &quot;vraag&quot;. Elke rij van het blad vertegenwoordigt een [formulierveld](/help/edge/docs/forms/form-components.md#available-components)en de kolomkoppen definiëren de [veldeigenschappen](/help/edge/docs/forms/form-components.md#available-components). Met dit voorbeeldformulier begint u met het samenstellen van uw formulier.
 
-![Invorderingsformulier](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![Invorderingsformulier](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 Laten we beginnen met het bijwerken van een veldlabel. Open het blad &#39;Vraag&#39; voor bewerking, wijzig het label van de verzendknop in `Let's Chat` en gebruik AEM Sidekick om het bestand voor te vertonen en te publiceren.
 

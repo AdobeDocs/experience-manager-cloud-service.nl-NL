@@ -1,7 +1,7 @@
 ---
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -50,10 +50,6 @@ ht-degree: 0%
 * [Verzenden naar Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Een adaptief formulier verbinden met Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-
-## AEM met Edge Delivery Services Vroege Toegang {#aem-authoring-edge-early-access}
-
-[!BADGE EARLY-ACCESS TECHNOLOGY - Vraag ons naar deze functie via de AEM Sites-labs op uw Slack-kanaal!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM creatie met Edge Delivery Services is een vroege-toegangstechnologie."}
 
 ## Zie ook {#see-more-forms-eds}
 
