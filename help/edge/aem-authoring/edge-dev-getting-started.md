@@ -3,9 +3,9 @@ title: Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge De
 description: Deze gids zal u aan de slag met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoud creatie krijgen.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1297'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Nu u een project GitHub hebt, moet u een nieuwe AEM tot stand brengen plaats die
 >
 >Als u uw site wilt bewerken met de Universal Editor, moet u een op chroom gebaseerde browser gebruiken.
 
-1. Vraag het recentste AEM Authoring met de plaatssjabloon van Edge Delivery Services van de Techniek van de Adobe via uw [Slack-kanaal van project.](/help/edge/docs/slack.md)
+1. Download de recentste AEM Authoring met Edge Delivery Services sitesjabloon van GitHub op [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
 1. Meld u aan bij uw AEM as a Cloud Service ontwerpinstantie en navigeer naar de Sites-console en tik of klik op **Maken** -> **Site van sjabloon**.
 
@@ -141,6 +141,8 @@ Nu u een project GitHub hebt, moet u een nieuwe AEM tot stand brengen plaats die
    ![Sjablonen importeren](assets/edge-dev-getting-started/site-templates.png)
 
 1. Upload de AEM Authoring met de sitesjabloon van Edge Delivery Services die u van de Adobe Engineering ontvangt.
+
+   * De sjabloon mag slechts eenmaal worden geüpload. Na het uploaden kan het opnieuw worden gebruikt om extra sites te maken.
 
 1. Zodra het malplaatje wordt ingevoerd, verschijnt het in de tovenaar. Tik of klik om het te selecteren en tik of klik vervolgens op **Volgende**.
 
