@@ -2,10 +2,10 @@
 title: Inleiding tot aangepaste domeinnamen
 description: Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren met een unieke merknaam.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d9cd10772252d80487f578ee73f40ec334600029
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 1%
+source-wordcount: '741'
+ht-degree: 0%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 1%
 >id="aemcloud_golive_domains"
 >title="Aangepaste domeinnamen beheren"
 >abstract="Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren met een unieke merknaam."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html" text="Een aangepaste domeinnaam toevoegen"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html" text="Aangepaste domeinnaam weergeven en bijwerken"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Een aangepaste domeinnaam toevoegen"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Aangepaste domeinnaam weergeven en bijwerken"
 
 Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren met een unieke merknaam. Adobe Experience Manager as a Cloud Service heeft een standaarddomeinnaam, die eindigt in `*.adobeaemcloud.com`. Deze standaarddomeinnaam blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
 
@@ -53,12 +53,12 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 | 1 | SSL-certificaat toevoegen aan Cloud Manager | Klant | [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | TXT-record toevoegen om domein te verifiëren | Klant | [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | Status domeinverificatie controleren | Klant | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 3a | Als domeinverificatie mislukt met de status `Domain Verification Failure` | Klant | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 3b | Als domeinverificatie mislukt met de status `Verified, Deployment Failed`, contact opnemen met Adobe | Klantenservice Adoben | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 3 bis. | Als domeinverificatie mislukt met de status `Domain Verification Failure` | Klant | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 3 ter | Als domeinverificatie mislukt met de status `Verified, Deployment Failed`, contact opnemen met Adobe | Klantenservice Adoben | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 4 | DNS-instellingen configureren door DNS CNAME- of APEX-records toe te voegen die wijzen naar AEM as a Cloud Service | Klant | [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
 | 5 | DNS-recordstatus controleren | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
-| 5a | Als de DNS-recordstatus mislukt met `DNS status not detected` | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
-| 5b | Als de DNS-recordstatus mislukt met `DNS resolves incorrectly` | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 bis | Als de DNS-recordstatus mislukt met `DNS status not detected` | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 ter | Als de DNS-recordstatus mislukt met `DNS resolves incorrectly` | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
