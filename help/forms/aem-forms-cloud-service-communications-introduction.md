@@ -5,9 +5,9 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1955'
 ht-degree: 1%
 
 ---
@@ -186,10 +186,63 @@ U kunt deze taken uitvoeren met de API&#39;s voor codering:
 
 * Codeer een PDF-document met een wachtwoord.
 * Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document.
+* Hiermee haalt u het type beveiliging op dat op een PDF-document is toegepast.
 * Retourneer het beveiligingstype dat op een PDF-document is toegepast.
 
 Zowel handtekening-API&#39;s als versleutelings-API&#39;s zijn [Synchrone API&#39;s](#types-of-communications-apis-types).
 
+### Reader Extension Service
+
+<span class="preview"> De capaciteit van de Uitbreidingsdienst van de Reader is onder het Vroege Programma van de Aannemer. U kunt schrijven naar `aem-forms-ea@adobe.com` van uw officiële e-mailidentiteitskaart om zich bij het vroege adoptieprogramma aan te sluiten en toegang tot het vermogen te verzoeken. </span>
+
+De dienst van de Uitbreidingen van de Reader laat uw organisatie toe om interactieve documenten van de PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden. De dienst van de Uitbreidingen van de Reader werkt met Adobe Reader. De service voegt gebruiksrechten toe aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document.
+
+
+Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen ontvangers de volgende activiteiten uitvoeren vanuit Adobe Reader:
+
+* Voltooi PDF-documenten en -formulieren online of offline, zodat ontvangers kopieën lokaal kunnen opslaan voor hun records en de toegevoegde gegevens intact kunnen houden.
+* Sla PDF-documenten op een lokale vaste schijf op om het originele document en eventuele aanvullende opmerkingen, gegevens of bijlagen te behouden.
+* Bestanden en mediaclips aan PDF-documenten koppelen.
+* Onderteken, certificeer en authenticeer PDF-documenten door digitale handtekeningen toe te passen met PKI-technologieën (Public Key Infrastructure) die industriestandaard zijn.
+* Ingevulde of geannoteerde PDF documenten elektronisch verzenden.
+* Gebruik PDF-documenten en -formulieren als intuïtieve ontwikkelvoorkant van interne databases en webservices.
+* Deel PDF-documenten met anderen, zodat revisoren opmerkingen kunnen toevoegen met intuïtieve opmaakgereedschappen. Deze gereedschappen zijn onder andere elektronische notities, stempels, hooglichten en doorhalen van tekst. Dezelfde functies zijn beschikbaar in Acrobat.
+* Decodering van streepjescodes voor formulieren ondersteunen.
+
+Deze mogelijkheden voor speciale gebruiksrechten worden automatisch geactiveerd wanneer een PDF-document met ingeschakelde rechten wordt geopend in Adobe Reader. Wanneer de gebruiker klaar is met het werken met een document waarvoor rechten zijn ingeschakeld, worden deze functies weer uitgeschakeld in Adobe Reader. Ze blijven uitgeschakeld totdat de gebruiker een ander PDF-document met ingeschakelde rechten ontvangt.
+
+De verschillende mogelijkheden van gebruiksrechten met de Diensten van de Uitbreiding van de Reader zijn:
+
+* **Decodering streepjescodes**: Streepjescodes decoderen in het PDF-document.
+
+* **Opmerkingen**: Als u een opmerking offline wilt plaatsen in het PDF-document.
+
+* **Opmerkingen online**: U kunt als volgt online opmerkingen toevoegen aan het document PDF.
+
+* **Digitale handtekening**: digitale handtekeningen toevoegen aan een PDF-document.
+
+* **Dynamische formuliervelden**: Formuliervelden toevoegen aan een PDF-document.
+
+* **Dynamische formulierpagina&#39;s**: Formulierpagina&#39;s toevoegen aan een PDF-document.
+
+* **Ingesloten bestanden**: Bestanden insluiten in een PDF-document.
+
+* **Formuliergegevens importeren**: Formuliergegevens importeren in een PDF-document.
+
+* **Formuliergegevens exporteren**: Formuliergegevens importeren in een PDF-document.
+
+* **Formulier invullen**: Formuliervelden invullen in een PDF-document.
+
+* **Online Forms**: Toegang tot een webservice of database vanaf een PDF-document.
+
+* **Zelfstandig verzenden**: Formuliergegevens offline verzenden vanuit een PDF-document.
+
+**Andere mogelijkheden in de Diensten van de Uitbreiding van de Reader**
+
+* **Bericht**: Het bericht dat in Adobe Acrobat Reader wordt weergegeven bij het openen van een PDF-document waarop een of meer gebruiksrechten zijn toegepast.
+* **Wachtwoord ontgrendelen**: Het wachtwoord dat is vereist voor het openen van een versleuteld PDF-document. Dit is doorgaans het wachtwoord voor het openen van het document, maar als het PDF-document extra wordt beveiligd door een wachtwoord voor machtigingen, kan een van beide worden gebruikt om het document te openen.
+
+De [API-naslagdocumentatie](https://adobe-aem-document-experimental.redoc.ly/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt .yaml downloaden en uploaden aan postman om functionaliteit van APIs te controleren.
 
 ## Typen communicatie-API&#39;s {#types}
 

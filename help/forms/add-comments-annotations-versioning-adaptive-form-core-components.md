@@ -4,9 +4,9 @@ description: Gebruik aangepaste basiscomponenten van formulieren om opmerkingen,
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ Met een adaptieve formulierversie kunt u versies toevoegen aan een formulier. Fo
 Voer de volgende stappen uit om een versie van een formulier te maken:
 
 1. Maak een formulier of gebruik een bestaand formulier.
-1. Ga in AEM UI naar de **[!UICONTROL Form]**>>**[!UICONTROL Forms & Documents]** en selecteer uw **Formulier**.
+1. Navigeer in AEM UI naar de **[!UICONTROL Form]**>>**[!UICONTROL Forms & Documents]** en selecteer uw **Formulier**.
 1. Selecteer in het keuzemenu Selectie in het linkerdeelvenster de optie **[!UICONTROL Versions]**.
    ![Een formulier selecteren](select-a-form.png)
 1. Klik op de knop **drie stippen** in het onderste deelvenster aan de linkerkant klikt u op **[!UICONTROL Save as Version]**.
-1. Geef nu een label op aan de formulierversie en u kunt informatie over het formulier geven via de opmerking.
+1. Geef nu een label op voor de formulierversie en u kunt informatie over het formulier geven via de opmerking.
    ![Een formulierversie maken](create-a-form-version.png)
 
 ### Een formulierversie bijwerken {#update-a-form-version}
@@ -77,22 +77,15 @@ In veel gevallen moeten gebruikers van een formuliergroep annotaties toevoegen a
 1. Klik op de knop **pictogram toevoegen** die zich op de rechterbovenspoorstaaf bevinden, zoals aangegeven in de afbeelding.
    ![Aantekening](annotation.png)
 
-1. Klik op de knop **pictogram toevoegen** die zich op de linkerbovenspoorstaaf bevinden zoals die in het toe te voegen beeld wordt gegeven.
+1. Klik op de knop **pictogram toevoegen** die zich op de linkerbovenspoorstaaf bevinden zoals in het beeld wordt gegeven om de aantekening toe te voegen.
    ![Annotatie toevoegen](add-annotation.png)
 
-1. Nu kunt u opmerkingen toevoegen, schetsen met meerdere kleuren tekenen en formuliercomponenten tekenen.
+1. Nu kunt u opmerkingen toevoegen en schetsen met meerdere kleuren tekenen in formuliercomponenten.
 
-1. Als u alle toegevoegde annotaties van een formulier wilt weergeven, selecteert u het formulier en ziet u de annotaties die aan de linkerkant zijn toegevoegd, zoals in de afbeelding wordt getoond.
+1. Als u alle toegevoegde aantekeningen op een formulier wilt bekijken, selecteert u het formulier en ziet u de aantekeningen die aan de linkerkant zijn toegevoegd, zoals in de afbeelding wordt getoond.
 
    ![Zie toegevoegde annotaties](see-annotations.png)
 
+## Zie ook {#see-also}
 
-
-
-
-
-
-
-
-
-
+{{see-also}}

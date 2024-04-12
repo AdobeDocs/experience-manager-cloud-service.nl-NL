@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '3028'
+source-wordcount: '3097'
 ht-degree: 0%
 
 ---
@@ -42,102 +42,112 @@ Aangepaste functies zijn in wezen clientbibliotheken die in het JavaScript-besta
 
 JavaScript-annotaties worden gebruikt om metagegevens voor JavaScript-code op te geven. Het bevat opmerkingen die beginnen met specifieke symbolen, bijvoorbeeld /** en @. De annotaties bevatten belangrijke informatie over functies, variabelen en andere elementen in de code. Het adaptieve formulier ondersteunt de volgende JavaScript-aantekeningen voor aangepaste functies:
 
-* **Naam**
+#### Naam
+
 De naam wordt gebruikt om de douanefunctie in de regelredacteur van een Adaptief vorm te identificeren. De volgende syntaxis wordt gebruikt om een douanefunctie te noemen:
-   * `@name [functionName] <Function Name>`
-   * `@function [functionName] <Function Name>`
-   * `@func [functionName] <Function Name>`.
-     `functionName` is de naam van de functie. Spaties zijn niet toegestaan.
-     `<Function Name>` is de weergavenaam van de functie in de regeleditor van een adaptief formulier.
+
+* `@name [functionName] <Function Name>`
+* `@function [functionName] <Function Name>`
+* `@func [functionName] <Function Name>`.
+  `functionName` is de naam van de functie. Spaties zijn niet toegestaan.
+  `<Function Name>` is de weergavenaam van de functie in de regeleditor van een adaptief formulier.
 Als de functienaam identiek is aan de naam van de functie zelf, kunt u weglaten `[functionName]` in de syntaxis. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
 `* @name calculateAge` -->
 
-* **Parameter**
+#### Parameter
+
 De parameter is een lijst met argumenten die door aangepaste functies worden gebruikt. Een functie kan meerdere parameters ondersteunen. De volgende syntaxis wordt gebruikt om een parameter in een douanefunctie te bepalen:
-   * `@param {type} name <Parameter Description>`
-   * `@argument` `{type} name <Parameter Description>`
-   * `@arg` `{type}` `name <Parameter Description>`.
-     `{type}` vertegenwoordigt het parametertype.  De toegestane parametertypen zijn:
-      * tekenreeks: vertegenwoordigt één tekenreekswaarde.
-      * getal: vertegenwoordigt één numerieke waarde.
-      * boolean: vertegenwoordigt één booleaanse waarde (waar of onwaar).
-      * string[]: Vertegenwoordigt een array van tekenreekswaarden.
-      * getal[]: Vertegenwoordigt een array van numerieke waarden.
-      * boolean[]: Vertegenwoordigt een array van Booleaanse waarden.
-      * date: vertegenwoordigt één datumwaarde.
-      * date[]: Vertegenwoordigt een array met datumwaarden.
-      * array: vertegenwoordigt een algemene array met waarden van verschillende typen.
-      * object: vertegenwoordigt een formulierobject dat aan een aangepaste functie wordt doorgegeven in plaats van dat de waarde rechtstreeks wordt doorgegeven.
-      * bereik: vertegenwoordigt het algemene object dat door aangepaste functies in de runtime wordt gebruikt. Deze wordt gedeclareerd als de laatste parameter in JavaScript-annotaties en is niet zichtbaar in de regeleditor van een adaptief formulier. De bereikparameter benadert het object van het formulier of de component om de regel of gebeurtenis te activeren die vereist is voor formulierverwerking.
 
-  Het parametertype is niet hoofdlettergevoelig en spaties zijn niet toegestaan in de parameternaam.
+* `@param {type} name <Parameter Description>`
+* `@argument` `{type} name <Parameter Description>`
+* `@arg` `{type}` `name <Parameter Description>`.
+  `{type}` vertegenwoordigt het parametertype.  De toegestane parametertypen zijn:
+   * tekenreeks: vertegenwoordigt één tekenreekswaarde.
+   * getal: vertegenwoordigt één numerieke waarde.
+   * boolean: vertegenwoordigt één booleaanse waarde (waar of onwaar).
+   * string[]: Vertegenwoordigt een array van tekenreekswaarden.
+   * getal[]: Vertegenwoordigt een array van numerieke waarden.
+   * boolean[]: Vertegenwoordigt een array van Booleaanse waarden.
+   * date: vertegenwoordigt één datumwaarde.
+   * date[]: Vertegenwoordigt een array met datumwaarden.
+   * array: vertegenwoordigt een algemene array met waarden van verschillende typen.
+   * object: vertegenwoordigt een formulierobject dat aan een aangepaste functie wordt doorgegeven in plaats van dat de waarde rechtstreeks wordt doorgegeven.
+   * bereik: vertegenwoordigt het algemene object dat door aangepaste functies in de runtime wordt gebruikt. Deze wordt gedeclareerd als de laatste parameter in JavaScript-annotaties en is niet zichtbaar in de regeleditor van een adaptief formulier. De bereikparameter benadert het object van het formulier of de component om de regel of gebeurtenis te activeren die vereist is voor formulierverwerking.
 
-  `<Parameter Description>` bevat details over het doel van de parameter. Het kan meerdere woorden hebben.
+    Het parametertype is niet hoofdlettergevoelig en spaties zijn niet toegestaan in de parameternaam.
+    
+    `&lt;parameter description=&quot;&quot;>` bevat details over het doel van de parameter. Het kan meerdere woorden hebben.
+    
+    Standaard zijn alle parameters verplicht. U kunt een parameter als optioneel definiëren door `=` na het parametertype toe te voegen of door de parameternaam in `[]` in te sluiten. Parameters die in JavaScript-annotaties als optioneel worden gedefinieerd, worden in de regeleditor als optioneel weergegeven.
+    Als u een variabele wilt definiëren als een optionele parameter, kunt u een van de volgende syntaxis gebruiken:
+    
+    * `@param {type=} Input1`
+    
+    In de bovenstaande coderegel is &quot;Input1&quot; een optionele parameter zonder standaardwaarde. Optionele parameter met standaardwaarde declareren:
+    `@param {string=&lt;value>} input1`
+    
+    &quot;input1&quot; als een optionele parameter met de standaardwaarde ingesteld op &quot;value&quot;.
+    
+    * `@param {type} [Invoer1]&quot;
+    
+    In de bovenstaande coderegel is &quot;Input1&quot; een optionele parameter zonder standaardwaarde. Optionele parameter met standaardwaarde declareren:
+    `@param {array} [input1=&lt;value>]&quot;
+    &quot;input1` is een facultatieve parameter van serietype met de standaardwaarde die aan ` waarde wordt geplaatst.
+    Zorg ervoor dat het parametertype tussen accolades staat {} en de parameternaam staat tussen vierkante haken [].
+    
+    Overweeg het volgende codefragment, waar input2 als facultatieve parameter wordt bepaald:
+    
+    &quot;javascript
+    
+    /**
+    * optionele parameterfunctie
+    * @name OptionalParameterFunction
+    * @param {string} input1
+    * @param {string=} input2
+    * @return {string}
+    */
+    function OptionalParameterFunction(input1, input2) {
+    let result = &quot;Result: &quot;;
+    resultaat += input1;
+    if (input2 !== null) {
+    result += &quot; &quot; + input2;
+    }
+    resultaat van de terugzending;
+    }
+    &quot;
+    
+    De volgende illustratie toont het gebruiken van de van de douanefunctie ` OptionalParameterFunction ` in de regelredacteur:
+    
+    &lt;!>— ![Optionele of vereiste parameters ](/help/forms/assets/optional-default-params.png) —>
+    
+    U kunt de regel opslaan zonder een waarde voor vereiste parameters op te geven, maar de regel wordt niet uitgevoerd en er wordt een waarschuwingsbericht weergegeven als:
+    
+    &lt;!>— ![incomplete regelwaarschuwing](/help/forms/assets/incomplete-rule.png) —>
+    
+    Wanneer de gebruiker de optionele parameter leeg laat, wordt de &#39;Undefined&#39;-waarde doorgegeven aan de aangepaste functie voor de optionele parameter.
 
-  Standaard zijn alle parameters verplicht. U kunt een parameter als optioneel definiëren door `=` na het parametertype of de parameternaam insluiten  `[]`. Parameters die in JavaScript-annotaties als optioneel worden gedefinieerd, worden in de regeleditor als optioneel weergegeven.
-Als u een variabele wilt definiëren als een optionele parameter, kunt u een van de volgende syntaxis gebruiken:
+#### Retourtype
 
-   * `@param {type=} Input1`
-In de bovenstaande coderegel: `Input1` is een optionele parameter zonder standaardwaarde. Optionele parameter met standaardwaarde declareren:
-     `@param {string=<value>} input1`
-
-     `input1` als een optionele parameter met als standaardwaarde `value`.
-
-   * `@param {type} [Input1]`
-In de bovenstaande coderegel: `Input1` is een optionele parameter zonder standaardwaarde. Optionele parameter met standaardwaarde declareren:
-     `@param {array} [input1=<value>]`
-     `input1` is een optionele parameter van het type array met de standaardwaarde ingesteld op `value`.
-Zorg ervoor dat het parametertype tussen accolades staat {} en de parameternaam staat tussen vierkante haakjes [].
-
-     Overweeg het volgende codefragment, waar input2 als facultatieve parameter wordt bepaald:
-
-     ```javascript
-          /**
-          * optional parameter function
-          * @name OptionalParameterFunction
-          * @param {string} input1 
-          * @param {string=} input2 
-          * @return {string}
-         */
-         function OptionalParameterFunction(input1, input2) {
-         let result = "Result: ";
-         result += input1;
-         if (input2 !== null) {
-             result += " " + input2;
-         }
-         return result;
-         }
-     ```
-
-     De volgende illustratie wordt weergegeven met de `OptionalParameterFunction` aangepaste functie in de regeleditor:
-
-     ![Optionele of vereiste parameters](/help/forms/assets/optional-default-params.png)
-
-     U kunt de regel opslaan zonder een waarde voor vereiste parameters op te geven, maar de regel wordt niet uitgevoerd en er wordt een waarschuwingsbericht weergegeven als:
-
-     ![onvolledige regelwaarschuwing](/help/forms/assets/incomplete-rule.png)
-
-     Wanneer de gebruiker de optionele parameter leeg laat, wordt de &#39;Undefined&#39;-waarde doorgegeven aan de aangepaste functie voor de optionele parameter.
-
-* **Retourtype**
 Het retourneringstype geeft het type waarde op dat de aangepaste functie na de uitvoering retourneert. De volgende syntaxis wordt gebruikt om een terugkeertype in een douanefunctie te bepalen:
-   * `@return {type}`
-   * `@returns {type}`
-     `{type}` vertegenwoordigt het terugkeertype van de functie. De toegestane retourtypen zijn:
-      * tekenreeks: vertegenwoordigt één tekenreekswaarde.
-      * getal: vertegenwoordigt één numerieke waarde.
-      * boolean: vertegenwoordigt één booleaanse waarde (waar of onwaar).
-      * string[]: Vertegenwoordigt een array van tekenreekswaarden.
-      * getal[]: Vertegenwoordigt een array van numerieke waarden.
-      * boolean[]: Vertegenwoordigt een array van Booleaanse waarden.
-      * date: vertegenwoordigt één datumwaarde.
-      * date[]: Vertegenwoordigt een array met datumwaarden.
-      * array: vertegenwoordigt een algemene array met waarden van verschillende typen.
-      * object: vertegenwoordigt een formulierobject in plaats van de waarde rechtstreeks.
 
-     Het terugkeertype is niet case-sensitive.
+* `@return {type}`
+* `@returns {type}`
+  `{type}` vertegenwoordigt het terugkeertype van de functie. De toegestane retourtypen zijn:
+   * tekenreeks: vertegenwoordigt één tekenreekswaarde.
+   * getal: vertegenwoordigt één numerieke waarde.
+   * boolean: vertegenwoordigt één booleaanse waarde (waar of onwaar).
+   * string[]: Vertegenwoordigt een array van tekenreekswaarden.
+   * getal[]: Vertegenwoordigt een array van numerieke waarden.
+   * boolean[]: Vertegenwoordigt een array van Booleaanse waarden.
+   * date: vertegenwoordigt één datumwaarde.
+   * date[]: Vertegenwoordigt een array met datumwaarden.
+   * array: vertegenwoordigt een algemene array met waarden van verschillende typen.
+   * object: vertegenwoordigt een formulierobject in plaats van de waarde rechtstreeks.
 
-* **Persoonlijk**
+  Het terugkeertype is niet case-sensitive.
+
+#### Persoonlijk
+
 De aangepaste functie, gedeclareerd als private, komt niet voor in de lijst met aangepaste functies in de regeleditor van een adaptief formulier. Aangepaste functies zijn standaard openbaar. De syntaxis voor het declareren van een aangepaste functie als private is `@private`.
 
 Meer informatie over het definiëren van optionele parameters in JSDocs [klik hier](https://jsdoc.app/tags-param).
@@ -390,7 +400,7 @@ Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-functi
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1

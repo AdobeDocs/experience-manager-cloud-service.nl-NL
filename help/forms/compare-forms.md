@@ -4,9 +4,10 @@ description: Vergelijk twee verschillende formulieren op basis van de velden, in
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -21,6 +22,11 @@ Wanneer formulierauteurs twee verschillende formulieren moeten vergelijken op ba
 
    ![Aangepaste formulieren vergelijken](compare-two-forms.png)
 
-1. Als u op gebruikers klikt, worden twee formulieren in de voorbeeldmodus weergegeven, zoals in de afbeelding.
+1. Als u klikt, ziet u twee formulieren in de voorbeeldmodus. Het eerste formulier wordt geselecteerd als het basisformulier dat moet worden vergeleken met het tweede formulier, en de inhoud wordt vergeleken tussen de twee formulieren, die vergelijkbaar en gedifferentieerd zijn. De gedifferentieerde inhoud van het eerste formulier wordt als groen gemarkeerd, zoals in de afbeelding wordt getoond.
 
    ![Vergeleken formulieren](compared-forms.png)
+
+## Zie ook {#see-also}
+
+{{see-also}}
+

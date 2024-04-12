@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 0%
@@ -134,22 +134,22 @@ Met deze services kunt u:
 
   U kunt aangepaste functieinteracties nu stroomlijnen door:
 
-   * Nieuwe annotaties gebruiken om duidelijkere functiedefinities te bieden.
-   * Het gebruik van mechanismen voor het in cache plaatsen van aangepaste functies, wat leidt tot snellere formulierprestaties.
-   * Naadloos werken met globale objecten binnen aangepaste functies.
-   * Optionele parameters definiëren en gebruiken binnen aangepaste functies.
+   * [Nieuwe annotaties gebruiken om duidelijkere functiedefinities te bieden](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [Het gebruik van caching mechanismen voor douanefuncties die tot snellere vormprestaties leiden](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [Naadloos werken met globale objecten binnen aangepaste functies](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [Optionele parameters definiëren en gebruiken binnen aangepaste functies](/help/forms/create-and-use-custom-functions.md#parameter).
 
   Deze update brengt ook de volgende verhogingen aan de functionaliteit van de regelredacteur. U kunt:
 
-   * Implementeer krachtige logica &#39;when-then-else&#39; voor voorwaardelijke uitvoering.
+   * Krachtig implementeren [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) logica voor voorwaardelijke uitvoering.
    * Maak gebruik van moderne JavaScript-functies, zoals let- en pijlfuncties (ES10-ondersteuning).
    * Valideer of stel niet alleen gebieden, maar ook volledige panelen en vormen terug, die controle over gebruikersinteractie uitbreiden.
 
   Deze vooruitgang verstrekt een intuïtievere en krachtige ervaring voor het ontwerpen van regels en douanefuncties binnen de visuele regelredacteur.
 
-* **Meerdere versies van een adaptief formulier maken**: U kunt nu gemakkelijk variaties van bestaande formulieren beheren. Dit vereenvoudigt versiecontrole en vergemakkelijkt vergelijking voor vormoptimalisering, allen binnen één enkele, gestroomlijnde werkschema.
+* **[Meerdere versies van een adaptief formulier maken](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: U kunt nu gemakkelijk variaties van bestaande formulieren beheren. Dit vereenvoudigt versiecontrole en vergemakkelijkt vergelijking voor vormoptimalisering, allen binnen één enkele, gestroomlijnde werkschema.
 
-* **Adaptief formulier vergelijken**: U kunt nu gemakkelijk twee formulieren vergelijken om de verschillen tussen twee formulieren vast te stellen. Het vergemakkelijkt vlotte samenwerking door teamleden toe te laten om revisies te vergelijken en veranderingen efficiënt te bespreken.
+* **[Adaptief formulier vergelijken](/help/forms/compare-forms.md)**: U kunt nu gemakkelijk twee formulieren vergelijken om de verschillen tussen twee formulieren vast te stellen. Het vergemakkelijkt vlotte samenwerking door teamleden toe te laten om revisies te vergelijken en veranderingen efficiënt te bespreken.
 
 * **Verbeterde toegankelijkheid voor componenten voor scriptbare handtekeningen**: Deze update biedt aanzienlijke toegankelijkheidsverbeteringen voor de component Scripthandtekening:
 
@@ -179,7 +179,7 @@ Deze update zorgt voor een inclusievere ervaring voor gebruikers met een handica
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Met de Adobe Workfront Fusion Connector kunt u workflows ontwerpen die automatisch worden geactiveerd na verzending van een adaptief formulier. Stel bijvoorbeeld dat een workflow wordt gestart om een specifieke persoon de taak te geven de ingediende gegevens te beoordelen, zodat een aanvraag kan worden goedgekeurd of afgewezen op basis van de informatie die via het adaptieve formulier is vastgelegd. Deze gestroomlijnde integratie verbetert de efficiëntie en zorgt voor een nieuw niveau van automatisering van uw workflowprocessen.|
 
-* **Reader Extension Service**: AEM Forms Communication API&#39;s hebben de Extension Service van Readers geïntroduceerd zodat u functies zoals het invullen van formulieren en opmerkingen kunt toevoegen aan gewone PDF, waardoor ze interactief zijn voor gebruikers met de gratis Adobe Reader.
+* **[Reader Extension Service](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: AEM Forms Communication API&#39;s hebben de Extension Service van Readers geïntroduceerd zodat u functies zoals het invullen van formulieren en opmerkingen kunt toevoegen aan gewone PDF, waardoor ze interactief zijn voor gebruikers met de gratis Adobe Reader.
 
 * [Ondersteuning voor talen van rechts naar links](/help/forms/supporting-new-language-localization-core-components.md): Adaptieve Forms die is gebaseerd op Core Components, kan nu worden weergegeven in een RTL-taal (rechts naar links), zoals Arabisch, Perzisch en Urdu. De RTL-talen worden wereldwijd gesproken door meer dan 2 miljard mensen. Door een formulier in RTL-taal te gebruiken, kunt u het bereik van uw adaptieve formulieren uitbreiden naar deze verschillende doelgroepen en selecteren in RTL-markten. In bepaalde regio&#39;s is het ook een wettelijk mandaat om formulieren in de lokale taal te verstrekken. Door lokale talen aan te passen, opent u niet alleen deuren voor een breder publiek, maar zorgt u ook voor naleving van relevante wetten en regels.
 
