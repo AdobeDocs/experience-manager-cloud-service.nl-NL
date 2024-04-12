@@ -4,18 +4,26 @@ description: Met de Adaptive Forms-regeleditor kunt u dynamisch gedrag toevoegen
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
+exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '5557'
+source-wordcount: '5246'
 ht-degree: 0%
 
 ---
+
+
+<span class="preview"> Dit artikel bevat inhoud voor enkele functies die aan de release zijn toegevoegd. Deze pre-releasefuncties zijn alleen toegankelijk via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). Het pre-releaseprogramma heeft de volgende kenmerken:
+* Steun voor het uitvoeren van genestelde voorwaarden met wanneer-toen functionaliteit
+* Deelvensters en formulieren valideren of opnieuw instellen, inclusief velden
+* Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen aangepaste functies.
+</span>
 
 # Regels toevoegen aan een adaptief formulier (kerncomponenten) {#adaptive-forms-rule-editor}
 
 Met de functie voor regeleditors kunnen zakelijke gebruikers en ontwikkelaars regels schrijven voor adaptieve formulierobjecten. Met deze regels worden acties gedefinieerd die op formulierobjecten worden geactiveerd op basis van vooraf ingestelde voorwaarden, gebruikersinvoer en gebruikersacties op het formulier. Hierdoor wordt de ervaring met het invullen van formulieren verder gestroomlijnd, zodat u nauwkeurige en snelle informatie krijgt.
 
-De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De Regeleditor biedt een visuele editor voor alle gebruikers.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Enkele belangrijke handelingen die u met behulp van regels kunt uitvoeren op adaptieve formulierobjecten:
+De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De redacteur van de regel biedt een visuele redacteur voor alle gebruikers aan.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Enkele belangrijke handelingen die u met behulp van regels kunt uitvoeren op adaptieve formulierobjecten:
 
 * Een object tonen of verbergen
 * Een object in- of uitschakelen
@@ -59,13 +67,13 @@ Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelco
 
   Daarom als u een regel op gebied B (het voorwerp schrijft waarop u een voorwaarde) evalueert, gebruik de voorwaarde-actie constructie of het wanneer regeltype. Op dezelfde manier gebruikt u de handeling-voorwaarde constructie of toont of verbergt regeltype op gebied A.
 
-* Soms moet u meerdere handelingen uitvoeren op basis van één voorwaarde. In dergelijke gevallen wordt aangeraden de voorwaarde-actieconstruct te gebruiken. In deze constructie, kunt u een voorwaarde eens evalueren en veelvoudige actieverklaringen specificeren.
+* Soms moet u meerdere handelingen uitvoeren op basis van één voorwaarde. In dergelijke gevallen wordt het aanbevolen om de condition-action construct te gebruiken. Op deze wijze kunt u een voorwaarde één keer evalueren en meerdere actieinstructies opgeven.
 
-  Als u bijvoorbeeld velden B, C en D wilt verbergen op basis van de voorwaarde die controleert of de waarde is opgegeven in veld A, schrijft u één regel met een construct voor voorwaarde-actie of wanneer-regeltype op veld A en geeft u handelingen op om de zichtbaarheid van velden B, C en D te bepalen. Anders hebt u drie aparte regels nodig voor de velden B, C en D, waar elke regel de voorwaarde controleert en het desbetreffende veld weergeeft of verbergt. In dit voorbeeld is het efficiënter om het Wanneer regeltype op één object te schrijven in plaats van Regeltype tonen of verbergen op drie objecten.
+  Als u bijvoorbeeld de velden B, C en D wilt verbergen op basis van de voorwaarde dat de waarde wordt gecontroleerd die een gebruiker in veld A opgeeft, moet u één regel schrijven met voorwaarde-actieconstructie of Wanneer-regeltype op veld A en handelingen opgeven om de zichtbaarheid van de velden B, C en D te regelen. Anders hebt u drie afzonderlijke regels nodig voor velden B,  C en D, waarbij elke regel de voorwaarde controleert en het desbetreffende veld toont of verbergt. In dit voorbeeld is het efficiënter om het type Wanneer-regel op één object te schrijven in plaats van het teksttype Regel tonen of verbergen op drie objecten.
 
-* Als u een actie wilt activeren op basis van meerdere voorwaarden, wordt aangeraden een handeling-voorwaardenconstructie te gebruiken. Als u bijvoorbeeld veld A wilt weergeven en verbergen door de voorwaarden in de velden B, C en D te evalueren, gebruikt u Regeltype tonen of verbergen in veld A.
-* Gebruik een voorwaarde-handeling of handeling als de regel één handeling voor één voorwaarde bevat.
-* Als een regel op een voorwaarde controleert en een actie onmiddellijk bij het verstrekken van een waarde op een gebied of het weggaan van een gebied uitvoert, wordt het geadviseerd om een regel met voorwaarde-actie constructie of het wanneer regeltype op het gebied te schrijven waarop de voorwaarde wordt geëvalueerd.
+* Als u een handeling wilt activeren die op meerdere voorwaarden is gebaseerd, wordt het aanbevolen om een actie-voorwaardeconstructie te gebruiken. Als u bijvoorbeeld veld A wilt weergeven en verbergen door de voorwaarden voor velden B, C en D te evalueren, gebruikt u regeltype Tonen of Verbergen voor veld A.
+* Gebruik voorwaarde-actie of actievoorwaardeconstructie als de regel één handeling voor één voorwaarde bevat.
+* Als een regel op een voorwaarde controleert en direct een actie uitvoert wanneer een waarde wordt gerekend in een veld of bij het afsluiten van een veld, is het raadzaam om een regel met een voorwaarde-actieconstructie of het type Wanneer te schrijven in het veld waarop de voorwaarde wordt geëvalueerd.
 * De voorwaarde in wanneer regel wordt geëvalueerd wanneer een gebruiker de waarde van het voorwerp verandert waarop wanneer regel wordt toegepast. Als u echter wilt dat de actie wordt geactiveerd wanneer de waarde aan de serverzijde verandert, bijvoorbeeld bij het vooraf invullen van de waarde, kunt u het beste een When-regel schrijven die de actie activeert wanneer het veld wordt geïnitialiseerd.
 * Wanneer u regels schrijft voor vervolgkeuzelijsten, keuzerondjes of selectievakjes, worden de opties of waarden van deze formulierobjecten in het formulier vooraf ingevuld in de regeleditor.
 
@@ -91,9 +99,9 @@ De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
 * **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
-## Beschikbare regeltypen in de regeleditor {#available-rule-types-in-rule-editor}
+## Beschikbare regeltypen in regeleditor {#available-rule-types-in-rule-editor}
 
-De regeleditor biedt een set vooraf gedefinieerde regeltypen waarmee u regels kunt schrijven. Laten we elk regeltype in detail bekijken. Zie Regels schrijven voor meer informatie over het schrijven van regels](rule-editor.md#p-write-rules-p) in de regeleditor[.
+De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebruiken om regels te schrijven. Laten we elk regeltype in detail bekijken. Voor meer informatie over het schrijven van regels in regelredacteur, zie [Schrijfregels](rule-editor.md#p-write-rules-p).
 
 ### [!UICONTROL When] {#whenruletype}
 
@@ -109,9 +117,7 @@ In duidelijke woorden, typisch wanneer de regel als volgt gestructureerd is:
 
 `Then, do the following:`
 
-Handeling 2 op object B;
-EN
-Handeling 3 voor Object C;
+Actie 2 betreffende object B; EN actie 3 betreffende object C;
 
 `Else, do the following:`
 
@@ -120,7 +126,7 @@ _
 
 Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of een lijst, worden de opties bij het maken van een regel voor die component automatisch opgehaald en beschikbaar gemaakt voor de maker van de regel. U hoeft de optiewaarden niet opnieuw te typen.
 
-Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het creëren van de regel, worden de opties (radioknopen) automatisch teruggewonnen en ter beschikking gesteld van de regelschepper als volgt:
+Een lijst bevat bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het creëren van de regel, worden de opties (radioknopen) automatisch teruggewonnen en ter beschikking gesteld van de regelschepper als volgt:
 
 ![Meerdere waarden geeft opties weer](assets/multivaluefcdisplaysoptions.png)
 
@@ -193,9 +199,9 @@ De volgende afbeelding toont een voorbeeld van het dynamisch inschakelen van het
 
 **[!UICONTROL Remove Instance]** Hiermee wordt een instantie van het opgegeven herhaalbare deelvenster of de opgegeven tabelrij verwijderd.
 
-**[!UICONTROL Function Output]** Definieert een regel op basis van vooraf gedefinieerde of aangepaste functies.
+**[!UICONTROL Function Output]** Definieert een regel op basis van vooraf gedefinieerde functies of aangepaste functies.
 
-**[!UICONTROL Navigate to]** Hiermee navigeert u naar andere <!--Interactive Communications,--> adaptieve formulieren, andere middelen zoals afbeeldingen of documentfragmenten of een externe URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navigate to]** Navigeert naar andere <!--Interactive Communications,--> Adaptieve Forms, andere elementen, zoals afbeeldingen of documentfragmenten, of een externe URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL Dispatch Event]** De specifieke acties of gedragingen worden geactiveerd op basis van vooraf gedefinieerde voorwaarden of gebeurtenissen.
 
@@ -206,7 +212,7 @@ De **[!UICONTROL Set Value of]** met regeltype kunt u de waarde van een formulie
 
 De **Waarde instellen van** Regeltype is niet beschikbaar voor alle formulierobjecten, zoals deelvensters en werkbalkknoppen. Een standaardsetwaarde van regel heeft de volgende structuur:
 
-Stel de waarde van Object A in op:
+Waarde van Object A instellen op:
 
 (tekenreeks ABC) OF
 (objecteigenschap X van Object C) OF
@@ -218,7 +224,7 @@ Wanneer (optioneel):
 
 (Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is TRUE;
 
-In het volgende voorbeeld wordt de waarde van `Question2` als `True` en stelt de waarde in van `Result` als `correct`.
+In het volgende voorbeeld wordt de waarde van `Question2` as `True` geselecteerd en wordt de waarde van `Result` as ingesteld.`correct`
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -375,9 +381,9 @@ Met de schakelknop schakelt u, wanneer hierop wordt getikt, de formulierobjecten
 
 ### D. Visuele regeleditor {#visual-rule-editor}
 
-De visuele regelredacteur is het gebied op de visuele redacteurswijze van het gebruikersinterface van de regelredacteur waar u regels schrijft. Hiermee kunt u een regeltype selecteren en voorwaarden en handelingen definiëren. Wanneer u voorwaarden en handelingen in een regel definieert, kunt u formulierobjecten en -functies vanuit het deelvenster Formulierobjecten en Functies slepen en neerzetten.
+De visuele regelredacteur is het gebied op de visuele redacteurswijze van het gebruikersinterface van de regelredacteur waar u regels schrijft. Hiermee kunt u een regeltype selecteren en voorwaarden en handelingen definiëren. Wanneer u voorwaarden en handelingen in een regel definieert, kunt u formulierobjecten en -functies slepen en neerzetten vanuit het deelvenster Formulierobjecten en -functies.
 
-Zie Regels schrijven](rule-editor.md#p-write-rules-p) voor meer informatie over het gebruik van de Visuele regeleditor[.
+Voor meer informatie over het gebruiken van visuele regelredacteur, zie [Schrijfregels](rule-editor.md#p-write-rules-p).
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -396,7 +402,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 De **[!UICONTROL Done]** wordt gebruikt om een regel op te slaan. U kunt een onvolledige regel opslaan. Onvolledig zijn echter ongeldig en worden niet uitgevoerd. Opgeslagen regels voor een formulierobject worden weergegeven wanneer u de regeleditor de volgende keer start vanuit hetzelfde formulierobject. U kunt bestaande regels in die weergave beheren. Zie voor meer informatie [Regels beheren](rule-editor.md#p-manage-rules-p).
 
-Met **[!UICONTROL Cancel]** de knop worden alle wijzigingen die u in een regel hebt aangebracht, verwijderd en wordt de regeleditor gesloten.
+De **[!UICONTROL Cancel]** de knoop verwerpt om het even welke veranderingen u aan een regel aanbracht en sluit de regelredacteur.
 
 ## Schrijfregels {#write-rules}
 
@@ -502,7 +508,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Selecteer vervolgens het gemarkeerde gebied rond het expressieveld en selecteer **[!UICONTROL Extend Expression]**.
+1. Selecteer vervolgens in het gemarkeerde gebied rond het expressieveld en selecteer **[!UICONTROL Extend Expression]**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
@@ -568,83 +574,83 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Aangepaste functies in regeleditor {#custom-functions}
 
-U kunt douanefuncties in uw regelredacteur ook gebruiken. Raadpleeg het artikel voor instructies over het maken van aangepaste functies [Aangepaste functies in adaptieve Forms](/help/forms/create-and-use-custom-functions.md).
-
-Naast de functies die buiten de box vallen, zoals *Som van* die onder Uitvoer van Functies worden vermeld, kunt u douanefuncties schrijven die u vaak nodig hebt. Zorg ervoor dat de functie die u schrijft, vergezeld gaat van de `jsdoc` boven.
-
-Begeleidend `jsdoc` is vereist:
-
-* Als u aangepaste configuratie en beschrijving wilt
-* Omdat er meerdere manieren zijn om een functie in te declareren `JavaScript,` Met opmerkingen kunt u de functies bijhouden.
-
-De redacteur van de regel steunt syntaxis JavaScript ES2015 voor manuscripten en douanefuncties.
-Zie voor meer informatie [jsdoc.app](https://jsdoc.app/).
-
-Ondersteund `jsdoc` tags:
-
-* **Persoonlijk**
-Syntaxis: `@private`
-Een functie van het type private is niet opgenomen als een aangepaste functie.
-
-* **Naam**
-Syntaxis: `@name funcName <Function Name>`
-Alternatief `,` u kunt gebruiken: `@function funcName <Function Name>` **of** `@func` `funcName <Function Name>`.
-  `funcName` is de naam van de functie (geen spaties toegestaan).
-  `<Function Name>` is de weergavenaam van de functie.
-
-* **Parameter**
-Syntaxis: `@param {type} name <Parameter Description>`
-U kunt ook het volgende gebruiken: `@argument` `{type} name <Parameter Description>` **of** `@arg` `{type}` `name <Parameter Description>`.
-Geeft parameters weer die door de functie worden gebruikt. Een functie kan meerdere parametertags hebben, één tag voor elke parameter in de volgorde waarin deze voorkomt.
-  `{type}` vertegenwoordigt parametertype. Toegestane parametertypen zijn:
-
-   1. string
-   1. getal
-   1. boolean
-   1. bereik
-   1. string[]
-   1. getal[]
-   1. boolean[]
-   1. date
-   1. date[]
-   1. array
-   1. object
-
-  `scope` verwijst naar een speciaal globals object dat wordt geleverd door de runtime voor formulieren. Het moet de laatste parameter zijn en is niet zichtbaar aan de gebruiker in de regelredacteur. U kunt bereik gebruiken om toegang te krijgen tot leesbare formulier- en veldproxyobjecten voor het lezen van eigenschappen, gebeurtenissen die de regel hebben geactiveerd en een set functies om het formulier te bewerken.
-
-  `object` type wordt gebruikt om leesbaar veldobject in parameter door te geven aan een aangepaste functie in plaats van de waarde door te geven.
-
-  Alle parametertypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. Typen zijn niet hoofdlettergevoelig. Spaties zijn niet toegestaan in de parameternaam.  Parameterbeschrijving kan meerdere woorden bevatten.
-
-* **Optionele parameter**
-Syntaxis: `@param {type=} name <Parameter Description>`
-U kunt ook het volgende gebruiken: `@param {type} [name] <Parameter Description>`
-Standaard zijn alle parameters verplicht. U kunt een parameter optioneel markeren door `=` in het type van de parameter of door de naam van de parameter tussen vierkante haken te plaatsen.
-
-  Laten we bijvoorbeeld declareren `Input1` als optionele parameter:
-   * `@param {type=} Input1`
-   * `@param {type} [Input1]`
-
-* **Retourtype**
-Syntaxis: `@return {type}`
-U kunt ook `@returns {type}`.
-Voegt informatie over de functie toe, zoals zijn doel.
-{type} vertegenwoordigt het terugkeertype van de functie. Toegestane retourtypen zijn:
-
-   1. string
-   2. getal
-   3. boolean
-   4. string[]
-   5. getal[]
-   6. boolean[]
-   7. date
-   8. date[]
-   9. array
-   10. object
-
-  Alle andere retourneringstypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. De types van terugkeer zijn niet case-sensitive.
+Naast de functies die buiten de box vallen, zoals *Som van* die zijn vermeld in **Uitvoer functies**, kunt u douanefuncties in uw regelredacteur ook gebruiken. De redacteur van de regel steunt syntaxis JavaScript ECMAScript 2019 voor manuscripten en douanefuncties. Raadpleeg het artikel voor instructies over het maken van aangepaste functies [Aangepaste functies in adaptieve Forms](/help/forms/create-and-use-custom-functions.md).
 
 <!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
+
+Accompanying `jsdoc` is required:
+
+* If you want custom configuration and description
+* Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+  All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
+
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -652,7 +658,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >

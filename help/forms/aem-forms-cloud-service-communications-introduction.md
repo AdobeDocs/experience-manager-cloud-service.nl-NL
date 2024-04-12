@@ -5,9 +5,9 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1400'
 ht-degree: 1%
 
 ---
@@ -171,21 +171,22 @@ De DocAssurance-service bevat de API&#39;s voor handtekeningen en versleuteling:
 
 ### Handtekening-API&#39;s
 
-Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen. Omdat beveiligingsfuncties op het document zelf worden toegepast, blijft het document gedurende de gehele levenscyclus beveiligd en beheerd. Een document blijft veilig buiten de firewall, wanneer het offline wordt gedownload en wanneer het terug naar uw organisatie wordt verzonden. U kunt de volgende taken uitvoeren met de handtekening-API&#39;s:
+Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> De beveiligingsfuncties worden toegepast op het document zelf. Het document blijft gedurende de gehele levenscyclus beveiligd en beheerd. Het document blijft beveiligd buiten de firewall, wanneer het offline wordt gedownload en wanneer het wordt teruggestuurd naar uw organisatie. U kunt de volgende taken uitvoeren met de handtekening-API&#39;s:
 
-* Voeg een handtekeningveld toe aan een PDF-document.
+* Voeg een zichtbaar handtekeningveld toe aan een PDF-document.
+* Voeg een onzichtbaar handtekeningveld toe aan een PDF-document.
 * Onderteken het opgegeven handtekeningveld in een PDF-document.
 * Een PDF-document certificeren
 
 ### Coderings-API&#39;s
 
-Met de API&#39;s voor versleuteling kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document met een wachtwoord is versleuteld, moet de gebruiker het wachtwoord voor openen opgeven voordat het document in Adobe Reader of Adobe Acrobat kan worden weergegeven. Als een PDF-document met een certificaat is versleuteld, moet de gebruiker het PDF-document decoderen met de openbare sleutel die overeenkomt met het certificaat (de persoonlijke sleutel) waarmee het PDF-document is versleuteld.
+Met de API&#39;s voor versleuteling kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document met een wachtwoord is versleuteld, moet de gebruiker het wachtwoord voor openen opgeven voordat het document in Adobe Reader of Adobe Acrobat kan worden weergegeven. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 U kunt deze taken uitvoeren met de API&#39;s voor codering:
 
 * Codeer een PDF-document met een wachtwoord.
 * Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document.
-* Hiermee haalt u het type beveiliging op dat op een PDF-document is toegepast.
+* Retourneer het beveiligingstype dat op een PDF-document is toegepast.
 
 Zowel handtekening-API&#39;s als versleutelings-API&#39;s zijn [Synchrone API&#39;s](#types-of-communications-apis-types).
 
