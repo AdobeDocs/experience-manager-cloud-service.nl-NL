@@ -4,9 +4,9 @@ description: Leer hoe te om uw AEM Contentfragmenten van de console en de redact
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
+source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2643'
 ht-degree: 0%
 
 ---
@@ -448,6 +448,7 @@ Het deelvenster Filter biedt de volgende opties:
 * een selectie van de voorspelling;
    * inclusief modellen van inhoudsfragmenten, lokalisatie, tags, statusvelden, enzovoort
    * een of meer voorspelden kunnen worden geselecteerd en gecombineerd om het filter te maken
+* **Submapitems uitsluiten**, zodat u inhoudsfragmenten die zijn opgeslagen in submappen kunt uitsluiten
 * de mogelijkheid **Opslaan** uw configuratie
 * de optie om een opgeslagen zoekfilter op te halen voor hergebruik
 

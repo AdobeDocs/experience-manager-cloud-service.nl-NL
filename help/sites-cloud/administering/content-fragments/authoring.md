@@ -4,9 +4,9 @@ description: Begrijp hoe u inhoud voor uw inhoudsfragmenten ontwerpt en maak var
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2381'
 ht-degree: 0%
 
 ---
@@ -370,6 +370,27 @@ In de **Versiehistorie** in het rechterdeelvenster worden de details van de huid
 >Er wordt een nieuwe versie gemaakt wanneer het inhoudsfragment wordt gepubliceerd.
 
 ![Inhoudsfragmenteditor - Overzicht van versiegeschiedenis](assets/cf-authoring-version-history-overview.png)
+
+### Versie vergelijken {#compare-version}
+
+Voor een inhoudsfragment kunt u een vorige versie vergelijken met de huidige versie.
+
+Een vorige versie vergelijken met de huidige versie:
+
+1. Selecteer het pictogram met drie punten naast de versie.
+
+1. Selecteren **Ververgelijken**.
+
+![Content Fragment Editor - Versiegeschiedenis vergelijken](assets/cf-authoring-version-history-compare.png)
+
+Hiermee opent u een weergave waarin de verschillen tussen de huidige versie van de inhoud en de geselecteerde vorige versie van het inhoudsfragment worden weergegeven. Van de **Variaties met wijzigingen** kunt u selecteren om de verschillen met de hoofdinhoud en/of inhoud van een variatie te zien.
+
+Verschillen worden aangegeven met kleur:
+
+* Groen: geeft inhoud aan die is toegevoegd (aan de huidige versie)
+* Rood: geeft aan dat inhoud is verwijderd (uit de huidige versie)
+
+![Content Fragment Editor - Versiegeschiedenis vergelijken versies](assets/cf-authoring-version-history-compare-versions.png)
 
 ### Versie herstellen {#revert-version}
 
