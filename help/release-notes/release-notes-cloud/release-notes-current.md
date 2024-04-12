@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,13 @@ De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] hui
 
 U vindt de meest recente opmerkingen in de onderhoudsrelease [hier](/help/release-notes/maintenance/latest.md).
 
-## Video vrijgeven {#release-video}
+<!-- ## Release Video {#release-video}
 
-Bekijk de video Overzicht van de release van maart 2024 voor een overzicht van de functies die zijn toegevoegd in de release van 2024.3.0:
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
 
@@ -170,8 +172,6 @@ Met deze services kunt u:
    * Wanneer een handtekening wordt getypt, kunnen gebruikers van schermlezers de tekst horen die wordt gebruikt om de handtekening te maken.
 
 Deze update zorgt voor een inclusievere ervaring voor gebruikers met een handicap door navigatie, helderheid en feedback voor de component Krabbelhandtekening te verbeteren.
-
-
 
 ### Programma voor vroege adoptie {#forms-early-adopter}
 
