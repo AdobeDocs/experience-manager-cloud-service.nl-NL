@@ -2,9 +2,9 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: de05abac3620b254343196a283cef198f434cfca
+source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2876'
 ht-degree: 1%
 
 ---
@@ -55,11 +55,24 @@ Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van 
    > Als de instelling **Sluitereffect** wordt toegelaten voor de opname, stelt het de volledige bestaande bewaarplaats met inbegrip van de gebruikerstoestemmingen op de instantie van de doelCloud Service opnieuw in. Dit opnieuw instellen geldt ook voor een beheerder die is toegevoegd aan de **beheerders** groep en die gebruiker moet opnieuw aan de beheerdersgroep worden toegevoegd om een opname te beginnen.
 
    * **Pre-kopie:** Kies de optie `Pre-copy` value
-      * U kunt de optionele stap voor het kopiëren uitvoeren om de opname aanzienlijk te versnellen. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
+      * U kunt de optionele pre-copy stap uitvoeren om de inname aanzienlijk te versnellen. Zie [Inschakelen met AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) voor meer informatie .
       * Als het opnemen met pre-copy wordt gebruikt (voor S3 of Azure Data Store), wordt het geadviseerd om te lopen `Author` Inname eerst alleen. Zo versnelt u de `Publish` inname wanneer deze later wordt uitgevoerd.
 
    >[!IMPORTANT]
    > U kunt een opname aan het bestemmingsmilieu in werking stellen slechts als u tot lokaal behoort **AEM** groep op de de auteursdienst van de bestemmingsCloud Service. Als u geen inname kunt starten, zie [Kan inname niet starten](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) voor meer informatie .
+
+1. Wanneer de keuze voor inname eenmaal is gemaakt, wordt een schatting van de duur van de inname weergegeven. Dit is een inspanningsschatting gebaseerd op historische gegevens van vergelijkbare ingestie.
+
+   * Deze schatting wordt alleen berekend en weergegeven als de waarden voor &#39;grootte controleren&#39; van de extractie zijn verzameld en beschikbaar zijn.
+   * Deze waarde is een schatting en mag, hoewel intelligent berekend, niet als exact worden beschouwd. De werkelijke duur kan door verschillende factoren worden gewijzigd.
+   * Tijdens het uitvoeren van de opname is deze waarde ook beschikbaar in het dialoogvenster Duur, dat u kunt openen via &quot;**Duur weergeven**&quot; de werking van de inname.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_estimate"
+>title="Schatting van de opzettingsduur"
+>abstract="Een geschatte duur van een bepaalde inname kan worden weergegeven om een algemene indruk te geven van de duur ervan. De nauwkeurigheid ervan is beperkt."
+
+![afbeelding](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. Klikken **Ingest**.
 
