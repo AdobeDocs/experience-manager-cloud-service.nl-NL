@@ -3,7 +3,7 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
+source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 0%
@@ -241,3 +241,4 @@ U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/imp
 ## Migratiehulpmiddelen {#migration-tools}
 
 U vindt een volledige lijst met de releases van de migratiehulpmiddelen [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
