@@ -2,9 +2,9 @@
 title: Aan de slag met AEM headless as a Cloud Service
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3057'
+source-wordcount: '3068'
 ht-degree: 0%
 
 ---
@@ -298,3 +298,4 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder
 * [REST-API voor middelen](/help/assets/content-fragments/assets-api-content-fragments.md) - Technische documentatie die verklaart hoe te om de Fragmenten van de Inhoud (en andere activa) tot stand te brengen en te wijzigen
 * [Blijvende query&#39;s](/help/headless/graphql-api/persisted-queries.md) - Technische documentatie over gepresteerde vragen in AEM
 * [Hoofdletters en headless in AEM](/help/implementing/developing/headful-headless.md) - Een volledige discussie over de niveaus van de ontelbare integratie die in AEM beschikbaar zijn
+* De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.

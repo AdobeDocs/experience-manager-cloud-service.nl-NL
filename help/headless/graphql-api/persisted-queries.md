@@ -3,10 +3,10 @@ title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten voor optimale prestaties. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '1869'
-ht-degree: 0%
+source-wordcount: '1952'
+ht-degree: 1%
 
 ---
 
@@ -406,7 +406,7 @@ De standaard configuratie OSGi voor publiceer instanties:
 
 Standaard worden de `PersistedQueryServlet` verzendt een `200` reactie wanneer het een vraag uitvoert, ongeacht het daadwerkelijke resultaat.
 
-U kunt [vorm de montages OSGi](/help/implementing/deploying/configuring-osgi.md) voor de **Configuratie van blijvende query-service** om te bepalen welke statuscode door wordt geretourneerd `/execute.json/persisted-query` eindpunt, wanneer er een fout in de persisted vraag is.
+U kunt [vorm de montages OSGi](/help/implementing/deploying/configuring-osgi.md) voor de **Configuratie van blijvende query-service** om te controleren of meer gedetailleerde statuscodes door de `/execute.json/persisted-query` eindpunt, wanneer er een fout in de persisted vraag is.
 
 >[!NOTE]
 >
@@ -414,13 +414,20 @@ U kunt [vorm de montages OSGi](/help/implementing/deploying/configuring-osgi.md)
 
 Het veld `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) kan worden gedefinieerd als vereist:
 
-* `false` (standaardwaarde): het maakt niet uit of de voortgezette query succesvol is of niet. De `/execute.json/persisted-query` retourneert de statuscode `200` en de `Content-Type` header returned is `application/json`.
+* `false` (standaardwaarde): het maakt niet uit of de voortgezette query succesvol is of niet. De `Content-Type` header returned is `application/json`en de `/execute.json/persisted-query` *altijd* retourneert de statuscode `200`.
 
-* `true`: Het eindpunt wordt geretourneerd `400` of `500` zoals aangewezen wanneer er om het even welke vorm van fout bij het runnen van de persisted vraag is. De geretourneerde `Content-Type` is `application/graphql-response+json`.
+* `true`: De geretourneerde `Content-Type` is `application/graphql-response+json`, en het eindpunt zal de aangewezen antwoordcode terugkeren wanneer er om het even welke vorm van fout bij het runnen van de persisted vraag is:
+
+  | Code | Beschrijving |
+  |--- |--- |
+  | 200 | Geslaagd antwoord |
+  | 400 | Geeft aan dat er koppen ontbreken of dat er een probleem is met het voortgezette querypad. Configuratienaam niet opgegeven, achtervoegsel niet opgegeven en andere.<br>Zie [Problemen oplossen - GraphQL-eindpunt niet geconfigureerd](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | Kan de gewenste bron niet vinden. Bijvoorbeeld, is het eindpunt Graphql niet beschikbaar op de server.<br>Zie [Problemen oplossen - Ontbrekend pad in de GraphQL-URL voor blijvende query](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Interne serverfout. Bijvoorbeeld validatiefouten, persistentiefout en andere. |
 
   >[!NOTE]
   >
-  >Zie https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Zie ook https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## De URL van de query coderen voor gebruik door een app {#encoding-query-url}
 

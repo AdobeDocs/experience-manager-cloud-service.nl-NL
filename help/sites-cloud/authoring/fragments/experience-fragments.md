@@ -2,9 +2,9 @@
 title: Ervaar fragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2083'
 ht-degree: 2%
 
 ---
@@ -38,6 +38,7 @@ Zonder Fragments van de Ervaring, zou de auteur dat fragment moeten kopiëren en
 De Fragmenten van de ervaring elimineren de behoefte aan exemplaar/deeg.
 * Om het hoofdloze gebruik-geval CMS te steunen.
 Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan de klant. Een systeem/aanraakpunt van derden zou deze ervaring gebruiken en vervolgens leveren aan de gebruiker.
+* Met [Beheer van meerdere sites (MSM)](/help/sites-cloud/administering/msm/overview.md); een ervaringsfragment maakt deel uit van een pagina. Dit geldt zowel voor de afzonderlijke fragmenten als voor de mappen waarin deze zich bevinden.
 
 >[!NOTE]
 >
@@ -236,6 +237,10 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
 
    * **Variatie**
    * **Variatie als live-kopie**.
+
+     >[!NOTE]
+     >
+     >Als u een initiële variatie maakt als Live kopie, wordt de titel overgenomen door de bron van Live kopie als de hoofdvariatie te gebruiken.
 
 1. Definieer de vereiste eigenschappen:
 

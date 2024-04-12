@@ -2,9 +2,9 @@
 title: Basisverwerking
 description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
+source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -75,10 +75,11 @@ Vanuit Navigatie zijn de beschikbare consoles:
 | Assets | Met de middelenconsole kunt u importeren en beheren [digitale elementen, zoals afbeeldingen, video&#39;s, documenten en audiobestanden](/help/assets/overview.md). Deze elementen kunnen vervolgens worden gebruikt door elke site die op dezelfde AEM wordt uitgevoerd. U kunt ook maken en beheren [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) vanaf de middelenconsole. |
 | Personalisatie | Deze console biedt een raamwerk van gereedschappen voor [doelgerichte inhoud ontwerpen en persoonlijke ervaringen presenteren](/help/sites-cloud/authoring/personalization/overview.md). |
 | Inhoudsfragmenten | [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Met deze sjablonen kunt u gestructureerde inhoud voorbereiden, klaar voor gebruik op meerdere locaties/via meerdere kanalen, en ideaal voor zowel paginaontwerp als levering zonder kop. |
+| Variaties genereren | [Variaties genereren](/help/generative-ai/generate-variations.md) Gebruikt generatieve Intelligentie van de Kunst (AI) om inhoudvariaties tot stand te brengen die op herinneringen worden gebaseerd; deze herinneringen worden of verstrekt door Adobe of gecreeerd, en beheerd, door gebruikers. |
 
 ## Deelvenster Gereedschappen {#tools-panel}
 
-In de **Gereedschappen** paneel heeft een zijpaneel dat een waaier van categorieën bevat, die groeperen gelijkaardige consoles. De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale middelen en andere aspecten van de opslagplaats voor inhoud te beheren. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+De **Gereedschappen** paneel heeft een zijpaneel dat een waaier van categorieën bevat, die groeperen gelijkaardige consoles. De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale middelen en andere aspecten van de opslagplaats voor inhoud te beheren.
 
 ![Deelvenster Gereedschappen](assets/basic-handling-tools.png)
 

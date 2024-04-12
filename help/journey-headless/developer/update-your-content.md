@@ -2,9 +2,9 @@
 title: Uw inhoud bijwerken via AEM Assets API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u de REST API kunt gebruiken om toegang te krijgen tot de inhoud van de Content Fragments en deze bij te werken.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -255,6 +255,8 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 >[!NOTE]
 >
 >Zie de API-naslaggids [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 ### Lezen/Levering {#read-delivery}
 
@@ -333,3 +335,4 @@ U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Alle
 * [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.

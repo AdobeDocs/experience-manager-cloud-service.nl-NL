@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1625'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 0%
 ## Overzicht {#overview}
 
 De [!DNL Assets] Met de HTTP-API kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, uitvoeringen en opmerkingen, en voor gestructureerde inhoud met gebruik van [!DNL Experience Manager] Inhoudsfragmenten Het wordt blootgesteld bij `/api/assets` en is geïmplementeerd als REST API. Hieronder vallen [ondersteuning voor inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 De API openen:
 
@@ -40,9 +44,17 @@ A [Inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een 
 
 Zie voor meer informatie [Ondersteuning voor inhoudsfragmenten in het dialoogvenster [!DNL Experience Manager Assets] HTTP-API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
+
 ## Gegevensmodel {#data-model}
 
 De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (voor standaardactiva) bloot. Bovendien worden meer gedetailleerde elementen beschikbaar gesteld voor aangepaste gegevensmodellen die gestructureerde inhoud in Content Fragments beschrijven. Zie [Gegevensmodellen van inhoudsfragmenten](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) voor nadere informatie.
+
+>[!NOTE]
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 ### Mappen {#folders}
 
@@ -75,6 +87,10 @@ In [!DNL Experience Manager] een element bevat de volgende elementen:
 * Optionele opmerkingen.
 
 Zie voor informatie over elementen in inhoudsfragmenten [Ondersteuning voor inhoudsfragmenten in Experience Manager Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 In [!DNL Experience Manager] een map bevat de volgende componenten:
 

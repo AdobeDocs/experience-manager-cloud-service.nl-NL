@@ -4,9 +4,9 @@ description: Leer hoe te om uw AEM Contentfragmenten van de console en de redact
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2629'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,8 @@ Zie voor meer informatie:
 
 Selecteren **Inhoudsfragmenten** Hiermee opent u de console op een nieuw tabblad.
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
 
 Hier kunt u zien dat er drie hoofdgebieden zijn:
@@ -84,6 +86,7 @@ Hier kunt u zien dat er drie hoofdgebieden zijn:
    * Hier kunt u de mappenstructuur verbergen of weergeven
    * U kunt een specifieke vertakking van de boomstructuur selecteren
    * Dit kan worden aangepast om geneste mappen weer te geven
+   * U kunt kiezen tussen het weergeven van inhoudsfragmenten of [Activa](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * Het hoofd-/rechterdeelvenster - vanaf hier kunt u:
    * Zie de lijst met alle inhoudsfragmenten in de geselecteerde vertakking van de structuur:
       * Inhoudsfragmenten uit de geselecteerde map en alle onderliggende mappen worden weergegeven:
@@ -131,6 +134,8 @@ Bepaalde acties zijn beschikbaar via de console, zonder een specifiek inhoudsfra
 #### Handelingen voor een (geselecteerd) inhoudsfragment {#actions-selected-content-fragment}
 
 Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toegespitst op de acties die beschikbaar zijn voor dat fragment. U kunt ook meerdere fragmenten selecteren. De selectie van acties wordt dienovereenkomstig aangepast.
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - toolbar voor een geselecteerd fragment](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -367,6 +372,8 @@ Wanneer het relevante dialoogvenster wordt geopend, kunt u de juiste service sel
 
 ## Zoeken en vervangen {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 De **Vervangen** Er is een handeling beschikbaar (op de bovenste werkbalk) om opgegeven tekst in geselecteerde inhoudsfragmenten te zoeken en te vervangen.
 
 ![Zoeken en vervangen](assets/cf-managing-find-replace.png)
@@ -379,8 +386,9 @@ Voordat de validatiecriteria worden vervangen, worden deze gecontroleerd en word
 >
 >Als u meer dan 20 inhoudsfragmenten selecteert, wordt het bericht weergegeven **Kan niet vinden en vervangen**.
 
-![Vervangen bevestigen](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![Vervangen bevestigen](assets/cf-managing-confirm-replace.png)
 
 ## Een fragment verwijderen {#deleting-a-fragment}
 
@@ -445,6 +453,8 @@ Het deelvenster Filter biedt de volgende opties:
 
 Als deze optie is geselecteerd, wordt **Filteren met** worden weergegeven (onder het vak Zoeken). Ze kunnen van daaruit worden geschrapt. Bijvoorbeeld:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Content Fragments console - Filteren](assets/cf-managing-console-filter.png)
 
 ### Snel filteren {#fast-filtering}
@@ -467,9 +477,13 @@ Wanneer deze optie is geselecteerd, wordt deze weergegeven als een filtervoorspe
 
 Het zoekvak ondersteunt zoeken in volledige tekst. Voer de zoektermen in het zoekvak in:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Content Fragments console - Search](assets/cf-managing-console-search-specification.png)
 
 De geselecteerde resultaten worden weergegeven:
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - Search results](assets/cf-managing-console-search-results.png)
 

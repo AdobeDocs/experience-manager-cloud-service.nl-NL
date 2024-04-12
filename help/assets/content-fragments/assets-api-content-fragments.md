@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service Content Fragments Support in 
 description: Meer informatie over ondersteuning voor Content Fragments in de HTTP API Middelen, een belangrijke Adobe Experience Manager-functie voor headless-levering.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1804'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 0%
 | AEM as a Cloud Service | Dit artikel |
 
 Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een belangrijk stuk van de  (AEM) hoofdloze leveringseigenschap van Adobe Experience Manager.
+
+>[!NOTE]
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 >[!NOTE]
 >
@@ -91,6 +95,10 @@ De HTTP-methode bepaalt de uit te voeren bewerking:
 >De parameters request body en/of URL kunnen worden gebruikt om sommige van deze bewerkingen te configureren; definieer bijvoorbeeld dat een map of een element moet worden gemaakt door een **POST** verzoek.
 
 De exacte indeling van ondersteunde aanvragen wordt gedefinieerd in het dialoogvenster [API-naslag](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentatie.
+
+>[!NOTE]
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 ### Transactioneel gedrag {#transactional-behavior}
 
@@ -167,6 +175,10 @@ Zie voor meer informatie over functies die beschikbaar zijn via de API:
 
 * De [REST-API voor middelen](/help/assets/mac-api-assets.md)
 * [Typen entiteiten](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), waarbij de specifieke kenmerken van elk ondersteund type (voor zover relevant voor inhoudsfragmenten) worden toegelicht
+
+>[!NOTE]
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 ### Paginering {#paging}
 
@@ -262,6 +274,8 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 >[!NOTE]
 >
 >Zie de [API-naslag](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Met name: [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 ## Beperkingen {#limitations}
 
@@ -352,6 +366,8 @@ Zie hier voor gedetailleerde API-referenties:
 * [Elementen HTTP-API](/help/assets/mac-api-assets.md)
 
    * [Beschikbare functies](/help/assets/mac-api-assets.md#available-features)
+
+* De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 ## Aanvullende bronnen {#additional-resources}
 

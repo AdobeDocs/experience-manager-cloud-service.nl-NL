@@ -1,13 +1,14 @@
 ---
 title: Variaties genereren
-description: Meer informatie over Variaties genereren, toegankelijk via de Sidekick van Edge Delivery Services
+description: Meer informatie over Variaties genereren, toegankelijk via AEM as a Cloud Service en de Sidekick van Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3257'
 ht-degree: 0%
 
 ---
+
 
 # Variaties genereren {#generate-variations}
 
@@ -15,11 +16,12 @@ Als u op zoek bent naar een manier om uw digitale kanalen te optimaliseren en he
 
 U kunt [toegang Variaties genereren](#access-generate-variations) van:
 
-<!-- 
-* [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
--->
-
+* [binnen Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [de Sidekick van AEM Edge Delivery Services](#access-aem-sidekick)
+
+>[!NOTE]
+>
+>Als u in alle gevallen Variaties genereren wilt gebruiken, moet u ervoor zorgen dat de optie [toegangsvoorwaarden](#access-prerequisites) is voldaan.
 
 U kunt dan:
 
@@ -245,18 +247,19 @@ Een nieuw tekstveld met de naam toevoegen **Tint van stem** gebruikt u de volgen
 
 ![Variaties genereren - prompt bewerkt met stemtoontoon](assets/generate-variations-prompt-edited.png)
 
-#### Voorbeeld: Nieuw vervolgkeuzeveld toevoegen - Paginatype {#example-add-new-dropdown-field-page-type}
+<!--
+#### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
 
-Een invoerveld maken met Paginatype dat een vervolgkeuzelijst biedt:
+To create an input field Page Type providing a dropdown selection:
 
-1. Een werkblad maken met de naam `pagetype.xls` in de map op hoofdniveau van de mapstructuur.
-1. Het werkblad bewerken:
+1. Create a spreadsheet named `pagetype.xls` in the top-level directory of your folder structure.
+1. Edit the spreadsheet:
 
-   1. Twee kolommen maken: **Sleutel** en **Waarde**.
-   1. In de **Sleutel** voert u labels in die in de vervolgkeuzelijst worden weergegeven.
-   1. In de **Waarde** de sleutelwaarde beschrijven zodat heeft de generatieve AI context.
+   1. Create two columns: **Key** and **Value**.
+   1. In the **Key** column, enter labels that will appear in the dropdown.
+   1. In the **Value** column, describe the key value so the generative AI has context.
 
-1. Raadpleeg de titel van het spreadsheet en het juiste type in de vraag.
+1. In your prompt, refer to the title of the spreadsheet along with the appropriate type. 
 
    ```prompt
    {{@page_type, 
@@ -265,6 +268,7 @@ Een invoerveld maken met Paginatype dat een vervolgkeuzelijst biedt:
      spreadsheet=pagetype
    }}
    ```
+-->
 
 ## Een prompt maken {#create-prompt}
 
@@ -390,6 +394,95 @@ Als u bijvoorbeeld een publiek wilt toevoegen vanuit een bestand op Google Drive
 
    ![Variaties genereren - CSV-bestand voor publiek toevoegen](assets/generate-variations-audiences-csv-save.png)
 
+## Generatief actieverbruik {#generative-action-usage}
+
+Gebruiksbeheer is afhankelijk van de actie die wordt uitgevoerd:
+
+* Variaties genereren
+
+  Eén generatie van een kopieervariant is gelijk aan één generatieve actie. Als klant hebt u een aantal generatieve acties die bij uw AEM licentie worden geleverd. Zodra de basisrechten zijn verbruikt, kunt u extra handelingen aanschaffen.
+
+  >[!NOTE]
+  >
+  >Zie [Adobe Experience Manager: Cloud Service | Productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over de basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
+
+* Adobe Express
+
+  Het gebruik van het genereren van afbeeldingen wordt afgehandeld via rechten voor Adobe Express en [generatieve kredieten](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+
+## Toegang genereert variaties {#access-generate-variations}
+
+Na het vervullen van de eerste vereisten kunt u tot Generate Variaties van AEM as a Cloud Service of de Sidekick van de Edge Delivery Services toegang hebben.
+
+### Toegangsvoorwaarden {#access-prerequisites}
+
+Als u Variaties genereren wilt gebruiken, moet u ervoor zorgen dat aan de voorwaarden is voldaan:
+
+* [Toegang tot Experience Manager as a Cloud Service met Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services)
+
+#### Toegang tot Experience Manager as a Cloud Service met Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
+
+Gebruikers die toegang nodig hebben om variaties te genereren, moeten recht hebben op een as a Cloud Service omgeving met Edge Delivery Services voor Experience Managers.
+
+>[!NOTE]
+>
+>Als uw as a Cloud Service AEM Sites-contract geen Edge Delivery Services bevat, moet u een nieuw contract ondertekenen om toegang te krijgen.
+>
+>Neem contact op met uw accountteam om te bespreken hoe u met Edge Delivery Services naar AEM Sites kunt gaan as a Cloud Service.
+
+Als u toegang wilt verlenen aan specifieke gebruikers, wijst u hun gebruikersaccount toe aan het desbetreffende productprofiel. Zie [AEM productprofielen toewijzen voor meer informatie](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+
+### Toegang tot AEM as a Cloud Service {#access-aemaacs}
+
+U kunt variaties genereren via het dialoogvenster [Deelvenster Navigatie](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) van AEM as a Cloud Service:
+
+![Navigatievenster](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+
+### Toegang van de AEM Sidekick {#access-aem-sidekick}
+
+Één of andere configuratie is nodig alvorens u tot Generate Variaties van de Sidekick (van Edge Delivery Services) kunt toegang hebben.
+
+1. Zie het document [De AEM Sidekick installeren](https://www.aem.live/docs/sidekick-extension) voor hoe te om de Sidekick te installeren en te vormen.
+
+1. Om te gebruiken produceer Variaties in de Sidekick (van Edge Delivery Services), omvat de volgende configuratie in uw projecten van Edge Delivery Services onder:
+
+   * `tools/sidekick/config.json`
+
+   Dit moet in uw bestaande configuratie worden samengevoegd en dan opgesteld.
+
+   Bijvoorbeeld:
+
+   ```prompt
+   {
+     // ...
+     "plugins": [
+       // ...
+       {
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
+       }
+       // ...
+     ]
+   }
+   ```
+
+1. Mogelijk moet u er dan voor zorgen dat gebruikers [Toegang tot Experience Manager as a Cloud Service met Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
+
+1. U kunt de functie vervolgens openen door **Variaties genereren** op de werkbalk van de Sidekick:
+
+   ![Variaties genereren - toegang vanuit AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+
+## Aanvullende informatie {#further-information}
+
+Voor meer informatie kunt u ook lezen:
+
+* [GenAI Genereer variaties op GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Edge Delivery Services experimenteren](https://www.aem.live/docs/experimentation)
+
 ## Veelgestelde vragen {#faqs}
 
 ### Opgemaakte uitvoer {#formatted-outpu}
@@ -452,106 +545,7 @@ Bijvoorbeeld https://experience.adobe.com/#/aem/generate-variations
 
 Als u naar de versie 2.0.0 gaat, worden aangepaste sjablonen met aanwijzingen afgebroken, zodat deze niet beschikbaar zijn.
 
-Zie de [releaseopmerkingen voor v2.0.0 voor instructies over het ophalen van deze bestanden](#release-notes-2-0-0-retrieve-prompt-templates).
-
-## Generatief actieverbruik {#generative-action-usage}
-
-Gebruiksbeheer is afhankelijk van de actie die is uitgevoerd:
-
-* Variaties genereren
-
-  Eén generatie van een kopieervariant is gelijk aan één generatieve actie. Als klant hebt u een aantal generatieve acties die bij uw AEM licentie worden geleverd. Zodra de basisrechten zijn verbruikt, kunt u extra handelingen aanschaffen.
-
-  >[!NOTE]
-  >
-  >Zie [Adobe Experience Manager: Cloud Service | Productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) voor meer informatie over de basisrechten en neem contact op met uw accountteam als u meer generatieve acties wilt aanschaffen.
-
-* Adobe Express
-
-  Het gebruik van het genereren van afbeeldingen wordt afgehandeld via rechten voor Adobe Express en [generatieve kredieten](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
-
-## Toegang genereert variaties {#access-generate-variations}
-
-<!--
-### Access from AEM as a Cloud Service {#access-aemaacs}
-
-Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
-
-![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
--->
-
-### Toegang van de AEM Sidekick {#access-aem-sidekick}
-
-Één of andere configuratie is nodig alvorens u tot Generate Variaties van de Sidekick (van Edge Delivery Services) kunt toegang hebben.
-
-1. Zie het document [De AEM Sidekick installeren](https://www.aem.live/docs/sidekick-extension) voor hoe te om de Sidekick te installeren en te vormen.
-
-1. Om te gebruiken produceer Variaties in de Sidekick (van Edge Delivery Services), omvat de volgende configuratie in uw projecten van Edge Delivery Services onder:
-
-   * `tools/sidekick/config.json`
-
-   Dit moet in uw bestaande configuratie worden samengevoegd en dan opgesteld.
-
-   Bijvoorbeeld:
-
-   ```prompt
-   {
-     // ...
-     "plugins": [
-       // ...
-       {
-         "id": "generate-variations",
-         "title": "Generate Variations",
-         "url": "https://experience.adobe.com/aem/generate-variations",
-         "passConfig": true,
-         "environments": ["preview","live", "edit"],
-         "includePaths": ["**.docx**"]
-       }
-       // ...
-     ]
-   }
-   ```
-
-1. Mogelijk moet u er dan voor zorgen dat gebruikers [Toegang tot Experience Manager as a Cloud Service met Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
-
-1. U kunt de functie vervolgens openen door **Variaties genereren** op de werkbalk van de Sidekick:
-
-   ![Variaties genereren - toegang vanuit AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
-
-## Toegang tot Experience Manager as a Cloud Service met Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
-
-Gebruikers die toegang nodig hebben om variaties te genereren, moeten recht hebben op een as a Cloud Service omgeving met Edge Delivery Services voor Experience Managers.
-
->[!NOTE]
->
->Als uw as a Cloud Service AEM Sites-contract geen Edge Delivery Services bevat, moet u een nieuw contract ondertekenen om toegang te krijgen.
->
->Neem contact op met uw accountteam om te bespreken hoe u met Edge Delivery Services naar AEM Sites kunt gaan as a Cloud Service.
-
-Als u toegang wilt verlenen aan specifieke gebruikers, wijst u hun gebruikersaccount toe aan het desbetreffende productprofiel. Zie [AEM productprofielen toewijzen voor meer informatie](/help/journey-onboarding/assign-profiles-cloud-manager.md).
-
-## Verdere lezing {#further-reading}
-
-Lees ook:
-
-* [GenAI Genereer variaties op GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Edge Delivery Services experimenteren](https://www.aem.live/docs/experimentation)
-
-## Release-opmerkingen {#release-notes}
-
-### 2.0.0.  {#release-notes-2-0-0}
-
-* Inclusief universele permanente opslag voor snelle sjablonen.
-* Nieuwe functionaliteit voor soorten publiek
-   * Soorten publiek kan rechtstreeks vanuit Adobe Target worden gelezen
-   * Bijgewerkte methoden voor het toevoegen van CSV-bestanden
-* Dialoogvenster met opties voor Vragen opslaan
-* Bij het genereren van afbeeldingen is de vraag naar Adobe Express vooraf ingevuld
-* Vrachtkaarten (op de homepage) bevatten extra informatie en kunnen worden verwijderd
-
-#### 2.0.0 - hoe te om de malplaatjes van de douaneherinnering terug te winnen {#release-notes-2-0-0-retrieve-prompt-templates}
-
-Als u naar de release v2.0.0 gaat, worden aangepaste promptsjablonen afgebroken, zodat deze niet beschikbaar zijn. Deze ophalen:
+Deze ophalen:
 
 1. Ga naar de herinnering-malplaatje omslag in SharePoint.
 1. Kopieer de vraag.
@@ -561,20 +555,6 @@ Als u naar de release v2.0.0 gaat, worden aangepaste promptsjablonen afgebroken,
 1. Controleer of de vraag werkt.
 1. Sla de vraag op.
 
-### 1.0.5. {#release-notes-1-0-5}
+## Releasegeschiedenis {#release-history}
 
-* Integratie met Adobe Express
-* Vragen om te bewerken naar zijspoor verplaatsen
-
-### 1.0.4. {#release-notes-1-0-4}
-
-* Interne verbeteringen
-
-### 1.0.3. {#release-notes-1-0-3}
-
-* Het linkernavigatievenster uitvouwen of verbergen
-* Kleine verbeteringen
-
-### 1.0.0 - 1.0.2 {#release-notes-1-0-0-1-0-2}
-
-* Interne verbeteringen
+Voor meer informatie over de huidige en vorige versie raadpleegt u de [Opmerkingen bij de release voor het genereren van variaties](/help/generative-ai/release-notes-generate-variations.md)

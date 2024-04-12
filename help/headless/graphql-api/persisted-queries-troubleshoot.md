@@ -2,13 +2,13 @@
 title: Problemen met blijvende GraphQL-query's oplossen
 description: Leer hoe u problemen met aanhoudende GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt oplossen.
 feature: Content Fragments,GraphQL API
-source-git-commit: c8ea9846600d1773e6f269973635f5338f31906f
+exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
+source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
-
 
 # Aanhoudende GraphQL-query&#39;s oplossen {#troubleshoot-persisted-graphql-queries}
 
@@ -34,13 +34,13 @@ Om dit aan te pakken, kunt u:
 
 ## GraphQL-eindpunt niet geconfigureerd {#graphql-endpoint-not-configured}
 
-Wanneer voortgeduurde vragen terugkeren `400` of `500` foutcode, samen met de informatie `No suitable endpoint found`, betekent dit dat geen eindpunt van GraphQL op het AEM milieu wordt gevormd.
+Wanneer voortgeduurde vragen terugkeren `404` foutcode, samen met de informatie `No suitable endpoint found`, betekent dit dat geen eindpunt van GraphQL op het AEM milieu wordt gevormd.
 
 Om dit te verbeteren, volg de stappen voor het toelaten van en het publiceren van uw eindpunt van [GraphQL-eindpunten beheren in AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Ontbrekend pad in de GraphQL-URL voor doorlopende query {#missing-path-query-url}
 
-Als voortgeduurde vragen terugkeren `400` of `500` foutcode met de informatie `Suffix: '/' does not contain a path`, wordt het GraphQL servlet geroepen zonder een wegachtervoegsel.
+Als voortgeduurde vragen terugkeren `400` foutcode met de informatie `Suffix: '/' does not contain a path`, wordt het GraphQL servlet geroepen zonder een wegachtervoegsel.
 
 Het patroon moet `/graphql/execute.json/thePath`.
 

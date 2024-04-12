@@ -2,9 +2,9 @@
 title: Een API-verzoek maken - headless Setup
 description: Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van inhoudsfragmenten en AEM middelen REST API voor het beheer van inhoudsfragmenten.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van inhoud van in
 * [De GraphQL API](/help/headless/graphql-api/content-fragments.md) Hiermee kunt u aanvragen maken voor toegang tot en levering van inhoudsfragmenten. Deze API biedt de meest robuuste set mogelijkheden voor het opvragen en gebruiken van inhoud met fragmentinhoud.
    * De API gebruiken [eindpunten definiëren en inschakelen in AEM](/help/headless/graphql-api/graphql-endpoint.md)en, indien nodig, de [GraphiQL-interface geïnstalleerd](/help/headless/graphql-api/graphiql-ide.md).
 * [De REST-API voor middelen](/help/assets/content-fragments/assets-api-content-fragments.md) Hiermee kunt u inhoudsfragmenten (en andere elementen) maken en wijzigen.
+
+>[!NOTE]
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 De rest van deze handleiding is gericht op GraphQL-toegang en levering van inhoudsfragmenten.
 
@@ -99,3 +103,7 @@ Dat is het! U hebt nu een basiskennis van beheer van inhoud zonder kop in AEM. E
 * **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md)** - Voor meer informatie over het maken en beheren van inhoudsfragmenten
 * **[Ondersteuning voor inhoudsfragmenten in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)** - Voor meer informatie over het rechtstreeks benaderen van AEM inhoud via de HTTP-API, via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen)
 * **[GRAPHQL API](/help/headless/graphql-api/content-fragments.md)** - Voor meer informatie over hoe u inhoudsfragmenten zonder problemen kunt leveren
+
+>[!NOTE]
+>
+>De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.

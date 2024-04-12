@@ -4,9 +4,9 @@ description: Maak kennis met de introductie van het hergebruik van inhoud met AE
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
 workflow-type: tm+mt
-source-wordcount: '2702'
+source-wordcount: '2721'
 ht-degree: 0%
 
 ---
@@ -141,6 +141,10 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 * **Blauwdrukken** (**Gereedschappen** - **Sites**)
 
    * Met deze console kunt u [maak en beheer uw blauwdrukconfiguraties.](creating-live-copies.md#creating-a-blueprint-configuration)
+
+>[!NOTE]
+>
+>MSM kan worden gebruikt met zowel pagina&#39;s als [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md) aangezien deze fragmenten onderdeel zijn van een ervaring (pagina).
 
 >[!NOTE]
 >
