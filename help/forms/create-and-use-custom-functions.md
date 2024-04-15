@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
+source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
 workflow-type: tm+mt
 source-wordcount: '3093'
 ht-degree: 0%
@@ -155,7 +155,7 @@ De aangepaste functie, gedeclareerd als private, komt niet voor in de lijst met 
 
 Om van de douanefuncties in de regelredacteur een lijst te maken, kunt u om het even welke volgende formaten gebruiken:
 
-* **Functie-instructie met of zonder jsdoc-opmerkingen**
+### **Functie-instructie met of zonder jsdoc-opmerkingen**
 
 U kunt een aangepaste functie maken met of zonder jsdoc-opmerkingen.
 
@@ -167,7 +167,7 @@ U kunt een aangepaste functie maken met of zonder jsdoc-opmerkingen.
 ```
 Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt deze door de functienaam in de regeleditor weergegeven. Het wordt echter aanbevolen JavaScript-aantekeningen op te nemen om de leesbaarheid van de aangepaste functies te verbeteren.
 
-* **Pijlfunctie met verplichte JavaScript-annotaties of -opmerkingen**
+### **Pijlfunctie met verplichte JavaScript-annotaties of -opmerkingen**
 
 U kunt een aangepaste functie maken met een syntaxis voor een pijlfunctie:
 
@@ -191,7 +191,7 @@ U kunt een aangepaste functie maken met een syntaxis voor een pijlfunctie:
 
 Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt de aangepaste functie niet vermeld in de regeleditor van een adaptief formulier.
 
-* **Functie-expressie met verplichte JavaScript-aantekeningen of -opmerkingen**
+### **Functie-expressie met verplichte JavaScript-aantekeningen of -opmerkingen**
 
 Als u aangepaste functies wilt weergeven in de regeleditor van een adaptief formulier, maakt u aangepaste functies in de volgende indeling:
 
