@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
 workflow-type: tm+mt
-source-wordcount: '3097'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -72,59 +72,61 @@ De parameter is een lijst met argumenten die door aangepaste functies worden geb
    * date[]: Vertegenwoordigt een array met datumwaarden.
    * array: vertegenwoordigt een algemene array met waarden van verschillende typen.
    * object: vertegenwoordigt een formulierobject dat aan een aangepaste functie wordt doorgegeven in plaats van dat de waarde rechtstreeks wordt doorgegeven.
-   * bereik: vertegenwoordigt het algemene object dat door aangepaste functies in de runtime wordt gebruikt. Deze wordt gedeclareerd als de laatste parameter in JavaScript-annotaties en is niet zichtbaar in de regeleditor van een adaptief formulier. De bereikparameter benadert het object van het formulier of de component om de regel of gebeurtenis te activeren die vereist is voor formulierverwerking.
+   * bereik: vertegenwoordigt het globals object, dat alleen-lezen variabelen bevat, zoals formulierinstanties, doelveldinstanties en methoden voor het uitvoeren van formulierwijzigingen binnen aangepaste functies. Deze wordt gedeclareerd als de laatste parameter in JavaScript-annotaties en is niet zichtbaar in de regeleditor van een adaptief formulier. De bereikparameter benadert het object van het formulier of de component om de regel of gebeurtenis te activeren die vereist is voor formulierverwerking. Voor meer informatie over het object Globals en hoe het te gebruiken, [klik hier](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
-    Het parametertype is niet hoofdlettergevoelig en spaties zijn niet toegestaan in de parameternaam.
-    
-    `&lt;parameter description=&quot;&quot;>` bevat details over het doel van de parameter. Het kan meerdere woorden hebben.
-    
-    Standaard zijn alle parameters verplicht. U kunt een parameter als optioneel definiëren door `=` na het parametertype toe te voegen of door de parameternaam in `[]` in te sluiten. Parameters die in JavaScript-annotaties als optioneel worden gedefinieerd, worden in de regeleditor als optioneel weergegeven.
-    Als u een variabele wilt definiëren als een optionele parameter, kunt u een van de volgende syntaxis gebruiken:
-    
-    * `@param {type=} Input1`
-    
-    In de bovenstaande coderegel is &quot;Input1&quot; een optionele parameter zonder standaardwaarde. Optionele parameter met standaardwaarde declareren:
-    `@param {string=&lt;value>} input1`
-    
-    &quot;input1&quot; als een optionele parameter met de standaardwaarde ingesteld op &quot;value&quot;.
-    
-    * `@param {type} [Invoer1]&quot;
-    
-    In de bovenstaande coderegel is &quot;Input1&quot; een optionele parameter zonder standaardwaarde. Optionele parameter met standaardwaarde declareren:
-    `@param {array} [input1=&lt;value>]&quot;
-    &quot;input1` is een facultatieve parameter van serietype met de standaardwaarde die aan ` waarde wordt geplaatst.
-    Zorg ervoor dat het parametertype tussen accolades staat {} en de parameternaam staat tussen vierkante haken [].
-    
-    Overweeg het volgende codefragment, waar input2 als facultatieve parameter wordt bepaald:
-    
-    &quot;javascript
-    
-    /**
-    * optionele parameterfunctie
-    * @name OptionalParameterFunction
-    * @param {string} input1
-    * @param {string=} input2
-    * @return {string}
-    */
-    function OptionalParameterFunction(input1, input2) {
-    let result = &quot;Result: &quot;;
-    resultaat += input1;
-    if (input2 !== null) {
-    result += &quot; &quot; + input2;
-    }
-    resultaat van de terugzending;
-    }
-    &quot;
-    
-    De volgende illustratie toont het gebruiken van de van de douanefunctie ` OptionalParameterFunction ` in de regelredacteur:
-    
-    &lt;!>— ![Optionele of vereiste parameters ](/help/forms/assets/optional-default-params.png) —>
-    
-    U kunt de regel opslaan zonder een waarde voor vereiste parameters op te geven, maar de regel wordt niet uitgevoerd en er wordt een waarschuwingsbericht weergegeven als:
-    
-    &lt;!>— ![incomplete regelwaarschuwing](/help/forms/assets/incomplete-rule.png) —>
-    
-    Wanneer de gebruiker de optionele parameter leeg laat, wordt de &#39;Undefined&#39;-waarde doorgegeven aan de aangepaste functie voor de optionele parameter.
+Het parametertype is niet hoofdlettergevoelig en spaties zijn niet toegestaan in de parameternaam.
+
+`<Parameter Description>` bevat details over het doel van de parameter. Het kan meerdere woorden hebben.
+
+**Optionele parameters**
+Standaard zijn alle parameters verplicht. U kunt een parameter als optioneel definiëren door `=` na het parametertype of de parameternaam insluiten  `[]`. Parameters die in JavaScript-annotaties als optioneel worden gedefinieerd, worden in de regeleditor als optioneel weergegeven.
+Als u een variabele wilt definiëren als een optionele parameter, kunt u een van de volgende syntaxis gebruiken:
+
+* `@param {type=} Input1`
+
+In de bovenstaande coderegel: `Input1` is een optionele parameter zonder standaardwaarde. Optionele parameter met standaardwaarde declareren:
+`@param {string=<value>} input1`
+
+`input1` als een optionele parameter met als standaardwaarde `value`.
+
+* `@param {type} [Input1]`
+
+In de bovenstaande coderegel: `Input1` is een optionele parameter zonder standaardwaarde. Optionele parameter met standaardwaarde declareren:
+`@param {array} [input1=<value>]`
+`input1` is een optionele parameter van het type array met de standaardwaarde ingesteld op `value`.
+Zorg ervoor dat het parametertype tussen accolades staat {} en de parameternaam staat tussen vierkante haakjes [].
+
+Overweeg het volgende codefragment, waar input2 als facultatieve parameter wordt bepaald:
+
+```javascript
+        /**
+         * optional parameter function
+         * @name OptionalParameterFunction
+         * @param {string} input1 
+         * @param {string=} input2 
+         * @return {string}
+        */
+        function OptionalParameterFunction(input1, input2) {
+        let result = "Result: ";
+        result += input1;
+        if (input2 !== null) {
+            result += " " + input2;
+        }
+        return result;
+        }
+```
+
+De volgende illustratie wordt weergegeven met de `OptionalParameterFunction` aangepaste functie in de regeleditor:
+
+![Optionele of vereiste parameters ](/help/forms/assets/optional-default-params.png)
+
+U kunt de regel opslaan zonder een waarde voor vereiste parameters op te geven, maar de regel wordt niet uitgevoerd en er wordt een waarschuwingsbericht weergegeven als:
+
+![onvolledige regelwaarschuwing](/help/forms/assets/incomplete-rule.png)
+
+Wanneer de gebruiker de optionele parameter leeg laat, wordt de &#39;Undefined&#39;-waarde doorgegeven aan de aangepaste functie voor de optionele parameter.
+
+Meer informatie over het definiëren van optionele parameters in JSDocs [klik hier](https://jsdoc.app/tags-param).
 
 #### Retourtype
 
@@ -150,7 +152,6 @@ Het retourneringstype geeft het type waarde op dat de aangepaste functie na de u
 
 De aangepaste functie, gedeclareerd als private, komt niet voor in de lijst met aangepaste functies in de regeleditor van een adaptief formulier. Aangepaste functies zijn standaard openbaar. De syntaxis voor het declareren van een aangepaste functie als private is `@private`.
 
-Meer informatie over het definiëren van optionele parameters in JSDocs [klik hier](https://jsdoc.app/tags-param).
 
 ## Richtlijnen tijdens het maken van aangepaste functies {#considerations}
 
@@ -190,6 +191,8 @@ U kunt een aangepaste functie maken met een syntaxis voor een pijlfunctie:
     
 ```
 
+Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt de aangepaste functie niet vermeld in de regeleditor van een adaptief formulier.
+
 * **Functie-expressie met verplichte JavaScript-aantekeningen of -opmerkingen**
 
 Als u aangepaste functies wilt weergeven in de regeleditor van een adaptief formulier, maakt u aangepaste functies in de volgende indeling:
@@ -207,6 +210,8 @@ Als u aangepaste functies wilt weergeven in de regeleditor van een adaptief form
             // code to be executed
         }
 ```
+
+Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt de aangepaste functie niet vermeld in de regeleditor van een adaptief formulier.
 
 ## Een aangepaste functie maken {#create-custom-function}
 
@@ -365,30 +370,33 @@ U kunt aangepaste functies gebruiken om aangepaste functies toe te voegen aan fo
 
 ### Veld- en globale bereikobjecten in aangepaste functies {#support-field-and-global-objects}
 
-Veldobjecten verwijzen naar de afzonderlijke componenten of elementen in een formulier, zoals tekstvelden, selectievakjes. Globale bereikobjecten verwijzen naar de algemene variabelen of instellingen die toegankelijk zijn voor het hele formulier. Laten we naar het volgende codefragment kijken:
+Veldobjecten verwijzen naar de afzonderlijke componenten of elementen in een formulier, zoals tekstvelden, selectievakjes. Het object Globals bevat alleen-lezen variabelen, zoals formulierinstantie, doelveldinstantie en methoden voor het uitvoeren van formulierwijzigingen binnen aangepaste functies.
+
+>[!NOTE]
+>
+> De `param {scope} globals` moet de laatste parameter zijn en deze wordt niet weergegeven in de regeleditor van een adaptief formulier.
+
+<!-- Let us look at the following code snippet:
 
 ```JavaScript
+   
     /**
     * updateDateTime
     * @name updateDateTime
     * @param {object} field
-    * @param {scope} globals 
+    * @param {scope} globals
     */
     function updateDateTime(field, globals) {
     // Accessing the Date object from the global scope
     var currentDate = new Date();
     // Formatting the date and time
     var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time
-    field.value = formattedDateTime;
+    // Updating the field value with the formatted date and time using setProperty.
+    globals.functions.setProperty(field, {value: formattedDateTime});
     }
 ```
 
->[!NOTE]
->
-> De `param {scope} globals` moet de laatste parameter zijn en deze wordt niet weergegeven in de regeleditor van een adaptief formulier.
-
-In het bovenstaande codefragment, een aangepaste functie met de naam `updateDateTime` gebruikt parameters zoals een veldobject en een globaal object. De datum- en tijdobjecten worden benaderd via het algemene bereik. Het veld vertegenwoordigt het tekstvakobject waarin de opgemaakte datum- en tijdwaarde in het formulier wordt weergegeven.
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken met behulp van een `Contact Us` formulier met verschillende gebruiksmogelijkheden.
 
@@ -419,7 +427,8 @@ Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-functi
 
 >[!NOTE]
 >
-> U kunt de veldeigenschappen vormen gebruikend beschikbare eigenschappen die in worden gevestigd `[form-path]/jcr:content/guideContainer.model.json`.
+> * U kunt de veldeigenschappen vormen gebruikend beschikbare eigenschappen die in worden gevestigd `[form-path]/jcr:content/guideContainer.model.json`.
+> * Wijzigingen in het formulier met het `setProperty` De methode van het object Globals is asynchroon van aard en wordt niet weerspiegeld tijdens de uitvoering van de aangepaste functie.
 
 In dit voorbeeld, bevestiging van `personaldetails` wordt weergegeven wanneer u op de knop klikt. Als er geen fouten worden gedetecteerd in het deelvenster, wordt een ander deelvenster `feedback` wordt zichtbaar als u op een knop klikt.
 
@@ -554,7 +563,7 @@ De volgende regel code:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wordt gebruikt om de formuliergegevens te verzenden na manipulatie.
 * Het eerste argument betreft de gegevens die moeten worden ingediend.
 * Het tweede argument geeft aan of het formulier moet worden gevalideerd voordat het wordt verzonden. Het is `optional` en instellen als `true` standaard.
-* Het derde argument is de `contentType` van de indiening, die ook `optional` met de standaardwaarde als `multipart/form-data`.
+* Het derde argument is de `contentType` van de indiening, die ook optioneel is met de standaardwaarde als `multipart/form-data`. De andere waarden kunnen `application/json` en `application/x-www-form-urlencoded`.
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) om de gemanipuleerde gegevens op de server te verzenden:
 
@@ -565,7 +574,6 @@ Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-functi
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
