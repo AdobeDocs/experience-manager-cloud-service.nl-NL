@@ -4,7 +4,7 @@ description: Verplaats, verwijder, kopieer, hernoem, werk en versie uw activa in
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
+source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -149,3 +149,4 @@ Als u het metagegevensveld Vervaldatum aan het formulier wilt toevoegen, sleept 
 * Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk
 
 * Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support)
+
