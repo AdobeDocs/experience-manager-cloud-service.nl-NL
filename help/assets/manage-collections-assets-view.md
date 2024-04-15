@@ -1,9 +1,10 @@
 ---
 title: Verzamelingen beheren
 description: Een verzameling is een set elementen in de weergave Experience Manager Assets. Gebruik verzamelingen om elementen tussen gebruikers te delen.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
+source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -46,6 +47,8 @@ U kunt de volgende taken uitvoeren om inzamelingen te beheren en te gebruiken:
 * [Een verzameling downloaden](#download-collection)
 
 * [Een verzameling verwijderen](#delete-collection)
+
+* [Rechten beheren voor een privéverzameling](#manage-permissions-to-a-private-collection)
 
 ## Een verzameling maken {#create-collection}
 
@@ -184,6 +187,18 @@ Een verzameling verwijderen:
 1. Selecteer de verzameling die u wilt verwijderen.
 
 1. Klik op **[!UICONTROL Delete]**.
+
+## Rechten voor een privéverzameling beheren{#manage-permissions-private-collection}
+
+U kunt beheerders toestaan om te beheren [toegangsniveaus](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) voor privéverzamelingen die beschikbaar zijn in de repository. U kunt machtigingen toewijzen zoals `Can View` en `Can Edit` aan de gebruikersgroepen of gebruikers. U kunt toestemmingsbeheervoorrechten aan gebruikersgroepen ook delegeren. De gebruikers die privé inzamelingen tot stand brengen zijn de eigenaars van die inzamelingen. Ze kunnen de [!UICONTROL Manage Permissions] actie om toegang te verlenen aan de andere gebruikers. Bovendien kunnen beheerders machtigingen van de privéverzamelingen in de [!DNL Experience Manager] opslagplaats.
+
+>[!NOTE]
+>
+>De Adobe adviseert niet om toestemmingen aan gebruikers toe te wijzen.
+
+Voor informatie over hoe u de beschikbare machtigingen aan gebruikersgroepen kunt toewijzen, raadpleegt u [Machtigingen toevoegen aan gebruikersgroepen](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+
+Voor meer informatie over het werkschema van begin tot eind, zie [machtigingen beheren](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Volgende stappen {#next-steps}
 
