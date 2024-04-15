@@ -2,12 +2,11 @@
 title: Wat zijn Forms-API's voor as a Cloud Service communicatie?
 description: Gebruik communicatie-API's om uw documenten te ondertekenen, certificeren of beveiligen, om processen voor het genereren van PDF te automatiseren en om PDF-documenten om te zetten in een andere indeling.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1973'
 ht-degree: 1%
 
 ---
@@ -193,10 +192,12 @@ Zowel handtekening-API&#39;s als versleutelings-API&#39;s zijn [Synchrone API&#3
 
 ### Reader Extension Service
 
-<span class="preview"> De capaciteit van de Uitbreidingsdienst van de Reader is onder het Vroege Programma van de Aannemer. U kunt schrijven naar `aem-forms-ea@adobe.com` van uw officiële e-mailidentiteitskaart om zich bij het vroege adoptieprogramma aan te sluiten en toegang tot het vermogen te verzoeken. </span>
+<span class="preview"> De capaciteit van de Uitbreidingsdienst van de Reader is onder het Vroege Programma van de Aannemer. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-De dienst van de Uitbreidingen van de Reader laat uw organisatie toe om interactieve documenten van de PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden. De dienst van de Uitbreidingen van de Reader werkt met Adobe Reader. De service voegt gebruiksrechten toe aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document.
+De dienst van de Uitbreidingen van de Reader laat uw organisatie toe om interactieve documenten van de PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden. De service Reader Extensions werkt met Adobe Reader 7.0 of hoger. De service voegt gebruiksrechten toe aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document.
 
+>[!NOTE]
+>Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
 
 Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen ontvangers de volgende activiteiten uitvoeren vanuit Adobe Reader:
 
@@ -242,7 +243,7 @@ De verschillende mogelijkheden van gebruiksrechten met de Diensten van de Uitbre
 * **Bericht**: Het bericht dat in Adobe Acrobat Reader wordt weergegeven bij het openen van een PDF-document waarop een of meer gebruiksrechten zijn toegepast.
 * **Wachtwoord ontgrendelen**: Het wachtwoord dat is vereist voor het openen van een versleuteld PDF-document. Dit is doorgaans het wachtwoord voor het openen van het document, maar als het PDF-document extra wordt beveiligd door een wachtwoord voor machtigingen, kan een van beide worden gebruikt om het document te openen.
 
-De [API-naslagdocumentatie](https://adobe-aem-document-experimental.redoc.ly/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt .yaml downloaden en uploaden aan postman om functionaliteit van APIs te controleren.
+De [API-naslagdocumentatie](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is ook beschikbaar in de indeling .yaml. U kunt .yaml downloaden en uploaden aan postman om functionaliteit van APIs te controleren.
 
 ## Typen communicatie-API&#39;s {#types}
 

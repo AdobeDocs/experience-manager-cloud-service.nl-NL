@@ -3,8 +3,7 @@ title: Voeg versies, opmerkingen en annotaties toe aan een formulier.
 description: Gebruik aangepaste basiscomponenten van formulieren om opmerkingen, annotaties en versies toe te voegen aan een adaptief formulier.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-hidefromtoc: true
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%

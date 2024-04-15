@@ -3,16 +3,14 @@ title: Vergelijk twee verschillende adaptieve formulieren.
 description: Vergelijk twee verschillende formulieren op basis van de velden, inhoud en formuliercomponenten.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-hidefromtoc: true
-exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
 
 ---
 
-## Adaptieve Forms vergelijken {#compare-two-forms}
+# Adaptieve Forms vergelijken {#compare-two-forms}
 
 <span class="preview"> Dit is een pre-release functie die toegankelijk is via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
