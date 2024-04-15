@@ -3,9 +3,10 @@ title: Uw digitale middelen beheren
 description: Verplaats, verwijder, kopieer, hernoem, werk en versie uw activa in [!DNL Assets view].
 role: User,Leader
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
+source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -28,6 +29,7 @@ Gebruiken [!DNL Assets view] om de volgende taken voor middelenbeheer uit te voe
 * ![kopieerpictogram](assets/do-not-localize/copy-icon.png) Kopieer het geselecteerde bestand of de geselecteerde map.
 * ![verplaatsingspictogram](assets/do-not-localize/move-icon.png) Verplaats het geselecteerde element of de geselecteerde map naar een andere locatie in de hiërarchie van de opslagplaats.
 * ![pictogram hernoemen](assets/do-not-localize/rename-icon.png) Wijzig de naam van het geselecteerde element of de geselecteerde map. Gebruik een unieke naam anders ontbreekt het anders noemen met een waarschuwing. U kunt het opnieuw proberen met een nieuwe naam.
+Bovendien kunt u op de titel van een element of map klikken om de naam ervan te wijzigen. De nieuwe tekst in het deelvenster **Naam element wijzigen** textbox en klik **Opslaan**. Deze mogelijkheid is beschikbaar in de raster-, galerie-, waterval- en lijstweergaven. <!--in-place rename-->
 * ![taakpictogram toewijzen](assets/do-not-localize/review-delegate-icon.png) Taken toewijzen aan andere gebruikers om samen te werken aan een element.
 
 U kunt dezelfde opties weergeven op de miniaturen van elementen.
