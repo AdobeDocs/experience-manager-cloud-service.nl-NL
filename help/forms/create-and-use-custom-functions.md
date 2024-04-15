@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
+source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
 workflow-type: tm+mt
 source-wordcount: '3093'
 ht-degree: 0%
@@ -50,8 +50,7 @@ De naam wordt gebruikt om de douanefunctie in de regelredacteur van een Adaptief
 * `@func [functionName] <Function Name>`.
   `functionName` is de naam van de functie. Spaties zijn niet toegestaan.
   `<Function Name>` is de weergavenaam van de functie in de regeleditor van een adaptief formulier.
-Als de functienaam identiek is aan de naam van de functie zelf, kunt u weglaten `[functionName]` in de syntaxis. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
-`* @name calculateAge` -->
+Als de functienaam identiek is aan de naam van de functie zelf, kunt u weglaten `[functionName]` in de syntaxis.
 
 #### Parameter
 
