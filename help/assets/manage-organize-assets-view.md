@@ -4,9 +4,9 @@ description: Verplaats, verwijder, kopieer, hernoem, werk en versie uw activa in
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
+source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,39 @@ Gebruiken [!DNL Assets view] om de volgende taken voor middelenbeheer uit te voe
 *Afbeelding: op de werkbalk zijn opties beschikbaar voor een geselecteerde afbeelding.*
 
 * ![pictogram deselecteren](assets/do-not-localize/close-icon.png) Schakel de selectie uit.
+
+* ![vergelijkbaar pictogram zoeken](assets/do-not-localize/find-similar.svg) Vind gelijkaardig beeldmiddel in de UI van Activa die op de meta-gegevens en slimme markeringen wordt gebaseerd.
+
 * ![detailpictogram](assets/do-not-localize/edit-in-icon.png) Klik om een voorvertoning van een element weer te geven en de gedetailleerde metagegevens weer te geven. Als u een voorvertoning weergeeft, kunt u de versies weergeven en een afbeelding bewerken.
+
 * ![downloadpictogram](assets/do-not-localize/download-icon.png) Download het geselecteerde element naar uw lokale bestandssysteem.
+
+* ![pictogram Verzameling toevoegen](assets/do-not-localize/add-collection.svg) Voeg het geselecteerde element toe aan een verzameling.
+
+* ![Pictogram Elementen vastzetten](assets/do-not-localize/pin-quick-access.svg) Een element vastzetten om sneller toegang te krijgen wanneer u het later nodig hebt. Alle vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** van Mijn werkruimte.
+
+* ![bewerken in pictogram Expressie](assets/do-not-localize/edit-e.svg) Bewerk een afbeelding in de geïntegreerde Adobe Express in Adobe Experience Manager Assets.
+
+* ![middelenpictogram bewerken](assets/do-not-localize/edit-e.svg) Bewerk de afbeelding met Adobe Express.
+
+* ![pictogram voor delen van elementkoppeling](assets/do-not-localize/share-link.svg) voor een middel met andere gebruikers zodat zij tot het kunnen toegang hebben en downloaden.
+
 * ![verwijderpictogram](assets/do-not-localize/delete-icon.png) Verwijder het geselecteerde element of de geselecteerde map.
-* ![uitcheckpictogram](assets/do-not-localize/checkout-icon.png) Het geselecteerde element uitchecken.
+
 * ![kopieerpictogram](assets/do-not-localize/copy-icon.png) Kopieer het geselecteerde bestand of de geselecteerde map.
+
 * ![verplaatsingspictogram](assets/do-not-localize/move-icon.png) Verplaats het geselecteerde element of de geselecteerde map naar een andere locatie in de hiërarchie van de opslagplaats.
+
 * ![pictogram hernoemen](assets/do-not-localize/rename-icon.png) Wijzig de naam van het geselecteerde element of de geselecteerde map. Gebruik een unieke naam anders ontbreekt het anders noemen met een waarschuwing. U kunt het opnieuw proberen met een nieuwe naam.
-Bovendien kunt u op de titel van een element of map klikken om de naam ervan te wijzigen. De nieuwe tekst in het deelvenster **Naam element wijzigen** textbox en klik **Opslaan**. Deze mogelijkheid is beschikbaar in de raster-, galerie-, waterval- en lijstweergaven. <!--in-place rename-->
+Bovendien kunt u op de titel van een element of map klikken om de naam ervan te wijzigen. De nieuwe tekst in het deelvenster **Naam element wijzigen** textbox en klik **Opslaan**. Deze mogelijkheid is beschikbaar in de raster-, galerie-, waterval- en lijstweergaven.
+
+* ![pictogram watervalweergave](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View].
+
+* ![bibliotheekpictogram kopiëren](assets/do-not-localize/copy-icon.png) Voeg een element toe aan de bibliotheek.
+
 * ![taakpictogram toewijzen](assets/do-not-localize/review-delegate-icon.png) Taken toewijzen aan andere gebruikers om samen te werken aan een element.
+
+* ![taakpictogram toewijzen](assets/do-not-localize/watch-asset.svg) De bewerkingen controleren die op een element worden uitgevoerd.
 
 U kunt dezelfde opties weergeven op de miniaturen van elementen.
 
