@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
+source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3108'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,11 @@ ht-degree: 0%
 Zorg ervoor dat de [kerncomponent is ingesteld op versie 3.0.8](https://github.com/adobe/aem-core-forms-components) om pre-releasefuncties in douanefunctie te gebruiken. </span>
 
 # Aangepaste functies in Adaptive Forms (Core Components)
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM as a Cloud Service | Dit artikel |
 
 ## Inleiding
 
