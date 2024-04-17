@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 5e216e45a1400299efcc418007ddbe93f0c571a1
+source-git-commit: 36fefbf74a288d60a9529f0c7273dd6b0557177b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15939 same
 * GRANITE-49638: Corrigeer de verkeerde configuratie van inhoudstype voor de RUM-transformatorfabriek.
 * GRANITE-50141: IMSProviderImpl spamming the log.
 * SITES-20949: ComponentsIT.testEmbed mislukt nadat Youtube refererpolicy=&quot;strict-origin-when-cross-origin&quot; heeft toegevoegd.
-* SITES-21233: Core Components update - Correctie van accordeon voor GS1 US na upgrade naar 15860.
+* SITES-21233: Core Components update - Cordion herstellen na upgrade naar 15860.
 * SKYOPS-74819: Verbroken achterwaartse compatibiliteit voor dubbele sleutels in Apache Commons.
 * SKYOPS-67087: Clientlib-aggregatie werkt in bepaalde gevallen niet.
 * CQ-4355415: AEM koppelingen voor meldingen werken niet in 6.5 SP18.
