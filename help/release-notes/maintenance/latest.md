@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
+source-git-commit: 5e216e45a1400299efcc418007ddbe93f0c571a1
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 2%
+source-wordcount: '427'
+ht-degree: 1%
 
 ---
 
@@ -13,46 +13,58 @@ ht-degree: 2%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 15860 {#release-15860}
+## Release 15939 {#release-15939}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15860 samengevat, die op 10 april 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 15787.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15939 samengevat, die op 17 april 2024 openbaar werd gemaakt. De vorige onderhoudrelease was release 15860.
 
-2024.3.0 Activering van functies biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
+2024.4.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
-### Verbeteringen {#enhancements-15860}
+### Verbeteringen {#enhancements-15939}
+
+* GRANITE-39892: Update distributie voor de grens van de rijgrootte en publiceer klaar.
+* GRANITE-4877: Werk QS bij naar com.adobe.granite.security.user-0.4.84 gereed.
+* GRANITE-49421: Toegevoegde eigenschappen voor het belangrijkste van de segmentdienst.
+* GRANITE-49855: Schrijf een analysator van het eigenschapmodel die de bouw van de QuickStart in het geval van nieuw gebruik commons.json ontbreekt.
+* GRANITE-47995: Schrijven van cq:isDelivered toestaan.
+* GRANITE-36205: Werk de interne versie van de eikversie bij tot de meest recente.
+* GRANITE-50156 Bind AEMCS affiniteit aan IMS Gebruiker - identiteitskaart voor Universele Redacteur.
+* GRANITE-50556: Upgrade crosswalk bundle to v0.1.18.
+* GRANITE-50728: Werk FileVault bij naar 3.7.3-T2024030811857-81fa88f1.
+* GRANITE-50957: Werk QS bij naar com.adobe.granite.repository naar 1.8.114.
+* GRANITE-50158: Voeg steun voor Server OAuth aan de stroom van de Referentie van de Server in Lader toe YAML.
+* GRANITE-51327: Werk ak bij naar de meest recente openbare release (1.62.0).
+* SKYOPS-68091 Java 11-runtimeafbeeldingen bijwerken naar versie 3.0.0.
+* SKYOPS-70421: Upgrade de bundel org.apache.sling.servlet-helpers
+* SKYOPS-73483: Staat registrerenteken op AEM toe.
+
+### Opgeloste problemen {#fixed-issues-15939}
+
+* GRANITE-46901: Voeg metriek aan overseinencliënt toe.
+* GRANITE-48793: Werk QS bij naar com.adobe.granite.crx-explorer-1.1.28.
+* GRANITE-48937: Omniseaarch werkt niet op aem/start.html pagina.
+* GRANITE-49638: Corrigeer de verkeerde configuratie van inhoudstype voor de RUM-transformatorfabriek.
+* GRANITE-50141: IMSProviderImpl spamming the log.
+* SITES-20949: ComponentsIT.testEmbed mislukt nadat Youtube refererpolicy=&quot;strict-origin-when-cross-origin&quot; heeft toegevoegd.
+* SITES-21233: Core Components update - Correctie van accordeon voor GS1 US na upgrade naar 15860.
+* SKYOPS-74819: Verbroken achterwaartse compatibiliteit voor dubbele sleutels in Apache Commons.
+* SKYOPS-67087: Clientlib-aggregatie werkt in bepaalde gevallen niet.
+* CQ-4355415: AEM koppelingen voor meldingen werken niet in 6.5 SP18.
+
+### Bekende problemen {#known-issues-15939}
 
 Geen.
 
-### Opgeloste problemen {#fixed-issues-15860}
-
-* Hiermee wordt de regressie voor de weergave van de Launches-console gecorrigeerd wanneer een opstart verwijst naar een verwijderde of verplaatste pagina.
-
-### Bekende problemen {#known-issues-15860}
-
-Geen.
-
-### Verouderde functies en API&#39;s {#deprecated-15860}
+### Verouderde functies en API&#39;s {#deprecated-15939}
 
 * [JWT Credentials Deprection in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
 Kijk eens naar [Verouderde en verwijderde functies en API&#39;s](/help/release-notes/deprecated-removed-features.md) om te weten wat in AEM as a Cloud Service is vervangen of verwijderd.
 
-### Kennisgeving wijzigen {#change-notice-15860}
-
-**Handelingen vereist**
-
-#### CM Java-versie instellen op 11 {#set-java-version-11}
-
-De nieuwe versie van aem-sdk-api bevat klassen die met een doel Java 11 worden gecompileerd, die niet compatibel is met de milieu-standaard JDK versie 1.8 van de Manager van de Wolk bouwt. Deze update vereist dat Maven wordt uitgevoerd met JDK 11.
-
-Klanten wordt aangeraden een `.cloudmanager/java-version` bestand naar de hoofdmap van hun waarschuwingsbericht met de inhoud: `11`. Zie [Build Environment / Setting the Maven JDK Version](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
-
-
-### Ingesloten technologieën {#embedded-tech-15860}
+### Ingesloten technologieën {#embedded-tech-15939}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM AK | 1,60-T20240131102219-0cde853 | [API voor eik 1.60.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html) |
-| AEM SLING-API | Versie 2.27.2 | [API voor Apache Sling API 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | Versie 1.4.20-1.4.0 | [HTML Sjabloontaalspecificaties](https://github.com/adobe/htl-spec) |
-| AEM-kerncomponenten | Versie 2.2.4 | [AEM WCM Core-componenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM AK | 1 62,0 | [API voor eik 1.62.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
+| AEM SLING-API | 2.27.2. | [API voor Apache Sling API 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM HTL | 1.4.20-1.4.0 | [HTML Sjabloontaalspecificaties](https://github.com/adobe/htl-spec) |
+| AEM-kerncomponenten | 2,24,6 | [AEM WCM Core-componenten](https://github.com/adobe/aem-core-wcm-components) |
