@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2321'
 ht-degree: 0%
 
 ---
@@ -97,6 +97,12 @@ AEM Assets integreert native met Adobe Express, waardoor u rechtstreeks vanuit d
 **Voorvertoning van vertoningen weergeven voor alle ondersteunde videotypen**
 
 Experience Manager Assets genereert nu standaard voorvertoningsuitvoeringen van alle ondersteunde videotypen zonder dat hiervoor een configuratie met het verwerkingsprofiel nodig is.
+
+**Configuratie van delen koppelen**
+
+Een nieuwe verbeterde gebruikerservaring voor [koppelingen maken](/help/assets/share-assets.md) samen met een gloednieuwe set configuraties waarmee beheerders het standaardgedrag van deze functie voor uw gebruikers kunnen aanpassen.
+
+![E-mailservice configureren](/help/assets/assets/config-email-service.png)
 
 ### Nieuwe functies in de weergave Elementen {#assets-view}
 

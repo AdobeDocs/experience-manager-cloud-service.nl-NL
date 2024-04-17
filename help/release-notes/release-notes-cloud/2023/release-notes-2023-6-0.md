@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release 2023.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
@@ -65,12 +65,6 @@ Met Experience Manager Assets kunt u nu meer doen vanuit de gebruikersinterface 
 **Voorvertoningen van miniaturen voor 3D-elementen**
 
 [!DNL Experience Manager Assets] wordt nu gegenereerd [miniatuurvoorvertoningen van veelgebruikte 3D-bestandsindelingen](/help/assets/file-format-support.md) inclusief gLB, USDz, FBX, 3DS, OBJ en SBSAR. Wanneer deze bestanden worden geüpload, worden automatisch miniaturen gegenereerd.
-
-**Configuratie van delen koppelen**
-
-Een nieuwe verbeterde gebruikerservaring voor [koppelingen maken](/help/assets/share-assets.md) samen met een gloednieuwe set configuraties waarmee beheerders het standaardgedrag van deze functie voor uw gebruikers kunnen aanpassen.
-
-![Tagbeheer](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media: Bijgewerkte velden voor Smart Crop in afbeeldingsprofiel**
 
