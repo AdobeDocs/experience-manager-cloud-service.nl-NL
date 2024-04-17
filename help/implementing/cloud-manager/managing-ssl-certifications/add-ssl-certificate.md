@@ -2,9 +2,9 @@
 title: Een SSL-certificaat toevoegen
 description: Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma's van Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ Ga als volgt te werk om een certificaat toe te voegen met gebruik van Cloud Mana
    * Geef een naam op voor uw certificaat in **Certificaatnaam**.
       * Dit is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar uw certificaat kunt verwijzen.
    * Plak de **Certificaat**, **Persoonlijke sleutel**, en **Certificaatketen** waarden in hun respectieve gebieden. Alle drie velden zijn verplicht.
+   * In sommige gevallen kan het certificaat van de eindgebruiker in de keten worden opgenomen en moet het worden verwijderd voordat de keten in het veld wordt geplakt.
 
    ![Dialoogvenster SSL-certificaat toevoegen](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -56,6 +57,10 @@ Als het certificaat eenmaal is opgeslagen, wordt het weergegeven als een nieuwe 
 >[!NOTE]
 >
 >Een gebruiker moet lid zijn van de **Zakelijke eigenaar** of **Implementatiebeheer** rol om een SSL-certificaat te installeren in Cloud Manager.
+
+>[!NOTE]
+>
+>Als u een fout ontvangt die vergelijkbaar is met `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, heeft u het clientcertificaat waarschijnlijk opgenomen in de certificaatketen. Zorg ervoor dat het clientcertificaat niet in de keten is opgenomen en probeer het opnieuw.
 
 ## Certificaatfouten {#certificate-errors}
 
