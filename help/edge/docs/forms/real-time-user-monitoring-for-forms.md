@@ -2,14 +2,14 @@
 title: Real-time gebruikerscontrole voor Edge Delivery Services Forms
 description: In real time gebruikerscontrole voor Edge Delivery Services Forms omvat het aan de gang zijnde volgen en analyse van gebruikersinteractie met vormen.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
 
 ---
+
 
 # Real-time gebruikerscontrole voor Edge Delivery Services Forms
 
@@ -62,4 +62,3 @@ U kunt de interactie van de bezoeker met Adobe Experience Manager-gedreven plaat
    * **Goed**: Als de duur tussen gebruikersacties 200 milliseconden (ms) of minder is.
    * **Oké**: Als de duur meer dan 200 ms maar niet meer dan 500 ms bedraagt.
    * **Slecht**: Als de duur langer is dan 500 ms.
-
