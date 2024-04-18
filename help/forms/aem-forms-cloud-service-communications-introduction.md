@@ -1,12 +1,13 @@
 ---
 title: Wat zijn Forms-API's voor as a Cloud Service communicatie?
 description: Gebruik communicatie-API's om uw documenten te ondertekenen, certificeren of beveiligen, om processen voor het genereren van PDF te automatiseren en om PDF-documenten om te zetten in een andere indeling.
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1979'
 ht-degree: 1%
 
 ---
@@ -190,14 +191,11 @@ U kunt deze taken uitvoeren met de API&#39;s voor codering:
 
 Zowel handtekening-API&#39;s als versleutelings-API&#39;s zijn [Synchrone API&#39;s](#types-of-communications-apis-types).
 
-### Reader Extension Service
+### Gebruiksrechten-API&#39;s
 
-<span class="preview"> De capaciteit van de Uitbreidingsdienst van de Reader is onder het Vroege Programma van de Aannemer. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
+<span class="preview"> De mogelijkheden voor gebruiksrechten vallen onder het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-De dienst van de Uitbreidingen van de Reader laat uw organisatie toe om interactieve documenten van de PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden. De service Reader Extensions werkt met Adobe Reader 7.0 of hoger. De service voegt gebruiksrechten toe aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document.
-
->[!NOTE]
->Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
+Met de functie Gebruiksrechten kan uw organisatie eenvoudig interactieve PDF-documenten delen door de functionaliteit van Adobe Reader uit te breiden met extra gebruiksrechten. De service werkt met Adobe Reader 7.0 of hoger en voegt gebruiksrechten toe aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document.
 
 Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen ontvangers de volgende activiteiten uitvoeren vanuit Adobe Reader:
 
@@ -208,11 +206,13 @@ Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen on
 * Ingevulde of geannoteerde PDF documenten elektronisch verzenden.
 * Gebruik PDF-documenten en -formulieren als intuïtieve ontwikkelvoorkant van interne databases en webservices.
 * Deel PDF-documenten met anderen, zodat revisoren opmerkingen kunnen toevoegen met intuïtieve opmaakgereedschappen. Deze gereedschappen zijn onder andere elektronische notities, stempels, hooglichten en doorhalen van tekst. Dezelfde functies zijn beschikbaar in Acrobat.
-* Decodering van streepjescodes voor formulieren ondersteunen.
+* Ondersteuning voor gestreepte Forms-decodering.
 
 Deze mogelijkheden voor speciale gebruiksrechten worden automatisch geactiveerd wanneer een PDF-document met ingeschakelde rechten wordt geopend in Adobe Reader. Wanneer de gebruiker klaar is met het werken met een document waarvoor rechten zijn ingeschakeld, worden deze functies weer uitgeschakeld in Adobe Reader. Ze blijven uitgeschakeld totdat de gebruiker een ander PDF-document met ingeschakelde rechten ontvangt.
 
-De verschillende mogelijkheden van gebruiksrechten met de Diensten van de Uitbreiding van de Reader zijn:
+#### Gebruiksrechten in- of uitschakelen
+
+De verschillende mogelijkheden van gebruiksrechten voor het uitbreiden van de diensten van de Reader van de PDF zijn:
 
 * **Decodering streepjescodes**: Streepjescodes decoderen in het PDF-document.
 
@@ -238,7 +238,11 @@ De verschillende mogelijkheden van gebruiksrechten met de Diensten van de Uitbre
 
 * **Zelfstandig verzenden**: Formuliergegevens offline verzenden vanuit een PDF-document.
 
-**Andere mogelijkheden in de Diensten van de Uitbreiding van de Reader**
+#### Gebruiksrechten extraheren
+
+Hiermee kunt u de gebruiksrechten ophalen die zijn in- of uitgeschakeld in een PDF-document voor Adobe Acrobat Reader-uitbreidbaarheid.
+
+#### Andere mogelijkheden
 
 * **Bericht**: Het bericht dat in Adobe Acrobat Reader wordt weergegeven bij het openen van een PDF-document waarop een of meer gebruiksrechten zijn toegepast.
 * **Wachtwoord ontgrendelen**: Het wachtwoord dat is vereist voor het openen van een versleuteld PDF-document. Dit is doorgaans het wachtwoord voor het openen van het document, maar als het PDF-document extra wordt beveiligd door een wachtwoord voor machtigingen, kan een van beide worden gebruikt om het document te openen.
