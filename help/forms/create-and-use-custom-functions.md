@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
+source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
 workflow-type: tm+mt
 source-wordcount: '3108'
 ht-degree: 0%
@@ -65,6 +65,7 @@ De parameter is een lijst met argumenten die door aangepaste functies worden geb
 * `@argument` `{type} name <Parameter Description>`
 * `@arg` `{type}` `name <Parameter Description>`.
   `{type}` vertegenwoordigt het parametertype.  De toegestane parametertypen zijn:
+
    * tekenreeks: vertegenwoordigt één tekenreekswaarde.
    * getal: vertegenwoordigt één numerieke waarde.
    * boolean: vertegenwoordigt één booleaanse waarde (waar of onwaar).
