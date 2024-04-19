@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 36fefbf74a288d60a9529f0c7273dd6b0557177b
+source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 1%
+source-wordcount: '213'
+ht-degree: 2%
 
 ---
 
@@ -13,54 +13,32 @@ ht-degree: 1%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 15939 {#release-15939}
+## Release 15977 {#release-15977}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15939 samengevat, die op 17 april 2024 openbaar werd gemaakt. De vorige onderhoudrelease was release 15860.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15977 samengevat, die op 19 april 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 15939.
 
 2024.4.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie .
 
-### Verbeteringen {#enhancements-15939}
+### Verbeteringen {#enhancements-15977}
 
-* GRANITE-39892: Update distributie voor de grens van de rijgrootte en publiceer klaar.
-* GRANITE-4877: Werk QS bij naar com.adobe.granite.security.user-0.4.84 gereed.
-* GRANITE-49421: Toegevoegde eigenschappen voor het belangrijkste van de segmentdienst.
-* GRANITE-49855: Schrijf een analysator van het eigenschapmodel die de bouw van de QuickStart in het geval van nieuw gebruik commons.json ontbreekt.
-* GRANITE-47995: Schrijven van cq:isDelivered toestaan.
-* GRANITE-36205: Werk de interne versie van de eikversie bij tot de meest recente.
-* GRANITE-50156 Bind AEMCS affiniteit aan IMS Gebruiker - identiteitskaart voor Universele Redacteur.
-* GRANITE-50556: Upgrade crosswalk bundle to v0.1.18.
-* GRANITE-50728: Werk FileVault bij naar 3.7.3-T2024030811857-81fa88f1.
-* GRANITE-50957: Werk QS bij naar com.adobe.granite.repository naar 1.8.114.
-* GRANITE-50158: Voeg steun voor Server OAuth aan de stroom van de Referentie van de Server in Lader toe YAML.
-* GRANITE-51327: Werk ak bij naar de meest recente openbare release (1.62.0).
-* SKYOPS-68091 Java 11-runtimeafbeeldingen bijwerken naar versie 3.0.0.
-* SKYOPS-70421: Upgrade de bundel org.apache.sling.servlet-helpers
-* SKYOPS-73483: Staat registrerenteken op AEM toe.
+* GRANITE-51335: Optimaliseer AEM health check om de stabiliteit van instanties te verhogen.
 
-### Opgeloste problemen {#fixed-issues-15939}
+### Opgeloste problemen {#fixed-issues-15977}
 
-* GRANITE-46901: Voeg metriek aan overseinencliënt toe.
-* GRANITE-48793: Werk QS bij naar com.adobe.granite.crx-explorer-1.1.28.
-* GRANITE-48937: Omniseaarch werkt niet op aem/start.html pagina.
-* GRANITE-49638: Corrigeer de verkeerde configuratie van inhoudstype voor de RUM-transformatorfabriek.
-* GRANITE-50141: IMSProviderImpl spamming the log.
-* SITES-20949: ComponentsIT.testEmbed mislukt nadat Youtube refererpolicy=&quot;strict-origin-when-cross-origin&quot; heeft toegevoegd.
-* SITES-21233: Core Components update - Cordion herstellen na upgrade naar 15860.
-* SKYOPS-74819: Verbroken achterwaartse compatibiliteit voor dubbele sleutels in Apache Commons.
-* SKYOPS-67087: Clientlib-aggregatie werkt in bepaalde gevallen niet.
-* CQ-4355415: AEM koppelingen voor meldingen werken niet in 6.5 SP18.
+* CQ-4357226: Fix regression in the IMS Configurations support for OAuth credentials.
+* GRANITE-51335: Ratelimit upgrade naar 5.0.4 Fixed Felix Health Check registrations.
 
-### Bekende problemen {#known-issues-15939}
+### Bekende problemen {#known-issues-15977}
 
 Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-15939}
+### Verouderde functies en API&#39;s {#deprecated-15977}
 
 * [JWT Credentials Deprection in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
 Kijk eens naar [Verouderde en verwijderde functies en API&#39;s](/help/release-notes/deprecated-removed-features.md) om te weten wat in AEM as a Cloud Service is vervangen of verwijderd.
 
-### Ingesloten technologieën {#embedded-tech-15939}
+### Ingesloten technologieën {#embedded-tech-15977}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
