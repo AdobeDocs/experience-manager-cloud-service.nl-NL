@@ -1,7 +1,8 @@
 ---
 title: Uitvoeringen weergeven en beheren in Experience Manager Assets
 description: Leer hoe AEM Assets en Dynamic Media effectief imagebeheer vereenvoudigen met statische en dynamische afbeeldingsuitvoeringen.
-source-git-commit: 5c1e2d5388b94243f668f07b1f338f035f00de85
+exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
+source-git-commit: 4627eb00ba910d1ad2920db15a87761bd7e4a0c0
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -13,7 +14,8 @@ ht-degree: 0%
 Uitvoeringen in Adobe Experience Manager (AEM) zijn aangepaste versies van digitale elementen, zoals afbeeldingen, die zijn ontworpen voor verschillende apparaten en platforms voor optimale prestaties. AEM vergemakkelijkt het maken en beheren van deze uitvoeringen, waardoor de gebruikerservaring wordt verbeterd. U kunt miniaturen maken, afbeeldingen optimaliseren voor internet of mobiele apparaten, watermerken toevoegen, dynamische uitvoeringen of SmartCrop-uitvoeringen weergeven en downloaden en nog veel meer doen.
 
 Dynamic Media-voorinstellingen voor afbeeldingen en SmartCrop-uitvoeringen bevorderen een systematisch imagebeheer dat is afgestemd op de standaarden van het merk, waardoor de cohesie van het merk wordt gemaximaliseerd. Dit vereenvoudigt het proces waarbij dynamische afbeeldingsuitvoeringen snel worden gevonden en gebruikt zonder dat er beheerfuncties beschikbaar zijn.
-<br>Uitvoeringen worden geclassificeerd als statisch en dynamisch, elk type dat unieke kenmerken en mogelijkheden presenteert die verder in detail worden besproken.
+
+Uitvoeringen worden geclassificeerd als statisch en dynamisch, elk type dat unieke kenmerken en mogelijkheden presenteert die verder in detail worden besproken.
 
 ## Statische vertoningen {#static-renditions}
 
