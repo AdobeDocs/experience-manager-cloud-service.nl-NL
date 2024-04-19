@@ -2,9 +2,9 @@
 title: Verkeersfilterregels inclusief WAF-regels
 description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van de Regels van de Firewall van de Toepassing van het Web (WAF)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
+source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
 workflow-type: tm+mt
-source-wordcount: '3669'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Een subcategorie van de regels van het verkeersfilter vereist of een vergunning 
 
 De filterregels van het verkeer kunnen via de configuratiepijpleidingen van de Manager van de Wolk worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Steun voor RDEs zal in de toekomst komen.
 
-[Een zelfstudie doorlopen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) snel concrete expertise op dit gebied op te bouwen.
+[Een zelfstudie doorlopen](#tutorial) snel concrete expertise op dit gebied op te bouwen.
 
 >[!NOTE]
 >Geïnteresseerd in andere opties om verkeer bij CDN te vormen, met inbegrip van het wijzigen van het verzoek/de reactie, het verklaren van omleiding, en het proxying aan een niet-AEM oorsprong? [Meer informatie en probeer het uit](/help/implementing/dispatcher/cdn-configuring-traffic.md) door zich aan te sluiten bij het programma voor vroegtijdige adoptie .
@@ -415,6 +415,8 @@ Regels voor tarieflimieten kunnen niet verwijzen naar WAF-vlaggen. Ze zijn besch
 
 Snelheidslimieten worden berekend per CDN POP. Als voorbeeld, veronderstel dat POPs in Montreal, Miami, en Dublin verkeerstarieven van 80, 90, en 120 verzoek per seconde ervaren, en dat de tariefgrensregel wordt geplaatst aan een grens van 100. In dat geval zou alleen het verkeer naar Dublin beperkt zijn.
 
+De grenzen van het tarief worden geëvalueerd gebaseerd op of verkeer dat de rand raakt, verkeer dat de rand raakt, of het aantal fouten.
+
 ### rateLimit-structuur {#ratelimit-structure}
 
 | **Eigenschap** | **Type** | **Standaard** | **BETEKENEN** |
@@ -422,6 +424,7 @@ Snelheidslimieten worden berekend per CDN POP. Als voorbeeld, veronderstel dat P
 | limiet | geheel getal van 10 tot en met 10000 | vereist | Het tarief van het verzoek (per CDN POP) in verzoeken per seconde waarvoor de regel wordt teweeggebracht. |
 | venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend. De nauwkeurigheid van de tellers hangt af van de grootte van het venster (grotere vensternauwkeurigheid). U kunt bijvoorbeeld een nauwkeurigheid van 50% verwachten voor het tweede venster en een nauwkeurigheid van 90% voor het tweede venster van 60 seconden. |
 | straf | geheel getal van 60 tot 3600 | 300 | Een periode in seconden waarvoor overeenkomstige verzoeken worden geblokkeerd (afgerond naar de dichtstbijzijnde minuut). |
+| aantal | all, fetch, error | alles | evalueert gebaseerd op randverkeer (allen), oorsprongverkeer (haal), of het aantal fouten. |
 | groupBy | array[Getter] | none | De teller van de snelheidsbegrenzer zal door een reeks verzoekeigenschappen (bijvoorbeeld, clientIp) worden bijeengevoegd. |
 
 
@@ -447,6 +450,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -468,7 +472,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## Waarschuwing verkeersfilterregels {#traffic-filter-rules-alerts}
@@ -615,7 +619,7 @@ Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar 
 
 Gereedschap Dashboard kan rechtstreeks worden gekloond vanuit het dialoogvenster [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github repository.
 
-[Zie de zelfstudie](#tutorial) voor concrete instructies over het gebruik van de dashboardgereedschappen.
+[Tutorials](#tutorial) zijn beschikbaar voor concrete instructies over het gebruik van de dashboardgereedschappen.
 
 ## Aanbevolen startregels {#recommended-starter-rules}
 
@@ -700,9 +704,13 @@ data:
           - CMDEXE
 ```
 
-## Zelfstudie {#tutorial}
+## Tutorials {#tutorial}
 
-[Een zelfstudie gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) praktische kennis en ervaring op het gebied van verkeersfilterregels.
+Er zijn twee zelfstudies beschikbaar.
+
+### Websites beschermen met verkeersfilterregels (inclusief WAF-regels)
+
+[Een zelfstudie gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) algemene, praktische kennis en ervaring op te doen met verkeersfilterregels, met inbegrip van WAF-regels.
 
 De zelfstudie begeleidt u door:
 
@@ -711,3 +719,16 @@ De zelfstudie begeleidt u door:
 * Regels voor het declareren van verkeersfilters, inclusief WAF-regels
 * Resultaten analyseren met dashboardgereedschappen
 * Aanbevolen procedures
+
+### Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter
+
+[Diep duiken op hoe te om te blokkeren](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ontkenning van de (Dos) van de Dienst en Verdeelde Ontkenning van de (DDoS) aanvallen van de Dienst gebruikend de regels van de het verkeersfilter van de tariefgrens en andere strategieën.
+
+De zelfstudie begeleidt u door:
+
+* begrijpen, beveiliging
+* ontvangen van waarschuwingen wanneer tarieflimieten worden overschreden
+* het analyseren van verkeerspatronen gebruikend dashboardtooling om drempels voor de regels van de snelheidsgrensfilter te vormen
+
+
+
