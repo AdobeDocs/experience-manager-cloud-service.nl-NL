@@ -3,9 +3,9 @@ title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
 description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
 workflow-type: tm+mt
-source-wordcount: '2564'
+source-wordcount: '2708'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Voer de volgende instructies uit om een thema te klonen:
 1. Voer de volgende opdracht uit:
 
    ```
-         code .
+      code .
    ```
 
    ![De themamap openen in een teksteditor zonder opmaak](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
@@ -137,14 +137,31 @@ Voer de volgende instructies uit om een thema te klonen:
 
 1. Open de `package.json` bestand voor bewerking.
 
-1. Stel de waarden in voor de `name` en `description` kenmerken.
+1. Stel de waarden in voor de `name` en `version` kenmerken.
 
-   Het kenmerk name wordt gebruikt om het thema op unieke wijze te identificeren, zoals &quot;aem-forms-wknd-theme&quot; en in het dialoogvenster **Stijl** tabblad van **Wizard Formulier maken**. Het beschrijvingskenmerk bevat aanvullende details over het thema, inclusief het doel en de scenario&#39;s waarvoor het is ontworpen. U kunt ook de versie, beschrijving en licentie voor het thema opgeven.
+   ![Wijziging van afbeelding van de naam van het canvasthema](/help/forms/assets/changename_canvastheme.png)
 
-1. Sla het bestand op en sluit het.
+   >[!NOTE]
+   >
+   > * Het kenmerk name wordt gebruikt om het thema op unieke wijze te identificeren en de opgegeven naam wordt weergegeven in het dialoogvenster **Stijl** tabblad van het **Wizard Formulier maken**.
+   > * U kunt bijvoorbeeld een naam voor uw thema selecteren op basis van uw keuze `mytheme` of `customtheme`. In dit geval hebben we de naam echter opgegeven als `aem-forms-wknd-theme`.
 
-![Wijziging van afbeelding van de naam van het canvasthema](/help/forms/assets/changename_canvastheme.png)
+1. Open de `package-lock.json` bestand voor bewerking.
+1. Stel de waarden in voor de `name` en `version` kenmerken. Zorg ervoor dat de waarden voor de `name` en `version` kenmerken in de `Package-lock`.json-bestand komt overeen met de bestanden in het dialoogvenster `Package.json` bestand.
 
+   ![Wijziging van afbeelding van de naam van het canvasthema](/help/forms/assets/changename_canvastheme-package-lock.png)
+
+1. (Optioneel) Open het dialoogvenster `ReadMe` bestand voor bewerken en bijwerken van de naam van het thema.
+
+   ![Wijziging van afbeelding van de naam van het canvasthema](/help/forms/assets/changename_canvastheme-readme-file.png)
+
+1. Sla de bestanden op en sluit ze.
+
+**Overwegingen bij het instellen van de naam van het thema**
+
+* Het is verplicht de `@aemforms` van de themanaam in `Package.json` en `Package-lock.json` bestand. In het geval dat u het bestand niet verwijdert `@aemforms` uit uw aangepaste themanaam, resulteert het in de mislukking van de frontend pijpleiding tijdens de themaplaatsing.
+* Het wordt aanbevolen het thema bij te werken `version` in `Package.json` en `Package-lock.json` om wijzigingen en verbeteringen in de tijd voor uw thema nauwkeurig weer te geven.
+* Voor de belangrijke informatie over het gebruik, de installatie-instructies en andere relevante details wordt aanbevolen de naam van het thema in het dialoogvenster `ReadMe` bestand.
 
 #### 3. Een thema aanpassen {#customize-the-theme}
 
