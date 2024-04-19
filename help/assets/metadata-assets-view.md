@@ -3,9 +3,10 @@ title: Hoe te om meta-gegevens in de mening van Activa te beheren?
 description: Leer hoe u metagegevens beheert in de weergave Middelen. Een beter beheer van metagegevens maakt een middel toegankelijker, eenvoudiger te beheren en compleet.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
+source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
@@ -144,13 +145,27 @@ Een metagegevensformulier toewijzen aan een map:
 
 2. Klik op **[!UICONTROL Assign to Folder]**.
 
-3. Selecteer de map en klik op **[!UICONTROL Assign]**.
+3. Selecteer de map en klik op **[!UICONTROL Assign]**. U kunt de mappen selecteren door op de mapnamen te klikken.
 
    ![metagegevensformulier toewijzen aan een map](assets/assign-to-folder.png)
 
    U kunt ook naar de pagina met mapdetails navigeren en een metagegevensformulier selecteren uit de makeigenschappen in het rechterdeelvenster om het metagegevensformulier aan de map toe te wijzen.
 
    ![Metagegevens uit mapeigenschappen](assets/metadata-from-folder-props.png)
+
+### Metagegevens uit mappen verwijderen {#remove-metadata-form-folder}
+
+Nadat u een metagegevensformulier aan een of meerdere mappen hebt toegewezen, kunt u met Experience Manager Assets ook het metagegevensformulier uit de geselecteerde mappen verwijderen.
+
+Een metagegevensformulier verwijderen uit een map:
+
+1. Navigeren naar **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** en selecteert u een metagegevensformulier.
+
+1. Klik op **[!UICONTROL Remove from Folder(s)]**. De lijst met toegewezen mappen voor de weergave van het metagegevensformulier.
+
+1. Selecteer de map en klik op **[!UICONTROL Remove]**. U kunt ook meerdere mappen in de lijst selecteren.
+
+U kunt ook naar de pagina met mapdetails navigeren en **[!UICONTROL System mapped Metadata Form]** van de **[!UICONTROL Metadata Forms]** veld om het toegewezen metagegevensformulier uit een map te verwijderen.
 
 ## Volgende stappen {#next-steps}
 
