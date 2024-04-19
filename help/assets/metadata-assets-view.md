@@ -4,7 +4,7 @@ description: Leer hoe u metagegevens beheert in de weergave Middelen. Een beter 
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1723'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Metagegevens zijn gegevens of een beschrijving van de gegevens. Uw afbeeldingen 
 
 Met metagegevens kunt u elementen verder indelen. Dit is handig wanneer de hoeveelheid digitale informatie toeneemt. U kunt een paar honderd bestanden beheren op basis van alleen de bestandsnamen, miniaturen en het geheugen. Deze aanpak is echter niet schaalbaar. Het is te kort wanneer het aantal betrokken personen en het aantal beheerde activa toenemen.
 
-Als er metagegevens worden toegevoegd, neemt de waarde van een digitaal element toe, omdat het element
+Met de toevoeging van metagegevens neemt de waarde van een digitaal element toe, omdat het element:
 
 * Toegankelijker - systemen en gebruikers kunnen het gemakkelijk vinden.
 * Gemakkelijker te beheren - u kunt gemakkelijker middelen met de zelfde reeks eigenschappen vinden en veranderingen op hen toepassen.
