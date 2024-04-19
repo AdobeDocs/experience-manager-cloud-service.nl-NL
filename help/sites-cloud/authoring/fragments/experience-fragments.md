@@ -2,9 +2,9 @@
 title: Ervaar fragmenten
 description: Met Adobe Experience Manager as a Cloud Service Experience Fragments kunt u uw ervaringen herbruikbaar en flexibel maken.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2098'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ In Adobe Experience Manager as a Cloud Service:
 Een ervaringsfragment:
 
 * Maakt deel uit van een ervaring (pagina).
-* Kan op meerdere pagina&#39;s worden gebruikt.
+* Kan op meerdere pagina&#39;s worden gebruikt (die zijn gebaseerd op bewerkbare sjablonen).
 * Is gebaseerd op een malplaatje (editable slechts) om structuur en componenten te bepalen.
 * Deze sjabloon wordt gebruikt om de *hoofdpagina* van het ervaringsfragment.
 * Bestaat uit een of meer componenten, met layout, in een alineasysteem.
@@ -262,6 +262,10 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
 U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pagina&#39;s:
 
 1. Open een pagina om te bewerken.
+
+   >[!NOTE]
+   >
+   >De pagina moet zijn gebaseerd op een bewerkbare sjabloon.
 
 1. Maak een instantie van de component Experience Fragment in het paginalineasysteem:
 
