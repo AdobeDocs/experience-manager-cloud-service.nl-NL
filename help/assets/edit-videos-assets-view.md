@@ -2,18 +2,19 @@
 title: Video's bewerken
 description: Video's bewerken met [!DNL Adobe Express] Aangedreven opties en sparen bijgewerkte video's als versies.
 role: User
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
 
 # Video&#39;s bewerken [!DNL Assets Essentials] {#edit-videos}
 
-Een video transformeren tot een perfecte grootte is eenvoudig met ingesloten [!DNL Adobe Express] snelle acties. Snelle handelingen in [!DNL Assets Essentials] aangedreven door [!DNL Adobe Express] biedt gebruiksvriendelijke opties voor het bewerken van video&#39;s, zoals het uitsnijden van video, het vergroten of verkleinen van video en het omzetten van video in GIF.
+Het maken van variaties in video-inhoud is eenvoudig voor middelengebruikers met de ingesloten [!DNL Adobe Express] snelle acties voor video. Snelle handelingen in [!DNL Assets Essentials] aangedreven door [!DNL Adobe Express] biedt gebruiksvriendelijke opties voor het bewerken van video&#39;s, zoals het uitsnijden van video, het vergroten of verkleinen van video en het omzetten van video in GIF.
 
-Nadat u een video hebt bewerkt, kunt u de nieuwe video opslaan als een nieuwe versie. Met Versioning kunt u, indien nodig, later terugkeren naar het oorspronkelijke element. Ga naar de details van de video en klik op **[!UICONTROL Edit Video]**. U kunt ook het element selecteren en op details klikken en vervolgens op ![schaar](assets/do-not-localize/cut.svg) beschikbaar in het rechterdeelvenster.
+Ga naar de details van de video en klik op [!UICONTROL Edit Video]. U kunt ook het element selecteren en op details klikken en vervolgens op ![schaar](assets/do-not-localize/cut.svg) beschikbaar in het rechterdeelvenster. Nadat u een video hebt bewerkt, kunt u de nieuwe video opslaan als een nieuwe versie of als een nieuw element.
 
 ## Vereisten {#prerequisites}
 
@@ -38,7 +39,7 @@ U kunt ongewenste onderdelen uit de video verwijderen met ingesloten [!DNL Adobe
 
 ### Formaat video wijzigen {#resize-video-using-express}
 
-Een video vergroten of verkleinen tot een bepaalde grootte is een populaire optie. [!DNL Assets Essentials] Hiermee kunt u snel het formaat van video aanpassen aan de algemene afmetingen door vooraf berekende nieuwe resoluties voor specifieke formaten te bieden. De grootte van de video wijzigen met [!DNL Assets Essentials]volgt u de onderstaande stappen:
+De uiteindelijke video-inhoud in de DAM moet vaak worden vergroot of verkleind voor distributie naar specifieke kanalen. [!DNL Assets Essentials] Hiermee kunt u de grootte van video eenvoudig aanpassen aan de afmetingen die worden vereist door algemene sociale kanalen en u kunt de grootte ook aanpassen aan aangepaste resoluties. De grootte van de video wijzigen met [!DNL Assets Essentials]Voer de onderstaande stappen uit:
 
 1. Selecteer een video en klik op **[!UICONTROL Edit]**.
 2. Klikken **[!UICONTROL Resize Video]** uit de snelle acties die beschikbaar zijn in het linkerdeelvenster.
@@ -52,7 +53,7 @@ Uw vergroot/verkleind video kan worden gedownload. U kunt het bewerkte element o
 
 ### Video bijsnijden {#trim-video-using-express}
 
-Een snelle videotrimmer in [!DNL Assets Essentials] aangedreven door [!DNL Adobe Express] kunt u video moeiteloos bijsnijden. Voer de onderstaande stappen uit:
+Als u een clip van een grotere video moet gebruiken, kunt u de opdracht **[!UICONTROL Trim Video]** gebruiken om een gedeelte van de video te selecteren en bij te snijden. Voer de onderstaande stappen uit:
 
 1. Selecteer een video en klik op **[!UICONTROL Edit]**.
 2. Klikken **[!UICONTROL Trim Video]** uit de snelle acties die beschikbaar zijn in het linkerdeelvenster.
@@ -80,11 +81,11 @@ Uw video is beschikbaar in GIF-indeling voor downloaden. U kunt het bewerkte ele
 
 ## Beperkingen {#limitations-video-adobe-express}
 
-* Alleen het MP4-videotype wordt ondersteund.
+* Alleen video&#39;s in de MP4-indeling worden ondersteund voor bewerking.
 
-* Maximale ondersteunde bestandsgrootte: 200 MB
+* De maximale ondersteunde bronbestandsgrootte is 200 MB.
 
-* De minimale en maximale afmetingen van de video zijn respectievelijk 46 pixels en 3840 pixels.
+* Ondersteunde video&#39;s zijn groter dan 46 pixels en kleiner dan 3840 pixels aan elke zijde.
 
 * De ondersteunde webbrowsers zijn Google Chrome, Firefox, Safari en Edge.
 
