@@ -2,9 +2,9 @@
 title: Logbestanden openen en beheren
 description: Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
+source-git-commit: fa28d2fa83fb35fe80692c5f94661fa4c32a02a9
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
 
 U kunt een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de opdracht **Omgevingen** kaart van **Overzicht** pagina of pagina Omgevingsdetails.
+
+Logboeken worden zeven dagen bewaard.
 
 ## Logbestanden downloaden {#download-logs}
 
