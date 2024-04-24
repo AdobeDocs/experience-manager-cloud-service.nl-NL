@@ -1,11 +1,11 @@
 ---
-title: DAM (Digital Asset Management) van Adobe met AEM
-description: Begrijp hoe u het Digital Asset Management (DAM) van Adobe gebruikt en beheert met gebruik van Experience Manager Assets as a Cloud Service.
+title: DAM (Digital Asset Management) van de Adobe met AEM
+description: Begrijp hoe u Digital Asset Management (DAM) van Adobe gebruikt en beheert met Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d66d645dd039189b34e6e3c4d937b82a14b8b801
+source-git-commit: 4844d736d3791b376b7ad9cafa005c856c114837
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 0%
