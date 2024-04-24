@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5e7a1ec21cc99963e95e4b0655055b8f38703101
+source-git-commit: 128ca1a00124fa4cb5d008a41a9d0b5a9a5e075e
 workflow-type: tm+mt
-source-wordcount: '4893'
+source-wordcount: '4894'
 ht-degree: 3%
 
 ---
@@ -713,7 +713,7 @@ ht-degree: 3%
       + [Bekende problemen, aanbevolen procedures en veelgestelde vragen](/help/forms/communications-known-issues-limitations.md)
    + Transactierapporten {#using-communications}
       + [Transactierapporten Billable API&#39;s](/help/forms/transaction-reports-billable-apis.md)
-      + [Een transactie opnemen voor aangepaste implementaties](/help/forms/record-transaction-custom-implementation.md)
+      + [Een transactie opnemen voor een aangepaste implementatie](/help/forms/record-transaction-custom-implementation.md)
    + Referentie ontwikkelings-API {#aem-forms-developer-api-reference}
       + [Aangepaste Forms API-naslaggids](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
