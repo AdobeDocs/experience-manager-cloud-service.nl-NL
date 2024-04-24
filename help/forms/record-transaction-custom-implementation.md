@@ -2,16 +2,20 @@
 title: Een transactie opnemen voor aangepaste implementaties
 description: Gebruik de API TransactionRecorder om handelingen op te nemen die niet automatisch als transacties worden beschouwd
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+exl-id: cb584f78-30af-4a58-be99-843352e8249c
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 0%
+source-wordcount: '193'
+ht-degree: 2%
 
 ---
 
 # Een transactie opnemen voor aangepaste implementaties {#record-a-transaction-for-custom-implementations}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
+| AEM as a Cloud Service | Dit artikel |
 
 Gebruik de TransactieRecorder API om acties te registreren die niet automatisch als transacties worden rekenschap gegeven.
 
@@ -88,4 +92,3 @@ $.ajax({
 ## Verwante artikelen {#related-articles}
 
 * [Transactierapporten Billable API&#39;s](/help/forms/transaction-reports-billable-apis.md)
-
