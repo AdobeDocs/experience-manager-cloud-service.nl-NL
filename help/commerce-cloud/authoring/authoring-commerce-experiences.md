@@ -1,15 +1,15 @@
 ---
-title: Ervaringen op het gebied van authoringhandel
+title: Commerce Ervaringen ontwerpen
 description: Leer hoe u op efficiënte wijze ervaringen met betrekking tot handel kunt maken en opbouwen door toegang te krijgen tot productgegevens en inhoud zonder de context te verlaten.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
 
-# Ervaringen op het gebied van authoringhandel {#authoring-commerce-experiences}
+# Commerce Ervaringen ontwerpen {#authoring-commerce-experiences}
 
 ## Overzicht {#overview}
 
@@ -51,9 +51,9 @@ Het configuratiedialoogvenster van deze component vereist 1 : n-categorieën. CI
 
 ![Carrousel-component met selectie](../assets/authoring/carousel_component_with_selection.png)
 
-## Universele editor {#universal-editor}
+## Pagina-editor {#page-editor}
 
-De Universele Redacteur wordt uitgebreid met mogelijkheden om tot de productgegevens in real time en bijbehorende productinhoud toegang te hebben.
+De Pagina-editor in AEM is uitgebreid met mogelijkheden voor toegang tot de realtime productgegevens en de bijbehorende productinhoud.
 
 ### Toegang tot productgegevens {#access-product-data}
 
@@ -65,7 +65,7 @@ Analoog aan activa, kunnen de producten op een pagina worden toegevoegd (die tot
 
 ### Koppelingen toevoegen in tekstvelden met RTE {#rte}
 
-CIF productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden weergegeven. Het is dus niet mogelijk hyperlinks in te sluiten, zoals bij gewone AEM pagina&#39;s. CIF voegt een nieuwe actie &quot;de Verbindingen van de Handel&quot;aan RTE (Rich Text Editor) toe. Deze actie werkt precies zoals de gewone &quot;Hyperlink&quot;actie, maar staat auteurs toe om of een product of een categorie te selecteren gebruikend de plukkers.
+CIF productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden weergegeven. Het is dus niet mogelijk hyperlinks in te sluiten, zoals bij gewone AEM pagina&#39;s. CIF voegt een nieuwe actie &quot;de Verbindingen van Commerce&quot;aan RTE (Rich Text Editor) toe. Deze actie werkt precies zoals de gewone &quot;Hyperlink&quot;actie, maar staat auteurs toe om of een product of een categorie te selecteren gebruikend de plukkers.
 
 ![RTE](../assets/authoring/RTE.png)
 
@@ -77,7 +77,7 @@ Hierdoor wordt een koppeling voor plaatsaanduidingen gemaakt die wordt vervangen
 
 ### Gekoppelde productinhoud openen {#associated-content}
 
-Als de Universele Redacteur 1:n producten op een pagina erkent, zal het zijpaneel automatisch het lusje &quot;Bijbehorende Inhoud van de Handel tonen&quot;. Op dit tabblad hebben auteurs snel toegang tot AEM inhoud die is gelabeld met het product (zie [productgegevens verrijken met de bijbehorende AEM-inhoud](./enrich-product-associated-content.md) voor meer informatie ) . Op dit tabblad vindt u vervolgkeuzelijsten waarmee u kunt filteren op inhoudstype en specifieke producten als er meerdere producten op de pagina staan. Het gebruik van de inhoud werkt precies hetzelfde als het gebruik van inhoud op het tabblad &quot;Middelen&quot;.
+Als de Editor 1:n-producten op een pagina herkent, wordt in het zijpaneel automatisch het tabblad &quot;Gekoppelde Commerce-inhoud&quot; weergegeven. Op dit tabblad hebben auteurs snel toegang tot AEM inhoud die is gelabeld met het product (zie [productgegevens verrijken met de bijbehorende AEM-inhoud](./enrich-product-associated-content.md) voor meer informatie ) . Op dit tabblad vindt u vervolgkeuzelijsten waarmee u kunt filteren op inhoudstype en specifieke producten als er meerdere producten op de pagina staan. Het gebruik van de inhoud werkt precies hetzelfde als het gebruik van inhoud op het tabblad &quot;Middelen&quot;.
 
 ![Tabblad Productgegevens](../assets/authoring/associated-commerce-content-tab.png)
 

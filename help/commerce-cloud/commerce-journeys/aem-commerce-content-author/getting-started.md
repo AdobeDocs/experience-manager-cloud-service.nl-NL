@@ -1,10 +1,10 @@
 ---
-title: Aan de slag met CIF Authoring
+title: Aan de slag met CIF ontwerpen
 description: Aan de slag met CIF ontwerpen.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6f27c968c347e6b2be8c9bfcf9bb69e531d10ff9
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -15,21 +15,21 @@ Meer weten over Adobe Experience Manager (AEM) CIF Authoring.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van deze AEM reis van de Inhoud en de Handel, [Meer informatie over AEM inhoud en handel](/help/commerce-cloud/introduction.md), leerde u de basistheorie en de concepten hoofdloze CMS en AEM Inhoud en Handel.
+In het vorige document van deze AEM Content and Commerce trip: [Meer informatie over AEM Content en Commerce](/help/commerce-cloud/introduction.md)U leerde de basistheorie en -concepten van CMS zonder kop en AEM Content en Commerce.
 
 Dit artikel bouwt voort op die grondbeginselen.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe te om CIF voor Inhoud en Handel te gebruiken specifieke creatie. Na het lezen moet u:
+Dit document helpt u te begrijpen hoe u CIF kunt gebruiken voor het maken van inhoud en voor het maken van specifieke Commerce-toepassingen. Na het lezen moet u:
 
-* Begrijp de concepten CIF creatie gebruikend de Universele Redacteur
+* Begrijp de concepten CIF creatie gebruikend de Redacteur van de Pagina in AEM
 * Toegang krijgen tot productcatalogusgegevens in AEM met product- en categoriekiezers
 * Toegang krijgen tot inhoud en handelsgegevens met de productcockpit en AEM Omnsearch
 
-## CIF maken in de Universal Editor {#cif-authoring}
+## CIF maken in AEM paginaeditor {#cif-authoring}
 
-CIF breidt de Universele Redacteur met mogelijkheden uit om tot de productgegevens in real time toegang te hebben zonder de context te verlaten:
+CIF breidt de Redacteur van de Pagina in AEM met mogelijkheden uit om tot de productgegevens in real time toegang te hebben zonder de context te verlaten:
 
 Open het zijpaneel en selecteer &quot;Producten&quot;van de drop-down lijst.
 ![Producttype selecteren](assets/asset-finder-overview.png)
@@ -95,7 +95,7 @@ Omnissearch voert een full-text zoekopdracht uit in de commerceback om alle verw
 
 Nu u dit deel van de reis hebt voltooid, moet u:
 
-* Begrijp de concepten CIF creatie gebruikend de Universele Redacteur
+* Begrijp de concepten CIF creatie gebruikend de Redacteur van de Pagina
 * Toegang tot productcatalogus in AEM met product- en categoriekiezers
 * Toegang krijgen tot inhoud en handelsgegevens met de productcockpit en AEM Omnsearch
 
