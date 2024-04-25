@@ -1,11 +1,11 @@
 ---
 title: IMS-ondersteuning voor Adobe Experience Manager as a Cloud Service
-description: Ondersteuning voor Image Management System voor Adobe Experience Manager as a Cloud Service
+description: Ondersteuning voor Image Management System voor Adobe Experience Manager as a Cloud Service.
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
 workflow-type: tm+mt
-source-wordcount: '1917'
-ht-degree: 32%
+source-wordcount: '1922'
+ht-degree: 29%
 
 ---
 
@@ -46,21 +46,21 @@ Als u Adobe IMS voor AEM-verificatie wilt gebruiken, is het on-boarden van de kl
 
 Als eerste stap moeten klanten beschikken over een organisatie die is ingericht in Adobe IMS. Adobe Enterprise-klanten worden in het [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html). Dit gebied is het portaal dat klanten van de Adobe gebruiken om hun productrechten voor hun gebruikers en groepen te beheren.
 
-AEM klanten zouden reeds een organisatie moeten hebben provisioned, en als deel van de levering IMS, worden de klanteninstanties ter beschikking gesteld in Admin Console voor het beheren van gebruikersrechten en toegang.
+AEM klanten zouden reeds een Organisatie moeten hebben die wordt voorzien, en als deel van de levering IMS, worden de klanteninstanties ter beschikking gesteld in Admin Console voor het beheren van gebruikersrechten en toegang.
 
 Nadat een klant als IMS Organisatie bestaat, moeten zij hun systeem vormen zoals samengevat in het volgende:
 
 ![IMS on-boarden](/help/security/assets/ims2.png)
 
-1. De aangewezen systeembeheerder ontvangt een uitnodiging om zich aan te melden bij Cloud Manager. Na aanmelding bij Cloud Manager kunnen de systeembeheerders ervoor kiezen AEM-programma&#39;s en -omgevingen in te stellen of naar de Admin Console te gaan voor beheertaken.
+1. De aangewezen systeembeheerder ontvangt een uitnodiging om u aan te melden bij Cloud Manager. Nadat u zich hebt aangemeld bij Cloud Manager, kunnen de systeembeheerders ervoor kiezen AEM programma&#39;s en omgevingen te bieden of naar de Admin Console te navigeren voor beheertaken.
 1. De systeembeheerder beweert een domein om de eigendom van het respectieve domein (bijvoorbeeld, acme.com) te bevestigen
 1. De systeembeheerder stelt gebruikersdirectory&#39;s in
-1. De systeembeheerder voert IDP-configuratie in Admin Console uit om Single Sign On in te stellen.
+1. De systeembeheerder voert IDP-configuratie in Admin Console uit om Single Sign-On in te stellen.
 1. De AEM-beheerder beheert de lokale groepen en toestemmingen en machtigingen, zoals gebruikelijk.
 
 De basisbeginselen van Adobe Identity Management, inclusief de IDP-configuratie, worden [hier](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) besproken.
 
-Het gebruik van Enterprise Administration en Admin Console wordt [hier](https://helpx.adobe.com/enterprise/admin-guide.html) besproken.
+Het gebruik van Enterprise Administration en Admin Console wordt gedekt [hier](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ### Gebruikers aan boord in Admin Console {#onboarding-users-in-admin-console}
 
@@ -158,7 +158,7 @@ AEM kan lokale aanmeldingen voor Admin-gebruikers blijven ondersteunen. Via het 
 
 <!-- the above image must be updated for skyline -->
 
-**Op IMS gebaseerde aanmelding**
+**IMS-gebaseerde aanmelding**
 
 Voor andere gebruikers, wordt de op IMS-Gebaseerde opening van een sessie gebruikt nadat IMS op de instantie wordt gevormd. De gebruiker klikt op de knop Aanmelden met Adobe, zoals hieronder wordt weergegeven:
 
@@ -210,10 +210,10 @@ Zoals hieronder getoond, de groep **AEM-GRP_008** erft de machtigingen en rechte
 
 Als u toegang wilt tot Cloud Manager of tot omgevingen AEM as a Cloud Service, moet u zijn toegewezen aan profielen van het product Cloud Manager.
 
-Zie Roldefinities voor meer informatie over rollen voor gebruikers die de beschikbaarheid van specifieke functies in Cloud Manager bepalen.
+Zie Roldefinities als u meer wilt weten over rollen voor gebruikers die de beschikbaarheid van specifieke functies in Cloud Manager bepalen.
 
 >[!NOTE]
->Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Om over elk van de rollen met specifieke toestemmingen, pre-gevormde taken, of toestemmingen, verbonden aan elke rol te leren, zie [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html).
+>Cloud Manager heeft vooraf geconfigureerde rollen met de juiste machtigingen. Om over elk van de rollen met specifieke toestemmingen, pre-gevormde taken, of toestemmingen, verbonden aan elke rol te leren, zie [Op rollen gebaseerde machtigingen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions).
 
 **Stappen voor het toevoegen van een gebruiker**
 

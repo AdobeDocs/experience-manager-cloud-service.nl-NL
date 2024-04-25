@@ -1,10 +1,10 @@
 ---
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
-description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek adres van uitgangIP voor AEM as a Cloud Service te vormen
+description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek uitgangIP adres voor AEM as a Cloud Service te vormen.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
 workflow-type: tm+mt
-source-wordcount: '5142'
+source-wordcount: '5093'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Dit artikel introduceert de verschillende geavanceerde voorzien van een netwerke
 
 >[!TIP]
 >
->Naast deze documentatie, is er ook een reeks leerprogramma&#39;s die worden ontworpen om u door elk van de geavanceerde voorzien van een netwerkopties bij dit te leiden [locatie.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+>Naast deze documentatie, is er ook een reeks leerprogramma&#39;s die worden ontworpen om u door elk van de geavanceerde voorzien van een netwerkopties bij dit te leiden [locatie.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/advanced-networking)
 
 ## Overzicht {#overview}
 
@@ -26,11 +26,11 @@ AEM as a Cloud Service biedt de volgende geavanceerde netwerkopties:
 * [IP-adres van specifiek egress](#dedicated-egress-ip-address) - Vorm verkeer uit AEM as a Cloud Service om uit unieke IP voort te komen.
 * [Virtual Private Network (VPN)](#vpn) - Beveilig verkeer tussen uw infrastructuur en AEM as a Cloud Service, als u VPN hebt.
 
-Dit artikel beschrijft eerst elk van deze opties in detail en waarom u hen zou kunnen gebruiken, alvorens te beschrijven hoe zij gebruikend de UI van de Manager van de Wolk en door API worden gevormd te gebruiken, en met sommige geavanceerde gebruiksgevallen te besluiten.
+In dit artikel worden deze opties gedetailleerd beschreven en wordt uitgelegd waarom u ze kunt gebruiken, voordat u beschrijft hoe ze zijn geconfigureerd met de interface van Cloud Manager en door de API te gebruiken. Het artikel sluit af met enkele gevallen van geavanceerd gebruik.
 
 >[!CAUTION]
 >
->Als u reeds provisioned met erfenis specifieke toegangstechnologie bent en wenst om één van deze geavanceerde voorzien van een netwerkopties te vormen, [Neem eerst contact op met de Adobe Client Care.](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)
+>Als u reeds provisioned met erfenis specifieke toegangstechnologie bent en één van deze geavanceerde voorzien van een netwerkopties wilt vormen, [Contact opnemen met Adobe Client Care](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home).
 >
 >Het proberen om geavanceerd voorzien van een netwerk met erfenisegress technologie te vormen kan plaatsconnectiviteit beïnvloeden.
 
@@ -43,8 +43,8 @@ Bij het configureren van geavanceerde netwerkfuncties gelden de volgende beperki
 * Een gebruiker in moet beschikken over **Beheerder** rol om netwerkinfrastructuur in uw programma toe te voegen en te vormen.
 * De productieomgeving moet worden gemaakt voordat netwerkinfrastructuur in uw programma kan worden toegevoegd.
 * Uw netwerkinfrastructuur moet zich in het zelfde gebied bevinden zoals het primaire gebied van uw productiemilieu.
-   * In het geval dat uw productieomgeving [aanvullende publicatiegebieden,](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) u kunt extra netwerkinfrastructuur creëren die elk extra gebied weerspiegelt.
-   * U zult niet meer netwerkinfrastructuur dan het maximumaantal gebieden kunnen tot stand brengen die in uw productiemilieu worden gevormd.
+   * In het geval dat uw productieomgeving [extra publicatiegebieden](/help/implementing/cloud-manager/manage-environments.md#multiple-regions), kunt u een andere netwerkinfrastructuur creëren die elk extra gebied weerspiegelt.
+   * U mag geen netwerkinfrastructuur maken die groter is dan het maximumaantal regio&#39;s dat in uw productieomgeving is geconfigureerd.
    * U kunt zo vele netwerkinfrastructuur als beschikbare gebieden in uw productiemilieu bepalen, maar de nieuwe infrastructuur moet het zelfde type zijn zoals de eerder gecreeerde infrastructuur.
    * Wanneer u meerdere infrastructuren maakt, kunt u alleen die gebieden selecteren waar geen geavanceerde netwerkinfrastructuur is gemaakt.
 
@@ -59,7 +59,7 @@ Beide stappen kunnen worden uitgevoerd met de interface van Cloud Manager of de 
 
 * Wanneer u de interface van Cloud Manager gebruikt, betekent dit dat u geavanceerde netwerkconfiguraties maakt met een wizard op programmaniveau en vervolgens elke omgeving bewerkt waar u de configuratie wilt inschakelen.
 
-* Als u de API voor Cloud Manager gebruikt, wordt `/networkInfrastructures` Het API eindpunt wordt aangehaald op het programmaniveau om het gewenste type van geavanceerd voorzien van een netwerk te verklaren, dat door een vraag aan het `/advancedNetworking` eindpunt voor elke milieu om de infrastructuur toe te laten en milieu-specifieke parameters te vormen.
+* Als u de API voor Cloud Manager gebruikt, wordt `/networkInfrastructures` Het API eindpunt wordt aangehaald op het programmaniveau om het gewenste type van geavanceerd voorzien van een netwerk te verklaren. Deze wordt gevolgd door een oproep aan de `/advancedNetworking` eindpunt voor elke milieu om de infrastructuur toe te laten en milieu-specifieke parameters te vormen.
 
 ## Flexibele poortuitgang {#flexible-port-egress}
 
@@ -67,11 +67,11 @@ Deze geavanceerde voorzien van een netwerkeigenschap laat u AEM as a Cloud Servi
 
 >[!TIP]
 >
->Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, wordt het geadviseerd u flexibele havenuitgang kiest als een specifiek IP adres niet wordt vereist omdat de Adobe prestaties van flexibel havenuitgang verkeer kan optimaliseren.
+>Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, wordt het geadviseerd u flexibele havenuitgang kiest als een specifiek IP adres niet wordt vereist. De reden hiervoor is dat Adobe de prestaties van flexibel poortegress-verkeer kan optimaliseren.
 
 >[!NOTE]
 >
->Als u deze eenmaal hebt gemaakt, kunnen de flexibele typen poortegress-infrastructuren niet worden bewerkt. De enige manier om configuratiewaarden te veranderen is hen te schrappen en te ontspannen.
+>Na het aanmaken kunnen de flexibele typen poortegress-infrastructuren niet worden bewerkt. De enige manier om configuratiewaarden te veranderen is hen te schrappen en te ontspannen.
 
 ### UI-configuratie {#configuring-flexible-port-egress-provision-ui}
 
@@ -83,11 +83,11 @@ Deze geavanceerde voorzien van een netwerkeigenschap laat u AEM as a Cloud Servi
 
    ![Netwerkinfrastructuur toevoegen](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. In de **Netwerkinfrastructuur toevoegen** wizard die begint, selecteert u **Flexibele poortuitgang** en de regio waar deze uit de **Regio** vervolgkeuzelijst en tik of klik op **Doorgaan**.
+1. In de **Netwerkinfrastructuur toevoegen** wizard, selecteert u **Flexibele poortuitgang** en de regio waar deze uit de **Regio** vervolgkeuzelijst en klik op **Doorgaan**.
 
    ![Flexibele poortuitgang configureren](assets/advanced-networking-ui-flexible-port-egress.png)
 
-1. De **Bevestiging** bevat een overzicht van uw selectie en de volgende stappen. Tik of klik op **Opslaan** om de infrastructuur te creëren.
+1. De **Bevestiging** bevat een overzicht van uw selectie en de volgende stappen. Klikken **Opslaan** om de infrastructuur te creëren.
 
    ![Bevestiging van configuratie van flexibel havenuitgang](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
@@ -130,7 +130,7 @@ HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
 HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 ```
 
-Als het gebruiken van niet-standaard het voorzien van een netwerkbibliotheken van Java, vorm volmachten gebruikend de eigenschappen hierboven, voor al verkeer.
+Als u niet-standaard Java™-netwerkbibliotheken gebruikt, configureert u proxy&#39;s met de bovenstaande eigenschappen voor al het verkeer.
 
 Niet-http/s verkeer met bestemmingen door havens die in worden verklaard `portForwards` parameter moet verwijzen naar een eigenschap met de naam `AEM_PROXY_HOST`en de toegewezen poort. Bijvoorbeeld:
 
@@ -212,21 +212,21 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## IP-adres van speciale egress {#dedicated-egress-ip-address}
 
-Een specifiek IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM as a Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van uw AEM Cloud Service wordt toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
+Een specifiek IP adres kan veiligheid verbeteren wanneer het integreren met verkopers SaaS (als een verkoper van CRM) of andere integratie buiten AEM as a Cloud Service die een lijst van gewenste personen van IP adressen aanbieden. Door het specifieke IP adres aan de lijst van gewenste personen toe te voegen, zorgt het ervoor dat slechts het verkeer van AEM Cloud Service wordt toegelaten om in de externe dienst te stromen. Dit is naast verkeer van om het even welke andere toegestane IPs.
 
-Het zelfde specifieke IP wordt toegepast op alle programma&#39;s in uw organisatie van de Adobe en voor alle milieu&#39;s in elk van uw programma&#39;s. Deze is van toepassing op zowel auteur- als publicatieservices.
+Het zelfde specifieke IP wordt toegepast op alle programma&#39;s in uw organisatie van de Adobe en voor alle milieu&#39;s in elk van uw programma&#39;s. Het is van toepassing op zowel auteur- als publicatieservices.
 
-Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM as a Cloud Service stromen door een reeks IPs komt die met andere AEM as a Cloud Service klanten wordt gedeeld.
+Zonder de specifieke IP toegelaten adreseigenschap, verkeer dat uit AEM as a Cloud Service stromen door een reeks IPs komt die met andere klanten van AEM as a Cloud Service wordt gedeeld.
 
 Het vormen van specifiek uitgang IP adres is gelijkaardig aan [flexibele uitgang van de poort.](#flexible-port-egress) Het belangrijkste verschil is dat na configuratie, het verkeer altijd van specifieke, unieke IP zal weggaan. Om dat IP te vinden, gebruik een DNS resolver om het IP adres te identificeren verbonden aan `p{PROGRAM_ID}.external.adobeaemcloud.com`. Het IP adres wordt verwacht niet te veranderen, maar als het moet veranderen, wordt het geavanceerde bericht verstrekt.
 
 >[!TIP]
 >
->Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, wordt het geadviseerd u flexibele havenuitgang kiest als een specifiek IP adres niet wordt vereist omdat de Adobe prestaties van flexibel havenuitgang verkeer kan optimaliseren.
+>Wanneer het beslissen tussen flexibele havenuitgang en specifiek uitgangIP adres, kies flexibele havenuitgang als een specifiek IP adres niet wordt vereist. De reden hiervoor is dat Adobe de prestaties van flexibel poortegress-verkeer kan optimaliseren.
 
 >[!NOTE]
 >
->Als u van een specifieke uitgang IP vóór 2021.09.30 (d.w.z. vóór de versie van September 2021) werd voorzien, steunt uw specifieke uitgangIP eigenschap slechts havens HTTP en HTTPS.
+>Als u provisioned met een specifieke uitgang IP vóór 2021.09.30 (namelijk vóór de versie van September 2021) was, steunt uw specifieke uitgangIP eigenschap slechts havens HTTP en HTTPS.
 >
 >Dit omvat HTTP/1.1 en HTTP/2 wanneer gecodeerd. Ook, kan één specifiek uitgang eindpunt met om het even welk doel slechts over HTTP/HTTPS op havens 80/443 spreken respectievelijk.
 
@@ -248,11 +248,11 @@ Het vormen van specifiek uitgang IP adres is gelijkaardig aan [flexibele uitgang
 
    ![Netwerkinfrastructuur toevoegen](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. In de **Netwerkinfrastructuur toevoegen** wizard die begint, selecteert u **IP-adres van specifiek egress** en de regio waar deze uit de **Regio** vervolgkeuzelijst en tik of klik op **Doorgaan**.
+1. In de **Netwerkinfrastructuur toevoegen** wizard die begint, selecteert u **IP-adres van specifiek egress** en de regio waar deze uit de **Regio** vervolgkeuzelijst en klik op **Doorgaan**.
 
    ![IP-adres voor speciale uitgang configureren](assets/advanced-networking-ui-dedicated-egress.png)
 
-1. De **Bevestiging** bevat een overzicht van uw selectie en de volgende stappen. Tik of klik op **Opslaan** om de infrastructuur te creëren.
+1. De **Bevestiging** bevat een overzicht van uw selectie en de volgende stappen. Klikken **Opslaan** om de infrastructuur te creëren.
 
    ![Bevestiging van configuratie van flexibel havenuitgang](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
@@ -276,7 +276,7 @@ Eenmaal geroepen, duurt het typisch ongeveer 15 minuten voor de voorzien van een
 
 ### Verkeer dat {#dedicated-egress-ip-traffic-routing}
 
-Het HTTP- of https-verkeer zal door een vooraf geconfigureerde proxy gaan, op voorwaarde dat deze standaard Java-systeemeigenschappen voor proxyconfiguraties gebruiken.
+HTTP- of https-verkeer wordt door een vooraf geconfigureerde proxy geleid, op voorwaarde dat deze standaard Java™-systeemeigenschappen voor proxyconfiguraties gebruiken.
 
 Niet-http/s verkeer met bestemmingen door havens die in worden verklaard `portForwards` parameter moet verwijzen naar een eigenschap met de naam `AEM_PROXY_HOST`en de toegewezen poort. Bijvoorbeeld:
 
@@ -318,21 +318,21 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td></td>
-    <td>Door de volmachtsconfiguratie van http, die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd</td>
+    <td>Door de volmachtsconfiguratie van HTTP, die door gebrek voor verkeer http/s gebruikend standaardJava™ HTTP- cliëntbibliotheek wordt gevormd</td>
     <td>Alle</td>
     <td>Door specifieke uitgang IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Hiermee negeert u http-proxyconfiguratie (bijvoorbeeld als deze expliciet wordt verwijderd uit de standaard Java HTTP-clientbibliotheek of als een Java-bibliotheek die de standaardproxyconfiguratie negeert, wordt gebruikt)</td>
+    <td>Hiermee negeert u http-proxyconfiguratie (bijvoorbeeld wanneer deze expliciet wordt verwijderd uit de standaard Java™ HTTP client-bibliotheek of wanneer een Java™-bibliotheek wordt gebruikt die de standaardproxyconfiguratie negeert)</td>
     <td>80 of 443</td>
     <td>Via de gedeelde cluster-IP's</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Hiermee negeert u http-proxyconfiguratie (bijvoorbeeld als deze expliciet wordt verwijderd uit de standaard Java HTTP-clientbibliotheek of als een Java-bibliotheek die de standaardproxyconfiguratie negeert, wordt gebruikt)</td>
+    <td>Hiermee negeert u http-proxyconfiguratie (bijvoorbeeld wanneer deze expliciet wordt verwijderd uit de standaard Java™ HTTP client-bibliotheek of wanneer een Java™-bibliotheek wordt gebruikt die de standaardproxyconfiguratie negeert)</td>
     <td>Poorten buiten 80 of 443</td>
     <td>Geblokkeerd</td>
     <td></td>
@@ -356,7 +356,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 
 ### Functiegebruik {#feature-usage}
 
-De functie is compatibel met Java-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit ook de meest gangbare bibliotheken omvatten.
+De functie is compatibel met Java™-code of bibliotheken die resulteren in uitgaand verkeer, op voorwaarde dat deze standaard Java™-systeemeigenschappen gebruiken voor proxyconfiguraties. In de praktijk moet dit ook de meest gangbare bibliotheken omvatten.
 
 Hieronder ziet u een codevoorbeeld:
 
@@ -374,9 +374,9 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-Sommige bibliotheken vereisen expliciete configuratie om standaard het systeemeigenschappen van Java voor volmachtsconfiguraties te gebruiken.
+Sommige bibliotheken vereisen expliciete configuratie om standaard Java™ systeemeigenschappen voor volmachtsconfiguraties te gebruiken.
 
-Een voorbeeld dat Apache HttpClient gebruikt, die expliciete vraag aan vereist
+Een voorbeeld dat Apache HttpClient gebruikt die expliciete vraag aan vereist
 [`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) of gebruik
 [`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
@@ -396,17 +396,17 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Foutopsporingsoverwegingen {#debugging-considerations}
 
-Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres, controlelogboeken binnen de bestemmingsdienst, als beschikbaar gaat. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals te roepen [https://ifconfig.me/IP](https://ifconfig.me/IP), die het roepende IP adres zal terugkeren.
+Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres, controlelogboeken binnen de bestemmingsdienst, als beschikbaar gaat. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals te roepen [http://ifconfig.me/ip](http://ifconfig.me/ip), die het roepende IP adres terugkeert.
 
 ## Virtual Private Network (VPN) {#vpn}
 
 VPN staat het verbinden met een infrastructuur op-gebouw of gegevenscentrum van de auteur toe, publiceert, of voorproefinstanties. Dit kan bijvoorbeeld handig zijn om de toegang tot een database te beveiligen. Het staat ook het verbinden met verkopers SaaS zoals een verkoper van CRM toe die VPN steunt of het verbinden van een collectief netwerk met AEM as a Cloud Service auteur, voorproef, of publiceer instantie.
 
-De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de informatie in de **RouteBased-configuratieinstructies** kolom in [deze lijst met apparaten.](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Configureer het apparaat zoals beschreven in de tabel.
+De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de informatie in de **RouteBased-configuratieinstructies** kolom in [deze lijst met apparaten.](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable) Configureer het apparaat zoals beschreven in de tabel.
 
 >[!NOTE]
 >
->Houd rekening met deze beperkingen van de VPN-infrastructuur:
+>Hieronder volgt een beperking van een VPN-infrastructuur:
 >
 >* De steun wordt beperkt tot één enkele verbinding van VPN
 >* Het Splunk door:sturen vermogen is niet mogelijk over een verbinding van VPN.
@@ -422,39 +422,39 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
 
    ![Netwerkinfrastructuur toevoegen](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. In de **Netwerkinfrastructuur toevoegen** wizard die begint, selecteert u **Virtueel privé netwerk** en verstrekken de noodzakelijke informatie alvorens te tikken of te klikken **Doorgaan**.
+1. In de **Netwerkinfrastructuur toevoegen** wizard die begint, selecteert u **Virtueel privé netwerk** en geef de benodigde informatie op voordat u klikt **Doorgaan**.
 
    * **Regio** - Dit is de regio waarin infrastructuur moet worden gecreëerd.
    * **Adresruimte** - De adresruimte kan slechts één /26 CIDR (64 IP adressen) of grotere IP waaier in uw eigen ruimte zijn.
       * Deze waarde kan later niet worden gewijzigd.
    * **DNS-informatie** - Dit is een lijst met externe DNS-oplossers.
       * Druk `Enter` na het invoeren van een DNS serveradres om een ander toe te voegen.
-      * Tik of klik op de knop `X` na een adres om het te verwijderen.
+      * Klik op de knop `X` na een adres om het te verwijderen.
    * **Gedeelde sleutel** - Dit is uw VPN preshared sleutel.
-      * Selecteren **Gedeelde sleutel tonen** om de toets weer te geven waarmee de waarde van de toets wordt dubbelgecontroleerd.
+      * Selecteren **Gedeelde sleutel tonen** om de toets weer te geven, zodat u de waarde ervan kunt dubbelcontroleren.
 
    ![Vpn configureren](assets/advanced-networking-ui-vpn.png)
 
-1. Op de **Verbindingen** tabblad van de wizard, geeft u een **Verbindingsnaam** om uw verbinding van VPN te identificeren en tikken of klikken **Verbinding toevoegen**.
+1. Op de **Verbindingen** tabblad van de wizard, geeft u een **Verbindingsnaam** om uw verbinding van VPN te identificeren en klik **Verbinding toevoegen**.
 
    ![Verbinding toevoegen](assets/advanced-networking-ui-vpn-add-connection.png)
 
-1. In de **Verbinding toevoegen** uw verbinding van VPN bepalen en tikken of klikken **Opslaan**.
+1. In de **Verbinding toevoegen** dialoog, bepaal uw verbinding van VPN, dan klik **Opslaan**.
 
    * **Verbindingsnaam** - Dit is een beschrijvende naam van uw verbinding van VPN, die u in de vorige stap verstrekte en kan hier worden bijgewerkt.
    * **Adres** - Dit is het het apparaatIP van VPN adres.
    * **Adresruimte** - Dit zijn de IP adreswaaiers aan route door VPN.
       * Druk `Enter` na het invoeren van een bereik om een andere reeks toe te voegen.
-      * Tik of klik op de knop `X` na een bereik om het te verwijderen.
+      * Klik op de knop `X` na een bereik om het te verwijderen.
    * **IP-beveiligingsbeleid** - Pas de standaardwaarden naar wens aan
 
    ![Een VPN-verbinding toevoegen](assets/advanced-networking-ui-vpn-adding-connection.png)
 
-1. Het dialoogvenster wordt gesloten en u keert terug naar het dialoogvenster **Verbindingen** van de wizard. Tik of klik op **Doorgaan**.
+1. Het dialoogvenster wordt gesloten en u keert terug naar het dialoogvenster **Verbindingen** van de wizard. Klikken **Doorgaan**.
 
    ![Een verbinding van VPN wordt toegevoegd](assets/advanced-networking-ui-vpn-connection-added.png)
 
-1. De **Bevestiging** bevat een overzicht van uw selectie en de volgende stappen. Tik of klik op **Opslaan** om de infrastructuur te creëren.
+1. De **Bevestiging** bevat een overzicht van uw selectie en de volgende stappen. Klikken **Opslaan** om de infrastructuur te creëren.
 
    ![Bevestiging van configuratie van flexibel havenuitgang](assets/advanced-networking-ui-vpn-confirm.png)
 
@@ -462,9 +462,9 @@ Er wordt een nieuwe record weergegeven onder de **Netwerkinfrastructuur** in het
 
 ### API-configuratie {#configuring-vpn-api}
 
-Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` het eindpunt wordt aangehaald, die in een lading van configuratieinformatie overgaan met inbegrip van: de waarde van **vpn** voor de `kind` parameter, gebied, adresruimte (lijst van CIDRs - merk op dat dit niet later kan worden gewijzigd), DNS oplossers (voor het oplossen van namen in uw netwerk), en de verbindingsinformatie van VPN zoals gatewayconfiguratie, gedeelde sleutel van VPN, en het IP Veiligheidsbeleid. Het eindpunt reageert met het `network_id`en andere informatie, waaronder de status.
+Eenmaal per programma, de POST `/program/<programId>/networkInfrastructures` wordt het eindpunt aangehaald. Het gaat in een lading van configuratieinformatie over. Deze informatie omvat de waarde van **vpn** voor de `kind` parameter, gebied, adresruimte (lijst van CIDRs - merk op dat dit niet later kan worden gewijzigd), DNS oplossers (voor het oplossen van namen in uw netwerk). Het omvat ook de verbindingsinformatie van VPN zoals gatewayconfiguratie, gedeelde sleutel van VPN, en het IP veiligheidsbeleid. Het eindpunt reageert met het `network_id`en andere informatie, waaronder de status.
 
-Zodra geroepen, zal het typisch tussen 45 en 60 minuten voor de voorzien van een netwerkinfrastructuur duren. De methode van de GET van de API kan worden geroepen om de huidige status terug te keren, die uiteindelijk zal draaien van `creating` tot `ready`. Raadpleeg de API-documentatie voor alle staten.
+Zodra geroepen, duurt het typisch van 45 door 60 minuten voor de voorzien van een netwerkinfrastructuur om worden provisioned. De methode GET in de API kan worden aangeroepen om de status te retourneren, die uiteindelijk wordt teruggedraaid `creating` tot `ready`. Raadpleeg de API-documentatie voor alle staten.
 
 >[!TIP]
 >
@@ -508,21 +508,21 @@ De lijst beschrijft hieronder verkeer dat verplettert.
   </tr>
   <tr>
     <td></td>
-    <td>Als het OT in <i>VPN-gatewayadres</i> ruimtewaaier, en door de volmachtsconfiguratie van http (die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd)</td>
+    <td>Als het OT in <i>VPN-gatewayadres</i> ruimtewaaier, en door de volmachtsconfiguratie van http (die door gebrek voor verkeer http/s gebruikend standaardJava™ HTTP- cliëntbibliotheek wordt gevormd)</td>
     <td>Alle</td>
     <td>Door VPN</td>
     <td><code>10.0.0.1:443</code><br>Het kan ook een hostname zijn.</td>
   </tr>
   <tr>
     <td></td>
-    <td>Als het OT niet in het <i>VPN-gatewayadresruimte</i> waaier, en door de volmachtsconfiguratie van http (die door gebrek voor verkeer http/s gebruikend standaard de cliëntbibliotheek van HTTP van Java wordt gevormd)</td>
+    <td>Als het OT niet in het <i>VPN-gatewayadresruimte</i> bereik, en via http-proxyconfiguratie (standaard geconfigureerd voor http/s-verkeer met standaard Java™ HTTP client library)</td>
     <td>Alle</td>
     <td>Door specifieke uitgang IP</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Hiermee negeert u http-proxyconfiguratie (bijvoorbeeld als deze expliciet wordt verwijderd uit de standaard Java HTTP-clientbibliotheek of als Java-bibliotheek wordt gebruikt die de standaardproxyconfiguratie negeert)
+    <td>Hiermee negeert u http-proxyconfiguratie (bijvoorbeeld als deze expliciet wordt verwijderd uit de standaard Java™ HTTP client-bibliotheek of als Java™-bibliotheek wordt gebruikt waarin de standaardproxyconfiguratie wordt genegeerd)
 </td>
     <td>80 of 443</td>
     <td>Via de gedeelde cluster-IP's</td>
@@ -530,7 +530,7 @@ De lijst beschrijft hieronder verkeer dat verplettert.
   </tr>
   <tr>
     <td></td>
-    <td>Hiermee negeert u http-proxyconfiguratie (bijvoorbeeld als deze expliciet wordt verwijderd uit de standaard Java HTTP-clientbibliotheek of als Java-bibliotheek wordt gebruikt die de standaardproxyconfiguratie negeert)</td>
+    <td>Hiermee negeert u http-proxyconfiguratie (bijvoorbeeld als deze expliciet wordt verwijderd uit de standaard Java™ HTTP client-bibliotheek of als Java™-bibliotheek wordt gebruikt waarin de standaardproxyconfiguratie wordt genegeerd)</td>
     <td>Poorten buiten 80 of 443</td>
     <td>Geblokkeerd</td>
     <td></td>
@@ -586,7 +586,7 @@ Het hieronder diagram verstrekt een visuele vertegenwoordiging van een reeks dom
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>IP van verkeer dat van de AEM kant van VPN aan uw kant komt. Dit kan in uw configuratie worden gevoegd op lijst van gewenste personen om ervoor te zorgen dat de verbindingen slechts van AEM kunnen worden gemaakt.</td>
+    <td>IP van verkeer dat van de AEM kant van VPN aan uw kant komt. Dit kan in uw configuratie worden gevoegd op lijst van gewenste personen om ervoor te zorgen dat de verbindingen slechts van AEM worden gemaakt.</td>
     <td>Als u de toegang van VPN tot AEM wilt toestaan, zou u DNS van CNAME ingangen moeten vormen om uw douanedomein en/of in kaart te brengen <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en/of <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> en dit.</td>
   </tr>
 </tbody>
@@ -596,7 +596,7 @@ Het hieronder diagram verstrekt een visuele vertegenwoordiging van een reeks dom
 
 Als u slechts de toegang van VPN tot AEM wilt toestaan, kunnen de milieu lijsten van gewenste personen in de Manager van de Wolk worden gevormd zodat slechts IP door wordt bepaald `p{PROGRAM_ID}.external.adobeaemcloud.com` mag spreken met het milieu. Dit kan op dezelfde manier als elke andere op IP gebaseerde lijst van gewenste personen in de Manager van de Wolk worden gedaan.
 
-Als de regels op weg-gebaseerd moeten zijn, gebruik standaardHTTP richtlijnen op het verzendersniveau om bepaalde IPs te ontkennen of toe te staan. Zij zouden ervoor moeten zorgen dat de gewenste wegen bij CDN ook niet cacheable zijn zodat het verzoek altijd aan oorsprong krijgt.
+Als de regels op weg-gebaseerd moeten zijn, gebruik standaardHTTP richtlijnen op het niveau van de Verzender om bepaalde IPs te ontkennen of toe te staan. Zij zouden ervoor moeten zorgen dat de gewenste wegen bij CDN ook niet cacheable zijn zodat het verzoek altijd aan oorsprong krijgt.
 
 #### Voorbeeld van HTTP-configuratie {#httpd-example}
 
@@ -609,9 +609,9 @@ Header always set Cache-Control private
 
 ## Geavanceerde netwerkconfiguraties inschakelen voor omgevingen {#enabling}
 
-Zodra u een geavanceerde voorzien van een netwerkoptie voor een programma hebt gevormd, of [flexibele uitgang van de haven,](#flexible-port-egress) [specifiek IP-adres van uitgang,](#dedicated-egress-ip-address) of [VPN](#vpn) om het te kunnen gebruiken , moet u het op milieuniveau toelaten .
+Zodra u een geavanceerde voorzien van een netwerkoptie voor een programma hebt gevormd, of [flexibel poortbereik](#flexible-port-egress), [specifiek IP-adres van uitgang](#dedicated-egress-ip-address), of [VPN](#vpn)Om het te gebruiken, moet u het op milieuniveau toelaten.
 
-Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu toelaat, hebt u de capaciteit om facultatieve haven toe te laten door:sturen en niet volmachtsgastheren. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
+Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu toelaat, kunt u facultatieve haven ook toelaten door:sturen en niet volmachtsgastheren. De parameters zijn configureerbaar per milieu om flexibiliteit aan te bieden.
 
 * **Poorten doorsturen** - Poorten die regels door:sturen zouden voor om het even welke bestemmingshavens buiten 80/443 moeten worden verklaard, maar slechts als het gebruiken van HTTP of HTTPS protocol niet.
    * De haven die regels door:sturen wordt bepaald door de reeks bestemmingsgastheren (namen of IP en havens) te specificeren.
@@ -619,9 +619,9 @@ Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu 
    * Voor elke bestemmingsgastheer, moet u de voorgenomen bestemmingshaven aan een haven van 30000 door 30999 in kaart brengen.
    * De haven die regels door:sturen is beschikbaar voor alle geavanceerde voorzien van een netwerktypes.
 
-* **Geen proxyhosts** - De niet volmachtsgastheren laten u een reeks gastheren verklaren die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten leiden.
+* **Hosts zonder proxy** - De niet volmachtsgastheren laten u een reeks gastheren verklaren die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten leiden.
    * Dit kan nuttig zijn aangezien het verkeer dat door gedeelde IPs wordt behandeld verder kan worden geoptimaliseerd.
-   * De niet volmachtsgastheren zijn slechts beschikbaar voor specifiek uitgangIP adres en VPN geavanceerde voorzien van een netwerktypes.
+   * De gastheren van de niet-volmacht zijn slechts beschikbaar voor specifiek uitgangIP adres en VPN geavanceerde voorzien van een netwerktypes.
 
 >[!NOTE]
 >
@@ -633,30 +633,30 @@ Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu 
 
 1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
 
-1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteer het milieu waar u wenst om de geavanceerde voorzien van een netwerkconfiguratie onder te laten **Omgevingen** in het linkerdeelvenster. Selecteer vervolgens de optie **Geavanceerde netwerkconfiguratie** en tik of klik op **Netwerkinfrastructuur inschakelen**.
+1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder wilt toelaten **Omgevingen** in het linkerdeelvenster. Selecteer vervolgens de optie **Geavanceerde netwerkconfiguratie** tabblad van de geselecteerde omgeving en klik op **Netwerkinfrastructuur inschakelen**.
 
-   ![Omgeving selecteren om geavanceerde netwerken mogelijk te maken](assets/advanced-networking-ui-enable-environments.png)
+   ![Omgeving selecteren zodat u geavanceerde netwerken kunt inschakelen](assets/advanced-networking-ui-enable-environments.png)
 
 1. De **Geavanceerde netwerken configureren** wordt geopend.
 
-1. Op de **Geen proxy-hosts** lusje, voor specifieke uitgangIP adressen en VPNs, kunt u naar keuze een reeks gastheren bepalen, die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten worden verpletterd, door de gastheernaam in te verstrekken **Geen proxy-host** veld en tikken of klikken **Toevoegen**.
+1. Op de **Gastheren zonder proxy** tabblad, voor speciale IP-adressen en VPN&#39;s van egress kunt u optioneel een set hosts definiëren. Deze bepaalde gastheren zouden door een gedeelde IPs adreswaaier eerder dan specifieke IP moeten worden verpletterd, door de gastheernaam in te verstrekken **Host zonder proxy** veld en klikken **Toevoegen**.
 
    * De host wordt toegevoegd aan de lijst met hosts op het tabblad.
-   * Herhaal deze stap om meerdere hosts toe te voegen.
-   * Tik of klik op de X rechts van de rij om een host te verwijderen.
+   * Herhaal deze stap als u meerdere hosts wilt toevoegen.
+   * Klik op de X rechts van de rij als u een host wilt verwijderen.
    * Dit lusje is niet beschikbaar voor flexibele configuraties van de havenuitgang.
 
    ![Niet-proxyhosts toevoegen](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. Op de **Poort vooruit** kunt u optioneel regels definiëren voor het doorsturen van poorten voor andere doelpoorten dan 80/443 als u geen HTTP of HTTPS gebruikt. Geef een **Naam**, **Poortgericht**, en **Port Dest** tikken of klikken **Toevoegen**.
+1. Op de **Poort vooruit** kunt u optioneel regels definiëren voor het doorsturen van poorten voor andere doelpoorten dan 80/443 als u geen HTTP of HTTPS gebruikt. Geef een **Naam**, **Poortgericht**, en **Port Dest** en klik op **Toevoegen**.
 
    * De regel wordt toegevoegd aan de lijst met regels op het tabblad.
-   * Herhaal deze stap om meerdere regels toe te voegen.
-   * Tik of klik op de X rechts van de rij om een regel te verwijderen.
+   * Herhaal deze stap als u meerdere regels wilt toevoegen.
+   * Klik op de X rechts van de rij als u een regel wilt verwijderen.
 
    ![Optionele poort forwards definiëren](assets/advanced-networking-ui-port-forwards.png)
 
-1. Tik of klik op **Opslaan** in het dialoogvenster om de configuratie toe te passen op de omgeving.
+1. Klikken **Opslaan** in het dialoogvenster zodat u de configuratie kunt toepassen op de omgeving.
 
 De geavanceerde voorzien van een netwerkconfiguratie wordt toegepast op het geselecteerde milieu. Terug op de **Omgevingen** kunt u de details zien van de configuratie die is toegepast op de geselecteerde omgeving en hun status.
 
@@ -666,13 +666,13 @@ De geavanceerde voorzien van een netwerkconfiguratie wordt toegepast op het gese
 
 Als u een geavanceerde netwerkconfiguratie voor een omgeving wilt inschakelen, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` het eindpunt moet per milieu worden aangehaald.
 
-De API moet binnen een paar seconden reageren, wat een status aangeeft van `updating` en na ongeveer 10 minuten, zou een vraag aan het milieu GET van de Manager van de Wolk een status van tonen `ready`, die aangeeft dat de update van de omgeving is toegepast.
+De API moet binnen een paar seconden reageren, wat een status aangeeft van `updating`. Na ongeveer 10 minuten, toont een vraag aan het milieu GET eindpunt van de Manager van de Wolk een status van `ready`, wat aangeeft dat de update van de omgeving wordt toegepast.
 
 Per milieuhaven die regels door:sturen kan worden bijgewerkt door aan te halen `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` eindpunt, en het omvatten van de volledige reeks configuratieparameters, eerder dan een ondergroep.
 
 Het specifieke IP adres van de uitgang en VPN geavanceerde voorzien van een netwerktypes steunen a `nonProxyHosts` parameter. Dit laat u een reeks gastheren verklaren die door een gedeelde IPs adreswaaier eerder dan specifieke IP zou moeten leiden. De `nonProxyHost` URL&#39;s kunnen de patronen volgen van `example.com` of `*.example.com`, waarbij het jokerteken alleen wordt ondersteund aan het begin van het domein.
 
-Zelfs als er geen milieuverkeer is dat regels (gastheren of bypass) verplettert, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` moet nog worden geroepen, enkel met een lege lading.
+Zelfs als er geen milieuverkeer is dat regels (gastheren of omleidingen) verplettert, `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` moet nog worden geroepen, enkel met een lege lading.
 
 >[!TIP]
 >
@@ -680,11 +680,11 @@ Zelfs als er geen milieuverkeer is dat regels (gastheren of bypass) verplettert,
 
 ## Geavanceerde netwerkconfiguraties in omgevingen bewerken en verwijderen {#editing-deleting-environments}
 
-Na [geavanceerde netwerkconfiguratie mogelijk te maken voor omgevingen,](#enabling) U kunt de details van die configuraties bijwerken of hen schrappen.
+Na [geavanceerde netwerkconfiguraties mogelijk maken voor omgevingen,](#enabling) U kunt de details van die configuraties bijwerken of hen schrappen.
 
 >[!NOTE]
 >
->U kunt de netwerkinfrastructuur niet bewerken als deze de status heeft **Maken**, **Bijwerken**, of **Verwijderen**.
+>U kunt de netwerkinfrastructuur niet bewerken als de status **Maken**, **Bijwerken**, of **Verwijderen**.
 
 ### Bewerken of verwijderen met de gebruikersinterface {#editing-ui}
 
@@ -692,13 +692,13 @@ Na [geavanceerde netwerkconfiguratie mogelijk te maken voor omgevingen,](#enabli
 
 1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
 
-1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteer het milieu waar u wenst om de geavanceerde voorzien van een netwerkconfiguratie onder te laten **Omgevingen** in het linkerdeelvenster. Selecteer vervolgens de optie **Geavanceerde netwerkconfiguratie** van de geselecteerde omgeving en tik of klik op de knop voor ovaal.
+1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder wilt toelaten **Omgevingen** in het linkerdeelvenster. Selecteer vervolgens de optie **Geavanceerde netwerkconfiguratie** van de geselecteerde omgeving en klik op de knop voor ovaal.
 
    ![Het selecteren geeft of schrapt geavanceerde voorzien van een netwerk op programmaniveau uit](assets/advanced-networking-ui-edit-delete.png)
 
-1. Selecteer in het menu Ovaal een van de **Bewerken** of **Verwijderen**.
+1. Selecteer in het menu Ovaal een van de volgende opties **Bewerken** of **Verwijderen**.
 
-   * Als u **Bewerken**, de gegevens bijwerken volgens de stappen die in de vorige sectie zijn beschreven, [Het toelaten van het Gebruiken van UI,](#enabling-ui) tikken of klikken **Opslaan**.
+   * Als u **Bewerken**, de gegevens bijwerken volgens de stappen die in de vorige sectie zijn beschreven, [Het toelaten van het Gebruiken van UI,](#enabling-ui) en klik op **Opslaan**.
    * Als u **Verwijderen**, de schrapping in de **Netwerkconfiguratie verwijderen** dialoog met **Verwijderen** of afbreken met **Annuleren**.
 
 De wijzigingen worden weerspiegeld in de **Omgevingen** tab.
@@ -717,12 +717,12 @@ Zodra de netwerkinfrastructuur voor een programma wordt gecreeerd, slechts kunne
 
 >[!NOTE]
 >
->Houd rekening met de volgende beperkingen bij het bewerken en verwijderen van netwerkinfrastructuur:
+>Hieronder volgt een beperking voor het bewerken en verwijderen van netwerkinfrastructuur:
 >
->* Met Verwijderen wordt de infrastructuur alleen verwijderd als de geavanceerde netwerken van alle omgevingen zijn uitgeschakeld.
->* U kunt de netwerkinfrastructuur niet bewerken als deze de status heeft **Maken**, **Bijwerken**, of **Verwijderen**.
+>* Met Verwijderen wordt alleen de infrastructuur verwijderd als de geavanceerde netwerken van alle omgevingen zijn uitgeschakeld.
+>* U kunt de netwerkinfrastructuur niet bewerken als de status **Maken**, **Bijwerken**, of **Verwijderen**.
 >* Slechts kan VPN geavanceerd voorzien van een netwerkinfrastructuurtype worden uitgegeven zodra gecreeerd en dan slechts beperkte gebieden.
->* Om veiligheidsredenen is het **Gedeelde sleutel** moet altijd worden verstrekt wanneer het uitgeven van VPN geavanceerde voorzien van een netwerkinfrastructuur zelfs als u niet de sleutel zelf uitgeeft.
+>* Om veiligheidsredenen is het **Gedeelde sleutel** moet altijd worden verstrekt wanneer het uitgeven van een geavanceerde het voorzien van een netwerkinfrastructuur van VPN, zelfs als u niet de sleutel zelf uitgeeft.
 
 ### Bewerken en verwijderen met de gebruikersinterface {#delete-ui}
 
@@ -730,15 +730,15 @@ Zodra de netwerkinfrastructuur voor een programma wordt gecreeerd, slechts kunne
 
 1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
 
-1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteert u **Netwerkinfrastructuur** in het linkerdeelvenster. Tik vervolgens op de ovaalknop of klik op deze knop naast de infrastructuur die u wilt verwijderen.
+1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteert u **Netwerkinfrastructuur** in het linkerdeelvenster. Klik vervolgens op de ovaalknop naast de infrastructuur die u wilt verwijderen.
 
    ![Het selecteren geeft of schrapt geavanceerde voorzien van een netwerk op programmaniveau uit](assets/advanced-networking-ui-delete-infrastructure.png)
 
-1. Selecteer in het menu Ovaal een van de **Bewerken** of **Verwijderen**.
+1. Selecteer in het menu Ovaal een van de volgende opties **Bewerken** of **Verwijderen**.
 
 1. Als u **Bewerken** de **Netwerkinfrastructuur bewerken** wizard wordt geopend. Bewerk de vereiste bewerkingen volgens de stappen die worden beschreven bij het maken van de infrastructuur.
 
-1. Als u **Verwijderen**, de schrapping in de **Netwerkconfiguratie verwijderen** dialoog met **Verwijderen** of afbreken met **Annuleren**.
+1. Als u **Verwijderen**, de schrapping in de **Netwerkconfiguratie verwijderen** dialoogvenster met **Verwijderen** of afbreken met **Annuleren**.
 
 De wijzigingen worden weerspiegeld in de **Omgevingen** tab.
 
@@ -748,9 +748,9 @@ Naar **delete** de netwerkinfrastructuur voor een programma, roept `DELETE /prog
 
 ## Het wijzigen van het infrastructuurtype voor geavanceerde netwerken van een programma {#changing-program}
 
-Het is slechts mogelijk om één type van geavanceerde voorzien van een netwerkinfrastructuur te hebben die voor een programma tegelijkertijd wordt gevormd, of flexibele havenuitgang, specifiek IP adres van de uitgang, of VPN.
+Het is slechts mogelijk om één type van geavanceerde voorzien van een netwerkinfrastructuur te hebben die voor een programma tegelijkertijd wordt gevormd, moet de geavanceerde voorzien van een netwerkinfrastructuur of flexibele havenuitgang, specifiek IP adres van de uitgang, of VPN.
 
-Als u besluit dat u een ander geavanceerd type van voorzien van een netwerkinfrastructuur dan reeds hebt gevormd, moet u bestaande schrappen en nieuwe creëren. Volg deze procedure:
+Als u besluit dat u een ander geavanceerd type van voorzien van een netwerkinfrastructuur dan reeds hebt gevormd, schrap bestaande, en creeer andere. Ga als volgt te werk:
 
 1. [Verwijder geavanceerde netwerken in alle omgevingen.](#editing-deleting-environments)
 1. [Verwijder de geavanceerde netwerkinfrastructuur.](#editing-deleting-program)
@@ -759,16 +759,16 @@ Als u besluit dat u een ander geavanceerd type van voorzien van een netwerkinfra
 
 >[!WARNING]
 >
-> Deze procedure zal in een onderbreking van de geavanceerde voorzien van een netwerkdiensten tussen schrapping en recreatie resulteren
+> Deze procedure resulteert in een onderbreking van de geavanceerde voorzien van een netwerkdiensten tussen schrapping en recreatie.
 > Als de onderbreking significante bedrijfsgevolgen zou veroorzaken, contacteer klantensteun voor hulp, beschrijvend wat reeds is gecreeerd en de reden voor de verandering.
 
-## Geavanceerde netwerkconfiguratie voor extra publicatiegebieden {#advanced-networking-configuration-for-additional-publish-regions}
+## Geavanceerde netwerkconfiguratie voor andere publicatiegebieden {#advanced-networking-configuration-for-additional-publish-regions}
 
-Wanneer een extra gebied aan een milieu wordt toegevoegd dat reeds gevormd geavanceerd voorzien van een netwerk heeft, zal het verkeer van het extra publiceer gebied dat de geavanceerde voorzien van een netwerkregels aanpast door standaardroute door het primaire gebied. Nochtans, als het primaire gebied niet beschikbaar wordt, wordt het geavanceerde voorzien van een netwerkverkeer gelaten vallen als het geavanceerde voorzien van een netwerk niet in het extra gebied is toegelaten. Als u de latentie wilt optimaliseren en de beschikbaarheid wilt verhogen in het geval dat een van de regio&#39;s een onderbreking ondergaat, is het noodzakelijk geavanceerde netwerken in te schakelen voor de extra publicatiegebieden. In de volgende secties worden twee verschillende scenario&#39;s beschreven.
+Wanneer een extra gebied aan een milieu wordt toegevoegd dat reeds gevormd geavanceerd voorzien van een netwerk heeft, publiceert het verkeer van het extra gebied dat de geavanceerde voorzien van een netwerkregelroute door het primaire gebied door gebrek aanpast. Nochtans, als het primaire gebied niet beschikbaar wordt, wordt het geavanceerde voorzien van een netwerkverkeer gelaten vallen als het geavanceerde voorzien van een netwerk niet in het extra gebied is toegelaten. Als u de latentie wilt optimaliseren en de beschikbaarheid wilt verhogen in het geval dat een van de gebieden een onderbreking ondergaat, is het noodzakelijk om geavanceerde netwerken voor de extra publicatiegebieden toe te laten. In de volgende secties worden twee verschillende scenario&#39;s beschreven.
 
 >[!NOTE]
 >
->Alle regio&#39;s delen hetzelfde [omgeving geavanceerde netwerkconfiguratie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), zodat is het niet mogelijk om verkeer aan verschillende bestemmingen te leiden die op het gebied worden gebaseerd het verkeer uit wegglijdt.
+>Alle gebieden delen [omgeving geavanceerde netwerkconfiguratie](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), zodat is het niet mogelijk om verkeer aan verschillende bestemmingen te leiden die op het gebied worden gebaseerd het verkeer uit wegglijdt.
 
 ### Specifieke IP van de Eis Adressen {#additional-publish-regions-dedicated-egress}
 
@@ -776,7 +776,7 @@ Wanneer een extra gebied aan een milieu wordt toegevoegd dat reeds gevormd geava
 
 Als een geavanceerde voorzien van een netwerkconfiguratie reeds in het primaire gebied wordt toegelaten, volg deze stappen:
 
-1. Als u uw infrastructuur zodanig hebt vergrendeld dat het toegewezen AEM IP-adres is toegestaan in de lijst, wordt aanbevolen om regels in die infrastructuur tijdelijk uit te schakelen. Als dit niet wordt gedaan, is er een korte periode waarin de verzoeken van de IP van het nieuwe gebied adressen door uw eigen infrastructuur worden ontkend. Dit is niet noodzakelijk als u uw infrastructuur door middel van een FQDN (FullyQualified Domain Name) hebt gesloten, (`p1234.external.adobeaemcloud.com`, bijvoorbeeld), omdat alle AEM regio&#39;s geavanceerd netwerkverkeer vanaf dezelfde FQDN overschrijven
+1. Als u onderaan uw infrastructuur zodat het specifieke AEM IP adres wordt gevoegd op lijst van gewenste personen, maak tijdelijk onbruikbaar ontkent regels in die infrastructuur. Als dit niet wordt gedaan, is er een korte periode waarin de verzoeken van de IP van het nieuwe gebied adressen door uw eigen infrastructuur worden ontkend. Dit is niet noodzakelijk als u uw infrastructuur door middel van een FQDN (FullyQualified Domain Name) hebt gesloten, (`p1234.external.adobeaemcloud.com`, bijvoorbeeld), omdat alle AEM regio&#39;s geavanceerd netwerkverkeer vanaf dezelfde FQDN overschrijven
 1. Creeer programma-scoped voorzien van een netwerkinfrastructuur voor het secundaire gebied door een vraag van de POST aan de Manager van de Wolk creeert de Infrastructuur API van het Netwerk, zoals die in geavanceerde voorzien van een netwerkdocumentatie wordt beschreven. Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot primair gebied is het gebiedsbezit
 1. Als uw infrastructuur door IP moet worden gesloten om AEM verkeer toe te staan, voeg IPs toe die aanpassen `p1234.external.adobeaemcloud.com`. Er zou één per regio moeten zijn.
 
@@ -791,4 +791,4 @@ De procedure is grotendeels vergelijkbaar met de voorgaande instructies. Nochtan
 
 #### VPN {#vpn-regions}
 
-De procedure is bijna identiek aan de specifieke IP van de uitgang adresinstructies. Het enige verschil is dat naast het gebiedsbezit dat verschillend van het primaire gebied wordt gevormd, `connections.gateway` Het gebied kan naar keuze aan route aan een verschillend eindpunt worden gevormd dat van VPN door uw organisatie wordt in werking gesteld, misschien geografisch dichter aan het nieuwe gebied.
+De procedure is bijna identiek aan de specifieke IP van de uitgang adresinstructies. Het enige verschil is dat naast het gebiedsbezit dat verschillend van het primaire gebied wordt gevormd, `connections.gateway` veld kan optioneel worden geconfigureerd. De configuratie kan aan een verschillend eindpunt leiden van VPN dat door uw organisatie wordt in werking gesteld, geografisch dichter aan het nieuwe gebied.
