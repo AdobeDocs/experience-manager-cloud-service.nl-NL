@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
+source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '268'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15977 same
 
 ### Bekende problemen {#known-issues-15977}
 
-Geen.
+* **(Alleen voor AEM Forms)** Nadat u AEM onderhoudsversie 15977 van de Cloud Foundation hebt geïnstalleerd, worden de velden Adaptief formulier in de onjuiste volgorde weergegeven tijdens het ontwerpen van formulieren en voor gepubliceerde formulieren. Als u AEM Forms gebruikt om ongemak te voorkomen, wordt u geadviseerd om niet bij te werken naar deze release totdat het probleem is opgelost in de volgende onderhoudsrelease.
 
 ### Verouderde functies en API&#39;s {#deprecated-15977}
 
