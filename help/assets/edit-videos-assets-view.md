@@ -3,22 +3,22 @@ title: Video's bewerken
 description: Video's bewerken met [!DNL Adobe Express] Aangedreven opties en sparen bijgewerkte video's als versies.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
+source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%
 
 ---
 
-# Video&#39;s bewerken [!DNL Assets Essentials] {#edit-videos}
+# Video&#39;s bewerken [!DNL Assets view] {#edit-videos}
 
-Het maken van variaties in video-inhoud is eenvoudig voor middelengebruikers met de ingesloten [!DNL Adobe Express] snelle acties voor video. Snelle handelingen in [!DNL Assets Essentials] aangedreven door [!DNL Adobe Express] biedt gebruiksvriendelijke opties voor het bewerken van video&#39;s, zoals het uitsnijden van video, het vergroten of verkleinen van video en het omzetten van video in GIF.
+Het maken van variaties in video-inhoud is eenvoudig voor middelengebruikers met de ingesloten [!DNL Adobe Express] snelle acties voor video. Snelle handelingen in [!DNL Assets view] aangedreven door [!DNL Adobe Express] biedt gebruiksvriendelijke opties voor het bewerken van video&#39;s, zoals het uitsnijden van video, het vergroten of verkleinen van video en het omzetten van video in GIF.
 
 Ga naar de details van de video en klik op [!UICONTROL Edit Video]. U kunt ook het element selecteren en op details klikken en vervolgens op ![schaar](assets/do-not-localize/cut.svg) beschikbaar in het rechterdeelvenster. Nadat u een video hebt bewerkt, kunt u de nieuwe video opslaan als een nieuwe versie of als een nieuw element.
 
 ## Vereisten {#prerequisites}
 
-Recht op toegang [!DNL Adobe Express] en ten minste één omgeving in AEM Assets. De omgeving kan elk van de opslagplaatsen binnen [!DNL Assets as a Cloud Service] of [!DNL Assets Essentials].
+Recht op toegang [!DNL Adobe Express] en ten minste één omgeving in AEM Assets. De omgeving kan elk van de opslagplaatsen binnen [!DNL Assets as a Cloud Service] of [!DNL Assets view].
 
 ## Video&#39;s bewerken met Adobe Express {#edit-video-using-express}
 
@@ -39,7 +39,7 @@ U kunt ongewenste onderdelen uit de video verwijderen met ingesloten [!DNL Adobe
 
 ### Formaat video wijzigen {#resize-video-using-express}
 
-De uiteindelijke video-inhoud in de DAM moet vaak worden vergroot of verkleind voor distributie naar specifieke kanalen. [!DNL Assets Essentials] Hiermee kunt u de grootte van video eenvoudig aanpassen aan de afmetingen die worden vereist door algemene sociale kanalen en u kunt de grootte ook aanpassen aan aangepaste resoluties. De grootte van de video wijzigen met [!DNL Assets Essentials]Voer de onderstaande stappen uit:
+De uiteindelijke video-inhoud in de DAM moet vaak worden vergroot of verkleind voor distributie naar specifieke kanalen. [!DNL Assets view] Hiermee kunt u de grootte van video eenvoudig aanpassen aan de afmetingen die worden vereist door algemene sociale kanalen en u kunt de grootte ook aanpassen aan aangepaste resoluties. De grootte van de video wijzigen met [!DNL Assets view]Voer de onderstaande stappen uit:
 
 1. Selecteer een video en klik op **[!UICONTROL Edit]**.
 2. Klikken **[!UICONTROL Resize Video]** uit de snelle acties die beschikbaar zijn in het linkerdeelvenster.
@@ -93,7 +93,7 @@ Uw video is beschikbaar in GIF-indeling voor downloaden. U kunt het bewerkte ele
 
 ### Volgende stappen {#next-steps}
 
-* Feedback geven op het product met de [!UICONTROL Feedback] optie beschikbaar in de gebruikersinterface van Assets Essentials
+* Feedback geven op het product met de [!UICONTROL Feedback] optie beschikbaar in de gebruikersinterface van de weergave Elementen
 
 * Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk
 
@@ -101,5 +101,5 @@ Uw video is beschikbaar in GIF-indeling voor downloaden. U kunt het bewerkte ele
 
 >[!MORELIKETHIS]
 >
->* [Afbeeldingen bewerken in Assets Essentials](edit-images-assets-view.md)
+>* [Afbeeldingen bewerken in de middelenweergave](edit-images-assets-view.md)
 >* [Voorvertoning van een element](navigate-assets-view.md)
