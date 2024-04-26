@@ -2,9 +2,9 @@
 title: Opslagplaatsen voor Cloud Manager
 description: Leer hoe u uw git-opslagruimten maakt, weergeeft en verwijdert in Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 4bf1d961705ce07c5ae5d33a546a276192f10178
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -61,8 +61,6 @@ Ga als volgt te werk om een opslagplaats in Cloud Manager te verwijderen.
 1. Van de **Programmaoverzicht** pagina, klikt u op de **Opslagplaatsen** en navigeer naar de **Opslagplaatsen** pagina.
 
 1. Selecteer de opslagplaats en klik op de knop voor weglatingsteken en selecteer **Verwijderen** om de gegevensopslagruimte te verwijderen.
-
-   ![Opslagplaats verwijderen](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 ## Ondersteuning voor Git-submodule {#git-submodule-support}
 

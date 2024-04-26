@@ -2,7 +2,7 @@
 title: Een SSL-certificaat toevoegen
 description: Leer hoe u uw eigen SSL-certificaat toevoegt met de zelfbedieningsprogramma's van Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Ga als volgt te werk om een certificaat toe te voegen met gebruik van Cloud Mana
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
 1. Navigeren naar **Omgevingen** van het scherm **Overzicht** pagina.
 

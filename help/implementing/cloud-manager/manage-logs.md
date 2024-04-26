@@ -2,7 +2,7 @@
 title: Logbestanden openen en beheren
 description: Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa28d2fa83fb35fe80692c5f94661fa4c32a02a9
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Ga als volgt te werk om logbestanden te downloaden:
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
 1. Ga naar de **Omgevingen** kaart van **Overzicht** pagina.
 

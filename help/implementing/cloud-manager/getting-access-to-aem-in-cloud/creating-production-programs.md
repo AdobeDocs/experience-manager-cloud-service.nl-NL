@@ -2,9 +2,9 @@
 title: Productieprogramma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen productieprogramma te maken voor het hosten van liveverkeer.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Ga als volgt te werk om een productieprogramma te maken. Let erop dat u, afhanke
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** scherm, tikken of klikken **Programma toevoegen** rechtsboven in het scherm.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tikken of klikken **Programma toevoegen** rechtsboven in het scherm.
 
    ![Stationspagina van Cloud Manager](assets/log-in.png)
 
@@ -48,7 +48,7 @@ Ga als volgt te werk om een productieprogramma te maken. Let erop dat u, afhanke
 
 1. Op de **Go-Live-datum** voert u de datum in waarop u uw productieprogramma live wilt laten gaan.
 
-   ![Geplande datum voor live gaan definiëren](assets/setup-go-live.png)
+   ![Geplande datum voor live gaan definiëren](assets/set-up-go-live.png)
 
    * Deze datum kan op elk moment worden bewerkt.
    * Deze datum is alleen ter informatie en activeert de widget Go Live op het tabblad [**Programmaoverzicht** page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) om op tijd koppelingen naar AEM documentatie over best practices voor as a Cloud Service toepassingen aan te bieden die zijn afgestemd op uw reis en die uitmonden in een geslaagde en vloeiende Go Live-ervaring.
@@ -117,9 +117,9 @@ Naast de vereiste rechten heeft 99,99% SLA extra gebruiksvereisten.
 
    ![Overzicht van programma](assets/set-up-prod5.png)
 
-Als u op een bepaald moment naar een ander programma moet schakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om de **Navigeren naar** -optie.
-
-![Navigeren naar](assets/create-program-a1.png)
+>[!TIP]
+>
+>Zie het document [Navigeren door de interface van Cloud Manager](/help/implementing/cloud-manager/navigation.md) voor meer informatie over het navigeren door Cloud Manager en het begrijpen van de **Mijn programma&#39;s** console.
 
 >[!NOTE]
 >

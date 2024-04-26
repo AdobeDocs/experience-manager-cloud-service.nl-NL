@@ -2,9 +2,9 @@
 title: IP-Lijsten van gewenste personen toevoegen
 description: Leer hoe u uw eigen IP-lijst van gewenste personen toevoegt met gebruik van Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: fa6d0670a011276facc561f62f52c6e69147a49e
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,9 @@ Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeh
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
-1. Van de **Overzicht** pagina, naar de **Omgevingen** scherm.
-
-1. Van de **Omgevingen** scherm, navigeren aan **IP-Lijsten van gewenste personen** pagina.
+1. Van de **Overzicht** pagina, naar de **IP-Lijsten van gewenste personen** pagina met het tabblad zijnavigatie.
 
    ![IP-lijsten van gewenste personen, optie in het zijpaneel](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

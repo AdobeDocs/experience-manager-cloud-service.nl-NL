@@ -2,7 +2,7 @@
 title: New Relic One
 description: Meer informatie over de service voor het controleren van de prestaties van New Relic One-toepassingen (APM) voor AEM as a Cloud Service en over hoe u deze service kunt gebruiken.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Voor een nieuw gemaakt programma wordt een New Relic One-subaccount voor u gemaa
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tikken of tikken op het programma waarvoor u de New Relic One-gebruikers wilt beheren.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** tikt of klikt u op het programma waarvoor u uw New Relic One-gebruikers wilt beheren.
 
 1. Onder aan het dialoogvenster **Omgevingen** kaart op de pagina van het programmaoverzicht, klik de ellipsieknoop en selecteer **New Relic activeren**.
 

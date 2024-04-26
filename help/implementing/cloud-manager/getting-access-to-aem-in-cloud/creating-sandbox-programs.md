@@ -2,9 +2,9 @@
 title: Sandbox-programma's maken
 description: Leer hoe u Cloud Manager gebruikt om uw eigen sandboxprogramma te maken voor training, demo, POC of andere niet-productiedoeleinden.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Meer informatie over programmatypen in het document [Het begrip van Programma en
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** scherm, tikken of klikken **Programma toevoegen** in de rechterbovenhoek van het scherm.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tikken of klikken **Programma toevoegen** in de rechterbovenhoek van het scherm.
 
-   ![Openingspagina van Cloud Manager](assets/cloud-manager-my-programs.png)
+   ![Openingspagina van Cloud Manager](assets/log-in.png)
 
 1. Selecteer in de wizard Programma maken de optie **Een sandbox instellen** en geef een programmanaam op.
 
@@ -63,12 +63,12 @@ U kunt de details van uw zandbakopstelling bekijken en tot het milieu (zodra bes
 
 1. Als de ontwikkelomgeving eenmaal is gemaakt, kunt u de **AEM** koppeling om u aan te melden AEM.
 
-   ![Toegang AEM koppeling](assets/create-program-5.png)
+   ![Toegang AEM koppeling](assets/create-program5.png)
 
-1. Zodra de niet-productiepijplijn die aan ontwikkeling opstelt volledig is, leidt de tovenaar u om of tot de AEM ontwikkelomgeving toegang te hebben of code aan ontwikkelomgeving op te stellen.
+1. Zodra de niet productiepijplijn die aan ontwikkeling opstelt volledig is, leidt de tovenaar in vraag-aan-actie u om of tot de AEM ontwikkelomgeving toegang te hebben of code aan ontwikkelomgeving op te stellen.
 
    ![Sandbox implementeren](assets/create-program-setup-deploy.png)
 
-Als u naar een ander programma moet overschakelen of naar de overzichtspagina moet terugkeren om een ander programma te maken, klikt u op de naam van het programma linksboven in het scherm om de **Navigeren naar** -optie.
-
-![Navigeren naar](assets/create-program-a1.png)
+>[!TIP]
+>
+>Zie het document [Navigeren door de interface van Cloud Manager](/help/implementing/cloud-manager/navigation.md) voor meer informatie over het navigeren door Cloud Manager en het begrijpen van de **Mijn programma&#39;s** console.

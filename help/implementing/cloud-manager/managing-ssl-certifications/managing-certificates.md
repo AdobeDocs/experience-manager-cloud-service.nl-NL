@@ -2,7 +2,7 @@
 title: SSL-certificaten beheren
 description: Leer hoe u Cloud Manager gebruikt om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -31,7 +31,7 @@ De status van uw SSL-certificaten kan in één oogopslag worden geïnterpreteerd
 Wanneer een certificaat verloopt, werken domeinen die in gebruik zijn met het verlopen certificaat niet meer. Als u uw certificaten bijwerkt via de volgende stappen, zorgt u ervoor dat uw domein naar wens blijft werken.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 1. Navigeren naar **Omgevingen** van het scherm **Overzicht** pagina.
 1. Ga naar de **SSL-certificaten** van het scherm **Omgevingen** scherm.
 1. U ziet een tabel met een rij voor elk SSL-certificaat dat in uw programma is geïnstalleerd. Klik op de knop Ovaal helemaal rechts in de rij van het certificaat dat u wilt bijwerken en selecteer **Weergeven en bijwerken**.

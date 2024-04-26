@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 81b4455bf922ec0f4eb46046b82193ff822b4695
+source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
 workflow-type: tm+mt
-source-wordcount: '4902'
+source-wordcount: '4901'
 ht-degree: 3%
 
 ---
@@ -948,13 +948,14 @@ ht-degree: 3%
 + Implementatie {#implementing}
    + [Uitvoering van aanvragen voor AEM as a Cloud Service](/help/implementing/home.md)
    + Cloud Manager gebruiken {#using-cloud-manager}
+      + [Navigatie](/help/implementing/cloud-manager/navigation.md)
       + Programma&#39;s {#programs}
          + [Programma&#39;s en programmatypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [Productieprogramma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [Sandbox-programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [Sandbox-programma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [Programma&#39;s beheren en bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Programma&#39;s bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Sluimeromgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Een AEM-toepassingsproject maken {#create-application-project}
          + [Wizard Project maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)

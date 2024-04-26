@@ -2,7 +2,7 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek uitgangIP adres voor AEM as a Cloud Service te vormen.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
 workflow-type: tm+mt
 source-wordcount: '5093'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Deze geavanceerde voorzien van een netwerkeigenschap laat u AEM as a Cloud Servi
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
 1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteert u **Netwerkinfrastructuur** in het linkerdeelvenster.
 
@@ -242,7 +242,7 @@ Het vormen van specifiek uitgang IP adres is gelijkaardig aan [flexibele uitgang
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
 1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteert u **Netwerkinfrastructuur** in het linkerdeelvenster.
 
@@ -416,7 +416,7 @@ De meeste apparaten van VPN met technologie IPSec worden gesteund. Raadpleeg de 
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
 1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteert u **Netwerkinfrastructuur** in het linkerdeelvenster.
 
@@ -631,7 +631,7 @@ Wanneer u een geavanceerde voorzien van een netwerkconfiguratie voor een milieu 
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
 1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder wilt toelaten **Omgevingen** in het linkerdeelvenster. Selecteer vervolgens de optie **Geavanceerde netwerkconfiguratie** tabblad van de geselecteerde omgeving en klik op **Netwerkinfrastructuur inschakelen**.
 
@@ -690,7 +690,7 @@ Na [geavanceerde netwerkconfiguraties mogelijk maken voor omgevingen,](#enabling
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
 1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteer het milieu waar u de geavanceerde voorzien van een netwerkconfiguratie onder wilt toelaten **Omgevingen** in het linkerdeelvenster. Selecteer vervolgens de optie **Geavanceerde netwerkconfiguratie** van de geselecteerde omgeving en klik op de knop voor ovaal.
 
@@ -728,7 +728,7 @@ Zodra de netwerkinfrastructuur voor een programma wordt gecreeerd, slechts kunne
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
 1. Van de **Programmaoverzicht** pagina, naar de **Omgevingen** en selecteert u **Netwerkinfrastructuur** in het linkerdeelvenster. Klik vervolgens op de ovaalknop naast de infrastructuur die u wilt verwijderen.
 

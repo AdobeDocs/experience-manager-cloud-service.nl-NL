@@ -1,13 +1,13 @@
 ---
 title: Dashboard voor CDN-prestaties
 description: Begrijp hoe de Manager van de Wolk de prestaties van het netwerk van de inhoudslevering (CDN) evalueert en wat u van het dashboard kunt leren.
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
 
 ---
-
 
 # Dashboard voor CDN-prestaties {#cdn-performance}
 
@@ -25,7 +25,7 @@ Het CDN-dashboard is beschikbaar op de overzichtspagina van elk programma.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tikt of klikt u op het programma waarvan u het CDN-dashboard wilt weergeven.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** tikken of tikken op het programma waarvan u het CDN-dashboard wilt weergeven.
 
    ![Pagina Mijn programma&#39;s](assets/my-programs.png)
 

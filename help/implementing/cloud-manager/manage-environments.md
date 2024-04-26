@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer meer over de typen omgevingen die u kunt maken en hoe u deze kunt maken voor uw Cloud Manager-project.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '2660'
+source-wordcount: '2365'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Een gebruiker moet lid zijn van de **Zakelijke eigenaar** rol.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** tikken of tikken op het programma waaraan u een omgeving wilt toevoegen.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** tikken of tikken op het programma waaraan u een omgeving wilt toevoegen.
 
-1. Van de **[Programmaoverzicht](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)** pagina, klikt u **Omgeving toevoegen** op de **Omgevingen** -kaart om een omgeving toe te voegen.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** console, klik **Omgeving toevoegen** op de **Omgevingen** -kaart om een omgeving toe te voegen.
 
    ![Milieukaart](assets/no-environments.png)
 
@@ -123,9 +123,9 @@ Als u een voorziening wilt [geavanceerd netwerken](/help/security/configuring-ad
 
 ## Omgevingsdetails {#viewing-environment}
 
-U kunt de **Omgevingen** kaart op de overzichtspagina voor toegang tot de details van een milieu op twee manieren.
+Van de **Overzicht** pagina, kunt u tot de details van een milieu op twee manieren toegang hebben.
 
-1. Van de **Overzicht** pagina, klikt u op de **Omgevingen** aan de bovenkant van het scherm.
+1. Van de **Overzicht** pagina, klikt u op de **Omgevingen** in het zijnavigatievenster.
 
    ![Het tabblad Omgevingen](assets/environments-tab2.png)
 
@@ -135,9 +135,9 @@ U kunt de **Omgevingen** kaart op de overzichtspagina voor toegang tot de detail
 
 1. De **Omgevingen** wordt geopend en worden alle omgevingen voor het programma weergegeven.
 
-   ![Het tabblad omgevingen](assets/environment-view-2.png)
+   ![Het tabblad omgevingen](assets/environments-tab2.png)
 
-1. Klik op een omgeving in de lijst zodat u de details ervan kunt weergeven.
+1. Tik of klik op een omgeving in de lijst zodat u de details ervan kunt tonen.
 
    ![Omgevingsdetails](assets/environ-preview1.png)
 
@@ -302,24 +302,11 @@ U kunt zich ook lokaal aanmelden via het dialoogvenster **Omgevingen** tabblad v
 
 ## Aangepaste domeinnamen beheren {#manage-cdn}
 
-Aangepaste domeinnamen worden ondersteund in de programma&#39;s Cloud Manager for Sites voor zowel publicatie- als voorvertoningsservices. Elke Cloud Manager-omgeving kan maximaal 250 aangepaste domeinen hosten.
+Aangepaste domeinnamen worden ondersteund in de programma&#39;s Cloud Manager for Sites voor zowel publicatie- als voorvertoningsservices.
 
-Als u aangepaste domeinnamen wilt configureren, navigeert u naar de **Omgevingen** en klik op een omgeving om de omgevingsdetails weer te geven.
-
-Een gebruiker moet beschikken over **Zakelijke eigenaar** of **Implementatiebeheer** rol om een aangepaste domeinnaam toe te voegen in Cloud Manager
-
-![Omgevingsdetails](assets/domain-names.png)
-
-De volgende acties kunnen op de publicatieservice voor uw milieu worden uitgevoerd.
-
-* [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-
-* [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-
-* [Status van aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) of een [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
-
-* [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
-
+>[!TIP]
+>
+>Zie het document voor meer informatie [Inleiding tot aangepaste domeinnamen.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 ## IP-Lijsten van gewenste personen beheren {#manage-ip-allow-lists}
 
@@ -329,23 +316,8 @@ Om IP lijsten van gewenste personen te beheren, navigeer aan **Omgevingen** tabb
 
 ### Een IP-Lijst van gewenste personen toepassen {#apply-ip-allow-list}
 
-Het toepassen van een IP lijst van gewenste personen associeert alle IP waaiers inbegrepen in de definitie van de lijst van gewenste personen met een auteur of publiceer de dienst in een milieu. Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een IP lijst van gewenste personen kunnen toepassen.
+Het toepassen van een IP lijst van gewenste personen associeert alle IP waaiers inbegrepen in de definitie van de lijst van gewenste personen met een auteur of publiceer de dienst in een milieu.
 
-De IP lijst van gewenste personen moet in de Manager van de Wolk bestaan om het op een milieu toe te passen. Voor meer informatie over IP-lijsten van gewenste personen in Cloud Manager raadpleegt u [Inleiding tot IP-Lijsten van gewenste personen in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-**Om een IP lijst van gewenste personen toe te passen:**
-
-1. Navigeer vanuit de **Omgevingen** tabblad van het programma **Overzicht** en navigeer naar het **IP-Lijsten van gewenste personen** tabel.
-1. Gebruik de inputgebieden bij de bovenkant van de IP lijst van de lijst van gewenste personen zodat kunt u de IP lijst van gewenste personen en de auteur selecteren of de publicatiedienst u het op wilt toepassen.
-1. Klikken **Toepassen** en bevestig uw inzending.
-
-### Het toepassen van een IP lijst van gewenste personen ongedaan maken {#unapply-ip-allow-list}
-
-Als u een IP-lijst van gewenste personen niet toepast, worden alle IP-bereiken die zijn opgenomen in de definitie van de lijst van gewenste personen, losgekoppeld van een auteur- of uitgeversservice in een omgeving. Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een IP lijst van gewenste personen kunnen ongedaan maken.
-
-**Om een IP lijst van gewenste personen ongedaan te maken:**
-
-1. Navigeer vanuit de **Omgevingen** tabblad van het programma **Overzicht** en navigeer naar het **IP-Lijsten van gewenste personen** tabel.
-1. Identificeer de rij waar de IP regel van de lijst van gewenste personen die u wilt ongedaan maken vermeld is.
-1. Selecteer de ellipsknop vanaf het einde van de rij.
-1. Selecteren **Toepassen ongedaan maken** en bevestig uw inzending.
+>[!TIP]
+>
+>Zie het document voor meer informatie [Inleiding aan IP Lijsten van gewenste personen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

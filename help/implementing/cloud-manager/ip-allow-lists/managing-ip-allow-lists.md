@@ -2,7 +2,7 @@
 title: IP-Lijsten van gewenste personen beheren
 description: Leer om, de status van IP lijsten van gewenste personen in de Manager van de Wolk te bekijken uit te geven te schrappen en te controleren.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer om, de status van IP lijsten van gewenste personen in de Manager van de Wol
 Een gebruiker in het dialoogvenster **Zakelijke eigenaar** of **Implementatiebeheer** De rol kan deze stappen volgen om een IP lijst van gewenste personen te bekijken en bij te werken.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
 1. Ga naar de **IP-Lijsten van gewenste personen** pagina van de **Omgevingen** scherm.
 1. Identificeer de rij voor de IP lijsten van gewenste personen die u wilt bekijken of bijwerken.

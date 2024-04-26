@@ -3,9 +3,9 @@ title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 71ece3b084c3a262cacc62019396138a88a340b9
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
@@ -41,21 +41,25 @@ De **Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het g
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
 1. Van de **Programmaoverzicht** pagina, selecteert u de **Pijpleidingen** tab naar **Pijpleidingen** venster.
 
 1. Hier ziet u een lijst met alle pijpleidingen voor het programma en start en stop de uitvoering van de pijpleiding zoals u in het dialoogvenster **Pijppijplijnkaart**.
 
-Als een pijpleiding uitvoert, beweegt over zijn **Status** de kolom zal details over de uitvoering openbaren.
+Als er een pijplijn wordt uitgevoerd, tikt u op het informatiepictogram in het dialoogvenster **Status** de kolom zal details over de uitvoering openbaren.
 
 ![Uitvoeringdetails pijpleiding](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 Tikken of klikken **Details weergeven** neemt u mee naar de [details over de uitvoering van de pijpleiding.](#view-details)
 
+U kunt ook de ellipsknoop van de pijpleiding tikken of klikken om extra acties aangewezen op de pijpleidingsstaat zoals te nemen [bewerken](#editing-pipelines) of [annuleren, uitvoering.](#cancel)
+
+![Acties via pijpleidingen](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
 ## Activiteitenvenster {#activity}
 
-De **Activiteiten** toont een volledige lijst van alle pijpleiding uitvoeringen voor het geselecteerde programma.
+De **Activiteit** window toont een volledige lijst van alle pijpleiding uitvoeringen voor het geselecteerde programma evenals andere belangrijke programmagebeurtenissen.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
@@ -63,11 +67,15 @@ De **Activiteiten** toont een volledige lijst van alle pijpleiding uitvoeringen 
 
 1. Hier ziet u een lijst van alle pijpleiding uitvoeringen voor het programma met inbegrip van huidige en historische executies.
 
-Als een pijpleiding uitvoert, beweegt over zijn **Status** de kolom zal details over de uitvoering openbaren.
+Als er een pijplijn wordt uitgevoerd, tikt u op het informatiepictogram in het dialoogvenster **Status** de kolom zal details over de uitvoering openbaren.
 
 ![Uitvoeringdetails pijpleiding](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Tikken of klikken **Details weergeven** neemt u mee naar de [details over de uitvoering van de pijpleiding.](#view-details)
+Het tikken of het klikken van de rij die de pijpleidingsuitvoering vertegenwoordigt zal u aan [details over de uitvoering van de pijpleiding.](#view-details)
+
+U kunt ook tikken of op de ellipsknop klikken om verdere actie te ondernemen bij de uitvoering van de pijplijn, zoals de details bekijken of het logbestand downloaden dat u naar de [pagina met details over pijpleidingen.](#view-details)
+
+![Handelingen voor de uitvoering van pijpleidingen](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
 ## Lopende pijpleidingen {#running-pipelines}
 

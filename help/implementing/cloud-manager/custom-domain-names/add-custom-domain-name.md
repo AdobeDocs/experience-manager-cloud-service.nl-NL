@@ -2,9 +2,9 @@
 title: Een aangepaste domeinnaam toevoegen
 description: Leer hoe u een aangepaste domeinnaam kunt toevoegen met Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
+source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,9 @@ Ga als volgt te werk om een aangepaste domeinnaam toe te voegen vanuit de **Dome
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecteert u het programma.
+1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
 
-1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
-
-1. Klikken **Domeininstellingen** in het linkernavigatievenster.
+1. Navigeer naar de geselecteerde **Domeininstellingen** in het navigatievenster aan de linkerkant.
 
    ![Het venster Domeininstellingen](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 

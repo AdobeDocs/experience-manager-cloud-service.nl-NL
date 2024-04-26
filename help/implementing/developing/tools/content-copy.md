@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud uit hun productieomgeving kopiëren op AEM as a Cloud Service naar lagere omgevingen voor testdoeleinden.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Nad
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
 
-1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
-
-1. Ga naar de **Inhoudssets** pagina van de **Omgevingen** scherm.
+1. Navigeer met het zijnavigatievenster naar het **Inhoudssets** van de **Overzicht** pagina.
 
 1. Klik rechtsboven in het scherm op **Inhoudsset toevoegen**.
 
