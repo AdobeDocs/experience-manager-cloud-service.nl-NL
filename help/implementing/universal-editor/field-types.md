@@ -2,7 +2,7 @@
 title: Modeldefinities, velden en componenttypen
 description: In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 9f0a3bf5c8d839fa2ab6744c6fa7f97cc5fe8684
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 1%
@@ -830,4 +830,3 @@ Met tekst kunt u één regel tekst invoeren.  Het bevat aanvullende validatietyp
 ![Schermafbeelding van type tekstcomponent](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
-

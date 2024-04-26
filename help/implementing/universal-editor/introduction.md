@@ -2,9 +2,9 @@
 title: Introductie van Universal Editor
 description: Leer hoe de Universele Redacteur wat-u-ziet-is-wat-u-krijgt (WYSIWYG) het uitgeven van om het even welke headless en belangrijke ervaring toelaat. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: bbcf44c585e98f75c558d06edc3c1c030adad2cf
+source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,16 @@ Een marketingdeskundige wil inhoud maken zonder de layout ervan te hoeven omschr
 Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van een bepaalde context en die een uitzonderlijke ervaring biedt.
 
 * De onderliggende taak die u moet uitvoeren, is op overtuigende wijze verbinding maken met de lezers.
+
+## Beperkingen {#limitations}
+
+Houd rekening met de volgende beperkingen wanneer u de Universal Editor verkent en de implementatie ervan in uw eigen projecten doorvoert.
+
+* Maximaal 25 AEM (Content Fragments, pages, Experience Fragments, Assets, etc.) moeten verwijzingen als instrumentatie op één enkele pagina zijn.
+* AEM as a Cloud Service is de enige ondersteunde AEM achterkant.
+* AEM as a Cloud Service release `2023.8.13099` of hoger is vereist.
+* Inhoudsauteurs moeten hun eigen individuele Experience Cloud-accounts hebben.
+* Chrome en Edge zijn de ondersteunde browsers
 
 ## Aanvullende bronnen {#additional-resources}
 
