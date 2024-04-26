@@ -3,30 +3,27 @@ title: Het vormen van Verkeer bij CDN
 description: Leer hoe te om verkeer te vormen CDN door regels en filters in een configuratiedossier te verklaren en hen op te stellen aan CDN door de Pijpleiding van de Configuratie van de Manager van de Wolk te gebruiken.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
-source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
+source-git-commit: f9eeafbf128b4581c983e19bcd5ad2294a5e3a9a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
 
 # Het vormen van Verkeer bij CDN {#cdn-configuring-cloud}
 
->[!NOTE]
->Deze functie is nog niet algemeen beschikbaar. Als u wilt deelnemen aan het programma voor vroegtijdige adoptie, kunt u een e-mail sturen `aemcs-cdn-config-adopter@adobe.com` en beschrijf uw gebruiksgeval.
-
 AEM as a Cloud Service biedt een inzameling van eigenschappen die bij [CDN met beheerde Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) laag die de aard van of inkomende verzoeken of uitgaande reacties wijzigt. De volgende regels, die in detail in deze pagina worden beschreven, kunnen worden verklaard om het volgende gedrag te bereiken:
 
 * [Transformaties aanvragen](#request-transformations) - aspecten van binnenkomende aanvragen, zoals kopteksten, paden en parameters, wijzigen.
 * [Responstransformaties](#response-transformations) - wijzigt kopteksten die op weg terug naar de cliënt (bijvoorbeeld, Webbrowser) zijn.
-* [Clientdirecteuren](#client-side-redirectors) - een omleiding door de browser activeren.
+* [Client-side omleidingen](#client-side-redirectors) - een omleiding door de browser activeren. Deze functie is nog niet GA, maar is beschikbaar voor vroege gebruikers.
 * [Oorspronkelijke kiezers](#origin-selectors) - een vervangende waarde naar een andere achterkant van de oorsprong.
 
 Ook configureerbaar bij CDN zijn de Regels van de Filter van het Verkeer (met inbegrip van WAF), die controleert welk verkeer door CDN wordt toegestaan of wordt ontkend. Deze functie is al uitgebracht en u kunt er meer over leren in het dialoogvenster [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md) pagina.
 
 Bovendien, als CDN niet zijn oorsprong kan contacteren, kunt u een regel schrijven die verwijzingen een zelf-ontvangen pagina van de douanefout (die dan wordt teruggegeven). Lees hier meer over door het [CDN-foutpagina&#39;s configureren](/help/implementing/dispatcher/cdn-error-pages.md) artikel.
 
-Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door te gebruiken [Configuratie-pijplijn van Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand niet groter kan zijn dan 100 kB.
+Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door te gebruiken [Configuratie-pijplijn van Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
 
 ## Evaluatievolgorde {#order-of-evaluation}
 
@@ -38,14 +35,21 @@ Functioneel worden de verschillende eerder vermelde functies in de volgende volg
 
 Alvorens u verkeer bij CDN kunt vormen moet u het volgende doen:
 
-* Maak eerst deze map en bestandsstructuur in de map op hoofdniveau van het Git-project:
+* Maak deze map en bestandsstructuur in de map op hoofdniveau van uw Git-project:
 
 ```
 config/
      cdn.yaml
 ```
 
-* Ten tweede, de `cdn.yaml` Het configuratiebestand moet zowel metagegevens als de regels bevatten die in de onderstaande voorbeelden worden beschreven.
+* De `cdn.yaml` Het configuratiebestand moet zowel metagegevens als de regels bevatten die in de onderstaande voorbeelden worden beschreven. De `kind` parameter moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie die momenteel is `1`.
+
+* Maak een gerichte configuratiepijplijn voor implementatie in Cloud Manager. Zie [productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [configureren van niet-productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**Notities**
+
+* RDEs steunt momenteel niet de configuratiepijplijn.
+* U kunt `yq` om de opmaak van uw configuratiebestand lokaal te valideren (bijvoorbeeld `yq cdn.yaml`).
 
 ## Syntaxis {#configuration-syntax}
 
@@ -73,7 +77,7 @@ version: "1"
 metadata:
   envTypes: ["dev", "stage", "prod"]
 data:  
-  experimental_requestTransformations:
+  requestTransformations:
     removeMarketingParams: true
     rules:
       - name: set-header-rule
@@ -173,7 +177,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:   
-  experimental_requestTransformations:
+  requestTransformations:
     rules:
       - name: set-variable-rule
         when:
@@ -184,7 +188,7 @@ data:
             var: some_var_name
             value: some_value
  
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-while-variable
         when:
@@ -208,7 +212,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-rule
         when:
@@ -262,7 +266,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_originSelectors:
+  originSelectors:
     rules:
       - name: example-com
         when: { reqProperty: path, like: /proxy-me* }
@@ -303,11 +307,16 @@ Verbindingen met oorsprong zijn alleen SSL en gebruiken poort 443.
 | **forwardAuthorization** (optioneel, standaard is false) | Als de waarde true is, wordt de header &quot;Authorization&quot; van de clientaanvraag doorgegeven aan de back-end, anders wordt de machtigingsheader verwijderd. |
 | **timeout** (optioneel, in seconden, standaard is 60) | Aantal seconden dat CDN op een backendserver moet wachten om de eerste byte van een HTTP-antwoordinstantie te leveren. Deze waarde wordt ook gebruikt als een tussenliggende time-out naar de backend-server. |
 
-## Clientbestuurders {#client-side-redirectors}
+## Omleiding op de client {#client-side-redirectors}
+
+>[!NOTE]
+>Deze functie is nog niet algemeen beschikbaar. Als u wilt deelnemen aan het programma voor vroegtijdige adoptie, kunt u een e-mail sturen `aemcs-cdn-config-adopter@adobe.com` en beschrijf uw gebruiksgeval.
 
 U kunt de omleidingsregels aan de clientzijde gebruiken voor 301, 302 en vergelijkbare omleidingen aan de clientzijde. Als een regel overeenkomt, reageert de CDN met een statusregel die de statuscode en het bericht bevat (bijvoorbeeld HTTP/1.1 301 Permanent verplaatst) en met de locatiekoptekenset.
 
 Zowel absolute als relatieve locaties met vaste waarden zijn toegestaan.
+
+Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
 
 Voorbeeld van configuratie:
 

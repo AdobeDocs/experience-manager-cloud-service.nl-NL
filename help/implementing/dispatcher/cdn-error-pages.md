@@ -2,18 +2,15 @@
 title: CDN-foutpagina's configureren
 description: Leer hoe u de standaardfoutpagina kunt overschrijven door statische bestanden te hosten in zelfgehoste opslag zoals Amazon S3 of Azure Blob Storage, en ernaar te verwijzen in een configuratiebestand dat wordt geïmplementeerd met de configuratiepijplijn van Cloud Manager.
 feature: Dispatcher
-source-git-commit: 11036c3e95f0444fc5d865232a7dccab5b7f26ae
+exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
+source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
-
 # CDN-foutpagina&#39;s configureren {#cdn-error-pages}
-
->[!NOTE]
->Deze functie is nog niet algemeen beschikbaar. Als u wilt deelnemen aan het programma voor vroegtijdige adoptie, kunt u een e-mail sturen `aemcs-cdn-config-adopter@adobe.com` en beschrijf uw gebruiksgeval.
 
 In het onwaarschijnlijke geval dat [CDN met beheerde Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) kan niet de AEM oorsprong bereiken, CDN door gebrek dient een unbranded, generische foutenpagina die erop wijst dat de server niet kan worden bereikt. U kunt de standaardfoutenpagina met voeten treden door statische dossiers in zelf-ontvangen opslag zoals Amazon S3 of Azure Blob Storage te ontvangen, en van verwijzingen te voorzien in een configuratiedossier dat door het gebruiken van wordt opgesteld [Cloud Manager Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
