@@ -3,22 +3,18 @@ title: Asset Selector voor [!DNL Adobe Experience Manager] als [!DNL Cloud Servi
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 contentOwner: KK
 role: Admin,User
-exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: b9fe6f4c2f74d5725575f225f8d9eb2e5fbfceb7
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '3896'
 ht-degree: 0%
 
 ---
 
+
 # Micro-Frontend element selecteren {#Overview}
 
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
-| AEM as a Cloud Service | Dit artikel |
-
-Micro-Frontend Asset Selector biedt een gebruikersinterface die eenvoudig kan worden geïntegreerd met de [!DNL Experience Manager Assets as a Cloud Service] zodat u door de in de opslagplaats beschikbare digitale middelen kunt bladeren of deze kunt zoeken en kunt gebruiken in de ontwerpervaring van uw toepassing.
+Micro-Frontend Asset Selector biedt een gebruikersinterface die eenvoudig kan worden geïntegreerd met de [!DNL Experience Manager Assets] zodat u door de in de opslagplaats beschikbare digitale middelen kunt bladeren of deze kunt zoeken en kunt gebruiken in de ontwerpervaring van uw toepassing.
 
 De gebruikersinterface van Micro-Frontend wordt beschikbaar gesteld in uw toepassingservaring gebruikend het pakket van de Selecteur van Activa. Alle updates van het pakket worden automatisch geïmporteerd en de nieuwste versie van Asset Selector wordt automatisch in de toepassing geladen.
 
@@ -26,88 +22,46 @@ De gebruikersinterface van Micro-Frontend wordt beschikbaar gesteld in uw toepas
 
 Asset Selector biedt vele voordelen, zoals:
 
-* Eenvoudig te integreren met alle Adobe- of niet-Adobe-toepassingen die gebruikmaken van Vanilla JavaScript-bibliotheek.
+* Eenvoudige integratie met een van de [Adobe](#asset-selector-ims) of [niet-Adobe](#asset-selector-non-ims) toepassingen die gebruikmaken van Vanilla JavaScript-bibliotheek.
 * Eenvoudig te onderhouden als updates van het middelenkiezerpakket worden automatisch geïmplementeerd op de Asset Selector die beschikbaar is voor uw toepassing. Uw toepassing hoeft geen updates uit te voeren om de laatste wijzigingen te laden.
 * Gemakkelijk aanpassen aangezien er eigenschappen beschikbaar zijn die de vertoning van de Selecteur van Activa binnen uw toepassing controleren.
-
 * In de volledige tekst doorzoeken, uit-van-de-doos, en aangepaste filters om snel aan activa voor gebruik binnen de auteurservaring te navigeren.
-
 * Mogelijkheid om binnen een IMS-organisatie te schakelen tussen opslagruimten voor het selecteren van bedrijfsmiddelen.
-
 * De mogelijkheid om elementen te sorteren op naam, afmetingen en grootte en ze weer te geven in de weergave Lijst, Raster, Galerie of Waterval.
 
-Het toepassingsgebied van dit artikel is aan te tonen hoe u Asset Selector kunt gebruiken met een [!DNL Adobe] toepassing onder Verenigde Shell of wanneer u reeds een imsToken hebt die voor authentificatie wordt geproduceerd. Deze workflows worden in dit artikel niet-SUSI-stromen genoemd.
+<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
-Voer de volgende taken uit om Asset Selector te integreren en te gebruiken in uw [!DNL Experience Manager Assets as a Cloud Service] opslagplaats:
-
-* [Asset Selector integreren met Vanilla JS](#integration-with-vanilla-js)
-* [Eigenschappen voor weergave van middelenkiezer definiëren](#asset-selector-properties)
-* [Asset Selector gebruiken](#using-asset-selector)
-
-## Asset Selector integreren met Vanilla JS {#integration-with-vanilla-js}
-
-U kunt alle [!DNL Adobe] of niet-Adobe [!DNL Experience Manager Assets] als [!DNL Cloud Service] opslagplaats en selecteer elementen vanuit de toepassing.
-
-De integratie gebeurt door het pakket Asset Selector te importeren en verbinding te maken met de middelen die zijn as a Cloud Service met de Vanilla JavaScript-bibliotheek. U moet een `index.html` of een geschikt bestand in uw toepassing naar -
-
-* De verificatiedetails definiëren
-* Toegang krijgen tot de as a Cloud Service gegevensopslagruimte
-* De weergave-eigenschappen voor de middelenkiezer configureren
-
-<!--
-Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
-
-You can perform authentication without defining some of the IMS properties, such as `imsScope` or `imsClientID`, if:
-
-*   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-*   You already have an IMS token generated for authentication.
-
-Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining `imsScope` or `imsClientID` IMS properties is referred to as a non-SUSI flow in this article.
+1. [Install Asset Selector](#installation)
+2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
+3. [Use Asset Selector](#using-asset-selector)
 -->
 
-U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
-
-* U integreert een [!DNL Adobe] toepassing op [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-* Er is al een IMS-token gegenereerd voor verificatie.
-
-## Vereisten {#prerequisites}
-
 <!--
-If your application requires user based authentication, out-of-the-box Asset Selector also supports a flow for authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS.)
+## Setting up Asset Selector {#asset-selector-setup}
 
-You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
+![Asset Selector set up](assets/asset-selector-prereqs.png)
 -->
 
-Definieer de vereisten in het dialoogvenster `index.html` bestand of een vergelijkbaar bestand in de implementatie van de toepassing om de verificatiegegevens te definiëren voor toegang tot het [!DNL Experience Manager Assets] als [!DNL Cloud Service] opslagplaats. Voorwaarden zijn:
+## Vereisten{#prereqs}
 
-* imsOrg
-* imsToken
-* apikey
-<!--
-The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
+U moet de volgende communicatiemethoden gebruiken:
 
-**Non-SUSI flow**
+* De toepassing wordt uitgevoerd op HTTPS.
+* De URL van de toepassing bevindt zich in de lijst van gewenste personen van de IMS-client voor het doorsturen van URL&#39;s.
+* De IMS-aanmeldstroom wordt geconfigureerd en weergegeven met een pop-up in de webbrowser. Daarom moeten pop-ups worden ingeschakeld of toegestaan in de doelbrowser.
 
-*   imsOrg
-*   imsToken
-*   apikey
+Gebruik de bovenstaande voorwaarden als u een IMS-verificatieworkflow van de Asset Selector nodig hebt. Als u al bent geverifieerd met de IMS-workflow, kunt u in plaats daarvan de IMS-informatie toevoegen.
 
-For more information on these properties, see [Asset Selector Properties](#asset-selector-properties).
-
-**SUSI flow**
-
-*   imsClientId
-*   imsScope
-*   redirectUrl
-*   imsOrg
-*   apikey
-
-For more information on these properties, see [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
--->
+>[!IMPORTANT]
+>
+> Deze opslagplaats is bedoeld als aanvullende documentatie waarin de beschikbare API&#39;s en gebruiksvoorbeelden voor de integratie van Asset Selector worden beschreven. Voordat u de functie Asset Selector gaat installeren of gebruiken, moet u controleren of uw organisatie beschikt over de toegang tot Asset Selector als onderdeel van het as a Cloud Service Experience Manager Assets-profiel. Als u niet provisioned bent, kunt u deze componenten niet integreren of gebruiken. Om levering te verzoeken, zou uw programma admin een steunkaartje moeten opheffen duidelijk als P2 van Admin Console en de volgende informatie omvatten:
+>
+>* Domeinnamen waarbij de integrerende toepassing wordt gehost.
+>* Na levering, zal uw organisatie worden voorzien van `imsClientId`, `imsScope`en `redirectUrl` die overeenkomen met de gevraagde omgevingen die essentieel zijn voor de configuratie van Asset Selector. Zonder deze geldige eigenschappen kunt u de installatiestappen niet uitvoeren.
 
 ## Installatie {#installation}
 
-Middelen Kiezers zijn beschikbaar via beide ESM CDN (bijvoorbeeld [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) en [UMD](https://github.com/umdjs/umd) versie.
+Asset Selector is beschikbaar via beide ESM CDN (bijvoorbeeld [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) en [UMD](https://github.com/umdjs/umd) versie.
 
 In browsers die **UMD-versie** (aanbevolen):
 
@@ -133,106 +87,50 @@ In Deno/Webpack Module Federation met **ESM CDN-versie**:
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
-### Geselecteerd elementtype {#selected-asset-type}
+## Asset Selector integreren met Vanilla JS {#integration-using-vanilla-js}
 
-Het geselecteerde elementtype is een array met objecten die de elementgegevens bevatten wanneer u de `handleSelection`, `handleAssetSelection`, en `onDrop` functies.
+U kunt alle [!DNL Adobe] of niet-Adobe [!DNL Experience Manager Assets] opslagplaats en selecteer elementen vanuit de toepassing. Zie [Integratie van Asset Selector met verschillende toepassingen](#asset-selector-integration-with-apps).
 
-**Schema Syntax**
+De integratie gebeurt door het pakket Asset Selector te importeren en verbinding te maken met de middelen die zijn as a Cloud Service met de Vanilla JavaScript-bibliotheek. Een `index.html` of een geschikt bestand in uw toepassing om:
 
-```
-interface SelectedAsset {
-    'repo:id': string;
-    'repo:name': string;
-    'repo:path': string;
-    'repo:size': number;
-    'repo:createdBy': string;
-    'repo:createDate': string;
-    'repo:modifiedBy': string; 
-    'repo:modifyDate': string; 
-    'dc:format': string; 
-    'tiff:imageWidth': number;
-    'tiff:imageLength': number;
-    'repo:state': string;
-    computedMetadata: Record<string, any>;
-    _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
-            href: string;
-            type: string;
-            'repo:size': number;
-            width: number;
-            height: number;
-            [others: string]: any;
-        }>;
-    };
-}
-```
+* De verificatiedetails definiëren
+* Toegang krijgen tot de as a Cloud Service gegevensopslagruimte
+* De weergave-eigenschappen voor de middelenkiezer configureren
 
-In de volgende tabel worden enkele belangrijke eigenschappen van het object Selected Asset beschreven.
+U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als:
 
-| Eigenschap | Type | Toelichting |
-|---|---|---|
-| *repo:repositoryId* | string | Unieke id voor de gegevensopslagruimte waar het middel is opgeslagen. |
-| *repo:id* | string | Unieke id voor het element. |
-| *repo:assetClass* | string | De classificatie van het element (bijvoorbeeld afbeelding, video, document). |
-| *repo:naam* | string | De naam van het element, inclusief de bestandsextensie. |
-| *repo:grootte* | getal | De grootte van het element in bytes. |
-| *repo:pad* | string | De locatie van het middel in de opslagplaats. |
-| *repo:voorouders* | `Array<string>` | Een array van bovenliggende items voor het middel in de repository. |
-| *repo:status* | string | Huidige status van het middel in de repository (bijvoorbeeld actief, verwijderd enzovoort). |
-| *repo:createdBy* | string | De gebruiker of het systeem dat het element heeft gemaakt. |
-| *repo:createDate* | string | De datum en tijd waarop het element is gemaakt. |
-| *repo:modifiedBy* | string | De gebruiker of het systeem dat het element als laatste heeft gewijzigd. |
-| *repo:modifyDate* | string | De datum en het tijdstip waarop het element voor het laatst is gewijzigd. |
-| *dc:indeling* | string | De indeling van het element, zoals het bestandstype (bijvoorbeeld JPEG, PNG, enzovoort). |
-| *tiff:imageWidth* | getal | De breedte van een element. |
-| *tiff:imageLength* | getal | De hoogte van een element. |
-| *computedMetadata* | `Record<string, any>` | Een object dat een emmertje vertegenwoordigt voor alle soorten metagegevens van het element (gegevensopslagruimte, toepassing of ingesloten metagegevens). |
-| *_links* | `Record<string, any>` | Hypermediakoppelingen voor het bijbehorende element. Bevat koppelingen voor bronnen zoals metagegevens en uitvoeringen. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | Array met objecten die informatie bevatten over uitvoeringen van het element. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | string | De URI naar de vertoning. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | string | Het MIME-type van de vertoning. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].&quot;repo:size* | getal | De grootte van de vertoning in bytes. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | getal | De breedte van de vertoning. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | getal | De hoogte van de vertoning. |
+* U integreert een [!DNL Adobe] toepassing op [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* Er is al een IMS-token gegenereerd voor verificatie.
 
-Voor een volledige lijst met eigenschappen en een gedetailleerd voorbeeld gaat u naar [Voorbeeld van code voor middelenkiezer](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+## Asset Selector integreren met verschillende toepassingen {#asset-selector-integration-with-apps}
 
-<!--
-### ImsAuthProps {#ims-auth-props}
+U kunt Asset Selector integreren met verschillende toepassingen, zoals:
 
-The `ImsAuthProps` properties define the authentication information and flow that the Asset Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
+* [Asset Selector integreren met een [!DNL Adobe] toepassing](#adobe-app-integration-vanilla)
+* [Asset Selector integreren met een toepassing zonder Adobe](#adobe-non-app-integration)
 
-| Property Name | Description|
-|---|---|
-| `imsClientId`| A string value representing the IMS client ID used for authentication purposes. This value is provided by Adobe and is specific to your Adobe AEM CS organization.|
-| `imsScope`| Describes the scopes used in authentication. The scopes determine the level of access that the application has to your organization resources. Multiple scopes can be separated by commas.|
-| `redirectUrl` | Represents the URL where the user is redirected after authentication. This value is typically set to the current URL of the application. If a `redirectUrl` is not supplied, `ImsAuthService` will use the redirectUrl used to register the `imsClientId`|
-| `modalMode`| A boolean indicating whether the authentication flow should be displayed in a modal (pop-up) or not. If set to `true`, the authentication flow is displayed in a pop-up. If set to `false`, the authentication flow is displayed in a full page reload. _Note:_ for better UX, you can dynamically control this value if the user has browser pop-up disabled. |
-| `onImsServiceInitialized`| A callback function that is called when the Adobe IMS authentication service is initialized. This function takes one parameter, `service`, which is an object representing the Adobe IMS service. See [`ImsAuthService`](#imsauthservice-ims-auth-service) for more details.|
-| `onAccessTokenReceived`| A callback function that is called when an `imsToken` is received from the Adobe IMS authentication service. This function takes one parameter, `imsToken`, which is a string representing the access token. |
-| `onAccessTokenExpired`| A callback function that is called when an access token has expired. This function is typically used to trigger a new authentication flow to obtain a new access token. |
-| `onErrorReceived`| A callback function that is called when an error occurs during authentication. This function takes two parameters: the error type and error message. The error type is a string representing the type of error and the error message is a string representing the error message. |
+>[!BEGINTABS]
 
-### ImsAuthService {#ims-auth-service}
+<!--Integration with an Adobe application content starts here-->
 
-`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+>[!TAB Integratie met een Adobe-toepassing]
 
-| Function Name | Description |
-|---|---|
-| `isSignedInUser` | Determines whether the user is currently signed in to the service and returns a boolean value accordingly.|
-| `getImsToken`    | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services such as generating asset _rendition.|
-| `signIn`| Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload |
-| `signOut`| Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page.|
-| `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
--->
+### Vereisten{#prereqs-adobe-app}
 
-### Voorbeeld voor de niet-SUSI-stroom {#non-susi-vanilla}
+Gebruik de volgende voorwaarden als u Asset Selector integreert met een [!DNL Adobe] toepassing:
 
-In dit voorbeeld wordt getoond hoe u Asset Selector kunt gebruiken met een niet-SUSI-stroom wanneer u een [!DNL Adobe] toepassing onder Verenigde Shell of wanneer u reeds hebt `imsToken` gegenereerd voor verificatie.
+* [Communicatiemethoden](#prereqs)
+* imsOrg
+* imsToken
+* apikey
 
-Neem het pakket Asset Selector in uw code op met het `script` tag, zoals weergegeven in _lijnen 6-15_ van het onderstaande voorbeeld. Wanneer het script is geladen, wordt het `PureJSSelectors` algemene variabele is beschikbaar voor gebruik. De middelenkiezer definiëren [eigenschappen](#asset-selector-properties) zoals getoond in _lijnen 16-23_. De `imsOrg` en `imsToken` beide eigenschappen zijn vereist voor verificatie in niet-SUSI-stroom. De `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Als u de Asset Selector wilt renderen, roept u de `renderAssetSelector` functie als vermeld in _lijn 17_. De functie Asset Selector wordt weergegeven in het dialoogvenster `<div>` containerelement, zoals getoond in _lijnen 21 en 22_.
+### Asset Selector integreren met een [!DNL Adobe] toepassing {#adobe-app-integration-vanilla}
 
-Als u deze stappen uitvoert, kunt u Asset Selector gebruiken met een niet-SUSI-stroom in uw [!DNL Adobe] toepassing.
+In het volgende voorbeeld wordt het gebruik van Asset Selector getoond wanneer een [!DNL Adobe] toepassing onder Verenigde Shell of wanneer u reeds hebt `imsToken` gegenereerd voor verificatie.
+
+Neem het pakket Asset Selector in uw code op met het `script` tag, zoals weergegeven in _lijnen 6-15_ van het onderstaande voorbeeld. Wanneer het script is geladen, wordt het `PureJSSelectors` algemene variabele is beschikbaar voor gebruik. De middelenkiezer definiëren [eigenschappen](#asset-selector-properties) zoals getoond in _lijnen 16-23_. De `imsOrg` en `imsToken` beide eigenschappen zijn vereist voor verificatie in een Adobe toepassing. De `handleSelection` wordt gebruikt om de geselecteerde elementen af te handelen. Als u de Asset Selector wilt renderen, roept u de `renderAssetSelector` functie als vermeld in _lijn 17_. De functie Asset Selector wordt weergegeven in het dialoogvenster `<div>` containerelement, zoals getoond in _lijnen 21 en 22_.
+
+Als u deze stappen uitvoert, kunt u Asset Selector gebruiken met uw [!DNL Adobe] toepassing.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -243,7 +141,7 @@ Als u deze stappen uitvoert, kunt u Asset Selector gebruiken met een niet-SUSI-s
     <script>
         // get the container element in which we want to render the AssetSelector component
         const container = document.getElementById('asset-selector-container');
-        // imsOrg and imsToken are required for authentication in non-SUSI flow
+        // imsOrg and imsToken are required for authentication in Adobe application
         const assetSelectorProps = {
             imsOrg: 'example-ims@AdobeOrg',
             imsToken: "example-imsToken",
@@ -263,24 +161,146 @@ Als u deze stappen uitvoert, kunt u Asset Selector gebruiken met een niet-SUSI-s
 </html>
 ```
 
-Ga voor meer informatie naar [Voorbeeld van code voor middelenkiezer](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+<!--For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
-<!--
-### Example for the SUSI flow {#susi-vanilla}
++++**ImsAuthProps**
+De `ImsAuthProps` eigenschappen definiëren de verificatiegegevens en de stroom die de Asset Selector gebruikt om een `imsToken`. Door deze eigenschappen te plaatsen, kunt u controleren hoe de authentificatiestroom zich zou moeten gedragen en luisteraars voor diverse authentificatiegebeurtenissen registreren.
 
-Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
+| Eigenschapnaam | Beschrijving |
+|---|---|
+| `imsClientId` | Een tekenreekswaarde die de IMS client-id vertegenwoordigt die voor verificatiedoeleinden wordt gebruikt. Deze waarde wordt verstrekt door Adobe en is specifiek voor uw Adobe AEM organisatie CS. |
+| `imsScope` | Beschrijft het werkingsgebied dat in authentificatie wordt gebruikt. Het werkingsgebied bepaalt het niveau van toegang dat de toepassing aan uw organisatiemiddelen heeft. Meerdere bereiken kunnen worden gescheiden door komma&#39;s. |
+| `redirectUrl` | Geeft de URL aan waar de gebruiker na verificatie opnieuw wordt omgeleid. Deze waarde wordt doorgaans ingesteld op de huidige URL van de toepassing. Indien een `redirectUrl` niet wordt geleverd, `ImsAuthService` gebruikt redirectUrl die wordt gebruikt om `imsClientId` |
+| `modalMode` | Een Booleaanse waarde die aangeeft of de verificatiestroom al dan niet moet worden weergegeven in een modaal (pop-upmenu). Indien ingesteld op `true`, wordt de authentificatiestroom getoond in een pop-up. Indien ingesteld op `false`, wordt de verificatiestroom weergegeven in een volledige pagina die opnieuw wordt geladen. _Opmerking:_ voor een betere UX kunt u deze waarde dynamisch beheren als de gebruiker de browser pop-up heeft uitgeschakeld. |
+| `onImsServiceInitialized` | Een callback-functie die wordt aangeroepen wanneer de Adobe IMS-verificatieservice wordt geïnitialiseerd. Deze functie heeft één parameter, `service`, dat een object is dat staat voor de Adobe IMS-service. Zie [`ImsAuthService`](#imsauthservice-ims-auth-service) voor meer informatie . |
+| `onAccessTokenReceived` | Een callback-functie die wordt aangeroepen wanneer een `imsToken` wordt ontvangen van de Adobe IMS-verificatieservice. Deze functie heeft één parameter, `imsToken`, dat een tekenreeks is die het toegangstoken vertegenwoordigt. |
+| `onAccessTokenExpired` | Een callback functie die wordt geroepen wanneer een toegangstoken is verlopen. Deze functie wordt typisch gebruikt om een nieuwe authentificatiestroom teweeg te brengen om een nieuw toegangstoken te verkrijgen. |
+| `onErrorReceived` | Een callback functie die wordt geroepen wanneer een fout tijdens authentificatie voorkomt. Deze functie heeft twee parameters: het fouttype en het foutbericht. Het fouttype is een tekenreeks die het type fout vertegenwoordigt en het foutbericht is een tekenreeks die het foutbericht vertegenwoordigt. |
 
-Access the Asset Selector package using the `Script` Tag, as shown in *line 9* to *line 11* of the example `index.html` file.
++++
 
-*Line 14* to *line 38* of the example describes the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. The function requires that you define at least one of the `imsClientId` and `imsScope` properties. If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
++++**ImsAuthService**
+`ImsAuthService` -klasse handelt de verificatiestroom voor de Asset Selector af. Het is de taak van `imsToken` van de Adobe IMS-verificatieservice. De `imsToken` wordt gebruikt om de gebruiker te verifiëren en toegang tot [!DNL Adobe Experience Manager] als [!DNL Cloud Service] Middelenopslagplaats. ImsAuthService gebruikt de `ImsAuthProps` eigenschappen om de authentificatiestroom te controleren en luisteraars voor diverse authentificatiegebeurtenissen te registreren. U kunt het handige gebruiken [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) functie om de _ImsAuthService_ met de Asset Selector. De volgende functies zijn beschikbaar op de `ImsAuthService` klasse. Als u echter de opdracht _registerAssetsSelectorsAuthService_ als u deze functies niet rechtstreeks wilt aanroepen.
 
-As you do not have an `imsToken` generated, use the `registerAssetsSelectorsAuthService` and `renderAssetSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetsSelectorsAuthService` function before `renderAssetSelectorWithAuthFlow` to register the `imsToken` with the Asset Selector. [!DNL Adobe] recommends to call `registerAssetsSelectorsAuthService` when you instantiate the component.
+| Functienaam | Beschrijving |
+|---|---|
+| `isSignedInUser` | Bepaalt of de gebruiker momenteel binnen aan de dienst wordt ondertekend en een booleaanse waarde dienovereenkomstig terugkeert. |
+| `getImsToken` | Hiermee wordt de verificatie opgehaald `imsToken` voor de momenteel aangemelde gebruiker, die kan worden gebruikt voor het verifiëren van aanvragen voor andere services, zoals het genereren van asset_rendition. |
+| `signIn` | Hiermee wordt het aanmeldingsproces voor de gebruiker gestart. Deze functie gebruikt de `ImsAuthProps` om verificatie weer te geven in een pop-up of een volledige pagina die opnieuw wordt geladen |
+| `signOut` | Signs the user out of the service, invalidating their authentication token and require them to sign in again to access protected resources. Als u deze functie aanroept, wordt de huidige pagina opnieuw geladen. |
+| `refreshToken` | Verfrist het authentificatietoken voor de momenteel ondertekende gebruiker, verhinderend het en ononderbroken toegang tot beschermde middelen te verzekeren. Keert een nieuw authentificatietoken terug dat voor verdere verzoeken kan worden gebruikt. |
 
-Define the authentication and other Assets as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
++++
 
-The `PureJSSelectors` global variable, mentioned in *line 65*, is used to render the Asset Selector in the web browser.
++++**Validatie met opgegeven IMS-token**
 
-Asset Selector is rendered on the `<div>` container element, as mentioned in *line 74* to *line 81*. The example uses a dialog to display the Asset Selector.
+```
+<script>
+    const apiToken="<valid IMS token>";
+    function handleSelection(selection) {
+    console.log("Selected asset: ", selection);
+    };
+    function renderAssetSelectorInline() {
+    console.log("initializing Asset Selector");
+    const props = {
+    "repositoryId": "delivery-p64502-e544757.adobeaemcloud.com",
+    "apiKey": "ngdm_test_client",
+    "imsOrg": "<IMS org>",
+    "imsToken": apiToken,
+    handleSelection,
+    hideTreeNav: true
+    }
+    const container = document.getElementById('asset-selector-container');
+    PureJSSelectors.renderAssetSelector(container, props);
+    }
+    $(document).ready(function() {
+    renderAssetSelectorInline();
+    });
+</script>
+```
+
++++
+
++++**Callbacks van de dienst van IMS registreren**
+
+```
+// object `imsProps` to be defined as below 
+let imsProps = {
+    imsClientId: <IMS Client Id>,
+        imsScope: "openid",
+        redirectUrl: window.location.href,
+        modalMode: true,
+        adobeImsOptions: {
+            modalSettings: {
+            allowOrigin: window.location.origin,
+},
+        useLocalStorage: true,
+},
+onImsServiceInitialized: (service) => {
+            console.log("onImsServiceInitialized", service);
+},
+onAccessTokenReceived: (token) => {
+            console.log("onAccessTokenReceived", token);
+},
+onAccessTokenExpired: () => {
+            console.log("onAccessTokenError");
+// re-trigger sign-in flow
+},
+onErrorReceived: (type, msg) => {
+            console.log("onErrorReceived", type, msg);
+},
+}
+```
+
++++
+
+<!--Integration with non-Adobe application content starts here-->
+
+>[!TAB Integratie met een toepassing zonder Adobe]
+
+<!--### Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}-->
+
+### Vereisten {#prereqs-non-adobe-app}
+
+Gebruik de volgende voorwaarden als u Asset Selector integreert met een toepassing zonder Adobe:
+
+* [Communicatiemethoden](#prereqs)
+* imsClientId
+* imsScope
+* redirectUrl
+* imsOrg
+* apikey
+
+Asset Selector ondersteunt verificatie voor de [!DNL Experience Manager Assets] opslagplaats die gebruikmaakt van Identity Management System (IMS)-eigenschappen zoals `imsScope` of `imsClientID` wanneer u het met een niet-Adobe toepassing integreert.
+
++++**Asset Selector configureren voor een toepassing zonder Adobe**
+Om de Selecteur van Activa voor een niet-Adobe toepassing te vormen, moet u eerst een steunkaartje voor levering registreren die door de integratiestappen wordt gevolgd.
+
+**Een ondersteuningsticket registreren**
+Stappen om een steunkaartje via de Admin Console te registreren:
+
+1. Toevoegen **Asset Selector met AEM Assets** in de titel van het ticket.
+
+1. Geef in de beschrijving de volgende gegevens op:
+
+   * [!DNL Experience Manager Assets] als [!DNL Cloud Service] URL (programma-id en milieu-id).
+   * Domeinnamen waarbij de niet-Adobe webtoepassing wordt gehost.
++++
+
++++**Integratiestappen**
+Dit voorbeeld gebruiken `index.html` bestand voor verificatie bij integratie van Asset Selector met een toepassing zonder Adobe.
+
+Gebruik het pakket Asset Selector om het `Script` Tag, zoals weergegeven in *lijn 9* tot *lijn 11* van het voorbeeld `index.html` bestand.
+
+*Regel 14* tot *lijn 38* in het voorbeeld worden de eigenschappen van de IMS-stroom beschreven, zoals `imsClientId`, `imsScope`, en `redirectURL`. De functie vereist dat u ten minste een van de `imsClientId` en `imsScope` eigenschappen. Als u geen waarde definieert voor `redirectURL`, wordt de geregistreerde omleidings-URL voor de client-id gebruikt.
+
+Aangezien u geen `imsToken` gegenereerd, gebruikt u de `registerAssetsSelectorsAuthService` en `renderAssetSelectorWithAuthFlow` functies, zoals getoond in lijn 40 tot lijn 50 van het voorbeeld `index.html` bestand. Gebruik de `registerAssetsSelectorsAuthService` functie voor `renderAssetSelectorWithAuthFlow` om de `imsToken` met de Asset Selector. [!DNL Adobe] raadt aan `registerAssetsSelectorsAuthService` wanneer u de component instantieert.
+
+Bepaal de authentificatie en andere Activa as a Cloud Service op toegang betrekking hebbende eigenschappen in `const props` sectie, zoals getoond in *lijn 54* tot *lijn 60* van het voorbeeld `index.html` bestand.
+
+De `PureJSSelectors` globale variabele, vermeld in *lijn 65*, wordt gebruikt om de Asset Selector in de webbrowser te renderen.
+
+Asset Selector wordt weergegeven op de `<div>` containerelement, zoals vermeld in *lijn 74* tot *lijn 81*. In het voorbeeld wordt een dialoogvenster gebruikt om de Asset Selector weer te geven.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -357,11 +377,19 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 </body>
 
 </html>
-
 ```
--->
 
-## Eigenschappen van Asset Selector gebruiken {#asset-selector-properties}
++++
+
++++**Kan geen toegang krijgen tot gegevensopslagruimte**
+
+>[!TIP]
+>
+>Als u Asset Selector hebt geïntegreerd met de workflow Aanmelden maar nog steeds geen toegang hebt tot de gegevensopslagruimte, moet u ervoor zorgen dat browsercookies worden opgeschoond. Anders wordt het resultaat `invalid_credentials All session cookies are empty` fout in de console.
+
+>[!ENDTABS]
+
+## Eigenschappen van Asset Selector {#asset-selector-properties}
 
 U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te passen waarop de Asset Selector wordt weergegeven. In de volgende tabel worden de eigenschappen weergegeven die u kunt gebruiken om de functie Asset Selector aan te passen en te gebruiken.
 
@@ -369,16 +397,16 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 |---|---|---|---|---|
 | *spoor* | boolean | Nee | false | Indien gemarkeerd `true`, Asset Selector wordt weergegeven in een linkerspoorweergave. Als het is gemarkeerd `false`, wordt de Asset Selector weergegeven in de modale weergave. |
 | *imsOrg* | string | Ja | | Adobe Identity Management System (IMS)-id die tijdens de provisioning is toegewezen [!DNL Adobe Experience Manager] als [!DNL Cloud Service] voor uw organisatie. De `imsOrg` is vereist om te controleren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
-| *imsToken* | string | Nee | | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is vereist als u de niet-SUSI flow gebruikt. |
-| *apiKey* | string | Nee | | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is vereist als u de niet-SUSI flow gebruikt. |
+| *imsToken* | string | Nee | | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is vereist als u een [!DNL Adobe] toepassing voor de integratie. |
+| *apiKey* | string | Nee | | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is vereist als u een [!DNL Adobe] toepassingsintegratie. |
 | *rootPath* | string | Nee | /content/dam/ | Mappad waaruit de middelen worden weergegeven door de Asset Selector. `rootPath` kan ook in de vorm van inkapseling worden gebruikt. Als u bijvoorbeeld het volgende pad kiest, `/content/dam/marketing/subfolder/`Met Asset Selector kunt u niet door een bovenliggende map bladeren, maar alleen de onderliggende mappen weergeven. |
 | *pad* | string | Nee | | Pad dat wordt gebruikt om naar een specifieke map met elementen te navigeren wanneer de Asset Selector wordt weergegeven. |
 | *filterSchema* | array | Nee | | Model dat wordt gebruikt om filtereigenschappen te vormen. Dit is handig wanneer u bepaalde filteropties in de Asset Selector wilt beperken. |
 | *filterFormProps* | Object | Nee | | Geef de filtereigenschappen op die u nodig hebt om de zoekopdracht te verfijnen. Bijvoorbeeld MIME-type JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nee |                 | Geselecteerde elementen opgeven wanneer de Asset Selector wordt weergegeven. Een array van objecten is vereist die een id-eigenschap van de elementen bevat. Bijvoorbeeld: `[{id: 'urn:234}, {id: 'urn:555'}]` Een element moet beschikbaar zijn in de huidige directory. Als u een andere map moet gebruiken, geeft u een waarde op voor de `path` ook eigenschap. |
-| *acvConfig* | Object | Nee | | De bezit van de Mening van de Inzameling van activa dat voorwerp bevat dat douaneconfiguratie bevat om gebreken met voeten te treden. |
-| *i18nSymbolen* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |                 | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen aangepaste gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` prop. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Als u de overschrijving wilt uitvoeren, moet u een geldige waarde opgeven [Berichtbeschrijving](https://formatjs.io/docs/react-intl/api/#message-descriptor) naar de toets van `i18nSymbols` die u wilt overschrijven. |
-| *intl* | Object | Nee | | Asset Selector biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige landinstelling op te geven via het dialoogvenster `intl.locale` prop. Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> De landinstellingstekenreeksen die worden ondersteund volgen de [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
+| *acvConfig* | Object | Nee | | De bezit van de Mening van de Inzameling van activa dat voorwerp bevat dat douaneconfiguratie bevat om gebreken met voeten te treden. Deze eigenschap wordt ook gebruikt met `rail` eigenschap om de kijker van de middelen per spoor weer te geven. |
+| *i18nSymbolen* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |                 | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen aangepaste gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` prop. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling. Als u de overschrijving wilt uitvoeren, moet u een geldige waarde opgeven [Berichtbeschrijving](https://formatjs.io/docs/react-intl/api/#message-descriptor) naar de toets van `i18nSymbols` die u wilt overschrijven. |
+| *intl* | Object | Nee | | Asset Selector biedt standaard OTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige landinstelling op te geven via het dialoogvenster `intl.locale` prop. Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> De landinstellingstekenreeksen die worden ondersteund volgen de [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 | *repositoryId* | string | Nee | &#39;&#39; | Opslagplaats waar de inhoud wordt geladen door de Asset Selector. |
 | *additionalAemSolutions* | `Array<string>` | Nee | [ ] | Hiermee kunt u een lijst met extra AEM opslagplaatsen toevoegen. Als deze eigenschap geen informatie bevat, worden alleen mediawisselaars of AEM Assets-opslagruimten in aanmerking genomen. |
 | *hideTreeNav* | boolean | Nee |  | Hiermee geeft u op of de zijbalk met boomnavigatie met elementen moet worden weergegeven of verborgen. Het wordt alleen in modale zin gebruikt en daarom heeft dit onroerend goed geen effect in de spoorwegen. |
@@ -390,6 +418,13 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *onClose* | Functie | Nee | | Wordt aangeroepen wanneer `Close` wordt in de modale weergave ingedrukt. Dit wordt alleen aangeroepen in `modal` in `rail` weergeven. |
 | *onFilterSubmit* | Functie | Nee | | Wordt aangeroepen met filteritems wanneer de gebruiker andere filtercriteria wijzigt. |
 | *selectionType* | string | Nee | enkel | Configuratie voor `single` of `multiple` selectie van elementen tegelijk. |
+| *dragOptions.lijst van gewenste personen* | boolean | Nee | | De eigenschap wordt gebruikt om het slepen van elementen die niet kunnen worden geselecteerd toe te staan of te weigeren. |
+| *aemTierType* | string | Nee | | Hiermee kunt u selecteren of u elementen uit de leveringslaag, de auteurslaag of beide wilt weergeven. <br><br> Syntaxis: `aemTierType:[0: "author" 1: "delivery"` <br><br> Als beide `["author","delivery"]` worden gebruikt, worden de opties voor zowel auteur als levering weergegeven door de repository switch. |
+| *handleNavigateToAsset* | Functie | Nee | | Het is een callback functie om selectie van activa te behandelen. |
+| *noWrap* | boolean | Nee | | De *noWrap* Deze eigenschap helpt de Asset Selector in het zijdeelvenster van het spoor weer te geven. Als dit bezit niet wordt vermeld, geeft het terug *Dialoogweergave* standaard. |
+| *dialogSize* | overnemen op klein, middelgroot, groot, volledig scherm of volledig scherm | String | Optioneel | U kunt de lay-out bepalen door zijn grootte te specificeren gebruikend de bepaalde opties. |
+| *colorScheme* | licht of donker | Nee | | Deze eigenschap wordt gebruikt om het thema van een toepassing Asset Selector in te stellen. U kunt kiezen tussen licht of donker thema. |
+| *filterRepoList* | Functie | Nee |  | U kunt `filterRepoList` callback functie die de gegevensopslagplaats van de Experience Manager roept en een gefiltreerde lijst van bewaarplaatsen terugkeert. |
 
 ## Voorbeelden voor het gebruik van de eigenschappen van Asset Selector {#usage-examples}
 
@@ -399,7 +434,7 @@ U kunt de Asset Selector definiëren [eigenschappen](#asset-selector-properties)
 
 ![spoorstaafvoorbeeld](assets/rail-view-example-vanilla.png)
 
-Als de waarde van de AssetSelector `rail` is ingesteld op `false` of niet wordt vermeld in de eigenschappen, de vertoningen van de Selecteur van Activa in de Modale mening door gebrek.
+Als de waarde van de AssetSelector `rail` is ingesteld op `false` of niet wordt vermeld in de eigenschappen, de vertoningen van de Selecteur van Activa in de Modale mening door gebrek. De `acvConfig` staat voor sommige diepgaande configuraties, zoals de Belemmering en de Daling toe. Bezoek [slepen en neerzetten in- of uitschakelen](#enable-disable-drag-and-drop) om inzicht te krijgen in het gebruik van `acvConfig` eigenschap.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -415,10 +450,9 @@ Gebruik verschillende eigenschappen om de metagegevens te definiëren van een el
 
 ![metadata-popover-example](assets/metadata-popover.png)
 
-
 ### Voorbeeld 3: Aangepaste filtereigenschap in de rasterweergave
 
-Naast de beperkte zoekopdracht kunt u met de middelenkiezer verschillende kenmerken aanpassen om uw zoekopdracht te verfijnen van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] toepassing. U moet de volgende code toevoegen om aangepaste zoekfilters in uw toepassing toe te voegen. In het onderstaande voorbeeld wordt `Type Filter` zoek naar het type element tussen Afbeeldingen, Documenten of Video&#39;s of het filtertype dat u voor de zoekopdracht hebt toegevoegd.
+Naast de beperkte zoekopdracht kunt u met de middelenkiezer verschillende kenmerken aanpassen om uw zoekopdracht te verfijnen van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] toepassing. Voeg de volgende code toe om aangepaste zoekfilters in uw toepassing toe te voegen. In het onderstaande voorbeeld wordt `Type Filter` zoek naar het type element tussen Afbeeldingen, Documenten of Video&#39;s of het filtertype dat u voor de zoekopdracht hebt toegevoegd.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -431,15 +465,125 @@ Naast de beperkte zoekopdracht kunt u met de middelenkiezer verschillende kenmer
 Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
 -->
 
-<!-- Property details to be added here. Referred the ticket https://jira.corp.adobe.com/browse/ASSETS-19023-->
+## Codefragmenten voor functionele setup{#code-snippets}
 
-<!--
-## Asset Selector Object Schema {#object-schema}
+Definieer de vereisten in het dialoogvenster `index.html` bestand of een vergelijkbaar bestand in de implementatie van de toepassing om de verificatiegegevens te definiëren voor toegang tot het [!DNL Experience Manager Assets] opslagplaats. Als u klaar bent, kunt u naar wens codefragmenten toevoegen.
 
-Schema describes the object properties associated with an asset selected using Asset Selector. It uses the combination of data types and their values to validate the object describing the selected Asset using an Asset Selector.
+### Deelvenster Filter aanpassen {#customize-filter-panel}
+
+U kunt het volgende codefragment toevoegen in `assetSelectorProps` -object om het filterdeelvenster aan te passen:
+
+```
+filterSchema: [
+    {
+    header: 'File Type',
+    groupKey: 'TopGroup',
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    {
+    label: 'Images',
+    value: '<comma separated mimetypes, without space, that denote all images, for e.g., image/>',
+    },
+    {
+    label: 'Videos',
+    value: '<comma separated mimetypes, without space, that denote all videos for e.g., video/,model/vnd.mts,application/mxf>'
+    }
+    ]
+    }
+    ]
+    },
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    { label: 'JPG', value: 'image/jpeg' },
+    { label: 'PNG', value: 'image/png' },
+    { label: 'TIFF', value: 'image/tiff' },
+    { label: 'GIF', value: 'image/gif' },
+    { label: 'MP4', value: 'video/mp4' }
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Mime Types',
+    groupKey: 'MimeTypeGroup',
+    }},
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'property=metadata.application.xcm:keywords.value',
+    options: [
+    { label: 'Fruits', value: 'fruits' },
+    { label: 'Vegetables', value: 'vegetables'}
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Food Category',
+    groupKey: 'FoodCategoryGroup',
+    }
+],
+```
+
+### Informatie aanpassen in de modale weergave {#customize-info-in-modal-view}
+
+U kunt de gedetailleerde weergave van een element aanpassen wanneer u op de knop ![info icon](assets/info-icon.svg) pictogram. Voer de onderstaande code uit:
+
+```
+// Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
+const infoPopoverMap = (map) => {
+// for example, to skip `path` from the info popover view
+let defaultPopoverData = PureJSSelectors.getDefaultInfoPopoverData(map);
+return defaultPopoverData.filter((i) => i.label !== 'Path'
+};
+assetSelectorProps.infoPopoverMap = infoPopoverMap;
+```
+
+### Slepen en neerzetten in- of uitschakelen {#enable-disable-drag-and-drop}
+
+Voeg de volgende eigenschappen toe aan `assetSelectorProp` om slepen en neerzetten in te schakelen. Als u slepen en neerzetten wilt uitschakelen, vervangt u de opdracht `true` parameter with `false`.
+
+```
+rail: true,
+acvConfig: {
+dragOptions: {
+allowList: {
+'*': true,
+},
+},
+selectionType: 'multiple'
+}
+
+// the drop handler to be implemented
+function drop(e) {
+e.preventDefault();
+// following helps you get the selected assets – an array of objects.
+const data = JSON.parse(e.dataTransfer.getData('collectionviewdata'));
+}
+```
+
+### Selectie van activa {#selection-of-assets}
+
+Het geselecteerde elementtype is een array met objecten die de elementgegevens bevatten wanneer u de `handleSelection`, `handleAssetSelection`, en `onDrop` functies.
+
+Voer de volgende stappen uit om de selectie van één of meerdere activa te vormen:
+
+```
+acvConfig: {
+selectionType: 'multiple' // 'single' for single selection
+}
+// the `handleSelection` callback, always gets you the array of selected assets
+```
 
 **Schema Syntax**
-````
+
+```
 interface SelectedAsset {
     'repo:id': string;
     'repo:name': string;
@@ -465,35 +609,72 @@ interface SelectedAsset {
         }>;
     };
 }
-````
+```
 
-**Query Parameters**
+In de volgende tabel worden enkele belangrijke eigenschappen van het object Selected Asset beschreven.
 
-| Parameter | Type | Description |
+| Eigenschap | Type | Beschrijving |
 |---|---|---|
-| repo:id | string | ID of an Asset |
-| repo:name | string | The name of an Asset |
-| repo:path | string | The path of an Asset |
-| repo:size | number | Size of an Asset (in bytes) |
-| repo:createdBy | string | ID of a user who created an Asset |
-| repo: createdDate | string | The timestamp when an asset was created |
-| repo:modifiedBy | string | ID of a user who modified the asset recently |
-| repo:modifyDate | string | The timestamp when the asset was last modified |
-| dc:format | string | MIME type of an Asset |
-| tiff:imageWidth | number | The width of an image type of Asset |
-| tiff:imageLength | number | The height of an image type of Asset |
-| repo:state | string | The `Approved`, `Rejected`, or `Expired`state of an Asset |
-| computedMetadata | string | It is an object that represents a bucket for all the Asset's metadata of all kinds (repository, application or embedded metadata) |
-| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, and so on  |
+| *repo:repositoryId* | string | Unieke id voor de gegevensopslagruimte waar het middel is opgeslagen. |
+| *repo:id* | string | Unieke id voor het element. |
+| *repo:assetClass* | string | De classificatie van het element (bijvoorbeeld afbeelding, video, document). |
+| *repo:naam* | string | De naam van het element, inclusief de bestandsextensie. |
+| *repo:grootte* | getal | De grootte van het element in bytes. |
+| *repo:pad* | string | De locatie van het middel in de opslagplaats. |
+| *repo:voorouders* | `Array<string>` | Een array van bovenliggende items voor het middel in de repository. |
+| *repo:status* | string | Huidige status van het middel in de repository (bijvoorbeeld actief, verwijderd enzovoort). |
+| *repo:createdBy* | string | De gebruiker of het systeem dat het element heeft gemaakt. |
+| *repo:createDate* | string | De datum en tijd waarop het element is gemaakt. |
+| *repo:modifiedBy* | string | De gebruiker of het systeem dat het element als laatste heeft gewijzigd. |
+| *repo:modifyDate* | string | De datum en het tijdstip waarop het element voor het laatst is gewijzigd. |
+| *dc:indeling* | string | De indeling van het element, zoals het bestandstype (bijvoorbeeld JPEG, PNG, enzovoort). |
+| *tiff:imageWidth* | getal | De breedte van een element. |
+| *tiff:imageLength* | getal | De hoogte van een element. |
+| *computedMetadata* | `Record<string, any>` | Een object dat een emmertje vertegenwoordigt voor alle soorten metagegevens van het element (gegevensopslagruimte, toepassing of ingesloten metagegevens). |
+| *_links* | `Record<string, any>` | Hypermediakoppelingen voor het bijbehorende element. Bevat koppelingen voor bronnen zoals metagegevens en uitvoeringen. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Array met objecten die informatie bevatten over uitvoeringen van het element. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | De URI naar de vertoning. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | Het MIME-type van de vertoning. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | getal | De grootte van de vertoning in bytes. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | getal | De breedte van de vertoning. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | getal | De hoogte van de vertoning. |
 
-For the detailed example of Object Schema, click 
--->
+Voor een volledige lijst met eigenschappen en een gedetailleerd voorbeeld gaat u naar [Voorbeeld van code voor middelenkiezer](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 ## Selectie van elementen afhandelen met behulp van objectschema {#handling-selection}
 
 De `handleSelection` Deze eigenschap wordt gebruikt om een of meer selecties van Elementen in Elementenkiezer te verwerken. In het onderstaande voorbeeld wordt de gebruikssyntaxis van `handleSelection`.
 
 ![handgreep-selectie](assets/handling-selection.png)
+
+## Selectie van elementen uitschakelen {#disable-selection}
+
+Selectie uitschakelen wordt gebruikt om te verbergen of uit te schakelen dat de elementen of mappen kunnen worden geselecteerd. Het selectiekader van de kaart of het element dat u selecteert, wordt verborgen. Hierdoor wordt het selectievakje niet ingeschakeld. Als u deze functie wilt gebruiken, kunt u de positie opgeven van een element of map die u in een array wilt uitschakelen. Als u bijvoorbeeld de selectie van een map op de eerste positie wilt uitschakelen, kunt u de volgende code toevoegen:
+`disableSelection: [0]:folder`
+
+U kunt een lijst met MIME-typen (zoals afbeeldingen, mappen, bestanden of andere MIME-typen, bijvoorbeeld afbeeldingen/jpeg) opgeven die u wilt uitschakelen. De mime-typen die u declareert, worden toegewezen aan `data-card-type` en `data-card-mimetype` kenmerken van een element.
+
+Daarnaast kunnen elementen met uitgeschakelde selectie versleepbaar zijn. Als u het slepen en neerzetten van een bepaald elementtype wilt uitschakelen, kunt u `dragOptions.allowList` eigenschap.
+
+De syntaxis voor het uitschakelen van selectie is als volgt:
+
+```
+(args)=> {
+    return(
+        <ASDialogWrapper
+            {...args}
+            disableSelection={args.disableSelection}
+            handleAssetSelection={action('handleAssetSelection')}
+            handleSelection={action('handleSelection')}
+            selectionType={args.selectionType}
+        />
+    );
+}
+```
+
+>[!NOTE]
+>
+> In het geval van een element is het selectievakje Selecteren verborgen, terwijl in het geval van een map de map niet kan worden geselecteerd, maar de navigatie van de vermelde map nog steeds wordt weergegeven.
 
 ## Elementkiezer gebruiken {#using-asset-selector}
 
@@ -516,7 +697,7 @@ Als u mappen in de linkernavigatie wilt verbergen, klikt u op **[!UICONTROL Hide
 
 ### Repository-switch {#repository-switcher}
 
-Met Asset Selector kunt u ook schakelen tussen opslagruimten voor middelenselectie. U kunt de opslagplaats van uw keus van drop-down selecteren beschikbaar in het linkerpaneel. De opslagruimteopties in de vervolgkeuzelijst zijn gebaseerd op de `repositoryId` in de `index.html` bestand. Het is gebaseerd op de milieu&#39;s van geselecteerde IMS org die door de het programma geopende gebruiker wordt betreden. Consumenten kunnen een voorkeur doorgeven `repositoryID` en in dat geval stopt de Asset Selector met het renderen van de repo-switch en geeft hij alleen activa van de gegeven repository weer.
+Met Asset Selector kunt u ook schakelen tussen opslagruimten voor middelenselectie. U kunt de opslagplaats van uw keus van drop-down selecteren beschikbaar in het linkerpaneel. De opslagruimteopties in de vervolgkeuzelijst zijn gebaseerd op de `repositoryId` in de `index.html` bestand. Het is gebaseerd op de omgeving van de geselecteerde IMS-org die wordt benaderd door de aangemelde gebruiker. Consumenten kunnen een voorkeur doorgeven `repositoryID` en in dat geval stopt de Asset Selector met het renderen van de repo-switch en geeft hij alleen activa van de gegeven repository weer.
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -539,7 +720,7 @@ De Kiezer van activa verstrekt ook uit-van-de-doos filteropties om uw onderzoeks
 
 Met Asset Selector kunt u naast de zoekopdracht in volledige tekst ook elementen in bestanden zoeken met behulp van een aangepaste zoekopdracht. U kunt aangepaste zoekfilters gebruiken in zowel de modusweergave als de spoorweergave.
 
-![aangepast zoeken](assets/custom-search.png)
+![aangepast zoeken](assets/custom-search1.png)
 
 U kunt ook een standaardzoekfilter maken om de velden op te slaan waarnaar u vaak zoekt en deze later te gebruiken. Als u een aangepaste zoekopdracht naar uw elementen wilt maken, kunt u `filterSchema` eigenschap.
 
@@ -618,4 +799,26 @@ Asset Selector lets you know the status of your uploaded assets. The status can 
 ### Localization
 
 The integration of Asset Selector with [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] allows localized content appear in your application.
+-->
+
+
+
+<!--Best Practice-->
+<!--
++++**Control default selection of the filter**
+You can make the selection of filter default by implementing the following code snippet:
+
+```
+"defaultValue": [
+    "image/*",
+    "application/*"
+],
+
+{
+    "label": "Documents",
+    "value": "application/*"
+}
+```
+
++++
 -->
