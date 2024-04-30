@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
 workflow-type: tm+mt
-source-wordcount: '4901'
+source-wordcount: '4892'
 ht-degree: 3%
 
 ---
@@ -1156,8 +1156,6 @@ ht-degree: 3%
    + Auteurlaag {#author-tier}
       + [Toegang tot de auteurlaag](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Beveiliging van de auteurlaag](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Voorvertoning van rij {#preview-tier}
-      + [OSGi-instellingen configureren voor de voorvertoningsreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Overzicht van contentlevering {#content-delivery}
       + [Inhoudsleveringsstroom](/help/implementing/dispatcher/overview.md)
       + [Dispatcher in de cloud](/help/implementing/dispatcher/disp-overview.md)

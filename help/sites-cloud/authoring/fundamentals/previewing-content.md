@@ -2,9 +2,9 @@
 title: Inhoud voorvertonen
 description: Leer hoe u de AEM voorvertoningsservice gebruikt om inhoud voor te vertonen voordat u live gaat.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,3 @@ Inhoud kan ook voor voorvertoning worden gepubliceerd met een [workflow voor pub
 Publiceren van inhoud vanuit uw **Voorvertoning** milieu is in wezen hetzelfde proces als [publicatie van pagina&#39;s ongedaan maken](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) van de **Publiceren** milieu.
 
 Het enige verschil is dat u de **Doel** te worden **Voorvertoning**.
-
-## Aanvullende informatie {#further-information}
-
-Zie ook:
-
-* [OSGi-instellingen configureren voor de voorvertoningsreeks](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-
-* [Foutopsporingsvoorbeeld met de ontwikkelaarsconsole](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
