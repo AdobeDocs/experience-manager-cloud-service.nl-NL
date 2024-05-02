@@ -2,10 +2,10 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 60952db4172b882b71a0b230fc8f4c27154e9cc0
+source-git-commit: 79dcf8a4e9834beeb466ed9270a3f5c6aa67aa9a
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 1%
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -13,26 +13,69 @@ ht-degree: 1%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 15977 {#release-15977}
+## Release 16145 {#release-16145}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15977 samengevat, die op 19 april 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 15939.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16145 samengevat, die op 1 mei 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 15977.
 
 2024.4.0 Activering van de eigenschap verstrekt de volledige eigenschap die voor deze onderhoudsversie wordt geplaatst. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie .
 
-### Verbeteringen {#enhancements-15977}
+### Verbeteringen {#enhancements-16145}
 
-* GRANITE-51335: Optimaliseer AEM health check om de stabiliteit van instanties te verhogen.
+* ASSETS-23489: Verbeteringen van inzichten in de opslagplaats.
+* ASSETS-26926: Dynamic Media uploadt opiniepeilingverbeteringen.
+* ASSETS-30351: Dialoogvenster Download moet Dynamic Media-uitvoergrootten asynchroon laden.
+* ASSETS-30379: Verbeterde resolutie van DRM-licenties tijdens het downloaden.
+* ASSETS-31058: Surface smart crop renditions in AEM assets UI op het tabblad Uitvoeringen en genereer intelligente bijgesneden afbeeldingen wanneer de gebruiker op deze uitvoeringen klikt.
+* ASSETS-31218: Voeg ondersteuning toe voor benoemde smartcrop in de API voor levering van middelen.
+* ASSETS-31979: visuele indicator toevoegen en UI-functies uitschakelen tijdens Async Assets-bewerkingen.
+* ASSETS-32735: Improvements to asset metadata updated event.
+* ASSETS-34661: API voor DM Preview en/of Delivery URL&#39;s van AEMaaCS Publish.
+* ASSETS-37259: XMP parseerverbeteringen.
+* ASSETS-37263: annulering van async-taken van falende activa toestaan.
+* CNTBF-114: Verbeteringen in de terugloop van inhoud.
+* CNTBF-148: De verbeteringen van de inhoudbackflow.
+* CQ-4356992: Nieuwste AEM en Graniet-vertalingen.
+* SITES-19326: Update links in Activa UI om CF in nieuwe Redacteur van het CF te openen.
+* SITES-20686: GraphQL - Maak Dynamic Media-URL beschikbaar via _dmS7Url (voor niet-afbeeldingselementen).
+* SKYOPS-68091: Bijwerken naar Java 11.0.20.
 
-### Opgeloste problemen {#fixed-issues-15977}
+### Opgeloste problemen {#fixed-issues-16145}
 
-* CQ-4357226: Fix regression in the IMS Configurations support for OAuth credentials.
-* GRANITE-51335: Ratelimit upgrade naar 5.0.4 Fixed Felix Health Check registrations.
+* ASSETS-32321: workflowoplossing na verwerking mislukt als het subknooppunt &#39;jcr:content&#39; ontbreekt in de bovenliggende map.
+* ASSETS-33856: met Voorinstelling JPEG-afbeelding wordt het bestand gedownload als TXT.
+* ASSETS-34096: Fix Touch UI view for async download report.
+* ASSETS-34493: mislukt tijdens het laden van het dialoogvenster Downloaden nadat de functie voor meerdere bedrijven is ingeschakeld.
+* ASSETS-34824: URL van kopie wordt leeg weergegeven voor mappen met DM uitgeschakeld.
+* ASSETS-35226: workflow na verwerking niet opgelost als gespecificeerd op de DAM-basis.
+* ASSETS-35559: Reduce DM Batch Upload failure log to WARN.
+* ASSETS-35860: onjuiste tijdzoneconversie in de kolomweergave van AEM Assets.
+* ASSETS-35935: onjuiste mapnavigatie na afsluiting van controle van de lading.
+* ASSETS-35961: de knop Uitsnijden toevoegen werkt niet onder het afbeeldingsprofiel.
+* ASSETS-36227: Schakel de service FolderPreviewUpdaterImpl uit bij publicatie.
+* ASSETS-36943: juf uitgelijnde kolommen wanneer CF en andere niet CF punten in een omslag in lijstmening aanwezig zijn.
+* ASSETS-36990: Geëxporteerde metagegevenstaken mislukken/vertragen bij een groot aantal eigenschappen.
+* ASSETS-37113: De functie Elementen opnieuw verwerken wordt onmiddellijk beëindigd als de query alleen CF-resultaten retourneert.
+* ASSETS-37260: de uitvoer van metagegevens in AEM kan ongeldige CSV veroorzaken.
+* ASSETS-37261: PPTx en PDF Annotation Issue on AEM Assets.
+* ASSETS-37282: Mogelijk traag verzoek om grote map te openen.
+* ASSETS-37330: Bulk Import from OneDrive leidt tot onjuiste AEM mapstructuur.
+* ASSETS-37609: verwijder de raadpleging van scene7 conf.
+* ASSETS-38016: Sommige updates van metagegevens worden niet correct bijgehouden in gebeurtenissen.
+* CQ-4357161: AEM Inbox Payload-scherm retourneert 404.
+* GRANITE-50041: Vertoning toevoegen werkt niet wanneer de resolutie meer dan 1440px breedte is wanneer alleen de optie Vertoning toevoegen in de vervolgkeuzelijst is opgenomen.
+* GRANITE-50279: Ongeordende weeknamen in de component Coral Datepicker.
+* SCRNS-3949: De tijd van het de verzoekverzoek van het het kanaalhaal van schermen is te lang.
+* SCRNS-3981: [Volgkanaal] Het zwarte scherm werd weergegeven wanneer de reeks gebeurtenissen load/unload van het element wordt vervormd.
+* SCRNS-4180: [Volgkanaal] De reeks stopt met een leeg scherm voor kanalen met video&#39;s van duur -1 wanneer u deze hebt hersteld van de fallback-miniatuur.
+* SCRNS-4245: [Volgkanaal] Beperkte duur van Leeg scherm wanneer een video wordt geladen en van fallback miniatuur wordt geschakeld.
+* SITES-16055: Corrigeer de koppelingen Live Copy en Live Copy-bron binnen de respectievelijke eigenschappenpagina.
+* SCRNS-4243: Ontbrekende knopen in de Leverancier van de Inhoud voor gebruikers niet-Admin.
 
-### Bekende problemen {#known-issues-15977}
+### Bekende problemen {#known-issues-16145}
 
-* **(Alleen voor AEM Forms)** Nadat u AEM onderhoudsversie 15977 van de Cloud Foundation hebt geïnstalleerd, worden de velden Adaptief formulier in de onjuiste volgorde weergegeven tijdens het ontwerpen van formulieren en voor gepubliceerde formulieren. Als u AEM Forms gebruikt, raadt Adobe u aan geen upgrade uit te voeren naar de release van 15977 totdat het probleem is opgelost in de volgende onderhoudsversie. Dit kan u helpen ongemak te voorkomen.
+Geen.
 
-### Verouderde functies en API&#39;s {#deprecated-15977}
+### Verouderde functies en API&#39;s {#deprecated-16145}
 
 * [JWT Credentials Deprection in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
@@ -60,7 +103,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 15977 same
 
 Als u wilt weten wat er is vervangen of verwijderd in AEM as a Cloud Service, raadpleegt u [Verouderde en verwijderde functies en API&#39;s](/help/release-notes/deprecated-removed-features.md).
 
-### Ingesloten technologieën {#embedded-tech-15977}
+### Ingesloten technologieën {#embedded-tech-16145}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
