@@ -3,9 +3,9 @@ title: CDN-foutpagina's configureren
 description: Leer hoe u de standaardfoutpagina kunt overschrijven door statische bestanden te hosten in zelfgehoste opslag zoals Amazon S3 of Azure Blob Storage, en ernaar te verwijzen in een configuratiebestand dat wordt geïmplementeerd met de configuratiepijplijn van Cloud Manager.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
+source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -18,14 +18,21 @@ In het onwaarschijnlijke geval dat [CDN met beheerde Adobe](/help/implementing/d
 
 Voordat u de standaardfoutpagina kunt overschrijven, moet u het volgende doen:
 
-* Maak eerst deze map en bestandsstructuur in de map op hoofdniveau van het Git-project:
+* Maak deze map en bestandsstructuur in de map op hoofdniveau van uw Git-project:
 
 ```
 config/
      cdn.yaml
 ```
 
-* Ten tweede, de `cdn.yaml` Het configuratiebestand moet metagegevens en verwijzingen naar foutpagina&#39;s bevatten, zoals hieronder wordt beschreven.
+* De `cdn.yaml` Het configuratiebestand moet zowel metagegevens als de regels bevatten die in de onderstaande voorbeelden worden beschreven. De `kind` parameter moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie die momenteel is `1`.
+
+* Maak een gerichte configuratiepijplijn voor implementatie in Cloud Manager. Zie [productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [configureren van niet-productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**Notities**
+
+* RDEs steunt momenteel niet de configuratiepijplijn.
+* U kunt `yq` om de opmaak van uw configuratiebestand lokaal te valideren (bijvoorbeeld `yq cdn.yaml`).
 
 ### Configuratie {#configuration}
 
