@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
+source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1963'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ U kunt nu [metagegevensformulier toewijzen aan of verwijderen uit meerdere mappe
 
 -->
 
-### Nieuwe functies in Prerelease voor AEM Forms {#forms-pre-release}
+### Nieuwe functies in AEM Forms {#forms-new-features}
 
 * **Verbeterde Visual Rule Editor voor op kerncomponenten gebaseerde adaptieve Forms**: Deze release brengt een aanzienlijke upgrade naar de visuele regeleditor voor adaptieve formulieren op basis van kerncomponenten. Deze versie brengt een significante verbetering aan de visuele regelredacteur voor adaptieve vormen die op kerncomponenten worden gebaseerd. Deze update is gericht op het stroomlijnen van interacties met aangepaste functies, zodat u robuustere en efficiëntere formulieren kunt maken.
 
