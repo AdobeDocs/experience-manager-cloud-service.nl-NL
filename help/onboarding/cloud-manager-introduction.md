@@ -2,9 +2,9 @@
 title: Inleiding tot Cloud Manager
 description: Meer informatie over hoe Cloud Manager uw AEM project ondersteunt via programma's, omgevingen en pijpleidingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ U kunt ook vanuit de startpagina van Adobe Experience Cloud naar de pagina Progr
 >[!NOTE]
 >
 >Een gebruiker kan aan veelvoudige rollen worden toegewezen. Als u bijvoorbeeld beide toewijst **Zakelijke eigenaar** en **Implementatiebeheer** rollen aan een gebruiker geven de gebruiker de som deze toestemmingen.
+
+>[!TIP]
+>
+>Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Zie het document [Aangepaste machtigingen](/help/implementing/cloud-manager/custom-permissions.md) voor meer informatie .
 
 ## Cloud Manager-programma&#39;s {#cloud-manager-programs}
 

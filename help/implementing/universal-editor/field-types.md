@@ -2,7 +2,7 @@
 title: Modeldefinities, velden en componenttypen
 description: In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 9f0a3bf5c8d839fa2ab6744c6fa7f97cc5fe8684
+source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 1%
@@ -289,6 +289,8 @@ Met een containercomponenttype kunnen componenten worden gegroepeerd. Het biedt 
 >[!TAB Schermafbeelding]
 
 ![Screenshot van het type containercomponent](assets/component-types/container.png)
+
+>[!ENDTABS]
 
 #### Inhoudsfragment {#content-fragment}
 
