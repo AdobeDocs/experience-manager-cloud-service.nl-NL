@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Wanneer u een formulier selecteert en publiceert, worden de gerelateerde element
 Het is mogelijk dat uw Adaptieve Forms gebruik maakt van bepaalde configuraties, instellingen en aanpassingen die niet automatisch worden gepubliceerd. U wordt aangeraden deze bronnen te publiceren of te activeren voordat u een adaptief formulier publiceert.
 
 * Bewerkbare adaptieve formuliersjablonen
-* Configuraties van Cloud Servicen voor Adobe Sign, Typekit, reCAPTCHA en Form Data Models
+* Configuraties van Cloud Servicen voor Adobe Sign, Typekit, reCAPTCHA en Form Data Model (FDM)
 * Configuraties met andere cloudservices worden alleen geactiveerd als de gebruiker beheerdersmachtigingen heeft.
 * Aanpassingen Het gaat hierbij onder meer om:
 

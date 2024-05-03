@@ -4,9 +4,9 @@ description: Maak adaptieve formuliersjablonen op basis van de kerncomponent om 
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1884'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Auteurs kunnen een [!UICONTROL Form Data Model Schema] naar een sjabloon voor ee
 1. Selecteren **[!UICONTROL Content Browser]** aan de linkerkant.
 1. Ga naar de formuliercontainer **[!UICONTROL Setting]**.
 1. Selecteren **[!UICONTROL Data Model]**.
-1. Kies het formuliergegevensmodel via **[!UICONTROL Select Form Data Model]** en sla de configuratie op.
+1. Kies het formuliergegevensmodel (FDM) via **[!UICONTROL Select Form Data Model]** en sla de configuratie op.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 

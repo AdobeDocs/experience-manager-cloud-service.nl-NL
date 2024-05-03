@@ -5,9 +5,10 @@ contentOwner: khsingh
 role: User
 feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -75,15 +76,15 @@ Nee, de stap Verifiëren is niet beschikbaar voor [!DNL Forms] as a Cloud Servic
 * **Kan ik grafieken toevoegen aan een adaptief formulier?**
 Ja, u kunt grafieken toevoegen aan Adaptive Forms. Adaptive Forms biedt een diagramcomponent. U kunt hiermee grafieken toevoegen aan een adaptief formulier.
 
-* **Kan ik een Model van de Gegevens van het Vorm met een relationeel gegevensbestandmodel verbinden?**
-U kunt een formuliergegevensmodel verbinden met [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]en gebruikersprofiel van de Experience Manager als gegevensbronnen. Ondersteuning voor het verbinden van een formuliergegevensmodel met een relationele database is niet beschikbaar.
+* **Kan ik een Model van de Gegevens van het Vorm (FDM) met een relationeel gegevensbestandmodel verbinden?**
+U kunt een formuliergegevensmodel (FDM) verbinden met [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]en gebruikersprofiel van de Experience Manager als gegevensbronnen. Ondersteuning voor het verbinden van een formuliergegevensmodel (FDM) met een relationele database is niet beschikbaar.
 
-* **Kan ik aangepaste certificaten voor verificatie gebruiken met het formuliergegevensmodel?**
-Het formuliergegevensmodel bevat geen methode voor het gebruik van aangepaste certificaten voor verificatie. De aangepaste certificaten zoals x509 en 2-way SSL worden dus niet ondersteund.
+* **Kan ik aangepaste certificaten gebruiken met FDM (Form Data Model) voor verificatie?**
+FDM (Form Data Model) biedt geen methode om aangepaste certificaten voor verificatie te gebruiken. De aangepaste certificaten zoals x509 en 2-way SSL worden dus niet ondersteund.
 
 * **Kan ik Forms Portal gebruiken om actie Adaptive Forms te verzenden?**
 
-  U kunt uw bestaande Adaptive Forms aanpassen voor gebruik [Verzenden naar REST-eindpunt](configuring-submit-actions.md#submit-to-rest-endpoint), [E-mail verzenden](configuring-submit-actions.md#send-email), [Verzenden met gebruik van formuliergegevensmodel](configuring-submit-actions.md#submit-using-form-data-model), en [Een AEM-workflow aanroepen](configuring-submit-actions.md#invoke-an-aem-workflow) Handelingen verzenden. Handeling Forms Portal en Forms Portal verzenden is nog niet beschikbaar. Houd de maandelijkse opmerkingen bij de release in de gaten voor de beschikbaarheid van de functies.
+  U kunt uw bestaande Adaptive Forms aanpassen voor gebruik [Verzenden naar REST-eindpunt](configuring-submit-actions.md#submit-to-rest-endpoint), [E-mail verzenden](configuring-submit-actions.md#send-email), [Verzenden met gebruik van FDM (Form Data Model)](configuring-submit-actions.md#submit-using-form-data-model), en [Een AEM-workflow aanroepen](configuring-submit-actions.md#invoke-an-aem-workflow) Handelingen verzenden. Handeling Forms Portal en Forms Portal verzenden is nog niet beschikbaar. Houd de maandelijkse opmerkingen bij de release in de gaten voor de beschikbaarheid van de functies.
 
 * **Kan ik gebruiken [!DNL AEM Forms] app met [!DNL AEM Forms] as a Cloud Service?**
 
@@ -123,5 +124,3 @@ Maak het adaptieve formulier op basis van het JSON-schema in Experience Manager 
     A sample Service Credential JSON file fields mapped to Adobe Experience Manager connector for Microsoft Power Automate.
 
     -->
-
-

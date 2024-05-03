@@ -1,11 +1,11 @@
 ---
 title: Hoe kunnen we een op kerncomponenten gebaseerde adaptieve vorm vertalen?
-description: Leer een formuliergegevensmodel te maken in AEM Forms, het model te testen met voorbeeldgegevens en services en verschillende opties voor een model te configureren.
+description: Leer om een Model van de Gegevens van de Vorm (FDM) in AEM Forms tot stand te brengen, het model met steekproefgegevens en de diensten te testen, en diverse optie voor een model te vormen.
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---

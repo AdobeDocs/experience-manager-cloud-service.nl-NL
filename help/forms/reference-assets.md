@@ -3,16 +3,16 @@ title: Hoe krijgt u referentiethema's en sjablonen voor adaptieve formulieren?
 description: Gebruik de referentiemethoden voor adaptieve formulieren, sjablonen en formuliergegevens om snel aan de slag te gaan.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
 # Referentiemiddelen voor Forms as a Cloud Service {#reference-themes}
 
-U kunt de referentiethema&#39;s, sjablonen en formuliergegevensmodellen ophalen door de [Verwijzingsmiddelenpakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Het helpt u om snel uw Adaptieve Forms-ontwikkeling te starten en te versnellen. U kunt [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) om dit pakket te implementeren in uw as a Cloud Service Forms-omgeving.
+U kunt de referentiethema&#39;s, sjablonen en het formuliergegevensmodel (FDM) ophalen door de [Verwijzingsmiddelenpakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Het helpt u om snel uw Adaptieve Forms-ontwikkeling te starten en te versnellen. U kunt [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) om dit pakket te implementeren in uw as a Cloud Service Forms-omgeving.
 De referentieelementen die in het pakket zijn opgenomen, zijn:
 
 ## Thema&#39;s {#themes}

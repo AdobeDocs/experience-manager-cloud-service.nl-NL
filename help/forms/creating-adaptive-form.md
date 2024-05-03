@@ -1,13 +1,13 @@
 ---
 title: Hoe maak je Adaptive Forms?
-description: Leer een adaptief formulier te maken om het verzamelen en verwerken van informatie te stroomlijnen. Leer ook Adaptief formulier maken op basis van een formuliergegevensmodel.
+description: Leer een adaptief formulier te maken om het verzamelen en verwerken van informatie te stroomlijnen. Leer ook Adaptief formulier maken op basis van een FDM (Form Data Model).
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
 1. (Optioneel) In het dialoogvenster **[!UICONTROL Data]** selecteert u een gegevensmodel:
 
-   * **Formuliergegevensmodel**: A [Formuliergegevensmodel](data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen tot een adaptief formulier. Kies Formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
+   * **Formuliergegevensmodel**: A [Formuliergegevensmodel](data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen tot een adaptief formulier. Kies Formuliergegevensmodel (FDM) als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
 
    * **JSON Schema**: [JSON-schema](adaptive-form-json-schema-form-model.md) vertegenwoordigt de structuur waarin de gegevens door het achterste deelsysteem in uw organisatie worden geproduceerd of worden verbruikt. U kunt het schema koppelen aan een adaptief formulier en de elementen ervan gebruiken om dynamische inhoud toe te voegen aan het adaptieve formulier. De elementen van het schema zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten van de inhoudbrowser wanneer u Adaptief Forms ontwerpt. Alle velden worden ook toegevoegd aan het gemaakte adaptieve formulier.
 
@@ -126,7 +126,7 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
 1. Selecteer **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt en geopend in de Adaptive Forms-editor. De redacteur toont de inhoud beschikbaar in het malplaatje. De zijbalk wordt ook weergegeven om het gemaakte formulier aan te passen aan de behoeften.
 
-   Op basis van het type adaptief formulier worden de formulierelementen in het bijbehorende formulier <!--XFA form template, XML schema or --> Het JSON-schema of het formuliergegevensmodel worden weergegeven in het **[!UICONTROL Data Model Objects]** tabblad van het **[!UICONTROL Content Browser]** in de zijbalk. U kunt deze elementen ook slepen en neerzetten om het adaptieve formulier te maken.
+   Op basis van het type adaptief formulier worden de formulierelementen in het bijbehorende formulier <!--XFA form template, XML schema or --> Het JSON-schema of FDM (Form Data Model) worden weergegeven in het dialoogvenster **[!UICONTROL Data Model Objects]** tabblad van het **[!UICONTROL Content Browser]** in de zijbalk. U kunt deze elementen ook slepen en neerzetten om het adaptieve formulier te maken.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -184,8 +184,8 @@ U kunt het formuliermodel wijzigen voor een adaptief formulier (op JSON gebaseer
 1. Selecteer het adaptieve formulier en selecteer de optie **Eigenschappen** pictogram.
 1. Open de **[!UICONTROL Form Model]** en voert u een van de volgende handelingen uit.
 
-   * Als het adaptieve formulier geen formuliermodel heeft, kunt u een ander formuliermodel kiezen en dienovereenkomstig <!-- a form template, --> XML- of JSON-schema of formuliergegevensmodel.
-   * Als het adaptieve formulier is gebaseerd op een formuliermodel, kunt u een ander formulier kiezen <!-- form template, --> XML- of JSON-schema of Formuliergegevensmodel voor hetzelfde formuliermodel.
+   * Als het adaptieve formulier geen formuliermodel heeft, kunt u een ander formuliermodel kiezen en dienovereenkomstig <!-- a form template, --> XML- of JSON-schema of FDM (Form Data Model).
+   * Als het adaptieve formulier is gebaseerd op een formuliermodel, kunt u een ander formulier kiezen <!-- form template, --> XML- of JSON-schema of FDM (Form Data Model) voor hetzelfde formuliermodel.
 
 1. Selecteren **[!UICONTROL Save]** om de eigenschappen op te slaan.
 
@@ -195,8 +195,8 @@ U kunt ook de eigenschappen van het formuliermodel wijzigen in de editor voor ad
 1. Klikken ![Pictogram configureren](/help/forms/assets/configure-icon.svg) pictogram om het **[!UICONTROL Properties]** van de container Adaptief formulier.
 1. Selecteer de **[!UICONTROL Data Model]** en voert u een van de volgende handelingen uit:
 
-   * Als het adaptieve formulier geen formuliermodel heeft, kunt u een formuliermodel kiezen en dienovereenkomstig <!-- a form template, --> XML- of JSON-schema of formuliergegevensmodel.
-   * Als het adaptieve formulier is gebaseerd op een formuliermodel, kunt u het formuliermodel niet wijzigen. U kunt een andere optie kiezen <!-- form template, --> XML- of JSON-schema of Formuliergegevensmodel voor hetzelfde formuliermodel als van toepassing.
+   * Als het adaptieve formulier geen formuliermodel heeft, kunt u een formuliermodel kiezen en dienovereenkomstig <!-- a form template, --> XML- of JSON-schema of FDM (Form Data Model).
+   * Als het adaptieve formulier is gebaseerd op een formuliermodel, kunt u het formuliermodel niet wijzigen. U kunt een andere optie kiezen <!-- form template, --> XML- of JSON-schema of FDM (Form Data Model) voor hetzelfde formuliermodel als van toepassing.
 1. Selecteren ![Opslaan](/help/forms/assets/check-button.png) om de eigenschappen op te slaan.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

@@ -3,9 +3,9 @@ title: Hoe krijg je referentiethema's en sjablonen voor AEM formulieren?
 description: AEM Forms biedt voorbeelden van adaptieve formulierthema's, sjablonen en formuliergegevensmodellen om u te helpen snel formulieren te maken.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,12 @@ ht-degree: 0%
 
 <span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
-AEM Forms as a Cloud Service biedt meerdere referentiethema&#39;s, sjablonen en formuliergegevensmodellen waarmee u snel kunt beginnen met het maken van Adaptief Forms. U kunt de [referentie-inhoudspakket van de portal voor softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en gebruiken de [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) om de [inhoudsopgave-pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in uw productie-, ontwikkelings- of lokale ontwikkelomgeving om deze referentie-elementen naar uw omgeving te brengen.
+AEM Forms as a Cloud Service biedt meerdere referentiethema&#39;s, sjablonen en FDM (Form Data Model) waarmee u snel Adaptive Forms kunt gaan maken. U kunt de [referentie-inhoudspakket van de portal voor softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) en gebruiken de [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) om de [inhoudsopgave-pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) in uw productie-, ontwikkelings- of lokale ontwikkelomgeving om deze referentie-elementen naar uw omgeving te brengen.
 
-De thema&#39;s, sjablonen en modellen van formuliergegevens die in het pakket met referentie-inhoud zijn opgenomen, zijn:
+De thema&#39;s, de malplaatjes, en het model van vormgegevens (FDM) omvatten het verwijzingsinhoudspakket zijn:
 
 
-| Thema&#39;s | Sjablonen | Formuliergegevensmodellen |
+| Thema&#39;s | Sjablonen | Formuliergegevensmodel (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | Basis | Microsoft Dynamics 365 |
 | Tranquil | Leeg | Salesforce |
@@ -112,16 +112,16 @@ In het FSI-thema wordt de nadruk gelegd op een minimalistisch en functioneel uit
 Met de standaardsjabloon kunt u snel een inschrijvingsformulier maken. U kunt deze ook gebruiken om een voorvertoning weer te geven van de functionaliteit van Aanpassings Forms-stichtingscomponenten. Het verstrekt een tovenaar lay-out voor sectie-door-sectie presentatie van gegevens. Gebruik de sjabloon Blanco om een adaptief formulier te maken op een leeg canvas.
 
 
-## Referentieformuliergegevensmodellen {#reference-models}
+## Referentieformuliergegevensmodel (FDM) {#reference-models}
 
 De Adaptive Forms kan vervolgens communiceren met Microsoft Dynamics 365 en Salesforce-servers om bedrijfsworkflows mogelijk te maken. Bijvoorbeeld:
 
 * Schrijf gegevens naar Microsoft Dynamics 365 en Salesforce bij het verzenden van adaptieve formulieren.
-* Schrijf gegevens in de Dynamica 365 van Microsoft en Salesforce door douaneentiteiten die in het Model van de Gegevens van de Vorm worden bepaald en omgekeerd.
+* Schrijf gegevens in de Dynamica 365 van Microsoft en Salesforce door douaneentiteiten die in het Model van de Gegevens van de Vorm (FDM) worden bepaald en omgekeerd.
 * Vraag Microsoft Dynamics 365 en Salesforce-server naar gegevens en vul Adaptive Forms vooraf in.
 * Lees gegevens van Microsoft Dynamics 365 en Salesforce-server.
 
-U kunt de volgende modellen van de Gegevens van het Vorm krijgen door te installeren [Referentie-inhoudspakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+U kunt het volgende Model van de Gegevens van het Vorm krijgen (FDM) door het [Referentie-inhoudspakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce

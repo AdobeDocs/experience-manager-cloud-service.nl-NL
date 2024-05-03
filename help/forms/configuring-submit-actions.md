@@ -3,9 +3,9 @@ title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3710'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Er wordt een handeling Verzenden geactiveerd wanneer een gebruiker op de knop **
 
 * [Verzenden naar REST-eindpunt](#submit-to-rest-endpoint)
 * [E-mail verzenden](#send-email)
-* [Verzenden met gebruik van formuliergegevensmodel](#submit-using-form-data-model)
+* [Verzenden met FDM (Form Data Mode)](#submit-using-form-data-model)
 * [Een AEM-workflow aanroepen](#invoke-an-aem-workflow)
 * [Verzenden naar SharePoint](#submit-to-sharedrive)
 * [Verzenden naar OneDrive](#submit-to-onedrive)
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Verzenden met gebruik van formuliergegevensmodel {#submit-using-form-data-model}
+## Verzenden met gebruik van FDM (Form Data Model) {#submit-using-form-data-model}
 
-De **[!UICONTROL Submit using Form Data Model]** Met Actie verzenden worden verzonden Adaptieve formuliergegevens voor het opgegeven gegevensmodelobject in een formuliergegevensmodel naar de gegevensbron. Wanneer u de handeling Verzenden configureert, kunt u een gegevensmodelobject kiezen waarvan de verzonden gegevens u naar de gegevensbron wilt schrijven.
+De **[!UICONTROL Submit using Form Data Model]** Met Actie verzenden worden verzonden Adaptieve formuliergegevens voor het opgegeven gegevensmodelobject in een Form Data Model (FDM) naar de gegevensbron. Wanneer u de handeling Verzenden configureert, kunt u een gegevensmodelobject kiezen waarvan de verzonden gegevens u naar de gegevensbron wilt schrijven.
 
-Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron. Zie voor informatie over het formuliergegevensmodel [[!DNL AEM Forms] Gegevensintegratie](data-integration.md).
+Daarnaast kunt u een formulierbijlage verzenden met een formuliergegevensmodel (FDM) en een Document of Record (DoR) naar de gegevensbron. Voor informatie over het model van vormgegevens (FDM), zie [[!DNL AEM Forms] Gegevensintegratie](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -243,7 +243,7 @@ De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/mo
 Als u de opdracht [!UICONTROL Submit to SharePoint List] Actie verzenden in een adaptieve vorm:
 
 1. [Een SharePoint List-configuratie maken](#create-sharepoint-list-configuration): AEM Forms wordt aangesloten op uw Microsoft® Sharepoint List Storage.
-1. [Verzenden met gebruik van het formuliergegevensmodel in een adaptief formulier gebruiken](#use-submit-using-fdm): Het maakt een verbinding tussen uw Adaptief formulier en de geconfigureerde Microsoft® SharePoint.
+1. [Verzenden met gebruik van FDM (Form Data Model) in een adaptief formulier](#use-submit-using-fdm): Het maakt een verbinding tussen uw Adaptief formulier en de geconfigureerde Microsoft® SharePoint.
 
 #### Een SharePoint List-configuratie maken {#create-sharepoint-list-configuration}
 
@@ -267,14 +267,14 @@ AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
 1. Selecteren **[!UICONTROL Create]** om de cloudconfiguratie voor de Microsoft® SharePointList te maken.
 
 
-#### Verzenden met gebruik van het formuliergegevensmodel in een adaptief formulier gebruiken {#use-submit-using-fdm}
+#### Verzenden met gebruik van FDM (Form Data Model) in een adaptief formulier {#use-submit-using-fdm}
 
 U kunt de gemaakte SharePoint List-configuratie in een adaptief formulier gebruiken om gegevens of het gegenereerde Document of Record in een SharePoint-lijst op te slaan. Voer de volgende stappen uit om een SharePoint List-opslagconfiguratie in een adaptief formulier te gebruiken als:
 
-1. [Een formuliergegevensmodel maken met de configuratie Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
-1. [Het formuliergegevensmodel configureren voor het ophalen en verzenden van gegevens](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Een formuliergegevensmodel (FDM) maken met de configuratie Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
+1. [Vorm het Model van de Gegevens van de Vorm (FDM) om gegevens terug te winnen en te verzenden](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Een adaptief formulier maken](/help/forms/creating-adaptive-form.md)
-1. [Verzendactie configureren met een formuliergegevensmodel](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Verzendactie configureren met een FDM (Form Data Model)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® Sharepoint List Storage.
 
@@ -462,7 +462,7 @@ Auteurs kunnen de aangepaste JavaScript-bibliotheek configureren per adaptief fo
 
 Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 400.jsp, 404.jsp, en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 400, 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht. U kunt ook JSP-pagina&#39;s maken voor andere HTTP-foutcodes.
 
-Wanneer u een formuliergegevensmodel of een op schema gebaseerde adaptieve vorm met XML- of JSON-gegevensklacht vooraf instelt op een schema dat geen gegevens bevat `<afData>`, `<afBoundData>`, en `</afUnboundData>` -tags, gaan de gegevens van niet-begrensde velden van het adaptieve formulier verloren. Het schema kan een XML-schema, JSON-schema of een formuliergegevensmodel zijn. Niet-begrensde velden zijn adaptieve formuliervelden zonder de `bindref` eigenschap.
+Wanneer u een model van vormgegevens (FDM), of schema gebaseerde Aangepaste Vorm met XML of JSON gegevensklacht aan een schema vooraf instelt dat geen gegevens bevat `<afData>`, `<afBoundData>`, en `</afUnboundData>` -tags, gaan de gegevens van niet-begrensde velden van het adaptieve formulier verloren. Het schema kan een XML-schema, JSON-schema of een formuliergegevensmodel (FDM) zijn. Niet-begrensde velden zijn adaptieve formuliervelden zonder de `bindref` eigenschap.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

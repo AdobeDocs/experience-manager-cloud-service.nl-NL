@@ -3,16 +3,16 @@ title: Hoe krijg je referentiethema's voor adaptieve formulieren op basis van st
 description: Gebruik de referentiemethoden voor adaptieve formulieren, sjablonen en formuliergegevens om snel aan de slag te gaan.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
 
 # Referentiemiddelen voor Forms as a Cloud Service {#reference-themes}
 
-U kunt de referentiethema&#39;s, sjablonen en formuliergegevensmodellen ophalen door de [Verwijzingsmiddelenpakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Het helpt u om snel uw Adaptieve Forms-ontwikkeling te starten en te versnellen. U kunt [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) om dit pakket te implementeren in uw as a Cloud Service AEM Forms-omgeving.
+U kunt de referentiethema&#39;s, sjablonen en het formuliergegevensmodel (FDM) ophalen door de [Verwijzingsmiddelenpakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Het helpt u om snel uw Adaptieve Forms-ontwikkeling te starten en te versnellen. U kunt [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) om dit pakket te implementeren in uw as a Cloud Service AEM Forms-omgeving.
 
 De referentieelementen die in het pakket zijn opgenomen, zijn:
 
@@ -115,7 +115,7 @@ Met de basissjabloon kunt u snel een inschrijvingsformulier maken.
 
 De basissjabloon biedt een leeg canvas voor het maken van een initiële structuur voor adaptieve formulieren voor uw organisatie.
 
-## Formuliergegevensmodellen
+## Formuliergegevensmodel (FDM)
 
 ### Microsoft® Dynamics 365
 

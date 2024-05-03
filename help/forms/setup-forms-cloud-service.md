@@ -4,9 +4,9 @@ description: Leer instellen en configureren van een [!DNL AEM Forms] as a Cloud 
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '606'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 * **Gebruikerservaring (UX) Designer**: In een UX-Designer (User Experience) worden stijl, lay-out en branding gedefinieerd voor [!DNL AEM Forms] activa.
 
-* **Forms-expert**: Een Forms-expert maakt Adaptief Forms, thema&#39;s en sjablonen op basis van de stijl, lay-out en branding die door UX Designer worden geboden. De deskundige creeert en integreert ook Aangepast Vorm met een Model van de Gegevens van het Vorm en AEM Workflows. Een Forms Practitioner voert gewoonlijk aan de voorzijde gerelateerde taken uit.
+* **Forms-expert**: Een Forms-expert maakt Adaptief Forms, thema&#39;s en sjablonen op basis van de stijl, lay-out en branding die door UX Designer worden geboden. De deskundige creeert en integreert ook Aangepast Vorm met een Model van de Gegevens van het Vorm (FDM) en AEM Workflows. Een Forms Practitioner voert gewoonlijk aan de voorzijde gerelateerde taken uit.
 
 * **Forms developer**: Een Forms-ontwikkelaar ontwikkelt een aangepaste formulieroplossing. Een Forms-ontwikkelaar ontwikkelt zich doorgaans op de achtergrond, zoals het ontwikkelen van aangepaste componenten, AEM workflows, services die vooraf zijn ingevuld en nog veel meer.
 

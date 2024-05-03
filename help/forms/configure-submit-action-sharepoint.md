@@ -3,13 +3,13 @@ Title: How to send data to a SharePoint storage on submission of an Adaptive For
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
 keywords: Hoe verbindt u SharePoint-lijst met een adaptief formulier?, Hoe verbindt u een SharePoint-documentbibliotheek met een adaptief formulier, Verzenden naar SharePoint, Een SharePoint-documentbibliotheek maken, Verzenden naar SharePoint gebruiken in een adaptief formulier, Een adaptief formulier verbinden met Microsoft&reg, SharePoint List.
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: e925a750-5fb5-4950-afd3-78551eec985d
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptief formulier aansluiten op Microsoft® SharePoint
 
@@ -93,7 +93,7 @@ De mapstructuur voor het opslaan van gegevens is `/folder_name/form_name/year/mo
 Als u de opdracht [!UICONTROL Submit to SharePoint List] Actie verzenden in een adaptieve vorm:
 
 1. [Een SharePoint List-configuratie maken](#create-sharepoint-list-configuration): AEM Forms wordt aangesloten op uw Microsoft® Sharepoint List Storage.
-1. [Verzenden met gebruik van het formuliergegevensmodel in een adaptief formulier gebruiken](#use-submit-using-fdm): Het maakt een verbinding tussen uw Adaptief formulier en de geconfigureerde Microsoft® SharePoint.
+1. [Verzenden met gebruik van FDM (Form Data Model) in een adaptief formulier](#use-submit-using-fdm): Het maakt een verbinding tussen uw Adaptief formulier en de geconfigureerde Microsoft® SharePoint.
 
 ### Een SharePoint List-configuratie maken {#create-sharepoint-list-configuration}
 
@@ -117,24 +117,24 @@ AEM Forms verbinden met uw Microsoft® SharePoint-lijst:
 1. Selecteren **[!UICONTROL Create]** om de cloudconfiguratie voor de Microsoft® SharePointList te maken.
 
 
-### Verzenden met gebruik van het formuliergegevensmodel in een adaptief formulier gebruiken {#use-submit-using-fdm}
+### Verzenden met gebruik van FDM (Form Data Model) in een adaptief formulier {#use-submit-using-fdm}
 
 U kunt de gemaakte SharePoint List-configuratie in een adaptief formulier gebruiken om gegevens of het gegenereerde Document of Record in een SharePoint-lijst op te slaan. Voer de volgende stappen uit om een SharePoint-lijst in een adaptief formulier te gebruiken als:
 
-1. [Een formuliergegevensmodel maken met Microsoft](/help/forms/create-form-data-models.md)
-1. [Het formuliergegevensmodel configureren voor het ophalen en verzenden van gegevens](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Een formuliergegevensmodel (FDM) maken met Microsoft](/help/forms/create-form-data-models.md)
+1. [Vorm het Model van de Gegevens van de Vorm (FDM) om gegevens terug te winnen en te verzenden](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
-1. [Verzendactie configureren met een formuliergegevensmodel](/help/forms/using-form-data-model.md)
+1. [Verzendactie configureren met een FDM (Form Data Model)](/help/forms/using-form-data-model.md)
 
 Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven Microsoft® Sharepoint List Storage.
 
 >[!NOTE]
 >
 > In Microsoft® SharePoint List worden de volgende kolomtypen niet ondersteund:
-* afbeeldingskolom
-* metagegevenskolom
-* persoonlijke kolom
-* kolom externe gegevens
+> * afbeeldingskolom
+> * metagegevenskolom
+> * persoonlijke kolom
+> * kolom externe gegevens
 
 ## Verwante artikelen
 

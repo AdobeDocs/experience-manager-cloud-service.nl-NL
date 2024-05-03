@@ -1,18 +1,18 @@
 ---
-title: Hoe kunnen wij het Model van de Gegevens van het Vorm voor een Aangepast Vorm tot stand brengen?
+title: Hoe kunnen wij het Model van de Gegevens van de Vorm (FDM) voor een Aangepast Vorm tot stand brengen?
 description: Leer Adaptieve Forms en Fragments maken op basis van een formuliergegevensmodel (FDM). Voorbeeldgegevens voor gegevensmodelobjecten in de FDM genereren en bewerken.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
 
-# Formuliergegevensmodel gebruiken {#use-form-data-model}
+# Formuliergegevensmodel (FDM) gebruiken {#use-form-data-model}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -22,14 +22,14 @@ ht-degree: 0%
 
 ![gegevensintegratie](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] Met gegevensintegratie kunt u verschillende bronnen van backendgegevens gebruiken om een formuliergegevensmodel te maken dat u als schema kunt gebruiken in verschillende adaptieve Forms <!--and interactive communications--> workflows. Het vereist het vormen van gegevensbronnen en het creëren van het Model van de Gegevens van de Vorm dat op de voorwerpen en de diensten van het gegevensmodel beschikbaar in gegevensbronnen wordt gebaseerd. Raadpleeg de volgende secties voor meer informatie:
+[!DNL Experience Manager Forms] Met gegevensintegratie kunt u verschillende backendgegevensbronnen gebruiken om een FDM (Form Data Model) te maken dat u als schema kunt gebruiken in verschillende Adaptive Forms <!--and interactive communications--> workflows. Het vereist het vormen van gegevensbronnen en het creëren van het Model van de Gegevens van de Vorm (FDM) dat op de voorwerpen en de diensten van het gegevensmodel beschikbaar in gegevensbronnen wordt gebaseerd. Raadpleeg de volgende secties voor meer informatie:
 
 * [[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md)
 * [Gegevensbronnen configureren](configure-data-sources.md)
-* [Formuliergegevensmodel maken](create-form-data-models.md)
-* [Werken met formuliergegevensmodel](work-with-form-data-model.md)
+* [Formuliergegevensmodel maken (FDM)](create-form-data-models.md)
+* [Werken met het formuliergegevensmodel (FDM)](work-with-form-data-model.md)
 
-Een formuliergegevensmodel is een uitbreiding van het JSON-schema waarmee u:
+Een formuliergegevensmodel (FDM) is een uitbreiding van het JSON-schema waarmee u:
 
 * [Adaptieve Forms en fragmenten maken](#create-af)
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
@@ -40,23 +40,23 @@ Een formuliergegevensmodel is een uitbreiding van het JSON-schema waarmee u:
 
 ## Adaptieve Forms en fragmenten maken {#create-af}
 
-U kunt [Adaptieve Forms](creating-adaptive-form.md) en Adaptieve formulierfragmenten <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> op basis van een formuliergegevensmodel. Ga als volgt te werk om een formuliergegevensmodel te gebruiken bij het maken van een adaptief formulier of een adaptief formulierfragment:
+U kunt [Adaptieve Forms](creating-adaptive-form.md) en Adaptieve formulierfragmenten <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> op basis van een formuliergegevensmodel (FDM). Ga als volgt te werk om een FDM (Form Data Model) te gebruiken bij het maken van een adaptief formulier of een adaptief formulierfragment:
 
 1. Selecteer op het tabblad Formuliermodel in het scherm Eigenschappen toevoegen de optie **[!UICONTROL Form Data Model]** in de **[!UICONTROL Select From]** vervolgkeuzelijst.
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Selecteren om uit te breiden **[!UICONTROL Select Form Data Model]**. Alle beschikbare formuliergegevensmodellen worden weergegeven.
+2. Selecteren om uit te breiden **[!UICONTROL Select Form Data Model]**. Alle beschikbare modellen met formuliergegevens (FDM) worden weergegeven.
 
    Selecteer een gegevensmodel.
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-1. (**Alleen adaptieve formulierfragmenten**) U kunt een adaptief formulierfragment maken op basis van slechts één gegevensmodelobject in een formuliergegevensmodel. Uitbreiden **[!UICONTROL Form Data Model Definitions]** vervolgkeuzelijst. Hiermee worden alle gegevensmodelobjecten in het opgegeven formuliergegevensmodel weergegeven. Selecteer een gegevensmodelobject in de lijst.
+3. (**Alleen adaptieve formulierfragmenten**) U kunt een adaptief formulierfragment maken op basis van slechts één gegevensmodelobject in een formuliergegevensmodel (FDM). Uitbreiden **[!UICONTROL Form Data Model Definitions]** vervolgkeuzelijst. Hiermee worden alle gegevensmodelobjecten in het opgegeven formuliergegevensmodel (FDM) weergegeven. Selecteer een gegevensmodelobject in de lijst.
 
    ![create-af-3](assets/create-af-3.png)
 
-   Nadat het adaptieve formulier- of adaptief formulierfragment op basis van een formuliergegevensmodel is gemaakt, worden formuliergegevensmodelobjecten weergegeven in het dialoogvenster **[!UICONTROL Data Sources]** van de inhoudbrowser in de Adaptieve formuliereditor.
+   Nadat het adaptieve formulierfragment of het adaptieve formulierfragment op basis van een formuliergegevensmodel (FDM) is gemaakt, worden formuliergegevensmodelobjecten weergegeven in het dialoogvenster **[!UICONTROL Data Sources]** van de inhoudbrowser in de Adaptieve formuliereditor.
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ For more information, see:
 
 ## Voorvertonen met voorbeeldgegevens {#preview-ic}
 
-Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelobjecten genereren en bewerken in het formuliergegevensmodel. U kunt deze gegevens gebruiken om een voorvertoning weer te geven en te testen <!--interactive communications and--> Adaptieve Forms. U moet de voorbeeldgegevens genereren voordat u een voorvertoning weergeeft zoals beschreven in [Werken met formuliergegevensmodel](work-with-form-data-model.md#sample).
+Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelobjecten genereren en bewerken in het formuliergegevensmodel (FDM). U kunt deze gegevens gebruiken om een voorvertoning weer te geven en te testen <!--interactive communications and--> Adaptieve Forms. U moet de voorbeeldgegevens genereren voordat u een voorvertoning weergeeft zoals beschreven in [Werken met formuliergegevensmodel](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -104,7 +104,7 @@ Als u een voorbeeld van een adaptief formulier wilt bekijken met voorbeeldgegeve
 
 ## Vooraf invullen met service Formuliergegevensmodel {#prefill}
 
-[!DNL Experience Manager Forms] biedt de vooraf ingevulde service voor het out-of-the-box formuliergegevensmodel die u kunt inschakelen voor Adaptive Forms <!--and interactive communications--> op basis van het formuliergegevensmodel. De prefill dienst vraagt gegevensbronnen voor gegevensmodelvoorwerpen in de Aangepaste Vorm <!--and interactive communication--> en voegt daarom gegevens vooraf in tijdens het genereren van het formulier of de communicatie.
+[!DNL Experience Manager Forms] biedt de vooraf ingevulde service voor het out-of-the-box formuliergegevensmodel die u kunt inschakelen voor Adaptive Forms <!--and interactive communications--> op basis van het formuliergegevensmodel (FDM). De prefill dienst vraagt gegevensbronnen voor gegevensmodelvoorwerpen in de Aangepaste Vorm <!--and interactive communication--> en voegt daarom gegevens vooraf in tijdens het genereren van het formulier of de communicatie.
 
 Open de eigenschappen van de container van de Adaptief formulier en selecteer **[!UICONTROL Form Data Model Prefill service]** van de **[!UICONTROL Prefill Service]** in de Basis accordeon. Sla vervolgens de eigenschappen op.
 
@@ -118,7 +118,7 @@ Edit Properties dialog for an interactive communication-->
 
 ## Verzonden adaptieve formuliergegevens naar gegevensbronnen schrijven {#write-af}
 
-Wanneer een gebruiker een formulier verzendt dat is gebaseerd op een formuliergegevensmodel, kunt u het formulier zo configureren dat de verzonden gegevens voor een gegevensmodelobject naar de bijbehorende gegevensbronnen worden geschreven. Om dit te bereiken, [!DNL Experience Manager Forms] verstrekken [Formuliergegevensmodel Handeling verzenden](configuring-submit-actions.md), alleen beschikbaar buiten de verpakking voor Adaptive Forms op basis van een formuliergegevensmodel. Het schrijft voorgelegde gegevens voor een voorwerp van het gegevensmodel in zijn gegevensbron.
+Wanneer een gebruiker een formulier verzendt dat is gebaseerd op een formuliergegevensmodel (FDM), kunt u het formulier zo configureren dat verzonden gegevens voor een gegevensmodelobject naar de gegevensbronnen worden geschreven. Om dit te bereiken, [!DNL Experience Manager Forms] verstrekken [Formuliergegevensmodel Handeling verzenden](configuring-submit-actions.md), alleen beschikbaar buiten de box voor Adaptive Forms op basis van een formuliergegevensmodel (FDM). Het schrijft voorgelegde gegevens voor een voorwerp van het gegevensmodel in zijn gegevensbron.
 
 De handeling Verzenden van het formuliergegevensmodel configureren:
 
@@ -132,7 +132,7 @@ De handeling Verzenden van het formuliergegevensmodel configureren:
 1. Geef de **[!UICONTROL Data model to submit]**.
 1. Klikken **[!UICONTROL Done]**
 
-Bij het verzenden van formulieren worden gegevens voor het geconfigureerde gegevensmodelobject naar de desbetreffende gegevensbron geschreven. Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron. Zie voor informatie over het formuliergegevensmodel [[!DNL AEM Forms] Gegevensintegratie](data-integration.md).
+Bij het verzenden van formulieren worden gegevens voor het geconfigureerde gegevensmodelobject naar de desbetreffende gegevensbron geschreven. Daarnaast kunt u een formulierbijlage verzenden met een formuliergegevensmodel (FDM) en een Document of Record (DoR) naar de gegevensbron. Voor informatie over het model van vormgegevens (FDM), zie [[!DNL AEM Forms] Gegevensintegratie](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
 
@@ -142,18 +142,18 @@ Bij het verzenden van formulieren worden gegevens voor het geconfigureerde gegev
 
 U kunt ook formulierbijlagen verzenden naar een gegevensbron met binaire objecteigenschappen van gegevensmodellen. Ga als volgt te werk om bijlagen naar een JDBC-gegevensbron te verzenden:
 
-1. Voeg een gegevensmodelobject dat een binaire eigenschap bevat toe aan het formuliergegevensmodel.
+1. Voeg een gegevensmodelvoorwerp toe dat een binaire bezit aan het model van vormgegevens (FDM) omvat.
 1. Sleep de knop **[!UICONTROL File Attachment]** van de browser Components naar het adaptieve formulier.
 1. Selecteer de toegevoegde component en selecteer ![settings_icon](assets/configure-icon.svg) om de browser van Eigenschappen voor de component te openen.
-1. Selecteer in het veld Bindverwijzing de optie ![mapSearch_18](assets/folder-search-icon.svg) en navigeer om de binaire eigenschap te selecteren die u in het formuliergegevensmodel hebt toegevoegd. Configureer desgewenst andere eigenschappen.
+1. Selecteer in het veld Bindverwijzing de optie ![mapSearch_18](assets/folder-search-icon.svg) en navigeer om het binaire bezit te selecteren u in het model van vormgegevens (FDM) toevoegde. Configureer desgewenst andere eigenschappen.
 
-   Selecteren ![knop controleren](assets/save_icon.svg) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
+   Selecteren ![knop controleren](assets/save_icon.svg) om de eigenschappen op te slaan. Het gehechtheidsgebied is nu verbindend aan het binaire bezit van het model van vormgegevens (FDM).
 
 1. Schakel in het gedeelte Verzending van de eigenschappen van de container van adaptieve formulieren de optie **[!UICONTROL Submit Form Attachments]**. De bijlage in het binaire-eigenschapveld wordt naar de gegevensbron verzonden bij het verzenden van het formulier.
 
 ## Services aanroepen in Adaptive Forms met behulp van regels {#invoke-services}
 
-In een adaptief formulier op basis van een formuliergegevensmodel kunt u [regels maken](rule-editor.md) om de diensten aan te halen die in het model van vormgegevens worden gevormd. De **[!UICONTROL Invoke Services]** bewerking in een regel bevat een lijst met alle beschikbare services in het formuliergegevensmodel en u kunt invoer- en uitvoervelden voor de service selecteren. U kunt ook de opdracht **[!UICONTROL Set Value]** regeltype om de service Form Data Model aan te roepen en de waarde van een veld in te stellen op de uitvoer die door de service wordt geretourneerd.
+In een adaptief formulier op basis van een formuliergegevensmodel (FDM) kunt u [regels maken](rule-editor.md) om de diensten aan te halen die in het model van vormgegevens (FDM) worden gevormd. De **[!UICONTROL Invoke Services]** De verrichting in een regel maakt een lijst van alle beschikbare diensten in het Model van de Gegevens van de Vorm (FDM) en laat u input en outputgebieden voor de dienst selecteren. U kunt ook de opdracht **[!UICONTROL Set Value]** regeltype om de service Form Data Model aan te roepen en de waarde van een veld in te stellen op de uitvoer die door de service wordt geretourneerd.
 
 Bijvoorbeeld, haalt de volgende regel de dienst aan die Werknemeridentiteitskaart als input neemt en de teruggekeerde waarden in overeenkomstige Afhankelijke identiteitskaart, Familienaam, Voornaam, en Gendergebieden in de vorm worden bevolkt.
 
@@ -161,15 +161,15 @@ Bijvoorbeeld, haalt de volgende regel de dienst aan die Werknemeridentiteitskaar
 
 Daarnaast kunt u de opdracht `guidelib.dataIntegrationUtils.executeOperation` API om een JavaScript in de coderedacteur voor de regelredacteur te schrijven. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
 
-### Een formuliergegevensmodel aanroepen met behulp van aangepaste functies {#invoke-form-data-model-using-custom-functions}
+### Een formuliergegevensmodel (FDM) aanroepen met behulp van aangepaste functies {#invoke-form-data-model-using-custom-functions}
 
-U kunt [een formuliergegevensmodel aanroepen vanuit een regeleditor met behulp van aangepaste functies](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Als u het gegevensmodel van het formulier wilt aanroepen, voegt u een formuliergegevensmodel toe aan de lijst van gewenste personen. Een formuliergegevensmodel toevoegen aan een toegestane lijst:
+U kunt [een formuliergegevensmodel aanroepen vanuit een regeleditor met behulp van aangepaste functies](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Om het model van vormgegevens (FDM) aan te halen voeg een model van vormgegevens aan de lijst van gewenste personen toe. Een formuliergegevensmodel toevoegen aan een toegestane lijst:
 
 1. Ga naar Experience Manager webconsole op `https://server:host/system/console/configMgr`.
 1. Zoeken **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]**.
 1. Klikken ![pluspictogram](/help/forms/assets/Smock_Add_18_N.svg) pictogram om de configuratie toe te voegen.
 1. Toevoegen **[!UICONTROL Content path pattern]** om de locatie van uw Adaptieve Forms op te geven.  De standaardwaarde is `/content/forms/af/(.*)` die alle adaptieve Forms omvat. U kunt ook het pad opgeven voor een specifiek adaptief formulier.
-1. Toevoegen **[!UICONTROL Form Data Model path pattern]** om de locatie van het formuliergegevensmodel op te geven. De standaardwaarde is `/content/dams/formsanddocuments-fdm/(.*)` Dit omvat het gegevensmodel van het formulier. U kunt ook het pad opgeven voor een specifiek formuliergegevensmodel.
+1. Toevoegen **[!UICONTROL Form Data Model path pattern]** om de locatie van het formuliergegevensmodel (FDM) op te geven. De standaardwaarde is `/content/dams/formsanddocuments-fdm/(.*)` met alle FDM (Form Data Model). U kunt ook het pad opgeven voor een specifiek formuliergegevensmodel (FDM).
 1. Sla de instellingen op.
 
 De toegevoegde configuratie wordt opgeslagen onder de **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** -optie.
@@ -178,7 +178,7 @@ De toegevoegde configuratie wordt opgeslagen onder de **[!UICONTROL Adaptive For
 
 >[!NOTE]
 >
-> Om een model van vormgegevens van de regelredacteur aan te halen gebruikend douanefuncties door een AEM archetype project:
+> Om een model van vormgegevens (FDM) van de regelredacteur aan te halen gebruikend douanefuncties door een AEM archetype project:
 >
 >1. [Een configuratiebestand maken](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
 >1. Stel eigenschappen van getContentPathPattern en getFormDataModelPathPattern in.

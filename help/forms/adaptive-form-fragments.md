@@ -7,9 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
@@ -173,7 +174,7 @@ U kunt een formulierfragment op basis van een schema meerdere keren gebruiken in
 
 >[!NOTE]
 >
-> Als u op geen gebaseerde formulierfragmenten meerdere keren in een adaptief formulier gebruikt, treedt er een probleem op met gegevenssynchronisatie tussen de velden van de fragmenten. U kunt een op een [kerncomponent gebaseerde formulierfragment](/help/forms/adaptive-form-fragments-core-components.md) dat niet is gekoppeld aan een formuliergegevensmodel, meerdere keren in een formulier gebruiken zonder problemen met gegevenssynchronisatie te ondervinden.
+> Als u op geen gebaseerde formulierfragmenten meerdere keren in een adaptief formulier gebruikt, treedt er een probleem op met gegevenssynchronisatie tussen de velden van de fragmenten. U kunt een op een [kerncomponent gebaseerde formulierfragment](/help/forms/adaptive-form-fragments-core-components.md) dat niet is gekoppeld aan een formuliergegevensmodel (FDM) gebruiken, meerdere keren op een formulier zonder problemen met gegevenssynchronisatie te ondervinden.
 
 ## Automatische toewijzing van fragmenten voor gegevensbinding {#auto-mapping-of-fragments-for-data-binding}
 
@@ -251,7 +252,7 @@ Als u een adaptief formulier met adaptieve formulierfragmenten wilt lokaliseren,
 * Zorg ervoor dat de fragmentnaam uniek is. Het fragment kan niet worden gemaakt als er een bestaand fragment met dezelfde naam bestaat.
 * Als u in een op XDP gebaseerd adaptief formulier een deelvenster opslaat als fragment dat een ander XDP-fragment bevat, wordt het resulterende fragment automatisch gebonden aan het onderliggende XDP-fragment. In het geval van een op XSD gebaseerde adaptieve vorm, wordt het resulterende fragment gebonden aan de schemawortel.
 * Wanneer u een adaptief formulierfragment maakt, wordt in CRXDe Lite een fragmentknooppunt gemaakt, dat vergelijkbaar is met het knooppunt guideContainer voor een adaptief formulier.
-* Een fragment in een adaptief formulier dat een ander formuliergegevensmodel gebruikt, wordt niet ondersteund. Een XDP-fragment wordt bijvoorbeeld niet ondersteund in een XSD-gebaseerd adaptief formulier en omgekeerd.
+* Een fragment in een adaptief formulier dat een ander formuliergegevensmodel (FDM) gebruikt, wordt niet ondersteund. Een XDP-fragment wordt bijvoorbeeld niet ondersteund in een XSD-gebaseerd adaptief formulier en omgekeerd.
 * Adaptieve formulierfragmenten zijn beschikbaar voor gebruik via het tabblad Adaptieve formulierfragmenten in AEM zoekfunctie.
 * Expressies, scripts of stijlen in een zelfstandig adaptief formulierfragment blijven behouden wanneer deze via verwijzing worden ingevoegd of in een adaptief formulier worden ingesloten.
 * U kunt een adaptief formulierfragment, dat via verwijzing wordt ingevoegd, niet bewerken vanuit een adaptief formulier. Als u het fragment wilt bewerken, bewerkt u het zelfstandige adaptieve formulierfragment of sluit u het fragment in het adaptieve formulier in.

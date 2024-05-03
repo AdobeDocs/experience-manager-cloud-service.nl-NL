@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Gebruik AEM werkstromen, gebruik taakstappen, zet om in stap PDF/A, produceer document van geregistreerde stap, gebruik werkschema's, de stap van het Document van het Ondertekenen, produceer gedrukte outputstap, produceer niet interactieve PDF output
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '6718'
+source-wordcount: '6730'
 ht-degree: 0%
 
 ---
@@ -85,12 +85,12 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **[!UICONTROL For completed task, render the Adaptive Form as]**: Als een taak is gemarkeerd als voltooid, kunt u het adaptieve formulier weergeven als een alleen-lezen adaptief formulier of als een PDF-document. U hebt een Document of Record-optie ingeschakeld of op een formuliersjabloon gebaseerde Adaptieve Forms nodig om het Adaptief formulier weer te geven als Document of Record.
 * **[!UICONTROL Pre-populated]**: De volgende velden die hieronder worden vermeld, dienen als invoer voor de taak:
 
-   * **[!UICONTROL Select input data file using]**: Pad van invoergegevensbestand (.json, .xml, .doc of formuliergegevensmodel). U kunt het invoergegevensbestand terugwinnen gebruikend een weg die met betrekking tot de lading is of het dossier terugwinnen dat in een variabele van Document, XML, of gegevenstype JSON wordt opgeslagen. Het bestand bevat bijvoorbeeld de gegevens die via een AEM Inbox-toepassing voor het formulier zijn verzonden. Een voorbeeldpad is [Payload_Directory]/workflow/gegevens.
+   * **[!UICONTROL Select input data file using]**: Het pad van het invoergegevensbestand (.json, .xml, .doc of het formuliergegevensmodel (FDM)). U kunt het invoergegevensbestand terugwinnen gebruikend een weg die met betrekking tot de lading is of het dossier terugwinnen dat in een variabele van Document, XML, of gegevenstype JSON wordt opgeslagen. Het bestand bevat bijvoorbeeld de gegevens die via een AEM Inbox-toepassing voor het formulier zijn verzonden. Een voorbeeldpad is [Payload_Directory]/workflow/gegevens.
    * **[!UICONTROL Select input attachments using]**: Op de locatie beschikbare bijlagen worden gekoppeld aan het formulier dat aan de taak is gekoppeld. Het pad kan relatief zijn ten opzichte van de lading of de bijlage ophalen die is opgeslagen in een variabele van een document. Een voorbeeldpad is [Payload_Directory]/bijlagen/. U kunt bijlagen opgeven die relatief zijn ten opzichte van de lading of een variabele van het documenttype (Array-lijst > Document) gebruiken om een invoerbijlage op te geven voor het adaptieve formulier.
 
   <!-- 
     
-    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
@@ -108,13 +108,13 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 * **[!UICONTROL Submitted information]**: De volgende velden die hieronder worden vermeld, fungeren als uitvoerlocaties voor de taak:
 
-   * **[!UICONTROL Save output data file using]**: Sla het gegevensbestand op (.json, .xml, .doc of het formuliergegevensmodel). Het gegevensbestand bevat informatie die via het bijbehorende formulier is verzonden. U kunt het uitvoergegevensbestand opslaan met een pad dat relatief is ten opzichte van de lading of dit opslaan in een variabele van het gegevenstype Document, XML of JSON. Bijvoorbeeld: [Payload_Directory]/Workflow/data, waarbij de gegevens een bestand zijn.
+   * **[!UICONTROL Save output data file using]**: Sla het gegevensbestand op (.json, .xml, .doc of FDM (form data model)). Het gegevensbestand bevat informatie die via het bijbehorende formulier is verzonden. U kunt het uitvoergegevensbestand opslaan met een pad dat relatief is ten opzichte van de lading of dit opslaan in een variabele van het gegevenstype Document, XML of JSON. Bijvoorbeeld: [Payload_Directory]/Workflow/data, waarbij de gegevens een bestand zijn.
    * **[!UICONTROL Save attachments using]**: Sla de formulierbijlagen in een taak op. U kunt de bijlagen opslaan met een pad dat relatief is ten opzichte van de lading of deze opslaan in een arraylijst van het gegevenstype Document.
    * **[!UICONTROL Save Document of Record using]**: Pad om een document van een recordbestand op te slaan. Bijvoorbeeld: [Payload_Directory]/DocumentofRecord/credit-card.pdf. U kunt het Document van Verslag bewaren gebruikend een weg die met betrekking tot de lading is of het opslaan in een variabele van het gegevenstype van het Document. Als u **[!UICONTROL Relative to Payload]** wordt het document of record niet gegenereerd als het padveld leeg blijft. Deze optie is alleen beschikbaar als u Adaptief formulier selecteert in de vervolgkeuzelijst Type.
 
   <!-- 
     
-    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
     
@@ -273,9 +273,9 @@ De aanroepende DDX-stap heeft de volgende eigenschappen:
 * **[!UICONTROL Save Output in Payload]**: Hiermee slaat u uitvoerdocumenten op onder de payload-map of overschrijft u de payload, voor het geval dat de payload een bestand is.
 * **[!UICONTROL Output Document's Map]**: geeft de locatie op waar elk documentbestand expliciet moet worden opgeslagen door één item per document toe te voegen. Elk item vertegenwoordigt het document en de locatie waar het moet worden opgeslagen. Als er meerdere uitvoerdocumenten zijn, wordt deze optie gebruikt.
 
-## De stap Service van het formuliergegevensmodel aanroepen {#invoke-form-data-model-service-step}
+## FDM-service (Form Data Model) aanroepen {#invoke-form-data-model-service-step}
 
-U kunt [[!DNL AEM Forms] Gegevensintegratie](data-integration.md) om te vormen en met ongelijksoortige gegevensbronnen te verbinden. Deze gegevensbronnen kunnen de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. [!DNL AEM Forms] De Integratie van gegevens laat u een Model van de Gegevens van de Vorm creëren dat de diverse diensten omvat om gegevensherwinning, toevoeging, het bijwerken verrichtingen op het gevormde gegevensbestand uit te voeren. U kunt de **[!UICONTROL Invoke Data Model Service step]** om een Model van de Gegevens van de Vorm (FDM) te selecteren en de diensten van FDM te gebruiken om, gegevens terug te winnen bij te werken of toe te voegen aan ongelijksoortige gegevensbronnen.
+U kunt [[!DNL AEM Forms] Gegevensintegratie](data-integration.md) om te vormen en met ongelijksoortige gegevensbronnen te verbinden. Deze gegevensbronnen kunnen de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. [!DNL AEM Forms] De Integratie van gegevens laat u een Model van de Gegevens van de Vorm (FDM) creëren dat diverse diensten omvat om gegevensherwinning, toevoeging, het bijwerken verrichtingen op het gevormde gegevensbestand uit te voeren. U kunt de **[!UICONTROL Invoke Data Model Service step]** om een Model van de Gegevens van de Vorm (FDM) te selecteren en de diensten van FDM te gebruiken om, gegevens terug te winnen bij te werken of toe te voegen aan ongelijksoortige gegevensbronnen.
 
 Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbestandlijst en het dossier JSON gebruikt als voorbeeld:
 
@@ -330,14 +330,14 @@ Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbest
   }
 ```
 
-Voor de stap Service van het formuliergegevensmodel aanroepen worden de onderstaande velden weergegeven om bewerkingen in het formuliergegevensmodel te vergemakkelijken:
+De stap FDM (Invoke Form Data Model)-service bevat de onderstaande velden om FDM-bewerkingen (Form Data Model) te vergemakkelijken:
 
 * **[!UICONTROL Title]**: Titel van de stap. Hiermee kunt u de stappen in de werkstroomeditor identificeren.
 * **[!UICONTROL Description]**: Uitleg nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
 
-* **[!UICONTROL Form Data Model Path]**: Blader en selecteer een formuliergegevensmodel dat op de server aanwezig is.
+* **[!UICONTROL Form Data Model Path]**: Blader naar een formuliergegevensmodel (FDM) op de server en selecteer dit.
 
-* **[!UICONTROL Errors and Validations]**: Met deze optie kunt u foutberichten vastleggen en validatieopties opgeven voor gegevens die zijn opgehaald en naar gegevensbronnen worden verzonden. Met deze veranderingen, kunt u gegevens verzekeren die tot de Invoke stap van de Dienst van het Gegevensmodel van de Vorm worden overgegaan voldoet aan de gegevensbeperkingen die door de gegevensbron worden bepaald. Zie voor meer informatie [Geautomatiseerde validatie van invoergegevens](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Errors and Validations]**: Met deze optie kunt u foutberichten vastleggen en validatieopties opgeven voor gegevens die zijn opgehaald en naar gegevensbronnen worden verzonden. Met deze veranderingen, kunt u gegevens verzekeren die tot de Invoke stap van de Dienst van de Gegevens van de Vorm van de Vorm (FDM) worden overgegaan voldoet aan de gegevensbeperkingen die door de gegevensbron worden bepaald. Zie voor meer informatie [Geautomatiseerde validatie van invoergegevens](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Validation level]**: Er zijn drie validatiecategorieën: Standaard, Volledig en UIT:
 
@@ -353,7 +353,7 @@ Voor de stap Service van het formuliergegevensmodel aanroepen worden de ondersta
 
 * **[!UICONTROL Store Error Details in Variable]**: U kunt foutgegevens opslaan in een [JSON-type variabele](variable-in-aem-workflows.md).
 
-* **[!UICONTROL Service]**: Lijst met services die worden geleverd door het geselecteerde formuliergegevensmodel.
+* **[!UICONTROL Service]**: Lijst van de diensten die het geselecteerde Model van de Gegevens van de Vorm (FDM) verleent.
 * **[!UICONTROL Input for services]** > **[!UICONTROL Provide input data using literal, variable, or workflow metadata, and a JSON file]**: Een service kan meerdere argumenten hebben. Selecteer de optie om de waarde van de de dienstargumenten van een werkschemabezit, een voorwerp JSON, een variabele te verkrijgen, of direct de waarde in het verstrekte tekstvakje in te gaan:
 
    * **[!UICONTROL Literal]**: Gebruik de optie wanneer u precies weet welke waarde u moet opgeven. Bijvoorbeeld srose@we.info.
@@ -365,16 +365,16 @@ Voor de stap Service van het formuliergegevensmodel aanroepen worden de ondersta
      Bijvoorbeeld als de map Relatief aan Payload in de CRX-opslagplaats een bestandsbijlage bevat in de `attachment\attachment-folder` locatie, opgeven `attachment\attachment-folder` in het tekstvak nadat u de **[!UICONTROL Relative to Payload]** -optie.
 
    * **[!UICONTROL JSON Dot Notation]**: Gebruik de optie wanneer de te gebruiken waarde zich in een JSON-bestand bevindt. Bijvoorbeeld verzekering.customerDetails.emailAddress. De optie JSON-puntnotatie is alleen beschikbaar als invoervelden toewijzen van de JSON-invoeroptie is geselecteerd.
-   * **[!UICONTROL Map input fields from input JSON]**: Geef het pad van een JSON-bestand op om de invoerwaarde van bepaalde serviceargumenten op te halen uit het JSON-bestand. Het pad van het JSON-bestand kan relatief zijn ten opzichte van de payload, een absoluut pad, of u kunt een invoer-JSON-document selecteren met een variabele van het type JSON of Formuliergegevensmodel.
+   * **[!UICONTROL Map input fields from input JSON]**: Geef het pad van een JSON-bestand op om de invoerwaarde van bepaalde serviceargumenten op te halen uit het JSON-bestand. Het pad van het JSON-bestand kan relatief zijn ten opzichte van de payload, een absoluut pad, of u kunt een invoer-JSON-document selecteren met een variabele van het type JSON of Form Data Model (FDM).
 
 * **[!UICONTROL Input for services]** > **[!UICONTROL Provide input data using variable or a JSON file]**: Selecteer de optie om waarden voor alle argumenten op te halen uit een JSON-bestand dat is opgeslagen op een absoluut pad, een pad dat relatief is ten opzichte van de payload of een variabele.
-* **[!UICONTROL Select Input JSON document using]**: Het JSON-bestand met waarden voor alle serviceargumenten. Het pad van het JSON-bestand kan **[!UICONTROL relative to the payload]** of een **[!UICONTROL absolute path]**. U kunt het invoer-JSON-document ook ophalen met behulp van een variabele van het gegevenstype JSON of Form Data Model.
+* **[!UICONTROL Select Input JSON document using]**: Het JSON-bestand met waarden voor alle serviceargumenten. Het pad van het JSON-bestand kan **[!UICONTROL relative to the payload]** of een **[!UICONTROL absolute path]**. U kunt het invoer-JSON-document ook ophalen met behulp van een variabele van het gegevenstype JSON of Form Data Model (FDM).
 
 * **[!UICONTROL JSON Dot Notation]**: Laat het veld leeg als u alle objecten van het opgegeven JSON-bestand als invoer voor serviceargumenten wilt gebruiken. Als u een specifiek JSON-object uit het opgegeven JSON-bestand wilt lezen als invoer voor serviceargumenten, geeft u puntnotatie voor het JSON-object op. Als u bijvoorbeeld een JSON-object hebt dat vergelijkbaar is met de JSON-object dat aan het begin van de sectie wordt vermeld, geeft u Insurance.customerDetails op om alle details van een klant als invoer voor de service op te geven.
 * **[!UICONTROL Output of service]** > **[!UICONTROL Map and write output values to variable or metadata]**: Selecteer de optie om de uitvoerwaarden op te slaan als eigenschappen van het metagegevensknooppunt voor workflowinstanties in de crx-repository. Specificeer de naam van het meta-gegevensbezit en selecteer het overeenkomstige attribuut van de de dienstoutput dat met het meta-gegevensbezit moet worden in kaart gebracht, bijvoorbeeld, phone_number dat door de outputdienst met het phone_number bezit van werkschemameta-gegevens is teruggekeerd. Op dezelfde manier kunt u de uitvoer opslaan in een variabele van het gegevenstype Long. Wanneer u een eigenschap voor de **[!UICONTROL Service output attribute to be mapped]** optie, alleen variabelen die gegevens van de geselecteerde eigenschap kunnen opslaan, worden gevuld voor de **[!UICONTROL Save the output to]** -optie.
 
 * **[!UICONTROL Output of service]** > **[!UICONTROL Save output to variable or a JSON file]**: Selecteer de optie om de uitvoerwaarden in een JSON-bestand op te slaan met een absoluut pad, een pad dat relatief is ten opzichte van de payload of een variabele.
-* **[!UICONTROL Save Output JSON document using below options]**: Sla het JSON-uitvoerbestand op. Het pad van het JSON-uitvoerbestand kan relatief zijn ten opzichte van de payload of een absoluut pad. U kunt het JSON-uitvoerbestand ook opslaan met een variabele van het gegevenstype JSON of Form Data Model.
+* **[!UICONTROL Save Output JSON document using below options]**: Sla het JSON-uitvoerbestand op. Het pad van het JSON-uitvoerbestand kan relatief zijn ten opzichte van de payload of een absoluut pad. U kunt het JSON-uitvoerbestand ook opslaan met een variabele van het gegevenstype JSON of Form Data Model (FDM).
 
 
 

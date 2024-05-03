@@ -1,13 +1,13 @@
 ---
 title: Hoe te om Gegevensbronnen te vormen?
-description: Leer hoe u RESTful-webservices, SOAP-webservices en OData-services configureert als gegevensbronnen voor een formuliergegevensmodel.
+description: Leer hoe te om RESTful Webdiensten, op SOAP-Gebaseerde Webdiensten, en de diensten van OData als gegevensbronnen voor een model van vormgegevens (FDM) te vormen.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1958'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ U kunt relationele databases configureren met [!DNL Experience Manager] Webconso
 
 1. Selecteren **[!UICONTROL Save]** om de configuratie op te slaan.
 
-Nu kunt u de geconfigureerde relationele database gebruiken met uw formuliergegevensmodel.
+Nu, kunt u het gevormde relationele gegevensbestand met uw Model van de Gegevens van het Vorm (FDM) gebruiken.
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -84,7 +84,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model (FDM). Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -95,7 +95,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
    >[!NOTE]
    >
-   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
+   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
 1. Select **[!UICONTROL Save]** to save the configuration. -->
 
@@ -178,13 +178,13 @@ Sommige bewerkingen die niet worden ondersteund door RESTful-services Open API S
 
 Zie [OpenAPI 3.0-specificatie](https://swagger.io/specification/v3/) voor nadere informatie.
 
-### Het model van de gegevens van de vormHTTP cliëntconfiguratie om prestaties te optimaliseren {#fdm-http-client-configuration}
+### De cliëntconfiguratie van HTTP van het het gegevensmodel van de vorm (FDM) om prestaties te optimaliseren {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] vormen een gegevensmodel wanneer het integreren met RESTful Webdiensten aangezien de gegevensbron HTTP cliëntconfiguraties voor prestatiesoptimalisering omvat.
 
 Stel de volgende eigenschappen van de **[!UICONTROL Form Data Model HTTP Client Configuration for REST data source]** configuratie voor het opgeven van de reguliere expressie:
 
-* Gebruik de `http.connection.max.per.route` eigenschap om het maximum aantal toegestane verbindingen tussen het formuliergegevensmodel en RESTful-webservices in te stellen. De standaardwaarde is 20 verbindingen.
+* Gebruik de `http.connection.max.per.route` eigenschap om het maximum aantal toegestane verbindingen tussen het formuliergegevensmodel (FDM) en de RESTful-webservices in te stellen. De standaardwaarde is 20 verbindingen.
 
 * Gebruik de `http.connection.max` bezit om het maximumaantal toegestane verbindingen voor elke route te specificeren. De standaardwaarde is 40 verbindingen.
 
@@ -212,7 +212,7 @@ In het volgende JSON-bestand wordt een voorbeeld weergegeven:
 
 1. In de [!UICONTROL Form Data Model HTTP Client Configuration for REST data source] dialoogvenster:
 
-   * Geef het maximale aantal toegestane verbindingen op tussen het gegevensmodel van het formulier en de RESTful-webservices in het dialoogvenster **[!UICONTROL Connection limit in total]** veld. De standaardwaarde is 20 verbindingen.
+   * Geef het maximale aantal toegestane verbindingen op tussen het formuliergegevensmodel (FDM) en de RESTful-webservices in het dialoogvenster **[!UICONTROL Connection limit in total]** veld. De standaardwaarde is 20 verbindingen.
 
    * Specificeer het maximumaantal toegestane verbindingen voor elke route in **[!UICONTROL Connection limit on per route basis]** veld. De standaardwaarde is twee verbindingen.
 
@@ -266,7 +266,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Een OData-
 
 >[!NOTE]
 >
-> Formuliergegevensmodel ondersteunt [OData versie 4](https://www.odata.org/documentation/).
+> FDM-ondersteuning (Form Data Model) [OData versie 4](https://www.odata.org/documentation/).
 >Voor een geleidelijke gids om te vormen [!DNL Microsoft®® Dynamics 365], online of ter plaatse, zie [[!DNL Microsoft® Dynamics] OData-configuratie](ms-dynamics-odata-configuration.md).
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
@@ -283,7 +283,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Een OData-
 
    >[!NOTE]
    >
-   Selecteer het OAuth 2.0 authentificatietype om met te verbinden [!DNL Microsoft®® Dynamics] diensten die het eindpunt OData als de dienstwortel gebruiken.
+   >Selecteer het OAuth 2.0 authentificatietype om met te verbinden [!DNL Microsoft®® Dynamics] diensten die het eindpunt OData als de dienstwortel gebruiken.
 
 1. Selecteren **[!UICONTROL Create]** om de wolkenconfiguratie voor de dienst te creëren OData.
 
@@ -315,7 +315,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
@@ -328,7 +328,7 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Volgende stappen {#next-steps}
 
-U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een formuliergegevensmodel maken of als u al een formuliergegevensmodel zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [Formuliergegevensmodel maken](create-form-data-models.md) voor meer informatie.
+U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een FDM (Form Data Model) maken of als u al een FDM (Form Data Model) zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [Formuliergegevensmodel maken](create-form-data-models.md) voor meer informatie.
 
 
 <!--

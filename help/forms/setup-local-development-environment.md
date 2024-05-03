@@ -4,9 +4,9 @@ description: Een lokale ontwikkelomgeving instellen voor as a Cloud Service Adob
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2720'
 ht-degree: 0%
 
 ---
@@ -249,7 +249,7 @@ U kunt nu de lokale ontwikkelomgeving gebruiken om Document of Record te rendere
 
 Met dit project kunt u Adaptive Forms maken, configuratie-updates, overlays implementeren, aangepaste componenten voor adaptieve formulieren maken, testen en aangepaste code op lokale [!DNL Experience Manager Forms] SDK. Na het testen plaatselijk, kunt u het project opstellen aan  [!DNL Experience Manager Forms] as a Cloud Service productie- en niet-productieomgevingen. Wanneer u het project opstelt, worden de volgende activa van AEM Forms ook opgesteld:
 
-| Thema&#39;s | Sjablonen | Formuliergegevensmodellen |
+| Thema&#39;s | Sjablonen | Formuliergegevensmodel (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | Basis | Microsoft® Dynamics 365 |
 | Tranquil | Leeg | Salesforce |
@@ -259,7 +259,7 @@ Met dit project kunt u Adaptive Forms maken, configuratie-updates, overlays impl
 
 >[!NOTE]
 >
-> Stel AEM project Archetype versie 30 of hoger in om Microsoft® Dynamics 365 en Salesforce-modellen van formuliergegevens te verkrijgen en te gebruiken met AEM Forms as a Cloud Service.
+> Opstelling AEM Archetype versie 30 of later gebaseerd project om Microsoft® Dynamics 365 en het Model van de Gegevens van de Vorm van Salesforce (FDM) met AEM Forms as a Cloud Service te krijgen en te gebruiken.
 > Opstelling AEM Archetype versie 32 of later gebaseerd project om Tranquil, Urbane, en Ultramarine thema&#39;s met AEM Forms as a Cloud Service te krijgen en te gebruiken.
 
 Het project instellen:
@@ -399,7 +399,7 @@ Een back-up maken van bestaande SDK en elementen verplaatsen naar een nieuwe SDK
 
 ### Maak een back-up van uw bestaande inhoud {#create-backup-of-your-existing-content}
 
-Maak een back-up van uw Adaptive Forms, sjablonen, formuliergegevensmodel, thema, configuraties en aangepaste code. U kunt de volgende actie uitvoeren om een back-up te maken:
+Maak een back-up van uw Adaptieve Forms, sjablonen, FDM (Form Data Model), thema, configuraties en aangepaste code. U kunt de volgende actie uitvoeren om een back-up te maken:
 
 1. [Downloaden](import-export-forms-templates.md#manage-forms-and-related-assets) Adaptieve Forms, thema&#39;s en PDF forms.
 1. Aangepaste formuliersjablonen exporteren.

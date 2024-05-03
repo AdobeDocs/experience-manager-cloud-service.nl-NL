@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -128,14 +128,14 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] activa die verenigbaar zijn 
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Voer de [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Terwijl het specificeren van parameters op **[!UICONTROL Create Migration Set]** het scherm, specificeer de weg van Adaptive Forms, thema&#39;s, malplaatjes, de Modellen van de Gegevens van de Vorm, Cloud Servicen, de Componenten van de Douane en andere AEM Forms-specifieke activa aan het **[!UICONTROL Paths to be included]** -optie. Opgegeven [!DNL AEM Forms] te migreren elementen.
+1. Voer de [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Terwijl het specificeren van parameters op **[!UICONTROL Create Migration Set]** het scherm, specificeer de weg van Adaptive Forms, thema&#39;s, malplaatjes, het Model van de Gegevens van de Vorm (FDM), Cloud Servicen, de Componenten van de Douane en andere AEM Forms-specifieke activa aan het **[!UICONTROL Paths to be included]** -optie. Opgegeven [!DNL AEM Forms] te migreren elementen.
 
 ## Paden van verschillende AEM Forms-specifieke activa
 
 Wanneer u van AEM Forms 6.5 naar de cloudservice migreert, kunt u de AEM Forms-specifieke middelen vinden op:
 
 * **Adaptieve Forms**: U kunt Adaptieve formulieren vinden op `/content/dam/formsanddocuments/`en `/content/forms/af`. Voeg bijvoorbeeld paden toe voor een adaptief formulier met de naam WKND-registratie `/content/dam/formsanddocuments/wknd-registration` en `/content/forms/af/wknd-registration`.
-* **Formuliergegevensmodel**: U kunt alle modellen van de Gegevens van de Vorm vinden bij `/content/dam/formsanddocuments-fdm`. Bijvoorbeeld: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **Formuliergegevensmodel**: U kunt alle FDM (Form Data Model) vinden op `/content/dam/formsanddocuments-fdm`. Bijvoorbeeld: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Clientbibliotheken**: Het standaardpad van clientbibliotheken is `/etc/clientlibs/fd/theme`.
 
@@ -143,7 +143,7 @@ Wanneer u van AEM Forms 6.5 naar de cloudservice migreert, kunt u de AEM Forms-s
 
 * **Adaptieve formulierthema&#39;s en clientbibliotheken**: Het standaardpad van thema&#39;s is ` /content/dam/formsanddocuments-themes/` en het standaardpad van de clientbibliotheken is `/etc/clientlibs/fd/theme`. Voor een sjabloon met de naam WKND-thema voegt u bijvoorbeeld een pad toe ` /content/dam/formsanddocuments-themes/wkndtheme` en clientbibliotheken voor het thema op `/etc/clientlibs/reference-themes/wkndtheme-3-0`. U kunt thema&#39;s en cliëntbibliotheken bij andere douanepaden ook hebben.
 
-* **Cloudconfiguraties**: U vindt Cloud Configurations op `/conf/`. De cloudconfiguratie van het formuliergegevensmodel bevindt zich bijvoorbeeld op `/conf/global/settings/cloudconfigs/fdm`.
+* **Cloudconfiguraties**: U vindt Cloud Configurations op `/conf/`. De cloudconfiguratie van het Form Data Model (FDM) bevindt zich bijvoorbeeld op `/conf/global/settings/cloudconfigs/fdm`.
 
 * **Workflowmodel**: U kunt AEM workflowmodellen vinden op `/conf/global/settings/workflow/models/`. Bijvoorbeeld voor een workflowmodel met de naam WKND-registratie: pad toevoegen `/conf/global/settings/workflow/models/wknd-registration`
 

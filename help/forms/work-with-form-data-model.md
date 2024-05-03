@@ -1,18 +1,18 @@
 ---
-title: Wat is het proces om met een Model van de Gegevens van het Vorm in AEM Forms te werken?
+title: Wat is het proces om met een Model van de Gegevens van het Vorm (FDM) in AEM Forms te werken?
 description: Voeg gegevensmodelvoorwerpen, de diensten toe, creeer gegevensmodelvoorwerpen en kindeigenschappen, vorm de diensten, werk met navigatie eigenschappen van de diensten OData.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '3934'
+source-wordcount: '3993'
 ht-degree: 0%
 
 ---
 
-# Werken met formuliergegevensmodel {#work-with-form-data-model}
+# Werken met FDM (Form Data Model) {#work-with-form-data-model}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -22,37 +22,37 @@ ht-degree: 0%
 
 ![gegevensintegratie](do-not-localize/data-integeration.png)
 
-De formuliergegevensmodeleditor biedt een intuïtieve gebruikersinterface en gereedschappen voor het bewerken en configureren van een formuliergegevensmodel. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel. Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om de adaptieve Forms vooraf in te vullen <!--and interactive communications--> tijdens voorvertonen. U kunt gegevensmodelvoorwerpen en de diensten testen die in een Model van de Gegevens van het Vorm worden gevormd om het behoorlijk met gegevensbronnen te verzekeren.
+De redacteur van het Model van de Gegevens van de vorm (FDM) verstrekt een intuïtieve gebruikersinterface en hulpmiddelen om een model van vormgegevens (FDM) uit te geven en te vormen. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel (FDM). Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om de adaptieve Forms vooraf in te vullen <!--and interactive communications--> tijdens voorvertonen. U kunt gegevensmodelvoorwerpen en de diensten testen die in een Model van de Gegevens van de Vorm (FDM) worden gevormd om ervoor te zorgen het behoorlijk met gegevensbronnen wordt geïntegreerd.
 
-Zie de volgende onderwerpen als u nog niet bekend bent met de Forms-gegevensintegratie en geen gegevensbron hebt geconfigureerd of een formuliergegevensmodel hebt gemaakt:
+Als u voor de gegevensintegratie van Forms nieuw bent en geen gegevensbron hebt gevormd of een model van vormgegevens (FDM) gecreeerd, zie de volgende onderwerpen:
 
 * [[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md)
 * [Gegevensbronnen configureren](configure-data-sources.md)
-* [Formuliergegevensmodel maken](create-form-data-models.md)
+* [Formuliergegevensmodel maken (FDM)](create-form-data-models.md)
 
 Lees verder voor meer informatie over verschillende taken en configuraties die u kunt uitvoeren met de formuliergegevensmodeleditor.
 
 >[!NOTE]
 >
->U moet lid zijn van beide **fdm-auteur** en **formuliergebruiker** groepen die in staat zijn om een formuliergegevensmodel te maken en ermee te werken. Neem contact op met uw [!DNL Experience Manager] beheerder om lid te worden van de groepen.
+>U moet lid zijn van beide **fdm-auteur** en **formuliergebruiker** groepen die u wilt maken en werken met het formuliergegevensmodel (FDM). Neem contact op met uw [!DNL Experience Manager] beheerder om lid te worden van de groepen.
 
 ## Objecten en services voor gegevensmodellen toevoegen {#add-data-model-objects-and-services}
 
-Als u een Model van de Gegevens van de Vorm met gegevensbronnen creeerde, kunt u de Redacteur van het Model van de Gegevens van de Vorm gebruiken om gegevensmodelvoorwerpen en de diensten toe te voegen, hun eigenschappen te vormen, verenigingen tussen de voorwerpen van het gegevensmodel te bouwen, en het Model en de diensten van de Gegevens van de Vorm te testen.
+Als u een Model van de Gegevens van de Vorm (FDM) met gegevensbronnen creeerde, kunt u de Modelredacteur van de Gegevens van de Vorm gebruiken om gegevensmodelvoorwerpen en de diensten toe te voegen, hun eigenschappen te vormen, verenigingen tussen de voorwerpen van het gegevensmodel te bouwen, en het Model van de Gegevens van de Vorm (FDM) en de diensten te testen.
 
-U kunt gegevensmodelvoorwerpen en de diensten van beschikbare gegevensbronnen in het model van vormgegevens toevoegen. Terwijl de toegevoegde voorwerpen van het gegevensmodel op het Modellusje verschijnen, verschijnen de toegevoegde diensten op het lusje van de Diensten.
+U kunt gegevensmodelvoorwerpen en de diensten van beschikbare gegevensbronnen in het model van vormgegevens (FDM) toevoegen. Terwijl de toegevoegde voorwerpen van het gegevensmodel op het Modellusje verschijnen, verschijnen de toegevoegde diensten op het lusje van de Diensten.
 
 Objecten en services voor gegevensmodellen toevoegen:
 
-1. Aanmelden bij [!DNL Experience Manager] auteurinstantie, navigeren aan **[!UICONTROL Forms > Data Integrations]** en opent u het formuliergegevensmodel waaraan u gegevensmodelobjecten wilt toevoegen.
+1. Aanmelden bij [!DNL Experience Manager] auteurinstantie, navigeren aan **[!UICONTROL Forms > Data Integrations]** en opent u FDM (Form Data Model) waarin u gegevensmodelobjecten wilt toevoegen.
 1. In de ruit van Gegevensbronnen, breid gegevensbronnen uit om beschikbare voorwerpen en de diensten van het gegevensmodel te bekijken.
-1. Selecteer gegevensmodelobjecten en -services die u wilt toevoegen aan het formuliergegevensmodel en selecteer **[!UICONTROL Add Selected]**.
+1. Selecteer gegevensmodelobjecten en -services die u wilt toevoegen aan het formuliergegevensmodel (FDM) en selecteer **[!UICONTROL Add Selected]**.
 
    ![selected-objects](assets/selected-objects.png)
 
    Geselecteerde gegevensmodelobjecten en services
 
-   De **[!UICONTROL Model]** wordt een grafische weergave weergegeven van alle gegevensmodelobjecten en de bijbehorende eigenschappen die aan het formuliergegevensmodel zijn toegevoegd. Elk gegevensmodelobject wordt vertegenwoordigd door een vak in het formuliergegevensmodel.
+   De **[!UICONTROL Model]** wordt een grafische weergave weergegeven van alle gegevensmodelobjecten en de bijbehorende eigenschappen die aan het formuliergegevensmodel (FDM) zijn toegevoegd. Elk gegevensmodelobject wordt vertegenwoordigd door een vak in het formuliergegevensmodel (FDM).
 
    ![model-tab](assets/model-tab.png)
 
@@ -60,7 +60,7 @@ Objecten en services voor gegevensmodellen toevoegen:
 
    >[!NOTE]
    >
-   >U kunt gegevensmodelobjectvakken vastzetten en slepen om ze in het inhoudsgebied te ordenen. Alle gegevensmodelvoorwerpen die in het Model van de Gegevens van de Vorm worden toegevoegd worden grijs uit in de ruit van Gegevensbronnen.
+   >U kunt gegevensmodelobjectvakken vastzetten en slepen om ze in het inhoudsgebied te ordenen. Alle gegevensmodelvoorwerpen die in het Model van de Gegevens van de Vorm (FDM) worden toegevoegd worden grijs uit in de ruit van Gegevensbronnen.
 
    De **[!UICONTROL Services]** bevat een lijst met toegevoegde services.
 
@@ -76,19 +76,19 @@ Objecten en services voor gegevensmodellen toevoegen:
 
    >[!NOTE]
    >
-   >U kunt services die u hebt geconfigureerd op het tabblad Services van een formuliergegevensmodel, aanroepen met behulp van de regels voor adaptieve formulieren. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in de Aangepaste regels van de Vorm, zie de Diensten van de Invoke en Reeks Waarde van regels in [regeleditor](rule-editor.md).
+   >U kunt de diensten aanhalen die u op het lusje van de Diensten van een Model van de Gegevens van de Vorm (FDM) gebruikend de Aangepaste regels van de Vorm vormde. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in de Aangepaste regels van de Vorm, zie de Diensten van de Invoke en Reeks Waarde van regels in [regeleditor](rule-editor.md).
 
 ## Gegevensmodelobjecten en onderliggende eigenschappen maken {#create-data-model-objects-and-child-properties}
 
 ### Gegevensmodelobjecten maken {#create-data-model-objects}
 
-Terwijl u gegevensmodelvoorwerpen van gevormde gegevensbronnen kunt toevoegen, kunt u voorwerpen of entiteiten van het gegevensmodel zonder gegevensbronnen ook tot stand brengen. Dit is vooral handig als u geen gegevensbronnen hebt geconfigureerd in het formuliergegevensmodel.
+Terwijl u gegevensmodelvoorwerpen van gevormde gegevensbronnen kunt toevoegen, kunt u voorwerpen of entiteiten van het gegevensmodel zonder gegevensbronnen ook tot stand brengen. Het is vooral nuttig als u geen gegevensbronnen in het model van vormgegevens (FDM) hebt gevormd.
 
 Een gegevensmodelobject maken zonder gegevensbronnen:
 
-1. Aanmelden bij [!DNL Experience Manager] auteurinstantie, navigeren aan **[!UICONTROL Forms > Data Integrations]** en opent u het formuliergegevensmodel waarin u een gegevensmodelobject of -entiteit wilt maken.
+1. Aanmelden bij [!DNL Experience Manager] auteurinstantie, navigeren aan **[!UICONTROL Forms > Data Integrations]** en opent u FDM (Form Data Model) waarin u een gegevensmodelobject of -entiteit wilt maken.
 1. Selecteren **[!UICONTROL Create Entity]**.
-1. In de [!UICONTROL Create data Model] geeft u een naam op voor het gegevensmodelobject en selecteert u **[!UICONTROL Add]**. Er wordt een gegevensmodelobject toegevoegd aan het formuliergegevensmodel. Het nieuwe gegevensmodelobject is niet gebonden aan een gegevensbron en heeft geen eigenschappen zoals in de volgende afbeelding wordt getoond.
+1. In de [!UICONTROL Create data Model] geeft u een naam op voor het gegevensmodelobject en selecteert u **[!UICONTROL Add]**. Een gegevensmodelobject wordt toegevoegd aan het formuliergegevensmodel (FDM). Het nieuwe gegevensmodelobject is niet gebonden aan een gegevensbron en heeft geen eigenschappen zoals in de volgende afbeelding wordt getoond.
 
    ![nieuwe entiteit](assets/new-entity.png)
 
@@ -107,17 +107,17 @@ Een onderliggende eigenschap maken:
 
    Als u een onderliggende eigenschap handmatig wilt binden met een objecteigenschap van een gegevensmodel, selecteert u het bladerpictogram naast de knop **[!UICONTROL Bind Reference]** veld. De **[!UICONTROL Select Object]** worden alle eigenschappen van het bovenliggende gegevensmodelobject weergegeven. Selecteer een eigenschap waarmee u wilt binden en selecteer het verdeelstreeppictogram. U kunt alleen een eigenschap van hetzelfde gegevenstype selecteren als de eigenschap child.
 
-1. Selecteren **[!UICONTROL Done]** om het kindbezit te bewaren en te selecteren **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.. De eigenschap child wordt nu toegevoegd aan het gegevensmodelobject.
+1. Selecteren **[!UICONTROL Done]** om het kindbezit te bewaren en te selecteren **[!UICONTROL Save]** om het formuliergegevensmodel (FDM) op te slaan. De eigenschap child wordt nu toegevoegd aan het gegevensmodelobject.
 
-Nadat u gegevensmodelobjecten en -eigenschappen hebt gemaakt, kunt u Adaptief Forms blijven maken <!--and interactive communications--> op basis van het formuliergegevensmodel. Later, wanneer u gegevensbronnen beschikbaar en gevormd hebt, kunt u het Model van de Gegevens van het Vorm met gegevensbronnen binden. De binding wordt automatisch bijgewerkt in gekoppelde Adaptive Forms <!--and interactive communications-->. Voor meer informatie over het maken van Adaptive Forms <!--and interactive communications--> formuliergegevensmodel gebruiken, zie [Formuliergegevensmodel gebruiken](using-form-data-model.md).
+Nadat u gegevensmodelobjecten en -eigenschappen hebt gemaakt, kunt u Adaptief Forms blijven maken <!--and interactive communications--> op basis van het formuliergegevensmodel (FDM). Later, wanneer u gegevensbronnen beschikbaar en gevormd hebt, kunt u het Model van de Gegevens van de Vorm (FDM) met gegevensbronnen binden. De binding wordt automatisch bijgewerkt in gekoppelde Adaptive Forms <!--and interactive communications-->. Voor meer informatie over het maken van Adaptive Forms <!--and interactive communications--> formuliergegevensmodel (FDM) gebruiken, zie [Formuliergegevensmodel gebruiken](using-form-data-model.md).
 
 ### Objecten en eigenschappen van gegevensmodellen binden {#bind-data-model-objects-and-properties}
 
-Wanneer de gegevensbronnen die u wilt integreren met het formuliergegevensmodel beschikbaar zijn, kunt u deze toevoegen aan het formuliergegevensmodel, zoals beschreven in [Gegevensbronnen bijwerken](create-form-data-models.md#update). Voer vervolgens de volgende handelingen uit om de niet-gebonden gegevensmodelobjecten en -eigenschappen te binden:
+Wanneer de gegevensbronnen die u met het Model van de Gegevens van het Vorm (FDM) wilt integreren beschikbaar zijn, kunt u hen toevoegen aan het Model van de Gegevens van het Vorm (FDM) zoals die in [Gegevensbronnen bijwerken](create-form-data-models.md#update). Voer vervolgens de volgende handelingen uit om de niet-gebonden gegevensmodelobjecten en -eigenschappen te binden:
 
 1. Selecteer in het formuliergegevensmodel de niet-gebonden gegevensbron die u met een gegevensbron wilt binden.
 1. Selecteren **[!UICONTROL Edit Properties]**.
-1. In de **[!UICONTROL Edit Properties]** selecteert u het bladerpictogram naast het dialoogvenster **[!UICONTROL Binding]** veld. Het opent de **[!UICONTROL Select Object]** dialoogvenster met een lijst met gegevensbronnen die zijn toegevoegd aan het formuliergegevensmodel.
+1. In de **[!UICONTROL Edit Properties]** selecteert u het bladerpictogram naast het dialoogvenster **[!UICONTROL Binding]** veld. Het opent de **[!UICONTROL Select Object]** een dialoogvenster met gegevensbronnen die zijn toegevoegd aan het FDM (Form Data Model).
 
    ![select-object](assets/select-object.png)
 
@@ -144,14 +144,14 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
 
    >[!NOTE]
    >
-   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Wanneer u een OData-servicegegevensbron toevoegt aan een formuliergegevensmodel, is er een service beschikbaar in het formuliergegevensmodel voor alle navigatie-eigenschappen in een gegevensmodelobject. U kunt deze service gebruiken om de navigatie-eigenschappen van het overeenkomende gegevensmodelobject te lezen.
+   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Wanneer u een bron van de de dienstgegevens OData aan een Model van de Gegevens van de Vorm (FDM) toevoegt, is er de dienst beschikbaar in het Model van de Gegevens van de Vorm (FDM) voor alle navigatie eigenschappen in een voorwerp van het gegevensmodel. U kunt deze service gebruiken om de navigatie-eigenschappen van het overeenkomende gegevensmodelobject te lezen.
    >
    >
    >Voor meer informatie die de dienst gebruikt, zie [Werken met navigatie-eigenschappen van OData-diensten](#work-with-navigation-properties-of-odata-services).
 
 1. Schakelen **[!UICONTROL Top Level Object]** om op te geven of het gegevensmodelobject een modelobject op het hoogste niveau is.
 
-   Gegevensmodelobjecten die zijn geconfigureerd in een formuliergegevensmodel zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten in de inhoudbrowser van een adaptief formulier op basis van het formuliergegevensmodel. Wanneer u een koppeling toevoegt tussen twee gegevensmodelobjecten, wordt het gegevensmodelobject dat u koppelt, genest onder het gegevensmodelobject dat u koppelt in het **[!UICONTROL Data Model Objects]** tab. Als het geneste gegevensmodel een object op hoofdniveau is, wordt het ook afzonderlijk weergegeven in het dialoogvenster **[!UICONTROL Data Model Objects]** tab. Daarom ziet u twee items ervan, een binnen en een buiten de geneste hiërarchie, die verwarring kunnen veroorzaken bij auteurs van formulieren. Als u het gekoppelde gegevensmodelobject alleen in de geneste hiërarchie wilt weergeven, schakelt u de eigenschap Object op hoogste niveau uit.
+   De modelvoorwerpen van gegevens die in een Model van de Gegevens van de Vorm (FDM) worden gevormd zijn beschikbaar voor gebruik op het lusje van Objecten van het Gegevensmodel in tevreden browser van een Adaptief die Vorm op het model van vormgegevens (FDM) wordt gebaseerd. Wanneer u een koppeling toevoegt tussen twee gegevensmodelobjecten, wordt het gegevensmodelobject dat u koppelt, genest onder het gegevensmodelobject dat u koppelt in het **[!UICONTROL Data Model Objects]** tab. Als het geneste gegevensmodel een object op hoofdniveau is, wordt het ook afzonderlijk weergegeven in het dialoogvenster **[!UICONTROL Data Model Objects]** tab. Daarom ziet u twee items ervan, een binnen en een buiten de geneste hiërarchie, die verwarring kunnen veroorzaken bij auteurs van formulieren. Als u het gekoppelde gegevensmodelobject alleen in de geneste hiërarchie wilt weergeven, schakelt u de eigenschap Object op hoogste niveau uit.
 
 1. Selecteer de Lezen en schrijven diensten voor de geselecteerde voorwerpen van het gegevensmodel. De argumenten voor de services worden weergegeven.
 
@@ -160,7 +160,7 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
    Lees en schrijf de diensten die voor werknemersgegevensbron worden gevormd
 
 1. Selecteren ![aem_6_3_edit](assets/edit.svg) voor het read-service argument aan [bindt het argument aan een Attribuut van het Profiel van de Gebruiker, een Attribuut van het Verzoek, of Letterlijke waarde](#bindargument) en geeft u de bindingswaarde op.
-1. Selecteren **[!UICONTROL Done]** om het argument op te slaan, **[!UICONTROL Done]** om de eigenschappen op te slaan, en vervolgens **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
+1. Selecteren **[!UICONTROL Done]** om het argument op te slaan, **[!UICONTROL Done]** om de eigenschappen op te slaan, en vervolgens **[!UICONTROL Save]** om het formuliergegevensmodel (FDM) op te slaan.
 
 ### Bind Read de dienstargumenten {#bindargument}
 
@@ -230,11 +230,11 @@ Als u bijvoorbeeld kenmerk opgeeft als `petid=100` in de aanvraag worden eigensc
 
 Er zijn doorgaans koppelingen tussen gegevensmodelobjecten in een gegevensbron. De koppeling kan een-op-een of een-op-een zijn. Bijvoorbeeld, kunnen er veelvoudige gebiedsdelen verbonden aan een werknemer zijn. Het wordt bedoeld als één-op-vele vereniging en afgebeeld door `1:n` op de regel die gekoppelde gegevensmodelobjecten verbindt. Nochtans, als een vereniging een unieke werknemersnaam voor een bepaalde werknemersidentiteitskaart terugkeert, wordt het bedoeld als één-op-één vereniging.
 
-Wanneer u gekoppelde gegevensmodelobjecten in een gegevensbron toevoegt aan een formuliergegevensmodel, blijven de koppelingen behouden en worden ze weergegeven als verbonden door pijllijnen. In een formuliergegevensmodel kunt u koppelingen toevoegen tussen gegevensmodelobjecten in verschillende gegevensbronnen.
+Wanneer u gekoppelde gegevensmodelobjecten in een gegevensbron toevoegt aan een formuliergegevensmodel (FDM), blijven de koppelingen behouden en worden ze weergegeven als verbonden door pijllijnen. U kunt koppelingen tussen gegevensmodelobjecten op verschillende gegevensbronnen toevoegen in een formuliergegevensmodel (FDM).
 
 >[!NOTE]
 >
->Vooraf gedefinieerde koppelingen in een JDBC-gegevensbron blijven niet behouden in het formuliergegevensmodel. U moet ze handmatig maken.
+>Vooraf gedefinieerde koppelingen in een JDBC-gegevensbron blijven niet behouden in het formuliergegevensmodel (FDM). U moet ze handmatig maken.
 
 Een koppeling toevoegen:
 
@@ -244,7 +244,7 @@ Een koppeling toevoegen:
 
    >[!NOTE]
    >
-   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. U kunt deze navigatie-eigenschappen gebruiken wanneer u koppelingen toevoegt aan het formuliergegevensmodel. Zie voor meer informatie [Werken met navigatie-eigenschappen van OData-diensten](#work-with-navigation-properties-of-odata-services).
+   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. U kunt deze navigatie-eigenschappen gebruiken wanneer u koppelingen toevoegt aan het formuliergegevensmodel (FDM). Zie voor meer informatie [Werken met navigatie-eigenschappen van OData-diensten](#work-with-navigation-properties-of-odata-services).
 
    De [!UICONTROL Add Association] wordt geopend.
 
@@ -273,7 +273,7 @@ Een koppeling toevoegen:
 
    Selecteren **[!UICONTROL Done]** het argument opslaan.
 
-1. Selecteren **[!UICONTROL Done]** om de vereniging te bewaren en dan **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
+1. Selecteren **[!UICONTROL Done]** om de vereniging te bewaren en dan **[!UICONTROL Save]** om het formuliergegevensmodel (FDM) op te slaan.
 1. Herhaal de stappen om desgewenst meer koppelingen te maken.
 
 >[!NOTE]
@@ -286,11 +286,11 @@ Een koppeling toevoegen:
 
 ## Eigenschappen bewerken {#properties}
 
-U kunt eigenschappen van gegevensmodelobjecten bewerken, de eigenschappen ervan en de services die zijn toegevoegd aan het formuliergegevensmodel.
+U kunt eigenschappen van gegevensmodelvoorwerpen, hun eigenschappen, en de diensten uitgeven die in het model van vormgegevens (FDM) worden toegevoegd.
 
 Eigenschappen bewerken:
 
-1. Schakel het selectievakje in naast een gegevensmodelobject, een eigenschap of een service in het formuliergegevensmodel.
+1. Schakel het selectievakje in naast een gegevensmodelobject, een eigenschap of een service in het formuliergegevensmodel (FDM).
 1. Selecteer **[!UICONTROL Edit Properties]**. De **[!UICONTROL Edit Properties]** wordt het deelvenster voor het geselecteerde modelobject, de geselecteerde eigenschap of de geselecteerde service geopend.
 
    * **[!UICONTROL Data model object]**: Geef de lees- en schrijfservices op en bewerk argumenten.
@@ -301,11 +301,11 @@ Eigenschappen bewerken:
 
    Dialoogvenster Eigenschappen bewerken voor een get-service
 
-1. Selecteren **[!UICONTROL Done]** om eigenschappen op te slaan en vervolgens **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
+1. Selecteren **[!UICONTROL Done]** om eigenschappen op te slaan en vervolgens **[!UICONTROL Save]** om het formuliergegevensmodel (FDM) op te slaan.
 
 ### Berekende eigenschappen maken {#computed}
 
-Een berekende eigenschap is de eigenschap waarvan de waarde wordt berekend op basis van een regel of expressie. Met behulp van een regel kunt u de waarde van een berekende eigenschap instellen op een letterlijke tekenreeks, een getal, het resultaat van een wiskundige expressie of de waarde van een andere eigenschap in het formuliergegevensmodel.
+Een berekende eigenschap is de eigenschap waarvan de waarde wordt berekend op basis van een regel of expressie. Met behulp van een regel kunt u de waarde van een berekende eigenschap instellen op een letterlijke tekenreeks, een getal, het resultaat van een wiskundige expressie of de waarde van een andere eigenschap in het formuliergegevensmodel (FDM).
 
 U kunt bijvoorbeeld een berekende eigenschap maken **FullName** waarvan de waarde het resultaat is van samenvoegen van de bestaande **FirstName** en **LastName** eigenschappen. Daartoe:
 
@@ -329,7 +329,7 @@ U kunt bijvoorbeeld een berekende eigenschap maken **FullName** waarvan de waard
 
    ![regel](assets/rule.png)
 
-1. Selecteer in het formuliergegevensmodel de optie **[!UICONTROL Save]**. Het gegevens verwerkte bezit wordt gevormd.
+1. Selecteer in het formulier (FDM) de optie **[!UICONTROL Save]**. Het gegevens verwerkte bezit wordt gevormd.
 
 ## Werken met navigatie-eigenschappen van OData-diensten {#work-with-navigation-properties-of-odata-services}
 
@@ -363,13 +363,13 @@ Zie voor meer informatie over navigatie-eigenschappen [OData-documentatie](https
 </EntityType>
 ```
 
-Wanneer u een OData-service in een formuliergegevensmodel configureert, worden alle navigatie-eigenschappen in een entiteitcontainer beschikbaar gesteld via een service in het formuliergegevensmodel. In dit voorbeeld van de TripPin OData-service worden de drie navigatie-eigenschappen in de `Person` entiteitscontainer kan worden gelezen gebruikend één `GET LINK` in het formuliergegevensmodel.
+Wanneer u een dienst OData in een Model van de Gegevens van de Vorm (FDM) vormt, worden alle navigatie eigenschappen in een entiteitcontainer beschikbaar door de dienst in het Model van de Gegevens van de Vorm (FDM). In dit voorbeeld van de TripPin OData-service worden de drie navigatie-eigenschappen in de `Person` entiteitscontainer kan worden gelezen gebruikend één `GET LINK` service in het Form Data Model (FDM).
 
-Het volgende benadrukt `GET LINK of Person /People` -service in het formuliergegevensmodel. Dit is een gecombineerde service voor de drie navigatie-eigenschappen in het dialoogvenster `Person` entiteit van de TripPin OData-dienst.
+Het volgende benadrukt `GET LINK of Person /People` de dienst in het Model van de Gegevens van de Vorm (FDM), dat de gecombineerde dienst voor de drie navigatie eigenschappen in `Person` entiteit van de TripPin OData-dienst.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-Wanneer u het `GET LINK` De dienst aan het lusje van de Diensten in het Model van de Gegevens van de Vorm, kunt u de eigenschappen uitgeven om het voorwerp van het outputmodel en het navigatie bezit te kiezen in de dienst te gebruiken. Het volgende wordt bijvoorbeeld `GET LINK of Person /People` In het volgende voorbeeld wordt Trip gebruikt als het uitvoermodelobject en de navigatie-eigenschap als Trips.
+Wanneer u het `GET LINK` De dienst aan het lusje van de Diensten in het Model van de Gegevens van de Vorm (FDM), kunt u de eigenschappen uitgeven om het voorwerp van het outputmodel en het navigatie bezit te kiezen in de dienst te gebruiken. Het volgende wordt bijvoorbeeld `GET LINK of Person /People` In het volgende voorbeeld wordt Trip gebruikt als het uitvoermodelobject en de navigatie-eigenschap als Trips.
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
@@ -381,17 +381,17 @@ In dit voorbeeld kunt u het uitvoermodelobject ook kiezen als argument voor pers
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Op dezelfde manier kunt u een `GET LINK` de dienst en vormt zijn navigatieeigenschappen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm. Als u echter een navigatie-eigenschap wilt selecteren, moet u ervoor zorgen dat de **[!UICONTROL Binding To field]** is ingesteld op **[!UICONTROL Literal]**.
+Op dezelfde manier kunt u een `GET LINK` de dienst en vormt zijn navigatie-eigenschappen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm (FDM). Als u echter een navigatie-eigenschap wilt selecteren, moet u ervoor zorgen dat de **[!UICONTROL Binding To field]** is ingesteld op **[!UICONTROL Literal]**.
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
 ## Voorbeeldgegevens genereren en bewerken {#sample}
 
-Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens genereren voor alle eigenschappen van gegevensmodelobjecten, inclusief berekende eigenschappen, in een formuliergegevensmodel. Het is een reeks willekeurige waarden die met het gegevenstype voldoen dat voor elk bezit wordt gevormd. U kunt ook gegevens bewerken en opslaan. Deze blijven behouden, zelfs als u de voorbeeldgegevens opnieuw genereert.
+Met de FDM-editor (Form Data Model) kunt u voorbeeldgegevens genereren voor alle eigenschappen van gegevensmodelobjecten, inclusief berekende eigenschappen, in een formuliergegevensmodel (FDM). Het is een reeks willekeurige waarden die met het gegevenstype voldoen dat voor elk bezit wordt gevormd. U kunt ook gegevens bewerken en opslaan. Deze blijven behouden, zelfs als u de voorbeeldgegevens opnieuw genereert.
 
 Ga als volgt te werk om voorbeeldgegevens te genereren en te bewerken:
 
-1. Open een formuliergegevensmodel en selecteer **[!UICONTROL Edit Sample Data]**. De voorbeeldgegevens worden gegenereerd en weergegeven in het venster Voorbeeldgegevens bewerken.
+1. Open een Model van de Gegevens van het Vorm (FDM) en selecteer **[!UICONTROL Edit Sample Data]**. De voorbeeldgegevens worden gegenereerd en weergegeven in het venster Voorbeeldgegevens bewerken.
 
    ![Voorbeeldgegevens genereren](assets/form_data_model_generate_sample_data_new.png)
 
@@ -401,9 +401,9 @@ Ga als volgt te werk om voorbeeldgegevens te genereren en te bewerken:
 
 ## Objecten en services van gegevensmodellen testen {#test-data-model-objects-and-services}
 
-Uw model van de Gegevens van het Vorm wordt gevormd maar alvorens het in gebruik te zetten, kunt u willen testen als de gevormde voorwerpen en de diensten van het gegevensmodel zoals verwacht werken. Objecten en services van gegevensmodellen testen:
+Uw Model van de Gegevens van de Vorm (FDM) wordt gevormd maar alvorens het in gebruik te zetten, kunt u willen testen als de gevormde voorwerpen en de diensten van het gegevensmodel zoals verwacht werken. Objecten en services van gegevensmodellen testen:
 
-1. Selecteer een gegevensmodelobject of een service in het formuliergegevensmodel en selecteer **[!UICONTROL Test Model Object]** of **[!UICONTROL Test Service]**, respectievelijk.
+1. Selecteer een gegevensmodelvoorwerp of een dienst in het Model van de Gegevens van de Vorm (FDM) en selecteer **[!UICONTROL Test Model Object]** of **[!UICONTROL Test Service]**, respectievelijk.
 
    Het venster Formuliergegevensmodel testen wordt geopend.
 
@@ -415,11 +415,11 @@ Uw model van de Gegevens van het Vorm wordt gevormd maar alvorens het in gebruik
 
    ![Testresultaten](assets/test_results_form_data_model_new.png)
 
-U kunt ook andere gegevensmodelobjecten en -services testen in het formuliergegevensmodel.
+Op dezelfde manier kunt u andere gegevensmodelvoorwerpen en de diensten in het model van vormgegevens (FDM) testen.
 
 ## Geautomatiseerde validatie van invoergegevens {#automated-validation-of-input-data}
 
-Het formuliergegevensmodel valideert ontvangen gegevens als invoer terwijl de DermisBridge-API wordt aangeroepen (op basis van validatiecriteria die beschikbaar zijn in het formuliergegevensmodel). De validatie is gebaseerd op de `ValidationOptions` markering ingesteld in het queryobject dat wordt gebruikt om de API aan te roepen.
+Het formuliergegevensmodel (FDM) valideert ontvangen gegevens als invoer terwijl de DermisBridge-API wordt aangeroepen (op basis van validatiecriteria die beschikbaar zijn in het formuliergegevensmodel). De validatie is gebaseerd op de `ValidationOptions` markering ingesteld in het queryobject dat wordt gebruikt om de API aan te roepen.
 
 De markering kan op om het even welke volgende waarden worden geplaatst:
 
@@ -440,7 +440,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 >De waarde die u opgeeft voor een kenmerk in de invoergegevens, moet overeenkomen met het gegevenstype dat is gedefinieerd voor het kenmerk in het metagegevensdocument.\
 >Als de waarde niet overeenkomt met het gegevenstype dat voor het kenmerk is gedefinieerd, wordt een uitzondering weergegeven in de DermisBridge-API, ongeacht de waarde van het `ValidationOptions` markering. Als het logboekniveau aan Debug wordt geplaatst, wordt een fout geregistreerd aan **error.log** bestand.
 
-Het formuliergegevensmodel valideert invoergegevens op basis van een lijst met beperkingen voor gegevenstypen. De lijst met beperkingen voor invoergegevens kan variëren op basis van de gegevensbron.
+Het model van de Gegevens van de Vorm (FDM) bevestigt inputgegevens die op een lijst van gegevenstypebeperkingen worden gebaseerd. De lijst met beperkingen voor invoergegevens kan variëren op basis van de gegevensbron.
 
 In de volgende tabel worden de beperkingen voor invoergegevens weergegeven die zijn gebaseerd op de gegevensbron:
 
@@ -549,4 +549,4 @@ Er wordt een uitzondering weergegeven als de invoergegevens niet voldoen aan de 
 
 ## Volgende stappen {#next-steps}
 
-U hebt een werkformuliergegevensmodel dat nu klaar is voor gebruik in Adaptive Forms <!--and interactive communications--> workflows. Zie voor meer informatie [Formuliergegevensmodel gebruiken](using-form-data-model.md).
+U hebt een werkformuliergegevensmodel (FDM) dat nu klaar is voor gebruik in Adaptive Forms <!--and interactive communications--> workflows. Zie voor meer informatie [Formuliergegevensmodel (FDM) gebruiken](using-form-data-model.md).

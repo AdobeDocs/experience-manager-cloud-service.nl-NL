@@ -1,5 +1,5 @@
 ---
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 * [Adaptief formulier aansluiten op Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [Adaptief formulier aansluiten op Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [Adaptief formulier aansluiten op Microsoft Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Aangepast formulier verbinden met Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Aangepast formulier verbinden met Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Adobe Sign gebruiken in een AEM adaptief formulier](/help/forms/working-with-adobe-sign.md)
 * [Een nieuwe landinstelling toevoegen voor een adaptief formulier](/help/forms/supporting-new-language-localization-core-components.md)
 * [Adaptieve formuliergegevens naar een database verzenden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
@@ -51,7 +51,7 @@ ht-degree: 0%
 * [Een AEM-workflow aanroepen](/help/forms/configure-submit-action-workflow.md)
 * [Verzenden naar Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Verzenden naar Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/aem-forms-salesforce-integration.md)
 * [Een adaptief formulier verbinden met Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## Zie ook {#see-more-forms-eds}

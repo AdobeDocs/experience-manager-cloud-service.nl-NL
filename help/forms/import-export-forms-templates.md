@@ -4,16 +4,17 @@ description: Leer Adaptieve Forms, PDF forms, thema's en andere ondersteunende m
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
 
 # Adaptieve Forms- en AEM Forms-middelen importeren of exporteren {#importing-and-exporting-assets-to-aem-forms}
 
-U kunt Adaptive Forms en gerelateerde elementen, zoals Adaptive Form-thema&#39;s, Formuliergegevensmodellen, Adaptieve formuliersjablonen, documentfragmenten en PDF forms verplaatsen tussen [!DNL AEM Forms] instanties. U kunt elementen importeren en exporteren in CRX-pakket of binaire bestandsindelingen.
+U kunt Adaptive Forms en gerelateerde elementen, zoals Adaptive Form-thema&#39;s, Form Data Model (FDM), Adaptive Form-sjablonen, documentfragmenten en PDF forms verplaatsen tussen [!DNL AEM Forms] instanties. U kunt elementen importeren en exporteren in CRX-pakket of binaire bestandsindelingen.
 
 Wanneer u een adaptief formulier exporteert, worden het inhoudsbeleid en de sjablonen niet geëxporteerd. Gebruiken [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) om dergelijke activa uit te voeren.
 
@@ -26,7 +27,7 @@ Formulieren of gerelateerde elementen downloaden:
 1. Selecteer de elementen en selecteer de **[!UICONTROL Download]** pictogram.
 1. Kies in het (de) downloadmiddel(en) een van de volgende opties en selecteer **[!UICONTROL Download]**.
 
-   * **Downloaden als CRX-pakket:** Gebruik de optie om alle geselecteerde elementen en gerelateerde afhankelijkheden te downloaden en verplaatsen vanuit een [!DNL AEM Forms] aan een andere instantie. Alle bestanden en mappen worden gedownload als een CRX-pakket, inclusief de formulieren die zijn geschreven in AEM (adaptieve Forms en adaptieve formulierfragmenten), formuliersets, formuliergegevensmodel, formuliersjablonen, PDF-documenten en bronnen waarnaar wordt verwezen (XSD&#39;s en afbeeldingen).
+   * **Downloaden als CRX-pakket:** Gebruik de optie om alle geselecteerde elementen en gerelateerde afhankelijkheden te downloaden en verplaatsen vanuit een [!DNL AEM Forms] aan een andere instantie. Alle bestanden en mappen worden gedownload als een CRX-pakket, inclusief de formulieren die zijn geschreven in AEM (Adaptive Forms and Adaptive Form Fragments), formuliersets, formuliergegevensmodel (FDM), formuliersjablonen, PDF-documenten en bronnen waarnaar wordt verwezen (XSD&#39;s en afbeeldingen).
 Het voordeel van het downloaden van elementen als een pakket is dat deze ook worden gedownload waarnaar wordt verwezen door geselecteerde elementen. Als u bijvoorbeeld een adaptief formulier hebt dat gebruikmaakt van een formuliersjabloon, XSD en een afbeelding. Wanneer u dit adaptieve formulier selecteert en het als een pakket downloadt, bevat het gedownloade pakket ook de formuliersjabloon, XSD en de afbeelding. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload.
 
    * **Elementen downloaden als binaire bestanden:** Gebruik de optie om alleen formuliersjablonen (XDP), PDF forms (PDF), documenten (PDF) en bronnen (afbeeldingen, schema&#39;s, opmaakmodellen) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De elementen met binaire elementen, zoals afbeeldingen, PDF en andere ondersteunde indelingen, worden als ZIP-bestand gedownload.

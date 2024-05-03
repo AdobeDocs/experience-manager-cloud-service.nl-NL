@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
+source-git-commit: 1b5dec707eb63a43a3e6240c785ed9ef00a3a3c4
 workflow-type: tm+mt
-source-wordcount: '4892'
+source-wordcount: '4901'
 ht-degree: 3%
 
 ---
@@ -619,7 +619,7 @@ ht-degree: 3%
          + [AEM Forms verbinden met database of gegevensbron](/help/forms/data-integration.md)
          + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
          + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Aangepast formulier aansluiten op Salesforce-toepassing met OAuth 2.0-clientreferentie](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Aangepast formulier aansluiten op Salesforce-toepassing met OAuth 2.0-clientreferentie](/help/forms/aem-forms-salesforce-integration.md)
          + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
          + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
          + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
@@ -651,6 +651,7 @@ ht-degree: 3%
             + [Een landinstelling toevoegen voor Adaptive Forms op basis van Core Components](/help/forms/supporting-new-language-localization-core-components.md)
             + [Aangepaste functies maken en gebruiken](/help/forms/create-and-use-custom-functions.md)
             + [Regels toevoegen aan een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components.md)
+            + [JSON-schema ontwerpen voor een adaptief formulier (kerncomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Versies, opmerkingen en annotaties toevoegen aan een adaptief formulier](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Adaptieve Forms vergelijken](/help/forms/compare-forms.md)
       + Elementaire componenten {#authoring-adaptive-forms-foundation-components}

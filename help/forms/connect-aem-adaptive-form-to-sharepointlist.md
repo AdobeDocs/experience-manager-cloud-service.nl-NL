@@ -1,13 +1,13 @@
 ---
 title: Hoe kan AEM adaptief formulier worden verbonden met Microsoft&reg; SharePoint List?
-description: Een adaptief formulier verbinden met Microsoft&reg; SharePoint-lijst. Leer hoe u Microsoft&reg configureert; SharePoint-lijst en een formuliergegevensmodel maakt met de configuratie. Bovendien leert u hoe te om FDM met uw Aangepast Vorm te integreren.
+description: Een adaptief formulier verbinden met Microsoft&reg; SharePoint-lijst. Leer hoe u Microsoft&reg configureert; SharePoint-lijst en een FDM (Form Data Model) maakt met behulp van de configuratie. Bovendien leert u hoe te om FDM met uw Aangepast Vorm te integreren.
 role: User, Developer
 keywords: Sluit AEM adaptief formulier aan op de Microsoft SharePoint-lijst, sluit adaptief formulier aan op de Microsoft SharePoint-lijst, integreer AEM adaptief formulier met de SharePoint SharePoint-lijst, integreer Adaptief formulier met de-lijst, verzend gegevens van een adaptief formulier naar de-lijst, verzend AEM workflow naar de-lijst.
 hide: true
 hidefromToC: true
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,8 @@ Voor instructies over het integreren van een **Microsoft® SharePoint Document L
 Voer de volgende stappen uit voordat u een adaptief formulier koppelt aan de Microsoft® SharePoint List:
 
 1. [Microsoft configureren](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Een formuliergegevensmodel maken met Microsoft](/help/forms/create-form-data-models.md)
-1. [Het formuliergegevensmodel configureren voor het ophalen en verzenden van gegevens](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Een formuliergegevensmodel (FDM) maken met Microsoft](/help/forms/create-form-data-models.md)
+1. [Vorm het Model van de Gegevens van de Vorm (FDM) om gegevens terug te winnen en te verzenden](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
 
 Nu kunt u:
@@ -42,18 +42,18 @@ Nu kunt u:
 
 ## Een adaptief formulier verbinden met de Microsoft® SharePoint-lijst {#connect-af-sharepoint-list}
 
-Microsoft® SharePoint List integreren in uw adaptieve formulier [Een adaptief formulier configureren om een formuliergegevensmodel te gebruiken](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Microsoft® SharePoint List integreren in uw adaptieve formulier [Een adaptief formulier configureren voor het gebruik van een FDM (Form Data Model)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
-Nadat u een adaptief formulier hebt geconfigureerd voor het gebruik van een formuliergegevensmodel, kunt u:
+Nadat u een adaptief formulier hebt geconfigureerd voor het gebruik van een FDM (Form Data Model), kunt u:
 
-* [Verzendactie configureren met een formuliergegevensmodel](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
-* [Regeleditor configureren om een formuliergegevensmodel aan te roepen](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
+* [Verzendactie configureren met een FDM (Form Data Model)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+* [Vorm de Redacteur van de Regel om een Model van de Gegevens van de Vorm (FDM) aan te halen](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
 ## Microsoft® SharePoint List verbinden met een AEM workflow {#connect-sharepoint-list-workflow}
 
 Microsoft® SharePoint List integreren in een AEM workflow:
 
-1. [Een workflow maken om een formuliergegevensmodel aan te roepen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. [Een workflow maken om een FDM (Form Data Model) aan te roepen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
    <!--
     To create a workflow with the editor:
@@ -71,7 +71,7 @@ Microsoft® SharePoint List integreren in een AEM workflow:
 
 Leer hoe u [AEM gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html) om samen te werken, inhoud te beheren en te verwerken in een adaptief formulier.
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 <!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft&reg; SharePoint List rather than Microsoft&reg; SharePoint Document Library. -->
 * In Microsoft® SharePoint List worden de volgende kolomtypen niet ondersteund:
@@ -84,7 +84,7 @@ Leer hoe u [AEM gebruiken](https://experienceleague.adobe.com/docs/experience-ma
 
 * [Een adaptief formulier op basis van een kerncomponent maken](/help/forms/creating-adaptive-form-core-components.md)
 * [Gegevensbronnen configureren](/help/forms/configuring-submit-actions.md)
-* [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
+* [Formuliergegevensmodel maken (FDM)](/help/forms/create-form-data-models.md)
 * [Forms-centrische AEM Workflows gebruiken - Step Reference to automatisate business processes](/help/forms/aem-forms-workflow-step-reference.md)
 * [Een aangepaste verzendactie maken voor Adaptieve Forms](/help/forms/custom-submit-action-form.md)
 * [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

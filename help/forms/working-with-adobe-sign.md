@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e81da7414335e00411942adeb41978d39f172b52
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3070'
+source-wordcount: '3071'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Een Cloud Service en volgorde voor ondertekening selecteren:
 
    >[!NOTE]
    >
-   > Als een adaptief formulier wordt gemaakt met een formuliergegevensmodel, wordt het veld Overeenkomst-id weergegeven in het dialoogvenster.
+   > Als een adaptief formulier wordt gemaakt met een formuliergegevensmodel (FDM), wordt het veld Overeenkomst-id weergegeven in het dialoogvenster.
 
 1. [Ontvangers toevoegen aan een adaptief formulier](working-with-adobe-sign.md#addsignerstoanadaptiveform) en selecteer Gereed ![Opslaan](assets/save_icon.svg) om de wijzigingen op te slaan.
 

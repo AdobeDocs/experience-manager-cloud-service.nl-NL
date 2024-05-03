@@ -1,13 +1,13 @@
 ---
 title: Hoe kan ik configureren [!DNL Microsoft Dynamics] OData voor AEM Forms?
-description: Leer formuliergegevensmodel te maken op basis van de entiteiten, kenmerken en services die zijn gedefinieerd in [!DNL Microsoft Dynamics] service.
+description: Leer om het Model van de Gegevens van de Vorm (FDM) tot stand te brengen dat op de entiteiten, de attributen, en de diensten wordt gebaseerd die in [!DNL Microsoft Dynamics] service.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 ![gegevensintegratie](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] is een software van het Beheer van de Verhouding van de Klant (CRM) en van de Planning van het Middel van de Onderneming (ERP) die ondernemingsoplossingen voor het creëren van en het beheren van klantenrekeningen, contacten, lood, kansen, en gevallen verstrekt. [[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) biedt een OData-cloudserviceconfiguratie voor de integratie van Forms met zowel online als op locatie [!DNL Microsoft Dynamics] server. Hiermee kunt u een formuliergegevensmodel maken op basis van de entiteiten, kenmerken en services die zijn gedefinieerd in [!DNL Microsoft Dynamics] service. Met het formuliergegevensmodel kunt u een adaptieve Forms maken die interactief werkt met [!DNL Microsoft Dynamics] server om bedrijfswerkstromen toe te laten. Bijvoorbeeld:
+[!DNL Microsoft Dynamics] is een software van het Beheer van de Verhouding van de Klant (CRM) en van de Planning van het Middel van de Onderneming (ERP) die ondernemingsoplossingen voor het creëren van en het beheren van klantenrekeningen, contacten, lood, kansen, en gevallen verstrekt. [[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) biedt een OData-cloudserviceconfiguratie voor de integratie van Forms met zowel online als op locatie [!DNL Microsoft Dynamics] server. Hiermee kunt u een FDM (Form Data Model) maken op basis van de entiteiten, kenmerken en services die zijn gedefinieerd in [!DNL Microsoft Dynamics] service. Met FDM (Form Data Model) kunt u Adaptive Forms maken die interactief werkt met [!DNL Microsoft Dynamics] server om bedrijfswerkstromen toe te laten. Bijvoorbeeld:
 
 * Query [!DNL Microsoft Dynamics] server voor gegevens en vooraf ingevulde Adaptive Forms
 * Gegevens schrijven naar [!DNL Microsoft Dynamics] over het indienen van adaptieve formulieren
-* Gegevens schrijven in [!DNL Microsoft Dynamics] via aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel, en omgekeerd
+* Gegevens schrijven in [!DNL Microsoft Dynamics] via aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel (FDM) en omgekeerd
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -136,20 +136,20 @@ In de **[!UICONTROL Authentication Settings]** tab:
 
    1. Selecteren **[!UICONTROL OAuth 2.0]** als het verificatietype.
 
-   1. De standaardwaarden vervangen in het dialoogvenster **[!UICONTROL Client Id]** (ook aangeduid als **Toepassings-id**), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]**, en **[!UICONTROL Resource]** velden met waarden uit uw [!DNL Microsoft Dynamics] serviceconfiguratie. Het is verplicht de URL van de dynamische instantie op te geven in het dialoogvenster **[!UICONTROL Resource]** te configureren veld [!DNL Microsoft Dynamics] met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. De standaardwaarden vervangen in het dialoogvenster **[!UICONTROL Client Id]** (ook aangeduid als **Toepassings-id**), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]**, en **[!UICONTROL Resource]** velden met waarden uit uw [!DNL Microsoft Dynamics] serviceconfiguratie. Het is verplicht de URL van de dynamische instantie op te geven in het dialoogvenster **[!UICONTROL Resource]** te configureren veld [!DNL Microsoft Dynamics] met een formuliergegevensmodel (FDM). Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Opgeven **[!UICONTROL openid]** in de **[!UICONTROL Authorization Scope]** veld voor het vergunningsproces op [!DNL Microsoft Dynamics].
 
       ![Verificatie-instellingen](assets/dynamics_authentication_settings_new.png)
-Formuliergegevensmodel
+Formuliergegevensmodel (FDM)
 1. Klik op **[!UICONTROL Connect to OAuth]**. U wordt omgeleid naar [!DNL Microsoft Dynamics] aanmeldingspagina
-1. Meld u aan met uw [!DNL Microsoft Dynamics] referenties en accepteren om de configuratie van de cloudservice in staat te stellen verbinding te maken met [!DNL Microsoft Dynamics] service. Het is een eenmalige taak om het Model van de Gegevens van de Vorm tussen de clouddienst en de dienst te vestigen.
+1. Meld u aan met uw [!DNL Microsoft Dynamics] referenties en accepteren om de configuratie van de cloudservice in staat te stellen verbinding te maken met [!DNL Microsoft Dynamics] service. Het is een eenmalige taak om het Model van de Gegevens van de Vorm (FDM) de clouddienst en de dienst te vestigen.
 
    U bent het Model van de Gegevens van de Vorm de pagina van de de dienstconfiguratie van de wolk, die een bericht toont dat de configuratie OData met succes wordt bewaard.
 
-De de wolkendienst van de Cloud Service van de Dynamica van MS (OData Service) wordt gevormd en met uw dienst van de Dynamica verbonden. Formuliergegevensmodel formuliergegevensmodel
+De de wolkendienst van de Cloud Service van de Dynamica van MS (OData Service) wordt gevormd en met uw dienst van de Dynamica verbonden. Formuliergegevensmodel (FDM)
 
-## Formuliergegevensmodel maken {#create-form-data-model}
+## Formuliergegevensmodel (FDM) maken {#create-form-data-model}
 
 <!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
@@ -161,19 +161,19 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-Nadat u de MS Dynamics OData-cloudservice hebt geconfigureerd, kunt u deze service gebruiken tijdens het maken van formuliergegevensmodellen. Zie voor meer informatie [Formuliergegevensmodel maken](create-form-data-models.md).
+Nadat u de MS Dynamics OData-cloudservice hebt geconfigureerd, kunt u de service gebruiken tijdens het maken van een FDM-model (Form Data Model). Zie voor meer informatie [Formuliergegevensmodel maken (FDM)](create-form-data-models.md).
 
-Vervolgens kunt u een adaptief formuliergegevensmodel maken en dit gebruiken in verschillende gebruiksgevallen van adaptieve formulieren, zoals:
+Vervolgens kunt u een adaptief formulier-gebaseerd formuliergegevensmodel (FDM) maken en dit gebruiken in verschillende gebruiksgevallen van adaptieve formulieren, zoals:
 
 * Adaptief formulier vooraf invullen door informatie op te vragen van [!DNL Microsoft Dynamics] entiteiten en diensten
-* Invoeden [!DNL Microsoft Dynamics] serverbewerkingen die zijn gedefinieerd in een formuliergegevensmodel met behulp van adaptieve formulierregels
+* Invoeden [!DNL Microsoft Dynamics] serverbewerkingen die zijn gedefinieerd in een formuliergegevensmodel (FDM) met behulp van adaptieve formulierregels
 * Verzonden formuliergegevens schrijven naar [!DNL Microsoft Dynamics] entiteiten
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
 U kunt [De handeling Verzenden van formuliergegevensmodel configureren](/help/forms/using-form-data-model.md) voor een adaptief formulier om gegevens naar Microsoft Dynamics OData te verzenden.
 
-Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van het Formulier in bedrijfswerkschema&#39;s, zie [Gegevensintegratie](data-integration.md).
+Voor meer informatie over het creëren van en het gebruiken van het Model van de Gegevens van de Vorm (FDM) in bedrijfswerkschema&#39;s, zie [Gegevensintegratie](data-integration.md).
 
 ## Verwante artikelen
 

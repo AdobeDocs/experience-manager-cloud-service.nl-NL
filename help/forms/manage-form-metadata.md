@@ -3,9 +3,9 @@ title: Hoe kunnen we metagegevens voor AEM Forms beheren?
 description: Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1717'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
      <li>PDF-formulier, PDF-formulier (Acrobat) of PDF-formulier (ondertekend)</li> 
      <li>Document, document (ondertekend)</li> 
      <li>Adaptief formulier</li> 
-     <li>Formuliergegevensmodel</li>
+     <li>Formuliergegevensmodel (FDM)</li>
      <li>Bron</li> 
     </ul> </td> 
   </tr> 
@@ -162,7 +162,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
    <td>Adaptief formulier</td> 
    <td><p>Hiermee geeft u aan welk formuliermodel wordt gebruikt bij het ontwerpen van het adaptieve formulier. Deze eigenschap kan de volgende waarden hebben:</p> 
     <ul> 
-      <li>Formuliergegevensmodel </li>
+      <li>Formuliergegevensmodel (FDM)</li>
       <li>Schema: een XML van het JSON-schema</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->

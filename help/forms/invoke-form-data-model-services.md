@@ -1,22 +1,22 @@
 ---
-title: Hoe kan de service Form Data Model van Adaptive Forms worden aangeroepen met behulp van API's?
+title: Hoe kan de FDM-service (Form Data Model) van Adaptive Forms worden aangeroepen met behulp van API's?
 description: Verklaart invokeWebServices API die u kunt gebruiken om Webdiensten aan te halen die in WSDL van binnen een Adaptief gebied van de Vorm worden geschreven.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
 
-# API om de service Form Data Model aan te roepen vanuit Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API om de FDM-service (Form Data Model) aan te roepen vanuit Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Overzicht {#overview}
 
-[!DNL AEM Forms] Hiermee kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die in een formuliergegevensmodel zijn geconfigureerd vanuit een adaptief formulierveld. Als u een gegevensmodelservice wilt aanroepen, kunt u een regel maken in de visuele editor of een JavaScript opgeven met de `guidelib.dataIntegrationUtils.executeOperation` API in de code-editor van de [regeleditor](rule-editor.md).
+[!DNL AEM Forms] Hiermee kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die in een formuliergegevensmodel (FDM) zijn geconfigureerd vanuit een adaptief formulierveld. Als u een gegevensmodelservice wilt aanroepen, kunt u een regel maken in de visuele editor of een JavaScript opgeven met de `guidelib.dataIntegrationUtils.executeOperation` API in de code-editor van de [regeleditor](rule-editor.md).
 
 Dit document is vooral bedoeld voor het schrijven van een JavaScript met het `guidelib.dataIntegrationUtils.executeOperation` API om de service aan te roepen.
 
@@ -60,7 +60,7 @@ De API-structuur geeft de volgende details over de servicebewerking op.
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>Hiermee wordt het opslagpad naar het formuliergegevensmodel aangegeven, inclusief de naam ervan</td>
+   <td>Geeft het opslagpad aan naar het formuliergegevensmodel (FDM) met de naam ervan</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
@@ -87,7 +87,7 @@ De API-structuur geeft de volgende details over de servicebewerking op.
 
 ## Voorbeeldscript om een service aan te roepen {#sample-script-to-invoke-a-service}
 
-In het volgende voorbeeldscript wordt het `guidelib.dataIntegrationUtils.executeOperation` API om de `getAccountById` de dienstverrichting die in `employeeAccount` formuliergegevensmodel.
+In het volgende voorbeeldscript wordt het `guidelib.dataIntegrationUtils.executeOperation` API om de `getAccountById` de dienstverrichting die in `employeeAccount` formuliergegevensmodel (FDM).
 
 De `getAccountById` de bewerking neemt de waarde in de `employeeID` formulierveld als invoer voor de `empId` argument en retourneert werknemersnaam, accountnummer en rekeningsaldo voor de corresponderende werknemer. De uitvoerwaarden worden ingevuld in de opgegeven formuliervelden. De waarde in `name` argument is ingevuld in het dialoogvenster `fullName` formulierelement en -waarde voor `accountNumber` argument in `account` formulierelement.
 
@@ -119,7 +119,7 @@ De callback functie kan `success` en `failure` callback-functies.
 
 ### Sampletcript van de steekproef met succes en mislukkingscallback functies {#callback-function-success-failure}
 
-In het volgende voorbeeldscript wordt het `guidelib.dataIntegrationUtils.executeOperation` API om de `GETOrder` de dienstverrichting die in `employeeOrder` formuliergegevensmodel.
+In het volgende voorbeeldscript wordt het `guidelib.dataIntegrationUtils.executeOperation` API om de `GETOrder` de dienstverrichting die in `employeeOrder` formuliergegevensmodel (FDM).
 
 De `GETOrder` de bewerking neemt de waarde in de `Order ID` formulierveld als invoer voor de `orderId` argument en retourneert de waarde voor het aantal bestellingen in het dialoogvenster `success` callback-functie.  Als de `success` callback-functie retourneert niet de hoeveelheid van de volgorde, de `failure` callback-functie geeft de `Error occured` bericht.
 

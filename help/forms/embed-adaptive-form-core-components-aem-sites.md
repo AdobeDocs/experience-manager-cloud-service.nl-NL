@@ -4,9 +4,9 @@ description: Gebruik Adaptief Form Core-componenten op een AEM Sites-pagina om e
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1948'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
@@ -110,12 +110,12 @@ In de [!UICONTROL Edit Adaptive Forms Container] kunt u het volgende opgeven.
    * **Prefill-service**: U kunt de Prefill-service gebruiken om automatisch velden van een adaptief formulier in te vullen met bestaande gegevens. Wanneer een gebruiker een formulier opent, worden de waarden voor die velden vooraf ingevuld. Voor informatie over de Prefill-service raadpleegt u [Aangepaste formuliervelden vooraf invullen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **Categorie clientbibliotheek**: Geef de [JavaScript-functies](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) die worden gebruikt in expressies en worden ondersteund door Adaptive Forms.
 * **Gegevensmodel**: Met een gegevensmodel kunt u entiteiten en services integreren van verschillende gegevensbronnen tot een adaptief formulier. Kies **[!UICONTROL Form Data Model]** Als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
-   * **Formuliergegevensmodel**: Met een formuliergegevensmodel kan een adaptief formulier communiceren met verschillende gegevensbronnen. Voor informatie, bij het vormen van een gegevensbron, zie [Gegevensbronnen configureren](/help/forms/configure-data-sources.md).
+   * **Formuliergegevensmodel**: Met een formuliergegevensmodel (FDM) kan een adaptief formulier communiceren met verschillende gegevensbronnen. Voor informatie, bij het vormen van een gegevensbron, zie [Gegevensbronnen configureren](/help/forms/configure-data-sources.md).
    * **Schema**: Het schema vertegenwoordigt de structuur waarin de gegevens door het achterste deelsysteem in uw organisatie worden geproduceerd of worden verbruikt. U kunt [het schema aan een adaptief formulier koppelen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) en gebruikt de elementen ervan om dynamische inhoud toe te voegen aan een adaptief formulier.
 
      >[!NOTE]
      >
-     > Nadat u het formuliergegevensmodel hebt geconfigureerd, kunt u het bijbehorende formuliermodel niet meer wijzigen. Het is echter mogelijk het schema te wijzigen dat is gekoppeld aan het formuliergegevensmodel.
+     > Nadat u het formuliergegevensmodel (FDM) hebt geconfigureerd, kunt u het bijbehorende formuliermodel niet meer wijzigen. Het is echter mogelijk het schema te wijzigen dat is gekoppeld aan het formuliergegevensmodel (FDM).
 
 * **Tabblad Verzending**
 
@@ -125,7 +125,7 @@ In de [!UICONTROL Edit Adaptive Forms Container] kunt u het volgende opgeven.
       * **Handeling verzenden**: Een verzendactie wordt geactiveerd wanneer een gebruiker op de knop Verzenden klikt op een adaptief formulier. U kunt [De verzendactie configureren op adaptief formulier](/help/forms/configuring-submit-actions.md). Adaptieve formulieren bieden de volgende verzendacties uit het vak:
          * Verzenden naar REST-eindpunt
          * E-mail verzenden
-         * Verzenden met gebruik van formuliergegevensmodel
+         * Verzenden met gebruik van FDM (Form Data Model)
          * Een AEM-workflow aanroepen
          * Verzenden naar SharePoint
          * Verzenden naar OneDrive
