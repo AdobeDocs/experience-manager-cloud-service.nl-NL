@@ -1,13 +1,13 @@
 ---
 title: Snel publiceren naar AEM en Dynamic Media
 description: Met Snel publiceren in middelenweergave kunt u elementen gelijktijdig of afzonderlijk publiceren naar AEM en dynamische media. U kunt elementen en mappen selecteren en publiceren naar Dynamic Media of AEM.
-source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
+exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
+source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
-
 
 # Middelen publiceren naar AEM en Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
@@ -124,4 +124,5 @@ De volgende mogelijkheden zijn momenteel buiten bereik wanneer u middelen public
 * De mogelijkheid om Dynamic Media URL te kopiëren of te plakken op elementniveau (als de elementen naar Dynamic Media worden gepubliceerd).
 * De mogelijkheid om verwijzingen (elementen, tags, enzovoort) te publiceren tijdens het publiceren naar AEM.
 * Mogelijkheid om de Dynamic Media-synchronisatiestatus op mapniveau te overschrijven.
-* Mogelijkheid om de Dynamic Media-publicatiemodus op mapniveau te overschrijven.
+* Mogelijkheid om de Dynamic Media-publicatiemodus te overschrijven op mapniveau
+* Publicatie beheren wordt nog niet ondersteund.
