@@ -2,10 +2,12 @@
 title: Real Use monitoring for Edge Delivery Services for AEM Forms as a Cloud Service
 description: Real Use monitoring for Edge Delivery Services for AEM Forms as a Cloud Service impliceert de doorlopende tracking en analyse van gebruikersinteracties met formulieren.
 feature: Edge Delivery Services
+hide: true
+hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -30,15 +32,13 @@ Als u zich wilt aanmelden bij het dashboard voor bewaking van Edge Delivery Serv
 
 * **URL**: De URL is specifiek voor de gebruikerssite of het domein. De gebruikers hebben de optie om de site of het domein te filteren en het dashboard volgens hun vereisten weer te geven.
 
-* **Domeinsleutel**: De gebruiker genereert handmatig de domeinsleutel.
-
-Voor hulp met de sleutels van het Domein raadpleegt u [Verificatie](https://www.aem.live/developer/rum#authentication) documentatie.
+* **Domeinsleutel**: De gebruiker genereert handmatig de domeinsleutel. Neem contact op met uw Adobe als u domeinsleutels voor uw formulieren wilt opvragen.
 
 ### Monitoringdashboard voor Edge Delivery Services voor AEM Forms as a Cloud Service
 
 Nadat u de URL- en domeinsleutels hebt ingevoerd in het aanmeldingsscherm, krijgt u toegang tot het dashboard voor de bewaking van Edge Delivery Services voor AEM Forms as a Cloud Service.
 
-In de onderstaande afbeelding ziet u het RUM-dashboard voor Edge Delivery Services voor AEM Forms as a Cloud Service:
+In de onderstaande afbeelding ziet u het dashboard voor Edge Delivery Services voor as a Cloud Service AEM Forms:
 
 ![RUM Forms-dashboard](/help/edge/assets/rum-forms-dashboard.png)
 
