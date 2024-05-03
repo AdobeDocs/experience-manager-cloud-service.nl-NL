@@ -2,7 +2,8 @@
 title: Opties vervolgkeuzelijst laden vanaf URL
 description: De opties voor de vervolgkeuzelijst worden opgenomen in een afzonderlijk spreadsheet en vervolgens geïmporteerd in het primaire spreadsheet via de opgegeven URL.
 feature: Edge Delivery Services
-source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
+exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

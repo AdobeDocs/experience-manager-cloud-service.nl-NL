@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 695389430e3be4cef107aefad44fd7453cc9d36d
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
 workflow-type: tm+mt
 source-wordcount: '4908'
 ht-degree: 3%
@@ -840,7 +840,7 @@ ht-degree: 3%
       + [Omleiding](/help/edge/docs/redirects.md)
    + Forms samenstellen {#build-forms}
       + [Overzicht](/help/edge/docs/forms/overview.md)
-      + Aan de slag {#getting-started-eds-forms}
+      + Aan de slag {#getting-started-edge-delivery-services-forms}
          + [Aan de slag](/help/edge/docs/forms/tutorial.md)
          + [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
          + [Stel uw Google-werkbladen of Microsoft Excel-bestanden in om te beginnen met het accepteren van &#x200B;](/help/edge/docs/forms/submit-forms.md)
@@ -850,13 +850,13 @@ ht-degree: 3%
          + [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen](/help/edge/docs/forms/rules-forms.md)
          + [Een aangepast bedankbericht weergeven na het verzenden van het formulier](/help/edge/docs/forms/thank-you-page-form.md)
-      + Mogelijkheden {#advanced-features-eds-forms}
+      + Mogelijkheden {#advanced-features-edge-delivery-services-forms}
          + [Formulierfragmenten](/help/edge/docs/forms/form-fragments.md)
          + [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [Vertaling](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Aangepaste componenten](/help/edge/docs/forms/custom-components-forms.md)
-         + [Realtime gebruikerscontrole voor formulieren](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [Realtime gebruikerscontrole voor formulieren](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
       + Verwijzingen {#forms-references}
          + [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
    + Edge Delivery-bronnen {#resources}
