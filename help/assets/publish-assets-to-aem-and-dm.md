@@ -1,9 +1,9 @@
 ---
 title: Snel publiceren naar AEM en Dynamic Media
 description: Snel publiceren is een functie in de nieuwe interface of de weergave Elementen. Deze functie biedt gebruikers de mogelijkheid om snel en gelijktijdig of afzonderlijk naar AEM en dynamische media te publiceren. Dit betekent dat gebruikers na het selecteren van elementen en mappen kunnen kiezen om naar Dynamic Media te publiceren of naar AEM te publiceren. Met de functie Snel publiceren kan de nieuwe gebruikersinterface elementen en mappen publiceren naar Dynamic Media en AEM.
-source-git-commit: a1069ec278143665c1e17ea1a482589763dd153f
+source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Middelen publiceren naar AEM en Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-Met Experience Manager Assets kunt u snel elementen publiceren naar Experience Manager en Dynamic Media via de weergave Middelen. Zo beheert u uw elementen en publiceert u deze met [Weergave Middelen zonder over te schakelen op de beheerweergave](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview#persona-based-experiences).
+Met Experience Manager Assets kunt u snel elementen publiceren naar Experience Manager en Dynamic Media via de weergave Middelen. Zo beheert u uw elementen en publiceert u deze met [Weergave Middelen zonder over te schakelen op de beheerweergave](/help/assets/overview.md##persona-based-experiences).
 
 De weergave Experience Manager Assets biedt de flexibiliteit om elementen tegelijkertijd naar AEM of Dynamic Media te publiceren. U kunt elementen publiceren tijdens het uploaden, bladeren en zoeken in elementen. Al deze opties voor het publiceren van elementen worden in dit artikel uitgebreid uitgelegd.
 
@@ -21,8 +21,8 @@ Configureer deze instellingen om de publicatieopties voor AEM en Dynamic Media w
 
 * Als u de publicatieopties voor Dynamic Media wilt weergeven, configureert u de volgende instellingen met de Admin-weergave:
 
-   * [Een Dynamic Media-cloudconfiguratie maken](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm#configuring-dynamic-media-cloud-services).
-   * Stel de Dynamic Media-publicatiemodus in op mapniveau. U kunt deze instellingen configureren tijdens het maken van de Dynamic Media-cloudconfiguratie. Als u deze instellingen op mapniveau wilt overschrijven, raadpleegt u [Selectieve publicatie op mapniveau in Dynamic Media configureren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing).
+   * [Een Dynamic Media-cloudconfiguratie maken](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * Stel de Dynamic Media-publicatiemodus in op mapniveau. U kunt deze instellingen configureren tijdens het maken van de Dynamic Media-cloudconfiguratie. Als u deze instellingen op mapniveau wilt overschrijven, raadpleegt u [Selectieve publicatie op mapniveau in Dynamic Media configureren](/help/assets/dynamic-media/selective-publishing.md).
 
 * Om de publicatieopties voor AEM te bekijken, moet u AEM vormen publiceert eindpunt voor uw milieu.
 
@@ -99,7 +99,7 @@ De optie om naar Dynamic Media te publiceren op de pagina met zoekresultaten is 
 
 De publicatiestatus controleren op een middel of een map:
 
-1. Klikken **Activa** in de **Elementbeheer** in het linkerdeelvenster beschikbaar.
+1. Klikken **[!UICONTROL Assets]** in de **[!UICONTROL Assets Management]** in het linkerdeelvenster beschikbaar.
 2. Schakelaar aan de Mening van de Lijst gebruikend de Schakelaar van de Mening. U kunt de eigenschappen van elementen weergeven, zoals AEM Publiceren, Dynamic Media Publiceren, titel, grootte, afmetingen enzovoort.\
    Als een middel of een omslag niet wordt gepubliceerd, de status voor **AEM publiceren** en **Dynamic Media Publiceren** kolommen worden weergegeven als **Nvt.**
    ![publicatiestatus controleren1](/help/assets/assets/check-publish-status1.png)
