@@ -1,9 +1,9 @@
 ---
 title: Snel publiceren naar AEM en Dynamic Media
-description: Snel publiceren is een functie in de nieuwe interface of de weergave Elementen. Deze functie biedt gebruikers de mogelijkheid om snel en gelijktijdig of afzonderlijk naar AEM en dynamische media te publiceren. Dit betekent dat gebruikers na het selecteren van elementen en mappen kunnen kiezen om naar Dynamic Media te publiceren of naar AEM te publiceren. Met de functie Snel publiceren kan de nieuwe gebruikersinterface elementen en mappen publiceren naar Dynamic Media en AEM.
-source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
+description: Met Snel publiceren in middelenweergave kunt u elementen gelijktijdig of afzonderlijk publiceren naar AEM en dynamische media. U kunt elementen en mappen selecteren en publiceren naar Dynamic Media of AEM.
+source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
