@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -190,6 +190,17 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 
 1. Selecteren **[!UICONTROL Save]** om de eigenschappen op te slaan.
 
+
+## Hoe wijzigt u de naam van een AEM adaptief formulier? {#rename-an-AEM-Adaptive-Form}
+
+Voer de volgende stappen uit om de naam van een adaptief formulier te wijzigen:
+
+1. Selecteer een adaptief formulier in uw AEM Forms-gebruikersinterface.
+1. Klik op de knop **Eigenschappen** op de bovenste spoorstaaf.
+1. Wijzig de naam van het formulier in het dialoogvenster **Titel** zoals weergegeven in de onderstaande afbeelding.
+1. Klikken **Opslaan en sluiten**.
+
+![De naam van een AEM adaptief formulier wijzigen](/help/forms/assets/change-af-name.png)
 
 <!--
 

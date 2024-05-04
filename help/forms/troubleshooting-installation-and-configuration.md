@@ -5,9 +5,9 @@ contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -53,3 +53,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 De gebruikers kunnen niet bouwstijlpijpleiding in werking stellen. De pijpleiding ontbreekt na het runnen voor wat tijd.
 
 Als u het probleem wilt oplossen, opent u Cloud Manager en selecteert u de optie **[!UICONTROL Update]** optie voor uw milieu, en stel de pijpleiding in werking.
+
+
+## Bundels bevinden zich niet in de actieve status {#bundles-inactive-state}
+
+Voer de volgende stappen uit om het probleem op te lossen:
+
+1. Start AEM en wacht tot het programma volledig is gestart tot alle bundels zijn opgestart.
+1. Stop AEM (Ctrl + C).
+1. De Forms plaatsen `.far` in de installatiemap.
+1. Start de AEM server opnieuw.
