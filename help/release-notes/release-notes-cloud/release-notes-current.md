@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
+source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '2655'
 ht-degree: 0%
 
 ---
@@ -210,6 +210,80 @@ Tijdens foutopsporing in een [Rapid Development Environment (RDE)](/help/impleme
 * meerdere logbestanden parallel streamen
 
 Neem contact op met **<aemcs-rde-support@adobe.com>** om het uit te proberen en feedback te geven.
+
+
+## [!DNL Experience Manager] Hulplijnen {#guides}
+
+
+### Mogelijkheid om inhoud in meerdere talen te vertalen met behulp van vooraf geconfigureerde taalgroepen
+
+Met de hulplijnen voor Experience Managers kunt u nu taalgroepen maken en uw inhoud eenvoudig in meerdere talen vertalen. Met deze functie kunt u vertalingen volgens de behoeften van uw organisatie ordenen en beheren.
+
+Als u bijvoorbeeld uw inhoud voor bepaalde landen in Europa wilt vertalen, kunt u een taalgroep voor Europese talen maken, zoals Engels (EN), Frans (FR), Duits (DE), Spaans (ES) en Italiaans (IT).
+
+![vertaaldeelvenster](../assets/guides/translation-languages-2404.png)
+
+*Selecteer de taalgroepen of talen die u uw documenten wilt vertalen.*
+
+>[!NOTE]
+>
+>Als de doelmap van een taal ontbreekt of als de doeltaal gelijk is aan de bron, wordt deze grijs weergegeven en wordt een waarschuwingsteken weergegeven.
+
+Als beheerder kunt u taalgroepen maken en deze configureren naar meerdere mapprofielen. Als auteur kunt u de taalgroepen weergeven die zijn geconfigureerd in uw mapprofiel.
+
+
+Het maken van taalgroepen verbetert over het algemeen de efficiëntie en productiviteit van vertaalprojecten en verbetert uiteindelijk het lokalisatieproces in meerdere talen.
+
+
+Leer hoe u [documenten vertalen vanuit de webeditor](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+
+### Nieuwe ervaring voor het zoeken naar en filteren van bestanden in de gegevensopslagweergave
+
+Nu hebt u een verbeterde ervaring bij het filteren van bestanden. De vernieuwde functionaliteit voor het filteren van bestanden biedt een verbeterde manier om bestanden moeiteloos te doorzoeken en door te bladeren.
+
+![zoekbestanden in de dataweergave](../assets/guides/repository-filter-search-2404.png)
+
+*Zoeken naar de bestanden met de tekst`general purpose.`*
+
+Geniet van voordelen zoals snellere toegang tot relevante bestanden en een intuïtievere gebruikersinterface, waardoor uw zoekervaring vloeiender en efficiënter wordt.
+
+![snelzoekfilter ](../assets/guides/repository-filter-search-quick.png)
+
+*Gebruik de snelle filters om naar DITA en niet-DITA dossiers te zoeken.*
+
+Meer informatie over de **Filter Zoeken** in de [Linkerdeelvenster](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) sectie.
+
+### Verbeteringen in de gegevensbronaansluitingen
+
+De volgende verbeteringen zijn aangebracht in de gegevensbronconnectors voor de release 2024.4.0:
+
+#### Verbind met Salsify, Akeneo, en Microsoft Azure DevOps Boards (ADO) Gegevensbronnen
+
+Naast de bestaande out-of-the-box schakelaars, verstrekt de Gidsen van de Experience Manager ook schakelaars voor Salsify, Akeneo, en Microsoft Azure DevOps Boards (ADO) gegevensbronnen. Als beheerder kunt u deze connectors downloaden en installeren. Dan, vorm de geïnstalleerde schakelaars.
+
+#### De voorbeeldquery kopiëren en plakken om een inhoudsfragment of onderwerp te maken
+
+U kunt een vraag van steekproefgegevens in de generator gemakkelijk kopiëren en kleven om een inhoudsfragment of een onderwerp tot stand te brengen. Met deze eigenschap, moet u niet de syntaxis herinneren of een vraag manueel creëren. In plaats van de vraag manueel te typen, kunt u een steekproefvraag kopiëren en kleven, het uitgeven, en het gebruiken om de gegevens volgens uw vereisten te halen.
+
+![inhoudfragment invoegen, dialoogvenster](../assets/guides/insert-content-snippet.png)
+
+*Kopieer en bewerk een voorbeeldquery om het inhoudsfragment te maken.*
+
+#### Verbinding maken met JSON-gegevensbestanden via een bestandsverbinding
+
+
+Nu, als beheerder, kunt u een JSON dossierschakelaar vormen om JSON- gegevensdossiers als gegevensbron te gebruiken. Gebruik de connector om de JSON-bestanden van uw computer of de Adobe Experience Manager Assets te importeren. Vervolgens kunt u als auteur met behulp van de generatoren inhoudsfragmenten of onderwerpen maken.
+
+Met deze functie kunt u de gegevens die in uw JSON-bestanden zijn opgeslagen, gebruiken en opnieuw gebruiken in verschillende fragmenten. De inhoud wordt ook dynamisch bijgewerkt wanneer u de JSON-bestanden bijwerkt.
+
+#### Vorm Meerdere Middel URLs voor een Schakelaar om Inhoud Fragmenten of Onderwerpen tot stand te brengen
+
+Als beheerder, kunt u veelvoudige middel URLs voor sommige schakelaars zoals de Generische Cliënt van de REST, Salsify, Akeneo, en Microsoft Azure DevOps Boards (ADO) vormen.
+Dan, als auteur, verbind met de gegevensbronnen om inhoudsfragmenten of onderwerpen tot stand te brengen gebruikend de generators. Deze functie is handig omdat u geen gegevensbron hoeft te maken voor elke URL. Het helpt u om gegevens van om het even welke middelen voor een bepaalde gegevensbron in één enkel inhoudsfragment of onderwerp snel te halen. Meer details over de gegevensbronschakelaars en hoe te bekijken [vormt een gegevensbronschakelaar van het gebruikersinterface](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Leer hoe u [gegevens uit uw gegevensbron gebruiken](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+
+Voor meer informatie over de nieuwe eigenschappen en de verhogingen, mening [Nieuwe functies in de release van 2024.04.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+
+Voor de lijst met problemen die in deze release zijn opgelost, raadpleegt u [Opgeloste problemen in de release 2024.4.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
 
 ## Cloud Manager {#cloud-manager}
 
