@@ -2,7 +2,7 @@
 title: Functionele tests
 description: Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 0%
@@ -45,9 +45,9 @@ Het volgende diagram geeft een gedetailleerd overzicht van de beschikbare kwalit
 
 |                               | Eenheidstests | Aangepast<br/> Functionele tests | Aangepast<br/> UI-tests | Klant<br/> Validaties | Handmatig<br/> Testen |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Productiepijpleiding** | Ja<br/>Blokkeren<br/> | Ja<br/>Blokkeren<br/>60m Time-out | Ja<br/>Blokkeren<br/>60m Time-out | Nee | Nee |
-| **Niet-productiepijpleiding** | Ja<br/>Blokkeren<br/> | Inschakelen<br/>Blokkeren<br/>60m Time-out | Inschakelen<br/>Blokkeren<br/>60m Time-out | Nee | Nee |
-| **Interne validatie Adobe** | Ja<br/>Blokkeren<br/> | Ja<br/>Blokkeren<br/>60m Time-out | Ja<br/>Blokkeren<br/>60m Time-out | Nee | Nee |
+| **Productiepijpleiding** | Ja<br/>Blokkeren<br/> | Ja<br/>Blokkeren<br/>60m Time-out | Ja<br/>Blokkeren<br/>Tijdslimiet van 30 m | Nee | Nee |
+| **Niet-productiepijpleiding** | Ja<br/>Blokkeren<br/> | Inschakelen<br/>Blokkeren<br/>60m Time-out | Inschakelen<br/>Blokkeren<br/>Tijdslimiet van 30 m | Nee | Nee |
+| **Interne validatie Adobe** | Ja<br/>Blokkeren<br/> | Ja<br/>Blokkeren<br/>60m Time-out | Ja<br/>Blokkeren<br/>Tijdslimiet van 30 m | Nee | Nee |
 | **Klant-CI/CD** | Ja | Ja | Ja | Ja | Ja |
 | **Lokale ontwikkelaar van klant** | Ja | Ja | Ja | Ja | Ja |
 
