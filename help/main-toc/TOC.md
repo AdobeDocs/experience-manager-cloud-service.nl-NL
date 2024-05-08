@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
+source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
-source-wordcount: '4915'
+source-wordcount: '4917'
 ht-degree: 3%
 
 ---
@@ -204,6 +204,7 @@ ht-degree: 3%
       + [AEM productprofielen toewijzen](/help/journey-onboarding/assign-profiles-aem.md)
       + [Taken van ontwikkelaar- en implementatiebeheer](/help/journey-onboarding/developers.md)
       + [AEM](/help/journey-onboarding/aem-users.md)
+      + [Live checklist](/help/journey-onboarding/go-live-checklist.md)
    + AEM Referentie demos Add-on-reis {#demo-add-on}
       + [Overzicht](/help/journey-sites/demos-add-on/overview.md)
       + [Installatie](/help/journey-sites/demos-add-on/installation.md)
