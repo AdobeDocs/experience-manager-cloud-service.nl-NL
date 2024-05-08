@@ -3,9 +3,9 @@ title: Cloud Manager openen
 description: Leer hoe u toegang krijgt tot Cloud Manager zodat u uw projectbronnen kunt instellen.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 5c9dbaa25f0142afdae8b09dc18d1e1aaaf4c1fb
+source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Aangezien u de vorige stap hebt uitgevoerd, heeft uw team toegang tot Cloud Mana
 Nadat u dit document hebt gelezen, hebt u het volgende nodig:
 
 * Dat een systeembeheerder aan toegewezen **Zakelijke eigenaar** rol moet de eerste rol in uw organisatie zijn om u aan te melden en toegang te krijgen tot Cloud Manager.
-* Meld u aan bij Cloud Manager.
+* Aanmelden bij Cloud Manager.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -64,11 +64,11 @@ Gebruikers met de **Zakelijke eigenaar** de rol ontvangt een welkomstbericht met
 
 U kunt ook naar Cloud Manager navigeren **Programma&#39;s en producten** pagina van Adobe Experience Cloud homepage door deze stappen te volgen
 
-1. Ga rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com) en meld u aan met uw Adobe ID.
+1. Ga rechtstreeks naar [Adobe Experience Cloud](https://experience.adobe.com) en aanmelden met uw Adobe ID.
 
 1. Selecteer op de startpagina van Adobe Experience Cloud de optie **Experience Manager** om de AEM homepage te openen.
 
-   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Homepage van Experience Cloud](/help/journey-onboarding/assets/setup-resources2.png)
 
 1. Op de **Cloud Manager** tegel, selecteren **Starten**.
 
@@ -100,7 +100,7 @@ Als er programma&#39;s in uw organisatie aanwezig zijn, wordt op de landingspagi
 
 ### Wanneer een Programma bestaat en u een Beheerder van het Systeem bent {#programs-exist-sysadmin}
 
-Als programma&#39;s in uw organisatie bestaan en u een systeembeheerder bent, dan toont uw landingspagina **Toegang beheren** samen met **Programma toevoegen** optie.
+Als programma&#39;s in uw organisatie bestaan en u een systeembeheerder bent, dan toont uw landingspagina **Toegang beheren** knop samen met **Programma toevoegen** -optie.
 
 ![Systeembeheerweergave](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
@@ -109,8 +109,6 @@ Als programma&#39;s in uw organisatie bestaan en u een systeembeheerder bent, da
 Nadat u zich hebt aangemeld bij Cloud Manager, kunt u controleren of u de opdracht **Zakelijke eigenaar** productprofiel.
 
 1. Selecteer het profiel rechtsboven in het venster.
-
-   ![Gebruikersprofiel](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. Om de rollen te tonen die aan uw gebruiker worden toegewezen, selecteer **Gebruikersrollen**.
 
@@ -133,5 +131,5 @@ Ga door met de volgende revisie van het document [Een programma maken](create-pr
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
 * [Inleiding tot Cloud Manager](/help/onboarding/cloud-manager-introduction.md) - Meer informatie over Cloud Manager, Cloud Manager-programma&#39;s en omgevingen.
-* [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) - Leer hoe AEM as a Cloud Service teams en productprofielen toegang tot uw gelicentieerde Adobe-oplossingen kunnen verlenen en beperken.
+* [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) - Leer hoe AEM as a Cloud Service teams en productprofielen toegang tot uw gelicentieerde oplossingen voor Adoben kunnen verlenen en beperken.
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - Watch this video for an overview of Cloud Manager's UI from an AEM champion. -->
