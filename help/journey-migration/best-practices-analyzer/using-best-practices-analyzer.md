@@ -2,10 +2,10 @@
 title: Analysator van best practices gebruiken
 description: Leer hoe u de Analysator voor aanbevolen werkwijzen gebruikt om de gereedheid voor upgrades te begrijpen.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+source-git-commit: 077be031da7a610810d398b163676a98fc036f30
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 35%
+source-wordcount: '2661'
+ht-degree: 31%
 
 ---
 
@@ -51,6 +51,13 @@ De Analysator van Beste praktijken kan als zip dossier van het portaal van de Di
 >[!NOTE]
 >Download de Best Practices Analyzer van de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portaal.
 
+## Connectiviteit bronomgeving {#source-environment-connectivity}
+
+De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u het door BPA gegenereerde rapport automatisch wilt uploaden naar Cloud Acceleration Manager, moeten de volgende eindpunten toegankelijk zijn vanuit de instantie die AEM wordt uitgevoerd:
+
+* De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
+
+
 ## Het Rapport van de Analysator van Beste praktijken bekijken {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 en hoger {#aem-later-versions}
@@ -65,31 +72,40 @@ Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste p
 
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Terwijl BPA het rapport produceert, kunt u de vooruitgang zien die door het hulpmiddel op het scherm wordt gemaakt. Hier wordt het aantal geanalyseerde items weergegeven en ook het aantal gevonden bevindingen.
+1. Geef de BPA-upload-sleutel op om het gegenereerde BPA-rapport automatisch te uploaden naar [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Navigeer naar de knop [Analyse van beste praktijken in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+
+>[!NOTE]
+>U kunt automatisch uploaden naar CAM overslaan door **Rapport automatisch uploaden naar CAM overslaan**. Als u verkiest om over te slaan, zult u het BPA- rapport als komma-gescheiden waardedossier manueel moeten downloaden en dan het dossier in CAM uploaden. Het wordt aanbevolen de optie Upload key te gebruiken omdat deze de bewerking stroomlijnt.
+
+1. De **Genereren** wordt geactiveerd wanneer een geldige toets wordt opgegeven. Klikken op **Genereren** om rapportgeneratie in werking te stellen.
+
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+
+
+1. Terwijl BPA het rapport produceert, kunt u de vooruitgang zien die door het hulpmiddel op het scherm wordt gemaakt. De voortgang wordt weergegeven in procenten dat is voltooid. Ook wordt het aantal geanalyseerde items weergegeven en wordt het aantal gevonden bevindingen weergegeven.
+
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
+>[!NOTE]
+>De tijdstempel van de BPA-upload met sleutelvervaldatum wordt in de rechterbovenhoek weergegeven. U zou BPA moeten vernieuwen uploadt sleutel wanneer het bijna zijn vervaldatum is. Als u de toets wilt vernieuwen, klikt u op **Vernieuwen** om naar CAM te navigeren om de sleutel te vernieuwen.
 
 1. Nadat het BPA-rapport is gegenereerd, worden een samenvatting en het aantal bevindingen weergegeven in een tabelvorm die is ingedeeld op basis van het type bevinding en het belangrijkste niveau. Voor meer informatie over een bepaalde bevinding kunt u op het nummer klikken dat overeenkomt met het type bevinding in de tabel.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   De bovenstaande actie schuift automatisch naar de locatie van die bevinding in het rapport.
+1. U kunt het rapport downloaden in de indeling CSV (comma-separated values, door komma&#39;s van elkaar gescheiden waarden) door op **Exporteren naar CSV**. U kunt het rapport ook weergeven in CAM door op **Ga naar CAM**. Hiermee gaat u naar de [Analyse van best practices](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) pagina in CAM.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door te klikken **Rapport vernieuwen**.
 
-1. U kunt het rapport downloaden in de indeling CSV (comma-separated values, door komma&#39;s van elkaar gescheiden waarden) door op **Exporteren naar CSV**, zoals weergegeven in onderstaande afbeelding.
+![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >U kunt BPA dwingen om zijn geheime voorgeheugen te ontruimen en het rapport opnieuw te produceren door te klikken **Rapport vernieuwen**.
+1. Als het geheime voorgeheugen verloopt, hebt u de optie om het laatste geproduceerde rapport in CAM te bekijken door op te klikken **Bekijk het laatste geproduceerde rapport in CAM** of stel een nieuwe rapportgeneratie in door op **Nieuw rapport genereren**.
 
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
-   >[!NOTE]
-   >Tijdens het genereren van het rapport wordt de voortgang weergegeven in procenten van het voltooide rapport, zoals in de onderstaande afbeelding wordt getoond.
-
-   ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 #### Het gebruiken van Filters in het Rapport van de Analysator van Beste praktijken {#bpa-filters}
 
