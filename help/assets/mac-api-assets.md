@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+source-git-commit: 835aab546896195c3a2a3355b35b81f2cd385676
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De [!DNL Assets] Met de HTTP-API kunt u CRUD-bewerkingen (read-read-update-delet
 
 >[!NOTE]
 >
->De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
+> Er is een gemoderniseerde OpenAPI-implementatie van de API voor contentfragmentbeheer beschikbaar. Zie voor volledige documentatie [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). Het wordt aanbevolen de nieuwe OpenAPI-implementatie te gebruiken. Het bestaande gebruik van middelen HTTP API voor inhoudsfragmenten moet worden gemigreerd naar de nieuwe OpenAPI voor contentfragmentbeheer.
 
 De API openen:
 
