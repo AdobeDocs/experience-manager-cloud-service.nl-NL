@@ -2,7 +2,7 @@
 title: Snel publiceren naar AEM en Dynamic Media
 description: Met Snel publiceren in middelenweergave kunt u elementen gelijktijdig of afzonderlijk publiceren naar AEM en dynamische media. U kunt elementen en mappen selecteren en publiceren naar Dynamic Media of AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
+source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 0%
@@ -40,7 +40,7 @@ U kunt elementen publiceren naar AEM en Dynamic Media terwijl u elementen upload
 Elementen publiceren tijdens het uploaden naar een map met de Dynamic Media-publicatiemodus ingesteld op **Bij activering**:
 
 1. Klikken **Elementen toevoegen** > **Bladeren** > **Door bestanden bladeren** om naar de juiste map te navigeren om elementen te uploaden. De **Publicatieopties** wordt de sectie weergegeven **DM-publicatiemodus** als **Bij activering**.
-   ![Afbeelding uploaden na activering](/help/assets/assets/upload-upon-activation.png)
+   ![Afbeelding uploaden na activering](/help/assets/assets/upload-upon-activation1.png)
 2. Selecteren **Publiceren naar AEM en Dynamic Media** en klik op **Uploaden**. De activa worden tegelijkertijd aan AEM en Dynamic Media gepubliceerd. Ga voor de bijgewerkte publicatiestatus voor deze elementen naar [Publicatiestatus controleren](#check-publish-status).
 
 ### Dynamic Media-publicatiemodus ingesteld op Direct {#dynamic-media-publish-mode-set-to-immediate}
