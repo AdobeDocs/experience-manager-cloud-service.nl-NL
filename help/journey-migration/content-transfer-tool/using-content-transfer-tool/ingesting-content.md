@@ -2,9 +2,9 @@
 title: Inhoud in Cloud Service invoegen
 description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
+source-git-commit: 6372277adfac0700d80a3e6c013f419892822e55
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2905'
 ht-degree: 1%
 
 ---
@@ -215,6 +215,8 @@ De beste praktijken wijzen erop dat als **Niet-sluitereffect** opname moet worde
 Eigenschapwaarden voor knooppunten die zijn opgeslagen in MongoDB, mogen niet groter zijn dan 16 MB. Als een nodewaarde de gesteunde grootte overschrijdt, ontbreekt het opnemen en het logboek zal een bevatten `BSONObjectTooLarge` fout en geef op welk knooppunt het maximum heeft overschreden. Dit is een MongoDB-beperking.
 
 Zie de `Node property value in MongoDB` notitie in [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) voor meer informatie en een koppeling naar een gereedschap voor eikenhout waarmee u alle grote knooppunten kunt vinden. Als alle knooppunten met grote afmetingen zijn verholpen, voert u de extractie en inname opnieuw uit.
+
+Als u deze beperking wilt voorkomen, voert u het [Analysator van best practices](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) over de bron AEM instantie en de bevindingen die zij presenteert, met name de [&quot;Niet-ondersteunde Repository Structure&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) patroon.
 
 ### Ingestie gestopt {#ingestion-rescinded}
 
