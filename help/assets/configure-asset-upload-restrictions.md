@@ -1,17 +1,17 @@
 ---
 title: Beperkingen voor het uploaden van middelen configureren
-description: Configureer Adobe Experience Manager Assets om het type elementen te beperken dat gebruikers kunnen uploaden op basis van het MIME-type. Zo voorkomt u ongewenste uploads in de gewenste indeling en schadelijke bestanden.
+description: Configureer Adobe Experience Manager Assets om het type elementen te beperken dat gebruikers op basis van het MIME-type kunnen uploaden. Zo voorkomt u ongewenste uploads in de gewenste indeling en schadelijke bestanden.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 4%
+source-wordcount: '363'
+ht-degree: 0%
 
 ---
 
 # Beperkingen voor het uploaden van middelen configureren {#configure-asset-upload-restrictions}
 
-U kunt Adobe Experience Manager Assets zodanig configureren dat het type elementen dat gebruikers kunnen uploaden, wordt beperkt op basis van het MIME-type.
+U kunt Adobe Experience Manager Assets configureren om het type elementen te beperken dat gebruikers kunnen uploaden op basis van het MIME-type.
 
 >[!IMPORTANT]
 >
@@ -25,7 +25,7 @@ U moet beheerdersrechten hebben om beperkingen voor het uploaden van elementen t
 
 Om te vormen [!DNL Experience Manager] om gebruikers te beperken tot het uploaden van bestanden van specifieke MIME-typen:
 
-1. Ga naar **[!UICONTROL Tools > Assets > Assets Configurations]**.
+1. Navigeren naar **[!UICONTROL Tools > Assets > Assets Configurations]**.
 
 1. Klik op **[!UICONTROL Upload Restrictions]**.
 
@@ -35,7 +35,7 @@ Om te vormen [!DNL Experience Manager] om gebruikers te beperken tot het uploade
 
 1. Klik op **[!UICONTROL Save]**.
 
-**Voorbeeld 1: Uploaden van alle afbeeldingen en PDF-bestanden naar Experience Manager Assets toestaan**
+**Voorbeeld 1: het uploaden van alle afbeeldingen en PDF-bestanden naar Experience Manager Assets toestaan**
 
 Voer de volgende instellingen uit om het uploaden van afbeeldingen in alle indelingen en PDF-bestanden naar Experience Manager Assets toe te staan:
 
@@ -49,7 +49,7 @@ Als u probeert een bestand te uploaden dat niet is opgenomen in de lijst met toe
 
 `Screen Recording 2022-08-31 at 3.36.09 PM.mov` verwijst naar een bestandsnaam die niet is opgenomen in de toegestane MIME-typen.
 
-**Voorbeeld 2: Uploaden van specifieke afbeeldingsindelingen naar Experience Manager Assets toestaan**
+**Voorbeeld 2: uploaden van specifieke afbeeldingsindelingen naar Experience Manager Assets toestaan**
 
 Voer de volgende instellingen uit om specifieke afbeeldingsindelingen toe te voegen aan de toegestane MIME-typen en het uploaden van alle andere elementindelingen te beperken:
 
@@ -60,14 +60,15 @@ Op basis van de instellingen in de afbeelding kunt u afbeeldingen in de indeling
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
+* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

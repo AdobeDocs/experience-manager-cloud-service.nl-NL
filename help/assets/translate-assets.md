@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2456'
+source-wordcount: '2468'
 ht-degree: 12%
 
 ---
@@ -168,7 +168,7 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 1. Selecteren **[!UICONTROL Update language copies]** onderaan.
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Add to existing translation project]**.
 1. Van de **[!UICONTROL Existing translation project]** Selecteer een project om het element voor vertaling toe te voegen.
-1. Selecteer **[!UICONTROL Start]**.
+1. Selecteren **[!UICONTROL Start]**.
 1. Zie de stappen 9-14 van [Toevoegen aan bestaand vertaalproject](#add-to-existing-translation-project) de rest van de procedure af te ronden.
 
 ### Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
@@ -283,14 +283,15 @@ Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt
 
 **Zie ook**
 
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
+* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

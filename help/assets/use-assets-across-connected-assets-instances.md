@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3756'
-ht-degree: 14%
+source-wordcount: '3729'
+ht-degree: 12%
 
 ---
 
@@ -29,7 +29,7 @@ De functionaliteit Connected Assets ondersteunt de bovenstaande gebruiksscenario
 >
 >Configureer Connected Assets alleen wanneer u de middelen moet gebruiken die beschikbaar zijn op een externe DAM-implementatie op een aparte Sites-implementatie voor het ontwerpen van webpagina&#39;s.
 
-## Overzicht van gekoppelde assets {#overview-of-connected-assets}
+## Overzicht van Verbonden elementen {#overview-of-connected-assets}
 
 Wanneer u pagina&#39;s bewerkt in [!UICONTROL Page Editor] als doeldoel kunnen de auteurs naadloos zoeken naar elementen van een andere map en deze insluiten [!DNL Assets] plaatsing die als bron van activa dienst doet. De beheerders creëren eenmalig integratie van een plaatsing van [!DNL Experience Manager] with [!DNL Sites] capaciteit met een andere plaatsing van [!DNL Experience Manager] with [!DNL Assets] capaciteit. U kunt Dynamic Media-afbeeldingen op de webpagina&#39;s van uw site ook gebruiken via Connected Assets en de Dynamic Media-functies gebruiken, zoals slimme uitsnijdvoorinstellingen en voorinstellingen voor afbeeldingen.
 
@@ -65,7 +65,7 @@ De diverse rollen die betrokken zijn om te vormen en het vermogen en hun overeen
 | DAM-gebruiker | Lokaal | `Authors` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
 | [!DNL Sites] auteur | Lokaal | <ul><li>`Authors` (met leestoegang op de externe DAM en auteurstoegang op de lokale [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau [!DNL Sites]</li></ul> | Eindgebruikers zijn [!DNL Sites] auteurs die deze integratie gebruiken om de snelheid van hun inhoud te verbeteren. Auteurs kunnen bestanden zoeken en doorbladeren in externe DAM met [!UICONTROL Content Finder] en het gebruik van de vereiste afbeeldingen op lokale webpagina&#39;s. |
 | [!DNL Assets] beheerder | Extern | [!DNL Experience Manager] `administrators` | Configureer CORS (Cross-Origin Resource Sharing). |
-| DAM-gebruiker | Extern | `Authors` | Auteur rol op de afstandsbediening [!DNL Experience Manager] implementatie. Zoek en blader naar assets in gekoppelde assets met de [!UICONTROL Content Finder]. |
+| DAM-gebruiker | Extern | `Authors` | Auteur-rol op de externe server [!DNL Experience Manager] implementatie. Elementen zoeken en doorbladeren in Connected Assets met de opdracht [!UICONTROL Content Finder]. |
 | DAM-distributeur (technische gebruiker) | Extern | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | Deze gebruiker die aanwezig is op de externe implementatie wordt gebruikt door [!DNL Experience Manager] lokale server (niet de [!DNL Sites] auteurrol) om de verre activa, namens te halen [!DNL Sites] auteur. |
 | [!DNL Sites] technisch gebruiker | Lokaal | `connectedassets-sites-techaccts` | Toestaan [!DNL Assets] implementatie om te zoeken naar verwijzingen naar elementen in het dialoogvenster [!DNL Sites] webpagina&#39;s. |
 
@@ -100,7 +100,7 @@ Aangesloten elementen en lokale elementen configureren [!DNL Sites] connectivite
    1. A **[!UICONTROL Title]** van de configuratie.
    1. **[!UICONTROL Remote DAM URL]** is de URL van het [!DNL Assets] locatie in de notatie `https://[assets_servername]:[port]`.
    1. Referenties van een DAM-distributeur (technische gebruiker).
-   1. In de **[!UICONTROL Mount Point]** veld, voer de lokale [!DNL Experience Manager] pad waar [!DNL Experience Manager] haalt de elementen op. Bijvoorbeeld de map `connectedassets`. De middelen die van DAM worden opgehaald worden opgeslagen in deze omslag op [!DNL Sites] implementatie.
+   1. In de **[!UICONTROL Mount Point]** veld, voer de lokale [!DNL Experience Manager] pad waar [!DNL Experience Manager] haalt de elementen op. Bijvoorbeeld: `connectedassets` map. De middelen die van DAM worden opgehaald worden opgeslagen in deze omslag op [!DNL Sites] implementatie.
    1. **[!UICONTROL Local Sites URL]** is de locatie van de [!DNL Sites] implementatie. [!DNL Assets] de plaatsing gebruikt deze waarde om verwijzingen naar de digitale activa te handhaven die door dit worden gehaald [!DNL Sites] implementatie.
    1. Referenties van [!DNL Sites] technische gebruiker.
    1. De waarde van **[!UICONTROL Original Binary transfer optimization Threshold]** in het veld wordt opgegeven of de oorspronkelijke elementen (inclusief de uitvoeringen) al dan niet synchroon worden overgedragen. Elementen met een kleinere bestandsgrootte kunnen gemakkelijk worden opgehaald terwijl elementen met een relatief grotere bestandsgrootte het best asynchroon kunnen worden gesynchroniseerd. De waarde hangt van uw netwerkmogelijkheden af.
@@ -171,7 +171,7 @@ Om te vormen [!DNL Dynamic Media] op [!DNL Assets] en [!DNL Sites] implementatie
 
 1. Inschakelen [[!DNL Dynamic Media] ondersteuning in Image Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Met deze functie wordt de standaardinstelling ingeschakeld [Afbeeldingscomponent](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) op weergave [!DNL Dynamic Media] afbeeldingen wanneer [!DNL Dynamic Media] afbeeldingen worden door auteurs gebruikt in webpagina&#39;s op lokale [!DNL Sites] implementatie.
 
-## Externe assets gebruiken {#use-remote-assets}
+## Externe elementen gebruiken {#use-remote-assets}
 
 De auteurs van de website maken gebruik van Content Finder om verbinding te maken met de DAM-implementatie. Auteurs kunnen externe assets zoeken, doorbladeren en naar een component slepen. Om aan verre DAM voor authentiek te verklaren, houd de geloofsbrieven die door uw beheerder (als om het even welk) worden verstrekt handig.
 
@@ -179,7 +179,7 @@ Auteurs kunnen de middelen die beschikbaar zijn op de lokale DAM en de externe D
 
 Alleen die tags met externe elementen worden opgehaald die een exact overeenkomende tag hebben samen met dezelfde taxonomihiërarchie, beschikbaar op de lokale [!DNL Sites] implementatie. Alle andere tags worden verwijderd. Auteurs kunnen naar externe elementen zoeken met alle tags op de externe server [!DNL Experience Manager] implementatie, aangezien het een full-text onderzoek aanbiedt.
 
-### Procedure voor gebruik {#walk-through-of-usage}
+### Doorloop van het gebruik {#walk-through-of-usage}
 
 Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervaring beter te begrijpen. Gebruik documenten of afbeeldingen van uw keuze op de externe DAM-implementatie.
 
@@ -201,7 +201,7 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
    ![Opties voor het filteren van documenttypen en afbeeldingen bij het zoeken naar assets op de externe DAM](assets/filetypes_filter_connected_assets.png)
 
-   *Afbeelding: Opties voor het filteren van documenttypen en afbeeldingen bij het zoeken naar assets op de externe DAM.*
+   *Afbeelding: Opties voor het filteren van documenttypen en afbeeldingen bij het zoeken naar elementen op externe DAM.*
 
 1. De auteur van een site krijgt een melding als het origineel van een element asynchroon wordt opgehaald en als een haaltaak mislukt. Tijdens het ontwerpen of zelfs na het ontwerpen kunnen de auteurs gedetailleerde informatie over taken en fouten in het dialoogvenster [asynchrone taken](/help/operations/asynchronous-jobs.md) gebruikersinterface.
 
@@ -332,7 +332,7 @@ U kunt elementen toevoegen aan de [!DNL Sites] implementatie, maar deze middelen
 * De functionaliteit ondersteunt naadloos zoeken en gebruiken van externe assets. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets te migreren.
 * Het is niet mogelijk om een extern middel als paginaminiatuur te gebruiken op [!UICONTROL Page Properties] gebruikersinterface. U kunt in [!UICONTROL Page Properties] gebruikersinterface van [!UICONTROL Thumbnail] door te klikken [!UICONTROL Select Image].
 
-### Installatie en licenties {#setup-licensing}
+### Instellen en licenties verlenen {#setup-licensing}
 
 * [!DNL Assets] implementatie op [!DNL Adobe Managed Services] wordt ondersteund.
 * [!DNL Sites] kan verbinding maken met [!DNL Assets] implementatie tegelijk.
@@ -343,7 +343,7 @@ U kunt elementen toevoegen aan de [!DNL Sites] implementatie, maar deze middelen
 
 * Gebruikers kunnen tijdens het ontwerpen zoeken naar externe elementen en deze naar de lokale pagina slepen. Er wordt geen andere functionaliteit ondersteund.
 * Voor ophaalbewerkingen geldt een time-out na 5 seconden. Auteurs kunnen problemen ervaren bij het ophalen van assets, bijvoorbeeld als er netwerkproblemen optreden. Auteurs kunnen proberen door het externe element te slepen van [!UICONTROL Content Finder] tot [!UICONTROL Page Editor].
-* Eenvoudige bewerkingen die niet-destructief zijn en bewerkingen die worden ondersteund via de `Image`-component van , kunnen worden uitgevoerd op opgehaalde elementen. Assets zijn alleen-lezen.
+* Eenvoudige bewerkingen die niet-destructief zijn en de bewerking worden ondersteund via het dialoogvenster `Image` kan worden uitgevoerd op opgehaalde elementen. Assets zijn alleen-lezen.
 * De enige methode om het element opnieuw op te halen is het op een pagina te slepen. Er is geen API-ondersteuning of andere methoden om middelen opnieuw op te halen om deze bij te werken.
 * Indien activa uit de DAM worden ontmanteld, blijven deze in gebruik [!DNL Sites] pagina&#39;s.
 * De externe referentie-items van een element worden asynchroon opgehaald. De verwijzingen en het totale aantal zijn niet in real time en er kan een verschil zijn als [!DNL Sites] auteur gebruikt het element terwijl een DAM-gebruiker de referentie bekijkt. DAM-gebruikers kunnen de pagina vernieuwen en het totaalaantal over een paar minuten opnieuw proberen.
@@ -367,13 +367,14 @@ Ga als volgt te werk om algemene fouten op te lossen:
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
-* [Rapporten over assets](asset-reports.md)
+* [Zoeken in middelen](search-assets.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
+* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

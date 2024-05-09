@@ -1,14 +1,14 @@
 ---
 title: Assets Insights
-description: Houd gebruikersbeoordelingen en gebruiksstatistieken bij van afbeeldingen die worden gebruikt in marketingcampagnes van derden en creatieve oplossingen voor Adobe.
+description: Houd gebruikersbeoordelingen en gebruiksstatistieken bij van afbeeldingen die worden gebruikt op websites van derden, marketingcampagnes en creatieve oplossingen van de Adobe.
 contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 3%
+source-wordcount: '846'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-Met de functie voor beperkte informatie kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
+Met de functie Assets Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van de Adobe. Hierdoor krijgt u meer inzicht in de prestaties en de populariteit van de afbeeldingen.
 
 Met Elementinzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals het aantal keer dat een afbeelding wordt beoordeeld, geklikt en afbeeldingen worden afgedrukt (het aantal keer dat een afbeelding op de website wordt geladen). Er worden scores toegewezen aan afbeeldingen op basis van deze statistieken. U kunt de scores en de prestatiesstatistieken gebruiken om populaire beelden voor opneming in catalogi, marketing campagnes, etc. te selecteren. U kunt zelfs archiverings en vergunningsvernieuwing beleid formuleren dat op deze statistieken wordt gebaseerd.
 
@@ -56,7 +56,7 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
    >
    >Omdat de eigenschap van de Inzichten van Activa typisch de gegevens van Oplossingen van haalt [!DNL Adobe Analytics] op een periodieke manier, kan de sectie van Oplossingen niet de meest recente gegevens tonen. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa in werking stellen om de gegevens van de Analyse terug te winnen.
 
-1. Als u de prestatiestatistieken voor het actief grafisch wilt weergeven over een tijdsperiode, selecteert u de periode in het dialoogvenster **[!UICONTROL Performance Statistics]** sectie. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
+1. Als u de prestatiestatistieken voor het actief grafisch wilt weergeven over een bepaalde periode, selecteert u de periode in het dialoogvenster **[!UICONTROL Performance Statistics]** sectie. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -64,7 +64,7 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
    >
    >In tegenstelling tot de gegevens in de sectie van Oplossingen, toont de sectie van de Statistieken van Prestaties de meest recente gegevens.
 
-1. Klik op **[!UICONTROL Get Embed Code]** onder de elementminiatuur. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. Als u de insluitcode wilt verkrijgen voor het element dat u in websites opneemt om prestatiegegevens op te halen, klikt u op **[!UICONTROL Get Embed Code]** onder de elementminiatuur. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -104,7 +104,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Klik op de knop **[!UICONTROL Insights Configuration]** kaart.
 
-1. Ga voor de toegangsgegevens van de Analyse-webservice naar **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Web Services]** en kopieert u de **[!UICONTROL Shared Secret]** toets.
+1. Ga voor de toegangsgegevens van de Analyse-webservice naar **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Web Services]** en kopieer de **[!UICONTROL Shared Secret]** toets.
 
    Selecteer in de wizard de optie **[!UICONTROL Data Center]** en geef de weergavenaam van de **[!UICONTROL Company]**, Webservices **[!UICONTROL Username]** en plak de **[!UICONTROL Shared Secret]** toets.
 
@@ -120,7 +120,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 Zie voor meer informatie [Adobe Analytics Web Services](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
-### Paginanummering {#page-tracker}
+### Paginanummer {#page-tracker}
 
 Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Paginanummer voor u gegenereerd. Om de Inzichten van Activa toe te laten om te volgen [!DNL Experience Manager] elementen die in websites van derden worden gebruikt, nemen de paginacontrackercode in de websitecode op. Gebruik het hulpprogramma Paginanummering in Elementen om de code van de paginacontracker te genereren. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
@@ -128,7 +128,7 @@ Nadat u uw Adobe Analytics-account hebt geconfigureerd, wordt de code van Pagina
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. Van de **[!UICONTROL Navigation]** pagina, klikt u op de knop **[!UICONTROL Insights Page Tracker]** kaart.
+1. Van de **[!UICONTROL Navigation]** pagina, klikt u op de **[!UICONTROL Insights Page Tracker]** kaart.
 1. Klikken **[!UICONTROL Download]** om de code van de paginacontracker te downloaden.
 
 <!--
@@ -184,14 +184,15 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
+* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -2,10 +2,10 @@
 title: Kleurlabels voor afbeeldingen
 description: Met Adobe Experience Manager Assets kunt u onderscheid maken tussen kleuren in een afbeelding en deze automatisch als tags toepassen. Vervolgens kunt u deze tags gebruiken om afbeeldingen te zoeken en te filteren.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 2%
+source-wordcount: '1143'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,7 @@ In de volgende afbeelding ziet u de volgorde van taken die u uitvoert voor het c
 
 De eigenschappen voor kleurlabels voor afbeeldingen beheren:
 
-1. Ga naar **[!UICONTROL Tools > Assets > Color Tagging]**.
+1. Navigeren naar **[!UICONTROL Tools > Assets > Color Tagging]**.
 
    ![Eigenschappen van kleurtags](assets/color-tag-settings.png)
 
@@ -64,7 +64,7 @@ Kleurlabels voor afbeeldingen zijn standaard ingeschakeld. U kunt kleurlabeling 
 
 Kleurlabelen op mapniveau uitschakelen:
 
-1. Ga naar **[!UICONTROL Adobe Experience Manager > Assets > Files]**.
+1. Navigeren naar **[!UICONTROL Adobe Experience Manager > Assets > Files]**.
 
 1. Selecteer de map en klik op **[!UICONTROL Properties]**.
 
@@ -88,7 +88,7 @@ Metagegevensschema&#39;s bevatten specifieke velden waarin specifieke informatie
 
 U voegt als volgt de component Slimme kleurcodes toe aan de formuliereditor voor het metagegevensschema:
 
-1. Ga naar **[!UICONTROL Tools > Assets > Metadata Schemas]**.
+1. Navigeren naar **[!UICONTROL Tools > Assets > Metadata Schemas]**.
 
 1. Selecteer de schemanaam en klik **[!UICONTROL Edit]**.
 
@@ -110,7 +110,7 @@ Voer de volgende stappen uit als u afbeeldingen met kleurcodes of mappen (inclus
 
 1. Selecteer de [!DNL Adobe Experience Manager] logo en selecteer vervolgens elementen in het [!UICONTROL Navigation] pagina.
 
-1. Selecteer [!UICONTROL Files].
+1. Selecteren [!UICONTROL Files].
 
 1. Navigeer in de interface Middelen naar de map waarop u kleurcodes wilt toepassen.
 
@@ -125,7 +125,7 @@ Wanneer het proces is voltooid, navigeert u naar de [!UICONTROL Properties] pagi
 
 Slimme-kleurtags voor afbeeldingen weergeven:
 
-1. Ga naar **[!UICONTROL Adobe Experience Manager > Assets > Files]**.
+1. Navigeren naar **[!UICONTROL Adobe Experience Manager > Assets > Files]**.
 
 1. Klik op de juiste map en selecteer de afbeelding.
 
@@ -147,7 +147,7 @@ Als u het zoekfilter wilt configureren, maakt u een voorspelling van de elementk
 
 U configureert als volgt het zoekfilter:
 
-1. Ga naar **[!UICONTROL Tools > General > Search Forms]**.
+1. Navigeren naar **[!UICONTROL Tools > General > Search Forms]**.
 
 1. Selecteren **[!UICONTROL Assets Admin Search Rail]** en klik op **[!UICONTROL Edit]**.
 
@@ -167,7 +167,7 @@ Na het configureren van alle eigenschappen voor kleurlabels en [configureren van
 
 Zo zoekt u afbeeldingen op basis van kleuren:
 
-1. Ga naar **[!UICONTROL Assets > Files]**.
+1. Navigeren naar **[!UICONTROL Assets > Files]**.
 
 1. Selecteren **[!UICONTROL Filter]** in de vervolgkeuzelijst.
    ![Elementen filteren](assets/filter-assets.png)
@@ -185,14 +185,15 @@ Zo zoekt u afbeeldingen op basis van kleuren:
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
+* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

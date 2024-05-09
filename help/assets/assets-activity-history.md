@@ -7,10 +7,10 @@ role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
 hide: true
 hidefromtoc: true
-source-git-commit: 0712e7bb4f3150fd3361bc77652c6883845f960c
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 22%
+source-wordcount: '231'
+ht-degree: 16%
 
 ---
 
@@ -23,7 +23,7 @@ De volgende bewerkingen worden in de activiteitsstroom aangemeld:
 * Maken
 * Verwijderen
 * Downloaden (inclusief uitvoeringen)
-* Publicatie
+* Publiceren
 * Publiceren ongedaan maken
 * Goedkeuren
 * Afwijzen
@@ -50,14 +50,15 @@ De tijdlijn geeft de activiteitsstroom weer voor de bewerkingen die u uitvoert o
 **Zie ook**
 
 * [Elementen vertalen](translate-assets.md)
-* [HTTP-API voor assets](mac-api-assets.md)
+* [Elementen HTTP-API](mac-api-assets.md)
 * [Ondersteunde bestandsindelingen](file-format-support.md)
-* [Assets doorzoeken](search-assets.md)
+* [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
-* [Rapporten over assets](asset-reports.md)
+* [Elementen rapporteren](asset-reports.md)
 * [Metagegevensschema&#39;s](metadata-schemas.md)
 * [Elementen downloaden](download-assets-from-aem.md)
 * [Metagegevens beheren](manage-metadata.md)
-* [Facetten doorzoeken](search-facets.md)
+* [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
+* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

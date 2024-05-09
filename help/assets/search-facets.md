@@ -4,9 +4,9 @@ description: In dit artikel wordt beschreven hoe u zoekfacetten in de Experience
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2388'
 ht-degree: 13%
 
 ---
@@ -354,6 +354,7 @@ Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigi
 * [Metagegevens beheren](manage-metadata.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
+* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
