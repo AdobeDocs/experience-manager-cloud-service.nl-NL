@@ -2,9 +2,9 @@
 title: Analysator van best practices gebruiken
 description: Leer hoe u de Analysator voor aanbevolen werkwijzen gebruikt om de gereedheid voor upgrades te begrijpen.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 31%
 
 ---
@@ -61,6 +61,11 @@ De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde ga
 ## Het Rapport van de Analysator van Beste praktijken bekijken {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 en hoger {#aem-later-versions}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="Upload het rapport Best Practices Analyzer automatisch naar CAM"
+>abstract="Geef de uploadsleutel voor BPA op om het gegenereerde BPA-rapport automatisch te uploaden naar de CAM (Cloud Acceleration Manager)."
 
 Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste praktijken te bekijken:
 
