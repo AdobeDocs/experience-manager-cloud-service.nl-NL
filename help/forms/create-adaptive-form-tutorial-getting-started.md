@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
+source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Aan het einde van de zelfstudie kunt u het volgende doen:
 
 AEM Forms biedt Foundation Components en Core Components (Basiscomponenten) voor het maken van formulieren. Core Components is de moderne en aanbevolen methode om nieuwe formulieren te maken. Waarom Core Components gebruiken? Deze componenten zijn lichtgewicht, opensource (beschikbaar op github), bieden een geweldige Google Lighthouse- en web vitals score, voldoen aan toegankelijkheidsvereisten en bieden alle vertrouwde functies van AEM Sites (zoals versioning en lokalisatie). Bovendien zijn deze componenten gemakkelijker te maken, kunt u hun verschijning gemakkelijk aanpassen volgens de branding richtlijnen van uw organisatie. Deze zijn niet afhankelijk van derden. Ontwikkelaars met kennis van JavaScript en CSS kunnen deze componenten eenvoudig aanpassen.
 
-![Waarom maken van op Core Components gebaseerde Adaptive Forms? Deze componenten zijn lichtgewicht, gemakkelijker te stileren, bieden hoge vuurtorsenscore, steunen toegankelijkheidsnormen, gemakkelijk aanpasbaar, open bronnen, beschikbaar op github, geen afhankelijkheid van derdebibliotheken, en hebben bijna geen het leren kromme voor AEM ontwikkelaars en AEM Auteurs bovenop het AEM Forms Core Components alle eigenschappen van AEM WCM Core Componenten.](/help/forms/assets/cc-core-components-benefits.png)
+![Waarom maken van op Core Components gebaseerde Adaptive Forms? Deze componenten zijn lichtgewicht, gemakkelijker te stileren, bieden hoge vuurtorsenscore, steunen toegankelijkheidsnormen, gemakkelijk aanpasbaar, open bronnen, beschikbaar op github, geen afhankelijkheid van derdebibliotheken, en hebben bijna geen het leren kromme voor AEM ontwikkelaars en AEM Auteurs bovenop het AEM Forms Core Components alle eigenschappen van AEM WCM Core Componenten.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## Gebruiksscenario: gestroomlijnde voorkwalificatie voor thuislening met Adaptive Forms
 
@@ -55,7 +55,7 @@ Nadat u de zelfstudie hebt voltooid, ziet het formulier er als volgt uit en werk
 
 ![Voeg hier een werkformulier toe](/help/forms/assets/cc-tutorial-final-form.png)
 
-## Een ontwikkelomgeving instellen
+## Ontwikkelomgeving instellen
 
 U kunt het Adaptief formulier rechtstreeks op uw lokale computer maken en testen voordat u het implementeert in een Cloud Service-omgeving. Adobe biedt een AEM SDK voor lokale ontwikkeling waarmee u
 
@@ -79,10 +79,14 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
 1. [De invoegtoepassing AEM Forms toevoegen](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Download en installeer de invoegtoepassing AEM Forms die overeenkomt met de versie van uw AEM SDK via de [Softwaredistributie](https://experience.adobe.com/#/downloads) Portaal.
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
-   +++AEM Forms-invoegtoepassing installeren
+   ++ + AEM Forms-invoegtoepassing installeren:
 
-       Als u AEM Forms Add-on wilt installeren, sluit u AEM SDK, voegt u AEM Forms add-on (.far)-bestand toe aan de map AEM SDK/crx-quickstart/install en start u AEM SDK opnieuw.
-   
+   AEM Forms-invoegtoepassing installeren:
+
+   1. Stop AEM SDK.
+   1. AEM Forms-add-onbestand (.far) toevoegen aan de `AEM SDK/crx-quickstart/install` map,
+   1. Start AEM SDK opnieuw.
+
 +++
 
 1. [Gebruikersmachtigingen configureren](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): Maak gebruikers met ontwikkelings-, auteurs- en andere machtigingen en voeg deze gebruikers toe aan vooraf gedefinieerde formuliergroepen.
@@ -90,7 +94,9 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
 
 1. [Aangepaste Forms-sjablonen toevoegen](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): Gebruik AEM Archetypes 48 of later om een nieuw AEM project te creëren en het in te voeren aan uw AEM SDK. Het project voegt adaptieve Forms-sjablonen toe aan uw AEM SDK.
 
-   +++Aangepaste Forms-sjablonen toevoegen
+   ![Aangepaste formuliersjablonen](/help/forms/assets/adaptive-forms-templates.png)
+
+   +++ Voeg Aangepaste Forms-sjablonen toe aan uw AEM SDK:
 
    1. Voer de onderstaande opdracht uit om een AEM project te maken.
 
@@ -108,13 +114,12 @@ Lokale ontwikkeling met AEM SDK bespaart u tijd en vereenvoudigt het ontwikkelin
       mvn -PautoInstallPackage clean install
       ```
 
-+++
-
    Nadat u het AEM project hebt geïmplementeerd, kunt u Adaptieve Forms-sjablonen in uw omgeving zien.
 
-   ![Aangepaste formuliersjablonen](/help/forms/assets/adaptive-forms-templates.png)
++++
 
-Raadpleeg voor een stapsgewijze handleiding voor het instellen van uw lokale AEM Forms-ontwikkelomgeving [lokale ontwikkelomgeving instellen voor AEM Forms](/help/forms/setup-local-development-environment.md)
+
+Raadpleeg voor gedetailleerde instructies en stapsgewijze instructies voor het instellen van uw lokale AEM Forms-ontwikkelomgeving de [lokale ontwikkelomgeving instellen voor AEM Forms](/help/forms/setup-local-development-environment.md) artikel.
 
 
 
