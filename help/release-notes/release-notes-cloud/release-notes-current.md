@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
+source-git-commit: c8b78ec6f1c7ff43950778fdd429a0aefff9856e
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2696'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,13 @@ Experience Manager Assets biedt nu een vereenvoudigde gebruikerservaring door [m
 
 U kunt nu [metagegevensformulier toewijzen aan of verwijderen uit meerdere mappen](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
+### Nieuwe functies in de beheerweergave {#admin-view-new-features}
+
+**Configuratie van delen koppelen**
+
+Een nieuwe verbeterde gebruikerservaring voor [koppelingen maken](/help/assets/share-assets.md) samen met een gloednieuwe set configuraties waarmee beheerders het standaardgedrag van deze functie voor uw gebruikers kunnen aanpassen.
+
+![Configuratie van delen koppelen](/help/assets/assets/config-email-service.png)
 
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
