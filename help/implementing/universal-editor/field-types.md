@@ -2,9 +2,9 @@
 title: Modeldefinities, velden en componenttypen
 description: In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
+source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1146'
 ht-degree: 1%
 
 ---
@@ -95,6 +95,7 @@ Hieronder vindt u de componenttypen die u kunt gebruiken voor het weergeven van 
 | [Boolean](#boolean) | `boolean` |
 | [Groep selectievakjes](#checkbox-group) | `checkbox-group` |
 | [Container](#container) | `container` |
+| [Inhoudsfragment](#content-fragment) | `aem-content-fragment` |
 | [Datum en tijd](#date-time) | `date-time` |
 | [Multiselect](#multiselect) | `multiselect` |
 | [Getal](#number) | `number` |
@@ -424,7 +425,7 @@ Met de fragmentkiezer voor ervaring kunt u een [Ervaar fragment](/help/sites-clo
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
-| `variationName` | `string` | Naam variabele waarin de geselecteerde variatie wordt opgeslagen. Indien ongedefinieerd, wordt geen variatietekiezer weergegeven | Nee |
+| `variationName` | `string` | Naam van variabele om de geselecteerde variatie op te slaan. Indien ongedefinieerd, wordt geen variatietekker weergegeven | Nee |
 
 >[!BEGINTABS]
 
@@ -447,16 +448,16 @@ Met de fragmentkiezer voor ervaring kunt u een [Ervaar fragment](/help/sites-clo
 ]
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB Screenshot]
 
-![Schermafbeelding van de fragmentkiezer van Experience](assets/component-types/aem-experience-fragment.png)
+![Screenshot van Experience Fragment picker](assets/component-types/aem-experience-fragment.png)
 
 >[!ENDTABS]
 
 
 #### Multiselect {#multiselect}
 
-Een multiselect componenttype stelt veelvoudige punten voor selectie in een drop-down met inbegrip van de capaciteit voor om de selecteerbare elementen te groeperen.
+Een type component met meerdere selecties geeft meerdere items voor selectie weer in een vervolgkeuzelijst, inclusief de mogelijkheid om de selecteerbare elementen te groeperen.
 
 >[!BEGINTABS]
 
@@ -730,13 +731,13 @@ Met een componenttype select kunt u één optie selecteren in een lijst met voor
 
 Met een componenttype tab kunt u andere invoervelden groeperen op meerdere tabbladen om de indeling van de auteurs te verbeteren.
 
-A `tab` definitie kan worden beschouwd als een scheidingsteken in de array van `fields`. Alles wat na een `tab` wordt op dat tabblad geplaatst totdat er een nieuwe `tab` aangetroffen, waarbij de volgende items op het nieuwe tabblad worden geplaatst.
+A `tab` definitie kan worden beschouwd als een scheidingsteken in de array van `fields`. Alles wat na een `tab` wordt op dat tabblad geplaatst totdat er een nieuwe `tab` wordt aangetroffen, waarbij de volgende items op het nieuwe tabblad worden geplaatst.
 
-Als u items boven alle tabbladen wilt weergeven, moet u deze vóór alle tabbladen definiëren.
+Als u wilt dat items boven alle tabbladen worden weergegeven, moet u deze vóór alle tabbladen definiëren.
 
 >[!BEGINTABS]
 
->[!TAB Monster]
+>[!TAB Voorbeeld]
 
 ```json
 {
@@ -768,15 +769,15 @@ Als u items boven alle tabbladen wilt weergeven, moet u deze vóór alle tabblad
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB Screenshot]
 
-![Screenshot van type component tab](assets/component-types/tab.png)
+![Schermafbeelding van type tabcomponent](assets/component-types/tab.png)
 
 >[!ENDTABS]
 
 #### Tekst {#text}
 
-Met tekst kunt u één regel tekst invoeren.  Het bevat aanvullende validatietypen.
+Er kan één regel tekst worden ingevoerd.  Het bevat aanvullende validatietypen.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
