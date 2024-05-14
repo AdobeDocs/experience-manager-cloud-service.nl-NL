@@ -2,7 +2,7 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 79dcf8a4e9834beeb466ed9270a3f5c6aa67aa9a
+source-git-commit: 3be366e5fa0a7625203a052426be6a2fd2412cf6
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -17,7 +17,7 @@ In de volgende sectie worden de opmerkingen bij de technische release voor de hu
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16145 samengevat, die op 1 mei 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 15977.
 
-2024.4.0 Activering van de eigenschap verstrekt de volledige eigenschap die voor deze onderhoudsversie wordt geplaatst. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie .
+2024.5.0 Activering van de eigenschap verstrekt de volledige eigenschap die voor deze onderhoudsversie wordt geplaatst. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie .
 
 ### Verbeteringen {#enhancements-16145}
 
