@@ -2,12 +2,13 @@
 title: Werken met kiezers
 description: In deze video ziet u methoden waarmee u elementen kunt selecteren voor interactieve afbeeldingen, interactieve video's en carrouselbanners in Dynamic Media.
 contentOwner: Rick Brough
+feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 1%
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +20,7 @@ In dit onderwerp wordt beschreven hoe u de kiezers Product, Site en Asset kunt g
 
 U opent de kiezers door carrouselsets te maken, hotspots en afbeeldingen met hyperlinks toe te voegen en interactieve video&#39;s en afbeeldingen te maken.
 
-In deze Carousel Banner gebruikt u bijvoorbeeld de productkiezer als u een hotspot of afbeelding met hyperlinks koppelt aan een Quickview-pagina. Gebruik de sitekiezer als u een hotspot of afbeelding met hyperlink koppelt. Gebruik de kiezer voor middelen wanneer u een dia maakt.
+In deze Carousel Banner gebruikt u bijvoorbeeld de productkiezer als u een hotspot of afbeelding met hyperlinks koppelt aan een Quickview-pagina. Gebruik de sitekiezer als u een hotspot of afbeelding met hyperlink koppelt. Gebruik de functie Asset Selector wanneer u een dia maakt.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
@@ -35,7 +36,7 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Selecteer **[!UICONTROL Product Selector]** (vergrootglas) en navigeer naar een product in de catalogus.
+1. Selecteer de **[!UICONTROL Product Selector]** (vergrootglas) en navigeer naar een product in de catalogus.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
@@ -73,7 +74,7 @@ Met de sitekiezer kunt u een webpagina kiezen als u een hotspot of afbeeldingska
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Selecteer **[!UICONTROL Site Selector]** pictogram (map met vergrootglas) en navigeer naar een pagina in uw [!DNL Experience Manager] sites waaraan u de hotspot of afbeelding met hyperlinks wilt koppelen.
+1. Selecteer de **[!UICONTROL Site Selector]** pictogram (map met vergrootglas) en navigeer naar een pagina in uw [!DNL Experience Manager] sites waaraan u de hotspot of afbeelding met hyperlinks wilt koppelen.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -90,7 +91,7 @@ Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanne
 Zie ook [Asset Picker](/help/assets/search-assets.md#asset-selector) voor meer informatie .
 
 1. Navigeer naar de Carousel-set en maak een dia. Of navigeer naar de interactieve video en ga naar de **[!UICONTROL Content]** selecteert u vervolgens elementen. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
-1. Selecteer **[!UICONTROL Asset Selector]** (map met vergrootglas) en navigeer naar een element.
+1. Selecteer de **[!UICONTROL Asset Selector]** (map met vergrootglas) en navigeer naar een element.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -98,9 +99,9 @@ Zie ook [Asset Picker](/help/assets/search-assets.md#asset-selector) voor meer i
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   U kunt wijzigen waar [!DNL Experience Manager] bladert naar elementen door naar een andere map in de **[!UICONTROL Path]** veld.
+   U kunt wijzigen waar [!DNL Experience Manager] bladert naar elementen door naar een andere map in het dialoogvenster **[!UICONTROL Path]** veld.
 
-   Selecteren **[!UICONTROL Collection]** om alleen te zoeken naar elementen in verzamelingen.
+   Selecteren **[!UICONTROL Collection]** alleen naar elementen in verzamelingen zoeken.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 

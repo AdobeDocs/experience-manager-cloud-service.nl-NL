@@ -2,11 +2,12 @@
 title: Problemen met Dynamic Media oplossen
 description: Meer informatie over tips voor het oplossen van problemen die u kunt proberen wanneer u werkt met afbeeldingen, sets en viewers in Dynamic Media.
 contentOwner: Rick Brough
+feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -138,7 +139,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     </ul> </td>
    <td>
     <ol>
-     <li>Controleer of de Dynamic Media-configuratie onder Cloud Services juist is ingesteld.</li>
+     <li>Controleer of de Dynamic Media Configuration onder Cloud Servicen correct is ingesteld.</li>
      <li>Controleer of de map een videoprofiel heeft. Controleer ook het videoprofiel.</li>
     </ol> </td>
   </tr>
@@ -215,7 +216,7 @@ Als de voorbeeldbestanden of de vooraf ingestelde illustratie van de viewer niet
 1. Navigeer naar de CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
 1. Zoeken naar een viewerpakket in de lijst; het begint met `cq-dam-scene7-viewers-content`.
 1. Selecteren **Opnieuw installeren**.
-1. Onder Cloud Services, navigeer aan de pagina van de Configuratie van Dynamic Media, dan open de doos van de configuratiedialoog voor uw configuratie Dynamic Media - S7.
+1. Onder Cloud Servicen, navigeer aan de pagina van de Configuratie van Dynamic Media, dan open de doos van de configuratiedialoog voor uw configuratie Dynamic Media - S7.
 1. Geen wijzigingen aanbrengen, selecteer **Opslaan**.
 Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CSS met voorinstellingen voor viewers en de illustraties te maken en te synchroniseren.
 
@@ -236,4 +237,4 @@ Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CS
 1. Verwijder de `viewer` map.
 1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **[!UICONTROL Save All]**.
 1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **Terug naar startpunt** pictogram.
-1. Maak opnieuw een [Dynamic Media-configuratie in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. Maak opnieuw een [Dynamic Media-configuratie in Cloud Servicen](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).

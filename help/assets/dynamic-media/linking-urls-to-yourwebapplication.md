@@ -2,12 +2,13 @@
 title: URL's koppelen aan uw webtoepassing
 description: Leer hoe u URL's koppelt aan uw webtoepassing in Dynamic Media.
 contentOwner: Rick Brough
+feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 4%
+source-wordcount: '1217'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 Uw websites en toepassingen hebben via URL-oproepen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
-U koppelt alleen aan URL&#39;s als u *niet* Adobe Experience Manager gebruiken als uw WCM. Koppelen - versus insluiten - wordt gebruikt wanneer u een videospeler wilt leveren als pop-up of modaal venster. Als u Experience Manager als uw WCM gebruikt, [u voegt de elementen rechtstreeks op de pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U koppelt alleen aan URL&#39;s als u *niet* Adobe Experience Manager gebruiken als uw WCM. Koppelen - in plaats van insluiten - wordt gebruikt wanneer u een videospeler wilt leveren als pop-up of modaal venster. Als u Experience Manager als uw WCM gebruikt, [u voegt de elementen rechtstreeks op de pagina toe.](adding-dynamic-media-assets-to-pages.md)
 
 Kopieer deze URL-tekenreeksen vanuit Dynamic Media om deze in uw webpagina&#39;s en toepassingen te plaatsen.
 
@@ -63,19 +64,19 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
    * Als u een afbeelding hebt geselecteerd, selecteert u in de vervolgkeuzelijst de optie **[!UICONTROL Renditions]**.
 
-      Onder de **[!UICONTROL Dynamic]** Selecteer een naam voor de voorinstelling om de vertoning ervan in het rechterframe weer te geven. Schuif zo nodig in de lijst Uitvoeringen om de dynamische kop weer te geven.
+     Onder de **[!UICONTROL Dynamic]** Selecteer een naam voor de voorinstelling om de vertoning ervan in het rechterframe weer te geven. Schuif zo nodig in de lijst Uitvoeringen om de dynamische kop weer te geven.
 
-      Selecteer onder aan het linkerspoor de optie **[!UICONTROL URL]**.
+     Selecteer onder aan het linkerspoor de optie **[!UICONTROL URL]**.
 
-      ![chlimage_1-270](assets/chlimage_1-270.png)
+     ![chlimage_1-270](assets/chlimage_1-270.png)
 
    * Als u in het keuzemenu een centrifugeset, een afbeeldingsset, een carrouselset of een video hebt geselecteerd, selecteert u **[!UICONTROL Viewers]**.
 
-      Selecteer in het linkerspoor een naam voor de viewervoorinstelling. Er wordt een voorvertoning van de set of video geopend op een aparte pagina.
+     Selecteer in het linkerspoor een naam voor de viewervoorinstelling. Er wordt een voorvertoning van de set of video geopend op een aparte pagina.
 
-      Selecteer in het linkerspoor, onderaan **[!UICONTROL URL]**.
+     Selecteer in het linkerspoor, onderaan **[!UICONTROL URL]**.
 
-      ![chlimage_1-271](assets/chlimage_1-271.png)
+     ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Als u een voorvertoning van het element wilt weergeven of aan uw pagina met webinhoud wilt toevoegen, selecteert u de tekst en kopieert u deze naar uw webbrowser.
 
@@ -109,16 +110,16 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         Bijvoorbeeld, `https://aem.com/is/content/adobe/image.gif`.
+        Bijvoorbeeld: `https://aem.com/is/content/adobe/image.gif`.
+
    * Selecteren **[!UICONTROL Asset]** > **[!UICONTROL Dynamic Renditions]** selecteert u vervolgens een dynamische vertoning van het statische element en kopieert u de URL.
 
-      De gekopieerde URL wijzigen in gebruik `is/content` in plaats van `is/image/`.
+     De gekopieerde URL wijzigen in gebruik `is/content` in plaats van `is/image/`.
 
-
-## Een video-URL verkrijgen voor een gepubliceerde video-uitvoering {#obtaining-a-video-url-for-a-published-video-rendition}
+## Een video-URL opvragen voor een gepubliceerde video-uitvoering {#obtaining-a-video-url-for-a-published-video-rendition}
 
 1. Navigeer in Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
-1. Op de **[!UICONTROL Cloud Services]** pagina, omlaag schuiven naar de **[!UICONTROL Dynamic Media Cloud Services]** kop selecteert u vervolgens **[!UICONTROL Show Configurations]**.
+1. Op de **[!UICONTROL Cloud Services]** pagina, omlaag naar de **[!UICONTROL Dynamic Media Cloud Services]** kop selecteert u vervolgens **[!UICONTROL Show Configurations]**.
 1. Onder **[!UICONTROL Available Configurations]** selecteert u de naam van de gewenste configuratie.
 
 1. Op de **[!UICONTROL Dynamic Media Cloud Settings]** pagina, onder **[!UICONTROL Video Service URL]**, kopieert u het volledige URL-pad omlaag. U hebt het gekopieerde pad naar de URL later nodig in de stappen.
@@ -127,11 +128,11 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (Bovenstaand pad dient slechts ter toelichting; het is niet het daadwerkelijke pad dat u kopieert.)
+   (Het bovenstaande pad is alleen ter uitleg; het is niet het pad dat u daadwerkelijk kopieert.)
 
 1. Kopieer onder **[!UICONTROL Registration ID]** de naam van de klant die u in het laatste gedeelte van de id vindt.
 
-   Als de registratie-id bijvoorbeeld `87654321|MyCompany`de naam van de klant `MyCompany`.
+   Als de registratie-id bijvoorbeeld `87654321|MyCompany`, de naam van de klant `MyCompany`.
 
 1. Selecteer in de linkerbovenhoek van de pagina de optie **[!UICONTROL Cloud Services]** selecteert u vervolgens het Experience Manager-pictogram en navigeert u naar **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Kopieer het volledige pad voor video-uitvoering van de JCR (Java™ Content Repository) naar beneden.
@@ -140,7 +141,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (Bovenstaand pad dient slechts ter toelichting; het is niet het daadwerkelijke pad dat u kopieert.)
+   (Het bovenstaande pad is alleen ter uitleg; het is niet het pad dat u daadwerkelijk kopieert.)
 
 1. Als u een volledig URL-pad wilt maken, rangschikt u de gekopieerde gegevens in de volgende volgorde:
 
@@ -155,7 +156,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 ## Een video-URL verkrijgen voor adaptieve bitsnelheidstreaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Navigeer in Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
-1. Op de **[!UICONTROL Cloud Services]** pagina, omlaag schuiven naar de **[!UICONTROL Dynamic Media Cloud Services]** kop selecteert u vervolgens **[!UICONTROL Show Configurations]**.
+1. Op de **[!UICONTROL Cloud Services]** pagina, omlaag naar de **[!UICONTROL Dynamic Media Cloud Services]** kop selecteert u vervolgens **[!UICONTROL Show Configurations]**.
 1. Onder **[!UICONTROL Available Configurations]** selecteert u de naam van de gewenste configuratie.
 1. Op de **[!UICONTROL Dynamic Media Cloud Services Settings]** pagina, ga als volgt te werk:
 
@@ -163,12 +164,11 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn andere e
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (Bovenstaand pad dient slechts ter toelichting; het is niet het daadwerkelijke pad dat u kopieert.)
+   (Het bovenstaande pad is alleen ter uitleg; het is niet het pad dat u daadwerkelijk kopieert.)
 
-   * Kopieer onder **[!UICONTROL Registration ID]** de naam van de klant die u in het laatste gedeelte van de id vindt. U hebt de gekopieerde klantennaam later in deze stappen nodig.
+   * Onder **[!UICONTROL Registration ID]**, kopieert u de naam van de klant in het laatste gedeelte van de id. U hebt de gekopieerde klantennaam later in deze stappen nodig.
 
-      Als de registratie-id bijvoorbeeld `87654321|demoCo`, de naam van de klant die u kopieert `demoCo`.
-
+     Als de registratie-id bijvoorbeeld `87654321|demoCo`, de naam die u kopieert `demoCo`.
 
 1. Kopieer de respectievelijke protocolkiezer op basis van het video-leveringsprotocol dat u gebruikt. U hebt de gekopieerde protocolkiezer later in deze stappen nodig.
 

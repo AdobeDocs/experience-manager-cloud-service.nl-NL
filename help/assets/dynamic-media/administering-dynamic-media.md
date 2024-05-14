@@ -2,11 +2,12 @@
 title: Dynamic Media instellen
 description: Als u Dynamic Media wilt instellen, moet u Dynamic Media configureren en voorinstellingen voor afbeeldingen en viewers beheren.
 contentOwner: Rick Brough
+feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -41,5 +42,4 @@ Zie ook de volgende onderwerpen:
 >
 >**Als u een upgrade uitvoert:**
 >
->* Nadat u Adobe hebt [!DNL Experience Manager] Als de bestanden die u uploadt actief zijn, wordt Dynamic Media automatisch ingeschakeld (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u op een bevorderd geval van bent [!DNL Experience Manager] en die je nog niet in Dynamic Media hebt, moet je waarschijnlijk je middelen opnieuw verwerken om ze voor Dynamic Media geschikt te maken. Zie [Elementen in een map opnieuw verwerken](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
-
+>* Nadat u Adobe hebt [!DNL Experience Manager] Als de bestanden die u uploadt actief zijn, wordt Dynamic Media automatisch ingeschakeld (tenzij dit expliciet is uitgeschakeld door de systeembeheerder). Als u zich op een geüpgrade instantie van [!DNL Experience Manager] en die je nog niet in Dynamic Media hebt, moet je waarschijnlijk je middelen opnieuw verwerken om ze voor Dynamic Media geschikt te maken. Zie [Elementen in een map opnieuw verwerken](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).

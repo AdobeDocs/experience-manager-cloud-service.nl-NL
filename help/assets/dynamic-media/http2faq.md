@@ -1,19 +1,20 @@
 ---
-title: Veelgestelde vragen over HTTP2-levering van content
+title: HTTP2 Veelgestelde vragen over inhoud
 description: Leer over de levering van HTTP2 inhoud en hoe het communicatie tussen browsers en servers voor snellere informatieoverdracht verbetert.
 contentOwner: Rick Brough
+feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 1%
+source-wordcount: '772'
+ht-degree: 0%
 
 ---
 
-# Veelgestelde vragen over HTTP2-levering van content{#http-delivery-of-content-faq}
+# HTTP2 Veelgestelde vragen over inhoud{#http-delivery-of-content-faq}
 
-Adobe is opgetogen om de beschikbaarheid van HTTP/2 levering van inhoud aan te kondigen. Bij gebruik van HTTP/2 wordt een algehele prestatieverhoging ervaren.
+De Adobe is opgetogen om de beschikbaarheid van HTTP/2 levering van inhoud aan te kondigen. Bij gebruik van HTTP/2 wordt een algehele prestatieverhoging ervaren.
 
 >[!NOTE]
 >
@@ -29,7 +30,7 @@ Het websiteartikel [Wat u moet weten over HTTP/2](https://www.engadget.com/2015-
 
 Prestatieverbetering varieert sterk, omdat deze op verschillende factoren is gebaseerd. Bijvoorbeeld de code van uw website, hoe u Dynamic Media gebruikt, het apparaat van de consument, het scherm, en de plaats.
 
-Resultaten:
+De eigen tests van de Adobe leverden de volgende resultaten op:
 
 * Voor afbeeldingen verbeterde de responstijd 7%-28%, afhankelijk van apparaat en browser. De meest opmerkelijke prestatiewinst was op iOS-apparaten.
 * Voor viewers verbeterde de laadtijd tot 15%.
@@ -43,7 +44,7 @@ De volgende demonstratie illustreert het verschil tussen het laden van HTTP/1 en
 Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 * Gebruik beveiligde HTTPS voor uw rich media-aanvragen.
-* Gebruik de Adobe-gebundelde CDN (Content Delivery Network) als onderdeel van uw Dynamic Media Classic-licentie.
+* Gebruik de Adobe-gebundelde CDN (het Netwerk van de Levering van de Inhoud) als deel van uw vergunning van Dynamic Media Classic.
 * Gebruik een speciaal domein (dat wil zeggen `images.company.com` of `mycompany.scene7.com`), niet een algemeen Dynamic Media-domein (dat wil zeggen: `s7d1.scene7.com`, `s7d2.scene7.com`, of `s7d13.scene7.com`).
 
   Om uw domeinen te vinden, open [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account.
@@ -72,7 +73,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
    Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoeken naar het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
    1. De Steun van de klant voegt u aan de HTTP/2 klantenwachtlijst toe die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
-   1. Wanneer Adobe bereid is om uw verzoek te behandelen, contacteert de Steun van de Klant u om de overgang te coördineren en een doeldatum te plaatsen.
+   1. Wanneer de Adobe klaar is om uw verzoek te behandelen, neemt de Steun van de Klant contact u op om de overgang te coördineren en een doeldatum te plaatsen.
    1. U wordt op de hoogte gesteld na voltooiing en kunt een geslaagde overgang naar HTTP2 controleren.
 
 ## Wanneer kan ik verwachten over te gaan naar HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
@@ -87,8 +88,8 @@ Verzoeken worden verwerkt in de volgorde waarin ze door de Klantenondersteuning 
 
 De overgang aan HTTP/2 ontruimt uit uw geheime voorgeheugen bij CDN omdat het het bewegen aan een nieuwe configuratie CDN impliceert.
 
-De inhoud in de cache raakt de servers van Adobe die niet in de cache zijn opgeslagen, rechtstreeks aan. Wegens deze actie, is Adobe van plan om een paar klantenovergangen in een tijd te behandelen. Deze methode zorgt ervoor dat aanvaardbare prestaties worden gehandhaafd wanneer het trekken van verzoeken van de oorsprong.
+De inhoud die niet in de cache is opgeslagen, raakt de oorspronkelijke servers van de Adobe rechtstreeks aan totdat de cache opnieuw wordt samengesteld. Wegens deze actie, is de Adobe van plan om een paar klantenovergangen in een tijd te behandelen. Deze methode zorgt ervoor dat aanvaardbare prestaties worden gehandhaafd wanneer het trekken van verzoeken van de oorsprong.
 
 ## Hoe kunt u controleren of een URL of website met HTTP/2 wordt geactiveerd? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-Download een extensie die u met uw webbrowser kunt gebruiken. Voor Firefox en Chrome is er een extensie genaamd **[!UICONTROL HTTP/2 and SPDY Indicator]**. Browsers ondersteunen alleen veilig HTTP/2, dus het is nodig een URL met HTTPS aan te roepen om te verifiëren. Als HTTP/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een header &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.
+Download een extensie die u met uw webbrowser kunt gebruiken. Voor Firefox en Chrome is er een extensie genaamd **[!UICONTROL HTTP/2 and SPDY Indicator]**. Browsers ondersteunen alleen veilig HTTP/2, dus het is nodig een URL met HTTPS aan te roepen om te verifiëren. Als HTTP/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw symbool voor Flash en de header &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.

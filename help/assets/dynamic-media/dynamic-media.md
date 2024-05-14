@@ -2,12 +2,13 @@
 title: Werken met Dynamic Media
 description: Leer hoe u Dynamic Media kunt gebruiken om middelen te leveren voor gebruik op internet, mobiele apparaten en sociale sites.
 contentOwner: Rick Brough
+feature: Dynamic Media,Asset Management
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 4%
+source-wordcount: '397'
+ht-degree: 0%
 
 ---
 
@@ -27,14 +28,14 @@ Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Hoe met m
 
 Alleen Dynamic Media biedt de volgende functies:
 
-* [Carousel-banners](carousel-banners.md)
-* [Image Sets](image-sets.md)
+* [Carousel Banners](carousel-banners.md)
+* [Afbeeldingssets](image-sets.md)
 * [Interactieve afbeeldingen](interactive-images.md)
 * [Interactieve video&#39;s](interactive-videos.md)
-* [Mixed Media Sets](mixed-media-sets.md)
+* [Gemengde mediasets](mixed-media-sets.md)
 * [Panoramische afbeeldingen](panoramic-images.md)
 
-* [Spin Sets](spin-sets.md)
+* [Sets draaien](spin-sets.md)
 * [Video](video.md)
 * [Dynamic Media-middelen leveren](delivering-dynamic-media-assets.md)
 * [Elementen beheren](managing-assets.md)

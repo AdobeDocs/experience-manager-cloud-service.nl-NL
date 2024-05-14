@@ -2,11 +2,12 @@
 title: Slimme beeldverwerking gebruiken met pixelverhouding van client-side apparaat
 description: Leer hoe u de pixelverhouding van client-side apparaten kunt gebruiken met Smart Imaging in Adobe Experience Manager as a Cloud Service met Dynamic Media.
 contentOwner: Rick Brough
+feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -58,7 +59,7 @@ DPR aan de clientzijde biedt u 100% nauwkeurige waarden en werkt voor elk appara
    U kunt beide DPR manuscripten in één combineren om veelvoudige netwerkverzoeken te vermijden.
 
    Adobe raadt u aan deze scripts te laden _voor_ andere scripts op de pagina HTML.
-Adobe raadt u ook aan uw toepassing onder de tag diff HTML te Bootstrap in plaats van onder een body-element. De reden is dat `dprImageInjection.js` Hiermee injecteert u de afbeeldingstag dynamisch boven aan de body-sectie op de pagina HTML.
+Adobe raadt u ook aan uw toepassing onder de tag diff HTML te Bootstrappen in plaats van onder een body-element. De reden is dat `dprImageInjection.js` Hiermee injecteert u de afbeeldingstag dynamisch boven aan de body-sectie op de pagina HTML.
 
 ## JavaScript-bestanden downloaden {#client-side-dpr-script}
 
@@ -73,4 +74,3 @@ De volgende JavaScript-bestanden in de download worden alleen als voorbeeldverwi
 >[!MORELIKETHIS]
 >
 >* [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
-
