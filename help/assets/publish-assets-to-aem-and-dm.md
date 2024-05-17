@@ -2,7 +2,7 @@
 title: Snel publiceren naar AEM en Dynamic Media
 description: Met Snel publiceren in middelenweergave kunt u elementen gelijktijdig of afzonderlijk publiceren naar AEM en dynamische media. U kunt elementen en mappen selecteren en publiceren naar Dynamic Media of AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
+source-git-commit: 9ad74a9c7ecd193446506cb883fff723c806f0a7
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 0%
@@ -40,7 +40,7 @@ U kunt elementen publiceren naar AEM en Dynamic Media terwijl u elementen upload
 Elementen publiceren tijdens het uploaden naar een map met de Dynamic Media-publicatiemodus ingesteld op **Bij activering**:
 
 1. Klikken **Elementen toevoegen** > **Bladeren** > **Door bestanden bladeren** om naar de juiste map te navigeren om elementen te uploaden. De **Publicatieopties** wordt de sectie weergegeven **DM-publicatiemodus** als **Bij activering**.
-   ![Afbeelding uploaden na activering](/help/assets/assets/upload-upon-activation1.png)
+   ![Afbeelding uploaden na activering](/help/assets/assets/upload-uactivation.svg)
 2. Selecteren **Publiceren naar AEM en Dynamic Media** en klik op **Uploaden**. De activa worden tegelijkertijd aan AEM en Dynamic Media gepubliceerd. Ga voor de bijgewerkte publicatiestatus voor deze elementen naar [Publicatiestatus controleren](#check-publish-status).
 
 ### Dynamic Media-publicatiemodus ingesteld op Direct {#dynamic-media-publish-mode-set-to-immediate}
@@ -48,8 +48,10 @@ Elementen publiceren tijdens het uploaden naar een map met de Dynamic Media-publ
 Elementen publiceren tijdens het uploaden naar een map met de Dynamic Media-publicatiemodus ingesteld op **Meteen**:
 
 1. Klikken **Elementen toevoegen** > **Bladeren** > **Door bestanden bladeren** om naar de juiste map te navigeren om elementen te uploaden. In het gedeelte Publicatieopties wordt het dialoogvenster **DM-publicatiemodus** als **Meteen**.
-   ![bestandsupload afbeelding - directe modus](/help/assets/assets/upload-immediate-mode.png)
-Als de Dynamic Media-publicatiemodus **Meteen** worden de geüploade elementen automatisch naar Dynamic Media gepubliceerd wanneer u op **Uploaden**.
+   ![bestandsupload afbeelding - directe modus](/help/assets/assets/resized-image-pdf-svg-new.svg)
+
+
+   Als de Dynamic Media-publicatiemodus **Meteen** worden de geüploade elementen automatisch naar Dynamic Media gepubliceerd wanneer u op **Uploaden**.
 
 2. Publiceren selecteren voor **AEM publiceren** de geüploade elementen die u wilt AEM en klik op Uploaden.
 
@@ -62,7 +64,7 @@ Als de Dynamic Media-publicatiemodus **Meteen** worden de geüploade elementen a
 Elementen publiceren tijdens het uploaden naar een map met de Dynamic Media-publicatiemodus ingesteld op **Selectieve publicatie**:
 
 1. Klikken **Elementen toevoegen** > **Bladeren** > **Door bestanden bladeren** om naar de juiste map te navigeren om elementen te uploaden. In het gedeelte Publicatieopties wordt het gedeelte **DM-publicatiemodus** als **Selectieve publicatie**.
-   ![afbeeldingsselectieve publicatiemodus uploaden](/help/assets/assets/upload-image-selective-publish-mode.png)
+   ![afbeeldingsselectieve publicatiemodus uploaden](/help/assets/assets/upload-selective.svg)
 
 2. Selecteren **Publiceren naar AEM**, **Publiceren naar Dynamic Media**, of beide naar wens en klik op **Uploaden**.
 
@@ -77,9 +79,9 @@ Als u elementen wilt publiceren met behulp van het element, bladert u naar de pa
 1. Klikken **Activa** in de **Elementbeheer** in het linkerdeelvenster beschikbaar.
 2. Selecteer de middelen of mappen die u wilt publiceren en klik op **Publiceren**.
 3. Selecteren **AEM** en klik op **Publiceren** om elementen te publiceren naar AEM en Dynamic Media.
-   ![bestanden bladeren](/help/assets/assets/assets-browse-1.png)
+   ![bestanden bladeren](/help/assets/assets/browse-uactivation-immediate.svg)
 U kunt geen map publiceren waarvoor de Dynamic Media-publicatiemodus is ingesteld op **Selectieve publicatie.** Alle andere geselecteerde mappen of elementen worden naar AEM en Dynamic Media gepubliceerd nadat u AEM hebt geselecteerd.
-   ![bestanden bladeren](/help/assets/assets/assets-browse-2.png)
+   ![bestanden bladeren](/help/assets/assets/browse-selective123.svg)
 
 ## Elementen publiceren met de pagina met zoekresultaten {#publish-assets-using-search-results-page}
 
@@ -88,7 +90,7 @@ Elementen publiceren met de pagina met zoekresultaten voor elementen:
 1. Geef de criteria op in de zoekbalk en klik op het pictogram Zoeken om de resultaten weer te geven.
 2. Selecteer de elementen die u wilt publiceren en klik op **Publiceren.**
 3. Selecteer AEM, Dynamic Media of beide naar wens en klik op **Publiceren.**
-   ![zoekafbeelding](/help/assets/assets/search-image1.png)
+   ![zoekafbeelding](/help/assets/assets/search-mode.svg)
 De optie om naar Dynamic Media te publiceren op de pagina met zoekresultaten is afhankelijk van de Dynamic Media-publicatiemodus die is ingesteld op de map waarin het element beschikbaar is in de gegevensopslagruimte.
 
    >[!NOTE]
