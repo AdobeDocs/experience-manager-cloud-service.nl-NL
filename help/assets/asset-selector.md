@@ -3,14 +3,13 @@ title: Asset Selector voor [!DNL Adobe Experience Manager] als [!DNL Cloud Servi
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 contentOwner: KK
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: b9fe6f4c2f74d5725575f225f8d9eb2e5fbfceb7
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '3896'
 ht-degree: 0%
 
 ---
-
 
 # Micro-Frontend element selecteren {#Overview}
 
@@ -599,7 +598,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -632,12 +631,12 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het object Sele
 | *tiff:imageLength* | getal | De hoogte van een element. |
 | *computedMetadata* | `Record<string, any>` | Een object dat een emmertje vertegenwoordigt voor alle soorten metagegevens van het element (gegevensopslagruimte, toepassing of ingesloten metagegevens). |
 | *_links* | `Record<string, any>` | Hypermediakoppelingen voor het bijbehorende element. Bevat koppelingen voor bronnen zoals metagegevens en uitvoeringen. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Array met objecten die informatie bevatten over uitvoeringen van het element. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | De URI naar de vertoning. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | Het MIME-type van de vertoning. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | getal | De grootte van de vertoning in bytes. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | getal | De breedte van de vertoning. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | getal | De hoogte van de vertoning. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Array met objecten die informatie bevatten over uitvoeringen van het element. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | De URI naar de vertoning. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | Het MIME-type van de vertoning. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | getal | De grootte van de vertoning in bytes. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | getal | De breedte van de vertoning. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | getal | De hoogte van de vertoning. |
 
 Voor een volledige lijst met eigenschappen en een gedetailleerd voorbeeld gaat u naar [Voorbeeld van code voor middelenkiezer](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 

@@ -2,7 +2,7 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek uitgangIP adres voor AEM as a Cloud Service te vormen.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '5093'
 ht-degree: 0%
@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Foutopsporingsoverwegingen {#debugging-considerations}
 
-Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres, controlelogboeken binnen de bestemmingsdienst, als beschikbaar gaat. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals te roepen [http://ifconfig.me/ip](http://ifconfig.me/ip), die het roepende IP adres terugkeert.
+Om te bevestigen dat het verkeer inderdaad op het verwachte specifieke IP adres, controlelogboeken binnen de bestemmingsdienst, als beschikbaar gaat. Anders, kan het nuttig zijn om aan de het zuiveren dienst zoals te roepen [https://ifconfig.me/ip](https://ifconfig.me/ip), die het roepende IP adres terugkeert.
 
 ## Virtual Private Network (VPN) {#vpn}
 
