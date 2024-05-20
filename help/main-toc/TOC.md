@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
+source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
 workflow-type: tm+mt
-source-wordcount: '4946'
+source-wordcount: '4964'
 ht-degree: 3%
 
 ---
@@ -654,6 +654,8 @@ ht-degree: 3%
             + [Verzenden naar REST Endpoint-verzendactie configureren voor Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [De handeling E-mail verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-action-send-email.md)
             + [Google reCAPTCHA gebruiken in een adaptief formulier](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [hCAPTCHA gebruiken in een adaptieve vorm](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Draaien in een adaptieve vorm gebruiken](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Aangepaste fouthandler toevoegen in een adaptief formulier](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Een landinstelling toevoegen voor Adaptive Forms op basis van Core Components](/help/forms/supporting-new-language-localization-core-components.md)
             + [Aangepaste functies maken en gebruiken](/help/forms/create-and-use-custom-functions.md)
@@ -676,6 +678,7 @@ ht-degree: 3%
             + [Verbeter de prestaties van grote formulieren met het laden van de formulieren](/help/forms/lazy-loading-adaptive-forms.md)
          + Componenten toevoegen aan een adaptief formulier {#add-components-to-an-adaptive-form}
             + [CAPTCHA gebruiken in een adaptieve vorm](/help/forms/captcha-adaptive-forms.md)
+            + [Captcha gebruiken in een adaptieve vorm](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [Core-componenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [Krabbelen toepassen](/help/forms/signing-forms-using-scribble.md)
             + [Een tabel toevoegen aan een adaptief formulier](/help/forms/adaptive-forms-tables.md)
