@@ -1,14 +1,14 @@
 ---
-title: Hoe wordt hCaptcha® gebruikt in een AEM Adaptive Form Core-component?
-description: Verbeter de formulierbeveiliging zonder problemen met de hCaptcha®-service. Stap-voor-stap gids binnen!
+title: Hoe wordt hCaptcha&reg gebruikt in een AEM Adaptive Form Core Components?
+description: Verbeter de formulierbeveiliging met hCaptcha&reg; service zonder problemen. Stap-voor-stap gids binnen!
 topic-tags: Adaptive Forms, author
-keywords: hCaptcha®-service, Adaptive Forms, CAPTCHA-uitdaging, Boot Prevention, Core Components, Security Formulierverzending, Preventie van formulierspam
+keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA-uitdaging, botpreventie, Core Components, Formulierverzendbeveiliging, Formulierspampreventie
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -17,18 +17,28 @@ ht-degree: 0%
 
 <span class="preview"> Dit onderdeel valt onder het programma Vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-De service Captcha® beschermt uw formulieren tegen bots, spam en automatisch misbruik. Er wordt een widget selectievakje ingesteld en de reactie van de gebruiker geëvalueerd om te bepalen of deze een mens of bot is die met het formulier communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige activiteiten posten.
+CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
+
+AEM Forms as a Cloud Service ondersteunt de volgende CAPTCHA-oplossingen:
+
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+## AEM Forms-omgeving integreren met hCaptcha Captcha
+
+De service Captcha® beschermt uw formulieren tegen bots, spam en automatisch misbruik. Er wordt een widget selectievakje ingesteld en de reactie van de gebruiker geëvalueerd om te bepalen of het een mens of bot is die met het formulier communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige activiteiten posten.
 
 AEM Forms as a Cloud Service ondersteunt hCaptcha® in Adaptive Forms Core Components. U kunt dit gebruiken om een widget-uitdaging voor selectievakjes weer te geven bij het verzenden van een formulier.
 
-<!-- ![hCaptcha®](assets/hCaptcha®-challenge.png)-->
+<!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
 
-## Vereisten om de AEM Forms-omgeving te integreren met hCaptcha® {#prerequisite}
+### Vereisten om de AEM Forms-omgeving te integreren met hCaptcha® {#prerequisite}
 
 Om hCaptcha® met AEM Forms te configureren, moet u de [Captcha® sitekey en geheime sleutel](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) van de website van Captcha®.
 
-## Stappen voor het configureren van hCaptcha® {#steps-to-configure-hcaptcha}
+### Captcha® configureren {#steps-to-configure-hcaptcha}
 
 Voer de volgende stappen uit om AEM Forms te integreren met de service hCaptcha®:
 
@@ -79,7 +89,7 @@ Voer de volgende stappen uit om AEM Forms te integreren met de service hCaptcha�
    * **[!UICONTROL Name]:** Als u de naam voor de component Captcha opgeeft, kunt u een formuliercomponent gemakkelijk identificeren met de unieke naam in zowel het formulier als de regeleditor.
    * **[!UICONTROL Title]:** Geef de titel voor de component Captcha op.
    * **[!UICONTROL Configuration Settings]:** Selecteer een cloudconfiguratie die is geconfigureerd voor hCaptcha®.
-   * **Grootte captcha:** U kunt de weergavegrootte van het dialoogvenster Captcha®-uitdaging selecteren. Gebruik de **[!UICONTROL Compact]** als u een klein formaat en de **[!UICONTROL Normal]** optie om een relatief groot hCaptcha®-uitdagingsdialoogvenster weer te geven.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha® without explicitly rendering the checkbox widget on the user interface. -->
+   * **Grootte captcha:** U kunt de weergavegrootte van het dialoogvenster Captcha®-uitdaging selecteren. Gebruik de **[!UICONTROL Compact]** als u een klein formaat en de **[!UICONTROL Normal]** optie om een relatief groot hCaptcha®-uitdagingsdialoogvenster weer te geven.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL Validation Message]:** Geef een validatiebericht op voor uw Captcha-validatie bij het verzenden van formulieren.
    * **[!UICONTROL Script Validation Message]** - Met deze optie kunt u een bericht invoeren dat wordt weergegeven als de scriptvalidatie mislukt.
      >[!NOTE]

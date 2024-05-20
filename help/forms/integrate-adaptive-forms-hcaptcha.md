@@ -1,14 +1,14 @@
 ---
-title: Hoe wordt hCaptcha® gebruikt in een AEM adaptieve vorm?
-description: Verbeter de formulierbeveiliging zonder problemen met de hCaptcha®-service. Stap-voor-stap gids binnen!
+title: Hoe wordt hCaptcha&reg gebruikt in een AEM adaptieve vorm?
+description: Verbeter de formulierbeveiliging met hCaptcha&reg; service zonder problemen. Stap-voor-stap gids binnen!
 topic-tags: Adaptive Forms, author
-keywords: hCaptcha®-service, Adaptive Forms, CAPTCHA-uitdaging, Boot Prevention, Form submission Security, Form spam Prevention
+keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA-uitdaging, Bot-preventie, beveiliging bij het verzenden van formulieren, formulierspampreventie
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,21 @@ ht-degree: 0%
 
 <span class="preview"> Dit onderdeel valt onder het programma Vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-De service Captcha® beschermt uw formulieren tegen bots, spam en automatisch misbruik. Er wordt een widget selectievakje ingesteld en de reactie van de gebruiker geëvalueerd om te bepalen of deze een mens of bot is die met het formulier communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige activiteiten posten.
+CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
-<!-- ![hCaptcha®](assets/hCaptcha®-challenge.png)-->
+AEM Forms as a Cloud Service ondersteunt de volgende CAPTCHA-oplossingen:
 
-AEM Forms as a Cloud Service ondersteunt hCaptcha® in Adaptive Forms. U kunt deze optie gebruiken om een widget selectievakje aan de gebruiker voor te stellen bij het verzenden van het formulier.
+* [hCaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
+
+## AEM Forms-omgeving integreren met hCaptcha Captcha
+
+De service Captcha® beschermt uw formulieren tegen bots, spam en automatisch misbruik. Er wordt een widget selectievakje ingesteld en de reactie van de gebruiker geëvalueerd om te bepalen of het een mens of bot is die met het formulier communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige activiteiten posten.
+
+AEM Forms as a Cloud Service ondersteunt hCaptcha® in Adaptive Forms Core Components. U kunt dit gebruiken om een widget-uitdaging voor selectievakjes weer te geven bij het verzenden van een formulier.
+
+<!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
 ## Vereisten om de AEM Forms-omgeving te integreren met hCaptcha® {#prerequisite}
 

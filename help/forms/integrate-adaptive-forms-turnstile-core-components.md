@@ -5,9 +5,9 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,28 @@ ht-degree: 0%
 
 <span class="preview"> Dit onderdeel valt onder het programma Vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
-Cloudflare Turnstile Captcha is een veiligheidsmaatregel die tot doel heeft formulieren en sites te beschermen tegen geautomatiseerde bots, kwaadaardige aanvallen, spam en ongewenst geautomatiseerd verkeer. Er wordt een selectievakje weergegeven bij het verzenden van formulieren om te controleren of het formulier menselijk is, voordat het formulier kan worden verzonden. AEM Forms as a Cloud Service ondersteunt Turnstile Captcha in Adaptive Forms Core Components.
+CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
+
+AEM Forms as a Cloud Service ondersteunt de volgende CAPTCHA-oplossingen:
+
+
+* [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## Vereisten om de AEM Forms-omgeving te integreren met Turnstile Captcha {#prerequisite}
+## AEM Forms-omgeving integreren met Turnstile Captcha
+
+Cloudflare Turnstile Captcha is een veiligheidsmaatregel die tot doel heeft formulieren en sites te beschermen tegen geautomatiseerde bots, kwaadaardige aanvallen, spam en ongewenst geautomatiseerd verkeer. Er wordt een selectievakje weergegeven bij het verzenden van formulieren om te controleren of het formulier menselijk is, voordat het formulier kan worden verzonden. AEM Forms as a Cloud Service ondersteunt Turnstile Captcha in Adaptive Forms Core Components.
+
+### Vereisten om de AEM Forms-omgeving te integreren met Turnstile Captcha {#prerequisite}
 
 Om Turnstile voor de Componenten van de Kern van AEM Forms te vormen, moet u verkrijgen [Turnstile sitekey en geheime sleutel](https://developers.cloudflare.com/turnstile/get-started/) van de website van Turnstile.
 
-## Stappen voor het configureren van Turnstile {#steps-to-configure-hcaptcha}
+### Draaien configureren {#steps-to-configure-hcaptcha}
 
 Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service:
 
@@ -57,7 +70,7 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
 
    Zodra de Turnstile Captcha dienst wordt gevormd, is het beschikbaar voor gebruik in [Adaptief formulier op basis van kerncomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## Draaien gebruiken in een adaptieve Forms Core-component {#using-turnstile-core-components}
+## Draaien in een adaptieve vorm gebruiken {#using-turnstile-core-components}
 
 1. Open uw as a Cloud Service AEM Forms-exemplaar.
 1. Ga naar **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]**.

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1668'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,15 @@ ht-degree: 0%
 
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
-[!DNL AEM Forms] reCAPTCHA ondersteunen in Adaptive Forms. U kunt de reCAPTCHA-service van Google gebruiken om CAPTCHA te implementeren.
+AEM Forms as a Cloud Service ondersteunt de volgende CAPTCHA-oplossingen:
 
->[!NOTE]
->
->* [!DNL AEM Forms] reCaptcha v2 en reCaptcha Enterprise ondersteunen. Andere versies worden niet ondersteund.
->* reCAPTCHA in Adaptive Forms wordt niet ondersteund in de offline modus [!DNL AEM Forms] app.
->
+* [Google reCAPTCHA](#configure-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## De reCAPTCHA-service van Google configureren {#google-reCAPTCHA}
 
-Auteurs van formulieren kunnen de reCAPTCHA-service van Google gebruiken om reCAPTCHA te implementeren in Adaptive Forms. Het biedt geavanceerde CAPTCHA-mogelijkheden om uw site te beschermen. Voor meer informatie over hoe reCAPTCHA werkt, zie [Google reCAPTCHA](https://developers.google.com/recaptcha/). De service reCAPTCHA omvat [!DNL reCAPTCHA v2] en [!DNL reCAPTCHA Enterprise] waarin u kunt integreren [!DNL AEM Forms]. Gebaseerd op uw vereiste kunt u de dienst vormen reCAPTCHA om toe te laten:
+Auteurs van formulieren kunnen de reCAPTCHA-service van Google gebruiken om reCAPTCHA te implementeren in Adaptive Forms. Het biedt geavanceerde CAPTCHA-mogelijkheden om uw site te beschermen. Voor meer informatie over hoe reCAPTCHA werkt, zie [Google reCAPTCHA](https://developers.google.com/recaptcha/). AEM Forms-ondersteuning [!DNL reCAPTCHA v2] en [!DNL reCAPTCHA Enterprise]. Andere versies worden niet ondersteund. Het is ook duidelijk dat reCAPTCHA in Adaptive Forms niet wordt ondersteund in de offline modus [!DNL AEM Forms] app. Gebaseerd op uw vereiste kunt u de dienst vormen reCAPTCHA om toe te laten:
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -100,9 +98,9 @@ Zodra de reCAPTCHA Enterprise-service is ingeschakeld, is deze beschikbaar voor 
 <!--![reCAPTCHA v2](/help/forms/assets/recaptcha-v2.png)-->
 
 
-## reCAPTCHA gebruiken in adaptieve formulieren {#using-reCAPTCHA}
+## Google reCAPTCHA gebruiken in adaptieve formulieren {#using-reCAPTCHA}
 
-ReCAPTCHA in adaptieve vorm gebruiken:
+Google reCAPTCHA in een adaptieve vorm gebruiken:
 
 1. Open een adaptief formulier in de bewerkingsmodus.
 
