@@ -2,16 +2,27 @@
 title: IMS-configuratie voor gebruik bij integratie met Adobe Analytics
 description: Meer informatie over IMS Configuration voor gebruik bij Integratie met Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 1%
+source-wordcount: '931'
+ht-degree: 0%
 
 ---
 
 # IMS-configuratie voor gebruik bij integratie met Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
 Voor de integratie van Adobe Experience Manager as a Cloud Service (AEMaaCS) met Adobe Analytics via de API voor Analytics Standard is de configuratie van Adobe IMS (Identity Management System) vereist. De configuratie wordt uitgevoerd met de Adobe Developer Console.
+
+>[!CAUTION]
+>
+>De configuratie die op deze pagina wordt beschreven kan niet meer voor nieuwe of bijgewerkte integratie worden gebruikt.
+>
+>[IMS-integratie is nu geconfigureerd met S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>Eerdere configuraties, zoals beschreven op deze pagina, zijn gemaakt met [JWT-referenties die nu zijn afgekeurd in de Adobe Developer-console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -174,7 +185,7 @@ Als u terugkeert naar AEM kunt u de IMS-configuratie voltooien door de vereiste 
 
 Om te bevestigen dat de configuratie zoals verwacht werkt:
 
-1. Open:
+1. Openen:
 
    * `https://localhost<port>/libs/cq/adobeims-configuration/content/configurations.html`
 

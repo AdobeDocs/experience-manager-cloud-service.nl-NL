@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
+source-git-commit: 30b9d71890f5d3a1a13e0b570c370a148eb19db6
 workflow-type: tm+mt
-source-wordcount: '4964'
+source-wordcount: '4956'
 ht-degree: 3%
 
 ---
@@ -191,6 +191,7 @@ ht-degree: 3%
    + [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md)
    + [Overwegingen bij as a Cloud Service beveiliging AEM](/help/security/security-considerations.md)
    + [JWT Credentials Deprection in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [IMS-integratie instellen voor AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Beste praktijken voor het Verkopen van de Toewijzing van de Gebruiker van de Dienst en de Definitie van de Gebruiker van de Dienst](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + Onboarding {#onboarding}
    + [Begin hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -416,10 +417,8 @@ ht-degree: 3%
    + Integreren met AEM as a Cloud Service {#integrations}
       + [Integreren met Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integreren met Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [IMS-configuratie voor gebruik bij integratie met Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integreren met Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Integreren met Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [IMS-configuratie voor gebruik bij integratie met Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Inhoudsfragmenten exporteren naar Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exporteren van ervaringsfragmenten naar Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integreren met Adobe Campaign](/help/sites-cloud/integrating/campaign.md)

@@ -2,9 +2,9 @@
 title: JWT Credentials Deprection in Adobe Developer Console
 description: Meer informatie over de impact van de afschrijving van JWT-referenties in Adobe Developer Console op AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: 802e29017d3f1e59ee1676b4172292cb3453648a
+source-git-commit: b6e26ecaa73aaee37b6b824426dc0cd65d459502
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -19,30 +19,30 @@ Adobe die klanten gebruiken [Adobe Developer Console](https://developer.adobe.co
 
 Dit artikel biedt een extra context voor de manier waarop AEM as a Cloud Service de afleiding moet verwerken.
 
-Momenteel, is de belangrijkste overname dat AEM eigenschappen nog niet de nieuwe geloofsbrieven van Server-aan-Server steunen OAuth. De steun komt snel-tegen medio mei 2024 door een AEM versie voor AEM as a Cloud Service. U kunt een e-mail met instructies hebben ontvangen om uw geloofsbrieven van JWT te migreren, maar rust verzekerd dat u op de geloofsbrieven migratie kunt en zou moeten blokkeren tot AEM het nieuwe server-aan-server credentiële type van OAuth steunt.
+Het belangrijkste wegnemen is dat AEM nu de nieuwe geloofsbrieven van Server-aan-Server OAuth voor AEM as a Cloud Service steunt. U hebt mogelijk een e-mail ontvangen met instructies voor het migreren van uw JWT-gegevens. Deze migratie kan nu worden uitgevoerd.
 
-In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-referenties (Service Account) moeten (of soms niet) vervangen door OAuth Server-to-Server-referenties, zodra AEM ze halverwege mei ondersteunt. [Lees hoe](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) om de geloofsbrieven in de toekomst te vervangen.
+In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-referenties (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, nu AEM hen ondersteunt. [Lees hoe](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) om de gegevens te migreren.
 
 >[!NOTE]
 >
 >De [**AEM** Ontwerpconsole](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) (noteer de **AEM** in de naam, die deze onderscheidt van de **Adobe** Developer Console) biedt een hulpprogramma om te genereren [JWT-tokens](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) gebruikt voor server-aan-server APIs. Deze gegevens zijn niet afgekeurd en kunnen ook in de toekomst worden gebruikt.
 
-
 ## AEM integreren met andere oplossingen voor Adobe {#integrating-aem-with-other-adobe-solutions}
 
-**Handeling**: Wacht op migratie tot medio mei 2024, wanneer AEM het ondersteunt (dit artikel wordt dan bijgewerkt)
+**Handeling**: Migreer uw configuratie aangezien AEM nu geloofsbrieven OAuth steunt.
 
 **Relevante AEM versies**: AEM AS A CLOUD SERVICE
 
-AEM klanten gebruiken AEM Auteur UI om integratie met alle andere oplossingen van de Adobe te vormen. Bijvoorbeeld Adobe Target, Adobe Analytics, Adobe Launch, AFCS en nog veel meer.
+AEM klanten gebruiken AEM om integratie met vele andere oplossingen van de Adobe te vormen. Bijvoorbeeld Adobe Target, Adobe Analytics en andere.
 
-![AEM integreren met andere oplossingen](/help/security/assets/jwt-deprecation.png)
+Zie [IMS-integratie instellen voor AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) voor meer informatie over hoe:
 
-Hier ziet u bijvoorbeeld [de instructies](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims) voor het configureren van de integratie met Adobe Target. De API-sleutel in het dialoogvenster [De IMS-configuratie voltooien in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims#completing-the-ims-configuration-in-aem) de sectie zou aan het server-aan-server referentie type van OAuth moeten worden gemigreerd, zodra AEM die geloofsbrieven medio mei steunt. Die instructies zullen half mei worden bijgewerkt om u te helpen de nieuwe geloofsbrieven van Server-aan-Server toepassen OAuth.
+* configuraties maken met OAuth-gebruikersgegevens
+* migreer configuraties, die met geloofsbrieven JWT werden gecreeerd, om geloofsbrieven te gebruiken OAuth
 
 ## Cloud Manager-API&#39;s {#cloud-manager-apis}
 
-**Handeling**: Migreer naar Server-aan-Server OAuth geloofsbrieven.
+**Handeling**: Bevestig wanneer deze gegevens kunnen worden gemigreerd van JWT naar OAuth-referenties.
 
 **Relevante AEM versies**: AEM AS A CLOUD SERVICE
 
@@ -54,6 +54,6 @@ Klanten maken Adobe Developer Console-projecten zodat ze deze kunnen aanroepen [
 
 **Relevante AEM versies**: AEM as a Cloud Service.
 
-Wanneer de bepalingen van de Manager van de Wolk AEM as a Cloud Service milieu, het auto-produceert een project van de Console van Adobe Developer met geloofsbrieven JWT. Dit project is gemarkeerd als alleen-lezen, zoals in de onderstaande schermafbeelding wordt geïllustreerd. De klanten kunnen en zouden niet moeten proberen om deze projecten aan geloofsbrieven te migreren OAuth Server-aan-Server; in plaats daarvan, gaat de Adobe deze projecten op zijn eigen migreren, alvorens de geloofsbrieven niet meer bruikbaar zijn.
+Wanneer de bepalingen van de Manager van de Wolk AEM as a Cloud Service milieu&#39;s, het automatisch een project van de Console van Adobe Developer met geloofsbrieven JWT produceert. Dit project is gemarkeerd als alleen-lezen, zoals in de onderstaande schermafbeelding wordt geïllustreerd. De klanten kunnen en zouden niet moeten proberen om deze projecten aan OAuth server-aan-Server geloofsbrieven te migreren. In plaats daarvan, zal de Adobe deze projecten op zich migreren, alvorens de geloofsbrieven niet meer bruikbaar zijn.
 
 ![Automatisch gegenereerde projecten](/help/security/assets/jwt-deprecation-autogen-projects.png)

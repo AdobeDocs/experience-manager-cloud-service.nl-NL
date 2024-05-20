@@ -4,10 +4,10 @@ description: Leer hoe u Adobe Analytics kunt integreren met AEM as a Cloud Servi
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 1%
+source-wordcount: '588'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,15 @@ De velden in het configuratievenster zijn als volgt:
 
 ### Adobe Analytics met IMS-verificatie {#configuration-parameters-ims}
 
-Een IMS-configuratie is vereist om Adobe Analytics op de juiste manier te integreren met AEM as a Cloud Service. Deze configuratie moet worden gecreeerd zodat zie [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) om te leren hoe te om de configuratie van Analytics IMS tot stand te brengen.
+Voor de integratie van Adobe Experience Manager as a Cloud Service (AEMaaCS) met Adobe Analytics via de API voor Analytics Standard is de configuratie van Adobe IMS (Identity Management System) vereist.
+
+Zie [IMS-integratie instellen voor AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) leren hoe u de IMS-configuratie kunt maken.
+
+>[!NOTE]
+>
+>[IMS-integratie is nu geconfigureerd met S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>Eerdere configuraties zijn gemaakt met [JWT-referenties die nu zijn afgekeurd in de Adobe Developer-console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
 
