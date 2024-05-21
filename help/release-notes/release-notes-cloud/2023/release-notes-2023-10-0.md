@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release 2023.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2023.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 0%
@@ -59,9 +59,9 @@ Bekijk de video Overzicht van de release van oktober 2023 voor een overzicht van
 
 ### Functies voor pre-release beschikbaar in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [Ondersteuning voor multi-subtitle en multi-audiotrack voor video&#39;s in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)—U kunt nu eenvoudig meerdere ondertitels en meerdere audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+* **Dynamic Media**: [Ondersteuning voor multicaption- en multiaudiotracks voor video&#39;s in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)—U kunt nu eenvoudig meerdere bijschriften en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
-  ![Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen van een geselecteerd video-element.](/help/release-notes/assets/msma-aem-cs.png)*Het tabblad Ondertitels en audiotracks op de pagina Eigenschappen van een geselecteerd video-element.*
+  ![Het tabblad Bijschriften en audiotracks op de pagina Eigenschappen van een geselecteerd video-element.](/help/release-notes/assets/msma-aem-cs.png)*Het tabblad Bijschriften en audiotracks op de pagina Eigenschappen van een geselecteerd video-element.*
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 

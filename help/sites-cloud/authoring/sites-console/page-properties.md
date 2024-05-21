@@ -2,7 +2,7 @@
 title: Pagina-eigenschappen bewerken
 description: Leer hoe u de eigenschappen definieert die vereist zijn voor het beheer van een pagina in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 2%
@@ -52,7 +52,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    * **Paginatitel** - Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Indien leeg, **Titel** wordt gebruikt.
    * **Navigatietitel** - U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Indien leeg, **Titel** wordt gebruikt.
-   * **Ondertitel** - Een ondertitel voor gebruik op de pagina.
+   * **Bijschrift** - Een ondertitel voor gebruik op de pagina.
    * **Beschrijving** - Uw beschrijving van de pagina, het doel of andere details die u wilt toevoegen.
 
 * **Aan/Uit-tijd**

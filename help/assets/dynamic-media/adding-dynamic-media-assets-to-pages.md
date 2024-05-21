@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 74254387de1761f25127180787453e681181d97a
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '2999'
 ht-degree: 5%
 
 ---
@@ -147,7 +147,7 @@ U kunt de volgende Dynamic Media Settings bewerken door **[!UICONTROL Edit]** in
 
   Dit is de enige optie die beschikbaar is als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt. De weergegeven viewervoorinstellingen zijn ook slimme voorinstellingen voor relevante viewers.
 
-* **[!UICONTROL Viewer modifiers]** - Viewer-modifiers hebben de vorm van name=value pair met een &amp;-scheidingsteken en laten u viewers wijzigen zoals beschreven in de Viewer Reference Guide. Een voorbeeld van een viewer-modifier is `posterimage=img.jpg&caption=text.vtt,1` Hiermee stelt u een andere afbeelding in voor de videominiatuur en koppelt u een ondertitelingsbestand/ondertitelingsbestand aan de video.
+* **[!UICONTROL Viewer modifiers]** - Viewer-modifiers hebben de vorm van name=value pair met een &amp;-scheidingsteken en laten u viewers wijzigen zoals beschreven in de Viewer Reference Guide. Een voorbeeld van een viewer-modifier is `posterimage=img.jpg&caption=text.vtt,1` Hiermee stelt u een andere afbeelding in voor de videominiatuur en koppelt u een ondertitelingsbestand aan de video.
 
 * **[!UICONTROL Image preset]** - Selecteer een bestaande voorinstelling voor de afbeelding in de vervolgkeuzelijst. Als de voorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [Voorinstellingen afbeelding beheren](/help/assets/dynamic-media/managing-image-presets.md). U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
 
@@ -298,9 +298,9 @@ U kunt het volgende bewerken **[!UICONTROL General]** instellingen door **[!UICO
 
   U kunt het volgende bewerken **[!UICONTROL Add To Cart]** instellingen door **[!UICONTROL Edit]** in de component.
 
-* **[!UICONTROL Show Product Asset]** - Deze waarde is standaard geselecteerd. Het productelement toont een afbeelding van het product zoals gedefinieerd in de module Handel. Schakel het vinkje uit om het productelement niet weer te geven.
+* **[!UICONTROL Show Product Asset]** - Deze waarde is standaard geselecteerd. In het productelement ziet u een afbeelding van het product, zoals gedefinieerd in de Commerce-module. Schakel het vinkje uit om het productelement niet weer te geven.
 
-* **[!UICONTROL Show Product Price]** - Deze waarde is standaard geselecteerd. De prijs van het product is de prijs van het object zoals gedefinieerd in de module Handel. Schakel het vinkje uit om de productprijs niet weer te geven.
+* **[!UICONTROL Show Product Price]** - Deze waarde is standaard geselecteerd. De prijs van het product is de prijs van het object zoals gedefinieerd in de module Commerce. Schakel het vinkje uit om de productprijs niet weer te geven.
 
 * **[!UICONTROL Show Product Form]** - Deze waarde is standaard niet geselecteerd. Het productformulier bevat alle productvarianten zoals grootte en kleur. Schakel het vinkje uit om de productvarianten niet weer te geven.
 
