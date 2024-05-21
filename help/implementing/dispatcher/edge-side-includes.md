@@ -2,7 +2,7 @@
 title: Inclusief randzijde
 description: De Adobe Beheerde CDN ondersteunt nu Edge Side Includes (ESI), een opmaaktaal voor dynamische webinhoud-assemblage op randniveau.
 feature: Dispatcher
-source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
+source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -44,8 +44,8 @@ Zie de [ESI-specificatie](https://www.w3.org/TR/esi-lang/) voor meer informatie.
 
 * De volgende ESI-tags worden ondersteund: include, comment, remove.
 * ESI-tags worden achtereenvolgens verwerkt in plaats van gelijktijdig op de CDN, zodat veel ESI-tags op een pagina met lage TTL&#39;s latentie kunnen toevoegen aan de gebruikerservaring.
-* De maximale diepte van ESI:include-verwerking is 5.
-* De maximale totale ESI:inclusief verwerkingsfragmenten is 256.
+* De maximale diepte van ESI: inclusief verwerking is 5.
+* De maximale totale ESI: inclusief verwerkingsfragmenten is 256.
 
 
 ## Apache-configuratie {#esi-apache}
