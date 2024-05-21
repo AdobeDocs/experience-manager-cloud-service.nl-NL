@@ -3,9 +3,9 @@ title: Afbeeldingen bewerken
 description: Afbeeldingen bewerken met [!DNL Adobe Photoshop Express] Aangedreven opties en sparen bijgewerkte beelden als versies.
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 89d13f278fdaddbcf6b07a2f3edfc1fda1092aa2
+source-git-commit: 1147fa8069fc065aed01c75db686cfefee269319
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -118,8 +118,8 @@ Afbeeldingen bewerken met [!DNL Adobe Express] ingesloten editor, voert u de ond
 >* De grootte van het element moet kleiner zijn dan 17 MB.
 >* U kunt een afbeelding opslaan in `PDF`, `JPEG`, of `PNG` indelingen; terwijl u deze als meerdere pagina&#39;s kunt opslaan `PDF`.
 
-<!-- 
-## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
+
+## Afbeeldingen bewerken met [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -128,49 +128,49 @@ After editing an image, you can save the new image as a new version. Versioning 
 
 *Figure: The options to edit images are powered by [!DNL Adobe Photoshop Express].*
 -->
-<!-- 
-### Touch up images {#spot-heal-images-using-photoshop-express}
 
-If there are minor spots or small objects on an image, you can edit and remove the spots using the spot healing feature provided by Adobe Photoshop.
+### Afbeeldingen retoucheren {#spot-heal-images-using-photoshop-express}
 
-The brush samples the retouched area and makes the repaired pixels blend seamlessly into the rest of the image. Use a brush size that is only slightly larger than the spot you want to fix.
+Als er kleine vlekken of kleine voorwerpen op een beeld zijn, kunt u de vlekken uitgeven en verwijderen gebruikend de vlekkegelaar die door Adobe Photoshop wordt verstrekt.
 
-![Spot healing edit option](assets/edit-spot-healing.png)
+Met dit penseel neemt u een monster van het geretoucheerde gebied en laat u de gerepareerde pixels naadloos overvloeien in de rest van de afbeelding. Gebruik een penseelgrootte die slechts iets groter is dan de vlek die u wilt corrigeren.
+
+![Optie Snel retoucheren](assets/edit-spot-healing.png)
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
 For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
-<!-- 
-### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
 
-Using the crop and straighten option that you can do basic cropping, rotate image, flip it horizontally or vertically, and crop it to dimensions suitable for popular social media websites.
+### Afbeeldingen uitsnijden en rechttrekken {#crop-straighten-images-using-photoshop-express}
 
-To save your edits, click **[!UICONTROL Crop Image]**. After editing, you can save the new image as a version.
+Met de optie Uitsnijden en rechttrekken kunt u de afbeelding op eenvoudige wijze uitsnijden, roteren, horizontaal of verticaal omdraaien en uitsnijden naar de afmetingen die geschikt zijn voor populaire websites op sociale media.
 
-![Option to crop and straighten](assets/edit-crop-straighten.png)
+Als u uw bewerkingen wilt opslaan, klikt u op **[!UICONTROL Crop Image]**. Na het bewerken kunt u de nieuwe afbeelding opslaan als een versie.
 
-Many default options let you crop your image to the best proportions that fit various social media profiles and posts.
+![Optie voor uitsnijden en rechttrekken](assets/edit-crop-straighten.png)
 
-### Resize image {#resize-image-using-photoshop-express}
+Met veel standaardopties kunt u uw afbeelding uitsnijden naar de beste verhoudingen die passen in verschillende profielen en posts van sociale media.
 
-You can view the common photo sizes in centimeters or inches to know the dimensions. By default, the resizing method retains the aspect ratio. To manually override the aspect ratio, click ![](assets/do-not-localize/lock-closed-icon.png).
+### Grootte afbeelding wijzigen {#resize-image-using-photoshop-express}
 
-Enter the dimensions and click **[!UICONTROL Resize Image]** to resize the image. Before you save the changes as a version, you can either undo all the changes done before saving by clicking [!UICONTROL Undo] or you can change the specific step in the editing process by clicking [!UICONTROL Revert].
+U kunt de gebruikelijke fotoformaten in centimeters of inches weergeven om de afmetingen te kennen. Standaard behoudt de methode voor het wijzigen van de grootte de hoogte-breedteverhouding. Als u de verhouding handmatig wilt overschrijven, klikt u op ![](assets/do-not-localize/lock-closed-icon.png).
 
-![Options when resizing an image](assets/resize-image.png)
+Voer de afmetingen in en klik op **[!UICONTROL Resize Image]** om het formaat van de afbeelding te wijzigen. Voordat u de wijzigingen opslaat als een versie, kunt u alle wijzigingen ongedaan maken voordat u de wijzigingen opslaat door op [!UICONTROL Undo] of u kunt de specifieke stap in het bewerkingsproces wijzigen door op [!UICONTROL Revert].
 
-### Adjust image {#adjust-image-using-photoshop-express}
+![Opties voor het wijzigen van het formaat van een afbeelding](assets/resize-image.png)
 
-[!DNL Assets view] lets you adjust the color, tone, contrast, and more, with just a few clicks. Click **[!UICONTROL Adjust image]** in the edit window. The following options are available in the right sidebar:
+### Afbeelding aanpassen {#adjust-image-using-photoshop-express}
 
-* **Popular**: [!UICONTROL High Contrast & Detail], [!UICONTROL Desaturated Contrast], [!UICONTROL Aged Photo], [!UICONTROL B&W Soft], and [!UICONTROL B&W Sepia Tone].
-* **Color**: [!UICONTROL Natural], [!UICONTROL Bright], [!UICONTROL High Contrast], [!UICONTROL High Contrast & Detail], [!UICONTROL Vivid], and [!UICONTROL Matte].
-* **Creative**: [!UICONTROL Desaturated Contrast], [!UICONTROL Cool Light], [!UICONTROL Turquoise & Red], [!UICONTROL Soft Mist], [!UICONTROL Vintage Instant], [!UICONTROL Warm Contrast], [!UICONTROL Flat & Green], [!UICONTROL Red Lift Matte], [!UICONTROL Warm Shadows], and [!UICONTROL Aged Photo].
-* **B&W**: [!UICONTROL B&W Landscape], [!UICONTROL B&W High Contrast], [!UICONTROL B&W Punch], [!UICONTROL B&W Low Contrast], [!UICONTROL B&W Flat], [!UICONTROL B&W Soft], [!UICONTROL B&W Infrared], [!UICONTROL B&W Selenium Tone], [!UICONTROL B&W Sepia Tone], and [!UICONTROL B&W Split Tone].
-* **Vignetting**: [!UICONTROL None], [!UICONTROL Light], [!UICONTROL Medium], and [!UICONTROL Heavy].
+[!DNL Assets view] Hiermee kunt u de kleur, toon, contrast en meer aanpassen met slechts een paar klikken. Klikken **[!UICONTROL Adjust image]** in het bewerkingsvenster. De rechterzijbalk bevat de volgende opties:
 
-![Adjust image by editing](assets/adjust-image.png)
+* **Populair**: [!UICONTROL High Contrast & Detail], [!UICONTROL Desaturated Contrast], [!UICONTROL Aged Photo], [!UICONTROL B&W Soft], en [!UICONTROL B&W Sepia Tone].
+* **Kleur**: [!UICONTROL Natural], [!UICONTROL Bright], [!UICONTROL High Contrast], [!UICONTROL High Contrast & Detail], [!UICONTROL Vivid], en [!UICONTROL Matte].
+* **Creatief**: [!UICONTROL Desaturated Contrast], [!UICONTROL Cool Light], [!UICONTROL Turquoise & Red], [!UICONTROL Soft Mist], [!UICONTROL Vintage Instant], [!UICONTROL Warm Contrast], [!UICONTROL Flat & Green], [!UICONTROL Red Lift Matte], [!UICONTROL Warm Shadows], en [!UICONTROL Aged Photo].
+* **Zwart-wit**: [!UICONTROL B&W Landscape], [!UICONTROL B&W High Contrast], [!UICONTROL B&W Punch], [!UICONTROL B&W Low Contrast], [!UICONTROL B&W Flat], [!UICONTROL B&W Soft], [!UICONTROL B&W Infrared], [!UICONTROL B&W Selenium Tone], [!UICONTROL B&W Sepia Tone], en [!UICONTROL B&W Split Tone].
+* **Vignettering**: [!UICONTROL None], [!UICONTROL Light], [!UICONTROL Medium], en [!UICONTROL Heavy].
+
+![Afbeelding aanpassen door bewerken](assets/adjust-image.png)
 
 <!--
 TBD: Insert a video of the available social media options.
