@@ -4,9 +4,9 @@ description: Begrijp hoe u inhoud voor uw inhoudsfragmenten ontwerpt en maak var
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 36fa580b017ab10097512165a35a9198a6d331d3
+source-git-commit: fc97a51bb20bbf0d438d0f27a2246467a480eb71
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -167,7 +167,7 @@ De generatieve variaties gebruiken in de Inhoudsfragmenteditor:
 
 1. Open de Inhoudsfragmenteditor. In de kopbal zult u het ingangspunt vinden om Variaties te produceren:
 
-![Variaties genereren in de Inhoudsfragmenteditor](assets/cfm-generate-variations1.png)
+   ![Variaties genereren in de Inhoudsfragmenteditor](assets/cfm-generate-variations1.png)
 
 1. Variaties genereren wordt geopend op een nieuw tabblad. In de linkertrack ziet u de AEM Cloud-instantie en het inhoudsfragment waarvoor u inhoud maakt. Selecteer de vraag u wilt gebruiken of een nieuwe herinnering creëren.
 
@@ -175,7 +175,7 @@ De generatieve variaties gebruiken in de Inhoudsfragmenteditor:
    >
    >De beschikbare sjablonen voor herinneringen voor Adoben zijn nu beperkt, maar in toekomstige versies wordt meer toegevoegd.
 
-![Exporteren om variaties in inhoudsfragment te genereren](assets/cfm-generate-variations2.png)
+   ![Exporteren om variaties in inhoudsfragment te genereren](assets/cfm-generate-variations2.png)
 
 1. Genereer inhoud door de vragen in te vullen. Het inhoudsmodel van het fragment wordt automatisch gebruikt om inhoud te genereren met GenAI.
 
@@ -183,20 +183,20 @@ De generatieve variaties gebruiken in de Inhoudsfragmenteditor:
    >
    >Momenteel ondersteunen we alleen tekstvelden.
 
-![Exporteren om variaties in inhoudsfragment te genereren](assets/cfm-generate-variations3.png)
+   ![Exporteren om variaties in inhoudsfragment te genereren](assets/cfm-generate-variations3.png)
 
 1. Selecteer de variant die u wilt genereren en selecteer &quot;variatie exporteren&quot;. Bevestig de naam van de variatie van het inhoudsfragment en selecteer een van de volgende opties:
 
    * **Exporteren**: exporteer variatie naar Inhoudsfragment en blijf in de toepassing Variatie genereren.
    * **Exporteren en openen**: exporteer de variatie naar Inhoudsfragment en open een nieuw tabblad waarop het Inhoudsfragment wordt weergegeven met de nieuwe variatie van GenAI.
 
-   ![Exporteren om variaties in inhoudsfragment te genereren](assets/cfm-generate-variations4.png)
+     ![Exporteren om variaties in inhoudsfragment te genereren](assets/cfm-generate-variations4.png)
 
 1. Gegenereerde variaties worden weergegeven in de hoofdeditor voor contentfragmenten.
 
    ![Variaties in inhoudsfragment genereren weergeven](assets/cfm-generate-variations5.png)
 
-Meer informatie over Variaties genereren [hier]{generative-ai/generate-variations.md}.
+Meer informatie over Variaties genereren [hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
 
 ### Een wijziging verwijderen {#delete-variation}
 
