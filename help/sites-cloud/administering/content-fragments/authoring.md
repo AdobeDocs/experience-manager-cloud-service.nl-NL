@@ -4,9 +4,9 @@ description: Begrijp hoe u inhoud voor uw inhoudsfragmenten ontwerpt en maak var
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
+source-git-commit: 36fa580b017ab10097512165a35a9198a6d331d3
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2670'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ Deze editor biedt:
 
 * [Automatisch opslaan](#saving-autosaving)om te voorkomen dat bewerkingen per ongeluk verloren gaan.
 * [In line uploaden van elementen als inhoudsverwijzingen](#reference-images), zonder ze eerst naar Asset DAM te moeten uploaden.
+* [Variaties genereren](#generate-variations-ai) gebruiken om het maken van inhoud te versnellen op basis van aanwijzingen.
 * [Voorvertoning](#preview-content-fragment) van de gerenderde ervaring die door het inhoudsfragment wordt geleverd.
 * Vermogen [Publiceren](#publish-content-fragment) en [Publiceren ongedaan maken](#unpublish-content-fragment) uit de editor.
 * Vermogen [gekoppelde taalkopieën bekijken en openen](#view-language-copies) in de editor.
@@ -83,7 +84,7 @@ In het linkerpaneel kunt u zien:
 
 * de lijst van **[Variaties](#variations)** die voor dit fragment zijn gemaakt:
    * **Hoofd** De variatie die aanwezig is wanneer het inhoudsfragment voor het eerst wordt gemaakt, kunt u later andere varianten toevoegen
-   * u kunt een variatie selecteren en openen om te bewerken
+   * u kunt gebruiken produceert Variaties (#generate-Variaties) om een snel gebaseerde malplaatje te gebruiken dat de Adobe voor een specifiek gebruiksgeval heeft gecreeerd.
    * u kunt [een variatie maken](#create-variation)
 * de **Velden** in het fragment en de variaties ervan:
    * het pictogram geeft de [Gegevenstype](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -119,6 +120,8 @@ Bij elke update die u maakt, wordt het inhoudsfragment automatisch opgeslagen. D
 Vanuit de editor kunt u:
 
 * [Variaties maken](#create-variation) van de **Hoofd** content
+
+* [AI variaties genereren gebruiken](#generate-variations-ai) om Generative AI te gebruiken om een snel gebaseerde sjabloon te gebruiken die Adobe voor een specifiek gebruiksgeval heeft gemaakt.
 
 * Selecteer de gewenste variatie voor het bewerken van de inhoud
 
@@ -156,14 +159,52 @@ De naam van een **Variatie**:
 
 1. Druk op **Retourneren** of naar een ander veld gaan om de wijziging automatisch op te slaan. De titel wordt bijgewerkt in het gedeelte **Variaties** aan de linkerkant.
 
+### Variaties maken met GenAI met Variaties genereren {#generate-variations-ai}
+
+Gebruik Generatieve variaties om generatieve AI te gebruiken om het maken van inhoud te versnellen.
+
+De generatieve variaties gebruiken in de Inhoudsfragmenteditor:
+
+1. Open de Inhoudsfragmenteditor. In de kopbal zult u het ingangspunt vinden om Variaties te produceren:
+
+![Variaties genereren in de Inhoudsfragmenteditor](assets/cfm-generate-variations1.png)
+
+1. Variaties genereren wordt geopend op een nieuw tabblad. In de linkertrack ziet u de AEM Cloud-instantie en het inhoudsfragment waarvoor u inhoud maakt. Selecteer de vraag u wilt gebruiken of een nieuwe herinnering creëren.
+
+   >[!NOTE]
+   >
+   >De beschikbare sjablonen voor herinneringen voor Adoben zijn nu beperkt, maar in toekomstige versies wordt meer toegevoegd.
+
+![Exporteren om variaties in inhoudsfragment te genereren](assets/cfm-generate-variations2.png)
+
+1. Genereer inhoud door de vragen in te vullen. Het inhoudsmodel van het fragment wordt automatisch gebruikt om inhoud te genereren met GenAI.
+
+   >[!NOTE]
+   >
+   >Momenteel ondersteunen we alleen tekstvelden.
+
+![Exporteren om variaties in inhoudsfragment te genereren](assets/cfm-generate-variations3.png)
+
+1. Selecteer de variant die u wilt genereren en selecteer &quot;variatie exporteren&quot;. Bevestig de naam van de variatie van het inhoudsfragment en selecteer een van de volgende opties:
+
+   * **Exporteren**: exporteer variatie naar Inhoudsfragment en blijf in de toepassing Variatie genereren.
+   * **Exporteren en openen**: exporteer de variatie naar Inhoudsfragment en open een nieuw tabblad waarop het Inhoudsfragment wordt weergegeven met de nieuwe variatie van GenAI.
+
+   ![Exporteren om variaties in inhoudsfragment te genereren](assets/cfm-generate-variations4.png)
+
+1. Gegenereerde variaties worden weergegeven in de hoofdeditor voor contentfragmenten.
+
+   ![Variaties in inhoudsfragment genereren weergeven](assets/cfm-generate-variations5.png)
+
+Meer informatie over Variaties genereren [hier]{generative-ai/generate-variations.md}.
 
 ### Een wijziging verwijderen {#delete-variation}
 
 Een variatie van het inhoudsfragment verwijderen:
 
->[!NOTE]
->
->U kunt niet verwijderen **Hoofd**.
+    >[!OPMERKING]
+    >
+    >U kunt **Main** niet verwijderen.
 
 1. Selecteer de variatie.
 

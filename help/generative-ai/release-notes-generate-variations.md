@@ -1,10 +1,11 @@
 ---
 title: Opmerkingen bij de release voor het genereren van variaties
 description: Opmerkingen bij de release voor het genereren van variaties, die toegankelijk zijn vanuit AEM as a Cloud Service en de Sidekick van Edge Delivery Services
-source-git-commit: 8067da7fb65bee6c147f306712eb312323244357
+exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
+source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 1%
+source-wordcount: '225'
+ht-degree: 0%
 
 ---
 
@@ -17,6 +18,15 @@ Deze pagina documenteert de versienota&#39;s voor Generate Variaties, toegankeli
 >Zie [deze pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de actuele releaseopmerkingen voor Adobe Experience Manager as a Cloud Service.
 
 ## Hooglichten opheffen {#release-highlights}
+
+De huidige versie is versie 2.2.0.
+
+### 2.2.0. {#release-notes-2-2-0}
+
+* Geïmplementeerde ondersteuning voor inhoudsfragmenten
+* Introductie van de mogelijkheid om resultaten als CSV-bestanden te downloaden van Favorieten
+* De lijst Recenten is uitgebreid met tijdgroepen
+* Ondersteuning voor lokalisatie is toegevoegd voor meerdere talen
 
 De huidige release is versie 2.0.0.
 
