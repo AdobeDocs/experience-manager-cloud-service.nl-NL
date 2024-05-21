@@ -2,9 +2,9 @@
 title: UI-tests
 description: Het testen van de UI van de douane is een facultatieve eigenschap die u toelaat om tests UI voor uw douanetoepassingen tot stand te brengen en automatisch in werking te stellen
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2610'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Deze uitvoering instrueert de Geweven Insteekmodule van de Assemblage om een arc
 </assembly>
 ```
 
-De assemblagebeschrijving geeft de plug-in de opdracht een archief van het type te maken `.tar.gz` en wijst de `ui-test-docker-context` classificator. Bovendien worden de bestanden weergegeven die in het archief moeten worden opgenomen, inclusief de volgende bestanden.
+De assemblagebeschrijving geeft de plug-in de opdracht een archief van het type te maken `.tar.gz` en wijst de `ui-test-docker-context` classificator. Bovendien worden de bestanden weergegeven die in het archief moeten worden opgenomen, waaronder:
 
 * A `Dockerfile`, verplicht voor het samenstellen van de Docker-afbeelding
 * De `wait-for-grid.sh` script, waarvan de doeleinden hieronder worden beschreven
@@ -199,7 +199,7 @@ Als u de voorbeelden gebruikt die door Adobe worden verstrekt:
   fi
   ```
 
-* Voor de Cypress- en Java Selenium-testmonsters die door de Adobe worden geleverd, is de aanmeldingsmarkering al ingesteld.
+* De Cypress- en Java Selenium-testmonsters die door de Adobe worden geleverd, beschikken al over de markering opt-in.
 
 ## Tests voor gebruikersinterface schrijven {#writing-ui-tests}
 
@@ -210,7 +210,7 @@ Deze sectie beschrijft de overeenkomsten die het beeld van de Docker dat uw test
 De volgende omgevingsvariabelen worden bij uitvoering aan de Docker-afbeelding doorgegeven, afhankelijk van uw framework.
 
 | Variabele | Voorbeelden | Beschrijving | Testframework |
-|---|---|---|---|
+|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | De URL van de seleniumserver | Alleen selenium |
 | `SELENIUM_BROWSER` | `chrome` | De browserimplementatie die wordt gebruikt door de seleniumserver | Alleen selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | De URL van de AEM instantie van de auteur | Alles |
@@ -221,12 +221,19 @@ De volgende omgevingsvariabelen worden bij uitvoering aan de Docker-afbeelding d
 | `AEM_PUBLISH_PASSWORD` | `admin` | Het wachtwoord voor aanmelding bij de AEM-publicatie-instantie | Alles |
 | `REPORTS_PATH` | `/usr/src/app/reports` | Het pad waar het XML-rapport van de testresultaten moet worden opgeslagen | Alles |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | De URL waarnaar het bestand moet worden geüpload om deze toegankelijk te maken voor het testframework | Alles |
+| `PROXY_HOST` | `proxy-host` | De hostnaam van de interne HTTP-proxy die moet worden gebruikt door het testframework | Alles behalve selenium |
+| `PROXY_HTTPS_PORT` | `8071` | De luisterpoort van de proxyserver voor HTTPS-verbindingen (kan leeg zijn) | Alles behalve selenium |
+| `PROXY_HTTP_PORT` | `8070` | De luisterpoort van de proxyserver voor HTTP-verbindingen (kan leeg zijn) | Alles behalve selenium |
+| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | Het pad naar het CA-certificaat dat door het testkader moet worden gebruikt | Alles behalve selenium |
+| `PROXY_OBSERVABILITY_PORT` | `8081` | De HTTP-poort voor gezondheidscontrole van de proxyserver | Alles behalve selenium |
+| `PROXY_RETRY_ATTEMPTS` | `12` | Voorgesteld aantal pogingen opnieuw proberen tijdens wachten op gereedheid van proxyserver | Alles behalve selenium |
+| `PROXY_RETRY_DELAY` | `5` | Voorgestelde vertraging tussen pogingen opnieuw proberen terwijl het wachten op de gereedheid van de volmachtsserver | Alles behalve selenium |
 
 De testmonsters van de Adobe verstrekken helperfuncties om tot de configuratieparameters toegang te hebben:
 
 * Cypress: de standaardfunctie gebruiken `Cypress.env('VARIABLE_NAME')`
-* JavaScript: Zie de [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) module
-* Java: Zie de [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+* JavaScript: Zie de [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: Zie de [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Testrapporten genereren {#generate-test-reports}
 
@@ -239,6 +246,8 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 >Het resultaat van de teststap voor de gebruikersinterface wordt alleen op basis van de testrapporten geëvalueerd. Zorg ervoor dat u het rapport dienovereenkomstig voor uw testuitvoering produceert.
 >
 >De beweringen van het gebruik in plaats van enkel het registreren van een fout aan STDERR of het terugkeren van een niet-nul uitgangscode anders kan uw plaatsingspijpleiding normaal te werk gaan.
+>
+>Als een HTTP-proxy tijdens de uitvoering van de tests is gebruikt, bevatten de resultaten een `request.log` bestand.
 
 ### Vereisten {#prerequisites}
 
@@ -252,10 +261,10 @@ Als het Docker-beeld samen met andere programmeertalen of testrunners wordt geï
 
 | Type | Waarde | Beschrijving |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2.0 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
-| Geheugen | 1Gi | Hoeveelheid aan de test toegewezen geheugen, waarde in bytes |
-| Time-out | 30m | De duur waarna de test wordt beëindigd. |
-| Aanbevolen duur | 15m | De Adobe beveelt aan de tests te schrijven om deze tijd niet langer te laten duren. |
+| CPU | 2,0 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
+| Geheugen | 1 GB | Hoeveelheid aan de test toegewezen geheugen, waarde in bytes |
+| Time-out | 30 m | De duur waarna de test wordt beëindigd. |
+| Aanbevolen duur | 15 m | De Adobe beveelt aan de tests te schrijven om deze tijd niet langer te laten duren. |
 
 >[!NOTE]
 >
@@ -306,6 +315,113 @@ Tests moeten soms bestanden uploaden naar de toepassing die wordt getest. Om de 
 1. Als het uploaden is gelukt, retourneert de aanvraag een `200 OK` reactie van het type `text/plain`.
    * De inhoud van de reactie is een ondoorzichtige bestandshandgreep.
    * U kunt deze greep gebruiken in plaats van een bestandspad in een `<input>` -element om het uploaden van bestanden in uw toepassing te testen.
+
+## Cypersspecifieke details
+
+>[!NOTE]
+>
+>Deze sectie is alleen van toepassing wanneer Cypress de gekozen testinfrastructuur is.
+
+### HTTP-proxy instellen
+
+Het ingangspunt van de container van de Dokker moet de waarde van controleren `PROXY_HOST` omgevingsvariabele.
+
+Als deze waarde leeg is, zijn geen extra stappen vereist en de tests zouden zonder de volmacht van HTTP moeten worden uitgevoerd.
+
+Als het niet leeg is, moet het entryPoint manuscript:
+
+1. Vorm een de volmachtsverbinding van HTTP voor het runnen van tests UI. Dit kan worden bereikt door de `HTTP_PROXY` omgevingsvariabele die is samengesteld met behulp van de volgende waarden:
+   * Proxyhost, die wordt geleverd door `PROXY_HOST` variabel
+   * Proxypoort, die wordt geleverd door `PROXY_HTTPS_PORT` of `PROXY_HTTP_PORT` variabele (de variabele met een niet-lege waarde wordt gebruikt)
+2. Stel het CA-certificaat in dat wordt gebruikt wanneer u verbinding maakt met de HTTP-proxy. De locatie ervan wordt verstrekt door `PROXY_CA_PATH` variabele.
+   * Dit kan worden bereikt door de uitvoer `NODE_EXTRA_CA_CERTS` omgevingsvariabele.
+3. Wacht tot de HTTP-proxy gereed is.
+   * Om de gereedheid te controleren, de omgevingsvariabelen `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` en `PROXY_RETRY_DELAY` kan worden gebruikt.
+   * U kunt controleren met een cURL-aanvraag. Controleer of u cURL hebt geïnstalleerd in uw `Dockerfile`.
+
+Een voorbeeldimplementatie kan in het Centrum van de Test van de Module van de Steekproef van de Cypress op worden gevonden [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+
+## Specifieke gegevens voor afspelen
+
+>[!NOTE]
+>
+> Deze sectie is alleen van toepassing wanneer Playwright de gekozen testinfrastructuur is.
+
+### HTTP-proxy instellen
+
+>[!NOTE]
+>
+> In gepresenteerde voorbeelden, veronderstellen wij Chrome als projectbrowser wordt gebruikt.
+
+Net als bij Cypress moeten tests de HTTP-proxy gebruiken als een niet-lege proxy `PROXY_HOST` omgevingsvariabele wordt gegeven.
+
+Daartoe moeten de volgende wijzigingen worden aangebracht.
+
+#### Dockerfile
+
+Installeer de URL en `libnss3-tools`, die `certutil.`
+
+```dockerfile
+RUN apt -y update \
+    && apt -y --no-install-recommends install curl libnss3-tools \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+#### EnterPoint-script
+
+Neem een basscript op dat, voor het geval `PROXY_HOST` de omgevingsvariabele wordt gegeven, doet het volgende:
+
+1. Aan proxy gerelateerde variabelen exporteren, zoals `HTTP_PROXY` en `NODE_EXTRA_CA_CERTS`
+2. Gebruiken `certutil` om proxy CA-certificaat voor chroom te installeren
+3. Wacht tot de volmacht van HTTP klaar is (of weg bij mislukking).
+
+Voorbeeldimplementatie:
+
+```bash
+# setup proxy environment variables and CA certificate
+if [ -n "${PROXY_HOST:-}" ]; then
+  if [ -n "${PROXY_HTTPS_PORT:-}" ]; then
+    export HTTP_PROXY="https://${PROXY_HOST}:${PROXY_HTTPS_PORT}"
+  elif [ -n "${PROXY_HTTP_PORT:-}" ]; then
+    export HTTP_PROXY="http://${PROXY_HOST}:${PROXY_HTTP_PORT}"
+  fi
+  if [ -n "${PROXY_CA_PATH:-}" ]; then
+    echo "installing certificate"
+    mkdir -p $HOME/.pki/nssdb
+    certutil -d sql:$HOME/.pki/nssdb -A -t "CT,c,c" -n "EaaS Client Proxy Root" -i $PROXY_CA_PATH
+    export NODE_EXTRA_CA_CERTS=${PROXY_CA_PATH}
+  fi
+  if [ -n "${PROXY_OBSERVABILITY_PORT:-}" ] && [ -n "${HTTP_PROXY:-}" ]; then
+    echo "waiting for proxy"
+    curl --silent  --retry ${PROXY_RETRY_ATTEMPTS:-3} --retry-connrefused --retry-delay ${PROXY_RETRY_DELAY:-10} \
+      --proxy ${HTTP_PROXY} --proxy-cacert ${PROXY_CA_PATH:-""} \
+      ${PROXY_HOST}:${PROXY_OBSERVABILITY_PORT}
+    if [ $? -ne 0 ]; then
+      echo "proxy is not ready"
+      exit 1
+    fi
+  fi
+fi
+```
+
+#### Configuratie afspelen
+
+De afspeelrechtconfiguratie wijzigen (bijvoorbeeld in `playwright.config.js`) gebruiken voor het geval dat de `HTTP_PROXY` omgevingsvariabele wordt ingesteld.
+
+Voorbeeldimplementatie:
+
+```javascript
+const proxyServer = process.env.HTTP_PROXY || ''
+```
+
+```javascript
+// enable proxy if set
+if (proxyServer !== '') {
+ cfg.use.proxy = {
+  server: proxyServer,
+ }
+}
+```
 
 ## UI-tests lokaal uitvoeren {#run-ui-tests-locally}
 

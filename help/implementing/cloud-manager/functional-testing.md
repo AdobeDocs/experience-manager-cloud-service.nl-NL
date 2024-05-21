@@ -2,9 +2,9 @@
 title: Functionele tests
 description: Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,8 @@ De tests worden verpakt in een Docker-afbeelding - ontworpen om zo vluchtig moge
 >[!NOTE]
 >
 >Aangepaste UI-tests worden uitgevoerd in de productie- en niet-productie (opt-in) pijpleidingen die worden gebruikt door de implementatie van de AEM toepassing en AEM productpush-updates, en vormen daarom een belangrijke bijdrage aan het goed functioneren van uw toepassing en het verhogen van de veiligheid van de release. De tests van de klantengebruikersinterface worden ook uitgevoerd in interne pre-releasebevestigingspijpleidingen voor elke klant, die hulp vroege terugkoppelt verstrekt.
+>
+>Niet-seleniumcontainers moeten tests uitvoeren met een HTTP-proxy op basis van de omgevingsvariabelen in de [Sectie voor testen gebruikersinterface.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 Om pijpleiding efficiënte uitvoeringen te houden, adviseren wij zich op zeer belangrijke eigenschappen en belangrijkste gebruikersinteractiestromen te concentreren. Volledige UI-testsuites die niet in deze kwaliteitspoort passen, worden aanbevolen als onderdeel van algemene klantvalidatiepijpleidingen tijdens de ontwikkelingsstroom van de klant.
 
