@@ -2,9 +2,9 @@
 title: Inclusief randzijde
 description: De Adobe Beheerde CDN ondersteunt nu Edge Side Includes (ESI), een opmaaktaal voor dynamische webinhoud-assemblage op randniveau.
 feature: Dispatcher
-source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
+source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,8 @@ De gevormde eigenschappen hebben het volgende gedrag:
 |-----------|--------------------------|
 | **zonder gzip** | Indien ingesteld op 1, wordt de pagina HTML verzonden van apache naar de niet-gecomprimeerde CDN. Dit is noodzakelijk voor ESI aangezien de inhoud moet worden verzonden naar CDN niet gecomprimeerd zodat CDN de tags ESI kan zien en evalueren.<br/><br/>Zowel de bovenliggende pagina als de opgenomen fragmenten moeten no-gzip instellen op 1.<br/><br/>Deze instelling overschrijft de compressie-instelling die Apache anders heeft gebruikt, op basis van de aanvraag `Accept-Encoding` waarden. |
 | **x-aem-esi** | Indien ingesteld op &quot;on&quot;, evalueert de CDN de ESI-tags van de bovenliggende HTML-pagina.  Standaard is de koptekst niet ingesteld. |
-| **x-aem-compress** | Als deze optie is ingesteld op &quot;on&quot;, comprimeert de CDN de inhoud van de CDN naar de browser. Aangezien de overdracht van de bovenliggende pagina van apache naar CDN moet worden gedecomprimeerd om te werken (geen gzip ingesteld op 1), kan dit de latentie verminderen.<br/><br/>Als deze kopbal niet wordt geplaatst, wanneer CDN inhoud van de oorsprong niet samengeperste terugwint, zou het inhoud aan de cliënt niet samengeperste, eveneens dienen. Daarom is het noodzakelijk om deze kopbal te plaatsen als no-gzip aan 1 (vereist voor ESI) wordt geplaatst en het wordt gewenst om inhoud te dienen die van CDN aan browser wordt gecomprimeerd. |
+| **x-aem-compress** | Als deze optie is ingesteld op &quot;on&quot;, comprimeert de CDN de inhoud van de CDN naar de browser. Aangezien de overdracht van de bovenliggende pagina van apache naar CDN moet worden gedecomprimeerd voordat ESI kan werken (`no-gzip` ingesteld op 1), kan de latentie hierdoor worden verminderd.<br/><br/>Als deze kopbal niet wordt geplaatst, wanneer CDN inhoud van de oorsprong niet samengeperste terugwint, zou het inhoud aan de cliënt niet samengeperste, eveneens dienen. Daarom moet deze header worden ingesteld als `no-gzip` is ingesteld op 1 (vereist voor ESI) en u wilt inhoud die is gecomprimeerd van de CDN naar de browser verzenden. |
 
 ## Dynamisch afspelen opnemen {#esi-sdi}
 
 Niet vereist, [Dynamisch afspelen opnemen](https://sling.apache.org/documentation/bundles/dynamic-includes.html) (SDI) kan worden gebruikt om ESI-fragmenten te genereren die op de CDN worden geïnterpreteerd.
-
