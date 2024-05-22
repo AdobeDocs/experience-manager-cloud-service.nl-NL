@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor het genereren van variaties
 description: Opmerkingen bij de release voor het genereren van variaties, die toegankelijk zijn vanuit AEM as a Cloud Service en de Sidekick van Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
+source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,6 @@ De huidige versie is versie 2.2.0.
 * Introductie van de mogelijkheid om resultaten als CSV-bestanden te downloaden van Favorieten
 * De lijst Recenten is uitgebreid met tijdgroepen
 * Ondersteuning voor lokalisatie is toegevoegd voor meerdere talen
-
-De huidige release is versie 2.0.0.
 
 ### 2.0.0. {#release-notes-2-0-0}
 
