@@ -2,9 +2,9 @@
 title: Variaties genereren
 description: Meer informatie over Variaties genereren, toegankelijk via AEM as a Cloud Service en de Sidekick van Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
+source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3262'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ U kunt [toegang Variaties genereren](#access-generate-variations) van:
 
 * [binnen Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [de Sidekick van AEM Edge Delivery Services](#access-aem-sidekick)
-* [in de Inhoudsfragmenteditor](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html#generate-variations-ai)
+* [in de Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >
