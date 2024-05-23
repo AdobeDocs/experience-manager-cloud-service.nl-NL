@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b6fe2a58bb16c70cef48426ec49dda474195c023
+source-git-commit: d107f40c4bc43837db9d8fab3d06627d9e930620
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1574'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,6 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16357 same
 * SITES-20238: [RTC] Pfizer MVP - voeg CF API toe om de wegen van CF aan IDs en voor vice versa op te lossen.
 * SITES-21043: [CF][launches] Prestatieverbeteringen aan de Cloud Service op de zijkant.
 * SITES-21044 [CF][launches] De async van de zijhaven geeft nuttige ladingimplementatie aan Cloud Service uit.
-* FORMS-9606: Eerder konden in de Adaptive Forms Editor alleen veldwaarden worden toegewezen aan de reactie van een Invoke-service. Nu, hebben de auteurs de capaciteit om het even welk bezit van het gebied aan de aanroepende de dienstreactie in kaart te brengen.
 * FORMS-7483: AEM Forms JSON Schema Parser ondersteunt nu het JSON-schema (2020-2012).
 * FORMS-13209: Een handler is inbegrepen om de standaardverwerkings- en verzendmislukkingshandlers van Adaptive Forms te negeren. U kunt deze handlers configureren via de Adaptive Forms Rule Editor.
 * FORMS-13612: Schermlezers lezen nu foutberichten, korte beschrijvingen en lange beschrijvingen voor velden in de belangrijkste op componenten gebaseerde Adaptieve Forms. Daarnaast is ondersteuning toegevoegd voor het ongeldig maken van adaptieve invoer van formulieren als het formulier fouten bevat en niet geldig is voor verzending.
