@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
 workflow-type: tm+mt
-source-wordcount: '9220'
+source-wordcount: '9237'
 ht-degree: 0%
 
 ---
@@ -537,13 +537,13 @@ Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
 
 Het inschakelen van DASH-ondersteuning voor uw account gebeurt via een Adobe voor klantenondersteuning die u maakt en verzendt.
 
-**Ondersteuning voor multi-caption en multi-audiotracks voor uw account inschakelen**
+**Ondersteuning voor meerdere bijschriften en audiotracks voor uw account inschakelen**
 
-Als u een Adobe Support-case maakt voor DASH ingeschakeld op uw account, kunt u er ook van profiteren dat ondersteuning voor meerdere bijschriften en voor meerdere audiotracks automatisch wordt ingeschakeld. Nadat u deze optie hebt ingeschakeld, worden alle volgende video&#39;s die u uploadt, verwerkt met een nieuwe back-endarchitectuur die ondersteuning biedt voor het toevoegen van tracks voor meerdere bijschriften en voor meerdere audio aan uw video&#39;s.
+Als u een Adobe Support-case maakt voor DASH ingeschakeld op uw account, kunt u er ook van profiteren dat ondersteuning voor meerdere bijschriften en audiotracks automatisch wordt ingeschakeld. Nadat u deze optie hebt ingeschakeld, worden alle volgende video&#39;s die u uploadt, verwerkt met een nieuwe back-endarchitectuur die ondersteuning biedt voor het toevoegen van meerdere bijschriften en audiotracks aan uw video&#39;s.
 
 >[!IMPORTANT]
 >
->Alle video&#39;s die u hebt geüpload *voor* ondersteuning voor meerdere bijschriften en audiotracks inschakelen voor uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en meerdere audiotracks beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
+>Alle video&#39;s die u hebt geüpload *voor* het inschakelen van ondersteuning voor meerdere bijschriften en audiotracks op uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
 
 **U kunt als volgt ondersteuning voor DASH-, multi-caption- en multi-audiotracks inschakelen op uw Dynamic Media-account:**
 
@@ -567,11 +567,11 @@ Als u een Adobe Support-case maakt voor DASH ingeschakeld op uw account, kunt u 
 
 ## Ondersteuning voor meerdere bijschriften en audiotracks voor video&#39;s in Dynamic Media{#about-msma}
 
-Met de mogelijkheid om meerdere bijschriften te maken en meerdere audiotracks te volgen in Dynamic Media, kunt u eenvoudig meerdere bijschriften en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+Met de mogelijkheden voor meerdere bijschriften en audiotracks in Dynamic Media kunt u eenvoudig meerdere bijschriften en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
 ![Het tabblad Bijschriften en audiotracks in Dynamic Media en een tabel met geüploade .VTT-bijschriftbestanden en geüploade .MP3-audiotrackbestanden voor een video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
-U kunt onder andere de volgende gebruiksscenario&#39;s gebruiken voor het toevoegen van meerdere ondertitels en audiotracks aan uw primaire video:
+Een aantal van de gebruiksscenario&#39;s die u moet overwegen om meerdere bijschriften en audiotracks toe te voegen aan uw primaire video, zijn onder andere:
 
 | Type | Hoofdletters gebruiken |
 |--- |--- |
@@ -581,13 +581,13 @@ U kunt onder andere de volgende gebruiksscenario&#39;s gebruiken voor het toevoe
 |  | Commentaartracks |
 |  | Beschrijvende audio |
 
-Alles [video-indelingen ondersteund in Dynamic Media](/help/assets/file-format-support.md) en alle Dynamic Media-videoviewers, behalve de Dynamic Media *Video_360* viewer: wordt ondersteund voor gebruik met meerdere ondertitels en audiotracks.
+Alles [video-indelingen ondersteund in Dynamic Media](/help/assets/file-format-support.md) en alle Dynamic Media-videoviewers, behalve de Dynamic Media *Video_360* viewer: wordt ondersteund voor gebruik met meerdere bijschriften en audiotracks.
 
 Mogelijkheid voor meerdere bijschriften en audiotracks is beschikbaar voor uw Dynamic Media-account via een functiewissel die moet worden ingeschakeld (ingeschakeld) door de Adobe Klantenondersteuning.
 
 ### Meerdere bijschriften en audiotracks toevoegen aan uw video {#add-msma}
 
-Voordat u tracks voor meerdere bijschriften en audio toevoegt aan uw video, moet u controleren of u al over het volgende beschikt:
+Voordat u meerdere bijschriften en audiotracks aan uw video toevoegt, moet u controleren of u al over het volgende beschikt:
 
 * Dynamic Media wordt ingesteld in een AEM omgeving.
 * A [Dynamic Media-videoprofiel wordt toegepast op de map waarin uw video&#39;s worden opgenomen](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
@@ -597,12 +597,12 @@ Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen We
 
 >[!IMPORTANT]
 >
->Alle video&#39;s die u hebt geüpload *voor* ondersteuning voor meerdere bijschriften en audiotracks inschakelen voor uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en meerdere audiotracks beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
+>Alle video&#39;s die u hebt geüpload *voor* het inschakelen van ondersteuning voor meerdere bijschriften en audiotracks op uw Dynamic Media-account, [moet worden opgewerkt](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
 
-**U kunt als volgt meerdere bijschriften en audiotracks toevoegen aan uw video:**
+**Meerdere bijschriften en audiotracks toevoegen aan uw video:**
 
 1. [Uw primaire video uploaden naar een map](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) waaraan al een videoprofiel is toegewezen.
-1. Navigeer naar het geüploade video-element waaraan u nummers voor meerdere bijschriften en audio wilt toevoegen.
+1. Navigeer naar het geüploade video-element waaraan u meerdere bijschriften en audiotracks wilt toevoegen.
 1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
    ![Geselecteerd video-element met vinkje boven de miniatuurafbeelding van de video en Weergave-eigenschappen gemarkeerd op de werkbalk.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Geselecteerd video-element in de kaartweergave.*
@@ -825,7 +825,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
 
 >[!IMPORTANT]
 >
->Adobe beveelt aan [mogelijkheid voor meerdere bijschriften en meerdere audiotracks mogelijk maken](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, bijschriften en audiotracks aan uw video&#39;s.
+>Adobe beveelt aan [mogelijkheid voor meerdere bijschriften en audiotracks inschakelen](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, bijschriften en audiotracks aan uw video&#39;s.
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Bijschriften in vreemde talen worden weergegeven zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 
