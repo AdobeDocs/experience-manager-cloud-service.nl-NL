@@ -4,9 +4,9 @@ description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formul
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2028'
 ht-degree: 0%
 
 ---
@@ -270,7 +270,7 @@ Laten we nu de `clientlib-it-custom-locale` bibliotheek in uw AEM as a Cloud Ser
 
 
 
-### 5. Voeg ondersteuning voor landinstellingen toe aan het woordenboek
+### Ondersteuning voor landinstellingen toevoegen aan het woordenboek
 
 Deze stap is alleen van toepassing op andere landinstellingen dan de volgende algemeen ondersteunde landinstellingen: Engels (en), Duits (de), Spaans (es), Frans (fr), Italiaans (it), Braziliaans Portugees (pt-br), Chinees (vereenvoudigd - zh_cn), Chinees (Traditioneel - zh_tw), Japans (ja) en Koreaans (ko_kr).
 
@@ -350,7 +350,7 @@ U bent nu klaar om de nieuwe landinstelling te gebruiken met uw Adaptive Forms. 
 
       Trigger een plaatsing van uw code door [bestaande full-stack pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd met de nieuwe ondersteuning voor landinstellingen.
 
-      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [hoe een pijpleiding voor AEM Forms as a Cloud Service op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)..
+      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [hoe een pijpleiding voor AEM Forms as a Cloud Service op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## Een voorbeeld bekijken van een adaptief formulier met de nieuwe landinstelling
@@ -358,8 +358,6 @@ U bent nu klaar om de nieuwe landinstelling te gebruiken met uw Adaptive Forms. 
 Deze stappen begeleiden u door een voorbeeld weer te geven van een adaptief formulier met de nieuwe landinstelling:
 
 1. Meld u aan bij uw as a Cloud Service AEM Forms-exemplaar.
-
-1. Zoek de sectie &quot;Forms&quot; en navigeer naar &quot;Forms and Documents&quot;.
 1. Ga naar **Forms** >  **Forms en Documenten**.
 1. Selecteer een adaptief formulier en klik op **Woordenboek toevoegen** en **Woordenboek toevoegen aan vertaalproject** wordt weergegeven.
 1. Geef de **Projecttitel** en selecteert u de **Doeltalen** in het keuzemenu in het dialoogvenster **Woordenboek toevoegen aan vertaalproject** wizard.
@@ -367,20 +365,6 @@ Deze stappen begeleiden u door een voorbeeld weer te geven van een adaptief form
 1. Ga naar **Forms** >  **Forms en Documenten**.
 1. Selecteer het adaptieve formulier en kies de optie **Voorvertonen als HTML** -optie.
 1. Toevoegen `&afAcceptLang=<locale-name>` naar de URL van de voorvertoning en druk op Enter. Vervangen `<locale-name>` met uw werkelijke landinstellingscode. Het adaptieve formulier wordt weergegeven in de opgegeven landinstelling.
-
-
-## Een voorbeeld bekijken van een adaptief formulier met de nieuwe landinstelling {#use-added-locale-in-af}
-
-Voer de volgende stappen uit om een voorvertoning weer te geven van een adaptief met de nieuwe landinstelling:
-
-1. Meld u aan bij uw as a Cloud Service AEM Forms-exemplaar.
-1. Ga naar **Forms** >  **Forms en Documenten**.
-1. Selecteer een adaptief formulier en klik op **Woordenboek toevoegen** en **Woordenboek toevoegen aan vertaalproject** wordt weergegeven.
-1. Geef de **Projecttitel** en selecteert u de **Doeltalen** in het keuzemenu in het dialoogvenster **Woordenboek toevoegen aan vertaalproject** wizard.
-1. Klikken **Gereed** en voert het gemaakte vertaalproject uit.
-1. Selecteer een adaptief formulier en klik op **Voorvertonen als HTML**.
-1. Toevoegen `&afAcceptLang=<locale-name>` in de URL van een adaptief formulier.
-1. De pagina vernieuwen en het adaptieve formulier wordt weergegeven in een opgegeven landinstelling.
 
 ## Aanbevolen procedures voor ondersteuning van nieuwe lokalisatie {#best-practices}
 
@@ -393,12 +377,11 @@ Voer de volgende stappen uit om een voorvertoning weer te geven van een adaptief
 
    * **Menselijke vertaling**: Voor workflows voor menselijke vertaling exporteert u het woordenboek met de gebruikersinterface op `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de nieuwe gebieden bij en upload de herziene versie.
 
-## Meer weergeven
-
-* [Opnamedocument genereren voor Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
-* [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## Zie ook {#see-also}
 
 {{see-also}}
+
+* [Opnamedocument genereren voor Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+* [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
