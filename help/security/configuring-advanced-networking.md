@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek uitgangIP adres voor AEM as a Cloud Service te vormen.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
+source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
 workflow-type: tm+mt
-source-wordcount: '5093'
+source-wordcount: '5388'
 ht-degree: 0%
 
 ---
@@ -792,3 +792,17 @@ De procedure is grotendeels vergelijkbaar met de voorgaande instructies. Nochtan
 #### VPN {#vpn-regions}
 
 De procedure is bijna identiek aan de specifieke IP van de uitgang adresinstructies. Het enige verschil is dat naast het gebiedsbezit dat verschillend van het primaire gebied wordt gevormd, `connections.gateway` veld kan optioneel worden geconfigureerd. De configuratie kan aan een verschillend eindpunt leiden van VPN dat door uw organisatie wordt in werking gesteld, geografisch dichter aan het nieuwe gebied.
+
+## Problemen oplossen
+
+Gelieve te worden geadviseerd dat de volgende punten als informatieve richtlijnen worden verstrekt en beste praktijken voor het oplossen van problemen omvatten. Deze aanbevelingen zijn bedoeld als hulp bij het effectief diagnosticeren en oplossen van problemen.
+
+### Verbinding samenvoegen {#connection-pooling-advanced-networking}
+
+Verbindingspooling is een techniek die wordt gemaakt en onderhouden om een bewaarplaats van verbindingen te creëren, die klaar voor onmiddellijk gebruik door om het even welke draad staan die hen kan vereisen. Veel technieken voor het bundelen van verbindingen zijn te vinden op verschillende online platforms en bronnen, elk met zijn unieke verdiensten en overwegingen. Wij moedigen onze klanten aan om deze methodologieën te onderzoeken om één te identificeren het meest compatibel met de architectuur van hun systeem.
+
+Het uitvoeren van een aangewezen verbinding het groeperen strategie is een pro-actieve maatregel om een gemeenschappelijk toezicht in systeemconfiguratie te verbeteren, die vaak tot suboptimale prestaties leidt. Door correct een verbindingspool te vestigen, kan Adobe Experience Manager (AEM) de efficiency van externe vraag verbeteren. Dit vermindert niet alleen middelverbruik maar ook het risico van de dienstverstoringen en vermindert de waarschijnlijkheid om ontbroken verzoeken te ontmoeten wanneer het communiceren met stroomopwaartse servers.
+
+In het licht van deze informatie adviseren wij u om uw huidige AEM configuratie opnieuw te beoordelen en de opzettelijke opneming van verbinding het groeperen samen met de Geavanceerde montages van het Voorzien van een netwerk te overwegen. Door deze maatregelen ten uitvoer te leggen, wordt de oplossing ontworpen om te voorkomen dat proxy&#39;s overbelast raken, waardoor de kans kleiner wordt dat verzoeken geen externe eindpunten bereiken.
+
+In het licht van deze informatie, adviseren wij u om uw huidige AEM configuratie opnieuw te beoordelen en de opzettelijke opneming van verbinding het groeperen samen met de Geavanceerde montages van het Voorzien van een netwerk te overwegen. Door het aantal parallelle aansluitingen te beheren en het voorkomen van mogelijke verkoopbare verbindingen tot een minimum te beperken, leiden deze maatregelen tot een vermindering van het risico dat proxyservers hun verbindingsgrenzen bereiken. Deze strategische uitvoering is dan ook bedoeld om de kans te verkleinen dat verzoeken geen externe eindpunten bereiken.
