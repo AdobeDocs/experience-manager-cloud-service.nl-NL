@@ -2,9 +2,9 @@
 title: Rapporten beheren in de middelenweergave
 description: Open de gegevens in de sectie Rapporten van de mening van Activa om product en eigenschapgebruik te beoordelen en inzichten van zeer belangrijke succesmetriek af te leiden.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
+source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
@@ -58,11 +58,6 @@ Klikken **[!UICONTROL Insights]** U kunt de volgende automatisch gegenereerde gr
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-
-* **Aantal elementen op grootte:** Hiermee segmenteert u het totale aantal elementen in uw omgeving van de middelenweergave in verschillende groottebereiken, waarbij het aantal en het percentage elementen in elk groottebereik worden gemarkeerd met behulp van een donutgrafiek.
-  ![inzichten-activa-telling-door grootte](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Aantal elementen per type element:** Hiermee segmenteert u het totale aantal elementen in de omgeving van de middelenweergave, waarbij het aantal en het percentage van de elementen wordt gemarkeerd op basis van hun bestandstypen, weergegeven in het donutdiagram.
-  ![inzichten-activa-telling-door grootte](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## Een downloadrapport maken {#create-download-report}
 
