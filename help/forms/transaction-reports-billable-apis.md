@@ -3,10 +3,10 @@ title: Transactierapporten Billable API's
 description: Lijst met alle API's die als transacties worden beschouwd
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
+source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 1%
+source-wordcount: '1438'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +34,46 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 
 * **Gerenderde documenten:** Het genereren van een document door een sjabloon en gegevens te combineren, een document digitaal te ondertekenen of te certificeren, met behulp van een factureerbare API&#39;s voor documentservices of door een document van de ene naar de andere indeling te converteren, wordt beschouwd als documenten die worden gerenderd.
 
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_submission_graph_en"
+>title="Formulierverzendingenbeheer"
+>abstract="Deze grafiek geeft het aantal verzonden Adaptief formulieren tijdens specifieke tijdsperioden weer. De toename van verzendingen kan erop wijzen dat het formulier steeds populairder wordt of dat er meer gegevens van gebruikers moeten worden verzameld. **Opmerking:** De grafiek geeft gegevens die specifiek zijn voor het huidige exemplaar, zodat u trends snel kunt analyseren en geïnformeerde beslissingen kunt nemen. Voor verzendgegevens van andere instanties hebt u eenvoudig toegang tot het dashboard van het betreffende exemplaar."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_conversions_graph_en"
+>title="Documentrenderingsbeheer"
+>abstract="Deze grafiek geeft het aantal vertoningen van documenten tijdens specifieke tijdsperioden weer. **Opmerking:** De grafiek geeft gegevens die specifiek zijn voor het huidige exemplaar, zodat u trends snel kunt analyseren en geïnformeerde beslissingen kunt nemen. Voor verzendgegevens van andere instanties hebt u eenvoudig toegang tot het dashboard van het betreffende exemplaar."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_newForms_graph_en"
+>title="Nieuw Forms-beheer"
+>abstract="De grafiek geeft informatie over het aantal nieuwe formulieren tijdens specifieke tijdsperiodes. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Author-instantie. Als u gegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
+>title="Gepubliceerd Forms-beheer"
+>abstract="De grafiek geeft informatie over het aantal formulieren dat tijdens specifieke tijdsperioden met succes is gepubliceerd. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
+>title="Gemiddelde duur voor genereren van formulieren"
+>abstract="De grafiek toont de gemiddelde tijd die nodig is om een formulier te maken. Elke balk in de grafiek vertegenwoordigt een specifiek formulier en de hoogte van de balk geeft de gemiddelde duur aan die tijdens dat tijdframe voor het maken van het formulier is gebruikt."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
+>title="Gemiddelde duur voor het maken van formulieren"
+>abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulier te maken en te publiceren, gemeten vanaf de eerste dag dat het formulier voor bewerking is geopend. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Author-instantie. Als u gegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formFragments_graph_en"
+>title="Forms-fragmentbeheer"
+>abstract="Met deze grafiek kunt u zien hoeveel formulierfragmenten u in uw formulieren gebruikt. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
+>title="Tijdbeheer van formulierfragment Gemiddelde"
+>abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulierfragment te maken, gemeten vanaf de eerste dag dat het formulierfragment voor bewerking is geopend. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 
 <!-- 
