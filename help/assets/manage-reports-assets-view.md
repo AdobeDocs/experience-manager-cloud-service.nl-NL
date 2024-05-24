@@ -1,16 +1,17 @@
 ---
 title: Rapporten beheren in de middelenweergave
 description: Open de gegevens in de sectie Rapporten van de mening van Activa om product en eigenschapgebruik te beoordelen en inzichten van zeer belangrijke succesmetriek af te leiden.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
+source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '849'
 ht-degree: 1%
 
 ---
 
 # Rapporten beheren {#manage-reports}
 
-Middelenrapportage geeft beheerders inzicht in de activiteiten van de Adobe Experience Manager Assets-weergaveomgeving. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken. Alle gebruikers kunnen tot het dashboard van Inzichten toegang hebben en degenen die aan het het productprofiel van Beheerders worden toegewezen kunnen user-defined rapporten tot stand brengen.
+Asset Reporting geeft beheerders inzicht in de activiteiten van de Adobe Experience Manager Assets View-omgeving. Deze gegevens bevatten nuttige informatie over de manier waarop gebruikers met inhoud en het product werken. Alle gebruikers kunnen tot het dashboard van Inzichten toegang hebben en degenen die aan het het productprofiel van Beheerders worden toegewezen kunnen user-defined rapporten tot stand brengen.
 
 ## Toegangsrapporten {#access-reports}
 
@@ -38,26 +39,30 @@ In de weergave Elementen kunt u realtime gegevens voor de weergave Elementen wee
 
 Klikken **[!UICONTROL Insights]** U kunt de volgende automatisch gegenereerde grafieken weergeven in het linkernavigatiegebied:
 
-![Inzichten](assets/insights.png)
-
 * **Downloads**: Het aantal elementen dat in de afgelopen 30 dagen of 12 maanden is gedownload van de weergaveomgeving Elementen dat met een lijngrafiek wordt weergegeven.
+  ![inzichten downloaden](/help/assets/assets/insights-downloads2341.svg)
 
 * **Uploads**: Het aantal elementen dat in de weergaveomgeving van Elementen is geüpload in de laatste 30 dagen of twaalf maanden die met een lijngrafiek worden weergegeven.
-
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+  ![inzichten uploaden](/help/assets/assets/insights-uplods2.svg)
+  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **Opslaggebruik**: Het opslaggebruik, in bytes, voor de de meningsmilieu van Activa die gebruikend een bar grafiek wordt vertegenwoordigd.
-
-<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+  ![inzichten uploaden](/help/assets/assets/insights-storage-usage1.svg)
+  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Meest gebruikte zoekopdrachten**: Bekijk de belangrijkste gezochte termen samen met het aantal keren dat deze termen in de weergaveomgeving van de Middelen zijn doorzocht in de laatste 30 dagen of 12 maanden, weergegeven in een tabelindeling.
-
+  ![inzichten uploaden](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+
+* **Aantal elementen op grootte:** Hiermee segmenteert u het totale aantal elementen in uw omgeving van de middelenweergave in verschillende groottebereiken, waarbij het aantal en het percentage elementen in elk groottebereik worden gemarkeerd met behulp van een donutgrafiek.
+  ![inzichten-activa-telling-door grootte](/help/assets/assets/insights-assets-count-by-size.svg)
+* **Aantal elementen per type element:** Hiermee segmenteert u het totale aantal elementen in de omgeving van de middelenweergave, waarbij het aantal en het percentage van de elementen wordt gemarkeerd op basis van hun bestandstypen, weergegeven in het donutdiagram.
+  ![inzichten-activa-telling-door grootte](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## Een downloadrapport maken {#create-download-report}
 
