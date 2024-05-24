@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
+source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
 workflow-type: tm+mt
 source-wordcount: '9237'
 ht-degree: 0%
@@ -642,7 +642,7 @@ Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen We
      | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra audiotrackbestanden of bijschriftbestanden. |
      | Taal | Selecteer de taal van de audiotrack. |
      | Type | Selecteer het type audiotrack dat u gebruikt.<br>**Origineel** - De audiotrack die oorspronkelijk aan de video was gekoppeld en die werd weergegeven als `[Original]` op het etiket met `English` taal die standaard is geselecteerd. while **[!UICONTROL Label]** en **[!UICONTROL Language]** kan worden gewijzigd in het dialoogvenster **[!UICONTROL Edit Audio Track]** de oorspronkelijke waarden als de primaire video opnieuw wordt verwerkt.<br>**Standaard** - Een add-on audiotrack voor een andere taal dan het origineel.<br>**Audiobeschrijving** - Een audiotrack die ook een beschrijvende beschrijving van niet-verbale handelingen en bewegingen in de video bevat, waardoor inhoud toegankelijker wordt voor personen met een visuele handicap. |
-     | Label | De tekst die als naam van de audiotrack wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld: `English [Original]`. Het label van de audio die aan een video is gekoppeld, is ingesteld op `[Original|` standaard. |
+     | Label | De tekst die als naam van de audiotrack wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld: `English [Original]`. Het label van de audio die aan een video is gekoppeld, is ingesteld op `[Original]` standaard. |
 
      U kunt deze metagegevens van de audiotrack indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
@@ -815,8 +815,6 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
    | Assets | Hiermee geeft u het aantal bestanden op dat u downloadt en de gecombineerde totale grootte van alle geselecteerde bestanden. Als u deze optie uitschakelt, wordt het dialoogvenster **[!UICONTROL Download]** , zodat u geen bestanden kunt downloaden. |
 1. Selecteren **[!UICONTROL Download]**.
 1. Publiceer de video. Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
-
-
 
 
 
