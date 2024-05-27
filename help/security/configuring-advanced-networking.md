@@ -2,9 +2,9 @@
 title: Geavanceerde netwerken configureren voor AEM as a Cloud Service
 description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen zoals VPN of een flexibel of specifiek uitgangIP adres voor AEM as a Cloud Service te vormen.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
+source-git-commit: 3e8a1a8a48fc5ec6bff71062ff740acf98d743d2
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5332'
 ht-degree: 0%
 
 ---
@@ -803,6 +803,4 @@ Verbindingspooling is een techniek die wordt gemaakt en onderhouden om een bewaa
 
 Het uitvoeren van een aangewezen verbinding het groeperen strategie is een pro-actieve maatregel om een gemeenschappelijk toezicht in systeemconfiguratie te verbeteren, die vaak tot suboptimale prestaties leidt. Door correct een verbindingspool te vestigen, kan Adobe Experience Manager (AEM) de efficiency van externe vraag verbeteren. Dit vermindert niet alleen middelverbruik maar ook het risico van de dienstverstoringen en vermindert de waarschijnlijkheid om ontbroken verzoeken te ontmoeten wanneer het communiceren met stroomopwaartse servers.
 
-In het licht van deze informatie adviseren wij u om uw huidige AEM configuratie opnieuw te beoordelen en de opzettelijke opneming van verbinding het groeperen samen met de Geavanceerde montages van het Voorzien van een netwerk te overwegen. Door deze maatregelen ten uitvoer te leggen, wordt de oplossing ontworpen om te voorkomen dat proxy&#39;s overbelast raken, waardoor de kans kleiner wordt dat verzoeken geen externe eindpunten bereiken.
-
-In het licht van deze informatie, adviseren wij u om uw huidige AEM configuratie opnieuw te beoordelen en de opzettelijke opneming van verbinding het groeperen samen met de Geavanceerde montages van het Voorzien van een netwerk te overwegen. Door het aantal parallelle aansluitingen te beheren en het voorkomen van mogelijke verkoopbare verbindingen tot een minimum te beperken, leiden deze maatregelen tot een vermindering van het risico dat proxyservers hun verbindingsgrenzen bereiken. Deze strategische uitvoering is dan ook bedoeld om de kans te verkleinen dat verzoeken geen externe eindpunten bereiken.
+In het licht van deze informatie, adviseert de Adobe het herbeoordelen van uw huidige AEM configuratie en overweegt de opzettelijke opneming van verbinding het groeperen samen met de Geavanceerde montages van het Voorzien van een netwerk. Door het beheer van het aantal parallelle verbindingen en het minimaliseren van de mogelijkheid van verkoop, leiden deze maatregelen tot een vermindering van het risico dat proxyservers hun verbindingsgrenzen bereiken. Deze strategische uitvoering is dan ook bedoeld om de kans te verkleinen dat verzoeken geen externe eindpunten bereiken.
