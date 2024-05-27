@@ -1,30 +1,30 @@
 ---
 title: Huidige functies voor vroege adoptie van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 description: Huidige functies voor vroege adoptie van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-hide: true
-hidefromtoc: true
 Feature: Introduction
 Role: developer, user
-source-git-commit: 6d0297f3ab0efd82f994b532e78f8f4d8ee864b3
+source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1600'
 ht-degree: 0%
 
 ---
 
-# Programma Vroege adopter (EA)
+# AEM Forms-programma voor vroege adoptie
 
 
-Het programma Early Introducter biedt u een unieke kans om exclusieve toegang te krijgen tot de meest geavanceerde functies voordat iemand anders dit doet en om hun ontwikkeling vorm te geven. Het programma voor vroege adoptie biedt een unieke gelegenheid om:
+Het AEM Forms Early Introducter-programma biedt u een unieke kans om exclusieve toegang te krijgen tot geavanceerde functies voordat anderen dit doen en om hun ontwikkeling vorm te geven. Het programma biedt u de volgende mogelijkheden:
 
-* Bied waardevolle feedback en invloed op de ontwikkeling van toekomstige functies.
-* Wees een van de eersten die geavanceerde technologie ervaren voordat deze de mainstream raakt.
-* Help bugs te identificeren en op te lossen, wat leidt tot een vloeiender gebruikerservaring bij volledige release.
+* Wees een van de eersten om toegang te krijgen tot geavanceerde technologie voordat deze de mainstream raakt.
+* Werk samen met het productteam en geef samen de toekomst van het product vorm. Gebruik uw gebruiksscenario&#39;s om de ontwikkeling te begeleiden, zodat de innovatie volwassen is en het hoofd kan bieden aan uw uitdagingen in de praktijk.
+* Feedback geven en ons helpen problemen te verhullen voordat u de toepassing start, wat leidt tot een vloeiender gebruikerservaring bij volledige release.
 
-[Vandaag lid worden van onze gemeenschap van vroege adopters](#how-to-join-the-early-adopter-program). U kunt toegang aanvragen tot alle mogelijkheden of tot specifieke mogelijkheden die in de toekomst beschikbaar zijn.
+## Hoe kan ik deelnemen aan het programma voor vroege adoptie?
+
+Als u geïnteresseerd bent in deelname aan ons programma voor vroege adoptie voor innovaties op het gebied van vroege adopters, stuurt u gewoon een e-mail van uw officiële adres naar aem-forms-ea@adobe.com om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
 
-## Mogelijkheden voor vroege adoptie (EA)
+## Innovaties voor vroege adoptie
 
 ### AEM Forms Generative AI (Gen AI)
 
@@ -46,17 +46,19 @@ De beschikbare Generative AI-mogelijkheden zijn:
 * **Formulierregels maken met generatieve AI-vragen**: Gebruik Generative AI-aanwijzingen om hulp te krijgen bij het maken van slimme regels die reageren op gebruikersinvoer. Onze generatieve AI kan voorwaardelijke regels voorstellen en zelfs genereren op basis van het doel van uw formulier.
 
 
-### Workfront Fusion
+### AEM Forms Workfront Fusion Connector
 
-De [AEM Forms Adobe Workfront Fusion Connector](/help/forms/submit-adaptive-form-to-workfront-fusion.md) maakt naadloze integratie mogelijk tussen Adobe Experience Manager (AEM) Forms en Adobe Workfront Fusion. Adobe Workfront fungeert als een toepassing voor werkbeheer, die de volledige levenscyclus van het werk centraliseert, terwijl Workfront Fusion als het integratieplatform fungeert dat connectiviteit tussen Workfront en verschillende bedrijfstoepassingen vergemakkelijkt.
+De AEM Forms Workfront Fusion Connector maakt naadloze integratie mogelijk tussen Adobe Experience Manager (AEM) Forms en Adobe Workfront Fusion. Adobe Workfront fungeert als een toepassing voor werkbeheer, die de volledige levenscyclus van het werk centraliseert, terwijl Workfront Fusion als het integratieplatform fungeert dat connectiviteit tussen Workfront en verschillende bedrijfstoepassingen vergemakkelijkt.
 
-Met de AEM Forms Adobe Workfront Fusion Connector kunt u workflows ontwerpen die automatisch worden geactiveerd na verzending van een adaptief formulier. Stel bijvoorbeeld dat een workflow wordt gestart om een specifieke persoon de taak te geven de ingediende gegevens te beoordelen, zodat een aanvraag kan worden goedgekeurd of afgewezen op basis van de informatie die via het adaptieve formulier is vastgelegd. Deze gestroomlijnde integratie verbetert de efficiëntie en brengt een nieuw niveau van automatisering aan uw werkschemaprocessen.
+Met de AEM Forms Workfront Fusion Connector kunt u workflows ontwerpen die automatisch worden geactiveerd na verzending van een adaptief formulier. Stel bijvoorbeeld dat een workflow wordt gestart om een specifieke persoon de taak te geven de ingediende gegevens te beoordelen, zodat een aanvraag kan worden goedgekeurd of afgewezen op basis van de informatie die via het adaptieve formulier is vastgelegd. Deze gestroomlijnde integratie verbetert de efficiëntie en brengt een nieuw niveau van automatisering aan uw werkschemaprocessen.
+
+Klaar om te beginnen? De [Een adaptief formulier verzenden naar Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) de documentatie verstrekt een geleidelijke gids om de innovatie te gebruiken.
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
 ### Gesprek Forms
 
-Met de Conversational Forms mogelijkheid kunt u communiceren met formulieren als een vriendelijke chatbot op elke AEM Sites-pagina.
+Met de Conversational Forms-innovatie kunt u communiceren met formulieren als een vriendelijke chatbot op elke AEM Sites-pagina.
 
 U kunt de component Conversational Forms gewoon naar uw AEM Sites-pagina slepen en op de startpagina plaatsen. Er is geen codering vereist, dus iedereen kan snel aantrekkelijke en gebruiksvriendelijke Forms-ervaringen voor gesprekken maken.
 
@@ -72,20 +74,15 @@ Hier is wat meer Conversational Forms brengt:
 Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaar voor gebruikerservaring.  Verhoog uw betrokkenheid, verminder het aantal gebruikers dat het formulier verlaat en maak interactie met uw website een prettiger ervaring voor iedereen.
 
 
-### AEM Authoring voor Edge Delivery Services
+### AEM maken voor Edge Delivery Services
 
-AEM Authoring biedt een WYSIWYG-interface (Adaptive Forms Editor) voor het samenstellen en publiceren van deze formulieren naar Edge Delivery Services voor ongeëvenaarde werksnelheden en een vrijwel perfecte Google Lighthouse-score op liveformulieren, zodat u over de beste prestaties en gebruikerservaring beschikt.
-
-![volgende gen: gereedschappen voor composability om formulieren te maken](/help/forms/assets/web-vitals.jpeg)
-
-AEM Authoring biedt alle mogelijkheden van [Authoring op basis van documenten](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een groot aantal aanvullende functies:
+AEM-gebaseerde Authoring biedt een WYSIWYG-interface (Adaptive Forms Editor) voor het maken en publiceren van deze formulieren naar Edge Delivery Services. AEM maken biedt alle mogelijkheden van [Authoring op basis van documenten](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een groot aantal aanvullende functies:
 
 * Geavanceerde regeleditor voor het maken van complexe logica.
 * Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
 * WYSIWYG-bewerkingservaring voor het maken en visualiseren van formulieren.
 * Document met recordfunctionaliteit om tamper-proof archieven van verzonden gegevens te maken.
 * Integratie met Adobe Sign voor elektronische handtekeningen.
-* Integratie met Adobe Workfront Fusion om Adobe Workfront Fusion-scenario&#39;s te activeren bij het verzenden van formulieren.
 * Integratie met verschillende gegevensbronnen voor het vooraf invullen van formulieren en het verzenden van gegevens.
 * Formuliergegevensmodel (FDM) voor het definiëren van gegevensstructuur en interacties met verschillende gegevensbronnen.
 * Mogelijkheid om te kiezen uit meerdere verzendacties voor de verwerking van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
@@ -104,6 +101,65 @@ Door het gegevensoverdrachtproces te stroomlijnen, kan de schakelaar u helpen de
 In wezen helpt AEM Forms naar Marketo Connector u de sterke punten van beide platforms te benutten om een efficiëntere en effectievere marketingtrechter te maken.
 
 
-## Hoe kan ik deelnemen aan het programma voor vroege adoptie?
+## Aanvullende innovaties voor vroege adoptie
 
-Als u voor om het even welk vermogen geïnteresseerd bent in het deelnemen aan ons programma van de Aannemer van de Vroege, verzend eenvoudig een e-mail van uw officieel adres aan aem-forms-ea@adobe.com om toegang te verzoeken.
+### Ondersteuning voor RTL-talen (van rechts naar links)
+
+Aangepaste Forms kan nu worden weergegeven in een RTL-taal (Right-to-Left), waardoor gebruikers een inclusievere ervaring en gebruiksgemak krijgen.
+
+Deze functionaliteit richt zich op talen zoals Arabisch, Hebreeuws en Urdu, die van rechts naar links (RTL) worden geschreven en gelezen, die betere begrip en voltooiingsaantallen voor vormen bevorderen.
+
+![Ondersteuning voor RTL-talen (van rechts naar links)](mobile-responsive.png)
+
+De RTL-talen (rechts naar links) worden ondersteund in Adaptive Forms:
+
+* **Breidt gebruikersbasis uit**: Bedrijven kunnen nu meer dan 2 miljard mensen bereiken die zich meer vertrouwd voelen met RTL-talen.
+
+* **Lever verbeterde gebruikerservaring**: Forms wordt perfect gerenderd met de natuurlijke tekstdoorloop van rechts naar links, de juiste uitlijning van UI-elementen en intuïtieve lay-outs die de leesgewoonten van de gebruiker weerspiegelen. Dit vermindert de verwarring en verhoogt de voltooiingspercentages.
+
+* **Mobiele responsieve ervaringen bieden**: Forms blijft op elk apparaat beschikbaar vanwege de inherente mobiele responsiviteit, waardoor een vloeiende ervaring wordt gegarandeerd voor desktops, tablets en smartphones.
+
+Over het algemeen biedt RTL-taalondersteuning in Adaptive Forms bedrijven de mogelijkheid om echt wereldwijde formulieren te ontwerpen, zodat ze hun bereik, betrokkenheid en inclusiviteit kunnen vergroten.
+
+Klaar om te beginnen? [Adaptive Forms RTL-documentatie](/help/forms/supporting-new-language-localization-core-components.md) biedt een stapsgewijze gids voor het gebruik van de RTL-innovatie.
+
+### Verbeterde methoden voor botbeveiliging
+
+AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te voegen voor twee populaire CAPTCHA-oplossingen: Cloudflare Turnstile en hCaptcha. Dit voegt toe aan de reeds beschikbare Google reCAPTCHA, die gebruikers meer keus en flexibiliteit verleent om hun vormen tegen bots en spam voorlegging te beschermen.
+
+* **Cloudflare Turnstile**: Deze frictionless CAPTCHA verifieert gebruikers door een eenvoudige uitdaging die geen expliciete interactie vereist. De toepassing wordt naadloos geïntegreerd in uw formulieren, waardoor de gebruikerservaring wordt verbeterd.
+* **hCaptcha**: Deze op privacy gerichte CAPTCHA biedt een gebruiksvriendelijk alternatief met focus op de privacy van gegevens. Het is bedoeld om een evenwicht te vinden tussen veiligheid en gebruikerservaring.
+* **Google reCAPTCHA**: AEM Forms blijft zowel reCAPTCHA v2 als reCAPTCHA Enterprise ondersteunen en biedt een betrouwbare en gevestigde oplossing.
+
+Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
+
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie bevat gedetailleerde instructies voor elk van deze: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+
+### Doc Assurance-API&#39;s
+
+
+AEM Forms Doc Assurance API&#39;s zijn een set gereedschappen in de communicatie-API&#39;s voor AEM Forms Cloud Service waarmee u de beveiliging en gebruikersinteractie van uw PDF-documenten kunt beheren.
+
+Hier volgt een overzicht van wat Doc Assurance API&#39;s kunnen doen:
+
+* **Documenten versleutelen en ontsleutelen**: Protect uw documenten door de inhoud ervan onleesbaar te maken met versleuteling. U hebt controle over de onderdelen van de PDF die u wilt coderen, waaronder het gehele document, de specifieke inhoud, metagegevens of bijlagen.
+
+* **Documenten digitaal ondertekenen**: Voeg digitale handtekeningen toe aan uw documenten voor validatie en verificatie zonder knoeien. Dit kan worden gebruikt voor certificeringsdoeleinden of om de integriteit van documenten te garanderen
+
+* **Reader Uw documenten uitbreiden (gebruiksrechten van PDF-documenten toepassen of bewerken)**: Laat uw organisatie toe om interactieve documenten van de PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden.
+
+  Met de API&#39;s van de Reader Extension (Gebruiksrechten) worden gebruiksrechten toegevoegd aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
+
+  Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen ontvangers ingeschakelde activiteiten uitvoeren vanuit Adobe Reader.
+
+Algemeen [Doc Assurance-API&#39;s](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u de beveiliging en compatibiliteit van documenten te verbeteren door een extra controlelaag toe te voegen.
+
+
+
+## Zie ook
+
+* [Nieuwste innovaties in AEM Forms](/help/forms/latest-innovations.md)
+
+* [Mogelijkheden van AEM Forms als Cloud Service](/help/forms/home.md)
+
+* [Verschil tussen AEM 6.5 Forms (AMS en on-prem) en AEM Forms als Cloud Service (AEM CS Forms)](/help/forms/notable-changes.md)
