@@ -1,11 +1,9 @@
 ---
 title: Log doorsturen voor AEM as a Cloud Service
 description: Leer over het door:sturen van logboeken aan Splunk en andere registrerenverkopers in AEM as a Cloud Service
-hide: true
-hidefromtoc: true
-source-git-commit: d41390696383f8e430bb31bd8d56a5e8843f1257
+source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -64,11 +62,47 @@ Dit artikel is als volgt geordend:
          index: "AEMaaCS"
    ```
 
-   Het standaardknooppunt moet worden opgenomen om toekomstige compatibiliteitsredenen.
+   De **aardig** parameter zou aan LogForwarding moeten worden geplaatst de versie aan de schemaversie, die 1 is.
 
-   De typeparameter zou aan LogForwarding moeten worden geplaatst de versie aan de schemaversie, die 1 is.
+   Tokens in de configuratie (zoals `${{SPLUNK_TOKEN}}`) vertegenwoordigen geheimen, die niet in Git moeten worden opgeslagen. In plaats daarvan declareren als Cloud Manager  [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md) van het type **geheim**. Zorg ervoor dat u **Alles** als de vervolgkeuzelijst voor het veld Service Applied, zodat de logbestanden naar de auteur-, publicatie- en voorvertoningslagen kunnen worden doorgestuurd.
 
-   Tokens in de configuratie (zoals `${{SPLUNK_TOKEN}}`) vertegenwoordigen geheimen, die niet in Git moeten worden opgeslagen. In plaats daarvan declareren als Cloud Manager  [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md) van het type &quot;geheim&quot;. Zorg ervoor dat u **Alles** als de vervolgkeuzelijst voor het veld Service Applied, zodat de logbestanden naar de auteur-, publicatie- en voorvertoningslagen kunnen worden doorgestuurd.
+   Het is mogelijk verschillende waarden in te stellen tussen cdn- en alle andere logbestanden (AEM- en apache-logbestanden) door een extra waarde op te nemen **cdn** en/of **aem** blok na de **default** blok, waarbij eigenschappen de eigenschappen kunnen overschrijven die in het dialoogvenster **default** blok; slechts wordt het toegelaten bezit vereist. Een mogelijk gebruiksgeval zou kunnen zijn om een verschillende index van de Splunk voor CDN- logboeken te gebruiken, zoals het hieronder voorbeeld illustreert.
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          cdn:
+            enabled: true
+            token: "${{SPLUNK_TOKEN_CDN}}"
+            index: "AEMaaCS_CDN"   
+   ```
+
+   Een ander scenario is of het door:sturen van de CDN- logboeken of alles (AEM en apache logboeken) onbruikbaar te maken. Als u bijvoorbeeld alleen de CDN-logboeken wilt doorsturen, kunt u het volgende configureren:
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          aem:
+            enabled: false
+   ```
 
 1. Voor milieutypes buiten RDE (die momenteel niet wordt gesteund), creeer een gerichte plaatsing config pijpleiding in de Manager van de Wolk.
 
@@ -96,10 +130,17 @@ data:
       
 ```
 
-Overwegingen:
+Een SAS-token moet worden gebruikt voor verificatie. Het zou van de Gedeelde pagina van de toegangshandtekening, eerder dan op de Gedeelde pagina van het toegangstoken moeten worden gecreeerd, en zou met deze montages moeten worden gevormd:
 
-* Verifieer het gebruiken van het teken van SAS, dat een minimumgeldigheidsperiode zou moeten hebben.
-* Het SAS-token moet op de accountpagina worden gemaakt, niet op de containerpagina.
+* Toegestane services: klob moet zijn geselecteerd
+* Toegestane bronnen: Object moet zijn geselecteerd
+* Machtigingen toegestaan: Schrijven, Toevoegen, Maken moet zijn geselecteerd
+* Een geldige begin- en vervaldatum/-tijd.
+
+Hier is een schermafbeelding van een voorbeeld van een SAS-tokenconfiguratie:
+
+![Azure Blob SAS-tokenconfiguratie](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
 
 ### Datahond {#datadog}
 
