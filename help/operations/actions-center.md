@@ -2,9 +2,9 @@
 title: Handelingencentrum
 description: Gebruik het actiecentrum om incidenten en andere belangrijke informatie op een gemakkelijke manier aan te pakken
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
+source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -76,3 +76,4 @@ In de volgende tabel worden de berichttypen weergegeven die momenteel worden ond
 | Verkeerspiek bij oorsprong | Incident | Protect uw oorsprong door de regels van de het verkeersfilter van de tariefgrens te vormen die bij lagere drempels dan de standaardverkeerspiek bij oorsprongsalarm teweegbrengen.  Zie de [Het blokkeren Dos en aanvallen DDoS gebruikend verkeersregels](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) sectie van de documentatie van de Regels van de Filter van het Verkeer, die verwijzingen een leerprogramma. |
 | S2S-certificaat vervalt | Proactief | Leer hoe u een referentie kunt vernieuwen in het dialoogvenster [Access Tokens genereren voor documentatie van server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Aantal hoge verbindingen | Proactief | Meer informatie over het samenvoegen van verbindingen in [Verbindingspoolen naast de documentatie van het Geavanceerde Voorzien van een netwerk](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Verouderde gebruikerstoewijzing voor de service | Proactief | Leer hoe u de nieuwere indeling voor gebruikerstoewijzingen voor verkoopservices gebruikt, zoals aangegeven in [Beste praktijken voor het Verkopen van de Toewijzing van de Gebruiker van de Dienst en de Definitie van de Gebruiker van de Dienst](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
+| Aantal hoge verbindingen | Proactief | Meer informatie over het samenvoegen van verbindingen in het dialoogvenster [Geavanceerde netwerkdocumentatie](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
