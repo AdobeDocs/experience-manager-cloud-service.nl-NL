@@ -2,9 +2,9 @@
 title: Handelingencentrum
 description: Gebruik het actiecentrum om incidenten en andere belangrijke informatie op een gemakkelijke manier aan te pakken
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: df10d8d210877e166312f66d5c4e74dbe771446a
+source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -60,18 +60,19 @@ Zoals alle steunkaartjes, zal het in [Tabblad Adobe Admin Console-ondersteunings
 AEM as a Cloud Service heeft verschillende soorten meldingen, maar er wordt alleen een subset weergegeven in het Actions Center, zoals in de onderstaande tabel wordt geïllustreerd.
 
 | Meldingstype | Beschrijving | Hoe te vormen | Wordt weergegeven in actiecentrum |
-|---|---|---|---|
+|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Operationele incidenten | Kritieke incidenten die onmiddellijke actie vereisen | Gebruiker toegewezen aan productprofiel &quot;Incident Notification - Cloud Service&quot; | X |
 | Proactieve aanbevelingen | Optimalisaties die moeten worden gepland | Gebruiker toegewezen aan productprofiel &quot;Proactieve kennisgeving - Cloud Service&quot; | X |
-| Klassepijplusstatussen van Cloud Manager | Informatie over de toestand van uw pijpleidingen | Gebruiker met de rollen Bedrijfs van de Eigenaar, van de Manager van het Programma, of van de Manager van de Plaatsing, &quot;Andere&quot;checkbox binnen geselecteerd [Voorkeuren Experience Cloud](https://experience.adobe.com/preferences), als [hier beschreven](/help/implementing/cloud-manager/notifications.md). |   |
+| Klassepijplusstatussen van Cloud Manager | Informatie over de toestand van uw pijpleidingen | Gebruiker met de rollen Bedrijfs van de Eigenaar, van de Manager van het Programma, of van de Manager van de Plaatsing, &quot;Andere&quot;checkbox binnen geselecteerd [Voorkeuren Experience Cloud](https://experience.adobe.com/preferences), als [hier beschreven](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Ondersteunde berichttypen {#supported-notification-types}
 
 In de volgende tabel worden de berichttypen weergegeven die momenteel worden ondersteund in Actions Center. Meldingen zijn momenteel beperkt tot productieomgevingen.
 
 | Meldingstype | Verwante productprofiel | Correctieve actie |
-|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Geblokkeerde replicatiewachtrij | Incident | Blokkeren van wachtrij opheffen door instructies in het dialoogvenster [Replicatiedocumentatie](/help/operations/replication.md#troubleshooting) |
 | Ongeldige aaneengesloten GraphQL-query | Incident | Corrigeer de ongeldige GraphQL-query door te verwijzen naar de [Blijvende documentatie over probleemoplossing voor GraphQL-query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
-| S2S-certificaat vervalt | Proactief | Leer hoe u een referentie kunt vernieuwen in het dialoogvenster [Access Tokens genereren voor documentatie van server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Aantal hoge verbindingen | Proactief | Meer informatie over het samenvoegen van verbindingen in [Verbindingspoolen naast de documentatie van het Geavanceerde Voorzien van een netwerk](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Verkeerspiek bij oorsprong | Incident | Protect uw oorsprong door de regels van de het verkeersfilter van de tariefgrens te vormen die bij lagere drempels dan de standaardverkeerspiek bij oorsprongsalarm teweegbrengen.  Zie de [Het blokkeren Dos en aanvallen DDoS gebruikend verkeersregels](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) sectie van de documentatie van de Regels van de Filter van het Verkeer, die verwijzingen een leerprogramma. |
+| S2S-certificaat vervalt | Proactief | Leer hoe u een referentie kunt vernieuwen in het dialoogvenster [Access Tokens genereren voor documentatie van server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Aantal hoge verbindingen | Proactief | Meer informatie over het samenvoegen van verbindingen in [Verbindingspoolen naast de documentatie van het Geavanceerde Voorzien van een netwerk](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Verouderde gebruikerstoewijzing voor de service | Proactief | Leer hoe u de nieuwere indeling voor gebruikerstoewijzingen voor verkoopservices gebruikt, zoals aangegeven in [Beste praktijken voor het Verkopen van de Toewijzing van de Gebruiker van de Dienst en de Definitie van de Gebruiker van de Dienst](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
