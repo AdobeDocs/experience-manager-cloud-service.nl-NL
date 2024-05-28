@@ -2,9 +2,9 @@
 title: Aan de slag met de Universal Editor in AEM
 description: Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: a9a428eb5329bc2aa3d86ac5e0c91f633516446c
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -24,22 +24,11 @@ Hoewel de Universal Editor inhoud uit elke bron kan bewerken, wordt in dit docum
 
 Er zijn verschillende stappen om uw AEM-app aan te melden en van instrumenten te voorzien voor gebruik van de Universal Editor.
 
-1. [Toegang aanvragen tot de Universal Editor.](#request-access)
 1. [Neem de kernbibliotheek van de Universal Editor op.](#core-library)
 1. [Voeg de noodzakelijke configuratie OSGi toe.](#osgi-configurations)
 1. [Instrueer de pagina.](#instrument-page)
 
 Dit document begeleidt u door deze stappen.
-
-## Toegang tot de universele editor aanvragen {#request-access}
-
-U moet eerst om toegang tot de Universele Redacteur verzoeken. Openen [&quot;https://experience.adobe.com/#/aem/editor&quot;](https://experience.adobe.com/#/aem/editor)aanmelden en valideren als u toegang hebt tot de Universal Editor.
-
-Als u geen toegang hebt, kunt u een aanvraag indienen via een formulier dat is gekoppeld op dezelfde pagina.
-
-![Toegang aanvragen tot de Universal Editor](assets/request-access.png)
-
-Klikken **Toegang aanvragen** en vul het formulier in volgens de instructies voor het aanvragen van toegang. Een vertegenwoordiger van de Adobe zal uw verzoek beoordelen en contact opnemen om uw kwestie van het gebruik te bespreken.
 
 ## Inclusief de Universal Editor Core-bibliotheek {#core-library}
 

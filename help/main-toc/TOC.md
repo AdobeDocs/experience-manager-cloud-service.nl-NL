@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 4c2f0a230c259f5d5af08158707ebea016c431e6
 workflow-type: tm+mt
-source-wordcount: '4982'
+source-wordcount: '4961'
 ht-degree: 3%
 
 ---
@@ -1079,18 +1079,19 @@ ht-degree: 3%
          + [Aangepaste foutpagina&#39;s](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM knooppunttypen](/help/implementing/developing/introduction/node-types.md)
       + Universele editor {#universal-editor}
-         + [Introductie van Universal Editor](/help/implementing/universal-editor/introduction.md)
-         + [Architectuur van Universal Editor](/help/implementing/universal-editor/architecture.md)
-         + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
-         + [Aan de slag met de Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
-         + [Overzicht van Universal Editor-ontwikkelaars](/help/implementing/universal-editor/developer-overview.md)
+         + [Inleiding](/help/implementing/universal-editor/introduction.md)
+         + [Gevallen gebruiken](/help/implementing/universal-editor/use-cases.md)
          + [Kenmerken en itemtypen](/help/implementing/universal-editor/attributes-types.md)
          + [Modeldefinities, velden en componenttypen](/help/implementing/universal-editor/field-types.md)
-         + [Universal Editor-verificatie](/help/implementing/universal-editor/authentication.md)
-         + [Ontwikkeling van lokale AEM met de Universal Editor](/help/implementing/universal-editor/local-dev.md)
-         + [Universal Editor-aanroepen](/help/implementing/universal-editor/calls.md)
+         + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
          + [Gebeurtenissen](/help/implementing/universal-editor/events.md)
-         + [De universele editor aanpassen](/help/implementing/universal-editor/customizing.md)
+         + [Aanpassen](/help/implementing/universal-editor/customizing.md)
+         + [Architectuur](/help/implementing/universal-editor/architecture.md)
+         + [Verificatie](/help/implementing/universal-editor/authentication.md)
+         + [Aan de slag](/help/implementing/universal-editor/getting-started.md)
+         + [Overzicht van ontwikkelaars](/help/implementing/universal-editor/developer-overview.md)
+         + [Lokale AEM](/help/implementing/universal-editor/local-dev.md)
+         + [Roept](/help/implementing/universal-editor/calls.md)
       + [Erviteitsbeheer zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + Hybride en SPA ontwikkeling {#hybrid}
          + [Hybride en SPA met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)

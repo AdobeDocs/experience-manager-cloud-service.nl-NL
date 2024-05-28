@@ -2,10 +2,10 @@
 title: Kenmerken en itemtypen
 description: Leer over de gegevensattributen en de punttypes die de Universele Redacteur vereist.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 36be262a7949bc66f97f5483ff463d755f5f78e5
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 0%
+source-wordcount: '538'
+ht-degree: 1%
 
 ---
 
@@ -56,14 +56,3 @@ Afhankelijk van het gebruiksgeval `data-aue-prop` of `data-aue-resource` al dan 
 |---|---|
 | `component` | Wordt gebruikt om zelfstandige tekst, richtext en mediamimicomponenten toe te staan, zodat deze ook kunnen worden verplaatst en verplaatst op de pagina |
 | `container` | Gebruikt om containers te laten behandelen als hun eigen componenten zodat zij beweegbaar en verhandelbaar op de pagina zijn |
-
-## Aanvullende bronnen {#additional-resources}
-
-Zie deze documenten voor meer informatie over de Universal Editor.
-
-* [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken, zodat u uitzonderlijke ervaringen kunt opdoen, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
-* [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
-* [Inhoud publiceren met de Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md) - Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
-* [Aan de slag met de Universal Editor in AEM](getting-started.md) - Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van instrumenten kunt voorzien om deze te gebruiken.
-* [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
-* [Universal Editor-verificatie](authentication.md) - Leer hoe de Universal Editor wordt geverifieerd.
