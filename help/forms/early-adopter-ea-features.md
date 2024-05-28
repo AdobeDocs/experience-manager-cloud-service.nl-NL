@@ -3,15 +3,14 @@ title: Huidige functies voor vroege adoptie van [!DNL Adobe Experience Manager F
 description: Huidige functies voor vroege adoptie van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1599'
 ht-degree: 0%
 
 ---
 
 # AEM Forms-programma voor vroege adoptie
-
 
 Het AEM Forms Early Introducter-programma biedt u een unieke kans om exclusieve toegang te krijgen tot geavanceerde functies voordat anderen dit doen en om hun ontwikkeling vorm te geven. Het programma biedt u de volgende mogelijkheden:
 
@@ -21,7 +20,7 @@ Het AEM Forms Early Introducter-programma biedt u een unieke kans om exclusieve 
 
 ## Hoe kan ik deelnemen aan het programma voor vroege adoptie?
 
-Als u geïnteresseerd bent in deelname aan ons programma voor vroege adoptie voor innovaties op het gebied van vroege adopters, stuurt u gewoon een e-mail van uw officiële adres naar aem-forms-ea@adobe.com om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
+Als u geïnteresseerd bent in deelname aan ons programma voor vroege adopters voor innovaties op het gebied van vroege adopters, stuurt u gewoon een e-mail van uw officiële adres naar `aem-forms-ea@adobe.com` om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
 
 ## Innovaties voor vroege adoptie
