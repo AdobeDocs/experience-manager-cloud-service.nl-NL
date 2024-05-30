@@ -2,7 +2,7 @@
 title: De CDN-cache leegmaken
 description: Leer hoe te om caching voorwerpen uit het geheime voorgeheugen van de Adobe CDN te verwijderen door het zuiveren API Symbolisch te vormen dat dan in API vraag kan worden gebruikt.
 feature: CDN Cache
-source-git-commit: a10faaecf8f6dcaf53e7c72504b927125b32c0d4
+source-git-commit: bd8f534642848a656e5e54c425049c95cdb413f7
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
