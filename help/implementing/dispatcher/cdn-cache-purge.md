@@ -2,9 +2,9 @@
 title: De CDN-cache leegmaken
 description: Leer hoe te om caching voorwerpen uit het geheime voorgeheugen van de Adobe CDN te verwijderen door het zuiveren API Symbolisch te vormen dat dan in API vraag kan worden gebruikt.
 feature: Dispatcher
-source-git-commit: 7224db99c29c90fb5e93ac07d7d501e2e9aaf74e
+source-git-commit: 114098a75d84a3da4cc582288ffa162cd960a0e6
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >Deze functie is nog niet algemeen beschikbaar. Als u wilt deelnemen aan het programma voor vroegtijdige adoptie, kunt u een e-mail sturen `aemcs-cdn-config-adopter@adobe.com`.
 
 Het zuiveren verwijdert een voorwerp uit het geheime voorgeheugen van de Adobe CDN, resulterend in toekomstige verzoeken die aan de oorsprong als geheim voorgeheugenmissen, eerder dan worden gediend van geheim voorgeheugen.
-AEM as a Cloud Service staat u toe om een Schrapping API Token te vormen, die dan in API vraag kan worden gebruikt. Lees de <!--[Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)--> om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijl van de Configuratie van de Manager van de Wolk.
+AEM as a Cloud Service staat u toe om een Schrapping API Token te vormen, die dan in API vraag kan worden gebruikt. Lees de [CDN-referenties en verificatieartikel configureren](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijl van de Configuratie van de Manager van de Wolk.
 
 Er zijn drie ondersteunde variaties voor het wissen:
 
