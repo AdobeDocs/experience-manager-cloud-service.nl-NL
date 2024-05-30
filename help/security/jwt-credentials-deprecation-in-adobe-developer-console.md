@@ -2,9 +2,9 @@
 title: JWT Credentials Deprection in Adobe Developer Console
 description: Meer informatie over de impact van de afschrijving van JWT-referenties in Adobe Developer Console op AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: b6e26ecaa73aaee37b6b824426dc0cd65d459502
+source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe die klanten gebruiken [Adobe Developer Console](https://developer.adobe.co
 
 Dit artikel biedt een extra context voor de manier waarop AEM as a Cloud Service de afleiding moet verwerken.
 
-Het belangrijkste wegnemen is dat AEM nu de nieuwe geloofsbrieven van Server-aan-Server OAuth voor AEM as a Cloud Service steunt. U hebt mogelijk een e-mail ontvangen met instructies voor het migreren van uw JWT-gegevens. Deze migratie kan nu worden uitgevoerd.
+Het belangrijkste wegnemen is dat AEM nu de nieuwe geloofsbrieven van Server-aan-Server OAuth voor AEM as a Cloud Service steunt. Mogelijk hebt u een e-mail ontvangen met instructies voor het migreren van uw JWT-gegevens. Deze migratie kan nu worden uitgevoerd.
 
 In de volgende secties worden de scenario&#39;s weergegeven waarin klanten hun JWT-referenties (Service Account) moeten vervangen door OAuth Server-to-Server-referenties, nu AEM hen ondersteunt. [Lees hoe](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) om de gegevens te migreren.
 
@@ -42,7 +42,7 @@ Zie [IMS-integratie instellen voor AEM as a Cloud Service](/help/security/settin
 
 ## Cloud Manager-API&#39;s {#cloud-manager-apis}
 
-**Handeling**: Bevestig wanneer deze gegevens kunnen worden gemigreerd van JWT naar OAuth-referenties.
+**Handeling**: Migreer uw JWT-gegevens naar OAuth-gegevens, die nu door Cloud Manager worden ondersteund.
 
 **Relevante AEM versies**: AEM AS A CLOUD SERVICE
 
