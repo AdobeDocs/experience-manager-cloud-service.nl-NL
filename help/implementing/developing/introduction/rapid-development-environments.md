@@ -2,9 +2,9 @@
 title: Snelle ontwikkelomgevingen
 description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle ontwikkelherhalingen in een cloud-omgeving.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
+source-wordcount: '4294'
 ht-degree: 0%
 
 ---
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 Het bovenstaande codevoorbeeld illustreert het gedrag als een bundel niet oplost. In dat geval wordt het &quot;gefaseerd&quot; en wordt het alleen geïnstalleerd als aan de vereisten ervan (ontbrekende invoer, in dit geval) wordt voldaan door de installatie van andere code.
 
-<u>Voorste code implementeren op basis van sitethema&#39;s en sitesjablonen</u>
+### Voorste code implementeren op basis van sitethema&#39;s en sitesjablonen {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->Deze functie is nog niet GA, maar kan door beginnende gebruikers worden gebruikt. Neem contact op met **aemcs-rde-support@adobe.com** om het uit te proberen en feedback te geven.
+> Deze functie is nog niet beschikbaar. Het zal ergens in juni worden ingevoerd.
+>
 
 RDEs steunt front-end code die op wordt gebaseerd [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md). Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn om voorste-eindpakketten, eerder dan de Manager van de Wolk op te stellen [Pijpleiding aan de voorzijde](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) gebruikt voor andere omgevingstypen.
 
@@ -1011,8 +1012,6 @@ Houd ook rekening met het volgende:
 
 * RDE&#39;s bevatten geen voorvertoningsniveau
 * RDEs steunt momenteel niet het prereleasekanaal.
-* Terwijl RDE steun voor het bekijken van en het zuiveren van voorste code die op wordt gebaseerd [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md) De implementatie is nog niet klaar voor GA, het kan door vroege adopters worden gebruikt. Neem contact op met **aemcs-rde-support@adobe.com** om het uit te proberen en feedback te geven.
-
 
 
 ## Hoeveel RDEs heb ik nodig? {#how-many-rds-do-i-need}
