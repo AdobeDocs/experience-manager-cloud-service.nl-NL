@@ -5,25 +5,24 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '5255'
+source-wordcount: '5411'
 ht-degree: 0%
 
 ---
 
 
-<span class="preview"> Dit artikel bevat inhoud voor enkele functies die aan de release zijn toegevoegd. Deze pre-releasefuncties zijn alleen toegankelijk via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). Het pre-releaseprogramma heeft de volgende kenmerken:
-* Steun voor het uitvoeren van genestelde voorwaarden met wanneer-toen functionaliteit
-* Deelvensters en formulieren valideren of opnieuw instellen, inclusief velden
-* Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen aangepaste functies.
-</span>
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| Elementaire componenten | [Klik hier](/help/forms/rule-editor.md) |
+| Kernonderdelen | Dit artikel |
 
 # Regels toevoegen aan een adaptief formulier (kerncomponenten) {#adaptive-forms-rule-editor}
 
 Met de functie voor regeleditors kunnen zakelijke gebruikers en ontwikkelaars regels schrijven voor adaptieve formulierobjecten. Met deze regels worden acties gedefinieerd die op formulierobjecten worden geactiveerd op basis van vooraf ingestelde voorwaarden, gebruikersinvoer en gebruikersacties op het formulier. Hierdoor wordt de ervaring met het invullen van formulieren verder gestroomlijnd, zodat u nauwkeurige en snelle informatie krijgt.
 
-De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De redacteur van de regel biedt een visuele redacteur voor alle gebruikers aan.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Enkele belangrijke handelingen die u met behulp van regels kunt uitvoeren op adaptieve formulierobjecten:
+De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De redacteur van de regel biedt een visuele redacteur voor alle gebruikers aan.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Een aantal belangrijke handelingen die u met behulp van regels kunt uitvoeren op adaptieve formulierobjecten zijn:
 
 * Een object tonen of verbergen
 * Een object in- of uitschakelen
@@ -36,6 +35,14 @@ De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterfac
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Gebruikers die zijn toegevoegd aan de gebruikersgroep voor formulieren, kunnen scripts maken en bestaande scripts bewerken. Gebruikers in de [!DNL forms-users] groep kan de scripts gebruiken, maar geen scripts maken of bewerken.
+
+## Verschil tussen de redacteur van de Regel in de Componenten van de Kern en de Redacteur van de Regel in de Componenten van de Stichting
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> Zie voor meer informatie over het maken en gebruiken van aangepaste functies [Aangepaste functies in Adaptive Forms (Core Components)](/help/forms/create-and-use-custom-functions.md) artikel.
 
 ## Een regel begrijpen {#understanding-a-rule}
 
@@ -67,13 +74,13 @@ Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelco
 
   Daarom als u een regel op gebied B (het voorwerp schrijft waarop u een voorwaarde) evalueert, gebruik de voorwaarde-actie constructie of het wanneer regeltype. Op dezelfde manier gebruikt u de handeling-voorwaarde constructie of toont of verbergt regeltype op gebied A.
 
-* Soms moet u meerdere handelingen uitvoeren op basis van één voorwaarde. In dergelijke gevallen wordt het aanbevolen om de condition-action construct te gebruiken. Op deze wijze kunt u een voorwaarde één keer evalueren en meerdere actieinstructies opgeven.
+* Soms moet u meerdere handelingen uitvoeren op basis van één voorwaarde. In dergelijke gevallen wordt aangeraden de voorwaarde-actieconstruct te gebruiken. In deze constructie, kunt u een voorwaarde eens evalueren en veelvoudige actieverklaringen specificeren.
 
-  Als u bijvoorbeeld de velden B, C en D wilt verbergen op basis van de voorwaarde dat de waarde wordt gecontroleerd die een gebruiker in veld A opgeeft, moet u één regel schrijven met voorwaarde-actieconstructie of Wanneer-regeltype op veld A en handelingen opgeven om de zichtbaarheid van de velden B, C en D te regelen. Anders hebt u drie afzonderlijke regels nodig voor velden B,  C en D, waarbij elke regel de voorwaarde controleert en het desbetreffende veld toont of verbergt. In dit voorbeeld is het efficiënter om het type Wanneer-regel op één object te schrijven in plaats van het teksttype Regel tonen of verbergen op drie objecten.
+  Als u bijvoorbeeld velden B, C en D wilt verbergen op basis van de voorwaarde die controleert of de waarde is opgegeven in veld A, schrijft u één regel met een construct voor voorwaarde-actie of wanneer-regeltype op veld A en geeft u handelingen op om de zichtbaarheid van velden B, C en D te bepalen. Anders hebt u drie aparte regels nodig voor de velden B, C en D, waar elke regel de voorwaarde controleert en het desbetreffende veld weergeeft of verbergt. In dit voorbeeld is het efficiënter om het Wanneer regeltype op één object te schrijven in plaats van Regeltype tonen of verbergen op drie objecten.
 
-* Als u een handeling wilt activeren die op meerdere voorwaarden is gebaseerd, wordt het aanbevolen om een actie-voorwaardeconstructie te gebruiken. Als u bijvoorbeeld veld A wilt weergeven en verbergen door de voorwaarden voor velden B, C en D te evalueren, gebruikt u regeltype Tonen of Verbergen voor veld A.
-* Gebruik voorwaarde-actie of actievoorwaardeconstructie als de regel één handeling voor één voorwaarde bevat.
-* Als een regel op een voorwaarde controleert en direct een actie uitvoert wanneer een waarde wordt gerekend in een veld of bij het afsluiten van een veld, is het raadzaam om een regel met een voorwaarde-actieconstructie of het type Wanneer te schrijven in het veld waarop de voorwaarde wordt geëvalueerd.
+* Als u een actie wilt activeren op basis van meerdere voorwaarden, wordt aangeraden een handeling-voorwaardenconstructie te gebruiken. Als u bijvoorbeeld veld A wilt weergeven en verbergen door de voorwaarden in de velden B, C en D te evalueren, gebruikt u Regeltype tonen of verbergen in veld A.
+* Gebruik een voorwaarde-handeling of handeling als de regel één handeling voor één voorwaarde bevat.
+* Als een regel op een voorwaarde controleert en een actie onmiddellijk bij het verstrekken van een waarde op een gebied of het weggaan van een gebied uitvoert, wordt het geadviseerd om een regel met voorwaarde-actie constructie of het wanneer regeltype op het gebied te schrijven waarop de voorwaarde wordt geëvalueerd.
 * De voorwaarde in wanneer regel wordt geëvalueerd wanneer een gebruiker de waarde van het voorwerp verandert waarop wanneer regel wordt toegepast. Als u echter wilt dat de actie wordt geactiveerd wanneer de waarde aan de serverzijde verandert, bijvoorbeeld bij het vooraf invullen van de waarde, kunt u het beste een When-regel schrijven die de actie activeert wanneer het veld wordt geïnitialiseerd.
 * Wanneer u regels schrijft voor vervolgkeuzelijsten, keuzerondjes of selectievakjes, worden de opties of waarden van deze formulierobjecten in het formulier vooraf ingevuld in de regeleditor.
 
@@ -117,16 +124,18 @@ In duidelijke woorden, typisch wanneer de regel als volgt gestructureerd is:
 
 `Then, do the following:`
 
-Actie 2 betreffende object B; EN actie 3 betreffende object C;
+`Action 2 on Object B;`
+`AND`
+&quot;Actie 3 betreffende object C;
 
 `Else, do the following:`
 
-Handeling 2 op Object C;
+`Action 2 on Object C;`
 _
 
-Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of een lijst, worden de opties bij het maken van een regel voor die component automatisch opgehaald en beschikbaar gemaakt voor de maker van de regel. U hoeft de optiewaarden niet opnieuw te typen.
+Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of lijst, terwijl het creëren van een regel voor die component, worden de opties automatisch teruggewonnen en ter beschikking gesteld van de regelmaker. U hoeft de optiewaarden niet nogmaals te typen.
 
-Een lijst bevat bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het creëren van de regel, worden de opties (radioknopen) automatisch teruggewonnen en ter beschikking gesteld van de regelschepper als volgt:
+Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het creëren van de regel, worden de opties (radioknopen) automatisch teruggewonnen en ter beschikking gesteld van de regelschepper als volgt:
 
 ![Meerdere waarden geeft opties weer](assets/multivaluefcdisplaysoptions.png)
 
@@ -137,6 +146,58 @@ Tijdens het schrijven van een When-regel kunt u de Clear Value of action activer
 >[!NOTE]
 >
 > Als regeltype alleen single-level then-else instructies ondersteunt.
+
+#### Meerdere velden toegestaan in [!UICONTROL When] {#allowed-multiple-fields}
+
+In de **Wanneer** hebt u de mogelijkheid om andere velden toe te voegen dan het veld waarop de regel wordt toegepast.
+
+Met het regeltype Wanneer kunt u bijvoorbeeld een voorwaarde evalueren voor verschillende formulierobjecten en de handeling uitvoeren:
+
+Wanneer:
+
+(Object A Voorwaarde 1)
+
+EN/OF
+
+(Voorwaarde B 2)
+
+Voer vervolgens de volgende handelingen uit:
+
+Actie 1 op object A
+
+_
+
+![Meerdere velden toegestaan in](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### Overwegingen bij het gebruik van Meerdere velden toestaan in voorwaardelement
+
+* Zorg ervoor dat de [kerncomponent is ingesteld op versie 3.0.14 of hoger](https://github.com/adobe/aem-core-forms-components) om deze eigenschap in de regelredacteur te gebruiken.
+* Als regels worden toegepast op verschillende velden binnen de voorwaarde Wanneer, wordt de regel geactiveerd, zelfs als slechts een van deze velden wordt gewijzigd.
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+Als er problemen optreden in de toegestane meerdere velden in de voorwaarde &#39;Wanneer&#39;, volgt u de stappen voor het oplossen van problemen als:
+
+1. Open het formulier in de bewerkingsmodus.
+1. Open de browser Inhoud en selecteer de **[!UICONTROL Guide Container]** van uw adaptieve formulier.
+1. Klik op de eigenschappen van de container van de hulplijn ![Eigenschappen van hulplijnen](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik op Gereed en sla het dialoogvenster opnieuw op.
 
 **[!UICONTROL Hide]** Verbergt het opgegeven object.
 
@@ -224,7 +285,7 @@ Wanneer (optioneel):
 
 (Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is TRUE;
 
-In het volgende voorbeeld wordt de waarde van `Question2` as `True` geselecteerd en wordt de waarde van `Result` as ingesteld.`correct`
+In het volgende voorbeeld wordt de waarde van `Question2` als `True` en stelt de waarde in van `Result` als `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -373,7 +434,7 @@ Enkele lijst van functies wordt getoond in het cijfer:
 >
 >U kunt tekstzoekopdrachten uitvoeren op namen en titels van objecten en functies op de tabbladen Objecten en Functies van Forms.
 
-In de linkerstructuur van de formulierobjecten kunt u de formulierobjecten selecteren om de regels weer te geven die op elk object zijn toegepast. U kunt niet alleen door de regels van de verschillende formulierobjecten navigeren, u kunt ook regels kopiëren en plakken tussen de formulierobjecten. Zie voor meer informatie [Regels kopiëren en plakken](rule-editor.md#p-copy-paste-rules-p).
+In de linkerstructuur van de formulierobjecten kunt u de formulierobjecten selecteren om de regels weer te geven die op elk van de objecten zijn toegepast. U kunt niet alleen door de regels van de verschillende formulierobjecten navigeren, maar u kunt ook regels kopiëren en plakken tussen de formulierobjecten. Zie Regels](rule-editor.md#p-copy-paste-rules-p) kopiëren en plakken voor meer informatie[.
 
 ### C. Schakelen tussen formulierobjecten en -functies {#c-form-objects-and-functions-toggle-br}
 
@@ -402,7 +463,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 De **[!UICONTROL Done]** wordt gebruikt om een regel op te slaan. U kunt een onvolledige regel opslaan. Onvolledig zijn echter ongeldig en worden niet uitgevoerd. Opgeslagen regels voor een formulierobject worden weergegeven wanneer u de regeleditor de volgende keer start vanuit hetzelfde formulierobject. U kunt bestaande regels in die weergave beheren. Zie voor meer informatie [Regels beheren](rule-editor.md#p-manage-rules-p).
 
-De **[!UICONTROL Cancel]** de knoop verwerpt om het even welke veranderingen u aan een regel aanbracht en sluit de regelredacteur.
+Met **[!UICONTROL Cancel]** de knop worden alle wijzigingen die u in een regel hebt aangebracht, verwijderd en wordt de regeleditor gesloten.
 
 ## Schrijfregels {#write-rules}
 
@@ -410,7 +471,7 @@ U kunt regels schrijven met de Visuele regeleditor <!-- or the code editor. When
 
 Laten we eerst kijken naar hoe u regels schrijft met de visuele editor.
 
-### De visuele editor gebruiken {#using-visual-editor}
+### Visuele editor gebruiken {#using-visual-editor}
 
 Laten we begrijpen hoe u een regel maakt in een visuele editor met behulp van het volgende voorbeeldformulier.
 
@@ -494,7 +555,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. Selecteren **[!UICONTROL Select Option]** en selecteert u **[!UICONTROL Mathematical Expression]**. Er wordt een veld voor het schrijven van wiskundige expressies geopend.
+1. Selecteren **[!UICONTROL Select Option]** en selecteren **[!UICONTROL Mathematical Expression]**. Er wordt een veld voor het schrijven van wiskundige expressies geopend.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
@@ -520,15 +581,15 @@ Voer de volgende stappen uit om regels te schrijven:
    >
    >U kunt complexe expressies maken met behulp van componenten, functies, wiskundige expressies en eigenschapwaarden in het veld Optie selecteren.
 
-   Maak vervolgens een voorwaarde die, wanneer True wordt geretourneerd, de expressie uitvoert.
+   Maak vervolgens een voorwaarde die wordt uitgevoerd wanneer De expressie True retourneert.
 
-1. Selecteren **[!UICONTROL Add Condition]** om een instructie When toe te voegen.
+1. Selecteer deze optie **[!UICONTROL Add Condition]** om een Wanneer-instructie toe te voegen.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
-   In de instructie When:
+   In de instructie Wanneer:
 
-   * Selecteer of sleep een neerzetbewerking op het tabblad Forms Object **[!UICONTROL Marital Status]** veld in de eerste **[!UICONTROL Drop object or select here]** veld.
+   * Selecteer of sleep vanaf het tabblad Formulierobject het **[!UICONTROL Marital Status]** veld in het eerste **[!UICONTROL Drop object or select here]** veld.
 
    * Selecteren **[!UICONTROL is equal to]** van de **[!UICONTROL Select Operator]** veld.
 
@@ -789,9 +850,9 @@ Ga als volgt te werk om regels te kopiëren en te plakken:
 
    >[!NOTE]
    >
-   >U kunt een regel alleen in een ander formulierobject plakken als dat formulierobject de gebeurtenis van de gekopieerde regel ondersteunt. Een knop ondersteunt bijvoorbeeld de gebeurtenis click. U kunt een regel met een klikgebeurtenis aan een knoop maar niet aan een controledoos kleven.
+   >U kunt een regel alleen in een ander formulierobject plakken als dat formulierobject de gebeurtenis van de gekopieerde regel ondersteunt. Een knop ondersteunt bijvoorbeeld de klik gebeurtenis. U kunt een regel met een klikgebeurtenis aan een knoop maar niet aan een controledoos kleven.
 
-1. Selecteren **[!UICONTROL Done]** om de regel op te slaan.
+1. Selecteer deze optie **[!UICONTROL Done]** om de regel op te slaan.
 
 ## Geneste expressies {#nestedexpressions}
 
@@ -809,13 +870,13 @@ U kunt ook voorwaarden slepen en neerzetten in een regel om deze te bewerken. Se
 
 De redacteur van de regel laat u datumvergelijkingen gebruiken om voorwaarden tot stand te brengen.
 
-Na is een voorbeeldvoorwaarde die een statisch tekstvoorwerp toont als de hypotheek op het huis reeds wordt genomen, dat de gebruiker door het datumgebied te vullen aangeeft.
+Hier volgt een voorbeeldvoorwaarde die een statisch tekstobject weergeeft als de hypotheek op het huis al is genomen, dat de gebruiker ondertekent door het datumveld in te vullen.
 
-Wanneer de hypotheekdatum van het onroerend goed, zoals door de gebruiker ingevuld, in het verleden ligt, geeft het Adaptief formulier een toelichting op de berekening van het inkomen. In de volgende regel wordt de datum die door de gebruiker is ingevuld, vergeleken met de huidige datum en als de datum die door de gebruiker is ingevuld eerder is dan de huidige datum, wordt in het formulier het tekstbericht (Income genoemd) weergegeven.
+Wanneer de hypotheekdatum van het door de gebruiker ingevulde pand verleden tijd is, dan ziet u in het Adaptief formulier een notitie bij de berekening van het inkomen. Met de volgende regel wordt de datum die de gebruiker heeft ingevuld, vergeleken met de huidige datum en als de datum die door de gebruiker is ingevuld voor de huidige datum is, wordt in het formulier het tekstbericht (Inkomsten met de naam) weergegeven.
 
-![Toestand datumexpressie](assets/dateexpressioncondition.png)
+![Voorwaarde datumexpressie](assets/dateexpressioncondition.png)
 
-Wanneer de datum waarop deze is ingevuld, eerder is dan de huidige datum, wordt het tekstbericht (Inkomsten) als volgt weergegeven:
+Als de ingevulde datum eerder is dan de huidige datum, wordt in het formulier het volgende tekstbericht (Inkomsten) weergegeven:
 
 ![Voldoet aan voorwaarde voor datumexpressie](assets/dateexpressionconditionmet.png)
 
@@ -902,8 +963,6 @@ Rule in the code editor -->
 In het inkooporderformulier dat in het vorige voorbeeld wordt beschreven, wilt u de gebruiker beperken om meer dan één hoeveelheid van een product te bestellen waarvan de prijs hoger is dan 10000. Voor deze validatie kunt u een validatieregel schrijven, zoals hieronder wordt weergegeven.
 
 ![Voorbeeld-validate](assets/example-validate.png)
-
-Regel in de visuele editor
 
 <!-- The rule appears as follows in the code editor.
 

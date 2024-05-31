@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39697467c5d06c5a82d701ecc2e05702535efd6c
+source-git-commit: 146d1adeebc756d24003b418ad5f66bdf3e4e06c
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2024.4.0) is 25 april 2024. De volgende release met functies (2024.5.0) is gepland voor 30 mei 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2024.4.0) is 30 mei 2024. De volgende release met functies (2024.5.0) is gepland voor 27 juni 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -34,11 +34,17 @@ U vindt de meest recente opmerkingen in de onderhoudsrelease [hier](/help/releas
 
 ## Video vrijgeven {#release-video}
 
-Bekijk de video Overzicht van de release van april 2024 voor een overzicht van de functies die zijn toegevoegd in de release van 2024.4.0:
+Bekijk de video Overzicht van de release van mei 2024 voor een overzicht van de functies die in de release van 2024.5.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
+
+### Nieuwe functies in sites {#sites-new-features}
+
+**AEM Authoring voor Edge Delivery Services**
+
+Verbeterde stabiliteit en diverse verbeteringen voor een betere ontwerpervaring.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
@@ -56,43 +62,18 @@ Wilt u de functie proberen en feedback delen? Stuur een e-mail naar aemcs-headle
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies in de weergave Elementen {#assets-view-new-features}
-
-
-**Contextueel zoeken**
-
-U kunt nu ook [zoekmiddelen beschikbaar in de repository door tekstaanwijzingen te definiëren](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets transformeert automatisch die tekstherinneringen om filters te zoeken en toont de onderzoeksresultaten. Met het deelvenster Filters kunt u automatische filters weergeven en wijzigen om de zoekresultaten verder te beperken.
-
-![Contextueel zoeken](/help/assets/assets/contextual-search-text-prompt1.png)
-
-**Snelle videohandelingen**
-
-Experience Manager Assets bevat nu [eenvoudige en intuïtieve videobewerkingsgereedschappen, aangedreven door Adobe Express](/help/assets/edit-videos-assets-view.md) om het hergebruik van inhoud te verhogen en de snelheid van de inhoud te versnellen. Tot de bewerkingsopties behoren bijsnijden, bijsnijden, het formaat van een video wijzigen en het omzetten van een MP4 in een GIF-bestand.
-
-![video uitsnijden met Adobe Express](/help/assets/assets/adobe-express-crop-video.png)
-
-**Dynamische uitvoeringen**
-
-U kunt nu [dynamische uitvoeringen (inclusief slimme gewassen) weergeven en downloaden](/help/assets/renditions.md) in Experience Manager Assets. Dynamische uitvoeringen zijn aangepaste versies van afbeeldingselementen die in real-time worden gemaakt om aan specifieke behoeften te voldoen, zoals het formaat van afbeeldingen wijzigen op basis van de apparaatresolutie of het uitsnijden om aan verschillende hoogte-breedteverhoudingen te voldoen. Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimaliseerde ervaringen aan diverse publieksbehoeften te leveren.
-
-![Dynamische uitvoeringen](/help/assets/assets/preset_smart_crop.png)
-
-**Naam op plaats wijzigen voor elementen en mappen**
-
-Experience Manager Assets biedt nu een vereenvoudigde gebruikerservaring door [mogelijkheid om de naam van een middel of een omslag te wijzigen door één klik](/help/assets/manage-organize-assets-view.md).
-
-**Metagegevensformulier toewijzen aan of verwijderen uit meerdere mappen**
-
-U kunt nu [metagegevensformulier toewijzen aan of verwijderen uit meerdere mappen](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
-
 ### Nieuwe functies in de beheerweergave {#admin-view-new-features}
 
-**Configuratie van delen koppelen**
+* WebM is nu een ondersteund uitvoerbestand in verwerkingsprofiel voor video.
+* MP4 wordt nu ondersteund in de native integratie van AEM in Express (importeren en exporteren).
 
-Een nieuwe verbeterde gebruikerservaring voor [koppelingen maken](/help/assets/share-assets.md) samen met een gloednieuwe set configuraties waarmee beheerders het standaardgedrag van deze functie voor uw gebruikers kunnen aanpassen.
+### Nieuwe functies in de weergave Elementen {#assets-view-new-features}
 
-![Configuratie van delen koppelen](/help/assets/assets/config-email-service.png)
+**Elementen publiceren naar AEM en Dynamic Media**
 
+Met Experience Manager Assets kunt u nu snel [middelen publiceren naar Experience Manager en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md) de middelenweergave gebruiken zonder over te schakelen naar de beheerweergave. U kunt elementen publiceren tijdens het uploaden, bladeren en zoeken in elementen.
+
+![publicatiestatus controleren1](/help/assets/assets/check-publish-status1.png)
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
@@ -102,193 +83,144 @@ Een nieuwe verbeterde gebruikerservaring voor [koppelingen maken](/help/assets/s
 
 -->
 
-### Nieuwe functies in AEM Forms {#forms-new-features}
+### Nieuwe functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
 
-* **Verbeterde Visual Rule Editor voor op kerncomponenten gebaseerde adaptieve Forms**: Deze release brengt een aanzienlijke upgrade naar de visuele regeleditor voor adaptieve formulieren op basis van kerncomponenten. Deze versie brengt een significante verbetering aan de visuele regelredacteur voor adaptieve vormen die op kerncomponenten worden gebaseerd. Deze update is gericht op het stroomlijnen van interacties met aangepaste functies, zodat u robuustere en efficiëntere formulieren kunt maken.
+#### Verbeterde Visual Rule Editor voor op kerncomponenten gebaseerde adaptieve Forms
 
-  U kunt aangepaste functieinteracties nu stroomlijnen door:
+Deze versie brengt een significante verbetering aan de visuele regelredacteur voor adaptieve vormen die op kerncomponenten worden gebaseerd. U kunt nu het volgende doen:
 
-   * [Nieuwe annotaties gebruiken om duidelijkere functiedefinities te bieden](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
-   * [Het gebruik van caching mechanismen voor douanefuncties die tot snellere vormprestaties leiden](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
-   * [Naadloos werken met globale objecten binnen aangepaste functies](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
-   * [Optionele parameters definiëren en gebruiken binnen aangepaste functies](/help/forms/create-and-use-custom-functions.md#parameter).
+* Creeer regels in de Visuele redacteur van de Regel aan [Standaardhandlers voor formulierverzending negeren/mislukken](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
 
-  Deze update brengt ook de volgende verhogingen aan de functionaliteit van de regelredacteur. U kunt:
+* In de Adaptive Forms Rule Editor hebt u de mogelijkheid toegevoegd om [verschillende typen velden selecteren voor de WHEN-bewerking](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
-   * Krachtig implementeren [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) logica voor voorwaardelijke uitvoering.
-   * Maak gebruik van moderne JavaScript-functies, zoals let- en pijlfuncties (ES10-ondersteuning).
-   * Valideer of stel niet alleen gebieden, maar ook volledige panelen en vormen terug, die controle over gebruikersinteractie uitbreiden.
+* Een formulierauteur kan nu aangepaste functies toepassen op [gegevens voorafgaand aan verzending](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
 
-  Deze vooruitgang verstrekt een intuïtievere en krachtige ervaring voor het ontwerpen van regels en douanefuncties binnen de visuele regelredacteur.
+* Gebruik de [**Opslaan als concept**](/help/forms/save-core-component-based-form-as-draft.md) om gedeeltelijk ingevulde formulieren op te slaan en later te verzenden. Dit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
 
-* **[Meerdere versies van een adaptief formulier maken](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: U kunt nu gemakkelijk variaties van bestaande formulieren beheren. Dit vereenvoudigt versiecontrole en vergemakkelijkt vergelijking voor vormoptimalisering, allen binnen één enkele, gestroomlijnde werkschema.
 
-* **[Adaptief formulier vergelijken](/help/forms/compare-forms.md)**: U kunt nu gemakkelijk twee formulieren vergelijken om de verschillen tussen twee formulieren vast te stellen. Het vergemakkelijkt vlotte samenwerking door teamleden toe te laten om revisies te vergelijken en veranderingen efficiënt te bespreken.
 
-* **Verbeterde toegankelijkheid voor componenten voor scriptbare handtekeningen**: Deze update biedt aanzienlijke toegankelijkheidsverbeteringen voor de component Scripthandtekening:
+### Functies voor vroege adopters in AEM Forms {#forms-new-early-adopter-features}
 
-  **Verbeterde toetsenbordnavigatie:**
-   * Als u op de Tab-toets drukt, kunnen gebruikers door alle interactieve elementen navigeren in het dialoogvenster Handtekening.
-   * Het dialoogvenster wordt gesloten wanneer u ondertekent met een penseel of toetsenbord en op Enter drukt.
-   * De focus blijft op het besturingselement voor handtekeningen nadat u hebt ondertekend en op &quot;OK&quot; hebt geklikt.
+Het AEM Forms Early Introducter-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties voordat anderen die ontwikkelen.
+Het programma biedt toegang tot meerdere innovaties.
 
-  **Handtekeningfunctionaliteit wissen:**
+Deze release bevat een overzicht van de innovaties die in deze release zijn geleverd. Voor de volledige lijst van innovaties die beschikbaar zijn in het kader van het programma voor vroegtijdige adoptie, zie [Documentatie over AEM Forms Early Introducter Program](/help/forms/early-adopter-ea-features.md).
 
-   * Een duidelijk kruispictogram voor het wissen van de handtekening is toegankelijk via de Tab-toets.
-   * Het dialoogvenster Handtekeningbevestiging wissen is ook toegankelijk via tabnavigatie.
+#### Verbeterde methoden voor botbeveiliging
 
-  **Verbeterde labels en besturingselementen:**
-   * Het label voor de knop voor toetsenbordondertekening is nu duidelijker en met &quot;aria-label&quot; kunt u functionaliteit aankondigen (zoals &quot;aria-label=&#39;Ondertekenen met toetsenbord&#39;&#39;).
-   * Het verbeterde contrast zorgt ervoor dat alle besturingselementen binnen de krabbelhandtekening gemakkelijk te onderscheiden zijn.
-   * De knop OK/vinkje geeft nu visueel aan wanneer deze inactief is.
+AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te voegen voor twee populaire CAPTCHA-oplossingen: Cloudflare Turnstile en hCaptcha. Dit voegt toe aan de reeds beschikbare Google reCAPTCHA, die gebruikers meer keus en flexibiliteit verleent om hun vormen tegen bots en spam voorlegging te beschermen.
 
-  **Feedback van handtekening voor Readers van scherm:**
-   * Wanneer een handtekening wordt getypt, kunnen gebruikers van schermlezers de tekst horen die wordt gebruikt om de handtekening te maken.
+* **Cloudflare Turnstile**: Deze frictionless CAPTCHA verifieert gebruikers door een eenvoudige uitdaging die geen expliciete interactie vereist. De toepassing wordt naadloos geïntegreerd in uw formulieren, waardoor de gebruikerservaring wordt verbeterd.
+* **hCaptcha**: Deze op privacy gerichte CAPTCHA biedt een gebruiksvriendelijk alternatief met focus op de privacy van gegevens. Het is bedoeld om een evenwicht te vinden tussen veiligheid en gebruikerservaring.
+* **Google reCAPTCHA**: AEM Forms blijft zowel reCAPTCHA v2 als reCAPTCHA Enterprise ondersteunen en biedt een betrouwbare en gevestigde oplossing.
 
-Deze update zorgt voor een inclusievere ervaring voor gebruikers met een handicap door navigatie, helderheid en feedback voor de component Krabbelhandtekening te verbeteren.
+Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-### Programma voor vroege adoptie {#forms-early-adopter}
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie bevat gedetailleerde instructies voor elk van deze: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
-* **[Een adaptief formulier verzenden naar het Adobe Workfront Fusion-scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service beschikt over een optie om een adaptief formulier moeiteloos aan te sluiten op Adobe Workfront. Dit vereenvoudigt het proces om een Adaptief Formulier aan een scenario van Adobe Workfront voor te leggen, toelatend u een scenario van de Fusie van Workfront op voorlegging van een Aangepast Vorm teweegbrengt.
 
-  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Met de Adobe Workfront Fusion Connector kunt u workflows ontwerpen die automatisch worden geactiveerd na verzending van een adaptief formulier. Stel bijvoorbeeld dat een workflow wordt gestart om een specifieke persoon de taak te geven de ingediende gegevens te beoordelen, zodat een aanvraag kan worden goedgekeurd of afgewezen op basis van de informatie die via het adaptieve formulier is vastgelegd. Deze gestroomlijnde integratie verbetert de efficiëntie en zorgt voor een nieuw niveau van automatisering van uw workflowprocessen.|
+### Forms Service
 
-* **[Reader Extension Service](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: AEM Forms Communication API&#39;s hebben de Extension Service van Readers geïntroduceerd zodat u functies zoals het invullen van formulieren en opmerkingen kunt toevoegen aan gewone PDF, waardoor ze interactief zijn voor gebruikers met de gratis Adobe Reader.
+Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Het kan ook worden gebruikt om gegevens naar en van een bestaand interactief PDF formulier te importeren en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
 
-* [Ondersteuning voor talen van rechts naar links](/help/forms/supporting-new-language-localization-core-components.md): Adaptieve Forms die is gebaseerd op Core Components, kan nu worden weergegeven in een RTL-taal (rechts naar links), zoals Arabisch, Perzisch en Urdu. De RTL-talen worden wereldwijd gesproken door meer dan 2 miljard mensen. Door een formulier in RTL-taal te gebruiken, kunt u het bereik van uw adaptieve formulieren uitbreiden naar deze verschillende doelgroepen en selecteren in RTL-markten. In bepaalde regio&#39;s is het ook een wettelijk mandaat om formulieren in de lokale taal te verstrekken. Door lokale talen aan te passen, opent u niet alleen deuren voor een breder publiek, maar zorgt u ook voor naleving van relevante wetten en regels.
+* **Forms renderen**: Genereer een interactief PDF-formulier op basis van een sjabloon die is gemaakt met AEM Forms Designer en eventueel XML-gegevens. Hiermee wordt in feite een optioneel vooraf ingevuld formulier met PDF gemaakt.
+* **Gegevens extraheren en importeren**: Importeer gegevens in een bestaand PDF-formulier en extraheer gegevens uit een ingevuld PDF-formulier. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
+* **Gegevensvalidatie**: - Valideer verzonden gegevens in XDP- of XML-indeling op basis van een sjabloon die is gemaakt met AEM Forms Designer.
 
-* **[Protect uw documenten met DocAssurance-API&#39;s (onderdeel van communicatie-API&#39;s)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: De DocAssurance-API&#39;s stellen u in staat gevoelige informatie te beveiligen door de documenten te ondertekenen en te versleutelen. Door versleuteling wordt de inhoud van een document omgezet in een onleesbare indeling, zodat alleen geautoriseerde gebruikers toegang hebben. Deze versterkte beschermingslaag beschermt niet alleen waardevolle gegevens tegen ongeoorloofde ogen, maar zorgt ook voor gemoedsrust. Met de handtekening-API&#39;s kunt u de beveiliging en privacy van Adobe PDF-documenten die door uw organisatie worden gedistribueerd en ontvangen, beschermen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat alleen de beoogde ontvangers documenten kunnen wijzigen.
+>[!IMPORTANT]
+>
+> Als u geïnteresseerd bent in deelname aan ons programma voor vroege adopters voor innovaties op het gebied van vroege adopters, stuurt u gewoon een e-mail van uw officiële adres naar [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
-  U kunt schrijven naar `aem-forms-ea@adobe.com` van uw officiële e-mailidentiteitskaart om zich bij het vroege adoptieprogramma aan te sluiten en toegang tot het vermogen te verzoeken.
+
+## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
+
+### OAuth Server-aan-Server geloofsbrieven steun voor AEM integratie met andere oplossingen van de Adobe {#S2S-OAuth-credentials}
+
+Met Adobe Developer Console worden referenties gegenereerd voor toegang tot verschillende API&#39;s. Een van die referentietypen, de referenties van de Servicerekening (JWT), is vervangen door OAuth Server-to-Server-referenties, die AEM Cloud Service nu ondersteunt voor integratie met andere Adobe-oplossingen zoals Adobe Analytics en Adobe Target.
+
+[Meer informatie over de afgekeurde afbeelding](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) en [leren hoe u de gebruikersinterface van de AEM gebruikt](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) om integratie met andere oplossingen van de Adobe te vormen.
+
+### Verkeerspiek bij waarschuwingen over oorsprong {#traffic-spike-origin}
+
+[Proactieve meldingen ontvangen](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert) door het Centrum van Acties wanneer de verkeerspatronen bij de oorsprong van een aanval wijzen DDoS, die u toestaan om de regels van de verkeersfilter te onderzoeken en te vormen.
+
+### Nieuwe Eigenschappen voor RDEs {#RDE-new-features}
+
+[Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) Laat ontwikkelaars snel wijzigingen implementeren, evalueren en testen in de cloud. In de maand juni worden verschillende nieuwe functies geïntroduceerd. We nodigen u ook uit om rechtstreeks contact op te nemen met Adobe engineering op de [RDE Disorder-kanaal](https://discord.com/channels/1131492224371277874/1245304281184079872).
+
+
+#### RDE-ondersteuning voor front-end code met gebruik van Sitethema&#39;s en Sitesjablonen {#rde-frontend}
+
+[RDE&#39;s ondersteunen nu front-end code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) gebaseerd op [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md), voor vroege adoptie. Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan een [front-end pijpleiding](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+
+#### Verbeterd registreren voor RDEs {#rde-logging}
+
+Tijdens het opsporen van fouten in code in een RDE kunnen ontwikkelaars nu [vorm en stroom logboeken productiever](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging), met gebruik van de opdrachtregel en zonder wijzigingen van de eigenschappen van OSGI in versiebeheer. Functies:
+
+* logboekniveaus declareren op een pakket- of klassenniveau
+* het aanpassen van het formaat van de logboekoutput
+* meerdere logbestanden tegelijk streamen
+
+#### Verbeteringen voor RDE CLI {#rde-cli-enhancements}
+
+De interface van de het bevellijn van RDE heeft sommige nieuwe eigenschappen, die de ontwikkelaarservaring verbeteren:
+
+* [de opdracht setup is interactief](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), waardoor het gemakkelijker wordt te kiezen tussen organisaties, programma&#39;s en omgevingen. Het is nu ook mogelijk deze waarden op de opdrachtregel te overschrijven.
+* [stille modus](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) voor een minder uitgebreide uitvoer.
+* [json, modus](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) voor nuttige output wanneer aangehaald programmatically.
+
+### Nieuwe meldingen in het actiecentrum {#actions-center-notifications}
+
+[Handelingencentrum](/help/operations/actions-center.md) verzendt e-mailberichten wanneer zich belangrijke incidenten voordoen, of als er iets aan uw code of configuratie is waar u proactieve actie moet ondernemen. Er zijn drie nieuwe typen meldingen:
+
+* te veel uitgaande verbindingen door geavanceerde voorzien van een netwerkinfrastructuur
+* gebruik van een verouderde indeling voor het toewijzen van gebruikers aan services
+* er een potentiële DDoS-aanval gaande is
+
+### Programma&#39;s voor vroege adoptie {#foundation-early-adopter}
+
+E-mail **<aemcs-cdn-config-adopter@adobe.com>**, waarin wordt aangegeven in welke van de onderstaande programma&#39;s voor vroege adoptie u geïnteresseerd bent.
+
+#### Inhoud op de CDN wissen met een API-sleutel voor zelfbediening (programma voor vroege adopters) {#purge-cdn}
+
+Registreer een CDN zuivering API sleutel op een zelfbediening manier, en gebruik het om inhoud bij CDN, of globaal, of voor één of meerdere middelen ongeldig te maken. [Meer informatie](/help/implementing/dispatcher/cdn-cache-purge.md).
+
+<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
+
+#### Zelf-serververwezenlijking van x-AEM-rand-Sleutel voor klant-beheerde CDN (BYOCDN) (het Vroege Programma van de Aannemer) {#byocdn-keys}
+
+Eerder, was een steunkaartje nodig om X-AEM-rand-Sleutel te produceren die voor configuratie van een klant-beheerde CDN wordt vereist. Dit kan nu op een zelfbediende manier door een configuratiedossier worden verwezenlijkt dat gebruikend de Pijpleiding van de Configuratie wordt opgesteld, verwijderend om het even welke vertraging in het aan boord gaan van een nieuw milieu. [Meer informatie](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+
+<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
+
+#### Client-side omleidingen (Early-adopter-programma) {#client-side-redirects-early-adopter}
+
+Vorm 301/302 cliënt-zij richt in broncontrole, en stel aan CDN op. [Meer informatie](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Er zijn al verschillende andere functies beschikbaar die betrekking hebben op [CDN-configuratie](/help/implementing/dispatcher/cdn-configuring-traffic.md), met inbegrip van verzoek en reactietransformaties, en verpletterend verkeer aan off-AEM plaatsen.
+
+#### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
+
+Onlangs vrijgegeven [Regels voor verkeersfilters](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.
+
+Sluit zich aan bij het vroege adoptieprogramma zodat kunt u worden gealarmeerd wanneer uw regels van de verkeersfilter worden teweeggebracht. De e-mailberichten van het Centrum van acties zullen u op de hoogte houden wanneer bepaalde verkeersvoorwaarden voorkomen zodat kunt u aangewezen maatregelen nemen.
+
+#### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (programma voor vroege adoptie) {#apache-rewritemaps-early-adopter}
+
+Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten op die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en laadt ze, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Dit opent mogelijkheden voor een bedrijfsgebruiker om omleidingen te verklaren gebruikend of een spreadsheet of UI, zoals die aangeboden door ACS Commons Redirect de Manager van de Kaart of die als deel van een klantentoepassing wordt gecreeerd. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+
+#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Introducter Program) {#esi-early-adopter}
+
+De Adobe Beheerde CDN ondersteunt nu [Inclusief rand (ESI)](/help/implementing/dispatcher/edge-side-includes.md), een opmaaktaal voor dynamische webinhoud-verzameling op randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+
+#### Real User Monitoring (RUM) Data Service (Early Introducter Program)
 
 * **[U kunt gebruikmaken van de gegevensservice Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om client-side verzameling voor AEM as a Cloud Service in te schakelen.
 Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt geboden. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-beheerde CDN of niet-Adobe-beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
 
   Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor elk van de omgevingen waarvoor u RUM wilt inschakelen vanaf uw e-mailadres dat is gekoppeld aan uw Adobe ID. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
 
-## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
-
-### CDN-configuratie {#cdn-config}
-
-Vorm verkeer bij Adobe CDN op de volgende manieren:
-
-* [Transformaties aanvragen](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - wijzig aspecten van inkomende verzoeken, met inbegrip van wegen, vraagparameters, en de kopballen van HTTP alvorens zij aan AEM worden verpletterd.
-* [Responstransformaties](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - wijzig de HTTP-koppen van de uitgaande reacties voordat deze worden verzonden naar de browser.
-* [Oorspronkelijke kiezers](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - routeverkeer door CDN aan off-AEM plaatsen en toepassingen.
-
-Zodra deze regels in broncontrole (git) worden verklaard, kunt u hen aan CDN opstellen gebruikend de Pijpleiding van de Configuratie van de Manager van de Wolk. Zie ook de omleidingsfunctie aan de clientzijde in de sectie voor vroege gebruikers hieronder.
-
-### Aangepaste CDN-foutpagina&#39;s {#cdn-error-pages}
-
-In de onwaarschijnlijke gebeurtenis dat CDN geen verkeer aan de AEM oorsprong kan leiden, kan een pagina van de douanefout worden verklaard, die de generische versie vervangt. [Meer informatie](/help/implementing/dispatcher/cdn-error-pages.md) informatie over hoe u pagina&#39;s met brandfouten kunt bedienen.
-
-### Programma&#39;s voor vroege adoptie {#foundation-early-adopter}
-
-#### Client-side omleidingen (Early-adopter-programma) {#client-side-redirects-early-adopter}
-
-Vorm 301/302 cliënt-zij richt in broncontrole, en stel aan CDN op. [Meer informatie](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) en deelnemen aan het programma voor vroegtijdige adoptie via e-mail **<aemcs-cdn-config-adopter@adobe.com>**.
-
-#### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
-
-Onlangs vrijgegeven [Regels voor verkeersfilters](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.
-
-Nu kunt u e-mailen **<aemcs-cdn-config-adopter@adobe.com>** om zich bij het vroege adopterprogramma aan te sluiten zodat kunt u worden gewaarschuwd wanneer uw regels van de verkeersfilter worden teweeggebracht. De e-mailberichten van het Centrum van acties zullen u op de hoogte houden wanneer bepaalde verkeersvoorwaarden voorkomen zodat kunt u aangewezen maatregelen nemen.
-
-#### Apache/Dispatcher Runtime Ingestie van het Herschrijven Kaarten (Vroege Programma van de Aannemer) {#apache-rewritemaps-early-adopter}
-
-Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten op die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en laadt ze, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Dit opent mogelijkheden voor een bedrijfsgebruiker om omleidingen te verklaren gebruikend UI, zoals die aangeboden door ACS Commons Redirect de Manager van de Kaart. Neem contact op met **<aemcs-cdn-config-adopter@adobe.com>** voor meer informatie .
-
-#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Introducter Program) {#esi-early-adopter}
-
-De Adobe Beheerde CDN ondersteunt nu Edge Side Includes (ESI), een opmaaktaal voor dynamische webinhoud-assemblage op randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. Neem contact op met **<aemcs-cdn-config-adopter@adobe.com>** voor meer informatie .
-
-#### RDE-ondersteuning voor front-end code met behulp van sitemenu&#39;s en sitemasjablonen (programma voor vroege adopters) {#rde-frontend-early-adopter}
-
-[Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) nu ondersteuning voor front-end code op basis van [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md), voor vroege adoptie. Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan een [front-end pijpleiding](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Neem contact op met **<aemcs-rde-support@adobe.com>** om het uit te proberen en feedback te geven.
-
-#### Verbeterde logboekregistratie voor RDE&#39;s (Early Introducter Program) {#rde-logging-early-adopter}
-
-Tijdens foutopsporing in een [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)Ontwikkelaars kunnen logbestanden nu efficiënter configureren en streamen, met de opdrachtregel en zonder de OSGI-eigenschappen in versiebeheer te wijzigen. Functies:
-
-* Logniveaus declareren op een niveau per pakket of klasse
-* de indeling voor loguitvoer aanpassen
-* meerdere logbestanden parallel streamen
-
-Neem contact op met **<aemcs-rde-support@adobe.com>** om het uit te proberen en feedback te geven.
-
-
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-
-### Mogelijkheid om inhoud in meerdere talen te vertalen met behulp van vooraf geconfigureerde taalgroepen
-
-Met de hulplijnen voor Experience Managers kunt u nu taalgroepen maken en uw inhoud eenvoudig in meerdere talen vertalen. Met deze functie kunt u vertalingen volgens de behoeften van uw organisatie ordenen en beheren.
-
-Als u bijvoorbeeld uw inhoud voor bepaalde landen in Europa wilt vertalen, kunt u een taalgroep voor Europese talen maken, zoals Engels (EN), Frans (FR), Duits (DE), Spaans (ES) en Italiaans (IT).
-
-![vertaaldeelvenster](../assets/guides/translation-languages-2404.png)
-
-*Selecteer de taalgroepen of talen die u uw documenten wilt vertalen.*
-
->[!NOTE]
->
->Als de doelmap van een taal ontbreekt of als de doeltaal gelijk is aan de bron, wordt deze grijs weergegeven en wordt een waarschuwingsteken weergegeven.
-
-Als beheerder kunt u taalgroepen maken en deze configureren naar meerdere mapprofielen. Als auteur kunt u de taalgroepen weergeven die zijn geconfigureerd in uw mapprofiel.
-
-
-Het maken van taalgroepen verbetert over het algemeen de efficiëntie en productiviteit van vertaalprojecten en verbetert uiteindelijk het lokalisatieproces in meerdere talen.
-
-
-Leer hoe u [documenten vertalen vanuit de webeditor](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
-
-### Nieuwe ervaring voor het zoeken naar en filteren van bestanden in de gegevensopslagweergave
-
-Nu hebt u een verbeterde ervaring bij het filteren van bestanden. De vernieuwde functionaliteit voor het filteren van bestanden biedt een verbeterde manier om bestanden moeiteloos te doorzoeken en door te bladeren.
-
-![zoekbestanden in de dataweergave](../assets/guides/repository-filter-search-2404.png)
-
-*Zoeken naar de bestanden met de tekst`general purpose.`*
-
-Geniet van voordelen zoals snellere toegang tot relevante bestanden en een intuïtievere gebruikersinterface, waardoor uw zoekervaring vloeiender en efficiënter wordt.
-
-![snelzoekfilter ](../assets/guides/repository-filter-search-quick.png)
-
-*Gebruik de snelle filters om naar DITA en niet-DITA dossiers te zoeken.*
-
-Meer informatie over de **Filter Zoeken** in de [Linkerdeelvenster](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) sectie.
-
-### Verbeteringen in de gegevensbronaansluitingen
-
-De volgende verbeteringen zijn aangebracht in de gegevensbronconnectors voor de release 2024.4.0:
-
-#### Verbind met Salsify, Akeneo, en Microsoft Azure DevOps Boards (ADO) Gegevensbronnen
-
-Naast de bestaande out-of-the-box schakelaars, verstrekt de Gidsen van de Experience Manager ook schakelaars voor Salsify, Akeneo, en Microsoft Azure DevOps Boards (ADO) gegevensbronnen. Als beheerder kunt u deze connectors downloaden en installeren. Dan, vorm de geïnstalleerde schakelaars.
-
-#### De voorbeeldquery kopiëren en plakken om een inhoudsfragment of onderwerp te maken
-
-U kunt een vraag van steekproefgegevens in de generator gemakkelijk kopiëren en kleven om een inhoudsfragment of een onderwerp tot stand te brengen. Met deze eigenschap, moet u niet de syntaxis herinneren of een vraag manueel creëren. In plaats van de vraag manueel te typen, kunt u een steekproefvraag kopiëren en kleven, het uitgeven, en het gebruiken om de gegevens volgens uw vereisten te halen.
-
-![inhoudfragment invoegen, dialoogvenster](../assets/guides/insert-content-snippet.png)
-
-*Kopieer en bewerk een voorbeeldquery om het inhoudsfragment te maken.*
-
-#### Verbinding maken met JSON-gegevensbestanden via een bestandsverbinding
-
-
-Nu, als beheerder, kunt u een JSON dossierschakelaar vormen om JSON- gegevensdossiers als gegevensbron te gebruiken. Gebruik de connector om de JSON-bestanden van uw computer of de Adobe Experience Manager Assets te importeren. Vervolgens kunt u als auteur met behulp van de generatoren inhoudsfragmenten of onderwerpen maken.
-
-Met deze functie kunt u de gegevens die in uw JSON-bestanden zijn opgeslagen, gebruiken en opnieuw gebruiken in verschillende fragmenten. De inhoud wordt ook dynamisch bijgewerkt wanneer u de JSON-bestanden bijwerkt.
-
-#### Vorm Meerdere Middel URLs voor een Schakelaar om Inhoud Fragmenten of Onderwerpen tot stand te brengen
-
-Als beheerder, kunt u veelvoudige middel URLs voor sommige schakelaars zoals de Generische Cliënt van de REST, Salsify, Akeneo, en Microsoft Azure DevOps Boards (ADO) vormen.
-Dan, als auteur, verbind met de gegevensbronnen om inhoudsfragmenten of onderwerpen tot stand te brengen gebruikend de generators. Deze functie is handig omdat u geen gegevensbron hoeft te maken voor elke URL. Het helpt u om gegevens van om het even welke middelen voor een bepaalde gegevensbron in één enkel inhoudsfragment of onderwerp snel te halen. Meer details over de gegevensbronschakelaars en hoe te bekijken [vormt een gegevensbronschakelaar van het gebruikersinterface](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Leer hoe u [gegevens uit uw gegevensbron gebruiken](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
-
-Voor meer informatie over de nieuwe eigenschappen en de verhogingen, mening [Nieuwe functies in de release van 2024.04.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
-
-Voor de lijst met problemen die in deze release zijn opgelost, raadpleegt u [Opgeloste problemen in de release 2024.4.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
+U vindt een volledige lijst met nieuwe en verbeterde functies van de nieuwste versie van Adobe Experience Manager Guides [hier](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
 
 ## Cloud Manager {#cloud-manager}
 

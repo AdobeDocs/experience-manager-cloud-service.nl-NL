@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -64,4 +64,56 @@ ht-degree: 0%
 * [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
 * [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
+
+
+## Verschil tussen de redacteur van de Regel in de Componenten van de Kern en de Redacteur van de Regel in de Componenten van de Stichting  {#rule-editor-diff}
+
+De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de Componenten van de Kern van de Redacteur van de Regel en de Componenten van de Stichting van de Redacteur van de Regel aan:
+
+<table>
+  <tbody>
+  <tr>
+    <td><strong>Functies</strong></td>
+    <td><strong>Adptive Form Foundation Components</strong></td>
+    <td><strong>Adptive Form Core-componenten</strong></td>   
+    </tr>
+  </tr>
+  <tr>
+    <td>Opties voor de vervolgkeuzelijst instellen </td>
+    <td>De opties voor de vervolgkeuzelijst worden ingesteld met behulp van de opties van de Regeleditor <b>Opties instellen voor</b> eigenschap.</td>
+    <td>De dropdown opties worden geplaatst gebruikend de douanefuncties. 
+   </td>
+   </tr>
+     </tr>
+   <tr>
+    <td>Wiskundige bewerkingen uitvoeren in het veld van het herhaalbare deelvenster </td>
+    <td>OTB Wiskundige functies kunnen worden toegepast op herhaalbare deelvenstervelden om functies uit te voeren zoals de som en het gemiddelde. </td>
+    <td>Wiskundige bewerkingen in het veld van het herhaalbare deelvenster kunnen worden uitgevoerd met behulp van aangepaste functies.
+   </td>
+   </tr>
+      <tr>
+    <td>Veld/deelvenster/formulierregel valideren/opnieuw instellen in 'Dan' </td>
+    <td>Validatie- en herstelfuncties ondersteunen alleen formulierobjecten in de regeleditor. 
+   </td>
+    <td>Validatie- en herstelfuncties ondersteunen formulier-, deelvenster- en veldobject in de Regeleditor. 
+   </td>
+   </tr>
+   <tr>
+    <td>ES10-ondersteuning </td>
+    <td>ES10 wordt nog niet ondersteund. </td>
+    <td>Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen aangepaste functies. 
+   </td>
+   </tr>
+   </tr>
+   <tr>
+   <td>Service-uitvoereigenschap</td>
+   <td> Het de outputbezit van de Dienst wordt gesteund in <b>Waarde instellen van</b> optie van de Redacteur van de Regel. </td>
+   <td>De <b>Waarde instellen van</b> biedt geen ondersteuning voor de <b>Service-uitvoer</b> eigenschap voor het aanroepen van API's in de Rule Editor.
+   </td>
+   </tr>
+   </tr>
+   </tr>
+  </tbody>
+  <table>
+  </tbody>
 

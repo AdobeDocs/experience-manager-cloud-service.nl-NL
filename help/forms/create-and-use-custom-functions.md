@@ -1,25 +1,20 @@
 ---
 title: Aangepaste functies maken en toevoegen in een adaptief formulier
-description: AEM Forms ondersteunt aangepaste functies waarmee gebruikers hun eigen functies in de regeleditor kunnen maken en gebruiken.
+description: AEM Forms ondersteunt aangepaste functies, waarmee gebruikers hun eigen functies in de regeleditor kunnen maken en gebruiken.
 keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een douanefunctie, gebruik douanefunctie in regel redacteur.
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3510'
 ht-degree: 0%
 
 ---
 
 
-<span class="preview"> Dit artikel bevat inhoud voor enkele functies die aan de release zijn toegevoegd. Deze pre-releasefuncties zijn alleen toegankelijk via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). Het pre-releaseprogramma heeft de volgende kenmerken:
-* Optionele parameterondersteuning in aangepaste functies
-* Caching-functie voor aangepaste functies
-* Algemene bereikobjecten en veldobjecten ondersteunen aangepaste functies
-* Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning).
-Zorg ervoor dat de [kerncomponent is ingesteld op versie 3.0.8](https://github.com/adobe/aem-core-forms-components) om pre-releasefuncties in douanefunctie te gebruiken. </span>
+<span class="preview"> Dit artikel bevat `Override form submission success and error handlers` als een pre-releasefunctie. De pre-release functie is alleen toegankelijk via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # Aangepaste functies in Adaptive Forms (Core Components)
 
@@ -31,6 +26,10 @@ Zorg ervoor dat de [kerncomponent is ingesteld op versie 3.0.8](https://github.c
 ## Inleiding
 
 AEM Forms ondersteunt aangepaste functies, waardoor gebruikers JavaScript-functies kunnen definiëren voor het implementeren van complexe bedrijfsregels. Deze aangepaste functies vergroten de mogelijkheden van formulieren door het bewerken en verwerken van ingevoerde gegevens te vergemakkelijken, zodat aan bepaalde vereisten wordt voldaan. Ze maken het ook mogelijk het formuliergedrag dynamisch te wijzigen op basis van vooraf gedefinieerde criteria.
+
+>[!NOTE]
+>
+> Zorg ervoor dat de [kerncomponent](https://github.com/adobe/aem-core-forms-components) is ingesteld op de meest recente versie om de nieuwste functies te gebruiken.
 
 ### Gebruik van aangepaste functies {#uses-of-custom-function}
 
@@ -48,7 +47,7 @@ JavaScript-annotaties worden gebruikt om metagegevens voor JavaScript-code op te
 
 #### Naam
 
-De naam wordt gebruikt om de douanefunctie in de regelredacteur van een Adaptief vorm te identificeren. De volgende syntaxis wordt gebruikt om een douanefunctie te noemen:
+De naam wordt gebruikt om de douanefunctie in de regelredacteur van een Aangepast Vorm te identificeren. De volgende syntaxis wordt gebruikt om een douanefunctie te noemen:
 
 * `@name [functionName] <Function Name>`
 * `@function [functionName] <Function Name>`
@@ -124,7 +123,7 @@ De volgende illustratie wordt weergegeven met de `OptionalParameterFunction` aan
 
 ![Optionele of vereiste parameters ](/help/forms/assets/optional-default-params.png)
 
-U kunt de regel opslaan zonder een waarde voor vereiste parameters op te geven, maar de regel wordt niet uitgevoerd en er wordt een waarschuwingsbericht weergegeven als:
+U kunt de regel opslaan zonder een waarde voor de vereiste parameters op te geven, maar de regel wordt niet uitgevoerd en er wordt een waarschuwingsbericht weergegeven als:
 
 ![onvolledige regelwaarschuwing](/help/forms/assets/incomplete-rule.png)
 
@@ -154,10 +153,10 @@ Het retourneringstype geeft het type waarde op dat de aangepaste functie na de u
 
 #### Persoonlijk
 
-De aangepaste functie, gedeclareerd als private, komt niet voor in de lijst met aangepaste functies in de regeleditor van een adaptief formulier. Aangepaste functies zijn standaard openbaar. De syntaxis voor het declareren van een aangepaste functie als private is `@private`.
+De aangepaste functie die als private is gedeclareerd, komt niet voor in de lijst met aangepaste functies in de regeleditor van een adaptief formulier. Aangepaste functies zijn standaard openbaar. De syntaxis voor het declareren van een aangepaste functie als private is `@private`.
 
 
-## Richtlijnen tijdens het maken van aangepaste functies {#considerations}
+## Richtlijnen tijdens het maken van aangepaste functies
 
 Om van de douanefuncties in de regelredacteur een lijst te maken, kunt u om het even welke volgende formaten gebruiken:
 
@@ -240,7 +239,7 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
 
 1. Een map maken met de naam `js`.
 1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` map.
-1. Voeg bijvoorbeeld een JavaScript-bestand toe. `function.js`. Het bestand bevat de code voor een aangepaste functie.
+1. Voeg bijvoorbeeld een JavaScript-bestand toe. `function.js`. Het bestand bestaat uit de code voor de aangepaste functie.
 1. Sla de `function.js` bestand.
 1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` map.
 1. Een tekstbestand toevoegen als `js.txt`. Het bestand bevat:
@@ -261,7 +260,7 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
 
 1. [De pijplijn uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om de aangepaste functie te implementeren.
 
-Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in cliëntbibliotheek wordt toegevoegd beschikbaar in uw [Editor voor adaptieve formulierregels](/help/forms/rule-editor-core-components.md).
+Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in de cliëntbibliotheek wordt toegevoegd beschikbaar in uw [Editor voor adaptieve formulierregels](/help/forms/rule-editor-core-components.md).
 
 ### Clientbibliotheek toevoegen aan een adaptief formulier{#use-custom-function}
 
@@ -280,9 +279,9 @@ Zodra u de clientbibliotheek hebt geïmplementeerd in uw Forms CS-omgeving, gebr
 
 1. Klik op **[!UICONTROL Done]**.
 
-U kunt de aangepaste functie gebruiken in het dialoogvenster [regel-editor van een adaptief formulier](/help/forms/rule-editor-core-components.md) met de [Javascript-annotaties](##js-annotations).
+U kunt de aangepaste functie gebruiken in het dialoogvenster [regel-editor van een adaptief formulier](/help/forms/rule-editor-core-components.md) met de [JavaScript-annotaties](##js-annotations).
 
-## Aangepaste functies in een adaptief formulier gebruiken
+## Een aangepaste functie gebruiken in een adaptief formulier
 
 In een adaptief formulier kunt u [aangepaste functies in de regeleditor](/help/forms/rule-editor-core-components.md). Voeg de volgende code toe aan het JavaScript-bestand (`Function.js` bestand) om de leeftijd te berekenen op basis van de geboortedatum (JJJJ-MM-DD). Een aangepaste functie maken als `calculateAge()` die de geboortedatum als input neemt en de leeftijd retourneert:
 
@@ -320,6 +319,43 @@ Bekijk een voorbeeld van het formulier om te zien hoe de aangepaste functies wor
 >[!NOTE]
 >
 > U kunt naar het volgende verwijzen [aangepaste functie](/help/forms/assets//customfunctions.zip) map. Download en installeer deze map in uw AEM [Pakketbeheer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+
+
+### Opties voor vervolgkeuzelijsten instellen met behulp van aangepaste functies
+
+De Redacteur van de regel in de Componenten van de Kern steunt niet **Opties instellen voor** om de opties voor de vervolgkeuzelijst tijdens runtime in te stellen. U kunt de opties voor de vervolgkeuzelijst echter instellen met behulp van aangepaste functies.
+
+Bekijk de onderstaande code om te zien hoe u de opties voor de vervolgkeuzelijst kunt instellen met behulp van aangepaste functies:
+
+```javascript
+    /**
+    * @name setEnums
+    * @returns {string[]}
+    **/
+    function setEnums() {
+    return ["0","1","2","3","4","5","6"];   
+    }
+
+    /**
+    * @name setEnumNames
+    * @returns {string[]}
+    **/
+    function setEnumNames() {
+    return ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    }
+```
+
+In de bovenstaande code: `setEnums` wordt gebruikt om de `enum` eigendom en `setEnumNames` wordt gebruikt om de `enumNames` eigenschap van dropdown.
+
+Laten we een regel maken voor de `Next` , waarmee de waarde van de keuzelijst wordt ingesteld wanneer de gebruiker op de knop `Next` knop:
+
+![Opties vervolgkeuzelijst](/help/forms/assets/drop-down-list-options.png)
+
+Raadpleeg de onderstaande afbeelding om aan te tonen waar de opties van de vervolgkeuzelijst zijn ingesteld wanneer u op de knop Weergeven klikt:
+
+![Opties voor vervolgkeuzelijsten in de regeleditor](/help/forms/assets/drop-down-option-rule-editor.png)
+
+
 
 ### Ondersteuning voor asynchrone functies in aangepaste functies {#support-of-async-functions}
 
@@ -362,7 +398,7 @@ Om zijn het werken te zien, laten wij een knoop toevoegen en een regel voor de k
 
 ![regel maken voor asynchrone functie](/help/forms/assets/rule-for-async-funct.png)
 
-Verwijs naar de illustratie van het consolevenster hieronder om aan te tonen dat wanneer de gebruiker klikt `Fetch` knop, de aangepaste functie `callAsyncFunction` wordt aangeroepen, die op zijn beurt een asynchrone functie aanroept `asyncFunction`. Inspect het consolevenster om de reactie op de knoop te bekijken klikt:
+Verwijs naar de illustratie van het consolevenster hieronder om aan te tonen dat wanneer de gebruiker klikt `Fetch` knop, de aangepaste functie `callAsyncFunction` wordt aangeroepen, die op zijn beurt een asynchrone functie aanroept `asyncFunction`. Inspect het consolevenster om de reactie op de knoop te bekijken klik:
 
 ![Console-venster](/help/forms/assets/async-custom-funct-console.png)
 
@@ -402,11 +438,11 @@ Veldobjecten verwijzen naar de afzonderlijke componenten of elementen in een for
 
 In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
-Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken met behulp van een `Contact Us` formulier met verschillende gebruiksmogelijkheden.
+Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken met behulp van een `Contact Us` formulier met verschillende gebruiksgevallen.
 
 ![Contactformulier](/help/forms/assets/contact-us-form.png)
 
-#### **Hoofdletters gebruiken**: Een deelvenster tonen met de opdracht `SetProperty` regel
++++ **Hoofdletters gebruiken**: Een deelvenster tonen met de opdracht `SetProperty` regel
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) in, om het formulierveld in te stellen als `Required`.
 
@@ -448,7 +484,9 @@ Als er fouten voorkomen in de velden van het `personaldetails` worden deze weerg
 
 ![Voorvertoning van eigenschappenformulier instellen](/help/forms/assets/set-property-panel.png)
 
-#### **Hoofdletters gebruiken**: Valideer het veld.
++++
+
++++ **Hoofdletters gebruiken**: Valideer het veld.
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) te valideren.
 
@@ -487,7 +525,9 @@ Als de gebruiker een geldig telefoonnummer en alle velden in het dialoogvenster 
 
 ![Validatiepatroon e-mailadres](/help/forms/assets/validate-form-preview-form.png)
 
-#### **Hoofdletters gebruiken**: Een deelvenster opnieuw instellen
++++
+
++++ **Hoofdletters gebruiken**: Een deelvenster opnieuw instellen
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) om het deelvenster opnieuw in te stellen.
 
@@ -519,16 +559,18 @@ Zie de onderstaande afbeelding om aan te geven dat als de gebruiker op de knop `
 
 ![Formulier opnieuw instellen](/help/forms/assets/custom-function-reset-form.png)
 
-#### **Hoofdletters gebruiken**: Een aangepast bericht weergeven op veldniveau en het veld markeren als ongeldig
++++
+
++++ **Hoofdletters gebruiken**: Een aangepast bericht weergeven op veldniveau en het veld markeren als ongeldig
 
 U kunt de `markFieldAsInvalid()` gebruiken om een veld als ongeldig te definiëren en een aangepast foutbericht op veldniveau in te stellen. De `fieldIdentifier` waarde kan `fieldId`, of `field qualifiedName`, of `field dataRef`. De waarde van het genoemde object `option` kan `{useId: true}`, `{useQualifiedName: true}`, of `{useDataRef: true}`.
-De syntaxis die wordt gebruikt om het veld als ongeldig te markeren en een aangepast bericht in te stellen, is:
+De syntaxis die wordt gebruikt om een veld als ongeldig te markeren en een aangepast bericht in te stellen is:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) om aangepaste berichten op veldniveau in te schakelen.
+Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) om een aangepast bericht in te schakelen op veldniveau.
 
 ```javascript
     /**
@@ -560,8 +602,9 @@ Als de gebruiker meer dan 15 tekens in het tekstvak Opmerkingen invoert, wordt h
 
 ![Veld markeren als geldig voorbeeldformulier](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-#### **Hoofdletters gebruiken**: Verzenden van gewijzigde gegevens naar de server
++++ **Hoofdletters gebruiken**: Verzenden van gewijzigde gegevens naar de server
 
 De volgende regel code:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wordt gebruikt om de formuliergegevens te verzenden na manipulatie.
@@ -604,6 +647,262 @@ U kunt het consolevenster ook inspecteren om de gegevens te bekijken die aan de 
 
 ![Inspect-gegevens in het consolevenster](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
+
++++ **Hoofdletters gebruiken**: Vervang het succes van het verzenden van formulieren en fouthandlers
+
+Voeg de volgende coderegel toe, zoals wordt uitgelegd in het dialoogvenster [create-custom-function](#create-custom-function) om het verzenden of mislukken van een formulier voor verzending aan te passen en de berichten voor het verzenden van het formulier in een modaal vak weer te geven:
+
+```javascript
+/**
+ * Handles the success response after a form submission.
+ *
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitSuccessHandler(globals) {
+    var event = globals.event;
+    var submitSuccessResponse = event.payload.body;
+    var form = globals.form;
+
+    if (submitSuccessResponse) {
+        if (submitSuccessResponse.redirectUrl) {
+            window.location.href = encodeURI(submitSuccessResponse.redirectUrl);
+        } else if (submitSuccessResponse.thankYouMessage) {
+            showModal("success", submitSuccessResponse.thankYouMessage);
+        }
+    }
+}
+
+/**
+ * Handles the error response after a form submission.
+ *
+ * @param {string} customSubmitErrorMessage - The custom error message.
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitErrorHandler(customSubmitErrorMessage, globals) {
+    showModal("error", customSubmitErrorMessage);
+}
+function showModal(type, message) {
+    // Remove any existing modals
+    var existingModal = document.getElementById("modal");
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create the modal dialog
+    var modal = document.createElement("div");
+    modal.setAttribute("id", "modal");
+    modal.setAttribute("class", "modal");
+
+    // Create the modal content
+    var modalContent = document.createElement("div");
+    modalContent.setAttribute("class", "modal-content");
+
+    // Create the modal header
+    var modalHeader = document.createElement("div");
+    modalHeader.setAttribute("class", "modal-header");
+    modalHeader.innerHTML = "<h2>" + (type === "success" ? "Thank You" : "Error") + "</h2>";
+
+    // Create the modal body
+    var modalBody = document.createElement("div");
+    modalBody.setAttribute("class", "modal-body");
+    modalBody.innerHTML = "<p class='" + type + "-message'>" + message + "</p>";
+
+    // Create the modal footer
+    var modalFooter = document.createElement("div");
+    modalFooter.setAttribute("class", "modal-footer");
+
+    // Create the close button
+    var closeButton = document.createElement("button");
+    closeButton.setAttribute("class", "close-button");
+    closeButton.innerHTML = "Close";
+    closeButton.onclick = function() {
+        modal.remove();
+    };
+
+    // Append the elements to the modal content
+    modalFooter.appendChild(closeButton);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    modalContent.appendChild(modalFooter);
+
+    // Append the modal content to the modal
+    modal.appendChild(modalContent);
+
+    // Append the modal to the document body
+    document.body.appendChild(modal);
+}
+```
+
+In dit voorbeeld wanneer de gebruiker de opdracht `customSubmitSuccessHandler` en `customSubmitErrorHandler` de douanefuncties, de succes en mislukkingsberichten worden getoond in modaal. De JavaScript-functie `showModal(type, message)` wordt gebruikt om dynamisch een modaal dialoogvenster op het scherm te maken en weer te geven.
+
+Maak nu een regel voor het succesvol verzenden van formulieren:
+
+![Formulierverzending geslaagd](/help/forms/assets/form-submission-success.png)
+
+Raadpleeg de onderstaande illustratie om aan te tonen dat wanneer het formulier is verzonden, het succesbericht wordt weergegeven in een modaal formulier:
+
+![Bericht met succes bij verzenden van formulier](/help/forms/assets/form-submission-success-message.png)
+
+Laten we ook een regel maken voor mislukte formulierverzendingen:
+
+![Formulierverzending mislukt](/help/forms/assets/form-submission-fail.png)
+
+Raadpleeg de onderstaande afbeelding om aan te tonen dat wanneer het verzenden van het formulier mislukt, het foutbericht wordt weergegeven in een modaal:
+
+![Bericht van mislukte verzending van formulier](/help/forms/assets/form-submission-fail-message.png)
+
+Als u het voltooien en mislukken van het verzenden van formulieren standaard wilt weergeven, `Default submit Form Success Handler` en `Default submit Form Error Handler` functies zijn beschikbaar in het vak.
+
+Als de aangepaste verzender niet kan uitvoeren zoals wordt verwacht in bestaande AEM Projecten of formulieren, raadpleegt u [problemen oplossen](#troubleshooting) sectie.
+
+<!--
+
++++
+
++++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+
+Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+
+Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+
+Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+
+```javascript
+
+/**
+* @name hidePanelInRepeatablePanel
+* @param {scope} globals
+*/
+function hidePanelInRepeatablePanel(globals)
+{    
+    var repeatablePanel = globals.form.travelerinfo;
+    // hides a panel inside second instance of repeatable panel
+    globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
+}  
+
+```
+ 
+In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
+Let us add a button labeled `Hide` to add a rule to hide a specific panel.
+
+![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
+
+Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
+
+
++++
+
++++ **Usecase**: Pre-fill the field with a value when the form loads
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
+
+```javascript
+/**
+ * @name importData
+ * @param {scope} globals
+ */
+function importData(globals)
+{
+    globals.functions.importData(Object.fromEntries([['amount',200000]]));
+} 
+```
+
+In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+
+Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+
+![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+
+Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+
+![Import Data Rule](/help/forms/assets/cg)
+
++++
+
++++ **Usecase**: Set focus on the specific field
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
+
+```javascript
+/**
+ * @name setFocus
+ * @param {object} field
+ * @param {scope} globals
+ */
+function setFocus(field, globals)
+{
+    globals.functions.setFocus(field);
+}
+```
+
+Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
+
+Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+
++++
+
++++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+/**
+ 
+ * @name addInstance
+ * @param {scope} globals
+ */
+function addInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+} 
+
+```
+
+Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+
+![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+
+![Add Panel](/help/forms/assets/customg)
+
+Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+
+/**
+ 
+ * @name removeInstance
+ * @param {scope} globals
+ */
+function removeInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
+} 
+
+```
+Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
+
+![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+
+![Delete Panel](/help/forms/assets/customg)
+-->
+
 ## Ondersteuning voor caching van aangepaste functies
 
 De adaptieve Forms voert caching voor douanefuncties uit om reactietijd te verbeteren terwijl het terugwinnen van de lijst van de douanefunctie in de regelredacteur. Een bericht als `Fetched following custom functions list from cache` in het dialoogvenster `error.log` bestand.
@@ -612,15 +911,23 @@ De adaptieve Forms voert caching voor douanefuncties uit om reactietijd te verbe
 
 Als de aangepaste functies worden gewijzigd, wordt het in cache plaatsen ongeldig en wordt het geparseerd.
 
-## Problemen oplossen
+## Problemen oplossen {#troubleshooting}
 
-Als het JavaScript-bestand met code voor aangepaste functies een fout bevat, worden de aangepaste functies niet vermeld in de regeleditor van een adaptief formulier. Als u de lijst met aangepaste functies wilt controleren, navigeert u naar de `error.log` bestand voor de fout. In het geval van een fout wordt de lijst met aangepaste functies leeg weergegeven:
+* Als de manager van de douanevoorlegging niet zoals verwacht in bestaande AEM Projecten of vormen uitvoert, voer de volgende stappen uit:
+   * Zorg ervoor dat de [kerncomponentenversie wordt bijgewerkt naar 3.0.18 en hoger](https://github.com/adobe/aem-core-forms-components). Voor bestaande AEM projecten en formulieren moeten echter aanvullende stappen worden ondernomen:
 
-![foutenlogbestand](/help/forms/assets/custom-function-list-error-file.png)
+   * Voor het AEM project moet de gebruiker alle instanties van `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` en implementeer het project via de Cloud Manager-pijplijn.
 
-Als er geen fout optreedt, wordt de aangepaste functie opgehaald en weergegeven in het dialoogvenster `error.log` bestand. Een bericht als `Fetched following custom functions list` in het dialoogvenster `error.log` bestand:
+   * Voor bestaande formulieren moet de gebruiker, als de aangepaste verzendingsafhandelingen niet correct werken, de `submitForm` de regels inzake **Verzenden** gebruiken van de Redacteur van de Regel. Deze handeling vervangt de bestaande regel door `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` in het formulier.
 
-![foutenlogbestand met juiste aangepaste functie](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+* Als het JavaScript-bestand met code voor aangepaste functies een fout bevat, worden de aangepaste functies niet vermeld in de regeleditor van een adaptief formulier. Als u de lijst met aangepaste functies wilt controleren, navigeert u naar de `error.log` bestand voor de fout. In het geval van een fout wordt de lijst met aangepaste functies leeg weergegeven:
+
+  ![foutenlogbestand](/help/forms/assets/custom-function-list-error-file.png)
+
+  Als er geen fout optreedt, wordt de aangepaste functie opgehaald en weergegeven in het dialoogvenster `error.log` bestand. Een bericht als `Fetched following custom functions list` in het dialoogvenster `error.log` bestand:
+
+  ![foutenlogbestand met juiste aangepaste functie](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## Overwegingen
 

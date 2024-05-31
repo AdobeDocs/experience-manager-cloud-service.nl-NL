@@ -3,9 +3,9 @@ title: Huidige functies voor vroege adoptie van [!DNL Adobe Experience Manager F
 description: Huidige functies voor vroege adoptie van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,7 @@ Het AEM Forms Early Introducter-programma biedt u een unieke kans om exclusieve 
 
 ## Hoe kan ik deelnemen aan het programma voor vroege adoptie?
 
-Als u geïnteresseerd bent in deelname aan ons programma voor vroege adopters voor innovaties op het gebied van vroege adopters, stuurt u gewoon een e-mail van uw officiële adres naar `aem-forms-ea@adobe.com` om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
-
+Als u geïnteresseerd bent in deelname aan ons programma voor vroege adopters voor innovaties op het gebied van vroege adopters, stuurt u gewoon een e-mail van uw officiële adres naar [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
 ## Innovaties voor vroege adoptie
 
@@ -154,6 +153,15 @@ Hier volgt een overzicht van wat Doc Assurance API&#39;s kunnen doen:
 Algemeen [Doc Assurance-API&#39;s](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u de beveiliging en compatibiliteit van documenten te verbeteren door een extra controlelaag toe te voegen.
 
 
+### Forms Service-API&#39;s
+
+Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Deze kan ook worden gebruikt om gegevens te importeren/exporteren naar/van een bestaand interactief PDF-formulier en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
+
+* **Forms renderen**: Genereer een interactief PDF-formulier op basis van een sjabloon die is gemaakt met AEM Forms Designer en eventueel XML-gegevens. Hiermee wordt in feite een optioneel vooraf ingevuld formulier met PDF gemaakt.
+
+* **Gegevens extraheren en importeren**: Importeer gegevens in een bestaand PDF-formulier en extraheer gegevens uit een ingevuld PDF-formulier. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
+
+* **Gegevensvalidatie**: - Valideer verzonden gegevens in XDP- of XML-indeling op basis van een sjabloon die is gemaakt met AEM Forms Designer.
 
 ## Zie ook
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b13310c256fe06210b9c79023972c4e41a241f43
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '4970'
+source-wordcount: '4997'
 ht-degree: 3%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 3%
    + Opmerkingen bij de release AEMaaCS-functies {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Opmerkingen bij de release 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [Opmerkingen bij de release 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [Opmerkingen bij de release 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
@@ -664,6 +665,8 @@ ht-degree: 3%
             + [JSON-schema ontwerpen voor een adaptief formulier (kerncomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Versies, opmerkingen en annotaties toevoegen aan een adaptief formulier](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Adaptieve Forms vergelijken](/help/forms/compare-forms.md)
+            + [Adaptieve Forms op basis van basiscomponenten converteren naar Core-componentformulieren met migratiehulpprogramma](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [Een adaptief formulier opslaan als concept](/help/forms/save-core-component-based-form-as-draft.md)
       + Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + Uw PDF forms converteren naar Adaptieve Forms {#afcs}
             + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
