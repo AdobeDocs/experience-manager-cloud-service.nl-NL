@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
+source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
 workflow-type: tm+mt
-source-wordcount: '3511'
+source-wordcount: '3499'
 ht-degree: 0%
 
 ---
@@ -443,7 +443,7 @@ Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken met b
 
 ![Contactformulier](/help/forms/assets/contact-us-form.png)
 
-#### Hoofdlettergebruik: een deelvenster weergeven met de regel SetProperty
+#### Een deelvenster tonen met de regel SetProperty
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) in, om het formulierveld in te stellen als `Required`.
 
@@ -486,7 +486,7 @@ Als er fouten voorkomen in de velden van het `personaldetails` worden deze weerg
 ![Voorvertoning van eigenschappenformulier instellen](/help/forms/assets/set-property-panel.png)
 
 
-#### Hoofdlettergebruik: valideer het veld.
+#### Valideer een veld.
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) te valideren.
 
@@ -527,7 +527,7 @@ Als de gebruiker een geldig telefoonnummer en alle velden in het dialoogvenster 
 
 
 
-#### Hoofdlettergebruik: een deelvenster opnieuw instellen
+#### Een deelvenster opnieuw instellen
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) om het deelvenster opnieuw in te stellen.
 
@@ -561,7 +561,7 @@ Zie de onderstaande afbeelding om aan te geven dat als de gebruiker op de knop `
 
 
 
-#### Hoofdlettergebruik: een aangepast bericht weergeven op veldniveau en het veld als ongeldig markeren
+#### Een aangepast bericht weergeven op veldniveau en het veld markeren als ongeldig
 
 U kunt de `markFieldAsInvalid()` gebruiken om een veld als ongeldig te definiëren en een aangepast foutbericht op veldniveau in te stellen. De `fieldIdentifier` waarde kan `fieldId`, of `field qualifiedName`, of `field dataRef`. De waarde van het genoemde object `option` kan `{useId: true}`, `{useQualifiedName: true}`, of `{useDataRef: true}`.
 De syntaxis die wordt gebruikt om een veld als ongeldig te markeren en een aangepast bericht in te stellen is:
@@ -604,7 +604,7 @@ Als de gebruiker meer dan 15 tekens in het tekstvak Opmerkingen invoert, wordt h
 
 
 
-#### Hoofdlettergebruik: gewijzigde gegevens naar de server verzenden
+#### Vastgelegde gegevens wijzigen voordat deze worden verzonden
 
 De volgende regel code:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wordt gebruikt om de formuliergegevens te verzenden na manipulatie.
@@ -649,7 +649,7 @@ U kunt het consolevenster ook inspecteren om de gegevens te bekijken die aan de 
 
 
 
-#### Hoofdletters/kleine letters gebruiken: succes bij het verzenden van formulieren en foutafhandeling negeren
+#### Voltooien van verzenden van formulieren en foutberichten negeren
 
 Voeg de volgende coderegel toe, zoals wordt uitgelegd in het dialoogvenster [create-custom-function](#create-custom-function) om het verzenden of mislukken van een formulier voor verzending aan te passen en de berichten voor het verzenden van het formulier in een modaal vak weer te geven:
 
