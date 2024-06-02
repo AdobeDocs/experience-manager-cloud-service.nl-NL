@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
 workflow-type: tm+mt
 source-wordcount: '3510'
 ht-degree: 0%
@@ -442,7 +442,7 @@ Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken met b
 
 ![Contactformulier](/help/forms/assets/contact-us-form.png)
 
-+++ **Hoofdletters gebruiken**: Een deelvenster tonen met de opdracht `SetProperty` regel
++++ Hoofdlettergebruik: een deelvenster tonen met de opdracht `SetProperty` regel
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) in, om het formulierveld in te stellen als `Required`.
 
@@ -484,9 +484,8 @@ Als er fouten voorkomen in de velden van het `personaldetails` worden deze weerg
 
 ![Voorvertoning van eigenschappenformulier instellen](/help/forms/assets/set-property-panel.png)
 
-+++
 
-+++ **Hoofdletters gebruiken**: Valideer het veld.
+#### Hoofdlettergebruik: valideer het veld.
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) te valideren.
 
@@ -525,9 +524,9 @@ Als de gebruiker een geldig telefoonnummer en alle velden in het dialoogvenster 
 
 ![Validatiepatroon e-mailadres](/help/forms/assets/validate-form-preview-form.png)
 
-+++
 
-+++ **Hoofdletters gebruiken**: Een deelvenster opnieuw instellen
+
+#### Hoofdlettergebruik: een deelvenster opnieuw instellen
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) om het deelvenster opnieuw in te stellen.
 
@@ -559,9 +558,9 @@ Zie de onderstaande afbeelding om aan te geven dat als de gebruiker op de knop `
 
 ![Formulier opnieuw instellen](/help/forms/assets/custom-function-reset-form.png)
 
-+++
 
-+++ **Hoofdletters gebruiken**: Een aangepast bericht weergeven op veldniveau en het veld markeren als ongeldig
+
+#### Hoofdlettergebruik: een aangepast bericht weergeven op veldniveau en het veld als ongeldig markeren
 
 U kunt de `markFieldAsInvalid()` gebruiken om een veld als ongeldig te definiëren en een aangepast foutbericht op veldniveau in te stellen. De `fieldIdentifier` waarde kan `fieldId`, of `field qualifiedName`, of `field dataRef`. De waarde van het genoemde object `option` kan `{useId: true}`, `{useQualifiedName: true}`, of `{useDataRef: true}`.
 De syntaxis die wordt gebruikt om een veld als ongeldig te markeren en een aangepast bericht in te stellen is:
@@ -602,9 +601,9 @@ Als de gebruiker meer dan 15 tekens in het tekstvak Opmerkingen invoert, wordt h
 
 ![Veld markeren als geldig voorbeeldformulier](/help/forms/assets/custom-function-validfield-form.png)
 
-+++
 
-+++ **Hoofdletters gebruiken**: Verzenden van gewijzigde gegevens naar de server
+
+#### Hoofdlettergebruik: gewijzigde gegevens naar de server verzenden
 
 De volgende regel code:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wordt gebruikt om de formuliergegevens te verzenden na manipulatie.
@@ -647,9 +646,9 @@ U kunt het consolevenster ook inspecteren om de gegevens te bekijken die aan de 
 
 ![Inspect-gegevens in het consolevenster](/help/forms/assets/custom-function-submit-data-console-data.png)
 
-+++
 
-+++ **Hoofdletters gebruiken**: Vervang het succes van het verzenden van formulieren en fouthandlers
+
+#### Hoofdletters/kleine letters gebruiken: succes bij het verzenden van formulieren en foutafhandeling negeren
 
 Voeg de volgende coderegel toe, zoals wordt uitgelegd in het dialoogvenster [create-custom-function](#create-custom-function) om het verzenden of mislukken van een formulier voor verzending aan te passen en de berichten voor het verzenden van het formulier in een modaal vak weer te geven:
 
@@ -760,9 +759,8 @@ Als de aangepaste verzender niet kan uitvoeren zoals wordt verwacht in bestaande
 
 <!--
 
-+++
 
-+++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+#### Use Case:  Perform actions in a specific instance of the repeatable panel 
 
 Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
 
@@ -793,9 +791,9 @@ Let us add a button labeled `Hide` to add a rule to hide a specific panel.
 Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
 
 
-+++
 
-+++ **Usecase**: Pre-fill the field with a value when the form loads
+
+#### **Usecase**: Pre-fill the field with a value when the form loads
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
 
@@ -820,9 +818,9 @@ Refer to the screenshot below, which demonstrates that when the form loads, the 
 
 ![Import Data Rule](/help/forms/assets/cg)
 
-+++
 
-+++ **Usecase**: Set focus on the specific field
+
+#### **Usecase**: Set focus on the specific field
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
 

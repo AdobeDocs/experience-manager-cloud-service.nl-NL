@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32d8477f85edf7fc33a0558e886c5fbb4854f8e5
+source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Met Experience Manager Assets kunt u nu snel [middelen publiceren naar Experienc
 
 Deze versie brengt een significante verbetering aan de visuele regelredacteur voor adaptieve vormen die op kerncomponenten worden gebaseerd. U kunt nu het volgende doen:
 
-* Creeer regels in de Visuele redacteur van de Regel aan [Standaardhandlers voor formulierverzending negeren/mislukken](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+* Creeer regels in de Visuele redacteur van de Regel aan [Standaardberichten voor het verzenden van formulieren negeren/mislukken](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * In de Adaptive Forms Rule Editor hebt u de mogelijkheid toegevoegd om [verschillende typen velden selecteren voor de WHEN-bewerking](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
-* Een formulierauteur kan nu aangepaste functies toepassen op [gegevens voorafgaand aan verzending](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+* Een formulierauteur kan nu aangepaste functies toepassen op [gegevens voorafgaand aan verzending](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server).
 
 * Gebruik de [**Opslaan als concept**](/help/forms/save-core-component-based-form-as-draft.md) om gedeeltelijk ingevulde formulieren op te slaan en later te verzenden. Dit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
 
@@ -211,12 +211,10 @@ Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten op die op een specifie
 
 De Adobe Beheerde CDN ondersteunt nu [Inclusief rand (ESI)](/help/implementing/dispatcher/edge-side-includes.md), een opmaaktaal voor dynamische webinhoud-verzameling op randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### Real User Monitoring (RUM) Data Service (Early Introducter Program)
+#### Real Use Monitoring (RUM) Data Service (Early Introducter Program)
 
-* **[U kunt gebruikmaken van de gegevensservice Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om client-side verzameling voor AEM as a Cloud Service in te schakelen.
-Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt geboden. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-beheerde CDN of niet-Adobe-beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
-
-  Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor elk van de omgevingen waarvoor u RUM wilt inschakelen vanaf uw e-mailadres dat is gekoppeld aan uw Adobe ID. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
+* **Real Use Monitoring (RUM) Data Service is nu GA(/help/implementing/cloud-manager/content-requests.md#real-use-monitoring-for-aem-as-a-cloud-service)** het toelaten van cliënt-zijinzameling van gegevens voor AEM as a Cloud Service.
+De Echte Dienst van de Controle van het Gebruik, de cliënt-zijinzameling, biedt een preciezere weerspiegeling van interactie aan, die een betrouwbare maat van websitebetrokkenheid verzekeren. Het laat klanten met geavanceerde inzichten in hun paginaverkeer en prestaties toe. Het is een geweldige kans om meer te weten te komen over de prestaties van uw pagina en meer inzicht te krijgen in de manier waarop u deze kunt verbeteren.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
