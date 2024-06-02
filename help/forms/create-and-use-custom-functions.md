@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: 05b149c60cb8d05489668b13f63ed5b0e1d0bbfb
 workflow-type: tm+mt
-source-wordcount: '3510'
+source-wordcount: '3511'
 ht-degree: 0%
 
 ---
@@ -442,7 +442,7 @@ Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken met b
 
 ![Contactformulier](/help/forms/assets/contact-us-form.png)
 
-+++ Hoofdlettergebruik: een deelvenster tonen met de opdracht `SetProperty` regel
+#### Hoofdlettergebruik: een deelvenster weergeven met de regel SetProperty
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) in, om het formulierveld in te stellen als `Required`.
 
