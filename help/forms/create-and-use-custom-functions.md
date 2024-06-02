@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
+source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3502'
 ht-degree: 0%
 
 ---
@@ -649,7 +649,7 @@ U kunt het consolevenster ook inspecteren om de gegevens te bekijken die aan de 
 
 
 
-#### Voltooien van verzenden van formulieren en foutberichten negeren
+#### Indienen van succesmeldingen en foutberichten voor het aangepaste formulier negeren
 
 Voeg de volgende coderegel toe, zoals wordt uitgelegd in het dialoogvenster [create-custom-function](#create-custom-function) om het verzenden of mislukken van een formulier voor verzending aan te passen en de berichten voor het verzenden van het formulier in een modaal vak weer te geven:
 
