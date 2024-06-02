@@ -2,9 +2,9 @@
 title: Native AEM Assets-integratie met Adobe Express
 description: Dankzij de native integratie van AEM Assets met Adobe Express hebt u rechtstreeks vanuit de gebruikersinterface van de Adobe Express toegang tot de elementen die in AEM Assets zijn opgeslagen.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 8bbf9a2ba8f708a5a03d11bc0388d39b32d4c7b3
+source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,15 @@ Voer de volgende stappen uit om AEM Assets te gaan gebruiken in de Adobe Express
 
 1. Open de Adobe Express webtoepassing.
 
-1. Open een nieuw leeg canvas door een nieuwe sjabloon of een project te laden of door een element te maken.
+2. Open een nieuw leeg canvas door een nieuwe sjabloon of een project te laden of door een element te maken.
 
-1. Klikken **[!UICONTROL Assets]** beschikbaar in het linkernavigatiegebied. Adobe Express geeft de lijst met opslagplaatsen weer die u mag openen, samen met de lijst met elementen en mappen die beschikbaar zijn op hoofdniveau.
+3. Klikken **[!UICONTROL Assets]** beschikbaar in het linkernavigatiegebied. Adobe Express geeft de lijst met opslagplaatsen weer die u mag openen, samen met de lijst met elementen en mappen die beschikbaar zijn op hoofdniveau.
 
-1. Blader door of zoek naar middelen in uw repository om ze naar het canvas te slepen. U kunt elementen filteren met behulp van verschillende beschikbare filters, zoals bestandstype, MIME-type en afmetingen.
+4. Blader door of zoek naar middelen in uw repository om ze naar het canvas te slepen. U kunt elementen filteren met behulp van verschillende beschikbare filters, zoals bestandstype, MIME-type en afmetingen.
+
+   >[!NOTE]
+   >
+   >Filteren op dimensie is niet van toepassing op video&#39;s.
 
    ![Elementen opnemen uit de invoegtoepassing Elementen](assets/adobe-express-native-integration.png)
 
@@ -45,23 +49,38 @@ Nadat u de juiste wijzigingen hebt aangebracht in het Express-canvas, kunt u het
 
    ![Elementen opslaan in AEM](assets/adobe-express-share.png)
 
-1. Selecteren **[!UICONTROL AEM Assets]** van de **[!UICONTROL Storage]** in het rechterdeelvenster. Met Adobe Express wordt het dialoogvenster voor uploaden weergegeven.
-1. Geef een naam en indeling voor het element op. U kunt de inhoud van het canvas opslaan in de indeling PNG of JPEG.
+2. Selecteer in het gedeelte Opslag in het rechterdeelvenster de optie **AEM Assets**. Met Adobe Express wordt het dialoogvenster voor uploaden weergegeven.
+3. Geef een naam en indeling voor het element op. U kunt de inhoud van het canvas opslaan in de indelingen PNG, JPEG, PDF, MP4, MP4+PNG of MP4+JPEG. De indeling wordt automatisch aangepast op basis van de elementen.
 
-1. Klik op het mappictogram naast de knop **[!UICONTROL Location]** , navigeer naar de locatie waar u het element wilt opslaan en klik op **[!UICONTROL Select]**. De naam van de map wordt weergegeven in de **[!UICONTROL Location]** veld.
+   >[!NOTE]
+   >
+   >Als u &quot;Huidige pagina&quot; selecteert, wordt het bestand in de doelmap opgeslagen. Als u &quot;Alle pagina&#39;s&quot; selecteert, wordt er een nieuwe map op uw bestemming gemaakt voor alle niet-PDF bestanden en worden deze daar opgeslagen terwijl PDF-bestanden als één bestand in de doelmap worden opgeslagen.
 
-   ![Elementen opslaan in AEM](assets/adobe-express-upload.png)
+4. Klik in het tekstgebied onder **Doelmap** om een locatie te selecteren en de elementen op te slaan.
 
-1. Optioneel: u kunt campagnemetagegevens voor uploaden toevoegen met de opdracht **[!UICONTROL Project or campaign name]** veld. U kunt een bestaande naam gebruiken of een nieuwe naam maken. U kunt meerdere project- of campagnenamen definiëren voor het uploaden. Terwijl u een naam typt, klikt u ergens anders in het dialoogvenster of drukt u op de knop `,` (Komma) om de naam te registreren.
+   ![Elementen opslaan in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
 
-   Als beste praktijken, beveelt de Adobe het specificeren van waarden in de rest gebieden evenals het leidt tot een verbeterde onderzoekservaring voor uw geupload activa.
-1. Definieer op dezelfde manier waarden voor de **[!UICONTROL Keywords]** en **[!UICONTROL Channels]** velden.
+5. Optioneel: u kunt campagnemetagegevens voor uploaden toevoegen met de opdracht **Naam van project of campagne** veld. U kunt een bestaande naam gebruiken of een nieuwe naam maken. U kunt meerdere project- of campagnenamen definiëren voor het uploaden. Als u de naam wilt registreren, typt u gewoon de naam en klikt u op Enter.
+Als beste praktijken, beveelt de Adobe het specificeren van waarden in de rest gebieden evenals het leidt tot een verbeterde onderzoekservaring voor uw geupload activa.
 
-1. Klikken **[!UICONTROL Upload]** om het middel te uploaden naar AEM Assets.
+6. Definieer op dezelfde manier waarden voor de **[!UICONTROL Keywords]** en **[!UICONTROL Channels]** velden.
+
+7. Klikken **[!UICONTROL Upload]** om het middel te uploaden naar AEM Assets.
 
 
 
 
 ## Beperkingen {#limitations}
 
-Er is een bekende fout opgetreden bij sommige gebruikers die toegang hebben tot meer dan één opslagplaats voor middelen wanneer ze een document opslaan met elementen van meerdere opslagplaatsen.
+1. Voor het importeren en exporteren is MP4 het ondersteunde videobestandstype.
+
+2. Voor het importeren van MP4-video:
+
+   a) De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt een waarschuwingsbericht weergegeven.
+b) De maximale ondersteunde resolutie is 3840 x 3840 pixels.
+c) Video&#39;s met transparante achtergronden (alfakanaal) worden niet ondersteund.
+
+3. Voor het exporteren van MP4-video:
+
+   a) De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt een waarschuwingsbericht weergegeven met een rondwerkend suggestie, zoals weergegeven in onderstaande afbeelding
+   ![waarschuwing met tijdelijke oplossing](/help/assets/assets/alert-with-workaround.png).
