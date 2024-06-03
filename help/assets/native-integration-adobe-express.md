@@ -2,9 +2,9 @@
 title: Native AEM Assets-integratie met Adobe Express
 description: Dankzij de native integratie van AEM Assets met Adobe Express hebt u rechtstreeks vanuit de gebruikersinterface van de Adobe Express toegang tot de elementen die in AEM Assets zijn opgeslagen.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
+source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -50,25 +50,18 @@ Nadat u de juiste wijzigingen hebt aangebracht in het Express-canvas, kunt u het
    ![Elementen opslaan in AEM](assets/adobe-express-share.png)
 
 2. Selecteer in het gedeelte Opslag in het rechterdeelvenster de optie **AEM Assets**. Met Adobe Express wordt het dialoogvenster voor uploaden weergegeven.
-3. Geef een naam en indeling voor het element op. U kunt de inhoud van het canvas opslaan in de indelingen PNG, JPEG, PDF, MP4, MP4+PNG of MP4+JPEG. De indeling wordt automatisch aangepast op basis van de elementen.
-
-   >[!NOTE]
-   >
-   >Als u &quot;Huidige pagina&quot; selecteert, wordt het bestand in de doelmap opgeslagen. Als u &quot;Alle pagina&#39;s&quot; selecteert, wordt er een nieuwe map op uw bestemming gemaakt voor alle niet-PDF bestanden en worden deze daar opgeslagen terwijl PDF-bestanden als één bestand in de doelmap worden opgeslagen.
-
-4. Klik in het tekstgebied onder **Doelmap** om een locatie te selecteren en de elementen op te slaan.
+3. Selecteer een van de **Huidige pagina** of **Alle pagina&#39;s** opslaan. Selecteren **Huidige pagina** Hiermee slaat u het bestand op in de doelmap, maar u selecteert **Alle pagina&#39;s** maakt een nieuwe map in uw bestemming voor alle niet-PDF-bestanden en slaat deze als aparte bestanden op terwijl PDF-bestanden als één bestand in de doelmap worden opgeslagen.
+4. Geef een naam en indeling voor het element op. U kunt de inhoud van het canvas opslaan in de indelingen PNG, JPEG, PDF, MP4, MP4+PNG of MP4+JPEG. De indeling wordt automatisch aangepast op basis van de elementen.
+5. Klik onder op het mappictogram **Doelmap** om een locatie te selecteren en de elementen op te slaan.
 
    ![Elementen opslaan in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. Optioneel: u kunt campagnemetagegevens voor uploaden toevoegen met de opdracht **Naam van project of campagne** veld. U kunt een bestaande naam gebruiken of een nieuwe naam maken. U kunt meerdere project- of campagnenamen definiëren voor het uploaden. Als u de naam wilt registreren, typt u gewoon de naam en klikt u op Enter.
-Als beste praktijken, beveelt de Adobe het specificeren van waarden in de rest gebieden evenals het leidt tot een verbeterde onderzoekservaring voor uw geupload activa.
+6. Optioneel: u kunt campagnemetagegevens voor uploaden toevoegen met de opdracht **Naam van project of campagne** veld. U kunt een bestaande naam gebruiken of een nieuwe naam maken. U kunt meerdere project- of campagnenamen definiëren voor het uploaden. Als u de naam wilt registreren, typt u gewoon de naam en klikt u op Enter.
+Als beste praktijken, beveelt de Adobe het specificeren van waarden in de rest gebieden evenals het creëren van een verbeterde onderzoekservaring voor uw geupload activa aan.
 
-6. Definieer op dezelfde manier waarden voor de **[!UICONTROL Keywords]** en **[!UICONTROL Channels]** velden.
+7. Definieer op dezelfde manier waarden voor de **[!UICONTROL Keywords]** en **[!UICONTROL Channels]** velden.
 
-7. Klikken **[!UICONTROL Upload]** om de middelen naar AEM Assets te uploaden.
-
-
-
+8. Klikken **[!UICONTROL Upload]** om de middelen naar AEM Assets te uploaden.
 
 ## Beperkingen {#limitations}
 
@@ -76,11 +69,13 @@ Als beste praktijken, beveelt de Adobe het specificeren van waarden in de rest g
 
 2. Voor het importeren van MP4-video:
 
-   a) De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt een waarschuwingsbericht weergegeven.
-b) De maximale ondersteunde resolutie is 3840 x 3840 pixels.
-c) Video&#39;s met transparante achtergronden (alfakanaal) worden niet ondersteund.
+   1. De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt een waarschuwingsbericht weergegeven.
+   2. De maximale ondersteunde resolutie is 3840 x 3840 pixels.
+   3. Video&#39;s met transparante achtergronden (alfakanaal) worden niet ondersteund.
 
 3. Voor het exporteren van MP4-video:
 
-   a) De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt een waarschuwingsbericht weergegeven met een rondwerkend suggestie, zoals in de onderstaande afbeelding wordt getoond.
-   ![waarschuwing met tijdelijke oplossing](/help/assets/assets/alert-with-workaround.png)
+   1. De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt in een waarschuwing aanbevolen de video te verkleinen tot 200 MB of minder, of deze handmatig te uploaden naar de AEM Assets-doelmap nadat deze is gedownload.
+
+
+
