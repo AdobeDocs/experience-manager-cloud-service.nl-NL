@@ -2,9 +2,9 @@
 title: Native AEM Assets-integratie met Adobe Express
 description: Dankzij de native integratie van AEM Assets met Adobe Express hebt u rechtstreeks vanuit de gebruikersinterface van de Adobe Express toegang tot de elementen die in AEM Assets zijn opgeslagen.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
+source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Als beste praktijken, beveelt de Adobe het specificeren van waarden in de rest g
 
 6. Definieer op dezelfde manier waarden voor de **[!UICONTROL Keywords]** en **[!UICONTROL Channels]** velden.
 
-7. Klikken **[!UICONTROL Upload]** om het middel te uploaden naar AEM Assets.
+7. Klikken **[!UICONTROL Upload]** om de middelen naar AEM Assets te uploaden.
 
 
 
