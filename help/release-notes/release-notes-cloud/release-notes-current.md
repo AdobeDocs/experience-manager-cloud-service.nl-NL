@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f8fc51051393ef154e02391843fe1e73e6194e6f
+source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1763'
 ht-degree: 0%
 
 ---
@@ -213,10 +213,8 @@ De Adobe Beheerde CDN ondersteunt nu [Inclusief rand (ESI)](/help/implementing/d
 
 #### Real User Monitoring (RUM) Data Service (Early Introducter Program)
 
-* **[U kunt gebruikmaken van de gegevensservice Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om client-side verzameling voor AEM as a Cloud Service in te schakelen.
-Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt geboden. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-beheerde CDN of niet-Adobe-beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
-
-  Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor elk van de omgevingen waarvoor u RUM wilt inschakelen vanaf uw e-mailadres dat is gekoppeld aan uw Adobe ID. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
+* **[Real Use Monitoring (RUM) Data Service is nu GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** het toelaten van cliënt-zijinzameling van gegevens voor AEM as a Cloud Service.
+De Echte Dienst van de Controle van het Gebruik, de cliënt-zijinzameling, biedt een preciezere weerspiegeling van interactie aan, die een betrouwbare maat van websitebetrokkenheid verzekeren. Het laat klanten met geavanceerde inzichten in hun paginaverkeer en prestaties toe. Het is een geweldige kans om meer te weten te komen over de prestaties van uw pagina en meer inzicht te krijgen in de manier waarop u deze kunt verbeteren.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
