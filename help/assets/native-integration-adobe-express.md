@@ -2,7 +2,7 @@
 title: Native AEM Assets-integratie met Adobe Express
 description: Dankzij de native integratie van AEM Assets met Adobe Express hebt u rechtstreeks vanuit de gebruikersinterface van de Adobe Express toegang tot de elementen die in AEM Assets zijn opgeslagen.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Nadat u de juiste wijzigingen hebt aangebracht in het Express-canvas, kunt u het
 
 4. Klik in het tekstgebied onder **Doelmap** om een locatie te selecteren en de elementen op te slaan.
 
-   ![Elementen opslaan in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![Elementen opslaan in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. Optioneel: u kunt campagnemetagegevens voor uploaden toevoegen met de opdracht **Naam van project of campagne** veld. U kunt een bestaande naam gebruiken of een nieuwe naam maken. U kunt meerdere project- of campagnenamen definiëren voor het uploaden. Als u de naam wilt registreren, typt u gewoon de naam en klikt u op Enter.
 Als beste praktijken, beveelt de Adobe het specificeren van waarden in de rest gebieden evenals het leidt tot een verbeterde onderzoekservaring voor uw geupload activa.
@@ -82,5 +82,5 @@ c) Video&#39;s met transparante achtergronden (alfakanaal) worden niet ondersteu
 
 3. Voor het exporteren van MP4-video:
 
-   a) De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt een waarschuwingsbericht weergegeven met een rondwerkend suggestie, zoals weergegeven in onderstaande afbeelding
-   ![waarschuwing met tijdelijke oplossing](/help/assets/assets/alert-with-workaround.png).
+   a) De maximale ondersteunde bestandsgrootte is 200 MB. Als deze limiet wordt overschreden, wordt een waarschuwingsbericht weergegeven met een rondwerkend suggestie, zoals in de onderstaande afbeelding wordt getoond.
+   ![waarschuwing met tijdelijke oplossing](/help/assets/assets/alert-with-workaround.png)
