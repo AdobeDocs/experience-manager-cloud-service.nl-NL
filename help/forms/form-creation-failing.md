@@ -3,14 +3,14 @@ title: Hoe kan ik fouten bij het maken van formulieren oplossen?
 description: Problemen met het maken van formulieren in de as a Cloud Service AEM Forms-omgeving oplossen.
 feature: Adaptive Forms, Troubleshooting
 role: User
-source-git-commit: 5e7cd7015d68cc634fcf6a99dd552289abbaedcf
+source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-# Probleem {#form-creation-fails}
+# Probleem tijdens het publiceren van formulieren{#form-creation-fails}
 
 Nadat gebruikers de as a Cloud Service versie van AEM Forms hebben bijgewerkt `2024.5.16461`:
 
