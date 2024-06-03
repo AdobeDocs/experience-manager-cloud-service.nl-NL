@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 64704592c663c0287505d3a8a8e92781d1702497
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -147,31 +147,31 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Video-indelingen {#video-formats}
 
-| Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte | Voorvertoning |
-| ----------- | -------------------- | ------------------- | ------------ | ------- |
-| 3G2 | - | ✓ | - | - |
-| 3GP | - | ✓ | - | - |
-| AVI | ✓ | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ | ✓ |
-| F4V | ✓ | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ | ✓ |
-| M2TS | ✓ | - | ✓ | ✓ |
-| M2V | ✓ | - | ✓ | ✓ |
-| M4V | ✓ | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ | ✓ |
-| MOV | ✓ | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ | ✓ |
-| MXF | ✓ | - | ✓ | ✓ |
-| OGV | ✓ | - | ✓ | ✓ |
-| QT | ✓ | - | ✓ | ✓ |
-| R3D | - | ✓ | ✓ | ✓ |
-| SWF | ✓ | - | ✓ | ✓ |
-| WebM | ✓ | - | ✓ | ✓ |
-| WMV | ✓ | ✓ | ✓ | ✓ |
+| Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte | Voorvertoning | Uitvoer |
+| ----------- | -------------------- | ------------------- | ------------ | ------- | ------- |
+| 3G2 | - | ✓ | - | - | - |
+| 3GP | - | ✓ | - | - | - |
+| AVI | ✓ | ✓ | ✓ | ✓ | - |
+| DIVX | ✓ | - | ✓ | ✓ | - |
+| F4V | ✓ | ✓ | ✓ | ✓ | - |
+| FLV | ✓ | ✓ | ✓ | ✓ | - |
+| M2T | ✓ | - | ✓ | ✓ | - |
+| M2TS | ✓ | - | ✓ | ✓ | - |
+| M2V | ✓ | - | ✓ | ✓ | - |
+| M4V | ✓ | ✓ | ✓ | ✓ | - |
+| MKV | ✓ | - | ✓ | ✓ | - |
+| MOV | ✓ | ✓ | ✓ | ✓ | - |
+| MP4 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ | ✓ | - |
+| MPG | ✓ | ✓ | ✓ | ✓ | - |
+| MTS | ✓ | - | ✓ | ✓ | - |
+| MXF | ✓ | - | ✓ | ✓ | - |
+| OGV | ✓ | - | ✓ | ✓ | - |
+| QT | ✓ | - | ✓ | ✓ | - |
+| R3D | - | ✓ | ✓ | ✓ | - |
+| SWF | ✓ | - | ✓ | ✓ | - |
+| WebM | ✓ | - | ✓ | ✓ | ✓ |
+| WMV | ✓ | ✓ | ✓ | ✓ | - |
 
 ## Audio-indelingen {#audio-formats}
 
@@ -282,5 +282,5 @@ Zie ook [Ondersteunde 3D-indelingen](/help/assets/file-format-support.md#support
 
 >[!MORELIKETHIS]
 >
->* [Verwerking van bedrijfsmiddelen met behulp van asset microservices](asset-microservices-overview.md)
+>* [Verwerking van bedrijfsmiddelen met behulp van asset microservices](asset-microservices-overview.md).
 >* [Ondersteunde bestandsindelingen voor slimme tags van op tekst gebaseerde elementen](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
