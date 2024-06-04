@@ -2,9 +2,9 @@
 title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 558babc0124a8ee8c1337b91c5ef016ed238c935
+source-git-commit: 624ba716cb2ec2a45b0ed70516d0b2ad1db94912
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '353'
 ht-degree: 1%
 
 ---
@@ -31,11 +31,13 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16544 same
 
 ### Opgeloste problemen {#fixed-issues-16544}
 
-* DXML-17171: AEM Hulplijnen: De kopiëren en plakken-bewerking van onderwerpen groter dan 15KB mislukt met een onverwachte fout.
-* DXML-17088: AEM hulplijnen: de functionaliteit om de documentstatus te wijzigen vanuit de **Bestandseigenschappen** werkt niet correct en verandert in het dialoogvenster *Concept* status.
-* DXML-16931: AEM Hulplijnen: gekoppelde afbeeldingen van de onderwerpen worden niet weergegeven in de basislijn na het maken van de versie.
-* DXML-16896: AEM hulplijnen: in herbruikbare inhoudspanelen worden geen elementen vermeld wanneer de **Gebruikersvoorkeuren** zijn ingesteld op het weergeven van bestanden door **Bestandsnaam**.
 * GRANITE-51375: idp-sync werpt NPE als geen middenweg wordt gespecificeerd.
+* GUIDEN-17171: De exemplaar en deegverrichting van onderwerpen groter dan 15KB ontbreekt met een onverwachte fout.
+* HULPLIJNEN-17088: De functionaliteit om de documentstaat van te veranderen **Bestandseigenschappen** werkt niet correct en verandert in het dialoogvenster *Concept* status.
+* GUIDEN-16931: De verbonden beelden van de onderwerpen verschijnen er niet in de basislijn na versieverwezenlijking.
+* HULPLIJNEN-16896: In herbruikbare inhoudspanelen worden geen elementen vermeld wanneer de **Gebruikersvoorkeuren** zijn ingesteld op het weergeven van bestanden door **Bestandsnaam**.
+
+Voor meer informatie over de nieuwe en verbeterde functies en problemen die zijn opgelost in de hulplijnen voor Experience Managers, raadpleegt u de [Routekaart voor release van hulplijnen voor Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Bekende problemen {#known-issues-16544}
 
