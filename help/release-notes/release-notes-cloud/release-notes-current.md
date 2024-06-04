@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
+source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,12 @@ De Echte Dienst van de Controle van het Gebruik, de cliënt-zijinzameling, biedt
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U vindt een volledige lijst met nieuwe en verbeterde functies van de nieuwste versie van Adobe Experience Manager Guides [hier](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **Een onderwerp of zijn elementen naar een fragment van de Ervaring publiceren**
+Nu, staat de Gidsen van de Experience Manager u toe om een onderwerp of zijn elementen aan een Fragment van de Ervaring te publiceren. Een ervaringsfragment is een modulaire inhoudseenheid waarin zowel de inhoud als de lay-out worden geïntegreerd.  De Fragmenten van de ervaring zijn nuttig en kunnen u helpen verenigbare en het in dienst nemen ervaringen tot stand brengen.
+* **Mogelijkheid om de metagegevens van de onderwerpelementen door te geven aan de uitvoer van de native PDF**
+U kunt de meta-gegevens van de onderwerpactiva toevoegen terwijl het produceren van de Eigen output van PDF. Deze eigenschap helpt u specifieke meta-gegevens voor verschillende onderwerpen, zoals de onderwerptitel en de auteur, aan de kopballen en footers van de onderwerppagina toevoegen.
+
+Voor meer informatie over de nieuwe en verbeterde functies en problemen die in de release zijn opgelost, raadpleegt u de [Routekaart voor release van hulplijnen voor Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
