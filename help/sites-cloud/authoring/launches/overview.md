@@ -2,10 +2,13 @@
 title: Lanceringen
 description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -34,11 +37,11 @@ Launches kunnen ook:
 
 In deze sectie wordt beschreven hoe u foto&#39;s kunt maken, bewerken en promoten (en indien nodig [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) pagina&#39;s starten vanuit de Sites-console of [de Startconsole](#the-launches-console):
 
-* [Lanceringen maken](/help/sites-cloud/authoring/launches/creating.md)
-* [Lanceringen bewerken](/help/sites-cloud/authoring/launches/editing.md)
+* [Starten maken](/help/sites-cloud/authoring/launches/creating.md)
+* [Starten bewerken](/help/sites-cloud/authoring/launches/editing.md)
 * [Pagina&#39;s beheren in starten](/help/sites-cloud/authoring/launches/managing-pages.md)
 * [Tijdverdraaiing gebruiken om een voorvertoning van uw inhoud weer te geven op basis van startpunten](/help/sites-cloud/authoring/launches/preview.md)
-* [Lanceringen promoten](/help/sites-cloud/authoring/launches/promoting.md)
+* [Starten promoten](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Starten - de volgorde van gebeurtenissen {#launches-the-order-of-events}
 
@@ -64,7 +67,7 @@ Met Launches kunt u:
    * Automatisch - dit omvat het volgende:
       * De **Starten**(**Live**) **date** veld: deze kan worden ingesteld wanneer u een opstart maakt of bewerkt.
       * De **Gereed voor productie** markering: deze kan alleen worden ingesteld tijdens het bewerken van een opstart.
-      * Als de **Gereed voor productie** markering is ingesteld, de lancering wordt automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
+      * Als de **Gereed voor productie** markering is ingesteld, de lancering wordt automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina&#39;s automatisch gepubliceerd.\
         Als er geen datum is ingesteld, heeft de markering geen effect.
 * Werk de bron- en startpagina&#39;s parallel bij:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze worden ingesteld op basis van overerving, dat wil zeggen als een live kopie).

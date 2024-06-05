@@ -2,10 +2,12 @@
 title: Implementatiefase in Cloud Acceleration Manager
 description: Deze pagina bevat een overzicht van de implementatiefase in Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 2%
+source-wordcount: '620'
+ht-degree: 1%
 
 ---
 
@@ -14,9 +16,9 @@ ht-degree: 2%
 De implementatiefase omvat:
 
 * [Lokale ontwikkeling](#local-development)
-* [Herstructurering van code](#code-refactoring)
+* [Code Refactoring](#code-refactoring)
 * [as a Cloud Service implementatie AEM](#aem-as-a-cloud-service-deployment)
-* [Overdracht van content](#content-transfer)
+* [Inhoud overbrengen](#content-transfer)
 
 
 Klik op de projectkaart zodat u de bestemmingspagina van het project kunt openen en naar de **Implementatie** in de volgende afbeelding.

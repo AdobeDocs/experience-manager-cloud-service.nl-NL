@@ -2,7 +2,9 @@
 title: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service
 description: Inleiding tot de architectuur van Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 7%
@@ -35,7 +37,7 @@ Als klant wordt u gewoonlijk door Adobe geïdentificeerd als a **huurder**, ook 
 >
 >AEM Edge Delivery Services worden als een oplossing op hoofdniveau weergegeven in Cloud Manager en maken vanuit een licentiestandpunt deel uit van de andere hoofdoplossingen. Bijvoorbeeld AEM Sites met Edge Delivery Services.
 
-Een programma kan met om het even welke combinatie oplossingen op hoog niveau worden gevormd, en elke oplossing kan van één aan vele toe:voegen-ons steunen. Bijvoorbeeld Handel of Schermen voor AEM Sites, Dynamic Media of Brand Portal voor AEM Assets.
+Een programma kan met om het even welke combinatie oplossingen op hoog niveau worden gevormd, en elke oplossing kan van één aan vele toe:voegen-ons steunen. Bijvoorbeeld Commerce of Schermen voor AEM Sites, Dynamic Media of Brand Portal voor AEM Assets.
 
 ![AEM as a Cloud Service - Programma&#39;s](assets/architecture-aem-edge-programs.png "AEM as a Cloud Service - implementatiearchitectuur")
 

@@ -2,9 +2,11 @@
 title: Opmerkingen bij de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.4.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1545'
 ht-degree: 0%
 
 ---
@@ -136,7 +138,7 @@ De volgende release (2021.5.0) vindt plaats op 27 mei 2021.
 
 * Visuele indicator voor gefaseerde catalogusgegevens in AEM storefront
 
-* Het eindpunt van de handel kan nu worden geconfigureerd via de interface van Cloud Manager
+* Het eindpunt van Commerce kan nu worden geconfigureerd via de interface van Cloud Manager
 
 ### Opgeloste problemen {#bug-fixes-commerce}
 

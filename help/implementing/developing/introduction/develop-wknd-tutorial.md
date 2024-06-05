@@ -1,15 +1,17 @@
 ---
-title: Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial
-description: Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken vernieuwen? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën.
+title: Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie
+description: Nieuw bij het ontwikkelen van AEM? Wilt u een vernieuwde versie van de beste praktijken? Dit is de plaats om te beginnen! Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 7%
+source-wordcount: '202'
+ht-degree: 0%
 
 ---
 
-# Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
+# Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Overzicht {#overview}
 
@@ -23,7 +25,7 @@ Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren A
 
 [De WKND-zelfstudie voor ontwikkelaars is hier beschikbaar](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) en begeleidt u door het creëren van een AEM project gebruikend de recentste technologieën en beste praktijken.
 
-## Kernbegrippen {#core-concepts}
+## Basisconcepten {#core-concepts}
 
 De zelfstudie-implementatie gebruikt veel krachtige functies voor AEM. De site wordt geïmplementeerd met:
 

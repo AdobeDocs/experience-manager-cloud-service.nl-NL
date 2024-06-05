@@ -1,15 +1,18 @@
 ---
-title: Inzicht in segmentering
+title: Segmentering begrijpen
 description: Segmentering is een belangrijke overweging bij het maken van een campagne
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
 
-# Inzicht in segmentering {#understanding-segmentation}
+# Segmentering begrijpen {#understanding-segmentation}
 
 Segmentering is een belangrijke overweging bij het maken van een campagne. In de meeste gevallen moet u segmenten al hebben gedefinieerd voordat u de campagne start.
 

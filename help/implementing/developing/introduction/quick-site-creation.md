@@ -2,7 +2,9 @@
 title: Snel site maken en front-end aanpassen
 description: Leer hoe het Snelle hulpmiddel van de Aanmaak van de Plaats plaatsmalplaatjes, thema's, en de front-end pijpleiding gebruikt om snelle plaatsing van nieuwe plaatsen en ontkoppelde front-end ontwikkeling toe te laten.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

@@ -1,13 +1,16 @@
 ---
 title: De container voor lay-out en de lay-outmodus configureren
 description: Leer hoe u de lay-outcontainer en de lay-outmodus configureert om responsieve lay-outs voor de auteurs van de inhoud in te schakelen.
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
+solution: Experience Manager Sites
+feature: Administering
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 0%
 
 ---
-
 
 # De container voor lay-out en de lay-outmodus configureren {#configuring-layout-container-and-layout-mode}
 

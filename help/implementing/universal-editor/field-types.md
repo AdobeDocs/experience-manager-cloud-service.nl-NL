@@ -2,7 +2,9 @@
 title: Modeldefinities, velden en componenttypen
 description: In deze video ziet u voorbeelden van velden en componenttypen die de Universal Editor kan bewerken in de eigenschappentrack. Begrijp hoe u uw eigen app kunt instrumenteren door een modeldefinitie te maken en aan de component te koppelen.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 1%
@@ -425,7 +427,7 @@ Met de fragmentkiezer voor ervaring kunt u een [Ervaar fragment](/help/sites-clo
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
-| `variationName` | `string` | Naam van variabele om de geselecteerde variatie op te slaan. Indien ongedefinieerd, wordt geen variatietekker weergegeven | Nee |
+| `variationName` | `string` | Naam variabele waarin de geselecteerde variatie wordt opgeslagen. Indien ongedefinieerd, wordt geen variatietekiezer weergegeven | Nee |
 
 >[!BEGINTABS]
 
@@ -448,16 +450,16 @@ Met de fragmentkiezer voor ervaring kunt u een [Ervaar fragment](/help/sites-clo
 ]
 ```
 
->[!TAB Screenshot]
+>[!TAB Schermafbeelding]
 
-![Screenshot van Experience Fragment picker](assets/component-types/aem-experience-fragment.png)
+![Schermafbeelding van de fragmentkiezer van Experience](assets/component-types/aem-experience-fragment.png)
 
 >[!ENDTABS]
 
 
 #### Multiselect {#multiselect}
 
-Een type component met meerdere selecties geeft meerdere items voor selectie weer in een vervolgkeuzelijst, inclusief de mogelijkheid om de selecteerbare elementen te groeperen.
+Een multiselect componenttype stelt veelvoudige punten voor selectie in een drop-down met inbegrip van de capaciteit voor om de selecteerbare elementen te groeperen.
 
 >[!BEGINTABS]
 
@@ -731,13 +733,13 @@ Met een componenttype select kunt u één optie selecteren in een lijst met voor
 
 Met een componenttype tab kunt u andere invoervelden groeperen op meerdere tabbladen om de indeling van de auteurs te verbeteren.
 
-A `tab` definitie kan worden beschouwd als een scheidingsteken in de array van `fields`. Alles wat na een `tab` wordt op dat tabblad geplaatst totdat er een nieuwe `tab` wordt aangetroffen, waarbij de volgende items op het nieuwe tabblad worden geplaatst.
+A `tab` definitie kan worden beschouwd als een scheidingsteken in de array van `fields`. Alles wat na een `tab` wordt op dat tabblad geplaatst totdat er een nieuwe `tab` aangetroffen, waarbij de volgende items op het nieuwe tabblad worden geplaatst.
 
-Als u wilt dat items boven alle tabbladen worden weergegeven, moet u deze vóór alle tabbladen definiëren.
+Als u items boven alle tabbladen wilt weergeven, moet u deze vóór alle tabbladen definiëren.
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld]
+>[!TAB Monster]
 
 ```json
 {
@@ -769,15 +771,15 @@ Als u wilt dat items boven alle tabbladen worden weergegeven, moet u deze vóór
 }
 ```
 
->[!TAB Screenshot]
+>[!TAB Schermafbeelding]
 
-![Schermafbeelding van type tabcomponent](assets/component-types/tab.png)
+![Screenshot van type component tab](assets/component-types/tab.png)
 
 >[!ENDTABS]
 
 #### Tekst {#text}
 
-Er kan één regel tekst worden ingevoerd.  Het bevat aanvullende validatietypen.
+Met tekst kunt u één regel tekst invoeren.  Het bevat aanvullende validatietypen.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|

@@ -2,7 +2,10 @@
 title: Programma's bewerken
 description: Leer hoe u uw productie- en sandboxprogramma's kunt bewerken om de opties aan te passen nadat u deze hebt gemaakt.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 401f853b197e67a6c54e4bf168081dc8165bd505
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

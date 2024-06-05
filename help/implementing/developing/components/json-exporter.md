@@ -2,7 +2,9 @@
 title: JSON-exportfunctie voor services voor inhoud
 description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden gebruikt.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

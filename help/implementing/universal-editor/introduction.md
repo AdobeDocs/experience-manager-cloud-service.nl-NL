@@ -2,7 +2,9 @@
 title: Introductie van Universal Editor
 description: Leer hoe de Universele Redacteur wat-u-ziet-is-wat-u-krijgt (WYSIWYG) het uitgeven van om het even welke headless en belangrijke ervaring toelaat. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 0%

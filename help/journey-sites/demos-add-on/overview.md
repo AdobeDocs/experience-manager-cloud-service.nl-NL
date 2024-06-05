@@ -2,10 +2,12 @@
 title: AEM Referentie demos Add-on-reis
 description: Begin hier voor een geleide reis bij het toevoegen van AEMVerwijzing toont toe:voegen-on aan een zandbakmilieu met minimale AEM configuratie. En test de krachtige eigenschappen van AEM met rijke voorbeelden die op beste praktijken worden gebaseerd.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 1%
+source-wordcount: '816'
+ht-degree: 0%
 
 ---
 
@@ -15,11 +17,11 @@ Begin hier voor een geleide reis bij het toevoegen van AEMVerwijzing toont toe:v
 
 ## Inleiding {#introduction}
 
-AEM is een krachtig hulpmiddel voor het creëren en beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor. Zij kunnen de inhoud organiseren gebruikend de plaatsenconsole, allen terwijl het kunnen levende inhoud zien aangezien het door AEM aan uw publiek over kanalen wordt geleverd.
+AEM is een krachtig hulpmiddel voor het creëren van en het beheren van digitale ervaringen. Inhoudsauteurs kunnen eenvoudig digitale ervaringen maken met de siteeditor. Zij kunnen de inhoud organiseren gebruikend de plaatsenconsole, allen terwijl het kunnen levende inhoud zien aangezien het door AEM aan uw publiek over kanalen wordt geleverd.
 
-Zonder steekproefinhoud en configuratie, kan het moeilijk zijn om de krachtige eigenschappen van AEM voor nieuwe en ervaren cliënten te testen. Met de AEM Reference Demos Add-on kunt u eenvoudig sandboxomgevingen maken die vooraf zijn geladen met voorbeeldinhoud en die vooraf zijn geconfigureerd met de nieuwste richtlijnen voor best practices voor Adobe. Met de add-on kunt u eenvoudig AEM Sites- en AEM Screens-functies evalueren in context en met vrijwel geen configuratie.
+Zonder steekproefinhoud en configuratie, kan het moeilijk zijn om de krachtige eigenschappen van AEM voor nieuwe en ervaren cliënten te testen. Met de invoegtoepassing AEM Reference Demos kunt u eenvoudig sandboxomgevingen maken die vooraf zijn geladen met voorbeeldinhoud en die vooraf zijn geconfigureerd met de nieuwste richtlijnen voor best practices voor Adoben. Met de add-on kunt u eenvoudig AEM Sites- en AEM Screens-functies evalueren in context en met vrijwel geen configuratie.
 
-* **Als u nog niet eerder hebt AEM**, is deze reis de eenvoudigste manier om in een werkelijk functionerende AEM omgeving aan de slag te gaan met echte inhoud. Hiermee kunt u functionaliteit testen en de mogelijkheden van AEM leren kennen.
+* **Als u nog niet eerder hebt AEM**, is deze reis de eenvoudigste manier om in een echte, volledig functionerende AEM omgeving aan de slag te gaan met echte inhoud. Hiermee kunt u functionaliteit testen en de mogelijkheden van AEM leren kennen.
 * **Als u een ervaren AEM gebruiker bent** Na deze reis is het de eenvoudigste manier om een aparte demomgeving op te zetten voor testdoeleinden of om een concepttest te maken met behulp van nieuwe functionaliteit.
 
 Wat u ook nodig hebt, als u een AEM nodig hebt die gevuld is met realistische, volledig functionerende, voorbeeldinhoud, kunt u een sandbox instellen met de AEM Demo Add-on van de Referentie. Lezen!
@@ -28,9 +30,9 @@ Wat u ook nodig hebt, als u een AEM nodig hebt die gevuld is met realistische, v
 
 [Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt een bedrijfsprobleem van begin tot eind begrijpen en oplossen, terwijl het veronderstellen van minimaal voorafgaand onderwerp of AEM kennis.
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als u wilt weten hoe Adobe adviseert om plaatszaken met AEM op te lossen, zijn de Reizen van AEM Sites waar te beginnen.
+Als u wilt weten hoe de Adobe aanbeveelt om vestigingenzaken met AEM op te lossen, zijn de Reizen van AEM Sites waar te beginnen.
 
 ## Publiek {#audience}
 

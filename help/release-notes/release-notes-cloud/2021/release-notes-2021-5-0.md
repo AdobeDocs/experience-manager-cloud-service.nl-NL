@@ -2,7 +2,9 @@
 title: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 0%
@@ -114,7 +116,7 @@ De volgende release is gepland voor 3 juni 2021.
 
 * Intermitterende fouten die werden aangetroffen tijdens het doorvoeren van code naar de Adobe-kit, zijn nu opgelost.
 
-* Invoegtoepassing voor handel kan nu worden toegepast op Sandbox-programma&#39;s tijdens de workflow van het bewerkingsprogramma.
+* De invoegtoepassing Commerce kan nu worden toegepast op Sandbox-programma&#39;s tijdens de workflow van het programma Bewerken.
 
 * De ervaring met het bewerkingsprogramma is vernieuwd.
 
@@ -170,7 +172,7 @@ De releasedatum voor Content Transfer Tool v1.4.0 is 11 mei 2021.
 * De veelvoudige insectenmoeilijke situaties verwant met auto-verfrissen eigenschap in het Hulpmiddel van de Overdracht van de Inhoud UI.
 * Inhoud overbrengen met `wipe=true` heeft geresulteerd in een onjuiste telindex op het doel. Dit is opgelost.
 
-## Commerce Add-on {#cloud-services-commerce}
+## Commerce-invoegtoepassing {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 

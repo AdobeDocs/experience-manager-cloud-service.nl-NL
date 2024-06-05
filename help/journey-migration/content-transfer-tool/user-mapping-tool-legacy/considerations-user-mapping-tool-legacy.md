@@ -4,7 +4,9 @@ description: Belangrijke overwegingen voor het Hulpmiddel van de Toewijzing van 
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -21,9 +23,9 @@ ht-degree: 0%
 
 De volgende specifieke gevallen worden geregistreerd:
 
-1. Als een gebruiker geen e-mailadres heeft in het dialoogvenster `profile/email` van hun *jcr* wordt de gebruiker of groep in kwestie gemigreerd, maar niet toegewezen. Deze regel geldt zelfs als het e-mailadres wordt gebruikt als gebruikersnaam voor het aanmelden.
+1. Als een gebruiker geen e-mailadres heeft in het dialoogvenster `profile/email` van hun *jcr* wordt de gebruiker of groep in kwestie gemigreerd, maar niet toegewezen. Deze regel is zelfs van toepassing als het e-mailadres wordt gebruikt als gebruikersnaam voor het aanmelden.
 
-1. Als er geen e-mail wordt gevonden op het Adobe Identity Management System (IMS) voor de gebruikte organisatie-id (of als de IMS-id niet kan worden opgehaald), wordt de gebruiker of groep gemigreerd, maar niet toegewezen.
+1. Als er geen e-mail wordt gevonden op het systeem van het Identity Management System (IMS) van de Adobe voor de gebruikte organisatie-id (of als de IMS-id niet kan worden opgehaald), wordt de gebruiker of groep gemigreerd, maar niet toegewezen.
 
 1. Als de gebruiker is uitgeschakeld, wordt deze op dezelfde manier behandeld als wanneer de gebruiker niet is uitgeschakeld. Deze wordt toegewezen en gemigreerd als normaal en blijft uitgeschakeld in de cloudinstantie.
 
@@ -35,7 +37,7 @@ De volgende specifieke gevallen worden geregistreerd:
 
 * Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingesteld, worden reeds overgedragen gebruikers op de instantie Cloud Service verwijderd. De gehele bestaande opslagplaats wordt ook verwijderd en er wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Met deze handeling worden ook alle instellingen opnieuw ingesteld, inclusief de machtigingen voor de Cloud Service van het doel. Dit is waar voor een beheerder die aan de **beheerders** groep. De gebruiker van admin moet aan de **beheerders** groep om het toegangstoken voor CTT terug te winnen.
 
-* Adobe adviseert dat u om het even welke bestaande gebruiker uit de AEM van de doelCloud Service alvorens CTT met de Toewijzing van de Gebruiker in werking te stellen verwijdert. Deze actie is nodig om conflicten te voorkomen tussen migrerende gebruikers van de bron AEM instantie aan de AEM instantie van het doel. Conflicten kunnen optreden tijdens inname als dezelfde gebruiker bestaat op de bron AEM instantie en de AEM instantie.
+* De Adobe adviseert dat u om het even welke bestaande gebruiker uit de AEM van de doelCloud Service alvorens CTT met de Toewijzing van de Gebruiker in werking te stellen verwijdert. Deze actie is nodig om conflicten te voorkomen tussen migrerende gebruikers van de bron AEM instantie aan de AEM instantie van het doel. Conflicten kunnen optreden tijdens inname als dezelfde gebruiker bestaat op de bron AEM instantie en de AEM instantie.
 
 * Als de inhoud wordt uitgebreid en de inhoud niet wordt overgedragen omdat deze niet is gewijzigd sinds de vorige overdracht, worden gebruikers en groepen die aan de inhoud zijn gekoppeld, ook niet overgedragen. Deze regel geldt ook als de gebruikers en groepen inmiddels zijn gewijzigd. De reden hiervoor is dat gebruikers en groepen worden gemigreerd met de inhoud waaraan ze zijn gekoppeld.
 

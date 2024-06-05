@@ -2,9 +2,11 @@
 title: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -116,7 +118,7 @@ U kunt nu Adobe Experience Manager Assets configureren voor [het type elementen 
 
 ## Adobe Learning Manager-connectors {#learn-manage}
 
-* De nieuwe Adobe Learning Manager heeft connectors naar Adobe Experience Manager Sites, Marketo Engage en Adobe Commerce. Zie voor meer informatie: [Gebruikershandleiding voor Leerbeheer Adobe](https://helpx.adobe.com/learning-manager/user-guide.html).
+* De nieuwe Adobe Learning Manager heeft connectors naar Adobe Experience Manager Sites, Marketo Engage en Adobe Commerce. Zie voor meer informatie: [Adobe Learning Manager-gebruikershandleiding](https://helpx.adobe.com/learning-manager/user-guide.html).
 
 ## Cloud Manager {#cloud-manager}
 

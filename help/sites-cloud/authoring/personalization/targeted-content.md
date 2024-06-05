@@ -1,15 +1,18 @@
 ---
-title: Authoring van getargete content met targetingmodus
+title: Doelinhoud ontwerpen met doelmodus
 description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen te creëren
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '5302'
-ht-degree: 5%
+source-wordcount: '5282'
+ht-degree: 4%
 
 ---
 
-# Authoring van getargete content met targetingmodus {#authoring-targeted-content-using-targeting-mode}
+# Doelinhoud ontwerpen met doelmodus {#authoring-targeted-content-using-targeting-mode}
 
 Door de auteur opgegeven inhoud met de doelmodus van AEM. De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen tot stand te brengen:
 
@@ -106,7 +109,7 @@ Een activiteit toevoegen:
 
 1. In de **Targeting** vervolgkeuzemenu voor de engine, selecteert u de doelengine.
 
-   * Als u **ContextHub-AEM**, worden de overige velden grijs weergegeven en niet beschikbaar. Selecteer **Maken**.
+   * Als u **ContextHub-AEM**, worden de overige velden grijs weergegeven en niet beschikbaar. Selecteren **Maken**.
 
    * Als u **Adobe Target**, kunt u een configuratie (door gebrek selecteren, is het de configuratie u verstrekte toen u de rekening vormde) en Type van Activiteit. <!--If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.-->
 

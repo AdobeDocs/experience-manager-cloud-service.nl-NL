@@ -1,15 +1,18 @@
 ---
-title: Werken met getargete content in meerdere sites
+title: Werken met gerichte inhoud in meerdere sites
 description: Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2844'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
-# Werken met getargete content in meerdere sites {#working-with-targeted-content-in-multisites}
+# Werken met gerichte inhoud in meerdere sites {#working-with-targeted-content-in-multisites}
 
 Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen.
 
@@ -155,7 +158,7 @@ Een gebied maken:
 
 1. Klik op de knop **Gebied** pictogram en klik **Volgende**.
 1. In de **Titel** voert u een naam in voor het nieuwe gebied. Selecteer optioneel tags.
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 
    AEM wordt omgeleid naar het merkvenster, waar de gemaakte gebieden worden vermeld. Als er een ander gebied buiten het hoofdgebied is, kunt u gebieden rechtstreeks in de merkenconsole maken.
 
@@ -190,7 +193,7 @@ Een gebied maken als een livecopy:
    >
    >Wanneer een pagina wordt uitgerold naar een Live Copy en het gebied dat voor de pagina van de Vervaging wordt gevormd ook de Vervaging voor het gebied is dat voor Levende Exemplaar van Pagina&#39;s wordt gevormd, LiveAction **personalizationContentRollout** activeert een synchrone subRollout, die deel van uitmaakt **Standaardconfiguratie voor rollout**.
 
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 
    AEM wordt omgeleid naar het merkvenster, waar de gemaakte gebieden worden vermeld. Als er een ander gebied buiten het hoofdgebied is, kunt u gebieden rechtstreeks vanuit het merkvenster maken.
 

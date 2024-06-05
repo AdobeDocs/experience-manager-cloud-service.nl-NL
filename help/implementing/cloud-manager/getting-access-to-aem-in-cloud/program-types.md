@@ -2,7 +2,10 @@
 title: Programma's en programmatypen
 description: Leer meer over de hiërarchie van Cloud Manager en hoe de verschillende typen programma's in de structuur passen en hoe ze verschillen.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%

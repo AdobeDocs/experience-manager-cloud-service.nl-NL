@@ -2,7 +2,10 @@
 title: Aangepaste regels voor codekwaliteit
 description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '4167'
 ht-degree: 0%

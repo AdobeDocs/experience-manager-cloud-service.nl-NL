@@ -2,9 +2,12 @@
 title: Het vormen Segmentatie met ContextHub
 description: Leer hoe te om segmentatie te vormen gebruikend ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1653'
 ht-degree: 0%
 
 ---
@@ -205,7 +208,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
    ![Map maken](../assets/contexthub-create-folder.png)
 
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 
    ![Map bevestigen](../assets/contexthub-confirm-folder.png)
 

@@ -1,13 +1,16 @@
 ---
 title: De AEM Pagina-editor
 description: De AEM pagina-editor is een krachtig hulpmiddel voor het ontwerpen van uw inhoud.
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
+exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 0%
 
 ---
-
 
 # De AEM Pagina-editor {#editing-page-content}
 

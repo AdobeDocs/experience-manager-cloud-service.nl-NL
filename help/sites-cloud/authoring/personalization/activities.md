@@ -1,15 +1,18 @@
 ---
-title: Activiteiten beheren
+title: Beheersactiviteiten
 description: Met de activiteitenconsole kunt u de marketingactiviteiten van uw merken maken, organiseren en beheren
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1958'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
-# Activiteiten beheren {#managing-activities}
+# Beheersactiviteiten {#managing-activities}
 
 Met de Activiteiten-console kunt u de marketing [activiteiten](/help/sites-cloud/authoring/personalization/overview.md#activities) van uw merken:
 

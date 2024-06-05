@@ -2,10 +2,13 @@
 title: Werken met projectworkflows
 description: Een verscheidenheid van projectwerkschema's is beschikbaar uit de doos.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 10%
+source-wordcount: '449'
+ht-degree: 3%
 
 ---
 
@@ -70,4 +73,4 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
 ## Workflow voor taalkopieën maken (en vertalen) voor middelen {#create-and-translate-language-copy-workflow-for-assets}
 
-De workflows **Taalkopie maken** en **Taalkopie maken en vertalen**[ worden uitgebreid besproken bij het maken van taalkopieën voor assets](/help/assets/translate-assets.md).
+De **Taalkopie maken** en de **Taalkopie maken en vertalen** workflows worden uitvoerig behandeld [maken, taalkopieën voor elementen](/help/assets/translate-assets.md).

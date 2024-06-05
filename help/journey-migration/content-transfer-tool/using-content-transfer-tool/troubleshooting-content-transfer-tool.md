@@ -2,10 +2,12 @@
 title: Problemen met het gereedschap Inhoud overbrengen oplossen
 description: Leer hoe u problemen kunt oplossen met het gereedschap Inhoud overbrengen
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 87%
+source-wordcount: '179'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +42,7 @@ Zie [Oak Runable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-ru
 De bestanden die in de *OUT_DIR* hierboven zijn gemaakt voor consistentie, kunnen vervolgens worden gecontroleerd op paden met ontbrekende binaire elementen en op de juiste manier gecorrigeerd, zoals herstellen via een back-up, paden verwijderen, opnieuw indexeren, enzovoort.
 
 
-## Gedrag van gebruikersinterface {#ui-behavior}
+## Werking gebruikersinterface {#ui-behavior}
 
 Als gebruiker ziet u de volgende wijzigingen in het gedrag van de Content Transfer-gebruikersinterface:
 

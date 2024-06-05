@@ -2,9 +2,11 @@
 title: Hoofdletters en headless in AEM
 description: AEM projecten kunnen worden geïmplementeerd in een krachtig en zonder kop, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---

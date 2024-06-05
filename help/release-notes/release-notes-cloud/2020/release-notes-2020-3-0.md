@@ -2,10 +2,12 @@
 title: Opmerkingen bij de release 2020.3.0
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.3.0."
 exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '260'
+ht-degree: 0%
 
 ---
 
@@ -33,5 +35,5 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 * Bepaalde gebruikersactiviteiten tijdens het maken van een sandboxprogramma kunnen ertoe leiden dat het programma niet wordt gemaakt voordat de niet-productiepijplijn is gemaakt.
 * De voorlopige SonarQube-instantie die in de stap build werd gebruikt, kon niet zo nu en dan starten binnen de geconfigureerde time-out.
 * Bij het gelijktijdig maken van ontwikkelomgevingen in hetzelfde Cloud Service-programma kan er een voorwaarde optreden waarbij slechts één hiervan met succes kan worden gemaakt.
-* Experience Cloud-meldingen voor programma&#39;s voor Cloud Service werden niet altijd ontvangen.
+* Er zijn niet altijd meldingen van Experiencen Cloud voor programma&#39;s voor Cloud Service ontvangen.
 * Bij specifieke projecten *ResourceResolver-objecten moeten altijd worden gesloten* zou een Null-aanwijzeruitzondering veroorzaken, maar dit had geen invloed op de uitvoering van de pijpleiding.

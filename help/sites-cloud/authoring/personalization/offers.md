@@ -2,7 +2,10 @@
 title: Aanbiedingen maken en beheren (console Aanbiedingen)
 description: Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u in activiteitenervaringen kunt gebruiken
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 0%
@@ -133,7 +136,7 @@ Wanneer u een merk maakt met de console Aanbiedingen, wordt dit ook weergegeven 
 1. Selecteren **Maken** en vervolgens **Maken** **Merk**.
 1. Selecteer de merksjabloon en selecteer **Volgende**.
 1. Typ een titel voor het merk zoals u deze wilt weergeven in de consoles van Aanbiedingen en Activiteiten. Typ of selecteer eventueel een of meer tags die u aan het merk wilt koppelen.
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 
 ### Een map toevoegen aan een aanbiedingsbibliotheek {#add-a-folder-to-an-offer-library}
 
@@ -149,7 +152,7 @@ Voeg een map toe aan de aanbiedingsbibliotheek van een merk om aanbiedingen te o
 
    ![Mapeigenschappen definiëren](/help/sites-cloud/authoring/assets/offers-folder-properties.png)
 
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 
 ### Een voorstel toevoegen aan een bibliotheek met aanbiedingen {#add-an-offer-to-an-offer-library}
 

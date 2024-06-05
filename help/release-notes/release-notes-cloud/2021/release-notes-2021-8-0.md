@@ -2,9 +2,11 @@
 title: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.8.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
@@ -120,7 +122,7 @@ Zie [SLA-rapportage](https://experienceleague.adobe.com/docs/experience-manager-
 
 * Soms, wanneer een pijpleiding tweemaal om een bepaalde reden in werking wordt gesteld, resulteert het in één van de executies die met een *`cannot update pipeline execution status`* fout.
 
-## De tool Content Transfer {#content-transfer-tool}
+## Inhoud overbrengen {#content-transfer-tool}
 
 ### Releasedatum {#release-date-ctt-latest}
 

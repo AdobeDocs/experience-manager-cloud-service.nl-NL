@@ -2,7 +2,9 @@
 title: Opmerkingen bij de release 2021.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 0%
@@ -168,7 +170,7 @@ De releasedatum voor AEM Screens as a Cloud Service is 24 juni 2021.
 ### Nieuwe functies {#what-is-new-cif}
 
 * Nieuwe CIF product- en categoriereferentietypen voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
-* New Commerce Content Fragment Core Component
+* Nieuwe Commerce Content Fragment Core-component
 * Full-text zoekopdracht ondersteund in AEM achterkant
 * Commerce Core Components ondersteunt Adobe Commerce Sensei Recs gegevensverzameling
 * Verbeterde SEO-vriendelijke URL&#39;s voor categoriepagina&#39;s

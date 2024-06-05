@@ -1,13 +1,15 @@
 ---
 title: Beste praktijken voor het Verkopen van de Toewijzing van de Gebruiker van de Dienst en de Definitie van de Gebruiker van de Dienst
 description: Meer informatie over de beste werkwijzen voor het toewijzen van servicegebruikers en het definiëren van gebruikersdefinities voor services
-source-git-commit: b6f7b6996b377ecfa372742ce1ad22139547ebdd
+exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
 
 ---
-
 
 # Beste praktijken voor het Verkopen van de Toewijzing van de Gebruiker van de Dienst en de Definitie van de Gebruiker van de Dienst {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
@@ -274,8 +276,3 @@ delete service my-feature-service
 Het is van cruciaal belang om servertests voor de dienstgebruikers en hun toestemmingsopstelling te schrijven. Dit verifieert niet alleen dat uw opstelling echt werkt maar ook helpt u regressies en onbedoelde fouten wanneer het veranderen van de inhoud van de toegangscontrole of de dienstgebruikers.
 
 De `com.adobe.granite.testing.clients` De bibliotheek biedt veel hulpprogramma&#39;s die het schrijven van SST&#39;s voor servicegebruikers eenvoudig maken.
-
-
-
-
-

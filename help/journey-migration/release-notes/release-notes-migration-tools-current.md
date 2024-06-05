@@ -3,7 +3,8 @@ title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Se
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2024.05.0
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: 5275c759d38563f655d4861b191aaf583d001268
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 2%

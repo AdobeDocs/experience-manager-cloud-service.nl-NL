@@ -3,10 +3,11 @@ title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Se
 description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.5.0
 feature: Release Information
 exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 2%
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +33,7 @@ De releasedatum voor de analyse van best practices v2.1.30 is 1 juni 2022.
 * BPA rapporteerde NCC (Niet-compatibele wijzigingen), UMI (Probleem met configuratie van upgrades) en PCX (Complexiteit van pagina)-bevindingen die fout-positieven zijn. Deze zijn opgelost.
 * BPA rapporteerde mislukkingen wanneer om het even welke lengte van de knoopnaam meer dan 150 bytes. Dit is gecorrigeerd om dergelijke mislukkingen slechts te ontdekken wanneer de knoop ouderweg gelijk of groter is dan 350 bytes.
 
-## De tool Content Transfer {#ctt-release}
+## Inhoud overbrengen {#ctt-release}
 
 ### Releasedatum {#release-date-ctt}
 
@@ -53,4 +54,4 @@ De releasedatum voor Cloud Acceleration Manager is 2 juni 2022.
 
 ### Wat is er nieuw? {#what-is-new-cam}
 
-* Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om inhoudoverdrachten te starten en te beheren om inhoud van een AEM van de klant (On-premise of Adobe Managed Services) te verplaatsen naar AEM as a Cloud Service als onderdeel van een migratieproject. Zie [Inhoudsoverdrachtkaart gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) voor meer informatie .
+* Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om inhoudoverdrachten te starten en te beheren om inhoud van een AEM (On-premise of Adobe Managed Services) van een klant te verplaatsen naar AEM as a Cloud Service als onderdeel van een migratieproject. Zie [Inhoudsoverdrachtkaart gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) voor meer informatie .

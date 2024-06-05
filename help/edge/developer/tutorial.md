@@ -2,7 +2,9 @@
 description: Deze zelfstudie helpt u om aan de slag te gaan met een nieuw Adobe Experience Manager-project (AEM). Over tien tot twintig minuten hebt u uw eigen site gemaakt en kunt u uw eigen inhoud, opmaak en nieuwe blokken maken, voorvertonen en publiceren.
 title: Aan de slag - Zelfstudie voor ontwikkelaars
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
+exl-id: f84a9584-0962-4d70-aedc-f7a130fd489b
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%

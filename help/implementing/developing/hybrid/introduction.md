@@ -2,7 +2,9 @@
 title: SPA Inleiding en Analyse
 description: Dit artikel introduceert de concepten van een SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge De
 description: Deze gids zal u aan de slag met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoud creatie krijgen.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: fc5ffe334873b7b98565f38d5664313b26d5f635
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%

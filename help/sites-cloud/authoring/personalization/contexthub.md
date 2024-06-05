@@ -2,10 +2,13 @@
 title: Pagina's voorvertonen met ContextHub-gegevens
 description: De ContextHub toolbarvertoningen gegevens van Opslag ContextHub en laat u toe om opslaggegevens te veranderen en is nuttig om inhoud te previewing
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 

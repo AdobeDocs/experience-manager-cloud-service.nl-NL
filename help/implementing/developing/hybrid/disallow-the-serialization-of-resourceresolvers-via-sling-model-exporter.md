@@ -1,13 +1,15 @@
 ---
 title: De serialisatie van ResourceResolvers via Sling Model Exporter niet toestaan
 description: De serialisatie van ResourceResolvers via Sling Model Exporter niet toestaan
-source-git-commit: 4543a4646719f8433df7589b21344433c43ab432
+exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
 
 ---
-
 
 # De serialisatie van ResourceResolvers via Sling Model Exporter niet toestaan {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
@@ -50,6 +52,3 @@ De Adobe verzoekt al hun klanten om hun toepassingslogboeken en codebasis te con
 Aangenomen wordt dat deze vereiste wijzigingen in de meeste gevallen recht naar voren zijn, aangezien de `ResourceResolver` objecten zijn helemaal niet vereist in de JSON-uitvoer, omdat de informatie in deze objecten gewoonlijk niet vereist is voor frontend-toepassingen. Dat betekent in de meeste gevallen dat het voldoende is de `ResourceResolver` door Jackson overwogen object (zie [regels](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
 
 Als een verkoopmodel door dit probleem wordt beïnvloed maar niet wordt veranderd, het uitdrukkelijk onbruikbaar maken van serizalization van `ResourceResolver` -object (zoals uitgevoerd door Adobe als de tweede stap) een wijziging in de JSON-uitvoer afdwingen.
-
-
-

@@ -2,7 +2,9 @@
 title: as a Cloud Service teams en productprofielen AEM
 description: Leer hoe AEM as a Cloud Service team en productprofielen toegang tot uw gelicentieerde oplossingen van de Adobe kunnen verlenen en beperken.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -55,16 +57,16 @@ Cloud Manager heeft vooraf geconfigureerde productprofielen die kunnen worden be
 
 Aan elk van de productprofielen zijn specifieke machtigingen gekoppeld.
 
-* **Business Owner**
+* **Zakelijke eigenaar**
    * In deze rol hebt u de toestemming om een nieuw programma toe te voegen of een programma uit te geven, een milieu toe te voegen of bij te werken, code in AEM milieu op te stellen, of de controles van de codekwaliteit uit te voeren.
    * Deze gebruiker is verantwoordelijk voor het definiëren van KPI&#39;s, het goedkeuren van productieimplementaties en het overschrijven van belangrijke 3-tivelige fouten indien nodig.
-* **Deployment Manager**
+* **Implementatiebeheer**
    * In deze rol, hebt u de toestemming om een milieu toe te voegen of bij te werken, om het even welke pijpleiding in werking te stellen, en code op te stellen aan AEM milieu, of de controles van de codekwaliteit uit te voeren.
    * Deze gebruiker beheert implementatiebewerkingen en gebruikt Cloud Manager voor het uitvoeren van testings-/productieimplementaties, het bewerken van CI-/CD-pijpleidingen, het goedkeuren van belangrijke 3-laagfouten indien nodig, en kan toegang krijgen tot de git-opslagruimte.
-* **Developer**
+* **Ontwikkelaar**
    * In deze rol, hebt u de toestemming om persoonlijke toegangstokens te produceren om tot git toegang te hebben.
    * Deze gebruiker ontwikkelt en test de code van de douanetoepassing en gebruikt hoofdzakelijk de status van de Manager van de Wolk om plaatsingsstatus te bekijken en kan tot de git bewaarplaats voor codeverplichtingen toegang hebben.
-* **Program Manager**
+* **Programmabeheerder**
    * In deze rol, hebt u de toestemming om pijpleidingen te plannen, de de kwaliteitsspoorten van drie lagen met voeten te treden, en productiegoedkeuring te verstrekken.
    * Deze gebruiker gebruikt Cloud Manager om teamopstelling uit te voeren, status te herzien, KPIs te bekijken, en kan belangrijke drie-rij mislukkingen goedkeuren wanneer noodzakelijk.
 

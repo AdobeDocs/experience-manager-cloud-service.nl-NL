@@ -2,7 +2,9 @@
 title: Inleiding tot Cloud Manager
 description: Meer informatie over hoe Cloud Manager uw AEM project ondersteunt via programma's, omgevingen en pijpleidingen.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%

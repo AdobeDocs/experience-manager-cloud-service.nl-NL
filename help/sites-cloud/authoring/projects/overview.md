@@ -2,10 +2,13 @@
 title: Projecten
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -143,7 +146,7 @@ Deze worden beschreven in [Werken met projectworkflows](/help/sites-cloud/author
 
 In de tegel Startpagina worden alle opstarten weergegeven die zijn aangevraagd met een [Verzoek indienen om workflow te starten](/help/sites-cloud/authoring/projects/workflows.md).
 
-![Lanceringen](/help/sites-cloud/authoring/assets/project-launches.png)
+![Starten](/help/sites-cloud/authoring/assets/project-launches.png)
 
 ### Taken {#tasks}
 
@@ -165,7 +168,7 @@ Gebaseerd op het malplaatje u selecteert, hebt u verschillende opties beschikbaa
 
 De verschillende gebruikersrollen worden geplaatst in een malplaatje van het Project en om twee primaire redenen gebruikt:
 
-1. Machtigingen. De gebruikersrollen vallen in één van de drie vermelde categorieën: Waarnemer, Redacteur, Eigenaar. Een fotograaf of copywriter heeft bijvoorbeeld dezelfde rechten als een Editor. De toestemmingen bepalen wat een gebruiker met inhoud in een project kan doen.
+1. Rechten. De gebruikersrollen vallen in één van de drie vermelde categorieën: Waarnemer, Redacteur, Eigenaar. Een fotograaf of copywriter heeft bijvoorbeeld dezelfde rechten als een Editor. De toestemmingen bepalen wat een gebruiker met inhoud in een project kan doen.
 1. Workflows. De werkschema&#39;s bepalen wie taken in een project wordt toegewezen. De taken kunnen met een projectrol worden geassocieerd. U kunt bijvoorbeeld een taak toewijzen aan fotografen, zodat alle teamleden met de rol Fotograaf de taak krijgen.
 
 Alle projecten steunen de volgende standaardrollen om u veiligheid en controletoestemmingen te laten beheren:

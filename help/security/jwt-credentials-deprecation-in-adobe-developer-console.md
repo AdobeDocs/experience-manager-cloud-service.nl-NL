@@ -2,7 +2,9 @@
 title: JWT Credentials Deprection in Adobe Developer Console
 description: Meer informatie over de impact van de afschrijving van JWT-referenties in Adobe Developer Console op AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

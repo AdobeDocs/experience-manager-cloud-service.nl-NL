@@ -2,10 +2,12 @@
 title: Opmerkingen bij de release 2020.2.0
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.2.0."
 exl-id: 005c4756-44c6-4af5-9b0c-0fc07bd211a0
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 2%
+source-wordcount: '213'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +27,7 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 
 * De Adobe Experience Manager archetype-versie is bijgewerkt naar versie 22.
 * De werkgebied- en productieomgevingen in de programma&#39;s Sandbox/Demo kunnen nu worden bijgewerkt via de interface van Cloud Manager.
-* URL&#39;s die worden gebruikt in Experience Cloud-berichten, zijn geoptimaliseerd om een extra omleiding te voorkomen.
+* URL&#39;s die in meldingen van Experiencen Cloud worden gebruikt, zijn geoptimaliseerd om een extra omleiding te voorkomen.
 * Uitvoeringsstappen van de pijpleiding die nu uitdrukkelijk genoemd.
 * De stap voor het scannen van code heeft nu een downloadbaar logboek.
 * Het spreadsheet dat kwesties bevat die tijdens code het aftasten nu worden ontdekt heeft een kolom met een verbinding aan documentatie voor de specifieke regel.

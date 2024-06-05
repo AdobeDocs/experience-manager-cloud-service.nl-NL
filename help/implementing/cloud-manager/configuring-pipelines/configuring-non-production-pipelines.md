@@ -3,7 +3,10 @@ title: Niet-productiepijpleidingen configureren
 description: Leer hoe u niet-productiepijpleidingen configureert om de kwaliteit van uw code te testen voordat u deze implementeert in productieomgevingen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 0%

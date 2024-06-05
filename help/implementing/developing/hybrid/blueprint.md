@@ -2,9 +2,11 @@
 title: SPA
 description: In dit document wordt het algemene, raamonafhankelijke contract beschreven dat door elk SPA framework moet worden uitgevoerd, zodat u bewerkbare SPA binnen AEM kunt implementeren.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2022'
 ht-degree: 0%
 
 ---

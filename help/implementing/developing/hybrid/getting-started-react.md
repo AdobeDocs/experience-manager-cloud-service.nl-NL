@@ -2,7 +2,9 @@
 title: Aan de slag met SPA in AEM Reageren gebruiken
 description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld en kunt u snel met uw eigen SPA aan de slag met het React-framework.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%

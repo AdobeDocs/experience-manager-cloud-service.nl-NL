@@ -1,13 +1,16 @@
 ---
 title: Padselectie met de padbrowser
 description: Leer hoe u de padbrowser gebruikt om bronnen in AEM te selecteren.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 3%
 
 ---
-
 
 # Padselectie {#path-selection}
 

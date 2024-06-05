@@ -2,7 +2,9 @@
 title: Opmerkingen bij de release 2021.1.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.1.0."
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 0%
@@ -50,7 +52,7 @@ De volgende release (2021.2.0) vindt plaats op 25 februari 2021.
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Product Experience Management: Nieuw tabblad &#39;Commerce&#39;-eigenschappen voor Elementen en Ervingfragmenten. Op dit tabblad kunt u producten/categorieën koppelen aan Elementen en Fragmenten ervaren. Op het tabblad vindt u ook real-time gegevens voor gekoppelde producten/categorieën en een koppeling om details weer te geven in de productconsole.
+* Product Experience Management: Nieuw tabblad &#39;Commerce&#39;-eigenschappen voor Elementen en Geniet-fragmenten. Op dit tabblad kunt u producten/categorieën koppelen aan Elementen en Fragmenten ervaren. Op het tabblad vindt u ook real-time gegevens voor gekoppelde producten/categorieën en een koppeling om details weer te geven in de productconsole.
 
 * Release CIF Venia Reference Site - 2021.02.02 die de nieuwste versie CIF Core Components versie v1.7.0 bevat. Zie [CIF Venia-referentiegebied](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) voor meer informatie .
 

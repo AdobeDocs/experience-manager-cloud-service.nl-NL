@@ -3,7 +3,8 @@ title: Edge Delivery Services gebruiken met bestaande AEM projecten
 description: Leer hoe u de voordelen van Edge Delivery Services voor uw bestaande AEM kunt benutten
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

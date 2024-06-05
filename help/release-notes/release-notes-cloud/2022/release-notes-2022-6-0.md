@@ -2,9 +2,11 @@
 title: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2022.6.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -84,7 +86,7 @@ Experience Manager Assets gebruikt tot nu toe Adobe Sensei AI-mogelijkheden [ond
 
 ### Nieuwe functies {#what-is-new-demos}
 
-* Nieuwe WKND-sjabloon voor Inhoud en Handel die WKND uitbreidt met een E2E-ervaring voor winkelen met productcatalogus, winkelwagentje, kassa en mijnAccount. Dit malplaatje gebruikt CIF en zijn CIF Componenten van de Kern, zodat moet u ook CIF toe:voegen-op installeren. Meer informatie vindt u in de CIF blog [hier](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+* Nieuwe WKND-sjabloon voor inhoud en Commerce die WKND uitbreidt met een E2E-winkelervaring met productcatalogus, winkelwagentje, kassa en mijnAccount. Dit malplaatje gebruikt CIF en zijn CIF Componenten van de Kern, zodat moet u ook CIF toe:voegen-op installeren. Meer informatie vindt u in de CIF blog [hier](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
 
 ![WKND-winkel](/help/assets/CIF/wknd_shop.png)
 

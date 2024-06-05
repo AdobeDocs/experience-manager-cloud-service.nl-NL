@@ -2,9 +2,12 @@
 title: Reis voor snel maken van site AEM
 description: Begin hier voor een begeleide reis door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Aanmaak van de Plaats om de front-end ontwikkeling van uw AEM Plaats te stroomlijnen en snel uw plaats aan te passen zonder AEM achtergrondkennis.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---

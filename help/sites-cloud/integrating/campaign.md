@@ -1,13 +1,14 @@
 ---
 title: Integratie AEM as a Cloud Service met Adobe Campaign
 description: Leer over de steun van AEM as a Cloud Service voor integratie met Adobe Campaign.
-feature: Administering
+feature: Integration
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: a9296bba5d1ad3f6eb2190de9c15a1083f2ac6d5
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -30,7 +31,7 @@ De ondersteuning voor integratie met AEM as a Cloud Service is afhankelijk van d
 |---|---|
 | [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | Niet ondersteund |
 | [Campagne v8 (clientconsole)](https://experienceleague.adobe.com/docs/campaign-v8.html) | Niet ondersteund |
-| Campagne Web User Interface | Ondersteund. [Meer informatie](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
+| Campaign Web User Interface | Ondersteund. [Meer informatie](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) |
 
 
 ## Integreren met Adobe Campaign Standard {#acs}

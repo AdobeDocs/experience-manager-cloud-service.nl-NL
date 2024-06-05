@@ -2,9 +2,11 @@
 title: Overzicht tot Inhoud transformeren
 description: Leer hoe u aan inhoud gerelateerde problemen kunt detecteren en verhelpen die door de BPA zijn gemeld met Content Transformer.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---

@@ -1,15 +1,17 @@
 ---
-title: AEM-projectrepositorystructuurpakket
+title: Structuurpakket projectopslagplaats AEM
 description: Gemaakte projecten op Adobe Experience Manager as a Cloud Service vereisen een definitie van subpakket van de Structuur van de Bewaarplaats met als enig doel de wortels van de bewaarplaats van JCR te bepalen waarin de Codepakketten van het project in subpakketten van de Code van het project opstellen.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 2%
+source-wordcount: '533'
+ht-degree: 0%
 
 ---
 
-# AEM-projectrepositorystructuurpakket
+# Structuurpakket projectopslagplaats AEM
 
 Gemaakte projecten voor Adobe Experience Manager as a Cloud Service vereisen een definitie van het subpakket van de opslagplaats met als enig doel het bepalen van de wortels van de bewaarplaats JCR waarin de code van het project subpackages opstelt. Deze methode zorgt ervoor dat de installatie van pakketten in as a Cloud Service Experience Manager automatisch door JCR middelgebiedsdelen wordt bevolen. Ontbrekende afhankelijkheden kunnen leiden tot scenario&#39;s waarbij substructuren worden geïnstalleerd vóór hun bovenliggende structuren en daarom onverwacht worden verwijderd, waardoor de implementatie wordt verbroken.
 

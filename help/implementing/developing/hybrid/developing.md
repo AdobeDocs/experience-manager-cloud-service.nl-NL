@@ -2,9 +2,11 @@
 title: SPA ontwikkelen voor AEM
 description: Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen van een front-end ontwikkelaar om een SPA voor AEM te ontwikkelen. Het geeft ook een overzicht van de architectuur van AEM betreffende SPA om in mening te houden wanneer het opstellen van een ontwikkelde SPA op AEM.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2028'
 ht-degree: 0%
 
 ---
@@ -17,7 +19,7 @@ Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen
 
 ## SPA ontwikkelingsbeginselen voor AEM {#spa-development-principles-for-aem}
 
-Bij het ontwikkelen van toepassingen voor één pagina op AEM wordt ervan uitgegaan dat de ontwikkelaar aan de voorzijde de beste werkwijzen volgt bij het maken van een SPA. Als u als front-end ontwikkelaar deze algemene beste praktijken en een paar AEM-specifieke principes volgt, is uw SPA functioneel met [AEM en de mogelijkheden voor het schrijven van inhoud](introduction.md#content-editing-experience-with-spa).
+Bij het ontwikkelen van toepassingen voor één pagina op AEM wordt ervan uitgegaan dat de ontwikkelaar aan de voorzijde de aanbevolen standaardprocedures voor het maken van een SPA in acht neemt. Als u als front-end ontwikkelaar deze algemene beste praktijken en een paar AEM-specifieke principes volgt, werkt uw SPA met [AEM en de mogelijkheden voor het schrijven van inhoud](introduction.md#content-editing-experience-with-spa).
 
 * **[Overdraagbaarheid](#portability)** - De onderdelen moeten zo draagbaar mogelijk zijn, net als alle andere onderdelen. De SPA moet met draagbare en herbruikbare onderdelen worden gebouwd.
 * **[Sitestructuur AEM stations](#aem-drives-site-structure)** - De front-end ontwikkelaar maakt componenten en bezit hun interne structuur, maar baseert zich op AEM om de inhoudsstructuur van de plaats te bepalen.
@@ -26,7 +28,7 @@ Bij het ontwikkelen van toepassingen voor één pagina op AEM wordt ervan uitgeg
 
 Als u deze principes in gedachten houdt bij het ontwikkelen van uw SPA, wordt deze zo flexibel en zo toekomstbestendig mogelijk, terwijl alle ondersteunde AEM ontwerpfunctionaliteit wordt ingeschakeld.
 
-Als u AEM ontwerpfuncties niet hoeft te ondersteunen, kunt u een andere [SPA ontwerpmodel](#spa-design-models).
+Als u AEM ontwerpfuncties niet hoeft te ondersteunen, kunt u een andere [SPA](#spa-design-models).
 
 ### Overdraagbaarheid {#portability}
 
@@ -89,7 +91,7 @@ Er kunnen zich echter gevallen voordoen waarin deze functionaliteit niet volledi
 
 >[!NOTE]
 >
->Hoewel alle modellen in AEM worden gesteund, slechts door het derde uit te voeren (en na het geadviseerde [Ontwikkelingsprincipes SPA](#spa-development-principles-for-aem)) zijn de auteurs van de inhoud die de inhoud van de SPA in AEM kunnen bewerken.
+>Hoewel alle modellen in AEM worden gesteund, slechts door het derde uit te voeren (en na het geadviseerde [SPA ontwikkelingsbeginselen](#spa-development-principles-for-aem)) zijn de auteurs van de inhoud die de inhoud van de SPA in AEM kunnen bewerken.
 
 ## Bestaande SPA migreren naar AEM {#migrating-existing-spas-to-aem}
 
@@ -175,9 +177,9 @@ De algemene architectuur van AEM, inclusief ontwikkelings-, auteurs- en publicat
   In deze omgeving is de bron van de SPA toepassing en de componentbron uitgecheckt.
 
    * De NPM clientlib generator leidt tot een cliëntbibliotheek van het SPA project.
-   * Deze bibliotheek is afkomstig van Maven en wordt samen met de component geïmplementeerd door de Maven Build-insteekmodule voor de AEM-auteur.
+   * Deze bibliotheek is afkomstig van Maven en wordt samen met de component geïmplementeerd door de plug-in Maven Build bij de AEM Auteur.
 
-* **AEM-auteur**
+* **AEM auteur**
 
   Inhoud wordt gemaakt op de AEM auteur, inclusief SPA.
 
@@ -189,14 +191,14 @@ De algemene architectuur van AEM, inclusief ontwikkelings-, auteurs- en publicat
    1. Wanneer de SPA toepassing wordt uitgevoerd, wordt de JSON opgevraagd, zodat de app het DOM van de pagina kan maken, inclusief de `cq-data` kenmerken.
    1. De `cq-data` met kenmerken kan de editor aanvullende pagina-informatie laden, zodat deze weet welke bewerkingsconfiguraties beschikbaar zijn voor de componenten.
 
-* **AEM-publicatie**
+* **AEM publiceren**
 
   Waar de geschreven inhoud en de gecompileerde bibliotheken, inclusief SPA toepassingsartefacten, cliëntbibliotheken, en componenten voor openbare consumptie worden gepubliceerd.
 
 * **Dispatcher/CDN**
 
   De Dispatcher fungeert als de cachelaag van AEM voor bezoekers van de site.
-   * Verzoeken worden op dezelfde manier verwerkt als aanvragen van de AEM-auteur. Er is echter geen verzoek om de pagina-informatie, omdat deze alleen nodig is voor de editor.
+   * Verzoeken worden op dezelfde manier verwerkt als AEM auteur. Er is echter geen verzoek om de pagina-informatie, omdat deze alleen nodig is voor de editor.
    * JavaScript, CSS, JSON en HTML worden in cache geplaatst, waardoor de pagina wordt geoptimaliseerd voor snelle levering.
 
 >[!NOTE]

@@ -2,10 +2,12 @@
 title: Opmerkingen bij de release 2020.9.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 1%
+source-wordcount: '709'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +34,7 @@ De releasedatum voor [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 * Verbeteringen in [!DNL Dynamic Media]
 
    * Selectieve publicatie - Een marketingteam kan nu toegang krijgen [!DNL Dynamic Media] SmartCrop-afbeeldingen en dynamische uitvoeringen die zijn gesynchroniseerd met [!DNL Dynamic Media] zodat ze promotiemateriaal kunnen maken zonder dat ze deze middelen hoeven te publiceren naar [!DNL Dynamic Media] voor wereldwijde levering. [!DNL Experience Manager] en [!DNL Dynamic Media] publicatie is ontkoppeld en kan afzonderlijk plaatsvinden om dit te bereiken. Zie [selectief publiceren](/help/assets/dynamic-media/selective-publishing.md).
-   * Beheerders kunnen nu opnieuw instellen [!DNL Dynamic Media] Wachtwoord van de Cloud Service dat bij levering wordt ontvangen. U kunt de voorinstelling uitvoeren in [!DNL Experience Manager] gebruikersinterface, zonder de noodzaak [!DNL Dynamic Media Classic] bureaubladtoepassing.
+   * Beheerders kunnen nu opnieuw instellen [!DNL Dynamic Media] Wachtwoord van de Cloud Service dat bij levering wordt ontvangen. U kunt de voorinstelling uitvoeren in [!DNL Experience Manager] gebruikersinterface, zonder de noodzaak om [!DNL Dynamic Media Classic] bureaubladtoepassing.
 
 * Zie voor meer informatie over de volgende verbeteringen [nieuwe functies in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
@@ -50,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Uitgebrachte CIF Core Components v1.3.0. Zie [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) voor meer informatie .
+* Uitgegeven CIF Core Components v1.3.0. Zie [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) voor meer informatie .
 
 * Voorvertoningsmogelijkheden met product/categorie voor product- en categoriesjablonen zijn nu beschikbaar. Zo kunnen zakelijke gebruikers/marketers in AEM de product-/categoriesjablonen met echte gegevens bekijken.
 
@@ -62,13 +64,13 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Opgeloste problemen {#bug-fixes-commerce}
 
-* Commerce Cloud configuraties respecteerden overerving niet. Dit is gecorrigeerd om ervoor te zorgen dat de configuratie waarden erft.
+* Bij configuraties van Commercen Cloud is de overerving niet gerespecteerd. Dit is gecorrigeerd om ervoor te zorgen dat de configuratie waarden erft.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Releasedatum {#release-date-cm}
 
-De releasedatum voor [!UICONTROL Cloud Manager] Versie 2020.9.0 is 3 september 2020.
+De releasedatum voor [!UICONTROL Cloud Manager] Versie 202.9.0 is 3 september 2020.
 
 ### Wat is er nieuw? {#what-is-new-cloud-manager}
 
@@ -82,11 +84,11 @@ De releasedatum voor [!UICONTROL Cloud Manager] Versie 2020.9.0 is 3 september 2
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Readiness Analyzer Release v1.1.0.
+Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cloud Readiness Analyzer Release v1.1.0.
 
 ### Nieuwe functies {#what-is-new-cra}
 
-* De Cloud Readiness Analyzer (CRA) heeft een startstatusconsole die een expliciete **Rapport genereren** klikt de gebruiker om CRA uit te voeren.
+* De Cloud Readiness Analyzer (CRA) heeft een startstatusconsole die een expliciete **Rapport genereren** klikt de gebruiker om de CRA uit te voeren.
 
 * De CRA UI toont vooruitgang terwijl het loopt. Er worden items weergegeven die worden geanalyseerd en bevindingen tijdens de uitvoering worden gevonden.
 
@@ -96,7 +98,7 @@ Volg deze sectie om te weten te komen wat nieuw is en de updates voor Cloud Read
 
 * In bepaalde gevallen werd het CRA-rapport niet bijgewerkt nadat het werd afgedwongen om te vernieuwen. Dit is opgelost in deze versie.
 
-## De tool Content Transfer {#content-transfer-tool}
+## Inhoud overbrengen {#content-transfer-tool}
 
 Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het Hulpmiddel van de Overdracht van de Inhoud v1.1.10.
 
@@ -110,7 +112,7 @@ Volg deze sectie om te leren over wat nieuw is en de updates voor Versie van het
 
 * Beschrijving van validatiebericht toegevoegd voor *URL* en *Naam migratieset*.
 
-## Tools voor herstructurering van code {#code-refactoring}
+## Gereedschappen voor het verfijnen van code {#code-refactoring}
 
 Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen van het Refactoring van de Code is.
 
@@ -118,8 +120,8 @@ Volg deze sectie om te leren over wat nieuw en de updates voor de Hulpmiddelen v
 
 * De insteekmodule AIO-CLI ondersteunt Repository Modernizer en stelt gebruikers in staat het gereedschap uit te voeren met de insteekmodule.
 
-  Zie [Git-bron: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie .
+  Zie [Git-bron: audio-cli-plugin-aem-cloud-service-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) voor meer informatie .
 
 * Het nut van de Modernizer van de Bewaarplaats kan worden gebruikt om bestaande projectpakketten in pakketten te herstructureren die met de projectstructuur compatibel zijn die voor AEM as a Cloud Service wordt bepaald.
 
-  Zie [Git-bron: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie .
+  Zie [Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor meer informatie .

@@ -2,7 +2,9 @@
 title: SPA
 description: In een SPA verschaft de paginacomponent niet de HTML-elementen van de onderliggende componenten, maar delegeert deze aan het SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -15,12 +17,12 @@ De paginacomponent voor een SPA verstrekt niet de HTML elementen van zijn kindco
 
 ## Paginamodel beheren {#page-model-management}
 
-De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven [`PageModelManager`](blueprint.md#pagemodelmanager) module. De SPA moet `PageModelManager` wanneer deze wordt geïnitialiseerd om het eerste paginamodel op te halen en zich te registreren voor modelupdates, meestal gemaakt wanneer de auteur de pagina bewerkt via de Pagina-editor. De `PageModelManager` is toegankelijk via SPA project als een npm-pakket. Als tolk tussen AEM en de SPA `PageModelManager` is bedoeld om de SPA te vergezellen.
+De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven [`PageModelManager`](blueprint.md#pagemodelmanager) -module. De SPA moet met de `PageModelManager` wanneer deze wordt geïnitialiseerd om het eerste paginamodel op te halen en zich te registreren voor modelupdates, die meestal worden gemaakt wanneer de auteur de pagina bewerkt via de Pagina-editor. De `PageModelManager` is toegankelijk via SPA project als een npm-pakket. Als tolk tussen AEM en de SPA `PageModelManager` is bedoeld om de SPA te vergezellen.
 
 Als u het schrijven van de pagina wilt toestaan, wordt een clientbibliotheek met de naam `cq.authoring.pagemodel.messaging` moet worden toegevoegd om een communicatiekanaal tussen de SPA en de pagina-editor te bieden. Als de SPA paginacomponent overerft van de pagina-component wcm/core, zijn er de volgende opties om de `cq.authoring.pagemodel.messaging` beschikbare categorie voor clientbibliotheek:
 
 * Als de sjabloon bewerkbaar is, voegt u de categorie van de clientbibliotheek toe aan het paginabeleid.
-* Voeg de categorie van de cliëntbibliotheek toe gebruikend `customfooterlibs.html` van de paginacomponent.
+* Voeg de categorie van de cliëntbibliotheek toe gebruikend `customfooterlibs.html` van de pagina-component.
 
 Vergeet niet de opname van de `cq.authoring.pagemodel.messaging` in de context van de pagina-editor.
 
@@ -66,9 +68,9 @@ De eigenschappen van de meta-bron die de SPA inhoud beschrijven:
 ## Eigenschappen van meta {#meta-properties}
 
 * `cq:wcmmode`: WCM-modus van de editors (bijvoorbeeld pagina, sjabloon)
-* `cq:pagemodel_root_url`: URL van het basismodel van de app. Cruciaal bij directe toegang tot een onderliggende pagina, aangezien het onderliggende paginamodel een fragment is van het basismodel van de app. De `PageModelManager` vervolgens wordt het oorspronkelijke toepassingsmodel systematisch opnieuw samengesteld zodat de toepassing wordt ingevoerd vanaf het beginpunt van de toepassing.
-* `cq:pagemodel_router`: Schakel de [`ModelRouter`](routing.md) van de `PageModelManager` bibliotheek
-* `cq:pagemodel_route_filters`: Door komma&#39;s gescheiden lijsten of reguliere expressies om routes te bieden [`ModelRouter`](routing.md) moet worden genegeerd.
+* `cq:pagemodel_root_url`: URL van het hoofdmodel van de app. Cruciaal bij directe toegang tot een onderliggende pagina, aangezien het onderliggende paginamodel een fragment is van het basismodel van de app. De `PageModelManager` vervolgens wordt het oorspronkelijke toepassingsmodel systematisch opnieuw samengesteld zodat de toepassing wordt ingevoerd vanaf het beginpunt van de toepassing.
+* `cq:pagemodel_router`: Schakel het dialoogvenster [`ModelRouter`](routing.md) van de `PageModelManager` bibliotheek
+* `cq:pagemodel_route_filters`: Door komma&#39;s gescheiden lijst of reguliere expressies om routes te bieden voor de [`ModelRouter`](routing.md) moet worden genegeerd.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 
@@ -78,5 +80,5 @@ De synchronisatie van de overlays wordt gegarandeerd door dezelfde Mutation Obse
 
 Wanneer de verpletterende mogelijkheden worden toegelaten, is de veronderstelling dat de uitvoer JSON van de SPA de verschillende routes van de toepassing dankzij de uitvoer JSON van de AEM navigatiecomponent bevat. De JSON-uitvoer van de AEM navigatiecomponent kan via de volgende twee eigenschappen worden geconfigureerd in het inhoudsbeleid voor SPA basispagina:
 
-* `structureDepth`: Aantal dat overeenkomt met de diepte van de geëxporteerde structuur
+* `structureDepth`: Nummer dat overeenkomt met de diepte van de geëxporteerde structuur
 * `structurePatterns`: Regex van array van regexes die overeenkomt met de pagina die geëxporteerd moet worden

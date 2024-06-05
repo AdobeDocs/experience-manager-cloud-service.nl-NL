@@ -1,13 +1,15 @@
 ---
 title: Live checklist
 description: Meer informatie over alle elementen die nodig zijn voor een geslaagde GoLive met AEM as a Cloud Service
-source-git-commit: 4a03e2fe3519fd9e0d8d646526ea6c9cc6637f52
+exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
 
 ---
-
 
 # Live checklist {#Go-Live-Checklist}
 

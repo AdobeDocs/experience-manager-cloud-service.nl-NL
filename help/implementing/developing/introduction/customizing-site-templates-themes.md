@@ -1,13 +1,13 @@
 ---
 title: Sitesjablonen en -thema's aanpassen
 description: Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de initiële inhoud vooraf te definiëren en hoe thema's worden gebruikt om de sitestijl te definiëren waarmee u snel sites kunt maken.
-feature: Administering
+feature: Administering, Developing
 role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de init
 Om AEM beheerders toe te staan om plaatsen snel tot stand te brengen die aan bedrijfsbehoeften worden aangepast, AEM steunt het creëren van nieuwe plaatsen door plaatsmalplaatjes en plaatsthema&#39;s te gebruiken.
 
 * An **Sjabloon AEM** bevat over het algemeen inhoud en structuur van de basissite en informatie over de siteopmaak, het thema van de site genoemd, zodat u snel met de nieuwe site kunt beginnen. Sjablonen zijn krachtig omdat ze opnieuw kunnen worden gebruikt en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
-* An **AEM** is een pakket met de CSS-, JavaScript- en statische bronnen die de opmaak van uw AEM site definiëren en die voldoet aan de structuur van een AEM-sitethema.
+* An **Sitethema AEM** is een pakket met de CSS-, JavaScript- en statische bronnen die de opmaak van uw AEM site definiëren en die voldoet aan de structuur van een AEM-sitethema.
 
 ## Aanvullende bronnen {#additional-resources}
 

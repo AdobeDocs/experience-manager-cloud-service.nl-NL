@@ -2,9 +2,11 @@
 title: Opmerkingen bij de release 2020.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1103'
 ht-degree: 0%
 
 ---
@@ -63,9 +65,9 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Release CIF Venia Reference Site - 2020.10.2 die de nieuwste versie CIF Core Components versie v1.4.0 bevat. Zie [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) voor meer informatie .
+* Release CIF Venia Reference Site - 2020.10.2 die de nieuwste versie CIF Core Components versie v1.4.0 bevat. Zie [CIF Venia-referentiegebied](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) voor meer informatie .
 
-* Uitgegeven CIF Core Components v1.4.0. Zie [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) voor meer informatie .
+* Uitgegeven CIF Core Components v1.4.0. Zie [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) voor meer informatie .
 
 ### Opgeloste problemen {#bug-fixes-commerce}
 
@@ -116,7 +118,7 @@ Zie [Weergaveomgeving](/help/implementing/cloud-manager/manage-environments.md#v
 
 * Er is ondersteuning toegevoegd voor het zoeken naar workflowinstanties op basis van workflowtitel, workflowmodel, status, initiator, Payload Path en Begindatum. Zie [Workflowinstanties zoeken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
-## De tool Content Transfer {#content-transfer-tool}
+## Inhoud overbrengen {#content-transfer-tool}
 
 Meer informatie over nieuwe functies en updates voor [Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 

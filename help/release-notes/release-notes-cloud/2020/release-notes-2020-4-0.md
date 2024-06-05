@@ -2,9 +2,11 @@
 title: Opmerkingen bij de release van Adobe Experience Manager as a Cloud Service voor 2020.4.0
 description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.4.0."
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -38,7 +40,7 @@ Meer informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DN
 
      ![Geselecteerde elementen opnieuw verwerken met een specifiek verwerkingsprofiel](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
-   * [!DNL Dynamic Media]: Toegevoegde selectieve publicatieconfiguratie zodat elementen automatisch worden gepubliceerd voor een beveiligde voorvertoning. Bovendien kunnen de activa uitdrukkelijk aan Experience Manager worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren.
+   * [!DNL Dynamic Media]: Toegevoegde selectieve publicatieconfiguratie zodat elementen alleen automatisch worden gepubliceerd voor een beveiligde voorvertoning. Bovendien kunnen de activa uitdrukkelijk aan Experience Manager worden gepubliceerd zonder aan DMS7 voor levering in het openbare domein te publiceren.
 
 ### Opgeloste problemen {#assets-bug-fixes}
 
@@ -47,7 +49,7 @@ Meer informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DN
 
 >[!MORELIKETHIS]
 >
->* [Over Adobe-itemkoppeling](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Over Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Brand Portal configureren](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Vorm Experience Manager om met de Verbinding van Activa te werken](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Workflow maken in Experience Manager met behulp van asset microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
@@ -70,4 +72,4 @@ Meer informatie over nieuwe functies, verbeteringen en foutoplossingen voor [!DN
 * De Gemaakt configuratie die in de bouwstijlcontainer wordt gebruikt werd bijgewerkt om imaturen te vermijden toen het downloaden van artefactmeta-gegevens.
 * In sommige gevallen, zou de stap van het Beeld van de Bouwstijl er niet in slagen om klantenpakketten met succes te downloaden.
 * Bepaalde omstandigheden die zich niet vaak voordoen, verhinderen dat omgevingen worden verwijderd.
-* Experience Cloud-meldingen werden niet altijd ontvangen.
+* Experiencen Cloud werden niet consequent gemeld.

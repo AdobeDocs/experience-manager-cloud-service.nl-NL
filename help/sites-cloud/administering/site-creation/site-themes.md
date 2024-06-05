@@ -4,9 +4,10 @@ description: Leer hoe AEM sitethema's kunnen worden gebruikt om de stijl en het 
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Sites die zijn gemaakt met AEM sitesjablonen maken het eenvoudig downloaden, aan
 
 >[!NOTE]
 >
->AEM sitethema&#39;s mogen niet worden verward met [Sitesjablonen AEM](site-templates.md). AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen definieert u de sitestructuur en de initiële inhoud. Sjablonen bevatten een AEM sitethema dat het mogelijk maakt [snel site maken](create-site.md).
+>AEM sitethema&#39;s mogen niet worden verward met [Sjablonen AEM](site-templates.md). AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen definieert u de sitestructuur en de initiële inhoud. Sjablonen bevatten een AEM sitethema dat het mogelijk maakt [snel site maken](create-site.md).
 
 ## Sitethema&#39;s gebruiken {#using-themes}
 
@@ -47,7 +48,7 @@ Sitethema&#39;s zijn eenvoudig pakketten met een logische structuur die duidelij
 
 ## Standaardsitethema {#standard-site-theme}
 
-Adobe biedt een verwijzingsthema voor tips en trucs dat u kunt gebruiken als basis voor het maken van uw eigen thema. [Het standaardthema van de Plaats is beschikbaar op GitHub](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
+Adobe biedt een verwijzingsthema met tips en trucs dat u kunt gebruiken als basis voor het maken van uw eigen thema. [Het standaardthema van de Plaats is beschikbaar op GitHub](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
 
 ## Sitethema&#39;s ontwikkelen {#developing-themes}
 

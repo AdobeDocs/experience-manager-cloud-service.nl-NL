@@ -2,7 +2,10 @@
 title: Functionele tests
 description: Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 0%

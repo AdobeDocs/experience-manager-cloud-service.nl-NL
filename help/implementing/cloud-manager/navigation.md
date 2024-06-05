@@ -1,13 +1,16 @@
 ---
 title: Navigeren door de interface van Cloud Manager
 description: Leer hoe de interface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma's en omgevingen te beheren.
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 0%
 
 ---
-
 
 # Navigeren door de gebruikersinterface van Cloudbeheer {#navigation}
 

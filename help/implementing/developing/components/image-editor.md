@@ -2,7 +2,9 @@
 title: Afbeeldingseditor
 description: De Afbeeldingseditor is een AEM en kan door componenten worden gebruikt om het bewerken van afbeeldingen door makers van inhoud te vergemakkelijken.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
@@ -44,7 +46,7 @@ Scalable Vector Graphics (SVG) wordt ondersteund door de Afbeeldingseditor.
 
 In bepaalde situaties moeten ontwerpacties voor bepaalde MIME-typen worden beperkt, omdat er geen ondersteuning is voor verwerking op de server. Het bewerken van SVG-afbeeldingen is bijvoorbeeld niet toegestaan.
 
-Plug-ins in de Afbeeldingseditor kunnen selectief worden ingeschakeld door een MIME-type in te stellen als `supportedMimeTypes` eigenschap op het configuratieknooppunt van de individuele plug-in.
+Plug-ins in de Afbeeldingseditor kunnen selectief worden ingeschakeld door een MIME-type in te stellen `supportedMimeTypes` eigenschap op het configuratieknooppunt van de individuele plug-in.
 
 ### Voorbeeld {#example}
 

@@ -2,16 +2,18 @@
 title: SPA diep duiken
 description: De AEM SPA Editor SDK is opgenomen in een reeks AEM Gems-sessies. Deze reeks wordt gehost door Adobe-engineers en kan dienen als een ideale gids voor een beter begrip van de AEM SPA Editor SDK op een laag niveau, gehost door Adobe-engineers.
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
-source-git-commit: f349d4db8794f85c17e3de5abf33edf84262267f
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
 # SPA diep duiken {#spa-deep-dives}
 
-De AEM SPA Editor SDK is opgenomen in een reeks AEM Gems-sessies. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) is een reeks technische diepteduiken van Adobe experts . Deze reeks wordt gehost door Adobe-engineers en kan dienen als een ideale gids voor een beter begrip van de AEM SPA Editor SDK op een laag niveau.
+De AEM SPA Editor SDK is opgenomen in een reeks AEM Gems-sessies. [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) een reeks technische diepteduiken van deskundigen van de Adobe . Deze reeks wordt gehost door Adobe-engineers en kan dienen als een ideale gids voor een beter begrip van de AEM SPA Editor SDK op een laag niveau.
 
 ## Gem-sessies {#gem-sessions}
 

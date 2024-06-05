@@ -2,9 +2,11 @@
 title: Aangepaste foutpagina's
 description: AEM wordt geleverd met een standaardfouthandler voor de afhandeling van HTTP-fouten, die kan worden aangepast.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -38,7 +40,7 @@ U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de
 
    Het doelpad bestaat niet standaard. U moet het dus maken wanneer u dit voor het eerst doet.
 
-1. Ga naar `/apps/sling/servlet/errorhandler`. Hier kunt u:
+1. Navigeren naar `/apps/sling/servlet/errorhandler`. Hier kunt u:
 
    * bewerk het juiste bestaande script om de vereiste informatie op te geven. of
    * Maak en bewerk een nieuw script voor de vereiste code.

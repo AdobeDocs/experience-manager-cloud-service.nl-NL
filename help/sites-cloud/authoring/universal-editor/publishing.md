@@ -2,7 +2,10 @@
 title: Inhoud publiceren met de Universal Editor
 description: Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 785a0db1ba302b8730480651802f98e802abc6d4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Overzicht van de universele editor voor AEM ontwikkelaars
 description: Als u een AEM ontwikkelaar bent geïnteresseerd in hoe de Universele Redacteur werkt en hoe te om het in uw project te gebruiken, geeft dit document u een inleiding van begin tot eind door u door het van instrumenten voorzien van instrumenten te leiden het WKND project om met de Universele Redacteur te werken.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%

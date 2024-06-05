@@ -2,9 +2,11 @@
 title: Opmerkingen bij de release 2021.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Opmerkingen bij de release 2021.11.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -61,15 +63,15 @@ Kijk eens naar de [Overzicht release december 2021](https://video.tv.adobe.com/v
 
 * **Forms Portal**: U kunt [Forms Portal](/help/forms/configure-forms-portal.md) om gepubliceerde adaptieve formulieren op een AEM Sites-pagina weer te geven. Hiermee kan een sitebezoeker alle beschikbare formulieren detecteren. Bovendien kan de bezoeker de portal Formulieren gebruiken om een concept van een adaptief formulier op te slaan en te openen en de versie van de PDF van een ingediend adaptief formulier te bekijken.
 
-## CIF-invoegtoepassing {#cloud-services-cif}
+## CIF invoegtoepassing {#cloud-services-cif}
 
 ### Nieuwe functies {#what-is-new-cif}
 
-* Uitgebreide myAccount-componenten die zijn gebaseerd op uitbreidbare Peregrine-componenten van de Handel
+* Uitgebreide myAccount-componenten die zijn gebaseerd op uitbreidbare Peregrine-componenten van Commerce
 
 ![Uitgebreide myAccount-componenten](/help/assets/CIF/extended-myAccount-components.png)
 
-* Auteurs kunnen ad-hoc Product Recommendations van de Handel tot stand brengen gebruikend extra advisetypes
+* Auteurs kunnen ad-hoc Commerce Product Recommendations tot stand brengen gebruikend extra advisetypes
 
 * Ondersteuning voor cadeaukaarten in AEM Storefront
 

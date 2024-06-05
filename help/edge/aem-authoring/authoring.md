@@ -3,7 +3,8 @@ title: Inhoud ontwerpen voor Edge Delivery Services
 description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM inhoud ontwerpt met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%

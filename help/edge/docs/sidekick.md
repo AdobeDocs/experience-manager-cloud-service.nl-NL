@@ -1,10 +1,12 @@
 ---
-description: "​​Tit AEM sidekick biedt de auteur van inhoud een werkbalk met contextbewuste opties, zodat deze de inhoud rechtstreeks vanaf de pagina's van uw website kan bewerken, voorvertonen en publiceren."
+description: ​ ​ het AEM sidekick biedt inhoudsauteurs een werkbalk met contextbewuste opties zodat ze hun inhoud rechtstreeks vanaf de pagina's van uw website kunnen bewerken, voorvertonen en publiceren.
 title: De AEM Sidekick gebruiken
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
+exl-id: 9a833adc-0b69-4f58-94d3-7a25cf774703
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '38'
+source-wordcount: '37'
 ht-degree: 0%
 
 ---

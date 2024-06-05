@@ -3,7 +3,9 @@ title: Toegangstokens genereren voor server-side API's (verouderd)
 description: Leer hoe u communicatie tussen een externe server en AEM as a Cloud Service vergemakkelijkt door een beveiligd JWT Token te genereren
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -123,7 +125,7 @@ Zie de [Documentatie ontwikkelaarsrichtlijnen](/help/implementing/developing/int
 
 >[!NOTE]
 >
-Het token voor lokale ontwikkelingstoegang is maximaal 24 uur geldig waarna het opnieuw moet worden gegenereerd met dezelfde methode.
+>Het token voor lokale ontwikkelingstoegang is maximaal 24 uur geldig waarna het opnieuw moet worden gegenereerd met dezelfde methode.
 
 Ontwikkelaars kunnen dit token gebruiken om aanroepen uit te voeren vanuit hun niet-AEM testtoepassing naar een AEM as a Cloud Service omgeving. De ontwikkelaar gebruikt dit token doorgaans met de niet-AEM toepassing op zijn eigen laptop. Bovendien is de AEM als Cloud doorgaans een omgeving die geen productie heeft.
 
@@ -152,7 +154,7 @@ Nadat u op de knop hebt gedrukt, wordt een nieuwe set referenties gegenereerd. U
 
 >[!NOTE]
 >
-Nadat u op de knop **Referenties service vernieuwen** blijven de oude gegevens geregistreerd tot ze verlopen, maar alleen de meest recente set is op elk gewenst moment beschikbaar om te worden bekeken in de Developer Console.
+> Nadat u op de knop **Referenties service vernieuwen** blijven de oude gegevens geregistreerd tot ze verlopen, maar alleen de meest recente set is op elk gewenst moment beschikbaar om te worden bekeken in de Developer Console.
 
 ## Intrekking van servicereferenties {#service-credentials-revocation}
 

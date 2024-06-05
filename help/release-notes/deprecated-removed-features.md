@@ -2,7 +2,9 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: b071cf1d88e702dfdf38c18dc94488e94fc4bc21
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 0%

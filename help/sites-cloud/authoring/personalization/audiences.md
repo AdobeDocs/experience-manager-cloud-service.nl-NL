@@ -1,15 +1,18 @@
 ---
-title: Audiences beheren
+title: Soorten publiek beheren
 description: Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-account maken, organiseren en beheren of segmenten voor ContextHub beheren
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '885'
 ht-degree: 9%
 
 ---
 
-# Audiences beheren{#managing-audiences}
+# Soorten publiek beheren{#managing-audiences}
 
 Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-account maken, organiseren en beheren of segmenten voor ContextHub beheren:
 
