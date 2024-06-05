@@ -1,14 +1,14 @@
 ---
-title: Migratiehulpprogramma voor het converteren van adaptieve Forms op basis van basiscomponenten naar basiscomponentformulieren
-description: Leer om het Nut van de Migratie te installeren en te gebruiken om Adaptive Forms die op de componenten van de Stichting wordt gebaseerd in kerncomponentengebaseerde vormen om te zetten.
-Keywords: Migration Utility tool, Convert Adaptive Forms based on foundation components to core component based forms, Convert Foundation forms to Core components forms, Using Modernizer tool to convert Foundation Components to Core components in forms.
+title: Hulpmiddel van het Hulpmiddel van de migratie/AEM Moderniseer Hulpmiddelen om Aangepaste Forms om te zetten die op de Componenten van de Stichting aan de Component van de Kern wordt gebaseerd vormen
+description: Leer om Hulpmiddelen van het Hulpprogramma van de Migratie te installeren en te gebruiken/AEM Moderniseren om Aangepaste Forms om te zetten die op de Componenten van de Stichting aan de Vorm van de Kern wordt gebaseerd vormen.
+Keywords: Migration Utility Tool, Convert Adaptive Forms based on Foundation Components to Core Component based forms, Convert Foundation forms to Core Components forms, Using Modernizer Tool to convert Foundation Components to Core Components in forms.
 role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -16,59 +16,64 @@ ht-degree: 0%
 
 # Inleiding
 
-U kunt het migratiehulpprogramma gebruiken om adaptieve Forms op basis van stichtingscomponenten om te zetten in kerncomponentformulieren. U kunt de [Gereedschap AEM moderniseren](https://opensource.adobe.com/aem-modernize-tools/) als migratiehulpprogramma. De [Gereedschappen AEM moderniseren](https://opensource.adobe.com/aem-modernize-tools/) bieden een reeks hulpprogramma&#39;s die worden gebruikt voor de conversie van Adaptive Forms op basis van basiscomponenten naar de moderne en ondersteunde mogelijkheden van kerncomponenten.
+Het Forms Conversion-hulpprogramma, onderdeel van [Gereedschap AEM moderniseren](https://opensource.adobe.com/aem-modernize-Tools/) Met deze suite kunt u Adaptive Forms die met oudere Foundation Components is gebouwd, eenvoudig converteren naar formulieren die gebruikmaken van de moderne, ondersteunde mogelijkheden van Core Components.
 
 ## Wat is AEM moderniseringsgereedschappen?
 
-[Gereedschappen AEM moderniseren](https://opensource.adobe.com/aem-modernize-tools/) verwijst naar een reeks hulpprogramma&#39;s of softwaretoepassingen die zijn ontworpen om het proces van modernisering of actualisering van Adobe Experience Manager-projecten (AEM) te vergemakkelijken. Deze hulpmiddelen helpen typisch bij het omzetten van oudere componenten of functionaliteit binnen AEM in nieuwere, efficiëntere, en gesteunde alternatieven.
+[Gereedschappen AEM moderniseren](https://opensource.adobe.com/aem-modernize-Tools/) verwijst naar een reeks hulpprogramma&#39;s of softwaretoepassingen die zijn ontworpen om het proces van modernisering of actualisering van Adobe Experience Manager-projecten (AEM) te vergemakkelijken. Deze hulpmiddelen helpen typisch bij het omzetten van oudere componenten of functionaliteit binnen AEM in nieuwere, efficiëntere, en gesteunde alternatieven. Het Forms Conversion-hulpprogramma is geïnstalleerd onder AEM Moderniseringsgereedschappen voor het omzetten van adaptieve Forms op basis van Foundation Components in op Core Component gebaseerde formulieren.
 
-AEM Moderniseringsgereedschappen converteert Adaptief Forms dat is gebaseerd op oudere basiscomponenten naar nieuwere, op componenten gebaseerde basisformulieren. Dit conversieproces zorgt ervoor dat de formulieren zijn afgestemd op moderne standaarden en mogelijkheden, waardoor de prestaties, compatibiliteit en het onderhoudsgemak binnen de AEM kunnen worden verbeterd.
+Het Forms Conversion-hulpprogramma zet Adaptive Forms die is gebaseerd op oudere Foundation Components om in nieuwere op Core Component gebaseerde formulieren. Dit conversieproces zorgt ervoor dat de formulieren zijn afgestemd op moderne standaarden en mogelijkheden, waardoor de prestaties, compatibiliteit en het onderhoudsgemak binnen de AEM kunnen worden verbeterd.
 
 ![Gereedschappen AEM moderniseren](/help/forms/assets/aem-modernize-tools.png)
 
 >[!NOTE]
 > 
-> U wordt aangeraden de AEM Moderniseren Tools op uw lokale AEM te installeren. Migreer de op stichting-gebaseerde vormen aan kern op component-gebaseerde vormen. Download het formulier samen met de bijbehorende middelen. Vervolgens uploadt u het formulier en de bijbehorende elementen naar de vereiste omgeving.
+> U wordt aangeraden de AEM Moderniseren Tools op uw lokale AEM te installeren. Migreer de adaptieve Forms op basis van Foundation Components naar Core Component-formulieren. Download het formulier samen met de bijbehorende middelen. Vervolgens uploadt u het formulier en de bijbehorende elementen naar de vereiste omgeving.
+
+## Overwegingen bij het gebruiken van de AEM Moderniseren Hulpmiddelen {#considerations}
+
+* Bij geslaagde conversies worden alle regels verwijderd die op het formulier worden toegepast. Regels worden niet automatisch gemigreerd. U moet deze regels handmatig opnieuw maken en toepassen op het geconverteerde formulier.
+* De vertaalinstellingen die in het oorspronkelijke formulier worden gebruikt, worden niet overgenomen. Vertaling voor het geconverteerde formulier opnieuw configureren.
+  <!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
 
 ## Voorwaarden voor het gebruik AEM Moderniseren van gereedschappen
 
 * [Lokale ontwikkelomgeving instellen voor AEM Forms](/help/forms/setup-local-development-environment.md)
-* [Aangepaste Forms-kerncomponenten voor uw omgeving inschakelen.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Schakel Adaptieve Forms Core-componenten in voor uw omgeving.](/help/forms/enable-adaptive-forms-core-components.md)
 
 * Voeg uw gebruikers aan toe [!DNL forms-users] groep. De leden van de [!DNL forms-users] groep heeft machtigingen om een adaptief formulier te maken.
 
 * De gebruikers met de volgende rollen hebben de toestemmingen om de AEM Moderniseren Hulpmiddelen binnen een AEM milieu te installeren:
    * Ontwikkelingsrol
-   * Beheerdersrol Voor een gedetailleerde lijst met formulierspecifieke gebruikersgroepen raadpleegt u [Groepen en machtigingen](forms-groups-privileges-tasks.md).
+   * Beheerdersrol
+
+Zie voor een gedetailleerde lijst met formulierspecifieke gebruikersgroepen [Groepen en machtigingen](forms-groups-privileges-tasks.md).
 
 ## Installeren en configureren AEM Moderniseringsgereedschappen
 
-Stappen om te installeren en te vormen AEM de Hulpmiddelen van de Modernisering:
+Om de AEM Moderniseren Hulpmiddelen te installeren en te vormen:
 
-1. [Installeer AEM Moderniseringsgereedschappen in uw lokale AEM Forms-omgeving](#install-aem-modernize-tools)
-2. [Gereedschappen AEM moderniseren inschakelen voor uw lokale AEM Forms-omgeving](#enable-aem-modernize-tools)
+1. [Installeer AEM Moderniseringsgereedschappen in uw lokale AEM Forms-omgeving](#install-aem-modernize-Tools)
+2. [Gereedschappen AEM moderniseren inschakelen voor uw lokale AEM Forms-omgeving](#enable-aem-modernize-Tools)
 
-### Installeer AEM Moderniseringsgereedschappen in uw lokale AEM Forms-omgeving {#install-aem-modernize-tools}
+### Installeer AEM Moderniseringsgereedschappen in uw lokale AEM Forms-omgeving {#install-aem-modernize-Tools}
 
 Voer de volgende stappen uit om AEM Moderniseer Hulpmiddelen aan uw lokale milieu van AEM Forms te installeren:
 
-1. Start de lokale AEM Auteur Service door het volgende uit te voeren vanaf de opdrachtregel:
+1. Open de opdrachtprompt of terminal.
+1. Start de lokale AEM Auteur Service. Voer bijvoorbeeld de volgende code uit van het begin tot de lokale AEM Auteur-instantie:
 
    `java -jar aem-author-p4502.jar`
 
-   >[!NOTE]
-   >
-   > Geef het beheerderswachtwoord op als `admin`. Om het even welk admin wachtwoord is aanvaardbaar, nochtans adviseert het gebruiken van het gebrek voor lokale ontwikkeling om de behoefte te verminderen om opnieuw te vormen.
-
-1. Klonen met [Gereedschappen AEM moderniseren](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) in uw lokale systeem.
+1. Klonen met [Gereedschap AEM moderniseren](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms) in uw lokale systeem.
 
    ```Shell
-   git clone [Path of Git repository of AEM Modernize Tools]
+   git clone [Path of Git repository of AEM Modernize Tool]
    ```
-   Vervang de [Het pad van de Git-opslagplaats van AEM Moderniseringsgereedschappen] met de werkelijke URL van de overeenkomstige Git Repository van de AEM Moderniseren Hulpmiddelen.
-Nadat de opdracht met succes is uitgevoerd, beschikt u over een lokale kopie van de AEM opslagplaats voor moderniseringsgereedschappen die beschikbaar is op uw computer.
 
-1. Ga naar de`[AEM Modernize Tools Repository]`  in uw lokale systeem.
+   Nadat u de opdracht met succes hebt uitgevoerd, beschikt u over een lokale kopie van de opslagplaats voor het gereedschap AEM moderniseren op uw computer.
+
+1. Ga naar de`[AEM Modernize Tool Repository]`  in uw lokale systeem.
 1. Voer de volgende opdracht uit:
 
    ```Shell
@@ -76,14 +81,14 @@ Nadat de opdracht met succes is uitgevoerd, beschikt u over een lokale kopie van
    ```
 ![Installatieafbeelding gelukt](/help/forms/assets/aem-modernize-install-steps.png)
 
-Na succesvolle installatie, AEM de Moderniseren Hulpmiddelen beschikbaar voor uw milieu.
+Nadat de installatie is voltooid, worden de AEM Moderniseringsgereedschappen beschikbaar voor uw omgeving.
 
-![Gereedschappen AEM moderniseren inschakelen](/help/forms/assets/enable-aem-modernizer-tools.png)
+![Hulpprogramma AEM migratie inschakelen](/help/forms/assets/enable-aem-modernizer-tools.png)
 
 
-### Gereedschappen AEM moderniseren inschakelen voor uw lokale AEM Forms-omgeving{#enable-aem-modernize-tools}
+### Gereedschappen AEM moderniseren inschakelen voor uw lokale AEM Forms-omgeving{#enable-aem-modernize-Tools}
 
-Om de AEM Moderniseren Hulpmiddelen voor uw AEM Milieu toe te laten en te gebruiken, is het belangrijk om de regels voor het migreren van stichtingscomponenten aan kerncomponenten in kaart te brengen:
+Om de AEM Moderniseren Hulpmiddelen voor uw AEM Milieu toe te laten en te gebruiken, is het belangrijk om de regels voor het migreren van de Componenten van de Stichting aan de Componenten van de Kern in kaart te brengen:
 
 1. Meld u aan bij de auteur.
 1. Navigeren naar `http://[host]:[port]/system/console/configMgr`
@@ -93,11 +98,11 @@ Om de AEM Moderniseren Hulpmiddelen voor uw AEM Milieu toe te laten en te gebrui
 
 ![Componentregel AEM moderniseren](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
-## Voer AEM Moderniseringsgereedschappen uit om basiscomponenten te converteren naar basiscomponentformulieren
+## Het nut van de Omzetting van de Vorm van de looppas om de op componenten gebaseerde vormen van de Stichting in de vorm van de Component van de Kern om te zetten
 
 1. Ga naar **[!UICONTROL Tools > AEM Modernize Tools > Forms Conversion]**.
 
-   ![Gereedschappen voor AEM moderniseren selecteren](/help/forms/assets/aem-modernize-tools-select.png)
+   ![Gereedschappen AEM moderniseren selecteren](/help/forms/assets/aem-modernize-tools-select-form.png)
 
 1. Selecteer de **[!UICONTROL Forms Conversion]** -optie.
 
@@ -109,16 +114,16 @@ Om de AEM Moderniseren Hulpmiddelen voor uw AEM Milieu toe te laten en te gebrui
 
 1. Geef de **[!UICONTROL Job Name]**.
 1. In de **[!UICONTROL Form]** kunt u een van de volgende opties selecteren:
-   * **Geen** : Selecteer deze optie als formulierverwerking niet is vereist.
-   * **Herstellen** : Selecteer deze optie als u het formulier wilt terugzetten naar de status vóór de laatste conversie.
-   * **Kopiëren naar doel**: Selecteer deze optie als u het formulier wilt kopiëren voordat u de conversie uitvoert.
+   * **Geen** : Selecteer de optie als u geen kopie wilt maken van de formulieren op basis van de stichtingscomponent voordat u de formulierconversie start.
+   * **Herstellen** : Selecteer de optie om de status van het formulier te herstellen voordat u het formulier converteert.
+   * **Kopiëren naar doel**: Selecteer de optie om een kopie te maken van de formulieren op basis van de stichtingscomponent voordat u de formulierconversie start.
 In ons geval **Kopiëren naar doel** is geselecteerd. Als de **Kopiëren naar doel** is geselecteerd, wordt de **[!UICONTROL Source Path]** en **[!UICONTROL Target Path]** worden weergegeven.
 
 1. Geef de `source folder` naam in de **[!UICONTROL Source Path]**.
 1. Geef de `target folder` naam in de **[!UICONTROL Target Path]**.
 1. Selecteren **[!UICONTROL Next]**.
 1. Klikken op **[!UICONTROL Add Forms]**. Alle formulieren in het dialoogvenster `source folder` verschijnt op het scherm.
-1. Selecteer het formulier op basis van basiscomponenten om het te converteren naar een formulier op basis van basiscomponenten. U kunt ook meerdere formulieren selecteren.
+1. Selecteer de adaptieve Forms op basis van Foundation Components om deze om te zetten in op kerncomponenten gebaseerde formulieren. U kunt ook meerdere formulieren selecteren.
 
    ![Formulier selecteren voor gereedschap AEM moderniseren](/help/forms/assets/aem-modernize-tools-select-form.png)
 
@@ -138,17 +143,12 @@ In ons geval **Kopiëren naar doel** is geselecteerd. Als de **Kopiëren naar do
 1. Selecteren **[!UICONTROL Save and Close]** om de eigenschappen van het geconverteerde formulier opnieuw op te slaan.
    ![Hulpprogramma&#39;s moderniseren positieve formuliereigenschappen](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
-U ziet nu dat het adaptieve formulier dat is gebaseerd op basiscomponenten, wordt getransformeerd naar het adaptieve formulier dat is gebaseerd op basiscomponenten.
-
-## Overwegingen bij het gebruik van het migratiehulpprogramma {#considerations}
-
-* Als het formulier dat is gebaseerd op basiscomponenten aangepaste functieregels bevat, moet u deze regels voor het geconverteerde formulier herschrijven op basis van kerncomponenten.
-* Het omgezette formulier bevat geen regels in de regeleditor, waardoor de regels voor het omgezette formulier moeten worden herschreven.
-* U moet de vertaaltaak opnieuw maken voor het geconverteerde formulier.
+U kunt nu zien dat de Adaptieve Vorm die op de Componenten van de Stichting wordt gebouwd in de Adaptieve Vorm omzet die op de Componenten van de Kern wordt gebouwd.
 
 ## Aanbevolen procedures {#best-practices}
 
-* Het formulier dat is gebaseerd op basiscomponenten, bevat alleen de componenten die zijn gevonden in de op kerncomponenten gebaseerde componenten.
-* Controleer of de regels zijn opgemaakt in XML.
+* Verzeker uw op componenten gebaseerde vormen van de Stichting, gebruik slechts die componenten die een gelijkwaardig hebben [Kernonderdelen](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) beschikbaar. In gevallen waar u de Componenten van de Stichting gebruikt die geen gelijkwaardige Component van de Kern hebben, wordt de Component van de Stichting niet omgezet. Hierdoor werkt het niet correct tijdens het ontwerpen van een formulier
+* Zorg ervoor dat de regels om de Componenten van de Stichting aan de Componenten van de Kern te behandelen in XML worden geformatteerd.
+
 
 

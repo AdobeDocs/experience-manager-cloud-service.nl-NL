@@ -5,11 +5,10 @@ keywords: Voeg een douanefunctie toe, gebruik een douanefunctie, creeer een doua
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
+source-git-commit: d42728bb3eb81c032723db8467957d2e01c5cbed
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '4340'
 ht-degree: 0%
 
 ---
@@ -98,7 +97,7 @@ In de bovenstaande coderegel: `Input1` is een optionele parameter zonder standaa
 In de bovenstaande coderegel: `Input1` is een optionele parameter zonder standaardwaarde. Optionele parameter met standaardwaarde declareren:
 `@param {array} [input1=<value>]`
 `input1` is een optionele parameter van het type array met de standaardwaarde ingesteld op `value`.
-Zorg ervoor dat het parametertype tussen accolades staat {} en de parameternaam staat tussen vierkante haakjes [].
+Zorg ervoor dat het parametertype tussen accolades staat {} en de parameternaam staat tussen vierkante haken.
 
 Overweeg het volgende codefragment, waar input2 als facultatieve parameter wordt bepaald:
 
@@ -225,33 +224,124 @@ Stappen voor het maken van aangepaste functies zijn:
 1. [Een clientbibliotheek maken](#create-client-library)
 1. [Clientbibliotheek toevoegen aan een adaptief formulier](#use-custom-function)
 
+
+### Vereisten om een aangepaste functie te maken
+
+Voordat u een aangepaste functie toevoegt aan de Adaptive Forms, moet u het volgende doen:
+
+**Software:**
+
+* **Onbewerkte teksteditor (IDE)**: Terwijl om het even welke duidelijke tekstredacteur kan werken, biedt een Geïntegreerde Milieu van de Ontwikkeling (winde) zoals de Code van Microsoft Visual Studio geavanceerde eigenschappen voor het gemakkelijker uitgeven aan.
+
+* **Git:** Dit versiebeheersysteem is vereist voor het beheer van codewijzigingen. Als u deze niet hebt geïnstalleerd, kunt u deze downloaden van https://git-scm.com.
+
 ### Een clientbibliotheek maken {#create-client-library}
 
 U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. Voer de volgende stappen uit om een clientbibliotheek te maken:
 
-1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Een map maken onder de `[AEM Forms as a Cloud Service repository folder]/apps/` map. Maak bijvoorbeeld een map met de naam `experience-league`.
-1. Navigeren naar `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` en een `ClientLibraryFolder`. Maak bijvoorbeeld een clientbibliotheekmap als `customclientlibs`.
-1. Een eigenschap toevoegen `categories` met tekenreekstype. Wijs bijvoorbeeld de waarde toe `customfunctionscategory` aan de `categories` eigenschap voor de `customclientlibs` map.
+**De opslagplaats klonen**
+
+Klonen uw [AEM Forms as a Cloud Service opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+
+1. Open de opdrachtregel of het terminalvenster.
+
+1. Navigeer naar de gewenste locatie op uw computer waar u de opslagplaats wilt opslaan.
+
+1. Voer de volgende opdracht uit om de gegevensopslagruimte te klonen:
+
+   `git clone [Git Repository URL]`
+
+Met deze opdracht downloadt u de opslagplaats en maakt u een lokale map van de gekloonde opslagplaats op uw computer. In deze handleiding wordt deze map de [AEMaaCS-projectmap].
+
+**Een clientbibliotheekmap toevoegen**
+
+Nieuwe clientbibliotheekmap toevoegen aan de [AEMaaCS-projectmap]Voer de volgende stappen uit:
+
+1. Open de [AEMaaCS-projectmap] in een editor.
+
+   ![aangepaste mapstructuur voor functies](/help/forms/assets/custom-library-folder-structure.png)
+
+1. Zoeken `ui.apps`.
+1. Nieuwe map toevoegen. Voeg bijvoorbeeld een map toe met de naam `experience-league`.
+1. Navigeren naar `/experience-league/` en voeg een `ClientLibraryFolder`. Maak bijvoorbeeld een clientbibliotheekmap met de naam `customclientlibs`.
+
+   `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
+
+**Bestanden en mappen toevoegen aan de map Client Library**
+
+Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
+
+* .content.xml, bestand
+* js.txt, bestand
+* map js
+
+`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
+
+1. In de `.content.xml` Voeg de volgende coderegels toe:
+
+   ```javascript
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+   jcr:primaryType="cq:ClientLibraryFolder"
+   categories="[customfunctionscategory]"/>
+   ```
 
    >[!NOTE]
    >
    > U kunt elke naam kiezen voor `client library folder` en `categories` eigenschap.
 
-1. Een map maken met de naam `js`.
-1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` map.
-1. Voeg bijvoorbeeld een JavaScript-bestand toe. `function.js`. Het bestand bestaat uit de code voor de aangepaste functie.
-1. Sla de `function.js` bestand.
-1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` map.
-1. Een tekstbestand toevoegen als `js.txt`. Het bestand bevat:
+1. In de `js.txt` Voeg de volgende coderegels toe:
 
    ```javascript
-       #base=js
-       functions.js
+         #base=js
+       function.js
    ```
+1. In de `js` map, voeg het javascript-bestand toe als `function.js` Dit omvat de aangepaste functies:
 
-1. Sla de `js.txt` bestand.
-1. U kunt de wijzigingen in de opslagplaats toevoegen, vastleggen en doorvoeren met behulp van de onderstaande opdrachten:
+   ```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
+   
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
+   
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
+   
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+   
+    return age;
+    }
+   ```
+1. Sla de bestanden op.
+
+![aangepaste mapstructuur voor functies](/help/forms/assets/custom-function-added-files.png)
+
+**De nieuwe map opnemen in filter.xml**:
+
+1. Ga naar de `/ui.apps/src/main/content/META-INF/vault/filter.xml` bestand in uw [AEMaaCS-projectmap].
+
+1. Open het bestand en voeg de volgende regel aan het einde toe:
+
+   `<filter root="/apps/experience-league" />`
+1. Sla het bestand op.
+
+![xml, filter aangepaste functies](/help/forms/assets/custom-function-filterxml.png)
+
+**Implementeer de nieuwe clientbibliotheekmap in uw AEM omgeving**
+
+Implementeer de AEM as a Cloud Service, [AEMaaCS-projectmap]aan uw Cloud Service-omgeving. Implementeren in uw Cloud Service-omgeving:
+
+1. De wijzigingen vastleggen
+
+   1. U kunt de wijzigingen in de opslagplaats toevoegen, vastleggen en doorvoeren met behulp van de onderstaande opdrachten:
 
    ```javascript
        git add .
@@ -259,7 +349,11 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
        git push
    ```
 
-1. [De pijplijn uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) om de aangepaste functie te implementeren.
+1. De bijgewerkte code implementeren:
+
+   1. Trigger een plaatsing van uw code door de bestaande full-stack pijpleiding. Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd.
+
+Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [hoe een pijpleiding voor AEM Forms as a Cloud Service op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in de cliëntbibliotheek wordt toegevoegd beschikbaar in uw [Editor voor adaptieve formulierregels](/help/forms/rule-editor-core-components.md).
 
@@ -443,7 +537,7 @@ Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken met b
 
 ![Contactformulier](/help/forms/assets/contact-us-form.png)
 
-#### Een deelvenster tonen met de regel SetProperty
++++ **Hoofdletters gebruiken**: Een deelvenster tonen met de opdracht `SetProperty` regel
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) in, om het formulierveld in te stellen als `Required`.
 
@@ -485,8 +579,9 @@ Als er fouten voorkomen in de velden van het `personaldetails` worden deze weerg
 
 ![Voorvertoning van eigenschappenformulier instellen](/help/forms/assets/set-property-panel.png)
 
++++
 
-#### Valideer een veld.
++++ **Hoofdletters gebruiken**: Valideer het veld.
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) te valideren.
 
@@ -525,9 +620,9 @@ Als de gebruiker een geldig telefoonnummer en alle velden in het dialoogvenster 
 
 ![Validatiepatroon e-mailadres](/help/forms/assets/validate-form-preview-form.png)
 
++++
 
-
-#### Een deelvenster opnieuw instellen
++++ **Hoofdletters gebruiken**: Een deelvenster opnieuw instellen
 
 Voeg de volgende code in de douanefunctie toe zoals die in [create-custom-function](#create-custom-function) om het deelvenster opnieuw in te stellen.
 
@@ -559,9 +654,9 @@ Zie de onderstaande afbeelding om aan te geven dat als de gebruiker op de knop `
 
 ![Formulier opnieuw instellen](/help/forms/assets/custom-function-reset-form.png)
 
++++
 
-
-#### Een aangepast bericht weergeven op veldniveau en het veld markeren als ongeldig
++++ **Hoofdletters gebruiken**: Een aangepast bericht weergeven op veldniveau en het veld markeren als ongeldig
 
 U kunt de `markFieldAsInvalid()` gebruiken om een veld als ongeldig te definiëren en een aangepast foutbericht op veldniveau in te stellen. De `fieldIdentifier` waarde kan `fieldId`, of `field qualifiedName`, of `field dataRef`. De waarde van het genoemde object `option` kan `{useId: true}`, `{useQualifiedName: true}`, of `{useDataRef: true}`.
 De syntaxis die wordt gebruikt om een veld als ongeldig te markeren en een aangepast bericht in te stellen is:
@@ -602,9 +697,9 @@ Als de gebruiker meer dan 15 tekens in het tekstvak Opmerkingen invoert, wordt h
 
 ![Veld markeren als geldig voorbeeldformulier](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-
-#### Vastgelegde gegevens wijzigen voordat deze worden verzonden
++++ **Hoofdletters gebruiken**: Verzenden van gewijzigde gegevens naar de server
 
 De volgende regel code:
 `globals.functions.submitForm(globals.functions.exportData(), false);` wordt gebruikt om de formuliergegevens te verzenden na manipulatie.
@@ -647,9 +742,9 @@ U kunt het consolevenster ook inspecteren om de gegevens te bekijken die aan de 
 
 ![Inspect-gegevens in het consolevenster](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
 
-
-#### Indienen van succesmeldingen en foutberichten voor het aangepaste formulier negeren
++++ **Hoofdletters gebruiken**: Vervang het succes van het verzenden van formulieren en fouthandlers
 
 Voeg de volgende coderegel toe, zoals wordt uitgelegd in het dialoogvenster [create-custom-function](#create-custom-function) om het verzenden of mislukken van een formulier voor verzending aan te passen en de berichten voor het verzenden van het formulier in een modaal vak weer te geven:
 
@@ -758,19 +853,19 @@ Als u het voltooien en mislukken van het verzenden van formulieren standaard wil
 
 Als de aangepaste verzender niet kan uitvoeren zoals wordt verwacht in bestaande AEM Projecten of formulieren, raadpleegt u [problemen oplossen](#troubleshooting) sectie.
 
-<!--
++++
 
++++ **Hoofdletters gebruiken**: Voer handelingen uit in een specifieke instantie van het herhaalbare deelvenster
 
-#### Use Case:  Perform actions in a specific instance of the repeatable panel 
+Regels die u met de visuele regeleditor in een herhaalbaar deelvenster hebt gemaakt, worden toegepast op de laatste instantie van het herhaalbare deelvenster. Om een regel voor een specifieke instantie van het herhaalbare paneel te schrijven, kunnen wij een douanefunctie gebruiken.
 
-Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+Laten we een ander formulier maken om informatie te verzamelen over reizigers die naar een bestemming gaan. Er wordt een deelvenster voor reizigers toegevoegd als een herhaalbaar deelvenster, waar de gebruiker details voor 5 reizigers kan toevoegen met behulp van de `Add Traveler` knop.
 
-Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+![Informatie reizigers](/help/forms/assets/traveler-info-form.png)
 
-Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+Voeg de volgende coderegel toe, zoals wordt uitgelegd in het dialoogvenster [create-custom-function](#create-custom-function) om acties uit te voeren in een specifieke instantie van het herhaalbare deelvenster, anders dan de laatste:
 
 ```javascript
-
 /**
 * @name hidePanelInRepeatablePanel
 * @param {scope} globals
@@ -781,126 +876,126 @@ function hidePanelInRepeatablePanel(globals)
     // hides a panel inside second instance of repeatable panel
     globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
 }  
-
-```
- 
-In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
-Let us add a button labeled `Hide` to add a rule to hide a specific panel.
-
-![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
-
-Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
-
-
-
-
-#### **Usecase**: Pre-fill the field with a value when the form loads
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
-
-```javascript
-/**
- * @name importData
- * @param {scope} globals
- */
-function importData(globals)
-{
-    globals.functions.importData(Object.fromEntries([['amount',200000]]));
-} 
 ```
 
-In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+In dit voorbeeld wordt `hidePanelInRepeatablePanel` aangepaste functies voeren een handeling uit in een specifieke instantie van het herhaalbare deelvenster. In de bovenstaande code: `travelerinfo` vertegenwoordigt het herhaalbare paneel. De `repeatablePanel[1].traveler, {visible: false}` code verbergt het deelvenster in de tweede instantie van het herhaalbare deelvenster.
 
-Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+Laten we een knop toevoegen met het label `Hide` en voeg een regel toe om de tweede instantie van een herhaalbaar deelvenster te verbergen.
 
-![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+![Deelvensterregel verbergen](/help/forms/assets/custom-function-hidepanel-rule.png)
 
-Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+In de onderstaande video ziet u hoe `Hide` Wanneer op het deelvenster in de tweede herhaalbare instantie wordt geklikt, wordt het volgende verborgen:
 
-![Import Data Rule](/help/forms/assets/cg)
-
-
-
-#### **Usecase**: Set focus on the specific field
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
-
-```javascript
-/**
- * @name setFocus
- * @param {object} field
- * @param {scope} globals
- */
-function setFocus(field, globals)
-{
-    globals.functions.setFocus(field);
-}
-```
-
-Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
-
-Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
-
->[!NOTE]
->
-> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+>[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
 +++
 
-+++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
++++ **Usecase**: Vul het veld vooraf met een waarde in wanneer het formulier wordt geladen
 
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+Voeg de volgende coderegel toe, zoals wordt uitgelegd in de [create-custom-function](#create-custom-function) om de vooraf ingevulde waarde in een veld te laden wanneer het formulier wordt geïnitialiseerd:
 
 ```javascript
 /**
- 
- * @name addInstance
+ * Tests import data
+ * @name testImportData
  * @param {scope} globals
  */
-function addInstance(globals)
+function testImportData(globals)
 {
-    var repeatablePanel = globals.form.traveler;
-    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+    globals.functions.importData(Object.fromEntries([['amount','10000']]));
 } 
-
 ```
 
-Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+In de bovenstaande code `testImportData` functie vult de `Booking Amount` tekstveld wanneer het formulier wordt geladen. Laten we ervan uitgaan dat het boekingsformulier het minimumboekingsbedrag vereist `10,000`.
 
-![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+Laten we een regel maken bij het initialiseren van formulieren, waarbij de waarde in het dialoogvenster `Booking Amount` Het tekstvakveld wordt vooraf gevuld met een opgegeven waarde wanneer het formulier wordt geladen:
 
-Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+![Gegevensregel importeren](/help/forms/assets/custom-function-import-data.png)
 
-![Add Panel](/help/forms/assets/customg)
+Raadpleeg de onderstaande schermafbeelding om aan te tonen dat bij het laden van het formulier de waarde in het dialoogvenster `Booking Amount` Tekstvak is vooraf gevuld met een opgegeven waarde:
 
-Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+![Formulier gegevensregel importeren](/help/forms/assets/custom-function-prefill-form.png)
+
++++
+
++++ **Usecase**: Focus instellen op het specifieke veld
+
+Voeg de volgende coderegel toe, zoals wordt uitgelegd in de [create-custom-function](#create-custom-function) -sectie, om focus in te stellen op het opgegeven veld wanneer de `Submit` wordt geklikt.:
 
 ```javascript
-
 /**
- 
- * @name removeInstance
+ * @name testSetFocus
+ * @param {object} emailField
  * @param {scope} globals
  */
-function removeInstance(globals)
+    function testSetFocus(field, globals)
+    {
+        globals.functions.setFocus(field);
+    }
+```
+
+Laten we een regel toevoegen aan de `Submit` knop om focus in te stellen op de `Email ID` textbox-veld wanneer erop wordt geklikt:
+
+![Focusregel instellen](/help/forms/assets/custom-function-set-focus.png)
+
+Raadpleeg de onderstaande schermafbeelding om aan te tonen dat wanneer de `Submit` wordt geklikt, wordt de focus ingesteld op de knop `Email ID` veld:
+
+![Focusregel instellen](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> U kunt de optionele `$focusOption` parameter, als u zich op het volgende of vorige gebied met betrekking tot wilt concentreren `email` veld.
+
++++
+
++++ **Usecase**: Voeg een herhaalbaar deelvenster toe of verwijder dit met het gereedschap `dispatchEvent` eigenschap
+
+Voeg de volgende coderegel toe, zoals wordt uitgelegd in de [create-custom-function](#create-custom-function) om een deelvenster toe te voegen wanneer de `Add Traveler` op de knop wordt geklikt met de `dispatchEvent` eigenschap:
+
+```javascript
+/**
+ * Tests add instance with dispatchEvent
+ * @name testAddInstance
+ * @param {scope} globals
+ */
+function testAddInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel,'addInstance');
+}
+```
+
+Laten we een regel toevoegen aan de `Add Traveler` om het herhaalbare deelvenster toe te voegen wanneer erop wordt geklikt:
+
+![Deelvensterregel toevoegen](/help/forms/assets/custom-function-add-panel.png)
+
+Verwijs naar gif hieronder, die aantoont dat wanneer `Add Traveler` als erop wordt geklikt, wordt het deelvenster toegevoegd met de `dispatchEvent` eigenschap:
+
+![Deelvenster toevoegen](/help/forms/assets/custom-function-add-panel.gif)
+
+Voeg op dezelfde manier de volgende coderegel toe, zoals uitgelegd in de [create-custom-function](#create-custom-function) om een deelvenster te verwijderen als de `Delete Traveler` op de knop wordt geklikt met de `dispatchEvent` eigenschap:
+
+```javascript
+/**
+ 
+ * @name testRemoveInstance
+ * @param {scope} globals
+ */
+function testRemoveInstance(globals)
 {
     var repeatablePanel = globals.form.traveler;
     globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
 } 
-
 ```
-Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
 
-![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+Laten we een regel toevoegen aan de `Delete Traveler` om het herhaalbare deelvenster te verwijderen wanneer erop wordt geklikt:
 
-Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+![Deelvensterregel verwijderen](/help/forms/assets/custom-function-delete-panel.png)
 
-![Delete Panel](/help/forms/assets/customg)
--->
+Verwijs naar gif hieronder, die aantoont dat wanneer `Delete Traveler` wanneer op de knop wordt geklikt, wordt het deelvenster Reiser verwijderd met de opdracht `dispatchEvent` eigenschap:
+
+![Deelvenster verwijderen](/help/forms/assets/custom-function-delete-panel.gif)
+
 
 ## Ondersteuning voor caching van aangepaste functies
 
