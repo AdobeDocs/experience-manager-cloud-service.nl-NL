@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
+source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
@@ -44,12 +44,28 @@ Bekijk de video Overzicht van de release van mei 2024 voor een overzicht van de 
 
 ### Nieuwe functies in sites {#sites-new-features}
 
+#### AEM vertaalintegratie {#translation-integration}
+
+Handelingen en workflows voor het vertalen van inhoud activeren nu gebeurtenissen om relevante processtappen en statussen van externe toepassingen te kunnen volgen. De volgende gebeurtenissen worden gegenereerd. Gebruikers kunnen zich abonneren op gebeurtenissen via de Adobe Developer-console.
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
 #### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
 
 * **[Real Use Monitoring (RUM) Data Service is nu GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** het toelaten van cliënt-zijinzameling van gegevens voor AEM as a Cloud Service.
 De Echte Dienst van de Controle van het Gebruik, de cliënt-zijinzameling, biedt een preciezere weerspiegeling van interactie aan, die een betrouwbare maat van websitebetrokkenheid verzekeren. Het laat klanten met geavanceerde inzichten in hun paginaverkeer en prestaties toe. Het is een geweldige kans om meer te weten te komen over de prestaties van uw pagina en meer inzicht te krijgen in de manier waarop u deze kunt verbeteren.
 
-### AEM Authoring voor Edge Delivery Services
+#### AEM Authoring voor Edge Delivery Services {#edge-enhancements}
 
 Verbeterde stabiliteit en diverse verbeteringen voor een betere ontwerpervaring.
 
@@ -128,11 +144,11 @@ Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? O
 
 ### Forms Service
 
-Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Het kan ook worden gebruikt om gegevens naar en van een bestaand interactief PDF formulier te importeren en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
+Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Het kan ook worden gebruikt om gegevens naar en van een bestaand interactief PDF formulier te importeren of te exporteren en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
 
 * **Forms renderen**: Genereer een interactief PDF-formulier op basis van een sjabloon die is gemaakt met AEM Forms Designer en eventueel XML-gegevens. Hiermee wordt in feite een optioneel vooraf ingevuld formulier met PDF gemaakt.
 * **Gegevens extraheren en importeren**: Importeer gegevens in een bestaand PDF-formulier en extraheer gegevens uit een ingevuld PDF-formulier. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
-* **Gegevensvalidatie**: - Valideer verzonden gegevens in XDP- of XML-indeling op basis van een sjabloon die is gemaakt met AEM Forms Designer.
+* **Gegevensvalidatie**: Valideer verzonden gegevens in XDP- of XML-indeling op basis van een sjabloon die is gemaakt met AEM Forms Designer.
 
 >[!IMPORTANT]
 >
@@ -174,7 +190,7 @@ De interface van de het bevellijn van RDE heeft sommige nieuwe eigenschappen, di
 
 * [de opdracht setup is interactief](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), waardoor het gemakkelijker wordt te kiezen tussen organisaties, programma&#39;s en omgevingen. Het is nu ook mogelijk deze waarden op de opdrachtregel te overschrijven.
 * [stille modus](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) voor een minder uitgebreide uitvoer.
-* [json, modus](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) voor nuttige output wanneer aangehaald programmatically.
+* [json, modus](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) voor nuttige output wanneer programmatically aangehaald.
 
 ### Nieuwe meldingen in het actiecentrum {#actions-center-notifications}
 
@@ -239,4 +255,3 @@ U vindt een volledige lijst met de releases van de migratiehulpmiddelen [hier](/
 
 U kunt informatie over versies van andere toepassingen van het Experience Cloud vinden [hier](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
 Als u maandelijks een e-mailbericht wilt ontvangen over updates van opmerkingen bij de release van Experiencen Cloud, meldt u zich aan bij de [Adobe Prioriteit productupdate](https://www.adobe.com/subscription/priority-product-update.html).
-
