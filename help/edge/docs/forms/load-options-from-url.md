@@ -1,17 +1,17 @@
 ---
-title: Opties vervolgkeuzelijst laden vanaf URL
+title: Opties vervolgkeuzelijst laden van een URL of een ander blad voor Edge Delivery Services voor as a Cloud Service AEM Forms
 description: De opties voor de vervolgkeuzelijst worden opgenomen in een afzonderlijk spreadsheet en vervolgens geïmporteerd in het primaire spreadsheet via de opgegeven URL.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
 
-# Opties voor vervolgkeuzelijsten laden via URL
+# Opties van een URL of een ander blad voor Edge Delivery Services voor as a Cloud Service AEM Forms
 
 Forms bevat vaak vervolgkeuzemenu&#39;s die gebruikers kunnen selecteren op basis van vooraf gedefinieerde opties. Deze opties worden doorgaans in het formulier zelf gedefinieerd, maar het beheren van lange lijsten kan lastig zijn. In deze handleiding wordt beschreven hoe u het ontwerpen van formulieren kunt verbeteren door meerkeuzeopties te laden vanuit een afzonderlijk spreadsheet via een URL.
 
