@@ -4,9 +4,9 @@ description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
+source-git-commit: f52b5f763277c9288d5dd30b01cfb7a4afeddda7
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -44,6 +44,10 @@ Voor meer informatie over de nieuwe en verbeterde functies en problemen die zijn
 ### Bekende problemen {#known-issues-16544}
 
 Geen.
+
+### Kennisgeving wijzigen {#change-notice-16544}
+
+Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [de documentatie](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter) voor meer informatie .
 
 ### Verouderde functies en API&#39;s {#deprecated-16544}
 
