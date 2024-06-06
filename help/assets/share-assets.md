@@ -1,13 +1,12 @@
 ---
 title: Elementen, mappen en verzamelingen distribueren en delen
 description: Digitale elementen distribueren met methoden als delen als een koppeling, downloaden en via [!DNL Brand Portal], [!DNL desktop app], en [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1789'
 ht-degree: 0%
 
 ---
@@ -101,15 +100,51 @@ Elementen delen via e-mail:
    * In de **[!UICONTROL Subject]** Typ een onderwerp om het doel van de gedeelde elementen op te geven.
    * In de **[!UICONTROL Message]** Typ indien nodig een bericht.
    * In de **[!UICONTROL Expiration]** in het veld gebruikt u de datumkiezer om een vervaldatum en -tijd voor de koppeling op te geven.
-   * De optie **[!UICONTROL Allow download of original file]** Schakel het selectievakje in zodat de ontvangers de oorspronkelijke vertoning kunnen downloaden.
+   * De optie **[!UICONTROL Allow download of the original file]** Schakel het selectievakje in zodat de ontvangers de oorspronkelijke vertoning kunnen downloaden.
 
 1. Klik op **[!UICONTROL Share]**. Een bericht bevestigt dat de koppeling wordt gedeeld met de gebruikers. De gebruikers ontvangen een e-mail met de gedeelde koppeling.
 
    ![E-mail voor delen van koppeling](assets/link-sharing-email-notification.png)
 
-### Elementen downloaden via de elementkoppeling
+### E-mailsjabloon aanpassen {#customize-email-template}
 
-Elke gebruiker die toegang heeft tot de koppeling voor gedeelde elementen, kan de elementen downloaden die in een ZIP-map zijn gebundeld. Het downloadproces is hetzelfde, ongeacht of een gebruiker de gekopieerde elementkoppeling opent of de via e-mail gedeelde elementkoppeling gebruikt.
+Een goed ontworpen sjabloon biedt professionaliteit en bekwaamheid, waardoor uw boodschap en organisatie geloofwaardiger wordt. De [!DNL Adobe Experience Manager] Hiermee kunt u de e-mailsjabloon aanpassen. Deze wordt verzonden naar de ontvangers die het e-mailbericht met de gedeelde koppeling ontvangen. Bovendien kunnen aangepaste e-mailsjablonen uw e-mailinhoud aanpassen door uw ontvangers een naam te geven en te verwijzen naar specifieke gegevens die voor hen van belang zijn. Door deze persoonlijke aanraking voelt de ontvanger zich gewaardeerd en neemt de betrokkenheid toe. Bovendien zorgt een aangepaste sjabloon ervoor dat uw e-mails consistent zijn met uw merkidentiteit, waaronder logo&#39;s, kleuren en lettertypen. Consistentie versterkt de merkherkenning en het vertrouwen onder ontvangers.
+
+#### Opmaak van een aangepaste e-mailsjabloon {#format-of-custom-email-template}
+
+De e-mailsjabloon kan worden aangepast met platte tekst of met HTML. De standaard bewerkbare sjabloonkoppeling is te vinden op `/libs/settings/dam/adhocassetshare/en.txt`. U kunt de sjabloon overschrijven door het bestand te maken `/apps/settings/dam/adhocassetshare/en.txt`. U kunt de e-mailsjabloon zo vaak als nodig is wijzigen.
+
+| Plaatsaanduidingen | Beschrijving |
+|---|-----|
+| ${emailSubject} | Onderwerp van een e-mail |
+| ${emailInitiator} | E-mailadres van de gebruiker die het e-mailbericht heeft gemaakt |
+| ${emailMessage} | E-mailadres |
+| ${pagePath} | URL van de gedeelde koppeling |
+| ${linkExpiry} | Vervaldatum van gedeelde koppeling |
+| ${host.prefix} | Oorsprong van de [!DNL Experience Manager] bijvoorbeeld `http://www.adobe.com"` |
+
+#### Voorbeeld van een aangepaste e-mailsjabloon {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### Elementen downloaden via de elementkoppeling {#download-assets-using-asset-link}
+
+Elke gebruiker die toegang heeft tot de koppeling voor gedeelde elementen, kan de elementen downloaden die in een ZIP-map zijn gebundeld. Het downloadproces is hetzelfde, ongeacht of een gebruiker de koppeling met gekopieerde middelen opent of de koppeling met middelen gebruikt die via e-mail wordt gedeeld.
 
 * Klik op de elementkoppeling of plak de URL in uw browser. De [!UICONTROL Link Share] interface opent waar u kunt op [!UICONTROL Card View] of [!UICONTROL List View].
 
@@ -211,7 +246,7 @@ Gebruikers kunnen de vereiste middelen downloaden en deze delen buiten [!DNL Exp
 
 Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvoudig delen met hun creatieve professionals.
 
-* **Experience Manager-bureaubladtoepassing**: De app werkt in Windows en Mac. Zie [Overzicht van desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang kunnen krijgen tot de gedeelde elementen, raadpleegt u [elementen zoeken, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [elementen uploaden met bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Experience Manager-bureaubladtoepassing**: De app werkt in Windows en Mac. Zie [Overzicht van desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang kunnen krijgen tot de gedeelde elementen, raadpleegt u [elementen zoeken, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [elementen uploaden met een bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe-itemkoppeling**: De creatieve professionals kunnen hun middelen rechtstreeks van binnen zoeken en gebruiken [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop].
 
@@ -223,7 +258,7 @@ De verschillende opties om de activa te delen vereisen specifieke configuratie e
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebruikt u het dialoogvenster Koppeling delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat ze zich eerst moeten aanmelden bij [!DNL Assets].
+Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebruikt u het dialoogvenster Koppeling delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij [!DNL Assets].
 
 >[!NOTE]
 >
@@ -266,7 +301,7 @@ Van binnen [!DNL Assets] in een browser, kunt u de middelenlocaties of uitchecke
 
 ### Te gebruiken configuraties [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Het verbindt [!DNL Adobe Experience Manager Assets] with [!DNL Creative Cloud] bureaubladapps [!DNL Adobe InDesign], [!DNL Adobe Photoshop], en [!DNL Adobe Illustrator]. De [!DNL Adobe Asset Link] paneel stelt ontwerpers in staat toegang te krijgen tot inhoud die is opgeslagen in [!DNL Assets] zonder de creatieve toepassingen die ze het meest kennen, over te laten.
+Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Het verbindt [!DNL Adobe Experience Manager Assets] with [!DNL Creative Cloud] bureaubladapps, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], en [!DNL Adobe Illustrator]. De [!DNL Adobe Asset Link] paneel stelt ontwerpers in staat toegang te krijgen tot inhoud die is opgeslagen in [!DNL Assets] zonder de creatieve toepassingen die ze het meest kennen, over te laten.
 
 Zie [hoe te vormen [!DNL Assets] gebruiken met [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -300,3 +335,4 @@ Zie [hoe te vormen [!DNL Assets] gebruiken met [!DNL Adobe Asset Link]](https://
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
 * [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
