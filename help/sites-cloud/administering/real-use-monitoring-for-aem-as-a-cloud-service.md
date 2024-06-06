@@ -1,7 +1,7 @@
 ---
 title: Real Use Monitoring for AEM as a Cloud Service
 description: Leer hoe u Real Use Monitoring (RUM) gebruikt om de digitale gebruikerservaring van een website of toepassing in real-time vast te leggen en te analyseren.
-source-git-commit: a15f973c21044e16751401bd0ffb256a4d0fb17d
+source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -10,6 +10,7 @@ ht-degree: 0%
 
 
 >[!NOTE]
+>
 >We zijn erg blij om de [GA-rollout](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) voor de Echte dienst van de Controle van het Gebruik, de cliënt-zijinzameling van gegevens. Het is een geautomatiseerde dienst en er is geen klantenopstelling vereist.
 
 # Real Use Monitoring Service voor AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
@@ -113,6 +114,6 @@ Tijdens het analyseren van RUM-gegevens kunnen er verschillen zijn in paginaweer
 
 1. **Hoe kan ik me afmelden?**
 
-We raden u ten zeerste aan de Real Use Monitoring (RUM) te gebruiken vanwege de aanzienlijke voordelen ervan en om u in staat te stellen uw digitale ervaringen te optimaliseren. Het biedt waardevolle inzichten die de prestaties van uw website kunnen verbeteren. De service is ontworpen om naadloos te zijn en heeft geen invloed op de prestaties van uw website.
+   We raden u ten zeerste aan de Real Use Monitoring (RUM) te gebruiken vanwege de aanzienlijke voordelen ervan en om u in staat te stellen uw digitale ervaringen te optimaliseren. Het biedt waardevolle inzichten die de prestaties van uw website kunnen verbeteren. De service is ontworpen om naadloos te zijn en heeft geen invloed op de prestaties van uw website.
 
-Weigeren betekent dat je deze inzichten niet kunt gebruiken. Neem contact op met de ondersteuning van Adoben als er problemen optreden.
+   Weigeren betekent dat je deze inzichten niet kunt gebruiken. Neem contact op met de ondersteuning van Adoben als er problemen optreden.
