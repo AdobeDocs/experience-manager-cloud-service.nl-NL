@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
+source-git-commit: 7820492f462d2b5824e408429332b5adf2e67aab
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 0%
@@ -25,9 +25,9 @@ Adobe Experience Manager bevat meer dan 100 Dynamic Media-opdrachten voor het le
 **Slimme beeldverwerking:**
 
 * Als u Smart Imaging inschakelt in Dynamic Media, kunt u de afbeeldingsindeling, grootte en kwaliteit automatisch optimaliseren op basis van de mogelijkheden van de clientbrowser.
-Meer informatie? Ga naar [Slimme afbeeldingen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+Meer informatie? Ga naar [Slimme afbeeldingen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Hierdoor worden de prestaties van de afbeeldingslevering verbeterd doordat deze parameters dynamisch worden aangepast.
-* U kunt Slim beeld evalueren gebruikend het zelfevaluatiehulpmiddel [Opname](https://snapshot.scene7.com/)
+* U kunt Slim beeld evalueren gebruikend het zelfevaluatiehulpmiddel [Opname](https://snapshot.scene7.com/).
 
 **Afbeeldingsindelingen:**
 
