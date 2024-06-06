@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -121,5 +121,5 @@ Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het doc
 Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site maken te gaan door het document te bekijken [Pas het thema Site aan,](customize-theme.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
 
 * [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.
-* [Opslagplaatsen voor Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Raadpleeg dit document als u meer informatie nodig hebt over het instellen en beheren van git-opslagruimten voor uw AEMaaCS-project.
+* [Opslagplaatsen voor Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - Raadpleeg dit document als u meer informatie nodig hebt over het instellen en beheren van git-opslagruimten voor uw AEMaaCS-project.
 * [CI/CD-pijpleiding configureren - Cloud Servicen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - Meer informatie over het instellen van pijpleidingen, zowel volledige stapel als front-end, vindt u in dit document.

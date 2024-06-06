@@ -3,10 +3,10 @@ title: Bewerkingen en onderhoud van Adobe Experience Manager as a Cloud Service
 description: Ontdek meer over de back-end operations van Experience Manager as a Cloud Service, zoals het indexeren en onderhoudstaken, en krijg antwoorden op uw vragen.
 landing-page-description: Ontdek meer over de back-end operations van Experience Manager as a Cloud Service, zoals het indexeren en onderhoudstaken, en krijg antwoorden op uw vragen.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 80%
+source-wordcount: '105'
+ht-degree: 81%
 
 ---
 
@@ -19,4 +19,4 @@ Ontdek meer over de back-end operations van Experience Manager as a Cloud Servic
 
 * [Inhoudsreplicatie](replication.md)
 * [Onderhoudstaken](maintenance.md)
-* [Back-up en herstel](backup.md)
+* [Self-Service terugzetten](restore.md)

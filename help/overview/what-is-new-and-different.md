@@ -4,7 +4,7 @@ description: Aangepaste en nieuwe functies - Adobe Experience Manager (AEM) as a
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 66%
@@ -208,7 +208,7 @@ Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AE
 
 >[!NOTE]
 >
->Voor meer details, begin met [inhoudsherstel](/help/operations/backup.md), [Indexeren](/help/operations/indexing.md), en [overige onderhoudstaken](/help/operations/maintenance.md).
+>Voor meer details, begin met [inhoudsherstel](/help/operations/restore.md), [Indexeren](/help/operations/indexing.md), en [overige onderhoudstaken](/help/operations/maintenance.md).
 
 Met AEM as a Cloud Service worden dergelijke bewerkingen geautomatiseerd, zodat de service niet meer hoeft te worden onderbroken.
 

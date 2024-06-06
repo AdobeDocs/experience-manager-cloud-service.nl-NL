@@ -6,9 +6,9 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,10 @@ Afhankelijk van het type pijplijn, kunt u de looppas kunnen annuleren door de el
 >
 >U kunt een lopende pijpleiding niet uitgeven.
 
+>[!NOTE]
+>
+>De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie het document [Persoonlijke opslagplaatsen toevoegen in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor nadere bijzonderheden en de volledige lijst van beperkingen.
+
 ## Verwijderen van pijpleidingen {#deleting-pipelines}
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
@@ -143,6 +147,14 @@ Zodra een pijpleidingsstap volledig is, wordt een samenvatting voorgesteld.
 Selecteer de **Details weergeven** koppeling om de **Duur** sectie. Dit omvat de gemiddelde duur van de pijpleiding op basis van de historische trend voor dat programma.
 
 ![Duur](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+Als uw pijpleiding een **Codescannen** de stap, die kwesties opriep, kunt u tikken of klikken **Downloaddetails** om een lijst met [codekwaliteitstests](/help/implementing/cloud-manager/code-quality-testing.md) dat is niet gelukt .
+
+![Codekwaliteitsproblemen](assets/managing-pipelines-code-quality-issues.png)
+
+A **Locatie projectbestand** is beschikbaar in het CSV-bestand om de locatie van de betreffende code aan te geven. Deze kolom is de project-relatieve weg, terwijl **Bestandslocatie** wordt gegenereerd.
+
+![Probleemdetails over het scannen van projectcode](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >

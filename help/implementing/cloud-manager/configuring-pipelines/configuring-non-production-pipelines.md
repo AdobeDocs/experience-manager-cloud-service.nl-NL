@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Om de configuratie van de full-stack code non-production pijpleiding te beëindi
 
    >[!TIP]
    > 
-   >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) zodat u kunt leren om opslagruimten toe te voegen en te beheren in Cloud Manager.
+   >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/managing-repositories.md) zodat u kunt leren om opslagruimten toe te voegen en te beheren in Cloud Manager.
 
    * **Git Branch** - Deze optie bepaalt waarvan de tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * Voer de eerste paar tekens in van de naam van de vertakking en de functie voor automatisch aanvullen van dit veld. Hiermee kunt u de overeenkomende vertakkingen zoeken die u kunt selecteren.
@@ -127,6 +127,10 @@ Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM to
    * Als er voor de geselecteerde omgeving een pijpleiding voor code in de weblaag bestaat, is deze selectie uitgeschakeld.
    * Als u een bestaande full-stack pijpleiding die aan een milieu opstelt hebt, die tot een Web rij config pijpleiding voor het zelfde milieu leidt zal de bestaande configuratie van de Webrij in de full-stack pijpleiding worden genegeerd.
 
+>[!NOTE]
+>
+>De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie het document [Persoonlijke opslagplaatsen toevoegen in Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor nadere bijzonderheden en de volledige lijst van beperkingen.
+
 De stappen om de verwezenlijking van uw niet-productie, gerichte plaatsingspijpleiding te voltooien zijn het zelfde zodra u een plaatsingstype kiest.
 
 1. Kies welk implementatietype u nodig hebt.
@@ -143,7 +147,7 @@ De stappen om de verwezenlijking van uw niet-productie, gerichte plaatsingspijpl
 
    >[!TIP]
    > 
-   >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) zodat u kunt leren om opslagruimten toe te voegen en te beheren in Cloud Manager.
+   >Zie [Opslagplaatsen toevoegen en beheren](/help/implementing/cloud-manager/managing-code/managing-repositories.md) zodat u kunt leren om opslagruimten toe te voegen en te beheren in Cloud Manager.
 
    * **Git Branch** - Deze optie bepaalt waarvan de tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * Voer de eerste paar tekens in van de naam van de vertakking en de functie voor automatisch aanvullen van dit veld. U vindt de overeenkomende vertakkingen die u kunt selecteren.

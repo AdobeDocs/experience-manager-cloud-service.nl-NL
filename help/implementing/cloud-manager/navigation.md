@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 0%
@@ -198,7 +198,7 @@ Elk programma heeft een heleboel opties en gegevens verbonden aan het. Deze gege
 * Overzicht - Het programma-overzicht zoals beschreven in het huidige document
 * [Activiteit](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - De geschiedenis van de pijpleiding van het programma
 * [Pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - Alle voor het programma geconfigureerde pijpleidingen
-* [Opslagplaatsen](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - Alle voor het programma geconfigureerde opslagruimten
+* [Opslagplaatsen](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - Alle voor het programma geconfigureerde opslagruimten
 * [Rapporten](/help/implementing/cloud-manager/sla-reporting.md) - Metriek zoals SLA-gegevens
 * [Omgevingen](/help/implementing/cloud-manager/manage-environments.md) - Alle omgevingen die voor het programma zijn geconfigureerd
 * [Inhoudssets](/help/implementing/developing/tools/content-copy.md) - Sets inhoud die voor kopieerdoeleinden is gemaakt

@@ -5,7 +5,7 @@ exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Adobe Experience Manager Forms as a Cloud Service brengt een aantal opmerkelijke
 
 * Voordat u uw klantbundels gebruikt met as a Cloud Service Forms, moet u uw aangepaste code opnieuw compileren met de nieuwste versie van adobe-aemfd-docmanager.
 
-* Gebruiken [AEM Forms as a Cloud Service migratiehulpprogramma](/help/forms/migrate-to-forms-as-a-cloud-service.md) om uw Adaptieve Forms, thema&#39;s, sjablonen en cloudconfiguraties voor te bereiden en te migreren vanuit <!-- AEM 6.3 Forms--> AEM 6.4 Forms op OSGi en AEM 6.5 Forms op OSGi aan [!DNL AEM] as a Cloud Service. Gebruik de [Opslagruimte van uw programma maken](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) bestaande adaptieve formuliersjablonen importeren.
+* Gebruiken [AEM Forms as a Cloud Service migratiehulpprogramma](/help/forms/migrate-to-forms-as-a-cloud-service.md) om uw Adaptieve Forms, thema&#39;s, sjablonen en cloudconfiguraties voor te bereiden en te migreren vanuit <!-- AEM 6.3 Forms--> AEM 6.4 Forms op OSGi en AEM 6.5 Forms op OSGi aan [!DNL AEM] as a Cloud Service. Gebruik de [Opslagruimte van uw programma maken](/help/implementing/cloud-manager/managing-code/managing-repositories.md) bestaande adaptieve formuliersjablonen importeren.
 
 * E-mail steunt slechts HTTP en protocollen van HTTP, door gebrek. [Contact opnemen met het ondersteuningsteam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) om havens toe te laten om e-mail te verzenden en SMTP protocol voor uw milieu toe te laten.
 

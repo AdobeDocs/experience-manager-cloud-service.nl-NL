@@ -2,9 +2,9 @@
 title: Inhoud herstellen in AEM as a Cloud Service
 description: Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,6 @@ ht-degree: 0%
 # Inhoud herstellen in AEM as a Cloud Service {#content-restore}
 
 Leer hoe u AEM as a Cloud Service inhoud kunt herstellen vanaf een back-up met gebruik van Cloud Manager.
-
->[!NOTE]
->
->Deze functie is alleen beschikbaar voor [het programma voor vroegtijdige adoptie](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) en bepaalde beperkingen heeft die verder gaan dan die welke in het artikel worden beschreven. In de vroege adoptiefase:
->
->* De functie is alleen beschikbaar in ontwikkelomgevingen.
->* Het terugzetten van inhoud is beperkt tot twee per maand per programma.
->
->Voor meer informatie over het bestaande back-up- en herstelsysteem voor AEM as a Cloud Service raadpleegt u [Back-up en herstel in AEM as a Cloud Service](/help/operations/backup.md).
 
 ## Overzicht {#overview}
 
@@ -40,13 +31,41 @@ In beide gevallen blijven de versie van de aangepaste code en de AEM ongewijzigd
 >
 >Het is ook mogelijk om back-ups te herstellen [gebruiken van openbare API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
 
+>[!WARNING]
+>
+>* Deze functie mag alleen worden gebruikt bij ernstige problemen met code of inhoud.
+>* Als u een back-up herstelt, gaan er tussen het tijdstip van de back-up en het moment recente gegevens verloren. Het opvoeren wordt ook hersteld aan de oude versie.
+>* Overweeg andere selectieve herstelopties voor inhoud voordat u begint met het herstellen van inhoud.
+
+## Opties voor het herstellen van selectieve inhoud {#selective-options}
+
+Overweeg deze opties om de inhoud eenvoudiger te herstellen voordat u de inhoud volledig herstelt.
+
+* Als een pakket voor het verwijderde pad beschikbaar is, installeert u het pakket opnieuw met de [Package Manager.](/help/implementing/developing/tools/package-manager.md)
+* Als het verwijderde pad een pagina in Sites was, gebruikt u de [Structuurfunctie herstellen.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* Als het verwijderde pad een map met middelen was en de oorspronkelijke bestanden beschikbaar zijn, kunt u deze opnieuw uploaden via [de middelenconsole.](/help/assets/add-assets.md)
+* Als de inhoud voor verwijderen elementen zijn, kunt u het volgende overwegen [vorige versies van de elementen herstellen.](/help/assets/manage-digital-assets.md)
+
+Als geen van de bovenstaande opties werkt en de inhoud van het verwijderde pad significant is, voert u een inhoudsherstel uit zoals in de volgende secties wordt beschreven.
+
+## Gebruikersrol maken {#user-role}
+
+Standaard heeft geen enkele gebruiker toestemming om inhoud te herstellen in ontwikkelings-, productie- of testomgevingen. Om deze toestemming aan specifieke gebruikers of groepen na deze algemene stappen te delegeren.
+
+1. Maak een productprofiel met een expressieve naam die verwijst naar het herstellen van inhoud.
+1. Geef de **Programmatoegang** toestemming voor het vereiste programma.
+1. Geef de **Inhoud herstellen** toestemming voor de vereiste omgeving of voor alle omgevingen van het programma, afhankelijk van uw gebruiksscenario.
+1. Wijs gebruikers toe aan dat profielprofiel.
+
+Voor meer informatie over het beheren van machtigingen raadpleegt u [Aangepaste machtigingen](/help/implementing/cloud-manager/custom-permissions.md) documentatie.
+
 ## Inhoud herstellen {#restoring-content}
 
 Bepaal eerst het tijdkader van de inhoud die u wilt herstellen. Voer vervolgens deze stappen uit om de inhoud van uw omgeving te herstellen op basis van een back-up.
 
 >[!NOTE]
 >
->Een gebruiker met de **Zakelijke eigenaar** of **Implementatiebeheer** de rol moet het programma worden geopend om een herzettingsverrichting in werking te stellen.
+>Een gebruiker moet [juiste machtigingen](#user-role) om een terugzetbewerking te starten.
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
 

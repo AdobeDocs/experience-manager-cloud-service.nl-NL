@@ -4,7 +4,7 @@ description: Inleiding tot de architectuur van Adobe Experience Manager as a Clo
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 7%
@@ -231,7 +231,7 @@ De meest recente architectuur voor AEM as a Cloud Service introduceert enkele fu
    * [Onboarding Journaal](/help/journey-onboarding/overview.md)
    * [Programma&#39;s en programmatypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * Ontwikkelarchitectuur
-   * [Opslagplaatsen voor Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+   * [Opslagplaatsen voor Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
    * [CI/CD Pipet](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:

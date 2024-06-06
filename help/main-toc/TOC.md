@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d4ada5f15a587d54f46a475ca574134988b463d8
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '5010'
+source-wordcount: '5030'
 ht-degree: 3%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 3%
    + Opmerkingen bij de release van Cloud Manager {#cloud-manager}
       + [Opmerkingen bij de huidige release](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [Opmerkingen bij de release 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
          + [Opmerkingen bij de release 2024.4.0](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
          + [Opmerkingen bij de release 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
          + [Opmerkingen bij de release 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
@@ -976,6 +977,7 @@ ht-degree: 3%
          + [Sandbox-programma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Programma&#39;s bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Sluimeromgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery-services.md)
       + Een AEM-toepassingsproject maken {#create-application-project}
          + [Wizard Project maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Projectinstelling](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -983,12 +985,16 @@ ht-degree: 3%
       + [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md)
       + Uw code beheren {#managing-code}
          + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Opslagplaatsen in Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+         + [Opslagplaatsen beheren in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [Opslagplaatsen voor Adoben toevoegen](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Persoonlijke opslagplaatsen toevoegen](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Toegang tot opslagplaatsen](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Ondersteuning voor Git-submodule](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Git gebruiken met Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Meerdere opslagplaatsen gebruiken](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Teaminstallatie voor bedrijfsontwikkeling](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [Werken met uw eigen GitHub-opslagruimten](/help/implementing/cloud-manager/managing-code/byo-github.md)
+         + [Configuratie van GitHub-controle](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [GitHub-controleannotaties](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
          + [Inleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -1026,6 +1032,7 @@ ht-degree: 3%
          + [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         + [DV-certificaten (Domain Validated)](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
       + IP-Lijsten van gewenste personen {#ip-allow-lists}
          + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1202,7 +1209,6 @@ ht-degree: 3%
    + [Aanvullende publicatieregio&#39;s](/help/operations/additional-publish-regions.md)
    + [Infrastructuur- en servicecontrole in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Onderhoudstaken](/help/operations/maintenance.md)
-   + [Back-up en herstel](/help/operations/backup.md)
    + [Self-Service terugzetten](/help/operations/restore.md)
    + [Asynchrone taken](/help/operations/asynchronous-jobs.md)
    + [Verwijdering van de generieke index van de lucene](/help/operations/removal-generic-lucene-index.md)
