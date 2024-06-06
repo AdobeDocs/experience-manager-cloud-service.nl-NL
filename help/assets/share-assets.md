@@ -4,9 +4,9 @@ description: Digitale elementen distribueren met methoden als delen als een kopp
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
+source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1777'
 ht-degree: 0%
 
 ---
@@ -116,12 +116,12 @@ De e-mailsjabloon kan worden aangepast met platte tekst of met HTML. De standaar
 
 | Plaatsaanduidingen | Beschrijving |
 |---|-----|
-| ${emailSubject} | Onderwerp van een e-mail |
-| ${emailInitiator} | E-mailadres van de gebruiker die het e-mailbericht heeft gemaakt |
-| ${emailMessage} | E-mailadres |
-| ${pagePath} | URL van de gedeelde koppeling |
-| ${linkExpiry} | Vervaldatum van gedeelde koppeling |
-| ${host.prefix} | Oorsprong van de [!DNL Experience Manager] bijvoorbeeld `http://www.adobe.com"` |
+| `${emailSubject}` | Onderwerp van een e-mail |
+| `${emailInitiator}` | E-mailadres van de gebruiker die het e-mailbericht heeft gemaakt |
+| `${emailMessage}` | E-mailadres |
+| `${pagePath}` | URL van de gedeelde koppeling |
+| `${linkExpiry}` | Vervaldatum van gedeelde koppeling |
+| `${host.prefix}` | Oorsprong van de [!DNL Experience Manager] bijvoorbeeld `http://www.adobe.com"` |
 
 #### Voorbeeld van een aangepaste e-mailsjabloon {#custom-email-template-example}
 
