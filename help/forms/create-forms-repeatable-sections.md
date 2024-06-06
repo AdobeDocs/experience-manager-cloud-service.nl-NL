@@ -4,9 +4,9 @@ description: Leer herhaalbare secties of velden maken in een adaptief formulier.
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: d3c5adf0b5b2155308e0bf9f4459682f11b67780
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1258'
 ht-degree: 0%
 
 ---
@@ -31,10 +31,10 @@ Aan het einde van dit artikel leert u:
 * Minimum- of maximumaantal herhalingen instellen voor een adaptieve formuliercomponent
 * De regelredacteur van het gebruik om toevoeging of schrappingsacties voor herhaalbare secties te vormen
 
-U kunt de [Deelvenster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Accordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontale tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), of [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) componenten om secties van een adaptief formulier herhaalbaar te maken. U kunt onderliggende componenten toevoegen aan het deelvenster, accordeon, horizontale tabbladen of wizardcomponenten om een herhaalbare sectie in een formulier te maken.
+U kunt de [Deelvenster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Accordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontale tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [Verticale tabs](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)  of [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) componenten om secties van een adaptief formulier herhaalbaar te maken. U kunt onderliggende componenten aan deze componenten toevoegen om een herhaalbare sectie in een formulier te maken.
 
 
-Voorbeelden in dit document zijn gebaseerd op de [Deelvenster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) component. U kunt identieke stappen uitvoeren om [Accordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontale tabbladen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), en [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) componenten herhaalbaar.
+Voorbeelden in dit document zijn gebaseerd op de [Deelvenster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) component. U kunt identieke stappen uitvoeren om [Deelvenster](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Accordeon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontale tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), [Verticale tabs](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) of [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) componenten herhaalbaar.
 
 ## Herhaalbare secties in een formulier toevoegen of verwijderen {#add-or-delete-repeatable-section-in-panel-container}
 

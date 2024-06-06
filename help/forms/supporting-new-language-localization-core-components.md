@@ -4,7 +4,7 @@ description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formul
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+source-git-commit: 6238d059ff44586ab1b0d24895a8b73d74b1f913
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 0%
@@ -369,7 +369,7 @@ Deze stappen begeleiden u door een voorbeeld weer te geven van een adaptief form
 ## Aanbevolen procedures voor ondersteuning van nieuwe lokalisatie {#best-practices}
 
 * Adobe raadt u aan een vertaalproject te maken nadat u een adaptief formulier hebt gemaakt. Dit stroomlijnt het lokalisatieproces.
-* Wanneer de componenten Numeriek vak en Datumkiezer naar een specifieke landinstelling worden vertaald, kunnen er opmaakproblemen optreden. Om dit te beperken, **Taal** is opgenomen in het dialoogvenster Configureren van [component Datumkiezer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) en [Component Numeriek vak](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Wanneer de componenten Numeriek vak en Datumkiezer naar een specifieke landinstelling worden vertaald, kunnen er opmaakproblemen optreden. Om dit te beperken, **Taal** is opgenomen in het dialoogvenster Configureren van [component Datumkiezer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) en [Component Numeriek vak](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Nieuwe velden verwerken:

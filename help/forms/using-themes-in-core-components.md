@@ -1,16 +1,18 @@
 ---
 title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
-description: U kunt thema's gebruiken om een adaptief formulier op te maken en een visuele identiteit te geven met behulp van kerncomponenten. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
+description: Met thema's kunt u een adaptief formulier vormgeven en een visuele identiteit geven met behulp van Core Components. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
+keywords: Aangepaste formulieren met stijl Core Components. thema gebruiken in Core Components, aanpassen van vorm opmaken en thema's aanpassen
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
+source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2833'
 ht-degree: 0%
 
 ---
 
-# Thema&#39;s in adaptieve Forms {#themes-for-af-using-core-components}
+
+# Thema&#39;s gebruiken om de stijl van op Core Components gebaseerde Adaptive Forms te bepalen{#themes-for-af-using-core-components}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -19,7 +21,9 @@ ht-degree: 0%
 
 U kunt thema&#39;s maken en toepassen om een adaptief formulier op te maken. Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. Een thema wordt onafhankelijk beheerd zonder verwijzing naar een adaptief formulier en kan opnieuw worden gebruikt in meerdere Adaptieve Forms.
 
-## Beschikbare thema&#39;s
+In dit artikel begrijpen we hoe we aangepaste ontwerpen kunnen maken voor op Core Component gebaseerde Adaptive Forms met gebruik van thema&#39;s.
+
+## Beschikbare thema&#39;s voor de opmaak van kerncomponenten
 
 Forms as Cloud Service biedt de onderstaande thema&#39;s voor op Core Components gebaseerde Adaptive Forms:
 
@@ -29,7 +33,7 @@ Forms as Cloud Service biedt de onderstaande thema&#39;s voor op Core Components
 
 ## Werken met de structuur van de thema&#39;s
 
-Een thema is een pakket dat het CSS-bestand, JavaScript-bestanden en bronnen (zoals pictogrammen) omvat die de stijl van uw Adaptieve Forms definiëren. Het thema Adaptief formulier volgt op een specifieke organisatie, die bestaat uit de volgende onderdelen:
+Een thema is een pakket met opmaakcomponenten zoals CSS-bestand, JavaScript-bestanden en bronnen (zoals pictogrammen) die de stijl van uw Adaptieve Forms definiëren. Het thema Adaptief formulier volgt op een specifieke organisatie, die bestaat uit de volgende onderdelen:
 
 * `src/theme.scss`: Deze map bevat het CSS-bestand dat een grote invloed heeft op het hele thema. Het fungeert als een gecentraliseerde locatie voor het definiëren en beheren van de opmaak en het gedrag van uw thema. Door dit bestand te bewerken, kunt u wijzigingen aanbrengen die overal in het thema worden toegepast. Zo kunt u de vormgeving en functionaliteit van zowel de adaptieve Forms- als AEM Sites-pagina&#39;s wijzigen.
 
@@ -43,7 +47,7 @@ Een thema is een pakket dat het CSS-bestand, JavaScript-bestanden en bronnen (zo
 
 ## Een thema maken
 
-Forms as Cloud Service biedt de onderstaande thema&#39;s voor Core Components based Adaptive Forms.
+Forms as Cloud Service biedt de onderstaande Adaptive Form styling-thema&#39;s voor Core Components based Adaptive Forms.
 
 * [Canvasthema](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-thema](https://github.com/adobe/aem-forms-theme-wknd)
@@ -55,7 +59,7 @@ U kunt [al deze thema&#39;s aanpassen om een nieuw thema te maken](#customize-a-
 
 ## Een thema aanpassen {#customize-a-theme-core-components}
 
-Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpassen van de weergave van een thema. Wanneer u een thema aanpast, wijzigt u de ontwerpelementen, lay-out, kleuren, typografie en soms de onderliggende code. Hiermee kunt u een unieke en op maat gemaakte look voor uw website of toepassing maken met behoud van de basisstructuur en -functionaliteit die door het thema worden geboden.
+Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen, opmaken en aanpassen van de weergave van een thema. Wanneer u een thema aanpast, wijzigt u de ontwerpelementen, lay-out, kleuren, typografie en soms de onderliggende code. Hiermee kunt u een unieke en op maat gemaakte look voor uw website of toepassing maken met behoud van de basisstructuur en -functionaliteit die door het thema worden geboden.
 
 ### Vereisten {#prerequisites-to-customize}
 
@@ -67,7 +71,7 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpass
 ### Uw omgeving instellen
 
 * [Adaptieve Forms Core-componenten inschakelen](/help/forms/enable-adaptive-forms-core-components.md)  voor uw lokale ontwikkelings- en Cloud Service-omgeving.
-* Configureren [front-end implementatiepijplijn](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) voor uw Cloud Service-omgeving. Alternatief, kunt u de pijpleiding vormen later, die u de flexibiliteit geven om aan het testen prioriteit te geven en het thema te verfijnen alvorens de plaatsingspijpleiding te vestigen.
+* Een [front-end implementatiepijplijn](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) voor uw Cloud Service-omgeving. Alternatief, kunt u de pijpleiding vormen later, die u de flexibiliteit geven om aan het testen prioriteit te geven en het thema te verfijnen alvorens de plaatsingspijpleiding te vestigen.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -76,7 +80,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 -->
 
-Na het leren van de voorwaarden en het vormen van de ontwikkelomgeving, bent u bereid om te beginnen uw thema aan uw specifieke vereisten aanpassen.
+Na het leren van de vereisten en het vormen van de ontwikkelomgeving, bent u bereid om te beginnen uw thema aan te passen of te stileren volgens uw specifieke vereisten.
 
 ### Een thema aanpassen {#steps-to-customize-a-theme-core-components}
 
@@ -89,6 +93,8 @@ Het aanpassen van een thema is een proces met meerdere stappen. Voer de stappen 
 1. [Een thema implementeren](#deploy-the-theme)
 
 De voorbeelden in het document zijn gebaseerd op de **Canvas** thema, maar het is belangrijk om op te merken dat u om het even welk thema kunt klonen en het aanpassen gebruikend de zelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
+
+Laten we beginnen met een proces om een merkervaring te maken voor de Adaptieve Forms op basis van uw Core-component met gebruik van thema&#39;s.
 
 #### 1. Een thema klonen {#download-a-theme-core-components}
 
@@ -108,7 +114,7 @@ Voer de volgende instructies uit om een thema te klonen:
       git clone [Path of Git Repository of the theme]
    ```
 
-   Vervang de [Pad van Git Repository van het thema] met de werkelijke URL van de overeenkomstige Git Repository van het thema
+   Vervang de [Pad van de Git Repository van het thema] met de werkelijke URL van de overeenkomstige Git Repository van het thema
 
    Als u bijvoorbeeld het thema Canvas wilt klonen, voert u de volgende opdracht uit:
 
@@ -121,7 +127,7 @@ Voer de volgende instructies uit om een thema te klonen:
 
 #### 2. Naam van thema instellen {#set-name-of-theme}
 
-1. Open de themamap in een teksteditor zonder opmaak. Als u bijvoorbeeld het dialoogvenster `aem-forms-theme-canvas` omslag in de redacteur van de Code van Visual Studio.
+1. Open de themamap in uw winde. Als u bijvoorbeeld het dialoogvenster `aem-forms-theme-canvas` omslag in de redacteur van de Code van Visual Studio.
 
 1. Ga naar de `aem-forms-theme-canvas` map.
 
@@ -185,7 +191,7 @@ U kunt ook de opdracht `variable.scss` bestand voor het instellen van lettertype
 
 ##### Stijlen op componentniveau instellen {#component-based-customization}
 
-U kunt ook het lettertype, de kleur, de grootte en andere CSS-eigenschappen wijzigen van een specifieke kerncomponent van Adaptief formulier. Bijvoorbeeld knop, selectievakje, container, voettekst en meer. U kunt een stijl op de knop of het selectievakje toepassen door het CSS-bestand van de specifieke component te bewerken en het uit te lijnen met de stijl van uw organisatie. Een stijl van een component aanpassen:
+U kunt ook het lettertype, de kleur, de grootte en andere CSS-eigenschappen wijzigen van een specifieke kerncomponent van Adaptief formulier. Bijvoorbeeld knop, selectievakje, container, voettekst en meer. U kunt een knop of selectievakje opmaken door het CSS-bestand van de specifieke component te bewerken en deze uit te lijnen met de stijl van uw organisatie. Een stijl van een component aanpassen:
 
 1. Het bestand openen `<your-theme-sources>/src/components/<component>/<component.scss>` voor bewerken. Als u bijvoorbeeld de lettertypekleur van de knopcomponent wilt wijzigen, opent u de knop `<your-theme-sources>/src/components/button/button.scss`, bestand.
 1. Wijzig desgewenst de waarde van een object. Als u bijvoorbeeld de kleur van de knopcomponent wilt wijzigen wanneer u de muisaanwijzer verplaatst naar `green`wijzigt u de waarde van `color: $white` eigenschap in de `cmp-adaptiveform-button__widget:hover` klasse naar hexadecimale code `#12B453` of een andere vorm van `green`. De uiteindelijke code ziet er als volgt uit:
@@ -203,18 +209,18 @@ U kunt ook het lettertype, de kleur, de grootte en andere CSS-eigenschappen wijz
 
    >
    >
-   > Wanneer een stijl zowel op thema als componentenniveau wordt bepaald, krijgt de stijl die op het componentenniveau wordt bepaald prioriteit.
+   > Wanneer een stijl zowel op het thema als componentenniveau wordt bepaald, krijgt de stijl die op het componentenniveau wordt bepaald voorrang.
 
 #### 4. Test een aangepast thema {#test-the-theme}
 
 Voer de volgende stappen uit om een voorvertoning van de wijzigingen in de lokale omgeving te bekijken en deze te testen en het thema aan te passen aan de vereisten voor verschillende AEM:
 
-* 4,1 [Lokale omgeving configureren voor testen](#rename-env-file-theme-folder)
-* 4,2 [Het thema testen in de lokale omgeving](#start-a-local-proxy-server)
+* 4,1 [Een lokale omgeving configureren voor testen](#rename-env-file-theme-folder)
+* 4,2 [Het thema testen met de lokale omgeving](#start-a-local-proxy-server)
 
-##### 4.1. De lokale omgeving configureren voor testen {#rename-env-file-theme-folder}
+##### 4.1. Een lokale omgeving configureren voor testen {#rename-env-file-theme-folder}
 
-1. Open de themamap in een teksteditor zonder opmaak. Open bijvoorbeeld de `aem-forms-theme-canvas` omslag in de redacteur van de Code van Visual Studio.
+1. Open de themamap in uw winde. Open bijvoorbeeld de `aem-forms-theme-canvas` omslag in de redacteur van de Code van Visual Studio.
 1. De naam van de `env_template` bestand naar `.env` in de themamap en voeg de volgende parameters toe:
 
    ```
@@ -237,7 +243,7 @@ Voer de volgende stappen uit om een voorvertoning van de wijzigingen in de lokal
 
    ![Structuur van canvasthema](/help/forms/assets/env-file-canvas-theme.png)
 
-##### 4.2 Het thema testen met behulp van de lokale omgeving {#start-a-local-proxy-server}
+##### 4.2 Het thema testen met een lokale omgeving {#start-a-local-proxy-server}
 
 1. Navigeer naar de hoofdmap van de themamap. In dit geval is de naam van de themamap `aem-forms-theme-canvas`.
 1. Open de opdrachtprompt of terminal.
@@ -255,7 +261,7 @@ Dit is een hete implementatie. Dus wanneer u wijzigingen aanbrengt en de `_varia
 
 ![Proxy browsersync](/help/forms/assets/browser_sync.png)
 
-Nadat u de voorbeelden hebt gevolgd die zowel op themaniveau als op componentniveau voor themaaanpassingen worden geleverd, worden de foutberichten van een adaptief formulier gewijzigd in de `blue` kleur, terwijl de labelkleur voor de knopcomponent verandert in `green` bij het aanwijzen.
+Nadat u de voorbeelden hebt gevolgd voor het opmaken van een adaptief formulier (kerncomponenten) op zowel themaniveau als componentniveau voor themaaanpassingen, worden de foutberichten van een adaptief formulier gewijzigd in `blue` kleur, terwijl de labelkleur voor de knopcomponent verandert in `green` bij het aanwijzen.
 
 **Een voorbeeld weergeven van de stijl voor themaniveau**
 
@@ -265,11 +271,13 @@ Nadat u de voorbeelden hebt gevolgd die zowel op themaniveau als op componentniv
 
 ![Voorbeeld: kleur aanwijzen ingesteld op groen](/help/forms/assets/button-customization.png)
 
+Als u een thema aanpast, kunt u het aangepaste ontwerp gebruiken om de op Core Component gebaseerde Adaptieve Forms te zoeken op basis van de organisatorische vereisten.
+
 ###### Het thema testen voor formulieren die worden gehost in een Cloud Service-omgeving
 
 U kunt ook het thema testen voor het adaptieve formulier dat wordt gehost op uw as a Cloud Service AEM Forms-exemplaar. Voer de volgende stappen uit om de lokale omgeving voor het testen van de thema&#39;s te configureren en in te stellen met de Adaptive Forms die wordt gehost op de cloudinstantie:
 
-1. Open de themamap in een teksteditor zonder opmaak. Open bijvoorbeeld de `aem-forms-theme-canvas` omslag in de redacteur van de Code van Visual Studio.
+1. Open de themamap in uw winde. Open bijvoorbeeld de `aem-forms-theme-canvas` omslag in de redacteur van de Code van Visual Studio.
 1. De naam van de `env_template` bestand naar `.env` en voeg de volgende parameters toe:
 
    ```
@@ -315,7 +323,7 @@ Om het thema aan uw milieu van de Cloud Service op te stellen gebruikend de fron
 
 U hebt een opslagplaats nodig om het thema te implementeren. Aanmelden bij uw [AEM Cloud Manager-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) en voeg nieuwe opslagplaats voor uw thema toe.
 
-1. Nieuwe opslagplaats voor thema&#39;s maken door op de knop **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]**.
+1. Nieuwe opslagplaats voor een thema maken door op de knop **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]**.
 
    ![nieuwe themarepo maken](/help/forms/assets/createrepo_canvastheme.png)
 
@@ -368,9 +376,9 @@ Breng nu de wijzigingen aan in de themaopslagplaats van uw AEM Forms-Cloud Servi
 Het thema wordt opgesteld gebruikend [pijpleiding aan de voorzijde.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Voer de volgende stappen uit om thema te implementeren:
 
 1. Meld u aan bij de AEM Cloud Manager-opslagplaats.
-1. Klikken **[!UICONTROL Add]** van de knop **[!UICONTROL Pipelines]** sectie.
+1. Klik op de knop **[!UICONTROL Add]** van de knop **[!UICONTROL Pipelines]** sectie.
 1. Selecteren **[!UICONTROL Add Non-Production Pipeline]** of **[!UICONTROL Add Production Pipeline]** op basis van de omgeving van de Cloud Service. Hier kunt u bijvoorbeeld de **[!UICONTROL Add Production Pipeline]** is geselecteerd.
-1. In de **[!UICONTROL Add Production Pipeline]** als onderdeel van de **[!UICONTROL Configuration]** stappen, specificeer naam voor uw pijpleiding. De naam van de pijplijn is bijvoorbeeld `customcanvastheme`.
+1. In de **[!UICONTROL Add Production Pipeline]** als onderdeel van de **[!UICONTROL Configuration]** de stappen, specificeren de naam voor uw pijpleiding. De naam van de pijplijn is bijvoorbeeld `customcanvastheme`.
 1. Klik op **[!UICONTROL Continue]**.
 1. Selecteer de **[!UICONTROL Targeted Deployment]** > de **[!UICONTROL Front-end code]** opties, in de **[!UICONTROL Source Code]** stappen.
 1. Selecteer de **[!UICONTROL Repository]** en de **[!UICONTROL Git Branch]** waarden met de meest recente wijzigingen. Hier is bijvoorbeeld de naam van de geselecteerde opslagplaats `custom-canvas-theme-repo` en de Git-vertakking is `main`.
@@ -388,6 +396,8 @@ Het thema wordt opgesteld gebruikend [pijpleiding aan de voorzijde.](https://exp
 Zodra de bouwstijl volledig is, wordt het thema beschikbaar bij de auteursinstantie voor het gebruik. Het verschijnt onder de **[!UICONTROL Style]** in de wizard Adaptief formulier maken, terwijl u een adaptief formulier maakt.
 
 ![aangepast thema beschikbaar onder tabblad Stijl](/help/forms/assets/custom-theme-style-tab.png)
+
+Het aangepaste thema helpt bij het maken van een merkervaring voor op Core Component gebaseerde Adaptive Forms.
 
 ## Een thema toepassen op een adaptief formulier {#using-theme-in-adaptive-form}
 
@@ -417,10 +427,10 @@ De thema&#39;s Adaptief formulier worden gebruikt als onderdeel van een adaptiev
 
   Het wordt niet aanbevolen de lay-outbreedte van het containervenster te wijzigen. Wanneer u de breedte van een containerdeelvenster opgeeft, wordt het statisch en wordt het niet aangepast aan verschillende weergaven.
 
-* **Formuliereditor of themaeditor gebruiken voor het werken met kop- en voettekst**
+* **Een formuliereditor of themacoredacteur gebruiken voor het werken met kop- en voetteksten**
 
-  Gebruik de themaeditor als u koptekst en voettekst wilt opmaken met opmaakopties zoals lettertypestijl, achtergrond en transparantie.
-Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals een logoafbeelding, een bedrijfsnaam in de koptekst en copyrightinformatie in de voettekst.
+  Gebruik een themaeditor als u de kop- en voettekst wilt opmaken met opmaakopties zoals lettertypestijl, achtergrond en transparantie.
+Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals een logoafbeelding, de bedrijfsnaam in de koptekst en copyrightinformatie in de voettekst.
 
 ## Veelgestelde vragen {#faq}
 
