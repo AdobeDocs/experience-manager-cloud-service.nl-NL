@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3e63cfc65ea28a481b50f431483a13c2fd80853c
+source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,12 @@ Bekijk de video Overzicht van de release van mei 2024 voor een overzicht van de 
 
 ### Nieuwe functies in sites {#sites-new-features}
 
-**AEM Authoring voor Edge Delivery Services**
+#### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
+
+* **[Real Use Monitoring (RUM) Data Service is nu GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** het toelaten van cliënt-zijinzameling van gegevens voor AEM as a Cloud Service.
+De Echte Dienst van de Controle van het Gebruik, de cliënt-zijinzameling, biedt een preciezere weerspiegeling van interactie aan, die een betrouwbare maat van websitebetrokkenheid verzekeren. Het laat klanten met geavanceerde inzichten in hun paginaverkeer en prestaties toe. Het is een geweldige kans om meer te weten te komen over de prestaties van uw pagina en meer inzicht te krijgen in de manier waarop u deze kunt verbeteren.
+
+### AEM Authoring voor Edge Delivery Services
 
 Verbeterde stabiliteit en diverse verbeteringen voor een betere ontwerpervaring.
 
@@ -212,11 +217,6 @@ Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten op die op een specifie
 #### Edge Side Includes (ESI) for Loading Dynamic Content (Early Introducter Program) {#esi-early-adopter}
 
 De Adobe Beheerde CDN ondersteunt nu [Inclusief rand (ESI)](/help/implementing/dispatcher/edge-side-includes.md), een opmaaktaal voor dynamische webinhoud-verzameling op randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
-
-#### Real User Monitoring (RUM) Data Service (Early Introducter Program)
-
-* **[Real Use Monitoring (RUM) Data Service is nu GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** het toelaten van cliënt-zijinzameling van gegevens voor AEM as a Cloud Service.
-De Echte Dienst van de Controle van het Gebruik, de cliënt-zijinzameling, biedt een preciezere weerspiegeling van interactie aan, die een betrouwbare maat van websitebetrokkenheid verzekeren. Het laat klanten met geavanceerde inzichten in hun paginaverkeer en prestaties toe. Het is een geweldige kans om meer te weten te komen over de prestaties van uw pagina en meer inzicht te krijgen in de manier waarop u deze kunt verbeteren.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
