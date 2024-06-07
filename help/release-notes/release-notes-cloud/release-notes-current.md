@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
+source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Handelingen en workflows voor het vertalen van inhoud activeren nu gebeurtenisse
 
 #### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
 
-* **[Real Use Monitoring (RUM) Data Service is nu GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** het toelaten van cliënt-zijinzameling van gegevens voor AEM as a Cloud Service.
+* **[Real Use Monitoring (RUM) Data Service is nu GA](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)** het toelaten van cliënt-zijinzameling van gegevens voor AEM as a Cloud Service.
 De Echte Dienst van de Controle van het Gebruik, de cliënt-zijinzameling, biedt een preciezere weerspiegeling van interactie aan, die een betrouwbare maat van websitebetrokkenheid verzekeren. Het laat klanten met geavanceerde inzichten in hun paginaverkeer en prestaties toe. Het is een geweldige kans om meer te weten te komen over de prestaties van uw pagina en meer inzicht te krijgen in de manier waarop u deze kunt verbeteren.
 
 #### AEM Authoring voor Edge Delivery Services {#edge-enhancements}
