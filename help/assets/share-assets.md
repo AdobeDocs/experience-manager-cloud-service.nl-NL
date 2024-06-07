@@ -4,9 +4,9 @@ description: Digitale elementen distribueren met methoden als delen als een kopp
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
+source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
 workflow-type: tm+mt
-source-wordcount: '1777'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ De e-mailsjabloon kan worden aangepast met platte tekst of met HTML. De standaar
 | `${emailMessage}` | E-mailadres |
 | `${pagePath}` | URL van de gedeelde koppeling |
 | `${linkExpiry}` | Vervaldatum van gedeelde koppeling |
-| `${host.prefix}` | Oorsprong van de [!DNL Experience Manager] bijvoorbeeld `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### Voorbeeld van een aangepaste e-mailsjabloon {#custom-email-template-example}
 
@@ -137,10 +137,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### Elementen downloaden via de elementkoppeling {#download-assets-using-asset-link}
 
