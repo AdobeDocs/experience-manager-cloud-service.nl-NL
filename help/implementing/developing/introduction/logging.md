@@ -2,9 +2,9 @@
 title: Aanmelden voor AEM as a Cloud Service
 description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebruiken om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-feature: Developing
+feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 0%
