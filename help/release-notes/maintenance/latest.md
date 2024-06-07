@@ -4,9 +4,9 @@ description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
+source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '400'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,11 @@ In de volgende sectie worden de opmerkingen bij de technische release voor de hu
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16544 samengevat, die op 4 juni 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 16461.
 
 2024.6.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie .
+
+>[!CAUTION]
+>
+>Gebruik de SDK waarnaar hier wordt verwezen, omdat een regressie is bevestigd met de vorige SDK:
+>`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### Verbeteringen {#enhancements-16544}
 
