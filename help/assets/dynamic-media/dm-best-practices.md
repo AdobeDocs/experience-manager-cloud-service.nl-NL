@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions,Configuration,Asset Management,Best Practices
+feature: Video,Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: a92d55a4b9368d92d41d0156d8aa2b24f619fc54
+source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,9 @@ Een proactieve functie waarmee u kunt kiezen welke elementen u wilt synchroniser
 * **Selectieve publicatie:**
 Nadat u uw elementen hebt gesynchroniseerd, kunt u met Selectief publiceren bepalen welke elementen zichtbaar zijn voor uw klanten. Dit betekent dat u kunt bepalen welke goedgekeurde middelen daadwerkelijk via uw kanalen worden geleverd, zodat uw klanten alleen de beste en meest relevante inhoud zien.
 
-Deze twee beste praktijken helpen u betere controle, bestuur, en productiviteit over uw rijke-media inhoud bereiken. Meer informatie? Ga naar [Selectieve publicatie op mapniveau in Dynamic Media configureren](/help/assets/dynamic-media/selective-publishing.md).
+Deze twee beste praktijken helpen u betere controle, bestuur, en productiviteit over uw rijke-media inhoud bereiken.
+
+Meer informatie? Ga naar [Selectieve publicatie op mapniveau in Dynamic Media configureren](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Elementen voorbereiden voor levering
@@ -130,12 +132,12 @@ Meer informatie? Controle [Slim uitsnijden gebruiken met AEM Assets Dynamic Medi
 
 Gebruik regelmatig de volgende aanbevelingen om ervoor te zorgen dat uw afbeeldingen effectief bijdragen aan uw algemene SEO-strategie.
 
-* **Betekenisvolle afbeeldingsbestandsnamen:**
+* **Betekenisvolle namen van afbeeldingsbestanden:**
 Gebruik beschrijvende bestandsnamen die de afbeeldingsinhoud weerspiegelen. Bijvoorbeeld:
    * gebruiken `myCompany-Silver-Wrist-Watch`
    * *vermijden* `myCompany_Silver_Wrist_Watch` of `myCompanySilverWristWatch`
 
-  Zodoende kunnen zoekprogramma&#39;s de context van de afbeelding begrijpen en de SEO verbeteren. Houd er rekening mee dat Google bij woordscheiding de voorkeur geeft aan afbreekstreepjes boven onderstrepingstekens of aaneengeschakelde woorden.
+  Zodoende kunnen zoekprogramma&#39;s de context van de afbeelding begrijpen en de SEO verbeteren. Google geeft de voorkeur aan afbreekstreepjes boven onderstrepingstekens of spaties in een bestandsnaam. Vermijd ook het samenvoegen van woorden in een bestandsnaam.
 * **Aangepast domein:**
 Implementeer een aangepast domein dat uw bedrijf of merknaam bevat om de herkenning en het vertrouwen van merken te versterken. Bijvoorbeeld:
 
@@ -167,7 +169,7 @@ Dynamic Media beschikt over een aantal opdrachten waarmee u afbeeldingen kunt ve
 | --- | --- |
 | **De originele afbeelding uploaden en publiceren** | ・ Begin door de originele afbeelding naar Dynamic Media te uploaden.<br>・ Zorg ervoor dat het via een URL wordt gepubliceerd en toegankelijk is.<br>・ In dit voorbeeld wordt een voorraadafbeelding van een horloge met een witte achtergrond (laten we het &quot;Afbeelding X&quot; noemen) geüpload naar Dynamic Media.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
 | **Een masker maken** | ・ Ontwikkelen een masker dat het onderwerp (het gebied waar u effecten wilt toepassen) en de achtergrond (het gebied dat u wilt wijzigen) definieert.<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>・ Maskers zijn doorgaans grijswaardenafbeeldingen, waarbij wit staat voor het onderwerp en zwart voor de achtergrond. U kunt maskers maken met gereedschappen zoals Adobe Photoshop.<br>Meer informatie? Ga naar [Een snelmasker maken en bewerken in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>・ Voor &quot;Beeld X,&quot;creeer een masker dat precies het onderwerp beschrijft u wilt verbeteren. Bijvoorbeeld een persoon, een object, enzovoort. |
-| **Dynamic Media URL-opdrachten voor effecten toepassen** | Nadat u het masker hebt, gebruikt u URL-opdrachten om effecten als slagschaduwen toe te passen of wijzigt u de achtergrondkleur in &quot;Afbeelding X&quot;. Hier volgen twee voorbeelden:<br><br> ・ **Effect slagschaduw:**<br> Als u een slagschaduweffect langs de grens van het onderwerp wilt toevoegen, bewerkt u de URL als volgt:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In deze URL, `$shadow$` de parameter het schaduweffect creëert, en `color=0,0,0` Hiermee stelt u de schaduwkleur in op zwart.<br>・ **Wijziging van achtergrondkleur:**<br> Als u de achtergrondkleur wilt wijzigen, gebruikt u de URL met een andere achtergrondkleurwaarde:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In dit voorbeeld: `color=255,255,255` stelt de achtergrondkleur in op wit. Bewerk de achtergrond in een specifieke kleur voor visuele effecten. |
+| **Dynamic Media URL-opdrachten toepassen op effecten** | Nadat u het masker hebt, gebruikt u URL-opdrachten om effecten als slagschaduwen toe te passen of wijzigt u de achtergrondkleur in &quot;Afbeelding X&quot;. Hier volgen twee voorbeelden:<br><br> ・ **Slagschaduweffect:**<br> Als u een slagschaduweffect langs de grens van het onderwerp wilt toevoegen, bewerkt u de URL als volgt:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In deze URL, `$shadow$` de parameter het schaduweffect creëert, en `color=0,0,0` Hiermee stelt u de schaduwkleur in op zwart.<br>・ **Wijziging van achtergrondkleur:**<br> Als u de achtergrondkleur wilt wijzigen, gebruikt u de URL met een andere achtergrondkleurwaarde:<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In dit voorbeeld: `color=255,255,0` stelt de achtergrondkleur in op geel. Bewerk de achtergrond in een specifieke kleur voor visuele effecten. |
 
 #### Een afbeeldingsrand toevoegen
 
@@ -191,7 +193,7 @@ Als u een logo of pictogram op een bestaande afbeelding wilt plaatsen, biedt Dyn
 | **Het logo of de pictogramafbeelding uploaden en publiceren** | Vervolgens uploadt en publiceert u de afbeelding die u over de basisafbeelding wilt plaatsen. Deze afbeelding moet een transparant PNG-bestand zijn met het logo of pictogram dat u wilt bedekken.<br>Hier ziet u de transparante PNG-afbeelding van een sterobject met transparantie-effecten die wordt overschreven:<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
 | **De Dynamic Media-URL toepassen** | Maak nu een Dynamic Media-URL waarin de basisafbeelding en het logo of de pictogramafbeelding worden gecombineerd. U kunt URL-opdrachten gebruiken om dit effect te bereiken.<br>De URL-structuur ziet er ongeveer als volgt uit:<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>waar<br>・ `hotspotRetailBaseImage` is de basisafbeelding.<br>・ `starxp` Dit is het logo/pictogram.<br>・ `layer=1` Hiermee geeft u op dat het logo of pictogram in een laag over de basisafbeelding moet worden geplaatst.<br>・ `scale=1.25` past de grootte van het logo/pictogram aan.<br>・ `posN=0.33,-.25` Hiermee bepaalt u de positie van het logo/pictogram ten opzichte van de basisafbeelding.<br>・ `fmt=png` zorgt ervoor dat de uitvoer de PNG-indeling heeft. |
 
-Meer informatie? Ga naar [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) voor meer informatie over de `src` en andere Dynamic Media-opdrachten.
+Meer informatie? Ga naar [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) voor meer informatie over de `src` en andere URL-opdrachten van Dynamic Media.
 
 
 #### Promotietekst overschrijven
@@ -203,13 +205,13 @@ Hieronder vindt u de stappen voor het bedekken van promotietekstberichten op afb
 | **De basisafbeelding uploaden en publiceren** | Eerst uploadt en publiceert u de basisafbeelding waarop u de tekst wilt plaatsen. U kunt elke gewenste afbeelding gebruiken. Hier ziet u bijvoorbeeld een voorbeeld van een basisafbeelding:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa)<br> |
 | **Dynamic Media-tekstoperatoren toepassen** | Met Dynamic Media kunt u tekstoperatoren toepassen om dynamische tekst rechtstreeks op de afbeelding te bedekken. De volgende voorbeeld-URL toont deze mogelijkheid aan:<br>[https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=60 0&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/FurnitureSofa?layer=1&amp;posN=-0.3,-0.455&amp;text={\rtf1\ansi{\fonttbl{\f0+Arial;}{\colortbl+\red255\green255\blue255;}\copyfit1000\vertalc\qc{\cf0\fs42+New+Collection}&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=60 0&amp;hei=600) |
 
-#### Vergroten/verkleinen en uitsnijden voor verschillende gebruiksscenario&#39;s
+#### Vergroten/verkleinen en uitsnijden voor verschillende toepassingen
 
-##### Basisprincipes afbeeldingsgrootte wijzigen
+##### Basisprincipes van afbeeldingsgrootte wijzigen
 
 Bij het vergroten of verkleinen van afbeeldingen worden de afmetingen, resolutie en bestandsgrootte van een afbeelding gewijzigd. Hieronder volgen enkele belangrijke punten die u in overweging wilt nemen:
 
-* **Pixelcompositie:**
+* **Pixelsamenstelling:**
 Digitale afbeeldingen bestaan uit kleine stippen, pixels genoemd. Wanneer een afbeelding wordt gemaakt, heeft deze een specifiek aantal pixels. Bij het vergroten of verkleinen worden pixels toegevoegd of verwijderd om de afmetingen, resolutie en bestandsgrootte van de afbeelding te wijzigen.
 * **Verhouding:**
 Het handhaven van de hoogte-breedteverhouding (de verhouding tussen breedte en hoogte) is van cruciaal belang om vervorming te voorkomen. Of u nu een afbeelding groter (groter of kleiner (kleiner) maakt, het behoud van de hoogte-breedteverhouding zorgt voor visuele consistentie.
@@ -218,7 +220,7 @@ Het wijzigen van het formaat kan van invloed zijn op de afbeeldingskwaliteit. Ve
 
 ##### Uitsnijden in plaats van vergroten/verkleinen
 
-Vergroten/verkleinen en bijsnijden zijn technieken in Dynamic Media waarmee u afbeeldingen kunt transformeren op basis van verschillende gebruikssituaties, of het nu gaat om het maken van miniaturen, banners of afbeeldingen voor het weergeven van producten.
+Uitsnijden en vergroten/verkleinen zijn technieken in Dynamic Media waarmee u afbeeldingen kunt transformeren op basis van verschillende gebruikssituaties, of het nu gaat om het maken van miniaturen, afbeeldingen in de productweergave of banners.
 
 * **Uitsnijden:**
 Hierbij wordt een deel van een afbeelding verwijderd om de compositie en het kader te wijzigen. Het verandert de totale afmetingen niet, maar richt zich op een specifiek gebied.
@@ -253,15 +255,15 @@ Wilt u meer weten over de opdrachten in een URL? Ga naar [Opdrachtverwijzing](ht
 Selecteer eerst in Dynamic Media een geschikt videoprofiel. U kunt kiezen voor de *Adaptieve videocodering* beschikbaar in AEM Assets onder Videoprofielen. Deze vooraf gedefinieerde coderingsinstellingen zorgen ervoor dat de video is geoptimaliseerd voor afspelen op verschillende apparaten en onder verschillende bandbreedteomstandigheden. U kunt ook uw eigen adaptief videoprofiel maken.
 * **Wijs het profiel toe:**
 Wijs het gekozen videoprofiel toe aan de mappen waarin de video wordt geüpload. Met deze stap zorgt u ervoor dat de juiste coderingsinstellingen worden toegepast tijdens het uploaden.
-* **Upload de originele video:**
+* **De originele video uploaden:**
 Upload het originele videobestand. Zorg ervoor dat het een video met hoge resolutie van goede kwaliteit is. Hoe beter de bronvideo, hoe beter het uiteindelijke resultaat.
 * **Voorvertonen en publiceren:**
 Bekijk een voorvertoning van de video, zodat u zeker weet dat alles er naar behoren uitziet. Ga door en publiceer de opmerking als u tevreden bent. Deze stap maakt de video toegankelijk voor uw publiek.
-* **Koppelen of insluiten:**
+* **Koppeling of insluiten:**
 Na publicatie hebt u twee opties.
    * **Direct koppelen:**
 Gebruik de opgegeven URL om rechtstreeks te koppelen aan de video. Hyperlink het geschikt op uw marketingsite.
-   * **Sluit de video in:**
+   * **De video insluiten:**
 Kopieer de ingevoerde insluitcode en plak deze in de HTML van de webpagina waar u de video wilt weergeven. Hierdoor kan de video rechtstreeks op uw site worden afgespeeld.
 
 Meer informatie? Ga naar [Video](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
@@ -272,7 +274,7 @@ Meer informatie? Ga naar [Video](https://experienceleague.adobe.com/en/docs/expe
 
 Om de beste kwaliteit en betrokkenheid voor uw video&#39;s te garanderen, kunt u overwegen een combinatie van de volgende strategieën voor best practices te implementeren:
 
-* **Gebruik de ingebouwde HTML5-video-viewer:**
+* **Gebruik de ingebouwde HTML5 Video Viewer:**
 De Dynamic Media HTML5 Video Viewer-voorinstellingen zijn robuuste videospelers. U kunt deze gebruiken om algemene problemen te voorkomen die samenhangen met het afspelen van HTML5-video en mobiele apparaten.
 Deze voorinstellingen bieden oplossingen voor uitdagingen zoals het leveren van adaptieve bitsnelheden bij het streamen en het beperkte bereik van de desktopbrowser.
 Meer informatie? Ga naar [Tips en trucs: De HTML 5-videoviewer gebruiken](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
@@ -285,7 +287,7 @@ Meer informatie? Ga naar [Dynamic Media-videoprofielen](/help/assets/dynamic-med
 Hiermee past u videocoderingsprofielen toe die de oorspronkelijke videokwaliteit behouden zonder dat er tijdens het coderen buitensporig veel downscaling plaatsvindt.
 Meer informatie? Ga naar [Aanbevolen werkwijzen voor het coderen van video&#39;s](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-* **Aangepaste streaming toepassen in plaats van progressieve streaming:**
+* **Adaptieve streaming toepassen in plaats van progressieve streaming:**
 Bij adaptieve streaming wordt de videokwaliteit aangepast op basis van de snelheid en mogelijkheden van de internetverbinding van de kijker.
 Er worden protocollen gebruikt zoals HLS (Live HTTP-streaming) of DASH (`Dynamic Adaptive Streaming over HTTP`) om een optimale afspeelkwaliteit te garanderen.
 In tegenstelling tot progressieve streaming, die lineaire, adaptieve streaming video levert, minimaliseert buffering en biedt een naadloze kijkervaring.
@@ -301,7 +303,7 @@ Meer informatie? Ga naar [DASH inschakelen op uw Dynamic Media-account](/help/as
 
 Het internationaliseren van video&#39;s voor meertalig gebruik is essentieel voor het bereiken van een wereldwijd publiek. Dynamic Media biedt functies die u kunnen helpen dit doel te bereiken.
 
-* **Upload uw video&#39;s:**
+* **Uw video&#39;s uploaden:**
    * Maak eerst een videocoderingsprofiel. U kunt het vooraf gedefinieerde profiel voor adaptieve videocodering dat bij Dynamic Media wordt geleverd, gebruiken of uw eigen aangepaste profiel maken.
    * Koppel het videoverwerkingsprofiel aan een of meer mappen waarin u uw primaire bronvideo&#39;s uploadt.
    * Upload uw primaire bronvideo&#39;s naar deze mappen. Dynamic Media codeert deze op basis van het toegewezen videoverwerkingsprofiel.
@@ -346,5 +348,5 @@ Om de beste voor het web geoptimaliseerde indeling te garanderen, kunt u Smart I
 
 Door op Smart Imaging te vertrouwen, kunt u ervoor zorgen dat uw afbeeldingen zo efficiënt mogelijk worden geleverd, op maat van de bladeromgeving van elke gebruiker. Deze aanpak vereenvoudigt het proces en kan leiden tot betere prestaties op het gebied van het laden van afbeeldingen en de algehele gebruikerservaring.
 
-Meer informatie? Ga naar [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md)
+Meer informatie? Ga naar [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md).
 
