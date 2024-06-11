@@ -3,9 +3,9 @@ title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
 description: Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1826'
 ht-degree: 0%
 
 ---
@@ -1794,6 +1794,20 @@ Deze query vraagt om:
   }
 } 
 ```
+
+## Voorbeeldquery&#39;s voor levering van DAM- en Dynamic Media-middelen {#sample-queries-delivery-DAM-DM}
+
+Voor voor het web geoptimaliseerde afbeeldingslevering (van DAM-middelen):
+
+* [Voorbeeldquery voor voor voor het web geoptimaliseerde levering van afbeeldingen met volledige parameters](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+
+* [Voorbeeldquery voor voor voor het web geoptimaliseerde afbeeldingslevering met één opgegeven parameter](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+
+Voor de levering van de URL aan een Dynamic Media-element
+
+* Zie [Voorbeeldquery voor levering van Dynamic Media-elementen via URL - Afbeeldingsverwijzing](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+* Zie [Voorbeeldquery voor levering van Dynamic Media-elementen via URL - Meerdere verwijzingen](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## De structuur voor het voorbeeldinhoudfragment (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
 
