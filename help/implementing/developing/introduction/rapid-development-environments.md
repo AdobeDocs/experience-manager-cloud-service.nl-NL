@@ -4,9 +4,9 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
 workflow-type: tm+mt
-source-wordcount: '4294'
+source-wordcount: '4312'
 ht-degree: 0%
 
 ---
@@ -412,11 +412,6 @@ Het bovenstaande codevoorbeeld illustreert het gedrag als een bundel niet oplost
 
 ### Voorste code implementeren op basis van sitethema&#39;s en sitesjablonen {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> Deze functie is nog niet beschikbaar. Het zal ergens in juni worden ingevoerd.
->
-
 RDEs steunt front-end code die op wordt gebaseerd [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md). Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn om voorste-eindpakketten, eerder dan de Manager van de Wolk op te stellen [Pijpleiding aan de voorzijde](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) gebruikt voor andere omgevingstypen.
 
 Zoals gebruikelijk, bouw uw front-end pakket gebruikend npm:
@@ -460,6 +455,10 @@ Logs:
 >De naamgeving van de bestanden in het front-end pakket moet voldoen aan de volgende naamgevingsconventies:
 > * map &quot;dist&quot;, voor de npm-bouwuitvoerpakketmap
 > * bestand &quot;package.json&quot;, voor het pakket voor npm-afhankelijkheden
+
+>[!TIP]
+>
+> Als u RDE vóór April 2023 creeerde en de fout &quot;UNEXPECTED_API_ERROR&quot;ervaren wanneer het proberen van de frontend eigenschap voor het eerst, gelieve te proberen om uw milieu te schrappen en het opnieuw tot stand te brengen.
 
 ### De status van de RDE controleren {#checking-rde-status}
 
