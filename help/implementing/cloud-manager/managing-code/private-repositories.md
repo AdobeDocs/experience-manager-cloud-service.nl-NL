@@ -1,9 +1,9 @@
 ---
 title: Persoonlijke opslagplaatsen toevoegen in Cloud Manager
 description: Leer hoe u Cloud Manager instelt voor gebruik met uw eigen persoonlijke GitHub-opslagruimten.
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 7f598a623c3003b20a074c31749382df7f5f5ca6
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,6 @@ Gevalideerde privéopslagruimten kunnen worden gekoppeld aan [volledige-stapelle
 
 Er gelden bepaalde beperkingen voor het gebruik van persoonlijke opslagruimten met Cloud Manager.
 
-* U kunt privéopslagruimten niet gebruiken als directe opslagplaats voor de pijpleidingen die u beheert.
 * U kunt niet de bevestiging van het trekkingsverzoek pauzeren gebruikend de controle GitHub van de Manager van de Wolk.
    * Als de gegevensopslagplaats GitHub in de Manager van de Wolk wordt bevestigd, zal de Manager van de Wolk altijd proberen om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.
 * Als de Adobe GitHub app wordt verwijderd uit uw organisatie GitHb, zal dit de trekrekverzoekbevestigingseigenschap voor alle bewaarplaatsen verwijderen.
