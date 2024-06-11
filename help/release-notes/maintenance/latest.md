@@ -4,9 +4,9 @@ description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
+source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '422'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Voor meer informatie over de nieuwe en verbeterde functies en problemen die zijn
 
 ### Bekende problemen {#known-issues-16544}
 
-Geen.
+* GRANITE-52573: Verzoeken met een dubbele slash `//` worden geweigerd met statuscode 400. Dit gedrag wordt in een volgende onderhoudsrelease ongedaan gemaakt.
 
 ### Kennisgeving wijzigen {#change-notice-16544}
 
