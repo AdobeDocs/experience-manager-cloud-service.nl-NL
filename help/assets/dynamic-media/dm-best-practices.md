@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Meer informatie? Ga naar [Elementen ordenen als verzamelingen](/help/assets/mana
 * **Elementen ordenen met behulp van profielen:**
 Een verwerkingsprofiel automatiseert de verwerking van middelen in aangewezen omslagen, die organisatie stroomlijnen. Door het standaardiseren van metagegevens, bestandsnamen en mapstructuren kunt u deze profielen consistent en nauwkeurig toepassen terwijl de verzameling van digitale elementen wordt uitgebreid.
 Meer informatie? Ga naar [Elementen ordenen met behulp van profielen](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### De kwaliteit van afbeeldingen optimaliseren
 
