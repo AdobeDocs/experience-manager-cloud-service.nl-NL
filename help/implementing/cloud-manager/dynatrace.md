@@ -5,7 +5,7 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe biedt de mogelijkheid om Dynatrace te gebruiken om toezicht te houden op AEM as a Cloud Service als onderdeel van de implementatie van een onderneming, de oorzaak van mogelijke problemen te identificeren en actie te ondernemen om deze indien nodig te verhelpen.
 
-Met Dynatrace kunt u naadloze waarneming krijgen voor al uw AEM toepassingen. Dynatrace biedt uitgebreide zichtbaarheid in de ervaring van eindgebruikers door uw AEM toepassingen automatisch te detecteren en hun afhankelijkheden van de website naar de container naar de cloudservice te visualiseren. Intertwined met de sporen van begin tot eind over elke rij en Echte Controle van de Gebruiker, neem uw AEM inhoud-geleide ervaringen aan het volgende niveau zonder hiaten of dode vlekken. Als er anomalieën optreden, worden deze door Dynatrace in realtime gediagnosticeerd met de Davis AI-engine en wordt de oorzaak van de beschadigde code aangegeven voordat de problemen bij uw klanten optreden. Hierdoor wordt de gemiddelde hersteltijd tot een minimum beperkt.
+Met Dynatrace kunt u naadloze waarneming krijgen voor al uw AEM toepassingen. Dynatrace biedt uitgebreide zichtbaarheid in de ervaring van eindgebruikers door uw AEM toepassingen automatisch te detecteren en hun afhankelijkheden van de website naar de container naar de cloudservice te visualiseren. Intertwined met de sporen van begin tot eind over elke rij en Reëel Toezicht van het Gebruik, neem uw AEM inhoud-geleide ervaringen tot het volgende niveau zonder hiaten of dode vlekken. Als er anomalieën optreden, worden deze door Dynatrace in realtime gediagnosticeerd met de Davis AI-engine en wordt de oorzaak van de beschadigde code aangegeven voordat de problemen bij uw klanten optreden. Hierdoor wordt de gemiddelde hersteltijd tot een minimum beperkt.
 
 Ga voor meer informatie over Dynatrace naar de [Integratie van Adobe AEM Cloud Service](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 

@@ -4,7 +4,7 @@ description: AEM Forms-Edge Delivery Services zijn gebouwd voor optimale prestat
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Met deze services kunt u:
 
 * **Ervaar zelf welke inschrijvingen u wilt maken met de gereedschappen van uw keuze:** Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel Document-based Authoring (Microsoft SharePoint of Google Drive) als AEM Authoring (Adaptive Forms Editor) gebruiken. U kunt met meerdere inhoudsbronnen werken op dezelfde formuliersite en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of de Adaptive Forms Editor.
 
-* **Uitzonderlijke ervaringen met digitaal inschrijven bieden:** Lever de Digitale Inschrijving Ervaringen die snel en onophoudelijk uw vormprestaties door echte gebruiker controle (RUM) laden en teruggeven controleren. Snellere laadtijden en een geoptimaliseerde gebruikerservaring dragen bij tot een hogere snelheid voor het invullen en converteren van formulieren.
+* **Uitzonderlijke ervaringen met digitaal inschrijven bieden:** Lever de Digitale Inschrijving Ervaringen die snel en onophoudelijk uw vormprestaties door controle van het echte gebruik (RUM) laden en teruggeven. Snellere laadtijden en een geoptimaliseerde gebruikerservaring dragen bij tot een hogere snelheid voor het invullen en converteren van formulieren.
 
 * **Gebruik een ontwikkelaarsvriendelijke gereedschapset:** AEM Forms-Edge Delivery Services maken gebruik van normale HTML, moderne CSS en vanilla JavaScript om uitzonderlijke ervaringen te creëren, waarbij de steile leercurve van een bepaald framework wordt vermeden. Een ontwikkelaar met basisvaardigheden voor webontwikkeling kan formuliercomponenten en -ervaringen aanpassen en eenvoudig bouwen. Er is geen behoefte om op een pijpleiding te wachten om te lopen, enkel controle-binnen uw code in GitHub en uw veranderingen zijn levend.
 
@@ -61,7 +61,7 @@ Met Document-gebaseerde Authoring kunt u formulieren maken met vertrouwde gereed
 * Google reCAPTCHA-integratie voor spambescherming.
 * Mogelijkheid om aangepaste formuliercomponenten te maken voor specifieke behoeften.
 * Formuliergegevens rechtstreeks verzenden naar Microsoft Excel of Google-werkbladen of e-mailadressen.
-* De prestaties van uw formulieren controleren met behulp van RUM (real user Monitoring)
+* De prestaties van uw formulieren bewaken met behulp van RUM (real-use Monitoring)
 
 #### AEM ontwerpfuncties
 

@@ -1,7 +1,7 @@
 ---
 title: Ondersteuning voor Edge Delivery Services in Cloud Manager
 description: Leer hoe u uw Cloud Manager-projecten kunt leveren met Edge Delivery Services.
-source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Leer hoe u uw Cloud Manager-projecten kunt leveren met Edge Delivery Services.
 
 Edge Delivery Services is een samenstellbare set services die u in staat stelt om op zeer flexibele wijze inhoud op uw website te schrijven. Zo kunt u:
 
-* Maak snelle sites met een perfecte Lighthouse Score en controleer voortdurend de prestaties via echte bewaking van gebruikers (RUM).
+* Maak snelle sites met een perfecte Lighthouse Score en controleer de prestaties voortdurend via de bewaking van het werkelijke gebruik (RUM).
 * Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen.
 
 U kunt zowel AEM inhoudsbeheer als op AEM gebaseerd schrijven gebruiken gebruikend de Universele Redacteur evenals op document-gebaseerd schrijven.

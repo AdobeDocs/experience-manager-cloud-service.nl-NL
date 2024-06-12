@@ -4,7 +4,7 @@ description: Opmerkingen bij de release 2023.12.0 van [!DNL Adobe Experience Man
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 0%
@@ -47,11 +47,11 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
-**U kunt de [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om client-side verzameling voor AEM as a Cloud Service in te schakelen.
+**U kunt de [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om client-side verzameling voor AEM as a Cloud Service in te schakelen.
 
-Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt geboden. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-beheerde CDN of niet-Adobe-beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
+De gegevensservice Real Use Monitoring (RUM) biedt een preciezere weergave van gebruikersinteracties, waardoor een betrouwbare mate van betrokkenheid van websites wordt gegarandeerd. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-beheerde CDN of niet-Adobe-beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
 
-Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor de productie-, stage- en ontwikkelomgeving via uw e-mailadres dat aan uw Adobe ID is gekoppeld. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
+Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor de productie-, stage- en ontwikkelomgeving via uw e-mailadres dat aan uw Adobe ID is gekoppeld. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van het Gebruik (RUM) voor u toelaten.
 
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
