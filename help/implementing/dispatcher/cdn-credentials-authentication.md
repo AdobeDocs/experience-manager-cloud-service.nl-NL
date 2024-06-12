@@ -2,7 +2,8 @@
 title: CDN-referenties en -verificatie configureren
 description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door regels in een configuratiedossier te verklaren dat dan door de Pijpleiding van de Configuratie van de Manager van de Wolk te gebruiken wordt opgesteld.
 feature: Dispatcher
-source-git-commit: ee993798739232da794dbf7ff0a643ca93effa7d
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 0%
@@ -71,7 +72,7 @@ De syntaxis voor de `X-AEM-Edge-Key` waarde omvat:
 
 ## API-token wissen {#purge-API-token}
 
-Klanten kunnen de CDN-cache leegmaken met behulp van een gedeclareerd token voor de zuiverings-API. Het token wordt gedeclareerd met de onderstaande syntaxis.  Zie de [Algemene instelling](#common-setup) te leren hoe u het kunt implementeren.
+Klanten kunnen [De CDN-cache leegmaken](/help/implementing/dispatcher/cdn-cache-purge.md) door een gedeclareerde purge API-token te gebruiken. Het token wordt gedeclareerd met de onderstaande syntaxis.  Zie de [Algemene instelling](#common-setup) te leren hoe u het kunt implementeren.
 
 ```
 kind: "CDN"
