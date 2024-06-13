@@ -4,9 +4,9 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4244'
 ht-degree: 0%
 
 ---
@@ -472,11 +472,6 @@ Raadpleeg de videozelfstudie voor meer informatie en demonstratie [RDE-opdrachte
 
 ## Logboeken {#rde-logging}
 
->[!NOTE]
->
-> Deze functie is nog niet beschikbaar. Het zal ergens in juni worden ingevoerd.
-> 
-
 Gelijkaardig aan andere milieutypes, kunnen de logboekniveaus worden geplaatst door configuraties te wijzigen OSGi, hoewel zoals hierboven beschreven, het plaatsingsmodel voor RDEs een bevellijn eerder dan een plaatsing van de Manager van de Wolk impliceert. Controleer de [logboekdocumentatie](/help/implementing/developing/introduction/logging.md) voor meer informatie over het weergeven, downloaden en interpreteren van logbestanden.
 
 RDE CLI heeft ook zijn eigen logboekbevel dat kan worden gebruikt om snel te vormen welke klassen en pakketten zouden moeten worden geregistreerd, en op welk logboekniveau. Deze configuraties kunnen als letterlijk worden beschouwd, aangezien zij niet de eigenschappen OSGI in versiecontrole wijzigen. Deze functie is gericht op het in real time stammen van logboeken in plaats van het omhoog kijken van logboeken van het verre verleden.
@@ -484,6 +479,14 @@ RDE CLI heeft ook zijn eigen logboekbevel dat kan worden gebruikt om snel te vor
 In het volgende voorbeeld wordt getoond hoe u de auteurslaag kunt staart, met één pakket dat is ingesteld op een logniveau voor foutopsporing en twee pakketten (gescheiden door spaties) die zijn ingesteld op een niveau voor foutopsporing voor info. Uitvoer die een **auth** pakket is gemarkeerd.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>Als u de fout ziet `RDECLI:UNEXPECTED_API_ERROR` wanneer het spelen met de logboekbevelen voor de auteursdienst, gelieve uw milieu terug te stellen en opnieuw te proberen. Deze fout treedt op als uw laatste herstelbewerking voor eind mei 2024 is uitgevoerd.
+>
+```
+>aio aem:rde:reset
+>```
 
 Zie `aio aem:rde:logs --help` voor de volledige set opdrachtregelopties.
 
