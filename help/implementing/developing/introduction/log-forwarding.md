@@ -4,9 +4,9 @@ description: Leer over het door:sturen van logboeken aan Splunk en andere regist
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
+source-git-commit: e007f2e3713d334787446305872020367169e6a2
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Deze eigenschap wordt nog niet vrijgegeven, en sommige registrerenbestemmingen kunnen niet op het tijdstip van versie beschikbaar zijn. Ondertussen kunt u een ondersteuningsticket openen om logbestanden door te sturen naar **Splunk**, zoals beschreven in de [logboekartikel](/help/implementing/developing/introduction/logging.md).
 
-Klanten die een vergunning voor een registrerenverkoper hebben of een registrerenproduct ontvangen kunnen AEM, Apache/Dispatcher, en CDN- logboeken hebben door:sturen aan de bijbehorende registrerenbestemmingen. AEM as a Cloud Service steunt de volgende registrerenbestemmingen:
+Klanten die een vergunning voor een registrerenverkoper hebben of een registrerenproduct ontvangen kunnen AEM logboeken (met inbegrip van Apache/Dispatcher) en CDN- logboeken hebben die aan de bijbehorende registrerenbestemmingen door:sturen. AEM as a Cloud Service steunt de volgende registrerenbestemmingen:
 
 * Azure Blob Storage
 * DataDog
@@ -71,7 +71,7 @@ Dit artikel is als volgt geordend:
 
    Tokens in de configuratie (zoals `${{SPLUNK_TOKEN}}`) vertegenwoordigen geheimen, die niet in Git moeten worden opgeslagen. In plaats daarvan declareren als Cloud Manager  [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md) van het type **geheim**. Zorg ervoor dat u **Alles** als de vervolgkeuzelijst voor het veld Service Applied, zodat de logbestanden naar de auteur-, publicatie- en voorvertoningslagen kunnen worden doorgestuurd.
 
-   Het is mogelijk verschillende waarden in te stellen tussen cdn- en alle andere logbestanden (AEM- en apache-logbestanden) door een extra waarde op te nemen **cdn** en/of **aem** blok na de **default** blok, waarbij eigenschappen de eigenschappen kunnen overschrijven die in het dialoogvenster **default** blok; slechts wordt het toegelaten bezit vereist. Een mogelijk gebruiksgeval zou kunnen zijn om een verschillende index van de Splunk voor CDN- logboeken te gebruiken, zoals het hieronder voorbeeld illustreert.
+   Het is mogelijk verschillende waarden in te stellen tussen CDN-logbestanden en AEM-logbestanden (inclusief Apache/Dispatcher) door een extra waarde op te nemen **cdn** en/of **aem** blok na de **default** blok, waarbij eigenschappen de eigenschappen kunnen overschrijven die in het dialoogvenster **default** blok; slechts wordt het toegelaten bezit vereist. Een mogelijk gebruiksgeval zou kunnen zijn om een verschillende index van de Splunk voor CDN- logboeken te gebruiken, zoals het hieronder voorbeeld illustreert.
 
    ```
       kind: "LogForwarding"
@@ -91,7 +91,7 @@ Dit artikel is als volgt geordend:
             index: "AEMaaCS_CDN"   
    ```
 
-   Een ander scenario is of het door:sturen van de CDN- logboeken of alles (AEM en apache logboeken) onbruikbaar te maken. Als u bijvoorbeeld alleen de CDN-logboeken wilt doorsturen, kunt u het volgende configureren:
+   Een ander scenario moet of het door:sturen van de logboeken onbruikbaar maken CDN of AEM (met inbegrip van Apache/Dispatcher). Als u bijvoorbeeld alleen de CDN-logboeken wilt doorsturen, kunt u het volgende configureren:
 
    ```
       kind: "LogForwarding"
@@ -171,9 +171,9 @@ aemcdn/
 
 Elk bestand bevat meerdere logitems van de zoon, elk op een aparte regel. De notaties voor logberichten worden beschreven in het dialoogvenster [logboekartikel](/help/implementing/developing/introduction/logging.md)en elke logbestandvermelding bevat ook de aanvullende eigenschappen die in de [Indelingen voor logbestandvermelding](#log-format) hieronder.
 
-#### Andere Azure Blob Storage-logbestanden {#azureblob-other}
+#### Azure Blob Storage AEM logs {#azureblob-aem}
 
-Andere logbestanden dan CDN-logbestanden worden weergegeven onder een map met de volgende naamgevingsconventie:
+AEM logbestanden (inclusief Apache/Dispatcher) worden weergegeven onder een map met de volgende naamgevingsconventie:
 
 * amusement
 * aemfout
@@ -250,9 +250,14 @@ De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige ladi
 
 Er is ook een eigenschap met de naam `sourcetype`, die is ingesteld op de waarde `aemcdn`.
 
-#### Andere HTTPS-logboeken {#https-other}
+>[!NOTE]
+>
+> Voordat de eerste CDN-logbestandvermelding wordt verzonden, moet uw HTTP-server een eenmalige controle met succes uitvoeren: een aanvraag die naar het pad wordt verzonden ``wellknownpath`` moet reageren met ``*``.
 
-Voor elke logbestandvermelding wordt een aparte webaanvraag (POST) verzonden, met de notaties voor logberichten die worden beschreven in de [logboekartikel](/help/implementing/developing/introduction/logging.md). Aanvullende eigenschappen worden vermeld in de [Indelingen voor logbestandvermelding](#log-format) hieronder.
+
+#### HTTPS-AEM {#https-aem}
+
+Voor AEM logbestanden (inclusief apache/dispacher) worden webaanvragen (POST&#39;s) continu verzonden, met een JSON-lading die een array van logitems is, met de verschillende logbestandsindelingen zoals beschreven in het dialoogvenster [logboekartikel](/help/implementing/developing/introduction/logging.md). Aanvullende eigenschappen worden vermeld in de [Indelingen voor logbestandvermelding](#log-format) hieronder.
 
 Er is ook een eigenschap met de naam `sourcetype`, die op een van de volgende waarden wordt ingesteld:
 
@@ -299,7 +304,7 @@ data:
 
 ## Indelingen voor logbestandvermelding {#log-formats}
 
-Zie het algemene gedeelte [logboekartikel](/help/implementing/developing/introduction/logging.md) voor het formaat van elk respectieve logboektype (het logboek van de Verzender, CDN, enz.).
+Zie het algemene gedeelte [logboekartikel](/help/implementing/developing/introduction/logging.md) voor de indeling van elk respectieve logbestandstype (CDN-logboeken en AEM, inclusief Apache/Dispatcher).
 
 Aangezien de logboeken van veelvoudige programma&#39;s en milieu&#39;s aan de zelfde registrerenbestemming kunnen door:sturen, naast de output die in het registrerenartikel wordt beschreven, zullen de volgende eigenschappen in elke logboekingang worden omvat:
 
@@ -328,7 +333,7 @@ Sommige organisaties verkiezen om te beperken welk verkeer door de registrerenbe
 
 Voor het CDN-logboek kunt u de IP-adressen toestaan en weergeven, zoals wordt beschreven in [dit artikel](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Als die lijst van gedeelde IP adressen te groot is, denk na verzendend verkeer naar (niet-Adobe) Azure Blob Store waar de logica kan worden geschreven om de logboeken van specifieke IP naar hun uiteindelijke bestemming te verzenden.
 
-Voor andere logboeken, kunt u logboek vormen door:sturen om door te gaan [geavanceerd netwerken](/help/security/configuring-advanced-networking.md). Zie de patronen voor de drie hieronder geavanceerde voorzien van een netwerktypes, die gebruik van facultatief maken `port` samen met de `host` parameter.
+Voor AEM logboeken (met inbegrip van Apache/Dispatcher), kunt u logboek vormen door:sturen om te gaan [geavanceerd netwerken](/help/security/configuring-advanced-networking.md). Zie de patronen voor de drie hieronder geavanceerde voorzien van een netwerktypes, die gebruik van facultatief maken `port` samen met de `host` parameter.
 
 ### Flexibele poortuitgang {#flex-port}
 
