@@ -4,9 +4,9 @@ description: Leer hoe te om blokken tot stand te brengen van instrumenten voor g
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -53,75 +53,99 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 1. Bewerk de `component-definition.json` dossier bij de wortel van het project en voeg de volgende definitie voor uw nieuw citaatblok toe en bewaar het dossier.
 
-   ```json
-   {
-     "title": "Quote",
-     "id": "quote",
-     "plugins": {
-       "xwalk": {
-         "page": {
-           "resourceType": "core/franklin/components/block/v1/block",
-           "template": {
-             "name": "Quote",
-             "model": "quote",
-             "quote": "<p>Think, McFly! Think!</p>",
-             "author": "Biff Tannen"
-           }
-         }
-       }
-     }
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Het bestand component-definitions.json bewerken om het aanhalingsblok te definiëren](assets/create-block/component-definitions.png)
+>[!TAB JSON-voorbeeld]
+
+```json
+{
+  "title": "Quote",
+  "id": "quote",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "Quote",
+          "model": "quote",
+          "quote": "<p>Think, McFly! Think!</p>",
+          "author": "Biff Tannen"
+        }
+      }
+    }
+  }
+}
+```
+
+>[!TAB Schermafbeelding]
+
+![Het bestand component-definitions.json bewerken om het aanhalingsblok te definiëren](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. Bewerk de `component-models.json` dossier bij de wortel van het project en voeg het volgende toe [modeldefinitie](/help/implementing/universal-editor/field-types.md#model-structure) voor het nieuwe aanhalingsteken en sla het bestand op.
 
    * Zie het document [Inhoud modelleren voor AEM ontwerpen met projecten voor Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) voor meer informatie over wat belangrijk is om te overwegen wanneer het creëren van inhoudsmodellen.
 
-   ```json
-   {
-     "id": "quote",
-     "fields": [
-        {
-          "component": "text-area",
-          "name": "quote",
-          "value": "",
-          "label": "Quote",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "author",
-          "label": "Author",
-          "value": ""
-        }
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Het bestand component-models.json bewerken om het model van het blok met aanhalingstekens te definiëren](assets/create-block/component-models.png)
+>[!TAB JSON-voorbeeld]
+
+```json
+{
+  "id": "quote",
+  "fields": [
+     {
+       "component": "text-area",
+       "name": "quote",
+       "value": "",
+       "label": "Quote",
+       "valueType": "string"
+     },
+     {
+       "component": "text-input",
+       "valueType": "string",
+       "name": "author",
+       "label": "Author",
+       "value": ""
+     }
+   ]
+}
+```
+
+>[!TAB Schermafbeelding]
+
+![Het bestand component-models.json bewerken om het model van het blok met aanhalingstekens te definiëren](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. Bewerk de `component-filters.json` dossier bij de wortel van het project en voeg het citaatblok aan toe [filterdefinitie](/help/implementing/universal-editor/customizing.md#filtering-components) om toe te staan dat het blok aan om het even welke sectie wordt toegevoegd en sparen het dossier.
 
-   ```json
-   {
-     "id": "section",
-     "components": [
-       "text",
-       "image",
-       "button",
-       "title",
-       "hero",
-       "cards",
-       "columns",
-       "quote"
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Het bestand component-filters.json bewerken om de filters voor het aanhalingsblok te definiëren](assets/create-block/component-filters.png)
+>[!TAB JSON-voorbeeld]
+
+```json
+{
+  "id": "section",
+  "components": [
+    "text",
+    "image",
+    "button",
+    "title",
+    "hero",
+    "cards",
+    "columns",
+    "quote"
+   ]
+}
+```
+
+>[!TAB Schermafbeelding]
+
+![Het bestand component-filters.json bewerken om de filters voor het aanhalingsblok te definiëren](assets/create-block/component-filters.png)
+
+>[!ENDTABS]
 
 1. Deze wijzigingen doorvoeren met behulp van git `main` vertakking.
 
@@ -174,55 +198,70 @@ Nu u een werkend citaatblok hebt kunt u het stileren toepassen.
 
 1. In het nieuwe `quote` map, een `quote.js` bestand om blokdecoratie te implementeren door het volgende JavaScript toe te voegen en het bestand op te slaan.
 
-   ```javascript
-   export default function decorate(block) {
-     const [quoteWrapper] = block.children;
-   
-     const blockquote = document.createElement('blockquote');
-     blockquote.textContent = quoteWrapper.textContent.trim();
-     quoteWrapper.replaceChildren(blockquote);
-   }
-   ```
+>[!BEGINTABS]
 
-   ![JavaScript toevoegen om het blok te versieren](assets/create-block/quote-js.png)
+>[!TAB JavaScript-voorbeeld]
 
+```javascript
+export default function decorate(block) {
+  const [quoteWrapper] = block.children;
+
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
+}
+```
+
+>[!TAB Schermafbeelding]
+
+![JavaScript toevoegen om het blok te versieren](assets/create-block/quote-js.png)
+
+>[!ENDTABS]
 
 1. In de `quote` map, een `quote.css` bestand om de opmaak voor het blok te definiëren door de volgende CSS-code toe te voegen en het bestand op te slaan.
 
-   ```css
-   .block.quote {
-       background-color: #ccc;
-       padding: 0 0 24px;
-       display: flex;
-       flex-direction: column;
-       margin: 1rem 0;
-   }
-   
-   .block.quote blockquote {
-       margin: 16px;
-       text-indent: 0;
-   }
-   
-   .block.quote > div:last-child > div {
-       margin: 0 16px;
-       font-size: small;
-       font-style: italic;
-       position: relative;
-   }
-   
-   .block.quote > div:last-child > div::after {
-       content: "";
-       display: block;
-       position: absolute;
-       left: 0;
-       bottom: -8px;
-       height: 5px;
-       width: 30px;
-       background-color: darkgray;
-   }
-   ```
+>[!BEGINTABS]
 
-   ![CSS toevoegen om de blokopmaak te definiëren](assets/create-block/quote-css.png)
+>[!TAB CSS-voorbeeld]
+
+```css
+.block.quote {
+    background-color: #ccc;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.block.quote blockquote {
+    margin: 16px;
+    text-indent: 0;
+}
+
+.block.quote > div:last-child > div {
+    margin: 0 16px;
+    font-size: small;
+    font-style: italic;
+    position: relative;
+}
+
+.block.quote > div:last-child > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 5px;
+    width: 30px;
+    background-color: darkgray;
+}
+```
+
+>[!TAB Schermafbeelding]
+
+![CSS toevoegen om de blokopmaak te definiëren](assets/create-block/quote-css.png)
+
+>[!ENDTABS]
 
 1. Deze wijzigingen doorvoeren met behulp van git `main` vertakking.
 
@@ -239,6 +278,50 @@ Nu u een werkend citaatblok hebt kunt u het stileren toepassen.
    ![Het gepubliceerde en gestileerde citaatblok](assets/create-block/quote-styled-published.png)
 
 Gefeliciteerd! U hebt nu een volledig werkend en gestileerd citaatblok. U kunt dit voorbeeld gebruiken als basis voor het ontwerpen van uw eigen projectspecifieke blokken.
+
+### Blokopties {#block-options}
+
+Als u een blok nodig hebt om er iets anders uit te zien of zich iets anders te gedragen op basis van bepaalde omstandigheden, maar niet anders genoeg om een nieuw blok op zich te worden, kunt u auteurs de keuze laten [blokopties.](content-modeling.md#type-inference)
+
+Door een `classes` eigenschap aan het blok, de eigenschap die in de tabelkoptekst voor eenvoudige blokken wordt weergegeven, of als een waardelijst voor items in een containerblok.
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## Andere werktakken gebruiken {#other-branches}
 

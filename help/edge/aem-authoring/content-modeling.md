@@ -4,7 +4,7 @@ description: Leer hoe het modelleren van inhoud voor AEM creatie met Edge Delive
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
 workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 0%
@@ -345,7 +345,7 @@ Voor sommige waarden kunnen we de semantische betekenis afleiden van de waarden 
 * **Afbeeldingen** - Als een verwijzing naar een bron in AEM een element is met een MIME-type dat begint met `image/`wordt de verwijzing weergegeven als `<picture><img src="${reference}"></picture>`.
 * **Koppelingen** - Als een verwijzing voorkomt in AEM en geen afbeelding is, of als de waarde begint met `https?://`  of `#`wordt de verwijzing weergegeven als `<a href="${reference}">${reference}</a>` .
 * **RTF** - Als een bijgesneden waarde begint met een alinea (`p`, `ul`, `ol`, `h1`-`h6`, enz.), wordt de waarde weergegeven als RTF-tekst.
-* **Klassenamen** - de `classes` eigenschap wordt behandeld als blokopties en in de tabelkoptekst weergegeven voor [eenvoudige blokken,](#simple) of als waardelijst voor items in een [containerblok.](#container)
+* **Klassenamen** - de `classes` eigenschap wordt behandeld als [blokopties](/help/edge/developer/markup-sections-blocks.md#block-options) en weergegeven in de tabelkoptekst voor [eenvoudige blokken,](#simple) of als waardelijst voor items in een [containerblok.](#container)
 * **Waardelijsten** - Wanneer een waarde een eigenschap met meerdere waarden is en de eerste waarde geen van de vorige waarden is, worden alle waarden samengevoegd tot een lijst met door komma&#39;s gescheiden waarden.
 
 Alle andere elementen worden weergegeven als onbewerkte tekst.
