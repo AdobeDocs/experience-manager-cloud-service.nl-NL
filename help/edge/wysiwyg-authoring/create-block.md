@@ -4,9 +4,9 @@ description: Leer hoe te om blokken tot stand te brengen van instrumenten voor g
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: c6013984e1c47766964e6f8ece76e7793b59308f
+source-git-commit: 364acc6a76261a725a46fe3e1ef173bc03b5a289
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,13 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 ### Blokdefinitie en -model maken {#create-block-model}
 
-1. Kloon plaatselijk het project GitHub dat u in het project creeerde [Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG-authoring met Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) te raadplegen en te openen in een editor van uw keuze.
+1&amp;period; kloon het project GitHub plaatselijk dat u in [Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG-authoring met Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) te raadplegen en te openen in een editor van uw keuze.
 
-   * Microsoft-code wordt hier gebruikt ter illustratie.
+* Microsoft-code wordt hier gebruikt ter illustratie.
 
-   ![Het project klonen](assets/create-block/clone.png)
+![Het project klonen](assets/create-block/clone.png)
 
-1. Bewerk de `component-definition.json` dossier bij de wortel van het project en voeg de volgende definitie voor uw nieuw citaatblok toe en bewaar het dossier.
+2&amp;punt; de `component-definition.json` dossier bij de wortel van het project en voeg de volgende definitie voor uw nieuw citaatblok toe en bewaar het dossier.
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 >[!ENDTABS]
 
-1. Bewerk de `component-models.json` dossier bij de wortel van het project en voeg het volgende toe [modeldefinitie](/help/implementing/universal-editor/field-types.md#model-structure) voor het nieuwe aanhalingsteken en sla het bestand op.
+3&amp;punt; de `component-models.json` dossier bij de wortel van het project en voeg het volgende toe [modeldefinitie](/help/implementing/universal-editor/field-types.md#model-structure) voor het nieuwe aanhalingsteken en sla het bestand op.
 
-   * Zie het document [Content Modeling for WYSIWYG authoring with Edge Delivery Services projects](/help/edge/wysiwyg-authoring/content-modeling.md) voor meer informatie over wat belangrijk is om te overwegen wanneer het creëren van inhoudsmodellen.
+* Zie het document [Content Modeling for WYSIWYG authoring with Edge Delivery Services projects](/help/edge/wysiwyg-authoring/content-modeling.md) voor meer informatie over wat belangrijk is om te overwegen wanneer het creëren van inhoudsmodellen.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 >[!ENDTABS]
 
-1. Bewerk de `component-filters.json` dossier bij de wortel van het project en voeg het citaatblok aan toe [filterdefinitie](/help/implementing/universal-editor/customizing.md#filtering-components) om toe te staan dat het blok aan om het even welke sectie wordt toegevoegd en sparen het dossier.
+4&amp;punt; de `component-filters.json` dossier bij de wortel van het project en voeg het citaatblok aan toe [filterdefinitie](/help/implementing/universal-editor/customizing.md#filtering-components) om toe te staan dat het blok aan om het even welke sectie wordt toegevoegd en sparen het dossier.
 
 >[!BEGINTABS]
 
@@ -147,9 +147,9 @@ Het volgende citaatblokvoorbeeld volgt deze benadering.
 
 >[!ENDTABS]
 
-1. Deze wijzigingen doorvoeren met behulp van git `main` vertakking.
+5&amp;punt; bewerk deze wijzigingen met behulp van git `main` vertakking.
 
-   * Toewijzen aan `main` is alleen ter illustratie. [Tips en trucs volgen](https://www.aem.live/docs/dev-collab-and-good-practices) en gebruiken een trekpleisterverzoek voor werkelijk projectwerk.
+* Toewijzen aan `main` is alleen ter illustratie. [Tips en trucs volgen](https://www.aem.live/docs/dev-collab-and-good-practices) en gebruiken een trekpleisterverzoek voor werkelijk projectwerk.
 
 ### Inhoud maken met het blok {#create-content}
 
@@ -190,13 +190,13 @@ Nu uw basiscitaatblok wordt bepaald en aan het steekproefproject geëngageerd, k
 
 Nu u een werkend citaatblok hebt kunt u het stileren toepassen.
 
-1. Ga terug naar de redacteur voor uw project.
+1&amp;punt; ga terug naar de editor voor uw project.
 
-1. Een `quote` map onder de `blocks` map.
+2&amp;punt; een `quote` map onder de `blocks` map.
 
-   ![Een map met aanhalingstekens maken](assets/create-block/new-folder.png)
+![Een map met aanhalingstekens maken](assets/create-block/new-folder.png)
 
-1. In het nieuwe `quote` map, een `quote.js` bestand om blokdecoratie te implementeren door het volgende JavaScript toe te voegen en het bestand op te slaan.
+3&amp;punt; in de nieuwe `quote` map, een `quote.js` bestand om blokdecoratie te implementeren door het volgende JavaScript toe te voegen en het bestand op te slaan.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. In de `quote` map, een `quote.css` bestand om de opmaak voor het blok te definiëren door de volgende CSS-code toe te voegen en het bestand op te slaan.
+4&amp;punt; in de `quote` map, een `quote.css` bestand om de opmaak voor het blok te definiëren door de volgende CSS-code toe te voegen en het bestand op te slaan.
 
 >[!BEGINTABS]
 
@@ -263,19 +263,19 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. Deze wijzigingen doorvoeren met behulp van git `main` vertakking.
+5&amp;punt; bewerk deze wijzigingen met behulp van git `main` vertakking.
 
-   * Toewijzen aan `main` is alleen ter illustratie. [Tips en trucs volgen](https://www.aem.live/docs/dev-collab-and-good-practices) en gebruiken een trekpleisterverzoek voor werkelijk projectwerk.
+* Toewijzen aan `main` is alleen ter illustratie. [Tips en trucs volgen](https://www.aem.live/docs/dev-collab-and-good-practices) en gebruiken een trekpleisterverzoek voor werkelijk projectwerk.
 
-1. Keer terug naar uw browser lusje van de Universele Redacteur waar u de pagina van uw project uitgeeft en herlaadt de pagina om uw gestileerde blok te bekijken.
+6&amp;punt; ga terug naar het tabblad browser van de Universal Editor waar u de pagina van uw project aan het bewerken was en laad de pagina opnieuw om het opgemaakte blok weer te geven.
 
-1. Zie het nu gestileerde citaatblok op de pagina.
+7&amp;punt; zie het nu gestileerde citaatblok op de pagina.
 
-   ![Het gestileerde citaatblok in de Universele Redacteur](assets/create-block/quote-styled.png)
+![Het gestileerde citaatblok in de Universele Redacteur](assets/create-block/quote-styled.png)
 
-1. Controleer of de wijzigingen naar de productie zijn verplaatst door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;punt; controleer of de wijzigingen zijn doorgevoerd in de productie door naar de gepubliceerde pagina te navigeren. De koppeling is vergelijkbaar met `https://<branch>--<repo>--<owner>.hlx.page`
 
-   ![Het gepubliceerde en gestileerde citaatblok](assets/create-block/quote-styled-published.png)
+![Het gepubliceerde en gestileerde citaatblok](assets/create-block/quote-styled-published.png)
 
 Gefeliciteerd! U hebt nu een volledig werkend en gestileerd citaatblok. U kunt dit voorbeeld gebruiken als basis voor het ontwerpen van uw eigen projectspecifieke blokken.
 
