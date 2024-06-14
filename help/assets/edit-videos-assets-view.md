@@ -3,7 +3,7 @@ title: Video's bewerken
 description: Video's bewerken met [!DNL Adobe Express] Aangedreven opties en sparen bijgewerkte video's als versies.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: ff201051a70862e7597cf36f70a0e7225178f1fa
+source-git-commit: afdab9a7b449673ecf15bc9ab31307388da7b64e
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Uw video is beschikbaar in GIF-indeling voor downloaden. U kunt het bewerkte ele
 
 * Alleen video&#39;s in de MP4-indeling worden ondersteund voor bewerking.
 
-* De maximale ondersteunde bronbestandsgrootte is 200 MB.
+* De maximale ondersteunde grootte van het bronbestand is 1 GB.
 
 * Ondersteunde video&#39;s zijn groter dan 46 pixels en kleiner dan 3840 pixels aan elke zijde.
 
@@ -93,11 +93,11 @@ Uw video is beschikbaar in GIF-indeling voor downloaden. U kunt het bewerkte ele
 
 ### Volgende stappen {#next-steps}
 
-* Feedback geven op het product met de [!UICONTROL Feedback] optie beschikbaar in de gebruikersinterface van de weergave Elementen
+* Feedback geven op het product met de [!UICONTROL Feedback] beschikbaar in de gebruikersinterface van de middelenweergave.
 
-* Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk
+* Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk.
 
-* Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support)
+* Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support).
 
 >[!MORELIKETHIS]
 >
