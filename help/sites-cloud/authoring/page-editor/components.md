@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -44,7 +44,7 @@ De [Componentenconsole](/help/sites-cloud/authoring/components-console.md) geeft
 
 De [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieden flexibele en functies met veel functies, die essentiële inhoudstypen bieden voor het maken van pagina&#39;s.
 
-Zij bouwen gebruikend AEM beste praktijken en zijn de basis van de AEM creatieve ervaring. De Componenten van de kern kunnen gemakkelijk door ontwikkelaars worden uitgebreid om aan specifieke projectbehoeften te voldoen.
+Zij worden gebouwd gebruikend AEM beste praktijken en zijn de basis van de AEM creatieve ervaring. De Componenten van de kern kunnen gemakkelijk door ontwikkelaars worden uitgebreid om aan specifieke projectbehoeften te voldoen.
 
 Samen met de componenten van de Kern WCM kunt u ook gebruiken [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Deze Core Components bieden een standaard en eenvoudigere methode voor [formulieren maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 

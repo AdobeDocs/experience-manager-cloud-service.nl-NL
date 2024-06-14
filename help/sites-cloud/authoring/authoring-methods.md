@@ -5,7 +5,7 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -20,8 +20,8 @@ Leer de verschillende manieren u inhoud in AEM kunt ontwerpen, hoe zij verschill
 
 AEM as a Cloud Service biedt verschillende editors om verschillende typen inhoud te bewerken en ondersteunt verschillende gebruiksgevallen bij het ontwerpen.
 
-* [AEM maken met de paginaeditor](#page-editor) - De Pagina-editor is de klassieke editor voor het ontwerpen van inhoud in AEM, die duizenden pagina&#39;s heeft gemaakt en vertrouwd.
-* [AEM maken met de Universal Editor](#universal-editor) - De Universele Redacteur is een moderne UI die u toestaat om AEM inhoud op een tevreden-agnostische manier te schrijven en is beschikbaar voor AEM projecten die Edge Delivery Services gebruiken.
+* [WYSIWYG Authoring using the Page Editor](#page-editor) - De Pagina-editor is de klassieke editor voor het ontwerpen van inhoud in AEM, die duizenden pagina&#39;s heeft gemaakt en vertrouwd.
+* [WYSIWYG Authoring using the Universal Editor](#universal-editor) - De Universele Redacteur is een moderne UI die u toestaat om AEM inhoud op een tevreden-agnostische manier te schrijven en is beschikbaar voor AEM projecten die Edge Delivery Services gebruiken.
 * [Authoring op basis van documenten](#document-based) - Als u Edge Delivery-services gebruikt, kunt u ervoor kiezen uw inhoud te ontwerpen als conventionele documenten zoals Microsoft Word of Google Docs die zich volledig buiten AEM consoles bevinden.
 * [AEM Inhoudsfragmenteditor](#cf-editor) - Dit is de editor van uw keuze voor het maken van inhoud zonder kop.
 
@@ -29,7 +29,7 @@ Wegens de geïntegreerde en scalable aard van AEM, kunnen deze methodes uitsluit
 
 Raadpleeg uw systeembeheerder of projectmanager als u onzeker bent welke auteursopties aan u beschikbaar zijn of als u nieuwe opties voor het ontwerpen van uw inhoud wilt onderzoeken.
 
-## AEM maken met de paginaeditor {#page-editor}
+## WYSIWYG Authoring using the Page Editor {#page-editor}
 
 Dit is de klassieke editor voor het ontwerpen van inhoud in AEM, die duizenden keren is geprobeerd en vertrouwd op duizenden websites.
 
@@ -39,7 +39,7 @@ De AEM paginaredacteur stelt een geïntegreerde milieu voor voor het ontwerpen v
 
 Raadpleeg het document voor meer informatie over de pagina-editor AEM. [De AEM Pagina-editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-## AEM maken met de Universal Editor {#universal-editor}
+## WYSIWYG Authoring using the Universal Editor {#universal-editor}
 
 De Universele Redacteur is een moderne UI die u toestaat om AEM inhoud op een tevreden-agnostische manier te schrijven en is de eerste keus voor AEM projecten die Edge Delivery Services leveraging.
 

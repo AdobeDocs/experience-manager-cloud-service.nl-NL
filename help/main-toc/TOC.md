@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '5034'
 ht-degree: 3%
@@ -823,14 +823,14 @@ ht-degree: 3%
 + Edge Delivery Services {#edge-delivery}
    + [Overzicht Edge Delivery Services](/help/edge/overview.md)
    + [Edge Delivery Services met AEM gebruiken](/help/edge/using.md)
-   + AEM maken {#aem-authoring}
-      + [Inhoud ontwerpen voor Edge-levering](/help/edge/aem-authoring/authoring.md)
-      + [Inhoud publiceren voor Edge Delivery](/help/edge/aem-authoring/publishing.md)
-      + [Aan de slag met ontwikkelaar](/help/edge/aem-authoring/edge-dev-getting-started.md)
-      + [Blokken maken](/help/edge/aem-authoring/create-block.md)
-      + [Inhoud modelleren](/help/edge/aem-authoring/content-modeling.md)
-      + [Tabelgegevens en spreadheets](/help/edge/aem-authoring/tabular-data.md)
-      + [Bestaande projecten en Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + WYSIWYG Authoring {#wysiwyg-authoring}
+      + [Inhoud ontwerpen voor Edge-levering](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Inhoud publiceren voor Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
+      + [Aan de slag met ontwikkelaar](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+      + [Blokken maken](/help/edge/wysiwyg-authoring/create-block.md)
+      + [Inhoud modelleren](/help/edge/wysiwyg-authoring/content-modeling.md)
+      + [Tabelgegevens en spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
+      + [Bestaande projecten en Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
    + Authoring op basis van documenten {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Bulkmetagegevens](/help/edge/docs/bulk-metadata.md)

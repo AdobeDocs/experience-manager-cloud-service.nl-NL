@@ -4,7 +4,7 @@ description: Leer over de belangrijkste gebruiksgevallen van de Universele Redac
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
@@ -29,10 +29,10 @@ Dit document verklaart deze twee gebruiksgevallen in detail en toont u hoe u mee
 
 De Universal Editor biedt een handige, intuïtieve visuele editor aan de auteurs van de inhoud, ongeacht het type inhoud dat ze maken. De twee belangrijkste gebruiksgevallen zijn:
 
-* [AEM maken](#aem-authoring) - Gebruik de AEM Sites-console om uw inhoud en auteurspagina&#39;s binnen AEM te beheren met de Universal Editor
+* [WYSIWYG Authoring](#wysiwyg-authoring) - Gebruik de AEM Sites-console om uw inhoud en auteurspagina&#39;s binnen AEM te beheren met de Universal Editor
 * [Headless Authoring](#headless-authoring) - Inhoud in uw eigen aangepaste headless-toepassing ontwerpen met de Universal Editor.
 
-### AEM maken {#aem-authoring}
+### WYSIWYG Authoring {#wysiwyg-authoring}
 
 Als u al vertrouwd bent met AEM, kunt u de console van Plaatsen gebruiken om uw pagina&#39;s tot stand te brengen en te beheren en hen dan uit te geven met de Universele Redacteur.
 
@@ -40,9 +40,9 @@ Op deze manier kunt u profiteren van de gereedschappen die beschikbaar zijn in d
 
 Als dit uw gebruiksgeval is, als onmiddellijke volgende stap, gelieve de volgende documenten voor een volledig overzicht van hoe te om met de Universele Redacteur in AEM op te staan.
 
-1. [Aan de slag-handleiding voor ontwikkelaars voor AEM ontwerpen met Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) - Ga aan de slag met uw eerste Universal Editor-project in AEM
-1. [Blokken maken met een instrument voor gebruik met de universele editor](/help/edge/aem-authoring/create-block.md) - Leer hoe u blokken kunt instrumenten om uw inhoud bewerkbaar te maken in de Universal Editor
-1. [Inhoud modelleren voor AEM Authoring met Edge Delivery Services Projecten](/help/edge/aem-authoring/content-modeling.md) - Leer de details van hoe de blokken worden gestructureerd om uw inhoud voor gebruik met de Universele Redacteur effectief te modelleren.
+1. [Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG-authoring met Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Ga aan de slag met uw eerste Universal Editor-project in AEM
+1. [Blokken maken met een instrument voor gebruik met de universele editor](/help/edge/wysiwyg-authoring/create-block.md) - Leer hoe u blokken kunt instrumenten om uw inhoud bewerkbaar te maken in de Universal Editor
+1. [Content Modeling for WYSIWYG authoring with Edge Delivery Services projects](/help/edge/wysiwyg-authoring/content-modeling.md) - Leer de details van hoe de blokken worden gestructureerd om uw inhoud voor gebruik met de Universele Redacteur effectief te modelleren.
 
 Nadat u deze documenten hebt gelezen, kunt u terugkeren naar deze pagina voor meer informatie over het gebruik van koploze ontwerpen en over de algemene werking van de universele editor.
 
@@ -54,7 +54,7 @@ Als dit uw gebruikscase is, raadpleegt u het volgende document voor een voorbeel
 
 * [SecurBank Sample App voor de Universal Editor](/help/implementing/universal-editor/securbank.md)
 
-Nadat u dat document hebt gelezen, kunt u terugkeren naar deze pagina voor meer informatie over de AEM die u gebruikt voor het schrijven van programmacode en over de algemene werking van de universele editor.
+Nadat u dat document hebt gelezen, kunt u terugkeren naar deze pagina voor meer informatie over de WYSIWYG-authoringuse case en over de algemene werking van de Universal Editor.
 
 ## De werking van de universele editor {#how-ue-works}
 
@@ -63,7 +63,7 @@ De macht van de Universele Redacteur is zijn capaciteit aan auteur om het even w
 De Universal Editor werkt als volgt.
 
 1. Een ontwikkelaar stuurt de app of pagina om de Universal Editor te gebruiken. Deze instrumentatie vertelt de redacteur welke inhoud editable is en hoe te om het voort te zetten.
-   * Voor op AEM gebaseerde ontwerpen worden pagina&#39;s die zijn gemaakt met de sjabloon boilerplate automatisch van instrumenten voorzien.
+   * Voor WYSIWYG-authoring worden pagina&#39;s die zijn gemaakt met de sjabloon boilerplate automatisch van instrumenten voorzien.
    * Voor ontwerpen zonder kop kan uw app eenvoudig van instrumenten worden voorzien.
 1. De auteur van de inhoud laadt de Universal Editor, die op zijn beurt de pagina voor bewerking laadt. Omdat het van instrumenten wordt voorzien, weet het welke inhoud editable is en hoe het moet worden vertegenwoordigd en voortgeduurd.
 1. De auteur van de inhoud bewerkt de pagina-inhoud in een intuïtieve WYSIWYG-interface en bewerkt deze op locatie.
