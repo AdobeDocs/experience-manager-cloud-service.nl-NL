@@ -3,9 +3,9 @@ title: CDN-referenties en -verificatie configureren
 description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door regels in een configuratiedossier te verklaren dat dan door de Pijpleiding van de Configuratie van de Manager van de Wolk te gebruiken wordt opgesteld.
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
-source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
+source-git-commit: e6059a1109ca93452f80440744338b809279db9b
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,6 @@ data:
         type: edge
         edgeKey1: ${{CDN_EDGEKEY_052824}}
         edgeKey2: ${{CDN_EDGEKEY_041425}}
-        onFailure: log # optional, default: log, enum: log/block
     rules:
       - name: edge-auth-rule
         when: { reqProperty: tier, equals: "publish" }
@@ -61,7 +60,7 @@ De syntaxis voor de `X-AEM-Edge-Key` waarde omvat:
    * type - moet rand zijn.
    * edgeKey1 - de waarde ervan moet naar een geheim token verwijzen, dat niet in een it moet worden opgeslagen, maar als een [Omgevingsvariabele van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) van het type geheim. Selecteer Alle voor het veld Toegepaste service. Het wordt aanbevolen de waarde (bijvoorbeeld`${{CDN_EDGEKEY_052824}}`) weerspiegelt de dag waarop deze is toegevoegd.
    * edgeKey2 - wordt gebruikt voor het roteren van geheimen, die in [roteren van geheimen](#rotating-secrets) hieronder. Ten minste één van `edgeKey1` en `edgeKey2` moeten worden aangegeven.
-   * OnFailed - definieert de handeling, ofwel `log` of `block`, wanneer een aanvraag niet overeenkomt met `edgeKey1` of `edgeKey2`. Voor `log`, verzoek wordt verwerkt, terwijl `block` zal een fout van 403 dienen. De `log` Deze waarde is nuttig wanneer u een nieuwe token test op een live site, omdat u eerst kunt bevestigen dat de CDN het nieuwe token correct accepteert voordat u overschakelt op `block` wijze; het vermindert ook de kans op verloren connectiviteit tussen de klant CDN en de Adobe CDN, als resultaat van een onjuiste configuratie.
+<!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Regels: hiermee kunt u aangeven welke van de authenticatoren moeten worden gebruikt en of dit voor de publicatie- en/of voorvertoningslaag is.  Het omvat:
    * name - a descriptive string.
    * Wanneer - een voorwaarde die bepaalt wanneer de regel, volgens de syntaxis in zou moeten worden geëvalueerd [Regels voor verkeersfilters](/help/security/traffic-filter-rules-including-waf.md) artikel. Typisch, zal het een vergelijking van de huidige rij (bijvoorbeeld, publiceren) omvatten zodat wordt al levend verkeer bevestigd zoals verpletterend door klant CDN.
