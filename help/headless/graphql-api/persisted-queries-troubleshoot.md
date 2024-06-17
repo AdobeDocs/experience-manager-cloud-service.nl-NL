@@ -3,7 +3,7 @@ title: Problemen met blijvende GraphQL-query's oplossen
 description: Leer hoe u problemen met aanhoudende GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt oplossen.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Om u te helpen dergelijke problemen oplossen en oplossen, behandelt deze pagina 
 
 Een GraphQL-query die blijft bestaan, kan mislukken wanneer deze is gebaseerd op GraphQL-typen die verouderd zijn, vaak als gevolg van een wijziging in de onderliggende modellen van Content Fragment.
 
-Dergelijke fouten kunnen om diverse redenen voorkomen. Wanneer de auteur van een Content Fragment Model (de lijst is niet uitputtend) bijvoorbeeld:
+Dergelijke fouten kunnen om diverse redenen voorkomen. Voorbeelden zijn (de lijst is niet uitputtend) wanneer de auteur van een Content Fragment-model:
 
 * Hiermee verwijdert u een veld of wijzigt u de naam van het veld
 * werkt de **Modeltype** waarmee de toegestane modellen voor de fragmentverwijzing worden gedefinieerd
