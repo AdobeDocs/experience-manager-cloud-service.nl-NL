@@ -2,7 +2,9 @@
 title: Bulkimportelementen met middelenweergave
 description: Leer hoe u importmiddelen in bulk importeert met de gebruikersinterface voor nieuwe elementen (weergave Middelen). Hiermee kunnen beheerders een groot aantal elementen uit een gegevensbron importeren in AEM Assets.
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
-source-git-commit: cd4435247505e5067d09631b29a29e26d60eb09a
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 0%

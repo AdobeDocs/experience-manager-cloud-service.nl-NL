@@ -2,7 +2,10 @@
 title: Digitale middelen opnieuw verwerken
 description: Meer informatie over verschillende methoden voor het opwerken van digitale elementen
 contentOwner: KK
-source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
+exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
+feature: Asset Processing
+role: User, Leader, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 0%
@@ -91,4 +94,3 @@ U kunt elementen opnieuw verwerken in een map die al een bestaand Dynamic Media-
 ### Workflows
 
 Meer informatie over [verwerkingsprofielen en nabewerkingsworkflows](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).
-

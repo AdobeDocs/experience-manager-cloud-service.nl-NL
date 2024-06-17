@@ -1,12 +1,12 @@
 ---
 title: '[!DNL Experience Manager Assets] integratie met [!DNL Adobe Workfront]'
 description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
-role: Admin,Leader,Architect
-feature: Integrations
+role: Admin, Leader, Architect
+feature: Workfront Integrations and Apps
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: f295eead13bcdeed910ae6b8c82373e2b70f1224
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 [!DNL Adobe Workfront] is een werkbeheertoepassing waarmee u de volledige levenscyclus van het werk op één locatie kunt beheren. De integratie tussen [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] kunnen organisaties de snelheid van de inhoud en de tijd-aan-markt verbeteren door het werk en het beheer van digitale activa intrinsiek met elkaar te verbinden. In het kader van het beheer van hun werk in Workfront hebben gebruikers toegang tot de vereiste documenten en afbeeldingen.
 
-Adobe biedt aan [integreren [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] native (ondersteuning voor Assets Essentials en as a Cloud Service activa)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
+Adobe biedt aan [integreren [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] native (ondersteunende Assets Essentials en as a Cloud Service activa)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 Met de geïntegreerde native Experience Manager kunt u:
 
@@ -46,7 +46,7 @@ Vanaf juni 2022 heeft Adobe een nieuwe native integratie uitgebracht voor de aan
 
 Voor installaties vóór juni 2022, zijn het volgende sommige punten om voor de plaatsing en de configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector]:
 
-* Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
-* Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze schakelaar overtollig maken; als dit voorkomt, kunnen de klanten aan overgang van het gebruik van deze schakelaar worden vereist.
-* Adobe steunt verbeterde schakelaarversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Zie stap 5(a) van [Uitgebreide installatie-instructies](workfront-connector-install.md).
+* Adobe vereist implementatie en configuratie van de [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt het niet ondersteund door Adobe.
+* Adobe kan updates vrijgeven voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze schakelaar overtollig maken; als dit voorkomt, kunnen de klanten aan overgang van het gebruik van deze schakelaar worden vereist.
+* Adobe ondersteunt verbeterde connectorversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Zie stap 5(a) van [Uitgebreide installatie-instructies](workfront-connector-install.md).
 * Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).

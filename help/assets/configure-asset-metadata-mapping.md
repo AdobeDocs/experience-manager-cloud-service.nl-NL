@@ -2,7 +2,9 @@
 title: Metagegevenstoewijzing tussen Workfront en Experience Manager Assets configureren
 description: Wijs de gebieden van activa meta-gegevens tussen Adobe Workfront en Experience Manager as a Cloud Service toepassingen toe. Als u metagegevensvelden toewijst aan Experience Manager Assets en een element verzendt van Workfront naar, kunt u de metagegevens van de toegewezen elementen weergeven in Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+feature: Metadata, Workfront Integrations and Apps
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Beperkingen voor het uploaden van middelen configureren
 description: Configureer Adobe Experience Manager Assets om het type elementen te beperken dat gebruikers op basis van het MIME-type kunnen uploaden. Zo voorkomt u ongewenste uploads in de gewenste indeling en schadelijke bestanden.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+feature: Upload, Asset Ingestion
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

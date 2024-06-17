@@ -2,10 +2,10 @@
 title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen ondersteund door [!DNL Experience Manager Assets] als [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,Renditions
-role: User,Admin
+feature: Asset Management, Renditions
+role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: e40ca26e39bea146f69a82fb583467707537d4ab
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%

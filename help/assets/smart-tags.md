@@ -2,10 +2,10 @@
 title: Hoe kunt u slimme tags toevoegen aan elementen in AEM?
 description: Voeg slimme tags toe aan elementen in AEM met een kunstmatige intelligente service die contextafhankelijke en beschrijvende bedrijfstags toepast.
 contentOwner: AG
-feature: Smart Tags,Tagging
-role: Admin,User
+feature: Smart Tags
+role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '2408'
 ht-degree: 4%

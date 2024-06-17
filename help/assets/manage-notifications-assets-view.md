@@ -1,7 +1,10 @@
 ---
 title: Meldingen beheren
 description: De bewerkingen die worden uitgevoerd op de middelen of mappen die beschikbaar zijn in de opslagplaats, controleren met behulp van de meldingen in de middelenweergave.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
+feature: Assets Essentials
+role: User, Leader
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%

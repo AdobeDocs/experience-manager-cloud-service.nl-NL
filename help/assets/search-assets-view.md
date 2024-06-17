@@ -3,7 +3,8 @@ title: Leer hoe u middelen kunt zoeken en ontdekken in [!DNL Assets view]?
 description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Assets. Met de krachtige zoekfunctionaliteit kunt u snel de juiste middelen vinden en de snelheid van de inhoud verbeteren.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: f476088e13466e1c41368112fb161bcbeee2c5cd
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 0%

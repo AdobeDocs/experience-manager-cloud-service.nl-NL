@@ -2,11 +2,12 @@
 title: Doelkiezer voor AEM as a Cloud Service
 description: Met de AEM Doelkiezer kunt u elementen weergeven en selecteren die u als een kopie van het oorspronkelijke element kunt gebruiken.
 contentOwner: Adobe
-role: Admin,User
+role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
+feature: Selectors
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1879'
 ht-degree: 0%
 
 ---
@@ -202,7 +203,7 @@ U kunt de eigenschappen van de Selector van de Bestemming gebruiken om de manier
 | *viewType* | string | Nee | | De `viewType` wordt gebruikt om de weergaven op te geven die u gebruikt om elementen weer te geven. |
 | *viewTypeOptions* | string | Nee | | Deze eigenschap is gerelateerd aan `viewType` eigenschap. u kunt een of meer weergaven opgeven om elementen weer te geven. Beschikbare viewTypeOptions zijn: Lijstweergave, Rasterweergave, Galerieweergave, Watervalweergave en Boomweergave. |
 | *itemNameFormatter* | string | Nee | | Met deze eigenschap kunt u de itemnaam opmaken |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |  | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen aangepaste gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` prop. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Als u de overschrijving wilt uitvoeren, moet u een geldige waarde opgeven [Berichtbeschrijving](https://formatjs.io/docs/react-intl/api/#message-descriptor) naar de toets van `i18nSymbols` die u wilt overschrijven. |
+| *i18nSymbolen* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Nee |  | Als de OOTB-vertalingen onvoldoende zijn voor de behoeften van uw toepassing, kunt u een interface beschikbaar maken waarmee u uw eigen aangepaste gelokaliseerde waarden kunt doorgeven via de `i18nSymbols` prop. Als u een waarde door deze interface doorgeeft, overschrijft u de standaardvertalingen die worden geleverd en gebruikt u in plaats daarvan uw eigen vertaling.  Als u de overschrijving wilt uitvoeren, moet u een geldige waarde opgeven [Berichtbeschrijving](https://formatjs.io/docs/react-intl/api/#message-descriptor) naar de toets van `i18nSymbols` die u wilt overschrijven. |
 | *inlineAlertSetup* | string | Nee | | Er wordt een waarschuwingsbericht toegevoegd dat u in de toepassing wilt doorgeven. U kunt bijvoorbeeld een waarschuwingsbericht toevoegen dat u geen toestemming hebt om deze map te openen. |
 | *intl* | Object | Nee | | Doelselectie biedt standaard OOTB-vertalingen. U kunt de vertaaltaal selecteren door een geldige landinstelling op te geven via het dialoogvenster `intl.locale` prop. Bijvoorbeeld: `intl={{ locale: "es-es" }}` </br></br> De landinstellingstekenreeksen die worden ondersteund volgen de [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) voor de vertegenwoordiging van namen van taalnormen. </br></br> Lijst met ondersteunde landinstellingen: Engels - &#39;en-us&#39; (standaard) Spaans - &#39;es-es&#39; Duits - &#39;de-de&#39; Frans - &#39;fr-fr&#39; Italiaans - &#39;it-it&#39; Japans - &#39;ja-jp&#39; Koreaans - &#39;ko-kr&#39; Portugees - &#39;pt-br&#39; Chinees (traditioneel) - &#39;zh-cn&#39; Chinees (Taiwan) - &#39;zh-tw&#39; |
 

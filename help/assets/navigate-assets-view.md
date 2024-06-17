@@ -1,8 +1,10 @@
 ---
-title: "[!DNL Assets view] gebruikersinterface"
+title: '[!DNL Assets view] gebruikersinterface'
 description: De gebruikersinterface en navigatie begrijpen in [!DNL Assets view].
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%

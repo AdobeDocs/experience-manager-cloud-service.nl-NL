@@ -1,18 +1,19 @@
 ---
 title: Externe afhankelijkheden voor bestaande installaties verwijderen
 description: Externe afhankelijkheden voor bestaande installaties verwijderen
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
-source-git-commit: b71a78696d4b347c97b077d84b455f53a1747a07
+role: Admin
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
 # Externe afhankelijkheden voor bestaande installaties verwijderen {#remove-external-depedencies}
 
-Adobe raadt u aan configuratiestappen uit te voeren voor bestaande verbeterde schakelaarinstallaties voor Workfront om de gebiedsdelen op de distributiepunten van de Hoodoo te verwijderen.
+De Adobe adviseert u om configuratiestappen voor bestaande verbeterde schakelaarinstallaties voor Workfront uit te voeren om de gebiedsdelen op de distributiepunten van de Hoodoo te verwijderen.
 
 >[!NOTE]
 >

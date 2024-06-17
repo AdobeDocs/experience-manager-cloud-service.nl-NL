@@ -2,7 +2,9 @@
 title: Kleurlabels voor afbeeldingen
 description: Met Adobe Experience Manager Assets kunt u onderscheid maken tussen kleuren in een afbeelding en deze automatisch als tags toepassen. Vervolgens kunt u deze tags gebruiken om afbeeldingen te zoeken en te filteren.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+feature: Smart Imaging, Interactive Images, Asset Management
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Hoe kan ik tags beheren in de weergave Elementen?
 description: Leer hoe u tags beheert in de weergave Middelen. Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: cadf0e383608a39200d716cc698ad1979f24fd1d
+feature: Smart Tags
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1712'
 ht-degree: 0%

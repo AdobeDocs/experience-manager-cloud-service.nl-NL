@@ -3,10 +3,10 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Elementen gebruiken die beschikbaar zijn op een externe server [!DNL Adobe Experience Manager Assets] implementatie bij het maken van uw webpagina's op een andere [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AK
 mini-toc-levels: 2
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
-role: Admin,User,Architect
+feature: Asset Management, Connected Assets, Asset Distribution
+role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 12%

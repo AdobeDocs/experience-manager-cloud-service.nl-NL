@@ -3,9 +3,9 @@ title: Trapsgewijze metagegevens
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: Admin, User
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 4%
