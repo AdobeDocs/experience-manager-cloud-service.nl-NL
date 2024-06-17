@@ -4,9 +4,9 @@ description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
+source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---
@@ -49,6 +49,11 @@ Voor meer informatie over de nieuwe en verbeterde functies en problemen die zijn
 ### Bekende problemen {#known-issues-16544}
 
 * GRANITE-52573: Verzoeken met een dubbele slash `//` worden geweigerd met statuscode 400. Dit gedrag wordt in een volgende onderhoudsrelease ongedaan gemaakt.
+
+>[!NOTE]
+> AEM de Techniek heeft een regressie voor de functionaliteit van Lanceringen geïdentificeerd die huidige AEM versies die met 16461 beginnen beïnvloedt. Vanwege deze regressie worden nieuwe opstarters (gemaakt nadat nieuwe releases zijn toegepast) die niet-diepe pagina&#39;s bevatten, niet goed gepromoveerd omdat er configuraties ontbreken.
+> Als uw milieu&#39;s worden beïnvloed, is een shell manuscript om ontbrekende configuraties te identificeren en bij te werken beschikbaar door klantensteun (interne verwijzing SITES-22457).
+> Er wordt een oplossing voor de langere termijn beschikbaar gesteld die ervoor zorgt dat nieuwe opstartversies worden gemaakt met alle juiste configuraties. Tot die tijd is er ook een interne patchrelease beschikbaar op aanvraag.
 
 ### Kennisgeving wijzigen {#change-notice-16544}
 
