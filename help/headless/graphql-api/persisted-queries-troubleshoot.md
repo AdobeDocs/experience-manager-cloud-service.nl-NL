@@ -3,9 +3,9 @@ title: Problemen met blijvende GraphQL-query's oplossen
 description: Leer hoe u problemen met aanhoudende GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt oplossen.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
+source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,22 @@ ht-degree: 0%
 
 De [Handelingencentrum](/help/operations/actions-center.md) bevat de **GraphQL-query-fout opgetreden** waarschuwing. Dit betekent dat je op de hoogte wordt gesteld wanneer een van je GraphQL-query&#39;s blijft bestaan en er een fout optreedt.
 
-Om u te helpen dergelijke problemen problemen oplossen en oplossen, verklaren wij *meest voorkomende* oorzaken van mislukkingen, en stappen op hoe te om hen te bevestigen.
+Om u te helpen dergelijke problemen oplossen en oplossen, behandelt deze pagina *meest voorkomende* oorzaken van mislukkingen, en stappen op hoe te om hen te bevestigen.
 
 ## Wijzigingen in het model Inhoudsfragment {#changes-to-content-fragment-model}
 
 Een GraphQL-query die blijft bestaan, kan mislukken wanneer deze is gebaseerd op GraphQL-typen die verouderd zijn, vaak als gevolg van een wijziging in de onderliggende modellen van Content Fragment.
 
-Dit kan om verschillende redenen gebeuren. Bijvoorbeeld wanneer de auteur van een inhoudsmodel:
+Dergelijke fouten kunnen om diverse redenen voorkomen. Wanneer de auteur van een Content Fragment Model (de lijst is niet uitputtend) bijvoorbeeld:
 
 * Hiermee verwijdert u een veld of wijzigt u de naam van het veld
-* Hiermee worden de toegestane modellen bijgewerkt die zijn gedefinieerd voor een fragmentverwijzing
-* publiceert een model waarnaar door andere modellen wordt verwezen, ongedaan
-* andere acties en redenen
+* werkt de **Modeltype** waarmee de toegestane modellen voor de fragmentverwijzing worden gedefinieerd
+* publiceert een model waarnaar door andere modellen wordt verwezen, niet
 
-Om dit aan te pakken, kunt u:
+Als u dergelijke fouten wilt verhelpen, moet u:
 
-* De voortgezette vraag die ontbreekt zou moeten worden bijgewerkt om de verandering op het model van het Fragment van de Inhoud aan te passen
-* of de wijziging van het model dat het probleem heeft veroorzaakt moet worden teruggedraaid
+* Werk de voortgezette vraag bij die niet de veranderingen aanpast die aan het Model van het Fragment van de Inhoud worden aangebracht
+* de wijziging herstellen van het model dat het probleem heeft veroorzaakt
 
 ## GraphQL-eindpunt niet geconfigureerd {#graphql-endpoint-not-configured}
 
@@ -48,7 +47,7 @@ Het patroon moet `/graphql/execute.json/thePath`.
 
 In een dergelijk geval retourneert de query de `405` foutcode.
 
-Dit is niet specifiek voor GraphQL. Zie het KB-artikel [405 Fout niet toegestaan](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html).
+Een dergelijke fout is niet specifiek voor GraphQL. Zie het KB-artikel [405 Fout niet toegestaan](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Geblokkeerd door verzender {#blocked-dispatcher}
 
