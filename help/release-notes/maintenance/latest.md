@@ -4,10 +4,10 @@ description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e0156c54b51eed0f729f2026c47eb93917143017
+source-git-commit: d2f92869204dc0157dcc1f41d9fe88cdf5875965
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '595'
+ht-degree: 1%
 
 ---
 
@@ -48,13 +48,17 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16799 same
 * ASSETS-39377: Bulk-import van OneDrive kan mislukken bij het ontvangen van backpressure van externe API.
 * ASSETS-39428: Rendering issues in Copyright Management UI.
 * CQ-4357150: Guava in cq-content-sync-bundel.
+* GRANITE-52573: Verzoeken met een dubbele slash `//` worden geweigerd met statuscode 400.
 * SCRNS-4194: Verwijder afhankelijkheid van Google Guava API&#39;s.
 * SCRNS-4360: Ontbrekende Manage Publication &amp; Quick Publish Knoop voor niet-admin gebruikers in Inhoudsleverancier voor Kanalen.
 * SCRNS-4323: Verberg/maak lanceringen van screens.html onbruikbaar.
 
 ### Bekende problemen {#known-issues-16799}
 
-Geen.
+>[!NOTE]
+> AEM de Techniek heeft een regressie voor de functionaliteit van Lanceringen geïdentificeerd die huidige AEM versies die met 16461 beginnen beïnvloedt. Vanwege deze regressie worden nieuwe opstarters (gemaakt nadat nieuwe releases zijn toegepast) die niet-diepe pagina&#39;s bevatten, niet goed gepromoveerd omdat er configuraties ontbreken.
+> Als uw milieu&#39;s worden beïnvloed, is een shell manuscript om ontbrekende configuraties te identificeren en bij te werken beschikbaar door klantensteun (interne verwijzing SITES-22457).
+> Er wordt een oplossing voor de langere termijn beschikbaar gesteld die ervoor zorgt dat nieuwe opstartversies worden gemaakt met alle juiste configuraties. Tot die tijd is er ook een interne patchrelease beschikbaar op aanvraag.
 
 ### Kennisgeving wijzigen {#change-notice-16799}
 
