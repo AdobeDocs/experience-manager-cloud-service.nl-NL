@@ -4,10 +4,10 @@ description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
+source-git-commit: e0156c54b51eed0f729f2026c47eb93917143017
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,55 +15,62 @@ ht-degree: 1%
 
 In de volgende sectie worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van as a Cloud Service Experience Manager beschreven.
 
-## Release 16544 {#release-16544}
+## Release 16799 {#release-16799}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16544 samengevat, die op 4 juni 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 16461.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16799 samengevat, die op 18 juni 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 16544.
 
 2024.6.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie .
 
->[!CAUTION]
->
->Gebruik de SDK waarnaar hier wordt verwezen, omdat een regressie is bevestigd met de vorige SDK:
->`AEM SDK v2024.06.16647.20240607T103723Z-240500`
+### Verbeteringen {#enhancements-16799}
 
-### Verbeteringen {#enhancements-16544}
+* ASSETS-31977: Verbeterde activiteiten voor het verplaatsen, kopiëren en verwijderen van bedrijfsmiddelen.
+* ASSETS-33618: automatische transcriptie- en vertaalmogelijkheden voor video&#39;s in Dynamic Media.
+* ASSETS-33618: Approval Action for ContentHub and DM and add properties to damAssetLucene properties.
+* ASSETS-35533: Voeg DRM- en CAI-eigenschappen toe aan damAssetLucene-index.
+* ASSETS-37280: Opeenvolgende taakafhandeling voor vertaling wanneer bronondertitel (vtt) nog steeds wordt verwerkt.
+* ASSETS-37559: gebeurtenis Improved asset deleted.
+* ASSETS-37723: Implementeer activa gepubliceerde gebeurtenis.
+* ASSETS-37724: Implementeer activa niet-gepubliceerde gebeurtenis.
+* ASSETS-38614: de verhogingen van de Verbinding van het aandeel UI.
+* ASSETS-39601: pas validatieregex automatisch toe op de naam van de Asset Livecopy.
+* ASSETS-39454: Upgrade to viewers 2024.5.0 in QuickStart.
+* CNTBF-184: Onderliggende steunpaden `/conf` in Content Backflow.
 
-* GRANITE-41133: Ondersteuning voor Jakarta Servlet API 5 en OSGi Servlet Whiteboard API.
-* GRANITE-51355: Deprecate org.slf4j.event.
-* GRANITE-51565: AEM verliest de lokale groepsrelatie met externe groep wanneer de lokale groep van AEM wordt gepubliceerd.
-* GRANITE-51707: Plaats de koekjessaml_request_path tijdens http redirect voor authentificatie.
-* GRANITE-52010: Update Jackrabbit version to 2.20.16.
-* GRANITE-52057: Werk FileVault bij naar 3.7.3-T20240514105118-694f6aea waarbij JCRVLT-745 wordt gecorrigeerd.
-* SKYOPS-35998: Update &quot;Sling RepoInit&quot;gebiedsdelen: Punt Parser 1.9.0 opnieuw, richt JCR 1.1.46.
+### Opgeloste problemen {#fixed-issues-16799}
 
-### Opgeloste problemen {#fixed-issues-16544}
+* ASSETS-37335: als u het deelvenster Zoeken in filter bewerkt, worden alle vakken uitgeschakeld.
+* ASSETS-38069: AEM DAM-probleem met de voorvertoning van de PDF bij de selectie van de tijdlijnfilter.
+* ASSETS-38215: Adobe Stock-licentieknop wordt weergegeven in AEM as a Cloud Service voor Enterprise-abonnement.
+* ASSETS-38578: Onjuiste hyperlinks in het rapport voor het delen van middelenkoppelingen.
+* ASSETS-38678: weergave-instellingen verbroken in Gegevens verzameling.
+* ASSETS-39071: Voor het web geoptimaliseerde levering kan een uitzondering genereren als het oorspronkelijke renditiematype null is.
+* ASSETS-39316: Sorteren op naam werkt niet in verzamelingen.
+* ASSETS-39377: Bulk-import van OneDrive kan mislukken bij het ontvangen van backpressure van externe API.
+* ASSETS-39428: Rendering issues in Copyright Management UI.
+* CQ-4357150: Guava in cq-content-sync-bundel.
+* SCRNS-4194: Verwijder afhankelijkheid van Google Guava API&#39;s.
+* SCRNS-4360: Ontbrekende Manage Publication &amp; Quick Publish Knoop voor niet-admin gebruikers in Inhoudsleverancier voor Kanalen.
+* SCRNS-4323: Verberg/maak lanceringen van screens.html onbruikbaar.
 
-* GRANITE-51375: idp-sync werpt NPE als geen middenweg wordt gespecificeerd.
-* GUIDEN-17171: De exemplaar en deegverrichting van onderwerpen groter dan 15KB ontbreekt met een onverwachte fout.
-* HULPLIJNEN-17088: De functionaliteit om de documentstaat van te veranderen **Bestandseigenschappen** werkt niet correct en verandert in het dialoogvenster *Concept* status.
-* GUIDEN-16931: De verbonden beelden van de onderwerpen verschijnen er niet in de basislijn na versieverwezenlijking.
-* HULPLIJNEN-16896: In herbruikbare inhoudspanelen worden geen elementen vermeld wanneer de **Gebruikersvoorkeuren** zijn ingesteld op het weergeven van bestanden door **Bestandsnaam**.
+### Bekende problemen {#known-issues-16799}
 
-Voor meer informatie over de nieuwe en verbeterde functies en problemen die zijn opgelost in de hulplijnen voor Experience Managers, raadpleegt u de [Routekaart voor release van hulplijnen voor Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Geen.
 
-### Bekende problemen {#known-issues-16544}
+### Kennisgeving wijzigen {#change-notice-16799}
 
-* GRANITE-52573: Verzoeken met een dubbele slash `//` worden geweigerd met statuscode 400. Dit gedrag wordt in een volgende onderhoudsrelease ongedaan gemaakt.
+* Deze versie bevat de volgende nieuwe versies van de productindex:
+   * **damAssetLucene-11**
+   * **fragmenten-11**
 
->[!NOTE]
-> AEM de Techniek heeft een regressie voor de functionaliteit van Lanceringen geïdentificeerd die huidige AEM versies die met 16461 beginnen beïnvloedt. Vanwege deze regressie worden nieuwe opstarters (gemaakt nadat nieuwe releases zijn toegepast) die niet-diepe pagina&#39;s bevatten, niet goed gepromoveerd omdat er configuraties ontbreken.
-> Als uw milieu&#39;s worden beïnvloed, is een shell manuscript om ontbrekende configuraties te identificeren en bij te werken beschikbaar door klantensteun (interne verwijzing SITES-22457).
-> Er wordt een oplossing voor de langere termijn beschikbaar gesteld die ervoor zorgt dat nieuwe opstartversies worden gemaakt met alle juiste configuraties. Tot die tijd is er ook een interne patchrelease beschikbaar op aanvraag.
+  Aangepaste versies van de vorige indexversies worden automatisch samengevoegd met de nieuwe versie van de productindex. Pas verdere aangepaste updates toe op de samengevoegde versie.
 
-### Kennisgeving wijzigen {#change-notice-16544}
+* Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [de documentatie](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) voor meer informatie .
 
-Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [de documentatie](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) voor meer informatie .
-
-### Verouderde functies en API&#39;s {#deprecated-16544}
+### Verouderde functies en API&#39;s {#deprecated-16799}
 
 Als u wilt weten wat er is vervangen of verwijderd in AEM as a Cloud Service, raadpleegt u [Verouderde en verwijderde functies en API&#39;s](/help/release-notes/deprecated-removed-features.md).
 
-### Ingesloten technologieën {#embedded-tech-16544}
+### Ingesloten technologieën {#embedded-tech-16799}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|

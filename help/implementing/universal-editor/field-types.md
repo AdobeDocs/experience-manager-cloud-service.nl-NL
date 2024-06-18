@@ -4,10 +4,10 @@ description: In deze video ziet u voorbeelden van velden en componenttypen die d
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -103,7 +103,7 @@ Hieronder vindt u de componenttypen die u kunt gebruiken voor het weergeven van 
 | [Getal](#number) | `number` |
 | [Groep keuzerondjes](#radio-group) | `radio-group` |
 | [Referentie](#reference) | `reference` |
-| [RTF](#rich-text) | `rich-text` |
+| [RTF](#rich-text) | `richtext` |
 | [Selecteren](#select) | `select` |
 | [Tab](#tab) | `tab` |
 | [Tekst](#text) | `text` |
