@@ -3,9 +3,9 @@ title: OSGi configureren voor Adobe Experience Manager as a Cloud Service
 description: OSGi-configuratie met geheime waarden en milieu-specifieke waarden
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
+source-git-commit: b4c87b79c714c408daea08e81fbe719bc9f5adf0
 workflow-type: tm+mt
-source-wordcount: '3269'
+source-wordcount: '3302'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ U kunt de configuratiemontages voor componenten OSGi door configuratiedossiers b
 
 ## OSGi-configuratiebestanden {#osgi-configuration-files}
 
-De veranderingen van de configuratie worden bepaald in de codepakketten van het AEM Project (`ui.apps`) als configuratiebestanden (`.cfg.json`) onder specifieke configuratiemappen voor de runmode:
+De veranderingen van de configuratie worden bepaald in de codepakketten van het AEM Project (`ui.config`) als configuratiebestanden (`.cfg.json`) onder specifieke configuratiemappen voor de runmode:
 
 `/apps/example/config.<runmode>`
 
@@ -44,6 +44,10 @@ na de `cfg.json` OSGi-configuratieformaat.
 >[!NOTE]
 >
 >Eerdere versies van AEM ondersteunde OSGi-configuratiebestanden die verschillende bestandsindelingen gebruiken, zoals `.cfg`, `.config` en als XML `sling:OsgiConfig` brondefinities. Deze indelingen worden vervangen door de `.cfg.json` OSGi-configuratieformaat.
+
+>[!NOTE]
+>
+>De OSGi-configuraties worden niet opgeslagen onder /apps, zoals AEM instanties in de cloud die ze op een externe locatie opslaan. Inchecken in Cloud Manager [Ontwerpconsole](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) om OSGi te bekijken vormt.
 
 ## Resolutie van de uitvoermodus {#runmode-resolution}
 
