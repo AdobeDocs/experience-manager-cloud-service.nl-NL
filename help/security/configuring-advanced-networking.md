@@ -4,9 +4,9 @@ description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen z
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6ae2738bcde05ef546c98cddd23d11f033b2a170
 workflow-type: tm+mt
-source-wordcount: '5332'
+source-wordcount: '5729'
 ht-degree: 0%
 
 ---
@@ -806,3 +806,49 @@ Verbindingspooling is een techniek die wordt gemaakt en onderhouden om een bewaa
 Het uitvoeren van een aangewezen verbinding het groeperen strategie is een pro-actieve maatregel om een gemeenschappelijk toezicht in systeemconfiguratie te verbeteren, die vaak tot suboptimale prestaties leidt. Door correct een verbindingspool te vestigen, kan Adobe Experience Manager (AEM) de efficiency van externe vraag verbeteren. Dit vermindert niet alleen middelverbruik maar ook het risico van de dienstverstoringen en vermindert de waarschijnlijkheid om ontbroken verzoeken te ontmoeten wanneer het communiceren met stroomopwaartse servers.
 
 In het licht van deze informatie, adviseert de Adobe het herbeoordelen van uw huidige AEM configuratie en overweegt de opzettelijke opneming van verbinding het groeperen samen met de Geavanceerde montages van het Voorzien van een netwerk. Door het beheer van het aantal parallelle verbindingen en het minimaliseren van de mogelijkheid van verkoop, leiden deze maatregelen tot een vermindering van het risico dat proxyservers hun verbindingsgrenzen bereiken. Deze strategische uitvoering is dan ook bedoeld om de kans te verkleinen dat verzoeken geen externe eindpunten bereiken.
+
+#### Veelgestelde vragen over verbindingslimieten
+
+Bij gebruik van Advanced Networking is het aantal verbindingen beperkt om stabiliteit in verschillende omgevingen te garanderen en te voorkomen dat lagere omgevingen de beschikbare verbindingen uitputten.
+
+De verbindingen zijn beperkt tot 1000 per AEM instantie en het alarm wordt verzonden naar klanten wanneer het aantal 750 bereikt.
+
+##### Is de verbindingsgrens die slechts op uitgaand verkeer uit niet-standaardhavens of op al uitgaand verkeer wordt toegepast?
+
+De grens is slechts voor verbindingen die Geavanceerde Voorzien van een netwerk gebruiken (uitgang op niet-standaardhavens, gebruikend specifieke uitgang IP, of VPN).
+
+##### We zien geen significant verschil in het aantal uitgaande verbindingen. Waarom ontvangen we nu de kennisgeving?
+
+Als de klant dynamisch verbindingen creeert (bijvoorbeeld, één of meerdere voor elk verzoek), kan een toename in verkeer de verbindingen veroorzaken om te pieken.
+
+##### Is het mogelijk dat we in het verleden een vergelijkbare situatie hebben meegemaakt zonder dat we op de hoogte zijn gesteld?
+
+Waarschuwingen worden alleen verzonden wanneer de zachte limiet is bereikt.
+
+##### Wat gebeurt er als de maximumgrens wordt bereikt?
+
+Wanneer de harde grens wordt bereikt, zullen de nieuwe toegangsverbindingen van AEM door Geavanceerde Voorzien van een netwerk (uitgang op niet-standaardhavens, gebruikend specifieke uitgang IP, of VPN) worden gelaten vallen om tegen een aanval van Dos te beschermen.
+
+##### Kan de limiet worden verhoogd?
+
+Nee, het hebben van een groot aantal verbindingen kan een aanzienlijke invloed op de prestaties hebben en een DoS voor alle pods en omgevingen.
+
+##### Worden de verbindingen automatisch gesloten door het AEM na een bepaalde periode?
+
+Ja, verbindingen worden op JVM-niveau gesloten en verschillende punten in de netwerkinfrastructuur. Dit zal echter te laat zijn voor elke productiedienst. De verbindingen zouden uitdrukkelijk moeten worden gesloten wanneer niet meer nodig of teruggekeerd aan de pool wanneer het gebruiken van verbinding het groeperen. Anders zal het verbruik van hulpbronnen te hoog zijn en kan dit leiden tot uitputting van de middelen.
+
+##### Als de maximale verbindingslimiet is bereikt, heeft dit gevolgen voor licenties en leidt dit tot extra kosten?
+
+Nee, er zijn geen licenties of kosten verbonden aan deze limiet. Het is een technische grens.
+
+##### Hoe dicht staan we bij de grens? Wat is de maximumgrens?
+
+De waarschuwing wordt geactiveerd wanneer de verbindingen groter zijn dan 750. De maximumgrens is 1000 verbindingen per AEM instantie.
+
+##### Is deze grens van toepassing op VPNs?
+
+Ja, is de grens op verbindingen van toepassing gebruikend het Geavanceerde Voorzien van een netwerk, met inbegrip van VPNs.
+
+##### Als wij een Dedicated IP van de Eis gebruiken, zal deze grens nog van toepassing zijn?
+
+Ja, is de grens nog van toepassing als het gebruiken van een specifieke uitgang IP.
