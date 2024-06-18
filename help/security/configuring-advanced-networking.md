@@ -4,9 +4,9 @@ description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen z
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 6ae2738bcde05ef546c98cddd23d11f033b2a170
+source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
 workflow-type: tm+mt
-source-wordcount: '5729'
+source-wordcount: '5744'
 ht-degree: 0%
 
 ---
@@ -238,7 +238,7 @@ Het vormen van specifiek uitgang IP adres is gelijkaardig aan [flexibele uitgang
 
 >[!INFO]
 >
->Het Splunk door:sturen vermogen is niet mogelijk van een specifiek uitgangIP adres.
+>Als een specifieke egress IP wordt gevormd, zal het door:sturen van de Splunk de dynamische egress waaiers blijven gebruiken. Splunk door:sturen kan niet worden gevormd om een specifieke uitgang IP te gebruiken.
 
 ### UI-configuratie {#configuring-dedicated-egress-provision-ui}
 
