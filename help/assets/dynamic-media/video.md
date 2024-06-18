@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 03799545e29489a20e71e588f0a9bfac92e753db
 workflow-type: tm+mt
 source-wordcount: '9237'
 ht-degree: 0%
@@ -569,7 +569,7 @@ Als u een Adobe Support-case maakt voor DASH ingeschakeld op uw account, kunt u 
 
 Met de mogelijkheden voor meerdere bijschriften en audiotracks in Dynamic Media kunt u eenvoudig meerdere bijschriften en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
-![Het tabblad Bijschriften en audiotracks in Dynamic Media en een tabel met geüploade .VTT-bijschriftbestanden en geüploade .MP3-audiotrackbestanden voor een video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
+![Het tabblad Bijschriften en audiotracks in Dynamic Media en een tabel met geüploade .VTT-bijschriftbestanden en geüploade .MP3-audiotrackbestanden voor een video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab2.png)
 
 Een aantal van de gebruiksscenario&#39;s die u moet overwegen om meerdere bijschriften en audiotracks toe te voegen aan uw primaire video, zijn onder andere:
 
@@ -616,7 +616,7 @@ Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen We
    >
    >Als u een van de bovenstaande taken hebt uitgevoerd, gaat u terug naar deze stappen.
 
-   ![Het tabblad Bijschriften en Audiotracks op de pagina Eigenschappen.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Het tabblad Bijschriften en audiotracks op de pagina Eigenschappen van de video.*
+   ![Het tabblad Bijschriften en Audiotracks op de pagina Eigenschappen.](/help/assets/dynamic-media/assets/msma-audiotracks2.png)*Het tabblad Bijschriften en audiotracks op de pagina Eigenschappen van de video.*
 
 1. (Optioneel) Ga als volgt te werk om een of meer bijschriftbestanden aan een video toe te voegen:
    * Selecteren **[!UICONTROL Upload Captions]**.
@@ -627,8 +627,8 @@ Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen We
      |--- |--- |
      | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br>Dezelfde bestandsnaam kan niet worden gebruikt voor extra bijschriftbestanden en audiotrackbestanden. |
      | Taal | Selecteer de taal van het bijschrift. |
-     | Type | Selecteer het type bijschrift dat u gebruikt.<br>**Bijschrift** - De bijschrifttekst die wordt weergegeven bij de video waarmee het dialoogvenster wordt getransformeerd of getransformeerd.<br>**Bijschrift** - De bijschrifttekst bevat ook achtergrondgeluiden, sprekersdifferentiatie en andere relevante informatie, samen met de vertaling of transcriptie van de dialoog, waardoor de inhoud toegankelijker wordt voor doven of slechthorenden. |
-     | Label | De tekst die voor de naam van het bijschrift wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een bijschrift of bijschrifttrack correspondeert. Bijvoorbeeld: `English (CC)`. |
+     | Type | Selecteer het type bijschrift dat u gebruikt.<br>**Ondertitel** - De bijschrifttekst die wordt weergegeven bij de video waarmee het dialoogvenster wordt getransformeerd of getransformeerd.<br>**Bijschrift** - De bijschrifttekst bevat ook achtergrondgeluiden, sprekersdifferentiatie en andere relevante informatie, samen met de vertaling of transcriptie van de dialoog, waardoor de inhoud toegankelijker wordt voor doven of slechthorenden. |
+     | Label | De tekst die voor de naam van het bijschrift wordt weergegeven in het dialoogvenster **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld: `English (CC)`. |
 
      U kunt de metagegevens van bijschriften indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
@@ -704,7 +704,7 @@ U kunt de levenscyclusstatus bekijken van elk bijschrift of audiotrackbestand da
 | Mislukt | De status &quot;Mislukt&quot; betekent dat de verwerking van een bijschrift of audiotrackbestand niet is voltooid. Verwijder het bijschrift of het audiotrackbestand en upload het opnieuw. |
 | Ongepubliceerd | Wanneer een gepubliceerde primaire video niet expliciet wordt gepubliceerd, worden alle bijschriften of audiotrackbestanden die u aan de video hebt toegevoegd, ook niet gepubliceerd. |
 
-![De statuskolom die is gemarkeerd voor de velden Bijschriften en Audiotracks.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Levenscyclusstatus van elk geüpload bijschrift en audiotrackbestand.*
+![De statuskolom die is gemarkeerd voor de velden Bijschriften en Audiotracks.](/help/assets/dynamic-media/assets/msma-lifecycle-status2.png)*Levenscyclusstatus van elk geüpload bijschrift en audiotrackbestand.*
 
 ### De standaardaudio instellen voor een video met meerdere audiotracks
 
@@ -729,7 +729,7 @@ Geüploade audiotrackbestanden kunnen echter worden ingesteld als de standaardau
 1. Selecteren **[!UICONTROL Set as default]**.
 In de **Instellen als standaard** dialoogvenster selecteert u **[!UICONTROL Replace]**.
 
-   ![De kop Audiotracks bevat een geselecteerde naam voor het audiotrackbestand en de gemarkeerde knop &quot;Instellen als standaard&quot;.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*De standaardaudiotrack voor een video instellen.*
+   ![De kop Audiotracks bevat een geselecteerde naam voor het audiotrackbestand en de gemarkeerde knop &quot;Instellen als standaard&quot;.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack2.png)*De standaardaudiotrack voor een video instellen.*
 
 1. Selecteer in de rechterbovenhoek de optie **[!UICONTROL Save & Close]**.
 1. Publiceer de video. Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
