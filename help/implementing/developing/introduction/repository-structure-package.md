@@ -4,7 +4,7 @@ description: Gemaakte projecten op Adobe Experience Manager as a Cloud Service v
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -164,7 +164,7 @@ Bijvoorbeeld:
 + Codepakket A wordt geïmplementeerd in `/apps/a`
 + Codepakket B wordt geïmplementeerd in `/apps/a/b`
 
-Als een op pakketniveau gebiedsdeel niet van codepakket B op codepakket A wordt gevestigd, kan het codepakket B eerst in `/apps/a`. Het zou dan door codepakket B worden gevolgd, dat in `/apps/a`. Het resultaat is dat de eerder geïnstalleerde `/apps/a/b`.
+Als een op pakketniveau gebiedsdeel niet van codepakket B op codepakket A wordt gevestigd, kan het codepakket B eerst in `/apps/a`. Als het dan door codepakket A wordt gevolgd, dat in opstelt `/apps/a`, het resultaat is dat de eerder geïnstalleerde `/apps/a/b`.
 
 In dit geval:
 

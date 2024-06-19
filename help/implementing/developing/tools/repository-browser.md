@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,13 @@ Toegankelijk van de [AEM as a Cloud Service ontwikkelaarsconsole](/help/implemen
 
 Aan de volgende voorwaarden moet zijn voldaan om toegang te krijgen tot de AEM as a Cloud Service Developer Console of de browser Repository
 
-Ga als volgt te werk om de AEM as a Cloud Service ontwikkelaarsconsole te openen:
+Ga voor toegang tot de AEM as a Cloud Service ontwikkelaarsconsole naar [Toegang tot ontwikkelconsole](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* Voor productieprogramma&#39;s moeten gebruikers beschikken over **Cloud Manager - Rol voor ontwikkelaars** in Adobe Admin Console
-* Voor zandbakprogramma&#39;s, is het beschikbaar aan om het even welke gebruiker met een productprofiel die hen toegang tot AEM as a Cloud Service geeft.
+Voor toegang tot de gegevensopslagbrowser gelden dezelfde voorwaarden als voor de AEM as a Cloud Service ontwikkelaarsconsole (zie hierboven). U kunt als volgt de inhoud van de Repository Browser voor een bepaalde instantie weergeven:
 
-Toegang tot de browser voor gegevensopslagruimte:
+* Instanties van auteur: gebruikers met het productprofiel voor AEM gebruikers voor de **Instantie van auteur** kan de browser van de repository bekijken met minimale leestoegang; de machtigingen van de gebruiker worden gerespecteerd bij het bladeren in de repository. Gebruikers met het productprofiel AEM Beheerders kunnen de browser van de opslagplaats bekijken met volledige leestoegang.
 
-* Gebruikers moeten beschikken over de **Cloud Manager - Ontwikkelaar** Rol in de AEM as a Cloud Service Ontwikkelaarsconsole om instanties van Auteurs en van de Publish te bekijken.
-* Bovendien kunnen gebruikers met het AEM Gebruikersprofiel de browser van de gegevensopslagruimte met minimale leestoegang weergeven. De machtigingen van de gebruiker worden gerespecteerd wanneer ze door de gegevensopslagruimte bladeren. Gebruikers met het productprofiel AEM Beheerders kunnen de browser van de opslagplaats bekijken met volledige leestoegang.
+* Publicatie-instanties: gebruikers met het productprofiel voor AEM gebruikers voor de **Instantie publiceren** kan de browser van de repository bekijken met minimale leestoegang. Zonder deze productprofielset navigeert de gebruiker als een anonieme gebruiker en worden sommige paden niet weergegeven vanwege beperkte machtigingen.
 
 Voor meer informatie over het instellen van gebruikersmachtigingen raadpleegt u de [Documentatie voor Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
