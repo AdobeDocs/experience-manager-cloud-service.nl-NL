@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
+source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -142,7 +143,6 @@ Gebruik beschrijvende bestandsnamen die de afbeeldingsinhoud weerspiegelen. Bijv
   Zodoende kunnen zoekprogramma&#39;s de context van de afbeelding begrijpen en de SEO verbeteren. Google geeft de voorkeur aan afbreekstreepjes boven onderstrepingstekens of spaties in een bestandsnaam. Vermijd ook het samenvoegen van woorden in een bestandsnaam.
 * **Aangepast domein:**
 Implementeer een aangepast domein dat uw bedrijf of merknaam bevat om de herkenning en het vertrouwen van merken te versterken. Bijvoorbeeld:
-
    * gebruiken `http://images.mycompany.com/is/image/companyname/`
    * *vermijden* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **SEO-vriendelijke mapstructuur:**
@@ -351,4 +351,3 @@ Om de beste voor het web geoptimaliseerde indeling te garanderen, kunt u Smart I
 Door op Smart Imaging te vertrouwen, kunt u ervoor zorgen dat uw afbeeldingen zo efficiënt mogelijk worden geleverd, op maat van de bladeromgeving van elke gebruiker. Deze aanpak vereenvoudigt het proces en kan leiden tot betere prestaties op het gebied van het laden van afbeeldingen en de algehele gebruikerservaring.
 
 Meer informatie? Ga naar [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md).
-
