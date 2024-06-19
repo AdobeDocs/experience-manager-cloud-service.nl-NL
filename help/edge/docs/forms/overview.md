@@ -4,7 +4,7 @@ description: AEM Forms-Edge Delivery Services zijn gebouwd voor optimale prestat
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: f69336073addb106cde01d72c921f3b98ff6337a
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 0%
@@ -17,7 +17,7 @@ AEM Forms-Edge Delivery Services zijn een set services die een snelle ontwikkelo
 
 Met deze services kunt u:
 
-* **Ervaar zelf welke inschrijvingen u wilt maken met de gereedschappen van uw keuze:** Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel Document-based Authoring (Microsoft SharePoint of Google Drive) als AEM Authoring (Adaptive Forms Editor) gebruiken. U kunt met meerdere inhoudsbronnen werken op dezelfde formuliersite en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of de Adaptive Forms Editor.
+* **Ervaar zelf welke inschrijvingen u wilt maken met de gereedschappen van uw keuze:** Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel Document-based Authoring (Microsoft SharePoint of Google Drive) als WYSIWYG Authoring (Adaptive Forms Editor) gebruiken. U kunt met meerdere inhoudsbronnen werken op dezelfde formuliersite en de gewenste ontwerpgereedschappen gebruiken, zoals Microsoft Excel, Google Sheets of de Adaptive Forms Editor.
 
 * **Uitzonderlijke ervaringen met digitaal inschrijven bieden:** Lever de Digitale Inschrijving Ervaringen die snel en onophoudelijk uw vormprestaties door controle van het echte gebruik (RUM) laden en teruggeven. Snellere laadtijden en een geoptimaliseerde gebruikerservaring dragen bij tot een hogere snelheid voor het invullen en converteren van formulieren.
 
@@ -25,13 +25,13 @@ Met deze services kunt u:
 
 ## Overzicht AEM Forms Edge Delivery Services {#edge-overview}
 
-Met de AEM Forms Edge Delivery-services kunt u zeer flexibel omgaan met de manier waarop u formulieren ontwerpt op uw website. U kunt inhoud en formulieren ontwerpen met [AEM maken](/help/forms/creating-adaptive-form-core-components.md) alsmede [Authoring op basis van documenten](/help/edge/docs/forms/create-forms.md). AEM Forms-Edge Delivery Services bieden een formulierblok, ook wel bekend als [Adaptief Forms-blok](/help/edge/docs/forms/create-forms.md) om een formulier toe te voegen aan uw site met Edge Delivery Services.
+Met de AEM Forms Edge Delivery-services kunt u zeer flexibel omgaan met de manier waarop u formulieren ontwerpt op uw website. U kunt inhoud en formulieren ontwerpen met [WYSIWYG Authoring](/help/forms/creating-adaptive-form-core-components.md) alsmede [Authoring op basis van documenten](/help/edge/docs/forms/create-forms.md). AEM Forms-Edge Delivery Services bieden een formulierblok, ook wel bekend als [Adaptief Forms-blok](/help/edge/docs/forms/create-forms.md) om een formulier toe te voegen aan uw site met Edge Delivery Services.
 
 U ontwerpt formulieren bijvoorbeeld rechtstreeks in Microsoft Excel of Google Sheets en deze spreadsheets worden getransformeerd in formulieren voor uw website. Alle nieuwe formulieren of formulierinhoud, zoals een nieuw formulierveld, zijn direct beschikbaar op uw website zonder dat u een proces voor het opnieuw samenstellen van de formulieren hoeft te gebruiken.
 
-In het volgende diagram ziet u hoe u formulieren kunt bewerken in Microsoft Excel of Google Sheets (Document-based Authoring) en publiceren naar Edge Delivery Services. Ook wordt de AEM publicatiemethode weergegeven met de Adaptive Forms Editor (AEM Authoring).
+In het volgende diagram ziet u hoe u formulieren kunt bewerken in Microsoft Excel of Google Sheets (Document-based Authoring) en publiceren naar Edge Delivery Services. Ook wordt de AEM publicatiemethode weergegeven met behulp van de Adaptive Forms Editor (WYSIWYG Authoring).
 
-![Publiceren naar Edge Delivery Services en AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Publiceren naar Edge Delivery Services en AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
 De Edge Delivery Services van AEM Forms gebruiken GitHub zodat kunnen de klanten code direct van hun bewaarplaats beheren en opstellen GitHub. U kunt bijvoorbeeld formulieren schrijven in [Google Sheets](/help/edge/docs/forms/create-forms.md) of [Microsoft Excel](/help/edge/docs/forms/create-forms.md) en de componenten van uw formulieren kunnen worden ontwikkeld met behulp van CSS en JavaScript in een GitHub-opslagplaats.
 
@@ -39,16 +39,16 @@ Wanneer uw formulieren klaar zijn, kunt u de opdracht [AEM Sidekick](/help/edge/
 
 ![AEM Sidekick installeren](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-De keuze tussen [Authoring op basis van documenten](#document-based-authoring-features) en [AEM maken](#aem-authoring-features) is afhankelijk van uw specifieke vereisten:
+De keuze tussen [Authoring op basis van documenten](#document-based-authoring-features) en [WYSIWYG Authoring](#wysiwyg-authoring-features) is afhankelijk van uw specifieke vereisten:
 
 * Voor eenvoudige formulieren die alleen basisinformatie verzamelen met een paar velden (neem contact met ons op, genereren formulieren voor leads of aanvraagformulieren voor services) en voor formulieren waarvoor u snelle gegevensconnectiviteit nodig hebt met behulp van een spreadsheet, gaat u naar [Authoring op basis van documenten](#document-based-authoring-features) is een goede pasvorm. U kunt deze formulieren maken zoals u een document maakt in Google Sheets of Microsoft Excel.
 
-* Voor complexe formulieren, zoals formulieren die meerdere deelvensters vereisen, complexe regels en bedrijfslogica, gegevensmanipulatie, integratie met externe systemen of gestroomlijnde workflows met behulp van AEM functies, en [AEM maken](#aem-authoring-features) is een betere optie.
+* Voor complexe formulieren, zoals formulieren die meerdere deelvensters vereisen, complexe regels en bedrijfslogica, gegevensmanipulatie, integratie met externe systemen of gestroomlijnde workflows met behulp van AEM functies, en [WYSIWYG Authoring](#wysiwyg-authoring-features) is een betere optie.
 
 
-### Belangrijkste kenmerken van op documenten gebaseerde ontwerpen en AEM ontwerpen
+### Belangrijke functies van op documenten gebaseerde authoring en WYSIWYG-authoring
 
-Document-based Authoring biedt een basisreeks eigenschappen en AEM Authoring ontgrendelt extra mogelijkheden naast Document-based Authoring, die u in staat stelt om complexere en interactieve formulieren te bouwen. De belangrijkste kenmerken van zowel Document-Gebaseerde Authoring als AEM Authoring zijn:
+Document-based Authoring biedt een basisreeks eigenschappen aan en WYSIWYG Authoring ontgrendelt extra mogelijkheden voorbij Document-based Authoring, die u machtigt om complexere en interactieve vormen te bouwen. De belangrijkste eigenschappen van zowel op document-gebaseerde Authoring als WYSIWYG Authoring zijn:
 
 #### Ontwerpfuncties op basis van documenten
 
@@ -63,9 +63,9 @@ Met Document-gebaseerde Authoring kunt u formulieren maken met vertrouwde gereed
 * Formuliergegevens rechtstreeks verzenden naar Microsoft Excel of Google-werkbladen of e-mailadressen.
 * De prestaties van uw formulieren bewaken met behulp van RUM (real-use Monitoring)
 
-#### AEM ontwerpfuncties
+#### WYSIWYG-ontwerpfuncties
 
-AEM Authoring biedt een WYSIWYG-interface (Adaptive Forms Editor) voor het samenstellen van formulieren en biedt alle mogelijkheden van op documenten gebaseerde authoring, plus een groot aantal extra functies:
+WYSIWYG Authoring biedt een WYSIWYG-interface (Adaptive Forms Editor) voor het samenstellen van formulieren en biedt alle mogelijkheden van op documenten gebaseerde authoring, plus een groot aantal extra functies:
 
 * Geavanceerde regeleditor voor het maken van complexe logica.
 * Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
@@ -77,20 +77,20 @@ AEM Authoring biedt een WYSIWYG-interface (Adaptive Forms Editor) voor het samen
 * Formuliergegevensmodel (FDM) voor het definiëren van gegevensstructuur en interacties met verschillende gegevensbronnen.
 * Mogelijkheid om te kiezen uit meerdere verzendacties voor de verwerking van formulierverzendingen, zoals het verzenden van gegevens naar Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics en nog veel meer gegevensbronnen.
 
-In wezen [AEM maken](/help/forms/creating-adaptive-form-core-components.md) bouwt voort op de stichting van [Authoring op basis van documenten](/help/edge/docs/forms/create-forms.md), met een geavanceerdere toolkit voor het maken en beheren van complexe formulieren.
+In wezen [WYSIWYG Authoring](/help/forms/creating-adaptive-form-core-components.md) bouwt voort op de stichting van [Authoring op basis van documenten](/help/edge/docs/forms/create-forms.md), met een geavanceerdere toolkit voor het maken en beheren van complexe formulieren.
 
 >[!NOTE]
 >
 >
-> De AEM-ontwerpcapaciteit is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Als u geïnteresseerd bent, stuurt u een e-mail van uw werkadres naar aem-forms-ea@adobe.com om toegang tot de functie te vragen.
+> Het WYSIWYG Authoring-vermogen is beschikbaar in het kader van het programma voor vroegtijdige adoptie. Als u geïnteresseerd bent, stuurt u een e-mail van uw werkadres naar aem-forms-ea@adobe.com om toegang tot de functie te vragen.
 
 ### AEM Forms-Edge Delivery Services: ontwerpen, publiceren en verzenden van Forms
 
-De volgende diagrammen illustreren het proces van het maken, publiceren en verzenden van formulieren met behulp van Document-based Authoring en AEM Authoring.
+De volgende diagrammen illustreren het proces van het maken, publiceren en verzenden van formulieren met behulp van Document-based Authoring en WYSIWYG Authoring.
 
 ![Authoring op basis van documenten ](/help/edge/assets/document-based-authoring-workflow.png)
 
-![AEM maken](/help/edge/assets/aem-authoring-workflow.png)
+![WYSIWYG Authoring](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## Formulieren maken
 
