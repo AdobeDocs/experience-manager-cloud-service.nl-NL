@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 0%
@@ -50,7 +50,7 @@ De meest gangbare gebruiksgevallen voor het gebruik van omgevingsvariabelen zijn
 1. Voer de details van de variabele in.
    * **Naam**
    * **Waarde**
-   * **Service toegepast** - Definieert waarvoor de dienst (Auteur/Publicatie/Voorproef) de variabele van toepassing is of als het op alle diensten van toepassing is
+   * **Toegepaste service** - Definieert waarvoor de dienst (Auteur/Publicatie/Voorproef) de variabele van toepassing is of als het op alle diensten van toepassing is
    * **Type** - Hiermee wordt gedefinieerd of de variabele een normale variabele of een geheim is
 
    ![Een variabele toevoegen](assets/add-variable.png)
