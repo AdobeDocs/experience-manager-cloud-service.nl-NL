@@ -3,7 +3,9 @@ title: Compatibiliteit
 description: Krijg een overzicht van naleving in Experience Manager as a Cloud Service.
 landing-page-description: Begin hier voor een overzicht van naleving in AEM as a Cloud-service, inclusief privacy en toegankelijkheid.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 40%

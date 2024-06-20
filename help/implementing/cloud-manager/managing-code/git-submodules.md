@@ -1,13 +1,15 @@
 ---
 title: Ondersteuning voor Git-submodule
 description: Leer hoe u Git-submodules kunt gebruiken om de inhoud van meerdere vertakkingen in git-opslagruimten tijdens het samenstellen samen te voegen.
-source-git-commit: 34c96940f91d42d622d50e85e9a9d6f75f3fb483
+exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
 
 ---
-
 
 # Ondersteuning voor Git-submodule voor opslagplaatsen voor Adoben {#git-submodule-support}
 

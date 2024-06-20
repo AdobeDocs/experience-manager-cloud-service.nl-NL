@@ -3,7 +3,9 @@ title: Inleiding en overzicht
 description: Begrijp hoe u Experience Manager Content en Commerce as a Cloud Service kunt gebruiken en beheren.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 1%
@@ -13,13 +15,13 @@ ht-degree: 1%
 
 # Inhoud en handel {#content-commerce}
 
-Met Adobe Experience Manager-content en -handel kunnen merken sneller schalen en innoveren om een onderscheid te maken tussen commerciële ervaringen en online uitgaven te versnellen. AEM Content and Commerce combineert de indrukwekkende, omnichannel en gepersonaliseerde ervaringen in de Experience Manager met een aantal handelsoplossingen om verschillende ervaringen te bieden aan alle delen van de winkelreis, waardoor tijd tot waarde wordt gereduceerd en een hogere conversie wordt bevorderd.
+Met Adobe Experience Manager-content en -handel kunnen merken sneller schalen en innoveren om een onderscheid te maken tussen commerciële ervaringen en online uitgaven te versnellen. AEM Content en Commerce combineren de indrukwekkende, omnichannel en gepersonaliseerde ervaringen in de Experience Manager met een aantal handelsoplossingen om verschillende ervaringen te bieden aan alle delen van de winkelreis, waardoor tijd tot waarde wordt gereduceerd en een hogere conversie plaatsvindt.
 
-## Hoe de Inhoud en de Handel klanten helpen succesvol zijn {#successful}
+## Inhoud en Commerce helpen klanten succesvol te zijn {#successful}
 
-Door de steeds hogere verwachtingen van klanten voor online handelservaringen worden merken onder druk gezet om gedifferentieerde ervaringen en meer inhoud sneller te bieden. De implementatie van een platform voor contentbeheer vereist echter vaak veel tijd en budgetinvesteringen in de ontwikkeling van basiselementen, zoals aangepaste componenten en ontwerpgereedschappen, en leidt tot hogere kosten voor onderhoud en upgrades. Experience Manager Sites biedt Inhoud en Handel als toe:voegen-op module voor as a Cloud Service Experience Manager aan die uit-van-de-doos commerciële kerncomponenten, auteurshulpmiddelen, en een verwijzingsopslag verstrekt om go-live te versnellen, naadloze samenwerking over teams toe te laten, en aandrijvingsomzetting.
+Door de steeds hogere verwachtingen van klanten voor online handelservaringen worden merken onder druk gezet om gedifferentieerde ervaringen en meer inhoud sneller te bieden. De implementatie van een platform voor contentbeheer vereist echter vaak veel tijd en budgetinvesteringen in de ontwikkeling van basiselementen, zoals aangepaste componenten en ontwerpgereedschappen, en leidt tot hogere kosten voor onderhoud en upgrades. Experience Manager Sites biedt Inhoud en Commerce als een add-on module voor as a Cloud Service Experience Manager aan die uit-van-de-doos handel kerncomponenten, auteurshulpmiddelen, en een verwijzingsopslag verstrekt om go-live te versnellen, naadloze samenwerking over teams toe te laten, en aandrijvingsomzetting.
 
-Merken kunnen Experience Manager met Adobe Commerce, een deel van Adobe Experience Cloud, en om het even welke commerciële motor van keus integreren. Met Inhoud en Handel van de Experience Manager, kunnen de merken:
+Merken kunnen Experience Manager met Adobe Commerce, een deel van Adobe Experience Cloud, en om het even welke commerciële motor van keus integreren. Met Experience Manager Content en Commerce kunnen merken:
 
 * Sneller schalen en innoveren
 * Ervaringen aanpassen om conversie te stimuleren
@@ -80,6 +82,6 @@ CIF ondersteunt klanten met gestandaardiseerde integratiepatronen op basis van b
 
 ## Reis {#journey}
 
-Ga naar de volgende stap als u een Handelsreis volgt:
+Ga naar de volgende stap als u een Commerce-reis volgt:
 
 * De [Reis AEM Content Author](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

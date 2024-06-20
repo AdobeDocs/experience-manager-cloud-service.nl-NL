@@ -1,11 +1,12 @@
 ---
 title: Aan de slag met AEM extensie voor PWA Studio
-description: Leer hoe te om een project van de Inhoud en van de Handel van de AEM zonder titel met PWA Studio op te stellen.
+description: Leer hoe u een AEM headless Content- en Commerce-project met PWA Studio kunt implementeren.
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -62,7 +63,7 @@ Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruike
 
    U kunt meer details over de aanpassing van de component van de Navigatie in vinden [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) en in de [Uitbreidingskader](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentatie van de PWA Studio.
 
-1. De Apollo-client verwacht het AEM GraphQL-eindpunt op `<https://pwa-studio/endpoint.js>`. Om het eindpunt aan deze plaats in kaart te brengen, pas de configuratie UPWARD van uw toepassing van de PWA Studio aan: a. Voeg de variabele AEM_CFM_GRAPHQL aan pwa-root/.env toe en pas het aan punt aan uw AEM het eindpunt van GraphQL van de Fragmenten van de Inhoud aan.
+1. De Apollo-client verwacht het AEM GraphQL-eindpunt op `<https://pwa-studio/endpoint.js>`. Om het eindpunt aan deze plaats in kaart te brengen, pas de configuratie UPWARD van uw toepassing van de PWA Studio aan: a. Voeg de variabele AEM_CFM_GRAPHQL aan pwa-root/.env toe en pas het aan punt aan uw AEM Punt van de Fragmenten GraphQL van de Inhoud aan.
 
    Voorbeeld: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 

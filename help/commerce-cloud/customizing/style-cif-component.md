@@ -11,7 +11,8 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -87,7 +88,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de `u
 
    ![ui.frontend commercemap](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
-   Er zijn meerdere controles (`.scss`) onder de map. Deze dossiers zijn de handel-specifieke stijlen voor elk van de componenten van de Handel.
+   Er zijn meerdere controles (`.scss`) onder de map. Dit zijn de Commerce-specifieke stijlen voor elk van de Commerce-componenten.
 
 1. Het bestand openen `_productteaser.scss`.
 

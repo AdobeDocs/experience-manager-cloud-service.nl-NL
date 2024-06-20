@@ -1,5 +1,5 @@
 ---
-title: Multi-Store Setup (Commerce)
+title: Commerce Multi-Store Setup
 description: Leer hoe u meerdere winkelweergaven van Adobe Commerce naar Adobe Experience Manager kunt toewijzen. Hierdoor kunnen projecten ondersteuning bieden voor meertalige en meertalige gebruiksgevallen.
 sub-product: Commerce
 version: Cloud Service
@@ -10,14 +10,15 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-# Multi-Store Setup (Commerce) {#multi-store}
+# Commerce Multi-Store Setup {#multi-store}
 
 De Adobe Experience Manager (AEM) CIF Core Components kan op meerdere AEM sitestructuren worden gebruikt en de onderliggende GraphQL client-implementatie kan verbinding maken met verschillende Adobe Commerce-winkels/winkelweergaven. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
 
@@ -47,7 +48,7 @@ Ga als volgt te werk als u een AEM site wilt verbinden en CIF Core Components aa
 
    >[!TIP]
    >
-   > Commerciële catalogi kunnen worden geadresseerd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Adobe Commerce 2.4.2. Schakel deze optie alleen in als uw commerciële backend een GraphQL-schema van versie 2.4.2 of hoger ondersteunt.
+   > Commerce-catalogi kunnen worden geadresseerd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Adobe Commerce 2.4.2. Schakel deze optie alleen in als uw commerciële backend een GraphQL-schema van versie 2.4.2 of hoger ondersteunt.
 
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 

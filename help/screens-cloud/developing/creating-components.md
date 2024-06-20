@@ -2,9 +2,11 @@
 title: Componenten maken
 description: AEM componenten worden gebruikt om de inhoud die op uw webpagina's beschikbaar is, vast te houden, op te maken en weer te geven. Volg deze pagina voor meer informatie over ontwerpkanalen en renderingcomponenten.
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing Screens
+role: Admin, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -19,7 +21,7 @@ Het kanaal is het centrale object van inhoud dat aan een set weergaven wordt gel
 
 Aangezien componenten in een kanaal doorgaans echter op volledig scherm worden weergegeven, heeft het schrijven van deze functie echter nadelige gevolgen wanneer wordt geprobeerd afzonderlijke componenten te bewerken of nieuwe bestellingen samen te stellen. Daarom zal het kanaal zich op selecteurs baseren om verschillende meningen van de componenten terug te geven. De ontwerpomgeving gebruikt de bewerkingskiezer om de rendering van aangepaste kanalen te activeren.
 
-Bijvoorbeeld, `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
+Bijvoorbeeld: `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
 De gebruiker hoeft tijdens het bewerken geen kiezer aan de URL toe te voegen. Een clientlogica luistert naar de gebeurtenis van de laagschakelaar en voegt de kiezer toe als het kanaal het specifieke middeltype heeft *schermen/kern/componenten/kanaal.*
 

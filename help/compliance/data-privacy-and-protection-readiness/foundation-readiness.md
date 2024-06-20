@@ -2,9 +2,11 @@
 title: Data Protection and Data Privacy Regulations - Adobe Experience Manager as a Cloud Service Foundation Readiness
 description: Meer informatie over Adobe Experience Manager as a Cloud Service Foundation-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations. Dit artikel omvat de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act, en hoe te om te voldoen wanneer het uitvoeren van een nieuw AEM as a Cloud Service project.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over Adobe aan privacykwesties, en het betekent voor u als klant van de Adobe, zie [Adobe](https://www.adobe.com/privacy.html).
+>Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat het voor u als Adobe klant betekent, zie [Privacy Center van Adobe](https://www.adobe.com/privacy.html).
 
 ## Ondersteuning voor gegevensprivacy en -bescherming van AEM Stichting {#aem-foundation-data-privacy-and-protection-support}
 
@@ -29,7 +31,7 @@ Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt op
 
 ### Handmatige stappen {#manual-steps}
 
-1. Open de console van het Beleid van de Gebruiker, door te doorbladeren aan **[!UICONTROL Tools - Security - Users]** of door rechtstreeks te bladeren naar `https://<serveraddress>:<serverport>/security/users.html`
+1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Tools - Security - Users]** of door rechtstreeks te bladeren naar `https://<serveraddress>:<serverport>/security/users.html`
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -45,7 +47,7 @@ Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt op
 
 ### HTTP-API {#http-api}
 
-Zoals vermeld, verstrekt Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
+Zoals vermeld, verstrekt de Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
 
 **UserProperties-API**
 
@@ -99,7 +101,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### HTTP-API {#http-api-1}
 
-Bij de volgende procedures wordt gebruikgemaakt van de `curl` opdrachtregelprogramma om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en verwijdert u de profielen die beschikbaar zijn op de standaardlocatie.
+Bij de volgende procedures worden de `curl` opdrachtregelprogramma om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en verwijdert u de profielen die beschikbaar zijn op de standaardlocatie.
 
 **De startpagina van de gebruiker opzoeken:**
 

@@ -3,7 +3,9 @@ title: AEM en Adobe Commerce Integration met Commerce integration framework
 description: AEM en Adobe Commerce zijn naadloos geïntegreerd met behulp van het Commerce integration framework (CIF). CIF biedt AEM toegang tot een Adobe Commerce-exemplaar en communiceert met Adobe Commerce via GraphQL. Ook kunnen AEM auteurs product- en rubriekkiezers en de productconsole gebruiken om door product- en categoriegegevens te bladeren die op verzoek van Adobe Commerce zijn opgehaald. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
-source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -40,7 +42,7 @@ Voor de client-side componenten, die zijn gebouwd met [Reageren](https://reactjs
 
 ![AEM CIF Core Component Architecture](../assets/cif-component-architecture.jpg)
 
-[AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) zeer gelijkaardige ontwerppatronen en beste praktijken volgen als [AEM WCM Core-componenten](https://github.com/adobe/aem-core-wcm-components).
+[CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components) zeer gelijkaardige ontwerppatronen en beste praktijken volgen als [AEM WCM Core-componenten](https://github.com/adobe/aem-core-wcm-components).
 
 De bedrijfslogica en de achtergrondcommunicatie met Adobe Commerce voor de AEM CIF Core Components wordt geïmplementeerd in Sling Models. Als deze logica moet worden aangepast om aan projectspecifieke vereisten te voldoen, kan het delegatiepatroon voor Sling Models worden gebruikt.
 
@@ -52,5 +54,5 @@ Binnen projecten, AEM CIF de Componenten van de Kern en de componenten van het d
 
 ## Zoeken {#search}
 
-CIF biedt een [Core-component zoeken](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) dat een gerenderde zoekervaring op de server is op basis van [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/). Klanten met een koopvaardij hebben de mogelijkheid om [Live zoeken](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) in plaats daarvan. Hierna volgen [link](/help/commerce-cloud/integrating/live-search-plp.md) voor meer informatie over de integratie CIF - Live zoeken.
+CIF biedt een [Core-component zoeken](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) dat een gerenderde zoekervaring op de server is op basis van [COMMERCE GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce-klanten hebben de mogelijkheid om [Live zoeken](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) in plaats daarvan. Hierna volgen [link](/help/commerce-cloud/integrating/live-search-plp.md) voor meer informatie over de integratie CIF - Live zoeken.
 

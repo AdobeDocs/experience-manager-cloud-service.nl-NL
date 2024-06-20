@@ -2,10 +2,12 @@
 title: Snelgids voor WCAG 2.1
 description: A Quick Guide to the Web Content Accessibility Guidelines (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 90%
+source-wordcount: '1739'
+ht-degree: 88%
 
 ---
 
@@ -142,7 +144,7 @@ De afzonderlijke pagina &quot;Understanding&quot; van elk succescriterium bevat 
 
 Een voorbeeld is te vinden op: [Succescriterium 1.1.1 (&quot;Niet-tekstuele content&quot;) begrijpen](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content).
 
-### Voldoen aan WCAG 2.1 {#how-to-meet-wcag}
+### Hoe te om WCAG 2.1 te ontmoeten {#how-to-meet-wcag}
 
 Het gedeelte &#39;Hoe kan ik? is beschikbaar op het tabblad [Hoe te om WCAG 2.1 te ontmoeten](https://www.w3.org/WAI/WCAG21/quickref/) pagina. Deze sectie biedt een alternatieve presentatie van WCAG, waardoor lezers de content van de richtlijnen kunnen verfijnen tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
 

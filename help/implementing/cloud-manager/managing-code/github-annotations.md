@@ -2,7 +2,9 @@
 title: GitHub-controleannotaties
 description: Leer hoe de controles GitHub PRs voor uw privé bewaarplaatsen annoteert om u te verstrekken zult nuttig terugkoppelen.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: f7348d388918a31d255babcfb64b3dc547153d62
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%

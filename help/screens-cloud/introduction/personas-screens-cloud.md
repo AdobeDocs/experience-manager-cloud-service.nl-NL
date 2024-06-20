@@ -2,7 +2,9 @@
 title: Roldefinities in AEM Screens as a Cloud Service
 description: Deze pagina beschrijft de roldefinities in as a Cloud Service AEM Screens.
 exl-id: f57a1aaf-8139-4141-90c5-c70ec7a9630c
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -18,6 +20,6 @@ In elk van de roldefinities die in de onderstaande tabel worden beschreven, word
 | Persoonstype | Wie zij zijn |
 |--- |--- |
 | **Netwerkbeheerder** | Verantwoordelijk voor het configureren van de speler en het beheren van de volledige implementatie voor een AEM Screens-implementatie. Definieert het ontwerp van de gebruikerservaring (stijl, lay-out, branding) volgens organisatorische vereisten en creëert de projectstructuur en -kanalen. |
-| **Developer** | Verantwoordelijk voor het installeren en configureren van as a Cloud Service schermomgevingen. Voert ontwikkelings- en integratietaken uit om de gebruikerservaring, aangepaste sjablonen, aangepaste componenten en back-endintegratie voor AEM te ontwikkelen. |
+| **Ontwikkelaar** | Verantwoordelijk voor het installeren en configureren van as a Cloud Service schermomgevingen. Voert ontwikkelings- en integratietaken uit om de gebruikerservaring, aangepaste sjablonen, aangepaste componenten en back-endintegratie voor AEM te ontwikkelen. |
 | **Inhoudsauteur** | Zodra een projectstructuur en kanalen zoals per projectvereisten worden bepaald, is een Inhoudsauteur verantwoordelijk voor het toevoegen van inhoud aan kanalen en het beheren van plaatsen en apparaten. |
-| **Business Executive - digitaal** | Verantwoordelijk voor de productmarketingstrategie en de inkomsten van de bedrijfseenheid, belangrijkste zakelijke belanghebbenden voor gevallen van digitaal gebruik, oplossingen en dienstenaanbod voor de eindgebruikers, tekenen af op de implementatie en levering van de gebruiksscenario&#39;s. |
+| **Business Executive - Digital** | Verantwoordelijk voor de productmarketingstrategie en de inkomsten van de bedrijfseenheid, belangrijkste zakelijke belanghebbenden voor gevallen van digitaal gebruik, oplossingen en dienstenaanbod voor de eindgebruikers, tekenen af op de implementatie en levering van de gebruiksscenario&#39;s. |

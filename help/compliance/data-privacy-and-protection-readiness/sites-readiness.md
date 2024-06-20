@@ -2,7 +2,9 @@
 title: Regels voor gegevensbescherming en gegevensbescherming - gereedheid voor Adobe Experience Manager as a Cloud Service-sites
 description: Leer over de steun van de Plaatsen van Adobe Experience Manager as a Cloud Service voor de diverse Regels van de Bescherming van Gegevens en van de Privacy van Gegevens; met inbegrip van de Algemene Verordening van de EU van de Bescherming van Gegevens (GDPR), de Wet van de Consumentenprivacy van Californië en hoe te om bij de implementatie van een nieuw AEM as a Cloud Service project na te leven.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 0%

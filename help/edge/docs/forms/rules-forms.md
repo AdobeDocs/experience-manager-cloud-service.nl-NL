@@ -3,7 +3,8 @@ title: Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen
 description: AEM Forms-Edge Delivery Services zijn gebouwd voor optimale prestaties, waardoor u de toekomst van gestroomlijnde gegevensverzameling en de betrokkenheid van gebruikers kunt inzien. Gebruik regels om dynamisch gedrag aan uw formulieren toe te voegen.
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
-source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '2216'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Dispatcher Configurations in as a Cloud Service schermen
 description: Op deze pagina worden de configuraties van Dispatcher in as a Cloud Service schermen beschreven.
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -35,7 +37,7 @@ De volgende filters en cachemels in verzenders toestaan voor de publicatie-insta
 * Toevoegen `/statfileslevel "10"` tot `/cache` sectie in `publish_farm.any`/.
 
   >[!NOTE]
-  >Deze geheim voorgeheugenregel steunt caching tot 10 niveaus van de geheim voorgeheugendocroot en maakt ongeldig wanneer de inhoud wordt gepubliceerd eerder dan het ongeldig maken van alles. U kunt dit niveau wijzigen op basis van de mate waarin de inhoudsstructuur is ingesteld.
+  >Deze geheim voorgeheugenregel steunt caching tot 10 niveaus van de geheim voorgeheugendocroot en maakt ongeldig wanneer de inhoud wordt gepubliceerd eerder dan alles ongeldig. U kunt dit niveau wijzigen op basis van de mate waarin de inhoudsstructuur is ingesteld.
 
 * Voeg het volgende toe aan `/invalidate` sectie in `publish_farm.any`.
 

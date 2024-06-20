@@ -3,7 +3,8 @@ title: Aangepaste componenten van het Blok van de Vorm en hun eigenschappen
 description: Dit document biedt een overzicht van de formuliercomponenten en hun eigenschappen die beschikbaar zijn in AEM Forms Edge Delivery Service.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 0%

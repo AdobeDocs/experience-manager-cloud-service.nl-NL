@@ -4,9 +4,10 @@ description: Validatie en foutopsporing met Dispatcher Tools (verouderd)
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ In dit artikel wordt ervan uitgegaan dat de configuratie Dispatcher van uw proje
 
 Vanaf de release van Cloud Manager 2021.7.0 genereren nieuwe programma&#39;s van Cloud Manager gefabriceerde projectstructuren met AEM archetype 28 en hoger, die het eerder vermelde bestand bevat.
 
-Het is **aanbevolen** dat u van erfeniswijze aan flexibele wijze zoals die in de migratiesectie wordt beschreven migreert [Migreren van oude modus naar flexibele modus](#migrating-flexible). Het gebruik van de flexibele modus zorgt er ook voor dat de SDK en de runtime de configuratie op een verbeterde manier valideren en implementeren.
+Het is **sterk aanbevolen** dat u van erfeniswijze aan flexibele wijze zoals die in de migratiesectie wordt beschreven migreert [Migreren van oude modus naar flexibele modus](#migrating-flexible). Het gebruik van de flexibele modus zorgt er ook voor dat de SDK en de runtime de configuratie op een verbeterde manier valideren en implementeren.
 
 ## Bestandsstructuur {#legacy-mode-file-structure}
 
@@ -101,11 +102,11 @@ Dit bestand wordt opgenomen vanuit de `dispatcher_vhost.conf` bestand. U kunt de
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-U kunt één of meerdere van deze dossiers hebben, en zij bevatten landbouwbedrijven om gastheernamen aan te passen en de module van de Verzender toe te staan om elk landbouwbedrijf met verschillende regels te behandelen. Bestanden worden gemaakt in het dialoogvenster `available_farms` en ingeschakeld met een symbolische koppeling in het dialoogvenster `enabled_farms` directory. Van de `.farm` worden opgenomen.
+U kunt één of meerdere van deze dossiers hebben, en zij bevatten landbouwbedrijven om gastheernamen aan te passen en de module van de Verzender toe te staan om elk landbouwbedrijf met verschillende regels te behandelen. Bestanden worden gemaakt in het dialoogvenster `available_farms` en ingeschakeld met een symbolische koppeling in het dialoogvenster `enabled_farms` directory. Van de `.farm` bestanden, andere bestanden, zoals filters, cacheregels en andere, worden opgenomen.
 
 * `conf.dispatcher.d/cache/rules.any`
 
-Dit bestand wordt vanuit uw `.farm` bestanden. Hiermee geeft u voorkeuren voor caching op.
+Dit bestand wordt vanuit uw `.farm` bestanden. Hiermee geeft u voorkeuren voor het in cache plaatsen op.
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
@@ -283,10 +284,10 @@ Behalve de zes secties die in de bovenstaande paragrafen worden vermeld, bent u 
 }
 ```
 
-**Toegestane clients/renders worden niet opgenomen in: ...**
+**Toegestane clients/renders worden niet opgenomen vanaf: ...**
 
 Deze fout wordt gegenereerd wanneer u geen include-bestand opgeeft voor `/renders` en `/allowedClients` in de `/cache` sectie. Zie de
-**Ingesloten bestand (...) moet een naam hebben: ...** voor meer informatie.
+**Het opgenomen bestand (...) moet een naam hebben: ...** voor meer informatie.
 
 **Filter mag geen globpatroon gebruiken om verzoeken toe te staan**
 
@@ -302,7 +303,7 @@ Deze verklaring moet verzoeken om `css` bestanden, maar ook verzoeken om **alle*
 
 **Het opgenomen bestand (...) komt niet overeen met een bekend bestand**
 
-Er zijn twee typen bestanden in uw virtuele Apache-hostconfiguratie die als volgt kunnen worden opgegeven: herschrijft en variabelen.
+Uw virtuele Apache-hostconfiguratie bevat twee typen bestanden die u kunt opgeven als include-bestanden: herschrijft en variabelen.
 De namen van de opgenomen bestanden moeten als volgt luiden:
 
 | Type | Bestandsnaam opnemen |
@@ -312,7 +313,7 @@ De namen van de opgenomen bestanden moeten als volgt luiden:
 
 >[!TIP]
 >
-Om meer dossiers op een veel minder beperkte manier te kunnen omvatten, zou u aan flexibele de configuratiewijze van de Verzender kunnen willen schakelen. Zie [Validatie en foutopsporing met Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md) voor meer informatie over de flexibele modus.
+>Om meer dossiers op een veel minder beperkte manier te kunnen omvatten, zou u aan flexibele de configuratiewijze van de Verzender kunnen willen schakelen. Zie [Validatie en foutopsporing met Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md) voor meer informatie over de flexibele modus.
 
 U kunt ook de opdracht **default** versie van de herschrijfregels, waarvan de naam is `conf.d/rewrites/default_rewrite.rules`.
 Er is geen standaardversie van de variabelebestanden.
@@ -351,7 +352,7 @@ Vermijd deze fout door de weg van de Ontdekkingsreiziger van Vensters en dan op 
 In deze fase wordt de Apache-syntaxis gecontroleerd door Docker in een afbeelding te starten. Docker moet lokaal zijn geïnstalleerd, maar AEM hoeft niet te worden uitgevoerd.
 
 >[!NOTE]
-Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Deze voorwaarde is noodzakelijk om Dispatcher op een lokale computer in werking te stellen en te zuiveren.
+>Windows-gebruikers moeten Windows 10 Professional of andere distributies gebruiken die Docker ondersteunen. Deze voorwaarde is noodzakelijk om Dispatcher op een lokale computer in werking te stellen en te zuiveren.
 
 Deze fase kan ook onafhankelijk worden uitgevoerd `validator full -d out src/dispatcher`, die een &quot;uit&quot;folder nodig door het volgende bevel produceert `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
@@ -359,7 +360,7 @@ Tijdens een implementatie van Cloud Manager kunt u de `httpd -t` syntaxiscontrol
 
 ### Fase 3 {#third-phase}
 
-Als er in deze fase een fout optreedt, betekent dit dat Adobe een of meer onveranderlijke bestanden heeft gewijzigd. In dat geval moet u de overeenkomstige onveranderlijke bestanden vervangen door de nieuwe versie die in het dialoogvenster `src` directory van de SDK. Dit wordt in het volgende logboekvoorbeeld geïllustreerd:
+Als er in deze fase een fout optreedt, houdt dit in dat de Adobe een of meer onveranderlijke bestanden heeft gewijzigd. In dat geval moet u de overeenkomstige onveranderlijke bestanden vervangen door de nieuwe versie die in het dialoogvenster `src` directory van de SDK. Dit wordt in het volgende logboekvoorbeeld geïllustreerd:
 
 ```
 Phase 3: Immutability check

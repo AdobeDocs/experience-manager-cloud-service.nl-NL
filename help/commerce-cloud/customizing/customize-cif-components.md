@@ -11,7 +11,8 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 0%
@@ -59,7 +60,7 @@ Klonen met [Venia-project](https://github.com/adobe/aem-cif-guides-venia)en over
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Voeg de noodzakelijke configuraties OSGi toe zodat verbindt u uw instantie AEM met een instantie van de Handel van Adobe, of voeg de configuraties aan het gecreeerde project toe.
+1. Voeg de noodzakelijke configuraties OSGi toe zodat verbindt u uw AEM instantie met een instantie van Adobe Commerce, of voegt de configuraties aan het gecreeerde project toe.
 
 1. Op dit moment hebt u een werkende versie van een winkel die is verbonden met een Adobe Commerce-instantie. Ga naar de `US` > `Home` pagina bij: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -419,7 +420,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
 1. De AEM openen `error.log` om de toegevoegde logboekverklaringen te zien. De `error.log` is om `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
 
-   Zoek in de AEM-logboeken naar de toegevoegde loginstructies in het Sling-model:
+   Zoek in de AEM logboeken naar de toegevoegde logboekinstructies in het Sling Model:
 
    ```plain
    2020-08-28 12:57:03.114 INFO [com.venia.core.models.commerce.MyProductTeaserImpl] *** Product is Eco Friendly**

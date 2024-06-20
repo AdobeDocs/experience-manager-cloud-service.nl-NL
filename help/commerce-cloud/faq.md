@@ -1,15 +1,17 @@
 ---
-title: AEM - Integratie van de handel met veelgestelde vragen over Commerce integration framework
-description: AEM - Integratie van de handel met veelgestelde vragen over Commerce integration framework
+title: AEM - Commerce Integration using Commerce integration framework FAQ
+description: AEM - Commerce Integration using Commerce integration framework FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Commerce Integration Framework
+role: Admin, Architect, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
-# AEM - Integratie van de handel met veelgestelde vragen over Commerce integration framework
+# AEM - Commerce Integration using Commerce integration framework FAQ
 
 ## 1. Wordt CIF GraphQL alleen gebruikt voor handel of is dit beschikbaar voor het opvragen van inhoud die is geschreven op AEM JCR?
 
@@ -49,7 +51,7 @@ Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen o
 
 Adobe raadt aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt de Adobe aan de gegevensclient-kant weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenongeldigverklaring, zie [De Dispatcher-cache optimaliseren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) en [Optimalisatie van AEM prestaties](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
-## 10. Is er een aanbeveling over een gemeenschappelijke zoekactie in AEM inhoud met de handel?
+## 10. Is er een aanbeveling voor een uniforme zoekopdracht in AEM inhoud met Commerce?
 
 Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar er is geen uniforme zoekopdracht met inhoud. Deze eigenschap is klant-specifiek en beter opgelost op een project-specifiek niveau.
 

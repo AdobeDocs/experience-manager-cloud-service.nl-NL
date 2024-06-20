@@ -2,10 +2,12 @@
 title: Kanaal toewijzen aan een as a Cloud Service weergave in schermen
 description: Op deze pagina wordt beschreven hoe u een kanaal toewijst aan een weergave in as a Cloud Service schermen.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 1%
+source-wordcount: '444'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +30,7 @@ Voordat u de onderstaande stappen uitvoert om een kanaal toe te wijzen aan een w
 
 Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
 
-1. Ga naar Screens Services Provider en selecteer **Weergaven** in het navigatievenster aan de linkerkant.
+1. Navigeer naar de Serviceverlener voor schermen en selecteer **Weergaven** in het navigatievenster aan de linkerkant.
 
 1. Klikken **Kanaal toewijzen** op het scherm.
 
@@ -46,7 +48,7 @@ Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
 
    1. Selecteer de begin- en einddatum van **Activering**.
 
-1. Klikken **+ Herhaling toevoegen** om een herhalingsschema voor uw kanaal toe te voegen.
+1. Klikken **+ Herhaling toevoegen** om een terugkerend programma voor uw kanaal toe te voegen.
 
    ![afbeelding](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
@@ -56,11 +58,11 @@ Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
    U kunt de volgende opties instellen:
 
    * **Naam**: Titel van uw terugkerend schema.
-   * **Herhalen**: Kies of het schema Dagelijks, Wekelijks, Maandelijks, of Jaarlijks loopt.
+   * **Herhalen**: Kies of de planning Dagelijks, Wekelijks, Maandelijks, of Jaarlijks loopt.
    * **Start**: De begintijd voor uw schema.
    * **Einde**: De eindtijd voor uw schema. U kunt de waarde instellen op tijd of duur.
    * **Tijd**: Het schema eindigt op een bepaald tijdstip.
-   * **Duur**: Het schema loopt gedurende een bepaalde tijdsduur in uren of minuten.
+   * **Duur**: De planning loopt gedurende een bepaalde tijdsduur in uren of minuten.
 
 1. Klikken **Maken**. U kunt zien dat een kanaal voor die vertoning, zoals aangetoond in het hieronder cijfer wordt toegewezen.
 

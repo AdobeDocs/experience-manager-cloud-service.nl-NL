@@ -3,7 +3,8 @@ title: CDN-referenties en -verificatie configureren
 description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door regels in een configuratiedossier te verklaren dat dan door de Pijpleiding van de Configuratie van de Manager van de Wolk te gebruiken wordt opgesteld.
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
-source-git-commit: e6059a1109ca93452f80440744338b809279db9b
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%

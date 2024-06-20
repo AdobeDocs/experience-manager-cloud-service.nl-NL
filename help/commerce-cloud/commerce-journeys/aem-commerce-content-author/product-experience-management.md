@@ -2,9 +2,11 @@
 title: Ervaringen maken met producten
 description: Leer hoe u productinhoud bouwt die vervolgens op verschillende manieren kan worden gebruikt om een indrukwekkende winkelervaring te creëren.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,7 +17,7 @@ Leer hoe u productervaringen kunt beheren.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de reis Adobe Experience Manager (AEM) Content and Commerce, [Ervaringen met gefaseerde productcatalogi beheren](staged-catalog.md)hebt u geleerd hoe u ervaringen met gefaseerde productcatalogi kunt beheren.
+In het vorige document van de reis Adobe Experience Manager (AEM) Content and Commerce: [Ervaringen met gefaseerde productcatalogi beheren](staged-catalog.md)hebt u geleerd hoe u ervaringen met gefaseerde productcatalogi kunt beheren.
 
 ## Doelstelling {#objective}
 
@@ -37,13 +39,13 @@ De eigenschappen van het element openen en overschakelen op de knop **Handel** t
 
 ![pem-elementen](assets/pem-assets.png)
 
-### Ervaringsfragmenten {#experience-fragments}
+### Ervaar fragmenten {#experience-fragments}
 
 Met Experience Fragments kunt u op grote schaal herbruikbare of afzonderlijke productinhoud maken. De koppeling werkt op dezelfde manier als een middel. Eigenschappen openen en overschakelen op **Handel** tab. Op dit tabblad kunt u de koppeling met producten en categorieën beheren. De tabellen onder de kiezers bevatten aanvullende informatie over de gekoppelde objecten (alleen zichtbaar met een selectie). Klik op het detailpictogram zodat u de volledige weergave in de productcockpit kunt bekijken. Als u een nieuw object wilt koppelen, klikt u op het pictogram van de productkiezer (mappictogram), selecteert u een object en sluit u de kiezer.
 
 ![pem xf](assets/pem-xf.png)
 
-### Contentfragmenten {#content-fragments}
+### Inhoudsfragmenten {#content-fragments}
 
 Inhoudsfragmenten zijn het beste inhoudstype voor alle gestructureerde inhoud. Dit kan worden gebruikt om externe productgegevens te verhogen met extra marketinggegevens of om inhoud zonder kop te maken. De koppeling van een inhoudsfragment aan een productcatalogusobject gebeurt aan de hand van de product- of categorietypen in de Content Fragment Model Editor. U sleept gewoon het juiste referentietype naar het model en configureert het veld. Deze typen bieden ondersteuning voor enkelvoudige of meervoudige selectie.
 
@@ -65,7 +67,7 @@ Als u op het actiepictogram klikt, wordt dat stuk inhoud geopend in een nieuw br
 
 In de vorige modules, hebt u geleerd hoe te met veelvoudige malplaatjes van de productcatalogus te werken. Meerdere sjablonen zijn een goede manier om verschillende sjablonen te maken, maar zijn vaak niet nodig. Vaak kan dezelfde sjabloon worden gebruikt met plaatsaanduidingen voor afzonderlijke inhoud. CIF ondersteunt plaatsaanduidingen voor inhoudsfragmenten en ervaringsfragmenten.
 
-Laten we beginnen met de tijdelijke aanduiding voor het ervaringsfragment. Open een productsjabloon in de AEM Editor. Sleep de **Fragmentatie van ervaring bij handel** op het malplaatje, dan open de config dialoog.
+Laten we beginnen met de tijdelijke aanduiding voor het ervaringsfragment. Open een productsjabloon in de AEM Editor. Sleep de **Commerce Experience Fragment** op het malplaatje, dan open de config dialoog.
 
 ![tijdelijke aanduiding](assets/pem-placeholder.png)
 
@@ -77,7 +79,7 @@ Open het ervaringsfragment dat u in de vorige stap aan een product hebt gekoppel
 
 ![pem xf](assets/pem-xf.png)
 
-Sleep nu de **Fragment met commerciële inhoud** op de sjabloon en open het configuratievenster.
+Sleep nu de **Commerce-inhoudsfragment** op de sjabloon en open het configuratievenster.
 
 ![CF-dialoogvenster](assets/pem-dialog-cf.png)
 
@@ -97,22 +99,22 @@ Sleep eerst een productdetailcomponent naar de pagina. Schakel vervolgens over n
 
 ![pem-productpagina](assets/pem-page-product.png)
 
-Als u bijbehorende inhoud voor dat product hebt gemaakt, schakelt u in de zijbalk Middelen over naar **Gekoppelde inhoud voor handel**. Op dit tabblad ziet u alle AEM inhoud die aan dit product is gekoppeld. Hierdoor kunt u de pagina&#39;s nu snel verfraaien met gekoppelde inhoud.
+Als u bijbehorende inhoud voor dat product hebt gemaakt, schakelt u in de zijbalk Middelen over naar **Gekoppelde Commerce-inhoud**. Op dit tabblad ziet u alle AEM inhoud die aan dit product is gekoppeld. Hierdoor kunt u de pagina&#39;s nu snel verfraaien met gekoppelde inhoud.
 
 ![pem verrijkte pagina](assets/pem-page-enriched.png)
 
 ## Einde van de reis? {#end-of-journey}
 
-Gefeliciteerd! U hebt de reis van de Ontwikkelaar van de AEM Inhoud en van de Handel voltooid! Nu moet u:
+Gefeliciteerd! U hebt de AEM Content and Commerce Developer trip voltooid! Nu moet u:
 
 * begrijpen hoe u elke AEM inhoud aan productcatalogusobjecten kunt koppelen
 * gebruik plaatsaanduidingen om producten en categoriepagina&#39;s afzonderlijk te verrijken
 * weten hoe u inhoud overzichtelijk kunt maken en het bijbehorende tabblad Inhoud kunt gebruiken
 
-U bent nu klaar om productervaringen te beheren met AEM Content and Commerce. AEM Inhoud en Handel hebben echter nog veel meer mogelijkheden. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) waar u meer kunt leren over de functies die u tijdens deze reis hebt gezien.
+U bent nu klaar om productervaringen te beheren met AEM Content en Commerce. Voor AEM Content en Commerce zijn echter veel extra opties beschikbaar. Bekijk enkele aanvullende bronnen die beschikbaar zijn in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) waar u meer kunt leren over de functies die u tijdens deze reis hebt gezien.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Ervaringen op het gebied van authoringhandel](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [Commerce Ervaringen ontwerpen](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
 * [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

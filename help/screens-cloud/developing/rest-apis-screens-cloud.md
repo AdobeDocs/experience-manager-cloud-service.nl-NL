@@ -2,9 +2,11 @@
 title: REST API's
 description: Schermen as a Cloud Service bieden een eenvoudige RESTful-API die voldoet aan de Sirenespecificatie. Volg deze pagina om te leren hoe u door de inhoudsstructuur kunt navigeren en opdrachten naar apparaten in de omgeving kunt verzenden.
 exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+feature: Developing Screens
+role: Admin, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -110,7 +112,7 @@ Of met krullen:
 curl -u admin:admin http://localhost:4502/api/screens/content/screens/we-retail/locations/demo/flagship/single.json
 ```
 
-***Resultaat:***
+***Resultaat***
 
 ```xml
 {

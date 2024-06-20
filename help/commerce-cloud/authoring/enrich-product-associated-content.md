@@ -10,10 +10,11 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: d1fa9824375ef739e2fdb90e8fd625b43fbca77b
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -27,13 +28,13 @@ Leer hoe marketers productgegevens kunnen verrijken met bijbehorende inhoud uit 
 
 Digitale middelen kunnen aan één of meerdere product SKUs worden geassocieerd. Zodra verbonden, kan de digitale activa met sleutelwoordonderzoeken worden ontdekt die op SKU worden gebaseerd. Het element wordt automatisch ook weergegeven als gekoppelde inhoud wanneer u een pagina bewerkt die het relevante product bevat, waardoor het nog eenvoudiger wordt om de volgende digitale ervaring te maken.
 
-## Ervaringsfragmenten {#experience-fragments}
+## Ervaar fragmenten {#experience-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
-De Fragmenten van de ervaring zijn een eigenschap van Adobe Experience Manager die een prijsmeter toestaat om tot stand te brengen **ongestructureerd** herbruikbare inhoud. De Fragmenten van de ervaring kunnen met een productSKU of catalogusidentiteitskaart worden geassocieerd. Zodra verbonden, kunnen de marketers verwante fragmenten gemakkelijk ontdekken die op producten worden gebaseerd die op een pagina worden getoond. Met behulp van een tijdelijke aanduiding en koppeling kunt u ook dynamisch fragmenten uit de ervaringsfragmenten opnemen op een productcataloguspagina.
+De Fragmenten van de ervaring zijn een eigenschap van Adobe Experience Manager die een prijsmeter toestaat om tot stand te brengen **ongestructureerd** herbruikbare inhoud. De Fragmenten van de ervaring kunnen met een productSKU of catalogusidentiteitskaart worden geassocieerd Zodra verbonden, kunnen de marketers verwante fragmenten gemakkelijk ontdekken die op producten worden gebaseerd die op een pagina worden getoond. Met behulp van een tijdelijke aanduiding en koppeling kunt u ook dynamisch fragmenten uit de ervaringsfragmenten opnemen op een productcataloguspagina.
 
-## Contentfragmenten {#content-fragments}
+## Inhoudsfragmenten {#content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 

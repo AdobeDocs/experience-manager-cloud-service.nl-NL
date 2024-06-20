@@ -9,10 +9,11 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -21,18 +22,18 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Deze functionaliteit werkt alleen voor winkeliers op basis van CIF (bijvoorbeeld Venia).
+> Deze functionaliteit werkt alleen voor winkeliers die zijn gebaseerd op CIF (bijvoorbeeld Venia).
 
-[AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) biedt auteurs van inhoud de mogelijkheid om extra categorie- en productpagina&#39;s te maken. Deze pagina&#39;s kunnen met extra marketing inhoud worden verrijkt en worden gevormd om specifieke categorieën en producten te richten. De volgende video doorloopt de opstelling van deze eigenschap.
+[CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components) biedt auteurs van inhoud de mogelijkheid om extra categorie- en productpagina&#39;s te maken. Deze pagina&#39;s kunnen met extra marketing inhoud worden verrijkt en worden gevormd om specifieke categorieën en producten te richten. De volgende video doorloopt de opstelling van deze eigenschap.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-Specifieke productpagina&#39;s kunnen worden geselecteerd door een sku of door de categorie van een product. De latere URL wordt alleen ondersteund door sommige van de beschikbare standaard-URL-indelingen voor productpagina&#39;s, omdat hiervoor categoriegegevens moeten worden gecodeerd in de product-URL.
+Specifieke productpagina&#39;s kunnen worden geselecteerd door een sku of door de categorie van een product. De latere URL wordt alleen ondersteund door sommige van de beschikbare standaard-URL-indelingen voor productpagina&#39;s, omdat hiervoor categoriegegevens moeten worden gecodeerd in de URL van het product.
 
 Meer informatie over dit onderwerp vindt u in de volgende bronnen:
 
 - [Geavanceerde URL-configuraties](../configuring/advanced-url-configuration.md)
-- [AEM CIF Core-componenten - Configuratie van meerdere cataloguspagina&#39;s](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [CIF kerncomponenten AEM - Configuratie van meerdere cataloguspagina&#39;s](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## Gerelateerde bronnen {#related}
 

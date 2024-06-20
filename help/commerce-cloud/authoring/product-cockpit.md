@@ -2,9 +2,11 @@
 title: Product Cockpit
 description: Leer hoe u met de productwakkit werkt, die een uniform overzicht biedt van gekoppelde productcatalogi en bijbehorende inhoud.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -33,7 +35,7 @@ Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereis
 
 ## De productcockpit openen {#opening-product-cockpit}
 
-De eenvoudigste manier om toegang te krijgen tot de Product Cockpit is via het menu &#39;Handel&#39; in AEM hoofdmenu. Het is ook mogelijk om Omnissearch (search for Commerce) of Openen te gebruiken `https://<yourAEMInstance>/commerce.html`.
+De eenvoudigste manier om toegang te krijgen tot de Product Cockpit is via het menu &#39;Commerce&#39; in AEM hoofdmenu. Het is ook mogelijk Omnsearch (search for Commerce) of Openen te gebruiken `https://<yourAEMInstance>/commerce.html`.
 
 ![Menu AEM](../assets/aem-menu.png)
 
@@ -71,7 +73,7 @@ Standaard worden in de productcockpit de catalogusgegevens van het live product 
 
 Als u op het eigenschappenpictogram van een product of categorie klikt, wordt de eigenschappenweergave van het geselecteerde object geopend. De open eigenschappen van een productvariant zijn gelijk aan het openen van de belangrijkste producteigenschappen.
 
-### Tabs Handel {#tabs}
+### Commerce Tabs {#tabs}
 
 De algemene en variantlusjes tonen vooraf bepaalde handelseigenschappen die uit de handelskorend achterste komen. Deze gegevens (inclusief varianten) is read-only gegevens in AEM aangezien het systeem van verslag de handelsafstand is. Het tabblad Variant wordt alleen weergegeven voor producten met varianten en bevat een lijst met alle varianten.
 

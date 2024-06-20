@@ -1,13 +1,15 @@
 ---
 title: Persoonlijke opslagplaatsen toevoegen in Cloud Manager
 description: Leer hoe u Cloud Manager instelt voor gebruik met uw eigen persoonlijke GitHub-opslagruimten.
-source-git-commit: 7f598a623c3003b20a074c31749382df7f5f5ca6
+exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
 
 ---
-
 
 # Persoonlijke opslagplaatsen toevoegen in Cloud Manager {#private-repositories}
 

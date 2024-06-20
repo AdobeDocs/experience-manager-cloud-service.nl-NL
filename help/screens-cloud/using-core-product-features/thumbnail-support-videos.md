@@ -3,7 +3,9 @@ title: Ondersteuning voor miniaturen voor video's in as a Cloud Service schermen
 description: Op deze pagina wordt beschreven hoe u ondersteuning voor miniaturen voor video's in as a Cloud Service schermen toevoegt.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
