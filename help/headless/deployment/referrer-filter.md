@@ -1,9 +1,11 @@
 ---
 title: Configuratie van filter Referrer met AEM zonder kop
 description: Met het filter Adobe Experience Manager Referrer kunt u toegang krijgen van andere hosts. Een configuratie OSGi voor de Filter van de Referateur is nodig om toegang tot het eindpunt van GraphQL voor headless toepassingen toe te laten.
-feature: GraphQL API
+feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+solution: Experience Manager
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -21,7 +23,7 @@ Een configuratie OSGi voor de Filter van de Referateur is nodig om toegang tot h
 
 Dit wordt gedaan door een aangewezen configuratie OSGi voor de Filter toe te voegen Referrer die:
 
-* geeft een hostnaam voor een vertrouwde website aan; ofwel `allow.hosts` of `allow.hosts.regexp`,
+* geeft een hostnaam voor een vertrouwde website op; ofwel `allow.hosts` of `allow.hosts.regexp`,
 * verleent toegang voor deze gastheernaam.
 
 De naam van het bestand moet `org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
@@ -52,7 +54,7 @@ Bijvoorbeeld om toegang voor verzoeken met de Referiteur te verlenen `my.domain`
 
 >[!CAUTION]
 >
->Het blijft de verantwoordelijkheid van de klant om:
+>De klant blijft verantwoordelijk voor:
 >
 >* alleen toegang verlenen tot vertrouwde domeinen
 >* ervoor zorgen geen gevoelige informatie wordt blootgesteld
@@ -62,4 +64,4 @@ Bijvoorbeeld om toegang voor verzoeken met de Referiteur te verlenen `my.domain`
 >
 >Alle GraphQL [schema&#39;s](#schema-generation) (afgeleid van Content Fragment Models die **Ingeschakeld**) zijn leesbaar via het GraphQL-eindpunt.
 >
->Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, aangezien deze op deze manier kunnen worden gelekt; Dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
+>Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden uitgelekt; dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.

@@ -1,9 +1,10 @@
 ---
 title: Verificatie voor externe AEM GraphQL-query's op inhoudsfragmenten
 description: Begrijp de vereiste verificatie voor externe Adobe Experience Manager GraphQL-query's om de levering van inhoud zonder kop te beveiligen.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -18,7 +19,7 @@ Een hoofdgebruik voor het [Adobe Experience Manager as a Cloud Service (AEM) Gra
 >
 >Voor test- en ontwikkelingsdoeleinden hebt u ook rechtstreeks toegang tot de AEM GraphQL API via de [GraphiQL-interface](/help/headless/graphql-api/graphiql-ide.md).
 
-Voor authentificatie, moet de derdedienst [een toegangstoken ophalen](#retrieving-access-token) dat kan [gebruikt in de GraphQL-aanvraag](#use-access-token-in-graphql-request).
+Voor authentificatie, moet de derdedienst [haal een Token van de Toegang terug](#retrieving-access-token) dat kan [gebruikt in GraphQL Request](#use-access-token-in-graphql-request).
 
 ## Een toegangstoken ophalen {#retrieving-access-token}
 
@@ -26,7 +27,7 @@ Zie [Toegangstokens genereren voor server-side API&#39;s](/help/implementing/dev
 
 ## Het gebruiken van het Token van de Toegang in een GraphQL- Verzoek {#use-access-token-in-graphql-request}
 
-Een service van derden kan alleen verbinding maken met een AEM instantie als deze een *Toegangstoken*. De dienst moet dit teken aan de `Authorization` header on the POST request.
+Een service van derden kan alleen verbinding maken met een AEM instantie als deze een *Toegangstoken*. De dienst moet dit teken aan de dienst dan toevoegen `Authorization` header on the POST request.
 
 Een GraphQL-autorisatieheader bijvoorbeeld:
 

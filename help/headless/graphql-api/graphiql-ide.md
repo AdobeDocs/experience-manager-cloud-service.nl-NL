@@ -1,9 +1,10 @@
 ---
 title: GraphiQL IDE gebruiken in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -136,7 +137,7 @@ Als u de doorlopende query in de lijst hebt geselecteerd (linkerdeelvenster), ku
 
 Hierdoor wordt de query geactiveerd naar de omgeving die u selecteert. U kunt kiezen tussen **Publiceren** milieu (bijvoorbeeld `dev-publish`) of uw **Voorvertoning** omgeving voor eenvoudige toegang door uw toepassingen tijdens het testen.
 
-![GraphiQL -Published Persisted Query](assets/cfm-graphiql-publish.png "GraphiQL - Doorlopende query publiceren")
+![GraphiQL -Published Persisted Query](assets/cfm-graphiql-publish.png "GraphiQL - Publish Persisted Query")
 
 >[!NOTE]
 >

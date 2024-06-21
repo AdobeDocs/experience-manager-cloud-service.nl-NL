@@ -3,13 +3,14 @@ title: Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met Grap
 description: Leer de basisconcepten van het realiseren van een AEM CMS zonder kop met behulp van Content Fragments met GraphQL voor de levering van inhoud zonder kop.
 feature: Content Fragments, GraphQL API
 role: Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
-
 
 # Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
@@ -68,15 +69,15 @@ De AEM GraphQL API-implementatie is gebaseerd op de [GraphQL Java-bibliotheken](
 
 ![Inhoudsfragmenten voor gebruik met GraphQL](assets/cf-contentdelivery-cf-use-with-graphql.png "Inhoudsfragmenten voor gebruik met GraphQL")
 
-### Contentfragmenten {#content-fragments}
+### Inhoudsfragmenten {#content-fragments}
 
-Contentfragmenten:
+Content Fragments:
 
 * Bevat gestructureerde inhoud.
 
 * Zij zijn gebaseerd op een [Inhoudsfragmentmodel](#content-fragments-models), waarin de structuur voor het resulterende fragment vooraf wordt gedefinieerd.
 
-### Modellen van contentfragmenten {#content-fragments-models}
+### Modellen van inhoudsfragmenten {#content-fragments-models}
 
 Deze [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md):
 

@@ -2,7 +2,9 @@
 title: Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters
 description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filters in Adobe Experience Manager as a Cloud Service kunt bijwerken voor levering van inhoud zonder kop.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 0%
@@ -234,9 +236,9 @@ De aanwezigheid van deze eigenschap op het JCR-knooppunt `/content/dam` met een 
 
      >[!NOTE]
      >
-     >De procedure werkt Inhoudsfragmenten op instanties Auteur en Publiceren bij.
+     >De procedure werkt Inhoudsfragmenten op instanties van Auteur en van Publish bij.
      >
-     >Daarom raadt de Adobe u aan de verificatie uit te voeren via de browser van de repository voor *ten minste* één auteur *en* één instantie Publish.
+     >Daarom raadt de Adobe u aan de verificatie uit te voeren via de browser van de repository voor *ten minste* één auteur *en* één Publish-exemplaar.
 
 ## Beperkingen {#limitations}
 

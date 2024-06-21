@@ -2,7 +2,9 @@
 title: Installatie zonder koppen
 description: Met deze snelstartgids leert u de basisprincipes van AEM krachtige, koploze functies, zoals Content Models, Content Fragments en de GraphQL API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -23,11 +25,11 @@ Hieronder ziet u een eenvoudig pad voor het maken, beheren en leveren van ervari
 >
 >Deze gids aan de slag veronderstelt kennis van zowel AEM als headless technologieën.
 >
->Als u nieuw bent om zonder kop te zijn, zie of de Dagbladen van de Documentatie van begin tot eind voor een inleiding van begin tot eind aan zowel hoofd als hoe AEM het steunt.
+>Als u aan of AEM of zonder kop nieuw bent, zie de Dagboeken van de Documentatie van de Zwaartepunt van de Adobe voor een inleiding van begin tot eind aan zowel hoofd als hoe AEM het steunt.
 >
 >* [Headless Developer Journey](/help/journey-headless/developer/overview.md)
 >* [Reis voor architect zonder hoofdinhoud](/help/journey-headless/architect/overview.md)
->* [Schrijverreis zonder kopinhoud](/help/journey-headless/author/overview.md)
+>* [Auteursreis zonder kopinhoud](/help/journey-headless/author/overview.md)
 >* [Dagboekreis zonder hoofd](/help/journey-headless/translation/overview.md).
 
 ## Publiek {#audience}

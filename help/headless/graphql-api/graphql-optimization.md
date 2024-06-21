@@ -2,9 +2,11 @@
 title: GraphQL-query's optimaliseren
 description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filteren, pagineren en sorteren van uw Content Fragments in Adobe Experience Manager as a Cloud Service voor levering van inhoud zonder kop.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1874'
 ht-degree: 0%
 
 ---
@@ -184,7 +186,7 @@ Zie:
 
 * [Voorbeeldquery met filtering op _tags-id en exclusief variaties, en sorteren op naam](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 Het belangrijkste doel van alle optimaliseringsaanbevelingen is het verminderen van de aanvankelijke resultaatreeks. De hier vermelde beste praktijken verstrekken manieren om dit te doen. Zij kunnen (en moeten) worden gecombineerd.
 

@@ -3,9 +3,9 @@ title: Uw inhoud modelleren
 description: In dit deel van de Adobe Experience Manager (AEM) Headless Developer Journey leert u hoe u uw inhoud kunt modelleren voor AEM levering zonder kop met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 0%

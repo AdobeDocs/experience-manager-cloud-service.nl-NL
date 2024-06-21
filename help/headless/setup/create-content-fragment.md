@@ -2,7 +2,9 @@
 title: Inhoudsfragmenten maken - Instellingen zonder kop
 description: Leer hoe u AEM inhoudsfragmenten kunt gebruiken voor het ontwerpen, maken, beheren en gebruiken van pagina-onafhankelijke inhoud voor levering zonder kop.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
@@ -28,7 +30,7 @@ Inhoudsauteurs maken een willekeurig aantal Inhoudsfragmenten om de inhoud weer 
 1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Navigatie** > **Inhoudsfragmenten**.
 
 1. Selecteer de [eerder gemaakte map.](create-assets-folder.md)
-1. Selecteer **Maken**.
+1. Selecteren **Maken**.
 1. Het maken van een inhoudsfragment wordt weergegeven als een dialoogvenster.
 Selecteer de locatie en het model waarmee u het inhoudsfragment wilt maken.
 

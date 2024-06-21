@@ -4,7 +4,8 @@ description: Begrijp hoe u inhoud voor uw inhoudsfragmenten ontwerpt en maak var
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: ec0129b0087e86f50c6c1e65d5445693e63278e0
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2668'
 ht-degree: 0%
@@ -469,7 +470,7 @@ Als u deze functie wilt gebruiken, moet u eerst:
 
 Wanneer de URL is gedefinieerd, wordt **Voorvertoning** is actief. U kunt deze knop selecteren om de externe toepassing te starten (op een afzonderlijk tabblad) om het inhoudsfragment te renderen.
 
-## Fragment publiceren {#publish-content-fragment}
+## Publish your Fragment {#publish-content-fragment}
 
 U kunt **Publiceren** het fragment naar een van de volgende items:
 

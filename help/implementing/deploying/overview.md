@@ -3,7 +3,8 @@ title: Distribueren naar AEM as a Cloud Service
 description: Leer over de grondbeginselen en beste praktijken van plaatsing aan AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 0%
@@ -263,7 +264,7 @@ Op dit moment werkt AEM as a Cloud Service niet met hulpmiddelen voor indexbehee
 
 Het publicatiemechanisme is achterwaarts compatibel met het [Java™ API&#39;s voor replicatie AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
 
-Om te ontwikkelen en te testen met replicatie met de cloud klaar AEM QuickStart, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Auteur/Publish opstelling. Als het ingangspunt voor de gebruikersinterface van AEM auteur is verwijderd voor de cloud, gaan gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
+Voor het ontwikkelen en testen van replicatie met de cloud gereed AEM QuickStart, moeten de klassieke replicatiemogelijkheden worden gebruikt met een Auteur/Publish-installatie. Als het ingangspunt voor de gebruikersinterface van AEM auteur is verwijderd voor de cloud, gaan gebruikers naar `http://localhost:4502/etc/replication` voor configuratie.
 
 ## Achterwaarts Compatibele Code voor het Draaien Plaatsingen {#backwards-compatible-code-for-rolling-deployments}
 
@@ -308,11 +309,11 @@ De ondersteunde configuraties in de uitvoeringsmodus zijn:
 * **config.signer.rde** (*Is van toepassing op AEM RDE-auteurservice*)
 * **config.maker.stage** (*Is van toepassing op AEM Staging Author-service*)
 * **config.maker.prod** (*Van toepassing op AEM dienst Productieauteur*)
-* **config.publish** (*Is van toepassing op AEM publicatieservice*)
+* **config.publish** (*Is van toepassing op AEM Publish-service*)
 * **config.publish.dev** (*Is van toepassing op AEM Dev Publish-service*)
-* **config.publish.rde** (*Is van toepassing op AEM RDE-publicatieservice*)
-* **config.publish.stage** (*Is van toepassing op AEM service Staging publiceren*)
-* **config.publish.prod** (*Van toepassing op AEM publicatieservice Productie*)
+* **config.publish.rde** (*Is van toepassing op AEM RDE Publish-service*)
+* **config.publish.stage** (*Is van toepassing op AEM Staging Publish-service*)
+* **config.publish.prod** (*Van toepassing op AEM Production Publish-service*)
 * **config.dev** (*Van toepassing op AEM Dev-services*)
 * **config.rde** (*Van toepassing op RDE-diensten*)
 * **config.stage** (*Van toepassing op AEM-halveringsdiensten*)

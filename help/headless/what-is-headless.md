@@ -2,7 +2,9 @@
 title: Wat is een headless CMS?
 description: Meer informatie over Headless CMS. Hoe werken ze? Wat zijn de alternatieven en verschillen? Waarom zou u een Headless CMS willen gebruiken?
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
-source-git-commit: 3306bde7b94b9f863b57d36542e8822df38c79ba
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -25,7 +27,7 @@ In een contentbeheersysteem (CMS) wordt de inhoud die wordt gebruikt voor uw onl
 
 Een CMS heeft traditioneel zowel de achtergrondfunctionaliteit voor opslag en levering van inhoud als de frontendtechnologie opgenomen die wordt gebruikt om de markering weer te geven voor een ervaring die uw browser zal weergeven (de presentatielaag).
 
-Zeer krachtig, waardoor u de volledige controle hebt over de inhoud en opmaak, maar waarin een deel van de flexibiliteit ontbreekt die nodig is in de snel veranderende omgeving van vandaag. bijvoorbeeld wanneer er een interface wordt gemaakt met externe apps.
+Zeer krachtig, zodat u de volledige controle hebt over de inhoud en opmaak, maar niet beschikt over de flexibiliteit die nodig is in de snel bewegende omgeving van vandaag, bijvoorbeeld bij de interface met externe apps.
 
 ## CMS zonder hoofd {#headless-cms}
 
@@ -70,7 +72,7 @@ Hoewel de term ontkoppelde CMS soms onafhankelijk wordt gebruikt, beschrijft het
 
 Dit is een andere term voor een traditioneel CMS.
 
-## Meer informatie {#further-reading}
+## Verdere lezing {#further-reading}
 
 U kunt meer over het gebruiken van AEM in een headless topologie CMS hier lezen:
 

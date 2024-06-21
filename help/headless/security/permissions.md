@@ -1,9 +1,10 @@
 ---
 title: Bevoegdheidsoverwegingen voor inhoud zonder kop
-description: Leer over verschillende toestemmings en ACL overwegingen voor een headless implementatie met Adobe Experience Manager. Begrijp de verschillende personen en de potentiële toestemmingsniveaus nodig voor zowel auteur als Publish milieu's.
-feature: Content Fragments,GraphQL API
+description: Leer over verschillende toestemmings en ACL overwegingen voor een headless implementatie met Adobe Experience Manager. Begrijp de verschillende persona's en de potentiële toestemmingsniveaus nodig voor zowel auteur als milieu Publish.
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 0%
@@ -71,11 +72,11 @@ Als u een groep wilt creëren die de Modellen van het Fragment van de Inhoud maa
 | `/conf` | **toestaan** | `jcr:read` |
 | `/conf/<config-name>/settings/dam/cfm` | **toestaan** | `rep:write`, `crx:replicate` |
 
-## Servicemachtigingen publiceren
+## Publish-servicerechten
 
-De publicatieservice wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen GraphQL API-gebruikers en andere gebruikers. Inhoud wordt na bewerking en goedkeuring in de service Auteur gepubliceerd naar de service Publiceren. De toepassing zonder koppen gebruikt vervolgens de goedgekeurde inhoud van de publicatieservice via GraphQL API&#39;s.
+De Publish-service wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen GraphQL API-gebruikers en andere gebruikers. Inhoud wordt na bewerking en goedkeuring op de service Auteur gepubliceerd naar de Publish-service. De toepassing zonder koppen gebruikt vervolgens de goedgekeurde inhoud van de Publish-service via GraphQL API&#39;s.
 
-Standaard is inhoud die via de eindpunten van GraphQL van AEM publicatieservice wordt weergegeven, toegankelijk voor iedereen, inclusief niet-geverifieerde gebruikers.
+Standaard is inhoud die via de GraphQL-eindpunten van AEM Publish-service wordt weergegeven, toegankelijk voor iedereen, inclusief niet-geverifieerde gebruikers.
 
 ### Machtigingen voor inhoud
 
@@ -86,7 +87,7 @@ CUG&#39;s met middelen werken op:
 * Eerst, ontken al toegang tot de omslag en subfolders
 * Dan, die leestoegang tot de omslag en subfolders voor alle AEM Gebruikersgroepen verlenen die in de lijst van KUGs worden vermeld
 
-CUG&#39;s kunnen worden ingesteld in middelenmappen die inhoud bevatten die via GraphQL API&#39;s beschikbaar wordt gemaakt. De toegang tot de omslagen van activa op AEM publiceren zou via Gebruikersgroepen, eerder dan gebruiker direct moeten worden gecontroleerd. Maak (of hergebruik) een AEM gebruikersgroep die toegang verleent tot mappen met elementen die inhoud bevatten die door GraphQL API&#39;s beschikbaar is gemaakt.
+CUG&#39;s kunnen worden ingesteld in middelenmappen die inhoud bevatten die via GraphQL API&#39;s beschikbaar wordt gemaakt. De toegang tot de omslagen van activa op AEM Publish zou via Gebruikersgroepen, eerder dan gebruiker direct moeten worden gecontroleerd. Maak (of hergebruik) een AEM gebruikersgroep die toegang verleent tot mappen met elementen die inhoud bevatten die door GraphQL API&#39;s beschikbaar is gemaakt.
 
 #### Het verificatieschema selecteren{#publish-permissions-users}
 
@@ -97,4 +98,4 @@ De [AEM headless SDK](https://github.com/adobe/aem-headless-client-js#create-aem
 
 ### De GraphQL API openen
 
-HTTP-aanvragen die de [juiste verificatiereferenties](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) op de GraphQL API-eindpunten van de AEM publicatieservice vindt u inhoud die de referenties mogen lezen en die anoniem toegankelijk is. Andere gebruikers van de GraphQL API kunnen de inhoud in de door CUG&#39;s beveiligde mappen niet lezen.
+HTTP-aanvragen die de [juiste verificatiereferenties](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) op de GraphQL API-eindpunten van de AEM Publish-service vindt u inhoud die de referenties mogen lezen en die anoniem toegankelijk is. Andere gebruikers van de GraphQL API kunnen de inhoud in de door CUG&#39;s beveiligde mappen niet lezen.

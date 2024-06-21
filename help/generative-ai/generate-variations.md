@@ -2,7 +2,9 @@
 title: Variaties genereren
 description: Meer informatie over Variaties genereren, toegankelijk via AEM as a Cloud Service en de Sidekick van Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
+feature: Generate Variations
+role: Admin, Architect, Developer
+source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 0%
@@ -380,7 +382,7 @@ Als u bijvoorbeeld een publiek wilt toevoegen vanuit een bestand op Google Drive
 1. Maak in Google Drive een spreadsheetbestand met twee kolommen:
    1. De eerste kolom wordt weergegeven in de vervolgkeuzelijst.
    1. De tweede kolom is de beschrijving van het publiek.
-1. Bestand publiceren:
+1. Publish het bestand:
    1. Bestand -> Delen -> Publiceren naar web -> CSV
 1. Kopieer de URL naar het gepubliceerde bestand.
 1. Ga naar Variaties genereren.

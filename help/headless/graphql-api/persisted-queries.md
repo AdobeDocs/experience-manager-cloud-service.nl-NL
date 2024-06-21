@@ -1,9 +1,10 @@
 ---
 title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager as a Cloud Service kunt voortzetten voor optimale prestaties. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de verzender en lagen worden in het voorgeheugen ondergebracht CDN, die uiteindelijk de prestaties van de cliënttoepassingen verbeteren.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 1%
@@ -317,7 +318,7 @@ Hiervoor gold het volgende:
    * door een aanvraag die HTTP-headerinstellingen definieert met cURL; deze moet geschikte instellingen bevatten voor `cache-control` en/of `surrogate-control`; voor voorbeelden, zie [Het beheren van Geheime voorgeheugen op het Aanhoudende Niveau van de Vraag](#cache-persisted-query-level)
    * als u waarden opgeeft in het dialoogvenster **Kopteksten** de dialoog [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 
-### Exemplaren publiceren {#publish-instances}
+### Publish-instanties {#publish-instances}
 
 Voor publicatie-instanties zijn de standaardwaarden:
 
@@ -461,11 +462,11 @@ Als u een voortgezette query in een client-app wilt gebruiken, moet de SDK van d
 
 ## Het overbrengen van een blijvende vraag aan uw milieu van de Productie  {#transfer-persisted-query-production}
 
-De gepersisteerde vragen zouden altijd op de dienst van de Auteur van de AEM moeten worden gecreeerd en dan (herhaald) aan de AEM publicatiedienst worden gepubliceerd. Vaak, worden de Persisted vragen gecreeerd en op lagere milieu&#39;s zoals lokale of milieu&#39;s van de Ontwikkeling getest. Het is dan noodzakelijk om Verlengde vragen aan hogere niveaumilieu&#39;s te bevorderen, die hen uiteindelijk op een productie AEM publiceren milieu voor cliënttoepassingen ter beschikking stellen om te verbruiken.
+De gepersisteerde vragen zouden altijd op de dienst van de Auteur van de AEM moeten worden gecreeerd en dan (herhaald) aan de dienst van AEM Publish gepubliceerd. Vaak, worden de Persisted vragen gecreeerd en op lagere milieu&#39;s zoals lokale of milieu&#39;s van de Ontwikkeling getest. Het is dan noodzakelijk om Persisted query&#39;s naar omgevingen op een hoger niveau te promoten, zodat ze uiteindelijk beschikbaar worden gesteld op een productie AEM Publish-omgeving voor gebruik door clienttoepassingen.
 
 ### Voorbehouden query&#39;s verpakken
 
-De blijvende vragen kunnen in worden gebouwd [AEM](/help/implementing/developing/tools/package-manager.md). AEM pakketten kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Pakketten kunnen ook worden gerepliceerd vanuit een AEM-ontwerpomgeving naar AEM publicatieomgevingen.
+De blijvende vragen kunnen in worden gebouwd [AEM](/help/implementing/developing/tools/package-manager.md). AEM pakketten kunnen vervolgens worden gedownload en geïnstalleerd in verschillende omgevingen. AEM Pakketten kunnen ook worden gerepliceerd vanuit een AEM Auteur-omgeving naar AEM Publish-omgevingen.
 
 Een pakket maken:
 
@@ -480,7 +481,7 @@ Een pakket maken:
 Nadat het pakket is gemaakt, kunt u:
 
 * **Downloaden** het pakket en heruploaden in een andere omgeving.
-* **Repliceren** het pakket door te tikken **Meer** > **Repliceren**. Hierdoor wordt het pakket gerepliceerd naar de verbonden AEM-publicatieomgeving.
+* **Repliceren** het pakket door te tikken **Meer** > **Repliceren**. Hierdoor wordt het pakket gerepliceerd naar de aangesloten AEM Publish-omgeving.
 
 <!--
 1. Using replication/distribution tool:

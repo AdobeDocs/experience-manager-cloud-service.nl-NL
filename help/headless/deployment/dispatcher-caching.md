@@ -1,9 +1,10 @@
 ---
 title: GraphQL Persisted Queries - caching inschakelen in Dispatcher
-description: De Dispatcher is een caching- en beveiligingslaag voor Adobe Experience Manager-publicatieomgevingen. U kunt caching voor Verlengde Vragen in AEM Zwaartepunt toelaten.
-feature: Dispatcher, GraphQL API
+description: De Dispatcher is een caching- en beveiligingslaag voor Adobe Experience Manager Publish-omgevingen. U kunt caching voor Verlengde Vragen in AEM Zwaartepunt toelaten.
+feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: 859ea382cce6822da1da7d11213c3f44a25edef3
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%

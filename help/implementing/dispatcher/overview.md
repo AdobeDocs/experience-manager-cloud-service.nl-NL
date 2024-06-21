@@ -2,16 +2,18 @@
 title: Overzicht van de inhoudsleveringsstroom
 description: Meer informatie over de gegevensstroom voor de levering van inhoud en hoe u uw inhoud publiceert
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
+feature: Dispatcher
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 1%
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
-# Workflow voor contentlevering {#content-delivery}
+# Inhoudsleveringsstroom {#content-delivery}
 
-Op de huidige pagina vindt u details van de publicatieservice in AEM as a Cloud Service. De levering van de de dienstinhoud van de publicatie omvat:
+Op de huidige pagina vindt u details van de publicatieservice in AEM as a Cloud Service. De levering van Publish-service-inhoud omvat:
 
 * CDN
 * AEM Dispatcher

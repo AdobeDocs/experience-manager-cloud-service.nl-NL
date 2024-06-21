@@ -1,11 +1,13 @@
 ---
 title: Configuratie voor het delen van bronnen van verschillende oorsprong (CORS) met AEM headless
 description: Met CORS (Cross-Origin Resource Sharing) van Adobe Experience Manager kunnen webtoepassingen zonder kop aanroepen naar AEM uitvoeren. Een configuratie CORS is nodig om toegang tot het eindpunt van GraphQL toe te laten.
-feature: GraphQL API
+feature: Headless, GraphQL API
 exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+solution: Experience Manager
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---

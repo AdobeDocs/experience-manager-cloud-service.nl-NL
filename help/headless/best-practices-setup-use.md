@@ -2,10 +2,12 @@
 title: Beste praktijken voor de opstelling en het gebruik van AEM GraphQL met Inhoudsfragmenten
 description: Leer de geadviseerde Beste praktijken voor de opstelling en het gebruik van AEM GraphQL met de Fragments van de Inhoud.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 5%
+source-wordcount: '702'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +40,7 @@ De eindpunten moeten worden gevormd in:
 
 * Auteur
 * Voorvertoning
-* Publicatie
+* Publiceren
 
 Voor:
 
@@ -61,7 +63,7 @@ Caching van persisted query&#39;s wordt niet standaard ingeschakeld in de Dispat
 
 De Dispatcher wordt gewoonlijk gevormd voor:
 
-* Publiceren: productie
+* Publish: productie
 
 ### CORS instellen {#cors-setup}
 
@@ -78,7 +80,7 @@ Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden g
 
 CORS wordt gewoonlijk geconfigureerd voor:
 
-* Publiceren: productie
+* Publish: productie
 
 ### Verificatie {#authentication}
 
@@ -93,7 +95,7 @@ Een van de belangrijkste gebruiksscenario&#39;s voor de Adobe Experience Manager
 De authentificatie wordt gewoonlijk gevormd voor:
 
 * Voorvertoning
-* Publicatie
+* Publiceren
 
 Voor:
 
@@ -115,7 +117,7 @@ De toestemmingen worden gewoonlijk gevormd voor:
 
 * Auteur
 * Voorvertoning
-* Publicatie
+* Publiceren
 
 Voor:
 
@@ -135,7 +137,7 @@ GraphQL-query&#39;s en hun JSON-antwoorden kunnen in de cache worden geplaatst a
 
 Een CDN wordt gewoonlijk gevormd voor:
 
-* Publiceren: productie
+* Publish: productie
 
 ### Inhoudsfragmenten configureren en maken {#cconfigure-create-content-fragments}
 
@@ -154,7 +156,7 @@ Inhoudsfragmenten worden gedefinieerd, geschreven, getest, gepubliceerd en geope
 
 * Auteur
 * Voorvertoning
-* Publicatie
+* Publiceren
 
 Voor:
 
@@ -191,7 +193,7 @@ AEM CMS zonder kop geeft ontwikkelaars de vrijheid om uitzonderlijke ervaringen 
 Apps worden gewoonlijk ontwikkeld, getest en gebruikt op:
 
 * Voorvertoning
-* Publicatie
+* Publiceren
 
 Voor:
 

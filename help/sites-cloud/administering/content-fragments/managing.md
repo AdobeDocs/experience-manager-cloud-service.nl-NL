@@ -4,7 +4,8 @@ description: Leer hoe te om uw AEM Contentfragmenten van de console en de redact
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2628'
 ht-degree: 0%
@@ -155,7 +156,7 @@ Als u een specifiek fragment selecteert, wordt een werkbalk geopend die is toege
 
 >[!NOTE]
 >
->Handelingen als Publiceren, Publiceren ongedaan maken, Verwijderen, Verplaatsen, Naam wijzigen en Kopiëren activeren elk een asynchrone taak. De voortgang van die taak kan worden gecontroleerd via de interface AEM Async Jobs.
+>Handelingen als Publish, Unpublish, Delete, Move, Rename en Copy activeren elk een asynchrone taak. De voortgang van die taak kan worden gecontroleerd via de interface AEM Async Jobs.
 
 ### De informatie die over uw inhoudsfragmenten wordt verstrekt {#information-content-fragments}
 
@@ -291,7 +292,7 @@ U kunt de eigenschappen (metagegevens) van een fragment weergeven en bewerken me
 
 U kunt inhoudsfragmenten publiceren naar:
 
-* de **[Service voor publiceren](/help/headless/deployment/architecture.md)** - voor volledige toegang van het publiek
+* de **[Publish Service](/help/headless/deployment/architecture.md)** - voor volledige toegang van het publiek
 
 * de **[Voorvertoningsservice](/help/headless/deployment/architecture.md)** - om de inhoud voor te vertonen voordat deze volledig beschikbaar is
 
@@ -323,7 +324,7 @@ Na het selecteren van **Publiceren** handeling:
 
 1. Selecteer een van de volgende opties om het desbetreffende dialoogvenster te openen:
 
-   * **Nu** - selecteer een van de **Service voor publiceren** of de **Voorvertoningsservice**; na bevestiging wordt het fragment onmiddellijk gepubliceerd
+   * **Nu** - selecteer een van de **Publish-service** of de **Voorvertoningsservice**; na bevestiging wordt het fragment onmiddellijk gepubliceerd
    * **Schema** - naast de vereiste service kunt u ook de datum en tijd selecteren waarop het fragment wordt gepubliceerd
 
 1. Geef alle gegevens op in het dialoogvenster. Bijvoorbeeld voor een gepland publicatieverzoek:
