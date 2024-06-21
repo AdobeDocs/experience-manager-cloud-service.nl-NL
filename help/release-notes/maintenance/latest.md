@@ -4,10 +4,10 @@ description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d2f92869204dc0157dcc1f41d9fe88cdf5875965
+source-git-commit: 53b692b9f668387c889c28498bb20c67149e36be
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 1%
+source-wordcount: '647'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16799 same
 
 * ASSETS-31977: Verbeterde activiteiten voor het verplaatsen, kopiëren en verwijderen van bedrijfsmiddelen.
 * ASSETS-33618: automatische transcriptie- en vertaalmogelijkheden voor video&#39;s in Dynamic Media.
-* ASSETS-33618: Approval Action for ContentHub and DM and add properties to damAssetLucene properties.
+* ASSETS-35185: Approval Action for ContentHub and DM and add properties to damAssetLucene properties.
 * ASSETS-35533: Voeg DRM- en CAI-eigenschappen toe aan damAssetLucene-index.
 * ASSETS-37280: Opeenvolgende taakafhandeling voor vertaling wanneer bronondertitel (vtt) nog steeds wordt verwerkt.
 * ASSETS-37559: gebeurtenis Improved asset deleted.
@@ -59,6 +59,13 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16799 same
 > AEM de Techniek heeft een regressie voor de functionaliteit van Lanceringen geïdentificeerd die huidige AEM versies die met 16461 beginnen beïnvloedt. Vanwege deze regressie worden nieuwe opstarters (gemaakt nadat nieuwe releases zijn toegepast) die niet-diepe pagina&#39;s bevatten, niet goed gepromoveerd omdat er configuraties ontbreken.
 > Als uw milieu&#39;s worden beïnvloed, is een shell manuscript om ontbrekende configuraties te identificeren en bij te werken beschikbaar door klantensteun (interne verwijzing SITES-22457).
 > Er wordt een oplossing voor de langere termijn beschikbaar gesteld die ervoor zorgt dat nieuwe opstartversies worden gemaakt met alle juiste configuraties. Tot die tijd is er ook een interne patchrelease beschikbaar op aanvraag.
+
+#### Forms
+
+1. Als een gebruiker de nieuwste AEM Forms SDK downloadt (`AEM Forms add-on v2024.05.04.00-240400`), kan het batchbestand de Docker-service niet starten. U lost dit probleem als volgt op:
+   1. Download de [map](/help/forms/assets/sdk_hotfix.zip).
+   1. Extraheer de inhoud uit de gedownloade map en kopieer de `sdk.sh` en `sdk.bat` bestanden.
+   1. Bestaande vervangen `sdk.sh` en `sdk.bat` in de SDK van AEM Forms met de nieuwe bestanden.
 
 ### Kennisgeving wijzigen {#change-notice-16799}
 
