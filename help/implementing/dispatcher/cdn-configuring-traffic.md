@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -307,6 +307,42 @@ Verbindingen met oorsprong zijn alleen SSL en gebruiken poort 443.
 | **forwardCookie** (optioneel, standaard is false) | Als de waarde true is, wordt de koptekst &#39;Cookie&#39; uit de clientaanvraag doorgegeven aan de achterkant. Als dit niet het geval is, wordt de koptekst Cookie verwijderd. |
 | **forwardAuthorization** (optioneel, standaard is false) | Als de waarde true is, wordt de header &quot;Authorization&quot; van de clientaanvraag doorgegeven aan de back-end, anders wordt de machtigingsheader verwijderd. |
 | **timeout** (optioneel, in seconden, standaard is 60) | Aantal seconden dat CDN op een backendserver moet wachten om de eerste byte van een HTTP-antwoordinstantie te leveren. Deze waarde wordt ook gebruikt als een tussenliggende time-out naar de backend-server. |
+
+### Proxeren naar Edge Delivery Services {#proxying-to-edge-delivery}
+
+Er zijn scenario&#39;s waar de oorsprongsselecteurs zouden moeten worden gebruikt om verkeer door AEM Publish aan AEM Edge Delivery Services te leiden:
+
+* Sommige inhoud wordt geleverd door een domein dat wordt beheerd door AEM Publish, terwijl andere inhoud van hetzelfde domein door Edge Delivery Services wordt geleverd
+* De inhoud die door Edge Delivery Services wordt geleverd zou van regels profiteren die via de Pijpleiding van de Configuratie, met inbegrip van de regels van de verkeersfilter of verzoek/reactietransformaties worden opgesteld
+
+Hier volgt een voorbeeld van een regel voor de oorspronkelijke kiezer waarmee u dit kunt bereiken:
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: select-edge-delivery-services-origin
+        when:
+          allOf:
+            - reqProperty: tier
+              equals: publish
+            - reqProperty: domain
+              equals: <Production Host>
+            - reqProperty: path
+              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+        action:
+          type: selectOrigin
+          originName: aem-live
+    origins:
+      - name: aem-live
+        domain: main--repo--owner.aem.live
+```
+
+>[!NOTE]
+> Aangezien de Adobe Beheerde CDN wordt gebruikt, zorg ervoor om dupbevestiging binnen te vormen **beheerd** door de Edge Delivery Services te volgen [Documentatie voor push-validatie instellen](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
 
 ## Omleiding op de client {#client-side-redirectors}
 
