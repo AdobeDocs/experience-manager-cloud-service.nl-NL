@@ -4,7 +4,7 @@ description: Meer informatie over de beste werkwijzen voor het toewijzen van ser
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -189,7 +189,7 @@ Voorbeelden voor `userproperties-copy-service`:
 * Bereik reduceren
 
    * Het toegangsbeheerbeleid van de plaats bij eigenschapspecifieke onderaannemers
-   * In het geval van verdeelde punten: gebruiksbeperkingen om werkingsgebied te beperken (raadpleeg [de documentatie](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) voor een lijst van ingebouwde beperkingen).
+   * In het geval van verdeelde punten: gebruiksbeperkingen om werkingsgebied te beperken (raadpleeg [de documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) voor een lijst van ingebouwde beperkingen).
 
 * Consistentie garanderen
 
