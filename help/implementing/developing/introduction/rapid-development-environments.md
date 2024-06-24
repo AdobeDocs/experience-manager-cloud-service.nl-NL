@@ -4,9 +4,9 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
+source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
 workflow-type: tm+mt
-source-wordcount: '4244'
+source-wordcount: '4215'
 ht-degree: 0%
 
 ---
@@ -223,11 +223,6 @@ Met zorgvuldige coördinatie is het echter mogelijk dat meerdere ontwikkelaars e
 
 
 ### Globale vlaggen {#global-flags}
-
->[!NOTE]
->
-> Deze globale markeringen zijn nog niet beschikbaar. Ze zullen ergens in juni worden ingevoerd.
-> 
 
 * Voor een minder uitgebreide uitvoer gebruikt u de stille markering:
 
@@ -565,11 +560,6 @@ U kunt RDE ook opnieuw instellen gebruikend de ellipsknoop direct van **Omgeving
 Ga voor meer informatie over het gebruik van Cloud Manager om uw omgevingen te beheren naar [de documentatie van Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Opdrachten die JSON-uitvoer ondersteunen {#json-commands}
-
->[!NOTE]
->
-> Deze opdrachten zijn nog niet beschikbaar. Ze zullen ergens in juni worden ingevoerd.
-> 
 
 De meeste opdrachten ondersteunen de globale ```--json``` markering die consoleoutput onderdrukt en geldige JSON terugkeert die in manuscripten moet worden verwerkt. Hieronder vindt u enkele ondersteunde opdrachten, met voorbeelden van de json-uitvoer.
 
