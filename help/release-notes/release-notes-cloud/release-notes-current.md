@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
+source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 0%
@@ -122,12 +122,12 @@ Deze versie brengt een significante verbetering aan de visuele regelredacteur vo
 
 
 
-### Functies voor vroege adopters in AEM Forms {#forms-new-early-adopter-features}
+### Functies voor vroege toegang in AEM Forms {#forms-new-access-adopter-features}
 
-Het AEM Forms Early Introducter-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties voordat anderen die ontwikkelen.
+Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties voordat iemand anders ze ontwikkelt.
 Het programma biedt toegang tot meerdere innovaties.
 
-Deze release bevat een overzicht van de innovaties die in deze release zijn geleverd. Voor de volledige lijst van innovaties die beschikbaar zijn in het kader van het programma voor vroegtijdige adoptie, zie [Documentatie over AEM Forms Early Introducter Program](/help/forms/early-adopter-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in deze release zijn geleverd. Voor de volledige lijst van innovaties die beschikbaar zijn in het kader van het programma voor vroege toegang, zie [Documentatie over AEM Forms Early Access Program](/help/forms/early-access-ea-features.md).
 
 #### Verbeterde methoden voor botbeveiliging
 
@@ -152,7 +152,7 @@ Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens.
 
 >[!IMPORTANT]
 >
-> Als u geïnteresseerd bent in deelname aan ons programma voor vroege adopters voor innovaties op het gebied van vroege adopters, stuurt u gewoon een e-mail van uw officiële adres naar [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
+> Als u geïnteresseerd bent in deelname aan ons programma voor vroege toegang voor elke innovatie op het gebied van vroege toegang, stuurt u gewoon een e-mail van uw officiële adres naar [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
@@ -174,7 +174,7 @@ Met Adobe Developer Console worden referenties gegenereerd voor toegang tot vers
 
 #### RDE-ondersteuning voor front-end code met gebruik van Sitethema&#39;s en Sitesjablonen {#rde-frontend}
 
-[RDE&#39;s ondersteunen nu front-end code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) gebaseerd op [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md), voor vroege adoptie. Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan een [front-end pijpleiding](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+[RDE&#39;s ondersteunen nu front-end code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) gebaseerd op [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md), voor vroegtijdige adoptie. Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan een [front-end pijpleiding](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
 #### Verbeterd registreren voor RDEs {#rde-logging}
 
