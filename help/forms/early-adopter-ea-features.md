@@ -1,31 +1,31 @@
 ---
-title: Huidige functies voor vroege adoptie van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Huidige functies voor vroege adoptie van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: Huidige functies voor vroege toegang van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+description: Huidige functies voor vroege toegang van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 0c49e0ba5deb3659418cb0d057151863beac5340
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 0%
 
 ---
 
-# AEM Forms-programma voor vroege adoptie
+# AEM Forms-programma voor vroege toegang
 
-Het AEM Forms Early Introducter-programma biedt u een unieke kans om exclusieve toegang te krijgen tot geavanceerde functies voordat anderen dit doen en om hun ontwikkeling vorm te geven. Het programma biedt u de volgende mogelijkheden:
+Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde functies voordat iemand anders deze kan ontwikkelen en om de ontwikkeling ervan te helpen vormgeven. Het programma biedt u de volgende mogelijkheden:
 
 * Wees een van de eersten om toegang te krijgen tot geavanceerde technologie voordat deze de mainstream raakt.
 * Werk samen met het productteam en geef samen de toekomst van het product vorm. Gebruik uw gebruiksscenario&#39;s om de ontwikkeling te begeleiden, zodat de innovatie volwassen is en het hoofd kan bieden aan uw uitdagingen in de praktijk.
 * Feedback geven en ons helpen problemen te verhullen voordat u de toepassing start, wat leidt tot een vloeiender gebruikerservaring bij volledige release.
 
-## Hoe kan ik deelnemen aan het programma voor vroege adoptie?
+## Hoe kan ik deelnemen aan het programma Vroege toegang?
 
-Als u geïnteresseerd bent in deelname aan ons programma voor vroege adopters voor innovaties op het gebied van vroege adopters, stuurt u gewoon een e-mail van uw officiële adres naar [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
+Als u in het aansluiten bij ons programma van de Vroege Toegang voor om het even welke innovatie van de Vroege Toegang geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
-## Innovaties voor vroege adoptie
+## Innovaties voor vroege toegang
 
 ### AEM Forms Generative AI (Gen AI)
 
@@ -102,7 +102,7 @@ Door het gegevensoverdrachtproces te stroomlijnen, kan de schakelaar u helpen de
 In wezen helpt AEM Forms naar Marketo Connector u de sterke punten van beide platforms te benutten om een efficiëntere en effectievere marketingtrechter te maken.
 
 
-## Aanvullende innovaties voor vroege adoptie
+## Aanvullende innovaties voor vroege toegang
 
 ### Ondersteuning voor RTL-talen (van rechts naar links)
 
