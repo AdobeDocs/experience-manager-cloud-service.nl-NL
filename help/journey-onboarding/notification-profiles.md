@@ -4,9 +4,9 @@ description: Leer hoe u gebruikersprofielen maakt in de Admin Console voor het b
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,12 @@ Van tijd tot tijd, contacteert de Adobe gebruikers betreffende hun AEM as a Clou
 * **Melding incident** - Deze meldingen worden verzonden tijdens een incident of wanneer de Adobe een potentieel probleem met de beschikbaarheid van uw AEM as a Cloud Service omgeving heeft vastgesteld.
 * **Proactieve kennisgeving** - Deze meldingen worden verzonden wanneer een medewerker van het ondersteuningsteam van de Adobe advies wil geven over een mogelijke optimalisatie of aanbeveling die uw AEM as a Cloud Service omgeving ten goede kan komen.
 
->[!NOTE]
->
->Het toewijzen van groepen aan proactieve meldingen wordt niet ondersteund. In plaats daarvan moet u gebruikers rechtstreeks toewijzen aan de productprofielen.
+Gebruikers kunnen deze meldingen ook ontvangen voor specifieke programma&#39;s op basis van hun [machtigingen voor aangepaste groepen.](/help/implementing/cloud-manager/custom-permissions.md)
+
+Bovendien wordt het toewijzen van groepen aan proactieve meldingen ondersteund en kunnen gebruikers en groepen rechtstreeks aan de productprofielen worden toegewezen.
+
+* Gebruikers in de groepen met incidenten en proactieve meldingen ontvangen standaard meldingen voor alle programma&#39;s.
+* Als gebruikers echter niet alle meldingen willen ontvangen, kunnen ze aangepaste leesmachtigingen gebruiken om op te geven welke programmameldingen ze willen ontvangen.
 
 Voor de correcte gebruikers om deze berichten te ontvangen, moet u gebruikersprofielen vormen en toewijzen zoals die in dit document worden beschreven.
 
@@ -60,7 +63,8 @@ Maak twee gebruikersprofielen om de ontvangst van meldingen correct in te stelle
 
    * **Naam van productprofiel**: `Incident Notification - Cloud Service`
    * **Weergavenaam**: `Incident Notification - Cloud Service`
-   * **Beschrijving**: Cloud Manager-profiel voor gebruikers die meldingen ontvangen tijdens een incident of wanneer de Adobe een potentieel beschikbaarheidsprobleem met uw AEM as a Cloud Service omgeving heeft vastgesteld
+   * **Beschrijving**: Cloud Manager-profiel voor gebruikers die meldingen ontvangen tijdens een incident of wanneer de Adobe een potentieel beschikbaarheidsprobleem heeft vastgesteld met uw AEM as a Cloud Service omgeving.
+      * Gebruikers met aangepaste leesmachtigingen voor specifieke programma&#39;s ontvangen alleen meldingen voor die programma&#39;s als zij aangepaste machtigingen willen gebruiken.
 
 1. Klikken **Opslaan**.
 
@@ -69,6 +73,7 @@ Maak twee gebruikersprofielen om de ontvangst van meldingen correct in te stelle
    * **Naam van productprofiel**: `Proactive Notification - Cloud Service`
    * **Weergavenaam**: `Proactive Notification - Cloud Service`
    * **Beschrijving**: Cloud Manager-profiel voor gebruikers die meldingen ontvangen wanneer een lid van het ondersteuningsteam voor Adoben advies wil geven over een mogelijke optimalisatie of aanbeveling voor de configuratie van uw AEM as a Cloud Service omgeving
+      * Gebruikers met aangepaste leesmachtigingen voor specifieke programma&#39;s ontvangen alleen meldingen voor die programma&#39;s als zij aangepaste machtigingen willen gebruiken.
 
 1. Klikken **Opslaan**.
 
@@ -88,7 +93,7 @@ Nu de profielen zijn gemaakt, moet u de juiste gebruikers toewijzen. Dit kunt u 
 
 Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde id&#39;s nog niet zijn ingesteld.
 
-1. Identificeer de gebruiker(s) die of incident of pro-actieve berichten zou moeten ontvangen.
+1. Identificeer de gebruiker(s) of groep(en) die incidenten of proactieve meldingen moet ontvangen.
 
 1. Aanmelden bij Admin Console bij [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) als u nog niet bent aangemeld.
 
@@ -113,13 +118,15 @@ Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde i
 
 1. Klikken **Opslaan** en er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd.
 
-De uitgenodigde gebruiker zal nu de berichten ontvangen. Herhaal deze stappen voor de gebruikers in uw team die u meldingen wilt ontvangen.
+De uitgenodigde gebruiker zal nu de berichten ontvangen. Gebruikers met aangepaste leesmachtigingen voor specifieke programma&#39;s ontvangen alleen meldingen voor die programma&#39;s als zij aangepaste machtigingen willen gebruiken.
+
+Herhaal deze stappen voor de gebruikers in uw team die u meldingen wilt ontvangen.
 
 ### Bestaande gebruikers toevoegen aan profielen {#existing-user}
 
 Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde id&#39;s al bestaan.
 
-1. Identificeer de gebruiker(s) die of incident of pro-actieve berichten zou moeten ontvangen.
+1. Identificeer de gebruiker(s) of groep(en) die incidenten of proactieve meldingen moet ontvangen.
 
 1. Aanmelden bij Admin Console bij [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) als u nog niet bent aangemeld.
 
@@ -142,7 +149,9 @@ Voer de volgende stappen uit om gebruikers toe te voegen voor wie gefedereerde i
 
 1. Klikken **Opslaan** en er wordt een welkomstbericht verzonden naar de gebruiker die u hebt toegevoegd.
 
-De uitgenodigde gebruiker zal nu de berichten ontvangen. Herhaal deze stappen voor de gebruikers in uw team die u meldingen wilt ontvangen.
+De uitgenodigde gebruiker zal nu de berichten ontvangen. Gebruikers met aangepaste leesmachtigingen voor specifieke programma&#39;s ontvangen alleen meldingen voor die programma&#39;s als zij aangepaste machtigingen willen gebruiken.
+
+Herhaal deze stappen voor de gebruikers in uw team die u meldingen wilt ontvangen.
 
 ## Aanvullende bronnen {#additional-resources}
 
