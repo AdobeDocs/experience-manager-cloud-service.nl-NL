@@ -1,10 +1,9 @@
 ---
 title: Aangepast domein voor publicatielaag configureren
 description: Leer hoe u een aangepast domein configureert voor een publicatielaag in Adobe Cloud Manager.
-role: null
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -12,8 +11,7 @@ ht-degree: 0%
 
 # Aangepast domein voor publicatielaag configureren{#configure-custom-domain}
 
-In Adobe Cloud Manager kunt u uw website opvallen door een aangepast domein toe te voegen. AEM as a Cloud Service wordt geleverd met een standaarddomein, maar u kunt het aanpassen aan uw wensen.
-<!-- For example, AEM sites can use `sites.custom_domain.com`, and the AEM publish domain can be accessed via `assets.custom_domain.com`. Additionally, getting an SSL certificate for assets.pmi.com with a SAN entry for `delivery.custom_domain.com` improves security and trustworthiness. -->
+In Adobe Cloud Manager kunt u uw website opvallen door een aangepast domein toe te voegen. Als AEM as a Cloud Service wordt geleverd met een standaarddomein, kunt u dit naar wens aanpassen.
 
 ## Voordat u begint
 
@@ -28,13 +26,13 @@ Voer de volgende stappen uit om een aangepast domein voor de publicatielijst te 
 
 1. Ga naar **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Program Overview]** > **[!UICONTROL SSL Certificates]**en voeg uw SSL-certificaat toe.
    ![image](/help/assets/assets/ssl-certificate.png)
-Meer informatie over toevoegen [SSL-certificaat](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) in Adobe Cloud Manager.
+Meer informatie over toevoegen [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
 
 1. Voeg een aangepast domein toe nadat u het SSL-certificaat hebt toegevoegd. Klikken **[!UICONTROL Domain Settings]** en geeft u het aangepaste domein op tegen de **[!UICONTROL Publish service]** -optie.
-   <br> Meer informatie over [aangepast domein](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=en).
+Meer informatie over [aangepast domein](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. Voeg 2 CNAME- verslagen in uw DNS verslag toe die aan publicatiedomeinen beantwoorden.
-   <br> DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.
+1. 2 toevoegen [CNAME-records](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) in uw DNS-record die correspondeert met het publiceren van domeinen.
+DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.
 
 1. Logboek een steungeval om de configuratie van het douanedomein te vergemakkelijken, ervoor zorgen dat het aan de leveringsrij richt.
 

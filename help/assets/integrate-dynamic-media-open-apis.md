@@ -2,16 +2,16 @@
 title: AEM Assets integreren met downstreamtoepassingen
 description: AEM Assets integreren met downstreamtoepassingen
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
-# AEM Assets integreren met downstreamtoepassingen {#integrate-new-dynamic-media-apis}
+# AEM Assets integreren met downstreamtoepassingen {#integrate-dynamic-media-open-apis}
 
-Alles [goedgekeurde activa](approved-assets.md) beschikbaar in de gegevensopslagplaats voor Experience Manager-elementen zijn beschikbaar voor levering aan downstreamtoepassingen.
+Alles [goedgekeurde activa](approve-assets.md) beschikbaar in de gegevensopslagplaats voor Experience Manager-elementen zijn beschikbaar voor levering aan downstreamtoepassingen.
 
 U kunt uw eigen aangepaste gebruikersinterface integreren met de Experience Manager Assets-opslagplaats met de zoek- en leverings-API&#39;s of de Micro-Frontend Asset Selector van de Adobe gebruiken.
 

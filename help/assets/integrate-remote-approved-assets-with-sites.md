@@ -1,10 +1,9 @@
 ---
 title: AEM Assets op afstand integreren met AEM Sites
 description: Leer hoe u AEM sites kunt configureren en verbinden met Approved AEM Assets in Creative Cloud.
-role: null
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -12,19 +11,19 @@ ht-degree: 0%
 
 # AEM Assets op afstand integreren met AEM Sites  {#integrate-approved-assets}
 
-Het effectief beheren van digitale middelen is van cruciaal belang voor het aanbieden van aantrekkelijke en consistente merkervaringen op verschillende online platforms. Dynamic Media met OpenAPI-mogelijkheden verbetert het beheer van digitale middelen door naadloze integratie tussen AEM Sites en externe AEM Assets mogelijk te maken. Met deze vernieuwende functie kunt u eenvoudig verschillende typen goedgekeurde digitale elementen delen en beheren in meerdere AEM omgevingen, waardoor workflows voor siteauteurs en inhoudseditors worden gestroomlijnd.
+Het effectief beheren van digitale middelen is van cruciaal belang voor het aanbieden van aantrekkelijke en consistente merkervaringen op verschillende online platforms. Dynamic Media met OpenAPI-mogelijkheden verbetert het beheer van digitale middelen door naadloze integratie tussen AEM Sites en AEM Assets as a Cloud Service mogelijk te maken. Met deze vernieuwende functie kunt u eenvoudig verschillende typen goedgekeurde digitale elementen delen en beheren in meerdere AEM omgevingen, waardoor workflows voor siteauteurs en inhoudseditors worden gestroomlijnd.
 
 Met Dynamic Media met OpenAPI-mogelijkheden kunnen siteauteurs middelen van externe DAM direct gebruiken in de AEM Page Editor en [Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html), het vereenvoudigen van processen voor het maken en beheren van inhoud.
 
-Gebruikers kunnen meerdere AEM Sites-instanties, zonder beperkingen op het maximumaantal, verbinden met een externe DAM-implementatie, wat een opmerkelijk voordeel is ten opzichte van de [Verbonden elementen](use-assets-across-connected-assets-instances.md) gebruiken.
+Gebruikers kunnen meerdere AEM Sites-instanties, zonder beperkingen op het maximumaantal, verbinden met een externe DAM-implementatie, wat een opmerkelijk voordeel is ten opzichte van de [Verbonden Assets](use-assets-across-connected-assets-instances.md) gebruiken.
 
 ![afbeelding](/help/assets/assets/connected-assets-rdam.png)
 
 Na de eerste installatie kunnen gebruikers pagina&#39;s op het AEM Sites-exemplaar maken en zo nodig elementen toevoegen. Bij het toevoegen van elementen kunnen ze elementen selecteren die zijn opgeslagen in hun lokale DAM of door de middelen bladeren en gebruiken die beschikbaar zijn in de externe DAM.
 
-Dynamic Media met OpenAPI-mogelijkheden biedt verschillende andere voordelen, zoals toegang tot en gebruik van externe middelen in Content Fragment, het ophalen van metagegevens van de externe middelen en nog veel meer. Meer weten over de andere [voordelen van Dynamic Media met OpenAPI-mogelijkheden via Connected Assets](/help/assets/new-dynamic-media-apis-faqs.md).
+Dynamic Media met OpenAPI-mogelijkheden biedt verschillende andere voordelen, zoals toegang tot en gebruik van externe middelen in Content Fragment, het ophalen van metagegevens van de externe middelen en nog veel meer. Meer weten over de andere [voordelen van Dynamic Media met OpenAPI-mogelijkheden via Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md).
 
-## Voordat u begint
+## Voordat u begint {#pre-requisits-sites-integration}
 
 * Het volgende instellen [omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md#add-variables) voor AEM as a Cloud Service:
 
@@ -41,7 +40,7 @@ Dynamic Media met OpenAPI-mogelijkheden biedt verschillende andere voordelen, zo
    1. Voeg de **[!UICONTROL repositoryID]**= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; en **[!UICONTROL imsClient]**= [IMSClientId]
 Meer informatie over [IMS-verificatie](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
 
-* IMS-toegang tot aanmelden bij externe DAM AEM as a Cloud Service instantie.
+* IMS-toegang om u aan te melden bij een externe DAM AEM as a Cloud Service-instantie.
 
 * Schakel de schakeloptie Dynamic Media met OpenAPI-mogelijkheden in op de externe DAM.
 
@@ -53,7 +52,7 @@ Met Dynamic Media met OpenAPI-mogelijkheden hebt u toegang tot middelen die besc
 
 ![afbeelding](/help/assets/assets/open-APIs.png)
 
-### Externe elementen openen in AEM paginaeditor
+### Externe elementen openen in AEM paginaeditor {#access-assets-page-editor}
 
 Voer de onderstaande stappen uit om externe middelen te gebruiken in AEM Pagina-editor voor uw AEM Sites-exemplaar. U kunt deze integratie doen in AEM as a Cloud Service en AEM 6.5.
 
@@ -71,13 +70,15 @@ Voer de onderstaande stappen uit om externe middelen te gebruiken in AEM Pagina-
 1. Een alternatieve tekst toevoegen en klikken **[!UICONTROL Done]**.
    <br> Het externe element wordt weergegeven in de afbeeldingscomponent. U kunt ook de URL van levering van het element controleren wanneer het op de pagina wordt geladen of via het tabblad Voorbeeld. De leverings-URL geeft aan dat het element op afstand wordt benaderd.
 
+U hebt alleen toegang tot externe middelen in AEM pagina-editor voor Image Core Component v3 en Teaser Core Component v2. Voor andere componenten, waaronder aangepaste componenten, zijn aanpassingen vereist om Asset Selector met deze componenten te integreren.
+
 #### Video: Externe elementen openen in AEM Pagina-editor
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427666)
 
-### Externe elementen openen in AEM inhoudsfragment
+### Externe elementen openen in AEM inhoudsfragment {#access-assets-content-fragment}
 
-Voer de onderstaande stappen uit om Externe elementen te gebruiken in AEM inhoudsfragment op uw AEM Sites-exemplaar. U kunt deze integratie uitvoeren in AEM 6.5 en niet op AEM as a Cloud Service.
+Voer de onderstaande stappen uit om Externe elementen te gebruiken in AEM inhoudsfragment op uw AEM Sites-exemplaar. U kunt deze integratie uitvoeren in AEM 6.5 en niet in AEM as a Cloud Service.
 
 1. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Selecteer een elementmap waarin het inhoudsfragment zich bevindt.
@@ -99,3 +100,7 @@ U wordt gevraagd u aan te melden.
 #### Video: Externe elementen benaderen in AEM inhoudsfragment
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427667)
+
+### Externe middelen openen in Edge Delivery Services {#access-assets-eds}
+
+U kunt externe elementen ook benaderen in Edge Delivery Services. Zie voor meer informatie [Elementen van Assets as a Cloud Service gebruiken die met Dynamic Media zijn geleverd met OpenAPI-mogelijkheden](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi).

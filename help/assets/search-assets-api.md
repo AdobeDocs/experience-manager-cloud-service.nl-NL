@@ -1,23 +1,23 @@
 ---
-title: API voor zoekmiddelen
-description: Leer hoe u de API voor zoekmiddelen gebruikt.
+title: Zoeken in Assets API
+description: Leer hoe u de zoek-Assets API gebruikt.
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# API voor zoekmiddelen {#search-assets-api}
+# Zoeken in Assets API {#search-assets-api}
 
-Alles [goedgekeurde activa](approved-assets.md) beschikbaar in de gegevensopslagplaats van de Experience Manager kan worden gezocht en dan aan geïntegreerde stroomafwaartse toepassingen worden geleverd gebruikend een Levering URL.
+Alles [goedgekeurde activa](approve-assets.md) beschikbaar in de gegevensopslagplaats van de Experience Manager kan worden gezocht en dan aan geïntegreerde stroomafwaartse toepassingen worden geleverd gebruikend een Levering URL.
 
 Het zoeken naar de juiste goedgekeurde middelen van de opslagplaats van de Experience Manager is de eerste stap naar het leveren van middelen met behulp van de leverings-URL. Het antwoord op het zoekverzoek bestaat uit een array van JSON-documenten die overeenkomen met de elementen die aan de zoekcriteria voldoen. Elk JSON-document wordt geïdentificeerd met behulp van een `id` veld, dat wordt gebruikt om de aanvraag voor levering van het element samen te stellen.
 
 ![Overzicht van het directe binaire upload protocol](assets/search-assets-api-overview.png)
 
-U kunt eigenschappen definiëren in de API-aanvraag voor zoekmiddelen om de volgende mogelijkheden in te schakelen:
+U kunt eigenschappen definiëren in de aanvraag Zoeken in Assets API om de volgende mogelijkheden in te schakelen:
 
 * **Volledige tekst zoeken**: Gebruik de `match` query om de tekst te definiëren waarnaar moet worden gezocht.  U kunt ook operatoren gebruiken in het dialoogvenster `match` vraag om de resultaten te filtreren.
 
@@ -42,7 +42,7 @@ Het leveringsdomein is gelijkaardig in structuur aan het domein van de de auteur
 
 POST
 
-## API-koptekst voor zoekmiddelen {#search-assets-api-header}
+## Zoeken in Assets API-header {#search-assets-api-header}
 
 U moet de volgende gegevens opgeven wanneer u een header definieert in de API voor zoekmiddelen:
 
@@ -55,7 +55,7 @@ headers: {
     },
 ```
 
-Om de zoek-API aan te roepen, is een IMS-token vereist voor het definiëren van de functie `Authorization` details. De token IMS wordt opgehaald van een technische account. Zie [De AEM as a Cloud Service referenties ophalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) om een nieuwe technische rekening op te stellen. Zie [Het toegangstoken genereren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) om de IMS-token te genereren en deze op de juiste wijze te gebruiken in de aanvraagheader van de API voor zoekmiddelen.
+Om de zoek-API aan te roepen, is een IMS-token vereist voor het definiëren van de functie `Authorization` details. De token IMS wordt opgehaald van een technische account. Zie [Credentials van AEM as a Cloud Service ophalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) om een nieuwe technische rekening op te stellen. Zie [Het toegangstoken genereren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) om de IMS-token te genereren en deze op de juiste wijze te gebruiken in de aanvraagheader van de API voor zoekmiddelen.
 
-Als u aanvraagvoorbeelden, responsvoorbeelden en responscodes wilt weergeven, raadpleegt u [API voor zoekmiddelen](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
+Als u aanvraagvoorbeelden, responsvoorbeelden en responscodes wilt weergeven, raadpleegt u [Zoeken in Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
 

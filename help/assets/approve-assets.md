@@ -2,9 +2,9 @@
 title: Elementen in Experience Manager goedkeuren
 description: Leer hoe u middelen kunt goedkeuren in [!DNL Experience Manager].
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,18 @@ U kunt in AEM Assets middelen goedkeuren om het beheer van bedrijfsmiddelen te s
 
 ## Voordat u begint {#pre-requisites}
 
-U moet toegang hebben tot as a Cloud Service AEM Assets en machtigingen om de **[!UICONTROL Review Status]** eigenschap voor een element.
+U moet toegang hebben tot AEM Assets as a Cloud Service en machtigingen om de **[!UICONTROL Review Status]** eigenschap voor een element.
 
 ## Configuratie
 
-U moet een eenmalige update uitvoeren naar het toepasselijke metagegevensschema in het dialoogvenster [!DNL Experience Manager] voordat u een element kunt goedkeuren. U kunt deze configuratie overslaan voor [!DNL Experience Manager Assets]. Voer de volgende stappen uit om het metagegevensschema te configureren:
+Voordat u een element kunt goedkeuren, moet u het toepasselijke metagegevensschema in de beheerweergave eenmalig bijwerken. U kunt deze configuratie voor de weergave Assets overslaan. Voer de volgende stappen uit om het metagegevensschema te configureren:
 
 1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. Selecteer het toepasselijke metagegevensschema en klik op **[!UICONTROL Edit]**. <br>De **[!UICONTROL Metadata Schema Form Editor]** wordt geopend met de **[!UICONTROL Basic]** gemarkeerd.
 1. Omlaag schuiven en klikken **[!UICONTROL Review Status]**.
 1. Klik op de knop **[!UICONTROL Rules]** aan de rechterkant van het deelvenster.
 1. Uitschakelen **[!UICONTROL Disable edit]** en klik op **[!UICONTROL Save]**.
+Als u het bezit moet bekijken dat **[!UICONTROL Review Status]** veld is toegewezen aan, navigeer naar **[!UICONTROL Settings]** en bekijk de `./jcr:content/metadata/dam:status` waarde in de **[!UICONTROL Map to property]** veld.
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ U kunt elementen goedkeuren in beide [!DNL Experience Manager] en [!DNL Experien
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   Op dezelfde manier kunt u elementen goedkeuren met de opdracht [nieuwe middelenweergave](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en#manage-asset-status).
+   Op dezelfde manier kunt u elementen goedkeuren met de opdracht [nieuwe Assets-weergave](/help/assets/manage-organize-assets-view.md).
 
 ## Elementen in bulk goedkeuren {#bulk-approve-assets}
 
@@ -59,7 +60,7 @@ Stroomlijn uw workflow door snel meerdere middelen tegelijk goed te keuren. U ku
 1. Selecteer het nieuwe metagegevensprofiel en klik op **[!UICONTROL Edit _e)_]**. <br>De **[!UICONTROL Edit Metadata Profile]** formulier wordt geopend met de **[!UICONTROL Basic]** gemarkeerd.
 1. Sleep een **[!UICONTROL Single Line Text Field]** van de **[!UICONTROL Build Form]** in de rechterkant van de sectie Metagegevens in het formulier.
 1. Klik op het veld dat u zojuist hebt toegevoegd en voer de volgende updates uit in het dialoogvenster **[!UICONTROL Settings]** paneel:
-   1. Wijzig de **[!UICONTROL Field Label]** tot _Goedgekeurde activa_.
+   1. Wijzig de **[!UICONTROL Field Label]** tot _Goedgekeurde Assets_.
    1. Werk de **[!UICONTROL Map to property]** tot _./jcr:content/metadata/dam:status_.
    1. De standaardwaarde wijzigen in _goedgekeurd_.
 
@@ -74,3 +75,31 @@ Stroomlijn uw workflow door snel meerdere middelen tegelijk goed te keuren. U ku
 >[!NOTE]
 > 
 >Met deze methode worden de nieuwe elementen in de map goedgekeurd. Voor bestaande elementen in de map moet u deze handmatig selecteren en goedkeuren. <br> U kunt ook de opdracht **[!UICONTROL Reprocess]** om de wijzigingen van het metagegevensprofiel toe te passen op oudere elementen.
+
+En als u een grote hoeveelheid gegevens in een map in de Assets-weergave wilt selecteren, gaat u als volgt te werk:
+
+1. Selecteer de elementen en klik op **[!UICONTROL Bulk Metadata Edit]**.
+
+1. Selecteren **[!UICONTROL Approved]** in de **[!UICONTROL Status]** veld beschikbaar in [!UICONTROL Properties] in het rechterdeelvenster.
+
+1. Klik op **[!UICONTROL Save]**.
+
+## Leverings-URL kopiëren voor goedgekeurde elementen {#copy-delivery-url-approved-assets}
+
+De leverings-URL voor alle goedgekeurde middelen in de opslagplaats is beschikbaar als u [!UICONTROL Dynamic Media with OpenAPI capabilities] ingeschakeld op uw AEM as a Cloud Service-exemplaar.
+
+Om levering URL voor een goedgekeurd middel binnen de bewaarplaats te kopiëren:
+
+1. Selecteer het element en klik op **[!UICONTROL Details]**.
+
+1. Klik op het pictogram Uitvoeringen in het rechterdeelvenster.
+
+1. Selecteren **[!UICONTROL Dynamic Media with OpenAPI]** beschikbaar in het **[!UICONTROL Dynamic]** sectie.
+
+1. Klikken **[!UICONTROL Copy URL]** om de leverings-URL van het element te kopiëren.
+   ![leverings-URL kopiëren](/help/assets/assets/copy-delivery-url.png)
+
+   >[!NOTE]
+   >
+   >De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
+
