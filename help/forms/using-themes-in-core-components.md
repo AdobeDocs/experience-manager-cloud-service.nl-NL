@@ -4,7 +4,8 @@ description: Met thema's kunt u een adaptief formulier vormgeven en een visuele 
 keywords: Aangepaste formulieren met stijl Core Components. thema gebruiken in Core Components, aanpassen van vorm opmaken en thema's aanpassen
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2833'
 ht-degree: 0%
@@ -33,7 +34,7 @@ Forms as Cloud Service biedt de onderstaande thema&#39;s voor op Core Components
 
 ## Werken met de structuur van de thema&#39;s
 
-Een thema is een pakket met opmaakcomponenten zoals CSS-bestand, JavaScript-bestanden en bronnen (zoals pictogrammen) die de stijl van uw Adaptieve Forms definiëren. Het thema Adaptief formulier volgt op een specifieke organisatie, die bestaat uit de volgende onderdelen:
+Een thema is een pakket met opmaakcomponenten zoals CSS-bestanden, JavaScript-bestanden en bronnen (zoals pictogrammen) die de stijl van uw Adaptieve Forms definiëren. Het thema Adaptief formulier volgt op een specifieke organisatie, die bestaat uit de volgende onderdelen:
 
 * `src/theme.scss`: Deze map bevat het CSS-bestand dat een grote invloed heeft op het hele thema. Het fungeert als een gecentraliseerde locatie voor het definiëren en beheren van de opmaak en het gedrag van uw thema. Door dit bestand te bewerken, kunt u wijzigingen aanbrengen die overal in het thema worden toegepast. Zo kunt u de vormgeving en functionaliteit van zowel de adaptieve Forms- als AEM Sites-pagina&#39;s wijzigen.
 
@@ -63,7 +64,7 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen, opmaken e
 
 ### Vereisten {#prerequisites-to-customize}
 
-* Verken uzelf met [een pijplijn instellen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) en het hebben van basiskennis van hoe te opstelling helpt een pijpleiding u efficiënt beheren en uw themaaanpassingen opstellen.
+* Verken uzelf met [Oprichting van een pijpleiding in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) en het hebben van basiskennis van hoe te opstelling helpt een pijpleiding u efficiënt beheren en uw themaaanpassingen opstellen.
 * Leer hoe u [een gebruiker configureren met de rol van contribuant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Begrijpen hoe te om een gebruiker met de bijdragerrol te vormen laat u de noodzakelijke toestemmingen voor themaaanpassing verlenen.
 * Installeer de nieuwste versie van [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is een tool voor automatisering van build die veel wordt gebruikt voor Java™-projecten. De installatie van de recentste versie verzekert u de noodzakelijke gebiedsdelen voor themaaanpassing.
 * Installeer een teksteditor zonder opmaak. Bijvoorbeeld Microsoft® Visual Studio Code. Het gebruiken van een gewone tekstredacteur zoals de Code van Microsoft® Visual Studio verstrekt een gebruikersvriendelijk milieu voor het uitgeven en het wijzigen van themadossiers.
@@ -275,7 +276,7 @@ Als u een thema aanpast, kunt u het aangepaste ontwerp gebruiken om de op Core C
 
 ###### Het thema testen voor formulieren die worden gehost in een Cloud Service-omgeving
 
-U kunt ook het thema testen voor het adaptieve formulier dat wordt gehost op uw as a Cloud Service AEM Forms-exemplaar. Voer de volgende stappen uit om de lokale omgeving voor het testen van de thema&#39;s te configureren en in te stellen met de Adaptive Forms die wordt gehost op de cloudinstantie:
+U kunt ook het thema testen voor het adaptieve formulier dat wordt gehost op uw AEM Forms as a Cloud Service-exemplaar. Voer de volgende stappen uit om de lokale omgeving voor het testen van de thema&#39;s te configureren en in te stellen met de Adaptive Forms die wordt gehost op de cloudinstantie:
 
 1. Open de themamap in uw winde. Open bijvoorbeeld de `aem-forms-theme-canvas` omslag in de redacteur van de Code van Visual Studio.
 1. De naam van de `env_template` bestand naar `.env` en voeg de volgende parameters toe:
@@ -375,7 +376,7 @@ Breng nu de wijzigingen aan in de themaopslagplaats van uw AEM Forms-Cloud Servi
 
 Het thema wordt opgesteld gebruikend [pijpleiding aan de voorzijde.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Voer de volgende stappen uit om thema te implementeren:
 
-1. Meld u aan bij de AEM Cloud Manager-opslagplaats.
+1. Meld u aan bij uw AEM Cloud Manager-opslagplaats.
 1. Klik op de knop **[!UICONTROL Add]** van de knop **[!UICONTROL Pipelines]** sectie.
 1. Selecteren **[!UICONTROL Add Non-Production Pipeline]** of **[!UICONTROL Add Production Pipeline]** op basis van de omgeving van de Cloud Service. Hier kunt u bijvoorbeeld de **[!UICONTROL Add Production Pipeline]** is geselecteerd.
 1. In de **[!UICONTROL Add Production Pipeline]** als onderdeel van de **[!UICONTROL Configuration]** de stappen, specificeren de naam voor uw pijpleiding. De naam van de pijplijn is bijvoorbeeld `customcanvastheme`.
@@ -409,7 +410,7 @@ De stappen voor het toepassen van een thema op een adaptief formulier zijn:
 
 1. Klikken **Maken** > **Adaptieve Forms**. De wizard voor het maken van adaptief formulier wordt geopend.
 
-1. Selecteer de sjabloon voor de kerncomponent in het dialoogvenster **Bron** tab.
+1. Selecteer de sjabloon voor de kerncomponent in het dialoogvenster **Source** tab.
 1. Selecteer het thema in het dialoogvenster **Stijl** tab.
 1. Klikken **Maken**.
 
@@ -462,4 +463,4 @@ Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals e
 * [Document met record genereren voor adaptieve Forms (kerncomponenten)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Een adaptieve Forms maken met herhalende secties](/help/forms/create-forms-repeatable-sections.md)
 * [Voorbeeldthemasjablonen en formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-* [Adaptieve Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
+* [Aangepaste Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)

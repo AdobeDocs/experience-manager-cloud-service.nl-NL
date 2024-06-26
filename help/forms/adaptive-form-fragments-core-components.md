@@ -5,7 +5,8 @@ topic-tags: author
 keywords: Adaptieve formulierfragmenten toevoegen, Adaptieve formulierfragmenten maken, een formulierfragment maken, een fragment toevoegen aan een adaptief formulier, Fragmenten beheren
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 0%
@@ -17,8 +18,8 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (kerncomponenten) | Dit artikel |
-| AEM as a Cloud Service (stichtingscomponenten) | [Klik hier](/help/forms/adaptive-form-fragments.md) |
+| AEM as a Cloud Service (Core Components) | Dit artikel |
+| AEM as a Cloud Service (Foundation Components) | [Klik hier](/help/forms/adaptive-form-fragments.md) |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Hoewel elk formulier voor een bepaald doel is ontworpen, zijn er in de meeste vormen enkele gangbare segmenten, zoals het verstrekken van persoonlijke gegevens zoals naam en adres, familiedetails en inkomstengegevens. Formulierontwikkelaars moeten deze algemene segmenten telkens maken wanneer een nieuw formulier wordt gemaakt.
@@ -163,7 +164,7 @@ U kunt verschillende bewerkingen uitvoeren op Adaptief-formulierfragmenten met d
    <td><p>Genereert een woordenboek voor het lokaliseren van het geselecteerde fragment. Zie voor meer informatie <a>Adaptieve Forms lokaliseren</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Publiceren/Publiceren ongedaan maken</p> </td>
+   <td><p>Publish / Unpublish</p> </td>
    <td><p>Hiermee publiceert u het geselecteerde fragment of maakt u de publicatie ervan ongedaan.<br /> <br /> </p> </td>
   </tr>
   <tr>

@@ -2,10 +2,10 @@
 title: Hoe maakt u een aangepaste verzendactie voor een adaptief formulier?
 description: Leer hoe te om een douane te creëren legt Actie voor een Aangepast Forms voor om voorlegging en procesgegevens uit te stellen alvorens het aan een rusteindpunt voor te leggen, sparen aan een gegevensopslag, en andere douanefuncties uit te voeren.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 0%
@@ -108,7 +108,7 @@ Een handeling Verzenden is een sling:map die het volgende bevat:
 
 ## Een aangepaste verzendhandeling maken {#creating-a-custom-submit-action}
 
-Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de afgekeurde (OOTB) Action Store-inhoud die de gegevens in de CRX-opslagplaats opslaat. Daarnaast biedt AEM een [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API die kan worden gebruikt om e-mails te verzenden. Voordat u de e-mail-API gebruikt, configureert u de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagruimte.
+Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de afgekeurde OOTB-code voor het verzenden van Action Store-inhoud die de gegevens opslaat in de CRX-opslagplaats. Daarnaast biedt AEM een [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API die kan worden gebruikt om e-mails te verzenden. Voordat u de e-mail-API gebruikt, configureert u de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagplaats.
 
 1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Maak een knooppunt met de eigenschap sling:Folder en name store_and_mail in de map /apps/custom_submit_action. Maak de map custom_submit_action als deze nog niet bestaat.
 

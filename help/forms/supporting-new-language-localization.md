@@ -3,7 +3,8 @@ title: Hoe voeg ik steun voor nieuwe scènes aan een Aangepast Vorm toe dat op d
 description: Voor Adaptief Forms kunt u naast de landinstellingen uit het tekstvak ook landinstellingen voor meer talen toevoegen.
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 0%
@@ -29,7 +30,7 @@ De lokalisatie van adaptieve formulieren is afhankelijk van twee typen taalwoord
 
 * **Formulierspecifiek woordenboek** Bevat tekenreeksen die in adaptieve formulieren worden gebruikt. Bijvoorbeeld labels, veldnamen, foutberichten en Help-beschrijvingen. Het wordt beheerd als een set XLIFF-bestanden voor elke landinstelling en u kunt het bestand openen op `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
-* **Algemene woordenboeken** Er zijn twee algemene woordenboeken, beheerd als JSON-objecten, in de AEM clientbibliotheek. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken op `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling in cache te houden en het gebruik van netwerkbandbreedte verminderen wanneer ze verschillende adaptieve formulieren op dezelfde server gebruiken.
+* **Algemene woordenboeken** Er zijn twee algemene woordenboeken, beheerd als JSON-objecten, in de AEM clientbibliotheek. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken op `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling in cache te houden en het gebruik van de netwerkbandbreedte verminderen wanneer ze verschillende adaptieve formulieren op dezelfde server gebruiken.
 
 ## Ondersteuning voor nieuwe landinstellingen toevoegen {#add-support-for-new-locales}
 

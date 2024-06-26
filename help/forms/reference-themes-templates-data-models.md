@@ -3,7 +3,8 @@ title: Hoe krijg je referentiethema's en sjablonen voor AEM formulieren?
 description: AEM Forms biedt voorbeelden van adaptieve formulierthema's, sjablonen en formuliergegevensmodellen om u te helpen snel formulieren te maken.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%

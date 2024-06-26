@@ -4,7 +4,8 @@ description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een h
 keywords: hoe u verzendactie voor een adaptief formulier selecteert, een adaptief formulier koppelt aan een SharePoint-lijst, een adaptief formulier aansluit op een SharePoint-documentbibliotheek, een adaptief formulier aansluit op het formuliergegevensmodel (FDM)
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 520d07cbb4566f9d39a95ac890a9cd572114d710
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -22,7 +23,7 @@ ht-degree: 0%
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Forms as a Cloud Service, voor Adaptive Forms op basis van Core Components, biedt een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
+Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Forms as a Cloud Service biedt voor Adaptive Forms op basis van Core Components een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
 
 * U kunt formuliergegevens eenvoudig verzenden via e-mail.
 * Start Microsoft® Power Automate-stromen of AEM Workflows tijdens het verzenden van de gegevens.
@@ -210,7 +211,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 ## Foutafhandeling bij verzenden van handeling {#error-handling-on-submit-action}
 
-Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 400.jsp, 404.jsp, en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 400, 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht. U kunt ook JSP-pagina&#39;s maken voor andere HTTP-foutcodes.
+Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 400.jsp, 404.jsp, en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 400, 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de knoop van Publish worden teweeggebracht. U kunt ook JSP-pagina&#39;s maken voor andere HTTP-foutcodes.
 
 Wanneer u een model van vormgegevens (FDM), of schema gebaseerde Aangepaste Vorm met XML of JSON gegevensklacht aan een schema vooraf instelt dat geen gegevens bevat `<afData>`, `<afBoundData>`, en `</afUnboundData>` -tags, gaan de gegevens van niet-begrensde velden van het adaptieve formulier verloren. Het schema kan een XML-schema, JSON-schema of een formuliergegevensmodel (FDM) zijn. Niet-begrensde velden zijn adaptieve formuliervelden zonder de `bindref` eigenschap.
 

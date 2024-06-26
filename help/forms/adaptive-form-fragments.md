@@ -8,7 +8,8 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 0%
@@ -20,8 +21,8 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (stichtingscomponenten) | Dit artikel |
-| AEM as a Cloud Service (kerncomponenten) | [Klik hier](/help/forms/adaptive-form-fragments-core-components.md) |
+| AEM as a Cloud Service (Foundation Components) | Dit artikel |
+| AEM as a Cloud Service (Core Components) | [Klik hier](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
 
 Hoewel elk formulier is ontworpen voor een specifiek doel, zijn er in de meeste vormen enkele algemene segmenten, zoals het verstrekken van persoonlijke gegevens zoals naam en adres, familiegegevens, inkomensgegevens, enzovoort. Formulierontwikkelaars moeten deze gemeenschappelijke segmenten telkens maken wanneer een nieuw formulier wordt gemaakt. Adaptieve formulieren biedt een handig mechanisme om formuliersegmenten zoals een deelvenster of een groep velden slechts eenmaal te maken en deze opnieuw te gebruiken in verschillende adaptieve formulieren. Deze herbruikbare en zelfstandige segmenten worden Adaptieve formulierfragmenten genoemd.
@@ -137,7 +138,7 @@ Voer de volgende stappen uit om volledige fragmenten in formulieren weer te geve
 De adaptieve formulierfragmenten die u maakt, worden weergegeven op het tabblad Adaptieve formulierfragmenten van de zoeker AEM inhoud. Een adaptief formulierfragment invoegen in een adaptief formulier:
 
 1. Open het adaptieve formulier in de bewerkingsmodus waarin u een adaptief formulierfragment wilt invoegen.
-1. Klikken **Activa** ![assets-browser](assets/assets-browser.png) in de zijbalk. Selecteer in de middelenbrowser de optie **Adaptieve formulierfragmenten** in de vervolgkeuzelijst.
+1. Klikken **Assets** ![assets-browser](assets/assets-browser.png) in de zijbalk. Selecteer in de middelenbrowser de optie **Adaptieve formulierfragmenten** in de vervolgkeuzelijst.
 
    U kunt er ook voor kiezen om alle adaptieve formulierfragmenten of filters weer te geven op basis van het formuliermodel (Formuliersjabloon, XML-schema of Standaard).
 
@@ -230,7 +231,7 @@ U kunt verschillende bewerkingen uitvoeren op adaptieve formulierfragmenten met 
    <td><p>Genereert een woordenboek voor het lokaliseren van het geselecteerde fragment. <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
   </tr>
   <tr>
-   <td><p>Publiceren/Publiceren ongedaan maken</p> </td>
+   <td><p>Publish / Unpublish</p> </td>
    <td><p>Hiermee publiceert u het geselecteerde fragment of maakt u de publicatie ervan ongedaan.<br /> <br /> </p> </td>
   </tr>
   <tr>

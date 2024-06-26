@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2453'
 ht-degree: 0%
@@ -75,7 +76,7 @@ Met de zijbalk kunt u
 
 ![Zijbalk](assets/sidebar-comps.png)
 
-**A.** Inhoudsbrowser **B.** Eigenschappenbrowser **C.** Bandenbrowser **D.** Browser voor componenten
+**A.** Inhoudsbrowser **B.** Eigenschappenbrowser **C.** Assets-browser **D.** Browser voor componenten
 
 <!--Click to enlarge
 
@@ -99,7 +100,7 @@ Hiermee kunt u formuliermodelelementen naar het adaptieve formulier slepen en ne
 
   Selecteer een component en selecteer vervolgens ![op veldniveau](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Adaptive Form Container]** en selecteer vervolgens ![eigenschappen](assets/Smock_Wrench_18_N.svg).
 
-* **Bandenbrowser**
+* **Assets-browser**
 
   Hiermee kunt u verschillende typen inhoud segmenteren, zoals afbeeldingen, documenten, pagina&#39;s, films, enzovoort.
 

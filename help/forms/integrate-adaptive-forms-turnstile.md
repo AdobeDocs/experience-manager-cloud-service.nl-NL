@@ -5,7 +5,9 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
@@ -34,8 +36,8 @@ Om Turnstile voor de Componenten van de Kern van AEM Forms te vormen, moet u ver
 
 ### Stappen voor het configureren van Turnstile voor AEM Forms{#steps-to-configure-turnstile}
 
-1. Maak een configuratiecontainer in de as a Cloud Service AEM Forms-omgeving. Een configuratiecontainer bevat Cloud Configurations die worden gebruikt om AEM te verbinden met externe services. Om een Container van de Configuratie te creëren en te vormen om uw milieu van AEM Forms met Turnstile te verbinden:
-   1. Open uw as a Cloud Service AEM Forms-exemplaar.
+1. Maak een configuratiecontainer op uw AEM Forms as a Cloud Service omgeving. Een configuratiecontainer bevat Cloud Configurations die worden gebruikt om AEM te verbinden met externe services. Om een Container van de Configuratie te creëren en te vormen om uw milieu van AEM Forms met Turnstile te verbinden:
+   1. Open je AEM Forms as a Cloud Service exemplaar.
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]**.
    1. In Browser van de Configuratie, kunt u een bestaande omslag selecteren of een omslag creëren. U kunt een map maken en de optie Cloud Configurations hiervoor inschakelen of de optie Cloud Configurations inschakelen voor een bestaande map:
 
@@ -64,7 +66,7 @@ Zodra de Turnstile Captcha dienst wordt gevormd, is het beschikbaar voor gebruik
 
 ## Draaien in een adaptieve vorm gebruiken{#using-turnstile-foundation-components}
 
-1. Open uw as a Cloud Service AEM Forms-exemplaar.
+1. Open je AEM Forms as a Cloud Service exemplaar.
 1. Ga naar **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]**.
 1. Selecteer een adaptief formulier en selecteer **[!UICONTROL Properties]**. Voor de **[!UICONTROL Configuration Container]** Selecteer de configuratiecontainer die de Cloud Configuration bevat die AEM Forms met Turnstile verbindt, en selecteer **[!UICONTROL Save & Close]**.
 

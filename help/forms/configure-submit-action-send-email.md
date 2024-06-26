@@ -3,13 +3,15 @@ Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: hoe u een e-mail verzendt voor een formulier, een handeling voor e-mail verzenden, een adaptief formulier per e-mail, een formulierverzending per e-mail, een verzendgids
 feature: Adaptive Forms, Core Components
-source-git-commit: f1db04e6cd1f78c1530aefd29f5f036ca5e70873
+exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
+title: "Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
-
 
 # De handeling E-mail verzenden voor een adaptief formulier configureren
 
@@ -63,11 +65,9 @@ De handeling verzenden configureren:
 
 * Het wordt aanbevolen de e-mailinhoud duidelijk en beknopt te houden. Gebruikers dienen inzicht te hebben in het doel van de e-mail en in de acties die ze moeten ondernemen.
 * Het wordt aanbevolen dat alle formuliervelden unieke elementnamen hebben, zelfs als ze op verschillende deelvensters in een adaptief formulier zijn geplaatst.
-* Wanneer u AEM as a Cloud Service gebruikt, is codering vereist voor uitgaande e-mail. Standaard is de functie voor uitgaande e-mail uitgeschakeld. Als u het wilt activeren, verzendt u een ondersteuningsticket naar [verzoek om toegang](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+* Bij gebruik van AEM as a Cloud Service is codering vereist voor uitgaande e-mail. Standaard is de functie voor uitgaande e-mail uitgeschakeld. Als u het wilt activeren, verzendt u een ondersteuningsticket naar [verzoek om toegang](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 
 ## Verwante artikelen
 
 {{af-submit-action}}
-
-

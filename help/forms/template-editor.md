@@ -3,7 +3,8 @@ title: Hoe kunnen we een adaptieve formuliersjabloon maken?
 description: Maak adaptieve formuliersjablonen om de basisstructuur en eerste inhoud te definiëren met de Sjablooneditor.
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1994'
 ht-degree: 0%
@@ -59,7 +60,7 @@ Bevat de volgende opties:
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **Modus selecteren:** Hiermee kunt u de modus wijzigen. U kunt **[!UICONTROL Structure]** modus, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** -modus. In de structuurmodus kunt u de kop- en voettekst toevoegen en aanpassen. In de modus Initiële inhoud kunt u de inhoud van het formulier aanpassen.
    * **Voorvertoning:** Hiermee kunt u een voorvertoning weergeven van het uiterlijk van de sjabloon wanneer u de sjabloon publiceert. U kunt Laagkiezer en Voorvertoning gebruiken om de bewerkings- en voorvertoningsmodi in en uit te schakelen.
-* **Zijbalk:** Verstrekt de Inhoud, Eigenschappen, Activa, en de browsers van Componenten.
+* **Zijbalk:** Verstrekt de Inhoud, Eigenschappen, Assets, en de browsers van Componenten.
 * **Component, werkbalk:** Wanneer u een component selecteert, ziet u een werkbalk waarin u de component kunt aanpassen.
 * **Pagina**: Het gebied waar u inhoud toevoegt om de sjabloon te maken.
 

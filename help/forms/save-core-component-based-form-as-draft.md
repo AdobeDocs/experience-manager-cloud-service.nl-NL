@@ -2,13 +2,14 @@
 title: Hoe te om de kern component gebaseerde Aangepaste Vorm als ontwerp te bewaren?
 description: Leer hoe u op basiscomponenten gebaseerde adaptieve formulieren als concept opslaat en een Forms Portal maakt en kerncomponenten buiten de box op een AEM Sites-pagina gebruikt.
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 0%
 
 ---
-
 
 <span class="preview"> Dit artikel bevat inhoud voor de functie voor pre-release. De pre-release functie is alleen toegankelijk via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 

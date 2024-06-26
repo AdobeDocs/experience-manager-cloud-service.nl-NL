@@ -3,7 +3,8 @@ title: Hoe te om een document van verslag (DoR) voor AEM Forms te produceren?
 description: Leer een sjabloon te genereren voor een Document of Record (DoR) voor Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4030'
 ht-degree: 0%
@@ -376,7 +377,7 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
 
    >[!NOTE]
    >
-   >Als u een adaptieve formuliersjabloon gebruikt dat is gemaakt met een versie van Designer die ouder is dan versie 6.3, werken de eigenschappen Accentkleur en Lettertypefamilie alleen als het volgende aanwezig is in de sjabloon Adaptief formulier onder het basissubformulier:
+   >Als u een adaptieve formuliersjabloon gebruikt die is gemaakt met een versie van Designer die ouder is dan 6.3, werken de eigenschappen Accentkleur en Lettertypefamilie alleen als het volgende aanwezig is in de sjabloon Adaptief formulier onder het basissubformulier:
 
    ```xml
    <proto>
@@ -487,7 +488,7 @@ Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een docume
 > AEM Forms biedt diverse ingebouwde lettertypen die naadloos kunnen worden geïntegreerd met PDF-bestanden. De lijst met ondersteunde lettertypen weergeven [klik hier](/help/forms/supported-out-of-the-box-fonts.md).
 
 
-### Een aangepast XCI-bestand gebruiken in uw as a Cloud Service Forms-omgeving
+### Een aangepast XCI-bestand gebruiken in uw Forms as a Cloud Service omgeving
 
 1. Voeg het aangepaste XCI-bestand toe aan uw ontwikkelingsproject.
 1. Geef het volgende op [inline, eigenschap](/help/implementing/deploying/configuring-osgi.md):
@@ -508,7 +509,7 @@ Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een docume
 
 1. Implementeer het project in de omgeving van uw Cloud Service.
 
-### Een aangepast XCI-bestand gebruiken in uw lokale as a Cloud Service Forms-ontwikkelomgeving
+### Een aangepast XCI-bestand gebruiken in uw lokale Forms as a Cloud Service-ontwikkelomgeving
 
 1. Upload het XCI-bestand naar uw lokale ontwikkelomgeving.
 1. Open Cloud Service SDK configuratiemanager. De standaard-URL is: <http://localhost:4502/system/console/configMgr>.

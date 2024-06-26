@@ -1,9 +1,10 @@
 ---
 title: Hoe kan ik fouten bij het maken van formulieren oplossen?
-description: Problemen met het maken van formulieren in de as a Cloud Service AEM Forms-omgeving oplossen.
-feature: Adaptive Forms, Troubleshooting
+description: Problemen met het maken van formulieren in AEM Forms as a Cloud Service-omgeving oplossen.
+feature: Adaptive Forms
 role: User
-source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
+exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Probleem tijdens het publiceren van formulieren{#form-creation-fails}
 
-Nadat gebruikers de as a Cloud Service versie van AEM Forms hebben bijgewerkt `2024.5.16461`:
+Nadat gebruikers een update naar AEM Forms as a Cloud Service hebben uitgevoerd `2024.5.16461`:
 
 **Sommige gebruikers** Bij het maken van formulieren kan het volgende probleem optreden: wanneer een gebruiker een formulier maakt, verschijnt het volgende foutbericht in het dialoogvenster Maken:
 
@@ -27,9 +28,9 @@ Het probleem doet zich voor omdat de auteur het formulier zonder **eerst de sjab
 Voer de volgende stappen uit om het probleem op te lossen:
 
 1. Zorg ervoor dat de sjabloon die u in het formulier gebruikt, niet de `jcr:uuid` en andere door het systeem gegenereerde beschermde eigenschappen op het pad `<template-path>/initial/jcr:content node`.
-1. Publiceer uitdrukkelijk het malplaatje gebruikend de malplaatjeconsole.
+1. Publish de sjabloon expliciet met behulp van de sjabloonconsole.
 1. Wanneer de sjabloon wordt gepubliceerd, kunt u nu nieuwe formulieren maken met de sjabloon.
-1. Als de sjabloon die u hebt gebruikt in de toekomstige versies bijwerkt, publiceert u de sjabloon opnieuw (zoals beschreven in stap 2) om problemen met het maken van formulieren te voorkomen.
+1. Als de sjabloon die u hebt gebruikt in de toekomstige versies bijwerkt, Publish de sjabloon opnieuw (zoals beschreven in stap 2) om problemen met het maken van formulieren te voorkomen.
 
 
 <!--
@@ -55,13 +56,3 @@ To resolve the issue, perform the following workaround steps:
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
 -->
-
-
-
-
-
-
-
-
-
-

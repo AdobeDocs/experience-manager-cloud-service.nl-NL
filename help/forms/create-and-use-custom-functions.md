@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4340'
 ht-degree: 0%
@@ -25,7 +26,7 @@ ht-degree: 0%
 
 ## Inleiding
 
-AEM Forms ondersteunt aangepaste functies, waardoor gebruikers JavaScript-functies kunnen definiëren voor het implementeren van complexe bedrijfsregels. Deze aangepaste functies vergroten de mogelijkheden van formulieren door het bewerken en verwerken van ingevoerde gegevens te vergemakkelijken, zodat aan bepaalde vereisten wordt voldaan. Ze maken het ook mogelijk het formuliergedrag dynamisch te wijzigen op basis van vooraf gedefinieerde criteria.
+AEM Forms ondersteunt aangepaste functies, zodat gebruikers JavaScript-functies kunnen definiëren voor het implementeren van complexe bedrijfsregels. Deze aangepaste functies vergroten de mogelijkheden van formulieren door het bewerken en verwerken van ingevoerde gegevens te vergemakkelijken, zodat aan bepaalde vereisten wordt voldaan. Ze maken het ook mogelijk het formuliergedrag dynamisch te wijzigen op basis van vooraf gedefinieerde criteria.
 
 >[!NOTE]
 >
@@ -39,11 +40,11 @@ De voordelen van het gebruik van aangepaste functies in Adaptive Forms zijn:
 * **Dynamisch gedrag**: Met aangepaste functies kunt u het dynamische gedrag van uw formulieren bepalen op basis van specifieke omstandigheden. U kunt bijvoorbeeld velden weergeven/verbergen, veldwaarden wijzigen of de logica van het formulier dynamisch aanpassen.
 * **Integratie**: U kunt aangepaste functies gebruiken om te integreren met externe API&#39;s of services. Het helpt in het halen van gegevens uit externe bronnen, het verzenden van gegevens naar externe rustpunten, of het uitvoeren van douaneacties die op externe gebeurtenissen worden gebaseerd.
 
-Aangepaste functies zijn in wezen clientbibliotheken die in het JavaScript-bestand worden toegevoegd. Zodra u een douanefunctie creeert, wordt het beschikbaar in de regelredacteur voor selectie door de gebruiker in een Aangepast Vorm. De aangepaste functies worden geïdentificeerd door de JavaScript-annotaties in de regeleditor.
+Aangepaste functies zijn in wezen clientbibliotheken die in het JavaScript-bestand worden toegevoegd. Zodra u een douanefunctie creeert, wordt het beschikbaar in de regelredacteur voor selectie door de gebruiker in een Aangepast Vorm. De douanefuncties worden geïdentificeerd door de aantekeningen van JavaScript in de regelredacteur.
 
 ### Ondersteunde JavaScript-annotaties voor aangepaste functies {#js-annotations}
 
-JavaScript-annotaties worden gebruikt om metagegevens voor JavaScript-code op te geven. Het bevat opmerkingen die beginnen met specifieke symbolen, bijvoorbeeld /** en @. De annotaties bevatten belangrijke informatie over functies, variabelen en andere elementen in de code. Het adaptieve formulier ondersteunt de volgende JavaScript-aantekeningen voor aangepaste functies:
+JavaScript-annotaties worden gebruikt om metagegevens voor JavaScript-code te verschaffen. Het bevat opmerkingen die beginnen met specifieke symbolen, bijvoorbeeld /** en @. De annotaties bevatten belangrijke informatie over functies, variabelen en andere elementen in de code. Het adaptieve formulier ondersteunt de volgende JavaScript-annotaties voor aangepaste functies:
 
 #### Naam
 
@@ -170,7 +171,7 @@ U kunt een aangepaste functie maken met of zonder jsdoc-opmerkingen.
             // code to be executed
         }
 ```
-Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt deze door de functienaam in de regeleditor weergegeven. Het wordt echter aanbevolen JavaScript-aantekeningen op te nemen om de leesbaarheid van de aangepaste functies te verbeteren.
+Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt deze door de functienaam in de regeleditor weergegeven. Het wordt echter aanbevolen JavaScript-annotaties op te nemen om de leesbaarheid van de aangepaste functies te verbeteren.
 
 ### Pijlfunctie met verplichte JavaScript-annotaties of -opmerkingen
 
@@ -196,7 +197,7 @@ U kunt een aangepaste functie maken met een syntaxis voor een pijlfunctie:
 
 Als de gebruiker geen JavaScript-annotaties toevoegt aan de aangepaste functie, wordt de aangepaste functie niet vermeld in de regeleditor van een adaptief formulier.
 
-### Functie-expressie met verplichte JavaScript-aantekeningen of -opmerkingen
+### Functie-expressie met verplichte JavaScript-annotaties of -commentaar
 
 Als u aangepaste functies wilt weergeven in de regeleditor van een adaptief formulier, maakt u aangepaste functies in de volgende indeling:
 
@@ -241,7 +242,7 @@ U kunt aangepaste functies toevoegen door een clientbibliotheek toe te voegen. V
 
 **De opslagplaats klonen**
 
-Klonen uw [AEM Forms as a Cloud Service opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+Klonen uw [AEM Forms as a Cloud Service-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
 
 1. Open de opdrachtregel of het terminalvenster.
 
@@ -353,7 +354,7 @@ Implementeer de AEM as a Cloud Service, [AEMaaCS-projectmap]aan uw Cloud Service
 
    1. Trigger een plaatsing van uw code door de bestaande full-stack pijpleiding. Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd.
 
-Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [hoe een pijpleiding voor AEM Forms as a Cloud Service op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [hoe een pijpleiding voor AEM Forms as a Cloud Service kan worden opgezet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 Zodra de pijpleiding met succes wordt uitgevoerd, wordt de douanefunctie die in de cliëntbibliotheek wordt toegevoegd beschikbaar in uw [Editor voor adaptieve formulierregels](/help/forms/rule-editor-core-components.md).
 
@@ -378,7 +379,7 @@ U kunt de aangepaste functie gebruiken in het dialoogvenster [regel-editor van e
 
 ## Een aangepaste functie gebruiken in een adaptief formulier
 
-In een adaptief formulier kunt u [aangepaste functies in de regeleditor](/help/forms/rule-editor-core-components.md). Voeg de volgende code toe aan het JavaScript-bestand (`Function.js` bestand) om de leeftijd te berekenen op basis van de geboortedatum (JJJJ-MM-DD). Een aangepaste functie maken als `calculateAge()` die de geboortedatum als input neemt en de leeftijd retourneert:
+In een adaptief formulier kunt u [aangepaste functies in de regeleditor](/help/forms/rule-editor-core-components.md). Laten we de volgende code toevoegen aan het JavaScript-bestand (`Function.js` bestand) om de leeftijd te berekenen op basis van de geboortedatum (JJJJ-MM-DD). Een aangepaste functie maken als `calculateAge()` die de geboortedatum als input neemt en de leeftijd retourneert:
 
 ```javascript
     /**
@@ -1011,7 +1012,7 @@ Als de aangepaste functies worden gewijzigd, wordt het in cache plaatsen ongeldi
 * Als de manager van de douanevoorlegging niet zoals verwacht in bestaande AEM Projecten of vormen uitvoert, voer de volgende stappen uit:
    * Zorg ervoor dat de [kerncomponentenversie wordt bijgewerkt naar 3.0.18 en hoger](https://github.com/adobe/aem-core-forms-components). Voor bestaande AEM projecten en formulieren moeten echter aanvullende stappen worden ondernomen:
 
-   * Voor het AEM project moet de gebruiker alle instanties van `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` en implementeer het project via de Cloud Manager-pijplijn.
+   * Voor het AEM project moet de gebruiker alle instanties van `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` en het project via de pijpleiding van Cloud Manager te implementeren.
 
    * Voor bestaande formulieren moet de gebruiker, als de aangepaste verzendingsafhandelingen niet correct werken, de `submitForm` de regels inzake **Verzenden** gebruiken van de Redacteur van de Regel. Deze handeling vervangt de bestaande regel door `submitForm('custom:submitSuccess', 'custom:submitError')` with `submitForm()` in het formulier.
 

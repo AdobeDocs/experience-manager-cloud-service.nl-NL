@@ -3,7 +3,8 @@ title: Hoe maak je een Forms Portal op een Experience Manager Sites-pagina?
 description: Leer hoe u een Forms Portal kunt maken en de kerncomponenten van een AEM Sites-pagina kunt gebruiken die niet in de verpakking staan.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 0%
@@ -56,9 +57,9 @@ U kunt [de uit-van-de-doos Forms Portal-componenten importeren](#import-forms-po
 
 ## Forms Portal-componenten importeren {#import-forms-portal-components-aem-archetype}
 
-Voer de volgende stappen uit als u Forms Portal-componenten buiten de box wilt importeren op AEM Forms as a Cloud Service:
+Ga als volgt te werk om Forms Portal-componenten die zich niet in de verpakking bevinden, te importeren op AEM Forms as a Cloud Service:
 
-1. **Clone Cloud Manager Git-opslagplaats op uw lokale ontwikkelingsinstantie:**  De gegevensopslagruimte van uw cloudbeheerkit bevat een standaard AEM project. Het is gebaseerd op [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI om het project over te brengen naar uw lokale ontwikkelomgeving. Zie voor meer informatie over toegang tot de gegevensopslagruimte [Toegang tot opslagplaatsen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
+1. **Clone Cloud Manager Git-opslagplaats op uw lokale ontwikkelingsinstantie:**  Uw Cloud Manager Git-opslagplaats bevat een standaard AEM project. Het is gebaseerd op [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Clone your Cloud Manager Git Repository using Self-Service Git Account Management from Cloud Manager UI to bring the project on your local development environment. Zie voor meer informatie over toegang tot de gegevensopslagruimte [Toegang tot opslagplaatsen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
 
 1. **Maken [!DNL Experience Manager Forms] als [Cloud Service] project:** Maken [!DNL Experience Manager Forms] als [Cloud Service] project gebaseerd op [AEM Archetype 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) of hoger. De archetype Help-ontwikkelaars beginnen gemakkelijk te ontwikkelen voor [!DNL AEM Forms] as a Cloud Service. Het bevat ook enkele voorbeeldthema&#39;s en sjablonen waarmee u snel aan de slag kunt gaan.
 

@@ -1,10 +1,11 @@
 ---
-title: Wat zijn Forms-API's voor as a Cloud Service communicatie?
+title: Wat zijn Forms as a Cloud Service Communication API's?
 description: Gebruik communicatie-API's om uw documenten te ondertekenen, certificeren of beveiligen, om processen voor het genereren van PDF te automatiseren en om PDF-documenten om te zetten in een andere indeling.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 92811662e1ef9b6cbd5cb66c67f774109745bc68
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2281'
 ht-degree: 1%
@@ -60,7 +61,7 @@ Afbeelding: Standaardworkflow voor het maken van een PDF-document
 
 ### PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL)-document maken {#create-PS-PCL-ZPL-documents}
 
-Met API&#39;s voor het genereren van documenten kunt u PostScript- (PS), PCL-documenten (Printer Command Language) en ZPL-documenten (Zebra Printing Language) maken op basis van een XDP-formulierontwerp of PDF-document. Deze API&#39;s helpen u bij het samenvoegen van een formulierontwerp met formuliergegevens om een document te genereren. U kunt het document opslaan in een bestand en een aangepast proces ontwikkelen om het naar een printer te verzenden.
+U kunt API&#39;s voor het genereren van documenten gebruiken om een PostScript-document (PS), een PCL-document (Printer Command Language) en een ZPL-document (Zebra Printing Language) te maken dat is gebaseerd op een XDP-formulierontwerp of een PDF-document. Deze API&#39;s helpen u bij het samenvoegen van een formulierontwerp met formuliergegevens om een document te genereren. U kunt het document opslaan in een bestand en een aangepast proces ontwikkelen om het naar een printer te verzenden.
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -298,11 +299,11 @@ Communicatie biedt HTTP-API&#39;s voor het genereren van documenten op aanvraag 
 
 ## Onboarding
 
-Communicatiecapaciteit is beschikbaar als zelfstandige en add-on module voor as a Cloud Service Forms-gebruikers. U kunt contact opnemen met het verkoopteam van de Adobe of uw Adobe om toegang aan te vragen. Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan uw as a Cloud Service Forms-ontwikkelaars (gebruikers) van uw organisatie om de API&#39;s te gebruiken.
+Communicatiecapaciteit is beschikbaar als zelfstandige en add-on module voor Forms as a Cloud Service gebruikers. U kunt contact opnemen met het verkoopteam van de Adobe of uw Adobe om toegang aan te vragen. Adobe maakt toegang voor uw organisatie mogelijk en biedt de vereiste rechten aan de persoon die is aangewezen als beheerder in uw organisatie. De beheerder kan toegang verlenen aan uw Forms as a Cloud Service ontwikkelaars (gebruikers) van uw organisatie om APIs te gebruiken.
 
 Na het instappen, om Communicatie vermogen voor uw as a Cloud Service milieu van Forms toe te laten:
 
-1. Meld u aan bij Cloud Manager en open de as a Cloud Service AEM Forms-instantie.
+1. Meld u aan bij Cloud Manager en open AEM Forms as a Cloud Service Instance.
 
 1. Open de optie Programma bewerken, ga naar het tabblad Oplossingen en invoegtoepassingen en selecteer de optie **[!UICONTROL Forms - Communications]** -optie.
 

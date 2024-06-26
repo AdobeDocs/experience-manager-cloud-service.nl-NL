@@ -3,7 +3,8 @@ title: Transactierapporten Billable API's
 description: Lijst met alle API's die als transacties worden beschouwd
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
+role: Admin, Developer, User
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 0%
@@ -52,7 +53,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Gepubliceerd Forms-beheer"
->abstract="De grafiek geeft informatie over het aantal formulieren dat tijdens specifieke tijdsperioden met succes is gepubliceerd. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="De grafiek geeft informatie over het aantal formulieren dat tijdens specifieke tijdsperioden met succes is gepubliceerd. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Publish-instantie. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
@@ -68,12 +69,12 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="Forms-fragmentbeheer"
->abstract="Met deze grafiek kunt u zien hoeveel formulierfragmenten u in uw formulieren gebruikt. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="Met deze grafiek kunt u zien hoeveel formulierfragmenten u in uw formulieren gebruikt. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Publish-instantie. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="Tijdbeheer van formulierfragment Gemiddelde"
->abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulierfragment te maken, gemeten vanaf de eerste dag dat het formulierfragment voor bewerking is geopend. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms-instantie Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulierfragment te maken, gemeten vanaf de eerste dag dat het formulierfragment voor bewerking is geopend. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Publish-instantie. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 
 <!-- 
@@ -296,7 +297,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-batch/#tag/Batch-Configuration/operation/CreateBatchConfig" target="_blank">generatePrintedOutputBatch</a></td>
-   <td>Hiermee converteert u een set XDP- en PDF-documenten naar een set PostScript- (PS), Printer Command Language (PCL)- en ZPL-bestandsindelingen. </td>
+   <td>Hiermee converteert u een set XDP- en PDF-documenten naar een set PostScript- (PS), Printer Command Language- (PCL) en ZPL-bestandsindelingen. </td>
    <td>Verwerkte documenten</td>
    <td> <!-- The generatePDFOutputBatch API combines a form template with a record and generates a PDF. When you process a batch of records, the transaction reporting service counts each record as a separate PDF rendition. <br> You can use the <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> flag to combine multiple renditions to single PDF file. Irrespective of the status of flag, the service counts each record as a separate PDF rendition. --> </td>
   </tr>

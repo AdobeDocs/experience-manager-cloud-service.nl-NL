@@ -6,13 +6,14 @@ keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA-uitdaging, Bot-preventi
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 0%
 
 ---
-
 
 # Sluit uw AEM Forms-omgeving aan met hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
@@ -30,7 +31,7 @@ AEM Forms as a Cloud Service ondersteunt de volgende CAPTCHA-oplossingen:
 
 De service Captcha® beschermt uw formulieren tegen bots, spam en automatisch misbruik. Er wordt een widget selectievakje ingesteld en de reactie van de gebruiker geëvalueerd om te bepalen of het een mens of bot is die met het formulier communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige activiteiten posten.
 
-AEM Forms as a Cloud Service ondersteunt hCaptcha® in Adaptive Forms Core Components. U kunt dit gebruiken om een widget-uitdaging voor selectievakjes weer te geven bij het verzenden van een formulier.
+AEM Forms as a Cloud Service biedt ondersteuning voor hCaptcha® in Adaptive Forms Core Components. U kunt dit gebruiken om een widget-uitdaging voor selectievakjes weer te geven bij het verzenden van een formulier.
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
@@ -40,8 +41,8 @@ Om hCaptcha® met AEM Forms te configureren, moet u de [Captcha® sitekey en geh
 
 ## Stappen voor het configureren van hCaptcha® {#steps-to-configure-hcaptcha}
 
-1. Maak een configuratiecontainer in de as a Cloud Service AEM Forms-omgeving. Een configuratiecontainer bevat Cloud Configurations die worden gebruikt om AEM te verbinden met externe services. Om een Container van de Configuratie te creëren en te vormen om uw milieu van AEM Forms met hCaptcha® te verbinden:
-   1. Open uw as a Cloud Service AEM Forms-exemplaar.
+1. Maak een configuratiecontainer op uw AEM Forms as a Cloud Service omgeving. Een configuratiecontainer bevat Cloud Configurations die worden gebruikt om AEM te verbinden met externe services. Om een Container van de Configuratie te creëren en te vormen om uw milieu van AEM Forms met hCaptcha® te verbinden:
+   1. Open je AEM Forms as a Cloud Service exemplaar.
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]**.
    1. In Browser van de Configuratie, kunt u een bestaande omslag selecteren of een omslag creëren. U kunt een map maken en de optie Cloud Configurations hiervoor inschakelen of de optie Cloud Configurations inschakelen voor een bestaande map:
 
@@ -70,7 +71,7 @@ Zodra de dienst hCAPTCHA wordt gevormd, is het beschikbaar voor gebruik in een A
 
 ## Captcha® gebruiken in een adaptieve vorm{#using-hCaptcha®-foundation-components}
 
-1. Open uw as a Cloud Service AEM Forms-exemplaar.
+1. Open je AEM Forms as a Cloud Service exemplaar.
 1. Ga naar **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]**.
 1. Selecteer een adaptief formulier en selecteer **[!UICONTROL Properties]**. Voor de **[!UICONTROL Configuration Container]** Selecteer de configuratiecontainer die de Cloud Configuration bevat die AEM Forms met hCaptcha® verbindt, en selecteer **[!UICONTROL Save & Close]**.
 

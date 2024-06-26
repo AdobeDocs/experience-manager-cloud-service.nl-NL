@@ -4,7 +4,8 @@ description: Ontdek om een bestaand adaptief formulier efficiënt te hergebruike
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 0%
@@ -53,7 +54,7 @@ Kopieer een adaptief formulier op een van de volgende manieren:
 
 Wanneer u op de kopieeractie klikt, wordt de selectiemodus automatisch verlaten en wordt de plakbewerking ![Plakken](assets/Smock_Paste_18_N.svg) zichtbaar. Ga nu naar het gewenste mappad en klik op Plakken ![Plakken](assets/Smock_Paste_18_N.svg) pictogram om het gekopieerde adaptieve formulier te plakken.
 
-Als u plakt in dezelfde map of een ander bestand met dezelfde knooppuntnaam (waarmee het bestand is opgeslagen in de CRX-opslagruimte) bestaat in deze doelmap, wordt 1 toegevoegd aan het achtervoegsel (myaf wordt bijvoorbeeld myaf1 en als myaf1 op dezelfde locatie bestaat, wordt myaf myaf2. Alle andere eigenschappen blijven hetzelfde als het oorspronkelijke adaptieve formulier.
+Als u plakt in dezelfde map of een ander bestand met dezelfde knooppuntnaam (waarmee het bestand is opgeslagen in de CRX-opslagplaats) bestaat in deze doelmap, wordt 1 toegevoegd aan het achtervoegsel (myaf wordt bijvoorbeeld myaf1 en als myaf1 op dezelfde locatie bestaat, wordt myaf myaf2. Alle andere eigenschappen blijven hetzelfde als het oorspronkelijke adaptieve formulier.
 
 Na het klikken op de plakbewerking ![Plakken](assets/Smock_Paste_18_N.svg) pictogram, wordt het opnieuw verborgen. U kunt tegelijkertijd slechts één keer plakken. Als u opnieuw een kopie van hetzelfde element wilt maken, kopieert u het opnieuw.
 

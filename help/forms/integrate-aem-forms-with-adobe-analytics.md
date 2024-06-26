@@ -3,7 +3,9 @@ title: Hoe kan AEM Forms met Adobe Analytics worden geïntegreerd?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1508'
 ht-degree: 0%
@@ -181,7 +183,7 @@ Voer de volgende stappen uit om regels te maken op basis van de **[!UICONTROL Ad
    >[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
-### Stroom publiceren {#publish-flow}
+### Publish-stromen {#publish-flow}
 
 Nadat u de gegevenselementen hebt gemaakt en deze in regels hebt gebruikt, publiceert u de configuratie voor het verzamelen van formuliergegevens in [!DNL Adobe Analytics].
 
@@ -197,7 +199,7 @@ Voer de volgende stappen uit om de configuratie te publiceren:
 
 1. Bevestig dat de wijzigingen en de publicatiestroom binnenkort worden weergegeven in het dialoogvenster **[!UICONTROL Published]** sectie.
 
-![Stroom publiceren](assets/publish-flow.png)
+![Publish Flow](assets/publish-flow.png)
 
 ## 2. AEM Forms configureren {#configure-aem-forms}
 
@@ -221,7 +223,7 @@ Voer de volgende stappen uit om een configuratie van de Lancering van de Adobe t
 
 1. Selecteren **[!UICONTROL Save & Close]**.
 
-1. Publiceer de configuratie.
+1. Publish de configuratie.
 
 ### Inschakelen [!DNL Adobe Analytics] voor een adaptief formulier {#enable-analytics-adaptive-form}
 
@@ -231,7 +233,7 @@ Als u de opdracht [!DNL Adobe Launch] configuratie in een bestaand adaptief form
 1. Selecteer het adaptieve formulier en selecteer **[!UICONTROL Properties]**.
 1. In de **[!UICONTROL Basic]** selecteert u de [configuratieconsole](#create-adobe-launch-configuration) wordt gebruikt tijdens het maken van de configuratie Adobe starten.
 1. Selecteer **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL Adobe Analytics].
-1. Publiceer het formulier.
+1. Publish het formulier.
 
 Nadat u [!DNL Adobe Analytics] voor een adaptief formulier kunt u [validate](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) als er een geschikte gegevensgebeurtenisstroom is tussen AEM Forms en [!DNL Adobe Analytics]. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [configureren en weergeven van rapporten in Adobe Analytics](#view-reports-adobe-analytics).
 

@@ -3,10 +3,10 @@ title: Hoe kunnen we Adobe Sign in een adaptieve vorm gebruiken?
 description: Gebruik Adobe Sign in een adaptief formulier om ontvangers van formulieren toe te staan een formulier elektronisch te ondertekenen vanaf het apparaat en de plaats van hun keuze.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 0%
@@ -230,7 +230,7 @@ U kunt een of meerdere ontvangers voor een Adobe Sign-overeenkomst hebben. Wanne
 
 Voeg [!DNL Adobe Sign] velden naar een adaptief formulier inschakelen [!DNL Adobe Sign] vanuit formuliercontainer selecteren [!DNL Adobe Sign] Cloud Service en voeg Adobe Sign-ontvangers toe en selecteer een geschikte verzendactie voor het adaptieve formulier. Voor meer informatie over Adaptive Forms Submit Actions gaat u naar [De handeling Verzenden configureren](configuring-submit-actions.md).
 
-Het ondertekenen en verzenden van een formulier is onafhankelijk van elkaar. Het verzenden van een adaptief formulier vindt plaats zodra een Adobe Sign-overeenkomst is gemaakt nadat een gebruiker een formulier heeft verzonden. [!DNL AEM Forms] as a Cloud Service wacht niet tot de ontvangers andere acties ondertekenen of voltooien om een adaptief formulier te verzenden. Een formulier wordt verzonden zodra een gebruiker op de knop Verzenden klikt of wanneer een stap Overzicht de samenvatting van het formulier weergeeft.
+Het ondertekenen en verzenden van een formulier is onafhankelijk van elkaar. Het verzenden van een adaptief formulier vindt plaats zodra een Adobe Sign-overeenkomst is gemaakt nadat een gebruiker een formulier heeft verzonden. [!DNL AEM Forms] as a Cloud Service wachten niet tot de ontvangers andere acties ondertekenen of voltooien om een adaptief formulier te verzenden. Een formulier wordt verzonden zodra een gebruiker op de knop Verzenden klikt of wanneer een stap Overzicht de samenvatting van het formulier weergeeft.
 
 Ook, en [!DNL Adobe Sign] Met Aangepast formulier wordt de Adobe Sign-overeenkomst-id ingesloten voor het verzenden van gegevens. U kunt de overeenkomst-id gebruiken voor het bijhouden van de status van de overeenkomst met behulp van aangepaste code (aangepaste implementatie is vereist).
 

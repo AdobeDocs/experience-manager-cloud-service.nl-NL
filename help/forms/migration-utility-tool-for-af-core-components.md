@@ -6,13 +6,14 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding
 
@@ -149,6 +150,3 @@ U kunt nu zien dat de Adaptieve Vorm die op de Componenten van de Stichting word
 
 * Verzeker uw op componenten gebaseerde vormen van de Stichting, gebruik slechts die componenten die een gelijkwaardig hebben [Kernonderdelen](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) beschikbaar. In gevallen waar u de Componenten van de Stichting gebruikt die geen gelijkwaardige Component van de Kern hebben, wordt de Component van de Stichting niet omgezet. Hierdoor werkt het niet correct tijdens het ontwerpen van een formulier
 * Zorg ervoor dat de regels om de Componenten van de Stichting aan de Componenten van de Kern te behandelen in XML worden geformatteerd.
-
-
-

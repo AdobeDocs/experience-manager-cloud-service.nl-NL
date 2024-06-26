@@ -1,10 +1,10 @@
 ---
-title: AEM Forms as a Cloud Service ondersteunt out-of-the-box lettertypen voor het genereren van PDF.
-description: AEM Forms as a Cloud Service ondersteunt lettertypen die niet in de box staan voor Document of Record en PDF.
-feature: Adaptive Forms, APIs
+title: AEM Forms as a Cloud Service biedt ondersteuning voor lettertypen die niet in de box staan en die kunnen worden gegenereerd door PDF.
+description: AEM Forms as a Cloud Service biedt ondersteuning voor lettertypen die niet in de box staan voor Document of Record en PDF.
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
-source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -52,5 +52,5 @@ De volgende lettertypen worden door OOTB ondersteund:
 * eurosign.ttf
 
 
-Naast de bovengenoemde lettertypen kunt u aangepaste lettertypen gebruiken om de PDF een specifieke vormgeving te geven. Als u aangepaste lettertypen wilt inschakelen, [Aangepaste lettertypen toevoegen aan uw as a Cloud Service Forms-omgeving](/help/forms/use-custom-fonts.md) met een geldige vergunning.
+Naast de bovengenoemde lettertypen kunt u aangepaste lettertypen gebruiken om de PDF een specifieke vormgeving te geven. Als u aangepaste lettertypen wilt inschakelen, [Aangepaste lettertypen toevoegen aan uw Forms as a Cloud Service omgeving](/help/forms/use-custom-fonts.md) met een geldige vergunning.
 

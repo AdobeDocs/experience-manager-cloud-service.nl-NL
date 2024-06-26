@@ -1,10 +1,10 @@
 ---
 title: Gemakkelijk maken van PDF, moeiteloos maken - Maak kennis met de kunst met batterijverwerking - Uw zelfhulplijn voor het genereren van miljoenen PDF-documenten!
 description: Hoe te om merkgeoriënteerde en gepersonaliseerde mededelingen tot stand te brengen?
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Uw Experience Manager-instantie is nu klaar om verbinding te maken met Microsoft
 
 ### Batchgegevensopslagconfiguratie maken {#create-batch-data-store-configuration}
 
-Met de configuratie van batchgegevens kunt u containers en mappen configureren voor invoer en uitvoer. U houdt uw klantenverslagen in BronOmslag en de geproduceerde documenten worden geplaatst in de Omslag van de Bestemming.
+Met de configuratie van batchgegevens kunt u containers en mappen configureren voor invoer en uitvoer. U bewaart uw klantenverslagen in de Omslag van Source en de geproduceerde documenten worden geplaatst in de Omslag van de Bestemming.
 
 De configuratie maken:
 
@@ -106,7 +106,7 @@ De configuratie maken:
 1. Open een map als host voor de configuratie en klik op Maken. U gebruikt de algemene map of maakt een map.
 1. Geef de titel en naam van de configuratie op. Selecteer in Opslag Microsoft Azure Storage.
 1. Blader in Opslagconfiguratiepad naar en selecteer de Cloud Configuration die referenties van de Azure-opslagaccount in eigendom van de klant bevat.
-1. Geef in de bronmap de naam op van de Azure Storage-container en de map met records.
+1. Geef in de Source-map de naam op van de Azure Storage-container en de map met records.
 1. Geef in de doelmap het pad op van de Azure Storage-container en -map waarin de gegenereerde documenten worden opgeslagen.
 1. Klik op Maken.
 
@@ -176,7 +176,7 @@ De API verwijzingsdocumentatie verstrekt gedetailleerde informatie over alle par
 
 >[!MORELIKETHIS]
 >
->* [Inleiding tot as a Cloud Service communicatie met AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Inleiding tot AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
 >* [AEM Forms as a Cloud Service architectuur voor adaptieve Forms- en communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Communicatieverwerking - synchrone API&#39;s](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Communicatieverwerking - Batch-API&#39;s](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

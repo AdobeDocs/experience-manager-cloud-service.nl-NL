@@ -1,10 +1,11 @@
 ---
 title: Hoe kunt u een adaptief formulier toevoegen aan de AEM Sites-pagina?
 description: Ontdek hoe u een adaptief formulier kunt maken of toevoegen aan uw AEM Sites-pagina. Leer ook de voordelen en verschillende manieren om formulieren te integreren in uw website.
-feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
+feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 38e11538cdf3777a91a5ca60f83f8a95cd410c00
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3095'
 ht-degree: 0%
@@ -120,7 +121,7 @@ Om volledige functionaliteit van de Adaptive Forms Container component toe te la
        </sly> 
    ```
 
-1. [De implementatiepijplijn uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) om de cliëntbibliotheken aan uw AEM as a Cloud Service milieu op te stellen.
+1. [De implementatiepijplijn uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) om de clientbibliotheken in uw AEM as a Cloud Service-omgeving te implementeren.
 
 +++
 
@@ -206,7 +207,7 @@ Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn va
 
 ## Een schema of formuliergegevensmodel (FDM) configureren voor een formulier in een AEM Sites-pagina of -fragment met experts {#configure-schema-or-data-model-for-form}
 
-Met het FDM (Form Data Model) kunt u een formulier verbinden met een gegevensbron om gegevens te verzenden en te ontvangen op basis van gebruikersacties. U kunt een formulier ook verbinden met een JSON-schema om de verzonden gegevens in een vooraf gedefinieerde indeling te ontvangen. Gebaseerd op het vereiste, verbind uw vorm met een schema JSON of het model van de Gegevens van de Vorm (FDM):
+Met het FDM (Form Data Model) kunt u een formulier verbinden met een Data Source om gegevens te verzenden en te ontvangen op basis van gebruikersacties. U kunt een formulier ook verbinden met een JSON-schema om de verzonden gegevens in een vooraf gedefinieerde indeling te ontvangen. Gebaseerd op het vereiste, verbind uw vorm met een schema JSON of het model van de Gegevens van de Vorm (FDM):
 
 * [Een JSON-schema maken en uploaden naar uw omgeving](/help/forms/adaptive-form-json-schema-form-model.md)  of
 * [Een formuliergegevensmodel (FDM) maken](/help/forms/create-form-data-models.md)

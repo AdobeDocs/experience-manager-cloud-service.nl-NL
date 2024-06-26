@@ -1,11 +1,11 @@
 ---
 title: Hoe kunnen we problemen met betrekking tot caching oplossen voor AEM Forms as a Cloud Service?
-description: Problemen met cachegeheugen voor as a Cloud Service AEM Forms oplossen.
+description: Problemen met caching oplossen voor AEM Forms as a Cloud Service.
 contentOwner: khsingh
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -18,11 +18,11 @@ U kunt enkele van de volgende problemen tegenkomen tijdens het configureren of g
 
 ## Sommige Adaptive Forms-afbeeldingen of video&#39;s worden niet automatisch ongeldig gemaakt in de Dispatcher-cache {#images-videos-not-invalidated}
 
-U kunt afbeeldingen of video&#39;s vanuit de middelenbrowser selecteren en toevoegen aan een adaptief formulier. Wanneer deze afbeeldingen worden bewerkt in de middeleneditor, wordt de versie in de cache van een adaptief formulier met dergelijke afbeeldingen niet ongeldig gemaakt. In het adaptieve formulier worden nog steeds oudere afbeeldingen weergegeven.
+U kunt afbeeldingen of video&#39;s vanuit de middelenbrowser selecteren en toevoegen aan een adaptief formulier. Wanneer deze afbeeldingen worden bewerkt in de Assets-editor, wordt de versie in de cache van een adaptief formulier met dergelijke afbeeldingen niet ongeldig gemaakt. In het adaptieve formulier worden nog steeds oudere afbeeldingen weergegeven.
 
 Als u dit probleem wilt oplossen, maakt u na publicatie van de afbeeldingen en video de publicatie van de Adaptive Forms die naar deze elementen verwijzen, expliciet ongedaan en publiceert u deze.
 
-## Bepaalde adaptieve Forms die inhoudsfragmenten of ervaringsfragmenten bevatten, worden niet automatisch ongeldig gemaakt uit de Dispatcher-cache {#content-fragments-experience-fragments-not-invalidated}
+## Bepaalde adaptieve Forms die inhoudsfragmenten of ervaringsfragmenten bevatten, worden niet automatisch ongeldig gemaakt vanuit de Dispatcher-cache {#content-fragments-experience-fragments-not-invalidated}
 
 U kunt een inhoudsfragment of een ervaringsfragment toevoegen aan een adaptief formulier. Wanneer deze fragmenten onafhankelijk worden bewerkt en gepubliceerd, wordt de versie in de cache van een adaptief formulier met deze fragmenten niet ongeldig gemaakt. In het adaptieve formulier worden nog steeds oudere fragmenten weergegeven.
 
@@ -57,7 +57,7 @@ Voer de volgende stappen uit om het probleem op te lossen:
 
 ## CDN-caching werkt niet meer na 300 seconden {#cdn-caching-stops-working-after-300-seconds}
 
-CDN-caching werkt niet meer na 300 seconden en alle aanvragen om in cache te plaatsen op CDN worden omgeleid naar Dispatcher.
+CDN-caching werkt niet meer na 300 seconden en alle aanvragen om CDN in cache te plaatsen worden omgeleid naar Dispatcher.
 
 Stel de pagina-header in op 0 om het probleem op te lossen:
 

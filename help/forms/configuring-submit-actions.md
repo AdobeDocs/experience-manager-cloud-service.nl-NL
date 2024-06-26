@@ -3,7 +3,8 @@ title: Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?
 description: Een adaptief formulier biedt meerdere verzendhandelingen. Met een handeling Verzenden wordt gedefinieerd hoe een adaptief formulier wordt verwerkt na verzending. U kunt ingebouwde verzendhandelingen gebruiken of uw eigen handelingen maken.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3710'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 **Van toepassing op**: ✔️ Aangepaste componenten van de Stichting van de Vorm. ❌ [Adaptieve Core-componenten van formulieren](/help/forms/configure-submit-actions-core-components.md). Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](creating-adaptive-form-core-components.md).
 
-Er wordt een handeling Verzenden geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Forms as a Cloud Service verstrekt de volgende Verzendacties uit de doos.
+Er wordt een handeling Verzenden geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Forms as a Cloud Service geeft de volgende verzendhandelingen weer.
 
 * [Verzenden naar REST-eindpunt](#submit-to-rest-endpoint)
 * [E-mail verzenden](#send-email)
@@ -400,7 +401,7 @@ U kunt een adaptief formulier configureren om een Microsoft® Power Automate Clo
 * Complexe berekeningen uitvoeren op vastgelegde gegevens
 * Adaptieve Forms-gegevens opslaan naar opslagsystemen volgens een vooraf bepaald schema
 
-De Adaptive Forms-editor biedt de **Een Microsoft® Power Automate-flow aanroepen** verzendt actie om adaptieve formuliergegevens, bijlagen en Document of Record te verzenden naar Power Automate Cloud Flow. De handeling Verzenden gebruiken om vastgelegde gegevens naar Microsoft® Power Automate te verzenden, [Sluit uw as a Cloud Service Forms-exemplaar aan met Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+De Adaptive Forms-editor biedt de **Een Microsoft® Power Automate-flow aanroepen** verzendt actie om adaptieve formuliergegevens, bijlagen en Document of Record te verzenden naar Power Automate Cloud Flow. De handeling Verzenden gebruiken om vastgelegde gegevens naar Microsoft® Power Automate te verzenden, [Sluit uw Forms as a Cloud Service instantie aan met Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
 Na een succesvolle configuratie, gebruik [Een Microsoft® Power Automate-flow aanroepen](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) verzenden actie om gegevens naar een Power Automate Flow te verzenden.
 
@@ -460,7 +461,7 @@ Auteurs kunnen de aangepaste JavaScript-bibliotheek configureren per adaptief fo
 
 ## Foutafhandeling bij verzenden van handeling {#error-handling-on-submit-action}
 
-Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 400.jsp, 404.jsp, en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 400, 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht. U kunt ook JSP-pagina&#39;s maken voor andere HTTP-foutcodes.
+Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 400.jsp, 404.jsp, en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 400, 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de knoop van Publish worden teweeggebracht. U kunt ook JSP-pagina&#39;s maken voor andere HTTP-foutcodes.
 
 Wanneer u een model van vormgegevens (FDM), of schema gebaseerde Aangepaste Vorm met XML of JSON gegevensklacht aan een schema vooraf instelt dat geen gegevens bevat `<afData>`, `<afBoundData>`, en `</afUnboundData>` -tags, gaan de gegevens van niet-begrensde velden van het adaptieve formulier verloren. Het schema kan een XML-schema, JSON-schema of een formuliergegevensmodel (FDM) zijn. Niet-begrensde velden zijn adaptieve formuliervelden zonder de `bindref` eigenschap.
 

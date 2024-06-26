@@ -2,7 +2,9 @@
 title: Hoe te om DocuSign met een Aangepast Vorm te integreren?
 description: Leer hoe u DocuSign met een adaptief formulier kunt gebruiken om e-handtekeningen te verzamelen.
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 0%

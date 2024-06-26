@@ -4,7 +4,8 @@ description: Leer nieuwe landinstellingen toe te voegen voor een adaptief formul
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 0%
@@ -94,9 +95,9 @@ Clone the Adaptive Forms Core Components Repository: U hebt een clientbibliothee
 
 Ga als volgt te werk om ondersteuning voor nieuwe landinstellingen toe te voegen aan een adaptief formulier op basis van kerncomponenten:
 
-### Cloud uw AEM as a Cloud Service Git-opslagplaats
+### De AEM as a Cloud Service Git-gegevensopslagruimte klonen
 
-1. Open de opdrachtregel en kies een directory waarin de AEM as a Cloud Service opslagplaats moet worden opgeslagen, zoals `/cloud-service-repository/`.
+1. Open de opdrachtregel en kies een directory waarin uw AEM as a Cloud Service-opslagplaats moet worden opgeslagen, zoals `/cloud-service-repository/`.
 
 1. Voer de onderstaande opdracht uit om de gegevensopslagruimte te klonen:
 
@@ -106,7 +107,7 @@ Ga als volgt te werk om ondersteuning voor nieuwe landinstellingen toe te voegen
 
    U hebt enkele informatie nodig om uw Git-opslagplaats te klonen:
 
-   * **Naam organisatie**: Dit identificeert uw team of project binnen Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
+   * **Naam organisatie**: Dit identificeert uw team of project in Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
 
    * **Programma-id**: Dit geeft het programma aan dat is gekoppeld aan uw opslagplaats.
 
@@ -118,7 +119,7 @@ Ga als volgt te werk om ondersteuning voor nieuwe landinstellingen toe te voegen
 
    **Uw project is klaar!**
 
-   Wanneer de opdracht met succes is voltooid, ziet u een nieuwe map die in uw lokale map is gemaakt. Deze map krijgt de naam van uw programma (bijvoorbeeld programma-id). Deze map bevat alle bestanden en code die zijn gedownload van de AEM as a Cloud Service Git-opslagplaats.
+   Wanneer de opdracht met succes is voltooid, ziet u een nieuwe map die in uw lokale map is gemaakt. Deze map krijgt de naam van uw programma (bijvoorbeeld programma-id). Deze map bevat alle bestanden en code die u hebt gedownload van uw AEM as a Cloud Service Git-opslagplaats.
 
    In deze handleiding wordt deze map de `[AEMaaCS project directory]`.
 
@@ -350,14 +351,14 @@ U bent nu klaar om de nieuwe landinstelling te gebruiken met uw Adaptive Forms. 
 
       Trigger een plaatsing van uw code door [bestaande full-stack pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd met de nieuwe ondersteuning voor landinstellingen.
 
-      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [hoe een pijpleiding voor AEM Forms as a Cloud Service op te zetten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [hoe een pijpleiding voor AEM Forms as a Cloud Service kan worden opgezet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## Een voorbeeld bekijken van een adaptief formulier met de nieuwe landinstelling
 
 Deze stappen begeleiden u door een voorbeeld weer te geven van een adaptief formulier met de nieuwe landinstelling:
 
-1. Meld u aan bij uw as a Cloud Service AEM Forms-exemplaar.
+1. Meld u aan bij uw AEM Forms as a Cloud Service-exemplaar.
 1. Ga naar **Forms** >  **Forms en Documenten**.
 1. Selecteer een adaptief formulier en klik op **Woordenboek toevoegen** en **Woordenboek toevoegen aan vertaalproject** wordt weergegeven.
 1. Geef de **Projecttitel** en selecteert u de **Doeltalen** in het keuzemenu in het dialoogvenster **Woordenboek toevoegen aan vertaalproject** wizard.

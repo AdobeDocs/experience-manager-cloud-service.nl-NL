@@ -3,7 +3,8 @@ title: Hoe kunnen we metagegevens voor AEM Forms beheren?
 description: Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1717'
 ht-degree: 0%
@@ -110,12 +111,12 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
    <td>Een alleen-lezen waarde die aangeeft op welk tijdstip het formulier het laatst is gepubliceerd.</td> 
   </tr> 
   <tr> 
-   <td>Aan/uit-tijd publiceren</td> 
+   <td>Publish aan/uit-tijd</td> 
    <td>Alles behalve bron</td> 
    <td><p>Tijdstip waarop het formulier volgens de planning automatisch moet worden gepubliceerd/gepubliceerd. De gebruiker stelt deze waarde in bij het bewerken van metagegevens.</p> 
     <ul> 
-     <li>Zowel de functie Publiceren aan als de functie Uittijd moet na de huidige datum vallen. </li> 
-     <li>Publiceren buiten de tijd moet na publicatie op tijd plaatsvinden. </li> 
+     <li>Zowel Publish Aan als Uit moet langer zijn dan de huidige datum. </li> 
+     <li>Publish Off time dient na publicatie On time te zijn. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -153,8 +154,8 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
    <td><p>Adaptief formulier</p> <p>Formuliersjabloon</p> <p>Bron</p> </td> 
    <td><p>Lijst met elementen (andere formulieren of bronnen) waarmee dit formulier is gerelateerd. Deze activa kunnen in de volgende twee categorieën vallen:</p> 
     <ul> 
-     <li>Zie: Elementen waarnaar het huidige formulier verwijst.</li> 
-     <li>Verwezen door: Activa die naar het huidige element verwijzen.</li> 
+     <li>Zie: Assets waarnaar het huidige formulier verwijst.</li> 
+     <li>Verwezen door: Assets die naar het huidige element verwijzen.</li> 
     </ul> <p>Deze elementen worden als koppelingen weergegeven en de bijbehorende metagegevens zijn rechtstreeks toegankelijk door erop te klikken.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -177,7 +178,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
 
 ## Metagegevens van formulieren weergeven {#view-form-metadata}
 
-Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in de alleen-lezen modus. Deze metagegevens zijn afkomstig bij het uploaden van het formulier of het maken van het formulier.
+Assets heeft bestaande eigenschapswaarden die kunnen worden weergegeven in de alleen-lezen modus. Deze metagegevens zijn afkomstig bij het uploaden van het formulier of het maken van het formulier.
 
 1. Navigeer naar de locatie van het element waarvan u de metagegevens wilt weergeven.
 

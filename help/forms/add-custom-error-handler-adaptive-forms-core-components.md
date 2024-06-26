@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2304'
 ht-degree: 0%
@@ -197,7 +198,7 @@ Als u wilt weten hoe u een standaardfouthandler gebruikt met de functie [Invoke-
 1. Selecteren **[!UICONTROL Create]**.
 1. Een voorwaarde maken in het dialoogvenster **Wanneer** van de regel. Bijvoorbeeld: **Wanneer[Naam van veld Dierenid]** is gewijzigd. Selecteren wordt gewijzigd in het menu **Frame selecteren** vervolgkeuzelijst.
 1. In de **Vervolgens** sectie, selecteert u **[!UICONTROL Invoke Service]** van de **Handeling selecteren** vervolgkeuzelijst.
-1. Selecteer een **Postservice** en de overeenkomstige gegevensbindingen van de **Invoer** sectie. Bijvoorbeeld om te bevestigen **Huisdier-id** selecteert u een **Postservice** als **GET /pet/{petId}** en selecteert u **Huisdier-id** in de **Invoer** sectie.
+1. Selecteer een **Post-service** en de overeenkomstige gegevensbindingen van de **Invoer** sectie. Bijvoorbeeld om te bevestigen **Huisdier-id** selecteert u een **Post-service** als **GET /pet/{petId}** en selecteert u **Huisdier-id** in de **Invoer** sectie.
 1. Selecteer de gegevensbindingen in het menu **Uitvoer** sectie. Selecteren **Naam huisdier** in de **Uitvoer** sectie.
 1. Selecteren **[!UICONTROL Default Error Handler]** van de **Fouthandler** sectie.
 1. Klik op **[!UICONTROL Done]**.
@@ -237,7 +238,7 @@ Voer de volgende stappen uit om een aangepaste foutfunctie te maken:
 1. Een map maken met de naam `js`.
 1. Ga naar de `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` map.
 1. Voeg bijvoorbeeld een JavaScript-bestand toe. `function.js`. Het bestand bevat de code voor aangepaste fouthandler.
-Voeg de volgende code aan het dossier JavaScript toe om de reactie en kopballen te tonen, die van het de diensteindpunt van REST, in de browser console worden ontvangen.
+Voeg de volgende code aan het dossier van JavaScript toe om de reactie en kopballen te tonen, die van het de diensteindpunt van REST, in de browser console worden ontvangen.
 
    ```javascript
        /** 
@@ -305,7 +306,7 @@ Als u een aangepaste fouthandler wilt gebruiken met de **[!UICONTROL Rule Editor
 1. Selecteren **[!UICONTROL Create]**.
 1. Een voorwaarde maken in het dialoogvenster **Wanneer** van de regel. Bijvoorbeeld wanneer **[Naam van veld Dierenid]** is gewijzigd, selecteert u **is gewijzigd** van de **Frame selecteren** vervolgkeuzelijst.
 1. In de **Vervolgens** sectie, selecteert u **[!UICONTROL Invoke Service]** van de **Handeling selecteren** vervolgkeuzelijst.
-1. Selecteer een **Postservice** en de overeenkomstige gegevensbindingen van de **Invoer** sectie. Bijvoorbeeld om te bevestigen **Huisdier-id** selecteert u een **Postservice** als **GET /pet/{petId}** en selecteert u **Huisdier-id** in de **Invoer** sectie.
+1. Selecteer een **Post-service** en de overeenkomstige gegevensbindingen van de **Invoer** sectie. Bijvoorbeeld om te bevestigen **Huisdier-id** selecteert u een **Post-service** als **GET /pet/{petId}** en selecteert u **Huisdier-id** in de **Invoer** sectie.
 1. Selecteer de gegevensbindingen in het menu **Uitvoer** sectie. Selecteer bijvoorbeeld **Naam huisdier** in de **Uitvoer** sectie.
 1. Selecteren **[!UICONTROL Custom Error Handler]** van de **[!UICONTROL Error Handler]** sectie.
 1. Klik op **[!UICONTROL Done]**.

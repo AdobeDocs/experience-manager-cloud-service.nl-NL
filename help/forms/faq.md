@@ -1,12 +1,12 @@
 ---
-title: Veelgestelde vragen over AEM Forms as a Cloud Service
-description: Forms as a Cloud Service veelgestelde vragen
+title: Veelgestelde vragen voor AEM Forms as a Cloud Service
+description: as a Cloud Service vragen van Forms
 contentOwner: khsingh
 role: User
-feature: Adaptive Forms, FAQ
+feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -19,14 +19,14 @@ ht-degree: 0%
 U kunt de Visuele Redacteur gebruiken om de regels tot stand te brengen. De Code-editor is niet beschikbaar op [!DNL Forms] as a Cloud Service. Als in uw Adaptief formulier regelscripts worden gebruikt die zijn ontwikkeld met de code-editor, gebruikt u de opdracht [Hulpprogramma voor migratie](migrate-to-forms-as-a-cloud-service.md) om uw codemanuscripten in douanefuncties om te zetten. U kunt douanefuncties met Visuele Redacteur gebruiken om de resultaten te blijven verkrijgen die met de Redacteur van de Code worden verkregen.
 
 * **Kan ik een adaptief XFA-formulier maken op basis van Cloud Servicen?**
-Ja, u kunt een XFA-gebaseerd adaptief formulier maken op een Cloud Service-instantie. Ondersteuning voor adaptieve Forms op basis van XFA is echter niet beschikbaar voor as a Cloud Service SDK van AEM Forms (Local Development Environment). Als u van plan bent om op XFA gebaseerde Adaptive Forms te gebruiken met AEM Forms as a Cloud Service SDK, neemt u contact op met de Adobe Support voor meer informatie over uw gebruiksscenario en specifieke vereisten.
+Ja, u kunt een XFA-gebaseerd adaptief formulier maken op een Cloud Service-instantie. Ondersteuning voor adaptieve Forms op basis van XFA is echter niet beschikbaar voor AEM Forms as a Cloud Service SDK (Local Development Environment). Als u van plan bent om op XFA-Gebaseerde AanpassingsForms met AEM Forms as a Cloud Service SDK te gebruiken, contacteer de Steun van de Adobe met details van uw gebruiksgeval en specifieke vereisten.
 
 <!-- * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
 
   Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment). -->
 
-* **Kan ik inhoud migreren van een locatie op locatie of [!DNL Adobe-Managed Services] omgevingen [!DNL Forms] as a Cloud Service omgeving?**
-Ja, u kunt uw aangepaste code, inhoud en elementen migreren van Op locatie of [!DNL Adobe-Managed Services] omgevingen [!DNL Forms] as a Cloud Service omgeving. Zie voor gedetailleerde instructies [Migreren naar as a Cloud Service Forms](migrate-to-forms-as-a-cloud-service.md).
+* **Kan ik inhoud migreren van een locatie op locatie of [!DNL Adobe-Managed Services] omgevingen [!DNL Forms] as a Cloud Service milieu?**
+Ja, u kunt uw aangepaste code, inhoud en elementen migreren van Op locatie of [!DNL Adobe-Managed Services] omgevingen [!DNL Forms] as a Cloud Service omgeving. Zie voor gedetailleerde instructies [Migreren naar Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
 
 <!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
@@ -62,7 +62,7 @@ Functies voor beveiligde inhoud die in de cache worden geplaatst, zijn standaard
 
 * **Ik heb een gelokaliseerd adaptief formulier; hiermee wordt de gelokaliseerde versie niet weergegeven? Wat zou de oorzaak kunnen zijn en hoe moet dit worden opgelost?**
 
-  De URL-conventie van gelokaliseerde adaptieve Forms ondersteunt nu het opgeven van een landinstelling in de URL. Met de nieuwe URL-conventie kunnen gelokaliseerde formulieren op een verzender of CDN in cache worden geplaatst. Gebruik in een Cloud Service-omgeving de URL-indeling `http://host:port/content/forms/af/<afName>.<locale>.html` een gelokaliseerde versie van een adaptief formulier aanvragen in plaats van `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe raadt aan Dispatcher of CDN in cache te plaatsen. Hiermee kunt u de rendersnelheid van voorgevulde formulieren verbeteren.
+  De URL-conventie van gelokaliseerde adaptieve Forms ondersteunt nu het opgeven van een landinstelling in de URL. Met de nieuwe URL-conventie kunnen gelokaliseerde formulieren op een Dispatcher of CDN in cache worden geplaatst. Gebruik in een Cloud Service-omgeving de URL-indeling `http://host:port/content/forms/af/<afName>.<locale>.html` een gelokaliseerde versie van een adaptief formulier aanvragen in plaats van `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe raadt u aan Dispatcher- of CDN-caching te gebruiken. Hiermee kunt u de rendersnelheid van voorgevulde formulieren verbeteren.
 
 * **Ik heb een adaptief formulier bijgewerkt; de bijgewerkte versie is niet beschikbaar voor klanten om te gebruiken?**
 CDN vernieuwt de cache standaard na elke 5 minuten, wacht 5 minuten en controleert vervolgens op de bijgewerkte versie.

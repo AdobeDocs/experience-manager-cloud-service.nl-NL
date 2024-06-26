@@ -1,21 +1,23 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: AEM Forms REST Endpoint, Submit aan REST Endpoint, Post Gegevens aan REST URL, vormt de Actie van het Eindpunt van REST
+keywords: AEM Forms REST Endpoint, Submit naar REST Endpoint, Post Data to REST URL, Configure REST Endpoint Action
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
+title: "Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '535'
 ht-degree: 1%
 
 ---
-
 
 # Een adaptieve vorm configureren voor het verzenden van REST-eindpunten
 
 Gebruik de **[!UICONTROL Submit to REST Endpoint]** actie om de verzonden gegevens naar een REST URL te posten. De URL kan van een interne (de server waarop het formulier wordt gegenereerd) of van een externe server zijn.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak om acties in te dienen voor de verwerking van formulierverzendingen. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md)  artikel.
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md)  artikel.
 
 ## Voordelen
 
@@ -75,4 +77,3 @@ Verzendactie configureren:
 ## Verwante artikelen
 
 {{af-submit-action}}
-

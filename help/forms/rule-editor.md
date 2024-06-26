@@ -2,10 +2,10 @@
 title: Hoe te om de regelredacteur te gebruiken om regels aan vormgebieden toe te voegen om dynamisch gedrag toe te voegen en complexe logica aan een adaptieve vorm te bouwen?
 description: Met de Adaptive Forms-regeleditor kunt u dynamisch gedrag toevoegen en complexe logica in formulieren opnemen zonder codes of scripts.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '6292'
 ht-degree: 0%
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (stichtingscomponenten) | Dit artikel |
-| AEM as a Cloud Service (kerncomponenten) | [Klik hier](/help/forms/rule-editor-core-components.md) |
+| AEM as a Cloud Service (Foundation Components) | Dit artikel |
+| AEM as a Cloud Service (Core Components) | [Klik hier](/help/forms/rule-editor-core-components.md) |
 | AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## Overzicht {#overview}
@@ -561,7 +561,7 @@ Begeleidend `jsdoc` is vereist:
 * Als u aangepaste configuratie en beschrijving wilt
 * Omdat er meerdere manieren zijn om een functie in te declareren `JavaScript,` Met opmerkingen kunt u de functies bijhouden.
 
-De redacteur van de regel steunt syntaxis JavaScript ES2015 voor manuscripten en douanefuncties.
+De redacteur van de regel steunt de syntaxis van JavaScript ES2015 voor manuscripten en douanefuncties.
 Zie voor meer informatie [jsdoc.app](https://jsdoc.app/).
 
 Ondersteund `jsdoc` tags:
@@ -637,7 +637,7 @@ Syntaxis: `@this currentComponent`
 
 U wilt bijvoorbeeld een aangepaste functie toevoegen die het gebied van een vierkant berekent. De zijlengte is de gebruikersinvoer naar de aangepaste functie, die wordt geaccepteerd met een numeriek vak in het formulier. De berekende uitvoer wordt weergegeven in een ander numeriek vak in het formulier. Als u een aangepaste functie wilt toevoegen, moet u eerst een clientbibliotheek maken en deze vervolgens toevoegen aan de CRX-opslagplaats.
 
-Voer de volgende stappen uit om een clientbibliotheek te maken en deze toe te voegen aan de CRX-opslagplaats:
+Voer de volgende stappen uit om een clientbibliotheek te maken en deze toe te voegen in de CRX-opslagplaats:
 
 1. Maak een clientbibliotheek. Zie voor meer informatie [Client-Side bibliotheken gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. In CRXDE, voeg een bezit toe `categories`met tekenreekstype als waarde `customfunction` aan de `clientlib` map.
@@ -646,7 +646,7 @@ Voer de volgende stappen uit om een clientbibliotheek te maken en deze toe te vo
    >
    >`customfunction`is een voorbeeldcategorie. U kunt elke naam kiezen voor de categorie die u maakt in het dialoogvenster `clientlib`map.
 
-Nadat u de clientbibliotheek in de CRX-opslagplaats hebt toegevoegd, gebruikt u deze in uw Adaptief formulier. Hiermee kunt u uw aangepaste functie als regel in uw formulier gebruiken. Voer de volgende stappen uit om de clientbibliotheek toe te voegen aan uw adaptieve formulier:
+Nadat u de clientbibliotheek in de CRX-opslagplaats hebt toegevoegd, gebruikt u deze in uw adaptieve formulier. Hiermee kunt u uw aangepaste functie als regel in uw formulier gebruiken. Voer de volgende stappen uit om de clientbibliotheek toe te voegen aan uw adaptieve formulier:
 
 1. Open het formulier in de bewerkingsmodus.
 Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en selecteert u **[!UICONTROL Open]**.

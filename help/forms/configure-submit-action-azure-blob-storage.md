@@ -3,19 +3,21 @@ Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
 Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
 keywords: Azure Blob Storage-integratie met AEM Forms, gegevens verzenden naar Azure Storage, Azure Storage Configuration in AEM Forms maken, Azure Blob Storage gebruiken in Adaptive Forms Submit Action
 feature: Adaptive Forms, Core Components
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
+title: "Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptief formulier verzenden naar Azure Blob Storage
 
 De **[!UICONTROL Submit to Azure Blob Storage]**  Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® Azure-portal. U kunt de formuliergegevens, bestanden, bijlagen of Document of Record verzenden naar de aangesloten Azure Storage-containers.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak om acties in te dienen voor de verwerking van formulierverzendingen. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md) artikel.
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md) artikel.
 
 ## Voordelen
 
