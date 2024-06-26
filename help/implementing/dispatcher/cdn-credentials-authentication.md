@@ -4,9 +4,9 @@ description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 73d0a4a73a3e97a91b2276c86d3ed1324de8c361
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ Adobe-verstrekte CDN heeft verscheidene eigenschappen en de diensten, waarvan so
 
 * De HTTP- kopbalwaarde die door de Adobe CDN wordt gebruikt om verzoeken te bevestigen die van een klant-beheerde CDN komen.
 * Het API-token dat wordt gebruikt om bronnen in de CDN-cache leeg te maken.
+* Een lijst met combinaties van gebruikersnaam en wachtwoord waarmee toegang kan worden verkregen tot beperkte inhoud door het verzenden van een Basic Authentication-formulier.
+
 
 Elk van deze, met inbegrip van de configuratiesyntaxis, wordt beschreven in zijn eigen sectie hieronder. De [Algemene instelling](#common-setup) de sectie illustreert de opstelling gemeenschappelijk voor zowel, als plaatsing. Tot slot is er een sectie over hoe te [roteren, toetsen](#rotating-secrets), wat als een goede veiligheidspraktijk wordt beschouwd.
 
@@ -29,7 +31,7 @@ Zoals beschreven in het [CDN in AEM as a Cloud Service](/help/implementing/dispa
 
 Als deel van de opstelling, moeten de Adobe CDN en de Klant CDN over een waarde van overeenkomen `X-AEM-Edge-Key` HTTP-header. Deze waarde wordt geplaatst op elk verzoek, bij Klant CDN, alvorens het aan Adobe CDN wordt verpletterd, die dan bevestigt dat de waarde zoals verwacht is, zodat kan het andere kopballen van HTTP vertrouwen, met inbegrip van die die helpen het verzoek aan de aangewezen AEM oorsprong leiden.
 
-De `X-AEM-Edge-Key` Deze waarde wordt gedeclareerd met de onderstaande syntaxis. Zie de [Algemene instelling](#common-setup) te leren hoe u het kunt implementeren.
+De `X-AEM-Edge-Key` wordt gedeclareerd met de onderstaande syntaxis, waarbij de werkelijke waarde(n) wordt vermeld door de eigenschappen edgeKey1 en edgeKey2. Zie de [Algemene instelling](#common-setup) sectie leren hoe te om de configuratie op te stellen.
 
 ```
 kind: "CDN"
@@ -55,12 +57,12 @@ De syntaxis voor de `X-AEM-Edge-Key` waarde omvat:
 
 * Type, versie en metagegevens.
 * Gegevensknooppunt dat een onderliggend item bevat `experimental_authentication` node (het experimentele voorvoegsel wordt verwijderd wanneer het kenmerk wordt losgelaten).
-* Onder experimentele_authenticatie, met één authenticatorknoop en één regelknoop, allebei waarvan series zijn.
+* Onder `experimental_authentication`, één `authenticators` knooppunt en één `rules` node, die beide arrays zijn.
 * Authenticatoren: hiermee kunt u een type token of referentie declareren. Dit is in dit geval een Edge-sleutel. Het bevat de volgende eigenschappen:
    * name - a descriptive string.
-   * type - moet rand zijn.
-   * edgeKey1 - de waarde ervan moet naar een geheim token verwijzen, dat niet in een it moet worden opgeslagen, maar als een [Omgevingsvariabele van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) van het type geheim. Selecteer Alle voor het veld Toegepaste service. Het wordt aanbevolen de waarde (bijvoorbeeld`${{CDN_EDGEKEY_052824}}`) weerspiegelt de dag waarop deze is toegevoegd.
-   * edgeKey2 - wordt gebruikt voor het roteren van geheimen, die in [roteren van geheimen](#rotating-secrets) hieronder. Ten minste één van `edgeKey1` en `edgeKey2` moeten worden aangegeven.
+   * type - moet `edge`.
+   * edgeKey1 - de waarde van de *X-AEM-Edge Key*, die naar een geheim token moet verwijzen, dat niet in de put moet worden opgeslagen, maar als een [Omgevingsvariabele van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) van het type geheim. Selecteer Alle voor het veld Toegepaste service. Het wordt aanbevolen de waarde (bijvoorbeeld`${{CDN_EDGEKEY_052824}}`) weerspiegelt de dag waarop deze is toegevoegd.
+   * edgeKey2 - wordt gebruikt voor het roteren van geheimen, die in [roteren van geheimen](#rotating-secrets) hieronder. Definieer het op dezelfde manier als edgeKey1. Ten minste één van `edgeKey1` en `edgeKey2` moeten worden aangegeven.
 <!--   * OnFailure - defines the action, either `log` or `block`, when a request doesn't match either `edgeKey1` or `edgeKey2`. For `log`, request processing will continue, while `block` will serve a 403 error. The `log` value is useful when testing a new token on a live site since you can first confirm that the CDN is correctly accepting the new token before changing to `block` mode; it also reduces the chance of lost connectivity between the customer CDN and the Adobe CDN, as a result of an incorrect configuration. -->
 * Regels: hiermee kunt u aangeven welke van de authenticatoren moeten worden gebruikt en of dit voor de publicatie- en/of voorvertoningslaag is.  Het omvat:
    * name - a descriptive string.
@@ -68,7 +70,7 @@ De syntaxis voor de `X-AEM-Edge-Key` waarde omvat:
    * action - must specify &quot;authenticate&quot;, with the intended authenticator referenced.
 
 >[!NOTE]
->De sleutel van de Rand moet als a worden gevormd [Omgevingsvariabele van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) variabele van het type `secret`, alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld.
+>De sleutel van de Rand moet als a worden gevormd [Omgevingsvariabele van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) variabele van het type `secret` (met *Alles* geselecteerd voor Toegepaste Dienst), alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld.
 
 ## API-token wissen {#purge-API-token}
 
@@ -87,18 +89,18 @@ data:
          purgeKey1: ${{CDN_PURGEKEY_031224}}
          purgeKey2: ${{CDN_PURGEKEY_021225}}
     rules:
-     - name: purge-auth-rule
-       when: { reqProperty: tier, equals: "publish" }
-       action:
-         type: authenticate
-         authenticator: purge-auth
+       - name: purge-auth-rule
+         when: { reqProperty: tier, equals: "publish" }
+         action:
+           type: authenticate
+           authenticator: purge-auth
 ```
 
 De syntaxis bevat:
 
 * type, versie en metagegevens.
 * gegevensknooppunt dat een onderliggend item bevat `experimental_authentication` node (het experimentele voorvoegsel wordt verwijderd wanneer het kenmerk wordt losgelaten).
-* Onder `experimental_authentication`, met één authenticator-knooppunt.
+* Onder `experimental_authentication`, één `authenticators` knooppunt en één `rules` node, die beide arrays zijn.
 * Authenticatoren: hiermee kunt u een type token of referentie declareren. Dit is in dit geval een purge key. Het bevat de volgende eigenschappen:
    * name - a descriptive string.
    * type - moet leeg zijn .
@@ -109,6 +111,59 @@ De syntaxis bevat:
    * name - a descriptive string
    * Wanneer - een voorwaarde die bepaalt wanneer de regel, volgens de syntaxis in zou moeten worden geëvalueerd [Regels voor verkeersfilters](/help/security/traffic-filter-rules-including-waf.md) artikel. Doorgaans bevat dit een vergelijking van de huidige laag (bijvoorbeeld publiceren).
    * action - must specify &quot;authenticate&quot;, with the intended authenticator referenced.
+
+>[!NOTE]
+>De sleutel van de Rand moet als a worden gevormd [Omgevingsvariabele van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) variabele van het type `secret`, alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld.
+
+## Basisverificatie {#basic-auth}
+
+Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze functie is vooral bedoeld voor eenvoudige gevallen van verificatiegebruik, zoals het beoordelen van inhoud door belanghebbenden uit het bedrijfsleven, in plaats van als een volledige oplossing voor toegangsrechten voor eindgebruikers.
+
+De eindgebruiker zal een basisauthandboek als het volgende ervaren:
+
+![basicauth-dialog](/help/implementing/dispatcher/assets/basic-auth-dialog.png)
+
+
+De syntaxis wordt gedeclareerd zoals hieronder beschreven. Zie de [Algemene instelling](#common-setup) hieronder voor informatie over hoe het te implementeren.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_authentication:
+    authenticators:
+       - name: my-basic-authenticator
+         type: basic
+         credentials:
+           - user: johndoe
+             password: ${{JOHN_DOE_PASSWORD}}
+           - user: janedoe
+             password: ${{JANE_DOE_PASSWORD}}
+    rules:
+       - name: basic-auth-rule
+         when: { reqProperty: path, like: "/summercampaign" }
+         action:
+           type: authenticate
+           authenticator: my-basic-authenticator
+```
+
+De syntaxis bevat:
+
+* type, versie en metagegevens.
+* een gegevensknooppunt dat een `experimental_authentication` node (het experimentele voorvoegsel wordt verwijderd wanneer het kenmerk wordt losgelaten).
+* Onder `experimental_authentication`, één `authenticators` knooppunt en één `rules` node, die beide arrays zijn.
+* Authenticators: in dit scenario verklaart basisauthenticator, die de volgende structuur heeft:
+   * name - a descriptive string
+   * type - moet `basic`
+   * een array met referenties, die elk de volgende naam/waarde-paren bevatten en die eindgebruikers kunnen invoeren in het standaarddialoogvenster voor de verificatie:
+      * gebruiker - de naam van de gebruiker
+      * password - zijn waarde moet naar een geheim teken verwijzen, dat niet in git zou moeten worden opgeslagen, maar eerder als de Variabelen van het Milieu van de Manager van de Wolk van type geheim (met **Alles** geselecteerd als het de dienstgebied)
+* Regels: laat u verklaren welke authentificators zouden moeten worden gebruikt, en welke middelen zouden moeten worden beschermd. Elke regel bevat:
+   * name - a descriptive string
+   * Wanneer - een voorwaarde die bepaalt wanneer de regel, volgens de syntaxis in zou moeten worden geëvalueerd [Regels voor verkeersfilters](/help/security/traffic-filter-rules-including-waf.md) artikel. Doorgaans bevat dit een vergelijking van de publicatielaag of specifieke paden.
+   * action - moet &quot;voor authentiek verklaren&quot;specificeren, met de voorgenomen authentificator referenced, die basisauth voor dit scenario is
 
 >[!NOTE]
 >De sleutel van de Rand moet als a worden gevormd [Omgevingsvariabele van Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) variabele van het type `secret`, alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld.
