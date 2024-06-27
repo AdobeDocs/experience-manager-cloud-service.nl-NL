@@ -1,9 +1,9 @@
 ---
 title: Content Hub - Overzicht
 description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe je het kunt openen en hoe je feedback kunt geven over de opties die in Content Hub beschikbaar zijn.
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ De meest voorkomende eigenschappen in Content Hub, zoals zoekfilters, velden die
 
 **Niet-creatieve producten in staat stellen inhoud te bewerken en opnieuw te mixen terwijl ze onder het merk blijven**
 
-Content Hub integreert met Adobe Express (als u rechten hebt voor Adobe Express) om afbeeldingen te bewerken met de ingesloten Express-editor om verbluffende afbeeldingsvarianten te maken terwijl u in het merk blijft.
+Met Content Hub kunt u nieuwe inhoud maken met Adobe Express (als u rechten hebt voor Adoben Express). U kunt bestaande inhoud bewerken met gebruiksvriendelijke gereedschappen, onmerkvariaties maken met sjablonen en merkelementen en nieuwe inhoud maken met de nieuwste GenAI-mogelijkheden van de Adobe Firefly.
 
 **Meer informatie over het gebruik van inhoud in verschillende teams**
 
@@ -61,6 +61,8 @@ Als u productgerelateerde verbeteringen wilt aanbevelen, klikt u op **[!UICONTRO
 
 Geef een onderwerp, een beschrijving van de aanbeveling en voeg zo nodig bestanden bij. Klikken **[!UICONTROL Submit]** om de feedback naar de Adobe te verzenden.
 
+![Content Hub-feedback](assets/content-hub-feedback.png)
+
 ## Content Hub instellen voor uw team {#setup-content-hub}
 
 Ga als volgt te werk om Content Hub voor uw team in te stellen:
@@ -69,13 +71,13 @@ Ga als volgt te werk om Content Hub voor uw team in te stellen:
 
 1. [On-board Content Hub-beheerder](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [Key Content Hub-gebruikers toevoegen](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [Key Content Hub-gebruikers toevoegen](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [DAM-auteurs of -beheerders kunnen elementen goedkeuren met behulp van Experience Manager-elementen](approve-assets.md).
 
 1. [Beheerders kunnen de Content Hub-gebruikersinterface configureren voor andere gebruikers](configure-content-hub-ui-options.md).
 
-1. [Content Hub toegang verlenen tot meer gebruikers van het team](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [Content Hub toegang verlenen tot meer gebruikers van het team](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [Access Content Hub Portal](#access-content-hub).
 
