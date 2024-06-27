@@ -2,7 +2,7 @@
 title: Leverings-API's
 description: Leer hoe u de leverings-API's kunt gebruiken.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -62,4 +62,3 @@ headers: {
 Voor het aanroepen van de API&#39;s voor levering is een IMS-token vereist in het dialoogvenster `Authorization` details om een beperkt actief te leveren. De token IMS wordt opgehaald van een technische account. Zie [Credentials van AEM as a Cloud Service ophalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) om een nieuwe technische rekening op te stellen. Zie [Het toegangstoken genereren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) om het token IMS te genereren en het op de juiste wijze te gebruiken in de aanvraagheader van de API voor levering.
 
 Als u aanvraagvoorbeelden, responsvoorbeelden en responscodes wilt weergeven, raadpleegt u [Leverings-API&#39;s](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat).
-

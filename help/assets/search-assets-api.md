@@ -2,7 +2,7 @@
 title: Zoeken in Assets API
 description: Leer hoe u de zoek-Assets API gebruikt.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -58,4 +58,3 @@ headers: {
 Om de zoek-API aan te roepen, is een IMS-token vereist voor het definiëren van de functie `Authorization` details. De token IMS wordt opgehaald van een technische account. Zie [Credentials van AEM as a Cloud Service ophalen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) om een nieuwe technische rekening op te stellen. Zie [Het toegangstoken genereren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) om de IMS-token te genereren en deze op de juiste wijze te gebruiken in de aanvraagheader van de API voor zoekmiddelen.
 
 Als u aanvraagvoorbeelden, responsvoorbeelden en responscodes wilt weergeven, raadpleegt u [Zoeken in Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
-
