@@ -1,46 +1,69 @@
 ---
-title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 50698fd78cf9ebfd1d92fdb29d53988410ac2970
+title: Opmerkingen bij de release 2024.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Opmerkingen bij de release 2024.5.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+source-git-commit: 076d2a6aa6e02a7ef6f9347f2dc36ca02103c130
 workflow-type: tm+mt
-source-wordcount: '1970'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
 
-# Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2024.5.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de release met functies voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de opmerkingen bij de release met functies voor de versie 2024.5.0 van [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
 >Van hieruit kunt u navigeren om notities van eerdere versies, zoals 2022 of 2023, vrij te geven.
 >
->Kijk eens naar de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie over de volgende activering van functies voor [!DNL Experience Manager] as a Cloud Service.
+>Kijk eens naar de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie over de volgende activering van functies voor [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Zie [Recente documentatieupdates](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) voor meer informatie over documentatie-updates die niet rechtstreeks verband houden met een release.
+>Zie [Recente documentatieupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor meer informatie over documentatie-updates die niet rechtstreeks verband houden met een release.
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2024.6.0) is 25 juni 2024. De volgende release met functies (2024.7.0) is gepland voor 27 juli 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2024.5.0) is 30 mei 2024. De volgende release met functies (2024.6.0) is gepland voor 27 juni 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
 U vindt de meest recente opmerkingen in de onderhoudsrelease [hier](/help/release-notes/maintenance/latest.md).
 
-<!--  ## Release Video {#release-video}
+## Video vrijgeven {#release-video}
 
-Have a look at the June 2024 Release Overview video for a summary of the features added in the 2024.6.0 release:
+Bekijk de video Overzicht van de release van mei 2024 voor een overzicht van de functies die in de release van 2024.5.0 zijn toegevoegd:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
--->
-
 ## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
+
+### Nieuwe functies in sites {#sites-new-features}
+
+#### AEM vertaalintegratie {#translation-integration}
+
+Handelingen en workflows voor het vertalen van inhoud activeren nu gebeurtenissen om relevante processtappen en statussen van externe toepassingen te kunnen volgen. De volgende gebeurtenissen worden gegenereerd. Gebruikers kunnen zich abonneren op gebeurtenissen met de Adobe Developer Console.
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
+#### Real Use Monitoring (RUM) Data Service {#real-use-monitoring}
+
+* **[Real Use Monitoring (RUM) Data Service is nu GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** gegevensverzameling op de client mogelijk maken voor AEM as a Cloud Service.
+De Echte Dienst van de Controle van het Gebruik, de cliënt-zijinzameling, biedt een preciezere weerspiegeling van interactie aan, die een betrouwbare maat van websitebetrokkenheid verzekeren. Het laat klanten met geavanceerde inzichten in hun paginaverkeer en prestaties toe. Het is een geweldige kans om meer te weten te komen over de prestaties van uw pagina en meer inzicht te krijgen in de manier waarop u deze kunt verbeteren.
+
+#### AEM Authoring voor Edge Delivery Services {#edge-enhancements}
+
+Verbeterde stabiliteit en diverse verbeteringen voor een betere ontwerpervaring.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
@@ -58,39 +81,18 @@ Wilt u de functie proberen en feedback delen? Stuur een e-mail naar aemcs-headle
 
 ## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies in Experience Manager Assets {#new-features-assets}
+### Nieuwe functies in de beheerweergave {#admin-view-new-features}
 
-**Content Hub**
-
-Content Hub is beschikbaar als onderdeel van Experience Manager Assets as a Cloud Service voor het democratiseren van de toegang tot online-inhoud voor organisaties en hun zakelijke partners. Met Content Hub kunt u eenvoudig middelen zoeken en distribueren, nieuwe on-brand variaties hergebruiken en maken en de activering op schaal versnellen.
-
-![Content Hub-gebruikersinterface](/help/release-notes/assets/content-hub-ui.png)
-
-**Dynamic Media met OpenAPI-mogelijkheden**
-
-Dynamic Media met OpenAPI-mogelijkheden breidt het DAM uit over Adobe- en andere toepassingen van andere leveranciers, waardoor toegang mogelijk is tot door een merk goedgekeurde digitale middelen in elk kanaal, via Asset Selector of OpenAPI-stack. Belangrijke elementen - geen binaire kopieën, elementen zijn geoptimaliseerd en getransformeerd aan de rand voor snelle prestaties, leveren elementen openbaar of veilig.
-
-![Nieuw Dynamic Media-gegevensstroomdiagram](/help/assets/assets/dm-openapi-dfd.png)
-
+* WebM is nu een ondersteund uitvoerbestand in verwerkingsprofiel voor video.
+* MP4 wordt nu ondersteund in de native integratie van AEM in Express (importeren en exporteren).
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
 
-**Meer opties beschikbaar op het dashboard voor Assets Insights**
+**Publish-middelen voor AEM en Dynamic Media**
 
-Asset Count op type en formaat zijn nu beschikbaar in het Assets Insights-dashboard. Deze opties bieden realtime gegevens in uw Assets-weergaveomgeving over het aantal en percentage van de elementen op groottebereik en type element.
+Met Experience Manager Assets kunt u nu snel [middelen publiceren naar Experience Manager en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md) de Assets-weergave gebruiken zonder over te schakelen op de Admin-weergave. U kunt elementen publiceren tijdens het uploaden, bladeren en zoeken in elementen.
 
-<!--
-
-
-**Content Credentials**
-
-Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
-
-When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
-
-![check publish status1](/help/release-notes/assets/content-credentials.png)
-
--->
+![publicatiestatus controleren1](/help/assets/assets/check-publish-status1.png)
 
 ## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
 
@@ -100,13 +102,13 @@ When looking at the asset details, any image with content credentials added, suc
 
 -->
 
-### Nieuwe functies in AEM Forms {#forms-new-prerelease-features}
+### Nieuwe functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
 
 #### Verbeterde Visual Rule Editor voor op kerncomponenten gebaseerde adaptieve Forms
 
 Deze versie brengt een significante verbetering aan de visuele regelredacteur voor adaptieve vormen die op kerncomponenten worden gebaseerd. U kunt nu het volgende doen:
 
-* Creeer regels in de Visuele redacteur van de Regel aan [De standaardberichten voor het verzenden van formulieren met succes/fout negeren](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* Creeer regels in de Visuele redacteur van de Regel aan [Standaardberichten voor het verzenden van formulieren negeren/mislukken](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * In de Adaptive Forms Rule Editor hebt u de mogelijkheid toegevoegd om [verschillende typen velden selecteren voor de WHEN-bewerking](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
@@ -114,11 +116,13 @@ Deze versie brengt een significante verbetering aan de visuele regelredacteur vo
 
 * Gebruik de [**Opslaan als concept**](/help/forms/save-core-component-based-form-as-draft.md) om gedeeltelijk ingevulde formulieren op te slaan en later te verzenden. Dit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
 
+
+
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
 Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties voordat iemand anders ze ontwikkelt. Het programma biedt toegang tot meerdere innovaties.
 
-Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties die beschikbaar zijn in het kader van het programma voor vroege toegang, zie [Documentatie over AEM Forms Early Access Program](/help/forms/early-access-ea-features.md).
+Deze release bevat een overzicht van de innovaties die in deze release zijn geleverd. Voor de volledige lijst van innovaties die beschikbaar zijn in het kader van het programma voor vroege toegang, zie [Documentatie over AEM Forms Early Access Program](/help/forms/early-access-ea-features.md).
 
 #### Verbeterde methoden voor botbeveiliging
 
@@ -148,55 +152,66 @@ Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens.
 
 ## [!DNL Experience Manager] als [!DNL Cloud Service] Stichting {#foundation}
 
-### Kennisgevingen van het Centrum voor activiteiten in verband met de gezondheid van de inhoud Vroege adopter-programma {#actions-center-notifications}
+### OAuth Server-aan-Server geloofsbrieven steun voor AEM integratie met andere oplossingen van de Adobe {#S2S-OAuth-credentials}
 
-[Handelingencentrum](/help/operations/actions-center.md) verzendt e-mailberichten wanneer zich belangrijke incidenten voordoen, of als er iets aan uw code of configuratie is waar u proactieve actie moet ondernemen. We hebben nu verschillende nieuwe soorten berichten geïntroduceerd die zijn gekoppeld aan de status van uw inhoud. Dit is beschikbaar via een programma voor vroege adoptie. Neem contact op met de klantenservice van de Adobe om deel te nemen.
+Adobe Developer Console wordt gebruikt om referenties te genereren voor toegang tot verschillende API&#39;s. Een van die referentietypen, de referenties van de Servicerekening (JWT), is vervangen door OAuth Server-to-Server-referenties, die AEM Cloud Service nu ondersteunt voor integratie met andere Adobe-oplossingen zoals Adobe Analytics en Adobe Target.
 
-#### Pagina&#39;s bevatten veel knooppunten {#page-nodes}
+[Meer informatie over de afgekeurde afbeelding](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) en [leren hoe u de gebruikersinterface van de AEM gebruikt](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) om integratie met andere oplossingen van de Adobe te vormen.
 
-Een groot aantal knooppunten kan de renderprestaties verlagen en de laadtijden van de pagina verminderen. Ontvang een pro-actieve melding via het Actions Center wanneer een groot aantal knooppunten op een pagina wordt gedetecteerd, zodat u de nodige stappen kunt ondernemen om het totale aantal knooppunten op een pagina te verminderen.
+### Verkeerspiek bij waarschuwingen over oorsprong {#traffic-spike-origin}
 
-#### Groot aantal actieve workflowinstanties {#running-workflows}
+[Proactieve meldingen ontvangen](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert) door het Centrum van Acties wanneer de verkeerspatronen bij de oorsprong van een aanval wijzen DDoS, die u toestaan om de regels van de verkeersfilter te onderzoeken en te vormen.
 
-De prestaties van de workflowengine worden beïnvloed wanneer er een groot aantal actieve workflows is in de ontwerpomgeving. U ontvangt een proactief bericht via het Actions Center wanneer een groot aantal actieve workflowinstanties wordt gedetecteerd, zodat u een purge-taak kunt configureren om actieve workflows te beëindigen die niet vereist zijn.
+### Nieuwe Eigenschappen voor RDEs {#RDE-new-features}
 
-#### Gebruikers die rechtstreeks aan aangepaste groepen zijn toegevoegd {#users-customgroups}
+[Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) Laat ontwikkelaars snel wijzigingen implementeren, evalueren en testen in de cloud. In de maand juni worden verschillende nieuwe functies geïntroduceerd. We nodigen u ook uit om rechtstreeks contact op te nemen met Adobe engineering op de [RDE Disorder-kanaal](https://discord.com/channels/1131492224371277874/1245304281184079872).
 
-U ontvangt een proactieve melding via het Actions Center wanneer gebruikers rechtstreeks aan aangepaste groepen worden toegevoegd, zodat u de beste praktijken van IMS kunt volgen om gebruikers aan relevante IMS-groepen toe te voegen en vervolgens de IMS-groepen als leden van AEM groepen toe te voegen.
 
-#### Ontbrekende JCR-inhoud {#jcr-content}
+#### RDE-ondersteuning voor front-end code met gebruik van Sitethema&#39;s en Sitesjablonen {#rde-frontend}
 
-U ontvangt een proactieve melding via Actions Center wanneer ontbrekende JCR-inhoud wordt gedetecteerd, zodat u de ontbrekende JCR-inhoud kunt toevoegen en mislukken van bepaalde AEM Assets-functies kunt voorkomen.
+[RDE&#39;s ondersteunen nu front-end code](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) gebaseerd op [sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) en [sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md), voor vroege adoptie. Met RDEs, wordt dit gedaan gebruikend een richtlijn van de bevellijn, eerder dan een [front-end pijpleiding](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
-#### Voltooide workflows niet gewist {#workflows}
+#### Verbeterd registreren voor RDEs {#rde-logging}
 
-U ontvangt een proactieve melding via het Actions Center wanneer voltooide workflows gedurende 90 dagen niet zijn gewist, zodat u de prestaties van de workflowengine kunt verbeteren door het aantal workflows te minimaliseren.
+Tijdens het opsporen van fouten in code in een RDE kunnen ontwikkelaars nu [vorm en stroom logboeken productiever](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging), met gebruik van de opdrachtregel en zonder wijzigingen van de eigenschappen van OSGI in versiebeheer. Functies:
 
-#### Ontbrekende verkoopbron {#sling-resource}
+* logboekniveaus declareren op een pakket- of klassenniveau
+* het aanpassen van het formaat van de logboekoutput
+* meerdere logbestanden tegelijk streamen
 
-Ontvang een pro-actieve bericht door het Centrum van Acties wanneer een ontbrekende het Verdelen middel wordt ontdekt, toestaand u om de ontbrekende het Verkopen bron toe te voegen en mislukking van bepaalde eigenschappen van AEM Assets te vermijden.
+#### Verbeteringen voor RDE CLI {#rde-cli-enhancements}
 
-### Inhoudsgerelateerde programma&#39;s voor vroege adoptie {#foundation-early-adopter}
+De interface van de het bevellijn van RDE heeft sommige nieuwe eigenschappen, die de ontwikkelaarservaring verbeteren:
+
+* [de opdracht setup is interactief](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), waardoor het gemakkelijker wordt te kiezen tussen organisaties, programma&#39;s en omgevingen. Het is nu ook mogelijk deze waarden op de opdrachtregel te overschrijven.
+* [stille modus](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) voor een minder uitgebreide uitvoer.
+* [json, modus](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) voor nuttige output wanneer programmatically aangehaald.
+
+### Nieuwe meldingen in het actiecentrum {#actions-center-notifications}
+
+[Handelingencentrum](/help/operations/actions-center.md) verzendt e-mailberichten wanneer zich belangrijke incidenten voordoen, of als er iets aan uw code of configuratie is waar u proactieve actie moet ondernemen. Er zijn drie nieuwe typen meldingen:
+
+* te veel uitgaande verbindingen door geavanceerde voorzien van een netwerkinfrastructuur
+* gebruik van een verouderde indeling voor het toewijzen van gebruikers aan services
+* er een potentiële DDoS-aanval gaande is
+
+### Programma&#39;s voor vroege adoptie {#foundation-early-adopter}
 
 E-mail **<aemcs-cdn-config-adopter@adobe.com>**, waarin wordt aangegeven in welke van de onderstaande programma&#39;s voor vroege adoptie u geïnteresseerd bent.
 
-#### Basisverificatie bij de CDN (programma voor vroege adopters) {#basicauth-cdn}
-
-Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze functie is vooral bedoeld voor eenvoudige gevallen van verificatiegebruik, zoals het beoordelen van inhoud door belanghebbenden uit het bedrijfsleven, in plaats van als een volledige oplossing voor toegangsrechten voor eindgebruikers. De lijst van gebruikersbenaming en wachtwoorden in beheerd door een configuratiedossier in git dat via de Pijpleiding van de Configuratie, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [Meer informatie](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
-
-#### Inhoud op de CDN wissen met een zelfbedieningsAPI-sleutel (programma voor vroege adopters) {#purge-cdn}
+#### Inhoud op de CDN wissen met een API-sleutel voor zelfbediening (programma voor vroege adopters) {#purge-cdn}
 
 Registreer een CDN zuivering API sleutel op een zelfbediening manier, en gebruik het om inhoud bij CDN, of globaal, of voor één of meerdere middelen ongeldig te maken. [Meer informatie](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Self-Serve Creatie van x-AEM-Edge-Sleutel voor klant-Beheerde CDN (BYOCDN) (Vroege Programma van de Aannemer) {#byocdn-keys}
+#### Zelf-serververwezenlijking van x-AEM-Edge-Sleutel voor klant-beheerde CDN (BYOCDN) (het Vroege Programma van de Aannemer) {#byocdn-keys}
 
 Eerder, was een steunkaartje nodig om X-AEM-Edge-Sleutel te produceren die voor configuratie van een klant-beheerde CDN wordt vereist. Dit kan nu op een zelfbediende manier door een configuratiedossier worden verwezenlijkt dat gebruikend de Pijpleiding van de Configuratie wordt opgesteld, verwijderend om het even welke vertraging in het aan boord gaan van een nieuw milieu. [Meer informatie](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Client-Side Redirects (Early-adopter-programma) {#client-side-redirects-early-adopter}
+#### Client-side omleidingen (Early-adopter-programma) {#client-side-redirects-early-adopter}
 
 Vorm 301/302 cliënt-zij richt in broncontrole, en stel aan CDN op. [Meer informatie](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Er zijn al verschillende andere functies beschikbaar die betrekking hebben op [CDN-configuratie](/help/implementing/dispatcher/cdn-configuring-traffic.md), met inbegrip van verzoek en reactietransformaties, en verpletterend verkeer aan off-AEM plaatsen.
 
@@ -206,7 +221,7 @@ Onlangs vrijgegeven [Regels voor verkeersfilters](/help/security/traffic-filter-
 
 Sluit zich aan bij het vroege adoptieprogramma zodat kunt u worden gealarmeerd wanneer uw regels van de verkeersfilter worden teweeggebracht. De e-mailberichten van het Centrum van acties zullen u op de hoogte houden wanneer bepaalde verkeersvoorwaarden voorkomen zodat kunt u aangewezen maatregelen nemen.
 
-#### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (vroege adopter-programma) {#apache-rewritemaps-early-adopter}
+#### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (programma voor vroege adoptie) {#apache-rewritemaps-early-adopter}
 
 Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten op die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en laadt ze, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Dit opent mogelijkheden voor een bedrijfsgebruiker om omleidingen te verklaren gebruikend of een spreadsheet of UI, zoals die aangeboden door ACS Commons Redirect de Manager van de Kaart of die als deel van een klantentoepassing wordt gecreeerd. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
@@ -214,16 +229,14 @@ Net als AEM 6.5 neemt Apache/dispatcher herschrijfkaarten op die op een specifie
 
 De Adobe Beheerde CDN ondersteunt nu [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), een opmaaktaal voor dynamische webinhoud-verzameling op randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### Real User Monitoring (RUM) Data Service (Early Introducter Program)
-
-* **[U kunt gebruikmaken van de gegevensservice Real User Monitoring (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** om client-side verzameling voor AEM as a Cloud Service in te schakelen.
-Real User Monitoring (RUM) Data Service biedt een nauwkeuriger weergave van gebruikersinteracties, waardoor een betrouwbare maatstaf voor de betrokkenheid van websites wordt geboden. Het is een geweldige kans om geavanceerde inzichten in uw paginaprestaties te krijgen. Terwijl dit voor klanten nuttig is die of Adobe-beheerde CDN of niet-Adobe-beheerde CDN gebruiken. Bovendien, voor klanten die een niet-Adobe beheerde CDN gebruiken, kan het geautomatiseerde verkeer nu voor hen worden toegelaten, waarbij de behoefte wordt verwijderd om het even welk verkeersrapport met Adobe te delen.
-
-  Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-rum-adopter@adobe.com`, samen met uw domeinnaam voor elk van de omgevingen waarvoor u RUM wilt inschakelen vanaf uw e-mailadres dat is gekoppeld aan uw Adobe ID. Het productteam van Adobe zal dan de Echte Dienst van Gegevens van de Controle van de Gebruiker (RUM) voor u toelaten.
-
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
-U vindt een volledige lijst met nieuwe en verbeterde functies van de nieuwste release van Adobe Experience Manager Guides [hier](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+* **Een onderwerp of zijn elementen aan een Fragment van de Ervaring Publish**
+Nu, staat Experience Manager Guides u toe om een onderwerp of zijn elementen aan een Fragment van de Ervaring te publiceren. Een ervaringsfragment is een modulaire inhoudseenheid waarin zowel de inhoud als de lay-out worden geïntegreerd.  De Fragmenten van de ervaring zijn nuttig en kunnen u helpen verenigbare en het in dienst nemen ervaringen tot stand brengen.
+* **Mogelijkheid om de metagegevens van de onderwerpelementen door te geven aan de uitvoer van de native PDF**
+U kunt de meta-gegevens van de onderwerpactiva toevoegen terwijl het produceren van de Eigen output van PDF. Deze eigenschap helpt u specifieke meta-gegevens voor verschillende onderwerpen, zoals de onderwerptitel en de auteur, aan de kopballen en footers van de onderwerppagina toevoegen.
+
+Voor meer informatie over de nieuwe en verbeterde functies en problemen die in de release zijn opgelost, raadpleegt u de [Experience Manager Guides-release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

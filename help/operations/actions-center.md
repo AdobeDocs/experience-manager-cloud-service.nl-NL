@@ -4,9 +4,9 @@ description: Gebruik het actiecentrum om incidenten en andere belangrijke inform
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 7630481aab89b31057509f23aab334e17c537257
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 AEM als Cloud Service verzendt de e-mailberichten van het Centrum van Acties wanneer de kritieke incidenten voorkomen die onmiddellijke actie vereisen, en pro-actieve aanbevelingen voor optimalisaties. De voorbeelden omvatten een geblokkeerde rij, of een het verlopen reeks geloofsbrieven; de volledige reeks berichten van het Centrum van Acties kunnen in worden bekeken [tabel hieronder](#supported-notification-types), die na verloop van tijd zal toenemen.
 
-Wanneer een e-mailbericht van het Centrum van Acties wordt ontvangen, kan het worden geklikt om AEM Centrum van Acties van de as a Cloud Service met een pop-up te openen die extra context toont die de actie verklaart voor een klant te nemen.
+Wanneer een e-mailbericht van het Centrum van Acties wordt ontvangen, kan het worden geklikt om het Centrum van Acties van AEM as a Cloud Service met een pop-up te openen die extra context toont waarin de actie voor een klant wordt verklaard te nemen.
 
 Naast het weergeven van informatie over het zojuist geklikte e-mailbericht, fungeert het Actions Center als een hub waarin u de set met huidige en oudere meldingen kunt weergeven en beheren. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service heeft verschillende soorten meldingen, maar er wordt alle
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Operationele incidenten | Kritieke incidenten die onmiddellijke actie vereisen | Gebruiker toegewezen aan productprofiel &quot;Incident Notification - Cloud Service&quot; | X |
 | Proactieve aanbevelingen | Optimalisaties die moeten worden gepland | Gebruiker toegewezen aan productprofiel &quot;Proactieve kennisgeving - Cloud Service&quot; | X |
-| Klassepijplusstatussen van Cloud Manager | Informatie over de toestand van uw pijpleidingen | Gebruiker met de rollen Bedrijfs van de Eigenaar, van de Manager van het Programma, of van de Manager van de Plaatsing, &quot;Andere&quot;checkbox binnen geselecteerd [Voorkeuren Experience Cloud](https://experience.adobe.com/preferences), als [hier beschreven](/help/implementing/cloud-manager/notifications.md). |                           |
+| Cloud Manager-pijpleidingstatussen | Informatie over de toestand van uw pijpleidingen | Gebruiker met de rollen Bedrijfs van de Eigenaar, van de Manager van het Programma, of van de Manager van de Plaatsing, &quot;Andere&quot;checkbox binnen geselecteerd [Voorkeuren Experience Cloud](https://experience.adobe.com/preferences), als [hier beschreven](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Ondersteunde berichttypen {#supported-notification-types}
 
@@ -76,6 +76,12 @@ In de volgende tabel worden de berichttypen weergegeven die momenteel worden ond
 | Geblokkeerde replicatiewachtrij | Incident | Blokkeren van wachtrij opheffen door instructies in het dialoogvenster [Replicatiedocumentatie](/help/operations/replication.md#troubleshooting) |
 | Ongeldige aaneengesloten GraphQL-query | Incident | Corrigeer de ongeldige GraphQL-query door te verwijzen naar de [Blijvende documentatie over probleemoplossing voor GraphQL-query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Verkeerspiek bij oorsprong | Incident | Protect uw oorsprong door de regels van de het verkeersfilter van de tariefgrens te vormen die bij lagere drempels dan de standaardverkeerspiek bij oorsprongsalarm teweegbrengen.  Zie de [Het blokkeren Dos en aanvallen DDoS gebruikend verkeersregels](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) sectie van de documentatie van de Regels van de Filter van het Verkeer, die verwijzingen een leerprogramma. |
+| Pagina&#39;s bevatten veel knooppunten | Proactief | Het totale aantal knooppunten op een pagina verminderen. Zie [Documentatie over de complexiteit van pagina](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
+| Groot aantal actieve workflowinstanties | Proactief | Beëindig actieve workflows die niet meer nodig zijn. Leer hoe u [een zuiveringstaak configureren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | S2S-certificaat vervalt | Proactief | Leer hoe u een referentie kunt vernieuwen in het dialoogvenster [Access Tokens genereren voor documentatie van server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Aantal hoge verbindingen | Proactief | Meer informatie over het samenvoegen van verbindingen in [Verbindingspoolen naast de documentatie van het Geavanceerde Voorzien van een netwerk](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Verouderde gebruikerstoewijzing voor de service | Proactief | Leer hoe u de nieuwere indeling voor gebruikerstoewijzingen voor verkoopservices gebruikt, zoals aangegeven in [Beste praktijken voor het Verkopen van de Toewijzing van de Gebruiker van de Dienst en de Definitie van de Gebruiker van de Dienst](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| Aantal hoge verbindingen | Proactief | Meer informatie over het samenvoegen van verbindingen in het dialoogvenster [Geavanceerde netwerkdocumentatie](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Aantal hoge verbindingen | Proactief | Meer informatie over het samenvoegen van verbindingen in het dialoogvenster [Geavanceerde netwerkdocumentatie](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
+| Gebruikers die rechtstreeks aan een aangepaste groep zijn toegevoegd | Proactief | Gebruikers moeten worden toegevoegd aan relevante IMS-groepen en deze IMS-groepen moeten worden toegevoegd als leden van AEM groepen. Uitlijnen met [IMS best practices](/help/security/ims-support.md) | |
+| Ontbrekende JCR-inhoud | Proactief | Voeg het ontbrekende knooppunt voor JCR-inhoud toe. Zie [Documentatie voor Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Voltooide workflows niet gewist | Proactief | Minimaliseer het aantal workflowinstanties en verbeter de prestaties door workflowinstanties van meer dan 90 dagen oud te wissen. Leer hoe u [onderhoudstaken configureren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) | |
+| Ontbrekend Sling-brontype in pagina | Proactief | Ontbrekend knooppunt voor Sling-resource toevoegen. Zie [Documentatie voor Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |

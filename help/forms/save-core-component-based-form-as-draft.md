@@ -4,14 +4,13 @@ description: Leer hoe u op basiscomponenten gebaseerde adaptieve formulieren als
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
 
-<span class="preview"> Dit artikel bevat inhoud voor de functie voor pre-release. De pre-release functie is alleen toegankelijk via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # Adaptief formulier op basis van kerncomponent opslaan als concept {#save-af-form}
 

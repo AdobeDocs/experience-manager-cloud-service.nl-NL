@@ -4,7 +4,7 @@ description: Aanvullende informatie voor Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ba12264bfe58f9d6d6cbecea86ea690b5393d6d4
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versie | 2024,5,0 |
+| Versie | 2024,6,0 |
 | Type | Continue updates |
 | Beschikbaarheidsdatum | Continue update |
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 Met het model voor continue afgifte in [!DNL Adobe Experience Manager] as a Cloud Service wordt de toepassing automatisch bijgewerkt. Er zijn twee soorten updates, eigenschapversies en onderhoudsversies:
 
 * [Functiereleases](/help/release-notes/release-notes-cloud/release-notes-current.md) worden uitgevoerd met een voorspelbare maandelijkse frequentie en zijn gericht op nieuwe capaciteiten en productinnovaties.
-* [Onderhoudsreleases](/help/release-notes/maintenance/latest.md) worden vaak uitgevoerd en zijn gericht op beveiligingsupdates, foutoplossingen en prestatieverbeteringen. Dit zorgt ervoor dat [!DNL Adobe Experience Manager] as a Cloud Service is altijd up-to-date met om het even welke kritieke moeilijke situaties.
+* [Onderhoudsreleases](/help/release-notes/maintenance/latest.md) worden vaak uitgevoerd en zijn gericht op beveiligingsupdates, foutoplossingen en prestatieverbeteringen. Dit zorgt ervoor dat [!DNL Adobe Experience Manager] as a Cloud Service is altijd up-to-date met alle kritieke oplossingen.
 
 Naast de snelheid van de innovatie, [!DNL Adobe Experience Manager] as a Cloud Service biedt ook de flexibiliteit om de volgende functies een volledige maand van tevoren voor te vertonen voordat de functies in productie worden genomen. Zo kunt u de impact van een aanstaande release op hun organisatie beoordelen door de functies in uw eigen aangepaste omgeving te testen en de interne gebruikers ruim van tevoren op te leiden/voor te bereiden. Als u een AEM invoegtoepassing hebt, zoals formulieren, kunt u ervoor zorgen dat deze ook wordt bijgewerkt door de oplossing in het dialoogvenster [programma-instellingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
