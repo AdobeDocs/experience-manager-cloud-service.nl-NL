@@ -1,9 +1,9 @@
 ---
 title: Content Hub - Overzicht
 description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe je het kunt openen en hoe je feedback kunt geven over de opties die in Content Hub beschikbaar zijn.
-source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
+source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Met Content Hub kunt u nieuwe inhoud maken met Adobe Express (als u rechten hebt
 
 ## Vereisten {#prerequisites-content-hub}
 
-Experience Manager as a Cloud Service release juni
+Content Hub vereist een ontwikkelomgeving voor de productie van Experience Manager as a Cloud Service, release 2024.6 of hoger (minimale versie is 2024.6.16799).
 
 ## Hoe kan ik Content Hub openen? {#access-content-hub}
 
-Nadat u een gebruiker aan de [Content Hub-productprofiel](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub kunt u op de volgende manieren benaderen:
+[Na het instellen van Content Hub](#deploy-content-hub) en een gebruiker toevoegen aan de [Content Hub-productprofiel](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub kunt u op de volgende manieren benaderen:
 
 * Gebruik de volgende koppeling om Content Hub te openen:
 
