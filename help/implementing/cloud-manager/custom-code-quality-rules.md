@@ -1,6 +1,6 @@
 ---
 title: Aangepaste regels voor codekwaliteit
-description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering.
+description: Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die Cloud Manager uitvoert als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -17,9 +17,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Aangepaste regels voor codekwaliteit"
->abstract="Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering."
+>abstract="Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die Cloud Manager uitvoert als onderdeel van het testen van de kwaliteit van de code. Ze zijn gebaseerd op best practices van Adobe Experience Manager Engineering."
 
-Op deze pagina worden de kwaliteitsregels voor aangepaste code beschreven die door Cloud Manager worden uitgevoerd als onderdeel van [testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md). Zij zijn gebaseerd op beste praktijken van de Techniek van de Experience Manager.
+Op deze pagina worden de regels voor de kwaliteit van aangepaste code beschreven die Cloud Manager uitvoert als onderdeel van [testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md). Zij zijn gebaseerd op beste praktijken van de Techniek van de Experience Manager.
 
 >[!NOTE]
 >
@@ -572,7 +572,7 @@ public class myClass {
 
 ## Regels voor OakPAL-inhoud {#oakpal-rules}
 
-In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manager zijn uitgevoerd.
+In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manager worden uitgevoerd.
 
 >[!NOTE]
 >
@@ -608,7 +608,7 @@ public class DontDoThis implements Page {
 * **Ernst**: Blocker
 * **Sinds**: 2021.8.0
 
-De veelvoudige uit-van-de-doos indexen van het Eak van de Experience Manager omvatten een configuratie van de Tika en de aanpassingen van deze indexen moeten een configuratie van de Tika omvatten. Deze regel controleert aanpassingen van `damAssetLucene`, `lucene`, en `graphqlConfig` indexeert en roept een kwestie aan de orde als of `tika`  knooppunt ontbreekt of als het `tika` node mist een onderliggend knooppunt genaamd `config.xml`.
+De veelvoudige uit-van-de-doos indexen van Oak van de Experience Manager omvatten een configuratie van de Tika en de aanpassingen van deze indexen moeten een configuratie van de Tika omvatten. Deze regel controleert aanpassingen van `damAssetLucene`, `lucene`, en `graphqlConfig` indexeert en roept een kwestie aan de orde als of `tika`  knooppunt ontbreekt of als het `tika` node mist een onderliggend knooppunt genaamd `config.xml`.
 
 Zie [indexeringsdocumentatie](/help/operations/indexing.md#preparing-the-new-index-definition) voor meer informatie over het aanpassen van indexdefinities.
 
@@ -638,14 +638,14 @@ Zie [indexeringsdocumentatie](/help/operations/indexing.md#preparing-the-new-ind
         + config.xml
 ```
 
-### Aangepaste indexen van luzerak mogen niet synchroon zijn {#oakpal-indexasync}
+### Aangepaste Oak-indexen voor Lucene mogen niet synchroon zijn {#oakpal-indexasync}
 
 * **Sleutel**: IndexAsyncProperty
 * **Type**: Fout
 * **Ernst**: Blocker
 * **Sinds**: 2021.8.0
 
-Eik-indexen van het type `lucene` moet altijd asynchroon worden geïndexeerd. Als u dit niet doet, kan dit leiden tot instabiliteit van het systeem. Meer informatie over de structuur van Lucene-indexen vindt u in de [Oak-documentatie.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
+Oak-indexen van het type `lucene` moet altijd asynchroon worden geïndexeerd. Als u dit niet doet, kan dit leiden tot instabiliteit van het systeem. Meer informatie over de structuur van Lucene-indexen vindt u in de [Oak-documentatie.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
 
 #### Niet-compatibele code {#non-compliant-code-indexasync}
 
@@ -681,7 +681,7 @@ Eik-indexen van het type `lucene` moet altijd asynchroon worden geïndexeerd. A
 * **Ernst**: Blocker
 * **Sinds**: 2021.6.0
 
-Als u wilt dat het zoeken naar middelen correct werkt in Experience Manager Assets, kunt u de opties `damAssetLucene` De eiken-index moet een aantal richtlijnen volgen die specifiek zijn voor deze index. Deze regel controleert of de indexdefinitie een multi-getaxeerde genoemd bezit moet hebben `tags` die de waarde bevat `visualSimilaritySearch`.
+Als u wilt dat het zoeken naar middelen correct werkt in Experience Manager Assets, kunt u de opties `damAssetLucene` Oak-index moet een aantal richtlijnen volgen die specifiek zijn voor deze index. Deze regel controleert of de indexdefinitie een multi-getaxeerde genoemd bezit moet hebben `tags` die de waarde bevat `visualSimilaritySearch`.
 
 #### Niet-compatibele code {#non-compliant-code-damAssetLucene}
 
@@ -842,7 +842,7 @@ Zie [Projectstructuur Experience Manager](/help/implementing/developing/introduc
 * **Ernst**: Klein
 * **Sinds**: Versie 2020.5.0
 
-De steun voor omgekeerde replicatie is niet beschikbaar in de plaatsingen van de Cloud Service, zoals die als deel van as a Cloud Service Experience Manager wordt beschreven [releaseopmerkingen](/help/release-notes/aem-cloud-changes.md#replication-agents).
+De steun voor omgekeerde replicatie is niet beschikbaar in de plaatsingen van de Cloud Service, zoals die als deel van Experience Manager as a Cloud Service wordt beschreven [releaseopmerkingen](/help/release-notes/aem-cloud-changes.md#replication-agents).
 
 De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve oplossingen moeten contacteren.
 
@@ -884,9 +884,9 @@ Clientbibliotheken van Experience Managers kunnen statische bronnen bevatten, zo
 * **Ernst**: Primair
 * **Sinds**: Versie 2021.2.0
 
-Met de overgang naar assetmicro-services voor de verwerking van bedrijfsmiddelen op as a Cloud Service Experience Manager zijn verschillende workflowprocessen die in on-premise en AMS-versies van Experience Manager werden gebruikt, niet ondersteund of overbodig geworden.
+Met de overgang naar assetmicro-services voor middelenverwerking op as a Cloud Service Experience Manager zijn verschillende workflowprocessen die werden gebruikt in on-premise- en AMS-versies van Experience Manager, niet ondersteund of overbodig geworden.
 
-Het migratiehulpmiddel in [Experience Manager as a Cloud Service Assets GitHub-opslagplaats](https://github.com/adobe/aem-cloud-migration) kan worden gebruikt om workflowmodellen bij te werken tijdens de migratie naar as a Cloud Service Experience Manager.
+Het migratiehulpmiddel in [Experience Manager as a Cloud Service Assets GitHub-opslagplaats](https://github.com/adobe/aem-cloud-migration) kan worden gebruikt om workflowmodellen bij te werken tijdens de migratie naar Experience Manager as a Cloud Service.
 
 ### Het gebruik van statische sjablonen wordt afgeraden ten gunste van bewerkbare sjablonen {#oakpal-static-template}
 
@@ -917,7 +917,7 @@ Deze conversie kan worden vergemakkelijkt door de [Moderniseringsgereedschappen 
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager dwingt een strikt naamgevingsbeleid voor namen van uitvoeringsmodi en een strikte volgorde voor die uitvoermodi af. De lijst met ondersteunde uitvoermodi vindt u in het document [Distribueren naar as a Cloud Service Experience Manager](/help/implementing/deploying/overview.md#runmodes) en elke afwijking hiervan wordt als een probleem aangemerkt.
+De as a Cloud Service van de Experience Manager dwingt een strikt noemend beleid voor looppas wijzenamen en een strikte het opdracht geven tot voor die looppaswijzen af. De lijst met ondersteunde uitvoermodi vindt u in het document [Distribueren naar as a Cloud Service van Experience Manager](/help/implementing/deploying/overview.md#runmodes) en elke afwijking hiervan wordt als een probleem aangemerkt.
 
 ### De definitieknooppunten van de de onderzoeksindex van de douane moeten directe kinderen van /oak zijn:index {#oakpal-custom-search}
 
@@ -926,7 +926,7 @@ as a Cloud Service Experience Manager dwingt een strikt naamgevingsbeleid voor n
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) zijn directe onderliggende knooppunten van `/oak:index`. De indexen in andere plaatsen moeten worden bewogen om met as a Cloud Service Experience Manager compatibel te zijn. Het document bevat meer informatie over zoekindexen [Inhoud zoeken en indexeren](/help/operations/indexing.md).
+Experience Manager as a Cloud Service vereist dat de definities van de douaneonderzoek indexeren (namelijk knopen van type `oak:QueryIndexDefinition`) zijn directe onderliggende knooppunten van `/oak:index`. Indexen op andere locaties moeten worden verplaatst om compatibel te zijn met Experience Manager as a Cloud Service. Het document bevat meer informatie over zoekindexen [Inhoud zoeken en indexeren](/help/operations/indexing.md).
 
 ### Definitieknooppunten van aangepaste zoekindex moeten een compatVersion van 2 hebben {#oakpal-custom-search-compatVersion}
 
@@ -935,7 +935,7 @@ as a Cloud Service Experience Manager vereist dat definities van de aangepaste z
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (zoals knooppunten van het type) `oak:QueryIndexDefinition`) moet de `compatVersion` eigenschap ingesteld op `2`. Een andere waarde wordt niet ondersteund door as a Cloud Service Experience Manager. Meer informatie over zoekindexen vindt u op [Inhoud zoeken en indexeren](/help/operations/indexing.md).
+Experience Manager as a Cloud Service vereist dat de definities van de douaneonderzoek indexeren (zoals knopen van type `oak:QueryIndexDefinition`) moet de `compatVersion` eigenschap ingesteld op `2`. Andere waarden worden niet ondersteund door as a Cloud Service Experience Managers. Meer informatie over zoekindexen vindt u op [Inhoud zoeken en indexeren](/help/operations/indexing.md).
 
 ### Afstammende knooppunten van de definitieknooppunten van de aangepaste zoekindex moeten van het type &#39;niet-gestructureerd&#39; zijn {#oakpal-descendent-nodes}
 
@@ -962,7 +962,7 @@ Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex mo
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) moet een naam krijgen volgens een specifiek patroon dat in het document wordt beschreven [Inhoud zoeken en indexeren](/help/operations/indexing.md).
+Experience Manager as a Cloud Service vereist dat de definities van de douaneonderzoek indexeren (namelijk knopen van type `oak:QueryIndexDefinition`) moet een naam krijgen volgens een specifiek patroon dat in het document wordt beschreven [Inhoud zoeken en indexeren](/help/operations/indexing.md).
 
 ### De de definitieknooppunten van de onderzoeksindex van de douane moeten het indextype Lucene gebruiken  {#oakpal-index-type-lucene}
 
@@ -971,7 +971,7 @@ as a Cloud Service Experience Manager vereist dat definities van de aangepaste z
 * **Ernst**: Blocker
 * **Sinds**: Versie 2021.2.0 (type en ernst gewijzigd in 2021.8.0)
 
-as a Cloud Service Experience Manager vereist dat definities van de aangepaste zoekindex (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) een `type` eigenschap met de waarde ingesteld op `lucene`. Indexering met behulp van verouderde indextypen moet worden bijgewerkt voordat de migratie naar Experience Manager as a Cloud Service is. Zie [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
+Experience Manager as a Cloud Service vereist dat de definities van de douaneonderzoek indexeren (namelijk knopen van type `oak:QueryIndexDefinition`) een `type` eigenschap met de waarde ingesteld op `lucene`. Indexering met behulp van verouderde indextypen moet worden bijgewerkt voordat wordt overgeschakeld naar as a Cloud Service Experience Manager. Zie [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
 
 ### Definitieknooppunten van aangepaste zoekindex mogen geen eigenschap met de naam zaad bevatten {#oakpal-property-name-seed}
 
@@ -980,7 +980,7 @@ as a Cloud Service Experience Manager vereist dat definities van de aangepaste z
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van een eigenschap met de naam `seed`. Indexering met deze eigenschap moet worden bijgewerkt voordat de migratie naar de Experience Manager as a Cloud Service is. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
+Experience Manager as a Cloud Service verbiedt definities van aangepaste zoekindexen (knooppunten van het type) `oak:QueryIndexDefinition`) van een eigenschap met de naam `seed`. Indexering met deze eigenschap moet worden bijgewerkt voordat wordt overgeschakeld naar as a Cloud Service Experience Manager. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
 
 ### Definitie-knooppunten voor aangepaste zoekindex mogen geen eigenschap met de naam reindex bevatten {#oakpal-reindex-property}
 
@@ -989,7 +989,7 @@ as a Cloud Service Experience Manager staat definities van aangepaste zoekindexe
 * **Ernst**: Klein
 * **Sinds**: Versie 2021.2.0
 
-as a Cloud Service Experience Manager staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van een eigenschap met de naam `reindex`. Indexering met deze eigenschap moet worden bijgewerkt voordat de migratie naar de Experience Manager as a Cloud Service is. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
+Experience Manager as a Cloud Service verbiedt definities van aangepaste zoekindexen (knooppunten van het type) `oak:QueryIndexDefinition`) van een eigenschap met de naam `reindex`. Indexering met deze eigenschap moet worden bijgewerkt voordat wordt overgeschakeld naar as a Cloud Service Experience Manager. Zie het document [Inhoud zoeken en indexeren](/help/operations/indexing.md#how-to-use) voor meer informatie .
 
 ### Aangepaste DAM-knooppunten voor elementenwinst mogen geen queryPaths opgeven {#oakpal-damAssetLucene-queryPaths}
 
@@ -1206,7 +1206,7 @@ AEM Cloud Service staat definities van aangepaste zoekindexen (knooppunten van h
 
 >[!WARNING]
 >
->U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager Release 2024.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ### Aangepaste full-text indexdefinitie van type damAssetLucene moet correct worden voorgefixeerd met &#39;damAssetLucene&#39; {#oakpal-dam-asset-lucene}
 
@@ -1219,7 +1219,7 @@ AEM Cloud Service staat aangepaste definities van volledige-tekstindextypen niet
 
 >[!WARNING]
 >
->U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager Release 2024.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ### De knooppunten van de indexdefinitie mogen geen eigenschappen met dezelfde naam bevatten {#oakpal-index-property-name}
 
@@ -1232,7 +1232,7 @@ AEM Cloud Service staat definities van aangepaste zoekindexen niet toe (knooppun
 
 >[!WARNING]
 >
->U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager Release 2024.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ### Het aanpassen van bepaalde OTB-indexdefinities is verboden {#oakpal-customizing-ootb-index}
 
@@ -1252,7 +1252,7 @@ AEM Cloud Service staat ongeoorloofde wijzigingen van de volgende OOTB-indexen n
 
 >[!WARNING]
 >
->U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager Release 2024.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ### De conkenizers in de analysatoren moeten worden geconfigureerd met de naam &#39;tokenizer&#39;. {#oakpal-tokenizer}
 
@@ -1265,4 +1265,4 @@ AEM Cloud Service staat het maken van kenizers met onjuiste namen in analysatore
 
 >[!WARNING]
 >
->U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager Release 2024.](/help/implementing/cloud-manager/release-notes/current.md)

@@ -1,6 +1,6 @@
 ---
-title: Mijn werkruimte voor de weergave Middelen
-description: Mijn werkruimte is een pagina die aanpasbare visuele modules voor gemakkelijke toegang tot zeer belangrijke gebieden van het gebruikersinterface van Activa en informatie verstrekt die voor de gebruiker het meest relevant is.
+title: Weergave Mijn Workspace voor Assets
+description: Mijn Workspace is een pagina die aanpasbare visuele modules biedt voor eenvoudige toegang tot belangrijke gebieden van de Assets-gebruikersinterface en informatie die het meest relevant is voor de gebruiker.
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
@@ -11,16 +11,16 @@ ht-degree: 0%
 
 ---
 
-# Mijn werkruimte voor middelen {#my-workspace}
+# Mijn Workspace voor Assets {#my-workspace}
 
 >[!CONTEXTUALHELP]
 >id="assets_my_workspace"
->title="Mijn werkruimte"
->abstract="Middelen beschikken nu over een aanpasbare werkruimte die widgets biedt voor eenvoudige toegang tot belangrijke gebieden van de gebruikersinterface van Elementen en informatie die voor u het meest relevant is. Deze pagina dient als een one-stop oplossing om een overzicht van uw het werkpunten te verstrekken en snelle toegang tot zeer belangrijke werkschema&#39;s te geven."
+>title="Mijn Workspace"
+>abstract="Assets beschikt nu over een aanpasbare werkruimte die widgets biedt voor eenvoudige toegang tot belangrijke gebieden van de Assets-gebruikersinterface en informatie die voor u het meest relevant is. Deze pagina dient als een one-stop oplossing om een overzicht van uw het werkpunten te verstrekken en snelle toegang tot zeer belangrijke werkschema&#39;s te geven."
 
-Middelen beschikken nu over een aanpasbare werkruimte die widgets biedt voor eenvoudige toegang tot belangrijke gebieden van de gebruikersinterface van Elementen en informatie die voor u het meest relevant is. Deze pagina dient als een one-stop oplossing om een overzicht van uw het werkpunten te verstrekken en snelle toegang tot zeer belangrijke werkschema&#39;s te geven. Een handiger toegang tot deze opties verhoogt de efficiëntie en snelheid van de inhoud.
+Assets beschikt nu over een aanpasbare werkruimte die widgets biedt voor eenvoudige toegang tot belangrijke gebieden van de Assets-gebruikersinterface en informatie die voor u het meest relevant is. Deze pagina dient als een one-stop oplossing om een overzicht van uw het werkpunten te verstrekken en snelle toegang tot zeer belangrijke werkschema&#39;s te geven. Een handiger toegang tot deze opties verhoogt de efficiëntie en snelheid van de inhoud.
 
-U hebt toegang tot mijn werkruimte door op **[!UICONTROL My Workspace]** uit de items in het linkernavigatievenster. Mijn werkruimte bevat diverse widgets die Snelle toegang, Inzichten, Taken en Inhoudswidgets weergeven. U kunt configureren hoe deze widgets in uw werkruimte worden weergegeven op basis van uw voorkeuren.
+Je kunt Mijn Workspace openen door op **[!UICONTROL My Workspace]** uit de items in het linkernavigatievenster. Mijn Workspace bevat diverse widgets waarmee u kunt zien welke widgets Snel toegang, Inzichten, Taken en Inhoud hebben. U kunt bepalen hoe deze widgets in uw Workspace worden weergegeven op basis van uw voorkeuren.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Highlights upcoming features for Assets.
 
 **Snelle toegang**
 
-Bestanden, mappen en verzamelingen vastzetten om sneller toegang te krijgen tot deze items wanneer u deze later nodig hebt. Alle vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** van Mijn werkruimte. U kunt ze openen met Mijn werkruimte in plaats van naar de locatie te navigeren waar ze zijn opgeslagen in de opslagplaats.
+Bestanden, mappen en verzamelingen vastzetten om sneller toegang te krijgen tot deze items wanneer u deze later nodig hebt. Alle vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** sectie van Mijn Workspace. U kunt ze openen met Mijn Workspace in plaats van naar de locatie te navigeren waar ze zijn opgeslagen in de repository.
 
 Een element, map of verzameling vastzetten:
 
@@ -51,22 +51,22 @@ Een element, map of verzameling vastzetten:
    ![Items vastzetten voor groepen](assets/pin-items-for-groups.png)
 1. Klik op **[!UICONTROL Pin]**.
 
-   Het geselecteerde item wordt weergegeven in het dialoogvenster **[!UICONTROL Quick Access]** van Mijn werkruimte.
-   ![Taken in de werkruimte](assets/quick-access.png)
+   Het geselecteerde item wordt weergegeven in het dialoogvenster **[!UICONTROL Quick Access]** sectie van Mijn Workspace.
+   ![Taken in Workspace](assets/quick-access.png)
 
 **Inzichten**
 
-Beheerders kunnen een overzicht weergeven van het aantal downloads en uploads dat de afgelopen 30 dagen in de omgeving van middelen is uitgevoerd. U kunt op **[!UICONTROL View all]** om snel naar de pagina Inzichten voor gedetailleerdere dashboards te navigeren.
+Beheerders kunnen een overzicht weergeven van het aantal downloads en uploads dat de afgelopen 30 dagen in de Assets-omgeving is uitgevoerd. U kunt op **[!UICONTROL View all]** om snel naar de pagina Inzichten voor gedetailleerdere dashboards te navigeren.
 
-U kunt ook de belangrijkste gezochte termen weergeven, samen met het aantal keren dat deze termen binnen de implementatie van de middelenweergave worden doorzocht met de **Inzichten** van Mijn werkruimte. U kunt ook naar gedetailleerde inzichten navigeren om de belangrijkste zoekopdrachten in de afgelopen 30 dagen of 12 maanden weer te geven.
+U kunt ook de belangrijkste gezochte termen weergeven, samen met het aantal keren dat deze termen binnen de implementatie van de Assets-weergave worden doorzocht via de **Inzichten** sectie van Mijn Workspace. U kunt ook naar gedetailleerde inzichten navigeren om de belangrijkste zoekopdrachten in de afgelopen 30 dagen of 12 maanden weer te geven.
 
-![Inzichten in werkruimte](assets/insights.png)
+![Inzichten in Workspace](assets/insights.png)
 
 **Taken**
 
 Toont de lijst van taken momenteel aan u in worden toegewezen **[!UICONTROL My Tasks]** door u gemaakt in het dialoogvenster **[!UICONTROL Assigned tasks]** en de taken die u al in het dialoogvenster **[!UICONTROL Completed tasks]** tab. U kunt een taak selecteren en op **[!UICONTROL Complete ask]** om een taak goed te keuren of af te wijzen. U kunt ook een taak selecteren en op **[!UICONTROL Open Task Details]** om de taak weer te geven en deze goed te keuren, af te wijzen, te bewerken of te verwijderen.
 
-![Taken in de werkruimte](assets/tasks-workspace.png)
+![Taken in Workspace](assets/tasks-workspace.png)
 
 >[!NOTE]
 >
@@ -76,18 +76,18 @@ Toont de lijst van taken momenteel aan u in worden toegewezen **[!UICONTROL My T
 
 Hiermee geeft u een overzicht weer van de elementen, inclusief de lijst met elementen die u onlangs hebt bekeken. U kunt ervoor kiezen om elementen in de widget weer te geven in een Lijstweergave, Rasterweergave, Galerijweergave of Watervalweergave en de elementen te sorteren op naam, grootte en gewijzigde datum. U kunt ook een element selecteren om de elementdetails weer te geven of het uit de lijst met onlangs weergegeven elementen te verwijderen.
 
-De **[!UICONTROL Top Downloads]** worden de bovenste tien gedownloade elementen weergegeven die beschikbaar zijn in de weergave Elementen. U kunt selecteren om elementen weer te geven in de Lijstweergave of de Rasterweergave. In beide weergaven worden het indelingstype en het aantal downloads voor elk element weergegeven. U kunt ook een element selecteren en op **[!UICONTROL Details]** om de eigenschappen ervan weer te geven.
+De **[!UICONTROL Top Downloads]** worden de bovenste tien gedownloade middelen weergegeven die beschikbaar zijn in uw Assets-weergaveomgeving. U kunt selecteren om elementen weer te geven in de Lijstweergave of de Rasterweergave. In beide weergaven worden het indelingstype en het aantal downloads voor elk element weergegeven. U kunt ook een element selecteren en op **[!UICONTROL Details]** om de eigenschappen ervan weer te geven.
 
-![Inhoudswidget in werkruimte](assets/workspace-content.png)
+![Inhoudswidget in Workspace](assets/workspace-content.png)
 
-## Mijn werkruimte aanpassen {#configure-widgets}
+## Mijn Workspace aanpassen {#configure-widgets}
 
-Alle widgets worden standaard weergegeven, maar u kunt de widgets die in Mijn werkruimte worden weergegeven, in- of uitschakelen. De voorkeuren zijn specifiek voor elke gebruiker.
+Alle widgets worden standaard weergegeven, maar u kunt de widgets die in Mijn Workspace worden weergegeven, in- of uitschakelen. De voorkeuren zijn specifiek voor elke gebruiker.
 
 1. Klikken **[!UICONTROL My Workspace]** beschikbaar in het linkernavigatievenster en klik **[!UICONTROL Customize]**.
 
-1. Schakel de schakeloptie uit voor de widget die u niet hoeft weer te geven in de werkruimte. U kunt een widget ook naar een geschikte locatie slepen om de weergavevolgorde in de werkruimte bij te werken.
+1. Schakel de schakeloptie uit voor de widget die u niet hoeft weer te geven in de Workspace. U kunt een widget ook naar een geschikte locatie slepen om de weergavevolgorde in de Workspace bij te werken.
 
 1. Klikken **[!UICONTROL Done]** om de wijzigingen op te slaan
 
-   ![Widgets aanpassen in werkruimte](assets/customize-workspace.png)
+   ![Widgets aanpassen in Workspace](assets/customize-workspace.png)

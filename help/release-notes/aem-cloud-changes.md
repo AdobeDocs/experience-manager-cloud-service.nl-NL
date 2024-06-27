@@ -1,6 +1,6 @@
 ---
 title: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service
-description: Opvallende wijzigingen in Adobe Experience Manager (AEM) as a Cloud Service.
+description: Notable Changes to Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 feature: Release Information
 role: Admin
@@ -18,8 +18,8 @@ Adobe Experience Manager (AEM) Cloud Service biedt veel nieuwe functies en mogel
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
 >title="Opvallende wijzigingen in AEM as a Cloud Service"
->abstract="Op dit tabblad kunt u inhoud weergeven die u helpt de verschillen tussen AEM op locatie of in Adobe Managed Services te begrijpen in vergelijking met AEM as a Cloud Service."
->additional-url="https://video.tv.adobe.com/v/330543" text="Evolutie van AEM as a Cloud Service"
+>abstract="Op dit tabblad kunt u inhoud weergeven die u helpt de verschillen te begrijpen tussen AEM op locatie of in Adobe Managed Services, in vergelijking met AEM as a Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Ontwikkeling van AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -45,7 +45,7 @@ De belangrijkste verschillen zijn te vinden op de volgende gebieden:
 
 * [Verwijderen van klassieke gebruikersinterface](#classic-ui)
 
-* [Levering op de publicatievorm](#publish-side-delivery)
+* [Publish-Side Delivery](#publish-side-delivery)
 
 * [Afhandeling en levering van bedrijfsmiddelen](#asset-handling)
 
@@ -89,7 +89,7 @@ In AEM Cloud Service wordt inhoud gepubliceerd met [Distributie van inhoud verko
 
 * Aangepaste workflows die bijvoorbeeld inhoud doorsturen naar replicatieagents van voorvertoningsservers.
 * Aanpassing aan replicatieagenten om inhoud om te zetten.
-* Het gebruiken van Omgekeerde Replicatie om inhoud van Publish terug naar Auteur te brengen.
+* Met Reverse Replication kunt u inhoud van Publish terugbrengen naar de auteur.
 
 Daarnaast worden de pauze- en uitschakelknoppen verwijderd uit de beheerconsole van de replicatieagent.
 
@@ -97,9 +97,9 @@ Daarnaast worden de pauze- en uitschakelknoppen verwijderd uit de beheerconsole 
 
 De klassieke gebruikersinterface is niet meer beschikbaar in AEM Cloud Service.
 
-## Levering op de publicatievorm {#publish-side-delivery}
+## Publish-Side Delivery {#publish-side-delivery}
 
-De versnelling van HTTP met inbegrip van CDN en verkeersbeheer voor de diensten van de Auteur en van de Publicatie worden verstrekt door gebrek in AEM Cloud Service.
+De versnelling van HTTP met inbegrip van CDN en verkeersbeheer voor de diensten van de Auteur en van Publish worden verstrekt door gebrek in AEM Cloud Service.
 
 Voor projecten die van AMS of een op-gebouw installatie overgaan, adviseert de Adobe sterk gebruikend ingebouwde CDN, omdat de eigenschappen binnen AEM Cloud Service voor CDN worden geoptimaliseerd verstrekt.
 

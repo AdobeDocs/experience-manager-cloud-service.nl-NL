@@ -18,7 +18,7 @@ ht-degree: 4%
 >title="AEM voor probleemoplossing"
 >abstract="De beste praktijken van het overzicht voor ononderbroken ontwikkeling en beheert logboeken samen met hulpmiddelen zoals de console &amp; CRXDE Lite van de Ontwikkelaar om met het oplossen van problemenkwesties met AEM te helpen"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Logbestanden openen en beheren"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="as a Cloud Service ontwikkelingsinstrumenten AEM"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service-ontwikkelingstools"
 
 Deze reis is het laatste deel, zodat leert u hoe te om op kwesties te controleren en prestaties te verbeteren nadat de migratie volledig is. U moet ervoor zorgen dat tijdelijke bestanden worden opgeschoond, best practices voor continue ontwikkeling controleren en logbestanden beheren.
 
@@ -28,17 +28,17 @@ In de vorige stap van de reis, leerde u hoe te om de migratie uit te voeren en [
 
 ## Doelstelling {#objective}
 
-In dit document worden de gereedschappen beschreven die beschikbaar zijn om problemen op te lossen in AEM as a Cloud Service omgevingen:
+In dit document worden de gereedschappen beschreven die beschikbaar zijn om problemen in AEM as a Cloud Service-omgevingen op te lossen:
 
 * **Developer Console**
 * **CRXDE Lite**
 * **Tool voor beheren van logbestanden**
 
-## Ontwerpconsole {#developer-console}
+## Developer Console {#developer-console}
 
-Foutopsporing AEM as a Cloud Service ontwikkelaarsomgevingen is beschikbaar in de Developer Console voor ontwikkelings-, stage- en productieomgevingen.
+Fouten opsporen in AEM as a Cloud Service-ontwikkelomgevingen is in de Developer Console beschikbaar voor ontwikkelings-, stage- en productieomgevingen.
 
-Zie [Implementatie van AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingsinstrumenten.
+Zie [Implementatie voor AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) voor meer informatie over ontwikkelingsinstrumenten.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -53,7 +53,7 @@ Zie [Ontwikkelen met CRXDE Lite](/help/implementing/developing/tools/crxde.md) v
 
 Gebruikers hebben toegang tot een lijst met beschikbare logbestanden voor de geselecteerde omgeving.
 
-Zie [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) voor meer informatie over het openen en beheren van logbestanden via de gebruikersinterface of de API via Cloud Manager.
+Zie [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md) om te leren tot logboeken toegang hebben en beheren door het gebruikersinterface of van API door Cloud Manager.
 
 ## Contact opnemen met ondersteuning {#contacting-support}
 
@@ -77,10 +77,10 @@ Deze cursussen na de migratie delen met belanghebbenden en teams binnen uw organ
 
 ## De reis eindigt - of wel? {#journey-ends}
 
-Gefeliciteerd! U hebt de AEM as a Cloud Service migratiereis voltooid! U zou een inzicht in moeten hebben hoe te:
+Gefeliciteerd! U hebt de AEM as a Cloud Service Migration Journey voltooid! U zou een inzicht in moeten hebben hoe te:
 
-* Ga aan de slag met de overgang naar AEM as a Cloud Service
-* Bepaal of uw implementatie klaar is om te worden verplaatst naar AEM as a Cloud Service
+* Ga aan de slag met AEM as a Cloud Service
+* Bepaal of uw implementatie klaar is om naar AEM as a Cloud Service te worden verplaatst
 * Uw code en inhoud in de cloud klaar maken
 * De migratie uitvoeren
 * Controleren op problemen en prestaties verbeteren

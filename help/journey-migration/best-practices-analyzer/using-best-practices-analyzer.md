@@ -53,9 +53,9 @@ De Analysator van Beste praktijken kan als zip dossier van het portaal van de Di
 >[!NOTE]
 >Download de Best Practices Analyzer van de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portaal.
 
-## Connectiviteit bronomgeving {#source-environment-connectivity}
+## Connectiviteit Source-omgeving {#source-environment-connectivity}
 
-De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u het door BPA gegenereerde rapport automatisch wilt uploaden naar Cloud Acceleration Manager, moeten de volgende eindpunten toegankelijk zijn vanuit de instantie die AEM wordt uitgevoerd:
+De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde gastheren kan bereiken die aan een Lijst van gewenste personen zijn toegevoegd. Als u het BPA-gegenereerde rapport automatisch naar Cloud Acceleration Manager wilt uploaden, moeten de volgende eindpunten toegankelijk zijn vanaf de instantie die AEM uitvoert:
 
 * De Azure-opslagservice: `casstorageprod.blob.core.windows.net`
 
@@ -67,7 +67,7 @@ De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde ga
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
 >title="Upload het rapport Best Practices Analyzer automatisch naar CAM"
->abstract="Geef de uploadsleutel voor BPA op om het gegenereerde BPA-rapport automatisch te uploaden naar de CAM (Cloud Acceleration Manager)."
+>abstract="Geef de uploadsleutel voor BPA op om het gegenereerde BPA-rapport automatisch te uploaden naar Cloud Acceleration Manager (CAM)."
 
 Volg deze sectie om te leren hoe te om het rapport van de Analysator van Beste praktijken te bekijken:
 
@@ -130,7 +130,7 @@ Bevindingen met betrekking tot [ACS-opdrachten](https://adobe-consulting-service
    ![afbeelding](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [documentatie](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om de verenigbaarheid met AEM as a Cloud Service te bepalen.
+   >De bevindingen van de ACS-Gemeenschappelijke Gemeenschap moeten niet worden genegeerd. Zie [documentatie](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) om de compatibiliteit met AEM as a Cloud Service te bepalen.
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}

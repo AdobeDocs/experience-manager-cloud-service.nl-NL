@@ -16,31 +16,31 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
 >title="Go-Live-voorbereiding"
->abstract="Om ervoor te zorgen dat AEM as a Cloud Service probleemloos en succesvol kan gaan werken, moet u plannen voor het bevriezen van code en inhoud, testversies, aanvullingen op inhoud, prestatietests, beveiligingstests en meer."
+>abstract="Om ervoor te zorgen dat AEM as a Cloud Service probleemloos en succesvol kan gaan werken, moet u plannen voor het bevriezen van code en inhoud, testversies, aanvulling van inhoud, prestatietests, beveiligingstests en meer."
 
-In dit deel van de reis, leert u hoe te om de migratie te plannen en uit te voeren zodra zowel de code als de inhoud klaar zijn om over aan AEM as a Cloud Service te worden bewogen. Bovendien leert u wat de beste praktijken en bekende beperkingen zijn wanneer u de migratie uitvoert.
+In dit gedeelte van de reis leert u hoe u de migratie kunt plannen en uitvoeren zodra zowel de code als de inhoud gereed zijn om naar AEM as a Cloud Service te worden verplaatst. Bovendien leert u wat de beste praktijken en bekende beperkingen zijn wanneer u de migratie uitvoert.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
 In de vorige fasen van de reis:
 
-* U hebt geleerd hoe u aan de slag kunt met de stap naar AEM as a Cloud Service in het dialoogvenster [Aan de slag](/help/journey-migration/getting-started.md) pagina.
+* U hebt geleerd hoe u aan de slag kunt met de overgang naar AEM as a Cloud Service in het deelvenster [Aan de slag](/help/journey-migration/getting-started.md) pagina.
 * Vastgesteld of uw implementatie gereed is om naar de cloud te worden verplaatst door het lezen van de [Gereedheidsfase](/help/journey-migration/readiness.md)
 * U bent vertrouwd met de gereedschappen en het proces waarmee u uw code en inhoud in de cloud kunt plaatsen [Implementatiefase](/help/journey-migration/implementation.md).
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe te om de migratie uit te voeren aan AEM as a Cloud Service zodra u met de vorige stappen van de reis vertrouwd bent. U leert hoe u de initiële migratie van productie uitvoert en de beste werkwijzen die u kunt volgen wanneer u naar AEM as a Cloud Service migreert.
+Dit document helpt u te begrijpen hoe u de migratie naar AEM as a Cloud Service kunt uitvoeren zodra u bekend bent met de vorige stappen van de reis. U leert hoe u de initiële migratie van uw productie kunt uitvoeren en de beste werkwijzen die u kunt volgen bij het migreren naar AEM as a Cloud Service.
 
 ## Oorspronkelijke productiemigratie {#initial-migration}
 
 Voordat u de migratie van de productie kunt uitvoeren, volgt u de stappen voor de implementatie en het bewijs van migratie die in het dialoogvenster [Strategie en tijdlijn voor migratie van inhoud](/help/journey-migration/implementation.md##strategy-timeline) van de [Implementatiefase](/help/journey-migration/implementation.md).
 
-* De migratie vanuit de productie starten op basis van de ervaring die u hebt opgedaan tijdens de migratie van het AEM as a Cloud Service stadium die op klonen is uitgevoerd:
+* De migratie vanuit productie starten op basis van de ervaring die u hebt opgedaan tijdens de AEM as a Cloud Service-migratie tijdens het uitvoeren van klonen:
    * Auteur
-   * Publiceren en publiceren
+   * Publish-Publish
 
-* Valideer de inhoud die in zowel de AEM as a Cloud Service auteur als publicatielagen wordt opgenomen.
+* Valideer de inhoud die in de AEM as a Cloud Service-auteur en -publicatielagen wordt opgenomen.
 * Geef het ontwerpteam van de inhoud de opdracht om te voorkomen dat inhoud op zowel de bron als de bestemming wordt verplaatst totdat de opname is voltooid
 * Nieuwe inhoud kan worden toegevoegd, bewerkt of verwijderd, maar u kunt het verplaatsen voorkomen. Dit geldt zowel voor de bron als voor de bestemming.
 * Neem de [tijd genomen](/help/journey-migration/implementation.md#gathering-data) voor volledige extractie en inname een schatting te hebben van de toekomstige aanvullende migratietermijnen.
@@ -69,7 +69,7 @@ Bovendien moet u plannen dat de inhoud wordt vastgezet wanneer de laatste aanvul
 
 Houd bij het plannen of uitvoeren van de migratie rekening met de volgende richtlijnen:
 
-* Migreren van auteur naar auteur en publiceren naar publicatie
+* Migreren van auteur naar auteur en Publish naar Publish
 * Vraag om een productiekloon die kan worden gebruikt om:
    * Statistieken over opslagplaatsen vastleggen
    * Bewijs van migratieactiviteiten
@@ -101,7 +101,7 @@ Houd er rekening mee dat de volledige inname mislukt als een van de volgende bep
 
 * Een JCR-knooppunt met een naam van meer dan 150 tekens
 * Een JCR-knooppunt dat groter is dan 16 MB
-* Elke gebruiker/groep met `rep:AuthorizableID` die al aanwezig zijn op AEM as a Cloud Service
+* Elke gebruiker/groep met `rep:AuthorizableID` die al op AEM as a Cloud Service aanwezig is
 * Als een middel dat wordt geëxtraheerd en ingepakt, naar een ander pad wordt verplaatst op de bron of de bestemming vóór de volgende herhaling van de migratie.
 
 ## Systeemgezondheid {#asset-health}
@@ -119,4 +119,4 @@ Voor meer informatie raadpleegt u de [Live checklist](/help/journey-onboarding/g
 
 ## Volgende functies {#what-is-next}
 
-Als u begrijpt hoe u de migratie naar AEM as a Cloud Service kunt uitvoeren, kunt u de knop [Nav. live](/help/journey-migration/post-go-live.md) pagina om de instantie vloeiend te laten werken.
+Als u begrijpt hoe u de migratie naar AEM as a Cloud Service kunt uitvoeren, kunt u de [Post-Go-Live](/help/journey-migration/post-go-live.md) pagina om de instantie vloeiend te laten werken.

@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Gereedheidsfase in Cloud Acceleration Manager {#readiness-phase-cam}
 
-Nadat u een project hebt gemaakt in de Cloud Acceleration Manager (CAM), kunt u nu de evaluatie van de huidige Adobe Experience Manager-implementatie (AEM) starten in de gereedheidsfase.
+Zodra u een project in Cloud Acceleration Manager (CAM) hebt gecreeerd, kunt u de beoordeling van uw huidige implementatie van Adobe Experience Manager (AEM) in de Readiness fase beginnen.
 
 De gereedheidsfase omvat:
 
@@ -38,7 +38,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
 >title="Analyserapport voor best practices"
->abstract="Het BPA-rapport kan naar CAM worden geüpload om er een analyse van te maken met betrekking tot de migratie naar AEM as a Cloud Service."
+>abstract="Het BPA-rapport kan naar CAM worden geüpload om een analyse daarvan te kunnen maken met betrekking tot de migratie naar AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Analysator van best practices gebruiken"
 
 1. Klikken **Controleren** van de **Analyse van best practices** kaart.
@@ -76,7 +76,7 @@ Ga als volgt te werk om naar de gereedheidsfase te navigeren:
 
 ### Afdrukvoorbeeld gebruiken {#print-preview-cam}
 
-U kunt de optie voor afdrukvoorvertoningen selecteren in Cloud Acceleration Manager om de rapporten af te drukken of om het rapport af te drukken naar een PDF-indeling, zodat u het gemakkelijk kunt delen.
+U kunt de optie voor afdrukvoorvertoningen in Cloud Acceleration Manager selecteren voor een afdrukbare voorvertoning van de rapporten of u kunt het rapport afdrukken in een PDF-indeling, zodat u het gemakkelijk kunt delen.
 
 Voer de onderstaande stappen uit:
 
@@ -148,7 +148,7 @@ De **Rapporteigenschappen** De kaart biedt informatie over rapporteigenschappen 
 
 #### Overzicht van rapporten {#report-overview}
 
-Dit **Overzicht van rapporten** kaart geeft de bevindingen en ernst van het rapport weer die van toepassing zijn bij het beoordelen van de gereedheid om over te gaan naar AEM as a Cloud Service, zoals in onderstaande afbeelding wordt getoond.
+Dit **Overzicht van rapporten** De kaart geeft de bevindingen en ernst van het rapport weer die van toepassing zijn bij het beoordelen van de gereedheid om naar AEM as a Cloud Service te verhuizen, zoals in onderstaande afbeelding wordt getoond.
 
 ![afbeelding](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -222,4 +222,4 @@ U kunt de volgende informatie bekijken vanaf dit tabblad:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u zich kunt aanmelden bij de functie voor de functie voor het maken van een project, kunt u nu verdergaan met het evalueren van de volgende stap in het dialoogvenster [Implementatiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).
+Nadat u hebt geleerd hoe u zich kunt aanmelden bij Cloud Acceleration Manager en hoe u een project kunt maken, kunt u nu verdergaan met het evalueren van de volgende stap in het dialoogvenster [Implementatiefase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).

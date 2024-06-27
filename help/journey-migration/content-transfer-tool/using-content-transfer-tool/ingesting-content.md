@@ -1,6 +1,6 @@
 ---
 title: Inhoud in Cloud Service invoegen
-description: Leer hoe u met de Cloud Acceleration Manager inhoud kunt opnemen van uw migratieset naar een bestemmings Cloud Service-instantie.
+description: Leer hoe u de Cloud Acceleration Manager gebruikt om inhoud van uw migratieset in te voeren in een Cloud Service-instantie van het doel.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Inhoud in Cloud Service invoegen {#ingesting-content}
 
-## Ingestieproces in Cloud Acceleration Manager {#ingestion-process}
+## Ingestieproces in de Cloud Acceleration Manager {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -21,7 +21,7 @@ ht-degree: 1%
 >abstract="Ingestie verwijst naar het opnemen van inhoud van de migratie die is ingesteld in de Cloud Service-instantie van de bestemming. De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="Extractie naar boven"
 
-Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van Cloud Acceleration Manager:
+Volg de onderstaande stappen om uw migratieset in te voeren met de Cloud Acceleration Manager:
 
 1. Ga naar Cloud Acceleration Manager. Klik op de projectkaart en klik op de kaart voor inhoudsoverdracht. Navigeren naar **Ingestietaken** en klik op **Nieuwe inname**
 
@@ -33,7 +33,7 @@ Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van 
 
 1. Geef de vereiste informatie op om een opname te maken.
 
-   * **Migratieset:** Selecteer de migratieset die de geëxtraheerde gegevens als bron bevat.
+   * **Migratieset:** Selecteer de migratieset die de geëxtraheerde gegevens als de Source bevat.
       * De Reeksen van de migratie zullen verlopen na een lange periode van inactiviteit, zodat wordt verwacht dat de inname vrij snel na de extractie plaatsvindt. Controleren [Vervaldatum migratieset](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor meer informatie.
 
    >[!TIP]
@@ -43,14 +43,14 @@ Voer de onderstaande stappen uit om uw migratieset in te voeren met gebruik van 
       * De oplossingen steunen geen bestemmingen van het type Snelle Milieu van de Ontwikkeling (RDE) of Voorproef, en zij verschijnen niet als mogelijke bestemmingskeus, zelfs als de gebruiker toegang tot het heeft.
       * Terwijl een migratiereeks in veelvoudige bestemmingen gelijktijdig kan worden opgenomen, kan een bestemming het doel van slechts één lopende of wachtende opname tegelijkertijd zijn.
 
-   * **Niveau:** Selecteer de laag. (Auteur/Publicatie).
+   * **Niveau:** Selecteer de laag. (Auteur/Publish).
       * Als de bron `Author`, wordt aanbevolen het geneesmiddel in te nemen in de `Author` laag op het doel. Evenzo als de bron `Publish`, moet het doel `Publish` ook.
 
    >[!NOTE]
    > Als de doellaag `Author`, wordt de auteurinstantie gesloten tijdens de lengte van de opname en niet beschikbaar voor gebruikers (bijvoorbeeld, auteurs of iedereen die onderhoud uitvoert). De reden is om het systeem te beschermen en om eventuele veranderingen te voorkomen die verloren zouden kunnen gaan of een innameconflict zouden veroorzaken. Zorg ervoor dat uw team zich hiervan bewust is. Houd er ook rekening mee dat de omgeving tijdens de opname door de auteur wordt genegeerd.
 
    * **Sluitereffect:** Kies de optie `Wipe` value
-      * De **Sluitereffect** Hiermee stelt u het beginpunt van de opname van het doel in. Indien **Sluitereffect** is ingeschakeld, wordt de bestemming, inclusief alle inhoud, teruggezet naar de versie van AEM die is opgegeven in Cloud Manager. Als deze optie niet is ingeschakeld, behoudt de bestemming de huidige inhoud als beginpunt.
+      * De **Sluitereffect** Hiermee stelt u het beginpunt van de opname van het doel in. Indien **Sluitereffect** is ingeschakeld, wordt het doel, inclusief alle inhoud, teruggezet naar de versie van AEM die is opgegeven in Cloud Manager. Als deze optie niet is ingeschakeld, behoudt de bestemming de huidige inhoud als beginpunt.
       * Deze optie doet **NOT** van invloed op de manier waarop de inname van inhoud wordt uitgevoerd. De inname gebruikt altijd een strategie voor het vervangen van inhoud en _niet_ een samenvoegstrategie voor inhoud, zowel in **Sluitereffect** en **Niet-sluitereffect** In bepaalde gevallen overschrijft de opname van een migratieset de inhoud van hetzelfde pad op de bestemming. Als de migratieset bijvoorbeeld `/content/page1` en de bestemming bevat al `/content/page1/product1`, verwijdert de inname de gehele `page1` pad en de bijbehorende subpagina&#39;s, inclusief `product1`en vervangt u deze door de inhoud in de migratieset. Dit betekent dat een zorgvuldige planning moet worden uitgevoerd wanneer een **Niet-sluitereffect** opname naar een bestemming die inhoud bevat die behouden moet blijven.
 
    >[!IMPORTANT]
@@ -139,7 +139,7 @@ Nadat een opname wordt gevraagd, kan een bericht als het volgende aan de gebruik
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
-Dit bericht geeft aan dat de Cloud Acceleration Manager de migratieservice van de doelomgeving niet kan bereiken om de opname te starten. Dit kan om verschillende redenen gebeuren.
+Dit bericht geeft aan dat de Cloud Acceleration Manager de migratieservice van de doelomgeving niet kon bereiken om de opname te starten. Dit kan om verschillende redenen gebeuren.
 
 >[!NOTE]
 > 
@@ -147,12 +147,12 @@ Dit bericht geeft aan dat de Cloud Acceleration Manager de migratieservice van d
 
 * AEM as a Cloud Service handhaaft de milieustaat, en moet af en toe de migratiedienst opnieuw beginnen om diverse normale redenen. Als die dienst opnieuw begint, kan het niet worden bereikt, maar is uiteindelijk beschikbaar.
 * Het is mogelijk dat een ander proces op de instantie wordt uitgevoerd. Als [Versie-updates AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) wordt een update toegepast, is het systeem mogelijk bezet en is de migratieservice regelmatig niet beschikbaar. Zodra dat proces is voltooid, kan opnieuw worden geprobeerd om met de inname te beginnen.
-* Als een [IP de Lijst van gewenste personen is toegepast](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager wordt het bereiken van de migratieservice door Cloud Acceleration Manager geblokkeerd. Een IP adres kan niet voor ingesties worden toegevoegd omdat zijn adres dynamisch is. Momenteel, is de enige oplossing de IP lijst van gewenste personen tijdens de opname en het indexeren proces onbruikbaar te maken.
+* Als een [IP de Lijst van gewenste personen is toegepast](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager blokkeert het Cloud Acceleration Manager om de migratieservice te bereiken. Een IP adres kan niet voor ingesties worden toegevoegd omdat zijn adres dynamisch is. Momenteel, is de enige oplossing de IP lijst van gewenste personen tijdens de opname en het indexeren proces onbruikbaar te maken.
 * Er kunnen andere redenen zijn die een onderzoek vereisen. Neem contact op met de klantenservice van de Adobe als de opname of indexering nog steeds mislukt.
 
 ### Updates en oplossingen AEM versie {#aem-version-updates-and-ingestions}
 
-[Versie-updates AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) worden automatisch toegepast op omgevingen om deze up-to-date te houden met de meest recente AEM as a Cloud Service versie. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving.
+[Versie-updates AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) worden automatisch toegepast op omgevingen om deze up-to-date te houden met de meest recente AEM as a Cloud Service-versie. Als de update wordt geactiveerd wanneer een opname wordt uitgevoerd, kunnen er onvoorspelbare resultaten optreden, waaronder de beschadiging van de omgeving.
 
 Als de &quot;Updates van de Versie van de AEM&quot;op het bestemmingsprogramma wordt ingezien, probeert het innameproces om zijn rij onbruikbaar te maken alvorens het begint. Wanneer de opname volledig is, wordt de status van de versieupdater teruggegeven aan hoe het was alvorens ingestions begonnen.
 
@@ -160,7 +160,7 @@ Als de &quot;Updates van de Versie van de AEM&quot;op het bestemmingsprogramma w
 >
 > Er is niet langer een behoefte om een steunkaartje te registreren om &quot;AEM de Updates van de Versie&quot;gehandicapt te krijgen.
 
-Als &quot;AEM de Updates van de Versie&quot;actief is (namelijk de updates lopen of een rij worden gevormd om) in werking te stellen, zal de ingang niet beginnen en het gebruikersinterface presenteert het volgende bericht. Zodra de updates volledig zijn, kan de opname worden begonnen. U kunt Cloud Manager gebruiken om de huidige status van de pijpleidingen van het programma te bekijken.
+Als &quot;AEM de Updates van de Versie&quot;actief is (namelijk de updates lopen of een rij worden gevormd om) in werking te stellen, zal de ingang niet beginnen en het gebruikersinterface presenteert het volgende bericht. Zodra de updates volledig zijn, kan de opname worden begonnen. Cloud Manager kan worden gebruikt om de huidige toestand van de pijpleidingen van het programma te zien.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ Als &quot;AEM de Updates van de Versie&quot;actief is (namelijk de updates lopen
 >abstract="Een gemeenschappelijke oorzaak van een niet-sluitingsmislukking is een conflict in knoop ids. Er kan slechts een van de conflicterende knooppunten bestaan."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Bovenste inname"
 
-Een gemeenschappelijke oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) error is een conflict in knoop ids. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
+Een gemeenschappelijke oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) error is een conflict in knoop ids. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] met waarde a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
@@ -196,7 +196,7 @@ Dit conflict moet handmatig worden opgelost. Iemand die bekend is met de inhoud,
 >abstract="Een gemeenschappelijke oorzaak van een niet-veeggebaren ingangsmislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. De versies van het knooppunt moeten worden hersteld."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Bovenste inname"
 
-Een andere veelvoorkomende oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) de mislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboekbestand met de interface van Cloud Acceleration Manager en zoekt u een item als de volgende:
+Een andere veelvoorkomende oorzaak van een [Bovenste inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) de mislukking is een versieconflict voor een bepaalde knoop op de bestemmingsinstantie. Als u deze fout wilt identificeren, downloadt u het innamelogboek met de gebruikersinterface van Cloud Acceleration Manager en zoekt u een item als de volgende:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e 976a8
 
@@ -216,7 +216,7 @@ De beste praktijken wijzen erop dat als **Niet-sluitereffect** opname moet worde
 
 Eigenschapwaarden voor knooppunten die zijn opgeslagen in MongoDB, mogen niet groter zijn dan 16 MB. Als een nodewaarde de gesteunde grootte overschrijdt, ontbreekt het opnemen en het logboek zal een bevatten `BSONObjectTooLarge` fout en geef op welk knooppunt het maximum heeft overschreden. Dit is een MongoDB-beperking.
 
-Zie de `Node property value in MongoDB` notitie in [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) voor meer informatie en een koppeling naar een gereedschap voor eikenhout waarmee u alle grote knooppunten kunt vinden. Als alle knooppunten met grote afmetingen zijn verholpen, voert u de extractie en inname opnieuw uit.
+Zie de `Node property value in MongoDB` notitie in [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) voor meer informatie en een koppeling naar een Oak-tool die kan helpen alle grote knooppunten te vinden. Als alle knooppunten met grote afmetingen zijn verholpen, voert u de extractie en inname opnieuw uit.
 
 Als u deze beperking wilt voorkomen, voert u het [Analysator van best practices](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) over de bron AEM instantie en de bevindingen die zij presenteert, met name de [&quot;Niet-ondersteunde Repository Structure&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) patroon.
 
@@ -233,7 +233,7 @@ Een opname die met een lopende extractie werd gecreeerd aangezien zijn bronmigra
 
 Over het algemeen wordt het niet aanbevolen om de gegevens van de cloudomgeving tussen innames te wijzigen.
 
-Wanneer een element wordt verwijderd uit de bestemming Cloud Service met behulp van de interface voor middelenaanraking, worden de knooppuntgegevens verwijderd, maar wordt het elementblok met de afbeelding niet onmiddellijk verwijderd. Het is duidelijk voor schrapping zodat het niet meer in UI verschijnt; nochtans, blijft het in de datastore tot de huisvuilinzameling voorkomt en de blob wordt verwijderd.
+Wanneer een element wordt verwijderd van de bestemming Cloud Service met behulp van de Assets Touch-interface, worden de knooppuntgegevens verwijderd, maar wordt het elementblok met de afbeelding niet onmiddellijk verwijderd. Het is duidelijk voor schrapping zodat het niet meer in UI verschijnt; nochtans, blijft het in de datastore tot de huisvuilinzameling voorkomt en de blob wordt verwijderd.
 
 In het scenario waarin een eerder gemigreerd element wordt verwijderd en de volgende opname wordt uitgevoerd voordat de opschoonfunctie het element heeft verwijderd, wordt het verwijderde element niet hersteld wanneer dezelfde migratieset wordt gebruikt. Wanneer de opname de wolkenomgeving voor het middel controleert, zijn er geen knoopgegevens; daarom zal de opname de knoopgegevens aan het wolkenmilieu kopiëren. Als het echter de blob store controleert, ziet het dat de blob aanwezig is en wordt het kopiëren van de blob overgeslagen. Daarom zijn de metagegevens aanwezig na invoer wanneer u het element vanuit de aanraakinterface bekijkt, maar de afbeelding niet. Houd er rekening mee dat migratiesets en inname van inhoud niet zijn ontworpen om deze kwestie af te handelen. Ze zijn bedoeld om nieuwe inhoud toe te voegen aan de cloud-omgeving en eerder gemigreerde inhoud niet te herstellen.
 

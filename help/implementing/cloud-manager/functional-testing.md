@@ -1,6 +1,6 @@
 ---
 title: Functionele tests
-description: Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren.
+description: Leer meer over de drie verschillende soorten functionele tests die in het AEM as a Cloud Service-implementatieproces zijn ingebouwd om de kwaliteit en betrouwbaarheid van uw code te garanderen.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -18,13 +18,13 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Functionele tests"
->abstract="Leer over de drie verschillende types van functionele tests die in het AEM as a Cloud Service plaatsingsproces worden gebouwd om kwaliteit en betrouwbaarheid van uw code te verzekeren."
+>abstract="Leer meer over de drie verschillende soorten functionele tests die in het AEM as a Cloud Service-implementatieproces zijn ingebouwd om de kwaliteit en betrouwbaarheid van uw code te garanderen."
 
-Meer informatie over de kwaliteitskates in het dialoogvenster [as a Cloud Service implementatieproces AEM](/help/implementing/cloud-manager/deploy-code.md), de verschillende ingebouwde soorten functionele tests, hoe u kunt bijdragen en hoe u deze optimaal kunt gebruiken in de context van een algemene teststrategie.
+Meer informatie over de kwaliteitskates in het dialoogvenster [AEM as a Cloud Service-implementatieproces](/help/implementing/cloud-manager/deploy-code.md), de verschillende ingebouwde soorten functionele tests, hoe u kunt bijdragen en hoe u deze optimaal kunt gebruiken in de context van een algemene teststrategie.
 
 ## Overzicht
 
-Het volgende diagram geeft een overzicht op hoog niveau van de beschikbare pijpleidingen in de context van een algemene teststrategie en de [as a Cloud Service implementatieproces AEM](/help/implementing/cloud-manager/deploy-code.md).
+Het volgende diagram geeft een overzicht op hoog niveau van de beschikbare pijpleidingen in de context van een algemene teststrategie en de [AEM as a Cloud Service-implementatieproces](/help/implementing/cloud-manager/deploy-code.md).
 
 ![AEM Cloud Service-implementatiekwaliteitspoorten](assets/functional-testing/quality-gates-compact.svg)
 
@@ -40,7 +40,7 @@ Het is belangrijk om op te merken dat deze kwaliteitspoorten niet bedoeld zijn a
 
 ## Kwaliteitsgates
 
-Het volgende diagram geeft een gedetailleerd overzicht van de beschikbare kwaliteitskates en het gebruik ervan in de algemene teststrategie en de [as a Cloud Service implementatieproces AEM](/help/implementing/cloud-manager/deploy-code.md).
+Het volgende diagram geeft een gedetailleerd overzicht van de beschikbare kwaliteitskates en het gebruik ervan in de algemene teststrategie en de [AEM as a Cloud Service-implementatieproces](/help/implementing/cloud-manager/deploy-code.md).
 
 ![AEM Cloud Service-implementatiekwaliteitspoorten](assets/functional-testing/quality-gates-overview.svg)
 
@@ -116,7 +116,7 @@ Zie [Ervaring controleren testen](/help/implementing/cloud-manager/experience-au
 
 De kwaliteitsgate voor klantvalidaties is een plaatsaanduiding voor de eigen teststrategie en -inspanning van de klant, die worden uitgevoerd voordat de wijzigingen in de toepassing van de klant de implementatiepijplijnen van de AEM cloud bereiken.
 
-Hier kunt u de gewenste gereedschappen en frameworks kiezen. In tegenstelling tot de tests van de klantenfunctie en van de douaneUI, zijn er geen AEM as a Cloud Service verwante grenzen, en wij adviseren daarom om de functie en UI het testen hier uit te voeren.
+Hier kunt u de gewenste gereedschappen en frameworks kiezen. In tegenstelling tot de tests van de klantenfunctie en van de douane UI, zijn er geen aan AEM as a Cloud Service verwante grenzen, en wij adviseren daarom om de functie en UI het testen hier uit te voeren.
 
 Terwijl u om het even welk hulpmiddel en kader vrij kunt kiezen, adviseren wij u op HTTP-Gebaseerde integratietests en tests UI met de hulpmiddelen en het kader beschikbaar in de de kwaliteitsproeven van de douane functionele tests en van de douanetest UI. We raden u aan om integratie [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) in uw lokale teststrategie om zo dicht mogelijk bij AEM cloudomgevingen te testen.
 

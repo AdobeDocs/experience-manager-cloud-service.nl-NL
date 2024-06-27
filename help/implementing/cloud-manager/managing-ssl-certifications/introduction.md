@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot het beheren van SSL-certificaten
-description: Leer hoe u in Cloud Manager zelfbedieningsgereedschappen hebt om SSL-certificaten te installeren.
+description: Leer hoe u met Cloud Manager zelfbedieningstools SSL-certificaten kunt installeren.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="SSL-certificaten beheren"
->abstract="Leer hoe u met Cloud Manager zelfservicegereedschappen hebt om SSL-certificaten te installeren en te beheren om uw site voor uw gebruikers te beveiligen. Cloud Manager gebruikt een platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die zijn verkregen van certificeringsinstanties van derden."
+>abstract="Leer hoe u met Cloud Manager zelfbedieningstools SSL-certificaten kunt installeren en beheren om uw site voor uw gebruikers te beveiligen. Cloud Manager gebruikt een platform-TLS-service voor het beheer van SSL-certificaten en persoonlijke sleutels die eigendom zijn van klanten en die zijn verkregen van certificeringsinstanties van derden."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Een SSL-certificaat weergeven, bijwerken en vervangen"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Status van een SSL-certificaat controleren"
 
@@ -34,9 +34,9 @@ Wanneer een entiteit een certificaat aanvraagt bij een certificeringsinstantie, 
 >
 >Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze moeten worden verkregen van certificeringsinstanties (CA&#39;s).
 
-## SSL-beheerfuncties van Cloud Manager {#features}
+## Cloud Manager SSL-beheerfuncties {#features}
 
-Cloud Manager ondersteunt de volgende gebruiksopties voor SSL-certificaten van klanten.
+Cloud Manager biedt ondersteuning voor de volgende gebruiksopties voor SSL-certificaten van klanten.
 
 * Een SSL-certificaat kan door meerdere omgevingen worden gebruikt. Dit wil zeggen dat het eenmaal kan worden toegevoegd en meerdere keren kan worden gebruikt.
 * Elke Cloud Manager-omgeving kan meerdere certificaten gebruiken.
@@ -47,14 +47,14 @@ Cloud Manager ondersteunt de volgende gebruiksopties voor SSL-certificaten van k
 
 ## Recommendations {#recommendations}
 
-AEM alleen as a Cloud Service ondersteunt veilige `https` sites.
+AEM as a Cloud Service ondersteunt alleen veilige `https` sites.
 
 * Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden.
 * Dergelijke klanten profiteren door één certificaat met veelvoudige domeinen te krijgen.
 
 ## Certificaatvereisten {#requirements}
 
-* AEM as a Cloud Service accepteert alleen certificaten die voldoen aan het OV- (Organisatie-validatie) of EV-beleid (Extended Validation).
+* AEM as a Cloud Service accepteert alleen certificaten die voldoen aan het OV- (Organization Validation) of EV-beleid (Extended Validation).
 * Elk certificaat moet een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie (CA) met een overeenkomende persoonlijke RSA-sleutel van 2048 bits.
 * Het DV-beleid (Domain Validation) wordt niet geaccepteerd.
 * Zelfondertekende certificaten worden niet geaccepteerd.
@@ -63,7 +63,7 @@ OV- en EV-certificaten bieden gebruikers extra door CA gevalideerde informatie d
 
 ### Certificaatindeling {#certificate-format}
 
-SSL-certificaatbestanden moeten de PEM-indeling hebben om te worden geïnstalleerd met Cloud Manager. Algemene bestandsextensies in de PEM-indeling omvatten: `.pem,` .`crt`, `.cer`, en `.cert`.
+SSL-certificaatbestanden moeten de PEM-indeling hebben om bij Cloud Manager te worden geïnstalleerd. Algemene bestandsextensies in de PEM-indeling omvatten: `.pem,` .`crt`, `.cer`, en `.cert`.
 
 Het volgende `openssl` U kunt opdrachten gebruiken om niet-PEM-certificaten om te zetten.
 
@@ -87,7 +87,7 @@ Het volgende `openssl` U kunt opdrachten gebruiken om niet-PEM-certificaten om t
 
 ## Beperkingen {#limitations}
 
-Cloud Manager staat op elk gewenst moment maximaal 50 SSL-certificaten toe. Deze kunnen aan één of meerdere milieu&#39;s over uw programma worden geassocieerd en ook om het even welke verlopen certificaten omvatten.
+Op elk moment staat Cloud Manager toe dat maximaal 50 SSL-certificaten worden geïnstalleerd. Deze kunnen aan één of meerdere milieu&#39;s over uw programma worden geassocieerd en ook om het even welke verlopen certificaten omvatten.
 
 Als u de limiet hebt bereikt, controleert u uw certificaten en overweegt u:
 

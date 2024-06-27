@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot aangepaste domeinnamen
-description: Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren met een unieke merknaam.
+description: Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -18,11 +18,11 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="Aangepaste domeinnamen beheren"
->abstract="Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren met een unieke merknaam."
+>abstract="Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Een aangepaste domeinnaam toevoegen"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Aangepaste domeinnaam weergeven en bijwerken"
 
-Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren met een unieke merknaam. Adobe Experience Manager as a Cloud Service heeft een standaarddomeinnaam, die eindigt in `*.adobeaemcloud.com`. Deze standaarddomeinnaam blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
+Met de gebruikersinterface van Cloud Manager kunt u een aangepast domein toevoegen om uw site op een zelfbedieningswijze te identificeren aan de hand van een unieke merknaam. Adobe Experience Manager as a Cloud Service heeft een standaarddomeinnaam, die eindigt in `*.adobeaemcloud.com`. Deze standaarddomeinnaam blijft behouden, zelfs nadat u aangepaste domeinnamen aan uw website hebt gekoppeld.
 
 ## Wat zijn aangepaste domeinnamen? {#what-are-custom-domain-names}
 
@@ -40,10 +40,10 @@ U kunt een domeinnaam kopen van een registrar van domeinnamen, een bedrijf of or
 
 AEM as a Cloud Service biedt de ingebouwde dienst van het netwerk van de inhoudslevering (CDN) aan, maar laat u ook uw-uw-eigen (BYO) CDN aan gebruik met AEM brengen. Aangepaste domeinen kunnen worden geïnstalleerd in de CDN met AEM beheer of in een CDN die u beheert.
 
-* Aangepaste domeinnamen (en certificaten) die in de door AEM beheerde CDN zijn geïnstalleerd, worden beheerd via Cloud Manager.
+* De domeinnamen van de douane (en certificaten) die in AEM-beheerde CDN worden geïnstalleerd worden beheerd via Cloud Manager.
 * De domeinnamen van de douane (en certificaten) die in uw eigen CDN worden geïnstalleerd worden beheerd in die specifieke CDN.
 
-Domeinen die in uw eigen CDN worden beheerd, hoeven niet via Cloud Manager te worden geïnstalleerd. Zij worden ter beschikking gesteld aan AEM als x-Door:sturen-Gastheer en passen de gastheren aan die in de Verzender worden bepaald. Zie de [CDN-documentatie](/help/implementing/dispatcher/cdn.md).
+Domeinen die in uw eigen CDN worden beheerd, hoeven niet via Cloud Manager te worden geïnstalleerd. Zij worden ter beschikking gesteld aan AEM als x-Door:sturen-Gastheer en passen de gastheren aan die in Dispatcher worden bepaald. Zie de [CDN-documentatie](/help/implementing/dispatcher/cdn.md).
 
 In één milieu kunt u beide domeinen hebben die in AEM-beheerde CDN worden geïnstalleerd en in uw eigen CDN worden geïnstalleerd.
 
@@ -58,7 +58,7 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 | 3 | Status domeinverificatie controleren | Klant | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3 bis. | Als domeinverificatie mislukt met de status `Domain Verification Failure` | Klant | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3 ter | Als domeinverificatie mislukt met de status `Verified, Deployment Failed`, contact opnemen met Adobe | Klantenservice Adoben | [Status domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 4 | DNS-instellingen configureren door DNS CNAME- of APEX-records toe te voegen die wijzen naar AEM as a Cloud Service | Klant | [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
+| 4 | DNS-instellingen configureren door DNS CNAME- of APEX-records toe te voegen die naar AEM as a Cloud Service wijzen | Klant | [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
 | 5 | DNS-recordstatus controleren | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5 bis | Als de DNS-recordstatus mislukt met `DNS status not detected` | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5 ter | Als de DNS-recordstatus mislukt met `DNS resolves incorrectly` | Klant | [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
@@ -71,7 +71,7 @@ Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-ser
 
 Er gelden verschillende beperkingen voor het gebruik van aangepaste domeinnamen met AEMaaCS.
 
-* Aangepaste domeinnamen worden ondersteund in Cloud Manager voor zowel publicatie- als voorvertoningsservices voor Sites-programma&#39;s. Aangepaste domeinen voor auteursservices worden niet ondersteund.
+* Aangepaste domeinnamen worden in Cloud Manager ondersteund voor zowel publicatie- als voorvertoningsservices voor Sites-programma&#39;s. Aangepaste domeinen voor auteursservices worden niet ondersteund.
 * Elke Cloud Manager-omgeving kan maximaal 500 aangepaste domeinen per omgeving hosten.
 * Domeinnamen kunnen niet aan omgevingen worden toegevoegd terwijl er een actieve pijpleiding aan die omgevingen is gekoppeld.
 * Dezelfde domeinnaam kan niet op meer dan één omgeving worden gebruikt.

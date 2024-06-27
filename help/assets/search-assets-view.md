@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="assets_search"
->title="Zoeken in middelen"
+>title="Zoeken in Assets"
 >abstract="Zoek naar activa door een sleutelwoord in de bar van het Onderzoek te specificeren of door activa te filtreren die op hun status, dossiertype, MIME type, grootte, verwezenlijking, wijziging, en vervaldata worden gebaseerd. Naast de standaardfilters kunt u ook aangepaste filters toepassen. U kunt de gefilterde resultaten opslaan als een opgeslagen zoekopdracht of als een slimme verzameling."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=en#manage-smart-collection" text="Slimme verzamelingen maken"
 
@@ -49,7 +49,7 @@ U kunt de zoekresultaten filteren op basis van de volgende parameters.
 
 * Vervaldatum: filter de zoekresultaten op basis van een `Expired` status van het element. Daarnaast kunt u een datumbereik voor de vervaldatum voor elementen opgeven om de zoekresultaten verder te filteren.
 
-* Aangepaste filters: [Aangepaste filters toevoegen](#custom-filters) aan de gebruikersinterface van de middelenweergave. Pas de aangepaste filters toe naast de standaardfilters om de zoekresultaten te verfijnen.
+* Aangepaste filters: [Aangepaste filters toevoegen](#custom-filters) naar Assets-gebruikersinterface. Pas de aangepaste filters toe naast de standaardfilters om de zoekresultaten te verfijnen.
 
 U kunt de gezochte middelen in stijgende of dalende orde van sorteren `Name`, `Relevancy`, `Size`, `Modified`, en `Created`.
 
@@ -57,9 +57,9 @@ U kunt de gezochte middelen in stijgende of dalende orde van sorteren `Name`, `R
 
 **Vereiste machtigingen:**  `Can Edit`, `Owner`of Beheerder.
 
-In de weergave Elementen kunt u ook aangepaste filters toevoegen aan de gebruikersinterface. Vervolgens kunt u deze aangepaste filters toepassen naast de [standaardfilters](#refine-search-results) om de zoekresultaten te verfijnen.
+In de Assets-weergave kunt u ook aangepaste filters toevoegen aan de gebruikersinterface. Vervolgens kunt u deze aangepaste filters toepassen naast de [standaardfilters](#refine-search-results) om de zoekresultaten te verfijnen.
 
-De middelenweergave biedt de volgende aangepaste filters:
+De Assets-weergave biedt de volgende aangepaste filters:
 
 <table>
     <tbody>
@@ -178,7 +178,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de volgende handelingen uitvoeren:
 
-* **Vergelijkbare afbeelding zoeken**: Zoek vergelijkbare afbeeldingselementen in de interface Middelen op basis van de metagegevens en slimme tags.
+* **Vergelijkbare afbeelding zoeken**: Zoek vergelijkbare afbeeldingselementen in de gebruikersinterface van Assets op basis van de metagegevens en slimme tags.
 
 * **Details**: Elementeigenschappen weergeven en bewerken.
 
@@ -186,7 +186,7 @@ U kunt de elementen selecteren die in de zoekresultaten worden weergegeven en de
 
 * **Toevoegen aan verzameling**: Voeg het geselecteerde element toe aan een verzameling.
 
-* **Vastmaken aan snelle toegang**: [Een element vastzetten](my-workspace-assets-view.md) voor snellere toegang wanneer u het later nodig hebt. Alle vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** van Mijn werkruimte.
+* **Vastmaken aan snelle toegang**: [Een element vastzetten](my-workspace-assets-view.md) voor snellere toegang wanneer u het later nodig hebt. Alle vastgezette items worden weergegeven in het dialoogvenster **Snelle toegang** sectie van Mijn Workspace.
 
 * **Openen in Adobe Express**: Bewerk een afbeelding in de geïntegreerde Adobe Express vanuit het Experience Manager Assets-scherm.
 
@@ -328,9 +328,9 @@ Als u feedback moet geven over de functie Contextual Search, klikt u op ![Pictog
 
 ## Volgende stappen {#next-steps}
 
-* [Een video bekijken om elementen te zoeken in de weergave Middelen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
+* [Een video bekijken om te zoeken in middelen in de Assets-weergave](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
 
-* Feedback geven op het product met de [!UICONTROL Feedback] optie beschikbaar in de gebruikersinterface van de weergave Elementen
+* Feedback geven op het product met de [!UICONTROL Feedback] beschikbaar in de gebruikersinterface van de Assets-weergave
 
 * Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk.
 

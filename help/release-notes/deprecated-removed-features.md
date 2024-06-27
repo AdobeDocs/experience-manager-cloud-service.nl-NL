@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
->title="Vervangen en verwijderde functies in AEM as a Cloud Service"
+>title="Verouderde en verwijderde functies in AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service heeft een implementatiemodel in de cloud. Bepaalde mogelijkheden en functies zijn vervangen door in de cloud geïntegreerde tegenhangers en op dit tabblad worden die functies weergegeven."
 
 
@@ -44,7 +44,7 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 | [!DNL Assets] | MPEG-transcodering van video&#39;s. | Gebruik voor het genereren van miniaturen in MPEG [Middelenmicroservices](/help/assets/asset-microservices-overview.md). Gebruik voor MPEG-transcodering [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | De replicatie UI van de boom onder het &quot;Distribute&quot;lusje van de replicatieagent (verwijdering na 30 September, 2021) | [Publicatie beheren](/help/operations/replication.md#manage-publication) of [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) benaderingen |
 | [!DNL Foundation] | U kunt inhoudspakketten niet repliceren via het tabblad Distribute van het scherm van de replicatieagent en de Replicatie-API. In plaats daarvan kunt u beide [Publicatie beheren](/help/operations/replication.md#manage-publication) of [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Integraties die gebruikmaken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning van JWT-referenties (Service Account). De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet in de Console van Adobe Developer op of na 1 Mei 2024 worden gecreeerd, hoewel de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) nog voor reeds-gevormde integraties kunnen worden gebruikt tot 1 Januari, 2025, toen de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) niet meer zullen werken, en de klanten aan geloofsbrieven moeten migreren naar Server-aan Server-aan-aan-server. [Meer informatie](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migreren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) naar OAuth Server-to-Server referenties. |
+| [!DNL Foundation] | Integraties die gebruik maken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning van JWT-referenties (Service Account). De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 1 Mei worden gecreeerd, 2024, hoewel de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) nog voor reeds-gevormde integraties tot 1 Januari, 2025 kunnen worden gebruikt, toen de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) niet meer werken, en de klanten moeten naar geloofsbrieven van Server-aan Server-aan-server migreren. [Meer informatie](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migreren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) naar OAuth Server-to-Server referenties. |
 
 ## Verwijderde functies {#removed-features}
 
@@ -66,7 +66,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 
 ## API&#39;s AEM {#aem-apis}
 
-Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwachte verwijderingsdatum. Van klanten wordt verwacht dat ze de API&#39;s verwijderen tegen de verwijderingsdatum van het doel uit hun code. Elk gebruik van de API na de verwijderingsdatum leidt tot fouten in de lokale SDK/Development Environment en het buildproces van Cloud Manager.
+Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwachte verwijderingsdatum. Van klanten wordt verwacht dat ze de API&#39;s verwijderen tegen de verwijderingsdatum van het doel uit hun code. Elk gebruik van de API na de verwijderingsdatum leidt tot fouten in de lokale SDK/Development Environment en het Cloud Manager-ontwikkelproces.
 
 <details>
   <summary>Vouw uit om de lijst met verouderde API's weer te geven.</summary>
@@ -98,7 +98,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
-    <td>AEM as a Cloud Service ondersteunt geen uitvoermodi of toegang tot het bestandssysteem tijdens runtime. </td>
+    <td>AEM as a Cloud Service biedt geen ondersteuning voor runmodi of toegang tot het bestandssysteem tijdens runtime. </td>
     <td>05-10-20</td>
     <td>Eind 2021</td>
   </tr>
@@ -158,7 +158,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>Het gebruik van deze API wordt niet ondersteund in AEM as a Cloud Service.</td>
+    <td>Gebruik van deze API wordt niet ondersteund in AEM as a Cloud Service.</td>
     <td>27-05-21</td>
     <td>30-07-21</td>
   </tr>
@@ -170,7 +170,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>org.slf4j.impl</td>
-    <td>De de implementatieklassen van het logboek zijn niet compatibel met AEM as a Cloud Service.</td>
+    <td>Logimplementatieklassen zijn niet compatibel met AEM as a Cloud Service.</td>
     <td>04-07-21</td>
     <td>verwijderd</td>
   </tr>
@@ -229,7 +229,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>Deze interne log4j API wordt niet ondersteund door AEM as a Cloud Service.</td>
+    <td>Deze interne log4j-API wordt niet ondersteund door AEM as a Cloud Service.</td>
     <td>27-01-2022</td>
     <td>24-03-2022</td>
   </tr>
@@ -279,7 +279,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>30-08-2024</td>
   </tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
-    <td>Het gebruik van deze API wordt niet ondersteund in AEM as a Cloud Service.</td>
+    <td>Gebruik van deze API wordt niet ondersteund in AEM as a Cloud Service.</td>
     <td>17-05-2024</td>
     <td>30-06-2024</td>
   </tr>  
@@ -289,14 +289,14 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
 
 ## OSGI-configuratie {#osgi-configuration}
 
-De twee lijsten hieronder wijzen op de AEM as a Cloud Service OSGi configuratieoppervlakte, beschrijvend welke klanten kunnen vormen.
+De twee lijsten hieronder wijzen op de AEM as a Cloud Service OSGi configuratieoppervlakte, die welke klanten kunnen vormen.
 
 1. Een lijst van configuraties OSGi die niet door klantencode moeten worden gevormd
 1. Een lijst van configuraties OSGi waarvan de eigenschappen kunnen worden gevormd, maar moet zich aan de vermelde bevestigingsregels houden. Deze regels omvatten of de verklaring van het bezit, zijn type, en in sommige gevallen, zijn toegestane waaier van waarden wordt vereist.
 
 Als een configuratie OSGI niet vermeld is, kan het door klantencode worden gevormd.
 
-Deze regels worden gevalideerd tijdens het ontwikkelingsproces van Cloud Manager. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, worden er fouten gegenereerd in het buildproces van Cloud Manager. De Maven-projecten moeten [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) om OSGI-configuratiefouten te markeren tijdens de ontwikkeling van de lokale SDK.
+Deze regels worden gevalideerd tijdens het Cloud Manager-ontwikkelproces. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, treden er fouten op in het Cloud Manager-constructieproces. De Maven-projecten moeten [Insteekmodule AEM as a Cloud Service SDK Build Analyzer Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) om OSGI-configuratiefouten te markeren tijdens de ontwikkeling van de lokale SDK.
 
 Aanvullende informatie over de configuratie van OSGI is te vinden op [deze locatie](/help/implementing/deploying/configuring-osgi.md).
 

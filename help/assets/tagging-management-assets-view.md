@@ -1,6 +1,6 @@
 ---
-title: Hoe kan ik tags beheren in de weergave Elementen?
-description: Leer hoe u tags beheert in de weergave Middelen. Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken.
+title: Hoe kan ik tags beheren in de Assets-weergave?
+description: Leer hoe u tags kunt beheren in de Assets-weergave. Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken.
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Tags beheren in de weergave Elementen {#view-assets-and-details}
+# Tags beheren in de Assets-weergave {#view-assets-and-details}
 
 
 >[!CONTEXTUALHELP]
@@ -35,7 +35,7 @@ Tags bieden veel voordelen, zoals:
 
 * Tags kunnen in de loop der tijd evolueren als een organisatorische woordenwisseling.
 
-* Tags die in de beheerweergave worden beheerd, blijven synchroon met de tags die in de middelenweergave worden beheerd. Hierdoor zijn governance en integriteit van de metagegevens gegarandeerd.
+* Tags die in de beheerweergave worden beheerd, blijven synchroon met de tags die in de Assets-weergave worden beheerd. Hierdoor zijn governance en integriteit van de metagegevens gegarandeerd.
 
 Als u tags wilt toepassen op elementen, moet u eerst een naamruimte maken en er vervolgens tags aan toevoegen. U kunt ook tags maken en deze toevoegen aan een bestaande naamruimte. Alle tags die u maakt op hoofdniveau, worden automatisch toegevoegd aan de naamruimte Standaardtags. Vervolgens kunt u het veld Codes toevoegen aan het metagegevensformulier, zodat het wordt weergegeven op de pagina met gegevens over elementen. Nadat u deze instellingen hebt geconfigureerd, kunt u tags toepassen op elementen.
 
@@ -89,7 +89,7 @@ Als u een standaardcode wilt maken, klikt u op `Create Tag` op het hoofdniveau. 
 
 >[!NOTE]
 >
->Als u `Standard Tags` naamruimte maken met behulp van as a Cloud Service elementen. De tags die op hoofdniveau zijn gemaakt, worden niet weergegeven in de lijst met beschikbare tags.
+>Als u `Standard Tags` naamruimte gebruiken met Assets as a Cloud Service, worden de tags die op hoofdniveau zijn gemaakt, niet weergegeven in de lijst met beschikbare tags.
 
 ## Labels verplaatsen {#move-tags}
 
@@ -112,7 +112,7 @@ Als u de titel van de tag wilt bewerken, selecteert u de tag en klikt u op `Edit
 >[!NOTE]
 >
 >* De `Name` van een tag kan niet worden bijgewerkt. Het hoofdpad van een tag is ook gebaseerd op de naam van de tag. Het pad blijft hetzelfde, ook als u het `Title` veld.
->* Extra bewerkingen zoals samenvoegen, lokaliseren en publiceren zijn beschikbaar in as a Cloud Service elementen.
+>* Extra bewerkingen zoals samenvoegen, lokaliseren en publiceren zijn beschikbaar in Assets as a Cloud Service.
 
 ## Labels verwijderen {#delete-tags}
 
@@ -138,7 +138,7 @@ Bekijk deze korte video om te zien hoe u de component Tags aan het metagegevensf
 >[!VIDEO](https://video.tv.adobe.com/v/3420452)
 
 
-### Codes toevoegen aan elementen {#add-tags-to-assets}
+### Codes toevoegen aan Assets {#add-tags-to-assets}
 
 1. Ga naar de pagina met elementdetails en navigeer naar de `Tags` sectie van het formulier Metagegevens.
 1. Selecteer het tagkiezerpictogram dat naast het veld Tags staat of typ een labelnaam om de voorgestelde resultaten te zien.
@@ -146,7 +146,7 @@ Bekijk deze korte video om te zien hoe u de component Tags aan het metagegevensf
    ![Tagingmiddelen](assets/adding-tags-to-assets.png)
 
 1. Selecteer een of meer tags. De subtag wordt automatisch geselecteerd samen met de bovenliggende tag of naamruimte.
-Tags die in de Assets Essentials zijn gewijzigd, worden ook in as a Cloud Service elementen toegepast.
+Tags die in de Assets Essentials zijn gewijzigd, worden ook in Assets as a Cloud Service toegepast.
 
 ## Codes toevoegen aan lijst van gewezen personen {#blocklist-essentials}
 
@@ -185,7 +185,7 @@ U kunt ook slimme tags voor één element blokkeren. Navigeer naar de details va
 
 ### Lijst van gewezen personen exporteren{#export-blocklist}
 
-In de middelenweergave kunt u de weergegeven geblokkeerde tags exporteren naar de CSV-indeling. Voer de onderstaande stappen uit om lijst van gewezen personen te exporteren:
+In de Assets-weergave kunt u de weergegeven geblokkeerde tags exporteren naar de CSV-indeling. Voer de onderstaande stappen uit om lijst van gewezen personen te exporteren:
 
 1. Klik op **[!UICONTROL Export as CSV]**.
 1. Kies de juiste locatie voor het opslaan van het CSV-bestand. U kunt de naam van het bestand ook naar wens wijzigen.
@@ -193,7 +193,7 @@ In de middelenweergave kunt u de weergegeven geblokkeerde tags exporteren naar d
 
 ### Lijst van gewezen personen importeren{#import-blocklist}
 
-In de middelenweergave kunt u geblokkeerde tags importeren uit een gegevensbron (CSV). Voer de onderstaande stappen uit om lijst van gewezen personen te importeren:
+In de Assets-weergave kunt u geblokkeerde tags importeren uit een gegevensbron (CSV). Voer de onderstaande stappen uit om lijst van gewezen personen te importeren:
 
 1. Klik op **[!UICONTROL Import as CSV]**.
 1. Kies het CSV-bestand van uw apparaat. Klikken **[!UICONTROL select a file]** om vanaf uw apparaat naar het bestand te navigeren. U kunt het CSV-bestand ook slepen en neerzetten vanaf het apparaat.
