@@ -4,7 +4,7 @@ description: Meer informatie over onderhoudstaken in AEM as a Cloud Service en h
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 0%
@@ -46,14 +46,14 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
   <tr>
     <td>Versie wissen</td>
     <td>Klant</td>
-    <td>De zuivering van de versie wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan, zoals die in worden beschreven <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Onderhoudstaken voor versiereiniging en controlelogbestand opschonen</a> sectie.<br/><br/>Het leegmaken wordt binnenkort standaard ingeschakeld, waarbij deze waarden kunnen worden overschreven.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>De zuivering van de versie wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan, zoals die in worden beschreven <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Onderhoudstaken voor versiereiniging en controlelogbestand opschonen</a> sectie.<br/><br/>Het leegmaken wordt binnenkort standaard ingeschakeld, waarbij deze waarden kunnen worden overschreven.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Logboek controleren leegmaken</td>
     <td>Klant</td>
-    <td>Het logboek van de controle zuivert is momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in wordt beschreven <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Onderhoudstaken voor versiereiniging en controlelogbestand opschonen</a> sectie.<br/><br/>Het leegmaken wordt binnenkort standaard ingeschakeld, waarbij deze waarden kunnen worden overschreven.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Het logboek van de controle zuivert is momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in wordt beschreven <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Onderhoudstaken voor versiereiniging en controlelogbestand opschonen</a> sectie.<br/><br/>Het leegmaken wordt binnenkort standaard ingeschakeld, waarbij deze waarden kunnen worden overschreven.<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ Het zuiveren versies en het controlelogboek verminderen de grootte van de bewaar
 
 >[!NOTE]
 >
->Adobe raadt klanten aan Version Purge niet te configureren.
+>AEM Guides-klanten moeten Version Purge niet configureren.
 
 ### Standaardwaarden {#defaults}
 
@@ -283,7 +283,7 @@ Zie [productiepijpleidingen configureren](/help/implementing/cloud-manager/confi
 
 >[!NOTE]
 >
->Adobe raadt klanten aan Version Purge niet te configureren.
+>AEM Guides-klanten moeten Version Purge niet configureren.
 
 #### Standaardwaarden versie wissen {#version-purge-defaults}
 
