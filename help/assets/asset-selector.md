@@ -4,7 +4,7 @@ description: Gebruik de functie Asset Selector om de metagegevens en vertoningen
 contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
+source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
 workflow-type: tm+mt
 source-wordcount: '4713'
 ht-degree: 0%
@@ -404,8 +404,8 @@ Gebruik de volgende voorwaarden als u Asset Selector integreert met Dynamic Medi
 
 * [Communicatiemethoden](#prereqs)
 * Voor toegang tot Dynamic Media met OpenAPI-mogelijkheden hebt u licenties nodig voor:
-   * Assets-opslagplaats (bijvoorbeeld Experience Manager Assets as a Cloud Service)
-   * AEM Dynamic Media
+   * Assets repository (bijvoorbeeld Experience Manager Assets as a Cloud Service).
+   * AEM Dynamic Media.
 * Alleen [goedgekeurde activa](#approved-assets.md) beschikbaar zijn voor gebruik met het oog op de consistentie van het merk.
 
 ### Integratie voor Dynamic Media met OpenAPI-mogelijkheden{#adobe-app-integration-polaris}
