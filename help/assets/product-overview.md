@@ -1,9 +1,9 @@
 ---
 title: Content Hub - Overzicht
-description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe je het kunt openen en hoe je feedback kunt geven over de opties die in Content Hub beschikbaar zijn.
-source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
+description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe u deze kunt openen en hoe u feedback kunt geven over de opties die beschikbaar zijn in Content Hub.
+source-git-commit: b29641286919b5becc3982400ea160836531fdc5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
