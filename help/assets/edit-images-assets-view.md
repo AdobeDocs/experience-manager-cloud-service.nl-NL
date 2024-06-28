@@ -4,7 +4,7 @@ description: Afbeeldingen bewerken met [!DNL Adobe Express] Aangedreven opties e
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 9a21c9218e45bb6ce91263c9798e3b1c99f369b4
+source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Afbeeldingen bewerken in [!DNL Assets view] {#edit-images-in-assets-view}
 
-In de weergave Elementen kunt u basisafbeeldingen bewerken, zoals vergroten/verkleinen, verwijderen van de achtergrond, uitsnijden en converteren tussen de JPEG- en PNG-indeling. Bovendien is geavanceerde bewerking mogelijk dankzij integratie met Adobe Express. Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een nieuwe versie. Met Versioning kunt u het oorspronkelijke element later herstellen als dat nodig is. Als u een afbeelding wilt bewerken, [zijn voorvertoning openen](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) en klik op **Afbeelding bewerken**.
+In de Assets-weergave kunt u basisafbeeldingen bewerken, zoals vergroten/verkleinen, verwijderen van de achtergrond, uitsnijden en omzetten tussen de JPEG- en PNG-indeling. Bovendien is geavanceerde bewerking mogelijk dankzij integratie met Adobe Express. Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een nieuwe versie. Met Versioning kunt u het oorspronkelijke element later herstellen als dat nodig is. Als u een afbeelding wilt bewerken, [zijn voorvertoning openen](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) en klik op **Afbeelding bewerken**.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ In de weergave Elementen kunt u basisafbeeldingen bewerken, zoals vergroten/verk
 
 ## Afbeelding bewerken {#edit-image}
 
-Land op vermogensweergave, met behulp van de link - [Elementweergave](https://experience.adobe.com/#/assets) en het selecteren van de juiste opslagplaats. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
+Land op Assets View, met de link - [Assets View](https://experience.adobe.com/#/assets) en het selecteren van de juiste opslagplaats. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
 Zie voor aanvullende informatie: [Ga aan de slag met de Adobe Experience Manager Assets-weergave](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [De gebruikersinterface van de Assets-weergave begrijpen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), en [Assets View-gebruikerskwesties](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -88,11 +88,11 @@ Gebruikers met Express-machtiging kunnen de ingesloten Express-editor vanuit de 
 ![UI voor het uitdrukken in essentiële gegevens](/help/assets/assets/express-in-essentials-ui.jpg)
 Afbeeldingen bewerken met [!DNL Adobe Express] ingesloten editor, voert u de onderstaande stappen uit:
 
-1. Ga naar AEM Assets View met behulp van link - [Weergave AEM](https://experience.adobe.com/#/assets) en selecteer de juiste opslagplaats.
+1. Ga naar AEM Assets View met behulp van link - [AEM Assets View](https://experience.adobe.com/#/assets) en selecteer de juiste opslagplaats.
 1. Klikken **Assets**, voert u een map in en selecteert u een afbeelding.
 1. Klikken **Openen in Adobe Express**. De afbeelding wordt geopend op een express canvas.
 1. Breng de gewenste wijzigingen in de afbeelding aan.
-1. Als voor uw project meer pagina&#39;s moeten worden toegevoegd, klikt u op **Toevoegen**, selecteert u Assets, voert u een map in, selecteert u de afbeelding die u op de canvaspagina wilt plaatsen en voert u de vereiste bewerkingen uit op de afbeelding.
+1. Als voor uw project meer pagina&#39;s moeten worden toegevoegd, klikt u op **Toevoegen** selecteert u elementen, voert u een map in, selecteert u een afbeelding die u naar de canvaspagina wilt brengen en voert u de vereiste bewerkingen uit op de afbeelding.
 1. Klik op **Opslaan**. Het dialoogvenster Opslaan wordt weergegeven.
 
    >[!NOTE]
@@ -197,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * Feedback geven op het product met de [!UICONTROL Feedback] beschikbaar in de gebruikersinterface van de Assets-weergave.
 
-* Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk
+* Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk.
 
 * Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support)
 
