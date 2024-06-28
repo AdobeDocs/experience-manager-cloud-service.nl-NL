@@ -1,12 +1,12 @@
 ---
-title: Real Use Monitoring for AEM as a Cloud Service
+title: Real Use Monitoring voor AEM as a Cloud Service
 description: Leer hoe u Real Use Monitoring (RUM) gebruikt om de digitale gebruikerservaring van een website of toepassing in real-time vast te leggen en te analyseren.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
+source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,6 @@ De echte dienst van de Controle van het Gebruik is voordelig voor alle klanten. 
 
 Voor alle klanten van de Adobe, verstrekt deze dienst waardevolle inzichten in gebruikersinteractie. De klanten die hun eigen CDN in dienst nemen kunnen van vereenvoudigde verkeer profiteren dat rapporteert, aangezien de Adobe nu direct de gegevensinzameling integreert, die de behoefte aan afzonderlijke rapporten tijdens vernieuwingscycli elimineert.
 
-Wilt u het volledige potentieel van uw website ontgrendelen, met het visualisatieprogramma van de Verkenner van de Ouderwetse van de Ouderwetse van de Adobe om nuttige inzichten in uw websitebetrokkenheid te verkrijgen? Dit hulpmiddel kan inzichten in uw paginaprestaties, met inbegrip van metriek op het aantal kliks, de Kernsteden van het Web (CWV), omzettingen, en de kaarten van de klantenreis verstrekken. Door deze krachtige inzichten te gebruiken, kunt u uw digitale ervaringen verfijnen om effectiever aan de behoeften van uw gebruikers te voldoen. Als u meer wilt weten en toegang wilt krijgen, kunt u ons een e-mail sturen op `rum-explorer@adobe.com`.
-
 ## Begrijp hoe de Echte Dienst van de Controle van het Gebruik werkt {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager (AEM) gebruikt Real Use Monitoring (RUM) om klanten en Adobe te helpen begrijpen hoe bezoekers met AEM sites communiceren. Het helpt hen prestatieskwesties diagnostiseren, en de doeltreffendheid van experimenten meten. RUM behoudt de privacy van bezoekers door middel van steekproeven - slechts een klein deel van alle paginameningen wordt gecontroleerd - en geen persoonlijk identificeerbare informatie (PII) wordt verzameld.
@@ -47,7 +45,7 @@ Als plaatsexploitant, wordt geen extra opt-in vereist om controle door deze eige
 
 ## Bemonstering van gegevens van de bewakingsservice voor echt gebruik {#rum-service-data-sampling}
 
-Traditionele webanalytische oplossingen proberen gegevens te verzamelen voor elke bezoeker. AEM de dienst RUM vangt slechts informatie van een kleine fractie van paginameningen. De dienst is bedoeld om te worden bemonsterd en geanonimiseerd in plaats van als vervanging voor analyses. Pagina&#39;s hebben standaard een bemonsteringsverhouding van 1:100. Site-operators kunnen de bemonsteringsfrequentie op dit moment niet verhogen of verlagen. Om totaal verkeer nauwkeurig te schatten, voor elke 100 paginameningen, worden de gegevens verzameld van 1, die u een betrouwbare benadering van algemeen verkeer geven.
+Traditionele webanalytische oplossingen proberen gegevens te verzamelen voor elke bezoeker. AEM de dienst RUM vangt slechts informatie van een klein fractie van paginameningen. De dienst is bedoeld om te worden bemonsterd en geanonimiseerd in plaats van als vervanging voor analyses. Pagina&#39;s hebben standaard een bemonsteringsverhouding van 1:100. Site-operators kunnen de bemonsteringsfrequentie op dit moment niet verhogen of verlagen. Om totaal verkeer nauwkeurig te schatten, voor elke 100 paginameningen, worden de gegevens verzameld van 1, die u een betrouwbare benadering van algemeen verkeer geven.
 
 Als u besluit of de gegevens worden verzameld, wordt deze per pagina weergegeven en is het vrijwel onmogelijk interacties op meerdere pagina&#39;s bij te houden. RUM heeft standaard geen concept van bezoekers of sessies, alleen van paginaweergaven.
 
@@ -108,7 +106,7 @@ Tijdens het analyseren van RUM-gegevens kunnen er verschillen zijn in paginaweer
 
 1. **De `/.rum` Het pad is geblokkeerd op mijn site. Hoe los ik het op?**
 
-   De `/.rum` De weg wordt vereist voor de inzameling van het RUM om te werken. Als u een CDN hebt vóór welke Adobe als deel van AEM as a Cloud Service verstrekt, zorg ervoor dat `/.rum` naar dezelfde AEM als de rest van de AEM. En zorg ervoor dat het op geen enkele manier wordt aangepast.
+   De `/.rum` De weg wordt vereist voor de inzameling van het RUM om te werken. Als u een CDN hebt vóór wat Adobe als deel van AEM as a Cloud Service verstrekt, zorg ervoor dat `/.rum` naar dezelfde AEM als de rest van de AEM. En zorg ervoor dat het op geen enkele manier wordt aangepast.
 
 1. **Telt de inzameling RUM op inhoudsverzoeken voor contractuele doeleinden?**
 
