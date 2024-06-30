@@ -2,9 +2,9 @@
 title: Upload uw door uw merk goedgekeurde middelen naar [!DNL Content Hub]
 description: Leer hoe u uw door een merk goedgekeurde middelen uploadt naar Content Hub
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Door een merk goedgekeurde middelen uploaden naar Content Hub {#upload-brand-approved-assets-content-hub}
 
-Beheerders kunnen elementen toevoegen aan de Content Hub vanuit een lokaal bestandssysteem of elementen importeren van OneDrive- of Dropbox-gegevensbronnen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of de gegevensbronnen OneDrive en Dropbox om de zoekmogelijkheden te verbeteren.
+[Content Hub-gebruikers met rechten om elementen toe te voegen](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) U kunt middelen toevoegen aan de Content Hub vanuit een lokaal bestandssysteem of elementen importeren van OneDrive- of Dropbox-gegevensbronnen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of de gegevensbronnen OneDrive en Dropbox om de zoekmogelijkheden te verbeteren.
 
 Content Hub biedt u de volgende mogelijkheden om uw assetzoekopdracht verder te verbeteren:
 

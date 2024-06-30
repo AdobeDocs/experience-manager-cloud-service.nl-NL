@@ -3,9 +3,9 @@ title: Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Clou
 description: Opmerkingen bij de huidige release voor [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1932'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,14 @@ Dynamic Media met OpenAPI-mogelijkheden breidt de DAM uit tussen Adobe- en exter
 **Meer opties zijn beschikbaar op het dashboard voor Assets-inzichten**
 
 Asset Count op type en grootte zijn nu beschikbaar op het Assets Insights-dashboard. Deze opties leveren realtime gegevens in uw Assets-weergaveomgeving. Ze geven een gedetailleerd overzicht van het aantal en het percentage van de elementen per grootteklasse en type element.
+
+**Updates voor ingesloten Adobe Express-editor**
+
+* Verbeterde gebruikerservaring voor het opslaan als een nieuw element in plaats van het opslaan als een nieuwe versie.
+
+* Exporteren van uit meerdere pagina&#39;s bestaande Express-documenten (voorheen werd slechts één pagina ondersteund) in zowel de PDF- als afbeeldingsindeling met meerdere pagina&#39;s. Als u afbeeldingsindelingen selecteert, wordt elke pagina opgeslagen als een afzonderlijk element in de DAM voor downstreamdistributie.
+
+* Ondersteuning voor het toevoegen van metagegevens in het dialoogvenster Opslaan terwijl u een element opslaat.
 
 <!--
 
