@@ -2,9 +2,9 @@
 title: Eigenschappen van elementen in [!DNL the Content Hub]
 description: Leer hoe u elementen kunt weergeven en beheren in [!DNL Content Hub]
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ Door de eigenschappen van elementen weer te geven, kunt u elementen verder indel
 * Toegankelijker - systemen en gebruikers kunnen het gemakkelijk vinden.
 * Eenvoudiger te beheren - u kunt gemakkelijk middelen met de zelfde reeks eigenschappen vinden en veranderingen op hen toepassen.
 * Complete - asset bevat meer informatie en context.
+
+## Vereisten {#prerequisites}
+
+[Content Hub-gebruikers](deploy-content-hub.md#onboard-content-hub-users) kan handelingen uitvoeren die in dit artikel worden genoemd.
 
 ## Eigenschappen van een element weergeven {#properties-ui}
 

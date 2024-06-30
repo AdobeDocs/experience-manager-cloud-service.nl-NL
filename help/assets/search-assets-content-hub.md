@@ -2,9 +2,9 @@
 title: Middelen zoeken in Content Hub
 description: Leer hoe u middelen kunt zoeken in [!DNL Content Hub]
 role: User
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 ![Bannerafbeelding voor delen](assets/search.png)
 
 Als u een groot aantal middelen in uw opslagplaats hebt, is het tijdrovend om naar het juiste middel te zoeken. [!DNL The Content Hub] het onderzoek voorziet u van de capaciteit om de goedgekeurde activa te zoeken zodat u extra acties op hen kunt uitvoeren, zoals downloaden, delen, of inzamelingen tot stand brengen. U kunt verschillende mogelijkheden gebruiken om uw zoekresultaten te beperken, zoals het uitvoeren van op tekst gebaseerde zoekopdrachten, het gebruik van filters, het uitvoeren van tags of een specifieke zoekopdracht met slimme tags, het zoeken naar een bepaalde bestandsindeling, enzovoort.
+
+## Vereisten {#prerequisites}
+
+[Content Hub-gebruikers](deploy-content-hub.md#onboard-content-hub-users) kan handelingen uitvoeren die in dit artikel worden genoemd.
 
 ## Wat u kunt zoeken  {#what-you-can-search}
 

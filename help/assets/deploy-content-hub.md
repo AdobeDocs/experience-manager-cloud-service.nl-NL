@@ -2,9 +2,9 @@
 title: Implementeren [!DNL Content Hub]
 description: Leer hoe u Content Hub kunt implementeren en activeren en gebruikers toegang kunt bieden met verschillende typen rechten (middelen uploaden, gebruikers van Adoben Express) en hoe u beheerdersrechten kunt bieden aan gebruikers.
 role: Admin
-source-git-commit: 56af07a198e1350282f5d3f771c1c29db318b90e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,15 @@ Dit artikel biedt een end-to-end workflow om Content Hub toegang te bieden aan g
 
 De verschillende privileges in Content Hub zijn onder meer:
 
-* [Middelconsumenten](#onboard-content-hub-consumer-users): Gebruik merkgoedgekeurde middelen op de Content Hub-portal.
+* [Content Hub-gebruikers](#onboard-content-hub-users): Gebruik merkgoedgekeurde middelen op de Content Hub-portal.
 
-* [Beheerders](#onboard-content-hub-administrator): Toegang tot de [Gebruikersinterface configuratie](/help/assets/configure-content-hub-ui-options.md) op Content Hub, naast Asset Consumer met rechten voor het indienen van voorstellen.
+* [Content Hub-beheerders](#onboard-content-hub-administrator): Toegang tot de [Gebruikersinterface configuratie](/help/assets/configure-content-hub-ui-options.md) op Content Hub, naast de toegang tot door een merk goedgekeurde middelen, het uploaden van middelen naar Content Hub, Adobe Express-integratie om afbeeldingen te bewerken (als u rechten hebt op Adobe Express).
 
-* [Middelenconsumenten met voorleggingsrechten](#onboard-content-hub-consumer-users-submission-rights): Mogelijkheid om [middelen uploaden naar Content Hub](/help/assets/upload-brand-approved-assets.md) en [Adobe Express-integratie](/help/assets/edit-images-content-hub.md) naast de toegang tot merkgoedgekeurde middelen op het Content Hub-portaal.
+* [Content Hub-gebruikers met rechten om elementen toe te voegen](#onboard-content-hub-users-add-assets): Mogelijkheid om [middelen uploaden naar Content Hub](/help/assets/upload-brand-approved-assets.md) naast de toegang tot merkgoedgekeurde middelen op het Content Hub-portaal.
 
-* [Middeldistributeurs](#content-hub-asset-distributors): Mogelijkheid om activa op Experience Manager Assets as a Cloud Service goed te keuren om deze activa op Content Hub beschikbaar te stellen.
+* [Content Hub-gebruikers met rechten om elementen opnieuw te mixen voor nieuwe variaties](#onboard-content-hub-users-remix-assets): [Adobe Express-integratie](/help/assets/edit-images-content-hub.md) (als u rechten hebt voor Adobe Express) naast het openen van merkgoedgekeurde middelen op het Content Hub-portaal.
+
+* [Experience Manager Assets-gebruikers](#experience-manager-assets-users): Mogelijkheid om activa op Experience Manager Assets as a Cloud Service goed te keuren om deze activa op Content Hub beschikbaar te stellen.
 
 ## Stap 1: Content Hub for Experience Manager Assets inschakelen met Cloud Manager {#enable-content-hub}
 
@@ -65,7 +67,7 @@ Klik op de instantienaam om het Content Hub-productprofiel weer te geven.
 
 ## Stap 2: on-board Content Hub-beheerder {#onboard-content-hub-administrator}
 
-Content Hub-beheerders kunnen elementen toevoegen aan Content Hub en kunnen ook de [Configuratieopties](/help/assets/configure-content-hub-ui-options.md) voor andere gebruikers binnen uw organisatie.
+Content Hub-beheerders hebben toegang tot de [Gebruikersinterface configuratie](/help/assets/configure-content-hub-ui-options.md) op Content Hub, naast de toegang tot door een merk goedgekeurde middelen, het uploaden van middelen naar Content Hub, Adobe Express-integratie om afbeeldingen te bewerken (als u rechten hebt op Adobe Express).
 
 Aan boord van de Content Hub-beheerder:
 
@@ -86,11 +88,11 @@ Aan boord van de Content Hub-beheerder:
 
 1. Klikken **[!UICONTROL Save]** om de wijzigingen op te slaan
 
-## Stap 3: On-board Content Hub-middelen voor consumenten {#onboard-content-hub-consumer-users}
+## Stap 3: Content Hub-gebruikers aan boord {#onboard-content-hub-users}
 
-Consumenten van Content Hub hebben toegang tot middelen die beschikbaar zijn op de portal, maar kunnen geen nieuwe middelen toevoegen of bestaande middelen wijzigen.
+Content Hub-gebruikers hebben toegang tot middelen die beschikbaar zijn op de portal, maar kunnen geen nieuwe middelen toevoegen of bestaande middelen wijzigen.
 
-Aan boord van gebruikers aan Content Hub:
+Aan boord van Content Hub-gebruikers:
 
 1. [Open en klik op het Content Hub-gebruikersprofiel](#content-hub-instance-product-profile).
 
@@ -117,17 +119,13 @@ Klik op het zoekpictogram naast de naam van het productprofiel en schakel de opt
 ![E-mailberichten uitschakelen](assets/disable-email-notifications.png)
 
 
-## Stap 4: On-board Content Hub Asset Consumer-gebruikers met verzendmachtigingen (optioneel) {#onboard-content-hub-consumer-users-submission-rights}
+## Stap 4: Content Hub-gebruikers aan boord met rechten om elementen toe te voegen (optioneel) {#onboard-content-hub-users-add-assets}
 
-Gebruikers van Content Hub-middelen met verzendmachtigingen kunnen:
+Content Hub-gebruikers met rechten om elementen toe te voegen, kunnen [uploaden van nieuwe merkgoedgekeurde middelen naar Content Hub](/help/assets/upload-brand-approved-assets.md).
 
-* [Nieuwe merkgoedgekeurde middelen uploaden naar Content Hub](/help/assets/upload-brand-approved-assets.md).
+Aan boord van Content Hub-gebruikers met rechten om gebruikers toe te voegen:
 
-* [Bestaande elementen wijzigen met behulp van Adobe Express en het middel opslaan in de gegevensopslagruimte](/help/assets/edit-images-content-hub.md). Elementen bewerken met Adobe Express is alleen beschikbaar als de gebruiker rechten op Adobe Express heeft.
-
-Aan boord van Content Hub-gebruiker met verzendrechten:
-
-1. [Nadat u de gebruiker aan het Content Hub-productprofiel hebt toegevoegd](#onboard-content-hub-consumer-users)Als u Experience Manager Assets-productprofielen wilt openen, klikt u op de AEM as a Cloud Service-productnaam in de lijst met producten op de Admin Console.
+1. [Nadat u de gebruiker aan het Content Hub-productprofiel hebt toegevoegd](#onboard-content-hub-users)Als u Experience Manager Assets-productprofielen wilt openen, klikt u op de AEM as a Cloud Service-productnaam in de lijst met producten op de Admin Console.
 
 1. Klik op de productieauteur-instantie voor AEM as a Cloud Service:
    ![Productprofielen voor AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
@@ -138,11 +136,28 @@ Aan boord van Content Hub-gebruiker met verzendrechten:
 
 1. Klikken **[!UICONTROL Save]** om de wijzigingen op te slaan
 
-## Content Hub-distributeurs {#content-hub-asset-distributors}
+## Stap 4: Content Hub-gebruikers aan boord met rechten om elementen te combineren met nieuwe variaties (optioneel) {#onboard-content-hub-users-remix-assets}
 
-Middelendistributeurs kunnen activa op AEM as a Cloud Service goedkeuren, zodat deze op Content Hub beschikbaar zijn.
+Content Hub-gebruikers met rechten om elementen opnieuw te mixen naar nieuwe variaties kunnen [bestaande elementen wijzigen met behulp van Adobe Express en het middel opslaan in de gegevensopslagruimte](/help/assets/edit-images-content-hub.md). Elementen bewerken met Adobe Express is alleen beschikbaar als de gebruiker rechten op Adobe Express heeft.
 
-Om de rol van de activaverdeler te vormen:
+Content Hub-gebruikers met rechten om elementen te combineren tot nieuwe variaties:
+
+1. [Nadat u de gebruiker aan het Content Hub-productprofiel hebt toegevoegd](#onboard-content-hub-users)Als u Experience Manager Assets-productprofielen wilt openen, klikt u op de AEM as a Cloud Service-productnaam in de lijst met producten op de Admin Console.
+
+1. Klik op de productieauteur-instantie voor AEM as a Cloud Service:
+   ![Productprofielen voor AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
+
+   Admin Console geeft twee productprofielen voor AEM as a Cloud Service weer: beheerders en gebruikers.
+1. Klik op het gebruikersproductprofiel en klik op **[!UICONTROL Add users]** om de gebruiker aan het productprofiel toe te voegen.
+   ![Gebruikersprofiel](assets/aem-cs-user-product-profile.png)
+
+1. Klikken **[!UICONTROL Save]** om de wijzigingen op te slaan
+
+## Experience Manager Assets-gebruikers {#experience-manager-assets-users}
+
+Experience Manager Assets-gebruikers kunnen op AEM as a Cloud Service middelen goedkeuren zodat deze beschikbaar zijn op Content Hub.
+
+Experience Manager Assets-gebruikers configureren:
 
 1. Open Experience Manager Assets-productprofielen door op de AEM as a Cloud Service-productnaam in de lijst met producten op de Admin Console te klikken.
 
@@ -157,7 +172,7 @@ Om de rol van de activaverdeler te vormen:
 
    >[!NOTE]
    >
-   > U hoeft niet aan de [Content Hub-productprofiel](#onboard-content-hub-consumer-users) voor de rol van vermogensdistributie.
+   > U hoeft niet aan de [Content Hub-productprofiel](#onboard-content-hub-users) voor de Experience Manager Assets-gebruikers.
 
 
 

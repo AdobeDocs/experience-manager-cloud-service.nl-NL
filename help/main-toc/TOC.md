@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
+source-git-commit: 1989b546c495307440690f7e3510619112bdcc29
 workflow-type: tm+mt
-source-wordcount: '5133'
+source-wordcount: '5132'
 ht-degree: 3%
 
 ---
@@ -591,7 +591,7 @@ ht-degree: 3%
       + [Tags beheren](/help/assets/tagging-management-assets-view.md)
       + [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
-   + Content Hub beheren {#content-hub}
+   + Content Hub {#content-hub}
       + [Overzicht](/help/assets/product-overview.md)
       + [Content Hub implementeren](/help/assets/deploy-content-hub.md)
       + [Content Hub-gebruikersinterface configureren](/help/assets/configure-content-hub-ui-options.md)
@@ -763,7 +763,7 @@ ht-degree: 3%
    + Referentie ontwikkelings-API {#aem-forms-developer-api-reference}
       + [Aangepaste Forms API-naslaggids](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [AEM Forms Cloud Service JavaScript API-naslag](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [AEM Forms Cloud Service JavaScript API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms Cloud Service Java API Naslaggids](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + Problemen oplossen {#troubleshooting-aem-forms-cloud-service}
       + [Installatie en configuratie](/help/forms/troubleshooting-installation-and-configuration.md)

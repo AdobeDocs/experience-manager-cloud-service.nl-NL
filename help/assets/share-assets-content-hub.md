@@ -2,9 +2,9 @@
 title: Assets delen in [!DNL the Content Hub]
 description: Assets delen in [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 ![Bannerafbeelding voor delen](assets/share-assets-banner.png)
 
 Het delen van elementen via een koppeling is een handige manier om de bronnen beschikbaar te maken voor [!DNL the Content Hub] gebruikers. Met deze functionaliteit kunnen geautoriseerde gebruikers de elementen die met hen worden gedeeld, openen en downloaden. Bij het downloaden van elementen van een gedeelde koppeling [!DNL the Content Hub] gebruikt een asynchrone dienst die sneller en ononderbroken download aanbiedt.
+
+## Vereisten {#prerequisites}
+
+[Content Hub-gebruikers](deploy-content-hub.md#onboard-content-hub-users) kan handelingen uitvoeren die in dit artikel worden genoemd.
 
 ## Eén element delen {#share-a-single-asset}
 

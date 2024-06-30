@@ -2,7 +2,7 @@
 title: Upload uw door uw merk goedgekeurde middelen naar [!DNL Content Hub]
 description: Leer hoe u uw door een merk goedgekeurde middelen uploadt naar Content Hub
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Zorg ervoor dat u alleen uw [merkgoedgekeurde activa aan de Content Hub](/help/a
 
 ## Vereisten {#prerequisites-add-assets}
 
-[Content Hub Asset Consumer-gebruikers met verzendmachtigingen](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) kan elementen uploaden naar Content Hub.
+[Content Hub-gebruikers met rechten om elementen toe te voegen](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) kan elementen uploaden naar Content Hub.
 
 ## Elementen toevoegen aan Content Hub vanuit een lokaal bestandssysteem {#add-assets-local-file-system}
 

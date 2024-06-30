@@ -2,9 +2,9 @@
 title: Verzamelingen beheren in Content Hub
 description: Leer hoe u verzamelingen beheert in Content Hub
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Een verzameling verwijst naar een set elementen die onder gebruikers kunnen word
 * **Verwijderen**: Verwijder de gehele verzameling.
 
 Hiermee kunnen gebruikers eenvoudig toegang krijgen tot de verschillende middelen die binnen [!DNL Content Hub].
+
+## Vereisten {#prerequisites}
+
+[Content Hub-gebruikers](deploy-content-hub.md#onboard-content-hub-users) kan handelingen uitvoeren die in dit artikel worden genoemd.
 
 ## Verzamelingen maken{#create-collections}
 

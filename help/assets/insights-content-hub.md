@@ -2,9 +2,9 @@
 title: Elementen weergeven in Content Hub
 description: Leer hoe u inzicht in elementen kunt bekijken in [!DNL Content Hub]
 role: User
-source-git-commit: 788ed1189b21392bd399f7bdee888a3b5e1da117
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 ![Assets-inzichten](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] biedt waardevolle inzichten in bedrijfsmiddelen en biedt een oplossing voor een gemeenschappelijke uitdaging die marketingbelanghebbenden vaak ondervinden bij het gebruik van statistieken over het gebruik van bedrijfsmiddelen die worden gebruikt in marketingcampagnes , kanalen en verschillende regio &#39; s . Door een duidelijk inzicht te krijgen in de prestaties en populariteit van de middelen, biedt het actioneerbare inzichten die essentieel zijn voor het verbeteren van de gebruikerservaring.
+
+## Vereisten {#prerequisites}
+
+[Content Hub-gebruikers](deploy-content-hub.md#onboard-content-hub-users) kan handelingen uitvoeren die in dit artikel worden genoemd.
 
 ## Statistieken voor geüploade elementen weergeven{#view-statistics-for-uploaded-assets}
 

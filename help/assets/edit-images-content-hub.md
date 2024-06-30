@@ -1,9 +1,9 @@
 ---
 title: Afbeeldingen in Content Hub bewerken met Adobe Express
 description: Afbeeldingen in Content Hub bewerken met Adobe Express
-source-git-commit: 52166c1983218d619c416b4c095e8954e3010dc5
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Met Content Hub kunt u nieuwe inhoud maken met Adobe Express. U kunt bestaande i
 
 ## Vereisten {#prereqs-edit-image-content-hub}
 
-Recht op toegang tot Adobe Express en [Content Hub Asset Consumer-gebruikers met verzendmachtigingen](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) kan afbeeldingen bewerken met Content Hub.
+Recht op toegang tot Adobe Express en [Content Hub-gebruikers met rechten om elementen opnieuw te mixen voor nieuwe variaties](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) kan afbeeldingen bewerken met Content Hub.
 
 >[!NOTE]
 >

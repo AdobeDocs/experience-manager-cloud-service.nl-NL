@@ -2,9 +2,9 @@
 title: Middelen downloaden van Content Hub
 description: Leer hoe u middelen kunt downloaden van de Content Hub-portal
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '124'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 Met de Content Hub kunt u uw middelen downloaden en delen. Deze elementen kunnen afbeeldingen, video&#39;s of andere digitale inhoud bevatten. De Content Hub verbetert de toegankelijkheid en het aanpassingsvermogen voor een effectieve verdeling van activa.
 
 U kunt één element of meerdere elementen downloaden met de Content Hub. De oorspronkelijke versies van het element worden gedownload.
+
+## Vereisten {#prerequisites}
+
+[Content Hub-gebruikers](deploy-content-hub.md#onboard-content-hub-users) kan handelingen uitvoeren die in dit artikel worden genoemd.
 
 ## Middelen downloaden {#download-single-asset}
 

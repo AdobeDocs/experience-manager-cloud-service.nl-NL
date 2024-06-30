@@ -1,9 +1,9 @@
 ---
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
-source-git-commit: 85ccd23df4ac320d6da37c54b72f0f93916e65a1
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Met Experience Manager Assets kunnen beheerders de opties configureren die besch
 
 ## Vereisten {#prerequisites-configuration-ui}
 
-[Content Hub-beheerders](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) U kunt middelen toevoegen aan Content Hub en ook configuratieopties instellen voor andere gebruikers binnen uw organisatie.
+[Content Hub-beheerders](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) U kunt de configuratieopties instellen voor andere gebruikers binnen uw organisatie.
 
 ## Toegang tot configuratieopties op Content Hub {#access-configuration-options-content-hub}
 
