@@ -1,12 +1,12 @@
 ---
-title: Log doorsturen voor AEM as a Cloud Service
+title: Log Forwarding for AEM as a Cloud Service
 description: Leer over het door:sturen van logboeken aan Splunk en andere registrerenverkopers in AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e007f2e3713d334787446305872020367169e6a2
+source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Deze eigenschap wordt nog niet vrijgegeven, en sommige registrerenbestemmingen kunnen niet op het tijdstip van versie beschikbaar zijn. Ondertussen kunt u een ondersteuningsticket openen om logbestanden door te sturen naar **Splunk**, zoals beschreven in de [logboekartikel](/help/implementing/developing/introduction/logging.md).
 
-Klanten die een vergunning voor een registrerenverkoper hebben of een registrerenproduct ontvangen kunnen AEM logboeken (met inbegrip van Apache/Dispatcher) en CDN- logboeken hebben die aan de bijbehorende registrerenbestemmingen door:sturen. AEM as a Cloud Service steunt de volgende registrerenbestemmingen:
+Klanten die een vergunning voor een registrerenverkoper hebben of een registrerenproduct ontvangen kunnen AEM logboeken (met inbegrip van Apache/Dispatcher) en CDN- logboeken hebben die aan de bijbehorende registrerenbestemmingen door:sturen. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
 
 * Azure Blob Storage
 * DataDog
@@ -25,9 +25,9 @@ Klanten die een vergunning voor een registrerenverkoper hebben of een registrere
 * HTTPS
 * Splunk
 
-Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en het op te stellen via de Pijpleiding van de Configuratie van de Manager van de Wolk om, stadium, en de types van productiemilieu in productie (niet-zandbak) programma&#39;s te ontwikkelen.
+Het door:sturen van het logboek wordt gevormd op een zelfbediening manier door een configuratie in Git te verklaren, en het op te stellen via de Pijpleiding van de Configuratie van Cloud Manager om, stadium, en de types van productiemilieu in productie (niet-zandbak) programma&#39;s te ontwikkelen.
 
-Er is een optie voor de logboeken van de AEM en van Apache/van de Verzender om door AEM geavanceerde voorzien van een netwerkinfrastructuur, zoals specifieke uitgang IP worden verpletterd.
+Er is een optie voor de logboeken van de AEM en van Apache/Dispatcher om door AEM geavanceerde voorzien van een netwerkinfrastructuur, zoals specifieke uitgang IP worden verpletterd.
 
 Merk op dat de netwerkbandbreedte verbonden aan logboeken die naar de logboekbestemming worden verzonden als deel van het I/O gebruik van het Netwerk van uw organisatie worden beschouwd.
 
@@ -39,7 +39,7 @@ Dit artikel is als volgt geordend:
 * Opstelling - gemeenschappelijk voor alle registrerenbestemmingen
 * Logboekdoelconfiguraties - elke bestemming heeft een lichtjes verschillende indeling
 * Indelingen voor logberichten - informatie over de indelingen van logberichten
-* Het geavanceerde voorzien van een netwerk - verzendend AEM en Apache/Dispatcher logboeken door een specifiek uitgang of door VPN
+* Geavanceerde netwerken - het verzenden van AEM en Apache/Dispatcher logboeken door een specifiek uitgang of door VPN
 
 
 ## Instellen {#setup}
@@ -69,7 +69,7 @@ Dit artikel is als volgt geordend:
 
    De **aardig** parameter moet worden ingesteld op `LogForwarding` de versie zou aan de schemaversie moeten worden geplaatst, die 1 is.
 
-   Tokens in de configuratie (zoals `${{SPLUNK_TOKEN}}`) vertegenwoordigen geheimen, die niet in Git moeten worden opgeslagen. In plaats daarvan declareren als Cloud Manager  [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md) van het type **geheim**. Zorg ervoor dat u **Alles** als de vervolgkeuzelijst voor het veld Service Applied, zodat de logbestanden naar de auteur-, publicatie- en voorvertoningslagen kunnen worden doorgestuurd.
+   Tokens in de configuratie (zoals `${{SPLUNK_TOKEN}}`) vertegenwoordigen geheimen, die niet in Git moeten worden opgeslagen. In plaats daarvan, verklaar hen als Cloud Manager  [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md) van het type **geheim**. Zorg ervoor dat u **Alles** als de vervolgkeuzelijst voor het veld Service Applied, zodat de logbestanden naar de auteur-, publicatie- en voorvertoningslagen kunnen worden doorgestuurd.
 
    Het is mogelijk verschillende waarden in te stellen tussen CDN-logbestanden en AEM-logbestanden (inclusief Apache/Dispatcher) door een extra waarde op te nemen **cdn** en/of **aem** blok na de **default** blok, waarbij eigenschappen de eigenschappen kunnen overschrijven die in het dialoogvenster **default** blok; slechts wordt het toegelaten bezit vereist. Een mogelijk gebruiksgeval zou kunnen zijn om een verschillende index van de Splunk voor CDN- logboeken te gebruiken, zoals het hieronder voorbeeld illustreert.
 
@@ -109,7 +109,7 @@ Dit artikel is als volgt geordend:
             enabled: false
    ```
 
-1. Voor milieutypes buiten RDE (die momenteel niet wordt gesteund), creeer een gerichte plaatsing config pijpleiding in de Manager van de Wolk.
+1. Voor milieutypes buiten RDE (die momenteel niet wordt gesteund), creeer een gerichte plaatsing config pijpleiding in Cloud Manager.
 
    * [Zie productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [Zie niet-productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -199,12 +199,16 @@ data:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
       token: "${{DATADOG_API_KEY}}"
+      tags:
+         tag1: value1
+         tag2: value2
       
 ```
 
 Overwegingen:
 
 * Maak een API-sleutel zonder integratie met een specifieke cloud provider.
+* de eigenschap tags is optioneel
 
 
 ### Elasticsearch en OpenSearch {#elastic}
@@ -221,6 +225,7 @@ data:
       host: "example.com"
       user: "${{ELASTICSEARCH_USER}}"
       password: "${{ELASTICSEARCH_PASSWORD}}"
+      pipeline: "ingest pipeline name"
 ```
 
 Overwegingen:
@@ -228,6 +233,15 @@ Overwegingen:
 * Voor geloofsbrieven, zorg ervoor om plaatsingsgeloofsbrieven te gebruiken, eerder dan rekeningsgeloofsbrieven. Dit zijn de referenties die worden gegenereerd in een scherm dat op deze afbeelding lijkt:
 
 ![Elastische implementatiereferenties](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet worden geplaatst aan *script* en de scripttaal moet worden ingesteld op *pijnloos*. Hier is een fragment van het steekproefmanuscript om logboekingangen in een index zoals aemaccess_dev_26_06_2024 te leiden:
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+```
 
 ### HTTPS {#https}
 
