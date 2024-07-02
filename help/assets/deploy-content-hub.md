@@ -2,9 +2,9 @@
 title: Implementeren [!DNL Content Hub]
 description: Leer hoe u Content Hub kunt implementeren en activeren en gebruikers toegang kunt bieden met verschillende typen rechten (middelen uploaden, gebruikers van Adoben Express) en hoe u beheerdersrechten kunt bieden aan gebruikers.
 role: Admin
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,11 @@ Om toegang te krijgen tot het Content Hub-portaal, moeten beheerders eerst Conte
 1. Klik op **[!UICONTROL Update]**.
 
 Content Hub is nu ingeschakeld voor Experience Manager Assets as a Cloud Service.
+
+>[!NOTE]
+>
+>U kunt Content Hub openen en gebruiken met maximaal 250 Content Hub-gebruikers. Neem contact op met uw Adobe als u nog meer vragen hebt.
+
 
 Als je nog geen ervaring hebt met Experience Manager Assets, klikt u op **[!UICONTROL Add Program]** en geef vervolgens de programmatiedetails (Programmanaam, Instelling voor Productie) op en klik op **[!UICONTROL Continue]**. U kunt vervolgens **[!UICONTROL Assets]** en **[!UICONTROL Content Hub]** in de **[!UICONTROL Solutions & Add-ons]** tab.
 
