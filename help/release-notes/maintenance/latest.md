@@ -4,9 +4,9 @@ description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -71,10 +71,10 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16799 same
 
 #### Forms
 
-1. Als een gebruiker een AEM Forms SDK-versie downloadt die hoger is dan `AEM Forms add-on v2024.05.04.00-240400`, kan het batchbestand de Docker-service niet starten. U lost dit probleem als volgt op:
-   1. Download de [map](/help/forms/assets/sdk_hotfix.zip).
-   1. Extraheer de inhoud uit de gedownloade map en kopieer de `sdk.sh` en `sdk.bat` bestanden.
-   1. Bestaande vervangen `sdk.sh` en `sdk.bat` in de SDK van AEM Forms met de nieuwe bestanden.
+* Wanneer u de AEM SDK installeert en toevoegt `AEM Forms add-on v2024.05.04.00-240400`, kan de Docker-service niet worden gestart. De dockerservice is vereist om Document of Record te genereren in een lokale ontwikkelomgeving. U kunt als volgt het probleem verhelpen:
+   1. Download de [hotfix](/help/forms/assets/sdk_hotfix.zip). Wanneer u de hotfix downloadt, wordt een `.zip` wordt gedownload.
+   1. Pak de gedownloade hotfix uit naar een map.
+   1. De map vervangen `sdk.sh` en `sdk.bat` bestanden met nieuwere bestanden in de map die zijn uitgepakt in Stap 2.
 
 ### Kennisgeving wijzigen {#change-notice-16799}
 
