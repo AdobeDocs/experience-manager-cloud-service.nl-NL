@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2377'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De mogelijkheden van individuele omgevingen zijn afhankelijk van de oplossingen 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
 * [Forms](/help/forms/home.md)
-* [Schermen](/help/screens-cloud/introduction/introduction.md)
+* [Screens](/help/screens-cloud/introduction/introduction.md)
 
 >[!NOTE]
 >
@@ -61,6 +61,7 @@ Een gebruiker moet lid zijn van de **Zakelijke eigenaar** rol.
    * Selecteer een [**omgevingstype**.](#environment-types)
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter de naam van het omgevingstype weergegeven.
    * Een omgeving bieden **Naam**.
+      * De naam van de omgeving kan niet worden gewijzigd nadat de omgeving is gemaakt.
    * Een omgeving bieden **Beschrijving**.
    * Als u een **Productie + werkgebied** -omgeving, moet u een omgevingsnaam en -beschrijving opgeven voor zowel uw productie- als staging-omgeving.
    * Selecteer een **Primair gebied** in de vervolgkeuzelijst.
@@ -73,15 +74,15 @@ Een gebruiker moet lid zijn van de **Zakelijke eigenaar** rol.
 
 De **Overzicht** het scherm toont nu uw nieuwe milieu in **Omgevingen** kaart. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
 
-## Meerdere publicatieregio&#39;s {#multiple-regions}
+## Meerdere Publish-regio&#39;s {#multiple-regions}
 
-Een gebruiker met de **Zakelijke eigenaar** Met rol kunt u productie- en staging-omgevingen zodanig configureren dat er naast het primaire gebied maximaal drie extra publicatiegebieden worden opgenomen. Aanvullende publicatiegebieden kunnen de beschikbaarheid verbeteren. Zie de [Aanvullende documentatie voor publicatiegebieden](/help/operations/additional-publish-regions.md) voor meer informatie .
+Een gebruiker met de **Zakelijke eigenaar** Met rol kunt u productie- en staging-omgevingen zodanig configureren dat er naast het primaire gebied maximaal drie extra publicatiegebieden worden opgenomen. Aanvullende publicatiegebieden kunnen de beschikbaarheid verbeteren. Zie de [Aanvullende documentatie bij Publish-regio&#39;s](/help/operations/additional-publish-regions.md) voor meer informatie .
 
 >[!TIP]
 >
->U kunt de [Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) om een huidige lijst van beschikbare gebieden te vragen.
+>U kunt de [CLOUD MANAGER API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) om een huidige lijst van beschikbare gebieden te vragen.
 
-### Meerdere publicatiegebieden toevoegen aan een nieuwe omgeving {#add-regions}
+### Meerdere Publish-regio&#39;s toevoegen aan een nieuwe omgeving {#add-regions}
 
 Wanneer u een omgeving toevoegt, kunt u ervoor kiezen om naast het primaire gebied ook andere gebieden te configureren.
 
@@ -100,9 +101,9 @@ De geselecteerde gebieden zijn van toepassing op zowel productie als het opvoere
 
 Als u geen extra gebieden opgeeft, [dat kunt u later doen nadat de omgevingen zijn gemaakt.](#edit-regions)
 
-Als u een voorziening wilt [geavanceerd netwerken](/help/security/configuring-advanced-networking.md) voor het programma wordt aangeraden deze voorziening uit te voeren voordat u aanvullende publicatiegebieden aan de omgevingen toevoegt met de API voor Cloud Manager. Anders, gaat het extra publiceer gebiedsverkeer door de volmacht van het primaire gebied.
+Als u een voorziening wilt [geavanceerd netwerken](/help/security/configuring-advanced-networking.md) voor het programma wordt aangeraden deze provisioning uit te voeren voordat extra publicatiegebieden aan de omgevingen worden toegevoegd met behulp van de Cloud Manager API. Anders, gaat het extra publiceer gebiedsverkeer door de volmacht van het primaire gebied.
 
-### Meerdere publicatiegebieden bewerken {#edit-regions}
+### Meerdere Publish-gebieden bewerken {#edit-regions}
 
 Als u in eerste instantie geen extra gebieden hebt opgegeven, kunt u dat doen nadat de omgevingen zijn gemaakt als u over de benodigde rechten beschikt.
 
@@ -154,7 +155,7 @@ U kunt ook op de knop voor weglatingsteken van de gewenste omgeving klikken en v
 
 ### Toegang tot de voorvertoningsservice {#access-preview-service}
 
-Cloud Manager biedt een voorbeeldservice (geleverd als een extra publicatieservice) voor elke AEM as a Cloud Service omgeving.
+Cloud Manager biedt een voorbeeldservice (geleverd als een extra publicatieservice) aan elke AEM as a Cloud Service-omgeving.
 
 Met de service kunt u de uiteindelijke ervaring van een website voorvertonen voordat deze de daadwerkelijke publicatieomgeving bereikt en openbaar is.
 
@@ -178,7 +179,7 @@ Nadat de functie is geactiveerd, kunt u inhoud publiceren naar de voorbeeldservi
 >
 >Uw omgeving moet zijn AEM versie `2021.05.5368.20210529T101701Z` of hoger om de voorvertoningsservice te gebruiken. Zorg ervoor dat een updatepijpleiding op uw milieu met succes heeft gelopen zodat kunt u de voorproefdienst gebruiken.
 
-### Status van aanvullende publicatiegebieden {#additional-region-status}
+### Status van extra Publish-regio&#39;s {#additional-region-status}
 
 Als u aanvullende publicatiegebieden hebt geactiveerd, kunt u de status van deze gebieden controleren via het tabblad **Omgevingen** kaart.
 
@@ -203,7 +204,7 @@ U kunt dezelfde informatie ook openen via het dialoogvenster **Omgevingen** tab.
 
 Als er problemen zijn gemeld met extra publicatiegebieden:
 
-1. Wees geduldig. Cloud Manager probeert het gebied voortdurend te herstellen en kan op elk gewenst moment beschikbaar komen.
+1. Wees geduldig. Cloud Manager probeert het gebied voortdurend te herstellen en kan op elk moment beschikbaar komen.
 1. Als het probleem zich na enkele uren blijft voordoen, kunt u het aanvullende publicatiegebied verwijderen en het opnieuw toevoegen (hetzelfde gebied of een ander gebied) om een volledige implementatie te activeren.
 
 Hoe lang u wacht tot het systeem op zich terugkrijgt alvorens extra actie te ondernemen hangt van de invloed af het mislukken van dat gebied op uw systemen heeft.
@@ -220,9 +221,9 @@ Updates voor omgevingen in sandboxprogramma&#39;s worden echter binnen de progra
 
 ### Updates en pijpleidingen {#updates-pipelines}
 
-Pijpleidingen zijn de enige manier om [code in te voeren aan de milieu&#39;s van AEM as a Cloud Service.](deploy-code.md) Daarom wordt elke pijpleiding geassocieerd met een bepaalde AEM versie.
+Pijpleidingen zijn de enige manier om [code implementeren in de omgevingen van AEM as a Cloud Service.](deploy-code.md) Daarom wordt elke pijpleiding geassocieerd met een bepaalde AEM versie.
 
-Als de Manager van de Wolk ontdekt dat er een nieuwere versie van AEM beschikbaar is dan wat het laatst met de pijpleiding werd opgesteld, toont het **Update beschikbaar** milieutoestand.
+Als Cloud Manager ontdekt dat er een nieuwere versie van AEM beschikbaar is dan wat het laatst met de pijpleiding werd opgesteld, toont het **Update beschikbaar** milieutoestand.
 
 Het proces van actualisering bestaat daarom uit twee stappen:
 
@@ -246,7 +247,7 @@ Een gebruiker met de **Implementatiebeheer** of **Zakelijke eigenaar** rol kan d
 
 Zodra de pijpleidingsversie aan de recentste openbaar beschikbare AEM versie wordt bijgewerkt, wordt de gebruiker ertoe aangezet om de bijbehorende pijpleiding in werking te stellen om de recentste versie aan het milieu op te stellen.
 
-![Vragen om pijpleiding in werking te stellen om milieu bij te werken](assets/update-run-pipeline.png)
+![Prompt om pijpleiding in werking te stellen om milieu bij te werken](assets/update-run-pipeline.png)
 
 De **Bijwerken** het gedrag van de optie is afhankelijk van de configuratie en de huidige status van het programma.
 
@@ -279,15 +280,15 @@ Selecteren **Toegang beheren** in het ovaalmenu van de omgeving op het **Omgevin
 
 >[!TIP]
 >
->Zie [as a Cloud Service teams en productprofielen AEM](/help/onboarding/aem-cs-team-product-profiles.md) als u wilt leren hoe AEM as a Cloud Service team en productprofielen toegang tot uw vergunning gegeven oplossingen van de Adobe kunnen verlenen en beperken.
+>Zie [AEM as a Cloud Service-team en productprofielen](/help/onboarding/aem-cs-team-product-profiles.md) als u wilt leren hoe AEM as a Cloud Service-team en productprofielen toegang kunnen verlenen en beperken tot uw oplossingen voor Adoben met licentie.
 
-## Toegang tot de ontwikkelaarsconsole {#accessing-developer-console}
+## Toegang tot de Developer Console {#accessing-developer-console}
 
-Selecteren **Ontwerpconsole** in het ovaalmenu van de omgeving op het **Omgevingen** kaart. Er wordt een nieuw tabblad geopend in uw browser met de aanmeldingspagina op de **Ontwerpconsole**.
+Selecteren **Developer Console** in het ovaalmenu van de omgeving op het **Omgevingen** kaart. Er wordt een nieuw tabblad geopend in uw browser met de aanmeldingspagina op de **Developer Console**.
 
-![Aanmelden bij de ontwikkelaarsconsole](assets/environ-devconsole.png)
+![Aanmelden bij de Developer Console](assets/environ-devconsole.png)
 
-Alleen een gebruiker met de **Ontwikkelaar** de rol heeft toegang tot **Ontwerpconsole**. Voor sandboxprogramma&#39;s heeft elke gebruiker die toegang heeft tot het sandboxprogramma echter toegang tot **Ontwerpconsole**.
+Alleen een gebruiker met de **Ontwikkelaar** de rol heeft toegang tot **Developer Console**. Voor sandboxprogramma&#39;s heeft elke gebruiker die toegang heeft tot het sandboxprogramma echter toegang tot **Developer Console**.
 
 Zie [Sluiende en ontsmette zandbakomgevingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation) voor meer informatie .
 
@@ -305,7 +306,7 @@ U kunt zich ook lokaal aanmelden via het dialoogvenster **Omgevingen** tabblad v
 
 ## Aangepaste domeinnamen beheren {#manage-cdn}
 
-Aangepaste domeinnamen worden ondersteund in de programma&#39;s Cloud Manager for Sites voor zowel publicatie- als voorvertoningsservices.
+In Cloud Manager for Sites worden aangepaste domeinnamen ondersteund voor zowel publicatie- als voorvertoningsservices.
 
 >[!TIP]
 >
@@ -313,7 +314,7 @@ Aangepaste domeinnamen worden ondersteund in de programma&#39;s Cloud Manager fo
 
 ## IP-Lijsten van gewenste personen beheren {#manage-ip-allow-lists}
 
-IP-lijsten van gewenste personen worden ondersteund in Cloud Manager voor auteur-, publicatie- en voorvertoningsservices voor Sites-programma&#39;s.
+IP de lijsten van gewenste personen worden gesteund in Cloud Manager voor auteur, publiceren, en voorproefdiensten voor de programma&#39;s van Plaatsen.
 
 Om IP lijsten van gewenste personen te beheren, navigeer aan **Omgevingen** tabblad van het **Overzicht** pagina van uw programma. Klik op een afzonderlijke omgeving zodat u de details ervan kunt beheren.
 
