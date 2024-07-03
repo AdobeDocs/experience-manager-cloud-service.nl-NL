@@ -1,18 +1,10 @@
 ---
 title: CIF kerncomponenten aanpassen
 description: Leer hoe u AEM Core Components (Basiscomponenten) kunt aanpassen. In de zelfstudie wordt uitgelegd hoe u een CIF Core-component veilig kunt uitbreiden om aan bedrijfsspecifieke vereisten te voldoen. Leer hoe u een GraphQL-query kunt uitbreiden om een aangepast kenmerk te retourneren en het nieuwe kenmerk in een CIF Core-component weer te geven.
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
 feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
-exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
+source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 0%
@@ -35,9 +27,9 @@ Het merk Venia is onlangs begonnen met de productie van bepaalde producten met b
 
 ## Vereisten {#prerequisites}
 
-U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Deze omgeving bevat een actieve instantie van AEM die is geconfigureerd en is verbonden met een Adobe Commerce-instantie. De vereisten en stappen voor [een lokale ontwikkeling instellen met AEM as a Cloud Service SDK](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u toestemming nodig om [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
+U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Deze omgeving bevat een actieve instantie van AEM die is geconfigureerd en is verbonden met een Adobe Commerce-instantie. De vereisten en stappen voor [lokale ontwikkeling instellen met AEM as a Cloud Service SDK](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u toestemming nodig om [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
-U hebt ook GraphQL IDE nodig, zoals [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u de aanvraagheaders instellen. In Google Chrome: _Altair GraphQL Client_ is één extensie die de taak kan uitvoeren.
+U hebt ook GraphQL IDE nodig, zoals [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u de aanvraagheaders instellen. Op Google Chrome: _Altair GraphQL Client_ is één extensie die de taak kan uitvoeren.
 
 ## Het Venia-project klonen {#clone-venia-project}
 
@@ -140,7 +132,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Co
 
 Voordat u naar AEM code gaat, is het handig om de [GraphQL - Overzicht](https://devdocs.magento.com/guides/v2.4/graphql/) een GraphQL-IDE gebruiken. De Adobe Commerce-integratie met AEM gebeurt voornamelijk via een reeks GraphQL-query&#39;s. Het begrijpen en wijzigen van de vragen van GraphQL is één van de belangrijkste manieren waarop de Componenten van de CIFKern kunnen worden uitgebreid.
 
-Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de _Altair GraphQL Client_ Google Chrome-extensie.
+Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de _Altair GraphQL Client_ Google Chrome extension.
 
 1. GraphQL-IDE openen en URL invoeren `http://<commerce-server>/graphql` in de bar URL van uw winde of uitbreiding.
 2. Voeg het volgende toe [productquery](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) waar `YOUR_SKU` is de **SKU** van het product dat bij de vorige exercitie werd gebruikt:
