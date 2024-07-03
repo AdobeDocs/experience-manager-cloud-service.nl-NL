@@ -4,9 +4,9 @@ description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
+source-git-commit: 9303ecadea38d83bd71ed0d440067bae5c419940
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -15,79 +15,94 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 16799 {#release-16799}
+## Release 16971 {#release-16971}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16799 samengevat, die op 18 juni 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 16544.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16971 samengevat, die op 3 juli 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 16799.
 
-2024.6.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie .
+2024.7.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie .
 
-### Verbeteringen {#enhancements-16799}
+### Verbeteringen {#enhancements-16971}
 
-* ASSETS-31977: verbeterde bewerkingen voor het verplaatsen, kopiëren en verwijderen van bedrijfsmiddelen.
-* ASSETS-33618: Auto-transcriptie en vertaalmogelijkheden voor video&#39;s in Dynamic Media.
-* ASSETS-35185: De Actie van de goedkeuring voor ContentHub en DM en voegt eigenschappen aan damAssetLucene eigenschappen toe.
-* ASSETS-35533: Voeg DRM- en CAI-eigenschappen toe aan damAssetLucene-index.
-* ASSETS-37280: Opeenvolgende taakafhandeling voor vertaling wanneer bronondertitel (vtt) nog steeds wordt verwerkt.
-* ASSETS-37559: gebeurtenis Improved asset delete.
-* ASSETS-37723: Gebeurtenis gepubliceerd voor het implementeren van middelen.
-* ASSETS-37724: Implementeer de gebeurtenis Asset unpublished.
-* ASSETS-38614: Verbeteringen in de gebruikersinterface voor het delen van koppelingen.
-* ASSETS-39601: Pas validatieregex automatisch toe op de naam van de Asset Livecopy.
-* ASSETS-39454: upgrade naar viewers 2024.5.0 in QuickStart.
-* CNTBF-184: Onderliggende steunpaden `/conf` in Content Backflow.
+* SITES-22948: Verwijder handelsverwijzingen in stichtingsinhoud voor AEM CS.
+* SITES-22141 [Inhoudsfragmenten] SegmentNotFoundException van CFM ModelChangeRepositoryImpl na OnRC.
+* SITES-21893: Uitsnijdprobleem van afbeeldingen bij de auteur-instantie.
+* SITES-21788: [Inhoudsfragmenten] Toon NOTA in CF en CF modelredacteur wanneer uiSchema voor het model wordt toegelaten.
+* SITES-21688: Bij MSM-rollout wordt het fragmentpad (XF) niet bijgewerkt op pagina&#39;s met live kopieën.
+* SITES-21659: Terugkeer volledige naam van de gebruiker die een Model middel creeert/wijzigt/repliceert.
+* SITES-21609: eindpunt OpenAPI om inhoudsfragmenten van één model aan andere te migreren.
+* SITES-21598: [API openen] Creeer CFM - terugkeerfout als de bepaalde Weg van de Configuratie niet bestaat.
+* SITES-21491: [API openen] Het eindpunt van CF-PATCH moet live relaties op veldniveau respecteren.
+* SITES-21434: [API openen] Het eindpunt van CF-GET moet live relaties op veldniveau respecteren.
+* SITES-21415: CF Editor - ondersteuning UUID-verwijzingen.
+* SITES-21326: [API openen] Geef informatie over de aanwezigheid van referenties voor een inhoudsfragment.
+* SITES-21310: [API openen] Id van inhoudsfragment toevoegen in API-reactie voor vertalingen.
+* SITES-20859: CF Open API - Return references when retrieve a fragment by path.
+* SITES-20687: [API openen] Eindpunt voor het terugwinnen van de status van de partijverwerking.
+* SITES-20657: [API openen] Een optie geven voor het hele woord van match bij het vervangen van een tekenreeks met `FindAndReplace` eindpunt.
+* SITES-20587: [API openen] Maken `COPY` eindpunt voor inhoudsfragmenten.
+* SITES-20584: [API openen] Ophalen van verwijzingen optimaliseren.
+* SITES-20308: [API openen] Batchverwerking op API inschakelen.
+* SITES-1976: [API openen] Algemeen UI-schema voor voorwaardelijke velden.
+* SITES-1956: [Inhoudsfragmenten] Werk uiSchema bij als dit bestaat wanneer het model wordt bewerkt.
+* 18056: [API openen] Neem verwijzingen op wanneer u een inhoudsfragment naar Voorvertoning publiceert.
+* SITES-16898: [Schema] Het eindpunt van OpenAPI om inhoudsfragmenten van één model aan andere te migreren.
+* SITES-16609: Het eindpunt van Lanceringen van de Lijst.
+* SITES-16606: Create Launch Endpoint.
+* SITES-21617: [Xwalk] Maak Pagina-eigenschappen/Metagegevens bewerkbaar binnen de UE.
+* SITES-19614: [Xwalk] Paginering van werkbladeditors en oneindig schuiven.
+* SITES-22163 [Xwalk] Verbeterde ondersteuning voor inhoud die wordt aangeboden via de publicatielaag voor Edge Delivery-sites.
+* SITES-22109: [Xwalk] Verbeterde verwerking van richtext-opmaakcodes na verwerking.
+* SITES-2035: [Xwalk] Verbeterde verwerking van MSM en Launches.
+* SITES-21839: [Xwalk] Verbeterde padtoewijzing en ontsmetting voor inhoud die niet door Edge Delivery wordt aangeboden.
 
-### Opgeloste problemen {#fixed-issues-16799}
+### Opgeloste problemen {#fixed-issues-16971}
 
-* ASSETS-37335: Als u het deelvenster Zoeken in filter bewerkt, worden alle vakken uitgeschakeld.
-* ASSETS-38069: AEM DAM PDF Voorvertoning probleem bij selectie van tijdlijnfilter.
-* ASSETS-38215: Adobe Stock-licentieknop wordt in AEM as a Cloud Service weergegeven voor een Enterprise-abonnement.
-* ASSETS-38578: Onjuiste hyperlinks in Assets Link Share Report.
-* ASSETS-38678: De weergave-instellingen zijn verbroken in Gegevens verzameling.
-* ASSETS-39071: Voor het web geoptimaliseerde levering kan een uitzondering genereren als het oorspronkelijke renditiemimetype null is.
-* ASSETS-39316: Sorteren op naam werkt niet in Verzamelingen.
-* ASSETS-39377: Bulkimport van OneDrive kan mislukken bij het ontvangen van backpressure van de externe API.
-* ASSETS-39428: Problemen met het renderen in de gebruikersinterface van Copyright Management.
-* CQ-4357150: Guava in cq-content-sync-bundel.
-* GRANITE-52573: Verzoeken met een dubbele slash `//` worden geweigerd met statuscode 400.
-* SCRNS-4194: Verwijder afhankelijkheid van Google Guava API&#39;s.
-* SCRNS-4360: Ontbrekende Manage Publication &amp; Quick Publish Button voor gebruikers die geen beheerder zijn in Content Provider voor kanalen.
-* SCRNS-4323: Verberg/maak lanceringen van screens.html onbruikbaar.
+* CQ-4356898: [Vertaling] outOfMemory fout voor CF die een ongebruikelijk groot aantal verbindingen bevat.
+* CQ-4357055: [Vertaling] Automatische omzetting werkt niet met de Rest API.
+* CQ-4353931: [Vertaling] Voeg jcr:uuid toe in de pagina van de vertaalbron/xf/element als deze ontbreekt.
+* CQ-4357591: [Vertaling] Wijzig de workflow &quot;Koppelen aan JCR:UID&quot; om te werken voor Pagina&#39;s/XF.
 * FORMS-14844: Adaptive Forms staat het verzenden van formulieren toe, ondanks onvoldoende reCAPTCHA-verificatie.
 * FORMS-14984: Forms met CAPTCHA slaat validatie over als &quot;submitMetaData&quot; niet aanwezig is in de verzonden gegevens.
 * FORMS-14477: De opties &#39;Is na&#39; en &#39;Is voor&#39; in de regeleditor functioneren niet naar behoren in de datumkiezervalidatie.
 * FORMS-14019: De functie &quot;Invoke Service&quot; van de redacteur van de Regel werkt niet in Universele Redacteur.
-* FORMS-14336: Als er geen formulierveld is geselecteerd, wordt de editor geopend met focus op het gehele formulierelement.
-* FORMS-15061: De cirkel van de Lader blijft eindeloos bij het gebruiken aanhalen van de dienstoptie in de regelredacteur voortzetten.
+* FORMS-14336: Als er geen formulierveld is geselecteerd, moet de editor worden geopend met focus op het gehele formulierelement.
+* FORMS-15061: De cirkel van de Lader blijft eindeloos bij het gebruiken aanhalen van de de dienstoptie in de regelredacteur.
+* SITES-22457: Het bevorderen van een lancering die niet diep is werkt broninhoud niet bij.
+* SITES-22748 [Inhoudsfragmenten] Foutafhandeling verbeteren voor updatetaak van inhoudsfragment
+* SITES-22349 [Inhoudsfragmenten] ContentType voor lege cf-elementen met meerdere regels kan niet worden gewijzigd.
+* SITES-22343 [Inhoudsfragmenten] Semantisch type &quot;opsomming&quot; wordt verbroken.
+* SITES-22194: Na het instellen van de omleiding werkt model.json niet meer.
+* SITES-21953: [API openen] Etag wordt gewijzigd op basis van de volgorde van de validationStatus.
+* SITES-21894: [API openen] Verbeter de validatie van bovenliggende paden bij het maken van CF&#39;s.
+* SITES-2187: [API openen] Ongeldige ETag die door POST variaties eindpunt is teruggekeerd.
+* SITES-21657: [API openen] Verbeter bevestiging op het bezit van de Weg van het Onderzoek CF.
+* SITES-21949: ongeldige cursor voor zoek-API&#39;s retourneert 500.
+* SITES-20927: zoek APIs keert 500 terug wanneer de vraag mist.
+* SITES-2054: [API openen] Wijzig het genereren van publicatiepakketnamen om ongewenste conflicten te voorkomen.
+* SITES-19710: CVE-2022-47937 - Verwijder alle toepassingen van org.apache.sling.commons.json uit de Pagina-editor.
+* SITES-1992: [Toegankelijkheid] Knop Staalkiezer voor notities bevat geen toegankelijke naam.
+* SITES-10979: [Toegankelijkheid] Label is niet blijvend.
+* SITES-10962: [Toegankelijkheid] Knop: de knop heeft geen rol.
+* SITES-10905: [Toegankelijkheid] De status van de actieve component heeft geen contrastverhouding van 3 tot 1.
+* SITES-2974:  [Toegankelijkheid] - Horizontaal schuiven bij een breedte van 320 px.
+* SITES-22026: Kan ervaringsfragmenten niet verplaatsen tussen mappen in AEM
+* SITES-22106: Taalswitchfunctionaliteit in de nieuwe editor voor contentfragmenten
+* SITES-21980: Inconsistente verwerking voor op UUID-gebaseerde verwijzingstypen.
+* SITES-7257: NPE in ThumbnailServlet.
 
-### Bekende problemen {#known-issues-16799}
+### Bekende problemen {#known-issues-16971}
 
->[!NOTE]
-> AEM de Techniek heeft een regressie voor de functionaliteit van Lanceringen geïdentificeerd die huidige AEM versies die met 16461 beginnen beïnvloedt. Vanwege deze regressie worden nieuwe opstarters (gemaakt nadat nieuwe releases zijn toegepast) die niet-diepe pagina&#39;s bevatten, niet goed gepromoveerd omdat er configuraties ontbreken.
-> Als uw milieu&#39;s worden beïnvloed, is een shell manuscript om ontbrekende configuraties te identificeren en bij te werken beschikbaar door klantensteun (interne verwijzing SITES-22457).
-> Er wordt een oplossing voor de langere termijn beschikbaar gesteld die ervoor zorgt dat nieuwe opstartversies worden gemaakt met alle juiste configuraties. Tot die tijd is er ook een interne patchrelease beschikbaar op aanvraag.
+Geen.
 
-#### Forms
-
-* Wanneer u de AEM SDK installeert en toevoegt `AEM Forms add-on v2024.05.04.00-240400`, kan de Docker-service niet worden gestart. De dockerservice is vereist om Document of Record te genereren in een lokale ontwikkelomgeving. U kunt als volgt het probleem verhelpen:
-   1. Download de [hotfix](/help/forms/assets/sdk_hotfix.zip). Wanneer u de hotfix downloadt, wordt een `.zip` wordt gedownload.
-   1. Pak de gedownloade hotfix uit naar een map.
-   1. De map vervangen `sdk.sh` en `sdk.bat` bestanden met nieuwere bestanden in de map die zijn uitgepakt in Stap 2.
-
-### Kennisgeving wijzigen {#change-notice-16799}
-
-* Deze versie bevat de volgende nieuwe versies van de productindex:
-   * **damAssetLucene-11**
-   * **fragmenten-11**
-
-  Aangepaste versies van de vorige indexversies worden automatisch samengevoegd met de nieuwe versie van de productindex. Pas verdere aangepaste updates toe op de samengevoegde versie.
+### Kennisgeving wijzigen {#change-notice-16971}
 
 * Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [de documentatie](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) voor meer informatie .
 
-### Verouderde functies en API&#39;s {#deprecated-16799}
+### Verouderde functies en API&#39;s {#deprecated-16971}
 
 Als u wilt weten wat in AEM as a Cloud Service is vervangen of verwijderd, raadpleegt u [Verouderde en verwijderde functies en API&#39;s](/help/release-notes/deprecated-removed-features.md).
 
-### Ingesloten technologieën {#embedded-tech-16799}
+### Ingesloten technologieën {#embedded-tech-16971}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
