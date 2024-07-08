@@ -4,9 +4,9 @@ description: Leer hoe u Real Use Monitoring (RUM) kunt gebruiken om de digitale 
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 9a8adf777008b7a601abc8760cee67ec3c1816c6
+source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Met RUM worden de belangrijkste prestatiegegevens bijgehouden vanaf het starten 
 
 ## Wie kan profiteren van een monitoring service voor gebruik? {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring service is gunstig voor alle klanten. Het biedt een representatieve weerspiegeling van gebruikersinteracties en zorgt voor een betrouwbare mate van websitebetrokkenheid door het aantal paginaweergaven aan de clientzijde vast te leggen.
+De Real Use Monitoring service is gunstig voor alle klanten. Het biedt een representatieve weerspiegeling van gebruikersinteracties en zorgt voor een betrouwbare mate van websitebetrokkenheid door het aantal paginaweergaven aan de clientzijde vast te leggen.
 
 Deze service biedt voor alle Adobe-klanten waardevolle inzichten in de interactie met de gebruiker. Klanten die hun eigen CDN gebruiken, kunnen profiteren van vereenvoudigde verkeersrapportage, aangezien Adobe de gegevensverzameling nu rechtstreeks integreert, waardoor afzonderlijke rapporten tijdens de verlengingscycli niet meer nodig zijn.
 
