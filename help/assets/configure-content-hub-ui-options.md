@@ -1,9 +1,9 @@
 ---
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -97,6 +97,10 @@ Met Content Hub kunnen beheerders filters configureren die worden weergegeven te
 1. Klik op **[!UICONTROL Confirm]**. Het nieuwe filter wordt weergegeven in de lijst met bestaande filters.
 
 1. Klikken **[!UICONTROL Save]** om de wijzigingen toe te passen zodat het nieuwe filter op de zoekpagina wordt weergegeven terwijl elementen worden gefilterd.
+
+   >[!NOTE]
+   >
+   >Het nieuwe filter wordt alleen op de zoekpagina weergegeven als er in de opslagplaats ten minste één element aanwezig is dat aan de filtercriteria voldoet.
 
 U kunt ook op ![Pictogram Bewerken](assets/do-not-localize/edit_icon.svg), beschikbaar naast elk beschikbaar filter, om de labels te bewerken of op het verwijderpictogram te klikken om een bestaand filter te verwijderen. Klikken **[!UICONTROL Save]** na alle wijzigingen om de wijzigingen toe te passen.
 

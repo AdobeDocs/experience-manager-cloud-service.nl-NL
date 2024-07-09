@@ -2,9 +2,9 @@
 title: Implementeren [!DNL Content Hub]
 description: Leer hoe u Content Hub kunt implementeren en activeren en gebruikers toegang kunt bieden met verschillende typen rechten (middelen uploaden, gebruikers van Adoben Express) en hoe u beheerdersrechten kunt bieden aan gebruikers.
 role: Admin
-source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ Om toegang te krijgen tot het Content Hub-portaal, moeten beheerders eerst Conte
 
 1. Uitbreiden **[!UICONTROL Assets]** en selecteert u **[!UICONTROL Content Hub]**.
    ![Content Hub selecteren in Cloud Manager](assets/edit-program-cloud-manager-content-hub.png)
+
+   >[!NOTE]
+   >
+   >Indien **[!UICONTROL Update]** is niet ingeschakeld nadat u Content Hub hebt geselecteerd. Controleer of u Go-Live-instellingen voor het programma hebt opgegeven.
 
 1. Klik op **[!UICONTROL Update]**.
 
@@ -111,9 +115,19 @@ Deze gebruikers hebben nu toegang tot de middelen die beschikbaar zijn op de Con
 >
 >U kunt alle geavanceerde bedrijfsfuncties gebruiken, zoals synchronisatie met externe identiteitsproviders.
 
-Na het toevoegen van de aangewezen gebruikers die Admin Console gebruiken, kunnen de gebruikers tot Content Hub toegang hebben gebruikend de volgende verbinding:
+### Hoe kan ik Content Hub openen? {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+Content Hub is op de volgende manieren toegankelijk:
+
+* Gebruik de volgende koppeling om Content Hub te openen:
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* Aanmelden bij `experience.adobe com` en klik op **[!UICONTROL Experience Manager Assets Content Hub]** beschikbaar in het **[!UICONTROL Quick access]** sectie:
+  ![Content Hub Access](assets/access-content-hub.png)
+
+* Aanmelden bij `experience.adobe com` en klik op **[!UICONTROL Experience Manager Assets Content Hub]** beschikbaar in de productschakelaar:
+  ![Content Hub Access-methode 3](assets/access-content-hub-alternate.png)
 
 ### E-mailberichten aan gebruikers uitschakelen {#disable-email-notifications}
 

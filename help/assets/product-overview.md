@@ -1,7 +1,7 @@
 ---
 title: Content Hub - Overzicht
 description: Meer informatie over Content Hub, de belangrijkste voordelen ervan, hoe u deze kunt openen en hoe u feedback kunt geven over de opties die beschikbaar zijn in Content Hub.
-source-git-commit: b29641286919b5becc3982400ea160836531fdc5
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Content Hub vereist een ontwikkelomgeving voor de productie van Experience Manag
 
 ## Hoe kan ik Content Hub openen? {#access-content-hub}
 
-[Na het instellen van Content Hub](#deploy-content-hub) en een gebruiker toevoegen aan de [Content Hub-productprofiel](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub kunt u op de volgende manieren benaderen:
+[Na het instellen van Content Hub](/help/assets/deploy-content-hub.md) en een gebruiker toevoegen aan de [Content Hub-productprofiel](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), Content Hub kunt u op de volgende manieren benaderen:
 
 * Gebruik de volgende koppeling om Content Hub te openen:
 
