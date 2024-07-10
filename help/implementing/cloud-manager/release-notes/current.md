@@ -1,10 +1,10 @@
 ---
-title: Opmerkingen bij de release Cloud Manager 2024.6.0 in Adobe Experience Manager as a Cloud Service
+title: Opmerkingen bij de release voor Cloud Manager 2024.6.0 in Adobe Experience Manager as a Cloud Service
 description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2024.6.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8eaf2b70734cec1fedace64d74059ee161785b39
+source-git-commit: 6ca376bda8055d62e35e13053ff21f861c12b292
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2024.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager 2024.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release 2024.6.0 van Cloud Manager in AEM as a Cloud Service gedocumenteerd.
+Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 2024.6.0 in AEM as a Cloud Service gepubliceerd.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ Op deze pagina worden de opmerkingen bij de release 2024.6.0 van Cloud Manager i
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2024.6.0 in AEM as a Cloud Service is 6 juni 2024. De volgende release is gepland voor 11 juli 2024.
+De releasedatum voor Cloud Manager release 2024.6.0 in AEM as a Cloud Service is 6 juni 2024. De volgende release is gepland voor 18 juli 2024.
 
 ## Wat is er nieuw? {#what-is-new}
 
@@ -32,9 +32,9 @@ De releasedatum voor Cloud Manager versie 2024.6.0 in AEM as a Cloud Service is 
 * [Self-service inhoud herstellen](/help/operations/restore.md) biedt back-upherstel gedurende maximaal zeven dagen en functies:
    * Point-in-time back-upherstel voor de voorgaande 24 uur
    * Herstel van vaste tijd tot zeven dagen
-* [Nieuwe OakPal-regels](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) zijn toegevoegd aan de kwaliteitscontrole van Cloud Manager Code.
+* [Nieuwe OakPal-regels](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) zijn toegevoegd aan de Cloud Manager Code Quality Scan.
    * Elke nieuwe regel die vanaf juni 2024 wordt toegevoegd, is een onverbrekelijke verandering.
-   * U wordt aangespoord deze problemen zo snel mogelijk aan te pakken, aangezien deze nieuwe regels ertoe zullen leiden dat pijpleidingen mislukken vanaf de release Cloud Manager August 2024.
+   * U wordt aangespoord deze problemen zo snel mogelijk aan te pakken, aangezien deze nieuwe regels ertoe zullen leiden dat pijpleidingen vanaf de release van Cloud Manager augustus 2024 mislukken.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
@@ -42,7 +42,7 @@ Een kans om een aantal van de komende eigenschappen te testen, maakt deel uit va
 
 ### Ondersteuning voor Edge Delivery Services in Cloud Manager {#edge-delivery-services}
 
-Als u Edge Delivery Services met licentie hebt als onderdeel van Adobe Experience Manager Sites, [u kunt nu rechtstreeks in Cloud Manager aan boord van uw site gaan met Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery-services.md) en woon met behulp van een geleide, zelfbediening ervaring.
+Als u Edge Delivery Services met licentie hebt als onderdeel van Adobe Experience Manager Sites, [u kunt nu rechtstreeks aan boord van uw site gaan met Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) en woon met behulp van een geleide, zelfbediening ervaring.
 
 Dit maakt een verenigde ervaring voor al uw AEM eigenschappen mogelijk, die consistentie met alle kritieke werkschema&#39;s met inbegrip van het beheer van domeinnamen, SSL certificaatbeheer, en afbeeldingen CDN verzekeren.
 
@@ -64,7 +64,7 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ### Experience Audit Dashboard {#experience-audit-dashboard}
 
-[Cloud Manager Experience Audit-dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) bevat een trendweergave van de prestatiesscores van uw pagina, samen met inzichten en aanbevelingen om u te helpen deze te verbeteren. Experience Audit is opgenomen als een stap in de productiepijplijn van Cloud Manager.
+[Het Cloud Manager Experience Audit-dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) bevat een trendweergave van de prestatiesscores van uw pagina, samen met inzichten en aanbevelingen om u te helpen deze te verbeteren. De Experience Audit is opgenomen als een stap in de Cloud Manager-productiepijplijn.
 
 Het dashboard gebruikt Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar, of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
 
