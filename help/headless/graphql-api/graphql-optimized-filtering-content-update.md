@@ -4,9 +4,9 @@ description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filte
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 66d44481fa7e58b23e0381bfebb997acbedecfb7
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -32,77 +32,87 @@ Er zijn voorwaarden voor deze taak:
 
 ## Inhoudsfragmenten bijwerken {#updating-content-fragments}
 
-1. Schakel de update in door de volgende variabelen voor uw instantie in te stellen met behulp van de interface van Cloud Manager:
+1. Schakel de update in door de volgende variabelen voor uw instantie in te stellen met behulp van de gebruikersinterface van Cloud Manager:
 
-   ![Configuratie van Cloud Manager-omgeving](assets/cfm-graphql-update-01.png "Configuratie van Cloud Manager-omgeving")
+   ![Cloud Manager Environment Configuration](assets/cfm-graphql-update-01.png "Cloud Manager Environment Configuration")
 
    De beschikbare variabelen zijn:
 
+   | | Naam | Waarde | Standaardwaarde | Service | Toegepast | Type | Notities |
+   |---|---|---|---|---|---|---|---|
+   | 1 | `CF_MIGRATION_ENABLED` | `1` | `0` | Alles | | Variabele | Schakelt in(!=0) of schakelt (0) het activeren van de migratietaak voor inhoudsfragmenten uit. |
+   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | Alles | | Variabele | Afdwingen (!=0) hermigratie van inhoudsfragmenten. Als u deze markering instelt op 0, wordt er een incrementele migratie van CF&#39;s uitgevoerd. Dit betekent dat als de taak om welke reden dan ook wordt beëindigd, de volgende uitvoering van de taak de migratie start vanaf het punt waar deze is beëindigd. De eerste migratie wordt aanbevolen voor handhaving (waarde=1). |
+   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | Alles | | Variabele | Grootte van de batch voor het opslaan van het aantal inhoudsfragmenten na de migratie. Dit is relevant voor hoeveel CFs aan de bewaarplaats in één partij wordt bewaard, en kan worden gebruikt om het aantal te optimaliseren schrijft aan de bewaarplaats. |
+   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | Alles | | Variabele | Max. aantal te verwerken inhoudsfragmenten. Zie ook notities voor `CF_MIGRATION_INTERVAL`. |
+   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | Alles | | Variabele | Interval (seconden) om de resterende inhoudsfragmenten tot de volgende limiet te verwerken. Dit interval wordt ook beschouwd als zowel een wachttijd alvorens de baan te beginnen, als een vertraging tussen verwerking van elk verdere aantal CF_MIGRATION_LIMIT van CFs. (*) |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>Naam</th>
-      <th>Waarde</th>
-      <th>Standaardwaarde</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
       <th>Service</th>
-      <th>Toegepast</th>
+      <th>Applied</th>
       <th>Type</th>
-      <th>Notities</th>
+      <th>Notes</th>
      </tr>
 
-   <tr>
+     <tr>
       <td>1</td>
-      <td>"CF_MIGRATION_ENABLED" </td>
-      <td>"1" </td>
-      <td>"0" </td>
-      <td>Alles </td>
+      <td>`CF_MIGRATION_ENABLED` </td>
+      <td>`1` </td>
+      <td>`0` </td>
+      <td>All </td>
       <td> </td>
-      <td>Variabele </td>
-      <td>Schakelt in(!=0) of schakelt (0) het activeren van de migratietaak voor inhoudsfragmenten uit. </td>
+      <td>Variable </td>
+      <td>Enables(!=0) or disables(0) triggering of Content Fragment migration job. </td>
      </tr>
      <tr>
       <td>2</td>
-      <td>"CF_MIGRATION_ENFORCE" </td>
-      <td>"1" </td>
-      <td>"0" </td>
-      <td>Alles </td>
+      <td>`CF_MIGRATION_ENFORCE` </td>
+      <td>`1` </td>
+      <td>`0` </td>
+      <td>All </td>
       <td> </td>
-      <td>Variabele </td>
-      <td>Afdwingen (!=0) hermigratie van inhoudsfragmenten.<br>Als u deze markering instelt op 0, wordt er een incrementele migratie van CF's uitgevoerd. Dit betekent dat als de taak om welke reden dan ook wordt beëindigd, de volgende uitvoering van de taak de migratie start vanaf het punt waar deze is beëindigd. De eerste migratie wordt aanbevolen voor handhaving (waarde=1). </td>
+      <td>Variable </td>
+      <td>Enforce (!=0) remigration of Content Fragments.<br>Setting this flag to 0 does an incremental migration of CFs. This means, if the job is terminated for any reason, then the next run of the job starts migration from the point where it got terminated. The first migration is recommended for enforcement (value=1). </td>
      </tr>
      <tr>
       <td>3</td>
-      <td>"CF_MIGRATION_BATCH" </td>
-      <td>"50" </td>
-      <td>"50" </td>
-      <td>Alles </td>
+      <td>`CF_MIGRATION_BATCH` </td>
+      <td>`50` </td>
+      <td>`50` </td>
+      <td>All </td>
       <td> </td>
-      <td>Variabele </td>
-      <td>Grootte van de batch voor het opslaan van het aantal inhoudsfragmenten na de migratie.<br>Dit is relevant voor hoeveel CFs aan de bewaarplaats in één partij wordt bewaard, en kan worden gebruikt om het aantal te optimaliseren schrijft aan de bewaarplaats. </td>
+      <td>Variable </td>
+      <td>Size of the batch for saving the number of Content Fragments after migration.<br>This is relevant to how many CFs are saved to the repository in one batch, and can be used to optimize the number of writes to the repository. </td>
      </tr>
      <tr>
       <td>4</td>
-      <td>"CF_MIGRATION_LIMIT" </td>
-      <td>"1000" </td>
-      <td>"1000" </td>
-      <td>Alles </td>
+      <td>`CF_MIGRATION_LIMIT` </td>
+      <td>`1000` </td>
+      <td>`1000` </td>
+      <td>All </td>
       <td> </td>
-      <td>Variabele </td>
-      <td>Max. aantal te verwerken inhoudsfragmenten.<br>Zie ook nota's voor "CF_MIGRATION_INTERVAL". </td>
+      <td>Variable </td>
+      <td>Max number of Content Fragments to process at a time.<br>See also notes for `CF_MIGRATION_INTERVAL`. </td>
      </tr>
      <tr>
       <td>5</td>
-      <td>"CF_MIGRATION_INTERVAL" </td>
-      <td>"60" </td>
-      <td>"600" </td>
-      <td>Alles </td>
+      <td>`CF_MIGRATION_INTERVAL` </td>
+      <td>`60` </td>
+      <td>`600` </td>
+      <td>All </td>
       <td> </td>
-      <td>Variabele </td>
-      <td>Interval (seconden) om de resterende inhoudsfragmenten tot de volgende limiet te verwerken<br>Dit interval wordt ook beschouwd als zowel een wachttijd alvorens de baan te beginnen, als een vertraging tussen verwerking van elk verdere aantal CF_MIGRATION_LIMIT van CFs.<br>(*)</td>
+      <td>Variable </td>
+      <td>Interval (seconds) to process the remaining Content Fragments up until the next Limit<br>This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
@@ -193,30 +203,36 @@ Er zijn voorwaarden voor deze taak:
 
    Nadat de updateprocedure is uitgevoerd, stelt u de omgevingsvariabele van de cloud opnieuw in `CF_MIGRATION_ENABLED` tot &#39;0&#39;, om de recycling van alle pods te starten.
 
+   | | Naam | Waarde | Standaardwaarde | Service | Toegepast | Type | Notities |
+   |---|---|---|---|---|---|---|---|
+   | | `CF_MIGRATION_ENABLED` | `0` | `0` | Alles | | Variabele | Disables(0) (or Enables(!=0)) het activeren van de migratietaak voor inhoudsfragmenten. |
+
+   <!--
    <table style="table-layout:auto">
     <tbody>
      <tr>
-      <th> </th>
-      <th>Naam</th>
-      <th>Waarde</th>
-      <th>Standaardwaarde</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Default Value</th>
       <th>Service</th>
-      <th>Toegepast</th>
+      <th>Applied</th>
       <th>Type</th>
-      <th>Notities</th>
+      <th>Notes</th>
      </tr>
      <tr>
       <td></td>
-      <td>"CF_MIGRATION_ENABLED" </td>
-      <td>"0" </td>
-      <td>"0" </td>
-      <td>Alles </td>
+      <td>`CF_MIGRATION_ENABLED` </td>
+      <td>`0` </td>
+      <td>`0` </td>
+      <td>All </td>
       <td> </td>
-      <td>Variabele </td>
-      <td>Disables(0) (or Enables(!=0)) het activeren van de migratietaak voor inhoudsfragmenten. </td>
+      <td>Variable </td>
+      <td>Disables(0) (or Enables(!=0)) triggering of Content Fragment migration job. </td>
      </tr>
     </tbody>
    </table>
+   -->
 
    >[!NOTE]
    >
@@ -224,7 +240,7 @@ Er zijn voorwaarden voor deze taak:
 
 1. Verifieer voltooiing van de updateprocedure.
 
-   U kunt controleren of de update is voltooid met de browser van de gegevensopslagruimte in de ontwikkelingsconsole van Cloud Manager om de fragmentgegevens van de inhoud te controleren.
+   U kunt controleren of de update is voltooid met de browser van de repository in de Cloud Manager Developer Console om de fragmentgegevens van de inhoud te controleren.
 
    * Voor de eerste volledige migratie `cfGlobalVersion` eigenschap bestaat niet.
 De aanwezigheid van deze eigenschap op het JCR-knooppunt `/content/dam` met een waarde van `1`bevestigt de voltooiing van de migratie.
