@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2687'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Deze editor biedt:
 * [In line uploaden van elementen als inhoudsverwijzingen](#reference-images), zonder ze eerst naar Asset DAM te moeten uploaden.
 * [Variaties genereren](#generate-variations-ai) gebruiken om het maken van inhoud te versnellen op basis van aanwijzingen.
 * [Voorvertoning](#preview-content-fragment) van de gerenderde ervaring die door het inhoudsfragment wordt geleverd.
-* Vermogen [Publiceren](#publish-content-fragment) en [Publiceren ongedaan maken](#unpublish-content-fragment) uit de editor.
+* Vermogen [Publish](#publish-content-fragment) en [Publiceren ongedaan maken](#unpublish-content-fragment) uit de editor.
 * Vermogen [gekoppelde taalkopieën bekijken en openen](#view-language-copies) in de editor.
 * Vermogen [versiedetails weergeven](#view-version-history) in de editor. U kunt ook terugkeren naar een geselecteerde versie.
 * Vermogen [bovenliggende verwijzingen weergeven en openen](#view-parent-references).
@@ -45,10 +45,10 @@ Wanneer u de Inhoudsfragmenteditor voor het eerst opent, ziet u vier hoofdgebied
    * een koppeling naar de Content Fragment Console (pictogram Start)
    * informatie over het model en de map
    * koppelingen naar [Voorvertoning (als het standaard URL-voorvertoningspatroon is geconfigureerd voor het model)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [Publiceren](#publish-content-fragment), en [Publiceren ongedaan maken](#unpublish-content-fragment) handelingen
+   * [Publish](#publish-content-fragment), en [Publiceren ongedaan maken](#unpublish-content-fragment) handelingen
    * een optie om alles weer te geven **Bovenliggende verwijzingen** (koppelingspictogram)
    * het fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** en laatst opgeslagen gegevens
-   * een schakeloptie voor het overschakelen naar de oorspronkelijke (op elementen gebaseerde) editor
+   * een schakeloptie voor het overschakelen naar de oorspronkelijke (op Assets gebaseerde) editor
 
      >[!WARNING]
      >
@@ -116,7 +116,7 @@ Bij elke update die u maakt, wordt het inhoudsfragment automatisch opgeslagen. D
 
 ## Variaties {#variations}
 
-[Variaties](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) zijn een belangrijk kenmerk van AEM inhoudsfragmenten. Hiermee kunt u kopieën van de **Hoofd** inhoud voor gebruik op specifieke kanalen, en scenario&#39;s, die tot hoofdloze levering van inhoud en pagina creatie nog flexibeler maken.
+[Variaties](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) zijn een belangrijk kenmerk van het AEM van inhoudsfragmenten. Hiermee kunt u kopieën van de **Hoofd** inhoud voor gebruik op specifieke kanalen, en scenario&#39;s, die tot hoofdloze levering van inhoud en pagina creatie nog flexibeler maken.
 
 Vanuit de editor kunt u:
 
@@ -336,7 +336,7 @@ U kunt ook [selecteren **Nieuw fragment maken** om de **Maken** dialoogvenster](
 In **Content Reference** velden die u kunt allebei:
 
 * referentieelementen die al in de gegevensopslagruimte bestaan
-* uploadt hen rechtstreeks aan het gebied; dit vermijdt de behoefte om **Activa** te uploaden console
+* uploadt hen rechtstreeks aan het gebied; dit vermijdt de behoefte om **Assets** te uploaden console
 
   >[!NOTE]
   >
@@ -348,19 +348,26 @@ In **Content Reference** velden die u kunt allebei:
 U kunt een element toevoegen door:
 
 * het nieuwe elementbestand rechtstreeks (bijvoorbeeld vanaf uw bestandssysteem) naar het **Content Reference** field
-* gebruiken **Element toevoegen** actie, en selecteer dan of **Zoeken in middelen** of **Uploaden** om de juiste kiezer voor u te openen:
+* gebruiken **Element toevoegen** actie, en selecteer dan of **Bladeren door Assets** of **Uploaden** om de juiste kiezer voor u te openen:
 
   ![Inhoudsfragmenteditor - Elementopties toevoegen](assets/cf-authoring-add-asset-options.png)
 
 #### Referentiepagina&#39;s {#reference-pages}
 
-Verwijzingen naar AEM pagina&#39;s, Experience Fragments of andere inhoudstypen toevoegen:
+Als u verwijzingen naar AEM pagina&#39;s, Experience Fragments of andere soorten inhoud wilt toevoegen:
 
 1. Selecteren **Inhoudspad toevoegen**.
 
 1. Voeg het vereiste pad toe aan het invoerveld.
 
 1. Bevestigen met **Toevoegen**.
+
+>[!NOTE]
+>
+>Dit mag niet worden gebruikt voor verwijzingen naar:
+>
+>* Inhoudsfragmenten - een [Fragmentverwijzing](#fragment-references)
+>* Afbeeldingen - gebruiken [Referentieafbeeldingen](#reference-images)
 
 ### Bovenliggende verwijzingen weergeven {#view-parent-references}
 
@@ -472,10 +479,10 @@ Wanneer de URL is gedefinieerd, wordt **Voorvertoning** is actief. U kunt deze k
 
 ## Publish your Fragment {#publish-content-fragment}
 
-U kunt **Publiceren** het fragment naar een van de volgende items:
+U kunt **Publish** het fragment naar een van de volgende items:
 
 * Voorbeeldexemplaar
-* Instantie publiceren
+* Publish-exemplaar
 
 U kunt het fragment publiceren vanuit de editor of de console. Zie [Een fragment publiceren en voorvertonen](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) voor volledige informatie.
 
@@ -484,7 +491,7 @@ U kunt het fragment publiceren vanuit de editor of de console. Zie [Een fragment
 U kunt **Publiceren ongedaan maken** het fragment van uw:
 
 * Voorbeeldexemplaar
-* Instantie publiceren
+* Publish-exemplaar
 
 U kunt de publicatie van het fragment ongedaan maken vanuit de editor of de console. Zie [Publicatie van een fragment ongedaan maken](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) voor volledige informatie.
 
@@ -551,6 +558,6 @@ De **Velden** worden alle velden in het inhoudsfragment weergegeven. Het pictogr
 
   Het inhoudsfragment en de variaties ervan hebben ook metagegevensvelden (eigenschappen voor variatie) die worden genoemd **Titel** en **Beschrijving**. Deze velden maken integraal deel uit van elk inhoudsfragment en worden in eerste instantie gedefinieerd wanneer het fragment wordt gemaakt. Deze kunnen worden bijgewerkt in het dialoogvenster *rechterdeelvenster* wanneer u het fragment bewerkt.
 
-* Zie de documentatie bij Middelen voor volledige informatie over de [oorspronkelijke editor voor inhoudsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) - het is verkrijgbaar bij **Activa** en de **Inhoudsfragmenten** console.
+* Raadpleeg de documentatie bij Assets voor meer informatie over de [oorspronkelijke editor voor inhoudsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) - het is verkrijgbaar bij **Assets** en de **Inhoudsfragmenten** console.
 
 * Uw projectteam kan de redacteur indien nodig aanpassen. Zie [De console en Editor voor inhoudsfragmenten aanpassen](/help/implementing/developing/extending/content-fragments-console-and-editor.md) voor nadere bijzonderheden.
