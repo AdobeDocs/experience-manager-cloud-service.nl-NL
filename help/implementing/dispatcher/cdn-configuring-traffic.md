@@ -1,30 +1,30 @@
 ---
 title: Het vormen van Verkeer bij CDN
-description: Leer hoe te om verkeer te vormen CDN door regels en filters in een configuratiedossier te verklaren en hen op te stellen aan CDN door de Pijpleiding van de Configuratie van de Manager van de Wolk te gebruiken.
+description: Leer hoe te om verkeer te vormen CDN door regels en filters in een configuratiedossier te verklaren en hen op te stellen aan CDN door de Pijpleiding van de Configuratie van Cloud Manager te gebruiken.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
+source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
 
 # Het vormen van Verkeer bij CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service biedt een inzameling van eigenschappen die bij [CDN met beheerde Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) laag die de aard van of inkomende verzoeken of uitgaande reacties wijzigt. De volgende regels, die in detail in deze pagina worden beschreven, kunnen worden verklaard om het volgende gedrag te bereiken:
+AEM as a Cloud Service biedt een inzameling van eigenschappen aan configureerbaar bij de [ Adobe-geleide CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) laag die de aard van of inkomende verzoeken of uitgaande reacties wijzigt. De volgende regels, die in detail in deze pagina worden beschreven, kunnen worden verklaard om het volgende gedrag te bereiken:
 
-* [Transformaties aanvragen](#request-transformations) - aspecten van binnenkomende aanvragen, zoals kopteksten, paden en parameters, wijzigen.
-* [Responstransformaties](#response-transformations) - wijzigt kopteksten die op weg terug naar de cliënt (bijvoorbeeld, Webbrowser) zijn.
-* [Client-side omleidingen](#client-side-redirectors) - een omleiding door de browser activeren. Deze functie is nog niet GA, maar is beschikbaar voor vroege gebruikers.
-* [Oorspronkelijke kiezers](#origin-selectors) - een vervangende waarde naar een andere achterkant van de oorsprong.
+* [ de transformaties van het Verzoek ](#request-transformations) - wijzig aspecten van inkomende verzoeken, met inbegrip van kopballen, wegen en parameters.
+* [ transformaties van de Reactie ](#response-transformations) - wijzig kopballen die op de manier terug naar de cliënt (bijvoorbeeld, Webbrowser) zijn.
+* [ cliënt-kant richt ](#client-side-redirectors) opnieuw - teweegbrengt browser omleiding. Deze functie is nog niet GA, maar is beschikbaar voor vroege gebruikers.
+* [ de selecteurs van de Oorsprong ](#origin-selectors) - volmacht aan een verschillende oorsprong achterkant.
 
-Ook configureerbaar bij CDN zijn de Regels van de Filter van het Verkeer (met inbegrip van WAF), die controleert welk verkeer door CDN wordt toegestaan of wordt ontkend. Deze functie is al uitgebracht en u kunt er meer over leren in het dialoogvenster [Verkeersfilterregels inclusief WAF-regels](/help/security/traffic-filter-rules-including-waf.md) pagina.
+Ook configureerbaar bij CDN zijn de Regels van de Filter van het Verkeer (met inbegrip van WAF), die controleert welk verkeer door CDN wordt toegestaan of wordt ontkend. Deze eigenschap wordt reeds vrijgegeven en u kunt meer over het in de [ Regels van de Filter van het Verkeer met inbegrip van de pagina van de regels van WAF ](/help/security/traffic-filter-rules-including-waf.md) leren.
 
-Bovendien, als CDN niet zijn oorsprong kan contacteren, kunt u een regel schrijven die verwijzingen een zelf-ontvangen pagina van de douanefout (die dan wordt teruggegeven). Lees hier meer over door het [CDN-foutpagina&#39;s configureren](/help/implementing/dispatcher/cdn-error-pages.md) artikel.
+Bovendien, als CDN niet zijn oorsprong kan contacteren, kunt u een regel schrijven die verwijzingen een zelf-ontvangen pagina van de douanefout (die dan wordt teruggegeven). Leer meer over dit door [ te lezen Vormend CDN foutenpagina&#39;s ](/help/implementing/dispatcher/cdn-error-pages.md) artikel.
 
-Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door te gebruiken [Configuratie-pijplijn van Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
+Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door [ de Pijpleiding van de Configuratie van Cloud Manager te gebruiken ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
 
 ## Evaluatievolgorde {#order-of-evaluation}
 
@@ -43,14 +43,14 @@ config/
      cdn.yaml
 ```
 
-* De `cdn.yaml` Het configuratiebestand moet zowel metagegevens als de regels bevatten die in de onderstaande voorbeelden worden beschreven. De `kind` parameter moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie die momenteel is `1`.
+* Het configuratiebestand van `cdn.yaml` moet zowel metagegevens als de regels bevatten die in de onderstaande voorbeelden worden beschreven. De parameter `kind` moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie, die momenteel `1` is.
 
-* Maak een gerichte configuratiepijplijn voor implementatie in Cloud Manager. Zie [productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [configureren van niet-productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* Creeer een gerichte plaatsing config pijpleiding in Cloud Manager. Zie [ vormend productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [ vormend niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-**Notities**
+**Nota&#39;s**
 
 * RDEs steunt momenteel niet de configuratiepijplijn.
-* U kunt `yq` om de opmaak van uw configuratiebestand lokaal te valideren (bijvoorbeeld `yq cdn.yaml`).
+* Met `yq` kunt u de YAML-opmaak van uw configuratiebestand lokaal valideren (bijvoorbeeld `yq cdn.yaml` ).
 
 ## Syntaxis {#configuration-syntax}
 
@@ -58,7 +58,7 @@ De regeltypen in de onderstaande secties hebben dezelfde syntaxis.
 
 Een regel wordt van verwijzingen voorzien door een naam, een voorwaardelijk &quot;wanneer clausule&quot;, en acties.
 
-De clausule Wanneer bepaalt of een regel zal worden geëvalueerd, gebaseerd op eigenschappen zoals domein, weg, vraagkoorden, kopballen, en koekjes. De syntaxis is het zelfde over regeltypes; voor details, zie [Sectie Condition Structure](/help/security/traffic-filter-rules-including-waf.md#condition-structure) in het artikel Regels voor verkeersfilters.
+De clausule Wanneer bepaalt of een regel zal worden geëvalueerd, gebaseerd op eigenschappen zoals domein, weg, vraagkoorden, kopballen, en koekjes. De syntaxis is het zelfde over regeltypes; voor details, zie de ](/help/security/traffic-filter-rules-including-waf.md#condition-structure) sectie van de Structuur van de Voorwaarde in het artikel van de Regels van de Filter van het Verkeer.[
 
 De details van het actieknooppunt verschillen per regeltype en worden in de afzonderlijke secties hieronder beschreven.
 
@@ -68,7 +68,7 @@ De de transformatieregels van het verzoek staan u toe om inkomende verzoeken te 
 
 Gebruiksscenario&#39;s zijn verschillend en bevatten URL-herschrijvingen voor het vereenvoudigen van toepassingen of het toewijzen van verouderde URL&#39;s.
 
-Zoals eerder vermeld, is er een groottebeperking voor het configuratiebestand, zodat organisaties met grotere vereisten regels moeten definiëren in het dialoogvenster `apache/dispatcher` laag.
+Zoals eerder vermeld, is er een groottegrens aan het configuratiedossier zodat zouden de organisaties met grotere vereisten regels in de `apache/dispatcher` laag moeten bepalen.
 
 Voorbeeld van configuratie:
 
@@ -138,18 +138,18 @@ data:
            replacement: ""
 ```
 
-**Handelingen**
+**Acties**
 
 In de onderstaande tabel worden de beschikbare acties beschreven.
 
 | Naam | Eigenschappen | Betekenis |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty of reqHeader of queryParam of reqCookie), value | Stelt een opgegeven aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund) of aanvraagheader, queryparameter of cookie in op een bepaalde waarde. |
+| **plaats** | (reqProperty of reqHeader of queryParam of reqCookie), value | Stelt een opgegeven aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund) of aanvraagheader, queryparameter of cookie in op een bepaalde waarde. |
 |     | var, value | Stelt een opgegeven aanvraag-eigenschap in op een bepaalde waarde. |
-| **vrijmaken** | reqProperty | Hiermee wordt een opgegeven aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund) of aanvraagheader, queryparameter of cookie naar een bepaalde waarde verwijderd. |
+| **unset** | reqProperty | Hiermee wordt een opgegeven aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund) of aanvraagheader, queryparameter of cookie naar een bepaalde waarde verwijderd. |
 |         | var | Hiermee wordt een opgegeven variabele verwijderd. |
 |         | queryParamMatch | Verwijdert alle queryparameters die overeenkomen met een opgegeven reguliere expressie. |
-| **transformeren** | op:replace, (reqProperty of reqHeader of queryParam of reqCookie), match, replacement | Vervangt een deel van de aanvraagparameter (alleen eigenschap &quot;path&quot; wordt ondersteund) of verzoek header, query parameter of cookie door een nieuwe waarde. |
+| **transformatie** | op:replace, (reqProperty of reqHeader of queryParam of reqCookie), match, replacement | Vervangt een deel van de aanvraagparameter (alleen eigenschap &quot;path&quot; wordt ondersteund) of verzoek header, query parameter of cookie door een nieuwe waarde. |
 |              | op:tolower, (reqProperty of reqHeader of queryParam of reqCookie) | Stelt de parameter request (alleen eigenschap &quot;path&quot; wordt ondersteund), of aanvraagheader, queryparameter of cookie in op de waarde in kleine letters. |
 
 Handelingen kunnen aan elkaar worden gekoppeld. Bijvoorbeeld:
@@ -168,7 +168,7 @@ actions:
 
 ### Variabelen {#variables}
 
-U kunt variabelen tijdens de verzoektransformatie plaatsen en dan van verwijzingen voorzien hen later in de evaluatiereeks. Zie de [volgorde van beoordeling](#order-of-evaluation) schema voor nadere bijzonderheden.
+U kunt variabelen tijdens de verzoektransformatie plaatsen en dan van verwijzingen voorzien hen later in de evaluatiereeks. Zie de [ orde van evaluatie ](#order-of-evaluation) diagram voor verdere details.
 
 Voorbeeld van configuratie:
 
@@ -246,14 +246,14 @@ data:
             value: value-set-by-resp-rule-2
 ```
 
-**Handelingen**
+**Acties**
 
 In de onderstaande tabel worden de beschikbare acties beschreven.
 
 | Naam | Eigenschappen | Betekenis |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader, waarde | Stelt een opgegeven header in op een bepaalde waarde in de reactie. |
-| **vrijmaken** | respHeader | Hiermee verwijdert u een opgegeven koptekst uit het antwoord. |
+| **plaats** | reqHeader, waarde | Stelt een opgegeven header in op een bepaalde waarde in de reactie. |
+| **unset** | respHeader | Hiermee verwijdert u een opgegeven koptekst uit het antwoord. |
 
 ## Oorspronkelijke kiezers {#origin-selectors}
 
@@ -274,7 +274,7 @@ data:
         action:
           type: selectOrigin
           originName: example-com
-          # useCache: false
+          # skpCache: true
     origins:
       - name: example-com
         domain: www.example.com
@@ -285,14 +285,14 @@ data:
         # timeout: 20
 ```
 
-**Handelingen**
+**Acties**
 
 Uitleg in de onderstaande tabel is de beschikbare handeling.
 
 | Naam | Eigenschappen | Betekenis |
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | Naam van een van de gedefinieerde oorsprong. |
-|     | useCache (optioneel, standaard true) | Vlag of om caching voor verzoeken te gebruiken die deze regel aanpassen. |
+|     | skipCache (optioneel, standaard is false) | Vlag of om caching voor verzoeken te gebruiken die deze regel aanpassen. De reacties worden standaard in de cache geplaatst op basis van de header voor het in cache plaatsen van reacties (bijvoorbeeld Cache-Control of Expires) |
 
 **Oorsprong**
 
@@ -300,13 +300,13 @@ Verbindingen met oorsprong zijn alleen SSL en gebruiken poort 443.
 
 | Eigenschap | Betekenis |
 |------------------|--------------------------------------|
-| **name** | Naam waarnaar kan worden verwezen door &quot;action.originName&quot;. |
+| **naam** | Naam waarnaar kan worden verwezen door &quot;action.originName&quot;. |
 | **domein** | Domeinnaam gebruikt om verbinding te maken met de aangepaste achtergrond. Het wordt ook gebruikt voor SSL SNI en bevestiging. |
-| **ip** (optioneel, ondersteund iv4 en ipv6) | Indien opgegeven, wordt deze gebruikt om verbinding te maken met de backend in plaats van met &quot;domain&quot;. Stilstaand &quot;domein&quot; wordt gebruikt voor SSL SNI en validatie. |
-| **forwardHost** (optioneel, standaard is false) | Indien ingesteld op true, wordt de header &quot;Host&quot; van de clientaanvraag doorgegeven aan de backend, anders wordt de waarde &quot;domain&quot; doorgegeven in de header &quot;Host&quot;. |
-| **forwardCookie** (optioneel, standaard is false) | Als de waarde true is, wordt de koptekst &#39;Cookie&#39; uit de clientaanvraag doorgegeven aan de achterkant. Als dit niet het geval is, wordt de koptekst Cookie verwijderd. |
-| **forwardAuthorization** (optioneel, standaard is false) | Als de waarde true is, wordt de header &quot;Authorization&quot; van de clientaanvraag doorgegeven aan de back-end, anders wordt de machtigingsheader verwijderd. |
-| **timeout** (optioneel, in seconden, standaard is 60) | Aantal seconden dat CDN op een backendserver moet wachten om de eerste byte van een HTTP-antwoordinstantie te leveren. Deze waarde wordt ook gebruikt als een tussenliggende time-out naar de backend-server. |
+| **ip** (facultatief, gesteund iv4 en ipv6) | Indien opgegeven, wordt deze gebruikt om verbinding te maken met de backend in plaats van met &quot;domain&quot;. Stilstaand &quot;domein&quot; wordt gebruikt voor SSL SNI en validatie. |
+| **forwardHost** (facultatief, gebrek is vals) | Indien ingesteld op true, wordt de header &quot;Host&quot; van de clientaanvraag doorgegeven aan de backend, anders wordt de waarde &quot;domain&quot; doorgegeven in de header &quot;Host&quot;. |
+| **forwardCookie** (facultatief, gebrek is vals) | Als de waarde true is, wordt de koptekst &#39;Cookie&#39; uit de clientaanvraag doorgegeven aan de achterkant. Als dit niet het geval is, wordt de koptekst Cookie verwijderd. |
+| **forwardAuthorization** (facultatief, gebrek is vals) | Als de waarde true is, wordt de header &quot;Authorization&quot; van de clientaanvraag doorgegeven aan de back-end, anders wordt de machtigingsheader verwijderd. |
+| **onderbreking** (facultatief, in seconden, gebrek is 60) | Aantal seconden dat CDN op een backendserver moet wachten om de eerste byte van een HTTP-antwoordinstantie te leveren. Deze waarde wordt ook gebruikt als een tussenliggende time-out naar de backend-server. |
 
 ### Proxeren naar Edge Delivery Services {#proxying-to-edge-delivery}
 
@@ -341,13 +341,13 @@ data:
 ```
 
 >[!NOTE]
-> Aangezien de Adobe Beheerde CDN wordt gebruikt, zorg ervoor om dupbevestiging binnen te vormen **beheerd** door de Edge Delivery Services te volgen [Documentatie voor push-validatie instellen](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Aangezien de Adobe Beheerde CDN wordt gebruikt, zorg ervoor om pushongeldigheid op **beheerde** wijze te vormen, door de Edge Delivery Services [ te volgen duw van de Opstelling de documentatie van de ongeldigverklaring ](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Omleiding op de client {#client-side-redirectors}
 
 >[!NOTE]
->Deze functie is nog niet algemeen beschikbaar. Als u wilt deelnemen aan het programma voor vroegtijdige adoptie, kunt u een e-mail sturen `aemcs-cdn-config-adopter@adobe.com` en beschrijf uw gebruiksgeval.
+>Deze functie is nog niet algemeen beschikbaar. Als u wilt deelnemen aan het programma voor vroegtijdige adoptie, stuurt u een e-mail `aemcs-cdn-config-adopter@adobe.com` met een beschrijving van uw gebruiksscenario.
 
 U kunt de omleidingsregels aan de clientzijde gebruiken voor 301, 302 en vergelijkbare omleidingen aan de clientzijde. Als een regel overeenkomt, reageert de CDN met een statusregel die de statuscode en het bericht bevat (bijvoorbeeld HTTP/1.1 301 Permanent verplaatst) en met de locatiekoptekenset.
 
@@ -380,5 +380,5 @@ data:
 
 | Naam | Eigenschappen | Betekenis |
 |-----------|--------------------------|-------------|
-| **omleiden** | locatie | Waarde voor de koptekst &#39;Locatie&#39;. |
+| **redirect** | locatie | Waarde voor de koptekst &#39;Locatie&#39;. |
 |     | status (optioneel, standaard is 301) | De HTTP-status die standaard moet worden gebruikt in het omleidingsbericht, is 301. De toegestane waarden zijn: 301, 302, 303, 307, 308. |
