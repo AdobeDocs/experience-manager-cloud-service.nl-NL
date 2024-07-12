@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
 workflow-type: tm+mt
-source-wordcount: '3947'
+source-wordcount: '3938'
 ht-degree: 0%
 
 ---
@@ -20,60 +20,61 @@ De filterregels van het verkeer kunnen worden gebruikt om verzoeken bij de laag 
 * Het vestigen van tariefgrenzen om minder vatbaar voor volumetrische aanvallen van Dos te zijn
 * Voorkomen dat IP-adressen waarvan bekend is dat ze kwaadaardig zijn, zich richten op uw pagina&#39;s
 
-De meeste van deze regels van de verkeersfilter zijn beschikbaar aan alle AEM as a Cloud Service Plaatsen en klanten van Forms. Zij werken hoofdzakelijk op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, hostname, weg, en gebruikersagent.
+De meeste van deze verkeersfilterregels zijn beschikbaar aan alle klanten van AEM as a Cloud Service Sites en van Forms. Zij werken hoofdzakelijk op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, hostname, weg, en gebruikersagent.
 
-Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of een vergunning van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het WAF (de Firewall van de Toepassing van het Web) (of de regels van WAF voor kort) en hebben toegang tot [WAF-vlaggen](#waf-flags-list) wordt verderop in dit artikel beschreven.
+Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of een vergunning van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het WAF (van de Firewall van de Toepassing van het Web) (of de regels van WAF voor kort) en hebben toegang tot de [ Vlaggen van WAF ](#waf-flags-list) later in dit artikel wordt beschreven.
 
-De filterregels van het verkeer kunnen via de configuratiepijpleidingen van de Manager van de Wolk worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Steun voor RDEs zal in de toekomst komen.
+De filterregels van het verkeer kunnen via de configuratiepijpleidingen van Cloud Manager worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Steun voor RDEs zal in de toekomst komen.
 
-[Een zelfstudie doorlopen](#tutorial) snel concrete expertise op dit gebied op te bouwen.
+[ volg door een leerprogramma ](#tutorial) om concrete deskundigheid op deze eigenschap snel te bouwen.
 
 >[!NOTE]
->Voor extra opties met betrekking tot het vormen van verkeer bij CDN, met inbegrip van het uitgeven van het verzoek/de reactie, het verklaren van omleidingen, en het proxying aan een niet AEM oorsprong, zie [Het vormen van Verkeer bij CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) artikel.
+>Voor extra opties met betrekking tot het vormen van verkeer bij CDN, met inbegrip van het uitgeven van het verzoek/de reactie, het verklaren van opnieuw richt, en het proxying aan een niet-AEM oorsprong, zie [ het Vormen Verkeer bij het CDN ](/help/implementing/dispatcher/cdn-configuring-traffic.md) artikel.
 
 
 ## Hoe dit artikel is georganiseerd {#how-organized}
 
 Dit artikel is onderverdeeld in de volgende secties:
 
-* **Overzicht verkeersbeveiliging:** Leer hoe u tegen kwaadwillig verkeer wordt beschermd.
-* **Voorgesteld proces voor het configureren van regels:** Lees voor meer informatie over een methode op hoog niveau voor het beschermen van uw website.
-* **Instellen:** Ontdek hoe te opstelling, vorm, en stel de regels van de verkeersfilter, met inbegrip van de geavanceerde regels van WAF op.
-* **Syntaxis regels:** Lees over hoe te om de regels van de verkeersfilter in te verklaren `cdn.yaml` configuratiebestand. Dit omvat zowel de regels van de verkeersfilter beschikbaar aan alle klanten van Plaatsen en van Forms, als de subcategorie van de regels van WAF voor degenen die van dat vermogen vergunning geven.
-* **Voorbeelden van regels:** Bekijk voorbeelden van gedeclareerde regels om u op weg te helpen.
-* **Regels voor tarieflimieten:** Leer hoe u regels voor snelheidsbeperking gebruikt om uw site te beschermen tegen aanvallen met een hoog volume.
-* **Waarschuwing verkeersfilterregels** Vorm alarm dat moet worden op de hoogte gebracht wanneer uw regels worden teweeggebracht.
-* **Standaardverkeersspiegel bij oorspronkelijke waarschuwing** Word op de hoogte gebracht wanneer er een toename van verkeer bij de oorsprong wijzend op een aanval DDoS is.
-* **CDN-logbestanden:** Zie welke verklaarde regels en de Vlaggen van WAF uw verkeer aanpassen.
-* **Dashboard-gereedschappen:** Analyseer uw CDN logboeken om nieuwe regels van de verkeersfilter omhoog te komen.
-* **Aanbevolen starterregels:** Een set regels om mee aan de slag te gaan.
-* **Zelfstudie:** Praktische kennis van de eigenschap, met inbegrip van hoe te om dashboardtoolings te gebruiken om de juiste regels te verklaren.
+* **overzicht van de bescherming van het Verkeer:** leer hoe u tegen kwaadwillig verkeer wordt beschermd.
+* **Voorgesteld proces om regels te vormen:** las over een methodologie op hoog niveau voor het beschermen van uw website.
+* **Opstelling:** ontdekt hoe te opstelling, vorm, en stel de regels van de verkeersfilter, met inbegrip van de geavanceerde regels van WAF op.
+* **syntaxis van Regels:** las over hoe te om de regels van de verkeersfilter in het `cdn.yaml` configuratiedossier te verklaren. Dit omvat zowel de regels van de verkeersfilter beschikbaar aan alle klanten van Plaatsen en van Forms, als de subcategorie van de regels van WAF voor degenen die van dat vermogen vergunning geven.
+* **de voorbeelden van Regels:** zie voorbeelden van verklaarde regels om u op uw manier te krijgen.
+* **de grensregels van het Tarief:** leer hoe te om tarief te gebruiken die regels beperken om uw plaats tegen hoge volumeaanvallen te beschermen.
+* **de Regels van de Filter van het Verkeer Alarm** vormt alarm om op de hoogte te worden gebracht wanneer uw regels worden teweeggebracht.
+* **StandaardSpiek van het Verkeer bij Herinnering van de Oorsprong** wordt op de hoogte gebracht wanneer er een toename van verkeer bij de oorsprong wijzend op een aanval DDoS is.
+* **CDN logboeken:** zie welke verklaarde regels en de Vlaggen van WAF uw verkeer aanpassen.
+* **Tooling van het Dashboard:** Analyseer uw CDN- logboeken om omhoog met nieuwe regels van de verkeersfilter te komen.
+* **geadviseerde Regels van de Aanzet:** Een reeks regels om met te beginnen.
+* **Leerprogramma:** Praktische kennis over de eigenschap, met inbegrip van hoe te om dashboardtoolings te gebruiken om de juiste regels te verklaren.
 
-De Adobe nodigt u uit om feedback te geven of vragen te stellen over verkeersfilterregels door per e-mail te verzenden **aemcs-waf-adopter@adobe.com**.
+De Adobe nodigt u uit terugkoppelen of vragen over de regels van de verkeersfilter te stellen door **aemcs-waf-adopter@adobe.com** te e-mailen.
 
 ## Overzicht van verkeersbeveiliging {#traffic-protection-overview}
 
 In het huidige digitale landschap is kwaadwillig verkeer een steeds grotere bedreiging. De Adobe erkent de ernst van het risico en biedt verscheidene benaderingen aan om klantentoepassingen te beschermen en aanvallen te verlichten wanneer zij voorkomen.
 
-Bij de rand, absorbeert de Adobe Beheerde CDN de aanvallen van Dos bij de netwerklaag (lagen 3 en 4), met inbegrip van vloed en bezinning/versterkingsaanvallen.
+Bij de rand, absorbeert de Adobe Beheerde CDN de aanvallen van Dos bij het netwerk
+laag (lagen 3 en 4), inclusief overstroming en reflectie-/versterkingsaanvallen.
 
 Door gebrek, neemt de Adobe maatregelen om prestatiesverslechtering te verhinderen toe te schrijven aan barsten van onverwacht hoog verkeer boven een bepaalde drempel. Als er een aanval van Dos is die plaatsbeschikbaarheid beïnvloedt, worden de verrichtingenteams van de Adobe gealarmeerd en nemen stappen om te verlichten.
 
 De klanten kunnen pro-actieve maatregelen nemen om de aanvallen van de toepassingslaag (laag 7) te verlichten door regels bij diverse lagen van de stroom van de inhoudslevering te vormen.
 
-Op de Apache-laag kunnen klanten bijvoorbeeld de [Dispatcher, module](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) of [ModSecurity](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) om de toegang tot bepaalde inhoud te beperken.
+Bijvoorbeeld, bij de laag Apache, kunnen de klanten of de [ module van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) of [ ModSecurity ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) vormen om toegang tot bepaalde inhoud te beperken.
 
-Zoals dit artikel beschrijft, kunnen de regels van de verkeersfilter aan de Adobe Geleide CDN worden opgesteld, gebruikend de configuratiepijplijn van de Manager van de Wolk. Naast de regels van de verkeersfilter die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
+Zoals dit artikel beschrijft, kunnen de regels van de verkeersfilter aan de Adobe Geleide CDN worden opgesteld, gebruikend de configuratiepijplijn van Cloud Manager. Naast de regels van de verkeersfilter die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
 
 ## Voorgesteld proces {#suggested-process}
 
 Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor het komen met de juiste regels van de verkeersfilter:
 
-1. Niet-productie- en productieconfiguratiepijpleidingen configureren, zoals beschreven in de [Instellen](#setup) sectie.
-1. Klanten die een licentie voor de subcategorie WAF-regels voor verkeersfilters hebben, dienen deze in te schakelen in Cloud Manager.
-1. Lees en probeer uit het leerprogramma om concreet te begrijpen hoe te om de regels van de verkeersfilter, met inbegrip van de regels van WAF te gebruiken als zij vergunning hebben gekregen. Het leerprogramma begeleidt u door het opstellen van regels aan een dev milieu, simulerend kwaadwillig verkeer, downloadend [CDN-logbestanden](#cdn-logs)en deze in [dashboardgereedschap](#dashboard-tooling).
-1. De aanbevolen startregels kopiëren naar `cdn.yaml` en stel de configuratie aan het productiemilieu op logboekwijze op.
-1. Na het verzamelen van wat verkeer, analyseer de resultaten gebruikend [dashboardgereedschap](#dashboard-tooling) om na te gaan of er wedstrijden zijn. Lookout voor valse positieven, en maak om het even welke noodzakelijke aanpassingen, uiteindelijk toelatend de starterregels op blokwijze.
+1. Vorm niet-productie en de pijpleidingen van de productieconfiguratie, zoals die in de [ sectie van de Opstelling ](#setup) worden beschreven.
+1. Klanten die een vergunning hebben verleend voor de subcategorie van WAF-verkeersfilterregels moeten deze in Cloud Manager inschakelen.
+1. Lees en probeer uit het leerprogramma om concreet te begrijpen hoe te om de regels van de verkeersfilter, met inbegrip van de regels van WAF te gebruiken als zij vergunning hebben gekregen. Het leerprogramma begeleidt u door het opstellen van regels aan een dev milieu, dat kwaadwillig verkeer simuleert, de [ CDN- logboeken ](#cdn-logs) downloadt, en hen analyseert in [ dashboard tooling ](#dashboard-tooling).
+1. Kopieer de aanbevolen startregels naar `cdn.yaml` en implementeer de configuratie in de logmodus in de productieomgeving.
+1. Na het verzamelen van wat verkeer, analyseer de resultaten gebruikend [ dashboard tooling ](#dashboard-tooling) om te zien of waren er om het even welke gelijken. Lookout voor valse positieven, en maak om het even welke noodzakelijke aanpassingen, uiteindelijk toelatend de starterregels op blokwijze.
 1. Voeg douaneregels toe die op analyse van de logboeken CDN worden gebaseerd, eerst het testen met gesimuleerd verkeer op ontwikkelmilieu&#39;s alvorens aan stadium en productiemilieu&#39;s op logboekwijze, dan blokwijze op te stellen.
 1. Het verkeer van de controle voortdurend, veranderend de regels aangezien het bedreigingslandschap evolueert.
 
@@ -86,7 +87,7 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
         cdn.yaml
    ```
 
-1. `cdn.yaml` moeten metagegevens en een lijst met verkeersfilterregels en WAF-regels bevatten.
+1. `cdn.yaml` moet metagegevens en een lijst met regels voor verkeersfilters en WAF-regels bevatten.
 
    ```
    kind: "CDN"
@@ -107,33 +108,33 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
          action: block
    ```
 
-De `kind` parameter moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie, die `1`. Zie de volgende voorbeelden.
+De parameter `kind` moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie, namelijk `1` . Zie de volgende voorbeelden.
 
 
 <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
-1. Als voor WAF-regels een licentie wordt verleend, moet u de functie inschakelen in Cloud Manager, zoals hieronder wordt beschreven voor zowel de nieuwe als de bestaande programmascenario&#39;s.
+1. Als de regels van WAF vergunning hebben, zou u de eigenschap in Cloud Manager moeten toelaten, zoals hieronder voor zowel de nieuwe als bestaande programmascenario&#39;s wordt beschreven.
 
-   1. Om WAF op een nieuw programma te vormen, controleer **WAF-DDOS-beveiliging** selectievakje op de **Beveiliging** als u [een productieprogramma toevoegen.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   1. Om WAF op een nieuw programma te vormen, controleer de **WAF-DDOS Bescherming** controle-doos op het **3} lusje van de Veiligheid {wanneer u [ een productieprogramma toevoegt.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)**
 
-   1. WAF op een bestaand programma vormen, [uw programma bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op de **Beveiliging** of controleer de **WAF-DDOS** op elk gewenst moment.
+   1. Om WAF op een bestaand programma te vormen, [ het uitgeven van uw programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op het **lusje van de Veiligheid** uncheck of controleer de **WAF-DDOS** optie op elk ogenblik.
 
-1. Voor milieutypes buiten RDE, creeer een gerichte plaatsing config pijpleiding in de Manager van de Wolk.
+1. Voor milieutypes buiten RDE, creeer een gerichte plaatsing config pijpleiding in Cloud Manager.
 
-   * [Zie productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Zie niet-productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * [ zie het vormen productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [ zie het vormen niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 Voor RDEs, wordt de bevellijn gebruikt, maar RDE wordt momenteel niet gesteund.
 
-**Notities**
+**Nota&#39;s**
 
-* U kunt `yq` om de opmaak van uw configuratiebestand lokaal te valideren (bijvoorbeeld `yq cdn.yaml`).
+* Met `yq` kunt u de YAML-opmaak van uw configuratiebestand lokaal valideren (bijvoorbeeld `yq cdn.yaml` ).
 
 ## Syntaxis verkeersfilterregels {#rules-syntax}
 
-U kunt `traffic filter rules` om op patronen zoals IPs, gebruikersagent, verzoekkopballen, hostname, geo, en url aan te passen.
+U kunt `traffic filter rules` zo configureren dat deze overeenkomt met patronen zoals IP&#39;s, gebruikersagent, aanvraagheaders, hostnaam, geo en url.
 
-Klanten die een licentie verlenen voor het aanbod Uitgebreide beveiliging of WAF-DDoS-beveiliging, kunnen ook een speciale categorie regels voor het filter configureren, genaamd `WAF traffic filter rules` (of WAF-regels voor kort) die verwijzen naar een of meer [WAF-vlaggen](#waf-flags-list).
+De klanten die van de Uitgebreide Veiligheid of WAF-DoS het aanbieden van de Veiligheid van de Bescherming ook een speciale categorie van geroepen de regels van de verkeersfilter `WAF traffic filter rules` (of de regels van WAF voor kort) vormen die één of meerdere [ vlaggen van WAF ](#waf-flags-list) van verwijzingen voorzien.
 
 Hier is een voorbeeld van een reeks regels van de verkeersfilter, die ook een regel van WAF omvat.
 
@@ -159,21 +160,21 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-Het formaat van de regels van de verkeersfilter in `cdn.yaml` wordt hieronder beschreven. Zie sommige [andere voorbeelden](#examples) in een latere sectie en een afzonderlijke sectie over [Regels voor tarieflimieten](#rate-limit-rules).
+De indeling van de verkeersfilterregels in het `cdn.yaml` -bestand wordt hieronder beschreven. Zie sommige [ andere voorbeelden ](#examples) in een recentere sectie, en een afzonderlijke sectie over [ Regels van de Grens van het Tarief ](#rate-limit-rules).
 
 
-| **Eigenschap** | **De meeste regels van de verkeersfilter** | **Regels voor WAF-verkeersfilters** | **Type** | **Standaardwaarde** | **Beschrijving** |
+| **Bezit** | **de Meeste regels van de verkeersfilter** | **de regels van de het verkeersfilter van WAF** | **Type** | **Standaardwaarde** | **Beschrijving** |
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | Regelnaam (64 tekens lang, alleen alfanumerieke tekens en -) |
-| wanneer | X | X | `Condition` | - | De basisstructuur is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[Zie Syntaxis van Condition Structure](#condition-structure) Hieronder vindt u een beschrijving van de getters, voorspellingen en hoe u meerdere voorwaarden kunt combineren. |
+| wanneer | X | X | `Condition` | - | De basisstructuur is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[ zie de syntaxis van de Structuur van de Voorwaarde ](#condition-structure) hieronder, die de getters, voorspelt, en hoe te om veelvoudige voorwaarden te combineren. |
 | action | X | X | `Action` | log | log, allow, block of Action-object. Standaard is log |
-| rateLimit | X |   | `RateLimit` | niet gedefinieerd | Snelheidsbeperkende configuratie. Snelheidsbeperking is uitgeschakeld als deze niet is gedefinieerd.<br><br>Hieronder vindt u een aparte sectie waarin de syntaxis rateLimit wordt beschreven, samen met voorbeelden. |
+| rateLimit | X |   | `RateLimit` | niet gedefinieerd | Snelheidsbeperkende configuratie. Snelheidsbeperking is uitgeschakeld als deze niet is gedefinieerd.<br><br> Er is een afzonderlijke sectie verder onder beschrijvend de rateLimit syntaxis, samen met voorbeelden. |
 
 ### Voorwaardestructuur {#condition-structure}
 
 Een voorwaarde kan een eenvoudige Voorwaarde of een groep Voorwaarden zijn.
 
-**Eenvoudige voorwaarde**
+**Eenvoudige Voorwaarde**
 
 Een eenvoudige voorwaarde bestaat uit een getter en een voorspelling.
 
@@ -181,7 +182,7 @@ Een eenvoudige voorwaarde bestaat uit een getter en een voorspelling.
 { <getter>: <value>, <predicate>: <value> }
 ```
 
-**Groepsvoorwaarden**
+**Voorwaarden van de Groep**
 
 Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 
@@ -193,38 +194,38 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
     - { <getter>: <value>, <predicate>: <value> }
 ```
 
-| **Eigenschap** | **Type** | **Betekenis** |
+| **Bezit** | **Type** | **Betekenis** |
 |---|---|---|
-| **allOf** | `array[Condition]` | **en** -bewerking. true als alle vermelde voorwaarden true retourneren |
-| **anyOf** | `array[Condition]` | **of** -bewerking. true als een van de vermelde voorwaarden true retourneert |
+| **allOf** | `array[Condition]` | **en** verrichting. true als alle vermelde voorwaarden true retourneren |
+| **anyOf** | `array[Condition]` | **of** verrichting. true als een van de vermelde voorwaarden true retourneert |
 
 **Getter**
 
-| **Eigenschap** | **Type** | **Beschrijving** |
+| **Bezit** | **Type** | **Beschrijving** |
 |---|---|---|
-| reqProperty | `string` | Request-eigenschap.<br><br>Een van:<br><ul><li>`path`: Retourneert het volledige pad van een URL zonder de queryparameters.</li><li>`queryString`: Retourneert het querygedeelte van een URL</li><li>`method`: Retourneert de HTTP-methode die in de aanvraag wordt gebruikt.</li><li>`tier`: Retourneert een van `author`, `preview`, of `publish`.</li><li>`domain`: Hiermee wordt de eigenschap domain geretourneerd (zoals gedefinieerd in het dialoogvenster `Host` header) in kleine letters</li><li>`clientIp`: Retourneert de client-IP.</li><li>`clientCountry`: Retourneert een tweelettercode ([Regionaal indicatorsymbool](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) die aangeven in welk land de cliënt zich bevindt.</li></ul> |
+| reqProperty | `string` | Request-eigenschap.<br><br> Één van:<br><ul><li>`path`: retourneert het volledige pad van een URL zonder de queryparameters.</li><li>`queryString`: retourneert het querygedeelte van een URL</li><li>`method`: retourneert de HTTP-methode die in de aanvraag wordt gebruikt.</li><li>`tier`: retourneert een van `author` , `preview` of `publish` .</li><li>`domain`: retourneert de eigenschap domain (zoals gedefinieerd in de `Host` -header) in kleine letters</li><li>`clientIp`: retourneert de client-IP.</li><li>`clientCountry`: Keert een twee brievencode ([ Regionaal indicatorsymbool ](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) terug die zich identificeert in welk land de cliënt wordt gevestigd.</li></ul> |
 | reqHeader | `string` | Hiermee wordt aanvraagheader met de opgegeven naam geretourneerd |
 | queryParam | `string` | Hiermee wordt de query-parameter met de opgegeven naam geretourneerd |
 | reqCookie | `string` | Retourneert cookie met opgegeven naam |
-| postParam | `string` | Keert de Parameter van het Post met gespecificeerde naam van het lichaam van het Verzoek terug. Werkt alleen als de hoofdtekst van het inhoudstype is `application/x-www-form-urlencoded` |
+| postParam | `string` | Retourneert de Post-parameter met de opgegeven naam van de aanvraaginstantie. Werkt alleen als de hoofdtekst van het inhoudstype is `application/x-www-form-urlencoded` |
 
-**Voorspelend**
+**Predicate**
 
-| **Eigenschap** | **Type** | **Betekenis** |
+| **Bezit** | **Type** | **Betekenis** |
 |---|---|---|
-| **equals** | `string` | true als het resultaat van de getter gelijk is aan de opgegeven waarde |
+| **evenaart** | `string` | true als het resultaat van de getter gelijk is aan de opgegeven waarde |
 | **doesNotEqual** | `string` | true als het resultaat van de getter niet gelijk is aan de opgegeven waarde |
-| **leuk** | `string` | true als het resultaat van de getter overeenkomt met het opgegeven patroon |
-| **notlike** | `string` | true als het resultaat van de getter niet overeenkomt met het opgegeven patroon |
-| **overeenkomsten** | `string` | true als het resultaat van de getter overeenkomt met opgegeven regex |
+| **als** | `string` | true als het resultaat van de getter overeenkomt met het opgegeven patroon |
+| **notLike** | `string` | true als het resultaat van de getter niet overeenkomt met het opgegeven patroon |
+| **gelijken** | `string` | true als het resultaat van de getter overeenkomt met opgegeven regex |
 | **doesNotMatch** | `string` | true als het resultaat van de getter niet overeenkomt met opgegeven regex |
 | **in** | `array[string]` | true als de opgegeven lijst het resultaat getter bevat |
 | **notIn** | `array[string]` | true als de opgegeven lijst geen resultaat voor getter bevat |
-| **exists** | `boolean` | true wanneer ingesteld op true en eigenschap bestaat of wanneer ingesteld op false en eigenschap niet bestaat |
+| **bestaat** | `boolean` | true wanneer ingesteld op true en eigenschap bestaat of wanneer ingesteld op false en eigenschap niet bestaat |
 
-**Notities**
+**Nota&#39;s**
 
-* De eigenschap request `clientIp` kan alleen worden gebruikt met de volgende voorspelling: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` kan ook tegen IP waaiers worden vergeleken wanneer het gebruiken `in` en `notIn` voorspelt. In het volgende voorbeeld wordt een voorwaarde geïmplementeerd om te beoordelen of een client-IP zich in het IP-bereik van 192.168.0.0/24 bevindt (dus van 192.168.0.0 tot 192.168.0.255):
+* De request-eigenschap `clientIp` kan alleen worden gebruikt met de volgende voorspellingen: `equals`, `doesNotEqual`, `in`, `notIn` . `clientIp` kan ook worden vergeleken met IP-bereiken wanneer `in` en `notIn` voorspellingen worden gebruikt. In het volgende voorbeeld wordt een voorwaarde geïmplementeerd om te beoordelen of een client-IP zich in het IP-bereik van 192.168.0.0/24 bevindt (dus van 192.168.0.0 tot 192.168.0.255):
 
 ```
 when:
@@ -232,50 +233,50 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe beveelt het gebruik van [regex101](https://regex101.com/) en [Fastly Fiddle](https://fiddle.fastly.dev/) wanneer u met regex werkt. U kunt ook meer leren over hoe snel regex in dit [artikel](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* De Adobe adviseert het gebruik van [ regex101 ](https://regex101.com/) en [ Fastly verdwijnt ](https://fiddle.fastly.dev/) wanneer het werken met regex. U kunt meer over leren hoe de Snelle handvatten regex in dit [ artikel ](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Handelingsstructuur {#action-structure}
 
-An `action` Dit kan een tekenreeks zijn die de handeling opgeeft (toestaan, blokkeren of vastleggen), of een object dat bestaat uit zowel het handelingstype (toestaan, blokkeren of vastleggen) als opties zoals wafFlags en/of status.
+Een `action` kan een tekenreeks zijn die de handeling opgeeft (toestaan, blokkeren of vastleggen), of een object dat is samengesteld uit zowel het handelingstype (toestaan, blokkeren of vastleggen) als opties zoals wafFlags en/of status.
 
-**Typen handelingen**
+**Types van Acties**
 
 De acties worden geprioriteerd volgens hun types in de volgende lijst, die wordt bevolen om op de ordeacties te wijzen wordt uitgevoerd:
 
-| **Naam** | **Toegestane eigenschappen** | **Betekenis** |
+| **Naam** | **Toegestane Eigenschappen** | **Betekenis** |
 |---|---|---|
-| **toestaan** | `wafFlags` (facultatief), `alert` (optioneel, nog niet vrijgegeven) | als wafFlags niet aanwezig is, houdt verdere regelverwerking tegen en gaat aan het dienen van reactie te werk. Als wafFlags aanwezig is, maakt het gespecificeerde bescherming van WAF onbruikbaar en gaat aan verdere regelverwerking te werk. <br>Als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Deze functie wordt nog niet vrijgegeven. Zie de [Waarschuwing verkeersfilterregels](#traffic-filter-rules-alerts) voor meer informatie over de deelname aan het programma voor vroegtijdige adoptie . |
-| **blok** | `status, wafFlags` (facultatief en wederzijds exclusief), `alert` (optioneel, nog niet vrijgegeven) | als wafFlags niet aanwezig is, retourneert de HTTP-fout waarbij alle andere eigenschappen worden overgeslagen, wordt de foutcode gedefinieerd door de status-eigenschap of is de standaardwaarde 406. Als wafFlags aanwezig is, laat het gespecificeerde bescherming van WAF toe en gaat aan verdere regelverwerking te werk. <br>Als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Deze functie wordt nog niet vrijgegeven. Zie de [Waarschuwing verkeersfilterregels](#traffic-filter-rules-alerts) voor meer informatie over de deelname aan het programma voor vroegtijdige adoptie . |
-| **log** | `wafFlags` (facultatief), `alert` (optioneel, nog niet vrijgegeven) | registreert het feit dat de regel werd teweeggebracht, anders beïnvloedt niet de verwerking. wafFlags heeft geen effect. <br>Als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Deze functie wordt nog niet vrijgegeven. Zie de [Waarschuwing verkeersfilterregels](#traffic-filter-rules-alerts) voor meer informatie over de deelname aan het programma voor vroegtijdige adoptie . |
+| **toestaan** | `wafFlags` (optioneel), `alert` (optioneel) | als wafFlags niet aanwezig is, houdt verdere regelverwerking tegen en gaat aan het dienen van reactie te werk. Als wafFlags aanwezig is, maakt het gespecificeerde bescherming van WAF onbruikbaar en gaat aan verdere regelverwerking te werk. <br> als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Zodra een alarm voor een bepaalde regel in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC). |
+| **blok** | `status, wafFlags` (optioneel en wederzijds exclusief), `alert` (optioneel) | als wafFlags niet aanwezig is, retourneert de HTTP-fout waarbij alle andere eigenschappen worden overgeslagen, wordt de foutcode gedefinieerd door de status-eigenschap of is de standaardwaarde 406. Als wafFlags aanwezig is, laat het gespecificeerde bescherming van WAF toe en gaat aan verdere regelverwerking te werk. <br> als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Zodra een alarm voor een bepaalde regel in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC). |
+| **logboek** | `wafFlags` (optioneel), `alert` (optioneel) | registreert het feit dat de regel werd teweeggebracht, anders beïnvloedt niet de verwerking. wafFlags heeft geen effect. <br> als het alarm wordt gespecificeerd, wordt een bericht van het Centrum van Acties verzonden als de regel 10 keer in een 5 minieme venster wordt teweeggebracht. Zodra een alarm voor een bepaalde regel in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC). |
 
 ### Lijst met WAF-markeringen {#waf-flags-list}
 
-De `wafFlags` eigenschap, die kan worden gebruikt in de licentiebare WAF-regels voor verkeersfilters, kan verwijzen naar het volgende:
+De eigenschap `wafFlags`, die kan worden gebruikt in de regels voor het licentiebare WAF-verkeersfilter, kan naar het volgende verwijzen:
 
-| **Markering-id** | **Vlagnaam** | **Beschrijving** |
+| **identiteitskaart van de Vlag** | **de Naam van de Vlag** | **Beschrijving** |
 |---|---|---|
 | SQLI | SQL-injectie | SQL de Injectie is de poging om toegang tot een toepassing te verkrijgen of bevoorrechte informatie te verkrijgen door willekeurige gegevensbestandvragen uit te voeren. |
 | BACKEUR | Achterkant | Een achterdeursignaal is een verzoek dat probeert te bepalen als een gemeenschappelijk achterdeurdossier op het systeem aanwezig is. |
 | CMDEXE | Opdracht uitvoeren | De Uitvoering van het bevel is de poging om controle te verkrijgen of een doelsysteem door willekeurige systeembevelen door middel van gebruikersinput te beschadigen. |
-| CMDEXE-NO-BIN | Uitvoering van opdracht, behalve ingeschakeld `/bin/` | Zorgen voor hetzelfde beschermingsniveau als `CMDEXE` terwijl het onbruikbaar maken vals-positief op `/bin` vanwege AEM architectuur. |
+| CMDEXE-NO-BIN | Opdracht uitvoeren, behalve op `/bin/` | Zorg voor hetzelfde beschermingsniveau als `CMDEXE` en schakel false-positive in `/bin` uit vanwege AEM architectuur. |
 | XSS | Scripts voor meerdere sites | Met scripts die verwijzen naar andere sites wordt geprobeerd een gebruikersaccount of een webbrowsersessie te kapen via kwaadaardige JavaScript-code. |
 | TRAVERSAL | Directorytraversal | Directorytraversal is de poging om bevoorrechte omslagen door een systeem in hoop te navigeren om gevoelige informatie te verkrijgen. |
 | GEBRUIKER | Gereedschap Bijsluiten | De Tooling van de aanval is het gebruik van geautomatiseerde software om veiligheidskwetsbaarheid te identificeren of te proberen om een ontdekte kwetsbaarheid te exploiteren. |
-| LOG4J-JNDI | Log4J JNDI | Log4J JNDI-aanvallen proberen de [Log4Shell-kwetsbaarheid](https://en.wikipedia.org/wiki/Log4Shell) aanwezig in eerdere versies van Log4J dan 2.16.0 |
+| LOG4J-JNDI | Log4J JNDI | De aanvallen van Log4J JNDI proberen om de [ kwetsbaarheid Log4Shell ](https://en.wikipedia.org/wiki/Log4Shell) huidig in versies Log4J vroeger dan 2.16.0 te exploiteren |
 | BHH | Onjuiste koppen | De slechte Kopballen van de Hop wijzen op een HTTP het smokkelen poging door of een misvormde overdracht-Codering (TE) of een inhoud-Lengte (CL) kopbal, of een goed gevormde TE en kopbal CL |
 | CODEINJECTIE | Code-injectie | De Injectie van de code is de poging om controle te verkrijgen of een doelsysteem door arbitraire bevelen van de toepassingscode door gebruikersinput te beschadigen. |
-| ABNORMALPATH | Abnormaal pad | Met Abnormal Path wordt aangegeven dat het oorspronkelijke pad afwijkt van het genormaliseerde pad (bijvoorbeeld `/foo/./bar` is genormaliseerd naar `/foo/bar`) |
+| ABNORMALPATH | Abnormaal pad | Abnormaal pad geeft aan dat het oorspronkelijke pad afwijkt van het genormaliseerde pad (`/foo/./bar` is bijvoorbeeld genormaliseerd naar `/foo/bar`) |
 | DOUBLEENCODERING | Dubbele codering | De dubbele Codering controleert de ontduikingstechniek van het tweemaal coderen van HTML- karakters |
 | NOTUTF8 | Ongeldige codering | Ongeldige codering kan ertoe leiden dat de server schadelijke tekens van een verzoek in een reactie omzet, wat of een ontkenning van de dienst of XSS veroorzaakt |
 | JSON-ERROR | JSON-coderingsfout | Een POST, PUT, of PATCH- verzoeklichaam dat als bevattende JSON binnen de &quot;Content-Type&quot;verzoekkopbal wordt gespecificeerd maar JSON het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
 | MALFORMED-DATA | Onjuiste gegevens in de aanvraaginstantie | Een POST, een PUT, of PATCH verzoeken lichaam dat volgens de &quot;Inhoud-Type&quot;verzoekkopbal misvormd is. Bijvoorbeeld, als een &quot;Content-Type: application/x-www-form-urlencoded&quot;verzoekkopbal wordt gespecificeerd en een POST bevat die json is. Dit is vaak een programmeerfout, een geautomatiseerd of een kwaadwillig verzoek. Vereist agent 3.2 of hoger. |
-| SANS | Verkeer van kwaadwillige IP | [SANS Internet Storm Center](https://isc.sans.edu/) lijst van gemelde IP adressen die in kwaadwillige activiteit betrokken waren. |
+| SANS | Verkeer van kwaadwillige IP | [ SANS Internet Storm Center ](https://isc.sans.edu/) lijst van gemelde IP adressen die in kwaadwillige activiteit betrokken waren. |
 | NO-CONTENT-TYPE | Ontbrekende aanvraagheader &quot;Content-Type&quot; | Een POST-, PUT- of PATCH-aanvraag die geen aanvraagheader &quot;Content-Type&quot; heeft. Standaard moeten toepassingsservers in dit geval &#39;Content-Type: text/plain; charset=us-ascii&#39; aannemen. Bij veel geautomatiseerde en kwaadaardige verzoeken ontbreekt mogelijk het type inhoud. |
 | NOUA | Geen gebruikersagent | Vele geautomatiseerde en kwaadwillige verzoeken gebruiken vals of ontbrekende Gebruiker-Agenten om het moeilijk te maken om het type van apparaat te identificeren dat de verzoeken maakt. |
 | TORNODE | Teerverkeer | Tor is software die de identiteit van een gebruiker verbergt. Een piek in het verkeer van de Tor kan op een aanvaller wijzen die probeert om hun plaats te maskeren. |
 | NULLBYTE | Null Byte | Null-bytes worden normaal gesproken niet weergegeven in een verzoek en geven aan dat het verzoek onjuist is geformuleerd en mogelijk kwaadaardig is. |
-| PRIVATEFIEL | Persoonlijke bestanden | Persoonlijke bestanden zijn vertrouwelijk, zoals een Apache `.htaccess` bestand of een configuratiebestand dat vertrouwelijke informatie kan lekken |
+| PRIVATEFIEL | Persoonlijke bestanden | Persoonlijke bestanden zijn vertrouwelijk, zoals een Apache `.htaccess` -bestand of een configuratiebestand dat vertrouwelijke informatie kan lekken |
 | SCANNER | Scanner | Identificeert populaire scanservices en -gereedschappen |
 | RESPONSESPLIT | HTTP-antwoordsplitsing | Identificeert wanneer CRLF-tekens als invoer naar de toepassing worden verzonden om headers in de HTTP-reactie te injecteren |
 | XML-ERROR | XML-coderingsfout | Een POST, PUT, of PATCH aanvraaglichaam dat als bevattende XML binnen de &quot;Inhoud-Type&quot;verzoekkopbal wordt gespecificeerd maar XML het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
@@ -284,21 +285,21 @@ De `wafFlags` eigenschap, die kan worden gebruikt in de licentiebare WAF-regels 
 
 * Wanneer twee conflicterende regels worden gecreeerd, nemen de toegestane regels altijd belangrijkheid over de blokregels. Bijvoorbeeld, als u een regel creeert om een specifieke weg en een regel te blokkeren om één specifiek IP adres toe te staan, worden de verzoeken van dat IP adres op de geblokkeerde weg toegestaan.
 
-* Als een regel wordt aangepast en geblokkeerd, reageert CDN met een `406` retourcode.
+* Als een regel wordt aangepast en geblokkeerd, reageert de CDN met een `406` retourcode.
 
 * De configuratiedossiers zouden geen geheimen moeten bevatten aangezien zij door iedereen leesbaar zouden zijn die toegang tot de git bewaarplaats heeft.
 
-* IP de lijsten van gewenste personen die in de Manager van de Wolk worden bepaald hebben voorrang op de Regels van de Filters van het Verkeer.
+* IP de lijsten van gewenste personen die in Cloud Manager worden bepaald hebben voorrang op de Regels van de Filters van het Verkeer.
 
 * De de regelovereenkomsten van WAF verschijnen slechts in CDN- logboeken voor CDN mist en passen, niet klappen.
 
 ## Voorbeelden van regels {#examples}
 
-Hier volgen enkele regelvoorbeelden. Zie de [tarieflimiteringssectie](#rate-limit-rules) verder voor voorbeelden van tarieflimietregels.
+Hier volgen enkele regelvoorbeelden. Zie de [ sectie van de tariefgrens ](#rate-limit-rules) verder neer voor voorbeelden van de regels van de tariefgrens.
 
 **Voorbeeld 1**
 
-Deze regel blokkeert aanvragen afkomstig van **IP 192.168.1.1**:
+Deze regel blokkeert verzoeken die uit **IP 192.168.1.1** komen:
 
 ```
 kind: "CDN"
@@ -316,7 +317,7 @@ data:
 
 **Voorbeeld 2**
 
-Deze regel blokkeert aanvraag op pad `/helloworld` bij het publiceren met een Gebruiker-Agent die Chrome bevat:
+Deze regel blokkeert een aanvraag op pad `/helloworld` bij publicatie met een gebruikersagent die Chrome bevat:
 
 ```
 kind: "CDN"
@@ -338,7 +339,7 @@ data:
 
 **Voorbeeld 3**
 
-Deze regel blokkeert verzoeken om publicatie die de queryparameter bevatten `foo`, maar staat elk verzoek toe dat van IP 192.168.1.1 komt:
+Deze regel blokkeert verzoeken op publiceren die de vraagparameter `foo` bevatten, maar staat elk verzoek toe dat uit IP 192.168.1.1 komt:
 
 ```
 kind: "CDN"
@@ -363,7 +364,7 @@ data:
 
 **Voorbeeld 4**
 
-Deze regel blokkeert aanvragen om paden `/block-me` bij publiceren, en blokkeert elke aanvraag die overeenkomt met een `SQLI` of `XSS` patroon. Dit voorbeeld omvat een het verkeersfilterregels van WAF, die verwijzingen `SQLI` en `XSS` [WAF-vlaggen](#waf-flags-list)en dus een aparte vergunning vereist.
+Deze regel blokkeert aanvragen om een pad `/block-me` bij publicatie en blokkeert elke aanvraag die overeenkomt met een patroon `SQLI` of `XSS` . Dit voorbeeld omvat een het verkeersfilterregels van WAF, die verwijzingen `SQLI` en `XSS` [ Vlaggen van WAF ](#waf-flags-list), en zo vereist een afzonderlijke vergunning.
 
 ```
 kind: "CDN"
@@ -423,7 +424,7 @@ data:
 
 ## Regels voor tarieflimieten
 
-Soms is het wenselijk om verkeer te blokkeren als het een bepaald tarief van inkomende verzoeken, gebaseerd op een specifieke voorwaarde overschrijdt. Een waarde instellen voor de `rateLimit` eigenschap beperkt de snelheid van die aanvragen die overeenkomen met de regelvoorwaarde.
+Soms is het wenselijk om verkeer te blokkeren als het een bepaald tarief van inkomende verzoeken, gebaseerd op een specifieke voorwaarde overschrijdt. Als u een waarde voor de eigenschap `rateLimit` instelt, wordt de frequentie van die aanvragen beperkt die overeenkomen met de regelvoorwaarde.
 
 Regels voor tarieflimieten kunnen niet verwijzen naar WAF-vlaggen. Ze zijn beschikbaar voor alle klanten van Sites en Forms.
 
@@ -433,13 +434,13 @@ De grenzen van het tarief worden geëvalueerd gebaseerd op of verkeer dat de ran
 
 ### rateLimit-structuur {#ratelimit-structure}
 
-| **Eigenschap** | **Type** | **Standaard** | **BETEKENEN** |
+| **Bezit** | **Type** | **Gebrek** | **BETEKENEN** |
 |---|---|---|---|
 | limiet | geheel getal van 10 tot en met 10000 | vereist | Het tarief van het verzoek (per CDN POP) in verzoeken per seconde waarvoor de regel wordt teweeggebracht. |
 | venster | geheel getal: 1, 10 of 60 | 10 | Samplingvenster in seconden waarvoor de aanvraagsnelheid wordt berekend. De nauwkeurigheid van tellers hangt van de grootte van het venster (grotere vensternauwkeurigheid) af. U kunt bijvoorbeeld 50% nauwkeurigheid verwachten voor het venster van 1 seconde en 90% nauwkeurigheid voor het venster van 60 seconden. |
 | straf | geheel getal van 60 tot 3600 | 300 | Een periode in seconden waarvoor overeenkomstige verzoeken worden geblokkeerd (afgerond naar de dichtstbijzijnde minuut). |
 | aantal | all, fetches, fouten | alles | evalueert gebaseerd op randverkeer (allen), oorsprongverkeer (halen), of het aantal fouten (fouten). |
-| groupBy | array[Getter] | none | De teller van de snelheidsbegrenzer zal door een reeks verzoekeigenschappen (bijvoorbeeld, clientIp) worden bijeengevoegd. |
+| groupBy | serie [ Getter ] | none | De teller van de snelheidsbegrenzer zal door een reeks verzoekeigenschappen (bijvoorbeeld, clientIp) worden bijeengevoegd. |
 
 ### Voorbeelden {#ratelimiting-examples}
 
@@ -493,16 +494,14 @@ data:
 
 ## Waarschuwing verkeersfilterregels {#traffic-filter-rules-alerts}
 
->[!NOTE]
->
->Deze functie wordt nog niet vrijgegeven. Voor toegang via het programma voor vroege adoptie kunt u e-mail **aemcs-waf-adopter@adobe.com**.
+Een regel kan worden gevormd om een bericht van het Centrum van Acties te verzenden als het tien keer binnen een 5 minieme venster wordt teweeggebracht. Een dergelijke regel waarschuwt u wanneer bepaalde verkeerspatronen voorkomen zodat u om het even welke noodzakelijke maatregelen kunt nemen. Zodra een alarm voor een bepaalde regel in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC).
 
-Een regel kan worden gevormd om een bericht van het Centrum van Acties te verzenden als het tien keer binnen een 5 minieme venster wordt teweeggebracht. Een dergelijke regel waarschuwt u wanneer bepaalde verkeerspatronen voorkomen zodat u om het even welke noodzakelijke maatregelen kunt nemen. Meer informatie over [Handelingencentrum](/help/operations/actions-center.md), inclusief hoe u de vereiste meldingsprofielen instelt voor het ontvangen van e-mailberichten.
+Leer meer over [ Centrum van Acties ](/help/operations/actions-center.md), met inbegrip van hoe te opstelling de vereiste Profielen van het Bericht om e-mails te ontvangen.
 
-![Melding van actiecentra](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+![ het Bericht van het Centrum van Acties ](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-De eigenschap alert (momenteel voorafgegaan door *experimenteel* aangezien de eigenschap nog niet wordt vrijgegeven) kan op de actieknooppunt voor alle actietypes (toestaan, blok, logboek) worden toegepast.
+De waakzame eigenschap kan worden toegepast op het actieknooppunt voor alle handelingstypen (toestaan, blokkeren, vastleggen).
 
 ```
 kind: "CDN"
@@ -519,7 +518,7 @@ data:
             - { reqProperty: tier, equals: publish }
         action:
           type: block
-          experimental_alert: true
+          alert: true
 ```
 
 ## Standaardverkeersspiegel bij oorspronkelijke waarschuwing {#traffic-spike-at-origin-alert}
@@ -528,11 +527,11 @@ data:
 >
 >Dit onderdeel wordt geleidelijk ingevoerd.
 
-An [Handelingencentrum](/help/operations/actions-center.md) Het e-mailbericht zal worden verzonden wanneer er een significante hoeveelheid verkeer is die naar de oorsprong wordt verzonden, waar een hoge drempel van verzoeken van het zelfde IP adres komt, zo wijzend op een aanval DDoS.
+Een ](/help/operations/actions-center.md) e-mailbericht van het Centrum van Acties 1} zal worden verzonden wanneer er een significante hoeveelheid verkeer is dat naar de oorsprong wordt verzonden, waar een hoge drempel van verzoeken uit het zelfde IP adres komt, zo wijzend op een aanval DDoS.[
 
-Als deze greep wordt voldaan aan, zal de Adobe verkeer van dat IP adres blokkeren, maar het wordt geadviseerd om extra maatregelen te nemen om uw oorsprong te beschermen, met inbegrip van het vormen van de regels van de de filterfilter van de tariefgrens om verkeerspikes bij lagere drempels te blokkeren. Zie de [Het blokkeren Dos en aanvallen DDoS gebruikend het leerprogramma van de verkeersregels](#tutorial-blocking-DDoS-with-rules) voor een geleide doortocht.
+Als deze greep wordt voldaan aan, zal de Adobe verkeer van dat IP adres blokkeren, maar het wordt geadviseerd om extra maatregelen te nemen om uw oorsprong te beschermen, met inbegrip van het vormen van de regels van de de filterfilter van de tariefgrens om verkeerspikes bij lagere drempels te blokkeren. Zie [ het Blokkeren Dos en aanvallen DDoS gebruikend het leerprogramma van verkeersregels ](#tutorial-blocking-DDoS-with-rules) voor een geleide looppas-door.
 
-Deze waarschuwing is standaard ingeschakeld, maar u kunt deze uitschakelen via de *enable_ddos_waarschuwingen* eigenschap, ingesteld op false.
+Dit alarm wordt toegelaten door gebrek, maar het kan worden onbruikbaar gemaakt gebruikend het *enable_ddos_alarm* bezit, dat aan vals wordt geplaatst. Zodra de waarschuwing in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC).
 
 ```
 kind: "CDN"
@@ -546,11 +545,11 @@ data:
 
 ## CDN-logs {#cdn-logs}
 
-AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van de regels van de verkeersfilter nuttig zijn. CDN-logboeken worden weergegeven in Cloud Manager **Logbestanden downloaden** wanneer u de service Auteur of Publiceren selecteert.
+AEM as a Cloud Service verleent toegang tot CDN logboeken, die voor gebruiksgevallen met inbegrip van de optimalisering van de geheim voorgeheugenklapverhouding, en het vormen van de regels van de verkeersfilter nuttig zijn. CDN- logboeken verschijnen in de dialoog van de Logboeken van de Download van Cloud Manager ****, wanneer het selecteren van de dienst van de Auteur of van Publish.
 
 CDN-logbestanden kunnen maximaal vijf minuten worden vertraagd.
 
-De `rules` De eigenschap beschrijft welke regels voor verkeersfilters worden aangepast en heeft het volgende patroon:
+De eigenschap `rules` beschrijft welke regels voor verkeersfilters worden aangepast en heeft het volgende patroon:
 
 ```
 "rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
@@ -564,10 +563,10 @@ Bijvoorbeeld:
 
 De regels gedragen zich als volgt:
 
-* De klant-verklaarde regelnaam van om het even welke passende regels is vermeld in `match` kenmerk.
-* De `action` het attribuut bepaalt of de regels blokkeren, toestaan, of logboek.
-* Als WAF vergunning en toegelaten is, `waf` In dit kenmerk worden alle WAF-markeringen weergegeven die zijn gedetecteerd (bijvoorbeeld SQLI). Dit is waar ongeacht of de vlaggen van WAF in om het even welke regels werden vermeld. Dit moet inzicht verschaffen in mogelijke nieuwe regels die moeten worden gedeclareerd.
-* Als er geen door de klant gedeclareerde regels overeenkomen en er geen waf-regels overeenkomen, wordt de `rules` eigenschap is leeg.
+* De door de klant gedeclareerde regelnaam van overeenkomende regels wordt vermeld in het kenmerk `match` .
+* Het attribuut `action` bepaalt of de regels blokkeren, toestaan, of logboek.
+* Als de WAF in licentie wordt gegeven en ingeschakeld, geeft het kenmerk `waf` alle WAF-markeringen weer (bijvoorbeeld SQLI) die zijn gedetecteerd. Dit is waar ongeacht of de vlaggen van WAF in om het even welke regels werden vermeld. Dit moet inzicht verschaffen in mogelijke nieuwe regels die moeten worden gedeclareerd.
+* Als er geen door de klant gedeclareerde regels overeenkomen en er geen waf-regels overeenkomen, is de eigenschap `rules` leeg.
 
 Zoals eerder vermeld, verschijnen de de regelovereenkomsten van WAF slechts in CDN- logboeken voor CDN missen en overgaan, niet klappen.
 
@@ -636,35 +635,35 @@ data:
 
 Hieronder vindt u een lijst met veldnamen die in CDN-logbestanden worden gebruikt, samen met een korte beschrijving.
 
-| **Veldnaam** | **Beschrijving** |
+| **Naam van het Gebied** | **Beschrijving** |
 |---|---|
-| *tijdstempel* | De tijd waarop de aanvraag is gestart, na beëindiging van TLS. |
-| *ttfb* | Afkorting van *Tijd naar eerste byte*. Het tijdinterval tussen het verzoek begon tot het punt alvorens het reactiekarakter begon te worden gestroomd. |
+| *timestamp* | De tijd waarop de aanvraag is gestart, na beëindiging van TLS. |
+| *ttfb* | Afkorting voor *Tijd aan Eerste Byte*. Het tijdinterval tussen het verzoek begon tot het punt alvorens het reactiekarakter begon te worden gestroomd. |
 | *cli_ip* | Het client-IP-adres. |
-| *cli_country* | Twee letters [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2-landcode voor het land van de cliënt. |
-| *afdanken* | De waarde van de verzoekkopbal die wordt gebruikt om het verzoek uniek te identificeren. |
+| *cli_country* | Twee-brief [ ISO 3166-1 ](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 landcode voor het cliëntland. |
+| *rid* | De waarde van de verzoekkopbal die wordt gebruikt om het verzoek uniek te identificeren. |
 | *req_ua* | De gebruikersagent die verantwoordelijk is voor het indienen van een bepaalde HTTP-aanvraag. |
-| *host* | De autoriteit waarvoor het verzoek is bestemd. |
+| *gastheer* | De autoriteit waarvoor het verzoek is bestemd. |
 | *url* | Het volledige pad, inclusief queryparameters. |
 | *methode* | HTTP-methode die door de client wordt verzonden, zoals &quot;GET&quot; of &quot;POST&quot;. |
 | *res_ctype* | Het Content-Type dat wordt gebruikt om het oorspronkelijke mediatype van de bron aan te geven. |
-| *cachegeheugen* | Status van de cache. Mogelijke waarden zijn HIT, MISS of PASS |
+| *geheime voorgeheugen* | Status van de cache. Mogelijke waarden zijn HIT, MISS of PASS |
 | *status* | De HTTP-statuscode als een geheel getal. |
 | *res_age* | De hoeveelheid tijd (in seconden) dat een reactie in de cache is geplaatst (in alle knooppunten). |
 | *pop* | Datacenter van de CDN-cacheserver. |
-| *regels* | De naam van eventuele overeenkomende regels.<br><br>Geeft ook aan of de overeenkomst tot een blok heeft geleid. <br><br>Bijvoorbeeld &quot;`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br>Leeg als geen regels overeenkomen. |
+| *regels* | De naam van eventuele overeenkomende regels.<br><br> wijst ook op als de gelijke in een blok resulteerde. <br><br> Bijvoorbeeld, &quot;`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`&quot;<br><br> Leeg als geen regels aankwamen. |
 
 ## Dashboard Tooling {#dashboard-tooling}
 
-Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar uw computer voor het invoeren van CDN-logbestanden die zijn gedownload via Cloud Manager. Met dit tooling, kunt u uw verkeer analyseren om omhoog met de aangewezen regels van de verkeersfilter te komen om te verklaren, met inbegrip van de regels van WAF.
+Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar uw computer om CDN-logbestanden in te voeren die via Cloud Manager zijn gedownload. Met dit tooling, kunt u uw verkeer analyseren om omhoog met de aangewezen regels van de verkeersfilter te komen om te verklaren, met inbegrip van de regels van WAF.
 
-Gereedschap Dashboard kan rechtstreeks worden gekloond vanuit het dialoogvenster [AEMCS-CDN-Log-Analysis-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub-opslagplaats.
+Het tooling van het dashboard kan direct van de [ worden gekloond AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats GitHub.
 
-[Tutorials](#tutorial) zijn beschikbaar voor concrete instructies over het gebruik van de dashboardgereedschappen.
+[ Tutorials ](#tutorial) zijn beschikbaar voor concrete instructies op hoe te om het dashboardhulpmiddel te gebruiken.
 
 ## Aanbevolen startregels {#recommended-starter-rules}
 
-U kunt de aanbevolen regels hieronder kopiëren naar uw `cdn.yaml` aan de slag. Begin op logboekwijze, analyseer uw verkeer, en wanneer tevreden, verandering in blokwijze. Mogelijk wilt u de regels wijzigen op basis van de unieke kenmerken van het live verkeer van uw website.
+U kunt de aanbevolen regels hieronder naar uw `cdn.yaml` kopiëren om aan de slag te gaan. Begin op logboekwijze, analyseer uw verkeer, en wanneer tevreden, verandering in blokwijze. Mogelijk wilt u de regels wijzigen op basis van de unieke kenmerken van het live verkeer van uw website.
 
 ```
 kind: "CDN"
@@ -749,11 +748,11 @@ Er zijn twee zelfstudies beschikbaar.
 
 ### Websites beschermen met verkeersfilterregels (inclusief WAF-regels) {#tutorial-protecting-websites}
 
-[Een zelfstudie gebruiken](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) algemene, praktische kennis en ervaring op te doen met verkeersfilterregels, met inbegrip van WAF-regels.
+[ het Werk door een leerprogramma ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) om algemene, praktische kennis en ervaring rond de regels van de verkeersfilter, met inbegrip van de regels van WAF te bereiken.
 
 De zelfstudie begeleidt u door:
 
-* De configuratiepijplijn van Cloud Manager instellen
+* De Cloud Manager-configuratiepijplijn instellen
 * Het gebruiken van hulpmiddelen om kwaadwillig verkeer te simuleren
 * Regels voor het declareren van verkeersfilters, inclusief WAF-regels
 * Resultaten analyseren met dashboardgereedschappen
@@ -761,7 +760,7 @@ De zelfstudie begeleidt u door:
 
 ### Het blokkeren Dos en de aanvallen van DDoS gebruikend de regels van de verkeersfilter {#tutorial-blocking-DDoS-with-rules}
 
-[Diep duiken op hoe te om te blokkeren](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ontkenning van de (Dos) van de Dienst en Verdeelde Ontkenning van de (DDoS) aanvallen van de Dienst gebruikend de regels van de het verkeersfilter van de tariefgrens en andere strategieën.
+[ diepte-duik op hoe te om ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ontkenning van de Dienst (Dos) en Verspreid Ontkenning van de aanvallen van de Dienst (DDoS) te blokkeren gebruikend de regels van de het verkeersfilter van de snelheidsbeperking en andere strategieën.
 
 De zelfstudie begeleidt u door:
 
