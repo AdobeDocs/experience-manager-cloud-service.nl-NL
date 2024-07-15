@@ -1,6 +1,6 @@
 ---
-title: Hoe kan ik een [!DNL AEM Forms] als cloudserviceomgeving?
-description: Leer instellen en configureren van een [!DNL AEM Forms] as a Cloud Service omgeving.
+title: Hoe opstelling I a [!DNL AEM Forms]  als milieu van de wolkendienst?
+description: Leer aan opstelling en vorm een  [!DNL AEM Forms]  as a Cloud Service milieu.
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
@@ -15,23 +15,23 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 
 ## Persoonlijke beslissingen nemen {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Voordat u gaat overstappen op een as a Cloud Service Adobe Experience Manager (AEM) Forms-omgeving, moet u personen kiezen en een team voor uw project structureren. Een standaard [!DNL AEM Forms] projectteam heeft de volgende personen:
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Voordat u een Adobe Experience Manager (AEM) Forms as a Cloud Service-omgeving kunt instappen, moet u zelf bepalen wie u wilt en een team voor uw project structureren. Een typisch [!DNL AEM Forms] projectteam heeft de volgende persona&#39;s:
 
-* **Gebruikerservaring (UX) Designer**: In een UX-Designer (User Experience) worden stijl, lay-out en branding gedefinieerd voor [!DNL AEM Forms] activa.
+* **Ervaring van de Gebruiker (UX) Designer**: Een Ervaring van de Gebruiker (UX) Designer bepaalt stijl, lay-out, en branding voor [!DNL AEM Forms] activa.
 
-* **Forms-expert**: Een Forms-expert maakt Adaptief Forms, thema&#39;s en sjablonen op basis van de stijl, lay-out en branding die door UX Designer worden geboden. De deskundige creeert en integreert ook Aangepast Vorm met een Model van de Gegevens van het Vorm (FDM) en AEM Workflows. Een Forms Practitioner voert gewoonlijk aan de voorzijde gerelateerde taken uit.
+* **de praktijk van Forms**: Een deskundige van Forms leidt tot Aangepaste Forms, thema&#39;s, en malplaatjes zoals de stijl, lay-out, en branding die door UX Designer wordt verstrekt. De deskundige creeert en integreert ook Aangepast Vorm met een Model van de Gegevens van het Vorm (FDM) en AEM Workflows. Een Forms Practitioner voert gewoonlijk aan de voorzijde gerelateerde taken uit.
 
-* **Forms developer**: Een Forms-ontwikkelaar ontwikkelt een aangepaste formulieroplossing. Een Forms-ontwikkelaar ontwikkelt zich doorgaans op de achtergrond, zoals het ontwikkelen van aangepaste componenten, AEM workflows, services die vooraf zijn ingevuld en nog veel meer.
+* **de ontwikkelaar van Forms**: Een ontwikkelaar van Forms ontwikkelt een oplossing van de douanevormen. Een Forms-ontwikkelaar ontwikkelt zich doorgaans op de achtergrond, zoals het ontwikkelen van aangepaste componenten, AEM workflows, services die vooraf zijn ingevuld en nog veel meer.
 
-* **AEM**: Een AEM beheerder helpt bij de algemene configuratie, zoals het instellen van gebruikers, het verharden van de omgeving, het configureren van gegevensbronnen, het configureren van e-mail en software van derden. AEM beheerder helpt ook bij integratie met Adobe Analytics, Adobe Target en Adobe Sign.
+* **AEM beheerder**: Een AEM beheerder helpt met algemene configuratie zoals vestiging gebruikers, het verharden van het milieu, het vormen van gegevensbronnen, het vormen van e-mail, en derdesoftware. AEM beheerder helpt ook bij integratie met Adobe Analytics, Adobe Target en Adobe Sign.
 
-* **Eindgebruiker**: Een gebruiker communiceert met en verzendt het gepubliceerde formulier, ondertekent verzonden formulieren, volgt ingediende toepassingen via een webportal en ontvangt gepersonaliseerde communicatie.
+* **Eind - gebruiker**: Een gebruiker wisselt met en legt de gepubliceerde vorm voor, ondertekent voorgelegde vormen, volgt voorgelegde toepassingen door een Webportaal, en ontvangt gepersonaliseerde mededelingen.
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 
@@ -43,24 +43,24 @@ ht-degree: 1%
 
 ## Aan boord van de service {#onboarding}
 
-* [Aan boord](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) aan de [!DNL Adobe Experience Manager] as a Cloud Service.
+* [ Onboard ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) aan [!DNL Adobe Experience Manager] as a Cloud Service.
 
-* (Alleen voor sandboxen) Na het instappen van de service, [maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) en [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) zowel productiepijpleidingen als niet-productiepijpleidingen. Het maakt en brengt de nieuwste functies van [!DNL AEM Forms] as a Cloud Service voor uw omgeving.
+* (Alleen voor zandbakken) Na het instappen van de dienst, [ creeer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) en [ stel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) zowel productie als niet productiepijpleidingen in werking. De nieuwste functies van [!DNL AEM Forms] zijn as a Cloud Service voor uw omgeving.
 
-U kunt Forms as a Cloud Service gebruiken om een adaptief formulier (Digital Enrollment) te maken of een klantcommunicatie te genereren. Na voltooiing [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) aan de [!DNL Adobe Experience Manager] as a Cloud Service, voer de volgende acties uit om Forms - Digitale Inschrijving of Communicatie van de Klant eigenschappen toe te laten. <!--You can also enable both the features-->:
+U kunt Forms as a Cloud Service gebruiken om een adaptief formulier te maken (Digital Enrollment) of om klantcommunicatie te genereren. Na het voltooien van [ onboarding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) aan [!DNL Adobe Experience Manager] as a Cloud Service, voer de volgende acties uit om Forms - Digitale Inschrijving of Communicatie van de Klant eigenschappen toe te laten. <!--You can also enable both the features--> :
 
-1. Meld u aan bij Cloud Manager en open de as a Cloud Service AEM Forms-instantie.
+1. Meld u aan bij Cloud Manager en open AEM Forms as a Cloud Service Instance.
 1. Open de optie Programma bewerken en ga naar het tabblad Oplossingen en invoegtoepassingen:
 
-   * Als u een productieomgeving hebt, selecteert u **[!UICONTROL Forms - Communications]** om Forms - Digital Enrollment en Forms - Communications Add-On in te schakelen.
+   * Als u een productieomgeving hebt, selecteert u de optie **[!UICONTROL Forms - Communications]** om Forms - Digital Enrollment en Forms - Communications Add-On in te schakelen.
 
-     ![Communicatie](assets/communications.png)
+     ![ Mededelingen ](assets/communications.png)
 
    <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   * Als u een sandboxomgeving hebt, selecteert u **[!UICONTROL Forms]** Forms - Digital Enrollment en Forms - Communications Add-On inschakelen.
+   * Als u een sandboxomgeving hebt, selecteert u **[!UICONTROL Forms]** om Forms - Digital Enrollment en Forms - Communications Add-On in te schakelen.
 
-     ![Selectie van Form-Digital Enrollment](assets/forms-digital-enrollment1.png)
+     ![ vorm-Digitale selectie van de Inschrijving ](assets/forms-digital-enrollment1.png)
 
 
 1. Klik op **[!UICONTROL Update]**.
@@ -68,29 +68,29 @@ U kunt Forms as a Cloud Service gebruiken om een adaptief formulier (Digital Enr
 
 >[!NOTE]
 >
-> Als u API&#39;s voor documentmanipulatie wilt inschakelen en configureren, voegt u de volgende regel toe aan de [Dispatcher-configuratie](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> Om documentmanipulatie APIs toe te laten en te vormen, voeg de volgende regel aan de [ configuratie van Dispatcher ](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) toe:
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 ## Gebruikers configureren {#config-users}
 
-Meld u aan bij uw [!DNL AEM Forms] as a Cloud Service omgeving, instanties voor auteurs en publiceren openen en gebruikers toevoegen aan Forms-specifieke [AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing), gebaseerd op hun persoonlijkheid. De volgende tabel bevat een lijst met Forms-specifieke AEM groepen, beschikbaar in het vak, en de bijbehorende gebruikerstypen. De tabel bevat ook AEM instantietype voor elk gebruikerstype:
+Nadat u aan de dienst voltooit, login aan uw [!DNL AEM Forms] as a Cloud Service milieu, open de instanties van de Auteur en van Publish, en voegt gebruikers aan Forms-specifieke [ AEM groepen ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) toe, die op hun persoon worden gebaseerd. De volgende tabel bevat een lijst met Forms-specifieke AEM groepen, beschikbaar in het vak, en de bijbehorende gebruikerstypen. De tabel bevat ook AEM instantietype voor elk gebruikerstype:
 
 | Gebruikerstypen (Persoonlijk) | Gebruikersgroepen | AEM |
 |---|---|---|
 | Formulierpraktiserer/Forms-ontwikkelaar | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul> | Instantie van auteur |
 | Gebruikerservaring (UX) Designer | <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul> | Instantie van auteur |
-| AEM-beheerder | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul> | Instantie Auteur en Publiceren |
-| Eindgebruiker | <ul> <li>Wanneer een gebruiker zich moet aanmelden om een adaptief formulier te bekijken en te verzenden, voegt u deze gebruikers toe aan de [!DNL forms-users] groep. </li> <li>Wanneer geen gebruikersverificatie is vereist voor toegang tot Adaptive Forms, wijst u geen groep toe aan dergelijke gebruikers. </li> </ul> | Instantie Auteur en Publiceren |
+| AEM-beheerder | <ul> <li>[!DNL aem-administrators] ,</li> <li>[!DNL fd-administrators] </li> </ul> | Auteur- en Publish-instantie |
+| Eindgebruiker | <ul> <li>Wanneer een gebruiker zich moet aanmelden om een adaptief formulier te bekijken en te verzenden, voegt u deze gebruikers toe aan de groep [!DNL forms-users] . </li> <li>Wanneer geen gebruikersverificatie is vereist voor toegang tot Adaptive Forms, wijst u geen groep toe aan dergelijke gebruikers. </li> </ul> | Auteur- en Publish-instantie |
 
-Zie voor meer informatie over Forms-specifieke AEM en bijbehorende machtigingen [Groepen en machtigingen](forms-groups-privileges-tasks.md).
+Voor meer informatie over Forms-Specifieke AEM groepen en overeenkomstige toestemmingen, zie [ Groepen en toestemmingen ](forms-groups-privileges-tasks.md).
 
 <!-- You can also create  [user groups](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) specific  to your organization, assign policies, and [users](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) to the groups. The policies help control permissions of the users that are part of the group. For information a -->
 
 ## Volgende stap {#next-steps}
 
-[Een lokale ontwikkelomgeving instellen](setup-local-development-environment.md). U kunt een lokale ontwikkelomgeving gebruiken om een adaptief formulier en gerelateerde elementen te maken (thema&#39;s, sjablonen, aangepaste verzendhandelingen, vooraf ingevulde service en meer). En, [PDF forms converteren naar Adaptief Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) zonder zich aan te melden bij een cloudontwikkelomgeving.
+[ opstelling een lokale ontwikkelomgeving ](setup-local-development-environment.md). U kunt een lokale ontwikkelomgeving gebruiken om een adaptief formulier en gerelateerde elementen te maken (thema&#39;s, sjablonen, aangepaste verzendhandelingen, vooraf ingevulde service en meer). En, [ zet PDF forms in AanpassingsForms ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) zonder het programma te openen aan een milieu van de wolkenontwikkeling om.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

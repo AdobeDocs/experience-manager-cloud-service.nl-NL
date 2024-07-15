@@ -28,13 +28,13 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 
 | Eigenschap gegevens | Beschrijving |
 |---|---|
-| `data-aue-resource` | URL aan het middel, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
-| `data-aue-prop` | Kenmerk van de bron, zie de sectie [Instrueer de Pagina van het document die Begonnen met de Universele Redacteur in AEM worden](getting-started.md#instrument-thepage) |
-| `data-aue-type` | [Type van het bewerkbare item](#item-types) (bijvoorbeeld tekst, afbeelding en verwijzing) |
+| `data-aue-resource` | URL aan het middel, zie het sectie [ Instrument de Pagina van het document dat met de Universele Redacteur in AEM ](getting-started.md#instrument-thepage) wordt begonnen |
+| `data-aue-prop` | Attribuut van het middel, zie het sectie [ Instrument de Pagina van het document dat met de Universele Redacteur in AEM ](getting-started.md#instrument-thepage) wordt begonnen |
+| `data-aue-type` | [ Type van het editable punt ](#item-types) (bijvoorbeeld, tekst, beeld, en verwijzing) |
 | `data-aue-filter` | Definieert welke verwijzingen kunnen worden gebruikt |
-| `data-aue-label` | Hiermee definieert u een aangepast label voor een selecteerbaar item dat in de editor wordt weergegeven <br>In geval van `data-aue-model` is ingesteld, wordt het label opgehaald via het model |
+| `data-aue-label` | Bepaalt een douanelabel voor een selecteerbaar punt dat in de redacteur <br> wordt getoond Voor het geval `data-aue-model` wordt geplaatst, wordt het etiket teruggewonnen als model |
 | `data-aue-model` | Definieert een model dat wordt gebruikt voor bewerkingen op basis van formulieren in de rail Eigenschappen |
-| `data-aue-behavior` | Definieert de [gedrag van een instrumentatie](#behaviors)In een zelfstandige tekst of afbeelding kan een component bijvoorbeeld ook worden nagebootst om deze te verplaatsen of te verwijderen |
+| `data-aue-behavior` | Bepaalt het [ gedrag van een instrumentatie ](#behaviors), bijvoorbeeld, kan de stand-alone tekst of het beeld een component ook simuleren om het te bewegen of te schrappen |
 
 ## Itemtypen {#item-types}
 
@@ -42,15 +42,15 @@ Een toepassing kan alleen worden bewerkt met de Universal Editor als deze correc
 |---|---|---|---|---|---|---|---|
 | `text` | Tekst kan worden bewerkt binnen de HTML-tags, maar alleen in de eenvoudige tekstopmaak, zonder tekstopmaak, wordt deze doorgaans gebruikt voor titelcomponenten, bijvoorbeeld | Optioneel | Vereist | nvt | Optioneel | nvt | Optioneel |
 | `richtext` | Tekst kan worden bewerkt met volledige tekstopties. RTE wordt weergegeven in het rechterdeelvenster | Optioneel | Vereist | nvt | Optioneel | nvt | Optioneel |
-| `media` | Het bewerkbare element is bijvoorbeeld een afbeelding of video | Optioneel | Vereist | Optioneel<br>lijst met afbeeldings- of videofiltercriteria die worden doorgegeven aan de elementenkiezer | Optioneel | nvt | Optioneel |
-| `container` | Het bewerkbare gedrag gedraagt zich als container voor componenten o.a. het Systeem van de Paragraaf. | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>een lijst met toegestane componenten | Optioneel | nvt | nvt |
+| `media` | Het bewerkbare element is bijvoorbeeld een afbeelding of video | Optioneel | Vereist | Facultatieve <br> lijst van beeld of videofiltercriteria die tot de activaselecteur wordt overgegaan | Optioneel | nvt | Optioneel |
+| `container` | Het bewerkbare gedrag gedraagt zich als container voor componenten o.a. het Systeem van de Paragraaf. | Afhankelijkheden <br> zie hieronder | Afhankelijkheden <br> zie hieronder | Facultatieve <br> een lijst van toegestane componenten | Optioneel | nvt | nvt |
 | `component` | Het bewerkbare item is een component. Er wordt geen extra functionaliteit aan toegevoegd. Het is verplicht beweegbare/verhandelbare delen van het DOM aan te geven en de spoorstaaf en de velden ervan te openen. | Vereist | nvt | nvt | Optioneel | Optioneel | nvt |
-| `reference` | Bewerkbaar is een verwijzing, bijvoorbeeld Inhoudsfragment, Ervaring Fragment of Product | Afhankelijkheden <br>zie hieronder | Afhankelijkheden <br>zie hieronder | Optioneel<br>lijst met filtercriteria voor Content Fragment, Product of Experience Fragment die worden doorgegeven aan de referentiekiezer | Optioneel | Optioneel | nvt |
+| `reference` | Bewerkbaar is een verwijzing, bijvoorbeeld Inhoudsfragment, Ervaring Fragment of Product | Afhankelijkheden <br> zie hieronder | Afhankelijkheden <br> zie hieronder | Facultatieve <br> lijst van het de filtercriteria van het Fragment van de Inhoud, van het Product, of van het Fragment van de Ervaring die tot de verwijzingsselecteur wordt overgegaan | Optioneel | Optioneel | nvt |
 
-Afhankelijk van het gebruiksgeval `data-aue-prop` of `data-aue-resource` al dan niet verplicht zijn. Bijvoorbeeld:
+Afhankelijk van het gebruiksgeval `data-aue-prop` of `data-aue-resource` kan vereist zijn of niet. Bijvoorbeeld:
 
-* `data-aue-resource` is vereist als u Content Fragments via GraphQL opvraagt en u de lijst in context bewerkbaar wilt maken.
-* `data-aue-prop` is vereist voor het geval u een component hebt die de inhoud van een Content Fragment waarnaar wordt verwezen, rendert en u de verwijzing in de component wilt bijwerken.
+* `data-aue-resource` is vereist als u een query uitvoert op Inhoudsfragmenten via GraphQL en u de lijst in de context bewerkbaar wilt maken.
+* `data-aue-prop` is vereist als u een component hebt die de inhoud van een Content Fragment waarnaar wordt verwezen, rendert en u de verwijzing in de component wilt bijwerken.
 
 ## Gedrag {#behaviors}
 

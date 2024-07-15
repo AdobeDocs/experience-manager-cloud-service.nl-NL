@@ -14,36 +14,36 @@ ht-degree: 3%
 
 # Padselectie {#path-selection}
 
-Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina definieert of een afbeelding selecteert. Om een pad gemakkelijk te selecteren, [padvelden](#path-fields) aanbieden en de [padbrowser](#path-browser) maakt een robuustere selectie mogelijk.
+Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina definieert of een afbeelding selecteert. Om een weg gemakkelijk te selecteren, [ weggebieden ](#path-fields) aanbieden auto-volledig en [ wegbrowser ](#path-browser) staat voor robuustere selectie toe.
 
 ## Padvelden {#path-fields}
 
-Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Zie voor meer informatie over het gebruik en bewerken van componenten [Componenten voor pagina-ontwerp.](/help/sites-cloud/authoring/page-editor/components.md)
+Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Voor meer informatie over het gebruiken van en het uitgeven van componenten zie [ Componenten voor het Authoring van de Pagina.](/help/sites-cloud/authoring/page-editor/components.md)
 
 De gebieden van de weg hebben auto-volledige en vooruitblik functionaliteit om het vinden van een middel gemakkelijker te maken.
 
-Klik op de knop **Dialoogvenster Selectie openen** in het veld Pad wordt de knop [padbrowser](#path-browser) voor gedetailleerdere selectieopties.
+Het klikken van de **Open Dialoog van de Selectie** knoop op het weggebied opent [ wegbrowser ](#path-browser) dialoog om voor meer gedetailleerde selectieopties toe te staan.
 
-![Dialoogvenster Selectie openen](assets/path-selection-open-selection-dialog.png)
+![ Open de knoop van de Dialoog van de Selectie ](assets/path-selection-open-selection-dialog.png)
 
 U kunt ook beginnen te typen in het veld Pad en AEM biedt overeenkomende paden terwijl u typt.
 
-![Dialoogvenster Selectie openen](assets/path-selection-open-selection-dialog.png)
+![ Open de knoop van de Dialoog van de Selectie ](assets/path-selection-open-selection-dialog.png)
 
 ## Padbrowser {#path-browser}
 
-De padbrowser is geordend als de [kolomweergave](/help/sites-cloud/authoring/basic-handling.md#column-view) van de [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) de mogelijkheid van een gedetailleerdere selectie van de middelen.
+De wegbrowser wordt georganiseerd als de [ kolommening ](/help/sites-cloud/authoring/basic-handling.md#column-view) van de [**console van Plaatsen**, ](/help/sites-cloud/authoring/sites-console/introduction.md) die voor meer gedetailleerde selectie van middelen toestaat.
 
-![Padbrowser](/help/sites-cloud/authoring/assets/path-browser.png)
+![ Browser van de Weg ](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Wanneer een bron is geselecteerd, wordt de **Selecteren** in de rechterbovenhoek van het dialoogvenster wordt geactiveerd.
-   * Selecteer deze optie om de selectie te bevestigen of **Annuleren** om af te breken.
-* Als de context de selectie van meerdere bronnen toestaat, wordt door het selecteren van een bron ook het **Selecteren** , maar voegt ook een telling van het aantal geselecteerde middelen aan het hoger-recht van het venster toe.
+* Zodra een middel wordt geselecteerd, wordt de **Uitgezochte** knoop bij het hoger-recht van de dialoogdoos actief.
+   * Selecteer om de selectie te bevestigen of **annuleert** om te aborteren.
+* Als de context voor de selectie van veelvoudige middelen toestaat, activeert het selecteren van een middel ook de **Uitgezochte** knoop, maar voegt ook een telling van het aantal geselecteerde middelen aan het hoger-recht van het venster toe.
    * Klik op de **X** naast het getal om de selectie op te heffen.
 * Wanneer u door de boom navigeert, wordt uw plaats weerspiegeld in de broodkruimels bij de bovenkant van de dialoog.
    * Deze broodkruimels kunnen ook worden gebruikt om snel binnen de middelhiërarchie te springen.
 * U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken.
-   * Klik op de knop **X** in het zoekveld om de zoekopdracht te wissen.
+   * Klik **X** op het onderzoeksgebied om het onderzoek te ontruimen.
 * Als u uw zoekopdracht wilt beperken, kunt u de filteropties zichtbaar maken en de resultaten filteren op basis van een bepaald pad.
 
-![Filters, optie](assets/path-selection-filters.png)
+![ de optie van Filters ](assets/path-selection-filters.png)

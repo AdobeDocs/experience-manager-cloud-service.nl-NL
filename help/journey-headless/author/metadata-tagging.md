@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [AEM Schrijverreis zonder kopinhoud](overview.md) de [Inleiding](introduction.md) heeft betrekking op de basisbegrippen en de terminologie die relevant zijn voor het ontwerpen van koploze producten.
+Aan het begin van de [ Reis van de Auteur van de Inhoud zonder hoofd ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
 In de vorige stap werd u geïntroduceerd in het gebruik van verwijzingen voor CMS-ontwerpen zonder koptekst. U hebt geleerd welke soorten verwijzingen beschikbaar zijn en wat hun doeleinden zijn: Content References, Asset/Media References en Fragmentverwijzingen.
 
@@ -25,13 +25,13 @@ Dit artikel bouwt hierop verder zodat u begrijpt hoe u meta-gegevens en het etik
 ## Doelstelling {#objective}
 
 * **Publiek**: Geavanceerd
-* **Doelstelling**: Introduceer het gebruik van metagegevens en codering voor CMS-ontwerpen zonder hoofd.
+* **Doelstelling**: Introduceer het gebruik van meta-gegevens en het etiketteren voor Koploze Authoring CMS.
 
 ## Metagegevens en tags toevoegen {#adding-metadata-and-tags}
 
 U kunt metagegevens en tags toevoegen vanuit het rechterdeelvenster van de Content Fragment Editor:
 
-![Content Fragment Editor - Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![ de Redacteur van het Fragment van de Inhoud - de Rondjes van Alaska ](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Volgende functies {#whats-next}
 
@@ -43,4 +43,4 @@ Nu kunt u al deze kennis aan gebruik zetten en beginnen creërend de Fragments v
 
 * [Tags gebruiken](/help/sites-cloud/authoring/sites-console/tags.md)
 
-* [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+* [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw Assets-map](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

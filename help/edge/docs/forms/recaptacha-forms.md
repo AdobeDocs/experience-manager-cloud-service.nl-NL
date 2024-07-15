@@ -1,5 +1,5 @@
 ---
-title: reCAPTCHA gebruiken met Edge Delivery Services voor as a Cloud Service AEM Forms
+title: reCAPTCHA gebruiken met Edge Delivery Services voor AEM Forms as a Cloud Service
 description: Google reCAPTCHA gebruiken in een EDS-formulier
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
@@ -12,16 +12,16 @@ ht-degree: 0%
 ---
 
 
-# reCAPTCHA gebruiken met Edge Delivery Services voor as a Cloud Service AEM Forms
+# reCAPTCHA gebruiken met Edge Delivery Services voor AEM Forms as a Cloud Service
 
 reCAPTCHA is een populair hulpmiddel dat wordt gebruikt om websites te beschermen tegen frauduleuze activiteiten, spam en misbruik. In Edge Delivery Services biedt het Adaptive Forms Block de mogelijkheid om Google reCAPTCHA toe te voegen om onderscheid te maken tussen mensen en bots. Met deze functie kunnen gebruikers hun website beschermen tegen spam en misbruik.
 Neem bijvoorbeeld een enquêteformulier waarin gegevens worden verzameld zoals begin- en eindreisdatums, kamerbudget, geschatte reiskosten en reizigersinformatie. In dergelijke gevallen bestaat het risico dat kwaadwillende gebruikers het formulier exploiteren voor doeleinden als het verzenden van phishinge-mails of het overlopen van het formulier met irrelevante of schadelijke inhoud met behulp van spambots. De integratie van reCAPTCHA biedt extra veiligheid door te verifiëren dat de bijdragen van echte gebruikers zijn, effectief minimaliserend spamingingingangen.
 
-Edge Delivery Services ondersteunen alleen de **Score based(v3)-reCAPTCHA** voor het Adaptief formulierblok.
+Edge Delivery Services steunen slechts de **Gebaseerde Score (v3)-reCAPTCHA** voor het Aanpassings Blok van de Vorm.
 
-![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
+![ Recaptcha V2 ](/help/forms/assets/recaptcha-v2-invisible.png)
 
-De **reCAPTCHA** -functie is opgenomen in het pre-releaseprogramma. Om toegang tot **reCAPTCHA** voor AEM Forms-Edge Delivery Services een e-mail sturen van uw werkadres naar mailto:aem-forms-ea@adobe.com.
+De **reCAPTCHA** eigenschap is onder het pre-versieprogramma. Om toegang tot **reCAPTCHA** eigenschap voor de Edge Delivery Services van AEM Forms te verzoeken, verzend een e-mail van uw het werkadres naar mailto:aem-forms-ea@adobe.com.
 
 <!--
 By the end of this article, you learn to:

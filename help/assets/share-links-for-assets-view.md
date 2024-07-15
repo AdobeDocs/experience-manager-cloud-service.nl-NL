@@ -1,6 +1,6 @@
 ---
 title: Hoe kan ik koppelingen naar elementen delen?
-description: Een koppeling genereren en elementen delen met anderen die geen toegang hebben tot de [!DNL Assets view] toepassing.
+description: Produceer een verbinding en deel activa met anderen die geen toegang tot de  [!DNL Assets view]  toepassing hebben.
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
 feature: Adobe Asset Link, Link Sharing
 role: Admin
@@ -13,42 +13,42 @@ ht-degree: 0%
 
 # Koppelingen naar elementen delen {#share-links-assets}
 
-[!DNL Assets view] kunt u een koppeling genereren en middelen delen met externe belanghebbenden die geen toegang hebben tot de [!DNL Assets view] toepassing. U kunt een vervaldatum voor de verbinding bepalen en dan het delen met anderen gebruikend uw aangewezen communicatie methode zoals e-mail of overseinendiensten. Ontvangers van de koppeling kunnen een voorbeeld van de elementen bekijken en deze downloaden.
+Met [!DNL Assets view] kunt u een koppeling genereren en elementen delen met externe belanghebbenden die geen toegang hebben tot de [!DNL Assets view] -toepassing. U kunt een vervaldatum voor de verbinding bepalen en dan het delen met anderen gebruikend uw aangewezen communicatie methode zoals e-mail of overseinendiensten. Ontvangers van de koppeling kunnen een voorbeeld van de elementen bekijken en deze downloaden.
 
 ## Koppelingen naar elementen genereren {#generate-link-for-assets}
 
 Een koppeling genereren voor een element of een map met elementen:
 
-1. Selecteer de elementen, mappen of beide die elementen bevatten en klik op **[!UICONTROL Share Link]**.
+1. Selecteer de elementen of mappen, of beide, die elementen bevatten en klik op **[!UICONTROL Share Link]** .
 
-1. Als u deze wilt aanpassen, klikt u op het pictogram Kalender om een vervaldatum voor de koppeling te definiëren met de opdracht **[!UICONTROL Expiration Date]** veld. U kunt ook rechtstreeks een datum opgeven in het dialoogvenster `yyyy-mm-dd` gebruiken. De vervaldatum voor een koppeling is standaard ingesteld op twee weken na de datum van delen.
+1. Als u deze wilt aanpassen, klikt u op het kalenderpictogram om met het veld **[!UICONTROL Expiration Date]** een vervaldatum voor de koppeling te definiëren. U kunt een datum ook rechtstreeks in de `yyyy-mm-dd` -indeling opgeven. De vervaldatum voor een koppeling is standaard ingesteld op twee weken na de datum van delen.
 
-1. Kopieer de koppeling vanuit de **[!UICONTROL Share Link]** veld.
+1. Kopieer de koppeling vanuit het veld **[!UICONTROL Share Link]** .
 
-   ![Optie voor uitsnijden en rechttrekken](assets/share-asset-link.png)
+   ![ Optie om uit te snijden en te rechttrekken ](assets/share-asset-link.png)
 
-1. Klikken **[!UICONTROL Close]** en deel de koppeling via e-mail of andere samenwerkingsprogramma&#39;s.
+1. Klik op **[!UICONTROL Close]** en deel de koppeling via e-mail of andere samenwerkingsprogramma&#39;s.
 
 ## Toegang tot gedeelde elementen {#access-shared-assets}
 
-Nadat de openbare koppeling voor elementen is gedeeld, kunnen de ontvangers op de koppeling klikken om de gedeelde elementen in een webbrowser voor te vertonen of te downloaden zonder dat ze zich hoeven aan te melden bij [!DNL Assets view].
+Nadat de openbare koppeling voor elementen is gedeeld, kunnen de ontvangers op de koppeling klikken om een voorvertoning van de gedeelde elementen weer te geven of deze te downloaden in een webbrowser zonder dat ze zich hoeven aan te melden bij [!DNL Assets view] .
 
 Klik op de koppeling, klik op de map om naar het element te navigeren en klik vervolgens op het element om er een voorvertoning van weer te geven. U kunt de gedeelde elementen weergeven in een Lijstweergave of Kaartweergave.
 
 U kunt de muisaanwijzer boven het gedeelde element of de map met gedeelde elementen plaatsen om het element te selecteren of te downloaden.
 
-U kunt ook meerdere elementen selecteren en op **[!UICONTROL Download]**. [!DNL Assets view] Hiermee downloadt u de geselecteerde elementen als een ZIP-bestand. [!DNL Assets view] maakt voor elk element dat u wilt downloaden een submap in het ZIP-bestand van het bovenliggende bestand met dezelfde naam als het element.
+U kunt ook meerdere elementen selecteren en op **[!UICONTROL Download]** klikken. [!DNL Assets view] downloadt de geselecteerde elementen als een ZIP-bestand. [!DNL Assets view] maakt een submap in het ZIP-bestand van het bovenliggende bestand met dezelfde naam als het element voor elk element dat u selecteert om te downloaden.
 
-Als u alle elementen tegelijk wilt downloaden, schakelt u over naar de **[!UICONTROL List view]**, klikt u op **[!UICONTROL Select all]** en klik vervolgens op **[!UICONTROL Download]**.
+Als u alle elementen tegelijk wilt downloaden, schakelt u over naar de **[!UICONTROL List view]** -component, klikt u op **[!UICONTROL Select all]** en vervolgens op **[!UICONTROL Download]** .
 
-![Gedeelde elementen voorvertonen](assets/preview-shared-assets.png)
+![ Voorproef gedeelde activa ](assets/preview-shared-assets.png)
 
 ## Volgende stappen {#next-steps}
 
-* [Een video bekijken om koppelingen voor elementen te delen in de middelenweergave](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
+* [ bekijk een video om verbindingen voor activa in de mening van Assets te delen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
 
-* Feedback geven op het product met de [!UICONTROL Feedback] optie beschikbaar in de gebruikersinterface van de weergave Elementen
+* Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[

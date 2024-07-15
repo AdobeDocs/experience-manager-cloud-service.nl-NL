@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.08.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.08.0
+title: Opmerkingen bij de release AEM as a Cloud Service 2023.08.0 voor migratiehulpprogramma's
+description: Opmerkingen bij de release AEM as a Cloud Service 2023.08.0 voor migratiehulpprogramma's
 feature: Release Information
 exl-id: 1c822ece-620a-4866-be5a-065cb6a90204
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.08.0 {#release-notes}
+# Opmerkingen bij de release AEM as a Cloud Service 2023.08.0 voor migratiehulpprogramma&#39;s {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2023.08.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2023.08.0.
 
 ## Analysator van best practices {#bpa-release}
 

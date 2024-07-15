@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2021.11.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2021.11.0
+title: Opmerkingen bij de release AEM as a Cloud Service 2021.11.0 voor migratiehulpprogramma's
+description: Opmerkingen bij de release AEM as a Cloud Service 2021.11.0 voor migratiehulpprogramma's
 feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
 role: Admin
@@ -11,12 +11,12 @@ ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2021.11.0 {#release-notes}
+# Opmerkingen bij de release AEM as a Cloud Service 2021.11.0 voor migratiehulpprogramma&#39;s {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2021.11.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Als u de huidige opmerkingen bij de release voor Adobe Experience Manager as a Cloud Service wilt weergeven, klikt u op [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>Om de huidige Nota&#39;s van de Versie voor Adobe Experience Manager as a Cloud Service te zien, klik [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Inhoud overbrengen {#ctt-release}
 
@@ -26,6 +26,6 @@ De datum van de Versie voor het Hulpmiddel van de Overdracht van de Inhoud v1.7.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Ondersteuning voor een optionele [voorkopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) stap toegevoegd aan gebruik met het hulpmiddel van de Overdracht van de Inhoud wanneer de bron AEM instantie wordt gevormd om de Opslag van de Gegevens van het Dossier te gebruiken om de extractiefase beduidend te versnellen.
+* Steun voor een facultatieve [ pre-exemplaar ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) stap die aan gebruik met het Hulpmiddel van de Overdracht van de Inhoud wordt toegevoegd wanneer de bron AEM instantie wordt gevormd om de Opslag van de Gegevens van het Dossier te gebruiken om de extractiefase beduidend te versnellen.
 
 * Aanvullende beschrijvende berichten die worden toegevoegd aan de invoerfase in de gebruikersinterface van het gereedschap Inhoudsoverdracht om aan te geven wanneer de stappen voor indexering en herstel van het mongo in uitvoering zijn.

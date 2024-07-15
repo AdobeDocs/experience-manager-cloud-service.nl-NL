@@ -1,6 +1,6 @@
 ---
-title: Eerste aanmelding bij schermen as a Cloud Service
-description: Op deze pagina worden de eerste stappen beschreven waarmee u aan de slag gaat met as a Cloud Service schermen.
+title: Eerste aanmelding bij Screens as a Cloud Service
+description: Deze pagina bevat een beschrijving van de eerste stappen om aan de slag te gaan met Screens as a Cloud Service.
 exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
 feature: Screens Deployments
 role: Admin, Developer, User
@@ -11,20 +11,20 @@ ht-degree: 0%
 
 ---
 
-# Eerste aanmelding bij schermen as a Cloud Service {#first-time-login-screens-cloud}
+# Eerste aanmelding bij Screens as a Cloud Service {#first-time-login-screens-cloud}
 
 
 ## Het instapproces {#onboarding-process}
 
-Na ondertekening van het contract start de Adobe Managed Services (AMS) de klant op instapniveau. Tijdens de inrichtingsfase, wanneer AMS het AMS-exemplaar na het contract levert, wordt het AMS-Screens-Cloud Feature Pack geïnstalleerd. Met het Feature Pack kan de Screens Services Provider verbinding maken met de AMS-instantie of de Screens Content Provider.
+Na ondertekening van het contract start de Adobe Managed Services (AMS) de klant op instapniveau. Tijdens de inrichtingsfase, wanneer AMS het AMS-exemplaar na het contract levert, wordt het AMS-Screens-Cloud Feature Pack geïnstalleerd. Met het Feature Pack kan Screens Services Provider verbinding maken met de AMS-instantie of de Screens Content Provider.
 
 ## Gebruikers toevoegen aan Adobe Admin Console {#admin-console}
 
-Zodra u met een identiteitskaart van de Organisatie van het Systeem van de Adobe van Identity Management van het Systeem (IMS) is voorzien, kunt u tot nu toegang hebben [Adobe Admin Console](https://adminconsole.adobe.com/). Zie [Adobe Admin Console-gebruikers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) voor meer informatie over het toevoegen van gebruikers aan de Admin Console.
+Zodra u met een identiteitskaart van de Organisatie van het Systeem van Identity Management van de Adobe (IMS) bent voorzien, kunt u tot [ Adobe Admin Console ](https://adminconsole.adobe.com/) nu toegang hebben. Zie [ gebruikers van Adobe Admin Console ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) om meer over het toevoegen van gebruikers aan de Admin Console te leren.
 
 >[!NOTE]
 >Gebruikers hebben toegang tot het AEM Cloud Service-productprofiel, zodat ze zich kunnen aanmelden om te AEM met Adobe ID of Federated ID.
 
 ## Volgende functies {#whats-next}
 
-Nu u van een IMS-organisatie-id bent voorzien en als gebruiker aan de Adobe Admin Console bent toegevoegd, kunt u nu rasters toevoegen als [toevoeging aan een nieuw programma](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) of aan [een bestaand programma](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) in Cloud Manager.
+Nu u met een identiteitskaart van de Organisatie IMS en toegevoegd als gebruiker aan Adobe Admin Console bent voorzien, kunt u nu Screens als [ toe:voegen-op aan een nieuw programma ](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) of aan [ een bestaand programma ](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) in Cloud Manager toevoegen.

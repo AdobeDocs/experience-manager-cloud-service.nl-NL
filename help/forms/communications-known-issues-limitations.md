@@ -19,11 +19,11 @@ Voordat u de communicatie-API&#39;s gaat gebruiken, moet u de volgende overwegin
 
 ### Formuliergegevens {#form-data}
 
-Communicatie-API&#39;s accepteren zowel een formulierontwerp dat gewoonlijk in Designer wordt gemaakt als XML-formuliergegevens. Als u een document wilt vullen met gegevens, moet de XML-formuliergegevens een XML-element bevatten voor elk formulierveld dat u wilt vullen. De naam van het XML-element moet overeenkomen met de veldnaam. Een XML-element wordt genegeerd als het niet overeenkomt met een formulierveld of als de naam van het XML-element niet overeenkomt met de veldnaam. Het is niet nodig de volgorde aan te passen waarin de XML-elementen worden weergegeven. De belangrijkste factor is dat de XML-elementen met de overeenkomende waarden worden opgegeven.
+Communicatie-API&#39;s accepteren zowel een formulierontwerp dat gewoonlijk in Designer en XML-formuliergegevens wordt gemaakt als invoer. Als u een document wilt vullen met gegevens, moet de XML-formuliergegevens een XML-element bevatten voor elk formulierveld dat u wilt vullen. De naam van het XML-element moet overeenkomen met de veldnaam. Een XML-element wordt genegeerd als het niet overeenkomt met een formulierveld of als de naam van het XML-element niet overeenkomt met de veldnaam. Het is niet nodig de volgorde aan te passen waarin de XML-elementen worden weergegeven. De belangrijkste factor is dat de XML-elementen met de overeenkomende waarden worden opgegeven.
 
 Bekijk het volgende voorbeeld van een aanvraagformulier voor een lening:
 
-![Toepassingsformulier laden](assets/loanFormData.png)
+![ de toepassingsVorm van de Lening ](assets/loanFormData.png)
 
 Als u gegevens wilt samenvoegen in dit formulierontwerp, maakt u een XML-gegevensbron die overeenkomt met het formulier. De volgende XML vertegenwoordigt een XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassingsformulier.
 
@@ -62,7 +62,7 @@ Als u gegevens wilt samenvoegen in dit formulierontwerp, maakt u een XML-gegeven
 
 Voor volledige toegang tot de renderingmogelijkheden van de communicatie-API&#39;s wordt aanbevolen een XDP-bestand als invoer te gebruiken. Soms kan een PDF-bestand worden gebruikt. Het gebruik van een PDF-bestand als invoer heeft echter de volgende beperkingen:
 
-Een PDF-document dat geen XFA-stream bevat, kan niet worden gerenderd als PostScript, PCL of ZPL. Communicatie-API&#39;s kunnen PDF-documenten met XFA-streams (dat wil zeggen formulieren die zijn gemaakt in Designer) weergeven in laser- en labelindelingen. Als het PDF-document is ondertekend, gecertificeerd of gebruiksrechten bevat (toegepast met de AEM Forms Reader Extensions-service), kan het niet worden gerenderd naar deze afdrukindelingen.
+Een PDF-document dat geen XFA-stream bevat, kan niet worden gerenderd als PostScript, PCL of ZPL. Communicatie-API&#39;s kunnen PDF-documenten met XFA-streams (dat wil zeggen, formulieren die zijn gemaakt in Designer) weergeven in laser- en labelindelingen. Als het PDF-document is ondertekend, gecertificeerd of gebruiksrechten bevat (toegepast met de AEM Forms Reader Extensions-service), kan het niet worden gerenderd naar deze afdrukindelingen.
 
 
 ### Afdrukbare gebieden {#printable-areas}
@@ -73,16 +73,16 @@ Zorg altijd dat u het juiste XDC-bestand voor de printer gebruikt. Vermijd bijvo
 
 ### Scripts voor alleen XFA-formulieren (XDP/PDF) {#scripts}
 
-Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Zie voor informatie over het maken van scripts voor formulierontwerpen [Help bij Designer](use-forms-designer.md).
+Een formulierontwerp dat wordt gebruikt met de communicatie-API&#39;s kan scripts bevatten die op de server worden uitgevoerd. Zorg ervoor dat een formulierontwerp geen scripts bevat die op de client worden uitgevoerd. Voor informatie over het creëren van manuscripten van het vormontwerp, zie [ Hulp van Designer ](use-forms-designer.md).
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
 
 ### Lettertypetoewijzing {#font-mapping}
 
-Als u een formulier wilt ontwerpen waarin printerresidente lettertypen worden gebruikt, kiest u een lettertypenaam in Designer die overeenkomt met de lettertypen die beschikbaar zijn op de printer. Een lijst met lettertypen die worden ondersteund voor PCL of PostScript vindt u in de bijbehorende apparaatprofielen (XDC-bestanden). U kunt ook lettertypetoewijzing maken om niet-printerresidente lettertypen toe te wijzen aan printerresidente lettertypen met een andere lettertypenaam. In een PostScript-scenario kunnen verwijzingen naar het lettertype Arial® bijvoorbeeld worden toegewezen aan het printerresidente Helvetica®-lettertype.
+Als u een formulier wilt ontwerpen waarin printerresidente lettertypen worden gebruikt, kiest u een lettertypenaam in Designer die overeenkomt met de lettertypen die op de printer beschikbaar zijn. Een lijst met lettertypen die worden ondersteund voor PCL of PostScript, vindt u in de bijbehorende apparaatprofielen (XDC-bestanden). U kunt ook lettertypetoewijzing maken om niet-printerresidente lettertypen toe te wijzen aan printerresidente lettertypen met een andere lettertypenaam. In een PostScript-scenario kunnen verwijzingen naar het lettertype Arial® bijvoorbeeld worden toegewezen aan het printerresidente Helvetica®-lettertype.
 
-Als een lettertype op een clientcomputer is geïnstalleerd, is het beschikbaar in de vervolgkeuzelijst in Designer. Als het lettertype niet is geïnstalleerd, moet u de lettertypenaam handmatig opgeven. De optie Niet-beschikbare lettertypen permanent vervangen in Designer kan zijn uitgeschakeld. Anders wordt de naam van het vervangende font geschreven naar het XDP-bestand wanneer het XDP-bestand wordt opgeslagen in Designer. Dit betekent dat het printerresidente lettertype niet wordt gebruikt.
+Als een lettertype op een clientcomputer is geïnstalleerd, is het beschikbaar in de vervolgkeuzelijst in Designer. Als het lettertype niet is geïnstalleerd, moet u de lettertypenaam handmatig opgeven. De optie Niet-beschikbare lettertypen permanent vervangen in Designer kan zijn uitgeschakeld. Als het XDP-bestand in Designer wordt opgeslagen, wordt de naam van het vervangende font naar het XDP-bestand geschreven. Dit betekent dat het printerresidente lettertype niet wordt gebruikt.
 
 Er zijn twee typen OpenType®-lettertypen. Eén type is een TrueType OpenType®-font dat door PCL wordt ondersteund. Het andere is CFF OpenType®. PDF- en PostScript-uitvoer ondersteunen ingesloten Type-1-, TrueType- en OpenType®-lettertypen. PCL-uitvoer ondersteunt ingesloten TrueType-fonts.
 
@@ -177,19 +177,19 @@ In de volgende tabel worden XCI-opties opgegeven.
 
 ## Veelgestelde vragen {#faq}
 
-**Kan ik een gecontroleerde map of andere opslagmechanismen gebruiken om invoer en uitvoer op te slaan?**
+**kan ik een gecontroleerde omslag of andere opslagmechanismen gebruiken om input en output op te slaan?**
 
-Op dit moment kunt u Microsoft Azure Storage gebruiken om invoergegevens en gegenereerde documenten op te slaan. Microsoft Azure-opslag biedt verschillende opties voor [geautomatiseerde gegevensverplaatsingsbewerkingen](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
+Op dit moment kunt u Microsoft Azure Storage gebruiken om invoergegevens en gegenereerde documenten op te slaan. De opslag van Microsoft Azure verstrekt diverse opties om [ verrichtingen van de gegevensbeweging ](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) te automatiseren.
 
-**Is een Microsoft Azure Storage-account inbegrepen bij een Experience Manager Forms Cloud Service-licentie?**
+**is een Microsoft Azure rekening van de Opslag inbegrepen met de vergunning van de Cloud Service van Experience Manager Forms?**
 
 Microsoft Azure Storage account is onafhankelijk van Experience Manager Forms Cloud Service license.
 
-**Slaat de Communicatie APIs gegevens op de servers van de Cloud Service van Experience Manager Forms op?**
+**slaat Communicatie APIs gegevens op de servers van de Cloud Service van Experience Manager Forms op?**
 
 Invoer- en uitvoergegevens worden alleen opgeslagen op Microsoft Azure Storage.
 
-**Zijn communicatie-API&#39;s alleen beschikbaar voor Experience Manager Forms Cloud Service? Kan ik vergelijkbare functionaliteit krijgen in een on-premise omgeving?**
+**Zijn Communicatie APIs beschikbaar slechts voor de Cloud Service van Experience Manager Forms? Kan ik gelijkaardige functionaliteit op-gebouw milieu krijgen?**
 
 U kunt de dienst van de Output van AEM Forms gebruiken om een malplaatje (XFA of PDF) met klantengegevens te combineren om documenten in PDF, PS, PCL, en formaten te produceren ZPL.
 
@@ -208,8 +208,8 @@ Ja, u kunt meerdere batchbewerkingen tegelijk uitvoeren. Gebruik altijd verschil
 
 >[!MORELIKETHIS]
 >
->* [Inleiding tot as a Cloud Service communicatie met AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [AEM Forms as a Cloud Service architectuur voor adaptieve Forms- en communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-architecture.md)
->* [Communicatieverwerking - synchrone API&#39;s](/help/forms/aem-forms-cloud-service-communications.md)
->* [Communicatieverwerking - Batch-API&#39;s](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [ Inleiding aan de as a Cloud Service Mededelingen van AEM Forms ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [ as a Cloud Service Architectuur van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
+>* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

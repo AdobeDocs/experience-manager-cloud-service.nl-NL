@@ -35,8 +35,8 @@ Wanneer de URL van het adaptieve formulier geen lokalisatiegegevens bevat en de 
 Voer de volgende stappen uit om het probleem op te lossen:
 
 1. Open uw project van de Experience Manager.
-1. Open de `dispatcher/scr/conf.d/rewrites/rewrite.rules` voor bewerken.
-1. Open de `conf.d/httpd-dispatcher.conf` of een ander configuratiebestand dat is geconfigureerd om tijdens runtime te laden.
+1. Open de `dispatcher/scr/conf.d/rewrites/rewrite.rules` voor bewerking.
+1. Open het `conf.d/httpd-dispatcher.conf` -configuratiebestand of een ander configuratiebestand dat is geconfigureerd om tijdens de runtime te laden.
 1. Voeg de volgende code toe aan het bestand en sla deze op. Dit is een voorbeeldcode die u kunt aanpassen aan uw omgeving.
 
 ```shellscript
@@ -61,7 +61,7 @@ CDN-caching werkt niet meer na 300 seconden en alle aanvragen om CDN in cache te
 
 Stel de pagina-header in op 0 om het probleem op te lossen:
 
-1. Een bestand maken op `src\conf.d\available_vhosts`
+1. Een bestand maken bij `src\conf.d\available_vhosts`
 
 1. Het volgende toevoegen aan het bestand om de paginakoptekst in te stellen
 
@@ -73,4 +73,4 @@ Stel de pagina-header in op 0 om het probleem op te lossen:
    ```
 
 1. Sla het bestand op en sluit het.
-1. De zachte koppeling wijzigen voor `src\conf.d\enabled_vhosts\default.vhost` om naar een nieuw bestand te verwijzen.
+1. Wijzig de zachte verbinding voor `src\conf.d\enabled_vhosts\default.vhost` om aan nieuw dossier te richten.

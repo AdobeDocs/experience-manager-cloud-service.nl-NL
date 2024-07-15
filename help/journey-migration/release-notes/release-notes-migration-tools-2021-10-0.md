@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2021.10.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2021.11.0
+title: Opmerkingen bij de release AEM as a Cloud Service 2021.10.0 voor migratiehulpprogramma's
+description: Opmerkingen bij de release AEM as a Cloud Service 2021.11.0 voor migratiehulpprogramma's
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 role: Admin
@@ -11,30 +11,30 @@ ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2021.10.0 {#release-notes}
+# Opmerkingen bij de release AEM as a Cloud Service 2021.10.0 voor migratiehulpprogramma&#39;s {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2021.10.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2021.10.0.
 
 >[!NOTE]
->Als u de huidige opmerkingen bij de release voor Adobe Experience Manager as a Cloud Service wilt weergeven, klikt u op [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
+>Om de huidige Nota&#39;s van de Versie voor Adobe Experience Manager as a Cloud Service te zien, klik [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 ## Cloud Acceleration Manager {#cam-release}
 
 ### Releasedatum {#release-date-cam}
 
-De releasedatum voor Cloud Acceleration Manager is 25 oktober 2021.
+De Releasedatum voor Cloud Acceleration Manager is 25 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new-cam}
 
-Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om historische BPA-rapporten weer te geven in een Trendline-rapport. Met dit rapport kunnen gebruikers de voortgang die ze maken bekijken in een eenvoudige grafische weergave. Zie [Trendline weergeven gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam) voor meer informatie .
+Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om historische BPA-rapporten weer te geven in een Trendline-rapport. Met dit rapport kunnen gebruikers de voortgang die ze maken bekijken in een eenvoudige grafische weergave. Zie [ Gebruikend Mening Trendline ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam) voor meer details.
 
 ### Releasedatum {#release-date-october-cam}
 
-De releasedatum voor Cloud Acceleration Manager is 4 oktober 2021.
+De Releasedatum voor Cloud Acceleration Manager is 4 oktober 2021.
 
 ### Nieuwe functies {#what-is-new-cam-oct}
 
-Met Cloud Acceleration Manager kunnen gebruikers de BPA-rapporten nu bekijken in een afdrukbaar voorbeeld, zodat ze eenvoudig kunnen afdrukken of afdrukken naar PDF, zodat ze gemakkelijk kunnen worden gedeeld. Zie Stap 6 en 7 in [De kaart van de Analyse van Beste praktijken gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
+Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om de BPA-rapporten in een afdrukbare voorvertoning weer te geven, zodat eenvoudig kan worden afgedrukt of afgedrukt naar PDF, zodat u ze gemakkelijk kunt delen. Zie Stap 6 en 7 in [ Gebruikend de Kaart van de Analyse van Beste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
 
 
 ## Inhoud overbrengen {#ctt-release}
@@ -45,14 +45,14 @@ De releasedatum voor Content Transfer Tool v1.6.0 is 4 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new-ctt-oct}
 
-* Verbeterd gereedschap voor het toewijzen van gebruikers met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Zie voor meer informatie [Gebruikerstoewijzing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html).
+* Verbeterd gereedschap voor het toewijzen van gebruikers met een vereenvoudigde gebruikerservaring, inclusief de volgende functies die hieronder worden vermeld. Voor meer details, zie [ Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html).
    * Verbinding met de gebruikersbeheerAPI testen voordat de gebruikerstoewijzing wordt uitgevoerd
    * Fouten op een fraaie manier overslaan en doorgaan met de gebruikerstoewijzingsactiviteit
-   * Toewijzing van gebruiker mislukt niet meer als **Toegangstoken** verloopt na 24 uur. Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waar de gebruikerstoewijzing het laatst is gestopt.
+   * De Toewijzing van de gebruiker ontbreekt niet meer als **Symbolisch van de Toegang** na 24 uren verloopt. Toewijzing van gebruikers kan opnieuw worden uitgevoerd vanaf het punt waar de gebruikerstoewijzing het laatst is gestopt.
 
-* Om de robuustheid van het hulpmiddel van de Overdracht van de Inhoud te verhogen, kan de inhoud aan of instantie Auteur of Publish tegelijkertijd worden opgenomen. Zie [Aan de slag met het gereedschap Inhoud overbrengen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) voor meer informatie .
+* Om de robuustheid van het hulpmiddel van de Overdracht van de Inhoud te verhogen, kan de inhoud aan of instantie Auteur of instantie Publish tegelijkertijd worden opgenomen. Zie [ Begonnen het Worden met het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) voor meer details.
 
-* Wanneer versies worden opgenomen, wordt het pad `/var/audit` wordt automatisch opgenomen om auditgebeurtenissen te migreren.
+* Wanneer versies worden opgenomen, wordt het pad `/var/audit` automatisch opgenomen om auditgebeurtenissen te migreren.
 
 ## Analysator van best practices {#best-practices-analyzer}
 

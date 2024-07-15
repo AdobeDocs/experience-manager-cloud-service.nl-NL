@@ -17,23 +17,23 @@ Leer over de verschillende gebeurtenissen die de Universele Redacteur verzendt d
 
 ## Inleiding {#introduction}
 
-Toepassingen kunnen verschillende vereisten hebben voor pagina- of componentupdates. Daarom verzendt de Universele Redacteur bepaalde gebeurtenissen naar verre toepassingen. Als de externe toepassing geen aangepaste gebeurtenislistener voor de verzonden gebeurtenis heeft, [fallback-gebeurtenislistener](#fallback-listeners) door de `universal-editor-cors` pakket wordt uitgevoerd.
+Toepassingen kunnen verschillende vereisten hebben voor pagina- of componentupdates. Daarom verzendt de Universele Redacteur bepaalde gebeurtenissen naar verre toepassingen. In het geval dat de verre toepassing geen luisteraar van de douanegebeurtenis voor de verzonden gebeurtenis heeft, wordt de luisteraar van de a [ fallback gebeurtenis ](#fallback-listeners) verstrekt door het `universal-editor-cors` pakket uitgevoerd.
 
-Alle gebeurtenissen worden aangeroepen op het betrokken DOM-element van de externe pagina. Gebeurtenissen worden doorgegeven naar de `BODY` element waarbij de standaardgebeurtenislistener wordt opgegeven door de `universal-editor-cors` pakket is geregistreerd. Er zijn gebeurtenissen voor de inhoud en de gebeurtenissen voor UI.
+Alle gebeurtenissen worden aangeroepen op het betrokken DOM-element van de externe pagina. Gebeurtenissen beluisteren omhoog naar het element `BODY` waar de standaardgebeurtenislistener die door het `universal-editor-cors` -pakket wordt geboden, wordt geregistreerd. Er zijn gebeurtenissen voor de inhoud en de gebeurtenissen voor UI.
 
 Alle gebeurtenissen volgen een naamgevingsconventie.
 
 * `aue:<content-or-ui>-<event-name>`
 
-Bijvoorbeeld: `aue:content-update` en `aue:ui-select`
+`aue:content-update` en `aue:ui-select`
 
-De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor meer informatie over oproepen en voorbeelden van hun lading, gelieve te zien het document [Universal Editor-aanroepen.](/help/implementing/universal-editor/calls.md)
+De gebeurtenissen omvatten de lading van het verzoek en van de reactie en worden teweeggebracht zodra de overeenkomstige vraag succesvol is. Voor verdere details over vraag en voorbeelden van hun ladingen, te zien gelieve de de Universele Vraag van de Redacteur van het document [.](/help/implementing/universal-editor/calls.md)
 
 ## Gebeurtenissen voor bijwerken van inhoud {#content-events}
 
 ### aub:content-add {#content-add}
 
-De `aue:content-add` gebeurtenis wordt geactiveerd wanneer een nieuwe component aan een container wordt toegevoegd.
+De gebeurtenis `aue:content-add` wordt geactiveerd wanneer een nieuwe component aan een container wordt toegevoegd.
 
 De nuttige lading is inhoud van de Universele dienst van de Redacteur, met reserveinhoud van de componentendefinitie.
 
@@ -55,7 +55,7 @@ De nuttige lading is inhoud van de Universele dienst van de Redacteur, met reser
 
 ### aub:content-details {#content-details}
 
-De `aue:content-details` gebeurtenis wordt geactiveerd wanneer een component in de eigenschappenrails wordt geladen.
+De gebeurtenis `aue:content-details` wordt geactiveerd wanneer een component in de eigenschappenrails wordt geladen.
 
 De nuttige lading is de inhoud van de component en naar keuze zijn schema.
 
@@ -72,7 +72,7 @@ De nuttige lading is de inhoud van de component en naar keuze zijn schema.
 
 ### aub:content-move {#content-move}
 
-De `aue:content-move` wordt geactiveerd wanneer een component wordt verplaatst.
+De gebeurtenis `aue:content-move` wordt geactiveerd wanneer een component wordt verplaatst.
 
 De nuttige lading is de component, broncontainer, en doelcontainer.
 
@@ -91,7 +91,7 @@ De nuttige lading is de component, broncontainer, en doelcontainer.
 
 ### aue:content-patch {#content-patch}
 
-De `aue:content-patch` gebeurtenis wordt geactiveerd wanneer de gegevens van een component worden bijgewerkt in eigenschappen rail.
+De `aue:content-patch` -gebeurtenis wordt geactiveerd wanneer de gegevens van een component worden bijgewerkt in de eigenschappen rail.
 
 De payload is een JSON-patch van de bijgewerkte eigenschappen.
 
@@ -110,7 +110,7 @@ De payload is een JSON-patch van de bijgewerkte eigenschappen.
 
 ### aub:content-remove {#content-remove}
 
-De `aue:content-remove` gebeurtenis wordt geactiveerd wanneer een component uit een container wordt verwijderd.
+De gebeurtenis `aue:content-remove` wordt geactiveerd wanneer een component uit een container wordt verwijderd.
 
 De lading is item-id van de verwijderde component.
 
@@ -126,7 +126,7 @@ De lading is item-id van de verwijderde component.
 
 ### aub:content-update {#content-update}
 
-De `aue:content-update` gebeurtenis wordt geactiveerd wanneer de eigenschappen van een component in de context worden bijgewerkt.
+De gebeurtenis `aue:content-update` wordt geactiveerd wanneer de eigenschappen van een component in de context worden bijgewerkt.
 
 De payload is de bijgewerkte waarde.
 
@@ -182,13 +182,13 @@ Respons Payload
 
 ### aue:ui-publish {#ui-publish}
 
-De `aue:ui-publish` De gebeurtenis wordt geactiveerd wanneer inhoud wordt gepubliceerd (met oproeping op het `BODY` niveau).
+De gebeurtenis `aue:ui-publish` wordt geactiveerd wanneer inhoud wordt gepubliceerd (met aanroep op `BODY` niveau).
 
 De lading is een lijst van objecten IDs en hun publicatiestatus.
 
 ### aue:ui-select {#ui-select}
 
-De `aue:ui-select` wordt geactiveerd wanneer een component wordt geselecteerd.
+De gebeurtenis `aue:ui-select` wordt geactiveerd wanneer een component wordt geselecteerd.
 
 De nuttige lading is punt identiteitskaart, punteigenschappen, en punttype van de geselecteerde component.
 
@@ -205,7 +205,7 @@ De nuttige lading is punt identiteitskaart, punteigenschappen, en punttype van d
 
 ### aue:ui-preview {#ui-preview}
 
-De `aue:ui-preview` gebeurtenis wordt geactiveerd wanneer de bewerkingsmodus van de pagina wordt gewijzigd in **Voorvertoning**.
+De `aue:ui-preview` gebeurtenis wordt teweeggebracht wanneer de het uitgeven wijze van de pagina in **Voorproef** wordt veranderd.
 
 De payload is leeg voor deze gebeurtenis.
 
@@ -217,7 +217,7 @@ De payload is leeg voor deze gebeurtenis.
 
 ### aue:bewerken {#ui-edit}
 
-De `aue:ui-edit` gebeurtenis wordt geactiveerd wanneer de bewerkingsmodus van de pagina wordt gewijzigd in **Bewerken**.
+De `aue:ui-edit` gebeurtenis wordt teweeggebracht wanneer de het uitgeven wijze van de pagina wordt veranderd in **geeft** uit.
 
 De payload is leeg voor deze gebeurtenis.
 
@@ -229,7 +229,7 @@ De payload is leeg voor deze gebeurtenis.
 
 ### aue:gebruikersinterface-viewport-change {#ui-viewport-change}
 
-De `aue:ui-viewport-change` gebeurtenis wordt geactiveerd wanneer de grootte van de viewport wordt gewijzigd.
+De gebeurtenis `aue:ui-viewport-change` wordt geactiveerd wanneer de grootte van de viewport wordt gewijzigd.
 
 De nuttige lading is de afmetingen van viewport.
 
@@ -244,7 +244,7 @@ De nuttige lading is de afmetingen van viewport.
 
 ### aue:geïnitialiseerd {#initialized}
 
-De `aue:initialized` Deze gebeurtenis wordt geactiveerd om de externe pagina te laten weten dat deze is geladen in de Universal Editor.
+De gebeurtenis `aue:initialized` wordt geactiveerd om de externe pagina te laten weten dat deze is geladen in de Universal Editor.
 
 De payload is leeg voor deze gebeurtenis.
 
@@ -265,7 +265,7 @@ De payload is leeg voor deze gebeurtenis.
 | `aue:content-move` | De inhoud/structuur van de component naar het doelgebied verplaatsen |
 | `aue:content-patch` | Pagina opnieuw laden |
 | `aue:content-remove` | Het DOM-element verwijderen |
-| `aue:content-update` | Werk de `innerHTML` met de lading |
+| `aue:content-update` | De `innerHTML` bijwerken met de payload |
 
 ### UI-gebeurtenissen {#ui-event-fallbacks}
 
@@ -273,8 +273,8 @@ De payload is leeg voor deze gebeurtenis.
 |---|---|
 | `aue:ui-publish` | Niets doen |
 | `aue:ui-select` | Naar het geselecteerde element schuiven |
-| `aue:ui-preview` | Toevoegen `class="adobe-ue-preview"` naar tag HTML |
-| `aue:ui-edit` | Toevoegen `class=adobe-ue-edit"` naar tag HTML |
+| `aue:ui-preview` | `class="adobe-ue-preview"` toevoegen aan tag HTML |
+| `aue:ui-edit` | `class=adobe-ue-edit"` toevoegen aan tag HTML |
 | `aue:ui-viewport-change` | Niets doen |
 | `aue:initialized` | Niets doen |
 

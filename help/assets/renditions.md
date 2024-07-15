@@ -22,43 +22,43 @@ Uitvoeringen worden geclassificeerd als statisch en dynamisch, elk type dat unie
 ## Statische vertoningen {#static-renditions}
 
 Statische uitvoeringen zijn vooraf gegenereerde versies van digitale elementen, die gewoonlijk worden gemaakt tijdens het opnemen of wijzigen van elementen. Deze uitvoeringen zijn geoptimaliseerd voor specifieke doeleinden en platforms, zoals webminiaturen, mobiele indelingen voor responsief ontwerp of versies met hoge resolutie voor afdrukken, zodat u over een efficiënte en consistente ervaring beschikt.
-Meer informatie [weergeven en downloaden](#view-dynamic-renditions) statische vertoningen in [!DNL Experience Manager Assets].
+Leer [ om ](#view-dynamic-renditions) statische vertoningen in [!DNL Experience Manager Assets] te bekijken en te downloaden.
 
 ## Dynamische uitvoeringen {#dynamic-renditions}
 
 Dynamische uitvoeringen zijn aangepaste versies van elementen die in realtime zijn gemaakt om aan specifieke behoeften te voldoen, zoals het formaat van afbeeldingen wijzigen op basis van de apparaatresolutie of het bijsnijden om aan verschillende hoogte-breedteverhoudingen te voldoen.
-Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimaliseerde ervaringen aan diverse publieksbehoeften te leveren. U kunt dynamische uitvoeringen weergeven en downloaden in [!DNL Experience Manager Assets].
+Deze vertoningen stellen organisaties in staat om gepersonaliseerde en geoptimaliseerde ervaringen aan diverse publieksbehoeften te leveren. U kunt dynamische uitvoeringen weergeven en downloaden in [!DNL Experience Manager Assets] .
 
 ### Voordat u begint
 
 * U moet een licentie hebben AEM Dynamic Media-gebruiker.
 
-* Gebruiken [!UICONTROL Admin view] op te zetten:
-   * [Profielen van SmartCrop-afbeeldingen](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
+* Gebruik [!UICONTROL Admin view] om in te stellen:
+   * [ Slimme Profielen van het Beeld van het Gewas ](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [Voorinstellingen voor afbeeldingen](/help/assets/dynamic-media/managing-image-presets.md)
 
-  U kunt [schakelen tussen weergave](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later kunt u een voorvertoning weergeven van dynamische uitvoeringen in de weergave Elementen.
+  U kunt [ schakelaar de mening ](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later aan voorproef dynamische vertoningen in de mening van Assets.
 
 ### Dynamische uitvoeringen weergeven en downloaden {#view-renditions}
 
-Dynamische vertoningen van afbeeldingen weergeven of downloaden in [!DNL Experience Manager Assets]Voer de volgende stappen uit:
+Voer de volgende stappen uit om dynamische uitvoeringen van afbeeldingen in [!DNL Experience Manager Assets] weer te geven of te downloaden:
 
-1. Ga naar **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
+1. Ga naar **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]** .
 
 1. Navigeer naar de toepasselijke elementenmap.
 
-1. Klik op de afbeelding die u wilt weergeven en klik op **[!UICONTROL Details]**.
+1. Klik op de afbeelding die u wilt weergeven en klik op **[!UICONTROL Details]** .
 
-1. Klik in het rechtermenu op **[!UICONTROL Renditions]**. <br> De **[!UICONTROL Renditions]** wordt geopend met de beschikbare **[!UICONTROL Dynamic]** en **[!UICONTROL Smart Crop]** uitvoeringen.
+1. Klik in het rechtermenu op **[!UICONTROL Renditions]** . <br> Het deelvenster **[!UICONTROL Renditions]** wordt geopend met de beschikbare **[!UICONTROL Dynamic]** en **[!UICONTROL Smart Crop]** uitvoeringen.
 
-   ![dynamische uitvoeringen](assets/preset_smart_crop.png)
+   ![ dynamische vertoningen ](assets/preset_smart_crop.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. Klik op de vertoning die u wilt weergeven of downloaden.
 
-1. Klik op de knop ![downloadpictogram](assets/do-not-localize/download-icon.png) pictogram naast de dynamische vertoning die u moet downloaden. <br> U kunt ook de afbeeldingsuitvoering selecteren en op **[!UICONTROL Download Rendition]** onderaan.
+1. Klik het ![ pictogram van de downloaddownload ](assets/do-not-localize/download-icon.png) naast de dynamische vertoning u moet downloaden. <br> U kunt ook de afbeeldingsuitvoering selecteren en op de optie **[!UICONTROL Download Rendition]** onder in het dialoogvenster klikken.
 
-   U kunt op de knop ![downloadpictogram](assets/do-not-localize/download-icon.png) pictogram beschikbaar boven aan **[!UICONTROL Smart Crop]** de sectie van vertoningen om alle beschikbare Slimme vertoningen van het Gewas voor dat middel te downloaden.
+   U kunt het ![ pictogram van het downloadpictogram ](assets/do-not-localize/download-icon.png) klikken beschikbaar bij de bovenkant van **[!UICONTROL Smart Crop]** sectie van vertoningen om alle beschikbare Slimme vertoningen van het Gewas voor dat activa te downloaden.
 
 >[!NOTE]
 >

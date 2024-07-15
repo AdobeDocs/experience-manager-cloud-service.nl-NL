@@ -21,23 +21,23 @@ Adobe Experience Manager as a Cloud Service biedt waarneming en controle van: in
 
 AEM as a Cloud Service gebruikt honderden native monitoren in de cloud om de status van elke omgeving (24/7) gedurende 365 dagen per jaar voortdurend te rapporteren. De monitordefinities zijn niet statisch, zij worden voortdurend herzien om het vroege opsporingsvermogen te verbeteren. Ook heeft de Adobe procedures ingesteld om op waarschuwingen te reageren.
 
-Als u informatie nodig hebt over andere typen controle, zoals registratie of bewaking via Cloud Manager, raadpleegt u [Aanvullende bronnen](#resources).
+Als u informatie over andere soorten controle zoals het registreren of het controleren door Cloud Manager vereist, zie [ Extra Middelen ](#resources).
 
 ## Externe beschikbaarheid {#external-availability}
 
-De externe beschikbaarheid bestaat uit twee onderdelen: Service Edge en Custom Monitoring.
+De externe beschikbaarheid bestaat uit twee delen: Service Edge en Custom Monitoring.
 
 ### Service Edge {#service-edge}
 
-Al uw milieu&#39;s van AEM as a Cloud Service worden gecontroleerd op beschikbaarheid. De Service Edge Monitoring is echter alleen ingesteld voor productieomgevingen en de meetgegevens worden gebruikt om de SLA van de klant te berekenen. Hierbij wordt rekening gehouden met de milieu-runtime en de AEM as a Cloud Service CDN. De Controle van de Rand van de dienst gebruikt vijf verschillende plaatsen dicht bij uw gekozen gebied en controleert periodiek voor beschikbaarheid. De onbeschikbaarheid van een site activeert een waarschuwing en activeert on-call supportteams en -processen van de Adobe.
+Al uw omgevingen van AEM as a Cloud Service worden gecontroleerd op beschikbaarheid. De Service Edge Monitoring wordt echter alleen ingesteld voor productieomgevingen en de meetgegevens worden gebruikt om de SLA van de klant te berekenen. Hierbij wordt rekening gehouden met de milieu-runtime en de AEM as a Cloud Service CDN. De Controle van de dienst Edge stelt vijf verschillende plaatsen dicht bij uw gekozen gebied in dienst en controleert periodiek voor beschikbaarheid. De onbeschikbaarheid van een site activeert een waarschuwing en activeert on-call supportteams en -processen van de Adobe.
 
 ### Aangepaste controle {#custom-monitoring}
 
-Met Aangepaste controle kunnen klanten optioneel maximaal vijf verschillende URL&#39;s voor westeigenschappen leveren [live gaan](/help/journey-migration/go-live.md). Deze URL&#39;s moeten geldig zijn en een HTTP 200-antwoordcode retourneren. Deze monitoren ondersteunen klanten die [hun eigen CDN plaatsen](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) voor de Adobe CDN en om het even welk extern verkeer dat vóór AEM as a Cloud Service verplettert dat niet onder de controle van de Adobe is. Alarm die uit de controles van de Controle van de Controle van de Douane voortvloeit neemt de steunteams en processen van de Adobe in dienst.
+Met de controle van de Douane, kunnen de klanten naar keuze tot vijf verschillende Web bezit URLs verstrekken alvorens [ levend ](/help/journey-migration/go-live.md) gaan. Deze URL&#39;s moeten geldig zijn en een HTTP 200-antwoordcode retourneren. Deze monitors steunen klanten die [ hun eigen CDN ](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) vóór de Adobe CDN en om het even welk extern verkeer brengen dat binnen AEM as a Cloud Service wordt gebruikt die niet onder de controle van de Adobe is. Alarm die uit de controles van de Controle van de Controle van de Douane voortvloeit neemt de steunteams en processen van de Adobe in dienst.
 
 >[!NOTE]
 >
-> Deze functionaliteit wordt alleen aangeboden voor productieomgevingen en klanten met [Geavanceerde cloudondersteuning.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Neem contact op met het accountteam van de Adobe als u vragen hebt.
+> Deze functionaliteit wordt slechts aangeboden voor productiemilieu&#39;s en klanten met [ Geavanceerde Steun van de Wolk.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Als u vragen hebt, neemt u contact op met het accountteam van de Adobe.
 
 ## Interne modulemonitoring {#module-monitoring}
 
@@ -55,10 +55,10 @@ Extra controles worden toegevoegd aan omgevingen die zijn ingericht voor Forms. 
 
 ## Waarmerking van de klant {#customer-observability}
 
-Klanten kunnen de [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) -suite met prestatiegegevens in real-time die worden verzameld en in kaart gebracht voor analyse en probleemoplossing. Met behulp van de monitoringsuite kunnen klanten rechtstreeks verschillende meetgegevens observeren, zoals: JVM-prestatiemetriek, transactietijd voor Java™, externe achtergrondaanroepen en databaseaanroepen.
+De klanten kunnen de ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) reeks van de Controle van de Prestaties van de Toepassing van 0} New Relic gebruiken die prestatiegegevens in real time die en voor analyse en het oplossen van problemen worden verzameld en in kaart gebracht verstrekt. [ Met behulp van de monitoringsuite kunnen klanten rechtstreeks verschillende meetgegevens observeren, zoals: JVM-prestatiemetriek, transactietijd voor Java™, externe achtergrondaanroepen en databaseaanroepen.
 
 ## Aanvullende bronnen {#resources}
 
-* [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [Aanmelden voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
-* [Controleomgevingen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
+* [ de Controle van de Prestaties van de Toepassing van New Relic ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
+* [ het Registreren voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
+* [ de Milieu&#39;s van de Controle ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)

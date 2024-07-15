@@ -13,22 +13,22 @@ ht-degree: 0%
 
 # Overzicht {#overview-ct}
 
-De Content Transformer (CT) is een hulpmiddel dat door de Adobe is ontwikkeld en dat kan worden gebruikt om problemen met betrekking tot inhoud die door de [Best Practices Analyzer (BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) voordat u inhoud migreert van uw huidige AEM-implementatie (On-premise of Managed Services) naar AEM as a Cloud Service.
+De transformator van de Inhoud (CT) is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om inhoud op verwante kwesties automatisch te ontdekken en te bevestigen die door de [ Analysator van Beste praktijken (BPA) ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) worden gemeld alvorens inhoud van uw huidige AEM implementatie (On-premise of Managed Services) aan AEM as a Cloud Service te migreren.
 
-De Content Transformer kan helpen problemen op te lossen die onder de volgende [BPA-patrooncategorieën](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html) (weergegeven in de onderstaande tabel) door gebruikers in staat te stellen bulkhandelingen uit te voeren, zoals verplaatsen of verwijderen. Dit kan de tijd aanzienlijk verminderen en de complexiteit van een migratieproject verminderen.
+De transformator van de Inhoud kan helpen kwesties oplossen die onder de volgende [ BPA patrooncategorieën ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html) (aangetoond in lijst hieronder) door gebruikers toe te staan om bulkacties zoals beweging of schrapping te nemen vallen. Dit kan de tijd aanzienlijk verminderen en de complexiteit van een migratieproject verminderen.
 
 ## Patrooncategorieën die worden gedekt door Content Transformer en oplossingen die worden voorgesteld {#pattern-categories-and-benefits}
 
-| Patrooncode | Type suspensie / Subtype | Mogelijke oplossing voordat inhoud wordt gemigreerd naar AEM as a Cloud Service |
+| Patrooncode | Type suspensie / Subtype | Mogelijke oplossing voor het migreren van inhoud naar AEM as a Cloud Service |
 |--------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| ACV | missing.jcrcontent <br> missing.original.rendition <br> metadata.descendants.schending | Verplaats deze elementen naar een andere locatie of verwijder ze om ervoor te zorgen dat ze niet worden gemigreerd naar AEM as a Cloud Service. |
-| CAV | content.area.violation | Paden tijdelijk verplaatsen naar `/etc/packages/content-transformation/paths` om ervoor te zorgen dat zij niet naar AEM as a Cloud Service worden gemigreerd. |
+| ACV | missing.jcrcontent <br> missing.original.rendition <br> metadata.descendants.schending | Verplaats deze elementen naar een andere locatie of verwijder ze om ervoor te zorgen dat ze niet naar AEM as a Cloud Service worden gemigreerd. |
+| CAV | content.area.violation | Verplaats de paden tijdelijk naar `/etc/packages/content-transformation/paths` om ervoor te zorgen dat ze niet naar AEM as a Cloud Service worden gemigreerd. |
 | DOPI | deprecated.ordered.index | Verwijder de vervangen indexen. |
 | OAUI | non.migrated.oauth.users | Verwijder deze gebruikers om ervoor te zorgen dat ze niet naar AEM as a Cloud Service worden gemigreerd. |
-| PCX | page.complex.medium <br> pagina.complex.high | Verwijder de pagina&#39;s/onderliggende items of verplaats deze naar een andere locatie om te voorkomen dat ze worden gemigreerd naar AEM as a Cloud Service. |
+| PCX | page.complex.medium <br> page.complex.high | Verwijder de pagina&#39;s/onderliggende items of verplaats deze naar een andere locatie om ervoor te zorgen dat ze niet naar AEM as a Cloud Service worden gemigreerd. |
 | REP | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Verwijder de gecreeerde replicatieagenten. <br> OF <br> Verwijder de gewijzigde/toegevoegde eigenschappen. |
 | URS | clientlibs.location <br> file.location <br> node.location <br> workflow.location | Ga naar de juiste locatie om problemen tijdens de migratie te voorkomen. |
-| URS | node.size | De knooppunten tijdelijk verplaatsen naar`/etc/packages/content-transformation/paths` om ervoor te zorgen dat zij niet naar AEM as a Cloud Service worden gemigreerd. |
+| URS | node.size | Verplaats de knooppunten tijdelijk naar `/etc/packages/content-transformation/paths` om ervoor te zorgen dat ze niet naar AEM as a Cloud Service worden gemigreerd. |
 
 ## Voordelen die worden geboden door de Content Transformer {#benefits}
 

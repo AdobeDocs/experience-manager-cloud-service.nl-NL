@@ -20,7 +20,7 @@ Deze richtlijnen vatten de geadviseerde beste praktijken voor vestiging samen, v
 Zo kunt u sneller:
 
 * [Wat is Headless?](/help/headless/what-is-headless.md)
-* Een overzicht van de verschillende omgevingen in de AEM [Architectuur](/help/headless/deployment/architecture.md)
+* Een overzicht van de diverse milieu&#39;s in de AEM [ Architectuur ](/help/headless/deployment/architecture.md)
 
 ## Instellen {#setup}
 
@@ -40,7 +40,7 @@ De eindpunten moeten worden gevormd in:
 
 * Auteur
 * Voorvertoning
-* Publiceren
+* Publish
 
 Voor:
 
@@ -48,12 +48,12 @@ Voor:
 * Testen
 * Productie
 
-### AEM Dispatcher caching {#dispatcher-caching}
+### AEM Dispatcher in cache plaatsen {#dispatcher-caching}
 
 >[!NOTE]
->Als caching in de Dispatcher wordt toegelaten dan [CORS instellen](#cors-setup) is niet nodig en kan dus worden genegeerd.
+>Als het in het voorgeheugen onderbrengen in Dispatcher dan wordt toegelaten is de [ opstelling CORS ](#cors-setup) niet nodig, en kan zo worden genegeerd.
 
-Caching van persisted query&#39;s wordt niet standaard ingeschakeld in de Dispatcher. De standaard enablement is niet mogelijk aangezien de klanten die CORS (het Delen van het Middel van de Cross-Origin) met veelvoudige oorsprong gebruiken hun configuratie van de Verzender moeten herzien en misschien bijwerken.
+Het in cache plaatsen van doorlopende query&#39;s is niet standaard ingeschakeld in de Dispatcher. Standaardactivering is niet mogelijk omdat klanten die gebruikmaken van CORS (Cross-Origin Resource Sharing) met meerdere origines hun Dispatcher-configuratie moeten controleren en mogelijk bijwerken.
 
 #### Details {#details-dispatcher-caching}
 
@@ -61,16 +61,16 @@ Caching van persisted query&#39;s wordt niet standaard ingeschakeld in de Dispat
 
 #### Omgevingen {#environments-dispatcher-caching}
 
-De Dispatcher wordt gewoonlijk gevormd voor:
+De Dispatcher is gewoonlijk geconfigureerd voor:
 
 * Publish: productie
 
 ### CORS instellen {#cors-setup}
 
 >[!NOTE]
->Als het caching in [AEM Dispatcher](#dispatcher-caching) wordt toegelaten dan is de opstelling CORS niet nodig, en zodat kan deze sectie worden genegeerd.
+>Als caching in [ AEM Dispatcher ](#dispatcher-caching) wordt toegelaten dan is de opstelling CORS niet nodig, en zo kan deze sectie worden genegeerd.
 
-Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden gevormd en aan een AEM Project worden toegevoegd dat aan AEM via de Manager van de Wolk wordt opgesteld. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen.
+Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS worden gevormd en aan een AEM Project worden toegevoegd dat aan AEM via Cloud Manager wordt opgesteld. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen.
 
 #### Details {#details-cors-setup}
 
@@ -95,7 +95,7 @@ Een van de belangrijkste gebruiksscenario&#39;s voor de Adobe Experience Manager
 De authentificatie wordt gewoonlijk gevormd voor:
 
 * Voorvertoning
-* Publiceren
+* Publish
 
 Voor:
 
@@ -105,7 +105,7 @@ Voor:
 
 ### Machtigingen {#permissions}
 
-Met een implementatie zonder kop zijn er verschillende gebieden met beveiliging en machtigingen die moeten worden aangepakt. Machtigingen en personen kunnen globaal worden overwogen op basis van de AEM omgeving **Auteur** of **Publiceren**. Elke omgeving bevat verschillende personen en met verschillende behoeften.
+Met een implementatie zonder kop zijn er verschillende gebieden met beveiliging en machtigingen die moeten worden aangepakt. De toestemmingen en de personen kunnen globaal worden overwogen gebaseerd op het AEM milieu **Auteur** of **Publish**. Elke omgeving bevat verschillende personen en met verschillende behoeften.
 
 #### Details {#details-permissions}
 
@@ -117,7 +117,7 @@ De toestemmingen worden gewoonlijk gevormd voor:
 
 * Auteur
 * Voorvertoning
-* Publiceren
+* Publish
 
 Voor:
 
@@ -127,7 +127,7 @@ Voor:
 
 ### Een CDN (Content Delivery Network) gebruiken {#cdn}
 
-GraphQL-query&#39;s en hun JSON-antwoorden kunnen in de cache worden geplaatst als ze worden toegewezen aan `GET` vraagt wanneer het gebruiken van een CDN. Aanvragen zonder cache kunnen daarentegen zeer (bron)duur zijn en traag verlopen, met mogelijk verdere nadelige gevolgen voor de middelen van de oorsprong.
+GraphQL-query&#39;s en hun JSON-antwoorden kunnen in de cache worden geplaatst als ze worden aangewezen als `GET` -aanvragen bij het gebruik van een CDN. Aanvragen zonder cache kunnen daarentegen zeer (bron)duur zijn en traag verlopen, met mogelijk verdere nadelige gevolgen voor de middelen van de oorsprong.
 
 #### Details {#details-cdn}
 
@@ -147,7 +147,7 @@ AEM GraphQL wordt gebruikt om informatie van uw Contentfragmenten terug te winne
 
 * [Een configuratie maken](/help/headless/setup/create-configuration.md)
 * [Een fragmentmodel voor inhoud maken](/help/headless/setup/create-content-model.md)
-* [Een middelenmap maken](/help/headless/setup/create-assets-folder.md)
+* [Een Assets-map maken](/help/headless/setup/create-assets-folder.md)
 * [Inhoudsfragmenten maken en bewerken](/help/headless/setup/create-content-fragment.md)
 
 #### Omgevingen {#eenvironments-content-fragments}
@@ -156,7 +156,7 @@ Inhoudsfragmenten worden gedefinieerd, geschreven, getest, gepubliceerd en geope
 
 * Auteur
 * Voorvertoning
-* Publiceren
+* Publish
 
 Voor:
 
@@ -176,7 +176,7 @@ Deze richtlijnen zijn bedoeld om prestatieproblemen met uw GraphQL-query&#39;s t
 
 >[!NOTE]
 >
->De optimalisatierichtlijnen behandelen geheim voorgeheugenconfiguratie, reeds behandeld in [Instellen](#setup).
+>De optimalisatierichtlijnen behandelen geheim voorgeheugenconfiguratie, reeds behandeld in [ Opstelling ](#setup).
 
 ### GraphQL openen vanuit uw apps {#access-graphql-from-your-apps}
 
@@ -184,16 +184,16 @@ AEM CMS zonder kop geeft ontwikkelaars de vrijheid om uitzonderlijke ervaringen 
 
 #### Details {#details-your-apps}
 
-* [De SDK van AEM installeren en gebruiken voor ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
-* [Bronnen voor ontwikkelaars zonder hoofd AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* Voorbeelden, waaronder [Reageren](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), onder andere
+* [ installeer, en gebruik, AEM SDK voor ontwikkeling ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
+* [ AEM Headless Developer Resources ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* De voorbeelden, met inbegrip van [ Reageren ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [ Next.js ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [ Node.js ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), onder andere
 
 #### Omgevingen {#environments-your-apps}
 
 Apps worden gewoonlijk ontwikkeld, getest en gebruikt op:
 
 * Voorvertoning
-* Publiceren
+* Publish
 
 Voor:
 
@@ -207,4 +207,4 @@ Raadpleeg de volgende secties voor meer informatie over AEM GraphQL en Content F
 
 * [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
 * [GraphiQL IDE gebruiken](/help/headless/graphql-api/graphiql-ide.md)
-* [Bronnen voor ontwikkelaars zonder hoofd AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ AEM Headless Developer Resources ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

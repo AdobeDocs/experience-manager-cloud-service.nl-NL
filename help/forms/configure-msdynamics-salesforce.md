@@ -15,96 +15,96 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-[[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) verstrekt [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] cloudservices om adaptieve formulieren te integreren met FDM (Form Data Model) buiten het vak. De Adaptive Forms kan dan communiceren met [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] servers om bedrijfswerkstromen toe te laten. Bijvoorbeeld:
+[[!DNL Experience Manager Forms]  de Integratie van Gegevens ](data-integration.md) verleent [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] wolkendiensten om adaptieve vormen met uit het Model van de Gegevens van de Vorm van de doos (FDM) te integreren. De Adaptive Forms kan vervolgens communiceren met [!DNL Microsoft® Dynamics 365] - en [!DNL Salesforce] -servers om bedrijfsworkflows mogelijk te maken. Bijvoorbeeld:
 
-* Gegevens schrijven naar [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] op Aangepast formulier verzenden.
-* Gegevens schrijven in [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] via aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel (FDM) en omgekeerd.
-* Query [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] voor gegevens en vult Adaptive Forms vooraf in.
-* Gegevens lezen van [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] server.
+* Schrijf gegevens naar [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] bij het verzenden van een adaptief formulier.
+* Schrijf gegevens in [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] via aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel (FDM) en omgekeerd.
+* Vraag [!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] -server om gegevens en vul Adaptief Forms vooraf in.
+* Gegevens lezen van [!DNL Microsoft® Dynamics 365] - en [!DNL Salesforce] -server.
 
-[!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] cloudservices en het formuliergegevensmodel (FDM) zijn beschikbaar in het vak op het tabblad [!DNL AEM Forms] Server na u [een ontwikkelingsproject voor Forms opzetten op basis van het archetype van de Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+[!DNL Microsoft® Dynamics 365] en [!DNL Salesforce] de wolkendiensten en het Model van de Gegevens van de Vorm (FDM) zijn beschikbaar uit de doos op de [!DNL AEM Forms] Server nadat u [ opstelling een ontwikkelingsproject voor Forms die op archetype van de Experience Manager ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) wordt gebaseerd.
 
 >[!NOTE]
 >
->Microsoft® Dynamics 365 en [!DNL Salesforce] de wolkendiensten en het Model van de Gegevens van het Vorm (FDM) zijn beschikbaar uit de doos slechts als u opstelling [!DNL Experience Manager Forms] als [!DNL Cloud Service] project gebaseerd op [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) of hoger.
+>Microsoft® Dynamics 365 en [!DNL Salesforce] de wolkendiensten en het Model van de Gegevens van de Vorm (FDM) zijn beschikbaar uit de doos slechts als u opstelling [!DNL Experience Manager Forms] als [!DNL Cloud Service] project dat op [ wordt gebaseerd Archetype 30 ](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) of later AEM.
 
-## Configureren [!DNL Salesforce] cloudservice {#configure-salesforce-cloud-service}
+## [!DNL Salesforce] cloudservice configureren {#configure-salesforce-cloud-service}
 
-Voordat u de [!DNL Salesforce] cloudservices, zorg ervoor dat u de volgende taken uitvoert:
+Voordat u de [!DNL Salesforce] -cloudservices configureert, moet u de volgende taken uitvoeren:
 
-* [Maak een aangesloten OAuth-ingeschakeld [!DNL Salesforce] toepassing](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). Wanneer u de verbinding maakt [!DNL Salesforce] de callback-URL in de volgende notatie opgeven:
+* [ creeer een verbonden OAuth-Toegelaten  [!DNL Salesforce]  toepassing ](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). Wanneer u de verbonden [!DNL Salesforce] toepassing creeert, specificeer callback URL in het volgende formaat:
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
   ```
 
-  Waar server en poort verwijzen naar de hostnaam en het poortnummer voor de [!DNL AEM Forms] Server.
+  Waar server en poort verwijzen naar de hostnaam en het poortnummer van de [!DNL AEM Forms] -server.
 
-* Tijdens het maken van de verbinding [!DNL Salesforce] toepassing, specificeer `full` en `offline_access` als de waarden voor het OAuth-bereik.
+* Geef tijdens het maken van de verbonden [!DNL Salesforce] -toepassing `full` en `offline_access` op als waarden voor het OAuth-bereik.
 
 * Noteer de waarden voor de client-id (Consumentencode genoemd) en het clientgeheim (Consumentengeheim genoemd) voor de verbonden toepassing.
 
-Voer de volgende stappen uit om het [!DNL Salesforce] cloudservice:
+Voer de volgende stappen uit om de cloudservice van [!DNL Salesforce] te configureren:
 
-1. Aan [!DNL AEM Forms] auteurinstantie, navigeren aan **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**. De lijst met beschikbare mappen bevat een map met de titel die is opgegeven voor `DappTitle`  while [het produceren van het project van AEM archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
-1. Selecteer de mapnaam, selecteer **[!UICONTROL Salesforce Cloud Config]** en selecteert u **[!UICONTROL Properties]**.
-1. In de **[!UICONTROL Authentication Settings]** tab:
-   1. Geef de [!DNL Salesforce] Domein URL in de **[!UICONTROL Host]** veld. Bijvoorbeeld: [Domeinnaam].my.salesforce.com.
+1. Voor [!DNL AEM Forms] auteursinstantie, navigeer aan **[!UICONTROL Tools]** ![ hamer ](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**. De lijst van beschikbare omslagomslagen omvat een omslag met de titel die voor `DappTitle` wordt gespecificeerd terwijl [ het AEM archetype project ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) produceert.
+1. Selecteer de mapnaam, selecteer **[!UICONTROL Salesforce Cloud Config]** en selecteer **[!UICONTROL Properties]** .
+1. Op het tabblad **[!UICONTROL Authentication Settings]** :
+   1. Geef de [!DNL Salesforce] domein-URL op in het veld **[!UICONTROL Host]** . Bijvoorbeeld, [ domein-naam ] .my.salesforce.com.
    1. Geef de client-id (Consumer Key) en het clientgeheim (Consumentengeheim) voor de verbonden toepassing op.
-   1. Opgeven **full offline_access** (`full` en `offine_access` waarden, gescheiden door een spatie) in het dialoogvenster **[!UICONTROL Authorization Scope]** veld.
-   1. Selecteer **[!UICONTROL Connect to OAuth]**. U wordt omgeleid naar [!DNL Microsoft® Dynamics] aanmeldingspagina
-   1. Meld u aan met uw [!DNL Salesforce] referenties en accepteren om de configuratie van de cloudservice in staat te stellen verbinding te maken met [!DNL Salesforce] service. Als de verbinding tot stand is gebracht, wordt u omgeleid naar de [!DNL Salesforce] de configuratiepagina van de wolkendienst, die een succesbericht toont.
-1. Selecteren **[!UICONTROL Save & Close]** om de configuratie te voltooien opstelling.
+   1. Specificeer **volledige offline_access** (`full` en `offine_access` waarden die door een ruimte worden gescheiden) op het **[!UICONTROL Authorization Scope]** gebied.
+   1. Selecteer **[!UICONTROL Connect to OAuth]**. U wordt omgeleid naar de aanmeldingspagina van [!DNL Microsoft® Dynamics] .
+   1. Meld u aan met uw [!DNL Salesforce] -referenties en accepteer dit om de configuratie van de cloudservice in staat te stellen verbinding te maken met de [!DNL Salesforce] -service. Als de verbinding tot stand is gebracht, wordt u omgeleid naar de configuratiepagina van de cloudservice van [!DNL Salesforce] , die een succesbericht weergeeft.
+1. Selecteer **[!UICONTROL Save & Close]** om de configuratie-instellingen te voltooien.
 
-### Toegang buiten de doos [!DNL Salesforce] Formuliergegevensmodel (FDM)
+### Toegang vanuit het vak [!DNL Salesforce] Formuliergegevensmodel (FDM)
 
-A [!DNL Salesforce] FDM (Form Data Model) is beschikbaar in het vak op het tabblad [!DNL AEM Forms] Server na u [een ontwikkelingsproject voor Forms opzetten op basis van het archetype van de Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
+Een [!DNL Salesforce] Model van de Gegevens van de Vorm (FDM) is beschikbaar uit de doos op de [!DNL AEM Forms] Server nadat u [ opstelling een ontwikkelingsproject voor Forms die op archetype van de Experience Manager ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) wordt gebaseerd.
 
-Als u toegang wilt krijgen tot het formuliergegevensmodel (FDM), navigeert u naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**. De lijst met beschikbare mappen bevat een map met de titel die is opgegeven voor `DappTitle`  while [het produceren van het project van AEM archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Selecteer de mapnaam, selecteer de optie **[!UICONTROL Salesforce Data Model]** en selecteert u Bewerken ![Bewerken](assets/edit.png) pictogram voor weergave van het formuliergegevensmodel (FDM).
+Navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]** om het FDM (Form Data Model) te openen. De lijst van beschikbare omslagen omvat een omslag met de titel die voor `DappTitle` wordt gespecificeerd terwijl [ het AEM archetype project ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) produceert. Selecteer de omslagnaam, selecteer **[!UICONTROL Salesforce Data Model]**, en selecteer uitgeven ![ ](assets/edit.png) pictogram uitgeven om het model van vormgegevens (FDM) te bekijken.
 
-Nadat u de [[!DNL Salesforce] Cloud Config-service](#configure-salesforce-cloud-service), kunt u adaptieve formulieren integreren met behulp van de doos [!DNL Salesforce] Gegevensmodel.
+Na het vormen van de [[!DNL Salesforce]  dienst van Config van de Wolk ](#configure-salesforce-cloud-service), kunt u adaptieve vormen met uit de doos [!DNL Salesforce] Model van Gegevens integreren.
 
-## Configureren [!DNL Microsoft® Dynamics 365] cloudservice {#configure-dynamics-cloud-service}
+## [!DNL Microsoft® Dynamics 365] cloudservice configureren {#configure-dynamics-cloud-service}
 
-Voordat u de [!DNL Microsoft® Dynamics 365] cloudservice, zorg ervoor dat u de volgende taken uitvoert:
+Voordat u de cloudservice van [!DNL Microsoft® Dynamics 365] configureert, moet u de volgende taken uitvoeren:
 
-* [Een aanvraag registreren voor [!DNL Microsoft® Dynamics 365] met Azure Active Directory](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory). Wanneer u de verbinding maakt [!DNL Microsoft® Dynamics 365] -toepassing, geeft u de antwoordURL&#39;s op in de volgende indeling:
+* [ Register een toepassing voor  [!DNL Microsoft® Dynamics 365]  met Azure Actieve Folder ](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory). Wanneer u de verbonden [!DNL Microsoft® Dynamics 365] toepassing creeert, specificeer Reageren URLs in het volgende formaat:
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
   ```
 
-  Waar server en poort verwijzen naar de hostnaam en het poortnummer voor de [!DNL AEM Forms] Server.
+  Waar server en poort verwijzen naar de hostnaam en het poortnummer van de [!DNL AEM Forms] -server.
 
 * Noteer de waarden voor de client-id (ook toepassings-id genoemd) en het clientgeheim voor de verbonden toepassing.
 
-Voer de volgende stappen uit om het [!DNL Microsoft® Dynamics 365] cloudservice:
+Voer de volgende stappen uit om de cloudservice van [!DNL Microsoft® Dynamics 365] te configureren:
 
-1. Aan [!DNL AEM Forms] auteurinstantie, navigeren aan **[!UICONTROL Tools]** ![hamer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**. De lijst met beschikbare mappen bevat een map met de titel die is opgegeven voor `DappTitle`  while [het produceren van het project van AEM archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
-1. Selecteer de mapnaam, selecteer **[!UICONTROL Microsoft® Dynamics 365 Cloud Config]** en selecteert u **[!UICONTROL Properties]**.
-1. In de **[!UICONTROL Authentication Settings]** tab:
-   1. Voer de waarde in voor de **[!UICONTROL Service Root]** veld. Ga naar de instantie Dynamics en navigeer naar [Bronnen voor ontwikkelaars](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) om de waarde voor het gebied van de Wortel van de Dienst te bekijken. Bijvoorbeeld: `https://<tenant-name>.dynamics.com/api/data/v9.1/`
+1. Voor [!DNL AEM Forms] auteursinstantie, navigeer aan **[!UICONTROL Tools]** ![ hamer ](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**. De lijst van beschikbare omslagomslagen omvat een omslag met de titel die voor `DappTitle` wordt gespecificeerd terwijl [ het AEM archetype project ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) produceert.
+1. Selecteer de mapnaam, selecteer **[!UICONTROL Microsoft® Dynamics 365 Cloud Config]** en selecteer **[!UICONTROL Properties]** .
+1. Op het tabblad **[!UICONTROL Authentication Settings]** :
+   1. Voer de waarde voor het veld **[!UICONTROL Service Root]** in. Ga naar de instantie van de Dynamiek en navigeer aan [ Middelen van de Ontwikkelaar ](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) om de waarde voor het gebied van de Wortel van de Dienst te bekijken. Bijvoorbeeld: `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Geef de client-id (toepassings-id) en het clientgeheim voor de verbonden toepassing op.
-   1. Vervangen `{tenant}` met een huurder-id in het **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, en **[!UICONTROL Access Token URL]** velden.
-   1. Geef de URL van de dynamische instantie op in het dialoogvenster **[!UICONTROL Resource]** te configureren veld [!UICONTROL Microsoft® Dynamics] met een formuliergegevensmodel (FDM). Gebruik de URL van de hoofdmap van de service om de instantie-URL Dynamics af te leiden. Bijvoorbeeld: `https://<tenant-name>.dynamics.com`.
+   1. Vervang `{tenant}` door een huurder-id in de velden **[!UICONTROL OAuth URL]** , **[!UICONTROL Refresh Token URL]** en **[!UICONTROL Access Token URL]** .
+   1. Geef in het veld **[!UICONTROL Resource]** de URL van de dynamische instantie op om [!UICONTROL Microsoft® Dynamics] te configureren met een FDM (Form Data Model). Gebruik de URL van de hoofdmap van de service om de instantie-URL Dynamics af te leiden. Bijvoorbeeld `https://<tenant-name>.dynamics.com` .
 
-   1. Opgeven `openid` in de **[!UICONTROL Authorization Scope]** veld voor het vergunningsproces op [!DNL Microsoft® Dynamics 365].
-   1. Meld u aan met uw [!DNL Microsoft® Dynamics 365] referenties en accepteren om de configuratie van de cloudservice in staat te stellen verbinding te maken met [!DNL Microsoft® Dynamics 365] service. Als de verbinding tot stand is gebracht, wordt u omgeleid naar de [!DNL Microsoft® Dynamics 365] de configuratiepagina van de wolkendienst, die een succesbericht toont.
-1. Selecteren **[!UICONTROL Save & Close]** om de configuratie te voltooien opstelling.
+   1. Geef `openid` op in het veld **[!UICONTROL Authorization Scope]** voor autorisatieproces op [!DNL Microsoft® Dynamics 365] .
+   1. Meld u aan met uw [!DNL Microsoft® Dynamics 365] -referenties en accepteer dit om de configuratie van de cloudservice in staat te stellen verbinding te maken met de [!DNL Microsoft® Dynamics 365] -service. Als de verbinding tot stand is gebracht, wordt u omgeleid naar de configuratiepagina van de cloudservice van [!DNL Microsoft® Dynamics 365] , die een succesbericht weergeeft.
+1. Selecteer **[!UICONTROL Save & Close]** om de configuratie-instellingen te voltooien.
 
-### Toegang buiten de doos [!DNL Microsoft® Dynamics 365] Formuliergegevensmodel (FDM)
+### Toegang vanuit het vak [!DNL Microsoft® Dynamics 365] Formuliergegevensmodel (FDM)
 
-A [!DNL Microsoft® Dynamics 365] FDM (Form Data Model) is beschikbaar in het vak op het tabblad [!DNL AEM Forms] Server na u [een ontwikkelingsproject voor Forms opzetten op basis van het archetype van de Experience Manager](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
+Een [!DNL Microsoft® Dynamics 365] Model van de Gegevens van de Vorm (FDM) is beschikbaar uit de doos op de [!DNL AEM Forms] Server nadat u [ opstelling een ontwikkelingsproject voor Forms die op archetype van de Experience Manager ](setup-local-development-environment.md##forms-cloud-service-local-development-environment) wordt gebaseerd.
 
-Als u toegang wilt krijgen tot het formuliergegevensmodel (FDM), navigeert u naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**. De lijst met beschikbare mappen bevat een map met de titel die is opgegeven voor `DappTitle`  while [het produceren van het project van AEM archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Selecteer de mapnaam, selecteer de optie **[!UICONTROL Microsoft® Dynamics 365 Data Model]** en selecteert u Bewerken ![Bewerken](assets/edit.png) pictogram voor weergave van het formuliergegevensmodel (FDM).
+Navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]** om het FDM (Form Data Model) te openen. De lijst van beschikbare omslagen omvat een omslag met de titel die voor `DappTitle` wordt gespecificeerd terwijl [ het AEM archetype project ](setup-local-development-environment.md#forms-cloud-service-local-development-environment) produceert. Selecteer de omslagnaam, selecteer **[!UICONTROL Microsoft® Dynamics 365 Data Model]**, en selecteer uitgeven ![ ](assets/edit.png) pictogram uitgeven om het model van vormgegevens (FDM) te bekijken.
 
-Nadat u de [[!DNL Microsoft® Dynamics 365] Cloud Config-service](#configure-dynamics-cloud-service), kunt u adaptieve formulieren integreren met behulp van de doos [!DNL Microsoft® Dynamics 365] Gegevensmodel.
+Na het vormen van de [[!DNL Microsoft® Dynamics 365]  dienst van Config van de Wolk ](#configure-dynamics-cloud-service), kunt u adaptieve vormen met uit de doos [!DNL Microsoft® Dynamics 365] Model van Gegevens integreren.
 
 >[!MORELIKETHIS]
 >
->* [Gegevensbronnen configureren voor AEM Forms](/help/forms/configure-data-sources.md)
->* [Azure-opslag voor AEM Forms configureren](/help/forms/configure-azure-storage.md)
->  [Forms Portal toevoegen aan een AEM Sites-pagina](/help/forms/configure-forms-portal.md)
+>* [ vorm gegevensbronnen voor AEM Forms ](/help/forms/configure-data-sources.md)
+>* [ vorm Azure opslag voor AEM Forms ](/help/forms/configure-azure-storage.md)
+>  [Forms Portal toevoegen aan een AEM Sites-pagina ](/help/forms/configure-forms-portal.md)

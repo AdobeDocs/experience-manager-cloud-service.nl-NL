@@ -27,13 +27,13 @@ Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit
 
 Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), worden verschillende waarschuwingen en/of meldingen weergegeven:
 
-* Uw [melding](/help/sites-cloud/authoring/inbox.md) indicator (werkbalk) wordt verhoogd:
+* Uw [ bericht ](/help/sites-cloud/authoring/inbox.md) indicator (toolbar) wordt verhoogd:
 
-  ![Berichtwerkbalk](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![ toolbar van het Bericht ](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* Het object wordt aangeboden in je bericht [Inbox](/help/sites-cloud/authoring/inbox.md):
+* Het punt is vermeld in uw bericht [ Inbox ](/help/sites-cloud/authoring/inbox.md):
 
-  ![Meldingen in Postvak IN](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![ Meldingen in inbox ](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Wanneer u de pagina-editor gebruikt, wordt de statusbalk weergegeven:
    * De naam van de workflow(en) die op de pagina wordt toegepast, bijvoorbeeld Verzoek om activering.
@@ -42,18 +42,18 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
       * Gebruik de pijlen links/rechts om door de statusinformatie van de verschillende workflows te navigeren.
       * Selecteer het werkelijke nummer om een vervolgkeuzelijst met alle toepasselijke workflows te openen en selecteer vervolgens de workflow die u wilt weergeven op de statusbalk.
 
-  ![Pagina met meerdere workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![ Pagina met veelvoudige werkschema&#39;s ](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
   >[!NOTE]
   >
-  >De statusbalk is alleen zichtbaar voor gebruikers met workflowbevoegdheden, bijvoorbeeld leden van de klasse `workflow-users` groep.
+  >De statusbalk is alleen zichtbaar voor gebruikers met workflowbevoegdheden, bijvoorbeeld leden van de groep `workflow-users` .
   >
   >
   >Handelingen worden weergegeven wanneer de huidige gebruiker rechtstreeks betrokken is bij de huidige stap van de workflow.
 
-* Wanneer **Tijdlijn** is open voor het middel, wordt de werkschemastap getoond. Wanneer u op de waakzame banner selecteert, zullen de beschikbare acties ook worden getoond:
+* Wanneer **de Chronologie** voor het middel open is, wordt de werkschemastap getoond. Wanneer u op de waakzame banner selecteert, zullen de beschikbare acties ook worden getoond:
 
-  ![Workflow in de tijdlijn](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![ Werkschema in de chronologie ](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### Een deelnemersstap voltooien {#completing-a-participant-step}
 
@@ -61,52 +61,52 @@ U kunt een item voltooien zodat de workflow naar de volgende stap kan gaan.
 
 Op deze actie kunt u aangeven:
 
-* **Volgende stap**: de volgende stap die moet worden uitgevoerd; u kunt een keuze maken in een opgegeven lijst
-* **Opmerking** indien nodig:
+* **Volgende Stap**: de volgende te nemen stap; u kunt van een verstrekte lijst selecteren
+* **Commentaar**: indien nodig
 
 U kunt een deelnemersstap uitvoeren vanuit:
 
 * [Inbox](#completing-a-participant-step-inbox)
 * [De pagina-editor](#completing-a-participant-step-page-editor)
 * [De tijdlijn](#completing-a-participant-step-timeline)
-* Wanneer [een workflowitem openen om details weer te geven](#opening-a-workflow-item-to-view-details-and-take-actions).
+* Wanneer [ het openen van een werkschemapunt om details ](#opening-a-workflow-item-to-view-details-and-take-actions) te bekijken.
 
 #### Een deelnemersstap voltooien - Postvak IN {#completing-a-participant-step-inbox}
 
 Voer de volgende procedure uit om het werkitem te voltooien:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
+1. Open **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
-1. Selecteren **Voltooid** op de werkbalk.
-1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop-down selecteur en voeg toe **Opmerking** indien nodig.
-1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
+1. Selecteer **Volledig** van de toolbar.
+1. Het **Volledige de dialoog van het Punt van het Werk** opent. Selecteer de **Volgende Stap** van de drop-down selecteur en voeg a **Commentaar** indien nodig toe.
+1. Gebruik **O.K.** om de stap (of **te voltooien annuleert** om de actie) af te breken.
 
 #### Een stap voor een deelnemer voltooien - Pagina-editor {#completing-a-participant-step-page-editor}
 
 Voer de volgende procedure uit om het werkitem te voltooien:
 
-1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
-1. Selecteren **Voltooid** in de statusbalk boven in het scherm.
-1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop-down selecteur en voeg toe **Opmerking** indien nodig.
-1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
+1. Open de [ pagina voor het uitgeven ](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
+1. Selecteer **Volledig** van de statusbar bij de bovenkant.
+1. Het **Volledige de dialoog van het Punt van het Werk** opent. Selecteer de **Volgende Stap** van de drop-down selecteur en voeg a **Commentaar** indien nodig toe.
+1. Gebruik **O.K.** om de stap (of **te voltooien annuleert** om de actie) af te breken.
 
 #### Een stap voor een deelnemer voltooien - tijdlijn {#completing-a-participant-step-timeline}
 
 U kunt ook de tijdlijn gebruiken om een stap te voltooien en uit te voeren:
 
-1. Selecteer de gewenste pagina en open **Tijdlijn** (of open **Tijdlijn** en selecteer de pagina):
+1. Selecteer de vereiste pagina en open **Chronologie** (of open **Chronologie** en selecteer de pagina):
 
-   ![Een stap voltooien](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
+   ![ Voltooiend een stap ](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
 
-1. Selecteer de waarschuwingsbanner om beschikbare acties weer te geven. Selecteren **Vooruitgang**:
+1. Selecteer de waarschuwingsbanner om beschikbare acties weer te geven. Selecteer **Vooruitgang**:
 
-   ![De stap vooruit](/help/sites-cloud/authoring/assets/workflows-timeline-advance.png)
+   ![ Voordeel de stap ](/help/sites-cloud/authoring/assets/workflows-timeline-advance.png)
 
 1. Afhankelijk van de workflow kunt u de volgende stap selecteren:
 
-   ![Volgende stap selecteren](/help/sites-cloud/authoring/assets/workflows-next-step.png)
+   ![ Selecterend volgende stap ](/help/sites-cloud/authoring/assets/workflows-next-step.png)
 
-1. Selecteren **Vooruitgang** om de actie te bevestigen.
+1. Selecteer **Gewenste** om de actie te bevestigen.
 
 ### Een deelnemersstap delegeren {#delegating-a-participant-step}
 
@@ -120,49 +120,49 @@ De gebruikers die voor delegatie beschikbaar zijn hangen af van wie het het werk
 
 Op deze actie kunt u aangeven:
 
-* **Gebruiker**: de gebruiker u aan wilt delegeren; u kunt uit een verstrekte lijst selecteren
-* **Opmerking** indien nodig:
+* **Gebruiker**: De gebruiker u aan wilt afvaardigen; u kunt uit een verstrekte lijst selecteren
+* **Commentaar**: indien nodig
 
 U kunt een deelnemersstap delegeren vanuit:
 
 * [Inbox](#delegating-a-participant-step-inbox)
 * [De pagina-editor](#delegating-a-participant-step-page-editor)
 * [De tijdlijn](#delegating-a-participant-step-timeline)
-* Wanneer [een workflowitem openen om details weer te geven](#opening-a-workflow-item-to-view-details-and-take-actions).
+* Wanneer [ het openen van een werkschemapunt om details ](#opening-a-workflow-item-to-view-details-and-take-actions) te bekijken.
 
 #### Een deelnemersstap delegeren - Postvak IN {#delegating-a-participant-step-inbox}
 
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
+1. Open **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
-1. Selecteren **Delegeren** op de werkbalk.
-1. Het dialoogvenster wordt geopend. Geef de **Gebruiker** in de keuzelijst (dit kan ook een groep zijn) en voeg een **Opmerking** indien nodig.
-1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
+1. Selecteer **Afgevaardigde** van de toolbar.
+1. Het dialoogvenster wordt geopend. Specificeer de **Gebruiker** van de drop-down selecteur (dit kan ook een groep) zijn en voeg a **Commentaar** indien nodig toe.
+1. Gebruik **O.K.** om de stap (of **te voltooien annuleert** om de actie) af te breken.
 
 #### Een deelnemersstap delegeren - Pagina-editor {#delegating-a-participant-step-page-editor}
 
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
-1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
-1. Selecteren **Delegeren** in de statusbalk boven in het scherm.
-1. Het dialoogvenster wordt geopend. Geef de **Gebruiker** in de keuzelijst (dit kan ook een groep zijn) en voeg een **Opmerking** indien nodig.
-1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
+1. Open de [ pagina voor het uitgeven ](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
+1. Selecteer **Afgevaardigde** van de statusbar bij de bovenkant.
+1. Het dialoogvenster wordt geopend. Specificeer de **Gebruiker** van de drop-down selecteur (dit kan ook een groep) zijn en voeg a **Commentaar** indien nodig toe.
+1. Gebruik **O.K.** om de stap (of **te voltooien annuleert** om de actie) af te breken.
 
 #### Een deelnemersstap delegeren - tijdlijn {#delegating-a-participant-step-timeline}
 
 U kunt de tijdlijn ook gebruiken om een stap te delegeren en/of toe te wijzen:
 
-1. Selecteer de gewenste pagina en open **Tijdlijn** (of open **Tijdlijn** en selecteert u de pagina).
-1. Selecteer de waarschuwingsbanner om beschikbare acties weer te geven. Selecteren **Toewijzing wijzigen**:
+1. Selecteer de vereiste pagina en open **Chronologie** (of open **Chronologie** en selecteer de pagina).
+1. Selecteer de waarschuwingsbanner om beschikbare acties weer te geven. Selecteer **Toegewezen van de Verandering**:
 
-   ![Stap delegeren](/help/sites-cloud/authoring/assets/workflows-delegate.png)
+   ![ de stap van de Afgevaardigde ](/help/sites-cloud/authoring/assets/workflows-delegate.png)
 
 1. Geef een nieuwe ontvanger op:
 
-   ![Toewijzing wijzigen](/help/sites-cloud/authoring/assets/workflows-assignee.png)
+   ![ Verandering toegewezen ](/help/sites-cloud/authoring/assets/workflows-assignee.png)
 
-1. Selecteren **Toewijzen** om de actie te bevestigen.
+1. Selecteer **toewijzen** om de actie te bevestigen.
 
 ### Stap terug op een Stap van de Deelnemer uitvoeren {#performing-step-back-on-a-participant-step}
 
@@ -170,49 +170,49 @@ Als u ontdekt dat een stap, of een reeks stappen, moet worden herhaald kunt u ac
 
 Op deze actie kunt u aangeven:
 
-* **Vorige stap**: de stap waarnaar u wilt terugkeren; u kunt een keuze maken in een opgegeven lijst
-* **Opmerking** indien nodig:
+* **Vorige Stap**: de stap aan moet worden teruggekeerd; u kunt uit een verstrekte lijst selecteren
+* **Commentaar**: indien nodig
 
 U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
 
 * [Inbox](#performing-step-back-on-a-participant-step-inbox)
 * [De pagina-editor](#performing-step-back-on-a-participant-step-page-editor)
 * [De tijdlijn](#performing-step-back-on-a-participant-step-timeline)
-* Wanneer [een workflowitem openen om details weer te geven](#opening-a-workflow-item-to-view-details-and-take-actions).
+* Wanneer [ het openen van een werkschemapunt om details ](#opening-a-workflow-item-to-view-details-and-take-actions) te bekijken.
 
 #### Het uitvoeren van Stap terug op een Stap van de Deelnemer - Inbox {#performing-step-back-on-a-participant-step-inbox}
 
 Gebruik de volgende procedure om terug te gaan:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
+1. Open **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
-1. Selecteren **Stap terug** het dialoogvenster openen.
-1. Geef de **Vorige stap** en voeg een **Opmerking** indien nodig.
-1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
+1. Selecteer **Stap terug** om de dialoog te openen.
+1. Specificeer de **Vorige Stap** en voeg a **Commentaar** indien nodig toe.
+1. Gebruik **O.K.** om de stap (of **te voltooien annuleert** om de actie) af te breken.
 
 #### Stap terug uitvoeren op een Stap van de Deelnemer - de Redacteur van de Pagina {#performing-step-back-on-a-participant-step-page-editor}
 
 Gebruik de volgende procedure om terug te gaan:
 
-1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
-1. Selecteren **Stap terug** in de statusbalk boven in het scherm.
-1. Geef de **Vorige stap** en voeg een **Opmerking** indien nodig.
-1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
+1. Open de [ pagina voor het uitgeven ](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
+1. Selecteer **Stap terug** van de statusbar bij de bovenkant.
+1. Specificeer de **Vorige Stap** en voeg a **Commentaar** indien nodig toe.
+1. Gebruik **O.K.** om de stap (of **te voltooien annuleert** om de actie) af te breken.
 
 #### Stap terug uitvoeren op een Stap van de Deelnemer - Chronologie {#performing-step-back-on-a-participant-step-timeline}
 
 U kunt de tijdlijn ook gebruiken om terug te gaan (stap) naar een vorige stap:
 
-1. Selecteer de gewenste pagina en open **Tijdlijn** (of open **Tijdlijn** en selecteert u de pagina).
-1. Selecteer de waarschuwingsbanner om beschikbare acties weer te geven. Selecteren **Terugdraaien**:
+1. Selecteer de vereiste pagina en open **Chronologie** (of open **Chronologie** en selecteer de pagina).
+1. Selecteer de waarschuwingsbanner om beschikbare acties weer te geven. Selecteer **Terugkeer**:
 
-   ![Een stap terugdraaien](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
+   ![ Terugkeer een stap ](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
 
 1. Geef de stap op waarnaar de workflow moet terugkeren:
 
-   ![Stap opgeven](/help/sites-cloud/authoring/assets/workflows-roll-back-step.png)
+   ![ specificeer stap ](/help/sites-cloud/authoring/assets/workflows-roll-back-step.png)
 
-1. Selecteren **Terugdraaien** om de actie te bevestigen.
+1. Selecteer **Terugkeer** om de actie te bevestigen.
 
 ### Een workflowitem openen om details weer te geven (en handelingen uit te voeren) {#opening-a-workflow-item-to-view-details-and-take-actions}
 
@@ -220,21 +220,21 @@ Bekijk details van het werkstroomonderdeel en voer de juiste handelingen uit.
 
 De workflowdetails worden weergegeven op tabbladen en de juiste acties zijn beschikbaar op de werkbalk:
 
-* **WORKITEM** tab:
+* **HET WERKITEM** tabel:
 
-  ![Tabblad WORKITEM](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  ![ lusje van het PUNT van het WERKITEM ](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
-* **WORKFLOW-INFO** tab:
+* **DE INFO VAN DE WORKFLOW** tabel:
 
-  ![WORKFLOW, tabblad](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![ het lusje van de WORKFLOW ](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-  Als de Stages van het Werkschema voor het model zijn gevormd, kunt u de vooruitgang volgens deze bekijken: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  Als de Werkstroomfasen voor het model zijn geconfigureerd, kunt u de voortgang als volgt bekijken: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-  ![Workflowfasen](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![ stadia van het Werkschema ](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
-* **OPMERKINGEN** tab:
+* **COMMENTAAR** tabel:
 
-  ![Tabblad Opmerkingen](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![ COMMENTAAR tabel ](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 U kunt de details van het werkitem openen vanuit:
 
@@ -245,20 +245,20 @@ U kunt de details van het werkitem openen vanuit:
 
 U opent als volgt een workflowitem en bekijkt de details:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
+1. Open **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
-1. Selecteren **Openen** om de informatietabbladen te openen.
-1. Selecteer zo nodig de gewenste actie, geef details en bevestig deze met **OK** (of **Annuleren**).
-1. Gebruiken **Opslaan** of **Annuleren** om af te sluiten.
+1. Selecteer **Open** om de informatielusjes te openen.
+1. Indien noodzakelijk, selecteer de aangewezen actie, verstrek om het even welke details en bevestig met **O.K.** (of **annuleert**).
+1. Het gebruik **sparen** of **annuleert** om weg te gaan.
 
 #### Workflow Details openen - Pagina-editor {#opening-workflow-details-page-editor}
 
 U opent als volgt een workflowitem en bekijkt de details:
 
-1. Open de [pagina voor bewerken](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
-1. Selecteren **Details weergeven** van de statusbar om de informatielusjes te openen.
-1. Selecteer zo nodig de gewenste actie, geef details en bevestig deze met **OK** (of **Annuleren**).
-1. Gebruiken **Opslaan** of **Annuleren** om af te sluiten.
+1. Open de [ pagina voor het uitgeven ](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
+1. Selecteer **Details van de Mening** van de statusbar om de informatielusjes te openen.
+1. Indien noodzakelijk, selecteer de aangewezen actie, verstrek om het even welke details en bevestig met **O.K.** (of **annuleert**).
+1. Het gebruik **sparen** of **annuleert** om weg te gaan.
 
 ### Het bekijken van de Payload van het Werkschema (Veelvoudige Middelen) {#viewing-the-workflow-payload-multiple-resources}
 
@@ -266,8 +266,8 @@ U kunt details van de lading bekijken verbonden aan de werkschemainstantie. In e
 
 Om de lading, en middelen, van de werkschemainstantie te bekijken:
 
-1. Open de **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
+1. Open **[AEM Inbox](/help/sites-cloud/authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u wilt reageren (selecteer de miniatuur).
-1. Selecteren **Payload weergeven** op de werkbalk om het dialoogvenster te openen.
-   * Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Gebruik de **Brondefinitie** toe te voegen.
+1. Selecteer **Payload van de Mening** van de toolbar om de dialoog te openen.
+   * Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Gebruik de **component van de Definitie van het Middel 0} {om nieuwe ingangen toe te voegen.**
 1. U kunt de koppelingen gebruiken om de afzonderlijke pagina&#39;s te openen.

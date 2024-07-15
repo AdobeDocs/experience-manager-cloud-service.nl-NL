@@ -1,6 +1,6 @@
 ---
 title: Build-omgeving
-description: Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
+description: Meer informatie over de Cloud Manager-ontwikkelomgeving en hoe deze uw code bouwt en test.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Build-omgeving {#build-environment}
 
-Leer meer over de buildomgeving van Cloud Manager en hoe deze uw code bouwt en test.
+Meer informatie over de Cloud Manager-ontwikkelomgeving en hoe deze uw code bouwt en test.
 
 ## Omgevingsdetails samenstellen {#build-environment-details}
 
@@ -23,30 +23,30 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
 * Apache Maven 3.9.4 is geïnstalleerd.
-   * Adobe raadt gebruikers aan [hun Maven repositories bijwerken om HTTPS in plaats van HTTP te gebruiken.](#https-maven)
+   * Adobe adviseert gebruikers [ hun Geweven bewaarplaatsen om HTTPS in plaats van HTTP bij te gebruiken.](#https-maven)
 * De geïnstalleerde Java-versies zijn Oracle JDK 11.0.22 en Oracle JDK 8u401.
-* **BELANGRIJK**: Standaard worden de `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk1.8.0_401` die Oracle JDK 8u401 bevat. *_Deze standaardwaarde moet worden overschreven als AEM Cloud projects JDK 11 moet gebruiken_*. Zie de [De Maven JDK-versie instellen](#alternate-maven-jdk-version) voor meer informatie.
+* **BELANGRIJK**: Door gebrek, wordt de `JAVA_HOME` milieuvariabele geplaatst aan `/usr/lib/jvm/jdk1.8.0_401` die Oracle JDK 8u401 bevat. *_Dit gebrek zou voor AEM Projecten van de Wolk moeten worden met voeten getreden om JDK 11_* te gebruiken. Zie [ Plaatsend de Geweven sectie van de Versie JDK ](#alternate-maven-jdk-version) voor meer details.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn.
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Andere pakketten kunnen worden geïnstalleerd tijdens het samenstellen zoals beschreven in de sectie [Extra systeempakketten installeren.](#installing-additional-system-packages)
+* Andere pakketten kunnen bij bouwstijltijd zoals die in de sectie [ wordt beschreven worden geïnstalleerd die de Extra Pakketten van het Systeem installeren.](#installing-additional-system-packages)
 * Elke build wordt uitgevoerd in een ongerepte omgeving; de constructiecontainer bewaart geen status tussen executies.
 * Maven wordt altijd uitgevoerd met de volgende drie opdrachten.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* Maven is geconfigureerd op systeemniveau met een `settings.xml` bestand, dat automatisch de openbare gegevensopslagruimte voor Adoben bevat met een profiel genaamd `adobe-public`. (Zie [Adobe openbaar gemaakte opslagplaats](https://repo1.maven.org/) voor meer informatie ).
+* Maven wordt op systeemniveau geconfigureerd met een `settings.xml` -bestand dat automatisch de openbare gegevensopslagruimte voor Adoben bevat met een profiel met de naam `adobe-public` . (Zie ](https://repo1.maven.org/) voor meer details van de Adobe Openbare Maven Bewaarplaats [.)
 
 >[!NOTE]
 >
->Hoewel in Cloud Manager geen specifieke versie van het dialoogvenster `jacoco-maven-plugin`moet de gebruikte versie ten minste `0.7.5.201505241946`.
+>Hoewel Cloud Manager geen specifieke versie van de `jacoco-maven-plugin` definieert, moet de gebruikte versie ten minste `0.7.5.201505241946` zijn.
 
 ## Via HTTPS gemaakte opslagplaatsen {#https-maven}
 
-Cloud Manager [release 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Maven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Met name Maven schakelt nu alles onveilig uit `http://*` spiegels standaard, zoals wordt beschreven in het dialoogvenster [Opmerkingen bij de release Maven.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [ versie 2023.10.0 ](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [ Gemaakt versienota&#39;s worden geschetst.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
 
 Als gevolg van deze beveiligingsuitbreiding kunnen sommige gebruikers problemen ondervinden tijdens de constructiestap, met name wanneer ze artefacten downloaden van Geweven opslagplaatsen die onveilige HTTP-verbindingen gebruiken.
 
@@ -54,13 +54,13 @@ Om ervoor te zorgen dat de bijgewerkte versie probleemloos wordt uitgevoerd, raa
 
 ### Een specifieke Java-versie gebruiken {#using-java-support}
 
-Standaard worden projecten gemaakt door het buildproces van Cloud Manager met behulp van Oracle 8 JDK, maar klanten van AEM Cloud Service wordt ten zeerste aangeraden de JDK-versie die wordt gebruikt om Maven uit te voeren in te stellen op `11`.
+Standaard worden projecten gemaakt door het Cloud Manager-constructieproces met Oracle 8 JDK, maar AEM Cloud Service-klanten wordt sterk aangeraden de JDK-versie die wordt gebruikt om Maven uit te voeren in te stellen op `11` .
 
 #### De Maven JDK-versie instellen {#alternate-maven-jdk-version}
 
-Het wordt aanbevolen de JDK-versie voor de gehele uitgevoerde Maven in te stellen op `11` in een `.cloudmanager/java-version` bestand.
+U wordt aangeraden de JDK-versie voor de gehele uitgevoerde Maven in te stellen op `11` in een `.cloudmanager/java-version` -bestand.
 
-Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de door de pijpleiding gebruikte vertakking van de git-opslagplaats. Bewerk het bestand zodat het alleen de tekst bevat. `11`. Cloud Manager accepteert ook de waarde van `8`, wordt deze versie niet meer ondersteund voor AEM Cloud Service-projecten. Eventuele andere waarden worden genegeerd. Wanneer `11` wordt gespecificeerd, wordt Oracle 11 gebruikt en `JAVA_HOME` omgevingsvariabele is ingesteld op `/usr/lib/jvm/jdk-11.0.22`.
+Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking van de it-opslagruimte die door de pijplijn wordt gebruikt. Bewerk het bestand zodat het alleen de tekst bevat, `11` . Hoewel Cloud Manager ook de waarde `8` accepteert, wordt deze versie niet meer ondersteund voor AEM Cloud Service-projecten. Eventuele andere waarden worden genegeerd. Wanneer `11` wordt opgegeven, wordt Oracle 11 gebruikt en wordt de omgevingsvariabele `JAVA_HOME` ingesteld op `/usr/lib/jvm/jdk-11.0.22` .
 
 ## Omgevingsvariabelen {#environment-variables}
 
@@ -68,30 +68,30 @@ Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de door 
 
 U kunt het noodzakelijk vinden om het bouwstijlproces te variëren dat op informatie over het programma of de pijpleiding wordt gebaseerd.
 
-Als JavaScript-miniaturen tijdens het bouwen bijvoorbeeld worden gemaakt met een tool als gulp, is het mogelijk dat u een ander miniatuurniveau wilt gebruiken bij het bouwen voor een ontwikkelomgeving in plaats van voor het maken van ophaling en productie.
+Als bijvoorbeeld JavaScript-minificatie tijdens de bouw wordt uitgevoerd met behulp van een instrument als gulp, kan het nodig zijn een ander miniatuurniveau te gebruiken bij het bouwen voor een ontwikkelomgeving in plaats van voor het opvoeren en produceren.
 
-Ter ondersteuning hiervan voegt Cloud Manager deze standaardomgevingsvariabelen voor elke uitvoering toe aan de container voor de build.
+Om dit te steunen, voegt Cloud Manager deze standaardmilieuvariabelen aan de bouwstijlcontainer voor elke uitvoering toe.
 
 | Naam variabele | Definitie |
 |---|---|
-| `CM_BUILD` | Altijd instellen op `true` |
+| `CM_BUILD` | Altijd ingesteld op `true` |
 | `BRANCH` | De gevormde tak voor de uitvoering |
 | `CM_PIPELINE_ID` | De numerieke identificatie van de pijplijn |
 | `CM_PIPELINE_NAME` | De pijpleidingsnaam |
 | `CM_PROGRAM_ID` | De numerieke programma-id |
 | `CM_PROGRAM_NAME` | De programmenaam |
-| `ARTIFACTS_VERSION` | Voor een stadium of productiepijplijn, de synthetische versie die door Cloud Manager wordt geproduceerd |
+| `ARTIFACTS_VERSION` | Voor een stadium of een productiepijpleiding, de synthetische versie die door Cloud Manager wordt gegenereerd |
 | `CM_AEM_PRODUCT_VERSION` | De releaseversie |
 
 ### Pipetvariabelen {#pipeline-variables}
 
 Uw bouwstijlproces kan van specifieke configuratievariabelen afhangen die om in de git bewaarplaats ongepast zouden zijn te plaatsen of u kunt hen tussen pijpleidinguitvoeringen moeten variëren gebruikend de zelfde tak.
 
-Zie het document [Het vormen Variabelen van de Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) voor meer informatie
+Gelieve te zien het document [ Vormende Variabelen van de Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) voor meer informatie
 
 ## Extra systeempakketten installeren {#installing-additional-system-packages}
 
-Voor sommige builds moeten extra systeempakketten worden geïnstalleerd om volledig te kunnen functioneren. Een build kan bijvoorbeeld een Python- of Ruby-script aanroepen en moet een geschikte taalinterpreter hebben geïnstalleerd. Dit kan door te roepen [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in uw `pom.xml` om APT aan te roepen. Deze uitvoering moet doorgaans worden opgenomen in een specifiek Maven-profiel voor Cloud Manager. In dit voorbeeld wordt Python geïnstalleerd.
+Voor sommige builds moeten extra systeempakketten worden geïnstalleerd om volledig te kunnen functioneren. Een build kan bijvoorbeeld een Python- of Ruby-script aanroepen en moet een geschikte taalinterpreter hebben geïnstalleerd. Dit kan worden gedaan door [`exec-maven-plugin` ](https://www.mojohaus.org/exec-maven-plugin/) in uw `pom.xml` te roepen om APT aan te halen. Deze uitvoering moet doorgaans worden opgenomen in een Cloud Manager-specifiek Maven-profiel. In dit voorbeeld wordt Python geïnstalleerd.
 
 ```xml
         <profile>
@@ -144,7 +144,7 @@ Voor sommige builds moeten extra systeempakketten worden geïnstalleerd om volle
         </profile>
 ```
 
-Deze zelfde techniek kan worden gebruikt om taal-specifieke pakketten te installeren, bijvoorbeeld `gem` voor RubyGems of `pip` voor Python Packages.
+Dezelfde techniek kan worden gebruikt om taalspecifieke pakketten te installeren, bijvoorbeeld met `gem` voor RubyGems of `pip` voor Python Packages.
 
 >[!NOTE]
 >
@@ -152,4 +152,4 @@ Deze zelfde techniek kan worden gebruikt om taal-specifieke pakketten te install
 
 >[!TIP]
 >
->Voor meer informatie over de omgeving van de front-end build raadpleegt u [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+>Voor details over het front-end bouwt milieu, zie [ het Ontwikkelen Plaatsen met de Voorste-Eind Pijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).

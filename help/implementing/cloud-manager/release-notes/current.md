@@ -18,7 +18,7 @@ Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 20
 
 >[!NOTE]
 >
->Zie [deze pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de actuele releaseopmerkingen voor Adobe Experience Manager as a Cloud Service.
+>Zie [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service.
 
 ## Releasedatum {#release-date}
 
@@ -26,13 +26,13 @@ De releasedatum voor Cloud Manager release 2024.6.0 in AEM as a Cloud Service is
 
 ## Wat is er nieuw? {#what-is-new}
 
-* U kunt nu [gebruik uw eigen GitHub-repositories](/help/implementing/cloud-manager/managing-code/private-repositories.md) als bronnen voor zowel volledig-stapelpijpleidingen als frontpijpleidingen.
-   * Bovendien kunt u uit bewaarplaatsen GitHub met voordeel halen [git-submodules;](/help/implementing/cloud-manager/managing-code/git-submodules.md) voorzien u van verbeterde controle over de auto-geproduceerde pijpleidingen die voor de bevestiging van het trekkingsverzoek worden gebruikt en het toestaan van u om gedrag voor cruciale metriek tijdens de fase van het codescannen te bepalen.
-   * [U kunt ook](/help/implementing/cloud-manager/managing-code/github-check-config.md) om de rapportgeschiedenis op GitHub te bewaren, noem de pijpleiding, en plaats pijpleidingsvariabelen om uw behoeften aan te passen.
-* [Self-service inhoud herstellen](/help/operations/restore.md) biedt back-upherstel gedurende maximaal zeven dagen en functies:
+* U kunt [ uw eigen bewaarplaatsen GitHub ](/help/implementing/cloud-manager/managing-code/private-repositories.md) nu gebruiken als bronnen voor zowel volledig-stapel als frontend pijpleidingen.
+   * Bovendien, kunt u uit bewaarplaatsen GitHub met [ git submodules voordeel halen, ](/help/implementing/cloud-manager/managing-code/git-submodules.md) die u van verbeterde controle over de auto-geproduceerde pijpleidingen voorzien die voor de bevestiging van het trekkingsverzoek worden gebruikt en die u toestaan om gedrag voor cruciale metriek tijdens de fase van het codescanningsprogramma te bepalen.
+   * [ u hebt ook de keus ](/help/implementing/cloud-manager/managing-code/github-check-config.md) om de rapportgeschiedenis op GitHub te bewaren, de pijpleiding te noemen, en pijpleidingsvariabelen te plaatsen om uw behoeften aan te passen.
+* [ Zelfinhoud herstelt ](/help/operations/restore.md) reserverestauratie voor maximaal zeven dagen en eigenschappen:
    * Point-in-time back-upherstel voor de voorgaande 24 uur
    * Herstel van vaste tijd tot zeven dagen
-* [Nieuwe OakPal-regels](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) zijn toegevoegd aan de Cloud Manager Code Quality Scan.
+* [ de Nieuwe regels OakPal ](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) werden toegevoegd aan het aftasten van de Kwaliteit van de Code van Cloud Manager.
    * Elke nieuwe regel die vanaf juni 2024 wordt toegevoegd, is een onverbrekelijke verandering.
    * U wordt aangespoord deze problemen zo snel mogelijk aan te pakken, aangezien deze nieuwe regels ertoe zullen leiden dat pijpleidingen vanaf de release van Cloud Manager augustus 2024 mislukken.
 
@@ -42,17 +42,17 @@ Een kans om een aantal van de komende eigenschappen te testen, maakt deel uit va
 
 ### Ondersteuning voor Edge Delivery Services in Cloud Manager {#edge-delivery-services}
 
-Als u Edge Delivery Services met licentie hebt als onderdeel van Adobe Experience Manager Sites, [u kunt nu rechtstreeks aan boord van uw site gaan met Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) en woon met behulp van een geleide, zelfbediening ervaring.
+Als u Edge Delivery Services als deel van Adobe Experience Manager Sites in licentie hebt gegeven, [ kunt u nu aan boord van uw plaats met Edge Delivery Services direct in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery-services.md) gaan en het gebruiken van een geleide, zelfbediening ervaring gaan.
 
 Dit maakt een verenigde ervaring voor al uw AEM eigenschappen mogelijk, die consistentie met alle kritieke werkschema&#39;s met inbegrip van het beheer van domeinnamen, SSL certificaatbeheer, en afbeeldingen CDN verzekeren.
 
-Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `aemcs-cmedgedelsvs-program-adopter@adobe.com` van het e-mailadres dat aan uw Adobe ID is gekoppeld.
+Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `aemcs-cmedgedelsvs-program-adopter@adobe.com` via het e-mailadres dat bij uw Adobe ID hoort.
 
 ### DV-certificaten (Domain Validated)
 
-Met Cloud Manager kunt u nu [De zelfbediening produceert en beheert domein bevestigde (DV) SSL certificaten.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Dit biedt u de snelste, eenvoudigste en voordeligste oplossing om een veilige website voor uw online bedrijf te maken.
+Cloud Manager staat nu u toe [ zelfbediening produceert en beheert domein bevestigde (DV) SSL certificaten.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Dit biedt u de snelste, eenvoudigste en voordeligste oplossing om een veilige website voor uw onlinebedrijf te maken.
 
-Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `Grp-aemcs-dv-dert-adopter@adobe.com` van het e-mailadres dat aan uw Adobe ID is gekoppeld.
+Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `Grp-aemcs-dv-dert-adopter@adobe.com` via het e-mailadres dat bij uw Adobe ID hoort.
 
 <!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
 
@@ -64,8 +64,8 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ### Experience Audit Dashboard {#experience-audit-dashboard}
 
-[Het Cloud Manager Experience Audit-dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) bevat een trendweergave van de prestatiesscores van uw pagina, samen met inzichten en aanbevelingen om u te helpen deze te verbeteren. De Experience Audit is opgenomen als een stap in de Cloud Manager-productiepijplijn.
+[ het dashboard van de Controle van de Ervaring van Cloud Manager ](/help/implementing/cloud-manager/experience-audit-dashboard.md) omvat een trended mening van uw scores van paginaprestaties samen met inzichten en aanbevelingen om u te helpen hen verbeteren. De Experience Audit is opgenomen als een stap in de Cloud Manager-productiepijplijn.
 
 Het dashboard gebruikt Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar, of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
 
-Geïnteresseerd in het testen van het nieuwe dashboard? Om aan de slag te gaan, stuurt u een e-mail naar `aem-lighthouse-pilot@adobe.com` van uw e-mail die aan uw Adobe ID is gekoppeld.
+Geïnteresseerd in het testen van het nieuwe dashboard? Om aan de slag te gaan, stuurt u een e-mail naar `aem-lighthouse-pilot@adobe.com` vanuit de e-mail die aan uw Adobe ID is gekoppeld.

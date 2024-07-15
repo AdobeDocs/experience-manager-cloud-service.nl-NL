@@ -1,6 +1,6 @@
 ---
-title: Ondersteuning voor miniaturen voor video's in as a Cloud Service schermen
-description: Op deze pagina wordt beschreven hoe u ondersteuning voor miniaturen voor video's in as a Cloud Service schermen toevoegt.
+title: Ondersteuning voor miniaturen voor video's in Screens as a Cloud Service
+description: Op deze pagina wordt beschreven hoe u ondersteuning voor miniaturen voor video's in Screens as a Cloud Service kunt toevoegen.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 feature: Developing Screens
@@ -32,40 +32,40 @@ Met ondersteuning voor miniaturen kunt u het volgende doen:
 ## Miniaturen in video&#39;s gebruiken {#using-thumbnails}
 
 >[!IMPORTANT]
->**Vereisten**
->Voordat u leert hoe u miniaturen voor video&#39;s kunt gebruiken, moet u weten hoe u video-uitvoeringen voor kanalen maakt in het as a Cloud Service project Schermen. Zie [Video-uitvoeringen maken in as a Cloud Service schermen](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
+>**Eerste vereisten**
+>Voordat u leert hoe u miniaturen voor video&#39;s kunt gebruiken, moet u weten hoe u video-uitvoeringen voor kanalen maakt in Screens as a Cloud Service project. Zie [ Creërend VideoUitvoeringen in Screens as a Cloud Service ](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
 
 Voer de onderstaande stappen uit om miniaturen in video&#39;s te gebruiken:
 
-1. Navigeer naar een bestaand rasterkanaal of maak een kanaal.
+1. Navigeer naar een bestaand Screens-kanaal of maak een kanaal.
 
    >[!NOTE]
-   >Ga voor meer informatie over het maken van een kanaal en het toevoegen van inhoud aan een kanaal naar [Een kanaal maken en beheren in as a Cloud Service schermen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
+   >Leren hoe te om een kanaal tot stand te brengen en inhoud aan een kanaal toe te voegen, zie [ Creërend en het Leiden een Kanaal in Screens as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
 
-1. Selecteer het kanaal. Klik op de actiebalk op **Bewerken** de editor openen.
+1. Selecteer het kanaal. Voor de actiebar, geeft de klik **** uit om de redacteur te openen.
 
 
-   ![De knop Bewerken op de actiebalk](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
-
-1. Voeg of geef een bestaande videocomponent, zoals aangetoond in hieronder figuur toe uit.
-
-   ![Gemarkeerde afbeelding van een video-element](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
+   ![ geef knoop op actiebar ](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png) uit.
 
 1. Voeg of geef een bestaande videocomponent, zoals aangetoond in hieronder figuur toe uit.
 
-1. Selecteer de video en klik op Configure (*moersleutel*) om de video-eigenschappen te openen.
+   ![ Gemarkeerd beeld van een videoactiva ](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
-   ![Afbeelding van geselecteerd video-element met pijl die wijst naar het pictogram Configureren, weergegeven als een moersleutel. op de werkbalk](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
+1. Voeg of geef een bestaande videocomponent, zoals aangetoond in hieronder figuur toe uit.
 
-1. De **Video** wordt geopend waar u de **Miniatuur** dropzone.
+1. Selecteer de video en klik Configure (*moersleutel*) pictogram om de videoeigenschappen te openen.
 
-   ![Het dialoogvenster Video waarin de afbeelding van het video-element en het dialoogvenster Miniatuur worden weergegeven](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
+   ![ Geselecteerde beeld van videoactiva met pijl die aan het Configure pictogram richten, geportretteerd als moersleutel. op de toolbar ](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
-1. Sleep een afbeelding van de elementkiezer naar de **Miniatuur** zone neerzetten en klikken **Gereed**.
+1. Het **Video** dialoogvakje opent waar u de **3} dalingsstreek van de Duimnagel {kunt bekijken.**
 
-   ![De afbeeldingskiezer van het element die achter het dialoogvenster Video wordt weergegeven met het afbeeldingselement dat wordt weergegeven in de vervolgkeuzelijst Miniatuur](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
+   ![ de dialoogdoos die van de Video beeld van videoactiva en de duimnageldoos toont ](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
-1. Klikken **Voorvertoning**.
+1. De belemmering en laat vallen een beeld van de activa plukker aan de **1} dalingsstreek van de Duimnagel {en klikt** Gedaan **.**
+
+   ![ de beeldplukker van Activa die achter de Videodialoogdoos met beeldactiva wordt getoond in de de dalingsdoos van de Duimnagel ](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
+
+1. Klik **Voorproef**.
 
 1. Als een video op de component wordt geplaatst, speelt de video. Als dat niet het geval is en de miniatuur is ingesteld, wordt de miniatuur afgespeeld. Anders, wordt de component beschouwd als niet gevormd en overgeslagen.
 

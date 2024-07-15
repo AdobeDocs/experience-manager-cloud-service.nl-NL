@@ -19,13 +19,13 @@ Nodes in de opslagplaats zijn onderworpen aan naamconventies van de Java Content
 
 Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
-* JcrUtil: de AEM uitvoering van de [JCR-hulpprogramma&#39;s](#jcr-utilities).
-* PageManager: de [Paginabeheer](#page-manager) biedt methoden voor bewerkingen op paginaniveau.
-* Binnen de AEM UI {#ui-behavior}
+* JcrUtil: de AEM implementatie van de [ nut JCR ](#jcr-utilities).
+* PageManager: de [ Manager van de Pagina ](#page-manager) verstrekt methodes voor de verrichtingen van het paginaniveau.
+* Binnen de AEM-gebruikersinterface {#ui-behavior}
 
 ### JCR-hulpprogramma&#39;s {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) is de AEM uitvoering van de hulpprogramma&#39;s van het GCO. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
+[ JcrUtil ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) is de AEM implementatie van de nut JCR. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
 
 * `isValidName`
    * Controleert of de naam niet leeg is en alleen geldige tekens bevat.
@@ -36,7 +36,7 @@ Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
 ### Paginabeheer {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) biedt methoden voor bewerkingen op paginaniveau op basis van [JCRUtil](#jcr-utilities).
+[ PageManager ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) verstrekt methodes voor de verrichtingen van het paginaniveau, die op [ worden gebaseerd JCRUtil ](#jcr-utilities).
 
 ### Werking AEM UI {#ui-behavior}
 

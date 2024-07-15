@@ -1,6 +1,6 @@
 ---
 title: App Builder-toepassingen implementeren
-description: Leer hoe u App Builder-toepassingen voor Adobe Experience Manager (AEM) as a Cloud Service kunt implementeren.
+description: Leer hoe u App Builder-toepassingen voor Adobe Experience Manager (AEM) as a Cloud Service implementeert.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # App Builder-toepassingen implementeren
 
-Leer wat opstellen middelen voor App Builder, en hoe te om uw toepassing op te stellen App Builder gebruikend Adobe I/O CLI.
+Leer wat plaatsing voor App Builder betekent, en hoe te om uw toepassing van App Builder op te stellen gebruikend Adobe I/O CLI.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

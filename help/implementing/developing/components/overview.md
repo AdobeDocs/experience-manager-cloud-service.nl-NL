@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Overzicht van componenten {#components-overview}
 
-Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals [gebruikt voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/page-editor/components.md).
+Deze pagina verstrekt een overzicht van de componenten van Adobe Experience Manager (AEM) zoals die [ die voor pagina creatie ](/help/sites-cloud/authoring/page-editor/components.md) worden gebruikt.
 
 ## Wat zijn componenten? {#what-are-components}
 
@@ -26,7 +26,7 @@ Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, 
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
 * Dialoogvensters van het gebruik die gebruikend subelementen worden gebouwd die op componenten van Granite UI worden gebaseerd.
-* Ze worden ontwikkeld met [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
+* Zij worden ontwikkeld gebruikend [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 * Ze kunnen worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
 
 Omdat componenten modulair zijn, kunt u:
@@ -44,22 +44,22 @@ Elke AEM component:
 
 ## AEM-kerncomponenten {#aem-core-components}
 
-[De AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde WCM-componenten (Web Content Management) voor AEM om de ontwikkelingstijd te versnellen en de onderhoudskosten van uw websites te verlagen.
+[ de Componenten van de Kern van de AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en de onderhoudskosten van uw websites te drukken.
 
-De Core Components worden geleverd met AEM as a Cloud Service en de [WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustreert hoe u componenten kunt implementeren en gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
+De Componenten van de Kern worden voorzien van AEM as a Cloud Service en het [ WKND Leerprogramma ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustreert hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
 
 ### Beschikbare componenten weergeven {#viewing-available-components}
 
-Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik [Componentenconsole](/help/sites-cloud/authoring/components-console.md).
+Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik de [ Console van Componenten ](/help/sites-cloud/authoring/components-console.md).
 
 U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 
-1. In **[!UICONTROL CRXDE Lite]**, selecteert u **[!UICONTROL Tools]** vanaf de werkbalk, dan **[!UICONTROL Query]**, die de **[!UICONTROL Query]** tab.
+1. Selecteer in **[!UICONTROL CRXDE Lite]** eerst **[!UICONTROL Tools]** op de werkbalk en vervolgens **[!UICONTROL Query]** , waarna het tabblad **[!UICONTROL Query]** wordt geopend.
 
-1. In de **[!UICONTROL Query]** tab, selecteert u `XPath` als **[!UICONTROL Type]**.
+1. Selecteer `XPath` as **[!UICONTROL Type]** op het tabblad **[!UICONTROL Query]** .
 
-1. In de **[!UICONTROL Query]** Voer de volgende tekenreeks in in het invoerveld:
+1. Voer in het invoerveld **[!UICONTROL Query]** de volgende tekenreeks in:
 
    `//element(*, cq:Component)`
 
-1. Klikken **[!UICONTROL Execute]** en de componenten worden vermeld.
+1. Klik op **[!UICONTROL Execute]** en de componenten worden weergegeven.

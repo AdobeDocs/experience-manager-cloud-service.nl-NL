@@ -18,15 +18,15 @@ ht-degree: 0%
 
 ## Aangepaste verzending van formuliergegevens {#adaptive-form-data-submission}
 
-Adaptive Forms biedt verschillende kant-en-klare [Handelingen verzenden](configuring-submit-actions.md) workflows voor het verzenden van de formuliergegevens naar verschillende eindpunten.
+De adaptieve Forms verstrekt verscheidene uit-van-de-doos [ verzendt de werkschema&#39;s van Acties ](configuring-submit-actions.md) voor het voorleggen van de vormgegevens aan verschillende eindpunten.
 
-Bijvoorbeeld de **[!UICONTROL Send email]** Met Actie verzenden wordt een e-mail verzonden wanneer een adaptief formulier met succes is verzonden. Het kan ook worden geconfigureerd om de formuliergegevens en de PDF in de e-mail te verzenden.
+Met de handeling **[!UICONTROL Send email]** Verzenden wordt bijvoorbeeld een e-mail verzonden wanneer een adaptief formulier met succes is verzonden. Het kan ook worden geconfigureerd om de formuliergegevens en de PDF in de e-mail te verzenden.
 
 In dit artikel worden de stappen beschreven waarmee de e-mailactie wordt ingeschakeld op een adaptief formulier en op verschillende configuraties ervan.
 
 >[!NOTE]
 >
->U kunt ook de opdracht **[!UICONTROL Send PDF via email]** om het ingevulde formulier per e-mail te verzenden als een PDF-bijlage. De configuratieopties die beschikbaar zijn voor deze actie zijn gelijk aan de opties die beschikbaar zijn voor de **[!UICONTROL Send email]** handeling. De PDF-actie via e-mail is alleen beschikbaar voor adaptieve Forms op basis van XFA
+>U kunt de optie **[!UICONTROL Send PDF via email]** ook gebruiken om het ingevulde formulier per e-mail te verzenden als een PDF-bijlage. De configuratieopties die beschikbaar zijn voor deze actie, zijn gelijk aan de opties die beschikbaar zijn voor de **[!UICONTROL Send email]** -actie. De PDF-actie via e-mail is alleen beschikbaar voor adaptieve Forms op basis van XFA
 
 ## E-mailactie verzenden {#email-action}
 
@@ -64,21 +64,21 @@ Met de handeling E-mail verzenden kan een auteur automatisch e-mail verzenden na
 
 De veldnamen in een adaptief formulier worden tijdelijke aanduidingen genoemd die worden vervangen door de waarde van dat veld nadat een gebruiker het formulier heeft verzonden.
 
-In de **[!UICONTROL Send email]** gebruiken, kunt u plaatsaanduidingen gebruiken die worden verwerkt wanneer de handeling wordt uitgevoerd. Dit betekent dat de kopteksten van de e-mail (zoals **[!UICONTROL To]**, **[!UICONTROL CC]**, **[!UICONTROL BCC]**, **[!UICONTROL Subject]**) worden gegenereerd wanneer de gebruiker het formulier verzendt.
+In de handeling **[!UICONTROL Send email]** kunt u plaatsaanduidingen gebruiken die worden verwerkt wanneer de handeling wordt uitgevoerd. Dit betekent dat de kopteksten van de e-mail (zoals **[!UICONTROL To]** , **[!UICONTROL CC]** , **[!UICONTROL BCC]** , **[!UICONTROL Subject]** ) worden gegenereerd wanneer de gebruiker het formulier verzendt.
 
-Als u een tijdelijke aanduiding wilt definiëren, geeft u `${<field name>}` in een veld na het selecteren **[!UICONTROL Send email]** als handeling verzenden.
+Als u een plaatsaanduiding wilt definiëren, geeft u `${<field name>}` op in een veld nadat u **[!UICONTROL Send email]** hebt geselecteerd als de handeling Verzenden.
 
-Als het formulier bijvoorbeeld het **[!UICONTROL Email address]** veld, naam `email_addr`Voor het vastleggen van de e-mailadres van een gebruiker kunt u het volgende opgeven in het dialoogvenster **[!UICONTROL To]**, **[!UICONTROL CC]**, of **[!UICONTROL BCC]** velden.
+Als het formulier bijvoorbeeld het veld **[!UICONTROL Email address]** met de naam `email_addr` bevat voor het vastleggen van de e-mailadres van een gebruiker, kunt u het volgende opgeven in de velden **[!UICONTROL To]** , **[!UICONTROL CC]** of **[!UICONTROL BCC]** .
 
 `${email_addr}`
 
-Wanneer een gebruiker het formulier verzendt, wordt een e-mailbericht verzonden naar de e-mailid die is ingevoerd in het dialoogvenster `email_addr` veld van het formulier.
+Wanneer een gebruiker het formulier verzendt, wordt een e-mail verzonden naar de e-mailid die is ingevoerd in het veld `email_addr` van het formulier.
 
 >[!NOTE]
 >
 >U kunt de naam van een veld vinden in het dialoogvenster **[!UICONTROL Edit]** voor het veld.
 
-U kunt ook plaatsaanduidingen voor variabelen gebruiken in het dialoogvenster **[!UICONTROL Subject]** en **[!UICONTROL Email Template]** velden.
+U kunt ook plaatsaanduidingen voor variabelen gebruiken in de velden **[!UICONTROL Subject]** en **[!UICONTROL Email Template]** .
 
 Bijvoorbeeld:
 

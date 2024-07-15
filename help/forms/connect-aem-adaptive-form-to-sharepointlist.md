@@ -1,6 +1,6 @@
 ---
-title: Hoe kan AEM adaptief formulier worden verbonden met Microsoft&reg; SharePoint List?
-description: Een adaptief formulier verbinden met Microsoft&reg; SharePoint-lijst. Leer hoe u Microsoft&reg configureert; SharePoint-lijst en een FDM (Form Data Model) maakt met behulp van de configuratie. Bovendien leert u hoe te om FDM met uw Aangepast Vorm te integreren.
+title: Hoe te om AEM Aangepast Vorm met Microsoft&amp te verbinden;reg; Lijst van SharePoint?
+description: Een adaptief formulier verbinden met Microsoft&reg; SharePoint-lijst. Leer hoe u de Microsoft&reg; SharePoint-lijst configureert en een Form Data Model (FDM) maakt met behulp van de configuratie. Bovendien leert u hoe te om FDM met uw Aangepast Vorm te integreren.
 role: User, Developer
 keywords: Sluit AEM adaptief formulier aan op de Microsoft SharePoint-lijst, sluit adaptief formulier aan op de Microsoft SharePoint-lijst, integreer AEM adaptief formulier met de SharePoint SharePoint-lijst, integreer Adaptief formulier met de-lijst, verzend gegevens van een adaptief formulier naar de-lijst, verzend AEM workflow naar de-lijst.
 hide: true
@@ -15,14 +15,14 @@ ht-degree: 0%
 
 # Een adaptief formulier verbinden met de Microsoft® SharePoint-lijst
 
-<span class="preview"> Dit is een pre-release functie die toegankelijk is via onze [pre-releasekanaal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Dit is een pre-versieeigenschap en toegankelijk door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-**Microsoft® SharePoint**: Microsoft® SharePoint maakt samenwerking mogelijk door dynamische en efficiënte teamsites te bieden voor alle teams, afdelingen en afdelingen. Het wordt gebruikt om, informatie van om het even welk apparaat op te slaan te organiseren, te delen en toegang tot informatie van om het even welk Webbrowser, bijvoorbeeld, Microsoft® Edge, Internet Explorer, Chrome, of Firefox. De twee belangrijkste onderdelen van **Microsoft® SharePoint** zijn:
+**Microsoft® SharePoint**: Microsoft® SharePoint laat samenwerking toe door dynamische en efficiënte teamplaatsen voor alle teams, afdelingen, en afdelingen te verstrekken. Het wordt gebruikt om, informatie van om het even welk apparaat op te slaan te organiseren, te delen en toegang tot informatie van om het even welk Webbrowser, bijvoorbeeld, Microsoft® Edge, Internet Explorer, Chrome, of Firefox. De twee belangrijkste componenten van **Microsoft® SharePoint** zijn:
 
-* **Microsoft® SharePoint Document Library**: In de Microsoft® SharePoint-documentbibliotheek wordt een lijst met bestanden en mappen weergegeven, samen met de bijbehorende toetsgegevens, zoals de datum waarop het document voor het laatst is gewijzigd en de eigenaar van een bestand. Met deze functie kunt u eenvoudig bestanden ordenen en navigeren.
-Voor instructies over het integreren van een **Microsoft® SharePoint Document Library** met een adaptief formulier, raadpleegt u de [Handeling Adaptief verzenden van formulier](/help/forms/configuring-submit-actions.md#submit-to-sharepoint) artikel.
+* **de Bibliotheek van het Document van Microsoft® SharePoint®**: De Bibliotheek van het Document van Microsoft® SharePoint toont een lijst van dossiers en omslagen samen met hun zeer belangrijke informatie, zoals de laatste gewijzigde datum en de eigenaar van een dossier. Met deze functie kunt u eenvoudig bestanden ordenen en navigeren.
+Voor instructies op hoe te om de Bibliotheek van het Document van a **Microsoft® SharePoint** met een Aangepaste Vorm te integreren, zie [ AanpassingsVorm voorlegt het artikel van de Actie ](/help/forms/configuring-submit-actions.md#submit-to-sharepoint).
 
-* **Microsoft® SharePoint List**: Microsoft® SharePoint List is een verzameling gegevens. U kunt kolommen toevoegen voor verschillende typen gegevens en weergaven maken om gegevens effectief weer te geven. U kunt de lijsten gemakkelijk groeperen, filteren, sorteren, en formatteren.
+* **Microsoft® SharePoint Lijst**: De Lijst van Microsoft® SharePoint is een inzameling van gegevens. U kunt kolommen toevoegen voor verschillende typen gegevens en weergaven maken om gegevens effectief weer te geven. U kunt de lijsten gemakkelijk groeperen, filteren, sorteren, en formatteren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
@@ -42,7 +42,7 @@ Nu kunt u:
 
 ## Een adaptief formulier verbinden met de Microsoft® SharePoint-lijst {#connect-af-sharepoint-list}
 
-Microsoft® SharePoint List integreren in uw adaptieve formulier [Een adaptief formulier configureren voor het gebruik van een FDM (Form Data Model)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Om de Lijst van Microsoft® SharePoint aan uw Aangepaste Vorm [ te integreren vormt een Aangepast Vorm om een Model van de Gegevens van de Vorm (FDM) te gebruiken ](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
 Nadat u een adaptief formulier hebt geconfigureerd voor het gebruik van een FDM (Form Data Model), kunt u:
 
@@ -53,7 +53,7 @@ Nadat u een adaptief formulier hebt geconfigureerd voor het gebruik van een FDM 
 
 Microsoft® SharePoint List integreren in een AEM workflow:
 
-1. [Een workflow maken om een FDM (Form Data Model) aan te roepen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. [ creeer een werkschema om een model van Gegevens van de Vorm (FDM) aan te halen ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
    <!--
     To create a workflow with the editor:
@@ -69,7 +69,7 @@ Microsoft® SharePoint List integreren in een AEM workflow:
 1. [Vorm voorleggen actie om een AEMWerkschema aan te halen](/help/forms/configuring-submit-actions.md#invoke-an-aem-workflow)
 
 
-Leer hoe u [AEM gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html) om samen te werken, inhoud te beheren en te verwerken in een adaptief formulier.
+Leer hoe te [ gebruik AEM Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html) om, inhoud in een AanpassingsVorm samen te werken te beheren en te verwerken.
 
 ## Aanbevolen procedures {#best-practices}
 

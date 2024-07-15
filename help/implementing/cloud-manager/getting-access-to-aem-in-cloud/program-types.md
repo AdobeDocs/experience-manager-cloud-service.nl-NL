@@ -15,32 +15,32 @@ ht-degree: 0%
 
 # Programma&#39;s en programmatypen {#understanding-programs}
 
-Cloud Manager is opgebouwd rond een hiërarchie van entiteiten. De details hiervan zijn niet van essentieel belang voor uw dagelijkse werk in Cloud Manager, maar een overzicht hiervan helpt u bij het begrijpen van programma&#39;s en het opzetten van uw eigen programma.
+Cloud Manager is opgebouwd rond een hiërarchie van entiteiten. De details hiervan zijn niet van cruciaal belang voor uw dagelijkse werk in Cloud Manager, maar een overzicht ervan zal u helpen bij het begrijpen van programma&#39;s en het opzetten van uw eigen programma.
 
-![Hiërarchie van Cloud Manager](assets/program-types1.png)
+![ hiërarchie van Cloud Manager ](assets/program-types1.png)
 
-* **TENANT** - Dit is de top van de hiërarchie. Elke klant is provisioned met een huurder.
-* **PROGRAMMA&#39;S** - elke huurder een of meer programma&#39;s heeft, [die vaak de gelicentieerde oplossingen van de klant weerspiegelen.](introduction-production-programs.md)
-* **OMGEVINGEN** - Elk programma heeft meerdere omgevingen, zoals productie voor live-inhoud, één voor staging en één voor ontwikkelingsdoeleinden.
+* **TENANT** - dit is de bovenkant van de hiërarchie. Elke klant is provisioned met een huurder.
+* **PROGRAMMA&#39;S** - Elke huurder heeft één of meerdere programma&#39;s, [ die vaak op de gelicentieerde oplossingen van de klant wijzen.](introduction-production-programs.md)
+* **OMGEVINGEN** - Elk programma heeft veelvoudige milieu&#39;s zoals productie voor levende inhoud, voor het opvoeren, en voor ontwikkelingsdoeleinden.
    * Elk programma kan slechts één productiemilieu, maar veelvoudige non-production milieu&#39;s hebben.
-* **BEVESTIGING** - Programma&#39;s beschikken over git-opslagplaatsen waar de toepassing en front-end code worden onderhouden voor de omgevingen.
-* **GEREEDSCHAPPEN EN WORKFLOWS** - De pijpleidingen beheren de plaatsing van code van de bewaarplaatsen aan de milieu&#39;s terwijl andere hulpmiddelen voor toegang tot logboeken, controle, en milieubeheer toestaan.
+* **REPOSITORY** - De programma&#39;s hebben git bewaarplaatsen waar toepassing en front-end code voor de milieu&#39;s wordt gehandhaafd.
+* **TOOLS &amp; WORKFLOWS** - de Pijpleidingen beheren de plaatsing van code van de bewaarplaatsen aan de milieu&#39;s terwijl andere hulpmiddelen voor toegang tot logboeken, controle, en milieubeheer toestaan.
 
 Een voorbeeld is vaak handig bij het contextualiseren van deze hiërarchie.
 
-* WKND Travel and Adventure Enterprises zou een **huurder** die zich richt op reisgerelateerde media.
-* De huurder van WKND Reizen en Adventure Enterprises zou twee kunnen hebben **programma&#39;s**: één Sites-programma voor WKND Magazine en één Assets-programma voor WKND Media.
-* De programma&#39;s WKND Magazine en WKND Media zouden zowel dev, stadium, als productie hebben **omgevingen**.
+* De Onderneming van het Reizen van WKND en van het Avontuur zou a **huurder** kunnen zijn die zich op op reis betrekking hebbende media concentreert.
+* De huurder van de Onderneming van het WKND Reizen en van het Avontuur zou twee **programma&#39;s** kunnen hebben: één programma van Plaatsen voor het Tijdschrift van WKND en één programma van Assets voor Media WKND.
+* De programma&#39;s van het Tijdschrift WKND en van Media WKND zouden zowel dev, stadium, als productie **milieu&#39;s** hebben.
 
-## Broncodeopslagplaats {#source-code-repository}
+## Source Code Repository {#source-code-repository}
 
-Er wordt automatisch een programma voor Cloud Manager geleverd met een eigen git-opslagruimte.
+Een Cloud Manager-programma wordt automatisch voorzien van een eigen git-opslagruimte.
 
-Om tot de gegevensopslagplaats van de Manager van de Wolk toegang te hebben, moeten de gebruikers een git cliënt met een bevel-lijn hulpmiddel, een standalone visuele git cliënt, of winde van de gebruiker van keus zoals Eclipse, IntelliJ, of NetBeans gebruiken.
+Om tot de Cloud Manager git bewaarplaats toegang te hebben, moeten de gebruikers een git cliënt met een bevel-lijn hulpmiddel, een standalone visuele git cliënt, of winde van de gebruiker van keus zoals Eclipse, IntelliJ, of NetBeans gebruiken.
 
-Zodra een client is ingesteld, kunt u de git-opslagruimte beheren vanuit de gebruikersinterface van Cloud Manager. Ga voor meer informatie over het beheren van git met de gebruikersinterface van Cloud Manager naar [Toegang tot it](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+Zodra een git-client is ingesteld, kunt u de git-opslagruimte beheren vanuit de Cloud Manager-gebruikersinterface. Om over te leren hoe te om it te beheren gebruikend het gebruikersinterface van Cloud Manager, zie [ Toegang hebbend tot Git ](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-Als u de AEM Cloud-toepassing wilt gaan ontwikkelen, moet u een lokale kopie van de toepassingscode maken door deze uit te checken van de opslagplaats van Cloud Manager naar een locatie op uw lokale computer.
+Als u de AEM Cloud-toepassing wilt ontwikkelen, moet u een lokale kopie van de toepassingscode maken door deze uit te checken van de Cloud Manager-opslagplaats naar een locatie op uw lokale computer.
 
 ```java
 $ git clone {URL}
@@ -52,15 +52,15 @@ De workflow is dus een standaard git-workflow.
 1. De gebruiker brengt wijzigingen aan in de lokale gegevensopslagruimte voor code.
 1. Als dit gereed is, legt de gebruiker de wijzigingen weer vast aan de externe git-opslagplaats.
 
-Het enige verschil is dat de externe git-opslagplaats deel uitmaakt van Cloud Manager, die transparant is voor de ontwikkelaar.
+Het enige verschil is dat de externe git-opslagplaats deel uitmaakt van Cloud Manager, dat transparant is voor de ontwikkelaar.
 
 ## Programmatypen {#program-types}
 
-Een gebruiker kan een **productie** programma of een **sandbox** programma.
+Een gebruiker kan a **productie** programma of a **zandbak** programma tot stand brengen.
 
-* A **productieprogramma** wordt gemaakt om live verkeer voor uw site in te schakelen.
-   * Zie [Inleiding tot productieprogramma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer informatie .
-* A **sandboxprogramma** wordt typisch gecreeerd ten behoeve van opleiding, lopende demo&#39;s, enablement, POCs, of documentatie.
+* A **productieprogramma** wordt gecreeerd om levend verkeer voor uw plaats toe te laten.
+   * Zie [ Inleiding aan de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer details.
+* A **zandbakprogramma** wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, enablement, POCs, of documentatie te dienen.
    * Een zandbakomgeving is niet bedoeld voor het vervoer van levend verkeer en zal beperkingen hebben die een productieprogramma niet zal hebben.
-   * Het omvat Plaatsen en Activa en wordt geleverd automatisch bevolkt met een git tak die steekproefcode, een ontwikkelomgeving, en een niet productiepijplijn omvat.
-   * Zie [Inleiding tot Sandbox-programma&#39;s](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer informatie .
+   * Het omvat Plaatsen en Assets en wordt geleverd automatisch bevolkt met een git tak die steekproefcode, een ontwikkelomgeving, en een niet productiepijplijn omvat.
+   * Zie [ Inleiding aan Programma&#39;s Sandbox ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer details.

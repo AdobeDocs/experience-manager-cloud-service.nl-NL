@@ -1,6 +1,6 @@
 ---
-title: Afspeellagen registreren in as a Cloud Service schermen
-description: Op deze pagina wordt beschreven hoe u spelers kunt registreren in as a Cloud Service schermen.
+title: Players registreren in Screens as a Cloud Service
+description: Op deze pagina wordt beschreven hoe u spelers kunt registreren in Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
 feature: Developing Screens
 role: Admin, Developer, User
@@ -11,48 +11,48 @@ ht-degree: 1%
 
 ---
 
-# Afspeellagen registreren in as a Cloud Service schermen {#registering-players-screens-cloud}
+# Players registreren in Screens as a Cloud Service {#registering-players-screens-cloud}
 
-Nadat u spelers voor de as a Cloud Service schermen hebt geïnstalleerd en geconfigureerd, moet u de spelers registreren.
+Nadat u spelers voor Screens as a Cloud Service hebt geïnstalleerd en geconfigureerd, moet u de spelers registreren.
 
 ## Doelstelling {#objective}
 
 Met dit document krijgt u meer inzicht in het registreren van spelers bij de Screens Services Provider. Na het lezen moet u in staat zijn om:
 
 * begrijpen hoe spelers worden geregistreerd
-* hoe te om het registratieproces van de Leverancier van de Diensten van het Scherm te voltooien
+* hoe u het registratieproces van Screens Services Provider kunt voltooien
 
-## Stappen om een schermspeler te registreren {#register-players}
+## Stappen om een Screens Player te registreren {#register-players}
 
-Nadat u de speler op de as a Cloud Service schermen hebt geïnstalleerd, kunt u de speler registreren bij Screens Services Provider.
+Nadat u de speler op Screens as a Cloud Service hebt geïnstalleerd, kunt u de speler registreren bij de Screens Services Provider.
 
 Volg de onderstaande stappen om uw speler te registreren:
 
-1. Meld u aan bij de leverancier van schermservices.
+1. Meld u aan bij de Screens Services Provider.
 
-1. Navigeren naar **Registratiecodes** krachtens **Beheer van spelers** in het linkernavigatievenster en klik op **Code maken**.
+1. Navigeer aan **Codes van de Registratie** onder **beheer van Players** van het linkernavigatievenster en klik **creeer code**.
 
    >[!NOTE]
    >Als er geen geldige/niet-verlopen codes bestaan, klikt u op Code maken en voert u een naam voor de code in. Kies vervolgens de gewenste vervalinstellingen.
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player1.png)
 
-1. De volgende velden invullen **Een registratiecode maken** dialoogvenster:
+1. Vul de volgende gebieden in **creeer een de dialoogdoos van de registratiecode**:
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player2.png)
 
-   1. **Registratiecode**: Naam voor uw registratiecode
-   1. **Vervaldatum registratiecode**: Vervaldatum voor je inschrijvingscode
-   1. **Gebruik beperken**: Schakel de knop in en uit om de gebruikslimiet van de registratiecode uit te schakelen. Standaard is de optie Gebruik beperken uitgeschakeld.
-   1. **Gebruikslimiet**: Kies het nummer voor uw gebruikslimiet
+   1. **Naam van de Code van de Registratie**: Naam voor uw registratiecode
+   1. **Vervaldatum van de Code van de Registratie**: Datum van vervaldatum voor uw registratiecode
+   1. **Gebruik van de Beperking**: Knevel de knoop om de gebruiksgrens van uw registratiecode uit te schakelen. Standaard is de optie Gebruik beperken uitgeschakeld.
+   1. **Limiet van het Gebruik**: Kies het aantal voor uw gebruiksgrens
 
-1. Klikken **Maken** om de registratiecode te maken. U kunt de speler met de registratiecode in de lijst zien.
+1. Klik **creëren** om de registratiecode tot stand te brengen. U kunt de speler met de registratiecode in de lijst zien.
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player3.png)
 
-1. Klik op de waarde onder de kolom **REGISTRATIECODE**  om de waarde naar het klembord te kopiëren.
+1. Klik de waarde onder de kolom **CODE VAN DE REGISTRATIE** om de waarde aan het klembord te kopiëren.
 
-1. Plak deze waarde in het dialoogvenster **Code invoeren** in het veld **Spelerregistratie** van de Admin UI van de speler van AEM Screens en klik **Registreren**.
+1. Plak deze waarde in het **ingaan code** gebied op het **lusje van de Registratie van de Speler** van Admin UI van de speler van AEM Screens en klik **Register**.
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player4.png)
 
@@ -61,15 +61,15 @@ Volg de onderstaande stappen om uw speler te registreren:
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player5.png)
 
-1. Deze speler wordt nu weergegeven in **Players** in het navigatievenster aan de linkerkant. De code die in de Dienstverlener van de Vraag van het Scherm wordt getoond past aan **Systeeminformatie** uit de beheerinterface onder Player Code.
+1. U zou deze speler nu moeten zien verschijnen in **Players** van het linkernavigatievenster. De code die in de Dienstverlener van Screens toont past het **paneel van de Informatie van het Systeem** van Admin UI onder de Code van de Speler aan.
 
    ![afbeelding](/help/screens-cloud/assets/player/register-player6.png)
 
    >[!IMPORTANT]
-   >**Aanbevolen werkwijzen voor beveiliging tijdens het gebruik van registratiecode**
+   >**Aanbeveling van de Beste praktijken van de Veiligheid terwijl het gebruiken van de Code van de Registratie**
    >U kunt het gebruik van de registratiecode het beste beperken. Als een registratiecode gecompromitteerd is, maar een grens van 100 registraties heeft, dan kan de aanvaller slechts tot dat aantal, maar niet meer registreren. U kunt de gebruikslimiet altijd bijwerken nadat de registratiecode is gemaakt en enkele spelers van de klant al zijn geregistreerd. Als de klant ongebruikelijke registratieactiviteit voor een specifieke registratiecode opmerkt, kunnen zij de grens in real time verminderen terwijl zij onderzoeken en kunnen het aantal terugverhogen als het een vals alarm was, zonder de reeds geregistreerde spelers te beïnvloeden.
 
 
 ## Volgende functies {#whats-next}
 
-Nu u de speler hebt geïnstalleerd en geconfigureerd voor de cloud-modus, moet u de as a Cloud Service reis van de schermen voortzetten door het document opnieuw te bekijken. [Speler toewijzen aan een as a Cloud Service weergave in schermen](/help/screens-cloud/managing-players-registration/assigning-player-display.md) van Screens Services Provider.
+Nu, dat u de speler aan de wijze van de Wolk hebt geïnstalleerd en gevormd, zou u uw as a Cloud Service reis van Screens door het document te herzien moeten voortzetten, [ toewijzend Speler aan een Vertoning in Screens as a Cloud Service ](/help/screens-cloud/managing-players-registration/assigning-player-display.md) van Screens Services Provider.

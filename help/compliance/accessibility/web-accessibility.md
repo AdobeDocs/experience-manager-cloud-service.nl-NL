@@ -66,4 +66,4 @@ Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webco
 
 ## Toegankelijkheid bij Adobe {#accessibility-at-adobe}
 
-Zie voor meer informatie de [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+Voor extra informatie, zie het [ Centrum van het Middel van het Middel van de Toegankelijkheid van de Adobe ](https://www.adobe.com/accessibility/).

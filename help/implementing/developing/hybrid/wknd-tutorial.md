@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Ga in SPA ontwikkeling met deze meerdelige zelfstudie die u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing leidt die verplettert om uw eigen SPA uit te voeren.
 
-![WKND SPA Project](assets/wknd-spa-project.png)
+![ WKND SPA Project ](assets/wknd-spa-project.png)
 
 Vergelijkbaar met de AEM WKND-zelfstudie biedt deze op SPA gerichte tegenhanger een end-to-end voorbeeld van het bouwen van uw eigen single-page toepassing die met AEM beginnen met projectopstelling door toepassing het verpletteren bewerkbaar is.
 
-* [Uw eerste Angular SPA in AEM maken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
-* [Uw eerste SPA Reageren in AEM maken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [ creeer uw eerste Angular SPA in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [ creeer uw eerste Reactie SPA in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
-Voordat u met uw eigen SPA project begint voor AEM, kunt u echter ook de opdracht [SPA ontwikkelen voor AEM](developing.md) document.
+Alvorens u met uw eigen SPA project voor AEM begint, kunt u ook [ het Ontwikkelen SPA voor AEM ](developing.md) document willen herzien.

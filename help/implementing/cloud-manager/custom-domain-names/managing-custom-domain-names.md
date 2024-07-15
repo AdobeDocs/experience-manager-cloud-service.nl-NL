@@ -18,52 +18,52 @@ Met Cloud Manager kunt u aangepaste domeinnamen weergeven, bijwerken, vervangen 
 
 ## Weergeven en bijwerken {#view-and-update}
 
-Gebruik de **Weergeven en bijwerken** om de details van om het even welk van uw namen van het douanedomein te bekijken.
+Gebruik het **menu van de Mening en van de Update** om de details van om het even welk van uw namen van het douanedomein te bekijken.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
+1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
 1. Identificeer de rij van de naam van het douanedomein u bekijken of wilt bijwerken.
 
 1. Klik op de knop met de ellips helemaal rechts van de rij.
 
-1. Selecteer de **Weergeven en bijwerken** -optie.
+1. Selecteer de **Mening &amp; van de Update** optie.
 
 ## SSL-certificaat van aangepaste domeinnaam bijwerken {#update-cert}
 
-U kunt volgen [dezelfde stappen volgen om een aangepaste domeinnaam weer te geven en bij te werken](#view-and-update) om het SSL-certificaat van een aangepaste domeinnaam bij te werken.
+U kunt [ de zelfde stappen volgen om een naam van het douanedomein ](#view-and-update) te bekijken en bij te werken om SSL van een douanedomeinnaam certificaat bij te werken.
 
 >[!NOTE]
 >
->Het SSL-certificaat moet geldig zijn, [reeds geconfigureerd,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en bevat de aangepaste domeinnaam die u bijwerkt.
+>Het SSL certificaat moet geldig zijn, [ reeds gevormd, ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en bevat de naam van het douanedomein u bijwerkt.
 
 ## Een aangepaste domeinnaam verwijderen {#deleting}
 
-Een gebruiker met de **Zakelijke eigenaar** of **Implementatiebeheer** Met de rol kunt u Cloud Manager gebruiken om een aangepaste domeinnaam te verwijderen.
+Een gebruiker met de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** kan Cloud Manager gebruiken om een naam van het douanedomein te schrappen.
 
 ### Een aangepaste domeinnaam verwijderen uit alle bijbehorende omgevingen {#delete-cdn-all}
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Ga naar de **Domeininstellingen** pagina van de **Overzicht** scherm.
+1. Navigeer aan de **pagina van de Montages van het Domein** van het **scherm van het Overzicht**.
 
 1. Identificeer de rij van de naam van het douanedomein u wilt schrappen.
 
 1. Klik op de knop met de ellips helemaal rechts van de rij.
 
-1. Selecteren **Verwijderen**.
+1. Selecteer **Schrapping**.
 
 1. Bevestig je verzending.
 
 ### Een aangepaste domeinnaam uit een specifieke omgeving verwijderen {#delete-cdn-specific}
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
-1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
-1. Van de **Omgevingen** pagina, navigeer naar het detailscherm van de omgeving van belang.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
+1. Van de **pagina van Milieu&#39;s**, navigeer aan detailsscherm van het milieu van belang.
 1. Identificeer in de tabel met domeinnamen de rij van de aangepaste domeinnaam die u wilt verwijderen.
 1. Klik op de knop met de ellips helemaal rechts van de rij.
-1. Selecteren **Verwijderen**.
+1. Selecteer **Schrapping**.
 1. Bevestig je verzending.

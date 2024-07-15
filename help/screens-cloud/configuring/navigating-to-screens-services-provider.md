@@ -1,6 +1,6 @@
 ---
-title: Navigeren naar de Serviceverlener voor schermen
-description: In deze pagina wordt beschreven hoe u naar de Serviceverlener voor schermen kunt navigeren.
+title: Navigeren naar Screens Services Provider
+description: In deze pagina wordt beschreven hoe u naar Screens Services Provider kunt navigeren.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
@@ -11,24 +11,24 @@ ht-degree: 1%
 
 ---
 
-# Navigeren naar de Serviceverlener voor schermen {#setup-screens-services-provider}
+# Navigeren naar Screens Services Provider {#setup-screens-services-provider}
 
 ## Inleiding {#introduction}
 
-**Schermserviceprovider**, stelt de auteur van de inhoud, ontwikkelaars en beheerders in staat om weergaven en spelers voor het afspelen van inhoud te beheren zodra de inhoud aan de kanalen is toegevoegd. Zodra de gebruikers toegang tot AEM Cloud Service krijgen, moeten zij zich kunnen aanmelden bij Screens Services Provider.
+**Screens Services Provider**, staat de inhoudauteur, de ontwikkelaars, en de beheerders toe om vertoningen en spelers voor inhoudsplayback te beheren zodra de inhoud aan de kanalen wordt toegevoegd. Zodra de gebruikers toegang tot AEM Cloud Service krijgen, moeten zij zich kunnen aanmelden bij de Screens Services Provider.
 
-In deze sectie wordt beschreven hoe u de Serviceprovider voor schermen instelt.
+In deze sectie wordt beschreven hoe u Screens Services Provider kunt instellen.
 
 
 ## Doelstelling {#objective}
 
-De volgende sectie om de Dienstverlener van de Diensten van Schermen te vormen en te plaatsen.
+De volgende sectie om de Leverancier van de Diensten van Screens te vormen en te vestigen.
 
-## Stappen om de Dienstverlener van de Diensten van het scherm te vestigen {#screens-services-provider}
+## Stappen om Screens Services Provider in te stellen {#screens-services-provider}
 
-Voer de onderstaande stappen uit om de Serviceverlener voor schermen in te stellen:
+Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
 
-1. Ga vanuit [hier](https://experience.adobe.com/screens).
+1. Navigeer aan de Leverancier van de Diensten van Screens van [ hier ](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Als u toegang tot veelvoudige organisaties hebt, zorg ervoor dat u in correcte Organisatie hebt geregistreerd. Als u uw organisatie wilt wijzigen, klikt u op de naam van de organisatie in de rechterbovenhoek van het scherm en kiest u de gewenste organisatie waartoe u toegang nodig hebt.
@@ -38,24 +38,24 @@ Voer de onderstaande stappen uit om de Serviceverlener voor schermen in te stell
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. Voer in het dialoogvenster Instellingen bewerken de volgende gegevens in.
-   * **URL publiceren** - AEM publicatie-URL (bijvoorbeeld `https://publish-p12345-e12345.adobeaemcloud.com`)
-   * **Auteur-URL** - AEM auteur-URL (bijvoorbeeld `https://author-p12345-e12345.adobeaemcloud.com`)
+   * **URL van Publish** - AEM publiceert URL (bijvoorbeeld, `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **Auteur URL** - AEM auteur URL (bijvoorbeeld, `https://author-p12345-e12345.adobeaemcloud.com`)
 
    >[!NOTE]
-   >Zorg ervoor dat u ten minste één schermkanaal maakt en publiceert voordat u de AEM onder Scherm Service Provider configureert. Als u een kanaal wilt maken, navigeert u naar /screens.html op uw inhoudsprovider.
+   >Zorg ervoor dat u ten minste één AEM-schermkanaal maakt en publiceert voordat u de AEM onder Screens Service Provider configureert. Als u een kanaal wilt maken, navigeert u naar /screens.html op uw inhoudsprovider.
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Klikken **Opslaan** om verbinding te maken met de inhoudprovider van schermen
+4. Klik **sparen** om met de inhoudsleverancier van Screens te verbinden
 
-5. Selecteren **Kanalen** van de linkernavigatiebalk en klik op **openen in inhoudsprovider**.
+5. Selecteer **Kanalen** van de linkernavigatiebar en klik **open in inhoudsleverancier**.
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. De Inhoudsprovider van schermen wordt geopend op een ander tabblad waarop u uw inhoud kunt maken.
+6. De Screens Content Provider wordt geopend op een ander tabblad waarop u uw inhoud kunt maken.
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens2.png)
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u de Serviceverlener voor schermen instelt, navigeert u naar [Scherminhoudprovider gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) voor meer informatie .
+Nadat u hebt geleerd hoe te opstelling de Leverancier van de Diensten van Screens, navigeer aan [ Gebruikend de Leverancier van de Inhoud van Screens ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) voor meer details.

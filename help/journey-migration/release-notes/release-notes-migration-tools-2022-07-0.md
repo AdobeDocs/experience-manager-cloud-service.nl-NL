@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.7.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.7.0
+title: Opmerkingen bij de release AEM as a Cloud Service 2022.7.0 voor migratiehulpprogramma's
+description: Opmerkingen bij de release AEM as a Cloud Service 2022.7.0 voor migratiehulpprogramma's
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.7.0 {#release-notes}
+# Opmerkingen bij de release AEM as a Cloud Service 2022.7.0 voor migratiehulpprogramma&#39;s {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.7.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.7.0.
 
 ## Analysator van best practices {#bpa-release}
 
@@ -23,8 +23,8 @@ De releasedatum voor de analyse van best practices v2.1.30 is 27 juli 2022.
 
 ### Wat is er nieuw? {#what-is-new-bpa}
 
-* BPA kan nu de totale migreerbare grootte van de Lucene Index, die de Totale Lucene Index exclusief is, detecteren en rapporteren `/oak:index/lucene` en `/oak:index/damAssetLucene`.
-* Nieuw patroon toegevoegd in BPA om het gebruik van een aangepast i18n-woordenboek te detecteren en er een melding van te maken. Translator.html is niet beschikbaar in AEM as a Cloud Service en aangepast i18n-woordenboek moet worden geïmplementeerd vanuit Git via de Cloud Manager CI/CD-pijplijn.
+* BPA kan nu de totale migreerbare grootte van de Index van Lucene ontdekken en rapporteren die Totale Lucene Index exclusief `/oak:index/lucene` en `/oak:index/damAssetLucene` is.
+* Nieuw patroon toegevoegd in BPA om het gebruik van een aangepast i18n-woordenboek te detecteren en er een melding van te maken. Translator.html is niet beschikbaar in AEM as a Cloud Service en het aangepaste i18n-woordenboek moet worden geïmplementeerd vanuit Git via de Cloud Manager CI/CD-pijplijn.
 
 ### Opgeloste problemen {#bug-fixes-bpa}
 
@@ -56,9 +56,9 @@ De releasedatum voor Content Transfer Tool v2.0.12 is 19 juli 2022.
 
 ### Releasedatum {#release-date-cam}
 
-De releasedatum voor Cloud Acceleration Manager is 15 juli 2022.
+De Releasedatum voor Cloud Acceleration Manager is 15 juli 2022.
 
 ### Wat is er nieuw? {#what-is-new-cam}
 
-* Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om het migratietoken handmatig op te halen om een opname te kunnen starten wanneer automatisch ophalen mislukt. De automatische herwinning kan ontbreken als de klanten opstelling IP allow-list hebben die CAM blokkeert of als een niet-admin gebruiker probeert om een opname te beginnen. Zie [Problemen oplossen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) voor meer informatie .
+* Cloud Acceleration Manager biedt gebruikers nu de mogelijkheid om het migratietoken handmatig op te halen om een opname te kunnen starten wanneer het automatisch ophalen mislukt. De automatische herwinning kan ontbreken als de klanten opstelling IP allow-list hebben die CAM blokkeert of als een niet-admin gebruiker probeert om een opname te beginnen. Zie [ het Oplossen van problemen ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) voor meer informatie.
 * Lange tabellen op de pagina Complexiteit migratie kunnen nu worden samengevouwen, zodat u ze eenvoudig kunt gebruiken.

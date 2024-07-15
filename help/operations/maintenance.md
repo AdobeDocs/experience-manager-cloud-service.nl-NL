@@ -46,14 +46,14 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
   <tr>
     <td>Versie wissen</td>
     <td>Klant</td>
-    <td>De zuivering van de versie wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan, zoals die in worden beschreven <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Onderhoudstaken voor versiereiniging en controlelogbestand opschonen</a> sectie.<br/><br/>Het leegmaken wordt binnenkort standaard ingeschakeld, waarbij deze waarden kunnen worden overschreven.<br>
+    <td>De zuivering van de versie wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle van de Aanzuivering </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Logboek controleren leegmaken</td>
     <td>Klant</td>
-    <td>Het logboek van de controle zuivert is momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in wordt beschreven <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Onderhoudstaken voor versiereiniging en controlelogbestand opschonen</a> sectie.<br/><br/>Het leegmaken wordt binnenkort standaard ingeschakeld, waarbij deze waarden kunnen worden overschreven.<br>
+    <td>Het logboek van de controle zuivert wordt momenteel onbruikbaar gemaakt door gebrek, maar het beleid kan worden gevormd, zoals die in de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks"> sectie van de Aanzuivering van de Versie en van de Aanzuivering van het Logboek van de Controle </a> wordt beschreven.<br/><br/> het zuiveren zal spoedig door gebrek worden toegelaten, met die waarden met voeten treden.<br>
    </td>
    </td>
   </tr>
@@ -67,24 +67,24 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Ad-hoc taak wissen</td>
     <td>Klant</td>
     <td>
-    <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code>.</p>
-    <p>Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen. Naam geven <code>granite_TaskPurgeTask</code>, met kenmerk <code>sling:resourceType</code> instellen op <code>granite/operations/components/maintenance/task</code> en kenmerk <code>granite.maintenance.name</code> instellen op <code>TaskPurge</code>. Vorm de eigenschappen OSGI, zie <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> voor de lijst met eigenschappen.</p>
+    <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren.</p>
+    <p>Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails. Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen. Noem het <code>granite_TaskPurgeTask</code>, met attribuut <code>sling:resourceType</code> plaatste aan <code>granite/operations/components/maintenance/task</code> en attribuut <code>granite.maintenance.name</code> plaatste aan <code>TaskPurge</code>. Configureer de OSGI-eigenschappen. Zie <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> voor de lijst met eigenschappen.</p>
   </td>
   </tr>
     <tr>
     <td>Werkstroom leegmaken</td>
     <td>Klant</td>
     <td>
-    <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code>. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) <code>granite_WorkflowPurgeTask</code>) met de juiste eigenschappen. De eigenschappen van OSGI configureren <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5 Onderhoudstaken</a>.</p>
+    <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
+    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_WorkflowPurgeTask</code> ) met de juiste eigenschappen. Vorm de eigenschappen OSGI zie <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances"> AEM 6.5 documentatie van de Taak van het Onderhoud </a>.</p>
   </td>
   </tr>
   <tr>
     <td>Project wissen</td>
     <td>Klant</td>
     <td>
-    <p>Moet in de put worden gedaan. Overschrijf de uit-van-de-doos knoop van de het vensterconfiguratie van het Onderhoud onder <code>/libs</code> door eigenschappen onder de map te maken <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code>. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Laat de onderhoudstaak toe door een andere knoop onder de knoop hierboven toe te voegen (noem het) <code>granite_ProjectPurgeTask</code>) met de juiste eigenschappen. Zie de lijst van eigenschappen OSGI onder "de Projecten van de Adobe zuiveren Configuratie".</p>
+    <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
+    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst van eigenschappen OSGI onder "de Projecten van de Adobe zuiveren Configuratie".</p>
   </td>
   </tr>
   </tbody>
@@ -103,9 +103,9 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
   <td>
-  <p><strong>windowSchedule=daily</strong> (deze waarde mag niet worden gewijzigd)</p>
-  <p><strong>windowStartTime=HH:MM</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
-  <p><strong>windowEndTime=HH:MM</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
+  <p><strong> windowSchedule=daily </strong> (deze waarde zou niet moeten worden veranderd)</p>
+  <p><strong> windowStartTime=HH:MM </strong> die als 24 uurklok gebruikt. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
+  <p><strong> windowEndTime=HH:MM </strong> die als 24 uurklok gebruikt. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Dagelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
   <p>Een onderhoudstaak kan niet meer dan één keer tijdens dit tijdsbestek worden uitgevoerd.</p>
   </td> 
   </tr>
@@ -114,11 +114,11 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
     <td>
-    <p><strong>windowSchedule=wekelijks</strong> (deze waarde mag niet worden gewijzigd)</p>
-    <p><strong>windowStartTime=HH:MM</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het wekelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
-    <p><strong>windowEndTime=HH:MM</strong> gebruiken als 24-uurs klok. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Wekelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
+    <p><strong> windowSchedule=wekelijks </strong> (deze waarde zou niet moeten worden veranderd)</p>
+    <p><strong> windowStartTime=HH:MM </strong> die als 24 uurklok gebruikt. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het wekelijkse Venster van het Onderhoud zouden moeten beginnen uitvoerend.</p>
+    <p><strong> windowEndTime=HH:MM </strong> die als 24 uurklok gebruikt. Bepaalt wanneer de Taken van het Onderhoud verbonden aan het Wekelijkse Venster van het Onderhoud zouden moeten ophouden uitvoerend als zij nog niet hebben voltooid.</p>
     <p>Een onderhoudstaak kan niet meer dan één keer tijdens dit tijdsbestek worden uitgevoerd.</p>
-    <p><strong>windowScheduleWeekdays= Array van twee waarden van 1-7 (bijvoorbeeld [5,5])</strong> De eerste waarde van de array is de startdag waarop de taak is gepland en de tweede waarde is de einddag waarop de taak wordt gestopt. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.</p>
+    <p><strong> windowScheduleWeekdays= Serie van twee waarden van 1-7 (bijvoorbeeld, [5,5]) </strong> De eerste waarde van de serie is de begindag wanneer de baan gepland is en de tweede waarde is de einddag wanneer de baan zou worden tegengehouden. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.</p>
     </td>
   </tr>
   <tr>
@@ -126,24 +126,24 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>JCR-knooppuntdefinitie</td>
     <td>
-    <p><strong>windowSchedule=month</strong> (deze waarde mag niet worden gewijzigd)</p>
-    <p><strong>windowStartTime=HH:MM</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die aan het Maandelijkse Onderhoudsvenster zijn gekoppeld, moeten worden uitgevoerd.</p>
-    <p><strong>windowEndTime=HH:MM</strong> gebruiken als 24-uurs klok. Definieert wanneer de onderhoudstaken die zijn gekoppeld aan het venster Maandelijks onderhoud, niet meer moeten worden uitgevoerd als ze nog niet zijn voltooid.</p>
+    <p><strong> windowSchedule=month </strong> (deze waarde zou niet moeten worden veranderd)</p>
+    <p><strong> windowStartTime=HH:MM </strong> die als 24 uurklok gebruikt. Definieert wanneer de onderhoudstaken die aan het Maandelijkse Onderhoudsvenster zijn gekoppeld, moeten worden uitgevoerd.</p>
+    <p><strong> windowEndTime=HH:MM </strong> die als 24 uurklok gebruikt. Definieert wanneer de onderhoudstaken die zijn gekoppeld aan het venster Maandelijks onderhoud, niet meer moeten worden uitgevoerd als ze nog niet zijn voltooid.</p>
     <p>Een onderhoudstaak kan niet meer dan één keer tijdens dit tijdsbestek worden uitgevoerd.</p>
-    <p><strong>windowScheduleWeekdays=Array van twee waarden van 1-7 (bijvoorbeeld [5,5])</strong> De eerste waarde van de array is de startdag waarop de taak is gepland en de tweede waarde is de einddag waarop de taak wordt gestopt. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 naar schema op de eerste week van de maand of 1 naar schema op de laatste week van de maand. Het ontbreken van een waarde zou banen effectief plannen op de dag die door windowScheduleWeekdays (elke maand) wordt geregeld.</p>
+    <p><strong> windowScheduleWeekdays=Array van twee waarden van 1-7 (bijvoorbeeld, [5,5]) </strong> De eerste waarde van de serie is de begindag wanneer de baan gepland is en de tweede waarde is de einddag wanneer de baan zou worden tegengehouden. De exacte tijd van het begin en het einde wordt bepaald door respectievelijk windowStartTime en windowEndTime.</p>
+    <p><strong> windowFirstLastStartDay= 0/1 </strong> 0 aan programma op de eerste week van de maand of 1 aan programma op de laatste week van de maand. Het ontbreken van een waarde zou banen effectief plannen op de dag die door windowScheduleWeekdays (elke maand) wordt geregeld.</p>
     </td>
     </tr>
     </tbody>
 </table>
 
-**Locaties**:
+**Plaatsen**:
 
 * Dagelijks - /apps/settings/granite/operations/onderhoud/granite_day
 * Wekelijks - /apps/settings/granite/operations/onderhoud/graniet_week
 * Maandelijks - /apps/settings/granite/operations/onderhoud/granite_maandelijks
 
-**Codevoorbeelden**:
+**steekproeven van de Code**:
 
 Codemonster 1 (dagelijks)
 
@@ -219,21 +219,21 @@ Declareer een configuratiedossier en stel het op zoals die in de volgende stappe
 > 
 >Op dezelfde manier zodra u de knoop van de zuivering van het controlelogboek in het configuratiedossier opstelt, moet u het gedeclareerd houden en niet het verwijderen.
 
-**1** - maak de volgende map- en bestandsstructuur in de map op hoofdniveau van uw project in Git:
+**1** - creeer de volgende omslag en dossierstructuur in de top-level omslag van uw project in Git:
 
 ```
 config/
      mt.yaml
 ```
 
-**2** - Declareer eigenschappen in het configuratiedossier, die omvatten:
+**2** - verklaar eigenschappen in het configuratiedossier, die omvatten:
 
 * een &quot;kind&quot;bezit met de waarde &quot;MaintenanceTasks&quot;.
 * een eigenschap &quot;version&quot; (momenteel is dit versie 1).
-* een optioneel object &quot;metadata&quot; met de eigenschap `envTypes` met een door komma&#39;s gescheiden lijst van het omgevingstype (dev, stage, prod) waarvoor deze configuratie geldig is. Als er geen object metadata wordt gedeclareerd, is de configuratie geldig voor alle omgevingstypen.
-* een gegevensobject met beide `versionPurge` en `auditLogPurge` objecten.
+* een optioneel object ‘metadata’ met de eigenschap `envTypes` met een door komma&#39;s gescheiden lijst van het omgevingstype (dev, stage, prod) waarvoor deze configuratie geldig is. Als er geen object metadata wordt gedeclareerd, is de configuratie geldig voor alle omgevingstypen.
+* een gegevensobject met zowel `versionPurge` - als `auditLogPurge` -objecten.
 
-Zie de definities en syntaxis van de `versionPurge` en `auditLogPurge` objecten onder.
+Zie de definities en syntaxis van de objecten `versionPurge` en `auditLogPurge` hieronder.
 
 U zou de configuratie gelijkend op het volgende voorbeeld moeten structureren:
 
@@ -271,13 +271,13 @@ Houd er rekening mee dat de configuratie alleen geldig is als:
 * de typen (gehele getallen, tekenreeksen, booleans, enz.) in de onderstaande eigenschappentabellen moeten in acht worden genomen.
 
 >[!NOTE]
->U kunt `yq` om de opmaak van uw configuratiebestand lokaal te valideren (bijvoorbeeld `yq mt.yaml`).
+>Met `yq` kunt u de YAML-opmaak van het configuratiebestand lokaal valideren (bijvoorbeeld `yq mt.yaml` ).
 
-**3** - De niet-productie- en productieconfiguratiepijpleidingen configureren.
+**3** - vorm de pijpleidingen van de niet-productie en van de productieconfiguratie.
 
 Rapid Development Environment (RDE&#39;s) bieden geen ondersteuning voor leegmaken. Voor andere milieutypes in productie (niet zandbak) programma&#39;s, creeer een gerichte plaatsing config pijpleiding in Cloud Manager.
 
-Zie [productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [configureren van niet-productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) voor meer informatie .
+Zie [ vormend productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [ vormend niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) voor meer details.
 
 ### Versie wissen {#version-purge}
 
@@ -309,7 +309,7 @@ Voor omgevingen die zijn gemaakt voordat de standaardzuiveringsfunctie is ingesc
 
 De toegestane eigenschappen worden hieronder weergegeven.
 
-De kolommen die *default* de standaardwaarden in de toekomst aangeven wanneer standaardwaarden worden toegepast; *TBD* geeft een milieu-id weer die nog niet is bepaald.
+De kolommen die op *gebrek* wijzen wijzen wijzen wijzen wijzen op de standaardwaarden in de toekomst, wanneer de gebreken worden toegepast; *TBD* wijst op milieu-id die nog niet wordt bepaald.
 
 | Eigenschappen | future default for envs>TBD | toekomstige standaardwaarde voor envs&lt;=TBD | vereist | type | Waarden |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
@@ -320,7 +320,7 @@ De kolommen die *default* de standaardwaarden in de toekomst aangeven wanneer st
 | preserveLabledVersioned | false | false | Ja | boolean | Hiermee bepaalt u of expliciet gelabelde versies worden uitgesloten van de verwijdering. Voor een betere optimalisatie van de opslagplaats wordt aangeraden deze waarde in te stellen op false. |
 
 
-**Interacties tussen eigenschappen**
+**Interacties van het Bezit**
 
 In de volgende voorbeelden wordt getoond hoe eigenschappen interageren wanneer ze worden gecombineerd.
 
@@ -332,9 +332,9 @@ maximumVersions = 10
 minimumVersions = 2
 ```
 
-Als er 11 versies op dag 23 zijn, zal de oudste versie worden leeggemaakt volgende tijd de looppas van de zuiveringonderhoudstaak, aangezien `maximumVersions` eigenschap is ingesteld op 10.
+Als er 11 versies zijn op dag 23, wordt de oudste versie leeggemaakt wanneer de onderhoudstaak voor leegmaken wordt uitgevoerd, aangezien de eigenschap `maximumVersions` op 10 is ingesteld.
 
-Als er 5 versies op dag 31 zijn, worden er slechts 3 gewist sinds de `minimumVersions` eigenschap is ingesteld op 2.
+Als er 5 versies op dag 31 zijn, wordt alleen 3 gewist omdat de eigenschap `minimumVersions` is ingesteld op 2.
 
 Voorbeeld:
 
@@ -344,7 +344,7 @@ maximumVersions = 0
 minimumVersions = 1
 ```
 
-Er worden geen nieuwere versies dan 30 dagen gewist sinds de `maximumVersions` eigenschap is ingesteld op 0.
+Geen versies hoger dan 30 dagen worden gewist, omdat de eigenschap `maximumVersions` op 0 is ingesteld.
 
 Eén versie ouder dan 30 dagen wordt bewaard.
 
@@ -375,7 +375,7 @@ Voor omgevingen die zijn gemaakt voordat de standaardzuiveringsfunctie is ingesc
 
 De toegestane eigenschappen worden hieronder weergegeven.
 
-De kolommen die *default* de standaardwaarden in de toekomst aangeven wanneer standaardwaarden worden toegepast; *TBD* geeft een milieu-id weer die nog niet is bepaald.
+De kolommen die op *gebrek* wijzen wijzen wijzen wijzen wijzen op de standaardwaarden in de toekomst, wanneer de gebreken worden toegepast; *TBD* wijst op milieu-id die nog niet wordt bepaald.
 
 
 | Eigenschappen | future default for envs>TBD | toekomstige standaardwaarde voor envs&lt;=TBD | vereist | type | Waarden |
@@ -383,4 +383,4 @@ De kolommen die *default* de standaardwaarden in de toekomst aangeven wanneer st
 | regels | - | - | Ja | Object | Een of meer van de volgende knooppunten: replicatie, pagina&#39;s, dam. Elk van deze knopen bepaalt regels, met de eigenschappen hieronder. Alle eigenschappen moeten worden gedeclareerd. |
 | maximumAgeDays | 7 dagen | 2557 (7 jaar + 2 schrikkeldagen) | Ja | integer | Voor replicatie, pagina&#39;s of dam: het aantal dagen dat de auditlogboeken worden bewaard. Auditlogboeken die ouder zijn dan de geconfigureerde waarde, worden gewist. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | Ja | String | Het pad waaronder de auditlogboeken worden gewist, voor het verwante type. Moet worden ingesteld op &quot;/content&quot;. |
-| typen | alle waarden | alle waarden | Ja | Opsommingsarray | Voor **replicatie** De opgesomde waarden zijn: Activeren, Deactiveren, Verwijderen, Testen, Omkeren, Interne opiniepeiling. Voor **pagina&#39;s**, de opgesomde waarden zijn: PageCreated, PageModified, PageMoved, PageDelited, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Voor **dam**, de opgesomde waarden zijn: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED_ADDED MENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
+| typen | alle waarden | alle waarden | Ja | Opsommingsarray | Voor **replicatie**, zijn de opgesomde waarden: Activeer, Deactivate, Schrapping, Test, Omgekeerde, Interne Opiniepeiling. Voor **pagina&#39;s**, zijn de opgesomde waarden: PageCreated, PageModified, PageMoved, PageDelited, VersionCreated, PageRestored, PageRolled uit, PageValid, PageInvalid. Voor **dam**, zijn de opgesomde waarden: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEVERED. SIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED , AFGEWEZEN. |

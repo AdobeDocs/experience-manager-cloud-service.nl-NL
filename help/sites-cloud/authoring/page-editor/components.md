@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Componenten vormen de fundamentele bouwsteen voor inhoudspagina&#39;s in Adobe Experience Manager (AEM). Componenten zoals afbeeldingen, tekst, titels, enzovoort, kunnen eenvoudig worden gesleept en neergezet om uw inhoud samen te stellen.
 
-AEM wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden aan auteurs van websites. Deze zijn beschikbaar wanneer [pagina&#39;s bewerken](/help/sites-cloud/authoring/page-editor/edit-content.md) en worden gegroepeerd per hoofdfunctioneel gebied (de zogenaamde componentgroep) om te helpen filteren.
+AEM wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden aan auteurs van websites. Zij zijn beschikbaar wanneer [ het uitgeven van een pagina ](/help/sites-cloud/authoring/page-editor/edit-content.md) en door belangrijkste functioneel gebied (genoemd componentengroep) aan hulp het filtreren gegroepeerd.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ AEM wordt geleverd met een groot aantal out-of-the-box componenten die uitgebrei
 
 ## Algemeen gebruik {#general-usage}
 
-De componenten zijn beschikbaar op de **Componenten** tabblad van het zijpaneel van de pagina-editor wanneer [bewerken van een pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+De componenten zijn beschikbaar op het **lusje van Componenten** van het zijpaneel van de paginaredacteur wanneer [ het uitgeven van een pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 U kunt een component selecteren en naar de gewenste locatie op de pagina slepen. U kunt het dan uitgeven gebruikend:
 
@@ -34,20 +34,20 @@ U kunt een component selecteren en naar de gewenste locatie op de pagina slepen.
 * [Inhoud bewerken](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Inhoud bewerken - Modus Volledig scherm](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-Voor meer informatie over het toevoegen van componenten aan een pagina, zie [Pagina-inhoud bewerken.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Voor meer informatie over het toevoegen van componenten aan een pagina, zie [ het Uitgeven van de Inhoud van de Pagina.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 ## Overzicht van alle componenten {#overview-of-all-components}
 
-De [Componentenconsole](/help/sites-cloud/authoring/components-console.md) geeft een overzicht van de componentengroepen en de componenten die door uw AEM installatie worden verstrekt. U kunt belangrijke informatie over de individuele componenten en hun gebruik bekijken.
+De [ Console van Componenten ](/help/sites-cloud/authoring/components-console.md) geeft een overzicht van de componentengroepen en de componenten die door uw AEM installatie worden verstrekt. U kunt belangrijke informatie over de individuele componenten en hun gebruik bekijken.
 
 ## Kernonderdelen {#core-components}
 
-De [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieden flexibele en functies met veel functies, die essentiële inhoudstypen bieden voor het maken van pagina&#39;s.
+De [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan, die essentiële inhoudstypes verstrekken om pagina&#39;s tot stand te brengen.
 
 Zij worden gebouwd gebruikend AEM beste praktijken en zijn de basis van de AEM creatieve ervaring. De Componenten van de kern kunnen gemakkelijk door ontwikkelaars worden uitgebreid om aan specifieke projectbehoeften te voldoen.
 
-Samen met de componenten van de Kern WCM kunt u ook gebruiken [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Deze Core Components bieden een standaard en eenvoudigere methode voor [formulieren maken of toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Samen met de Componenten van de Kern WCM, kunt u [ Aangepaste Componenten van de Kern van Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) ook gebruiken. Deze Componenten van Kern verstrekken een standaard en gemakkelijkere methodes om [ tot stand te brengen of vormen aan een Pagina van AEM Sites toe te voegen ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Sjablonen configureren {#configuring-templates}
 
-Als uw pagina is gebaseerd op de aanbevolen, moderne, bewerkbare sjabloon, kunt u [de sjabloon bewerken](/help/sites-cloud/authoring/sites-console/templates.md) deze in-/uitschakelen en parameters voor specifieke componenten bewerken.
+Als uw pagina op het geadviseerde, moderne, editable malplaatje wordt gebaseerd, kunt u [ het malplaatje ](/help/sites-cloud/authoring/sites-console/templates.md) uitgeven toelaten/onbruikbaar maken deze en parameters voor specifieke componenten uitgeven.

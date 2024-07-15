@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Live Search] CIF component Popover'
-description: CIF componenten gebruiken om in te schakelen [!DNL Live Search] Pop-upcomponent op een AEM-site
+title: '[!DNL Live Search] Pop-over CIF component'
+description: Het gebruiken van CIF componenten om  [!DNL Live Search]  Popover component op een AEM plaats toe te laten
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] CIF {#live-search-popover}
+# [!DNL Live Search] Pop-over CIF component {#live-search-popover}
 
-De [!DNL Live Search] Popover is het element dat het [!DNL Live Search] resultaten die u in het zoekveld typt.
+De [!DNL Live Search] Popover is het element dat de [!DNL Live Search] resultaten bevat aangezien u op het onderzoeksgebied typt.
 Dit onderwerp beschrijft hoe te om deze component in uw AEM plaats te integreren.
 
 ## Bestandsstructuur {#file-strucure}
@@ -22,7 +22,7 @@ Bestanden moeten worden bewerkt en gemaakt om de CIF component in te schakelen.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 
-  Maak de `.content.xml` bestand:
+  Maak het `.content.xml` -bestand:
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -35,7 +35,7 @@ Bestanden moeten worden bewerkt en gemaakt om de CIF component in te schakelen.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css.txt
 
-  Maak de `css.txt` bestand:
+  Maak het `css.txt` -bestand:
 
   ```text
   #base=css
@@ -45,7 +45,7 @@ Bestanden moeten worden bewerkt en gemaakt om de CIF component in te schakelen.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css/searchbar.css
 
-  Maak de `searchbar.css` bestand:
+  Maak het `searchbar.css` -bestand:
 
 
   ```css
@@ -140,7 +140,7 @@ Bestanden moeten worden bewerkt en gemaakt om de CIF component in te schakelen.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js.txt
 
-  Maak de `js.txt` bestand:
+  Maak het `js.txt` -bestand:
 
   ```text
   js/searchbar.js
@@ -148,7 +148,7 @@ Bestanden moeten worden bewerkt en gemaakt om de CIF component in te schakelen.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js
 
-  Maak de `searchbar.js` bestand:
+  Maak het `searchbar.js` -bestand:
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -494,7 +494,7 @@ Bestanden moeten worden bewerkt en gemaakt om de CIF component in te schakelen.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/searchbar.html
 
-  Maak de `searchbar.html` bestand:
+  Maak het `searchbar.html` -bestand:
 
   ```html
   <!-- Livesearch popover -->
@@ -556,7 +556,7 @@ Bestanden moeten worden bewerkt en gemaakt om de CIF component in te schakelen.
 
 * ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json
 
-  Maak de `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` bestand:
+  Maak het `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` -bestand:
 
   ```json
   {
@@ -570,7 +570,7 @@ Bestanden moeten worden bewerkt en gemaakt om de CIF component in te schakelen.
 
    * ui.tests/test-module/specs/venia/searchbar.js
 
-     Bewerk de `searchbar.js` bestand, regel 19-20, wijzigen `describe` tot `describe.skip`:
+     Bewerk het bestand `searchbar.js` (regel 19-20) en wijzig `describe` in `describe.skip` :
 
      ```javascript
      describe.skip('Venia Searchbar Component', () => {

@@ -16,12 +16,12 @@ ht-degree: 0%
 
 Als onderdeel van de Adobe Experience Cloud kunt u met Adobe Target de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten. Voor de integratie van Adobe Target en AEM as a Cloud Service zijn:
 
-* het gebruiken van Touch UI om een Configuratie van het Doel in AEM as a Cloud Service (vereiste configuratie IMS) te creëren.
-* Adobe Target toevoegen en configureren als extensie in [Adobe starten](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* via de aanraakinterface een doelconfiguratie in AEM as a Cloud Service (vereiste IMS-configuratie) maken.
+* het toevoegen van en het vormen van Adobe Target als uitbreiding in [ Lancering van de Adobe ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
 Adobe starten is nodig voor het beheer van client-side eigenschappen voor zowel Analytics als Target op AEM pagina&#39;s (JS-bibliotheken/tags). Dat gezegd hebbende, is de integratie met Lancering nodig voor &quot;Ervaring gericht&quot;.
 
-Voor het uitvoeren van de Fragmenten van de Ervaring en/of de Fragmenten van de Inhoud aan Doel, hebt u nodig [Adobe Target-configuratie](#create-configuration), met inbegrip van [IMS-integratie](#ims-configuration).
+Voor de uitvoer van de Fragmenten van de Ervaring en/of de Fragmenten van de Inhoud naar Doel, hebt u de [ Configuratie van Adobe Target ](#create-configuration), met inbegrip van de [ Integratie IMS ](#ims-configuration) nodig.
 
 >[!NOTE]
 >
@@ -29,29 +29,29 @@ Voor het uitvoeren van de Fragmenten van de Ervaring en/of de Fragmenten van de 
 
 ## Adobe Target-configuratie maken {#create-configuration}
 
-1. Navigeren naar **Gereedschappen** → **Cloud Servicen**.
-   ![Navigatie](assets/cloudservice1.png "Navigatie")
-2. Selecteren **Adobe Target**.
-3. Selecteer de **Maken** knop.
-   ![Maken](assets/tenant1.png "Maken")
-4. Vul de details in (zie hieronder), en selecteer **Verbinden**.
-   ![Verbinden](assets/open_screen1.png "Verbinden")
+1. Navigeer aan **Hulpmiddelen** → **Cloud Servicen**.
+   ![ Navigatie ](assets/cloudservice1.png " Navigatie ")
+2. Selecteer **Adobe Target**.
+3. Selecteer **creeer** knoop.
+   ![ creeer ](assets/tenant1.png " ")
+4. Vul de details (zie hieronder) in, en selecteer **verbinden**.
+   ![ verbind ](assets/open_screen1.png " ")
 
 ### IMS-configuratie {#ims-configuration}
 
-Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) vereist. De IMS-configuratie van het doel moet worden gemaakt (nadat het doel is ingericht). Zie [IMS-integratie instellen voor AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) en de video [Experience Platform Launch en AEM integreren](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) om te leren hoe te om de configuratie van het Doel te creëren IMS.
+Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) vereist. De IMS-configuratie van het doel moet worden gemaakt (nadat het doel is ingericht). Zie [ Instelling IMS Integraties voor AEM as a Cloud Service ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) en de video [ Integrerend Experience Platform Launch en AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) leren hoe te om de configuratie van Doel te creëren IMS.
 
 >[!NOTE]
 >
->[IMS-integratie is nu geconfigureerd met S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[ IMS de integratie wordt nu gevormd met S2S OAuth ](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
 >
->Eerdere configuraties zijn gemaakt met [JWT-referenties die nu zijn afgekeurd in de Adobe Developer-console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>De vorige configuraties werden gemaakt met [ geloofsbrieven JWT die nu onderworpen aan verval in Adobe Developer Console ](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) zijn.
 
 >[!NOTE]
 >
 >Wanneer het vormen van het project, hangen de productprofielen met worden getoond af van of u hebt:
 >
->* Adobe Target Standard - alleen **Standaardwerkruimte** is beschikbaar
+>* Adobe Target Norm - slechts **StandaardWorkspace** is beschikbaar
 >* Adobe Target Premium - alle beschikbare werkruimten worden weergegeven, zoals hieronder wordt weergegeven
 
 ### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
@@ -67,7 +67,7 @@ In beide gevallen:
 * Indien nodig, kunt u de standaard reeks van identiteitskaart van de Huurder veranderen.
 * De achtergrond vraag aan Doel is gebaseerd op huuridentiteitskaart en de cliënt zijvraag aan Doel is gebaseerd op de Code van de Cliënt.
 
-Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM as a Cloud Service. Zorg ervoor dat **beide** de velden bevatten de juiste gegevens, afhankelijk van uw vereisten.
+Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM as a Cloud Service. Één van beide manier, zorg ervoor dat **beide** gebieden de correcte informatie afhankelijk van uw vereisten bevatten.
 
 >[!NOTE]
 >
@@ -81,14 +81,14 @@ Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM as a Cloud
 
 Ga als volgt te werk om de doelconfiguratie te bewerken:
 
-1. Selecteer een bestaande configuratie en klik op **Eigenschappen**.
+1. Selecteer een bestaande configuratie en klik **Eigenschappen**.
 2. Bewerk de eigenschappen.
-3. Selecteren **Opnieuw verbinding maken met Adobe Target**.
-4. Selecteren **Opslaan en sluiten**.
+3. Selecteer **opnieuw verbinden met Adobe Target**.
+4. Selecteer **sparen en Sluiten**.
 
 ### Een configuratie toevoegen aan een site {#add-configuration}
 
-Ga als volgt te werk om een Touch UI-configuratie op een site toe te passen: **Sites** > **Een sitepagina selecteren** > **Eigenschappen** > **Geavanceerd** > **Configuratie** > Selecteer de configuratieteuse.
+Om een configuratie van de Aanraking UI op een plaats toe te passen, ga naar: **Plaatsen** > **selecteer om het even welke plaatspagina** > **Eigenschappen** > **Geavanceerd** > **Configuratie** > selecteer de configuratiehuurder.
 
 ## Adobe Target integreren op AEM sites met behulp van Adobe Launch {#integrate-target-launch}
 
@@ -104,52 +104,52 @@ Als algemeen overzicht, zijn de integratiestappen:
 2. De vereiste extensies toevoegen
 3. Een gegevenselement maken (om de parameters van de contexthub vast te leggen)
 4. Een paginalijn maken
-5. Samenstellen en publiceren
+5. Build and Publish
 
 ### Een opstarteigenschap maken {#create-property}
 
 Een eigenschap is een container die is gevuld met extensies, regels en gegevenselementen.
 
-1. Selecteer de **Nieuwe eigenschap** knop.
+1. Selecteer de **Nieuwe knoop van het Bezit**.
 2. Geef een naam op voor de eigenschap.
 3. Als domein voert u de IP/host in waarop u de opstartafspeelbibliotheek wilt laden.
-4. Selecteer de **Opslaan** knop.
-   ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
+4. Selecteer **sparen** knoop.
+   ![ Launchproperty ](assets/properties_newproperty1.png " Launchproperty ")
 
 ### De vereiste extensies toevoegen {#add-extension}
 
-**Extensies** Dit is de container die de kernbibliotheekinstellingen beheert. De extensie Adobe Target ondersteunt client-side implementaties door Target JavaScript SDK te gebruiken voor het moderne web, at.js. Voeg beide toe **Adobe Target** en **Adobe ContextHub** extensies.
+**Uitbreidingen** zijn de container die de montages van de kernbibliotheek beheert. De extensie Adobe Target ondersteunt client-side implementaties door de SDK van Target JavaScript te gebruiken voor het moderne web, at.js. Voeg zowel de **Adobe Target** als **Adobe ContextHub** uitbreidingen toe.
 
 1. Selecteer de optie Extension Catalog en zoek naar Target in het filter.
-2. Selecteren **Adobe Target** om.js en klik op de Install optie.
-   ![Doel zoeken](assets/search_ext1.png "Doel zoeken")
-3. Selecteer de **Configureren** knop. Bericht het configuratievenster met de ingevoerde de rekeningsgeloofsbrieven van het Doel, en de versie at.js voor deze uitbreiding.
-4. Selecteren **Opslaan** om de uitbreiding van het Doel aan uw bezit van de Lancering toe te voegen. U zou de uitbreiding van het Doel moeten kunnen zien onder **Geïnstalleerde extensies** lijst.
-   ![Extensie opslaan](assets/configure_extension1.png "Extensie opslaan")
-5. Herhaal bovenstaande stappen om te zoeken naar de **Adobe ContextHub** extensie en installeer deze extensie (deze extensie is vereist voor de integratie met contexthub-parameters, op basis waarvan u het doel opgeeft).
+2. Selecteer **Adobe Target** at.js en klik op de Install optie.
+   ](assets/search_ext1.png " Onderzoek van het 1} Doel van het 0} Doel ")![
+3. Selecteer **vormen** knoop. Bericht het configuratievenster met de ingevoerde de rekeningsgeloofsbrieven van het Doel, en de versie at.js voor deze uitbreiding.
+4. Selecteer **sparen** om de uitbreiding van het Doel aan uw bezit van de Lancering toe te voegen. U zou de uitbreiding van het Doel moeten kunnen zien onder de **Geïnstalleerde lijst van Uitbreidingen** wordt vermeld die.
+   ![ sparen Uitbreiding ](assets/configure_extension1.png " sparen Uitbreiding ")
+5. Herhaal de stappen hierboven om naar de **uitbreiding te zoeken ContextHub van de Adobe** en het te installeren (deze uitbreiding wordt vereist voor de integratie met contexthub parameters, die waarop het richten wordt gedaan).
 
 ### Een gegevenselement maken {#data-element}
 
-**Gegevenselementen** zijn placeholders waaraan u de parameters van de contexthub kunt in kaart brengen.
+**elementen van Gegevens** zijn placeholders waaraan u de parameters van de contexthub kunt in kaart brengen.
 
-1. Selecteren **Gegevenselementen**.
-2. Selecteren **Gegevenselement toevoegen**.
+1. Selecteer **Elementen van Gegevens**.
+2. Selecteer **toevoegen het Element van Gegevens**.
 3. Geef de naam van het gegevenselement op en wijs dit toe aan een parameter van een contexthub.
-4. Selecteren **Opslaan**.
-   ![Gegevenselement](assets/data_elem1.png "Gegevenselement")
+4. Selecteer **sparen**.
+   ![ Element van Gegevens ](assets/data_elem1.png " het Element van Gegevens ")
 
 ### Een paginalijn maken {#page-rule}
 
-In **Regel**, wordt een reeks acties gedefinieerd en geordend, die ter plaatse worden uitgevoerd, om het doel te bereiken.
+In **Regel**, bepaalt het en geeft opdracht tot een opeenvolging van acties, die op plaats in werking worden gesteld, om het richten te bereiken.
 
 1. Voeg een set handelingen toe zoals wordt getoond in de schermafbeelding.
-   ![Handelingen](assets/rules1.png "Handelingen")
+   ![ Acties ](assets/rules1.png " Acties ")
 2. In Add Params aan Alle Mboxes, voeg het gegevenselement toe dat vroeger (zie gegevenselement hierboven) wordt gevormd, aan de parameter die in de mbox vraag wordt verzonden.
-   ![Mbox](assets/map_data1.png "Handelingen")
+   ![ Mbox ](assets/map_data1.png " Acties ")
 
-### Samenstellen en publiceren {#build-publish}
+### Build and Publish {#build-publish}
 
-Ga voor meer informatie over het samenstellen en publiceren naar [page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
+Leren hoe te om te bouwen en te publiceren, zie [ pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
 
 ## Wijzigingen in de inhoudsstructuur tussen Klassieke en Touch UI-configuraties {#changes-content-structure}
 

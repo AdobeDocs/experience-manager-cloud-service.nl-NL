@@ -1,5 +1,5 @@
 ---
-title: AEM as a Cloud Service op Verenigde Shell
+title: AEM as a Cloud Service op Unified Shell
 description: Leer over de voordelen van AEM as a Cloud Service op Verenigde Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 ---
 
-# AEM as a Cloud Service op Verenigde Shell {#aem-as-a-cloud-service-on-unified-shell}
+# AEM as a Cloud Service op Unified Shell {#aem-as-a-cloud-service-on-unified-shell}
 
 ## Overzicht {#overview}
 
@@ -25,22 +25,22 @@ De voordelen hiervan zijn:
 * Eenvoudig schakelen tussen organisaties of schakelen naar een andere toepassing
 * Verbeterde producthulp
 * Eenvoudige feedbackknop voor producten om problemen te melden of ideeën te delen met Adobe
-* Toegang tot wereldwijde productaankondigingen en kennisgevingen naast meldingen die specifiek zijn voor AEM as a Cloud Service
+* Toegang tot wereldwijde productaankondigingen en -meldingen naast meldingen die specifiek zijn voor AEM as a Cloud Service
 
 ## Verenigde Shell uitschakelen {#disabling-unified-shell}
 
-Uit de doos, AEM as a Cloud Service verenigde shell toegelaten heeft. Nochtans, als top-header is aangepast, wordt het geadviseerd verenigde shell onbruikbaar te maken om het even welke kwesties met de aanpassingen te vermijden. Volg onderstaande stappen om verenigde shell uit te schakelen:
+AEM as a Cloud Service heeft shell verenigd ingeschakeld. Nochtans, als top-header is aangepast, wordt het geadviseerd verenigde shell onbruikbaar te maken om het even welke kwesties met de aanpassingen te vermijden. Volg onderstaande stappen om verenigde shell uit te schakelen:
 
 >[!NOTE]
 >De verenigde Shell kan slechts door een rekening met administratieve voorrechten worden onbruikbaar gemaakt.
 
-1. Klikken **Gereedschappen > Cloud Servicen**.
+1. Klik **Hulpmiddelen > Cloud Servicen**.
 
    Een admin gebruiker ziet de Verenigde kaart van de Configuratie van Shell zoals hieronder getoond:
 
    ![afbeelding](/help/overview/assets/unifiedshell2.png)
 
-1. Klikken **Unified Shell-configuratie**. Dan, schrap checkbox hieronder wordt getoond om Verenigde Shell onbruikbaar te maken:
+1. Klik **Verenigde Configuratie van Shell**. Dan, schrap checkbox hieronder wordt getoond om Verenigde Shell onbruikbaar te maken:
 
    ![afbeelding](/help/overview/assets/unifiedshell3.png)
 
@@ -54,9 +54,9 @@ Klik op het profielpictogram om het donkere thema te wijzigen. Deze actie toont 
 
 ![afbeelding](/help/overview/assets/unifiedshell4.png)
 
-## Identificatie van de AEM as a Cloud Service omgeving {#identify-aemaacs-environment}
+## De AEM as a Cloud Service-omgeving identificeren {#identify-aemaacs-environment}
 
-AEM as a Cloud Service biedt drie typen omgevingen: productie, werkgebied en ontwikkeling. Zie [Omgevingstypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) voor meer informatie . Met deze integratie met Verenigde Shell, wordt het type van milieu dat de gebruiker op de dienst van de Auteur wordt geregistreerd getoond op top-header via een etiket zoals hieronder getoond.
+AEM as a Cloud Service biedt drie typen omgevingen: productie, werkgebied en ontwikkeling. Zie [ Types van Milieu ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) voor meer details. Met deze integratie met Verenigde Shell, wordt het type van milieu dat de gebruiker op de dienst van de Auteur wordt geregistreerd getoond op top-header via een etiket zoals hieronder getoond.
 
 ![afbeelding](/help/overview/assets/unifiedshell_header_label.png)
 

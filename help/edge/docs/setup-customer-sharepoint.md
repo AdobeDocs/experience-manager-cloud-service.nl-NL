@@ -1,5 +1,5 @@
 ---
-description: "**NOTE**: voor projecten die gebruik maken van SharePoint van Adobe (&lt;https://adobe.sharepoint.com&gt;) gelieve hier verder te gaan."
+description: "**NOTE**: voor projecten die gebruik maken van het Sharepoint van Adobe (&lt;https://adobe.sharepoint.com&gt;) gelieve hier verder te gaan."
 title: Hoe te om SharePoint te gebruiken
 feature: Edge Delivery Services
 exl-id: c0feb7bc-5418-4f93-bcfc-072cfe2e97bd

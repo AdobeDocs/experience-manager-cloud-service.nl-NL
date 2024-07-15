@@ -28,9 +28,10 @@ Momenteel is het belangrijk dat de juiste mensen in de juiste banen worden gezet
 
 Uw taak deze week is om beide lijsten met uw implementatieteam te evalueren en ervoor te zorgen dat u in elke rol personen met relevante kwalificaties hebt.
 
-## **Belangrijkste rollen voor AEM Experience Manager Sites**
+## **Zeer belangrijke Rollen voor AEM Experience Manager Sites**
 
-Een winnend bemanningsteam heeft negen mensen op de juiste plaatsen nodig — net als uw plaatsingsteam. Uw succes met Adobe Experience Manager Sites hangt af van de kracht van uw teamleden en hoe goed ze samenwerken. Zorg ervoor u deze negen rollen hebt die aan mensen met de voorgestelde kwalificaties worden toegewezen.
+Een winnend bemanningsteam heeft negen mensen op de juiste plaatsen nodig — net als uw plaatsingsteam. Uw succes met Adobe Experience Manager Sites hangt af van de kracht van uw teamleden en hoe goed ze samenwerken. Zorg ervoor u deze negen toegewezen rollen hebt
+aan personen met de voorgestelde kwalificaties.
 
 | Rol | Vaardigheden | Capaciteitsniveau | Kwaliteit |
 |--- |--- |--- |--- |
@@ -48,11 +49,11 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 <br>
 
-![Rollen voor implementatie controleren](assets/team_involvement.png)
+![ rollen van het Overzicht voor implementatie ](assets/team_involvement.png)
 
-**Deze lijst met uw implementatieteam bekijken** en zorg ervoor dat u mensen met relevante kwalificaties in elke rol hebt. Teamleden die minder bekend zijn met Adobe Experience Cloud kunnen [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) leermiddelen om gecertificeerd te worden [Adobe digitaal leren](https://learning.adobe.com/certification.html).
+**herzie deze lijst met uw implementatieteam** en zorg ervoor u mensen met relevante kwalificaties in elke rol hebt. De leden van het team die minder vertrouwd met Adobe Experience Cloud zijn kunnen [ Experience League ](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) het leren middelen gebruiken om verklaard door [ Digitaal Leren van de Adobe ](https://learning.adobe.com/certification.html) te worden.
 
-## **Belangrijkste rollen voor AEM Experience Manager Assets**
+## **Zeer belangrijke Rollen voor AEM Experience Manager Assets**
 
 Van architect tot ScrumMaster, elke rol in dit team is onmisbaar — inclusief de DAM-bibliotheek.
 
@@ -75,8 +76,8 @@ Nu u weet welke rollen worden vereist, bekijk de grafiek hieronder om te zien wa
 
 <br>
 
-![Horizontaal staafdiagram dat fictieve rollen en hun betrokkenheid bij het AEM Assets-team laat zien.](/help/overview/assets/team_involvement2.png)
+![ Horizontaal staafdiagram dat fictieve rollen en hun niveau van betrokkenheid op het team van AEM Assets toont.](/help/overview/assets/team_involvement2.png)
 
 >[!TIP]
 >
-> Meer informatie over Adobe Experience Cloud en gebruik bronnen op [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) en worden gecertificeerd via [Adobe digitaal leren](https://learning.adobe.com/certification.html).
+> Leer meer over Adobe Experience Cloud en gebruiksmiddelen op [ Experience League ](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) en wordt verklaard door [ Digitaal Leren van de Adobe ](https://learning.adobe.com/certification.html).

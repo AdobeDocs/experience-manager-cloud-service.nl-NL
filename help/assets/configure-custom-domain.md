@@ -24,18 +24,18 @@ In Adobe Cloud Manager kunt u uw website opvallen door een aangepast domein toe 
 
 Voer de volgende stappen uit om een aangepast domein voor de publicatielijst te configureren:
 
-1. Ga naar **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Program Overview]** > **[!UICONTROL SSL Certificates]**en voeg uw SSL-certificaat toe.
-   ![image](/help/assets/assets/ssl-certificate.png)
-Meer informatie over toevoegen [SSL-certificaat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager.
+1. Ga naar **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Program Overview]** > **[!UICONTROL SSL Certificates]** en voeg uw SSL-certificaat toe.
+   ![ beeld ](/help/assets/assets/ssl-certificate.png)
+Leer hoe te om [ SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) in Adobe Cloud Manager toe te voegen.
 
-1. Voeg een aangepast domein toe nadat u het SSL-certificaat hebt toegevoegd. Klikken **[!UICONTROL Domain Settings]** en geeft u het aangepaste domein op tegen de **[!UICONTROL Publish service]** -optie.
-Meer informatie over [aangepast domein](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+1. Voeg een aangepast domein toe nadat u het SSL-certificaat hebt toegevoegd. Klik op **[!UICONTROL Domain Settings]** en geef het aangepaste domein op met de optie **[!UICONTROL Publish service]** .
+Leer meer over [ douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. 2 toevoegen [CNAME-records](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) in uw DNS-record die correspondeert met het publiceren van domeinen.
+1. Voeg 2 [ verslagen van de NAAM ](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) in uw DNS verslag toe die aan publiceer domeinen beantwoorden.
 DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.
 
 1. Logboek een steungeval om de configuratie van het douanedomein te vergemakkelijken, ervoor zorgen dat het aan de leveringsrij richt.
 
 >[!NOTE]
 >
-> Voeg het aangepaste domein toe aan de lijst met toegestane omleidings-URL&#39;s in de IMS-client voor de elementenkiezer.<br>Coördineer met het respectieve team van de Adobe om deze taak uit te voeren door het koord van het douanedomein te verstrekken.
+> Voeg het aangepaste domein toe aan de lijst met toegestane omleidings-URL&#39;s in de IMS-client voor de elementenkiezer.<br> coördinaat met het respectieve team van de Adobe om deze taak uit te voeren door het koord van het douanedomein te verstrekken.

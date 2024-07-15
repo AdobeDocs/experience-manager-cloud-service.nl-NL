@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # Integreer AEM adaptief formulier met AEM workflow: bedrijfsprocessen stroomlijnen
 
-De **[!UICONTROL Invoke an AEM Workflow]** Met Actie verzenden wordt een adaptief formulier gekoppeld aan een AEM workflow. Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart bij de instantie Auteur. U kunt de gegevensbestanden, bijlagen en Document of Record opslaan op de laadlocatie van de workflow of op een variabele. Als de workflow is gemarkeerd voor externe gegevensopslag en geconfigureerd voor externe gegevensopslag, is alleen de optie Variabele beschikbaar. U kunt uit de lijst van variabelen selecteren beschikbaar voor het werkschemamodel. Als de workflow later wordt gemarkeerd voor externe gegevensopslag en niet op het moment dat de workflow wordt gemaakt, moet u ervoor zorgen dat de vereiste variabele configuraties aanwezig zijn.
+Met de handeling **[!UICONTROL Invoke an AEM Workflow]** Verzenden wordt een adaptief formulier gekoppeld aan een AEM workflow. Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart bij de instantie Auteur. U kunt de gegevensbestanden, bijlagen en Document of Record opslaan op de laadlocatie van de workflow of op een variabele. Als de workflow is gemarkeerd voor externe gegevensopslag en geconfigureerd voor externe gegevensopslag, is alleen de optie Variabele beschikbaar. U kunt uit de lijst van variabelen selecteren beschikbaar voor het werkschemamodel. Als de workflow later wordt gemarkeerd voor externe gegevensopslag en niet op het moment dat de workflow wordt gemaakt, moet u ervoor zorgen dat de vereiste variabele configuraties aanwezig zijn.
 
 >[!NOTE]
 >
->  Leer hoe u [een workflowmodel maken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) om de reeks stappen te definiëren die worden uitgevoerd wanneer een gebruiker de workflow start. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
+>  Leer hoe te [ een werkschemamodel ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) creëren om de reeks uitgevoerde stappen te bepalen wanneer een gebruiker het werkschema begint. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md)  artikel.
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/configure-submit-actions-core-components.md).
 
 ## Voordelen
 
@@ -44,31 +44,31 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 ## Integreer AEM workflow met Adaptive Forms {#steps-to-integrate-workflow-with-af}
 
-Automatisch proces instellen met [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) Voer voor een adaptief formulier de volgende stappen uit:
+Aan opstelling geautomatiseerd proces met [ AEM Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) voor een AanpassingsVorm, voer de volgende stappen uit:
 
-1. Open de Inhoudsbrowser en selecteer de **[!UICONTROL Guide Container]** van uw adaptieve formulier.
-1. Klik op de eigenschappen van de container van de hulplijn ![Eigenschappen van hulplijnen](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
-1. Klik op de knop  **[!UICONTROL Submission]** tab.
-1. Van de **[!UICONTROL Submit Action]** vervolgkeuzelijst, selecteert u **[!UICONTROL Invoke an AEM Workflow]** .
-   ![Actieconfiguratie van Send Email](/help/forms/assets/configure-invoke-aem-workflow.png)
+1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik op de tab **[!UICONTROL Submission]** .
+1. Selecteer **[!UICONTROL Invoke an AEM Workflow]** in de vervolgkeuzelijst **[!UICONTROL Submit Action]** .
+   ![ configuratie van de Actie van Send E-mail ](/help/forms/assets/configure-invoke-aem-workflow.png)
 
-1. Selecteer een workflowmodel in het menu **[!UICONTROL Workflow Model]** vervolgkeuzelijst.
-1. Selecteer een optie in het menu **[!UICONTROL Store Data file using]** vervolgkeuzelijst.
+1. Selecteer het workflowmodel in de vervolgkeuzelijst **[!UICONTROL Workflow Model]** .
+1. Selecteer een optie in de vervolgkeuzelijst **[!UICONTROL Store Data file using]** .
 
-   **Gegevensbestand**: Het bevat gegevens die naar het adaptieve formulier worden verzonden. U kunt de **[!UICONTROL Data File Path]** om de naam van het bestand en het pad van het bestand ten opzichte van de laadbewerking op te geven. Bijvoorbeeld de `/addresschange/data.xml` pad maakt een map met de naam `addresschange` en plaatst deze ten opzichte van de lading. U kunt ook alleen `data.xml` om alleen verzonden gegevens te verzenden zonder een maphiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
+   **dossier van Gegevens**: Het bevat gegevens die aan de Aangepaste Vorm worden voorgelegd. Met de optie **[!UICONTROL Data File Path]** kunt u de naam van het bestand en het pad van het bestand ten opzichte van de laadbewerking opgeven. Het pad `/addresschange/data.xml` maakt bijvoorbeeld een map met de naam `addresschange` en plaatst deze relatief ten opzichte van de laadbewerking. U kunt ook alleen `data.xml` opgeven om alleen verzonden gegevens te verzenden zonder een maphiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
-1. Selecteer een optie in het menu **[!UICONTROL Store attachments using]** vervolgkeuzelijst.
+1. Selecteer een optie in de vervolgkeuzelijst **[!UICONTROL Store attachments using]** .
 
-   **Bijlagen**: U kunt de opdracht **[!UICONTROL Attachment Path]** om de mapnaam op te geven waarin de bijlagen worden opgeslagen die naar het adaptieve formulier zijn geüpload. De map wordt gemaakt ten opzichte van de lading. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
+   **Gehechtheid**: U kunt de **[!UICONTROL Attachment Path]** optie gebruiken om de omslagnaam te specificeren om de gehechtheid op te slaan die aan de Aangepaste Vorm wordt geupload. De map wordt gemaakt ten opzichte van de lading. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
-1. Selecteer een optie in het menu **[!UICONTROL Documents of record using]** vervolgkeuzelijst.
+1. Selecteer een optie in de vervolgkeuzelijst **[!UICONTROL Documents of record using]** .
 
-   **Document van record**: Het bevat het Document of Record dat is gegenereerd voor het adaptieve formulier. U kunt de **[!UICONTROL Document of Record Path]** Hiermee geeft u de naam op van het bestand Document of Record en het pad van het bestand ten opzichte van de laadbewerking. Bijvoorbeeld de `/addresschange/DoR.pdf` pad maakt een map met de naam `addresschange` ten opzichte van de lading en plaatst het `DoR.pdf` ten opzichte van de lading. U kunt ook alleen `DoR.pdf` alleen Document of Record opslaan zonder een mappenhiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
+   **Document van Verslag**: Het bevat het Document van Verslag dat voor de Adaptieve Vorm wordt geproduceerd. U kunt de optie **[!UICONTROL Document of Record Path]** gebruiken om de naam van het document van het dossier van het Verslag en weg van dossier met betrekking tot de lading te specificeren. Het pad `/addresschange/DoR.pdf` maakt bijvoorbeeld een map met de naam `addresschange` ten opzichte van de laadbewerking en plaatst de map `DoR.pdf` ten opzichte van de laadbewerking. U kunt ook alleen `DoR.pdf` opgeven om alleen Document of Record op te slaan zonder een maphiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 1. Klik op **[!UICONTROL Done]**.
 
 >[!NOTE]
 >
-> Meer informatie over [Forms-centric AEM Workflows - Step Reference to automatisate Business Processors](/help/forms/aem-forms-workflow-step-reference.md).
+> Leer meer over [ Forms-centric AEM Workflows - de Verwijzing van de Stap om bedrijfsprocessen ](/help/forms/aem-forms-workflow-step-reference.md) te automatiseren.
 
 <!--
 ## Best Practices

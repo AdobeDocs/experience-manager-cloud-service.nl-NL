@@ -23,17 +23,17 @@ De interface biedt ruimte voor zowel mobiele apparaten als bureaubladapparaten, 
 
 Alle modules gebruiken de zelfde basislay-out:
 
-![AEM Sites-console](assets/ui-sites-console.png)
+![ AEM Sites console ](assets/ui-sites-console.png)
 
 De lay-out volgt een ontvankelijke ontwerpstijl en past zich aan de grootte van het apparaat, of venster, of allebei aan, dat u gebruikt.
 
 Als de resolutie bijvoorbeeld lager is dan 1024 pixels (zoals op een mobiel apparaat), wordt het beeldscherm dienovereenkomstig aangepast:
 
-![Mobiele weergave van Sites-console](assets/ui-sites-mobile.png)
+![ de console mobiele mening van Plaatsen ](assets/ui-sites-mobile.png)
 
 ### Koptekstbalk {#header-bar}
 
-![AEM](assets/ui-header-bar.png)
+![ AEM kopbalbar ](assets/ui-header-bar.png)
 
 De kopbalbar toont globale elementen met inbegrip van:
 
@@ -50,25 +50,25 @@ De werkbalk is contextueel ten opzichte van uw locatie en de gereedschappen voor
 
 Op de werkbalk ziet u de acties die momenteel beschikbaar zijn.
 
-![AEM Sites, werkbalk](assets/ui-sites-toolbar.png)
+![ de toolbar van AEM Sites ](assets/ui-sites-toolbar.png)
 
 Ook afhankelijk van of een bron is geselecteerd:
 
-![AEM Sites-werkbalk geselecteerd](assets/ui-sites-toolbar-selected.png)
+![ geselecteerde de toolbar van AEM Sites ](assets/ui-sites-toolbar-selected.png)
 
 ### Linkerspoor {#left-rail}
 
 De linkerspoorstaaf kan worden geopend/verborgen zoals vereist om te tonen:
 
-* **Alleen inhoud**
-* **Inhoudsstructuur**
-* **Tijdlijn**
+* **slechts Inhoud**
+* **de Boom van de Inhoud**
+* **Chronologie**
 * **Verwijzingen**
 * **Filter**
 
-De standaardwaarde is **Alleen inhoud** (spoor verborgen).
+Het gebrek is **slechts Inhoud** (spoorstaaf verborgen).
 
-![Linkerspoor](assets/ui-left-rail.png)
+![ Linkerspoor ](assets/ui-left-rail.png)
 
 ## Pagina&#39;s ontwerpen {#page-authoring}
 
@@ -76,11 +76,11 @@ Bij het ontwerpen van pagina&#39;s ziet u de volgende structurele gebieden.
 
 ### Inhoudskader {#content-frame}
 
-De pagina-inhoud wordt weergegeven in het inhoudskader. Het inhoudsframe is onafhankelijk van de editor - om ervoor te zorgen dat er geen conflicten optreden vanwege CSS of JavaScript.
+De pagina-inhoud wordt weergegeven in het inhoudskader. Het inhoudskader is onafhankelijk van de editor - om ervoor te zorgen dat er geen conflicten optreden vanwege CSS of JavaScript.
 
 Het inhoudskader bevindt zich in de rechtersectie van het venster, onder de werkbalk.
 
-![Inhoudskader](assets/ui-content-frame.png)
+![ kader van de Inhoud ](assets/ui-content-frame.png)
 
 ### Editor frame {#editor-frame}
 
@@ -93,47 +93,47 @@ Het editorframe is een container (abstract) voor alle pagina-ontwerpelementen. H
 * Alle overlays
 * Een ander pagina-ontwerpelement, bijvoorbeeld de componentwerkbalk
 
-![Editor-frame](assets/ui-editor-frame.png)
+![ Kader van de Redacteur ](assets/ui-editor-frame.png)
 
 ### Zijpaneel {#side-panel}
 
-Bevat drie standaardtabbladen. De **Activa** en **Componenten** Met tabs kunt u dergelijke elementen selecteren en ze uit het deelvenster slepen en op de pagina neerzetten. De **Inhoudsstructuur** kunt u de hiërarchie van inhoud op de pagina controleren.
+Bevat drie standaardtabbladen. De **Assets** en **Componenten** lusjes laten u dergelijke elementen selecteren en hen slepen van het paneel en hen laten vallen op de pagina. Het **lusje van de Boom van de Inhoud** laat u de hiërarchie van inhoud op de pagina inspecteren.
 
 Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of als de vensterbreedte kleiner is dan 1024 pixels, schuift deze over om het hele venster te bedekken, bijvoorbeeld op een mobiel apparaat.
 
-![Zijpaneel](assets/ui-side-panel.png)
+![ Zijpaneel ](assets/ui-side-panel.png)
 
-### Zijpaneel - Elementen {#side-panel-assets}
+### Zijpaneel - Assets {#side-panel-assets}
 
-Op het tabblad Elementen kunt u een selectie maken uit het assortiment elementen. U kunt ook filteren op een bepaalde term of een groep selecteren.
+Op het tabblad Assets kunt u een selectie maken uit het assortiment elementen. U kunt ook filteren op een bepaalde term of een groep selecteren.
 
-![Het tabblad Middelen](assets/ui-side-panel-assets.png)
+![ Assets tabel ](assets/ui-side-panel-assets.png)
 
 ### Zijpaneel - Elementgroepen {#side-panel-asset-groups}
 
-Op het tabblad Middelen vindt u een vervolgkeuzelijst waarmee u de specifieke groepen elementen kunt selecteren.
+Op het tabblad Assets vindt u een vervolgkeuzelijst waarmee u de specifieke groepen elementen kunt selecteren.
 
-![Middelengroepen](assets/ui-side-panel-asset-groups.png)
+![ de groepen van Activa ](assets/ui-side-panel-asset-groups.png)
 
 ### Zijpaneel - Componenten {#side-panel-components}
 
 Op het tabblad Componenten kunt u een keuze maken uit het bereik van componenten. U kunt ook filteren op een bepaalde term of een groep selecteren.
 
-![Tabblad Componenten](assets/ui-side-panel-components.png)
+![ Componenten tabel ](assets/ui-side-panel-components.png)
 
 ### Zijpaneel - Inhoudsstructuur {#side-panel-content-tree}
 
 Op het tabblad Inhoudsstructuur kunt u de hiërarchie van inhoud op de pagina weergeven. Wanneer u op een item in het tabblad klikt, gaat u naar het item op de pagina in de editor en selecteert u het item.
 
-![Inhoudsstructuur](assets/ui-side-panel-content-tree.png)
+![ de boom van de Inhoud ](assets/ui-side-panel-content-tree.png)
 
 ### Bedekkingen {#overlays}
 
-Bedekt het inhoudsframe en wordt gebruikt door de [lagen](#layer) om de mechanica te realiseren van hoe u op transparante wijze met de componenten en hun inhoud kunt communiceren.
+Bedekt het inhoudskader en door de [ lagen ](#layer) gebruikt om de mechanica van te realiseren hoe u met de componenten en hun inhoud transparant kunt in wisselwerking staan.
 
 De overlays bevinden zich in het editorframe (met alle andere pagina-ontwerpelementen), hoewel ze de juiste componenten in het inhoudsframe bedekken.
 
-![Bedekkingen](assets/ui-overlays.png)
+![ Bedekkingen ](assets/ui-overlays.png)
 
 ### Laag {#layer}
 
@@ -156,7 +156,7 @@ Met de laagschakeloptie kunt u de laag kiezen die u wilt gebruiken. Als u deze o
 
 De laagschakelaar is beschikbaar als drop-down van de toolbar (bij de bovenkant van het venster, binnen het redacteurskader).
 
-![Laagschakelaar](assets/ui-layer-switcher.png)
+![ de schakelaar van de Laag ](assets/ui-layer-switcher.png)
 
 ### Werkbalk Component {#component-toolbar}
 
@@ -164,10 +164,10 @@ Elke instantie van een component toont zijn toolbar wanneer geklikt (of eens of 
 
 Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst bij de bovenkant, of bodem, juiste hoek van de aangewezen component.
 
-![Component, werkbalk](assets/ui-component-toolbar.png)
+![ de toolbar van de Component ](assets/ui-component-toolbar.png)
 
 ## Aanvullende informatie {#further-information}
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Voor meer technische informatie raadpleegt u de [JS-documentatieset](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor.
+Voor meer technische informatie, zie de [ JS documentatiereeks ](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) voor de paginaredacteur.

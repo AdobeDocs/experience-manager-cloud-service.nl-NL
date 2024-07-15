@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Generieke Lucene-index verwijderen {#generic-lucene-index-removal}
 
-Adobe is van plan de generieke Lucene-index (`/oak:index/lucene-*`) van Adobe Experience Manager as a Cloud Service. Deze index is vervangen sinds AEM 6.5. In dit document wordt het effect van dit besluit beschreven, samen met een gedetailleerde beschrijving van de wijze waarop moet worden onderzocht of een AEM instantie wordt beïnvloed. Het bevat ook manieren om vragen te veranderen zodat blijven zij zonder de generische index van Lucene functioneren.
+Adobe is van plan om de &quot;generische index van Lucene&quot;(`/oak:index/lucene-*`) uit Adobe Experience Manager as a Cloud Service te verwijderen. Deze index is vervangen sinds AEM 6.5. In dit document wordt het effect van dit besluit beschreven, samen met een gedetailleerde beschrijving van de wijze waarop moet worden onderzocht of een AEM instantie wordt beïnvloed. Het bevat ook manieren om vragen te veranderen zodat blijven zij zonder de generische index van Lucene functioneren.
 
 ## Achtergrond {#background}
 
@@ -24,7 +24,7 @@ In AEM, zijn de volledige tekstvragen die die de volgende functies gebruiken:
 
 Dergelijke vragen kunnen geen resultaten zonder een index terugkeren. In tegenstelling tot een vraag die slechts weg of bezitsbeperkingen bevat, zal een vraag die een volledige tekstbeperking bevat waarvoor geen index kan worden gevonden (en zo wordt een traversal uitgevoerd) altijd nul resultaten terugkeren.
 
-De generieke Lucene-index (`/oak:index/lucene-*`) bestaat al sinds AEM 6.0 / Eak 1.0 voor een volledige tekstzoekopdracht in de meeste opslagplaats-hiërarchie, hoewel sommige paden, zoals `/jcr:system` en `/var` zijn hier altijd van uitgesloten. Deze index is echter grotendeels vervangen door indexen op meer specifieke knooppunttypen (bijvoorbeeld `damAssetLucene-*` voor de `dam:Asset` knooppunttype), die zowel volledige tekst als bezitsonderzoeken steunen.
+De generieke index van Lucene (`/oak:index/lucene-*`) bestaat sinds AEM 6.0 / Oak 1.0 om een volledige tekstonderzoek over het grootste deel van de repository hiërarchie te verstrekken, hoewel sommige wegen, zoals `/jcr:system` en `/var` altijd van dit zijn uitgesloten. Deze index is echter grotendeels vervangen door indexen op specifiekere knooppunttypen (bijvoorbeeld `damAssetLucene-*` voor het knooppunttype `dam:Asset` ), die zowel zoekopdrachten in volledige tekst als in eigenschappen ondersteunen.
 
 In AEM 6.5 werd de generische index van Lucene gemerkt zoals afgekeurd, erop wijzend dat het in toekomstige versies zou worden verwijderd. Sindsdien, is WARN geregistreerd wanneer de index is gebruikt zoals geïllustreerd door het volgende logboekfragment:
 
@@ -34,17 +34,17 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 
 In recente AEM versies, is de generische index van Lucene gebruikt om een zeer klein aantal eigenschappen te steunen. Deze worden opnieuw bewerkt om andere indexen te gebruiken of anderszins aangepast om de afhankelijkheid van deze index te verwijderen.
 
-Zoekopdrachten voor verwijzingen, zoals in het volgende voorbeeld, moeten nu bijvoorbeeld de index gebruiken op `/oak:index/pathreference`, die alleen indexeert `String` eigenschapswaarden die overeenkomen met een reguliere expressie die naar JCR-paden zoekt.
+Zoekopdrachten voor verwijzingen, zoals in het volgende voorbeeld, moeten nu bijvoorbeeld de index bij `/oak:index/pathreference` gebruiken, die alleen waarden van `String` -eigenschappen indexeert die overeenkomen met een reguliere expressie die naar JCR-paden zoekt.
 
 ```text
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Om grotere volumes van klantengegevens te steunen, leidt de Adobe niet meer tot de generische index van Lucene op nieuwe AEM as a Cloud Service milieu&#39;s. Bovendien verwijdert Adobe de index uit bestaande opslagruimten. [Zie de tijdlijn](#timeline) aan het einde van dit document voor meer informatie.
+Om grotere volumes van klantengegevens te steunen, leidt de Adobe niet meer tot de generische index van Lucene op nieuwe milieu&#39;s van AEM as a Cloud Service. Bovendien verwijdert Adobe de index uit bestaande opslagruimten. [ zie de chronologie ](#timeline) aan het eind van dit document voor meer details.
 
-Adobe heeft de indexkosten al aangepast via de `costPerEntry` en `costPerExecution` eigenschappen om ervoor te zorgen dat andere indexen, zoals `/oak:index/pathreference` worden waar mogelijk bij voorkeur gebruikt.
+Adobe heeft de indexkosten al aangepast via de eigenschappen `costPerEntry` en `costPerExecution` om ervoor te zorgen dat waar mogelijk andere indexen, zoals `/oak:index/pathreference` , de voorkeur krijgen.
 
-De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die zonodig kunnen worden aangepast. U kunt ook nieuwe aangepaste indexen toevoegen aan de toepassing van de klant. Volledige instructies voor indexbeheer in AEM as a Cloud Service zijn te vinden in de [indexeringsdocumentatie](/help/operations/indexing.md).
+De toepassingen van de klant die vragen gebruiken die nog van deze index afhangen zouden onmiddellijk moeten worden bijgewerkt om andere bestaande indexen te gebruiken, die zonodig kunnen worden aangepast. U kunt ook nieuwe aangepaste indexen toevoegen aan de toepassing van de klant. De volledige instructies voor indexbeheer in AEM as a Cloud Service kunnen in de [ indexerende documentatie ](/help/operations/indexing.md) worden gevonden.
 
 ## Betrokken bent u? {#are-you-affected}
 
@@ -54,7 +54,7 @@ De generische index van Lucene wordt momenteel gebruikt als reserve als geen and
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
 ```
 
-In sommige gevallen probeert het eiken een andere volledige tekstindex te gebruiken (zoals `/oak:index/pathreference`) om de volledige tekstvraag te steunen, maar als het vraagkoord niet de regelmatige uitdrukking op de indexdefinitie aanpast, wordt een bericht geregistreerd op WARN niveau en de vraag zal waarschijnlijk geen resultaten terugkeren.
+In sommige gevallen probeert Oak mogelijk een andere volledige tekstindex (zoals `/oak:index/pathreference` ) te gebruiken ter ondersteuning van de volledige tekstquery, maar als de querytekenreeks niet overeenkomt met de reguliere expressie in de indexdefinitie, wordt een bericht op WARN-niveau geregistreerd en retourneert de query waarschijnlijk geen resultaten.
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
@@ -68,7 +68,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 >[!IMPORTANT]
 >
->**Actie van klant vereist**
+>**Vereiste Actie van de Klant**
 >
 > Als om het even welke bovengenoemde waarschuwingsberichten worden geregistreerd, kunt u de vraag moeten herwerken om een verschillende volledige tekstindex te gebruiken, of een nieuwe index verstrekken om de vraag te steunen.
 >
@@ -78,13 +78,13 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 Er zijn verscheidene gebieden waar uw toepassingen en AEM installaties van generische indexen van Lucene zowel op auteur als publicatieinstanties afhankelijk kunnen zijn.
 
-### Exemplaar publiceren {#publish-instance}
+### Publish Instance {#publish-instance}
 
 #### Aangepaste query&#39;s voor toepassingen {#custom-application-queries}
 
 De gemeenschappelijkste bron van vragen gebruikend de generische index van Lucene op publiceer instantie is de vragen van de douanetoepassing.
 
-In de eenvoudigste gevallen kunnen deze query&#39;s zijn zonder opgegeven knooppunttype, waardoor dit wordt geïmpliceerd `nt:base` of `nt:base` expliciet vermeld, zoals:
+In de eenvoudigste gevallen kunnen dit query&#39;s zijn zonder opgegeven knooppunttype, waardoor `nt:base` of `nt:base` expliciet wordt geïmpliceerd, zoals:
 
 ```text
 /jcr:root/content/mysite//*[jcr:contains(., 'search term')]
@@ -93,11 +93,11 @@ In de eenvoudigste gevallen kunnen deze query&#39;s zijn zonder opgegeven knoopp
 
 >[!IMPORTANT]
 >
->**Actie van klant vereist**
+>**Vereiste Actie van de Klant**
 >
 >De bovengenoemde vragen zouden moeten worden gewijzigd om een aangewezen knooptype te gebruiken zoals die in de volgende sectie wordt gedetailleerd.
 
-De query&#39;s kunnen bijvoorbeeld worden gewijzigd om resultaten te retourneren die overeenkomen met pagina&#39;s of een van de aggregaten onder de `cq:Page node`. De vraag zou dus kunnen worden:
+De query&#39;s kunnen bijvoorbeeld worden gewijzigd om resultaten te retourneren die overeenkomen met pagina&#39;s of een van de aggregaten onder de `cq:Page node` . De vraag zou dus kunnen worden:
 
 ```text
 /jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
@@ -109,17 +109,17 @@ In andere gevallen, zou een vraag een knooptype kunnen specificeren maar een vol
 /jcr:root/content/dam//element(*, dam:Asset)[jcr:contains(jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
 ```
 
-In dit geval heeft de query de `dam:Asset` knooppunttype, maar bevat een volledige tekstbeperking voor het relatieve `jcr:content/metadata/@cq:tags` eigenschap.
+In dit geval heeft de query het knooppunttype `dam:Asset` , maar bevat deze een volledige tekstbeperking voor de relatieve eigenschap `jcr:content/metadata/@cq:tags` .
 
-Deze eigenschap is niet gemarkeerd als geanalyseerd in het dialoogvenster `damAssetLucene` index, die de volledige tekstindex is die het meest wordt gebruikt voor query&#39;s tegen de `dam:Asset` knooppunttype. Daarom kan deze index niet voor deze vraag worden gebruikt.
+Deze eigenschap wordt niet gemarkeerd zoals geanalyseerd in de `damAssetLucene` -index. Dit is de volledige tekstindex die het meest wordt gebruikt voor query&#39;s op het `dam:Asset` -knooppunttype. Daarom kan deze index niet voor deze vraag worden gebruikt.
 
-Als dusdanig, valt de vraag terug op de generische volledige tekstindex waar alle inbegrepen eigenschappen zoals geanalyseerd door de vervangingsgelijke bij worden duidelijk `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
+Als dusdanig, valt de vraag terug op de generische volledige tekstindex waar alle inbegrepen eigenschappen zoals geanalyseerd door de vervangingsgelijke bij `/oak:index/lucene-2/indexRules/nt:base/properties/prop` duidelijk zijn.
 
 >[!IMPORTANT]
 >
->**Actie van klant vereist**
+>**Vereiste Actie van de Klant**
 >
->De `jcr:content/metadata/@cq:tags` eigenschap zoals geanalyseerd in een aangepaste versie van het dialoogvenster `damAssetLucene` De indexresultaten in deze vraag die door deze index wordt behandeld, en geen WARN wordt geregistreerd.
+>Wanneer de eigenschap `jcr:content/metadata/@cq:tags` wordt gemarkeerd zoals deze wordt geanalyseerd in een aangepaste versie van de index `damAssetLucene` , wordt deze query verwerkt door deze index en wordt geen WARN geregistreerd.
 
 ### Instantie van auteur {#author-instance}
 
@@ -127,49 +127,49 @@ Naast vragen in de servers van de klantentoepassing, componenten OSGi, en het te
 
 #### Referentie zoeken {#reference-search}
 
-Historisch is de generische index van Lucene gebruikt om verwijzings onderzoek of het zoeken naar inhoud te steunen die verwijzingen naar een andere inhoudspad bevat. Dergelijke vragen hadden reeds moeten worden bijgewerkt om de nieuwe `/oak:index/pathreference` index.
+Historisch is de generische index van Lucene gebruikt om verwijzings onderzoek of het zoeken naar inhoud te steunen die verwijzingen naar een andere inhoudspad bevat. Dergelijke query&#39;s moeten al zijn bijgewerkt om de nieuwe `/oak:index/pathreference` -index te kunnen gebruiken.
 
 #### Zoekopdracht padveldkiezer {#picker-search}
 
-AEM omvat een component van de douanedialoog met het Verdelen middeltype `granite/ui/components/coral/foundation/form/pathfield`, die een browser/kiezer biedt voor het selecteren van een ander AEM pad. De standaardpadveldkiezer, die wordt gebruikt wanneer er geen aangepaste `pickerSrc` wordt gedefinieerd in de inhoudsstructuur, wordt een zoekbalk weergegeven in het pop-updialoogvenster.
+AEM bevat een aangepaste component voor het dialoogvenster Sling-resource `granite/ui/components/coral/foundation/form/pathfield` , die een browser/kiezer biedt voor het selecteren van een ander AEM pad. De standaardpadveldkiezer, die wordt gebruikt wanneer er geen aangepaste eigenschap `pickerSrc` is gedefinieerd in de inhoudsstructuur, rendert een zoekbalk in het pop-updialoogvenster.
 
-De knooptypes waartegen om te zoeken kunnen worden gespecificeerd gebruikend `nodeTypes` eigenschap.
+De knooppunttypen aan de hand waarvan moet worden gezocht, kunnen worden opgegeven met de eigenschap `nodeTypes` .
 
-Op dit moment, indien nee `nodeTypes` eigenschap is aanwezig, de onderliggende zoekquery gebruikt de eigenschap `nt:base` knooptype, en daarom waarschijnlijk zal de generische index van Lucene gebruiken, typisch registrerend WARN berichten gelijkend op het volgende.
+Op dit moment, als geen `nodeTypes` bezit aanwezig is, zal de onderliggende onderzoeksvraag het `nt:base` knooptype gebruiken, en zal daarom waarschijnlijk de generische index van Lucene gebruiken, typisch registrerend WARN berichten gelijkend op het volgende.
 
 ```text
 20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
 ```
 
-Voordat de generieke Lucene-index wordt verwijderd, moet de `pathfield` wordt bijgewerkt, zodat het zoekvak verborgen is voor componenten die de standaardkiezer gebruiken, die geen `nodeTypes` eigenschap.
+Voordat de generieke Lucene-index wordt verwijderd, wordt de component `pathfield` bijgewerkt, zodat het zoekvak verborgen is voor componenten met de standaardkiezer, die geen eigenschap `nodeTypes` bevatten.
 
 | Padveldkiezer met zoeken | Padveldkiezer zonder zoeken |
 |---|---|
-| ![Padveldkiezer met zoeken](assets/index-pathfield-picker-with-search.png) | ![Padveldkiezer zonder zoeken](assets/index-pathfield-picker-without-search.png) |
+| ![ Plukker van het Gebied van de Weg met Onderzoek ](assets/index-pathfield-picker-with-search.png) | ![ Plukker van het Gebied van de Weg zonder Onderzoek ](assets/index-pathfield-picker-without-search.png) |
 
 >[!IMPORTANT]
 >
->**Actie van klant vereist**
+>**Vereiste Actie van de Klant**
 >
->Als de klant de zoekfunctionaliteit in de padveldkiezer wil behouden, voert u een `nodeTypes` eigenschap moet worden opgegeven met de knooppunttypen waarop ze een query willen uitvoeren. Deze kunnen als komma-gescheiden lijst van knooptypes in a worden gespecificeerd `String` eigenschap. Als geen onderzoek wordt vereist, wordt geen actie vereist van de klant.
+>Als de klant de zoekfunctionaliteit in de padveldkiezer wil behouden, moet een eigenschap `nodeTypes` worden opgegeven met de knooppunttypen waarop de klant een query wil uitvoeren. Deze kunnen worden opgegeven als een door komma&#39;s gescheiden lijst met knooppunttypen in een eigenschap `String` . Als geen onderzoek wordt vereist, wordt geen actie vereist van de klant.
 
 >[!NOTE]
 >
->De Inhoudsfragmentmodeleditor gebruikt een speciaal padveld met het brontype Sling `dam/cfm/models/editor/components/contentreference`.
+>De Inhoudsfragmentmodeleditor gebruikt een speciaal padveld met het brontype Sling `dam/cfm/models/editor/components/contentreference` .
 >
 > * Momenteel voeren deze vragen zonder gespecificeerde knooptypes uit, resulterend in WARN die wegens gebruik van de generische index van Lucene worden geregistreerd.
-> * Instanties van deze componenten worden binnenkort automatisch standaard `cq:Page` en `dam:Asset` knooptypes zonder verdere klantenactie.
-> * De `nodeTypes` Deze eigenschap kan worden toegevoegd om deze standaardknooppunttypen te overschrijven.
+> * Exemplaren van deze componenten worden binnenkort automatisch standaard ingesteld op het gebruik van knooppunttypen `cq:Page` en `dam:Asset` zonder verdere actie van de klant.
+> * De eigenschap `nodeTypes` kan worden toegevoegd om deze standaardknooppunttypen te overschrijven.
 
 ## Tijdlijn voor algemene Lucene-verwijdering {#timeline}
 
 De Adobe zal een bifasenbenadering nemen om de generische index van Lucene te verwijderen.
 
-* **Fase 1** (gepland begin 31 januari 2022): niet langer maken `/oak:index/lucene-*` over nieuwe AEM as a Cloud Service omgevingen.
-* **Fase 2** (gepland begin 31 maart 2022): Verwijderen `/oak:index/lucene-*` index van bestaande AEM as a Cloud Service omgevingen.
+* **Fase 1** (gepland begin 31 Januari 2022): creeer niet meer `/oak:index/lucene-*` op nieuwe milieu&#39;s van AEM as a Cloud Service.
+* **Fase 2** (geplande begin 31 Maart 2022): verwijder `/oak:index/lucene-*` index uit bestaande milieu&#39;s van AEM as a Cloud Service.
 
 De Adobe zal de hierboven vermelde logboekberichten controleren en zal proberen om klanten te contacteren die van de generische index van Lucene afhankelijk blijven.
 
 Als kortetermijnmatiging, voegt de Adobe de definities van de douaneindex aan klantensystemen direct toe om functionele of prestatieskwesties als resultaat van de verwijdering van de generische index van Lucene zonodig te verhinderen.
 
-In dergelijke gevallen krijgt de klant de bijgewerkte indexdefinitie te zien en wordt hem geadviseerd deze in toekomstige versies van zijn toepassing via Cloud Manager op te nemen.
+In dergelijke gevallen krijgt de klant de bijgewerkte indexdefinitie en wordt hem geadviseerd deze op te nemen in toekomstige versies van zijn toepassing via Cloud Manager.

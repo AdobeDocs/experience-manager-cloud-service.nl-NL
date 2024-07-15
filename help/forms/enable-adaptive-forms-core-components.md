@@ -1,11 +1,12 @@
 ---
-title: Hoe kan ik Adaptive Forms Core Components inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms?
+title: Hoe kan ik Adaptive Forms Core Components inschakelen in een as a Cloud Service en lokale ontwikkelomgeving van AEM Forms?
 description: Leer hoe u Adaptive Forms Core Components kunt inschakelen op AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -16,38 +17,38 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 Als u Adaptive Forms Core Components inschakelt op AEM Forms as a Cloud Service, kunt u beginnen met het maken, publiceren en leveren van Core Components based Adaptive Forms and Headless Forms met uw AEM Forms Cloud Service-instanties naar meerdere kanalen. Voor het gebruik van Headless Adaptive Forms hebt u de omgeving geschikt voor Adaptive Forms Core Components nodig.
 
 ## Overwegingen
 
-* Wanneer u een nieuw as a Cloud Service AEM Forms-programma maakt, [Adaptieve Forms Core-componenten en Headless Adaptive Forms zijn al ingeschakeld voor uw omgeving](#are-adaptive-forms-core-components-enabled-for-my-environment).
+* Wanneer u een vers as a Cloud Service programma van AEM Forms creeert, [ de Aangepaste Componenten van de Kern van Forms en Zwaardeloze Aanpassings Forms worden reeds toegelaten voor uw milieu ](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* Als u een ouder Forms as a Cloud Service programma hebt met Core Components [niet ingeschakeld](#enable-components), kunt u [Aangepaste Forms Core-componentafhankelijkheden toevoegen](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) naar uw AEM as a Cloud Service opslagplaats en implementeer de opslagplaats in uw Cloud Service-omgevingen om Headless Adaptive Forms in te schakelen.
+* Als u een ouder as a Cloud Service programma van Forms hebt waar de Componenten van de Kern [ niet ](#enable-components) worden toegelaten, kunt u [ de Aangepaste gebiedsdelen van de Componenten van de Kern van Forms ](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) toevoegen aan uw bewaarplaats van AEM as a Cloud Service en de bewaarplaats opstellen aan uw milieu&#39;s van de Cloud Service om Zwaardeloze Aanpassings Forms toe te laten.
 
-* Als uw bestaande omgeving van de Cloud Service optie biedt voor [Adaptieve Forms op basis van Core Components maken](creating-adaptive-form-core-components.md), Adaptive Forms Core Components en Headless Adaptive Forms zijn al ingeschakeld voor uw omgeving en u kunt Adaptive Forms op basis van Core-componenten gebruiken als een vorm zonder kop voor kanalen als mobiel, web, native apps en services waarvoor een headless representatie van Adaptive Forms vereist is.
+* Als uw bestaand milieu van de Cloud Service optie [ verstrekt om op kern-componenten-Gebaseerde Aangepaste Forms ](creating-adaptive-form-core-components.md) tot stand te brengen, zijn de Aangepaste Componenten van de Kern van Forms en Zwaardeloze Aanpassings Forms reeds toegelaten voor uw milieu en u kunt de Aangepaste Forms van de Component van de Kern als hoofdloze vormen aan kanalen zoals mobiel, Web, inheemse apps, en de diensten dienen die een hoofdloze vertegenwoordiging van Aanpassings Forms vereisen.
 
 
 ## Adaptieve Forms Core-componenten en Forms zonder koptekst inschakelen {#enable-headless-forms}
 
-Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Components en Headless Adaptive Forms in te schakelen voor een AEM Forms as a Cloud Service omgeving
+Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Components en Headless Adaptive Forms voor een AEM Forms as a Cloud Service omgeving in te schakelen
 
 
-![Basiscomponenten en adaptieve formulieren zonder kop inschakelen](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
+![ laat kerncomponenten en hoofd toe aanpassende vormen ](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
 ## 1. Clone your AEM Forms as a Cloud Service Git Repository {#clone-git-repository}
 
-1. Aanmelden bij [Cloud Manager](https://my.cloudmanager.adobe.com/) en selecteert u uw organisatie en programma.
+1. Login aan [ Cloud Manager ](https://my.cloudmanager.adobe.com/) en selecteer uw organisatie en programma.
 
-1. Ga naar de **Pijpleidingen** kaart van uw **Programmaoverzicht** pagina, klikt u op de **Repo-info openen** om toegang te krijgen tot uw Git Repository en deze te beheren. De pagina bevat de volgende informatie:
+1. Navigeer aan de **Pipelines** kaart van uw **pagina van het Overzicht van het Programma**, klik de **Info van de Reactie van de Toegang** knoop om tot uw Bewaarplaats van het Bezit van het Bezit toegang te hebben en te beheren. De pagina bevat de volgende informatie:
 
-   * URL naar de Git Repository van Cloud Manager.
+   * URL naar de Cloud Manager Git Repository.
    * Referenties van de Git Repository (Gebruikersnaam en Wachtwoord) Gebruikersnaam.
 
-   Klikken **Wachtwoord genereren** om het wachtwoord weer te geven of te genereren.
+   Klik **produceer Wachtwoord** om het wachtwoord te bekijken of te produceren.
 
 1. Open terminal of bevelherinnering op uw lokale computer en stel het volgende bevel in werking:
 
@@ -61,8 +62,8 @@ Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Co
 ## 2. Voeg adaptieve Forms Core Components-afhankelijkheden toe aan uw Git Repository {#add-adaptive-forms-core-components-dependencies}
 
 1. Open de map Git Repository in een tekstcode-editor zonder opmaak. Bijvoorbeeld, de Code van VS.
-1. Open de `[AEM Repository Folder]\pom.xml` bestand voor bewerking.
-1. Versies van de `core.forms.components.version`, `core.forms.components.af.version` en `core.wcm.components.version` componenten met versies opgegeven in [kerncomponentdocumentatie](https://github.com/adobe/aem-core-forms-components). Als de component niet bestaat, voegt u deze componenten toe.
+1. Open het `[AEM Repository Folder]\pom.xml` -bestand om het te bewerken.
+1. Vervang versies van `core.forms.components.version`, `core.forms.components.af.version` en `core.wcm.components.version` componenten met versies die in [ worden gespecificeerd kerncomponentendocumentatie ](https://github.com/adobe/aem-core-forms-components). Als de component niet bestaat, voegt u deze componenten toe.
 
    ```XML
    <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
@@ -74,9 +75,9 @@ Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Co
    </properties>
    ```
 
-   ![Opname van de nieuwste versie van Forms Core Components](/help/forms/assets/latest-forms-component-version.png)
+   ![ de recentste versie van de Verwijzing van de Componenten van de Kern van Forms ](/help/forms/assets/latest-forms-component-version.png)
 
-1. In de sectie Afhankelijkheden van het dialoogvenster `[AEM Repository Folder]\pom.xml` , voegt u de volgende afhankelijkheden toe en slaat u het bestand op.
+1. Voeg in de sectie Afhankelijkheden van het `[AEM Repository Folder]\pom.xml` -bestand de volgende afhankelijkheden toe en sla het bestand op.
 
    ```XML
        <!-- WCM Core Component Examples Dependencies -->
@@ -137,7 +138,7 @@ Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Co
    <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Open de `[AEM Repository Folder]/all/pom.xml` bestand voor bewerking. Voeg de volgende gebiedsdelen in toe `<embeddeds>` en sla het bestand op.
+1. Open het `[AEM Repository Folder]/all/pom.xml` -bestand om het te bewerken. Voeg de volgende afhankelijkheden toe aan de sectie `<embeddeds>` en sla het bestand op.
 
    ```XML
    <!-- WCM Core Component Examples Dependencies -->
@@ -192,9 +193,9 @@ Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Co
    >[!NOTE]
    >
    >
-   >  Vervangen `${appId}` met uw appId.
+   >  Vervang `${appId}` door uw appId.
    >
-   >  Als u uw `${appId}`in de `[AEM Repository Folder]/all/pom.xml` bestand, doorzoeken `-packages/application/install` term. De tekst voor de `-packages/application/install` term is uw `${appId}`. De volgende code, bijvoorbeeld `myheadlessform` is `${appId}`.
+   >  Zoek in het `[AEM Repository Folder]/all/pom.xml` -bestand naar de term `-packages/application/install` om de term `${appId}` te zoeken. De tekst voor de term `-packages/application/install` is de `${appId}` . De volgende code, `myheadlessform` is bijvoorbeeld `${appId}` .
    >
    >   ```
    >             <embedded>
@@ -205,7 +206,7 @@ Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Co
    >             </embedded>
    >   ```
 
-1. In de `<dependencies>` van de `[AEM Repository Folder]/all/pom.xml` , voegt u de volgende afhankelijkheden toe en slaat u het bestand op:
+1. Voeg in de sectie `<dependencies>` van het `[AEM Repository Folder]/all/pom.xml` -bestand de volgende afhankelijkheden toe en sla het bestand op:
 
    ```XML
            <!-- Other existing dependencies -->
@@ -243,7 +244,7 @@ Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Co
            </dependency>
    ```
 
-1. Open de `[AEM Repository Folder]/ui.apps/pom.xml` voor bewerken. Voeg de `af-core bundle` en sla het bestand op.
+1. Open de `[AEM Repository Folder]/ui.apps/pom.xml` voor bewerking. Voeg de `af-core bundle` afhankelijkheid toe en sla het bestand op.
 
    ```XML
        <dependency>
@@ -279,9 +280,9 @@ Voer de volgende stappen uit in de aangegeven volgorde om Adaptive Forms Core Co
 
 Implementeer de bijgewerkte code in uw lokale ontwikkelings- en Cloud Service-omgevingen om de Core Components op beide omgevingen in te schakelen:
 
-* [Ontwikkel en stel bijgewerkte code op een lokale ontwikkelomgeving (AEM as a Cloud Service SDK) op](#core-components-on-aem-forms-local-sdk)
+* [Bijgewerkte code maken en implementeren in een lokale ontwikkelomgeving (AEM as a Cloud Service SDK)](#core-components-on-aem-forms-local-sdk)
 
-* [Nieuwe code maken en implementeren in een as a Cloud Service AEM Forms-omgeving](#core-components-on-aem-forms-cs)
+* [Een bijgewerkte code maken en implementeren in een AEM Forms as a Cloud Service omgeving](#core-components-on-aem-forms-cs)
 
 ### Ontwikkel en stel bijgewerkte code op een lokale ontwikkelomgeving op {#core-components-on-aem-forms-local-sdk}
 
@@ -297,15 +298,15 @@ Implementeer de bijgewerkte code in uw lokale ontwikkelings- en Cloud Service-om
 
 
 
-   Nadat het pakket is gemaakt, kunt u het vinden op [Map voor gegevensopslagruimte it]\all\target\[appid].all-[versie].zip
+   Nadat het pakket met succes wordt gebouwd, kunt u het bij [ de Omslag van de Bewaarplaats van de it ] \all\target\ [appid].all- [ versie ].zip vinden
 
-1. Gebruik de [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) om [Projectmap Archetype AEM]\all\target\[appid].all-[versie]ZIP-pakket over de lokale ontwikkelomgeving.
+1. Gebruik de [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) om het [ AEM Archetype Omslag van het Project ] \all\target\ [appid].all- [ versie ] .zip pakket op lokaal ontwikkelomgeving op te stellen.
 
 
-### Nieuwe code maken en implementeren in een as a Cloud Service AEM Forms-omgeving {#core-components-on-aem-forms-cs}
+### Een bijgewerkte code maken en implementeren in een AEM Forms as a Cloud Service omgeving {#core-components-on-aem-forms-cs}
 
 1. Open de terminal of opdrachtprompt.
-1. Ga naar uw `[AEM Repository Folder]` en voer de volgende bevelen in de vermelde orde in werking
+1. Navigeer naar uw `[AEM Repository Folder]` en voer de volgende opdrachten in de vermelde volgorde uit
 
    ```Shell
     git add pom.xml
@@ -315,33 +316,33 @@ Implementeer de bijgewerkte code in uw lokale ontwikkelings- en Cloud Service-om
     git push origin
    ```
 
-1. Nadat de bestanden zijn toegewezen aan Git Repository, [De pijplijn uitvoeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+1. Nadat de dossiers aan de Bewaarplaats van de Bewaarplaats van het Git worden geëngageerd, [ stel de pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) in werking.
 
-   Nadat de pijpleidingslooppas succesvol is, worden de Adaptieve Componenten van de Kern van Forms toegelaten voor het overeenkomstige milieu. Bovendien worden een Adaptive Forms (Core Components)-sjabloon en een Canvas 3.0-thema toegevoegd aan uw as a Cloud Service Forms-omgeving, zodat u opties hebt voor het aanpassen en maken van op Core Components gebaseerde Adaptive Forms.
+   Nadat de pijpleidingslooppas succesvol is, worden de Adaptieve Componenten van de Kern van Forms toegelaten voor het overeenkomstige milieu. Bovendien worden een Adaptive Forms (Core Components)-sjabloon en een Canvas 3.0-thema toegevoegd aan uw Forms as a Cloud Service omgeving, zodat u opties kunt kiezen om de op Core Components gebaseerde Adaptive Forms aan te passen en te maken.
 
 
 ## Veelgestelde vragen {#faq}
 
 ### Wat zijn kerncomponenten? {#core-components}
 
-De [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde WCM-componenten (Web Content Management) voor AEM om de ontwikkelingstijd te versnellen en de onderhoudskosten van uw websites te verlagen.
+De [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zijn een reeks gestandaardiseerde componenten van het Beheer van de Inhoud van het Web (WCM) voor AEM om ontwikkelingstijd te versnellen en onderhoudskosten van uw websites te drukken.
 
 ### Welke mogelijkheden worden toegevoegd aan het toelaten van kerncomponenten? {#core-components-capabilities}
 
 Wanneer de Adaptive Forms Core Components voor uw omgeving is ingeschakeld, worden een leeg, op Core Components gebaseerd adaptief formulier sjabloon en Canvas 3.0 thema toegevoegd aan uw omgeving. Nadat u Adaptive Forms Core Components voor uw omgeving hebt ingeschakeld, kunt u:
 
-* [Op Adaptieve Forms gebaseerde Core Components maken](/help/forms/creating-adaptive-form-core-components.md).
-* [Op kerncomponenten gebaseerde adaptieve formuliersjablonen maken](/help/forms/template-editor.md).
-* [Aangepaste thema&#39;s maken voor adaptieve formuliersjablonen op basis van kerncomponenten](/help/forms/using-themes-in-core-components.md).
-* [De JSON-representaties van de Serve Core Component gebaseerd op adaptieve formulieren naar kanalen zoals mobiel, web, systeemeigen apps en services waarvoor een formulier zonder kop moet worden weergegeven](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html).
+* [ creeer de Componenten van de Kern die Adaptieve Forms ](/help/forms/creating-adaptive-form-core-components.md) worden gebaseerd.
+* [ creeer de Componenten van de Kern gebaseerde Aangepaste malplaatjes van de Vorm ](/help/forms/template-editor.md).
+* [ creeer douanethema&#39;s voor de Componenten van de Kern de Gebaseerde Aangepaste malplaatjes van de Vorm ](/help/forms/using-themes-in-core-components.md).
+* [ de Reeks van de Kern van de Server Component gebaseerde Aangepaste vertegenwoordiging van de Vorm JSON aan kanalen zoals mobiel, Web, inheemse apps, en de diensten die de hoofdloze vertegenwoordiging van een vorm ](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) vereisen.
 
 ### Zijn Adaptive Forms Core Components ingeschakeld voor mijn omgeving? {#enable-components}
 
 Om te controleren of Adaptive Forms Core Components geschikt zijn voor uw omgeving:
 
-1. [De as a Cloud Service AEM Forms-opslagplaats klonen](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
+1. [ Kloon uw as a Cloud Service bewaarplaats van AEM Forms ](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
 
-1. Open de `[AEM Repository Folder]/all/pom.xml` bestand van de AEM Forms Cloud Service Git Repository.
+1. Open het `[AEM Repository Folder]/all/pom.xml` -bestand van de AEM Forms Cloud Service Git Repository.
 
 1. Zoek naar de volgende gebiedsdelen:
 
@@ -352,10 +353,10 @@ Om te controleren of Adaptive Forms Core Components geschikt zijn voor uw omgevi
    * core-forms-components-examples-apps
    * core-forms-components-examples-content
 
-   ![Zoek het core-forms-components-af-core artefact op all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
+   ![ bepaal de plaats van het kern-vormen-componenten-af-kern artefact in all/pom.xml ](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Als de afhankelijkheden bestaan, worden Adaptive Forms Core Components ingeschakeld voor uw omgeving.
 
 >[!MORELIKETHIS]
 >
->* [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
+>* [ creeer een Aangepast Vorm ](/help/forms/creating-adaptive-form-core-components.md)

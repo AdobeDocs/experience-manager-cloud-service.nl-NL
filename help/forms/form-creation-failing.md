@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Probleem tijdens het publiceren van formulieren{#form-creation-fails}
 
-Nadat gebruikers een update naar AEM Forms as a Cloud Service hebben uitgevoerd `2024.5.16461`:
+Nadat gebruikers een update naar AEM Forms as a Cloud Service uitvoeren `2024.5.16461` :
 
-**Sommige gebruikers** Bij het maken van formulieren kan het volgende probleem optreden: wanneer een gebruiker een formulier maakt, verschijnt het volgende foutbericht in het dialoogvenster Maken:
+**Sommige gebruikers** kunnen met probleem worden geconfronteerd terwijl het creëren van vormen, is de kwestie dusdanig dat wanneer een gebruiker een vorm creeert, het volgende foutenbericht omhoog in de doos van de aanmaakdialoog springt:
 
 `A server error occurred. Try again after sometime.`
 
 ## Oorzaak {#cause-form-creation-fails}
 
-Het probleem doet zich voor omdat de auteur het formulier zonder **eerst de sjabloon publiceren** erin gebruikt. Dit resulteert in de toevoeging van de `jcr:uuid` en andere beschermde en door het systeem gegenereerde eigenschappen `<template-path>/initial/jcr:content` knoop, veroorzakend mislukkingen in verdere vormverwezenlijking.
+De kwestie komt voor omdat de auteur de vorm zonder **publiceert eerst het malplaatje** dat in het wordt gebruikt. Hierdoor worden `jcr:uuid` en andere beveiligde en door het systeem gegenereerde eigenschappen aan het knooppunt `<template-path>/initial/jcr:content` toegevoegd, waardoor het maken van het formulier mislukt.
 
 ## Workaround {#resolution-form-creation-fails}
 
 Voer de volgende stappen uit om het probleem op te lossen:
 
-1. Zorg ervoor dat de sjabloon die u in het formulier gebruikt, niet de `jcr:uuid` en andere door het systeem gegenereerde beschermde eigenschappen op het pad `<template-path>/initial/jcr:content node`.
+1. Zorg ervoor dat de sjabloon die u in het formulier gebruikt, niet de `jcr:uuid` -eigenschappen en andere door het systeem gegenereerde beveiligde eigenschappen op het pad heeft `<template-path>/initial/jcr:content node` .
 1. Publish de sjabloon expliciet met behulp van de sjabloonconsole.
 1. Wanneer de sjabloon wordt gepubliceerd, kunt u nu nieuwe formulieren maken met de sjabloon.
 1. Als de sjabloon die u hebt gebruikt in de toekomstige versies bijwerkt, Publish de sjabloon opnieuw (zoals beschreven in stap 2) om problemen met het maken van formulieren te voorkomen.

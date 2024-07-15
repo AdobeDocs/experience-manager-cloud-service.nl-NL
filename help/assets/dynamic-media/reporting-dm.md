@@ -9,7 +9,7 @@ hidefromtoc: true
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
 source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,10 @@ Wanneer u om het foutenrapport verzoekt, e-mailt het team van Adobe Dynamic Medi
 
 U kunt een foutenrapport eens per maand, voor een bepaald bedrijf aanvragen.
 
-**Om een foutenrapport voor levering URLs van Dynamic Media aan te vragen die ontbreken:**
+**om een foutenrapport voor levering URLs van Dynamic Media te verzoeken die ontbreken:**
 
-1. [Een e-mail verzenden naar reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) met de bedrijfsnaam die aan uw Dynamic Media-account is gekoppeld.
+1. [ verzend een e-mail naar reports-dynamic-media@adobe.com ](mailto:reports-dynamic-media@adobe.com) met de bedrijfsnaam die met uw rekening van Dynamic Media wordt geassocieerd.
 
-   Als u de bedrijfsnaam niet weet, raadpleegt u de [Dynamic Media-configuratie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=en#configuring-dynamic-media-cloud-services) pagina in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuation]**. Klik op de pagina Dynamic Media Configuration Browser (-configuratiebrowser) op **[!UICONTROL global]**, selecteert u de *[Dynamic_Media_folder_icon]* selectievakje en selecteer vervolgens **[!UICONTROL Edit]**. U hebt beheerdersrechten nodig AEM u toegang wilt krijgen tot de Dynamic Media Configuration-pagina.
+   Als u niet de bedrijfsnaam kent, zie de ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=en#configuring-dynamic-media-cloud-services) pagina van de Configuratie 0} Dynamic Media {in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuation]**. [ Voor Browser van de Configuratie van Dynamic Media pagina, klik **[!UICONTROL global]**, selecteer *[Dynamic_Media_folder_icon]* checkbox, dan uitgezochte **[!UICONTROL Edit]**. U hebt beheerdersrechten nodig AEM u toegang wilt krijgen tot de Dynamic Media Configuration-pagina.
 
-   ![Toegang tot de Dynamic Media Configuration-pagina.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
+   ![ die tot de pagina van de Configuratie van Dynamic Media toegang hebben.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

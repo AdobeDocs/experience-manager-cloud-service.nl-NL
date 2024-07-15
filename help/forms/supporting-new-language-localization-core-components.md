@@ -16,10 +16,10 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| Elementaire componenten | [Klik hier](supporting-new-language-localization.md) |
+| Elementaire componenten | [ klik hier ](supporting-new-language-localization.md) |
 | Kernonderdelen | Dit artikel |
 
-<span class="preview"> De ondersteuning voor talen die van rechts naar links worden geschreven, is beschikbaar in het programma voor vroegtijdige adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
+<span class="preview"> De ondersteuning voor talen die van rechts naar links worden geschreven, is beschikbaar in het programma voor vroege adopties. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
 AEM Forms biedt in de box-ondersteuning voor de landinstellingen Engels (en), Spaans (es), Frans (fr), Italiaans (it), Duits (de), Japans (ja), Portugees-Braziliaans (pt-BR), Chinees (zh-CN), Chinees-Taiwan (zh-TW) en Koreaans (ko-KR). U kunt ook ondersteuning toevoegen voor meer landinstellingen, zoals Hindi(hi_IN). U kunt Adaptief Forms ook weergeven in een RTL-taal (rechts naar links), zoals Arabisch, Perzisch en Urdu, door deze landinstellingen toe te voegen.
 
@@ -31,24 +31,24 @@ Kennis van de manier waarop AEM Forms de landinstelling selecteert voor het weer
 
 AEM Forms geeft prioriteit aan de volgende methoden om de landinstelling voor een adaptief formulier te bepalen:
 
-1. **URL-kiezer voor landinstelling ([landinstelling])**:
+1. **URL de Kiezer van de Plaats ([ scène ])**:
 
-   Het systeem geeft prioriteit aan de landinstelling die in de URL is opgegeven met behulp van de [landinstelling] kiezer. Met deze indeling kan caching worden gebruikt voor betere prestaties.
+   Het systeem geeft voorrang aan de scène binnen URL wordt gespecificeerd gebruikend de [ scène ] selecteur die. Met deze indeling kan caching worden gebruikt voor betere prestaties.
 
-   Indeling: De URL volgt deze notatie: http:/[URL AEM Forms-server]/content/forms/af/[afName].[landinstelling].html?wcmmode=disabled.
+   Formaat: URL volgt dit formaat: http:/[ de Server URL van AEM Forms ]/content/forms/af/[ afName ].[ scène ].html?wcmmode=disabled.
 
-   Voorbeeld: https://[server]/content/forms/af/contact-us.hi.html geeft het formulier in het Hindi weer.
+   Voorbeeld: https://[ server ] /content/forms/af/contact-us.hi.html geeft de vorm in Hindi terug.
 
 
-1. **afAcceptLang Request-parameter**:
+1. **afAcceptLang de Parameter van het Verzoek**:
 
-   Als u de landinstelling van de browser van de gebruiker wilt overschrijven, kunt u de `afAcceptLang` in de URL.
+   Als u de landinstelling van de browser van de gebruiker wilt overschrijven, gebruikt u de parameter `afAcceptLang` in de URL.
 
-   Voorbeeld: https://[server]/forms/af/survey.ca-fr.html?afAcceptLang=ca-fr dwingt het formulier om het in het Canadese Frans weer te geven.
+   Voorbeeld: https://[ server ] /forms/af/survey.ca-fr.html?afAcceptLang=ca-fr dwingt de vorm om in het Canadese Frans terug te geven.
 
-1. **Landinstelling browser van gebruiker (Koptekst voor geaccepteerde taal)**:
+1. **Browser van de Gebruiker Scène (Accept-Taal Kopbal)**:
 
-   Als er geen andere landinstelling is opgegeven, neemt AEM Forms de landinstelling van de browser van de gebruiker in overweging die met de `Accept-Language` header.
+   Als er geen andere landinstelling is opgegeven, neemt AEM Forms de landinstelling van de browser van de gebruiker in overweging die met de header `Accept-Language` is verzonden.
 
 
 ### Terugvalmechanisme:
@@ -58,7 +58,7 @@ AEM Forms geeft prioriteit aan de volgende methoden om de landinstelling voor ee
 
   Voorbeeld: als en_ZA (Zuid-Afrikaans Engels) wordt aangevraagd en er geen en_ZA-bibliotheek is, wordt en (Engels) gebruikt, indien beschikbaar.
 
-  Als er geen geschikte clientbibliotheek wordt gevonden, wordt het standaardwoordenboek (meestal `en`) wordt gebruikt voor de ontwerptaal van het formulier.
+  Als er geen geschikte clientbibliotheek wordt gevonden, wordt het standaardwoordenboek (meestal `en` ) voor de ontwerptaal van het formulier gebruikt.
 
   Als er geen landinstellingsgegevens beschikbaar zijn, wordt het Adaptief formulier weergegeven in de oorspronkelijke taal die tijdens de ontwikkeling is gebruikt.
 
@@ -69,12 +69,12 @@ Voordat u een nieuwe landinstelling gaat toevoegen voor uw Adaptive Forms, moet 
 
 **Software:**
 
-* Redacteur van de Tekst van het normaal (winde): Terwijl om het even welke gewone tekstredacteur kan werken, een Geïntegreerde Ontwikkelomgeving (winde) zoals [Microsoft Visual Studio-code](https://code.visualstudio.com/download) biedt geavanceerde functies om het bewerken te vereenvoudigen.
+* De gewone Redacteur van de Tekst (winde): Terwijl om het even welke gewone tekstredacteur kan werken, biedt een Geïntegreerde Milieu van de Ontwikkeling (winde) zoals ](https://code.visualstudio.com/download) de Code van Microsoft Visual Studio van 0} geavanceerde eigenschappen voor het gemakkelijker uitgeven aan.[
 
-* Git: Dit versiebeheersysteem is vereist voor het beheren van codewijzigingen. Als u het niet hebt geïnstalleerd, download het van [https://git-scm.com](https://git-scm.com).
+* Git: Dit versiebeheersysteem is vereist voor het beheren van codewijzigingen. Als u het geïnstalleerd niet hebt, download het van [ https://git-scm.com ](https://git-scm.com).
 
 
-**Codeopslagplaats:**
+**Bewaarplaats van de Code:**
 
 Clone the Adaptive Forms Core Components Repository: U hebt een clientbibliotheek van deze opslagplaats nodig om een landinstelling toe te voegen. De gegevensopslagruimte klonen:
 
@@ -97,7 +97,7 @@ Ga als volgt te werk om ondersteuning voor nieuwe landinstellingen toe te voegen
 
 ### De AEM as a Cloud Service Git-gegevensopslagruimte klonen
 
-1. Open de opdrachtregel en kies een directory waarin uw AEM as a Cloud Service-opslagplaats moet worden opgeslagen, zoals `/cloud-service-repository/`.
+1. Open de opdrachtregel en kies een map waarin u de AEM as a Cloud Service-opslagplaats wilt opslaan, bijvoorbeeld `/cloud-service-repository/` .
 
 1. Voer de onderstaande opdracht uit om de gegevensopslagruimte te klonen:
 
@@ -107,42 +107,42 @@ Ga als volgt te werk om ondersteuning voor nieuwe landinstellingen toe te voegen
 
    U hebt enkele informatie nodig om uw Git-opslagplaats te klonen:
 
-   * **Naam organisatie**: Dit identificeert uw team of project in Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
+   * **naam van de Organisatie**: Dit identificeert uw team of project binnen Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
 
-   * **Programma-id**: Dit geeft het programma aan dat is gekoppeld aan uw opslagplaats.
+   * **identiteitskaart van het Programma**: Dit specificeert het programma verbonden aan uw bewaarplaats.
 
-   * **Credentials**: U hebt een gebruikersnaam en wachtwoord (of een persoonlijke toegangstoken) nodig om veilig toegang te krijgen tot de opslagplaats.
+   * **Geloofsbrieven**: U hebt een gebruikersbenaming en een wachtwoord (of een persoonlijk toegangstoken) nodig om tot de bewaarplaats veilig toegang te hebben.
 
-   **Waar vind je deze informatie?**
+   **waar om deze informatie te vinden?**
 
-   Raadpleeg het Adobe Experience League-artikel &quot;[Toegang tot it](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+   Voor geleidelijke instructies bij het bepalen van de plaats van deze details, verwijs naar het artikel van Adobe Experience League &quot;[ tot Toegang hebbend Git ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    **Uw project is klaar!**
 
    Wanneer de opdracht met succes is voltooid, ziet u een nieuwe map die in uw lokale map is gemaakt. Deze map krijgt de naam van uw programma (bijvoorbeeld programma-id). Deze map bevat alle bestanden en code die u hebt gedownload van uw AEM as a Cloud Service Git-opslagplaats.
 
-   In deze handleiding wordt deze map de `[AEMaaCS project directory]`.
+   In deze handleiding wordt deze map de `[AEMaaCS project directory]` genoemd.
 
 
 ### De nieuwe landinstelling toevoegen aan de Guide Localization Service
 
 1. Open de opslagplaats map in een editor.
 
-   ![Map met opslagplaats in een editor](/help/forms/assets/repository-folder-in-an-editor.png)
+   ![ omslag van de Bewaarplaats in een redacteur ](/help/forms/assets/repository-folder-in-an-editor.png)
 
-1. Zoek de `Guide Localization Service.cfg.json` bestand. Dit bestand bepaalt de landinstellingen die worden ondersteund door uw AEM Forms-toepassing. U kunt dit bestand bewerken en een nieuwe landinstelling toevoegen.
+1. Zoek het `Guide Localization Service.cfg.json` -bestand. Dit bestand bepaalt de landinstellingen die worden ondersteund door uw AEM Forms-toepassing. U kunt dit bestand bewerken en een nieuwe landinstelling toevoegen.
 
-   * **Bestaand bestand**: Als het bestand al bestaat, zoekt u het in de AEM Forms-projectmap. De gebruikelijke locatie is:
+   * **Bestaand dossier**: Als het dossier reeds bestaat, bepaal de plaats van het binnen uw het projectfolder van AEM Forms. De gebruikelijke locatie is:
 
      ```Shell
      [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
      ```
 
-     Vervangen `<appid>` met uw projectspecifieke toepassings-id. U kunt zoeken `<appid>` voor uw AEM Project in `archetype.properties` bestand.
+     Vervang `<appid>` door uw projectspecifieke toepassings-id. U kunt `<appid>` voor uw AEM Project in het `archetype.properties` dossier vinden.
 
-     ![Eigenschappen van Archetype](/help/forms/assets/archetype-properties.png)
+     ![ archetype Eigenschappen ](/help/forms/assets/archetype-properties.png)
 
-   * **Nieuw bestand**: Als het bestand niet bestaat, moet u het op de hierboven vermelde locatie maken. Kopieer niet de naam van het bestand uit dit document, maar typ de naam handmatig. De bestandsnaam `Guide Localization Service.cfg.json` bevat spaties. Dit is opzettelijk en geen typefout in de documentatie.
+   * **Nieuw dossier**: Als het dossier niet bestaat, moet u het in de zelfde hierboven vermelde plaats tot stand brengen. Kopieer niet de naam van het bestand uit dit document, maar typ de naam handmatig. De bestandsnaam `Guide Localization Service.cfg.json` bevat spaties. Dit is opzettelijk en geen typefout in de documentatie.
 
      Een voorbeeldbestand met de lijst met door OOTB ondersteunde landinstellingen is:
 
@@ -164,9 +164,9 @@ Ga als volgt te werk om ondersteuning voor nieuwe landinstellingen toe te voegen
      ```
 
 1. Voeg de landinstellingscode voor de gewenste taal toe aan het bestand.
-   1. Gebruik de [Lijst van ISO 639-1-codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) om de code van twee letters te vinden die uw gewenste taal vertegenwoordigt.
+   1. Gebruik de [ Lijst van ISO 639-1 codes ](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) om de twee-brief code te vinden die uw gewenste taal vertegenwoordigt.
 
-   1. De landinstellingscode opnemen in het dialoogvenster `Guide Localization Service.cfg.json` bestand. Hier volgen enkele voorbeelden:
+   1. Neem de landinstellingscode op in het `Guide Localization Service.cfg.json` -bestand. Hier volgen enkele voorbeelden:
 
       * Talen van links naar rechts:
          * Engels (Verenigde Staten): en-US
@@ -177,16 +177,16 @@ Ga als volgt te werk om ondersteuning voor nieuwe landinstellingen toe te voegen
          * Hebreeuws: he (of iw voor historische referentie)
          * Farsi: fa
 
-1. Nadat u wijzigingen hebt aangebracht, controleert u de `Guide Localization Service.cfg.json` bestand correct is opgemaakt als een geldig JSON-bestand. Fouten in JSON-opmaak kunnen ervoor zorgen dat deze niet goed werkt. Sla het bestand op.
+1. Nadat u wijzigingen hebt aangebracht, controleert u of het `Guide Localization Service.cfg.json` -bestand correct is opgemaakt als een geldig JSON-bestand. Fouten in JSON-opmaak kunnen ervoor zorgen dat deze niet goed werkt. Sla het bestand op.
 
 
 
 ### Gebruik de voorbeeldclientbibliotheek voor eenvoudige locale toevoeging
 
-AEM Forms biedt een handige voorbeeldclientbibliotheek. `clientlib-it-custom-locale`om het toevoegen van nieuwe landinstellingen te vereenvoudigen. Deze bibliotheek maakt deel uit van de [Adaptive Forms Core Components-opslagplaats](https://github.com/adobe/aem-core-forms-components), beschikbaar op GitHub.
+AEM Forms biedt een handige voorbeeldclientbibliotheek, `clientlib-it-custom-locale` , om het toevoegen van nieuwe landinstellingen te vereenvoudigen. Deze bibliotheek maakt deel uit van de [ Adaptieve gegevensopslagplaats van de Componenten van de Kern van Forms ](https://github.com/adobe/aem-core-forms-components), beschikbaar op GitHub.
 
 
-Voordat we beginnen, zorg er dan voor dat u een lokale kopie van de [Adaptive Forms Core Components-opslagplaats]. Als dat niet het geval is, kunt u het gemakkelijk klonen met Git met de volgende opdracht:
+Alvorens wij beginnen, verzeker u een lokaal exemplaar van de [ Aangepaste gegevensopslagplaats van de Componenten van de Kern van Forms ] hebt. Als dat niet het geval is, kunt u het gemakkelijk klonen met Git met de volgende opdracht:
 
 ```SHELL
 git clone https://github.com/adobe/aem-core-forms-components.git
@@ -194,15 +194,15 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 Met deze opdracht downloadt u de gehele opslagplaats, inclusief de client-it-custom-locale bibliotheek, naar een map met de naam aem-core-forms-components op uw computer.
 
-![Adaptive Forms Core Components repository directory op lokale computer](/help/forms/assets/core-forms-components-repo-on-local-machine.png)
+![ Adaptieve de opslagplaats van de Componenten van de Kern van Forms Core op lokale machine ](/help/forms/assets/core-forms-components-repo-on-local-machine.png)
 
 ### De voorbeeldclientbibliotheek integreren
 
-Laten we nu de `clientlib-it-custom-locale` bibliotheek in uw AEM as a Cloud Service; [AEMaaCS-projectmap]:
+Nu, neem de `clientlib-it-custom-locale` bibliotheek in uw AEM as a Cloud Service op, [ AEMaaCS projectfolder ]:
 
 1. Zoek de voorbeeldclientbibliotheek:
 
-   Binnen uw lokale exemplaar van [Adaptive Forms Core Components-opslagplaats]navigeer naar het volgende pad:
+   Binnen uw lokaal exemplaar van de [ Adaptieve plaats van de Componenten van de Kern van Forms ], navigeer aan de volgende weg:
 
    ```
        /aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs
@@ -210,53 +210,53 @@ Laten we nu de `clientlib-it-custom-locale` bibliotheek in uw AEM as a Cloud Ser
 
 1. Kopieer en plak de bibliotheek:
 
-   1. De `clientlib-it-custom-locale` map.
+   1. Kopieer de map `clientlib-it-custom-locale` .
 
-      ![Clientlib-it-custom-locale kopiëren](/help/forms/assets/clientlib-it-custom-locale-copy.png)
+      ![ het Kopiëren clientlib-het-douane-scène ](/help/forms/assets/clientlib-it-custom-locale-copy.png)
 
-   1. Navigeer naar de volgende map in de map [AEMaaCS-projectmap]:
+   1. Navigeer aan de volgende folder binnen uw [ AEMaaCS projectfolder ]:
 
       ```
       /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib
       ```
 
-      **Belangrijk**: Vervangen `<app-id>` met de werkelijke id van uw toepassing.
+      **Belangrijk**: Vervang `<app-id>` met daadwerkelijke identiteitskaart van uw toepassing.
 
-   1. De gekopieerde bestanden plakken `clientlib-it-custom-locale` in deze map.
+   1. Plak de gekopieerde `clientlib-it-custom-locale` map in deze map.
 
-      ![Clilib-it-custom-locale plakken](/help/forms/assets/clientlib-it-custom-locale-paste.png)
+      ![ het Plakken clientlib-het-douane-scène ](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
 
 ### Maak een bestand voor uw nieuwe landinstelling:
 
 1. Navigeer naar de map Locale:
 
-   Binnen uw `[AEMaaCS project directory]`navigeer naar het volgende pad:
+   Navigeer binnen uw `[AEMaaCS project directory]` naar het volgende pad:
 
    ```
        /ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/
    ```
 
-   **Belangrijk**: Vervangen `<program-id>` met uw werkelijke toepassings-id.
+   **Belangrijk**: Vervang `<program-id>` met uw daadwerkelijke toepassingsidentiteitskaart
 
 1. Zoek het voorbeeld Engels:
 
-   AEM Forms biedt een [voorbeeld Engelstalig bestand (.json) op GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json).
+   AEM Forms verstrekt het van de a [ steekproef Engelse scènedossier (.json) op GitHub ](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json).
 
    Het Engelstalige bestand bevat de standaardset tekenreeksen ter referentie. In het bestand dat specifiek is voor de landinstelling, moet de structuur van het taalbestand worden nagebootst.
 
    Voor talen zoals Arabisch, Hebreeuws en Farsi wordt tekst van rechts naar links (RTL) gelezen in plaats van van van links naar rechts (LTR) zoals Engels. Om ervoor te zorgen dat uw formulieren correct in deze talen worden weergegeven, raden we u aan onze voorbeeldbestanden als richtlijn te gebruiken. Deze bestanden bevatten een referentie voor het opmaken van tekst, datums en andere elementen voor RTL-talen. U kunt de voorbeeldbestanden voor landinstellingen vinden:
 
-   * [Arabisch](/help/forms/assets/ar-ae.json)
-   * [Hebreeuws](/help/forms/assets/he.json)
-   * [Farsi](/help/forms/assets/fa.json)
+   * [ Arabisch ](/help/forms/assets/ar-ae.json)
+   * [ Hebreeuws ](/help/forms/assets/he.json)
+   * [ Farsi ](/help/forms/assets/fa.json)
 
    Door deze voorbeeldbestanden te benutten, kunt u ervoor zorgen dat uw formulieren gebruikers die in RTL-talen werken, een naadloze ervaring bieden.
 
 
 1. Maak uw lokale bestand:
 
-   1. Maak een nieuw .json-bestand in het dialoogvenster `i18n` directory.
+   1. Maak een nieuw .json-bestand in de map `i18n` .
    1. Geef het bestand een naam met de juiste landcode voor de gewenste taal (bijvoorbeeld fr-FR.json voor Frans en ar-ae.json voor Arabisch). De structuur van dit bestand moet het Engelse landinstellingsbestand weerspiegelen.
 
 
@@ -277,7 +277,7 @@ Deze stap is alleen van toepassing op andere landinstellingen dan de volgende al
 
 1. Zoek de configuratiemap:
 
-   Navigeer naar de volgende map in de [AEMaaCS-projectmap]:
+   Navigeer aan de volgende folder in uw [ AEMaaCS projectfolder ]:
 
    ```
    /ui.content/src/main/content/jcr_root/etc
@@ -285,15 +285,15 @@ Deze stap is alleen van toepassing op andere landinstellingen dan de volgende al
 
 1. Maak de benodigde mappen (indien deze ontbreken):
 
-   Als de `etc` map bestaat niet binnen `jcr_root` maken. Binnen `etc`, maakt u een andere map met de naam `languages` als het ontbreekt.
+   Als de map `etc` niet in de map `jcr_root` staat, maakt u deze. Maak binnen `etc` een andere map met de naam `languages` als deze ontbreekt.
 
 1. Maak het configuratiebestand voor de landinstelling:
 
-   Binnen de `languages` een nieuw bestand met de naam `.content.xml`. Kopieer niet de naam van het bestand uit dit document, maar typ de naam handmatig.
+   Maak in de map `languages` een nieuw bestand met de naam `.content.xml` . Kopieer niet de naam van het bestand uit dit document, maar typ de naam handmatig.
 
-   ![een nieuw bestand met de naam `.content.xml`](etc-content-xml.png)
+   ![ creeer een nieuw dossier genoemd `.content.xml`](etc-content-xml.png)
 
-   Open dit bestand en plak de volgende inhoud, waarbij u [LOCALE_CODE] met de werkelijke landinstellingscode (bijvoorbeeld ar-ae voor Arabisch).
+   Open dit dossier en kleef de volgende inhoud, die [ LOCALE_CODE ] met de daadwerkelijke scènecode (bijvoorbeeld, ar-ae voor Arabisch) vervangt.
 
 
    ```XML
@@ -311,7 +311,7 @@ Deze stap is alleen van toepassing op andere landinstellingen dan de volgende al
 
 1. Neem de nieuwe mappen op in filter.xml:
 
-   Ga naar de `/ui.content/src/main/content/meta-inf/vault/filter.xml` bestand in uw [AEMaaCS-projectmap].
+   Navigeer aan het `/ui.content/src/main/content/meta-inf/vault/filter.xml` dossier in uw [ AEMaaCS projectfolder ].
 
    Open het bestand en voeg de volgende regel aan het einde toe:
 
@@ -319,7 +319,7 @@ Deze stap is alleen van toepassing op andere landinstellingen dan de volgende al
    <filter root="/etc/languages"/>
    ```
 
-   ![Voeg de gemaakte mappen toe aan het dialoogvenster `filter.xml` krachtens `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+   ![ Voeg de gemaakte mappen toe in `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 1. Sla het bestand op.
 
@@ -327,13 +327,13 @@ Deze stap is alleen van toepassing op andere landinstellingen dan de volgende al
 
 U bent nu klaar om de nieuwe landinstelling te gebruiken met uw Adaptive Forms. U kunt
 
-* Implementeer de AEM as a Cloud Service, [AEMaaCS-projectmap], naar uw lokale ontwikkelomgeving om de nieuwe configuratie voor landinstellingen op uw lokale computer uit te proberen. Distribueren naar uw lokale ontwikkelomgeving:
+* Stel AEM as a Cloud Service, [ AEMaaCS projectfolder ], aan uw lokale ontwikkelomgeving op om de nieuwe scèneconfiguratie op uw lokale machine te proberen. Distribueren naar uw lokale ontwikkelomgeving:
 
-   1. Zorg ervoor dat uw lokale ontwikkelomgeving actief is. Als u nog geen lokale ontwikkelomgeving hebt ingesteld, raadpleegt u de handleiding op [Lokale ontwikkelomgeving instellen voor AEM Forms](/help/forms/setup-local-development-environment.md).
+   1. Zorg ervoor dat uw lokale ontwikkelomgeving actief is. Als u niet reeds opstelling een lokale ontwikkelomgeving hebt, verwijs naar de gids op [ de lokale ontwikkelomgeving van de Opstelling voor AEM Forms ](/help/forms/setup-local-development-environment.md).
 
    1. Open het eindvenster of de bevelherinnering.
 
-   1. Ga naar de [AEMaaCS-projectmap]
+   1. Ga aan de [ AEMaaCS projectfolder ]
 
    1. Voer de volgende opdracht uit:
 
@@ -341,17 +341,17 @@ U bent nu klaar om de nieuwe landinstelling te gebruiken met uw Adaptive Forms. 
       mvn -PautoInstallPackage clean install
       ```
 
-* Implementeer de AEM as a Cloud Service, [AEMaaCS-projectmap]aan uw Cloud Service-omgeving. Implementeren in uw Cloud Service-omgeving:
+* Stel AEM as a Cloud Service, [ AEMaaCS projectfolder ], aan uw milieu van de Cloud Service op. Implementeren in uw Cloud Service-omgeving:
 
    1. Uw wijzigingen vastleggen:
 
-      Nadat u de nieuwe landinstellingsconfiguratie hebt toegevoegd, geeft u uw wijzigingen door een duidelijk Git-bericht met een beschrijving van de toevoeging aan de landinstelling (bijvoorbeeld &quot;Toegevoegde ondersteuning voor [Landinstelling]&quot;).
+      Na het toevoegen van de nieuwe scèneconfiguratie, begaat uw veranderingen met een duidelijk bericht van het Git beschrijvend de scènetoevoeging (bijvoorbeeld, &quot;Toegevoegde steun voor [ Naam van de Landinstelling ]&quot;).
 
    1. Implementeer de bijgewerkte code:
 
-      Trigger een plaatsing van uw code door [bestaande full-stack pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd met de nieuwe ondersteuning voor landinstellingen.
+      Trigger een plaatsing van uw code door de [ bestaande volledig-stapelpijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Hiermee wordt de bijgewerkte code automatisch samengesteld en geïmplementeerd met de nieuwe ondersteuning voor landinstellingen.
 
-      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [hoe een pijpleiding voor AEM Forms as a Cloud Service kan worden opgezet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+      Als u niet reeds opstelling een pijpleiding hebt, verwijs naar de gids op [ hoe te opstelling een pijpleiding voor AEM Forms as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## Een voorbeeld bekijken van een adaptief formulier met de nieuwe landinstelling
@@ -359,25 +359,25 @@ U bent nu klaar om de nieuwe landinstelling te gebruiken met uw Adaptive Forms. 
 Deze stappen begeleiden u door een voorbeeld weer te geven van een adaptief formulier met de nieuwe landinstelling:
 
 1. Meld u aan bij uw AEM Forms as a Cloud Service-exemplaar.
-1. Ga naar **Forms** >  **Forms en Documenten**.
-1. Selecteer een adaptief formulier en klik op **Woordenboek toevoegen** en **Woordenboek toevoegen aan vertaalproject** wordt weergegeven.
-1. Geef de **Projecttitel** en selecteert u de **Doeltalen** in het keuzemenu in het dialoogvenster **Woordenboek toevoegen aan vertaalproject** wizard.
-1. Klikken **Gereed** en voert het gemaakte vertaalproject uit.
-1. Ga naar **Forms** >  **Forms en Documenten**.
-1. Selecteer het adaptieve formulier en kies de optie **Voorvertonen als HTML** -optie.
-1. Toevoegen `&afAcceptLang=<locale-name>` naar de URL van de voorvertoning en druk op Enter. Vervangen `<locale-name>` met uw werkelijke landinstellingscode. Het adaptieve formulier wordt weergegeven in de opgegeven landinstelling.
+1. Ga naar **Forms** > **Forms en Documenten**.
+1. Selecteer een AanpassingsVorm en klik **toevoegen Woordenboek** en **voeg Woordenboek aan de tovenaar van het Project van de Vertaling** verschijnt.
+1. Specificeer de **Titel van het Project** en selecteer de **Talen van het Doel** van het drop-down menu in **Woordenboek aan de tovenaar van het Project van de Vertaling** toevoegen.
+1. Klik **Gedaan** en voer het gecreeerde vertaalproject uit.
+1. Ga naar **Forms** > **Forms en Documenten**.
+1. Selecteer de Aangepaste Vorm en kies de **Voorproef als HTML** optie.
+1. Voeg `&afAcceptLang=<locale-name>` toe aan de URL van de voorvertoning en druk op Enter. Vervang `<locale-name>` door de werkelijke landcode. Het adaptieve formulier wordt weergegeven in de opgegeven landinstelling.
 
 ## Aanbevolen procedures voor ondersteuning van nieuwe lokalisatie {#best-practices}
 
 * Adobe raadt u aan een vertaalproject te maken nadat u een adaptief formulier hebt gemaakt. Dit stroomlijnt het lokalisatieproces.
-* Wanneer de componenten Numeriek vak en Datumkiezer naar een specifieke landinstelling worden vertaald, kunnen er opmaakproblemen optreden. Om dit te beperken, **Taal** is opgenomen in het dialoogvenster Configureren van [component Datumkiezer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) en [Component Numeriek vak](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Wanneer de componenten Numeriek vak en Datumkiezer naar een specifieke landinstelling worden vertaald, kunnen er opmaakproblemen optreden. Om dit te verlichten, is de optie van de Taal van a **opgenomen in de Configure dialoog van [ de plukker van de Datum component ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) en [ Numerieke component van de Doos ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).**
 
 
 * Nieuwe velden verwerken:
 
-   * **Machinevertaling**: Als u automatische vertaling gebruikt, moet u het woordenboek opnieuw maken en[het vertaalproject uitvoeren](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) na het toevoegen van nieuwe velden aan een bestaand adaptief formulier. Nieuwe velden die na het eerste vertaalproject worden toegevoegd, blijven onvertaald.
+   * **Vertaling van de Machine**: Als het gebruiken van machinevertaling, moet u het woordenboek opnieuw creëren en [ in werking stellen het vertaalproject ](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) na het toevoegen van nieuwe gebieden aan een bestaande Aangepaste Vorm. Nieuwe velden die na het eerste vertaalproject worden toegevoegd, blijven onvertaald.
 
-   * **Menselijke vertaling**: Voor workflows voor menselijke vertaling exporteert u het woordenboek met de gebruikersinterface op `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de nieuwe gebieden bij en upload de herziene versie.
+   * **Menselijke Vertaling**: Voor menselijke vertaalwerkschema&#39;s, voer het woordenboek uit gebruikend UI bij `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Werk het woordenboek voor de nieuwe gebieden bij en upload de herziene versie.
 
 
 ## Zie ook {#see-also}

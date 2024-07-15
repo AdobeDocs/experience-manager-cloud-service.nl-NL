@@ -15,38 +15,38 @@ ht-degree: 0%
 
 # Programma&#39;s bewerken {#editing-programs}
 
-Start bij het [**Mijn programma&#39;s** console.](/help/implementing/cloud-manager/navigation.md) De **Mijn programma&#39;s** biedt een overzicht van alle programma&#39;s waartoe u toegang hebt. Wanneer u een afzonderlijk programma selecteert, wordt **Programmaoverzicht** Deze pagina bevat in één oogopslag details over het programma.
+Om programma&#39;s te beheren en uit te geven, begin bij de [**Mijn console van Programma&#39;s**.](/help/implementing/cloud-manager/navigation.md) De **Mijn pagina van Programma&#39;s** verstrekt een overzicht van alle programma&#39;s waartot u toegang hebt. Wanneer het selecteren van een individueel programma, verstrekt de **pagina van het Overzicht van het 0} Programma details van het programma in een blik.**
 
-Van de **Programmaoverzicht**, kunnen gebruikers met de vereiste machtigingen [productieprogramma&#39;s die in uw organisatie zijn gemaakt](creating-production-programs.md) en [sandboxprogramma&#39;s die in uw organisatie zijn gemaakt.](creating-sandbox-programs.md) Door een programma te bewerken kunt u:
+Van het **Overzicht van het Programma**, kunnen de gebruikers met de vereiste toestemmingen [ productieprogramma&#39;s uitgeven die in uw organisatie ](creating-production-programs.md) en [ worden gecreeerd zandbakprogramma&#39;s in uw organisatie.](creating-sandbox-programs.md) Als u een programma bewerkt, kunt u:
 
-* Voeg de oplossing van Plaatsen aan een bestaand programma met Activa toe en omgekeerd.
-* Sites of middelen verwijderen uit een bestaand programma met zowel sites als middelen.
+* Voeg Sites-oplossing toe aan een bestaand programma met Assets en omgekeerd.
+* Sites of Assets verwijderen uit een bestaand programma met zowel Sites als Assets.
 * Voeg een tweede, ongebruikte oplossingsrecht, aan of een bestaand programma of als nieuw Programma toe.
 * Sandboxprogramma&#39;s verwijderen.
 
 ## Machtigingen {#permissions}
 
-U moet lid zijn van de **Zakelijke eigenaar** rol voor het bewerken van programma&#39;s of het verwijderen van sandboxprogramma&#39;s en voor toegang tot het licentiedashboard.
+U moet een lid van de **rol van de Bedrijfs eigenaar** zijn om programma&#39;s uit te geven of zandbakprogramma&#39;s te schrappen evenals tot het Dashboard van de Vergunning toegang te hebben.
 
 ## Een programma bewerken {#editing}
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](#my-programs)** klikt u op het programma dat u wilt bewerken om de details weer te geven.
+1. Voor **[Mijn pagina van Programma&#39;s](#my-programs)**, klik het programma dat u wilt uitgeven om zijn details te tonen.
 
-1. Klik op de naam van het programma linksboven op de pagina en selecteer **Programma bewerken**.
+1. Klik de naam van uw programma in upper-left van de pagina en selecteer **programma** uitgeven.
 
-   ![Programma bewerken, optie](assets/edit-program-overview.png)
+   ![ geef programmaoptie ](assets/edit-program-overview.png) uit
 
-1. De **Programma bewerken** pagina wordt geopend voor de **Algemeen** tab.
+1. De **geeft de pagina van het Programma** uit opent aan **Algemene** tabel.
 
-   ![Tabblad Algemeen](assets/edit-program-prod1.png)
+   ![ Algemene tabel ](assets/edit-program-prod1.png)
 
 1. De beschikbare opties voor het bewerken van het programma zijn dezelfde als die voor het maken van het programma.
-   * Zie de documenten [Productieprogramma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) en [Sandbox-programma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) voor meer informatie over de afzonderlijke opties.
-   * [Aanvullende opties](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) kan voor uw productieprogramma afhankelijk van de aanspraken van uw organisatie beschikbaar zijn.
+   * Gelieve te zien de documenten [ Creërend de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) en [ Creërend Sandbox Programma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) voor details op de individuele opties.
+   * [ de Extra opties ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) kunnen voor uw productieprogramma afhankelijk van de aanspraken van uw organisatie beschikbaar zijn.
 
-1. Klikken **Bijwerken** om uw wijzigingen in het programma op te slaan.
+1. Klik **Update** om uw veranderingen in het programma te bewaren.
 
 De wijzigingen in het programma worden opgeslagen.
 
@@ -60,21 +60,21 @@ Als u een sandboxprogramma verwijdert, worden alle bijbehorende omgevingen en pi
 
 >[!TIP]
 >
->Gebruikers met de **Zakelijke eigenaar** of **Implementatiebeheer** rollen kunnen hun productie en werkgebiedmilieu&#39;s in plaats van het volledige zandbakprogramma Alternatief schrappen.
+>De gebruikers met de **BedrijfsEigenaar** of **rollen van de Manager van de Plaatsing** kunnen hun productie en werkgebiedmilieu&#39;s in plaats van het volledige zandbakprogramma Alternatief schrappen.
 
 Ga als volgt te werk om een sandboxprogramma te verwijderen.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](#my-programs)** klikt u op het programma dat u wilt bewerken om de details weer te geven.
+1. Voor **[Mijn pagina van Programma&#39;s](#my-programs)**, klik het programma dat u wilt uitgeven om zijn details te tonen.
 
-1. Klik op de naam van het programma linksboven op de pagina en selecteer **Programma verwijderen**.
+1. Klik de naam van uw programma in upper-left van de pagina en selecteer **Programma van de Schrapping**.
 
-   ![Programma verwijderen, optie](assets/delete-sandbox1.png)
+   ![ de programmaoptie van de Schrapping ](assets/delete-sandbox1.png)
 
-U kunt ook op de knop Ovaal op de kaart van uw programma klikken op de overzichtspagina van Cloud Manager en **Programma verwijderen**.
+Alternatief kunt u de ellipsknoop op de kaart van uw programma van de overzichtspagina van Cloud Manager klikken en **Programma van de Schrapping** selecteren.
 
-![Sandbox verwijderen van programmakaart](assets/delete-sandbox2.png)
+![ Schrap zandbak van programmakaart ](assets/delete-sandbox2.png)
 
 >[!NOTE]
 >

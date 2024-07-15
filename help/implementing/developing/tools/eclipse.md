@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
-![Experience Manager Developer Tools for Eclipse-logo](assets/eclipse-logo.png)
+![ Hulpmiddelen van de Ontwikkelaar van de Experience Manager voor het embleem van de Verduistering ](assets/eclipse-logo.png)
 
 ## Overzicht {#overview}
 
-_Experience Manager Developer Tools for Eclipse_ is een Eclipse-insteekmodule op basis van de [Eclipse-insteekmodule voor Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) vrijgegeven onder de Apache-licentie 2.
+{de Hulpmiddelen van de Ontwikkelaar van 0} Experience Manager voor Verduistering _is een stop Eclipse die op de [ wordt gebaseerd de stop van de Verduistering voor Apache Sling ](https://sling.apache.org/documentation/development/ide-tooling.html) onder Vergunning 2 wordt vrijgegeven Apache._
 
 Het biedt verschillende functies die AEM ontwikkeling vergemakkelijken:
 
@@ -31,55 +31,55 @@ Het biedt verschillende functies die AEM ontwikkeling vergemakkelijken:
 
 Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
-* Downloaden en installeren [Eclipse IDE voor Enterprise Java™-ontwikkelaars](https://www.eclipse.org/downloads/packages/).
-* Configureer de lipse-installatie om ervoor te zorgen dat u ten minste 1 GB heapgeheugen hebt door uw `eclipse.ini` configuratiebestand als beschreven in [Veelgestelde vragen over Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
+* Download en installeer [ Eclipse winde voor de Ontwikkelaars van Java™ van de Onderneming {](https://www.eclipse.org/downloads/packages/).
+* Vorm uw eclipse installatie om ervoor te zorgen dat u minstens 1 GB van heapgeheugen door uw `eclipse.ini` configuratiedossier te uitgeven zoals die in [ wordt beschreven Veelgestelde Veelgestelde vragen van de Verduistering ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse) hebt.
 
 >[!NOTE]
 >
->In macOS moet u met de rechtermuisknop klikken **Eclipse.app** en selecteer vervolgens **Toon de Inhoud van het Pakket** om uw `eclipse.ini`**.**
+>Op macOS, moet u **Eclipse.app** met de rechtermuisknop aanklikken, en dan selecteren **toont de Inhoud van het Pakket** om uw `eclipse.ini`**te vinden.**
 
 ## Hoe te om de Hulpmiddelen van de Ontwikkelaar van de AEM voor Eclipse te installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Wanneer u aan [vereisten](#requirements) hierboven kunt u de plug-in als volgt installeren:
+Wanneer u aan de [ vereisten ](#requirements) hierboven hebt voldaan, kunt u de stop als volgt installeren:
 
-1. Open de [Website AEM Developer Tools](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Open de [ AEM Website van de Hulpmiddelen van de Ontwikkelaar ](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
-1. De **Installatiekoppeling**.
+1. Kopieer de **Verbinding van de Installatie**.
 
    U kunt ook een archief downloaden in plaats van de installatiekoppeling te gebruiken. Deze methode staat offlineinstallatie toe maar u ontvangt geen automatische updatedeclaraties op deze manier.
 
-1. Open in Eclipse de **Help** -menu.
-1. Klikken **Nieuwe software installeren**.
-1. Klikken **Toevoegen...**.
-1. In de **Naam** veld, Enter `AEM Developer Tools`.
-1. In de **Locatie** , kopieert u de installatie-URL.
-1. Klikken **Toevoegen**.
-1. Beide controleren **AEM** en **Sling** plug-ins.
+1. In Verduistering, open het **menu van de Hulp**.
+1. Klik **installeer Nieuwe Software**.
+1. Klik **toevoegen...**.
+1. Op het **gebied van de Naam**, ga `AEM Developer Tools` in.
+1. Op het **gebied van de Plaats**, kopieer de installatie URL.
+1. Klik **toevoegen**.
+1. Controle zowel **AEM** als **het Verdelen** stoppen.
 1. Klik op **Next**.
-1. In de **Details installeren** venster, klikt u op **Volgende** opnieuw.
-1. Accepteer de licentieovereenkomsten en klik op **Voltooien**.
-1. Klikken **Opnieuw startenNu** om Eclipse opnieuw te starten.
+1. In **installeer Details** venster, klik **daarna** opnieuw.
+1. Accepteer de vergunningsovereenkomsten en klik **Afwerking**.
+1. Klik **RestartNow** om Eclipse opnieuw te beginnen.
 
 ## Het AEM perspectief {#the-aem-perspective}
 
-In Eclipse, bepaalt het Perspectief de acties en de meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Zie voor meer informatie over Perspectief de [Eclipse-documentatie.](https://help.eclipse.org/latest/index.jsp)
+In Eclipse, bepaalt het Perspectief de acties en de meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Voor meer details over Perspectief, zie de [ documentatie van de Verduistering.](https://help.eclipse.org/latest/index.jsp)
 
-_Experience Manager Development Tools for Eclipse_ Geef een AEM perspectief dat u volledige controle over uw AEM Projecten en instanties biedt. Het AEM perspectief openen:
+_Hulpmiddelen van de Ontwikkeling van de Experience Manager voor Verduistering_ verstrekken een AEM Perspectief dat u volledige controle over uw AEM Projecten en instanties aanbiedt. Het AEM perspectief openen:
 
-1. Selecteer in de menubalk Eclipse de optie **Venster** > **Perspectief** > **Perspectief openen** > **Overige**.
-1. Selecteren **AEM** in het dialoogvenster en klik op **Openen**.
+1. Van de het menubar van de Verduistering, uitgezocht **Venster** Perspectief **>** Open Perspectief **>** Andere **.**
+1. Selecteer **AEM** in de dialoog en klik **Open**.
 
-![Het AEM perspectief in Eclipse](assets/eclipse-aem-perspective.png)
+![ het AEM perspectief in Verduistering ](assets/eclipse-aem-perspective.png)
 
 ## Monster nemen van meermoduleproject {#sample-multi-module-project}
 
-De _Experience Manager Developer Tools for Eclipse_ komt met een steekproef, multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt te versnellen. Het dient ook als gids voor beste praktijken aan verscheidene AEM eigenschappen. [Meer informatie over de projectarchetype](https://github.com/adobe/aem-project-archetype).
+De _Hulpmiddelen van de Ontwikkelaar van de Experience Manager voor Verduistering_ komt met een steekproef, multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt omhoog krijgen. Het dient ook als gids voor beste praktijken aan verscheidene AEM eigenschappen. [ leer meer over het Archetype van het Project ](https://github.com/adobe/aem-project-archetype).
 
 Ga als volgt te werk om het voorbeeldproject te maken:
 
-1. In de **Bestand** > **Nieuw** > **Project** , bladert u naar de **AEM** en selecteert u **AEM Monster nemen van meermoduleproject**.
+1. In het **Dossier** > **Nieuw** > **het menu van het Project**, doorblader aan de **AEM** sectie en selecteer **AEM het Project van de Steekproef Multi-Module**.
 
-   ![AEM Monster nemen van meermoduleproject](assets/aem-sample-project.png)
+   ![ AEM Steekproef Multi-Module Project ](assets/aem-sample-project.png)
 
 1. Klik op **Next**.
 
@@ -87,20 +87,20 @@ Ga als volgt te werk om het voorbeeldproject te maken:
    >
    >Deze stap kan even duren omdat m2eclipse de catalogi van archetype moet aftasten.
 
-1. Kies `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` in het menu en klik vervolgens op **Volgende**.
+1. Kies `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` van het menu, dan klik **daarna**.
 
-   ![Versie van archetype selecteren](assets/select-archetype.png)
+   ![ Uitgezochte archetype versie ](assets/select-archetype.png)
 
 1. Geef de volgende velden op voor het voorbeeldproject:
 
    * **Naam**
-   * **Groep-id**
-   * **Artefact-id**
-   * **appId** - Het kan nodig zijn om de **Geavanceerd** opties om deze waarde in te stellen.
-   * **appTitle** - Het kan nodig zijn om de **Geavanceerd** opties om deze waarde in te stellen.
-   * **Pakket** - Het kan nodig zijn om de **Geavanceerd** opties om deze waarde in te stellen.
+   * **Identiteitskaart van de Groep**
+   * **Artefact identiteitskaart**
+   * **appId** - u kunt de **Geavanceerde** opties moeten uitbreiden om deze waarde te plaatsen.
+   * **appTitle** - u kunt de **Geavanceerde** opties moeten uitbreiden om deze waarde te plaatsen.
+   * **Pakket** - u kunt de **Geavanceerde** opties moeten uitbreiden om deze waarde te plaatsen.
 
-   ![Eigenschappen archetype definiëren](assets/archetype-properties.png)
+   ![ bepaalt archetype eigenschappen ](assets/archetype-properties.png)
 
 1. Klik op **Next**.
 
@@ -112,42 +112,42 @@ Ga als volgt te werk om het voorbeeldproject te maken:
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
    ```
 
-   ![Verbinding maken met AEM server](assets/connect-server.png)
+   ![ verbind met AEM server ](assets/connect-server.png)
 
-1. Klikken **Voltooien**. De projectstructuur wordt gemaakt.
+1. Klik **Afwerking**. De projectstructuur wordt gemaakt.
 
    >[!NOTE]
    >
-   >Op een nieuwe installatie (meer specifiek, wanneer bepaalde gebiedsdelen nooit zijn gedownload) zou u het project kunnen krijgen dat met fouten wordt gecreeerd. In dit geval volgt u de in [Ongeldige projectdefinitie oplossen](#resolving-invalid-project-definition).
+   >Op een nieuwe installatie (meer specifiek, wanneer bepaalde gebiedsdelen nooit zijn gedownload) zou u het project kunnen krijgen dat met fouten wordt gecreeerd. In dit geval, volg de procedure die in [ wordt beschreven het Oplossen van Ongeldige Definitie van het Project ](#resolving-invalid-project-definition).
 
 ## Bestaande projecten importeren {#how-to-import-existing-projects}
 
-U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
+U kunt de **Nieuwe eigenschap van het Project** gebruiken om de juiste structuur voor u tot stand te brengen:
 
-1. Volg de instructies om een [Monster nemen van meermoduleproject](#sample-multi-module-project) en u hebt de volgende projecten gecreeerd voor u, die een gezonde scheiding van zorgen toelaten:
+1. Volg de instructies om tot het Project van de Monster van de a [ Monster Multi-Module ](#sample-multi-module-project) te leiden en u hebt de volgende die projecten voor u worden gecreeerd, die een gezonde scheiding van zorgen toelaten:
 
-   * `PROJECT.ui.apps` for `/apps` en `/etc` content
-   * `PROJECT.ui.content` for `/content` die is gemaakt
-   * `PROJECT.core` voor Java™-pakketten (deze worden interessant wanneer u Java™-code wilt toevoegen)
+   * `PROJECT.ui.apps` voor `/apps` en `/etc` inhoud
+   * `PROJECT.ui.content` for `/content` dat is gemaakt
+   * `PROJECT.core` voor Java™-bundels (deze worden interessant wanneer u Java™-code wilt toevoegen)
    * `PROJECT.it.launcher` en `PROJECT.it.tests` voor integratietests
 
-1. Vervang de inhoud van uw `PROJECT.ui.apps` met de `apps` en `etc` mappen van het pakket:
+1. Vervang de inhoud van het `PROJECT.ui.apps` -project door de mappen `apps` en `etc` van het pakket:
 
-   1. In het paneel van de Ontdekkingsreiziger van het Project, ontvouw `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
-   1. Klik met de rechtermuisknop op de knop `apps` map en kies **Tonen in** > **Systeemverkenner**.
-   1. Verwijder de `apps` en `etc` mappen die u nu moet zien en hier plaatsen `apps` en `etc` mappen van het inhoudspakket.
-   1. Klik in Eclipse met de rechtermuisknop op de knop `PROJECT.ui.apps` project en kies **Vernieuwen**.
+   1. Vouw in het deelvenster Projectverkenner `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps` uit.
+   1. Klik met de rechtermuisknop op de `apps` omslag en kies **Tonen in** > **Ontdekkingsreiziger van het Systeem**.
+   1. Verwijder de mappen `apps` en `etc` die u nu moet zien en plaats hier de mappen `apps` en `etc` van het inhoudspakket.
+   1. In Verduistering, klik het `PROJECT.ui.apps` project met de rechtermuisknop aan en kies **verfrissen**.
 
-1. Doe dan het zelfde voor `PROJECT.ui.content` en vervang de inhoudsmap door een van de pakketten:
+1. Doe dan het zelfde voor `PROJECT.ui.content` en vervang zijn inhoudsomslag met één van uw pakketten:
 
-   1. In het paneel van de Ontdekkingsreiziger van het Project, ontvouw `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. Klik met de rechtermuisknop op de diepere inhoudsmap en kies **Tonen in** > **Systeemverkenner**.
+   1. Vouw in het deelvenster Projectverkenner `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content` uit.
+   1. Klik de diepere inhoudsomslag met de rechtermuisknop aan en kies **Tonen in** > **Ontdekkingsreiziger van het Systeem**.
    1. Verwijder de inhoudsmap die u nu moet zien en plaats hier de inhoudsmap van het inhoudspakket.
-   1. Klik in Eclipse met de rechtermuisknop op de knop `PROJECT.ui.content` project en kies **Vernieuwen**.
+   1. In Verduistering, klik het `PROJECT.ui.content` project met de rechtermuisknop aan en kies **verfrissen**.
 
-1. Nu moet u de `filter.xml` De bestanden van deze twee projecten komen overeen met de inhoud van het inhoudspakket. Open daarvoor de `META-INF/vault/filter.xml` bestand van het inhoudspakket in een aparte tekst/code-editor.
+1. Nu moet u de `filter.xml` dossiers van deze twee projecten bijwerken om aan de inhoud van uw inhoudspakket te beantwoorden. Open daartoe het `META-INF/vault/filter.xml` -bestand van het inhoudspakket in een aparte tekst-/code-editor.
 
-   * Dit is een voorbeeld van hoe uw `filter.xml` bestand kan er uitzien:
+   * Dit is een voorbeeld van hoe uw `filter.xml` -bestand eruit kan zien:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -161,10 +161,10 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
    </workspaceFilter>
    ```
 
-1. Wat de inhoud van het pakket betreft dat in twee projecten is gesplitst, moet u deze filterregels ook in twee splitsen en dienovereenkomstig bijwerken `filter.xml` bestanden van de twee projecten.
+1. Wat de inhoud van het pakket betreft dat in twee projecten is gesplitst, moet u deze filterregels ook in twee splitsen en de `filter.xml` -bestanden van de twee projecten dienovereenkomstig bijwerken.
 
-   1. Open in Eclipse `PROJECT.ui.apps/src/main/content/META-INF/filter.xml`.
-   1. De inhoud van de `<workspaceFilter>` element met de regels van uw pakket waarmee begint `/apps` en `/etc`
+   1. Open `PROJECT.ui.apps/src/main/content/META-INF/filter.xml` in Eclipse.
+   1. Vervang de inhoud van het element `<workspaceFilter>` door de regels van het pakket die beginnen met `/apps` en `/etc`
       * Bijvoorbeeld:
 
         ```xml
@@ -176,8 +176,8 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
         </workspaceFilter>
         ```
 
-   1. Vervolgens openen `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
-   1. Vervang de regels door de regels in het pakket waarmee u begint `/content`.
+   1. Open vervolgens `PROJECT.ui.content/src/main/content/META-INF/filter.xml` .
+   1. Vervang de regels door de regels in het pakket die beginnen met `/content` .
       * Bijvoorbeeld:
 
         ```xml
@@ -192,13 +192,13 @@ U kunt de **Nieuw project** functie om de juiste structuur voor u te maken:
 1. Zorg ervoor dat u al uw wijzigingen opslaat. U kunt die nieuwe inhoud nu synchroniseren met uw AEM.
 
 1. Controleer of in het deelvenster Servers de verbinding is gestart en start deze als dat niet het geval is.
-1. Klik op de knop **Reinigen en publiceren** pictogram.
+1. Klik het **Schone en Publish** pictogram.
 
 Als u klaar bent, moet het pakket op de instantie worden uitgevoerd en als u het bestand opslaat, wordt elke wijziging automatisch gesynchroniseerd met de instantie.
 
-Als u een pakket uit uw project wilt opnieuw bouwen, klik met de rechtermuisknop aan `PROJECT.ui.apps` of `PROJECT.ui.content` en kiest u **Uitvoeren als** > **Maven Install**.
+Als u een pakket uit uw project wilt re-bouwen, klik `PROJECT.ui.apps` of `PROJECT.ui.content` met de rechtermuisknop aan en kies **Looppas zoals** > **Gemaakt installeert**.
 
-Er is nu een doelmap gemaakt met het pakket in de map (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Er is nu een doelmap gemaakt met de pakketmap in die map (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip` genoemd).
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -208,9 +208,9 @@ Om ongeldige gebiedsdelen en projectdefinitie op te lossen ga als volgt te werk:
 
 1. Selecteer alle gemaakte projecten.
 1. Klik met de rechtermuisknop.
-1. Selecteer in het contextmenu **Maven** > **Projecten bijwerken**.
-1. Controleren **Updates van momentopname/releases forceren**.
-1. Klikken **OK**.
+1. In het contextmenu, uitgezochte **Gemaakt** > **Projecten van de Update**.
+1. Controle **de Updates van de Kracht van Momentopname/Versies**.
+1. Klik **OK**.
 
 Eclipse downloadt de vereiste afhankelijkheden. Dit kan even duren.
 
@@ -218,12 +218,12 @@ Eclipse downloadt de vereiste afhankelijkheden. Dit kan even duren.
 
 Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige informatie:
 
-* De [**Apache Sling IDE-gereedschap voor Eclipse** Handboek](https://sling.apache.org/documentation/development/ide-tooling.html), begeleidt deze documentatie u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van de AEM worden gesteund.
-* De [Sectie Problemen oplossen](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
-* De [Lijst met bekende problemen](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
+* [**Apache het Verdelen van winde tooling voor de Gids van de Gebruiker van de Verduistering** ](https://sling.apache.org/documentation/development/ide-tooling.html), begeleidt deze documentatie u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van de AEM worden gesteund.
+* De [ sectie van het Oplossen van problemen ](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
+* De [ Bekende lijst van kwesties ](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-De volgende ambtenaar [Eclipse](https://www.eclipse.org/) documentatie kan u helpen uw omgeving in te stellen:
+De volgende officiële ](https://www.eclipse.org/) documentatie van de Verduistering [ kan helpen aan opstelling uw milieu:
 
-* [Aan de slag met Eclipse](https://eclipseide.org/getting-started/)
-* [Help-systeem Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
-* [Maven Integration (m2eclipse)](https://www.eclipse.org/m2e/)
+* [ Begonnen het worden met Verduistering ](https://eclipseide.org/getting-started/)
+* [ Eclipse Luna Help System ](https://help.eclipse.org/latest/index.jsp)
+* [ Gemaakt Integratie (m2eclipse) ](https://www.eclipse.org/m2e/)

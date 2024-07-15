@@ -1,6 +1,6 @@
 ---
-title: Digital Rights Management in [!DNL Assets]
-description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager] als [!DNL Cloud Service].
+title: Digital Rights Management in  [!DNL Assets]
+description: Leer hoe te om activa te beheren vervalsen staten en informatie voor vergunning gegeven activa in  [!DNL Experience Manager]  als a  [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
@@ -16,10 +16,10 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-Digitale middelen zijn vaak gekoppeld aan een licentie waarin de gebruiksvoorwaarden en -duur zijn vastgelegd. Met de [!DNL Experience Manager] -platform, kunt u informatie over het verlopen van bedrijfsmiddelen en licentiegegevens efficiënt beheren.
+Digitale middelen zijn vaak gekoppeld aan een licentie waarin de gebruiksvoorwaarden en -duur zijn vastgelegd. Met het [!DNL Experience Manager] -platform kunt u op efficiënte wijze informatie over het verlopen van bedrijfsmiddelen en licentiegegevens beheren.
 
 ## Vervaldatum van element {#asset-expiration}
 
@@ -27,37 +27,37 @@ Gebruik informatie over het verlopen van elementen om licentievereisten voor ele
 
 U kunt de vervalstatus van een element op de volgende plaatsen bekijken:
 
-* **Kaartweergave**: Voor een verlopen element geeft een markering op de kaart aan dat deze is verlopen.
-* **Lijstweergave**: Voor een verlopen element geldt het **[!UICONTROL Status]** de kolom toont **[!UICONTROL Expired]** banner.
-* **Tijdlijn**: U kunt de vervalstatus van een element in de tijdlijn bekijken. Selecteer het element en kies Tijdlijn.
-* **Referenties spoorstaaf**: U kunt de vervalstatus van elementen ook weergeven in het dialoogvenster **[!UICONTROL References]** spoorwegen. Het beheert activa vervalstatussen en verhoudingen tussen samengestelde activa en referenced subassets, inzamelingen, en projecten.
+* **mening van de Kaart**: Voor een verlopen activa, wijst een vlag op de kaart erop dat het is verlopen.
+* **mening van de Lijst**: Voor een verlopen activa, toont de **[!UICONTROL Status]** kolom de **[!UICONTROL Expired]** banner.
+* **Chronologie**: U kunt de vervalstatus van activa in de chronologie bekijken. Selecteer het element en kies Tijdlijn.
+* **spoorwegen van Verwijzingen**: U kunt de vervalstatus van activa in het **[!UICONTROL References]** spoor ook bekijken. Het beheert activa vervalstatussen en verhoudingen tussen samengestelde activa en referenced subassets, inzamelingen, en projecten.
 
 Ga als volgt te werk om het verwijzen naar webpagina&#39;s en samengestelde elementen voor een element weer te geven:
 
-1. Ga naar het element, selecteer het element en klik op ![pictogram Verwijzingen naar inhoud links](assets/do-not-localize/content-rail-icon.png). De linkerspoorstaaf opent.
-1. Selecteren **[!UICONTROL References]** van de linkerspoorstaaf.
-1. Voor verlopen elementen [!UICONTROL References] geeft de vervalstatus weer als **[!UICONTROL Asset is Expired]**. Als het element verlopen is, worden de [!UICONTROL References] spoorstaaf geeft de status **[!UICONTROL Asset has Expired Sub-Assets]**.
+1. Navigeer aan de activa, selecteer de activa, en klik ![ linker pictogram van de spoorinhoudsverwijzingen ](assets/do-not-localize/content-rail-icon.png). De linkerspoorstaaf opent.
+1. Selecteer **[!UICONTROL References]** in het linkerspoor.
+1. Voor verlopen elementen geeft [!UICONTROL References] de vervalstatus weer als **[!UICONTROL Asset is Expired]** . Als het element verlopen subassets heeft, geeft de [!UICONTROL References] -rail de status **[!UICONTROL Asset has Expired Sub-Assets]** weer.
 
 ### Zoeken in verlopen elementen {#search-expired-assets}
 
 Voer de volgende stappen uit om te zoeken naar een verlopen element, inclusief verlopen subelementen:
 
-1. In de [!DNL Assets] console, klik **[!UICONTROL Search]** in de werkbalk en drukt u op `Enter`.
+1. Klik in de [!DNL Assets] -console op **[!UICONTROL Search]** op de werkbalk en druk op `Enter` .
 
-1. Klik op het pictogram GlobalNav en selecteer het pictogram **[!UICONTROL Expiry Status]** -optie.
+1. Klik op het pictogram GlobalNav en selecteer de optie **[!UICONTROL Expiry Status]** .
 
 1. Selecteer **[!UICONTROL Expired]**. De zoekresultaten geven de verlopen elementen weer.
 
-Wanneer u **[!UICONTROL Expired]** de [!DNL Assets] De console toont slechts de verlopen activa en de subassets die door samengestelde activa van verwijzingen worden voorzien. De samengestelde elementen die verwijzen naar verlopen subelementen worden niet direct weergegeven nadat de subelementen verlopen zijn. In plaats daarvan worden ze weergegeven na [!DNL Experience Manager] ontdekt dat zij verlopen subassets van verwijzingen voorzien de volgende tijd de planner uitvoert.
+Wanneer u de optie **[!UICONTROL Expired]** kiest, worden in de [!DNL Assets] -console alleen de verlopen elementen en subelementen weergegeven waarnaar wordt verwezen door samengestelde elementen. De samengestelde elementen die verwijzen naar verlopen subelementen worden niet direct weergegeven nadat de subelementen verlopen zijn. In plaats daarvan, worden zij getoond nadat [!DNL Experience Manager] ontdekt dat zij verlopen subassets van verwijzingen voorzien de volgende tijd de planner uitvoert.
 
-Het is mogelijk om de vervaldatum van een gepubliceerd actief te wijzigen in een datum vroeger dan de huidige plannercyclus. In het schema wordt echter nog steeds een element gedetecteerd als een verlopen element wanneer het de volgende keer wordt uitgevoerd en [!DNL Experience Manager] geeft de status in zijn verslag weer. De vervaldatum van een element wordt anders weergegeven voor gebruikers in verschillende tijdzones.
+Het is mogelijk om de vervaldatum van een gepubliceerd actief te wijzigen in een datum vroeger dan de huidige plannercyclus. In het schema wordt een element echter wel als een verlopen element gedetecteerd wanneer het de volgende keer wordt uitgevoerd en [!DNL Experience Manager] geeft de status in het rapport weer. De vervaldatum van een element wordt anders weergegeven voor gebruikers in verschillende tijdzones.
 
 Bovendien als een fout de planner verhindert verlopen activa in de huidige cyclus te ontdekken, onderzoekt de planner deze activa in de volgende cyclus opnieuw en ontdekt hun verlopen status.
 
-Om het [!DNL Assets] console om de verwijzende samengestelde activa samen met de verlopen subassets te tonen, vorm **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager]. De op tijd-gebaseerde planner plant een baan om op een specifiek ogenblik te controleren of een activa verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
+Configureer **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] om de [!DNL Assets] -console in staat te stellen om de samengestelde elementen die naar verwijzen samen met de verlopen subelementen weer te geven. De op tijd-gebaseerde planner plant een baan om op een specifiek ogenblik te controleren of een activa verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
 
-1. Toegang krijgen tot de [!DNL Cloud Manager] Git-opslagplaats gekoppeld aan uw omgeving.
-1. Een bestand met de naam vastleggen `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` in de repository met de volgende inhoud.
+1. Open de [!DNL Cloud Manager] Git-gegevensopslagruimte die aan uw omgeving is gekoppeld.
+1. Leg een bestand met de naam `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` vast in de opslagplaats met de volgende inhoud.
 
    ```json
    {
@@ -65,14 +65,14 @@ Om het [!DNL Assets] console om de verwijzende samengestelde activa samen met de
    }
    ```
 
-1. Volg de instructies van [hoe te om configuratie OSGi in te doen [!DNL Experience Manager] als [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
+1. Volg de instructies van [ hoe te om configuratie OSGi in  [!DNL Experience Manager]  als a  [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) te doen.
 
 U kunt de planner vormen gebruikend de volgende eigenschappen:
 
-* A `true` waarde van de eigenschap `cq.dam.expiry.notification.scheduler.istimebased` stelt de planner in werking. * De waarde van de eigenschap `cq.dam.expiry.notification.scheduler.timebased.rule` is de reguliere expressie die de tijd definieert. In het bovenstaande voorbeeld wordt de plannertaak op 00 uur gestart.
-* Indien `send_email` is ingesteld op `true`, de maker van het actief (de persoon die een bepaald actief uploadt naar [!DNL Assets]) ontvangt een e-mail wanneer het middel vervalt.
-* Het maximumaantal activa verliepen in één herhaling van de planner is de waarde van het bezit `asset_expired_limit`.
-* Als u de taak periodiek wilt uitvoeren, stelt u de waarde van de eigenschap in `cq.dam.expiry.notification.scheduler.istimebased` als `false` en stelt de waarde van de eigenschap in `cq.dam.expiry.notification.scheduler.period.rule` in seconden.
+* Een `true` waarde van het bezit `cq.dam.expiry.notification.scheduler.istimebased` stelt de planner in werking. * De waarde van de eigenschap `cq.dam.expiry.notification.scheduler.timebased.rule` is de reguliere expressie die de tijd definieert. In het bovenstaande voorbeeld wordt de plannertaak op 00 uur gestart.
+* Als `send_email` is ingesteld op `true` , ontvangt de maker van het element (de persoon die een bepaald element uploadt naar [!DNL Assets] ) een e-mail wanneer het element vervalt.
+* Het maximumaantal elementen dat in één herhaling van de planner is verlopen, is de waarde van de eigenschap `asset_expired_limit` .
+* Als u de taak periodiek wilt uitvoeren, stelt u de waarde van de eigenschap `cq.dam.expiry.notification.scheduler.istimebased` in op `false` en stelt u de waarde van de eigenschap `cq.dam.expiry.notification.scheduler.period.rule` in met tijd in seconden.
 
 <!-- TBD: Web Console not available in CS.
 
@@ -90,76 +90,76 @@ U kunt de planner vormen gebruikend de volgende eigenschappen:
 
 ## Elementstatussen {#asset-states}
 
-De [!DNL Assets] De console kan diverse staten voor activa tonen. Afhankelijk van de huidige status van een bepaald element wordt in de kaartweergave een label weergegeven dat de status beschrijft, bijvoorbeeld Verlopen, Gepubliceerd, Goedgekeurd, Afgewezen enzovoort.
+De [!DNL Assets] -console kan verschillende statussen voor elementen weergeven. Afhankelijk van de huidige status van een bepaald element wordt in de kaartweergave een label weergegeven dat de status beschrijft, bijvoorbeeld Verlopen, Gepubliceerd, Goedgekeurd, Afgewezen enzovoort.
 
-1. In de [!DNL Assets] -interface selecteert u een element.
+1. Selecteer een element in de gebruikersinterface van [!DNL Assets] .
 
-1. Selecteren **[!UICONTROL Publish]** op de werkbalk. Als u niet ziet [!UICONTROL Publish] in de werkbalk klikt u op **[!UICONTROL More]** op de werkbalk en zoek **[!UICONTROL Publish]** -optie.
+1. Selecteer **[!UICONTROL Publish]** op de werkbalk. Als de optie [!UICONTROL Publish] niet wordt weergegeven op de werkbalk, klikt u op **[!UICONTROL More]** op de werkbalk en zoekt u de optie **[!UICONTROL Publish]** .
 
 1. Kies **[!UICONTROL Publish]** in het menu en sluit vervolgens het bevestigingsvenster.
 
 1. Sluit de selectiemodus. De publicatiestatus voor het element wordt onder aan de elementminiatuur weergegeven in de kaartweergave. In de lijstmening, toont de Gepubliceerde kolom de tijd toen de activa werd gepubliceerd.
 
-1. Als u de pagina met elementdetails wilt weergeven, gaat u naar [!DNL Assets] interface, selecteer een element en klik op **[!UICONTROL Properties]**.
+1. Als u de pagina met elementdetails wilt weergeven, selecteert u een element in de interface van [!DNL Assets] en klikt u op **[!UICONTROL Properties]** .
 
-1. In de [!UICONTROL Advanced] een vervaldatum voor het element in te stellen vanaf de **[!UICONTROL Expires]** veld.
+1. Stel op het tabblad [!UICONTROL Advanced] een vervaldatum voor het element in vanuit het veld **[!UICONTROL Expires]** .
 
-1. Klikken **[!UICONTROL Save]** en klik vervolgens op **[!UICONTROL Close]** om de Asset-console weer te geven.
+1. Klik op **[!UICONTROL Save]** en vervolgens op **[!UICONTROL Close]** om de Asset-console weer te geven.
 
-1. De publicatiestatus voor het element geeft aan dat de status is verlopen onder aan de elementminiatuur in de kaartweergave. In de lijstweergave wordt de status van het element weergegeven als **[!UICONTROL Expired]**.
+1. De publicatiestatus voor het element geeft aan dat de status is verlopen onder aan de elementminiatuur in de kaartweergave. In de lijstweergave wordt de status van het element weergegeven als **[!UICONTROL Expired]** .
 
-1. In de [!DNL Assets] Selecteer een map en maak een revisietaak in de map.
+1. Selecteer in de [!DNL Assets] -console een map en maak een revisietaak in de map.
 
-1. Reviseer en keur de elementen in de revisietaak goed/verwerp deze en klik op **[!UICONTROL Complete]**.
+1. Reviseer, keur de elementen in de revisietaak goed of wijs deze af en klik op **[!UICONTROL Complete]** .
 
 1. Navigeer naar de map waarvoor u de revisietaak hebt gemaakt. De status voor de middelen die u hebt goedgekeurd/geweigerd, wordt onderaan weergegeven in de kaartweergave. In de lijstweergave worden de goedkeuringsstatus en de vervalstatus weergegeven in de desbetreffende kolommen.
 
-1. Als u wilt zoeken naar elementen op basis van hun status, klikt u op **[!UICONTROL Search]** om de zoekbalk weer te geven.
+1. Als u naar elementen wilt zoeken op basis van hun status, klikt u op **[!UICONTROL Search]** om de zoekbalk weer te geven.
 
-1. Selecteren `Return` en klik op [!DNL Experience Manager].
+1. Selecteer `Return` en klik op [!DNL Experience Manager] .
 
-1. Klik in het deelvenster Zoeken op **[!UICONTROL Publish Status]** en selecteert u **[!UICONTROL Published]** om te zoeken naar gepubliceerde elementen in [!DNL Assets].
+1. Klik in het deelvenster Zoeken op **[!UICONTROL Publish Status]** en selecteer **[!UICONTROL Published]** om te zoeken naar gepubliceerde elementen in [!DNL Assets] .
 
 1. Als u naar goedgekeurde of geweigerde elementen wilt zoeken, selecteert u **[!UICONTROL Approval Status]** en selecteert u de gewenste optie.
 
-1. Als u op basis van de vervalstatus naar elementen wilt zoeken, selecteert u **[!UICONTROL Expiry Status]** in het deelvenster Zoeken en selecteer de gewenste optie.
+1. Als u naar elementen wilt zoeken op basis van hun vervalstatus, selecteert u **[!UICONTROL Expiry Status]** in het zoekvenster en selecteert u de gewenste optie.
 
 1. U kunt ook naar elementen zoeken op basis van een combinatie van statussen onder verschillende zoekfacetten. U kunt bijvoorbeeld zoeken naar gepubliceerde elementen die zijn goedgekeurd in een controletaak en niet verlopen zijn. Selecteer de gewenste opties in de zoekfacetten om dergelijke elementen te zoeken.
 
 ## Digital Rights Management in [!DNL Assets] {#digital-rights-management-in-assets-1}
 
-De DRM-functionaliteit dwingt de acceptatie van de licentieovereenkomst af voordat u een licentie-asset kunt downloaden van [!DNL Assets].
+De DRM-functionaliteit dwingt de acceptatie van de licentieovereenkomst af voordat u een licentie-element kunt downloaden van [!DNL Assets] .
 
-Als u een beveiligd element selecteert en klikt op **[!UICONTROL Download]**, wordt u omgeleid naar een licentiepagina om de licentieovereenkomst te accepteren. Als u de licentieovereenkomst niet accepteert, **[!UICONTROL Download]** is niet beschikbaar.
+Als u een beveiligd element selecteert en op **[!UICONTROL Download]** klikt, wordt u omgeleid naar een licentiepagina om de licentieovereenkomst te accepteren. Als u de licentieovereenkomst niet accepteert, is de optie **[!UICONTROL Download]** niet beschikbaar.
 
 Als de selectie meerdere beveiligde elementen bevat, selecteert u één element tegelijk, accepteert u de licentieovereenkomst en gaat u verder met het downloaden van het element.
 
 Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is voldaan:
 
-* De eigenschap voor metagegevens van het element `xmpRights:WebStatement` verwijst naar het pad van de pagina die de licentieovereenkomst voor het element bevat.
-* De waarde van de eigenschap voor metagegevens van het element `adobe_dam:restrictions` is een ruwe HTML die de licentieovereenkomst specificeert.
+* De eigenschap voor metagegevens van elementen `xmpRights:WebStatement` verwijst naar het pad van de pagina die de licentieovereenkomst voor het element bevat.
+* De waarde van de eigenschap voor metagegevens van elementen `adobe_dam:restrictions` is een onbewerkte HTML die de licentieovereenkomst opgeeft.
 
 >[!NOTE]
 >
->De locatie `/etc/dam/drm/licences` is gebruikt om licenties op te slaan in de eerdere versies van [!DNL Experience Manager]. De locatie is nu vervangen. Als u licentiepagina&#39;s maakt of wijzigt, of de pagina&#39;s van vorige [!DNL Experience Manager] releases, raadt Adobe u aan dergelijke middelen op te slaan op `/apps/settings/dam/drm/licenses` of `/conf/*/settings/dam/drm/licenses` locaties.
+>De locatie `/etc/dam/drm/licences` is gebruikt om licenties op te slaan in de eerdere versies van [!DNL Experience Manager] . De locatie is nu vervangen. Als u licentiepagina&#39;s maakt of wijzigt of de pagina&#39;s van vorige [!DNL Experience Manager] -releases plaatst, wordt u aangeraden deze middelen op `/apps/settings/dam/drm/licenses` - of `/conf/*/settings/dam/drm/licenses` -locaties op te slaan.
 
 ### DRM-beveiligde bestanden downloaden {#downloading-drm-assets}
 
-1. Selecteer in de kaartweergave de elementen die u wilt downloaden en selecteer **[!UICONTROL Download]**.
+1. Selecteer in de kaartweergave de elementen die u wilt downloaden en selecteer **[!UICONTROL Download]** .
 1. Selecteer op de pagina **[!UICONTROL Copyright Management]** de asset die u uit de lijst wilt downloaden.
-1. In de [!UICONTROL License] deelvenster, kiest u **[!UICONTROL Agree]**. Naast het element wordt een vinkje weergegeven. Selecteer de **[!UICONTROL Download]** -optie.
+1. Kies **[!UICONTROL Agree]** in het deelvenster [!UICONTROL License] . Naast het element wordt een vinkje weergegeven. Selecteer de optie **[!UICONTROL Download]** .
 
    >[!NOTE]
    >
-   >De **[!UICONTROL Download]** is alleen ingeschakeld als u akkoord gaat met de licentieovereenkomst voor een beveiligd element. Als uw selectie echter zowel beveiligde als niet-beveiligde elementen bevat, worden alleen de beveiligde elementen weergegeven in het deelvenster en in het dialoogvenster **[!UICONTROL Download]** is beschikbaar om de niet-beveiligde elementen te downloaden. Als u tegelijkertijd licentieovereenkomsten voor meerdere beveiligde assets wilt accepteren, selecteert u de assets in de lijst en vervolgens kiest u **[!UICONTROL Agree]**.
+   >De optie **[!UICONTROL Download]** wordt alleen ingeschakeld wanneer u akkoord gaat met de licentieovereenkomst voor een beveiligd element. Als uw selectie echter zowel beveiligde als niet-beveiligde elementen bevat, worden alleen de beveiligde elementen weergegeven in het deelvenster en is de optie **[!UICONTROL Download]** beschikbaar om de niet-beveiligde elementen te downloaden. Als u tegelijkertijd licentieovereenkomsten voor meerdere beveiligde assets wilt accepteren, selecteert u de assets in de lijst en vervolgens kiest u **[!UICONTROL Agree]**.
 
-1. Selecteer **[!UICONTROL Download]** in het dialoogvenster.
+1. Selecteer **[!UICONTROL Download]** in het dialoogvenster als u het element of de uitvoeringen ervan wilt downloaden.
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -169,4 +169,4 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

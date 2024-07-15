@@ -24,34 +24,34 @@ Sites die zijn gemaakt met AEM sitesjablonen maken het eenvoudig downloaden, aan
 
 >[!NOTE]
 >
->AEM sitethema&#39;s mogen niet worden verward met [Sjablonen AEM](site-templates.md). AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen definieert u de sitestructuur en de initiële inhoud. Sjablonen bevatten een AEM sitethema dat het mogelijk maakt [snel site maken](create-site.md).
+>AEM zouden de plaatsthema&#39;s niet met [ AEM plaatssjablonen ](site-templates.md) moeten worden verward. AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. AEM plaatssjablonen bepalen plaatsstructuur en aanvankelijke inhoud, en bevatten een AEM plaatsthema om voor [ snelle plaatsverwezenlijking ](create-site.md) toe te staan.
 
 ## Sitethema&#39;s gebruiken {#using-themes}
 
 Sitethema&#39;s worden op twee verschillende manieren gebruikt:
 
-* Ze worden gebruikt als onderdeel van een sitesjabloon om stijlen te definiëren wanneer [een site maken.](create-site.md)
+* Zij worden gebruikt als deel van een plaatsmalplaatje om het stileren te bepalen wanneer [ creërend een plaats.](create-site.md)
 * Ze worden gedownload nadat een site op basis van een sitesjabloon is gemaakt, zodat een ontwikkelaar aan de voorzijde de opmaak verder kan aanpassen.
 
 >[!TIP]
 >
->Een end-to-end beschrijving van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in worden gevonden [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md).
+>Een beschrijving van begin tot eind van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in de [ Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md) worden gevonden.
 
 ## Structuur van sitethema {#structure}
 
 Sitethema&#39;s zijn eenvoudig pakketten met een logische structuur die duidelijk het doel van de pakketinhoud weerspiegelt. Een site-thema heeft de volgende structuur die kenmerkend is voor een front-end project.
 
-* `src/main.ts`: Het belangrijkste ingangspunt van uw thema JS &amp; CSS
+* `src/main.ts`: Het belangrijkste ingangspunt van uw JS &amp; CSS-thema
 * `src/site`: JS- en CSS-bestanden die van toepassing zijn op de gehele site
 * `src/components`: JS- en CSS-bestanden die specifiek zijn voor AEM componenten
-* `src/resources`: Statische bestanden zoals pictogrammen, logo&#39;s en lettertypen
+* `src/resources`: statische bestanden zoals pictogrammen, logo&#39;s en lettertypen
 
 ## Standaardsitethema {#standard-site-theme}
 
-Adobe biedt een verwijzingsthema met tips en trucs dat u kunt gebruiken als basis voor het maken van uw eigen thema. [Het standaardthema van de Plaats is beschikbaar op GitHub](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
+Adobe biedt een verwijzingsthema met tips en trucs dat u kunt gebruiken als basis voor het maken van uw eigen thema. [ het StandaardThema van de Plaats is beschikbaar op GitHub ](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
 
 ## Sitethema&#39;s ontwikkelen {#developing-themes}
 
 Adobe biedt een AEM Site Theme Builder als een set scripts voor het maken van nieuwe sitethema&#39;s.
 
-[De Bouwer van het Thema van de Plaats van de AEM is beschikbaar samen met gebruiksdocumentatie op GitHub](https://github.com/adobe/aem-site-theme-builder). Voor het aanpassen van het thema is ontwikkelervaring op de voorgrond vereist.
+[ de Bouwer van het Thema van de Plaats van de AEM is beschikbaar samen met gebruiksdocumentatie op GitHub ](https://github.com/adobe/aem-site-theme-builder). Voor het aanpassen van het thema is ontwikkelervaring op de voorgrond vereist.

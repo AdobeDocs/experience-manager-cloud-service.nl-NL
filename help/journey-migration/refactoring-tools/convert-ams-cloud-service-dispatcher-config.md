@@ -3,8 +3,8 @@ title: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service 
 description: Een AMS converteren naar een Adobe Experience Manager as a Cloud Service Dispatcher-configuratie
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 39%
+source-wordcount: '1262'
+ht-degree: 37%
 
 ---
 
@@ -24,7 +24,7 @@ Deze sectie biedt stapsgewijze instructies voor het omzetten van een AMS-configu
 
    Extraheer het archief naar een map en zorg ervoor dat de directe submappen beginnen met conf, conf.d, conf.dispatcher.d en conf.modules.d. Als ze dat niet doen, verplaatst u ze omhoog in de hiërarchie.
 
-1. **Ongebruikte submappen en bestanden verwijderen**
+1. **krijg van ongebruikte subfolders en dossiers**
 
    Verwijder submappen conf en conf.modules.d en bestanden die overeenkomen met conf.d/*.conf.
 
@@ -89,7 +89,7 @@ Als er fouten optreden die betrekking hebben op ontbrekende include-bestanden, c
 
 1. **De naam van farmbestanden wijzigen**
 
-   Alle landbouwbedrijven in conf.dispatcher.d/enabled_farm moeten worden anders genoemd om het patroon *.farm aan te passen. Naam wijzigen `customerX_farm.any` tot `customerX.farm`.
+   Alle landbouwbedrijven in conf.dispatcher.d/enabled_farm moeten worden anders genoemd om het patroon *.farm aan te passen. Wijzig bijvoorbeeld de naam `customerX_farm.any` in `customerX.farm` .
 
 1. **Cache controleren**
 
@@ -97,15 +97,15 @@ Als er fouten optreden die betrekking hebben op ontbrekende include-bestanden, c
 
    Verwijder alle bestanden met het voorvoegsel `ams_`.
 
-   Als conf.dispatcher.d/cache nu leeg is, kopieert u het bestand `conf.dispatcher.d/cache/rules.any` vanuit de standaardconfiguratie voor Dispatcher naar deze map. De standaardconfiguratie voor Dispatcher vindt u in de mapbron van deze SDK. Vergeet niet de $include-instructies die verwijzen naar de `ams_*_cache.any` ook regelbestanden in de bestanden van de farm.
+   Als conf.dispatcher.d/cache nu leeg is, kopieert u het bestand `conf.dispatcher.d/cache/rules.any` van de standaard Dispatcher-configuratie naar deze map. De standaard Dispatcher-configuratie vindt u in de mapbron van deze SDK. Vergeet niet om $include verklaringen aan te passen die naar de `ams_*_cache.any` regeldossiers in de landbouwbedrijfdossiers verwijzen.
 
-   Als in plaats daarvan conf.dispatcher.d/cache nu één bestand met achtervoegsel bevat `_cache.any`, moet de naam worden gewijzigd in `rules.any`. Herinner me om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
+   Als conf.dispatcher.d/cache nu één bestand met achtervoegsel `_cache.any` bevat, moet de naam worden gewijzigd in `rules.any` . Herinner me om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
 
    Als de omslag echter veelvoudige, landbouwbedrijf-specifieke dossiers met dat patroon bevat, zou hun inhoud aan $include verklaring moeten worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
 
-   Alle bestanden met het achtervoegsel verwijderen `_invalidate_allowed.any`.
+   Verwijder elk bestand met het achtervoegsel `_invalidate_allowed.any` .
 
-   Kopieer het bestand conf.dispatcher.d/cache/default_invalidate_any van de standaardconfiguratie van Dispatcher naar die locatie.
+   Kopieer het bestand conf.dispatcher.d/cache/default_invalidate_any van de standaard Dispatcher-configuratie naar die locatie.
 
    Verwijder alle inhoud in de sectie cache/allowedClients voor elk farmbestand en vervang deze door:
 
@@ -117,13 +117,13 @@ Als er fouten optreden die betrekking hebben op ontbrekende include-bestanden, c
 
    Verwijder alle bestanden met het voorvoegsel `ams_`.
 
-   Als conf.dispatcher.d/clientheaders één enkel dossier met achtervoegsel bevat `_clientheaders.any`, naam wijzigen in `clientheaders.any`. Herinner me om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
+   Als conf.dispatcher.d/clientheaders één bestand met achtervoegsel `_clientheaders.any` bevat, wijzigt u de naam in `clientheaders.any` . Herinner me om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
 
    Als de omslag echter veelvoudige, landbouwbedrijf-specifieke dossiers met dat patroon bevat, zou hun inhoud aan $include verklaring moeten worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
 
-   Het bestand kopiëren `conf.dispatcher/clientheaders/default_clientheaders.any` van de standaardconfiguratie van de Verzender aan die plaats.
+   Kopieer het bestand `conf.dispatcher/clientheaders/default_clientheaders.any` van de standaard Dispatcher-configuratie naar die locatie.
 
-   In elk landbouwbedrijfdossier, vervang om het even welk `clientheader` &quot;include&quot;-instructies die als volgt worden weergegeven:
+   Vervang in elk farm-bestand `clientheader` &quot;include&quot;-instructies die als volgt worden weergegeven:
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -139,11 +139,11 @@ Als er fouten optreden die betrekking hebben op ontbrekende include-bestanden, c
 
    * Verwijder alle bestanden met het voorvoegsel `ams_`.
 
-   * Als conf.dispatcher.d/filters nu één bestand bevat, wijzigt u de naam in `filters.any`. Herinner me om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
+   * Als conf.dispatcher.d/filters nu één bestand bevat, wijzigt u de naam in `filters.any` . Herinner me om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
 
    * Als de omslag echter veelvoudige, landbouwbedrijf-specifieke dossiers met dat patroon bevat, zou hun inhoud aan $include verklaring moeten worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
 
-   * Het bestand kopiëren `conf.dispatcher/filters/default_filters.any` van de standaardconfiguratie van de Verzender aan die plaats.
+   * Kopieer het bestand `conf.dispatcher/filters/default_filters.any` van de standaard Dispatcher-configuratie naar die locatie.
 
    * In elk landbouwbedrijfdossier, vervang om het even welke filter &quot;omvat&quot;verklaringen die als het volgende verschijnen:
 
@@ -158,7 +158,7 @@ met de instructie:
 
    * Verwijder alle bestanden in die map.
 
-   * Het bestand kopiëren `conf.dispatcher.d/renders/default_renders.any` van de standaardconfiguratie van de Verzender aan die plaats.
+   * Kopieer het bestand `conf.dispatcher.d/renders/default_renders.any` van de standaard Dispatcher-configuratie naar die locatie.
 
    * Verwijder alle inhoud in de sectie renders voor elk farmbestand en vervang deze door:
 
@@ -170,11 +170,11 @@ met de instructie:
 
    * Verwijder alle bestanden met het voorvoegsel `ams_`.
 
-   * Als conf.dispatcher.d/virtualhosts nu één bestand bevat, wijzigt u de naam in `virtualhosts.any`. Herinner me om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
+   * Als conf.dispatcher.d/virtualhosts nu één bestand bevat, wijzigt u de naam in `virtualhosts.any` . Herinner me om $include verklaringen aan te passen die naar dat dossier in de landbouwbedrijfdossiers verwijzen eveneens.
 
    * Als de omslag echter veelvoudige, landbouwbedrijf-specifieke dossiers met dat patroon bevat, zou hun inhoud aan $include verklaring moeten worden gekopieerd die naar hen in de landbouwbedrijfdossiers verwijst.
 
-   * Het bestand kopiëren `conf.dispatcher/virtualhosts/default_virtualhosts.any` van de standaardconfiguratie van de Verzender aan die plaats.
+   * Kopieer het bestand `conf.dispatcher/virtualhosts/default_virtualhosts.any` van de standaard Dispatcher-configuratie naar die locatie.
 
    * In elk landbouwbedrijfdossier, vervang om het even welke filter &quot;omvat&quot;verklaringen die als het volgende verschijnen:
 
@@ -186,7 +186,7 @@ met de instructie:
 
 1. **Uw status controleren door de validatietool uit te voeren**
 
-   * Voer de Dispatcher-validator in uw map uit met de subopdracht Dispatcher:
+   * Voer de Dispatcher-validator in uw directory uit met de Dispatcher-subopdracht:
 
      `$ validator dispatcher`
 
@@ -204,12 +204,12 @@ met de instructie:
 
 Met het script `docker_run.sh` in de Dispatcher SDK kunt u testen dat uw configuratie geen andere fouten bevat die pas bij de implementatie optreden:
 
-1. Implementatiegegevens genereren met de validatietool.
+1. Implementatiegegevens genereren met de validator.
 
    `validator full -d out`
 Valideert de volledige configuratie en genereert implementatiegegevens in.
 
-1. Start de Dispatcher in een dockerafbeelding met die implementatiegegevens.
+1. Start de Dispatcher in een docker image met die implementatiegegevens.
 
    Wanneer uw AEM publicatieserver op uw macOS-computer wordt uitgevoerd en u luistert naar poort 4503, kunt u de Dispatcher als volgt voor die server starten:
 

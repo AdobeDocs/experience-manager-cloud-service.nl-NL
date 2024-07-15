@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.4.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.4.0
+title: Opmerkingen bij de release AEM as a Cloud Service 2022.4.0 voor migratiehulpprogramma's
+description: Opmerkingen bij de release AEM as a Cloud Service 2022.4.0 voor migratiehulpprogramma's
 feature: Release Information
 exl-id: 4941736b-82cd-4050-b3e9-aef250d5c4c7
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.4.0 {#release-notes}
+# Opmerkingen bij de release AEM as a Cloud Service 2022.4.0 voor migratiehulpprogramma&#39;s {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.4.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.4.0.
 
 ## Analysator van best practices {#bpa-release}
 

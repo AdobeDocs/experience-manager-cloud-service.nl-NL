@@ -8,7 +8,7 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2307'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Kennis van CSS en het LESS-framework.
 
 ## Wat kan worden aangepast {#what-can-be-customized}
 
-Het artikel bevat een lijst met algemeen beschikbare CSS-klassen van Adaptive Forms. Met deze klassen kunt u diverse componenten van een adaptief formulier opmaken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze opmaakconstructies alleen om stijlen te maken (met CSS of Minder) wanneer u geen stijl kunt toepassen op componenten die [themaeditor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+Het artikel bevat een lijst met algemeen beschikbare CSS-klassen van Adaptive Forms. Met deze klassen kunt u diverse componenten van een adaptief formulier opmaken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze het stileren constructs om stijlen (het gebruiken van CSS of Minder) tot stand te brengen slechts wanneer u componenten niet kunt stileren gebruikend [ themaredacteur ](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Stijlen aanpassen in Adaptive Forms {#customizing-styles-in-adaptive-forms}
 
@@ -101,7 +101,7 @@ Een container is de bovenste component. Andere deelvensters en velden bevinden z
 
 ## Veldstijl {#field-styling}
 
-Adaptieve Forms bevat verschillende typen velden. Elk veld heeft een unieke klassenaam, de naam van het veld. Het veld heeft ook een algemene klassenaam `guideFieldNode`.
+Adaptieve Forms bevat verschillende typen velden. Elk veld heeft een unieke klassenaam, de naam van het veld. Het veld heeft ook een algemene klassenaam `guideFieldNode` .
 
 Velden zijn labels, widgets, Help-beschrijving (zowel lange als korte beschrijving) en veldHelp-pictogrammen (vraagteken).
 
@@ -137,7 +137,7 @@ Velden zijn labels, widgets, Help-beschrijving (zowel lange als korte beschrijvi
 
 ## Labelstijl {#label-styling}
 
-Het element HTML **label** gebruikt voor het veld bevat de klassen **left** of **top** afhankelijk van of het label zich boven of links bevindt.
+Het HTML element **etiket** dat voor het gebied wordt gebruikt omvat linker **klassen** of **bovenkant** afhankelijk van of het etiket bij de bovenkant of de linkerzijde is.
 
 <table>
  <tbody>
@@ -177,11 +177,11 @@ Het element HTML **label** gebruikt voor het veld bevat de klassen **left** of *
  </tbody>
 </table>
 
-De CSS-regels voor het label worden toegepast met behulp van de **guideFieldLabel** label. Als u een auteur bent, schrap deze regel om uw douaneveranderingen zichtbaar te maken.
+De CSS regels voor het etiket worden toegepast gebruikend het **guideFieldLabel** etiket. Als u een auteur bent, schrap deze regel om uw douaneveranderingen zichtbaar te maken.
 
 ## Widget-stijl {#widgets-styling}
 
-Afhankelijk van het type, bevatten widgets ook klassen. Vaak bevatten widgets de `guideFieldWidget` klasse. De widgets die bij HTML worden geleverd, gebruiken doorgaans de standaardinvoer voor HTML-elementen en selecteren. De opmaak wordt dienovereenkomstig toegepast. U kunt een aangepaste widget niet opmaken door de variabelen te wijzigen.
+Afhankelijk van het type, bevatten widgets ook klassen. Over het algemeen bevatten widgets de klasse `guideFieldWidget` . De widgets die bij HTML worden geleverd, gebruiken doorgaans de standaardinvoer voor HTML-elementen en selecteren. De opmaak wordt dienovereenkomstig toegepast. U kunt een aangepaste widget niet opmaken door de variabelen te wijzigen.
 
 <table>
  <tbody>
@@ -287,7 +287,7 @@ De opmaak voor velden met focus, verplicht en uitgeschakeld is beperkt met behul
 
 ## Help-beschrijving {#help-description}
 
-Een auteur kan de inhoud van de Hulp in de gebieden specificeren gebruikend Korte en Lange beschrijvingscomponenten. Beide componenten hebben een gemeenschappelijke klasse `.guideHelpDescription` en een andere klasse `.long`/ `.short`, afhankelijk van het type beschrijving. De inhoud van de Hulp is ingesloten in een paragraafelement om het stileren van de beschrijving met voeten te treden. De beschrijving van de Help (zowel lang als kort) wordt gewijzigd met behulp van variabelen die beginnen met widgetshelp, zoals vermeld in de volgende tabel:
+Een auteur kan de inhoud van de Hulp in de gebieden specificeren gebruikend Korte en Lange beschrijvingscomponenten. Beide componenten hebben een algemene klasse `.guideHelpDescription` en een andere klasse `.long` / `.short` , afhankelijk van het type beschrijving. De inhoud van de Hulp is ingesloten in een paragraafelement om het stileren van de beschrijving met voeten te treden. De beschrijving van de Help (zowel lang als kort) wordt gewijzigd met behulp van variabelen die beginnen met widgetshelp, zoals vermeld in de volgende tabel:
 
 <table>
  <tbody>
@@ -328,7 +328,7 @@ Een auteur kan de inhoud van de Hulp in de gebieden specificeren gebruikend Kort
 
 ## Voorwaarden en bepalingen {#terms-and-conditions}
 
-De Voorwaarden (TnC) `` ``) kunt u voorwaarden en bepalingen opgeven. U kunt de widget aanpassen met de variabelen die in de volgende tabel worden beschreven.
+Met de widget Voorwaarden (TnC `` `` ) kunt u voorwaarden en bepalingen opgeven. U kunt de widget aanpassen met de variabelen die in de volgende tabel worden beschreven.
 
 <table>
  <tbody>
@@ -351,7 +351,7 @@ De Voorwaarden (TnC) `` ``) kunt u voorwaarden en bepalingen opgeven. U kunt de 
 
 Knoppen zijn ook widgets. Hun opmaak wijkt echter enigszins af van die van de widgets. In Adaptive Forms bestaat een van de volgende mogelijkheden uit een knop:
 
-* input[type = tekst]
+* input [ type = tekst ]
 * knop
 * element with class.button
 
@@ -521,11 +521,11 @@ U kunt het kleurthema voor koptekst- en tekstrijen in een tabel wijzigen met de 
   </tr>
   <tr>
    <td><p><code>table-odd-row-bg-color</code></p> </td>
-   <td><p>Achtergrondkleur voor de oneven tekstrij. De standaardwaarde is <code>rgb(255, 255, 255)</code>.</p> </td>
+   <td><p>Achtergrondkleur voor de oneven tekstrij. De standaardwaarde is <code>rgb(255, 255, 255)</code> .</p> </td>
   </tr>
   <tr>
    <td><p><code>table-even-row-bg-color</code></p> </td>
-   <td><p>Achtergrondkleur voor de even tekstrij. De standaardwaarde is <code>#eee</code>.</p> </td>
+   <td><p>Achtergrondkleur voor de even tekstrij. De standaardwaarde is <code>#eee</code> .</p> </td>
   </tr>
  </tbody>
 </table>
@@ -638,7 +638,7 @@ Hieronder ziet u de HTML-code voor het tabnavigatorelement (vergelijkbaar met de
 
 `</div>`
 
-U kunt de opmaak van de navigator wijzigen met CSS-regels die de elementen selecteren met **afstammeling** kiezers. Als u bijvoorbeeld een stijl voor tekstdecoratie wilt toevoegen aan het ankerlabel:
+U kunt het stileren van de navigator veranderen gebruikend CSS regels die de elementen gebruikend **afstammende** selecteurs selecteren. Als u bijvoorbeeld een stijl voor tekstdecoratie wilt toevoegen aan het ankerlabel:
 
 Tabnavigator bovenaan:
 
@@ -718,7 +718,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
 
 >[!NOTE]
 >
->U kunt het pictogram voor een bepaalde navigator wijzigen door een CSS-klasse op te geven in het deelvenster tijdens het ontwerpen, bijvoorbeeld &lt;class_name>. U voegt een **&lt;class_name>_nav** voor het pictogram van de navigator.
+>U kunt het pictogram voor een bepaalde navigator veranderen door een CSS klasse op het paneel in ontwerp te verstrekken, vormvoorbeeld &lt;CLASS_NAME>. U voegt a **&lt;CLASS_NAME>_nav** voor het pictogram van navigator toe.
 
 <table>
  <tbody>
@@ -914,7 +914,7 @@ Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
   </tr>
   <tr>
    <td><p><code>panel-font-color</code></p> </td>
-   <td><p>Lettertypekleur voor de deelvenstertekst<br /> </p> </td>
+   <td><p>Fontkleur voor de paneeltekst <br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>panel-padding</code></p> </td>
@@ -939,7 +939,7 @@ Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
  </tbody>
 </table>
 
-Het knooppunt van het deelvenster is onderverdeeld in navigators en inhoud. Daar `` `` is geen afzonderlijke stijlcomponent voor de inhoud. De beschreven variabelen worden toegepast op de navigator en de inhoud.
+Het knooppunt van het deelvenster is onderverdeeld in navigators en inhoud. Er is `` `` geen afzonderlijke opmaakcomponent voor de inhoud. De beschreven variabelen worden toegepast op de navigator en de inhoud.
 
 Het bovenste deelvenster (RootPanel) heeft deze klasse niet.
 
@@ -1073,7 +1073,7 @@ Deze variabelen in de volgende tabel zijn van invloed op de vaste indeling van d
 
 ## Themaspecifieke variabele {#theme-specific-variable}
 
-De **Eenvoudige inschrijving** thema op /etc/clientlibs/fd/af/guidetheme/simpleEnrollment en de categorie `guide.theme.simpleEnrollment` ook een aantal variabelen invoeren. Als u een thema wilt creëren dat eenvoudige inschrijving verbetert, kunt u de volgende &quot;extra variabelen gebruiken:
+Het **Eenvoudige inschrijving** thema bij /etc/clientlibs/fd/af/guidetheme/simpleEnrollment en de categorie `guide.theme.simpleEnrollment` introduceren ook een paar variabelen. Als u een thema wilt creëren dat eenvoudige inschrijving verbetert, kunt u de volgende &quot;extra variabelen gebruiken:
 
 <table>
  <tbody>

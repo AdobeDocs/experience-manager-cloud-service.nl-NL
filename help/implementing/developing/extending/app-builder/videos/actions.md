@@ -1,6 +1,6 @@
 ---
-title: Handelingen in App Builder
-description: Leer over Adobe Runtime acties en om hen te gebruiken de toepassingen van de Bouwer van de .
+title: App Builder-acties
+description: Meer informatie over Adobe Runtime-handelingen en om deze te gebruiken in App Builder-toepassingen.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Handelingen in App Builder
+# App Builder-acties
 
 ## Inleiding tot acties
 
@@ -32,7 +32,7 @@ Leer hoe handelingen zijn gerelateerd aan activeringen, webhandelingen, triggers
 
 ## Handelingen in App Builder-toepassingen
 
-Leer hoe u handelingen maakt die kunnen worden gebruikt als App Builder-toepassingen.
+Leer hoe u handelingen maakt die u kunt gebruiken als App Builder-toepassingen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
 

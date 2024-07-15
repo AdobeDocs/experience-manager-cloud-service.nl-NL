@@ -45,7 +45,7 @@ De ontwikkelaars zijn verantwoordelijk voor het ontwikkelen en aanpassen van het
 * realiseren het ontwerp
 * ontwikkelen de noodzakelijke diensten en de manuscripten zodat kunt u de vereiste functionaliteit uitvoeren
 
-De configuratie van de [ontwikkeling](/help/implementing/developing/introduction/development-guidelines.md) het milieu kan van diverse factoren afhangen, hoewel het typisch bestaat uit:
+De configuratie van het [ ontwikkelings ](/help/implementing/developing/introduction/development-guidelines.md) milieu kan van diverse factoren afhangen, hoewel het typisch uit is samengesteld:
 
 * Een geïntegreerd ontwikkelingssysteem met versiecontrole om een geïntegreerde codebasis te verstrekken. Deze geïntegreerde codebasis wordt gebruikt om code van de individuele ontwikkelomgevingen samen te voegen en te consolideren die door elke ontwikkelaar worden gebruikt.
 * Een persoonlijke omgeving voor elke ontwikkelaar; gewoonlijk op hun lokale machine. Met de juiste intervallen wordt de code gesynchroniseerd met het versiebeheersysteem
@@ -64,9 +64,9 @@ De testomgeving moet een spiegel zijn van de productieomgeving - configuratie, c
 * Het kan voor definitieve tests (ontwerp, functionaliteit, en interfaces) worden gebruikt alvorens aan de productiemilieu&#39;s op te stellen.
 * Hoewel de stagingomgeving nooit identiek kan zijn aan de productieomgeving, moet deze zo dicht mogelijk bij de uiteindelijk gewenste niveaus voor prestaties en belasting liggen.
 
-### Productie - Auteur en Publicatie {#production-author-and-publish}
+### Productie - Auteur en Publish {#production-author-and-publish}
 
-De productieomgeving bestaat uit de omgevingen die [auteur en publicatie](/help/sites-cloud/authoring/author-publish.md) uw implementatie.
+Het productiemilieu bestaat uit de milieu&#39;s die [ auteur en ](/help/sites-cloud/authoring/author-publish.md) uw implementatie publiceren.
 
 Een productieomgeving bestaat uit ten minste één auteurinstantie en één publicatie-instantie:
 
@@ -88,7 +88,7 @@ Content die is geactiveerd, wordt in een pakket geplaatst en naar de replicatiew
 
 Als u gegevens die in een publicatieomgeving zijn gegenereerd, wilt terugkeren naar de auteursomgeving, pollt een replicatielistener in de auteuromgeving de publicatieomgeving en haalt deze inhoud op uit de omgekeerde replicatieoutbox van de publicatieomgeving.
 
-#### Publiceren {#publish}
+#### Publish {#publish}
 
 Meestal bevindt een publicatie-omgeving zich in de DMZ (Demilitarisated Zone). In deze omgeving hebben bezoekers toegang tot uw inhoud (bijvoorbeeld via een website of in de vorm van een mobiele toepassing) en communiceren ze hiermee via het openbare programma of via uw intranet. Een publicatieomgeving:
 
@@ -132,6 +132,6 @@ Productiecontent moet van de productieomgeving naar de stagingomgeving worden ve
 Inhoud kan worden overgedragen:
 
 * Tussen de verschillende omgevingen: door pakketten te exporteren en te importeren.
-* Tussen verschillende instanties - door de inhoud rechtstreeks te repliceren (AEM as a Cloud Service replicatie) (via een HTTP- of HTTPS-verbinding).
+* Tussen verschillende instanties - door de inhoud rechtstreeks te repliceren (AEM as a Cloud Service-replicatie) (via een HTTP- of HTTPS-verbinding).
 
 ![Content verplaatsen](assets/content-movement.png)

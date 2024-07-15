@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Door OOTB ondersteunde lettertypen voor het genereren van PDF op Forms as a Cloud Service  {#ootb-supported-fonts-overview}
 
-AEM Forms as a Cloud Service biedt verschillende ingebouwde OOTB-ondersteunde lettertypen die naadloos kunnen worden gebruikt binnen [Communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Document met record voor kerncomponenten](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), en [Document met gegevens over stichtingscomponenten](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+AEM Forms as a Cloud Service biedt diverse ingebouwde OOTB gesteunde doopvonten aan die foutloos kunnen worden gebruikt binnen [ Communicatie APIs ](/help/forms/aem-forms-cloud-service-communications-introduction.md), [ Document van Verslag voor de Componenten van de Kern ](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), en [ Document van Verslag voor de Componenten van de Stichting ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
 <!--
 
@@ -52,5 +52,5 @@ De volgende lettertypen worden door OOTB ondersteund:
 * eurosign.ttf
 
 
-Naast de bovengenoemde lettertypen kunt u aangepaste lettertypen gebruiken om de PDF een specifieke vormgeving te geven. Als u aangepaste lettertypen wilt inschakelen, [Aangepaste lettertypen toevoegen aan uw Forms as a Cloud Service omgeving](/help/forms/use-custom-fonts.md) met een geldige vergunning.
+Naast de bovengenoemde lettertypen kunt u aangepaste lettertypen gebruiken om de PDF een specifieke vormgeving te geven. Om douanedoopvonten toe te laten, voegt u [ douanedoopvonten aan uw as a Cloud Service milieu van Forms ](/help/forms/use-custom-fonts.md) met een geldige vergunning toe.
 

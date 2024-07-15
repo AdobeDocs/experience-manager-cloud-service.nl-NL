@@ -1,6 +1,6 @@
 ---
 title: AEM instellen met meerdere handelssystemen
-description: Leer hoe u Adobe Experience Manager instelt met Multiple Commerce Systems. Dit staat projecten toe om één enkele laag van het ervaringsbeheer te steunen die met veelvoudige Adobe of derdehandel achtergronden voor multi-brand, multi-region opslagronts verbindt.
+description: Leer hoe u Adobe Experience Manager kunt instellen met Multiple Commerce Systems. Dit staat projecten toe om één enkele laag van het ervaringsbeheer te steunen die met veelvoudige Adobe of derdehandel achtergronden voor multi-brand, multi-region opslagronts verbindt.
 sub-product: Commerce
 version: Cloud Service
 doc-type: technical-video
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 Het enige Adobe Experience Manager (AEM) CIF systeem kan worden gebruikt om met veelvoudige Adobe of derdehandelsystemen te verbinden om geavanceerde plaatsingen te steunen. Dit is nuttig in gevallen van multi-regio, multi-brand winkelcentra waar de enige laag van het ervaringsbeheer het de aanmaak en levering van handelsinhoud vereenvoudigt. Dit helpt organisaties ook om tijd aan waarde (TTV) te versnellen en de totale kosten van eigendom (TCO) te verminderen.
 
-Een videoanalyse die detailleert hoe te opstelling AEM met veelvoudige de handelmilieu&#39;s van de Adobe. Het AEM beheer van meerdere sites (MSM) bevat functies zoals Live Copy en Taalkopie. Deze functies worden samen met het Commerce integration framework (CIF) gebruikt om een winkel met meerdere regio&#39;s te maken waarin __EU-regio-bossen__ verbinden met __EU-Adobe Commerce__ en __Noordamerikaanse (NA) regio storefront__ verbinden met __NA ADOBE COMMERCE__ systeem.
+Een videoanalyse die detailleert hoe te opstelling AEM met veelvoudige de handelmilieu&#39;s van de Adobe. Het AEM beheer van meerdere sites (MSM) bevat functies zoals Live Copy en Taalkopie. Deze eigenschappen worden gebruikt met het Commerce integration framework (CIF) om een multi-regio storefront tot stand te brengen waar __EU regio storefronts__ met __Adobe Commerce__ en __Noord-Amerikaanse (NA) gebiedsopslag__ met __NA Adobe Commerce__ systeem verbinden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346811/?quality=12&learn=on)

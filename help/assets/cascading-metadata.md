@@ -36,30 +36,30 @@ Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis
 
 Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verplicht veld.
 
-1. Selecteer de [!DNL Experience Manager] logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
-1. In de **[!UICONTROL Schema Forms]** pagina, selecteert u een schema en selecteert u vervolgens **[!UICONTROL Edit]** op de werkbalk om het schema te bewerken.
+1. Selecteer het [!DNL Experience Manager] -logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** .
+1. Selecteer op de pagina **[!UICONTROL Schema Forms]** een schema en selecteer vervolgens **[!UICONTROL Edit]** in de werkbalk om het schema te bewerken.
 
-   ![select_form](assets/select_form.png)
+   ![ select_form ](assets/select_form.png)
 
-1. (Optioneel) Maak in de Schema-editor voor metagegevens een veld dat u wilt conditionaliseren. Geef een naam- en eigenschappenpad op in het dialoogvenster **[!UICONTROL Settings]** tab.
+1. (Optioneel) Maak in de Schema-editor voor metagegevens een veld dat u wilt conditionaliseren. Geef een naam- en eigenschapspad op het tabblad **[!UICONTROL Settings]** op.
 
-   Als u een tabblad wilt maken, selecteert u `+` om een tabblad toe te voegen en vervolgens een metagegevensveld toe te voegen.
+   Als u een tabblad wilt maken, selecteert u `+` om een tabblad toe te voegen en voegt u vervolgens een metagegevensveld toe.
 
-   ![add_tab](assets/add_tab.png)
+   ![ add_tab ](assets/add_tab.png)
 
-1. Voeg een vervolgkeuzeveld toe voor het elementtype. Geef een naam- en eigenschappenpad op in het dialoogvenster **[!UICONTROL Settings]** tab. Voeg een optionele beschrijving toe.
+1. Voeg een vervolgkeuzeveld toe voor het elementtype. Geef een naam- en eigenschapspad op het tabblad **[!UICONTROL Settings]** op. Voeg een optionele beschrijving toe.
 
-   ![asset_type_field](assets/asset_type_field.png)
+   ![ asset_type_field ](assets/asset_type_field.png)
 
 1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
 
-   * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** en selecteert u **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. U kunt bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding opgeven.
+   * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** , selecteert u **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. U kunt bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding opgeven.
 
-   * Selecteer **[!UICONTROL Add Through JSON Path]** en geef het pad van het JSON-bestand op. [!DNL Experience Manager] Hiermee haalt u de sleutelwaardeparen op in real-time wanneer het formulier aan de gebruiker wordt gepresenteerd.
+   * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u **[!UICONTROL Add Through JSON Path]** en geeft u het pad van het JSON-bestand op. [!DNL Experience Manager] haalt de sleutel-waardeparen in real time op wanneer het formulier aan de gebruiker wordt getoond.
 
    Beide opties sluiten elkaar uit. U kunt de opties niet importeren uit een JSON-bestand en handmatig bewerken.
 
-   ![add_choice](assets/add_choice.png)
+   ![ add_choice ](assets/add_choice.png)
 
    >[!NOTE]
    >
@@ -73,16 +73,16 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    Op dezelfde manier voegt u afhankelijke velden toe voor andere elementtypen. Voeg bijvoorbeeld het aantal velden en de auteur van de pagina toe voor documentelementen, zoals PDF- en Word-bestanden.
 
-   ![video_dependent_fields](assets/video_dependent_fields.png)
+   ![ video_dependent_fields ](assets/video_dependent_fields.png)
 
-1. Als u een afhankelijkheid wilt maken tussen het veld voor het type element en andere velden, kiest u het afhankelijke veld en opent u het dialoogvenster **[!UICONTROL Rules]** tab.
+1. Als u een afhankelijkheid wilt maken tussen het elementtypeveld en andere velden, kiest u het afhankelijke veld en opent u het tabblad **[!UICONTROL Rules]** .
 
-   ![select_dependentfield](assets/select_dependentfield.png)
+   ![ select_dependentfield ](assets/select_dependentfield.png)
 
 1. Kies onder **[!UICONTROL Requirement]** de optie **[!UICONTROL Required, based on new rule]**.
-1. Selecteren **[!UICONTROL Add Rule]** en kiest u **[!UICONTROL Asset Type]** veld om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Selecteren **[!UICONTROL Done]** om de wijzigingen op te slaan
+1. Selecteer **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Selecteer **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
-   ![define_rule](assets/define_rule.png)
+   ![ define_rule ](assets/define_rule.png)
 
    >[!NOTE]
    >
@@ -90,9 +90,9 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
 1. Kies onder **[!UICONTROL Visibility]** de optie **[!UICONTROL Visible, based on new rule]**.
 
-1. Selecteren **[!UICONTROL Add Rule]** en kiest u **[!UICONTROL Asset Type]** veld om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Selecteren **[!UICONTROL Done]** om de wijzigingen op te slaan
+1. Selecteer **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Selecteer **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
-   ![define_visibilityrule](assets/define_visibilityrule.png)
+   ![ define_visibilityrule ](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
@@ -103,22 +103,22 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
    >U kunt de voorwaarde **[!UICONTROL Requirement]** en de voorwaarde **[!UICONTROL Visibility]** onafhankelijk van elkaar toepassen.
 
 1. Maak op dezelfde manier een afhankelijkheid tussen de waarde Video in het veld Type element en andere velden, zoals Codec en Duur.
-1. Herhaal de stappen om documentelementen (PDF en Word) in het dialoogvenster [!UICONTROL Asset Type] veld en velden, zoals [!UICONTROL Page Count] en [!UICONTROL Author].
+1. Herhaal de stappen om documentelementen (PDF en Word) in het veld [!UICONTROL Asset Type] en velden zoals [!UICONTROL Page Count] en [!UICONTROL Author] afhankelijk te maken.
 1. Klik op **[!UICONTROL Save]**. Pas het metagegevensschema toe op een map.
 
 1. Navigeer naar de map waarop u het metagegevensschema hebt toegepast en open de pagina met eigenschappen van een element. Afhankelijk van uw keuze in het veld Type element worden relevante trapsgewijze metagegevensvelden weergegeven.
 
-   ![Trapsgewijze metagegevens voor video-elementen](assets/video_asset.png)
-   *Afbeelding: Trapsgewijze metagegevens voor video-elementen*
+   ![ Cascading meta-gegevens voor Video activa ](assets/video_asset.png)
+   *Cijferend Cijferend meta-gegevens voor Video activa*
 
-   ![Trapsgewijze metagegevens voor documentelementen](assets/doc_type_fields.png)
-   *Afbeelding: Trapsgewijze metagegevens voor documentelementen*
+   ![ Cascading meta-gegevens voor documentactiva ](assets/doc_type_fields.png)
+   *Cijfer: Cascading meta-gegevens voor documentactiva*
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -128,4 +128,4 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

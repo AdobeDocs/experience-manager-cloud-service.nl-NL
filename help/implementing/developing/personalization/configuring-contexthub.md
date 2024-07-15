@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # ContextHub configureren {#configuring-contexthub}
 
-ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. Voor meer details op ContextHub, zie [Overzicht van ContextHub-ontwikkelaars](contexthub.md).
+ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. Voor meer detail op ContextHub, zie [ Overzicht van de ontwikkelaar ContextHub ](contexthub.md).
 
 U kunt de toolbar vormen ContextHub om te controleren of het op de wijze van de Voorproef verschijnt, om opslag te creëren ContextHub, en modules toe te voegen UI.
 
 ## Het tonen van en het Verbergen van ContextHub UI {#showing-and-hiding-the-contexthub-ui}
 
-Vorm de dienst van ContextHub OSGi van Granite van de Adobe om te tonen of te verbergen [ContextHub UI](/help/sites-cloud/authoring/personalization/targeted-content.md) op uw pagina&#39;s. De PID van deze service is `com.adobe.granite.contexthub.impl.ContextHubImpl.`
+Vorm de Adobe granite ContextHub OSGi dienst om [ ContextHub UI ](/help/sites-cloud/authoring/personalization/targeted-content.md) op uw pagina&#39;s te tonen of te verbergen. De PID van deze service is `com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
-Om de dienst te vormen kunt u of gebruiken [Webconsole](/help/implementing/deploying/configuring-osgi.md) of gebruik een JCR-knooppunt in de repository:
+Om de dienst te vormen kunt u of de [ Console van het Web ](/help/implementing/deploying/configuring-osgi.md) gebruiken of een knoop JCR in de bewaarplaats gebruiken:
 
-* **Webconsole:** Om UI te tonen, selecteer het bezit UI van de Show. Om UI te verbergen, ontruim het bezit UI van de Huid.
-* **JCR-knooppunt:** Om UI te tonen, plaats boolean `com.adobe.granite.contexthub.show_ui` eigenschap aan `true`. Als u de gebruikersinterface wilt verbergen, stelt u de eigenschap in op `false`.
+* **Console van het Web:** om UI te tonen, selecteer het bezit van UI van de Show. Om UI te verbergen, ontruim het bezit UI van de Huid.
+* **knoop JCR:** om UI te tonen, plaats het booleaanse `com.adobe.granite.contexthub.show_ui` bezit aan `true`. Stel de eigenschap in op `false` om de interface te verbergen.
 
 Wanneer het tonen van ContextHub UI, verschijnt het slechts op pagina&#39;s op AEM auteursinstanties. De interface wordt niet weergegeven op pagina&#39;s met publicatie-instanties.
 
@@ -37,9 +37,9 @@ Vorm de wijzen UI en de modules die op de toolbar ContextHub op de wijze van de 
 
 UI-modi worden als een reeks pictogrammen aan de linkerkant van de werkbalk weergegeven. Wanneer geselecteerd, verschijnen de modules van een wijze UI aan het recht.
 
-![ContextHub-werkbalk](assets/contexthub-toolbar.png)
+![ ContextHub toolbar ](assets/contexthub-toolbar.png)
 
-Pictogrammen zijn verwijzingen uit de [Pictogrambibliotheek van Koral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
+Pictogrammen zijn verwijzingen van de [ Koraal UI pictogrambibliotheek ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
 
 ### UI-modus toevoegen {#adding-a-ui-mode}
 
@@ -50,12 +50,12 @@ Voeg een wijze UI aan groep verwante modules ContextHub toe. Wanneer u de wijze 
 1. Selecteer de Configuratie van de Hub van de Context.
 1. Selecteer de Create knoop, en selecteer dan de Wijze UI van de Hub van de Context.
 
-   ![UI-modus toevoegen](assets/contexthub-ui-mode.png)
+   ![ voeg wijze UI ](assets/contexthub-ui-mode.png) toe
 
 1. Geef waarden op voor de volgende eigenschappen:
 
    * UI Mode Title: The title that identify the UI mode
-   * Pictogram Modus: De kiezer voor de [Pictogram Koraalinterface](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) bijvoorbeeld `coral-Icon--user`
+   * Het Pictogram van de wijze: De selecteur voor het [ Koraal UI pictogram ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) aan gebruik, bijvoorbeeld, `coral-Icon--user`
    * Toegelaten: Uitgezocht om de wijze UI op de toolbar te tonen ContextHub
 
 1. Selecteer Opslaan.
@@ -64,19 +64,19 @@ Voeg een wijze UI aan groep verwante modules ContextHub toe. Wanneer u de wijze 
 
 Voeg een module ContextHub UI aan een wijze UI toe zodat het in de toolbar ContextHub voor het voorvertonen van paginainhoud verschijnt. Wanneer u een module UI toevoegt, creeert u een geval van een moduletype dat met ContextHub wordt geregistreerd. Om een module UI toe te voegen, moet u de naam van het bijbehorende moduletype kennen.
 
-AEM verstrekt een moduletype van basisUI evenals verscheidene types van steekproefUI Module waarop u een module UI kunt baseren. In de volgende tabel vindt u een korte beschrijving van elke tabel. Voor informatie over het ontwikkelen van een module van douaneUI, zie [ContextHub UI-modules maken](extending-contexthub.md#creating-contexthub-ui-module-types).
+AEM verstrekt een moduletype van basisUI evenals verscheidene types van steekproefUI Module waarop u een module UI kunt baseren. In de volgende tabel vindt u een korte beschrijving van elke tabel. Voor informatie over het ontwikkelen van een module van douane UI, zie [ Creërend Modules ContextHub UI ](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden voor module-specifieke eigenschappen kunt verstrekken. U verstrekt de detailconfiguratie in formaat JSON. De kolom van het Type van Module in de lijst verstrekt verbindingen aan informatie over de code JSON die voor elk UI moduletype wordt vereist.
 
 | Moduletype | Beschrijving | Winkel |
 |---|---|---|
-| [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | Een generiek type UI-module | Gevormd in de eigenschappen van de UI module |
-| [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | Hiermee wordt informatie over de browser weergegeven | `surferinfo` |
-| [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | Datum- en tijdgegevens weergeven | `datetime` |
-| [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | Geeft de breedte en lengte van de client en de locatie op een kaart weer. Hiermee kunt u de locatie wijzigen. | `geolocation` |
-| [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | Geeft de schermstand van het apparaat (liggend of staand) weer | `emulators` |
-| [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Statistieken over paginatags weergeven | `tagcloud` |
-| [graniet.profile](sample-modules.md#granite-profile-ui-module-type) | Hiermee geeft u de profielgegevens voor de huidige gebruiker weer, inclusief `authorizableID`, `displayName` en `familyName`. U kunt de waarde wijzigen van `displayName` en `familyName`. | `profile` |
+| [ contexthub.base ](sample-modules.md#contexthub-base-ui-module-type) | Een generiek type UI-module | Gevormd in de eigenschappen van de UI module |
+| [ contexthub.browserinfo ](sample-modules.md#contexthub-browserinfo-ui-module-type) | Hiermee wordt informatie over de browser weergegeven | `surferinfo` |
+| [ contexthub.datetime ](sample-modules.md#contexthub-datetime-ui-module-type) | Datum- en tijdgegevens weergeven | `datetime` |
+| [ contexthub.location ](sample-modules.md#contexthub-location-ui-module-type) | Geeft de breedte en lengte van de client en de locatie op een kaart weer. Hiermee kunt u de locatie wijzigen. | `geolocation` |
+| [ contexthub.screen-orientation ](sample-modules.md#contexthub-screen-orientation-ui-module-type) | Geeft de schermstand van het apparaat (liggend of staand) weer | `emulators` |
+| [ contexthub.tagcloud ](sample-modules.md#contexthub-tagcloud-ui-module-type) | Statistieken over paginatags weergeven | `tagcloud` |
+| [ granite.profile ](sample-modules.md#granite-profile-ui-module-type) | Hiermee geeft u de profielinformatie voor de huidige gebruiker weer, inclusief `authorizableID` , `displayName` en `familyName` . U kunt de waarde van `displayName` en `familyName` wijzigen. | `profile` |
 
 1. Selecteer Extra > Sites > ContextHub in de Experience Manager.
 1. Selecteer de Container van de Configuratie waaraan u een module UI wilt toevoegen.
@@ -84,7 +84,7 @@ De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden
 1. Selecteer de wijze UI waaraan u de module UI toevoegt.
 1. Selecteer de Create knoop, dan uitgezochte Module ContextHub UI (algemeen).
 
-   ![De module ContextHub UI](assets/contexthub-ui-module.png)
+   ![ module ContextHub UI ](assets/contexthub-ui-module.png)
 
 1. Geef waarden op voor de volgende eigenschappen:
 
@@ -97,13 +97,13 @@ De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden
 
 ## Een ContextHub-winkel maken {#creating-a-contexthub-store}
 
-Creeer een opslag van de Hub van de Context om gebruikersgegevens en toegang tot de gegevens voort te zetten zoals nodig. ContextHub-winkels zijn gebaseerd op geregistreerde winkelkandidaten. Wanneer u de opslag creeert, hebt u de waarde van storeType nodig waarmee de opslagkandidaat werd geregistreerd. (Zie [Aangepaste winkelkandidaten maken](extending-contexthub.md#creating-custom-store-candidates).)
+Creeer een opslag van de Hub van de Context om gebruikersgegevens en toegang tot de gegevens voort te zetten zoals nodig. ContextHub-winkels zijn gebaseerd op geregistreerde winkelkandidaten. Wanneer u de opslag creeert, hebt u de waarde van storeType nodig waarmee de opslagkandidaat werd geregistreerd. (Zie [ Creërend de Kandidaten van de Opslag van de Douane ](extending-contexthub.md#creating-custom-store-candidates).)
 
 ### Gedetailleerde opslagconfiguratie {#detailed-store-configuration}
 
-Wanneer u een opslag vormt, laat het bezit van de Configuratie van het Detail u toe om waarden voor store-specific eigenschappen te verstrekken. De waarde is gebaseerd op de `config` parameter van de opslag `init` functie. Daarom of u deze waarde, en het formaat van de waarde moet verstrekken, hangt van de opslag af.
+Wanneer u een opslag vormt, laat het bezit van de Configuratie van het Detail u toe om waarden voor store-specific eigenschappen te verstrekken. De waarde is gebaseerd op de parameter `config` van de functie `init` van de store. Daarom of u deze waarde, en het formaat van de waarde moet verstrekken, hangt van de opslag af.
 
-De waarde van het bezit van de Configuratie van het Detail is een `config` object in JSON-indeling.
+De waarde van de eigenschap Detail Configuration is een `config` -object in JSON-indeling.
 
 ### Voorbeeld van winkelkandidaten {#sample-store-candidates}
 
@@ -111,25 +111,25 @@ AEM verstrekt de volgende kandidaten van de steekproefopslag waarop u een opslag
 
 | Winkeltype | Beschrijving |
 |---|---|
-| [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | Bewaren voor opgeloste en onopgeloste segmenten ContextHub. Wint automatisch segmenten van ContextHub SegmentManager terug |
-| [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | Hiermee slaat u de breedte en lengte van de browserlocatie op. |
-| [graniet.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | Definieert eigenschappen en mogelijkheden voor verschillende apparaten en detecteert het huidige clientapparaat |
-| [graniet.profile](sample-stores.md#granite-profile-sample-store-candidate) | Hiermee worden profielgegevens voor de huidige gebruiker opgeslagen |
-| [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Hiermee wordt informatie over de client opgeslagen, zoals apparaatinformatie, browsertype en vensterrichting |
+| [ aem.segmentation ](sample-stores.md#aem-segmentation-sample-store-candidate) | Bewaren voor opgeloste en onopgeloste segmenten ContextHub. Wint automatisch segmenten van ContextHub SegmentManager terug |
+| [ contexthub.geolocation ](sample-stores.md#contexthub-geolocation-sample-store-candidate) | Hiermee slaat u de breedte en lengte van de browserlocatie op. |
+| [ granite.emulators ](sample-stores.md#granite-emulators-sample-store-candidate) | Definieert eigenschappen en mogelijkheden voor verschillende apparaten en detecteert het huidige clientapparaat |
+| [ granite.profile ](sample-stores.md#granite-profile-sample-store-candidate) | Hiermee worden profielgegevens voor de huidige gebruiker opgeslagen |
+| [ contexthub.surferinfo ](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Hiermee wordt informatie over de client opgeslagen, zoals apparaatinformatie, browsertype en vensterrichting |
 
 1. Selecteer Extra > Sites > ContextHub in de Experience Manager.
 1. Selecteer de standaardconfiguratiecontainer.
 1. Contexthub-configuratie selecteren
 1. Om een opslag toe te voegen, selecteer het Create pictogram en selecteer dan Configuratie van de Winkel ContextHub.
 
-   ![Configuratie van ContextHub-store](assets/contexthub-store-configuration.png)
+   ![ ContextHub opslagconfiguratie ](assets/contexthub-store-configuration.png)
 
 1. Geef waarden op voor de basisconfiguratie-eigenschappen en selecteer Volgende:
 
-   * **Configuratitel:** De titel die de winkel identificeert
-   * **Winkeltype:** De waarde van het storeType bezit van de opslagkandidaat waarop om de opslag te baseren
-   * **Vereist:** Selecteren
-   * **Ingeschakeld:** Selecteren om de winkel in te schakelen
+   * **Titel van de Configuratie:** de titel die de opslag identificeert
+   * **Type van opslag:** de waarde van het bezit storeType van de opslagkandidaat waarop om de opslag te baseren
+   * **Vereist:** Uitgezocht
+   * **Toegelaten:** Uitgezocht om de opslag toe te laten
 
 1. (Optioneel) Als u de standaardopslagconfiguratie wilt overschrijven, voert u een JSON-object in het vak Detail Configuration (JSON) in.
 1. Selecteer Opslaan.
@@ -138,7 +138,7 @@ AEM verstrekt de volgende kandidaten van de steekproefopslag waarop u een opslag
 
 Dit voorbeeld illustreert hoe te om een opslag te vormen en de gegevens in een module UI te tonen. In dit voorbeeld wordt de MD5-service van de site jsontest.com gebruikt als gegevensbron voor een winkel. De service retourneert de MD5-hash-code van een tekenreeks in JSON-indeling.
 
-Een contexthub.generic-jsonp-opslag is geconfigureerd zodat deze gegevens opslaat voor de serviceaanroep `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. De dienst keert de volgende gegevens terug die in een module UI worden getoond:
+Een contexthub.generic-jsonp-winkel is zo geconfigureerd dat deze gegevens opslaat voor de serviceaanroep `https://md5.jsontest.com/?text=%22text%20to%20md5%22` . De dienst keert de volgende gegevens terug die in een module UI worden getoond:
 
 ```javascript
 {
@@ -151,15 +151,15 @@ Een contexthub.generic-jsonp-opslag is geconfigureerd zodat deze gegevens opslaa
 
 De contextthub.generic-jsonp-voorbeeldopslagkandidaat stelt u in staat gegevens op te halen uit een JSONP-service of een webservice die JSON-gegevens retourneert. Voor deze opslagkandidaat, gebruik de opslagconfiguratie om details over de dienst te verstrekken JSONP aan gebruik.
 
-De [init](contexthub-api.md#init-name-config) de functie van de `ContextHub.Store.JSONPStore` JavaScript-klasse definieert een `config` object dat deze winkelkandidaat initialiseert. De `config` object bevat een `service` object dat details over de JSONP-service bevat. Om de opslag te vormen, verstrekt u `service` object in JSON-indeling als de waarde voor de eigenschap Detail Configuration.
+De [ init ](contexthub-api.md#init-name-config) functie van de `ContextHub.Store.JSONPStore` klasse van JavaScript bepaalt een `config` voorwerp dat deze opslagkandidaat initialiseert. Het `config` -object bevat een `service` -object dat details over de JSONP-service bevat. Om de opslag te vormen, verstrekt u het `service` voorwerp in formaat JSON als waarde voor het bezit van de Configuratie van het Detail.
 
-Als u gegevens wilt opslaan van de MD5-service van de site jsontest.com, gebruikt u de procedure in [Een ContextHub-winkel maken](#creating-a-contexthub-store) de volgende eigenschappen gebruiken:
+Om gegevens van de MD5 dienst van de jsontest.com plaats te bewaren, gebruik de procedure in [ Creërend een Winkel ContextHub ](#creating-a-contexthub-store) gebruikend de volgende eigenschappen:
 
-* **Configuratitel:** md5
-* **Winkeltype:** contexthub.generic-jsonp
-* **Vereist:** Selecteren
-* **Ingeschakeld:** Selecteren
-* **Detailconfiguratie (JSON):**
+* **Titel van de Configuratie:** md5
+* **Type van opslag:** contexthub.generic-jsonp
+* **Vereist:** Uitgezocht
+* **Toegelaten:** Uitgezochte
+* **Configuratie van het Detail (JSON):**
 
   ```javascript
   {
@@ -181,13 +181,13 @@ Als u gegevens wilt opslaan van de MD5-service van de site jsontest.com, gebruik
 
 Voeg een module UI aan de toolbar ContextHub toe om de gegevens te tonen die in het voorbeeld md5 opslag wordt opgeslagen. In dit voorbeeld wordt de module contexthub.base gebruikt om de volgende UI-module te produceren:
 
-![ContextHub MD5-archief](assets/contexthub-md5-store.png)
+![ ContextHub MD5 opslag ](assets/contexthub-md5-store.png)
 
-Gebruik de procedure in [Een UI-module toevoegen](#adding-a-ui-module) om de module UI aan een bestaande Wijze UI, zoals de wijze van de steekproef toe te voegen Persona UI. Voor de Module UI, gebruik de volgende bezitswaarden:
+Gebruik de procedure in [ Toevoegend een Module UI ](#adding-a-ui-module) om de module UI aan een bestaande Wijze UI, zoals de wijze UI van de steekproefpersoon toe te voegen. Voor de Module UI, gebruik de volgende bezitswaarden:
 
-* **UI-moduletitel:** MD5
-* **Moduletype:** contexthub.base
-* **Detailconfiguratie (JSON):**
+* **Titel van de Module UI:** MD5
+* **Type van Module:** contexthub.base
+* **Configuratie van het Detail (JSON):**
 
   ```javascript
   {
@@ -205,28 +205,28 @@ Een het zuiveren wijze voor ContextHub kan worden toegelaten om voor het oplosse
 
 ### Via de configuratie {#via-the-configuration}
 
-Bewerk de configuratie van ContextHub en controleer de optie **Foutopsporing**
+Bewerk de configuratie van ContextHub en controleer de optie **zuivert**
 
-1. Selecteer in het vak **Extra > Sites > ContextHub**
-1. De standaardinstelling selecteren **Configuratie-container**
-1. Selecteer de **ContextHub-configuratie** en selecteert u **Geselecteerd element bewerken**
-1. Selecteren **Foutopsporing** en selecteert u **Opslaan**
+1. In spoor selecteren **Hulpmiddelen > Plaatsen > ContextHub**
+1. Selecteer de standaard **Container van de Configuratie**
+1. Selecteer de **Configuratie ContextHub** en selecteer **uitgeef Geselecteerd Element**
+1. Selecteer **zuiveren** en selecteren **sparen**
 
 ### Via CRXDE {#via-crxde}
 
-CRXDE Lite gebruiken om de eigenschap in te stellen `debug` tot **true** onder:
+Gebruik CRXDE Lite om het bezit `debug` aan **waar** te plaatsen onder:
 
 * `/conf/global/settings/cloudsettings` of
 * `/conf/<site>/settings/cloudsettings`
 
 ### Het registreren zuivert Berichten voor ContextHub {#logging-debug-messages-for-contexthub}
 
-Vorm de Dienst van ContextHub OSGi van de Adobe Granite (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) om gedetailleerde Debug berichten te registreren die wanneer het ontwikkelen nuttig zijn.
+Vorm de dienst van ContextHub OSGi van de Adobe Granite (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) om gedetailleerde te registreren zuivert berichten die wanneer het ontwikkelen nuttig zijn.
 
-Om de dienst te vormen kunt u of gebruiken [Webconsole](/help/implementing/deploying/configuring-osgi.md) of gebruik een JCR-knooppunt in de repository:
+Om de dienst te vormen kunt u of de [ Console van het Web ](/help/implementing/deploying/configuring-osgi.md) gebruiken of een knoop JCR in de bewaarplaats gebruiken:
 
 * Webconsole: Als u Foutopsporingsberichten wilt registreren, selecteert u de eigenschap Foutopsporing.
-* JCR-knooppunt: als u foutopsporingsberichten wilt registreren, stelt u de Boolean in `com.adobe.granite.contexthub.debug` eigenschap aan `true`.
+* JCR-knooppunt: als u foutopsporingsberichten wilt registreren, stelt u de Booleaanse eigenschap `com.adobe.granite.contexthub.debug` in op `true` .
 
 ### Stille modus {#silent-mode}
 
@@ -234,22 +234,22 @@ In de modus Stil worden alle foutopsporingsgegevens onderdrukt. In tegenstelling
 
 Dit is nuttig voor uw publicatie-instantie, waar u helemaal geen foutopsporingsinformatie wilt. Omdat het een globaal plaatsen is, wordt het toegelaten via OSGi.
 
-1. Open de **Configuratie Adobe Experience Manager-webconsole** om `http://<host>:<port>/system/console/configMgr`
-1. Zoeken naar **ContextHub met Adobe graniet**
-1. Klik op de configuratie **ContextHub met Adobe graniet** om de eigenschappen te bewerken
-1. Schakel de optie in **Stille modus** en klik op **Opslaan**
+1. Open de **Configuratie van de Console van het Web van Adobe Experience Manager** bij `http://<host>:<port>/system/console/configMgr`
+1. Onderzoek naar **Adobe granite ContextHub**
+1. Klik de configuratie **Adobe granite ContextHub** om zijn eigenschappen uit te geven
+1. Controle de optie **Stille Wijze** en klik **sparen**
 
 ## ContextHub uitschakelen {#disabling-contexthub}
 
 ContextHub kan worden onbruikbaar gemaakt om het te verhinderen js/css te laden en te initialiseren. Er zijn twee opties om ContextHub onbruikbaar te maken:
 
-* Bewerk de configuratie van ContextHub en controleer de optie **ContextHub uitschakelen**
+* Bewerk de configuratie van ContextHub en controleer de optie **onbruikbaar maakt ContextHub**
 
-   1. Selecteer in het vak **Extra > Sites > ContextHub**
-   1. De standaardinstelling selecteren **Configuratie-container**
-   1. Selecteer de **ContextHub-configuratie** en selecteert u **Geselecteerd element bewerken**
-   1. Selecteren **ContextHub uitschakelen** en selecteert u **Opslaan**
+   1. In spoor selecteren **Hulpmiddelen > Plaatsen > ContextHub**
+   1. Selecteer de standaard **Container van de Configuratie**
+   1. Selecteer de **Configuratie ContextHub** en selecteer **uitgeef Geselecteerd Element**
+   1. Selecteer **onbruikbaar maken ContextHub** en selecteren **sparen**
 
 of
 
-* CRXDE Lite gebruiken om de eigenschap in te stellen `disabled` tot **true** krachtens `/conf/global/settings/cloudsettings/<configName>/contexthub`
+* Gebruik CRXDE Lite om het bezit `disabled` aan **waar** onder `/conf/global/settings/cloudsettings/<configName>/contexthub` te plaatsen

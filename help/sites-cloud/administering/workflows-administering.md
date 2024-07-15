@@ -16,46 +16,46 @@ ht-degree: 0%
 
 De workflowconsole biedt verschillende gereedschappen voor het beheer van workflowinstanties om ervoor te zorgen dat deze naar behoren worden uitgevoerd.
 
-Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Gebruik de [globale navigatie](/help/sites-cloud/authoring/basic-handling.md#global-navigation) om de **Gereedschappen** selecteert u vervolgens **Workflow**:
+Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Gebruik de [ globale navigatie ](/help/sites-cloud/authoring/basic-handling.md#global-navigation) om de **ruit van Hulpmiddelen** te openen, dan uitgezocht **Werkschema**:
 
-* **Modellen**: Workflowdefinities beheren
-* **Instanties**: Doorlopende workflowinstanties weergeven en beheren
-* **Launchers**: De manier beheren waarop workflows worden gestart
-* **Archief**: De geschiedenis van workflows weergeven die zijn voltooid
-* **Mislukt**: De geschiedenis weergeven van workflows die zijn voltooid met fouten
-* **Automatisch toewijzen**: Workflows automatisch toewijzen aan sjablonen configureren
+* **Modellen**: Beheer werkschemadefinities
+* **Instanties**: De mening en beheert het runnen werkschemainstanties
+* **Lanceerprogramma&#39;s**: Beheer hoe de werkschema&#39;s moeten worden gelanceerd
+* **Archief**: De geschiedenis van de mening van werkschema&#39;s die met succes voltooiden
+* **Mislukt**: De geschiedenis van de mening van werkschema&#39;s die met fouten voltooiden
+* **auto-wijst** toe: Vorm auto-Wijs werkschema&#39;s aan malplaatjes toe
 
 ## Controle van de status van workflowinstanties {#monitoring-the-status-of-workflow-instances}
 
-1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
-1. Selecteren **Instanties** om een lijst weer te geven met actieve workflowinstanties die momenteel worden uitgevoerd.
-1. Op de bovenste rail, in de rechterhoek, tonen de werkschemainstanties **Workflows uitvoeren**, **Status**, en **Details**.
-1. **Workflows uitvoeren** toont het aantal actieve workflows, en hun status. in de gegeven afbeeldingen is de getoonde waarde bijvoorbeeld het aantal **Workflows uitvoeren** en de **Status** van AEM instantie:
+1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
+1. Selecteer **Instanties** om de lijst van lopende werkschemainstanties momenteel te tonen.
+1. Op het hoogste spoor, in de juiste hoek, tonen de werkschemainstanties **Lopende werkschema&#39;s**, **Status**, en **Details**.
+1. **Lopende werkschema&#39;s** toont het aantal lopende werkschema&#39;s, en hun status. bijvoorbeeld, in de bepaalde getoonde beelden, zijn het aantal **Lopende werkschema&#39;s** en de **Status** van AEM instantie:
 
-   * **Status: gezond**
-     ![status-gezond](/help/sites-cloud/administering/assets/status-healthy.png)
+   * **Status: Gezonde**
+     ![ status-gezond ](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Status: Ongezond**
-     ![status-ongezond](/help/sites-cloud/administering/assets/status-unhealthy.png)
+     ![ status-ongezond ](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
-1. Voor **Statusdetails** van workflowinstanties klikt u op **Details** om de **aantal actieve workflows**, **voltooide workflowinstanties**, **afgebroken workflowinstanties**, **mislukte werkstroominstanties**, enzovoort. hieronder ziet u bijvoorbeeld de afbeeldingen die u ziet **Statusdetails** met:
+1. Voor **de details van de Status** van werkschemainstanties, klik **Details**, om het **aantal lopende werkstroominstanties**, **voltooide werkschemainstanties**, **geaborteerde werkschemainstanties**, **ontbroken werkschemainstanties** te tonen, etc. bijvoorbeeld, hieronder zijn de bepaalde beelden die **details van de Status** met tonen:
 
-   * **Statusdetails: gezond**
-     ![status-details-gezond](/help/sites-cloud/administering/assets/status-details-healthy.png)
+   * **de details van de Status: Gezonde**
+     ![ status-details-gezond ](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   * **Statusdetails: Ongezond**
-     ![status-details-ongezond](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+   * **de details van de Status: Ongezond**
+     ![ status-details-ongezond ](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Om werkstroominstantie gezond te houden, volgt u de aanbevolen procedures op [regelmatige zuivering van workflowinstanties](#regular-purging-of-workflow-instances) of [best practices voor workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
+   > Om werkschemainstantie gezond te handhaven, volg beste praktijken bij [ regelmatig het zuiveren van werkschemainstanties ](#regular-purging-of-workflow-instances) of [ werkschemabeste praktijken ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Workflowinstanties zoeken {#search-workflow-instances}
 
-1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
-1. Selecteren **Instanties** om een lijst weer te geven met werkstroominstanties die momenteel worden uitgevoerd. Selecteer in de bovenste rail in de linkerhoek de optie **Filters**. U kunt ook de toetsaanslagen alt+1 gebruiken. Het volgende dialoogvenster wordt weergegeven:
+1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
+1. Selecteer **Instanties** om de lijst van werkschemainstanties te tonen momenteel lopend. Op het hoogste spoor, in de linkerhoek, uitgezochte **Filters**. U kunt ook de toetsaanslagen alt+1 gebruiken. Het volgende dialoogvenster wordt weergegeven:
 
-   ![wf-99-1](/help/sites-cloud/administering/assets/wf-99-1.png)
+   ![ wf-99-1 ](/help/sites-cloud/administering/assets/wf-99-1.png)
 
 1. Selecteer de zoekcriteria voor de workflow in het dialoogvenster Filter. U kunt zoeken op basis van de volgende gegevens:
 
@@ -72,14 +72,14 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 ## Het onderbreken, Hervatten, en het Eindigen van een Instantie van het Werkschema {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
-1. Selecteren **Instanties** om een lijst weer te geven met werkstroominstanties die momenteel worden uitgevoerd.
+1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
+1. Selecteer **Instanties** om de lijst van werkschemainstanties te tonen momenteel lopend.
 
-   ![wf-96-1](/help/sites-cloud/administering/assets/wf-96-1.png)
+   ![ wf-96-1 ](/help/sites-cloud/administering/assets/wf-96-1.png)
 
-1. Selecteer een specifiek item en gebruik **Beëindigen**, **Onderbreken**, of **Hervatten** in voorkomend geval; bevestiging en/of nadere bijzonderheden zijn vereist:
+1. Selecteer een specifiek punt, dan gebruik **beëindigt**, **Schorsing**, of **hervat**, zoals aangewezen; bevestiging, en/of verdere details worden vereist:
 
-   ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
+   ![ wf-97-1 ](/help/sites-cloud/administering/assets/wf-97-1.png)
 
    >[!NOTE]
    >
@@ -89,61 +89,61 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 ## Gearchiveerde workflows weergeven {#viewing-archived-workflows}
 
-1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
+1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
 
-1. Selecteren **Archief** om een lijst weer te geven met workflowinstanties die met succes zijn voltooid.
+1. Selecteer **Archief** om de lijst van werkschemainstanties te tonen die met succes voltooiden.
 
-   ![archived-instances](/help/sites-cloud/administering/assets/archived-instances.png)
+   ![ archived-instances ](/help/sites-cloud/administering/assets/archived-instances.png)
 
    >[!NOTE]
    >
    >
    >De afbreekstatus wordt beschouwd als een succesvolle beëindiging aangezien het als resultaat van gebruikersactie voorkomt; bijvoorbeeld:
    >
-   >* gebruik van de **Beëindigen** action
+   >* gebruik van **beëindigt** actie
    >* als een pagina die aan een workflow is onderworpen (geforceerd) wordt verwijderd, wordt de workflow beëindigd.
 
-1. Selecteer vervolgens een specifiek item **Historie openen** voor meer informatie :
+1. Selecteer een specifiek punt, dan **Open Geschiedenis** om meer details te zien:
 
-   ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
+   ![ wf-99 ](/help/sites-cloud/administering/assets/wf-99.png)
 
 ## Fouten in werkstroominstantie herstellen {#fixing-workflow-instance-failures}
 
-Wanneer een werkstroom mislukt, biedt AEM de **Mislukt** console om u toe te staan om aangewezen actie te onderzoeken en te nemen zodra de originele oorzaak is behandeld:
+Wanneer een werkschema ontbreekt, AEM verstrekt de **console van Mislukt** om u toe te staan om aangewezen actie te onderzoeken en te nemen zodra de originele oorzaak is behandeld:
 
-* **Foutgegevens**
-Hiermee opent u een venster waarin de **Foutbericht**, **Stap, en **Stapel mislukt**.
+* **Details van de Mislukking**
+Opent een venster om het **Bericht van de Mislukking**, **Stap, en **Stapel van de Mislukking** te tonen.
 
-* **Historie openen**
+* **Open Geschiedenis**
 Geeft details van de workflowgeschiedenis weer.
 
-* **Stap opnieuw proberen** Hiermee wordt de componentinstantie Scriptstap opnieuw uitgevoerd. Gebruik de opdracht Stap opnieuw proberen nadat u de oorzaak van de oorspronkelijke fout hebt opgelost. U kunt bijvoorbeeld de stap opnieuw uitvoeren nadat u een fout in het script hebt opgelost dat door de processtap wordt uitgevoerd.
-* **Beëindigen** Beëindig de werkstroom als de fout een onherstelbare situatie voor het werkschema heeft veroorzaakt. De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagplaats die niet langer geldig is voor de werkstroominstantie.
-* **Beëindigen en opnieuw proberen** vergelijkbaar met **Beëindigen** behalve dat een nieuwe werkschemainstantie gebruikend de originele lading, de titel, en de beschrijving is begonnen.
+* **herprobeer Stap** voert opnieuw de de componenteninstantie van de Stap van het Manuscript uit. Gebruik de opdracht Stap opnieuw proberen nadat u de oorzaak van de oorspronkelijke fout hebt opgelost. U kunt bijvoorbeeld de stap opnieuw uitvoeren nadat u een fout in het script hebt opgelost dat door de processtap wordt uitgevoerd.
+* **eindigt** het werkschema als de fout een onherstelbare situatie voor het werkschema heeft veroorzaakt. De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagplaats die niet langer geldig is voor de werkstroominstantie.
+* **beëindigt en probeert opnieuw** gelijkend op **eindigt** behalve dat is een nieuwe werkschemainstantie begonnen gebruikend de originele nuttige lading, de titel, en de beschrijving.
 
 Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, gebruik de volgende stappen:
 
-1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
+1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
 
-1. Selecteren **Mislukt** om een lijst weer te geven met werkstroominstanties die niet zijn voltooid.
+1. Selecteer **Mislukt** om de lijst van werkschemainstanties te tonen die niet met succes voltooiden.
 1. Selecteer een specifiek item en voer de gewenste actie uit:
 
-![workflowfout](/help/sites-cloud/administering/assets/workflow-failure.png)
+![ werkschema-mislukking ](/help/sites-cloud/administering/assets/workflow-failure.png)
 
 ## Regelmatig leegmaken van workflowinstanties {#regular-purging-of-workflow-instances}
 
 Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen.
 
-Configureren **Configuratie van opschonen van de Adobe van Granite-workflow** om werkstroominstanties te wissen op basis van hun leeftijd en status. U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
+Vorm **de Configuratie van de Wrijving van het Werkschema van 0} Adobe granite om werkschemainstanties volgens hun leeftijd en status te zuiveren.** U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
 
 U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel zuivert wanneer deze veel langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na enkele dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
 
-Om de dienst te vormen, kunt u de Dossiers van de Configuratie vormen OSGi zie [OSGi-configuratiebestanden](/help/implementing/deploying/configuring-osgi.md). In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt.
+Om de dienst te vormen, kunt u de OSGi- Dossiers van de Configuratie vormen zie [ OSGi configuratiedossiers ](/help/implementing/deploying/configuring-osgi.md). In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt.
 
 >[!NOTE]
 >Voor het toevoegen van de configuratie aan de repository is de service-PID:
 >`com.adobe.granite.workflow.purge.Scheduler`
->Omdat de dienst een fabrieksdienst is, de naam van `sling:OsgiConfig` knooppunt vereist een achtervoegsel voor id, bijvoorbeeld:
+>Omdat de service een fabrieksservice is, vereist de naam van het knooppunt `sling:OsgiConfig` een achtervoegsel met id, bijvoorbeeld:
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table>
@@ -170,7 +170,7 @@ Om de dienst te vormen, kunt u de Dossiers van de Configuratie vormen OSGi zie [
   <tr>
    <td>Te wissen modellen</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>De id van de workflowmodellen die moeten worden gewist. De id is het pad naar het modelknooppunt, bijvoorbeeld:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Geef geen waarde op om instanties van alle workflowmodellen leeg te maken.</p> <p>Als u meerdere modellen wilt opgeven, klikt u op + in de webconsole. </p> </td>
+   <td><p>De id van de workflowmodellen die moeten worden gewist. Identiteitskaart is de weg aan de modelknoop, bijvoorbeeld:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model <br /> specificeer geen waarde om instanties van alle werkschemamodellen te zuiveren.</p> <p>Als u meerdere modellen wilt opgeven, klikt u op + in de webconsole. </p> </td>
   </tr>
   <tr>
    <td>Werkstroomleeftijd</td>
@@ -182,7 +182,7 @@ Om de dienst te vormen, kunt u de Dossiers van de Configuratie vormen OSGi zie [
 
 ## De maximale grootte van het Postvak IN instellen {#setting-the-maximum-size-of-the-inbox}
 
-U kunt de maximumgrootte van inbox plaatsen door te vormen **Adobe Granite Workflow Service**, zie [Voeg een configuratie OSGi aan de bewaarplaats toe](/help/implementing/deploying/configuring-osgi.md). De volgende lijst beschrijft het bezit dat u vormt.
+U kunt de maximumgrootte van inbox plaatsen door de **Dienst van het Werkschema van de Adobe te vormen Granite**, zie [ een configuratie OSGi aan de bewaarplaats ](/help/implementing/deploying/configuring-osgi.md) toevoegen. De volgende lijst beschrijft het bezit dat u vormt.
 
 >[!NOTE]
 >Voor het toevoegen van de configuratie aan de repository is de service-PID:
@@ -200,11 +200,11 @@ Gegevens die door workflows worden verwerkt, worden opgeslagen in de Adobe opgeg
 
 Op het niveau van het workflowmodel wordt een markering opgegeven die aangeeft dat het model (en de runtimeinstanties) externe opslag van metagegevens heeft. Workflowvariabelen blijven niet behouden in JCR voor de workflowinstanties van de modellen die zijn gemarkeerd voor externe opslag.
 
-De eigenschap *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr:inhoudsknooppunt* van het workflowmodel. Deze markering wordt in metagegevens van de workflow als *cq:userMetaDataCustomPersistenceEnabled*.
+Het bezit *userMetadataPersistenceEnabled* wordt opgeslagen op *jcr:inhoudsknoop* van het werkschemamodel. Deze vlag wordt voortgeduurd in werkschemagegevens als *cq:userMetaDataCustomPersistenceEnabled*.
 
 In de onderstaande afbeelding ziet u hoe u de markering op een workflow instelt.
 
-![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
+![ werkschema-externalize-config ](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### API&#39;s voor metagegevens in externe opslag {#apis-for-metadata-external-storage}
 

@@ -14,20 +14,20 @@ ht-degree: 0%
 # De CDN-cache leegmaken {#cdn-purge-cache}
 
 >[!NOTE]
->Deze functie is nog niet algemeen beschikbaar. Als u wilt deelnemen aan het programma voor vroegtijdige adoptie, kunt u een e-mail sturen `aemcs-cdn-config-adopter@adobe.com`.
+>Deze functie is nog niet algemeen beschikbaar. E-mail `aemcs-cdn-config-adopter@adobe.com` om deel te nemen aan het programma voor vroegtijdige adoptie.
 
 Het zuiveren verwijdert een voorwerp uit het geheime voorgeheugen van de Adobe CDN, resulterend in toekomstige verzoeken die aan de oorsprong als geheim voorgeheugenmissen, eerder dan worden gediend van geheim voorgeheugen.
-AEM as a Cloud Service staat u toe om een Schrapping API Token te vormen, die dan in API vraag kan worden gebruikt. Lees de [CDN-referenties en verificatieartikel configureren](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijl van de Configuratie van de Manager van de Wolk.
+Met AEM as a Cloud Service kunt u een token voor de paars-API configureren. Deze token kan vervolgens worden gebruikt in API-aanroepen. Lees het [ Vormen CDN Credentials en artikel van de Authentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijpleiding van de Configuratie van Cloud Manager.
 
 Er zijn drie ondersteunde variaties voor het wissen:
 
-* [Eén URL leegmaken](#single-purge) - één bron tegelijk leegmaken.
-* [Leegmaken met vervangende sleutel](#surrogate-key-purge) - meerdere bronnen tegelijk verwijderen.
-* [Volledige zuivering](#full-purge) - alle bronnen zuiveren.
+* [ Enige zuivering URL ](#single-purge) - zuiveren één enkel middel tegelijkertijd.
+* [ wis door vervangings sleutel ](#surrogate-key-purge) - wis veelvoudige middelen in één keer.
+* [ Volledige zuivering ](#full-purge) - zuivering alle middelen.
 
 Alle variaties van de purge delen het volgende:
 
-* De HTTP-methode moet worden ingesteld op `PURGE`.
+* De HTTP-methode moet worden ingesteld op `PURGE` .
 * De URL kan elk domein zijn dat is gekoppeld aan de AEM-service waarvoor het verwijderingsverzoek is bedoeld.
 * De `X-AEM-Purge-Key` moet in een HTTP-header worden opgegeven.
 
@@ -45,13 +45,13 @@ curl
 -H 'X-AEM-Purge: soft'
 ```
 
-Zoals in het bovenstaande voorbeeld wordt getoond, kunt u **optioneel** opgeven of de CDN een **hard** leegmaken (standaard) of een **zacht** leegmaken op de objecten in de cache.
+Zoals aangetoond in het voorbeeld hierboven, kunt u **** naar keuze specificeren als CDN a **hard** (gebrek) of a **zachte** zuivering op de caching voorwerpen zou moeten uitvoeren.
 
 De standaard harde purge maakt de inhoud onmiddellijk ontoegankelijk voor nieuwe verzoeken tot de inhoud van de oorsprong wordt teruggewonnen. Met de optie Zacht leegmaken wordt de inhoud als verouderd gemarkeerd, maar blijft deze aan de klanten toekomen, zodat ze niet hoeven te wachten totdat de inhoud uit de oorsprong wordt opgehaald.
 
 ## Verwijderen van vervangingstoets {#surrogate-key-purge}
 
-Surrogaatsleutels zijn unieke id&#39;s die u gebruikt om een set inhoud te wissen. Ze worden toegepast op inhoud door een `Surrogate-Key` aan de reactie. In een purge API-aanroep kan naar een of meer vervangingstoetsen worden verwezen.
+Surrogaatsleutels zijn unieke id&#39;s die u gebruikt om een set inhoud te wissen. Ze worden toegepast op de inhoud door een `Surrogate-Key` -koptekst toe te voegen aan de reactie. In een purge API-aanroep kan naar een of meer vervangingstoetsen worden verwezen.
 
 ```
 curl
@@ -61,7 +61,7 @@ curl
 -H "X-AEM-Purge: soft" #optional
 ```
 
-De `Surrogate-Key`s) worden gescheiden door spaties. Op dezelfde manier als het enige zuiveren URL, kunt u of hard of een zachte zuivering vormen.
+De `Surrogate-Key`(s) worden gescheiden door spaties. Op dezelfde manier als het enige zuiveren URL, kunt u of hard of een zachte zuivering vormen.
 
 ## Volledige zuivering {#full-purge}
 
@@ -74,8 +74,8 @@ curl
 -H "X-AEM-Purge: all"
 ```
 
-Houd er rekening mee dat de `X-AEM-Purge` header must include the &#39;all&#39; value.
+Houd er rekening mee dat de header `X-AEM-Purge` de waarde &#39;all&#39; moet bevatten.
 
 ## Interacties met de laag Apache/Dispatcher {#apache-layer}
 
-Zoals beschreven in het [Artikel Inhoudslevering stroom](/help/implementing/dispatcher/overview.md), haalt CDN inhoud van de Apache/Dispatcher laag terug, als het geheime voorgeheugen is verlopen. Dit impliceert dat alvorens een middel bij CDN te zuiveren, u zou moeten ervoor zorgen dat een nieuwe versie van de inhoud ook bij de Dispatcher beschikbaar is. Zie voor meer informatie ook [Ongeldige validatie van cache-verzending](/help/implementing/dispatcher/caching.md#disp).
+Zoals die in het [ artikel van de Stroom van de Levering van de Inhoud ](/help/implementing/dispatcher/overview.md) wordt beschreven, terugwint CDN inhoud van de laag Apache/Dispatcher, als het geheime voorgeheugen is verlopen. Dit houdt in dat u, voordat u een bron op de CDN wist, ervoor moet zorgen dat er ook een nieuwe versie van de inhoud beschikbaar is op de Dispatcher. Voor verdere details zie ook [ de Invalidatie van het Geheime voorgeheugen van Dispatcher ](/help/implementing/dispatcher/caching.md#disp).

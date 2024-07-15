@@ -20,20 +20,20 @@ Leer over de verschillende soorten vraag die door de Universele Redacteur aan uw
 
 De Universele Redacteur communiceert met uw van instrumenten voorzien app door een reeks bepaalde vraag. Dit is transparant voor en heeft geen invloed op de gebruikerservaring.
 
-Voor de ontwikkelaar, echter, kan het begrip van deze vraag en wat zij doen waardevol zijn wanneer het zuiveren van uw toepassing wanneer het gebruiken van de Universele Redacteur. Als u van instrumenten van uw app hebt voorzien en het gedrag van de app niet correct is, kan het handig zijn om het dialoogvenster **Netwerk** van de ontwikkelaarsgereedschappen in uw browser en inspecteer de aanroepen terwijl u inhoud in uw app bewerkt.
+Voor de ontwikkelaar, echter, kan het begrip van deze vraag en wat zij doen waardevol zijn wanneer het zuiveren van uw toepassing wanneer het gebruiken van de Universele Redacteur. Als u van instrumenten uw app hebt voorzien en het zich niet zoals voorzien gedraagt, kan het nuttig zijn om het **lusje van het Netwerk** van de ontwikkelaarshulpmiddelen in uw browser te openen en de vraag te inspecteren aangezien u inhoud in uw app uitgeeft.
 
-![Voorbeeld van een detailsvraag op het lusje van het Netwerk van de ontwikkelaarshulpmiddelen van browser](assets/calls-network-tab.png)
+![ Voorbeeld van een detailvraag op het lusje van het Netwerk van de ontwikkelaarshulpmiddelen van browser ](assets/calls-network-tab.png)
 
-* De **Payload** van de vraag bevat details van wat door de redacteur met inbegrip van het identificeren wordt bijgewerkt wat en hoe te om het bij te werken.
-* De **Antwoord** bevat details over wat precies door de redactedienst is bijgewerkt. Hiermee kunt u het vernieuwen van de inhoud in de editor vereenvoudigen. In bepaalde gevallen, zoals `move` vraag, moet de volledige pagina worden verfrist.
+* De **nuttige lading** van de vraag bevat details van wat door de redacteur met inbegrip van het identificeren van wat wordt bijgewerkt en hoe te om het bij te werken.
+* De **Reactie** omvat details van wat precies door de redacteursdienst werd bijgewerkt. Hiermee kunt u het vernieuwen van de inhoud in de editor vereenvoudigen. In bepaalde gevallen, zoals bij een `move` -aanroep, moet de gehele pagina worden vernieuwd.
 
-Zodra een vraag met succes wordt voltooid, worden de gebeurtenissen teweeggebracht die de lading van het verzoek en van de reactie omvatten, die voor uw eigen app kan worden aangepast. Zie het document [Universal Editor-gebeurtenissen](/help/implementing/universal-editor/events.md) voor meer informatie .
+Zodra een vraag met succes wordt voltooid, worden de gebeurtenissen teweeggebracht die de lading van het verzoek en van de reactie omvatten, die voor uw eigen app kan worden aangepast. Gelieve te zien de de gebeurtenissen van de Universele Redacteur van het document [ ](/help/implementing/universal-editor/events.md) voor meer details.
 
 Hieronder volgt een lijst met de typen aanroepen die de Universal Editor naar uw app uitvoert, samen met voorbeeldladingen en reacties.
 
 ## Bijwerken {#update}
 
-An `update` Er wordt aangeroepen wanneer u inhoud in uw app bewerkt met de Universal Editor. De `update` houdt de veranderingen voort.
+Een `update` -aanroep doet zich voor wanneer u inhoud in uw app bewerkt met de Universal Editor. `update` houdt de wijzigingen aan.
 
 De nuttige lading omvat details van wat om aan JCR terug te schrijven.
 
@@ -44,7 +44,7 @@ De nuttige lading omvat details van wat om aan JCR terug te schrijven.
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld van nuttige lading]
+>[!TAB  Steekproef Payload ]
 
 ```json
 {
@@ -64,7 +64,7 @@ De nuttige lading omvat details van wat om aan JCR terug te schrijven.
 }
 ```
 
->[!TAB Samplereactie]
+>[!TAB  Reactie van de Steekproef ]
 
 ```json
 {
@@ -82,16 +82,16 @@ De nuttige lading omvat details van wat om aan JCR terug te schrijven.
 
 ## Details {#details}
 
-A `details` Er wordt aangeroepen wanneer u uw app in de Universal Editor laadt om de inhoud van de app op te halen.
+Er verschijnt een `details` -aanroep wanneer u uw app in de Universal Editor laadt om de inhoud van de app op te halen.
 
 Zijn nuttige lading omvat de gegevens die moeten worden teruggegeven evenals details van wat de gegevens (het schema) vertegenwoordigen zodat kunnen zij in de Universele Redacteur worden teruggegeven.
 
-* Voor een component haalt de Universal Editor alleen een `data` -object, aangezien het schema van de gegevens in de app is gedefinieerd.
-* Voor Inhoudsfragmenten haalt de Universal Editor ook een `schema` -object omdat het inhoudsfragmentmodel is gedefinieerd in de JCR.
+* Voor een component haalt de Universal Editor alleen een `data` -object op, aangezien het schema van de gegevens in de app is gedefinieerd.
+* Voor inhoudsfragmenten haalt de Universal Editor ook een `schema` -object op, aangezien het Content Fragment Model is gedefinieerd in de JCR.
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld van nuttige lading]
+>[!TAB  Steekproef Payload ]
 
 ```json
 {
@@ -110,7 +110,7 @@ Zijn nuttige lading omvat de gegevens die moeten worden teruggegeven evenals det
 }
 ```
 
->[!TAB Samplereactie]
+>[!TAB  Reactie van de Steekproef ]
 
 ```json
 {
@@ -146,15 +146,15 @@ Zijn nuttige lading omvat de gegevens die moeten worden teruggegeven evenals det
 
 ## Toevoegen {#add}
 
-An `add` Er wordt aangeroepen wanneer u een nieuwe component in uw app plaatst met de Universal Editor.
+Er treedt een `add` -aanroep op wanneer u een nieuwe component in uw app plaatst met de Universal Editor.
 
-De lading omvat een `path` -object dat de locatie bevat waar de inhoud moet worden toegevoegd.
+De lading ervan bevat een `path` -object dat de locatie bevat waar de inhoud moet worden toegevoegd.
 
-Het omvat tevens een `content` object met aanvullende objecten voor eindpuntspecifieke details van de inhoud die moet worden opgeslagen [voor elke insteekmodule.](/help/implementing/universal-editor/architecture.md) Als uw app bijvoorbeeld is gebaseerd op inhoud van AEM en Magento, bevat de payload voor elk systeem een gegevensobject.
+Het omvat ook een `content` voorwerp met extra voorwerpen voor eindpunt-specifieke details van de inhoud die [ voor elke stop moet worden opgeslagen.](/help/implementing/universal-editor/architecture.md) Als uw app bijvoorbeeld is gebaseerd op inhoud van AEM en Magento, bevat de payload voor elk systeem een gegevensobject.
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld van nuttige lading]
+>[!TAB  Steekproef Payload ]
 
 ```json
 {
@@ -186,7 +186,7 @@ Het omvat tevens een `content` object met aanvullende objecten voor eindpuntspec
 }
 ```
 
->[!TAB Samplereactie]
+>[!TAB  Reactie van de Steekproef ]
 
 ```json
 {
@@ -204,13 +204,13 @@ Het omvat tevens een `content` object met aanvullende objecten voor eindpuntspec
 
 ## Verplaatsen {#move}
 
-A `move` Er wordt aangeroepen wanneer u een component in uw app verplaatst met de Universal Editor.
+Een `move` -aanroep doet zich voor wanneer u een component binnen uw toepassing verplaatst met de Universal Editor.
 
-De lading omvat een `from` object dat bepaalt waar de component zich bevond en een `to` object dat definieert waar het is verplaatst.
+De lading omvat een `from` voorwerp dat bepaalt waar de component was en een `to` voorwerp dat bepaalt waar het werd bewogen.
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld van nuttige lading]
+>[!TAB  Steekproef Payload ]
 
 ```json
 {
@@ -243,7 +243,7 @@ De lading omvat een `from` object dat bepaalt waar de component zich bevond en e
 }
 ```
 
->[!TAB Samplereactie]
+>[!TAB  Reactie van de Steekproef ]
 
 ```json
 {
@@ -260,13 +260,13 @@ De lading omvat een `from` object dat bepaalt waar de component zich bevond en e
 
 ## Verwijderen {#remove}
 
-A `remove` Er treedt een aanroep op wanneer u een component in uw app verwijdert met de Universal Editor.
+Een `remove` -aanroep doet zich voor wanneer u een component in uw app verwijdert met de Universal Editor.
 
 De lading ervan bevat het pad van het object dat is verwijderd.
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld van nuttige lading]
+>[!TAB  Steekproef Payload ]
 
 ```json
 {
@@ -292,7 +292,7 @@ De lading ervan bevat het pad van het object dat is verwijderd.
 }
 ```
 
->[!TAB Samplereactie]
+>[!TAB  Reactie van de Steekproef ]
 
 ```json
 {
@@ -308,15 +308,15 @@ De lading ervan bevat het pad van het object dat is verwijderd.
 
 >[!ENDTABS]
 
-## Publiceren {#publish}
+## Publish {#publish}
 
-A `publish` de vraag komt voor wanneer u klikt **Publiceren** in de Universal Editor om de inhoud te publiceren die u hebt bewerkt.
+Een `publish` vraag komt voor wanneer u de **Publish** knoop in de Universele Redacteur klikt om de inhoud te publiceren die u hebt uitgegeven.
 
 De Universal Editor herhaalt de inhoud en genereert een lijst met verwijzingen die ook moeten worden gepubliceerd.
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld van nuttige lading]
+>[!TAB  Steekproef Payload ]
 
 ```json
 {
@@ -356,7 +356,7 @@ De Universal Editor herhaalt de inhoud en genereert een lijst met verwijzingen d
 }
 ```
 
->[!TAB Samplereactie]
+>[!TAB  Reactie van de Steekproef ]
 
 ```json
 {

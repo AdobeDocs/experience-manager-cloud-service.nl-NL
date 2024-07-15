@@ -1,6 +1,6 @@
 ---
 title: Dashboard voor CDN-prestaties
-description: Begrijp hoe de Manager van de Wolk de prestaties van het netwerk van de inhoudslevering (CDN) evalueert en wat u van het dashboard kunt leren.
+description: Begrijp hoe Cloud Manager de prestaties van het inhoudsleveringsnetwerk (CDN) evalueert en wat u van het dashboard kunt leren.
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -14,43 +14,43 @@ ht-degree: 0%
 
 # Dashboard voor CDN-prestaties {#cdn-performance}
 
-Begrijp hoe de Manager van de Wolk de prestaties van het netwerk van de inhoudslevering (CDN) evalueert en wat u van het dashboard kunt leren.
+Begrijp hoe Cloud Manager de prestaties van het inhoudsleveringsnetwerk (CDN) evalueert en wat u van het dashboard kunt leren.
 
 ## Overzicht {#overview}
 
-Elk programma van de Manager van de Wolk heeft een CDN prestatiesdashboard. Dit dashboard stelt een algemene score voor CDN prestaties samen met tendensen, alarm, en suggesties voor verbetering voor zonodig voor.
+Elk Cloud Manager-programma heeft een CDN-prestatiedashboard. Dit dashboard stelt een algemene score voor CDN prestaties samen met tendensen, alarm, en suggesties voor verbetering voor zonodig voor.
 
-![CDN-prestatiedashboard](assets/cdn-performance-dashboard.png)
+![ CDN prestatiedashboard ](assets/cdn-performance-dashboard.png)
 
 ## Het dashboard openen {#accessing}
 
 Het CDN-dashboard is beschikbaar op de overzichtspagina van elk programma.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** tikken of tikken op het programma waarvan u het CDN-dashboard wilt weergeven.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, tik of klik het programma het waarvan CDN dashboard u wenst om te bekijken.
 
-   ![Pagina Mijn programma&#39;s](assets/my-programs.png)
+   ![ Mijn programmapagina ](assets/my-programs.png)
 
-1. Op de **Programmaoverzicht** pagina in uw programma, omlaag schuiven onder de **Omgevingen** en **Pijpleidingen** kaarten om de **Prestaties** kaart.
+1. Op de **pagina van het Overzicht van het 0} Programma van uw programma, scrol neer onder de** Milieu **en** Pijpleidingen **kaarten om de** kaart van Prestaties **te zien.**
 
-   ![Prestaties](assets/cdn-performance-overview.png)
+   ![ Prestaties ](assets/cdn-performance-overview.png)
 
 ## Het dashboard gebruiken {#using}
 
 Het dashboard presenteert een algemene score voor CDN-prestaties samen met trends, waarschuwingen en suggesties voor verbetering.
 
-![CDN-prestatiedashboard](assets/cdn-performance-dashboard.png)
+![ CDN prestatiedashboard ](assets/cdn-performance-dashboard.png)
 
-Tik of klik voor meer informatie over de CDN-prestaties en voor suggesties voor het verbeteren van de prestaties **De trend weergeven**.
+Voor details op uw prestaties CDN evenals voor suggesties op hoe te om het te verbeteren, te tikken of **trend van de Mening** te klikken.
 
-![Prestatieontwikkeling](assets/cdn-performance-trend.png)
+![ De trend van Prestaties ](assets/cdn-performance-trend.png)
 
-Tik of klik op **Weergave** onder de grafiek om de tijdspanwijdte van de grafiek te veranderen.
+Tik of klik **Mening** onder de grafiek om de tijdspanwijdte van de grafiek te veranderen.
 
-Voor suggesties voor het verbeteren van de CDN-prestaties selecteert u de optie **Recommendations** tab.
+Voor suggesties op hoe te om uw prestaties te verbeteren CDN, selecteer het **Recommendations** lusje.
 
-![CDN-aanbevelingen](assets/cdn-performance-recommendations.png)
+![ CDN aanbevelingen ](assets/cdn-performance-recommendations.png)
 
 Tik of klik op het chevron naast een aanbeveling in de lijst om meer informatie te bekijken over de stappen die u moet ondernemen om de situatie te verbeteren en de oorzaak van het probleem.
 
@@ -66,13 +66,13 @@ De cache-raakverhouding is een maat voor het aantal aanvragen dat een cache kan 
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **Actief** - Gegevens worden opgevraagd in het cachegeheugen en worden gevonden.
-* **Mevrouw** - Gegevens worden opgevraagd in de cache en worden niet gevonden.
-* **Voldoende** - Gegevens worden opgevraagd in het cachegeheugen en deze gegevens worden in geen geval in het cachegeheugen opgeslagen.
-* **Overige** - Alle gegevensverzoeken van het geheime voorgeheugen die geen ander geval aanpassen.
+* **Actief** - het Gegevens wordt gevraagd van het geheime voorgeheugen, en het wordt gevonden.
+* **Mis** - het Gegevens wordt gevraagd van het geheime voorgeheugen, en het wordt niet gevonden.
+* **pas** over - het Gegevens wordt gevraagd van het geheime voorgeheugen, en het wordt geplaatst om deze gegevens in geen geval in het voorgeheugen onder te brengen.
+* **Andere** - Alle gegevensverzoeken van het geheime voorgeheugen die geen ander geval aanpassen.
 
 De cijfers van het geheime voorgeheugen worden bijgewerkt om de 24 uur.
 
 >[!TIP]
 >
->Raadpleeg het document voor meer informatie over de interactie tussen Cloud Manager en de CDN en Dispatcher [Caching in AEM as a Cloud Service.](/help/implementing/dispatcher/caching.md)
+>Voor verdere details op hoe Cloud Manager en CDN met Dispatcher in wisselwerking staan, gelieve het document [ Caching in AEM as a Cloud Service te zien.](/help/implementing/dispatcher/caching.md)

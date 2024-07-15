@@ -32,10 +32,10 @@ Met AEM as a Cloud Service kunnen uw teams zich richten op innovatie, en zitten 
 
 De migratiereis naar Cloud Service omvat de volgende fasen:
 
-* Bepaal om te beginnen of uw implementatie klaar is om naar AEM as a Cloud Service te worden verplaatst met de [Gereedheidsfase](/help/journey-migration/readiness.md). In deze fase moet u zich ook vertrouwd maken met de veranderingen die AEM as a Cloud Service heeft geïntroduceerd.
-* Maak vervolgens uw code en inhoud klaar met de [Implementatiefase](/help/journey-migration/implementation.md). In deze fase verkent u de Adobe voor het gereedschap om de overstap naar de cloud te vereenvoudigen.
-* Nadat alles op zijn plaats is, kunt u de migratie met uitvoeren [GoLive-fase](/help/journey-migration/go-live.md).
-* Tot slot moet u controleren op problemen en de prestaties verbeteren nadat de migratie is voltooid, in het dialoogvenster [Post Go-live-fase](/help/journey-migration/post-go-live.md).
+* Begin door te bepalen als uw plaatsing klaar is om aan AEM as a Cloud Service met de [ Fase van de Bereidheid ](/help/journey-migration/readiness.md) worden bewogen. In deze fase moet u zich ook vertrouwd maken met de veranderingen die AEM as a Cloud Service heeft geïntroduceerd.
+* Daarna, maak uw code en inhoudswolk klaar met de [ Fase van de Implementatie ](/help/journey-migration/implementation.md). In deze fase verkent u de Adobe voor het gereedschap om de overstap naar de cloud te vereenvoudigen.
+* Nadat alles op zijn plaats is, kunt u de migratie met de [ gaan-Levende Fase ](/help/journey-migration/go-live.md) uitvoeren.
+* Tot slot zorg ervoor om voor kwesties te controleren en prestaties te verbeteren nadat de migratie volledig is, in de [ Post Go-live Fase ](/help/journey-migration/post-go-live.md).
 
 In onderstaande afbeelding ziet u een grote voorstelling van de aanbevolen overgang naar AEM as a Cloud Service.
 
@@ -56,8 +56,8 @@ U kunt ook het onderstaande diagram raadplegen voor een gedetailleerdere, gedeta
 
 Naast de stappen die in deze reis worden beschreven, biedt Adobe Cloud Acceleration Manager, een cloudgebaseerde toepassing die is ontworpen om uw IT-teams te begeleiden tijdens de transitietraject, van planning tot live gaan met Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen best practices, tips, documentatie en tools voor de Adobe in elke fase van de reis naar AEM als Cloud Service.
 
-U kunt de [Cloud Acceleration Manager-documentatie](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) of een [inleidende video](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) om uw migratiereis te beginnen.
+U kunt de [ documentatie van Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) raadplegen of op een [ inleidende video ](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) letten om uw migratiereis te beginnen.
 
 ## Volgende functies {#what-is-next}
 
-Bedankt dat je aan de slag bent gegaan met je AEM Cloud Service-migratiereis! Nu u dit document leest, kunt u de snelheid van de [Gereedheidsfase](/help/journey-migration/readiness.md), waarmee u kunt bepalen of uw implementatie klaar is om naar AEM as a Cloud Service te worden verplaatst.
+Bedankt dat je aan de slag bent gegaan met je AEM Cloud Service-migratiereis! Nu u dit document leest zou u aan snelheid met de [ fase van de Bereidheid ](/help/journey-migration/readiness.md) moeten krijgen, die u zal helpen bepalen of uw plaatsing klaar is om aan AEM as a Cloud Service te worden verplaatst.

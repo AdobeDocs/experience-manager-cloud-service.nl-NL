@@ -1,52 +1,52 @@
 ---
 title: Ondersteunde bestandsindelingen
-description: Ondersteunde bestandsindelingen voor de verschillende gebruiksgevallen van [!DNL Assets View]
+description: Ondersteunde bestandsindelingen voor de verschillende gebruiksgevallen van  [!DNL Assets View]
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
 source-git-commit: b4b397a09960f507df1daa0cf6f5dc49d6b286c6
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 1%
+source-wordcount: '508'
+ht-degree: 0%
 
 ---
 
-# Bestandsindelingen worden ondersteund in [!DNL Assets View] {#file-format-support}
+# Ondersteuning voor bestandsindelingen in [!DNL Assets View] {#file-format-support}
 
 [!DNL Assets View] ondersteunt een groot aantal bestandsindelingen en elke functie biedt verschillende ondersteuning voor verschillende bestandstypen.
 
-* ![pictogram type afbeeldingsbestand](assets/image-icon.svg) Afbeeldingen: JPG, PNG, GIF, TIFF en andere
-* ![creative cloudtype, pictogram](assets/creative-cloud-files.svg) Creative Cloud-bestanden: PSD, AI en INDD
-* ![cameratype, pictogram](assets/camera-icon.svg) Camera Raw bestanden: CR2/CR3, NEF, SRW/SRF en andere
-* ![pictogram documenttype](assets/document-icon.svg) Documenten: DOCX, PDF, PPTX en XLSX
-* ![pictogram videobestandstype](assets/video-icon.svg) Video&#39;s: MP4
+* ![ het type van beelddossier pictogram ](assets/image-icon.svg) Beelden: JPG, PNG, GIF, TIFF, en anderen
+* ![ creatieve wolkentypepictogram ](assets/creative-cloud-files.svg) dossiers van het Creative Cloud: PSD, AI, en INDD
+* ![ het pictogram van het cameratype ](assets/camera-icon.svg) Camera Raw dossiers: CR2/CR3, NEF, SRW/SRF en anderen
+* ![ het type van documentdossier pictogram ](assets/document-icon.svg) Documenten: DOCX, PDF, PPTX, en XLSX
+* ![ het type van videodossier pictogram ](assets/video-icon.svg) Video&#39;s: MP4
 
-[!DNL Assets View] ondersteunt elke binaire bestandsindeling met basisservices, zoals opslaan, uploaden, kopiëren, verplaatsen, verwijderen en toevoegen van metagegevens.
+[!DNL Assets View] ondersteunt elke binaire bestandsindeling met basisservices, zoals opslag, uploaden, kopiëren, verplaatsen, verwijderen en toevoegen van metagegevens.
 
-[!DNL Assets View] ondersteunt ook Camera RAW-bestanden van een groot aantal toonaangevende camerafabrikanten, waaronder Canon (CR2/CR3), Nikon (NEF), Sony (SRW/SRF), Fujifilm (RAF), Olympus (ORF) en andere, aangedreven door Adobe Camera Raw.
+[!DNL Assets View] biedt ook ondersteuning voor Camera RAW-bestanden van een groot aantal toonaangevende camerafabrikanten, waaronder Canon (CR2/CR3), Nikon (NEF), Sony (SRW/SRF), Fujifilm (RAF), Olympus (ORF) en andere, aangedreven door Adobe Camera Raw.
 
 De verschillende bestandstypen bieden verschillende mate van ondersteuning voor de gebruiksgevallen en -functies, zoals hieronder wordt beschreven. Gebruik de legenda om het steunniveau te begrijpen.
 
 | Ondersteuningsniveau | Beschrijving |
 |-------------------|-------------------------|
 | ✓ | Ondersteund |
-| ✓ ‡ | voorwaardelijk ondersteund |
-| − | Niet van toepassing |
+| ✓ ‡ | Voorwaardelijk ondersteund |
+| - | Niet van toepassing |
 
 ## Elementen toevoegen, uploaden en weergeven {#support-to-upload-view}
 
 <!-- TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
 -->
 
-| Type element | [Bladeren](/help/assets/navigate-view.md) | Kopiëren | [Uploaden](/help/assets/add-delete.md) | Maken | [Verwijderen](/help/assets/add-delete.md#delete-assets) | Details | Zoomen op afbeelding | [Onlangs bekeken](/help/assets/navigate-view.md) |
+| Type element | [ doorbladeren ](/help/assets/navigate-view.md) | Kopiëren | [ uploadt ](/help/assets/add-delete.md) | Maken | [ Schrapping ](/help/assets/add-delete.md#delete-assets) | Details | Zoomen op afbeelding | [ onlangs Bekeken ](/help/assets/navigate-view.md) |
 |-------------------|----------|----------|----------|----------|----------|-------------------|------------|-----------------|
-| Rasterafbeeldingen | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| RAW-bestanden | ✓ | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| Mappen | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
-| MP4-video&#39;s | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
-| PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
-| PSD, AI en INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
-| Overige binaire bestanden | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
+| Rasterafbeeldingen | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ |
+| RAW-bestanden | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ |
+| Mappen | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| MP4-video&#39;s | ✓ | ✓ | ✓ | - | ✓ | ✓ ‡ | - | ✓ |
+| PDF | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | ✓ |
+| PSD, AI en INDD | ✓ | ✓ | ✓ | - | ✓ | ✓ ‡ | - | ✓ |
+| Overige binaire bestanden | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | ✓ |
 
 <!-- Hiding CC Libraries (considered beta) as per PM feedback.
 | CC Libraries  | &#10003; | &minus;  | &#10003; | &#10003; | &#10003; | &#10003; | &minus;    | &minus;         |
@@ -54,54 +54,54 @@ De verschillende bestandstypen bieden verschillende mate van ondersteuning voor 
 
 ## Elementen zoeken, gebruiken en bewerken {#support-to-search-use-edit}
 
-| Type element | [Downloaden](/help/assets/manage-organize.md#download) | Slepen en neerzetten | [Afbeeldingseditor](/help/assets/edit-images.md) | [Zoeken](/help/assets/search.md) | [Slimme tags](/help/assets/metadata.md#tags) | [Naam wijzigen](/help/assets/manage-organize.md) | [Versies](/help/assets/manage-organize.md#versions-of-assets) |
+| Type element | [ Download ](/help/assets/manage-organize.md#download) | Slepen en slepen | [ redacteur van het Beeld ](/help/assets/edit-images.md) | [Zoeken](/help/assets/search.md) | [ Slimme Markeringen ](/help/assets/metadata.md#tags) | [ anders noemen ](/help/assets/manage-organize.md) | [ Versies ](/help/assets/manage-organize.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | Rasterafbeeldingen | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW-bestanden | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Mappen | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
-| Video&#39;s | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| CC-bibliotheken | − | − | − | − | − | ✓ | ✓ |
-| PDF | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| PSD | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| AI en INDD | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
-| Overige binaire bestanden | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
+| RAW-bestanden | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Mappen | ✓ | ✓ | - | ✓ | - | ✓ | ✓ |
+| Video&#39;s | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ |
+| CC Libraries | - | - | - | - | - | ✓ | ✓ |
+| PDF | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ |
+| PSD | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ |
+| AI en INDD | ✓ | ✓ | - | ✓ | - | ✓ | ✓ |
+| Overige binaire bestanden | ✓ | ✓ | - | ✓ | - | ✓ | ✓ |
 
 
 ## Elementen controleren en samenwerken {#support-to-review-collaborate}
 
-| Type element | Annoteren | Opmerking | Taken en revisie maken |
+| Type element | Annoteren | Opmerking | Taken maken en revisie uitvoeren |
 |---------------|----------|----------|-------------------------|
 | Rasterafbeeldingen | ✓ | ✓ | ✓ |
 | RAW-bestanden | ✓ | ✓ | ✓ |
-| Mappen | − | − | − |
-| Video&#39;s | − | ✓ | ✓ |
-| CC-bibliotheken | − | − | − |
-| PDF | − | ✓ | ✓ |
-| PSD, AI en INDD | − | ✓ | ✓ |
-| Overige binaire bestanden | − | ✓ | ✓ |
-| DOC | − | ✓ | ✓ |
-| DOCX | − | ✓ | ✓ |
-| PPT | − | ✓ | ✓ |
-| PPTX | − | ✓ | ✓ |
-| XLS | − | ✓ | ✓ |
-| XLSX | − | ✓ | ✓ |
-| TXT | − | ✓ | ✓ |
-| RTF | − | ✓ | ✓ |
+| Mappen | - | - | - |
+| Video&#39;s | - | ✓ | ✓ |
+| CC Libraries | - | - | - |
+| PDF | - | ✓ | ✓ |
+| PSD, AI en INDD | - | ✓ | ✓ |
+| Overige binaire bestanden | - | ✓ | ✓ |
+| DOC | - | ✓ | ✓ |
+| DOCX | - | ✓ | ✓ |
+| PPT | - | ✓ | ✓ |
+| PPTX | - | ✓ | ✓ |
+| XLS | - | ✓ | ✓ |
+| XLSX | - | ✓ | ✓ |
+| TXT | - | ✓ | ✓ |
+| RTF | - | ✓ | ✓ |
 
 ## Overige taken voor vermogensbeheer {#support-to-manage-assets}
 
-| Type element | [Metagegevens](/help/assets/metadata.md) | [Uitvoeringen](/help/assets/add-delete.md#renditions) | [Prullenbak](/help/assets/add-delete.md#delete-assets) | Kopiëren | Verplaatsen |
+| Type element | [ Metagegevens ](/help/assets/metadata.md) | [ Vertoningen ](/help/assets/add-delete.md#renditions) | [ Afval ](/help/assets/add-delete.md#delete-assets) | Kopiëren | Verplaatsen |
 |---------------|-------------------|------------|----------|----------|----------|
 | Rasterafbeeldingen | ✓ | ✓ | ✓ | ✓ | ✓ |
 | RAW-bestanden | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Mappen | ✓ | − | ✓ | ✓ | ✓ |
-| Video&#39;s | ✓ | − | ✓ | ✓ | ✓ |
-| CC-bibliotheken | ✓ | − | − | − | − |
-| PDF | ✓ | − | ✓ | ✓ | ✓ |
-| PSD, AI en INDD | ✓ | − | ✓ | ✓ | ✓ |
-| Overige binaire bestanden | ✓ | − | ✓ | ✓ | ✓ |
+| Mappen | ✓ | - | ✓ | ✓ | ✓ |
+| Video&#39;s | ✓ | - | ✓ | ✓ | ✓ |
+| CC Libraries | ✓ | - | - | - | - |
+| PDF | ✓ | - | ✓ | ✓ | ✓ |
+| PSD, AI en INDD | ✓ | - | ✓ | ✓ | ✓ |
+| Overige binaire bestanden | ✓ | - | ✓ | ✓ | ✓ |
 
-Gebruikers van [!DNL Adobe Asset Link] kan bestanden uploaden en inchecken (een nieuwe versie uploaden) in de [!DNL Assets View] opslagplaats van de ondersteunde [!DNL Adobe Creative Cloud] bureaubladtoepassingen.
+Gebruikers van [!DNL Adobe Asset Link] kunnen bestanden uploaden en inchecken (een nieuwe versie uploaden) in de [!DNL Assets View] -opslagplaats vanuit de ondersteunde [!DNL Adobe Creative Cloud] -bureaubladtoepassingen.
 
 <!-- TBD: Saving the template table separately for later use.
 | Asset type    | Features |
@@ -122,8 +122,8 @@ Gebruikers van [!DNL Adobe Asset Link] kan bestanden uploaden en inchecken (een 
 
 ## Volgende stappen {#next-steps}
 
-* Feedback geven op het product met de [!UICONTROL Feedback] optie beschikbaar op de gebruikersinterface van de Mening van Activa
+* Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van Assets View
 
-* Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[

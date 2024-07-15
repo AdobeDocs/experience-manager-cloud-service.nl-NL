@@ -17,30 +17,30 @@ Repository Modernizer is een hulpprogramma dat is ontwikkeld om bestaande projec
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op hoog niveau vereist AEM een scheiding van **content** en **code** in afzonderlijke subpakketten om de splitsing tussen muteerbare en onveranderlijke inhoud te respecteren. Zie [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) voor meer informatie over de nieuwe AEM projectstructuur voor Cloud Service.
+Adobe Experience Manager as a Cloud Service voegt veel nieuwe functies en mogelijkheden toe aan uw AEM. Er zijn echter enkele wijzigingen vereist voor Adobe Experience Manager Maven-projecten om verenigbaar te zijn met AEM Cloud Service. Op een hoog niveau, vereist AEM een scheiding van **inhoud** en **code** in discrete subpackages om de scheiding tussen veranderlijke en onveranderlijke inhoud te respecteren. Zie [ AEM de Structuur van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) voor meer details over de nieuwe AEM projectstructuur voor Cloud Service.
 
 Met Repository Modernizer wordt een compatibele AEM Cloud Service-projectstructuur gemaakt door de volgende implementatiestructuur te maken:
 
-* `ui.apps` pakket implementeert naar `/apps` en bevat alle code
+* `ui.apps` -pakket wordt geïmplementeerd in `/apps` en bevat alle code
 
-* `ui.content` pakketten worden geïmplementeerd in runtime-schrijfbare gebieden (bijvoorbeeld `/content`, `/conf`, `/home`of iets anders `/apps`) en bevat alle inhoud en configuratie.
+* `ui.content` wordt geïmplementeerd in runtime schrijfbare gebieden (bijvoorbeeld `/content` , `/conf` , `/home` of iets anders `/apps` ) en bevat alle inhoud en configuratie.
 
-* `all` pakket is een containerpakket dat de subpakketten bevat `ui.apps` en `ui.content`.
+* `all` is een containerpakket dat de subpakketten `ui.apps` en `ui.content` bevat.
 
 >[!NOTE]
->De projectstructuur is gebaseerd op *Archetype 24* voor verpakkingen en hun `pom.xml/filter.xml files`. Zie [Archetype 24](https://github.com/adobe/aem-project-archetype) voor meer informatie .
+>De structuur van het Project is gebaseerd op *Archetype 24* voor pakketten en hun `pom.xml/filter.xml files`. Zie [ Archetype 24 ](https://github.com/adobe/aem-project-archetype) voor meer details.
 
 ## De Repository Modernizer gebruiken {#using-repo-modernizer}
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* Als Adobe I/O CLI: Adobe raadt aan de Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
+* Als Adobe I/O CLI: Adobe raadt u aan de Repository Modernizer te gebruiken via `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
 
-  Zie **[Git-bron: audio-cli-plugin-aem-cloud-service-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** zodat u leert installeren en gebruiken de stop.
+  Zie **[Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** zodat kunt u leren hoe te om de stop te installeren en te gebruiken.
 
 * Als standalone nut: De Modernizer van de Bewaarplaats kan ook als standalone nut worden uitgevoerd.
 
-  Zie **[Git Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** zodat u kunt leren hoe u dit gereedschap kunt gebruiken.
+  Zie **[Middel van de Git: Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** zodat kunt u leren hoe te om dit hulpmiddel te gebruiken.
 
   >[!NOTE]
   >

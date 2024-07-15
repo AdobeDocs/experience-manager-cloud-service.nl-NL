@@ -1,6 +1,6 @@
 ---
-title: Hoe te om een gegevensbestand met te verbinden [!DNL AEM Forms] as a Cloud Service?
-description: Haal gegevens op en sla deze op voor RESTful-webservices, SOAP-webservices en OData-services van een adaptief formulier of een AEM workflow.
+title: Hoe te om een gegevensbestand met  [!DNL AEM Forms]  as a Cloud Service te verbinden?
+description: Haal gegevens op en sla deze op voor RESTful-webservices, SOAP webservices en OData-services van een adaptief formulier of een AEM workflow.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 
 
-![Gegevensintegratie](do-not-localize/data-integeration.png)
+![ de Integratie van Gegevens ](do-not-localize/data-integeration.png)
 
 De infrastructuur van de onderneming omvat verschillende back-end systemen of gegevensbronnen zoals gegevensbestanden, Webdiensten, de diensten van REST, de diensten van OData, en de oplossingen van CRM. Samengesteld, maken zij een informatiesysteem dat gegevens aan ondernemingstoepassingen dient om zaken van dag tot dag uit te voeren. Anderzijds leggen toepassingen gegevens vast en sturen deze terug naar bijgewerkte gegevensbronnen.
 
@@ -30,9 +30,9 @@ Terwijl een verdeeld, modulair systeem zijn eigen voordelen heeft, ligt de uitda
 
 ## Overzicht van gegevensintegratie {#data-integration-overview}
 
-![aem-forms-data-integer](assets/aem-forms-data-integeration.png)
+![ aem-vormen-gegeven-integratie ](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] Dankzij gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden met [!DNL AEM Forms]. Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen. De verenigde vertegenwoordiging is gekend als model van vormgegevens (FDM), een uitbreiding van het schema JSON. De entiteiten in een formuliergegevensmodel (FDM) worden gegevensmodelobjecten genoemd. Met een formuliergegevensmodel (FDM) kunt u:
+[!DNL AEM Forms] Dankzij gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden met [!DNL AEM Forms] . Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen. De verenigde vertegenwoordiging is gekend als model van vormgegevens (FDM), een uitbreiding van het schema JSON. De entiteiten in een formuliergegevensmodel (FDM) worden gegevensmodelobjecten genoemd. Met een formuliergegevensmodel (FDM) kunt u:
 
 * Toegang tot gegevensmodelobjecten, eigenschappen en services van verbonden gegevensbronnen.
 * Objecten en eigenschappen van een aangepast gegevensmodel maken
@@ -50,7 +50,7 @@ Nadat u een formuliergegevensmodel (FDM) hebt gemaakt, kunt u dit gebruiken om:
 
 De eerste stap voor het implementeren van gegevensintegratie om Adaptief formulier naar een database te verzenden, is het identificeren en configureren van gegevensbronnen die informatie opslaan die u wilt gebruiken in Adaptief Forms. Daarna, creeert u een Model van de Gegevens van de Vorm (FDM) dat de voorwerpen, de eigenschappen, en de diensten van het gegevensmodel van één of meerdere gegevensbronnen gebruikt. U kunt Adaptief Forms maken op basis van een FDM (Form Data Model), waarbij Adaptive Form-velden zijn gebonden aan de desbetreffende gegevensbroneigenschappen.
 
-[!DNL AEM Forms] Hiermee kunt u ook een formuliergegevensmodel (FDM) maken dat onafhankelijk is van gegevensbronnen en kunt u later gegevensmodelobjecten en eigenschappen in het formuliergegevensmodel (FDM) koppelen aan of binden met gegevensbron. Hiermee worden afhankelijkheden van gegevensbronnen verwijderd terwijl u werkt aan een formuliergegevensmodel (FDM).
+Met [!DNL AEM Forms] kunt u ook een formuliergegevensmodel (FDM) maken dat onafhankelijk is van gegevensbronnen en kunt u later gegevensmodelobjecten en eigenschappen in het formuliergegevensmodel (FDM) koppelen aan of binden met gegevensbron. Hiermee worden afhankelijkheden van gegevensbronnen verwijderd terwijl u werkt aan een formuliergegevensmodel (FDM).
 
 Lees het volgende om gegevensintegratie te beginnen, te begrijpen en te implementeren:
 

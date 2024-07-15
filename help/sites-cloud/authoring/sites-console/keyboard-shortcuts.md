@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Sneltoetsen voor consoles {#keyboard-shortcuts-for-consoles}
 
-De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Assets, Users, Groepen, Projecten en Experience Fragments. Er zijn ook specifieke sneltoetsen voor de [Content Fragments-console](#keyboard-shortcuts-for-the-content-fragments-console).
+De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Assets, Users, Groepen, Projecten en Experience Fragments. Er zijn ook specifieke kortere weg voor de [ console van de Fragmenten van de Inhoud ](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | Locatie | Sneltoets | Beschrijving |
 |---|---|---|
@@ -26,8 +26,8 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Assets, Users, 
 | Console - kolomweergave | `Shift-Up/Down Arrow` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog/omlaag verplaatsen en selecteren |
 |  | `Esc` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog verplaatsen |
 | Consoles | `?` | Help bij sneltoetsen |
-|  | `/` | Invoeden [zoeken](/help/sites-cloud/authoring/search.md) |
-|  | `Alt+`&lt;`Number`> | In-/uitschakelen [spoorwegkiezer](/help/sites-cloud/authoring/basic-handling.md#rail-selector) optie voor weergave |
+|  | `/` | Roep [ onderzoek ](/help/sites-cloud/authoring/search.md) aan |
+|  | `Alt+`&lt;`Number`> | Wissel welke [ spoorselecteur ](/help/sites-cloud/authoring/basic-handling.md#rail-selector) optie om te bekijken |
 |  | ``` ` ``` | Spoorstaaf verbergen |
 |  | `e` | Bewerken |
 |  | `p` | Eigenschappen |
@@ -37,7 +37,7 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Assets, Users, 
 |  | `Backspace` | Verwijderen |
 | Eigenschappenpagina&#39;s | `Ctrl+s` | Opslaan |
 
-De belangrijkste combinaties worden vermeld met Vensters [wijzigingstoetsen](#os-specific-modifier-keys).
+De belangrijkste combinaties zijn vermeld met de 20} bepalingssleutels van Vensters ](#os-specific-modifier-keys).[
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 
@@ -64,7 +64,7 @@ Daarnaast zijn sneltoetsen voor alle landinstellingen en toetsenbordindelingen h
 >
 >AEM sneltoetsen kunnen problemen opleveren met schermlezers, bepaalde browserfuncties en andere toegankelijkheidsfuncties.
 >
->Adobe beveelt aan [AEM sneltoetsen uitschakelen](#deactivating-keyboard-shortcuts) wanneer u een schermlezer gebruikt.
+>Adobe adviseert [ onbruikbaar makend AEM toetsenbordkortere weg ](#deactivating-keyboard-shortcuts) wanneer het gebruiken van een het schermlezer.
 
 ## Sneltoetsen deactiveren {#deactivating-keyboard-shortcuts}
 
@@ -75,7 +75,7 @@ Voor gebruikers die geen sneltoetsen gebruiken of bepaalde toegankelijkheidsvere
 U kunt sneltoetsen op twee locaties deactiveren:
 
 * [Mijn voorkeuren](/help/sites-cloud/authoring/account-environment.md#my-preferences)
-* De [Help, menu](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
+* Het [ hulpmenu ](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
 
 >[!NOTE]
 >
@@ -83,8 +83,8 @@ U kunt sneltoetsen op twee locaties deactiveren:
 
 ## Sneltoetsen voor de Pagina-editor {#keyboard-shortcuts-for-the-page-editor}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing op het gebruik van consoles, andere op [pagina bewerken](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn op het gebruik van consoles van toepassing, anderen op [ pagina die ](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md) uitgeven.
 
 ## Sneltoetsen voor de console van inhoudsfragmenten {#keyboard-shortcuts-for-the-content-fragments-console}
 
-Sommige sneltoetsen zijn van toepassing op de [Content Fragments-console](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
+Sommige toetsenbordkortere weg is van toepassing op de [ console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)

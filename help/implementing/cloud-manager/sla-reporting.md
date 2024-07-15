@@ -19,41 +19,41 @@ Leer hoe u de prestaties van uw productie AEM omgeving kunt bekijken ten opzicht
 
 ## Inleiding {#introduction}
 
-SLA-rapporteringsgegevens zijn beschikbaar voor elk productieprogramma via **Rapporten** tab. Voer de volgende stappen uit om toegang te krijgen.
+SLA die gegevens melden is beschikbaar voor elk productieprogramma via de **Rapporten** tabel. Voer de volgende stappen uit om toegang te krijgen.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Navigeer met het zijnavigatievenster naar het **Rapporten** van de **Overzicht** pagina.
+1. Gebruikend het paneel van de zijnavigatie, navigeer aan het **lusje van Rapporten** van de **pagina van het Overzicht**.
 
 1. Klik op het gewenste jaar om de SLA-gegevens te zien.
 
-![SLA-grafiekvoorbeeld](assets/sla-reporting-1.png)
+![ SLA grafiekvoorbeeld ](assets/sla-reporting-1.png)
 
 Plaats de cursor op een gegevenspunt om de specifieke waarden voor dat punt weer te geven.
 
-![Gedetailleerde gegevens weergeven](assets/sla-reporting-b.png)
+![ tonend gedetailleerde gegevens ](assets/sla-reporting-b.png)
 
 ## SLA-waarden {#sla-metrics}
 
 De grafiek van het geselecteerde jaar bevat verschillende gegevenssets.
 
-* **Tier-contract publiceren** - Dit is de SLA die is gedefinieerd in uw contract met Adobe voor de publicatielijst.
+* **de Rij van Publish Contract** - dit is SLA die in uw contract met Adobe voor publiceert rij wordt bepaald.
 
-* **Reële reeks publiceren** - Dit is de gemeten uptime van de productie, waarbij voorvallen in de lijst met productielijnen worden gepubliceerd die worden veroorzaakt door Adoben of verkopers van Adoben.
+* **Echte Rij van Publish** - dit is gemeten uptime van de productie publiceren de incidenten van de rij die door de verkopers van de Adobe of van de Adobe worden veroorzaakt.
 
-* **Tier-contract voor auteur** - Dit is SLA die in uw contract met Adobe voor de auteursrij wordt bepaald.
+* **de Rij van de Auteur van het Eind** - dit is SLA die in uw contract met Adobe voor de auteursrij wordt bepaald.
 
-* **Auteur-reeks werkelijk** - Dit is de gemeten uptime van de productiefabrikant van de laag die door Adobe of de verkopers van de Adobe wordt veroorzaakt.
+* **Echte de Reeks van de Auteur van de Auteur** - dit is de gemeten uptime van de de factoring van de productiepauteur incidenten die door de verkopers van de Adobe of van de Adobe worden veroorzaakt.
 
 ## Gebeurtenisanalyse {#event-analysis}
 
-De **Gebeurtenisanalyse** in het gedeelte onder de grafiek wordt de reeks incidenten weergegeven die zich tijdens het geselecteerde jaar voor het programma hebben voorgedaan.
+De **sectie van de Analyse van de Gebeurtenis** onder de grafiek toont de reeks incidenten die voor het programma tijdens het geselecteerde jaar voorkwamen.
 
 Elk van de incidenten heeft een tijdbereik, een oorzaak en een reeks opmerkingen.
 
-![Voorbeeld van gebeurtenisanalyse](assets/sla-reporting-c.png)
+![ Voorbeeld van de Analyse van de Gebeurtenis ](assets/sla-reporting-c.png)
 
 ## Interval vernieuwen {#refresh}
 

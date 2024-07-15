@@ -20,13 +20,13 @@ ht-degree: 0%
 >title="Functionele tests"
 >abstract="Leer meer over de drie verschillende soorten functionele tests die in het AEM as a Cloud Service-implementatieproces zijn ingebouwd om de kwaliteit en betrouwbaarheid van uw code te garanderen."
 
-Meer informatie over de kwaliteitskates in het dialoogvenster [AEM as a Cloud Service-implementatieproces](/help/implementing/cloud-manager/deploy-code.md), de verschillende ingebouwde soorten functionele tests, hoe u kunt bijdragen en hoe u deze optimaal kunt gebruiken in de context van een algemene teststrategie.
+Leer over de kwaliteitshates beschikbaar in het [ plaatsingsproces van AEM as a Cloud Service ](/help/implementing/cloud-manager/deploy-code.md), de verschillende soorten functionele ingebouwde tests, hoe u kunt bijdragen en hoe u het beste gebruik van hen in de context van een algemene het testen strategie kunt maken.
 
 ## Overzicht
 
-Het volgende diagram geeft een overzicht op hoog niveau van de beschikbare pijpleidingen in de context van een algemene teststrategie en de [AEM as a Cloud Service-implementatieproces](/help/implementing/cloud-manager/deploy-code.md).
+Het volgende diagram verstrekt een overzicht op hoog niveau van de beschikbare pijpleidingen in de context van een algemene het testen strategie en het [ plaatsingsproces van AEM as a Cloud Service ](/help/implementing/cloud-manager/deploy-code.md).
 
-![AEM Cloud Service-implementatiekwaliteitspoorten](assets/functional-testing/quality-gates-compact.svg)
+![ de plaatsen van de plaatsingskwaliteit van AEM Cloud Service gates ](assets/functional-testing/quality-gates-compact.svg)
 
 ## Doel
 
@@ -40,41 +40,42 @@ Het is belangrijk om op te merken dat deze kwaliteitspoorten niet bedoeld zijn a
 
 ## Kwaliteitsgates
 
-Het volgende diagram geeft een gedetailleerd overzicht van de beschikbare kwaliteitskates en het gebruik ervan in de algemene teststrategie en de [AEM as a Cloud Service-implementatieproces](/help/implementing/cloud-manager/deploy-code.md).
+Het volgende diagram verstrekt een gedetailleerde mening van beschikbare kwaliteitskates en hun gebruik in de algemene het testen strategie en het [ de plaatsingsproces van AEM as a Cloud Service ](/help/implementing/cloud-manager/deploy-code.md).
 
-![AEM Cloud Service-implementatiekwaliteitspoorten](assets/functional-testing/quality-gates-overview.svg)
+![ de plaatsen van de plaatsingskwaliteit van AEM Cloud Service gates ](assets/functional-testing/quality-gates-overview.svg)
 
 ### Door de klant geleverde kwaliteitsbonnen
 
-|                               | Eenheidstests | Aangepast<br/> Functionele tests | Aangepast<br/> UI-tests | Klant<br/> Validaties | Handmatig<br/> Testen |
+|                               | Eenheidstests | Aangepaste <br/> functionele tests | Aangepaste <br/> UI-tests | Klant <br/> Validaties | Handmatig <br/> testen |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Productiepijpleiding** | Ja<br/>Blokkeren<br/> | Ja<br/>Blokkeren<br/>60m Time-out | Ja<br/>Blokkeren<br/>Tijdslimiet van 30 m | Nee | Nee |
-| **Niet-productiepijpleiding** | Ja<br/>Blokkeren<br/> | Inschakelen<br/>Blokkeren<br/>60m Time-out | Inschakelen<br/>Blokkeren<br/>Tijdslimiet van 30 m | Nee | Nee |
-| **Interne validatie Adobe** | Ja<br/>Blokkeren<br/> | Ja<br/>Blokkeren<br/>60m Time-out | Ja<br/>Blokkeren<br/>Tijdslimiet van 30 m | Nee | Nee |
-| **Klant-CI/CD** | Ja | Ja | Ja | Ja | Ja |
-| **Lokale ontwikkelaar van klant** | Ja | Ja | Ja | Ja | Ja |
+| **de Pijpleiding van de Productie** | Ja <br/> het Blokkeren <br/> | Ja <br/> het Blokkeren <br/> 60m Onderbreking | Ja <br/> het Blokkeren <br/> Onderbreking 30m | Nee | Nee |
+| **niet-Productie Pijpleiding** | Ja <br/> het Blokkeren <br/> | Opt-binnen <br/> het Blokkeren <br/> 60m Onderbreking | Opt-binnen <br/> het Blokkeren <br/> 30m Onderbreking | Nee | Nee |
+| **interne Bevestiging van de Adobe** | Ja <br/> het Blokkeren <br/> | Ja <br/> het Blokkeren <br/> 60m Onderbreking | Ja <br/> het Blokkeren <br/> Onderbreking 30m | Nee | Nee |
+| **Klant CI/CD** | Ja | Ja | Ja | Ja | Ja |
+| **Lokale Ontwikkelaar van de Klant** | Ja | Ja | Ja | Ja | Ja |
 
 ### Eenheidstest
 
 U wordt aangemoedigd om de eenheidstests voor uw AEM toepassing te verstrekken, die de basis van elke teststrategie vormen. Ze zijn bedoeld om snel en vaak te draaien en snel feedback te geven. Ze zijn nauw geïntegreerd in de workflows voor ontwikkelaars, uw eigen CI/CD en de implementatiepijplijnen voor de AEM cloudservice.
 
-Ze worden geïmplementeerd met JUnit en uitgevoerd met Maven. Zie [kernmodule van het AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) voor een voorbeeldeenheidstest voor AEM en aan de slag gaan.
+Ze worden geïmplementeerd met JUnit en uitgevoerd met Maven. Zie [ kernmodule van het AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) voor een test van de voorbeeldeenheid voor AEM en begonnen worden.
 
 ### Codekwaliteit
 
 Deze kwaliteitspoort is geconfigureerd buiten de box en voert statische codeanalyse uit op uw AEM toepassingscode.
 
-Zie [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md) en [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md) voor meer informatie .
+Zie [ het Testen van de Kwaliteit van de Code ](/help/implementing/cloud-manager/code-quality-testing.md) en [ de kwaliteitsregels van de Code van de Douane ](/help/implementing/cloud-manager/custom-code-quality-rules.md) voor meer informatie.
 
 ### Producttests
 
 De functionele tests van het product zijn een reeks stabiele HTTP integratietests (ITs) van kernfunctionaliteit in AEM zoals creatie en replicatietaken. De Adobe verstrekt en handhaaft hen uit-van-de-doos. Ze zijn bedoeld om te voorkomen dat wijzigingen in aangepaste toepassingscode worden geïmplementeerd als deze de kernfunctionaliteit van het AEM verbreekt.
 
-Ze worden geïmplementeerd met Junit, worden uitgevoerd met Maven en gebruiken de officiële [Clients AEM testen](https://github.com/adobe/aem-testing-clients). De producttestsuite wordt als een [open-source-project](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), volgt de beste praktijken en kan als een goed uitgangspunt voor de implementatie van uw tests worden beschouwd.
+Zij worden uitgevoerd gebruikend Junit, in werking gesteld gebruikend Maven en gebruiken officiële [ AEM het Testen Clients ](https://github.com/adobe/aem-testing-clients). De testsuite voor het product wordt onderhouden zoals
+een [ open-bronproject ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke), volgt best-practices en kan als een goed uitgangspunt voor de implementatie van uw tests worden beschouwd.
 
 ### Aangepaste functionele tests
 
-Zoals de producttests, zijn de functionele tests van de klant de integratietests van HTTP (ITs) en worden zo goed uitgevoerd gebruikend Junit, uitgevoerd gebruikend Maven en gebouwd bovenop de officiële [Clients AEM testen](https://github.com/adobe/aem-testing-clients).
+Als de producttests, zijn de klanten functionele tests integratietests van HTTP (ITs) en worden zo goed uitgevoerd gebruikend Junit, uitgevoerd gebruikend Maven en gebouwd bovenop de officiële [ AEM het Testen Clients ](https://github.com/adobe/aem-testing-clients).
 
 >[!NOTE]
 >
@@ -82,9 +83,9 @@ Zoals de producttests, zijn de functionele tests van de klant de integratietests
 
 Om pijplijnlooppas efficiënt te houden, adviseren wij zich op zeer belangrijke eigenschappen en belangrijkste gebruikersinteractiestromen te concentreren. Een runtime van ~15 minuten of minder voor functionele tests wordt aanbevolen. Volledige functionele testreeksen die niet in deze kwaliteitspoort passen, worden aanbevolen als onderdeel van algemene klantvalideringsleidingen tijdens de ontwikkelingscyclus van de klant.
 
-Zie [open-sourced producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) of de [it.tests module van de Archetype van de Projecten van de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) voor voorbeelden.
+Zie [ open-sourced producttests ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) of de [ it.tests module van het Archetype van de AEM Projecten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) voor voorbeelden.
 
-Zie [Functionele Java-tests](/help/implementing/cloud-manager/java-functional-testing.md) voor meer informatie .
+Zie [ Functionele Tests van Java ](/help/implementing/cloud-manager/java-functional-testing.md) voor meer informatie.
 
 ### Aangepaste UI-tests
 
@@ -96,21 +97,21 @@ De tests worden verpakt in een Docker-afbeelding - ontworpen om zo vluchtig moge
 >
 >Aangepaste UI-tests worden uitgevoerd in de productie- en niet-productie (opt-in) pijpleidingen die worden gebruikt door de implementatie van de AEM toepassing en AEM productpush-updates, en vormen daarom een belangrijke bijdrage aan het goed functioneren van uw toepassing en het verhogen van de veiligheid van de release. De tests van de klantengebruikersinterface worden ook uitgevoerd in interne pre-releasebevestigingspijpleidingen voor elke klant, die hulp vroege terugkoppelt verstrekt.
 >
->Niet-seleniumcontainers moeten tests uitvoeren met een HTTP-proxy op basis van de omgevingsvariabelen in de [Sectie voor testen gebruikersinterface.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>De niet-Seleniumcontainers zouden tests moeten uitvoeren gebruikend een volmacht van HTTP die op de milieuvariabelen in de [ wordt gebaseerd UI die Sectie testen.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 Om pijpleiding efficiënte uitvoeringen te houden, adviseren wij zich op zeer belangrijke eigenschappen en belangrijkste gebruikersinteractiestromen te concentreren. Volledige UI-testsuites die niet in deze kwaliteitspoort passen, worden aanbevolen als onderdeel van algemene klantvalidatiepijpleidingen tijdens de ontwikkelingsstroom van de klant.
 
-Zie [open-sourced voorbeeldtests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) of de [ui.tests module van de Archetype van de Projecten van de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) voor voorbeelden.
+Zie [ open-sourced voorbeeldtests ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) of de [ ui.tests module van het Archetype van de Projecten van de AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) voor voorbeelden.
 
-Zie [Aangepaste UI-tests](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) voor meer informatie .
+Zie [ het Testen van UI van de Douane ](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) voor meer informatie.
 
 ### Experience Audit
 
-Het kwaliteitsgate van de ervaringscontrole wordt uitgevoerd [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) op de website van de klant.
+De gate van de ervaringscontrole van de kwaliteit voert [ Lighthouse van Google ](https://developer.chrome.com/docs/lighthouse/overview/) controles tegen de webpagina van de klant uit.
 
-Deze kwaliteitspoort wordt geleverd door AEM kant-en-klaar, maar blokkeert de uitrol van pijpleidingen niet. Standaard wordt een controle uitgevoerd op de hoofdpagina (`/`) van het publicatieexemplaar wordt uitgevoerd. U kunt bijdragen door maximaal 25 douanewegen te vormen die voor controles worden overwogen.
+Deze kwaliteitspoort wordt geleverd door AEM kant-en-klaar, maar blokkeert de uitrol van pijpleidingen niet. Door gebrek, wordt een controle tegen de wortelpagina (`/`) van de publiceer instantie uitgevoerd. U kunt bijdragen door maximaal 25 douanewegen te vormen die voor controles worden overwogen.
 
-Zie [Ervaring controleren testen](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
+Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie.
 
 ### Klantenvalidaties
 
@@ -118,7 +119,7 @@ De kwaliteitsgate voor klantvalidaties is een plaatsaanduiding voor de eigen tes
 
 Hier kunt u de gewenste gereedschappen en frameworks kiezen. In tegenstelling tot de tests van de klantenfunctie en van de douane UI, zijn er geen aan AEM as a Cloud Service verwante grenzen, en wij adviseren daarom om de functie en UI het testen hier uit te voeren.
 
-Terwijl u om het even welk hulpmiddel en kader vrij kunt kiezen, adviseren wij u op HTTP-Gebaseerde integratietests en tests UI met de hulpmiddelen en het kader beschikbaar in de de kwaliteitsproeven van de douane functionele tests en van de douanetest UI. We raden u aan om integratie [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) in uw lokale teststrategie om zo dicht mogelijk bij AEM cloudomgevingen te testen.
+Terwijl u om het even welk hulpmiddel en kader vrij kunt kiezen, adviseren wij u op HTTP-Gebaseerde integratietests en tests UI met de hulpmiddelen en het kader beschikbaar in de de kwaliteitsproeven van de douane functionele tests en van de douanetest UI. Wij adviseren het integreren [ Snelle Milieu&#39;s van de Ontwikkeling (RDE) ](/help/implementing/developing/introduction/rapid-development-environments.md) in uw lokale testende strategie om zo dicht mogelijk aan AEM wolkenmilieu&#39;s te testen.
 
 ### Handmatig testen
 

@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Voorvertoning met tijdverdraaiing {#preview-with-timewarp}
 
-[Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) kan worden gebruikt met pagina&#39;s die ook in een lancering worden omvat:
+[ Timewarp ](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) kan met pagina&#39;s worden gebruikt die ook inbegrepen in een lancering zijn:
 
-1. Als u **Timewarp** in de pagina-editor wordt u om een datum gevraagd. Selecteer een datum die na de promotiedatum van de introductie valt:
-   ![Navigeren door Starten vanuit de Pagina-editor](/help/sites-cloud/authoring/assets/launches-timewarp-01.png)
+1. Wanneer het selecteren van **wijze Tijdverdraaiing** van de paginaredacteur, wordt u gevraagd een datum. Selecteer een datum die na de promotiedatum van de introductie valt:
+   ![ navigeren lancering van de Redacteur van de Pagina ](/help/sites-cloud/authoring/assets/launches-timewarp-01.png)
 
 1. De inhoud die op die datum van toepassing is, wordt weergegeven:
-   ![Navigeren door Starten vanuit de Pagina-editor](/help/sites-cloud/authoring/assets/launches-timewarp-02.png)
+   ![ navigeren lancering van de Redacteur van de Pagina ](/help/sites-cloud/authoring/assets/launches-timewarp-02.png)
 
    >[!NOTE]
    >

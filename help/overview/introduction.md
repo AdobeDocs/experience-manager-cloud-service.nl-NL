@@ -17,9 +17,9 @@ ht-degree: 40%
 
 Adobe Experience Manager (AEM) as a Cloud Service is het nieuwste aanbod van de AEM productlijn, waardoor u uw klanten kunt blijven voorzien van persoonlijke, contentgestuurde ervaringen. Het biedt cloudnative flexibiliteit om tijd aan waarde te versnellen en is uitbreidbaar om aan uw unieke bedrijfsvereisten te voldoen. U kunt op vroegere investeringen en innovaties voortbouwen door al uw gebruiksgevallen en functionaliteit te behouden en uit te breiden.
 
-AEM as a Cloud Service laat u op de AEM toepassingen op een cloud-inheemse manier van kapitaliseren, zodat u kunt:
+Met AEM as a Cloud Service kunt u in de eigen cloud gebruikmaken van de AEM toepassingen, zodat u:
 
-* Schaal uw DevOps-inspanningen met Cloud Manager: CI/CD-framework, autoscaling, API-connectiviteit, flexibele implementatiemodi, gates voor codekwaliteit, transparantie van de servicelevering en updates met instructies.
+* Schaal uw DevOps-inspanningen met Cloud Manager: CI/CD-framework, autoscaling, API-connectiviteit, flexibele implementatiemodi, gates voor de kwaliteit van code, transparantie van de servicelevering en updates met instructies.
 
 * Ontwikkelaars kunnen automatisering toevoegen aan de ontwikkelingspraktijken van toepassingen.
 
@@ -31,11 +31,11 @@ AEM as a Cloud Service laat u op de AEM toepassingen op een cloud-inheemse manie
 
 * Zorg voor maximale veerkracht en efficiëntie, ondersteund door geoptimaliseerde prestatietopologieën.
 
-* Profiteer van de diepgaande integratie van AEM as a Cloud Service met de Adobe Experience Cloud om klanten betere ervaringen te bieden met producten voor online marketing en webanalyse.
+* Profiteer van de uitgebreide integratie van AEM as a Cloud Service met de Adobe Experience Cloud om klanten betere ervaringen te bieden met online marketing en webanalyseproducten.
 
 * Gebruik gereedschappen die u helpen de migratietaken te versnellen, zoals het vernieuwen van code, de overdracht van inhoud en nog veel meer.
 
-Met AEM as a Cloud Service,
+Met AEM as a Cloud Service
 
 * Ontwikkelaars kunnen zich concentreren op het configureren en uitbreiden van AEM met het nieuwe, op cloud gebaseerde ontwikkelingspatroon.
 
@@ -75,11 +75,11 @@ AEM bereikt deze doelstellingen door de belangrijkste kenmerken van moderne clou
 * [Opvallende wijzigingen in AEM as a Cloud Service (opmerkingen bij de release)](/help/release-notes/aem-cloud-changes.md)
 * [Opvallende wijzigingen in AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Opvallende wijzigingen in AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
-* [Inleiding tot elementen as a Cloud Service](/help/assets/overview.md)
+* [Introductie van Assets as a Cloud Service](/help/assets/overview.md)
 * [Tutorials voor Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 >[!TIP]
 >
->Als u een overzicht hebt van AEM as a Cloud Service, kunt u snel aan boord gaan door de [Onboarding Journaal](/help/journey-onboarding/overview.md).
+>Zodra u een overzicht van AEM as a Cloud Service hebt, kunt u aan boord snel door de [ Onboarding Reis ](/help/journey-onboarding/overview.md) te herzien.
 >
->Hebt u al een functie voor het testen van AEM? Installeer de [AEM Reference Demos Add-on](/help/journey-sites/demos-add-on/overview.md) om AEM krachtige functies te verkennen aan de hand van rijke voorbeelden.
+>Hebt u al een functie voor het testen van AEM? Installeer de [ AEM toe:voegen-aan van de Demo van de Verwijzing ](/help/journey-sites/demos-add-on/overview.md) om AEM het gebruiken van rijke voorbeelden te onderzoeken krachtige eigenschappen.

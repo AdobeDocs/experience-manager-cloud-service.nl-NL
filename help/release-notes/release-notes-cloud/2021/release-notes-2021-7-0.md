@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release 2021.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Opmerkingen bij de release 2021.7.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Nota's van de versie voor 2021.7.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2021.7.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -21,48 +21,48 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [Recente documentatieupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor meer informatie over documentatie-updates die niet rechtstreeks verband houden met een release.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2021.7.0) is 29 juli 2021.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release (2021.7.0) is 29 juli 2021.
 De volgende release (2021.8.0) vindt plaats op 26 augustus 2021.
 
 ## Video vrijgeven {#release-video}
 
-Kijk eens naar de [Overzicht release juli 2021](https://video.tv.adobe.com/v/335580) video voor een overzicht van de toegevoegde functies.
+Heb een blik bij de [ juli 2021 video van het Overzicht van de Versie van de Versie ](https://video.tv.adobe.com/v/335580) voor een samenvatting van de toegevoegde eigenschappen.
 
 ## Experience Manager Foundation as a Cloud Service {#foundation}
 
 ### Wat is er nieuw? {#what-is-new-foundation}
 
-* Meer flexibele configuratie van de Verzender: De projecten kunnen gemakkelijker worden georganiseerd. U kunt nu bijvoorbeeld meerdere herschrijfregelbestanden opnemen die de sitestructuur weerspiegelen. [Meer informatie over](/help/implementing/dispatcher/disp-overview.md#validation-debug) deze flexibele wijze, met inbegrip van hoe te om uw configuratie van de Verzender te structureren zodat kunt u uit het voordeel halen.
-* De boomreplicatie UI onder het &quot;Distribute&quot;lusje van de replicatieagent zou moeten worden beschouwd als afgekeurd en werd verwijderd na 30 September, 2021. [Meer informatie over](/help/operations/replication.md#tree-activation) alternatieve replicatiestrategieën.
-* Bundel `org.apache.sling.datasource-1.0.4.jar` voor de steun van de Gegevensbron van Sling is verwijderd, aangezien het verouderde functionaliteit heeft en niet in gebruik door klanten is.
+* Meer flexibele Dispatcher-configuratie: projecten kunnen gemakkelijker worden georganiseerd. U kunt nu bijvoorbeeld meerdere herschrijfregelbestanden opnemen die de sitestructuur weerspiegelen. [ Leer over ](/help/implementing/dispatcher/disp-overview.md#validation-debug) deze flexibele wijze, met inbegrip van hoe te om uw configuratie van Dispatcher te structureren zodat kunt u uit het voordeel halen.
+* De boomreplicatie UI onder het &quot;Distribute&quot;lusje van de replicatieagent zou moeten worden beschouwd als afgekeurd en werd verwijderd na 30 September, 2021. [ leer over ](/help/operations/replication.md#tree-activation) alternatieve replicatiestrategieën.
+* Bundel `org.apache.sling.datasource-1.0.4.jar` voor de ondersteuning van SQL-gegevensbronnen is verwijderd, omdat deze verouderde functionaliteit heeft en niet door klanten wordt gebruikt.
 
-## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* Met de functionaliteit voor automatisering van inhoud kunt u [!DNL Experience Manager Assets] gebruiken [!DNL Adobe Creative Cloud] API&#39;s om de productie van bedrijfsmiddelen op schaal te automatiseren. Het verbetert de snelheid van de inhoud door de benodigde tijd en herhalingen aanzienlijk te verminderen om variaties van hetzelfde element te maken. Voor deze functionaliteit is geen programmering vereist en werken vanuit de DAM. Zie [variaties van elementen genereren met behulp van Creative Cloud-integratie](/help/assets/cc-api-integration.md).
+* Met de functie voor automatisering van inhoud kan [!DNL Experience Manager Assets] de API&#39;s van [!DNL Adobe Creative Cloud] gebruiken om de productie van elementen op schaal te automatiseren. Het verbetert de snelheid van de inhoud door de benodigde tijd en herhalingen aanzienlijk te verminderen om variaties van hetzelfde element te maken. Voor deze functionaliteit is geen programmering vereist en werken vanuit de DAM. Zie [ variaties van activa produceren gebruikend de integratie van het Creative Cloud ](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] bevat de [!DNL Document Cloud] PDF Viewer voor een native voorvertoning van PDF-documenten. Met deze functie kunnen gebruikers PDF-bestanden met meerdere pagina&#39;s voorvertonen zonder dat er bestanden hoeven te worden verwerkt of geconverteerd. Met deze functie verbetert u de pariteit met [!DNL Experience Manager] 6.5. De besturingselementen in de viewer zijn onder andere zoomen, naar pagina&#39;s navigeren, besturingselementen loskoppelen en op volledig scherm weergeven. Gebruikers kunnen ook een voorvertoning weergeven van pagina&#39;s en bladwijzers. Opmerkingen over het bestand zelf worden ondersteund. Opmerkingen en annotaties over de inhoud in het PDF-bestand zijn gepland voor een toekomstige release.
+* [!DNL Experience Manager Assets] bevat de [!DNL Document Cloud] PDF Viewer om een voorvertoning van PDF-documenten te bekijken. Met deze functie kunnen gebruikers PDF-bestanden met meerdere pagina&#39;s voorvertonen zonder dat er bestanden hoeven te worden verwerkt of geconverteerd. Deze functie verbetert de pariteit met [!DNL Experience Manager] 6.5. De besturingselementen die beschikbaar zijn in de viewer zijn onder andere zoomen, naar pagina&#39;s navigeren, besturingselementen loskoppelen en op volledig scherm weergeven. Gebruikers kunnen ook een voorvertoning weergeven van pagina&#39;s en bladwijzers. Opmerkingen over het bestand zelf worden ondersteund. Opmerkingen en annotaties over de inhoud in het PDF-bestand zijn gepland voor een toekomstige release.
 
-  ![PDF-bestanden voorvertonen in [!DNL Experience Manager] PDF Viewer gebruiken](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![ PDF dossiers van de Voorproef in [!DNL Experience Manager] gebruikend de Kijker van de PDF ](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* De functie voor het delen van koppelingen gebruikt asynchrone downloads die de downloadsnelheid verhogen. Zie voor meer informatie [Elementen downloaden die via koppelingen delen worden gedeeld](/help/assets/download-assets-from-aem.md#link-share-download).
+* De functie voor het delen van koppelingen gebruikt asynchrone downloads die de downloadsnelheid verhogen. Voor meer informatie, zie [ Gedeelde activa van de Download gebruikend verbinding het delen ](/help/assets/download-assets-from-aem.md#link-share-download).
 
-  ![Postvak IN downloaden](/help/assets/assets/download-inbox.png)
+  ![ Inbox van de Download ](/help/assets/assets/download-inbox.png)
 
 * De weergave-instellingen worden verbeterd zodat gebruikers een standaardweergave en een standaardsorteerparameter kunnen kiezen.
 
-  ![Standaardweergave instellen in [!UICONTROL View Settings]](/help/assets/assets/view-settings-for-defaults.png)
+  ![ plaats standaardmening in [!UICONTROL View Settings]](/help/assets/assets/view-settings-for-defaults.png)
 
 * Gebruikers kunnen de mappen zoeken en filteren op basis van voorspelden van eigenschappen.
 
-  ![Zoekmappen filteren met behulp van voorvertoningen zoeken](/help/assets/assets/search-folders-via-predicates.png)
+  ![ de onderzoeksomslagen van de Filter gebruikend onderzoek predikaten ](/help/assets/assets/search-folders-via-predicates.png)
 
-### Nieuwe functies beschikbaar in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
+### Nieuwe functies die beschikbaar zijn in het [!DNL Assets] prereleasekanaal {#assets-prerelease-features}
 
 <!-- TBD: Not sure about GA of these enh. Shall check with the team.
 
@@ -77,29 +77,29 @@ Kijk eens naar de [Overzicht release juli 2021](https://video.tv.adobe.com/v/335
 
 * Wanneer u digitale elementen deelt als een koppeling, kunnen gebruikers de URL naar het klembord kopiëren. Dankzij deze verbetering kunt u elementen sneller en handiger delen.
 
-### Buizen vastgesteld in [!DNL Assets] {#assets-bugs-fixed}
+### Buizen gecorrigeerd in [!DNL Assets] {#assets-bugs-fixed}
 
-De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. (CQ-4326322)
+De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!DNL Experience Manager] as a [!DNL Cloud Service] . (CQ-4326322)
 
-## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* U kunt de dienst van de Automatede form conversion nu gebruiken aan [PDF forms converteren in het Frans, Duits en Spaans](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) aan adaptieve formulieren.
+* U kunt de dienst van de Automatede form conversion aan [ nu gebruiken zet PDF forms in het Frans, Duits, en Spaans taal ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in aanpassingsvormen om.
 * Er is een apart deelvenster toegevoegd aan de sjablooneditor om fouten weer te geven met betrekking tot adaptieve formuliercomponenten. Hiermee kunt u alle adaptieve formulierfouten op één locatie consolideren en de resolutietijd verminderen.
 
-### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#beta-features-forms}
+### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) hulp u XDP malplaatjes en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
 
-* **Variabele-gegevensexternalizer**: U kunt gegevens van AEM workflowvariabelen opslaan op een extern opslagsysteem dat wordt beheerd door uw organisatie.
+* **Variabele die Extern van Gegevens**: U kunt gegevens van AEM variabelen van het Werkschema op een extern opslagsysteem bewaren door uw organisatie wordt geleid.
 
-* **Op acroform gebaseerd document of record**: U kunt ook [Adobe Acrobat Form PDF gebruiken (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als een sjabloon voor Document of Record naast XFA-formuliersjabloon.
+* **op acroform-Gebaseerd Document van Verslag**: U kunt ook [ de Vorm van Adobe Acrobat PDF (Acroform PDF) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje gebruiken.
 
-* **Microsoft® Azure Data Store-connector**: U kunt nu [Formuliergegevensmodel aansluiten op Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
+* **Microsoft® Azure schakelaar van de gegevensopslag**: U kunt [ het Model van de Gegevens van de Vorm aan Microsoft® Azure Opslag ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft® Azure Storage als een BLOB.
 
 ## CIF invoegtoepassing {#cloud-services-cif}
 
@@ -110,9 +110,9 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
    * Visuele indicator voor gefaseerde productgegevens op auteurswijze voor betere zichtbaarheid van aanstaande veranderingen
    * Nieuwe sitemapcomponent voor inhoud- en handelspagina&#39;s
 
-* Ondersteuning voor [Adobe Commerce Sensei Product Recommendation, aangedreven door Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront met behulp van vooraf gedefinieerde of tijdens de vlucht gemaakte aanbevelingen
+* Steun voor [ het ProductAanbeveling van Sensei van Adobe Commerce, aangedreven door Adobe Sensei ](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront gebruikend vooraf bepaalde of ter plekke gecreeerde aanbevelingen
 
-## [!DNL Experience Manager Screens] als [!DNL Cloud Service] {#screens}
+## [!DNL Experience Manager Screens] als een [!DNL Cloud Service] {#screens}
 
 ### Opgeloste problemen {#bug-fixes-screens}
 
@@ -120,19 +120,19 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
 
 * Alle weergaveweergaven hebben mappenkolom.
 
-* U kunt de structuur van de Inhoud van het scherm uitbreiden.
+* U kunt de Screens Content Structure uitbreiden.
 
-* `bulk-offline-update-service` ontbrak alle machtigingen voor bepaalde omgevingen.
+* In `bulk-offline-update-service` ontbreken alle machtigingen voor bepaalde omgevingen.
 
 * De bijgewerkte koppeling Help die overeenkomt met de nieuwe documentatie van de schermwolk.
 
 * De toewijzing van afspeellijsten ongedaan maken en het verwijderen van afspeellijsten met toegewezen spelers niet toestaan, werkt nu.
 
-* De speler downloadt nu elementen opnieuw wanneer de cache ALLE wordt gewist.
+* De speler downloadt nu Assets wanneer de cache ALLE wordt gewist.
 
-* Herhaling plannen werkt nu als de optie *Eindtijd* is ingesteld voor de volgende dag.
+* Herhaal nu plannend werken, als de *Tijd van het Eind* voor de volgende dag wordt geplaatst.
 
-* `Back&Forward` werkt nu in de as a Cloud Service gebruikersinterface voor schermen.
+* `Back&Forward` werkt nu in de as a Cloud Service gebruikersinterface van Screens.
 
 * Labels met dezelfde naam maar verschillende naamruimten kunnen niet eerder worden gemaakt.
 
@@ -140,7 +140,7 @@ De API `com.day.cq.dam.api.collection.SmartCollection` is niet beschikbaar in [!
 
 ### Nieuwe functies {#what-is-new-xml-documentation}
 
-XML Documentation for Experience Manager as a Cloud Service is over het algemeen beschikbaar. Klanten van as a Cloud Service Experience Manager kunnen hiermee een XML Documentation-invoegtoepassing aanschaffen om technische inhoud te importeren, maken, beheren en leveren via meerdere kanalen, waaronder Experience Manager Sites.
+XML Documentation for Experience Manager as a Cloud Service is over het algemeen beschikbaar. Klanten van as a Cloud Service Experience Managers kunnen hiermee een XML Documentation-add-on aanschaffen om technische inhoud te importeren, maken, beheren en leveren via meerdere kanalen, waaronder Experience Manager Sites.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -148,24 +148,24 @@ In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM as
 
 ### Releasedatum {#release-cm-july}
 
-De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.7.0 is 15 juli 2021.
+De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.7.0 is 15 juli 2021.
 De volgende release is gepland voor 12 augustus 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-july}
 
-* Klanten kunnen nu gebruikmaken van 8 en 11 JDK&#39;s voor hun buildprocessen in Cloud Manager en kunnen een van deze JDK&#39;s selecteren voor gebruik van met toolketens compatibele Maven-plug-ins *of* de volledige Maven procesuitvoering.
+* De klanten kunnen Azul 8 en 11 JDKs voor hun Cloud Manager nu gebruiken bouwt processen en kunnen of selecteren om één van deze JDKs voor toolketens-compatibele Maven plugins *of* de volledige Maven procesuitvoering te gebruiken.
 
 * Uitgaande uitgang IP wordt nu het programma geopend in het dossier van het bouwstijlstaplogboek.
 
-* Stage- en productieomgevingen met oude versies van AEM rapporteren nu de status van **Update beschikbaar**.
+* De milieu&#39;s van het stadium en van de Productie die oude versies van AEM in werking stellen melden nu een status van **Beschikbare Update**.
 
 * Het maximum aantal ondersteunde SSL-certificaten is gestegen tot 20 per programma.
 
 * Het maximumaantal domeinen dat kan worden gevormd is verhoogd tot 500 per milieu.
 
-* De **Git beheren** knop is hernoemd naar **Toegang tot informatie over toegang** en het dialoogvenster is visueel vernieuwd.
+* De **beheert knoop van het Git** is hernoemd aan **Info van het Git van de Toegang** en de dialoogdoos is visueel verfrist.
 
-* De versie van het AEM Project Archetype dat wordt gebruikt door Cloud Manager is bijgewerkt naar versie 28.
+* De versie van het AEM Project Archetype dat door Cloud Manager wordt gebruikt, is bijgewerkt naar versie 28.
 
 ### Opgeloste problemen {#bug-fixes-cm-july}
 
@@ -175,7 +175,7 @@ De volgende release is gepland voor 12 augustus 2021.
 
 * Het foutbericht dat wordt weergegeven wanneer het maximumaantal SSL-certificaten is bereikt, is niet nuttig.
 
-* In sommige omstandigheden kan er een discrepantie optreden in de releaseversie die wordt weergegeven op de pijplijnkaart op de **Overzicht** pagina.
+* In sommige omstandigheden, zou er een discrepantie in de versieversie kunnen zijn die in de pijpleidingskaart op de **1} pagina van het Overzicht {wordt getoond.**
 
 * De wizard Programma toevoegen heeft onjuist aangegeven dat de naam na het maken niet meer kan worden gewijzigd.
 
@@ -191,8 +191,8 @@ De releasedatum voor Cloud Acceleration Manager is 15 juli 2021.
 
 ### Nieuwe functies {#what-is-new-cam}
 
-Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service. Stel uw team in voor een geslaagde migratie met aanbevolen Adobe procedures, tips, documentatie en tools voor elke fase van de reis naar AEM als Cloud Service. Meer informatie [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
+Cloud Acceleration Manager is een cloudgebaseerde toepassing die is ontworpen om uw IT-teams te begeleiden tijdens de transitietraject, van de planning tot het live gaan van de Cloud Service. Stel uw team in voor een geslaagde migratie met aanbevolen Adobe procedures, tips, documentatie en tools voor elke fase van de reis naar AEM als Cloud Service. Leer meer [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
 
 >[!NOTE]
 >
-> Bekijk dit [Video over demo van cloudversnellingsbeheer](https://video.tv.adobe.com/v/335547).
+> Controle uit deze [ de demo video van Cloud Acceleration Manager ](https://video.tv.adobe.com/v/335547).

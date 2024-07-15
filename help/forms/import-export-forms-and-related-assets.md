@@ -1,5 +1,5 @@
 ---
-title: Elementen importeren en exporteren naar [!DNL AEM Forms]?
+title: Hoe te om activa in te voeren en uit te voeren aan  [!DNL AEM Forms]?
 description: Leer hoe u DocuSign met een adaptief formulier kunt gebruiken om e-handtekeningen te verzamelen.
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
@@ -11,32 +11,32 @@ ht-degree: 0%
 
 # Elementen importeren en exporteren {#importing-and-exporting-assets-to-aem-forms}
 
-U kunt formulieren, thema&#39;s, sjablonen, documentfragmenten, thema&#39;s en andere elementen verplaatsen tussen verschillende [!DNL AEM Forms] instanties. Een dergelijke verplaatsing is vereist wanneer u systemen migreert of formulieren verplaatst van een ontwikkelings- of staging-server naar een productieserver.
+U kunt formulieren, thema&#39;s, sjablonen, documentfragmenten, thema&#39;s en andere elementen verplaatsen naar een andere [!DNL AEM Forms] -instantie. Een dergelijke verplaatsing is vereist wanneer u systemen migreert of formulieren verplaatst van een ontwikkelings- of staging-server naar een productieserver.
 
-Voor de activa waarvoor uploaden en importeren via de [!DNL AEM Forms] UI wordt gesteund, is het gebruiken van de UI van Forms de geadviseerde manier voor uitvoer of invoer. Het wordt niet aanbevolen om AEM pakketbeheer te gebruiken voor het exporteren of importeren van dergelijke elementen.
+Voor die elementen waarvoor uploaden en importeren via de [!DNL AEM Forms] -gebruikersinterface wordt ondersteund, is het gebruik van de gebruikersinterface van Forms de aanbevolen manier voor exporteren of importeren. Het wordt niet aanbevolen om AEM pakketbeheer te gebruiken voor het exporteren of importeren van dergelijke elementen.
 
 ## Forms- en documentmiddelen downloaden of uploaden {#download-or-upload-forms-amp-documents-assets}
 
-[!DNL AEM Forms] Met de gebruikersinterface kunt u elementen van een AEM-instantie exporteren door deze te downloaden als een AEM CRX-pakket of binaire bestanden. U kunt het gedownloade AEM CRX-pakket of het binaire bestand vervolgens importeren in een andere AEM.
+Met de gebruikersinterface van [!DNL AEM Forms] kunt u elementen van een AEM instantie exporteren door deze te downloaden als een AEM CRX-pakket of als binaire bestanden. U kunt het gedownloade AEM CRX-pakket of het binaire bestand vervolgens importeren in een andere AEM.
 
-Exporteren en importeren via [!DNL AEM Forms] De gebruikersinterface wordt ondersteund voor alle elementen, met uitzondering van sjablonen voor adaptieve formulieren en beleid voor adaptieve formulierinhoud. Bij het exporteren van een adaptief formulier uit [!DNL AEM Forms] UI, worden de gerelateerde adaptieve formuliersjabloon en het inhoudsbeleid niet automatisch geëxporteerd als andere gerelateerde elementen.
+Exporteren en importeren via de gebruikersinterface van [!DNL AEM Forms] wordt ondersteund voor alle elementen, behalve voor sjablonen voor adaptieve formulieren en het beleid voor adaptieve formulierinhoud. Daarom worden bij het exporteren van een adaptief formulier vanuit de gebruikersinterface van [!DNL AEM Forms] de gerelateerde sjabloon voor adaptieve formulieren en het inhoudsbeleid niet automatisch geëxporteerd, net als andere gerelateerde elementen.
 
-Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de bron- AEM server en het pakket op de doelserver te installeren. Zie voor informatie over het maken en installeren van pakketten [Distribueren naar AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html).
+Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de bron- AEM server en het pakket op de doelserver te installeren. Voor informatie over het creëren van en het installeren van pakketten, zie [ het Opstellen aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html).
 
 ### Forms- en Documenten downloaden {#download-forms-amp-documents-assets}
 
 Forms en Documenten downloaden:
 
-1. Aanmelden bij de [!DNL AEM Forms] -instantie.
-1. Experience Manager selecteren ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteer de formulierelementen en selecteer de **[!UICONTROL Download]** pictogram.
-1. Kies in het (de) downloadmiddel(en) een van de volgende opties en selecteer **[!UICONTROL Download]**.
+1. Meld u aan bij de instantie [!DNL AEM Forms] .
+1. Selecteer Experience Manager ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) pictogram > navigatie ![ kompas ](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteer de formulierelementen en selecteer het pictogram **[!UICONTROL Download]** .
+1. Kies in het dialoogvenster Elementen downloaden een van de volgende opties en selecteer **[!UICONTROL Download]** .
 
-   * **Downloaden als CRX-pakket:** Gebruik de optie om alle geselecteerde elementen en gerelateerde afhankelijkheden te downloaden en verplaatsen vanuit een [!DNL AEM Forms] aan een andere instantie. Alle elementen en mappen worden als crx-pakket gedownload. Alle formulierelementen, zoals de formulieren die zijn geschreven in AEM (Adaptieve Forms en Adaptieve formulierfragmenten), PDF-documenten en bronnen (XSD&#39;s, XFS, afbeeldingen) kunnen worden gedownload als pakket van [!DNL AEM Forms] UI.
+   * **Download als Pakket van CRX:** gebruik de optie om alle geselecteerde activa en verwante gebiedsdelen van een [!DNL AEM Forms] instantie aan een andere te downloaden en te bewegen. Alle elementen en mappen worden als crx-pakket gedownload. Alle formulierelementen, zoals de formulieren die zijn geschreven in AEM (Adaptieve Forms en Adaptieve formulierfragmenten), PDF-documenten en bronnen (XSD&#39;s, XFS, afbeeldingen), kunnen worden gedownload als pakket via [!DNL AEM Forms] UI.
 Het voordeel van het downloaden van elementen als pakket is dat ook elementen worden gedownload die door het geselecteerde element zijn gebruikt om te downloaden. Als u bijvoorbeeld een adaptief formulier hebt waarin een formuliersjabloon, XSD en een afbeelding worden gebruikt. Wanneer u dit adaptieve formulier selecteert en het als pakket downloadt, bevat het gedownloade pakket ook de formuliersjabloon, XSD en de afbeelding. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload.
 
-   * **Elementen downloaden als binaire bestanden:** Gebruik de optie om alleen formuliersjablonen (XDP), PDF forms (PDF), documenten (PDF) en bronnen (afbeeldingen, schema&#39;s, opmaakmodellen) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De formulierbestanden met binaire bestanden, zoals XSD&#39;s, XDP&#39;s, afbeeldingen, PDF en XDP&#39;s, worden gedownload als ZIP-bestand.
-U kunt geen adaptieve Forms, adaptieve formulierfragmenten en thema&#39;s downloaden met **[!UICONTROL Download assets as binary files]** -optie. Als u deze middelen wilt downloaden, kunt u het beste **[!UICONTROL Download as CRX Package]** -optie.
+   * **de activa van de Download als binaire dossiers:** gebruik de optie om slechts vormmalplaatjes (XDP), PDF forms (PDF), document (PDF), en middelen (beelden, schema&#39;s, stijlpagina&#39;s) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De formulierbestanden met binaire bestanden, zoals XSD&#39;s, XDP&#39;s, afbeeldingen, PDF en XDP&#39;s, worden gedownload als ZIP-bestand.
+Met de optie **[!UICONTROL Download assets as binary files]** kunt u geen adaptieve Forms, adaptieve formulierfragmenten en thema&#39;s downloaden. Gebruik de optie **[!UICONTROL Download as CRX Package]** als u deze elementen wilt downloaden.
 
    De geselecteerde elementen worden gedownload als een archief (.zip-bestand).
 
@@ -48,12 +48,12 @@ U kunt geen adaptieve Forms, adaptieve formulierfragmenten en thema&#39;s downlo
 
 Forms en Documenten uploaden:
 
-1. Aanmelden bij de [!DNL AEM Forms] -instantie.
-1. Experience Manager selecteren ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteren **Maken** >**Bestand uploaden**. Er wordt een dialoogvenster voor het uploaden of verpakken weergegeven.
+1. Meld u aan bij de instantie [!DNL AEM Forms] .
+1. Selecteer Experience Manager ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) pictogram > navigatie ![ kompas ](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteer **creëren** > **Dossier uploadt**. Er wordt een dialoogvenster voor het uploaden of verpakken weergegeven.
 1. Blader in het dialoogvenster naar het pakket of het archief dat u wilt importeren en selecteer dit. U kunt ook PDF-documenten, XSD&#39;s, afbeeldingen, stijlpagina&#39;s en XDP-formulieren selecteren. Selecteer **[!UICONTROL Open]**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
 
-   Controleer in het dialoogvenster de details van de elementen die worden geüpload en selecteer **[!UICONTROL Upload]**.
+   Controleer in het dialoogvenster de details van de elementen die worden geüpload en selecteer **[!UICONTROL Upload]** .
 
    Als u een bestaand formulierelement uploadt, wordt het element bijgewerkt.
 
@@ -63,17 +63,17 @@ Forms en Documenten uploaden:
 
 ## Een thema downloaden of uploaden {#downloading-or-uploading-a-theme}
 
-Met [!DNL AEM Forms]kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. U kunt een thema maken, dit downloaden en uploaden naar een aparte versie om het opnieuw te gebruiken. Zie voor meer informatie over thema&#39;s [Thema&#39;s](themes.md) in [!DNL AEM Forms].
+Met [!DNL AEM Forms] kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. U kunt een thema maken, dit downloaden en uploaden naar een aparte versie om het opnieuw te gebruiken. Voor meer informatie over thema&#39;s, zie [ Thema&#39;s ](themes.md) in [!DNL AEM Forms].
 
 ### Een thema downloaden {#downloading-a-theme}
 
-U kunt thema&#39;s exporteren in [!DNL AEM Forms] die u kunt gebruiken in andere projecten of instanties. AEM kunt u thema downloaden als een ZIP-bestand dat u kunt uploaden op het exemplaar.
+U kunt thema&#39;s in [!DNL AEM Forms] exporteren die u kunt gebruiken in andere projecten of instanties. AEM kunt u thema downloaden als een ZIP-bestand dat u kunt uploaden op het exemplaar.
 
 Een thema downloaden:
 
-1. Aanmelden bij de [!DNL AEM Forms] -instantie.
-1. Experience Manager selecteren ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/Smock_Compass_18_N.svg) pictogram> **[!UICONTROL Forms]** > **[!UICONTROL Themes]**.
-1. Selecteer het thema en selecteer **[!UICONTROL Download]**. Het thema wordt gedownload als een archief (.zip-bestand).
+1. Meld u aan bij de instantie [!DNL AEM Forms] .
+1. Selecteer Experience Manager ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) pictogram > navigatie ![ kompas ](assets/Smock_Compass_18_N.svg) icon> **[!UICONTROL Forms]** > **[!UICONTROL Themes]**.
+1. Selecteer het thema en selecteer **[!UICONTROL Download]** . Het thema wordt gedownload als een archief (.zip-bestand).
 
 ### Een thema uploaden {#uploading-a-theme}
 
@@ -81,9 +81,9 @@ U kunt gemaakte thema&#39;s gebruiken met voorinstellingen voor stijlen voor uw 
 
 Een thema uploaden:
 
-1. Navigeer in Experience Manager naar **[!UICONTROL Forms]** > **[!UICONTROL Forms Themes]**.
-1. Klik op de pagina Thema&#39;s op **[!UICONTROL Forms Create]** > **[!UICONTROL Forms File Upload]**.
-1. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **[!UICONTROL Forms Upload]**. Het thema wordt geüpload.
+1. Navigeer in Experience Manager naar **[!UICONTROL Forms]** > **[!UICONTROL Forms Themes]** .
+1. Klik op de pagina Thema&#39;s op **[!UICONTROL Forms Create]** > **[!UICONTROL Forms File Upload]** .
+1. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **[!UICONTROL Forms Upload]** . Het thema wordt geüpload.
 
 <!--
 
@@ -162,13 +162,13 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 U kunt AEM pakketbeheer gebruiken om workflowtoepassingen te exporteren. De procedure is als volgt:
 
-1. Openen [!DNL AEM Forms] pakketbeheer.
-1. Klik op **[!UICONTROL Create Package]**. De **[!UICONTROL New Package]** wordt weergegeven.
+1. Open [!DNL AEM Forms] -pakketbeheer.
+1. Klik op **[!UICONTROL Create Package]**. Het dialoogvenster **[!UICONTROL New Package]** wordt weergegeven.
 1. Geef een naam, versie en groep voor het pakket op. Klik op **[!UICONTROL OK]**.
-1. Klikken **[!UICONTROL Edit]** en opent u de **[!UICONTROL Filters]** tab. Klik op **[!UICONTROL Add Filter]**. Geef het pad van de workflowtoepassing op. Bijvoorbeeld /etc/fd/dashboard/startpoints/homemortgauge. Klik op **[!UICONTROL Add rule]**.
+1. Klik op **[!UICONTROL Edit]** en open het tabblad **[!UICONTROL Filters]** . Klik op **[!UICONTROL Add Filter]**. Geef het pad van de workflowtoepassing op. Bijvoorbeeld /etc/fd/dashboard/startpoints/homemortgauge. Klik op **[!UICONTROL Add rule]**.
 
-1. Open de **[!UICONTROL Advanced]** tab. Selecteren **[!UICONTROL Merge]** of **[!UICONTROL Overwrite]** in ACL Behandelend gebied. Klik op **[!UICONTROL Save]**.
-1. Klikken **[!UICONTROL Build]** om het pakket te maken.
+1. Open de tab **[!UICONTROL Advanced]** . Selecteer **[!UICONTROL Merge]** of **[!UICONTROL Overwrite]** in het veld ACL-verwerking. Klik op **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Build]** om het pakket te maken.
 
    Nadat het pakket is gemaakt, kunt u het pakket downloaden en naar de andere server importeren. De workflowtoepassing wordt weergegeven op de server waarop het pakket is geüpload.
 
@@ -178,19 +178,19 @@ U kunt AEM pakketbeheer gebruiken om workflowtoepassingen te exporteren. De proc
 
 ## Mappen en elementen ordenen {#folders-and-organizing-assets}
 
-[!DNL AEM Forms] gebruikersinterface gebruikt mappen om elementen te rangschikken. Deze mappen worden gebruikt voor het rangschikken van elementen die zijn gemaakt in [!DNL AEM Forms] gebruikersinterface. U kunt de naam van submappen wijzigen, submappen maken en elementen en documenten in deze mappen opslaan. Door documenten en elementen in een map te ordenen, kunt u de bestanden groeperen voor eenvoudig beheer. U kunt een map selecteren en deze downloaden of verwijderen.
+In de gebruikersinterface van [!DNL AEM Forms] worden mappen gebruikt om elementen te rangschikken. Deze mappen worden gebruikt voor het rangschikken van elementen die zijn gemaakt in de gebruikersinterface van [!DNL AEM Forms] . U kunt de naam van submappen wijzigen, submappen maken en elementen en documenten in deze mappen opslaan. Door documenten en elementen in een map te ordenen, kunt u de bestanden groeperen voor eenvoudig beheer. U kunt een map selecteren en deze downloaden of verwijderen.
 
 Voer de volgende stappen uit om een map te maken:
 
 ### Een map maken {#create-a-folder}
 
-1. Aanmelden bij de [!DNL AEM Forms] gebruikersinterface op `https://<server>:<port>/aem/forms.html`.
+1. Meld u aan bij de gebruikersinterface van [!DNL AEM Forms] op `https://<server>:<port>/aem/forms.html` .
 1. Navigeer naar de locatie waaronder u een map wilt maken.
-1. Selecteren **[!UICONTROL Create]** > **[!UICONTROL Folder]**.
+1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Folder]** .
 1. Voer de volgende gegevens in:
 
-   * **Titel:** Naam voor de map weergeven
-   * **Naam:** *(Verplicht)* De knooppuntnaam waaronder u de map in de opslagplaats wilt opslaan
+   * **Titel:** de naam van de vertoning voor de omslag
+   * **Naam:** *(Verplicht)* De knoopnaam waaronder u de omslag in de bewaarplaats wilt opslaan
 
    >[!NOTE]
    >
@@ -198,7 +198,7 @@ Voer de volgende stappen uit om een map te maken:
 
 1. Er wordt een nieuwe map met de door u gedefinieerde titel weergegeven op de huidige locatie in de lijst met elementen.
 
-   Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutbericht weergeven door de muisaanwijzer op de fout te plaatsen ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) pictogram dat naast het naamveld wordt weergegeven.
+   Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutenbericht bekijken door over het fout ![ aem6forms_error_alert ](assets/Smock_Alert_18_N.svg) pictogram te bewegen dat naast het naamgebied verschijnt.
 
    U kunt de gemaakte map selecteren om naar de map te gaan en elementen of mappen in de map te maken. Bovendien kunt u een map selecteren en ervoor kiezen deze in de wachtrij te plaatsen voor downloaden, te verwijderen of de naam ervan te bewerken.
 
@@ -245,5 +245,5 @@ For more information and instructions on using search, filters, saved search, an
 
 >[!MORELIKETHIS]
 >
->* [Exportformuliersjablonen importeren](/help/forms/import-export-forms-templates.md)
->* [Thema&#39;s gebruiken in Adaptief formulier Core-componenten](/help/forms/using-themes-in-core-components.md)
+>* [ de uitvoervormmalplaatjes van de Invoer ](/help/forms/import-export-forms-templates.md)
+>* [ thema&#39;s van het Gebruik in de AanpassingsComponenten van de Kern van de Vorm ](/help/forms/using-themes-in-core-components.md)

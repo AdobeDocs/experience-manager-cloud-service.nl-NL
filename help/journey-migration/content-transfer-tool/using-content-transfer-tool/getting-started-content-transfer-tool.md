@@ -23,7 +23,7 @@ ht-degree: 2%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release-opmerkingen"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket installeren door [Pakketbeheer](/help/implementing/developing/tools/package-manager.md) op uw bron-Adobe Experience Manager (AEM)-exemplaar. Download de nieuwste versie. Ga voor meer informatie over de nieuwste versie naar [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
+Het gereedschap Inhoud overbrengen kan als een ZIP-bestand worden gedownload van de Software Distribution Portal. U kunt het pakket als [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op uw bronAdobe Experience Manager (AEM) instantie installeren. Download de nieuwste versie. Voor meer details op de recentste versie, zie [ de Nota&#39;s van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 Alleen versie 2.0.0 en hoger wordt ondersteund en het is raadzaam de meest recente versie te gebruiken.
 
@@ -47,10 +47,10 @@ De bron AEM instantie kan achter een firewall lopen waar het slechts bepaalde ga
 
 Soms is het lastig om te begrijpen hoe problemen met SSL/TLS-verbindingen optreden. Als u verbindingsproblemen wilt oplossen tijdens een extractieproces, kunt u SSL-logboekregistratie inschakelen via de systeemconsole van de AEM omgeving door de volgende stappen uit te voeren:
 
-1. Navigeer naar de Adobe Experience Manager Web Console op uw broninstantie door naar **Gereedschappen > Bewerkingen > Webconsole** of rechtstreeks naar de URL op *https://serveraddress:serverport/system/console/configMgr*
-1. Zoeken naar **Configuratie van de service Content Transfer Tool Extraction**
+1. Navigeer aan de Console van het Web van Adobe Experience Manager op uw broninstantie, door **Hulpmiddelen > Verrichtingen > de Console van het Web** of direct aan URL in *https://serveraddress:serverport/system/console/configMgr* te gaan
+1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud ****
 1. Gebruik de knop voor het potloodpictogram om de configuratiewaarden ervan te bewerken
-1. De optie **SSL-registratie inschakelen voor extractie** instellen en vervolgens op **Opslaan**:
+1. Laat **toe het registreren ssl voor extractie** plaatsen, dan druk **sparen**:
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
@@ -80,11 +80,11 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
 1. Meld u aan bij Cloud Acceleration Manager (CAM) en klik op het CAM-project dat u eerder hebt gemaakt om te beoordelen of u klaar bent om naar AEM as a Cloud Service te gaan. Als u geen CAM project hebt gecreeerd, verwijs naar het Creëren van en het Leiden van een Project in CAM.
 
-1. Klik op de knop **Inhoud overbrengen** om de weergave Lijst migratieset te openen.
+1. Klik de **kaart van de Overdracht van de Inhoud 0} {om de Vastgestelde mening van de Lijst van de Migratie te openen.**
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. Een migratieset maken door op **Migratieset maken**.
+1. Creeer een Migratie die door **wordt geplaatst te klikken leidt de Reeks van de Migratie**.
 
    >[!NOTE]
    >
@@ -92,15 +92,15 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   Het volgende dialoogvenster wordt weergegeven. Een migratieset verloopt na een langdurige periode van inactiviteit. Nadat de waarschuwingen op de projectkaart en de rijen van de migratietabel voor een tijdspanne worden getoond, zal de migratiereeks verlopen en zijn gegevens zullen niet meer beschikbaar zijn. Controleren [Vervaldatum migratieset](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor meer informatie.
+   Het volgende dialoogvenster wordt weergegeven. Een migratieset verloopt na een langdurige periode van inactiviteit. Nadat de waarschuwingen op de projectkaart en de rijen van de migratietabel voor een tijdspanne worden getoond, zal de migratiereeks verlopen en zijn gegevens zullen niet meer beschikbaar zijn. Het overzicht [ Vastgestelde Verval van de Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) voor details.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >De naam moet dezelfde conventies van een AEM gebruiken, zodat deze geen van de volgende tekens kan bevatten: . / : [ ] | *
+   >De naam moet dezelfde conventies van een AEM knooppunt volgen, zodat deze geen van de volgende tekens kan bevatten: . / : [ ] | *
 
-1. De migratielijst wordt nu weergegeven in de lijstweergave. Selecteer de drie puntensymbolen (**...**) om de vervolgkeuzelijst te openen en **Extractietoets kopiëren**. U hebt deze sleutel nodig tijdens de extractiefase. Kopieer deze extractietoets.
+1. De migratielijst wordt nu weergegeven in de lijstweergave. Selecteer het drie puntensymbool (**...**) om drop-down te openen en **de sleutel van de Extractie van het Extractie van het Exemplaar te selecteren**. U hebt deze sleutel nodig tijdens de extractiefase. Kopieer deze extractietoets.
 
    >[!NOTE]
    >
@@ -118,40 +118,40 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
 Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt vullen, installeert u de nieuwste versie van het Content Transfer Tool op de Adobe Experience Manager-broninstantie (AEM). Volg deze sectie voor informatie over het vullen van de migratieset.
 
-1. Nadat u de nieuwste versie van het gereedschap Inhoud overbrengen op uw Adobe Experience Manager-bronexemplaar hebt geïnstalleerd, gaat u naar **Bewerkingen - Migratie van inhoud**
+1. Na het installeren van de recentste versie van het Hulpmiddel van de Overdracht van de Inhoud op uw bronAdobe Experience Manager instantie, ga **Verrichtingen - de Migratie van de Inhoud**
 
-1. Klikken **Migratieset maken**.
+1. Klik **creëren de Reeks van de Migratie**.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Plak de extractietoets die eerder uit CAM is gekopieerd naar het invoerveld Extractietoets van **Migratieset maken** formulier. Hierna worden de naam van de migratieset en de velden Cloud Acceleration Manager (CAM)-projectnaam automatisch ingevuld. Deze zouden de Vastgestelde naam van de Migratie in CAM en het CAM projectnaam moeten aanpassen die u creeerde. U kunt nu inhoudspaden toevoegen. Sla de migratieset op nadat u inhoudspaden hebt toegevoegd. U kunt de extractie uitvoeren met inbegrepen of uitgesloten versies.
+1. Plak de extractiesleutel die van CAM vroeger in het zeer belangrijke de inputgebied van de Extractie van **werd gekopieerd creeer de Reeks van de Migratie** vorm. Hierna worden de naam van de migratieset en de velden Cloud Acceleration Manager (CAM)-projectnaam automatisch ingevuld. Deze zouden de Vastgestelde naam van de Migratie in CAM en het CAM projectnaam moeten aanpassen die u creeerde. U kunt nu inhoudspaden toevoegen. Sla de migratieset op nadat u inhoudspaden hebt toegevoegd. U kunt de extractie uitvoeren met inbegrepen of uitgesloten versies.
 
    >[!NOTE]
    >
-   >Zorg ervoor dat de extractietoets geldig is en niet bij het verlopen ervan is. U kunt deze gegevens ophalen in het dialoogvenster **Migratieset maken** nadat u de extractietoets hebt geplakt. Als er een verbindingsfout optreedt, raadpleegt u [Connectiviteit Source-omgeving](#source-environment-connectivity) voor meer informatie .
+   >Zorg ervoor dat de extractietoets geldig is en niet bij het verlopen ervan is. U kunt deze informatie in **krijgen creeer de Reeks van de Migratie** dialoog nadat u de extractiesleutel kleeft. Als u een verbindingsfout krijgt, zie [ Connectiviteit van het Milieu van Source ](#source-environment-connectivity) voor meer informatie.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
 1. Selecteer vervolgens de volgende parameters om een migratieset te maken:
 
-   1. **Inclusief versie**: Selecteer de gewenste optie. Wanneer versies worden opgenomen, wordt het pad `/var/audit` wordt automatisch opgenomen om auditgebeurtenissen te migreren.
+   1. **omvat Versie**: Selecteer zoals vereist. Wanneer versies worden opgenomen, wordt het pad `/var/audit` automatisch opgenomen om auditgebeurtenissen te migreren.
 
       ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
 
       >[!NOTE]
-      >Als u van plan bent versies op te nemen als onderdeel van een migratieset en als u aanvullende versies uitvoert met `wipe=false`Vervolgens moet u versiebeheer uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld wilt houden en extra-ups wilt uitvoeren in een migratieset, moet u de opname uitvoeren als `wipe=true`.
+      >Als u van plan bent versies op te nemen als onderdeel van een migratieset en aanvullende versies uitvoert met `wipe=false` , moet u versiebeheer uitschakelen vanwege een huidige beperking in het gereedschap Inhoud overbrengen. Als u versiereiniging liever ingeschakeld houdt en top-ups uitvoert in een migratieset, moet u de opname uitvoeren als `wipe=true` .
 
 
-   1. **In te sluiten paden**: Gebruik padbrowser om paden te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren.
+   1. **Wegen om** te omvatten: De wegbrowser van het gebruik om wegen te selecteren die moeten worden gemigreerd. Padkiezer accepteert invoer door te typen of te selecteren.
 
       >[!IMPORTANT]
       >Voor de volgende paden gelden beperkingen bij het maken van een migratieset:
       >* `/apps`
       >* `/libs`
       >* `/home`
-      >* `/etc` (sommige `/etc` paden mogen worden geselecteerd in CTT)
+      >* `/etc` (sommige `/etc` paden mogen in CTT worden geselecteerd)
 
-1. Klikken **Opslaan** nadat u alle velden in het dialoogvenster **Migratieset maken** detailscherm.
+1. Klik **sparen** nadat u alle gebieden in **bevolkt creeer het 3} detailsscherm van de Plaats van de Migratie**.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
@@ -172,28 +172,28 @@ Als u de migratieset die u in de Cloud Acceleration Manager hebt gemaakt, wilt v
 Nadat u een migratieset hebt gemaakt, wordt u ten zeerste aangeraden de migratieset te controleren voordat u een extractieproces start.
 Als u een formaatcontrole uitvoert op de migratieset, kunt u:
 
-* Bepalen of er voldoende schijfruimte is in het dialoogvenster `crx-quickstart` subdirectory om extractie te voltooien.
+* Bepaal of er voldoende schijfruimte is in de submap `crx-quickstart` om de extractie te voltooien.
 * Bepaal of de grootte van de migratieset binnen de ondersteunde productgrenzen valt en vermijd mislukte inname van inhoud.
 
 Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
 
-1. Selecteer een migratieset en klik op **Formaat controleren**.
+1. Selecteer een migratiereeks en klik **de Grootte van de Controle**.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Dit opent de **Formaat controleren** in.
+1. Dit opent omhoog de **dialoog van de Grootte van de Controle**.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Klikken **Formaat controleren** om het proces te starten. Vervolgens gaat u terugkeren naar de lijstweergave van de migratieset. Er wordt dan een bericht weergegeven dat aangeeft dat **Formaat controleren** wordt uitgevoerd.
+1. Klik **Grootte van de Controle** om het proces te beginnen. U zult dan aan de de lijstmening van de migratiereeks terugkeren, en u zou een bericht moeten zien erop wijzend dat **de Grootte van de Controle** loopt.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Na **Formaat controleren** proces is voltooid, verandert de status in **VOLTOOID**. Selecteer dezelfde migratieset en klik op **Formaat controleren** om de resultaten weer te geven. Hieronder ziet u een voorbeeld van **Formaat controleren** resultaten zonder waarschuwingen.
+1. Nadat **het proces van de Grootte van de Controle** wordt voltooid, verandert de status in **EINDELIJK**. Selecteer de zelfde migratiereeks en klik **Grootte van de Controle** om resultaten te bekijken. Hieronder is een voorbeeld van **de resultaten van de Grootte van de Controle** zonder waarschuwingen.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Als de **Formaat controleren** de resultaten geven aan dat er onvoldoende schijfruimte is of dat de migratie-set de productlimieten of beide overschrijdt. **WAARSCHUWING** status wordt weergegeven.
+1. Als de **resultaten van de Grootte van de Controle** erop wijzen dat of er ontoereikende schijfruimte is, of de migratiereeks productgrenzen overschrijdt, of allebei, wordt de status van de a **WAARSCHUWING** getoond.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
@@ -204,4 +204,4 @@ Voer de onderstaande stappen uit om een groottecontrole uit te voeren:
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Voordat u deze processen leert, moet u controleren [Afhandeling van grote opslagplaatsen voor inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) om de extractie- en innamefasen van de activiteit voor de overdracht van inhoud aanzienlijk te versnellen en inhoud naar AEM as a Cloud Service te verplaatsen.
+Nadat u hebt geleerd hoe u een migratieset kunt maken, kunt u nu meer leren over Extractie- en Ingestieprocessen in het gereedschap Inhoud overbrengen. Alvorens u deze processen leert, moet u [ Behandelend Grote Inhoudsbewaarplaatsen van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) herzien om de extractie en inname fasen van de activiteit van de inhoudsoverdracht beduidend te versnellen om inhoud naar AEM as a Cloud Service te bewegen.

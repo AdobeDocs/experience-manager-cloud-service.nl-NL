@@ -1,6 +1,6 @@
 ---
 title: Wat zijn de bekende problemen en beperkingen van de as a Cloud Service omgeving van AEM Forms?
-description: Bekende problemen en beperkingen van  [!DNL AEM Forms] as a Cloud Service omgeving.
+description: Bekende kwesties en beperkingen van  [!DNL AEM Forms]  as a Cloud Service milieu.
 contentOwner: khsingh
 role: Admin, Developer, User
 feature: Adaptive Forms
@@ -15,23 +15,23 @@ ht-degree: 0%
 
 # Bekende problemen en beperkingen {#known-issues-and-limitations}
 
-Voordat u begint met [!DNL AEM Forms] as a Cloud Service, herzie de volgende bekende kwesties en de beperkingen:
+Voordat u [!DNL AEM Forms] as a Cloud Service gaat gebruiken, moet u de volgende bekende problemen en beperkingen controleren:
 
 ## Bekende problemen {#known-issues}
 
 * Voeg geen test toe en voer geen test uit die een Aangepast Formulier van een publicatie-instantie naar een AEM Werkstroom verzendt die op een instantie van de Auteur loopt tot verder bericht.
 
-* Wanneer u een adaptief formulier importeert dat gebruikmaakt van een sjabloon met de **[!UICONTROL Save]** de **[!UICONTROL Save]** verschijnt nog steeds in het adaptieve formulier nadat het uit de bijbehorende sjabloon is verwijderd. Verwijder de **[!UICONTROL Save]** van uw Adaptive Forms voordat u deze publiceert. Houd de releaseopmerkingen in de gaten voor de beschikbaarheid van de Forms Portal en de conceptfunctie Opslaan als om de knop te herstellen en te gebruiken.
+* Wanneer u een adaptief formulier importeert dat gebruikmaakt van een sjabloon met de knop **[!UICONTROL Save]** , wordt de knop **[!UICONTROL Save]** nog steeds weergegeven in het adaptieve formulier nadat deze is verwijderd uit de bijbehorende sjabloon. Verwijder de knop **[!UICONTROL Save]** uit uw Adaptieve Forms voordat u deze publiceert. Houd de releaseopmerkingen in de gaten voor de beschikbaarheid van de Forms Portal en de conceptfunctie Opslaan als om de knop te herstellen en te gebruiken.
 
-* De **[!UICONTROL Set variable]** stap van AEM Workflows ondersteunt geen variabelen van het type arraylijst. U kunt de processtap gebruiken om variabelen van het type arraylijst in te stellen.
+* De **[!UICONTROL Set variable]** -stap van AEM Workflows ondersteunt geen variabelen van het type arraylijst. U kunt de processtap gebruiken om variabelen van het type arraylijst in te stellen.
 
-* Wanneer u een adaptief formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 bytes ontvangen. De kwestie komt met tussenpozen en slechts bij het gebruiken van synchrone voorlegging voor. Dit is een [bekende kwestie](https://feedbackassistant.apple.com/feedback/9117687) in Apple iOS.
+* Wanneer u een adaptief formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 bytes ontvangen. De kwestie komt met tussenpozen en slechts bij het gebruiken van synchrone voorlegging voor. Dit is a [ gekende kwestie ](https://feedbackassistant.apple.com/feedback/9117687) in Apple iOS.
 
-* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan het andere uiteinde een bestand van 0 bytes ontvangen. Dit is een bekend probleem in Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan het andere uiteinde een bestand van 0 bytes ontvangen. Dit is een bekend probleem in Apple iOS. [ FB9117687 ](https://feedbackassistant.apple.com/feedback/9117687)
 
 * AEM Forms as a Cloud Service genereert geen miniaturen voor XDP- en JSON-schemabestanden. De service geeft standaardpictogrammen weer in plaats van miniaturen.
 
-  ![Bekende uitgave van Forms-miniatuur](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![ Bekende kwestie van de Miniatuur van Forms ](/help/forms/assets/forms-tumbnail-known-issue.png)
 
 * Wanneer u een schema met herhaalbare elementen gebruikt om een op kerncomponenten gebaseerde adaptieve vorm te maken, werkt de optie om herhaalbare elementen uit gegevensmodelstructuur te slepen en neer te zetten in de Adaptieve Forms Editor niet.
 

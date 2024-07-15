@@ -6,7 +6,7 @@ role: User
 level: Beginner, Intermediate
 source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 0%
 
 Er zijn verschillende soorten gebruikers met verschillende vaardigheden die werken met Adaptive Forms. Terwijl deskundige gebruikers de juiste kennis kunnen hebben om met manuscripten en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die slechts met de lay-out en basiseigenschappen van Aangepast Forms moeten werken.
 
-[!DNL Experience Manager Forms] laat u regeleditortoegang tot gebruikers beperken die op hun rol of functie wordt gebaseerd. In de instellingen van de Adaptive Forms Configuration Service kunt u de [gebruikersgroepen](forms-groups-privileges-tasks.md) die tot regelredacteur kunnen bekijken en toegang hebben.
+Met [!DNL Experience Manager Forms] kunt u de toegang van regeleditors beperken tot gebruikers op basis van hun rol of functie. In de Adaptieve montages van de Dienst van de Configuratie van Forms, kunt u de [ gebruikersgroepen ](forms-groups-privileges-tasks.md) specificeren die tot regelredacteur kunnen bekijken en toegang hebben.
 
 ## Geef gebruikersgroepen op die toegang kunnen krijgen tot de regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
-1. Aanmelden bij [!DNL Experience Manager Forms] als beheerder.
-1. Klik in de auteur-instantie op ![Adobe Experience Manager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Gereedschappen ![hamer](assets/hammer-icon.svg) > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. De webconsole wordt in een nieuw venster geopend.
+1. Meld u aan bij [!DNL Experience Manager Forms] als beheerder.
+1. In de auteursinstantie, klik ![ Adobe Experience Manager ](assets/adobeexperiencemanager.png) Adobe Experience Manager > Hulpmiddelen ![ hamer ](assets/hammer-icon.svg) > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. De webconsole wordt in een nieuw venster geopend.
 
-   ![1-2](assets/1-2.png)
+   ![ 1-2 ](assets/1-2.png)
 
-1. In [!UICONTROL Web Console] Venster, zoeken en klikken **[!UICONTROL Adaptive Form Configuration Service]**. **[!UICONTROL Adaptive Form Configuration Service]** wordt weergegeven. Wijzig geen waarde en klik op **[!UICONTROL Save]**.
+1. Zoek en klik op **[!UICONTROL Adaptive Form Configuration Service]** in het [!UICONTROL Web Console] -venster. **[!UICONTROL Adaptive Form Configuration Service]** wordt weergegeven. Wijzig geen waarde en klik op **[!UICONTROL Save]** .
 
-   Er wordt een bestand gemaakt `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` in CRX-opslagplaats.
+   Er wordt een bestand `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` gemaakt in de CRX-opslagplaats.
 
-1. Meld u als beheerder aan bij CRXDE. Bestand openen `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` voor bewerken.
-1. Gebruik het volgende bezit om de naam van een groep te specificeren die tot regelredacteur (bijvoorbeeld, RuleEditorsUserGroup) kan toegang hebben en klik **[!UICONTROL Save All]**.
+1. Meld u als beheerder aan bij CRXDE. Open het bestand `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` om het te bewerken.
+1. Gebruik de volgende eigenschap om de naam op te geven van een groep die toegang heeft tot een regeleditor (bijvoorbeeld RuleEditorsUserGroup) en klik op **[!UICONTROL Save All]** .
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
@@ -40,17 +40,17 @@ Er zijn verschillende soorten gebruikers met verschillende vaardigheden die werk
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 
-   ![Gebruiker maken](assets/create_user_new.png)
+   ![ creeer Gebruiker ](assets/create_user_new.png)
 
-   Nu, wanneer een gebruiker die geen deel uitmaakt van de opgegeven gebruikersgroep (hier)    `RuleEditorsUserGroup`) tikt op een veld, het pictogram Regel bewerken ( ![edit-rules1](assets/edit-rules1.png)) is niet beschikbaar op de werkbalk Componenten:
+   Nu, wanneer een gebruiker die geen deel uitmaakt van de opgegeven gebruikersgroep (hier)    `RuleEditorsUserGroup`) tikt een gebied, geeft het pictogram van de Regel uit ( ![ geef-rules1 ](assets/edit-rules1.png)) is niet beschikbaar in de toolbar van Componenten:
 
-   ![componentstoolbarwither](assets/componentstoolbarwithre.png)
+   ![ componentStoolbarwithre ](assets/componentstoolbarwithre.png)
 
    De toolbar van componenten zoals zichtbaar aan een gebruiker met de toegang van de regelredacteur:
 
-   ![componentstoolbarwithouding](assets/componentstoolbarwithoutre.png)
+   ![ componentStoolbarwithoutre ](assets/componentstoolbarwithoutre.png)
 
    De toolbar van Componenten zoals zichtbaar aan een gebruiker zonder de toegang van de regelredacteur
 
-   Zie voor instructies over het toevoegen van gebruikers aan groepen [Gebruikersbeheer en beveiliging](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+   Voor instructies bij het toevoegen van gebruikers aan groepen, zie [ Beleid van de Gebruiker en Veiligheid ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 

@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Opmerkingen bij de huidige onderhoudrelease [!DNL Adobe Experience Manager] as a Cloud Service.
+title: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
@@ -19,48 +19,48 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16971 samengevat, die op 3 juli 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 16799.
 
-2024.7.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie .
+2024.7.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
 ### Verbeteringen {#enhancements-16971}
 
 * SITES-22948: Verwijder handelsverwijzingen in stichtingsinhoud voor AEM CS.
-* SITES-22141 [Inhoudsfragmenten] SegmentNotFoundException van CFM ModelChangeRepositoryImpl na OnRC.
+* SITES-22141: [ de Fragmenten van de Inhoud ] SegmentNotFoundException van CFM ModelChangeRepositoryImpl na OnRC.
 * SITES-21893: Uitsnijdprobleem van afbeeldingen bij de auteur-instantie.
-* SITES-21788: [Inhoudsfragmenten] Toon NOTA in CF en CF modelredacteur wanneer uiSchema voor het model wordt toegelaten.
+* SITES-21788: ] NOTA van de Vertoning van de Fragmenten van de Inhoud [ in het modelredacteur van CF en van CF wanneer uiSchema voor het model wordt toegelaten.
 * SITES-21688: Bij MSM-rollout wordt het fragmentpad (XF) niet bijgewerkt op pagina&#39;s met live kopieën.
 * SITES-21659: Terugkeer volledige naam van de gebruiker die een Model middel creeert/wijzigt/repliceert.
 * SITES-21609: eindpunt OpenAPI om inhoudsfragmenten van één model aan andere te migreren.
-* SITES-21598: [API openen] Creeer CFM - terugkeerfout als de bepaalde Weg van de Configuratie niet bestaat.
-* SITES-21491: [API openen] Het eindpunt van CF-PATCH moet live relaties op veldniveau respecteren.
-* SITES-21434: [API openen] Het eindpunt van CF-GET moet live relaties op veldniveau respecteren.
+* SITES-21598: [ Open API ] creeer CFM - terugkeerfout als de bepaalde Weg van de Configuratie niet bestaat.
+* SITES-21491: [ Open API ] het eindpunt van de PATCH van CF zou levende verhoudingen op gebiedsniveau moeten respecteren.
+* SITES-21434: [ Open API ] het eindpunt van de GET van CF zou levende verhoudingen op gebiedsniveau moeten respecteren.
 * SITES-21415: CF Editor - ondersteuning UUID-verwijzingen.
-* SITES-21326: [API openen] Geef informatie over de aanwezigheid van referenties voor een inhoudsfragment.
-* SITES-21310: [API openen] Id van inhoudsfragment toevoegen in API-reactie voor vertalingen.
+* SITES-21326: [ Open API ] verstrekt informatie over de aanwezigheid van verwijzingen voor een Fragment van de Inhoud.
+* SITES-21310: [ Open API ] voegt identiteitskaart van het Fragment van de Inhoud in vertalingen API reactie toe.
 * SITES-20859: CF Open API - Return references when retrieve a fragment by path.
-* SITES-20687: [API openen] Eindpunt voor het terugwinnen van de status van de partijverwerking.
-* SITES-20657: [API openen] Een optie geven voor het hele woord van match bij het vervangen van een tekenreeks met `FindAndReplace` eindpunt.
-* SITES-20587: [API openen] Maken `COPY` eindpunt voor inhoudsfragmenten.
-* SITES-20584: [API openen] Ophalen van verwijzingen optimaliseren.
-* SITES-20308: [API openen] Batchverwerking op API inschakelen.
-* SITES-1976: [API openen] Algemeen UI-schema voor voorwaardelijke velden.
-* SITES-1956: [Inhoudsfragmenten] Werk uiSchema bij als dit bestaat wanneer het model wordt bewerkt.
-* 18056: [API openen] Neem verwijzingen op wanneer u een inhoudsfragment naar Voorvertoning publiceert.
-* SITES-16898: [Schema] Het eindpunt van OpenAPI om inhoudsfragmenten van één model aan andere te migreren.
+* SITES-20687: [ Open API ] Eindpunt voor de herwinning van de partijverwerkingsstatus.
+* SITES-20657: [ Open API ] verstrekt optie om heel woord aan te passen wanneer het vervangen van een koord gebruikend `FindAndReplace` eindpunt.
+* SITES-20587: [ Open API ] creeer `COPY` eindpunt voor de Fragmenten van de Inhoud.
+* SITES-20584: [ Open API ] optimaliseer verwijzingsherwinning.
+* SITES-20308: [ Open API ] laat partijverwerking op API toe.
+* SITES-19976: [ Open API ] Algemeen schema UI voor voorwaardelijke gebieden.
+* SITES-19556: [ de Fragmenten van de Inhoud ] Update uiSchema als het bestaat wanneer het model wordt uitgegeven.
+* SITES-18056: [ Open API ] wanneer het publiceren van een inhoudsfragment aan Voorproef, omvat verwijzingen.
+* SITES-16898: [ het eindpunt van het Schema ] OpenAPI om inhoudsfragmenten van één model aan andere te migreren.
 * SITES-16609: Het eindpunt van Lanceringen van de Lijst.
 * SITES-16606: Create Launch Endpoint.
-* SITES-21617: [Xwalk] Maak Pagina-eigenschappen/Metagegevens bewerkbaar binnen de UE.
-* SITES-19614: [Xwalk] Paginering van werkbladeditors en oneindig schuiven.
-* SITES-22163 [Xwalk] Verbeterde ondersteuning voor inhoud die wordt aangeboden via de publicatielaag voor Edge Delivery-sites.
-* SITES-22109: [Xwalk] Verbeterde verwerking van richtext-opmaakcodes na verwerking.
-* SITES-2035: [Xwalk] Verbeterde verwerking van MSM en Launches.
-* SITES-21839: [Xwalk] Verbeterde padtoewijzing en ontsmetting voor inhoud die niet door Edge Delivery wordt aangeboden.
+* SITES-21617: [ Xwalk ] maakt de Eigenschappen/de Meta-gegevens van de Pagina editable binnen UE.
+* SITES-19614: [ Xwalk ] paginering van de redacteur van het Spreadsheet en oneindige rol.
+* SITES-22163: [ Xwalk ] Verbeterde steun voor inhoud die van publicatielaag voor de Plaatsen van Edge Delivery wordt gediend.
+* SITES-22109: [ Xwalk ] Verbeterde behandeling van richtext prijsup na verwerking.
+* SITES-22035: [ Xwalk ] Verbeterde behandeling van MSM en Lanceringen.
+* SITES-21839: [ Xwalk ] Verbeterde wegafbeelding en ontsmetting voor inhoud niet die door Edge Delivery wordt gediend.
 
 ### Opgeloste problemen {#fixed-issues-16971}
 
-* CQ-4356898: [Vertaling] outOfMemory fout voor CF die een ongebruikelijk groot aantal verbindingen bevat.
-* CQ-4357055: [Vertaling] Automatische omzetting werkt niet met de Rest API.
-* CQ-4353931: [Vertaling] Voeg jcr:uuid toe in de pagina van de vertaalbron/xf/element als deze ontbreekt.
-* CQ-4357591: [Vertaling] Wijzig de workflow &quot;Koppelen aan JCR:UID&quot; om te werken voor Pagina&#39;s/XF.
+* CQ-4356898: [ Vertaling ] outOfMemory fout voor CF die een ongebruikelijk groot aantal verbindingen bevat.
+* CQ-4357055: ] de Auto vertaling van de Vertaling [ het werken niet gebruikend Rest API.
+* CQ-4353931: [ Vertaling ] voegt jcr toe:uuid in vertaalbronpagina/xf/activa wanneer het mist.
+* CQ-4357591: [ Vertaling ] wijzig &quot;Associate JCR:UID&quot;werkschema om voor Pagina&#39;s/XF te werken.
 * FORMS-14844: Adaptive Forms staat het verzenden van formulieren toe, ondanks onvoldoende reCAPTCHA-verificatie.
 * FORMS-14984: Forms met CAPTCHA slaat validatie over als &quot;submitMetaData&quot; niet aanwezig is in de verzonden gegevens.
 * FORMS-14477: De opties &#39;Is na&#39; en &#39;Is voor&#39; in de regeleditor functioneren niet naar behoren in de datumkiezervalidatie.
@@ -68,23 +68,23 @@ Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16971 same
 * FORMS-14336: Als er geen formulierveld is geselecteerd, moet de editor worden geopend met focus op het gehele formulierelement.
 * FORMS-15061: De cirkel van de Lader blijft eindeloos bij het gebruiken aanhalen van de de dienstoptie in de regelredacteur.
 * SITES-22457: Het bevorderen van een lancering die niet diep is werkt broninhoud niet bij.
-* SITES-22748 [Inhoudsfragmenten] Foutafhandeling verbeteren voor updatetaak van inhoudsfragment
-* SITES-22349 [Inhoudsfragmenten] ContentType voor lege cf-elementen met meerdere regels kan niet worden gewijzigd.
-* SITES-22343 [Inhoudsfragmenten] Semantisch type &quot;opsomming&quot; wordt verbroken.
+* SITES-22748: [ de Fragmenten van de Inhoud ] verbeteren fout behandeling voor de Baan van de Update van het Fragment van de Inhoud
+* SITES-22349: [ de Fragmenten van de Inhoud ] ContentType voor lege multiline cf-elementen kunnen niet worden veranderd.
+* SITES-22343: {de Fragmenten van de Inhoud ] Semantische type &quot;opsomming&quot;wordt gebroken.[
 * SITES-22194: Na het instellen van de omleiding werkt model.json niet meer.
-* SITES-21953: [API openen] Etag wordt gewijzigd op basis van de volgorde van de validationStatus.
-* SITES-21894: [API openen] Verbeter de validatie van bovenliggende paden bij het maken van CF&#39;s.
-* SITES-2187: [API openen] Ongeldige ETag die door POST variaties eindpunt is teruggekeerd.
-* SITES-21657: [API openen] Verbeter bevestiging op het bezit van de Weg van het Onderzoek CF.
+* SITES-21953: [ Open API ] Etag wordt veranderd gebaseerd op de orde van validationStatus.
+* SITES-21894: [ Open API ] verbeter de bevestiging van de ouderweg wanneer het creëren van CFs.
+* SITES-21887: [ Open API ] Ongeldige ETag die door POST variaties eindpunt is teruggekeerd.
+* SITES-21657: [ Open API ] verbetert bevestiging op het bezit van de Weg van het Onderzoek van CF.
 * SITES-21949: ongeldige cursor voor zoek-API&#39;s retourneert 500.
 * SITES-20927: zoek APIs keert 500 terug wanneer de vraag mist.
-* SITES-2054: [API openen] Wijzig het genereren van publicatiepakketnamen om ongewenste conflicten te voorkomen.
+* SITES-20544: [ Open API ] Verandering de generatie van publiceer pakketnamen om eikeconflicten te vermijden.
 * SITES-19710: CVE-2022-47937 - Verwijder alle toepassingen van org.apache.sling.commons.json uit de Pagina-editor.
-* SITES-1992: [Toegankelijkheid] Knop Staalkiezer voor notities bevat geen toegankelijke naam.
-* SITES-10979: [Toegankelijkheid] Label is niet blijvend.
-* SITES-10962: [Toegankelijkheid] Knop: de knop heeft geen rol.
-* SITES-10905: [Toegankelijkheid] De status van de actieve component heeft geen contrastverhouding van 3 tot 1.
-* SITES-2974:  [Toegankelijkheid] - Horizontaal schuiven bij een breedte van 320 px.
+* SITES-11992: ] de selecteursknoop van het de staalmonster van de Annotatie van de Toegankelijkheid [ mist een toegankelijke naam.
+* SITES-10979: [ het Etiket van de Toegankelijkheid ] is niet blijvend.
+* SITES-10962: [ Knoop van de Toegankelijkheid ]: Knoop heeft geen rol.
+* SITES-10905: ] De Staat van de Toegankelijkheid [ van actieve component mist een contrastverhouding van 3 tot 1.
+* SITES-2974: [ Toegankelijkheid ] - Horizontaal het scrollen bij breedte 320px.
 * SITES-22026: Kan ervaringsfragmenten niet verplaatsen tussen mappen in AEM
 * SITES-22106: Taalswitchfunctionaliteit in de nieuwe editor voor contentfragmenten
 * SITES-21980: Inconsistente verwerking voor op UUID-gebaseerde verwijzingstypen.
@@ -96,17 +96,17 @@ Geen.
 
 ### Kennisgeving wijzigen {#change-notice-16971}
 
-* Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [de documentatie](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) voor meer informatie .
+* Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [ de documentatie ](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) voor meer details.
 
 ### Verouderde functies en API&#39;s {#deprecated-16971}
 
-Als u wilt weten wat in AEM as a Cloud Service is vervangen of verwijderd, raadpleegt u [Verouderde en verwijderde functies en API&#39;s](/help/release-notes/deprecated-removed-features.md).
+Om te weten wat wordt afgekeurd of verwijderd in AEM as a Cloud Service, zie [ Afgekeurde en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md).
 
 ### Ingesloten technologieën {#embedded-tech-16971}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 64,0 | [Oak API 1.64.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.64.0/index.html) |
-| AEM SLING-API | 2.27.2. | [API voor Apache Sling API 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | 1.4.22-1.4.0 | [HTML Sjabloontaalspecificaties](https://github.com/adobe/htl-spec) |
-| AEM-kerncomponenten | 2,25,4 | [AEM WCM Core-componenten](https://github.com/adobe/aem-core-wcm-components) |
+| AEM Oak | 1 64,0 | [ Oak API 1.64.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.64.0/index.html) |
+| AEM SLING-API | 2.27.2. | [ Apache Sling API 2.27.2 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM HTL | 1.4.22-1.4.0 | {de Specificatie van de Taal van het Malplaatje 0} HTML ](https://github.com/adobe/htl-spec)[ |
+| AEM-kerncomponenten | 2,25,4 | [ AEM de Componenten van de Kern WCM ](https://github.com/adobe/aem-core-wcm-components) |

@@ -14,9 +14,9 @@ ht-degree: 0%
 # Google-bladen of Microsoft Excel-bestanden instellen om gegevens te accepteren
 
 
-Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/create-forms.md), is het tijd om de overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen. U kunt de spreadsheet handmatig inschakelen voor het accepteren van gegevens of Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens.
+Zodra u hebt [ gecreeerd en de vorm ](/help/edge/docs/forms/create-forms.md) previewde, is het tijd om het overeenkomstige spreadsheet toe te laten beginnen gegevens te ontvangen. U kunt de spreadsheet handmatig inschakelen voor het accepteren van gegevens of Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens.
 
-![Ontwerpecosysteem op basis van documenten](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+![ op document-gebaseerde het Authoring ecosysteem ](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -28,11 +28,11 @@ Eenmaal [Het formulier maken en een voorbeeld bekijken](/help/edge/docs/forms/cr
 
 De spreadsheet inschakelen om gegevens te accepteren
 
-1. Open het werkblad met het formulier en voeg een nieuw blad toe, onder een andere naam `incoming`.
+1. Open het werkblad met het formulier en voeg een nieuw blad toe, onder een andere naam `incoming` .
 
    >[!WARNING]
    >
-   > Als de `incoming` blad is niet aanwezig, AEM verzendt geen gegevens naar het werkblad.
+   > Als het `incoming` sheet niet aanwezig is, verzendt AEM geen gegevens naar het spreadsheet.
 
 1. Voeg op dit blad een tabel in met de naam &quot;take_form&quot;. Selecteer het aantal kolommen dat nodig is om overeen te komen met de namen van de formuliervelden. Ga vervolgens op de werkbalk naar Invoegen > Tabel en klik op OK.
 
@@ -42,9 +42,9 @@ De spreadsheet inschakelen om gegevens te accepteren
 
 1. Selecteer Plakken speciaal > Rijen omzetten in kolommen op het blad &#39;inkomend&#39; om de veld-id&#39;s als kolomkoppen op dit nieuwe blad te kopiëren. Alleen velden behouden waarvan de gegevens andere gegevens moeten vastleggen, kunnen worden genegeerd.
 
-   Elke waarde in het dialoogvenster `Name` kolom van de `shared-default` blad, met uitzondering van de verzendknop, kan dienen als koptekst in het dialoogvenster `incoming` blad. Neem bijvoorbeeld de volgende afbeelding die kopteksten illustreert voor een formulier &quot;contact-us&quot;:
+   Elke waarde in de kolom `Name` van het `shared-default` -blad, met uitzondering van de verzendknop, kan fungeren als koptekst in het `incoming` -blad. Neem bijvoorbeeld de volgende afbeelding die kopteksten illustreert voor een formulier &quot;contact-us&quot;:
 
-   ![Velden voor een formulier met contactgegevens](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+   ![ Gebieden voor een contact-usvorm ](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
 
 
@@ -52,12 +52,12 @@ De spreadsheet inschakelen om gegevens te accepteren
 
    >[!NOTE]
    >
-   >Zelfs als u al eerder een voorvertoning van het blad hebt weergegeven, moet u dit opnieuw bekijken nadat u het `incoming` blad voor het eerst.
+   >Zelfs als u al eerder een voorvertoning van het blad hebt weergegeven, moet u dit opnieuw bekijken nadat u het `incoming` -blad voor het eerst hebt gemaakt.
 
 
-Nadat de veldnamen aan de `incoming` blad, kan uw formulier opmerkingen accepteren. U kunt een voorbeeld van het formulier bekijken en gegevens naar het blad verzenden.
+Nadat de veldnamen aan het `incoming` -werkblad zijn toegevoegd, kan het formulier opmerkingen accepteren. U kunt een voorbeeld van het formulier bekijken en gegevens naar het blad verzenden.
 
-Zodra het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van het formulier weergeven met Adaptief Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [aanvragen voor POST gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
+Zodra het blad opstelling is om gegevens te ontvangen, kunt u [ voorproef de vorm gebruikend het AanpassingsBlok van Forms ](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [ verzoeken van de gebruiksPOST ](#use-admin-apis-to-send-data-to-your-sheet) beginnen gegevens naar het blad te verzenden.
 
 >[!WARNING]
 >
@@ -65,7 +65,7 @@ Zodra het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van 
 
 ### Admin API&#39;s gebruiken om een spreadsheet in te schakelen voor het accepteren van gegevens
 
-U kunt ook een verzoek van de POST naar het formulier verzenden, zodat het gegevens kan accepteren en headers voor de `incoming` blad. Na ontvangst van het verzoek van de POST analyseert de dienst het lichaam van verzoek en produceert autonoom de essentiële kopballen en bladen nodig voor gegevensopname.
+U kunt ook een verzoek van de POST naar het formulier verzenden, zodat het formulier gegevens kan accepteren en kopteksten voor het `incoming` -blad kan configureren. Na ontvangst van het verzoek van de POST analyseert de dienst het lichaam van verzoek en produceert autonoom de essentiële kopballen en bladen nodig voor gegevensopname.
 
 Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
 
@@ -74,17 +74,17 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
 
    >[!WARNING]
    >
-   > Als de `incoming` Het blad bestaat niet, AEM verzendt geen gegevens naar dit werkboek.
+   > Als het `incoming` blad niet bestaat, zal AEM geen gegevens naar dit werkboek verzenden.
 
 1. Geef een voorvertoning van het blad weer in het zijpaneel.
 
    >[!NOTE]
    >
-   >Zelfs als u al eerder een voorvertoning van het blad hebt weergegeven, moet u dit opnieuw bekijken nadat u het `incoming` blad voor het eerst.
+   >Zelfs als u al eerder een voorvertoning van het blad hebt weergegeven, moet u dit opnieuw bekijken nadat u het `incoming` -blad voor het eerst hebt gemaakt.
 
-1. Verzend het verzoek van de POST om de aangewezen kopballen in te produceren `incoming` en voegt de `shared-default` bladen naar het spreadsheet, als dit nog niet het geval is.
+1. Verzend het verzoek om de POST om de juiste kopteksten op het `incoming` -blad te genereren en voeg de `shared-default` -bladen toe aan uw spreadsheet, als dit nog niet het geval is.
 
-   Als u wilt weten hoe u de aanvraag van de POST voor het instellen van uw werkblad opmaakt, raadpleegt u de [Admin API-documentatie](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). U kunt het onderstaande voorbeeld bekijken:
+   Om te begrijpen hoe te om het verzoek van de POST voor vestiging uw blad te formatteren, verwijs naar de [ Admin API documentatie ](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). U kunt het onderstaande voorbeeld bekijken:
 
    **Verzoek**
 
@@ -107,7 +107,7 @@ Admin APIs gebruiken om een spreadsheet toe te laten om gegevens goed te keuren:
    ```
 
 
-   **Antwoord**
+   **Reactie**
 
    ```JSON
    HTTP/2 200 
@@ -172,7 +172,7 @@ Er wordt een blad met de naam &quot;Slack&quot; toegevoegd aan uw Excel-werkboek
 
 ## Gegevens naar uw werkblad verzenden {#send-data-to-your-sheet}
 
-Nadat het blad is ingesteld om gegevens te ontvangen, kunt u [Een voorbeeld van het formulier weergeven met Adaptief Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [Admin API&#39;s gebruiken](#use-admin-apis-to-send-data-to-your-sheet) om gegevens naar het blad te verzenden.
+Nadat het blad wordt geplaatst om gegevens te ontvangen, kunt u [ voorproef de vorm gebruikend het AanpassingsBlok van Forms ](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) of [ gebruik Admin APIs ](#use-admin-apis-to-send-data-to-your-sheet) beginnen gegevens naar het blad te verzenden.
 
 ### Admin API&#39;s gebruiken om gegevens naar uw werkblad te verzenden
 
@@ -186,7 +186,7 @@ POST https://my-domain.com/email-form
 
 >[!NOTE]
 >
-> De URL mag niet de extensie .json hebben. U moet het blad publiceren om de verrichtingen van de POST te laten functioneren `.live` of op het productiegebied.
+> De URL mag niet de extensie .json hebben. U moet het blad publiceren zodat bewerkingen in de POST kunnen worden uitgevoerd op `.live` of in het productiedomein.
 
 #### De formuliergegevens opmaken
 
@@ -270,7 +270,7 @@ Er zijn een paar verschillende manieren waarop u de formuliergegevens in de hoof
   }'
   ```
 
-* URL gecodeerd (`x-www-form-urlencoded`) lichaam (met `content-type` header ingesteld op `application/x-www-form-urlencoded`)
+* De hoofdtekst van een URL-codering (`x-www-form-urlencoded` ) (met `content-type` header ingesteld op `application/x-www-form-urlencoded` )
 
   ```Shell
   'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
@@ -284,7 +284,7 @@ Er zijn een paar verschillende manieren waarop u de formuliergegevens in de hoof
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-Vervolgens kunt u [het bedankje aanpassen](/help/edge/docs/forms/thank-you-page-form.md).
+Daarna, kunt u [ aanpassen dankt u bericht ](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Zie ook
 

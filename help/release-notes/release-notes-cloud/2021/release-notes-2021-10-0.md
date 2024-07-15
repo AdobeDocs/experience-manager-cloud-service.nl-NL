@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release 2021.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Opmerkingen bij de release 2021.10.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Nota's van de versie voor 2021.10.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2021.10.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -21,30 +21,30 @@ In de volgende sectie worden de algemene opmerkingen bij de release voor de huid
 
 >[!NOTE]
 >
->Zie [Recente documentatieupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor meer informatie over documentatie-updates die niet rechtstreeks verband houden met een release.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2021.10.0) is 4 november 2021.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release (2021.10.0) is 4 november 2021.
 De volgende release (2021.11.0) is op 2 december 2021.
 
 ## Video vrijgeven {#release-video}
 
-Kijk eens naar de [Overzicht release oktober 2021](https://video.tv.adobe.com/v/338253) video voor een overzicht van de toegevoegde functies.
+Heb een blik bij de ](https://video.tv.adobe.com/v/338253) video van het Overzicht van de Versie van 0} Oktober 2021 {voor een samenvatting van de toegevoegde eigenschappen.[
 
-## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functie in [!DNL Sites] {#sites-features}
 
 * Inhoudsfragmentmodellen worden nu automatisch ingesteld op de status Alleen-lezen als ze eenmaal zijn gepubliceerd. Zo voorkomt u dat live API-query&#39;s per ongeluk worden afgebroken als een bewerkt model opnieuw wordt gepubliceerd. Gebruikers krijgen een waarschuwing te zien wanneer ze proberen een gepubliceerd model te bewerken. Bewerken is mogelijk bij het accepteren van de waarschuwing.
 
-## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] ondersteunt nu automatisch genereren van teksttranscripties van de ondersteunde audio- en video-elementen via een ingebouwde connector naar [!DNL Azure Media Services]. De [ondersteunde bestandstypen](/help/assets/file-format-support.md#audio-video-transcription-formats) worden automatisch getranscripeerd en de tekst wordt opgeslagen in formaat WebVTT. De WebVTT-bijschriften worden gebruikt voor effectievere zoekacties, ondertiteling of vertaling. Bovendien verbetert de functie de toegankelijkheid, de ontdekkingsmogelijkheden en de lokalisatie van de middelen.
+* [!DNL Experience Manager] biedt nu ondersteuning voor het automatisch genereren van teksttranscripties vanaf de ondersteunde audio- en video-elementen via een ingebouwde connector naar [!DNL Azure Media Services] . De [ gesteunde dossiertypes ](/help/assets/file-format-support.md#audio-video-transcription-formats) worden automatisch getranscripeerd en de tekst wordt opgeslagen in formaat WebVTT. De WebVTT-bijschriften worden gebruikt voor effectievere zoekacties, ondertiteling of vertaling. Bovendien verbetert de functie de toegankelijkheid, de ontdekkingsmogelijkheden en de lokalisatie van de middelen.
 
-### Nieuwe functie in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
+### Nieuwe functie in het [!DNL Assets] prereleasekanaal {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] Smart Crop and Swatch van afbeeldingen wordt nu aangedreven door de nieuwste Sensei-services, die verbeterde gewassen en stalen genereert. Er is ook een verbetering gestart om verschillende uitsnijdinhoud te genereren, voor dezelfde hoogte-breedteverhouding maar voor verschillende resoluties. Bovendien blijven eventuele handmatige bewerkingen behouden bij het opwerken als de breedte en hoogte in het afbeeldingsprofiel niet worden gewijzigd.
 
@@ -56,19 +56,19 @@ Kijk eens naar de [Overzicht release oktober 2021](https://video.tv.adobe.com/v/
 No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 -->
 
-## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analyses voor Adaptive Forms**: U kunt nu het gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) bewerkingen door Adobe Analytics for Adaptive Forms om gebruikersinzichten te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+* **Analytics voor Aanpassings Forms**: U kunt gedrag van zowel het programma geopende als niet het programma geopende (Anoniem) aan als Adobe Analytics voor Aangepaste Forms nu vangen en volgen om gebruikersinzichten te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms-oct-2021}
+### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#prerelease-features-forms-oct-2021}
 
-* **Externe AEM workflowgegevens voor veilige verwerking**: U kunt in-process AEM Workflows gegevens (AEM gegevens van de Variabelen van het Werkschema) opslaan die de gevoelige elementen van Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
+* **externaliseer AEM gegevens van het Werkschema voor veilige verwerking**: U kunt in-proces AEM gegevens van de Werkschema&#39;s (AEM gegevens van de Variabelen van het Werkschema) opslaan die Gevoelige Persoonlijke Gegevens (SPD) elementen in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
 
-### Bètafuncties van [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### Beta-functies van [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) hulp u een malplaatje en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Genereer documenten door sjabloonbestanden (PDF en XDP) te vullen met XML-gegevens.
    * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
@@ -100,10 +100,10 @@ De volgende release is gepland voor 9 december 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-nov}
 
-* De gebruikers kunnen nieuwe pijpleidingen van het Eind van de Voorzijde nu gebruiken om vooreind code op een versnelde manier uitsluitend op te stellen. Zie [Cloud Manager frontend Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) voor meer informatie.
+* De gebruikers kunnen nieuwe pijpleidingen van het Eind van de Voorzijde nu gebruiken om vooreind code op een versnelde manier uitsluitend op te stellen. Zie [ Cloud Manager Voorste Pijpleidingen van het Eind ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) om meer te leren.
 
   >[!IMPORTANT]
-  >U moet AEM versie hebben `2021.10.5933.20211012T154732Z` om nieuwe frontale pijpleidingen te gebruiken.
+  >U moet AEM versie `2021.10.5933.20211012T154732Z` zijn om nieuwe Front End pijpleidingen te gebruiken.
 
 * De duur van de pijpleiding van de Kwaliteit van de code wordt beduidend verminderd door de codeanalyse op een efficiëntere manier uit te voeren zonder de behoefte om een volledig AEM beeld te bouwen. Deze verandering zal geleidelijk plaatsvinden in de weken na de release.
 
@@ -113,7 +113,7 @@ De volgende release is gepland voor 9 december 2021.
 
 * Environment Creation is nu beschikbaar via openbare API.
 
-* De `x-request-id` responsheader is nu zichtbaar in de API-afspeelruimte op [www.adobe.io](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
+* De `x-request-id` antwoordkopbal is nu zichtbaar in API Playground op [ www.adobe.io ](https://www.adobe.io/). Deze kopbal is nuttig wanneer het voorleggen van de kwesties van de klantenzorg voor het oplossen van problemen.
 
 * Als gebruiker zie ik een pijplijnkaart met nulpijpleidingen die mij van de juiste begeleiding voorziet.
 
@@ -133,7 +133,7 @@ De volgende release is gepland voor 9 december 2021.
 
 * De PATCH API van de pijpleiding ontbreekt als de plaatsingsfase niet bestaat.
 
-* De `ClientlibProxyResourceCheck` de kwaliteitsregel leverde fout-positieve problemen op wanneer er clientbibliotheken waren met algemene basispaden.
+* De kwaliteitsregel `ClientlibProxyResourceCheck` gaf false positieve problemen wanneer er clientbibliotheken waren met algemene basispaden.
 
 * Foutbericht wanneer het maximale aantal opslagplaatsen is bereikt, geeft geen reden voor de fout aan.
 
@@ -142,11 +142,11 @@ De volgende release is gepland voor 9 december 2021.
 
 ## Releasedatum {#release-date-cm-oct}
 
-De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 oktober 2021.
+De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 oktober 2021.
 
 ### Wat is er nieuw? {#what-is-new-cm-oct}
 
-* Ter voorbereiding op enkele aanstaande wijzigingen wordt nu in de gebruikersinterface verwezen naar en geëtiketteerd als bestaande implementatiepijplijnen **Volledige stapel** pijpleidingen.
+* In voorbereiding op sommige aanstaande veranderingen, zullen de bestaande plaatsingspijpleidingen nu van verwijzingen worden voorzien en geëtiketteerd in het gebruikersinterface als **Volledige 1} pijpleidingen van de Stapel {.**
 
 * De kaart van de pijpleiding is verfrist om één enkel, geïntegreerd gezicht te tonen dat zowel productie als niet productiepijpleidingen toont, en de gebruiker kan Looppas/pauze direct selecteren/hervat van het actiemenu verbonden aan elke pijpleiding.
 
@@ -154,15 +154,15 @@ De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.10.0 is 14 okt
 
 * De ervaring met toevoegen en bewerken van pijpleidingen is vernieuwd en gebruikt nu vertrouwde, moderne modellen.
 
-* Gebruikers van Cloud Manager kunnen nu rechtstreeks vanuit de gebruikersinterface feedback verzenden via de **Feedback** op de rechterbovenhoek van de landingspagina.
+* De gebruikers van Cloud Manager kunnen nu voorleggen terugkoppelt direct van het gebruikersinterface via de **Terugkoppeling** knoop op bovenkant recht van de het landen pagina.
 
-* De jaarlijkse SLA-grafieken kunnen nu worden gedownload vanuit de gebruikersinterface van Cloud Manager.
+* De jaarlijkse SLA Grafieken kunnen nu van de Cloud Manager gebruikersinterface worden gedownload.
 
 * De kwaliteit van de code en de niet-productiepijpleiding zullen nu een efficiënter oppervlakkig klonen proces tijdens de bouwstijlstap gebruiken, die tot een snellere bouwtijd voor klanten met bijzonder grote git bewaarplaatsen leidt.
 
 * Voeg IP de tovenaar van de Lijst van gewenste personen nu toe zal de gebruiker informeren als maximum toegestaan aantal IP Lijsten van gewenste personen is bereikt.
 
-* De documentatie van de API voor Cloud Manager bevat nu een interactieve speelruimte waarmee aangemelde gebruikers vanuit hun browser kunnen experimenteren met de API. Zie [Afspelen van Cloud Manager-API](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) voor meer informatie .
+* De Cloud Manager API-documentatie bevat nu een interactieve afspeelruimte waarmee aangemelde gebruikers vanuit hun browser kunnen experimenteren met de API. Zie [ de Playground van Cloud Manager API ](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) voor meer details.
 
 * De knopinfo op de programmakaart is beschrijfbaarder als een selectieoptie onder &#39;Navigeren naar&#39; is uitgeschakeld. Het toont nu &quot;een productiemilieu bestaat niet.&quot;
 

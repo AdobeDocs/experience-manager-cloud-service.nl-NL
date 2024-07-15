@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Structuur van inhoudsfragment analyseren {#analyzing-content-fragments-structure}
 
-Inhoudsfragmenten zijn ontworpen voor [Levering zonder koppen met GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Dit betekent dat ze een structuur met meerdere lagen kunnen hebben.
+De Fragmenten van de inhoud worden ontworpen voor [ Hoofdloze levering gebruikend GraphQL ](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Dit betekent dat ze een structuur met meerdere lagen kunnen hebben.
 
 Experience Manager (AEM) biedt verschillende methoden voor het weergeven en analyseren van de structuur van uw fragmenten.
 
@@ -29,8 +29,8 @@ De structuur met meerdere lagen wordt opgebouwd met behulp van verwijzingen:
 
 ## Structuurelboom {#structure-tree}
 
-Open de **Structuurelboom** van de redacteurstoolbar om de hiërarchische structuur van het Inhoudsfragment, en zijn verwijzingen te tonen. Gebruik het koppelingspictogram om verwijzingen te openen.
+Open het **lusje van de boom van de Structuur** van de redacteurstoolbar om de hiërarchische structuur van het Fragment van de Inhoud, en zijn verwijzingen te tonen. Gebruik het koppelingspictogram om verwijzingen te openen.
 
 Bijvoorbeeld:
 
-![Inhoudsfragmenteditor - Structuurelijn](assets/cf-authoring-structure-tree.png)
+![ de Redacteur van het Fragment van de Inhoud - de boom van de Structuur ](assets/cf-authoring-structure-tree.png)

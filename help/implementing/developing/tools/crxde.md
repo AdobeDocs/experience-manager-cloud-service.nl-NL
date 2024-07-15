@@ -24,25 +24,25 @@ CRXDE Lite maakt deel uit van de AEM quickstart en is beschikbaar voor u om toeg
 Aan de slag met CRXDE Lite:
 
 1. Start uw lokale AEM-ontwikkeling snel.
-1. Open de URL in uw browser `https://<host>:<port>/crx/de`.
-1. Voer uw **gebruikersnaam** en **password**.
-1. Klikken **OK**.
+1. Open de URL `https://<host>:<port>/crx/de` in uw browser.
+1. Ga uw **gebruikersbenaming** en **wachtwoord** in.
+1. Klik **OK**.
 
 De gebruikersinterface van CRXDE Lite wordt als volgt weergegeven in uw browser:
 
-![De interface CRXDE Lite](assets/crxde-lite.png)
+![ de interface van CRXDE Lite ](assets/crxde-lite.png)
 
 >[!TIP]
 >
->U kunt CRXDE Lite ook openen via het menu AEM. Selecteer in het hoofdmenu **Gereedschappen** > **Algemeen** > **CRXDE Lite**.
+>U kunt CRXDE Lite ook openen via het menu AEM. Van het belangrijkste menu uitgezocht **Hulpmiddelen** > **Algemeen** > **CRXDE Lite**.
 
 ## Overzicht van de gebruikersinterface {#overview-of-the-user-interface}
 
-De gebruikersinterface van CRXDE Lite bevat veel onderdelen en functies.
+CRXDE Lite-gebruikersinterface bevat veel onderdelen en functies.
 
 ### Bovenste schakelbalk {#top-switcher-bar}
 
-De hoogste Bar van de Schakelaar laat u snel tussen CRXDE Lite en schakelen [Package Manager.](package-manager.md)
+De Bovenste Bar van de Schakelaar laat u snel tussen CRXDE Lite en [ de Manager van het Pakket schakelen.](package-manager.md)
 
 ### Knooppuntwidget {#node-path-widget}
 
@@ -50,44 +50,44 @@ De widget Pad knooppunt geeft het pad naar het momenteel geselecteerde knooppunt
 
 U kunt het ook gebruiken om naar een knoop te springen door de weg in te gaan door het hand in te gaan of het van elders te kleven en binnengaan te drukken.
 
-Het biedt ook ondersteuning voor het zoeken naar knooppunten met een specifieke knooppuntnaam. Voer de naam in van het knooppunt dat u wilt zoeken en wacht (of selecteer het zoekpictogram aan de rechterkant). Als een bepaald knooppunt of bepaalde knooppunten in het verkennervenster wordt geladen, wordt de lijst weergegeven en kunt u het pad selecteren en op Enter drukken om naar het knooppunt te navigeren. Het werkt alleen voor de knooppunten die momenteel in de CRXDE-clienttoepassing in de browser zijn geladen. Als u de hele repository wilt doorzoeken, gebruikt u **Gereedschappen** ->: **Query**.
+Het biedt ook ondersteuning voor het zoeken naar knooppunten met een specifieke knooppuntnaam. Voer de naam in van het knooppunt dat u wilt zoeken en wacht (of selecteer het zoekpictogram aan de rechterkant). Als een bepaald knooppunt of bepaalde knooppunten in het verkennervenster wordt geladen, wordt de lijst weergegeven en kunt u het pad selecteren en op Enter drukken om naar het knooppunt te navigeren. Het werkt alleen voor de knooppunten die momenteel in de CRXDE-clienttoepassing in de browser zijn geladen. Als u de volledige bewaarplaats wilt zoeken, gebruik **Hulpmiddelen** -&amp;gt: **Vraag**.
 
 ### Explorer-venster {#explorer-pane}
 
-De **Explorer-venster** geeft een structuur weer van alle knooppunten in de opslagplaats.
+Het **Pane van de Ontdekkingsreiziger** toont een boom van alle knopen in de bewaarplaats.
 
-Klik op een knooppunt om de eigenschappen ervan weer te geven in het dialoogvenster **Eigenschappen** tab. Nadat u op een knooppunt hebt geklikt, kunt u een handeling op de werkbalk selecteren. Klik nogmaals op het knooppunt om de naam ervan te wijzigen.
+Klik een knoop om zijn eigenschappen op het **Eigenschappen** lusje te tonen. Nadat u op een knooppunt hebt geklikt, kunt u een handeling op de werkbalk selecteren. Klik nogmaals op het knooppunt om de naam ervan te wijzigen.
 
 Met het structuurnavigatiefilter (het binoculars-pictogram) kunt u de knooppunten in de opslagplaats filteren waarvoor de naam de invoertekst bevat. Het is alleen van toepassing op knooppunten die lokaal zijn geladen.
 
 ### Venster bewerken {#edit-pane}
 
-De **Venster bewerken** Hiermee kunt u de inhoud van het geselecteerde bestand in de opslagplaats bekijken. Elk geopend bestand wordt in het deelvenster weergegeven als een eigen tabblad.
+**geeft Pane** uit laat u de inhoud van het momenteel-geselecteerde dossier in de bewaarplaats bekijken. Elk geopend bestand wordt in het deelvenster weergegeven als een eigen tabblad.
 
-De **Home** kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot de documentatie en ondersteuning van Adoben van ontwikkelaars.
+Het **lusje van het Huis** {laat u inhoud en/of documentatie en toegangsontwikkelaardocumentatie en Adobe steun zoeken.
 
-Dubbelklik op een bestand in het dialoogvenster **Explorer-venster** om de inhoud ervan in de **Venster bewerken**. U kunt het dan wijzigen en de veranderingen bewaren.
+Dubbelklik een dossier in de **Ruit van de Ontdekkingsreiziger** om zijn inhoud in **te tonen geef Pane** uit. U kunt het dan wijzigen en de veranderingen bewaren.
 
-Als een bestand eenmaal is bewerkt in de **Venster bewerken** zijn de volgende gereedschappen beschikbaar op de werkbalk:
+Zodra een dossier in **wordt uitgegeven geef Pane** uit, zijn de volgende hulpmiddelen beschikbaar op de toolbar:
 
-* **Tonen in boomstructuur** - Geeft het bestand weer in de boomstructuur van de opslagplaats.
-* **Zoeken/vervangen** - Voert een zoekopdracht of vervangactie uit.
+* **toon in boom** - toont het dossier in de opbergingstructuur.
+* **Onderzoek/vervang** - voert een onderzoek uit of vervangt.
 
-Dubbelklik op de statusregel van het dialoogvenster **Venster bewerken** opent de **Ga naar regel** zodat u een specifiek regelnummer kunt invoeren.
+Dubbelklik de statuslijn van **uitgeeft Pane** opent **ga naar lijn** dialoog zodat kunt u een specifiek lijnaantal ingaan.
 
 ### Tabblad Eigenschappen {#properties-tab}
 
-De **Tabblad Eigenschappen** Hiermee geeft u de eigenschappen weer van het knooppunt dat u hebt geselecteerd. U kunt nieuwe eigenschappen toevoegen of bestaande eigenschappen verwijderen.
+Het **Lusje van Eigenschappen** toont de eigenschappen van de knoop die u hebt geselecteerd. U kunt nieuwe eigenschappen toevoegen of bestaande eigenschappen verwijderen.
 
 ### Tabblad Toegangsbeheer {#access-control-tab}
 
-De **Tabblad Toegangsbeheer** geeft rechten weer op basis van het huidige pad, de huidige opslagplaats of het huidige hoofd.
+Het **Lusje van het Toegangsbeheer** toont toestemmingen die op de huidige weg, de bewaarplaats, of het hoofd worden gebaseerd.
 
 De machtigingen zijn onderverdeeld in de volgende categorieën.
 
-* **Toepasselijk toegangsbeheerbeleid** - Het beleid dat op de huidige selectie kan worden toegepast
-* **Lokaal beleid voor toegangsbeheer** - Het huidige beleid dat lokaal wordt toegepast op de huidige selectie
-* **Effectief beleid voor toegangscontrole** - Het huidige beleid dat wordt toegepast voor de huidige selectie, die lokaal kan worden ingesteld of kan worden overgeërfd van bovenliggende knooppunten
+* **Toepasselijk Beleid van het Toegangsbeheer** - het beleid dat op de huidige selectie kan worden toegepast
+* **Lokaal Beleid van het Toegangsbeheer** - het huidige beleid dat plaatselijk op de huidige selectie wordt toegepast
+* **Effectief Beleid van het Toegangsbeheer** - het huidige beleid dat voor de huidige selectie wordt toegepast, die plaatselijk zou kunnen worden geplaatst of van ouderknopen worden geërft
 
 >[!NOTE]
 >
@@ -95,161 +95,161 @@ Om toegangsbeheerinformatie te kunnen zien, moet de gebruiker het programma open
 
 ### Tabblad Replicatie {#replication-tab}
 
-De **Tabblad Replicatie** Toont de replicatiestatus van huidige knoop. U kunt het huidige knooppunt repliceren en herhalen.
+Het **Lusje van de Replicatie** toont de replicatiestatus van huidige knoop. U kunt het huidige knooppunt repliceren en herhalen.
 
 ### Tabblad Console {#console-tab}
 
-De **Tabblad Console** geeft logberichten weer. U kunt het logboekniveau vormen, de console ontruimen, bij de geselecteerde rolpositie vastzetten en het tonen van berichten toelaten/onbruikbaar maken.
+Het **Lusje van de Console** toont logboekberichten. U kunt het logboekniveau vormen, de console ontruimen, bij de geselecteerde rolpositie vastzetten en het tonen van berichten toelaten/onbruikbaar maken.
 
 ### Tabblad Informatie maken {#build-info-tab}
 
-De **Tabblad Informatie maken** geeft informatie weer wanneer een bundel wordt gemaakt.
+Het **lusje van Info van de Bouwstijl** toont informatie wanneer een bundel wordt gebouwd.
 
 ### Knop Vernieuwen {#refresh-button}
 
-De **Knop Vernieuwen** Hiermee vernieuwt u de huidige selectie. Wijzigingen van andere gebruikers worden bijgewerkt in uw weergave van de opslagplaats. Wijzigingen die u hebt aangebracht, blijven ongewijzigd.
+De **verfrist Knoop** verfrist de huidige selectie. Wijzigingen van andere gebruikers worden bijgewerkt in uw weergave van de opslagplaats. Wijzigingen die u hebt aangebracht, blijven ongewijzigd.
 
 ### Alle knoppen opslaan {#save-all-button}
 
-De **Alle knoppen opslaan** Hiermee slaat u alle aangebrachte wijzigingen op. Tot u verkiest om te bewaren, zijn de veranderingen tijdelijk, en verloren wanneer u de console weggaat.
+**sparen Al Knoop** bewaart alle veranderingen u hebt aangebracht. Tot u verkiest om te bewaren, zijn de veranderingen tijdelijk, en verloren wanneer u de console weggaat.
 
-* **Vorige versie** - Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in het geselecteerde knooppunt sinds de laatste opslaghandeling en wordt vervolgens de huidige status van de opslagplaats voor het geselecteerde knooppunt opnieuw geladen
-* **Alles terugkeren** - Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in de gehele opslagplaats sinds de laatste opslaghandeling, en wordt vervolgens de huidige status van de opslagplaats opnieuw geladen
+* **terugkeren** - verwerpt alle veranderingen die u op de geselecteerde knoop sinds laatste sparen actie hebt aangebracht, dan herlaadt de huidige staat van de bewaarplaats voor de geselecteerde knoop
+* **terugkeert allen** - verwerpt alle veranderingen die u door de volledige bewaarplaats sinds laatste sparen actie hebt aangebracht, dan herlaadt de huidige staat van de bewaarplaats
 
 ### Knop Maken {#create-button}
 
-De **Knop Maken** is een drop-down menu om het volgende onder de geselecteerde knoop tot stand te brengen:
+**creeer Knoop** is een drop-down menu om het volgende onder de geselecteerde knoop tot stand te brengen:
 
 * Node - een knoop met een willekeurig knooptype
-* Bestand - een `nt:file` node en its nt:resource subnode
-* Map - een `nt:folder` node
+* File - an `nt:file` node and its nt:resource subnode
+* Map - een knooppunt `nt:folder`
 
 ### Knop Verwijderen {#delete-button}
 
-De **Knop Verwijderen** Hiermee verwijdert u het geselecteerde knooppunt.
+De **Knoop van de Schrapping** schrapt de geselecteerde knoop.
 
 ### Knop kopiëren {#copy-button}
 
-De **Knop kopiëren** Kopieert het geselecteerde knooppunt.
+De **Knoop van het Exemplaar** kopieert de geselecteerde knoop.
 
 ## Knop Plakken {#paste-button}
 
-De **Knop Plakken** plakt het gekopieerde knooppunt onder het geselecteerde knooppunt.
+De **Knoop van het Deeg** kleeft de gekopieerde knoop onder de geselecteerde knoop.
 
 ### Knop Verplaatsen {#move-button}
 
-De **Knop Verplaatsen** Hiermee wordt het geselecteerde knooppunt verplaatst naar het knooppunt dat via het dialoogvenster is ingesteld.
+De **Knoop van de Beweging** beweegt de geselecteerde knoop aan de knoop die door de dialoog wordt geplaatst.
 
 ### Naam wijzigen {#rename-button}
 
-De **Knop Naam wijzigen** wijzigt de naam van het geselecteerde knooppunt.
+**noem Knoop anders** anders noemt de geselecteerde knoop.
 
 ### Mixins {#mixins-button}
 
-De **Mixins, knop** Hiermee kunt u gemengde typen toevoegen aan het knooppunttype. De mixintypen worden meestal gebruikt om geavanceerde functies toe te voegen.
+De **Knoop van Mixins** laat u mixintypes aan het knooptype toevoegen. De mixintypen worden meestal gebruikt om geavanceerde functies toe te voegen.
 
 ### Gereedschappen {#tools-button}
 
-De **Gereedschapknop** is een vervolgkeuzemenu met de volgende gereedschappen beschikbaar:
+De **Knoop van Hulpmiddelen** is een drop-down menu met de volgende beschikbare hulpmiddelen:
 
-* **Serverconfiguratie** - toegang tot de Felix-console (ook beschikbaar op `https://<host>:<port>/system/console/configMgr`)
-* **Query** - de gegevensopslagplaats opvragen
-* **Rechten** - om rechten weer te geven en toe te voegen
-* **Toegangsbeheer testen** - om de toestemming voor bepaalde paden en/of aangever te testen
-* **Notitietype exporteren** - knooppunttypen in het systeem exporteren als CND-notatie
-* **Notitietype importeren** - om knooppunttypes in te voeren gebruikend aantekening CND.
+* **Config van de Server** - om tot de Console van de Felix (ook beschikbaar bij `https://<host>:<port>/system/console/configMgr`) toegang te hebben
+* **Vraag** - om de bewaarplaats te vragen
+* **Bevoegdheden** - om voorrechten te bekijken en toe te voegen
+* **Controle van de Toegang van de Test** - om de toestemming voor bepaalde weg en/of hoofd te testen
+* **Type van Knoop van de Uitvoer** - om knooptypes in het systeem als aantekening uit te voeren CND
+* **het Type van Knoop van de Invoer** - om knooptypes in te voeren gebruikend aantekening CND.
 
 ### Aanmeldingswidget {#login-widget}
 
-De **Aanmeldingswidget** geeft de momenteel aangemelde gebruiker weer.
+De **Login Widget** toont momenteel het programma geopende gebruiker.
 
-Klik op deze knop om u aan te melden of opnieuw aan te melden als een andere gebruiker. De `@crx.default` geeft aan dat u zich in de standaardwerkruimte (en alleen) in de repository bevindt.
+Klik op deze knop om u aan te melden of opnieuw aan te melden als een andere gebruiker. `@crx.default` geeft aan dat u zich in de standaardwerkruimte (en alleen in de standaardwerkruimte) in de opslagplaats bevindt.
 
-De **Voorkeuren** U kunt deze optie gebruiken om de taal van de gebruikersinterface in te stellen en de sneltoetsen voor verschillende handelingen, zoals opslaan, zoeken, notities maken enzovoort, weer te geven en aan te passen.
+De **optie van de Voorkeur** kan worden gebruikt om uw taal te plaatsen UI en de hete sleutels voor diverse acties zoals sparen, onderzoek te bekijken, nota, etc. tot stand te brengen.
 
 ## Een map maken {#creating-a-folder}
 
 Een map met CRXDE Lite maken:
 
 1. Open CRXDE Lite in uw browser.
-1. Klik in het navigatievenster met de rechtermuisknop op de map waaronder u de nieuwe map wilt maken en selecteer **Maken...** vervolgens **Map maken...**.
+1. In de ruit van de Navigatie, klik de omslag met de rechtermuisknop aan waaronder u de nieuwe omslag wilt tot stand brengen, creeert de uitgezochte **...**, dan **leidt tot Omslag...**.
 
-1. Voer de map in **Naam** en klik op **OK**.
+1. Ga de omslag **Naam** in en klik **O.K.**.
 
-1. Klikken **Alles opslaan** om de wijzigingen op de server op te slaan.
+1. Klik **sparen allen** om de veranderingen op de server te bewaren.
 
 ## Een knooppunt maken {#creating-a-node}
 
 Een knooppunt maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. In de [**Deelvenster Exploderer**,](#explorer-pane) Klik met de rechtermuisknop op het knooppunt waar u het nieuwe knooppunt wilt maken, selecteer **Maken** vervolgens **Knooppunt maken**.
-1. Voer de **Naam** en selecteert u de **Type**.
-1. Klikken **OK**.
-1. Klik op de knop [**Alle knoppen opslaan**](#save-all-button) om de wijzigingen op de server op te slaan.
+1. In het [**Pane Exploderer**, ](#explorer-pane) klik de knoop met de rechtermuisknop aan waar u de nieuwe knoop wilt tot stand brengen, **creeer**, dan **creeer Knoop**.
+1. Ga de **Naam** in en selecteer het **Type**.
+1. Klik **OK**.
+1. Klik [**sparen Al Knoop**](#save-all-button) om de veranderingen op de server te bewaren.
 
 U kunt het knooppunt nu aan uw behoeften aanpassen door eigenschappen te wijzigen of nieuwe knooppunten te maken.
 
 >[!NOTE]
 >
-De meeste bewerkingen, inclusief **Knooppunt maken**, houdt alle wijzigingen in het geheugen bij en slaat deze alleen op in de opslagplaats bij het opslaan (met de [**Alle knoppen opslaan**](#save-all-button)). Sommige bewerkingen, zoals verplaatsen, worden echter automatisch voortgezet.
+De meeste uitgeven verrichtingen, met inbegrip van **leiden Knoop**, houdt alle veranderingen in geheugen, en slaat hen slechts op in de bewaarplaats op (het gebruiken van [**sparen Alle Knoop**](#save-all-button)). Sommige bewerkingen, zoals verplaatsen, worden echter automatisch voortgezet.
 >
-De validatie met betrekking tot of het gemaakte knooppunt wordt toegestaan door het knooppunttype van het bovenliggende knooppunt, wordt ook uitgevoerd door de gegevensopslagruimte wanneer wijzigingen worden opgeslagen. Als u een foutbericht ontvangt tijdens het opslaan van een knooppunt, controleert u of de inhoudsstructuur geldig is (u kunt bijvoorbeeld geen `nt:unstructured` knooppunt als onderliggend element van `nt:folder` knooppunt).
+De validatie met betrekking tot of het gemaakte knooppunt wordt toegestaan door het knooppunttype van het bovenliggende knooppunt, wordt ook uitgevoerd door de gegevensopslagruimte wanneer wijzigingen worden opgeslagen. Als u een foutbericht ontvangt tijdens het opslaan van een knooppunt, controleert u of de inhoudsstructuur geldig is (u kunt bijvoorbeeld geen `nt:unstructured` -knooppunt maken als onderliggend knooppunt van `nt:folder` -knooppunt).
 
 ## Een eigenschap maken {#creating-a-property}
 
 Een eigenschap maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. In de [**Deelvenster Exploderer**,](#explorer-pane) Selecteer het knooppunt waaraan u de nieuwe eigenschap wilt toevoegen.
-1. In de [**Tabblad Eigenschappen**](#properties-tab) Voer in het onderste venster het **Naam** de **Type** en de **Waarde**.
-1. Klikken **Toevoegen**.
-1. Klik op de knop [**Alle knoppen opslaan**](#save-all-button) om de wijzigingen op de server op te slaan.
+1. In het [**Deelvenster Exploderer**, ](#explorer-pane) selecteer de knoop waar u het nieuwe bezit wilt toevoegen.
+1. In het [**Lusje van Eigenschappen**](#properties-tab) in de bodemruit, ga de **Naam** in, het **Type**, en de **Waarde**.
+1. Klik **toevoegen**.
+1. Klik [**sparen Al Knoop**](#save-all-button) om de veranderingen op de server te bewaren.
 
 ## Een bestand maken {#creating-a-file}
 
 Een bestand maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. In de [**Deelvenster Exploderer**,](#explorer-pane) Klik met de rechtermuisknop op de component waar u het bestand wilt maken, selecteer **Maken** vervolgens **Bestand maken**.
-1. Voer het bestand in **Naam** , met inbegrip van de verlenging ervan.
-1. Klikken **OK**.
-1. Het nieuwe bestand wordt geopend als een tabblad in het dialoogvenster [**Venster bewerken**.](#edit-pane)
+1. In het [**Pane Exploderer**, ](#explorer-pane) klik de component met de rechtermuisknop aan waar u het dossier wilt tot stand brengen, **creeer**, dan **creeer Dossier**.
+1. Ga het dossier **Naam** met inbegrip van zijn uitbreiding in.
+1. Klik **OK**.
+1. Het nieuwe dossier opent als lusje in [**geeft Pane** uit.](#edit-pane)
 1. Bewerk het bestand.
-1. Klik op de knop [**Alle knoppen opslaan**](#save-all-button) om de wijzigingen op te slaan
+1. Klik [**sparen Al Knoop**](#save-all-button) om de veranderingen te bewaren.
 
 ## Nodetypen exporteren en importeren {#exporting-and-importing-node-types}
 
-Met CRXDE Lite kunt u knooppunttypedefinities importeren en/of exporteren in [Compacte naamruimte en knooppuntdefinitie (CND)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Met CRXDE Lite kunt u knooptype definities in [ Compacte Namespace en van het Type van Knoop (CND) notatie invoeren en/of uitvoeren ](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Een definitie van een knooptype exporteren in CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
 1. Selecteer het vereiste knooppunt.
-1. Selecteren **Gereedschappen** dan **Notitietype exporteren**.
+1. Selecteer **Hulpmiddelen** toen **het Type van Knoop van de Uitvoer**.
 1. De definitie wordt weergegeven in CND-notatie op een nieuw tabblad in uw browser.
 1. Sla indien nodig de gegevens op.
 
 Een definitie van het knooppunttype importeren:
 
 1. Open CRXDE Lite in uw browser.
-1. Selecteren **Gereedschappen** dan **Notitietype importeren**.
-1. Er wordt een nieuw tabblad geopend in het dialoogvenster [**Venster bewerken**](#edit-pane) gelabeld **Notitietype importeren**.
-1. Voer de CND-notatie voor de definitie in het tekstvak van het dialoogvenster **Notitietype importeren** tab.
-1. Controleren **Update toestaan** als u een bestaande definitie bijwerkt.
-1. Klikken **Importeren**.
+1. Selecteer **Hulpmiddelen** toen **het Type van Knoop van de Invoer**.
+1. Een nieuw lusje opent in [**uitgeeft Pane**](#edit-pane) geëtiketteerd **het Type van Knoop van de Invoer**.
+1. Ga de aantekening CND voor de definitie in het tekstvakje van het **Type van Knoop van de Invoer** tabel in.
+1. Controle **staat Update** toe als u een bestaande definitie bijwerkt.
+1. Klik **Invoer**.
 
 ## Logboekregistratie {#logging}
 
-Met CRXDE Lite kunt u het bestand weergeven `error.log` die zich in het bestandssysteem bevindt op `<aem-install-dir>/crx-quickstart/logs` en filtreer het met het aangewezen logboekniveau. Ga als volgt te werk:
+Met CRXDE Lite kunt u het bestand `error.log` weergeven dat zich in het bestandssysteem op `<aem-install-dir>/crx-quickstart/logs` bevindt en dit filteren met het juiste logniveau. Ga als volgt te werk:
 
 1. Open CRXDE Lite in uw browser.
-1. In het vervolgkeuzemenu rechts van het dialoogvenster [**Tabblad Console**](#console-tab) onder aan het venster selecteert u **Serverlogboeken**.
-1. Klik op de knop **Stoppen** om de berichten weer te geven.
+1. In het drop-down menu op het recht van het [**Lusje van de Console**](#console-tab) bij de bodem van het venster, uitgezochte **Logboeken van de Server**.
+1. Klik het **pictogram van het Einde** om de berichten te tonen.
 
 U kunt:
 
-* Pas de logboekparameters in de Console van het Felix aan door te klikken **Logboekconfiguraties** pictogram.
-* De berichten wissen door op de knop **Console wissen** pictogram.
-* Plaats het bericht op de huidige selectie door op de knop **Puntconsole** pictogram.
-* De weergave van berichten in- of uitschakelen door op de knop **Stoppen** pictogram.
+* Pas de logboekparameters in de Console van de Felix aan door het **Logging van Configuraties** pictogram te klikken.
+* Wis de berichten door het **Duidelijke pictogram van de Console** te klikken.
+* Zet het bericht bij de huidige selectie vast door het **pictogram van de Console van het Punt** te klikken.
+* Laat of maak het tonen van berichten onbruikbaar door het **pictogram van het Einde** te klikken.

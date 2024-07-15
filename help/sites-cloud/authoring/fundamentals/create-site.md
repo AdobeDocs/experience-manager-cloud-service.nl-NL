@@ -22,4 +22,4 @@ Leer hoe beheerders een site maken AEM sitesjablonen gebruiken om de stijl en st
 
 Voordat auteurs van inhoud pagina&#39;s met nieuwe inhoud kunnen maken, moet de site eerst worden gemaakt. Het succes van een site hangt sterk af van de manier waarop u de sitestructuur, de opmaak en de initiële inhoud in overweging neemt en plant. Daarom wordt het maken van de eerste site over het algemeen uitgevoerd door een AEM beheerder.
 
-Ga voor meer informatie over hoe het maken van sites snel en flexibel wordt door het gebruik van sitesjablonen naar [Nieuwe documentatie voor sitebeheerders maken](/help/sites-cloud/administering/site-creation/create-site.md).
+Meer over leren hoe het gebruik van plaatsmalplaatjes het proces van de plaatsverwezenlijking snel en flexibel maakt, zie [ Creërend een Nieuwe documentatie van de beheerder van de Plaats ](/help/sites-cloud/administering/site-creation/create-site.md).

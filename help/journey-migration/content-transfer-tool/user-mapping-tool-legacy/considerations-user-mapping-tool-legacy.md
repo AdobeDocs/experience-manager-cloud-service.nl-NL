@@ -17,13 +17,13 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Deze documentatie verwijst naar een verouderde versie van het hulpmiddel. Voor meer informatie over de meest recente versie raadpleegt u [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Deze documentatie verwijst naar een verouderde versie van het hulpmiddel. Voor meer informatie over de recentste versie, zie [ Toewijzing van de Gebruiker en Belangrijkste Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Uitzonderlijke gevallen {#exceptional-cases}
 
 De volgende specifieke gevallen worden geregistreerd:
 
-1. Als een gebruiker geen e-mailadres heeft in het dialoogvenster `profile/email` van hun *jcr* wordt de gebruiker of groep in kwestie gemigreerd, maar niet toegewezen. Deze regel is zelfs van toepassing als het e-mailadres wordt gebruikt als gebruikersnaam voor het aanmelden.
+1. Als een gebruiker geen e-mailadres op het `profile/email` gebied van hun *jcr* knoop heeft, wordt de gebruiker of de groep in kwestie gemigreerd maar niet in kaart gebracht. Deze regel is zelfs van toepassing als het e-mailadres wordt gebruikt als gebruikersnaam voor het aanmelden.
 
 1. Als er geen e-mail wordt gevonden op het systeem van het Identity Management System (IMS) van de Adobe voor de gebruikte organisatie-id (of als de IMS-id niet kan worden opgehaald), wordt de gebruiker of groep gemigreerd, maar niet toegewezen.
 
@@ -35,7 +35,7 @@ De volgende specifieke gevallen worden geregistreerd:
 
 ## Aanvullende overwegingen {#additional-considerations}
 
-* Als de instelling **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** is ingesteld, worden reeds overgedragen gebruikers op de instantie Cloud Service verwijderd. De gehele bestaande opslagplaats wordt ook verwijderd en er wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Met deze handeling worden ook alle instellingen opnieuw ingesteld, inclusief de machtigingen voor de Cloud Service van het doel. Dit is waar voor een beheerder die aan de **beheerders** groep. De gebruiker van admin moet aan de **beheerders** groep om het toegangstoken voor CTT terug te winnen.
+* Als het plaatsen **bestaande inhoud op de instantie van de Wolk alvorens worden geplaatst** wordt onttrokken, worden reeds overgebracht gebruikers op de instantie van de Cloud Service geschrapt. De gehele bestaande opslagplaats wordt ook verwijderd en er wordt een nieuwe opslagplaats gemaakt waarin inhoud wordt opgenomen. Deze actie stelt ook alle montages met inbegrip van toestemmingen op de instantie van de doelCloud Service terug en is waar voor een admin gebruiker die aan de **wordt toegevoegd beheerders** groep. De admin gebruiker moet aan de **beheerders** groep worden gelezen om het toegangstoken voor CTT terug te winnen.
 
 * De Adobe adviseert dat u om het even welke bestaande gebruiker uit de AEM van de doelCloud Service alvorens CTT met de Toewijzing van de Gebruiker in werking te stellen verwijdert. Deze actie is nodig om conflicten te voorkomen tussen migrerende gebruikers van de bron AEM instantie aan de AEM instantie van het doel. Conflicten kunnen optreden tijdens inname als dezelfde gebruiker bestaat op de bron AEM instantie en de AEM instantie.
 
@@ -47,4 +47,4 @@ De volgende specifieke gevallen worden geregistreerd:
 
 ### Volgende functies {#whats-next}
 
-Zodra u de belangrijke overwegingen en de uitzonderlijke gevallen hebt geleerd, bent u nu klaar om het hulpmiddel te gebruiken. Zie [Gebruikerstoewijzing gebruiken](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md) voor meer informatie .
+Zodra u de belangrijke overwegingen en de uitzonderlijke gevallen hebt geleerd, bent u nu klaar om het hulpmiddel te gebruiken. Zie [ Gebruikend het Hulpmiddel van de Toewijzing van de Gebruiker ](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md) voor meer details.

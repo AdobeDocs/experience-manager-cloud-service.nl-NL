@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 Wanneer u een adaptief formulier maakt met een XML-schema als formuliermodel, hebt u basiskennis van XML-schema&#39;s nodig. Bovendien wordt aangeraden de volgende inhoud vóór dit artikel te lezen.
 
 * [Een adaptief formulier maken](creating-adaptive-form.md)
-* [XML-schema](https://www.w3.org/TR/xmlschema-2/)
+* [ schema van XML ](https://www.w3.org/TR/xmlschema-2/)
 
 ## Een XML-schema gebruiken als formuliermodel {#using-an-xml-schema-as-form-model}
 
@@ -137,7 +137,7 @@ U kunt de volgende kenmerken toevoegen aan de elementen van het XML-schema om sp
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>Hiermee wordt een veld verplicht gemarkeerd<br /> </td>
+   <td>Merkt een verplicht gebied <br /> </td>
    <td>Kenmerk</td>
   </tr>
   <tr>
@@ -166,7 +166,7 @@ U kunt de volgende kenmerken toevoegen aan de elementen van het XML-schema om sp
 >* Het eerste teken van de elementnaam omzetten in hoofdletters
 >* Witruimte invoegen bij grenzen van camelhoofdletters.
 >
->Als u bijvoorbeeld de opdracht `userFirstName` schema-element, het bijschrift dat in het adaptieve formulier wordt gegenereerd, is `User First Name`.
+>Als u bijvoorbeeld het schema-element `userFirstName` toevoegt, wordt het bijschrift dat wordt gegenereerd in het adaptieve formulier, ingesteld op `User First Name` .
 
 ## Acceptabele waarden voor een adaptieve formuliercomponent beperken {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -197,7 +197,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
    <td>
     <ul>
      <li>Numeriek vak</li>
-     <li>Numerieke stap<br /> </li>
+     <li>Numerieke stap <br /> </li>
      <li>Datumkiezer</li>
     </ul> </td>
   </tr>
@@ -284,21 +284,21 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
 
 ## Veelgestelde vragen {#frequently-asked-questions}
 
-**Ik heb een lange complexe structuur in de Inhoudszoeker. Hoe kan ik een specifiek element vinden?**
+**ik heb een lange complexe structuur in de Vinder van de Inhoud. Hoe kan ik een specifiek element vinden?**
 
 U hebt twee opties:
 
 * Door de boomstructuur schuiven
 * Gebruik het vak Zoeken om een element te zoeken
 
-**Wat is een bindRef?**
+**wat is een bindRef?**
 
-A `bindRef` is de verbinding tussen een adaptieve component van de Vorm en een schemaelement of attribuut. Het dicteert de `XPath` waarbij de waarde die is vastgelegd vanuit deze component of dit veld beschikbaar is in de uitvoer-XML. A `bindRef`wordt ook gebruikt bij het vooraf invullen van een veldwaarde in vooraf ingevulde (vooraf ingevulde) XML.
+A `bindRef` is de verbinding tussen een adaptieve component van de Vorm en een schemaelement of attribuut. De waarde die wordt vastgelegd vanuit deze component of dit veld, wordt voorgeschreven in de `XPath` waar de waarde beschikbaar is in de uitvoer-XML. A `bindRef` wordt ook gebruikt wanneer het prepopuleren van een gebiedswaarde van vooraf ingevulde (vooraf ingevulde) XML.
 
-**Waarom kan ik geen afzonderlijke elementen van een subformulier (structuur gegenereerd van een complex type) slepen voor herhaalbare subformulieren (waarden voor minOccurs of maxOccurs zijn groter dan 1)?**
+**waarom ik niet individuele elementen van een subformulier (structuur die van om het even welk complex type wordt geproduceerd) voor herhaalbare subforms (minOccurs of maxOccurs waarden zijn groter dan 1) kan slepen?**
 
 In een herhaalbaar subformulier moet u het subformulier Voltooien gebruiken. Als u alleen selectieve velden wilt, gebruikt u de volledige structuur en verwijdert u de ongewenste velden.
 
 >[!MORELIKETHIS]
 >
->* [JSON-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-json-schema-form-model.md)
+>* [ Schema van JSON van het Ontwerp voor een AanpassingsVorm ](/help/forms/adaptive-form-json-schema-form-model.md)

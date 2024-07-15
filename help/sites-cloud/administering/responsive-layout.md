@@ -14,20 +14,20 @@ ht-degree: 0%
 
 # De container voor lay-out en de lay-outmodus configureren {#configuring-layout-container-and-layout-mode}
 
-[Responsieve lay-out](/help/sites-cloud/authoring/page-editor/responsive-layout.md) is een mechanisme om te realiseren [responsief webontwerp.](https://en.wikipedia.org/wiki/Responsive_web_design) Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
+[ Responsieve Lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) is een mechanisme om [ ontvankelijk Webontwerp te realiseren.](https://en.wikipedia.org/wiki/Responsive_web_design) Hierdoor kan de auteur van de inhoud webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
 
 AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinatie mechanismen:
 
-* **[Layout Container](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Deze component biedt een rasteralineasysteem waarmee u componenten kunt toevoegen en positioneren binnen een responsief raster.
+* **[de Container van de Lay-out](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Deze component verstrekt een net-paragraaf systeem dat u toestaat om componenten binnen een ontvankelijk net toe te voegen en te plaatsen.
    * Het kan als standaardparsys voor uw pagina worden gebruikt en/of ter beschikking gesteld aan auteurs in componentenbrowser.
-   * De standaardwaarde **Layout Container** component wordt gedefinieerd onder `/libs/wcm/foundation/components/responsivegrid`.
+   * De standaard **component van de Container van 0} Lay-out wordt bepaald onder `/libs/wcm/foundation/components/responsivegrid`.**
    * U kunt lay-outcontainers definiëren:
       * Als een component die de gebruiker aan een pagina kan toevoegen.
       * Als standaardparsys voor de pagina.
       * Als zowel component als standaard parsys.
          * U kunt de lay-outcontainer als standaard voor de pagina hebben, terwijl het toestaan van de gebruiker om verdere lay-outcontainers binnen dit toe te voegen; bijvoorbeeld, om kolomcontrole te bereiken.
-* **[Lay-outmodus](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om de inhoud binnen het responsieve raster te plaatsen.
-* **[Emulator](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
+* **[Wijze van de Lay-out](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Zodra de lay-outcontainer op uw pagina wordt geplaatst kunt u de **3} wijze van de Lay-out gebruiken {om inhoud binnen het ontvankelijke net te plaatsen.**
+* **[Mededinger](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - dit staat u toe om ontvankelijke websites tot stand te brengen en uit te geven die de lay-out volgens apparaat/venstergrootte door componenten op elkaar inwerkend resizing opnieuw rangschikken. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
 
 Met deze responsieve rastermechanismen kunt u:
 
@@ -38,23 +38,23 @@ Met deze responsieve rastermechanismen kunt u:
 
 >[!NOTE]
 >
->Wanneer u een site maakt op basis van de [Projectarchetype](#addlink) of van de [Standaardsitesjabloon](#addlink), wordt de ontvankelijke lay-out over het algemeen gevormd. Anders moet u [De component Layout Container activeren](#enable-the-layout-container-component-for-page) voor uw pagina&#39;s.
+>Wanneer het creëren van een plaats van het [ Archetype van het Project ](#addlink) of van het [ StandaardMalplaatje van de Plaats ](#addlink), wordt de ontvankelijke lay-out over het algemeen gevormd. Anders, moet u de component van de Container van de Lay-out ](#enable-the-layout-container-component-for-page) voor uw pagina&#39;s activeren.[
 
 ## De emulator inschakelen {#enabling-emulator}
 
-De [Projectarchetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) en de [Standaardsitesjabloon](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) zijn al ingeschakeld om de emulator te gebruiken. Als u uw eigen inhoud hebt ontwikkeld die niet is gebaseerd op de Core Components of archetype, raadpleegt u het document [Responsief ontwerp](/help/implementing/developing/introduction/responsive-design.md) voor meer informatie over hoe u uw componenten kunt ontwikkelen terwijl u deze functies gebruikt.
+Het [ Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) en [ StandaardMalplaatje van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) worden reeds toegelaten om de mededinger te gebruiken. Als u uw eigen inhoud hebt ontwikkeld die niet op de Componenten van de Kern of archetype wordt gebaseerd, te zien gelieve het document [ Responsieve Ontwerp ](/help/implementing/developing/introduction/responsive-design.md) voor details op hoe te om uw componenten te ontwikkelen terwijl het leveraging van deze eigenschappen.
 
 ## Lay-outmodus voor uw site activeren {#activate-layout-mode-for-your-site}
 
-**Layout** kunt u de emulator gebruiken om de lay-out van uw inhoud voor verschillende apparaten aan te passen. De WKND-voorbeeldsite is al ingeschakeld voor **Layout** -modus. Voer de volgende stappen uit om uw eigen site in te schakelen.
+**de wijze van de Lay-out van 0} {staat u toe om de mededinger te gebruiken om de lay-out van uw inhoud voor verschillende apparaten aan te passen.** De WKND steekproefplaats wordt reeds toegelaten voor **Lay-out** wijze. Voer de volgende stappen uit om uw eigen site in te schakelen.
 
 ### Onderbrekingspunten configureren {#configure-breakpoints}
 
-Onderbrekingspunten zijn van essentieel belang voor een responsief ontwerp en definiëren hoe en wanneer de inhoud wordt aangepast aan het doelapparaat. Wees echter voorzichtig, want elk breekpunt dat u introduceert, zal extra werk voor uw auteurs genereren om de inhoud aan te passen. Vaak kunnen twee onderbrekingspunten volstaan, inclusief het standaardonderbrekingspunt dat er altijd is. Adobe raadt aan niet meer dan drie onderbrekingspunten te maken, inclusief de standaardinstelling, dat wil zeggen niet meer dan twee onderliggende knooppunten `cq:responsive/breakpoint`.
+Onderbrekingspunten zijn van essentieel belang voor een responsief ontwerp en definiëren hoe en wanneer de inhoud wordt aangepast aan het doelapparaat. Wees echter voorzichtig, want elk breekpunt dat u introduceert, zal extra werk voor uw auteurs genereren om de inhoud aan te passen. Vaak kunnen twee onderbrekingspunten volstaan, inclusief het standaardonderbrekingspunt dat er altijd is. Adobe raadt aan niet meer dan drie onderbrekingspunten te maken, inclusief de standaardwaarde, dat wil zeggen niet meer dan twee knooppunten onder `cq:responsive/breakpoint` .
 
 * Onderbrekingspunten hebben een titel en een breedte:
    * De titel beschrijft de algemene apparaatgroepering, met richtlijn indien nodig.
-      * Bijvoorbeeld: `phone`, `tablet`
+      * Bijvoorbeeld `phone` , `tablet`
    * De breedte bepaalt de maximumbreedte in pixel voor die generische apparatengroepering.
       * Bijvoorbeeld, als de breekpunttelefoon een breedte van 768 heeft dan dat het de maximumbreedte van de lay-out heeft die voor een telefoonapparaat wordt gebruikt.
 * Onderbrekingspunten kunnen worden gedefinieerd:
@@ -79,9 +79,9 @@ Vanwege overerving hoeft u dit alleen te doen voor de basispagina van uw inhoud.
 1. Navigeer met CRXDE Lite naar:
 
    * Uw sjabloondefinitie.
-   * De `jcr:content` knooppunt van uw pagina.
+   * The `jcr:content` node of your page.
 
-1. Onder `jcr:content` Maak het knooppunt:
+1. Onder `jcr:content` maakt u het knooppunt:
 
    * Naam: `cq:responsive`
    * Type: `nt:unstructured`
@@ -100,7 +100,7 @@ Vanwege overerving hoeft u dit alleen te doen voor de basispagina van uw inhoud.
 
 #### Onderbrekingspunten configureren met XML {#configuring-breakpoints-using-xml}
 
-Onderbrekingspunten bevinden zich in de `<jcr:content>` van de `.context.html` in de juiste sjabloonmap (of inhoudsmap).
+Onderbrekingspunten bevinden zich in de `<jcr:content>` -sectie van `.context.html` onder de toepasselijke sjabloonmap (of inhoudsmap).
 
 Een voorbeelddefinitie:
 
@@ -115,7 +115,7 @@ Een voorbeelddefinitie:
 
 ## Component resizing voor de pagina inschakelen {#enable-component-resizing-for-the-page}
 
-Het formaat van componenten wijzigen in **Layout** De modus is een belangrijk onderdeel van responsief ontwerp en kan worden gebruikt op de WKND-voorbeeldsite. Voer de volgende stappen uit om uw eigen site in te schakelen.
+Het resizing van componenten op **Lay-out** wijze is een belangrijk deel van ontvankelijk ontwerp, dat op de WKND steekproefplaats kan worden gebruikt. Voer de volgende stappen uit om uw eigen site in te schakelen.
 
 ### De container van de Lay-out instellen als HoofdParsys {#set-layout-container-as-main-parsys}
 
@@ -130,7 +130,7 @@ In één van beide:
 
 De volgende twee voorbeelden illustreren de definitie:
 
-* **HTL:**
+* **HTML:**
 
   ```xml
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
@@ -148,7 +148,7 @@ De volgende twee voorbeelden illustreren de definitie:
 
 AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, moeten deze voor uw projecten worden omvat.
 
-U moet een [clientbibliotheek](/help/implementing/developing/introduction/clientlibs.md) om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
+U moet de bibliotheek van de a [ cliënt ](/help/implementing/developing/introduction/clientlibs.md) tot stand brengen om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -203,7 +203,7 @@ Als u de grootte van een component in het raster wijzigt, worden de volgende lis
 * `afteredit`
 * `afterchildedit`
 
-Als u de inhoud van een adaptieve afbeelding in een responsief raster op de juiste wijze wilt vergroten of verkleinen en bijwerken, moet u een `afterEdit` instellen op `REFRESH_PAGE` listener in de `EditConfig` bestand van elke component in het bestand.
+Als u de inhoud van een adaptieve afbeelding in een responsief raster op de juiste wijze wilt vergroten of verkleinen en bijwerken, moet u een `afterEdit` set to `REFRESH_PAGE` listener toevoegen aan het `EditConfig` -bestand van elke component in de component.
 
 Bijvoorbeeld:
 
@@ -223,9 +223,9 @@ Voor een effectieve responsieve lay-out moet de auteur van de inhoud instanties 
 
 Auteurs kunnen meer responsieve rasters toevoegen aan de inhoudspagina&#39;s als u de component Layout Container voor uw pagina wilt inschakelen. U kunt dit doen door:
 
-* **Via de auteursomgeving** - [Uw paginasjablonen bewerken](/help/sites-cloud/authoring/sites-console/templates.md) om de container voor lay-out in te schakelen voor een pagina.
-* **Componentdefinitie** - Gebruik `allowedComponent` of een statische include-opdracht wanneer de component wordt gedefinieerd.
+* **via het Milieu van de Auteur** - [ geeft uw paginasjablonen ](/help/sites-cloud/authoring/sites-console/templates.md) uit om de Container van de Lay-out voor een pagina toe te laten.
+* **de Definitie van de Component** - Gebruik `allowedComponent` of statisch omvat wanneer het bepalen van de component.
 
 ### Het raster van de container van de layout configureren {#configure-the-grid-of-the-layout-container}
 
-U kunt het aantal kolommen vormen beschikbaar voor elke specifieke instantie van lay-outcontainer [door uw paginasjablonen te bewerken.](/help/sites-cloud/authoring/sites-console/templates.md)
+U kunt het aantal kolommen beschikbaar voor elke specifieke instantie van lay-outcontainer [ vormen door uw paginasjablonen uit te geven.](/help/sites-cloud/authoring/sites-console/templates.md)

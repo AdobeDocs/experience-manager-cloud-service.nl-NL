@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Inhoudsfragmenten {#content-fragments}
 
-Inhoudsfragmenten in as a Cloud Service Adobe Experience Manager (AEM) zijn [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/sites-cloud/administering/content-fragments/overview.md).
+De fragmenten van de inhoud in Adobe Experience Manager (AEM) as a Cloud Service worden gecreeerd en worden geleid als pagina-onafhankelijke activa ](/help/sites-cloud/administering/content-fragments/overview.md).[
 
 U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
@@ -22,43 +22,43 @@ Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragme
 
 >[!NOTE]
 >
->Inhoudsfragmenten zijn **Sites** gebruiken, maar worden opgeslagen als **Activa**.
+>De Fragmenten van de inhoud zijn a **eigenschap van de Plaatsen**, maar worden opgeslagen als **Assets**.
 >
->Ze worden nu voornamelijk beheerd met de **[Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, hoewel zij nog van kunnen leiden **[Activa](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>Zij worden nu hoofdzakelijk beheerd met de **[console van de Fragmenten van de Inhoud](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, hoewel zij nog van de **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console kunnen worden beheerd.
 >
 >Er zijn twee editors voor het ontwerpen van inhoudsfragmenten:
 >
->* De nieuwe editor voor [Inhoudsfragmenten - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), wordt voornamelijk benaderd vanuit de **Inhoudsfragmenten** console.
->* De [oorspronkelijke editor](/help/assets/content-fragments/content-fragments-variations.md) wordt voornamelijk benaderd vanuit de **Activa** console.
+>* De nieuwe redacteur voor [ Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), wordt hoofdzakelijk betreden van de **console van de Fragmenten van de Inhoud**.
+>* De [ originele redacteur ](/help/assets/content-fragments/content-fragments-variations.md) wordt hoofdzakelijk betreden van de **Assets** console.
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)** Er zijn verschillende functies binnen AEM:
->* **Inhoudsfragmenten** redactionele inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, cijfers en datums.
->* **Ervaar fragmenten** volledig opgemaakt zijn, een fragment van een webpagina.
+>**de Fragmenten van de Inhoud** en **[Fragmenten van de Ervaring](/help/sites-cloud/authoring/fragments/content-fragments.md)** zijn verschillende eigenschappen binnen AEM:
+>* **de Fragmenten van de Inhoud** zijn redactionele inhoud, met definitie en structuur, maar zonder extra visueel ontwerp en/of lay-out. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, cijfers en datums.
+>* **de Fragmenten van de Ervaring** zijn volledig opgemaakt inhoud; een fragment van een Web-pagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Zie voor meer informatie [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>Voor meer informatie, zie [ Begrip van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!CAUTION]
 >
->Deze pagina moet worden gelezen in combinatie met [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md) (en verwante pagina&#39;s), aangezien deze basisterminologie en -concepten introduceert en fragmenten maakt en beheert.
+>Deze pagina moet samen met [ worden gelezen het Werken met de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md) (en verwante pagina&#39;s) aangezien het basisterminologie en concepten, samen met het creëren en het beheren van fragmenten introduceert.
 
 Met de inhoudsfragmenten kunt u:
 
-* **Marketings- en Campagne-strategie**
+* **marketing en Campagne Strategie**
    * Inhoud controleren via centraal beheerde inhoudsfragmenten.
 * **Creative Pro**
    * Het bijhouden van creatieve elementen via verzamelingen die zijn gekoppeld aan inhoudsfragmenten.
-* **Schrijvers kopiëren**
+* **Schrijvers van het Exemplaar**
    * Schrijf in de fragmenteditor voor AEM inhoud.
    * Kan inhoudvariaties maken.
    * Kan relevante inhoud aan het inhoudsfragment koppelen.
    * Kan versioning/workflow gebruiken.
    * Kan inhoudsfragment delen.
    * Kan vertalingen centraal beheren.
-* **Producenten en reismanagers**
+* **Producenten en de Managers van de Reis**
    * Maak een keuze uit vooraf gedefinieerde fragmenten en variaties bij het ontwerpen in AEM.
    * Kan erop vertrouwen dat het fragment en de bijbehorende inhoud altijd up-to-date zijn terwijl kopieerschrijvers en -creatieven hun updates in centraal beheerde fragmenten en elementen maken.
    * Kan voor relevantie vertrouwen op gekoppelde media-inhoud die wordt verwerkt.
@@ -67,18 +67,18 @@ Met de inhoudsfragmenten kunt u:
 ## Een inhoudsfragment toevoegen aan uw pagina {#adding-a-content-fragment-to-your-page}
 
 1. Open de pagina om deze te bewerken.
-2. Voeg de **Inhoudsfragment** component; van of **Componenten** browser of **Nieuwe component invoegen**.
+2. Voeg de **component van het Fragment van de Inhoud** toe; van of **Componenten** browser of **Tussenvoegsel Nieuwe Component**.
 3. U kunt:
-   * Open de **Activa** browser en filter voor **Inhoudsfragmenten** (de standaardwaarde is Afbeeldingen). Sleep het gewenste fragment vervolgens naar de componentinstantie.
-   * Selecteer vervolgens de component voor het inhoudsfragment **Configureren** op de werkbalk. In het dialoogvenster kunt u het dialoogvenster Selectie openen waarin u de vereiste **Inhoudsfragment**.
+   * Open **browser van Assets** en filter voor **de Fragmenten van de Inhoud** (het gebrek is Beelden). Sleep het gewenste fragment vervolgens naar de componentinstantie.
+   * Selecteer de component van het inhoudsfragment, dan **vorm** van de toolbar. In de dialoog kunt u de selectiedialoog openen om het vereiste **Fragment van de Inhoud** te doorbladeren en te selecteren.
 
    >[!NOTE]
    >
    >Een andere methode is om een specifiek inhoudsfragment rechtstreeks naar de pagina te slepen. Hiermee wordt automatisch de bijbehorende component (inhoudsfragment) gemaakt.
 
-4. In eerste instantie de inhoud van de **Hoofd** Element en **Master** (variatie) worden weergegeven. U kunt [andere elementen en/of variaties selecteren](#selecting-the-element-or-variation) zoals vereist.
+4. Aanvankelijk, wordt de inhoud van het **Belangrijkste** Element en **Hoofd** (variatie) getoond. U kunt [ andere elementen en/of variaties ](#selecting-the-element-or-variation) zoals vereist selecteren.
 
-   ![Inhoudsfragmenten in de middelenbrowser](/help/sites-cloud/authoring/assets/content-fragments.png)
+   ![ de Fragmenten van de Inhoud in Browser van Assets ](/help/sites-cloud/authoring/assets/content-fragments.png)
 
    >[!NOTE]
    >
@@ -89,19 +89,19 @@ Met de inhoudsfragmenten kunt u:
 
 ### Het element of de variatie selecteren {#selecting-the-element-or-variation}
 
-De fragmentinstellingen openen **Configuratie** om het fragment te configureren voor gebruik op de huidige pagina. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
+Open de dialoog van de Configuratie van het fragment **** om het fragment voor gebruik op de huidige pagina te vormen. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
 
 >[!NOTE]
 >
->Zie ook [Kerncomponenten, de component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+>Zie ook {de Componenten van 0} Kern, de Component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)[
 
 In het juiste configuratiedialoogvenster kunt u de beschikbare parameters selecteren, waaronder:
 
-* **Inhoudsfragment**
+* **het Fragment van de Inhoud**
    * Geef op welk fragment moet worden gebruikt.
-* **Weergavemodus**:
-   * **Element voor één tekst**
-   * **Meerdere elementen**
+* **Wijze van de Vertoning**:
+   * **Enig Element van de Tekst**
+   * **Veelvoudige Elementen**
 * **Element**
    * Een selectie is beschikbaar afhankelijk van het gebruikte model.
 
@@ -110,16 +110,16 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
   >De beschikbare elementen zijn afhankelijk van het gebruikte model.
 
 * **Variatie**
-   * De standaardwaarde **Master** is altijd beschikbaar.
+   * Het gebrek **Hoofd** is altijd beschikbaar.
    * Er is een selectie beschikbaar als er variaties zijn gemaakt voor het fragment.
 
-* **ID**
+* **identiteitskaart**
 
-   * **HTML-id** toe te passen op de component.
+   * **attribuut van identiteitskaart van 0} HTML {om op de component van toepassing te zijn.**
 
 ### Snelle verbinding met de fragmenteditor {#quick-connection-to-fragment-editor}
 
-U kunt de fragmentbron openen voor bewerking (het element) met de opdracht **Bewerken** op de werkbalk van de component. Hierdoor kunt u [het inhoudsfragment bewerken en beheren](/help/sites-cloud/administering/content-fragments/overview.md).
+U kunt de fragmentbron voor het uitgeven (de activa) openen gebruikend **uitgeeft** pictogram op de componententoolbar. Dit zal u [ toestaan om het inhoudsfragment ](/help/sites-cloud/administering/content-fragments/overview.md) uit te geven en te beheren.
 
 >[!CAUTION]
 >
@@ -127,27 +127,27 @@ U kunt de fragmentbron openen voor bewerking (het element) met de opdracht **Bew
 
 ### Tussenliggende inhoud toevoegen {#adding-in-between-content}
 
-Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er een **Componenten hierheen slepen** tijdelijke aanduiding tussen elke HTML-alinea (en boven/onder) van het fragment.
+Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er de componenten van de a **Belemmering hier** placeholder tussen elke HTML paragraaf (en bij de bovenkant/de bodem) van het fragment.
 
-Hiermee kunt u extra inhoud toevoegen [tussenliggend (dat wil zeggen, tussen inhoud)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) de fragmentinhoud (op een van de beschikbare punten), zonder dat u het basisfragment hoeft te wijzigen.
+Dit laat u extra inhoud [ binnen-tussen (namelijk in-tussen inhoud) ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) toevoegen de fragmentinhoud (op om het even welke beschikbare punten), zonder het moeten het wortelfragment veranderen.
 
 Voor tussenliggende inhoud kunt u:
 
-* Componenten toevoegen uit het dialoogvenster [Browser van Componenten.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Elementen toevoegen uit het dialoogvenster [Middelenbrowser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
-* Gebruiken [Gekoppelde inhoud](#using-associated-content) als bron voor tussenliggende inhoud.
+* Voeg componenten van [ browser van Componenten toe.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* Voeg activa van [ browser van Assets toe.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Het gebruik [ Verwante Inhoud ](#using-associated-content) als bron voor binnen-tussen inhoud.
 
 >[!CAUTION]
 >
 >De tussenliggende inhoud is pagina-inhoud. Deze wordt niet opgeslagen in het inhoudsfragment.
 
-![Component invoegen](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
+![ component van het Tussenvoegsel ](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
 >
->U kunt [visuele elementen (afbeeldingen) invoegen in het fragment zelf](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>U kunt visuele activa (beelden) aan het fragment ook [ opnemen zelf ](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Visuele elementen die in het fragment zelf worden ingevoegd, worden aan de voorafgaande alinea in het fragment gekoppeld. Dit betekent dat u geen tussenliggende inhoud tussen een visueel element en de voorgaande alinea kunt plaatsen. Als u dit verbindingsniveau nodig hebt, kunt u de afbeelding aan het fragment toevoegen (als een [fragment met gemengde media](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+>Visuele elementen die in het fragment zelf worden ingevoegd, worden aan de voorafgaande alinea in het fragment gekoppeld. Dit betekent dat u geen tussenliggende inhoud tussen een visueel element en de voorgaande alinea kunt plaatsen. Als u dit niveau van verbinding nodig hebt kunt u het beeld aan het fragment (als a [ mengen-media fragment ](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)) toevoegen.
 
 >[!CAUTION]
 >
@@ -162,25 +162,25 @@ Voor tussenliggende inhoud kunt u:
 
 ### Gekoppelde inhoud gebruiken {#using-associated-content}
 
-Als u [gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) met de [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) deze elementen zijn beschikbaar in het zijpaneel (nadat u het fragment op de inhoudspagina hebt geplaatst). Gekoppelde inhoud is in feite een speciale inhoudsbron voor [tussenliggende inhoud](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Als u [ bijbehorende inhoud ](/help/assets/content-fragments/content-fragments-assoc-content.md) met het [ inhoudsfragment ](/help/assets/content-fragments/content-fragments.md) hebt zijn deze activa beschikbaar van het zijpaneel (nadat u uw fragment op de inhoudspagina plaatst). De bijbehorende inhoud is effectief een speciale bron van inhoud voor [ binnen-tussen inhoud ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
->Er zijn verschillende methoden om toe te voegen [visuele elementen (bijvoorbeeld afbeeldingen)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
+>Er zijn diverse methodes om [ visuele activa (bijvoorbeeld, beelden) ](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
 
 >[!NOTE]
 >
->Als u meerdere inhoudsfragmenten op één pagina hebt, kunt u **Gekoppelde inhoud** worden de elementen weergegeven die geschikt zijn voor alle fragmenten.
+>Als u veelvoudige inhoudsfragmenten op één pagina hebt, zal het **Geassocieerde Inhoud** lusje activa aangewezen aan alle fragmenten tonen.
 
-Nadat u een fragment met de bijbehorende inhoud aan de pagina hebt toegevoegd, wordt een nieuw tabblad toegevoegd (**Gekoppelde inhoud**) wordt geopend in het zijpaneel.
+Zodra u een fragment met bijbehorende inhoud aan uw pagina hebt toegevoegd wordt een nieuw lusje (**Geassocieerde Inhoud**) geopend in het zijpaneel.
 
 Van hieruit kunt u de elementen naar de gewenste locatie slepen (naar een bestaande component of naar de gewenste positie waar de desbetreffende component is gemaakt):
 
-![Een afbeelding invoegen](/help/sites-cloud/authoring/assets/content-fragments-image.png)
+![ Invoegend een beeld ](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 
-### Elementen die in het fragment zijn ingevoegd {#assets-inserted-into-the-fragment}
+### Assets ingevoegd in het fragment {#assets-inserted-into-the-fragment}
 
-Als elementen (bijvoorbeeld afbeeldingen) in het fragment zelf zijn ingevoegd (zoals [gemengde-mediafragmenten](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), zijn de opties voor het bewerken van deze elementen in de pagina-editor beperkt.
+Als de activa (bijvoorbeeld, beelden) in het fragment zelf (als [ gemengd-media fragmenten ](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)) zijn opgenomen, dan zijn de opties om deze activa in de paginaredacteur uit te geven beperkt.
 
 Voor een afbeelding kunt u bijvoorbeeld
 
@@ -195,8 +195,8 @@ Andere wijzigingen, zoals verplaatsen, kopiëren en verwijderen, moeten worden a
 
 Fragmenten moeten worden gepubliceerd zodat ze op gepubliceerde webpagina&#39;s kunnen worden gebruikt:
 
-* Een fragment kan na [het fragment maken in de console Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment).
-* Als een *niet-gepubliceerd fragment* wordt gebruikt op een pagina die wordt gepubliceerd, kan het fragment ook op dit moment worden gepubliceerd.
+* Een fragment kan na [ worden gepubliceerd creërend het fragment in de console van de Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment).
+* Als een *niet gepubliceerd fragment* op een pagina wordt gebruikt die wordt gepubliceerd, kan het fragment ook op dit ogenblik worden gepubliceerd.
 
 ## Inhoudsfragmenten exporteren {#exporting-content-fragments}
 

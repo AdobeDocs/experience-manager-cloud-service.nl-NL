@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # De AEM Pagina-editor {#editing-page-content}
 
-Nadat de pagina in het dialoogvenster [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) U kunt de inhoud van de pagina bewerken met de AEM pagina-editor, een krachtig gereedschap voor het ontwerpen van de inhoud.
+Zodra uw pagina in de [**console van Plaatsen** wordt gecreeerd, ](/help/sites-cloud/authoring/sites-console/introduction.md) kunt u de inhoud van de pagina uitgeven gebruikend de AEM paginaredacteur, een krachtig hulpmiddel om uw inhoud te ontwerpen.
 
 >[!NOTE]
 >
->Wanneer u een pagina bewerkt in het dialoogvenster [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) de console zal de redacteur aangewezen aan de pagina openen [sjabloon:](/help/sites-cloud/authoring/sites-console/templates.md) de pagina-editor die in dit document wordt beschreven, of de [Universele editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Wanneer het uitgeven van een pagina in de **console van de Plaatsen[**, ](/help/sites-cloud/authoring/sites-console/introduction.md) zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina openen:](/help/sites-cloud/authoring/sites-console/templates.md) of de paginaredacteur die in dit document wordt beschreven, of [ Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md)[
 
 >[!NOTE]
 >
@@ -28,101 +28,101 @@ Nadat de pagina in het dialoogvenster [**Sites** console,](/help/sites-cloud/aut
 
 De AEM pagina-editor bestaat voornamelijk uit drie secties:
 
-1. [De werkbalk](#toolbar) - Met de werkbalk hebt u snel toegang tot het wijzigen van de paginamodus en het openen van aanvullende pagina-instellingen.
-1. [Het zijpaneel](#side-panel) - Met het zijpaneel hebt u toegang tot pagina-componenten en -elementen en tot andere ontwerpgereedschappen.
-1. [De editor](#editor) - In de editor brengt u wijzigingen aan in de inhoud en geeft u een voorvertoning weer.
+1. [ de toolbar ](#toolbar) - de toolbar geeft u snelle toegang om paginamodus te veranderen en tot extra paginamontages toegang te hebben.
+1. [ het zijpaneel ](#side-panel) - het zijpaneel geeft u toegang tot paginacomponenten en activa evenals andere auteurshulpmiddelen.
+1. [ de redacteur ](#editor) - de redacteur is waar u veranderingen in uw inhoud aanbrengt en het voorproef.
 
-![De indeling van de pagina-editor](assets/page-editor-layout.png)
+![ De lay-out van de paginaredacteur ](assets/page-editor-layout.png)
 
-Inhoud wordt toegevoegd met [componenten](/help/sites-cloud/authoring/components-console.md) (van toepassing op het inhoudstype) dat naar de pagina kan worden gesleept. Deze kunnen vervolgens worden bewerkt, verplaatst of verwijderd.
+De inhoud wordt toegevoegd gebruikend [ componenten ](/help/sites-cloud/authoring/components-console.md) (aangewezen aan het inhoudstype) die op de pagina kunnen worden gesleept. Deze kunnen vervolgens worden bewerkt, verplaatst of verwijderd.
 
 ### Werkbalk {#page-toolbar}
 
 De paginaboolbar biedt toegang tot context-aangewezen functionaliteit, afhankelijk van de paginasonfiguratie.
 
-![Werkbalk Paginaeditor](assets/page-editor-toolbar.png)
+![ de redacteurstoolbar van de Pagina ](assets/page-editor-toolbar.png)
 
 #### Zijpaneel {#side-panel-button}
 
-Hiermee opent/sluit u de [zijpaneel,](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) die de Asset Browser, de Componentbrowser en de Inhoudsstructuur bevat.
+Dit opent/sluit het [ zijpaneel, ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) dat Browser van Activa, Browser van de Component, en de Boom van de Inhoud houdt.
 
-![Zijpaneel in-/uitschakelen](assets/page-editor-side-panel-toggle.png)
+![ Kneep van het Zijpaneel ](assets/page-editor-side-panel-toggle.png)
 
 #### Pagina-informatie {#page-information}
 
 Zo hebt u toegang tot gedetailleerde pagina-informatie, waaronder paginagegevens en handelingen die op de pagina kunnen worden uitgevoerd, zoals het weergeven en bewerken van pagina-informatie, het weergeven van pagina-eigenschappen en het publiceren/ongedaan maken van de publicatie van de pagina.
 
-![Paginagegevens, knop](assets/page-editor-page-information-icon.png)
+![ knoop van de Informatie van de Pagina ](assets/page-editor-page-information-icon.png)
 
-**Pagina-informatie** Hiermee opent u een vervolgkeuzelijst met informatie over de laatste bewerking en de laatste publicatie van de geselecteerde pagina. Afhankelijk van de kenmerken van de pagina, de site en uw exemplaar zijn aanvullende acties beschikbaar.
+**de Informatie van de Pagina** opent een drop-down menu dat details over laatste uitgeeft en de laatste publicatie van de geselecteerde pagina verstrekt. Afhankelijk van de kenmerken van de pagina, de site en uw exemplaar zijn aanvullende acties beschikbaar.
 
 * [Eigenschappen openen](/help/sites-cloud/authoring/sites-console/page-properties.md)
 * [Uitrolpagina](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Workflow starten](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Pagina vergrendelen](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
-* [Pagina publiceren](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
+* [Publish-pagina](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [Publicatie van pagina ongedaan maken](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
 * [Sjabloon bewerken](/help/sites-cloud/authoring/sites-console/templates.md)
 * [Weergeven als gepubliceerd](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [Weergeven in Admin](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
-* [Starten bevorderen](/help/sites-cloud/authoring/launches/promoting.md) (alleen als de pagina een startpagina is)
+* [ bevorderen Lanceer ](/help/sites-cloud/authoring/launches/promoting.md) (slechts als de pagina een lancering is)
 
-Daarnaast **Pagina-informatie** waar nodig toegang kunnen verlenen tot analyses en aanbevelingen.
+Bovendien **de Informatie van de Pagina** kan toegang tot analyses en aanbevelingen, wanneer aangewezen verlenen.
 
 #### Emulator {#emulator}
 
-Hiermee schakelt u [emulator, werkbalk](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), die wordt gebruikt om het uiterlijk van de pagina op een ander apparaat na te bootsen. Dit wordt automatisch ingeschakeld in de lay-outmodus.
+Dit knevels de [ mededingertoolbar ](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), die wordt gebruikt om het blik-en-gevoel van de pagina op een ander apparaat na te bootsen. Dit wordt automatisch ingeschakeld in de lay-outmodus.
 
-![Emulator-knop](assets/page-editor-emulator.png)
+![ knoop van de Mededinger ](assets/page-editor-emulator.png)
 
 #### ContextHub {#context-hub}
 
-Hierdoor wordt het [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) Het is alleen beschikbaar in **Voorvertoning** -modus.
+Dit opent [ ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) het is slechts beschikbaar op **Voorproef** wijze.
 
-![Knop Contexthub](assets/page-editor-context-hub.png)
+![ knoop van de Hub van de Context ](assets/page-editor-context-hub.png)
 
 #### Paginatitel {#page-title}
 
 Dit is de titel van de pagina, weergegeven in hoofdletters als informatie.
 
-![Paginatitel](assets/page-editor-page-title.png)
+![ Titel van de Pagina ](assets/page-editor-page-title.png)
 
 #### Modus selecteren {#mode-selector}
 
-De moduskiezer geeft de huidige [mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
+De wijzeselecteur toont de huidige [ wijze ](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) en laat u een andere wijze zoals uitgeven, lay-out, timewarp, of het richten selecteren.
 
-![Modus selecteren, knop](assets/page-editor-mode-selector.png)
+![ de knoop van de Selecteur van de Wijze ](assets/page-editor-mode-selector.png)
 
 Er zijn verschillende modi voor het bewerken van een pagina die verschillende handelingen mogelijk maken:
 
-* [Bewerken](/help/sites-cloud/authoring/page-editor/edit-content.md) - De modus die moet worden gebruikt bij het bewerken van de pagina-inhoud
-* [Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - Hiermee kunt u afhankelijk van het apparaat de responsieve indeling maken en bewerken (als de pagina is gebaseerd op een lay-outcontainer)
-* [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) - Verbetert de relevantie van inhoud door het richten en het meten over alle kanalen
-* [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - Een paginastaat op een bepaald tijdstip weergeven
-* [Status van live kopiëren](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - Hiermee krijgt u een snel overzicht van de status van de live kopie en van de onderdelen die u/zij niet hebt geërfd
+* [ geeft ](/help/sites-cloud/authoring/page-editor/edit-content.md) uit - de wijze om te gebruiken wanneer het uitgeven van de paginainhoud
+* [ Lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - laat u uw ontvankelijke lay-out afhankelijk van apparaat tot stand brengen en uitgeven (als de pagina op een lay-outcontainer gebaseerd is)
+* [ het richten ](/help/sites-cloud/authoring/personalization/targeted-content.md) - verbetert inhoudrelevantie door het richten en het meten over alle kanalen
+* [ Timewarp ](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - bekijk een paginastaat op een bepaald punt in tijd
+* [ Levende Status van het Exemplaar ](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - staat een snel overzicht van de levende exemplaarstatus toe en welke componenten worden/niet geërft
 * [Modus voor ontwikkelaars](/help/implementing/developing/tools/developer-mode.md)
-* [Voorvertoning](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - De pagina weergeven zoals deze wordt weergegeven in de publicatieomgeving, of navigeren met koppelingen in de inhoud
-* [Annoteren](/help/sites-cloud/authoring/page-editor/annotations.md) - Annotaties toevoegen of weergeven op de pagina
+* [ Voorproef ](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - bekijk de pagina aangezien het op publiceer milieu wordt getoond; of om het gebruiken van verbindingen in de inhoud te navigeren
+* [ Annoteert ](/help/sites-cloud/authoring/page-editor/annotations.md) - voeg of meningsannotaties op de pagina toe
 
 >[!NOTE]
 >
 >* Afhankelijk van de kenmerken van de pagina zijn bepaalde modi mogelijk niet beschikbaar.
 >* Voor toegang tot bepaalde modi zijn de juiste machtigingen/bevoegdheden vereist.
 >* De modus Ontwikkelaar is niet beschikbaar op mobiele apparaten vanwege ruimtebeperkingen.
->* Er is een [sneltoets](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Layout**, enzovoort).
+>* Er is a [ toetsenbordkortere weg ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om tussen **Voorproef** en momenteel geselecteerde wijze (bijvoorbeeld, **uitgeeft**, **Lay-out**, etc.) van een knevel te voorzien.
 
 #### Voorvertoning {#preview}
 
-De **Voorvertoning** knop schakelt [voorvertoningsmodus.](#preview-mode), waarbij de pagina wordt weergegeven zoals deze wordt weergegeven bij publicatie.
+De **knoop van de Voorproef** laat [ voorproefwijze toe.](#preview-mode) , waarbij de pagina wordt weergegeven zoals deze wordt weergegeven bij publicatie.
 
-![Knop Voorvertoning](assets/page-editor-preview.png)
+![ knoop van de Voorproef ](assets/page-editor-preview.png)
 
 #### Annoteren {#annotate}
 
-**Annoteren** in de modus kunt u toevoegen [annotaties](/help/sites-cloud/authoring/page-editor/annotations.md) naar de pagina wanneer een pagina wordt gecontroleerd. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
+**annoteert** wijze laat u [ annotaties ](/help/sites-cloud/authoring/page-editor/annotations.md) aan de pagina toevoegen wanneer het herzien van een pagina. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
 
-![Knop Annotatie](assets/page-editor-annotations.png)
+![ knoop van de Annotatie ](assets/page-editor-annotations.png)
 
 ### Zijpaneel {#side-panel}
 
@@ -132,67 +132,67 @@ In het zijpaneel hebt u toegang tot drie verschillende tabbladen.
 * De middelenbrowser om nieuwe elementen aan uw pagina toe te voegen
 * In de inhoudsstructuur bladert u door de structuur van de pagina
 
-![Het zijpaneel van de paginaredacteur](assets/page-editor-side-panel.png)
+![ het zijpaneel van de paginaredacteur ](assets/page-editor-side-panel.png)
 
-Zie het document [Zijpaneel paginaeditor](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) voor meer informatie .
+Gelieve te zien het document [ Zijpaneel van de Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) voor meer informatie.
 
 ### Editor {#editor}
 
 In de editor kunt u rechtstreeks wijzigingen in uw pagina-inhoud aanbrengen. De pagina wordt weergegeven zoals u deze zou zien en u kunt nieuwe inhoud slepen en neerzetten met de middelen- of componentbrowsers in het zijpaneel en inhoud op plaats bewerken.
 
-![De editor van de pagina-editor](assets/page-editor-editor.png)
+![ de redacteur van de paginaredacteur ](assets/page-editor-editor.png)
 
 ## Inhoud bewerken {#editing-content}
 
 Nu u de pagina-editor begrijpt, kunt u de inhoud bewerken.
 
-Zie het document [Inhoud bewerken met de AEM Pagina-editor](/help/sites-cloud/authoring/page-editor/edit-content.md) voor meer informatie .
+Gelieve te zien het document [ Uitgevend Inhoud met de Redacteur van de Pagina van de AEM ](/help/sites-cloud/authoring/page-editor/edit-content.md) voor meer informatie.
 
 ## Statusmelding {#status-notification}
 
-Als een pagina deel uitmaakt van een [werkstroom](/help/sites-cloud/authoring/workflows/overview.md) Voor meerdere workflows wordt deze informatie weergegeven in een berichtenbalk onder de werkbalk wanneer u de pagina bewerkt.
+Als een pagina deel van a [ werkschema ](/help/sites-cloud/authoring/workflows/overview.md) of veelvoudige werkschema&#39;s uitmaakt, wordt deze informatie getoond in een berichtbar onder de toolbar wanneer het uitgeven van de pagina.
 
-![Workflowmelding](assets/page-editor-editing-workflow-notification.png)
+![ Bericht van het Werkschema ](assets/page-editor-editing-workflow-notification.png)
 
 >[!NOTE]
 >
 >De statusbalk is alleen zichtbaar voor gebruikersaccounts met de juiste rechten.
 
-In het bericht wordt de workflow weergegeven die op de pagina wordt uitgevoerd. Als de gebruiker betrokken is bij de huidige workflowstap, kunt u [de workflowstatus beïnvloeden](/help/sites-cloud/authoring/workflows/participating.md) en meer informatie over de workflow vindt u onder andere :
+In het bericht wordt de workflow weergegeven die op de pagina wordt uitgevoerd. Als de gebruiker in de huidige werkschemastap geïmpliceerd is, beïnvloeden de opties [ de werkschemastatus ](/help/sites-cloud/authoring/workflows/participating.md) en krijgen meer informatie over het werkschema ook beschikbaar zoals:
 
-* **Voltooid** - Opent de **Voltooid het werkitem** dialoogvenster
-* **Delegeren** - Opent de **Voltooid het werkitem** dialoogvenster
-* **Details weergeven** - Opent de **Details** venster van de workflow
+* **Volledig** - opent de **Volledige dialoog van het Punt van het Werk**
+* **Afgevaardigde** - opent de **Volledige dialoog van het Punt van het Werk**
+* **Details van de Mening** - opent het **venster van Details** van het werkschema
 
-Workflowstappen uitvoeren en delegeren via de berichtenbalk werkt op dezelfde manier als wanneer [deelnemen aan workflows](/help/sites-cloud/authoring/workflows/participating.md) in het vak Melding.
+Het voltooien van en het delegeren van werkschemastappen via de kennisgevingsbar werken aangezien het wanneer [ deelnemend aan werkschema&#39;s ](/help/sites-cloud/authoring/workflows/participating.md) van het Bericht inbox.
 
 Als de pagina aan veelvoudige werkschema&#39;s onderworpen is, wordt het aantal werkschema&#39;s getoond aan het rechtereind van het bericht samen met pijlknopen om u toe te staan om door de werkschema&#39;s te scrollen.
 
-![Meerdere workflowmeldingen](assets/page-editor-editing-workflow-notification-multiple.png)
+![ Veelvoudige werkschemaberichten ](assets/page-editor-editing-workflow-notification-multiple.png)
 
 ## Status van live kopiëren {#live-copy-status}
 
-De **Status van live kopiëren** In de paginamodus krijgt u een snel overzicht van de status van de live kopie en van de onderdelen die u wel of niet wilt overnemen:
+De **Levende de paginamodus van de Status van het Exemplaar** geeft u een snel overzicht van de levende exemplaarstatus en welke componenten niet worden/worden geërft:
 
 * Groene rand: Overgenomen
 * Roze rand: overerving is geannuleerd
 
 Bijvoorbeeld:
 
-![Voorbeeld van live kopieerstatus die wordt weergegeven](assets/page-editor-editing-live-copy-status.png)
+![ Voorbeeld van levende die exemplaarstatus wordt getoond ](assets/page-editor-editing-live-copy-status.png)
 
 ## Pagina&#39;s voorvertonen {#previewing-pages}
 
 Er zijn twee opties voor het voorvertonen van een pagina:
 
-* [Voorvertoningsmodus](#preview-mode) - Een snelle voorvertoning op plaats
-* [Weergeven als gepubliceerd](#view-as-published) - Een volledige voorvertoning waarmee de pagina in een nieuw tabblad wordt geopend
+* ](#preview-mode) de Wijze van de Voorproef van 0} - een snelle, op zijn plaats voorproef[
+* [ Mening zoals Gepubliceerd ](#view-as-published) - een volledige voorproef die de pagina in een nieuw lusje opent
 
 >[!TIP]
 >
->* Koppelingen in de inhoud zijn zichtbaar, maar niet toegankelijk in **Bewerken** -modus.
+>* De verbindingen in de inhoud zijn zichtbaar, maar niet toegankelijk op **geeft** wijze uit.
 >* Gebruik een van de voorvertoningsopties als u door de koppelingen wilt navigeren.
->* Gebruik de [sneltoets](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Shift-M` om te schakelen tussen de voorvertoning en de laatst geselecteerde modus.
+>* Gebruik de [ toetsenbordkortere weg ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Shift-M` om tussen voorproef en de laatste geselecteerde wijze te schakelen.
 
 >[!NOTE]
 >
@@ -204,28 +204,28 @@ Wanneer u inhoud bewerkt, kunt u een voorvertoning van de pagina weergeven in de
 
 * Hiermee verbergt u verschillende bewerkingsmechanismen waarmee u snel kunt zien hoe de pagina er bij het publiceren uitziet.
 * Hiermee kunt u navigeren met koppelingen.
-* doet **niet** Vernieuw de pagina-inhoud.
+* Vernieuw **** niet de paginainhoud.
 
 Bij het ontwerpen is de modus Voorvertoning beschikbaar met behulp van het pictogram rechtsboven in de paginaeditor:
 
-![Knop Voorvertoning](assets/page-editor-preview.png)
+![ knoop van de Voorproef ](assets/page-editor-preview.png)
 
 ### Weergeven als gepubliceerd {#view-as-published}
 
-De **Weergeven als gepubliceerd** Deze optie is beschikbaar via de [Pagina-informatie](#page-information) -menu. Hierdoor wordt de pagina op een nieuw tabblad geopend, wordt de inhoud vernieuwd en wordt de pagina precies zo weergegeven als in de publicatieomgeving.
+De **Mening zoals Gepubliceerde** optie is beschikbaar bij het [ menu van de Informatie van de Pagina ](#page-information). Hierdoor wordt de pagina op een nieuw tabblad geopend, wordt de inhoud vernieuwd en wordt de pagina precies zo weergegeven als in de publicatieomgeving.
 
 ## Een pagina vergrendelen en ontgrendelen {#locking-unlocking}
 
 Met AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan bewerken. Vergrendelen is handig wanneer u meerdere bewerkingen op een bepaalde pagina uitvoert of wanneer u een pagina een korte tijd wilt stilzetten.
 
-1. Selecteer de **Pagina-informatie** om het menu te openen.
-1. Selecteer de **Pagina vergrendelen** -optie.
+1. Selecteer het **pictogram van de Informatie van de Pagina** om het menu te openen.
+1. Selecteer de **optie van de Pagina van het Slot**.
 
 Wanneer de optie is vergrendeld, wordt een vergrendelingssymbool weergegeven op de werkbalk van de pagina-editor.
 
-![Voorbeeld van een vergrendelde pagina](assets/page-editor-editing-locked-page.png)
+![ Voorbeeld van een gesloten pagina ](assets/page-editor-editing-locked-page.png)
 
-Het ontgrendelen van een pagina lijkt veel op [de pagina vergrendelen](#locking-a-page). Nadat de pagina is vergrendeld, worden de vergrendelingsopties vervangen door ontgrendelingsacties.
+Het ontgrendelen van een pagina is zeer gelijkaardig aan [ het sluiten van de pagina ](#locking-a-page). Nadat de pagina is vergrendeld, worden de vergrendelingsopties vervangen door ontgrendelingsacties.
 
 >[!CAUTION]
 >
@@ -237,13 +237,13 @@ Het ontgrendelen van een pagina lijkt veel op [de pagina vergrendelen](#locking-
 
 Met de volgende pictogrammen kunt u een handeling ongedaan maken of opnieuw uitvoeren. Deze worden in voorkomend geval weergegeven op de werkbalk:
 
-![De knoppen Ongedaan maken en Opnieuw](assets/page-editor-redo.png)
+![ Ongedaan maken en Opnieuw knopen ](assets/page-editor-redo.png)
 
 >[!TIP]
 >
->* De [sneltoets](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Z` is ook beschikbaar voor het ongedaan maken van paginabewerkingsacties.
+>* De [ toetsenbordkortere weg ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Z` is ook beschikbaar om pagina uit te geven acties.
 >* De sneltoets `Ctrl-Y` is ook beschikbaar voor het opnieuw uitvoeren van paginabewerkingsacties.
 
 >[!NOTE]
 >
->Zie het document [Beperkingen ongedaan maken en opnieuw uitvoeren](/help/sites-cloud/authoring/page-editor/undo-redo.md) voor de volledige details van wat mogelijk is wanneer het ongedaan maken van en het opnieuw doen van paginaedetingen.
+>Gelieve te zien het document [ Ongedaan maken en Opnieuw Beperkingen ](/help/sites-cloud/authoring/page-editor/undo-redo.md) voor de volledige details van wat mogelijk is wanneer het ongedaan maken en het opnieuw doen van pagina geeft uit.

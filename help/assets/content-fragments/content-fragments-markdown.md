@@ -1,5 +1,5 @@
 ---
-title: Markering (middelen - inhoudsfragmenten)
+title: Markering (Assets - Inhoudsfragmenten)
 description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringssyntaxis gebruikt om u toe te staan om tot koploze inhoud gemakkelijk te leiden.
 feature: Content Fragments
 role: User
@@ -14,15 +14,15 @@ ht-degree: 2%
 
 # Markering {#markdown}
 
-Wanneer u [ontwerpen](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), gebruikt de inhoudfragmenteditor *markeren* syntaxis waarmee u eenvoudig inhoud kunt schrijven voor levering zonder kop of voor het ontwerpen van pagina&#39;s:
+Wanneer u [ creatie ](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de redacteur van het inhoudsfragment *prijsdown* syntaxis om u toe te staan om inhoud voor of hoofdloze levering of pagina het schrijven van creatie gemakkelijk te schrijven:
 
 >[!NOTE]
 >
->Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>De Fragmenten van de inhoud zijn een eigenschap van Plaatsen, maar worden opgeslagen als **Assets**.
 >
->Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. In deze sectie wordt de oorspronkelijke editor beschreven, die voornamelijk wordt geopend vanuit de **Activa** console. Zie de documentatie van Plaatsen, [Inhoudsfragmenten - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), voor meer informatie over de nieuwe editor (die voornamelijk wordt benaderd vanuit de **Inhoudsfragmenten** console).
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3} console van de Fragmenten van de Inhoud {).**
 
-![Markeringseditor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![ de redacteur van de Prijsverlaging ](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 U kunt het volgende definiëren:
 
@@ -66,7 +66,7 @@ Een regeleinde wordt gemaakt door een regel met twee of meer spaties te eindigen
 
 U kunt inline-koppelingen en verwijzingskoppelingen maken.
 
-In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]`.
+In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]` .
 
 Dit zijn voorbeelden van inlineverbindingen:
 
@@ -188,7 +188,7 @@ Codeblokken worden doorgaans gebruikt om broncode te illustreren. U kunt codeblo
 
 ## Backslash-escapen {#backslash-escapes}
 
-Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
+Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML &lt;em>-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
 
     `\\*literal asterisks\\*`
 

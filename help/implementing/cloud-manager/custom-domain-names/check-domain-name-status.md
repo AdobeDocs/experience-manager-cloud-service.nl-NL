@@ -17,43 +17,43 @@ ht-degree: 0%
 
 U kunt de status van uw aangepaste domeinnaam bepalen in Cloud Manager.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
+1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
-1. Klikken **Domeininstellingen** in het linkernavigatievenster.
+1. Klik **Montages van het Domein** in het linkernavigatievenster.
 
-1. Klik op de knop **Status** pictogram voor de domeinnaam.
+1. Klik het **pictogram van de Status** voor de domeinnaam.
 
-Cloud Manager controleert het eigendom van het domein via de TXT-waarde en geeft een van de volgende statusberichten weer.
+Cloud Manager verifieert de eigendom van het domein via de TXT-waarde en geeft een van de volgende statusberichten weer.
 
-* **Domeinverificatie mislukt** - De TXT-waarde ontbreekt of wordt met fouten gedetecteerd.
+* **Ontbroken Controle van het Domein** - de waarde TXT of mist of met fouten ontdekt.
 
    * Volg de instructies die worden gegeven om het probleem op te lossen.
-   * Wanneer u klaar bent, moet u de optie **Opnieuw controleren** naast de status.
+   * Wanneer klaar, moet u **opnieuw verifiëren** pictogram naast de status selecteren.
 
-* **Domeinverificatie wordt uitgevoerd** - De verificatie wordt uitgevoerd.
+* **Bezig de Verificatie van het Domein 1} - de Verificatie is lopend.**
 
-   * Deze status wordt meestal weergegeven nadat u de optie **Opnieuw controleren** naast de status.
+   * Deze status wordt typisch gezien nadat u **selecteert verifieer opnieuw** pictogram naast de status.
 
-* **Geverifieerd, implementatie mislukt** - De TXT-verificatie is gelukt, maar de CDN-implementatie is mislukt.
+* **Verified, Mislukte Plaatsing** - de controle TXT was succesvol, maar de plaatsing CDN ontbrak.
 
    * Neem in dergelijke gevallen contact op met uw Adobe.
 
-* **Domein geverifieerd en geïmplementeerd** - Deze status geeft aan dat uw aangepaste domeinnaam klaar is om te worden gebruikt.
+* **Geverifieerd en Geïmporteerd Domein 1} - Deze status wijst erop dat uw naam van het douanedomein klaar is om te worden gebruikt.**
 
-   * Op dit moment is uw aangepaste domeinnaam klaar om te worden getest en moet deze naar de domeinnaam van Cloud Manager worden verwezen.
-   * Zie [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) voor meer informatie.
+   * Op dit punt is uw aangepaste domeinnaam klaar om te worden getest en moet deze naar de Cloud Manager-domeinnaam worden verwezen.
+   * Zie [ Vormend DNS Montages ](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) om meer te leren.
 
-* **Verwijderen** - De verwijdering van een aangepaste domeinnaam wordt uitgevoerd.
+* **Deleting** - de schrapping van een naam van het douanedomein is lopend.
 
-* **Verwijderen mislukt** - Het verwijderen van een aangepaste domeinnaam is mislukt en moet opnieuw worden geprobeerd.
+* **Ontbroken Schrapping** - de schrapping van ontbroken naam van het douanedomein en moet opnieuw worden geprobeerd.
 
-   * Zie [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) voor meer informatie.
+   * Zie [ het Leiden Namen van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) om meer te leren.
 
-Cloud Manager activeert automatisch een TXT-verificatie wanneer u **Opslaan** over de verificatiestap van de **Aangepast domein toevoegen** wizard. Voor verdere controles, moet u actief selecteren opnieuw verifieert pictogram naast de status.
+Cloud Manager zal automatisch een TXT controle teweegbrengen wanneer u **sparen** op de verificatiestap van **selecteert voeg de tovenaar van het Domein van de Douane** toe. Voor verdere controles, moet u actief selecteren opnieuw verifieert pictogram naast de status.
 
 ## Fouten in domeinnaam {#domain-error}
 
@@ -71,11 +71,11 @@ Hiermee vergrendelt u snel een domein op de initiële account die het heeft gere
 
 De fout is als volgt gecorrigeerd:
 
-* Verwijder de apex- en subdomeinen van de bestaande account voordat u het domein installeert in Cloud Manager.
+* Verwijder de apex- en subdomeinen van de bestaande account voordat u het domein in Cloud Manager installeert.
 
-* Gebruik deze optie om het apex-domein en alle subdomeinen te koppelen aan de AEM as a Cloud Service snelaccount. Zie [Werken met domeinen in de sneldocumentatie](https://docs.fastly.com/en/guides/working-with-domains) voor meer informatie.
+* Gebruik deze optie om het apex-domein en alle subdomeinen te koppelen aan de AEM as a Cloud Service Fastly-account. Zie [ Werkend met Domeinen in de Fastly documentatie ](https://docs.fastly.com/en/guides/working-with-domains) voor extra details.
 
-* Als uw apex-domein meerdere subdomeinen heeft voor AEM as a Cloud Service en niet-AEM as a Cloud Service sites die u wilt koppelen aan verschillende snelaccounts, installeert u het domein dan in Cloud Manager. Als de domeininstallatie mislukt, maakt u snel een Customer Support-ticket, zodat de Adobe in uw naam snel een vervolg kan geven aan de installatie.
+* Als uw apex-domein meerdere subdomeinen voor AEM as a Cloud Service- en niet-AEM as a Cloud Service-sites heeft die u wilt koppelen aan verschillende snelaccounts, installeert u het domein dan in Cloud Manager. Als de domeininstallatie mislukt, maakt u snel een Customer Support-ticket, zodat de Adobe in uw naam snel een vervolg kan geven aan de installatie.
 
 >[!TIP]
 >
@@ -83,12 +83,12 @@ De fout is als volgt gecorrigeerd:
 
 >[!NOTE]
 >
->Lijn DNS van uw plaats niet aan AEM as a Cloud Service IPs als het domein niet met succes werd geïnstalleerd.
+>Geef de DNS van uw site niet door aan AEM as a Cloud Service IP&#39;s als het domein niet correct is geïnstalleerd.
 
 ## Bestaande CDN-configuraties voor aangepaste domeinnamen {#pre-existing-cdn}
 
-Als u een reeds bestaande configuratie CDN voor uw namen van het douanedomein hebt, is er een informatief bericht op **Aangepaste domeinnamen** en **Omgeving** pagina&#39;s, die u aanmoedigen om deze configuraties toe te voegen via de gebruikersinterface zodat ze zichtbaar en configureerbaar zijn in Cloud Manager.
+Als u een reeds bestaande configuratie CDN voor uw namen van het douanedomein hebt, is er een informatief bericht op de **Namen van het Domein van de Douane** en **Milieu** pagina&#39;s, die u aanmoedigen om deze configuraties via UI toe te voegen zodat zijn zij zichtbaar en configureerbaar in Cloud Manager.
 
 Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
-Zie [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) voor meer informatie .
+Zie [ Toevoegend een Naam van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) voor meer details.

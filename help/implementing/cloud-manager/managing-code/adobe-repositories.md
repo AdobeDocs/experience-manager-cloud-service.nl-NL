@@ -1,6 +1,6 @@
 ---
 title: Opslagplaatsen voor Adoben toevoegen in Cloud Manager
-description: Leer hoe u met Adobe beheerde opslagruimten maakt in Cloud Manager.
+description: Leer hoe u opslagruimten met beheerde Adoben maakt in Cloud Manager.
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # Opslagplaatsen voor Adoben toevoegen in Cloud Manager {#adobe-repositories}
 
-Leer hoe u met Adobe beheerde opslagruimten maakt in Cloud Manager.
+Leer hoe u opslagruimten met beheerde Adoben maakt in Cloud Manager.
 
 ## Een door Adoben beheerde opslagplaats toevoegen {#add-adobe-repository}
 
-De **Opslagplaatsen** kunt u eenvoudig extra opslagruimten voor uw programma toevoegen die door de Adobe worden beheerd.
+Het **venster van Bewaarplaatsen** maakt het gemakkelijk om extra Adobe-geleide bewaarplaatsen voor uw programma toe te voegen.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **Programmaoverzicht** pagina, selecteert u de **Opslagplaatsen** tab naar **Opslagplaatsen** pagina.
+1. Van de **pagina van het Overzicht van het Programma**, selecteer het **lusje van Bewaarplaatsen** om aan de **pagina van Bewaarplaatsen** over te schakelen.
 
-1. Klikken **Opslagplaats toevoegen** in de werkbalk.
+1. Klik **toevoegen Bewaarplaats** in de toolbar.
 
-   ![Opslagplaats toevoegen, knop](assets/add-repository.png)
+   ![ toevoegen de knoop van de gegevensopslagplaats ](assets/add-repository.png)
 
-1. Voer de gewenste naam en beschrijving in en klik op **Opslaan**.
+1. Ga de naam en de beschrijving in zoals gevraagd en klik **sparen**.
 
-   ![Dialoogvenster Opslagplaats toevoegen](assets/add-adobe-repository.png)
+   ![ voeg de dialoog van de Bewaarplaats ](assets/add-adobe-repository.png) toe
 
-Wanneer de wizard wordt gesloten, wordt uw nieuwe opslagplaats weergegeven in de tabel in het dialoogvenster **Opslagplaatsen** venster. U kunt nu een [Cd-pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) met het [**Opslagplaatsen** venster.](managing-repositories.md)
+Wanneer de tovenaar sluit, wordt uw nieuwe bewaarplaats getoond in de lijst in het **venster van Bewaarplaatsen**. U kunt a [ CI/CD pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) met het nu associëren of het binnen het [**venster van Bewaarplaatsen** beheren.](managing-repositories.md)
 
 >[!TIP]
 >
->U kunt ook GitHub-repositories toevoegen die u zelf beheert als [privéopslagplaatsen.](private-repositories.md)
+>U kunt bewaarplaatsen ook toevoegen GitHub die u als [ privé bewaarplaatsen beheert.](private-repositories.md)

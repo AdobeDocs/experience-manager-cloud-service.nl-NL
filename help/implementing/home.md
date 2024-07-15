@@ -14,12 +14,12 @@ ht-degree: 52%
 ---
 
 
-# Uitvoering van aanvragen voor AEM as a Cloud Service {#aem-implementation-guide}
+# Toepassingen voor AEM as a Cloud Service {#aem-implementation-guide}
 
-Vind zelf-hulp middelen over implementatie voor as a Cloud Service Experience Manager. Leer hoe u de Experience Manager as a Cloud Service-implementatie kunt aanpassen.
+Zoek zelf-hulp middelen over implementatie voor Experience Manager as a Cloud Service. Leer hoe u de Experience Manager as a Cloud Service-implementatie kunt aanpassen.
 
 ## Belangrijke uitvoeringsartikelen {#key-articles}
 
 * [Ontwikkelen voor AEM as a Cloud Service](developing/introduction/development-guidelines.md)
 * [Headless Developer Journey](/help/journey-headless/developer/overview.md)
-* [Verzonden op AEM as a Cloud Service](dispatcher/overview.md)
+* [Dispatcher op AEM as a Cloud Service](dispatcher/overview.md)

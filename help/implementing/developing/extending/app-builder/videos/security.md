@@ -1,6 +1,6 @@
 ---
-title: Beveiliging van App Builder
-description: Meer informatie over de toepassingsbeveiliging van App Builder voor AEM as a Cloud Service.
+title: App Builder-beveiliging
+description: Meer informatie over de beveiliging van App Builder-toepassingen voor AEM as a Cloud Service.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Beveiliging van App Builder
+# App Builder-beveiliging
 
 Leer over Adobe Runtime actieveiligheid, gebruiker, en authentificatie AppBuilder en vergunning.
 

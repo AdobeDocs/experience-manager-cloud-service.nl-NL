@@ -1,6 +1,6 @@
 ---
 title: Maven Project Version Handling
-description: Voor implementatie van AEM as a Cloud Service in fasen en productie genereert Cloud Manager een unieke, incrementele versie.
+description: Cloud Manager genereert een unieke, incrementele versie voor staging- en productieimplementaties van AEM as a Cloud Service.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 # Maven Project Version Handling {#maven-project-version-handling}
 
-Voor implementatie van AEM as a Cloud Service staging en productie genereert Cloud Manager een unieke, incrementele versie
+Voor staging- en productieimplementaties van AEM as a Cloud Service genereert Cloud Manager een unieke, incrementele versie
 
-Deze versie is te zien op de [detailpagina voor uitvoering van pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) en de activiteitenpagina. Wanneer een bouwstijl in werking wordt gesteld, wordt het Maven project bijgewerkt om deze versie te gebruiken en een markering wordt gecreeerd in de git bewaarplaats met die versie als zijn naam.
+Deze versie wordt gezien op de [ pagina van de details van de pijpleidingsuitvoering ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) en de activiteitenpagina. Wanneer een bouwstijl in werking wordt gesteld, wordt het Maven project bijgewerkt om deze versie te gebruiken en een markering wordt gecreeerd in de git bewaarplaats met die versie als zijn naam.
 
-Als de oorspronkelijke projectversie aan bepaalde criteria voldoet, voegt de bijgewerkte versie van het Maven-project zowel de oorspronkelijke projectversie als de door Cloud Manager gegenereerde versie samen. De tag gebruikt echter altijd de gegenereerde versie. Deze samenvoeging vindt pas plaats als de oorspronkelijke projectversie is samengesteld met precies drie versiesegmenten, bijvoorbeeld `1.0.0` of `1.2.3`, maar niet `1.0` of `1`en mag de oorspronkelijke versie niet eindigen in `-SNAPSHOT`.
+Als de oorspronkelijke projectversie aan bepaalde criteria voldoet, voegt de bijgewerkte versie van het Maven-project zowel de oorspronkelijke projectversie als de door Cloud Manager gegenereerde versie samen. De tag gebruikt echter altijd de gegenereerde versie. Deze samenvoeging vindt pas plaats wanneer de oorspronkelijke projectversie is samengesteld met precies drie versiesegmenten, bijvoorbeeld `1.0.0` of `1.2.3` , maar niet `1.0` of `1` , en de oorspronkelijke versie mag niet eindigen in `-SNAPSHOT` .
 
 >[!IMPORTANT]
 >
->Deze oorspronkelijke waarde voor de projectversie moet statisch worden ingesteld in het dialoogvenster `<version>` element van het hoogste niveau `pom.xml` bestand in de vertakking van de it-opslagplaats.
+>Deze oorspronkelijke waarde voor de projectversie moet statisch worden ingesteld in het `<version>` -element van het bestand op hoofdniveau `pom.xml` in de vertakking van de it-opslagplaats.
 
-Als de originele versie aan deze criteria voldoet, dan wordt de geproduceerde versie toegevoegd aan de originele versie als nieuw versiesegment. De gegenereerde versie wordt ook enigszins aangepast, zodat de versie correct wordt gesorteerd en verwerkt. Bijvoorbeeld, veronderstellend een geproduceerde versie van `2019.926.121356.0000020490` zou de volgende resultaten opleveren.
+Als de originele versie aan deze criteria voldoet, dan wordt de geproduceerde versie toegevoegd aan de originele versie als nieuw versiesegment. De gegenereerde versie wordt ook enigszins aangepast, zodat de versie correct wordt gesorteerd en verwerkt. Als u bijvoorbeeld een gegenereerde versie van `2019.926.121356.0000020490` aanneemt, krijgt u de volgende resultaten.
 
 | Versie | Versie in `pom.xml` | Opmerking |
 |---|---|---|
@@ -35,4 +35,4 @@ Als de originele versie aan deze criteria voldoet, dan wordt de geproduceerde ve
 
 >[!NOTE]
 >
->Ongeacht of de oorspronkelijke versie is opgenomen in de door Cloud Manager geïnitialiseerde versie, de oorspronkelijke versie is beschikbaar als een Maven-eigenschap met de naam `cloudManagerOriginalVersion`.
+>Ongeacht of de oorspronkelijke versie al dan niet is opgenomen in de Cloud Manager-geïnitialiseerde versie, is de oorspronkelijke versie beschikbaar als een Maven-eigenschap met de naam `cloudManagerOriginalVersion` .

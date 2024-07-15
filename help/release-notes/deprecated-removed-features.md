@@ -1,6 +1,6 @@
 ---
 title: Verouderde en verwijderde functies
-description: Opmerkingen bij de release die specifiek zijn voor vervangen en verwijderde functies in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
+description: De nota's van de versie specifiek voor afgekeurde en verwijderde eigenschappen in  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
@@ -19,9 +19,9 @@ ht-degree: 0%
 >abstract="AEM as a Cloud Service heeft een implementatiemodel in de cloud. Bepaalde mogelijkheden en functies zijn vervangen door in de cloud geïntegreerde tegenhangers en op dit tabblad worden die functies weergegeven."
 
 
-Adobe evalueert voortdurend de productmogelijkheden, om oudere eigenschappen met modernere alternatieven te heruitvinden of te vervangen om de algemene waarde van de klant te verbeteren, altijd onder zorgvuldige overweging van achterwaartse verenigbaarheid. Ook, als [!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt een implementatiemodel in de cloud, bepaalde mogelijkheden en functies zijn vervangen door in de cloud geïntegreerde tegenhangers.
+Adobe evalueert voortdurend de productmogelijkheden, om oudere eigenschappen met modernere alternatieven te heruitvinden of te vervangen om de algemene waarde van de klant te verbeteren, altijd onder zorgvuldige overweging van achterwaartse verenigbaarheid. Aangezien [!DNL Adobe Experience Manager] als [!DNL Cloud Service] een implementatiemodel in de cloud biedt, zijn ook bepaalde mogelijkheden en functies vervangen door in de cloud geïntegreerde tegenhangers.
 
-De aanstaande verwijdering/vervanging van [!DNL Experience Manager] vermogens zijn de volgende regels van toepassing :
+Om de aanstaande verwijdering/vervanging van [!DNL Experience Manager] mogelijkheden mee te delen, zijn de volgende regels van toepassing:
 
 1. Aankondiging van afkeuring komt voorop. Verouderde mogelijkheden blijven beschikbaar maar worden niet verder uitgebreid.
 1. Capabilities waarvan is aangekondigd dat ze zullen worden afgekeurd, worden ten vroegste in de volgende grote release verwijderd. De werkelijke streefdatum voor verwijdering wordt bekendgemaakt.
@@ -30,38 +30,38 @@ Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan e
 
 ## Verouderde functies {#deprecated-features}
 
-Deze sectie bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in [!DNL Experience Manager] als [!DNL Cloud Service]. Functies die in een toekomstige versie moeten worden verwijderd, worden doorgaans eerst vervangen door een alternatief.
+Deze sectie bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als afgekeurd in [!DNL Experience Manager] als een [!DNL Cloud Service] . Functies die in een toekomstige versie moeten worden verwijderd, worden doorgaans eerst vervangen door een alternatief.
 
 Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun huidige implementatie gebruiken en plannen te maken om hun implementatie te wijzigen en het meegeleverde alternatief te gebruiken.
 
 | Mogelijkheden | Verouderde functie | Vervanging |
 | ------------ | ------------------ | ----------- |
-| [!DNL Sites] | Eigenschappen van Experience Fragments voor **Status van sociale media**. | De functie wordt binnenkort verwijderd. |
-| [!DNL Sites] | Eenvoudige inhoudsfragmenten op basis van een sjabloon. | [Op modellen gebaseerde gestructureerde inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) nu. |
-| [!DNL Assets] | `DAM Asset Update` werkwijze voor het verwerken van opgenomen afbeeldingen. | Bij gebruik van middelen [microservices voor bedrijfsmiddelen](/help/assets/asset-microservices-overview.md) nu. |
-| [!DNL Assets] | Elementen rechtstreeks uploaden naar [!DNL Experience Manager]. Zie [verouderde API&#39;s voor middelenupload](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Gebruiken [Direct binair uploaden](/help/assets/add-assets.md). Voor technische details, zie [directe upload-API&#39;s](/help/assets/developer-reference-material-apis.md#upload-binary). |
-| [!DNL Assets] | [Bepaalde workflowstappen](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` werkstroom wordt niet ondersteund, inclusief het aanroepen van opdrachtregelprogramma&#39;s zoals [!DNL ImageMagick]. | [Middelenmicroservices](/help/assets/asset-microservices-overview.md) bieden een vervanging voor veel workflows. Gebruik voor aangepaste verwerking [nabewerkingsworkflows](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
-| [!DNL Assets] | MPEG-transcodering van video&#39;s. | Gebruik voor het genereren van miniaturen in MPEG [Middelenmicroservices](/help/assets/asset-microservices-overview.md). Gebruik voor MPEG-transcodering [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | De replicatie UI van de boom onder het &quot;Distribute&quot;lusje van de replicatieagent (verwijdering na 30 September, 2021) | [Publicatie beheren](/help/operations/replication.md#manage-publication) of [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) benaderingen |
-| [!DNL Foundation] | U kunt inhoudspakketten niet repliceren via het tabblad Distribute van het scherm van de replicatieagent en de Replicatie-API. In plaats daarvan kunt u beide [Publicatie beheren](/help/operations/replication.md#manage-publication) of [workflow voor publicatiestructuur](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Integraties die gebruik maken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning van JWT-referenties (Service Account). De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 1 Mei worden gecreeerd, 2024, hoewel de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) nog voor reeds-gevormde integraties tot 1 Januari, 2025 kunnen worden gebruikt, toen de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) niet meer werken, en de klanten moeten naar geloofsbrieven van Server-aan Server-aan-server migreren. [Meer informatie](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migreren](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) naar OAuth Server-to-Server referenties. |
+| [!DNL Sites] | De eigenschappen van Fragmenten van de ervaring voor **Sociale Status van Media**. | De functie wordt binnenkort verwijderd. |
+| [!DNL Sites] | Eenvoudige inhoudsfragmenten op basis van een sjabloon. | [ Model-Gebaseerde gestructureerde inhoudsfragmenten ](/help/assets/content-fragments/content-fragments-models.md) nu. |
+| [!DNL Assets] | `DAM Asset Update` gebruiken om opgenomen afbeeldingen te verwerken. | De opname van activa gebruikt [ activa microservices ](/help/assets/asset-microservices-overview.md) nu. |
+| [!DNL Assets] | Upload elementen rechtstreeks naar [!DNL Experience Manager] . Zie [ afgekeurde activa uploaden APIs ](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Het gebruik [ Directe binaire upload ](/help/assets/add-assets.md). Voor technische details, zie [ directe upload APIs ](/help/assets/developer-reference-material-apis.md#upload-binary). |
+| [!DNL Assets] | [ Bepaalde werkschemasstappen ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) in `DAM Asset Update` werkschema worden niet gesteund, met inbegrip van het roepen van bevel-lijn hulpmiddelen zoals [!DNL ImageMagick]. | [ microservices van Activa ](/help/assets/asset-microservices-overview.md) verstrekken een vervanging voor vele werkschema&#39;s. Voor douaneverwerking, gebruik [ post-verwerkings werkschema&#39;s ](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| [!DNL Assets] | MPEG-transcodering van video&#39;s. | Voor de duimnagelgeneratie van MPEG, gebruik [ microservices van Activa ](/help/assets/asset-microservices-overview.md). Voor transcodering MPEG, gebruik [ Dynamic Media ](/help/assets/manage-video-assets.md). |
+| [!DNL Foundation] | De replicatie UI van de boom onder het &quot;Distribute&quot;lusje van de replicatieagent (verwijdering na 30 September, 2021) | [ beheer publicatie ](/help/operations/replication.md#manage-publication) of [ publiceer het werkschema van de inhoudsboom ](/help/operations/replication.md#publish-content-tree-workflow) benaderingen |
+| [!DNL Foundation] | U kunt inhoudspakketten niet repliceren via het tabblad Distribute van het scherm van de replicatieagent en de Replicatie-API. In plaats daarvan, gebruik of [ publiceer ](/help/operations/replication.md#manage-publication) of [ publiceer inhoudsboomwerkschema ](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Integraties die gebruik maken van referenties die zijn gegenereerd uit Adobe Developer Console-projecten verliezen geleidelijk de ondersteuning van JWT-referenties (Service Account). De nieuwe geloofsbrieven van de Rekening van de Dienst (JWT) kunnen niet op of na 1 Mei worden gecreeerd, 2024, hoewel de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) nog voor reeds-gevormde integraties tot 1 Januari, 2025 kunnen worden gebruikt, toen de bestaande geloofsbrieven van de Rekening van de Dienst (JWT) niet meer werken, en de klanten moeten naar geloofsbrieven van Server-aan Server-aan-server migreren. [ leer meer ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [ migreer ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) aan OAuth server-aan-Server geloofsbrieven. |
 
 ## Verwijderde functies {#removed-features}
 
-Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd uit [!DNL Experience Manager] with [!DNL Experience Manager] als [!DNL Cloud Service].
+Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd uit [!DNL Experience Manager] met [!DNL Experience Manager] as a [!DNL Cloud Service] .
 
 | Gebied | Functie | Vervanging | Datum van verwijderen doel |
 | ------------ | ------------------ | ----------- | ------------------- |
-| Gebruikersinterface | Klassieke UI wordt verwijderd uit het product gebruikersinterface. Een paar Klassieke dialogen UI zijn beschikbaar voor een paar uitgezochte mogelijkheden, zoals de Controleur van de Verbinding, de Leegmaken van de Versie, en sommige configuraties van de Cloud Service. Binnenkort [productupdates](/help/release-notes/home.md) kan de beschikbaarheid van de klassieke gebruikersinterface verder verwijderen. | Standaardinterface | Verwijderd |
-| [!DNL Dynamic Media] | Eerdere integratie met [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) en [Dynamic Media Hybride, modus](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. | Gebruiken [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) verstrekt [!DNL Experience Manager] als [!DNL Cloud Service]. | Verwijderd |
-| [!DNL Sites] | Portal Director en Portlet-component | Deze mogelijkheden zijn vervangen in [!DNL Experience Manager] 6.4 en zijn nu verwijderd uit [!DNL Experience Manager]. | Verwijderd |
-| [!DNL Sites] | Design Importer | Deze mogelijkheid is verwijderd als onveranderlijke gedeelten van het dialoogvenster [!DNL Experience Manager] opslagruimte zijn niet toegankelijk bij uitvoering. | Verwijderd |
-| [!DNL Assets] | [!DNL Assets] delen met Marketing Cloud Assets Core Service en Creative Cloud services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). | Verwijderd |
+| Gebruikersinterface | Klassieke UI wordt verwijderd uit het product gebruikersinterface. Een paar Klassieke dialogen UI zijn beschikbaar voor een paar uitgezochte mogelijkheden, zoals de Controleur van de Verbinding, de Leegmaken van de Versie, en sommige configuraties van de Cloud Service. De komende [ productupdates ](/help/release-notes/home.md) kunnen Klassieke beschikbaarheid verder verwijderen UI. | Standaardinterface | Verwijderd |
+| [!DNL Dynamic Media] | De vorige integraties met [ Dynamic Media Classic ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) en [ Hybride wijze van Dynamic Media ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) zijn niet beschikbaar in [!DNL Experience Manager] als [!DNL Cloud Service]. | Gebruik [ Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md) die van [!DNL Experience Manager] als [!DNL Cloud Service] wordt voorzien. | Verwijderd |
+| [!DNL Sites] | Portal Director en Portlet-component | Deze functies zijn vervangen in [!DNL Experience Manager] 6.4 en zijn nu verwijderd uit [!DNL Experience Manager] . | Verwijderd |
+| [!DNL Sites] | Design Importer | Deze mogelijkheid is verwijderd omdat onveranderlijke gedeelten van de [!DNL Experience Manager] -opslagplaats niet toegankelijk zijn tijdens runtime. | Verwijderd |
+| [!DNL Assets] | [!DNL Assets] Delen met Marketing Cloud Assets Core Service en Creative Cloud services is niet beschikbaar. | Voor integratie met [!DNL Adobe Creative Cloud], gebruik [ de Verbinding van Activa van de Adobe ](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor Apache Sling-gegevensbronnen (OSGi bundle org.apache.sling.datasource) | NVT | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor JST-scriptsjablonen (OSGi bundle org.apache.sling.scripting.jst) | NVT | Verwijderd |
 | [!DNL Foundation] | Ondersteuning voor het Apache Felix Http-whiteboard | OSGi Http-whiteboard | maart 2022 |
 | [!DNL Foundation] | Ondersteuning voor com.adobe.granite.oauth.server | Adobe IMS-integratie | maart 2023 |
-| [!DNL Foundation] | Ondersteuning voor de functie org.apache.sling.service usermapping naar [krijg de identiteitskaart van de de dienstgebruiker](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | NVT | 30-08-24 |
+| [!DNL Foundation] | Steun voor org.apache.sling.usermapping eigenschap aan [ krijgt de identiteitskaart van de dienstgebruiker ](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | NVT | 30-08-24 |
 
 
 ## API&#39;s AEM {#aem-apis}
@@ -116,7 +116,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>org.json</td>
-    <td>De uitvoering van de Apache Johnzon <a href="https://johnzon.apache.org/index.html">javax.json</a> wordt aanbevolen en dient te worden gebruikt. </td>
+    <td>De implementatie van Apache Johnzon van <a href="https://johnzon.apache.org/index.html"> javax.json </a> wordt geadviseerd en zou moeten worden gebruikt. </td>
     <td>30-04-21</td>
     <td>31-12-21</td>
   </tr>
@@ -296,20 +296,20 @@ De twee lijsten hieronder wijzen op de AEM as a Cloud Service OSGi configuratieo
 
 Als een configuratie OSGI niet vermeld is, kan het door klantencode worden gevormd.
 
-Deze regels worden gevalideerd tijdens het Cloud Manager-ontwikkelproces. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, treden er fouten op in het Cloud Manager-constructieproces. De Maven-projecten moeten [Insteekmodule AEM as a Cloud Service SDK Build Analyzer Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) om OSGI-configuratiefouten te markeren tijdens de ontwikkeling van de lokale SDK.
+Deze regels worden gevalideerd tijdens het Cloud Manager-ontwikkelproces. Er kunnen in de loop der tijd aanvullende regels worden toegevoegd en de verwachte datum van tenuitvoerlegging wordt in de tabel vermeld. Van klanten wordt verwacht dat zij zich aan deze regels zullen houden tegen de beoogde handhavingsdatum. Als u zich na de verwijderingsdatum niet aan de regels houdt, treden er fouten op in het Cloud Manager-constructieproces. Gemaakte projecten zouden [ SDK van AEM as a Cloud Service moeten omvatten bouwt Analysator Gemaakte Insteekmodule ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) om configuratiefouten te markeren OSGI tijdens lokale ontwikkeling SDK.
 
-Aanvullende informatie over de configuratie van OSGI is te vinden op [deze locatie](/help/implementing/deploying/configuring-osgi.md).
+De extra informatie over configuratie OSGI kan bij [ worden gevonden deze plaats ](/help/implementing/deploying/configuring-osgi.md).
 
 +++OSGi configuraties die niet kunnen worden gewijzigd.
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-* **`org.apache.felix.http (Factory)`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Aankondigingsdatum: 25-8-2021, uitvoeringsdatum: 26-11-2021)
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Aankondigingsdatum: 30-4-2021, Datum van tenuitvoerlegging: 7-31-2021)
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Aankondigingsdatum: 30-4-2021, Datum van tenuitvoerlegging: 7-31-2021)
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Aankondigingsdatum: 30-4-2021, Datum van tenuitvoerlegging: 7-31-2021)
+* **`org.apache.felix.http (Factory)`** (Aankondigingsdatum: 30-4-2021, Datum van tenuitvoerlegging: 7-31-2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Aankondigingsdatum: 25-8-2021, executiedatum: 11-26-2021)
 +++
 
 +++OSGi configuraties onderworpen aan bouwstijlbevestigingsregels.
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Aankondigingsdatum: 30-4-2021, Datum van tenuitvoerlegging: 7-31-2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * Type: geheel getal
    * Vereist bereik: 2-100
@@ -322,10 +322,10 @@ Aanvullende informatie over de configuratie van OSGI is te vinden op [deze locat
 * `org.apache.felix.eventadmin.IgnoreTimeout`
    * Vereist
    * Type: array van tekenreeksen
-   * Vereist bereik: moet ten minste alle `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
+   * Vereist bereik: moet ten minste alle `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*` bevatten
 * `org.apache.felix.eventadmin.IgnoreTopic`
    * Type: array van tekenreeksen
-* **`org.apache.felix.http`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+* **`org.apache.felix.http`** (Aankondigingsdatum: 30-4-2021, Datum van tenuitvoerlegging: 7-31-2021)
    * `org.apache.felix.http.timeout`
       * Type: geheel getal
    * `org.apache.felix.http.session.timeout`
@@ -388,7 +388,7 @@ Aanvullende informatie over de configuratie van OSGI is te vinden op [deze locat
       * Type: array van tekenreeksen
    * `org.apache.felix.http.session.uniqueid`
       * Type: boolean
-* **`org.apache.sling.scripting.cache`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+* **`org.apache.sling.scripting.cache`** (Aankondigingsdatum: 30-4-2021, Datum van tenuitvoerlegging: 7-31-2021)
    * `org.apache.sling.scripting.cache.size`
       * Type: geheel getal
       * Vereist bereik: >= 2048
@@ -396,7 +396,7 @@ Aanvullende informatie over de configuratie van OSGI is te vinden op [deze locat
       * Vereist
       * Type: array van tekenreeksen
       * Vereist bereik: moet JS bevatten
-* **`com.day.cq.mailer.DefaultMailService`** (Aankondigingsdatum: 30-4-2021, executiedatum: 7-31-2021)
+* **`com.day.cq.mailer.DefaultMailService`** (Aankondigingsdatum: 30-4-2021, Datum van tenuitvoerlegging: 7-31-2021)
    * `smtp.host`
       * Type: tekenreeks
    * `smtp.port`
@@ -418,7 +418,7 @@ Aanvullende informatie over de configuratie van OSGI is te vinden op [deze locat
       * Type: boolean
    * `oauth.flow`
       * Type: boolean
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (Aankondigingsdatum: 16-11-21, Datum van tenuitvoerlegging: 16-20-21)
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Aankondigingsdatum: 16-11-21, Datum van tenuitvoerlegging: 16-21-21)
    * `org.apache.sling.commons.log.level`
       * Type: opsomming
       * Vereist bereik: INFO, DEBUG of TRACE

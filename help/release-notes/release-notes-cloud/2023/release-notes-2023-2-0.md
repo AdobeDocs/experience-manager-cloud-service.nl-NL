@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release 2023.2.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Opmerkingen bij de release 2023.2.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Nota's van de versie voor 2023.2.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2023.2.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 feature: Release Information
 role: Admin
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Opmerkingen bij de release 2023.2.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2023.2.0 van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2023.2.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
 >Van hieruit kunt u navigeren om notities van vorige versies vrij te geven, bijvoorbeeld voor de versies in 2021, 2022, enzovoort.
 >
->Kijk eens naar de [Experience Manager geeft Routekaart vrij](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) voor meer informatie over de volgende activering van functies voor [!DNL Experience Manager] as a Cloud Service.
+>Heb een blik bij de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) vrij om over de aanstaande eigenschapactivering voor [!DNL Experience Manager] as a Cloud Service te leren.
 
 >[!NOTE]
 >
->Zie [Recente documentatieupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor meer informatie over documentatie-updates die niet rechtstreeks verband houden met een release.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release met functies (2023.2.0) is 12 april 2023. De volgende release met functies (2023.4.0) is gepland voor 7 juni 2023.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2023.2.0) is 12 april 2023. De volgende release met functies (2023.4.0) is gepland voor 7 juni 2023.
 
 ## Video vrijgeven {#release-video}
 
@@ -35,14 +35,14 @@ Bekijk de video Overzicht van de release van februari 2023 voor een overzicht va
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
 
-## [!DNL Experience Manager Sites] als [!DNL Cloud Service] {#sites}
+## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functies in [!DNL Experience Manager Sites] prelease {#prerelease-sites}
 
 * Exporteer inhoudsfragmenten van AEM als cloudservice naar het doel van de Adobe dat JSON biedt.
 * Ondersteuning voor paginering en sortering van GraphQL en verbeteringen in de interne cache helpen nu de prestaties van losgekoppelde clienttoepassingen te verbeteren wanneer u grote inhoudssets ophaalt van AEM met behulp van complexe GraphQL-query&#39;s en -filters.
 
-## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
@@ -53,32 +53,32 @@ Bekijk de video Overzicht van de release van februari 2023 voor een overzicht va
 
 * Extra ondersteuning voor WebP-afbeeldingen om automatisch metagegevens te extraheren, miniaturen en aangepaste uitvoeringen te genereren. De mogelijkheden Slimme tags en Slim uitsnijden worden nu ook ondersteund voor deze bestanden.
 
-## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies beschikbaar in [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Gebruik kerncomponenten voor het vastleggen van gegevens om Adaptieve Forms te bouwen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)**: [Adaptieve Forms-editor gebruiken](/help/forms/creating-adaptive-form-core-components.md) formulieren maken op basis van gestandaardiseerde componenten voor het vastleggen van gegevens (Core Components). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
+* **[Gegevens van het Gebruik vangen kerncomponenten om Aangepaste Forms ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) te bouwen**: [ de Aangepaste redacteur van Forms van het Gebruik ](/help/forms/creating-adaptive-form-core-components.md) om vormen tot stand te brengen die op gestandaardiseerde gegevens worden gebaseerd vangen componenten (de Componenten van de Kern). Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijvingservaring.
 
-* **[Ondersteuning voor de front-end pijpleiding voor de styling van de core component, gebaseerd op Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Gebruik gestandaardiseerde BEM-gebaseerde thema&#39;s voor Core Components-based Adaptive Forms door deze te implementeren met Frontend Deployment-pijplijn om het uiterlijk van uw formulieren te verbeteren en zich aan te passen aan de door uw organisatie goedgekeurde ontwerprichtlijnen.
+* **[Frontend pijpleidingssteun voor het stileren van kerncomponent gebaseerde Aangepaste Forms](/help/forms/using-themes-in-core-components.md)**: Gebruik gestandaardiseerde op BEM-Gebaseerde thema&#39;s voor op kern-componenten-Gebaseerde Aangepaste Forms door hen met de pijpleiding van de Plaatsing van de Voorkant op te stellen om de blik en het gevoel van uw vormen te verbeteren en zich aan de merkgoedgekeurde ontwerprichtlijnen van uw organisatie te richten.
 
-* **[Document met record genereren voor op kerncomponenten gebaseerde adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)**: Maak een recorddocument dat overgelegde gegevens voor Adaptive Forms bevat die zijn gemaakt met kerncomponenten voor archivering of referentie voor eindgebruikers, in gedrukte vorm of in documentindeling.
+* **[produceer Document van Verslag voor kerncomponent gebaseerde Adaptieve Forms](/help/forms/generate-document-of-record-core-components.md)**: Creeer een document van verslag dat voorgelegde gegevens voor Adaptief Forms bevat die gebruikend kerncomponenten voor archivering of verwijzing aan eind - gebruikers, in druk of in het documentformaat worden gebouwd.
 
-![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![ https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[Efficiënt formulieren maken met de functie Een adaptief formulier opslaan als sjabloon](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Versnel en standaardiseer de ontwikkeling van formulieren door bestaande, door een merk goedgekeurde formulieren op te slaan als formuliersjablonen en deze snel te hergebruiken.
+* **[efficiënte vorm-bouw met sparen een Aangepast Vorm als malplaatjeeigenschap](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Versnelde en normaliseer vormontwikkeling door bestaande merk goedgekeurde vormen als vormmalplaatjes voor snel hergebruik op te slaan.
 
-* **[AEM Forms verbinden met databases die door JDBC worden ondersteund](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Maak rechtstreeks vanuit AEM Cloud-service verbinding met bedrijfsdatabases via het JDBC-protocol, zonder dat u deze via de REST API toegankelijk hoeft te maken.
+* **[verbind AEM Forms met JDBC-Gesteunde gegevensbestanden](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: verbind rechtstreeks met ondernemingsgegevensbestanden van AEM de dienst van de Wolk gebruikend protocol JDBC, zonder de behoefte om hen over REST API bloot te stellen.
 
-* **[Integreer met REST Endpoints die Open API 3.0 gebruiken](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Naadloos integreren in recordsystemen die Open API 3.0 ondersteunen voor het opslaan en ophalen van gegevens met behulp van formuliergegevensmodellen.
+* **[integreert met de Eindpunten van REST die Open API 3.0 gebruiken](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Naadloos integreren in systemen van verslag die Open API 3.0 steunen om gegevens op te slaan en te halen gebruikend de modellen van vormgegevens.
 
-* **[Een adaptief formulier delen voor revisie](/help/forms/create-reviews-forms.md)**: Gebruik het revisiemechanisme van Adaptive Forms om een of meer revisoren in staat te stellen het formulier te reviseren.
+* **[Deel een AanpassingsVorm voor overzicht](/help/forms/create-reviews-forms.md)**: Gebruik het Aanpassings Forms overzichtsmechanisme om één of meerdere recensenten toe te staan om de vorm te herzien.
 
 
 ### Functies in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-* **[Adaptieve Forms verzenden naar Microsoft SharePoint en Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Verbeter de flexibiliteit van zakelijke gebruikers om snel nieuwe formulieren te starten en verzonden gegevens op te slaan in de dagelijkse tools die ze gebruiken, zoals de Microsoft SharePoint-site of de OneDrive-map.
+* **[legt Aangepaste Forms aan Microsoft SharePoint en Microsoft OneDrive voor](/help/forms/configuring-submit-actions.md)**: Verbeter bedrijfsgebruikersbehendigheid om nieuwe vormen snel te lanceren en voorgelegde gegevens in alledaagse hulpmiddelen op te slaan zij zoals plaats Microsoft SharePoint of omslag OneDrive gebruiken.
 
-![Adaptieve Forms verzenden naar Microsoft SharePoint en Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
+![ legt Aangepaste Forms aan Microsoft SharePoint en Microsoft OneDrive voor ](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
 
 ## Forms-programma voor vroege adoptie zonder adapter {#forms-early-adopter}
@@ -94,12 +94,12 @@ U kunt vanaf uw officiële e-mailadres een e-mail sturen naar aem-forms-headless
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
-U vindt de meest recente opmerkingen in de onderhoudsrelease [hier](/help/release-notes/maintenance/latest.md).
+U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
 
 ## Cloud Manager {#cloud-manager}
 
-U vindt een volledige lijst met maandreleases van Cloud Manager [hier](/help/implementing/cloud-manager/release-notes/current.md).
+U kunt een volledige lijst van de maandelijkse versies van Cloud Manager [ hier ](/help/implementing/cloud-manager/release-notes/current.md) vinden.
 
 ## Migratiehulpmiddelen {#migration-tools}
 
-U vindt een volledige lijst met de releases van de migratiehulpmiddelen [hier](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+U kunt een volledige lijst van de versies van Hulpmiddelen van de Migratie [ hier ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md) vinden.

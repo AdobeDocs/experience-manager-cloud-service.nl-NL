@@ -1,6 +1,6 @@
 ---
 title: Ontwikkelen AEM Commerce voor AEM as a Cloud Service
-description: Leer hoe te om een handel-toegelaten AEM project te produceren gebruikend het AEM projectarchetype. Leer hoe u het project bouwt en implementeert in een lokale ontwikkelomgeving met de AEM as a Cloud Service SDK.
+description: Leer hoe te om een handel-toegelaten AEM project te produceren gebruikend het AEM projectarchetype. Leer hoe u het project bouwt en implementeert in een lokale ontwikkelomgeving met de SDK van AEM as a Cloud Service.
 topics: Commerce, Development
 feature: Commerce Integration Framework
 version: Cloud Service
@@ -28,26 +28,26 @@ Voor de ontwikkeling AEM Commerce-projecten, gebaseerd op Commerce integration f
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Een lokale ontwikkelomgeving wordt aanbevolen voor CIF projecten. De CIF Add-on die voor AEM as a Cloud Service is voorzien, is ook beschikbaar voor lokale ontwikkeling. Het kan worden gedownload van [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+Een lokale ontwikkelomgeving wordt aanbevolen voor CIF projecten. De CIF invoegtoepassing voor AEM as a Cloud Service is ook beschikbaar voor lokale ontwikkeling. Het kan van het [ portaal van de Distributie van de Software worden gedownload ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 De CIF Add-On wordt geleverd als een archief met verkoopfuncties. Het ZIP-bestand dat beschikbaar is op de portal Softwaredistributie bevat twee Sling Feature-archiefbestanden: een voor AEM auteur en een voor AEM publicatie-instanties.
 
-**Nieuw bij AEM as a Cloud Service?** Uitchecken [een gedetailleerdere handleiding voor het instellen van een lokale ontwikkelomgeving met behulp van de AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Nieuw aan AEM as a Cloud Service?** Controle uit [ een meer gedetailleerde gids aan vestiging een lokale ontwikkelomgeving gebruikend AEM as a Cloud Service SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ### Vereiste software
 
 Het volgende moet lokaal worden geïnstalleerd:
 
 - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
-- [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) (3.3.9 of hoger)
-- [Node.js v10+](https://nodejs.org/en)
-- [npm 6+](https://www.npmjs.com/)
-- [Git](https://git-scm.com/)
+- [ Java™ 11 ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+- [ Apache Maven ](https://maven.apache.org/) (3.3.9 of nieuwer)
+- [ Node.js v10+ ](https://nodejs.org/en)
+- [ npm 6+ ](https://www.npmjs.com/)
+- [ Git ](https://git-scm.com/)
 
 ### Toegang tot de CIF
 
-De CIF invoegtoepassing kan als een zip-bestand worden gedownload van het tabblad [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Het ZIP-bestand bevat de CIF add-on als **Sling Feature-archief** Het is echter geen AEM pakket. Aanbiedingen in SDK zijn toegankelijk met een AEM as a Cloud Service licentie.
+CIF toe:voegen-op kan als zip dossier van het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) worden gedownload. Het zip dossier bevat CIF toe:voegen-op als **het Sling archief van de Eigenschap**, is het geen AEM pakket. Aanbiedingen in SDK zijn toegankelijk met een AEM as a Cloud Service-licentie.
 
 >[!TIP]
 >
@@ -58,18 +58,18 @@ De CIF invoegtoepassing kan als een zip-bestand worden gedownload van het tabbla
 Voor ontwikkeling van lokale CIF Add-on met de AEM as a Cloud Service SDK gaat u als volgt te werk:
 
 1. De nieuwste AEM as a Cloud Service SDK ophalen
-1. De AEM .jar uitpakken zodat u de `crx-quickstart` map, uitvoeren:
+1. Pak de AEM .jar uit zodat u de `crx-quickstart` -map kunt maken, voer dan de volgende handelingen uit:
 
    ```bash
    java -jar <jar name> -unpack
    ```
 
-1. Een `crx-quickstart/install` map
-1. Kopieer het correcte archiefbestand voor de verkoopfunctie van de CIF invoegtoepassing naar het `crx-quickstart/install` map.
+1. Een `crx-quickstart/install` -map maken
+1. Kopieer het juiste archiefbestand voor de verkoopfunctie van de CIF add-on naar de map `crx-quickstart/install` .
 
-   Het ZIP-bestand met CIF add-on bevat twee Sling Feature-archiefbestanden `.far` bestanden. Zorg ervoor om correcte voor AEM Auteur of AEM te gebruiken publiceren, afhankelijk van hoe u van plan bent om lokale AEM as a Cloud Service SDK in werking te stellen.
+   Het ZIP-bestand met CIF add-on bevat twee archiefbestanden voor de verkoopfunctie `.far` . Zorg ervoor dat u de juiste naam gebruikt voor AEM auteur of AEM Publish, afhankelijk van hoe u de lokale AEM as a Cloud Service SDK wilt uitvoeren.
 
-1. Een lokale besturingssysteemomgevingsvariabele maken met de naam `COMMERCE_ENDPOINT` het Adobe Commerce GraphQL-eindpunt vast te houden.
+1. Maak een lokale besturingssysteemomgevingsvariabele met de naam `COMMERCE_ENDPOINT` die het Adobe Commerce GraphQL-eindpunt vasthoudt.
 
    Voorbeeld macOS X:
 
@@ -85,25 +85,25 @@ Voor ontwikkeling van lokale CIF Add-on met de AEM as a Cloud Service SDK gaat u
 
    Deze variabele wordt gebruikt door AEM om met uw handelssysteem te verbinden. Bovendien bevat de CIF add-on een lokale reverse-proxy waarmee het Commerce GraphQL-eindpunt lokaal beschikbaar wordt gemaakt. Deze volmacht wordt gebruikt door de CIF auteurshulpmiddelen (productconsole en plukkers) en voor de CIF cliënt-zijcomponenten die directe vraag van GraphQL doen.
 
-   Deze variabele moet ook voor de AEM as a Cloud Service omgeving worden ingesteld. Zie voor meer informatie over variabelen [Het vormen OSGi voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
+   Deze variabele moet ook voor de AEM as a Cloud Service-omgeving worden ingesteld. Voor meer informatie over variabelen, zie [ het Vormen OSGi voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Optioneel) Als u niet-actieve catalogusfuncties wilt inschakelen, moet u een integratietoken maken voor uw Adobe Commerce-instantie. Voer de stappen uit bij [Aan de slag](./getting-started.md#staging) om het token te maken.
+1. (Optioneel) Als u niet-actieve catalogusfuncties wilt inschakelen, moet u een integratietoken maken voor uw Adobe Commerce-instantie. Volg de stappen bij [ Begonnen het worden ](./getting-started.md#staging) om het teken tot stand te brengen.
 
-   Plaats een geheim OSGi met de naam `COMMERCE_AUTH_HEADER` op de volgende waarde:
+   Stel een geheim OSGi met de naam `COMMERCE_AUTH_HEADER` in op de volgende waarde:
 
    ```xml
    Authorization: Bearer <Access Token>
    ```
 
-   Zie voor meer informatie over geheimen [Het vormen OSGi voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
+   Voor meer informatie over geheimen, zie [ Vormend OSGi voor AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
 
-1. De AEM as a Cloud Service SDK starten
+1. De SDK van AEM as a Cloud Service starten
 
 >[!NOTE]
 >
->Zorg ervoor u AEM as a Cloud Service SDK in het zelfde eindvenster begint de omgevingsvariabele in stap 5 werd geplaatst. Als u het in een afzonderlijk eindvenster, of door het .jar dossier tweemaal te klikken begint, zorg ervoor dat de omgevingsvariabele zichtbaar is.
+>Zorg ervoor dat u AEM as a Cloud Service SDK start in hetzelfde terminalvenster dat de omgevingsvariabele is ingesteld in stap 5. Als u het in een afzonderlijk eindvenster, of door het .jar dossier tweemaal te klikken begint, zorg ervoor dat de omgevingsvariabele zichtbaar is.
 
-Verifieer de opstelling via de console OSGI: `http://localhost:4502/system/console/osgi-installer`. De lijst moet de CIF add-on gerelateerde bundels, content-package en OSGI-configuraties bevatten, zoals gedefinieerd in het bestand met het functiemodel.
+Controleer de installatie via de OSGI-console: `http://localhost:4502/system/console/osgi-installer` . De lijst moet de CIF add-on gerelateerde bundels, content-package en OSGI-configuraties bevatten, zoals gedefinieerd in het bestand met het functiemodel.
 
 ## Projectinstelling {#project}
 
@@ -111,13 +111,13 @@ Er zijn twee manieren om uw CIF project voor AEM as a Cloud Service te Bootstrap
 
 ### Projectarchetype AEM gebruiken
 
-De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) is het belangrijkste hulpmiddel om een vooraf gevormd project te Bootstrappen om met CIF te beginnen. CIF de Componenten van de Kern en alle vereiste configuraties kunnen in een geproduceerd project met één extra optie worden omvat.
+Het [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) is het belangrijkste hulpmiddel om een vooraf gevormd project te Bootstrappen om met CIF begonnen te worden. CIF de Componenten van de Kern en alle vereiste configuraties kunnen in een geproduceerd project met één extra optie worden omvat.
 
 >[!TIP]
 >
->Gebruik altijd de nieuwste versie van het dialoogvenster [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype/releases) zodat kunt u het project produceren.
+>Gebruik altijd de recentste versie van [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/releases) zodat kunt u het project produceren.
 
-Zie AEM projectarchetype [gebruiksaanwijzingen](https://github.com/adobe/aem-project-archetype#usage) op hoe te om een AEM project te produceren. Als u CIF in het project wilt opnemen, gebruikt u de opdracht `includeCommerce` -optie.
+Zie AEM het gebruiksinstructies van de Archetype van het Project [ ](https://github.com/adobe/aem-project-archetype#usage) op hoe te om een AEM project te produceren. Als u CIF in het project wilt opnemen, gebruikt u de optie `includeCommerce` .
 
 Bijvoorbeeld:
 
@@ -132,7 +132,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
  -D includeCommerce=y
 ```
 
-CIF de Componenten van de Kern kunnen in om het even welk project worden gebruikt door één van beide inbegrepen verstrekte `all` afzonderlijk of met behulp van het CIF-inhoudspakket en de bijbehorende OSGI-bundels. Om CIF de Componenten van de Kern aan een project manueel toe te voegen, gebruik de volgende gebiedsdelen:
+CIF Core Components kunnen in elk project worden gebruikt door het meegeleverde `all` -pakket op te nemen of afzonderlijk met behulp van het pakket met CIF inhoud en verwante OSGI-bundels. Om CIF de Componenten van de Kern aan een project manueel toe te voegen, gebruik de volgende gebiedsdelen:
 
 ```java
 <dependency>
@@ -166,16 +166,16 @@ CIF de Componenten van de Kern kunnen in om het even welk project worden gebruik
 
 ### AEM Venia Reference Store gebruiken
 
-Een tweede optie om een CIF project te starten is het klonen en gebruiken van de [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia). De AEM Venia Reference Store is een voorbeeldtoepassing van de verwijzingsopslag die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden van best practices en een mogelijk beginpunt voor het ontwikkelen van uw eigen functionaliteit.
+Een tweede optie om een CIF project te beginnen is het [ AEM de Opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia) te klonen en te gebruiken. De AEM Venia Reference Store is een voorbeeldtoepassing van de verwijzingsopslag die het gebruik van CIF Core Components voor AEM aantoont. Het is bedoeld als een set voorbeelden van best practices en een mogelijk beginpunt voor het ontwikkelen van uw eigen functionaliteit.
 
 Om aan de slag te gaan met de Venia Reference Store, kloont u de Git-opslagplaats en begint u het project aan te passen aan uw behoeften.
 
 >[!NOTE]
 >
->Het project van de Referentieopslag van Venia bevat twee bouwstijlprofielen voor AEM as a Cloud Service en AEM 6.5. Controleren [project readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) zodat u kunt zien hoe zij worden gebruikt.
+>Het Venia Reference Store-project bevat twee buildprofielen voor AEM as a Cloud Service en AEM 6.5. Controle [ project readme.md ](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) zodat kunt u zien hoe zij worden gebruikt.
 
 ## Aanvullende bronnen
 
-- [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+- [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype)
+- [AEM Venia Reference Store ](https://github.com/adobe/aem-cif-guides-venia)
+- [ portal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)

@@ -26,69 +26,71 @@ Aan het einde van het artikel leert u:
 
 ## Formulieren vertalen in Google Drive {#translate-form-google-drive}
 
-De `GOOGLETRANSLATE` -functies in Google-bladen worden formulieren omgezet door te tikken op een ingebouwde vertaaltool, waardoor de tekst van de ene taal rechtstreeks in een Google-blad wordt gewijzigd. Formulieren vertalen in Google Drive:
+De functie `GOOGLETRANSLATE` in Google-bladen vertaalt formulieren door te tikken op een ingebouwd vertaalprogramma, waardoor de tekst van de ene taal rechtstreeks in een Google-blad wordt gewijzigd. Formulieren vertalen in Google Drive:
 
 1. Ga naar de map AEM Project op Google Drive en open uw Google-pagina.
-2. De naam van het bestaande blad wijzigen (`shared-default`) naar `shared-en`.
-3. Een werkblad met de naam toevoegen `shared-default`. De `shared-default` Het blad bevat de inhoud voor lokalisatie naar een specifieke taal.
-4. Voeg de gelokaliseerde inhoud toe in het dialoogvenster `shared-default` blad met behulp van `GOOGLETRANSLATE` functie.
-U kunt een formule gebruiken om de inhoud van cel D2 van te vertalen `shared-en` blad in het Frans binnen de `shared-default` blad. Hier volgt de formule:
+2. Wijzig de naam van het bestaande blad (`shared-default`) in `shared-en` .
+3. Voeg een werkblad met de naam `shared-default` toe. Het `shared-default` -blad bevat de inhoud die u wilt lokaliseren naar een bepaalde taal.
+4. Voeg de gelokaliseerde inhoud aan het `shared-default` blad toe gebruikend de functie `GOOGLETRANSLATE`.
+U kunt een formule gebruiken om de inhoud van cel D2 van het `shared-en` blad in het Frans te vertalen binnen het `shared-default` blad. Hier volgt de formule:
    `=GOOGLETRANSLATE('shared-en'!D2,"en","fr")`
 
-   ![Sprite-werkblad opvragen](/help/forms/assets/translate-enquiry-spreadsheet.png)
+   ![ Vertaal de vraag spreadsheet ](/help/forms/assets/translate-enquiry-spreadsheet.png)
 
-5. Het blad voorvertonen en publiceren met [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+5. Voorproef en publiceer het blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-U kunt verwijzen naar de [spreadsheet](/help/forms/assets/enquirytranslate.xlsx) met de formulierdefinitie voor een `enquiry` formulier vertaald van het Engels naar het Frans.
+U kunt naar het [ spreadsheet ](/help/forms/assets/enquirytranslate.xlsx) verwijzen die de vormdefinitie voor een `enquiry` vorm bevat die van het Engels aan de Franse taal wordt vertaald.
 
-![Vertaald formulier vragen](/help/forms/assets/translate-form-french.png)
+![ Vertaalde Vorm van de vraag ](/help/forms/assets/translate-form-french.png)
 
-Raadpleeg de onderstaande URL waar u het formulier kunt bekijken met de Franse vertaling: https://main—portal—wkndforms.hlx.live/enquirytranslate
+Raadpleeg de onderstaande URL waar u het formulier kunt bekijken met de Franse vertaling:
+https://main—portal—wkndforms.hlx.live/enquirytranslate
 
 ## Formulieren vertalen binnen SharePoint-site{#translate-form-sharepoint}
 
 Als u de formulieren wilt vertalen op de Microsoft® SharePoint-site, moet u de labels van de velden handmatig wijzigen met een vertaalservice. De formulieren vertalen binnen de SharePoint-site:
 
 1. Ga naar de map AEM Project op Microsoft® SharePoint en open uw spreadsheet.
-2. De naam van het bestaande blad wijzigen (`shared-default`) naar `shared-en`.
-3. Een werkblad met de naam toevoegen `shared-default`. De `shared-default` Het blad bevat de inhoud voor lokalisatie naar een specifieke taal.
-4. Voeg de gelokaliseerde inhoud toe in het dialoogvenster `shared-default` blad handmatig.
+2. Wijzig de naam van het bestaande blad (`shared-default`) in `shared-en` .
+3. Voeg een werkblad met de naam `shared-default` toe. Het `shared-default` -blad bevat de inhoud die u wilt lokaliseren naar een bepaalde taal.
+4. Voeg de gelokaliseerde inhoud handmatig toe aan het `shared-default` -werkblad.
 
-   ![Sprite-werkblad opvragen](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
+   ![ Vertaal de vraag spreadsheet ](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
 
-5. Het blad voorvertonen en publiceren met [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+5. Voorproef en publiceer het blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-Zie de [spreadsheet](/help/forms/assets/enquirytranslate-sp.xlsx) met de formulierdefinitie voor een `enquiry` formulier vertaald van het Engels naar het Frans.
+Verwijs naar [ spreadsheet ](/help/forms/assets/enquirytranslate-sp.xlsx) die de vormdefinitie voor een `enquiry` vorm bevat die van het Engels aan de Franse taal wordt vertaald.
 
-![Vertaald formulier vragen](/help/forms/assets/translate-form-french.png)
+![ Vertaalde Vorm van de vraag ](/help/forms/assets/translate-form-french.png)
 
-Raadpleeg de onderstaande URL waar u het formulier kunt bekijken met de Franse vertaling: https://main—wefinance—wkndforms.hlx.live/enquirytranslate
+Raadpleeg de onderstaande URL waar u het formulier kunt bekijken met de Franse vertaling:
+https://main—wefinance—wkndforms.hlx.live/enquirytranslate
 
 ## Bekende problemen {#known-issues}
 
-* De labels van het formulier worden vertaald naar de opgegeven gelokaliseerde taal in de `shared-default` blad, maar de foutberichten worden in de standaardtaal van de browser weergegeven.
+* De labels van het formulier worden vertaald naar de opgegeven gelokaliseerde taal op het `shared-default` -blad, maar de foutberichten worden weergegeven in de standaardtaal van de browser.
 
-  ![Foutbericht](/help/forms/assets/translate-error-message.png)
+  ![ het bericht van de Fout ](/help/forms/assets/translate-error-message.png)
 
 * Wanneer u de kalender opent, wordt de kalenderdrop-down getoond in de standaardtaal van browser.
 
-  ![Foutbericht](/help/forms/assets/translate-calender-display.png)
+  ![ het bericht van de Fout ](/help/forms/assets/translate-calender-display.png)
 
 
 ## Veelgestelde vragen {#faq}
 
-**Q**: Hoe kan ik invoer in de opgegeven gelokaliseerde taal in een formulier typen?
+**Q**: Hoe kan ik input in de gespecificeerde gelokaliseerde taal in een vorm typen?
 
-**A**: Als u tekst wilt invoeren in een specifieke gelokaliseerde taal, past u de toetsenbordinstellingen op het apparaat aan. Raadpleeg de volgende koppelingen voor instructies over hoe u dit kunt doen:
+**A**: Aan inputtekst in een specifieke gelokaliseerde taal, pas de toetsenbordmontages op uw apparaat aan. Raadpleeg de volgende koppelingen voor instructies over hoe u dit kunt doen:
 
-* [Mac instellen om invoer in een andere taal op te nemen](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
-* [Stel uw vensters in om invoer in een andere taal op te nemen](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-* [Stel uw Android- of iPhones/iPads in om invoer in een andere taal te ontvangen](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid)
+* [ opstelling uw Mac om input in een andere taal ](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac) te nemen
+* [ opstelling uw Vensters om input in een andere taal ](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options) te nemen
+* [ Opstelling uw Android of iPhones/iPads om input in een andere taal ](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid) te nemen
 
 
-**Q**: Hoe kan ik een lijst ophalen met landinstellingen die worden gebruikt in het dialoogvenster `GOOGLETRANSLATE` functie?
+**Q**: Hoe kan ik een lijst van scènes terugwinnen die in de `GOOGLETRANSLATE` functie worden gebruikt?
 
-**A**: U kunt verwijzen naar de [officiële documentatie van Google](https://cloud.google.com/translate/docs/languages) voor een uitgebreide lijst van landinstellingen die in de GOOGLETRANSLATE worden gebruikt.
+**A**: U kunt naar de [ officiële documentatie van Google ](https://cloud.google.com/translate/docs/languages) voor een uitvoerige lijst van scènes verwijzen die in GOOGLETRANSLATE worden gebruikt.
 
 ## Zie ook
 

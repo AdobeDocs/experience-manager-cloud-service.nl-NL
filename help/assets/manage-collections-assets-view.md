@@ -28,7 +28,7 @@ You can share collections with various users that are assigned different levels 
 
 U kunt meerdere verzamelingen delen met een gebruiker. Elke verzameling bevat verwijzingen naar elementen. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.
 
-![Verzamelingen](assets/collections.png)
+![ Inzamelingen ](assets/collections.png)
 
 U kunt de volgende taken uitvoeren om inzamelingen te beheren en te gebruiken:
 
@@ -56,15 +56,15 @@ U kunt de volgende taken uitvoeren om inzamelingen te beheren en te gebruiken:
 
 Een verzameling maken:
 
-1. Klikken **[!UICONTROL Collections]** in het linkerspoor en klik vervolgens op **[!UICONTROL Create Collection]**.
+1. Klik op **[!UICONTROL Collections]** in de linkertrack en klik vervolgens op **[!UICONTROL Create Collection]** .
 
 1. Geef een titel en een optionele beschrijving voor de verzameling op.
 
 1. Selecteer als u een Privé inzameling of een Openbare inzameling moet tot stand brengen. Een openbare inzameling is beschikbaar voor het bekijken en het uitgeven aan alle gebruikers. Nochtans, is een Privéinzameling beschikbaar aan de schepper en de gebruikers met beheerdervoorrechten.
 
-1. Klikken **[!UICONTROL Create]** om de verzameling te maken.
+1. Klik op **[!UICONTROL Create]** om de verzameling te maken.
 
-![Verzameling maken](assets/create-collection.png)
+![ creeer inzameling ](assets/create-collection.png)
 
 <!--
    
@@ -76,19 +76,19 @@ Een verzameling maken:
 
 Elementen toevoegen aan een verzameling:
 
-1. Klikken **[!UICONTROL Assets]** in het linkerspoor en selecteer de activa die u aan een inzameling moet toevoegen.
+1. Klik op **[!UICONTROL Assets]** in de linkertrack en selecteer de elementen die u aan een verzameling wilt toevoegen.
 
 1. Klik op **[!UICONTROL Add to Collection]**.
 
-1. Op de [!UICONTROL Collections] selecteert u de verzamelingen waaraan u de geselecteerde elementen wilt toevoegen.
+1. Selecteer in het dialoogvenster [!UICONTROL Collections] de verzamelingen waaraan u de geselecteerde elementen wilt toevoegen.
 
-1. Klikken **[!UICONTROL Add]** om het element aan de geselecteerde verzamelingen toe te voegen.
+1. Klik op **[!UICONTROL Add]** om het element aan de geselecteerde verzamelingen toe te voegen.
 
 ## Elementen uit een verzameling verwijderen {#remove-assets-from-collection}
 
 Elementen uit een verzameling verwijderen:
 
-1. Klikken **[!UICONTROL Collections]** in het linkerspoor om de lijst van inzamelingen te bekijken.
+1. Klik op **[!UICONTROL Collections]** in de linkertrack om de lijst met verzamelingen weer te geven.
 
 1. Klik op de verzameling en selecteer de items die u uit de verzameling wilt verwijderen.
 
@@ -102,27 +102,27 @@ Sla de zoekresultaten op als een slimme verzameling om de inhoud van de verzamel
 
 Een slimme verzameling maken:
 
-1. Klikken **[!UICONTROL Filter]** en [de zoekcriteria definiëren](search-assets-view.md#refine-search-results).
+1. Klik **[!UICONTROL Filter]** en [ bepalen de onderzoekscriteria ](search-assets-view.md#refine-search-results).
 
-1. Klikken **[!UICONTROL Save as]** en selecteer vervolgens **[!UICONTROL Smart Collection]**.
+1. Klik op **[!UICONTROL Save as]** en selecteer vervolgens **[!UICONTROL Smart Collection]** .
 
-   ![Slimme verzameling maken](assets/create-smart-collection.png)
+   ![ creeer slimme inzameling ](assets/create-smart-collection.png)
 
-1. Op de [!UICONTROL Create Smart Collection] geeft u een titel en een beschrijving op voor de slimme verzameling.
+1. Geef in het dialoogvenster [!UICONTROL Create Smart Collection] een titel en een beschrijving op voor de slimme verzameling.
 
-1. Selecteren **[!UICONTROL Public Collection]** als u alle gebruikers nodig hebt om toegang te krijgen tot de verzameling. Selecteren **[!UICONTROL Private Collection]** als u een beperkte groep gebruikers nodig hebt om toegang te krijgen tot de verzameling.
+1. Selecteer **[!UICONTROL Public Collection]** als u alle gebruikers toegang tot de verzameling wilt geven. Selecteer **[!UICONTROL Private Collection]** als u een beperkte groep gebruikers nodig hebt om toegang te krijgen tot de verzameling.
 
-1. Klikken **[!UICONTROL Create]** de slimme verzameling maken.
+1. Klik op **[!UICONTROL Create]** om de slimme verzameling te maken.
 
 ### Een slimme verzameling bewerken {#edit-smart-collection}
 
 Een slimme verzameling bewerken:
 
-1. Klikken **[!UICONTROL Collections]** in het linkerspoor en klik dan de naam van de inzameling tweemaal die u moet uitgeven.
+1. Klik op **[!UICONTROL Collections]** in de linkertrack en dubbelklik op de naam van de verzameling die u wilt bewerken.
 
 1. Klik op **[!UICONTROL Edit Smart Collection]**.
 
-1. Op de [!UICONTROL Edit Smart Collection Filters] dialoogvenster, [de zoekcriteria bijwerken](search-assets-view.md#refine-search-results) voor de slimme verzameling.
+1. Voor het [!UICONTROL Edit Smart Collection Filters] dialoogvakje, [ werk de onderzoekscriteria ](search-assets-view.md#refine-search-results) voor de Slimme Inzameling bij.
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -154,29 +154,29 @@ Metagegevens over verzamelingen bevatten gegevens over de verzameling, zoals tit
 
 Metagegevens van verzamelingen weergeven en bewerken:
 
-1. Klikken **[!UICONTROL Collections]** Selecteer een verzameling in de linkertrack en klik op **[!UICONTROL Details]**.
-1. De metagegevens van de verzameling weergeven met de opdracht **[!UICONTROL Basic]** tab.
-1. Wijzig desgewenst de metagegevensvelden. U kunt de [!UICONTROL Title] en [!UICONTROL Description] velden.
+1. Klik op **[!UICONTROL Collections]** in de linkertrack, selecteer een verzameling en klik op **[!UICONTROL Details]** .
+1. De metagegevens van de verzameling weergeven met het tabblad **[!UICONTROL Basic]** .
+1. Wijzig desgewenst de metagegevensvelden. U kunt de velden [!UICONTROL Title] en [!UICONTROL Description] wijzigen.
 
-![Metagegevens verzameling](assets/collection-metadata.png)
+![ meta-gegevens van de Inzameling ](assets/collection-metadata.png)
 
 ## Koppelingen voor verzamelingen delen {#share-collection-links}
 
-[!DNL Assets view] kunt u een koppeling genereren en verzamelingen en middelen delen in verzamelingen met externe belanghebbenden die geen toegang hebben tot [!DNL Assets view] toepassing. U kunt een vervaldatum voor de verbinding bepalen en dan het delen met anderen gebruikend uw aangewezen communicatie methode zoals e-mail of overseinendiensten. Ontvangers van de koppeling kunnen een voorbeeld van de elementen bekijken en deze downloaden.
+Met [!DNL Assets view] kunt u een koppeling genereren en verzamelingen en elementen in verzamelingen delen met externe belanghebbenden die geen toegang hebben tot de [!DNL Assets view] -toepassing. U kunt een vervaldatum voor de verbinding bepalen en dan het delen met anderen gebruikend uw aangewezen communicatie methode zoals e-mail of overseinendiensten. Ontvangers van de koppeling kunnen een voorbeeld van de elementen bekijken en deze downloaden.
 
-![Koppeling voor elementen delen](assets/share-link-collections.png)
+![ verbinding van het Aandeel voor activa ](assets/share-link-collections.png)
 
-Voor meer informatie over hoe te om inzamelingsverbindingen met externe belanghebbenden te delen, zie [koppelingen delen voor elementen](/help/assets/share-links-for-assets-view.md).
+Voor meer informatie over hoe te om inzamelingsverbindingen met externe belanghebbenden te delen, zie [ verbindingen voor activa ](/help/assets/share-links-for-assets-view.md) delen.
 
 ## Een verzameling downloaden {#download-collection}
 
 Een verzameling downloaden:
 
-1. Klikken **[!UICONTROL Collections]** in het linkerspoor.
+1. Klik op **[!UICONTROL Collections]** in de linkertrack.
 
-1. Selecteer de verzameling die u wilt downloaden en klik op **[!UICONTROL Download]**.
+1. Selecteer de verzameling die u wilt downloaden en klik op **[!UICONTROL Download]** .
 
-1. Op de [!UICONTROL Downloading Asset] klikt u op **[!UICONTROL OK]**.
+1. Klik in het dialoogvenster [!UICONTROL Downloading Asset] op **[!UICONTROL OK]** .
 
 De verzameling wordt als een ZIP-bestand gedownload op uw lokale computer.
 
@@ -184,7 +184,7 @@ De verzameling wordt als een ZIP-bestand gedownload op uw lokale computer.
 
 Een verzameling verwijderen:
 
-1. Klikken **[!UICONTROL Collections]** in het linkerspoor.
+1. Klik op **[!UICONTROL Collections]** in de linkertrack.
 
 1. Selecteer de verzameling die u wilt verwijderen.
 
@@ -192,20 +192,20 @@ Een verzameling verwijderen:
 
 ## Rechten voor een privéverzameling beheren{#manage-permissions-private-collection}
 
-U kunt beheerders toestaan om te beheren [toegangsniveaus](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) voor privéverzamelingen die beschikbaar zijn in de repository. U kunt machtigingen toewijzen zoals `Can View` en `Can Edit` aan de gebruikersgroepen of gebruikers. U kunt toestemmingsbeheervoorrechten aan gebruikersgroepen ook delegeren. De gebruikers die privé inzamelingen tot stand brengen zijn de eigenaars van die inzamelingen. Ze kunnen de [!UICONTROL Manage Permissions] actie om toegang te verlenen aan de andere gebruikers. Bovendien kunnen beheerders machtigingen van de privéverzamelingen in de [!DNL Experience Manager] opslagplaats.
+U kunt beheerders toestaan om [ toegangsniveaus ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) voor privé inzamelingen te beheren beschikbaar in de bewaarplaats. U kunt machtigingen zoals `Can View` en `Can Edit` toewijzen aan gebruikersgroepen of gebruikers. U kunt toestemmingsbeheervoorrechten aan gebruikersgroepen ook delegeren. De gebruikers die privé inzamelingen tot stand brengen zijn de eigenaars van die inzamelingen. Ze kunnen de handeling [!UICONTROL Manage Permissions] gebruiken om toegang te verlenen aan andere gebruikers. Bovendien kunnen beheerders machtigingen van de privéverzamelingen in de [!DNL Experience Manager] -opslagplaats weergeven en beheren.
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-Voor informatie over hoe u de beschikbare machtigingen aan gebruikersgroepen kunt toewijzen, raadpleegt u [Machtigingen toevoegen aan gebruikersgroepen](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Voor informatie over hoe te om de beschikbare toestemmingen aan gebruikersgroepen toe te wijzen, zie [ toestemmingen aan gebruikersgroepen ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) toevoegen.
 
-Voor meer informatie over het werkschema van begin tot eind, zie [machtigingen beheren](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Voor meer informatie over het werkschema van begin tot eind, zie [ toestemmingen ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) beheren.
 
 ## Volgende stappen {#next-steps}
 
-* Feedback geven op het product met de [!UICONTROL Feedback] beschikbaar in de gebruikersinterface van de Assets-weergave
+* Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[

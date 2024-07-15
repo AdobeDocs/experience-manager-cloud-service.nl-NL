@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Uw inhoud bijwerken via AEM Assets API&#39;s {#update-your-content}
 
-In dit deel van het [AEM Headless Developer Journey,](overview.md) Leer hoe u de REST API kunt gebruiken om de inhoud van de Content Fragments te openen en bij te werken.
+In dit deel van de [ AEM Zwaardeloze Reis van de Ontwikkelaar, ](overview.md) leert hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM zonder kop: [Toegang tot uw inhoud via AEM levering-API&#39;s](access-your-content.md) U hebt geleerd hoe u toegang krijgt tot inhoud zonder kop in AEM via de AEM GraphQL API. Nu moet u:
+In het vorige document van de AEM headless reis, [ hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben ](access-your-content.md) leerde u hoe te om tot uw inhoud zonder kop in AEM via GraphQL API toegang te hebben en u zou nu moeten:
 
 * Een goed begrip van GraphQL.
 * Begrijp hoe de AEM GraphQL API werkt.
@@ -29,7 +29,7 @@ Dit artikel bouwt verder op deze basisbeginselen, zodat u begrijpt hoe u bestaan
 ## Doelstelling {#objective}
 
 * **Publiek**: Geavanceerd
-* **Doelstelling**: Leer hoe u de REST API kunt gebruiken om de inhoud van de inhoudsfragmenten te openen en bij te werken:
+* **Doelstelling**: Leer hoe te om REST API te gebruiken om tot de inhoud van uw Fragments van de Inhoud toegang te hebben en bij te werken:
    * Introduceer de AEM Assets HTTP API.
    * Introduceer en bespreek de ondersteuning voor inhoudsfragmenten in de API.
    * Details van de API illustreren.
@@ -38,26 +38,26 @@ Dit artikel bouwt verder op deze basisbeginselen, zodat u begrijpt hoe u bestaan
   * Look at sample code to see how things work in practice.
 -->
 
-## Waarom hebt u de HTTP-API Middelen nodig voor inhoudsfragmenten {#why-http-api}
+## Waarom hebt u de Assets HTTP API voor inhoudsfragmenten nodig? {#why-http-api}
 
 In de vorige fase van de Headless Journey hebt u geleerd hoe u de AEM GraphQL API kunt gebruiken om uw inhoud op te halen met behulp van query&#39;s.
 
 Waarom is er dus nog een API nodig?
 
-Met de HTTP-API voor middelen kunt u **Lezen** uw inhoud, maar het laat u ook **Maken**, **Bijwerken** en **Verwijderen** content - acties die niet mogelijk zijn met de GraphQL API.
+HTTP Assets API staat u toe **** te lezen uw inhoud, maar het laat u ****, **Update** en **schrapt** inhoud ook creëren - acties die niet met GraphQL API mogelijk zijn.
 
-De REST-API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager as a Cloud Service-versie die buiten de box valt.
+De Assets REST-API is beschikbaar voor elke installatie van een recente Adobe Experience Manager as a Cloud Service-versie die buiten de box valt.
 
-## Elementen HTTP-API {#assets-http-api}
+## ASSETS HTTP API {#assets-http-api}
 
-De HTTP-API voor Middelen omvat:
+De Assets HTTP-API omvat:
 
-* REST-API voor middelen
+* ASSETS REST API
 * inclusief ondersteuning voor inhoudsfragmenten
 
-De huidige implementatie van de HTTP-API voor middelen is gebaseerd op de **REST** architecturale stijl en biedt toegang tot inhoud (opgeslagen in AEM) via **CRUD** bewerkingen (Maken, lezen, bijwerken, verwijderen).
+De huidige implementatie van Assets HTTP API is gebaseerd op de **REST** architecturale stijl en laat u toe om tot inhoud toegang te hebben (die in AEM wordt opgeslagen) via **CRUD** verrichtingen (creeer, Gelezen, Update, Schrapping).
 
-Met deze bewerkingen kunt u met de API Adobe Experience Manager as a Cloud Service gebruiken als een headless CMS (Content Management System) door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken. Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via een API wordt aangeboden, vaak in JSON-indeling.
+Met deze bewerkingen kunt u met de API Adobe Experience Manager as a Cloud Service als een headless CMS (Content Management System) gebruiken door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken. Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via een API wordt aangeboden, vaak in JSON-indeling.
 
 <!--
 >[!NOTE]
@@ -181,7 +181,7 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
 Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
 -->
 
-## Elementen HTTP API en inhoudsfragmenten {#assets-http-api-content-fragments}
+## Assets HTTP API- en inhoudsfragmenten {#assets-http-api-content-fragments}
 
 Inhoudsfragmenten worden gebruikt voor levering zonder kop en een inhoudsfragment is een speciaal type element. Zij worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben.
 
@@ -208,37 +208,37 @@ To create a content fragment, the (internal repository) path of the model has to
 Associated content is currently not exposed.
 -->
 
-## De REST-API voor middelen gebruiken {#using-aem-assets-rest-api}
+## De Assets REST API gebruiken {#using-aem-assets-rest-api}
 
 ### Toegang {#access}
 
-De REST-API voor middelen gebruikt de `/api/assets` eindpunt en vereist de weg van de activa om tot het toegang te hebben (zonder het leiden `/content/dam`).
+De Assets REST-API gebruikt het `/api/assets` -eindpunt en vereist het pad van het element om het te openen (zonder de regelafstand `/content/dam` ).
 
 * Dit betekent dat toegang tot het actief moet worden verkregen tegen:
    * `/content/dam/path/to/asset`
 * U moet een aanvraag indienen:
    * `/api/assets/path/to/asset`
 
-Bijvoorbeeld om `/content/dam/wknd/en/adventures/cycling-tuscany`, verzoek `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Als u bijvoorbeeld toegang wilt krijgen tot `/content/dam/wknd/en/adventures/cycling-tuscany` , vraagt u om `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Toegang over:
 >
->* `/api/assets` **niet** het gebruik van de `.model` kiezer.
->* `/content/path/to/page` **doet** het gebruik van de `.model` kiezer.
+>* `/api/assets` **** nodig niet het gebruik van `.model` selecteur.
+>* `/content/path/to/page` **** vereist het gebruik van `.model` selecteur.
 
 ### Bewerking {#operation}
 
 De HTTP-methode bepaalt de uit te voeren bewerking:
 
-* **GET** - om een JSON-representatie van een middel of een map op te halen
-* **POST** - om nieuwe elementen of mappen te maken
-* **PUT** - om de eigenschappen van een middel of een omslag bij te werken
-* **DELETE** - om een middel of een omslag te schrappen
+* **GET** - om een vertegenwoordiging JSON van activa of een omslag terug te winnen
+* **POST** - om nieuwe activa of omslagen te creëren
+* **PUT** - om de eigenschappen van een activa of een omslag bij te werken
+* **DELETE** - om activa of een omslag te schrappen
 
 >[!NOTE]
 >
->De parameters request body en/of URL kunnen worden gebruikt om sommige van deze bewerkingen te configureren; definieer bijvoorbeeld dat een map of een element moet worden gemaakt door een **POST** verzoek.
+>De verzoeklichaam en/of parameters URL kunnen worden gebruikt om sommige van deze verrichtingen te vormen; bijvoorbeeld, bepaal dat een omslag of een activa door a **POST** verzoek zou moeten worden gecreeerd.
 
 De exacte indeling van ondersteunde aanvragen wordt gedefinieerd in de API-naslagdocumentatie.
 
@@ -253,13 +253,13 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 
 >[!CAUTION]
 >
->De configuratie van de verzender op AEM wolkeninstanties kan de toegang tot `/api`.
+>De configuratie van de dispatcher op AEM wolkeninstanties kan de toegang tot `/api` blokkeren.
 
 >[!NOTE]
 >
->Zie de API-naslaggids [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>Zie de API van de Verwijzing [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 >
->De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
+>Het [ Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
 
 ### Lezen/Levering {#read-delivery}
 
@@ -284,7 +284,7 @@ Gebruik gebeurt via:
 
 `POST /{cfParentPath}/{cfName}`
 
-De hoofdtekst moet een JSON-representatie bevatten van het inhoudsfragment dat moet worden gemaakt, inclusief de initiële inhoud die moet worden ingesteld op de elementen van het inhoudsfragment. Het is verplicht de `cq:model` en moet verwijzen naar een geldig inhoudsfragmentmodel. Als u dit niet doet, treedt er een fout op. Er moet ook een koptekst worden toegevoegd `Content-Type` die is ingesteld op `application/json`.
+De hoofdtekst moet een JSON-representatie bevatten van het inhoudsfragment dat moet worden gemaakt, inclusief de initiële inhoud die moet worden ingesteld op de elementen van het inhoudsfragment. Het is verplicht de eigenschap `cq:model` in te stellen en deze moet verwijzen naar een geldig inhoudsfragmentmodel. Als u dit niet doet, treedt er een fout op. U moet ook een koptekst `Content-Type` toevoegen die is ingesteld op `application/json` .
 
 ### Bijwerken {#update}
 
@@ -322,20 +322,20 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Alles bij elkaar plaatsen - uw app en uw inhoud in AEM headless](put-it-all-together.md) waar u vertrouwd zult raken met de AEM architectuurgrondbeginselen en hulpmiddelen u moet gebruiken om uw toepassing samen te stellen.
+U zou uw AEM hoofdloze reis door het document [ moeten voortzetten te herzien hoe te om het allen samen te zetten - Uw App en Uw Inhoud in AEM Zetel ](put-it-all-together.md) waar u met de AEM architectuurgrondbeginselen en hulpmiddelen vertrouwd zult worden u moet gebruiken om uw toepassing samen te zetten.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Adobe Experience Manager as a Cloud Service API&#39;s](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
-* [Elementen HTTP-API](/help/assets/mac-api-assets.md)
+* [ Adobe Experience Manager as a Cloud Service APIs ](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
+* [ASSETS HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API-naslag](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
+* [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 * [Werken met inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
-* [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [CORS/AEM toegelicht](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
-* [Video - Ontwikkelen voor CORS met AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* [ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [ verklaarde CORS/AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+* [ Video - het Ontwikkelen voor CORS met AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 * [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-* De [Inhoudsfragment en Inhoudsfragmentmodel OpenAPI&#39;s](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.
+* [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* Het [ Fragment van de Inhoud en ModelAPIs van het Fragment van de Inhoud ](/help/headless/content-fragment-openapis.md) zijn ook beschikbaar.

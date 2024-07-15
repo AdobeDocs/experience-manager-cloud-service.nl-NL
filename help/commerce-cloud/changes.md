@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Notable Veranderingen in het Commerce integration framework (CIF) toe:voegen{#notable-changes}
 
-Adobe Experience Manager as a Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM Projecten te beheren. Als u meer wilt weten over deze mogelijkheden, klikt u op de koppeling voor [wijzigingen in as a Cloud Service Experience Manager](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service biedt veel nieuwe functies en mogelijkheden om uw AEM Projecten te beheren. Om meer over deze mogelijkheden te leren, volg de verbinding voor [ veranderingen in Experience Manager as a Cloud Service ](/help/release-notes/aem-cloud-changes.md).
 
 Dit document benadrukt de belangrijke verschillen tussen de Commerce integration framework (CIF) toe:voegen-op en oude CIF versies, die als CIF Klassiek (QuickStart) en CIF open-source worden bekend.
 
 ## Installatie en updates
 
-De AEM CIF wordt geïnstalleerd via Cloud Manager. Voor de installatie is een CIF krediet vereist, behalve voor sandboxen waarin CIF zonder credits kunnen worden geïnstalleerd. Credits worden automatisch ontvangen via de levering van de CIF add-on in uw AEM contract.
+De AEM CIF-invoegtoepassing wordt geïnstalleerd via Cloud Manager. Voor de installatie is een CIF krediet vereist, behalve voor sandboxen waarin CIF zonder credits kunnen worden geïnstalleerd. Credits worden automatisch ontvangen via de levering van de CIF add-on in uw AEM contract.
 
-De invoegtoepassing wordt automatisch bijgewerkt als onderdeel van de normale AEM as a Cloud Service update.
+De invoegtoepassing wordt automatisch bijgewerkt als onderdeel van de normale AEM as a Cloud Service-update.
 
-**Vorige CIF**
+**Vorige CIF versies**
 
 * CIF Klassiek: Geen installatie nodig, CIF maakte deel uit van de QuickStart. CIF updates maakten deel uit van regelmatige AEM- of servicepack-updates
 * CIF open-source voor AEM op-premissen: Installatie via GitHub. Updates maakten deel uit van handmatige update-/onderhoudswerkzaamheden.
@@ -31,38 +31,38 @@ De invoegtoepassing wordt automatisch bijgewerkt als onderdeel van de normale AE
 
 ## Eindpuntconfiguratie
 
-Het eindpunt wordt gevormd en bijgewerkt of via de UI van de Manager van de Wolk of zijn CLI.
+Het eindpunt wordt gevormd en bijgewerkt of via Cloud Manager UI of zijn CLI.
 
-**Vorige CIF**
+**Vorige CIF versies**
 
 * CIF Klassiek: Via OSGi configuratie in AEM
 * CIF Open-source: via CIF Configuration Browser
 
 ## Invoering van CIF Venia-project
 
-Project beschikbaar in [Opslagplaats voor wolkenbeheer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) en implementatie via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
+Project beschikbaar in [ de Bewaarplaats van het Git van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) en plaatsing die via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html) wordt gedaan
 
-**Vorige CIF**
+**Vorige CIF versies**
 
 * CIF Classic: als AEM pakket installeren
-* CIF Open-source: Via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* CIF Open-source: Via [ Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 ## Productcatalogusgegevens
 
 De catalogusgegevens van het product worden gevraagd op bestelling via vraag in real time aan een extern eindpunt dat vereiste GraphQL APIs steunt. Deze API&#39;s ondersteunen toegang tot live- of gefaseerde gegevens op een bepaalde datum. Geen replicatie nodig.
 
-**Vorige CIF**
+**Vorige CIF versies**
 
-* CIF Klassiek: live en gefaseerde productgegevens worden geïmporteerd en in de JCR gecontinueerd op AEM auteur via volledige of delta productimport. Live-productgegevens worden gerepliceerd naar AEM Publiceren.
+* CIF Klassiek: live en gefaseerde productgegevens worden geïmporteerd en in de JCR gecontinueerd op AEM auteur via volledige of delta productimport. Live productgegevens worden gerepliceerd naar AEM Publish.
 
 ## De catalogus van het product ervaart met AEM teruggeven
 
 AEM geeft de ervaringen van de productcatalogus direct weer met behulp van AEM catalogussjablonen die zijn toegewezen aan producten en categorieën. Geen replicatie nodig.
 
-**Vorige CIF**
+**Vorige CIF versies**
 
-* CIF Klassiek: AEM auteur maakt een AEM pagina voor elke categorie/elk product met het gereedschap Catalogusblauwdruk. Deze pagina&#39;s worden gerepliceerd naar AEM Publiceren.
+* CIF Klassiek: AEM auteur maakt een AEM pagina voor elke categorie/elk product met het gereedschap Catalogusblauwdruk. Deze pagina&#39;s worden gerepliceerd naar AEM Publish.
 
 >[!NOTE]
 >
->Voor extra documentatie over hoe te om CIF met AEM Beheerde Dienst of AEM On-premisse te gebruiken, zie [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Voor extra documentatie op hoe te om CIF met AEM Beheerde Dienst of AEM te gebruiken On-premise, zie [ Commerce integration framework ](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

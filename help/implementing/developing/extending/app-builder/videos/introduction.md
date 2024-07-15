@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot App Builder
-description: Leer de grondbeginselen van App Builder van zijn bedrijfswaarde tot zijn architectuur.
+description: Leer de basisbeginselen van App Builder van zijn bedrijfswaarde tot zijn architectuur.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 ## Inleiding
 
-Meer informatie over App Builder, de bijbehorende functies en de bedrijfswaarde die App Builder biedt.
+Meer informatie over App Builder, de bijbehorende functies en de zakelijke waarde die App Builder biedt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
 
 ## Aanraakpunten
 
-Leer hoe eindgebruikers communiceren met App Builder-SPA en waar ontwikkelaars meer kunnen leren over de ontwikkeling van App Builder.
+Leer hoe eindgebruikers communiceren met App Builder SPA en waar ontwikkelaars meer kunnen leren over App Builder-ontwikkeling.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
 
@@ -38,6 +38,6 @@ Leer meer over de toepassingsarchitectuur van App Builder en de voordelen ervan.
 
 ## Zakelijke waarde en gebruiksgevallen
 
-Meer informatie over de ontwerpbeginselen van App Builder en over algemene gebruiksscenario&#39;s.
+Meer informatie over App Builder-principes voor ontwerpen en veelgebruikte gebruiksscenario&#39;s.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)

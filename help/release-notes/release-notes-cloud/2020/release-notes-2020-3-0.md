@@ -1,6 +1,6 @@
 ---
 title: Opmerkingen bij de release 2020.3.0
-description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2020.3.0."
+description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release voor 2020.3.0."
 exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
 feature: Release Information
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor AEM as a Cloud Service versie 2020.3.0 {#release-notes}
+# Opmerkingen bij de release voor AEM as a Cloud Service 2020.3.0 {#release-notes}
 
-Deze pagina schetst de algemene opmerkingen bij de release voor Experience Manager as a Cloud Service 2020.3.0.
+Deze pagina beschrijft de algemene opmerkingen bij de release voor Experience Manager as a Cloud Service 2020.3.0.
 
 ## Releasedatum {#release-date}
 
@@ -21,7 +21,7 @@ De Releasedatum voor Experience Manager as a Cloud Service 2020.3.0 is 5 maart 2
 
 ## Cloud Manager {#cloud-manager}
 
-Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cloud Manager in AEM as a Cloud Service release 2020.3.0.
+Volg deze sectie voor meer informatie over wat nieuw is en de updates voor Cloud Manager in AEM as a Cloud Service Release 2020.3.0.
 
 ### Wat is er nieuw? {#what-is-new}
 
@@ -36,4 +36,4 @@ Volg deze sectie voor meer informatie over nieuwe functies en de updates voor Cl
 * De voorlopige SonarQube-instantie die in de stap build werd gebruikt, kon niet zo nu en dan starten binnen de geconfigureerde time-out.
 * Bij het gelijktijdig maken van ontwikkelomgevingen in hetzelfde Cloud Service-programma kan er een voorwaarde optreden waarbij slechts één hiervan met succes kan worden gemaakt.
 * Er zijn niet altijd meldingen van Experiencen Cloud voor programma&#39;s voor Cloud Service ontvangen.
-* Bij specifieke projecten *ResourceResolver-objecten moeten altijd worden gesloten* zou een Null-aanwijzeruitzondering veroorzaken, maar dit had geen invloed op de uitvoering van de pijpleiding.
+* In specifieke projecten, zouden de *voorwerpen ResourceResolver altijd gesloten* een Null Uitzondering van de Aanwijzer veroorzaken; dit, echter, beïnvloedde pijpleidingsuitvoering niet.

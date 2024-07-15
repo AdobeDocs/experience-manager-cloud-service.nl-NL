@@ -34,9 +34,9 @@ De pagina&#39;s die uw ervaring vormen zijn gemakkelijk te beheren in de plaatse
 
 >[!TIP]
 >
->Deze documentatietraject behandelt alleen de basisbeginselen van AEM functies, zodat u als vertaalspecialist weet welke inhoud u moet vertalen.
+>Deze documentatietraject heeft alleen betrekking op de basisbeginselen van AEM functies van websites, zodat u als vertaalspecialist weet welke inhoud u moet vertalen.
 >
->Raadpleeg voor meer informatie over AEM Sites en voor meer informatie over alle krachtige functies de [sectie aanvullende informatie](#additional-information) aan het einde van dit artikel voor meer AEM Sites-bronnen.
+>Voor meer informatie over AEM Sites en details van al zijn krachtige eigenschappen, zie de [ extra informatiesectie ](#additional-information) aan het eind van dit artikel voor meer middelen van AEM Sites.
 
 ## Siteinhoud omzetten in AEM {#translating-in-aem}
 
@@ -59,11 +59,11 @@ Bedankt dat je aan de slag bent gegaan met je AEM Sites-vertaalreis! Nu u dit do
 * Begrijp de basisbeginselen van het maken van AEM Sites-inhoud.
 * Zorg dat u weet hoe AEM vertaling ondersteunt.
 
-Gebaseerd op deze kennis en uw AEM Sites-vertaalreis voortzetten door het document opnieuw te bekijken [Aan de slag met AEM Sites-vertaling](getting-started.md) waar u een overzicht krijgt van hoe AEM inhoud beheert en de vertaalhulpmiddelen kent.
+Bouw op deze kennis voort en ga uw de vertaalreis van AEM Sites door het document [ opnieuw te bekijken beginnen met de vertaling van AEM Sites ](getting-started.md) waar u een overzicht van zult hebben hoe AEM inhoud beheert en zijn vertaalhulpmiddelen te kennen krijgt.
 
 ## Aanvullende bronnen {#additional-resources}
 
-U kunt het beste naar het volgende gedeelte van de site gaan door het document te bekijken [Ga aan de slag met AEM Sites vertaling,](getting-started.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de reis van de plaatsvertaling door het document [ te herzien begonnen wordt met de vertaling van AEM Sites, ](getting-started.md) het volgende is sommige extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de reis verder te gaan.
 
-* [Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/quick-start.md) - Een kort overzicht van de belangrijkste concepten voor het maken van inhoud met AEM Sites
-* [MSM en vertaling](/help/sites-cloud/administering/msm-and-translation.md) - De details van AEM beheer van meerdere sites en hoe deze werkt met de vertaalhulpmiddelen
+* [ Snelle Gids van het Begin aan het Authoring van Pagina&#39;s ](/help/sites-cloud/authoring/quick-start.md) - een snel overzicht van de belangrijkste concepten aan het creëren van inhoud gebruikend AEM Sites
+* [ MSM en Vertaling ](/help/sites-cloud/administering/msm-and-translation.md) - de details van AEM Meerdere-Plaats Manager en hoe het met zijn vertaalhulpmiddelen werkt

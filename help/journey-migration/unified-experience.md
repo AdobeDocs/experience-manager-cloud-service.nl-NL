@@ -19,7 +19,7 @@ De Adobe heeft hulpmiddelen ontwikkeld om sommige code te automatiseren refactor
 
 De Unified Experience plug-in biedt de volgende voordelen:
 
-* Hiermee verenigt u gereedschappen die werken aan broncode in één code `node.js` toepassing blootgesteld aan `aio-cli ` om de gebruiker een consistente gebruikerservaring te bieden.
+* Hiermee verenigt u gereedschappen die werken aan broncode in één `node.js` -toepassing die als `aio-cli ` -plug-in wordt weergegeven, zodat de gebruiker een consistente gebruikerservaring krijgt.
 
 * Voert alle hulpmiddelen als één enkel bevel in werking, terwijl ook het verstrekken van de flexibiliteit om specifieke hulpmiddelen in werking te stellen zoals nodig.
 
@@ -27,14 +27,14 @@ De Unified Experience plug-in biedt de volgende voordelen:
 
 ## Inzicht krijgen in de insteekmodule {#understanding-plugin}
 
-De `aio-cli-plugin-aem-cloud-service-migration` insteekmodule bestaat uit twee hoofdonderdelen:
+De `aio-cli-plugin-aem-cloud-service-migration` -plug-in bestaat uit twee hoofdonderdelen:
 
 * **Gebruikersinterface**
 
-   * `aio-cli` opdrachten om een of meer gereedschappen voor het refactoring van code uit te voeren (door een keten van gereedschappen die opeenvolgend moeten worden uitgevoerd).
-   * `config.yaml` die de vereiste invoerparameters in beslag neemt.
+   * `aio-cli` -opdrachten om een of meer gereedschappen voor het refactoring van code uit te voeren (door een keten van gereedschappen die opeenvolgend moeten worden uitgevoerd).
+   * `config.yaml` dat de vereiste invoerparameters opneemt.
 
-* **De onderliggende Reeks van het Hulpmiddel van de Refactoring van de Code**
+* **Onderliggende Reeks van het Hulpmiddel van het Refactoring van de Code**
 
   De coderefactoring hulpmiddelen voeren hun functionaliteit door uit:
 
@@ -44,7 +44,7 @@ De `aio-cli-plugin-aem-cloud-service-migration` insteekmodule bestaat uit twee h
 
 ## Beschikbaarheid {#availability}
 
-Zie [Git-bron: audio-cli-plugin-aem-cloud-service-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) waar u over gebruik kunt leren en hoe u aan deze insteekcode kunt bijdragen die in GitHub open-sourced is.
+Zie {het Middel van 0} Git: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) waar u over gebruik kunt leren en hoe u aan deze insteekcode kunt bijdragen die in GitHub open-sourced is.[
 
 >[!NOTE]
->De plug-in is momenteel geïntegreerd met AEM Dispatcher Converter en Repository Modernizer.
+>De insteekmodule is momenteel geïntegreerd met AEM Dispatcher Converter en Repository Modernizer.

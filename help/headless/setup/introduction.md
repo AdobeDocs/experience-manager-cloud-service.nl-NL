@@ -1,6 +1,6 @@
 ---
 title: Installatie zonder koppen
-description: Met deze snelstartgids leert u de basisprincipes van AEM krachtige, koploze functies, zoals Content Models, Content Fragments en de GraphQL API.
+description: Met deze snelstartgids leert u de basisprincipes van AEM as a Cloud Service, dankzij krachtige mogelijkheden zonder kop, zoals Content Models, Content Fragments en de GraphQL API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
@@ -17,7 +17,7 @@ Hieronder ziet u een eenvoudig pad voor het maken, beheren en leveren van ervari
 
 1. [Een configuratie maken](create-configuration.md)
 1. [Een inhoudsfragmentmodel maken](create-content-model.md)
-1. [Een middelenmap maken](create-assets-folder.md)
+1. [Een Assets-map maken](create-assets-folder.md)
 1. [Een inhoudsfragment maken](create-content-fragment.md)
 1. [Een API-aanvraag maken](create-api-request.md)
 
@@ -27,21 +27,21 @@ Hieronder ziet u een eenvoudig pad voor het maken, beheren en leveren van ervari
 >
 >Als u aan of AEM of zonder kop nieuw bent, zie de Dagboeken van de Documentatie van de Zwaartepunt van de Adobe voor een inleiding van begin tot eind aan zowel hoofd als hoe AEM het steunt.
 >
->* [Headless Developer Journey](/help/journey-headless/developer/overview.md)
->* [Reis voor architect zonder hoofdinhoud](/help/journey-headless/architect/overview.md)
->* [Auteursreis zonder kopinhoud](/help/journey-headless/author/overview.md)
->* [Dagboekreis zonder hoofd](/help/journey-headless/translation/overview.md).
+>* [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md)
+>* [ Zwaardeloze Reis van de Architect van de Inhoud ](/help/journey-headless/architect/overview.md)
+>* ](/help/journey-headless/author/overview.md) Reis van de Auteur van de Inhoud zonder hoofd [
+>* [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md).
 
 ## Publiek {#audience}
 
-De beschreven taken zijn noodzakelijk voor een basisdemonstratie van begin tot eind van AEM mogelijkheden zonder kop. Iedereen met beheerdertoegang tot een test AEM instantie kan deze gidsen volgen om hoofdloze levering in AEM te begrijpen, hoewel iemand met ontwikkelaarservaring ideaal is.
+De beschreven taken zijn noodzakelijk voor een basisdemonstratie van begin tot eind van AEM capaciteit zonder kop. Iedereen met beheerdertoegang tot een test AEM instantie kan deze gidsen volgen om hoofdloze levering in AEM te begrijpen, hoewel iemand met ontwikkelaarservaring ideaal is.
 
 In een productiesituatie worden de taken echter meerdere malen door verschillende personen uitgevoerd. Bijvoorbeeld:
 
-* **Beheerders** moet de initiële configuratie en mapstructuur voor de inhoud normaal slechts eenmaal of sporadisch instellen.
-* **Informatiearchitecten** Voeg over het algemeen nieuwe modellen toe aangezien de behoeften van de organisatie evolueren.
-* **Inhoudsauteurs** voortdurend inhoud maken als inhoudsfragmenten op basis van de modellen die door de architecten zijn gedefinieerd.
+* **Beheerders** moeten opstelling de aanvankelijke configuratie en omslagstructuur voor de inhoud normaal slechts eenmaal of sporadisch.
+* **de architecten van de Informatie** voegen over het algemeen nieuwe modellen toe aangezien de behoeften van de organisatie evolueren.
+* **de auteurs van de Inhoud** creeert voortdurend inhoud als Fragments van de Inhoud die op de modellen worden gebaseerd door de architecten worden bepaald.
 
 ## Volgende stap {#next-step}
 
-Klaar om meer te leren? Begin vervolgens met het lezen van het eerste deel van de headless Setup: [Creërend een Configuratie.](create-configuration.md)
+Klaar om meer te leren? Dan begin door het eerste deel van de Opstelling van de Zwaartepunt te lezen: [ Creërend een Configuratie.](create-configuration.md)

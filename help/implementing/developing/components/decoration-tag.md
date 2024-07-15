@@ -38,32 +38,32 @@ Hier zijn sommige algemene aanbevelingen van wanneer om het omslagelement te omv
 De volgende eigenschappen en knopen kunnen op de componenten worden toegepast om het gedrag van hun versieringsmarkering te controleren:
 
 * **`cq:noDecoration {boolean}`:** Deze eigenschap kan aan een component worden toegevoegd en een werkelijke waarde dwingt AEM geen omvattende elementen over de component te genereren.
-* **`cq:htmlTag`node:** Dit knooppunt kan onder een component worden toegevoegd en kan de volgende eigenschappen hebben:
-   * **`cq:tagName {String}`:** Hiermee kunt u een aangepaste HTML-tag opgeven die moet worden gebruikt voor de omloop van de componenten in plaats van het standaard DIV-element.
-   * **`class {String}`:** Dit kan worden gebruikt om CSS klassennamen te specificeren die aan de omslag moeten worden toegevoegd.
+* **`cq:htmlTag`node :** dit knooppunt kan worden toegevoegd onder een component en kan de volgende eigenschappen hebben:
+   * **`cq:tagName {String}`:** dit kan worden gebruikt om een markering van douaneHTML te specificeren die voor het verpakken van de componenten in plaats van het standaardDIV element moet worden gebruikt.
+   * **`class {String}`:** dit kan worden gebruikt om CSS klassennamen te specificeren die aan de omslag moeten worden toegevoegd.
    * Andere eigenschapnamen worden toegevoegd als HTML-kenmerken met dezelfde tekenreekswaarde als opgegeven.
 
 ## Scriptbesturingselementen {#script-controls}
 
 In het algemeen kan het gedrag van de omslag in HTML als volgt worden samengevat:
 
-* Geen omslag DIV wordt teruggegeven door gebrek (wanneer enkel het doen `data-sly-resource="foo"`).
+* Geen omvattende DIV wordt standaard gerenderd (wanneer alleen `data-sly-resource="foo"` wordt uitgevoerd).
 * Alle wcm-modi (uitgeschakeld, voorvertoning, bewerking op auteur en publiceren) worden op identieke wijze weergegeven.
 
 Het gedrag van de omslag kan ook volledig worden geregeld.
 
 * Het HTML-script heeft volledige controle over het resulterende gedrag van de omvattende tag.
-* Componenteigenschappen (zoals `cq:noDecoration` en `cq:tagName`) kunt u ook de omsluitende tag definiëren.
+* Componenteigenschappen (zoals `cq:noDecoration` en `cq:tagName` ) kunnen ook de tag wrapper definiëren.
 
 Het is mogelijk om het gedrag van de omsluitende tags van HTML-scripts en de bijbehorende logica volledig te bepalen.
 
-Zie voor meer informatie over het ontwikkelen in HTML de [HTML-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
+Voor meer informatie over het ontwikkelen in HTML zie de [ documentatie HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html).
 
 ### Beslissingsboom {#decision-tree}
 
 Deze beslissingsstructuur geeft een overzicht van de logica die het gedrag van de omsluitende tags bepaalt.
 
-![Beslissingsboom](assets/decoration-tag-decision-tree.png)
+![ de boom van het Besluit ](assets/decoration-tag-decision-tree.png)
 
 ### Gevallen gebruiken {#use-cases}
 
@@ -91,7 +91,7 @@ Alle volgende voorbeelden nemen de volgende inhoudsstructuur, en componenten aan
 
 #### Hoofdlettergebruik 1: Een component opnemen voor hergebruik van code {#use-case-include-a-component-for-code-reuse}
 
-Het meest gangbare geval is wanneer een component een andere component bevat om redenen van hergebruik van code. In dat geval is het niet de bedoeling dat de opgenomen component met een eigen werkbalk en dialoogvenster kan worden bewerkt, zodat er geen omloop nodig is en de component `cq:htmlTag` wordt genegeerd. Dit kan als standaardgedrag worden beschouwd.
+Het meest gangbare geval is wanneer een component een andere component bevat om redenen van hergebruik van code. In dat geval is het niet de bedoeling dat de opgenomen component bewerkbaar is met een eigen werkbalk en dialoogvenster, zodat er geen omloop nodig is en de component `cq:htmlTag` wordt genegeerd. Dit kan als standaardgedrag worden beschouwd.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -105,9 +105,9 @@ Een voorbeeld zou een component zijn die een component van het kernbeeld omvat o
 
 #### Hoofdlettergebruik 2: een bewerkbare component opnemen {#use-case-include-an-editable-component}
 
-Een ander veelvoorkomend geval van gebruik is wanneer de containercomponenten editable kindcomponenten, zoals een Container van de Lay-out omvatten. In dit geval heeft elk inbegrepen kind een omslag ondoordringbaar voor de redacteur nodig om te werken (tenzij uitdrukkelijk gehandicapt met `cq:noDecoration` eigenschap).
+Een ander veelvoorkomend geval van gebruik is wanneer de containercomponenten editable kindcomponenten, zoals een Container van de Lay-out omvatten. In dit geval heeft elk opgenomen onderliggend item een omloop nodig om de editor te laten werken (tenzij dit expliciet wordt uitgeschakeld met de eigenschap `cq:noDecoration` ).
 
-Aangezien de inbegrepen component in dit geval een onafhankelijke component is, heeft het een omslagelement voor de redacteur nodig om te werken, en zijn lay-out en stijl te bepalen om toe te passen. Om dit gedrag te activeren, is er de `decoration=true` -optie.
+Aangezien de inbegrepen component in dit geval een onafhankelijke component is, heeft het een omslagelement voor de redacteur nodig om te werken, en zijn lay-out en stijl te bepalen om toe te passen. Voor het activeren van dit gedrag is er de optie `decoration=true` .
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
@@ -122,7 +122,7 @@ Resulterende uitvoer op `/content/test.html`:
 Er kan een aantal complexe gevallen zijn, die gemakkelijk kunnen worden verwezenlijkt door HTL de mogelijkheid te bieden om expliciet het volgende te verstrekken:
 
 * **`decorationTagName='ELEMENT_NAME'`** De elementnaam van de omloop definiëren.
-* **`cssClassName='CLASS_NAME'`** Hiermee definieert u de CSS-klassenamen die u wilt instellen.
+* **`cssClassName='CLASS_NAME'`** De CSS-klassenamen definiëren die erop moeten worden ingesteld.
 
 `one.html: <sly data-sly-resource="${'child' @ decorationTagName='aside', cssClassName='child'}"></sly>`
 

@@ -13,9 +13,9 @@ ht-degree: 40%
 ---
 
 
-# Naleving van AEM as a Cloud Service {#aem-compliance}
+# Naleving in AEM as a Cloud Service {#aem-compliance}
 
-Controle uit deze verbindingen voor een overzicht van nalevingsonderwerpen in as a Cloud Service Experience Manager.
+Controle uit deze verbindingen voor een overzicht van nalevingsonderwerpen in Experience Manager as a Cloud Service.
 
 * [Gereedheid voor regelgeving inzake gegevensbescherming en gegevensbescherming](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Gereedheid van de stichting voor gegevensbeveiliging en gegevensprivacyverordeningen](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)

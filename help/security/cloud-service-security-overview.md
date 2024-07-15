@@ -1,5 +1,5 @@
 ---
-title: Overzicht as a Cloud Service beveiliging AEM
+title: AEM as a Cloud Service Security - Overzicht
 description: Ontdek meer over belangrijke beveiligingsonderwerpen in verband met Experience Manager as a Cloud Service.
 exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
 feature: Security
@@ -16,6 +16,6 @@ ht-degree: 13%
 
 ## Inleiding {#introduction}
 
-AEM de pro-actieve benadering van veiligheid en strenge procedures van de as a Cloud Service helpen de veiligheid van de AEM as a Cloud Service oplossing en klant vertrouwelijke gegevens beschermen. De veiligheid van digitale ervaring wordt voortdurend gecontroleerd om voor kwaadwillige activiteiten te blijven en de hulp verzekert de veiligheid van de gegevens van de klant.
+De pro-actieve benadering van AEM as a Cloud Service van veiligheid en strenge procedures helpen de veiligheid van de oplossing van AEM as a Cloud Service en klant vertrouwelijke gegevens beschermen. De veiligheid van digitale ervaring wordt voortdurend gecontroleerd om voor kwaadwillige activiteiten te blijven en de hulp verzekert de veiligheid van de gegevens van de klant.
 
-Zie [Adobe Experience Manager Cloud Service Security](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) witboek voor een diepgaand overzicht van AEM as a Cloud Service Veiligheid.
+Zie ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) Witboek van de Veiligheid van de Cloud Service van 0} Adobe Experience Manager voor een diepgaand overzicht van de Veiligheid van AEM as a Cloud Service.[

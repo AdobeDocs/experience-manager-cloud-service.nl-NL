@@ -18,7 +18,7 @@ Leer hoe u toegang krijgt tot de Universal Editor en hoe u uw eerste AEM-app van
 
 >[!TIP]
 >
->Als u liever naar een voorbeeld wilt duiken, kunt u de opdracht [Universal Editor Sample App op GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+>Als u in een voorbeeld liever zou duiken, kunt u de [ Universele SteekproefApp van de Redacteur op GitHub herzien.](https://github.com/adobe/universal-editor-sample-editable-app)
 
 ## Stappen aan boord {#onboarding}
 
@@ -40,7 +40,7 @@ Voordat uw app van instrumenten kan worden voorzien voor gebruik met de Universa
 @adobe/universal-editor-cors
 ```
 
-Om de instrumentatie te activeren, moet de volgende invoer aan uw worden toegevoegd `index.js`.
+Om de instrumentatie te activeren, moet de volgende import worden toegevoegd aan de `index.js` .
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -56,25 +56,25 @@ Als u geen React app implementeert en/of rendering op de server vereist, kunt u 
 
 De recentste versie wordt altijd geadviseerd, maar de vorige versies van de dienst kunnen in het geval van het breken van veranderingen worden van verwijzingen voorzien.
 
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - De nieuwste EU CORS lib
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - De nieuwste UE CORS lib
 * `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - De nieuwste UE CORS lib onder versie 2.x
 * `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - De nieuwste UE CORS lib onder versie 2.1.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- De exacte UE CORS lib versie 2.1.1
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` - De exacte UE CORS lib versie 2.1.1
 
 ## Voeg de noodzakelijke configuraties OSGi toe {#osgi-configurations}
 
 Als u AEM inhoud wilt kunnen bewerken met uw app met de Universal Editor, moeten de instellingen voor CORS en cookie binnen AEM zijn uitgevoerd.
 
-Het volgende [OSGi configuraties moeten op de AEM auteursinstantie worden geplaatst.](/help/implementing/deploying/configuring-osgi.md)
+De volgende [ configuraties OSGi moeten op de AEM auteursinstantie worden geplaatst.](/help/implementing/deploying/configuring-osgi.md)
 
 * `SameSite Cookies = None` in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * X-FRAME-OPTIONS verwijderen: SAMEORIGIN-koptekst in `org.apache.sling.engine.impl.SlingMainServlet`
 
 ### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
 
-Het inlogtoken cookie moet als een extern domein naar AEM worden verzonden. Daarom moet het zelfde-plaats koekje uitdrukkelijk plaatsen aan `None`.
+Het inlogtoken cookie moet als een extern domein naar AEM worden verzonden. Daarom moet het cookie van dezelfde site expliciet worden ingesteld op `None` .
 
-Deze eigenschap moet worden ingesteld in het dialoogvenster `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi-configuratie.
+Deze eigenschap moet worden ingesteld in de `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi-configuratie.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -87,7 +87,7 @@ Deze eigenschap moet worden ingesteld in het dialoogvenster `com.day.crx.securit
 
 X-Frame-Opties: SAMEORIGIN voorkomt dat AEM pagina&#39;s binnen een iframe worden weergegeven. Als u de koptekst verwijdert, kunnen de pagina&#39;s worden geladen.
 
-Deze eigenschap moet worden ingesteld in het dialoogvenster `org.apache.sling.engine.impl.SlingMainServlet` OSGi-configuratie.
+Deze eigenschap moet worden ingesteld in de `org.apache.sling.engine.impl.SlingMainServlet` OSGi-configuratie.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -99,37 +99,37 @@ Deze eigenschap moet worden ingesteld in het dialoogvenster `org.apache.sling.en
 
 ## De pagina instrumenteren {#instrument-page}
 
-Voor de Universal Editor-service is een [Naam van uniforme bron (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het juiste back-endsysteem te identificeren en te gebruiken voor de inhoud in de app die wordt bewerkt. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
+De Universele dienst van de Redacteur vereist a [ eenvormige middelnaam (URN) ](https://en.wikipedia.org/wiki/Uniform_Resource_Name) om het correcte backendesysteem voor de inhoud in app te identificeren en te gebruiken die wordt uitgegeven. Daarom wordt een schema URN vereist om inhoud terug naar inhoudsmiddelen in kaart te brengen.
 
 ### Verbindingen maken {#connections}
 
-Verbindingen die in de app worden gebruikt, worden opgeslagen als `<meta>` -tags in de pagina&#39;s `<head>`.
+Verbindingen die in de app worden gebruikt, worden als `<meta>` -tags opgeslagen in de pagina&#39;s `<head>` .
 
 ```html
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>` - Dit is een classificatie van het verband met twee opties.
+* `<category>` - Dit is een classificatie van de verbinding met twee opties.
    * `system` - Voor eindpunten van verbindingen
-   * `config` - Voor [optionele configuratie-instellingen definiëren](#configuration-settings)
-* `<referenceName>` - Dit is een korte naam die opnieuw wordt gebruikt in het document om de verbinding te identificeren. Bijv. `aemconnection`
-* `<protocol>` - Hiermee wordt aangegeven welke persistentie-insteekmodule van de Universal Editor Persistence Service moet worden gebruikt. Bijv. `aem`
-* `<url>` - Dit is de URL naar het systeem waar de wijzigingen zullen worden voortgezet. Bijv. `http://localhost:4502`
+   * `config` - voor [ bepalend facultatieve configuratiemontages ](#configuration-settings)
+* `<referenceName>` - Dit is een korte naam die opnieuw wordt gebruikt in het document om de verbinding te identificeren. Bijvoorbeeld: `aemconnection`
+* `<protocol>` - Hiermee wordt aangegeven welke persistentie-insteekmodule van de Universal Editor Persistence Service moet worden gebruikt. Bijvoorbeeld: `aem`
+* `<url>` - Dit is de URL naar het systeem waar de wijzigingen moeten worden voortgezet. Bijvoorbeeld: `http://localhost:4502`
 
-De id `urn:adobe:aue:system` vertegenwoordigt de verbinding voor de Adobe Universele Redacteur.
+De id `urn:adobe:aue:system` vertegenwoordigt de verbinding voor de Adobe Universal Editor.
 
-`data-aue-resource`s gebruikt de `urn` om de id te verkorten.
+`data-aue-resource` s zal het `urn` voorvoegsel gebruiken om het herkenningsteken te verkorten.
 
 ```html
 data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
-* `<referenceName>` - Dit is de benoemde referentie die wordt vermeld in het dialoogvenster `<meta>` -tag. Bijv. `aemconnection`
-* `<resource>` - Dit is een aanwijzer naar de bron in het doelsysteem. Bijvoorbeeld een AEM inhoudspad, zoals `/content/page/jcr:content`
+* `<referenceName>` - Dit is de benoemde referentie die wordt vermeld in de tag `<meta>` . Bijvoorbeeld: `aemconnection`
+* `<resource>` - Dit is een aanwijzer naar de bron in het doelsysteem. Bijvoorbeeld een AEM inhoudspad zoals `/content/page/jcr:content`
 
 >[!TIP]
 >
->Zie het document [Kenmerken en typen](attributes-types.md) voor meer informatie over de gegevenskenmerken en -typen die de Universal Editor nodig heeft.
+>Zie het document [ Attributen en Types ](attributes-types.md) voor verdere details over de gegevensattributen en de types die de Universele Redacteur vereist.
 
 ### Voorbeeldverbinding {#example}
 
@@ -165,7 +165,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### Configuratie-instellingen {#configuration-settings}
 
-U kunt de `config` in uw verbinding-URL om service- en extensieeindpunten indien nodig in te stellen.
+U kunt het voorvoegsel `config` in uw verbinding URN gebruiken om dienst en uitbreidingseindpunten indien nodig te plaatsen.
 
 Als u de Universal Editor-service niet wilt gebruiken, die wordt gehost op Adobe, maar uw eigen gehoste versie, kunt u dit instellen in een metatag. Om het standaardde diensteindpunt te beschrijven dat de Universele Redacteur verstrekt, plaats uw eigen de diensteindpunt:
 
@@ -178,8 +178,8 @@ Als u de Universal Editor-service niet wilt gebruiken, die wordt gehost op Adobe
 
 Als u alleen bepaalde extensies wilt inschakelen voor een pagina, kunt u dit instellen in een metatag. Als u extensies wilt ophalen, stelt u de eindpunten van de extensie in:
 
-* Naam van meta: `urn:adobe:aue:config:extensions`
-* Metainhoud: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (voorbeeld)
+* Metanaam: `urn:adobe:aue:config:extensions`
+* Meta-inhoud: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (voorbeeld)
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
@@ -189,16 +189,16 @@ Als u alleen bepaalde extensies wilt inschakelen voor een pagina, kunt u dit ins
 
 Uw app is nu van instrumenten voorzien om de Universal Editor te gebruiken.
 
-Zie [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) om te leren hoe gemakkelijk en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
+Zie [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) om te leren hoe gemakkelijk en intuïtief het voor inhoudsauteurs is om inhoud tot stand te brengen gebruikend de Universele Redacteur.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Zie deze documenten voor meer informatie over de Universal Editor.
 
-* [Introductie van Universal Editor](introduction.md) - Leer hoe u met de Universal Editor elk aspect van elke inhoud in een implementatie kunt bewerken, zodat u uitzonderlijke ervaringen kunt opdoen, de snelheid van de inhoud kunt verhogen en een geavanceerde ontwikkelaarservaring kunt bieden.
-* [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Leer hoe eenvoudig en intuïtief het is voor inhoudsauteurs om inhoud te maken met de Universal Editor.
-* [Inhoud publiceren met de Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md) - Leer hoe de Universal Editor inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen verwerken.
-* [Architectuur van Universal Editor](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
-* [Kenmerken en typen](attributes-types.md) - Meer informatie over de gegevenskenmerken en typen die de Universal Editor nodig heeft.
-* [Universal Editor-verificatie](authentication.md) - Leer hoe de Universal Editor wordt geverifieerd.
+* [ Universele Inleiding van de Redacteur ](introduction.md) - Leer hoe de Universele Redacteur het uitgeven om het even welk aspect van om het even welke inhoud in om het even welke implementatie toelaat zodat kunt u uitzonderlijke ervaringen leveren, inhoudssnelheid verhogen, en een ervaring van de allernieuwste ontwikkelaar verstrekken.
+* [ Authoring Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) - Leer hoe gemakkelijk en intuïtief het voor inhoudsauteurs is om inhoud tot stand te brengen gebruikend de Universele Redacteur.
+* [ het Publiceren Inhoud met de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/publishing.md) - leer hoe de Universele Redacteur inhoud publiceert en hoe uw apps de gepubliceerde inhoud kunnen behandelen.
+* [ Universele Architectuur van de Redacteur ](architecture.md) - Leer over de architectuur van de Universele Redacteur en hoe de gegevens tussen zijn diensten en lagen stromen.
+* [ Attributen en Types ](attributes-types.md) - leer over de gegevensattributen en de types die de Universele Redacteur vereist.
+* [ Universele Authentificatie van de Redacteur ](authentication.md) - leer hoe de Universele Redacteur voor authentiek verklaart.
 

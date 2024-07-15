@@ -20,7 +20,7 @@ De integratie van niet-Adobe Commerce-oplossingen is een algemeen scenario voor 
 
 De architectuur ziet er als volgt uit:
 
-![AEM niet-Magento/Overzicht van architectuur van derden](../assets//AEM_nonMagento_Architecture.png)
+![ AEM niet-Magento/het Overzicht van de Architectuur van derden ](../assets//AEM_nonMagento_Architecture.png)
 
 Het doel van deze integratielaag is om API&#39;s en schema&#39;s van derden toe te wijzen aan de ondersteunde Adobe Commerce GraphQL API&#39;s en schema&#39;s buiten de Experience Manager. Dankzij deze inkapseling kunnen de integratielogica en de systemen worden bijgewerkt zonder code in de Experience Manager te wijzigen.
 
@@ -30,7 +30,7 @@ Als de Experience Manager op aanvraag gegevens ophaalt, zijn real-time API&#39;s
 
 >[!TIP]
 >
->Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [Adobe Commerce Open Source](https://business.adobe.com/products/magento/open-source.html).
+>Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [ Adobe Commerce Open Source ](https://business.adobe.com/products/magento/open-source.html).
 
 Het is niet nodig om het volledige schema van GraphQL uit te voeren, enkel de voorwerpen van het schema om de gewenste gebruik-gevallen toe te laten.
 
@@ -42,15 +42,15 @@ De integratie van de productcatalogus-API&#39;s is vereist om deze gebruiksgeval
 
 ## Voorlopige gebruiksgevallen
 
-[CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components) gegevens ophalen en uitwisselen via de CIF ondersteunde Adobe Commerce API&#39;s. Om componenten opnieuw te gebruiken, moeten de respectieve APIs worden uitgevoerd.
+[ AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components) wint en ruilt gegevens via de CIF gesteunde Adobe Commerce APIs terug. Om componenten opnieuw te gebruiken, moeten de respectieve APIs worden uitgevoerd.
 
 De aanbeveling voor prestaties kritieke cliënt-zijcomponenten moet direct met de derdeoplossing communiceren om latentie te vermijden.
 
 ## Ontwikkeling van integratie {#develop-integration}
 
-Adobe raadt u aan [Adobe Developer Runtime](https://developer.adobe.com/runtime/) voor de integratielaag. Het is opgenomen in de CIF invoegtoepassing voor derden. Aangezien het met een microdienst-als benadering werkt, is het geschikt om gemakkelijk veelvoudige oplossingen te integreren.
+De Adobe adviseert dat u [ Runtime van Adobe Developer ](https://developer.adobe.com/runtime/) voor de integratielaag gebruikt. Het is opgenomen in de CIF invoegtoepassing voor derden. Aangezien het met een microdienst-als benadering werkt, is het geschikt om gemakkelijk veelvoudige oplossingen te integreren.
 
-De [referentieimplementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference) is een groot uitgangspunt om de integratie aan uw handelsoplossing te bouwen. Hoewel deze functie GraphQL ondersteunt, kan deze ook worden geïntegreerd met elk ander type API, zoals REST.
+De [ verwijzingsimplementatie ](https://github.com/adobe/commerce-cif-graphql-integration-reference) is een groot uitgangspunt om de integratie aan uw handelsoplossing te bouwen. Hoewel deze functie GraphQL ondersteunt, kan deze ook worden geïntegreerd met elk ander type API, zoals REST.
 
 Deze integratielaag wordt niet vereist als een derdelaag (bijvoorbeeld, Mulesoft) beschikbaar is of de integratie op de derdeoplossing wordt gebouwd.
 
@@ -58,8 +58,8 @@ Deze integratielaag wordt niet vereist als een derdelaag (bijvoorbeeld, Mulesoft
 
 De schakelaars verstrekken een goede aanvang voor projecten. Zij komen met een handel oplossing-specifieke verbinding en gebrek API afbeelding. Deze schakelaars worden gebouwd door derden en niet door Adobe gehandhaafd. Vraag de respectievelijke partner om informatie.
 
-* [SAP COMMERCE](https://github.com/diconium/commerce-cif-graphql-integration-hybris), gebouwd door Diconium
-* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), gebouwd door Diconium
+* [ SAP Commerce ](https://github.com/diconium/commerce-cif-graphql-integration-hybris), die door Diconium wordt gebouwd
+* [ Commercetools ](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), die door Diconium worden gebouwd
 
 >[!TIP]
 >

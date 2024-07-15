@@ -1,6 +1,6 @@
 ---
 title: DV-certificaten (Domain Validated)
-description: Leer hoe u DV-certificaten (Domain Validated) beheert in Cloud Manager.
+description: Leer hoe u DV-certificaten (Domain Validated) in Cloud Manager beheert.
 exl-id: 7f2c71b6-15c3-4919-9f51-a3e26d0d48d4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -13,65 +13,65 @@ ht-degree: 0%
 
 # DV-certificaten (Domain Validated) {#domain-validated-certificates}
 
-Leer hoe u DV-certificaten (Domain Validated) beheert in Cloud Manager.
+Leer hoe u DV-certificaten (Domain Validated) in Cloud Manager beheert.
 
 >[!NOTE]
 >
->Deze functie is alleen beschikbaar voor [het programma voor vroegtijdige adoptie .](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Deze eigenschap is slechts beschikbaar aan [ het vroege adopterprogramma.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 
 ## Inleiding {#introduction}
 
-Met Cloud Manager kunt u via zelfbediening een DV (Domain Validated SSL Certificate) genereren en beheren. Dit biedt u de snelste, eenvoudigste en voordeligste oplossing om een veilige website voor uw online bedrijf te maken.
+Met Cloud Manager kunt u op zelfbediening een DV (Domain Validated SSL Certificate) genereren en beheren. Dit biedt u de snelste, eenvoudigste en voordeligste oplossing om een veilige website voor uw online bedrijf te maken.
 
-Domeingevalideerde certificaten zijn beschikbaar voor beide [productie- en sandboxprogramma&#39;s.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+De domein bevestigde certificaten zijn beschikbaar aan zowel [ productie als zandbakprogramma&#39;s.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 ## Een aangepast domein toevoegen {#adding-domain}
 
-Als u een DV-certificaat (Domain Validated) wilt toevoegen, moet u eerst het aangepaste domein configureren. Het proces is grotendeels hetzelfde als in het document wordt beschreven [Inleiding tot aangepaste domeinnamen.](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Deze functionaliteit is echter enigszins uitgebreid.
+Als u een DV-certificaat (Domain Validated) wilt toevoegen, moet u eerst het aangepaste domein configureren. Het proces is grotendeels het zelfde als gedetailleerd in het document [ Inleiding aan de Namen van het Domein van de Douane.](/help/implementing/cloud-manager/custom-domain-names/introduction.md) Deze functionaliteit is echter enigszins uitgebreid.
 
-1. Wanneer het verifiëren van het domein, kunt u verkiezen om Adobe-geleide of zelf-beheerde certificaten met het domein te gebruiken. Kies **Door Adobe beheerd certificaat** om later een DV-certificaat toe te voegen.
+1. Wanneer het verifiëren van het domein, kunt u verkiezen om Adobe-geleide of zelf-beheerde certificaten met het domein te gebruiken. Kies **Adobe beheerde certificaat** om een DV- certificaat later toe te voegen.
 
-   ![Kies Adobe-beheerde](assets/verify-domain-dialog.png)
+   ![ kies Adobe-geleid ](assets/verify-domain-dialog.png)
 
-1. Om een Adobe te gebruiken beheerde certificaat, moet u een verslag CNAME aan uw DNS toevoegen zoals die in wordt beschreven **Domein verifiëren** in.
+1. Om een Adobe te gebruiken beheerde certificaat, moet u een verslag CNAME aan uw DNS toevoegen zoals die in **wordt beschreven verifieer domein** dialoog.
 
-   ![CNAME-item toevoegen](assets/verify-domain-dialog-adobe-managed.png)
+   ![ voeg de ingang van CNAME ](assets/verify-domain-dialog-adobe-managed.png) toe
 
-1. Tik op de knop Ovaal in de lijst met domeinen nadat u het domein hebt gemaakt of klik op deze knop **Verifiëren** om het domein te verifiëren.
+1. Zodra het domein wordt gecreeerd, tik of klik de ellipsknoop in de lijst van domeinen en selecteer **verifieer** om het domein te verifiëren.
 
-   ![Domein verifiëren](assets/verify-domain.png)
+   ![ verifieer domein ](assets/verify-domain.png)
 
 ## Een DV-certificaat toevoegen {#adding}
 
-Als u uw domein correct hebt geconfigureerd, kunt u een DV-certificaat toevoegen door op de knop **SSL-certificaat toevoegen** in het venster SSL-certificaten.
+Zodra u uw domein correct hebt gevormd, om een DV- certificaat toe te voegen, onttikt of klikt **SSL certificaat** knoop in het SSL venster van Certificaten toevoegen.
 
-![Een gelijkstroomcertificaat toevoegen](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
+![ Toevoegend een certificaat van gelijkstroom ](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
 1. Selecteer de optie **beheerde Adobe (DV)**.
-1. Geef de domeinnaam op in het dialoogvenster **Domeinen selecteren** vallen.
-1. Tik of klik op **Opslaan**.
+1. Specificeer de domeinnaam in **Uitgezochte domeinen** drop down.
+1. Tik of klik **sparen**.
 
-Als het certificaat is toegevoegd, is het in behandeling en krijgt het een gele waarschuwing met de naam in het dialoogvenster **SSL-certificaten** venster.
+Zodra met succes toegevoegd zal het certificaat een hangende status met een geel waarschuwingsbord aan zijn naam in het **SSL venster van Certificaten** hebben.
 
-![DV-cert in behandeling](assets/pending-dv-certificate.png)
+![ Hangende DV cert ](assets/pending-dv-certificate.png)
 
-Als het certificaat eenmaal is uitgegeven, krijgt het een groen vinkje in het veld **SSL-certificaten** venster.
+Zodra met succes uitgegeven zal het certificaat een groen vinkje aan zijn naam in het **SSL venster van Certificaten** hebben.
 
-![Uitgegeven DV cert](assets/issued-dv-certificate.png)
+![ Uitgegeven DV cert ](assets/issued-dv-certificate.png)
 
-Zie het document voor meer informatie over het toevoegen van SSL-certificaten en het venster SSL-certificaten [Een SSL-certificaat toevoegen.](add-ssl-certificate.md)
+Voor meer informatie over het toevoegen van SSL certificaten en het SSL venster van Certificaten, te zien gelieve het document [ Toevoegend een SSL Certificaat.](add-ssl-certificate.md)
 
 ## CDN-configuratie toevoegen {#add-cdn}
 
 Deze stap moet worden voltooid om een domein met SSL te vormen gebruikend Fastly CDN.
 
-Ga als volgt te werk om een CDN-configuratie toe te voegen met gebruik van Cloud Manager.
+Ga als volgt te werk om een CDN-configuratie toe te voegen met Cloud Manager.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Selecteer de **CDN-configuraties** klikken of tikken **Toevoegen** in de werkbalk.
+1. Selecteer het **lusje van de Configuraties 0} CDN en klik of tik** **in de hulpmiddelbar toevoegen.**
 
-1. In de **CDN configureren** de nodige informatie te verstrekken.
+1. In **vorm CDN** dialoog, verstrek de noodzakelijke informatie.
 
    * Selecteer de **Oorsprong**. Dit kan zijn:
       * Een omgeving met Cloud Servicen
@@ -81,7 +81,7 @@ Ga als volgt te werk om een CDN-configuratie toe te voegen met gebruik van Cloud
    * Selecteer het SSL-certificaat.
       * Slechts vereist voor Adobe-geleide CDNs.
 
-   ![CDN-dialoogvenster configureren](assets/configure-cdn-dialog.png)
+   ![ vorm CDN dialoog ](assets/configure-cdn-dialog.png)
 
 >
 >

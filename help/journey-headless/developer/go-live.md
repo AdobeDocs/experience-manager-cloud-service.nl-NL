@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Hoe u met uw headless toepassing kunt gaan werken {#go-live}
 
-In dit deel van het [AEM Headless Developer Journey](overview.md)leert u hoe u live een toepassing zonder kop kunt implementeren door uw lokale code in Git in te voeren en deze naar Cloud Manager Git voor de CI/CD-pijplijn te verplaatsen.
+In dit deel van de [ AEM Dagloze Reis van de Ontwikkelaar ](overview.md), leer hoe te om een toepassing zonder kop op te stellen levend door uw lokale code in Git te nemen en het te bewegen naar Cloud Manager Git voor de pijpleiding CI/CD.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM zonder kop: [Alles bij elkaar plaatsen - uw app en uw inhoud in AEM headless](put-it-all-together.md) u leerde hoe te om de AEM ontwikkelingshulpmiddelen te gebruiken om alle facetten van uw project samen te brengen.
+In het vorige document van de AEM hoofdloze reis, [ hoe te om het allen samen te zetten - Uw App en Uw Inhoud in AEM Zetel ](put-it-all-together.md) leerde u hoe te om de AEM ontwikkelingshulpmiddelen te gebruiken om alle facetten van uw project samen te zetten.
 
 Dit artikel bouwt verder op die grondbeginselen zodat u begrijpt hoe u uw eigen AEM headless project kunt voorbereiden om te leven.
 
@@ -38,8 +38,8 @@ Volg de onderstaande aanbevolen procedures om uw AEM toepassing zonder koppen kl
 
 ## Beveilig en schaal uw toepassing zonder koppen voordat u de toepassing start {#secure-and-scale-before-launch}
 
-1. Configureren [Verificatie op basis van token](/help/headless/security/authentication.md) met uw GraphQL-verzoeken
-1. Configureren [Caching](/help/implementing/dispatcher/caching.md).
+1. Vorm [ Symbolische Gebaseerde Authentificatie ](/help/headless/security/authentication.md) met uw verzoeken van GraphQL
+1. Vorm [ Caching ](/help/implementing/dispatcher/caching.md).
 
 ## Modelstructuur versus GraphQL-uitvoer {#structure-vs-output}
 
@@ -61,16 +61,16 @@ Volg de onderstaande aanbevolen procedures om uw AEM toepassing zonder koppen kl
 * Zorg ervoor dat HTTP-clients HTTP/2 gebruiken.
 * Zorg ervoor dat HTTP-clients de headeraanvraag voor gzip accepteren.
 * Minimaliseer het aantal domeinen dat wordt gebruikt om JSON te hosten en referenced artefacten.
-* Hefboomwerking `Last-modified-since` om bronnen te vernieuwen.
-* Gebruiken `_reference` uitvoer in JSON-bestand om te beginnen met het downloaden van elementen zonder dat volledige JSON-bestanden hoeven te worden geparseerd.
+* Vernieuw bronnen met `Last-modified-since` .
+* Gebruik `_reference` -uitvoer in JSON-bestand om elementen te downloaden zonder dat u volledige JSON-bestanden hoeft te parseren.
 
 ## Distribueren naar productie {#deploy-to-production}
 
-Zodra u ervoor hebt gezorgd dat alles is getest en correct werkt, bent u klaar om uw code-updates naar een [gecentraliseerde Git-opslagplaats in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+Zodra u ervoor zorgt dat alles is getest en behoorlijk werkt, bent u bereid om uw codeupdates aan a [ gecentraliseerde bewaarplaats van de it in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html) te duwen.
 
-Nadat de updates zijn geüpload naar Cloud Manager, kunnen ze worden geïmplementeerd naar AEM as a Cloud Service via [De CI/CD-pijplijn van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+Nadat de updates aan Cloud Manager zijn geupload, kunnen zij aan AEM as a Cloud Service worden opgesteld gebruikend [ Cloud Manager CI/CD pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
-U kunt uw code beginnen op te stellen door de Cs/cd-pijplijn van de Manager van de Wolk te gebruiken, die uitgebreid wordt behandeld [hier](/help/implementing/deploying/overview.md).
+U kunt beginnen uw code op te stellen door de pijpleiding van Cloud Manager te gebruiken CI/CD, die uitgebreid [ hier ](/help/implementing/deploying/overview.md) wordt behandeld.
 
 ## Prestatiebewaking {#performance-monitoring}
 
@@ -116,7 +116,7 @@ Om een insect met Steun efficiënt te registreren voor het geval dat u verdere h
 Gefeliciteerd! U hebt de AEM Headless Developer Journey voltooid! U zou nu een inzicht moeten hebben in:
 
 * Het verschil tussen koploze en koprijke levering van inhoud.
-* AEM functies zonder kop.
+* AEM eindeloze functies.
 * Hoe te om Hoofdloze project te organiseren en te AEM.
 * Hoe te om koploze inhoud in AEM te creëren.
 * Hoe te om koploze inhoud in AEM terug te winnen en bij te werken.
@@ -127,15 +127,15 @@ U hebt uw eerste AEM Headless-project al gestart of u hebt nu alle kennis die u 
 
 ### Toepassingen met één pagina verkennen {#explore-spa}
 
-De koploze winkels in AEM hoeven hier echter niet te stoppen. U herinnert zich misschien in het [Een deel van de reis aan de slag](getting-started.md#integration-levels) we hebben kort besproken hoe AEM niet alleen de levering zonder kop en traditionele full-stack modellen ondersteunt, maar ook hybride modellen die de voordelen van beide combineren.
+De koploze winkels in AEM hoeven hier echter niet te stoppen. U zou zich in het [ Begonnen deel van de reis ](getting-started.md#integration-levels) kunnen herinneren wij kort bespraken hoe AEM niet alleen hoofdloze levering en traditionele full-stack modellen steunt, maar ook hybride modellen kunnen steunen die de voordelen van allebei combineren.
 
-Als dit soort flexibiliteit iets u voor uw project nodig hebt, ga aan het facultatieve, extra deel van de reis voort, [Uitleg over het maken van toepassingen voor één pagina (SPA) met AEM.](create-spa.md)
+Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga op het facultatieve, extra deel van de reis verder, [ hoe te om Enige Toepassingen van de Pagina (SPA) met AEM tot stand te brengen.](create-spa.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-* [Een overzicht van het Opstellen aan AEM as a Cloud Service](/help/implementing/deploying/overview.md)
-* [Cloud Manager gebruiken om uw code te implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Integreer de opslagplaats voor de Intel Health Care Management Suite van Cloud Manager met een externe opslagplaats voor Git en implementeer een project om as a Cloud Service te AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
+* [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [Een overzicht van de implementatie op AEM as a Cloud Service](/help/implementing/deploying/overview.md)
+* [ Gebruik Cloud Manager om Uw Code ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) op te stellen
+* [ integreer de Bewaarplaats van het Git van Cloud Manager met een Externe Bewaarplaats van het Git en stel een Project aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html) op

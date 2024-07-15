@@ -20,40 +20,40 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 
 Zoeken is beschikbaar op de bovenste werkbalk:
 
-![Zoekpictogram](/help/sites-cloud/authoring/assets/search-icon.png)
+![ het pictogram van het Onderzoek ](/help/sites-cloud/authoring/assets/search-icon.png)
 
 Met de zoekrail kunt u:
 
 * Zoeken naar een specifiek trefwoord, pad of tag
 * Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte enzovoort.
-* Definieer een [opgeslagen zoekopdracht](#saved-searches) - op basis van bovenstaande criteria
+* Bepaal en gebruik a [ bewaarde onderzoek ](#saved-searches) - gebaseerd op de bovengenoemde criteria
 
 >[!NOTE]
 >
->Zoeken kan ook worden aangeroepen door de sneltoets te gebruiken `/` (slash) wanneer de zoekrail zichtbaar is.
+>U kunt de zoekopdracht ook aanroepen door de sneltoets `/` (forward slash) te gebruiken wanneer de zoekbalk zichtbaar is.
 
 ## Zoeken en filteren {#search-and-filter}
 
 U kunt als volgt uw bronnen zoeken en filteren:
 
-1. Openen **Zoeken** (met het vergrootglas in de werkbalk) en voer uw zoekterm in. Er worden suggesties gedaan en deze kunnen worden geselecteerd:
+1. Open **Onderzoek** (met het vergrootglas in de toolbar) en ga uw onderzoekstermijn in. Er worden suggesties gedaan en deze kunnen worden geselecteerd:
 
-   ![Zoekterm](/help/sites-cloud/authoring/assets/search-term.png)
+   ![ termijn van het Onderzoek ](/help/sites-cloud/authoring/assets/search-term.png)
 
    Door gebrek zijn de onderzoeksresultaten beperkt tot uw huidige plaats (namelijk console en verwant middeltype):
 
-   ![Zoeklocatie](/help/sites-cloud/authoring/assets/search-term-location.png)
+   ![ plaats van het Onderzoek ](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Indien nodig kunt u het locatiefilter verwijderen (selecteer **X** op het filter dat u wilt verwijderen) om te zoeken in alle consoles/middeltypen.
+1. Indien nodig, kunt u de plaatsfilter (uitgezochte **X** op de filter verwijderen u) over alle consoles/middeltypes zoeken.
 1. De resultaten worden getoond, gegroepeerd volgens console en verwant middeltype.
 
-   U kunt een bepaalde bron selecteren (voor verdere actie) of naar beneden boren door het vereiste type resource te selecteren, bijvoorbeeld **Alle sites weergeven**:
+   U kunt of een specifiek middel (voor verdere actie) selecteren, of neer boren door het vereiste middeltype te selecteren; bijvoorbeeld, **Mening Alle Plaatsen**:
 
-   ![Zoekresultaten](/help/sites-cloud/authoring/assets/search-results.png)
+   ![ resultaten van het Onderzoek ](/help/sites-cloud/authoring/assets/search-results.png)
 
-1. Als u verder omlaag wilt boren, selecteert u het symbool Rail (linksboven) om het zijpaneel te openen **Filters en opties**.
+1. Als u verder naar beneden wilt boren, selecteer het symbool van het Spoorstaaf (linksboven) om het zijpaneel **Filters &amp; Opties** te openen.
 
-   ![Spoorstaaf, knop](/help/sites-cloud/authoring/assets/rail-button.png)
+   ![ knoop van het Spoorspoor ](/help/sites-cloud/authoring/assets/rail-button.png)
 
    Volgens het middeltypeOnderzoek zal een vooraf bepaalde selectie van onderzoek/filtercriteria tonen.
 
@@ -62,20 +62,20 @@ U kunt als volgt uw bronnen zoeken en filteren:
    * Opgeslagen zoekopdrachten
    * Zoekdirectory
    * Tags
-   * Zoekcriteria, bijvoorbeeld Gewijzigde datums, Publicatiestatus, LiveCopy-status
+   * Zoekcriteria, bijvoorbeeld Gewijzigde datums, Publish-status, LiveCopy-status
 
    >[!NOTE]
    >
    >De zoekcriteria kunnen variëren:
    >
-   >* Afhankelijk van het type bron dat u hebt geselecteerd, zijn bijvoorbeeld de criteria Middelen en Gemeenschappen begrijpelijkerwijs gespecialiseerd.
+   >* Afhankelijk van het type bron dat u hebt geselecteerd, zijn bijvoorbeeld de criteria Assets en Communities begrijpelijk gespecialiseerd.
    >* Uw exemplaar als Zoeken in Forms kan worden aangepast (afhankelijk van de locatie in AEM).
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
 
-![Zijpaneel zoeken](/help/sites-cloud/authoring/assets/search-side-panel.png)
+![ Onderzoek zijpaneel ](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
 1. U kunt ook extra zoektermen toevoegen.
 
@@ -91,23 +91,23 @@ U kunt als volgt uw bronnen zoeken en filteren:
 
 Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde zoekconfiguratie opslaan, zodat deze later kan worden opgehaald en gebruikt:
 
-1. Definieer uw zoekcriteria en selecteer **Opslaan**.
+1. Bepaal uw onderzoekscriteria en selecteer **sparen**.
 
-   ![Een zoekopdracht opslaan](/help/sites-cloud/authoring/assets/search-side-panel.png)
+   ![ het Opslaan van een onderzoek ](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. Wijs een naam toe, dan gebruik **Opslaan** ter bevestiging:
+1. Wijs een naam toe, dan gebruik **sparen** om te bevestigen:
 
-   ![Een zoekopdracht opslaan met een naam](/help/sites-cloud/authoring/assets/search-save-name.png)
+   ![ het Opslaan van een onderzoek met een naam ](/help/sites-cloud/authoring/assets/search-save-name.png)
 
 1. De volgende keer dat u het deelvenster Zoeken opent, kunt u de opgeslagen zoekopdracht vanuit de kiezer openen:
 
-   ![Opgeslagen zoekopdrachten](/help/sites-cloud/authoring/assets/saved-searches.png)
+   ![ Bewaarde onderzoeken ](/help/sites-cloud/authoring/assets/saved-searches.png)
 
 1. Nadat u het bestand hebt opgeslagen, kunt u:
 
-   * Gebruiken **x** (naast de naam van de opgeslagen zoekopdracht) om een nieuwe query te starten (de opgeslagen zoekopdracht zelf wordt niet verwijderd).
-   * **Opgeslagen zoekopdracht bewerken** wijzigt u vervolgens de zoekvoorwaarden **Opslaan** opnieuw.
+   * Het gebruik **x** (tegen de naam van het bewaarde onderzoek) om een nieuwe vraag te beginnen (het bewaarde onderzoek zelf zal niet worden geschrapt).
+   * **geeft Begezeten Onderzoek** uit, verandert de onderzoeksvoorwaarden, dan **sparen** opnieuw.
 
 Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder aan het zoekvenster op **Opgeslagen zoekopdracht bewerken** te klikken.
 
-![Een opgeslagen zoekopdracht wijzigen](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
+![ Wijzend een bewaard onderzoek ](/help/sites-cloud/authoring/assets/saved-searches-modify.png)

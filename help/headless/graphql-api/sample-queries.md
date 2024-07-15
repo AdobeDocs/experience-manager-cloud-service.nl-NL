@@ -21,15 +21,15 @@ Leer GraphQL met AEM te gebruiken, zodat u inhoud zonder problemen kunt bedienen
 >
 >* [Contentfragmenten](/help/sites-cloud/administering/content-fragments/overview.md)
 >* [Modellen van contentfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
->* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
+>* [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](/help/headless/graphql-api/content-fragments.md)
 
 Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, is het nuttig om enkele praktische voorbeelden te zien.
 
 Zie voor hulp bij dit:
 
-* A [voorbeeldstructuur van inhoudsfragment](#content-fragment-structure-graphql)
+* A [ structuur van het Fragment van de steekproefinhoud ](#content-fragment-structure-graphql)
 
-* En sommige [voorbeeld GraphQL-vragen](#graphql-sample-queries), op basis van de structuur van het voorbeeldinhoudsfragment (Content Fragment Models and related Content Fragments).
+* En sommige [ vragen van de steekproefGraphQL ](#graphql-sample-queries), die op de structuur van het Fragment van de steekproefinhoud (de Modellen van het Fragment van de Inhoud en verwante Fragments van de Inhoud) wordt gebaseerd.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -42,22 +42,22 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 
 >[!NOTE]
 >
->Afhankelijk van uw instantie kunt u rechtstreeks toegang krijgen tot [GraphiQL-interface inbegrepen bij AEM GraphQL API](/help/headless/graphql-api/graphiql-ide.md) voor het indienen van en het testen van vragen.
+>Afhankelijk van uw instantie, kunt u tot de [ interface toegang hebben GraphiQL inbegrepen met AEM GraphQL API ](/help/headless/graphql-api/graphiql-ide.md) voor het voorleggen en het testen van vragen.
 >
 >U kunt tot de vraagredacteur van één van beiden toegang hebben:
 >
->* **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**
->* rechtstreeks; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
+>* **Hulpmiddelen** > **Algemeen** > **de Redacteur van de Vraag van GraphQL**
+>* direct; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >
->De steekproefvragen zijn gebaseerd op [Voorbeeldstructuur van inhoudsfragment voor gebruik met GraphQL](#content-fragment-structure-graphql)
+>De steekproefvragen zijn gebaseerd op de [ Structuur van het Fragment van de Inhoud van de Steekproef voor gebruik met GraphQL ](#content-fragment-structure-graphql)
 
 ### Voorbeeldquery - Alle beschikbare schema&#39;s en datatypen {#sample-all-schemes-datatypes}
 
-Retourneert alles `types` voor alle beschikbare schema&#39;s.
+Retourneert alle `types` voor alle beschikbare schema&#39;s.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -70,7 +70,7 @@ Retourneert alles `types` voor alle beschikbare schema&#39;s.
 }
 ```
 
-**Voorbeeldresultaat**
+**Resultaat van de Steekproef**
 
 ```json
 {
@@ -149,7 +149,7 @@ Retourneert alles `types` voor alle beschikbare schema&#39;s.
 ### Voorbeeldquery - Alle informatie over alle steden {#sample-all-information-all-cities}
 
 Om alle informatie over alle steden terug te winnen, kunt u de volgende basisvraag gebruiken:
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -174,7 +174,7 @@ Bij uitvoering wordt de query automatisch uitgebreid met alle velden:
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -231,9 +231,9 @@ Bij uitvoering wordt de query automatisch uitgebreid met alle velden:
 
 ### Voorbeeldquery - Namen van alle steden {#sample-names-all-cities}
 
-Een eenvoudige query om de opdracht `name`van alle vermeldingen in de `city`schema.
+Een duidelijke vraag om `name` van alle ingangen in het `city` schema terug te keren.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -245,7 +245,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -283,7 +283,7 @@ query {
 
 Een query om de details van één fragmentitem te retourneren op een specifieke locatie in de opslagplaats.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -299,7 +299,7 @@ Een query om de details van één fragmentitem te retourneren op een specifieke 
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -322,9 +322,9 @@ Een query om de details van één fragmentitem te retourneren op een specifieke 
 
 ### Voorbeeldquery - Alle steden met een benoemde variatie {#sample-cities-named-variation}
 
-Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`) voor de `city` Berlijn, dan kunt u een vraag gebruiken om details van de variatie terug te keren.
+Als u een variatie, genoemd &quot;Centrum van Berlijn&quot;(`berlin_centre`), voor `city` Berlijn creeert, dan kunt u een vraag gebruiken om details van de variatie terug te keren.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -340,7 +340,7 @@ Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`)
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -367,12 +367,12 @@ Als u een variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`)
 
 Als u:
 
-* verschillende tags maken, met de naam `Tourism` : `Business`, `City Break`, `Holiday`
-* en wijst deze toe aan de Master-variatie van diverse `City` instances
+* verschillende tags maken met de naam `Tourism` : `Business` , `City Break` , `Holiday`
+* en toewijzen aan de Master-variatie van verschillende `City` -varianten
 
-Dan kunt u een vraag gebruiken om details van terug te keren `name` en `tags`van alle items die zijn getagd als Stadseinden in het dialoogvenster `city`schema.
+Dan kunt u een vraag gebruiken om details van `name` en `tags` van alle ingangen terug te keren die als Onderbreking van de Stad in het `city` schema worden geëtiketteerd.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```xml
 query {
@@ -388,7 +388,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```xml
 {
@@ -419,7 +419,7 @@ query {
 
 Gebruikend de structuur van de genestelde fragmenten, keert deze vraag de volledige details van CEO van een bedrijf en al zijn werknemers terug.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -448,7 +448,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -545,9 +545,9 @@ query {
 
 ### Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot; {#sample-all-persons-jobs-smith}
 
-Een query die alle filters geeft `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
+Een query die alle `persons` filtert voor alle items met de naam `Jobs` of `Smith` .
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -572,7 +572,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -599,9 +599,9 @@ query {
 
 ### Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot; {#sample-all-persons-not-jobs}
 
-Een query die alle filters geeft `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
+Een query die alle `persons` filtert voor alle items met de naam `Jobs` of `Smith` .
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -623,7 +623,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -666,9 +666,9 @@ query {
 
 ### Voorbeeldquery - Alle avonturen waarvan `_path` begint met een bepaald voorvoegsel {#sample-wknd-all-adventures-cycling-path-filter}
 
-Alles `adventures` waar `_path` begint met een bepaald voorvoegsel (`/content/dam/wknd/en/adventures/cycling`).
+Alle `adventures` waarbij `_path` begint met een specifiek voorvoegsel (`/content/dam/wknd/en/adventures/cycling`).
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -690,7 +690,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -711,9 +711,9 @@ query {
 
 ### Voorbeeldquery - Alle steden in Duitsland of Zwitserland met een bevolking tussen 400000 en 999999 {#sample-all-cities-d-ch-population}
 
-Hier wordt een combinatie van velden gefilterd. An `AND` (impliciet) wordt gebruikt om `population`bereik, terwijl een `OR` (expliciet) wordt gebruikt om de vereiste steden te selecteren.
+Hier wordt een combinatie van velden gefilterd. `AND` (impliciet) wordt gebruikt om de `population` waaier te selecteren, terwijl `OR` (uitdrukkelijk) wordt gebruikt om de vereiste steden te selecteren.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -749,7 +749,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -774,9 +774,9 @@ query {
 
 ### Voorbeeldquery - Alle steden met SAN in naam, ongeacht het geval {#sample-all-cities-san-ignore-case}
 
-Deze vraag ondervraagt voor alle steden die `SAN` in de naam, ongeacht het geval.
+Deze zoekopdracht wordt uitgevoerd voor alle steden die `SAN` in de naam hebben, ongeacht het geval.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -800,7 +800,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -825,9 +825,9 @@ query {
 
 ### Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen {#sample-array-item-occur-at-least-once}
 
-Deze query filtert op een array met een item (`city:na`) die ten minste één keer moet plaatsvinden.
+Deze vraagfilters op een serie met een punt (`city:na`) dat minstens eens moet voorkomen.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -851,7 +851,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -885,7 +885,7 @@ query {
 
 Deze query filtert op een exacte arraywaarde.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -911,7 +911,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -935,9 +935,9 @@ query {
 
 ### Voorbeeldquery voor geneste inhoudsfragmenten - Alle bedrijven met ten minste één werknemer met de naam &quot;Smith&quot; {#sample-companies-employee-smith}
 
-Deze query illustreert het filteren van alle `person` van `name` &quot;Smith&quot;, die informatie van over twee geneste fragmenten terugkeert - `company` en `employee`.
+Deze query illustreert het filteren op een `person` van `name` &quot;Smith&quot;, waarbij informatie wordt geretourneerd uit twee geneste fragmenten - `company` en `employee` .
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -969,7 +969,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -1001,9 +1001,9 @@ query {
 
 ### Voorbeeldquery voor geneste inhoudsfragmenten - Alle bedrijven waar alle werknemers de &quot;Gamestar&quot;-prijs hebben gewonnen {#sample-all-companies-employee-gamestar-award}
 
-Deze query illustreert het filteren van drie geneste fragmenten - `company`, `employee`, en `award`.
+Deze query illustreert het filteren op drie geneste fragmenten - `company` , `employee` en `award` .
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -1045,7 +1045,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -1093,9 +1093,9 @@ query {
 
 ### Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB {#sample-metadata-awards-gb}
 
-Deze query illustreert het filteren van drie geneste fragmenten - `company`, `employee`, en `award`.
+Deze query illustreert het filteren op drie geneste fragmenten - `company` , `employee` en `award` .
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -1122,7 +1122,7 @@ query {
 }
 ```
 
-**Voorbeeldresultaten**
+**Resultaten van de Steekproef**
 
 ```json
 {
@@ -1170,10 +1170,10 @@ Deze steekproefvragen zijn gebaseerd op het project WKND. Het heeft het volgende
 
 Met deze voorbeeldquery wordt het volgende gevraagd:
 
-* voor alle inhoudfragmenten van het type `article`
-* met de `_path` en de eigenschappen van de `authorFragment`.
+* voor alle inhoudsfragmenten van het type `article`
+* met de `_path` en eigenschappen van de `authorFragment` .
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1195,10 +1195,10 @@ Met deze voorbeeldquery wordt het volgende gevraagd:
 
 Deze query vraagt om:
 
-* voor alle inhoudfragmenten van het type `adventure`
+* voor alle inhoudsfragmenten van het type `adventure`
 * metagegevens
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1256,14 +1256,14 @@ Deze query vraagt om:
 
 Met deze voorbeeldquery wordt het volgende gevraagd:
 
-* voor één inhoudsfragment van type `article` op een bepaald pad
+* voor één inhoudsfragment van tekst `article` op een specifiek pad
    * in dat fragment, alle indelingen van inhoud:
       * HTML
       * Markering
       * Onbewerkte tekst
       * JSON
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1294,7 +1294,7 @@ Met deze voorbeeldquery wordt het volgende gevraagd:
 * voor één inhoudsfragment
    * details van het onderliggende inhoudsfragmentmodel
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1315,14 +1315,14 @@ Met deze voorbeeldquery wordt het volgende gevraagd:
 
 Deze query vraagt om:
 
-* voor één inhoudsfragment van type `article` op een bepaald pad
+* voor één inhoudsfragment van tekst `article` op een specifiek pad
    * binnen dat fragment, het pad en de auteur van het fragment waarnaar wordt verwezen (geneste fragment)
 
 >[!NOTE]
 >
->Het veld `referencearticle` heeft het gegevenstype Data `fragment-reference`.
+>Het veld `referencearticle` heeft het gegevenstype `fragment-reference` .
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1350,7 +1350,7 @@ Deze query vraagt om:
 
 >[!NOTE]
 >
->Het veld `fragments` heeft het gegevenstype Data `fragment-reference`, met het model `Article` geselecteerd. Query levert `fragments` als een array van `[Article]`.
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference` en het model `Article` is geselecteerd. Query levert `fragments` als een array van `[Article]` .
 
 ```graphql
 {
@@ -1374,7 +1374,7 @@ Deze query vraagt om:
 
 >[!NOTE]
 >
->Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met de modellen `Article`, `Adventure` geselecteerd. Query levert `fragments` als een array van `[AllFragmentModels]`, die wordt afgeweken van het type union.
+>Het veld `fragments` heeft het gegevenstype `fragment-reference` , met de modellen `Article` en `Adventure` geselecteerd. Query levert `fragments` als een array van `[AllFragmentModels]` , die wordt verwijderd met het samenvoegingstype.
 
 ```graphql
 {
@@ -1400,7 +1400,7 @@ Deze query vraagt om:
 Deze query heeft twee voordelen:
 
 1. Alle inhoudsverwijzingen retourneren.
-1. De specifieke inhoudsverwijzingen van het type retourneren `attachments`.
+1. De specifieke inhoudsverwijzingen van het type `attachments` retourneren.
 
 Deze vragen worden ondervraagd:
 
@@ -1409,7 +1409,7 @@ Deze vragen worden ondervraagd:
 
 #### Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen {#sample-wknd-multiple-fragments-prefetched-references}
 
-De volgende vraag keert alle inhoudsverwijzingen terug door te gebruiken `_references`:
+Met de volgende query worden alle inhoudsverwijzingen geretourneerd met `_references` :
 
 <!-- need replacement query -->
 
@@ -1447,11 +1447,11 @@ De volgende vraag keert alle inhoudsverwijzingen terug door te gebruiken `_refer
 
 #### Voorbeeldquery voor meerdere inhoudsfragmenten met bijlagen {#sample-wknd-multiple-fragments-attachments}
 
-De volgende query retourneert alle `attachments` - een specifiek veld (subgroep) van het type `content-reference`:
+Met de volgende query worden alle `attachments` - een specifiek veld (subgroep) van het type `content-reference` geretourneerd:
 
 >[!NOTE]
 >
->Het veld `attachments` heeft het gegevenstype Data `content-reference`, waarbij verschillende formulieren zijn geselecteerd.
+>Het veld `attachments` heeft het gegevenstype `content-reference` , met verschillende formulieren geselecteerd.
 
 <!-- need replacement query -->
 
@@ -1490,16 +1490,16 @@ De volgende query retourneert alle `attachments` - een specifiek veld (subgroep)
 
 Deze query vraagt om:
 
-* voor één inhoudsfragment van type `bookmark` op een bepaald pad
+* voor één inhoudsfragment van tekst `bookmark` op een specifiek pad
    * binnen dat, de gealigneerde verwijzingen van RTE
 
 >[!NOTE]
 >
->De RTE gealigneerde verwijzingen worden gehydrateerd binnen `_references`.
+>De inline RTE-verwijzingen worden gehydrateerd in `_references` .
 
 <!-- need replacement query -->
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1538,10 +1538,10 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor één inhoudsfragment van type `author` op een bepaald pad
+* voor één inhoudsfragment van tekst `author` op een specifiek pad
    * binnen dat fragment, de gegevens met betrekking tot de variatie: `another`
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1565,9 +1565,9 @@ Deze query vraagt om:
 
 >[!NOTE]
 >
->Deze query toont fallback voor Content Fragments die geen [Variatie](/help/headless/graphql-api/content-fragments.md#variations) van de opgegeven naam.
+>Deze vraag toont reserve voor de Fragmenten van de Inhoud aan die a [ Variatie ](/help/headless/graphql-api/content-fragments.md#variations) van de gespecificeerde naam niet hebben.
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1589,7 +1589,7 @@ Deze query vraagt om:
 
 * voor inhoudfragmenten van het type `article` en alle variaties
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```xml
 query {
@@ -1614,9 +1614,9 @@ query {
 
 Deze query vraagt om:
 
-* voor inhoudfragmenten van het type `article` met een of meer variaties met de tag `WKND : Activity / Hiking`
+* voor Inhoudsfragmenten van het type `article` met een of meer variaties met het label `WKND : Activity / Hiking`
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```xml
 {
@@ -1643,9 +1643,9 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor inhoudfragmenten van het type `article` binnen de `fr` landinstelling
+* voor tekstfragmenten met inhoud `article` binnen de landinstelling `fr`
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 { 
@@ -1673,9 +1673,9 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor de resultatenpagina met maximaal vijf artikelen, te beginnen bij het vijfde artikel van het *complete* resultatenlijst
+* voor de pagina van resultaten die tot vijf artikelen bevatten, die van het vijfde artikel van de *volledige* resultatenlijst beginnen
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1697,9 +1697,9 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor de pagina met resultaten die maximaal vijf avonturen bevatten, beginnend bij het bepaalde cursorpunt in *complete* resultatenlijst
+* voor de pagina van resultaten die tot vijf avonturen bevatten, die van het bepaalde cursorpunt in *beginnen volledige* resultatenlijst
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1722,10 +1722,10 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor inhoudfragmenten van het type `vehicle` met de tag `big-block`
+* voor inhoudfragmenten van het type `vehicle` met het label `big-block`
 * uitsluiten, variaties
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 query {
@@ -1757,10 +1757,10 @@ query {
 
 Deze query vraagt om:
 
-* voor inhoudfragmenten van het type `vehicle` met de tag `big-block`
+* voor inhoudfragmenten van het type `vehicle` met het label `big-block`
 * inclusief variaties
 
-**Voorbeeldquery**
+**de Vraag van de Steekproef**
 
 ```graphql
 {
@@ -1796,7 +1796,7 @@ Deze query vraagt om:
 } 
 ```
 
-## Voorbeeldquery&#39;s voor levering van DAM- en Dynamic Media-middelen {#sample-queries-delivery-DAM-DM}
+## Voorbeeldquery&#39;s voor levering DAM en Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
 
 Voor voor het web geoptimaliseerde afbeeldingslevering (van DAM-middelen):
 
@@ -1806,25 +1806,25 @@ Voor voor het web geoptimaliseerde afbeeldingslevering (van DAM-middelen):
 
 Voor de levering van de URL aan een Dynamic Media-element
 
-* Zie [Voorbeeldquery voor levering van Dynamic Media-elementen via URL - Afbeeldingsverwijzing](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* Zie [ vraag van de Steekproef voor Dynamic Media activalevering door URL - de Verwijzing van het Beeld ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* Zie [Voorbeeldquery voor levering van Dynamic Media-elementen via URL - Meerdere verwijzingen](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* Zie [ vraag van de Steekproef voor Dynamic Media activalevering door URL - Veelvoudige Verwijzingen ](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## De structuur voor het voorbeeldinhoudfragment (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
 
 De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
-* één of meer, [Voorbeeld van fragmentmodellen van inhoud](#sample-content-fragment-models-schemas) - de basis vormen voor de GraphQL-regeling
+* Één, of meer, [ Modellen van het Fragment van de Inhoud van de Steekproef ](#sample-content-fragment-models-schemas) - vorm de basis voor de schema&#39;s van GraphQL
 
-* [Voorbeeldinhoudsfragmenten](#sample-content-fragments) op basis van bovenstaande modellen
+* [ de Fragmenten van de Inhoud van de Steekproef ](#sample-content-fragments) die op de bovengenoemde modellen worden gebaseerd
 
 ### Voorbeeld van modellen van inhoudsfragmenten (schema&#39;s) {#sample-content-fragment-models-schemas}
 
 Voor de steekproefvragen, gebruikt u de volgende Modellen van Inhoud, en hun onderlinge relaties (verwijzingen ->):
 
-* [Bedrijf](#model-company)
--> [Persoon](#model-person)
-    -> [Uitreiking](#model-award)
+* [ Bedrijf ](#model-company)
+-> [ Persoon ](#model-person)
+    -> [ Uitreiking ](#model-award)
 
 * [Plaats](#model-city)
 
@@ -1835,8 +1835,8 @@ De basisvelden voor het bedrijf zijn:
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
 | Bedrijfsnaam | Tekst met één regel | |
-| CEO | Fragmentverwijzing (enkele) | [Persoon](#model-person) |
-| Werknemers | Fragmentverwijzing (meerdere velden) | [Persoon](#model-person) |
+| CEO | Fragmentverwijzing (enkele) | [ Persoon ](#model-person) |
+| Werknemers | Fragmentverwijzing (meerdere velden) | [ Persoon ](#model-person) |
 
 #### Persoon {#model-person}
 
@@ -1846,7 +1846,7 @@ De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
 |--- |--- |--- |
 | Naam | Tekst met één regel | |
 | Voornaam | Tekst met één regel | |
-| Uitreiking | Fragmentverwijzing (meerdere velden) | [Uitreiking](#model-award) |
+| Uitreiking | Fragmentverwijzing (meerdere velden) | [ Uitreiking ](#model-award) |
 
 #### Uitreiking {#model-award}
 
@@ -1876,9 +1876,9 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 
 | Bedrijfsnaam | CEO | Werknemers |
 |--- |--- |--- |
-| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-| Little Pony Inc. | Adam Smith | Lara Croft<br>Trekslade |
-| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
+| Apple | Steve Jobs | Duke Marsh <br> Max Caulfield |
+| Little Pony Inc. | Adam Smith | Lara Croft <br> Uitsnijdschaal |
+| NextStep Inc. | Steve Jobs | Joe Smith <br> Abe Lincoln |
 
 #### Persoon {#fragment-person}
 
@@ -1886,7 +1886,7 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 |--- |--- |--- |
 | Lincoln | Abe | |
 | Smith | Adam | |
-| Slade | Tussenruimte | Gameblitz<br>Gamestar |
+| Slade | Tussenruimte | Gameblitz <br> Gamestar |
 | Marsh | Duke | |
 | Smith | Joe | |
 | Uitsnijden | Lara | Gamestar |
@@ -1906,9 +1906,9 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 | Naam | Land | Bevolking | Categorieën |
 |--- |--- |--- |--- |
 | Bazel | Zwitserland | 172258 | stad:emea |
-| Berlin | Duitsland | 3669491 | stad:hoofdstad<br>stad:emea |
-| Boekarest | Roemenië | 1821000 | stad:hoofdstad<br>stad:emea |
-| San Francisco | VS | 883306 | stad:strand<br>plaats:na |
+| Berlin | Duitsland | 3669491 | stad:kapitaal <br> stad:emea |
+| Boekarest | Roemenië | 1821000 | stad:kapitaal <br> stad:emea |
+| San Francisco | VS | 883306 | stad:strand <br> stad:na |
 | San Jose | VS | 102635 | plaats:na |
 | Stuttgart | Duitsland | 634830 | stad:emea |
-| Zurich | Zwitserland | 415367 | stad:hoofdstad<br>stad:emea |
+| Zurich | Zwitserland | 415367 | stad:kapitaal <br> stad:emea |

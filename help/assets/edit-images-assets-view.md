@@ -1,6 +1,6 @@
 ---
 title: Afbeeldingen bewerken
-description: Afbeeldingen bewerken met [!DNL Adobe Express] Aangedreven opties en sparen bijgewerkte beelden als versies.
+description: Bewerk beelden gebruikend  [!DNL Adobe Express]  aangedreven opties en sparen bijgewerkte beelden als versies.
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # Afbeeldingen bewerken in [!DNL Assets view] {#edit-images-in-assets-view}
 
-In de Assets-weergave kunt u basisafbeeldingen bewerken, zoals vergroten/verkleinen, verwijderen van de achtergrond, uitsnijden en omzetten tussen de JPEG- en PNG-indeling. Bovendien is geavanceerde bewerking mogelijk dankzij integratie met Adobe Express. Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een nieuwe versie. Met Versioning kunt u het oorspronkelijke element later herstellen als dat nodig is. Als u een afbeelding wilt bewerken, [zijn voorvertoning openen](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) en klik op **Afbeelding bewerken**.
+In de Assets-weergave kunt u basisafbeeldingen bewerken, zoals vergroten/verkleinen, verwijderen van de achtergrond, uitsnijden en omzetten tussen de JPEG- en PNG-indeling. Bovendien is geavanceerde bewerking mogelijk dankzij integratie met Adobe Express. Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een nieuwe versie. Met Versioning kunt u het oorspronkelijke element later herstellen als dat nodig is. Om een beeld uit te geven, [ open zijn voorproef ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) en klik **geef Beeld** uit.
 
 >[!NOTE]
 >
->U kunt afbeeldingen van de bestandstypen PNG en JPEG bewerken met [!DNL Adobe Express].
+>U kunt afbeeldingen van PNG- en JPEG-bestandstypen bewerken met [!DNL Adobe Express] .
 
 <!--The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.-->
 
 ## Afbeelding bewerken {#edit-image}
 
-Land op Assets View, met de link - [Assets View](https://experience.adobe.com/#/assets) en het selecteren van de juiste opslagplaats. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
-Zie voor aanvullende informatie: [Ga aan de slag met de Adobe Experience Manager Assets-weergave](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [De gebruikersinterface van de Assets-weergave begrijpen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), en [Assets View-gebruikerskwesties](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Land op de Mening van Assets, gebruikend de verbinding - [ Mening van Assets ](https://experience.adobe.com/#/assets) en het selecteren van de juiste bewaarplaats. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
+Voor om het even welke extra verwijzingsinformatie verwijs - [ begonnen worden gebruikend de Mening van Adobe Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [ het gebruikersinterface van de mening van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) begrijpen, en [ het gebruiksgevallen van de Mening van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -33,46 +33,46 @@ Zie voor aanvullende informatie: [Ga aan de slag met de Adobe Experience Manager
 
 ### Afbeelding bewerken in Assets-weergave met Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Na het landen in de weergave Assets klikt u op **Assets** selecteert u een afbeelding en klikt u op **Bewerken** vanaf de bovenste spoorstaaf. In het nieuwe scherm worden de beschikbare bewerkingsopties weergegeven, zoals vergroten/verkleinen, verwijderen van de achtergrond, uitsnijden en omzetten tussen de JPEG- en PNG-indeling.
+Na het landen op de Mening van Assets, klik **Assets**, selecteer een beeld, en klik dan **uitgeven** van hoogste spoor. In het nieuwe scherm worden de beschikbare bewerkingsopties weergegeven, zoals vergroten/verkleinen, verwijderen van de achtergrond, uitsnijden en omzetten tussen de JPEG- en PNG-indeling.
 
 #### Grootte afbeelding wijzigen {#resize-image-using-express}
 
 Een afbeelding vergroten of verkleinen tot een bepaalde grootte is een veelgebruikte optie. Met de Assets-weergave kunt u snel de grootte van afbeeldingen aanpassen aan de gangbare fotoformaten door vooraf berekende nieuwe resoluties voor specifieke fotoformaten te bieden. Voer de onderstaande stappen uit als u het formaat van de afbeelding wilt wijzigen met Assets View:
 
-1. Klikken **Formaat afbeelding wijzigen** in het linkerdeelvenster.
+1. Klik **Resize Beeld** van de linkerruit.
 1. Selecteer het juiste sociale-mediaplatform in de vervolgkeuzelijst Formaat wijzigen en selecteer de afbeeldingsgrootte in de weergegeven opties.
-1. De afbeelding indien nodig schalen met de **Schaal van afbeelding** veld.
-1. Klikken **[!UICONTROL Apply]** om uw wijzigingen toe te passen.
-   ![Afbeeldingen bewerken met Adobe Express](assets/adobe-express-resize-image.png)
+1. Schaal het beeld, indien vereist, gebruikend het **gebied van de Schaal van het Beeld**.
+1. Klik op **[!UICONTROL Apply]** om de wijzigingen toe te passen.
+   ![ Beeld dat met Adobe Express ](assets/adobe-express-resize-image.png) uitgeeft
 
    De bewerkte afbeelding kan worden gedownload. U kunt het bewerkte element opslaan als een nieuwe versie van hetzelfde element of het opslaan als een nieuw element.
-   ![Afbeelding opslaan met Adobe Express](assets/adobe-express-resize-save.png)
+   ![ sparen beeld met Adobe Express ](assets/adobe-express-resize-save.png)
 
 #### Achtergrond verwijderen {#remove-background-using-express}
 
 U kunt de achtergrond uit een afbeelding verwijderen door de onderstaande stappen te volgen:
 
-1. Klikken **Achtergrond verwijderen** in het linkerdeelvenster. Experience Manager Assets geeft de afbeelding zonder achtergrond weer.
-1. Klikken **[!UICONTROL Apply]** om uw wijzigingen toe te passen.
-   ![Afbeelding opslaan met Adobe Express](assets/adobe-express-remove-background.png)
+1. Klik **verwijderen Achtergrond** uit de linkerruit. Experience Manager Assets geeft de afbeelding zonder achtergrond weer.
+1. Klik op **[!UICONTROL Apply]** om de wijzigingen toe te passen.
+   ![ sparen beeld met Adobe Express ](assets/adobe-express-remove-background.png)
 
    De bewerkte afbeelding kan worden gedownload. U kunt het bewerkte element opslaan als een nieuwe versie van hetzelfde element of het opslaan als een nieuw element.
 
 #### Afbeelding uitsnijden {#crop-image-using-express}
 
-Een afbeelding transformeren tot een perfecte grootte is eenvoudig met ingesloten [!DNL Adobe Express] snelle acties.
+U kunt een afbeelding eenvoudig transformeren tot een perfecte grootte met ingesloten snelle handelingen van [!DNL Adobe Express] .
 
-1. Klikken **[!UICONTROL Crop Image]** in het linkerdeelvenster.
+1. Klik op **[!UICONTROL Crop Image]** in het linkerdeelvenster.
 2. Sleep de grepen op de hoeken van de afbeelding om de gewenste uitsnijding te maken.
 3. Klik op **[!UICONTROL Apply]**.
-   ![Afbeelding opslaan met Adobe Express](assets/adobe-express-crop-image.png)
+   ![ sparen beeld met Adobe Express ](assets/adobe-express-crop-image.png)
 De uitgesneden afbeelding kan worden gedownload. U kunt het bewerkte element opslaan als een nieuwe versie van hetzelfde element of het opslaan als een nieuw element.
 
 #### Omzetten tussen afbeeldingsbestandstypen {#convert-image-types-using-express}
 
 U kunt met Adobe Express snel JPEG- en PNG-afbeeldingsindelingen omzetten. Voer de volgende stappen uit:
 
-1. Klikken **JPEG naar PNG** of **PNG naar JPEG** in het linkerdeelvenster.
+1. Klik **JPEG aan PNG** of **PNG aan JPEG** van de linkerruit.
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
 1. Klik op **[!UICONTROL Download]**.
 
@@ -85,33 +85,33 @@ U kunt met Adobe Express snel JPEG- en PNG-afbeeldingsindelingen omzetten. Voer 
 ### Afbeeldingen bewerken in ingesloten Adobe Express-editor {#edit-images-in-adobe-express-embedded-editor}
 
 Gebruikers met Express-machtiging kunnen de ingesloten Express-editor vanuit de Assets-weergave gebruiken om inhoud eenvoudig te bewerken en nieuwe inhoud te maken met GenAI vanaf de Adobe Firefly. Hiermee verbetert u het hergebruik van inhoud en versnelt u de snelheid van de inhoud. U kunt ook vooraf gedefinieerde elementen gebruiken om uw elementen er verbluffend uit te laten zien of snelle acties uitvoeren om uw afbeelding met slechts een paar klikken te bewerken.
-![UI voor het uitdrukken in essentiële gegevens](/help/assets/assets/express-in-essentials-ui.jpg)
-Afbeeldingen bewerken met [!DNL Adobe Express] ingesloten editor, voert u de onderstaande stappen uit:
+![ uitdrukken in essentiële UI ](/help/assets/assets/express-in-essentials-ui.jpg)
+Voer de onderstaande stappen uit als u afbeeldingen wilt bewerken met de ingesloten editor van [!DNL Adobe Express] :
 
-1. Ga naar AEM Assets View met behulp van link - [AEM Assets View](https://experience.adobe.com/#/assets) en selecteer de juiste opslagplaats.
-1. Klikken **Assets**, voert u een map in en selecteert u een afbeelding.
-1. Klikken **Openen in Adobe Express**. De afbeelding wordt geopend op een express canvas.
+1. Land op aan de Mening van AEM Assets gebruikend de verbinding - [ Mening van AEM Assets ](https://experience.adobe.com/#/assets) en selecteer de juiste bewaarplaats.
+1. Klik **Assets**, ga een omslag in, en selecteer een beeld.
+1. Klik **Open in Adobe Express**. De afbeelding wordt geopend op een express canvas.
 1. Breng de gewenste wijzigingen in de afbeelding aan.
-1. Als voor uw project meer pagina&#39;s moeten worden toegevoegd, klikt u op **Toevoegen** selecteert u elementen, voert u een map in, selecteert u een afbeelding die u naar de canvaspagina wilt brengen en voert u de vereiste bewerkingen uit op de afbeelding.
-1. Klik op **Opslaan**. Het dialoogvenster Opslaan wordt weergegeven.
+1. Als uw project u vereist om meer pagina&#39;s toe te voegen, **** klikt, selecteert activa, gaat een omslag in, selecteert een beeld om op de canvaspagina te brengen, en voert dan de vereiste uitgeeft aan het beeld uit.
+1. Om beeld(s) te bewaren, klik **sparen**. Het dialoogvenster Opslaan wordt weergegeven.
 
    >[!NOTE]
    >
    > **1. Voor één pagina**
    >
-   > **Opslaan als versie:** Deze functie ondersteunt het opslaan van slechts één element. Selecteer deze optie om de afbeelding als een nieuwe versie te exporteren (met behoud van de oorspronkelijke indeling) en deze op te slaan in dezelfde map.
-   > **Opslaan als nieuw element:** Selecteer deze optie als u het element in een andere indeling wilt exporteren dan het origineel en het als nieuw element wilt opslaan in een willekeurige map.
+   > **sparen als Versie:** Deze eigenschap steunt het bewaren van één enkel middel slechts. Selecteer deze optie om de afbeelding als een nieuwe versie te exporteren (met behoud van de oorspronkelijke indeling) en deze op te slaan in dezelfde map.
+   > **sparen als Nieuw Activum:** selecteer deze optie om het middel in een verschillend formaat uit te voeren dan origineel en het te bewaren aan om het even welke omslag als nieuw middel.
    >  
    > **2. Voor meerdere pagina&#39;s**
    >
-   > **Opslaan als versie:** Deze functie ondersteunt het opslaan van slechts één element. Als u één pagina van veelvoudige pagina&#39;s wilt bewaren, selecteer deze optie om het middel in zijn originele formaat en plaats op te slaan.\
-   > **Opslaan als nieuw element:** Met deze optie exporteert u meerdere elementen of één element naar een willekeurige map en slaat u deze op als nieuwe elementen met hun bestandsindeling als origineel of anders.
+   > **sparen als Versie:** Deze eigenschap steunt het bewaren van één enkel middel slechts. Als u één pagina van veelvoudige pagina&#39;s wilt bewaren, selecteer deze optie om het middel in zijn originele formaat en plaats op te slaan.\
+   > **sparen als Nieuw Middel:** met deze optie, voert u of veelvoudige activa of één enkel middel naar om het even welke omslag uit en bewaart hen als nieuw(e) element(en) met hun dossierformaat als origineel of verschillend.
 
 1. In het dialoogvenster Opslaan:
-   1. Voer een naam in voor het bestand in het dialoogvenster **Opslaan als** veld.
+   1. Ga een naam voor het dossier op **sparen als** gebied in.
    1. Selecteer een doelmap.
    1. Optioneel: geef details op, zoals de naam van het project of de campagne, trefwoorden, kanalen, het tijdframe en het gebied.
-1. Klikken **Opslaan als versie** of **Opslaan als nieuw element** om de elementen op te slaan.
+1. Klik **sparen als versie** of **sparen als nieuw activa** om de activa (s) te bewaren.
 
 #### Beperkingen bij het bewerken van afbeeldingen in de Express Editor {#limitations-of-editing-images-in-the-express-editor}
 
@@ -122,18 +122,18 @@ Afbeeldingen bewerken met [!DNL Adobe Express] ingesloten editor, voert u de ond
 
 ### Nieuwe elementen maken met Adobe Express {#create-new-embedded-editor}
 
-[!DNL Assets view] kunt u een nieuwe sjabloon maken met [!DNL Adobe Express] ingesloten editor. Een nieuw element maken met [!DNL Adobe Express]Voer de volgende stappen uit:
+Met [!DNL Assets view] kunt u een geheel nieuwe sjabloon maken met de ingesloten editor van [!DNL Adobe Express] . Voer de volgende stappen uit om een nieuw element te maken met [!DNL Adobe Express] :
 
-1. Navigeren naar **[!UICONTROL My Workspace]** en klik op **[!UICONTROL Create]** in de Adobe Express-banner die bovenaan wordt weergegeven. [!DNL Adobe Express] leeg canvas wordt weergegeven in het dialoogvenster [!DNL Assets view] gebruikersinterface.
-1. Uw inhoud maken met [Sjablonen](https://helpx.adobe.com/in/express/using/work-with-templates.html). Anders navigeert u naar **[!UICONTROL Your Stuff]** bestaande inhoud wijzigen.
-1. Als u klaar bent met bewerken, klikt u op **[!UICONTROL Save]**.
-1. Doelpad opgeven voor het gemaakte element en klikken **[!UICONTROL Save as new asset]**.
+1. Navigeer naar **[!UICONTROL My Workspace]** en klik **[!UICONTROL Create]** in de Adobe Express-banner die boven aan het scherm wordt weergegeven. [!DNL Adobe Express] wordt een leeg canvas weergegeven in de gebruikersinterface van [!DNL Assets view] .
+1. Creeer uw inhoud gebruikend [ Malplaatjes ](https://helpx.adobe.com/in/express/using/work-with-templates.html). Navigeer anders naar **[!UICONTROL Your Stuff]** om bestaande inhoud te wijzigen.
+1. Klik op **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
+1. Geef het doelpad voor het gemaakte element op en klik op **[!UICONTROL Save as new asset]** .
 
 #### Beperkingen {#limitations}
 
-* U kunt alleen afbeeldingen wijzigen van `JPEG` en `PNG` opmaaktypen.
+* U kunt alleen afbeeldingen in `JPEG` - en `PNG` -indeling wijzigen.
 * De grootte van het element moet kleiner zijn dan 40 MB.
-* U kunt een afbeelding opslaan in `PDF`, `JPEG`, of `PNG` indelingen.
+* U kunt een afbeelding opslaan in `PDF` -, `JPEG` - of `PNG` -indeling.
 
 <!--
 ## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
@@ -195,13 +195,13 @@ TBD: Insert a video of the available social media options.
 
 ### Volgende stappen {#next-steps}
 
-* Feedback geven op het product met de [!UICONTROL Feedback] beschikbaar in de gebruikersinterface van de Assets-weergave.
+* Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave.
 
-* Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk.
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar.
 
-* Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
 
 >[!MORELIKETHIS]
 >
->* [Snelle acties in Adobe Express](https://helpx.adobe.com/in/express/using/resize-image.html)
->* [De versiegeschiedenis van een element weergeven](navigate-assets-view.md)
+>* [ Snelle acties in Adobe Express ](https://helpx.adobe.com/in/express/using/resize-image.html)
+>* [ de versiegeschiedenis van de Mening van activa ](navigate-assets-view.md)

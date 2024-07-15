@@ -12,7 +12,7 @@ ht-degree: 0%
 # Middelen downloaden van de Content Hub {#download-assets}
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
-![Elementen downloaden](assets/download-asset-genstudio.jpeg)
+![ de activa van de Download ](assets/download-asset-genstudio.jpeg)
 
 Met de Content Hub kunt u uw middelen downloaden en delen. Deze elementen kunnen afbeeldingen, video&#39;s of andere digitale inhoud bevatten. De Content Hub verbetert de toegankelijkheid en het aanpassingsvermogen voor een effectieve verdeling van activa.
 
@@ -20,11 +20,11 @@ U kunt één element of meerdere elementen downloaden met de Content Hub. De oor
 
 ## Vereisten {#prerequisites}
 
-[Content Hub-gebruikers](deploy-content-hub.md#onboard-content-hub-users) kan handelingen uitvoeren die in dit artikel worden genoemd.
+[ de gebruikers van Content Hub ](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
 
 ## Middelen downloaden {#download-single-asset}
 
 1. Selecteer de middelen die u wilt downloaden.
-   ![Eén middel downloaden](assets/download-assets-new.jpg)
+   ![ Download enige activa ](assets/download-assets-new.jpg)
 1. Klik op **[!UICONTROL Download]**. <br> U kunt ook op het downloadpictogram op de elementenkaart klikken om een element te downloaden.
 Alle elementen worden gedownload in de oorspronkelijke uitvoering.

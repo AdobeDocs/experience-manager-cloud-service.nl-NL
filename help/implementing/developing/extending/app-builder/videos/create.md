@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Uw eerste project instellen
 
-Leer de grondbeginselen van het creëren van uw eerste project App Builder.
+Leer de basisprincipes van het maken van je eerste App Builder-project.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
 
 ## De lokale ontwikkelomgeving instellen
 
-Leer hoe u uw lokale omgeving instelt voor ontwikkeling van App Builder.
+Leer hoe u uw lokale omgeving instelt voor App Builder-ontwikkeling.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
 

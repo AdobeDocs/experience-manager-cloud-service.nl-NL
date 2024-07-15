@@ -136,39 +136,39 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
    <td><p>Toegewezen aan de korte beschrijvingsbezit in AanpassingsVorm.</p> </td>
   </tr>
   <tr>
-   <td><p>bijschrift<em> (alle veldtypen)</em></p> </td>
+   <td><p>caption <em> (alle types van Gebied) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Titel in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> (alle veldtypen)</em></p> </td>
+   <td><p>displayFormat <em> (alle types van Gebied) </em></p> </td>
    <td><p>Toegewezen aan het weergavepatroon in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> (alle veldtypen)</em></p> </td>
+   <td><p>rawValue <em> (alle types van Gebied) </em></p> </td>
    <td><p>Toegewezen aan waarde-eigenschap in adaptief formulier.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (Keuzelijst, Selectievakje)</em></p> </td>
+   <td><p>items <em> (Keuzelijst, Selectievakje) </em></p> </td>
    <td><p>Eigenschap toegewezen aan opties in adaptief formulier. U kunt deze negeren met de expressie Opties.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (Tekstveld)</em></p> </td>
+   <td><p>maxChar <em> (het Gebied van de Tekst) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Maximum aantal tekens toegestaan in Adaptief formulier.</p> </td>
   </tr>
   <tr>
-   <td><p>multiline<em> (Tekstveld)</em></p> </td>
+   <td><p>multiline <em> (het Gebied van de Tekst) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Meerdere regels toestaan in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (Numeriek veld, decimaal veld)</em></p> </td>
+   <td><p>fracDigit <em> (Numeriek Gebied, Decimaal Gebied) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Frac digits in Adaptief formulier.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (Numeriek veld, decimaal veld)</em></p> </td>
+   <td><p>leadDigit <em> (Numeriek Gebied, Decimaal Gebied) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Lead digits in Adaptive Form.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Keuzelijst)</em></p> </td>
+   <td><p>multiSelect <em> (Keuzelijst) </em></p> </td>
    <td><p>Toegewezen aan de eigenschap Meerdere selecties toestaan in adaptieve vorm.</p> </td>
   </tr>
  </tbody>

@@ -1,6 +1,6 @@
 ---
 title: Uw code implementeren
-description: Leer hoe u uw code implementeert met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
+description: Leer hoe u uw code implementeert met Cloud Manager-pijpleidingen in AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # Uw code implementeren {#deploy-your-code}
 
-Leer hoe u uw code implementeert in Production met gebruik van Cloud Manager-pijpleidingen in AEM as a Cloud Service.
+Leer hoe u uw code kunt implementeren in Production met Cloud Manager-pijpleidingen in AEM as a Cloud Service.
 
-![Productiepijpdiagram](./assets/configure-pipeline/production-pipeline-diagram.png)
+![ het pijpleidingsdiagram van de Productie ](./assets/configure-pipeline/production-pipeline-diagram.png)
 
 Het naadloos opstellen van code aan Stadium en dan door aan Productie wordt gedaan via een pijpleiding van de Productie. De uitvoering van de productiepijplijn wordt opgedeeld in twee logische fasen.
 
@@ -26,23 +26,23 @@ Het naadloos opstellen van code aan Stadium en dan door aan Productie wordt geda
 1. Implementatie in productieomgeving
    * Zodra de bouw op Stadium wordt bevestigd, en voor bevordering aan Productie goedgekeurd, wordt het zelfde bouwstijlfeit opgesteld aan het milieu van de Productie.
 
-_Slechts steunt het Volledige type van de pijpleiding van de Code van de Stapel coderingsaftasten, functie het testen, UI het testen, en ervaringscontrole._
+_slechts steunt het Volledige pijpleidingstype van de Code van de Stapel coderingsaftasten, functie het testen, UI het testen, en ervaringscontrole._
 
-## Uw code implementeren met Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
+## Je code implementeren met Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-Als u eenmaal [Uw productiepijpleiding geconfigureerd](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) Met inbegrip van bewaarplaats, milieu, en het testen milieu, bent u bereid om uw code op te stellen.
+Zodra u [ uw productiePijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) met inbegrip van bewaarplaats, milieu, en het testen milieu hebt gevormd, bent u bereid om uw code op te stellen.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** tikt of klikt u op het programma waarvoor u code wilt implementeren.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, ontvang of klik het programma waarvoor u code wilt opstellen.
 
-1. Klikken **Implementeren** van de oproep tot actie op de **Overzicht** scherm om het implementatieproces te starten.
+1. Klik **opstellen** van vraag-aan-actie op het **scherm van het Overzicht** om het plaatsingsproces te beginnen.
 
-   ![CTA](assets/deploy-code1.png)
+   ![ CTA ](assets/deploy-code1.png)
 
-1. De **Uitvoering pijpleiding** schermweergaven. Klikken **Opbouwen** om het proces te starten.
+1. De **het schermvertoningen van de Uitvoering van de Pijpleiding**. Klik **bouwen** om het proces te beginnen.
 
-   ![Uitvoerscherm pijpleiding](assets/deploy-code2.png)
+   ![ het scherm van de Uitvoering van de Pijpleiding ](assets/deploy-code2.png)
 
 Het bouwstijlproces stelt uw code door drie fasen op.
 
@@ -56,39 +56,39 @@ Het bouwstijlproces stelt uw code door drie fasen op.
 
 ## Implementatiefase werkgebied {#stage-deployment}
 
-De **Werkgebiedimplementatie** fase. Deze stappen worden uitgevoerd.
+De **fase van de Plaatsing van het Stadium**. Deze stappen worden uitgevoerd.
 
-* **Validatie**  - Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken. bijvoorbeeld, het testen dat de gevormde tak bestaat en dat de milieu&#39;s beschikbaar zijn.
-* **Testen van build en eenheid** - Met deze stap wordt een inperkt buildproces uitgevoerd.
-   * Zie [Omgevingsdetails samenstellen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) voor meer informatie over de ontwikkelomgeving.
-* **Codescannen** - Deze stap evalueert de kwaliteit van uw toepassingscode.
-   * Zie [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md) voor meer informatie over het testproces.
-* **Afbeeldingen samenstellen** - Dit proces is verantwoordelijk voor het transformeren van de inhoud en de verzendingspakketten die door de bouwstijlstap worden geproduceerd in de beelden van Docker en configuraties Kubernetes.
-* **Distribueren naar werkgebied** - Het image wordt geïmplementeerd in de testomgeving ter voorbereiding op de [Testfase werkgebied.](#stage-testing)
+* **Bevestiging** - Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken. bijvoorbeeld, het testen dat de gevormde tak bestaat en dat de milieu&#39;s beschikbaar zijn.
+* **Bouwstijl &amp; het Testen van de Eenheid** - Deze stap stelt een inperkt bouwstijlproces in werking.
+   * Zie [ de Details van het Milieu van de Bouwstijl ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) voor details op het bouwstijlmilieu.
+* **Scannen van de Code** - Deze stap evalueert de kwaliteit van uw toepassingscode.
+   * Zie [ het Testen van de Kwaliteit van de Code ](/help/implementing/cloud-manager/code-quality-testing.md) voor details op het het testen proces.
+* **bouwt Beelden** - Dit proces is verantwoordelijk voor het transformeren van de inhoud en de dispatcherpakketten die door de bouwstijlstap in de beelden van het Docker en configuraties Kubernetes worden geproduceerd.
+* **opstellen aan Stadium** - het beeld wordt opgesteld aan het opvoeren milieu in voorbereiding op het [ het testen van het Stadium stadium.](#stage-testing)
 
-![Werkgebiedimplementatie](assets/stage-deployment.png)
+![ Plaatsing van het Stadium ](assets/stage-deployment.png)
 
 ## Testfase werkgebied {#stage-testing}
 
-De **Werkgebied testen** Deze stappen worden in de fase beschreven.
+De **testende 1} fase van het Stadium {impliceert deze stappen.**
 
-* **Functioneel testen van producten** - De pijplijn van de Manager van de Wolk voert tests uit die tegen het werkgebiedmilieu lopen.
-   * Zie [Functioneel testen van producten](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) voor meer informatie .
+* **Functionele het Testen van het Product** - de pijpleiding van Cloud Manager voert tests uit die tegen het werkgebiedmilieu lopen.
+   * Zie [ Functionele het Testen van het Product ](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) voor meer details.
 
-* **Aangepaste functionele tests** - Deze stap in de pijplijn wordt altijd uitgevoerd en kan niet worden overgeslagen. Als er geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.
-   * Zie [Aangepaste functionele tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) voor meer informatie .
+* **het Functionele Testen van de Douane** - Deze stap in de pijpleiding wordt altijd uitgevoerd en kan niet worden overgeslagen. Als er geen test-JAR wordt geproduceerd door de constructie, slaagt de test standaard.
+   * Zie [ het Functionele Testen van de Douane ](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) voor meer details.
 
-* **Aangepaste UI-tests** - Deze stap is een optionele functie waarmee automatisch UI-tests worden uitgevoerd die voor aangepaste toepassingen zijn gemaakt.
+* **het Testen van de Douane UI** - Deze stap is een facultatieve eigenschap die de tests van UI automatisch in werking stellen die voor douanetoepassingen worden gecreeerd.
    * De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd).
-   * Zie [Aangepaste UI-tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) voor meer informatie .
+   * Zie [ het Testen van UI van de Douane ](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) voor meer details.
 
-* **Experience Audit** - Deze stap in de pijplijn wordt altijd uitgevoerd en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen.
+* **Controle van de Ervaring** - Deze stap in de pijpleiding wordt altijd uitgevoerd en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen.
    * De pagina&#39;s die worden gevormd worden voorgelegd aan de dienst en geëvalueerd.
    * De resultaten zijn informatief en tonen de scores en de verandering tussen de huidige en vorige scores.
    * Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing wordt geïntroduceerd.
-   * Zie [De resultaten van Experience Audit begrijpen](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie .
+   * Zie [ Begrijpend de resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer details.
 
-![Werkgebiedtests](assets/stage-testing.png)
+![ het Testen van het Stadium ](assets/stage-testing.png)
 
 ## Implementatiefase productie {#production-deployment}
 
@@ -106,7 +106,7 @@ Productieimplementaties volgen doorgaans dezelfde stappen als eerder beschreven,
 
 Dit proces gaat verder tot de plaatsing alle uitgevers en verzenders in de topologie heeft bereikt.
 
-![Implementatiefase productie](assets/production-deployment.png)
+![ De fase van de Plaatsing van de Productie ](assets/production-deployment.png)
 
 ## Tijdstippen {#timeouts}
 
@@ -123,11 +123,11 @@ Er wordt een time-out toegepast in de volgende stappen als er op feedback van ge
 
 ## Implementatieproces {#deployment-process}
 
-Alle plaatsingen van de Cloud Service volgen een het rollen proces om nul onderbreking te verzekeren. Zie [Hoe de Rolling Inzet werkt](/help/implementing/deploying/overview.md#how-rolling-deployments-work) voor meer informatie.
+Alle plaatsingen van de Cloud Service volgen een het rollen proces om nul onderbreking te verzekeren. Zie [ hoe het Rollen het Werk van Plaatsingen ](/help/implementing/deploying/overview.md#how-rolling-deployments-work) om meer te leren.
 
 >[!NOTE]
 >
->Het cachegeheugen van de Dispatcher wordt bij elke implementatie gewist. Het wordt dan opgewarmd alvorens de nieuwe publicatieknooppunten verkeer goedkeuren.
+>De Dispatcher-cache wordt bij elke implementatie gewist. Het wordt dan opgewarmd alvorens de nieuwe publicatieknooppunten verkeer goedkeuren.
 
 ## Het opnieuw uitvoeren van een Plaatsing van de Productie {#reexecute-deployment}
 
@@ -137,9 +137,9 @@ In zeldzame gevallen kunnen de stappen van de productielocatie om voorbijgaande 
 1. De bouwstijlstap - in de context van een heruitvoering, kopieert de bouwstijlstap artefacten en voert eigenlijk geen nieuw bouwstijlproces uit.
 1. De stap van de productieleiding - dit gebruikt de zelfde configuratie en de opties zoals de stap van de productieleiding in een normale pijpleidingsuitvoering.
 
-In dergelijke omstandigheden waarin een wederuitvoering mogelijk is, biedt de statuspagina van de productiepijpleiding de **Opnieuw uitvoeren** naast de gebruikelijke **Buildlog downloaden** -optie.
+In dergelijke omstandigheden waar een heruitvoering mogelijk is, verstrekt de pagina van de de statuspagina van de productiepijpleiding **re-execute** optie naast de gebruikelijke **Download bouwt logboek** optie.
 
-![De optie Opnieuw uitvoeren in het venster Overzicht van de pijplijn](assets/re-execute.png)
+![ re-execute optie in het venster van het pijpleidingsoverzicht ](assets/re-execute.png)
 
 >[!NOTE]
 >
@@ -154,11 +154,11 @@ In dergelijke omstandigheden waarin een wederuitvoering mogelijk is, biedt de st
 
 ### API opnieuw uitvoeren {#reexecute-API}
 
-U kunt niet alleen gebruikmaken van de interface, maar ook van [De API voor Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) om wederuitvoeringen in gang te zetten en executies te identificeren die als wederuitvoeringen werden teweeggebracht.
+Naast het zijn beschikbaar in UI, kunt u [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) gebruiken om wederuitvoeringen teweeg te brengen en uitvoeringen te identificeren die als re-uitvoeringen werden teweeggebracht.
 
 #### Een nieuwe uitvoering activeren {#reexecute-deployment-api}
 
-Om een re-uitvoering teweeg te brengen, doe een verzoek van de PUT aan de Verbinding van de HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` op de productie opstellen stapstaat.
+Om een re-uitvoering teweeg te brengen, doe een verzoek van de PUT aan de Verbinding van de HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` op de productie opstelt stapstaat.
 
 * Als deze koppeling aanwezig is, kan de uitvoering vanaf die stap opnieuw worden gestart.
 * Als dit niet het geval is, kan de uitvoering niet vanaf die stap opnieuw worden gestart.
@@ -206,4 +206,4 @@ Het voorleggen van een verzoek van de PUT aan dit eindpunt resulteert in een 201
 
 #### Een opnieuw uitgevoerde uitvoering identificeren {#identify-reexecution}
 
-Herhaalde uitvoeringen kunnen worden geïdentificeerd door de waarde `RE_EXECUTE` in de `trigger` veld.
+Herhaalde uitvoeringen kunnen worden geïdentificeerd door de waarde `RE_EXECUTE` in het veld `trigger` .

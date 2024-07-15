@@ -22,17 +22,17 @@ De capaciteit om inhoud te schrappen is krachtig, maar potentieel gevoelig, met 
 
 Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud op twee niveaus worden overwogen:
 
-1. **Het inhoudsfragment als één entiteit.**
+1. **het Fragment van de Inhoud als één enkele entiteit.**
 
-   * **Hoofdletters gebruiken**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken - **en verwijder een volledig fragment**.
-   * **Machtigingen**: De machtiging Verwijderen kan worden toegewezen via gebruikers- en/of groepsbeheer.
+   * **Geval van het Gebruik**: Een gebruiker die/een Fragment van de Inhoud moet uitgeven bijwerken - **en een volledig fragment** schrappen.
+   * **Toestemmingen**: De toestemming van de Schrapping kan door Gebruiker en/of het Beheer van de Groep worden toegewezen.
 
-2. **De meerdere subentiteiten waaruit een inhoudsfragment bestaat, bijvoorbeeld variaties en subknooppunten.**
+2. **de veelvoudige subentities die omhoog een Fragment van de Inhoud maken; bijvoorbeeld, variaties, subnodes.**
 
    Voor de basisbewerking van de editor voor inhoudsfragmenten moeten dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties, ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
-   * **Hoofdletters gebruiken**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken - **zonder dat een volledig fragment mag worden verwijderd**.
-   * **Machtigingen**: Zie [Machtigingen alleen vereist voor Editor-functionaliteit](#permissions-required-for-editor-functionality-only).
+   * **Geval van het Gebruik**: Een gebruiker die een Fragment van de Inhoud moet uitgeven/bijwerken - **zonder het worden toegestaan om een volledig fragment** te schrappen.
+   * **Toestemmingen**: Zie [ Toestemmingen die voor de Functionaliteit van de Redacteur slechts ](#permissions-required-for-editor-functionality-only) worden vereist.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
 
 ## Machtigingen alleen vereist voor Editor-functionaliteit {#permissions-required-for-editor-functionality-only}
 
-Voor gebruikers die een inhoudsfragment moeten bewerken/bijwerken, **zonder dat ze een volledig fragment mogen verwijderen**, moeten specifieke machtigingen worden toegewezen, aangezien voor de basisbewerking van de Content Fragment-editor is vereist dat tijdelijke subelementen kunnen worden verwijderd.
+Voor gebruikers die een Fragment van de Inhoud uitgeven/moeten bijwerken, **zonder hen toe te staan om een volledig fragment** te schrappen, moeten de specifieke toestemmingen worden toegewezen, aangezien de basisverrichting van de redacteur van het Fragment van de Inhoud vereist dat de voorbijgaande subelementen kunnen worden geschrapt.
 
 Bijvoorbeeld bij het manipuleren van variaties, ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
@@ -56,9 +56,9 @@ Bijvoorbeeld een map waarin alle inhoudsfragmenten staan, zoals:
 
 >[!CAUTION]
 >
->Machtigingen instellen op `/content/dam` is ook mogelijk, omdat alle inhoudsfragmenten hier worden opgeslagen.
+>Het is ook mogelijk de machtigingen voor `/content/dam` in te stellen, aangezien alle inhoudsfragmenten hier worden opgeslagen.
 >
->Deze handeling past echter dezelfde verwijdermachtigingen toe op *alles* ook andere soorten activa.
+>Nochtans past deze actie de zelfde schrappingstoestemmingen op *alle* andere activa types eveneens toe.
 
 De voorwaarde voor machtigingen om een bepaalde gebruiker en/of groep toe te staan een inhoudsfragment te bewerken/bijwerken is:
 
@@ -70,10 +70,10 @@ De voorwaarde voor machtigingen om een bepaalde gebruiker en/of groep toe te sta
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* Voor de `jcr:content`knooppunt van alle inhoudsfragmenten:
+* Voor de `jcr:content` knoop van alle Fragmenten van de Inhoud:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`, en `jcr:removeChildNodes`
+   * `jcr:addChildNodes` , `jcr:modifyProperties` en `jcr:removeChildNodes`
 
-* Voor alle onderstaande knooppunten `jcr:content` van alle inhoudsfragmenten:
+* Voor alle knooppunten onder `jcr:content` van alle inhoudsfragmenten:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`, en `jcr:removeChildNodes`, `jcr:removeNode`
+   * `jcr:addChildNodes` , `jcr:modifyProperties` en `jcr:removeChildNodes` , `jcr:removeNode`

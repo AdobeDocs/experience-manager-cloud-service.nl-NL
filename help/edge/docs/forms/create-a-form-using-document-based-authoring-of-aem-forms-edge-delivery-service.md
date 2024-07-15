@@ -1,6 +1,6 @@
 ---
-title: Een formulier maken met op documenten gebaseerde authoring voor AEM Forms Edge Delivery Service
-description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery + doc-based authoring = razendsnelheid en SEO-vriendelijke formulieren voor gelukkige gebruikers en zoekmachines.
+title: Een formulier maken met op documenten gebaseerde ontwerpen voor AEM Forms Edge Delivery Service
+description: Creëer snelle perfecte formulieren! ⚡ AEM Forms Edge Delivery + documentgebaseerde authoring = ultrahoge snelheid en SEO-vriendelijke formulieren voor gelukkige gebruikers en zoekmachines.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
@@ -12,9 +12,9 @@ ht-degree: 0%
 ---
 
 
-# Een formulier maken met op documenten gebaseerde authoring voor AEM Forms Edge Delivery Service
+# Een formulier maken met op documenten gebaseerde ontwerpen voor AEM Forms Edge Delivery Service
 
-In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. Met de documentgebaseerde authoring van AEM Forms Edge Delivery kunt u formulieren maken met vertrouwde gereedschappen, zoals Word of Google Docs. Met deze formulieren worden gegevens rechtstreeks verzonden naar een Microsoft Excel- of Google Sheets-bestand, zodat u levendige ecosystemen en krachtige API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om verzonden gegevens gemakkelijk te verwerken of een bestaande zakelijke workflow te starten.
+In het huidige digitale tijdperk is het van essentieel belang gebruikersvriendelijke formulieren te maken voor elke organisatie. In AEM Forms Edge Delivery kunt u op documenten gebaseerde ontwerpen maken met behulp van vertrouwde gereedschappen, zoals Word of Google Docs. Deze formulieren verzenden gegevens rechtstreeks naar een Microsoft Excel- of Google-bladbestand, zodat u levendige ecosystemen en robuuste API&#39;s van Google Sheets, Microsoft Excel en Microsoft Sharepoint kunt gebruiken om ingediende gegevens gemakkelijk te verwerken of een bestaande bedrijfsworkflow te starten.
 
 Deze gids begeleidt u door:
 
@@ -30,7 +30,7 @@ Of je nu een beginner of een pro bent, deze gids geeft je de mogelijkheid om pra
 
 ## De spreadsheet voorbereiden voor het ontvangen van gegevens
 
-1. Maak overal onder uw AEM Edge Delivery-projectdirectory een Microsoft Excel-werkboek of Google-werkblad op Microsoft OneDrive of Google Drive. Dit document gebruikt een Google-werkblad met de naam `contact-us.xlsx`, die zich aan de basis van een Adobe Experience Manager-project (AEM) bevinden.
+1. Maak een Microsoft Excel-werkboek of Google-werkblad onder uw AEM Edge Delivery-projectmap op Microsoft OneDrive of Google Drive. In dit document wordt een Google-werkblad met de naam `contact-us.xlsx` gebruikt, dat zich bevindt in de hoofdmap van een Adobe Experience Manager-project (AEM).
 
 1. Zorg ervoor dat de AEM gebruiker (bijvoorbeeld helix@adobe.com) die voor uw project is geconfigureerd, bewerkingsmachtigingen voor het werkblad heeft.
 
@@ -48,11 +48,11 @@ Of je nu een beginner of een pro bent, deze gids geeft je de mogelijkheid om pra
 
 1. Bereid het blad door kopballen toe te voegen die de gegevens aanpassen u in zet. In het volgende voorbeeld worden velden voor een formulier &quot;contact-us&quot; weergegeven:
 
-   ![Velden voor een formulier met contactgegevens](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+   ![ Gebieden voor een contact-usvorm ](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
    U kunt dit handmatig doen of door een aanvraag van een POST in te dienen op de formulierroute in de AEM Admin-service. De admindienst zal de gegevens in het lichaam van de POST onderzoeken en zal de aangewezen kopballen, lijsten, en bladen produceren nodig om gegevens effectief in te voeren en de optimaal van de vormdienst te maken.
 
-   Als u wilt weten hoe u de aanvraag van de POST voor het instellen van uw werkblad opmaakt, raadpleegt u de [Admin API-documentatie](https://www.hlx.live/docs/admin.html#tag/form). Kijk ook naar het onderstaande voorbeeld:
+   Om te begrijpen hoe te om het verzoek van de POST voor vestiging uw blad te formatteren, verwijs naar de [ Admin API documentatie ](https://www.hlx.live/docs/admin.html#tag/form). Kijk ook naar het onderstaande voorbeeld:
 
    **Verzoek**
 
@@ -74,7 +74,7 @@ Of je nu een beginner of een pro bent, deze gids geeft je de mogelijkheid om pra
    }'
    ```
 
-   **Antwoord**
+   **Reactie**
 
    ```JSON
    HTTP/2 200 
@@ -116,7 +116,7 @@ Of je nu een beginner of een pro bent, deze gids geeft je de mogelijkheid om pra
 
 Het bovenstaande verzoek om POST bevat voorbeeldgegevens, waaronder zowel formuliervelden als de bijbehorende samplewaarden. Deze gegevens worden door de beheerservice gebruikt om het formulier in te stellen.
 
-Als u de koppen handmatig wilt maken, raadpleegt u het document met de naam [Handmatige Forms-bladinstellingen](https://www.hlx.live/docs/manual-forms-sheet-setup).
+Terwijl de dienst Admin adviseerde om uw blad te vormen, als u verkiest om de kopballen manueel tot stand te brengen, verwijs naar het document genoemd [ Handmatige Opstelling van het Blad van Forms ](https://www.hlx.live/docs/manual-forms-sheet-setup).
 
 Op het voorleggen van het verzoek van de POST aan de admin dienst, zult u de volgende veranderingen in uw werkboek waarnemen:
 
@@ -209,7 +209,8 @@ Er zijn een aantal verschillende manieren waarop u de formuliergegevens in de ho
       }
   ```
 
-* `x-www-form-urlencoded` body (`content-type` header moet worden ingesteld op `application/x-www-form-urlencoded`) &#39;firstname=bruce&amp;lastname=banner&amp;email=bruce%40example.com&#39;
+* `x-www-form-urlencoded` body (`content-type` header must be set to `application/x-www-form-urlencoded` )
+&#39;firstname=bruce&amp;lastname=banner&amp;email=bruce%40example.com&#39;
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Structuuromvang van inhoudsfragment (elementen - inhoudsfragmenten)
+title: Structuuromvang van inhoudsfragment (Assets - Inhoudsfragmenten)
 description: Gebruik de functie Structuur van de Content Fragment Editor in AEM om uw inhoud zonder kop beter te begrijpen.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 feature: Content Fragments
@@ -18,13 +18,13 @@ Gebruik de functie Structuur van de Content Fragment Editor in AEM om de inhoud 
 
 >[!NOTE]
 >
->Inhoudsfragmenten zijn een functie Sites, maar worden opgeslagen als **Activa**.
+>De Fragmenten van de inhoud zijn een eigenschap van Plaatsen, maar worden opgeslagen als **Assets**.
 >
->Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. In deze sectie wordt de oorspronkelijke editor beschreven, die voornamelijk wordt geopend vanuit de **Activa** console. Zie de documentatie van Plaatsen, [Inhoudsfragmenten - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), voor meer informatie over de nieuwe editor (die voornamelijk wordt benaderd vanuit de **Inhoudsfragmenten** console).
+>Er zijn twee editors voor het ontwerpen van inhoudsfragmenten. Deze sectie behandelt de originele redacteur, hoofdzakelijk die van de **wordt betreden Assets** console. Zie de documentatie van Plaatsen, [ de Fragmenten van de Inhoud - Authoring ](/help/sites-cloud/administering/content-fragments/authoring.md), voor details van de nieuwe redacteur (hoofdzakelijk betreden van de **3} console van de Fragmenten van de Inhoud {).**
 
 In de Inhoudsfragmenteditor kunt u het pictogram van de boomstructuur selecteren:
 
-![Structuuromvang van inhoudsfragment in zijpaneel](assets/cfm-structuretree-01.png)
+![ de Boom van de Structuur van het Fragment van de Inhoud in zijpaneel ](assets/cfm-structuretree-01.png)
 
 Hiermee wordt een representatie van de structuur van het fragment geopend in het linkerdeelvenster. Hiermee kunt u navigeren door fragmenten waarnaar wordt verwezen en naar fragmenten. Als u een verwijzing selecteert, wordt dat fragment geopend voor bewerking.
 
@@ -32,4 +32,4 @@ Hiermee wordt een representatie van de structuur van het fragment geopend in het
 >
 >Met de broodkruimels in het hoofddeelvenster kunt u terugnavigeren naar het beginpunt.
 
-![Voorbeeld van de structuurstructuur van het inhoudsfragment](assets/cfm-structuretree-02.png)
+![ Voorbeeld van de Structuur van het Fragment van de Inhoud ](assets/cfm-structuretree-02.png)

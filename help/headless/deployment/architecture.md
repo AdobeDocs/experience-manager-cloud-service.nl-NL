@@ -15,37 +15,37 @@ ht-degree: 0%
 
 Een typische AEM omgeving bestaat uit een Auteur Service, Publish Service en een optionele Voorvertoningsservice.
 
-* **De service Auteur** In dit deelvenster kunnen interne gebruikers inhoud maken, beheren en voorvertonen.
+* **de dienst van de Auteur** is waar de interne gebruikers, inhoud creëren leiden en voorproef.
 
-* **De service Publiceren** wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen eindgebruikers. Inhoud wordt na bewerking en goedkeuring in de service Auteur gedistribueerd naar de service Publiceren. Het gemeenschappelijkste plaatsingspatroon met AEM hoofdloze toepassingen moet de productieversie van de toepassing hebben met de AEM publicatieservice verbinden.
+* **de dienst van Publish** wordt beschouwd als het &quot;Levende&quot;milieu en is typisch wat eind - gebruikers met in wisselwerking staan. Inhoud wordt na bewerking en goedkeuring op de service Auteur gedistribueerd naar de Publish-service. Het meest gangbare implementatiepatroon met AEM toepassingen zonder kop is dat de productieversie van de toepassing verbinding maakt met een AEM Publish-service.
 
-* **De service Voorvertoning** is functioneel gelijk aan **Publish Service**. Het wordt echter alleen ter beschikking gesteld van interne gebruikers. Hierdoor is het een ideaal systeem voor fiatteurs om aanstaande wijzigingen in de inhoud te controleren voordat deze live voor eindgebruikers worden gemaakt.
+* **de dienst van de Voorproef** is functioneel het zelfde als de **Dienst van Publish**. Het wordt echter alleen ter beschikking gesteld van interne gebruikers. Hierdoor is het een ideaal systeem voor fiatteurs om aanstaande wijzigingen in de inhoud te controleren voordat deze live voor eindgebruikers worden gemaakt.
 
-* **De verzender** is een statische webserver die is uitgebreid met de AEM dispatchermodule. Het verstrekt caching mogelijkheden en een andere laag van veiligheid. De **Dispatcher** voor de **Publiceren** en **Voorvertoning** diensten.
+* **Dispatcher** is een statische Webserver die met de AEM verzender module wordt uitgebreid. Het verstrekt caching mogelijkheden en een andere laag van veiligheid. De **Dispatcher** zit vóór de **Publish** en **Voorproef** diensten.
 
-Binnen een AEM as a Cloud Service Programma kunt u veelvoudige milieu&#39;s, Dev, Stadium en Prod hebben. Elke omgeving zou een eigen unieke omgeving hebben **Auteur**, **Publiceren**, en **Voorvertoning** diensten. Meer informatie over het beheren [omgevingen hier](/help/implementing/cloud-manager/manage-environments.md)
+Binnen een AEM as a Cloud Service-programma kunt u meerdere omgevingen hebben: Dev, Stage en Prod. Elk milieu zou zijn eigen unieke **Auteur**, **Publish**, en **Voorproef** diensten hebben. U kunt meer leren over het beheren van [ milieu&#39;s hier ](/help/implementing/cloud-manager/manage-environments.md)
 
 ## Publish-model auteur
 
-Het gemeenschappelijkste plaatsingspatroon met AEM hoofdloze toepassingen moet de productieversie van de toepassing hebben met de AEM publicatieservice verbinden.
+Het meest gangbare implementatiepatroon met AEM toepassingen zonder kop is dat de productieversie van de toepassing verbinding maakt met een AEM Publish-service.
 
-![Publish-architectuur van auteur](assets/autho-publish-architecture-diagram.png)
+![ de Architectuur van Publish van de Auteur ](assets/autho-publish-architecture-diagram.png)
 
 Het diagram hierboven toont dit gemeenschappelijke plaatsingspatroon.
 
-1. A **Inhoudsauteur** gebruikt de AEM Auteur-service om inhoud te maken, te bewerken en te beheren.
-1. De **Inhoudsauteur** en andere interne gebruikers kunnen de inhoud rechtstreeks op de service Auteur voorvertonen. Er kan een voorvertoningsversie van de toepassing worden ingesteld die verbinding maakt met de service Auteur.
+1. A **de auteur van de Inhoud** gebruikt de AEM dienst van de Auteur om, inhoud tot stand te brengen uit te geven en te beheren.
+1. De **auteur van de Inhoud** en andere interne gebruikers kunnen de inhoud op de dienst van de Auteur direct voorproef. Er kan een voorvertoningsversie van de toepassing worden ingesteld die verbinding maakt met de service Auteur.
 1. Nadat de inhoud is goedgekeurd, kan deze worden gepubliceerd naar de AEM Publish-service.
-1. De **Dispatcher** is een laag voor de **Publiceren** de dienst die bepaalde verzoeken in het voorgeheugen onderbrengen en een laag van veiligheid verstrekt.
+1. **Dispatcher** is een laag voor de **Publish** dienst die bepaalde verzoeken in het voorgeheugen onderbrengen en een laag van veiligheid verstrekt.
 1. Eindgebruikers hebben interactie met de productieversie van de toepassing. De productietoepassing maakt verbinding met de Publish-service via de Dispatcher en gebruikt de GraphQL API&#39;s om inhoud aan te vragen en te gebruiken.
 
 ## Publish-implementatie voor voorvertoning van auteur
 
-Een andere optie voor headless plaatsingen is een **Voorvertoning AEM** service. Met deze aanpak kan inhoud eerst worden gepubliceerd op de **Voorvertoning** en een voorvertoningsversie van de toepassing zonder kop kan hiermee verbinding maken. Het voordeel van deze aanpak is dat **Voorvertoning** de dienst kan opstelling met de zelfde authentificatievereisten en toestemmingen zoals **Publiceren** , waardoor het gemakkelijker wordt om de produktie-ervaring te simuleren.
+Een andere optie voor hoofdloze plaatsingen is een **AEM de dienst van de Voorproef** op te nemen. Met deze benadering kan de inhoud eerst aan de **dienst van de Voorproef** worden gepubliceerd en een voorproefversie van de hoofdloze toepassing kan met het verbinden. Het voordeel met deze benadering is dat de **dienst van de Voorproef** opstelling met de zelfde authentificatievereisten en toestemmingen zoals de **Publish** dienst kan zijn, makend het gemakkelijker om de productieervaring te simuleren.
 
-![Authorvoorvertoning en Publish-architectuur](assets/author-preview-publish-architecture-diagram.png)
+![ de Architectuur van de Voorproef van de Auteur en van Publish ](assets/author-preview-publish-architecture-diagram.png)
 
-1. A **Inhoudsauteur** gebruikt de AEM Auteur-service om inhoud te maken, te bewerken en te beheren.
+1. A **de auteur van de Inhoud** gebruikt de AEM dienst van de Auteur om, inhoud tot stand te brengen uit te geven en te beheren.
 1. Inhoud wordt eerst gepubliceerd naar de service AEM.
 1. Er kan een voorvertoningsversie van de toepassing worden ingesteld die verbinding maakt met de service Voorvertoning.
 1. Nadat de inhoud is gecontroleerd en goedgekeurd, kan deze worden gepubliceerd naar de service AEM Publish.

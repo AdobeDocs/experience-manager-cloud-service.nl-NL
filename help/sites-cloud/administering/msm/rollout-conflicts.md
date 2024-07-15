@@ -32,7 +32,7 @@ Naast de standaardfunctionaliteit, kunnen de aangepaste conflicthandlers worden 
 
 ### Voorbeeldscenario {#example-scenario}
 
-In de volgende secties, een voorbeeld van een nieuwe pagina `b` wordt gebruikt en gemaakt in zowel de blauwdruk als de vertakking Live kopie (handmatig gemaakt) om de verschillende methoden voor het oplossen van conflicten te illustreren:
+In de volgende secties wordt een voorbeeld van een nieuwe pagina `b` gebruikt, die in zowel de blauwdruk als de (manueel gemaakte) vertakking Live Copy is gemaakt, om de verschillende methoden voor conflictoplossing te illustreren:
 
 * blauwdruk: `/b`
 
@@ -40,26 +40,26 @@ In de volgende secties, een voorbeeld van een nieuwe pagina `b` wordt gebruikt e
 
 * Live kopie: `/b`
 
-  Een pagina die handmatig in de vertakking Live kopie is gemaakt met één onderliggende pagina, `lc-level-1`
+  Een pagina die handmatig is gemaakt in de vertakking Live kopie met één onderliggende pagina, `lc-level-1`
 
-   * Geactiveerd bij publiceren als `/b`, samen met de onderliggende pagina
+   * Geactiveerd bij publicatie als `/b` , samen met de onderliggende pagina
 
 #### Voor rollout {#before-rollout}
 
-|  | Vervagen voor rollout | Actieve kopie voor rollout | Publiceren vóór rollout |
+|  | Vervagen voor rollout | Actieve kopie voor rollout | Publish Voor rollout |
 |---|---|---|---|
 | Waarde | `b` | `b` | `b` |
 | Opmerking | Gemaakt in vertakking Vervagen, klaar voor rollout | Handmatig gemaakt in de vertakking Live kopie | Bevat de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie |
 | Waarde | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
-| Opmerking |  | Handmatig gemaakt in de vertakking Live kopie | bevat de inhoud van de pagina `child-level-1` die handmatig is gemaakt in de vertakking Live kopie |
+| Opmerking |  | Handmatig gemaakt in de vertakking Live kopie | bevat de inhoud van de pagina `child-level-1` die handmatig is gemaakt in de vertakking Live kopie. |
 
 ## Rolloutbeheer en Conflict-verwerking {#rollout-manager-and-conflict-handling}
 
 Met de rollout Manager kunt u conflictbeheer activeren of deactiveren.
 
-Dit gebeurt met [OSGi-configuratie](/help/implementing/deploying/configuring-osgi.md) van **Day CQ WCM-implementatiebeheer**. De waarde instellen **Conflict met handmatig gemaakte pagina&#39;s afhandelen** ( `rolloutmgr.conflicthandling.enabled`) wordt ingesteld op true als de rollout manager conflicten moet verwerken met een pagina die is gemaakt in Live Copy met een naam die voorkomt in de blauwdruk.
+Dit wordt gedaan gebruikend [ configuratie OSGi ](/help/implementing/deploying/configuring-osgi.md) van **de Manager van de Uitvoer van CQ WCM van de Dag**. Plaats het van de waarde{**handvat conflict met manueel gecreeerde Pagina&#39;s** ( `rolloutmgr.conflicthandling.enabled`) aan waar als de rollout manager conflicten van een pagina zou moeten behandelen die in Levend Exemplaar met een naam wordt gecreeerd die in de blauwdruk bestaat.
 
-AEM heeft [vooraf gedefinieerd gedrag wanneer conflictbeheer is gedeactiveerd.](#behavior-when-conflict-handling-deactivated)
+AEM heeft [ vooraf bepaald gedrag wanneer het conflictbeheer is gedeactiveerd.](#behavior-when-conflict-handling-deactivated)
 
 ## Conflicthandlers {#conflict-handlers}
 
@@ -67,9 +67,9 @@ AEM gebruikt conflicthandlers om eventuele pagineconflicten op te lossen die bes
 
 AEM biedt:
 
-* De [default conflict handler](#default-conflict-handler):
+* De [ standaardconflictmanager ](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
-* De mogelijkheid om een [aangepaste handler](#customized-handlers)
+* De mogelijkheid om a [ aangepaste manager ](#customized-handlers) uit te voeren
 * Het de dienstrangschikkingsmechanisme dat u de prioriteit van elke individuele manager laat plaatsen
    * De dienst met het hoogste rangschikken wordt gebruikt.
 
@@ -78,28 +78,28 @@ AEM biedt:
 De standaardconflicthandler is `ResourceNameRolloutConflictHandler`
 
 * Met deze handler krijgt de blauwdrukpagina prioriteit.
-* De dienst die voor deze manager rangschikt wordt geplaatst laag. Dat wil zeggen, onder de standaardwaarde voor de `service.ranking` bezit omdat de veronderstelling is dat de aangepaste managers een hogere rangschikking nodig hebben. De rangorde is echter niet het absolute minimum om zo nodig flexibiliteit te garanderen.
+* De dienst die voor deze manager rangschikt wordt geplaatst laag. Dat wil zeggen, onder de standaardwaarde voor de eigenschap `service.ranking` omdat wordt aangenomen dat aangepaste handlers een hogere positie nodig hebben. De rangorde is echter niet het absolute minimum om zo nodig flexibiliteit te garanderen.
 
-Deze conflicthandler geeft voorrang aan de blauwdruk. Bijvoorbeeld de pagina Live kopie `/b` wordt verplaatst binnen de vertakking Live kopie naar `/b_msm_moved`.
+Deze conflicthandler geeft voorrang aan de blauwdruk. De pagina Live kopie `/b` wordt bijvoorbeeld binnen de vertakking Live kopie verplaatst naar `/b_msm_moved` .
 
 * Live kopie: `/b`
 
-  Wordt verplaatst binnen de live kopie naar `/b_msm_moved`. Dit fungeert als back-up en zorgt ervoor dat er geen inhoud verloren gaat.
+  Wordt verplaatst binnen de live kopie naar `/b_msm_moved` . Dit fungeert als back-up en zorgt ervoor dat er geen inhoud verloren gaat.
 
    * `lc-level-1` wordt niet verplaatst.
 
 * Blauwdruk: `/b`
 
-  Is uitgevouwen naar de pagina Live kopie `/b`.
+  Wordt uitgevouwen naar de pagina Live kopie `/b` .
 
    * `bp-level-1` wordt uitgerold naar de live kopie.
 
 #### Na rollout {#after-rollout}
 
-|  | Vervagen na rollout | Live kopie na rollout | Live kopie na rollout | Publiceren na rollout |
+|  | Vervagen na rollout | Live kopie na rollout | Live kopie na rollout | Publish After Rollout |
 |---|---|---|---|---|
 | Waarde | `b` | `b` | `b_msm_moved` | `b` |
-| Opmerking |  | Bevat de inhoud van de pagina Bladeren `b` dat is uitgevoerd | Bevat de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie | Geen wijziging; bevat de inhoud van de oorspronkelijke pagina `b` die handmatig is gemaakt in de vertakking Live kopie en nu wordt aangeroepen `b_msm_moved` |
+| Opmerking |  | Bevat de inhoud van de verfpagina `b` die is uitgevouwen | Bevat de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie | Geen wijziging; bevat de inhoud van de oorspronkelijke pagina `b` die handmatig is gemaakt in de vertakking Live kopie en nu ook `b_msm_moved` wordt genoemd |
 | Waarde | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Opmerking |  |  | Geen wijziging | Geen wijziging |
 
@@ -112,19 +112,19 @@ Aangepaste conflicthandlers kunnen:
 * Geef een naam op basis van uw vereisten.
 * Ontwikkeld/geconfigureerd worden volgens uw vereisten.
    * U kunt bijvoorbeeld een handler ontwikkelen die voorrang geeft aan de pagina Live kopie.
-* Het kan worden gevormd gebruikend [OSGi-configuratie](/help/implementing/deploying/configuring-osgi.md). In het bijzonder:
-   * **Servicereeks** definieert de volgorde voor andere conflicthandlers ( `service.ranking`).
-      * De standaardwaarde is `0`.
+* Het kan worden gevormd gebruikend de [ configuratie OSGi ](/help/implementing/deploying/configuring-osgi.md). In het bijzonder:
+   * **het Rangschikken van de Dienst** bepaalt de orde met betrekking tot andere conflictmanagers ( `service.ranking`).
+      * De standaardwaarde is `0` .
 
 ### Gedrag wanneer Conflict afhandelen is gedeactiveerd {#behavior-when-conflict-handling-deactivated}
 
-Als u handmatig [conflictafhandeling deactiveren,](#rollout-manager-and-conflict-handling) AEM onderneemt geen actie op conflicterende pagina&#39;s. Niet-conflicterende pagina&#39;s worden naar behoren geïmplementeerd.
+Als u manueel [ conflicten behandeling deactiveert, ](#rollout-manager-and-conflict-handling) AEM neemt geen actie op om het even welke conflicterende pagina&#39;s. Niet-conflicterende pagina&#39;s worden naar behoren geïmplementeerd.
 
 >[!CAUTION]
 >
 >Wanneer conflictafhandeling wordt gedeactiveerd, geeft AEM geen enkele aanwijzing dat conflicten worden genegeerd. Aangezien in dergelijke gevallen dit gedrag uitdrukkelijk moet worden gevormd, wordt aangenomen dat het het gewenste gedrag is.
 
-In dit geval heeft Live Copy in feite voorrang. De blauwdrukpagina `/b` wordt niet gekopieerd en de pagina Live Copy `/b` onaangeroerd blijft.
+In dit geval heeft Live Copy in feite voorrang. De pagina met de blauwdruk `/b` wordt niet gekopieerd en de pagina Live kopie `/b` blijft ongewijzigd.
 
 * Blauwdruk: `/b`
 
@@ -136,7 +136,7 @@ In dit geval heeft Live Copy in feite voorrang. De blauwdrukpagina `/b` wordt ni
 
 #### Na rollout {#after-rollout-no-conflict}
 
-|  | Vervagen na rollout | Live kopie na rollout | Publiceren na rollout |
+|  | Vervagen na rollout | Live kopie na rollout | Publish After Rollout |
 |---|---|---|---|
 | Waarde | `b` | `b` | `b` |
 | Opmerking |  | Geen wijziging; heeft de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie | Geen wijziging; bevat de inhoud van de pagina `b` die handmatig is gemaakt in de vertakking Live kopie |
@@ -145,4 +145,4 @@ In dit geval heeft Live Copy in feite voorrang. De blauwdrukpagina `/b` wordt ni
 
 ### Servicebeoordelingen {#service-rankings}
 
-De [OSGi](https://www.osgi.org/) de dienst rangschikt kan worden gebruikt om de prioriteit van individuele conflictmanagers te bepalen.
+De [ OSGi ](https://www.osgi.org/) dienst rangschikt kan worden gebruikt om de prioriteit van individuele conflictmanagers te bepalen.

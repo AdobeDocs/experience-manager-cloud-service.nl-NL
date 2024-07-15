@@ -1,6 +1,6 @@
 ---
-title: Bijwerken [!DNL Workfront for Experience Manager enhanced connector]
-description: Bijwerken [!DNL Workfront for Experience Manager enhanced connector]
+title: Bijwerken  [!DNL Workfront for Experience Manager enhanced connector]
+description: Bijwerken  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 feature: Workfront Integrations and Apps
 role: Admin
@@ -11,20 +11,20 @@ ht-degree: 0%
 
 ---
 
-# Bijwerken [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
+# [!DNL Workfront for Experience Manager enhanced connector] bijwerken {#update-enhanced-connector-for-workfront}
 
-[!UICONTROL Experience Manager Assets as a Cloud Service] biedt u de mogelijkheid de [!DNL Workfront for Experience Manager enhanced connector] van een vorige versie naar de meest recente versie.
+Met [!UICONTROL Experience Manager Assets as a Cloud Service] kunt u de versie van [!DNL Workfront for Experience Manager enhanced connector] bijwerken van een vorige versie naar de meest recente versie.
 
 >[!TIP]
 >
->Zoek je naar [!DNL Workfront for Experience Manager enhanced connector] documentatie voor AEM 6.5 bijwerken? Klikken [hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>Zoekt u naar [!DNL Workfront for Experience Manager enhanced connector] updatedocumentatie voor AEM 6.5? Klik [ hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
 
 
-Als u het dialoogvenster [!DNL Workfront for Experience Manager enhanced connector] naar de meest recente versie:
+Ga als volgt te werk om [!DNL Workfront for Experience Manager enhanced connector] bij te werken naar de meest recente versie:
 
-1. Download de nieuwste versie van de verbeterde connector van [Softwaredistributie Adoben](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+1. Download de recentste versie van de verbeterde schakelaar van [ de Distributie van de Software van de Adobe ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
-1. [Toegang](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) en kloon uw AEM as a Cloud Service opslagplaats uit Cloud Manager.
+1. [ Toegang ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) en kloon uw bewaarplaats van AEM as a Cloud Service van Cloud Manager.
 
 1. Open de gekloonde Experience Manager as a Cloud Service opslagplaats met behulp van een IDE van uw keuze.
 
@@ -36,9 +36,9 @@ Als u het dialoogvenster [!DNL Workfront for Experience Manager enhanced connect
 
    >[!NOTE]
    >
-   >Als de `resources` de map bestaat niet. Maak de map.
+   >Als de map `resources` niet bestaat, maakt u de map.
 
-1. De verbeterde schakelaarversie in ouder bijwerken `pom.xml`.
+1. Werk de verbeterde schakelaarversie in ouder bij `pom.xml`.
 
    ```XML
       <dependency>
@@ -51,7 +51,7 @@ Als u het dialoogvenster [!DNL Workfront for Experience Manager enhanced connect
       </dependency>
    ```
 
-1. Afhankelijkheid bijwerken in `all module pom.xml`.
+1. Werk de afhankelijkheid bij in `all module pom.xml` .
 
    ```XML
       <dependency>
@@ -65,9 +65,9 @@ Als u het dialoogvenster [!DNL Workfront for Experience Manager enhanced connect
 
    >[!NOTE]
    >
-   >Zorg ervoor dat u `<scope>` en `<systemPath>` de afhankelijkheden in stap 5 en 6.
+   >Voeg `<scope>` en `<systemPath>` toe aan de afhankelijkheden in stap 5 en 6.
 
-1. Bijwerken `pom.xml` worden ingesloten. Voeg de [!DNL Workfront for Experience Manager enhanced connector] pakketten naar `embeddeds` van de `pom.xml` van al uw subproject. De updates in alle modules opnemen `pom.xml`.
+1. Sluit `pom.xml` in. Voeg de [!DNL Workfront for Experience Manager enhanced connector] pakketten aan `embeddeds` sectie van `pom.xml` van al uw subproject toe. De updates in alle modules opnemen `pom.xml` .
 
    ```XML
    <!-- Workfront Tools -->
@@ -79,10 +79,10 @@ Als u het dialoogvenster [!DNL Workfront for Experience Manager enhanced connect
    </embedded>
    ```
 
-   Het doel van de ingesloten sectie is ingesteld op `/apps/<path-to-project-install-folder>/install`. Dit JCR-pad `/apps/<path-to-project-install-folder>` moet worden opgenomen in de filterregels in de `all/src/main/content/META-INF/vault/filter.xml` bestand. De filterregels voor de gegevensopslagruimte worden gewoonlijk afgeleid van de naam van het programma. Gebruik de naam van de map als doel in de bestaande regels.
+   Het doel van de ingesloten sectie wordt ingesteld op `/apps/<path-to-project-install-folder>/install` . Dit JCR-pad `/apps/<path-to-project-install-folder>` moet worden opgenomen in de filterregels in het `all/src/main/content/META-INF/vault/filter.xml` -bestand. De filterregels voor de gegevensopslagruimte worden gewoonlijk afgeleid van de naam van het programma. Gebruik de naam van de map als doel in de bestaande regels.
 
-1. [De afhankelijkheden van de distributiepunten van Photoshop verwijderen](remove-external-dependencies.md), indien van toepassing.
+1. [ verwijdert de gebiedsdelen op de distributiepunten van de Hoodoo ](remove-external-dependencies.md), als om het even welk.
 
 1. Breng de wijzigingen aan in de repository.
 
-1. De pijplijn in werking stellen aan [Wijzigingen in Cloud Manager implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Stel de pijpleiding in werking om [ de veranderingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) op te stellen.

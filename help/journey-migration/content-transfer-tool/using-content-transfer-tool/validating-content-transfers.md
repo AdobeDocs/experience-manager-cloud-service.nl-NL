@@ -19,40 +19,40 @@ Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inh
 
 >[!INFO]
 >
->Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De AEM Cloud Service-doelomgeving moet ten minste versie 6158 of hoger zijn. Het vereist ook het bronmilieu om opstelling te zijn om in werking te stellen [voorkopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). De bevestigingseigenschap zoekt het azcopy.config- dossier op de bron. Als dit bestand niet wordt gevonden, wordt de validatie niet uitgevoerd. Meer over leren hoe te om een dossier te vormen azcopy.config, zie [deze pagina](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Deze functie is beschikbaar vanaf versie 1.8.x van het Content Transfer Tool (CTT). De AEM Cloud Service-doelomgeving moet ten minste versie 6158 of hoger zijn. Het vereist ook het bronmilieu om opstelling te zijn om [ pre-exemplaar ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step) in werking te stellen. De bevestigingseigenschap zoekt het azcopy.config- dossier op de bron. Als dit bestand niet wordt gevonden, wordt de validatie niet uitgevoerd. Meer over leren hoe te om een dossier te vormen azcopy.config, zie [ deze pagina ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 Het valideren van een inhoudsoverdracht is een optionele functie. Als u deze functie inschakelt, duurt het langer om een extractie en opname uit te voeren. Om de eigenschap te gebruiken, laat het in de Console van het Systeem van de bron AEM milieu door deze stappen toe te volgen:
 
-1. Navigeer naar de Adobe Experience Manager Web Console op uw broninstantie door naar **Gereedschappen - Bewerkingen - Webconsole** of rechtstreeks naar de URL op *https://serveraddress:serverport/system/console/configMgr*
-1. Zoeken naar **Configuratie van de service Content Transfer Tool Extraction**
+1. Navigeer aan de Console van het Web van Adobe Experience Manager op uw broninstantie, door **Hulpmiddelen te gaan - Verrichtingen - de Console van het Web** of direct aan URL in *https://serveraddress:serverport/system/console/configMgr*
+1. Onderzoek naar {de Configuratie van de Dienst van de Extractie van het Hulpmiddel van de Overdracht van 0} Inhoud ****
 1. Gebruik de knop voor het potloodpictogram om de configuratiewaarden ervan te bewerken
-1. De optie **Migratievalidatie tijdens extractie inschakelen** instellen en vervolgens op **Opslaan**:
+1. Laat **toe de Bevestiging van de Migratie tijdens extractie** plaatsen, dan druk **sparen**:
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
 Als deze instelling is ingeschakeld en de AEM Cloud Service-doelomgeving waarop een compatibele release wordt uitgevoerd, vindt migratievalidatie plaats tijdens alle volgende extractie- en innameacties.
 
-Voor meer informatie over het installeren van het gereedschap Inhoud overbrengen raadpleegt u [Aan de slag met het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
+Voor meer informatie over hoe te om het Hulpmiddel van de Overdracht van de Inhoud te installeren, zie [ Begonnen het Worden met het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
 
 ## Hoe te om een Overdracht van de Inhoud te bevestigen {#how-to-validate-a-content-transfer}
 
 Als migratievalidatie is ingeschakeld in de AEM bronomgeving, begint u met extraheren.
 
-Indien **Stapelcontainer overschrijven tijdens extractie** wordt toegelaten, worden alle knopen die met de extractie betrokken zijn geregistreerd aan de samenvatting van de extractiepad. Wanneer deze instelling wordt gebruikt, is het belangrijk om de optie **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** instelling tijdens inname, anders lijken er wellicht knooppunten te ontbreken in de ingeslipsamenvatting. Dit zijn de knooppunten die al aanwezig zijn op het doel na eerdere inname.
+Als **staging container tijdens extractie** overschrijft wordt toegelaten, worden alle knopen die met de extractie betrokken zijn geregistreerd aan de samenvatting van de extractieweg. Wanneer dit het plaatsen wordt gebruikt, is het belangrijk om **toe te laten Wipe bestaande inhoud op de instantie van de Wolk alvorens** het plaatsen in te nemen tijdens opname, anders kunnen er knopen missen van de ingestipingssamenvatting lijken. Dit zijn de knooppunten die al aanwezig zijn op het doel na eerdere inname.
 
 Zie de volgende voorbeelden voor een grafische illustratie hiervan:
 
 ### Voorbeeld 1 {#example-1}
 
-* **Extractie (overschrijven)**
+* **Extractie (Overschrijven)**
 
   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
-* **Verontreiniging (sluitereffect)**
+* **Ingestie (Sluitereffect)**
 
   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
-* **Notities**
+* **Nota&#39;s**
 
   Deze combinatie van &quot;Overschrijven&quot; en &quot;Sluitereffect&quot; resulteert in consistente validatieresultaten, zelfs voor herhaalde inname.
 
@@ -62,11 +62,11 @@ Zie de volgende voorbeelden voor een grafische illustratie hiervan:
 
   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
-* **Inname**
+* **Ingestie**
 
   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
-* **Notities**
+* **Nota&#39;s**
 
   Deze combinatie van &quot;Overschrijven&quot; en &quot;Sluitereffect&quot; resulteert in consistente validatieresultaten voor de eerste opname.
 
@@ -74,7 +74,7 @@ Zie de volgende voorbeelden voor een grafische illustratie hiervan:
 
 Zodra de extractie is voltooid, begint u met innemen.
 
-De bovenkant van het innamelogboek zal een ingang bevatten, gelijkend op `aem-ethos/tools:1.2.438`. Controleer of dit versienummer **1.2.438** of hoger, anders wordt de bevestiging niet gesteund door de versie van AEM as a Cloud Service die u gebruikt.
+De bovenkant van het innamelogboek bevat een item, vergelijkbaar met `aem-ethos/tools:1.2.438` . Verzeker dit versieaantal **1.2.438** of groter is, anders wordt de bevestiging niet gesteund door de versie van AEM as a Cloud Service die u gebruikt.
 
 Nadat de opname volledig is en de bevestiging begint, wordt de volgende logboekingang genoteerd in het innamelogboek:
 
@@ -129,22 +129,22 @@ Migration validation took 0 minutes
 
 Het bovenstaande mislukkingsvoorbeeld werd bereikt door een opname in werking te stellen, en dan opnieuw de zelfde inname opnieuw in werking te stellen met Wipe gehandicapt, zodat geen knopen tijdens inname betrokken waren — alles was reeds aanwezig op het doel.
 
-Het validatierapport kan niet alleen worden opgenomen in het innamelogboek, maar ook worden geopend vanuit de **Ingestietaken** gebruikersinterface in Cloud Acceleration Manager. Klik hiertoe op de drie stippen (**...**) en klik vervolgens op **Validatierapport** in de vervolgkeuzelijst om het validatierapport weer te geven.
+Naast wordt inbegrepen in het innamelogboek, kan het bevestigingsrapport ook van het **1} gebruikersinterface van de Banen van de Ingestie {in Cloud Acceleration Manager worden betreden.** Om dit te doen, klik de drie punten (**..**) dan **het rapport van de Bevestiging** in drop-down om het bevestigingsrapport te bekijken.
 
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
 ## Hoe te om de Belangrijkste Migratie te bevestigen {#how-to-validate-principal-migration}
 
-Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) de belangrijkste migratiegegevens te lezen en de redenen daarvoor .
+Zie [ Toewijzing van de Gebruiker en Belangrijkste Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) om de belangrijkste migratiedetails te lezen en waarom het noodzakelijk is.
 
 Nadat de extractie en inname met succes zijn voltooid, is een samenvatting en rapport van de belangrijkste migratie beschikbaar. Deze informatie kan worden gebruikt om te valideren welke gebruikers en groepen met succes zijn gemigreerd, en misschien om te bepalen waarom sommige niet.
 
-Ga naar Cloud Acceleration Manager om deze informatie weer te geven. Klik op de projectkaart en klik op de kaart voor inhoudsoverdracht. Navigeren naar **Ingestietaken** en zoek de inname die u wilt controleren. Klik op de drie stippen (**...**) voor die opname, klikt u op **Hoofdoverzicht weergeven** in de vervolgkeuzelijst.
+Ga naar Cloud Acceleration Manager om deze gegevens te bekijken. Klik op de projectkaart en klik op de kaart voor inhoudsoverdracht. Navigeer aan **Banen van de Opname** en bepaal de plaats van de opname die u wilt verifiëren. Klik de drie punten (**...**) voor die opname, dan klik **belangrijkste samenvatting van de Mening** in drop-down.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Er wordt een dialoogvenster weergegeven met de overzichtsgegevens. Gebruik de Help-pictogrammen om een meer volledige beschrijving te lezen. Klik op de knop **Rapport downloaden** om het volledige door komma&#39;s gescheiden (CSV) rapport te downloaden.
+Er wordt een dialoogvenster weergegeven met de overzichtsgegevens. Gebruik de Help-pictogrammen om een meer volledige beschrijving te lezen. Klik het **rapport van de Download** knoop om het volledige komma-gescheiden (CSV) rapport te downloaden.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
@@ -156,7 +156,7 @@ Er wordt een dialoogvenster weergegeven met de overzichtsgegevens. Gebruik de He
 
 ### Validatie mislukt. Wat nu? {#validation-fail}
 
-De eerste stap bestaat uit het bepalen of de opname echt is mislukt of of de geëxtraheerde inhoud al aanwezig is in de doelomgeving. Dit kan zich voordoen als een ingestie wordt herhaald met de **Bestaande inhoud vegen op Cloud-instantie voordat deze wordt ingesloten** optie uitgeschakeld.
+De eerste stap bestaat uit het bepalen of de opname echt is mislukt of of de geëxtraheerde inhoud al aanwezig is in de doelomgeving. Dit kan voorkomen als een opname met **wordt herhaald Wipe bestaande inhoud op de instantie van de Wolk alvorens inname** gehandicapte optie.
 
 Kies een pad in het validatierapport en controleer of dit aanwezig is in de doelomgeving. Als dit een publicatieomgeving is, kunt u zich beperken tot het rechtstreeks controleren van pagina&#39;s en middelen. Open een ticket met de klantenservice als u hulp nodig hebt bij deze stap.
 
@@ -164,8 +164,8 @@ Kies een pad in het validatierapport en controleer of dit aanwezig is in de doel
 
 Sommige paden uit de extractie- en innamesamenvattingen worden doelbewust uitgesloten om de grootte van deze bestanden beheerbaar te houden, met als doel het resultaat van de migratievalidatie binnen twee uur na voltooiing van de inname te kunnen berekenen.
 
-De paden die we momenteel uitsluiten van de samenvattingen zijn: `cqdam.text.txt` vertoningen, knooppunten binnen `/home`en knooppunten binnen `/jcr:system`.
+De paden die we momenteel uitsluiten van de samenvattingen zijn: `cqdam.text.txt` uitvoeringen, knooppunten binnen `/home` en knooppunten binnen `/jcr:system` .
 
 ### Gesloten gebruikersgroepen functioneren niet {#validating-cugs}
 
-Zie [Gesloten gebruikersgroepen migreren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen wanneer het gebruiken van een Gesloten beleid van de Groep van de Gebruiker (CUG).
+Zie [ het Migreren van Gesloten Groepen van de Gebruiker ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen wanneer het gebruiken van een Gesloten beleid van de Groep van de Gebruiker (CUG).

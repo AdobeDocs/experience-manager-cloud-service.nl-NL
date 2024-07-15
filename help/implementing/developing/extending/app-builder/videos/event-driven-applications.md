@@ -1,6 +1,6 @@
 ---
-title: Toepassingen met App Builder die zijn gebaseerd op gebeurtenissen
-description: Leer hoe u met gebeurtenissen gestuurde App Builder-toepassingen kunt maken.
+title: Gebeurtenisgestuurde App Builder-toepassingen
+description: Leer hoe u App Builder-toepassingen die zijn gebaseerd op gebeurtenissen, kunt maken.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 ---
 
-# Toepassingen met App Builder die zijn gebaseerd op gebeurtenissen
+# Gebeurtenisgestuurde App Builder-toepassingen
 
-## Inleiding tot gebeurtenisgestuurde App Builder-toepassingen
+## Inleiding tot App Builder-toepassingen die op gebeurtenissen zijn gebaseerd
 
 Leer wat over gebeurtenis-gedreven architectuur, Adobe I/O gebeurtenissen, en douanegebeurtenissen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
-## Toepassingen ontwikkelen die zijn gebaseerd op gebeurtenissen in App Builder
+## App Builder-toepassingen ontwikkelen die op gebeurtenissen zijn gebaseerd
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-Leer hoe te om te bouwen publiceer gebeurtenissen in een toepassing van de Bouwer van de App kan verbruiken.
+Leer hoe u publicatie kunt maken voor gebruik van gebeurtenissen in een App Builder-toepassing.

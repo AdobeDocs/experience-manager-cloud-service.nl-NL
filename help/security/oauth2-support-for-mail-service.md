@@ -14,24 +14,24 @@ ht-degree: 0%
 
 # OAuth2 Steun voor de Dienst van de Post {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service biedt OAuth2-ondersteuning voor de geïntegreerde e-mailservice om organisaties in staat te stellen zich aan de vereisten voor e-mail te houden.
+AEM as a Cloud Service biedt OAuth2-ondersteuning voor de geïntegreerde e-mailservice, zodat organisaties zich kunnen houden aan de vereisten voor e-mail.
 
 U kunt OAuth voor veelvoudige e-mailleveranciers vormen. Hieronder vindt u stapsgewijze instructies voor het configureren van de AEM Mail Service voor verificatie via OAuth2 met Microsoft® Office 365 Outlook. Andere verkopers kunnen op een gelijkaardige manier worden gevormd.
 
-Voor meer informatie over de AEM as a Cloud Service Dienst van de Post, zie [E-mail verzenden](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
+Voor meer informatie over de Dienst van de Post van AEM as a Cloud Service, zie [ Verzendend E-mail ](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
 
 ## Microsoft® Outlook {#microsoft-outlook}
 
-1. Ga naar [https://portal.azure.com/](https://portal.azure.com/) en aanmelden.
-1. Zoeken naar **Azure Active Directory** in de zoekbalk en klik op het resultaat. U kunt ook rechtstreeks bladeren naar [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-1. Klikken **Toepassingsregistratie** > **Nieuwe registratie**.
+1. Ga naar [ https://portal.azure.com/ ](https://portal.azure.com/) en login.
+1. Onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat. Alternatief, kunt u direct aan [ https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
+1. Klik **>** Nieuwe Registratie **van de Toepassing van 0} {.**
 
-   ![Toepassingsregistratieproces starten](assets/oauth-outlook1.png)
+   ![ App registratieproces van het Begin ](assets/oauth-outlook1.png)
 
-1. Vul de gegevens naar wens in en klik op **Registreren**.
-1. Ga naar de gemaakte app en selecteer **API-machtigingen**.
-1. Klikken **Machtiging toevoegen** > **Grafiekmachtigingen** > **Gedelegeerde machtigingen**.
-1. Selecteer de onderstaande machtigingen voor uw app en klik op **Machtiging toevoegen**:
+1. Vul de informatie volgens uw vereisten in, dan klik **Register**.
+1. Ga naar gecreeerde app, en selecteer **API Toestemmingen**.
+1. Klik **toevoegen Toestemming** > **Toestemming van de Grafiek** > **Gedelegeerde Toestemmingen**.
+1. Selecteer de hieronder toestemmingen voor uw app, dan klik **toevoegen Toestemming**:
 
    >[!NOTE]
    >
@@ -42,12 +42,12 @@ Voor meer informatie over de AEM as a Cloud Service Dienst van de Post, zie [E-m
    * `offline_access`
    * `email`
    * `profile`
-1. Ga naar **Verificatie** > **Een platform toevoegen** > **Web** en in de **URL omleiden** de volgende URL&#39;s toevoegen: één met en één zonder een slash:
+1. Ga naar **Authentificatie** > **voeg een platform** > **Web** toe, en in de **Redirect Urls** sectie, voeg hieronder URLs toe - met en zonder een voorwaartse schuine streep:
    * `http://localhost/`
    * `http://localhost`
-1. Druk **Configureren** na het toevoegen van elke URL en het configureren van uw instellingen volgens uw vereisten.
-1. Ga vervolgens naar **Certificaten en geheimen**, klikt u op **Nieuw clientgeheim** en volg de stappen op het scherm om een geheim te maken. Let erop dat u dit geheim opneemt voor later gebruik.
-1. Druk **Overzicht** in het linkerdeelvenster en kopieer de waarden voor **Toepassings-id (client)** en **Directory (huurder)-id** voor later gebruik.
+1. De pers **vormt** na het toevoegen van elke URL en vormt uw montages volgens uw vereisten.
+1. Daarna, ga naar **Certificaten en geheimen**, klik **Nieuw cliëntgeheim** en volg de stappen op het scherm om een geheim tot stand te brengen. Let erop dat u dit geheim opneemt voor later gebruik.
+1. Pers **Overzicht** in de linkerruit en kopieer de waarden voor **identiteitskaart van de Toepassing (cliënt)** en **Folder (huurder) identiteitskaart** voor recenter gebruik.
 
 Om opnieuw te verpakken, gebruik volgende informatie om OAuth2 voor de dienst van de Post op de AEM kant te vormen:
 
@@ -61,7 +61,7 @@ Om opnieuw te verpakken, gebruik volgende informatie om OAuth2 voor de dienst va
 
 Daarna, vernieuw symbolisch, dat een deel van de configuratie OSGi in een verdere stap door het volgende te doen is:
 
-1. Open de volgende URL in de browser nadat u deze hebt vervangen `clientID` en `tenantID` met de specifieke waarden voor uw account:
+1. Open de volgende URL in de browser nadat u `clientID` en `tenantID` hebt vervangen door de waarden die specifiek zijn voor uw account:
 
    ```
    https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
@@ -74,7 +74,7 @@ Daarna, vernieuw symbolisch, dat een deel van de configuratie OSGi in een verder
    http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
    ```
 
-1. De waarde kopiëren van `<code>` in het bovenstaande voorbeeld.
+1. Kopieer de waarde van `<code>` in het bovenstaande voorbeeld.
 1. Gebruik het volgende cURL bevel om te krijgen refreshToken. Vervang de huurderID, clientID, en clientSecret met de waarden voor uw rekening, en de waarde voor `<code>`:
 
    ```
@@ -95,7 +95,7 @@ Daarna, vernieuw symbolisch, dat een deel van de configuratie OSGi in een verder
 
 Alvorens te werk te gaan om OAuth op de AEM kant te vormen, zorg ervoor om zowel accessToken als refreshToken met de hieronder procedure te bevestigen:
 
-1. Genereer accessToken door refreshToken te gebruiken die in de vorige procedure wordt geproduceerd door de volgende krulling te gebruiken, die de waarden voor vervangt `<client_id>`,`<client_secret>`, en `<refreshToken>`:
+1. Genereer accessToken door refreshToken te gebruiken die in de vorige procedure wordt geproduceerd door de volgende krulling te gebruiken, die de waarden voor `<client_id>`, `<client_secret>`, en `<refreshToken>` vervangt:
 
    ```
    curl --location --request POST 'https://login.microsoftonline.com/<tenetId>/oauth2/v2.0/token' \
@@ -113,13 +113,13 @@ Alvorens te werk te gaan om OAuth op de AEM kant te vormen, zorg ervoor om zowel
 
 >[!NOTE]
 >
-> U kunt de Postman API-verzameling ophalen vanuit [deze locatie](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow).
+> U kunt de Postman API inzameling van [ deze plaats ](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow) krijgen.
 >
-> Zie de MSFT OAuth-documentatie [hier](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) voor meer informatie .
+> Zie de documentatie MSFT OAuth [ hier ](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) voor meer details.
 
 ### Integratie met AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
-1. Een OSGI-eigenschappenbestand maken met de naam `com.day.cq.mailer.oauth.impl.OAuthConfigurationProviderImpl.cfg.json` krachtens `/apps/<my-project>/osgiconfig/config` met de volgende syntaxis:
+1. Maak een OSGI-eigenschappenbestand met de naam `com.day.cq.mailer.oauth.impl.OAuthConfigurationProviderImpl.cfg.json` onder `/apps/<my-project>/osgiconfig/config` met de volgende syntaxis:
 
    ```
    {
@@ -137,7 +137,7 @@ Alvorens te werk te gaan om OAuth op de AEM kant te vormen, zorg ervoor om zowel
    }
    ```
 
-1. Vul de `authUrl`, `tokenUrl`, en `refreshURL` door ze te construeren zoals beschreven in de vorige sectie.
+1. Vul `authUrl`, `tokenUrl`, en `refreshURL` in door hen te construeren zoals die in de vorige sectie wordt beschreven.
 1. Voeg de volgende Scopes aan de configuratie toe:
 
    >[!NOTE]
@@ -150,7 +150,7 @@ Alvorens te werk te gaan om OAuth op de AEM kant te vormen, zorg ervoor om zowel
    * `email`
    * `profile`
 1. Een OSGI-eigenschappenbestand maken `called com.day.cq.mailer.DefaultMailService.cfg.json`
-krachtens `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `smtp.host` en `smtp.port` de waarden wijzen op geavanceerde voorzien van een netwerkconfiguratie, zoals die in [Zelfstudie over e-mailservice](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
+onder `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. De `smtp.host` en `smtp.port` waarden wijzen op geavanceerde voorzien van een netwerkconfiguratie, zoals die in het [ e-mailleerprogramma van de Dienst ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service) wordt beschreven.
 
    ```
    {
@@ -167,9 +167,9 @@ krachtens `/apps/<my-project>/osgiconfig/config` met de onderstaande syntaxis. D
    }
    ```
 
-1. Voor de vooruitzichten `smtp.host` configuratiewaarde is `smtp.office365.com`
-1. Geef tijdens runtime de `refreshToken values` en `clientSecret` geheimen met de API voor variabelen van Cloud Manager zoals beschreven [hier](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) of door [Cloud Manager om variabelen toe te voegen.](/help/implementing/cloud-manager/environment-variables.md) De waarden voor de variabelen `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  en `SECRET_SMTP_OAUTH_CLIENT_SECRET` moeten worden gedefinieerd.
+1. Voor de toekomst is de configuratiewaarde `smtp.host` `smtp.office365.com`
+1. Bij runtime, ga in `refreshToken values` en `clientSecret` geheimen over gebruikend de variabelen API van Cloud Manager zoals die [ hier ](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) wordt beschreven of door [ Cloud Manager te gebruiken om variabelen toe te voegen.](/help/implementing/cloud-manager/environment-variables.md) De waarden voor de variabelen `SECRET_SMTP_OAUTH_REFRESH_TOKEN` en `SECRET_SMTP_OAUTH_CLIENT_SECRET` moeten worden gedefinieerd.
 
 ### Problemen oplossen {#troubleshooting}
 
-Als de mailservice niet correct werkt, moet u de `refreshToken` zoals hierboven beschreven, de nieuwe waarde doorgeven via de Cloud Manager-API. Het duurt een paar minuten voordat de nieuwe waarde is geïmplementeerd.
+Als de mailservice niet correct werkt, moet u de `refreshToken` opnieuw genereren zoals hierboven is beschreven en de nieuwe waarde doorgeven via de Cloud Manager API. Het duurt een paar minuten voordat de nieuwe waarde is geïmplementeerd.

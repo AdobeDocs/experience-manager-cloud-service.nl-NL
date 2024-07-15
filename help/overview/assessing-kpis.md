@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Voordat u begint met het lanceren van Adobe Experience Manager, moet iedereen die belang heeft in het project weten wat uw top drie KPI&#39;s zijn en waarom ze er toe doen.
 
-**De juiste KPI&#39;s helpen je meer waar te maken van Adobe Experience Manager**
+**juiste KPIs zal u helpen meer waarde van Adobe Experience Manager krijgen**
 
 
 In een studie van 2018 heeft IDC de bedrijfswaarde geanalyseerd die verscheidene grote ondernemingen bij het gebruik van Adobe Experience Manager hebben waargenomen. Gemiddeld hadden de organisaties die Experience Manager Sites gebruikten de productiviteit van hun digitale-ervaringsteams met 23% verbeterd, de tijd die nodig was om kleine redactionele wijzigingen aan te brengen met 64% verminderd en het aantal bezoeken per maand met 10% verhoogd. De bedrijven die Experience Manager Assets gebruiken, hebben de productiviteit van hun digitale-middelenteams met 19% verhoogd, de aanmaaktijd voor nieuwe middelen met 47% verkort en de starttijd voor marketingcampagnes met 20% verminderd.
@@ -53,4 +53,4 @@ Nadat uw Experience Manager lanceert, zal een sterke reeks KPIs u snel een idee 
 
 >[!TIP]
 >
-> Neem contact op met [Adobe Consulting Services](https://www.adobe.com/experience-cloud/consulting-services.html) of uw implementatiepartner.
+> Als extra hulp met uw KPIs nodig hebt, contacteer [ de Diensten van Adobe Consulting ](https://www.adobe.com/experience-cloud/consulting-services.html) of uw implementatiepartner.

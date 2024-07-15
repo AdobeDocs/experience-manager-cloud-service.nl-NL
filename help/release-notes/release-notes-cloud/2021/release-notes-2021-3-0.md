@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release 2021.3.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release 2021.3.0."
+title: Nota's van de versie voor 2021.3.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij de release voor 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 feature: Release Information
 role: Admin
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Huidige releaseopmerkingen voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de algemene opmerkingen bij de release voor de huidige (meest recente) versie van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >Hier kunt u navigeren om notities van eerdere versies vrij te geven, bijvoorbeeld voor de versies in 2020, 2021 enzovoort.
 
 >[!NOTE]
 >
->Zie [Recente documentatieupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor meer informatie over documentatie-updates die niet rechtstreeks verband houden met een release.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
@@ -29,11 +29,11 @@ De volgende release (2021.4.0) vindt plaats op 29 april 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [Een progressieve Web App (PWA)-versie van een site](/help/sites-cloud/authoring/sites-console/enable-pwa.md) kan nu op projectniveau via eenvoudige configuratie worden toegelaten.
+* [ A Progressieve versie van de Web App (PWA) van een plaats ](/help/sites-cloud/authoring/sites-console/enable-pwa.md) kan nu op het projectniveau via eenvoudige configuratie worden toegelaten.
 * Extensies inhoudsfragmentmodel - nu mogelijk om gegevenstypen met meerdere regels te definiëren als lijsten met meerdere velden.
 * Verbeteringen in de Content Fragment Editor UX: geneste onderliggende fragmenten die nu worden weergegeven in de broodkruimel en verbeterde weergave van acties voor publiceren, opslaan en opslaan en afsluiten
 
-## [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#what-is-new-assets}
 
@@ -47,10 +47,10 @@ Ability to select a root path. select if a minimum number of tags is required.
 
 Add a Boolean or radio widget type to metadata schema setup. -->
 
-* [!DNL Experience Manager] breidt de Connected Assets-functionaliteit uit om het gebruik van [!DNL Dynamic Media] afbeeldingen in de ondersteunde kerncomponenten. Zie [Aangesloten elementen gebruiken](/help/assets/use-assets-across-connected-assets-instances.md).
-* Beheerders van Experience Managers kunnen het opnemen van grote hoeveelheden elementen op een bepaalde datum of tijd plannen. Ook, kunnen de beheerders terugkomende ingesties plannen die op datum en tijd worden gebaseerd. Zie [bulkasset-opname](/help/assets/add-assets.md#asset-bulk-ingestor).
+* [!DNL Experience Manager] breidt de Connected Assets-functionaliteit uit om het gebruik van [!DNL Dynamic Media] -afbeeldingen in de ondersteunde kerncomponenten te ondersteunen. Zie [ gebruik Verbonden Assets ](/help/assets/use-assets-across-connected-assets-instances.md).
+* Beheerders van Experience Managers kunnen het opnemen van grote hoeveelheden elementen op een bepaalde datum of tijd plannen. Ook, kunnen de beheerders terugkomende ingesties plannen die op datum en tijd worden gebaseerd. Zie [ bulkactiva opnemen ](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-### Bugfixes in [!DNL Assets] {#bug-fixes-assets}
+### Opgeloste problemen in [!DNL Assets] {#bug-fixes-assets}
 
 * De copyrightpagina wordt niet weergegeven wanneer u meerdere middelen met rechtenbeheer probeert te downloaden. (CQ-4314403)
 * Wanneer u ervoor kiest een INDD-bestand te bewerken, verandert de resolutie onverwacht. (CQ-4317376)
@@ -58,13 +58,13 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * De tagkiezer kan lang worden geopend wanneer de kiezer deel uitmaakt van een complex metagegevensschema. (CQ-4316426)
 * Wanneer u elementen uploadt met dezelfde bestandsnaam als een bestaand bestand, wordt het dialoogvenster voor naamconflict niet weergegeven om de gebruiker te vragen een versie te maken. (CQ-4315424)
 * Eigenschappen van metagegevens van mappen kunnen worden ingesteld en opgeslagen via het pop-upmenu op de pagina Eigenschappen van een map. De selectie wordt opgeslagen in de gegevensopslagruimte en wordt niet weergegeven wanneer de eigenschappen van de metagegevens van de map opnieuw worden geopend. (CQ-4314429)
-* Elementen met bestandsnamen die spaties of speciale tekens bevatten, worden via de browser geüpload. (CQ-4318381)
+* Assets met bestandsnamen die spaties of speciale tekens bevatten, wordt geüpload via de browser. (CQ-4318381)
 
-## [!DNL Adobe Experience Manager Forms] als [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 AEM Forms heeft veel organisaties geholpen om in de loop der jaren geweldige ervaring op het gebied van instapweigering en inschrijving te bieden. Deze ervaringen hebben organisaties geholpen bij het omzetten van leads naar verkoop, het verwerken van vastgelegde klantgegevens, het leveren van responsieve ervaringen op basis van het profiel van het publiek en nog veel meer. AEM Forms is nu beschikbaar als cloudservice.
 
-U kunt [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) Als u digitale formulieren wilt maken, sluit u formulieren aan op bestaande gegevensbronnen, integreert u formulieren met Adobe Sign om e-handtekeningen aan formulieren toe te voegen, genereert u Document of Record (DoR) om verzonden formulieren als PDF-bestanden te archiveren. De service kan uw bestaande PDF forms ook converteren naar digitale formulieren. Naast de standaard AEM Forms-functies biedt de service verschillende mogelijkheden in de cloud, zoals automatisch schalen, geen downtime voor upgrades en ontwikkelomgeving in de cloud.
+U kunt [ as a Cloud Service van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) gebruiken om digitale vormen tot stand te brengen, vormen met bestaande gegevensbronnen te verbinden, vormen met Adobe Sign te integreren om e-handtekeningen aan vormen toe te voegen, Document van Verslag te produceren (DoR) om ingediende vormen als PDF dossiers te archiveren. De service kan uw bestaande PDF forms ook converteren naar digitale formulieren. Naast de standaard AEM Forms-functies biedt de service verschillende mogelijkheden in de cloud, zoals automatisch schalen, geen downtime voor upgrades en ontwikkelomgeving in de cloud.
 
 U kunt een demo indienen bij uw Adobe of u aanmelden voor de service.
 
@@ -76,9 +76,9 @@ U kunt een demo indienen bij uw Adobe of u aanmelden voor de service.
 
 * Productdetailcomponent kan nu worden gebruikt en geconfigureerd op elke inhoudspagina
 
-* Release CIF Venia Reference Site - 2021.03.25 die de nieuwste versie CIF Core Components versie v1.9.0 bevat. Zie [CIF Venia-referentiegebied](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) voor meer informatie .
+* Release CIF Venia Reference Site - 2021.03.25 die de nieuwste versie CIF Core Components versie v1.9.0 bevat. Zie [ CIF de Plaats van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) voor meer details.
 
-* Uitgegeven CIF Core Components v1.9.0. Zie [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) voor meer informatie .
+* Uitgegeven CIF Core Components v1.9.0. Zie [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) voor meer details.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -87,34 +87,34 @@ In deze sectie worden de opmerkingen bij de release voor Cloud Manager in AEM as
 
 ## Releasedatum {#release-date-cm-march}
 
-De releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.3.0 is 11 maart 2021.
+De Releasedatum voor Cloud Manager in AEM as a Cloud Service 2021.3.0 is 11 maart 2021.
 De volgende release is gepland voor 8 april 2021.
 
 ### Wat is er nieuw? {#what-is-new-march}
 
-* Klanten met omgevingen met bestaande aangepaste domeinnaamconfiguraties voor [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zie een bericht over hun eerder bestaande configuraties en kan als gebruikersinterface zelf-dienen.
+* De klanten met milieu&#39;s met reeds bestaande configuraties van de Naam van het Domein van de Douane voor [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) en [ Namen van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) zien een bericht over hun eerder bestaande configuraties en kunnen als gebruikersinterface zelf-dienen.
 
 * Gebruikers met de vereiste machtigingen kunnen nu een programma bewerken, zodat zij het volgende op een zelfbedieningsmanier kunnen doen:
 
-   * Voeg de oplossing van Plaatsen aan een bestaand programma met Activa toe of omgekeerd.
-   * Sites of middelen verwijderen uit een bestaand programma met zowel sites als middelen.
+   * Voeg Sites-oplossing toe aan een bestaand programma met Assets of omgekeerd.
+   * Sites of Assets verwijderen uit een bestaand programma met zowel Sites als Assets.
    * Voeg tweede, ongebruikte oplossingsrechten toe aan een bestaand programma of aan een nieuw programma.
 
-* **AEM bijwerken** label wordt nu weergegeven voor beide *Uitvoering pijpleiding* en *Activiteit* schermen.
+* **AEM het etiket van de Update van de Duw** zal nu voor zowel *de Uitvoering van de Pijpleiding* en *Activiteiten* schermen worden getoond.
 
-* Als een omgeving is gehiberneerd maar er ook een AEM update beschikbaar is, kunt u het **Gesamberneerd** status heeft voorrang op **Update beschikbaar**.
+* Als een milieu wordt gehiberneerd maar er ook een beschikbare AEM update is, zal de **Gesamberneerde** status belangrijkheid over **beschikbare Update** nemen.
 
-* Gebruikers kunnen nu hun rol(en) in de cloud Manager zien door de optie &#39;Rol(en) in de cloud-manager weergeven&#39; te selecteren nadat ze naar het pictogram Gebruikersprofiel (rechtsboven) van Unified Shell zijn gegaan.
+* Gebruikers kunnen hun Cloud Manager-rol(en) nu zien door de optie &#39;Cloud Manager-rol(en) weergeven&#39; te selecteren na naar het pictogram Gebruikersprofiel (rechtsboven) van Unified Shell te navigeren.
 
-* Het label **Goedkeuringsaanvraag** is opnieuw gelabeld aan **Erkenning van productie** voor meer duidelijkheid.
+* De etiket **Toepassing voor Goedkeuring** is opnieuw geëtiketteerd aan **Goedkeuring van de Productie** voor grotere duidelijkheid.
 
-* De **Versie** label is opnieuw gelabeld aan **Git-tag** in het scherm Productiepijpleiding.
+* Het **etiket van de Versie** is opnieuw geëtiketteerd aan **Markering van het Git** in het scherm van de de pijpleiding van de Productie.
 
-* De labels die het gedrag bepalen wanneer belangrijke metriek niet aan de bepaalde drempel voldoet, zijn opnieuw geëtiketteerd om op hun ware gedrag te wijzen: **Direct annuleren** en **Direct goedkeuren**.
+* De etiketten die het gedrag bepalen wanneer de belangrijke metriek niet de bepaalde drempel ontmoet zijn opnieuw geëtiketteerd om op hun ware gedrag te wijzen: **annuleert onmiddellijk** en **keurt onmiddellijk** goed.
 
-* De lijsten met klassen en methoden zijn bijgewerkt op basis van versie `2021.3.4997.20210303T022849Z-210225` van de SDK van AEM Cloud Service.
+* De lijsten met klasse- en methodeafgekeuringen zijn bijgewerkt op basis van versie `2021.3.4997.20210303T022849Z-210225` van de SDK van AEM Cloud Service.
 
-* De productiepijplijn van Cloud Manager wordt nu opgenomen [Aangepaste UI-tests](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) capaciteit.
+* De pijpleiding van de Productie van Cloud Manager zal nu [ het Testen UI van de Douane ](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) vermogen omvatten.
 
 ### Opgeloste problemen {#bug-fixes-cm-march}
 
@@ -148,8 +148,8 @@ De releasedatum voor Content Transfer Tool v1.3.0 is 4 maart 2021.
 
 ### Nieuw in gereedschap voor inhoudsoverdracht {#what-is-new-ctt-march}
 
-* CTT wordt nu geïnstalleerd op `/apps` in plaats van `/libs` Browserbladwijzers naar bepaalde pagina&#39;s zijn mogelijk niet meer geldig.
-* Wanneer CTT wordt geïnstalleerd, zal de gebruiker een extra niveau moeten navigeren om aan de pagina van de Overdracht van de Inhoud te krijgen. Zie [Het gereedschap Inhoud overbrengen gebruiken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) voor meer informatie .
+* CTT wordt nu geïnstalleerd op `/apps` in plaats van `/libs` Bladwijzers in de browser naar bepaalde pagina&#39;s zijn mogelijk niet meer geldig.
+* Wanneer CTT wordt geïnstalleerd, zal de gebruiker een extra niveau moeten navigeren om aan de pagina van de Overdracht van de Inhoud te krijgen. Zie [ Gebruikend het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) voor meer details.
 
 ### Opgeloste problemen {#bug-fixes-ctt-march}
 
@@ -169,13 +169,13 @@ De releasedatum voor de analyse van best practices v2.1.8 is 22 maart 2021.
 
 ### Nieuw in de Hulpmiddelen van de Refactoring van de Code {#what-is-new-crt}
 
-* Nieuwe en verbeterde functies voor Repository Modernizer. Zie [GitHub Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor de meest recente versie.
+* Nieuwe en verbeterde functies voor Repository Modernizer. Zie [ Middel GitHub: Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) voor de recentste versie.
    * Normaliseer OSGi vormt (behalve vormen RepoInit) aan het aangewezen.cfg.json formaat.
    * Wijzig de naam van de OSGi config-mappen in de opgegeven indeling.
    * Genereer het project ui.apps.structure.
    * Maak de analysemodule.
 
-* Nieuwe en verbeterde functies voor Dispatcher Converter. Zie [GitHub Resource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Nieuwe en verbeterde functies voor Dispatcher Converter. Zie [ Middel GitHub: Converter van Dispatcher ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * Het maken van afzonderlijke bestanden voor verschillende insluitingen in plaats van voor het uitlijnen van de inhoud.
    * Mogelijkheid om zowel het mappad van hosts als het pad naar de hostbestanden af te handelen.
    * De generatie van landbouwbedrijfdossiers met grote klantenconfiguraties in waaier van 600 en meer.

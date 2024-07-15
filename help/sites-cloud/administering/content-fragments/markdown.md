@@ -14,9 +14,9 @@ ht-degree: 2%
 
 # Markering {#markdown}
 
-Wanneer u [ontwerpen](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) de inhoudsfragmenten die u hebt [Tekstvelden met meerdere regels](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) gedefinieerd met de **Standaardtype** van **Markering**. De Inhoudsfragmenteditor gebruikt *markeren* syntaxis waarmee u eenvoudig inhoud kunt schrijven voor zowel paginaontwerp als levering zonder kop:
+Wanneer u [ ](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) creeert uw Fragmenten van de Inhoud u [ Multiline tekstgebieden ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) kunt hebben die met het **StandaardType** van **wordt bepaald Markdown**. De redacteur van het Fragment van de Inhoud gebruikt *syntaxis van de prijsdaling* om u toe te staan om inhoud voor zowel pagina auteursrecht als hoofdloze levering gemakkelijk te schrijven:
 
-![Tekstveld met meerdere regels in de editor markeren](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
+![ de Meerdere gebieden van de Prijsverhoging van de lijntekst in de redacteur ](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 U kunt het volgende definiëren:
 
@@ -60,7 +60,7 @@ Een regeleinde wordt gemaakt door een regel met twee of meer spaties te eindigen
 
 U kunt inline-koppelingen en verwijzingskoppelingen maken.
 
-In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]`.
+In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]` .
 
 Dit zijn voorbeelden van inlineverbindingen:
 
@@ -182,7 +182,7 @@ Codeblokken worden doorgaans gebruikt om broncode te illustreren. U kunt codeblo
 
 ## Backslash-escapen {#backslash-escapes}
 
-Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
+Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML &lt;em>-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
 
     `\\*literal asterisks\\*`
 

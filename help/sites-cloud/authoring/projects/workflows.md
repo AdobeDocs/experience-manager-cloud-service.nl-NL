@@ -16,30 +16,30 @@ ht-degree: 3%
 
 De projectworkflows die beschikbaar zijn uit het vak zijn onder andere:
 
-* **Workflow voor projectgoedkeuring** - Met deze workflow kunt u inhoud toewijzen aan een gebruiker, controleren en vervolgens goedkeuren.
-* **Verzoek starten** - Een workflow waarvoor de toepassing wordt gestart.
-* **Openingspagina aanvragen** - Voor deze workflow is een bestemmingspagina vereist.
-* **E-mail aanvragen** - Workflow voor het aanvragen van een e-mail.
-* **DAM maken en vertalen kopie en DAM maken taalkopie** - Hiermee maakt u vertaalde binaire bestanden, metagegevens en tags voor elementen en mappen.
+* **Werkschema van de Goedkeuring van het Project** - Dit werkschema laat u inhoud aan een gebruiker toewijzen, herzien, dan goedkeuren.
+* **de Lancering van het Verzoek** - een werkschema de verzoeken om een lancering.
+* **Verzoek het Landen Pagina** - Dit werkschema vraagt een het landen pagina.
+* **Verzoek E-mail** - Werkschema voor het verzoeken van een e-mail.
+* **DAM leidt tot en vertaalt exemplaar en DAM leidt het Exemplaar van de Taal** - creeert vertaalde binaire getallen, meta-gegevens, en markeringen voor activa en omslagen.
 
 Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows beschikbaar:
 
-|   | **Eenvoudig project** | **Omzettingsproject** |
+|   | **Eenvoudig Project** | **Vertaal Project** |
 |---|:-:|:-:|
 | Projectgoedkeuringswerkstroom | x |  |
 | Verzoek starten | x |  |
 | Openingspagina aanvragen | x |  |
 | E-mail aanvragen | x | |
 | DAM Create Language Copy&amp;ast; |  | x |
-| DAM &amp;Create and Translate Language Copy |   | x |
+| DAM &amp;Create and Translate Language Copy;ast; |   | x |
 
 >[!NOTE]
 >
->&amp;Laatste; deze workflows worden niet gestart vanuit de **Workflow** tegel in projecten. Zie [Taalkopieën voor middelen maken](/help/sites-cloud/administering/translation/managing-projects.md).
+>&amp;ast; Deze werkschema&#39;s zijn niet begonnen van de **tegel van het Werkschema** in Projecten. Zie [ Creërend de Kopieën van de Taal voor Assets ](/help/sites-cloud/administering/translation/managing-projects.md).
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
-U start een workflow rechtstreeks in Projecten (behalve voor DAM Create Language Copy of DAM Create and Translate Language Copy). Informatie over openstaande taken in een project wordt vermeld in de **Taken** tegel. Meldingen voor taken die moeten worden voltooid, verschijnen naast het gebruikerspictogram.
+U start een workflow rechtstreeks in Projecten (behalve voor DAM Create Language Copy of DAM Create and Translate Language Copy). De informatie over om het even welke opmerkelijke taken in een project is vermeld in de **Tile van Taken**. Meldingen voor taken die moeten worden voltooid, verschijnen naast het gebruikerspictogram.
 
 Raadpleeg de volgende secties voor meer informatie over het werken met workflows in AEM:
 
@@ -53,12 +53,12 @@ Deze sectie beschrijft de werkschema&#39;s beschikbaar voor Projecten.
 
 In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een gebruiker toe, herziet, en keurt dan de inhoud goed.
 
-1. In uw Eenvoudig project, selecteer **`+`** aanmelden **Workflows** tegel en selecteer **Workflow voor projectgoedkeuring**.
+1. In uw Eenvoudig project, selecteer het **`+`** teken in de **werkschema&#39;s** tegel en selecteer **Werkstroom van de Goedkeuring van het Project**.
 1. Ga een titel in en selecteer aan wie om het van de lijst van het Team toe te wijzen. Voer, indien van toepassing, een beschrijving, een inhoudspad, een taakprioriteit en een vervaldatum in.
 
-   ![Goedkeuring aanvragen](/help/sites-cloud/authoring/assets/projects-approval.png)
+   ![ Goedkeuring van het Verzoek ](/help/sites-cloud/authoring/assets/projects-approval.png)
 
-1. Klikken **Maken**. De workflow wordt gestart. De taak wordt weergegeven in de **Taken** tegel.
+1. Klik **creëren**. De workflow wordt gestart. De taak verschijnt in de **tegel van 0} Taken {.**
 
 ## Verzoek indienen om workflow te starten {#request-launch-workflow}
 
@@ -67,10 +67,10 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 1. Selecteer in uw Simple-project het **+**-teken in de tegel **Workflows** en selecteer **Workflow voor lancering aanvragen**.
 1. Voer een titel in voor de opstart en geef het bronpad op. U kunt ook een beschrijving en live datum toevoegen, indien van toepassing. Selecteer Live-gegevens van bronpagina overnemen of subpagina&#39;s uitsluiten, afhankelijk van de manier waarop u de opstart wilt laten uitvoeren.
 
-   ![Verzoek starten](/help/sites-cloud/authoring/assets/projects-request-launch.png)
+   ![ de lancering van het Verzoek ](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Klikken **Maken**. De workflow wordt gestart. De workflow wordt weergegeven in het dialoogvenster **Workflows** lijst (klik op ovalen) **...** op de **Workflows** tegel voor toegang tot deze lijst).
+1. Klik **creëren**. De workflow wordt gestart. Het werkschema verschijnt in de **lijst van Werkschema&#39;s** (klik ellipsen **..** op de **** tegel van Werkschema&#39;s om tot deze lijst toegang te hebben).
 
-## Workflow voor taalkopieën maken (en vertalen) voor middelen {#create-and-translate-language-copy-workflow-for-assets}
+## Workflow voor taalkopieën maken (en vertalen) voor Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-De **Taalkopie maken** en de **Taalkopie maken en vertalen** workflows worden uitvoerig behandeld [maken, taalkopieën voor elementen](/help/assets/translate-assets.md).
+**creeer het Exemplaar van de Taal** en **creeer en vertaalde 3} werkschema&#39;s van het Exemplaar van de Taal {zijn in detail behandeld in [ creërend taalexemplaren voor activa ](/help/assets/translate-assets.md).**

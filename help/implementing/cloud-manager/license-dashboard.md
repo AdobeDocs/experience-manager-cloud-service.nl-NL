@@ -18,7 +18,7 @@ Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-produ
 
 ## Overzicht {#overview}
 
-Het licentiedashboard voor Cloud Manager biedt eenvoudige toegang tot de volgende informatie:
+Het Cloud Manager-licentiedashboard biedt eenvoudige toegang tot de volgende informatie:
 
 1. De rechten van de oplossing zijn beschikbaar aan u over al uw programma&#39;s, met inbegrip van wat wordt gebruikt en wat beschikbaar is
 1. De verbruiksmetriek van het Verzoek van de inhoud die door maand voor de oplossing van Plaatsen wordt trendt
@@ -29,30 +29,30 @@ Ga als volgt te werk om het licentiedashboard te openen.
 
 >[!NOTE]
 >
->Een gebruiker in het dialoogvenster **Zakelijke eigenaar** rol moet worden aangemeld om het licentiedashboard weer te geven.
+>Een gebruiker in de **rol van de BedrijfsEigenaar** moet worden het programma geopend om het Dashboard van de Vergunning te bekijken.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** console, schakelaar aan de **Licentie** tab.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, schakelaar aan de **Vergunning** tabel.
 
-![Licentiedashboard](assets/license-dashboard.png)
+![ Dashboard van de Vergunning ](assets/license-dashboard.png)
 
 Het dashboard bestaat uit drie gedeelten die u laten zien:
 
-* **Oplossingen** - In deze sectie wordt een overzicht gegeven van de oplossingen die u hebt gelicentieerd, zoals Sites of Assets.
-* **Invoegtoepassingen** - Deze sectie vat welke toe:voegen-ons aan uw vergunning gegeven oplossingen samen die u beschikbaar hebt.
-* **Sandbox &amp; Development Environment** - Deze sectie geeft een overzicht van de omgevingen die u hebt.
+* **Oplossingen** - Deze sectie vat welke oplossingen samen die u zoals Plaatsen of Assets hebt vergunning gegeven.
+* **toe:voegen-ons** - Deze sectie vat welke toe:voegen-ons aan uw vergunning gegeven oplossingen samen die u beschikbaar hebt.
+* **zandbak &amp; de Milieu&#39;s van de Ontwikkeling** - Deze sectie vat welke milieu&#39;s samen die u beschikbaar hebt.
 
 Elke sectie vat samen wat beschikbaar is en hoe het, als bij allen wordt gebruikt. Momenteel slechts worden de oplossingen van Plaatsen getoond zelfs als andere oplossingen in de huurder bestaan.
 
-* De **Status** in de kolom wordt het aantal niet-gebruikte rechten weergegeven ten opzichte van het totaal dat voor de huurder beschikbaar is.
-* De **Gevormd op** de kolom geeft de programma&#39;s aan waarop de oplossingsbevoegdheid is toegepast.
+* De **kolom van de Status** toont het aantal ongebruikte rechten tegenover het totaal beschikbaar voor de huurder.
+* **die op** wordt gevormd wijst op de programma&#39;s waarop de oplossingsbevoegdheid is toegepast.
    * Een recht wordt beschouwd als gebruikt slechts wanneer een productiemilieu is gecreeerd of als één bestaat, als een updatepijpleiding op het is in werking gesteld.
-* De **Gebruik** in de kolom worden de in de afgelopen 12 maanden verbruikte inhoudsverzoeken als een grafiek weergegeven wanneer erop wordt geklikt.
+* De **kolom van het Gebruik** toont de inhoudsverzoeken die in de afgelopen 12 maanden als grafiek worden verbruikt wanneer geklikt.
 
 >[!TIP]
 >
->Om te leren hoe te om uw rechten van de Adobe over uw volledige organisatie van Admin Console te beheren, zie [Overzicht van Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
+>Leren hoe te om uw rechten van de Adobe over uw volledige organisatie van Admin Console te beheren, zie het [ overzicht van de Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
 
 ## Veelgestelde vragen {#faq}
 
@@ -64,19 +64,19 @@ Een inhoudsverzoek is een verzoek dat in AEM Sites of om het even welk klant-ver
 
 Inhoudsverzoeken sluiten verzoeken of activiteiten uit die door of namens Adobe worden geïnitieerd met als enig doel het aanbieden van producten en diensten. Adobe-geïdentificeerd gebruikersagent verkeer van bots, kruiplers, en spinnen met betrekking tot gemeenschappelijke onderzoeksmotoren en sociale media diensten is ook uitgesloten.
 
-Zie ook [Inhoudsverzoeken van Cloud Servicen begrijpen](/help/implementing/cloud-manager/content-requests.md).
+Zie ook [ Begrijpend de Verzoeken van de Inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
 
 ### Hoe meet Adobe Experience Manager verzoeken om inhoud? {#how-are-content-requests-measured}
 
-Inhoudsaanvragen worden bijgehouden op Edge-servers van AEM as a Cloud Service. Het verkeer van de oorsprong telt niet op inhoudverzoeken. CDN die in AEM as a Cloud Service sporen geldige HTML en JSON verzoeken wordt ingebouwd.
+Aanvragen voor inhoud worden bijgehouden op AEM as a Cloud Service Edge-servers. Het verkeer van de oorsprong telt niet op inhoudverzoeken. De CDN die in AEM as a Cloud Service is ingebouwd, houdt geldige HTML- en JSON-aanvragen bij.
 
 AEM heeft ook regels om bekende bots uit te sluiten, met inbegrip van bekende diensten die de site regelmatig bezoeken om hun zoekindex of service te vernieuwen.
 
-Zie ook [Inhoudsverzoeken van Cloud Servicen begrijpen](/help/implementing/cloud-manager/content-requests.md).
+Zie ook [ Begrijpend de Verzoeken van de Inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
 
 ### Waarom toont mijn Analytics-rapport andere resultaten dan de AEM Content Requests? {#why-are-reports-different}
 
-Aanvragen voor inhoud kunnen variaties hebben met de rapportagehulpprogramma&#39;s Analytics van een organisatie. Zie voor meer informatie [Inhoudsverzoeken van Cloud Servicen begrijpen](/help/implementing/cloud-manager/content-requests.md).
+Aanvragen voor inhoud kunnen variaties hebben met de rapportagehulpprogramma&#39;s Analytics van een organisatie. Voor meer informatie, zie [ Begrijpend de Verzoeken van de Inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
 
 ### Wat als ik meer over mijn volume van de inhoudshulp zou willen leren? {#current-request-volumes}
 

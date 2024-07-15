@@ -13,11 +13,11 @@ ht-degree: 8%
 
 # Implementatiefase {#implementation-phase}
 
-In de implementatiefase van de reis, zult u de hulpmiddelen onderzoeken waardoor u uw code en inhoud klaar kunt maken om over aan AEM as a Cloud Service worden bewogen.
+In de implementatiefase van de reis, zult u de hulpmiddelen onderzoeken waardoor u uw code en inhoud klaar kunt maken om over naar AEM as a Cloud Service te worden verplaatst.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In de vorige delen van de reis ben je doorgegaan [kennis krijgen van de veranderingen in AEM as a Cloud Service](/help/journey-migration/getting-started.md)en bepaalt of uw implementatie klaar is om met de [gereedheidsfase](/help/journey-migration/readiness.md).
+In de vorige delen van de reis, bent u gegaan door [ die met de veranderingen in AEM as a Cloud Service ](/help/journey-migration/getting-started.md) vertrouwd worden, en bepaald als uw plaatsing klaar is om aan de wolk met de [ gereedheidsfase ](/help/journey-migration/readiness.md) worden bewogen.
 
 Dit artikel gaat verder met advies over het gebruik van de Adobe die u kunt bieden om ervoor te zorgen dat uw code en inhoud klaar zijn om naar de cloud te worden verplaatst.
 
@@ -25,19 +25,19 @@ Dit artikel gaat verder met advies over het gebruik van de Adobe die u kunt bied
 
 Dit document beoogt:
 
-* Introduceer u tot de Manager van de Wolk, AEM ononderbroken integratie en leveringskader dat wordt gebruikt om code aan AEM as a Cloud Service op te stellen
+* Introduceer u aan Cloud Manager, AEM voortdurend integratie en leveringskader dat wordt gebruikt om code aan AEM as a Cloud Service op te stellen
 * Krijg u aan snelheid met het hulpmiddel van de inhoudoverdracht
 * Beschrijf de hulpmiddelen van het coderefactoring u moet gebruiken zodat kunt u uw code voor AEM as a Cloud Service moderniseren
 
 ## Cloud Manager gebruiken {#using-cloud-manager}
 
-Voordat u begint, moet u zich vertrouwd maken met Cloud Manager, aangezien dit het enige mechanisme is voor het implementeren van code AEM as a Cloud Service.
+Voordat u begint, moet u zich vertrouwd maken met Cloud Manager omdat dit het enige mechanisme is voor het implementeren van code naar AEM as a Cloud Service.
 
 Met Cloud Manager kunnen organisaties AEM in de cloud helemaal zelf beheren. Cloud Manager biedt een kader voor doorlopende integratie en levering (CI/CD) waarmee IT-teams en implementatiepartners sneller hun updates en wijzigingen kunnen doorvoeren, zonder verlies in prestaties of veiligheid.
 
 U kunt vertrouwd raken met het gebruik van Cloud Manager door de onderstaande bronnen te raadplegen:
 
-* [Onboarding Journaal](/help/journey-onboarding/overview.md) om zelf-hulpmiddelen over aan boord te nemen voor as a Cloud Service Experience Manager te begrijpen.
+* [ Onboarding Reis ](/help/journey-onboarding/overview.md) om zelfhulpmiddelen over onboarding voor Experience Manager as a Cloud Service te begrijpen.
 
 * [Git integreren met Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) biedt informatie over het gebruik van een Single Git-repository voor het implementeren van code.
 
@@ -47,7 +47,7 @@ U kunt vertrouwd raken met het gebruik van Cloud Manager door de onderstaande br
 
 De exacte stappen van de overgang naar de Cloud Service zijn afhankelijk van de systemen die u hebt aangeschaft en de levenscycluspraktijken van de softwareontwikkeling die u volgt.
 
-Het volgende cijfer toont de belangrijkste stappen betrokken in de fase die uw code en inhoud voor gebruik met AEM as a Cloud Service impliceert omzetten:
+In de volgende afbeelding ziet u de belangrijkste stappen in de fase die het omzetten van uw code en inhoud voor gebruik met AEM as a Cloud Service omvat:
 
 ![afbeelding](/help/journey-migration/assets/exec-image1.png)
 
@@ -61,7 +61,7 @@ Hiermee geeft u precies aan welke subset van content moet worden overgedragen va
 
 De Migratie van de inhoud is een multi-step proces dat planning, het volgen, en samenwerking tussen verschillende teams vereist.
 
-Zie voor meer informatie over de werking van het gereedschap en de manier waarop de Adobe u aanraadt het te gebruiken de [Documentatie van het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+Voor een volledig detail op hoe het hulpmiddel werkt en hoe de Adobe adviseert dat u het gebruikt, zie de [ documentatie van het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Code Refactoring {#code-refactor}
 
@@ -72,18 +72,18 @@ Het is tijd om de bestaande eigenschappen te beginnen reactoring om met Cloud Se
 Eerst, bekijk de documentatie detailleert het basistooling, en begin het refactoring van uw code:
 
 
-* Tijdens planning, is het een goed idee om een lijst van gebieden te hebben die moeten worden bewaakt om met AEM as a Cloud Service compatibel te zijn. U kunt revisie [Richtlijnen voor ontwikkeling](/help/implementing/developing/introduction/development-guidelines.md) voor meer informatie over hoe te om code voor Cloud Service te beproeven en te optimaliseren.
-* Lees meer over hoe u [Configuraties beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) in AEM as a Cloud Service.
-* Leer hoe u een lokale ontwikkelomgeving kunt instellen door de [AS A CLOUD SERVICE SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
-* Tot slot moet u zich vertrouwd maken met de [as a Cloud Service Java API AEM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
+* Tijdens planning, is het een goed idee om een lijst van gebieden te hebben die moeten worden bewaakt om met AEM as a Cloud Service compatibel te zijn. U kunt [ Richtlijnen van de Ontwikkeling ](/help/implementing/developing/introduction/development-guidelines.md) voor meer details over herzien en code voor Cloud Service optimaliseren.
+* Lees omhoog op hoe te [ te leiden Configuraties ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) in AEM as a Cloud Service.
+* Leer hoe te opstelling een Lokale Milieu van de Ontwikkeling door [ SDK van AEM as a Cloud Service te downloaden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
+* Tot slot vertrouwd maken met [ AEM as a Cloud Service Java API ](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Ook kunt u het volgende doen:
 
-* Bekijk deze video om te begrijpen hoe u de Dispatcher SDK lokaal kunt installeren:
+* Bekijk deze video om te zien hoe u de SDK van Dispatcher lokaal kunt installeren:
 
   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
-* Bekijk deze video om te begrijpen hoe u Dispatcher SDK kunt configureren:
+* Bekijk deze video om te begrijpen hoe u de SDK van Dispatcher kunt configureren:
 
   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
@@ -91,76 +91,76 @@ Ook kunt u het volgende doen:
 
 Voor het ontwikkelen en uitvoeren van code in AEM as a Cloud Service is een mentaliteitswijziging vereist. Code moet robuust en veerkrachtig zijn, vooral omdat een instantie op elk moment kan worden gestopt. Code in Cloud Service moet &#39;beseffen&#39; dat deze altijd in een cluster wordt uitgevoerd. Dit betekent dat er altijd meer dan één instantie actief is.
 
-Bepaalde veranderingen worden vereist om AEM Maven projecten wolkencompatibel te zijn. AEM as a Cloud Service vereist een scheiding van *content* en *code* in afzonderlijke pakketten voor implementatie in AEM:
+Bepaalde veranderingen worden vereist om AEM Maven projecten wolkencompatibel te zijn. AEM as a Cloud Service vereist een scheiding van *inhoud* en *code* in verschillende pakketten voor plaatsing in AEM:
 
-* `/apps` en `/libs` worden beschouwd als onveranderlijke AEM, omdat deze niet kunnen worden gewijzigd nadat AEM is gestart (dat wil zeggen bij uitvoering). Dit omvat het maken, bijwerken of verwijderen van bewerkingen. Elke poging om een onveranderbaar gebied tijdens runtime te wijzigen, zal mislukken.
+* `/apps` en `/libs` worden beschouwd als onveranderlijke gebieden van AEM, omdat ze niet kunnen worden gewijzigd nadat AEM gestart is (dat wil zeggen tijdens runtime). Dit omvat het maken, bijwerken of verwijderen van bewerkingen. Elke poging om een onveranderbaar gebied tijdens runtime te wijzigen, zal mislukken.
 
-* Alle andere gegevens in de opslagplaats, (bijvoorbeeld `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp`) zijn alle veranderbare gebieden, wat betekent dat deze tijdens runtime kunnen worden gewijzigd.
+* Alle andere elementen in de opslagplaats (bijvoorbeeld `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp` ) zijn veranderbare gebieden, wat betekent dat ze tijdens runtime kunnen worden gewijzigd.
 
-U kunt meer leren door de [Aanbevolen pakketstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md#recommended-package-structure) documentatie.
+U kunt meer leren door de [ Aanbevolen documentatie van de Structuur van het Pakket ](/help/implementing/developing/introduction/aem-project-content-package-structure.md#recommended-package-structure) te raadplegen.
 
 
 ### Hulpprogramma&#39;s voor cloudmigratie {#cloud-migration-tools}
 
 De Adobe verstrekt verscheidene hulpmiddelen helpen sommige van uw code refactoring taken versnellen. Als u deze gereedschappen en de problemen die ze oplossen begrijpt, wordt de migratie minder complex en sneller.
 
-* [Workflowmigratie van middelen](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), een hulpmiddel dat wordt gebruikt om werkstromen voor de verwerking van bedrijfsmiddelen automatisch te migreren
-* [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), een hulpmiddel dat uw bestaande configuraties van de Verzender in een formaat omzet dat klaar voor AEM as a Cloud Service is.
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), een hulpmiddel dat een AEM Multimode project als input neemt en het in AEM as a Cloud Service omzet
-* [Indexconversie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), een gereedschap waarmee indexen worden omgezet in een formulier dat compatibel is met AEM as a Cloud Service
-* [Moderniseringsinstrumenten](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), een reeks hulpprogramma&#39;s die kunnen worden gebruikt om bestaande AEM te converteren naar de moderne en ondersteunde mogelijkheden van AEM as a Cloud Service.
+* [ Migratie van het Werkschema van Activa ](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), een hulpmiddel dat wordt gebruikt om de werkschema&#39;s van de activaverwerking automatisch te migreren
+* [ de Convertor van Dispatcher ](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), een hulpmiddel dat uw bestaande configuraties van Dispatcher in een formaat omzet dat voor AEM as a Cloud Service klaar is.
+* [ Modernizer van de Bewaarplaats ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), een hulpmiddel dat een AEM Multimode project als input neemt en het in AEM as a Cloud Service één omzet
+* [ Omzetter van de Index ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), een hulpmiddel dat indexen in een vorm compatibel met AEM as a Cloud Service omzet
+* [ Moderniseringshulpmiddelen ](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), een reeks nut die kan worden gebruikt om erfenis AEM eigenschappen in de moderne en gesteunde mogelijkheden van AEM as a Cloud Service om te zetten.
 
-Als u de lokale ontwikkelomgeving hebt ingesteld, kunt u de AEM as a Cloud Service SDK leren kennen door de [documentatie](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+Zodra u opstelling het lokale ontwikkelmilieu hebt, wordt vertrouwd met AEM as a Cloud Service SDK door de [ documentatie ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) te raadplegen.
 
 ### Een code bevriezen plannen {#schedule-a-code-freeze}
 
-Om uw aan de gang zijnde codeontwikkeling op uw actieve AEM samen met de code te beheren refactoring taken als deel van uw overgangsreis, adviseert de Adobe dat u een periode van de codeschrift plant tot u voltooit het herstructureren van uw Geweven project om met AEM as a Cloud Service compatibel te zijn.
+Om uw aan de gang zijnde codeontwikkeling op uw actieve AEM samen met de code refactoring taken als deel van uw overgangsreis te beheren, adviseert de Adobe dat u een periode van de codeschrift plant tot u voltooit het herstructureren van uw Geweven project om met AEM as a Cloud Service compatibel te zijn.
 
-Zodra de projectherstructurering wordt gedaan, kunt u nieuwe codeontwikkeling hervatten die op deze nieuwe structuur wordt gebaseerd. Hierdoor worden fouten in de pijplijnen van Cloud Manager tijdens het implementeren en testen van code verminderd.
+Zodra de projectherstructurering wordt gedaan, kunt u nieuwe codeontwikkeling hervatten die op deze nieuwe structuur wordt gebaseerd. Dit vermindert Cloud Manager pijpleidingsmislukkingen tijdens codeplaatsing en het testen.
 
 >[!NOTE]
 >De taken Inhoudsoverdracht en Codereflector hoeven niet opeenvolgend te worden uitgevoerd. Deze taken kunnen onafhankelijk van elkaar worden uitgevoerd. De juiste projectstructuur is echter vereist om ervoor te zorgen dat de content correct wordt weergegeven in uw Cloud Service-omgeving.
 
 ## Beste praktijken voor de Plaatsing van de Code en het Testen {#best-practices}
 
-De pijplijn van de Manager van de Wolk steunt uitvoering van tests die tegen het werkgebiedmilieu lopen.
+De Cloud Manager-pijpleiding ondersteunt de uitvoering van tests die worden uitgevoerd tegen de werkgebiedomgeving.
 
 Volg de aanbevolen procedures in de onderstaande documenten met betrekking tot het testen van de codekwaliteit:
 
-* [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md), een document waarin het schrijven van testscripts wordt beschreven en waarin het concept van aanbevolen dekking van ten minste 50% wordt toegelicht.
-* [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md) waarmee wordt beoogd de kwaliteitsregels voor aangepaste code te beschrijven die worden uitgevoerd door Cloud Manager en die zijn gemaakt op basis van de beste werkwijzen van AEM Engineering.
+* [ het Testen van de Kwaliteit van de Code ](/help/implementing/cloud-manager/code-quality-testing.md), een document dat het proces beschrijft om testmanuscripten te schrijven en het concept geadviseerde dekking van minstens 50% verklaart.
+* [ Begrijpend de Regels van de Kwaliteit van de Code van de Douane ](/help/implementing/cloud-manager/custom-code-quality-rules.md) die de regels van de douanecode probeert te beschrijven die door Cloud Manager worden uitgevoerd die op beste praktijken van AEM Techniek worden gecreeerd.
 
 ## Voorbereiden op Go-Live {#preparing-for-go-live}
 
-Wanneer u het bronsysteem op migratie voorbereidt, zijn er taken op systeem- en AEM-beheerdersniveau nodig. U kunt beginnen door te controleren of de inhoud in de gegevensopslagruimte goed wordt onderhouden door de [revisie opruimen](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) en de [opschonen van opslaggegevens](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) taakstatus. Als u AEM versie 6.3 uitvoert (aangezien het Hulpmiddel van de Overdracht van de Inhoud vanaf versie 6.3 compatibel is), adviseert men om off-line compensatie uit te voeren, die door de inzameling van het huisvuil van de Opslag van Gegevens wordt gevolgd.
+Wanneer u het bronsysteem op migratie voorbereidt, zijn er taken op systeem- en AEM-beheerdersniveau nodig. U kunt beginnen door te verifiëren dat de inhoudsbewaarplaats in een goed onderhouden staat is door de [ revisie schoonmaakbeurt ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) en de [ status van de de huisvuilinzameling ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) taak van de gegevensopslag te controleren. Als u AEM versie 6.3 uitvoert (aangezien het Hulpmiddel van de Overdracht van de Inhoud vanaf versie 6.3 compatibel is), adviseert men om off-line compensatie uit te voeren, die door de inzameling van het huisvuil van de Opslag van Gegevens wordt gevolgd.
 
-[Controle van gegevensconsistentie](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) wordt aanbevolen voor alle AEM versies om ervoor te zorgen dat de opslagplaats voor inhoud in goede staat is om migratieactiviteiten te initiëren.
+[ de consistentiecontrole van Gegevens ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) wordt geadviseerd over alle AEM versies om ervoor te zorgen dat de inhoudsbewaarplaats in een goede staat om migratieactiviteiten in werking te stellen.
 
-Toegang op beheerdersniveau is vereist voor installatie en configuratie [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+De toegang van het de beheerderniveau van het systeem wordt vereist om [ AZCopy ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) te installeren en te vormen
 
-U wordt ook aangeraden ongebruikte middelen, pagina&#39;s, AEM projecten, gebruikers en groepen te controleren om tijd te besparen bij de migratie. Zie de [Gezondheid opslagplaats voor inhoud](#repository-health) sectie.
+U wordt ook aangeraden ongebruikte Assets, Pagina&#39;s, AEM Projecten, Gebruikers en Groepen te controleren om tijd te besparen bij de migratie. Zie de ](#repository-health) sectie van de Gezondheid van de Bewaarplaats van de Inhoud [.
 
 ### Gezondheid opslagplaats voor inhoud {#repository-health}
 
-Eenmaal toegang tot [productiekloon](#proof-of-migration) wordt ingesteld om de gezondheid van de gegevensopslagplaats te controleren. Zoals vermeld in de vorige sectie, is het doel de opslagplaats op de bron schoon te maken en te comprimeren alvorens de migratie te beginnen. Deze stap bespaart mogelijk veel tijd anders aan het oplossen van problemenkwesties zodra de migratie begint.
+Zodra de toegang tot de kloon van de a [ productie ](#proof-of-migration) wordt gevestigd te werk gaat om de gezondheid van de bewaarplaats te controleren. Zoals vermeld in de vorige sectie, is het doel de opslagplaats op de bron schoon te maken en te comprimeren alvorens de migratie te beginnen. Deze stap bespaart mogelijk veel tijd anders aan het oplossen van problemenkwesties zodra de migratie begint.
 
 | Item handeling | Key Takeaways |
 |---------|----------|
 | Gebruikers, groepen en machtigingen | U moet het volume van gebruikers, groepen, en ingewikkeldheid rond lidmaatschappen begrijpen. Zoek naar mogelijkheden om ongebruikte gebruikers, groepen in de bron vóór migratie op te schonen. |
-| Onvolledige verwerking van middelen | Probeer de verwerking van elementen in het bronsysteem te voltooien voordat u de migratie start om mogelijke problemen bij AEM as a Cloud Service post migratie te voorkomen. |
-| Inhoudsstatus | U wordt aangeraden te zoeken naar onjuiste inhoud en deze leeg te maken voordat u de migratie start. Zoek bijvoorbeeld naar elementen of pagina&#39;s die geen oorspronkelijke uitvoeringen hebben of die vastzitten in de verwerking van de workflow. Zie ook [Systeemgezondheid](#asset-health). |
+| Onvolledige verwerking van middelen | Probeer de verwerking van elementen in het bronsysteem te voltooien voordat u de migratie start om mogelijke problemen in AEM as a Cloud Service na de migratie te voorkomen. |
+| Inhoudsstatus | U wordt aangeraden te zoeken naar onjuiste inhoud en deze leeg te maken voordat u de migratie start. Zoek bijvoorbeeld naar elementen of pagina&#39;s die geen oorspronkelijke uitvoeringen hebben of die vastzitten in de verwerking van de workflow. Zie ook [ Gezondheid van Activa ](#asset-health). |
 
 ## Gegevens verzamelen {#gathering-data}
 
 >[!NOTE]
-> De [Strategie en tijdlijn voor migratie van inhoud](#content-strategy-and-timeline) in deze sectie wordt nader beschreven hoe u de verzamelde gegevens kunt extrapoleren en een migratieplan kunt maken.
+> De [ de migratiestrategie van de Inhoud en chronologie ](#content-strategy-and-timeline) sectie meer details hoe te om de verzamelde gegevens te extrapoleren en een migratieplan tot stand te brengen.
 
 Het verzamelen van gegevens kan u helpen de migratieactiviteiten en bijbehorende taken plannen. De extractie- en innametijden zijn bijzonder handig omdat de gegevenspunten kunnen worden gekoppeld aan een specifieke grootte van de migratieset. Deze gegevenspunten kunnen als zodanig worden geëxtrapoleerd om een plan op te stellen:
 
-* Totale hoeveelheid tijd die is besteed voor [extractie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-* Totale hoeveelheid tijd die is besteed voor [ingestie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-* Totale hoeveelheid tijd die voor de aanvulling is vereist [extractie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
-* Totale hoeveelheid tijd die voor de aanvulling is vereist [ingestie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
+* Totale hoeveelheid tijd die voor [ extractie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) wordt genomen
+* Totale hoeveelheid tijd die voor [ wordt genomen inname ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+* Totale hoeveelheid tijd die voor bovenop-up [ extractie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) wordt genomen
+* Totale hoeveelheid tijd die voor bovenop [ wordt genomen inname ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
 
 <!-- Alexandru: hiding this for now
@@ -169,7 +169,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 -->
 
-Deze gegevenspunten kunnen u ook helpen [KPI&#39;s instellen](/help/journey-migration/readiness.md#establish-kpis) en andere migratietaken.
+Deze gegevenspunten kunnen u [ ook helpen KPI ](/help/journey-migration/readiness.md#establish-kpis) vestigen en andere migratie verwante taken.
 
 ### Migratieplan {#migration-plan}
 
@@ -182,20 +182,20 @@ De volgende tabel illustreert een typisch migratieplan:
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
 | PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |   |   |   |   |   |
 
-Zoals u in de bovenstaande tabel kunt zien, is het nuttig om een specifieke naamgevingsindeling te gebruiken om de migratieherhalingen te identificeren, bijvoorbeeld: **PRDCLONE** voor de AEM van de bron, **AUTEUR/PUBLICEREN** voor de AEM as a Cloud Service omgeving, **CSSTAGE-AUTEUR** voor de AEM as a Cloud Service instantie enzovoort.
+Zoals u in de lijst kunt zien hierboven, is het nuttig om een specifiek noemend formaat te volgen om de migratieherhalingen te identificeren, bijvoorbeeld: **PRDCLONE** voor het bron AEM milieu, **AUTHOR/PUBLISH** voor het milieu van AEM as a Cloud Service, **CSSTAGE-AUTHOR** voor de instantie van AEM as a Cloud Service, etc.
 
 Enkele belangrijke details die van invloed zijn op uw migratieplan:
 
-**Het totale aantal vereiste extracties**
+**Het totale Aantal vereiste Extracties**
 
-* Auteur- en publicatie-extracties in specifieke omgevingen worden beschouwd als twee parallelle extracties, omdat ze onafhankelijk van elkaar zijn.
+* Auteur- en Publish-extracties in specifieke omgevingen worden beschouwd als twee parallelle extracties, aangezien ze onafhankelijk van elkaar zijn.
 * Aantal top-up extracties gebaseerd op de groei van de opslagplaats in specifieke tijdsperiodes.
 
-**Totaal aantal vereiste verteringsproblemen**
+**Totaal Aantal vereiste Ingesties**
 
 * Het is belangrijk om dit punt in het plan te vangen, aangezien een gehaalde reeks in veelvoudige milieu&#39;s van de Cloud Service kan worden opgenomen.
 * Aantal top-up ingestions.
-* Het migreren van inhoud van de BronAuteur aan de instantie van de de dienstauteur van de Wolk en van Bron publiceren aan Cloud Service publiceert is de beste praktijken om te vermijden het opnemen van alle inhoud van de Auteur in de Cloud Service publiceren.
+* Inhoud migreren van de Source-auteur naar de Cloud Service Author-instantie en van de Source Publish naar Cloud Service Publish is de beste manier om te voorkomen dat alle Author-inhoud wordt opgenomen in de Cloud Service Publish.
 
 ### Migratiebeheer {#migration-tracker}
 
@@ -209,7 +209,7 @@ De tracker helpt u ook om:
 
 De volgende tabel illustreert een functionele migratiecontracker:
 
-| Bron (Omgeving / Instantie / URL) | Doel (omgeving / instantie / URL) | Naam migratieset, type (bij openen of boven) | Grootte migratieset (MB) | Gebruikerstoewijzing (Ja/Nee) | Duur van extractie (begin, eind, genomen tijd) | Ingestieduur (begin, einde, tijd genomen) | Problemen/resoluties/details |
+| Source (Environment / Instance / URL) | Doel (omgeving / instantie / URL) | Naam migratieset, type (bij openen of boven) | Grootte migratieset (MB) | Gebruikerstoewijzing (Ja/Nee) | Duur van extractie (begin, eind, genomen tijd) | Ingestieduur (begin, einde, tijd genomen) | Problemen/resoluties/details |
 |---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |
 
@@ -221,8 +221,8 @@ In de volgende sectie worden de belangrijke stappen en bijbehorende taken weerge
 
 ### Inrichting {#fitment}
 
-* Voer revisie schoonmaak uit, de inzameling van de gegevensopslag en de controles van de gegevensconsistentie. Zie ook [Voorbereiden op Go-Live](#preparing-for-go-live)
-* [Statistieken verzamelen](#gathering-data) over de AEM bronopslagplaats:
+* Voer revisie schoonmaak uit, de inzameling van de gegevensopslag en de controles van de gegevensconsistentie. Zie ook [ Voorbereidend voor gaan-Levend ](#preparing-for-go-live)
+* [ Verzamel statistieken ](#gathering-data) over de AEM bronbewaarplaats:
    * Grootte van segmentarchief
    * Grootte van indexarchief
    * Aantal pagina&#39;s
@@ -232,9 +232,9 @@ In de volgende sectie worden de belangrijke stappen en bijbehorende taken weerge
    * Slimme tags toepassen
    * Zoeken op gelijkenis
    * Zoeken naar tekst in woord- en PDF-documenten
-* Verzamel de Analysator van Beste praktijken [verslag](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
-* Importeren in het dialoogvenster [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
-   * Herzie de zelf-analyseaanbeveling om ervoor te zorgen dat AEM as a Cloud Service de opslagvereisten kan behandelen.
+* Verzamel het rapport van de Analysator van Beste praktijken [ ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+* De invoer in [ Cloud Acceleration Manager ](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+   * Bekijk de aanbeveling voor zelfanalyse om ervoor te zorgen dat AEM as a Cloud Service de opslagvereisten kan verwerken.
 * Maak een ondersteuningsticket voor de Adobe voor eventuele verduidelijkingen voordat u doorgaat met het migratieplan.
 
 ### Bewijs van migratie {#proof-of-migration}
@@ -247,15 +247,15 @@ In de volgende sectie worden de belangrijke stappen en bijbehorende taken weerge
    * Het is een mix van alle beschikbare inhoudstypen
    * Bevat alle gebruikers en groepen
 * Bevat 25% van de inhoud of maximaal 1 TB aan inhoud, afhankelijk van welke waarde het minst is.
-* ten minste één volledig uitvoeren en [top-up](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) migratie, van de productiekloon naar de AEM as a Cloud Service niet-productieomgeving
+* Voer minstens één volledige en [ top-up ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) migratie uit, van de productiekloon in het niet productiemilieu van AEM as a Cloud Service
 * Los mogelijke problemen op zoals:
    * Schijfruimte op de AEM
-   * Connectiviteit tussen AEM bron en AEM as a Cloud Service
-   * Alle [beperkingen met betrekking tot inname](go-live.md#known-limitations).
-* Neem de tijd op die u nodig hebt [extractie en inname](#gathering-data):
+   * Connectiviteit tussen de AEM en AEM as a Cloud Service
+   * Om het even welke [ opname verwante beperkingen ](go-live.md#known-limitations).
+* Registreer de tijd voor [ extractie en opname ](#gathering-data) wordt genomen die:
    * Weet hoeveel inhoud per week wordt toegevoegd
-   * Extrapoleer de tijden die van het bewijs van migratie worden gemeten om tot een [migratieplan](#migration-plan).
+   * Extrapoleer de tijden die van de proef van migratie worden gemeten om a [ migratieplan ](#migration-plan) tot stand te brengen.
 
 ## Volgende functies {#what-is-next}
 
-Nadat u volledig hebt begrepen hoe te om te beoordelen of uw AEM installatie klaar is om aan de wolk te worden bewogen, aangezien wij leren hoe te om de hulpmiddelen te gebruiken nodig om het klaar te maken, is het tijd om zich op aan te zetten [introductiefase](/help/journey-migration/go-live.md).
+Nadat u volledig hebt begrepen hoe te om te beoordelen of is uw AEM installatie klaar om aan de wolk worden bewogen, aangezien wij leren hoe te om de hulpmiddelen te gebruiken nodig om het klaar te maken, is het tijd om zich op de [ gaan-levende fase ](/help/journey-migration/go-live.md) te bewegen.

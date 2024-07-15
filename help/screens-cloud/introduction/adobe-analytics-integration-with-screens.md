@@ -22,11 +22,11 @@ ht-degree: 0%
 In deze sectie worden de volgende onderwerpen behandeld:
 
 * **Overzicht**
-* **Architectuurgegevens**
+* **Architecturale Details**
 
 ## Overzicht {#overview}
 
-***AEM Screens*** Gebruikt Adobe Analytics, en daarmee kunt u iets uniek in de markt - dwars-kanaalanalyses bereiken die helpen inhoud correleren die in plaats met andere gegevensbronnen wordt getoond.
+***AEM Screens*** hefboomwerkingen Adobe Analytics, en met dat kunt u iets uniek in de markt - dwars-kanaalanalyse bereiken die helpen inhoud correleren die in plaats met andere gegevensbronnen wordt getoond.
 
 AEM Screens biedt een uitweg uit de box-integratie met Adobe Analytics en biedt u een bewijs van spel.
 
@@ -39,7 +39,7 @@ In deze sectie wordt de volgende functionaliteit beschreven die betrokken is bij
 * Hiermee kunnen feedbacklussen worden gemaakt die gebeurtenissen bijhouden
 * Hiermee kan het systeem inhoud en lay-outs wijzigen op basis van succescriteria die door de auteur van de inhoud zijn gedefinieerd
 
-Adobe Analytics Integration with AEM Screens dwingt dus het volgende af *doelen*:
+De Integratie van Adobe Analytics met AEM Screens dwingt zo de volgende *doelstellingen* af:
 
 * ROI van de implementatie van de digitale handtekening inschakelen
 * Analyses integreren als basis voor toekomstige mogelijkheden voor het verzamelen en analyseren van gebruiksinformatie
@@ -50,11 +50,11 @@ Een AEM Screens-klant wil weten welke inhoud op welk moment en voor hoe lang (ge
 
 In het volgende architectuurdiagram wordt de Adobe Analytics Integration met AEM Screens uitgelegd:
 
-![Integratie met Adobe Analytics](/help/screens-cloud/assets/analytics-architecture.png)
+![ Integratie met Adobe Analytics ](/help/screens-cloud/assets/analytics-architecture.png)
 
 ## Adobe Analytics inschakelen in AEM Screens Cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
-Neem contact op met de Adobe Relationship Manager om Adobe-analysemogelijkheden in te schakelen in de cloud.
+Neem contact op met uw Adobe Relationship Manager om Adobe-analysemogelijkheden in Screens Cloud in te schakelen.
 
 ## Adobe Analytics Service gebruiken in AEM Screens Cloud {#using-adobe-analytics-service-in-aem-screens}
 
@@ -63,4 +63,4 @@ Dit scenario haalt Analytics API door de vraag van het HART van een analysediens
 Analytische gebeurtenissen worden offline opgeslagen in geïndexeerdeDB en later afgekapt en naar de cloud verzonden.
 
 >[!NOTE]
->Meer over het Opeenvolging en het Standaard Model van Gegevens voor Gebeurtenissen leren, zie [Adobe Analytics voor AEM Screens configureren](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) voor meer informatie.
+>Meer over het Opeenvolgen en het Standaard Model van Gegevens voor Gebeurtenissen leren, zie [ Vormend Adobe Analytics voor AEM Screens ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) voor details.

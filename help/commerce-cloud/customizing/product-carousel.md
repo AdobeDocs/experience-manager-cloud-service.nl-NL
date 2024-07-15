@@ -16,21 +16,21 @@ ht-degree: 0%
 
 De component Product Carousel wordt uitgebreid door deze zelfstudie. Als eerste stap voegt u een exemplaar van de productcarrousel toe aan de startpagina om inzicht te krijgen in de basislijnfunctionaliteit:
 
-1. Ga bijvoorbeeld naar de startpagina van de site [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Navigeer aan de Homepage van de plaats, bijvoorbeeld [ http://localhost:4502/editor.html/content/acme/us/en.html ](http://localhost:4502/editor.html/content/acme/us/en.html)
 1. Plaats een nieuwe productcarrouselcomponent in de hoofdlay-outcontainer op de pagina.
-   ![Productcarrouselcomponent](/help/commerce-cloud/assets/product-carousel-component.png)
-1. Vouw het zijpaneel uit (indien nog niet in-/uitgeschakeld) en schakel het vervolgkeuzemenu voor het zoeken van elementen naar **Producten**.
-     ![Carrouselproducten](/help/commerce-cloud/assets/carousel-products.png)    
+   ![ component van de Carrousel van het Product ](/help/commerce-cloud/assets/product-carousel-component.png)
+1. Breid het Zijpaneel (als niet reeds) van een knevel voorzien en schakelaar de activa finder dropdown aan **Producten**.
+     ![ Carrouselproducten ](/help/commerce-cloud/assets/carousel-products.png)    
 1. Dit zou een lijst van beschikbare producten van een verbonden instantie van Adobe Commerce moeten tonen.
-   ![Verbonden instantie](/help/commerce-cloud/assets/connected-instance.png)
+   ![ Verbonden Instantie ](/help/commerce-cloud/assets/connected-instance.png)
 1. Producten worden hieronder weergegeven met standaardeigenschappen:
-   ![Product weergegeven met eigenschappen](/help/commerce-cloud/assets/discount.png)
+   ![ Product dat met Eigenschappen ](/help/commerce-cloud/assets/discount.png) wordt getoond
 
 ## Het verkoopmodel bijwerken {#update-sling-model}
 
 U kunt de bedrijfslogica van de Carousel van het Product uitbreiden door een het Verkopen Model uit te voeren:
 
-1. In uw winde, navigeer onder de kernmodule aan `core/src/main/java/com/venia/core/models/commerce` en maak een CustomCarousel-interface die de CIF ProductCarousel-interface uitbreidt:
+1. In uw winde, navigeer onder de kernmodule aan `core/src/main/java/com/venia/core/models/commerce` en creeer een Interface CustomCarousel die de interface CIF ProductCarousel uitbreidt:
 
    ```
    package com.venia.core.models.commerce;
@@ -38,8 +38,8 @@ U kunt de bedrijfslogica van de Carousel van het Product uitbreiden door een het
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-1. Maak vervolgens een implementatieklasse `CustomCarouselImpl.java` om `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
-Het delegatiepatroon voor verkoopmodellen maakt `CustomCarouselImpl` verwijzing `ProductCarousel` model via de `sling:resourceSuperType` eigenschap:
+1. Maak vervolgens een implementatieklasse `CustomCarouselImpl.java` op `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java` .
+Met het delegatiepatroon voor Sling Models kan `CustomCarouselImpl` via de eigenschap `ProductCarousel` model verwijzen: `sling:resourceSuperType`
 
    ```
    @Self
@@ -47,7 +47,7 @@ Het delegatiepatroon voor verkoopmodellen maakt `CustomCarouselImpl` verwijzing 
    private ProductCarousel productCarousel;
    ```
 
-1. De @PostConstruct-annotatie zorgt ervoor dat deze methode wordt aangeroepen wanneer het Sling-model wordt geïnitialiseerd. De GraphQL-query voor het product is al uitgebreid met de methode extendProductQueryWith om kenmerken op te halen. Werk de GraphQL-query bij om het kenmerk in de gedeeltelijke query op te nemen:
+1. De @PostConstruct-annotatie zorgt ervoor dat deze methode wordt aangeroepen wanneer het Sling-model wordt geïnitialiseerd. De GraphQL-query voor het product is al uitgebreid met de methode extendProductQueryWith om kenmerken op te halen. Werk de GraphQL-query bij en voeg de  kenmerk in de gedeeltelijke query:
 
    ```
    @PostConstruct
@@ -62,15 +62,15 @@ Het delegatiepatroon voor verkoopmodellen maakt `CustomCarouselImpl` verwijzing 
    }
    ```
 
-   In de bovenstaande code worden de `addCustomSimpleField` wordt gebruikt om de `accessory_gemstone_addon` kenmerk.
+   In de bovenstaande code wordt `addCustomSimpleField` gebruikt om het kenmerk `accessory_gemstone_addon` op te halen.
 
 ## De opmaak aanpassen {#customize-markup}
 
 De markering verder aanpassen:
 
-1. Een kopie maken van `productcard.html` van `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` (het kerncomponentpad) naar de module ui.apps `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`.
+1. Maak een kopie van `productcard.html` van `/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` (het kerncomponentkruispad) naar de module ui.apps `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html` .
 
-1. Bewerken `productcard.html` om het douanekenmerk te roepen, dat in de implementatieklasse wordt vermeld:
+1. Bewerk `productcard.html` om het aangepaste kenmerk aan te roepen, dat in de implementatieklasse wordt vermeld:
 
    ```xml
    ..
@@ -86,4 +86,4 @@ De markering verder aanpassen:
    ..
    ```
 
-1. Sparen de veranderingen en stel de updates in om het gebruiken van uw Gemaakt bevel, van een bevel-lijn terminal te AEM. Het aangepaste kenmerk wordt weergegeven `accessory_gemstone_addon` waarde voor de geselecteerde producten op de pagina.
+1. Sparen de veranderingen en stel de updates in om het gebruiken van uw Gemaakt bevel, van een bevel-lijn terminal te AEM. U kunt de aangepaste kenmerkwaarde `accessory_gemstone_addon` voor de geselecteerde producten op de pagina zien.

@@ -21,9 +21,9 @@ ht-degree: 28%
 
 Het hulpmiddel van de Overdracht van de Inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen.
 
-Met dit gereedschap worden ook opdrachtgevers (gebruikers of groepen) automatisch overgedragen.  Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer informatie .
+Met dit gereedschap worden ook opdrachtgevers (gebruikers of groepen) automatisch overgedragen.  Zie [ Toewijzing van de Gebruiker en Belangrijkste Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer informatie.
 
-Met het gereedschap Inhoud overbrengen kunt u het proces voor inhoudsoverdracht integreren met Cloud Acceleration Manager. Hierdoor krijgt de gebruiker alle voordelen die het biedt:
+Met het gereedschap Inhoud overbrengen wordt het proces voor inhoudsoverdracht geïntegreerd met Cloud Acceleration Manager. Hierdoor krijgt de gebruiker alle voordelen die het biedt:
 
 * Zelfbediening om een migratieset één keer uit te pakken en tegelijkertijd in meerdere omgevingen in te voeren
 * Verbeterde gebruikerservaring dankzij betere laadstatussen, instructies en foutafhandeling
@@ -36,20 +36,20 @@ De overdracht van content bestaat uit twee fasen:
 
 1. **Extractie**: Dit heeft betrekking op het extraheren van content van de AEM-broninstantie naar een tijdelijke locatie, de zogenaamde *migratieset*. Een *migratieset* is een opslaggebied op de cloud dat door Adobe wordt geleverd om overgedragen content tijdelijk op te slaan tussen de AEM-broninstantie en de AEM Cloud Service-instantie.
 
-   Zie [Extractieproces in inhoudsoverdracht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) voor meer informatie .
+   Zie [ Proces van de Opwinning in de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) voor meer details.
 
    >[!NOTE]
-   >Toewijzing van gebruikers wordt nu automatisch uitgevoerd als onderdeel van de extractiefase bij de auteur (maar kan optioneel worden uitgeschakeld bij de auteur of ingeschakeld bij publicatie). Zie [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer informatie .
+   >Toewijzing van gebruikers wordt nu automatisch uitgevoerd als onderdeel van de extractiefase bij de auteur (maar kan optioneel worden uitgeschakeld bij de auteur of ingeschakeld bij publicatie). Zie [ Toewijzing van de Gebruiker en Belangrijkste Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer details.
 
 1. **Opname**: Dit verwijst naar het verplaatsen en opnemen van content uit de *migratieset* naar de Cloud Service-doelinstantie.
 
-   Zie [Ingestieproces in inhoudsoverdracht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor meer informatie .
+   Zie [ Proces van de Ingestie in de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) voor meer details.
 
 ## Attributen van een migratieset {#attributes-migration-set}
 
 Een migratieset heeft de volgende kenmerken:
 
-* Met de nieuwe versie kunt u maximaal twintig migratiesets maken in een project dat is gemaakt in Cloud Acceleration Manager.
+* Met de nieuwe versie kunt u maximaal twintig migratiesets maken in een project dat in Cloud Acceleration Manager is gemaakt.
 * Elke migratieset moet een unieke naam hebben.
 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
@@ -57,9 +57,9 @@ De Content Transfer-tool heeft een functie die ondersteuning biedt voor differen
 >[!NOTE]
 >Na de eerste overdracht van content wordt het aangeraden om regelmatig differentiële aanvullingen van content uit te voeren. Zo houdt u de periode waarin content wordt &#39;bevroren&#39; voor de uiteindelijke differentiële contentoverdracht zo kort mogelijk, voordat u live gaat op Cloud Service.
 
-Als u in de extractiefase een bestaande migratieset wilt ***aanvullen***, moet de optie voor *overschrijven* zijn uitgeschakeld. Zie [Extractie naar boven](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) voor meer informatie .
+Als u in de extractiefase een bestaande migratieset wilt ***aanvullen***, moet de optie voor *overschrijven* zijn uitgeschakeld. Zie [ Hoogste Extractie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) voor meer details.
 
-Als u in de opnamefase de deltacontent boven op de huidige content wilt toepassen, moet de optie voor *wissen* zijn uitgeschakeld. Zie [Top Up-inname](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) voor meer informatie .
+Als u in de opnamefase de deltacontent boven op de huidige content wilt toepassen, moet de optie voor *wissen* zijn uitgeschakeld. Zie [ Omhoog Ingestie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) voor meer details.
 
 ## Vervaldatum migratieset {#migration-set-expiry}
 
@@ -82,4 +82,4 @@ Het verstrijken van een migratieset kan op de rij van de Plaats van de Migratie 
 
 ## Volgende functies {#whats-next}
 
-Als u eenmaal over Content Transfer Tool hebt geleerd en het bijbehorende overzicht waarin dit gereedschap wordt beschreven, kunt u bestaande inhoud verplaatsen van een bron-AEM-instantie (on-premise of AMS) naar de AEM Cloud Service-doelinstantie, moet u de inhoud controleren [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).
+Zodra u over het Hulpmiddel van de Overdracht van de Inhoud en zijn overzicht hebt geleerd dat dit hulpmiddel kan worden gebruikt om bestaande inhoud over van een bron AEM instantie (op-gebouw of AMS) aan de instantie van doelAEM Cloud Service te bewegen, moet u [ Eerste vereisten voor het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) herzien.

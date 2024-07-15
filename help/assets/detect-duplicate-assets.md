@@ -1,5 +1,5 @@
 ---
-title: Gedupliceerde elementen zoeken voor [!DNL Adobe Experience Manager] als [!DNL Cloud Service]
+title: Detecteer dubbele activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
 description: Leer hoe u dubbele elementen kunt detecteren
 contentOwner: KK
 mini-toc-levels: 3
@@ -18,33 +18,33 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-Als een DAM-gebruiker een of meer middelen uploadt die al in de gegevensopslagruimte aanwezig zijn, [!DNL Experience Manager] detecteert de duplicatie en brengt de gebruiker op de hoogte. Dubbele detectie is standaard uitgeschakeld, omdat deze invloed kan hebben op de prestaties, afhankelijk van de grootte van de opslagplaats en het aantal geüploade middelen.
+Als een DAM-gebruiker een of meer middelen uploadt die al in de opslagplaats aanwezig zijn, detecteert [!DNL Experience Manager] de duplicatie en wordt de gebruiker hiervan op de hoogte gesteld. Dubbele detectie is standaard uitgeschakeld, omdat deze invloed kan hebben op de prestaties, afhankelijk van de grootte van de opslagplaats en het aantal geüploade middelen.
 
 De functie inschakelen:
 
-1. Navigeren naar **[!UICONTROL Tools > Assets > Assets Configurations]**.
+1. Navigeer naar **[!UICONTROL Tools > Assets > Assets Configurations]** .
 
 1. Klik op **[!UICONTROL Asset Duplication Detector]**.
 
-1. Op de [!UICONTROL Asset Duplication Detector page], klikt u op **[!UICONTROL Enabled]**.
+1. Klik op **[!UICONTROL Enabled]** in het [!UICONTROL Asset Duplication Detector page] .
 
-   `dam:sha1` De waarde voor het veld Metagegevens detecteren zorgt ervoor dat dubbele elementen worden gedetecteerd, zelfs als de bestandsnamen verschillend zijn.
+   `dam:sha1` -waarde voor het veld Metagegevens detecteren zorgt ervoor dat dubbele elementen worden gedetecteerd, zelfs als de bestandsnamen verschillend zijn.
 
 1. Klik op **[!UICONTROL Save]**.
 
-   ![Detector van duplicatie van middelen](assets/asset-duplication-detector.png)
+   ![ Detector van de Duplicatie van Activa ](assets/asset-duplication-detector.png)
 
 >[!NOTE]
 >
->Als u Duplicatiedetector hebt geconfigureerd met `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuratiedossier (configuratie OSGi), kunt u het blijven gebruiken, nochtans, adviseert de Adobe het gebruiken van de nieuwe methode.
+>Als u de Detector van de Duplicatie gebruikend `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuratiedossier (configuratie OSGi) hebt gevormd, kunt u het blijven gebruiken, echter, adviseert de Adobe het gebruiken van de nieuwe methode.
 
 
 Zodra toegelaten, verzendt de Experience Manager berichten van dubbele activa naar Experience Manager Inbox. Het is een geaggregeerd resultaat voor meerdere duplicaten. Op basis van de resultaten kunnen gebruikers ervoor kiezen de elementen te verwijderen.
 
-![Melding in postvak voor dubbele elementen](assets/duplicate-detect-inbox-notification.png)
+![ Inbox bericht voor dubbele activa ](assets/duplicate-detect-inbox-notification.png)
 
 >[!NOTE]
 >

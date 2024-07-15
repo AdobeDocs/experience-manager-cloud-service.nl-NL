@@ -28,7 +28,7 @@ Cloud Manager biedt u zelfbedieningsgereedschappen om SSL-certificaten te instal
 
 Bedrijven gebruiken SSL-certificaten om hun websites te beveiligen en hun klanten in staat te stellen er vertrouwen in te stellen. Voor gebruik van het SSL-protocol vereist een webserver het gebruik van een SSL-certificaat.
 
-Wanneer een entiteit een certificaat aanvraagt bij een certificeringsinstantie, voltooit de certificeringsinstantie een verificatieproces. Dit kan zich van het verifiëren van domeinnaamcontrole tot het verzamelen van de documenten van de bedrijfregistratie en abonneeovereenkomsten uitstrekken. Zodra de informatie van een entiteit is geverifieerd, zal de CA hun openbare sleutel ondertekenen gebruikend de privé sleutel van CA. Omdat alle belangrijke certificeringsinstanties basiscertificaten hebben in webbrowsers, wordt het certificaat van de entiteit gekoppeld via een *vertrouwensketen* en de webbrowser herkent het als een vertrouwd certificaat.
+Wanneer een entiteit een certificaat aanvraagt bij een certificeringsinstantie, voltooit de certificeringsinstantie een verificatieproces. Dit kan zich van het verifiëren van domeinnaamcontrole tot het verzamelen van de documenten van de bedrijfregistratie en abonneeovereenkomsten uitstrekken. Zodra de informatie van een entiteit is geverifieerd, zal de CA hun openbare sleutel ondertekenen gebruikend de privé sleutel van CA. Omdat alle belangrijke certificaatautoriteiten wortelcertificaten in Webbrowsers hebben, wordt het certificaat van de entiteit verbonden door a *ketting van vertrouwen* en Webbrowser zal het als vertrouwd op certificaat erkennen.
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ Cloud Manager biedt ondersteuning voor de volgende gebruiksopties voor SSL-certi
 
 ## Recommendations {#recommendations}
 
-AEM as a Cloud Service ondersteunt alleen veilige `https` sites.
+AEM as a Cloud Service ondersteunt alleen beveiligde `https` sites.
 
 * Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden.
 * Dergelijke klanten profiteren door één certificaat met veelvoudige domeinen te krijgen.
@@ -63,9 +63,9 @@ OV- en EV-certificaten bieden gebruikers extra door CA gevalideerde informatie d
 
 ### Certificaatindeling {#certificate-format}
 
-SSL-certificaatbestanden moeten de PEM-indeling hebben om bij Cloud Manager te worden geïnstalleerd. Algemene bestandsextensies in de PEM-indeling omvatten: `.pem,` .`crt`, `.cer`, en `.cert`.
+SSL-certificaatbestanden moeten de PEM-indeling hebben om bij Cloud Manager te worden geïnstalleerd. Algemene bestandsextensies in de PEM-indeling zijn onder andere `.pem,` .`crt` , `.cer` en `.cert` .
 
-Het volgende `openssl` U kunt opdrachten gebruiken om niet-PEM-certificaten om te zetten.
+De volgende `openssl` -opdrachten kunnen worden gebruikt om niet-PEM-certificaten om te zetten.
 
 * PFX converteren naar PEM
 

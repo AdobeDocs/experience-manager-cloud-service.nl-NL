@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bulk bewerken van pagina-eigenschappen configureren {#configuring-bulk-editing-of-page-properties}
 
-[Pagina-eigenschappen in bulk bewerken](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages) Hiermee kunt u de eigenschappen van meerdere pagina&#39;s tegelijk bewerken.
+[ Bulk het uitgeven van paginaeigenschappen ](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages) laat u de eigenschappen van veelvoudige pagina&#39;s in één keer uitgeven.
 
 ## Overwegingen {#considerations}
 
@@ -22,7 +22,7 @@ Pagina-eigenschappen zijn standaard niet ingeschakeld voor bulkbewerking. Ze moe
 * Bepaalde velden zijn gewoonlijk uniek. U moet beslissen of het zinvol is dergelijke velden in te schakelen voor bulkbewerking, wanneer er één waarde wordt toegepast.
    * Paginatitels zijn bijvoorbeeld bijna altijd uniek.
 * Bepaalde velden kunnen meerdere waarden hebben die een betekenisvolle weergave vereisen bij het renderen.
-   * Bijvoorbeeld een vervolgkeuzelijst met status **Gereed voor publicatie**. Dit kan verschillende waarden hebben voordat bulkbewerkingen worden uitgevoerd, zoals **klaar**, **tijdens de herziening**, **in uitvoering**, enzovoort.
+   * Bijvoorbeeld, een status drop-down geëtiketteerd **Klaar voor Publicatie**. Dit zou verscheidene waarden vóór bulk-uitgeeft zoals **klaar**, **in overzicht**, **in uitvoering**, etc. kunnen hebben.
 
 Vanwege de mogelijkheid van meerdere waarden wordt aangeraden alleen de volgende veldtypen in te schakelen voor bulkbewerking.
 
@@ -35,17 +35,17 @@ Vanwege de mogelijkheid van meerdere waarden wordt aangeraden alleen de volgende
 
 ## Veld inschakelen {#enabling-a-field}
 
-Deze stappen gebruiken de `/apps/core/wcm/components/page/v1/page` van de [WKND-voorbeeldinhoud](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als voorbeeld om bulkbewerking op een veld in een ontwikkelomgeving mogelijk te maken.
+Deze stappen gebruiken `/apps/core/wcm/components/page/v1/page` van de [ WKND steekproefinhoud ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) als voorbeeld om bulkhet uitgeven op een gebied in een ontwikkelomgeving toe te laten.
 
 1. Met CRXDE opent u de pagina-component.
-1. Ga naar het gewenste veld in het dialoogvenster `cq:dialog` definitie.
+1. Navigeer naar het vereiste veld binnen de definitie van `cq:dialog` .
 1. Definieer de volgende eigenschap op het veldknooppunt:
 
    * **Naam**: `allowBulkEdit`
    * **Type**: `Boolean`
    * **Waarde**: `true`
 
-1. Selecteren **Alles opslaan** om uw updates voort te zetten.
+1. Selecteer **sparen allen** om uw updates voort te zetten.
 
 ## Beperkingen {#limitations}
 

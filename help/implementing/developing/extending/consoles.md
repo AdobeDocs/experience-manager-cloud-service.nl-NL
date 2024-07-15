@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # Consoles aanpassen {#customizing-consoles}
 
-AEM biedt opties voor het aanpassen van de consoles (en de [functionaliteit voor paginaontwerp](/help/implementing/developing/extending/page-authoring.md)) van de ontwerpinstantie.
+AEM verstrekt opties om de consoles (en de [ pagina auteursfunctionaliteit ](/help/implementing/developing/extending/page-authoring.md)) van uw auteursinstantie aan te passen.
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit aan te bieden, terwijl het hergebruiken van standaardfuncties, voorwerpen, en methodes. Wanneer het aanpassen met clientlibs, kunt u uw eigen clientlib onder creëren `/apps.` Het kan bijvoorbeeld de code bevatten die is vereist voor uw aangepaste component.
+Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit aan te bieden, terwijl het hergebruiken van standaardfuncties, voorwerpen, en methodes. Wanneer u clientlibs aanpast, kunt u onder `/apps.` bijvoorbeeld uw eigen clientlib maken die de code bevat die is vereist voor uw aangepaste component.
 
-Zie [Client-Side bibliotheken gebruiken op AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
+Zie [ Gebruikend cliënt-Kant Bibliotheken op AEM as a Cloud Service ](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Bedekkingen {#overlays}
 
-Bedekkingen zijn gebaseerd op knooppuntdefinities en bieden u de mogelijkheid om de standaardfunctionaliteit te bedekken onder `/libs` met uw eigen aangepaste functionaliteit onder `/apps`. Bij het maken van een bedekking is een 1:1-kopie van het origineel niet vereist, omdat [Sling resource merge](/help/implementing/developing/introduction/sling-resource-merger.md) staat overerving toe.
+Bedekkingen zijn gebaseerd op knooppuntdefinities en maken het mogelijk om de standaardfunctionaliteit onder `/libs` te bedekken met uw eigen aangepaste functionaliteit onder `/apps` . Wanneer het creëren van een bekleding, wordt een 1:1 exemplaar van origineel niet vereist, aangezien [ het Schuiven middelfusie ](/help/implementing/developing/introduction/sling-resource-merger.md) voor overerving toestaat.
 
 Bedekkingen kunnen op verschillende manieren worden gebruikt om uw AEM uit te breiden. In de volgende secties worden verschillende voorbeelden gegeven.
 
-Zie ook [Bedekkingen voor Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
+Zie ook [ Bekledingen voor Adobe Experience Manager as a Cloud Service ](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->Als u geïnteresseerd bent in opties om de ontwerpervaring aan te passen, raadpleegt u [Paginaontwerp aanpassen](/help/implementing/developing/extending/page-authoring.md).
+>Als u in opties geinteresseerd bent om de auteurservaring aan te passen, zie [ Aanpassend de Authoring van de Pagina ](/help/implementing/developing/extending/page-authoring.md).
 
 ## De standaardweergave voor een console aanpassen {#customizing-the-default-view-for-a-console}
 
@@ -63,7 +63,7 @@ U kunt de standaardweergave (kolom, kaart, lijst) voor een console aanpassen:
 
 U kunt uw eigen componenten bouwen en de overeenkomstige cliëntbibliotheken voor douaneacties omvatten.
 
-* U kunt bijvoorbeeld een **Bevorderen tot sociale media** actie bij:
+* Bijvoorbeeld, kunt u a **willen tot stand brengen bevordert aan Sociale Media** actie bij:
 
    * `/apps/wcm/core/clientlibs/sites/js/socialmedia.js`
 
@@ -83,7 +83,7 @@ U kunt bijvoorbeeld een component maken om de rendervoorwaarden volgens een groe
 
 * `/apps/myapp/components/renderconditions/group`
 
-Om deze op **Site maken** actie op de plaatsenconsole:
+Om deze op **toe te passen creeer de actie van de Plaats** op de plaatsenconsole:
 
 * `/libs/wcm/core/content/sites`
 
@@ -95,7 +95,7 @@ Om deze op **Site maken** actie op de plaatsenconsole:
 
    * `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-Met de eigenschappen van dit knooppunt kunt u de `groups` is toegestaan de specifieke handeling uit te voeren, bijvoorbeeld `administrators`
+Met eigenschappen op dit knooppunt kunt u de handeling `groups` definiëren die de specifieke handeling mag uitvoeren, bijvoorbeeld `administrators`
 
 ### Kolommen aanpassen in de lijstweergave {#customizing-columns-in-list-view}
 
@@ -109,14 +109,14 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
 1. Voeg uw nieuwe kolommen toe of verwijder bestaande kolommen.
 
-Als u aanvullende gegevens wilt invoegen, moet u een [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met een `pageInfoProviderType` eigenschap.
+Als u extra gegevens wilt opnemen, moet u a [ PageInfoProvider ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a `pageInfoProviderType` bezit schrijven.
 
 >[!NOTE]
 >
->Deze functie is geoptimaliseerd voor kolommen met tekstvelden. Voor andere gegevenstypen is het mogelijk om te bedekken `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Deze functie is geoptimaliseerd voor kolommen met tekstvelden. Voor andere gegevenstypen is het mogelijk om `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` te bedekken.
 
 ### Bronnen filteren {#filtering-resources}
 
 Wanneer het gebruiken van een console, moet een gebruiker vaak uit middelen zoals pagina&#39;s, componenten, of activa selecteren. Dit kan de vorm hebben van een lijst waaruit de auteur een punt moet kiezen.
 
-Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [Paginaontwerp aanpassen](/help/implementing/developing/extending/page-authoring.md#filtering-resources) voor meer informatie.
+Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [ het Aanpassen van de Authoring van de Pagina ](/help/implementing/developing/extending/page-authoring.md#filtering-resources) voor details.

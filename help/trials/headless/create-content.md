@@ -24,7 +24,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="De console voor inhoudsfragmenten starten"
->abstract="Het maken van consistente inhoud van hoge kwaliteit die naadloos werkt in uw apps en websites, leidt tot een geweldige klantervaring. Deze module begeleidt u door het creëren van uw eerste inhoud zonder kop door de console van het Fragment van de Inhoud te gebruiken.<br><br>Start deze module op een nieuw tabblad door op de onderstaande knop te klikken en volg deze handleiding."
+>abstract="Het maken van consistente inhoud van hoge kwaliteit die naadloos werkt in uw apps en websites, leidt tot een geweldige klantervaring. Deze module begeleidt u door het creëren van uw eerste inhoud zonder kop door de console van het Fragment van de Inhoud te gebruiken.<br><br> lanceer deze module in een nieuw lusje door de knoop hieronder te klikken, dan deze gids te volgen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
@@ -39,21 +39,21 @@ In deze module, creeert u een Fragment van de Inhoud dat op dat model door de co
 
 De console van het Fragment van de Inhoud wordt gebruikt om inhoud zonder kop over leveringskanalen en onafhankelijk van context tot stand te brengen en uit te geven, die de meest efficiënte methode in vele auteursgevallen kan zijn. In een recentere module zullen wij het uitgeven van inhoud zonder titel in context en op zijn plaats onderzoeken.
 
-1. Selecteer de **Maken** knoop bij top-right van de console.
+1. Selecteer **creeer** knoop bij het hoogste recht van de console.
 
-1. De **Nieuw inhoudsfragment** wordt geopend waar u een inhoudsfragment kunt beginnen te maken. **Locatie** wordt automatisch gevuld met de locatie waar de nieuwe inhoud wordt opgeslagen.
+1. Het **Nieuwe de dialoogvakje van het Fragment van de Inhoud** opent waar u kunt beginnen tot een Fragment van de Inhoud te leiden. **Plaats** wordt automatisch bevolkt met waar de nieuwe inhoud wordt bewaard.
 
-1. In de **Inhoudsfragmentmodel** vervolgkeuzelijst, selecteert u de **Adventure** Model voor inhoudsfragment dat u eerder hebt gemaakt.
+1. In het **model van het Fragment van de Inhoud** drop-down, selecteer het **model van het Fragment van de Inhoud van het Avontuur** u eerder creeerde.
 
-1. Toevoegen `Tuscany` als beschrijvend **Titel** voor het inhoudsfragment. Hiermee identificeert u het fragment in de console.
+1. Voeg `Tuscany` als beschrijvende **Titel** voor het Fragment van de Inhoud toe. Hiermee identificeert u het fragment in de console.
 
-1. Selecteren **Maken en openen**.
+1. Selecteer **creeer en open**.
 
-![Een nieuw inhoudsfragment maken](assets/do-not-localize/create-content.png)
+![ Creërend een nieuw Fragment van de Inhoud ](assets/do-not-localize/create-content.png)
 
 >[!TIP]
 >
->Afhankelijk van de browserinstellingen kan het nieuwe browsertabblad worden onderdrukt door een pop-upblokkering. Als het nieuwe fragment niet wordt geopend nadat u op **Maken en openen**, controleer uw browserinstellingen.
+>Afhankelijk van de browserinstellingen kan het nieuwe browsertabblad worden onderdrukt door een pop-upblokkering. Als uw nieuw fragment niet opent na het klikken **creeer en open**, controleer uw browser montages.
 
 ## Inhoud toevoegen aan uw inhoudsfragment {#add-content}
 
@@ -61,39 +61,39 @@ Nadat u het nieuwe inhoudsfragment hebt opgeslagen en geopend, wordt de editor v
 
 1. In de inhoudsfragmenteditor worden de velden weergegeven die u in het geselecteerde model hebt gedefinieerd. Hier kunt u inhoud toevoegen aan elk veld om het inhoudsfragment te voltooien. Uw voortgang wordt automatisch opgeslagen.
 
-1. Geef een **Titel** voor uw fragment door `Tuscan Adventure`.
+1. Verstrek a **Titel** voor uw fragment door `Tuscan Adventure` in te gaan.
 
-1. Geef een **Beschrijving** voor het fragment door in de volgende tekst te plakken.
+1. Verstrek a **Beschrijving** voor uw fragment door in de volgende tekst te kleven.
 
    ```text
    Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
-1. Geef een **Prijs** voor uw fragment door in te voeren `$700`.
+1. Verstrek a **Prijs** voor uw fragment door binnen binnen te gaan `$700`.
 
-1. Een **Afbeelding** dat representatief is voor de reis door te tikken of te klikken **Element toevoegen** in de **Afbeelding** veld.
+1. Verstrek een **Beeld** dat van de reis door te tikken of te klikken **activa** op het **Beeld** gebied {toevoegen.
 
-1. Selecteer in het pop-upvenster Middelen de optie **Zoeken in middelen** om te selecteren uit een bestaand element in de bibliotheek met elementen.
+1. In de activa pop-up, uitgezochte **doorbladert Assets** om van een bestaand middel in de activa bibliotheek te selecteren.
 
-   ![Element toevoegen](assets/do-not-localize/add-asset.png)
+   ![ voeg activa ](assets/do-not-localize/add-asset.png) toe
 
-1. De **Element selecteren** wordt geopend. Navigeer met de structuurnavigator in het linkerdeelvenster naar **Alle elementen** > **aem-demo-assets** > **en** > **avonturen** > **wielrennen**.
+1. Het **Uitgezochte de dialoogvakje van Activa** opent. Gebruikend de boomnavigator in het linkerpaneel, navigeer aan **Alle activa** > **aem-demo-activa** > **en** > **avonturen** > **kring-tuscany**.
 
-1. De inhoud van de **wielrennen** aan de rechterkant. Selecteer de afbeelding `ADOBESTOCK_141786166.JPEG`.
+1. De inhoud van de **cycling-tuscany** omslag wordt getoond aan het recht. Selecteer de afbeelding `ADOBESTOCK_141786166.JPEG` .
 
-1. Selecteren **Selecteren**.
+1. Selecteer **Uitgezocht**.
 
-   ![Element selecteren](assets/do-not-localize/select-asset.png)
+   ![ Uitgezochte activa ](assets/do-not-localize/select-asset.png)
 
 1. De geselecteerde afbeelding wordt weergegeven in het inhoudsfragment. De editor slaat de wijzigingen automatisch op.
 
-1. Als u klaar bent met het toevoegen van inhoud, selecteert u de **Publiceren** in de rechterbovenhoek van de editor. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps. Selecteer vervolgens **Nu** in de vervolgkeuzelijst. U kunt ook plannen dat de presentatie op een later tijdstip wordt gepubliceerd.
+1. Zodra u wordt gebeëindigd toevoegend inhoud, selecteer de **knoop van Publish** bij het hoogste recht van de redacteur. Hierdoor is uw inhoudsfragment beschikbaar voor gebruik door externe apps. Dan selecteer **nu** van drop-down. U kunt ook plannen dat de presentatie op een later tijdstip wordt gepubliceerd.
 
-   ![Inhoud publiceren](assets/do-not-localize/publish.png)
+   ![ de inhoud van Publish ](assets/do-not-localize/publish.png)
 
-1. De **Inhoudsfragmenten publiceren** wordt weergegeven. AEM voert automatisch een verwijzingscontrole uit om ervoor te zorgen dat alle noodzakelijke middelen voor uw Inhoudsfragment worden gepubliceerd. In dit geval moet u ook het model publiceren dat u hebt gemaakt. Selecteren **Publiceren**.
+1. De **de dialoog van de Fragmenten van de Inhoud van Publish** verschijnt. AEM voert automatisch een verwijzingscontrole uit om ervoor te zorgen dat alle noodzakelijke middelen voor uw Inhoudsfragment worden gepubliceerd. In dit geval moet u ook het model publiceren dat u hebt gemaakt. Selecteer **Publish**.
 
-   ![Publiceren en referentiecontrole](assets/do-not-localize/publish-confirm.png)
+   ![ Publish en verwijzingscontrole ](assets/do-not-localize/publish-confirm.png)
 
 1. De publicatie wordt bevestigd in een banner.
 

@@ -1,6 +1,6 @@
 ---
 title: Elementen, mappen en verzamelingen distribueren en delen
-description: Digitale elementen distribueren met methoden als delen als een koppeling, downloaden en via [!DNL Brand Portal], [!DNL desktop app], en [!DNL Asset Link].
+description: Verdeel uw digitale activa gebruikend methodes zoals aandeel als verbinding, het downloaden, en via  [!DNL Brand Portal],  [!DNL desktop app], en  [!DNL Asset Link].
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
@@ -15,48 +15,48 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-[!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen te delen van [!DNL Experience Manager Assets] als [!DNL Cloud Service]:
+Met [!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Gebruik de volgende methoden om elementen van [!DNL Experience Manager Assets] te delen als een [!DNL Cloud Service] :
 
-* [Delen als koppeling](#sharelink).
-* [Elementen downloaden](/help/assets/download-assets-from-aem.md) en delen afzonderlijk.
-* Delen met [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
-* Delen met [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
-* Delen met [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
+* [ Aandeel als verbinding ](#sharelink).
+* [ de activa van de Download ](/help/assets/download-assets-from-aem.md) en delen afzonderlijk.
+* Deel gebruikend [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+* Delen met [[!DNL Adobe Asset Link] ](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) .
+* Delen met [[!DNL Brand Portal] ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html) .
 
 ## Vereisten {#prerequisites}
 
-U hebt beheerdersrechten nodig voor [configureren van instellingen voor het delen van elementen als een koppeling](#config-link-share-settings).
+U hebt de voorrechten van de Beheerder nodig om [ montages voor het delen van activa als Verbinding ](#config-link-share-settings) te vormen.
 
 ## Instellingen voor gedeelde koppelingen configureren {#config-link-share-settings}
 
-[!DNL Experience Manager Assets] staat u toe om de standaardmontages van het verbindingsaandeel te vormen.
+In [!DNL Experience Manager Assets] kunt u de standaardinstellingen voor het delen van koppelingen configureren.
 
-1. Klik op de knop [!DNL Experience Manager] logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configuration]** > **[!UICONTROL Link Share]**.
+1. Klik op het logo [!DNL Experience Manager] en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configuration]** > **[!UICONTROL Link Share]** .
 1. Begininstellingen:
 
-   * **Inclusief originelen:**
+   * **omvat Originelen:**
 
-      * Selecteren `Select Include Originals` om de `Include Originals` in het dialoogvenster voor het delen van koppelingen.
-      * Selecteer hoe de `Include Originals` wordt weergegeven in het dialoogvenster Delen van koppeling. [!UICONTROL Editable] Hiermee kan de gebruiker de instellingen wijzigen die hier in de Instellingen bij openen zijn gedefinieerd. Met `Read-only` de instelling wordt weergegeven, maar kan niet worden gewijzigd. `Hidden` Hiermee verbergt u de instelling en gebruikt u de waarde die hier in de Begininstellingen is geconfigureerd.
-   * **Inclusief uitvoeringen:**
-      * Selecteren `Select Include Renditions` om de `Include Renditions` in het dialoogvenster voor het delen van koppelingen.
-      * Selecteer hoe de `Include Renditions` wordt weergegeven in het dialoogvenster Delen van koppeling. [!UICONTROL Editable] Hiermee kan de gebruiker de instellingen wijzigen die hier in de Instellingen bij openen zijn gedefinieerd. Met `Read-only` de instelling wordt weergegeven, maar kan niet worden gewijzigd. `Hidden` Hiermee verbergt u de instelling en gebruikt u de waarde die hier in de Begininstellingen is geconfigureerd.
+      * Selecteer `Select Include Originals` om standaard de optie `Include Originals` te selecteren in het dialoogvenster voor het delen van koppelingen.
+      * Selecteer in het dialoogvenster Koppelen hoe de optie `Include Originals` wordt weergegeven. Met [!UICONTROL Editable] kan de gebruiker de instellingen wijzigen die hier in de Instellingen bij openen zijn gedefinieerd. Met `Read-only` wordt de instelling weergegeven, maar kan deze niet worden gewijzigd. `Hidden` verbergt de instelling en gebruikt de waarde die hier in de Begininstellingen is geconfigureerd.
+   * **omvat Vertoningen:**
+      * Selecteer `Select Include Renditions` optie om standaard de optie `Include Renditions` te selecteren in het dialoogvenster voor het delen van koppelingen.
+      * Selecteer in het dialoogvenster Koppelen hoe de optie `Include Renditions` wordt weergegeven. Met [!UICONTROL Editable] kan de gebruiker de instellingen wijzigen die hier in de Instellingen bij openen zijn gedefinieerd. Met `Read-only` wordt de instelling weergegeven, maar kan deze niet worden gewijzigd. `Hidden` verbergt de instelling en gebruikt de waarde die hier in de Begininstellingen is geconfigureerd.
 
-1. Geef de standaardgeldigheidsperiode op voor de koppeling in het dialoogvenster `Validity Period` in het veld `Expiration date` sectie.
+1. Geef de standaardgeldigheidsperiode voor de koppeling op in het veld `Validity Period` in de sectie `Expiration date` .
 
 1. **[!UICONTROL Link share]** in de actiebalk:
-   * Alle gebruikers met `jcr:modifyAccessControl` machtigingen kunnen de [!UICONTROL Link share] -optie. Het is standaard zichtbaar voor alle beheerders. De [!UICONTROL Link share] Deze knop is standaard zichtbaar voor iedereen. U kunt configureren om deze optie alleen voor de gedefinieerde groepen weer te geven of u kunt deze optie ook van specifieke groepen weigeren. Selecteren `Allow only for groups` als u specifieke groepen wilt toestaan om `Share Link` -optie. Selecteren `Deny from groups` de `Share Link` van specifieke groepen. Als u een van deze opties hebt geselecteerd, geeft u de groepnamen op met `Select Groups` veld om de groepnamen toe te voegen die u moet toestaan of weigeren.
+   * Alle gebruikers met `jcr:modifyAccessControl` -machtigingen kunnen de optie [!UICONTROL Link share] weergeven. Het is standaard zichtbaar voor alle beheerders. De knop [!UICONTROL Link share] is standaard zichtbaar voor iedereen. U kunt configureren om deze optie alleen voor de gedefinieerde groepen weer te geven of u kunt deze optie ook van specifieke groepen weigeren. Selecteer `Allow only for groups` als u wilt dat bepaalde groepen de optie `Share Link` kunnen weergeven. Selecteer `Deny from groups` om de optie `Share Link` van specifieke groepen te weigeren. Nadat u een van deze opties hebt geselecteerd, geeft u de groepnamen op met het veld `Select Groups` om de groepnamen toe te voegen die u wilt toestaan of weigeren.
 
-Voor instellingen met betrekking tot e-mailconfiguratie gaat u naar [Documentatie voor e-mailservice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+Voor de verwante montages van de Configuratie E-mail, bezoek [ Documentatie van de Dienst E-mail ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
-![E-mailservice configureren](/help/assets/assets/config-email-service.png)
+![ vorm E-maildienst ](/help/assets/assets/config-email-service.png)
 
 ## Elementen delen als koppeling {#sharelink}
 
-Het delen van elementen via een koppeling is een handige manier om de bronnen beschikbaar te maken voor externe partijen, marketers en andere [!DNL Experience Manager] gebruikers. Met deze functionaliteit kunnen anonieme gebruikers de elementen openen en downloaden die met hen worden gedeeld. Bij het downloaden van elementen van een gedeelde koppeling [!DNL Experience Manager Assets] gebruikt een asynchrone dienst die sneller en ononderbroken download aanbiedt. De te downloaden elementen worden op de achtergrond in ZIP-archieven van beheerbare bestandsgrootte in een wachtrij geplaatst. Voor grote downloads wordt de download gebundeld in meerdere bestanden van 100 GB per bestandsgrootte.
+Het delen van elementen via een koppeling is een handige manier om de bronnen beschikbaar te maken voor externe partijen, marketers en andere [!DNL Experience Manager] -gebruikers. Met deze functionaliteit kunnen anonieme gebruikers de elementen openen en downloaden die met hen worden gedeeld. Wanneer u elementen downloadt van een gedeelde koppeling, gebruikt [!DNL Experience Manager Assets] een asynchrone service waarmee u bestanden sneller en zonder onderbreking kunt downloaden. De te downloaden elementen worden op de achtergrond in ZIP-archieven van beheerbare bestandsgrootte in een wachtrij geplaatst. Voor grote downloads wordt de download gebundeld in meerdere bestanden van 100 GB per bestandsgrootte.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -65,14 +65,14 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 >[!NOTE]
 >
 >* U hebt ACL toestemming op de omslag of de activa nodig uitgeven die u als verbinding wilt delen.
->* [Uitgaande e-mailberichten inschakelen](/help/implementing/developing/introduction/development-guidelines.md#sending-email) voordat u een koppeling met de gebruikers deelt.
+>* [ laat uitgaande e-mails ](/help/implementing/developing/introduction/development-guidelines.md#sending-email) toe alvorens een verbinding met de gebruikers te delen.
 
 Er zijn twee manieren om de elementen te delen met behulp van de functie voor het delen van koppelingen:
 
-1. Een gedeelde koppeling genereren, [de elementkoppeling kopiëren en delen](#copy-and-share-assets-link) met andere gebruikers.
-1. Een gedeelde koppeling genereren en [de elementkoppeling via e-mail delen](#share-assets-link-through-email). U kunt de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan. U kunt e-mail naar meerdere gebruikers verzenden door hun e-mailadres toe te voegen.
+1. Produceer een gedeelde verbinding, [ exemplaar, en deel de activa verbinding ](#copy-and-share-assets-link) met andere gebruikers.
+1. Produceer een gedeelde verbinding en [ deel de activa verbinding door e-mail ](#share-assets-link-through-email). U kunt de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan. U kunt e-mail naar meerdere gebruikers verzenden door hun e-mailadres toe te voegen.
 
-   ![Dialoogvenster Delen van koppeling](assets/share-link.png)
+   ![ Verbinding die dialoog deelt ](assets/share-link.png)
 
 In beide gevallen kunt u de standaardwaarden wijzigen, zoals de vervaldatum en -tijd, en het downloaden van de oorspronkelijke elementen en de uitvoeringen toestaan.
 
@@ -80,12 +80,12 @@ In beide gevallen kunt u de standaardwaarden wijzigen, zoals de vervaldatum en -
 
 Elementen delen als een openbare URL:
 
-1. Aanmelden bij [!DNL Experience Manager Assets] en navigeer naar **[!UICONTROL Files]**.
+1. Meld u aan bij [!DNL Experience Manager Assets] en ga naar **[!UICONTROL Files]** .
 1. Selecteer de elementen of map met elementen. Klik **[!UICONTROL Share Link]** op de werkbalk.
-1. De **[!UICONTROL Link Sharing]** wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het dialoogvenster **[!UICONTROL Share Link]** veld.
+1. Het dialoogvenster **[!UICONTROL Link Sharing]** wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het veld **[!UICONTROL Share Link]** .
 1. Stel de vervaldatum van de gedeelde koppeling naar wens in.
-1. Onder **[!UICONTROL Link Settings]**, in- of uitschakelen `Include Originals` of `Include Renditions` om een van beide op te nemen of uit te sluiten. U moet ten minste de optie kiezen.
-1. De namen van de geselecteerde elementen worden weergegeven in de rechterkolom van het dialoogvenster [!DNL Share Link] in.
+1. Schakel onder **[!UICONTROL Link Settings]** `Include Originals` of `Include Renditions` in of uit om een van beide opties op te nemen of uit te sluiten. U moet ten minste de optie kiezen.
+1. De namen van de geselecteerde Assets worden weergegeven in de rechterkolom van het dialoogvenster [!DNL Share Link] .
 1. Kopieer de elementkoppeling en deel deze met de gebruikers.
 
 ### Koppeling met middelen delen via e-mailkennisgeving {#share-assets-link-through-email}
@@ -93,26 +93,26 @@ Elementen delen als een openbare URL:
 Elementen delen via e-mail:
 
 1. Selecteer de elementen of map met elementen. Klik **[!UICONTROL Share Link]** op de werkbalk.
-1. De **[!UICONTROL Link Sharing]** wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het dialoogvenster **[!UICONTROL Share Link]** veld.
+1. Het dialoogvenster **[!UICONTROL Link Sharing]** wordt weergegeven met een koppeling naar automatisch gegenereerde elementen in het veld **[!UICONTROL Share Link]** .
 
-   * Typ in het vak E-mailadres het e-mailadres van de gebruiker met wie u de koppeling wilt delen. U kunt de koppeling delen met meerdere gebruikers. Als de gebruiker lid is van uw organisatie, selecteert u het e-mailadres in de suggesties in de vervolgkeuzelijst. Typ in het tekstveld E-mailadres het e-mailadres van de gebruiker met wie u de koppeling wilt delen en klik op [!UICONTROL Enter]. U kunt de koppeling delen met meerdere gebruikers.
+   * Typ in het vak E-mailadres het e-mailadres van de gebruiker met wie u de koppeling wilt delen. U kunt de koppeling delen met meerdere gebruikers. Als de gebruiker lid is van uw organisatie, selecteert u het e-mailadres in de suggesties in de vervolgkeuzelijst. Typ in het tekstveld E-mailadres het e-mailadres van de gebruiker met wie u de koppeling wilt delen en klik op [!UICONTROL Enter] . U kunt de koppeling delen met meerdere gebruikers.
 
-   * In de **[!UICONTROL Subject]** Typ een onderwerp om het doel van de gedeelde elementen op te geven.
-   * In de **[!UICONTROL Message]** Typ indien nodig een bericht.
-   * In de **[!UICONTROL Expiration]** in het veld gebruikt u de datumkiezer om een vervaldatum en -tijd voor de koppeling op te geven.
-   * De optie **[!UICONTROL Allow download of the original file]** Schakel het selectievakje in zodat de ontvangers de oorspronkelijke vertoning kunnen downloaden.
+   * Typ in het vak **[!UICONTROL Subject]** een onderwerp om het doel van de gedeelde elementen op te geven.
+   * Typ desgewenst een bericht in het vak **[!UICONTROL Message]** .
+   * Gebruik in het veld **[!UICONTROL Expiration]** de datumkiezer om een vervaldatum en -tijd voor de koppeling op te geven.
+   * Schakel het selectievakje **[!UICONTROL Allow download of the original file]** in zodat de ontvangers de oorspronkelijke vertoning kunnen downloaden.
 
 1. Klik op **[!UICONTROL Share]**. Een bericht bevestigt dat de koppeling wordt gedeeld met de gebruikers. De gebruikers ontvangen een e-mail met de gedeelde koppeling.
 
-   ![E-mail voor delen van koppeling](assets/link-sharing-email-notification.png)
+   ![ Verbinding die e-mail deelt ](assets/link-sharing-email-notification.png)
 
 ### E-mailsjabloon aanpassen {#customize-email-template}
 
-Een goed ontworpen sjabloon biedt professionaliteit en bekwaamheid, waardoor uw boodschap en organisatie geloofwaardiger wordt. De [!DNL Adobe Experience Manager] Hiermee kunt u de e-mailsjabloon aanpassen. Deze wordt verzonden naar de ontvangers die het e-mailbericht met de gedeelde koppeling ontvangen. Bovendien kunnen aangepaste e-mailsjablonen uw e-mailinhoud aanpassen door uw ontvangers een naam te geven en te verwijzen naar specifieke gegevens die voor hen van belang zijn. Door deze persoonlijke aanraking voelt de ontvanger zich gewaardeerd en neemt de betrokkenheid toe. Bovendien zorgt een aangepaste sjabloon ervoor dat uw e-mails consistent zijn met uw merkidentiteit, waaronder logo&#39;s, kleuren en lettertypen. Consistentie versterkt de merkherkenning en het vertrouwen onder ontvangers.
+Een goed ontworpen sjabloon biedt professionaliteit en bekwaamheid, waardoor uw boodschap en organisatie geloofwaardiger wordt. Met [!DNL Adobe Experience Manager] kunt u de e-mailsjabloon aanpassen. Deze wordt verzonden naar de ontvangers die het e-mailbericht met de gedeelde koppeling ontvangen. Bovendien kunnen aangepaste e-mailsjablonen uw e-mailinhoud aanpassen door uw ontvangers een naam te geven en te verwijzen naar specifieke gegevens die voor hen van belang zijn. Door deze persoonlijke aanraking voelt de ontvanger zich gewaardeerd en neemt de betrokkenheid toe. Bovendien zorgt een aangepaste sjabloon ervoor dat uw e-mails consistent zijn met uw merkidentiteit, waaronder logo&#39;s, kleuren en lettertypen. Consistentie versterkt de merkherkenning en het vertrouwen onder ontvangers.
 
 #### Opmaak van een aangepaste e-mailsjabloon {#format-of-custom-email-template}
 
-De e-mailsjabloon kan worden aangepast met platte tekst of met HTML. De standaard bewerkbare sjabloonkoppeling is te vinden op `/libs/settings/dam/adhocassetshare/en.txt`. U kunt de sjabloon overschrijven door het bestand te maken `/apps/settings/dam/adhocassetshare/en.txt`. U kunt de e-mailsjabloon zo vaak als nodig is wijzigen.
+De e-mailsjabloon kan worden aangepast met platte tekst of met HTML. De standaard bewerkbare sjabloonkoppeling vindt u op `/libs/settings/dam/adhocassetshare/en.txt` . U kunt de sjabloon overschrijven door het bestand `/apps/settings/dam/adhocassetshare/en.txt` te maken. U kunt de e-mailsjabloon zo vaak als nodig is wijzigen.
 
 | Plaatsaanduidingen | Beschrijving |
 |---|-----|
@@ -146,21 +146,21 @@ subject: ${emailSubject}
 
 Elke gebruiker die toegang heeft tot de koppeling voor gedeelde elementen, kan de elementen downloaden die in een ZIP-map zijn gebundeld. Het downloadproces is hetzelfde, ongeacht of een gebruiker de koppeling met gekopieerde middelen opent of de koppeling met middelen gebruikt die via e-mail wordt gedeeld.
 
-* Klik op de elementkoppeling of plak de URL in uw browser. De [!UICONTROL Link Share] interface opent waar u kunt op [!UICONTROL Card View] of [!UICONTROL List View].
+* Klik op de elementkoppeling of plak de URL in uw browser. De interface [!UICONTROL Link Share] wordt geopend wanneer u naar de interface [!UICONTROL Card View] of [!UICONTROL List View] kunt schakelen.
 
-* In de [!UICONTROL Card View]kunt u de muis boven het gedeelde element of de map met gedeelde elementen plaatsen om de elementen te selecteren of in de wachtrij voor downloaden.
+* In [!UICONTROL Card View] kunt u de muisaanwijzer boven het gedeelde element of de map met gedeelde elementen plaatsen om de elementen te selecteren of in de wachtrij voor downloaden.
 
-* Standaard wordt in de gebruikersinterface het **[!UICONTROL Download Inbox]** -optie. Het geeft de lijst weer van alle gedeelde elementen of mappen die samen met hun status in de wachtrij voor downloaden staan.
+* Standaard wordt in de gebruikersinterface de optie **[!UICONTROL Download Inbox]** weergegeven. Het geeft de lijst weer van alle gedeelde elementen of mappen die samen met hun status in de wachtrij voor downloaden staan.
 
-* Bij het selecteren van de middelen of map, kunt u een **[!UICONTROL Queue Download]** verschijnt op het scherm. Klik op de knop **[!UICONTROL Queue Download]** om het downloadproces te starten.
+* Als u de middelen of map selecteert, verschijnt er een optie **[!UICONTROL Queue Download]** op het scherm. Klik op de optie **[!UICONTROL Queue Download]** om het downloadproces te starten.
 
-  ![Downloaden van wachtrij](assets/queue-download.png)
+  ![ download van de Rij ](assets/queue-download.png)
 
-* Klik tijdens het voorbereiden van het downloadbestand op **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
+* Terwijl het downloadbestand is voorbereid, klikt u op de optie **[!UICONTROL Download Inbox]** om de status van uw download weer te geven. Voor grote downloads klikt u op de knop **[!UICONTROL Refresh]** om de status bij te werken.
 
-  ![Postvak IN downloaden](assets/link-sharing-download-inbox.png)
+  ![ Inbox van de Download ](assets/link-sharing-download-inbox.png)
 
-* Als de verwerking is voltooid, klikt u op **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
+* Wanneer de verwerking is voltooid, klikt u op de knop **[!UICONTROL Download]** om het ZIP-bestand te downloaden.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -240,15 +240,15 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Elementen downloaden en afzonderlijk delen {#download-and-share-assets}
 
-Gebruikers kunnen de vereiste middelen downloaden en deze delen buiten [!DNL Experience Manager]. Zie voor meer informatie [hoe te om activa te zoeken](/help/assets/search-assets.md), [hoe te om activa te downloaden](/help/assets/download-assets-from-aem.md), en [hoe verzamelingen te downloaden](manage-collections.md#download-a-collection)
+Gebruikers kunnen de vereiste elementen downloaden en deze buiten [!DNL Experience Manager] delen. Voor meer informatie, zie [ hoe te activa ](/help/assets/search-assets.md) zoeken, [ hoe te activa ](/help/assets/download-assets-from-aem.md) downloaden, en [ hoe te om inzamelingen ](manage-collections.md#download-a-collection) te downloaden
 
 ## Elementen delen met creatieve professionals {#share-with-creatives}
 
 Marketers en zakelijke gebruikers kunnen hun goedgekeurde bedrijfsmiddelen eenvoudig delen met hun creatieve professionals.
 
-* **Experience Manager-bureaubladtoepassing**: De app werkt in Windows en Mac. Zie [Overzicht van desktop-app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Als u wilt weten hoe geautoriseerde desktopgebruikers gemakkelijk toegang kunnen krijgen tot de gedeelde elementen, raadpleegt u [elementen zoeken, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [elementen uploaden met een bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Desktop app van de Experience Manager**: App werkt op Vensters en Mac. Zie [ Desktop app overzicht ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Om te weten hoe om het even welke geautoriseerde Desktopgebruiker tot de gedeelde activa kan gemakkelijk toegang hebben, zie [ doorbladeren, doorzoeken, en voorproefactiva ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). De desktopgebruikers kunnen elementen maken en deze delen met hun collega&#39;s die Experience Manager gebruikers zijn, bijvoorbeeld door nieuwe afbeeldingen te uploaden. Zie [ activa uploaden gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe-itemkoppeling**: De creatieve professionals kunnen hun middelen rechtstreeks van binnen zoeken en gebruiken [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop].
+* **de Verbinding van Activa van de Adobe**: De creatieve beroeps kunnen activa van binnen [!DNL Adobe InDesign], [!DNL Adobe Illustrator], en [!DNL Adobe Photoshop] direct zoeken en gebruiken.
 
 ## Elementen delen configureren {#configure-sharing}
 
@@ -258,11 +258,11 @@ De verschillende opties om de activa te delen vereisen specifieke configuratie e
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebruikt u het dialoogvenster Koppeling delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share` de locatie kan de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij [!DNL Assets].
+Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebruikt u het dialoogvenster Koppeling delen. Gebruikers met beheerdersrechten of met leesmachtigingen op de locatie `/var/dam/share` kunnen de koppelingen weergeven die met hen worden gedeeld. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij [!DNL Assets] .
 
 >[!NOTE]
 >
->Als u koppelingen van uw instantie Auteur naar externe entiteiten wilt delen, dient u alleen de volgende URL&#39;s beschikbaar te maken voor `GET` verzoeken. Blokkeer andere URL&#39;s om ervoor te zorgen dat de instantie Auteur beveiligd is.
+>Als u koppelingen van de instantie Auteur naar externe entiteiten wilt delen, dient u alleen de volgende URL&#39;s voor `GET` -aanvragen beschikbaar te maken. Blokkeer andere URL&#39;s om ervoor te zorgen dat de instantie Auteur beveiligd is.
 >
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
@@ -295,22 +295,22 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Desktopacties inschakelen voor gebruik met bureaubladtoepassing {#desktop-actions}
 
-Van binnen [!DNL Assets] in een browser, kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden desktophandelingen genoemd en om deze in te schakelen, raadpleegt u [bureaubladhandelingen inschakelen in [!DNL Assets] webinterface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Vanuit de gebruikersinterface van [!DNL Assets] in een browser kunt u de middelenlocaties of uitchecken verkennen en het middel openen voor bewerking in uw desktoptoepassing. Deze opties worden genoemd Desktopacties en om het toe te laten, zie [ Desktopacties in  [!DNL Assets]  Webinterface ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) toelaten.
 
-![Desktophandelingen als sneltoets gebruiken wanneer u met een bureaubladtoepassing werkt](assets/enable_desktop_actions.png)
+![ laat Desktopacties toe om als kortere weg te gebruiken wanneer het werken met Desktop app ](assets/enable_desktop_actions.png)
 
 ### Te gebruiken configuraties [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Het verbindt [!DNL Adobe Experience Manager Assets] with [!DNL Creative Cloud] bureaubladapps, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], en [!DNL Adobe Illustrator]. De [!DNL Adobe Asset Link] paneel stelt ontwerpers in staat toegang te krijgen tot inhoud die is opgeslagen in [!DNL Assets] zonder de creatieve toepassingen die ze het meest kennen, over te laten.
+Adobe Asset Link stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. [!DNL Adobe Experience Manager Assets] wordt verbonden met [!DNL Creative Cloud] bureaubladapps [!DNL Adobe InDesign] , [!DNL Adobe Photoshop] en [!DNL Adobe Illustrator] . In het deelvenster [!DNL Adobe Asset Link] hebben creatieve toepassingen toegang tot inhoud die is opgeslagen in [!DNL Assets] en kunnen ze deze inhoud wijzigen zonder de meest bekende creatieve toepassingen te verlaten.
 
-Zie [hoe te vormen [!DNL Assets] gebruiken met [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+Zie [ hoe te om  [!DNL Assets]  te vormen om het met  [!DNL Adobe Asset Link] te gebruiken ](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Aanbevolen werkwijzen en problemen oplossen {#bestpractices}
 
 * Elementmappen of -verzamelingen die in hun naam een witruimte bevatten, worden mogelijk niet gedeeld.
 * Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de beheerder van de Experience Manager om de downloadlimieten. De standaardwaarde is 100 MB.
-* Een gebruiker kan alleen een voorvertoning weergeven van een video die wordt gedeeld via het delen van koppelingen als voor de video een statische video-uitvoering beschikbaar is op `/jcr:content/renditions` locatie in het knooppunt van de video in de opslagplaats. De voorvertoning is niet afhankelijk van de beschikbaarheid van een [!DNL Dynamic Media] uitvoering.
-* Wanneer u een video-element downloadt via gedeelde koppelingen, wordt de [!DNL Dynamic Media] Uitvoeringen worden niet opgenomen in het gedownloade archief.
+* Een gebruiker kan alleen een voorvertoning weergeven van een video die wordt gedeeld via het delen van koppelingen als er voor de video een statische video-uitvoering beschikbaar is op de locatie `/jcr:content/renditions` in het knooppunt van de video in de opslagplaats. De voorvertoning is niet afhankelijk van de beschikbaarheid van een [!DNL Dynamic Media] -uitvoering.
+* Wanneer u een video-element downloadt via gedeelde koppelingen, worden de [!DNL Dynamic Media] -vertoningen niet opgenomen in het gedownloade archief.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your Experience Manager administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
@@ -320,11 +320,11 @@ Zie [hoe te vormen [!DNL Assets] gebruiken met [!DNL Adobe Asset Link]](https://
 <!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -334,5 +334,5 @@ Zie [hoe te vormen [!DNL Assets] gebruiken met [!DNL Adobe Asset Link]](https://
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

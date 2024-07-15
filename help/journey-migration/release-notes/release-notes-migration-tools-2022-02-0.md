@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.2.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.2.0
+title: Opmerkingen bij de release AEM as a Cloud Service 2022.2.0 voor migratiehulpprogramma's
+description: Opmerkingen bij de release AEM as a Cloud Service 2022.2.0 voor migratiehulpprogramma's
 feature: Release Information
 exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.2.0 {#release-notes}
+# Opmerkingen bij de release AEM as a Cloud Service 2022.2.0 voor migratiehulpprogramma&#39;s {#release-notes}
 
-Deze pagina schetst de Nota&#39;s van de Versie voor de Hulpmiddelen van de Migratie in AEM as a Cloud Service 2022.2.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.2.0.
 
 ## Analysator van best practices {#bpa-release}
 
@@ -25,7 +25,7 @@ De releasedatum voor de analyse van best practices v2.1.24 is 1 februari 2022.
 
 * Mogelijkheid om het aantal elementen met en zonder slimme tags te detecteren en hierover te rapporteren.
 * Mogelijkheid om de gebruikte versie van de Core Component te detecteren en hierover verslag uit te brengen.
-* Mogelijkheid om het type bronlaag (Auteur of Publiceren) waar BPA is uitgevoerd, op te sporen en te rapporteren.
+* Mogelijkheid om het type bronlaag (Auteur of Publish) waar BPA werd uitgevoerd op te sporen en te rapporteren.
 
 ### Opgeloste problemen {#bug-fixes-bpa}
 
@@ -40,7 +40,7 @@ De releasedatum voor Content Transfer Tool v1.8.6 is 3 februari 2022.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Inhoudsvalidatie - Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Als u deze functie wilt gebruiken, schakelt u deze in het dialoogvenster `System Console` van de bron AEM omgeving. Zie [Inhoudsoverdrachten valideren - Aan de slag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) voor meer informatie .
+* Inhoudsvalidatie - Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Als u deze functie wilt gebruiken, schakelt u deze in in de `System Console` AEM van de bronomgeving. Zie [ Bevaliderende Inhoudsoverdrachten - Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) voor meer details.
 
 ### Opgeloste problemen {#bug-fixes-ctt}
 

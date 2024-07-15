@@ -16,9 +16,9 @@ ht-degree: 9%
 
 Met projecten kunt u uw project ordenen door bronnen in één entiteit te groeperen.
 
-In de **Projecten** console, hebt toegang tot en handelt u op uw projecten:
+In de **console van Projecten**, hebt u toegang en handelt op uw projecten:
 
-![De projectenconsole](/help/sites-cloud/authoring/assets/projects-console.png)
+![ de console van Projecten ](/help/sites-cloud/authoring/assets/projects-console.png)
 
 In Projecten, kunt u een project tot stand brengen, middelen met uw project associëren, en ook een project of verbindingen van het Middel schrappen. U kunt een tegel openen om de inhoud ervan weer te geven en items aan een tegel toe te voegen. In dit onderwerp worden deze procedures beschreven.
 
@@ -36,31 +36,31 @@ Uit de doos, verstrekt AEM deze malplaatjes om van te kiezen wanneer u een proje
 
 De procedure om een project tot stand te brengen is voor alle projecten hetzelfde. Het verschil tussen de soorten projecten omvat beschikbare [gebruikersrollen](/help/sites-cloud/authoring/projects/overview.md) en [workflows](/help/sites-cloud/authoring/projects/workflows.md).  Een project maken:
 
-1. In **Projecten**, selecteert u **Maken** om de **Project maken** wizard:
-1. Selecteer een sjabloon en klik op **Volgende**.
+1. In **Projecten**, uitgezochte **creeert** om **te openen creeer de** tovenaar van het Project:
+1. Selecteer een malplaatje en klik **daarna**.
 
-   ![Een project maken](/help/sites-cloud/authoring/assets/projects-create.png)
+   ![ Creërend een project ](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Definieer de **Titel** en **Beschrijving** en voeg een **Miniatuur** afbeelding, indien nodig. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Klik bovendien op **Geavanceerd** om een naam toe te voegen die in URL wordt gebruikt.
+1. Bepaal de **Titel** en **Beschrijving** en voeg het beeld van de a **Duimnagel** indien nodig toe. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Bovendien klik **Geavanceerd** om een naam toe te voegen die in URL wordt gebruikt.
 
-   ![Projectdetails toevoegen](/help/sites-cloud/authoring/assets/projects-add-team.png)
+   ![ Toevoegend projectdetail ](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Selecteer **Maken**. De bevestiging vraagt of wilt u uw nieuw project openen of aan de console terugkeren.
 
 ### Middelen koppelen aan uw project {#associating-resources-with-your-project}
 
-Aangezien de projecten u toelaten om middelen in één entiteit te groeperen, wilt u middelen aan uw project associëren. Deze bronnen worden **Tegels**. De typen bronnen die u kunt toevoegen, worden beschreven in [Projectblokken](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
+Aangezien de projecten u toelaten om middelen in één entiteit te groeperen, wilt u middelen aan uw project associëren. Deze middelen worden genoemd **Tegels**. De soorten middelen u kunt toevoegen worden beschreven in [ Tegels van het Project ](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 Om middelen met uw project te associëren:
 
-1. Open uw project vanuit de **Projecten** console.
-1. Selecteren **Tegel toevoegen** en selecteer de tegel die u aan uw project wilt koppelen. U kunt meerdere typen tegels selecteren.
+1. Open uw project van de **Projecten** console.
+1. Selecteer **Tegel** toevoegen en de tegel selecteren die u aan uw project wilt verbinden. U kunt meerdere typen tegels selecteren.
 
-   ![Een tegel toevoegen aan een project](/help/sites-cloud/authoring/assets/projects-add-tile.png)
+   ![ Toevoegend een tegel aan een project ](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
    >[!NOTE]
    >
-   >De tegels van het project die met een project kunnen worden geassocieerd worden beschreven in detail [Projectelementen](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
+   >De tegels van het project die met een project kunnen worden geassocieerd worden beschreven in [ tegels van het Project ](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. Selecteer **Maken**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
 
@@ -70,17 +70,17 @@ De zelfde methode wordt gebruikt om een project van de console of een verbonden 
 
 1. Navigeer naar de juiste locatie:
 
-   * Als u een project wilt verwijderen, gaat u naar het hoofdniveau van het dialoogvenster **Projecten** console.
-   * Om een middelverbinding binnen een project te schrappen, open uw project in **Projecten** console.
+   * Om een project te schrappen gaat naar het hoogste niveau van de **console van Projecten**.
+   * Om een middelverbinding binnen een project te schrappen, open uw project in de **console van Projecten**.
 
-1. Selectiemodus openen door te klikken **Selecteren** en het selecteren van uw project of middelverbinding.
-1. Selecteren **Verwijderen**.
+1. Ga selectiewijze door **Uitgezocht** te klikken en uw project of middelverbinding te selecteren.
+1. Selecteer **Schrapping**.
 
-1. U moet de verwijdering bevestigen in een dialoogvenster. Indien bevestigd, wordt het project of de middelverbinding geschrapt. Selecteren **Deselecteren** om de selectiemodus af te sluiten.
+1. U moet de verwijdering bevestigen in een dialoogvenster. Indien bevestigd, wordt het project of de middelverbinding geschrapt. Selecteer **Deselecteer** om selectiewijze weg te gaan.
 
 >[!NOTE]
 >
->Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen in **Gereedschappen** > **Beveiliging** > **Groepen**.
+>Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen in **Hulpmiddelen** manueel schrappen > **Veiligheid** > **Groepen**.
 
 ### Items toevoegen aan een tegel {#adding-items-to-a-tile}
 
@@ -88,11 +88,11 @@ In sommige tegels wilt u mogelijk meerdere items toevoegen. U kunt bijvoorbeeld 
 
 Items toevoegen aan een tegel:
 
-1. In **Projecten**, navigeert u naar het project en selecteert u het keuzerondje omlaag op de tegel waaraan u een item wilt toevoegen.
+1. In **Projecten**, navigeer aan het project en selecteer onderaan chevron op de tegel u een punt aan wilt toevoegen.
 
-   ![Item toevoegen aan een tegel](/help/sites-cloud/authoring/assets/project-workflows.png)
+   ![ voeg punt aan een tegel ](/help/sites-cloud/authoring/assets/project-workflows.png) toe
 
-1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een tegel. Projectelementen worden beschreven [hier](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In dit voorbeeld is een andere workflow toegevoegd.
+1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een tegel. De tegels van het project worden beschreven [ hier ](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In dit voorbeeld is een andere workflow toegevoegd.
 
 ### Een tegel openen {#opening-a-tile}
 
@@ -102,31 +102,31 @@ Een tegel openen zodat u items kunt weergeven of wijzigen:
 
 1. In de console van Projecten, selecteer de ellipsen (...) pictogram bij de bodem van de kaart.
 
-   ![Een tegel openen](/help/sites-cloud/authoring/assets/project-links.png)
+   ![ die een tegel ](/help/sites-cloud/authoring/assets/project-links.png) openen
 
 1. AEM geeft de items in die tegel weer. U kunt de selectiemodus activeren om de items te wijzigen of te verwijderen.
 
-   ![Tegel geopend](/help/sites-cloud/authoring/assets/projects-add-link.png)
+   ![ Geopende Tegel ](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## Projectstatistieken weergeven {#viewing-project-statistics}
 
-U kunt projectstatistieken bekijken, in **Projecten** console.
+U kunt projectstatistieken, in de **Projecten** console bekijken.
 
 ### Een projecttijdlijn weergeven {#viewing-a-project-timeline}
 
-De projecttijdlijn biedt informatie over wanneer de elementen in het project het laatst zijn gebruikt. Als u de projecttijdlijn wilt weergeven, selecteert u **Tijdlijn**, dan ga selectiewijze in en selecteer het project. Elementen worden weergegeven in het linkervenster. Selecteren **Tijdlijn** om terug te keren naar de **Projecten** console.
+De projecttijdlijn biedt informatie over wanneer de elementen in het project het laatst zijn gebruikt. Om de projectchronologie te bekijken, selecteer **Chronologie**, dan ga selectiewijze in en selecteer het project. Assets wordt weergegeven in het linkerdeelvenster. Selecteer **Chronologie** om aan de **Projecten** console terug te keren.
 
-![Tijdlijn project](/help/sites-cloud/authoring/assets/projects-timeline.png)
+![ de chronologie van het Project ](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Actieve/Inactieve projecten weergeven {#viewing-active-inactive-projects}
 
-Om tussen uw actieve en inactieve projecten, in te schakelen **Projecten** console, klik **Actieve projecten in-/uitschakelen**. Als er naast het pictogram een vinkje staat, worden de actieve projecten weergegeven.
+Om tussen uw actieve en inactieve projecten, in de **console van Projecten** van een knevel te voorzien, klik **de Actieve Projecten** van de knevel. Als er naast het pictogram een vinkje staat, worden de actieve projecten weergegeven.
 
-![Knop Actieve projecten in-/uitschakelen](/help/sites-cloud/authoring/assets/projects-active.png)
+![ Wissel Actieve knoop van Projecten ](/help/sites-cloud/authoring/assets/projects-active.png)
 
 Als het pictogram een x naast heeft, toont het de inactieve projecten.
 
-![Knop Inactieve projecten in-/uitschakelen](/help/sites-cloud/authoring/assets/projects-inactive.png)
+![ knevel Inactieve knoop van Projecten ](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
 ## Projecten inactief of actief maken {#making-projects-inactive-or-active}
 
@@ -134,15 +134,15 @@ U kunt een project willen inactief maken als u het hebt voltooid maar u wilt nog
 
 Een project inactief (of actief) maken:
 
-1. In de **Projecten** console, open uw project en dan vind **Projectinformatie** tegel.
+1. In de **console van Projecten**, open uw project en vind dan de **informatie van het Project** tegel.
 
    >[!NOTE]
    >
-   Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [Tegels toevoegen](#adding-items-to-a-tile).
+   Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [ Toevoegend Tegels ](#adding-items-to-a-tile).
 
-1. Selecteren **Bewerken**.
-1. De kiezer wijzigen vanuit **Actief** tot **Inactief** (of omgekeerd).
+1. Selecteer **uitgeven**.
+1. Verander de selecteur van **Actieve** in **Inactieve** (of omgekeerd).
 
-   ![Een project activeren](/help/sites-cloud/authoring/assets/projects-add-team.png)
+   ![ het Activeren van een project ](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Selecteren **Gereed** om uw wijzigingen op te slaan.
+1. Selecteer **Gedaan** om uw veranderingen te bewaren.

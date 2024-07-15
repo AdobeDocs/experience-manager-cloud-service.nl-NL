@@ -19,14 +19,14 @@ Nadat een gebruiker een formulier heeft verzonden, is het van cruciaal belang da
 
 Het standaardgedrag van Adaptive Forms Block is om het volgende bedankbericht bij verzending weer te geven. Het bericht wordt boven aan het formulier weergegeven.
 
-![standaardbedankbericht](/help/edge/assets/thank-you-message.png)
+![ gebrek dank u bericht ](/help/edge/assets/thank-you-message.png)
 
 
 Voer de onderstaande stappen uit om een aangepast bedankbericht voor uw Adaptive Forms Block te configureren:
 
 1. Heb toegang tot uw AEMProject op uw lokale machine of bewaarplaats GitHub.
 
-1. Navigeren naar [Projectmap AEM]\blocks\form\submit.js.
+1. Navigeer aan [ AEM het dossier van de Omslag van het Project ] \blocks\form\submit.js voor het uitgeven.
 
 1. De volgende code zoeken
 
@@ -44,7 +44,7 @@ Voer de onderstaande stappen uit om een aangepast bedankbericht voor uw Adaptive
 
 1. Sla het bestand op. Leg het bijgewerkte bestand vast aan uw GitHub Repository. Wanneer u nu een formulier verzendt, wordt het aangepaste bedankbericht weergegeven. Bijvoorbeeld:
 
-![Aangepast bedankt-bericht](/help/edge/assets/custom-thank-you-message.png)
+![ Douane dankt u bericht ](/help/edge/assets/custom-thank-you-message.png)
 
 <!-- 
 

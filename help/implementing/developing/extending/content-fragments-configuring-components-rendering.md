@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Inhoudsfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
 
-Er zijn verschillende [geavanceerde services](#definition-of-advanced-services-that-need-configuration) gerelateerd aan de rendering van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
+Er zijn verscheidene [ geavanceerde diensten ](#definition-of-advanced-services-that-need-configuration) met betrekking tot het teruggeven van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
 
-Dit wordt gedaan door te vormen [OSGi Service - Configuratie van de Component van het Fragment van de Inhoud](#osgi-service-content-fragment-component-configuration).
+Dit wordt gedaan door de [ Dienst OSGi te vormen - de Configuratie van de Component van het Fragment van de Inhoud ](#osgi-service-content-fragment-component-configuration).
 
 Deze informatie is vereist wanneer:
 
@@ -26,11 +26,11 @@ Adobe raadt u aan de Core Components (Basiscomponenten) te gebruiken.
 
 >[!CAUTION]
 >
->* **Als u het [geavanceerde services](#definition-of-advanced-services-that-need-configuration)** hieronder beschreven, kunt u deze configuratie negeren.
+>* **als u niet de [ geavanceerde hieronder beschreven diensten](#definition-of-advanced-services-that-need-configuration)** nodig hebt, kunt u deze configuratie negeren.
 >
->* **Wanneer u de component(en) buiten de doos uitbreidt of gebruikt**, wordt het niet geadviseerd om de configuratie te veranderen OSGi.
+>* **wanneer u uitbreidt of de uit-van-de-doos component(s)** gebruikt, wordt het niet geadviseerd om de configuratie te veranderen OSGi.
 >
->* **U kunt een geheel nieuwe component schrijven die alleen de API voor inhoudsfragmenten gebruikt, zonder geavanceerde services**. In een dergelijk geval moet u de component echter zodanig ontwikkelen dat deze de juiste verwerking afhandelt.
+>* **u kunt een component van kras schrijven die de slechts Inhoudsfragmenten API, zonder de geavanceerde diensten** gebruikt. In een dergelijk geval moet u de component echter zodanig ontwikkelen dat deze de juiste verwerking afhandelt.
 >
 >Daarom wordt aanbevolen de Core Components te gebruiken.
 
@@ -40,26 +40,26 @@ De diensten die de registratie van een component vereisen zijn:
 
 * De afhankelijkheden correct bepalen tijdens de publicatie (dat wil zeggen dat fragmenten en modellen automatisch met een pagina kunnen worden gepubliceerd als ze zijn gewijzigd sinds de laatste publicatie).
 * Ondersteuning voor inhoudsfragmenten in volledige tekstzoekopdracht.
-* Het beheer/de verwerking van *tussenliggende inhoud.*
-* Het beheer/de verwerking van *gemengde media-elementen.*
-* Dispatcher flush for referenced fragments (if a page containing a fragment is re-published).
+* Het beheer/de behandeling van *in-tussen inhoud.*
+* Het beheer/de behandeling van *gemengde media activa.*
+* Dispatcher wordt uitgelijnd op fragmenten waarnaar wordt verwezen (als een pagina met een fragment opnieuw wordt gepubliceerd).
 * Op alinea&#39;s gebaseerde rendering gebruiken.
 
 Als u één of meerdere van deze eigenschappen nodig hebt, dan (typisch) is het gemakkelijker om de uit-van-de-doos Geavanceerde Diensten te gebruiken, in plaats van hen van kras te ontwikkelen.
 
 ## OSGi Service - Configuratie van de Component van het Fragment van de Inhoud {#osgi-service-content-fragment-component-configuration}
 
-De configuratie moet aan de dienst worden gebonden OSGi **Configuratie van inhoudsfragmentcomponent**:
+De configuratie moet aan de OSGi dienst **Configuratie van de Component van het Fragment van de Inhoud** worden gebonden:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->Zie [OSGi-configuratie](/help/implementing/deploying/overview.md#osgi-configuration) voor nadere bijzonderheden.
+>Zie [ Configuratie OSGi ](/help/implementing/deploying/overview.md#osgi-configuration) voor verdere details.
 
 Bijvoorbeeld:
 
-![Configuratie van OSGi-component van fragmentatie van configuratieinhoud](assets/cf-component-configuration-osgi.png)
+![ Configuratie van de Component van het Fragment van de Inhoud van de Configuratie OSGi ](assets/cf-component-configuration-osgi.png)
 
 De configuratie OSGi is:
 
@@ -67,7 +67,7 @@ De configuratie OSGi is:
  <thead>
   <tr>
    <td>Label</td>
-   <td>OSGi-configuratie<br /> </td>
+   <td>OSGi-configuratie <br /> </td>
    <td>Beschrijving</td>
   </tr>
  </thead>
@@ -88,14 +88,14 @@ De configuratie OSGi is:
    <td>De naam van de eigenschap die de naam/namen bevat van het element/de elementen die moeten worden gerenderd, bijvoorbeeld<code>elementName</code></td>
   </tr>
   <tr>
-   <td><strong>Variatie, eigenschap</strong><br /> </td>
+   <td><strong> bezit van de Variatie </strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
    <td>De naam van de eigenschap die de naam bevat van de variatie die moet worden gerenderd, bijvoorbeeld<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
 
-Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde conventies houden. In de volgende tabel worden de eigenschappen weergegeven die door de component voor elke alinea moeten worden gedefinieerd (dat wil zeggen: `jcr:paragraph` voor elke componentinstantie) zodat de services deze op de juiste wijze kunnen detecteren en verwerken.
+Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde conventies houden. In de volgende tabel worden de eigenschappen beschreven die door de component voor elke alinea (dat wil zeggen `jcr:paragraph` voor elke componentinstantie) moeten worden gedefinieerd, zodat de services deze op de juiste manier kunnen detecteren en verwerken.
 
 <table>
  <thead>
@@ -107,7 +107,7 @@ Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde co
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Een tekenreekseigenschap die definieert hoe alinea's moeten worden uitgevoerd als ze zich in <em>rendermodus voor één element</em>.</p> <p>Waarden:</p>
+   <td><p>Een koordbezit dat bepaalt hoe de paragrafen moeten worden uitgevoerd als in <em> enig element wijze </em> teruggeeft.</p> <p>Waarden:</p>
     <ul>
      <li><code>all</code> : alle alinea's renderen</li>
      <li><code>range</code> : voor het weergeven van het bereik van alinea's die worden geleverd door <code>paragraphRange</code></li>
@@ -115,7 +115,7 @@ Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde co
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Een tekenreekseigenschap die het bereik definieert van alinea's die moeten worden uitgevoerd als deze zich in <em>rendermodus voor één element</em>.</p> <p>Indeling:</p>
+   <td><p>Een koordbezit dat de waaier van paragrafen bepaalt om te worden uitgevoerd als in <em> enig element wijze </em> teruggeeft.</p> <p>Indeling:</p>
     <ul>
      <li><code>1</code> of <code>1-3</code> of <code>1-3;6;7-8</code> of <code>*-3;5-*</code>
      <ul>
@@ -129,7 +129,7 @@ Voor bepaalde functionaliteit moet de component zich aan vooraf gedefinieerde co
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>Een Booleaanse eigenschap die definieert of koppen (bijvoorbeeld <code>h1</code>, <code>h2</code>, <code>h3</code>) worden als alinea's (<code>true</code>) of niet (<code>false</code>)</td>
+   <td>Een Booleaanse eigenschap die definieert of koppen (bijvoorbeeld <code>h1</code> , <code>h2</code> , <code>h3</code> ) worden geteld als alinea's (<code>true</code>) of niet (<code>false</code>)</td>
   </tr>
  </tbody>
 </table>

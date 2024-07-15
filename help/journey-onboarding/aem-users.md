@@ -1,6 +1,6 @@
 ---
 title: AEM
-description: Zodra zij de systeembeheerder opstelling de noodzakelijke wolkenmiddelen hebben, leer hoe AEM gebruikers tot AEM as a Cloud Service aan auteursinhoud kunnen toegang hebben.
+description: Nadat de systeembeheerder de vereiste cloudbronnen heeft ingesteld, leert u hoe AEM gebruikers toegang hebben tot AEM as a Cloud Service voor het schrijven van inhoud.
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # AEM {#aem-user-tasks}
 
-In dit facultatieve deel van [aan boord gaan,](overview.md) u leert hoe AEM gebruikers tot AEM as a Cloud Service aan auteursinhoud kunnen toegang hebben.
+In dit facultatieve deel van de [ onboarding reis, ](overview.md) leert u hoe AEM gebruikers AEM as a Cloud Service tot auteursinhoud kunnen toegang hebben.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-Je hebt een lange weg afgelegd op je instapreis! Gefeliciteerd! De systeembeheerder heeft de instapreis voltooid door de benodigde cloudbronnen in te stellen en toegang te verlenen in het document [AEM productprofielen toewijzen.](assign-profiles-aem.md)
+Je hebt een lange weg afgelegd op je instapreis! Gefeliciteerd! De systeembeheerder heeft de onboarding reis door vestiging de noodzakelijke wolkenmiddelen en het verlenen van toegang in het document [ voltooid Toewijzend AEM Profielen van het Product.](assign-profiles-aem.md)
 
-Op dit moment kunnen AEM gebruikers beginnen met het maken van inhoud. In die zin is uw instapsysteem voltooid en nu is het tijd om uw nieuwe AEM as a Cloud Service systeem te gebruiken, zoals dit document illustreert.
+Op dit moment kunnen AEM gebruikers beginnen met het maken van inhoud. In die zin is uw instapweigering voltooid en nu is het tijd om uw nieuwe AEM as a Cloud Service-systeem te gebruiken, zoals dit document illustreert.
 
 ## Publiek {#audience}
 
@@ -34,27 +34,27 @@ Dit document is een aanvulling op het instapproces om de basistaken van een AEM 
 
 Na het lezen moet u begrijpen hoe u:
 
-* Ga naar Cloud Manager.
-* Meld u aan bij een AEM as a Cloud Service instantie.
+* Toegang tot Cloud Manager.
+* Meld u aan bij een AEM as a Cloud Service-instantie.
 
 ## Vereisten {#prerequisites}
 
 Voordat u begint met de taken die in dit document worden beschreven als een AEM gebruiker, moet u ervoor zorgen dat de systeembeheerder alle stappen in deze instapreis heeft voltooid. Dit betekent dat:
 
-* Uw systeembeheerder heeft gebruikers aan **AEM** of **AEM** productprofielen.
+* Uw systeembeheerder heeft gebruikers aan de **gebruikers** toegewezen AEM **AEM de profielen van het van Beheerders** product.
 * Er zijn bronnen voor de cloud ingesteld.
 
 ## Aanmelden bij AEM {#login-aem}
 
 Als AEM auteur moet u zich aanmelden bij AEM om inhoud te maken.
 
-1. Ga naar de aanmeldingspagina van Cloud Manager op [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)
+1. Navigeer naar de Cloud Manager-aanmeldingspagina op [`https://my.cloudmanager.adobe.com` . ](https://my.cloudmanager.adobe.com/)
 
-1. Selecteer het desbetreffende programma in Cloud Manager **Programma&#39;s en producten** pagina om de **Overzicht** pagina. Vraag uw systeembeheerder als u onzeker bent welk programma om toegang te hebben.
+1. Selecteer het aangewezen programma van Cloud Manager **Programma&#39;s en de pagina van Producten** om de **pagina van het Overzicht** te lanceren. Vraag uw systeembeheerder als u onzeker bent welk programma om toegang te hebben.
 
-1. Van de **Overzicht** in Cloud Manager klikt u op de koppeling naar de auteur in het dialoogvenster **Omgevingen** kaart.
+1. Van de **pagina van het Overzicht** in Cloud Manager, klik de auteursverbinding van de **** kaart van Milieu&#39;s.
 
-   ![Omgevingskaart](/help/journey-onboarding/assets/author-environ.png)
+   ![ kaart van het Milieu ](/help/journey-onboarding/assets/author-environ.png)
 
 1. Hiermee wordt een nieuw tabblad geopend waarin u zich met behulp van uw Adobe ID kunt aanmelden bij de ontwerpomgeving.
 
@@ -62,26 +62,26 @@ Gefeliciteerd! U bent nu aangemeld bij Auteur.
 
 >[!TIP]
 >
->Maak een bladwijzer van de koppeling naar de AEM auteur en u kunt deze rechtstreeks openen in plaats van elke keer via Cloud Manager te gaan.
+>Maak een bladwijzer van de koppeling naar de AEM auteur en u kunt deze rechtstreeks openen in plaats van elke keer door Cloud Manager te gaan.
 
 ## Volgende functies {#whats-next}
 
 Nu u dit document hebt gelezen, moet u weten hoe te:
 
-* Ga naar Cloud Manager.
-* Meld u aan bij een AEM as a Cloud Service instantie.
+* Toegang tot Cloud Manager.
+* Meld u aan bij een AEM as a Cloud Service-instantie.
 
-Gefeliciteerd! U kunt nu AEM inhoud ontwerpen en publiceren. Zie [Aanvullende bronnen](#additional-resources) voor meer informatie over het schrijven van inhoud in AEM en het beheren van inhoud.
+Gefeliciteerd! U kunt nu AEM inhoud ontwerpen en publiceren. Zie ](#additional-resources) sectie van Middelen 0} Extra van Middelen voor meer details over hoe te auteursinhoud in AEM en hoe te om het te beheren.[
 
-Als u geïnteresseerd bent in de manier waarop ontwikkelaars en implementatiemanagers aangepaste toepassingen voor AEM als Cloud-service maken en beheren, gaat u verder met het tweede optionele gedeelte van de instapreis. [AEM ontwikkelaarstaken.](developers.md)
+Als u in geinteresseerd bent hoe de ontwikkelaars en plaatsingsmanagers douanetoepassingen voor AEM als dienst van de Wolk tot stand brengen en beheren, op tweede facultatief deel van de onboarding reis voortzetten, [ AEM de Taken van de Ontwikkelaar.](developers.md)
 
 >[!TIP]
 >
->Nu je aan boord bent, kun je [Leer hoe te om de AEMInvoegtoepassing van de Demo van de Verwijzing gemakkelijk toe te voegen](/help/journey-sites/demos-add-on/overview.md) in een sandbox-omgeving met minimale AEM configuratie en de krachtige functies van AEM kunnen testen met uitgebreide voorbeelden op basis van best practices.
+>Nu u wordt betreden, kunt u [ leren hoe te om AEM toe:voegen-aan de Demo&#39;s van de Verwijzing ](/help/journey-sites/demos-add-on/overview.md) aan een zandbakmilieu met minimale AEM configuratie gemakkelijk toe te voegen en de krachtige eigenschappen van AEM met rijke die voorbeelden te kunnen testen op best-praktijken worden gebaseerd.
 
 ## Aanvullende bronnen {#additional-resources}
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-[Handleiding Snel aan de slag voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/quick-start.md) - Begin hier voor een snel overzicht van de grondbeginselen van het ontwerpen in AEM.
-[Papierreis zonder koppen](/help/journey-headless/author/overview.md) - Als u inhoud zonder kop wilt ontwerpen, volgt u deze inleiding.
+[ Snelle Gids van het Begin aan Authoring Pagina&#39;s ](/help/sites-cloud/authoring/quick-start.md) - Begin hier voor een snel overzicht van auteursgrondbeginselen in AEM.
+](/help/journey-headless/author/overview.md) de Reis van de Auteur zonder hoofd [ - als u inhoud zonder kop wilt ontwerpen, volg deze geleide inleiding.

@@ -29,23 +29,23 @@ Hieronder vindt u de beschikbare prediktypen voor Inbox:
 
 >[!NOTE]
 >
->Zorg ervoor dat u lid bent van de `workflow-administrators` groep om zoekfilters voor Inbox te configureren.
+>Zorg ervoor dat u lid bent van de `workflow-administrators` -groep om zoekfilters voor Inbox te configureren.
 
 ## Een aangepaste configuratie maken of openen {#creating-opening-customized-configuration}
 
-1. Navigeren naar **[!UICONTROL Tools]**, **[!UICONTROL General]**, **[!UICONTROL Search Forms]**.
+1. Navigeer naar **[!UICONTROL Tools]** , **[!UICONTROL General]** , **[!UICONTROL Search Forms]** .
 
-1. Selecteer de **[!UICONTROL Inbox Search Rail]** configuratie en selecteer **[!UICONTROL Edit]**.
-1. Neem de wijzigingen in de predikconfiguratie op met **[!UICONTROL Edit Search Forms]**.
-1. Selecteren **[!UICONTROL Done]** om de configuratie op te slaan.
+1. Selecteer de **[!UICONTROL Inbox Search Rail]** -configuratie en selecteer **[!UICONTROL Edit]** .
+1. Neem de wijzigingen in de configuratie met voorspelling op met **[!UICONTROL Edit Search Forms]** .
+1. Selecteer **[!UICONTROL Done]** om de configuratie op te slaan.
 
 ## Een aangepaste configuratie verwijderen {#delete-customized-configuration}
 
 Een aangepaste configuratie verwijderen:
 
-1. Navigeren naar **[!UICONTROL Tools]**, **[!UICONTROL General]**, **[!UICONTROL Search Forms]**.
+1. Navigeer naar **[!UICONTROL Tools]** , **[!UICONTROL General]** , **[!UICONTROL Search Forms]** .
 
-1. Selecteer de **[!UICONTROL Inbox Search Rail]** configuratie en selecteer **[!UICONTROL Delete]**.
+1. Selecteer de **[!UICONTROL Inbox Search Rail]** -configuratie en selecteer **[!UICONTROL Delete]** .
 
 ## Bereik vooraf instellen configureren {#range-predicate}
 
@@ -53,13 +53,13 @@ U kunt de punten van Inbox aan onderzoek naar een aantalwaaier binnen een kolom 
 
 Om een Predicate van de Waaier te vormen:
 
-1. Open de [formulier voor configuratie](#creating-opening-customized-configuration).
-1. Selecteer de **[!UICONTROL Select Predicate]** en slepen **[!UICONTROL Range Predicate]** op het formulier.
-1. In de **[!UICONTROL Settings]** selecteert u de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, van **[!UICONTROL Column Name]** veld.
-1. Geef het label voor het filter op in het dialoogvenster **[!UICONTROL Filter Label]** veld. Selecteer de **[!UICONTROL Enable Decimal Values]** Schakel het selectievakje in om decimale waarden voor getallen te accepteren tijdens het definiëren van het bereik.
-1. Geef een optionele beschrijving voor de configuratie op en selecteer **[!UICONTROL Done]** opslaan.
+1. Open de [ vorm voor configuratie ](#creating-opening-customized-configuration).
+1. Selecteer de tab **[!UICONTROL Select Predicate]** en sleep **[!UICONTROL Range Predicate]** naar het formulier.
+1. Selecteer op het tabblad **[!UICONTROL Settings]** de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, in het veld **[!UICONTROL Column Name]** .
+1. Geef het label voor het filter op in het veld **[!UICONTROL Filter Label]** . Schakel het selectievakje **[!UICONTROL Enable Decimal Values]** in als u decimale waarden voor getallen wilt accepteren terwijl u het bereik definieert.
+1. Geef een optionele beschrijving voor de configuratie op en selecteer **[!UICONTROL Done]** om deze op te slaan.
 
-De configuratiewijzigingen worden weerspiegeld wanneer u de pagina Filters opent. Het filterlabel dat u in stap 4 hebt opgegeven, wordt weergegeven als het label met een optie voor het definiëren van de maximum- en minimumwaarden. Wanneer u op Enter drukt, [!DNL Experience Manager] past de zoekcriteria toe op de kolomnaam die in stap 3 is opgegeven en retourneert de items in het Postvak IN.
+De configuratiewijzigingen worden weerspiegeld wanneer u de pagina Filters opent. Het filterlabel dat u in stap 4 hebt opgegeven, wordt weergegeven als het label met een optie voor het definiëren van de maximum- en minimumwaarden. Wanneer u op Enter drukt, past [!DNL Experience Manager] de zoekcriteria toe op de kolomnaam die in stap 3 is opgegeven en worden de items in het Postvak IN geretourneerd.
 
 >[!NOTE]
 >
@@ -71,13 +71,13 @@ Filter Inbox-items om te zoeken naar een tekstreeks in een kolom Inbox met behul
 
 Een tekstvoorspelling configureren:
 
-1. Open de [formulier voor configuratie](#creating-opening-customized-configuration).
-1. Selecteer de **[!UICONTROL Select Predicate]** en slepen **[!UICONTROL Text Predicate]** op het formulier.
-1. In de **[!UICONTROL Settings]** selecteert u de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, van **[!UICONTROL Column Name]** veld.
-1. Geef de tekst op die in het tekstvak Zoeken wordt weergegeven als plaatsaanduidingstekst in het dialoogvenster **[!UICONTROL Search Text Box Placeholder]** veld.
-1. Geef een optionele beschrijving voor de configuratie op en selecteer **[!UICONTROL Done]** opslaan.
+1. Open de [ vorm voor configuratie ](#creating-opening-customized-configuration).
+1. Selecteer de tab **[!UICONTROL Select Predicate]** en sleep **[!UICONTROL Text Predicate]** naar het formulier.
+1. Selecteer op het tabblad **[!UICONTROL Settings]** de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, in het veld **[!UICONTROL Column Name]** .
+1. Geef de tekst op die in het tekstvak Zoeken wordt weergegeven als plaatsaanduidingstekst in het veld **[!UICONTROL Search Text Box Placeholder]** .
+1. Geef een optionele beschrijving voor de configuratie op en selecteer **[!UICONTROL Done]** om deze op te slaan.
 
-De configuratiewijzigingen worden weerspiegeld wanneer u de pagina Filters opent. Wanneer u op Enter drukt, [!DNL Experience Manager] past de zoektekst die in stap 4 is opgegeven, toe op de kolomnaam die in stap 3 is opgegeven en retourneert de items in het Postvak IN.
+De configuratiewijzigingen worden weerspiegeld wanneer u de pagina Filters opent. Wanneer u op Enter drukt, past [!DNL Experience Manager] de zoektekst die in stap 4 is opgegeven toe op de kolomnaam die in stap 3 is opgegeven en worden de items in het Postvak IN geretourneerd.
 
 ## Datumbereikvoorspelling configureren {#date-range-predicate}
 
@@ -85,12 +85,12 @@ Met de Datumbereikvoorspelling kunt u items in het Postvak IN filteren om te zoe
 
 Een datumbereikvoorspelling configureren:
 
-1. Open de [formulier voor configuratie](#creating-opening-customized-configuration).
-1. Selecteer de **[!UICONTROL Select Predicate]** en slepen **[!UICONTROL Date Range Predicate]** op het formulier.
-1. In de **[!UICONTROL Settings]** selecteert u de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, van **[!UICONTROL Column Name]** veld.
-1. Geef het label voor het datumbereikfilter op in het dialoogvenster **[!UICONTROL Filter Label]** veld.
+1. Open de [ vorm voor configuratie ](#creating-opening-customized-configuration).
+1. Selecteer de tab **[!UICONTROL Select Predicate]** en sleep **[!UICONTROL Date Range Predicate]** naar het formulier.
+1. Selecteer op het tabblad **[!UICONTROL Settings]** de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, in het veld **[!UICONTROL Column Name]** .
+1. Geef het label voor het datumbereikfilter op in het veld **[!UICONTROL Filter Label]** .
 1. Geef de begindatum en einddatumlabels voor het filter op.
-1. Geef een optionele beschrijving voor de configuratie op en selecteer **[!UICONTROL Done]** opslaan.
+1. Geef een optionele beschrijving voor de configuratie op en selecteer **[!UICONTROL Done]** om deze op te slaan.
 
 De configuratiewijzigingen worden weerspiegeld wanneer u de pagina Filters opent. Het filterlabel dat u in stap 4 hebt opgegeven, wordt weergegeven als het label voor het datumbereikfilter, samen met de labels voor de begin- en einddatum die in stap 5 zijn opgegeven. [!DNL Experience Manager] past de zoekcriteria toe op de kolomnaam die in stap 3 is opgegeven en retourneert de items in het Postvak IN.
 
@@ -100,14 +100,14 @@ Met het voorvoegsel Aangepaste kolomopties kunt u de items in het Postvak IN fil
 
 Een voorspelling voor aangepaste kolomopties configureren:
 
-1. Open de [formulier voor configuratie](#creating-opening-customized-configuration).
-1. Selecteer de **[!UICONTROL Select Predicate]** en slepen **[!UICONTROL Custom Column Options Predicate]** op het formulier.
-1. In de **[!UICONTROL Settings]** selecteert u de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, van **[!UICONTROL Column Name]** veld.
-1. Geef het label voor het filter met aangepaste kolomopties op in het dialoogvenster **[!UICONTROL Filter Label]** veld.
-1. Selecteer de **[!UICONTROL Single Select]** Schakel het selectievakje in om de selectie van slechts één optie in te schakelen terwijl u een filter toepast op een kolom Inbox.
-1. In de **[!UICONTROL Add Options]** sectie:
-   1. Selecteren **[!UICONTROL Manual]** om de opties voor filterzoekopdrachten handmatig te definiëren. Selecteren **[!UICONTROL Add Filter Options]** om de eerste optie te definiëren. Geef het label voor de kolomoptie en de tekst van de optiewaarde op die u wilt zoeken. Als u bijvoorbeeld naar **Vrouwelijk** als een waarde in een kolom Inbox, kunt u specificeren **F** als label voor de kolomoptie en toevoegen **Vrouwelijk** als de tekst van de optiewaarde. U kunt ook meer filteropties toevoegen.
-   1. Selecteren **[!UICONTROL JSON Path]** om opties te definiëren via een JSON-bestandspad. Hier volgt een voorbeeld van een JSON-bestand waarin filteropties worden gedefinieerd:
+1. Open de [ vorm voor configuratie ](#creating-opening-customized-configuration).
+1. Selecteer de tab **[!UICONTROL Select Predicate]** en sleep **[!UICONTROL Custom Column Options Predicate]** naar het formulier.
+1. Selecteer op het tabblad **[!UICONTROL Settings]** de kolomnaam Inbox waarop u de zoekopdracht wilt baseren, in het veld **[!UICONTROL Column Name]** .
+1. Geef het label voor het filter met aangepaste kolomopties op in het veld **[!UICONTROL Filter Label]** .
+1. Schakel het selectievakje **[!UICONTROL Single Select]** in als u slechts één optie wilt selecteren terwijl u een filter toepast op een kolom Inbox.
+1. In de sectie **[!UICONTROL Add Options]** :
+   1. Selecteer **[!UICONTROL Manual]** om de zoekopties voor filters handmatig te definiëren. Selecteer **[!UICONTROL Add Filter Options]** om de eerste optie te definiëren. Geef het label voor de kolomoptie en de tekst van de optiewaarde op die u wilt zoeken. Bijvoorbeeld, als u naar **Vrouw** als waarde in een kolom wilt zoeken Inbox, kunt u **F** als etiket voor de kolomoptie specificeren en **Vrouw** als tekst van de optiewaarde toevoegen. U kunt ook meer filteropties toevoegen.
+   1. Selecteer **[!UICONTROL JSON Path]** om opties te definiëren met behulp van een JSON-bestandspad. Hier volgt een voorbeeld van een JSON-bestand waarin filteropties worden gedefinieerd:
 
       ```JSON
           {
@@ -124,7 +124,7 @@ Een voorspelling voor aangepaste kolomopties configureren:
         }
       ```
 
-   1. Selecteren **[!UICONTROL CRX Options Path]** opties definiëren met behulp van de CRX-opslagpaden. Selecteren **[!UICONTROL Add Option Paths]** meerdere paden toevoegen. Hier volgt een voorbeeld voor het definiëren van `Male` en `Female` filteropties:
+   1. Selecteer **[!UICONTROL CRX Options Path]** om opties te definiëren met behulp van de paden van de CRX-opslagplaats. Selecteer **[!UICONTROL Add Option Paths]** om meerdere paden toe te voegen. Hieronder ziet u een voorbeeld voor het definiëren van filteropties `Male` en `Female` :
 
       ```JSON
          <gender jcr:primaryType="sling:OrderedFolder">
@@ -139,18 +139,18 @@ Een voorspelling voor aangepaste kolomopties configureren:
                     </gender>
       ```
 
-1. Geef een optionele beschrijving voor de configuratie op en selecteer **[!UICONTROL Done]** opslaan.
+1. Geef een optionele beschrijving voor de configuratie op en selecteer **[!UICONTROL Done]** om deze op te slaan.
 
-De configuratiewijzigingen worden weerspiegeld wanneer u de pagina Filters opent. Het filterlabel dat u in stap 4 hebt opgegeven, wordt weergegeven als het label voor het voorvoegsel van de optie Aangepaste kolom. [!DNL Experience Manager] past de zoekcriteria die in stap 6 zijn gedefinieerd, toe op de kolomnaam die in stap 3 is opgegeven en retourneert de items in het Postvak IN.
+De configuratiewijzigingen worden weerspiegeld wanneer u de pagina Filters opent. Het filterlabel dat u in stap 4 hebt opgegeven, wordt weergegeven als het label voor het voorvoegsel van de optie Aangepaste kolom. [!DNL Experience Manager] past de zoekcriteria die zijn gedefinieerd in stap 6 toe op de kolomnaam die is opgegeven in stap 3 en retourneert de items in het Postvak IN.
 
-In de volgende video worden de stappen geïllustreerd voor het filteren van een kolom op basis van de `true` en `false` optiewaarden.
+In de volgende video ziet u de stappen waarmee u een kolom filtert op basis van de waarden van de opties `true` en `false` .
 
 >[!VIDEO](https://video.tv.adobe.com/v/335679)
 
 ## Zoekfilters weergeven op basis van voorspelling {#view-search-filters-for-predicates}
 
-U kunt zoekfilters weergeven op basis van voorspelling. Selecteren **[!UICONTROL Filter]** op de pagina Inbox. De filters worden weergegeven in het linkervenster. Vervolgens kunt u de zoekcriteria opgeven om de items in het Postvak IN te filteren.
+U kunt zoekfilters weergeven op basis van voorspelling. Selecteer **[!UICONTROL Filter]** op de pagina Inbox. De filters worden weergegeven in het linkervenster. Vervolgens kunt u de zoekcriteria opgeven om de items in het Postvak IN te filteren.
 
-![Pagina Filters](assets/apply-filters.png)
+![ pagina van Filters ](assets/apply-filters.png)
 
-Voor meer informatie bij het beheren van predikeconfiguraties, zie [Zoeken in Forms configureren](search-forms.md).
+Voor meer informatie bij het beheren van predikeconfiguraties, zie [ Vormend Onderzoek Forms ](search-forms.md).

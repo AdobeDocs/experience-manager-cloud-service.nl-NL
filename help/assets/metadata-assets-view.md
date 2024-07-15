@@ -1,6 +1,6 @@
 ---
-title: Hoe te om meta-gegevens in de mening van Activa te beheren?
-description: Leer hoe u metagegevens beheert in de weergave Middelen. Een beter beheer van metagegevens maakt een middel toegankelijker, eenvoudiger te beheren en compleet.
+title: Hoe te om meta-gegevens in de mening van Assets te beheren?
+description: Leer hoe u metagegevens beheert in de weergave Assets. Een beter beheer van metagegevens maakt een middel toegankelijker, eenvoudiger te beheren en compleet.
 role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Metagegevens in middelenweergave {#metadata}
+# Metagegevens in Assets View {#metadata}
 
 Metagegevens zijn gegevens of een beschrijving van de gegevens. Uw afbeeldingen als een element kunnen bijvoorbeeld informatie bevatten over de camera waarop u hebt geklikt of over copyrightgegevens. Deze informatie is metagegevens van de afbeelding. Metagegevens zijn essentieel voor efficiënt middelenbeheer. Metagegevens zijn de verzameling van alle gegevens die voor een element beschikbaar zijn, maar hoeven niet noodzakelijkerwijs in dat element te zijn opgenomen.
 
@@ -24,17 +24,17 @@ Met de toevoeging van metagegevens neemt de waarde van een digitaal element toe,
 * Gemakkelijker te beheren - u kunt gemakkelijker middelen met de zelfde reeks eigenschappen vinden en veranderingen op hen toepassen.
 * Volledig - asset bevat meer informatie en context met meer metagegevens.
 
-Om deze redenen beschikt u over de juiste middelen om metagegevens voor uw digitale elementen te maken, te beheren en uit te wisselen.
+Om deze redenen biedt Assets u de juiste middelen om metagegevens voor uw digitale middelen te maken, beheren en uit te wisselen.
 
 ## De metagegevens weergeven {#view-metadata}
 
-Als u de metagegevens van een element wilt weergeven, bladert u naar het element of doorzoekt u het element, selecteert u het element en klikt u op **[!UICONTROL Details]** in de werkbalk.
+Als u de metagegevens van een element wilt weergeven, bladert u naar het element of doorzoekt u het element, selecteert u het element en klikt u op **[!UICONTROL Details]** op de werkbalk.
 
-![Metagegevens van een element weergeven](assets/metadata-view.png)
+![ meta-gegevens van de Mening van een activa ](assets/metadata-view.png)
 
-*Afbeelding: Als u een element en de bijbehorende metagegevens wilt weergeven, klikt u op **[!UICONTROL Details]**op de werkbalk of dubbelklikt u op het element.*
+*Cijfer: Om activa en zijn meta-gegevens te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
-De basismetagegevens, zoals titel, beschrijving en uploaddatum, zijn beschikbaar in het dialoogvenster [!UICONTROL Basic] tab. De [!UICONTROL Advanced] bevat geavanceerdere metagegevens, zoals cameramodel, lensdetails en geotags. De [!UICONTROL Tags] bevat automatisch toegepaste tags op basis van de inhoud van de afbeelding.
+De basismetagegevens, zoals titel, beschrijving en uploaddatum, zijn beschikbaar op het tabblad [!UICONTROL Basic] . Het tabblad [!UICONTROL Advanced] bevat meer geavanceerde metagegevens, zoals cameramodel, lensdetails en geotags. Het tabblad [!UICONTROL Tags] bevat automatisch toegepaste tags op basis van de inhoud van de afbeelding.
 
 ## Metagegevens bijwerken {#update-metadata}
 
@@ -42,70 +42,70 @@ Nadat het metagegevensformulier door Admin is geconfigureerd, kunnen andere veld
 
 ## Slimme tags {#smart-tags}
 
-[!DNL Experience Manager Assets] maakt gebruik van kunstmatige intelligentie, verstrekt door [Adobe Sensei](https://www.adobe.com/sensei.html) om automatisch relevante tags toe te passen op alle geüploade elementen. Deze labels, met de juiste naam Slimme tags, verhogen de snelheid van de inhoud van uw projecten door u te helpen snel relevante elementen te vinden. De slimme tags zijn een voorbeeld van metagegevens die niet in de afbeelding voorkomen.
+[!DNL Experience Manager Assets] gebruikt kunstmatige intelligentie die door [ wordt verstrekt Adobe Sensei ](https://www.adobe.com/sensei.html) om relevante markeringen op al uw geüploade activa automatisch toe te passen. Deze labels, met de juiste naam Slimme tags, verhogen de snelheid van de inhoud van uw projecten door u te helpen snel relevante elementen te vinden. De slimme tags zijn een voorbeeld van metagegevens die niet in de afbeelding voorkomen.
 
-De slimme tags worden toegepast in de buurt van realtime en worden gegenereerd op basis van de inhoud van de afbeelding. Wanneer u een element uploadt, wordt de gebruikersinterface weergegeven [!UICONTROL Processing] gedurende enige tijd op de miniatuur van het element. Zodra de verwerking is voltooid, kunt u [de metagegevens weergeven](#view-metadata) en de slimme tags.
+De slimme tags worden toegepast in de buurt van realtime en worden gegenereerd op basis van de inhoud van de afbeelding. Wanneer u een element uploadt, wordt de gebruikersinterface gedurende enige tijd [!UICONTROL Processing] weergegeven op de elementminiatuur. Zodra de verwerking volledig is, kunt u [ de meta-gegevens ](#view-metadata) en de slimme markeringen bekijken.
 
-![Slimme tags van een element weergeven](assets/metadata-view-tags.png)
+![ Slimme Markeringen van de Mening van een activa ](assets/metadata-view-tags.png)
 
-*Figuur: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**op de werkbalk of dubbelklikt u op het element.*
+*Cijfer: Om de Slimme Markeringen van een activa te bekijken, klik **[!UICONTROL Details]**van toolbar of klik de activa tweemaal.*
 
 Slimme tags bevatten ook een betrouwbaarheidsscore als percentage. Het geeft het vertrouwen aan dat aan de toegepaste tag is gekoppeld. U kunt de automatisch toegepaste slimme tags verkleinen.
 
 ## Trefwoorden toevoegen of bijwerken {#manually-tag}
 
-U kunt meer tags toevoegen aan uw elementen, naast de slimme tags die automatisch worden toegevoegd met de opdracht [!DNL Adobe Sensei] intelligente service. Een element openen voor een voorvertoning, klikt u op [!UICONTROL Tags]en typ de gewenste trefwoorden in het veld [!UICONTROL Keywords] veld. Druk op Return om de tag toe te voegen. [!DNL Assets view] indexeert het sleutelwoord in dichtbij echt - tijd en uw team kan spoedig de bijgewerkte activa zoeken gebruikend de nieuwe sleutelwoorden.
+U kunt meer tags toevoegen aan uw elementen, naast de slimme tags die automatisch worden toegevoegd met de slimme service van [!DNL Adobe Sensei] . Open een element voor voorvertoning, klik op [!UICONTROL Tags] en typ de gewenste trefwoorden in het veld [!UICONTROL Keywords] . Druk op Return om de tag toe te voegen. [!DNL Assets view] indexeert het sleutelwoord in dichtbij echt - tijd en uw team kan de bijgewerkte activa spoedig zoeken gebruikend de nieuwe sleutelwoorden.
 
-U kunt ook tags verwijderen uit het dialoogvenster [!UICONTROL Smart Tags] sectie die automatisch wordt toegevoegd door [!DNL Assets view] naar alle geüploade elementen.
+U kunt ook tags uit de sectie [!UICONTROL Smart Tags] verwijderen die automatisch door [!DNL Assets view] worden toegevoegd aan alle geüploade elementen.
 
 ## Taxonomiebeheer {#taxonomy-management}
 
-Tags kunnen ook in een hiërarchie worden genest ter ondersteuning van relaties zoals categorie en subcategorie. Als u hiërarchische tags moet invoegen, worden deze eenvoudig beheerd door de beheerder in het dialoogvenster [!UICONTROL Taxonomy Management] deel van [!UICONTROL Settings]. U kunt een beheerde set naamruimten en tags maken die alle gebruikers kunnen gebruiken tijdens het beschrijven van inhoud. Alleen de beheerders kunnen taghiërarchieën instellen in [!UICONTROL Taxonomy Manager] ervoor zorgen dat de waarden op consistente wijze worden gecontroleerd en gebruikt.
+Tags kunnen ook in een hiërarchie worden genest ter ondersteuning van relaties zoals categorie en subcategorie. Als u hiërarchische tags wilt invoegen, worden deze eenvoudig beheerd door de beheerder in de sectie [!UICONTROL Taxonomy Management] van [!UICONTROL Settings] . U kunt een beheerde set naamruimten en tags maken die alle gebruikers kunnen gebruiken tijdens het beschrijven van inhoud. Alleen de beheerders kunnen taghiërarchieën instellen in [!UICONTROL Taxonomy Manager] om ervoor te zorgen dat de waarden worden beheerd en consistent worden gebruikt.
 
 ## Metagegevens Forms instellen {#metadata-forms}
 
 >[!CONTEXTUALHELP]
 >id="assets_metadata_forms"
 >title="Metagegevens Forms"
->abstract="[!DNL Experience Manager Assets] biedt standaard veel standaardvelden voor metagegevens. Organisaties hebben extra behoeften aan metagegevens en hebben meer metagegevensvelden nodig om bedrijfsspecifieke metagegevens toe te voegen. Met metagegevensformulieren kunnen bedrijven aangepaste metagegevensvelden toevoegen aan de pagina Details van een element. De bedrijfsspecifieke metagegevens verbeteren het beheer en de ontdekking van de bedrijfsmiddelen."
+>abstract="[!DNL Experience Manager Assets] biedt standaard vele standaardmetagegevensvelden. Organisaties hebben extra behoeften aan metagegevens en hebben meer metagegevensvelden nodig om bedrijfsspecifieke metagegevens toe te voegen. Met metagegevensformulieren kunnen bedrijven aangepaste metagegevensvelden toevoegen aan de pagina Details van een element. De bedrijfsspecifieke metagegevens verbeteren het beheer en de ontdekking van de bedrijfsmiddelen."
 
-De middelenweergave biedt standaard vele standaardmetagegevensvelden. Organisaties hebben extra behoeften aan metagegevens en hebben meer metagegevensvelden nodig om bedrijfsspecifieke metagegevens toe te voegen. Met metagegevensformulieren kunnen bedrijven aangepaste metagegevensvelden toevoegen aan het element [!UICONTROL Details] pagina. De bedrijfsspecifieke metagegevens verbeteren het beheer en de ontdekking van de bedrijfsmiddelen. U kunt geheel nieuwe formulieren maken of een bestaand formulier opnieuw gebruiken.
+De Assets-weergave biedt standaard vele standaardmetagegevensvelden. Organisaties hebben extra behoeften aan metagegevens en hebben meer metagegevensvelden nodig om bedrijfsspecifieke metagegevens toe te voegen. Met metagegevensformulieren kunnen bedrijven aangepaste metagegevensvelden toevoegen aan de pagina [!UICONTROL Details] van een element. De bedrijfsspecifieke metagegevens verbeteren het beheer en de ontdekking van de bedrijfsmiddelen. U kunt geheel nieuwe formulieren maken of een bestaand formulier opnieuw gebruiken.
 
-U kunt metagegevensformulieren configureren voor verschillende typen elementen (verschillende MIME-typen). Gebruik dezelfde formuliernaam als het MIME-type van het bestand. In de middelenweergave wordt het MIME-type voor geüploade elementen automatisch afgestemd op de naam van het formulier en worden de metagegevens voor de geüploade elementen bijgewerkt op basis van de formuliervelden.
+U kunt metagegevensformulieren configureren voor verschillende typen elementen (verschillende MIME-typen). Gebruik dezelfde formuliernaam als het MIME-type van het bestand. In de Assets-weergave wordt het MIME-type voor geüploade elementen automatisch afgestemd op de naam van het formulier en worden de metagegevens voor de geüploade elementen bijgewerkt op basis van de formuliervelden.
 <!--
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
 -->
-In de middelenweergave wordt de volgende reeks gebruikt om te zoeken naar bestaande formuliernamen voor metagegevens om de metagegevensvelden toe te passen op de geüploade elementen van een bepaald type:
+In de Assets-weergave wordt de volgende volgorde gebruikt om te zoeken naar bestaande formuliernamen voor metagegevens om de metagegevensvelden toe te passen op de geüploade elementen van een bepaald type:
 
-MIME-subtype > MIME-type > `default` form > Out-of-the-box form
+MIME-subtype > MIME-type > `default` -formulier > Formulier buiten de doos
 
-Als een metagegevensformulier bijvoorbeeld op naam staat `PDF` of `pdf` bestaat, bevat het geüploade PDF-document metagegevensvelden zoals gedefinieerd in het formulier. Als een metagegevensformulier met de naam `PDF` of `pdf` bestaat niet. De middelenweergave komt overeen als er een metagegevensformulier met de naam bestaat `application`. Als er een metagegevensformulier met de naam `application`De geüploade PDF-documenten bevatten metagegevensvelden zoals gedefinieerd in het formulier. Als in de weergave Middelen nog steeds geen overeenkomend metagegevensformulier wordt gevonden, wordt gezocht naar de `default` metagegevensformulier waarmee u in het formulier gedefinieerde metagegevensvelden kunt toepassen op de geüploade PDF-documenten. Als geen van deze stappen werkt, worden in de weergave Middelen metagegevensvelden toegepast die in het formulier buiten het vak zijn gedefinieerd, op alle geüploade PDF-documenten.
-Maar als u een metagegevensformulier aan een map wilt toewijzen [zie](#assign-metadata-form-folder).
+Als bijvoorbeeld een metagegevensformulier met de naam `PDF` of `pdf` bestaat, bevatten de geüploade PDF-documenten metagegevensvelden zoals gedefinieerd in het formulier. Als een metagegevensformulier met de naam `PDF` of `pdf` niet bestaat, komt de Assets-weergave overeen als er een metagegevensformulier met de naam `application` is. Als er een metagegevensformulier met de naam `application` is, bevatten de geüploade PDF-documenten metagegevensvelden zoals gedefinieerd in het formulier. Als er in de Assets-weergave nog steeds geen overeenkomend metagegevensformulier wordt gevonden, wordt gezocht naar het metagegevensformulier `default` om de metagegevensvelden die in het formulier zijn gedefinieerd, toe te passen op de geüploade PDF-documenten. Als geen van deze stappen werkt, worden in de Assets-weergave metagegevensvelden die in het formulier buiten het vak zijn gedefinieerd, toegepast op alle geüploade PDF-documenten.
+Alhoewel als u een meta-gegevensvorm aan een omslag [ wilt toewijzen zie ](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
->Het nieuwe metagegevensformulier voor een specifiek bestandstype vervangt volledig het standaardformulier voor metagegevens dat [!DNL Assets view] verstrekt. Als u een metagegevensformulier verwijdert of de naam ervan wijzigt, zijn de standaardmetagegevensvelden weer beschikbaar voor nieuwe elementen.
+>Het nieuwe metagegevensformulier voor een specifiek bestandstype vervangt volledig het standaardmetagegevensformulier dat [!DNL Assets view] biedt. Als u een metagegevensformulier verwijdert of de naam ervan wijzigt, zijn de standaardmetagegevensvelden weer beschikbaar voor nieuwe elementen.
 
 Ga als volgt te werk om een metagegevensformulier te maken:
 
-1. Klik in het linkerspoor op **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]**.
+1. Klik in de linkertrack op **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** .
 
-   ![metagegevensformulieren, optie in linkerzijbalk](assets/metadata-forms-sidebar.png)
+   ![ optie van meta-gegevensvormen in linkerzijbalk ](assets/metadata-forms-sidebar.png)
 
-1. Klikken **[!UICONTROL Create]**, in de rechterbovenhoek van de gebruikersinterface.
-1. Geef het formulier een naam en klik op **[!UICONTROL Create]**.
-1. Geef een naam op voor de tab in **[!UICONTROL Settings]** in het rechterspoor.
-1. Van de **[!UICONTROL Components]** Sleep de vereiste componenten naar een tabblad in het formulier. Sleep de componenten in de gewenste volgorde.
+1. Klik op **[!UICONTROL Create]** rechtsboven in de gebruikersinterface.
+1. Geef een naam op voor het formulier en klik op **[!UICONTROL Create]** .
+1. Geef een naam op voor de tab in **[!UICONTROL Settings]** in de rechtertrack.
+1. Sleep de vereiste componenten op een tabblad in het formulier vanuit de **[!UICONTROL Components]** -code die beschikbaar is in de linkertrack. Sleep de componenten in de gewenste volgorde.
 
-   ![metagegevensformulieren, optie in linkerzijbalk](assets/metadata-form-new.png)
+   ![ optie van meta-gegevensvormen in linkerzijbalk ](assets/metadata-form-new.png)
 
-   *Afbeelding: interface voor het maken van metagegevens met opties voor het toevoegen van componenten en de optie voor een voorbeeldweergave van het formulier.*
+   *Cijfer: De interface van de de vormverwezenlijking van meta-gegevens met opties om componenten en optie toe te voegen om de vorm voor te vertonen.*
 
-1. Geef voor elke component een naam op in het dialoogvenster **[!UICONTROL Settings]** in de rechterspoorstaaf een kaart van de ondersteunde eigenschappen leveren.
-1. Selecteer optioneel voor een component **[!UICONTROL Required]** om het metagegevensveld verplicht te maken en selecteer **[!UICONTROL Read-Only]** om het veld in het element onbewerkbaar te maken [!UICONTROL Details] pagina.
-1. Klik optioneel op **[!UICONTROL Preview]** om een voorbeeld te bekijken van het formulier dat u maakt.
+1. Geef voor elke component een naam in de **[!UICONTROL Settings]** in de rechtertrack op en geef een toewijzing van de ondersteunde eigenschappen op.
+1. Selecteer voor een component desgewenst **[!UICONTROL Required]** om het metagegevensveld verplicht te maken en selecteer **[!UICONTROL Read-Only]** om het veld onbewerkbaar te maken op de elementpagina [!UICONTROL Details] .
+1. Klik indien nodig op **[!UICONTROL Preview]** om een voorbeeld te bekijken van het formulier dat u maakt.
 1. Voeg desgewenst meer tabbladen en de vereiste componenten toe aan elk tabblad.
-1. Klikken **[!UICONTROL Save]** wanneer het formulier volledig is.
+1. Klik op **[!UICONTROL Save]** wanneer het formulier is voltooid.
 
 Bekijk deze video om de reeks stappen weer te geven:
 
@@ -113,7 +113,7 @@ Bekijk deze video om de reeks stappen weer te geven:
 
 Nadat een formulier is gemaakt, wordt het automatisch toegepast wanneer gebruikers een element van het overeenkomende MIME-type uploaden.
 
-Als u een bestaand formulier opnieuw wilt gebruiken om een nieuw formulier te maken, selecteert u een metagegevensformulier. Klik op **[!UICONTROL Copy]** Geef een naam op in de werkbalk en klik op **[!UICONTROL Confirm]**. U kunt een metagegevensformulier bewerken om het te wijzigen. Wanneer u een formulier wijzigt, wordt dit gebruikt voor elementen die na de wijziging worden geüpload. De bestaande activa blijven ongewijzigd.
+Als u een bestaand formulier opnieuw wilt gebruiken om een nieuw formulier te maken, selecteert u een metagegevensformulier, klikt u op **[!UICONTROL Copy]** op de werkbalk, geeft u een naam op en klikt u op **[!UICONTROL Confirm]** . U kunt een metagegevensformulier bewerken om het te wijzigen. Wanneer u een formulier wijzigt, wordt dit gebruikt voor elementen die na de wijziging worden geüpload. De bestaande activa blijven ongewijzigd.
 
 ### Eigenschapcomponenten {#property-components}
 
@@ -138,21 +138,21 @@ Hieronder ziet u een overzicht van elk type eigenschap en de manier waarop deze 
 
 ### Metagegevensformulier toewijzen aan een map {#assign-metadata-form-folder}
 
-U kunt ook een metagegevensformulier toewijzen aan een map binnen de implementatie van de middelenweergave. Het metagegevensformulier dat volgens het MIME-type aan een map is toegewezen, wordt overschreven wanneer u handmatig een metagegevensformulier op een map toepast. Alle elementen in de map, inclusief de elementen in de submappen, geven vervolgens de eigenschappen weer die in het metagegevensformulier zijn gedefinieerd.
+U kunt ook een metagegevensformulier toewijzen aan een map in de Assets-weergavemplementatie. Het metagegevensformulier dat volgens het MIME-type aan een map is toegewezen, wordt overschreven wanneer u handmatig een metagegevensformulier op een map toepast. Alle elementen in de map, inclusief de elementen in de submappen, geven vervolgens de eigenschappen weer die in het metagegevensformulier zijn gedefinieerd.
 
 Een metagegevensformulier toewijzen aan een map:
 
-1. Navigeren naar **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** en selecteert u een metagegevensformulier.
+1. Navigeer naar **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** en selecteer een metagegevensformulier.
 
 2. Klik op **[!UICONTROL Assign to Folder]**.
 
-3. Selecteer de map en klik op **[!UICONTROL Assign]**. U kunt de mappen selecteren door op de mapnamen te klikken.
+3. Selecteer de map en klik op **[!UICONTROL Assign]** . U kunt de mappen selecteren door op de mapnamen te klikken.
 
-   ![metagegevensformulier toewijzen aan een map](assets/assign-to-folder.png)
+   ![ wijs meta-gegevensvorm aan een omslag ](assets/assign-to-folder.png) toe
 
    U kunt ook naar de pagina met mapdetails navigeren en een metagegevensformulier selecteren uit de makeigenschappen in het rechterdeelvenster om het metagegevensformulier aan de map toe te wijzen.
 
-   ![Metagegevens uit mapeigenschappen](assets/metadata-from-folder-props.png)
+   ![ de vorm van meta-gegevens van omslageigenschappen ](assets/metadata-from-folder-props.png)
 
 ### Metagegevens uit mappen verwijderen {#remove-metadata-form-folder}
 
@@ -160,23 +160,23 @@ Nadat u een metagegevensformulier aan een of meerdere mappen hebt toegewezen, ku
 
 Een metagegevensformulier verwijderen uit een map:
 
-1. Navigeren naar **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** en selecteert u een metagegevensformulier.
+1. Navigeer naar **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** en selecteer een metagegevensformulier.
 
 1. Klik op **[!UICONTROL Remove from Folder(s)]**. De lijst met toegewezen mappen voor de weergave van het metagegevensformulier.
 
-1. Selecteer de map en klik op **[!UICONTROL Remove]**. U kunt ook meerdere mappen in de lijst selecteren.
+1. Selecteer de map en klik op **[!UICONTROL Remove]** . U kunt ook meerdere mappen in de lijst selecteren.
 
-U kunt ook naar de pagina met mapdetails navigeren en **[!UICONTROL System mapped Metadata Form]** van de **[!UICONTROL Metadata Forms]** veld om het toegewezen metagegevensformulier uit een map te verwijderen.
+U kunt ook naar de pagina met mapdetails navigeren en **[!UICONTROL System mapped Metadata Form]** in het veld **[!UICONTROL Metadata Forms]** selecteren om het toegewezen metagegevensformulier uit een map te verwijderen.
 
 ## Volgende stappen {#next-steps}
 
-* [Een video bekijken om metagegevensformulieren te beheren in de middelenweergave](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
+* [ bekijk een video om meta-gegevensvormen in de mening van Assets te beheren ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
-* Feedback geven op het product met de [!UICONTROL Feedback] optie beschikbaar in de gebruikersinterface van de weergave Elementen
+* Feedback geven op het product met de optie [!UICONTROL Feedback] die beschikbaar is in de gebruikersinterface van de Assets-weergave
 
-* Documentfeedback geven met [!UICONTROL Edit this page] ![de pagina bewerken](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![een GitHub-probleem maken](assets/do-not-localize/github-issue.png) beschikbaar op de rechterzijbalk
+* Verstrek documentatie terugkoppelt gebruikend [!UICONTROL Edit this page] ![ uitgeeft de pagina ](assets/do-not-localize/edit-page.png) of [!UICONTROL Log an issue] ![ creeer een kwestie GitHub ](assets/do-not-localize/github-issue.png) beschikbaar op juiste sidebar
 
-* Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support)
+* De Zorg van de Klant van het contact ](https://experienceleague.adobe.com/?support-solution=General#support)[
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

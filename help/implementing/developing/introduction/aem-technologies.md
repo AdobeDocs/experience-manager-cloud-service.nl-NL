@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Technische stichtingen AEM {#aem-technical-foundations}
 
-AEM is een robuust platform dat op bewezen, scalable, en flexibele technologieën wordt voortgebouwd. Dit document biedt een gedetailleerd overzicht van de verschillende onderdelen die AEM vormen en is bedoeld als een technisch aanhangsel voor een ontwikkelaar van een complete AEM. Het is niet bedoeld als gids aan de slag. Als u nog geen ervaring hebt met AEM ontwikkeling, raadpleegt u [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](develop-wknd-tutorial.md) als eerste stap.
+AEM is een robuust platform dat op bewezen, scalable, en flexibele technologieën wordt voortgebouwd. Dit document biedt een gedetailleerd overzicht van de verschillende onderdelen die AEM vormen en is bedoeld als een technisch aanhangsel voor een ontwikkelaar van een complete AEM. Het is niet bedoeld als gids aan de slag. Als u nieuw aan AEM ontwikkeling bent, zie [ Begonnen het Ontwikkelen AEM Sites - WKND Leerprogramma ](develop-wknd-tutorial.md) als eerste stap.
 
 >[!TIP]
 >
->Voordat de Adobe in de kerntechnologieën van AEM gaat werken, beveelt zij aan de [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie.](develop-wknd-tutorial.md)
+>Alvorens in de kerntechnologieën van AEM te duiken, adviseert de Adobe de voltooiing van [ Begonnen het Ontwikkelen van AEM Sites - WKND Leerprogramma.](develop-wknd-tutorial.md)
 
 ## Grondbeginselen {#fundamentals}
 
@@ -36,21 +36,21 @@ De onderliggende inhoudopslagplaats en de bedrijfslogische lagen worden gebouwd 
 
 ## Java™ Content Repository {#java-content-repository}
 
-De JCR-standaard (Java™ Content Repository), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), geeft een leveranciersonafhankelijke en implementatieonafhankelijke manier aan om inhoud bidirectioneel te benaderen op granulair niveau in een inhoudsopslagplaats. Het productdossier is in het bezit van Adobe Research (Zwitserland) AG.
+De norm van de Bewaarplaats van de Inhoud Java™ (JCR), [ JSR 283 ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), specificeert een verkoper-onafhankelijke en implementatie-onafhankelijke manier om tot inhoud bidirectioneel op een korrelig niveau binnen een inhoudsbewaarplaats toegang te hebben. Het productdossier is in het bezit van Adobe Research (Zwitserland) AG.
 
-De [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) verpakking, `javax.jcr.*` wordt gebruikt voor directe toegang tot en manipulatie van inhoud in de repository.
+Het [ JCR API 2.0 ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, `javax.jcr.*` wordt gebruikt voor de directe toegang en de manipulatie van bewaarplaatsinhoud.
 
 AEM is gebaseerd op een JCR.
 
 ## Apache Jackrabbit Oak {#jackrabbit-oak}
 
-[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/) is een implementatie van een schaalbare en krachtige hiërarchische opslagplaats voor inhoud die als basis kan dienen voor moderne websites van wereldklasse en andere veeleisende toepassingen voor inhoud, conform de JCR-standaard.
+[ Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/) is een implementatie van een scalable en krachtige hiërarchische inhoudsbewaarplaats voor gebruik als stichting van moderne websites van wereldklasse en andere veeleisende inhoudstoepassingen, in overeenstemming met de norm JCR.
 
-Jackrabbit Oak (ook wel &quot;eikenhout&quot; genoemd) is de toepassing van de JCR-norm waarop AEM wordt gebouwd.
+Jackrabbit Oak (ook gewoon Oak genoemd) is de toepassing van de JCR-norm waarop AEM wordt gebouwd.
 
 ## Verwerking van aanvraag voor verzending {#sling-request-processing}
 
-AEM is gemaakt met [Sling](https://sling.apache.org/index.html), een toepassingskader van het Web dat op de principes van REST wordt gebaseerd die gemakkelijke ontwikkeling van inhoud-georiënteerde toepassingen verstrekken. Sling gebruikt een JCR-opslagplaats, zoals Apache Jackrabbit Oak, als gegevensopslagplaats. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
+AEM wordt gebouwd gebruikend [ het Schuiven ](https://sling.apache.org/index.html), een de toepassingskader van het Web dat op de beginselen van REST wordt gebaseerd die gemakkelijke ontwikkeling van op inhoud-georiënteerde toepassingen verstrekt. Sling gebruikt een JCR-opslagplaats, zoals Apache Jackrabbit Oak, als gegevensopslagplaats. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
 
 ### Inleiding tot verkoop {#introduction-to-sling}
 
@@ -58,19 +58,19 @@ Met Verschuiving is het type inhoud dat moet worden gerenderd niet de eerste ver
 
 De voordelen van deze flexibiliteit worden duidelijk in toepassingen met een groot aantal verschillende inhoudselementen, of wanneer u pagina&#39;s nodig hebt die gemakkelijk kunnen worden aangepast. Met name bij de implementatie van een systeem voor webcontentbeheer, zoals AEM.
 
-Zie [Ontdek de verkoop binnen 15 minuten](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) voor de eerste stappen voor het ontwikkelen met Sling.
+Zie [ ontdekken Sling in 15 minuten ](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) voor de eerste stappen voor het ontwikkelen met het Verschilderen.
 
 In het volgende diagram wordt de resolutie van het script Sling uitgelegd. Het toont hoe te om van HTTP- verzoek aan inhoudsknoop, van inhoudsknoop aan middeltype, van middeltype aan manuscript te krijgen en welke scripting variabelen beschikbaar zijn.
 
-![Scriptresolutie voor Apache Sling](assets/sling-cheatsheet-01.png)
+![ Begrijpend Apache die manuscriptresolutie verdeelt ](assets/sling-cheatsheet-01.png)
 
-Het volgende diagram verklaart de verborgen, maar krachtige, verzoekparameters die u met kunt gebruiken `SlingPostServlet`, de standaardmanager voor alle verzoeken van de POST. De manager geeft u eindeloze opties voor het creëren van, het wijzigen van, het schrappen van, het kopiëren van, en het bewegen van knopen in de bewaarplaats.
+In het volgende diagram worden de verborgen, maar krachtige, aanvraagparameters uitgelegd die u met `SlingPostServlet` kunt gebruiken, de standaardhandler voor alle verzoeken om POST. De manager geeft u eindeloze opties voor het creëren van, het wijzigen van, het schrappen van, het kopiëren van, en het bewegen van knopen in de bewaarplaats.
 
-![De SlingPostServlet gebruiken](assets/sling-cheatsheet-02.png)
+![ Gebruikend SlingPostServlet ](assets/sling-cheatsheet-02.png)
 
 ### Verdelen is Content Centric {#sling-is-content-centric}
 
-Verkopen is *inhoudgericht*. Het betekent dat de verwerking op de inhoud wordt geconcentreerd aangezien elk (HTTP) verzoek op inhoud in de vorm van een middel JCR (een opslagplaats knoop) in kaart wordt gebracht:
+Sling is *inhoud-centric*. Het betekent dat de verwerking op de inhoud wordt geconcentreerd aangezien elk (HTTP) verzoek op inhoud in de vorm van een middel JCR (een opslagplaats knoop) in kaart wordt gebracht:
 
 * Het eerste doel is de bron (JCR-knooppunt) die de inhoud in zijn bezit heeft
 * Ten tweede bevindt de representatie, of het script, zich in de eigenschappen resource met bepaalde onderdelen van de aanvraag (bijvoorbeeld kiezers en/of de extensie)
@@ -101,12 +101,12 @@ U kunt het onderverdelen in zijn samengestelde delen:
 | `https://` | `myhost` | `/` | `tools/spy` | `.printable.a4.` | `html` | `/` | `a/b` | `?` | `x=12` |
 
 * **protocol** - HTTPS
-* **host** - Domein van de site
-* **inhoudspad** - Pad met de inhoud die moet worden gerenderd en wordt gebruikt met de extensie. In dit voorbeeld wordt het vertaald naar `tools/spy.html`
-* **kiezers** - Wordt gebruikt voor alternatieve methoden om de inhoud te renderen; in dit voorbeeld een printervriendelijke versie in A4-indeling
-* **extension** - Inhoudsindeling; geeft ook het script op dat moet worden gebruikt voor rendering
-* **achtervoegsel** - Kan worden gebruikt om aanvullende informatie op te geven
-* **param** - Alle parameters die vereist zijn voor dynamische inhoud
+* **gastheer** - Domein van de plaats
+* **inhoudspad** - Weg die de inhoud specificeren moet worden teruggegeven en met de uitbreiding wordt gebruikt. In dit voorbeeld wordt het omgezet in `tools/spy.html`
+* **selecteurs** - Gebruikt voor alternatieve methodes om de inhoud terug te geven; in dit voorbeeld een printer-vriendelijke versie in A4 formaat
+* **uitbreiding** - het formaat van de Inhoud; specificeert ook het manuscript dat voor het teruggeven moet worden gebruikt
+* **achtervoegsel** - kan worden gebruikt om extra informatie te specificeren
+* **params** - Om het even welke parameters die voor dynamische inhoud worden vereist
 
 #### Van URL naar inhoud en scripts {#from-url-to-content-and-scripts}
 
@@ -117,25 +117,25 @@ De beginselen van URL-decompositie gebruiken:
 
 De volgende afbeelding illustreert het gebruikte mechanisme, dat in de volgende secties nader wordt besproken.
 
-![URL-toewijzingsmechanisme](assets/url-mapping.png)
+![ URL toewijzingsmechanisme ](assets/url-mapping.png)
 
-Met Verschuiven geeft u op welk script een bepaalde entiteit wordt gerenderd (door het dialoogvenster `sling:resourceType` eigenschap in het knooppunt JCR). Dit mechanisme biedt meer vrijheid dan één waarin het script de gegevensentiteiten benadert (zoals een SQL-instructie in een PHP-script zou doen) omdat een resource meerdere uitvoeringen kan hebben.
+Met Sling geeft u op welk script een bepaalde entiteit wordt gerenderd (door de eigenschap `sling:resourceType` in het knooppunt JCR in te stellen). Dit mechanisme biedt meer vrijheid dan één waarin het script de gegevensentiteiten benadert (zoals een SQL-instructie in een PHP-script zou doen) omdat een resource meerdere uitvoeringen kan hebben.
 
 #### Toewijzingsverzoeken voor bronnen {#mapping-requests-to-resources}
 
 Het verzoek wordt uitgesplitst en de nodige informatie wordt ingewonnen. De repository wordt gezocht naar de gevraagde resource (content node):
 
 * First Sling controleert of een knooppunt bestaat op de locatie die in de aanvraag is opgegeven, bijvoorbeeld `../content/corporate/jobs/developer.html`
-* Als er geen knooppunt wordt gevonden, wordt de extensie verwijderd en wordt de zoekopdracht herhaald, bijvoorbeeld `../content/corporate/jobs/developer`
+* Wanneer geen knooppunt wordt gevonden, wordt de extensie verwijderd en wordt de zoekopdracht herhaald, bijvoorbeeld `../content/corporate/jobs/developer`
 * Als er geen knooppunt wordt gevonden, retourneert Sling de http-code 404 (Not Found).
 
 Met Sling kunnen andere zaken dan JCR-knooppunten ook bronnen zijn, maar deze functionaliteit is een geavanceerde functie.
 
 ### Script zoeken {#locating-the-script}
 
-Wanneer de juiste resource (content node) is gevonden, wordt de **slingermiddeltype** wordt geëxtraheerd. Dit pad zoekt naar het script dat moet worden gebruikt voor het renderen van de inhoud.
+Wanneer het aangewezen middel (inhoudsknoop) wordt gevestigd, wordt het **het verbinden middeltype** gehaald. Dit pad zoekt naar het script dat moet worden gebruikt voor het renderen van de inhoud.
 
-Het pad dat wordt opgegeven door de `sling:resourceType` kunnen:
+Het pad dat door `sling:resourceType` wordt opgegeven, kan als volgt zijn:
 
 * Absoluut
 * Relatief ten opzichte van een configuratieparameter
@@ -144,35 +144,35 @@ Het pad dat wordt opgegeven door de `sling:resourceType` kunnen:
 >
 >Relatieve paden worden door de Adobe aanbevolen omdat ze de draagbaarheid verhogen.
 
-Alle verkoopscripts worden opgeslagen in submappen van `/apps` (veranderbaar, gebruikersmanuscripten) of `/libs` (onveranderlijk, systeemmanuscripten), die in deze orde wordt gezocht.
+Alle Sling-scripts worden opgeslagen in submappen van `/apps` (mutable, user scripts) of `/libs` (imutable, system scripts), die in deze volgorde worden doorzocht.
 
 Een paar andere punten die u kunt opmerken zijn:
 
 * Wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters opgegeven, bijvoorbeeld volgens de HTTP-specificatie. `jobs.POST.esp`
-* Verschillende scriptengines worden ondersteund, maar de gebruikelijke, aanbevolen scripts zijn HTML en JavaScript.
+* Verschillende scriptengines worden ondersteund, maar de gebruikelijke, aanbevolen scripts zijn HTL en JavaScript.
 
-De lijst met scriptengines die door de opgegeven AEM worden ondersteund, wordt weergegeven in de Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
+De lijst met scriptengines die door de opgegeven instantie van AEM worden ondersteund, wordt weergegeven in de Felix Management Console ( `http://<host>:<port>/system/console/slingscripting` ).
 
-Wanneer u het vorige voorbeeld gebruikt, `sling:resourceType` is `hr/jobs` vervolgens voor:
+Wanneer u het vorige voorbeeld gebruikt, is `sling:resourceType` `hr/jobs` dan for:
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen in `.html` (standaardaanvraagtypen, standaardindeling)
-   * Het script is `/apps/hr/jobs/jobs.esp`; de laatste sectie van de `sling:resourceType` vormt de bestandsnaam.
+   * Het script is `/apps/hr/jobs/jobs.esp` . De laatste sectie van `sling:resourceType` vormt de bestandsnaam.
 * Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
    * POST wordt gebruikt in de manuscriptnaam.
-   * Het script is `/apps/hr/jobs/jobs.POST.esp`.
-* URL&#39;s in andere indelingen, die niet eindigen met `.html`
+   * Het script is `/apps/hr/jobs/jobs.POST.esp` .
+* URL&#39;s in andere indelingen, niet eindigend met `.html`
    * Bijvoorbeeld: `../content/corporate/jobs/developer.pdf`
-   * Het script is `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de scriptnaam.
+   * Het script is `/apps/hr/jobs/jobs.pdf.esp` ; het achtervoegsel wordt toegevoegd aan de scriptnaam.
 * URL&#39;s met kiezers
    * Kiezers kunnen worden gebruikt om dezelfde inhoud in een andere indeling weer te geven. Bijvoorbeeld een printervriendelijke versie, een rss feed of een samenvatting.
-   * Als u een printervriendelijke versie bekijkt waarin de kiezer mogelijk `print`; zoals in `../content/corporate/jobs/developer.print.html`
-   * Het script is `/apps/hr/jobs/jobs.print.esp`; de kiezer wordt aan de scriptnaam toegevoegd.
-* Zo nee, `sling:resourceType` wordt dan gedefinieerd:
-   * Het inhoudspad wordt gebruikt om te zoeken naar een geschikt script (als het pad is gebaseerd op `ResourceTypeProvider` is actief).
-   * Het script voor bijvoorbeeld `../content/corporate/jobs/developer.html` zou een zoekopdracht genereren in `/apps/content/corporate/jobs/`.
+   * Als u een printervriendelijke versie bekijkt waarin de kiezer `print` kan zijn, zoals in `../content/corporate/jobs/developer.print.html`
+   * Het script is `/apps/hr/jobs/jobs.print.esp` . De kiezer wordt aan de scriptnaam toegevoegd.
+* Zo nee, dan wordt `sling:resourceType` gedefinieerd:
+   * Het inhoudspad wordt gebruikt om te zoeken naar een geschikt script (als het op een pad gebaseerde `ResourceTypeProvider` actief is).
+   * Het script voor `../content/corporate/jobs/developer.html` genereert bijvoorbeeld een zoekopdracht in `/apps/content/corporate/jobs/` .
    * Het primaire knooppunttype wordt gebruikt.
 * Als er geen script wordt gevonden, wordt het standaardscript gebruikt.
-   * De standaardvertoning wordt ondersteund als onbewerkte tekst (`.txt`), HTML (`.html`), en JSON (`.json`), die allemaal de eigenschappen van de knoop (behoorlijk geformatteerd) een lijst maken. De standaarduitvoering voor de extensie `.res`, of aanvragen zonder een verzoek om verlenging, de bron spool (waar mogelijk).
+   * De standaardvertoning wordt gesteund als gewone teksten (`.txt`), HTML (`.html`), en JSON (`.json`), allen die van de (correct geformatteerde) eigenschappen van de knoop een lijst maken. De standaarduitvoering voor de extensie `.res`, of aanvragen zonder een aanvraagextensie, is om de bron te spool (waar mogelijk).
 * Bij http-foutafhandeling (codes 403 of 404) zoekt Sling naar een script op:
    * De locatie `/apps/sling/servlet/errorhandler` voor aangepaste scripts
    * Of de locatie van het standaardscript `/libs/sling/servlet/errorhandler/404.jsp`
@@ -200,12 +200,12 @@ Ervan uitgaande dat u de volgende lijst met scripts op de juiste locatie hebt:
 
 Vervolgens zou de volgorde van voorkeur (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1) zijn.
 
-Naast de typen bronnen (die voornamelijk worden gedefinieerd door de `sling:resourceType` eigenschap), is er ook het resource super type. Dit type wordt aangegeven door de `sling:resourceSuperType` eigenschap. Deze super types worden ook overwogen wanneer het proberen om een manuscript te vinden. Het voordeel van resource super types is dat zij een hiërarchie van middelen kunnen vormen waar het standaardmiddeltype `sling/servlet/default` (wordt gebruikt door de standaardservlets) is in feite de wortel.
+Naast de typen bronnen (voornamelijk gedefinieerd door de eigenschap `sling:resourceType` ) is er ook het hulpbrontype. Dit type wordt aangegeven door de eigenschap `sling:resourceSuperType` . Deze super types worden ook overwogen wanneer het proberen om een manuscript te vinden. Het voordeel van hulpmiddelsuper types is dat zij een hiërarchie van middelen kunnen vormen waar het standaardmiddeltype `sling/servlet/default` (dat door standaardservlets wordt gebruikt) effectief de wortel is.
 
 Het resource super type van een middel kan op twee manieren worden bepaald:
 
-* door de `sling:resourceSuperType` eigenschap van de bron.
-* door de `sling:resourceSuperType` eigenschap van het knooppunt waaraan de `sling:resourceType` punten.
+* door de eigenschap `sling:resourceSuperType` van de resource.
+* door de eigenschap `sling:resourceSuperType` van het knooppunt waarnaar de `sling:resourceType` verwijst.
 
 Bijvoorbeeld:
 
@@ -228,7 +228,7 @@ De typehiërarchie van:
 * While for `/y`
    * De hiërarchie is `[ c, a, <default>]`
 
-De reden is dat `/y` heeft de `sling:resourceSuperType` eigendom, `/x` niet en daarom wordt zijn supertype genomen van zijn middeltype.
+De reden hiervoor is dat `/y` de eigenschap `sling:resourceSuperType` heeft, terwijl `/x` dit niet doet en dat het supertype daarom wordt ontleend aan het type resource.
 
 #### Sling-scripts kunnen niet rechtstreeks worden aangeroepen {#sling-scripts-cannot-be-called-directly}
 
@@ -238,18 +238,18 @@ Als u de vertegenwoordiging (het manuscript) direct roept u het middel binnen uw
 
 * Automatische afhandeling van andere http-methoden dan GET, waaronder:
    * POST, PUT, DELETE die met een sling standaardimplementatie wordt behandeld
-   * De `POST.jsp` script in uw `sling:resourceType` locatie
+   * Het `POST.jsp` -script op uw `sling:resourceType` -locatie
 * Uw codearchitectuur is niet meer zo schoon en zo duidelijk gestructureerd als het zou moeten zijn; van primordiaal belang voor grootschalige ontwikkeling
 
 ### Verkopen-API {#sling-api}
 
-Gebruikt het Sling API-pakket, `org.apache.sling.*`en tagbibliotheken.
+Gebruikt het pakket Sling API, `org.apache.sling.*`, en markeringsbibliotheken.
 
 ### Verwijzen naar bestaande elementen met gebruik van sling:include {#referencing-existing-elements-using-sling-include}
 
 Een laatste overweging is de noodzaak om naar bestaande elementen in de scripts te verwijzen.
 
-Complexere scripts (samengevoegde scripts) hebben toegang tot meerdere bronnen (bijvoorbeeld navigatie, zijbalk, voettekst, elementen van een lijst) en doen dit door de *resource*.
+De complexere manuscripten (het samenvoegen van manuscripten) hebben toegang tot veelvoudige middelen (bijvoorbeeld, navigatie, zijbalk, footer, elementen van een lijst), en doen dit door het *middel* te omvatten.
 
 In dit geval kunt u de opdracht `sling:include("/<path>/<resource>")` gebruiken. Het omvat effectief de definitie van het referenced middel.
 
@@ -266,11 +266,11 @@ Een OSGi-framework biedt u vervolgens dynamisch laden/verwijderen, configureren 
 
 >[!NOTE]
 >
->Volledige informatie over OSGi-technologie is te vinden op de website [OSGi-website](https://www.osgi.org).
+>De volledige informatie over technologie OSGi kan bij de [ website OSGi ](https://www.osgi.org) worden gevonden.
 >
 >De pagina Basisonderwijs bevat met name een verzameling presentaties en zelfstudies.
 
-Deze architectuur laat u het Verkopen met toepassing-specifieke modules uitbreiden. Bij Sling wordt, en daarom AEM, de [Apache Felix](https://felix.apache.org/documentation/index.html) uitvoering van de OSGi. Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
+Deze architectuur laat u het Verkopen met toepassing-specifieke modules uitbreiden. Sling, en daarom AEM, gebruikt de ](https://felix.apache.org/documentation/index.html) implementatie van de Felix van 0} Apache {van OSGi. [ Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
 
 Met deze functionaliteit kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw installatie:
 
@@ -282,22 +282,22 @@ Met deze functionaliteit kunt u de volgende handelingen uitvoeren op elk van de 
 * Zie laatste status
 * Meer gedetailleerde informatie over specifieke bundels, bijvoorbeeld symbolische naam, versie en locatie, bekijken
 
-Zie [Het vormen OSGi voor AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) voor meer informatie .
+Zie [ Vormend OSGi voor AEM as a Cloud Service ](/help/implementing/deploying/configuring-osgi.md) voor meer informatie.
 
 ## Structuur in de opslagplaats {#structure-within-the-repository}
 
 De volgende lijst geeft een overzicht van de structuur die u in de repository ziet.
 
-* `/apps` - Toepassingsgerelateerd; bevat componentdefinities die specifiek zijn voor uw website. De componenten die u ontwikkelt kunnen op uit de vakcomponenten worden gebaseerd beschikbaar bij `/libs/core/wcm/components`.
-* `/content` - Inhoud gemaakt voor uw website.
+* `/apps` - Toepassingsgerelateerd; bevat componentdefinities die specifiek zijn voor uw website. De componenten die u ontwikkelt, kunnen worden gebaseerd op de componenten uit de doos beschikbaar bij `/libs/core/wcm/components`.
+* `/content` - Inhoud die voor uw website is gemaakt.
 * `/etc`
 * `/home` - Informatie over gebruikers en groepen.
-* `/libs` - Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen de functies voor AEM buiten het vak. De inhoud in `/libs` mogen niet worden gewijzigd. Functies die specifiek zijn voor uw website, kunt u vinden onder `/apps`.
-* `/tmp` - Tijdelijke werkruimte.
+* `/libs` - Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen de functies die buiten het AEM vallen. De inhoud in `/libs` kan niet worden gewijzigd. Functies die specifiek zijn voor uw website, moeten worden uitgevoerd onder `/apps` .
+* `/tmp` - Tijdelijk werkgebied.
 * `/var` - Bestanden die door het systeem worden gewijzigd en bijgewerkt, zoals auditlogboeken, statistieken, gebeurtenisafhandeling.
 
 >[!CAUTION]
 >
 >Wijzigingen in deze structuur, of in de bestanden daarin, moeten met de nodige voorzichtigheid worden aangebracht. Zorg ervoor dat u de implicaties van om het even welke veranderingen volledig begrijpt u aanbrengt.
 >
->Wijzig niets in de `/libs` pad. Voor configuratie en andere veranderingen, kopieer het punt van `/libs` tot `/apps` en brengt alle wijzigingen aan in `/apps`.
+>Wijzig niets in het `/libs` -pad. Voor configuratie en andere wijzigingen kopieert u het item van `/libs` naar `/apps` en brengt u de gewenste wijzigingen aan in `/apps` .

@@ -18,7 +18,7 @@ Leer hoe het modelleren van inhoud voor WYSIWYG Authoring met Edge Delivery Serv
 
 ## Vereisten {#prerequisites}
 
-Projecten die WYSIWYG-authoring met Edge Delivery Services gebruiken, nemen het grootste deel van de mechanica van een ander Edge Delivery Services-project over, onafhankelijk van de inhoudsbron of [ontwerpmethode.](/help/edge/wysiwyg-authoring/authoring.md)
+De projecten die WYSIWYG Authoring met Edge Delivery Services gebruiken erven de meerderheid van de mechanica van een ander Edge Delivery Services project, onafhankelijk van de inhoudsbron of [ auteursmethode.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Voordat u begint met het modelleren van inhoud voor uw project, moet u eerst de volgende documentatie lezen.
 
@@ -30,28 +30,28 @@ Het is van essentieel belang dat u deze concepten begrijpt om te komen tot een a
 
 ## Standaardinhoud {#default-content}
 
-**Standaardinhoud** is inhoud die een auteur intuïtief op een pagina zou plaatsen zonder extra semantiek toe te voegen. Dit omvat tekst, koppen, koppelingen en afbeeldingen. Deze inhoud spreekt voor zich in zijn functie en doel.
+**Standaard inhoud** is inhoud een auteur intuïtief op een pagina zou zetten zonder extra semantiek toe te voegen. Dit omvat tekst, koppen, koppelingen en afbeeldingen. Deze inhoud spreekt voor zich in zijn functie en doel.
 
 In AEM, wordt deze inhoud uitgevoerd als componenten met zeer eenvoudige, vooraf bepaalde modellen, die alles omvatten die in Prijsvermindering en HTML kan in series worden vervaardigd.
 
-* **Tekst**: RTF-tekst (inclusief lijstelementen en sterke of cursieve tekst)
+* **Tekst**: Rijke tekst (met inbegrip van lijstelementen en sterke of cursieve tekst)
 * **Titel**: Tekst, type (h1-h6)
-* **Afbeelding**: Bron, beschrijving
-* **Knop**: Tekst, titel, url, type (standaard, primair, secundair)
+* **Beeld**: Source, beschrijving
+* **Knoop**: Tekst, titel, url, type (gebrek, primair, secundair)
 
-Het model van deze componenten maakt deel uit van het [Boilerplate voor WYSIWYG authoring with Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+Het model van deze componenten maakt deel uit van [ Boilerplate voor het schrijven WYSIWYG met Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## Blokken {#blocks}
 
-Blokken worden gebruikt om rijkere inhoud met specifieke stijlen en functionaliteit te maken. In tegenstelling tot de standaardinhoud, vereisen de blokken extra semantiek. Blokken kunnen worden vergeleken met [in de AEM paginaeditor.](/help/implementing/developing/components/overview.md)
+Blokken worden gebruikt om rijkere inhoud met specifieke stijlen en functionaliteit te maken. In tegenstelling tot de standaardinhoud, vereisen de blokken extra semantiek. De blokken kunnen met [ componenten in de AEM paginaredacteur worden vergeleken.](/help/implementing/developing/components/overview.md)
 
-Blokken zijn in wezen stukken inhoud die door JavaScript zijn versierd en die met een stijlpagina zijn opgemaakt.
+Blokken zijn in wezen stukken inhoud die door JavaScript zijn versierd en met een stijlblad zijn opgemaakt.
 
 ### Blokmodeldefinitie {#model-definition}
 
 Wanneer het gebruiken van WYSIWYG creatie met Edge Delivery Services, moet de inhoud van blokken uitdrukkelijk worden gemodelleerd om de auteur de interface te verstrekken om inhoud tot stand te brengen. In principe moet u een model maken, zodat de ontwerpgebruikersinterface weet welke opties op basis van het blok aan de auteur moeten worden voorgesteld.
 
-De [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) Het bestand definieert het model van blokken. De velden die in het componentmodel worden gedefinieerd, blijven behouden als eigenschappen in AEM en worden weergegeven als cellen in de tabel waaruit een blok bestaat.
+Het [`component-models.json` ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) dossier bepaalt het model van blokken. De velden die in het componentmodel worden gedefinieerd, blijven behouden als eigenschappen in AEM en worden weergegeven als cellen in de tabel waaruit een blok bestaat.
 
 ```json
 {
@@ -82,9 +82,9 @@ De [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/
 }
 ```
 
-Merk op dat niet elk blok een model moet hebben. Sommige blokken zijn gewoon [containers](#container) voor een lijst van kinderen, waarbij elk kind zijn eigen model heeft.
+Merk op dat niet elk blok een model moet hebben. Sommige blokken zijn eenvoudig [ containers ](#container) voor een lijst van kinderen, waar elk kind zijn eigen model heeft.
 
-Het is ook nodig om te bepalen welke blokken bestaan en aan een pagina kunnen worden toegevoegd gebruikend de Universele Redacteur. De [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) In dit bestand worden de componenten weergegeven zoals deze door de Universal Editor beschikbaar worden gesteld.
+Het is ook nodig om te bepalen welke blokken bestaan en aan een pagina kunnen worden toegevoegd gebruikend de Universele Redacteur. Het [`component-definitions.json` ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) dossier maakt een lijst van de componenten aangezien zij door de Universele Redacteur ter beschikking worden gesteld.
 
 ```json
 {
@@ -108,12 +108,12 @@ Het is mogelijk om één model voor vele blokken te gebruiken. Sommige blokken k
 
 Voor elk blok:
 
-* Moet de `core/franklin/components/block/v1/block` middeltype, de generische implementatie van de bloklogica in AEM.
+* Moet het `core/franklin/components/block/v1/block` middeltype, de generische implementatie van de bloklogica in AEM gebruiken.
 * U moet de bloknaam definiëren. Deze wordt weergegeven in de tabelkoptekst van het blok.
    * De bloknaam wordt gebruikt om de juiste stijl en het script op te halen om het blok te versieren.
-* Kan een [model-id.](/help/implementing/universal-editor/field-types.md#model-structure)
+* Kan a [ modelidentiteitskaart bepalen.](/help/implementing/universal-editor/field-types.md#model-structure)
    * De model-id is een verwijzing naar het model van de component, dat de velden definieert die beschikbaar zijn voor de auteur in de eigenschappen-rail.
-* Kan een [filter-id.](/help/implementing/universal-editor/customizing.md#filtering-components)
+* Kan a [ filteridentiteitskaart bepalen.](/help/implementing/universal-editor/customizing.md#filtering-components)
    * De filterID is een verwijzing naar het filter van de component, dat toestaat om het auteursgedrag te veranderen, bijvoorbeeld door te beperken welke kinderen aan het blok of de sectie kunnen worden toegevoegd, of welke eigenschappen RTE worden toegelaten.
 
 Al deze informatie wordt opgeslagen in AEM wanneer een blok aan een pagina wordt toegevoegd. Als het middeltype of de bloknaam ontbreken, zal het blok niet op de pagina teruggeven.
@@ -122,11 +122,11 @@ Al deze informatie wordt opgeslagen in AEM wanneer een blok aan een pagina wordt
 >
 >Hoewel mogelijk is het niet nodig of aanbevolen om aangepaste AEM te implementeren. De door AEM geleverde onderdelen voor Edge Delivery Services zijn voldoende en bieden bepaalde relingen om de ontwikkeling te vergemakkelijken.
 >
->De componenten door AEM worden verstrekt geven een prijsverhoging terug die door kan worden verbruikt [helix-html2md](https://github.com/adobe/helix-html2md) bij publicatie aan Edge Delivery Services en door [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) bij het laden van een pagina in de Universal Editor. De prijsverhoging is het stabiele contract tussen AEM en de andere delen van het systeem, en staat geen aanpassingen toe. Daarom moeten de projecten de componenten niet veranderen en moeten geen douanecomponenten gebruiken.
+>De componenten die door AEM worden verstrekt geven een prijsverhoging terug die door [ helix-html2md ](https://github.com/adobe/helix-html2md) kan worden verbruikt wanneer het publiceren aan Edge Delivery Services en door [ aem.js ](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) wanneer het laden van een pagina in de Universele Redacteur. De prijsverhoging is het stabiele contract tussen AEM en de andere delen van het systeem, en staat geen aanpassingen toe. Daarom moeten de projecten de componenten niet veranderen en moeten geen douanecomponenten gebruiken.
 
 ### Blokstructuur {#block-structure}
 
-De eigenschappen van blokken zijn [gedefinieerd in de componentmodellen](#model-definition) en blijft als zodanig in AEM. Eigenschappen worden als cellen gerenderd in de tabelachtige structuur van het blok.
+De eigenschappen van blokken worden [ bepaald in de componentenmodellen ](#model-definition) en als dusdanig voortgeduurd in AEM. Eigenschappen worden als cellen gerenderd in de tabelachtige structuur van het blok.
 
 #### Eenvoudige blokken {#simple}
 
@@ -136,7 +136,7 @@ In het volgende voorbeeld wordt de afbeelding eerst in het model gedefinieerd en
 
 >[!BEGINTABS]
 
->[!TAB Gegevens]
+>[!TAB  Gegevens ]
 
 ```json
 {
@@ -148,7 +148,7 @@ In het volgende voorbeeld wordt de afbeelding eerst in het model gedefinieerd en
 }
 ```
 
->[!TAB Opmaak]
+>[!TAB  Prijsverhoging ]
 
 ```html
 <div class="hero">
@@ -167,7 +167,7 @@ In het volgende voorbeeld wordt de afbeelding eerst in het model gedefinieerd en
 </div>
 ```
 
->[!TAB Tabel]
+>[!TAB  Lijst ]
 
 ```text
 +---------------------------------------------+
@@ -181,7 +181,7 @@ In het volgende voorbeeld wordt de afbeelding eerst in het model gedefinieerd en
 
 >[!ENDTABS]
 
-Het kan opvallen dat bepaalde typen waarden het afleiden van semantiek in de opmaak toestaan en dat eigenschappen in één cel worden gecombineerd. Dit gedrag wordt beschreven in de sectie [Type-gevolgtrekking.](#type-inference)
+Het kan opvallen dat bepaalde typen waarden het afleiden van semantiek in de opmaak toestaan en dat eigenschappen in één cel worden gecombineerd. Dit gedrag wordt beschreven in de sectie [ Inferentie van het Type.](#type-inference)
 
 #### Key-Value-blok {#key-value}
 
@@ -189,11 +189,11 @@ In veel gevallen is het raadzaam de gerenderde semantische opmaakcode te decorer
 
 In andere gevallen echter, wordt het blok gelezen als sleutel-waarde paar-als configuratie.
 
-Een voorbeeld hiervan is het [metagegevens van de sectie.](/help/edge/developer/markup-sections-blocks.md#sections) In dit gebruiksgeval, kan het blok worden gevormd om als sleutel-waarde paarlijst terug te geven. Zie de sectie [Secties en sectiemetagegevens](#sections-metadata) voor meer informatie .
+Een voorbeeld van dit is de [ sectiemetagegevens.](/help/edge/developer/markup-sections-blocks.md#sections) In dit gebruiksgeval, kan het blok worden gevormd om als sleutel-waarde paarlijst terug te geven. Gelieve te zien de sectie [ Secties en Metagegevens van de Sectie ](#sections-metadata) voor meer informatie.
 
 >[!BEGINTABS]
 
->[!TAB Gegevens]
+>[!TAB  Gegevens ]
 
 ```json
 {
@@ -206,7 +206,7 @@ Een voorbeeld hiervan is het [metagegevens van de sectie.](/help/edge/developer/
 }
 ```
 
->[!TAB Opmaak]
+>[!TAB  Prijsverhoging ]
 
 ```html
 <div class="featured-articles">
@@ -225,7 +225,7 @@ Een voorbeeld hiervan is het [metagegevens van de sectie.](/help/edge/developer/
 </div>
 ```
 
->[!TAB Tabel]
+>[!TAB  Lijst ]
 
 ```text
 +-----------------------------------------------------------------------+
@@ -245,11 +245,11 @@ Een voorbeeld hiervan is het [metagegevens van de sectie.](/help/edge/developer/
 
 Beide structuren hebben één dimensie: de lijst met eigenschappen. Met behulp van containerblokken kunnen onderliggende elementen worden toegevoegd (meestal van hetzelfde type of model) en zijn deze dus tweedimensionaal. Deze blokken ondersteunen nog steeds hun eigen eigenschappen die worden gerenderd als rijen met eerst één kolom. Maar zij staan ook toe toevoegend kinderen, waarvoor elk punt als rij en elk bezit als kolom binnen die rij wordt teruggegeven.
 
-In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogrammen als onderliggende pictogrammen, waarbij elk gekoppeld pictogram een afbeelding en een koppeling heeft. Let op: [filter-id](/help/implementing/universal-editor/customizing.md#filtering-components) in de gegevens van het blok worden ingesteld om naar de filterconfiguratie te verwijzen.
+In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogrammen als onderliggende pictogrammen, waarbij elk gekoppeld pictogram een afbeelding en een koppeling heeft. Merk [ filteridentiteitskaart ](/help/implementing/universal-editor/customizing.md#filtering-components) op die in de gegevens van het blok wordt geplaatst om de filterconfiguratie van verwijzingen te voorzien.
 
 >[!BEGINTABS]
 
->[!TAB Gegevens]
+>[!TAB  Gegevens ]
 
 ```json
 {
@@ -272,7 +272,7 @@ In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogram
 }
 ```
 
->[!TAB Opmaak]
+>[!TAB  Prijsverhoging ]
 
 ```html
 <div class="our-partners">
@@ -304,7 +304,7 @@ In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogram
 </div>
 ```
 
->[!TAB Tabel]
+>[!TAB  Lijst ]
 
 ```text
 +------------------------------------------------------------ +
@@ -322,9 +322,9 @@ In het volgende voorbeeld accepteert een blok een lijst met gekoppelde pictogram
 
 ### Semantische inhoudsmodellen maken voor blokken {#creating-content-models}
 
-Met de [uitleg over de mechanismen van de blokstructuur;](#block-structure) het is mogelijk om een inhoudsmodel te maken waarmee inhoud die in AEM een-op-een wordt gepresteerd, wordt toegewezen aan de leveringslaag.
+Met de [ mechanica van verklaarde blokstructuur, ](#block-structure) is het mogelijk om een inhoudsmodel tot stand te brengen dat inhoud in AEM één-aan-één aan de leveringsrij voortzette in kaart brengt.
 
-Vroeg in elk project, moet een inhoudsmodel zorgvuldig worden overwogen voor elk blok. De functie moet niet op de hoogte zijn van de inhoudsbron en de ervaring die u hebt opgedaan om auteurs de mogelijkheid te geven om te schakelen of te combineren terwijl ze blokimplementaties en -stijlen opnieuw gebruiken. Meer details en algemene richtlijnen zijn te vinden in [David&#39;s Model (neem 2).](https://www.aem.live/docs/davidsmodel) Meer in het bijzonder [blokverzameling](/help/edge/developer/block-collection.md) Bevat een uitgebreide reeks inhoudsmodellen voor specifieke gebruiksgevallen van gemeenschappelijke gebruikersinterfacepatronen.
+Vroeg in elk project, moet een inhoudsmodel zorgvuldig worden overwogen voor elk blok. De functie moet niet op de hoogte zijn van de inhoudsbron en de ervaring die u hebt opgedaan om auteurs de mogelijkheid te geven om te schakelen of te combineren terwijl ze blokimplementaties en -stijlen opnieuw gebruiken. Meer details en algemene begeleiding kunnen in [ het Model van David worden gevonden (neem 2).](https://www.aem.live/docs/davidsmodel) Specifieker, bevat de [ blokinzameling ](/help/edge/developer/block-collection.md) een uitgebreide reeks inhoudsmodellen voor specifieke gebruiksgevallen van gemeenschappelijke gebruikersinterfacepatronen.
 
 Voor WYSIWYG creatie met Edge Delivery Services, roept dit de vraag op hoe te om een dwingende semantische inhoudsmodel te dienen wanneer de informatie met vormen wordt authored die uit veelvoudige gebieden in plaats van het uitgeven semantische prijsverhoging in-context zoals rijke teksten worden samengesteld.
 
@@ -342,23 +342,23 @@ U kunt dit probleem oplossen door drie methoden te gebruiken waarmee u een aansp
 
 Voor sommige waarden kunnen we de semantische betekenis afleiden van de waarden zelf. Deze waarden zijn onder meer:
 
-* **Afbeeldingen** - Als een verwijzing naar een bron in AEM een element is met een MIME-type dat begint met `image/`wordt de verwijzing weergegeven als `<picture><img src="${reference}"></picture>`.
-* **Koppelingen** - Als een verwijzing voorkomt in AEM en geen afbeelding is, of als de waarde begint met `https?://`  of `#`wordt de verwijzing weergegeven als `<a href="${reference}">${reference}</a>` .
-* **RTF** - Als een bijgesneden waarde begint met een alinea (`p`, `ul`, `ol`, `h1`-`h6`, enz.), wordt de waarde weergegeven als RTF-tekst.
-* **Klassenamen** - de `classes` eigenschap wordt behandeld als [blokopties](/help/edge/developer/markup-sections-blocks.md#block-options) en weergegeven in de tabelkoptekst voor [eenvoudige blokken,](#simple) of als waardelijst voor items in een [containerblok.](#container) Het is handig als u [een blok anders opmaken;](/help/edge/wysiwyg-authoring/create-block.md#block-options) maar niet om een geheel nieuw blok te creëren.
-* **Waardelijsten** - Wanneer een waarde een eigenschap met meerdere waarden is en de eerste waarde geen van de vorige waarden is, worden alle waarden samengevoegd tot een lijst met door komma&#39;s gescheiden waarden.
+* **Beelden** - als een verwijzing naar een middel in AEM een activa met een type MIME is dat met `image/` begint, wordt de verwijzing teruggegeven als `<picture><img src="${reference}"></picture>`.
+* **Verbindingen** - als een verwijzing in AEM bestaat en geen beeld is, of als de waarde met `https?://` of `#` begint, wordt de verwijzing teruggegeven als `<a href="${reference}">${reference}</a>`.
+* **Rijke Tekst** - als een in orde gemaakte waarde met een paragraaf (`p`, `ul`, `ol`, `h1` - `h6`, enz.) begint, wordt de waarde teruggegeven als rijke tekst.
+* **Namen van de Klasse** - het `classes` bezit wordt behandeld als [ blokopties ](/help/edge/developer/markup-sections-blocks.md#block-options) en in de lijstkopbal voor [ eenvoudige blokken, ](#simple) of als waardelijst voor punten in a [ containerblok teruggegeven.](#container) Het is nuttig als u wenst om [ een blok verschillend te stileren, ](/help/edge/wysiwyg-authoring/create-block.md#block-options) maar te hoeven om geen volledig nieuw blok tot stand te brengen.
+* **Lijsten van de Waarde** - als een waarde een multi-waardebezit is en de eerste waarde geen van het vorige is, worden alle waarden samengevoegd als komma-gescheiden lijst.
 
 Alle andere elementen worden weergegeven als onbewerkte tekst.
 
 #### Veld samenvouwen {#field-collapse}
 
-Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden in één semantisch element op basis van een naamgevingsconventie met de achtervoegsels `Title`, `Type`, `MimeType`, `Alt`, en `Text` (alle hoofdletters/kleine letters). Een eigenschap die eindigt met een van deze achtervoegsels wordt niet als een waarde beschouwd, maar als een kenmerk van een andere eigenschap.
+Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden in één semantisch element op basis van een naamgevingsconventie met de achtervoegsels `Title`, `Type`, `MimeType`, `Alt` en `Text` (allemaal hoofdlettergevoelig). Een eigenschap die eindigt met een van deze achtervoegsels wordt niet als een waarde beschouwd, maar als een kenmerk van een andere eigenschap.
 
 ##### Afbeeldingen {#image-collapse}
 
 >[!BEGINTABS]
 
->[!TAB Gegevens]
+>[!TAB  Gegevens ]
 
 ```json
 {
@@ -367,7 +367,7 @@ Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden 
 }
 ```
 
->[!TAB Opmaak]
+>[!TAB  Prijsverhoging ]
 
 ```html
 <picture>
@@ -375,7 +375,7 @@ Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden 
 </picture>
 ```
 
->[!TAB Tabel]
+>[!TAB  Lijst ]
 
 ```text
 ![A red car on a road][image0]
@@ -387,7 +387,7 @@ Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden 
 
 >[!BEGINTABS]
 
->[!TAB Gegevens]
+>[!TAB  Gegevens ]
 
 ```json
 {
@@ -398,9 +398,9 @@ Veld samenvouwen is het mechanisme voor het combineren van meerdere veldwaarden 
 }
 ```
 
->[!TAB Opmaak]
+>[!TAB  Prijsverhoging ]
 
-Nee `linkType`, of `linkType=default`
+Geen `linkType` of `linkType=default`
 
 ```html
 <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
@@ -422,7 +422,7 @@ Nee `linkType`, of `linkType=default`
 </em>
 ```
 
->[!TAB Tabel]
+>[!TAB  Lijst ]
 
 ```text
 [adobe.com](https://www.adobe.com "Navigate to adobe.com")
@@ -436,7 +436,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 >[!BEGINTABS]
 
->[!TAB Gegevens]
+>[!TAB  Gegevens ]
 
 ```json
 {
@@ -445,13 +445,13 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 }
 ```
 
->[!TAB Opmaak]
+>[!TAB  Prijsverhoging ]
 
 ```html
 <h2>Getting started</h2>
 ```
 
->[!TAB Tabel]
+>[!TAB  Lijst ]
 
 ```text
 ## Getting started
@@ -461,7 +461,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 #### Elementgroepering {#element-grouping}
 
-while [veld samenvouwen](#field-collapse) Als u meerdere eigenschappen wilt combineren tot één semantisch element, gaat het bij het groeperen van elementen om het samenvoegen van meerdere semantische elementen in één cel. Dit is met name handig in gevallen waarin de auteur moet worden beperkt in het type en het aantal elementen dat hij kan maken.
+Terwijl [ het gebied samenvouwt ](#field-collapse) over het combineren van veelvoudige eigenschappen in één enkel semantisch element is, element groepering over het aaneenschakelen van veelvoudige semantische elementen in één enkele cel. Dit is met name handig in gevallen waarin de auteur moet worden beperkt in het type en het aantal elementen dat hij kan maken.
 
 Met een teaser-component kan de auteur bijvoorbeeld alleen een ondertitel, titel en een enkele alinealijn maken, gecombineerd met maximaal twee actieknoppen. Als u deze elementen groepeert, levert dit een semantische opmaak op die zonder verdere actie kan worden opgemaakt.
 
@@ -469,7 +469,7 @@ Bij elementgroepering wordt een naamgevingsconventie gebruikt, waarbij de groeps
 
 >[!BEGINTABS]
 
->[!TAB Gegevens]
+>[!TAB  Gegevens ]
 
 ```json
 {
@@ -489,7 +489,7 @@ Bij elementgroepering wordt een naamgevingsconventie gebruikt, waarbij de groeps
 }
 ```
 
->[!TAB Opmaak]
+>[!TAB  Prijsverhoging ]
 
 ```html
 <div class="teaser">
@@ -512,7 +512,7 @@ Bij elementgroepering wordt een naamgevingsconventie gebruikt, waarbij de groeps
 </div>
 ```
 
->[!TAB Tabel]
+>[!TAB  Lijst ]
 
 ```text
 +-------------------------------------------------+
@@ -532,13 +532,13 @@ Bij elementgroepering wordt een naamgevingsconventie gebruikt, waarbij de groeps
 
 ## Secties en sectiemetagegevens {#sections-metadata}
 
-Op dezelfde manier als een ontwikkelaar meerdere objecten kan definiëren en modelleren [blokken,](#blocks) ze kunnen verschillende secties definiëren .
+De zelfde manier een ontwikkelaar kan veelvoudige [ blokken bepalen en modelleren, ](#blocks) zij kunnen verschillende secties bepalen.
 
 Het inhoudsmodel van Edge Delivery Services staat opzettelijk slechts één enkel niveau van het nesten toe, dat om het even welke standaardinhoud of een blok bevat door een sectie is. Dit betekent dat, om complexere visuele componenten te hebben die andere componenten kunnen bevatten, zij als secties moeten worden gemodelleerd en samen moeten worden gecombineerd gebruikend auto-blokkerende cliëntkant. Typische voorbeelden hiervan zijn tabbladen en inklapbare secties zoals accordeons.
 
-Een sectie kan op dezelfde manier als een blok worden gedefinieerd, maar met het middeltype van `core/franklin/components/section/v1/section`. Secties kunnen een naam en een [filter-ID,](/help/implementing/universal-editor/customizing.md#filtering-components) die door de [Universele editor](/help/implementing/universal-editor/introduction.md) en [model-id;](/help/implementing/universal-editor/field-types.md#model-structure) wordt gebruikt om de sectiemetagegevens weer te geven. Het model is op deze manier het model van het blok met sectiemetagegevens, dat automatisch aan een sectie als sleutel-waardeblok zal worden toegevoegd als het niet leeg is.
+Een sectie kan op dezelfde manier als een blok worden gedefinieerd, maar met het middeltype van `core/franklin/components/section/v1/section`. De secties kunnen een naam en a [ filteridentiteitskaart hebben, ](/help/implementing/universal-editor/customizing.md#filtering-components) die door de [ Universele Redacteur ](/help/implementing/universal-editor/introduction.md) slechts wordt gebruikt, evenals a [ modelidentiteitskaart, ](/help/implementing/universal-editor/field-types.md#model-structure) die wordt gebruikt om de sectiemetagegevens terug te geven. Het model is op deze manier het model van het blok met sectiemetagegevens, dat automatisch aan een sectie als sleutel-waardeblok zal worden toegevoegd als het niet leeg is.
 
-De [model-id](/help/implementing/universal-editor/field-types.md#model-structure) en [filter-id](/help/implementing/universal-editor/customizing.md#filtering-components) van de standaardsectie is `section`. Deze kan worden gebruikt om het gedrag van de standaardsectie te wijzigen. In het volgende voorbeeld worden enkele stijlen en een achtergrondafbeelding toegevoegd aan het metagegevensmodel van de sectie.
+[ modelidentiteitskaart ](/help/implementing/universal-editor/field-types.md#model-structure) en [ filteridentiteitskaart ](/help/implementing/universal-editor/customizing.md#filtering-components) van de standaardsectie is `section`. Deze kan worden gebruikt om het gedrag van de standaardsectie te wijzigen. In het volgende voorbeeld worden enkele stijlen en een achtergrondafbeelding toegevoegd aan het metagegevensmodel van de sectie.
 
 ```json
 {
@@ -595,11 +595,11 @@ In het volgende voorbeeld wordt een tabsectie gedefinieerd die kan worden gebrui
 
 ## Metagegevens pagina {#page-metadata}
 
-Documenten kunnen een pagina hebben [metagegevensblok,](https://www.aem.live/developer/block-collection/metadata) die wordt gebruikt om te bepalen welke `<meta>` elementen worden gerenderd in de `<head>` van een pagina. De pagina-eigenschappen van pagina&#39;s in AEM as a Cloud Service kaart voor pagina&#39;s die buiten het vak beschikbaar zijn voor Edge Delivery Services, zoals `title`, `description`, `keywords`, enz.
+Documenten kunnen een pagina [ meta-gegevensblok hebben, ](https://www.aem.live/developer/block-collection/metadata) dat wordt gebruikt om te bepalen welke `<meta>` elementen in `<head>` van een pagina worden teruggegeven. De pagina-eigenschappen van pagina&#39;s in AEM as a Cloud Service worden toegewezen aan de pagina-eigenschappen die buiten het vak beschikbaar zijn voor Edge Delivery Services, zoals `title` , `description` , `keywords` , enz.
 
 Lees eerst de volgende documenten voordat u gaat onderzoeken hoe u uw eigen metagegevens kunt definiëren. Op deze manier krijgt u meer inzicht in het begrip metagegevens van pagina&#39;s.
 
-* [Metagegevens](https://www.aem.live/developer/block-collection/metadata)
+* [ Metagegevens ](https://www.aem.live/developer/block-collection/metadata)
 * [Bulkmetagegevens](/help/edge/docs/bulk-metadata.md)
 
 Het is ook mogelijk om aanvullende metagegevens voor pagina&#39;s op twee manieren te definiëren.
@@ -625,15 +625,15 @@ Zorg ervoor dat het werkblad ook aan de padtoewijzing is toegevoegd voordat u he
 
 ### Pagina-eigenschappen {#page-properties}
 
-Veel van de standaardpagina-eigenschappen die beschikbaar zijn in AEM, worden toegewezen aan de desbetreffende pagina-metagegevens in een document. Dat omvat bijvoorbeeld `title`, `description`, `robots`, `canonical url` of `keywords`. Er zijn ook enkele AEM-specifieke eigenschappen beschikbaar:
+Veel van de standaardpagina-eigenschappen die beschikbaar zijn in AEM, worden toegewezen aan de desbetreffende pagina-metagegevens in een document. Dit geldt bijvoorbeeld voor `title` , `description` , `robots` , `canonical url` of `keywords` . Er zijn ook enkele AEM-specifieke eigenschappen beschikbaar:
 
-* `cq:lastModified` als `modified-time` in ISO8601-indeling
-* De tijd waarop het document voor het laatst is gepubliceerd als `published-time` in ISO8601-indeling
+* `cq:lastModified` als `modified-time` in de ISO8601-indeling
+* De tijd waarop het document voor het laatst is gepubliceerd als `published-time` in de ISO8601-indeling
 * `cq:tags` als `cq-tags` als een door komma&#39;s gescheiden lijst met de tag-id&#39;s.
 
 Het is ook mogelijk om een componentenmodel voor meta-gegevens van de douanepagina te bepalen, die aan de auteur als lusje van het de paginaeigenschappen van AEM Sites beschikbaar zullen worden gemaakt.
 
-Hiertoe maakt u een componentmodel met de id `page-metadata`.
+Hiertoe maakt u een componentmodel met de id `page-metadata` .
 
 ```json
 {
@@ -652,11 +652,11 @@ Hiertoe maakt u een componentmodel met de id `page-metadata`.
 
 Nu u weet hoe te om inhoud te modelleren, kunt u blokken voor uw eigen Edge Delivery Services met WYSIWYG auteursproject tot stand brengen.
 
-Zie het document [Blokken maken met een instrument voor gebruik met de universele editor](/help/edge/wysiwyg-authoring/create-block.md) leren hoe te om blokken tot stand te brengen die van instrumenten voor gebruik met de Universele Redacteur in WYSIWYG creërend met de projecten van Edge Delivery Services worden voorzien.
+Zie het document [ Creërend Blokken Instrumented voor gebruik met de Universele Redacteur ](/help/edge/wysiwyg-authoring/create-block.md) om te leren hoe te tot blokken die voor gebruik met de Universele Redacteur in WYSIWYG authoring met de projecten van Edge Delivery Services tot stand brengen.
 
-Als u al vertrouwd bent met het maken van blokken, raadpleegt u het document [Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG-authoring met Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) om u met een nieuwe plaats van Adobe Experience Manager te krijgen gebruikend Edge Delivery Services en de Universele Redacteur voor inhoud creatie.
+Als u reeds vertrouwd met het creëren van blokken bent, te zien gelieve de document [ Begonnen Gids van de Ontwikkelaar die voor het schrijven WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) wordt begonnen om u met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoudsauthoring op te halen.
 
 >[!TIP]
 >
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor het schrijven WYSIWYG met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [deze AEM GEM&#39;s webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor het schrijven WYSIWYG met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 

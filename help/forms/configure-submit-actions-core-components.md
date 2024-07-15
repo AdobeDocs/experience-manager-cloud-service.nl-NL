@@ -15,15 +15,15 @@ ht-degree: 0%
 
 # Handeling Adaptief verzenden van formulier {#configuring-the-submit-action}
 
-<span class="preview"> Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md). </span>
+<span class="preview"> Adobe adviseert het gebruiken van de Componenten van de Kern [ Aangepaste Forms aan een Pagina van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) toe te voegen of [ standalone Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) tot stand te brengen. </span>
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier. Forms as a Cloud Service biedt voor Adaptive Forms op basis van Core Components een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
+Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn vastgelegd via een adaptief formulier. Deze wordt geactiveerd wanneer een gebruiker op de knop **[!UICONTROL Submit]** op een adaptief formulier klikt. Forms as a Cloud Service biedt voor Adaptive Forms op basis van Core Components een array van vooraf gebouwde verzendhandelingen. Met deze verzendacties kunt u:
 
 * U kunt formuliergegevens eenvoudig verzenden via e-mail.
 * Start Microsoft® Power Automate-stromen of AEM Workflows tijdens het verzenden van de gegevens.
@@ -31,31 +31,31 @@ Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn va
 * Verzend naadloos de gegevens naar een gevormde gegevensbron gebruikend het Model van de Gegevens van de Vorm (FDM).
 * Verzend de gegevens gemakkelijk naar een REST-eindpunt.
 
-U kunt [De standaardverzendhandelingen uitbreiden](custom-submit-action-form.md). U kunt de Submit Acties voor organisatie-specifieke vereisten ook aanpassen.
+U kunt [ uitbreiden het gebrek verzendt Acties ](custom-submit-action-form.md). U kunt de Submit Acties voor organisatie-specifieke vereisten ook aanpassen.
 
-Als u een handeling Verzenden voor een adaptief wilt definiëren, gebruikt u het dialoogvenster Configureren van een **Aangepaste formuliercontainer** component. Het dialoogvenster voor configureren van een **Aangepaste formuliercontainer** omvat:
+Om een Submit actie voor een Adaptief te bepalen, gebruik de Configure Dialoog van een **Aangepaste component van de Container van de Vorm**. Vorm dialoog van de component van de Container van de a **Aangepaste Vorm** omvat:
 * Tabblad Standaard
 * Tabblad Gegevensmodel formulier
 * Tabblad Verzending
 
-U kunt de eigenschappen van de Container van de Vorm bepalen gebruikend de Configure Dialoog. Meer over Configure Dialog van een component van de Container van de Vorm leren, [klik hier.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
+U kunt de eigenschappen van de Container van de Vorm bepalen gebruikend de Configure Dialoog. Meer over Configure Dialoog van een component van de Container van de Vorm leren, [ klik hier.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
 
 ## Een handeling voor verzenden selecteren en configureren voor een adaptief formulier {#select-and-configure-submit-action}
 
 Een handeling voor verzenden selecteren en configureren voor uw formulier:
 
-1. Open de Inhoudsbrowser en selecteer de **[!UICONTROL Guide Container]** van uw adaptieve formulier.
-1. Klik op de eigenschappen van de container van de hulplijn ![Eigenschappen van hulplijnen](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 
-1. Klik op de knop  **[!UICONTROL Submission]** tab.
+1. Klik op de tab **[!UICONTROL Submission]** .
 
-   ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen om een verzendactie te configureren](/help/forms/assets/adaptive-forms-submit-message.png)
+   ![ klik het pictogram van de Sleutel om de Adaptieve de dialoogdoos van de Container van de Vorm te openen om een verzendactie te vormen ](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Selecteer en vorm een **[!UICONTROL Submit action]**, op basis van uw vereisten.
+1. Selecteer en configureer een **[!UICONTROL Submit action]** op basis van uw vereisten.
 
 U kunt ook verschillende handelingen configureren voor het verzenden van een adaptief formulier.
-* **URL/pad omleiden** - Met deze optie kan de gebruiker een pagina configureren voor elk formulier, waarnaar de gebruikers van het formulier worden omgeleid na het verzenden van een adaptief formulier.
-* **Bericht tonen** - Met deze optie kunnen gebruikers een bericht toevoegen dat wordt weergegeven wanneer het Adaptief formulier is verzonden. De vooraf gedefinieerde tekst wordt opgenomen in het dialoogvenster en kan door de gebruiker worden gewijzigd.
+* **Redirect URL/Weg** - Deze optie staat gebruiker toe om een pagina voor elke vorm te vormen, waaraan de vormgebruikers na het voorleggen van een Aangepast Vorm opnieuw worden gericht.
+* **toon Bericht** - Deze optie staat gebruikers toe om een bericht toe te voegen dat wordt getoond wanneer de Aangepaste Vorm met succes wordt voorgelegd. De vooraf gedefinieerde tekst wordt opgenomen in het dialoogvenster en kan door de gebruiker worden gewijzigd.
 
 Zie voor meer informatie over de volgende verzendhandelingen:
 
@@ -74,7 +74,7 @@ U kunt ook een adaptief formulier verzenden naar andere opslagconfiguraties:
 * [Aangepast formulier verbinden met Salesforce-toepassing](/help/forms/aem-forms-salesforce-integration.md)
 * [Een adaptief formulier aansluiten op Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
-U kunt [de standaardverzendhandelingen aanpassen](custom-submit-action-form.md). Daarnaast kunt u de optie Handelingen verzenden aanpassen om deze aan te passen aan specifieke organisatorische vereisten.
+U kunt [ aanpassen het gebrek verzendt Acties ](custom-submit-action-form.md). Daarnaast kunt u de optie Handelingen verzenden aanpassen om deze aan te passen aan specifieke organisatorische vereisten.
 
 
 <!--
@@ -213,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 400.jsp, 404.jsp, en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 400, 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de knoop van Publish worden teweeggebracht. U kunt ook JSP-pagina&#39;s maken voor andere HTTP-foutcodes.
 
-Wanneer u een model van vormgegevens (FDM), of schema gebaseerde Aangepaste Vorm met XML of JSON gegevensklacht aan een schema vooraf instelt dat geen gegevens bevat `<afData>`, `<afBoundData>`, en `</afUnboundData>` -tags, gaan de gegevens van niet-begrensde velden van het adaptieve formulier verloren. Het schema kan een XML-schema, JSON-schema of een formuliergegevensmodel (FDM) zijn. Niet-begrensde velden zijn adaptieve formuliervelden zonder de `bindref` eigenschap.
+Als u een FDM-formulier (Form Data Model) of een op schema gebaseerd adaptief formulier met XML- of JSON-gegevensklacht vooraf instelt op een schema dat bestaat uit gegevens die geen `<afData>` -, `<afBoundData>` - en `</afUnboundData>` -tags bevatten, gaan de gegevens van niet-begrensde velden van het adaptieve formulier verloren. Het schema kan een XML-schema, JSON-schema of een formuliergegevensmodel (FDM) zijn. Niet-begrensde velden zijn adaptieve formuliervelden zonder de eigenschap `bindref` .
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

@@ -1,6 +1,6 @@
 ---
 title: Modellen voor inhoudsfragmenten maken - Instellingen zonder kop
-description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
+description: Definieer de structuur van de inhoud die u wilt maken en gebruiken AEM functies zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Modellen voor inhoudsfragmenten maken - Instellingen zonder kop {#creating-content-fragment-models}
 
-Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
+Definieer de structuur van de inhoud die u wilt maken en gebruiken AEM functies zonder kop door Modellen van inhoudsfragmenten te gebruiken.
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
-[Nu u een configuratie hebt gecreeerd,](create-configuration.md) U kunt het gebruiken om de Modellen van het Fragment van de Inhoud te creëren.
+[ nu dat u een configuratie hebt gecreeerd, ](create-configuration.md) kunt u het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
 
 Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u in AEM maakt en beheert. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een model voor inhoudsfragmenten dat u definieert en dat hen bij het maken van inhoud begeleidt.
 
@@ -25,50 +25,50 @@ Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en i
 
 Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist. Om aan de slag te kunnen gaan, hoeven we maar één model te maken.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen**, **Algemeen**, **Modellen van inhoudsfragmenten**.
+1. Logboek in AEM as a Cloud Service en van het belangrijkste menu selecteert **Hulpmiddelen**, **Algemeen**, **Modellen van het Fragment van de Inhoud**.
 1. Selecteer de map die u hebt gemaakt door uw configuratie te maken.
 
-   ![De map Modellen](../assets/models-folder.png)
-1. Selecteren **Maken**.
-1. Geef een **Modeltitel**, **Tags** en **Beschrijving**. U kunt ook selecteren/deselecteren **Model inschakelen** om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
+   ![ de modellenomslag ](../assets/models-folder.png)
+1. Selecteer **creeer**.
+1. Verstrek a **ModelTitel**, **Markeringen** en **Beschrijving**. U kunt ook selecteren/deselecteren **laat model** toe om te controleren of het model onmiddellijk op verwezenlijking wordt toegelaten.
 
-   ![Een model maken](../assets/models-create.png)
-1. Selecteer in het bevestigingsvenster **Openen** om uw model te configureren.
+   ![ creeer een model ](../assets/models-create.png)
+1. In het bevestigingsvenster, uitgezochte **Open** om uw model te vormen.
 
-   ![Bevestigingsvenster](../assets/models-confirmation.png)
-1. Met de **Inhoudsfragmentmodeleditor** kunt u het inhoudsfragmentmodel samenstellen door velden te slepen en neer te zetten vanaf het tabblad **Gegevenstypen** kolom.
+   ![ Bevestigingsvenster ](../assets/models-confirmation.png)
+1. Gebruikend de **ModelRedacteur van het Fragment van de Inhoud**, bouwt uw Model van het Fragment van de Inhoud door gebieden van de **3} kolom van de Types van Gegevens te slepen en te laten vallen.**
 
-   ![Velden slepen en neerzetten](../assets/models-drag-and-drop.png)
+   ![ belemmering en dalingsgebieden ](../assets/models-drag-and-drop.png)
 
-1. Nadat u een veld hebt geplaatst, moet u de eigenschappen ervan configureren. De redacteur zal automatisch aan **Eigenschappen** voor het toegevoegde veld waarin u de verplichte velden kunt opgeven.
+1. Nadat u een veld hebt geplaatst, moet u de eigenschappen ervan configureren. De redacteur zal automatisch aan het **lusje van Eigenschappen** voor het toegevoegde gebied schakelen waar u de verplichte gebieden kunt verstrekken.
 
-   ![Eigenschappen configureren](../assets/models-configure-properties.png)
+   ![ vorm eigenschappen ](../assets/models-configure-properties.png)
 
-1. Wanneer u klaar bent met het samenstellen van uw model, selecteert u **Opslaan**.
+1. Wanneer u wordt gebeëindigd bouwend uw model, uitgezocht **sparen**.
 
-1. De modus van het gemaakte model is afhankelijk van of u **Model inschakelen** bij het maken van het model:
-   * geselecteerd - het nieuwe model zal reeds worden geselecteerd **Ingeschakeld**
-   * niet geselecteerd - het nieuwe model wordt gecreeerd in **Concept** mode
+1. De wijze van het gecreeerde model hangt van af of u **Model** selecteerde toen het creëren van het model:
+   * geselecteerd - het nieuwe model zal reeds **Toegelaten** zijn
+   * niet geselecteerd - het nieuwe model wordt gecreeerd op **1} wijze van het Ontwerp {**
 
-1. Als dit nog niet het geval is, moet het model **Ingeschakeld** om het te gebruiken.
-   1. Selecteer het model dat u hebt gemaakt en selecteer **Inschakelen**.
+1. Als niet reeds toegelaten, moet het model **** worden toegelaten om het te gebruiken.
+   1. Selecteer het model u creeerde en selecteer dan **toelaten**.
 
-      ![Het model inschakelen](../assets/models-enable.png)
-   1. Bevestig het toelaten van het model door te tikken of te klikken **Inschakelen** in het bevestigingsdialoogvenster.
+      ![ toelatend het model ](../assets/models-enable.png)
+   1. Bevestig toelatend het model door te tikken of **te klikken laat** in de bevestigingsdialoog toe.
 
-      ![Bevestigingsvenster inschakelen](../assets/models-enabling.png)
+      ![ toelatend bevestigingsdialoog ](../assets/models-enabling.png)
 1. Het model is nu ingeschakeld en klaar voor gebruik.
 
-   ![Model ingeschakeld](../assets/models-enabled.png)
+   ![ toegelaten Model ](../assets/models-enabled.png)
 
-De **Inhoudsfragmentmodeleditor** ondersteunt veel verschillende gegevenstypen, zoals eenvoudige tekstvelden, elementverwijzingen, verwijzingen naar andere modellen en JSON-gegevens.
+De **ModelRedacteur van het Fragment van de Inhoud** steunt vele verschillende gegevenstype zoals eenvoudige tekstgebieden, activaverwijzingen, verwijzingen naar andere modellen, en gegevens JSON.
 
-U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfragmenten. Gebruiken [configuraties](create-configuration.md) om uw modellen te organiseren.
+U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfragmenten. Gebruik [ configuraties ](create-configuration.md) om uw modellen te organiseren.
 
 ## Volgende stappen {#next-steps}
 
-Nu u de structuren van uw Inhoudsfragmenten hebt gedefinieerd door modellen te maken, kunt u verdergaan naar het derde deel van de gids Aan de slag en [Maak mappen waarin u de fragmenten zelf opslaat.](create-assets-folder.md)
+Nu u de structuren van uw Fragmenten van de Inhoud door modellen te creëren hebt bepaald, kunt u zich op het derde deel van begonnen gids bewegen en [ creeert omslagen waar u de fragmenten zelf zult opslaan.](create-assets-folder.md)
 
 >[!TIP]
 >
->Voor volledige informatie over modellen van inhoudsfragmenten raadpleegt u de [Documentatie bij Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+>Voor volledige details over de Modellen van het Fragment van de Inhoud, zie de [ documentatie van de Modellen van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

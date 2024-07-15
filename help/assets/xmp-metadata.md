@@ -16,18 +16,18 @@ ht-degree: 13%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
 | AEM as a Cloud Service | Dit artikel |
 
 XMP (Extensible Metadata Platform) is de metagegevensstandaard die Experience Manager Assets gebruikt voor alle metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 
-Naast het aanbieden van universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, biedt XMP [inhoudsmodel](#xmp-core-concepts) en is [ondersteund door Adobe](#advantages-of-xmp) en andere ondernemingen, zodat de gebruikers van XMP in combinatie met [!DNL Assets] beschikken over een krachtig platform waarop kan worden voortgebouwd.
+Naast het aanbieden van universele meta-gegevens het coderen die in alle dossierformaten kunnen worden ingebed, verstrekt XMP een rijk [ inhoudsmodel ](#xmp-core-concepts) en [ gesteund door Adobe ](#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met [!DNL Assets] een krachtig platform hebben om op te bouwen.
 
 ## XMP overzicht en ecosysteem {#xmp-ecosystem}
 
-[!DNL Assets] native ondersteunt de standaard voor XMP metagegevens. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale elementen. XMP wordt ontworpen om de gemeenschappelijke norm te zijn die veelvoudige toepassingen toestaat om effectief met meta-gegevens te werken.
+[!DNL Assets] biedt native ondersteuning voor de standaard voor XMP metagegevens. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale elementen. XMP wordt ontworpen om de gemeenschappelijke norm te zijn die veelvoudige toepassingen toestaat om effectief met meta-gegevens te werken.
 
-Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP binnen de toepassingen van de Adobe om informatie door te geven over meerdere bestandsindelingen. De [!DNL Assets] opslagplaats extraheert de XMP metagegevens en gebruikt deze om de levenscyclus van de inhoud te beheren en biedt de mogelijkheid om automatiseringsworkflows te maken.
+Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP binnen de toepassingen van de Adobe om informatie door te geven over meerdere bestandsindelingen. De [!DNL Assets] -opslagplaats extraheert de XMP metagegevens en gebruikt deze om de levenscyclus van de inhoud te beheren en biedt de mogelijkheid om automatiseringsworkflows te maken.
 
 XMP standaardiseren hoe metagegevens worden gedefinieerd, gemaakt en verwerkt door een gegevensmodel, een opslagmodel en schema&#39;s op te geven. Al deze concepten worden behandeld in deze sectie.
 
@@ -52,64 +52,65 @@ De XMP standaard is zo ontworpen dat deze uitbreidbaar is, zodat u aangepaste ty
 
 >[!NOTE]
 >
->XMP staat over het algemeen niet binaire gegevenstypes toe om worden ingebed. Als u binaire gegevens bijvoorbeeld in XMP wilt meenemen, moeten deze worden gecodeerd in een XML-vriendelijke indeling, zoals `Base64`.
+>XMP staat over het algemeen niet binaire gegevenstypes toe om worden ingebed. Als u binaire gegevens wilt meenemen in XMP, bijvoorbeeld miniatuurafbeeldingen, moeten deze worden gecodeerd in een XML-vriendelijke indeling, zoals `Base64` .
 
 ### XMP kernbegrippen {#xmp-core-concepts}
 
-**Naamruimten en schema&#39;s**
+**Namespaces en schema&#39;s**
 
-Een XMP schema is een reeks eigenschapnamen in een gemeenschappelijke XML-naamruimte die het gegevenstype en beschrijvende informatie bevat. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
+Een XMP schema is een set eigenschapnamen in een algemene XML-naamruimte die
+het gegevenstype en de beschrijvende informatie. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
 
-Bijvoorbeeld de **Maker** eigenschap in twee onafhankelijk ontworpen schema&#39;s kan de persoon zijn die het element heeft gemaakt of de toepassing die het element heeft gemaakt (bijvoorbeeld Adobe Photoshop).
+Bijvoorbeeld, zou het **bezit van de Maker** in twee onafhankelijk ontworpen schema&#39;s de persoon kunnen betekenen die tot de activa leidde of het de toepassing kon betekenen die tot de activa (bijvoorbeeld, Adobe Photoshop) leidde.
 
-**Eigenschappen en waarden XMP**
+**XMP eigenschappen en waarden**
 
 XMP kunnen eigenschappen van een of meer schema&#39;s omvatten. Een standaardsubset die bijvoorbeeld door veel Adobe-toepassingen wordt gebruikt, kan het volgende zijn:
 
 * Dublin-kernschema: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
-* Basisschema XMP: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
+* XMP basisschema: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
 * Schema voor XMP rechtenbeheer: `xmpRights:WebStatement`, `xmpRights:Marked`
 * Schema voor mediabeheer XMP: `xmpMM:DocumentID`
 
-**Taalalternatieven**
+**de alternatieven van de Taal**
 
-XMP biedt u de mogelijkheid een `xml:lang` eigenschap aan teksteigenschappen om de taal van de tekst op te geven.
+XMP biedt u de mogelijkheid om een eigenschap `xml:lang` aan teksteigenschappen toe te voegen om de taal van de tekst op te geven.
 
 ## Terugverwijzing naar vertoningen XMP {#xmp-writeback-to-renditions}
 
-Deze XMP functie voor terugschrijven in [!DNL Adobe Experience Manager Assets] Hiermee worden de wijzigingen in de metagegevens van de uitvoeringen van het oorspronkelijke element gerepliceerd.
-Wanneer u de metagegevens van een element wijzigt vanuit [!DNL Assets] of tijdens het uploaden van het element, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie. Met de functie Terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De functie schrijft alleen die metagegevenseigenschappen terug die `jcr` namespace, dat wil zeggen, een eigenschap genaamd `dc:title` is teruggeschreven maar een eigenschap met een naam `mytitle` is niet.
+Met deze XMP in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in de metagegevens van de uitvoeringen van het oorspronkelijke element gerepliceerd.
+Wanneer u de metagegevens van een element wijzigt vanuit [!DNL Assets] of wanneer u het element uploadt, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie. Met de functie Terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De functie schrijft alleen die metagegevenseigenschappen terug die `jcr` naamruimte gebruiken. Een eigenschap met de naam `dc:title` wordt teruggeschreven, maar een eigenschap met de naam `mytitle` niet.
 
-Neem bijvoorbeeld een scenario waarin u het [!UICONTROL Title] eigendom van het getitelde actief `Classic Leather` tot `Nylon`.
+Neem bijvoorbeeld een scenario waarin u de eigenschap [!UICONTROL Title] van het element met de naam `Classic Leather` to `Nylon` wijzigt.
 
-![metagegevens](assets/metadata.png)
+![ meta-gegevens ](assets/metadata.png)
 
-In dit geval: [!DNL Assets] Hiermee slaat u de wijzigingen op in de **[!UICONTROL Title]** eigenschap in de `dc:title` parameter voor de metagegevens van elementen die zijn opgeslagen in de elementhiërarchie.
+In dit geval slaat [!DNL Assets] de wijzigingen in de eigenschap **[!UICONTROL Title]** op in de parameter `dc:title` voor de metagegevens van de elementen die zijn opgeslagen in de elementenhiërarchie.
 
-![metagegevens opgeslagen in elementknooppunt in de gegevensopslagruimte](assets/metadata_stored.png)
+![ die meta-gegevens in activaknoop in de bewaarplaats worden opgeslagen ](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->De functie Terugschrijven is niet standaard ingeschakeld in [!DNL Assets]. Zie hoe te [metagegevensterugkoppeling inschakelen](#enable-xmp-writeback). MSM voor digitale elementen werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
+>De functie Terugschrijven is niet standaard ingeschakeld in [!DNL Assets] . Zie hoe te [ meta-gegevensschrijver ](#enable-xmp-writeback) toelaten. MSM voor digitale elementen werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
 
 ### Terugschrijven XMP inschakelen {#enable-xmp-writeback}
 
 [!UICONTROL DAM Metadata Writeback] wordt gebruikt om de metagegevens van een element te schrijven. Voer een van de volgende drie methoden uit om terugschrijven in te schakelen:
 
 * Lanceerinrichtingen gebruiken.
-* Handmatig starten `DAM MetaData Writeback` workflow.
+* Start de `DAM MetaData Writeback` -workflow handmatig.
 * Vorm werkschema om deel van naverwerking te zijn.
 
 Voer de volgende stappen uit als u Launchers wilt gebruiken:
 
-1. Als beheerder, toegang **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
-1. Selecteer de [!UICONTROL Launcher] waarvoor de **[!UICONTROL Workflow]** kolomweergaven **[!UICONTROL DAM MetaData Writeback]**. Klik op **[!UICONTROL Properties]** op de werkbalk.
+1. Als beheerder opent u **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]** .
+1. Selecteer de [!UICONTROL Launcher] waarvoor de **[!UICONTROL Workflow]** kolom **[!UICONTROL DAM MetaData Writeback]** wordt weergegeven. Klik op **[!UICONTROL Properties]** op de werkbalk.
 
-   ![Open de DAM-wizard voor het schrijven van metagegevens om de eigenschappen ervan te wijzigen en te activeren](assets/launcher-properties-metadata-writeback1.png)
+   ![ Uitgezochte DAM de lancerer van de meta-gegevensbrief om zijn eigenschappen te wijzigen en het te activeren ](assets/launcher-properties-metadata-writeback1.png)
 
-1. Selecteren **[!UICONTROL Activate]** op de **[!UICONTROL Launcher Properties]** pagina. Klik op **[!UICONTROL Save & Close]**.
+1. Selecteer **[!UICONTROL Activate]** op de **[!UICONTROL Launcher Properties]** -pagina. Klik op **[!UICONTROL Save & Close]**.
 
-Als u de workflow slechts eenmaal op een element wilt toepassen, past u de toepassing toe [!UICONTROL DAM Metadata Writeback] workflow van de linkerspoorstaaf.
+Als u de workflow slechts eenmaal handmatig op een element wilt toepassen, past u de [!UICONTROL DAM Metadata Writeback] -workflow vanuit het linkerspoor toe.
 
 Als u de workflow op alle geüploade elementen wilt toepassen, voegt u de workflow toe aan een naverwerkingsprofiel.
 
@@ -145,11 +146,11 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 -->
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -159,4 +160,4 @@ The metadata changes are propagated to the renditions renditions thumbnail.140.1
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -1,6 +1,6 @@
 ---
 title: Regels voor gegevensbescherming en gegevensbescherming - gereedheid voor Adobe Experience Manager as a Cloud Service-sites
-description: Leer over de steun van de Plaatsen van Adobe Experience Manager as a Cloud Service voor de diverse Regels van de Bescherming van Gegevens en van de Privacy van Gegevens; met inbegrip van de Algemene Verordening van de EU van de Bescherming van Gegevens (GDPR), de Wet van de Consumentenprivacy van Californië en hoe te om bij de implementatie van een nieuw AEM as a Cloud Service project na te leven.
+description: Leer over de steun van de Plaatsen van Adobe Experience Manager as a Cloud Service voor de diverse Regels van de Bescherming van Gegevens en van de Privacy van Gegevens; met inbegrip van de Algemene Verordening van de EU van de Bescherming van Gegevens (GDPR), de Wet van de Consumentenprivacy van Californië en hoe te om te voldoen wanneer het uitvoeren van een nieuw project van AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
 role: Admin, Architect, Developer, Leader
@@ -21,23 +21,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat dit voor u als Adobe klant betekent, zie [Privacy Center van Adobe](https://www.adobe.com/privacy.html).
+>Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat dit voor u als Adobe klant betekent, zie ](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0} {.[
 
 Adobe Experience Manager as a Cloud Service Sites is klaar om klanten te helpen bij hun verplichtingen inzake privacy en bescherming van gegevens. Deze pagina begeleidt klanten door de procedures om dergelijke verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
-Zie de klasse [Adobe Privacy Center](https://www.adobe.com/privacy.html).
+Voor meer informatie, zie het [ Centrum van de Privacy van de Adobe ](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Zie [Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) voor nadere bijzonderheden.
+>Zie [ Adobe Experience Manager as a Cloud Service Readiness voor de Regels van de Privacy van Gegevens en van Gegevens ](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md) voor verdere details.
 
 ## AEM-auteurlaag {#aem-author-tier}
 
-Gebruikersaccounts en UGC-inhoud op de auteurserver worden behandeld in de [Documentatie AEM Stichting](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
+De rekeningen van de gebruiker en de inhoud UGC op de auteurserver zijn behandeld in de [ documentatie van de Stichting AEM ](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md).
 
 ## AEM-publicatielaag {#aem-publish-tier}
 
-Gebruikersaccounts die worden gebruikt om bezoekers op de site te verifiëren, en UGC-inhoud op de publicatieserver worden opgenomen in de [Documentatie AEM Stichting](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
+De rekeningen van de gebruiker worden gebruikt om bezoekers op de plaats voor authentiek te verklaren, en de inhoud UGC op publiceer server wordt behandeld in de [ documentatie van de Stichting AEM ](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
 
 Standaard slaan AEM Sites-componenten geen formuliergegevens op die bezoekers op de publicatieserver hebben ingevoerd. Het wordt aanbevolen de gegevens naar een systeem van derden of naar Adobe Campaign te sturen voor verdere verwerking.
 
@@ -52,11 +52,11 @@ Adobe Experience Manager is onderworpen aan een cookie-uitschakelservice die wor
 Naar Weigeren:
 
 1. Navigeren naar:
-   [Adobe Privacy Center - Weigeren](https://www.adobe.com/privacy/opt-out.html)
+   [ het Centrum van de Privacy van de Adobe - Opt-uit ](https://www.adobe.com/privacy/opt-out.html)
 
-1. Omlaag schuiven naar **Services** - **Gebruikersgegevens Experience Cloud-service**.
+1. De rol neer aan **Diensten** - **gegevens van het de dienstgebruik van de Experience Cloud**.
 
-1. Selecteer de koppeling waarnaar wordt verwezen; momenteel gemarkeerd **hier**.
+1. Selecteer de referenced verbinding; momenteel genoemd **hier**.
 
 1. U krijgt de volgende details te zien, samen met de opties om te weigeren of in te schakelen:
 
@@ -64,27 +64,27 @@ Naar Weigeren:
 
      Als u de uitschakelcookie verwijdert of als u van computer of webbrowser verandert, moet u de functie opnieuw uitschakelen.
 
-     Uitschakelen - Sluit mij uit van aggregatie en analyse van bezoekerssessies (installeer de `amcglobal.sc.omtrdc.net` uitschakelcookie) - Klik hier.
+     Uitschakelen - Sluit mij uit van aggregatie en analyse van bezoekerssessies (installeer de `amcglobal.sc.omtrdc.net` -uitschakelcookie) - Klik hier.
 
-     Inschakelen - Neem mij op in aggregatie en analyse van bezoekerssessies (installeer de `amcglobal.sc.omtrdc.net` uitschakelcookie) - Klik hier.
+     Inschakelen - Neem mij op in aggregatie en analyse van bezoekerssessies (installeer de `amcglobal.sc.omtrdc.net` -uitschakelcookie niet) - Klik hier.
 
    Voer de bovenstaande stappen uit om de werkelijke koppelingen te openen.
 
    >[!NOTE]
    >
-   > Er wordt een nadere beschrijving gegeven in het gedeelte **2. Privacy.** van de [Algemene gebruiksvoorwaarden van de Adobe](https://www.adobe.com/legal/terms.html).
+   > Er is een verdere beschrijving in **2. Privacy.** sectie van de [ Algemene Voorwaarden van de Adobe van Gebruik ](https://www.adobe.com/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sites biedt een optionele integratie met de Analytics Foundation, die gebruik maakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Zie voor meer informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Analytics [Adobe Analytics en gegevensbescherming](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+Voor meer informatie bij het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Analytics zie [ Adobe Analytics en de Privacy van Gegevens ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
-## Personalisatie Stichting door Doel {#personalization-foundation-by-target}
+## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites bevat een optionele integratie met Personalization Foundation by Target, die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Zie voor informatie over het beheer van verzoeken van betrokkenen met betrekking tot Adobe Target [Adobe Target - Privacy- en algemene gegevensbeschermingsverordening](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Voor informatie over het beheren van de verzoeken van het gegevenssubject met betrekking tot Adobe Target zie [ Adobe Target - de Privacy en Algemene Verordening van de Bescherming van Gegevens ](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -134,7 +134,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
 
 * Gebruik de browserconsole, bijvoorbeeld:
 
-   * Chroom:
+   * Chrome:
 
       * Open Developer Tools > Application > Storage:
 
@@ -171,7 +171,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
 
    * ContextHub biedt de volgende gegevenspersistentielagen:
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaard)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaardwaarde)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -200,7 +200,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
 
    * ContextHub biedt de volgende gegevenspersistentielagen:
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaard)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaardwaarde)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -244,7 +244,7 @@ Om de persistentie te ontruimen ContextHub:
 
 * Om alle persistentielagen te ontruimen ContextHub, moet de aangewezen code voor alle lagen worden geroepen:
 
-   * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaard)
+   * `ContextHub.Utils.Persistence.Modes.LOCAL` (standaardwaarde)
    * `ContextHub.Utils.Persistence.Modes.SESSION`
    * `ContextHub.Utils.Persistence.Modes.COOKIE`
    * `ContextHub.Utils.Persistence.Modes.WINDOW`

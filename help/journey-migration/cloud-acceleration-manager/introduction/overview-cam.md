@@ -1,6 +1,6 @@
 ---
-title: Overzicht van Cloud Acceleration Manager
-description: Deze pagina bevat een overzicht van Cloud Acceleration Manager.
+title: Overzicht naar Cloud Acceleration Manager
+description: Deze pagina biedt Cloud Acceleration Manager een overzicht.
 exl-id: 0b851eac-fdce-470c-9a14-15b41106086b
 feature: Migration
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Overzicht van Cloud Acceleration Manager {#overview-cam}
+# Overzicht naar Cloud Acceleration Manager {#overview-cam}
 
-Cloud Acceleration Manager is een cloudgebaseerde toepassing die ontworpen is om uw IT-teams te begeleiden tijdens de overgang van planning tot live gaan met Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen best practices, tips, documentatie en tools voor de Adobe in elke fase van de reis naar AEM als Cloud Service.
+Cloud Acceleration Manager is een cloudgebaseerde toepassing die is ontworpen om uw IT-teams te begeleiden tijdens de transitietraject, van de planning tot het live gaan van de Cloud Service. Stel uw teams in voor een geslaagde migratie met aanbevolen best practices, tips, documentatie en tools voor de Adobe in elke fase van de reis naar AEM als Cloud Service.
 
 Bekijk deze video voor een snel overzicht van Cloud Acceleration Manager:
 

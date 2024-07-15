@@ -1,6 +1,6 @@
 ---
 title: Elementen weergeven in Content Hub
-description: Leer hoe u inzicht in elementen kunt bekijken in [!DNL Content Hub]
+description: Leer hoe u inzicht in elementen kunt weergeven in  [!DNL Content Hub]
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Assets Insights in [!DNL Content Hub] {#assets-insights}
 
-![Assets-inzichten](assets/asset-insights-banner.jpg)
+![ de inzichten van Assets ](assets/asset-insights-banner.jpg)
 
-[!DNL Content Hub] biedt waardevolle inzichten in bedrijfsmiddelen en biedt een oplossing voor een gemeenschappelijke uitdaging die marketingbelanghebbenden vaak ondervinden bij het gebruik van statistieken over het gebruik van bedrijfsmiddelen die worden gebruikt in marketingcampagnes , kanalen en verschillende regio &#39; s . Door een duidelijk inzicht te krijgen in de prestaties en populariteit van de middelen, biedt het actioneerbare inzichten die essentieel zijn voor het verbeteren van de gebruikerservaring.
+[!DNL Content Hub] biedt waardevolle inzichten in middelen, waarmee een veelvoorkomende uitdaging wordt aangepakt die marketingbelanghebbenden vaak ondervinden - statistieken over het gebruik van bedrijfsmiddelen die worden gebruikt in marketingcampagnes, kanalen en verschillende regio&#39;s. Door een duidelijk inzicht te krijgen in de prestaties en populariteit van de middelen, biedt het actioneerbare inzichten die essentieel zijn voor het verbeteren van de gebruikerservaring.
 
 ## Vereisten {#prerequisites}
 
-[Content Hub-gebruikers](deploy-content-hub.md#onboard-content-hub-users) kan handelingen uitvoeren die in dit artikel worden genoemd.
+[ de gebruikers van Content Hub ](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
 
 ## Statistieken voor geüploade elementen weergeven{#view-statistics-for-uploaded-assets}
 
-U kunt statistieken van de geüploade elementen en verzamelingen weergeven door naar de **[!UICONTROL Insights]** tab. Volg de uploadgeschiedenis van uw activa met de jaarlijkse, maandelijkse, en dagelijkse activa uploadt mening.
+U kunt statistieken van de geüploade elementen en verzamelingen weergeven door naar het tabblad **[!UICONTROL Insights]** te navigeren. Volg de uploadgeschiedenis van uw activa met de jaarlijkse, maandelijkse, en dagelijkse activa uploadt mening.
 
-![Statistieken voor activa uploaden](assets/assets-insights.jpg)
+![ upload activa statistieken ](assets/assets-insights.jpg)
 
 <!-- You can track the upload history of your assets over the past 30 days or gain a more comprehensive view with data spanning the last 12 months. This feature enables you to evaluate the upload count of assets.  -->
 
@@ -41,12 +41,12 @@ De tabel bevat een gedetailleerd overzicht van de verschillende activa, met inbe
 
 Het cirkeldiagram geeft visueel de totale telling van activa door dossierformaat weer, die een duidelijke illustratie van individuele activa en hun overeenkomstige percentages verstrekken.
 
-![Aantal activa naar activatypestatistieken](assets/insights-categorial-view.jpg)
+![ telling van activa door activa type statistieken ](assets/insights-categorial-view.jpg)
 
 U kunt ook het volgende weergeven:
 
-* **Actieve gebruikers per dag en maand**: Aantal actieve gebruikers per dag of per maand weergegeven met behulp van een lijngrafiek.
-* **[!UICONTROL Assets by Campaigns]**: Aantal activa en respectieve percentage op basis van campagnes.
+* **Actieve Gebruikers door Dag en Maand**: Aantal actieve gebruikers door dag of door maand die gebruikend een lijngrafiek wordt vertegenwoordigd.
+* **[!UICONTROL Assets by Campaigns]**: Aantal elementen en respectieve percentage op basis van campagnes.
 * **[!UICONTROL Assets by Channels]**: Aantal activa en respectieve percentage op basis van gebruikte kanalen.
-* **[!UICONTROL Assets by Regions]**: Aantal activa en respectieve percentage op basis van regio&#39;s waar activa worden gebruikt.
+* **[!UICONTROL Assets by Regions]**: Aantal activa en respectieve percentage gebaseerd op gebieden van middelengebruik.
 

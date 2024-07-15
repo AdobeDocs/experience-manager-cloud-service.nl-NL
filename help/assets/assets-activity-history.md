@@ -16,26 +16,26 @@ ht-degree: 16%
 
 # Logbestanden van elementbewerking weergeven in activiteitsstroom {#activity-stream-in-timeline}
 
-Deze functie geeft activiteitenlogboeken voor elementen op de tijdlijn weer. Als u een van de volgende bewerkingen met betrekking tot elementen uitvoert in [!DNL Experience Manager Assets]De functie Activiteitenstroom werkt de tijdlijn bij om de activiteit te weerspiegelen.
+Deze functie geeft activiteitenlogboeken voor elementen op de tijdlijn weer. Als u een van de volgende bewerkingen met betrekking tot elementen uitvoert in [!DNL Experience Manager Assets] , werkt de functie Activiteitsstroom de tijdlijn bij om de activiteit weer te geven.
 
 De volgende bewerkingen worden in de activiteitsstroom aangemeld:
 
 * Maken
 * Verwijderen
 * Downloaden (inclusief uitvoeringen)
-* Publiceren
+* Publish
 * Publiceren ongedaan maken
 * Goedkeuren
 * Afwijzen
 * Verplaatsen
 
-De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald vanaf de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar logboekbestanden worden opgeslagen. Bovendien wordt de tijdlijnactiviteit geregistreerd wanneer de nieuwe activa worden geupload of de bestaande activa worden gewijzigd en in gecontroleerd [!DNL Experience Manager] via [Adobe-itemkoppeling](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) of [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald vanaf de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar logboekbestanden worden opgeslagen. Bovendien wordt de chronologieactiviteit geregistreerd wanneer de nieuwe activa worden geupload of de bestaande activa worden gewijzigd en in [!DNL Experience Manager] gecontroleerd via [ de Verbinding van Activa van de Adobe ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) of [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
 >Tijdelijke workflows worden niet weergegeven in de tijdlijn, omdat er voor deze workflows geen historiegegevens worden opgeslagen.
 
-Als u de activiteitsstroom wilt weergeven, voert u een of meer bewerkingen uit op het element, selecteert u het element en kiest u **[!UICONTROL Timeline]** uit de lijst GlobalNav.
+Als u de activiteitsstroom wilt weergeven, voert u een of meer bewerkingen uit op het element, selecteert u het element en kiest u vervolgens **[!UICONTROL Timeline]** in de lijst GlobalNav.
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
@@ -47,11 +47,11 @@ De tijdlijn geeft de activiteitsstroom weer voor de bewerkingen die u uitvoert o
 >
 >De standaardopslaglocatie voor logboekbestanden voor de taken **[!UICONTROL Publish]** en **[!UICONTROL Unpublish]** is `/var/audit/com.day.cq.replication/content`. Voor de taken **[!UICONTROL Move]** is de standaardlocatie `/var/audit/com.day.cq.wcm.core.page`.
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -61,4 +61,4 @@ De tijdlijn geeft de activiteitsstroom weer voor de bewerkingen die u uitvoert o
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

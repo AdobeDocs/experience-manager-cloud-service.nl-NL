@@ -1,6 +1,6 @@
 ---
 title: Opmerkingen bij de release voor het genereren van variaties
-description: Opmerkingen bij de release voor het genereren van variaties, die toegankelijk zijn vanuit AEM as a Cloud Service en de Sidekick van Edge Delivery Services
+description: Opmerkingen bij de release voor het genereren van variaties, toegankelijk vanuit AEM as a Cloud Service en de Sidekick van Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
@@ -17,7 +17,7 @@ Deze pagina documenteert de versienota&#39;s voor Generate Variaties, toegankeli
 
 >[!NOTE]
 >
->Zie [deze pagina](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de actuele releaseopmerkingen voor Adobe Experience Manager as a Cloud Service.
+>Zie [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service.
 
 ## Hooglichten opheffen {#release-highlights}
 
@@ -42,7 +42,7 @@ De huidige versie is versie 2.2.0.
 
 ## Bekende problemen {#known-issues}
 
-* Voor problemen met aangepaste aanwijzingen bij het overstappen van een eerdere versie raadpleegt u [Aangepaste aanwijzingen in v2.0.0](/help/generative-ai/generate-variations.md#custom-prompts-v200)
+* Voor kwesties met douaneherinneringen wanneer het bewegen van een vroegere versie zie {de herinneringen van de Douane in v2.0.0 ](/help/generative-ai/generate-variations.md#custom-prompts-v200)[
 
 ## Eerdere releases {#previous-releases}
 

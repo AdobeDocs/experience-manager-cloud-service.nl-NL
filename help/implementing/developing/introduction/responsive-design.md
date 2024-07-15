@@ -21,7 +21,7 @@ Ontwerp uw ervaringen zodat ze zich aanpassen aan de clientviewport waarin ze wo
 * Navigatie: er zijn apparaatspecifieke gereedschappen voor toegang tot andere pagina&#39;s.
 * Afbeeldingen: afbeeldingsuitvoeringen die geschikt zijn voor de viewport van de client, worden weergegeven op basis van de afmetingen van het venster.
 
-![Voorbeelden van responsief ontwerp](assets/responsive-example.png)
+![ Voorbeelden van ontvankelijk ontwerp ](assets/responsive-example.png)
 
 Ontwikkel Adobe Experience Manager (AEM) toepassingen die HTML5 produceren die zich aan veelvoudige venstergrootte en richtlijn aanpassen. De volgende bereiken van viewport-breedten komen bijvoorbeeld overeen met verschillende apparaattypen en -oriëntaties
 
@@ -37,7 +37,7 @@ Zie de volgende onderwerpen voor informatie over het uitvoeren van ontvankelijk 
 * [Vloeiende rasters](#developing-a-fluid-grid)
 * [Adaptieve afbeeldingen](#using-adaptive-images)
 
-Tijdens het ontwerpen kunt u de opdracht **Emulator** om een voorvertoning van uw pagina&#39;s voor verschillende schermgrootten weer te geven.
+Aangezien u ontwerpt, gebruik de **Mededinger** toolbar aan voorproef uw pagina&#39;s voor diverse het schermgrootte.
 
 ## Voordat u ontwikkelt {#before-you-develop}
 
@@ -51,29 +51,29 @@ Voordat u de AEM ontwikkelt die uw webpagina&#39;s ondersteunt, moet u een aanta
 
 De typische AEM toepassingsstructuur ondersteunt alle responsieve ontwerpimplementaties:
 
-* Paginacomponenten staan hieronder `/apps/<application_name>/components`
-* Sjablonen bevinden zich hieronder `/apps/<application_name>/templates`
+* Paginacomponenten bevinden zich onder `/apps/<application_name>/components`
+* Sjablonen bevinden zich onder `/apps/<application_name>/templates`
 
 ## Mediaquery&#39;s gebruiken {#using-media-queries}
 
 Met mediaquery&#39;s kunt u CSS-stijlen selectief gebruiken voor het weergeven van pagina&#39;s. AEM ontwikkelingshulpmiddelen en eigenschappen laten u toe om media vragen in uw toepassingen effectief en efficiënt uit te voeren.
 
-De W3C-groep biedt de [Mediaquery&#39;s](https://www.w3.org/TR/css3-mediaqueries/) een aanbeveling die deze CSS3-functie en de syntaxis beschrijft.
+De W3C groep verstrekt de ](https://www.w3.org/TR/css3-mediaqueries/) aanbeveling van de Vragen van Media 0} {die deze CSS3 eigenschap en de syntaxis beschrijft.[
 
 ### Het CSS-bestand maken {#creating-the-css-file}
 
 Definieer in uw CSS-bestand mediaquery&#39;s op basis van de eigenschappen van de apparaten waarvoor u een mediaquery maakt. De volgende implementatiestrategie is effectief voor het beheren van stijlen voor elke mediaquery:
 
-* Een [Map Clientbibliotheek](clientlibs.md) om de CSS te definiëren die wordt samengesteld wanneer de pagina wordt weergegeven.
+* Gebruik de omslag van de Bibliotheek van de a [ Cliënt ](clientlibs.md) om CSS te bepalen die wordt samengesteld wanneer de pagina wordt teruggegeven.
 * Definieer elke mediaquery en de bijbehorende stijlen in afzonderlijke CSS-bestanden. Het is handig bestandsnamen te gebruiken die de apparaatfuncties van de mediaquery vertegenwoordigen.
 * Definieer stijlen die op alle apparaten in een afzonderlijk CSS-bestand van toepassing zijn.
 * In het css.txt- dossier van de omslag van de Bibliotheek van de Cliënt, orde de lijst CSS dossiers zoals vereist in het geassembleerde CSS dossier.
 
-De [WKND-zelfstudie](develop-wknd-tutorial.md) gebruikt deze strategie om stijlen in het siteontwerp te definiëren. Het CSS-bestand dat door WKND wordt gebruikt, bevindt zich op `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+Het [ WKND leerprogramma ](develop-wknd-tutorial.md) gebruikt deze strategie om stijlen in het plaatsontwerp te bepalen. Het CSS-bestand dat door WKND wordt gebruikt, bevindt zich op `/apps/wknd/clientlibs/clientlib-grid/less/grid.less` .
 
 ### Mediaquery&#39;s gebruiken met AEM pagina&#39;s {#using-media-queries-with-aem-pages}
 
-[Het WKND-voorbeeldproject](/help/implementing/developing/introduction/develop-wknd-tutorial.md) en [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebruiken [Page Core-component,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) Dit omvat de clientlibs via het paginabeleid.
+[ het WKND steekproefproject ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) en [ AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebruiken de [ Component van de Kern van de Pagina, ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) die clientlibs via het paginabeleid omvat.
 
 Als uw eigen paginacomponent niet op de Component van de Kern van de Pagina wordt gebaseerd, kunt u de omslag van de cliëntbibliotheek in het manuscript van HTML of JSP van het ook omvatten. Als u dit doet, wordt het CSS-bestand gegenereerd en wordt ernaar verwezen met de mediaquery&#39;s die nodig zijn om het responsieve raster te laten werken.
 
@@ -99,37 +99,37 @@ Met het JSP-script wordt de volgende HTML-code gegenereerd die verwijst naar de 
 
 ## Voorvertonen voor specifieke apparaten {#previewing-for-specific-devices}
 
-Met de emulator kunt u uw pagina&#39;s voorvertonen in verschillende viewportgrootten, zodat u het gedrag van uw responsieve ontwerp kunt testen. Als u een pagina bewerkt in de Sites-console, kunt u tikken op de knop **Emulator** pictogram om de emulator weer te geven.
+Met de emulator kunt u uw pagina&#39;s voorvertonen in verschillende viewportgrootten, zodat u het gedrag van uw responsieve ontwerp kunt testen. Wanneer het uitgeven van een pagina in de Console van Plaatsen, kunt u het **Emulator** pictogram tikken of klikken om de mededinger te openbaren.
 
-![Het emulatorpictogram op de werkbalk](assets/emulator-icon.png)
+![ het emulatorpictogram in de toolbar ](assets/emulator-icon.png)
 
-In de emulatorwerkbalk kunt u tikken of op de knop **Apparaten** om een vervolgkeuzemenu weer te geven waarin u een apparaat kunt selecteren. Wanneer u een apparaat selecteert, wordt de pagina aangepast aan het formaat van de viewport.
+In de emulatortoolbar kunt u het **pictogram van Apparaten** ontsteken of klikken om een drop-down menu te openbaren waar u een apparaat kunt selecteren. Wanneer u een apparaat selecteert, wordt de pagina aangepast aan het formaat van de viewport.
 
-![De emulatorwerkbalk](assets/emulator.png)
+![ de mededingertoolbar ](assets/emulator.png)
 
 ### Apparaatgroepen opgeven {#specifying-device-groups}
 
-De apparaatgroepen opgeven die worden weergegeven in het dialoogvenster **Apparaten** lijst, voeg een `cq:deviceGroups` eigenschap aan de `jcr:content` knooppunt van de sjabloonpagina van uw site. De waarde van de eigenschap is een array van paden naar de knooppunten van de apparaatgroep.
+Om de apparatengroepen te specificeren die in de **lijst van Apparaten** verschijnen, voeg a `cq:deviceGroups` bezit aan de `jcr:content` knoop van de malplaatjepagina van uw plaats toe. De waarde van de eigenschap is een array van paden naar de knooppunten van de apparaatgroep.
 
-De sjabloonpagina van de WKND-site is bijvoorbeeld `/conf/wknd/settings/wcm/template-types/empty-page/structure`. En de `jcr:content` knooppunt onder bevat de volgende eigenschap:
+De sjabloonpagina van de WKND-site is bijvoorbeeld `/conf/wknd/settings/wcm/template-types/empty-page/structure` . En het knooppunt `jcr:content` eronder bevat de volgende eigenschap:
 
 * Naam: `cq:deviceGroups`
 * Type: `String[]`
 * Waarde: `mobile/groups/responsive`
 
-De knooppunten van de apparaatgroep bevinden zich in de `/etc/mobile/groups` map.
+Apparaatgroepknooppunten bevinden zich in de map `/etc/mobile/groups` .
 
 ## Responsieve afbeeldingen {#responsive-images}
 
 Responsieve pagina&#39;s worden dynamisch aangepast aan het apparaat waarop ze worden weergegeven en bieden een betere gebruikerservaring. Het is echter ook belangrijk dat elementen zijn geoptimaliseerd voor het onderbrekingspunt en het apparaat om de laadtijd van de pagina te minimaliseren.
 
-[De component Core Component Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) functies zoals adaptieve afbeeldingsselectie.
+[ de Component van het Beeld van de Component van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) eigenschappen zoals adaptieve beeldselectie.
 
-* Standaard gebruikt de component Afbeelding het [Adaptieve afbeeldingsserver](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) om de juiste uitvoering te leveren.
-* [Webgeoptimaliseerde afbeeldingslevering](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) is ook beschikbaar via een eenvoudig selectievakje in het beleid, dat afbeeldingen van de DAM levert in WebP-indeling en de downloadgrootte van een afbeelding met gemiddeld ongeveer 25% kan verminderen.
+* Door gebrek, gebruikt de Component van het Beeld de [ Aangepaste Servlet van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) om de juiste vertoning te leveren.
+* [ Web-Geoptimaliseerde Levering van het Beeld ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) is ook beschikbaar via eenvoudige checkbox in zijn beleid, dat beeldactiva van DAM in formaat WebP levert en de downloadgrootte van een beeld met ongeveer 25% gemiddeld kan verminderen.
 
 ## De container voor lay-out {#layout-container}
 
 AEM de Container van de Lay-out staat u toe om ontvankelijke lay-out efficiënt en effectief uit te voeren om de afmetingen van de pagina aan cliëntviewport aan te passen.
 
-Zie het document [Container en lay-outmodus configureren](/help/sites-cloud/administering/responsive-layout.md) voor meer informatie over de werking van de container van de Lay-out en hoe te om ontvankelijke lay-outs voor uw inhoud toe te laten.
+Gelieve te zien het document [ Vormende de Container van de Lay-out en Wijze van de Lay-out ](/help/sites-cloud/administering/responsive-layout.md) voor meer informatie over hoe de Container van de Lay-out werkt en hoe te om ontvankelijke lay-outs voor uw inhoud toe te laten.

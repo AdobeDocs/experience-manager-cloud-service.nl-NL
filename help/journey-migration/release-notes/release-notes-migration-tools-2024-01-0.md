@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2024.01.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2024.01.0
+title: Opmerkingen bij de release AEM as a Cloud Service 2024.01.0 voor migratiehulpprogramma's
+description: Opmerkingen bij de release AEM as a Cloud Service 2024.01.0 voor migratiehulpprogramma's
 feature: Release Information
 source-git-commit: 77da30bab941e7274c82ea5ce55a3f9c65608f49
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 2%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2024.01.0 {#release-notes}
+# Opmerkingen bij de release AEM as a Cloud Service 2024.01.0 voor migratiehulpprogramma&#39;s {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2024.01.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2024.01.0.
 
 ## Inhoud overbrengen {#ctt-release}
 

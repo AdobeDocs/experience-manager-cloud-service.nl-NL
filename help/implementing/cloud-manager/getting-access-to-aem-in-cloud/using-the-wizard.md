@@ -14,39 +14,39 @@ ht-degree: 0%
 
 # Wizard Project maken {#project-creation-wizard}
 
-Nadat u uw productieprogramma hebt gemaakt, biedt Cloud Manager een wizard om een minimale AEM te maken op basis van de [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) om snel aan de slag te gaan.
+Nadat u uw productieprogramma creeert, biedt de Manager van de Wolk een tovenaar aan om een minimaal AEM project tot stand te brengen dat op [ wordt gebaseerd AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) om uw begonnen snel te krijgen.
 
 Voer de volgende stappen uit om een AEM toepassingsproject te maken in Cloud Manager met de wizard.
 
-1. Een productieprogramma maken door de stappen in het document uit te voeren [Productieprogramma&#39;s maken](creating-production-programs.md)
+1. Creeer een productieprogramma door de stappen in het document te volgen [ Creërend de Programma&#39;s van de Productie ](creating-production-programs.md)
 
-1. Zodra de opstelling van het programma volledig is, heb toegang tot **Overzicht** scherm van uw programma en zie **Tak en project maken** vraag-aan-actie kaart bij de bovenkant.
+1. Zodra de programmaopstelling volledig is, heb toegang tot het **Overzicht** scherm van uw programma en zie **Tak &amp; van het Project** vraag-aan-actie kaart bij de bovenkant creëren.
 
-   ![Vraag-aan-actie zorg voor de tovenaar](assets/create-wizard1.png)
+   ![ vraag-aan-actie zorg voor de tovenaar ](assets/create-wizard1.png)
 
-1. Klikken **Maken** om de wizard te starten en de **Titel** en **Nieuwe naam vertakking** in de **Een vertakking en project maken** venster.
+1. Klik **creëren** om de tovenaar te beginnen en de Titel van uw project **** en **Nieuwe Naam van de Tak** in **te bevestigen creeer een Tak en het venster van het Project**.
 
-   ![Een vertakking en project maken](assets/create-wizard2.png)
+   ![ creeer een tak en project ](assets/create-wizard2.png)
 
 1. Klik optioneel op de scheidingslijn om de aanvullende parameters van uw project weer te geven. De standaardwaarden worden verstrekt door het AEM Project Archetype en over het algemeen te hoeven niet worden veranderd.
 
-   ![Aanvullende projectparameters](assets/create-wizard5.png)
+   ![ Extra projectparameters ](assets/create-wizard5.png)
 
-1. Klikken **Maken** het aanmaakproces van het project te starten.
+1. Klik **creëren** om het proces van de projectverwezenlijking te beginnen.
 
 
-A **Project wordt gemaakt.** de kaart vervangt nu de **Tak en project maken** call-to-action kaart als bovenkant van **Programmaoverzicht** scherm.
+A **kaart van de Verwezenlijking van het 0} Project vervangt nu de** Tak &amp; van het Project **vraag-aan-actie kaart als bovenkant van het** Overzicht van het Programma **scherm.**
 
-![Project wordt gemaakt](assets/create-wizard3.png)
+![ de verwezenlijking van het project lopend ](assets/create-wizard3.png)
 
-Wanneer het programma is gemaakt, kunt u **Omgeving toevoegen** de kaart vervangt **Project wordt gemaakt.** kaart boven aan **Programmaoverzicht** scherm.
+Zodra de programmaverwezenlijking volledig is, voegt a **milieu** kaart toe vervangt het **Lopende Creatie van het Project** kaart bij de bovenkant van het **Overzicht van het Programma** scherm.
 
-![Omgeving toevoegen](assets/create-wizard4.png)
+![ voeg Milieu ](assets/create-wizard4.png) toe
 
 U hebt nu een AEM project gebaseerd op het AEM archetype dat aan uw git bewaarplaats wordt toegevoegd als basis voor ontwikkeling voor uw eigen project. Daarna kunt u uw milieu&#39;s tot stand brengen waar u de projectcode kunt opstellen.
 
-Zie [Uw omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) om te leren hoe u omgevingen kunt toevoegen of beheren.
+Zie [ Leiden uw Milieu ](/help/implementing/cloud-manager/manage-environments.md) om te leren hoe te om milieu&#39;s toe te voegen of te beheren.
 
 >[!NOTE]
 >
->De wizard is alleen beschikbaar voor productieprogramma&#39;s. Omdat [sandboxprogramma&#39;s](introduction-sandbox-programs.md#auto-creation) Als u een automatisch project wilt maken, is de wizard niet nodig.
+>De wizard is alleen beschikbaar voor productieprogramma&#39;s. Omdat [ zandbakprogramma&#39;s ](introduction-sandbox-programs.md#auto-creation) automatische projectverwezenlijking omvatten, is de tovenaar niet noodzakelijk.

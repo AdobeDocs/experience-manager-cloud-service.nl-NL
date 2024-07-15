@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release 2020.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Opmerkingen bij de release 2020.12.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Nota's van de versie voor 2020.12.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2020.12.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 feature: Release Information
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de algemene opmerkingen bij de release beschreven voor [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de algemene opmerkingen bij de release voor [!DNL Experience Manager] as a Cloud Service beschreven.
 
 ## Releasedatum {#release-date}
 
@@ -22,59 +22,59 @@ De volgende release (2021.1.0) is 28 januari 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* **[HTTP-API voor inhoudsfragment](/help/assets/content-fragments/assets-api-content-fragments.md)**: Voeg de mogelijkheid toe om variaties van inhoudsfragmenten toe te voegen/bij te werken en te verwijderen met de HTTP-API.
+* **[HTTP API van het Fragment van de Inhoud van HTTP](/help/assets/content-fragments/assets-api-content-fragments.md)**: Voeg de capaciteit toe om de variaties van het Fragment van de Inhoud toe te voegen/bij te werken en te schrappen gebruikend HTTP API.
 
-## [!DNL Adobe Experience Manager Assets] als [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-* Integratie met [!DNL Adobe InDesign Server] is nu beschikbaar voor [!DNL Experience Manager] als [!DNL Cloud Service]. Het verstrekt automatisering om te verwerken [!DNL Adobe InDesign] bestanden gebruiken [!DNL Adobe InDesign Server] scripts maken en gebruikers de mogelijkheid bieden [!DNL Assets] sjabloongebruikersinterface om brochures of advertenties te maken. Alleen [!DNL InDesign Server] gehost door [!DNL Adobe Managed Services] wordt ondersteund voor [!DNL Experience Manager as a Cloud Service]. <!-- TBD: Add link to article. -->
+* Integratie met [!DNL Adobe InDesign Server] is nu beschikbaar voor [!DNL Experience Manager] as a [!DNL Cloud Service] . Het biedt automatisering voor het verwerken van [!DNL Adobe InDesign] -bestanden met behulp van [!DNL Adobe InDesign Server] -scripts en biedt gebruikers de mogelijkheid om [!DNL Assets] -sjablonen in de gebruikersinterface te gebruiken om brochures of advertenties te maken. Alleen [!DNL InDesign Server] dat wordt gehost door [!DNL Adobe Managed Services] , wordt ondersteund voor [!DNL Experience Manager as a Cloud Service] . <!-- TBD: Add link to article. -->
 
-* [!DNL Experience Manager] is verbeterd voor het bijhouden en weergeven van elementverwijzingen wanneer een element op een externe server wordt gebruikt [!DNL Experience Manager Sites] implementatie met behulp van de Connected Assets-functionaliteit. Een nieuwe [!UICONTROL References] in het element [!UICONTROL Properties] De pagina bevat nu lokale en externe verwijzingen naar het element. Met de referenties kunnen DAM-gebruikers het gebruik van middelen bijhouden in [!DNL Sites] pagina&#39;s en in samengestelde elementen in [!DNL Assets]. Zie [Connected Assets configureren en gebruiken](/help/assets/use-assets-across-connected-assets-instances.md).
+* [!DNL Experience Manager] wordt uitgebreid om elementverwijzingen bij te houden en weer te geven wanneer een element wordt gebruikt in een externe [!DNL Experience Manager Sites] -implementatie met behulp van de Connected Assets-functionaliteit. Een nieuw tabblad [!UICONTROL References] op de pagina [!UICONTROL Properties] van het element bevat nu lokale en externe verwijzingen naar het element. Met de verwijzingen kunnen DAM-gebruikers het gebruik van elementen bijhouden in [!DNL Sites] -pagina&#39;s en in samengestelde elementen in [!DNL Assets] . Zie [ vormen en gebruiken Verbonden Assets ](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* [!DNL Dynamic Media] de mogelijkheden zijn nu via AEM toegankelijk [!DNL Sites] op afbeeldingen gebaseerde kerncomponenten. Auteurs kunnen snel componenten configureren voor het gebruik van Voorinstellingen voor afbeeldingen, SmartCrop en Image Modifiers bij het maken van webpagina&#39;s. Zie [Core Components 2.13.0-release](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
+* De mogelijkheden van [!DNL Dynamic Media] zijn nu toegankelijk via AEM [!DNL Sites] op afbeeldingen gebaseerde Core Components. Auteurs kunnen snel componenten configureren voor het gebruik van Voorinstellingen voor afbeeldingen, SmartCrop en Image Modifiers bij het maken van webpagina&#39;s. Zie {de versie van de Componenten 2.13.0 van de Kern van 0} ](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).[
 
-* De [!DNL Experience Manager] met de bureaubladtoepassing kunnen gebruikers bestanden en mappen uploaden door de bestanden vanuit Windows Explorer of Mac Finder naar de bureaubladinterface te slepen. Zie [elementen toevoegen met de bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* Met de bureaubladtoepassing [!DNL Experience Manager] kunnen gebruikers bestanden en mappen uploaden door de bestanden vanuit Windows Explorer of Mac Finder naar de interface van de bureaubladtoepassing te slepen. Zie [ activa toevoegen gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nieuwe functies {#what-is-new-commerce}
 
-* Release CIF Venia Reference Site - 2020.12.01 die de nieuwste versie CIF Core Components v1.6.0 bevat. Zie [CIF Venia-referentiegebied](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) voor meer informatie .
+* Release CIF Venia Reference Site - 2020.12.01 die de nieuwste versie CIF Core Components v1.6.0 bevat. Zie [ CIF de Plaats van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) voor meer details.
 
-* Uitgegeven CIF Core Components v1.6.0. Zie [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) voor meer informatie .
+* Uitgegeven CIF Core Components v1.6.0. Zie [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) voor meer details.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Releasedatum {#release-date-cm}
 
-De releasedatum voor Cloud Manager in Adobe Experience Manager (AEM) as a Cloud Service 2020.12.0 is 10 december 2020.
+De Releasedatum voor Cloud Manager in Adobe Experience Manager (AEM) as a Cloud Service 2020.12.0 is 10 december 2020.
 
 ### Nieuwe functies in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Zelfbediening beheer van [SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en [Aangepaste domeinnamen](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Zelfbediening beheer van [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en [ Namen van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Zelfbediening beheer van [IP-Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Zelfbediening beheer van [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-* De bijgewerkte **Omgeving** De detailspagina staat nu gebruikers toe om de Namen van het Domein van de Douane en IP Lijsten van gewenste personen op hun milieu&#39;s te beheren.
+* De bijgewerkte **detailspagina van het Milieu** staat nu gebruikers toe om de Namen van het Domein van de Douane en IP Lijsten van gewenste personen op hun milieu&#39;s te beheren.
 
 ### Opgeloste problemen {#bug-fixes-cloud-manager}
 
 * Er wordt iets gedaan aan sommige gevallen van fouten in het scannen van code zonder resultaten op te leveren.
 
-* De milieucard gaf niet consistent de **Toevoegen** knop.
+* De kaart van het milieu gaf niet constant **toe** knoop.
 
 ## Gereedschappen voor het verfijnen van code {#code-refactoring-tools}
 
 ### Nieuwe functies in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [Unieke ervaring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) waar u meer kunt weten over deze plug-in.
+* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) waar u meer over deze elektrisch toestel kunt leren.
 
-* De Omzetter van de index is een nut dat kan worden gebruikt om de Definities van de Index van de Eik van de Douane van een klant om te zetten in AEM as a Cloud Service compatibele Definities van de Index van de Eik. Zie [Indexconversie](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer informatie .
+* Indexconverter is een hulpprogramma waarmee de aangepaste Oak-indexdefinities van een klant kunnen worden getransformeerd naar Oak-compatibele indexdefinities. Zie [ Omzetter van de Index ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer details.
 
-* Nieuwe functie toegevoegd aan [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) dat een afzonderlijk pakket maakt `ui.config` om alle configuraties te bevatten OSGi.
+* Nieuwe eigenschap die aan [ wordt toegevoegd de Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) die tot een afzonderlijk pakket `ui.config` leidt om alle configuraties te bevatten OSGi.
 
 ### Opgeloste problemen {#crt-bug-fixes}
 
-* Er zijn verschillende foutoplossingen uitgevoerd op de AEM Dispatcher Converter en Repository Modernizer. Zie [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) en [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Er zijn verschillende foutoplossingen uitgevoerd voor de AEM Dispatcher Converter en Repository Modernizer. Zie [ AEM de Convertor van Dispatcher ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) en [ Modernizer van de Bewaarplaats ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ### Releasedatum {#release-date-ctt}
 
@@ -88,4 +88,4 @@ De releasedatum voor Content Transfer Tool v1.1.20 is 8 januari 2021.
 
 * De status van de gebruikersinterface van Content Transfer Tool (CTT) voor een migratieset bleef niet bestaan en werd niet gewijzigd na een periode van inactiviteit. Dit is opgelost.
 * De optie voor het weergeven van logboeken is uitgeschakeld als de logboeken niet beschikbaar waren. Dit is opgelost en het overseinen is toegevoegd om gebruikers mee te delen waarom de logboeken ontbreken.
-* Status van de gebruikersinterface van Content Transfer Tool is weergegeven *MISLUKT* wanneer de gebruiker een opname heeft gestopt. Dit is gecorrigeerd voor weergave *GESTOPT* in plaats daarvan.
+* De gebruikersinterfacestatus van het hulpmiddel van de Overdracht van de inhoud toonde *MISLUKT* toen de gebruiker een opname tegenhield. Dit is bevestigd aan vertoning *GESTOPT* in plaats daarvan.

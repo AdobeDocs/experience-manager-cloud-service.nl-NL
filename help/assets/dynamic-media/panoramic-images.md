@@ -16,9 +16,9 @@ ht-degree: 13%
 
 In deze sectie wordt beschreven hoe u met de Panorama-viewer werkt om bolvormige panoramische afbeeldingen te renderen voor een indrukwekkende kijkervaring van 360 graden van een kamer, eigenschap, locatie of landschap.
 
-Zie ook [Voorinstellingen voor viewers beheren](/help/assets/dynamic-media/managing-viewer-presets.md).
+Zie ook [ vooraf instelt van de kijker beheren ](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![panoramisch beeld2](assets/panoramic-image2.png)
+![ panoramisch-image2 ](assets/panoramic-image2.png)
 
 ## Elementen uploaden voor gebruik met de Panorama-viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
@@ -27,11 +27,11 @@ Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeel
 * Een hoogte-breedteverhouding van 2.
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Gecodeerd met de trefwoorden `equirectangular`, of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags gebruiken](/help/sites-cloud/authoring/sites-console/tags.md).
+* Gelabeld met de trefwoorden `equirectangular` of `spherical` en `panorama` of `spherical` en `panoramic` . Zie [ Markeringen van het Gebruik ](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van toepassing op panoramische assets voor de pagina met assetdetails en de `Panoramic Media` WCM-component.
 
-Als u elementen wilt uploaden voor gebruik met de Panorama-viewer, raadpleegt u [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets).
+Om activa voor gebruik met de kijker van het Beeld te uploaden Panorama, zie [ activa ](/help/assets/manage-digital-assets.md#uploading-assets) uploaden.
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -78,8 +78,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## Voorvertoning panorama-afbeeldingen {#previewing-panoramic-images}
 
-Zie [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md).
+Zie [ activa van de Voorproef ](/help/assets/dynamic-media/previewing-assets.md).
 
-## Panorama-afbeeldingen publiceren {#publishing-panoramic-images}
+## Publish Panorama-afbeeldingen {#publishing-panoramic-images}
 
-Zie [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Zie [ de activa van Publish ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

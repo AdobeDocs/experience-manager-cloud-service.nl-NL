@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Live Search] Pagina met productaanbiedingen CIF onderdeel'
-description: CIF componenten gebruiken om in te schakelen [!DNL Live Search] component Pagina met productaanbiedingen op een AEM site
+title: '[!DNL Live Search] CIF component Product Listening Page'
+description: Het gebruiken van CIF componenten om  [!DNL Live Search]  component van de Pagina van het Product toe te laten van een AEM plaats
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 Live zoeken naar Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring zonder extra kosten. Live zoeken, aangedreven door Adobe Sensei, maakt gebruik van kunstmatige intelligentie en computerleeralgoritmen om een diepgaande analyse van geaggregeerde bezoekersgegevens uit te voeren. Als deze gegevens in combinatie met uw Adobe Commerce-catalogus worden gebruikt, krijgt u een relevante en gepersonaliseerde winkelervaring.
 
-Dit onderwerp beschrijft hoe te om een AEM CIF component te gebruiken om uit te voeren [!DNL Live Search] De widget pagina met productaanbiedingen (Product Listing Page, PLP) bevindt zich op uw AEM.
+In dit onderwerp wordt beschreven hoe u een AEM CIF gebruikt om de widget [!DNL Live Search] Product Listing Page (PLP) in uw AEM-site te implementeren.
 
 ## Vereisten {#prerequisites}
 
-In dit onderwerp wordt ervan uitgegaan dat u een lokale [AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) ingesteld.
+Dit onderwerp veronderstelt u een lokale [ AEM milieu ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) opstelling hebt.
 
-De component PLP vereist de [[!DNL Live Search] CIF component Popover](live-search-popover.md) te installeren. Voor de PLP-widget is een browsersessievariabele nodig die door de pop-over wordt gegenereerd.
+De component PLP vereist de [[!DNL Live Search]  Popover CIF component ](live-search-popover.md) om worden geïnstalleerd. Voor de PLP-widget is een browsersessievariabele nodig die door de pop-over wordt gegenereerd.
 
 ## Composer bijwerken {#update-composer}
 
-Gebeurtenismodules toevoegen aan `ui.frontend/package.json`.
+Voeg gebeurtenismodules toe aan `ui.frontend/package.json`.
 
 Bij regel 27, wijziging:
 
@@ -54,11 +54,11 @@ tot:
 
 ## Bestanden wijzigen {#files-changes}
 
-Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionaliteit. Bewerk de volgende bestanden. Regelnummers kunnen iets anders zijn dan hier weergegeven.
+Meerdere bestanden moeten worden bijgewerkt om de functie [!DNL Live Search] in te schakelen. Bewerk de volgende bestanden. Regelnummers kunnen iets anders zijn dan hier weergegeven.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-cif/.content.xml
 
-  Toevoegen `core.cif.productlist.v1` aan de `embed` lijn.
+  Voeg `core.cif.productlist.v1` aan de `embed` lijn toe.
 
   ```
   embed="[core.cif.components.common,core.cif.components.product.v3,core.cif.components.productcarousel.v1,core.cif.components.productcollection.v2,core.cif.components.productteaser.v1,core.cif.components.searchbar.v2,core.cif.components.header.v1,core.cif.components.carousel.v1,core.cif.components.categorycarousel.v1,core.cif.components.featuredcategorylist.v1,core.cif.components.storefront-events.v1,core.cif.components.extensions.product-recs.storefront-events-collector.v1,core.wcm.components.commons.site.link,core.cif.productlist.v1]"
@@ -66,7 +66,7 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/.content.xml
 
-  Een bestand maken `.content.xml`:
+  Een bestand maken `.content.xml` :
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -79,7 +79,7 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/css.txt
 
-  Het bestand maken `css.txt`:
+  Maak het bestand `css.txt` :
 
   ```text
   #base=css
@@ -118,7 +118,7 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js.txt
 
-  Het bestand maken `js.txt`:
+  Maak het bestand `js.txt` :
 
   ```text
   js/productlist.js
@@ -126,7 +126,7 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productlist/clientlibs/js/productlist.js
 
-  Het bestand maken `productlist.js`:
+  Maak het bestand `productlist.js` :
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -295,7 +295,7 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchresults/.content.xml
 
-  Bewerken `.content.xml` in regel 6:
+  Bewerk `.content.xml` op regel 6:
 
   ```xml
   sling:resourceSuperType="venia/components/commerce/productlist"
@@ -303,7 +303,7 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 * ui.content/src/main/content/jcr_root/content/venia/language-masters/en/search/.content.xml
 
-  Bewerken `.content.xml` in regel 21-22:
+  Bewerk `.content.xml` op regel 21-22:
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -311,7 +311,7 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 * ui.content/src/main/content/jcr_root/content/venia/us/en/search/.content.xml
 
-  Bewerken `.content.xml` in regel 26:
+  Bewerk `.content.xml` op regel 26:
 
   ```xml
   sling:resourceType="venia/components/commerce/productlist"
@@ -319,7 +319,7 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 * ui.frontend/src/main/components/App/App.js
 
-  Bewerken `App.js` op regel 47, net boven de `../../site/main.scss`:
+  Bewerk `App.js` op regel 47, net boven `../../site/main.scss` :
 
   ```javascript
   import '@adobe/magento-storefront-event-collector';
@@ -327,7 +327,7 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 * ui.tests/test-module/specs/venia/productlist-dialog.js
 
-  Bewerken `productlist-dialog.js` en wijzigen `describe` tot `describe.skip` regel 20:
+  Bewerk `productlist-dialog.js` en wijzig `describe` in `describe.skip` op regel 20:
 
   ```javascript
   describe.skip('Product List Component Dialog', function () {
@@ -337,14 +337,14 @@ Meerdere bestanden moeten worden bijgewerkt om [!DNL Live Search] functionalitei
 
 Er kunnen categorieën zijn waarin de standaardcategorie of cataloguspagina gewenst is, in plaats van de PLP-widget te gebruiken. In AEM moeten deze categoriepagina&#39;s handmatig worden geconfigureerd.
 
-1. Selecteer op de pagina Auteur een paginasjabloon voor een categorie. _Venia Store - Home_ > _Cataloguspagina_ > _Winkel van Venia - Categoriepagina_ en selecteer &#39;Het uiterlijk kopen&#39; of maak een nieuwe paginasjabloon.
+1. Selecteer op de pagina Auteur een paginasjabloon voor een categorie. _Winkel van Venia - Huis_ > _de Pagina van de Catalogus_ > _Winkel van Venia - de Pagina van de Categorie_ en selecteert &quot;Schaf de blik&quot;of creeer een nieuw paginamalplaatje.
 
-![Selecteer de sjabloon](../assets/cif-widget-1.jpg)
+![ selecteer het malplaatje ](../assets/cif-widget-1.jpg)
 
-1. Klik op de knop _Eigenschappen_ en selecteert u de _Handel_ tab.
+1. Klik de _sectie van Eigenschappen_ en selecteer _Commerce_ tabel.
 
-![Eigenschappen kiezen](../assets/cif-widget-2.jpg)
+![ kies Eigenschappen ](../assets/cif-widget-2.jpg)
 
 1. Kies de categorie die u wilt weergeven met de geselecteerde paginasjabloon voor rubrieken.
 
-![Selecteer de categorie](../assets/cif-widget-3.jpg)
+![ selecteer de categorie ](../assets/cif-widget-3.jpg)

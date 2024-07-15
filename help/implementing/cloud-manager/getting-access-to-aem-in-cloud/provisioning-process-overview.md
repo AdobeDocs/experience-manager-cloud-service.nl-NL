@@ -9,20 +9,20 @@ ht-degree: 7%
 ---
 
 
-# AEM as a Cloud Service: Aan boord en toegang
+# AEM as a Cloud Service: instaptoegang en toegang
 
-Deze pagina maakt een lijst van de zelfhulp middelen over leveringsproces voor as a Cloud Service Experience Manager.
+Deze pagina maakt een lijst van de zelfhulp middelen over leveringsproces voor Experience Manager as a Cloud Service.
 
-## Overzicht van het as a Cloud Service inrichtingsproces AEM
+## Overzicht van het AEM as a Cloud Service-inrichtingsproces
 
 In dit gedeelte worden de belangrijkste artikelen besproken over de volgende onderwerpen:
 
-* Toegang tot AEM as a Cloud Service
+* AEM as a Cloud Service openen
 * Adobe Experience Manager as a Cloud Service on-boarding and Provisioning Process
 * Help en bronnen
 
 
-### Toegang tot AEM as a Cloud Service
+### AEM as a Cloud Service openen
 
 Zodra auto-levering volledig is:
 
@@ -31,12 +31,12 @@ Zodra auto-levering volledig is:
 * De beheerder kan gebruikers en rollen voor extra teamleden door de Admin Console toevoegen
 * Rolgebaseerde machtigingen voor gebruikers controleren om machtigingstoewijzingen in Cloud Manager te bepalen
 
-Zie voor meer informatie [Aan boord nemen van Experience Manager as a Cloud Service op Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html).
+Voor meer informatie, zie [ Onboarding aan Experience Manager as a Cloud Service Experience League ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html).
 
 ### Bronnen en koppelingen
 
 * [IMS-ondersteuning voor AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)
-* [Op rollen gebaseerde machtigingen in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html#what-is-required)
+* [ Rol Gebaseerde Toestemmingen in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html#what-is-required)
 * [Experience Manager as a Cloud Service openen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#getting-access)
 
 
@@ -60,11 +60,12 @@ Zie voor meer informatie [Aan boord nemen van Experience Manager as a Cloud Serv
 Afhankelijk van grootte en voorkeur, zijn er drie methoden voor het aan boord hebben van gebruikers:
 * Handmatig gebruikers maken in Admin Console
 * CSV-bestand uploaden
-* Gebruikers synchroniseren vanuit Active Directory van bedrijf
+* Gebruikers synchroniseren vanaf Enterprise Active
+Map
 
 ### 4. Admin configureert org en biedt gebruikers en groepen toegang tot omgevingen
 
 ## Help en bronnen
 
-* [Eerste aanmelding - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-* [Toegang tot AEM as a Cloud Service configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#accessing)
+* [ Eerste Login van de Tijd - Cloud Service ](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+* [ het Vormen toegang tot AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#accessing)

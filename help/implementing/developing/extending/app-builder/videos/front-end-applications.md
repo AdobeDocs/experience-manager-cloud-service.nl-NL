@@ -20,12 +20,12 @@ ht-degree: 0%
 
 ## Inleiding tot geavanceerde App Builder-toepassingen
 
-Leer wat over front-end toepassingen van de Bouwer van de App met inbegrip van de opties van de projectinitialisering en het Spectrum van de Adobe.
+Meer informatie over front-end App Builder-toepassingen, zoals initialisatieopties voor projecten en het spectrum van Adoben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339247/?quality=12&learn=on)
 
-## Front-end App Builder-toepassingen samenstellen
+## App Builder-toepassingen op de voorgrond samenstellen
 
-Leer hoe u een app Builder-toepassing voor de voorkant maakt met behulp van Reageren en Adobe Runtime-acties vanuit de toepassing.
+Leer hoe u een front-end App Builder-toepassing maakt met behulp van React en Adobe Runtime-acties vanuit de toepassing.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)

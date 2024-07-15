@@ -24,7 +24,7 @@ QuickView wordt ondersteund door de volgende viewers in Dynamic Media:
 
 Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het maken van een QuickView hetzelfde voor alle drie ondersteunde viewers.
 
-**Aangepaste pop-ups maken met Snelle weergave:**
+**om douanepop-ups tot stand te brengen gebruikend Snelle mening:**
 
 1. Maak een Snelle weergave voor een geüpload element.
 
@@ -38,15 +38,15 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
     </tr>
     <tr>
     <td>Interactieve afbeeldingen</td>
-    <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">Hotspots toevoegen aan een afbeeldingsbanner</a>.</td>
+    <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank"> Toevoegend hotspots aan een beeldbanner </a>.</td>
     </tr>
     <tr>
     <td>Interactieve video's</td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Interactiviteit toevoegen aan uw video</a>.</td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank"> Toevoegend interactiviteit aan uw video </a>.</td>
     </tr>
     <tr>
     <td>Carousel Banners</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Hotspots of afbeeldingen met hyperlinks toevoegen aan een banner</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank"> Toevoegend Hotspots of Kaarten van het Beeld aan een Banner </a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -56,38 +56,38 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
    <table>
     <tbody>
     <tr>
-    <td><strong>Viewer die u gebruikt</strong><br /> </td>
+    <td><strong> Kijker u </strong><br /> gebruikt </td>
     <td><strong>Voer de volgende stappen uit om de viewer te integreren met uw website</strong></td>
     </tr>
     <tr>
     <td>Interactieve afbeelding</td>
-    <td><a href="/help/assets/dynamic-media/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Een interactieve afbeelding met uw website integreren</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank"> Integrerend een interactief beeld met uw website </a>.<br /> </td>
     </tr>
     <tr>
-    <td>Interactieve video<br /> </td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Een interactieve video integreren met uw website</a>.<br /> </td>
+    <td>Interactieve video <br /> </td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank"> Integrerend een interactieve video met uw website </a>.<br /> </td>
     </tr>
     <tr>
     <td>Carousel banner</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Een carrouselbanner toevoegen aan uw websitepagina</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank"> Toevoegend een carrouselbanner aan uw website pagina </a>.<br /> </td>
     </tr>
     </tbody>
    </table>
 
 1. De viewer die u gebruikt, moet weten hoe u de Snelle weergave kunt gebruiken.
 
-   De kijker gebruikt een manager genoemd `QuickViewActive`.
+   De viewer gebruikt een handler met de naam `QuickViewActive` .
 
    **Voorbeeld**
 Stel dat u de volgende voorbeeldcode voor insluiten op uw webpagina gebruikte voor een interactieve afbeelding:
 
-   ![chlimage_1-291](assets/chlimage_1-291.png)
+   ![ chlimage_1-291 ](assets/chlimage_1-291.png)
 
-   De handler wordt in de viewer geladen met `setHandlers`:
+   De handler wordt met `setHandlers` in de viewer geladen:
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Met behulp van het voorbeeld voor het insluiten van code hierboven hebt u de volgende code:**
+   **Gebruikend de steekproef inbedt codevoorbeeld van hierboven, hebt u de volgende code:**
 
    ```xml {.line-numbers}
    s7interactiveimageviewer.setHandlers({
@@ -100,16 +100,16 @@ Stel dat u de volgende voorbeeldcode voor insluiten op uw webpagina gebruikte vo
    })
    ```
 
-   Meer informatie over `setHandlers()` methode op de volgende wijze:
+   Ga als volgt te werk voor meer informatie over de methode `setHandlers()` :
 
-   * Interactieve afbeeldingsviewer - [zeegrepen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Interactieve videoviewer - [zeegrepen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * De interactieve kijker van het Beeld - [ zenders ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * De interactieve Videokijker - [ zethandlers ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Vorm nu `quickViewActivate` handler.
+1. Configureer nu de handler `quickViewActivate` .
 
-   De `quickViewActivate` De manager controleert de Snelle mening in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening wordt geplaatst. Er wordt ook een monster genomen `loadQuickView` functieaanroep.
+   De `quickViewActivate` handler bestuurt de QuickView in de viewer. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening wordt geplaatst. Er wordt ook een voorbeeldfunctie `loadQuickView` aangeroepen.
 
-   **Variabele toewijzen**
+   **Veranderlijke afbeelding**
 Wijs variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generische variabelen in de Snelle mening toe:
 
    `var *variable1*= inData.*quickviewVariable*`
@@ -125,27 +125,27 @@ Wijs variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generische va
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Functieaanroep**
+   **de vraag van de Functie**
 De manager vereist ook een functievraag voor de Snelle mening om te werken. De functie wordt verondersteld om door uw gastheerpagina toegankelijk te zijn. De insluitcode bevat een voorbeeld van een functieaanroep:
 
    `loadQuickView(sku)`
 
-   De aanroep van de voorbeeldfunctie gaat uit van de functie `loadQuickView()` bestaat en toegankelijk is.
+   De aanroep van de voorbeeldfunctie gaat ervan uit dat de functie `loadQuickView()` bestaat en toegankelijk is.
 
-   Meer informatie over `quickViewActivate` methode op de volgende wijze:
+   Ga als volgt te werk voor meer informatie over de methode `quickViewActivate` :
 
-   * Interactieve afbeeldingsviewer - [Gebeurteniscallbacks](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * Interactieve videoviewer - [Gebeurteniscallbacks](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * Interactieve gegevensondersteuning in de interactieve videoviewer - [Interactieve gegevensondersteuning](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * De interactieve kijker van het Beeld - [ callbacks van de Gebeurtenis ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * De interactieve Videokijker - [ callbacks van de Gebeurtenis ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Interactieve gegevenssteun in Interactieve Videokijker - [ Interactieve gegevenssteun ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Ga als volgt te werk:
 
    * Verwijder de commentaarmarkering van de sectie setHandlers van de insluitcode.
    * Wijs om het even welke extra variabelen in de Snelle mening toe.
 
-      * Werk de `loadQuickView(sku,*var1*,*var2*)` Vraag als u meer variabelen toevoegt.
+      * Werk de `loadQuickView(sku,*var1*,*var2*)` vraag bij als u meer variabelen toevoegt.
 
-   * Eenvoudig maken `loadQuickView` () op pagina, buiten de viewer.
+   * Maak een eenvoudige `loadQuickView` () functie op pagina, buiten de viewer.
 
      Bijvoorbeeld, schrijft het volgende de waarde van SKU aan de browser console:
 
@@ -159,8 +159,8 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
 
      De variabelen in de Snelle weergave worden toegewezen. De functieaanroep is ingesteld. En de browser console schrijft de veranderlijke waarde aan de browser console. Dit doet hij met behulp van de meegeleverde voorbeeldfunctie.
 
-1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een `DIV` voor een pop-up.
-1. De pop-up opmaken `DIV` op de volgende wijze. Voeg desgewenst extra stijlen toe.
+1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een `DIV` voor een pop-up gebruikt.
+1. Maak het pop-upmenu `DIV` op de volgende manier op. Voeg desgewenst extra stijlen toe.
 
    ```xml {.line-numbers}
    <style type="text/css">
@@ -172,7 +172,7 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
    </style>
    ```
 
-1. Het pop-upvenster plaatsen `DIV` in de hoofdtekst van de pagina HTML.
+1. Plaats de pop-up `DIV` in het lichaam van uw pagina van de HTML.
 
    Één van de elementen wordt geplaatst met een identiteitskaart die met waarde SKU wordt bijgewerkt wanneer de gebruiker een Snelle mening aanhaalt. Het voorbeeld bevat ook een eenvoudige knop waarmee u de pop-up weer kunt verbergen nadat deze zichtbaar is geworden.
 
@@ -196,23 +196,23 @@ De manager vereist ook een functievraag voor de Snelle mening om te werken. De f
    </script>
    ```
 
-1. Upload een HTML-pagina voor de test naar uw webserver en open deze. De pop-up wordt weergegeven door de viewer `DIV` wanneer een gebruiker een Snelle mening aanhaalt.
-1. **Het aangepaste pop-upvenster weergeven in de modus Volledig scherm**
+1. Upload een HTML-pagina voor de test naar uw webserver en open deze. De viewer geeft het pop-upvenster `DIV` weer wanneer een gebruiker een Snelle weergave aanroept.
+1. **hoe te om het douane pop-up venster op volledige het schermwijze** te tonen
 
    Sommige viewers, zoals de Interactieve Video-viewer, ondersteunen weergave in de modus Volledig scherm. Als u de pop-up echter gebruikt zoals in de vorige stappen wordt beschreven, wordt deze achter de viewer weergegeven in de modus Volledig scherm.
 
-   Als u het pop-upvenster in de modi Standaard en Volledig scherm wilt weergeven, koppelt u het pop-upvenster aan de viewercontainer. In dit geval gebruikt u een tweede handlermethode, `initComplete`.
+   Als u het pop-upvenster in de modi Standaard en Volledig scherm wilt weergeven, koppelt u het pop-upvenster aan de viewercontainer. In dit geval gebruikt u de tweede handlermethode, `initComplete` .
 
-   De `initComplete` handler wordt aangeroepen nadat de viewer is geïnitialiseerd.
+   De `initComplete` -handler wordt aangeroepen nadat de viewer is geïnitialiseerd.
 
    ```xml {.line-numbers}
    "initComplete":function() { code block }
    ```
 
-   Meer informatie over `init()` methode op de volgende wijze:
+   Ga als volgt te werk voor meer informatie over de methode `init()` :
 
-   * Interactieve afbeeldingsviewer - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
-   * Interactieve videoviewer - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
+   * De interactieve kijker van het Beeld - [ init ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * De interactieve Videoviewer - [ init ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. Gebruik de volgende code om het pop-up-beschreven in de vorige stappen-aan de kijker vast te maken:
 
@@ -261,4 +261,4 @@ In dit voorbeeld wordt de interactieve afbeeldingsviewer gebruikt.
 
    `s7interactiveimageviewer.init()`
 
-   Nadat u de viewer hebt ingesloten in uw hostpagina, moet u controleren of de viewer-instantie is gemaakt. Zorg er ook voor dat de handlers worden geladen voordat de viewer wordt aangeroepen met `init()`.
+   Nadat u de viewer hebt ingesloten in uw hostpagina, moet u controleren of de viewer-instantie is gemaakt. Zorg er ook voor dat de handlers worden geladen voordat de viewer wordt aangeroepen met `init()` .

@@ -13,31 +13,31 @@ ht-degree: 0%
 
 # Aanpassen AEM CIF kerncomponenten {#customize-cif-components}
 
-De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF kerncomponenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie breidt u de [Productteam](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) om een aangepast kenmerk van Adobe Commerce weer te geven. U leert ook meer over de GraphQL-integratie tussen AEM en Adobe Commerce en de uitbreidingshaken die worden geleverd door de CIF Core Components.
+Het [ CIF Project van Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components). In dit leerprogramma, breidt u verder de ](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component van Teaser van het 0} Product uit om een douanekenmerk van Adobe Commerce te tonen. [ U leert ook meer over de GraphQL-integratie tussen AEM en Adobe Commerce en de uitbreidingshaken die worden geleverd door de CIF Core Components.
 
 >[!TIP]
 >
-> Gebruik de [Project archetype AEM](https://github.com/adobe/aem-project-archetype) wanneer het beginnen van uw eigen handelsimplementatie.
+> Gebruik [ AEM archetype van het Project ](https://github.com/adobe/aem-project-archetype) wanneer het beginnen van uw eigen handelsimplementatie.
 
 ## Wat u gaat maken
 
-Het merk Venia is onlangs begonnen met de productie van bepaalde producten met behulp van duurzame materialen en het bedrijf wil graag een **Eco Friendly** badge als onderdeel van de Product Teaser. In Adobe Commerce wordt een nieuw aangepast kenmerk gemaakt om aan te geven of een product het **Milieuvriendelijk** materiaal. Dit douanekenmerk wordt toegevoegd als deel van de vraag van GraphQL en getoond op de Teaser van het Product voor gespecificeerde producten.
+Het merk van Venia begon onlangs met de productie van sommige producten die duurzame materialen gebruiken en de zaken zouden een **Eco Friendly** badge als deel van de Teaser van het Product willen tonen. Een nieuw douaneattribuut wordt gecreeerd in Adobe Commerce om erop te wijzen als een product het **vriendschappelijke** materiaal gebruikt. Dit douanekenmerk wordt toegevoegd als deel van de vraag van GraphQL en getoond op de Teaser van het Product voor gespecificeerde producten.
 
-![Eco-vriendelijke badge - definitieve implementatie](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
+![ Eco Friendly de Definitieve Implementatie van de Band ](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## Vereisten {#prerequisites}
 
-U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Deze omgeving bevat een actieve instantie van AEM die is geconfigureerd en is verbonden met een Adobe Commerce-instantie. De vereisten en stappen voor [lokale ontwikkeling instellen met AEM as a Cloud Service SDK](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u toestemming nodig om [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
+U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Deze omgeving bevat een actieve instantie van AEM die is geconfigureerd en is verbonden met een Adobe Commerce-instantie. Herzie de vereisten en de stappen voor [ vestiging een lokale ontwikkeling met AEM as a Cloud Service SDK ](../develop.md). Om het leerprogramma volledig te volgen, hebt u toestemming nodig om [ Attributen aan een Product ](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce toe te voegen.
 
-U hebt ook GraphQL IDE nodig, zoals [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u de aanvraagheaders instellen. Op Google Chrome: _Altair GraphQL Client_ is één extensie die de taak kan uitvoeren.
+U hebt ook winde van GraphQL zoals [ GraphiQL ](https://github.com/graphql/graphiql) of een browser uitbreiding nodig om de codesteekproeven en leerprogramma&#39;s in werking te stellen. Als u een browserextensie installeert, moet u de aanvraagheaders instellen. Op Google Chrome, _de Cliënt van GraphQL van Altair_ is één uitbreiding die de baan kan doen.
 
 ## Het Venia-project klonen {#clone-venia-project}
 
-Klonen met [Venia-project](https://github.com/adobe/aem-cif-guides-venia)en overschrijf vervolgens de standaardstijlen.
+Kloon het [ Project van Venia ](https://github.com/adobe/aem-cif-guides-venia), en treedt dan de standaardstijlen met voeten.
 
 >[!NOTE]
 >
-> **U kunt een bestaand project zonder problemen gebruiken** (gebaseerd op het AEM Projectarchetype met CIF inbegrepen) en sla deze sectie over.
+> **voelt vrij om een bestaand project** (gebaseerd op het AEM Archieftype van Project met inbegrepen CIF) te gebruiken en deze sectie over te slaan.
 
 1. Voer de volgende git-opdracht uit, zodat u het project kunt klonen:
 
@@ -54,88 +54,88 @@ Klonen met [Venia-project](https://github.com/adobe/aem-cif-guides-venia)en over
 
 1. Voeg de noodzakelijke configuraties OSGi toe zodat verbindt u uw AEM instantie met een instantie van Adobe Commerce, of voegt de configuraties aan het gecreeerde project toe.
 
-1. Op dit moment hebt u een werkende versie van een winkel die is verbonden met een Adobe Commerce-instantie. Ga naar de `US` > `Home` pagina bij: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Op dit moment hebt u een werkende versie van een winkel die is verbonden met een Adobe Commerce-instantie. Navigeer aan `US` > `Home` pagina bij: [ http://localhost:4502/editor.html/content/venia/us/en.html ](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Je moet zien dat de winkel het Venia-thema gebruikt. Als u het hoofdmenu van de winkel uitbreidt, ziet u verschillende categorieën die aangeven dat de verbinding met Adobe Commerce werkt.
 
-   ![Storefront geconfigureerd met Venia-thema](../assets/customize-cif-components/venia-store-configured.png)
+   ![ Storefront die met het Thema van Venia wordt gevormd ](../assets/customize-cif-components/venia-store-configured.png)
 
 ## Auteur van de producttaser {#author-product-teaser}
 
 De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste stap voegt u een exemplaar van de Product Teaser toe aan de startpagina om de basislijnfunctionaliteit te begrijpen.
 
-1. Ga naar de **Startpagina** van het gebied: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Navigeer aan de **Pagina van het Huis** van de plaats: [ http://localhost:4502/editor.html/content/acme/us/en.html ](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-2. Een nieuwe invoegtoepassing **Productteam** Component in de hoofdlay-outcontainer op de pagina.
+2. Tussenvoegsel een nieuwe **Component van het Teaser van het 0} Product in de belangrijkste lay-outcontainer op de pagina.**
 
-   ![Productteam invoegen](../assets/customize-cif-components/product-teaser-add-component.png)
+   ![ Taser van het Product van het Tussenvoegsel ](../assets/customize-cif-components/product-teaser-add-component.png)
 
-3. Vouw het zijpaneel uit (indien nog niet in-/uitgeschakeld) en schakel de vervolgkeuzelijst voor het zoeken van elementen naar **Producten**. Deze lijst moet een lijst weergeven met beschikbare producten van een verbonden Adobe Commerce-instantie. Selecteer een product en **slepen+neerzetten** het op de **Productteam** op de pagina.
+3. Breid het Zijpaneel (als niet reeds) van een knevel voorzien en schakel de activa vinder drop-down lijst aan **Producten**. Deze lijst moet een lijst weergeven met beschikbare producten van een verbonden Adobe Commerce-instantie. Selecteer een product en **belemmering+drop** het op de **component van de Taser van het Product** op de pagina.
 
-   ![Slepen en productteam neerzetten](../assets/customize-cif-components/drag-drop-product-teaser.png)
+   ![ Belemmering + Taser van het Product van de Daling ](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
    >[!NOTE]
    >
-   > Nota, kunt u het getoonde product ook vormen door de component te vormen gebruikend de dialoog (klikkend _moersleutel_ pictogram).
+   > Nota, kunt u het getoonde product ook vormen door de component te vormen gebruikend de dialoog (klikkend het _moersleutel_ pictogram).
 
 4. Er wordt nu een product weergegeven door de Product Teaser. De naam van het product en de prijs van het product zijn standaardkenmerken die worden weergegeven.
 
-   ![Producttaser - standaardstijl](../assets/customize-cif-components/product-teaser-default-style.png)
+   ![ Teaser van het Product - standaardstijl ](../assets/customize-cif-components/product-teaser-default-style.png)
 
 ## Een aangepast kenmerk toevoegen in Adobe Commerce {#add-custom-attribute}
 
-De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Commerce. Voeg vervolgens een kenmerk toe voor **Eco Friendly** als onderdeel van het kenmerk product dat is ingesteld met de gebruikersinterface van Adobe Commerce.
+De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Commerce. Voeg daarna een attribuut voor **vriendschappelijk Eco** als deel van de productattributen toe die door Adobe Commerce UI worden geplaatst te gebruiken.
 
 >[!TIP]
 >
-> Hebt u al een aangepaste **Ja/Nee** kenmerk als onderdeel van de set productkenmerken? Voel u vrij om het te gebruiken en sla deze sectie over.
+> Hebt reeds een douane **ja/Neen** attribuut als deel van uw reeks van productattributen? Voel u vrij om het te gebruiken en sla deze sectie over.
 
 1. Meld u aan bij uw Adobe Commerce-exemplaar.
-1. Navigeren naar **Catalogus** > **Producten**.
-1. Werk het zoekfilter bij zodat u het **Configureerbaar product** worden gebruikt wanneer toegevoegd aan de component Teaser in de vorige oefening. Open het product in de bewerkingsmodus.
+1. Navigeer aan **Catalogus** > **Producten**.
+1. Werk het onderzoeksfilter bij zodat kunt u het **Configurable Product** vinden dat wanneer toegevoegd aan de component van het Teaser in de vorige oefening wordt gebruikt. Open het product in de bewerkingsmodus.
 
-   ![Zoeken naar Valeria-product](../assets/customize-cif-components/search-valeria-product.png)
+   ![ Onderzoek naar Product Valeria ](../assets/customize-cif-components/search-valeria-product.png)
 
-1. Klik in de productweergave op **Kenmerk toevoegen** > **Nieuw kenmerk maken**.
-1. Vul de **Nieuw kenmerk** formulier met de volgende waarden (standaardinstellingen voor andere waarden behouden)
+1. Van de productmening, klik **toevoegen Attribuut** > **Nieuw Attribuut** creëren.
+1. Vul de **Nieuwe vorm van Attributen** met de volgende waarden (verlaten standaardmontages voor andere waarden) uit
 
    | Veldset | Veldlabel | Waarde |
    | ----------------------------- | ------------------ | ---------------- |
-   | Eigenschappen van kenmerk | Kenmerklabel | **Eco Friendly** |
-   | Eigenschappen van kenmerk | Invoertype catalogus | **Ja/Nee** |
-   | Geavanceerde kenmerkeigenschappen | Kenmerkcode | **ecovriendelijk** |
+   | Eigenschappen van kenmerk | Kenmerklabel | **Milieuvriendelijk** |
+   | Eigenschappen van kenmerk | Invoertype catalogus | **ja/Neen** |
+   | Geavanceerde kenmerkeigenschappen | Kenmerkcode | **eco_Vriendelijk** |
 
-   ![Nieuw kenmerkformulier](../assets/customize-cif-components/attribute-new-form.png)
+   ![ Nieuwe vorm van Attributen ](../assets/customize-cif-components/attribute-new-form.png)
 
-   Klikken **Kenmerk opslaan** wanneer gereed.
+   Klik **sparen Attribuut** wanneer gebeëindigd.
 
-1. Ga naar de onderkant van het product en vouw de **Attributen** kop. U moet de nieuwe **Eco Friendly** veld. Schakelen tussen **Ja**.
+1. De rol aan de bodem van het product en breidt de **rubriek van Attributen** uit. U zou het nieuwe **Eco Friendly** gebied moeten zien. Schakelaar de knevel aan **ja**.
 
-   ![Overschakelen op ja](../assets/customize-cif-components/eco-friendly-toggle-yes.png)
+   ![ knevel van de Schakelaar aan ja ](../assets/customize-cif-components/eco-friendly-toggle-yes.png)
 
-   **Opslaan** de veranderingen in het product.
-
-   >[!TIP]
-   >
-   > Meer informatie over het beheren [Productkenmerken vindt u in de gebruikershandleiding van Adobe Commerce](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
-
-1. Navigeren naar **Systeem** > **Gereedschappen** > **Cachebeheer**. Omdat het gegevensschema is bijgewerkt, moet u enkele soorten cache in Adobe Commerce ongeldig maken.
-1. Schakel het selectievakje naast **Configuratie** en verzend het cachetype voor **Vernieuwen**
-
-   ![Type configuratiecache vernieuwen](../assets/customize-cif-components/refresh-configuration-cache-type.png)
+   **sparen** de veranderingen in het product.
 
    >[!TIP]
    >
-   > Meer informatie over [Cache Management vindt u in de Adobe Commerce-gebruikershandleiding](https://docs.magento.com/user-guide/system/cache-management.html).
+   > Meer details over het beheren van [ Attributen van het Product kunnen in de gebruikersgids van Adobe Commerce ](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html) worden gevonden.
+
+1. Navigeer aan **Systeem** > **Hulpmiddelen** > **het Beheer van het Geheime voorgeheugen**. Omdat het gegevensschema is bijgewerkt, moet u enkele soorten cache in Adobe Commerce ongeldig maken.
+1. Controle de doos naast **Configuratie** en voorlegt het geheim voorgeheugentype voor **verfrissen**
+
+   ![ verfrist het Type van Geheime voorgeheugen van de Configuratie ](../assets/customize-cif-components/refresh-configuration-cache-type.png)
+
+   >[!TIP]
+   >
+   > Meer details over [ het Beheer van het Geheime voorgeheugen kunnen in de de gebruikersgids van Adobe Commerce ](https://docs.magento.com/user-guide/system/cache-management.html) worden gevonden.
 
 ## GraphQL IDE gebruiken om kenmerk te verifiëren {#use-graphql-ide}
 
-Voordat u naar AEM code gaat, is het handig om de [GraphQL - Overzicht](https://devdocs.magento.com/guides/v2.4/graphql/) een GraphQL-IDE gebruiken. De Adobe Commerce-integratie met AEM gebeurt voornamelijk via een reeks GraphQL-query&#39;s. Het begrijpen en wijzigen van de vragen van GraphQL is één van de belangrijkste manieren waarop de Componenten van de CIFKern kunnen worden uitgebreid.
+Alvorens in AEM code te springen, is het nuttig om het [ Overzicht van GraphQL ](https://devdocs.magento.com/guides/v2.4/graphql/) te onderzoeken gebruikend GraphQL winde. De Adobe Commerce-integratie met AEM gebeurt voornamelijk via een reeks GraphQL-query&#39;s. Het begrijpen en wijzigen van de vragen van GraphQL is één van de belangrijkste manieren waarop de Componenten van de CIFKern kunnen worden uitgebreid.
 
-Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de _Altair GraphQL Client_ Google Chrome extension.
+Gebruik vervolgens een GraphQL IDE om te controleren of het kenmerk `eco_friendly` is toegevoegd aan de set met productkenmerken. De beelden van het scherm in dit leerprogramma gebruiken de _uitbreiding van Chrome van de Cliënt van GraphQL van Altair_ Google.
 
-1. GraphQL-IDE openen en URL invoeren `http://<commerce-server>/graphql` in de bar URL van uw winde of uitbreiding.
-2. Voeg het volgende toe [productquery](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) waar `YOUR_SKU` is de **SKU** van het product dat bij de vorige exercitie werd gebruikt:
+1. Open GraphQL IDE en ga URL `http://<commerce-server>/graphql` in de bar URL van uw winde of uitbreiding in.
+2. Voeg de volgende [ productvraag ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) toe waar `YOUR_SKU` **SKU** van het product is dat in de vorige oefening wordt gebruikt:
 
    ```json
      {
@@ -169,31 +169,31 @@ Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmer
    }
    ```
 
-   ![Voorbeeld GraphQL-reactie](../assets/customize-cif-components/sample-graphql-query.png)
+   ![ de reactie van GraphQL van de Steekproef ](../assets/customize-cif-components/sample-graphql-query.png)
 
-   De waarde van **Ja** is een geheel getal van **1**. Deze waarde is handig wanneer u de GraphQL-query in Java™ schrijft.
+   De waarde van **ja** is een geheel van **1**. Deze waarde is handig wanneer u de GraphQL-query in Java™ schrijft.
 
    >[!TIP]
    >
-   > Meer gedetailleerde documentatie over [Adobe Commerce GraphQL hier](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > Lees hier meer gedetailleerde documentatie over [ Adobe Commerce GraphQL ](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Het verkoopmodel voor de producttaser bijwerken {#updating-sling-model-product-teaser}
 
-Daarna, breidt u de bedrijfslogica van de Teaser van het Product door een het Verkopen Model uit te voeren uit. [Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html) zijn annotatiegestuurde &quot;POJO&#39;s&quot; (normale oude Java™-objecten) die bedrijfslogica implementeren die nodig is voor de component. Sling Models worden gebruikt met de manuscripten HTML als deel van de component. Volg de [delegatiepatroon voor verkoopmodellen](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) zodat u delen van het bestaande model van de Teaser van het Product kunt uitbreiden.
+Daarna, breidt u de bedrijfslogica van de Teaser van het Product door een het Verkopen Model uit te voeren uit. [ het Verdelen Modellen ](https://sling.apache.org/documentation/bundles/models.html) zijn annotatie gedreven &quot;POJOs&quot;(Duidelijk Oude Voorwerpen Java™) die bedrijfslogica uitvoeren die door de component nodig is. Sling Models worden gebruikt met de manuscripten HTML als deel van de component. Volg het [ delegatiepatroon voor het Verdelen Modellen ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) zodat kunt u delen van het bestaande model van de Teaser van het Product uitbreiden.
 
-Sling Models worden geïmplementeerd als Java™ en zijn te vinden in het dialoogvenster **kern** module van het gegenereerde project.
+Het verkopen Modellen wordt uitgevoerd als Java™ en kan in de **kern** module van het geproduceerde project worden gevonden.
 
-Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) het Venia-project in te voeren. De gebruikte screenshots zijn afkomstig van de [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Gebruik [ winde van uw keus ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [ winde van de Code van Visual Studio ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
-1. In uw winde, navigeer onder **kern** module naar: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
+1. In uw winde, navigeer onder de **kern** module aan: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
-   ![Core location IDE](../assets/customize-cif-components/core-location-ide.png)
+   {IDE van de plaatsIDE van 0} Kern ](../assets/customize-cif-components/core-location-ide.png)![
 
-   `MyProductTeaser.java` is een Java™ Interface die de CIF uitbreidt [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) interface.
+   `MyProductTeaser.java` is een interface Java™ die de CIF [ ProductTeaser ](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) interface uitbreidt.
 
-   Er is al een nieuwe methode toegevoegd met de naam `isShowBadge()` om een badge weer te geven als het product als &quot;Nieuw&quot; wordt beschouwd.
+   Er is al een nieuwe methode met de naam `isShowBadge()` toegevoegd om een badge weer te geven als het product als &quot;Nieuw&quot; wordt beschouwd.
 
-1. Toevoegen `isEcoFriendly()` aan de interface:
+1. Voeg `isEcoFriendly()` toe aan de interface:
 
    ```java
    @ProviderType
@@ -206,11 +206,11 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
    }
    ```
 
-   Deze nieuwe methode wordt geïntroduceerd om de logica in te kapselen om erop te wijzen of het product heeft `eco_friendly` kenmerk ingesteld op **Ja** of **Nee**.
+   Deze nieuwe methode wordt geïntroduceerd om de logica in te kapselen om erop te wijzen als het product de `eco_friendly` attributen heeft die aan **worden geplaatst ja** of **Nr**.
 
-1. Controleer vervolgens de `MyProductTeaserImpl.java` om `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`.
+1. Controleer vervolgens de `MyProductTeaserImpl.java` at `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java` .
 
-   De [delegatiepatroon voor verkoopmodellen](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) toestaat `MyProductTeaserImpl` verwijzing `ProductTeaser` model via de `sling:resourceSuperType` eigenschap:
+   Het [ delegatiepatroon voor het Verdelen Modellen ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) staat `MyProductTeaserImpl` toe om `ProductTeaser` model via het `sling:resourceSuperType` bezit van verwijzingen te voorzien:
 
    ```java
    @Self
@@ -218,7 +218,7 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
    private ProductTeaser productTeaser;
    ```
 
-   Voor de methoden die u niet wilt overschrijven of wijzigen, kunt u de waarde retourneren die `ProductTeaser` retourneert. Bijvoorbeeld:
+   Voor de methoden die u niet wilt overschrijven of wijzigen, kunt u de waarde retourneren die de `ProductTeaser` retourneert. Bijvoorbeeld:
 
    ```java
    @Override
@@ -229,7 +229,7 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
 
    Deze methode minimaliseert de hoeveelheid code Java™ die een implementatie moet schrijven.
 
-1. Een van de extra extensiepunten die wordt geleverd door AEM Core Components is de `AbstractProductRetriever` die toegang biedt tot specifieke productkenmerken. Inspect the `initModel()` methode:
+1. Een van de extra extensiepunten die AEM Core Components biedt, is de `AbstractProductRetriever` die toegang biedt tot specifieke productkenmerken. Inspect de methode `initModel()` :
 
    ```java
    import javax.annotation.PostConstruct;
@@ -252,11 +252,11 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
    ...
    ```
 
-   De `@PostConstruct` De aantekening zorgt ervoor dat deze methode wordt geroepen wanneer het het Verdelen Model wordt geïnitialiseerd.
+   De `@PostConstruct` -annotatie zorgt ervoor dat deze methode wordt aangeroepen wanneer het Sling-model wordt geïnitialiseerd.
 
-   U ziet dat de GraphQL-query voor het product al is uitgebreid met de `extendProductQueryWith` methode om de extra `created_at` kenmerk. Dit kenmerk wordt later gebruikt als onderdeel van het dialoogvenster `isShowBadge()` methode.
+   De product-GraphQL-query is al uitgebreid met de methode `extendProductQueryWith` om het extra `created_at` -kenmerk op te halen. Dit kenmerk wordt later gebruikt als onderdeel van de methode `isShowBadge()` .
 
-1. Werk de GraphQL-query bij en voeg de `eco_friendly` kenmerk in de gedeeltelijke query:
+1. Werk de GraphQL-query bij om het kenmerk `eco_friendly` op te nemen in de gedeeltelijke query:
 
    ```java
    //MyProductTeaserImpl.java
@@ -276,13 +276,13 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
    }
    ```
 
-   Toevoegen aan de `extendProductQueryWith` Deze methode is een krachtige manier om ervoor te zorgen dat extra productkenmerken beschikbaar zijn voor de rest van het model. Het minimaliseert ook het aantal uitgevoerde vragen.
+   Toevoegen aan de methode `extendProductQueryWith` is een krachtige manier om ervoor te zorgen dat extra productkenmerken beschikbaar zijn voor de rest van het model. Het minimaliseert ook het aantal uitgevoerde vragen.
 
-   In de bovenstaande code worden de`addCustomSimpleField` wordt gebruikt om de `eco_friendly` kenmerk. Dit kenmerk demonstreert hoe u query&#39;s kunt uitvoeren voor aangepaste kenmerken die onderdeel zijn van het Adobe Commerce-schema.
+   In de bovenstaande code, wordt `addCustomSimpleField` gebruikt om het `eco_friendly` attribuut terug te winnen. Dit kenmerk demonstreert hoe u query&#39;s kunt uitvoeren voor aangepaste kenmerken die onderdeel zijn van het Adobe Commerce-schema.
 
    >[!NOTE]
    >
-   > De `createdAt()` is geïmplementeerd als onderdeel van de [Productinterface](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). De meeste algemeen gevonden schemakenmerken zijn uitgevoerd, zo slechts gebruik `addCustomSimpleField` voor werkelijk aangepaste kenmerken.
+   > De `createdAt()` methode is uitgevoerd als deel van de [ Interface van het Product ](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). De meeste algemeen gevonden schemakenmerken zijn uitgevoerd, zodat gebruik slechts `addCustomSimpleField` voor echt douanekenmerken.
 
 1. Voeg een logger toe zodat u de code kunt zuiveren Java™:
 
@@ -296,7 +296,7 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
    private static final Logger LOGGER = LoggerFactory.getLogger(MyProductTeaserImpl.class);
    ```
 
-1. Vervolgens implementeert u de `isEcoFriendly()` methode:
+1. Implementeer vervolgens de methode `isEcoFriendly()` :
 
    ```java
    @Override
@@ -317,23 +317,23 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
    }
    ```
 
-   In de bovenstaande methode worden de `productRetriever` wordt gebruikt om het product en de `getAsInteger()` wordt gebruikt om de waarde van `eco_friendly` kenmerk. Op basis van de GraphQL-query&#39;s die u eerder hebt uitgevoerd, weet u dat de verwachte waarde `eco_friendly` kenmerk is ingesteld op &quot;**Ja**&quot; is eigenlijk een geheel getal van **1**.
+   In de bovenstaande methode wordt `productRetriever` gebruikt om het product op te halen en wordt de methode `getAsInteger()` gebruikt om de waarde van het kenmerk `eco_friendly` op te halen. Gebaseerd op de vragen van GraphQL u vroeger in werking stelde, weet u dat de verwachte waarde wanneer het `eco_friendly` attribuut aan &quot;**ja**&quot;wordt geplaatst eigenlijk een geheel van **1** is.
 
-   Nu het Sling Model is bijgewerkt, moet de prijsverhoging van de Component worden bijgewerkt om daadwerkelijk een indicator van te tonen van **Eco Friendly** op basis van het verkoopmodel.
+   Nu het het Verdelen Model is bijgewerkt, moet de prijsverhoging van de Component worden bijgewerkt om eigenlijk een indicator van **Milieuvriendelijk** te tonen die op het het Verschilderen Model wordt gebaseerd.
 
 ## De opmaak van de producttaser aanpassen {#customize-markup-product-teaser}
 
-Een algemene uitbreiding van AEM componenten is het wijzigen van de markering die door de component wordt gegenereerd. Deze bewerking wordt uitgevoerd door het [HTML-script](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) dat de component gebruikt om zijn prijsverhoging terug te geven. De Taal van het Malplaatje van de HTML (HTL), is een lichtgewichtmalplaatjetaal die AEM componenten gebruiken om prijsverhoging dynamisch terug te geven die op authored inhoud wordt gebaseerd, toestaand de componenten om worden opnieuw gebruikt. De producttaser kan bijvoorbeeld steeds opnieuw worden gebruikt om verschillende producten weer te geven.
+Een algemene uitbreiding van AEM componenten is het wijzigen van de markering die door de component wordt gegenereerd. Dit het uitgeven wordt gedaan door het [ manuscript van HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) met voeten te treden dat de component gebruikt om zijn prijsverhoging terug te geven. De Taal van het Malplaatje van de HTML (HTL), is een lichtgewichtmalplaatjetaal die AEM componenten gebruiken om prijsverhoging dynamisch terug te geven die op authored inhoud wordt gebaseerd, toestaand de componenten om worden opnieuw gebruikt. De producttaser kan bijvoorbeeld steeds opnieuw worden gebruikt om verschillende producten weer te geven.
 
-In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat het product &quot;Milieuvriendelijk&quot;gebaseerd op een douaneattribuut is. Het ontwerppatroon voor [de markering aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) van een component is standaard voor alle AEM Componenten, niet alleen voor de AEM CIF Core Components.
+In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat het product &quot;Milieuvriendelijk&quot;gebaseerd op een douaneattribuut is. Het ontwerppatroon voor [ die de prijsverhoging ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) van een component aanpassen is standaard voor alle AEM Componenten, niet alleen voor de AEM Componenten van de Kern CIF.
 
 >[!NOTE]
 >
-> Als u een component aanpast met de CIF product- en categoriekiezers, zoals deze producttaser of de CIF paginacomponent, moet u de vereiste `cif.shell.picker` clientlib voor de componentdialoogvensters. Zie [Gebruik van CIF product- en rubriekkiezer](use-cif-pickers.md) voor meer informatie.
+> Als u een component aanpast met de CIF product- en categoriekiezers, zoals deze producttaser of de CIF paginacomponent, moet u de vereiste `cif.shell.picker` clientlib voor de deeldialoogvensters opnemen. Zie [ Gebruik van CIF product &amp; categoriekiezer ](use-cif-pickers.md) voor details.
 
-1. In winde, navigeer en breid uit `ui.apps` en breid de maphiërarchie uit naar: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` en inspecteer de `.content.xml` bestand.
+1. Navigeer in de IDE naar de module `ui.apps` en vouw de maphiërarchie uit naar: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` en inspecteer het bestand `.content.xml` .
 
-   ![Productieteams ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
+   ![ de Teaser ui.apps van het Product Taser ](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -345,9 +345,9 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
        componentGroup="Venia - Commerce"/>
    ```
 
-   De bovenstaande componentdefinitie is voor de Product Teaser Component in uw project. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Deze eigenschap is een voorbeeld van een [Proxy-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). In plaats van de HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunt u de opdracht `sling:resourceSuperType` om alle functionaliteit over te nemen.
+   De bovenstaande componentdefinitie is voor de Product Teaser Component in uw project. Let op de eigenschap `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` . Dit bezit is een voorbeeld van het creëren van de component van de Volmacht van de a [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). In plaats van de HTML-scripts van de Product Teaser te kopiëren en te plakken van de AEM CIF Core Components, kunt u de `sling:resourceSuperType` gebruiken om alle functionaliteit over te nemen.
 
-1. Het bestand openen `productteaser.html`. Dit bestand is een kopie van het `productteaser.html` bestand van de [CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
+1. Open het bestand `productteaser.html` . Dit dossier is een exemplaar van het `productteaser.html` dossier van de [ CIF Taser van het Product ](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
 
    ```html
    <!--/* productteaser.html */-->
@@ -360,9 +360,9 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
    ></sly>
    ```
 
-   Let op: het verkoopmodel voor `MyProductTeaser` wordt gebruikt en toegewezen aan `product` variabele.
+   Het Sling-model voor `MyProductTeaser` wordt gebruikt en toegewezen aan de variabele `product` .
 
-1. Wijzigen `productteaser.html` zodat kunt u de `isEcoFriendly` in de vorige exercitie toegepaste methode:
+1. Wijzig `productteaser.html` zodat u de methode `isEcoFriendly` kunt aanroepen die in de vorige exercitie is geïmplementeerd:
 
    ```html
    ...
@@ -383,9 +383,9 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
    </div>
    ```
 
-   Bij het aanroepen van een Sling Model-methode in HTML wordt de `get` en `is` Het gedeelte van de methode wordt verwijderd en de eerste letter wordt ingekort. Dus `isShowBadge()` wordt `.showBadge` en `isEcoFriendly` wordt `.ecoFriendly`. Gebaseerd op de booleaanse waarde die is geretourneerd van `.isEcoFriendly()` bepaalt of de `<span>Eco Friendly</span>` wordt weergegeven.
+   Wanneer u een methode van het Sling Model in HTML aanroept, wordt het `get` - en `is` -gedeelte van de methode verwijderd en wordt de eerste letter verlaagd. Dus `isShowBadge()` wordt `.showBadge` en `isEcoFriendly` wordt `.ecoFriendly` . Op basis van de Booleaanse waarde die door `.isEcoFriendly()` wordt geretourneerd, wordt bepaald of de `<span>Eco Friendly</span>` wordt weergegeven.
 
-   Meer informatie over `data-sly-test` en andere [HTML-blokinstructies vindt u hier](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
+   Meer informatie over `data-sly-test` en andere [ het blokverklaringen van HTML kan hier ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html) worden gevonden.
 
 1. Sparen de veranderingen en stel de updates in om AEM te gebruiken uw Maven vaardigheden, van een bevel-lijn terminal op te stellen:
 
@@ -394,9 +394,9 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Open een nieuw browservenster en navigeer naar AEM **OSGi-console** > **Status** > **Verkoopmodellen**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
+1. Open een nieuw browser venster en navigeer aan AEM en de **console OSGi** > **Status** > **Sling Models**: [ http://localhost:4502/system/console/status-slingmodels ](http://localhost:4502/system/console/status-slingmodels)
 
-1. Zoeken naar `MyProductTeaserImpl` en u zou een lijn als het volgende moeten zien:
+1. Zoek naar `MyProductTeaserImpl` en u zou een lijn als het volgende moeten zien:
 
    ```plain
    com.venia.core.models.commerce.MyProductTeaserImpl - venia/components/commerce/productteaser
@@ -404,13 +404,13 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
    Deze lijn wijst erop dat het het Verdelen Model behoorlijk wordt opgesteld en aan de correcte component in kaart gebracht.
 
-1. Vernieuwen naar de **Introductiepagina van Venia** om [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) waarbij de producttaser is toegevoegd.
+1. Vernieuwen aan de **Homepage van Venia** in [ http://localhost:4502/editor.html/content/venia/us/en.html ](http://localhost:4502/editor.html/content/venia/us/en.html) waar de Teaser van het Product is toegevoegd.
 
-   ![Eco Friendly message displayed](../assets/customize-cif-components/eco-friendly-text-displayed.png)
+   ![ Eco Friendly getoonde bericht ](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
-   Als het product de `eco_friendly` kenmerk ingesteld op **Ja**, moet u de tekst &quot;Eco Friendly&quot; op de pagina zien. Probeer over te schakelen op verschillende producten om de gedragswijziging te zien.
+   Als het product de `eco_friendly` attributen heeft die aan **worden geplaatst ja**, zou u de tekst &quot;vriendschappelijk&quot;op de pagina moeten zien. Probeer over te schakelen op verschillende producten om de gedragswijziging te zien.
 
-1. De AEM openen `error.log` om de toegevoegde logboekverklaringen te zien. De `error.log` is om `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
+1. Open vervolgens de AEM `error.log` om de toegevoegde loginstructies te zien. De `error.log` bevindt zich op `<AEM SDK Install Location>/crx-quickstart/logs/error.log` .
 
    Zoek in de AEM logboeken naar de toegevoegde logboekinstructies in het Sling Model:
 
@@ -423,20 +423,20 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
    >[!CAUTION]
    >
-   > U kunt ook enkele stapelsporen zien als het in de teaser gebruikte product niet de `eco_friendly` kenmerk als onderdeel van de kenmerkset.
+   > U kunt ook enkele stacksporen zien als het product dat in de teaser wordt gebruikt, het kenmerk `eco_friendly` niet heeft als onderdeel van de kenmerkset.
 
 ## Stijlen toevoegen voor de milieuvriendelijke badge {#add-styles}
 
-Op dit punt wordt de logica weergegeven voor het weergeven van de **Eco Friendly** badge werkt al, maar de onbewerkte tekst kan enkele stijlen gebruiken. Voeg vervolgens een pictogram en stijlen toe aan het dialoogvenster `ui.frontend` om de implementatie te voltooien.
+Op dit punt werkt de logica voor wanneer om **vriendschappelijk Eco** badge te tonen, nochtans kon de gewone tekst sommige stijlen gebruiken. Voeg vervolgens een pictogram en stijlen toe aan de module `ui.frontend` om de implementatie te voltooien.
 
-1. Download de [eco_Vriendelijk.svg](../assets/customize-cif-components/eco_friendly.svg) bestand. Dit bestand wordt gebruikt als de **Eco Friendly** badge.
-1. Terugkeer aan winde en navigeer aan winde `ui.frontend` map.
-1. Voeg de `eco_friendly.svg` aan de `ui.frontend/src/main/resources/images` map:
+1. Download het {](../assets/customize-cif-components/eco_friendly.svg) dossier 0} eco_Vriendelijk.svg. [ Dit dossier wordt gebruikt als **Milieuvriendelijk** badge.
+1. Ga terug naar de IDE en navigeer naar de map `ui.frontend` .
+1. Voeg het bestand `eco_friendly.svg` toe aan de map `ui.frontend/src/main/resources/images` :
 
-   ![Eco Friendly SVG toegevoegd](../assets/customize-cif-components/eco-friendly-svg-added.png)
+   ![ Eco Friendly SVG toegevoegd ](../assets/customize-cif-components/eco-friendly-svg-added.png)
 
-1. Het bestand openen `productteaser.scss` om `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
-1. Voeg de volgende regels van de Klasse binnen toe `.productteaser` klasse:
+1. Open het bestand `productteaser.scss` om `ui.frontend/src/main/styles/commerce/_productteaser.scss` .
+1. Voeg de volgende regels van de Klasse binnen de `.productteaser` klasse toe:
 
    ```scss
    .productteaser {
@@ -464,7 +464,7 @@ Op dit punt wordt de logica weergegeven voor het weergeven van de **Eco Friendly
 
    >[!NOTE]
    >
-   > Uitchecken [Stijlen CIF kerncomponenten](./style-cif-component.md) voor meer informatie over front-end workflows.
+   > Controle uit [ het Stijlen CIF de Componenten van de Kern ](./style-cif-component.md) voor meer details rond front-end werkschema&#39;s.
 
 1. Sparen de veranderingen en stel de updates in om AEM te gebruiken uw Maven vaardigheden, van een bevel-lijn terminal op te stellen:
 
@@ -473,25 +473,25 @@ Op dit punt wordt de logica weergegeven voor het weergeven van de **Eco Friendly
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Vernieuwen naar de **Introductiepagina van Venia** om [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) waarbij de producttaser is toegevoegd.
+1. Vernieuwen aan de **Homepage van Venia** in [ http://localhost:4502/editor.html/content/venia/us/en.html ](http://localhost:4502/editor.html/content/venia/us/en.html) waar de Teaser van het Product is toegevoegd.
 
-   ![Eco-vriendelijke badge - definitieve implementatie](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
+   ![ Eco Friendly de Definitieve Implementatie van de Band ](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## Gefeliciteerd {#congratulations}
 
-U hebt uw eerste AEM CIF component aangepast! Download de [hier voltooide oplossingsbestanden](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+U hebt uw eerste AEM CIF component aangepast! Download de [ gebeëindigde oplossingsdossiers hier ](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Bonus Challenge {#bonus-challenge}
 
-Controleer de functionaliteit van de **Nieuw** badge die al is geïmplementeerd in de Product Teaser. Probeer een extra selectievakje voor auteurs toe te voegen om te bepalen wanneer de **Eco Friendly** badge moet worden weergegeven. Het dialoogvenster voor componenten bijwerken op `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Herzie de functionaliteit van de **Nieuwe** badge die reeds in de Teaser van het Product is uitgevoerd. Probeer om extra checkbox voor auteurs toe te voegen om te controleren wanneer **Milieuvriendelijk** badge zou moeten worden getoond. Werk het dialoogvenster voor componenten bij op `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml` .
 
-![Nieuwe uitdaging voor Badge-implementatie](../assets/customize-cif-components/new-badge-implementation-challenge.png)
+![ Nieuwe uitdaging van de Implementatie van de Badge ](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
 ## Aanvullende bronnen {#additional-resources}
 
-- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-- [CIF kerncomponenten AEM](https://github.com/adobe/aem-core-cif-components)
-- [Aanpassen AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html)
-- [Kerncomponenten aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
-- [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [AEM Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [ AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components)
+- [ Aanpassen AEM CIF de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html)
+- [ het Aanpassen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [ Begonnen het worden met AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 - [Gebruik van CIF product- en rubriekkiezer](use-cif-pickers.md)

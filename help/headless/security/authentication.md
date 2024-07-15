@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Een hoofdgebruik voor het [Adobe Experience Manager as a Cloud Service (AEM) GraphQL API voor levering van inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md) moet verre vragen van derdetoepassingen of de diensten goedkeuren. Deze externe query&#39;s vereisen mogelijk geverifieerde API-toegang om de levering van inhoud zonder kop te beveiligen.
+Een primair gebruiksgeval voor [ Adobe Experience Manager as a Cloud Service (AEM) GraphQL API voor de Levering van het Fragment van de Inhoud ](/help/headless/graphql-api/content-fragments.md) moet verre vragen van derdetoepassingen of de diensten goedkeuren. Deze externe query&#39;s vereisen mogelijk geverifieerde API-toegang om de levering van inhoud zonder kop te beveiligen.
 
 >[!NOTE]
 >
->Voor test- en ontwikkelingsdoeleinden hebt u ook rechtstreeks toegang tot de AEM GraphQL API via de [GraphiQL-interface](/help/headless/graphql-api/graphiql-ide.md).
+>Voor het testen en de ontwikkeling, kunt u tot de AEM GraphQL API direct ook toegang hebben gebruikend de [ interface GraphiQL ](/help/headless/graphql-api/graphiql-ide.md).
 
-Voor authentificatie, moet de derdedienst [haal een Token van de Toegang terug](#retrieving-access-token) dat kan [gebruikt in GraphQL Request](#use-access-token-in-graphql-request).
+Voor authentificatie, moet de derdedienst [ een Symbolisch van de Toegang ](#retrieving-access-token) terugwinnen dat dan [ in het Verzoek van GraphQL ](#use-access-token-in-graphql-request) kan worden gebruikt.
 
 ## Een toegangstoken ophalen {#retrieving-access-token}
 
-Zie [Toegangstokens genereren voor server-side API&#39;s](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) voor volledige informatie.
+Zie [ Genererend de Tokens van de Toegang voor server-Kant APIs ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) voor volledige details.
 
 ## Het gebruiken van het Token van de Toegang in een GraphQL- Verzoek {#use-access-token-in-graphql-request}
 
-Een service van derden kan alleen verbinding maken met een AEM instantie als deze een *Toegangstoken*. De dienst moet dit teken aan de dienst dan toevoegen `Authorization` header on the POST request.
+Voor de derdedienst om met een AEM instantie te verbinden moet het een *Symbolisch van de Toegang* hebben. De service moet dit token vervolgens toevoegen aan de header `Authorization` als de POST wordt aangevraagd.
 
 Een GraphQL-autorisatieheader bijvoorbeeld:
 
@@ -37,8 +37,8 @@ Authorization: Bearer <access_token>
 
 ## Machtigingsvereisten {#permission-requirements}
 
-Alle verzoeken die met behulp van het toegangstoken worden gedaan worden gemaakt *door de gebruikersaccount die het token heeft gegenereerd*.
+Alle die verzoeken worden gemaakt gebruikend het toegangstoken worden gemaakt *door de gebruikersrekening die het teken* produceerde.
 
 Dit gebruikersaccount houdt in dat u moet controleren of de account de machtigingen heeft die vereist zijn om GraphQL-query&#39;s uit te voeren.
 
-U kunt deze toestemmingen controleren door GraphiQL op de lokale instantie te gebruiken. Meer informatie over [hier kunt u rechten vinden](/help/headless/security/permissions.md).
+U kunt deze toestemmingen controleren door GraphiQL op de lokale instantie te gebruiken. Meer details over [ toestemmingen kunnen hier ](/help/headless/security/permissions.md) worden gevonden.

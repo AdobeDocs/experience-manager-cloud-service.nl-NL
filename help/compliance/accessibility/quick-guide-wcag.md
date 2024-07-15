@@ -29,7 +29,7 @@ WCAG 2.1 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescr
 
 Als u bijvoorbeeld een afbeelding (of andere niet-tekstuele content) beschrijft met het `alt`-kenmerk in HTML, heeft dit grote voordelen voor blinden of slechtzienden. De tekstuele beschrijving in het `alt`-kenmerk kan worden omgezet naar spraakuitvoer of worden verzonden naar elektronische vernieuwbare brailleweergaven.
 
-WCAG 2.1 kan ook voordelen opleveren voor andere begunstigden, waaronder personen die in aanmerking kunnen worden genomen *situationeel gehandicapt*. Personen die door omstandigheden problemen ondervinden met bladertechnologie, netwerkverbindingssnelheid of bladeromgeving, kunnen te maken hebben met belemmeringen die vergelijkbaar zijn met mensen met een handicap.
+Ook, kan WCAG 2.1 in voordelen voor andere begunstigden, met inbegrip van mensen resulteren die *kunnen worden beschouwd situationeel gehandicapt*. Personen die door omstandigheden problemen ondervinden met bladertechnologie, netwerkverbindingssnelheid of bladeromgeving, kunnen te maken hebben met belemmeringen die vergelijkbaar zijn met mensen met een handicap.
 
 Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webcontent maken die voldoet aan de relevante succescriteria van WCAG 2.1 niveau A en niveau AA.
 
@@ -116,7 +116,7 @@ Elke techniek heeft een uniek getal dat betrekking heeft op de verzameling ervan
 
 Technieken kunnen Sufficient (toereikend), Advisory (adviserend) of een Failure (mislukking) zijn:
 
-* A *Voldoende techniek* is er een, die, als ze wordt gevolgd, voldoende is om aan een bepaald succescriterium te voldoen.
+* A *Voldoende Techniek* is één, die, als gevolgd, genoeg is om aan een bepaald succescriterium te voldoen.
 * Een *adviserende techniek* is een techniek die, als ze wordt gevolgd, een positief effect zal hebben op de toegankelijkheid, maar op zich misschien niet voldoende is om te garanderen dat aan een bepaald succescriterium wordt voldaan.
 * Een *mislukking* is een techniek die een specifiek voorbeeld beschrijft waarbij niet aan een succescriterium is voldaan.
 
@@ -146,7 +146,7 @@ Een voorbeeld is te vinden op: [Succescriterium 1.1.1 (&quot;Niet-tekstuele cont
 
 ### Hoe te om WCAG 2.1 te ontmoeten {#how-to-meet-wcag}
 
-Het gedeelte &#39;Hoe kan ik? is beschikbaar op het tabblad [Hoe te om WCAG 2.1 te ontmoeten](https://www.w3.org/WAI/WCAG21/quickref/) pagina. Deze sectie biedt een alternatieve presentatie van WCAG, waardoor lezers de content van de richtlijnen kunnen verfijnen tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
+De &quot;hoe te&quot;sectie is beschikbaar op [ hoe te WCAG 2.1 ](https://www.w3.org/WAI/WCAG21/quickref/) pagina ontmoeten. Deze sectie biedt een alternatieve presentatie van WCAG, waardoor lezers de content van de richtlijnen kunnen verfijnen tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
 
 Zonder filteren biedt deze bron alle succescriteria gegroepeerd op richtlijn. Voor elk succescriterium wordt het volgende verstrekt:
 

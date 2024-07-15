@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.07.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.07.0
+title: Opmerkingen bij de release AEM as a Cloud Service 2023.07.0 voor migratiehulpprogramma's
+description: Opmerkingen bij de release AEM as a Cloud Service 2023.07.0 voor migratiehulpprogramma's
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service release 2023.07.0 {#release-notes}
+# Opmerkingen bij de release AEM as a Cloud Service 2023.07.0 voor migratiehulpprogramma&#39;s {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2023.07.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2023.07.0.
 
 ## Analysator van best practices {#bpa-release}
 
@@ -33,4 +33,4 @@ De releasedatum voor de analyse van best practices v2.1.42 is 6 juli 2023.
 ### Opgeloste problemen {#bug-fixes-bpa}
 
 * BPA werd verbeterd om te voorkomen dat het genereren van rapporten met een hoog aantal bevindingen mislukte vanwege het genereren van rapporten vanwege onvoldoende geheugen.
-* BPA is verbeterd op het detecteren van escapetekens in paden om mislukte inname van inhoud te voorkomen wanneer migratieinhoud AEM as a Cloud Service.
+* BPA is verbeterd op het detecteren van escape-tekens in paden om fouten met het opnemen van inhoud te voorkomen bij het migreren van inhoud naar AEM as a Cloud Service.

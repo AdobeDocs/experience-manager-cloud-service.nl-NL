@@ -14,13 +14,13 @@ ht-degree: 1%
 
 # Zijpaneel siteconsole {#side-panel}
 
-Leer hoe u het zijpaneel in de AEM gebruikt **Sites** -console om uw inhoud beter te begrijpen en te navigeren.
+Leer hoe te om het zijpaneel in de AEM **console van Plaatsen** te gebruiken om uw inhoud beter te begrijpen en te navigeren.
 
 ## Afdrukstand {#orientation}
 
-Het zijpaneel is standaard gesloten wanneer u de **Sites** console. Op deze manier wordt het scherm volledig aan uw inhoud gewijd.
+Het zijpaneel is door gebrek gesloten wanneer u de **console van Plaatsen** ingaat. Op deze manier wordt het scherm volledig aan uw inhoud gewijd.
 
-Tik of klik op de knop **Zijpaneel** in het deelvenster **Sites** consolewerkbalk om het zijpaneel te activeren en uw weergave van de inhoud te kiezen.
+Tik of klik het **Zijpaneel** pictogram in de **3} consoletoolbar van Plaatsen {om het zijpaneel te activeren en uw mening van de inhoud te kiezen.**
 
 * [Alleen inhoud](#content-only)
 * [Inhoudsstructuur](#content-tree)
@@ -30,7 +30,7 @@ Tik of klik op de knop **Zijpaneel** in het deelvenster **Sites** consolewerkbal
 * [Filter](#filter)
 * [Analyses instellen](#setup-analytics)
 
-![Weergaven van zijpaneel van de Siteconsole](assets/sites-console-side-panel-views.png)
+![ Kant paneelmeningen van de console van Plaatsen ](assets/sites-console-side-panel-views.png)
 
 De geselecteerde huidige weergave wordt aangegeven met een blauw vinkje in de vervolgkeuzelijst en het pictogram van het zijpaneel in de werkbalk wordt bijgewerkt met de naam van de geselecteerde weergave.
 
@@ -40,13 +40,13 @@ In deze weergave van het zijpaneel wordt het paneel in feite uitgeschakeld, zoda
 
 >[!TIP]
 >
->Het accent/de achtergrond van het graf gebruiken `´` sneltoets om over te schakelen naar de weergave Alleen inhoud van het zijpaneel.
+>Gebruik de sneltoets met het accent of de backtick `´` om over te schakelen naar de weergave Alleen inhoud van het zijpaneel.
 
 ## Inhoudsstructuur {#content-tree}
 
 In deze weergave van het zijpaneel wordt de inhoud weergegeven in een boomstructuur. Met de inhoudsstructuur kunt u snel door de sitehiërarchie in het zijpaneel navigeren en veel informatie over de pagina&#39;s in de huidige map bekijken.
 
-![De weergave van de inhoudsboomstructuur van het zijpaneel](assets/console-side-panel-content-tree.png)
+![ de mening van de inhoudsboom van het zijpaneel ](assets/console-side-panel-content-tree.png)
 
 Een naar rechts wijzend chevron naast een punt in de boom wijst op een knoop die kan worden uitgebreid om zijn kinderen te openbaren. Tik of klik op het chevron om de kinderen te onthullen.
 
@@ -56,17 +56,17 @@ Met het zijpaneel van de inhoudsboomstructuur in combinatie met een lijst of kaa
 
 >[!TIP]
 >
->* Gebruik de `Alt+1` sneltoets om over te schakelen naar de weergave van de inhoudsboomstructuur van het zijpaneel.
+>* Gebruik de sneltoets `Alt+1` om over te schakelen naar de weergave van de inhoudsstructuur van het zijpaneel.
 >* Wanneer een item in de hiërarchische weergave is geselecteerd, kunt u met de pijltoetsen snel door de hiërarchie navigeren.
->* Zie [sneltoetsen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) voor meer informatie .
+>* Zie [ toetsenbordkortere weg ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) voor meer informatie.
 
 ## Tijdlijn {#timeline}
 
 De tijdlijn kan worden gebruikt om gebeurtenissen weer te geven die invloed hebben gehad op de geselecteerde bron. U kunt deze ook gebruiken om bepaalde gebeurtenissen te starten, zoals workflows of versies.
 
-![Tijdlijndetails](/help/sites-cloud/authoring/assets/timeline-detail.png)
+![ details van de Chronologie ](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
-De **Tijdlijn** In het zijpaneel kunt u verschillende gebeurtenissen met betrekking tot een geselecteerd item selecteren als typen in een vervolgkeuzelijst:
+Het **paneel van de Chronologie** zijpaneel laat u diverse gebeurtenissen met betrekking tot een geselecteerd punt selecteerbaar als types van een drop-down lijst bekijken:
 
 * Opmerkingen
 * [Annotaties](/help/sites-cloud/authoring/page-editor/annotations.md)
@@ -74,64 +74,64 @@ De **Tijdlijn** In het zijpaneel kunt u verschillende gebeurtenissen met betrekk
 * [Lanceringen](/help/sites-cloud/authoring/launches/overview.md)
 * [Versies](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
-   * Er wordt geen informatie weergegeven voor tijdelijke workflows omdat er voor deze workflows geen historische gegevens worden opgeslagen.<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
+   * Merk op dat geen informatie voor voorbijgaande werkschema&#39;s zal worden getoond aangezien geen geschiedenisinformatie voor deze wordt bewaard.<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
 * Alles tonen
 
-Daarnaast kunt u opmerkingen over het geselecteerde item toevoegen/weergeven met de opdracht **Opmerking** weergegeven onder aan de lijst met gebeurtenissen. Een opmerking typen, gevolgd door `Return` registreert de opmerking. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
+Bovendien kunt u commentaren over het geselecteerde punt toevoegen/bekijken door de **doos van de Commentaar** te gebruiken die bij de bodem van de lijst van gebeurtenissen wordt getoond. Als u een opmerking typt die wordt gevolgd door `Return` , wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
 
-In de **Sites** console u kunt tot extra eigenschappen ook toegang hebben via de ellipsknoop naast **Opmerking** veld.
+In de **console van Plaatsen** kunt u tot extra eigenschappen via de ellipsis knoop naast het **3} gebied van de Commentaar {ook toegang hebben.**
 
 * [Een versie opslaan](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [Een workflow starten](/help/sites-cloud/authoring/workflows/applying.md)
 
-![Veld voor commentaar op siteconsole](assets/sites-console-comment-ellipsis.png)
+![ gebied van de de consolecommentaar van Plaatsen ](assets/sites-console-comment-ellipsis.png)
 
 >[!TIP]
 >
->* Gebruik de `Alt+2` sneltoets om over te schakelen naar de tijdlijnweergave van het zijpaneel.
->* Zie [sneltoetsen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) voor meer informatie .
+>* Gebruik de sneltoets `Alt+2` om over te schakelen naar de tijdlijnweergave van het zijpaneel.
+>* Zie [ toetsenbordkortere weg ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) voor meer informatie.
 
 ## Verwijzingen {#references}
 
-De **Verwijzingen** de mening toont een lijst van verwijzingstypes aan of van aan het middel dat in de console wordt geselecteerd.
+De **mening van Verwijzingen** toont een lijst van verwijzingstypes aan of van aan het middel dat in de console wordt geselecteerd.
 
-![Details van verwijzingen](assets/console-side-panel-references-detail.png)
+![ details van Verwijzingen ](assets/console-side-panel-references-detail.png)
 
 Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties zijn aanvullende acties beschikbaar wanneer u een specifieke verwijzing selecteert, zoals:
 
-* **Binnenkomende koppelingen**, biedt een lijst met pagina&#39;s die naar de pagina verwijzen, samen met directe toegang tot **Bewerken** wanneer u een specifieke koppeling selecteert, wordt een van deze pagina&#39;s weergegeven.
+* **Binnenkomende Verbindingen**, verstrekt een lijst van pagina&#39;s die de pagina van verwijzingen voorzien, samen met directe toegang tot **geeft** één van die pagina&#39;s uit wanneer u een specifieke verbinding selecteert.
    * Dit kan alleen statische koppelingen weergeven, niet dynamisch gegenereerde koppelingen, zoals koppelingen uit de component List.
-* [Starten](/help/sites-cloud/authoring/launches/overview.md), biedt toegang tot verwante lanceringen
-* [Actieve kopieën](/help/sites-cloud/administering/msm/overview.md) Hiermee geeft u de paden weer van alle live kopieën die op de geselecteerde bron zijn gebaseerd.
-* [Blauwdruk](/help/sites-cloud/administering/msm/best-practices.md), geeft details en diverse acties
-* [Kopieën van talen](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), geeft details en diverse acties
+* [ Lanceringen ](/help/sites-cloud/authoring/launches/overview.md), verleent toegang tot verwante lanceringen
+* [ Levende Exemplaren ](/help/sites-cloud/administering/msm/overview.md) toont de wegen van alle levende exemplaren die op het geselecteerde middel gebaseerd zijn.
+* [ Vervaging ](/help/sites-cloud/administering/msm/best-practices.md), verstrekt details en diverse acties
+* [ Exemplaren van Talen ](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), verstrekt details en diverse acties
 
 ## Site {#site}
 
-De **Site** in het zijpaneel worden de details van de sites weergegeven [gemaakt met een sitesjabloon.](/help/sites-cloud/administering/site-creation/create-site.md)
+De **mening van de Plaats** van het zijpaneel toont details van plaatsen [ gecreeerd gebruikend een plaatsmalplaatje.](/help/sites-cloud/administering/site-creation/create-site.md)
 
-![Site, deelvenster](assets/console-side-panel-site-paenl.png)
+![ paneel van de Plaats ](assets/console-side-panel-site-paenl.png)
 
-Zie het document [Het Sitepaneel gebruiken om uw sitethema te beheren](/help/sites-cloud/administering/site-creation/site-rail.md) voor meer informatie over hoe u het deelvenster kunt gebruiken om het [thema van uw site.](/help/sites-cloud/administering/site-creation/site-themes.md).
+Zie het document [ Gebruikend het Comité van de Plaats om Uw Thema van de Plaats ](/help/sites-cloud/administering/site-creation/site-rail.md) voor meer details op te leiden hoe u het paneel kunt gebruiken om het [ thema van uw plaats te beheren.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 Als u nog niet de front-end pijpleiding hebt opstelling om op thema-gebaseerde plaats verwezenlijking toe te laten, zal het zijpaneel die optie aanbieden.
 
-![Optie om frontend pijpleiding in zijpaneel toe te laten](assets/sites-console-side-panel-site.png)
+![ Optie om front-end pijpleiding in zijpaneel toe te laten ](assets/sites-console-side-panel-site.png)
 
 >[!TIP]
 >
->Een end-to-end beschrijving van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in worden gevonden [Reis voor snel maken van site.](/help/journey-sites/quick-site/overview.md)
+>Een beschrijving van begin tot eind van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in de [ Snelle Reis van de Aanmaak van de Plaats worden gevonden.](/help/journey-sites/quick-site/overview.md)
 
 ## Filter {#filter}
 
-De **Filter** is vergelijkbaar met het deelvenster [zoekfunctie](/help/sites-cloud/authoring/search.md) terwijl de juiste locatiefilters al zijn ingesteld, kunt u de inhoud die u wilt bekijken verder filteren.
+Het **paneel van de Filter** is gelijkaardig aan de [ onderzoekseigenschap ](/help/sites-cloud/authoring/search.md) met de aangewezen reeds geplaatste plaatsingsfilters, toestaand u om de inhoud verder te filtreren u wilt bekijken.
 
-![Voorbeeld van filter](assets/console-side-panel-filter.png)
+![ Voorbeeld van de Filter ](assets/console-side-panel-filter.png)
 
-In tegenstelling tot andere weergaven van het zijpaneel kunt u naar een andere weergave schakelen door op de knop `X` in het zoekveld.
+In tegenstelling tot andere weergaven van het zijpaneel tikt u op een andere weergave of klikt u op `X` in het zoekveld.
 
 ## Analyses instellen {#setup-analytics}
 
 In deze weergave kunt u snel Adobe Analytics instellen voor een geselecteerde site.
 
-![Analyses instellen](assets/sites-console-side-panel-setup-analytics.png)
+![ Analytics van de Opstelling ](assets/sites-console-side-panel-setup-analytics.png)

@@ -1,5 +1,5 @@
 ---
-title: Inhoudsfragmenten - Overwegingen verwijderen (elementen - Inhoudsfragmenten)
+title: Inhoudsfragmenten - Overwegingen verwijderen (Assets - Inhoudsfragmenten)
 description: Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de implicaties van het verwijderen ervan moeten zorgvuldig worden overwogen.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments
@@ -22,25 +22,25 @@ De capaciteit om inhoud te schrappen is krachtig, maar potentieel gevoelig, met 
 
 Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud op twee niveaus worden overwogen:
 
-1. **Het inhoudsfragment als één entiteit.**
+1. **het Fragment van de Inhoud als één enkele entiteit.**
 
-   * **Hoofdletters gebruiken**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken - **en verwijder een volledig fragment**.
-   * **Machtigingen**: De machtiging Verwijderen kan worden toegewezen via gebruikers- en/of groepsbeheer. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **geval van het Gebruik**: Een gebruiker die een inhoudsfragment - **moet uitgeven/bijwerken en een volledig fragment** schrappen.
+   * **Toestemmingen**: De toestemming van de Schrapping kan door Gebruiker en/of het Beheer van de Groep worden toegewezen. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-2. **De meerdere subentiteiten waaruit een inhoudsfragment bestaat, bijvoorbeeld variaties, subknooppunten.**
+2. **de veelvoudige sub-entiteiten die omhoog een inhoudsfragment maken; bijvoorbeeld, variaties, sub-knopen.**
 
    De basiswerking van de inhoudfragment-editor vereist dat dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties, ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
-   * **Hoofdletters gebruiken**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken - **zonder dat een volledig fragment mag worden verwijderd**.
-   * **Machtigingen**: Zie [Machtigingen alleen vereist voor Editor-functionaliteit](#permissions-required-for-editor-functionality-only).
+   * **geval van het Gebruik**: Een gebruiker die een inhoudsfragment moet uitgeven/bijwerken - **zonder het worden toegestaan om een volledig fragment** te schrappen.
+   * **Toestemmingen**: Zie [ Toestemmingen die voor de Functionaliteit van de Redacteur slechts ](#permissions-required-for-editor-functionality-only) worden vereist.
 
 >[!NOTE]
 >
->Wanneer een gebruiker geen machtiging Verwijderen heeft, wordt de editor voor inhoudsfragmenten uitgevoerd in *alleen-lezen* -modus. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>Wanneer een gebruiker geen toestemmingen van de Schrapping heeft, werkt de redacteur van het Fragment van de Inhoud op *read-only* wijze. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
->Zie ook hoe te de Verrichtingen van het Beheer van de Gebruiker in AEM controleren. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
+>Zie ook Gebruikersbeheerbewerkingen in AEM controleren. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
 ## Machtigingen alleen vereist voor Editor-functionaliteit {#permissions-required-for-editor-functionality-only}
 
@@ -60,9 +60,9 @@ Bijvoorbeeld een map die alle inhoudsfragmenten bevat, zoals:
 
 >[!CAUTION]
 >
->Machtigingen instellen op `/content/dam` is ook mogelijk, omdat alle inhoudsfragmenten hier worden opgeslagen.
+>Het is ook mogelijk de machtigingen voor `/content/dam` in te stellen, aangezien alle inhoudsfragmenten hier worden opgeslagen.
 >
->Deze handeling past echter dezelfde verwijdermachtigingen toe op *alles* ook andere soorten activa.
+>Nochtans past deze actie de zelfde schrappingstoestemmingen op *alle* andere activa types eveneens toe.
 
 U kunt een inhoudsfragment alleen bewerken/bijwerken als een specifieke gebruiker en/of groep de volgende machtigingen heeft:
 
@@ -74,13 +74,13 @@ U kunt een inhoudsfragment alleen bewerken/bijwerken als een specifieke gebruike
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* Voor de `jcr:content`knooppunt van alle inhoudsfragmenten:
+* Voor de `jcr:content` knoop van alle Fragmenten van de Inhoud:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` en `jcr:removeChildNodes`
+   * `jcr:addChildNodes` , `jcr:modifyProperties` and `jcr:removeChildNodes`
 
-* Voor alle onderstaande knooppunten `jcr:content` van alle inhoudsfragmenten:
+* Voor alle knooppunten onder `jcr:content` van alle inhoudsfragmenten:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` en `jcr:removeChildNodes`, `jcr:removeNode`
+   * `jcr:addChildNodes` , `jcr:modifyProperties` and `jcr:removeChildNodes` , `jcr:removeNode`
 
 <!-- There is no CRXDE Lite -->
 

@@ -20,59 +20,59 @@ Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de init
 
 Het is handig om vooraf gedefinieerde structuren beschikbaar te hebben om snel een nieuwe site te implementeren op basis van een set bestaande standaarden. Sitesjablonen zijn een manier om basissite-inhoud te combineren tot een handig en herbruikbaar pakket.
 
-Sitesjablonen bevatten over het algemeen inhoud en structuur van de basissite en informatie over de siteopmaak, die bekend staat als de [site-thema;](site-themes.md) om snel aan de slag te gaan met een nieuwe site. Beheerders selecteren een sitesjabloon waarop ze de site willen baseren [tijdens het maken van de site.](create-site.md)
+De malplaatjes van de plaats bevatten over het algemeen inhoud en structuur van de basisplaats en plaats het stileren informatie, die als het [ plaatsthema wordt bekend, ](site-themes.md) om een nieuwe begonnen plaats snel te krijgen. De beheerders selecteren een plaatsmalplaatje waarop om de plaats [ tijdens het proces van de plaatsverwezenlijking te baseren.](create-site.md)
 
 Sjablonen zijn krachtig omdat ze opnieuw kunnen worden gebruikt en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
 
 >[!NOTE]
 >
->AEM sitesjablonen mogen niet worden verward met [paginasjablonen](/help/sites-cloud/authoring/sites-console/templates.md). Sitesjablonen definiëren de algehele structuur van een site. Een paginasjabloon definieert de structuur en initiële inhoud van een afzonderlijke pagina.
+>AEM plaatssjablonen zouden niet met [ paginasjablonen ](/help/sites-cloud/authoring/sites-console/templates.md) moeten worden verward. Sitesjablonen definiëren de algehele structuur van een site. Een paginasjabloon definieert de structuur en initiële inhoud van een afzonderlijke pagina.
 >
->AEM sitesjablonen mogen niet worden verward met [Sitethema&#39;s AEM](site-themes.md). AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. Met AEM sitesjablonen definieert u de sitestructuur en de initiële inhoud. Sjablonen bevatten een AEM sitethema dat het mogelijk maakt [snel site maken](create-site.md).
+>AEM plaatssjablonen zouden niet met [ AEM plaatsthema&#39;s ](site-themes.md) moeten worden verward. AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. AEM plaatssjablonen bepalen plaatsstructuur en aanvankelijke inhoud, en bevatten een AEM plaatsthema om voor [ snelle plaatsverwezenlijking ](create-site.md) toe te staan.
 
 ## Een sitesjabloon toevoegen aan AEM {#adding}
 
-U kunt meerdere sjablonen toevoegen aan AEM, die u vervolgens kunt gebruiken om [sites maken](create-site.md).
+U kunt veelvoudige malplaatjes aan AEM toevoegen, die dan kunnen worden gebruikt om plaatsen [ tot stand te brengen ](create-site.md).
 
 1. Onderteken in uw AEM ontwerpomgeving en navigeer naar de Sites-console
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Selecteren **Maken** rechtsboven in het scherm en in het keuzemenu selecteert u **Site van sjabloon**.
+1. Selecteer **creeer** bij het hoogste recht van het scherm en van het drop-down menu uitgezocht **Plaats van malplaatje**.
 
-   ![Een site maken op basis van een sjabloon](../assets/create-site-from-template.png)
+   ![ Creërend een plaats van een malplaatje ](../assets/create-site-from-template.png)
 
-1. Selecteer in de wizard Site maken de optie **Importeren** boven aan de linkerkolom.
+1. In de Create tovenaar van de Plaats, uitgezochte **Invoer** bij de bovenkant van de linkerkolom.
 
-   ![Wizard Site maken](../assets/site-creation-wizard.png)
+   ![ tovenaar van de creatie van de Plaats ](../assets/site-creation-wizard.png)
 
-1. Zoek in de bestandenbrowser de sjabloon die u wilt gebruiken en selecteer **Uploaden**.
+1. In dossierbrowser, bepaal de plaats van het malplaatje u **gebruiken en wilt selecteren uploadt**.
 
 1. Zodra het geüpload, verschijnt het in de lijst van beschikbare malplaatjes.
 
-Uw sjabloon is geüpload en kan worden gebruikt om [nieuwe sites maken](create-site.md).
+Uw malplaatje wordt geupload en kan worden gebruikt [ tot nieuwe plaatsen ](create-site.md) leiden.
 
 Als u een bestaande sjabloon selecteert, wordt informatie over de sjabloon in de rechterkolom weergegeven.
 
-![Een sjabloon selecteren](../assets/select-site-template.png)
+![ selecteer een malplaatje ](../assets/select-site-template.png)
 
 ## Sjabloonstructuur van site {#structure}
 
 Sitesjablonen zijn eenvoudig pakketten met een logische structuur die het doel van de pakketinhoud duidelijk weerspiegelt. Een sitesjabloon heeft de volgende structuur.
 
 * `files`: Map met de UI-kit, XD bestand en mogelijk andere bestanden
-* `previews`: Map met screenshots van de sitesjabloon
-* `site`: Inhoudspakket van de inhoud die wordt gekopieerd voor elke site die met deze sjabloon wordt gemaakt, zoals paginasjablonen, pagina&#39;s enzovoort.
-* `theme`: Bronnen van de [site-thema](site-themes.md) om de weergave van de site te wijzigen, zoals CSS, JavaScript, enzovoort.
+* `previews`: map met screenshots van de sitesjabloon
+* `site`: Inhoudspakket met de inhoud die wordt gekopieerd voor elke site die met deze sjabloon wordt gemaakt, zoals paginasjablonen, pagina&#39;s enzovoort.
+* `theme`: Bronnen van het [ plaatsthema ](site-themes.md) om te wijzigen hoe de plaats met inbegrip van CSS, JavaScript, etc. kijkt.
 
 ## Standaardsitesjabloon {#standard-site-template}
 
-Adobe biedt een referentiesjabloon voor best practices dat u kunt gebruiken als basis voor het maken van uw eigen sjablonen. [Het StandaardMalplaatje van de Plaats is beschikbaar op GitHub.](https://github.com/adobe/aem-site-template-standard)
+Adobe biedt een referentiesjabloon voor best practices dat u kunt gebruiken als basis voor het maken van uw eigen sjablonen. [ het StandaardMalplaatje van de Plaats is beschikbaar op GitHub.](https://github.com/adobe/aem-site-template-standard)
 
-[De meest recente versie van de standaardsitesjabloon](https://github.com/adobe/aem-site-template-standard/releases) kan worden gedownload en rechtstreeks worden gebruikt voor [nieuwe sites maken](create-site.md).
+[ De recentste versie van het StandaardMalplaatje van de Plaats ](https://github.com/adobe/aem-site-template-standard/releases) kan worden gedownload en direct voor [ worden gebruikt creërend nieuwe plaatsen ](create-site.md).
 
 ## Sitesjablonen ontwikkelen {#developing-templates}
 
 De Adobe verstrekt en AEM de Bouwer van het Malplaatje van de Plaats als reeks manuscripten voor het creëren van nieuwe plaatsmalplaatjes.
 
-[De Bouwer van het Malplaatje van de Plaats van de AEM is beschikbaar samen met gebruiksdocumentatie op GitHub](https://github.com/adobe/aem-site-template-builder). Voor het aanpassen van de [site-thema](site-themes.md) en AEM kennis van ontwikkelaars is vereist voor het aanpassen van de sitestructuur en -inhoud.
+[ de Bouwer van het Malplaatje van de Plaats van de AEM is beschikbaar samen met gebruiksdocumentatie op GitHub ](https://github.com/adobe/aem-site-template-builder). De voorste-eindontwikkelaarervaring wordt vereist voor het aanpassen van het [ plaatsthema ](site-themes.md) en AEM ontwikkelaarskennis wordt vereist voor het aanpassen van de plaatsstructuur en de inhoud.

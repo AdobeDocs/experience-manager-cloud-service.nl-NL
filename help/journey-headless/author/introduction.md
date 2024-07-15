@@ -14,14 +14,14 @@ ht-degree: 0%
 
 # Ontwerpen voor AEM als een headless CMS - Een inleiding {#author-headless-introduction}
 
-In dit deel van het [AEM Schrijverreis zonder kopinhoud](overview.md), kunt u de (basis)concepten en de terminologie leren noodzakelijk om auteursinhoud te begrijpen wanneer het gebruiken van Adobe Experience Manager (AEM) as a Cloud Service als Zwaardeloze CMS. Dit betekent dat u inhoud zonder kop moet structureren en maken.
+In dit deel van [ AEM de Reis van de Auteur van de Inhoud zonder Titel ](overview.md), kunt u de (basis) concepten en de terminologie noodzakelijk leren om auteursinhoud te begrijpen wanneer het gebruiken van Adobe Experience Manager (AEM) as a Cloud Service als Zwaartepunt CMS. Dit betekent dat u inhoud zonder kop moet structureren en maken.
 
 {{headless-trials-promotion}}
 
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doelstelling**: Introduceer de concepten en de terminologie relevant voor Headless Authoring.
+* **Doelstelling**: Introduceer de concepten en de terminologie relevant voor Schrijven zonder hoofd.
 
 ## Inhoudsbeheersysteem (CMS) {#content-management-system}
 
@@ -52,8 +52,8 @@ In de eerste plaats is AEM een contentbeheersysteem met een groot aantal functie
 Dit alles betekent dat het kan worden gebruikt als:
 
 * CMS zonder hoofd
-   * Voor headless, kan uw inhoud worden ontworpen zoals **Inhoudsfragmenten**.
-Dit zijn zelfstandige inhoudselementen die rechtstreeks door een waaier van toepassingen kunnen worden betreden, aangezien zij een vooraf bepaalde structuur hebben, die op wordt gebaseerd **Modellen van inhoudsfragmenten**.
+   * Voor headless, kan uw inhoud als **Fragments van de Inhoud** worden authored.
+Dit zijn met alle accomodatie punten van inhoud die rechtstreeks door een waaier van toepassingen kunnen worden betreden, aangezien zij een vooraf bepaalde structuur hebben, die op **Modellen van het Fragment van de Inhoud** wordt gebaseerd.
 Dit betekent dat uw inhoud een groot aantal apparaten kan bereiken, in een groot aantal indelingen en met een grote verscheidenheid aan functies.
 (Deze fragmenten kunnen desgewenst ook worden gebruikt bij het samenstellen van AEM webpagina&#39;s.)
 
@@ -64,11 +64,11 @@ Dit betekent dat uw inhoud een groot aantal apparaten kan bereiken, in een groot
 
 Dus contentmodellering (ook wel data modellering genoemd) is een andere technische term - waarom zou het jou als auteur interesseren?
 
-Voor toepassingen zonder titel hebt u een vooraf gedefinieerde structuur nodig om toegang te krijgen tot uw inhoud en er iets mee te kunnen doen. Het zou mogelijk zijn om uw inhoud als vrije vorm te hebben, maar het zou leven maken *zeer* ingewikkeld voor de toepassingen.
+Voor toepassingen zonder titel hebt u een vooraf gedefinieerde structuur nodig om toegang te krijgen tot uw inhoud en er iets mee te kunnen doen. Het zou mogelijk zijn om uw inhoud als vrij-vorm te hebben, maar het zou het leven *zeer* gecompliceerd voor de toepassingen maken.
 
 Het proces om de structuur voor uw inhoud te bepalen om aan te houden impliceert het ontwerpen van een model - en dit wordt genoemd gegevensmodellering.
 
-Voor AEM de rol van Content Architect (vaak een andere persoon) zal de gegevensmodellering uitvoeren om een reeks van **Modellen van inhoudsfragmenten** - dat u dan als basis voor uw inhoud gebruikt door **Inhoudsfragmenten**.
+Voor AEM de rol van de Architect van de Inhoud (vaak een verschillende persoon) zal de gegevens modelleren om een waaier van **Modellen van het Fragment van de Inhoud te ontwerpen** - dat u dan als basis voor uw inhoud gebruikt door **de Fragmenten van de Inhoud** te gebruiken.
 
 >[!NOTE]
 >
@@ -76,19 +76,19 @@ Voor AEM de rol van Content Architect (vaak een andere persoon) zal de gegevensm
 
 ## Volgende functies {#whats-next}
 
-Nu u de concepten en de terminologie hebt geleerd, is de volgende stap: [Leer de grondbeginselen van het ontwerpen van inhoudsfragmenten](basics.md). Dit zal de basisbehandeling van AEM samen met hoe te om de Fragments van de Inhoud introduceren.
+Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [ de grondbeginselen van het schrijven van de Fragmenten van de Inhoud ](basics.md) leren. Dit zal de basisbehandeling van AEM samen met hoe te om de Fragments van de Inhoud introduceren.
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
 
-* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
 * AEM Headless Developer Journey
    * [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
    * [Leer hoe u uw inhoud kunt modelleren](/help/journey-headless/developer/model-your-content.md)
 
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 
 * [Reis van architect zonder hoofdinhoud AEM](/help/journey-headless/architect/overview.md)
 

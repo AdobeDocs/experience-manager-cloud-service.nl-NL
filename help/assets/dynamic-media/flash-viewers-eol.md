@@ -16,4 +16,4 @@ ht-degree: 0%
 
 Vanaf 31 januari 2017 is de ondersteuning voor het Flash viewer Platform officieel levenseinde.
 
-Zie de [Referentiehandleiding voor Dynamic Media Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) voor de meest recente ondersteunde viewers.
+Zie de [ Gids van de Verwijzing van de Kijkers van Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) voor de recentste gesteunde kijkers.

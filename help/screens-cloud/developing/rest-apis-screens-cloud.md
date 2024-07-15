@@ -1,6 +1,6 @@
 ---
 title: REST API's
-description: Schermen as a Cloud Service bieden een eenvoudige RESTful-API die voldoet aan de Sirenespecificatie. Volg deze pagina om te leren hoe u door de inhoudsstructuur kunt navigeren en opdrachten naar apparaten in de omgeving kunt verzenden.
+description: Screens as a Cloud Service biedt een eenvoudige RESTful-API die voldoet aan de Sirenespecificatie. Volg deze pagina om te leren hoe u door de inhoudsstructuur kunt navigeren en opdrachten naar apparaten in de omgeving kunt verzenden.
 exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
 feature: Developing Screens
 role: Admin, Developer
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # REST API&#39;s {#rest-apis}
 
-AEM Screens biedt een eenvoudige RESTful-API die volgt op de [Siren](https://github.com/kevinswiber/siren) specificatie. Het staat toe om de inhoudsstructuur te navigeren en bevelen naar apparaten in het milieu te verzenden.
+AEM Screens verstrekt een eenvoudige RESTful API die de [ 1} specificatie van de Trekken {volgt. ](https://github.com/kevinswiber/siren) Het staat toe om de inhoudsstructuur te navigeren en bevelen naar apparaten in het milieu te verzenden.
 
-De API is toegankelijk via [*http://localhost:4502/api/screens.json*](http://localhost:4502/api/screens.json).
+API is toegankelijk in [*http://localhost:4502/api/screens.json* ](http://localhost:4502/api/screens.json).
 
 ## Navigeren door de inhoudsstructuur {#navigating-content-structure}
 
@@ -99,7 +99,7 @@ Host: http://localhost:4502
 
 JSON die door de API vraag is teruggekeerd kan een lijst van acties bevatten die op het middel beschikbaar zijn.
 
-In de weergave wordt bijvoorbeeld een *uitzenden, opdracht* actie die toestaat om een bevel naar alle apparaten te verzenden die aan die vertoning worden toegewezen.
+De vertoning, bijvoorbeeld, maakt een lijst van a *uitzending-bevel* actie die toestaat om een bevel naar alle apparaten te verzenden die aan die vertoning worden toegewezen.
 
 ```xml
 GET /api/screens/content/screens/we-retail/locations/demo/flagship/single.json HTTP/1.1
@@ -112,7 +112,7 @@ Of met krullen:
 curl -u admin:admin http://localhost:4502/api/screens/content/screens/we-retail/locations/demo/flagship/single.json
 ```
 
-***Resultaat***
+***Resultaat:***
 
 ```xml
 {

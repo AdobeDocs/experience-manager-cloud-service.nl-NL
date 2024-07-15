@@ -24,15 +24,15 @@ Met het gereedschap AEM Snel site maken kunnen niet-ontwikkelaars snel een gehee
 
 Nadat u de site hebt gemaakt, kunt u met het gereedschap Snel site maken het thema en de opmaak van de AEM site (JavaScript, CSS en statische bronnen) snel aanpassen. Hierdoor kan de front-end ontwikkelaar, die geen kennis van AEM nodig heeft, onafhankelijk van en parallel met de makers van de inhoud werken. De AEM beheerder downloadt eenvoudig het plaatsthema en verstrekt het aan de front-end ontwikkelaar die het gebruikend hun favoriete hulpmiddelen aanpast en dan de veranderingen in de AEM codebewaarplaats vastlegt, die dan wordt opgesteld.
 
-Dit document richt zich op het maken van sites met het gereedschap Snel site maken. Als u een overzicht wilt van het maken en aanpassen van de site, raadpleegt u [Reis voor snel maken van site AEM](/help/journey-sites/quick-site/overview.md)
+Dit document richt zich op het maken van sites met het gereedschap Snel site maken. Als u een overzicht van het de plaatsverwezenlijking en aanpassingswerkschema zou willen, zie [ AEM Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md)
 
 ## Sitestructuur plannen {#structure}
 
-Neem de tijd om ruim van tevoren rekening te houden met het doel en de geplande inhoud van uw site. Zo kunt u de structuur van de site ontwerpen. Een goede sitestructuur ondersteunt eenvoudige navigatie en het detecteren van inhoud voor bezoekers van uw site en ondersteunt diverse AEM, zoals [multisite beheer en vertaling](/help/sites-cloud/administering/msm-and-translation.md).
+Neem de tijd om ruim van tevoren rekening te houden met het doel en de geplande inhoud van uw site. Zo kunt u de structuur van de site ontwerpen. Een goede plaatsstructuur steunt gemakkelijke navigatie en inhoudsontdekking voor uw plaatsbezoekers en steunt diverse AEM eigenschappen zoals [ beheer en vertaling van meerdere plaatsen ](/help/sites-cloud/administering/msm-and-translation.md).
 
 >[!TIP]
 >
->[De WKND-referentiesite](https://wknd.site) biedt een implementatie van best practices voor een volledig functionele website voor buitenshuis ervaren merken. Ontdek het om te zien hoe een goed gebouwde AEM site gestructureerd is.
+>[ de WKND verwijzingsplaats ](https://wknd.site) verstrekt een best-praktijkimplementatie van een volledig functionele buitenervaringswebsite. Ontdek het om te zien hoe een goed gebouwde AEM site gestructureerd is.
 
 ## Sitesjablonen {#site-templates}
 
@@ -42,7 +42,7 @@ Sitesjablonen bevatten over het algemeen inhoud en structuur van de basissite en
 
 >[!TIP]
 >
->Voor meer informatie over sitesjablonen raadpleegt u [Sitesjablonen](site-templates.md).
+>Voor verder detail op plaatsmalplaatjes, zie {de Malplaatjes van 0} Plaats ](site-templates.md).[
 
 >[!NOTE]
 >
@@ -56,39 +56,39 @@ Het is eenvoudig om een site te maken met een sjabloon.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Selecteren **Maken** rechtsboven in het scherm en in het keuzemenu selecteert u **Site van sjabloon**.
+1. Selecteer **creeer** bij het hoogste recht van het scherm en van het drop-down menu uitgezocht **Plaats van malplaatje**.
 
-   ![Een site maken op basis van een sjabloon](../assets/create-site-from-template.png)
+   ![ Creërend een plaats van een malplaatje ](../assets/create-site-from-template.png)
 
-1. Selecteer in de wizard Site maken een bestaande sjabloon in het linkerdeelvenster of in **Importeren** boven aan de linkerkolom om een nieuwe sjabloon te importeren.
+1. In de Create tovenaar van de Plaats, selecteer een bestaand malplaatje in het linkerpaneel of op **de Invoer** bij de bovenkant van de linkerkolom om een nieuw malplaatje in te voeren.
 
-   ![Wizard Site maken](../assets/site-creation-wizard.png)
+   ![ tovenaar van de creatie van de Plaats ](../assets/site-creation-wizard.png)
 
-   1. Als u ervoor kiest om in de bestandenbrowser de sjabloon te importeren die u wilt gebruiken en selecteert u **Uploaden**.
+   1. Als u verkoos om, in dossierbrowser in te voeren, bepaal de plaats van het malplaatje u **gebruiken en wilt selecteren uploadt**.
 
    1. Zodra het geüpload, verschijnt het in de lijst van beschikbare malplaatjes.
 
-1. Als u een sjabloon selecteert, wordt informatie over de sjabloon in de rechterkolom weergegeven. Selecteer de gewenste sjabloon en selecteer **Volgende**.
+1. Als u een sjabloon selecteert, wordt informatie over de sjabloon in de rechterkolom weergegeven. Met uw gewenste geselecteerde malplaatje, uitgezochte **Volgende**.
 
-   ![Een sjabloon selecteren](../assets/select-site-template.png)
+   ![ selecteer een malplaatje ](../assets/select-site-template.png)
 
 1. Geef een titel op voor uw site. U kunt een sitenaam opgeven of genereren op basis van de titel als u deze weglaat.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
-   * De sitenaam moet voldoen aan [Naamconventies voor pagina&#39;s AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
+   * De plaatsnaam moet [ AEM pagina het noemen overeenkomsten ](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices) naleven.
 
-1. Selecteren **Maken** en de site wordt gemaakt van de sitesjabloon.
+1. Selecteer **creeer** en de plaats wordt gecreeerd van het plaatssjabloon.
 
-   ![Details van de nieuwe site](../assets/create-site-details.png)
+   ![ Details van de nieuwe plaats ](../assets/create-site-details.png)
 
-1. Selecteer in het bevestigingsvenster dat wordt weergegeven **Gereed**.
+1. In de bevestigingsdialoog die verschijnt, uitgezocht **Gedaan**.
 
-   ![Dialoogvenster Succes](../assets/success.png)
+   ![ de dialoog van het Succes ](../assets/success.png)
 
 1. In de plaatsenconsole, is de nieuwe plaats zichtbaar en kan worden genavigeerd om zijn basisstructuur te onderzoeken zoals die door het malplaatje wordt bepaald.
 
-   ![Nieuwe sitestructuur](../assets/new-site.png)
+   ![ Nieuwe plaatsstructuur ](../assets/new-site.png)
 
 Inhoudsauteurs kunnen nu beginnen met ontwerpen!
 
@@ -96,8 +96,8 @@ Inhoudsauteurs kunnen nu beginnen met ontwerpen!
 
 Als voor uw site aanpassingen nodig zijn die verder gaan dan de sjablonen die beschikbaar zijn, hebt u verschillende opties.
 
-* Als de sitestructuur of initiële inhoud moet worden aangepast, [de sitesjabloon kan aan uw vereisten worden aangepast](site-templates.md).
-* Als de sitestijl moet worden aangepast, [het site-thema kan worden gedownload en aangepast](/help/journey-sites/quick-site/overview.md).
-* Als de functionaliteit van de site moet worden aangepast, [de site kan volledig worden aangepast](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* Als de plaatsstructuur of de aanvankelijke inhoud moet worden aangepast, [ kan het plaatsmalplaatje worden aangepast om aan uw vereisten ](site-templates.md) te voldoen.
+* Als de plaats het stileren moet worden aangepast, [ kan het plaatsthema worden gedownload en worden aangepast ](/help/journey-sites/quick-site/overview.md).
+* Als de plaatsfunctionaliteit moet worden aangepast, [ kan de plaats volledig worden aangepast ](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Elke aanpassing moet plaatsvinden met de steun van een ontwikkelingsteam.

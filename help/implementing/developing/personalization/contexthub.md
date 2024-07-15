@@ -13,39 +13,39 @@ ht-degree: 0%
 
 # ContextHub {#contexthub}
 
-ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. De belangrijkste functie is de mogelijkheid om [contextgegevens weergeven tijdens het simuleren en schakelen tussen verschillende personen](/help/sites-cloud/authoring/personalization/contexthub.md).
+ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. Zijn primaire eigenschap biedt de capaciteit aan [ contextgegevens te bekijken terwijl het simuleren van en het schakelen tussen diverse karakters ](/help/sites-cloud/authoring/personalization/contexthub.md).
 
 ContextHub die u toestaat:
 
-* [Presenteren, weergeven, schakelen tussen personen en simuleren van gebruikerservaring](#presentation) tijdens het ontwerpen van pagina&#39;s met contextgegevens.
-* [Contextgegevens behouden](#persistence) op uw website als een representatie van een gegevenslaag.
-* [Segmenten beheren](#segmentation) voor de geselecteerde context.
+* [ Aanwezige, mening, schakelaarpersoonlijkheden, en simuleer gebruikerservaring ](#presentation) terwijl het ontwerpen van pagina&#39;s gebruikend contextgegevens.
+* [ zet contextgegevens ](#persistence) op uw website als vertegenwoordiging van de gegevenslaag voort.
+* [ beheert segmenten ](#segmentation) voor de geselecteerde context.
 
 Met de client-side JavaScript API hebt u toegang tot de gegevens voor het aanpassen van inhoud.
 
 ## Presentatie {#presentation}
 
-De [ContextHub-werkbalk](/help/sites-cloud/authoring/personalization/contexthub.md) stelt marketers en auteurs in staat om opslaggegevens te bekijken en te manipuleren om de gebruikerservaring bij het ontwerpen van pagina&#39;s te simuleren. De werkbalk bestaat uit groepen UI-modules die toegang bieden tot [ContextHub-winkels,](#persistence) die gegevens ContextHub over de cliënt voortzetten.
+De [ toolbar ContextHub ](/help/sites-cloud/authoring/personalization/contexthub.md) laat tellers en auteurs toe om opslaggegevens te zien en te manipuleren voor het simuleren van de gebruikerservaring wanneer het ontwerpen van pagina&#39;s. De toolbar bestaat uit groepen modules UI die toegang tot [ opslag ContextHub verlenen, ](#persistence) die gegevens ContextHub over de cliënt voortzetten.
 
 Elke module ContextHub UI is een geval van een vooraf bepaald moduletype:
 
-* ContextHub biedt verschillende [voorbeeldmoduletypen](sample-modules.md).
-* Consoles AEM gebruiken voor [UI-modules toevoegen](configuring-contexthub.md#adding-a-ui-module), en [groeperen hen in wijzen UI](configuring-contexthub.md#adding-a-ui-mode).
-* Ontwikkelaars kunnen [aangepaste moduletypen maken](extending-contexthub.md#creating-contexthub-ui-module-types).
+* ContextHub verstrekt verscheidene [ types van steekproefmodule ](sample-modules.md).
+* Het gebruik AEM consoles aan [ voegt modules UI ](configuring-contexthub.md#adding-a-ui-module) toe, en aan [ groepeert hen in wijzen UI ](configuring-contexthub.md#adding-a-ui-mode).
+* De ontwikkelaars kunnen [ de types van douanemodule ](extending-contexthub.md#creating-contexthub-ui-module-types) tot stand brengen.
 
-Ontwikkelaars moeten [Voeg de component ContextHub aan de pagina toe](configuring-contexthub.md).
+De ontwikkelaars moeten [ de component ContextHub aan de pagina ](configuring-contexthub.md) toevoegen.
 
 ## Persistentie {#persistence}
 
-De opslag ContextHub handhaaft contextgegevens over de cliënt. Met de JavaScript-API van ContextHub hebt u toegang tot opslagruimten om gegevens te maken, bij te werken en te verwijderen. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina&#39;s.
+De opslag ContextHub handhaaft contextgegevens over de cliënt. De API van ContextHub JavaScript laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina&#39;s.
 
 Elke opslag ContextHub is een geval van een vooraf bepaald opslagtype:
 
-* ContextHub biedt verschillende [voorbeeldwinkeltypen](sample-stores.md).
-* Consoles AEM gebruiken voor [opslaan maken](configuring-contexthub.md#creating-a-contexthub-store).
-* Ontwikkelaars kunnen [aangepaste winkeltypen maken](extending-contexthub.md#creating-custom-store-candidates).
-* Ontwikkelaars kunnen [toegang opslaggegevens](adding-contexthub.md#interacting-with-contexthub-stores) in JavaScript.
+* ContextHub verstrekt verscheidene [ types van steekproefopslag ](sample-stores.md).
+* Het gebruik AEM consoles aan [ creeert opslag ](configuring-contexthub.md#creating-a-contexthub-store).
+* De ontwikkelaars kunnen [ tot de types van douaneopslag ](extending-contexthub.md#creating-custom-store-candidates) leiden.
+* De ontwikkelaars kunnen [ tot opslaggegevens ](adding-contexthub.md#interacting-with-contexthub-stores) als JavaScript toegang hebben.
 
 ## Segmentering {#segmentation}
 
-ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt de JavaScript-API gebruiken om [omgezette segmenten bepalen](adding-contexthub.md#determining-resolved-contexthub-segments).
+ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt JavaScript API gebruiken om [ bepaalde opgeloste segmenten ](adding-contexthub.md#determining-resolved-contexthub-segments) te bepalen.

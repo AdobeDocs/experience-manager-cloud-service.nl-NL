@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bevoegdheidsoverwegingen voor inhoud zonder kop
 
-Met een implementatie zonder kop zijn er verschillende gebieden met beveiliging en machtigingen die moeten worden aangepakt. Machtigingen en personen kunnen globaal worden overwogen op basis van de AEM omgeving **Auteur** of **Publiceren**. Elke omgeving bevat verschillende personen en met verschillende behoeften.
+Met een implementatie zonder kop zijn er verschillende gebieden met beveiliging en machtigingen die moeten worden aangepakt. De toestemmingen en de personen kunnen globaal worden overwogen gebaseerd op het AEM milieu **Auteur** of **Publish**. Elke omgeving bevat verschillende personen en met verschillende behoeften.
 
 ## Overwegingen bij de auteurservice
 
@@ -23,13 +23,13 @@ In de service Auteur kunnen interne gebruikers inhoud maken, beheren en publicer
 
 Als beste praktijken, zouden de toestemmingen op Groepen in AEM moeten worden geplaatst. Deze groepen, die ook als lokale groepen worden bekend, kunnen binnen het AEM auteursmilieu worden beheerd.
 
-De eenvoudigste manier om groepslidmaatschap te beheren is om Adobe Identity Management System (IMS)-groepen te gebruiken en toe te wijzen [IMS-groepen naar lokale AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem).
+De gemakkelijkste manier om groepslidmaatschap te beheren is de groepen van het Systeem van Identity Management van de Adobe (IMS) te gebruiken en [ groepen IMS aan lokale AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem) toe te wijzen.
 
-![Toestemmingsstroom beheerconsole](assets/admin-console-aem-group-permissions.png)
+![ stroom van de de consoletoestemming Admin ](assets/admin-console-aem-group-permissions.png)
 
 Op hoog niveau is het proces:
 
-1. IMS-gebruikers toevoegen aan een nieuwe of bestaande IMS-gebruikersgroep met de opdracht [Admin Console](https://adminconsole.adobe.com/)
+1. Voeg Gebruikers IMS aan een nieuwe of bestaande IMS Gebruikersgroep toe gebruikend de [ Admin Console ](https://adminconsole.adobe.com/)
 1. IMS-groepen worden gesynchroniseerd met AEM wanneer gebruikers zich aanmelden.
 1. Wijs IMS-groepen toe aan AEM groepen.
 1. Machtigingen instellen voor AEM groepen.
@@ -37,29 +37,29 @@ Op hoog niveau is het proces:
 
 >[!TIP]
 >
-> Een gedetailleerde videoanalyse van het beheren van IMS en AEM gebruikers en groepen is te vinden [hier](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html).
+> Een gedetailleerde videoanalyse van het beheren van IMS en AEM gebruikers en groepen kan [ hier ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html) worden gevonden.
 
-Om te beheren **groepen** in AEM, navigeer naar **Gereedschappen** > **Beveiliging** > **Groepen**.
+Om **groepen** in AEM te beheren, navigeer aan **Hulpmiddelen** > **Veiligheid** > **Groepen**.
 
-Navigeer naar om machtigingen van groepen in AEM te beheren **Gereedschappen** > **Beveiliging** > **Machtigingen**.
+Om toestemmingen van groepen in AEM te beheren, navigeer aan **Hulpmiddelen** > **Veiligheid** > **Toestemmingen**.
 
 ### DAM-gebruikers
 
-&quot;DAM&quot; staat in dit verband voor Digital Asset Management. De **DAM-gebruikers** is een out van de kadergroep in AEM die voor &quot;alledaagse&quot;gebruikers kan worden gebruikt die digitale activa en de Fragments van de Inhoud beheren. Deze groep biedt machtigingen voor **weergave**, **toevoegen**, **update**, **delete**, en **publish** Content Fragments en alle andere bestanden in AEM Assets.
+&quot;DAM&quot; staat in dit verband voor Digital Asset Management. De **Gebruikers DAM** is een uit de doosgroep in AEM die voor &quot;alledaagse&quot;gebruikers kan worden gebruikt die digitale activa en de Fragmenten van de Inhoud beheren. Deze groep verstrekt toestemmingen aan **mening**, **** toevoegen, **update**, **schrapt**, en **publiceert** de Fragmenten van de Inhoud en alle andere dossiers in AEM Assets.
 
-Als u IMS gebruikt voor groepslidmaatschap, voegt u de juiste IMS-groepen toe als leden van de **DAM-gebruikers** groep. Leden van de IMS-groep nemen de machtigingen van de groep DAM-gebruikers over wanneer ze zich aanmelden bij de AEM.
+Als het gebruiken van IMS voor groepslidmaatschap, voeg de aangewezen groepen IMS als leden van de **DAM Gebruikers** groep toe. Leden van de IMS-groep nemen de machtigingen van de groep DAM-gebruikers over wanneer ze zich aanmelden bij de AEM.
 
 #### DAM-gebruikersgroep aanpassen
 
-Het is beter om toestemmingen van een uit de bakgroep direct niet te wijzigen. In plaats daarvan kunt u ook uw eigen groep(en) maken die na de **DAM-gebruikers** groepsmachtigingen en beperken de toegang tot verschillende **mappen** in AEM Assets.
+Het is beter om toestemmingen van een uit de bakgroep direct niet te wijzigen. In plaats daarvan, kunt u uw eigen groep(en) ook tot stand brengen die na de **DAM gebruikers** groepstoestemmingen wordt gemodelleerd en toegang tot verschillende **omslagen** binnen AEM Assets verder beperken.
 
-Voor meer granulaire machtigingen gebruikt u de optie **Machtigingen** console in AEM en werk het pad bij vanuit `/content/dam` naar een meer specifiek pad, dat wil zeggen: `/content/dam/mycontentfragments`.
+Voor meer korrelige toestemmingen gebruikt de **console van Toestemmingen** in AEM en werkt de weg van `/content/dam` aan een specifieker weg bij, namelijk `/content/dam/mycontentfragments`.
 
-Het kan wenselijk zijn om deze groep gebruikers toestemmingen te geven om inhoudsfragmenten tot stand te brengen en uit te geven maar niet te schrappen. Zie voor het controleren en toewijzen van machtigingen voor bewerken, maar niet verwijderen [Inhoudsfragmenten - Overwegingen verwijderen](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
+Het kan wenselijk zijn om deze groep gebruikers toestemmingen te geven om inhoudsfragmenten tot stand te brengen en uit te geven maar niet te schrappen. Om toestemmingen voor uit te geven te herzien en toe te wijzen, maar niet te schrappen zie [ de Fragmenten van de Inhoud - de Overwegingen van de Schrapping ](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 ### Modeleditors
 
-De mogelijkheid om te wijzigen **Modellen van inhoudsfragmenten** moet worden overgelaten aan beheerders of een **kleine groep** van gebruikers met verhoogde toestemmingen. Als u het model van het inhoudsfragment wijzigt, heeft dit veel downstreameffecten.
+De capaciteit om **Modellen van het Fragment van de Inhoud te wijzigen** zou aan beheerders of a **kleine groep** van gebruikers met opgeheven toestemmingen moeten worden verlaten. Als u het model van het inhoudsfragment wijzigt, heeft dit veel downstreameffecten.
 
 >[!CAUTION]
 >
@@ -80,9 +80,9 @@ Standaard is inhoud die via de GraphQL-eindpunten van AEM Publish-service wordt 
 
 ### Machtigingen voor inhoud
 
-Inhoud die via AEM GraphQL API&#39;s beschikbaar wordt gemaakt, kan worden beperkt met [Gesloten gebruikersgroepen (CUG&#39;s)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) Stel deze in op mappen met elementen, waarin wordt aangegeven welke AEM Gebruikersgroepen (en hun leden) toegang hebben tot de inhoud van de mappen Middelen.
+Inhoud die via AEM GraphQL APIs wordt blootgesteld kan worden beperkt gebruikend [ Gesloten Groepen van de Gebruiker (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) geplaatst op activa omslagen, die specificeren welke AEM Gebruikersgroepen (en hun leden) tot de inhoud van de omslagen van Assets kunnen toegang hebben.
 
-CUG&#39;s met middelen werken op:
+Assets CUG&#39;s werken door:
 
 * Eerst, ontken al toegang tot de omslag en subfolders
 * Dan, die leestoegang tot de omslag en subfolders voor alle AEM Gebruikersgroepen verlenen die in de lijst van KUGs worden vermeld
@@ -91,11 +91,11 @@ CUG&#39;s kunnen worden ingesteld in middelenmappen die inhoud bevatten die via 
 
 #### Het verificatieschema selecteren{#publish-permissions-users}
 
-De [AEM headless SDK](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) ondersteunt twee typen verificatie:
+[ AEM Koploze SDK ](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) steunt twee types van authentificatie:
 
-* [Op token gebaseerde verificatie](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) het gebruiken van de dienstgeloofsbrieven verbindend aan één enkele technische rekening.
+* [ Symbolische gebaseerde authentificatie ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) die de dienstgeloofsbrieven gebruiken die aan één enkele technische rekening worden gebonden.
 * Standaardverificatie met AEM gebruikers.
 
 ### De GraphQL API openen
 
-HTTP-aanvragen die de [juiste verificatiereferenties](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) op de GraphQL API-eindpunten van de AEM Publish-service vindt u inhoud die de referenties mogen lezen en die anoniem toegankelijk is. Andere gebruikers van de GraphQL API kunnen de inhoud in de door CUG&#39;s beveiligde mappen niet lezen.
+De verzoeken van HTTP die de [ aangewezen authentificatiegeloofsbrieven ](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) verstrekken aan de eindpunten van GraphQL API van de dienst van AEM Publish omvatten inhoud de geloofsbrieven worden gemachtigd om te lezen, en anonymously toegankelijke inhoud. Andere gebruikers van de GraphQL API kunnen de inhoud in de door CUG&#39;s beveiligde mappen niet lezen.

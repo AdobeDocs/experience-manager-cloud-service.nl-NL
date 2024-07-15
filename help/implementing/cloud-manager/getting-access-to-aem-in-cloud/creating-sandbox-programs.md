@@ -1,6 +1,6 @@
 ---
 title: Sandbox-programma's maken
-description: Leer hoe u Cloud Manager gebruikt om uw eigen sandboxprogramma te maken voor training, demo, POC of andere niet-productiedoeleinden.
+description: Leer hoe u Cloud Manager kunt gebruiken om uw eigen sandboxprogramma te maken voor training, demo, POC of andere niet-productiedoeleinden.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -16,62 +16,62 @@ ht-degree: 0%
 
 Een zandbakprogramma wordt typisch gecreeerd om ten behoeve van opleiding, lopende demo&#39;s, enablement, POCs, of documentatie te dienen en is niet bedoeld om levend verkeer te vervoeren.
 
-Meer informatie over programmatypen in het document [Het begrip van Programma en Programma Types.](program-types.md)
+Leer meer over programmatypes in het document [ Begrijpend Programma en de Types van Programma.](program-types.md)
 
 ## Een Sandbox-programma maken {#create}
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logon aan Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tikken of klikken **Programma toevoegen** in de rechterbovenhoek van het scherm.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, tikt of klikt **Programma** dichtbij de hoger-juiste hoek van het scherm toevoegen.
 
-   ![Openingspagina van Cloud Manager](assets/log-in.png)
+   ![ Cloud Manager landende pagina ](assets/log-in.png)
 
-1. Selecteer in de wizard Programma maken de optie **Een sandbox instellen** en geef een programmanaam op.
+1. Van creeer programmatovenaar, selecteer **Opstelling een zandbak**, en verstrek een programmanaam.
 
-   ![Programma-type maken](assets/create-sandbox.png)
+   ![ de typeverwezenlijking van het Programma ](assets/create-sandbox.png)
 
-1. U kunt desgewenst een afbeelding aan het programma toevoegen door een afbeeldingsbestand naar het **Een programmaafbeelding toevoegen** Selecteer een afbeelding in een bestandenbrowser of klik erop. Selecteren **Doorgaan**.
+1. Naar keuze, kunt u een beeld aan het programma toevoegen door een beelddossier aan **te slepen en te laten vallen voeg een doel van het programmabeeld** toe of klikkend het om een beeld van een dossierbrowser te selecteren. Selecteer **verdergaan**.
 
    * De afbeelding fungeert alleen als de tegel in het venster met het programmaoverzicht en helpt het programma te identificeren.
 
-1. In de **Sandbox instellen** kiest u welke oplossingen u wilt inschakelen in uw sandboxprogramma door de opties in het dialoogvenster **Oplossingen en invoegtoepassingen** tabel.
+1. In de **Opstelling uw zandbak** dialoogdoos, kies welke oplossingen u in uw zandbakprogramma wilt toelaten door de opties in de **Oplossingen &amp; toe:voegen-ons** lijst te controleren.
 
    * Gebruik de chevrons naast de oplossingsnamen zodat kunt u extra, facultatieve toe:voegen-ons voor de oplossingen zien.
 
-   * De **Sites** en **Activa** -oplossingen worden altijd opgenomen in sandboxprogramma&#39;s en kunnen niet worden uitgeschakeld.
+   * De **Plaatsen** en **Assets** oplossingen zijn altijd inbegrepen in zandbakprogramma&#39;s en kunnen niet worden gedeselecteerd.
 
-   ![Oplossingen en invoegtoepassingen selecteren voor een sandbox](assets/sandbox-solutions-add-ons.png)
+   ![ Uitgezochte oplossingen en toe:voegen-ons voor een zandbak ](assets/sandbox-solutions-add-ons.png)
 
-1. Als u de oplossingen en invoegtoepassingen voor uw sandboxprogramma hebt geselecteerd, klikt u op **Maken**.
+1. Zodra u de oplossingen en toe:voegen-ons voor uw zandbakprogramma hebt geselecteerd, creeert de klik ****.
 
 U ziet een nieuwe zandbakprogrammakaart op de landingspagina met een statusindicator aangezien het opstellingsproces vordert.
 
-![Sandbox-ontwerp van overzichtspagina](assets/sandbox-setup.png)
+![ zandbak verwezenlijking van overzichtspagina ](assets/sandbox-setup.png)
 
 ## Toegang tot sandbox {#access}
 
 U kunt de details van uw zandbakopstelling bekijken en tot het milieu (zodra beschikbaar) toegang hebben door de pagina van het programmaoverzicht te bekijken.
 
-1. Klik op de landingspagina van Cloud Manager op de knop voor weglatingen in het gemaakte programma.
+1. Klik op de openingspagina van Cloud Manager op de knop voor ovaal in het gemaakte programma.
 
-   ![Overzicht van programma openen](assets/program-overview-sandbox.png)
+   ![ Toegang tot programma overzicht ](assets/program-overview-sandbox.png)
 
-1. Nadat de stap voor het maken van het project is voltooid, hebt u toegang tot de **Repo-info openen** om uw git-repo te kunnen gebruiken.
+1. Nadat de stap van de projectverwezenlijking voltooit, kunt u tot de **verbinding van Info van de Reparatie van de Toegang** toegang hebben om uw git repo te kunnen gebruiken.
 
-   ![Programmaconfiguratie](assets/create-program4.png)
+   ![ configuratie van het Programma ](assets/create-program4.png)
 
    >[!TIP]
    >
-   >Ga voor meer informatie over toegang tot en beheer van uw it-opslagplaats naar [Toegang tot it](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+   >Meer leren over de toegang tot van en het beheren van uw git bewaarplaats, zie [ Toegang hebbend tot Git ](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-1. Als de ontwikkelomgeving eenmaal is gemaakt, kunt u de **AEM** koppeling om u aan te melden AEM.
+1. Zodra het ontwikkelmilieu wordt gecreeerd, kunt u de **AEM van de Toegang** verbinding gebruiken om in AEM te ondertekenen.
 
-   ![Toegang AEM koppeling](assets/create-program5.png)
+   ![ Toegang AEM verbinding ](assets/create-program5.png)
 
 1. Zodra de niet productiepijplijn die aan ontwikkeling opstelt volledig is, leidt de tovenaar in vraag-aan-actie u om of tot de AEM ontwikkelomgeving toegang te hebben of code aan ontwikkelomgeving op te stellen.
 
-   ![Sandbox implementeren](assets/create-program-setup-deploy.png)
+   ![ die zandbak ](assets/create-program-setup-deploy.png) opstelt
 
 >[!TIP]
 >
->Zie het document [Navigeren door de interface van Cloud Manager](/help/implementing/cloud-manager/navigation.md) voor meer informatie over het navigeren door Cloud Manager en het begrijpen van de **Mijn programma&#39;s** console.
+>Gelieve te zien het document [ Navigerend Cloud Manager UI ](/help/implementing/cloud-manager/navigation.md) voor details op hoe te Cloud Manager navigeren en het begrijpen van de **Mijn console van Programma&#39;s**.

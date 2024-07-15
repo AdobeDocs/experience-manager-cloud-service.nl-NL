@@ -1,6 +1,6 @@
 ---
-title: Dispatcher Configurations in as a Cloud Service schermen
-description: Op deze pagina worden de configuraties van Dispatcher in as a Cloud Service schermen beschreven.
+title: Dispatcher Configurations in Screens as a Cloud Service
+description: Op deze pagina worden Dispatcher Configurations in Screens as a Cloud Service beschreven.
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
 feature: Administering Screens
 role: Admin, Developer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Dispatcher Configurations in as a Cloud Service schermen {#dispatcher-configurations-screens-cloud}
+# Dispatcher Configurations in Screens as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
-In deze sectie worden de configuraties van de verzender voor as a Cloud Service schermen beschreven.
+In deze sectie worden de configuraties van de verzender voor Screens as a Cloud Service beschreven.
 
-## Filters en cacheregels toevoegen in Dispatcher voor as a Cloud Service schermimplementatie {#deployment}
+## Filters en cacheregels toevoegen in Dispatcher voor as a Cloud Service Screens-implementatie {#deployment}
 
-De volgende filters en cachemels in verzenders toestaan voor de publicatie-instanties in as a Cloud Service schermen.
+De volgende filters en cachemels in verzenders toestaan voor de publicatie-instanties in Screens as a Cloud Service.
 
 ### AEM Screens-filters {#filters}
 
@@ -34,12 +34,12 @@ De volgende filters en cachemels in verzenders toestaan voor de publicatie-insta
 
 ### Cacheregels {#cache-rules}
 
-* Toevoegen `/statfileslevel "10"` tot `/cache` sectie in `publish_farm.any`/.
+* Voeg `/statfileslevel "10"` toe aan de sectie `/cache` in `publish_farm.any`/.
 
   >[!NOTE]
   >Deze geheim voorgeheugenregel steunt caching tot 10 niveaus van de geheim voorgeheugendocroot en maakt ongeldig wanneer de inhoud wordt gepubliceerd eerder dan alles ongeldig. U kunt dit niveau wijzigen op basis van de mate waarin de inhoudsstructuur is ingesteld.
 
-* Voeg het volgende toe aan `/invalidate` sectie in `publish_farm.any`.
+* Voeg het volgende toe aan de sectie `/invalidate` in `publish_farm.any` .
 
   ```
   /0003 {
@@ -48,7 +48,7 @@ De volgende filters en cachemels in verzenders toestaan voor de publicatie-insta
   }
   ```
 
-* Voeg de volgende regels toe aan `/rules` sectie in `/cache` in publish_farm.any of in een bestand waarvan `publish_farm.any`.
+* Voeg de volgende regels toe aan de sectie `/rules` in `/cache` publish_farm.any of in een bestand dat is opgenomen vanuit `publish_farm.any` .
 
   ```
   ## Allow Dispatcher Cache for Screens channels

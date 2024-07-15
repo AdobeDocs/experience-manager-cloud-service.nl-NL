@@ -14,25 +14,25 @@ ht-degree: 0%
 
 # Inline opmaak van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met [themaeditor](themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke componenten van Adaptief formulier en de wijzigingen direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
+U kunt de algemene verschijning en de stijl van een Aangepaste Vorm bepalen door stijlen te specificeren gebruikend [ themaredacteur ](themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke componenten van Adaptief formulier en de wijzigingen direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
 
 ## Inline CSS-eigenschappen toepassen {#apply-inline-css-properties}
 
 Inline stijlen toevoegen aan een component:
 
-1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Als u de modus wilt wijzigen in de opmaakmodus, selecteert u op de pagina-werkbalk de optie ![canvas-drop-down](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
-1. Selecteer een component op de pagina en selecteer de knop Bewerken ![bewerken, knop](assets/edit.svg). Stijleigenschappen worden geopend in de zijbalk.
+1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Om de wijze aan het stileren wijze, op de paginagoolbar te veranderen, selecteer ![ canvas-drop-down ](assets/Smock_ChevronDown.svg) > **[!UICONTROL Style]**.
+1. Selecteer een component in de pagina, en selecteer uitgeven knoop ![ uitgeven-knoop ](assets/edit.svg). Stijleigenschappen worden geopend in de zijbalk.
 
    U kunt ook componenten selecteren in de boomstructuur van de formulierhiërarchie in het zijpaneel. De boomstructuur in de formulierhiërarchie is beschikbaar als formulierobjecten op de zijbalk.
 
-   In de [!UICONTROL Style] in de modus, kunt u de componenten onder Formulierobjecten zien. In de lijst Formulierobjecten in het zijpaneel worden echter componenten zoals velden en deelvensters vermeld. Velden en deelvensters zijn algemene componenten die componenten kunnen bevatten, zoals tekstvak en keuzerondjes.
+   In de modus [!UICONTROL Style] kunt u componenten zien die onder Formulierobjecten worden weergegeven. In de lijst Formulierobjecten in het zijpaneel worden echter componenten zoals velden en deelvensters vermeld. Velden en deelvensters zijn algemene componenten die componenten kunnen bevatten, zoals tekstvak en keuzerondjes.
 
    Wanneer u een component selecteert in het zijpaneel, ziet u alle vermelde subcomponenten en de eigenschappen van de geselecteerde component. U kunt een specifieke subcomponent selecteren en deze opmaken.
 
@@ -45,14 +45,14 @@ Inline stijlen toevoegen aan een component:
    * [!UICONTROL Effects] (Schaduw, dekking)
    * [!UICONTROL Advanced] (Hiermee kunt u aangepaste CSS voor de component schrijven)
 
-1. Op dezelfde manier kunt u stijlen toepassen op andere delen van een component, zoals [!UICONTROL Widget], [!UICONTROL Caption], en [!UICONTROL Help].
-1. Selecteren **[!UICONTROL Done]** om de wijzigingen te bevestigen of **[!UICONTROL Cancel]** om de wijzigingen te verwijderen.
+1. Op dezelfde manier kunt u stijlen toepassen op andere delen van een component, zoals [!UICONTROL Widget] , [!UICONTROL Caption] en [!UICONTROL Help] .
+1. Selecteer **[!UICONTROL Done]** om de wijzigingen te bevestigen of **[!UICONTROL Cancel]** om de wijzigingen te negeren.
 
 ## Voorbeeld: inline stijlen voor een veldcomponent {#example-inline-styles-for-a-field-component}
 
 In de volgende afbeeldingen wordt een tekstveld weergegeven voor- en nadat er inline stijlen op zijn toegepast.
 
-![Component van tekstvak voordat inline-opmaak wordt toegepast](assets/no-style.png)
+![ de vakje van de Tekst component alvorens het gealigneerde stileren wordt toegepast ](assets/no-style.png)
 
 Component van tekstvak voordat inline-stijleigenschappen worden toegepast
 
@@ -99,7 +99,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
  </tbody>
 </table>
 
-![Stijl van tekstvak nadat inline-opmaak is toegepast](assets/applied-style.png)
+![ het vakje van de Tekst stijl na het gealigneerde stileren wordt toegepast ](assets/applied-style.png)
 
 Component van tekstvak na toepassen van inline-stijleigenschappen
 
@@ -111,27 +111,27 @@ Na de bovenstaande stappen kunt u andere componenten selecteren en opmaken, zoal
 
 ## Stijlen kopiëren en plakken {#copy-paste-styles}
 
-U kunt ook een stijl van de ene component naar een andere component in een adaptief formulier kopiëren en plakken. In de **[!UICONTROL Style]** Selecteer de component en selecteer het pictogram Kopiëren ![Kopiëren](assets/property-copy-icon.svg).
+U kunt ook een stijl van de ene component naar een andere component in een adaptief formulier kopiëren en plakken. Op de **[!UICONTROL Style]** wijze, selecteer de component en selecteer het pictogram van het Exemplaar ![ Exemplaar ](assets/property-copy-icon.svg).
 
-Selecteer de andere component van hetzelfde type en selecteer het pictogram Plakken ![Kopiëren](assets/Smock_Paste_18_N.svg) om de gekopieerde stijl te plakken. U kunt ook het pictogram Stijl wissen selecteren ![Kopiëren](assets/clear-style-icon.svg) om de toegepaste stijl te wissen.
+Selecteer de andere component van het zelfde type en selecteer het pictogram van het Deeg ![ Exemplaar ](assets/Smock_Paste_18_N.svg) om de gekopieerde stijl te kleven. U kunt het Duidelijke pictogram van de Stijl ook selecteren ![ Exemplaar ](assets/clear-style-icon.svg) om de toegepaste stijl te ontruimen.
 
 ## Stijlen instellen voor verschillende statussen van een component {#set-styles-for-states}
 
-U kunt stijlen instellen voor verschillende toestanden van een componenttype. De verschillende staten omvatten: [!UICONTROL Focus], [!UICONTROL Disabled], [!UICONTROL Hover], [!UICONTROL Error], [!UICONTROL Success], en [!UICONTROL Mandatory].
+U kunt stijlen instellen voor verschillende toestanden van een componenttype. De verschillende statussen zijn: [!UICONTROL Focus], [!UICONTROL Disabled], [!UICONTROL Hover], [!UICONTROL Error], [!UICONTROL Success] en [!UICONTROL Mandatory] .
 
 Stijl definiëren voor een status van een component:
 
-1. In de **[!UICONTROL Style]** Selecteer de component en selecteer het pictogram Bewerken ![Bewerken](assets/Smock_Edit_18_N.svg).
+1. Op de **[!UICONTROL Style]** wijze, selecteer de component en selecteer het Edit pictogram ![ uitgeven ](assets/Smock_Edit_18_N.svg).
 
-1. Selecteer de status voor de component met de opdracht **[!UICONTROL State]** vervolgkeuzelijst.
+1. Selecteer de status voor de component met de vervolgkeuzelijst **[!UICONTROL State]** .
 
-   ![Status selecteren](assets/select-state.png)
+   ![ Uitgezochte staat ](assets/select-state.png)
 
-1. Definieer de opmaak voor de geselecteerde status van de component en selecteer ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+1. Bepaal het stileren voor de geselecteerde staat van de component en selecteer ![ sparen ](assets/save_icon.svg) om de eigenschappen te bewaren.
 
-U kunt ook de status van succes en fout simuleren. Selecteer het pictogram Uitvouwen om het dialoogvenster **[!UICONTROL Simulate Success]** en **[!UICONTROL Simulate Error]** opties.
+U kunt ook de status van succes en fout simuleren. Selecteer het pictogram Uitvouwen om de opties **[!UICONTROL Simulate Success]** en **[!UICONTROL Simulate Error]** weer te geven.
 
-![Frames simuleren](assets/simulate-states.png)
+![ Simuleer staten ](assets/simulate-states.png)
 
 
 ## Zie ook {#see-also}

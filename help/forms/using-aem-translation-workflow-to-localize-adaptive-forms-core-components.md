@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # Gebruik machinevertaling of menselijke vertaling om een adaptief formulier met kerncomponenten te vertalen {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-Met gelokaliseerde formulieren hebt u een groter publiek in verschillende regio&#39;s. Met de vertaalworkflow van Adobe Experience Manager kunt u Adaptive Forms en de bijbehorende documenten van record lokaliseren. U kunt **machinevertaling** of **menselijke vertalers** om een adaptief formulier te lokaliseren.
+Met gelokaliseerde formulieren hebt u een groter publiek in verschillende regio&#39;s. Met de vertaalworkflow van Adobe Experience Manager kunt u Adaptive Forms en de bijbehorende documenten van record lokaliseren. U kunt **machinevertaling** of **menselijke vertalers** gebruiken om een AanpassingsVorm te lokaliseren.
 
 ## Een adaptief formulier en een document met records vertalen met behulp van automatische vertaling {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-De vertaalservice zet uw inhoud direct om in Adaptief formulier en [Document van record](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service is vooraf geconfigureerd voor het gebruik van een proefversie van Microsoft Translator voor machinevertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw Adaptieve Forms en Document of Record:
+De dienst van de machinevertaling vertaalt onmiddellijk uw inhoud in Aangepaste Vorm en [ Document van Verslag ](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service is vooraf geconfigureerd voor het gebruik van een proefversie van Microsoft Translator voor machinevertaling. Voer de volgende stappen uit om automatische vertaling in te schakelen voor uw Adaptieve Forms en Document of Record:
 
-1. Selecteer in de gebruikersinterface van AEM Forms een formulier en selecteer de **[!UICONTROL Add Dictionary]** -optie.
-1. In Add Woordenboek aan het scherm van het Project van de Vertaling, voor **[!UICONTROL Project]** option
+1. Selecteer een formulier in de gebruikersinterface van AEM Forms en selecteer de optie **[!UICONTROL Add Dictionary]** .
+1. Kies in het scherm Woordenboek toevoegen aan vertaalproject de optie **[!UICONTROL Project]**
 
-   * Als u een vertaalproject wilt maken, selecteert u de optie **[!UICONTROL Create a new translation project]** en in de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld: `Government Reference Site - German locale.`
-   * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]**.
-1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
-1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**.
-1. Klik in het scherm Projecten op het gemaakte project. Klik bijvoorbeeld op de knop **Referentiesite van de overheid - Duitse landinstelling** tegel.
-1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Start**. De status van de tegel verandert in Concept. Na de vertaling verandert de status in **Goedgekeurd**. Vernieuw de pagina na een paar minuten en controleer de status.
+   * Om een vertaalproject tot stand te brengen, selecteer de **[!UICONTROL Create a new translation project]** optie en op het **gebied van de Titel van het Project**, specificeer de titel. Bijvoorbeeld: `Government Reference Site - German locale.`
+   * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]** .
+1. Op het **gebied van de Talen van het Doel**, specificeer een scène (bijvoorbeeld, `German(de)`). U kunt meerdere landinstellingen opgeven. De vorm wordt vertaald aan alle scènes die in het **gebied van de Talen van het Doel** worden gespecificeerd. Klik **Gedaan**.
+1. In het Woordenboek toegevoegde dialoogvakje, klik **Open Projecten**.
+1. Klik in het scherm Projecten op het gemaakte project. Bijvoorbeeld, klik de **Plaats van de Verwijzing van de Regering - Duitse scène** tegel.
+1. Op de **tegel van de VertaalBaan**, klik ![ aem62forms_downarrow ](assets/aem62forms_downarrow.png) pictogram, en klik **Begin**. De status van de tegel verandert in Concept. Na voltooiing van de vertaling, verandert de status in **Goedgekeurd**. Vernieuw de pagina na een paar minuten en controleer de status.
 
-   ![Vertaling starten](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
-1. Nadat de status is gewijzigd in **Goedgekeurd** op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Voltooid**.
+   ![ Vertaling van het Begin ](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
+1. Na de statusveranderingen in **Goedgekeurd** op de **Taal van de VertaalBaan**, klik ![ aem62forms_downarrow ](assets/aem62forms_downarrow.png) pictogram, en klik **Volledig**.
 
-1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klikken **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u het `afAcceptLang=<locale code>` naar de URL van het formulier. Voeg bijvoorbeeld `afAcceptLang=de`om de Duitse versie van het formulier te openen.
+1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klik **[!UICONTROL Preview]** > **[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u de `afAcceptLang=<locale code>` aan de URL van het formulier hebt toegevoegd. Voeg bijvoorbeeld `afAcceptLang=de` toe om de Duitse versie van het formulier te openen.
 
 
    >[!NOTE]
@@ -62,28 +62,28 @@ Voor vertaling wordt een woordenboek met bestanden in XLIFF-indeling gedeeld met
 
 Voer de volgende stappen uit om een formulier en het bijbehorende document te lokaliseren met behulp van Human Translators:
 
-1. Selecteer in de gebruikersinterface van AEM Forms een formulier en selecteer de **[!UICONTROL Add Dictionary]** -optie.
-1. In Add Woordenboek aan het scherm van het Project van de Vertaling, voor **[!UICONTROL Project]** option
+1. Selecteer een formulier in de gebruikersinterface van AEM Forms en selecteer de optie **[!UICONTROL Add Dictionary]** .
+1. Kies in het scherm Woordenboek toevoegen aan vertaalproject de optie **[!UICONTROL Project]**
 
-   * Als u een vertaalproject wilt maken, selecteert u de optie **[!UICONTROL Create a new translation project]** en in de **Projecttitel** -veld, geeft u de titel op. Bijvoorbeeld: `Government Reference Site - German locale.`
-   * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]**.
-1. In de **Doeltalen** veld, geef een landinstelling op (bijvoorbeeld `German(de)`). U kunt meerdere landinstellingen opgeven. Het formulier wordt vertaald naar alle landinstellingen die in het dialoogvenster **Doeltalen** veld. Klikken **Gereed**.
-1. Klik in het dialoogvenster Woordenboek toegevoegd op **Projecten openen**.
-1. Klik in het scherm Projecten op het gemaakte project. Klik bijvoorbeeld op de knop **Referentiesite van de overheid - Duitse landinstelling** tegel.
-1. Onder aan het dialoogvenster **Samenvatting** tegel, klik op de knop **ovalen**. Het scherm Projecteigenschappen omzetten wordt geopend.
-1. Open de **[!UICONTROL Advanced]** tabblad boven aan het dialoogvenster **Eigenschappen van vertaalproject** scherm. Voor de **[!UICONTROL Translation field]**, selecteert u **[!UICONTROL Human Translation]**. Klikken **Opslaan en sluiten** boven aan het scherm.
-1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Exporteren**. Klik in het dialoogvenster Exporteren op de optie Geëxporteerd bestand downloaden. Er wordt een ZIP-bestand gedownload.
-   ![Omzetbestand exporteren](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   * Om een vertaalproject tot stand te brengen, selecteer de **[!UICONTROL Create a new translation project]** optie en op het **gebied van de Titel van het Project**, specificeer de titel. Bijvoorbeeld: `Government Reference Site - German locale.`
+   * Als u een nieuw woordenboek wilt toevoegen aan een bestaand vertaalproject, selecteert u de optie **[!UICONTROL Add to an existing translation project]** en selecteert u een **[!UICONTROL Existing translation project]** .
+1. Op het **gebied van de Talen van het Doel**, specificeer een scène (bijvoorbeeld, `German(de)`). U kunt meerdere landinstellingen opgeven. De vorm wordt vertaald aan alle scènes die in het **gebied van de Talen van het Doel** worden gespecificeerd. Klik **Gedaan**.
+1. In het Woordenboek toegevoegde dialoogvakje, klik **Open Projecten**.
+1. Klik in het scherm Projecten op het gemaakte project. Bijvoorbeeld, klik de **Plaats van de Verwijzing van de Regering - Duitse scène** tegel.
+1. Bij de bodem van de **Summiere** tegel, klik de **ellipsen**. Het scherm Projecteigenschappen omzetten wordt geopend.
+1. Open het **[!UICONTROL Advanced]** lusje bij de bovenkant van het **scherm van de Eigenschappen van het Project van de Vertaling**. Selecteer **[!UICONTROL Human Translation]** voor **[!UICONTROL Translation field]** . Klik **sparen &amp; dicht** bij de bovenkant van het scherm.
+1. Op de **tegel van de VertaalBaan**, klik ![ aem62forms_downarrow ](assets/aem62forms_downarrow.png) pictogram, en klik **Uitvoer**. Klik in het dialoogvenster Exporteren op de optie Geëxporteerd bestand downloaden. Er wordt een ZIP-bestand gedownload.
+   ![ de vertaaldossier van de Uitvoer ](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Extraheer het gedownloade .zip-bestand. De geëxtraheerde map heeft twee bestanden:
    * transleren_export_summary.xml
-   * [formuliervelden-bestand].xml.
-1. Open de [formuliervelden-bestand].xml voor bewerking. Voeg de gelokaliseerde tekenreeksen en berichten voor formuliervelden toe. Sla het bestand op en sluit het.
-1. De bestanden transleren_export_summary.xml en [formuliervelden-bestand].xml.
-1. Op de **Vertaaltaak** tegel, klik op de knop ![aem62forms_downarrow](assets/aem62forms_downarrow.png) en klik op **Importeren**. Selecteer het archief met [formuliervelden-bestand].xml. met gelokaliseerde tekenreeksen en berichten voor formuliervelden.
+   * [ vorm-gebieden-dossier ].xml.
+1. Open [ vorm-gebieden-dossier ] .xml voor het uitgeven. Voeg de gelokaliseerde tekenreeksen en berichten voor formuliervelden toe. Sla het bestand op en sluit het.
+1. Zip de dossiers translate_export_summary.xml en [ vorm-gebieden-dossier ] .xml.
+1. Op de **tegel van de VertaalBaan**, klik ![ aem62forms_downarrow ](assets/aem62forms_downarrow.png) pictogram, en klik **de Invoer**. Selecteer het archief dat [ vorm-gebieden-dossier ].xml bevat. met gelokaliseerde tekenreeksen en berichten voor formuliervelden.
 
-   ![Omzetbestand importeren](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![ de vertaaldossier van de Invoer ](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
-1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klikken **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u het `afAcceptLang=<locale code>` naar de URL van het formulier. Voeg bijvoorbeeld `afAcceptLang=de`om de Duitse versie van het formulier te openen.
+1. Als u een voorbeeld van het gelokaliseerde formulier wilt bekijken, selecteert u het gelokaliseerde formulier in de gebruikersinterface van AEM Forms. Klik **[!UICONTROL Preview]** > **[!UICONTROL Preview as HTML]**. Open het formulier opnieuw nadat u de `afAcceptLang=<locale code>` aan de URL van het formulier hebt toegevoegd. Voeg bijvoorbeeld `afAcceptLang=de` toe om de Duitse versie van het formulier te openen.
 
 ## Zie ook {#see-also}
 

@@ -34,23 +34,23 @@ De mededelingen verstrekken APIs voor het op bestelling en geplande documentgene
 
 Een batchbewerking is een proces waarbij meerdere documenten van een vergelijkbaar type voor een set records met geplande intervallen worden gegenereerd. Een batchbewerking bestaat uit twee onderdelen: Configuratie (definitie) en uitvoering.
 
-* **Configuratie (definitie)**: Een batchconfiguratie slaat informatie op over diverse elementen en eigenschappen die moeten worden ingesteld voor gegenereerde documenten. Bijvoorbeeld, verstrekt het details over het malplaatje XDP of PDF en de plaats van klantengegevens aan gebruik samen met het specificeren van diverse eigenschappen voor outputdocumenten.
+* **Configuratie (definitie)**: Een partijconfiguratie slaat informatie over diverse activa en eigenschappen op om voor geproduceerde documenten te plaatsen. Bijvoorbeeld, verstrekt het details over het malplaatje XDP of PDF en de plaats van klantengegevens aan gebruik samen met het specificeren van diverse eigenschappen voor outputdocumenten.
 
-* **Uitvoering**: Als u een batchbewerking wilt starten, geeft u de naam van de batchconfiguratie door aan de API voor batchuitvoering.
+* **Uitvoering**: Om een partijverrichting te beginnen, ga de naam van de partijconfiguratie tot batch-uitvoering API over.
 
 ### Componenten van een batchbewerking {#components-of-a-batch-operations}
 
-**Cloud-configuratie**: Dankzij de configuratie Experience Manger Cloud kunt u een Experience Manager-exemplaar aansluiten op Microsoft Azure Storage in eigendom van klanten. Hiermee kunt u de referenties opgeven waarmee Microsoft Azure-account bij een klant verbinding kan maken.
+**de configuratie van de Wolk van de Wolk van de Werking**: De configuratiehulp van de Wolk van de Ervaring helpt u een instantie van de Experience Manager aan klant bezeten Microsoft Azure Opslag. Hiermee kunt u de referenties opgeven waarmee Microsoft Azure-account bij een klant verbinding kan maken.
 
-**Configuratie gegevensopslag in batch (USC)**: Met de configuratie van batchgegevens kunt u een specifiek exemplaar van Blob-opslag configureren voor batch-API&#39;s. Hiermee kunt u de invoer- en uitvoerlocaties opgeven in de Microsoft Azure Blob-opslag die eigendom is van de klant.
+**de configuratie van de Opslag van de Gegevens van de Partij (USC)**: De hulp van de de gegevensconfiguratie van de partij u vormt een specifiek geval van opslag Blob voor Partij APIs. Hiermee kunt u de invoer- en uitvoerlocaties opgeven in de Microsoft Azure Blob-opslag die eigendom is van de klant.
 
-**Batch-API&#39;s**: Hiermee kunt u batchconfiguraties maken en de batchbewerkingen op basis van deze configuraties uitvoeren om een PDF- of XDP-sjabloon samen te voegen met gegevens en uitvoer te genereren in de indelingen PDF, PS, PCL, DPL, IPL en ZPL. De mededelingen verstrekken partij APIs voor configuratiebeheer en partijuitvoering.
+**Partij APIs**: Laat u een partijconfiguraties creëren en de partijlooppas uitvoeren die op deze configuraties wordt gebaseerd om een PDF of malplaatje XDP met gegevens samen te voegen en output in PDF, PS, PCL, DPL, IPL en formaten te produceren ZPL. De mededelingen verstrekken partij APIs voor configuratiebeheer en partijuitvoering.
 
-![data-merge-table](assets/communications-batch-structure.png)
+![ gegeven-fusie-lijst ](assets/communications-batch-structure.png)
 
-**Opslag**: Communicatie-API&#39;s maken gebruik van Microsoft Azure Cloud-opslag die eigendom is van klanten, om klantgegevens op te halen en gegenereerde documenten op te slaan. U configureert Microsoft Azure Storage in Experience Manager Cloud Service Configuration.
+**Opslag**: Communicatie APIs gebruikt klant bezeten Microsoft Azure Cloud opslag om klantenverslagen te halen en geproduceerde documenten op te slaan. U configureert Microsoft Azure Storage in Experience Manager Cloud Service Configuration.
 
-**App**: De aangepaste toepassing waarmee u de batch-API&#39;s kunt gebruiken voor het genereren en gebruiken van documenten.
+**App**: Uw douanetoepassing om de Partij APIs te gebruiken om documenten te produceren en te verbruiken.
 
 ## Meerdere documenten genereren met behulp van batchbewerkingen {#generate-multiple-documents-using-batch-operations}
 
@@ -58,13 +58,13 @@ U kunt batchbewerkingen gebruiken om meerdere documenten met een gepland interva
 
 >[!VIDEO](https://video.tv.adobe.com/v/338349)
 
-U kunt de video bekijken of de onderstaande instructies uitvoeren om te leren hoe u documenten kunt genereren met behulp van batchbewerkingen. De API verwijzingsdocumentatie die in video wordt gebruikt is beschikbaar in het formaat .yaml. U kunt de [Batch-API&#39;s](assets/batch-api.yaml) bestand maken en uploaden naar Postman om de functionaliteit van API&#39;s te controleren en de video te volgen.
+U kunt de video bekijken of de onderstaande instructies uitvoeren om te leren hoe u documenten kunt genereren met behulp van batchbewerkingen. De API verwijzingsdocumentatie die in video wordt gebruikt is beschikbaar in het formaat .yaml. U kunt het [ Band APIs ](assets/batch-api.yaml) dossier downloaden en het uploaden aan Postman om functionaliteit van APIs te controleren en langs de video te volgen.
 
 ### Voorwaarden {#pre-requisites}
 
 Voor het gebruik van de batch-API is het volgende vereist:
 
-* [Microsoft Azure Storage-account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
+* [ Microsoft Azure-opslagaccount ](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
 * PDF- of XDP-sjablonen
 * [Gegevens die met sjablonen moeten worden samengevoegd](#form-data)
 * Gebruikers met beheerdersrechten voor Experience Managers
@@ -80,7 +80,7 @@ Voordat u een batchbewerking gebruikt:
 
 ### Klantgegevens (XML-bestanden) uploaden naar Azure Storage {#upload-customer-data-to-Azure-Storage}
 
-Maak op uw Microsoft Azure Storage [containers](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) en [klantgegevens uploaden (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) aan de [mappen](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) in de containers.
+Op uw Microsoft Azure Opslag, creeer [ containers ](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) en [ upload klantengegevens (XML) ](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) aan de [ omslagen ](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) binnen de containers.
 >[!NOTE]
 >
 >U kunt de Microsoft Azure-opslag zo configureren dat de invoermap automatisch wordt gewist of dat de inhoud van de uitvoermap op geplande intervallen naar een andere locatie wordt verplaatst. Zorg er echter voor dat de mappen niet worden gereinigd wanneer een batchbewerking die verwijst naar de mappen nog wordt uitgevoerd.
@@ -91,7 +91,7 @@ Met de cloudconfiguratie wordt uw Experience Manager-instantie verbonden met Mic
 
 1. Ga naar Extra > Cloud Servicen > Azure Storage
 1. Open een map als host voor de configuratie en klik op Maken. U gebruikt de algemene map of maakt een map.
-1. Geef een naam op voor de configuratie en referenties waarmee u verbinding wilt maken met de service. U kunt [deze gegevens ophalen van uw Microsoft Azure Storage portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
+1. Geef een naam op voor de configuratie en referenties waarmee u verbinding wilt maken met de service. U kunt [ deze geloofsbrieven van uw portaal van de Opslag van Microsoft Azure ](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys) terugwinnen.
 1. Klik op Maken.
 
 Uw Experience Manager-instantie is nu klaar om verbinding te maken met Microsoft Azure Storage en deze te gebruiken om indien nodig inhoud op te slaan en te lezen.
@@ -123,27 +123,27 @@ Een organisatie heeft doorgaans meerdere sjablonen. Bijvoorbeeld, één malplaat
 
 ## batch-API gebruiken om documenten te genereren {#use-batch-API-to-generate-documents}
 
-Als u een batch-API wilt gebruiken, maakt u een batchconfiguratie en voert u op basis van die configuratie een uitvoering uit. De API-documentatie biedt informatie over API&#39;s voor het maken en uitvoeren van een batch, overeenkomende parameters en mogelijke fouten. U kunt de [API-definitiebestand](assets/batch-api.yaml) bestand en uploaden naar [Postman](https://go.postman.co/home) of soortgelijke software om de API&#39;s te testen om een batchbewerking te maken en uit te voeren.
+Als u een batch-API wilt gebruiken, maakt u een batchconfiguratie en voert u op basis van die configuratie een uitvoering uit. De API-documentatie biedt informatie over API&#39;s voor het maken en uitvoeren van een batch, overeenkomende parameters en mogelijke fouten. U kunt het [ API definitiedossier ](assets/batch-api.yaml) downloaden en het uploaden aan [ Postman ](https://go.postman.co/home) of gelijkaardige software om APIs te testen om een partijverrichting tot stand te brengen en in werking te stellen.
 
 ### Een batch maken {#create-a-batch}
 
-Als u een batch wilt maken, gebruikt u de opdracht `POST /config` API. Neem de volgende verplichte eigenschappen op in de hoofdtekst van de HTTP-aanvraag:
+Als u een batch wilt maken, gebruikt u de `POST /config` API. Neem de volgende verplichte eigenschappen op in de hoofdtekst van de HTTP-aanvraag:
 
-* **configName**: Geef de unieke naam van de batch op. Bijvoorbeeld: `wknd-job`
-* **dataSourceConfigUri**: Geef de locatie van de configuratie Batch Data Store op. Het kan relatieve of absolute weg van de configuratie zijn. Bijvoorbeeld: `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: Geef uitvoerindelingen op: PDF en PRINT. Als u het uitvoertype PRINT gebruikt, kunt u `printedOutputOptionsList` -eigenschap, geeft u ten minste één afdrukoptie op. De afdrukopties worden bepaald door hun rendertype, zodat er momenteel geen meerdere afdrukopties met hetzelfde rendertype zijn toegestaan. De ondersteunde indelingen zijn PS, PCL, DPL, IPL en ZPL.
+* **configName**: Specificeer Unieke naam van de partij. Bijvoorbeeld: `wknd-job`
+* **dataSourceConfigUri**: specificeer plaats van de configuratie van de Opslag van de Gegevens van de Partij. Het kan relatieve of absolute weg van de configuratie zijn. Bijvoorbeeld: `/conf/global/settings/forms/usc/batch/wknd-batch`
+* **outputTypes**: Specificeer outputformaten: PDF en DRUK. Als u het uitvoertype PRINT gebruikt, geeft u in de eigenschap `printedOutputOptionsList` ten minste één afdrukoptie op. De afdrukopties worden bepaald door hun rendertype, zodat er momenteel geen meerdere afdrukopties met hetzelfde rendertype zijn toegestaan. De ondersteunde indelingen zijn PS, PCL, DPL, IPL en ZPL.
 
-* **template**: Geef het absolute of relatieve pad van de sjabloon op. Bijvoorbeeld: `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
+* **malplaatje**: Specificeer absolute of relatieve weg van het malplaatje. Bijvoorbeeld: `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
 Als u een relatief pad opgeeft, moet u ook een basisinhoud opgeven. Zie API-documentatie voor meer informatie over de hoofdmap van de inhoud.
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-U kunt `GET /config /[configName]` om details van de partijconfiguratie te zien.
+U kunt `GET /config /[configName]` gebruiken om details van de partijconfiguratie te zien.
 
 ### Een batch uitvoeren {#run-a-batch}
 
-Als u een batch wilt uitvoeren (uitvoeren), gebruikt u de opdracht `POST /config /[configName]/execution`. Als u bijvoorbeeld een batch met de naam wknd-demo wilt uitvoeren, gebruikt u /config/wknd-demo/executing. De server retourneert HTTP-antwoordcode 202 bij het accepteren van de aanvraag. De API retourneert geen lading behalve een unieke code (uitvoering-herkenningsteken) in kopbal van de reactie van HTTP voor de partijbaan die op de server loopt. U kunt de uitvoering-herkenningsteken gebruiken om de status van de partij terug te winnen.
+Als u een batch wilt uitvoeren (uitvoeren), gebruikt u de `POST /config /[configName]/execution` . Als u bijvoorbeeld een batch met de naam wknd-demo wilt uitvoeren, gebruikt u /config/wknd-demo/executing. De server retourneert HTTP-antwoordcode 202 bij het accepteren van de aanvraag. De API retourneert geen lading behalve een unieke code (uitvoering-herkenningsteken) in kopbal van de reactie van HTTP voor de partijbaan die op de server loopt. U kunt de uitvoering-herkenningsteken gebruiken om de status van de partij terug te winnen.
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ Als u een batch wilt uitvoeren (uitvoeren), gebruikt u de opdracht `POST /config
 
 ### De status van een partij controleren {#status-of-a-batch}
 
-Als u de status van een batch wilt ophalen, gebruikt u de opdracht `GET /config /[configName]/execution/[execution-identifier]`. De uitvoering-herkenningsteken is inbegrepen in de kopbal van de reactie van HTTP voor het verzoek van de partijuitvoering.
+Gebruik `GET /config /[configName]/execution/[execution-identifier]` om de status van een batch op te halen. De uitvoering-herkenningsteken is inbegrepen in de kopbal van de reactie van HTTP voor het verzoek van de partijuitvoering.
 
 Het antwoord op het statusverzoek bevat de statussectie. Het verstrekt details over status van de partijbaan, aantal verslagen reeds in pijplijn (reeds gelezen en die worden verwerkt), en status van elk outputType/renderType (aantal lopend, opgevolgd, en ontbroken punten). De status omvat ook de begin- en eindtijd van een batchtaak, samen met informatie over eventuele fouten. De eindtijd is -1 tot de partijlooppas eigenlijk voltooit.
 
@@ -162,9 +162,9 @@ Het antwoord op het statusverzoek bevat de statussectie. Het verstrekt details o
 
 ### Gegenereerde documenten weergeven {#view-generated-documents}
 
-Nadat de taak is voltooid, worden de gegenereerde documenten opgeslagen in de `success` map op de doellocatie die is opgegeven in de configuratie Batch Data Store. Als er om het even welke fouten zijn, leidt de dienst tot `failure` map. Het verstrekt informatie over het type en de reden van fouten.
+Nadat de taak is voltooid, worden de gegenereerde documenten opgeslagen in de map `success` op de doellocatie die is opgegeven in de configuratie Batch Data Store. Als er fouten optreden, maakt de service een map `failure` . Het verstrekt informatie over het type en de reden van fouten.
 
-Laten we het met behulp van een voorbeeld begrijpen: aannemen dat er een invoergegevensbestand is `record1.xml` en twee uitvoertypen: `PDF` en `PCL`. De doellocatie bevat vervolgens twee submappen `pdf` en `pcl`, één voor elk uitvoertype. Laten we aannemen dat de generatie van PDF is gelukt, dan de `pdf` submap bevat de `success` submap die op zijn beurt het daadwerkelijk gegenereerde PDF-document bevat `record1.pdf`. Laten we aannemen dat PCL-generatie is mislukt. `pcl` submap bevat een `failure` submap die op zijn beurt een foutbestand bevat `record1.error.txt` bevat details over de fout. De doellocatie bevat ook een tijdelijke map met de naam `__tmp__` die bepaalde bestanden bevat die vereist zijn tijdens de uitvoering van de batch. Deze map kan worden verwijderd als er geen actieve batchbewerkingen zijn die verwijzen naar de doelmap.
+Laten we het met behulp van een voorbeeld begrijpen: neem aan dat er een invoergegevensbestand `record1.xml` en twee uitvoertypen zijn: `PDF` en `PCL` . Vervolgens bevat de doellocatie twee submappen `pdf` en `pcl` , één voor elk uitvoertype. Laat veronderstellen dat het genereren van PDF is gelukt, dan bevat de submap `pdf` de submap `success` die op zijn beurt het daadwerkelijk gegenereerde PDF-document `record1.pdf` bevat. Hiermee wordt aangenomen dat PCL-generatie is mislukt. De submap `pcl` bevat vervolgens een `failure` submap die op zijn beurt een foutbestand bevat `record1.error.txt` dat details van de fout bevat. Bovendien bevat de doellocatie een tijdelijke map met de naam `__tmp__` , waarin bepaalde bestanden staan die tijdens de uitvoering van de batch zijn vereist. Deze map kan worden verwijderd als er geen actieve batchbewerkingen zijn die verwijzen naar de doelmap.
 
 >[!NOTE]
 >
@@ -172,11 +172,11 @@ Laten we het met behulp van een voorbeeld begrijpen: aannemen dat er een invoerg
 
 ## API-naslagdocumentatie
 
-De API verwijzingsdocumentatie verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is beschikbaar in de indeling .yaml. U kunt de [Batch-API&#39;s](assets/batch-api.yaml) bestand maken en uploaden naar Postman om de functionaliteit van API&#39;s te controleren.
+De API verwijzingsdocumentatie verstrekt gedetailleerde informatie over alle parameters, authentificatiemethodes, en diverse diensten die door APIs worden verleend. De API-naslagdocumentatie is beschikbaar in de indeling .yaml. U kunt het [ Band APIs ](assets/batch-api.yaml) dossier downloaden en het uploaden aan Postman om functionaliteit van APIs te controleren.
 
 >[!MORELIKETHIS]
 >
->* [Inleiding tot AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [AEM Forms as a Cloud Service architectuur voor adaptieve Forms- en communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-architecture.md)
->* [Communicatieverwerking - synchrone API&#39;s](/help/forms/aem-forms-cloud-service-communications.md)
->* [Communicatieverwerking - Batch-API&#39;s](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [ Inleiding aan de as a Cloud Service Mededelingen van AEM Forms ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [ as a Cloud Service Architectuur van AEM Forms voor Adaptieve Forms en Communicatie APIs ](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [ Communicatie Verwerking - Synchrone APIs ](/help/forms/aem-forms-cloud-service-communications.md)
+>* [ Communicatie Verwerking - Partij APIs ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

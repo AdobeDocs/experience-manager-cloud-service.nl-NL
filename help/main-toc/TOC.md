@@ -86,19 +86,19 @@ ht-degree: 3%
          + [Opmerkingen bij de onderhoudsrelease voor 2024.6.0](/help/release-notes/maintenance/2024/2024-6-0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2024.5.0](/help/release-notes/maintenance/2024/2024-5-0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2024.4.0](/help/release-notes/maintenance/2024/2024-4-0.md)
-         + [Opmerkingen bij de onderhoudsrelease voor 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md)
+         + [ Nota&#39;s van de Versie van het Onderhoud voor 2024.3.0 ](/help/release-notes/maintenance/2024/2024-3-0.md)
       + 2023 {#2023}
-         + [Opmerkingen bij de onderhoudsrelease voor 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md)
-         + [Opmerkingen bij de onderhoudsrelease voor 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md)
-         + [Opmerkingen bij de onderhoudsrelease voor 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
-         + [Opmerkingen bij de onderhoudsrelease voor 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md)
-         + [Opmerkingen bij de onderhoudsrelease voor 2023.8.0](/help/release-notes/maintenance/2023/2023-8-0.md)
-         + [Opmerkingen bij de onderhoudsrelease voor 2023.7.0](/help/release-notes/maintenance/2023/2023-7-0.md)
+         + [ Nota&#39;s van de Versie van het Onderhoud voor 2023.12.0 ](/help/release-notes/maintenance/2023/2023-12-0.md)
+         + [ Nota&#39;s van de Versie van het Onderhoud voor 2023.11.0 ](/help/release-notes/maintenance/2023/2023-11-0.md)
+         + [ Nota&#39;s van de Versie van het Onderhoud voor 2023.10.0 ](/help/release-notes/maintenance/2023/2023-10-0.md)
+         + [ Nota&#39;s van de Versie van het Onderhoud voor 2023.9.0 ](/help/release-notes/maintenance/2023/2023-9-0.md)
+         + [ Nota&#39;s van de Versie van het Onderhoud voor 2023.8.0 ](/help/release-notes/maintenance/2023/2023-8-0.md)
+         + [ Nota&#39;s van de Versie van het Onderhoud voor 2023.7.0 ](/help/release-notes/maintenance/2023/2023-7-0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.6.0](/help/release-notes/maintenance/2023/2023-6-0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
          + [Opmerkingen bij de onderhoudsrelease voor 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
-   + Release-aantekeningen voor Cloud Manager {#cloud-manager}
+   + Opmerkingen bij de release voor Cloud Manager {#cloud-manager}
       + [Opmerkingen bij de huidige release](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
          + [Opmerkingen bij de release 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -116,7 +116,7 @@ ht-degree: 3%
          + [Opmerkingen bij de release 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [Opmerkingen bij de release 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [Opmerkingen bij de release 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
-         + [Opmerkingen bij de release 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [ Nota&#39;s van de Versie voor 2023.3.0 ](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [Opmerkingen bij de release 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [Opmerkingen bij de release 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -179,11 +179,11 @@ ht-degree: 3%
          + [Opmerkingen bij de release 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Opmerkingen bij de release 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Opmerkingen bij de release 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Opmerkingen bij de release Workfront for Experience Manager Enhanced Connector{#workfront}
-      + [Opmerkingen bij de huidige release van Workfront for Experience Manager Enhanced Connector](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + De Nota&#39;s van de versie voor Workfront voor Experience Manager verbeterde schakelaar {#workfront}
+      + [ Huidige Nota&#39;s van de Versie voor Workfront voor Experience Manager verbeterde schakelaar ](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Opmerkingen bij de release voor het genereren van variaties {#generate-variations}
       + [Opmerkingen bij de huidige release voor het genereren van variaties](/help/generative-ai/release-notes-generate-variations.md)
-   + Opmerkingen bij de release van Universal Editor {#univeral-editor}
+   + Opmerkingen bij de release van de Universal Editor {#univeral-editor}
       + [Opmerkingen bij de huidige release van de Universal Editor](/help/release-notes/universal-editor/current.md)
    + [Wat is nieuw?](/help/release-notes/what-is-new.md)
    + [Opvallende wijzigingen in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -201,8 +201,8 @@ ht-degree: 3%
    + [IMS-integratie instellen voor AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Beste praktijken voor het Verkopen van de Toewijzing van de Gebruiker van de Dienst en de Definitie van de Gebruiker van de Dienst](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + Onboarding {#onboarding}
-   + [Begin hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
-   + Onboarding Journaal {#journey}
+   + [ Begin hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + Reis aan boord {#journey}
       + [Reisoverzicht aan boord](/help/journey-onboarding/overview.md)
       + [Voorbereiding aan boord](/help/journey-onboarding/preparation.md)
       + [AEM as a Cloud Service Terminologie](/help/journey-onboarding/terminology.md)
@@ -215,14 +215,14 @@ ht-degree: 3%
       + [Taken van ontwikkelaar- en implementatiebeheer](/help/journey-onboarding/developers.md)
       + [AEM](/help/journey-onboarding/aem-users.md)
       + [Live checklist](/help/journey-onboarding/go-live-checklist.md)
-   + AEM Referentie demos Add-on-reis {#demo-add-on}
+   + AEM Referentie demos Add-On-reis {#demo-add-on}
       + [Overzicht](/help/journey-sites/demos-add-on/overview.md)
       + [Installatie](/help/journey-sites/demos-add-on/installation.md)
       + [Programma maken](/help/journey-sites/demos-add-on/create-program.md)
       + [Demo-site maken](/help/journey-sites/demos-add-on/create-site.md)
       + [Screens inschakelen](/help/journey-sites/demos-add-on/screens.md)
       + [Uw demo-site beheren](/help/journey-sites/demos-add-on/manage.md)
-   + Overige onboarding concepten {#concepts}
+   + Overige onboarding-concepten {#concepts}
       + [Inleiding tot Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service-team en productprofielen](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Meldingsprofielen](/help/journey-onboarding/notification-profiles.md)
@@ -251,12 +251,12 @@ ht-degree: 3%
          + [Implementatiefase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
          + [Actieve fase](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + Tools voor de overgang naar Cloud Service {#cloud-migration}
-      + Analysator van best practices {#best-practices-analyzer}
+      + Analysator van aanbevolen procedures {#best-practices-analyzer}
          + [Overzicht](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Analysator van best practices gebruiken](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Inhoud transformeren {#content-transformer}
          + [Overzicht](/help/journey-migration/content-transformer/overview.md)
-         + [Inhoudstransformator gebruiken](/help/journey-migration/content-transformer/using.md)
+         + [ Gebruikend Inhoud Transformer ](/help/journey-migration/content-transformer/using.md)
       + De tool Content Transfer {#content-transfer-tool}
          + [Overzicht](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Voorwaarden voor het gereedschap Inhoud overbrengen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
@@ -273,7 +273,7 @@ ht-degree: 3%
          + [Een migratieset verwijderen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Het gereedschap Inhoud overbrengen uitvoeren op een Publish-instantie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Problemen met het gereedschap Inhoud overbrengen oplossen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + Verouderd gereedschap Toewijzing gebruiker (verouderd){#legacy-user-mapping-tool}
+         + Het Verouderde Hulpmiddel van de Toewijzing van de Gebruiker (Verouderd) {#legacy-user-mapping-tool}
             + [Overzicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Belangrijke overwegingen](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Gebruikerstoewijzing gebruiken](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -333,7 +333,7 @@ ht-degree: 3%
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + [Auteursreis zonder kopinhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html) Reis van de Auteur van de Inhoud zonder hoofd [
       + Projecten {#projects}
          + [Werken met projecten](/help/sites-cloud/authoring/projects/overview.md)
          + [Projecten beheren](/help/sites-cloud/authoring/projects/managing.md)
@@ -402,7 +402,7 @@ ht-degree: 3%
             + [Aanbevolen MSM-procedures](/help/sites-cloud/administering/msm/best-practices.md)
             + [Problemen oplossen en veelgestelde vragen](/help/sites-cloud/administering/msm/troubleshooting.md)
          + Vertaling {#translation}
-            + Vertaalreis naar sites {#sites}
+            + Sites-omzettingsreis {#sites}
                + [Vertalen van sites in AEM begrijpen](/help/journey-sites/translation/overview.md)
                + [Ga aan de slag met het vertalen van AEM sites](/help/journey-sites/translation/getting-started.md)
                + [Meer informatie over de inhoud van sites en over het vertalen in AEM](/help/journey-sites/translation/learn-about.md)
@@ -410,7 +410,7 @@ ht-degree: 3%
                + [Vertaalregels configureren](/help/journey-sites/translation/translation-rules.md)
                + [Inhoud vertalen](/help/journey-sites/translation/translate-content.md)
                + [Vertaalde Publish-inhoud](/help/journey-sites/translation/publish-content.md)
-            + [Dagboekreis zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
+            + [ Zwaardeloze Vertaalreis ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [Inhoud vertalen voor meertalige sites](/help/sites-cloud/administering/translation/overview.md)
             + [Inhoud voorbereiden voor vertaling](/help/sites-cloud/administering/translation/preparation.md)
             + [Vertaalprojecten beheren](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -432,11 +432,11 @@ ht-degree: 3%
    + [Real Use Monitoring voor AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Overzicht en nieuwe functies](/help/assets/overview.md)
-   + [Opmerkelijke wijzigingen in [!DNL Assets] als [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
+   + [Notable Veranderingen in  [!DNL Assets]  als a  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] architectuur](/help/assets/architecture.md)
    + [Ondersteunde bestandsindelingen](/help/assets/file-format-support.md)
    + [Overzicht van microservices voor bedrijfsmiddelen](/help/assets/asset-microservices-overview.md)
-   + [Toegankelijkheid [!DNL Assets]](/help/assets/accessibility.md)
+   + [Toegankelijkheid in  [!DNL Assets]](/help/assets/accessibility.md)
    + Digitale middelen beheren {#manage}
       + [Micro-Frontend element selecteren](/help/assets/asset-selector.md)
       + [Micro-front-bestemmingskiezer](/help/assets/destination-selector.md)
@@ -452,10 +452,10 @@ ht-degree: 3%
       + [Slimme tags voor afbeeldingen](/help/assets/smart-tags.md)
       + [Slimme tag toewijzen aan video-elementen](/help/assets/smart-tags-video-assets.md)
       + [Elementen ordenen](/help/assets/organize-assets.md)
-      + [Gebruiken [!DNL Adobe Stock] elementen](/help/assets/aem-assets-adobe-stock.md)
+      + [De activa van het gebruik  [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
       + [Verzamelingen beheren](/help/assets/manage-collections.md)
       + [Overzicht van metagegevens](/help/assets/manage-metadata.md)
-      + [Integreren met [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integreren met  [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
       + [Metagegevens toevoegen of bewerken](/help/assets/meta-edit.md)
       + [Mapelementen en -verzamelingen controleren](/help/assets/bulk-approval.md)
       + [Assets Insights gebruiken en configureren](/help/assets/assets-insights.md)
@@ -468,7 +468,7 @@ ht-degree: 3%
       + [Persoonlijke mappen maken en delen](/help/assets/private-folder.md)
       + [Digital Rights Management voor elementen](/help/assets/drm.md)
       + [Watermerkelementen](/help/assets/watermark-assets.md)
-      + [Elementen verwerken met [!DNL Creative Cloud] API&#39;s](/help/assets/cc-api-integration.md)
+      + [De activa van het proces die  [!DNL Creative Cloud]  APIs gebruiken](/help/assets/cc-api-integration.md)
       + [Kleurlabels voor afbeeldingen](/help/assets/color-tag-images.md)
       + [PDF-documenten beheren](/help/assets/manage-pdf-documents.md)
    + Configureren, beheren en uitbreiden [!DNL Assets] {#admin}
@@ -490,9 +490,9 @@ ht-degree: 3%
       + [Metagegevens van elementen importeren en exporteren](/help/assets/metadata-import-export.md)
       + [Beperkingen voor het uploaden van middelen configureren](/help/assets/configure-asset-upload-restrictions.md)
    + Assets delen en distribueren {#brand-portal}
-      + [Configureren [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [Publish-middelen naar [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Publish-middelen van [!DNL Brand Portal] tot [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+      + [Vorm  [!DNL Assets]  met  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [Publish-elementen naar  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
+      + [ de activa van Publish van  [!DNL Brand Portal]  aan  [!DNL Assets] ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
    + Contentfragmenten {#content-fragments}
       + [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)
       + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -508,7 +508,7 @@ ht-degree: 3%
       + [Voorvertoning - JSON-representatie](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [Inhoudsfragmenten opnieuw gebruiken met MSM (voor Assets)](/help/assets/content-fragments/content-fragments-msm.md)
    +  Dynamic Media {#dynamicmedia}
-      + Dynamic Media Journey: De basis {#dm-journey}
+      + Dynamic Media-reis: de basis {#dm-journey}
          + [Deel I: Wat is Dynamic Media - Gebruik van gevallen - Hoe een actief door het systeem stroomt](/help/assets/dynamic-media/dm-journey-part1.md)
          + [Deel II: Anatomie van een Dynamic Media URL - Grondbeginselen van voorinstellingen voor afbeeldingen - Informatie over afbeeldingssets, centrifuges en gemengde-mediasets](/help/assets/dynamic-media/dm-journey-part2.md)
          + [Aanbevolen procedures voor Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md)
@@ -572,7 +572,7 @@ ht-degree: 3%
          + [AEM Assets op afstand integreren met AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [Veelgestelde vragen](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Aangepast domein configureren](/help/assets/configure-custom-domain.md)
-   + Werken met de weergave Assets {#assets-view}
+   + Werken met de Assets-weergave {#assets-view}
       + [Inleiding](/help/assets/assets-view-introduction.md)
       + [Aan de slag](/help/assets/get-started-assets-view.md)
       + [Mijn Workspace](/help/assets/my-workspace-assets-view.md)
@@ -604,23 +604,23 @@ ht-degree: 3%
       + [Elementen downloaden met Content Hub](/help/assets/download-assets-content-hub.md)
       + [Verzamelingen beheren in Content Hub](/help/assets/collections-content-hub.md)
       + [Afbeeldingen bewerken met Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
-      + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
-   + Aanbevolen procedures{#best-practices}
+      + [ Inzichten van Activa in Content Hub ](/help/assets/insights-content-hub.md)
+   + Aanbevolen werkwijzen {#best-practices}
       + [Beste werkwijzen zoeken](/help/assets/search-best-practices.md)
       + [Metagegevensbeheer en best practices](/help/assets/metadata-best-practices.md)
    + Integratie met Adobe Workfront {#integrations}
-      + [Integratie met [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
+      + [Integraties met  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Toewijzing van metagegevens van elementen configureren](/help/assets/configure-asset-metadata-mapping.md)
-      + [Installeren [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+      + [Installeren  [!DNL enhanced connector]  voor  [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Externe afhankelijkheden voor bestaande installaties verwijderen](/help/assets/remove-external-dependencies.md)
-      + [Configureren [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Bijwerken [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Vorm  [!DNL enhanced connector]  voor  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Bijwerken  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integratie met Adobe Express {#integration-adobe-express}
-      + [Native integratie met Adobe Express](/help/assets/native-integration-adobe-express.md)
+      + [ Inheemse integratie met Adobe Express ](/help/assets/native-integration-adobe-express.md)
 
    + Integratie met Creative Cloud {#integration-creative-cloud}
-      + [AEM Assets verbinden met Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+      + [ verbind AEM Assets met Creative Cloud ](/help/assets/connect-assets-with-creative-cloud.md)
 
 + Forms {#forms}
    + Overzicht {#forms-overview}
@@ -636,13 +636,13 @@ ht-degree: 3%
       + [Een lokale ontwikkelomgeving instellen](/help/forms/setup-local-development-environment.md)
       + [Aangepaste Forms Core-componenten inschakelen in de as a Cloud Service en lokale ontwikkelomgeving van AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
       + [Unified Storage Connector configureren](/help/forms/configure-unified-storage-connector.md)
-      + [Migreren van [!DNL AEM 6.5 Forms] of eerder [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Migreer van  [!DNL AEM 6.5 Forms]  of vroeger aan  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groepen en machtigingen](/help/forms/forms-groups-privileges-tasks.md)
       + [Aangepaste Forms, PDF forms en andere middelen importeren, exporteren en organiseren](/help/forms/import-export-forms-templates.md)
    + Aan de slag {#getting-started-forms}
       + [Gebruik hoofdletters en kleine letters en ontwikkelomgeving voor instellingen](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Het aanvraagformulier voor een lening maken](/help/forms/create-adaptive-form-tutorial.md)
-   + Integreren {#integrate}
+   + Integeren {#integrate}
       + Services {#services}
          + [AEM Forms as a Cloud Service integreren met Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [AEM Forms as a Cloud Service integreren met DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
@@ -657,10 +657,10 @@ ht-degree: 3%
       + Formuliergegevensmodel {#use-form-data-model}
          + [AEM Forms verbinden met database of gegevensbron](/help/forms/data-integration.md)
          + [Gegevensbronnen configureren](/help/forms/configure-data-sources.md)
-         + [Configureren [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Vorm  [!DNL Microsoft Dynamics]  OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Aangepast formulier aansluiten op Salesforce-toepassing met OAuth 2.0-clientreferentie](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configureren [!DNL Azure] opslag](/help/forms/configure-azure-storage.md)
-         + [Configureren [!DNL Microsoft Dynamics 365] en [!DNL Salesforce] cloudservices](/help/forms/configure-msdynamics-salesforce.md)
+         + [Vorm  [!DNL Azure]  opslag](/help/forms/configure-azure-storage.md)
+         + [Vorm  [!DNL Microsoft Dynamics 365]  en  [!DNL Salesforce]  de clouddiensten](/help/forms/configure-msdynamics-salesforce.md)
          + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
          + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
          + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
@@ -668,7 +668,7 @@ ht-degree: 3%
       + [Een adaptief formulier maken](/help/forms/create-an-adaptive-form.md)
       + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments.md)
       + [Een adaptief formulier toevoegen aan een AEM Sites-pagina of Ervaar fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + Kernonderdelen {#authoring-adaptive-forms-core-components}
+      + Core Components {#authoring-adaptive-forms-core-components}
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
             + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments-core-components.md)
@@ -694,13 +694,13 @@ ht-degree: 3%
             + [Regels toevoegen aan een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components.md)
             + [JSON-schema ontwerpen voor een adaptief formulier (kerncomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Versies, opmerkingen en annotaties toevoegen aan een adaptief formulier](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [Adaptieve Forms vergelijken](/help/forms/compare-forms.md)
+            + [ vergelijk Adaptieve Forms ](/help/forms/compare-forms.md)
             + [Adaptieve Forms op basis van basiscomponenten converteren naar Core-componentformulieren met migratiehulpprogramma](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Een adaptief formulier opslaan als concept](/help/forms/save-core-component-based-form-as-draft.md)
       + Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + Uw PDF forms converteren naar Adaptieve Forms {#afcs}
             + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
-            + [Een bestaand PDF-formulier converteren naar een adaptief formulier](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+            + [ zet een bestaande Vorm van PDF in een Aangepaste Vorm ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) om
             + [Geconverteerde formulieren controleren en corrigeren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Inleiding tot het ontwerpen van een adaptieve Forms](/help/forms/introduction-forms-authoring.md)
@@ -714,11 +714,11 @@ ht-degree: 3%
             + [CAPTCHA gebruiken in een adaptieve vorm](/help/forms/captcha-adaptive-forms.md)
             + [Captcha gebruiken in een adaptieve vorm](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [Draaien in een adaptieve vorm gebruiken](/help/forms/integrate-adaptive-forms-turnstile.md)
-            + [Core-componenten gebruiken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+            + [ Componenten van de Kern van het Gebruik ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [Krabbelen toepassen](/help/forms/signing-forms-using-scribble.md)
             + [Een tabel toevoegen aan een adaptief formulier](/help/forms/adaptive-forms-tables.md)
             + [Ondersteuning voor voetnoten toevoegen aan een adaptief formulier](/help/forms/footnotes-richtextsupport.md)
-         + Indeling configureren en stijl toepassen op een adaptief formulier{#configure-layout-of-an-adaptive-form}
+         + Vorm lay-out en pas stijl op een Aangepast Vorm toe {#configure-layout-of-an-adaptive-form}
             + [De indeling van een adaptief formulier instellen](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Gebruik de modus Lay-out om het formaat van componenten te wijzigen](/help/forms/resize-using-layout-mode.md)
             + [Ervaring met het vastleggen van gegevens in meerdere stappen maken](/help/forms/introduction-form-sequence.md)
@@ -726,9 +726,9 @@ ht-degree: 3%
          + Regels toevoegen en expressies gebruiken in een adaptieve vorm {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Regels toevoegen aan een adaptief formulier](/help/forms/rule-editor.md)
             + [Voeg de manager van de douanefout toe gebruikend de Invoke van de Redacteur van de Regel dienst](/help/forms/add-custom-error-handler-adaptive-forms.md)
-         + Gebruiken [!DNL Adobe Sign] {#use-adobe-sign}
+         + Gebruik [!DNL Adobe Sign] {#use-adobe-sign}
             + [Adobe Sign gebruiken om een adaptief formulier elektronisch te ondertekenen](/help/forms/working-with-adobe-sign.md)
-         + Handelingen en metagegevens verzenden configureren {#configure-submit-actions-and-metadata-submission}
+         + Handelingen voor verzending en verzending van metagegevens configureren {#configure-submit-actions-and-metadata-submission}
             + [Handeling voor verzenden instellen voor een adaptief formulier](/help/forms/configuring-submit-actions.md)
             + [Omleidingspagina configureren](/help/forms/configuring-redirect-page.md)
             + [Asynchrone verzending voor een adaptief formulier configureren](/help/forms/asynchronous-submissions-adaptive-forms.md)
@@ -763,10 +763,10 @@ ht-degree: 3%
       + [Een transactie opnemen voor een aangepaste implementatie](/help/forms/record-transaction-custom-implementation.md)
       + [Het dashboard voor het realiseren van uw waarde](/help/forms/aem-forms-value-realization-dashboard.md)
    + Referentie ontwikkelings-API {#aem-forms-developer-api-reference}
-      + [Aangepaste Forms API-naslaggids](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
-      + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [AEM Forms Cloud Service JavaScript API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [AEM Forms Cloud Service Java API Naslaggids](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
+      + [ Aangepaste Forms API verwijzing ](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [ Communicatie API van de Cloud Service van AEM Forms Verwijzing ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [ AEM Forms Cloud Service JavaScript API Verwijzing ](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [ de Verwijzing van Java API van de Cloud Service van AEM Forms ](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + Problemen oplossen {#troubleshooting-aem-forms-cloud-service}
       + [Installatie en configuratie](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher- en CDN-caching](/help/forms/troubleshooting-caching-performance.md)
@@ -777,7 +777,7 @@ ht-degree: 3%
       + [Inleiding](/help/screens-cloud/introduction/introduction.md)
       + [Roldefinities begrijpen](/help/screens-cloud/introduction/personas-screens-cloud.md)
       + [Adobe Analytics-integratie met Screens Cloud](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
-   + Onboarding naar Screens as a Cloud Service {#onboarding-screens-cloud}
+   + Aan boord gaan naar Screens as a Cloud Service {#onboarding-screens-cloud}
       + [Eerste aanmelding](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + Screens-programma toevoegen als invoegtoepassing in Cloud Manager {#adding-screens-addon}
          + [Screens-programma toevoegen als invoegtoepassing aan een nieuw programma](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)
@@ -790,7 +790,7 @@ ht-degree: 3%
       + [Screens Content Provider gebruiken](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Screens Video-uitvoeringen maken](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Dispatcher configureren voor Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [Tijdlijnweergaven configureren voor Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [ het Vormen de Kijken van de Chronologie voor as a Cloud Service Screens ](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + Inhoud maken {#create-content}
       + [Een project maken en beheren in de Screens Content Provider](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Een kanaal maken en beheren in de Screens Content Provider](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -813,7 +813,7 @@ ht-degree: 3%
    + [Inleiding en overzicht](/help/commerce-cloud/introduction.md)
    + [Opvallende wijzigingen in AEM inhoud en Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
    + Commerce-reizen {#journeys}
-      + Reis van auteur van inhoud {#author}
+      + Reis van inhoudsauteur {#author}
          + [AEM Inhoud en Commerce Content Author Reis](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
          + [Aan de slag met CIF ontwerpen](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
          + [Productcataloguspagina&#39;s en -sjabloon beheren](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
@@ -866,7 +866,7 @@ ht-degree: 3%
       + [Sitemap](/help/edge/developer/sitemap.md)
       + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
       + [Slack Bot](/help/edge/docs/slack.md)
-   + Toepassingen maken {#build}
+   + Toepassingen samenstellen {#build}
       + [Aan de slag - Zelfstudie voor ontwikkelaars](/help/edge/developer/tutorial.md)
       + [Anatomie van een project](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [Blokverzameling](/help/edge/developer/block-collection.md)
@@ -910,19 +910,19 @@ ht-degree: 3%
       + Sidekick {#sidekick}
          + [Sidekick gebruiken](/help/edge/docs/sidekick.md)
          + [Extensie installeren](/help/edge/docs/sidekick-extension.md)
-         + [Projectconfiguratie](https://www.aem.live/tools/sidekick/)
+         + [ Configurator van het Project ](https://www.aem.live/tools/sidekick/)
          + [Sidekick Library](/help/edge/docs/sidekick-library.md)
       + [Veelgestelde vragen](/help/edge/docs/faq.md)
-      + [Admin-API](https://www.aem.live/docs/admin.html)
-      + [AEM](https://www.aemstatus.net)
+      + [ Admin API ](https://www.aem.live/docs/admin.html)
+      + [ AEM Status ](https://www.aemstatus.net)
       + Gereedschappen {#tools}
-         + [AEM Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Github Bot](https://github.com/apps/aem-code-sync)
+         + [ de Uitbreiding van Chrome van de AEM Sidekick ](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [ Github Bot ](https://github.com/apps/aem-code-sync)
          + [Controlelogboek](/help/edge/docs/auditlog.md)
 + Koploos {#headless}
    + [Wat is een headless CMS?](/help/headless/what-is-headless.md)
    + [Inleiding tot AEM zonder kop](/help/headless/introduction.md)
-   + [Developer Portal (aanvullende bronnen)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [ Portaal van de Ontwikkelaar (Aanvullende Middelen) ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [Beste praktijken - Opstelling en Gebruik](/help/headless/best-practices-setup-use.md)
    + Instellen {#setup}
       + [Inleiding](/help/headless/setup/introduction.md)
@@ -935,12 +935,12 @@ ht-degree: 3%
       + [Overzicht](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
       + [Modellen van contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
       + [Contentfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
-      + Authoring{#authoring}
-         + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
-         + [Markeringseditor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
-      + [Boomstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
-      + [JSON-voorvertoning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
-   + GRAPHQL API {#graphql-api}
+      + Authoring {#authoring}
+         + [ Authoring ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [ de redacteur van de Prijsverlaging ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [ de Boom van de Structuur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [ Voorproef JSON ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
+   + GraphQL API {#graphql-api}
       + [GraphQL API voor inhoudsfragmenten](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL-eindpunten beheren](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
@@ -950,7 +950,7 @@ ht-degree: 3%
       + [Voorbeeld van GraphQL-query&#39;s](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL-query&#39;s oplossen](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [Content Fragments and Models OpenAPIs](/help/headless/content-fragment-openapis.md)
-   + [Ondersteuning voor inhoudsfragmenten in Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+   + [ de steun van de Fragmenten van de Inhoud in HTTP API van Assets ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + Beveiliging {#security}
       + [Machtigingen](/help/headless/security/permissions.md)
       + [Verificatie](/help/headless/security/authentication.md)
@@ -960,7 +960,7 @@ ht-degree: 3%
       + [Dispatcher - Enable Caching for Persisted Queries](/help/headless/deployment/dispatcher-caching.md)
       + [CORS Config](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Refererfilter](/help/headless/deployment/referrer-filter.md)
-   + Reizen zonder hoofd {#journeys}
+   + Reizen zonder kop {#journeys}
       + Headless Developer Journey {#developer}
          + [Doorschijnend begrijpen in AEM](/help/journey-headless/developer/overview.md)
          + [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
@@ -972,13 +972,13 @@ ht-degree: 3%
          + [Hoe kan ik het allemaal samenbrengen?](/help/journey-headless/developer/put-it-all-together.md)
          + [Live gaan met uw toepassing zonder kop](/help/journey-headless/developer/go-live.md)
          + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](/help/journey-headless/developer/create-spa.md)
-         + [Developer Portal (aanvullende bronnen)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-      + Reis voor architect zonder hoofdinhoud {#architect}
+         + [ Portaal van de Ontwikkelaar (Aanvullende Middelen) ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+      + Reis zonder inhoud voor architect {#architect}
          + [Reis van architect zonder hoofdinhoud AEM overzicht](/help/journey-headless/architect/overview.md)
          + [Content Modeling for Headless with AEM - Een introductie](/help/journey-headless/architect/introduction.md)
          + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](/help/journey-headless/architect/basics.md)
          + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](/help/journey-headless/architect/model-structure.md)
-      + Dagboekreis zonder hoofd {#translation}
+      + Dagboekreis zonder koppen {#translation}
          + [Begrijp zonder hoofd vertaling in AEM](/help/journey-headless/translation/overview.md)
          + [Ga aan de slag met AEM headless vertaling](/help/journey-headless/translation/getting-started.md)
          + [Meer informatie over inhoud zonder kop en hoe u kunt vertalen in AEM](/help/journey-headless/translation/learn-about.md)
@@ -1036,7 +1036,7 @@ ht-degree: 3%
          + [Overzicht](/help/implementing/cloud-manager/overview-test-results.md)
          + [Testen van de codekwaliteit](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Aangepaste regels voor codekwaliteit](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-         + Functionele tests {#functional-testing}
+         + Functioneel testen {#functional-testing}
             + [Overzicht van functionele tests](/help/implementing/cloud-manager/functional-testing.md)
             + [Functioneel testen in Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
@@ -1048,7 +1048,7 @@ ht-degree: 3%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Meldingen](/help/implementing/cloud-manager/notifications.md)
-      + [Geavanceerde netwerken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
+      + [ Geavanceerde Voorzien van een netwerk ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + SSL-certificaten {#manage-ssl-certificates}
          + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
@@ -1088,7 +1088,7 @@ ht-degree: 3%
       + [Sites ontwikkelen met behulp van de voorste pijplijn](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Sitesjablonen en -thema&#39;s aanpassen](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [Hoofdletters en headless in AEM](/help/implementing/developing/headful-headless.md)
-      + Volledige AEM {#full-stack}
+      + Volledige AEM ontwikkelen {#full-stack}
          + [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [Structuur van de AEM-interface](/help/implementing/developing/introduction/ui-structure.md)
          + [Sling Cheatsheet](/help/implementing/developing/introduction/sling-cheatsheet.md)
@@ -1103,7 +1103,7 @@ ht-degree: 3%
          + Componenten en sjablonen {#components-templates}
             + [Overzicht van componenten](/help/implementing/developing/components/overview.md)
             + [Sjablonen](/help/implementing/developing/components/templates.md)
-            + [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+            + [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
             + [JSON-exportfunctie voor services voor inhoud](/help/implementing/developing/components/json-exporter.md)
             + [JSON-export inschakelen voor een component](/help/implementing/developing/components/enabling-json-exporter.md)
@@ -1126,17 +1126,17 @@ ht-degree: 3%
          + [Modeldefinities, velden en componenttypen](/help/implementing/universal-editor/field-types.md)
          + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
          + [Gebeurtenissen](/help/implementing/universal-editor/events.md)
-         + [Aanpassen](/help/implementing/universal-editor/customizing.md)
+         + [ het Aanpassen ](/help/implementing/universal-editor/customizing.md)
          + [Architectuur](/help/implementing/universal-editor/architecture.md)
          + [Verificatie](/help/implementing/universal-editor/authentication.md)
          + [Aan de slag](/help/implementing/universal-editor/getting-started.md)
          + [Overzicht van ontwikkelaars](/help/implementing/universal-editor/developer-overview.md)
          + [Lokale AEM](/help/implementing/universal-editor/local-dev.md)
-         + [Roept](/help/implementing/universal-editor/calls.md)
-      + [Erviteitsbeheer zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
+         + [ Vraag ](/help/implementing/universal-editor/calls.md)
+      + [ het Beheer van de Ervaring zonder hoofd ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + Hybride en SPA ontwikkeling {#hybrid}
-         + [Hybride en SPA met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [ Hybride en SPA met AEM ](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [ toelatend de Uitvoer JSON voor een Component ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [SPA Inleiding en Analyse](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND-zelfstudie](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Aan de slag met Reageren](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -1152,7 +1152,7 @@ ht-degree: 3%
          + [Een externe SPA bewerken in AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [Samengestelde onderdelen in SPA](/help/implementing/developing/hybrid/composite-components.md)
          + [Rendering serverzijde](/help/implementing/developing/hybrid/ssr.md)
-         + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [ toelatend de Uitvoer JSON voor een Component ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [Integratie starten](/help/implementing/developing/hybrid/launch-integration.md)
          + [Referentiedocumenten SPA](/help/implementing/developing/hybrid/reference-materials.md)
          + [De serialisatie van ResourceResolvers via Sling Model Exporter niet toestaan](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
@@ -1175,9 +1175,9 @@ ht-degree: 3%
       + [ContextHub Diagnostics](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [ContextHub uitbreiden](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub-API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [Het vormen Segmentatie met ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
+      + [ het Vormen Segmentatie met ContextHub ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
    + AEM as a Cloud Service configureren en uitbreiden {#configuring-and-extending}
-      + AEM uitbreiden met App Builder{#app-builder}
+      + AEM uitbreiden met App Builder {#app-builder}
          + [AEM uitbreiden met Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Inleiding tot App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1241,7 +1241,7 @@ ht-degree: 3%
    + [Self-Service terugzetten](/help/operations/restore.md)
    + [Asynchrone taken](/help/operations/asynchronous-jobs.md)
    + [Verwijdering van de generieke index van de lucene](/help/operations/removal-generic-lucene-index.md)
-   + [Aanbevolen werkwijzen voor query en indexering](/help/operations/query-and-indexing-best-practices.md)
+   + [ Vraag en het Indexeren Beste Praktijken ](/help/operations/query-and-indexing-best-practices.md)
 + Compatibiliteit {#compliance}
    + [Naleving in AEM as a Cloud Service](/help/compliance/home.md)
    + Gereedheid voor gegevensprivacy en -beveiliging {#data-privacy}

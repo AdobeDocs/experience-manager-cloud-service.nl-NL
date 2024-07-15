@@ -19,16 +19,16 @@ Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de init
 
 Om AEM beheerders toe te staan om plaatsen snel tot stand te brengen die aan bedrijfsbehoeften worden aangepast, AEM steunt het creëren van nieuwe plaatsen door plaatsmalplaatjes en plaatsthema&#39;s te gebruiken.
 
-* An **Sjabloon AEM** bevat over het algemeen inhoud en structuur van de basissite en informatie over de siteopmaak, het thema van de site genoemd, zodat u snel met de nieuwe site kunt beginnen. Sjablonen zijn krachtig omdat ze opnieuw kunnen worden gebruikt en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
-* An **Sitethema AEM** is een pakket met de CSS-, JavaScript- en statische bronnen die de opmaak van uw AEM site definiëren en die voldoet aan de structuur van een AEM-sitethema.
+* Een **AEM plaatssjabloon** bevat over het algemeen de inhoud en de structuur van de basisplaats en plaats het stileren informatie, die als plaatsthema wordt bekend, om nieuwe plaats snel begonnen te krijgen. Sjablonen zijn krachtig omdat ze opnieuw kunnen worden gebruikt en aanpasbaar zijn. En aangezien u veelvoudige malplaatjes beschikbaar in uw AEM installatie kunt hebben, hebt u de flexibiliteit om verschillende plaatsen tot stand te brengen om aan diverse bedrijfsbehoeften te voldoen.
+* Een **AEM plaatsthema** is een pakket dat CSS, JavaScript, en statische middelen bevat die het stileren van uw AEM plaats bepalen en aan de structuur van een AEM plaatsthema voldoet.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Omdat [site maken](/help/sites-cloud/administering/site-creation/create-site.md) is over het algemeen de verantwoordelijkheid van de AEM beheerder, zie de beleidsdocumentatie voor meer details over het aanpassen van plaatssjablonen en thema&#39;s.
+Omdat [ plaatsverwezenlijking ](/help/sites-cloud/administering/site-creation/create-site.md) over het algemeen de verantwoordelijkheid van de AEM beheerder is, zie de beleidsdocumentatie voor meer details bij het aanpassen van plaatsmalplaatjes en thema&#39;s.
 
-* [Sitesjablonen](/help/sites-cloud/administering/site-creation/site-templates.md) - Leer hoe AEM sitesjablonen kunnen worden gebruikt om de sitestructuur en de initiële inhoud vooraf te definiëren, zodat u snel nieuwe sites kunt maken.
-* [Sitethema&#39;s](/help/sites-cloud/administering/site-creation/site-themes.md) - Leer hoe AEM sitethema&#39;s kunnen worden gebruikt om de stijl en het ontwerp van uw site aan te passen.
+* [ Malplaatjes van de Plaats ](/help/sites-cloud/administering/site-creation/site-templates.md) - leer hoe AEM plaatssjablonen kunnen worden gebruikt om plaatsstructuur en aanvankelijke inhoud vooraf te bepalen om u toe te staan om nieuwe plaatsen snel tot stand te brengen.
+* [ Thema&#39;s van de Plaats ](/help/sites-cloud/administering/site-creation/site-themes.md) - leer hoe AEM plaatsthema&#39;s kunnen worden gebruikt om de stijl en het ontwerp van uw plaats aan te passen.
 
 >[!TIP]
 >
->Een end-to-end beschrijving van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in worden gevonden [Reis voor snel maken van site](/help/journey-sites/quick-site/overview.md).
+>Een beschrijving van begin tot eind van het proces om een plaats van een malplaatje te creëren en zijn thema aan te passen kan in de [ Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md) worden gevonden.

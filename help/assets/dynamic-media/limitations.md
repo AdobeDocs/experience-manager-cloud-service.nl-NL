@@ -30,11 +30,11 @@ Wanneer u een centrifugeset of een Afbeeldingsset maakt of PDF uploadt voor het 
 
 | Element - Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
-| **Afbeelding** - Aantal slimme uitsnijdingen per afbeelding | 5 | 100 |
-| **Alle sets** - Aantal dubbele elementen per set | Geen duplicaten | 20 |
-| **Alle sets** - Maximumaantal activa per set | 5-10 afbeeldingen per set | 1000 |
-| **Set draaien** - Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
-| **PDF** - Maximumaantal pagina&#39;s voor een PDF dat in aanmerking komt voor extractie |  | 100 (voor alle PDF) |
+| **Beeld** - Aantal Slimme Gewas per beeld | 5 | 100 |
+| **Alle reeksen** - Aantal dubbele activa per reeks | Geen duplicaten | 20 |
+| **Alle reeksen** - Maximum aantal activa per reeks | 5-10 afbeeldingen per set | 1000 |
+| **Reeks van de Draai** - Maximum aantal rijen/kolommen per 2D reeks | 12-18 afbeeldingen per set | 1000 |
+| **PDF** - Maximum aantal pagina&#39;s voor een PDF die voor extractie moet worden overwogen |  | 100 (voor alle PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 

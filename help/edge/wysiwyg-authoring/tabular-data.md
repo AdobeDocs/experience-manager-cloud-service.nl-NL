@@ -18,7 +18,7 @@ Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschillende waarden,
 
 ## Gevallen gebruiken {#use-cases}
 
-Voor om het even welke AEM met de plaats van Edge Delivery Services, is er een behoefte om lijsten van tabelgegevens zoals voor sleutel-waarde afbeeldingen te handhaven. Dit kunnen lijsten van vele verschillende waarden zoals meta-gegevens en omleiding zijn. Met Edge Deliver Services kunt u dergelijke tabellijsten bijhouden met behulp van een intuïtief gereedschap: het werkblad. AEM zet deze spreadsheets om in JSON-bestanden die eenvoudig door uw website of webtoepassing kunnen worden gebruikt.
+Voor om het even welke AEM met de plaats van Edge Delivery Services, is er een behoefte om lijsten van tabelgegevens zoals voor sleutel-waarde afbeeldingen te handhaven. Dit kunnen lijsten van vele verschillende waarden zoals meta-gegevens en omleiding zijn. Met Edge Deliver Services kunt u dergelijke tabellijsten bijhouden met behulp van een intuïtief hulpprogramma: de spreadsheet. AEM zet deze spreadsheets om in JSON-bestanden die eenvoudig door uw website of webtoepassing kunnen worden gebruikt.
 
 Vaak voorkomende gevallen van gebruik zijn:
 
@@ -26,72 +26,72 @@ Vaak voorkomende gevallen van gebruik zijn:
 * [Metagegevens](/help/edge/docs/bulk-metadata.md)
 * [Kopteksten](/help/edge/docs/custom-headers.md)
 * [Omleiding](/help/edge/docs/redirects.md)
-* [Configuraties](/help/edge/docs/setup-byo-cdn-push-invalidation.md) zoals voor CND-instellingen
+* [ Configuraties ](/help/edge/docs/setup-byo-cdn-push-invalidation.md) zoals voor montages CND
 
-Bovendien kunt u [spreadsheets maken](#own-spreadsheet) van elke structuur om toewijzingen voor eigen doeleinden op te slaan.
+Bovendien kunt u uw spreadsheets ](#own-spreadsheet) van om het even welke structuur tot stand brengen om afbeeldingen voor uw eigen doeleinden op te slaan.[
 
 Dit document gebruikt het voorbeeld van omleidingen om te illustreren hoe u dergelijke spreadsheets kunt maken. Zie de eerder-verbonden onderwerpen in de documentatie van Edge Delivery Services voor details van elk gebruiksgeval.
 
 >[!TIP]
 >
->Raadpleeg het document voor meer informatie over hoe spreadsheets in het algemeen werken met Edge Delivery Services [Spreadsheets en JSON.](/help/edge/developer/spreadsheets.md)
+>Voor meer informatie over hoe spreadsheets in het algemeen met Edge Delivery Services werken, zie gelieve het document [ Spreadsheets en JSON.](/help/edge/developer/spreadsheets.md)
 
 >[!TIP]
 >
->Spreadsheets mogen alleen worden gebruikt om tabelgegevens te onderhouden. voor de opslag van gestructureerde gegevens, [bekijk AEM functies zonder kop.](/help/headless/introduction.md)
+>Spreadsheets mogen alleen worden gebruikt om tabelgegevens te onderhouden. Voor het opslaan van gestructureerde gegevens, [ controle uit AEM het installeren van headless eigenschappen.](/help/headless/introduction.md)
 
 ## Vereisten {#prerequisites}
 
 Als u toewijzingen wilt maken met behulp van spreadsheets in uw AEM met Edge Delivery Services-project, moet u uw site hebben gemaakt met de nieuwste sitesjabloon.
 
-Zie het document [Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG-authoring met Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) voor meer informatie .
+Gelieve te zien de document [ Begonnen Gids van de Ontwikkelaar krijgen voor het schrijven WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) voor meer informatie.
 
 ## Een werkblad maken {#spreadsheet}
 
-In dit voorbeeld maakt u een spreadsheet voor het beheren van omleidingen voor uw AEM met de site Edge Delivery Services. Dezelfde stappen gelden voor [andere spreadsheettypen](#other) die u wilt maken.
+In dit voorbeeld maakt u een spreadsheet voor het beheren van omleidingen voor uw AEM met de site Edge Delivery Services. De zelfde stappen zijn op [ andere spreadsheettypes ](#other) van toepassing die u wenst te creëren.
 
-1. Meld u aan bij uw AEM as a Cloud Service ontwerpinstantie en ga naar de **Sites** en navigeer naar de hoofdmap van de site waarvoor een spreadsheet nodig is. Tik of klik op **Maken** -> **Pagina**.
+1. Teken binnen aan uw het auteursinstantie van AEM as a Cloud Service, ga naar de **console van Plaatsen**, en navigeer aan de wortel van de plaats die een spreadsheet vereist. Tik of klik **creeer** -> **Pagina**.
 
-   ![Pagina maken](assets/tabular-data/tabular-data-create-page.png)
+   ![ creeer pagina ](assets/tabular-data/tabular-data-create-page.png)
 
-1. Op de **Sjabloon** tikt of klikt u op de knop **Omleiding** sjabloon om het te selecteren en vervolgens te tikken of te klikken **Volgende**.
+1. Op het **Malplaatje** lusje van creeer paginatovenaar, ontvang of klik **richt** malplaatje opnieuw om het te selecteren en dan te onttikken of **daarna** te klikken.
 
-   ![Sjabloon selecteren](assets/tabular-data/tabular-data-create-page-teamplate-redirects.png)
+   ![ Uitgezochte malplaatje ](assets/tabular-data/tabular-data-create-page-teamplate-redirects.png)
 
-1. De **Eigenschappen** tabblad van de wizard geeft de standaardwaarden voor het spreadsheet voor omleidingen weer. Tik of klik op **Maken**.
+1. Het **lusje van Eigenschappen** van de tovenaar stelt de standaardwaarden voor opnieuw richt spreadsheet voor. Tik of klik **creeer**.
 
-   * **Titel** - Laat deze waarde ongewijzigd.
-   * **Kolommen** - De minimale kolommen die nodig zijn voor omleidingen zijn vooraf ingevuld.
-      * **bron** - De pagina die opnieuw moet worden omgeleid
-      * **doel** - De pagina waarnaar moet worden omgeleid
+   * **Titel** - verlaat deze waarde zoals-is.
+   * **Kolommen** - de minimumkolommen nodig voor redirects zijn prepopulated.
+      * **bron** - de pagina die moet worden opnieuw gericht
+      * **bestemming** - de pagina aan redirect aan
 
-   ![Eigenschappen van het werkblad](assets/tabular-data/tabular-data-create-page-properties-redirects.png)
+   ![ Eigenschappen van spreadsheet ](assets/tabular-data/tabular-data-create-page-properties-redirects.png)
 
-1. In de **Succes** openen, tikken of klikken **Openen**.
+1. In de **dialoog van het Succes**, tik of klik **Open**.
 
-   ![Dialoogvenster Succes](assets/tabular-data/tabular-data-success.png)
+   ![ de dialoog van het Succes ](assets/tabular-data/tabular-data-success.png)
 
-1. Er wordt een nieuw tabblad geopend met de spreadsheet die in een editor is geladen met de vooraf gedefinieerde **bron** en **doel** kolommen. Tik of klik op de lege rij van de **bron** kolom. Wijzigingen worden automatisch opgeslagen wanneer u het werkblad bewerkt.
+1. Een nieuw lusje opent met spreadsheet die in een redacteur met vooraf bepaalde **wordt geladen bron** en **bestemmings** kolommen. Om uw redirects te bepalen, tik of klik de lege rij van de **bron** kolom. Wijzigingen worden automatisch opgeslagen wanneer u het werkblad bewerkt.
 
-   ![Werkblad bewerken](assets/tabular-data/tabular-data-edit-redirects.png)
+   ![ geef spreadsheet ](assets/tabular-data/tabular-data-edit-redirects.png) uit
 
-   * De **bron** is relatief ten opzichte van het domein van uw website, zodat het alleen het relatieve pad bevat.
-   * De **doel** Dit kan een volledig gekwalificeerde URL zijn als u een andere website wilt gebruiken of een relatief pad als u een andere website wilt gebruiken.
+   * De **bron** is met betrekking tot het domein van uw website, zodat bevat het slechts de relatieve weg.
+   * De **bestemming** kan of volledig - gekwalificeerde URL zijn als u aan een verschillende website opnieuw richt, of het kan een relatieve weg zijn als u binnen uw eigen website opnieuw richt.
    * Gebruik de Tab-toets om de focus naar de volgende cel te verplaatsen.
    * De redacteur voegt nieuwe rijen aan spreadsheet toe zonodig.
-   * Als u een rij wilt verwijderen of verplaatsen, gebruikt u de opdracht **Verwijderen** aan het einde van elke rij en de sleepgrepen aan het begin van elke rij.
+   * Om een rij te schrappen of te bewegen, gebruik het **1} pictogram van de Schrapping aan het eind van elke rij en de belemmeringshandvatten aan het begin van elke rij, respectievelijk.**
 
 ## Een spreadsheetpad.json publiceren {#paths-json}
 
-Als AEM de gegevens in uw spreadsheet wilt publiceren, moet u bovendien de `paths.json` bestand van uw project.
+Als AEM de gegevens in uw spreadsheet wilt publiceren, moet u het `paths.json` -bestand van uw project bovendien bijwerken.
 
 1. Open de wortel van uw project in GitHub.
 
-1. Tik of klik op de knop `paths.json` om de details te openen en vervolgens de **Bewerken** pictogram.
+1. Tik of klik het `paths.json` dossier om zijn details te openen en dan **geef** pictogram uit.
 
-   ![paths.json, bestand](assets/tabular-data/tabular-data-paths-json.png)
+   ![ paths.json- dossier ](assets/tabular-data/tabular-data-paths-json.png)
 
-1. Voeg een lijn toe om uw nieuwe spreadsheet aan een `redirects.json` resource.
+1. Voeg een lijn toe om uw nieuwe spreadsheet aan een `redirects.json` middel in kaart te brengen.
 
    ```json
    {
@@ -102,23 +102,23 @@ Als AEM de gegevens in uw spreadsheet wilt publiceren, moet u bovendien de `path
    }
    ```
 
-1. Klikken **Wijzigingen vastleggen...** om de wijzigingen op te slaan in `main`.
+1. Klik **Veranderingen vastleggen...** om de veranderingen in `main` te bewaren.
 
-   * Vastleggen aan `main` of maak een pull-aanvraag volgens uw proces.
+   * Leg dit vast aan `main` of maak een pull-aanvraag volgens uw proces.
 
-1. Wanneer u klaar bent met het definiëren van de omleidingen en u de padtoewijzing hebt bijgewerkt, gaat u terug naar de **Sites** console.
+1. Wanneer u klaar bent het bepalen van uw omleidingen en u de wegafbeelding bijwerkte, terugkeer aan de **Sites** console.
 
-1. Tik of klik om het werkblad voor omleiding te selecteren dat u in de console hebt gemaakt en tik of klik op **Snel publiceren** in de actiebalk om het werkblad te publiceren.
+1. Tik of klik om het opnieuw richt spreadsheet te selecteren dat u in de console creeerde en dan **Snelle Publish** in de actiebar tikt of klikt om spreadsheet te publiceren.
 
-   ![De spreadsheet selecteren in de Sites-console](assets/tabular-data/tabular-data-select-publish.png)
+   ![ selecteer spreadsheet in de console van Plaatsen ](assets/tabular-data/tabular-data-select-publish.png)
 
-1. In de **Snel publiceren** openen, tikken of klikken **Publiceren**.
+1. In de **dialoog van 30} Snelle Publish {, tik of klik** Publish **.**
 
-   ![Publiceren bevestigen](assets/tabular-data/tabular-data-quick-publish.png)
+   ![ bevestigt publiceren ](assets/tabular-data/tabular-data-quick-publish.png)
 
 1. Een banner bevestigt de publicatie.
 
-   ![Bannerbevestiging van publicatie](assets/tabular-data/tabular-data-publish-banner.png)
+   ![ bevestiging van de Banner van publicatie ](assets/tabular-data/tabular-data-publish-banner.png)
 
 Het spreadsheet voor omleiding wordt nu gepubliceerd en openbaar gemaakt.
 
@@ -131,37 +131,37 @@ Nu u weet hoe u een spreadsheet voor omleidingen kunt maken, kunt u elk ander st
 * Kopteksten
 * Configuratie
 
-Voer gewoon dezelfde stappen uit in de secties [Werkblad maken](#spreadsheet) en [Paden.json bijwerken](#paths-json) en kiest u de juiste sjabloon en werkt u de `paths.json` bestand naar behoren.
+Volg eenvoudig de zelfde stappen in de secties [ creëren Spreadsheet ](#spreadsheet) en [ Update paths.json ](#paths-json) en kies het aangewezen malplaatje en werk het `paths.json` dossier dienovereenkomstig bij.
 
-Voor [Configuratie](https://www.aem.live/docs/configuration), [Kopteksten](https://www.aem.live/docs/custom-headers) en [Metagegevens](https://www.aem.live/docs/bulk-metadata) zorg ervoor dat u een toewijzing toevoegt om deze naar de standaardlocaties te publiceren:
+Voor [ Configuratie ](https://www.aem.live/docs/configuration), [ Kopballen ](https://www.aem.live/docs/custom-headers) en [ Meta-gegevens ](https://www.aem.live/docs/bulk-metadata) zorgen ervoor om een afbeelding toe te voegen om hen aan hun standaardplaatsen te publiceren:
 
 * Configuratie: `/.helix/config.json`
 * Kopteksten: `/.helix/headers.json`
 * Metagegevens: `/metadata.json`
 
-Bovendien kunt u [uw eigen spreadsheet maken](#own-spreadsheet) met willekeurige kolommen voor eigen gebruik.
+Bovendien, kunt u [ uw eigen spreadsheet ](#own-spreadsheet) met willekeurige kolommen voor uw eigen gebruik tot stand brengen.
 
 >[!NOTE]
 >
->U te hoeven om geen spreadsheet tot stand te brengen om het indexeren voor AEM as a Cloud Service met de projecten van Edge Delivery Services te beheren.
+>U hoeft geen spreadsheet te maken om indexering voor AEM as a Cloud Service met projecten van Edge Delivery Services te beheren.
 >
->Als u uw eigen indexen wilt maken, [volg deze documentatie](https://www.aem.live/developer/indexing#setting-up-more-index-configurations) om uw eigen `helix-query.yaml` bestand.
+>Als u wenst om uw eigen indexen tot stand te brengen, [ te volgen gelieve deze documentatie ](https://www.aem.live/developer/indexing#setting-up-more-index-configurations) om uw eigen `helix-query.yaml` dossier tot stand te brengen.
 
 ## Uw eigen spreadsheet maken {#own-spreadsheet}
 
-1. Voer dezelfde stappen uit in de sectie [Werkblad maken.](#spreadsheet)
+1. Volg de zelfde stappen in de sectie [ creëren Spreadsheet.](#spreadsheet)
 
-1. Als u de sjabloon selecteert, kiest u **Werkblad**.
+1. Wanneer het selecteren van het malplaatje, kies **Spreadsheet**.
 
-1. In de **Eigenschappen** kunt u uw eigen kolommen toevoegen.
+1. In het **lusje van Eigenschappen** van de tovenaar, kunt u uw eigen kolommen toevoegen.
 
-   ![Uw eigen kolommen toevoegen](assets/tabular-data/tabular-data-own-spreadsheet.png)
+   ![ voeg uw eigen kolommen ](assets/tabular-data/tabular-data-own-spreadsheet.png) toe
 
-   * In de **Kolommen** sectie, tikken of klikken **Toevoegen** een nieuwe kolom toevoegen.
+   * In de **sectie van Kolommen**, onttikt of klikt **** toevoegt om een nieuwe kolom toe te voegen.
    * Geef een naam op voor de kolom.
-   * De kolommen verwijderen of opnieuw ordenen met de opdracht **Verwijderen** en sleep handvatpictogrammen, respectievelijk.
+   * Verwijder of reorganiseer de kolommen gebruikend **Schrapping** en belemmering handvatpictogrammen, respectievelijk.
 
 1. Maak het spreadsheet en publiceer dit volgens de instructies voor het spreadsheet omleiden.
 
-1. Een toewijzing toevoegen aan de `paths.json` gebruiken volgens de instructies voor het spreadsheet omleiden.
+1. Voeg een toewijzing aan het `paths.json` dossier volgens de instructies voor het herleidingsspreadsheet toe.
 

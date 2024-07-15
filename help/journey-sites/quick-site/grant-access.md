@@ -18,12 +18,12 @@ Aan boord van de front-end ontwikkelaars in Cloud Manager zodat hebben zij toega
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Snelle reis van de Plaats, [Opstelling uw pijpleiding,](pipeline-setup.md) u leerde hoe te om een front-end pijpleiding tot stand te brengen om de aanpassing van het thema van uw plaats te beheren, en u zou nu moeten:
+In het vorige document van de reis van de Aanmaak van de AEM Snelle Plaats, [ Opstelling Uw Pijpleiding, ](pipeline-setup.md) u leerde hoe te om een front-end pijpleiding tot stand te brengen om de aanpassing van het thema van uw plaats te beheren, en u zou nu moeten:
 
 * Begrijp wat een front-end pijpleiding is.
-* Weet hoe u een front-end pijplijn instelt in Cloud Manager.
+* Weet hoe u een front-end pijpleiding in Cloud Manager kunt opzetten.
 
-U moet nu uw front-end ontwikkelaar toegang tot Cloud Manager verlenen via het instapproces, zodat de front-end ontwikkelaar toegang heeft tot de AEM git-opslagplaats en de pijpleiding die u hebt gemaakt.
+U moet nu uw front-end ontwikkelaar toegang tot Cloud Manager verlenen via het instapproces, zodat de front-end ontwikkelaar toegang heeft tot de AEM git repository en de pijpleiding die u hebt gemaakt.
 
 ## Doelstelling {#objective}
 
@@ -34,64 +34,64 @@ Het proces om toegang tot Cloud Manager te verlenen en gebruikersrollen toe te w
 
 >[!TIP]
 >
->Er is een volledige documentatietraject dat is gewijd aan het opnemen van uw team op AEM als Cloud-service, gekoppeld aan in het dialoogvenster [Sectie Aanvullende bronnen](#additional-resources) van dit document, als u meer details over het proces nodig hebt.
+>Er is een volledige documentatietraject gewijd aan het aan boord gaan van uw team op AEM als dienst van de Wolk, verbonden aan in de [ Extra sectie van Middelen ](#additional-resources) van dit document, als u extra details over het proces nodig hebt.
 
 ## Verantwoordelijke rol {#responsible-role}
 
-Dit deel van de reis is van toepassing op de beheerder van de Manager van de Wolk.
+Dit deel van de reis is van toepassing op de beheerder van Cloud Manager.
 
 ## Vereisten {#requirements}
 
-* U moet lid zijn van **Zakelijke eigenaar** rol in Cloud Manager.
-* Je moet een **Sys Admin** in Cloud Manager.
+* U moet een lid van **rol van BedrijfsEigenaar** in Cloud Manager zijn.
+* U moet Admin van a **Sys** in Cloud Manager zijn.
 * U moet toegang tot de Admin Console hebben.
 
 ## Voeg de Front-End Ontwikkelaar als Gebruiker toe {#add-fed-user}
 
 Eerst moet u de front-end ontwikkelaar als gebruiker toevoegen door de Admin Console te gebruiken.
 
-1. Aanmelden bij de Admin Console op [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/).
+1. Teken in de Admin Console in [ https://adminconsole.adobe.com/ ](https://adminconsole.adobe.com/).
 
 1. Nadat u zich hebt aangemeld, krijgt u een overzichtspagina te zien die lijkt op de volgende afbeelding.
 
-   ![Overzicht van Admin Console](assets/admin-console.png)
+   ![ overzicht van de Admin Console ](assets/admin-console.png)
 
 1. Controleer de naam van de org in de rechterbovenhoek van het scherm en zorg ervoor dat u zich op de juiste org bevindt.
 
-   ![Controleer de naam van de org](assets/correct-org.png)
+   ![ de naam van de Controle org ](assets/correct-org.png)
 
-1. Selecteren **Adobe Experience Manager as a Cloud Service** van de **Producten en diensten** kaart.
+1. Selecteer **Adobe Experience Manager as a Cloud Service** van de **Producten en de diensten** kaart.
 
-   ![AEMaaCS selecteren](assets/select-aemaacs.png)
+   ![ Uitgezochte AEMaaCS ](assets/select-aemaacs.png)
 
-1. U ziet de lijst met vooraf geconfigureerde productprofielen voor Cloud Manager. Als deze profielen niet worden weergegeven, neemt u contact op met de beheerder van Cloud Manager omdat u mogelijk niet de juiste machtigingen op uw org hebt.
+1. U ziet de lijst met vooraf geconfigureerde Cloud Manager-productprofielen. Als deze profielen niet worden weergegeven, neemt u contact op met de Cloud Manager-beheerder omdat u mogelijk niet de juiste machtigingen op uw org hebt.
 
-   ![Productprofielen](assets/product-profiles.png)
+   ![ Profielen van het Product ](assets/product-profiles.png)
 
-1. Als u de front-end ontwikkelaar wilt toewijzen aan de juiste profielen, selecteert u de optie **Gebruikers** en vervolgens de **Gebruiker toevoegen** knop.
+1. Om de front-end ontwikkelaar aan de correcte profielen toe te wijzen, selecteer het **lusje van Gebruikers** en dan **voeg Gebruiker** knoop toe.
 
-   ![Gebruiker toevoegen](assets/add-user.png)
+   ![ voeg gebruiker ](assets/add-user.png) toe
 
-1. In de **Gebruikers aan uw team toevoegen** typt u de e-mailid van de gebruiker die u wilt toevoegen. Selecteer Adobe ID bij Type id als de Federated ID voor uw teamleden nog niet is ingesteld.
+1. In **voeg gebruikers aan uw team** dialoogdoos toe, typ e-mailidentiteitskaart van de gebruiker u wilt toevoegen. Selecteer Adobe ID bij Type id als de Federated ID voor uw teamleden nog niet is ingesteld.
 
-   ![Gebruiker toevoegen aan team](assets/add-to-team.png)
+   ![ voeg gebruiker aan team ](assets/add-to-team.png) toe
 
-1. In de **Product** Selecteer eerst het plusteken en selecteer vervolgens **Adobe Experience Manager as a Cloud Service** en wijst de **Implementatiebeheer** en **Ontwikkelaar** productprofielen voor de gebruiker.
+1. In de **selectie van het Product**, selecteer het plusteken en selecteer dan **Adobe Experience Manager as a Cloud Service** en wijs de **Manager van de Plaatsing** en **het productprofielen van de Ontwikkelaar** aan de gebruiker toe.
 
-   ![Teamprofielen toewijzen](assets/assign-team.png)
+   ![ wijs teamprofielen ](assets/assign-team.png) toe
 
-1. Selecteren **Opslaan** en er wordt een welkomstbericht verzonden naar de front-end ontwikkelaar die u als gebruiker hebt toegevoegd.
+1. Selecteer **sparen** en een welkome e-mail wordt verzonden naar de front-end ontwikkelaar u als gebruiker toevoegde.
 
-De uitgenodigde front-end ontwikkelaar kan tot de Manager van de Wolk toegang hebben door de verbinding in welkome e-mail te klikken en zich binnen te ondertekenen gebruikend hun Adobe ID.
+De uitgenodigde front-end ontwikkelaar kan tot Cloud Manager toegang hebben door de verbinding in welkome e-mail te klikken en zich binnen te ondertekenen gebruikend hun Adobe ID.
 
 ## Overhandigen aan front-end ontwikkelaar {#handover}
 
 Met een e-mailuitnodiging aan Cloud Manager onderweg naar de front-end ontwikkelaar, kunnen u en de AEM nu de front-end ontwikkelaar de resterende benodigde informatie geven om met aanpassingen te beginnen.
 
-* A [pad naar typische inhoud](#example-page)
-* De themabron die [u hebt gedownload](#download-theme)
-* De [gebruikersgegevens voor proxy](#proxy-user)
-* De naam van het programma of de URL ervan [gekopieerd uit Cloud Manager](pipeline-setup.md#login)
+* A [ weg aan typische inhoud ](#example-page)
+* De themabron die [ u ](#download-theme) downloadde
+* De [ geloofsbrieven van de volmachtsgebruiker ](#proxy-user)
+* De naam van het programma of URL aan het [ gekopieerd van Cloud Manager ](pipeline-setup.md#login)
 * De ontwerpvereisten aan de voorzijde
 
 ## Volgende functies {#what-is-next}
@@ -101,10 +101,10 @@ Nu u dit gedeelte van de AEM snelle reis van de Plaats hebt voltooid zou u moete
 * Een front-end ontwikkelaar toevoegen als een gebruiker.
 * Hoe te om de vereiste rollen aan de front-end ontwikkelaar te verlenen.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM snelle site-creatie door het document opnieuw te bekijken [Haal toegangsgegevens uit Git Repository op,](retrieve-access.md) waarin het perspectief exclusief wordt overgeschakeld naar de front-end ontwikkelaar en wordt uitgelegd hoe de front-end ontwikkelaarsgebruikers Cloud Manager toegang krijgen tot informatie over de git-opslagplaats.
+Bouw op deze kennis voort en ga uw AEM Snelle reis van de Aanmaak van de Plaats door het document [ te herzien verdergaat de Informatie van de Toegang van de Bewaarplaats van de Bewaarplaats van de Git, ](retrieve-access.md) die uitsluitend perspectief aan de front-end ontwikkelaar schakelt en verklaart hoe de front-end ontwikkelaargebruikers Cloud Manager om tot de informatie van de gogegevensopslagplaats toegang te hebben.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl u wordt aangeraden naar het volgende gedeelte van de reis Snel site maken te gaan door het document te bekijken [Open Front-End Developer Credentials,](retrieve-access.md) hieronder volgen enkele aanvullende , optionele bronnen die een dieper beeld geven van bepaalde in dit document genoemde concepten , maar die niet verplicht zijn om op de reis verder te gaan .
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de Snelle reis van de Verwezenlijking van de Plaats door het document [ te herzien verwerft de Geloofsbrieven van de Ontwikkelaar aan de voorzijde, ](retrieve-access.md) het volgende zijn sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de reis voort te zetten.
 
-* [Onboarding Journaal](/help/journey-onboarding/overview.md) - Deze gids dient als uitgangspunt om ervoor te zorgen dat uw teams opstelling zijn en toegang tot AEM as a Cloud Service hebben.
+* [ Onboarding Reis ](/help/journey-onboarding/overview.md) - Deze gids dient als uw uitgangspunt om ervoor te zorgen dat uw teams opstelling zijn en toegang tot AEM as a Cloud Service hebben.

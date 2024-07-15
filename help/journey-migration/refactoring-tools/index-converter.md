@@ -13,33 +13,33 @@ ht-degree: 0%
 
 # Indexconversie {#index-converter}
 
-De Omzetter van de index is een nut dat wordt ontwikkeld om de Definities van de Index van een klant voor de overgang naar AEM as a Cloud Service te migreren.
+Index Converter is een hulpprogramma dat is ontwikkeld om indexdefinities van een klant te migreren ter voorbereiding op de overgang naar AEM as a Cloud Service.
 
 ## Inleiding {#introduction}
 
-Met de indexconverter kunnen AEM ontwikkelaars bestaande definities van aangepaste eik-indexen migreren naar AEM as a Cloud Service compatibele definities van aangepaste eik-indexen.
+Met de Indexconverter kunnen AEM ontwikkelaars bestaande aangepaste Oak-indexdefinities migreren naar met AEM as a Cloud Service compatibele aangepaste Oak-indexdefinities.
 
 >[!NOTE]
->Alleen transformaties voor indexconversie *luceen* Type Custom Oak Index-definities die aanwezig zijn onder `/apps` of `/oak:index`. Het verandert niet *luceen* type-indexen waarvoor `nt:base`.
+>De Omzetter van de index transformeert slechts *lucene* de Definities van de Index van het typeAangepaste Oak die onder `/apps` of `/oak:index` aanwezig zijn. Het transformeert *geen lucene* typeindexen die voor `nt:base` worden gecreeerd.
 
-U kunt op twee manieren aangepaste definities voor eik-indexen maken:
+Er zijn twee manieren om aangepaste Oak-indexdefinities te maken:
 
-* `under /apps` (via elk aangepast inhoudspakket)
-* rechtstreeks onder `/oak:index` pad
+* `under /apps` (via een willekeurig aangepast inhoudspakket)
+* direct onder `/oak:index` pad
 
-Indien [Oak-index controleren](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) is gebruikt, controleer of Definities niet worden ondersteund voor AEM as a Cloud Service. Als dusdanig moeten zij eerst in de Definities van de Index van het Eak worden omgezet, en dan gemigreerd aan de Definities van de Index van de Eik van de Douane die met AEM as a Cloud Service, zoals hieronder richtlijnen compatibel zijn:
+Als [ verzekert de Index van Oak ](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) werd gebruikt, verzeker de Definities niet op AEM as a Cloud Service worden gesteund. Daarom moeten ze eerst worden omgezet in Oak Index Definition en vervolgens worden gemigreerd naar Custom Oak Index Definition die compatibel zijn met AEM as a Cloud Service, zoals hieronder beschreven:
 
-* Als eigenschap ignore is ingesteld op `true`, negeren of overslaan van de definitie van de verzekerde
-* Werk de `jcr:primaryType` tot `oak:QueryIndexDefinition`
+* Als de eigenschap ignore is ingesteld op `true` , negeert of slaat u de definitie van de functie voor het controleren van de selectie over
+* De lus `jcr:primaryType` to `oak:QueryIndexDefinition` bijwerken
 * Verwijder om het even welke eigenschappen die moeten worden genegeerd zoals vermeld in configuraties OSGi
-* Substructuur verwijderen `/facets/jcr:content` vanaf definitie van Zorg
+* Substructuur `/facets/jcr:content` verwijderen uit definitie van verzekering
 
 ## De indexconverter gebruiken {#using-index-converter}
 
-* Als Adobe I/O CLI: Adobe raadt u aan de indexconverter te gebruiken als `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
+* Als Adobe I/O CLI: Adobe raadt u aan om de indexconverter te gebruiken als `aio-cli-plugin-aem-cloud-service-migration` (AEM as a Cloud Service code refactoring plugin voor de Adobe I/O CLI).
 
-  Zie **[Git-bron: audio-cli-plugin-aem-cloud-service-migratie](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** voor informatie over het installeren en gebruiken van de plug-in.
+  Zie **[Middel van de Git: ao-cli-stop-aem-wolk-dienst-migratie ](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** leren om de stop te installeren en te gebruiken.
 
 * Als standalone nut: De Convertor van de Index kan ook als standalone nut worden uitgevoerd.
 
-  Zie **[Git Resource: aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** voor meer informatie over het gebruik van dit gereedschap.
+  Zie **[Middel van de Git: aem-cs-bron-migratie-index-omzetter ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** leren hoe te om dit hulpmiddel te gebruiken.

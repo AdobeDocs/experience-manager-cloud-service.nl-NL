@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # SPA en rendering op de server{#spa-and-server-side-rendering}
 
-Toepassingen op één pagina (SPA) kunnen de gebruiker een rijke, dynamische ervaring bieden die op vertrouwde manieren reageert en zich gedraagt, vaak net als een native toepassing. [Deze functionaliteit wordt bereikt door op de client te vertrouwen om de inhoud vóór te laden en vervolgens de interactie van de gebruiker zwaar op te heffen](introduction.md#how-does-a-spa-work). Dit proces minimaliseert de hoeveelheid communicatie die nodig is tussen de client en de server, waardoor de app reactiever wordt.
+Toepassingen op één pagina (SPA) kunnen de gebruiker een rijke, dynamische ervaring bieden die op vertrouwde manieren reageert en zich gedraagt, vaak net als een native toepassing. [ Deze functionaliteit wordt bereikt door op de cliënt te vertrouwen om de inhoud te laden vooraan en dan het zware heffen van de behandeling van gebruikersinteractie ](introduction.md#how-does-a-spa-work) te doen. Dit proces minimaliseert de hoeveelheid communicatie die nodig is tussen de client en de server, waardoor de app reactiever wordt.
 
 Dit proces kan echter leiden tot langere openingstijden, vooral als de SPA groot en rijk is aan inhoud. Om de laadtijden te optimaliseren, kan een deel van de inhoud op de server worden weergegeven. Met SSR (Server-Side Rendering) kunt u de eerste belasting van de pagina versnellen en vervolgens verdere rendering doorgeven aan de client.
 
@@ -25,20 +25,20 @@ Wanneer u besluit SSR te implementeren, moet u eerst inschatten welke extra comp
 
 SSR verstrekt gewoonlijk één of andere waarde wanneer er duidelijk &quot;ja&quot;aan één van beiden van de volgende vragen is:
 
-* **SEO:** Is SSR nog vereist voor uw plaats om behoorlijk door de onderzoeksmotoren worden geïndexeerd die verkeer brengen? Vergeet niet dat de zoekmachine die als hoofdopzoekprogramma wordt gebruikt nu JS evalueert.
-* **Paginasnelheid:** Biedt SSR een meetbare snelheidsverbetering in levensechte omgevingen en vergroot de algehele gebruikerservaring?
+* **SEO:** Is SSR nog vereist voor uw plaats behoorlijk door de onderzoeksmotoren worden geïndexeerd die verkeer brengen? Vergeet niet dat de zoekmachine die als hoofdopzoekprogramma wordt gebruikt nu JS evalueert.
+* **de Snelheid van de Pagina:** verstrekt SSR een meetbare snelheidsverbetering in milieu&#39;s in real-life en voegt aan de algemene gebruikerservaring toe?
 
-Slechts wanneer minstens één van deze twee vragen met duidelijk &quot;ja&quot;voor uw project wordt beantwoord adviseert de Adobe het uitvoeren van SSR. In de volgende secties wordt beschreven hoe u dit kunt doen met Adobe I/O Runtime, onderdeel van [App Builder](https://developer.adobe.com/app-builder).
+Slechts wanneer minstens één van deze twee vragen met duidelijk &quot;ja&quot;voor uw project wordt beantwoord adviseert de Adobe het uitvoeren van SSR. De volgende secties beschrijven hoe te om dit te doen gebruikend Adobe I/O Runtime, een deel van [ App Builder ](https://developer.adobe.com/app-builder).
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
-Als u [vertrouwen erop dat uw project de implementatie van SSR vereist](#when-to-use-ssr)De aanbevolen oplossing van Adobe is het gebruik van Adobe I/O Runtime.
+Als u [ zeker bent dat uw project de implementatie van SSR ](#when-to-use-ssr) vereist, is de geadviseerde oplossing van de Adobe Adobe I/O Runtime te gebruiken.
 
 Raadpleeg de volgende secties voor meer informatie over Adobe I/O Runtime:
 
-* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - voor een overzicht van de Runtime eigenschap van App Builder
-* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - voor meer informatie over het volledige App Builder-product
-* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) - voor gedetailleerde documentatie
+* [ https://developer.adobe.com/runtime ](https://developer.adobe.com/runtime) - voor een overzicht van de Runtime eigenschap van App Builder
+* [ https://developer.adobe.com/app-builder ](https://developer.adobe.com/app-builder) - voor details over het volledige product van App Builder
+* [ https://developer.adobe.com/runtime/docs/ ](https://developer.adobe.com/runtime/docs) - voor gedetailleerde documentatie
 
 In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruikt om SSR voor uw SPA in twee verschillende modellen te implementeren:
 
@@ -47,49 +47,49 @@ In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruik
 
 >[!NOTE]
 >
->Adobe raadt een aparte Adobe I/O Runtime-werkruimte aan per omgeving (werkgebied, proefperiode, testen, enzovoort). Dit maakt het mogelijk om standaard SDLC-patronen (Systems Development Life Cycle) te gebruiken met verschillende versies van één toepassing die op verschillende omgevingen worden geïmplementeerd. Zie [CI/CD voor App Builder-toepassingen](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) voor meer informatie .
+>Adobe raadt een aparte Adobe I/O Runtime-werkruimte aan per omgeving (werkgebied, proefperiode, testen, enzovoort). Dit maakt het mogelijk om standaard SDLC-patronen (Systems Development Life Cycle) te gebruiken met verschillende versies van één toepassing die op verschillende omgevingen worden geïmplementeerd. Zie [ CI/CD voor de Toepassingen van App Builder ](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) voor meer informatie.
 >
 >Er is geen aparte werkruimte nodig per instantie (auteur, publiceren), tenzij er verschillen zijn in de runtimplementatie per instantietype.
 
 >[!NOTE]
 >
->Cloud Manager ondersteunt geen implementatie op Adobe I/O Runtime. Als gevolg hiervan moet uw eigen infrastructuur zo zijn ingesteld dat SSR-code op de Adobe I/O Runtime kan worden geïmplementeerd.
+>Cloud Manager biedt geen ondersteuning voor implementatie op Adobe I/O Runtime. Als gevolg hiervan moet uw eigen infrastructuur zo zijn ingesteld dat SSR-code op de Adobe I/O Runtime kan worden geïmplementeerd.
 
 ## Configuratie van externe renderer {#remote-content-renderer-configuration}
 
-AEM moet weten waar de extern gerenderde inhoud kan worden opgehaald. Ongeacht [welk model u verkiest om voor SSR uit te voeren,](#adobe-i-o-runtime) u moet opgeven hoe u toegang kunt krijgen tot deze externe renderingsservice.
+AEM moet weten waar de extern gerenderde inhoud kan worden opgehaald. Ongeacht [ welk model u verkiest om voor SSR uit te voeren, ](#adobe-i-o-runtime) u moet specificeren om tot deze verre het teruggeven dienst AEM toegang te hebben.
 
-Deze service wordt uitgevoerd via de **RemoteContentRenderer - Configuratie in fabriek OSGi-service**. Zoek naar het koord &quot;RemoteContentRenderer&quot;in de console van de Configuratie van de Console van het Web bij `http://<host>:<port>/system/console/configMgr`.
+Deze dienst wordt gedaan als **RemoteContentRenderer - de dienst van OSGi van de Fabriek van de Configuratie OSGi**. Zoek naar het koord &quot;RemoteContentRenderer&quot;in de console van de Configuratie van de Console van het Web bij `http://<host>:<port>/system/console/configMgr`.
 
-![Rendererconfiguratie](assets/renderer-configuration.png)
+![ Configuratie van Renderer ](assets/renderer-configuration.png)
 
 De volgende velden zijn beschikbaar voor de configuratie:
 
-* **Inhoudspatroon** - Reguliere expressie die zo nodig overeenkomt met een deel van de inhoud
-* **URL van extern eindpunt** - URL van het eindpunt dat verantwoordelijk is voor het genereren van de inhoud
+* **het wegpatroon van de Inhoud** - Regelmatige uitdrukking om een gedeelte van de inhoud aan te passen, indien nodig
+* **Verre eindpunt URL** - URL van het eindpunt dat voor het produceren van de inhoud verantwoordelijk is
    * Gebruik het beveiligde HTTPS-protocol als dit zich niet in het lokale netwerk bevindt.
-* **Aanvullende aanvraagheaders** - Extra kopballen die aan het verzoek moeten worden toegevoegd dat naar het verre eindpunt wordt verzonden
+* **Extra verzoekkopballen** - de Extra kopballen die aan het verzoek moeten worden toegevoegd dat naar het verre eindpunt wordt verzonden
    * Patroon: `key=value`
-* **Verzoek om time-out** - Time-out externe hostaanvraag in milliseconden
+* **onderbreking van het Verzoek** - Verre onderbreking van het gastheerverzoek in milliseconden
 
 >[!NOTE]
 >
->Ongeacht of u ervoor kiest om het [AEM-gestuurde communicatiestroom](#aem-driven-communication-flow) of de [door Adobe I/O Runtime aangedreven stroom,](#adobe-i-o-runtime-driven-communication-flow) u moet een configuratie van een externe inhoudrenderer definiëren.
+>Ongeacht als u verkiest om de [ AEM-gedreven communicatie stroom ](#aem-driven-communication-flow) of de [ Adobe I/O Runtime-gedreven stroom uit te voeren, ](#adobe-i-o-runtime-driven-communication-flow) u moet een verre configuratie van inhoudrenderer bepalen.
 
 >[!NOTE]
 >
->Deze configuratie gebruikt de [Renderer voor externe inhoud,](#remote-content-renderer) waarvoor aanvullende opties voor extensie en aanpassing beschikbaar zijn.
+>Deze configuratie gebruikt [ Verre Renderer van de Inhoud, ](#remote-content-renderer) die extra uitbreiding en aanpassingsopties beschikbaar heeft.
 
 ## AEM-gestuurde communicatiestroom {#aem-driven-communication-flow}
 
-Als u SSR gebruikt, wordt [interactieworkflow voor componenten](introduction.md#interaction-with-the-spa-editor) SPA in AEM omvat een fase waarin de initiële inhoud van de app op Adobe I/O Runtime wordt gegenereerd.
+Wanneer het gebruiken van SSR, omvat het [ werkschema van de componenteninteractie ](introduction.md#interaction-with-the-spa-editor) van SPA in AEM een fase waarin de aanvankelijke inhoud van app op Adobe I/O Runtime wordt geproduceerd.
 
 1. De browser vraagt om de SSR-inhoud van AEM.
 1. AEM plaatst het model op Adobe I/O Runtime.
 1. Adobe I/O Runtime retourneert de gegenereerde inhoud.
 1. AEM dient de HTML die door Adobe I/O Runtime wordt geretourneerd via de HTML-sjabloon van de achtergrondpagina-component.
 
-![SSE CMS-gestuurde AEM Adobe I/O](assets/ssr-cms-drivenaemnode-adobeio.png)
+![ SSE CMS-gedreven AEM Adobe I/O ](assets/ssr-cms-drivenaemnode-adobeio.png)
 
 ## Adobe I/O Runtime-gestuurde communicatiestroom {#adobe-i-o-runtime-driven-communication-flow}
 
@@ -107,27 +107,27 @@ Beide modellen zijn geldig en worden ondersteund door AEM. Men moet echter eerst
    <th><strong>Nadelen</strong></th>
   </tr>
   <tr>
-   <th><strong>via AEM</strong><br /> </th>
+   <th><strong> via AEM </strong><br /> </th>
    <td>
     <ul>
      <li>AEM beheert waar nodig injectiebibliotheken</li>
-     <li>Bronnen alleen behouden op AEM<br /> </li>
+     <li>Bronnen alleen op AEM behouden <br /> </li>
     </ul> </td>
    <td>
     <ul>
-     <li>Mogelijk niet bekend bij SPA ontwikkelaar<br /> </li>
+     <li>Mogelijk niet bekend met SPA ontwikkelaar <br /> </li>
     </ul> </td>
   </tr>
   <tr>
    <th><strong>via Adobe I/O Runtime<br /> </strong></th>
    <td>
     <ul>
-     <li>SPA ontwikkelaars meer bekend<br /> </li>
+     <li>Bewegend aan SPA ontwikkelaars <br /> </li>
     </ul> </td>
    <td>
     <ul>
-     <li>Clientlib-bronnen die door de toepassing worden vereist, zoals CSS en JavaScript, moeten door de AEM ontwikkelaar beschikbaar worden gesteld via de <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> eigenschap<br /> </li>
-     <li>Bronnen moeten worden gesynchroniseerd tussen AEM en Adobe I/O Runtime<br /> </li>
+     <li>Clientlib-bronnen die door de toepassing worden vereist, zoals CSS en JavaScript, moeten door de AEM ontwikkelaar beschikbaar worden gesteld via de eigenschap <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> <br /> . </li>
+     <li>De middelen moeten tussen AEM en Adobe I/O Runtime <br /> worden gesynchroniseerd </li>
      <li>Om het ontwerpen van de SPA mogelijk te maken, is mogelijk een proxyserver voor Adobe I/O Runtime nodig</li>
     </ul> </td>
   </tr>
@@ -154,21 +154,21 @@ Net zoals AEM de Angular- en Reactie-SPA-frameworks buiten de box ondersteunt, w
 
 ## Renderer voor externe inhoud {#remote-content-renderer}
 
-De [Configuratie renderfunctie voor externe inhoud](#remote-content-renderer-configuration) die vereist is om SSR met uw SPA te gebruiken in AEM tikken op een meer algemene renderservice die kan worden uitgebreid en aangepast aan uw behoeften.
+De [ Verre Configuratie van Renderer van de Inhoud ](#remote-content-renderer-configuration) die wordt vereist om SSR met uw SPA in AEM tikken in een meer algemene het teruggeven dienst te gebruiken die kan worden uitgebreid en worden aangepast om aan uw behoeften te voldoen.
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` Een dienst OSGi om inhoud terug te winnen die op een verre server, zoals van Adobe I/O wordt teruggegeven. De inhoud die naar de externe server wordt verzonden, is gebaseerd op de doorgegeven parameter request.
+`RemoteContentRenderingService` De dienst OSGi om inhoud terug te winnen die op een verre server, zoals van Adobe I/O wordt teruggegeven. De inhoud die naar de externe server wordt verzonden, is gebaseerd op de doorgegeven parameter request.
 
-`RemoteContentRenderingService` Kan worden geïnjecteerd door inversie van afhankelijkheid in een aangepast Sling-model of servlet wanneer extra inhoudsmanipulatie vereist is.
+`RemoteContentRenderingService` Kan worden geïnjecteerd door inversie van afhankelijkheid in een aangepast Sling-model of servlet wanneer aanvullende bewerking van de inhoud vereist is.
 
-Deze dienst wordt intern gebruikt door [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet).
+Deze dienst wordt intern gebruikt door [ RemoteContentRendererRequestHandlerServlet ](#remotecontentrendererrequesthandlerservlet).
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-De `RemoteContentRendererRequestHandlerServlet` wordt gebruikt om programmatically de verzoekconfiguratie te plaatsen. `DefaultRemoteContentRendererRequestHandlerImpl`, laat de verstrekte implementatie van de standaardverzoekmanager, u veelvoudige configuraties tot stand brengen OSGi zodat kunt u een plaats in de inhoudsstructuur aan een ver eindpunt in kaart brengen.
+`RemoteContentRendererRequestHandlerServlet` wordt gebruikt om de verzoekconfiguratie programmatically te plaatsen. `DefaultRemoteContentRendererRequestHandlerImpl`, laat de verstrekte implementatie van de standaardverzoekmanager, u veelvoudige configuraties tot stand brengen OSGi zodat kunt u een plaats in de inhoudsstructuur aan een ver eindpunt in kaart brengen.
 
-Om een manager van het douaneverzoek toe te voegen, voer uit `RemoteContentRendererRequestHandler` interface. Zorg ervoor dat u de `Constants.SERVICE_RANKING` componenteigenschap instellen op een geheel getal hoger dan 100. Dit is de positie van de component `DefaultRemoteContentRendererRequestHandlerImpl`.
+Implementeer de interface `RemoteContentRendererRequestHandler` om een aangepaste aanvraaghandler toe te voegen. U moet de componenteigenschap `Constants.SERVICE_RANKING` instellen op een geheel getal dat groter is dan 100. Dit is de positie van de `DefaultRemoteContentRendererRequestHandlerImpl` .
 
 ```javascript
 @Component(immediate = true,
@@ -181,7 +181,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### Vorm de Configuratie OSGi van de Standaardmanager {#configure-default-handler}
 
-De configuratie van de standaardmanager moet worden gevormd zoals die in de sectie wordt beschreven [Configuratie renderfunctie voor externe inhoud](#remote-content-renderer-configuration).
+De configuratie van de standaardmanager moet worden gevormd zoals die in de sectie [ Verre Configuratie van de Renderer van de Inhoud ](#remote-content-renderer-configuration) wordt beschreven.
 
 ### Renderergebruik van externe inhoud {#usage}
 
@@ -200,4 +200,4 @@ Gewoonlijk is de HTML-sjabloon van een paginacomponent de belangrijkste ontvange
 
 ### Vereisten {#requirements}
 
-De servlets gebruiken de Verschuivende ModelExporter om de componentengegevens in series te vervaardigen. Standaard worden beide `com.adobe.cq.export.json.ContainerExporter` en `com.adobe.cq.export.json.ComponentExporter` worden ondersteund als Sling Model-adapters. Indien nodig kunt u klassen toevoegen waaraan de aanvraag moet worden aangepast om de opdracht `RemoteContentRendererServlet` en de uitvoering van de `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. De extra klassen moeten de `ComponentExporter`.
+De servlets gebruiken de Verschuivende ModelExporter om de componentengegevens in series te vervaardigen. Standaard worden zowel `com.adobe.cq.export.json.ContainerExporter` als `com.adobe.cq.export.json.ComponentExporter` ondersteund als Sling Model-adapters. Indien nodig, kunt u klassen toevoegen die de aanvraag moet worden aangepast aan het gebruik van `RemoteContentRendererServlet` en het implementeren van `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses` . De extra klassen moeten `ComponentExporter` uitbreiden.

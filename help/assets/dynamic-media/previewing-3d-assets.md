@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=en) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Experience Manager Assets ondersteunt het opnemen, beheren, voorvertonen en leveren van 3D-elementen.
@@ -44,21 +44,21 @@ Experience Manager biedt native ondersteuning voor interactieve 3D-voorvertoning
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
 | GLB | Binaire GL-transmissie | model/gltf-binair |  |
-| GLTF | GL-indeling voor verzending | model/gltf+json | Zie de **Opmerking** hieronder. |
+| GLTF | GL-indeling voor verzending | model/gltf+json | Zie de **Nota** hieronder. |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
 
 
 >[!NOTE]
 >
->Als materialen niet worden gerenderd in de voorvertoning van een gLTF-model, moet u ervoor zorgen dat ze een juiste naam hebben en in een `textures` map in dezelfde hoofdmap als het model, vergelijkbaar met het volgende:
+>Als materialen niet worden gerenderd in de voorvertoning van een gLTF-model, controleert u of ze op de juiste wijze zijn benoemd en zich in een `textures` -map in dezelfde hoofdmap als het model bevinden, vergelijkbaar met het volgende:
 
-    Element (map)
-    model.gltf
-    model.bin
-    structuren (map)
-    materiaal_0_baseColor.jpeg
-    materiaal_0_normaal.jpeg
+     Activa (omslag) 
+     model.gltf 
+     model.bin 
+     texturen (omslag) 
+     material_0_baseColor.jpeg 
+     material_0_normal.jpeg 
 
 ## Prestatieaspecten wanneer u een voorvertoning van 3D-elementen weergeeft in Experience Manager{#performance-3d-previewing-assets}
 
@@ -66,32 +66,32 @@ De tijd die nodig is om een 3D-element te openen op de pagina met de elementdeta
 
 Bovendien zijn de mogelijkheden van de clientcomputer - zoals een werkstation, laptop of mobiel aanraakapparaat - ook belangrijk om te overwegen wanneer u de camera interactief manipuleert. Een redelijk krachtig systeem met goede grafische mogelijkheden kan de interactieve 3D-kijkervaring vloeiender en gunstiger maken.
 
-**Een voorvertoning van 3D-elementen weergeven in Experience Manager:**
+**aan voorproef 3D activa in Experience Manager:**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar de Experience Manager.
-Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-assets) en [Elementen uploaden](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Van Experience Manager, op **[!UICONTROL Navigation]** pagina, ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+Zie [ Gesteunde formaten voor 3D voorproef ](#supported-3d-previewing-assets) en [ activa ](/help/assets/manage-digital-assets.md#uploading-assets) uploaden.
+1. Ga vanuit Experience Manager op de pagina **[!UICONTROL Navigation]** naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** .
 
-   ![Navigatiepagina](/help/assets/dynamic-media/assets/navigation-assets.png)
+   ![ pagina van de Navigatie ](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Selecteer in de vervolgkeuzelijst Weergave rechtsboven op de pagina de optie **[!UICONTROL Card View]** Navigeer vervolgens naar een 3D-element waarvan u een voorvertoning wilt weergeven.
+1. Selecteer in de rechterbovenhoek van de pagina in de vervolgkeuzelijst Weergave de optie **[!UICONTROL Card View]** en navigeer naar een 3D-element waarvan u een voorvertoning wilt weergeven.
 
-   ![Selectie van de 3D-kaart](/help/assets/dynamic-media/assets/3d-card-select.png)
-   _Selecteer in de Kaartweergave de kaart van het 3D-element waarvan u een voorvertoning wilt weergeven._
+   ![ Selectie van de 3D kaart ](/help/assets/dynamic-media/assets/3d-card-select.png)
+   _in de Mening van de Kaart, selecteer de kaart van 3D activa u voorproef wilt._
 
 1. Selecteer de kaart van het 3D-element.
 
-   ![Interactieve 3D-voorvertoning](/help/assets/dynamic-media/assets/3d-preview.png)
-   _Interactieve voorvertoning van een 3D-element op de pagina met de elementdetails._
+   ![ Interactieve 3D voorproef ](/help/assets/dynamic-media/assets/3d-preview.png)
+   _Interactieve voorproef van een 3D activa in de pagina van de de meningsmening van activadetails._
 1. Voer een van de volgende handelingen uit op de pagina met de elementdetails voor het 3D-element:
 
    | Weergave | Beschrijving | Muishandeling | Handeling op het aanraakscherm |
    | --- | --- | --- | --- |
-   | **De camera draaien** | Draai de weergave rond de 3D-scène en -objecten. | Klik met de linkermuisknop en sleep. | Druk met één vinger en sleep. |
-   | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
-   | **Uw camera zoomen** | Ga in en uit gebieden van de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
-   | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbelselecteren. |
-   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
-   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, klikt u op het pictogram Volledig scherm rechtsonder op de pagina. |   |   |
+   | **draai uw camera** | Draai de weergave rond de 3D-scène en -objecten. | Klik met de linkermuisknop en sleep. | Druk met één vinger en sleep. |
+   | **Pannen uw camera** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
+   | **Gezoem uw camera** | Ga in en uit gebieden van de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
+   | **herenter uw camera** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbelselecteren. |
+   | **Terugstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
+   | **Volledige het schermwijze** | Als u de modus Volledig scherm wilt inschakelen, klikt u op het pictogram Volledig scherm rechtsonder op de pagina. |   |   |
 
-1. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Close]**.
+1. Wanneer u klaar bent, selecteert u **[!UICONTROL Close]** in de rechterbovenhoek van de pagina.

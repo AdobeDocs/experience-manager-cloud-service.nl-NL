@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Alles bij elkaar plaatsen - uw app en uw inhoud in AEM headless {#put-it-all-together}
 
-In dit deel van het [AEM Headless Developer Journey](overview.md)leert u hoe u de AEM ontwikkelingstool en de Headless SDK kunt gebruiken om uw toepassing samen te stellen.
+In dit deel van de [ AEM Headless Reis van de Ontwikkelaar ](overview.md), wordt u vertrouwd met leren hoe te om het AEM ontwikkelingshulpmiddel en Headless SDK te gebruiken om uw toepassing samen te zetten.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM zonder kop: [Uw inhoud bijwerken via AEM Assets API&#39;s](update-your-content.md) U hebt geleerd hoe u de bestaande inhoud zonder kop in AEM kunt bijwerken via de API. Nu moet u:
+In het vorige document van de AEM headless reis, [ hoe te om Uw Inhoud via AEM Assets APIs bij te werken ](update-your-content.md) leerde u hoe te om uw bestaande inhoud zonder kop in AEM via API bij te werken en u zou nu moeten:
 
 * Begrijp de AEM Assets HTTP API.
 
@@ -35,15 +35,15 @@ Dit artikel is bedoeld om u te helpen begrijpen hoe u uw AEM toepassing zonder k
 De AEM SDK wordt gebruikt om aangepaste code te maken en in te voeren. Het is het belangrijkste hulpmiddel dat u nodig hebt, zodat u uw toepassing zonder kop kunt ontwikkelen en testen voordat u live gaat. Het bevat de volgende artefacten:
 
 * De QuickStart-jar - een uitvoerbaar JAR-bestand dat kan worden gebruikt om een auteur- en een publicatie-instantie in te stellen
-* De hulpmiddelen van de verzending - de module van de Dispatcher en zijn gebiedsdelen voor Vensters en op UNIX® gebaseerde systemen
+* Dispatcher tools - de Dispatcher module en zijn afhankelijkheden voor Windows- en UNIX®-systemen
 * Java™ API Jar - De Java™ Jar/Maven Dependency die alle toegestane Java™ APIs blootstelt die kunnen worden gebruikt om tegen AEM te ontwikkelen
 * Javadoc jar - de javadocs voor de Java™ API jar
 
 ## De AEM Headless SDK {#the-aem-headless-sdk}
 
-Anders dan de AEM SDK, de AEM **Headless SDK** Deze groep bevat bibliotheken die door clients kunnen worden gebruikt om via HTTP snel en eenvoudig te communiceren met AEM headless API&#39;s.
+Verschil van de AEM SDK, AEM **Koploze SDK** wordt geplaatst van bibliotheken die door cliënten kunnen worden gebruikt om met AEM Koploze APIs over HTTP snel en gemakkelijk in wisselwerking te staan.
 
-Voor meer informatie over de AEM Headless SDK raadpleegt u de [documentatie hier](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
+Voor meer informatie over de AEM Hoofdloze SDK, zie hier de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
 
 ## Aanvullende ontwikkelingsinstrumenten {#additional-development-tools}
 
@@ -57,23 +57,23 @@ Naast de AEM SDK hebt u aanvullende gereedschappen nodig die het ontwikkelen en 
 
 Omdat AEM een Java™-toepassing is, moet u Java™ en de Java™ SDK installeren om de ontwikkeling van AEM as a Cloud Service te ondersteunen.
 
-Git is wat u gebruikt om broncontrole te beheren en de veranderingen in de Manager van de Wolk in te checken en dan hen op te stellen aan een productie-instantie.
+Git is wat u gebruikt om broncontrole te beheren en in de veranderingen in Cloud Manager te controleren en dan hen op te stellen aan een productie-instantie.
 
 AEM gebruikt Apache Maven om projecten te bouwen die uit het AEM Maven Project archetype worden geproduceerd. Alle belangrijke IDEs verstrekt integratiesteun voor Maven.
 
-Node.js is een runtimeomgeving van JavaScript die wordt gebruikt om met de front-end activa van AEM project te werken `ui.frontend` subproject. Node.js wordt gedistribueerd met npm, is de facto Manager van het Pakket Node.js, die wordt gebruikt om JavaScript gebiedsdelen te beheren.
+Node.js is een runtimeomgeving van JavaScript die wordt gebruikt voor het werken met de front-end elementen van het `ui.frontend` subproject van een AEM project. Node.js wordt gedistribueerd met npm, is de facto Manager van het Pakket Node.js, die wordt gebruikt om de gebiedsdelen van JavaScript te beheren.
 
 ## Componenten van een AEM systeem in één oogopslag {#components-of-an-aem-system-at-a-glance}
 
 Laten we nu eens kijken naar de onderdelen van een AEM omgeving.
 
-Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. Deze componenten worden ook beschikbaar gesteld in de lokale ontwikkelruntime, zodat u gemakkelijker een voorvertoning van uw code en inhoud kunt weergeven voordat u live gaat.
+Een volledige AEM omgeving bestaat uit een auteur, Publish en Dispatcher. Deze componenten worden ook beschikbaar gesteld in de lokale ontwikkelruntime, zodat u gemakkelijker een voorvertoning van uw code en inhoud kunt weergeven voordat u live gaat.
 
-* **De service Auteur** In dit deelvenster kunnen interne gebruikers inhoud maken, beheren en voorvertonen.
+* **de dienst van de Auteur** is waar de interne gebruikers, inhoud creëren leiden en voorproef.
 
-* **De service Publiceren** wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen eindgebruikers. Inhoud wordt na bewerking en goedkeuring in de service Auteur gedistribueerd naar de service Publiceren. Het gemeenschappelijkste plaatsingspatroon met AEM hoofdloze toepassingen moet de productieversie van de toepassing hebben met de AEM publicatieservice verbinden.
+* **de dienst van Publish** wordt beschouwd als het &quot;Levende&quot;milieu en is typisch wat eind - gebruikers met in wisselwerking staan. Inhoud wordt na bewerking en goedkeuring op de service Auteur gedistribueerd naar de Publish-service. Het meest gangbare implementatiepatroon met AEM toepassingen zonder kop is dat de productieversie van de toepassing verbinding maakt met een AEM Publish-service.
 
-* **De verzender** is een statische webserver die is uitgebreid met de module AEM Dispatcher. Webpagina&#39;s die door de instantie publish worden gemaakt, worden in het cachegeheugen opgeslagen om de prestaties te verbeteren.
+* **Dispatcher** is een statische Webserver die met de module van Dispatcher van de AEM wordt uitgebreid. Webpagina&#39;s die door de instantie publish worden gemaakt, worden in het cachegeheugen opgeslagen om de prestaties te verbeteren.
 
 ## De workflow voor lokale ontwikkeling {#the-local-development-workflow}
 
@@ -83,7 +83,7 @@ Als u code- of inhoudsupdates wilt testen die door uw toepassing zonder kop word
 
 Let op het verschil tussen de verschillende componenten in de lokale AEM runtime, want het is belangrijk dat u de updates test op de plaatsen waar ze het belangrijkst zijn. Test bijvoorbeeld de inhoud van updates op de auteur of test nieuwe code op de publicatie-instantie.
 
-In een productiesysteem zullen een Dispatcher en een http Apache-server altijd voor een AEM publicatieexemplaar staan. Zij verlenen caching en de veiligheidsdiensten voor het AEM systeem, zodat is het uiterst belangrijk om code en inhoudsupdates tegen Dispatcher eveneens te testen.
+In een productiesysteem zullen een Dispatcher en een http Apache-server altijd voor een AEM publicatie-instantie zitten. Zij verlenen caching en de veiligheidsdiensten voor het AEM systeem, zodat is het uiterst belangrijk om code en inhoudsupdates tegen Dispatcher eveneens te testen.
 
 ## Een lokale voorvertoning van uw code en inhoud weergeven in de lokale ontwikkelomgeving {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
@@ -108,15 +108,15 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 * Kennis hebben van de AEM-ontwikkelingsinstrumenten
 * De lokale ontwikkelingsworkflow begrijpen
 
-Ga door met het doornemen van het document zonder AEM [Hoe u met uw headless toepassing kunt gaan werken](/help/journey-headless/developer/go-live.md) waar je je AEM Headless project live neemt!
+Ga uw AEM headless reis door het document [ te herzien hoe te met Uw Zwaarloze Toepassing ](/help/journey-headless/developer/go-live.md) gaan waar u eigenlijk uw AEM Zwaardeloos project neemt levend!
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [De AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [Een lokale AEM instellen](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [AEM Headless SDK voor clientbrowsers (JavaScript)](https://github.com/adobe/aem-headless-client-js)
-* [AEM Headless SDK voor server-side/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
-* [AEM headless SDK voor Java™](https://github.com/adobe/aem-headless-client-java)
+* [De SDK van AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [ opstelling een Lokale AEM milieu ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [ AEM Koploze SDK voor cliënt-zijbrowsers (JavaScript) ](https://github.com/adobe/aem-headless-client-js)
+* [ AEM Headless SDK voor server-side/Node.js (JavaScript) ](https://github.com/adobe/aem-headless-client-nodejs)
+* [ AEM Headless SDK voor Java™ ](https://github.com/adobe/aem-headless-client-java)
 * [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
-* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

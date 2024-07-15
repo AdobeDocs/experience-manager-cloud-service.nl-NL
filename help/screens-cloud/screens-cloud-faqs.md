@@ -1,6 +1,6 @@
 ---
-title: As a Cloud Service veelgestelde vragen weergeven
-description: Op deze pagina worden de as a Cloud Service veelgestelde vragen beschreven.
+title: Screens as a Cloud Service veelgestelde vragen
+description: Op deze pagina worden as a Cloud Service vragen beschreven die vaak worden gesteld door Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
 feature: Administering Screens
 role: Admin, Developer, User
@@ -11,20 +11,20 @@ ht-degree: 0%
 
 ---
 
-# As a Cloud Service veelgestelde vragen weergeven {#screens-cloud-faqs}
+# Screens as a Cloud Service veelgestelde vragen {#screens-cloud-faqs}
 
-In de volgende sectie worden antwoorden gegeven op veelgestelde vragen (FAQ&#39;s) over een as a Cloud Service project met schermen.
+In de volgende sectie worden antwoorden gegeven op veelgestelde vragen (FAQ&#39;s) over Screens as a Cloud Service-projecten.
 
-## Wat moet ik doen als AEM Screens Player die naar as a Cloud Service schermen wijst, de aangepaste clientlibs niet plukt met de indeling /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
+## Wat moet ik doen als AEM Screens Player die naar Screens as a Cloud Service wijst, de aangepaste clientlibs niet plukt met de indeling /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
 
-AEM as a Cloud Service verandert de lange geheim voorgeheugensleutels met elke plaatsing. AEM Screens genereert de offline caches wanneer de inhoud wordt gewijzigd, in plaats van wanneer Cloud Manager de implementatie uitvoert. Deze lange cache-sleutels in de manifests zijn ongeldig, zodat de speler de *clientlibs*.
+AEM as a Cloud Service wijzigt de lange cachetoetsen bij elke implementatie. AEM Screens genereert de offline caches wanneer de inhoud wordt gewijzigd, in plaats van wanneer de Cloud Manager de implementatie uitvoert. Deze lange geheim voorgeheugensleutels in manifests zijn ongeldig, zodat ontbreekt de speler om *clientlibs* te downloaden.
 
-Gebruiken `longCacheKey="none"` in uw `clientlib` de lange geheim voorgeheugensleutels voor de omslag verwijdert *clientlibs*.
+Het gebruiken `longCacheKey="none"` in uw `clientlib` omslag verwijdert de lange geheim voorgeheugensleutels volledig voor *clientlibs*.
 
 
 ## Wat zou ik moeten doen als off-line manifest niet alle middelen zoals bedoeld omvat? {#offline-manifest}
 
-Offline caches worden gegenereerd met **bulk-off-line-update-screens-service** servicegebruiker. Bepaalde paden, niet toegankelijk voor `bulk-offline-update-screens-service`, leidt tot ontbrekende inhoud in offline manifesten.
+De off-line geheime voorgeheugens worden geproduceerd gebruikend **bulk-off-line-update-schermen-dienst** de dienstgebruiker. Bepaalde paden, die niet toegankelijk zijn voor `bulk-offline-update-screens-service` , leiden tot ontbrekende inhoud in offline manifesten.
 
 In uw code, namelijk `ui.config or ui.apps`, creeer een configuratie OSGi in configuratiemap, met de volgende inhoud, en titel het dossier - noem als `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
 
@@ -38,14 +38,14 @@ scripts=[
         "] 
 ```
 
-## Welke afbeeldingsindelingen worden aanbevolen voor een naadloze uitvoering van afbeeldingen in een as a Cloud Service AEM Screens-kanaal?{#screens-cloud-image-format}
+## Welke afbeeldingsindelingen worden aanbevolen voor een naadloze uitvoering van afbeeldingen in een AEM Screens as a Cloud Service kanaal?{#screens-cloud-image-format}
 
-Adobe raadt aan afbeeldingen in de indeling te gebruiken `.png` en `.jpeg` in een as a Cloud Service AEM Screens-kanaal, voor de beste digitale signaalervaring.
-De afbeeldingen in de indeling `*.tif` (Bestandsindeling voor tagafbeeldingen) wordt niet ondersteund in AEM Screens as a Cloud Service. Als een kanaal deze afbeeldingsindeling heeft, wordt de afbeelding aan de afspeelzijde niet weergegeven.
+Adobe raadt u aan afbeeldingen in de indeling `.png` en `.jpeg` in een AEM Screens as a Cloud Service kanaal te gebruiken voor de beste digitale handtekening.
+De afbeeldingen in de indeling `*.tif` (Tagafbeeldingsbestandsindeling) worden niet ondersteund in AEM Screens as a Cloud Service. Als een kanaal deze afbeeldingsindeling heeft, wordt de afbeelding aan de afspeelzijde niet weergegeven.
 
 ## Wat moet ik doen als een Kanaal in de modus Ontwikkelaar (online) niet wordt weergegeven op AEM Screens Player?{#screens-cloud-online-channel-blank-iframe}
 
-Adobe raadt u aan om AEM Screens-caching-mogelijkheden te gebruiken. Als u uw Channel echter in de modus Ontwikkelaar moet uitvoeren en de AEM Screens Player een leeg scherm weergeeft, controleert u de ontwikkelaarsgereedschappen van uw speler en zoekt u naar `X-Frame-Options` of `frame-ancestors` fouten. De resolutie is om de Dispatcher te configureren zodat inhoud in iFrames kan worden uitgevoerd. Meestal werkt de volgende configuratie:
+Adobe raadt u aan om AEM Screens-caching-mogelijkheden te gebruiken. Als u uw Channel echter in de modus Ontwikkelaar moet uitvoeren en de AEM Screens Player een leeg scherm weergeeft, controleert u de ontwikkelaarsgereedschappen van uw speler en zoekt u naar `X-Frame-Options` - of `frame-ancestors` -fouten. De resolutie is om de Dispatcher zodanig te configureren dat inhoud in iFrames kan worden uitgevoerd. Meestal werkt de volgende configuratie:
 
 ```
 Header set Content-Security-Policy "frame-ancestors 'self' file: localhost:*;"

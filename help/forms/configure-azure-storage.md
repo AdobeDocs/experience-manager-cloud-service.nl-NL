@@ -11,47 +11,47 @@ ht-degree: 0%
 
 ---
 
-# Configureren [!DNL Azure] opslag {#configure-azure-storage}
+# [!DNL Azure] opslag configureren {#configure-azure-storage}
 
 
-![gegevensintegratie](assets/data-integeration.png)
+![ gegeven-integratie ](assets/data-integeration.png)
 
-[[!DNL Experience Manager Forms] Gegevensintegratie](data-integration.md) verstrekt een [!DNL Azure] opslagconfiguratie om formulieren te integreren met [!DNL Azure] opslagservices. Met FDM (Form Data Model) kunt u Adaptive Forms maken die interactief werkt met [!DNL Azure] server om bedrijfswerkstromen toe te laten. Bijvoorbeeld:
+[[!DNL Experience Manager Forms]  de Integratie van Gegevens ](data-integration.md) verstrekt een [!DNL Azure] opslagconfiguratie om vormen met [!DNL Azure] opslagdiensten te integreren. Met FDM (Form Data Model) kunt u Adaptive Forms maken dat met [!DNL Azure] Server werkt om bedrijfsworkflows in te schakelen. Bijvoorbeeld:
 
-* Gegevens schrijven naar [!DNL Azure] op Aangepast formulier verzenden.
-* Gegevens schrijven in [!DNL Azure] via aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel (FDM) en omgekeerd.
-* Query [!DNL Azure] voor gegevens en vult Adaptive Forms vooraf in.
-* Gegevens lezen van [!DNL Azure] server.
+* Schrijf gegevens naar [!DNL Azure] bij het verzenden van een adaptief formulier.
+* Schrijf gegevens in [!DNL Azure] via aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel (FDM) en omgekeerd.
+* Vraag [!DNL Azure] -server om gegevens en vul Adaptief Forms vooraf in.
+* Gegevens van de [!DNL Azure] -server lezen.
 
-## Maken [!DNL Azure] opslagconfiguratie {#create-azure-storage-configuration}
+## [!DNL Azure] opslagconfiguratie maken {#create-azure-storage-configuration}
 
-Controleer voordat u deze stappen uitvoert of u een [!DNL Azure] opslagaccount en een toegangstoets om de toegang tot de [!DNL Azure] opslagaccount.
+Controleer voordat u deze stappen uitvoert of u een [!DNL Azure] opslagaccount en een toegangstoets hebt om de toegang tot de [!DNL Azure] -opslagaccount te autoriseren.
 
-1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]**.
-1. Selecteer een map om de configuratie te maken en selecteer **[!UICONTROL Create]**.
-1. Geef een titel voor de configuratie op in het dialoogvenster **[!UICONTROL Title]** veld.
-1. Geef de naam van de [!DNL Azure] opslagaccount in de **[!UICONTROL Azure Storage Account]** veld.
-1. Geef de sleutel op voor toegang tot Azure-opslagaccount in het dialoogvenster **[!UICONTROL Azure Access Key]** veld en selecteer **[!UICONTROL Save]**.
+1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]** .
+1. Selecteer een map om de configuratie te maken en selecteer **[!UICONTROL Create]** .
+1. Geef een titel voor de configuratie op in het veld **[!UICONTROL Title]** .
+1. Geef de naam van de [!DNL Azure] -opslagaccount op in het veld **[!UICONTROL Azure Storage Account]** .
+1. Geef in het veld **[!UICONTROL Azure Access Key]** de sleutel op voor toegang tot Azure-opslagaccount en selecteer **[!UICONTROL Save]** .
 
 ## Formuliergegevensmodel maken {#create-azure-form-data-model}
 
-Na het maken van de [!DNL Azure] opslagconfiguratie, kunt u [Maak het formuliergegevensmodel](create-form-data-models.md). Geef de map op die de [!DNL Azure] in de **[!UICONTROL Data Source Configuration]** tijdens het maken van het formuliergegevensmodel (FDM). Vervolgens kunt u de configuratie selecteren in de lijst met configuraties in de opgegeven mapnaam.
+Na het creëren van de [!DNL Azure] opslagconfiguratie, kunt u [ tot het Model van de Gegevens van de Vorm ](create-form-data-models.md) leiden. Geef de map op die de [!DNL Azure] -configuratie bevat in het veld **[!UICONTROL Data Source Configuration]** terwijl u het FDM (Form Data Model) maakt. Vervolgens kunt u de configuratie selecteren in de lijst met configuraties in de opgegeven mapnaam.
 
-### Toevoegen [!DNL Azure] services voor het formuliergegevensmodel {#add-azure-services}
+### [!DNL Azure] -services toevoegen aan het formuliergegevensmodel {#add-azure-services}
 
-Nadat u de objecten Form Data Model (FDM) en Data Model hebt gemaakt, kunt u [!DNL Azure] services voor het formuliergegevensmodel (FDM).
+Nadat u de objecten Form Data Model (FDM) en Data Model hebt gemaakt, kunt u [!DNL Azure] -services toevoegen aan het Form Data Model (FDM).
 
-Toevoegen [!DNL Azure] diensten:
+[!DNL Azure] services toevoegen:
 
-1. Selecteer in de modus Bewerken de services in het menu **[!UICONTROL Services]** in het linkerdeelvenster en selecteert u **[!UICONTROL Add Selected]**. De geselecteerde services worden weergegeven in het dialoogvenster **[!UICONTROL Services]** van het formuliergegevensmodel (FDM).
+1. Selecteer in de modus Bewerken de services in het gedeelte **[!UICONTROL Services]** in het linkervenster en selecteer **[!UICONTROL Add Selected]** . De geselecteerde services worden weergegeven op het tabblad **[!UICONTROL Services]** van het FDM (Form Data Model).
 
-   ![Geselecteerde services toevoegen](assets/select-services.png)
+   ![ voeg de Geselecteerde Diensten ](assets/select-services.png) toe
 
-1. In de **[!UICONTROL Services]** tabblad selecteert u de service en **[!UICONTROL Edit Properties]**. Definieer op basis van de service de invoer- of uitvoermodelobjecten voor de service.
+1. Selecteer op het tabblad **[!UICONTROL Services]** de service en **[!UICONTROL Edit Properties]** . Definieer op basis van de service de invoer- of uitvoermodelobjecten voor de service.
 
-1. Selecteren **[!UICONTROL Save]** om het formuliergegevensmodel (FDM) op te slaan.
+1. Selecteer **[!UICONTROL Save]** om het formuliergegevensmodel (FDM) op te slaan.
 
-   In de volgende tabel worden de beschikbare [!DNL Azure] diensten:
+   In de volgende tabel worden de beschikbare [!DNL Azure] -services beschreven:
 
    <table>
     <tbody>
@@ -94,9 +94,9 @@ Toevoegen [!DNL Azure] diensten:
 
 Een objecteigenschap van een gegevensmodel definiëren als een zoeksleutel:
 
-1. In de **[!UICONTROL Model]** tab, selecteert u de objecteigenschap van het gegevensmodel en selecteert u **[!UICONTROL Edit Properties]**.
-1. Van de schakelaar **[!UICONTROL Search Key]** schakelt optie in op de status ON. Deze optie is alleen beschikbaar voor primaire gegevenstypen.
-1. Selecteren **[!UICONTROL Done]** en selecteer vervolgens **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
+1. Selecteer op het tabblad **[!UICONTROL Model]** de eigenschap van het gegevensmodelobject en selecteer **[!UICONTROL Edit Properties]** .
+1. Schakel de schakeloptie **[!UICONTROL Search Key]** in op de status ON. Deze optie is alleen beschikbaar voor primaire gegevenstypen.
+1. Selecteer **[!UICONTROL Done]** en selecteer vervolgens **[!UICONTROL Save]** om het formuliergegevensmodel (FDM) op te slaan.
 
 Nadat u objecteigenschappen van gegevensmodellen hebt gedefinieerd als zoeksleutels, worden de hashwaarden opgeslagen in Azure-indextags en in Base64-gecodeerde waarden worden opgeslagen in de Azure-metagegevens.
 

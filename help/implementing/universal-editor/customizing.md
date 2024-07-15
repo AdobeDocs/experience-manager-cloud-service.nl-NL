@@ -20,8 +20,8 @@ Leer over de verschillende uitbreidingspunten en andere eigenschappen die u toes
 
 De Universele Redacteur staat voor twee soorten aanpassing voor de behoeften van uw project toe.
 
-* [De universele editor aanpassen](#customizing) - De standaardfunctionaliteit van de Universal Editor kan via verschillende aanpassingsconfiguraties worden aangepast.
-* [De gebruikersinterface van de Universal Editor uitbreiden](#extending) - UI van de Universele Redacteur kan ook worden uitgebreid gebruikend App Builder om aan uw projectbehoeften te voldoen.
+* [ die de Universele Redacteur ](#customizing) aanpassen - de standaardfunctionaliteit van de Universele Redacteur kan via verscheidene aanpassingsconfiguraties worden aangepast.
+* [ Uitbreidend de Universele Redacteur UI ](#extending) - UI van de Universele Redacteur kan ook worden uitgebreid gebruikend App Builder om aan uw projectbehoeften te voldoen.
 
 Beide typen worden in de volgende secties beschreven.
 
@@ -33,7 +33,7 @@ De Universal Editor biedt verschillende ingebouwde opties om de functionaliteit 
 
 Voor bepaalde ontwerpworkflows moet de inhoud worden gecontroleerd voordat deze wordt gepubliceerd. In dergelijke situaties mag de optie om te publiceren niet beschikbaar zijn voor auteurs.
 
-De **Publiceren** Deze knop kan daarom volledig in een app worden onderdrukt door de volgende metagegevens toe te voegen.
+De **knoop van Publish** kan daarom volledig in app worden onderdrukt door de volgende meta-gegevens toe te voegen.
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
@@ -58,13 +58,13 @@ Een filterdefinitie zou als het volgende kunnen kijken, die een container zou be
 ]
 ```
 
-Dan kunt u de filterdefinitie van uw containercomponent van verwijzingen voorzien door het bezit toe te voegen `data-aue-filter`, door de id van het filter door te geven dat u eerder hebt gedefinieerd.
+Vervolgens kunt u naar de filterdefinitie van de containercomponent verwijzen door de eigenschap `data-aue-filter` toe te voegen en de id door te geven van het filter dat u eerder hebt gedefinieerd.
 
 ```html
 data-aue-filter="container-filter"
 ```
 
-De instelling van `components` kenmerk in een filterdefinitie aan `null` Hiermee worden alle componenten toegestaan, alsof er geen filter is.
+Als u het kenmerk `components` in een filterdefinitie instelt op `null` , worden alle componenten toegestaan, net als wanneer er geen filter is.
 
 ```json
 [
@@ -77,13 +77,13 @@ De instelling van `components` kenmerk in een filterdefinitie aan `null` Hiermee
 
 ### Componenten voorwaardelijk tonen en verbergen in Eigenschapcontrole {#conditionally-hide}
 
-Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen kunt u componenten in de eigenschappen-rail verbergen door een `condition` aan de [velden van het componentmodel.](/help/implementing/universal-editor/field-types.md#fields)
+Hoewel een component of componenten doorgaans beschikbaar zijn voor de auteurs, kunnen er bepaalde situaties zijn waarin dit geen nut heeft. In dergelijke gevallen, kunt u componenten in het eigenschappen spoor verbergen door a `condition` attributen aan de [ gebieden van het componentenmodel toe te voegen.](/help/implementing/universal-editor/field-types.md#fields)
 
-Voorwaarden kunnen worden gedefinieerd met behulp van [JsonLogic-schema.](https://jsonlogic.com/) Als de voorwaarde waar is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
+De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic.](https://jsonlogic.com/) Als de voorwaarde true is, wordt het veld weergegeven. Als de voorwaarde onwaar is, wordt het veld verborgen.
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeldmodel]
+>[!TAB  Model van de Steekproef ]
 
 ```json
  {
@@ -106,30 +106,30 @@ Voorwaarden kunnen worden gedefinieerd met behulp van [JsonLogic-schema.](https:
  }
 ```
 
->[!TAB Onjuiste voorwaarde]
+>[!TAB  Onwaar van de Voorwaarde ]
 
-![Verborgen tekstveld](assets/hidden.png)
+![ Verborgen tekstgebied ](assets/hidden.png)
 
->[!TAB Voorwaarde waar]
+>] de Toestand van 0} Waar {[!TAB 
 
-![Weergegeven tekstveld](assets/shown.png)
+![ Getoonde tekstgebied ](assets/shown.png)
 
 >[!ENDTABS]
 
 ## De gebruikersinterface van de Universal Editor uitbreiden {#extending}
 
-Als dienst van Adobe Experience Cloud, kan UI van de Universele Redacteur worden uitgebreid gebruikend de Bouwer van de App en de Experience Manager.
+Als dienst van Adobe Experience Cloud, kan de Universele UI van de Redacteur worden uitgebreid gebruikend App Builder en de Experience Manager.
 
-UI-extensies zijn JavaScript-toepassingen die zijn gemaakt met Adobe App Builder en die kunnen worden ingesloten in UI-toepassingen die worden uitgevoerd onder Adobe Experience Cloud Unified Shell, zoals de Universal Editor. U kunt uw eigen knoppen en handelingen toevoegen aan het koptekstmenu en de eigenschappen per spoor en u kunt uw eigen gebeurtenissen voor de Universal Editor maken.
+UI-extensies zijn JavaScript-toepassingen die zijn gebouwd met Adobe App Builder en die kunnen worden ingesloten in UI-toepassingen die worden uitgevoerd onder Adobe Experience Cloud Unified Shell, zoals de Universal Editor. U kunt uw eigen knoppen en handelingen toevoegen aan het koptekstmenu en de eigenschappen per spoor en u kunt uw eigen gebeurtenissen voor de Universal Editor maken.
 
 Zie de volgende bronnen als u deze mogelijkheden wilt verkennen:
 
-1. [UI-uitbreidbaarheid](https://developer.adobe.com/uix/docs/) - Dit is de ontwikkelaarsdocumentatie voor uitbreiding UI.
-1. [UI-uitbreidingshulplijnen](https://developer.adobe.com/uix/docs/guides/) - Stapsgewijze instructies voor het ontwikkelen van uw eigen extensie
-1. [De extensiepunten van de Universal Editor](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - Universal Editor-specifieke documentatie voor extensiepunten
+1. [ Uitbreidbaarheid UI ](https://developer.adobe.com/uix/docs/) - dit is de ontwikkelaardocumentatie voor uitbreiding UI.
+1. [ UI de Gidsen van de Rekbaarheid ](https://developer.adobe.com/uix/docs/guides/) - geleidelijke instructies op hoe te om uw eigen uitbreiding te ontwikkelen
+1. [ de Universele Punten van de Uitbreiding van de Redacteur ](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) - Universele redacteur-specifieke documentatie van het uitbreidingspunt
 
 >[!TIP]
 >
->Als u liever per voorbeeld wilt leren, raadpleegt u de [AEM zelfstudie over uitbreidbaarheid voor UI.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
+>Als u liever per voorbeeld wilt leren, raadpleegt u de zelfstudie over de uitbreidbaarheid van de gebruikersinterface van [AEM .](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Hoewel het zich concentreert op het uitbreiden van de console van het Fragment van de Inhoud, zijn de concepten voor het uitvoeren van een uitbreiding UI in de Universele Redacteur het zelfde.
 
-[Extension Manager gebruiken in AEM Sites,](https://developer.adobe.com/uix/docs/extension-manager/) u kunt uw uitbreidingen op een per-instantie basis toelaten of onbruikbaar maken, hebt toegang tot de eerste partijuitbreidingen van de Adobe met inbegrip van die voor de Universele Redacteur, en nog veel meer.
+[ Gebruikend Extension Manager in AEM Sites, ](https://developer.adobe.com/uix/docs/extension-manager/) u kunt uw uitbreidingen op een per-instantiebasis toelaten of onbruikbaar maken, toegang tot de eerste partijuitbreidingen van de Adobe met inbegrip van die voor de Universele Redacteur, en veel meer.

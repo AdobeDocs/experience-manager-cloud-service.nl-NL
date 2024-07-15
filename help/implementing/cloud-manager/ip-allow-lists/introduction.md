@@ -24,9 +24,9 @@ ht-degree: 0%
 
 AEM als cloudservice is standaard toegankelijk via internet. Terwijl de veiligheid door gebruikersauthentificatie en vergunning wordt behandeld, IP staat-lijst toe om toegang tot slechts vertrouwde op IP adressen te beperken.
 
-De lijsten van gewenste personen van Cloud Manager IP kunnen worden gebruikt om toegang tot slechts dergelijke vertrouwde op IP adressen te beperken en te controleren. Cloud Manager-gebruikers met de juiste machtigingen kunnen [lijsten van gewenste personen maken](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) van vertrouwde IP-adressen waar de gebruikers van hun site toegang tot hun AEM kunnen krijgen.
+De lijsten van gewenste personen van Cloud Manager IP kunnen worden gebruikt om toegang tot slechts dergelijke vertrouwde op IP adressen te beperken en te controleren. De gebruikers van Cloud Manager met aangewezen toestemmingen kunnen [ lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) van vertrouwde op IP adressen tot stand brengen waarvan de gebruikers van hun plaats tot hun AEM kunnen toegang hebben.
 
-Na toevoegen, [IP de lijsten van gewenste personen kunnen worden toegepast/unapplied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) meerdere keren als eenheid of entiteit aan een auteur en/of uitgeversdienst in een milieu.
+Na het toevoegen, [ IP kunnen de lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) veelvoudige tijden als eenheid of entiteit aan een auteur en/of uitgeversdienst in een milieu worden toegepast/worden niet toegepast.
 
 >[!NOTE]
 >

@@ -7,16 +7,16 @@ role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
 source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
 # Hotlink-beveiliging activeren in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. Hotlink *bescherming* is een methode om te voorkomen dat andere websites rechtstreeks koppelingen maken naar afbeeldingen, CSS of JavaScript op uw webpagina&#39;s. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
+Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. De hotlink *bescherming* is een methode om andere websites te verhinderen direct met beelden, CSS, of JavaScript op uw Web-pagina&#39;s te verbinden. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
 
-[Adobe Klantenondersteuning](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) kan een verwijzingsfilter op het niveau vormen CDN. Zo zorgt u ervoor dat Dynamic Media-inhoud alleen wordt verzonden naar websites op uw lijst met toegestane websites voor het domein.
+[ de Steun van de Klant van de Adobe ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) kan een verwijzerfilter op het niveau vormen CDN. Zo zorgt u ervoor dat Dynamic Media-inhoud alleen wordt verzonden naar websites op uw lijst met toegestane websites voor het domein.
 
 >[!NOTE]
 >

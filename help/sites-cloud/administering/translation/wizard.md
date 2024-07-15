@@ -18,38 +18,38 @@ De wizard Taalkopie is een begeleide ervaring voor het maken en van instrumenten
 
 >[!TIP]
 >
->Als u nog geen ervaring hebt met het vertalen van inhoud, raadpleegt u [Sites Translation Journey,](/help/journey-sites/translation/overview.md) Dit is een geleid pad door uw AEM Sites-inhoud te vertalen met de krachtige vertaalgereedschappen van AEM, ideaal voor mensen zonder AEM of vertaalervaring.
+>Als u aan het vertalen van inhoud nieuw bent, zie ](/help/journey-sites/translation/overview.md) de Vertaalreis van 0} Plaatsen, die geleid weg door uw inhoud van AEM Sites te vertalen gebruikend de krachtige vertaalhulpmiddelen van AEM, ideaal voor die zonder AEM of vertaalervaring heeft.[
 
 >[!NOTE]
 >
->De gebruiker moet lid zijn van de `project-administrators` een taalkopie van een site maken.
+>De gebruiker moet lid zijn van de groep `project-administrators` om een taalkopie van een site te maken.
 
 De wizard openen:
 
-1. Selecteer een pagina in de siteconsole en selecteer **Maken** en selecteert u **Taalkopie**.
+1. In de plaatsenconsole, selecteer een pagina en selecteer **creeer** en selecteer **Exemplaar van de Taal**.
 
-   ![Taalkopie maken van wizard](../assets/language-copy-wizard.png)
+   ![ creeer taalexemplaar van tovenaar ](../assets/language-copy-wizard.png)
 
-1. De wizard wordt geopend voor de **Bron selecteren** stap waarmee u pagina&#39;s kunt toevoegen/verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten. Selecteer de pagina&#39;s die u wilt opnemen en selecteer **Volgende**.
+1. De tovenaar opent aan **Uitgezochte Source** stap die u toestaat toevoegen/pagina&#39;s verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten. Selecteer de pagina&#39;s u **daarna** wilt omvatten en selecteren.
 
-   ![Pagina&#39;s toevoegen met de wizard](../assets/language-copy-wizard-add-pages.png)
+   ![ Toevoegend pagina&#39;s met de tovenaar ](../assets/language-copy-wizard-add-pages.png)
 
-1. De **Configureren** Met de stap van de wizard kunt u talen toevoegen of verwijderen en een vertaalmethode selecteren. Selecteren **Volgende**.
+1. **vormt** stap van de tovenaar laat u talen toevoegen/verwijderen en vertaalmethode selecteren. Selecteer **daarna**.
 
-   ![Stap configureren van wizard](../assets/language-copy-wizard-configure.png)
+   ![ vorm stap van tovenaar ](../assets/language-copy-wizard-configure.png)
 
    >[!NOTE]
    >
-   >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [Het Kader voor de Integratie van de Vertaling vormen](integration-framework.md).
+   >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [ Vormend het Kader van de Integratie van de Vertaling ](integration-framework.md).
 
-1. In de **Vertalen** kunt u kiezen tussen het maken van alleen de structuur, het maken van een vertaalproject of het toevoegen aan een bestaand vertaalproject.
+1. In de **Vertaal** stap van de tovenaar kunt u tussen het creëren van de structuur slechts kiezen, creërend een vertaalproject, of het toevoegen aan een bestaand vertaalproject.
 
    >[!NOTE]
    >
    >Als u in de vorige stap meerdere talen hebt geselecteerd, worden er meerdere vertaalprojecten gemaakt.
 
-   ![Vertaalstap van wizard](../assets/language-copy-wizard-translate.png)
+   ![ Vertaal stap van tovenaar ](../assets/language-copy-wizard-translate.png)
 
-1. De **Maken** de knop beëindigt de wizard. Selecteren **Gereed** om de wizard of **Openen** om het resulterende vertaalproject te bekijken.
+1. **creeer** knoop beëindigt de tovenaar. Selecteer **Gedaan** om de tovenaar of **Open** te sluiten om het resulterende vertaalproject te bekijken.
 
-   ![wizard End](../assets/language-copy-wizard-done.png)
+   ![ tovenaar van het Eind ](../assets/language-copy-wizard-done.png)

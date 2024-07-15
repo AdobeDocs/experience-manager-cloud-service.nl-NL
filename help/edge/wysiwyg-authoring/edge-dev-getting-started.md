@@ -20,18 +20,18 @@ Deze gids zal u aan de slag met een nieuwe plaats van Adobe Experience Manager g
 
 Voordat u met deze handleiding begint, dient u al op de hoogte te zijn van de basisbeginselen van en toegang te hebben tot Edge Delivery Services, zoals:
 
-* U hebt de [Zelfstudie over Edge Delivery Service.](/help/edge/developer/tutorial.md)
-* U hebt toegang tot [AEM Cloud Service-sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* U hebt [heeft de Universal Editor ingeschakeld in dezelfde sandboxomgeving.](/help/implementing/universal-editor/getting-started.md)
+* U hebt de [ zelfstudie van de Dienst van Edge Delivery voltooid.](/help/edge/developer/tutorial.md)
+* U hebt toegang tot een [ zandbak van AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+* U hebt [ de Universele Redacteur op het zelfde zandbakmilieu toegelaten.](/help/implementing/universal-editor/getting-started.md)
 
 ## Kies de rechtereditor {#editor-choice}
 
 AEM biedt twee verschillende inhoudeditors en de keuze van wie u wilt gebruiken hangt af van uw situatie.
 
-* **Universele editor** - Dit zou de standaardkeus voor nieuwe plaatsen moeten zijn.
-* **Pagina-editor AEM** - Dit moet worden gekozen voor een bestaande migratie van AEM Sites naar Edge Delivery Services.
+* **Universele Redacteur** - dit zou de standaardkeus voor nieuwe plaatsen moeten zijn.
+* **AEM de Redacteur van de Pagina** - dit zou voor een bestaande migratie van AEM Sites aan Edge Delivery Services moeten worden gekozen.
 
-Deze gids concentreert zich op AEM projecten op Edge Delivery Services gebruikend de Universele Redacteur. Zie het document [Edge Delivery Services met AEM gebruiken](/help/edge/using.md) voor meer informatie over het kiezen van de juiste redacteur en de migratie van bestaande AEM plaatsen aan Edge Delivery Services.
+Deze gids concentreert zich op AEM projecten op Edge Delivery Services gebruikend de Universele Redacteur. Zie het document [ Gebruikend Edge Delivery Services met AEM ](/help/edge/using.md) voor meer details bij het kiezen van de juiste redacteur en de migratie van bestaande AEM plaatsen aan Edge Delivery Services.
 
 ## Basisconcepten bij het ontwikkelen voor Edge Delivery Services {#core-concepts}
 
@@ -45,83 +45,83 @@ AEM biedt standaardblokken als onderdeel van het product binnen het bouwsteenbou
 
 >[!TIP]
 >
->Zie de [Sectie Samenstellen](/help/edge/developer/block-collection.md) van de documentatie van Edge Delivery Services voor meer informatie over blokken en hoe te om voor de diensten van de Levering van de Rand te ontwikkelen.
+>Gelieve te zien de [ sectie van de Bouwstijl ](/help/edge/developer/block-collection.md) van de documentatie van Edge Delivery Services voor meer details op blokken en hoe te zich voor de diensten van Edge Delivery ontwikkelen.
 
 ### Edge Delivery Services en GitHub {#github-edge}
 
-De hefboomwerkingen van de Levering van de rand GitHub zodat kunt u code direct van uw bewaarplaats beheren en opstellen GitHub.
+Edge Delivery hefboomwerkingen GitHub zodat kunt u code van uw bewaarplaats beheren en opstellen GitHub.
 
-Uw auteurs kunnen inhoud maken met gebruik van op documenten gebaseerde ontwerpen of met gebruik van inhoud in AEM met de Universal Editor. Ontwikkelaars kunnen de functionaliteit van uw site aanpassen met CSS en JavaScript in GitHub, ongeacht hoe de auteurs hun inhoud maken.
+Uw auteurs kunnen inhoud maken met gebruik van op documenten gebaseerde ontwerpen of met gebruik van inhoud in AEM met de Universal Editor. Ontwikkelaars kunnen de functionaliteit van uw site aanpassen door CSS en JavaScript in GitHub te gebruiken, ongeacht hoe de auteurs hun inhoud maken.
 
 Er worden automatisch websites gemaakt voor elk van uw vertakkingen, van de voorvertoning van de inhoud tot de productie. Elk middel dat u in uw bewaarplaats GitHub zet is beschikbaar op uw website zonder een bouwstijlproces.
 
 >[!TIP]
 >
->Zie de [Sectie Samenstellen](/help/edge/developer/block-collection.md) van de documentatie van Edge Delivery Services voor meer informatie over blokken en hoe te om voor de diensten van de Levering van de Rand te ontwikkelen.
+>Gelieve te zien de [ sectie van de Bouwstijl ](/help/edge/developer/block-collection.md) van de documentatie van Edge Delivery Services voor meer details op blokken en hoe te zich voor de diensten van Edge Delivery ontwikkelen.
 
 ## Aan de slag met WYSIWYG Authoring en Edge Delivery Services {#getting-started}
 
-Zodra u hebt voldaan [de voorwaarden](#prerequisites) en [de keuze om de Universal Editor te gebruiken;](#editor-choice) u kunt aan de slag gaan met uw eigen project.
+Zodra u [ aan de eerste vereisten ](#prerequisites) hebt voldaan en [ de keus gemaakt om de Universele Redacteur te gebruiken, ](#editor-choice) u kunt op uw eigen project beginnen.
 
 ### Uw GitHub-project maken {#create-github-project}
 
 Eerst zult u een nieuw project op GitHub moeten tot stand brengen, dat op het malplaatje van de Adobe wordt gebaseerd.
 
-1. Navigeren naar [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk) en klik op **Deze sjabloon gebruiken** en selecteert u **Een nieuwe opslagplaats maken**.
+1. Navigeer aan [`https://github.com/adobe-rnd/aem-boilerplate-xwalk` ](https://github.com/adobe-rnd/aem-boilerplate-xwalk) en klik op **Gebruik dit malplaatje** en selecteer **creeer een nieuwe bewaarplaats**.
 
    * U zult binnen aan GitHub moeten worden ondertekend om deze optie te zien.
 
-   ![Opslagproject kopiëren](assets/edge-dev-getting-started/use-template-project.png)
+   ![ project van de bewaarplaats van het Exemplaar ](assets/edge-dev-getting-started/use-template-project.png)
 
-1. Standaard wordt de opslagplaats aan u toegewezen. Wijzig dit zo nodig en geef een naam en beschrijving voor de gegevensopslagplaats op en klik op **Opslagplaats maken**.
+1. Standaard wordt de opslagplaats aan u toegewezen. Verander dit zonodig evenals verstrek een een bewaarplaatsnaam en een beschrijving en klik **creeer bewaarplaats**.
 
-   ![De opslagplaats maken](assets/edge-dev-getting-started/create-repo.png)
+   ![ Creërend de bewaarplaats ](assets/edge-dev-getting-started/create-repo.png)
 
-1. Ga in een nieuw tabblad in dezelfde browser naar [`https://github.com/apps/aem-code-sync`](https://github.com/apps/aem-code-sync) en klik op **Configureren**.
+1. In een nieuw lusje in zelfde browser, navigeer aan [`https://github.com/apps/aem-code-sync` ](https://github.com/apps/aem-code-sync) en klik **vormen**.
 
-   ![Codesync](assets/edge-dev-getting-started/configure-code-sync.png)
+   ![ de Synchronisatie van de Code ](assets/edge-dev-getting-started/configure-code-sync.png)
 
-1. Klikken **Configureren** voor de org waar u in de vorige stap uw nieuwe opslagplaats creeerde.
+1. Klik **vormen** voor org waar u uw nieuwe bewaarplaats in de vorige stap creeerde.
 
-   ![De org kiezen voor codesynchronisatie](assets/edge-dev-getting-started/code-sync-org.png)
+   ![ het Kiezen van org voor codesynchronisatie ](assets/edge-dev-getting-started/code-sync-org.png)
 
-1. Op de AEM pagina GitHub van de Synchronisatie van de Code onder **Toegang tot opslagplaats**, selecteert u **Alleen repositories selecteren** selecteert u de opslagplaats die u in de vorige stap hebt gemaakt en klikt u vervolgens op **Opslaan**.
+1. Op de AEM pagina van GitHub van de Synchronisatie van de Code onder **Toegang van de Bewaarplaats**, selecteer **slechts bewaarplaatsen**, selecteer de bewaarplaats die u in de vorige stap creeerde, en klik dan **sparen**.
 
-   ![Toegang tot AEM codesynchronisatie verlenen](assets/edge-dev-getting-started/grant-code-sync-acces.png)
+   ![ verlenen AEM de toegang van de Synchronisatie van de Code ](assets/edge-dev-getting-started/grant-code-sync-acces.png)
 
 1. Nadat AEM Codesynchronisatie is geïnstalleerd, ontvangt u een bevestigingsscherm. Ga terug naar het browsertabblad van de nieuwe opslagplaats.
 
-   ![Bevestiging van installatie van codesynchronisatie](assets/edge-dev-getting-started/confirmation.png)
+   ![ de installatiebevestiging van de Synchronisatie van de Code ](assets/edge-dev-getting-started/confirmation.png)
 
-1. Klik op de knop `fstab.yaml` te openen en vervolgens **Dit bestand bewerken** pictogram om het te bewerken.
+1. Klik het `fstab.yaml` dossier om het te openen en dan **dit dossier** pictogram uitgeven om het uit te geven.
 
-   ![fstab.yaml](assets/edge-dev-getting-started/fstab.png)
+   ![ fstab.yaml ](assets/edge-dev-getting-started/fstab.png)
 
-1. Bewerk de `fstab.yaml` bestand om het koppelingspunt van uw project bij te werken. Vervang de standaard Google Docs URL met URL van uw AEM as a Cloud Service ontwerpinstantie en klik dan **Wijzigingen vastleggen...**.
+1. Bewerk het `fstab.yaml` -bestand om het koppelingspunt van uw project bij te werken. Vervang standaardGoogle DOS URL met URL van uw het auteursrecht van AEM as a Cloud Service en klik dan **veranderingen vastleggen...**.
 
    * `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
    * Als u het koppelingspunt wijzigt, weet u aan Edge Delivery Services waar ze de inhoud van de site moeten vinden.
 
-   ![Fstab bijwerken](assets/edge-dev-getting-started/fstab-update.png)
+   ![ Bijwerkend fstab ](assets/edge-dev-getting-started/fstab-update.png)
 
-1. Voeg naar wens een commit message toe en klik vervolgens op **Wijzigingen vastleggen**, die rechtstreeks bij de `main` vertakking.
+1. Voeg toe begaat bericht zoals gewenst en klik dan **veranderingen** begaan, die hen direct aan de `main` tak begaan.
 
-   ![Wijzigingen vastleggen](assets/edge-dev-getting-started/commit-fstab-changes.png)
+   ![ het Aanwijzen veranderingen ](assets/edge-dev-getting-started/commit-fstab-changes.png)
 
-1. Ga terug naar de hoofdmap van uw opslagplaats en klik op `paths.json` en vervolgens de **Dit bestand bewerken** pictogram.
+1. Terugkeer naar de wortel van uw bewaarplaats en klik op `paths.json` en dan **geef dit dossier** pictogram uit.
 
-   ![paths.json](assets/edge-dev-getting-started/paths.png)
+   ![ paths.json ](assets/edge-dev-getting-started/paths.png)
 
-1. Voor de standaardtoewijzing wordt de naam van de gegevensopslagruimte gebruikt. Werk de standaardafbeelding zoals vereist voor uw project bij met `/content/<site-name>/:/` en klik op **Wijzigingen vastleggen...**.
+1. Voor de standaardtoewijzing wordt de naam van de gegevensopslagruimte gebruikt. Werk de standaardafbeelding zoals vereist voor uw project met `/content/<site-name>/:/` bij en klik **verbindt veranderingen...**.
 
-   * Geef uw eigen `<site-name>`. U hebt het in een latere stap nodig.
+   * Geef uw eigen `<site-name>` op. U hebt het in een latere stap nodig.
    * De toewijzingen vertellen Edge Delivery Services hoe ze de inhoud in uw AEM opslagplaats moeten toewijzen aan de URL van de site.
 
-   ![Paden.json bijwerken](assets/edge-dev-getting-started/paths-update.png)
+   ![ Bijwerkend paths.json ](assets/edge-dev-getting-started/paths-update.png)
 
-1. Voeg naar wens een commit message toe en klik vervolgens op **Wijzigingen vastleggen**, die rechtstreeks bij de `main` vertakking.
+1. Voeg toe begaat bericht zoals gewenst en klik dan **veranderingen** begaan, die hen direct aan de `main` tak begaan.
 
-   ![Wijzigingen vastleggen](assets/edge-dev-getting-started/commit-paths-changes.png)
+   ![ het Aanwijzen veranderingen ](assets/edge-dev-getting-started/commit-paths-changes.png)
 
 ### Een nieuwe AEM-site maken en bewerken {#create-aem-site}
 
@@ -131,57 +131,57 @@ Nu u een project GitHub hebt, moet u een nieuwe AEM tot stand brengen plaats die
 >
 >Als u uw site wilt bewerken met de Universal Editor, moet u een op chroom gebaseerde browser gebruiken.
 
-1. Download recentste WYSIWYG creatie met Edge Delivery Services plaatsmalplaatje van GitHub bij [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Download recentste WYSIWYG creatie met het malplaatje van de Edge Delivery Services plaats van GitHub in [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases` ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
-1. Meld u aan bij uw AEM as a Cloud Service ontwerpinstantie en navigeer naar de Sites-console en tik of klik op **Maken** -> **Site van sjabloon**.
+1. Teken binnen aan uw het auteursinstantie van AEM as a Cloud Service en navigeer aan de console van Plaatsen en tik of klik **creeer** -> **Plaats van malplaatje**.
 
-   ![Een nieuwe site maken vanaf de console](assets/edge-dev-getting-started/create-site-console.png)
+   ![ creeer een nieuwe plaats van de console ](assets/edge-dev-getting-started/create-site-console.png)
 
-1. Op de **Een sitesjabloon selecteren** klikt u op de knop **Importeren** om een nieuwe sjabloon te importeren.
+1. Op **selecteer een plaatsmalplaatje** van creeer plaatstovenaar, klik de **Invoer** knoop om een nieuw malplaatje in te voeren.
 
-   ![Sjablonen importeren](assets/edge-dev-getting-started/site-templates.png)
+   ![ het Invoeren malplaatjes ](assets/edge-dev-getting-started/site-templates.png)
 
 1. Upload het schrijven WYSIWYG met het malplaatje van de Edge Delivery Services plaats dat u van GitHub downloadde.
 
    * De sjabloon mag slechts eenmaal worden geüpload. Na het uploaden kan het opnieuw worden gebruikt om extra sites te maken.
 
-1. Zodra het malplaatje wordt ingevoerd, verschijnt het in de tovenaar. Tik of klik om het te selecteren en tik of klik vervolgens op **Volgende**.
+1. Zodra het malplaatje wordt ingevoerd, verschijnt het in de tovenaar. Tik of klik om het te selecteren en dan te tikken of **daarna** te klikken.
 
-   ![Sjabloon selecteren](assets/edge-dev-getting-started/select-template.png)
+   ![ Uitgezochte malplaatje ](assets/edge-dev-getting-started/select-template.png)
 
-1. Geef de volgende velden op en tik of klik op **Maken**.
+1. Verstrek de volgende gebieden en de kraan of klik **creëren**.
 
-   * **Titel van site** - Voeg een beschrijvende titel toe aan de site.
-   * **Titel van site** - Gebruik de `<site-name>` die u in [vorige stap.](#create-github-project)
-   * **GitHub-URL** - Gebruik URL van het project GitHub u in de vorige stap creeerde.
+   * **titel van de Plaats** - voeg een beschrijvende titel voor de plaats toe.
+   * **titel van de Plaats** - gebruik `<site-name>` dat u in de [ vorige stap bepaalde.](#create-github-project)
+   * **GitHub URL** - gebruik URL van het project GitHub u in de vorige stap creeerde.
 
-   ![Sitegegevens](assets/edge-dev-getting-started/create-site-details.png)
+   ![ de details van de Plaats ](assets/edge-dev-getting-started/create-site-details.png)
 
-1. AEM bevestigt het maken van de site met een dialoogvenster. Tik of klik op **OK** om te worden ontslagen.
+1. AEM bevestigt het maken van de site met een dialoogvenster. Tik of klik **O.K.** om te sluiten.
 
-   ![Bevestiging van site](assets/edge-dev-getting-started/site-creation-confirmation.png)
+   ![ bevestiging van de creatie van de Plaats ](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. Navigeer op de siteconsole naar de `index.html` van de nieuwe site en tik of klik op **Bewerken** in de werkbalk.
+1. Op de plaatsenconsole, navigeer aan `index.html` van de pas gecreëerde plaats en tik of klik **geef** in de toolbar uit.
 
-   ![De nieuwe site bewerken](assets/edge-dev-getting-started/new-site.png)
+   ![ Uitgevend de nieuwe plaats ](assets/edge-dev-getting-started/new-site.png)
 
-1. De Universal Editor wordt op een nieuw tabblad geopend. Mogelijk moet u tikken of op **Aanmelden met Adobe** om te verifiëren om uw pagina te bewerken.
+1. De Universal Editor wordt op een nieuw tabblad geopend. U kunt moeten tikken of **binnen Teken met Adobe** klikken om uw pagina voor authentiek te verklaren uit te geven.
 
-   ![Universele editor](assets/edge-dev-getting-started/universal-editor.png)
+   ![ Universele Redacteur ](assets/edge-dev-getting-started/universal-editor.png)
 
-U kunt uw site nu bewerken met de Universal Editor. Zie de [Universal Editor-documentatie](/help/sites-cloud/authoring/universal-editor/authoring.md) voor meer informatie .
+U kunt uw site nu bewerken met de Universal Editor. Zie de [ Universele documentatie van de Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) voor meer informatie.
 
 ### Uw nieuwe site publiceren {#publishing}
 
 Als u klaar bent met het bewerken van uw nieuwe site met de Universal Editor, kunt u uw inhoud publiceren.
 
-1. Selecteer in de siteconsole alle pagina&#39;s die u voor uw nieuwe site hebt gemaakt en tik of klik op **Snel publiceren** in de werkbalk.
+1. Voor de plaatsenconsole, selecteer alle pagina&#39;s u voor uw nieuwe plaats creeerde en tikt of **klikt Snel publiceert** in de toolbar.
 
-   ![Te publiceren pagina&#39;s selecteren](assets/edge-dev-getting-started/publishing.png)
+   ![ Selecterend pagina&#39;s om te publiceren ](assets/edge-dev-getting-started/publishing.png)
 
-1. Tik of klik op **Publiceren** in het bevestigingsdialoogvenster om het proces te starten.
+1. Tik of klik **Publish** in de bevestigingsdialoog om het proces te beginnen.
 
-   ![Het dialoogvenster Publiceren](assets/edge-dev-getting-started/publish-confirmation.png)
+   ![ de dialoog van Publish ](assets/edge-dev-getting-started/publish-confirmation.png)
 
 1. Open een nieuw tabblad in dezelfde browser en navigeer naar de URL van de nieuwe site.
 
@@ -189,14 +189,14 @@ Als u klaar bent met het bewerken van uw nieuwe site met de Universal Editor, ku
 
 1. Bekijk de gepubliceerde inhoud.
 
-   ![Gepubliceerde inhoud](assets/edge-dev-getting-started/published-site.png)
+   ![ Gepubliceerde inhoud ](assets/edge-dev-getting-started/published-site.png)
 
 ## Volgende stappen {#next-steps}
 
 Nu u een werkend WYSIWYG creatie met het project van Edge Delivery Services hebt, kunt u beginnen creërend en uw eigen blokken.
 
-Zie de handleiding [Blokken maken met een instrument voor gebruik met de universele editor](/help/edge/wysiwyg-authoring/create-block.md) voor meer informatie .
+Gelieve te zien de gids [ Creërend Blokken Instrumented voor gebruik met de Universele Redacteur ](/help/edge/wysiwyg-authoring/create-block.md) voor meer informatie.
 
 >[!TIP]
 >
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor het schrijven WYSIWYG met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [deze AEM GEM&#39;s webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor het schrijven WYSIWYG met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

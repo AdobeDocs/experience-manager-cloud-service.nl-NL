@@ -23,11 +23,11 @@ Met MSM (Multi Site Manager) en de functie Live Copy kunt u dezelfde inhoud op m
    * Wanneer u de broninhoud wijzigt, worden de bron en Live kopieën gesynchroniseerd.
    * U kunt alleen de inhoud van de actieve kopieën aanpassen door de live relatie voor afzonderlijke subpagina&#39;s en/of componenten te verbreken.
 
-Voor een gedetailleerd overzicht van de concepten MSM zie [Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren](/help/sites-cloud/administering/msm/overview.md).
+Voor een gedetailleerd overzicht van de concepten MSM zie [ Hergebruikende Inhoud: De Manager van de MultiPlaats en Levende Kopie van het Exemplaar ](/help/sites-cloud/administering/msm/overview.md).
 
 >[!NOTE]
 >
->[MSM (Multi Site Manager)](/help/sites-cloud/administering/msm/overview.md) in Adobe Experience Manager kunnen gebruikers inhoud hergebruiken die eenmaal is ontworpen en vervolgens opnieuw wordt gebruikt op meerdere weblocaties.
+>[ Multisite Manager (MSM) ](/help/sites-cloud/administering/msm/overview.md) functionaliteit in Adobe Experience Manager laat gebruikers toe om inhoud opnieuw te gebruiken die eens en dan over veelvoudige Web-plaatsen wordt ontworpen opnieuw gebruikt.
 
 Met MSM voor inhoudsfragmenten kunt u:
 
@@ -39,30 +39,30 @@ Met MSM voor inhoudsfragmenten kunt u in combinatie met functionaliteit in de In
 
 >[!CAUTION]
 >
->MSM voor inhoudsfragmenten is alleen beschikbaar wanneer u Content Fragments gebruikt via de **Activa** console.
+>MSM voor de Fragmenten van de Inhoud is slechts beschikbaar wanneer het gebruiken van de Fragmenten van de Inhoud via de **Assets** console.
 >
->MSM-functionaliteit is *niet* beschikbaar bij gebruik van de **Inhoudsfragmenten** console.
+>De functionaliteit MSM is *niet* beschikbaar wanneer het gebruiken van de **console van de Fragmenten van de Inhoud**.
 
 ## Procedure {#how-to}
 
-Zie de volgende documentatie voor details over het gebruik van MSM voor de Fragments van de Inhoud (ook toepasselijk op Activa):
+Zie de volgende documentatie voor details over het gebruik van MSM voor de Fragments van de Inhoud (ook toepasselijk op Assets):
 
-* Hoe wordt het gebruikt [MSM voor inhoudsfragmenten (en elementen)](/help/assets/reuse-assets-using-msm.md)
+* Hoe te om [ MSM voor de Fragmenten van de Inhoud (en Assets) te gebruiken ](/help/assets/reuse-assets-using-msm.md)
 
 * [Een actieve kopie maken](/help/assets/reuse-assets-using-msm.md)
 
   >[!CAUTION]
   >
-  >Als u MSM wilt gebruiken om exemplaren van Inhoudsfragmenten) tot stand te brengen, dan om het even welk **Uniek** de beperkingen moeten worden verwijderd uit alle gegevenstypen die in de respectieve [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md).
+  >Als u MSM wilt gebruiken om exemplaren van Inhoudsfragmenten) tot stand te brengen, dan zouden om het even welke **Unieke** beperkingen uit om het even welke Types moeten worden verwijderd van Gegevens die in de respectieve [ Modellen van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md) worden gebruikt.
 
 * [Eigenschappen en status van bron en Live kopie weergeven](/help/assets/reuse-assets-using-msm.md#properties)
 * [Wijzigingen van bron naar Live kopie doorgeven](/help/assets/reuse-assets-using-msm.md#rollout-sync)
 * Overerving annuleren en opnieuw instellen voor:
-   * velden en variaties in de [Inhoudsfragmenteditor](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+   * gebieden en variaties in de [ redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
    * [metagegevens van verwante elementen](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [De relatie onderbreken en hervatten](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [De live relatie verwijderen](/help/assets/reuse-assets-using-msm.md#detach)
-* [Vergelijk MSM voor de Fragmenten van de Inhoud (en Middelen) met MSM voor Plaatsen](/help/assets/reuse-assets-using-msm.md#comparison)
+* [Vergelijk MSM voor de Fragmenten van de Inhoud (en Assets) met MSM voor Plaatsen](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## Beperkingen {#limitations}
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Toewijzing van servicegebruikers {#service-user-mapping}
 
-Als u een toewijzing van uw service aan de overeenkomstige systeemgebruiker(s) wilt toevoegen, moet u een fabrieksconfiguratie voor de `ServiceUserMapper` service. Om deze modulaire configuratie te handhaven, kunnen dergelijke configuraties worden verstrekt gebruikend het Verschuivende &quot;wijzigingsmechanisme&quot; (zie [SLING-3578](https://issues.apache.org/jira/browse/SLING-3578) voor meer informatie ). U kunt dergelijke configuraties het beste met uw bundel installeren door deze toe te voegen aan het Quickstart-inrichtingsmodel, zoals in het volgende voorbeeld wordt beschreven:
+Als u een toewijzing van uw service aan de overeenkomstige systeemgebruiker(s) wilt toevoegen, moet u een fabrieksconfiguratie voor de service `ServiceUserMapper` maken. Om dit modulair te houden, kunnen dergelijke configuraties worden verstrekt gebruikend het Verschuiven &quot;wijzigt&quot;mechanisme (zie [ SLING-3578 ](https://issues.apache.org/jira/browse/SLING-3578) voor meer details). U kunt dergelijke configuraties het beste met uw bundel installeren door deze toe te voegen aan het Quickstart-inrichtingsmodel, zoals in het volgende voorbeeld wordt beschreven:
 
 ```
 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-my-mapping
@@ -32,23 +32,23 @@ Sinds AEM 6.4 wordt het toewijzingsformaat als volgt gedefinieerd:
 
 >[!NOTE]
 >
->De `userName` is vervangen en mag niet meer worden gebruikt.
+>`userName` is afgekeurd en mag niet meer worden gebruikt.
 
 ```
 bundleId [:subserviceName] = userName | [principalNames]   
 ```
 
-`bundleId` en `subserviceName` de dienst identificeren; `userName/principalNames` identificeer de de dienstgebruiker en `principalNames` Dit is een door komma&#39;s gescheiden lijst.
+`bundleId` en `subserviceName` identificeer de service, `userName/principalNames` identificeer de servicegebruiker en `principalNames` is een door komma&#39;s gescheiden lijst.
 
-Houd er ook rekening mee dat `principalNames` is de lijst van de de dienstgebruiker belangrijkste namen die uit de doos het zelfde als identiteitskaart zijn.
+Houd er ook rekening mee dat `principalNames` de lijst is met hoofdnamen van servicegebruikers die uit het vak komen, gelijk zijn aan de id.
 
 
 **Beste praktijken**
 
-* De namen van de subdienst voor verschillende taken - als de diensten van uw bundel verschillende taken uitvoeren wordt het geadviseerd om te identificeren `subserviceNames` om hen door taken te groeperen
-* Als een bepaalde service verschillende bewerkingen uitvoert (bijvoorbeeld de inhoud van elementen lezen en informatie bijwerken onder een substructuur van `/var`), wordt geadviseerd dit te weerspiegelen door verschillende de diensthoofden te groeperen die op de individuele verrichting, zoals samenvoeging van gemeenschappelijke `dam-reader-service` met uw specifieke functie `assetreport-writer-service`
+* Subservicenamen voor verschillende taken - als de services van uw bundel verschillende taken uitvoeren, wordt aangeraden `subserviceNames` te identificeren om deze te groeperen op taken
+* Als een bepaalde service verschillende bewerkingen uitvoert (bijvoorbeeld de inhoud van elementen lezen en informatie bijwerken onder een substructuur van `/var`), wordt u aangeraden dit te weerspiegelen door verschillende serviceprincipes samen te voegen die de afzonderlijke bewerking weerspiegelen, zoals het samenvoegen van de algemene `dam-reader-service` met uw functiespecifieke `assetreport-writer-service` .
 * Elke dienst is idealiter verbindend aan een zeer specifieke en beperkte reeks verrichtingen
-* De nieuwe indeling met `[one,or,multiple,principalNames]` is de geadviseerde manier om de afbeeldingen van de de dienstgebruiker vanaf AEM 6.4 te bepalen.
+* De nieuwe indeling met `[one,or,multiple,principalNames]` is de aanbevolen manier om servicetoewijzingen te definiëren vanaf AEM 6.4.
 
 Hieronder vindt u een lijst met redenen voor het wijzigen van de indeling en waarom Adobe u aanraadt deze te gebruiken in plaats van de versietoewijzing alleen voor één gebruiker-id:
 
@@ -64,25 +64,25 @@ Hieronder vindt u een lijst met redenen voor het wijzigen van de indeling en waa
 
 De opeenvolging van vraag om de hieronder beschreven de dienstafbeelding op te lossen:
 
-1. Zoeken naar actief `principalNames` afbeelding van de gegeven `bundleId` en `subserviceName`
-1. `principalNames` toewijzing voor de `bundleId` en null `subserviceName`
-1. `userName` toewijzing voor de `bundleId` en `subserviceName`
-1. `userName` toewijzen voor `bundleId` en null `subserviceName`
+1. Zoeken naar actieve `principalNames` toewijzingen voor de opgegeven `bundleId` en `subserviceName`
+1. `principalNames` toewijzen voor de tekens `bundleId` en null `subserviceName`
+1. `userName` toewijzen voor de `bundleId` en `subserviceName`
+1. `userName` mapping voor `bundleId` en null `subserviceName`
 1. Standaardtoewijzing
 1. Standaardgebruiker
 
 ### SlingRepository - Aanmelden bij service {#slingrepository-servicelogin}
 
-De opeenvolging voor het verkrijgen van de dienst `Session/ResourceResolver` werkt als volgt:
+De volgorde voor het verkrijgen van een service `Session/ResourceResolver` werkt als volgt:
 
-1. Hoofdnamen ophalen van `ServiceUserMapper` => Aanmelden voor auth-repository zoals hieronder beschreven
-1. Gebruikersnaam ophalen van `ServiceUserMapper`
+1. Belangrijkste namen ophalen van `ServiceUserMapper` => pre-auth repository login zoals hieronder beschreven
+1. Gebruikers-id ophalen uit `ServiceUserMapper`
 1. Controle voor afgekeurde 1ServiceUserConfiguration&quot;voor huidige gebruiker identiteitskaart
-1. Standaard Sling-service aanmelden met de gebruikers-id (bijvoorbeeld een reeks van `createAdministrativeSession` en imiteren voor de dienstgebruiker - identiteitskaart)
+1. Standaard Sling-service-aanmelding met de gebruikersnaam (bijvoorbeeld een reeks `createAdministrativeSession` en imiteren voor de id van de servicegebruiker)
 
 De nieuwe toewijzing met belangrijkste namen resulteert in de volgende vereenvoudigde login van de bewaarplaats:
 
-* Reeks hoofdnamen wordt beschouwd als de effectieve Opdrachtgever(s) die moet worden gebruikt om de `Subject`
+* Reeks hoofdnamen wordt beschouwd als de effectieve principal(s) die moet worden gebruikt om de `Subject` te vullen
 * Aanmelding in opslagplaats kan daarom vooraf worden geverifieerd
 * Geen groepslidmaatschapsresolutie
 
@@ -90,11 +90,11 @@ De nieuwe toewijzing met belangrijkste namen resulteert in de volgende vereenvou
   >
   >Alle vereiste toestemmingen moeten voor de de dienstgebruikers worden verklaard. &#39;Iedereen&#39; en andere groepsmachtigingen worden niet meer overgeërfd.
 
-* Geen extra admin-login om de dienst te hebben-`Session/ResourceResolver` worden gemaakt.
+* Geen extra admin-login om de dienst te hebben - `Session/ResourceResolver` wordt gecreeerd.
 
 ### Vervangen ServiceUserConfiguration {#deprecated-serviceUserConfiguration}
 
-Houd er rekening mee dat het opgeven van één gebruikersnaam in de toewijzing gelijk is aan het bestaande `ServiceUserConfiguration.simpleSubjectPopulation`. Met de nieuwe indeling kunt u de tijdelijke oplossing van de `ServiceUserConfiguration` kan direct met de afbeelding van de de dienstgebruiker worden weerspiegeld. De `ServiceUserConfiguration` is daarom vervangen voor AEM en alle bestaande toepassingen zijn vervangen.
+Houd er rekening mee dat het opgeven van één gebruikersnaam in de toewijzing gelijk is aan het bestaande `ServiceUserConfiguration.simpleSubjectPopulation` . Met de nieuwe indeling kan de tijdelijke oplossing die door `ServiceUserConfiguration` wordt geboden, rechtstreeks worden weerspiegeld door de servicetoewijzing van de gebruiker. `ServiceUserConfiguration` is daarom vervangen voor AEM en alle bestaande toepassingen zijn vervangen.
 
 ## Servicegebruikers {#service-users}
 
@@ -116,17 +116,17 @@ Bestaande servicegebruikers niet opnieuw gebruiken als:
 
 Nadat u hebt gecontroleerd dat er geen bestaande servicegebruiker in AEM van toepassing is voor uw use-case en de bijbehorende RTC-problemen zijn goedgekeurd, kunt u doorgaan en de nieuwe gebruiker toevoegen aan de standaardinhoud. In het ideale geval is een lid van het uitgebreide beveiligingsteam betrokken bij de RTC-stemming, dus zorg dat u ook de relevante belanghebbenden erbij betrekt.
 
-**Naamgevingsconventie**
+**noemend Overeenkomst**
 
 Het AEM veiligheidsteam heeft de volgende noemende overeenkomst voor de dienstgebruikers bepaald om consistentie aan nieuwe de dienstgebruikers toe te voegen en hun leesbaarheid en onderhoudbaarheid te verbeteren.
 
-Een de dienstgebruikersnaam bestaat uit 3 elementen die door een streepje worden gescheiden **&#39;-&#39;**:
+Een de dienstgebruikersnaam bestaat uit 3 elementen die door een streepje **&quot;-&quot;worden gescheiden**:
 
 1. De logische entiteit/eigenschap die door de de dienstverrichtingen wordt gericht (vermijd wegelementen die kunnen veranderen)
 1. De taak de diensten gaan uitvoeren
-1. Trailing **&#39;service&#39;** om van identiteitskaart en belangrijkste naam gemakkelijk te kunnen merken dat de gebruiker een de dienstgebruiker is
+1. Navolgende **&quot;dienst&quot;** om van identiteitskaart en belangrijkste naam gemakkelijk te kunnen vlekken dat de gebruiker een de dienstgebruiker is
 
-**Aanbevolen procedures**
+**Beste praktijken**
 
 * Verwar verschillende entiteiten/functies niet. Splitsen op individuele servicegebruikers en deze samenvoegen in de toewijzing als uw service andere behoeften heeft
 * Beperk uzelf tot één goed bepaalde taak per de dienstgebruiker. Splitsen als u uiteindelijk te veel of niet-verwante machtigingen toekent
@@ -138,41 +138,41 @@ Aan het eind, zou de naam van de de dienstgebruiker moeten openbaren:
 
 * Hoe wordt het gebruikt en of het opnieuw kan worden gebruikt:
 
-   * Zeer algemeen: `content-writer-service`. Veilig voor hergebruik in aggregatie als uw service(s) ook alle inhoud moet kunnen lezen
-   * Zeer specifiek: `asset-linkshare-service`. Niet zo veilig om opnieuw te gebruiken tenzij uw dienst verbinding-verdeling van activa ook echt doet.
+   * Heel algemeen: `content-writer-service`. Veilig voor hergebruik in aggregatie als uw service(s) ook alle inhoud moet kunnen lezen
+   * Zeer specifiek: `asset-linkshare-service` . Niet zo veilig om opnieuw te gebruiken tenzij uw dienst verbinding-verdeling van activa ook echt doet.
 
 * Hoe de functieset en machtigingsinstelling eruit moeten zien:
 
    * De logische entiteit moet de toestemmingsopstelling aanpassen:
 
-      * A `content-foo-service` mag alleen worden gekoppeld aan bewerkingen op inhoud. Het verlenen van het toestemmingen om op andere entiteiten zoals configuratie of gebruikers te werken zou verkeerd zijn
-      * Een specifieke service zoals `personalization-foo-service` moeten ook specifieke machtigingen krijgen. Als u uiteindelijk machtigingen toekent voor alle inhoud, is dit niet meer specifiek. Weergeven dat in de naam of een algemene gebruiker opnieuw gebruiken in aggregatie
-      * Een functie-specifieke service zoals `msm-xyz-service` moet alleen beschikken over aan msm gerelateerde machtigingen. Breid geen toestemmingen aan niet verwante eigenschappen zoals het beheren van gemeenschappen configuratie of de schermgebruikers uit.
+      * Een `content-foo-service` mag alleen worden gekoppeld aan bewerkingen op inhoud. Het verlenen van het toestemmingen om op andere entiteiten zoals configuratie of gebruikers te werken zou verkeerd zijn
+      * Voor een specifieke service als `personalization-foo-service` moeten ook specifieke machtigingen worden ingesteld. Als u uiteindelijk machtigingen toekent voor alle inhoud, is dit niet meer specifiek. Weergeven dat in de naam of een algemene gebruiker opnieuw gebruiken in aggregatie
+      * Voor een service die specifiek is voor bepaalde functies, zoals `msm-xyz-service` , moeten alleen bevoegdheden zijn die betrekking hebben op msm. Breid geen toestemmingen aan niet verwante eigenschappen zoals het beheren van gemeenschappen configuratie of de schermgebruikers uit.
 
    * De taak moet overeenkomen met de machtigingen:
 
-      * A `foo-reader-service` mogen alleen reguliere objecten lezen. Schrijfmachtigingen nooit verlenen
-      * A `foo-writer-service` kan worden verwacht schrijfbewerkingen uit te voeren. Het zou echter geen toestemmingen moeten worden verleend om de inhoud van de toegangscontrole te lezen/te wijzigen
-      * A `foo-replicator-service` verwacht kan worden dat `crx:replicate` toegekend.
+      * Een `foo-reader-service` mag alleen reguliere items kunnen lezen. Schrijfmachtigingen nooit verlenen
+      * Van een `foo-writer-service` kan worden verwacht dat het schrijfbewerkingen uitvoert. Het zou echter geen toestemmingen moeten worden verleend om de inhoud van de toegangscontrole te lezen/te wijzigen
+      * Van een `foo-replicator-service` kan worden verwacht dat het `crx:replicate` heeft verleend.
 
 **Voorbeelden**
 
-Voorbeelden voor `configuration-reader-service`:
+Voorbeelden voor `configuration-reader-service` :
 
-* De naam wijst erop dat het naar configuraties in het algemeen en niet configuratie van een bepaalde eigenschap, zoals configuratie van de integratie van DM verwijst. Een de dienstgebruiker specifiek gericht voor het lezen configuratie van zulk een integratie zou eerder worden genoemd `dmconfig-reader-service` of `s7config-reader-service`
+* De naam wijst erop dat het naar configuraties in het algemeen en niet configuratie van een bepaalde eigenschap, zoals configuratie van de integratie van DM verwijst. Een specifieke doelgebruiker voor het lezen van de configuratie van een dergelijke integratie zou liever `dmconfig-reader-service` of `s7config-reader-service` heten
 
   >[!NOTE]
   >
-  >De naam bevat geen padinformatie. Configuraties zijn verplaatst van `/etc` tot `/conf`.
+  >De naam bevat geen padinformatie. Configuraties zijn verplaatst van `/etc` naar `/conf` .
 
 * Het taak-element wijst erop dat de diensten die aan die gebruiker worden gebonden slechts leesverrichtingen zullen uitvoeren.
 
-Voorbeelden voor `userproperties-copy-service`:
+Voorbeelden voor `userproperties-copy-service` :
 
 * Services die aan deze servicegebruiker zijn gebonden, worden gebruikt voor gebruikers-/groepseigenschappen, zoals profielen of voorkeuren
-* Het is specifiek gericht om die informatie in tegenstelling tot een naam te kopiëren zoals `userproperties-writer-service` die alle schrijfbewerkingen zouden omvatten. Daarom zou het mogelijk zijn dat de toestemmingsopstelling voor deze exemplaartaken slechts het toevoegen van punten bij één plaats en het verwijderen van punten bij een andere plaats toestaat.
+* Het is specifiek gericht om die informatie in tegenstelling tot een naam als `userproperties-writer-service` te kopiëren die om het even welk soort schrijfverrichtingen zou omvatten. Daarom zou het mogelijk zijn dat de toestemmingsopstelling voor deze exemplaartaken slechts het toevoegen van punten bij één plaats en het verwijderen van punten bij een andere plaats toestaat.
 
-**Beste praktijken voor de Opstelling van Rechten**
+**Beste praktijken voor de Opstelling van Toestemmingen**
 
 * Gebruik altijd op hoofd-gebaseerde de toegangsbeheeropstelling voor de dienstgebruikers. Zie de volgende voorbeelden voor meer informatie:
 
@@ -183,23 +183,23 @@ Voorbeelden voor `userproperties-copy-service`:
 * Machtigingen beperken
 
    * Toekennen van de minimale reeks benodigde machtigingen
-   * Voor meer informatie raadpleegt u de [Privileges toewijzen aan objecten](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) en [API-aanroepen toewijzen aan rechten](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html) documentatie
-   * Geen toestemming verlenen voor `jcr:all`. Dat is hoogstwaarschijnlijk niet de minimale set.
+   * Voor meer informatie, raadpleeg de [ Bevoegdheden van de Afbeelding aan Punten ](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) en [ de Vraag van API van de Afbeelding aan Privileges ](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html) documentatie
+   * Geen toestemming verlenen voor `jcr:all` . Dat is hoogstwaarschijnlijk niet de minimale set.
 
 * Bereik reduceren
 
    * Het toegangsbeheerbeleid van de plaats bij eigenschapspecifieke onderaannemers
-   * In het geval van verdeelde punten: gebruiksbeperkingen om werkingsgebied te beperken (raadpleeg [de documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) voor een lijst van ingebouwde beperkingen).
+   * In geval van verdeelde punten: gebruiksbeperkingen om werkingsgebied te beperken (raadpleeg [ de documentatie ](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) voor lijst van ingebouwde beperkingen).
 
 * Consistentie garanderen
 
    * Machtigingen consistent maken met de entiteit en taak die u in de gebruikersnaam van de service hebt gebruikt
-   * Voeg geen ongerelateerde machtigingen toe. Het zou bijvoorbeeld vreemd zijn om een `workflow-administration-service` en verleent het toestemmingen om gebruikers-beheer handelingen uit te voeren bij `/home/users/screens` of laat het s7-config lezen.
+   * Voeg geen ongerelateerde machtigingen toe. Het zou bijvoorbeeld vreemd zijn om een `workflow-administration-service` te hebben en het toestemmingen te verlenen om gebruiker-beheer verrichtingen bij `/home/users/screens` uit te voeren of het s7-config te laten lezen.
 
 * Volledigheid
 
    * Zorg ervoor dat uw service over alle machtigingen beschikt die nodig zijn om de taken uit te voeren die het bedrijf moet uitvoeren. Uw dienst moet uit de doos ook in klantenmilieu&#39;s werken.
-   * Verwacht nooit of vraag klanten om de machtigingsinstelling uit te breiden (bijvoorbeeld hieronder) `/apps`)
+   * Verwacht nooit of vraag klanten om de machtigingsinstelling uit te breiden (bijvoorbeeld hieronder `/apps`)
 
 * Vermijd dubbel instellen van machtigingen
 
@@ -214,21 +214,21 @@ Voorbeelden voor `userproperties-copy-service`:
    * Aanmelding- en evaluatieprestaties
    * Werkt niet met op hoofdletters gebaseerde ac-setup
 
-* De toegang tot het user-home knoop (of om het even welke subtree bevat daarin), die geen voorspelbare weg heeft wordt bereikt in repo init door home() te gebruiken`userId`). Zie de slingerrepo init [documentatie](https://sling.apache.org/documentation/bundles/repository-initialization.html) voor meer informatie.
+* De toegang tot de user-home knoop (of om het even welke subtree bevat daarin), die geen voorspelbare weg heeft wordt bereikt in repo init door huis (`userId`) te gebruiken. Zie de het laten vallen repo in het [ documentatie ](https://sling.apache.org/documentation/bundles/repository-initialization.html) voor details.
 * RTC: maak een specifieke RTC-uitgave als u de machtigingen van een bestaande servicegebruiker wijzigt en zorg ervoor dat deze door het beveiligingsteam wordt gecontroleerd.
 
-**Maken met initialisatie opslagruimte**
+**Creatie met Initialisatie van de Bewaarplaats**
 
-Altijd gebruiken `repo-init` om de dienstgebruikers en hun toestemmingsopstelling te bepalen en beide in de correcte sectie van het de eigenschapmodel van Quickstart te plaatsen:
+Gebruik altijd `repo-init` om de dienstgebruikers en hun toestemmingsopstelling te bepalen en beide in de correcte sectie van het de eigenschapmodel van Quickstart te plaatsen:
 
-**Aanbevolen procedures**
+**Beste praktijken**
 
-* Altijd gebruiken `repo-init` om de de dienstgebruiker te creëren
+* Altijd `repo-init` gebruiken om de servicegebruiker te maken
 * Geef altijd een tussentijds pad op voor het maken van een servicegebruiker
-* Alle ingebouwde gebruikers van de dienst voor AEM moeten hieronder worden gevestigd `system/cq:services/internal`
-* Voeg ook aan de middenrelatieve weg aan de gebruikers van de groepsdienst door eigenschap toe: `system/cq:services/internal/<your-feature>`
-* Door de klant gedefinieerde servicegebruikers moeten zich hieronder bevinden `system/cq:services/<customer-intermediate-rel-path>` en nooit onder de interne boom
-* Gebruiken **met geforceerd pad** in plaats van **met pad** als een gebruiker reeds bestond en naar de nieuwe plaats moet worden verplaatst die op hoofd-gebaseerde vergunning steunt.
+* Alle ingebouwde servicegebruikers voor AEM moeten zich onder `system/cq:services/internal` bevinden
+* Voeg ook met de functie toe aan het tussenliggende relatieve pad naar de groep van servicegebruikers: `system/cq:services/internal/<your-feature>`
+* Door de klant gedefinieerde servicegebruikers moeten zich onder `system/cq:services/<customer-intermediate-rel-path>` en nooit onder de interne structuur bevinden
+* Gebruik **met gedwongen weg** in plaats van **met weg** als een gebruiker reeds bestond en aan de nieuwe plaats moet worden bewogen die op hoofd-gebaseerde vergunning steunt.
 
 **Voorbeelden**
 
@@ -275,4 +275,4 @@ delete service my-feature-service
 
 Het is van cruciaal belang om servertests voor de dienstgebruikers en hun toestemmingsopstelling te schrijven. Dit verifieert niet alleen dat uw opstelling echt werkt maar ook helpt u regressies en onbedoelde fouten wanneer het veranderen van de inhoud van de toegangscontrole of de dienstgebruikers.
 
-De `com.adobe.granite.testing.clients` De bibliotheek biedt veel hulpprogramma&#39;s die het schrijven van SST&#39;s voor servicegebruikers eenvoudig maken.
+De `com.adobe.granite.testing.clients` -bibliotheek biedt veel hulpprogramma&#39;s waarmee u eenvoudig SST&#39;s voor servicegebruikers kunt schrijven.

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-billable-apis) |
 | AEM as a Cloud Service | Dit artikel |
 
 
@@ -31,29 +31,29 @@ AEM Forms biedt verschillende API&#39;s voor het verzenden van formulieren, proc
 
 Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van een document of formulier of de uiteindelijke indeling van het gerenderde document. In een transactierapport worden de transacties in twee categorieën verdeeld: Forms verzonden en gerenderde documenten.
 
-* **Forms verzonden:** Wanneer gegevens worden verzonden vanuit elk type formulier dat met AEM Forms is gemaakt en de gegevens worden verzonden naar een opslagplaats of database voor gegevensopslag, wordt dit beschouwd als een verzending. Het indienen van een adaptief formulier of een formulierset wordt bijvoorbeeld beschouwd als verzonden formulieren. Als een formulierset vijf formulieren heeft en de formulierset wordt verzonden, telt de service voor transactierrapportage deze als vijf verzendingen.
+* **Voorgelegde Forms:** Wanneer het gegeven van om het even welk type van vorm wordt voorgelegd die met AEM Forms wordt gecreeerd en het gegeven wordt voorgelegd aan om het even welke gegevensopslagplaats of gegevensbestand wordt beschouwd als vormvoorlegging. Het indienen van een adaptief formulier of een formulierset wordt bijvoorbeeld beschouwd als verzonden formulieren. Als een formulierset vijf formulieren heeft en de formulierset wordt verzonden, telt de service voor transactierrapportage deze als vijf verzendingen.
 
-* **Gerenderde documenten:** Het genereren van een document door een sjabloon en gegevens te combineren, een document digitaal te ondertekenen of te certificeren, met behulp van een factureerbare API&#39;s voor documentservices of door een document van de ene naar de andere indeling te converteren, wordt beschouwd als documenten die worden gerenderd.
+* **Gerenderde Documenten:** Het produceren van een document door een malplaatje en gegevens te combineren, digitaal het ondertekenen of het certificeren van een document, gebruikend een factureerbare document de diensten APIs voor documentdiensten, of het omzetten van een document van één formaat in een andere worden rekenschap gegeven als teruggegeven documenten.
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Formulierverzendingenbeheer"
->abstract="Deze grafiek geeft het aantal verzonden Adaptief formulieren tijdens specifieke tijdsperioden weer. De toename van verzendingen kan erop wijzen dat het formulier steeds populairder wordt of dat er meer gegevens van gebruikers moeten worden verzameld. **Opmerking:** De grafiek geeft gegevens die specifiek zijn voor het huidige exemplaar, zodat u trends snel kunt analyseren en geïnformeerde beslissingen kunt nemen. Voor verzendgegevens van andere instanties hebt u eenvoudig toegang tot het dashboard van het betreffende exemplaar."
+>abstract="Deze grafiek geeft het aantal verzonden Adaptief formulieren tijdens specifieke tijdsperioden weer. De toename van verzendingen kan erop wijzen dat het formulier steeds populairder wordt of dat er meer gegevens van gebruikers moeten worden verzameld. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie, toestaand u om tendensen snel te analyseren en geïnformeerde besluiten te nemen. Voor verzendgegevens van andere instanties hebt u eenvoudig toegang tot het dashboard van het betreffende exemplaar."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="Documentrenderingsbeheer"
->abstract="Deze grafiek geeft het aantal vertoningen van documenten tijdens specifieke tijdsperioden weer. **Opmerking:** De grafiek geeft gegevens die specifiek zijn voor het huidige exemplaar, zodat u trends snel kunt analyseren en geïnformeerde beslissingen kunt nemen. Voor verzendgegevens van andere instanties hebt u eenvoudig toegang tot het dashboard van het betreffende exemplaar."
+>abstract="Deze grafiek geeft het aantal vertoningen van documenten tijdens specifieke tijdsperioden weer. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie, toestaand u om tendensen snel te analyseren en geïnformeerde besluiten te nemen. Voor verzendgegevens van andere instanties hebt u eenvoudig toegang tot het dashboard van het betreffende exemplaar."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Nieuw Forms-beheer"
->abstract="De grafiek geeft informatie over het aantal nieuwe formulieren tijdens specifieke tijdsperiodes. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Author-instantie. Als u gegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="De grafiek geeft informatie over het aantal nieuwe formulieren tijdens specifieke tijdsperiodes. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie van de Auteur van AEM Forms. Als u gegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Gepubliceerd Forms-beheer"
->abstract="De grafiek geeft informatie over het aantal formulieren dat tijdens specifieke tijdsperioden met succes is gepubliceerd. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Publish-instantie. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="De grafiek geeft informatie over het aantal formulieren dat tijdens specifieke tijdsperioden met succes is gepubliceerd. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie van AEM Forms Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
@@ -63,18 +63,18 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Gemiddelde duur voor het maken van formulieren"
->abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulier te maken en te publiceren, gemeten vanaf de eerste dag dat het formulier voor bewerking is geopend. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Author-instantie. Als u gegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulier te maken en te publiceren, gemeten vanaf de eerste dag dat het formulier voor bewerking is geopend. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie van de Auteur van AEM Forms. Als u gegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="Forms-fragmentbeheer"
->abstract="Met deze grafiek kunt u zien hoeveel formulierfragmenten u in uw formulieren gebruikt. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Publish-instantie. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="Met deze grafiek kunt u zien hoeveel formulierfragmenten u in uw formulieren gebruikt. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie van AEM Forms Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="Tijdbeheer van formulierfragment Gemiddelde"
->abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulierfragment te maken, gemeten vanaf de eerste dag dat het formulierfragment voor bewerking is geopend. **Opmerking:** De grafiek bevat specifieke gegevens voor de huidige AEM Forms Publish-instantie. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
+>abstract="In de grafiek wordt de gemiddelde tijd weergegeven die nodig is om een formulierfragment te maken, gemeten vanaf de eerste dag dat het formulierfragment voor bewerking is geopend. **Nota:** de grafiek verstrekt gegevens specifiek voor de huidige instantie van AEM Forms Publish. Als u conversiegegevens van andere instanties wilt weergeven, opent u het dashboard van de desbetreffende instantie."
 
 
 <!-- 
@@ -315,7 +315,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td>Aanvullende informatie</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/#tag/DocAssurance" target="_blank">secureDocument</a><br /> </td>
+   <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/#tag/DocAssurance" target="_blank"> secureDocument </a><br /> </td>
    <td>Met deze API kunt u uw document beveiligen. Met de API kunt u een PDF-document ondertekenen, certificeren, lezen of uitbreiden.</td>
    <td>Verwerkte documenten</td>
    <td>Alleen de bewerking voor ondertekenen en certificeren van het SecureDocument wordt in rekening gebracht.</td>
@@ -495,7 +495,7 @@ Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u 
 
 ## Billable Data Capture API&#39;s {#billable-data-capture-apis}
 
-Alle verzendingen van adaptieve formulieren worden administratief verwerkt als transacties. Door gebrek, wordt de voorlegging van een Vorm van de PDF niet administratief verwerkt als transactie. Gebruik de opgegeven [transactie recorder-API](record-transaction-custom-implementation.md) om een PDF forms te registreren die als transactie wordt voorgelegd.
+Alle verzendingen van adaptieve formulieren worden administratief verwerkt als transacties. Door gebrek, wordt de voorlegging van een Vorm van de PDF niet administratief verwerkt als transactie. Gebruik verstrekte [ transactierecorder API ](record-transaction-custom-implementation.md) om een voorlegging van PDF forms als transactie te registreren.
 
 ### Adaptieve Forms {#adaptive-forms}
 
@@ -647,7 +647,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ## Infactureerbare API&#39;s opnemen als transacties voor aangepaste code {#recording-billable-apis-as-transactions-for-custom-code}
 
-Handelingen zoals het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de om een voorvertoning van een interactieve communicatie weer te geven, met behulp van niet-standaardformulierverzending, en aangepaste implementaties worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke handelingen op te nemen, zoals transacties. U kunt de API vanuit uw aangepaste implementaties aanroepen naar [een transactie opnemen](/help/forms/record-transaction-custom-implementation.md).
+Handelingen zoals het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de om een voorvertoning van een interactieve communicatie weer te geven, met behulp van niet-standaardformulierverzending, en aangepaste implementaties worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke handelingen op te nemen, zoals transacties. U kunt API van uw douaneimplementaties roepen om [ een transactie ](/help/forms/record-transaction-custom-implementation.md) te registreren.
 
 ## Verwante artikelen {#related-articles}
 

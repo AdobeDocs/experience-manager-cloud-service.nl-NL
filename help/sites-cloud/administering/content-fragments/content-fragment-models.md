@@ -14,54 +14,54 @@ ht-degree: 1%
 
 # Modellen van inhoudsfragmenten {#content-fragment-models}
 
-Met Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service wordt de structuur voor de inhoud van uw [Inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/overview.md). Deze fragmenten kunnen vervolgens worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop.
+De Modellen van het Fragment van de inhoud in Adobe Experience Manager (AEM) bepalen as a Cloud Service de structuur voor de inhoud van uw [ Fragmenten van de Inhoud ](/help/sites-cloud/administering/content-fragments/overview.md). Deze fragmenten kunnen vervolgens worden gebruikt voor het ontwerpen van pagina&#39;s of als basis voor inhoud zonder kop.
 
 U kunt als volgt modellen van inhoudsfragmenten gebruiken:
 
 1. [Functionaliteit van inhoudsfragmentmodel inschakelen voor uw instantie](/help/sites-cloud/administering/content-fragments/setup.md)
-1. [Maken](#creating-a-content-fragment-model), en [vormen](#defining-your-content-fragment-model), uw modellen van inhoudsfragmenten
-1. [Modellen van inhoudsfragmenten inschakelen](#enabling-disabling-a-content-fragment-model) voor gebruik bij het maken van inhoudsfragmenten
-1. [Modellen van inhoudsfragmenten toestaan in de vereiste mappen Middelen](#allowing-content-fragment-models-assets-folder) door te vormen **Beleid**.
+1. [ creeer ](#creating-a-content-fragment-model), en [ vorm ](#defining-your-content-fragment-model), uw Modellen van het Fragment van de Inhoud
+1. [ laat uw Modellen van het Fragment van de Inhoud ](#enabling-disabling-a-content-fragment-model) voor gebruik toe wanneer het creëren van de Fragmenten van de Inhoud
+1. [ sta uw Modellen van het Fragment van de Inhoud op de vereiste omslagen van Assets ](#allowing-content-fragment-models-assets-folder) toe door **Beleid** te vormen.
 
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
-1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
-1. Navigeer naar de map die geschikt is voor uw [configuratie of subconfiguratie](/help/sites-cloud/administering/content-fragments/setup.md).
-1. Gebruiken **Maken** om de wizard te openen.
+1. Navigeer aan **Hulpmiddelen**, **Algemene**, dan open **Modellen van het Fragment van de Inhoud**.
+1. Navigeer aan de omslag aangewezen aan uw [ configuratie, of subconfiguration ](/help/sites-cloud/administering/content-fragments/setup.md).
+1. Het gebruik **creeert** om de tovenaar te openen.
 
    >[!CAUTION]
    >
-   >Als de [het gebruik van Content Fragment-modellen is niet ingeschakeld](/help/sites-cloud/administering/content-fragments/setup.md)de **Maken** deze optie is niet beschikbaar.
+   >Als het [ gebruik van de modellen van het Fragment van de Inhoud niet ](/help/sites-cloud/administering/content-fragments/setup.md) is toegelaten, **creeer** optie zal niet beschikbaar zijn.
 
-1. Geef de **Modeltitel**.
-U kunt ook verschillende eigenschappen definiëren, bijvoorbeeld **Tags**, **Beschrijving**, selecteert u **Model inschakelen** tot [het model inschakelen](#enabling-disabling-a-content-fragment-model) indien nodig en definieert de
-   **URL-standaardvoorvertoningspatroon**.
+1. Specificeer de **ModelTitel**.
+U kunt diverse eigenschappen ook bepalen; bijvoorbeeld, voeg **Markeringen** toe, a **Beschrijving**, laat model **toe** om [ het model ](#enabling-disabling-a-content-fragment-model) toe als vereist en bepaalt
+   **Standaard het Patroon van URL van de Voorproef**.
 
    >[!NOTE]
    >
-   >Zie [Inhoudsfragmentmodel - eigenschappen](#content-fragment-model-properties) voor volledige informatie.
+   >Zie [ Model van het Fragment van de Inhoud - Eigenschappen ](#content-fragment-model-properties) voor volledige details.
 
-   ![Titel en beschrijving](assets/cf-cfmodels-create.png)
+   ![ Titel en beschrijving ](assets/cf-cfmodels-create.png)
 
-1. Gebruiken **Maken** het lege model opslaan. Een bericht geeft het succes van de handeling aan. U kunt **Openen** het model onmiddellijk te bewerken, of **Gereed** om naar de console terug te keren.
+1. Het gebruik **creeert** om het lege model te bewaren. Een bericht wijst op het succes van de actie, kunt u **Open** selecteren om het model onmiddellijk uit te geven, of **Gedaan** om aan de console terug te keren.
 
 >[!CAUTION]
 >
 >Als u meerdere fragmenten waarnaar wordt verwezen, wilt opvragen, is het niet aan te raden dat de verschillende fragmentmodellen veldnamen met dezelfde naam hebben, maar verschillende typen.
 >
->Zie voor meer informatie [GraphQL API AEM voor gebruik met inhoudsfragmenten - Beperkingen](/help/headless/graphql-api/content-fragments.md#limitations)
+>Voor verdere details zie [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Beperkingen ](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Inhoudsfragmentmodel - eigenschappen {#content-fragment-model-properties}
 
-Deze eigenschappen worden gedefinieerd wanneer u een model maakt en kunnen later worden bewerkt met de opdracht **Eigenschappen** optie voor het inhoudsfragmentmodel:
+Deze eigenschappen worden bepaald wanneer u een model creeert, en kunnen later met de **optie van Eigenschappen** voor het Model van het Fragment van de Inhoud worden uitgegeven:
 
 * **Basis**
-   * **Modeltitel**
-   * **Tags**
+   * **ModelTitel**
+   * **Markeringen**
    * **Beschrijving**
-   * **Model inschakelen**
-   * **URL-standaardvoorvertoningspatroon**
-In de Inhoudsfragmenteditor kunnen auteurs **Voorvertoning** hun inhoud in een externe frontend toepassing. Wanneer de **Voorvertoningsservice** wordt gevormd, voeg URL voor de frontend toepassing toe.
+   * **laat model** toe
+   * **Standaard het Patroon van URL van de Voorproef**
+De redacteur van het Fragment van de Inhoud staat auteurs toe om **** hun inhoud in een externe frontend toepassing voor te vertonen. Zodra de **Dienst van de Voorproef** wordt gevormd, voeg URL voor de frontend toepassing toe.
 
      De voorbeeld-URL moet dit patroon volgen:
     `https://<preview_url>?param=${expression}`
@@ -74,7 +74,7 @@ In de Inhoudsfragmenteditor kunnen auteurs **Voorvertoning** hun inhoud in een e
       * `${contentFragment.variation}`
       * `${contentFragment.id}`
 
-   * **Afbeelding uploaden**
+   * **upload Beeld**
 
 <!-- CHECK: currently under FT -->
 <!--
@@ -91,16 +91,16 @@ In de Inhoudsfragmenteditor kunnen auteurs **Voorvertoning** hun inhoud in een e
 
 ## Het model van het inhoudsfragment definiëren {#defining-your-content-fragment-model}
 
-Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende inhoudsfragmenten met een selectie **[Gegevenstypen](#data-types)**. Gebruikend de modelredacteur kunt u instanties van de gegevenstypes toevoegen, dan hen vormen om de vereiste gebieden tot stand te brengen:
+Het model van het Fragment van de Inhoud bepaalt effectief de structuur van de resulterende Fragmenten van de Inhoud gebruikend een selectie van **[Types van Gegevens](#data-types)**. Gebruikend de modelredacteur kunt u instanties van de gegevenstypes toevoegen, dan hen vormen om de vereiste gebieden tot stand te brengen:
 
 >[!CAUTION]
 >
 >Het bewerken van een model dat al wordt gebruikt door bestaande inhoudsfragmenten kan van invloed zijn op die afhankelijke fragmenten.
 
-1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
+1. Navigeer aan **Hulpmiddelen**, **Algemene**, dan open **Modellen van het Fragment van de Inhoud**.
 
 1. Navigeer naar de map met het model van het inhoudsfragment.
-1. Open het vereiste model voor **Bewerken**; gebruik de snelle actie of selecteer het model en vervolgens de actie op de werkbalk.
+1. Open het vereiste model voor **uitgeven**; gebruik of de snelle actie, of selecteer het model en toen de actie van de toolbar.
 
    Zodra open de modelredacteur toont:
 
@@ -109,82 +109,82 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
    >[!NOTE]
    >
-   >Wanneer een veld wordt gedefinieerd als **Vereist** de **Label** aangegeven in het linkerdeelvenster is gemarkeerd met een asterix (**&#42;**).
+   >Wanneer een gebied als **Vereist** wordt bepaald, wordt het **Etiket** dat in de linkerruit wordt vermeld duidelijk met een asterix (**&#42;**).
 
-![Eigenschappen](assets/cf-cfmodels-empty-model.png)
+![ Eigenschappen ](assets/cf-cfmodels-empty-model.png)
 
-1. **Een veld toevoegen**
+1. **om een Gebied** toe te voegen
 
    * Sleep een vereist gegevenstype naar de vereiste locatie voor een veld:
 
-     ![Gegevenstype slepen om veld te maken](assets/cf-cfmodels-create-field.png)
+     ![ Belemmering gegevenstype om gebied ](assets/cf-cfmodels-create-field.png) tot stand te brengen
 
-   * Nadat een veld aan het model is toegevoegd, wordt in het rechterdeelvenster het volgende weergegeven: **Eigenschappen** die voor dat bepaalde gegevenstype kunnen worden gedefinieerd. Hier kunt u definiëren wat voor dat veld is vereist.
+   * Zodra een gebied aan het model is toegevoegd, toont het juiste paneel de **Eigenschappen** die voor dat bepaalde gegevenstype kunnen worden bepaald. Hier kunt u definiëren wat voor dat veld is vereist.
 
-      * Veel eigenschappen zijn niet-verklarend, voor meer details zie [Eigenschappen](#properties).
-      * Een **Veldlabel** automatisch voltooit het **Eigenschapnaam**  - indien leeg, en het kan achteraf handmatig worden bijgewerkt.
+      * Vele eigenschappen zijn duidelijk-verklarend, voor extra details zie [ Eigenschappen ](#properties).
+      * Het typen a **Etiket van het Gebied** auto-voltooit de **Naam van het Bezit** - als leeg, en het kan achteraf manueel worden bijgewerkt.
 
         >[!CAUTION]
         >
-        Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype moeten namen bevatten *alleen* A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot; als speciaal teken.
+        Wanneer manueel het bijwerken van de naam van het bezit **** voor een gegevenstype, moeten de namen *slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
         >
         Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
      Bijvoorbeeld:
 
-     ![Veldeigenschappen](assets/cf-cfmodels-field-properties.png)
+     ![ eigenschappen van het Gebied ](assets/cf-cfmodels-field-properties.png)
 
-1. **Een veld verwijderen**
+1. **om een Gebied** te verwijderen
 
    Selecteer het vereiste veld en selecteer vervolgens het prullenbakpictogram. U wordt gevraagd de actie te bevestigen.
 
-   ![Verwijderen](assets/cf-cfmodels-remove-icon.png)
+   ![ verwijder ](assets/cf-cfmodels-remove-icon.png)
 
 1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, zoals vereist. Bijvoorbeeld:
 
-   ![Opslaan](assets/cf-cfmodels-save.png)
+   ![ sparen ](assets/cf-cfmodels-save.png)
 
-1. Selecteren **Opslaan** om de definitie te handhaven.
+1. Selecteer **sparen** om de definitie voort te zetten.
 
 ## Gegevenstypen {#data-types}
 
 Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
-* **Tekst met één regel**
+* **Enige lijntekst**
    * Voeg een of meer velden van één regel tekst toe. De maximumlengte kan worden gedefinieerd
-* **Tekst met meerdere regels**
+* **Meerdere lijntekst**
    * Een tekstgebied dat RTF-tekst, platte tekst of Markering kan zijn
 
   >[!NOTE]
   >
-  Of het tekstgebied RTF, Onbewerkte Tekst, of Markdown is wordt bepaald in het model door het bezit **Standaardtype**.
+  Of het tekstgebied Rijke Tekst, Onbewerkte Tekst, of Markting is, wordt bepaald in het model door het bezit **StandaardType**.
   >
-  Deze indeling kan niet worden gewijzigd vanuit het dialoogvenster [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md), maar alleen van het model.
+  Dit formaat kan niet van de [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) worden veranderd, maar slechts van het Model.
 
-* **Getal**
+* **Aantal**
    * Een of meer numerieke velden toevoegen
-* **Boolean**
+* **Van Boole**
    * Een Booleaans selectievakje toevoegen
 * **Datum en tijd**
    * Een datum en/of tijd toevoegen
 * **Opsomming**
    * Een set selectievakjes, keuzerondjes of vervolgkeuzelijstvelden toevoegen
-* **Tags**
+* **Markeringen**
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
-* **Content Reference**
-   * Verwijzingen naar andere inhoud, van elk type; kan worden gebruikt voor [geneste inhoud maken](#using-references-to-form-nested-content)
+* **Verwijzing van de Inhoud**
+   * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
    * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
-* **Fragmentverwijzing**
-   * Verwijzingen naar andere inhoudsfragmenten; kan worden gebruikt voor [geneste inhoud maken](#using-references-to-form-nested-content)
+* **Verwijzing van het Fragment**
+   * Verwijzingen andere Fragmenten van de Inhoud; kan worden gebruikt om [ genestelde inhoud ](#using-references-to-form-nested-content) tot stand te brengen
    * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
       * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
       * Een nieuw inhoudsfragment maken op basis van het juiste model
-* **JSON-object**
+* **voorwerp JSON**
    * Hiermee stelt u de auteur van inhoudsfragment in staat JSON-syntaxis in te voeren in de overeenkomende elementen van een fragment.
       * Om AEM toe te staan direct JSON op te slaan die u van een andere dienst hebt gekopieerd/gekleefd.
       * De JSON wordt doorgegeven en uitvoer als JSON in GraphQL.
       * Neemt JSON-syntaxismarkering, automatisch aanvullen en foutmarkering op in de inhoudsfragmenteditor.
-* **Tijdelijke aanduiding voor tab**
+* **Placeholder van het Lusje**
    * Hiermee kunt u tabbladen invoeren die u kunt gebruiken bij het bewerken van de inhoud van het inhoudsfragment.
       * Deze worden getoond als verdelers in de modelredacteur, scheidend secties van de lijst van inhoudstypes. Elke instantie vertegenwoordigt het begin van een nieuw lusje.
       * In de fragmenteditor wordt elke instantie weergegeven als een tab.
@@ -197,40 +197,40 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 
 Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zijn hieronder meer details te vinden:
 
-* **Eigenschapnaam**
+* **de Naam van het Bezit**
 
-  Namen wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype **moet** bevatten *alleen* A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot; als speciaal teken.
+  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, moeten de namen **** *slechts* a-z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
 
   >[!CAUTION]
   >
   Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
-* **Renderen als**
+* **geeft terug als**
 
-  De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken. Wanneer **Meerdere velden** wordt gebruikt U kunt het minimum en maximum aantal objecten definiëren - zie [Validatie](#validation) voor nadere bijzonderheden.
+  De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken. Wanneer **Veelvoudig Gebied** wordt gebruikt kunt u het minimum en maximumaantal punten bepalen - zie [ Bevestiging ](#validation) voor verdere details.
 
-* **Veldlabel**
-Een **Veldlabel** automatisch een **Eigenschapnaam**, die indien nodig handmatig kan worden bijgewerkt.
+* **Etiket van het Gebied**
+Het ingaan van het Etiket van het a **Gebied** autogenerate a **Naam van het Bezit**, die dan manueel kan worden bijgewerkt indien nodig.
 
-* **Validatie**
-De basisbevestiging is beschikbaar door mechanismen zoals **Vereist** eigenschap. Sommige gegevenstypen hebben extra validatievelden. Zie [Validatie](#validation) voor nadere bijzonderheden.
+* **Bevestiging**
+De fundamentele bevestiging is beschikbaar door mechanismen zoals het **Vereiste** bezit. Sommige gegevenstypen hebben extra validatievelden. Zie [ Bevestiging ](#validation) voor verdere details.
 
 * Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
 
-   * **RTF**
+   * **Rijke Tekst**
    * **Markering**
-   * **Onbewerkte tekst**
+   * **Onbewerkte Tekst**
 
-  Indien niet opgegeven, wordt de standaardwaarde **RTF** wordt gebruikt voor dit veld.
+  Als gespecificeerd niet, wordt de standaardwaarde **Rijke Tekst** gebruikt voor dit gebied.
 
-  Het wijzigen van **Standaardtype** in een model van het Fragment van de Inhoud zal slechts op een bestaand, verwant, tevreden Fragment van kracht worden nadat dat fragment in de redacteur wordt geopend en wordt bewaard.
+  Het veranderen van het **StandaardType** in een model van het Fragment van de Inhoud zal slechts op bestaand, verwant, het Fragment van de Inhoud van kracht worden nadat dat fragment in de redacteur wordt geopend en wordt bewaard.
 
 * **Uniek**
 De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten die op basis van het huidige model zijn gemaakt.
 
   Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
 
-  Bijvoorbeeld een **Tekst met één regel** veld aangeroepen `Country` in het inhoudsfragmentmodel kan de waarde niet hebben `Japan` in twee afhankelijke inhoudsfragmenten. Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
+  Bijvoorbeeld, het 1} gebied van de a **Enige lijntekst {in het Model van het Fragment van de Inhoud kan niet de waarde `Japan` in twee afhankelijke Fragmenten van de Inhoud hebben.**`Country` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
 
   >[!NOTE]
   >
@@ -238,71 +238,73 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
   >[!NOTE]
   >
-  Variaties kunnen hetzelfde hebben *uniek* waarde als variaties van hetzelfde fragment, maar niet dezelfde waarde als bij variaties van andere fragmenten.
+  De variaties kunnen de zelfde *unieke* waarde zoals variaties van het zelfde fragment hebben, maar niet de zelfde waarde zoals die in om het even welke variatie van andere fragmenten wordt gebruikt.
 
-* Zie **[Content Reference](#content-reference)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
+* Zie **[Verwijzing van de Inhoud](#content-reference)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
 
-* Zie **[Fragmentverwijzing (geneste fragmenten)](#fragment-reference-nested-fragments)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
+* Zie **[Verwijzing van het Fragment (Genestelde Fragments)](#fragment-reference-nested-fragments)** voor meer details over dat specifieke gegevenstype en zijn eigenschappen.
 
 * **Vertaalbaar**
 
-  De **Vertaalbaar** Schakel het selectievakje in een veld in de editor van het inhoudsfragmentmodel in:
+  Het controleren van **Vertaalbare** checkbox op een gebied in de Modelredacteur van het Fragment van de Inhoud:
 
-   * Zorg ervoor dat de eigenschapsnaam van het veld wordt toegevoegd aan de vertaalconfiguratie, context `/content/dam/<sites-configuration>`, indien nog niet aanwezig.
-   * Voor GraphQL: stel een `<translatable>` eigenschap in het veld Inhoudsfragment naar `yes`, om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
+   * Controleer of de eigenschapsnaam van het veld wordt toegevoegd aan de vertaalconfiguratie, context `/content/dam/<sites-configuration>`, als deze nog niet aanwezig is.
+   * Voor GraphQL: stel een eigenschap `<translatable>` in het veld Inhoudsfragment in op `yes` om GraphQL-queryfilter toe te staan voor JSON-uitvoer met alleen vertaalbare inhoud.
 
 ## Validatie {#validation}
 
 Verschillende gegevenstypen bieden nu de mogelijkheid om validatievereisten te definiëren voor het tijdstip waarop inhoud wordt ingevoerd in het resulterende fragment:
 
-* **Tekst met één regel**
+* **Enige lijntekst**
    * Vergelijk met een vooraf gedefinieerde regex.
-* **Getal**
+* **Aantal**
    * Controleren op specifieke waarden.
-* **Content Reference**
+* **Verwijzing van de Inhoud**
    * Testen op specifieke typen inhoud.
    * Er kan alleen worden verwezen naar elementen van een opgegeven bestandsgrootte of kleiner.
    * Er kan alleen worden verwezen naar afbeeldingen met een vooraf gedefinieerde breedte en/of hoogte (in pixels).
-* **Fragmentverwijzing**
+* **Verwijzing van het Fragment**
    * Testen op een specifiek model van een inhoudsfragment.
-* **Min. aantal items** / **Max. aantal objecten**
+* **Min Aantal Punten** / **Max Aantal Punten**
 
-  Velden die zijn gedefinieerd als een **Meerdere velden** (instellen met **Renderen als**) beschikt over de volgende opties:
+  De gebieden die als a **Veelvoudig Gebied** zijn bepaald (die met **worden geplaatst teruggeven als**) hebben de opties:
 
-   * **Min. aantal items**
-   * **Max. aantal objecten**
+   * **Min Aantal Punten**
+   * **Max Aantal Punten**
 
-  Deze worden gevalideerd in het dialoogvenster [Inhoudsfragmenteditor](/help/sites-cloud/administering/content-fragments/authoring.md).
+  Deze worden bevestigd in de [ Redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Referenties gebruiken om geneste inhoud te vormen {#using-references-to-form-nested-content}
 
 Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenstypen:
 
-* **[Content Reference](#content-reference)**
+* **[Verwijzing van de Inhoud](#content-reference)**
    * Verstrekt een eenvoudige verwijzing naar andere inhoud; van om het even welk type.
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
-* **[Fragmentverwijzing](#fragment-reference-nested-fragments)** (Geneste fragmenten)
+* **[Verwijzing van het Fragment](#fragment-reference-nested-fragments)** (Geneste Fragmenten)
    * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
      >[!NOTE]
      >
-     Deze methode is van bijzonder belang wanneer u gebruikt [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     Deze methode is van bijzonder belang wanneer u [ Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md) gebruikt.
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
 >[!NOTE]
 >
 AEM heeft terugkerende bescherming voor:
 >
-* Inhoudsverwijzingen Dit voorkomt dat de gebruiker een verwijzing naar het huidige fragment toevoegt en kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzingen.
+* Content References
+Hierdoor wordt voorkomen dat de gebruiker een verwijzing naar het huidige fragment toevoegt en kan dit leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
-* Fragmentverwijzingen in GraphQL Als u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze null bij de eerste instantie.
+* Fragmentverwijzingen in GraphQL
+Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze null bij de eerste instantie.
 
 >[!CAUTION]
 >
 Als u meerdere fragmenten waarnaar wordt verwezen, wilt opvragen, is het niet aan te raden dat de verschillende fragmentmodellen veldnamen met dezelfde naam hebben, maar verschillende typen.
 >
-Zie voor meer informatie [GraphQL API AEM voor gebruik met inhoudsfragmenten - Beperkingen](/help/headless/graphql-api/content-fragments.md#limitations)
+Voor verdere details zie [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud - Beperkingen ](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Content Reference {#content-reference}
 
@@ -310,26 +312,26 @@ Met de Content Reference kunt u inhoud van een andere bron renderen, bijvoorbeel
 
 Naast de standaardeigenschappen kunt u opgeven:
 
-* De **Hoofdpad**, die aangeeft waar inhoud waarnaar wordt verwezen, moet worden opgeslagen
+* Het **Weg van de Wortel**, dat specificeert waar te om het even welke referenced inhoud op te slaan
   >[!NOTE]
   >
   Dit is verplicht als u afbeeldingen in dit veld rechtstreeks wilt uploaden en ernaar wilt verwijzen wanneer u de Content Fragment-editor gebruikt.
   >
-  Zie [Referentieafbeeldingen](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor nadere bijzonderheden.
+  Zie [ de Beelden van de Verwijzing ](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor verdere details.
 
 * De inhoudstypen waarnaar kan worden verwezen
   >[!NOTE]
   >
-  Deze moeten **Afbeelding** als u afbeeldingen in dit veld rechtstreeks wilt uploaden en ernaar wilt verwijzen wanneer u de Inhoudsfragmenteditor gebruikt.
+  Deze moeten **Beeld** omvatten als u direct beelden op dit gebied wilt uploaden en van verwijzingen voorzien wanneer het gebruiken van de redacteur van het Fragment van de Inhoud.
   >
-  Zie [Referentieafbeeldingen](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor nadere bijzonderheden.
+  Zie [ de Beelden van de Verwijzing ](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) voor verdere details.
 
 * Beperkingen voor bestandsgrootten
 * Als naar een afbeelding wordt verwezen:
    * Miniatuur tonen
    * Hoogte- en breedtebeperkingen voor afbeeldingen
 
-![Content Reference](assets/cf-cfmodels-content-reference.png)
+![ Verwijzing van de Inhoud ](assets/cf-cfmodels-content-reference.png)
 
 ### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
@@ -356,29 +358,29 @@ type CompanyModel {
 
 >[!NOTE]
 >
-Fragmentverwijzingen zijn van bijzonder belang voor [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+De Verwijzingen van het fragment zijn van bijzonder belang voor [ Zwaarloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Naast de standaardeigenschappen kunt u definiëren:
 
-* **Renderen als**:
+* **geeft terug als**:
 
-   * **multifield** - de auteur van het fragment kan meerdere, afzonderlijke, verwijzingen maken
+   * **multifield** - de fragmentauteur kan veelvoudige, individuele, verwijzingen creëren
 
-   * **fragmentreference** - Hiermee kan de auteur van het fragment één verwijzing naar een fragment selecteren
+   * **fragmentreference** - staat de fragmentauteur toe om één enkele verwijzing naar een fragment te selecteren
 
-* **Modeltype**
+* **ModelType**
 U kunt meerdere modellen selecteren. Wanneer u verwijzingen toevoegt aan een inhoudsfragment, moeten fragmenten waarnaar wordt verwezen, met deze modellen zijn gemaakt.
 
-* **Hoofdpad**
+* **Weg van de Wortel**
 Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 
-* **Fragment maken toestaan**
+* **staat het Maken van het Fragment toe**
 
   Hierdoor kan de auteur van het fragment een fragment maken op basis van het juiste model.
 
-   * **fragmentreferencecomponent** - stelt de auteur van het fragment in staat een samenstelling samen te stellen door meerdere fragmenten te selecteren
+   * **fragmentreferencecomposite** - staat de fragmentauteur toe om een samenstelling te bouwen, door veelvoudige fragmenten te selecteren
 
-  ![Fragmentverwijzing](assets/cf-cfmodels-fragment-reference.png)
+  ![ Verwijzing van het Fragment ](assets/cf-cfmodels-fragment-reference.png)
 
 >[!NOTE]
 >
@@ -388,7 +390,7 @@ Ook fragmentverwijzingen worden in GraphQL herhaaldelijk beschermd. Als u een di
 
 ## Een inhoudsfragmentmodel in- of uitschakelen {#enabling-disabling-a-content-fragment-model}
 
-U kunt **Inschakelen** of **Uitschakelen** uw modellen van het Fragment van de Inhoud, voor volledige controle over hun gebruik.
+U kunt of **toelaten** of **** uw Modellen van het Fragment van de Inhoud, voor volledige controle over hun gebruik onbruikbaar maken.
 
 ### Een inhoudsfragmentmodel inschakelen {#enabling-a-content-fragment-model}
 
@@ -400,67 +402,67 @@ Nadat een model is gemaakt, moet het zijn ingeschakeld zodat het:
 
 Een model inschakelen dat is gemarkeerd als:
 
-* **Concept** : new (Nooit ingeschakeld).
-* **Uitgeschakeld** : is specifiek uitgeschakeld.
+* **Ontwerp** : nieuw (nooit toegelaten).
+* **Gehandicapten** : is specifiek onbruikbaar gemaakt.
 
-U gebruikt de **Inschakelen** optie van:
+U gebruikt **toelaten** optie van één van beiden:
 
 * De bovenste werkbalk als het vereiste model is geselecteerd.
 * De corresponderende snelle actie (mouse-over het vereiste model).
 
-![Concept of Uitgeschakeld model inschakelen](assets/cf-cfmodels-status-enable.png)
+![ laat een Ontwerp of Gehandicapte Model ](assets/cf-cfmodels-status-enable.png) toe
 
 ### Een inhoudsfragmentmodel uitschakelen {#disabling-a-content-fragment-model}
 
 Een model kan ook worden uitgeschakeld, zodat:
 
-* Het model is niet meer beschikbaar als basis voor het maken van *new* Inhoudsfragmenten
+* Het model is niet meer beschikbaar als basis voor het creëren van *nieuwe* Fragmenten van de Inhoud.
 * Echter:
    * Het GraphQL-schema wordt steeds gegenereerd en kan nog steeds worden opgevraagd (om te voorkomen dat JSON API wordt beïnvloed).
    * Om het even welke die Inhoudsfragmenten van het model worden gebaseerd kunnen nog van het eindpunt van GraphQL worden gevraagd en zijn teruggekeerd.
 * Er kan niet meer naar het model worden verwezen, maar bestaande verwijzingen blijven ongewijzigd en kunnen nog steeds worden opgevraagd en geretourneerd vanaf het GraphQL-eindpunt.
 
-Een model uitschakelen dat is gemarkeerd als **Ingeschakeld**, gebruikt u de **Uitschakelen** optie van:
+Om een Model onbruikbaar te maken dat als **Toegelaten** wordt gemarkeerd, gebruikt u **onbruikbaar maken** optie van of:
 
 * De bovenste werkbalk als het vereiste model is geselecteerd.
 * De corresponderende snelle actie (mouse-over het vereiste model).
 
-![Een geactiveerd model uitschakelen](assets/cf-cfmodels-status-disable.png)
+![ maak toegelaten Model ](assets/cf-cfmodels-status-disable.png) onbruikbaar
 
-## Modellen voor inhoudsfragmenten toestaan in de middelenmap {#allowing-content-fragment-models-assets-folder}
+## Modellen voor inhoudsfragmenten toestaan in uw Assets-map {#allowing-content-fragment-models-assets-folder}
 
-Om inhoudsbeheer uit te voeren, kunt u vormen **Beleid** in de map Elementen om te bepalen welke modellen van inhoudsfragmenten mogen worden gemaakt voor fragmenten in die map.
+Om inhoudsbeheer uit te voeren, kunt u **Beleid** op de omslag van Assets vormen om te controleren welke Modellen van het Fragment van de Inhoud voor de verwezenlijking van het Fragment in die omslag worden toegestaan.
 
 >[!NOTE]
 >
-Het mechanisme lijkt op [toestaan, van paginasjablonen](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) voor een pagina en de onderliggende elementen, in geavanceerde eigenschappen van een pagina.
+Het mechanisme is gelijkaardig aan [ toestaand paginasjablonen ](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) voor een pagina, en zijn kinderen, in geavanceerde eigenschappen van een pagina.
 
-Om te vormen **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
+Om het **Beleid** voor **toegelaten Modellen van het Fragment van de Inhoud te vormen**:
 
-1. Navigeren en openen **Eigenschappen** voor de map met vereiste middelen.
+1. Navigeer en open **Eigenschappen** voor de vereiste omslag van Assets.
 
-1. Open de **Beleid** tab, waar u kunt configureren:
+1. Open het **Beleid** lusje, waar u kunt vormen:
 
    * **Overgenomen van`<folder>`**
 
      Het beleid wordt automatisch geërft wanneer het creëren van nieuwe kindomslagen; het beleid kan (en de erfenis gebroken) worden opnieuw gevormd als subfolders modellen moeten toestaan verschillend aan de ouderomslag.
 
-   * **Modellen van inhoudsfragmenten op pad toestaan**
+   * **Toegestane Modellen van het Fragment van de Inhoud door Weg**
 
      U kunt meerdere modellen toestaan.
 
-   * **Modellen voor inhoudsfragmenten zijn toegestaan op tag**
+   * **Toegestane Modellen van het Fragment van de Inhoud door Markering**
 
      U kunt meerdere modellen toestaan.
 
-   ![Beleid inhoudsfragmentmodel](assets/cf-cfmodels-policy-assets-folder.png)
+   ![ Beleid van het Model van het Fragment van de Inhoud ](assets/cf-cfmodels-policy-assets-folder.png)
 
-1. **Opslaan** eventuele wijzigingen.
+1. **sparen** om het even welke veranderingen.
 
 De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als volgt opgelost:
-* De **Beleid** for **Modellen voor toegestane inhoudsfragmenten**.
+* Het **Beleid** voor **Toegestane Modellen van het Fragment van de Inhoud**.
 * Als dit leeg is, kunt u het beleid bepalen met behulp van de overervingsregels.
-* Als de overervingsketen geen resultaat oplevert, kijkt u naar de **Cloud Servicen** configuratie voor die map (ook eerst rechtstreeks en vervolgens via overerving).
+* Als de overervingsketen geen resultaat levert, dan bekijk de **Cloud Servicen** configuratie voor die omslag (ook eerst direct en dan via overerving).
 * Als geen van de bovenstaande resultaten worden behaald, zijn er geen modellen toegestaan voor die map.
 
 ## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
@@ -471,10 +473,10 @@ Het verwijderen van een model van een inhoudsfragment kan invloed hebben op afha
 
 Een model van een inhoudsfragment verwijderen:
 
-1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
+1. Navigeer aan **Hulpmiddelen**, **Algemene**, dan open **Modellen van het Fragment van de Inhoud**.
 
 1. Navigeer naar de map met het model van het inhoudsfragment.
-1. Selecteer uw model, gevolgd door **Verwijderen** op de werkbalk.
+1. Selecteer uw model, dat door **wordt gevolgd Schrapping** van de toolbar.
 
    >[!NOTE]
    >
@@ -486,10 +488,10 @@ Modellen van inhoudsfragmenten moeten worden gepubliceerd wanneer/voordat afhank
 
 Een model van een inhoudsfragment publiceren:
 
-1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
+1. Navigeer aan **Hulpmiddelen**, **Algemene**, dan open **Modellen van het Fragment van de Inhoud**.
 
 1. Navigeer naar de map met het model van het inhoudsfragment.
-1. Selecteer uw model, gevolgd door **Publiceren** op de werkbalk.
+1. Selecteer uw model, dat door **wordt gevolgd Publish** van de toolbar.
 De gepubliceerde status wordt getoond in de console.
 
    >[!NOTE]
@@ -502,19 +504,19 @@ Modellen van inhoudsfragmenten kunnen ongepubliceerd zijn als naar deze modellen
 
 Publicatie van een inhoudsfragmentmodel ongedaan maken:
 
-1. Navigeren naar **Gereedschappen**, **Algemeen** en vervolgens openen **Modellen van inhoudsfragmenten**.
+1. Navigeer aan **Hulpmiddelen**, **Algemene**, dan open **Modellen van het Fragment van de Inhoud**.
 
 1. Navigeer naar de map met het model van het inhoudsfragment.
-1. Selecteer uw model, gevolgd door **Publiceren ongedaan maken** op de werkbalk.
+1. Selecteer uw model, dat door **wordt gevolgd unpublish** van de toolbar.
 De gepubliceerde status wordt vermeld in de console.
 
 Als u de publicatie probeert ongedaan te maken van een model dat momenteel wordt gebruikt door een of meer fragmenten, wordt een foutwaarschuwing weergegeven. Bijvoorbeeld:
 
-![Foutbericht van Content Fragment Model bij het ongedaan maken van de publicatie van een model dat in gebruik is](assets/cf-cfmodels-unpublish-error.png)
+![ de foutenmelding van het Model van het Fragment van de Inhoud wanneer het ongedaan maken van een model dat in gebruik is ](assets/cf-cfmodels-unpublish-error.png)
 
-Het bericht suggereert dat u de [Verwijzingen](/help/sites-cloud/authoring/basic-handling.md#references) panel voor een nader onderzoek :
+Het bericht stelt voor dat u het [ paneel van Verwijzingen ](/help/sites-cloud/authoring/basic-handling.md#references) controleert om verder te onderzoeken:
 
-![Inhoudsfragmentmodel in verwijzingen](assets/cf-cfmodels-references.png)
+![ Model van het Fragment van de Inhoud in Verwijzingen ](assets/cf-cfmodels-references.png)
 
 ## Vergrendelde (gepubliceerde) modellen van inhoudsfragmenten {#locked-published-content-fragment-models}
 
@@ -542,46 +544,46 @@ Deze functie biedt beheer voor modellen van inhoudsfragmenten die zijn gepublice
 
 ### De oplossing {#the-solution}
 
-U kunt deze problemen oplossen door Modellen voor inhoudsfragmenten op te stellen: *vergrendeld* in de modus ALLEEN-LEZEN op auteur - zodra ze zijn gepubliceerd. Deze status wordt aangegeven door **Vergrendeld**:
+Om deze kwesties te richten, zijn de Modellen van het Fragment van de Inhoud *gesloten* in een LEZEN-ONLY wijze op auteur - zodra zij zijn gepubliceerd. Deze status wordt vermeld door **Vergrendelde**:
 
-![Kaart van vergrendeld inhoudsfragmentmodel](assets/cf-cfmodels-locked.png)
+![ Kaart van het gesloten Model van het Fragment van de Inhoud ](assets/cf-cfmodels-locked.png)
 
-Wanneer het model **Vergrendeld** (in de modus ALLEEN-LEZEN) kunt u de inhoud en structuur van modellen zien, maar u kunt deze niet bewerken.
+Wanneer het model **Vergrendeld** (op LEZEN-ONLY wijze) is, kunt u de inhoud en de structuur van modellen zien maar u kunt hen niet uitgeven.
 
-U kunt **Vergrendeld** modellen van of de console, of modelredacteur:
+U kunt **Vergrendelde** modellen van of de console, of modelredacteur beheren:
 
 * Console
 
-  Vanuit de console kunt u de modus ALLEEN-LEZEN beheren met de **Ontgrendelen** en **Vergrendelen** acties op de werkbalk:
+  Van de console, kunt u de LEZEN-ONLY wijze met **leiden ontgrendelt** en **ontgrendelt** acties in de toolbar:
 
-  ![Werkbalk van het vergrendelde inhoudsfragmentmodel](assets/cf-cfmodels-locked.png)
+  ![ Toolbar van het gesloten Model van het Fragment van de Inhoud ](assets/cf-cfmodels-locked.png)
 
-   * U kunt **Ontgrendelen** een model om bewerkingen in te schakelen.
+   * U kunt **een model ontgrendelen** om uitgeeft toe te laten.
 
-     Als u **Ontgrendelen** er wordt een waarschuwing weergegeven en u moet de waarschuwing bevestigen **Ontgrendelen** handeling:
-     ![Bericht bij ontgrendelen van inhoudsfragmentmodel](assets/cf-cfmodels-unlock-message.png)
+     Als u **** selecteert ontgrendel wordt een waarschuwing getoond, en u moet de **ontgrendelen** actie bevestigen:
+     ![ Bericht wanneer het ontgrendelen van het Model van het Fragment van de Inhoud ](assets/cf-cfmodels-unlock-message.png)
 
      Vervolgens kunt u het model openen en bewerken.
 
-   * U kunt **Vergrendelen** het model daarna.
-   * Wanneer u het model opnieuw publiceert, wordt het meteen opnieuw gepubliceerd naar **Vergrendeld** (ALLEEN-LEZEN) modus.
+   * U kunt **het model ook** Slot achteraf.
+   * Het herpubliceren van het model keert het onmiddellijk aan **Vergrendelde** (LEZEN-ONLY) wijze terug.
 
 * Modeleditor
 
-   * Wanneer u een vergrendeld model opent, wordt u gewaarschuwd en krijgt u de volgende drie acties te zien: **Annuleren**, **Alleen-lezen weergeven**, **Bewerken**:
+   * Wanneer u een model opent dat wordt gesloten zult u worden gewaarschuwd, en met drie acties voorgesteld: **annuleert**, **Gelezen Mening**, **geeft** uit:
 
-     ![Bericht bij weergave van een vergrendeld inhoudsfragmentmodel](assets/cf-cfmodels-editor-lock-message.png)
+     ![ Bericht wanneer het bekijken van een gesloten Model van het Fragment van de Inhoud ](assets/cf-cfmodels-editor-lock-message.png)
 
-   * Als u **Alleen-lezen weergeven** kunt u de inhoud en structuur van het model zien:
+   * Als u **Mening slechts** selecteert, kunt u de inhoud en de structuur van het model zien:
 
-     ![Alleen-lezen weergeven - Vergrendeld model inhoudsfragment](assets/cf-cfmodels-editor-locked-view-only.png)
+     ![ Mening las slechts - het gesloten Model van het Fragment van de Inhoud ](assets/cf-cfmodels-editor-locked-view-only.png)
 
-   * Als u **Bewerken**, kunt u uw updates bewerken en opslaan:
+   * Als u **uitgezocht geef** uit, kunt u uw updates uitgeven en opslaan:
 
-     ![Bewerken - Vergrendeld inhoudsfragmentmodel](assets/cf-cfmodels-editor-locked-edit.png)
+     ![ geef uit - het gesloten Model van het Fragment van de Inhoud ](assets/cf-cfmodels-editor-locked-edit.png)
 
      >[!NOTE]
      >
      Mogelijk staat er nog een waarschuwing boven aan het scherm, maar dat is wanneer het model al wordt gebruikt door bestaande inhoudsfragmenten.
 
-   * **Annuleren** keert u aan de console terug.
+   * **annuleert** keert u aan de console terug.

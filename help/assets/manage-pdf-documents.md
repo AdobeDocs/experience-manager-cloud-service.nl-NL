@@ -1,6 +1,6 @@
 ---
-title: Uw PDF-documenten beheren in [!DNL Adobe Experience Manager].
-description: PDF-documenten beheren in [!DNL Adobe Experience Manager] als [!DNL Cloud Service].
+title: Beheer uw PDF documenten in  [!DNL Adobe Experience Manager].
+description: Beheer de documenten van PDF in  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service].
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
@@ -21,38 +21,38 @@ De PDF-viewer van Document Cloud profiteert AEM Assets op de volgende manieren:
 * [Ondersteuning voor Voorvertoning van meerdere pagina&#39;s voor documenten in andere indelingen](#multi-format)
 
 > Tip
-> Als u de voorvertoning van meerdere pagina&#39;s van een eerder geüpload PDF-document niet kunt ophalen, selecteert u de PDF en klikt u op **![Opnieuw verwerken](/help/assets/assets/Reprocess.svg) Elementen opnieuw verwerken**.
+> Als u niet veelvoudige paginavoorproef van een eerder geupload document van de PDF kunt krijgen dan de PDF selecteren en **![](/help/assets/assets/Reprocess.svg) opnieuw verwerken Assets** klikken.
 >
 
 ## Ondersteuning voor PDF Document Cloud Viewer-componenten {#pdf-doc-cloud}
 
 De native PDF Doc Cloud-viewer heeft de volgende componenten in AEM Assets:
 
-* **PDF-viewer gebruiken met paginaminiaturen** De miniatuurweergave is een kleine voorvertoning van de pagina&#39;s van een PDF-document. Met behulp van miniaturen kunt u rechtstreeks naar de gewenste pagina gaan. U hebt toegang tot miniaturen van het geselecteerde PDF-document via ![miniatuur](/help/assets/assets/thumbnail.svg) in het linkerdeelvenster.
+* **de kijker die van de PDF paginaminiaturen** gebruikt de mening van de Duimnagel is een kleine voorproef van de pagina&#39;s van een document van de PDF. Met behulp van miniaturen kunt u rechtstreeks naar de gewenste pagina gaan. U kunt tot duimnagels van het geselecteerde document van de PDF door ![ duimnagel ](/help/assets/assets/thumbnail.svg) op de linkerruit toegang hebben.
 
-* **PDF-viewer met bladwijzers** Bladwijzer is een directe koppeling waarmee u naar de inhoud in het document kunt navigeren. U hebt toegang tot bladwijzers in het geselecteerde PDF-document via ![bladwijzer](/help/assets/assets/bookmark.svg) in het linkerdeelvenster.
+* **de kijker van de PDF gebruikend referenties** Bladwijzer is een directe verbinding die u aan de inhoud in het document navigeert. U kunt tot referenties van het geselecteerde document van de PDF door ![ referentie ](/help/assets/assets/bookmark.svg) op de linkerruit toegang hebben.
 
-* **Zoeken in PDF** U kunt zoeken gebruiken ![zoeken](/help/assets/assets/Search.svg) om de tekst in het PDF-document op te zoeken.
+* **Onderzoek in PDF** u onderzoek ![ ](/help/assets/assets/Search.svg) kunt gebruiken om omhoog de tekst in het document van de PDF te kijken.
 
-* **Page Up/Page Down** Pagina omhoog gebruiken ![Page Up](/help/assets/assets/ArrowUp.svg) of Page Down ![Page Down](/help/assets/assets/ArrowDown.svg) om door het document te schuiven.
+* **pagina omhoog/pagina onderaan** pagina van het Gebruik omhoog ![ pagina ](/help/assets/assets/ArrowUp.svg) of pagina onderaan ![ pagina neer ](/help/assets/assets/ArrowDown.svg) om door het document te scrollen.
 
-* **Uitzoomen/Inzoomen** Uitzoomen gebruiken ![Uitzoomen](/help/assets/assets/ZoomOut.svg) of Inzoomen ![Inzoomen](/help/assets/assets/ZoomIn.svg) om het document uit te rekken.
+* **Uitzoomen/Gezoem binnen** Uitzoomen van het Gebruik ![ Uitzoomen ](/help/assets/assets/ZoomOut.svg) of Gezoem binnen ![ Gezoem binnen ](/help/assets/assets/ZoomIn.svg) om het document te stromen.
 
-* **Pagina passend maken** Gebruik breedte- of hoogteafmetingen om het document aan te passen aan de schermgrootte.
+* **Breedte of hoogtedimensies van het Gebruik van het Passen van 0} Pagina {om het document volgens uw het schermgrootte te passen.**
 
-* **PDF koppelen/loskoppelen** Met deze optie kunt u de componenten van de native PDF-viewer koppelen of loskoppelen.
+* **Dock/undock PDF** u kunt de componenten van inheemse PDF de kijker dokken of losmaken gebruikend deze optie.
 
 ## Ondersteuning voor Voorvertoning van meerdere pagina&#39;s en annotaties voor PDF-element {#multi-page}
 
 Met Adobe Experience Manager Assets kunt u een voorvertoning weergeven van een PDF-document dat uit meerdere pagina&#39;s bestaat. Neem de volgende stappen om een voorvertoning weer te geven van meerdere pagina&#39;s van een PDF-document:
 
-1. Voer de volgende stappen uit om [elementen uploaden in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Volg de stappen om [ activa in AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en) te uploaden.
 1. Blader naar het PDF-document dat u wilt uploaden en bekijk een voorvertoning.
 1. Open het document.
 1. De PDF-documentviewer wordt standaard geladen. U kunt ook PDF-uitvoering selecteren onder het deelvenster Vertoning.
-1. Selecteer in de vervolgkeuzelijst Uitvoeringen de optie **Alle uitvoeringen**.
+1. Onder drop-down Vertoningen, uitgezochte **Alle Vertoningen**.
 
-U kunt ook [annotaties](#pdf-annotations) op het PDF-document in een voorvertoning van meerdere pagina&#39;s.
+U kunt [ annotaties ](#pdf-annotations) op het document van de PDF in een veelvoudige paginavoorproef ook toepassen.
 
 > OPMERKING
 > De maximale grootte van een element waarvan u een voorbeeld kunt bekijken, is 100 MB.
@@ -69,8 +69,8 @@ U kunt ook [annotaties](#pdf-annotations) op het PDF-document in een voorvertoni
 Met Experience Manager Assets kunt u opmerkingen toevoegen aan een PDF-document. Een PDF-document kan meerdere annotaties hebben.
 
 Ga als volgt te werk om een PDF-document van een annotatie te voorzien:
-1. Ga naar de interface Middelen en navigeer naar het PDF-document dat u wilt annoteren. De native PDF-viewer wordt aan de rechterkant geopend en geeft een voorvertoning van het geselecteerde PDF-document weer.
-1. Klikken **Annoteren** in het bovenste menu.
+1. Ga naar de Assets-interface en navigeer naar het PDF-document dat u wilt annoteren. De native PDF-viewer wordt aan de rechterkant geopend en geeft een voorvertoning van het geselecteerde PDF-document weer.
+1. Klik **annoteren** van het hoogste menu.
 Hieronder vindt u de annotaties die kunnen worden toegepast op een PDF-document:
 
 <table>
@@ -83,15 +83,15 @@ Hieronder vindt u de annotaties die kunnen worden toegepast op een PDF-document:
             <td> Selecteer Opmerking om een opmerking weer te geven. </td>
         </tr>
         <tr>
-            <td> <img src="/help/assets/assets/Text.svg"> Tekstvak </td>
+            <td> <img src="/help/assets/assets/Text.svg"> TextBox </td>
             <td> Selecteer Tekstvak om de tekst in te voeren. </td>
         </tr>
         <tr>
-            <td> <img src="/help/assets/assets/Note.svg"> Notities </td>
+            <td> <img src="/help/assets/assets/Note.svg"> Vaste opmerkingen </td>
             <td> Voeg een kleine tekst of herinnering toe die u aan een bepaald gebied op de PDF kunt toevoegen. </td>
         </tr>
         <tr>
-            <td> <img src="/help/assets/assets/Comment.svg"> Tekstmarkering </td>
+            <td> <img src="/help/assets/assets/Comment.svg"> Tekst markeren </td>
             <td> Selecteer de tekst die u in verschillende kleuren wilt markeren. </td>
         </tr>
         <tr>
@@ -120,10 +120,10 @@ Hieronder vindt u de annotaties die kunnen worden toegepast op een PDF-document:
 
 Naast de PDF-documenten kunt u ook een voorvertoning weergeven van meerdere pagina&#39;s voor documenten in andere indelingstypen. De ondersteunde documentindelingen zijn TXT, RTF, DOC, DOCX, PPT, PPTX, XLS en XLSX. Experience Manager Assets converteert deze documentindelingen automatisch naar een PDF-indeling en stelt deze beschikbaar voor een voorvertoning.
 
-![Voorvertoning van meerdere pagina&#39;s van documenten in andere indelingen](/help/assets/assets/multi-page-other-formats.png)
+![ Multi-pageVoorproef van Documenten in Andere Formaten ](/help/assets/assets/multi-page-other-formats.png)
 
 Voer de volgende stappen uit voor de voorvertoning van meerdere pagina&#39;s van andere ondersteunde documentindelingen:
-1. Voer de volgende stappen uit om [elementen uploaden in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Volg de stappen om [ activa in AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en) te uploaden.
 1. Blader naar het document dat u wilt uploaden en bekijk een voorvertoning.
 1. Open het document.
 1. Selecteer PDF onder het statische gedeelte in het linkerdeelvenster. In het rechterdeelvenster ziet u de voorvertoning van meerdere pagina&#39;s van een element. Selecteer een miniatuur in het linkerdeelvenster om de pagina te kiezen waarvan u een voorvertoning wilt weergeven.
@@ -133,11 +133,11 @@ Voer de volgende stappen uit voor de voorvertoning van meerdere pagina&#39;s van
 > * De maximale grootte van XLS- of XLSX-bestanden die u wilt voorvertonen, is 20 MB.
 >
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -147,4 +147,4 @@ Voer de volgende stappen uit voor de voorvertoning van meerdere pagina&#39;s van
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

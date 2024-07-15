@@ -1,6 +1,6 @@
 ---
-title: Architectuur van [!DNL Assets]
-description: Architectuur van Adobe Experience Manager Assets als [!DNL Cloud Service]
+title: Architectuur van  [!DNL Assets]
+description: Architectuur van Adobe Experience Manager Assets als a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
 role: Architect
@@ -12,17 +12,17 @@ ht-degree: 6%
 
 ---
 
-# Architectuur van activa als een [!DNL Cloud Service] oplossing {#assets-architecture}
+# Architectuur van Assets als een [!DNL Cloud Service] -oplossing {#assets-architecture}
 
-[!DNL Experience Manager Assets] als [!DNL Cloud Service] is gebaseerd op [!DNL Adobe Experience Manager] en vergelijkt goed met de nieuwste aanbieding [!DNL Experience Manager] 6. [!DNL Cloud Service] Het aanbod heeft een aangepaste architectuur en functionaliteit die een cloudservice bieden. Door wijzigingen in de onderliggende architectuur kunnen niet alle Experience Manager 6.5-functies deel uitmaken van de [!DNL Cloud Service].
+[!DNL Experience Manager Assets] als a [!DNL Cloud Service] is gebaseerd op [!DNL Adobe Experience Manager] en vergelijkt goed met de nieuwste versie van [!DNL Experience Manager] 6.5. De [!DNL Cloud Service] -aanbieding heeft een aangepaste architectuur en functionaliteit die een service in de cloud kunnen worden. Door wijzigingen in de onderliggende architectuur kunnen niet alle Experience Manager 6.5-functies deel uitmaken van de [!DNL Cloud Service] .
 
-Zie dit voor een overzicht van de architectuur van de asset microservices [Overzicht van asset microservices](asset-microservices-overview.md#asset-microservices-architecture).
+Om architectuuroverzicht van activa microdiensten te zien zie dit [ overzicht van activa microservices ](asset-microservices-overview.md#asset-microservices-architecture).
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -32,10 +32,10 @@ Zie dit voor een overzicht van de architectuur van de asset microservices [Overz
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Overzicht en nieuwe functies](/help/assets/overview.md)
->* [Ondersteunde bestandsindelingen en MIME-typen](file-format-support.md)
+>* [ Gesteunde dossierformaten en types MIME ](file-format-support.md)
 >* [Overzicht van microservices voor assets](asset-microservices-overview.md)

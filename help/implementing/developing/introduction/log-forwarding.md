@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze eigenschap wordt nog niet vrijgegeven, en sommige registrerenbestemmingen kunnen niet op het tijdstip van versie beschikbaar zijn. Ondertussen kunt u een ondersteuningsticket openen om logbestanden door te sturen naar **Splunk**, zoals beschreven in de [logboekartikel](/help/implementing/developing/introduction/logging.md).
+>Deze eigenschap wordt nog niet vrijgegeven, en sommige registrerenbestemmingen kunnen niet op het tijdstip van versie beschikbaar zijn. In de tussentijd, kunt u een steunkaartje openen om logboeken aan **Splunk** door:sturen, zoals die in het [ registreren artikel ](/help/implementing/developing/introduction/logging.md) wordt beschreven.
 
 Klanten die een vergunning voor een registrerenverkoper hebben of een registrerenproduct ontvangen kunnen AEM logboeken (met inbegrip van Apache/Dispatcher) en CDN- logboeken hebben die aan de bijbehorende registrerenbestemmingen door:sturen. AEM as a Cloud Service ondersteunt de volgende logbestemmingen:
 
@@ -51,7 +51,7 @@ Dit artikel is als volgt geordend:
         logForwarding.yaml
    ```
 
-1. `logForwarding.yaml` moeten metagegevens en een configuratie bevatten die lijkt op de volgende indeling (wij gebruiken Splunk als voorbeeld).
+1. `logForwarding.yaml` moet metagegevens en een configuratie bevatten die vergelijkbaar is met de volgende indeling (we gebruiken Splunk als voorbeeld).
 
    ```
    kind: "LogForwarding"
@@ -67,11 +67,11 @@ Dit artikel is als volgt geordend:
          index: "AEMaaCS"
    ```
 
-   De **aardig** parameter moet worden ingesteld op `LogForwarding` de versie zou aan de schemaversie moeten worden geplaatst, die 1 is.
+   De **soort** parameter zou aan `LogForwarding` de versie aan de schemaversie moeten worden geplaatst, die 1 is.
 
-   Tokens in de configuratie (zoals `${{SPLUNK_TOKEN}}`) vertegenwoordigen geheimen, die niet in Git moeten worden opgeslagen. In plaats daarvan, verklaar hen als Cloud Manager  [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md) van het type **geheim**. Zorg ervoor dat u **Alles** als de vervolgkeuzelijst voor het veld Service Applied, zodat de logbestanden naar de auteur-, publicatie- en voorvertoningslagen kunnen worden doorgestuurd.
+   Tokens in de configuratie (zoals `${{SPLUNK_TOKEN}}` ) vertegenwoordigen geheimen, die niet in Git moeten worden opgeslagen. In plaats daarvan, verklaar hen als de Variabelen van het Milieu van Cloud Manager ](/help/implementing/cloud-manager/environment-variables.md) van type **geheim**. [ Zorg ervoor om **allen** als dropdown waarde voor de Dienst Toegepaste gebied te selecteren, zodat kunnen de logboeken aan auteur door:sturen, publiceren, en voorproefrijen.
 
-   Het is mogelijk verschillende waarden in te stellen tussen CDN-logbestanden en AEM-logbestanden (inclusief Apache/Dispatcher) door een extra waarde op te nemen **cdn** en/of **aem** blok na de **default** blok, waarbij eigenschappen de eigenschappen kunnen overschrijven die in het dialoogvenster **default** blok; slechts wordt het toegelaten bezit vereist. Een mogelijk gebruiksgeval zou kunnen zijn om een verschillende index van de Splunk voor CDN- logboeken te gebruiken, zoals het hieronder voorbeeld illustreert.
+   Het is mogelijk om verschillende waarden tussen CDN- logboeken en AEM (met inbegrip van Apache/Dispatcher) te plaatsen, door extra **cdn** en/of **a** blok na het **gebrek** blok te omvatten, waar de eigenschappen die in het **standaard** blok worden bepaald kunnen met voeten treden; slechts wordt het toegelaten bezit vereist. Een mogelijk gebruiksgeval zou kunnen zijn om een verschillende index van de Splunk voor CDN- logboeken te gebruiken, zoals het hieronder voorbeeld illustreert.
 
    ```
       kind: "LogForwarding"
@@ -111,8 +111,8 @@ Dit artikel is als volgt geordend:
 
 1. Voor milieutypes buiten RDE (die momenteel niet wordt gesteund), creeer een gerichte plaatsing config pijpleiding in Cloud Manager.
 
-   * [Zie productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Zie niet-productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * [ zie het vormen productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [ zie het vormen niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 ## Logboekdoelconfiguratie {#logging-destinations}
 
@@ -144,11 +144,11 @@ Een SAS-token moet worden gebruikt voor verificatie. Het zou van de Gedeelde pag
 
 Hier is een schermafbeelding van een voorbeeld van een SAS-tokenconfiguratie:
 
-![Azure Blob SAS-tokenconfiguratie](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+![ Azure Blob SAS symbolische configuratie ](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
 #### Azure Blob Storage CDN-logs {#azureblob-cdn}
 
-Elke globaal gedistribueerde logboekserver produceert een nieuw bestand elke paar seconden, onder de `aemcdn` map. Nadat het bestand is gemaakt, wordt het niet meer toegevoegd aan het bestand. De bestandsindeling is YYY-MM-DDThh:mm:ss.sss-uniqueid.log. Bijvoorbeeld 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+Elke globaal gedistribueerde logbestandsserver produceert elke paar seconden een nieuw bestand onder de map `aemcdn` . Nadat het bestand is gemaakt, wordt het niet meer toegevoegd aan het bestand. Het filename formaat is JJJ-MM-DDThh :mm: ss.sss-uniqueid.log. Bijvoorbeeld, 2024-03-04T10 :00: 00.000-WnFWYN9BpOUs2aOVn4ee.log.
 
 Zo kunt u op een bepaald tijdstip bijvoorbeeld:
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Elk bestand bevat meerdere logitems van de zoon, elk op een aparte regel. De notaties voor logberichten worden beschreven in het dialoogvenster [logboekartikel](/help/implementing/developing/introduction/logging.md)en elke logbestandvermelding bevat ook de aanvullende eigenschappen die in de [Indelingen voor logbestandvermelding](#log-format) hieronder.
+Elk bestand bevat meerdere logitems van de zoon, elk op een aparte regel. De formaten van de logboekingang worden beschreven in het [ registrerenartikel ](/help/implementing/developing/introduction/logging.md), en elke logboekingang omvat ook de extra eigenschappen die in de [ hieronder vermelde sectie van de Formaten van de Ingang van het Logboek ](#log-format) worden vermeld.
 
 #### Azure Blob Storage AEM logs {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM logbestanden (inclusief Apache/Dispatcher) worden weergegeven onder een map 
 
 Onder elke map wordt één bestand gemaakt en toegevoegd. Klanten zijn verantwoordelijk voor de verwerking en het beheer van dit bestand, zodat het niet te groot wordt.
 
-Zie de notaties voor logberichten in het dialoogvenster [logboekartikel](/help/implementing/developing/introduction/logging.md). De logbestandvermeldingen bevatten ook de aanvullende eigenschappen die in het dialoogvenster [Indelingen voor logbestandvermelding](#log-formats) hieronder.
+Zie de formaten van de logboekingang in het [ registrerend artikel ](/help/implementing/developing/introduction/logging.md). De logboekingangen zullen ook de extra eigenschappen omvatten die in de [ hieronder sectie van de Formaten van het Ingang van het Logboek ](#log-formats) worden vermeld.
 
 
 ### Datahond {#datadog}
@@ -232,9 +232,9 @@ Overwegingen:
 
 * Voor geloofsbrieven, zorg ervoor om plaatsingsgeloofsbrieven te gebruiken, eerder dan rekeningsgeloofsbrieven. Dit zijn de referenties die worden gegenereerd in een scherm dat op deze afbeelding lijkt:
 
-![Elastische implementatiereferenties](/help/implementing/developing/introduction/assets/ec-creds.png)
+![ Elastische plaatsingsgeloofsbrieven ](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet worden geplaatst aan *script* en de scripttaal moet worden ingesteld op *pijnloos*. Hier is een fragment van het steekproefmanuscript om logboekingangen in een index zoals aemaccess_dev_26_06_2024 te leiden:
+* Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet aan *manuscript* worden geplaatst en de manuscripttaal zou aan *pijnloos* moeten worden geplaatst. Hier is een fragment van het steekproefmanuscript om logboekingangen in een index zoals aemaccess_dev_26_06_2024 te leiden:
 
 ```
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -260,20 +260,20 @@ data:
 
 #### HTTPS CDN-logbestanden {#https-cdn}
 
-De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat in wordt beschreven [logboekartikel](/help/implementing/developing/introduction/logging.md#cdn-log). Aanvullende eigenschappen worden vermeld in de [Indelingen voor logbestandvermelding](#log-formats) hieronder.
+De verzoeken van het Web (POSTs) zullen onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met het formaat van de logboekingang dat in het [ registrerenartikel ](/help/implementing/developing/introduction/logging.md#cdn-log) wordt beschreven. De extra eigenschappen worden vermeld in de ](#log-formats) hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.[
 
-Er is ook een eigenschap met de naam `sourcetype`, die is ingesteld op de waarde `aemcdn`.
+Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde `aemcdn` .
 
 >[!NOTE]
 >
-> Voordat de eerste CDN-logbestandvermelding wordt verzonden, moet uw HTTP-server een eenmalige controle met succes uitvoeren: een aanvraag die naar het pad wordt verzonden ``wellknownpath`` moet reageren met ``*``.
+> Voordat de eerste CDN-logbestandvermelding wordt verzonden, moet de HTTP-server een eenmalige controle uitvoeren: een aanvraag die naar het pad ``wellknownpath`` wordt verzonden, moet reageren met ``*`` .
 
 
 #### HTTPS-AEM {#https-aem}
 
-Voor AEM logbestanden (inclusief apache/dispacher) worden webaanvragen (POST&#39;s) continu verzonden, met een JSON-lading die een array van logitems is, met de verschillende logbestandsindelingen zoals beschreven in het dialoogvenster [logboekartikel](/help/implementing/developing/introduction/logging.md). Aanvullende eigenschappen worden vermeld in de [Indelingen voor logbestandvermelding](#log-format) hieronder.
+Voor AEM logboeken (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die in het [ registreren artikel ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de ](#log-format) hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.[
 
-Er is ook een eigenschap met de naam `sourcetype`, die op een van de volgende waarden wordt ingesteld:
+Er is ook een eigenschap met de naam `sourcetype` die op een van de volgende waarden is ingesteld:
 
 * amusement
 * aemfout
@@ -318,7 +318,7 @@ data:
 
 ## Indelingen voor logbestandvermelding {#log-formats}
 
-Zie het algemene gedeelte [logboekartikel](/help/implementing/developing/introduction/logging.md) voor de indeling van elk respectieve logbestandstype (CDN-logboeken en AEM, inclusief Apache/Dispatcher).
+Zie het algemene [ registrerenartikel ](/help/implementing/developing/introduction/logging.md) voor het formaat van elk respectieve logboektype (CDN logboeken, en AEM logboeken met inbegrip van Apache/Dispatcher).
 
 Aangezien de logboeken van veelvoudige programma&#39;s en milieu&#39;s aan de zelfde registrerenbestemming kunnen door:sturen, naast de output die in het registrerenartikel wordt beschreven, zullen de volgende eigenschappen in elke logboekingang worden omvat:
 
@@ -345,9 +345,9 @@ aem_tier: author
 
 Sommige organisaties verkiezen om te beperken welk verkeer door de registrerenbestemmingen kan worden ontvangen.
 
-Voor het CDN-logboek kunt u de IP-adressen toestaan en weergeven, zoals wordt beschreven in [dit artikel](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Als die lijst van gedeelde IP adressen te groot is, denk na verzendend verkeer naar (niet-Adobe) Azure Blob Store waar de logica kan worden geschreven om de logboeken van specifieke IP naar hun uiteindelijke bestemming te verzenden.
+Voor het logboek CDN, kunt u toestaan-lijst van de IP adressen, zoals die in [ wordt beschreven dit artikel ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Als die lijst van gedeelde IP adressen te groot is, denk na verzendend verkeer naar (niet-Adobe) Azure Blob Store waar de logica kan worden geschreven om de logboeken van specifieke IP naar hun uiteindelijke bestemming te verzenden.
 
-Voor AEM logboeken (met inbegrip van Apache/Dispatcher), kunt u logboek vormen door:sturen om te gaan [geavanceerd netwerken](/help/security/configuring-advanced-networking.md). Zie de patronen voor de drie hieronder geavanceerde voorzien van een netwerktypes, die gebruik van facultatief maken `port` samen met de `host` parameter.
+Voor AEM logboeken (met inbegrip van Apache/Dispatcher), kunt u logboek vormen door:sturen om door [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) te gaan. Zie de patronen voor de drie onderstaande geavanceerde netwerktypen, waarbij gebruik wordt gemaakt van een optionele parameter `port` , samen met de parameter `host` .
 
 ### Flexibele poortuitgang {#flex-port}
 

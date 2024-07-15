@@ -1,6 +1,6 @@
 ---
 title: Metagegevens bewerken of toevoegen
-description: Meer informatie over metagegevens van elementen in [!DNL Experience Manager Assets] Dit is een aantal manieren waarop u metagegevens van elementen kunt bewerken.
+description: Leer over activa meta-gegevens in  [!DNL Experience Manager Assets]  en diverse manieren waardoor u activa meta-gegevens kunt uitgeven.
 contentOwner: AG
 feature: Metadata
 role: User, Admin
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Metagegevens zijn aanvullende informatie over het element die kan worden doorzocht. Deze wordt automatisch uitgepakt wanneer u een afbeelding uploadt. U kunt de bestaande metagegevens bewerken of nieuwe eigenschappen van metagegevens toevoegen aan bestaande velden (bijvoorbeeld wanneer een metagegevensveld leeg is).
 
-Omdat bedrijven gecontroleerde en betrouwbare metagegevenswoordenboeken nodig hebben, [!DNL Experience Manager Assets] staat het toevoegen van nieuwe eigenschappen van metagegevens niet toe op aanvraag. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [Nieuwe eigenschap metagegevens maken voor elementen](meta-edit.md#editing-metadata-schema).
+Omdat bedrijven gecontroleerde en betrouwbare taalwoordenboeken voor metagegevens nodig hebben, staat [!DNL Experience Manager Assets] niet toe dat op aanvraag nieuwe eigenschappen voor metagegevens worden toegevoegd. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [ Creërend Nieuw Bezit van Meta-gegevens voor Assets ](meta-edit.md#editing-metadata-schema).
 
 ## Metagegevens voor een element bewerken {#editing-metadata-for-an-asset}
 
@@ -24,41 +24,41 @@ Metagegevens bewerken:
 
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer het element in de interface Elementen en selecteer het **[!UICONTROL View Properties]** op de werkbalk.
-   * Selecteer in de miniatuur van het element de optie **[!UICONTROL View Properties]** snelle actie.
-   * Selecteer op de elementpagina de optie **[!UICONTROL View Properties]** op de werkbalk.
+   * Selecteer het element in de gebruikersinterface van Assets en selecteer het pictogram **[!UICONTROL View Properties]** op de werkbalk.
+   * Selecteer in de miniatuur van het element de handeling **[!UICONTROL View Properties]** quick.
+   * Selecteer in de elementpagina de optie **[!UICONTROL View Properties]** op de werkbalk.
 
    Op de elementpagina worden de metagegevens van het element weergegeven. Deze metagegevens worden automatisch geëxtraheerd bij het uploaden (invoegen) naar Experience Manager Assets.
 
-1. Breng desgewenst wijzigingen aan in de metagegevens op de verschillende tabbladen en selecteer vervolgens, wanneer u klaar bent, **[!UICONTROL Save]** van de toolbar om uw veranderingen te bewaren. Selecteren **[!UICONTROL Close]** om terug te keren naar de middelenwebinterface.
+1. Breng desgewenst wijzigingen aan in de metagegevens op de verschillende tabbladen en selecteer **[!UICONTROL Save]** op de werkbalk als u de wijzigingen hebt voltooid. Selecteer **[!UICONTROL Close]** om terug te keren naar de Assets-webinterface.
 
    >[!NOTE]
    >
    >Als een tekstveld leeg is, is er geen bestaande metagegevensset. U kunt een waarde in het veld invoeren en deze opslaan om de eigenschap metadata toe te voegen.
 
-Eventuele wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP gegevens. Dit gebeurt via de workflow voor het terugschrijven van metagegevens van Experience Managers. Wijzigingen in bestaande eigenschappen (zoals `dc:title`) worden overschreven en nieuwe eigenschappen gemaakt (inclusief aangepaste eigenschappen zoals `cq:tags`) worden samen met het schema toegevoegd.
+Eventuele wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP gegevens. Dit gebeurt via de workflow voor het terugschrijven van metagegevens van Experience Managers. Wijzigingen die worden aangebracht in de bestaande eigenschappen (zoals `dc:title` ), worden overschreven en gemaakte eigenschappen (zoals aangepaste eigenschappen zoals `cq:tags` ) worden samen met het schema toegevoegd.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
 ## Metagegevensschema bewerken {#editing-metadata-schema}
 
-Voor meer informatie over het bewerken van het metagegevensschema raadpleegt u [Formulieren met metagegevensschema bewerken](metadata-schemas.md#edit-metadata-schema-forms).
+Voor details op hoe te om meta-gegevensschema uit te geven, zie [ het Uitgeven van de vormen van het meta-gegevensschema ](metadata-schemas.md#edit-metadata-schema-forms).
 
 ## Een aangepaste naamruimte registreren in de Experience Manager {#registering-a-custom-namespace-within-aem}
 
 U kunt uw eigen naamruimten in de Experience Manager toevoegen. Net zoals er vooraf gedefinieerde naamruimten zijn, zoals cq, jcr en sling, kunt u een naamruimte hebben voor de metagegevens van de gegevensopslagruimte en de verwerking van de xml.
 
-1. Naar de beheerpagina voor knooppunttypen *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. Selecteren **[!UICONTROL Namespaces]** boven aan de pagina. De pagina voor naamruimtebeheer wordt weergegeven in een venster.
+1. Ga naar de knooptype beleidspagina *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
+1. Selecteer **[!UICONTROL Namespaces]** boven aan de pagina. De pagina voor naamruimtebeheer wordt weergegeven in een venster.
 
 1. Als u een naamruimte wilt toevoegen, selecteert u **[!UICONTROL New]** onderaan.
-1. Geef een aangepaste naamruimte op in de XML-naamruimteconventie (geef de id op in de vorm van een URI en een bijbehorend voorvoegsel voor de id) en selecteer **[!UICONTROL Save]**.
+1. Geef een aangepaste naamruimte op in de XML-naamruimteconventie (geef de id op in de vorm van een URI en een bijbehorend voorvoegsel voor de id) en selecteer **[!UICONTROL Save]** .
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -68,4 +68,4 @@ U kunt uw eigen naamruimten in de Experience Manager toevoegen. Net zoals er voo
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

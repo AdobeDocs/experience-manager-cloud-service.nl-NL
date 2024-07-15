@@ -15,13 +15,13 @@ ht-degree: 1%
 
 # Een adaptieve vorm configureren voor het verzenden van REST-eindpunten
 
-Gebruik de **[!UICONTROL Submit to REST Endpoint]** actie om de verzonden gegevens naar een REST URL te posten. De URL kan van een interne (de server waarop het formulier wordt gegenereerd) of van een externe server zijn.
+Gebruik de handeling **[!UICONTROL Submit to REST Endpoint]** om de verzonden gegevens naar een REST-URL te verzenden. De URL kan van een interne (de server waarop het formulier wordt gegenereerd) of van een externe server zijn.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md)  artikel.
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/configure-submit-actions-core-components.md).
 
 ## Voordelen
 
-Sommige voordelen van het configureren van de **[!UICONTROL Submit to REST endpoint]** acties voor Adaptive Forms indienen zijn:
+Een aantal voordelen van het configureren van de verzendactie **[!UICONTROL Submit to REST endpoint]** voor Adaptive Forms zijn:
 
 * Het maakt naadloze integratie van formuliergegevens met externe systemen en services mogelijk via RESTful-API&#39;s.
 * Het biedt flexibiliteit bij de verwerking van gegevensverzendingen van Adaptive Forms en ondersteunt dynamische en complexe gegevensstructuren.
@@ -32,40 +32,40 @@ Sommige voordelen van het configureren van de **[!UICONTROL Submit to REST endpo
 
 Verzendactie configureren:
 
-1. Open de Inhoudsbrowser en selecteer de **[!UICONTROL Guide Container]** van uw adaptieve formulier.
-1. Klik op de eigenschappen van de container van de hulplijn ![Eigenschappen van hulplijnen](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
-1. Klik op de knop  **[!UICONTROL Submission]** tab.
+1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik op de tab **[!UICONTROL Submission]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Submit Action]** de optie **[!UICONTROL Submit to Rest endpoint]**.
-   ![Configuratie van handeling voor verzenden naar eindpunt van set](/help/forms/assets/submit-action-restendpoint.png)
+   ![ configuratie van de Actie van voorleggen aan het eindpunt van het Rest ](/help/forms/assets/submit-action-restendpoint.png)
 
-   Om gegevens aan een interne server te posten, verstrek weg van het middel. De gegevens worden gepost de weg van het middel. Bijvoorbeeld: `/content/restEndPoint`. Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
+   Om gegevens aan een interne server te posten, verstrek weg van het middel. De gegevens worden gepost de weg van het middel. Bijvoorbeeld `/content/restEndPoint` . Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
 
-   Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point`. Zorg ervoor dat u de weg vormt om het verzoek van de POST anoniem te behandelen.
+   Geef een URL op om gegevens naar een externe server te posten. De opmaak van de URL is `https://host:port/path_to_rest_end_point` . Zorg ervoor dat u de weg vormt om het verzoek van de POST anoniem te behandelen.
 
-   ![Toewijzing voor veldwaarden die zijn doorgegeven als parameters voor de pagina Bedankt](assets/post-enabled-actionconfig.png)
+   ![ Toewijzing voor gebiedswaarden die als Dank worden overgegaan de parameters van de Pagina ](assets/post-enabled-actionconfig.png)
 
-   In het bovenstaande voorbeeld heeft de gebruiker informatie ingevoerd in `textbox` wordt vastgelegd met parameter `param1`. Syntaxis om gegevens te posten die zijn vastgelegd met `param1` is:
+   In het bovenstaande voorbeeld wordt door de gebruiker ingevoerde informatie in `textbox` vastgelegd met parameter `param1` . De syntaxis voor het posten van gegevens die zijn vastgelegd met `param1` is:
 
    `String data=request.getParameter("param1");`
 
-   Ook parameters die u gebruikt voor het posten van XML-gegevens en -bijlagen zijn `dataXml` en `attachments`.
+   Op dezelfde manier zijn de parameters die u gebruikt voor het posten van XML-gegevens en -bijlagen `dataXml` en `attachments` .
 
    U gebruikt deze twee parameters in uw script bijvoorbeeld om gegevens te parseren op een eindpunt in de rest. U gebruikt de volgende syntaxis om de gegevens op te slaan en te ontleden:
 
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   In dit voorbeeld: `data` de XML-gegevens worden opgeslagen, en `att` slaat gehechtheidsgegevens op.
+   In dit voorbeeld slaat `data` de XML-gegevens op en slaat `att` de gegevens in de bijlage op.
 
-   De **[!UICONTROL Submit to REST endpoint]** Met Handeling verzenden worden de gegevens die in het formulier zijn ingevuld, als onderdeel van de HTTP-aanvraag naar een geconfigureerde bevestigingspagina verzonden. U kunt de naam toevoegen van het veld dat u wilt aanvragen. De indeling van het verzoek is:
+   Met de handeling **[!UICONTROL Submit to REST endpoint]** Verzenden worden de gegevens die in het formulier zijn ingevuld, als onderdeel van de HTTP-aanvraag verzonden naar een geconfigureerde bevestigingspagina. U kunt de naam toevoegen van het veld dat u wilt aanvragen. De indeling van het verzoek is:
 
    `{fieldName}={request parameter name}`
 
-   Zoals in de onderstaande afbeelding wordt getoond: `param1` en `param2` worden doorgegeven als parameters met waarden die zijn gekopieerd uit de **textbox** en **numericbox** velden voor de volgende actie.
+   Zoals aangetoond in het beeld hieronder, `param1` en `param2` worden overgegaan als parameters met waarden die van **worden gekopieerd textbox** en **numericbox** gebieden voor de volgende actie.
 
-   ![Rest Endpoint-verzendhandeling configureren](assets/action-config.png)
+   ![ Vormend Rest Eindpunt legt Actie ](assets/action-config.png) voor
 
-   U kunt **[!UICONTROL Enable POST request]** en geef een URL op om de aanvraag te posten. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld: `/content/forms/af/SampleForm.html`. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
+   U kunt ook **[!UICONTROL Enable POST request]** opgeven en een URL opgeven om de aanvraag te verzenden. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld `/content/forms/af/SampleForm.html` . Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
 1. Klik op **[!UICONTROL Done]**.
 

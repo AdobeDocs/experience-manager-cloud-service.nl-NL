@@ -14,70 +14,70 @@ ht-degree: 3%
 
 # De siteconsole {#sites-console}
 
-Leer hoe u de **Sites** -console voor het beheren en ordenen van uw AEM.
+Leer hoe te om de **console van Plaatsen** te gebruiken om uw AEM pagina&#39;s te beheren en te organiseren.
 
 ## Afdrukstand {#orientation}
 
-De **Sites** kunt u de paginahiërarchie weergeven.
+De **console van Plaatsen** staat u toe om uw paginahiërarchie te bekijken.
 
-![Kolomweergave van de Sites-console met een geselecteerd item](assets/sites-console-column-view-selected.png)
+![ de mening van de Kolom van de console van Plaatsen met een geselecteerd punt ](assets/sites-console-column-view-selected.png)
 
 Het biedt verschillende weergaven en werkbalken om u te helpen uw pagina&#39;s te beheren en te ordenen.
 
-* [De consolewerkbalk](#toolbar) is altijd aanwezig om u te helpen navigeren.
-* [Drie verschillende weergaven](#views) waarmee u de pagina gemakkelijk kunt vinden en selecteren.
-* [De werkbalk Handeling](#action-toolbar) wordt weergegeven wanneer u een item hebt geselecteerd om actie te ondernemen.
-* [Het zijpaneel](#side-panel) heeft meerdere opties om gedetailleerde informatie op een geselecteerde pagina weer te geven.
+* [ de consoletoolbar ](#toolbar) is altijd aanwezig om u te helpen navigeren.
+* [ drie verschillende meningen ](#views) staan u toe om van uw pagina gemakkelijk de plaats te bepalen en te selecteren.
+* [ de actietoolbar ](#action-toolbar) verschijnt wanneer u een punt hebt geselecteerd om actie op het te voeren.
+* [ het zijpaneel ](#side-panel) heeft veelvoudige opties om gedetailleerde informatie over een geselecteerde pagina te tonen.
 
 ## Console, werkbalk {#console-toolbar}
 
 De consoletoolbar is altijd aanwezig op de console en helpt u zich in uw inhoud oriënteren en de inhoud navigeren.
 
-![De werkbalk van de Sites-console](assets/sites-console-toolbar.png)
+![ de toolbar van de console van Plaatsen ](assets/sites-console-toolbar.png)
 
 ### Kiezer zijpaneel {#side-panel-selector}
 
 Met de kiezer in het zijpaneel kunt u aanvullende informatie over het geselecteerde item weergeven in de console.
 
-![Selectieknop zijpaneel](assets/sites-console-side-panel-button.png)
+![ Kiezen van de Kiezer van het Zijpaneel ](assets/sites-console-side-panel-button.png)
 
-Welke opties worden weergegeven, is afhankelijk van uw huidige console. Bijvoorbeeld in **Sites** u kunt alleen inhoud (standaard), de tijdlijn, verwijzingen of het filterzijpaneel selecteren.
+Welke opties worden weergegeven, is afhankelijk van uw huidige console. Bijvoorbeeld, in **Plaatsen** kunt u inhoud slechts selecteren (het gebrek), de chronologie, verwijzingen, of het paneel van de filterkant.
 
-![Voorbeeld van de selector van het zijpaneel](assets/sites-console-side-panel-selector.png)
+![ Voorbeeld van de selecteur van het zijpaneel ](assets/sites-console-side-panel-selector.png)
 
-Zie het document voor meer informatie over het zijpaneel [Zijpaneel siteconsole.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+Voor meer informatie over het zijpaneel, te zien gelieve het document [ Zijpaneel van de Console van Plaatsen.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
 
 ### Broodkruimels {#breadcrumbs}
 
 In het midden van de spoorstaaf, waarbij altijd de beschrijving van het geselecteerde artikel wordt getoond, kunt u met de broodkruimels door de niveaus van uw website navigeren.
 
-![Broodkruimels in navigatiebalk](assets/sites-console-breadcrumbs-navigation.png)
+![ Broodkruimels in navigatiebar ](assets/sites-console-breadcrumbs-navigation.png)
 
 
 Tik of klik op de tekst van de broodkruimel om een vervolgkeuzelijst weer te geven met de niveaus van de hiërarchie van het geselecteerde item. Tik of klik op een item om naar die locatie te gaan.
 
-![Voorbeeld van uitvouwen broodkruimels](assets/sites-console-breadcrumbs-example.png)
+![ Voorbeeld van breadcrumbs uitgevouwen ](assets/sites-console-breadcrumbs-example.png)
 
 ### Alles selecteren {#select-all}
 
-Tikken of klikken op de knop **Alles selecteren** selecteert alle punten in uw huidige mening van de console.
+Tapping of het klikken van de **Uitgezochte Al** knoop selecteert alle punten in uw huidige mening van de console.
 
-![Alles selecteren](assets/sites-console-select-all.png)
+![ Uitgezochte al knoop ](assets/sites-console-select-all.png)
 
-Wanneer u alle items hebt geselecteerd, wordt het aantal geselecteerde items rechtsboven op de werkbalk weergegeven op de plaats **Alles selecteren** weergegeven.
+Wanneer u alle punten hebt geselecteerd, wordt de telling van de geselecteerde punten getoond bij het hoogste recht van de toolbar waar **Uitgezochte Al** knoop verscheen.
 
 U kunt alle items deselecteren en de selectiemodus afsluiten door:
 
-* Klik of tikken op de knop **X** naast de telling.
-* Met de **ontsnappen** toets.
+* Het klikken of het tikken van **X** naast de telling.
+* Gebruikend de **vlucht** sleutel.
 
-![Alle selecties opheffen](assets/sites-console-deselect-all.png)
+![ schrap allen ](assets/sites-console-deselect-all.png)
 
 ### Knop Maken {#create-button}
 
-De **Maken** kunt u nieuwe pagina&#39;s aan uw site toevoegen en aanvullende Sites-objecten maken, zoals Live kopieën of Launches.
+**creeer** knoop staat u toe om nieuwe pagina&#39;s aan uw plaats toe te voegen evenals tot extra voorwerpen van Plaatsen zoals Levende Exemplaren of Lanceringen te leiden.
 
-![Knop Maken](assets/sites-console-create.png)
+![ creeer knoop ](assets/sites-console-create.png)
 
 Zodra geklikt, zijn de getoonde opties aangewezen aan de console/de context. De meest voorkomende zijn:
 
@@ -92,21 +92,21 @@ Zie de koppelingen naar deze functies voor meer informatie over hoe ze werken.
 
 ## Weergaven en Pagina&#39;s selecteren {#views}
 
-De **Sites** De console biedt drie verschillende meningen van uw inhoudshiërarchie aan. U kunt de bronnen weergeven, doorbladeren en selecteren (voor verdere actie) met een van de beschikbare weergaven.
+De **console van Plaatsen** biedt drie verschillende meningen van uw inhoudshiërarchie aan. U kunt de bronnen weergeven, doorbladeren en selecteren (voor verdere actie) met een van de beschikbare weergaven.
 
 * [Kolomweergave](#column-view)
 * [Kaartweergave](#card-view)
 * [Lijstweergave](#list-view)
 
-De **Weergave** helemaal rechts van de werkbalk AEM geeft de geselecteerde weergave aan.
+Het **pictogram van de Mening** bij uiterst rechts van de AEM toolbar wijst op de huidige geselecteerde mening.
 
 Als u hierop tikt of erop klikt, kunt u een andere weergave selecteren.
 
-![Knop Weergaven](assets/sites-console-views-button.png)
+![ knoop van Bekijken ](assets/sites-console-views-button.png)
 
 U kunt schakelen tussen de kolomweergave, de kaartweergave en de lijstweergave. In de lijstweergave worden ook de weergave-instellingen weergegeven.
 
-![Weergaven](assets/sites-console-view.png)
+![ Weergaven ](assets/sites-console-view.png)
 
 >[!NOTE]
 >
@@ -132,17 +132,17 @@ Het selecteren van een specifieke bron is afhankelijk van een combinatie van de 
 
 1. In de kaartweergave bijvoorbeeld:
 
-   ![Kaartweergave selecteren](assets/sites-console-card-view-select.png)
+   ![ Uitgezochte de mening van de Kaart ](assets/sites-console-card-view-select.png)
 
-1. Zodra u een middel hebt geselecteerd, wordt de hoogste kopbal behandeld door [werkbalk Handelingen](#actions-toolbar) die toegang biedt tot acties die momenteel van toepassing zijn op de geselecteerde bron.
+1. Zodra u een middel hebt geselecteerd wordt de hoogste kopbal behandeld door de [ actiestoolbar ](#actions-toolbar) die toegang tot acties verleent momenteel toepasselijk op het geselecteerde middel.
 
-1. Als u de selectiemodus wilt afsluiten, selecteert u de **X** rechtsboven, of gebruik **ontsnappen**.
+1. Om selectiemodus weg te gaan selecteer **X** aan top-right, of gebruik **ontsnapping**.
 
 ### Kolomweergave {#column-view}
 
 In de kolomweergave kunt u een inhoudsstructuur visueel navigeren door een reeks trapsgewijze kolommen. Met deze weergave kunt u de boomstructuur van uw website visualiseren en doorlopen.
 
-![Kolomweergave](assets/sites-console-column-view.png)
+![ mening van de Kolom ](assets/sites-console-column-view.png)
 
 Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bronnen in een kolom rechts weergegeven. Als u een bron in de rechterkolom selecteert, worden de onderliggende bronnen in een andere kolom rechts weergegeven, enzovoort.
 
@@ -171,7 +171,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
 In de kaartweergave wordt elk item op het huidige niveau in de hiërarchie weergegeven als een grote kaart.
 
-![Kaartweergave](assets/sites-console-card-view.png)
+![ mening van de Kaart ](assets/sites-console-card-view.png)
 
 * Kaarten bieden informatie zoals:
 
@@ -181,84 +181,84 @@ In de kaartweergave wordt elk item op het huidige niveau in de hiërarchie weerg
    * Als de pagina is vergrendeld, verborgen of deel uitmaakt van een livecopy.
    * Geeft aan of u op het item moet reageren als onderdeel van een workflow.
 
-Kaartweergave biedt ook [snelle acties](#quick-actions) voor items zoals selectie en algemene handelingen zoals bewerken.
+De mening van de kaart biedt ook [ snelle acties ](#quick-actions) voor de punten zoals selectie en gemeenschappelijke acties zoals uit uitgeven aan.
 
-![Snelle acties](assets/sites-console-quick-actions.png)
+![ Snelle acties ](assets/sites-console-quick-actions.png)
 
-U kunt door de boom omlaag navigeren door op kaarten te tikken of te klikken (zorg dat u niet op de snelle acties tikt) of door nogmaals op de knop [broodkruimels in de koptekst](#the-header).
+U kunt onderaan de boom navigeren door op kaarten te tikken/te klikken (die zorg nemen om het tikken van de snelle acties te vermijden) of opnieuw door [ broodkruimels in de kopbal ](#the-header) te gebruiken.
 
 ### Lijstweergave {#list-view}
 
 De mening van de lijst verstrekt informatie voor elk middel op het huidige niveau in een lijst.
 
-![Lijstweergave](assets/sites-console-list-view.png)
+![ mening van de Lijst ](assets/sites-console-list-view.png)
 
-* U kunt omlaag door de boom navigeren door op de middelnaam te tikken/te klikken en file door te gebruiken [broodkruimels in de koptekst](#the-header).
-* Als u gemakkelijk alle items in de lijst wilt selecteren, gebruikt u de opdracht [**Alles selecteren** in de werkbalk.](#select-all)
+* U kunt neer door de boom navigeren door te tikken/op de middelnaam en file te klikken door [ broodkruimels in de kopbal ](#the-header) te gebruiken.
+* Om alle punten in de lijst gemakkelijk te selecteren, gebruik [**Uitgezochte Al** checkbox in de toolbar.](#select-all)
 
-* Selecteer de kolommen die u wilt weergeven **Instellingen weergeven** onder de knop Weergaven. De volgende kolommen zijn beschikbaar voor weergave:
+* Selecteer de kolommen die moeten worden getoond gebruikend **de optie van de Montages van de Mening** onder de knoop van Bekijken wordt gevestigd. De volgende kolommen zijn beschikbaar voor weergave:
 
-   * **Naam** - Paginanaam, die nuttig kan zijn in een meertalige ontwerpomgeving omdat deze deel uitmaakt van de URL van de pagina en niet wordt gewijzigd, ongeacht de taal
-   * **gewijzigd** - Datum van laatste wijziging en laatst gewijzigd door gebruiker
-   * **Gepubliceerd** - Status van publicatie
-   * **Voorvertoning** - Voorvertoningsstatus
-   * **Sjabloon** - Sjabloon waarop de pagina is gebaseerd
-   * **Bewerking**
-   * **Workflow** - Werkstroom die momenteel op de pagina wordt toegepast. Er is meer informatie beschikbaar wanneer u de muis boven de tijdlijn houdt of deze opent.
+   * **Naam** - de naam van de Pagina, die in een meertalig auteursmilieu nuttig kan zijn aangezien het deel van URL van de pagina uitmaakt en niet ongeacht taal verandert
+   * **Gewijzigd** - Laatste gewijzigde datum en laatst gewijzigd door gebruiker
+   * **Gepubliceerd** - de status van de Publicatie
+   * **Voorproef** - de status van de Voorproef
+   * **Malplaatje** - Malplaatje waarop de pagina gebaseerd is
+   * **Verrichting**
+   * **Werkschema** - Werkschema momenteel toegepast op de pagina. Er is meer informatie beschikbaar wanneer u de muis boven de tijdlijn houdt of deze opent.
    * **Vertaald**
-   * **Paginaweergaven**
-   * **Unieke bezoekers**
-   * **Tijd op pagina**
+   * **de Weergaven van de Pagina**
+   * **Unieke Bezoekers**
+   * **Tijd op Pagina**
 
-![Kolommen configureren](assets/sites-console-select-columns.png)
+![ vorm kolommen ](assets/sites-console-select-columns.png)
 
-Standaard worden de **Naam** wordt een kolom weergegeven die een deel van de URL voor de pagina uitmaakt. In sommige gevallen moet de auteur pagina&#39;s openen die in een andere taal zijn en kan het nuttig zijn de naam van de pagina (die gewoonlijk onveranderlijk is) te zien als de auteur de taal van de pagina niet kent.
+Door gebrek wordt de **kolom van de Naam** getoond, die omhoog een deel van URL voor de pagina maakt. In sommige gevallen moet de auteur pagina&#39;s openen die in een andere taal zijn en kan het nuttig zijn de naam van de pagina (die gewoonlijk onveranderlijk is) te zien als de auteur de taal van de pagina niet kent.
 
 * Wijzig de volgorde van de items met de gestippelde verticale balk helemaal rechts van elk item in de lijst.
 
-![Kolomvolgorde](assets/sites-console-column-order.png)
+![ orde van de Kolom ](assets/sites-console-column-order.png)
 
 Selecteer de verticale selectiebalk en sleep het item naar een nieuwe positie in de lijst.
 
-![Orderlijst](assets/sites-console-order-list.png)
+![ lijst van de Orde ](assets/sites-console-order-list.png)
 
 >[!NOTE]
 >
->Het wijzigen van de volgorde werkt alleen in een geordende map die `jcr:primaryType` waarde als `sling:OrderedFolder`.
+>Het wijzigen van de volgorde werkt alleen in een geordende map met de waarde `jcr:primaryType` als `sling:OrderedFolder` .
 
 ## Werkbalk Handelingen {#actions-toolbar}
 
 Wanneer een middel wordt geselecteerd, kunt u diverse acties op het geselecteerde punt uitvoeren. Deze acties worden weergegeven op de werkbalk Handelingen.
 
-![Werkbalk Handelingen](assets/introduction-actions-toolbar.png)
+![ de toolbar van Acties ](assets/introduction-actions-toolbar.png)
 
 De actietoolbar verschijnt slechts wanneer een middel in de console wordt geselecteerd. De actie beschikbaar in de actiestoolbar verandert om op de acties te wijzen u op de specifieke geselecteerde punten kunt nemen. De meest voorkomende acties zijn:
 
-* [**Maken**](#create-action) - Nieuwe handelingen maken die betrekking hebben op inhoud of inhoud
-* **Bewerken** - Afhankelijk van hoe de geselecteerde pagina is gemaakt, wordt **Bewerken** de actie zal de aangewezen redacteur openen.
-   * [Pagina-editor](/help/sites-cloud/authoring/page-editor/introduction.md) - Voor pagina&#39;s die zijn gemaakt met de AEM Pagina-editor
-   * [Universele editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Voor pagina&#39;s die zijn gemaakt met de Universal Editor
-* [**Eigenschappen**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Hiermee opent u het venster met pagina-eigenschappen
-* [**Vergrendelen**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Een pagina vergrendelen om te voorkomen dat anderen deze wijzigen
-* [**Kopiëren**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Een pagina kopiëren
-* [**Verplaatsen**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Een pagina verplaatsen of de naam ervan wijzigen
-* [**Snel publiceren**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Een pagina of pagina&#39;s direct publiceren
-* [**Publicatie beheren**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Een pagina of pagina&#39;s voor publicatie plannen
-* [**Herstellen**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Een versie van een pagina of paginastructuur herstellen
-* [**Verwijderen**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Een pagina of pagina&#39;s verwijderen
+* [**creeer**](#create-action) - creeer nieuwe inhoud of inhoud-verwante acties
+* **geeft** uit - afhankelijk van hoe de geselecteerde pagina werd gecreeerd, **geeft** actie uit zal de aangewezen redacteur openen.
+   * [ Redacteur van de Pagina ](/help/sites-cloud/authoring/page-editor/introduction.md) - voor pagina&#39;s die met de Redacteur van de Pagina van de AEM worden gecreeerd
+   * [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) - voor pagina&#39;s die met de Universele Redacteur worden gecreeerd
+* [**Eigenschappen**](/help/sites-cloud/authoring/sites-console/page-properties.md) - opent het venster van pagina-eigenschappen
+* [**Slot**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - vergrendel een pagina om anderen te verhinderen het te veranderen
+* [**Exemplaar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Kopieer een pagina
+* [**Beweging**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - beweeg of noem een pagina anders
+* [**Snelle Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish een pagina of pagina&#39;s onmiddellijk
+* [**beheer Publicatie**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Plan een pagina of pagina&#39;s voor publicatie
+* [**herstel**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - herstel een versie van een pagina of paginaboom
+* [**Schrapping**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - schrap een pagina of pagina&#39;s
 
-Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Klikken of tikken op de ellips (de drie stippen of **...**) opent u een vervolgkeuzelijst met alle resterende handelingen.
+Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Als u op de ellips klikt of erop tikt (de drie stippen of **...** ), wordt een vervolgkeuzelijst geopend met alle resterende handelingen.
 
-![Aanvullende opties](assets/sites-console-additional-options.png)
+![ Extra opties ](assets/sites-console-additional-options.png)
 
 ### Handeling maken {#create-action}
 
-De handeling Maken biedt vergelijkbare opties voor de [**Maken** werkbalkknop](#create-button) voor het maken van nieuwe pagina&#39;s en vergelijkbare items.
+Creeer actie biedt gelijkaardige opties aan [**** tot werkbalkknop ](#create-button) voor het creëren van nieuwe pagina&#39;s en gelijkaardige punten aan.
 
 Bovendien biedt het de mogelijkheid om paginagerelateerde acties te maken.
 
-* [**Workflow**](/help/sites-cloud/authoring/workflows/overview.md) - Een workflow toepassen op een pagina
-* [**Versie**](/help/sites-cloud/authoring/sites-console/page-versions.md) - Een versie van een pagina maken
+* [**Werkschema**](/help/sites-cloud/authoring/workflows/overview.md) - pas een werkschema op een pagina toe
+* [**Versie**](/help/sites-cloud/authoring/sites-console/page-versions.md) - creeer een versie van een pagina
 
 ## Sjablonen
 

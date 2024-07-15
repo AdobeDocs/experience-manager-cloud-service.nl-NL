@@ -24,13 +24,13 @@ Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervo
 
 ## Overzicht {#overview}
 
-De Audit van de ervaring is een eigenschap beschikbaar in de pijpleidingen van de Productie van de Plaatsen van de Manager van de Wolk die het plaatsingsproces bevestigt en helpt ervoor zorgen dat de ingevoerde veranderingen:
+De Controle van de ervaring is een eigenschap beschikbaar in de pijpleidingen van de Productie van de Plaatsen van Cloud Manager die het plaatsingsproces bevestigt en helpt ervoor zorgen dat de ingevoerde veranderingen:
 
 1. Voldoe aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, SEO (de Optimalisering van de Motor van het Onderzoek), en PWA (de Progressieve App van het Web).
 
 1. Breng geen regressies aan.
 
-De controle van de ervaring in de Manager van de Wolk zorgt ervoor dat de ervaring van de gebruiker op de plaats van de hoogste normen is.
+De controle van de ervaring in Cloud Manager zorgt ervoor dat de ervaring van de gebruiker op de plaats van de hoogste normen is.
 
 De controleresultaten zijn informatief en staan de plaatsingsmanager toe om de scores en de verandering tussen de huidige en vorige scores te zien. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing werd geïntroduceerd.
 
@@ -42,12 +42,12 @@ Experience Audit wordt aangedreven door Google Lighthouse, een opensource tool u
 
 ## Beschikbaarheid {#availability}
 
-Experience Audit is beschikbaar voor Cloud Manager:
+Er is een Experience Audit beschikbaar voor Cloud Manager:
 
 * Sites-productiepijpleidingen, standaard.
 * Voorkant ontwikkelingspijpleidingen, optioneel.
 
-Zie de [Configuratiesectie](#configuration) voor meer informatie over hoe te om de controle voor de facultatieve milieu&#39;s te vormen.
+Zie de [ sectie van de Configuratie ](#configuration) voor meer informatie over hoe te om de controle voor de facultatieve milieu&#39;s te vormen.
 
 ## Configuratie {#configuration}
 
@@ -57,43 +57,43 @@ U vormt welke pagina&#39;s inbegrepen in de Controle van de Ervaring wanneer u o
 
 1. Afhankelijk van het type van pijpleiding u wenst te vormen, volg de richtingen aan:
 
-   * Een nieuwe toevoegen [productiepijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) als u de wegen wilt bepalen die door de controle moeten worden geëvalueerd.
-   * Een nieuwe toevoegen [niet-productiepijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) als u wenst om de controle op een front-end of ontwikkelings volledig-stapelpijpleiding toe te laten.
-   * Of u kunt [een bestaande pijpleiding bewerken;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) en werkt de bestaande opties bij.
+   * Voeg een nieuwe [ productiepijpleiding toe, ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) als u wenst om de wegen te bepalen die door de controle moeten worden geëvalueerd.
+   * Voeg een nieuwe [ niet-productiepijplijn toe, ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) als u wenst om de controle op een front-end of ontwikkelings volledig-stapelpijpleiding toe te laten.
+   * Of u kunt [ een bestaande pijpleiding uitgeven, ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) en de bestaande opties bijwerken.
 
-1. Als u toevoegt of een niet productiepijplijn uitgeeft waarvoor u de Controle van de Ervaring wilt gebruiken, moet u selecteren **Experience Audit** Selectievakje op de **Broncode** tab.
+1. Als u toevoegt of een niet-productiepijplijn uitgeeft waarvoor u de Controle van de Ervaring wilt gebruiken, moet u **checkbox van de Controle van de Ervaring {op het** Source Code **tabel selecteren.**
 
-   ![Ervaring controleren inschakelen](assets/experience-audit-enable.jpg)
+   ![ toelatend de Controle van de Ervaring ](assets/experience-audit-enable.jpg)
 
    * Dit is alleen nodig voor niet-productiepijpleidingen.
-   * De **Experience Audit** wordt weergegeven wanneer het selectievakje is ingeschakeld.
+   * Het **lusje van de Controle van de Ervaring** verschijnt wanneer checkbox wordt geselecteerd.
 
-1. Voor zowel productie als niet productie pijpleidingen, bepaalt u de wegen die in de Controle van de Ervaring op moeten worden omvat **Experience Audit** tab.
+1. Voor zowel productie als niet productiepijpleidingen, bepaalt u de wegen die in de Controle van de Ervaring op de **Controle van de Ervaring** tabel moeten worden omvat.
 
    * Pagina-paden moeten beginnen met `/` en zijn relatief ten opzichte van uw site.
-   * Als uw site bijvoorbeeld `wknd.site` en zou graag `https://wknd.site/us/en/about-us.html` Voer in de Experience Audit het pad in `/us/en/about-us.html`.
+   * Als uw site bijvoorbeeld `wknd.site` is en u `https://wknd.site/us/en/about-us.html` wilt opnemen in de Experience Audit, voert u het pad in `/us/en/about-us.html` .
 
-   ![Een pad definiëren voor de Experience Audit](assets/experience-audit-add-page.png)
+   ![ die een weg voor de Controle van de Ervaring bepalen ](assets/experience-audit-add-page.png)
 
-1. Tik of klik op **Pagina toevoegen** en het pad wordt automatisch ingevuld met het adres van de omgeving en toegevoegd aan de padlijst.
+1. Tik of klik **toevoegen de Pagina** en de weg wordt auto-voltooid met het adres van uw milieu en toegevoegd aan de lijst van wegen.
 
-   ![Pad naar tabel opslaan](assets/experience-audit-page-added.png)
+   ![ het Opslaan weg aan de lijst ](assets/experience-audit-page-added.png)
 
 1. U kunt paden naar wens toevoegen door de vorige twee stappen te herhalen.
 
    * U kunt maximaal 25 paden toevoegen.
    * Als u geen paden definieert, wordt de homepage van de site standaard opgenomen in de Experience Audit.
 
-1. Klikken **Opslaan** om uw pijpleiding te redden.
+1. Klik **sparen** om uw pijpleiding te bewaren.
 
 ## Werken met de resultaten van Experience Audit {#understanding-experience-audit-results}
 
-De Audit van de ervaring verstrekt geaggregeerde en gedetailleerde testresultaten op paginaniveau via [uitvoeringspagina van productiepijplijn](/help/implementing/cloud-manager/deploy-code.md).
+De Controle van de ervaring verstrekt geaggregeerde en gedetailleerde op paginaniveau testresultaten via de [ pagina van de de uitvoeringspijplijn van de productiepijplijn ](/help/implementing/cloud-manager/deploy-code.md).
 
 * Met statistische gegevens worden de gemiddelde scores op de pagina&#39;s gemeten die zijn gecontroleerd op prestaties, toegankelijkheid, aanbevolen procedures, SEO (Search Engine Optimization).
 * Afzonderlijke scores op paginaniveau zijn ook beschikbaar via de neerwaartse boor.
 * Nadere gegevens over de scores zijn beschikbaar om de resultaten van de afzonderlijke tests te bekijken, samen met aanwijzingen voor het verhelpen van eventuele problemen die zijn vastgesteld.
-* Een geschiedenis van de testresultaten wordt voortgeduurd binnen de Manager van de Wolk om te bepalen als de veranderingen die in de pijpleiding worden geïntroduceerd om het even welke regressies van de vorige looppas omvatten.
+* Een geschiedenis van de testresultaten wordt voortgeduurd binnen Cloud Manager om te bepalen als de veranderingen die in de pijpleiding worden geïntroduceerd om het even welke regressies van de vorige looppas omvatten.
 
 ### Samengevoegde scores {#aggregate-scores}
 
@@ -103,15 +103,15 @@ Er is een score voor het geaggregeerde niveau voor elk type test, zoals prestati
 
 De metrische wijziging kan een van de volgende waarden hebben.
 
-* **Positieve waarde** - De pagina&#39;s zijn verbeterd ten opzichte van de geselecteerde test sinds de laatste productiepijpleiding.
+* **Positieve waarde** - de pagina&#39;s zijn op de geselecteerde test sinds de laatste looppas van de productiepijpleiding verbeterd.
 
-* **Negatieve waarde** - de pagina&#39;s zijn teruggelopen op de geselecteerde test sinds de laatste productiepijpleiding.
+* **Negatieve waarde** - de pagina&#39;s zijn op de geselecteerde test sinds de laatste looppas van de productiepijpleiding opnieuw gedrukt.
 
-* **Geen wijziging** - De pagina&#39;s hebben hetzelfde gescand sinds de laatste productiepijpleiding.
+* **Geen Verandering** - de pagina&#39;s hebben het zelfde sinds de laatste looppas van de productiepijplijn gescoord.
 
-* **NVT** - Er was geen vorige score beschikbaar om te vergelijken.
+* **n.v.t.** - Er was geen vorige beschikbare score om te vergelijken.
 
-![Resultaten van controle door ervaring](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+![ de resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
 ### Scores op paginaniveau {#page-level-scores}
 
@@ -119,4 +119,4 @@ Door in een van de tests te boren, is meer gedetailleerde paginaniveau-scoring b
 
 Als u op de details van een afzonderlijke pagina klikt, krijgt u informatie over de elementen van de pagina die zijn geëvalueerd en kunt u aangeven wat de problemen zijn als er mogelijkheden voor verbetering zijn gevonden.
 
-![Scores op paginaniveau](/help/implementing/cloud-manager/assets/exp-audit-2.png)
+![ pagina-vlakke scores ](/help/implementing/cloud-manager/assets/exp-audit-2.png)

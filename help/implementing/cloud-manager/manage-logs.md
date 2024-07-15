@@ -1,6 +1,6 @@
 ---
 title: Logbestanden openen en beheren
-description: Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
+description: Leer hoe u logbestanden kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # Logbestanden openen en beheren {#manage-logs}
 
-Leer hoe u logboeken kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
+Leer hoe u logbestanden kunt openen en beheren om uw ontwikkelingsproces in AEM as a Cloud Service te ondersteunen.
 
-U kunt een lijst met beschikbare logbestanden voor de geselecteerde omgeving openen met de opdracht **Omgevingen** kaart van **Overzicht** pagina of pagina Omgevingsdetails.
+U kunt tot een lijst van beschikbare logboekdossiers voor het geselecteerde milieu toegang hebben gebruikend de **kaart van Milieu** van de **pagina van het Overzicht** of van de Details van het Milieu pagina.
 
 Logboeken worden zeven dagen bewaard.
 
@@ -25,29 +25,29 @@ Logboeken worden zeven dagen bewaard.
 
 Ga als volgt te werk om logbestanden te downloaden:
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** -console, selecteert u het programma.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Ga naar de **Omgevingen** kaart van **Overzicht** pagina.
+1. Navigeer aan de **kaart van Milieu&#39;s** van de **pagina van het Overzicht**.
 
-1. Selecteren **Logbestanden downloaden** in het ovaalmenu.
+1. Selecteer **Logboeken van de Download** van het ellipsmenu.
 
-   ![Menu-item voor logbestanden downloaden](assets/download-logs1.png)
+   ![ Logboekmenupunt van de Download logboeken ](assets/download-logs1.png)
 
-1. In de **Logbestanden downloaden** selecteert u de gewenste **Service** in het keuzemenu
+1. In de **Logboeken van de Download** dialoog, selecteer de aangewezen **Dienst** van het drop-down menu
 
-   ![Het dialoogvenster Logbestanden downloaden](assets/download-preview.png)
+   ![ de dialoog van Logboeken van de Download ](assets/download-preview.png)
 
-   In geval van [Aanvullende publicatieregio&#39;s](/help/operations/additional-publish-regions.md) zijn ingeschakeld voor uw omgeving, kunt u elk gebied selecteren en de bijbehorende logbestanden afzonderlijk downloaden, zoals hieronder wordt weergegeven:
+   In het geval dat [ de Extra Gebieden van Publish ](/help/operations/additional-publish-regions.md) voor uw milieu worden toegelaten, zult u elk gebied kunnen selecteren en zijn logboeken afzonderlijk downloaden, zoals hieronder getoond:
 
-   ![Logbestanden downloaden voor extra publicatiegebieden](assets/download-publish-region-logs.png)
+   ![ Logboeken van de Download voor extra publiceer gebieden ](assets/download-publish-region-logs.png)
 
 1. Nadat u de service hebt geselecteerd, klikt u op het downloadpictogram naast het logbestand dat u wilt ophalen.
 
-U kunt uw logbestanden ook openen via het dialoogvenster **Omgevingen** pagina.
+U kunt tot uw logboeken van de **pagina van Milieu {ook toegang hebben.**
 
-![Logbestanden van het scherm Environment](assets/download-logs.png)
+![ Logs van het scherm van Milieu&#39;s ](assets/download-logs.png)
 
 ## Logbestanden via API {#logs-through-api}
 
@@ -92,14 +92,14 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Uitchecken [deze videobron](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) voor meer informatie over foutopsporing AEM as a Cloud Service.
+>Controle uit [ dit videomiddel ](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) om meer over het zuiveren van AEM as a Cloud Service te leren.
 
-Zie de volgende aanvullende bronnen voor meer informatie over de API en Adobe I/O CLI van Cloud Manager:
+Zie de volgende aanvullende bronnen voor meer informatie over de Cloud Manager API en de Adobe I/O CLI:
 
-* [Documentatie voor API voor cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
-* [ADOBE I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [ Cloud Manager API Documentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [ Adobe I/O CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 Zie de volgende aanvullende bronnen voor meer informatie over logbestanden in AEM as a Cloud Service:
 
-* [Cloud 5 AEM logbestanden](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
-* [Foutopsporing AEM as a Cloud Service met logbestanden](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
+* [ Wolk 5 AEM Logdossiers ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [ het Zuiveren AEM as a Cloud Service gebruikend logboeken ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)

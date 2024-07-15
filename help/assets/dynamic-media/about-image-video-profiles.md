@@ -21,18 +21,18 @@ In Dynamic Media kunt u twee typen profielen maken, die in detail worden besprok
 * [Dynamic Media-afbeeldingsprofielen](/help/assets/dynamic-media/image-profiles.md)
 * [Dynamic Media-videoprofielen](/help/assets/dynamic-media/video-profiles.md)
 
-Zie ook [Metagegevensprofielen](/help/assets/metadata-profiles.md).
+Zie ook {de profielen van 0} Meta-gegevens ](/help/assets/metadata-profiles.md).[
 
 U moet beheerdersrechten hebben om Dynamic Media Image Profiles of Dynamic Media Video Profiles te maken, te bewerken en te verwijderen.
 
 Nadat u een afbeeldingsprofiel of videoprofiel hebt gemaakt, wijst u dit toe aan een of meer mappen die u gebruikt voor nieuw geüploade Dynamic Media-elementen.
 
-Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](/help/assets/organize-assets.md).
+Zie ook [ Beste praktijken voor het Organiseren van uw Digitale Assets voor het gebruiken van Profielen van de Verwerking ](/help/assets/organize-assets.md).
 
 
 >[!NOTE]
 >
->Elementen die u van de ene map naar de andere verplaatst, worden niet opnieuw verwerkt. Stel dat u Map 1 hebt waaraan profiel A is toegewezen en Map 2 waaraan profiel B is toegewezen. Als u elementen verplaatst van map 1 naar map 2, behouden de verplaatste elementen hun oorspronkelijke verwerking van map 1.
+>Assets die u van de ene map naar de andere verplaatst, wordt niet opnieuw verwerkt. Stel dat u Map 1 hebt waaraan profiel A is toegewezen en Map 2 waaraan profiel B is toegewezen. Als u elementen verplaatst van map 1 naar map 2, behouden de verplaatste elementen hun oorspronkelijke verwerking van map 1.
 >
 >Hetzelfde geldt ook wanneer u elementen verplaatst tussen twee mappen waaraan hetzelfde profiel is toegewezen.
 
@@ -40,17 +40,17 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor he
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand Dynamic Media-afbeeldingsprofiel heeft of een Dynamic Media-videoprofiel dat u later hebt gewijzigd.
 
-Stel dat u een Dynamic Media-afbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Op alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het afbeeldingsprofiel. Nu hoeft u de elementen niet meer opnieuw naar de map te selecteren en te uploaden, maar hoeft u gewoon de *Dynamic Media opnieuw verwerken* workflow.
+Stel dat u een Dynamic Media-afbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Op alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het afbeeldingsprofiel. Nu, in plaats van het moeten en de activa aan de omslag over opnieuw selecteren en uploaden, stelt u eenvoudig het *Dynamic Media in werking opnieuw verwerken* werkschema.
 
 U kunt de herverwerkingsworkflow uitvoeren op een element waarvoor de verwerking de eerste keer is mislukt. Zelfs als u geen afbeeldingsprofiel of videoprofiel hebt bewerkt of als u al een afbeeldingsprofiel of videoprofiel hebt toegepast, kunt u de workflow voor het opnieuw verwerken van een map met elementen altijd uitvoeren.
 
-U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u de _Dynamic Media opnieuw verwerken_ In een map worden de middelen gegroepeerd in batches en vervolgens naar de Dynamic Media-server verzonden voor verwerking. Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op [!DNL Adobe Experience Manager]. Als de partij groot is, kunt u een vertraging in verwerking ervaren. Als de batch te klein is, kan dit ook leiden tot te veel roundtrips op de Dynamic Media-server.
+U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u het _Dynamic Media Reprocess_ werkschema op een omslag in werking stelt, worden de activa gegroepeerd in partijen, dan verzonden naar de server van Dynamic Media voor verwerking. Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op [!DNL Adobe Experience Manager] . Als de partij groot is, kunt u een vertraging in verwerking ervaren. Als de batch te klein is, kan dit ook leiden tot te veel roundtrips op de Dynamic Media-server.
 
-Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjusting-load).
+Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
 
 >[!NOTE]
 >
->Als u een grote migratie van middelen uitvoert van Dynamic Media Classic naar [!DNL Experience Manager], schakelt u de migratiereplicatieagent in op de Dynamic Media-server. Wanneer de migratie volledig is, zorg ervoor u de agent onbruikbaar maakt.
+>Als u een grote migratie van middelen van Dynamic Media Classic naar [!DNL Experience Manager] uitvoert, schakelt u de Migratie-replicator op de Dynamic Media-server in. Wanneer de migratie volledig is, zorg ervoor u de agent onbruikbaar maakt.
 >
 >De Migratie-publicatieagent moet zijn uitgeschakeld op de Dynamic Media-server, zodat de workflow voor opnieuw verwerken naar behoren functioneert.
 
@@ -60,9 +60,9 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**Dynamic Media-elementen in een map opnieuw verwerken:**
+**om de activa van Dynamic Media in een omslag opnieuw te verwerken:**
 
-1. In [!DNL Experience Manager]Navigeer vanaf de elementenpagina naar een map met elementen waaraan een afbeeldingsprofiel of een videoprofiel is toegewezen en waarvoor u de opdracht **Dynamic Media opnieuw verwerken** workflow.
+1. In [!DNL Experience Manager], van de pagina van Assets, navigeer aan een activa omslag die een Profiel van het Beeld of een VideoProfiel heeft dat aan het wordt toegewezen en waarvoor u het **Dynamic Media opnieuw verwerken** werkschema wilt toepassen.
 
    Mappen waaraan een afbeeldingsprofiel of videoprofiel is toegewezen, krijgen de naam van het profiel direct onder de mapnaam in de Kaartweergave.
 
@@ -72,53 +72,53 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Als er een of meer submappen met elementen in de geselecteerde hoofdmap staan, worden alle elementen in de maphiërarchie opnieuw verwerkt.
    * U kunt deze workflow het beste niet uitvoeren in een mappenhiërarchie met meer dan 1000 elementen.
 
-1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de pagina de optie **[!UICONTROL Timeline]**.
-1. Vlak de linkerbenedenhoek van de pagina, rechts van de pagina [!UICONTROL Comment] veld, selecteer het pictogram van het karaat ( **^** ).
+1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de pagina de optie **[!UICONTROL Timeline]** .
+1. Selecteer rechts naast de linkerbenedenhoek van de pagina, rechts van het veld [!UICONTROL Comment] , het karatpictogram ( **^** ).
 
-   ![Screenshot van middelen in Experience Manager met een geselecteerde map met elementen, de vervolgkeuzelijst Tijdlijn gemarkeerd, de knop Workflow starten gemarkeerd en het karatpictogram rechts van het veld Opmerking gemarkeerd.](/help/assets/dynamic-media/assets/reprocess-assets1.png).
+   ![ Schermafbeelding van Assets in Experience Manager die een geselecteerde omslag van activa tonen, benadrukte de drop-down lijst van de Chronologie, benadrukte de knoop van het Werkschema van het Begin, en het karatpictogram rechts van het gebied van de Commentaar ook ](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
-1. Selecteren **[!UICONTROL Start Workflow]**.
-1. Van de **[!UICONTROL Start Workflow]** vervolgkeuzelijst kiest u **[!UICONTROL Dynamic Media Reprocess]**.
-1. (Optioneel) In het dialoogvenster **Titel van workflow invoeren** in het tekstveld een naam voor de workflow invoeren. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
+1. Selecteer **[!UICONTROL Start Workflow]** .
+1. Kies **[!UICONTROL Dynamic Media Reprocess]** in de vervolgkeuzelijst **[!UICONTROL Start Workflow]** .
+1. (Facultatief) op **ga titel van werkschemagebied** in, ga een naam voor het werkschema in. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
-   ![Screenshot van de tijdlijngebruikersinterface met &quot;Dynamic Media Reprocess&quot; geselecteerd in de vervolgkeuzelijst Start Workflow en de knop Start gemarkeerd](/help/assets/dynamic-media/assets/reprocess-assets2.png).
+   ![ Schermafbeelding van het gebruikersinterface van de Chronologie met &quot;Dynamic Media Reprocess&quot;die van de drop-down lijst van het Werkschema van het Begin wordt geselecteerd, en de knoop van het Begin benadrukte ](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
-1. Selecteren **[!UICONTROL Start]** selecteert u vervolgens **[!UICONTROL Confirm]**.
+1. Selecteer **[!UICONTROL Start]** en selecteer vervolgens **[!UICONTROL Confirm]** .
 
-   Om de werkstroom te controleren of zijn vooruitgang te controleren, van [!DNL Experience Manager] hoofdconsolepagina, selecteer **[!UICONTROL Tools > Workflow]**. Selecteer een workflow op de pagina Workflowinstanties. Selecteer in de menubalk de optie **[!UICONTROL Open History]**. U kunt een geselecteerde workflow ook beëindigen, opschorten of de naam ervan wijzigen vanuit dezelfde pagina Workflowinstanties.
+   Als u de workflow wilt controleren of de voortgang wilt controleren, selecteert u **[!UICONTROL Tools > Workflow]** op de hoofdconsolepagina van [!DNL Experience Manager] . Selecteer een workflow op de pagina Workflowinstanties. Selecteer **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, opschorten of de naam ervan wijzigen vanuit dezelfde pagina Workflowinstanties.
 
 ### De batchgrootte van de workflow voor opnieuw verwerken aanpassen (optioneel) {#adjusting-load}
 
-(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partij wordt bepaald door de gemiddelde omvang van de activa en de MIME-typen van activa waarop het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één opwerkingstaak hebt. De verwerkingsbanner blijft dus ingeschakeld [!DNL Experience Manager] activa voor een langere tijd. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot enkele 100, maar nooit meer dan 1000. Als de gemiddelde bestandsgrootte honderden megabytes is, wordt u door de Adobe aangeraden de batch tot 10 te verkleinen.
+(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partij wordt bepaald door de gemiddelde omvang van de activa en de MIME-typen van activa waarop het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één opwerkingstaak hebt. De verwerkingsbanner blijft dus langer op [!DNL Experience Manager] -elementen staan. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot enkele 100, maar nooit meer dan 1000. Als de gemiddelde bestandsgrootte honderden megabytes is, wordt u door de Adobe aangeraden de batch tot 10 te verkleinen.
 
-**U kunt de batchgrootte van de workflow voor opnieuw verwerken desgewenst aanpassen:**
+**om naar keuze de partijgrootte van het herproceswerkschema aan te passen:**
 
-1. In [!DNL Experience Manager], selecteert u **[!UICONTROL Adobe Experience Manager]** om tot de globale navigatieconsole toegang te hebben, dan selecteer **[!UICONTROL Tools]** (hamer) pictogram > **[!UICONTROL Workflow > Models]**.
-1. Selecteer op de pagina Workflowmodellen in Kaartweergave of Lijstweergave de optie **[!UICONTROL Dynamic Media Reprocess]**.
+1. Selecteer in [!DNL Experience Manager] **[!UICONTROL Adobe Experience Manager]** om toegang te krijgen tot de algemene navigatieconsole en selecteer vervolgens het pictogram **[!UICONTROL Tools]** (hamer) > **[!UICONTROL Workflow > Models]** .
+1. Selecteer **[!UICONTROL Dynamic Media Reprocess]** op de pagina Workflowmodellen in Kaartweergave of Lijstweergave.
 
-   ![Screenshot van de pagina Workflowmodellen met de workflow &quot;Dynamic Media Reprocess&quot; geselecteerd in de kaartweergave van de Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
+   ![ Schermafbeelding van de pagina van de Modellen van het Werkschema met het werkschema van het Verwerking van Dynamic Media dat in de mening van de Kaart van Experience Manager ](/help/assets/dynamic-media/assets/reprocess-assets7.png) wordt geselecteerd.
 
-1. Selecteer in de werkbalk de optie **[!UICONTROL Edit]**. Een nieuw browsertabblad opent de pagina Dynamic Media Reprocess workflowmodel.
-1. Selecteer in de rechterbovenhoek van de Dynamic Media Reprocess-workflowpagina de optie **[!UICONTROL Edit]** om de workflow te &quot;ontgrendelen&quot;.
-1. Selecteer in de workflow de Scene7-component Batch uploaden om de werkbalk te openen en selecteer vervolgens **[!UICONTROL Configure]** in de werkbalk.
+1. Selecteer **[!UICONTROL Edit]** in de werkbalk. Een nieuw browsertabblad opent de pagina Dynamic Media Reprocess workflowmodel.
+1. Selecteer in de rechterbovenhoek van de Dynamic Media Reprocess workflowpagina **[!UICONTROL Edit]** om de workflow te &quot;ontgrendelen&quot;.
+1. Selecteer in de workflow de component Scene7 Batch Upload (-batch uploaden) om de werkbalk te openen en selecteer vervolgens **[!UICONTROL Configure]** op de werkbalk.
 
-   ![Screenshot van de component &quot;Scene7 Batch Upload&quot; op de pagina &quot;Dynamic Media Reprocess&quot; met de muisaanwijzer boven het pictogram &quot;Configure&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
+   ![ Schermafbeelding van de component &quot;De Partij van Scene7 uploadt&quot;op de pagina &quot;Dynamic Media opnieuw verwerken&quot;met de muiswijzer die over het &quot;vormt&quot;pictogram ](/help/assets/dynamic-media/assets/reprocess-assets8.png) beweegt.
 
-1. Op de **[!UICONTROL Batch Upload to Scene7—Step Properties]** stelt u het volgende in:
-   * In de **[!UICONTROL Title]** en **[!UICONTROL Description]** tekstvelden, voer desgewenst een nieuwe titel en beschrijving voor de taak in.
-   * Selecteren **[!UICONTROL Handler Advance]** als uw manager aan de volgende stap zal verdergaan.
-   * In de **[!UICONTROL Timeout]** in. Voer de time-out van het externe proces (seconden) in.
-   * In de **[!UICONTROL Period]** Voer een opiniepeilinterval (seconden) in om te testen of het externe proces is voltooid.
-   * In de **[!UICONTROL Batch field]** Voer het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor batchverwerking van een Dynamic Media-server.
-   * Selecteren **[!UICONTROL Advance on timeout]** als u verder wilt gaan wanneer de time-out is bereikt. Schakel deze optie uit als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
+1. Stel in het dialoogvenster **[!UICONTROL Batch Upload to Scene7—Step Properties]** het volgende in:
+   * Voer in de tekstvelden **[!UICONTROL Title]** en **[!UICONTROL Description]** desgewenst een nieuwe titel en beschrijving in voor de taak.
+   * Selecteer **[!UICONTROL Handler Advance]** als de handler de volgende stap uitvoert.
+   * Voer in het veld **[!UICONTROL Timeout]** de time-out van het externe proces (seconden) in.
+   * Voer in het veld **[!UICONTROL Period]** een pollinginterval (seconden) in om te testen of het externe proces is voltooid.
+   * Voer in de **[!UICONTROL Batch field]** het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor de batchverwerking van een Dynamic Media-server.
+   * Selecteer **[!UICONTROL Advance on timeout]** als u wilt doorgaan wanneer de time-out is bereikt. Schakel deze optie uit als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
 
-   ![Screenshot van de pagina &quot;Batch Upload to Scene7 - Step Properties&quot;](/help/assets/dynamic-media/assets/reprocess-assets3.png).
+   ![ Schermafbeelding van de pagina &quot;Batch uploaden naar Scene7 - Step Properties&quot; ](/help/assets/dynamic-media/assets/reprocess-assets3.png) .
 
-1. In de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialoogvenster selecteert u **[!UICONTROL Done]**.
+1. Selecteer **[!UICONTROL Done]** in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** .
 
-1. Selecteer in de rechterbovenhoek van de pagina Dynamic Media Reprocess workflowmodel de optie **[!UICONTROL Sync]**. Wanneer u **[!UICONTROL Synced]**, is het workflowruntimemodel gesynchroniseerd en klaar om elementen in een map opnieuw te verwerken.
+1. Selecteer **[!UICONTROL Sync]** in de rechterbovenhoek van de pagina Dynamic Media Reprocess workflowmodel. Wanneer u **[!UICONTROL Synced]** ziet, wordt het runtimemodel van de workflow gesynchroniseerd en kunt u elementen in een map opnieuw verwerken.
 
-   ![Screenshot van middelen in Experience Manager met een geselecteerde map met elementen, de vervolgkeuzelijst Tijdlijn gemarkeerd, de knop Workflow starten gemarkeerd en het karatpictogram rechts van het veld Opmerking gemarkeerd.](/help/assets/dynamic-media/assets/reprocess-assets1.png).
+   ![ Schermafbeelding van Assets in Experience Manager die een geselecteerde omslag van activa tonen, benadrukte de drop-down lijst van de Chronologie, benadrukte de knoop van het Werkschema van het Begin, en het karatpictogram rechts van het gebied van de Commentaar ook ](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Sluit het browsertabblad waarin het workflowmodel voor opnieuw verwerken van Dynamic Media wordt weergegeven.
 

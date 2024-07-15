@@ -15,22 +15,22 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
 ## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 
-* **Probleem**:
-   * U hebt wijzigingen aangebracht in een pagina en de pagina gepubliceerd naar de publicatiesite, maar de *oud* Er wordt nog steeds een versie van de pagina weergegeven op de publicatiesite.
+* **Uitgave**:
+   * U hebt veranderingen in een pagina aangebracht en de pagina aan publiceren plaats gepubliceerd, maar de *oude* versie van de pagina wordt nog getoond op publiceren plaats.
 * **Reden**:
-   * Dit kan verscheidene oorzaken hebben, meestal het geheime voorgeheugen (of uw lokale browser of de Verzender), hoewel het soms een kwestie met de replicatierij kan zijn.
+   * Dit kan verschillende oorzaken hebben, meestal het geheime voorgeheugen (of uw lokale browser of Dispatcher), hoewel het soms een kwestie met de replicatierij kan zijn.
 * **Oplossingen**:
    * Hier zijn verschillende mogelijkheden:
    * Controleer of de pagina correct is gerepliceerd. Controleer de paginastatus en, indien nodig, de status van de replicatiewachtrij.
    * Wis de cache in uw lokale browser en open de pagina opnieuw.
-   * Toevoegen `?` tot het einde van de pagina-URL. Bijvoorbeeld:
+   * Voeg `?` toe aan het einde van de pagina-URL. Bijvoorbeeld:
       * `http://<host>:<port>/sites.html/content?`
-      * Hiermee wordt de pagina rechtstreeks vanaf AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
+      * Hierdoor wordt de pagina rechtstreeks vanaf AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de Dispatcher-cache moet wissen.
    * Neem contact op met uw systeembeheerder als er problemen zijn met de replicatiestijden.
 
 ## Componenthandelingen niet zichtbaar op werkbalk {#component-actions-not-visible-on-toolbar}
 
-* **Probleem**:
+* **Uitgave**:
    * Het volledige bereik van toepasselijke componentacties is niet zichtbaar wanneer u een inhoudspagina bewerkt in de auteursomgeving.
 * **Reden**:
    * In zeldzame gevallen kan een eerdere actie gevolgen hebben voor de werkbalk.

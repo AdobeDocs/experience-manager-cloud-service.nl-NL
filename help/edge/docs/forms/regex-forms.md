@@ -1,6 +1,6 @@
 ---
-title: AEM Forms Edge Delivery Services veelgebruikte regex-expressies voor validatie van formuliervelden
-description: AEM Forms Edge Delivery Services veelgebruikte regex-expressies voor validatie van formuliervelden
+title: AEM Forms Edge Delivery Services gebruikt vaak regex-expressies voor validatie van formuliervelden
+description: AEM Forms Edge Delivery Services gebruikt vaak regex-expressies voor validatie van formuliervelden
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true

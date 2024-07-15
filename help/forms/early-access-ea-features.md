@@ -1,6 +1,6 @@
 ---
-title: Huidige functies voor vroege toegang van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-description: Huidige functies voor vroege toegang van [!DNL Adobe Experience Manager Forms] as a Cloud Service.
+title: Huidige Early eigenschappen van de Toegang van  [!DNL Adobe Experience Manager Forms]  as a Cloud Service.
+description: Huidige Early eigenschappen van de Toegang van  [!DNL Adobe Experience Manager Forms]  as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
@@ -23,7 +23,7 @@ Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusiev
 
 ## Hoe kan ik deelnemen aan het programma Vroege toegang?
 
-Als u in het aansluiten bij ons programma van de Vroege Toegang voor om het even welke innovatie van de Vroege Toegang geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  om toegang aan te vragen. U kunt toegang vragen tot alle of tot specifieke innovaties.
+Als u in het aansluiten van bij ons programma van de Vroege Toegang voor om het even welke innovatie van de Vroege Toegang geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
 ## Innovaties voor vroege toegang
 
@@ -31,19 +31,19 @@ Als u in het aansluiten bij ons programma van de Vroege Toegang voor om het even
 
 Generative AI voor Adaptive Forms biedt een heel nieuw niveau van kracht en maakt het ontwikkelen van formulieren eenvoudiger. Met behulp van intelligente AI-functies kunt u sneller dan ooit betere formulieren maken.
 
-![Generative AI Assistant, Adaptive Forms](/help/forms/assets/generative-ai-assistant.png)
+![ Generatieve AI Medewerker, Aangepaste Forms ](/help/forms/assets/generative-ai-assistant.png)
 
 De beschikbare Generative AI-mogelijkheden zijn:
 
-* **AI Assistant voor productquery&#39;s**: Ontvang directe antwoorden op AEM formuliergerelateerde vragen. Onze AI-assistent fungeert als uw eigen persoonlijke kennisbasis en biedt direct binnen het platform inzichtelijke begeleiding en aanbevelingen.
+* **AI Medewerker voor de Vragen van het Product**: Krijg onmiddellijke antwoorden op uw AEM vorm-verwante vragen. Onze AI-assistent fungeert als uw eigen persoonlijke kennisbasis en biedt direct binnen het platform inzichtelijke begeleiding en aanbevelingen.
 
-* **Adaptief genereren van formulieren**: U kunt eenvoudig volledige formulieren maken met algemene AI-prompt. Onze generatieve AI genereert automatisch gebruikersvriendelijke formulieren die keuzemogelijkheden verkleinen en de ervaring aanpassen.
+* **Aangepaste Generatie van de Vorm**: Creëer gemakkelijk volledige vormen met Generatieve Herinneringen AI. Onze generatieve AI genereert automatisch gebruikersvriendelijke formulieren die keuzemogelijkheden verkleinen en de ervaring aanpassen.
 
-* **Deelvenstergeneratie voor Forms**: Laat AI het zware tillen doen. Vooraf samengestelde formulierdeelvensters genereren die zijn afgestemd op specifieke behoeften voor gegevensverzameling. U kunt bijvoorbeeld secties genereren voor het verzamelen van betalingsgegevens, voorkeuren van klanten of reisgegevens. Bespaar tijd en zorg voor consistentie met vooraf gedefinieerde lay-outs en functies.
+* **de Generatie van het Comité voor Forms**: Laat AI de zware het heffen doen. Vooraf samengestelde formulierdeelvensters genereren die zijn afgestemd op specifieke behoeften voor gegevensverzameling. U kunt bijvoorbeeld secties genereren voor het verzamelen van betalingsgegevens, voorkeuren van klanten of reisgegevens. Bespaar tijd en zorg voor consistentie met vooraf gedefinieerde lay-outs en functies.
 
-* **Formulierindelingen wijzigen**: Experimenteer met verschillende lay-outs en ontwerpen met behulp van generatieve AI-prompt. Probeer verschillende indelingen, zoals de wizard of de tabsgewijze weergave, uit om te zien wat het beste bij uw formulier past. Gebruik Generative AI-herinneringen om uw formulieren te optimaliseren voor een mobiel reactievermogen en visueel aantrekkelijke formulieren te maken waar gebruikers van houden.
+* **Veranderend de Lay-outs van de Vorm**: Experimenteer met verschillende lay-outs en ontwerpen gebruikend Generatieve Herinneringen AI. Probeer verschillende indelingen, zoals de wizard of de tabsgewijze weergave, uit om te zien wat het beste bij uw formulier past. Gebruik Generative AI-herinneringen om uw formulieren te optimaliseren voor een mobiel reactievermogen en visueel aantrekkelijke formulieren te maken waar gebruikers van houden.
 
-* **Verzendhandeling configureren**: Gebruik Generative AI-instructies om een verzendactie voor uw formulier moeiteloos te configureren. Maak een keuze uit een bibliotheek met vooraf gebouwde verzendacties of uit een lijst met aangepaste verzendacties die zijn gemaakt en geïmplementeerd door uw eigen ontwikkelingsteam.
+* **vormt Verzenden Actie**: De Generatieve herinneringen van AI van het gebruik om een voorleggingsactie voor uw vorm moeiteloos te vormen. Maak een keuze uit een bibliotheek met vooraf gebouwde verzendacties of uit een lijst met aangepaste verzendacties die zijn gemaakt en geïmplementeerd door uw eigen ontwikkelingsteam.
 
 
 ### AEM Forms Workfront Fusion Connector
@@ -52,7 +52,7 @@ De AEM Forms Workfront Fusion Connector maakt naadloze integratie mogelijk tusse
 
 Met de AEM Forms Workfront Fusion Connector kunt u workflows ontwerpen die automatisch worden geactiveerd na verzending van een adaptief formulier. Stel bijvoorbeeld dat een workflow wordt gestart om een specifieke persoon de taak te geven de ingediende gegevens te beoordelen, zodat een aanvraag kan worden goedgekeurd of afgewezen op basis van de informatie die via het adaptieve formulier is vastgelegd. Deze gestroomlijnde integratie verbetert de efficiëntie en brengt een nieuw niveau van automatisering aan uw werkschemaprocessen.
 
-Klaar om te beginnen? De [Een adaptief formulier verzenden naar Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) de documentatie verstrekt een geleidelijke gids om de innovatie te gebruiken.
+Klaar om te beginnen? [ voorlegt een AanpassingsVorm aan de documentatie van de Fusie van Adobe Workfront ](/help/forms/submit-adaptive-form-to-workfront-fusion.md) verstrekt een geleidelijke gids om de innovatie te gebruiken.
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
@@ -62,13 +62,13 @@ Met de Conversational Forms-innovatie kunt u communiceren met formulieren als ee
 
 U kunt de component Conversational Forms gewoon naar uw AEM Sites-pagina slepen en op de startpagina plaatsen. Er is geen codering vereist, dus iedereen kan snel aantrekkelijke en gebruiksvriendelijke Forms-ervaringen voor gesprekken maken.
 
-![Coversation Forms, Chatbot Style Filling, Adaptive Forms](/help/forms/assets/conversational-forms.png)
+![ Coversation Forms, de Vulling van de Vorm van de Stijl van Chatbot, Aangepaste Forms ](/help/forms/assets/conversational-forms.png)
 
 Hier is wat meer Conversational Forms brengt:
 
-* **Eenvoudige formulierdetectie**: Zoek de exacte vorm die u nodig hebt via een duidelijke, conversationele interface, op elke AEM Sites-pagina.
-* **Chatstijl aanvullen**: Beantwoord vragen één voor één, net als chatten met een virtuele assistent. Het is snel, intuïtief en voelt als een gesprek.
-* **Voorvertoning voordat u verzendt**: Controleer alles voordat u begint met verzenden. Bekijk een voorvertoning van het ingevulde formulier voor de nauwkeurigheid en vermijd eventuele fouten van het laatste moment.
+* **Gemakkelijke vormontdekking**: Vind de nauwkeurige vorm die u door een duidelijke, gespreksinterface, op om het even welke pagina van AEM Sites nodig hebt.
+* **Chat-stijl voltooiing**: Beantwoord vragen één tegelijk, enkel als het babbelen met een virtuele medewerker. Het is snel, intuïtief en voelt als een gesprek.
+* **Voorproef alvorens u** voorlegt: Controleer alles alvorens te raken voorlegt. Bekijk een voorvertoning van het ingevulde formulier voor de nauwkeurigheid en vermijd eventuele fouten van het laatste moment.
 
 
 Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaar voor gebruikerservaring.  Verhoog uw betrokkenheid, verminder het aantal gebruikers dat het formulier verlaat en maak interactie met uw website een prettiger ervaring voor iedereen.
@@ -76,7 +76,7 @@ Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaa
 
 ### WYSIWYG Authoring voor Edge Delivery Services
 
-WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren naar Edge Delivery Services. WYSIWYG Authoring biedt alle mogelijkheden van [Authoring op basis van documenten](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een groot aantal aanvullende functies:
+WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren naar Edge Delivery Services. WYSIWYG Authoring biedt alle mogelijkheden van [ op document-gebaseerde Authoring ](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een brede waaier van extra eigenschappen aan:
 
 * Geavanceerde regeleditor voor het maken van complexe logica.
 * Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
@@ -94,7 +94,7 @@ De AEM Forms to Marketo Connector zorgt voor een brug tussen uw webformulieren (
 
 Wanneer iemand een formulier verzendt op uw website die is gemaakt met AEM Adaptive Forms, zorgt de connector ervoor dat de verzonden gegevens automatisch naar Marketo worden verzonden. Hierdoor wordt de noodzaak van handmatige gegevensinvoer weggenomen en wordt het risico op fouten verminderd.
 
-![AEM Form - Marketo Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![ AEM Vorm - de Schakelaar van Marketo ](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 Door het gegevensoverdrachtproces te stroomlijnen, kan de schakelaar u helpen de omzettingspercentages van uw website verbeteren. Door loodgegevens automatisch naar Marketo te verzenden, kunt u ervoor zorgen dat gekwalificeerde leads snel worden ingevoerd in uw verpleegprogramma&#39;s.
 
@@ -109,31 +109,31 @@ Aangepaste Forms kan nu worden weergegeven in een RTL-taal (Right-to-Left), waar
 
 Deze functionaliteit richt zich op talen zoals Arabisch, Hebreeuws en Urdu, die van rechts naar links (RTL) worden geschreven en gelezen, die betere begrip en voltooiingsaantallen voor vormen bevorderen.
 
-![Ondersteuning voor RTL-talen (van rechts naar links)](mobile-responsive.png)
+![ Van rechts naar links (RTL) taalsteun ](mobile-responsive.png)
 
 De RTL-talen (rechts naar links) worden ondersteund in Adaptive Forms:
 
-* **Breidt gebruikersbasis uit**: Bedrijven kunnen nu meer dan 2 miljard mensen bereiken die zich meer vertrouwd voelen met RTL-talen.
+* **breidt gebruikersbasis** uit: De ondernemingen kunnen meer dan 2 miljard mensen nu globaal bereiken die met talen RTL comfortabeler zijn.
 
-* **Lever verbeterde gebruikerservaring**: Forms wordt perfect gerenderd met de natuurlijke tekstdoorloop van rechts naar links, de juiste uitlijning van UI-elementen en intuïtieve lay-outs die de leesgewoonten van de gebruiker weerspiegelen. Dit vermindert de verwarring en verhoogt de voltooiingspercentages.
+* **Lever verbeterde gebruikerservaring**: Forms geeft foutloos met natuurlijke tekststroom van rechts naar links, juiste UI elementgroepering, en intuïtieve lay-outs terug die gebruikerslezingsgewoonten weerspiegelen. Dit vermindert de verwarring en verhoogt de voltooiingspercentages.
 
-* **Mobiele responsieve ervaringen bieden**: Forms blijft op elk apparaat beschikbaar vanwege de inherente mobiele responsiviteit, waardoor een vloeiende ervaring wordt gegarandeerd voor desktops, tablets en smartphones.
+* **Lever mobiele ontvankelijke ervaringen**: Forms blijft toegankelijk op om het even welk apparaat toe te schrijven aan inherente mobiele ontvankelijkheid, die een vlotte ervaring over Desktops, tablets, en smartphones verzekeren.
 
 Over het algemeen biedt RTL-taalondersteuning in Adaptive Forms bedrijven de mogelijkheid om echt wereldwijde formulieren te ontwerpen, zodat ze hun bereik, betrokkenheid en inclusiviteit kunnen vergroten.
 
-Klaar om te beginnen? [Adaptive Forms RTL-documentatie](/help/forms/supporting-new-language-localization-core-components.md) biedt een stapsgewijze gids voor het gebruik van de RTL-innovatie.
+Klaar om te beginnen? [ de Aangepaste documentatie van Forms RTL ](/help/forms/supporting-new-language-localization-core-components.md) verstrekt een geleidelijke gids om de innovatie te gebruiken RTL.
 
 ### Verbeterde methoden voor botbeveiliging
 
 AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te voegen voor twee populaire CAPTCHA-oplossingen: Cloudflare Turnstile en hCaptcha. Dit voegt toe aan de reeds beschikbare Google reCAPTCHA, die gebruikers meer keus en flexibiliteit verleent om hun vormen tegen bots en spam voorlegging te beschermen.
 
-* **Cloudflare Turnstile**: Deze frictionless CAPTCHA verifieert gebruikers door een eenvoudige uitdaging die geen expliciete interactie vereist. De toepassing wordt naadloos geïntegreerd in uw formulieren, waardoor de gebruikerservaring wordt verbeterd.
-* **hCaptcha**: Deze op privacy gerichte CAPTCHA biedt een gebruiksvriendelijk alternatief met focus op de privacy van gegevens. Het is bedoeld om een evenwicht te vinden tussen veiligheid en gebruikerservaring.
-* **Google reCAPTCHA**: AEM Forms blijft zowel reCAPTCHA v2 als reCAPTCHA Enterprise ondersteunen en biedt een betrouwbare en gevestigde oplossing.
+* **de Draai van de Wolk**: Dit frictionless CAPTCHA verifieert gebruikers door een eenvoudige uitdaging die geen expliciete interactie vereist. De toepassing wordt naadloos geïntegreerd in uw formulieren, waardoor de gebruikerservaring wordt verbeterd.
+* **hCaptcha**: Deze privacy-geconcentreerde CAPTCHA biedt een gebruikersvriendelijk alternatief met een nadruk op gegevensprivacy aan. Het is bedoeld om een evenwicht te vinden tussen veiligheid en gebruikerservaring.
+* **Google reCAPTCHA**: AEM Forms blijft zowel reCAPTCHA v2 als reCAPTCHA Onderneming steunen, die een betrouwbare en gevestigde oplossing aanbieden.
 
 Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie bevat gedetailleerde instructies voor elk van deze: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### Doc Assurance-API&#39;s
 
@@ -142,28 +142,28 @@ AEM Forms Doc Assurance API&#39;s zijn een set gereedschappen in de communicatie
 
 Hier volgt een overzicht van wat Doc Assurance API&#39;s kunnen doen:
 
-* **Documenten versleutelen en ontsleutelen**: Protect uw documenten door de inhoud ervan onleesbaar te maken met versleuteling. U hebt controle over de onderdelen van de PDF die u wilt coderen, waaronder het gehele document, de specifieke inhoud, metagegevens of bijlagen.
+* **codeer en decrypteer documenten**: Protect uw documenten door hun inhoud met encryptie onleesbaar te maken. U hebt controle over de onderdelen van de PDF die u wilt coderen, waaronder het gehele document, de specifieke inhoud, metagegevens of bijlagen.
 
-* **Documenten digitaal ondertekenen**: Voeg digitale handtekeningen toe aan uw documenten voor validatie en verificatie zonder knoeien. Dit kan worden gebruikt voor certificeringsdoeleinden of om de integriteit van documenten te garanderen
+* **digitaal ondertekent documenten**: Voeg digitale handtekeningen aan uw documenten voor bevestiging en knoeibestendige controle toe. Dit kan worden gebruikt voor certificeringsdoeleinden of om de integriteit van documenten te garanderen
 
-* **Reader Uw documenten uitbreiden (gebruiksrechten van PDF-documenten toepassen of bewerken)**: Laat uw organisatie toe om interactieve documenten van de PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden.
+* **de Reader breidt uw documenten (pas of geef gebruiksrechten van de documenten van PDF uit)**: Laat uw organisatie toe om interactieve documenten van PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden.
 
   Met de API&#39;s van de Reader Extension (Gebruiksrechten) worden gebruiksrechten toegevoegd aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
 
   Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen ontvangers ingeschakelde activiteiten uitvoeren vanuit Adobe Reader.
 
-Algemeen [Doc Assurance-API&#39;s](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u de beveiliging en compatibiliteit van documenten te verbeteren door een extra controlelaag toe te voegen.
+Globaal, [ de Verzekering APIs van Doc ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u documentveiligheid en naleving verbeteren door een extra laag van controle toe te voegen.
 
 
 ### Forms Service-API&#39;s
 
 Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Deze kan ook worden gebruikt om gegevens te importeren/exporteren naar/van een bestaand interactief PDF-formulier en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
 
-* **Forms renderen**: Genereer een interactief PDF-formulier op basis van een sjabloon die is gemaakt met AEM Forms Designer en eventueel XML-gegevens. Hiermee wordt in feite een optioneel vooraf ingevuld formulier met PDF gemaakt.
+* **teruggevend Forms**: Produceer een interactieve vorm van PDF van een malplaatje dat gebruikend AEM Forms Designer en, naar keuze, de gegevens van XML wordt gecreeerd. Hiermee wordt in feite een optioneel vooraf ingevuld formulier met PDF gemaakt.
 
-* **Gegevens extraheren en importeren**: Importeer gegevens in een bestaand PDF-formulier en extraheer gegevens uit een ingevuld PDF-formulier. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
+* **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
 
-* **Gegevensvalidatie**: - Valideer verzonden gegevens in XDP- of XML-indeling op basis van een sjabloon die is gemaakt met AEM Forms Designer.
+* **Bevestiging van Gegevens**: Valideer voorgelegde gegevens, in formaat XDP of XML, tegen een malplaatje dat gebruikend AEM Forms Designer wordt gecreeerd.
 
 ## Zie ook
 
@@ -179,7 +179,7 @@ Gesprek Forms is meer dan alleen maar een nieuwe look - ze zijn een gamewisselaa
 
 ### WYSIWYG Authoring voor Edge Delivery Services
 
-WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren naar Edge Delivery Services. WYSIWYG Authoring biedt alle mogelijkheden van [Authoring op basis van documenten](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een groot aantal aanvullende functies:
+WYSIWYG Authoring biedt WYSIWYG-interfaces (Universal Editor en Adaptive Forms Editor) voor het maken en publiceren van adaptieve formulieren naar Edge Delivery Services. WYSIWYG Authoring biedt alle mogelijkheden van [ op document-gebaseerde Authoring ](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus een brede waaier van extra eigenschappen aan:
 
 * Geavanceerde regeleditor voor het maken van complexe logica.
 * Uitbreidbaarheid aan de serverzijde voor aangepaste functies.
@@ -197,7 +197,7 @@ De AEM Forms to Marketo Connector zorgt voor een brug tussen uw webformulieren (
 
 Wanneer iemand een formulier verzendt op uw website die is gemaakt met AEM Adaptive Forms, zorgt de connector ervoor dat de verzonden gegevens automatisch naar Marketo worden verzonden. Hierdoor wordt de noodzaak van handmatige gegevensinvoer weggenomen en wordt het risico op fouten verminderd.
 
-![AEM Form - Marketo Connector](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![ AEM Vorm - de Schakelaar van Marketo ](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 Door het gegevensoverdrachtproces te stroomlijnen, kan de schakelaar u helpen de omzettingspercentages van uw website verbeteren. Door loodgegevens automatisch naar Marketo te verzenden, kunt u ervoor zorgen dat gekwalificeerde leads snel worden ingevoerd in uw verpleegprogramma&#39;s.
 
@@ -212,31 +212,31 @@ Aangepaste Forms kan nu worden weergegeven in een RTL-taal (Right-to-Left), waar
 
 Deze functionaliteit richt zich op talen zoals Arabisch, Hebreeuws en Urdu, die van rechts naar links (RTL) worden geschreven en gelezen, die betere begrip en voltooiingsaantallen voor vormen bevorderen.
 
-![Ondersteuning voor RTL-talen (van rechts naar links)](mobile-responsive.png)
+![ Van rechts naar links (RTL) taalsteun ](mobile-responsive.png)
 
 De RTL-talen (rechts naar links) worden ondersteund in Adaptive Forms:
 
-* **Breidt gebruikersbasis uit**: Bedrijven kunnen nu meer dan 2 miljard mensen bereiken die zich meer vertrouwd voelen met RTL-talen.
+* **breidt gebruikersbasis** uit: De ondernemingen kunnen meer dan 2 miljard mensen nu globaal bereiken die met talen RTL comfortabeler zijn.
 
-* **Lever verbeterde gebruikerservaring**: Forms wordt perfect gerenderd met de natuurlijke tekstdoorloop van rechts naar links, de juiste uitlijning van UI-elementen en intuïtieve lay-outs die de leesgewoonten van de gebruiker weerspiegelen. Dit vermindert de verwarring en verhoogt de voltooiingspercentages.
+* **Lever verbeterde gebruikerservaring**: Forms geeft foutloos met natuurlijke tekststroom van rechts naar links, juiste UI elementgroepering, en intuïtieve lay-outs terug die gebruikerslezingsgewoonten weerspiegelen. Dit vermindert de verwarring en verhoogt de voltooiingspercentages.
 
-* **Mobiele responsieve ervaringen bieden**: Forms blijft op elk apparaat beschikbaar vanwege de inherente mobiele responsiviteit, waardoor een vloeiende ervaring wordt gegarandeerd voor desktops, tablets en smartphones.
+* **Lever mobiele ontvankelijke ervaringen**: Forms blijft toegankelijk op om het even welk apparaat toe te schrijven aan inherente mobiele ontvankelijkheid, die een vlotte ervaring over Desktops, tablets, en smartphones verzekeren.
 
 Over het algemeen biedt RTL-taalondersteuning in Adaptive Forms bedrijven de mogelijkheid om echt wereldwijde formulieren te ontwerpen, zodat ze hun bereik, betrokkenheid en inclusiviteit kunnen vergroten.
 
-Klaar om te beginnen? [Adaptive Forms RTL-documentatie](/help/forms/supporting-new-language-localization-core-components.md) biedt een stapsgewijze gids voor het gebruik van de RTL-innovatie.
+Klaar om te beginnen? [ de Aangepaste documentatie van Forms RTL ](/help/forms/supporting-new-language-localization-core-components.md) verstrekt een geleidelijke gids om de innovatie te gebruiken RTL.
 
 ### Verbeterde methoden voor botbeveiliging
 
 AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te voegen voor twee populaire CAPTCHA-oplossingen: Cloudflare Turnstile en hCaptcha. Dit voegt toe aan de reeds beschikbare Google reCAPTCHA, die gebruikers meer keus en flexibiliteit verleent om hun vormen tegen bots en spam voorlegging te beschermen.
 
-* **Cloudflare Turnstile**: Deze frictionless CAPTCHA verifieert gebruikers door een eenvoudige uitdaging die geen expliciete interactie vereist. De toepassing wordt naadloos geïntegreerd in uw formulieren, waardoor de gebruikerservaring wordt verbeterd.
-* **hCaptcha**: Deze op privacy gerichte CAPTCHA biedt een gebruiksvriendelijk alternatief met focus op de privacy van gegevens. Het is bedoeld om een evenwicht te vinden tussen veiligheid en gebruikerservaring.
-* **Google reCAPTCHA**: AEM Forms blijft zowel reCAPTCHA v2 als reCAPTCHA Enterprise ondersteunen en biedt een betrouwbare en gevestigde oplossing.
+* **de Draai van de Wolk**: Dit frictionless CAPTCHA verifieert gebruikers door een eenvoudige uitdaging die geen expliciete interactie vereist. De toepassing wordt naadloos geïntegreerd in uw formulieren, waardoor de gebruikerservaring wordt verbeterd.
+* **hCaptcha**: Deze privacy-geconcentreerde CAPTCHA biedt een gebruikersvriendelijk alternatief met een nadruk op gegevensprivacy aan. Het is bedoeld om een evenwicht te vinden tussen veiligheid en gebruikerservaring.
+* **Google reCAPTCHA**: AEM Forms blijft zowel reCAPTCHA v2 als reCAPTCHA Onderneming steunen, die een betrouwbare en gevestigde oplossing aanbieden.
 
 Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
 
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie bevat gedetailleerde instructies voor elk van deze: [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? Onze documentatie verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### Doc Assurance-API&#39;s
 
@@ -245,28 +245,28 @@ AEM Forms Doc Assurance API&#39;s zijn een set gereedschappen in de communicatie
 
 Hier volgt een overzicht van wat Doc Assurance API&#39;s kunnen doen:
 
-* **Documenten versleutelen en ontsleutelen**: Protect uw documenten door de inhoud ervan onleesbaar te maken met versleuteling. U hebt controle over de onderdelen van de PDF die u wilt coderen, waaronder het gehele document, de specifieke inhoud, metagegevens of bijlagen.
+* **codeer en decrypteer documenten**: Protect uw documenten door hun inhoud met encryptie onleesbaar te maken. U hebt controle over de onderdelen van de PDF die u wilt coderen, waaronder het gehele document, de specifieke inhoud, metagegevens of bijlagen.
 
-* **Documenten digitaal ondertekenen**: Voeg digitale handtekeningen toe aan uw documenten voor validatie en verificatie zonder knoeien. Dit kan worden gebruikt voor certificeringsdoeleinden of om de integriteit van documenten te garanderen
+* **digitaal ondertekent documenten**: Voeg digitale handtekeningen aan uw documenten voor bevestiging en knoeibestendige controle toe. Dit kan worden gebruikt voor certificeringsdoeleinden of om de integriteit van documenten te garanderen
 
-* **Reader Uw documenten uitbreiden (gebruiksrechten van PDF-documenten toepassen of bewerken)**: Laat uw organisatie toe om interactieve documenten van de PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden.
+* **de Reader breidt uw documenten (pas of geef gebruiksrechten van de documenten van PDF uit)**: Laat uw organisatie toe om interactieve documenten van PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden.
 
   Met de API&#39;s van de Reader Extension (Gebruiksrechten) worden gebruiksrechten toegevoegd aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
 
   Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen ontvangers ingeschakelde activiteiten uitvoeren vanuit Adobe Reader.
 
-Algemeen [Doc Assurance-API&#39;s](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u de beveiliging en compatibiliteit van documenten te verbeteren door een extra controlelaag toe te voegen.
+Globaal, [ de Verzekering APIs van Doc ](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) helpen u documentveiligheid en naleving verbeteren door een extra laag van controle toe te voegen.
 
 
 ### Forms Service-API&#39;s
 
 Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Deze kan ook worden gebruikt om gegevens te importeren/exporteren naar/van een bestaand interactief PDF-formulier en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
 
-* **Forms renderen**: Genereer een interactief PDF-formulier op basis van een sjabloon die is gemaakt met AEM Forms Designer en eventueel XML-gegevens. Hiermee wordt in feite een optioneel vooraf ingevuld formulier met PDF gemaakt.
+* **teruggevend Forms**: Produceer een interactieve vorm van PDF van een malplaatje dat gebruikend AEM Forms Designer en, naar keuze, de gegevens van XML wordt gecreeerd. Hiermee wordt in feite een optioneel vooraf ingevuld formulier met PDF gemaakt.
 
-* **Gegevens extraheren en importeren**: Importeer gegevens in een bestaand PDF-formulier en extraheer gegevens uit een ingevuld PDF-formulier. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
+* **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
 
-* **Gegevensvalidatie**: - Valideer verzonden gegevens in XDP- of XML-indeling op basis van een sjabloon die is gemaakt met AEM Forms Designer.
+* **Bevestiging van Gegevens**: Valideer voorgelegde gegevens, in formaat XDP of XML, tegen een malplaatje dat gebruikend AEM Forms Designer wordt gecreeerd.
 
 ## Zie ook
 

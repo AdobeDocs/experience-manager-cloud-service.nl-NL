@@ -21,7 +21,7 @@ De Adobe adviseert u om configuratiestappen voor bestaande verbeterde schakelaar
 
 De externe afhankelijkheden verwijderen:
 
-1. De volgende configuratie van de fotoopslagplaats verwijderen uit het bovenliggende image `pom.xml`:
+1. Verwijder de volgende configuratie van de fotoopslagplaats uit het bovenliggende element `pom.xml` :
 
    ```XML
      <repository>
@@ -31,7 +31,7 @@ De externe afhankelijkheden verwijderen:
      </repository>
    ```
 
-1. Verwijder de volgende serverconfiguratie uit de `settings.xml` bestand, beschikbaar op `./cloudmanager/maven/settings.xml`:
+1. Verwijder de volgende serverconfiguratie uit het `settings.xml` -bestand, beschikbaar op `./cloudmanager/maven/settings.xml` :
 
    ```XML
          <server>
@@ -47,4 +47,4 @@ De externe afhankelijkheden verwijderen:
          </server>
    ```
 
-1. Voer de [nieuwe installatiestappen](workfront-connector-install.md).
+1. Voer de [ nieuwe installatiestappen ](workfront-connector-install.md) uit.

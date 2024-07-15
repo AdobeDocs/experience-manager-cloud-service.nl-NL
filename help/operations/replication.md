@@ -1,6 +1,6 @@
 ---
 title: Replicatie
-description: Leer over distributie en het oplossen van problemenreplicatie in AEM as a Cloud Service.
+description: Meer informatie over distributie en probleemoplossing voor replicatie in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
@@ -13,100 +13,100 @@ ht-degree: 0%
 
 # Replicatie {#replication}
 
-Adobe Experience Manager as a Cloud Service gebruikt de [Distributie van inhoud verkopen](https://sling.apache.org/documentation/bundles/content-distribution.html) mogelijkheid om de inhoud te verplaatsen naar een pijplijnservice die op Adobe Developer wordt uitgevoerd en die zich buiten de AEM runtime bevindt.
+Adobe Experience Manager as a Cloud Service gebruikt het [ Verschuivende vermogen van de Distributie van de Inhoud ](https://sling.apache.org/documentation/bundles/content-distribution.html) om de inhoud te bewegen om aan een pijpleidingsdienst te herhalen die op Adobe Developer wordt uitgevoerd die buiten AEM runtime is.
 
 >[!NOTE]
 >
->Lezen [Distributie](/help/overview/architecture.md#content-distribution) voor meer informatie .
+>Lees [ Distributie ](/help/overview/architecture.md#content-distribution) voor meer informatie.
 
 ## Methoden voor het publiceren van inhoud {#methods-of-publishing-content}
 
 >[!NOTE]
 >
->Als u geïnteresseerd bent in het bulksgewijs publiceren van inhoud, gebruikt u de [Workflow van inhoudsstructuur publiceren](#publish-content-tree-workflow).
+>Als u in bulk het publiceren inhoud geinteresseerd bent, gebruik het [ Werkschema van de Boom van de Inhoud van Publish ](#publish-content-tree-workflow).
 >Deze workflowstap is speciaal voor Cloud Service gemaakt en kan grote ladingen efficiënt verwerken.
 >Het wordt niet aangeraden om uw eigen aangepaste code voor bulkpublicaties te maken.
 >Als u om welke reden dan ook moet aanpassen, kunt u deze workflow/workflowstap activeren met behulp van bestaande workflow-API&#39;s.
->Het is altijd een goede gewoonte om alleen inhoud te publiceren die moet worden gepubliceerd. En wees voorzichtig als u geen grote aantallen content probeert te publiceren, als dat niet nodig is. Er gelden echter geen beperkingen voor de hoeveelheid inhoud die u via de workflow van de inhoudsstructuur voor publiceren kunt verzenden.
+>Het is altijd een goede gewoonte om alleen inhoud te publiceren die moet worden gepubliceerd. En wees voorzichtig als u geen grote aantallen content probeert te publiceren, als dat niet nodig is. Er gelden echter geen beperkingen voor de hoeveelheid inhoud die u via de Publish Content Tree Workflow kunt verzenden.
 
-### Snel publiceren/publiceren - Gepland ongedaan maken/publiceren {#publish-unpublish}
+### Quick Un/Publish - Gepland VN/Publish {#publish-unpublish}
 
 Met deze functie kunt u de geselecteerde pagina&#39;s direct publiceren, zonder de extra opties die mogelijk zijn via de methode Publicatie beheren.
 
-Zie voor meer informatie [Publicatie beheren](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
+Voor meer informatie, zie [ Publicatie ](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) leiden.
 
 ### Aan- en uittijden - Configuratie activeren {#on-and-off-times-trigger-configuration}
 
-De extra mogelijkheden van **Op tijd** en **Uit-tijd** zijn beschikbaar op [Het tabblad Standaard van Pagina-eigenschappen](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
+De extra mogelijkheden van **op Tijd** en **van Tijd** zijn beschikbaar bij het [ Basis lusje van de Eigenschappen van de Pagina ](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
-Om de automatische replicatie voor deze eigenschap te realiseren, laat toe **Automatisch repliceren** in de [OSGi-configuratie](/help/implementing/deploying/configuring-osgi.md) **Configuratie van activering uit**:
+Om de automatische replicatie voor deze eigenschap te realiseren, laat **AutoReplicatie** in de [ configuratie OSGi ](/help/implementing/deploying/configuring-osgi.md) **op van de Configuratie van de Trekker** toe:
 
-![Configuratie van OSGi bij activering](/help/operations/assets/replication-on-off-trigger.png)
+![ OSGi op de Configuratie van de Trekker ](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Publicatie beheren {#manage-publication}
 
-Publicatie beheren biedt meer opties dan Snel publiceren, waardoor onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om later te publiceren.
+Publicatie beheren biedt meer opties dan Quick Publish, waardoor onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om later te publiceren.
 
-Als de onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de inhoudsstructuur publiceren geactiveerd, zoals in dit artikel wordt beschreven.
+Als onderliggende items van een map worden opgenomen voor de optie &quot;Later publiceren&quot;, wordt de workflow van de Publish-inhoudsstructuur geactiveerd, zoals in dit artikel wordt beschreven.
 
-U vindt meer gedetailleerde informatie over Publicatie beheren op het tabblad [Publicatie van documentatie over grondbeginselen](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
+U kunt meer gedetailleerde informatie over Manage Publication over de [ het Publiceren documentatie van Grondbeginselen ](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) vinden.
 
-### Workflow van inhoudsstructuur publiceren {#publish-content-tree-workflow}
+### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
-U kunt een boomreplicatie teweegbrengen door te kiezen **Tools - Workflow - Modellen** en kopiëren **Inhoudsstructuur publiceren** out-of-the-box workflowmodel, zoals hieronder getoond:
+U kunt een boomreplicatie teweegbrengen door **Hulpmiddelen te kiezen - Werkschema - Modellen** en het kopiëren van het **de Inhoudsboom van Publish** uit-van-de-doos werkschemamodel, zoals hieronder getoond:
 
-![De werkstroomkaart van de inhoudsstructuur publiceren](/help/operations/assets/publishcontenttreeworkflow.png)
+![ de Kaart van het Werkschema van de Inhoudsboom van Publish ](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Roep het oorspronkelijke model niet aan. Let er in plaats daarvan op dat u het model eerst kopieert en dat exemplaar aanroept.
 
-Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Zie voor meer informatie [Programmatische interactie met Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+Net als bij alle workflows kan de functie ook via de API worden aangeroepen. Voor meer informatie, zie [ Interacting met Workflows programmatically ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
-U kunt ook een workflowmodel maken waarin de `Publish Content Tree` processtap:
+U kunt ook een workflowmodel maken dat de processtap `Publish Content Tree` gebruikt:
 
-1. Ga vanaf de AEM as a Cloud Service startpagina naar **Tools - Workflow - Modellen**.
-1. Druk op de pagina Workflowmodellen op **Maken** rechtsboven in het scherm.
-1. Voeg een titel en een naam toe aan uw model. Zie voor meer informatie [Workflowmodellen maken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. Selecteer het gemaakte model in de lijst en druk op **Bewerken**
+1. Van de homepage van AEM as a Cloud Service, ga naar **Hulpmiddelen - Werkschema - Modellen**.
+1. In de pagina Modellen van het Werkschema, druk **creeer** in de hogere juiste hoek van het scherm.
+1. Voeg een titel en een naam toe aan uw model. Voor meer informatie, zie [ Creërend de Modellen van het Werkschema ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+1. Selecteer het gecreeerde model van de lijst, en druk **uitgeven**
 1. Sleep in het volgende venster de processtap naar de huidige modelstroom:
 
-   ![Processtap](/help/operations/assets/processstep.png)
+   ![ Stap van het Proces ](/help/operations/assets/processstep.png)
 
-1. Selecteer de processtap in de flow en selecteer **Configureren** door op het moersleutelpictogram te drukken.
-1. Selecteer de **Proces** en selecteert u `Publish Content Tree` in de vervolgkeuzelijst, controleert u vervolgens de **Handler Advance** selectievakje
+1. Selecteer de stap van het Proces in de stroom en selecteer **vormen** door het moersleutelpictogram te drukken.
+1. Selecteer het **lusje van het Proces** {en selecteer `Publish Content Tree` van de drop-down lijst, dan controleer het **Geniet van de Handler {** controlevakje
 
-   ![Treeactivation](/help/operations/assets/newstep.png)
+   ![ Treeactivation ](/help/operations/assets/newstep.png)
 
-1. Stel eventuele aanvullende parameters in het dialoogvenster **Argumenten** veld. U kunt meerdere door komma&#39;s gescheiden argumenten samenvoegen. Bijvoorbeeld:
+1. Plaats om het even welke extra parameters op het **gebied van Argumenten**. U kunt meerdere door komma&#39;s gescheiden argumenten samenvoegen. Bijvoorbeeld:
 
    `enableVersion=true,agentId=publish,includeChildren=true`
 
 
    >[!NOTE]
    >
-   >Voor de lijst met parameters raadpleegt u de **Parameters** hieronder.
+   >Voor de lijst van parameters, zie de **hieronder sectie van Parameters**.
 
-1. Druk **Gereed** om het workflowmodel op te slaan.
+1. Pers **Gedaan** om het model van het Werkschema te bewaren.
 
 **Parameters**
 
-* `includeChildren` (booleaanse waarde, standaardwaarde): `false`). De waarde `false` betekent dat alleen het pad wordt gepubliceerd; `true` betekent dat ook kinderen worden gepubliceerd.
-* `replicateAsParticipant` (booleaanse waarde, standaardwaarde): `false`). Indien geconfigureerd als `true`, gebruikt de replicatie de `userid` van de opdrachtgever die de deelnemersstap heeft uitgevoerd.
-* `enableVersion` (booleaanse waarde, standaardwaarde): `false`). Deze parameter bepaalt als een nieuwe versie op replicatie wordt gecreeerd.
-* `agentId` (tekenreekswaarde; de standaardwaarde betekent dat alleen agents voor publicatie worden gebruikt). Men adviseert om over agentId uitdrukkelijk te zijn; bijvoorbeeld, plaatsend het de waarde: publiceer. De agent instellen op `preview` publiceert naar de voorbeeldservice.
+* `includeChildren` (booleaanse waarde, standaardwaarde: `false` ). De waarde `false` betekent dat alleen het pad wordt gepubliceerd; `true` betekent dat ook onderliggende objecten worden gepubliceerd.
+* `replicateAsParticipant` (booleaanse waarde, standaardwaarde: `false` ). Indien geconfigureerd als `true`, gebruikt de replicatie de `userid` van de principal die de deelnemersstap heeft uitgevoerd.
+* `enableVersion` (booleaanse waarde, standaardwaarde: `false` ). Deze parameter bepaalt als een nieuwe versie op replicatie wordt gecreeerd.
+* `agentId` (tekenreekswaarde, standaardwaarde betekent dat alleen de publicatieagents worden gebruikt). Men adviseert om over agentId uitdrukkelijk te zijn; bijvoorbeeld, plaatsend het de waarde: publiceer. Als u de agent instelt op `preview` , wordt deze naar de service preview gepubliceerd.
 * `filters` (standaardwaarde betekent dat alle paden zijn geactiveerd). Beschikbare waarden zijn:
    * `onlyActivated` - alleen pagina&#39;s activeren die (al) zijn geactiveerd. Werkt als een vorm van reactivering.
    * `onlyModified` - activeer alleen paden die al zijn geactiveerd en een wijzigingsdatum na de activeringsdatum hebben.
-   * Het bovenstaande kan ORed zijn met een pijp &quot;|&quot;. Bijvoorbeeld: `onlyActivated|onlyModified`.
+   * Het bovenstaande kan ORed zijn met een pijp &quot;|&quot;. Bijvoorbeeld `onlyActivated|onlyModified` .
 
-**Logboekregistratie**
+**het Registreren**
 
 Wanneer de stap van het werkschema van de boomactivering begint, registreert het zijn configuratieparameters op het INFO loglevel. Wanneer de wegen worden geactiveerd, wordt een verklaring INFO ook geregistreerd.
 
 Een laatste INFO-instructie wordt vastgelegd nadat alle paden door de workflowstap zijn gerepliceerd.
 
-U kunt ook het logniveau van de onderstaande loggers verhogen `com.day.cq.wcm.workflow.process.impl` aan DEBUG/TRACE om nog meer logboekinformatie te krijgen.
+U kunt ook het logniveau van de loggers onder `com.day.cq.wcm.workflow.process.impl` verhogen tot DEBUG/TRACE voor nog meer loginformatie.
 
-Als er fouten optreden, wordt de workflowstap beëindigd met een `WorkflowException`, die de onderliggende uitzondering omsluit.
+Als er fouten zijn, eindigt de werkschemastap met a `WorkflowException`, die de onderliggende Uitzondering verpakt.
 
 Hieronder volgen voorbeelden van logboeken die worden gegenereerd tijdens een workflow in een voorbeeld van een publicatiestructuur voor inhoud:
 
@@ -118,17 +118,17 @@ Hieronder volgen voorbeelden van logboeken die worden gegenereerd tijdens een wo
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
 
-**Ondersteuning hervatten**
+**Steun van het hervatten**
 
 De workflow verwerkt inhoud in blokken, die elk een subset vormen van de volledige inhoud die moet worden gepubliceerd. Als de workflow door het systeem wordt gestopt, wordt het segment dat nog niet is verwerkt opnieuw gestart en verwerkt. Een logboekverklaring verklaart dat de inhoud van een specifieke weg werd hervat.
 
 ### Replicatie-API {#replication-api}
 
-U kunt inhoud publiceren gebruikend de Replicatie API die in AEM as a Cloud Service wordt getoond.
+U kunt inhoud publiceren met behulp van de Replicatie-API die in AEM as a Cloud Service is geïnstalleerd.
 
-Zie de klasse [API-documentatie](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+Voor meer informatie, zie de [ API Documentatie ](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
-**Basisgebruik van de API**
+**Basis Gebruik van API**
 
 ```
 @Reference
@@ -151,11 +151,11 @@ ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
 Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
 ```
 
-**Replicatie met specifieke agents**
+**Replicatie met Specifieke Agenten**
 
-Bij het repliceren van middelen, zoals in het bovenstaande voorbeeld, slechts worden de agenten gebruikt die door gebrek actief zijn. In AEM as a Cloud Service, betekent het slechts de agent genoemd &quot;publiceert&quot;, die de auteur met publicatielaag verbindt.
+Bij het repliceren van middelen, zoals in het bovenstaande voorbeeld, slechts worden de agenten gebruikt die door gebrek actief zijn. In AEM as a Cloud Service betekent dit alleen de agent met de naam &quot;publish&quot;, die de auteur verbindt met de publicatielijst.
 
-Ter ondersteuning van de voorvertoningsfunctionaliteit is een nieuwe agent met de naam &quot;preview&quot; toegevoegd, die niet standaard actief is. Deze agent wordt gebruikt om de auteur met de voorproefrij te verbinden. Als u slechts door de voorproefagent wilt herhalen, moet u deze voorproefagent uitdrukkelijk selecteren als `AgentFilter`.
+Ter ondersteuning van de voorvertoningsfunctionaliteit is een nieuwe agent met de naam &quot;preview&quot; toegevoegd, die niet standaard actief is. Deze agent wordt gebruikt om de auteur met de voorproefrij te verbinden. Als u alleen via de voorvertoningsagent wilt repliceren, moet u deze voorvertoningsagent expliciet selecteren via een `AgentFilter` .
 
 Zie het volgende voorbeeld:
 
@@ -180,35 +180,35 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 Als u een dergelijk filter niet aanbiedt en alleen de &quot;publish&quot;-agent gebruikt, wordt de &quot;preview&quot;-agent niet gebruikt en heeft de replicatiehandeling geen invloed op de voorvertoningslaag.
 
-Het geheel `ReplicationStatus` van een middel wordt slechts gewijzigd als de replicatieactie minstens één agent omvat die door gebrek actief is. In het bovenstaande voorbeeld was deze stroom niet het geval. De replicatie gebruikte gewoon de &#39;preview&#39;-agent. Daarom moet u het nieuwe `getStatusForAgent()` methode, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie is gedaan gebruikend de verstrekte agent.
+De algemene `ReplicationStatus` van een bron wordt alleen gewijzigd als de replicatiehandeling ten minste één agent bevat die standaard actief is. In het bovenstaande voorbeeld was deze stroom niet het geval. De replicatie gebruikte gewoon de &#39;preview&#39;-agent. Daarom moet u de nieuwe `getStatusForAgent()` methode gebruiken, die het vragen van de status voor een specifieke agent toestaat. Deze methode werkt ook voor de &quot;publiceer&quot;agent. Het keert een niet-krachteloze waarde terug als er om het even welke replicatieactie is gedaan gebruikend de verstrekte agent.
 
 ### Methoden voor het ongeldig maken van inhoud {#invalidating-content}
 
-U kunt inhoud direct ongeldig maken door of de Verschuivende Invalidatie van de Inhoud (SCD) van auteur (de aangewezen methode) te gebruiken of door de Replicatie API te gebruiken om te roepen publiceert Dispatcher leegmaken replicatieagent. Zie [Caching](/help/implementing/dispatcher/caching.md) voor meer informatie.
+U kunt inhoud direct ongeldig maken door of het Verdelen van de Invalidatie van de Inhoud (SCD) van auteur (de aangewezen methode) te gebruiken of door de Replicatie API te gebruiken om publiceer Dispatcher te roepen flush replicatieagent. Zie [ Caching ](/help/implementing/dispatcher/caching.md) pagina voor verdere details.
 
-**Limieten voor replicatie-API**
+**de capaciteitsgrenzen van de Replicatie API**
 
-Repliceer minder dan 100 paden tegelijk, waarbij 500 paden de limiet zijn. Boven de limiet `ReplicationException` wordt gegenereerd.
-Als voor uw toepassingslogica geen atoomreplicatie is vereist, kunt u deze limiet overwinnen door het instellen van de optie `ReplicationOptions.setUseAtomicCalls` naar false, dat een willekeurig aantal paden accepteert, maar intern emmers maakt om onder deze limiet te blijven.
+Repliceer minder dan 100 paden tegelijk, waarbij 500 paden de limiet zijn. Boven de limiet wordt een `ReplicationException` gegenereerd.
+Als voor uw toepassingslogica geen atomische replicatie is vereist, kan deze limiet worden overbrugd door de waarde `ReplicationOptions.setUseAtomicCalls` in te stellen op false, die een willekeurig aantal paden accepteert, maar intern emmers maakt om onder deze limiet te blijven.
 
-De grootte van de inhoud die per replicatievraag wordt overgebracht moet niet overschrijden `10 MB`. Deze regel bevat de knooppunten en eigenschappen, maar geen binaire bestanden (workflowpakketten en inhoudspakketten worden als binaire bestanden beschouwd).
+De grootte van de inhoud die per replicatieaanroep wordt verzonden, mag niet groter zijn dan `10 MB` . Deze regel bevat de knooppunten en eigenschappen, maar geen binaire bestanden (workflowpakketten en inhoudspakketten worden als binaire bestanden beschouwd).
 
 
 ## Problemen oplossen {#troubleshooting}
 
 Om replicatie problemen op te lossen, navigeer aan de Queuws van de Replicatie in het Web UI van de Dienst van de AEM Auteur:
 
-1. Navigeer in het menu AEM Start naar **Gereedschappen** > **Implementatie** > **Distributie**
-1. Selecteer de kaart **publish**
+1. Van het Menu van het Begin van het AEM, navigeer aan **Hulpmiddelen** > **Plaatsing** > **Distributie**
+1. Selecteer kaart **publiceren**
 
-   ![Status](assets/publish-status.png "Status")
+   ![ Status ](assets/publish-status.png " Status ")
 
 1. Controleer de wachtrijstatus die groen moet zijn
 1. U kunt de verbinding met de replicatieservice testen
-1. Selecteer de **Logboeken** tabblad waarin de geschiedenis van publicaties met inhoud wordt weergegeven
+1. Selecteer het **Logs** lusje dat de geschiedenis van inhoudspublicaties toont
 
-![Logboeken](assets/publish-logs.png "Logboeken")
+![ Logs ](assets/publish-logs.png " Logs ")
 
-Als de inhoud niet kon worden gepubliceerd, wordt de volledige publicatie teruggezet van de AEM publicatieservice.
+Als de inhoud niet kon worden gepubliceerd, wordt de volledige publicatie teruggezet van de AEM Publish Service.
 
 In dat geval geeft de hoofdwachtrij een rode status weer en moet deze worden gecontroleerd om te bepalen welke items de annulering van de publicatie hebben veroorzaakt. Door op die wachtrij te klikken, worden de items in behandeling weergegeven, waaruit één item of alle items indien nodig kunnen worden gewist.

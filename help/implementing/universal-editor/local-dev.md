@@ -32,17 +32,17 @@ Binnen een buitenframe dat is beveiligd met HTTPS kan een onbeveiligd HTTP-frame
 
 Hiervoor moet u AEM instellen voor uitvoering op HTTPS. Voor ontwikkelingsdoeleinden kunt u zelfondertekend certificaat gebruiken.
 
-[Zie dit document](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) voor het instellen van AEM die worden uitgevoerd op HTTPS, inclusief een zelfondertekend certificaat dat u kunt gebruiken.
+[ zie dit document ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) op hoe te opstelling AEM lopend op HTTPS met inbegrip van een zelf-ondertekend certificaat u kunt gebruiken.
 
 ## De Universal Editor-service installeren {#install-ue-service}
 
 De Universele Dienst van de Redacteur is geen volledig exemplaar van de Universele Redacteur, maar slechts een ondergroep van zijn eigenschappen om ervoor te zorgen dat de vraag van uw lokale AEM milieu niet over Internet wordt verpletterd, maar van een bepaald eindpunt u controleert.
 
-[NodeJS versie 16](https://nodejs.org/en/download/releases) is vereist om een lokale kopie van de Universal Editor Service uit te voeren.
+[ versie 16 NodeJS ](https://nodejs.org/en/download/releases) wordt vereist om een lokaal exemplaar van de Universele Dienst van de Redacteur in werking te stellen.
 
-De Universal Editor Service is beschikbaar via Software Distribution. Zie de [Documentatie voor softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) voor meer informatie over hoe u toegang kunt krijgen tot het bestand.
+De Universal Editor Service is beschikbaar via Software Distribution. Gelieve te zien de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) voor details op hoe te om tot het toegang te hebben.
 
-Sla de `universal-editor-service.cjs` van Software Distribution aan uw lokale ontwikkelomgeving.
+Sla het `universal-editor-service.cjs` -bestand op van Softwaredistributie naar uw lokale ontwikkelomgeving.
 
 ## Een certificaat maken om de Universal Editor-service met HTTPS uit te voeren {#ue-https}
 
@@ -54,13 +54,13 @@ Voer de volgende opdracht uit.
 $ openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certificate.pem
 ```
 
-De opdracht genereert een `key.pem` en `certificate.pem` bestand. Sla deze bestanden op in hetzelfde pad als de `universal-editor-service.cjs` bestand.
+De opdracht genereert een `key.pem` - en een `certificate.pem` -bestand. Sla deze bestanden op in hetzelfde pad als het `universal-editor-service.cjs` -bestand.
 
 ## De configuratie van de Universal Editor-service instellen {#setting-up-service}
 
 Een aantal omgevingsvariabelen moet in NodeJS worden ingesteld om de Universal Editor Service lokaal uit te voeren.
 
-Op hetzelfde pad als uw `universal-editor-service.cjs`, `key.pem` en `certificate.pem` bestanden, een `.env` bestand met de volgende inhoud.
+Maak een `.env` -bestand met de volgende inhoud op hetzelfde pad als de `universal-editor-service.cjs` -, `key.pem` - en `certificate.pem` -bestanden.
 
 ```text
 EXPRESS_PORT=8000
@@ -71,10 +71,10 @@ NODE_TLS_REJECT_UNAUTHORIZED=0
 
 De variabele heeft de volgende betekenis:
 
-* `EXPRESS_PORT`: Definieert op welke poort de Universal Editor Service luistert
-* `EXPRESS_PRIVATE`: verwijst naar uw [eerder gemaakte persoonlijke sleutel,](#ue-https) `key.pem`
-* `EXPRESS_CERT`: verwijst naar uw [eerder gemaakt certificaat,](#ue-https) `certificate.pem`
-* `NODE_TLS_REJECT_UNAUTHORIZED=0`: Accepteert zelfondertekende certificaten
+* `EXPRESS_PORT`: definieert op welke poort de Universal Editor Service luistert
+* `EXPRESS_PRIVATE`: Punten aan uw [ eerder-gecreeerde privé sleutel, ](#ue-https) `key.pem`
+* `EXPRESS_CERT`: Punten aan uw [ eerder-gecreeerd certificaat, ](#ue-https) `certificate.pem`
+* `NODE_TLS_REJECT_UNAUTHORIZED=0`: accepteert zelfondertekende certificaten
 
 ## De Universal Editor-service uitvoeren {#running-ue}
 
@@ -102,23 +102,23 @@ Als u een pagina wilt bewerken met uw lokale Universal Editor-service, moet u de
 <meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
-Zodra reeks, zou u elke vraag van de inhoudsupdate moeten zien gaan naar `https://localhost:8000` in plaats van de standaard Universal Editor-service.
+Als deze eenmaal is ingesteld, wordt elke aanroep van de inhoudsupdate weergegeven in plaats van naar `https://localhost:8000` de standaardservice van de universele editor.
 
 >[!NOTE]
 >
->Poging rechtstreeks toegang te krijgen `https://localhost:8000` resulteert in een `404` fout. Dit wordt verwacht.
+>Wanneer u probeert rechtstreeks toegang te krijgen tot `https://localhost:8000` , treedt er een `404` -fout op. Dit wordt verwacht.
 >
->Als u de toegang tot uw lokale Universal Editor-service wilt testen, gebruikt u `https://localhost:8000/corslib/LATEST`. Zie de [volgende sectie](#editing) voor meer informatie.
+>Gebruik `https://localhost:8000/corslib/LATEST` om de toegang tot uw lokale Universal Editor-service te testen. Zie de [ volgende sectie ](#editing) voor details.
 
 >[!TIP]
 >
->Raadpleeg het document voor meer informatie over hoe pagina&#39;s van instrumenten worden voorzien om de Global Universal Editor Service te gebruiken [Aan de slag met de Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
+>Voor meer details op hoe de pagina&#39;s van instrumenten worden voorzien om de Globale Universele Dienst van de Redacteur te gebruiken, zie het document [ Begonnen Worden met de Universele Redacteur in AEM ](/help/implementing/universal-editor/getting-started.md#instrument-page)
 
 ## Een pagina bewerken met de lokale universele editor {#editing}
 
-Met de [Universal Editor Service wordt lokaal uitgevoerd](#running-ue) en uw [inhoudspagina waarop instrumenten zijn aangebracht om de lokale service te gebruiken;](#using-loca-ue) u kunt nu de editor starten.
+Met de [ Universele dienst die van de Redacteur ](#running-ue) en uw [ inhoudspagina plaatselijk in werking stelt van instrumenten om de lokale dienst te gebruiken, ](#using-loca-ue) kunt u de redacteur nu beginnen.
 
-1. Browser openen voor `https://localhost:8000/corslib/LATEST`.
-1. Stuur de browser om te accepteren [uw zelfondertekende certificaat.](#ue-https)
+1. Open uw browser naar `https://localhost:8000/corslib/LATEST` .
+1. Verricht uw browser om [ uw zelf-ondertekend certificaat goed te keuren.](#ue-https)
 1. Zodra het zelfondertekende certificaat wordt vertrouwd, kunt u de pagina bewerken met uw lokale Universal Editor-service.
 

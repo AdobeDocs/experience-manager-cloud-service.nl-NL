@@ -1,5 +1,5 @@
 ---
-title: Inhoudsfragmenten - Configuratie-browser (middelen - Inhoudsfragmenten)
+title: Inhoudsfragmenten - Configuratiebrowser (Assets - Inhoudsfragmenten)
 description: Leer hoe te om de functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
@@ -14,38 +14,38 @@ ht-degree: 3%
 
 # Inhoudsfragmenten - Configuratiebrowser{#content-fragments-configuration-browser}
 
-Leer hoe te om bepaalde functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten om AEM krachtige koploze leveringseigenschappen te gebruiken.
+Leer hoe te om bepaalde functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten om AEM het gebruiken van krachtige koploze leveringseigenschappen te gebruiken.
 
 ## Functionaliteit van inhoudsfragment inschakelen voor uw instantie {#enable-content-fragment-functionality-instance}
 
-Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebrowser** inschakelen:
+Alvorens Inhoudsfragmenten te gebruiken, moet u **Browser van de Configuratie** gebruiken om toe te laten:
 
-* **Modellen van inhoudsfragmenten** - verplicht
-* **Aangehouden GraphQL-query&#39;s** - facultatief
+* **Modellen van het Fragment van de Inhoud** - verplicht
+* **GraphQL Blijven Vragen** - facultatief
 
 >[!CAUTION]
 >
->Als u niet inschakelt **Modellen van inhoudsfragmenten**:
+>Als u niet **Modellen van het Fragment van de Inhoud** toelaat:
 >
->* de **Maken** is niet beschikbaar voor het maken van modellen.
->* u kunt [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/headless/graphql-api/graphql-endpoint.md).
+>* **creeer** optie is niet beschikbaar voor het creëren van modellen.
+>* u kunt niet [ de configuratie van Plaatsen selecteren om het verwante eindpunt ](/help/headless/graphql-api/graphql-endpoint.md) tot stand te brengen.
 
 U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schakelen:
 
 * Het gebruik van de functionaliteit voor inhoudsfragmenten inschakelen via de configuratiebrowser
-* De configuratie toepassen op de map Middelen
+* De configuratie toepassen op uw Assets-map
 
 ### Functionaliteit van inhoudsfragment inschakelen in configuratievenster {#enable-content-fragment-functionality-in-configuration-browser}
 
-Bepaalde [Functionaliteit van inhoudsfragment](#creating-a-content-fragment-model), u **moet** eerst de **Configuratiebrowser**:
+Om bepaalde [ functionaliteit van het Fragment van de Inhoud ](#creating-a-content-fragment-model) te gebruiken, moet u **** eerst hen als **Browser van de Configuratie** toelaten:
 
 >[!NOTE]
 >
->Zie [Configuratiebrowser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Zie [ Browser van de Configuratie ](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
->[Subconfiguraties](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (een configuratie die in een andere configuratie is genest), wordt volledig ondersteund voor gebruik met Content Fragments, Content Fragment Models en GraphQL query&#39;s.
+>[ Subconfiguration ](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (een configuratie die binnen een andere configuratie wordt genest) wordt volledig gesteund voor gebruik met de Fragmenten van de Inhoud, Modellen van het Fragment van de Inhoud en de vragen van GraphQL.
 >
 >Ik wil alleen opmerken dat:
 >
@@ -59,26 +59,26 @@ Bepaalde [Functionaliteit van inhoudsfragment](#creating-a-content-fragment-mode
 
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 
-1. Gebruiken **Maken** om het dialoogvenster te openen, waarin u:
+1. Het gebruik **creeert** om de dialoog te openen, waar u:
 
-   1. Geef een **Titel**.
-   1. De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
-      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies](/help/implementing/developing/introduction/naming-conventions.md).
+   1. Specificeer a **Titel**.
+   1. De **Naam** wordt de knoopnaam in de bewaarplaats.
+      * Het wordt automatisch geproduceerd gebaseerd op de titel en aangepast volgens [ AEM noemende overeenkomsten ](/help/implementing/developing/introduction/naming-conventions.md).
       * U kunt deze desgewenst aanpassen.
    1. Om hun gebruik toe te laten selecteer
       * **Modellen van contentfragmenten**
-      * **Aangehouden GraphQL-query&#39;s**
+      * **GraphQL Blijven Vragen**
 
-      ![Configuratie definiëren](assets/cfm-conf-01.png)
+      ![ bepaalt configuratie ](assets/cfm-conf-01.png)
 
-1. Selecteren **Maken** om de definitie op te slaan.
+1. Selecteer **creeer** om de definitie te bewaren.
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### De configuratie toepassen op de middelenmap {#apply-the-configuration-to-your-assets-folder}
+### De configuratie toepassen op uw Assets-map {#apply-the-configuration-to-your-assets-folder}
 
-Wanneer de configuratie **globaal** is ingeschakeld voor de functionaliteit van inhoudsfragmenten en wordt vervolgens toegepast op elke map Middelen.
+Wanneer de configuratie **globale** voor de functionaliteit van het inhoudsfragment wordt toegelaten, dan op om het even welke omslag van Assets van toepassing is.
 
-Als u andere configuraties (behalve algemene configuraties) wilt gebruiken in een vergelijkbare map Elementen, moet u de verbinding definiëren. Deze verbinding wordt tot stand gebracht door de juiste **Configuratie** in de **Cloud Servicen** tabblad van het **Eigenschappen van map** van de desbetreffende map.
+Als u andere configuraties (behalve algemene configuraties) wilt gebruiken in een vergelijkbare Assets-map, moet u de verbinding definiëren. Deze verbinding wordt gedaan door de aangewezen **Configuratie** in het **Cloud Servicen** lusje van de **Eigenschappen van de Omslag** van de aangewezen omslag te selecteren.
 
-![Configuratie toepassen](assets/cfm-conf-02.png)
+![ pas configuratie ](assets/cfm-conf-02.png) toe

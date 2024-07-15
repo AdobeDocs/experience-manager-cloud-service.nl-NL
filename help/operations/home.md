@@ -13,7 +13,7 @@ ht-degree: 81%
 ---
 
 
-# Exploitatie en onderhoud van as a Cloud Service Experience Manager {#aem-operations-guide}
+# Exploitatie en onderhoud van as a Cloud Service van Experience Managers {#aem-operations-guide}
 
 Ontdek meer over de back-end operations van Experience Manager as a Cloud Service, zoals het indexeren en onderhoudstaken, en krijg antwoorden op uw vragen.
 

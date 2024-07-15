@@ -1,6 +1,6 @@
 ---
 title: Een pijplijn uitvoeren
-description: Deze pagina beschrijft het runnen van een pijpleiding voor Schermen als project van de Cloud Service in de Manager van de Wolk.
+description: Deze pagina beschrijft het runnen van een pijpleiding voor Screens als project van de Cloud Service in Cloud Manager.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 feature: Screens Deployments
 role: Admin, Developer, User
@@ -11,53 +11,53 @@ ht-degree: 2%
 
 ---
 
-# Een pijplijn voor het as a Cloud Service programma Schermen uitvoeren in Cloud Manager {#run-pipeline-screens-cloud}
+# Een pijpleiding voor het as a Cloud Service programma Screens uitvoeren in Cloud Manager {#run-pipeline-screens-cloud}
 
-Deze sectie beschrijft hoe te om de pijpleiding in werking te stellen en uw code voor uw programma in de Manager van de Wolk op te stellen.
+Deze sectie beschrijft hoe te om de pijpleiding in werking te stellen en uw code voor uw programma in Cloud Manager op te stellen.
 
 >[!NOTE]
->Zie [Het vormen van uw CI-CD Pijpleiding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) en [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) om te leren hoe u de pijplijn voor uw programma in de Manager van de Wolk kunt in werking stellen.
+>Zie [ Vormend uw CI-CD Pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) en [ uw Code ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) opstellen om te leren hoe u de pijpleiding voor uw programma in Cloud Manager kunt in werking stellen.
 
 ## Doelstelling {#objective}
 
-De volgende sectie beschrijft hoe te om de pijpleiding te vormen CI/CD en uw code voor uw programma in de Manager van de Wolk op te stellen.
+De volgende sectie beschrijft hoe te om de pijpleiding te vormen CI/CD en uw code voor uw programma in Cloud Manager op te stellen.
 
-## Stappen om een pijpleiding voor uw Schermproject in de Manager van de Wolk in werking te stellen {#steps-branch-creation}
+## Stappen om een Pijpleiding voor uw Project van Screens in Cloud Manager in werking te stellen {#steps-branch-creation}
 
-1. Nadat de omgevingsinstellingen zijn voltooid, wordt de call-to-action kaart-update weergegeven in Cloud Manager **Overzicht** pagina.
+1. Nadat de milieu opstelling met succes volledig is, ziet u de vraag-aan-actie kaartupdate in Cloud Manager **het Overzicht** pagina.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-environ3.png)
 
-1. Klikken **Pipet instellen** van de **Overzicht** pagina.
+1. Klik **Pijpleiding van de Opstelling** van de **pagina van het Overzicht**.
 
-1. Klikken **Volgende** nadat u de vertakking hebt geselecteerd.
+1. Klik **daarna** na het selecteren van de tak.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline1.png)
 
-1. Selecteer de gewenste opties in het menu **Pipet instellen** wizard. Klikken **Opslaan**.
+1. Selecteer uw opties van de **tovenaar van de Pijl van de Opstelling**. Klik **sparen**.
 
    >[!NOTE]
-   >Om over de opties in de tovenaar van de Pijl van de Opstelling te leren, zie [Instellingen voor de pijplijn configureren vanuit Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) voor meer informatie .
+   >Om over de opties in de tovenaar van de Pijl van de Opstelling te leren, zie [ Vormend de Montages van de Pijpleiding van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) voor meer details.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Nadat de opstellingspijpleiding volledig is, wordt de vraag-aan-actie kaart bijgewerkt.
 
    >[!NOTE]
-   >Ga voor meer informatie over de fasen in de implementatie in Cloud Manager naar [Uw code implementeren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) voor meer informatie .
+   >Om over de stadia in plaatsing in Cloud Manager te leren, zie [ het Opstellen van uw Code ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) voor meer details.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 
-1. Klikken **Implementeren**.
+1. Klik **opstellen**.
 
-1. Klikken **Opbouwen** om het bouwstijlproces te beginnen.
+1. Klik **bouwen** om het bouwstijlproces te beginnen.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. Nadat het bouwstijlproces voltooit, kunt u een auteursverbinding van zien **Omgevingen** Kaart van Cloud Manager **Overzicht** pagina.
+1. Nadat het bouwstijlproces voltooit, kunt u een auteursverbinding van de **Kaart van Milieu&#39;s** van het Cloud Manager **Overzicht** pagina zien.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u verdergaan naar de volgende stap in het proces Onboarding: [Navigeren naar de Serviceverlener voor schermen](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
+Nadat u hebt geleerd hoe te opstelling een milieu voor uw programma in Cloud Manager, bent u bereid om zich op de volgende stap in het Aan boord gaan proces te bewegen: [ navigerend aan de Dienstverlener van Screens ](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).

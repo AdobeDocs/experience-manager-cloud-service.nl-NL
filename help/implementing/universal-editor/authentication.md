@@ -30,4 +30,4 @@ Om de Universele Redacteur te gebruiken, moet de gebruiker in Verenigde Shell wo
 
 Wanneer een gebruiker een CRUD verrichting uitvoert, wordt een vraag verzonden naar de Universele dienst van de Redacteur met het IMS dragerteken in de kopbal van HTTP. De universele dienst van de Redacteur gebruikt dan het dragerteken om het verzoek tegen het AEM achtergrondsysteem voor authentiek te verklaren om verrichtingen in de naam van de gebruiker uit te voeren.
 
-![Standaardverificatiestroom](assets/standard-flow.png)
+![ Standaard authentificatiestroom ](assets/standard-flow.png)

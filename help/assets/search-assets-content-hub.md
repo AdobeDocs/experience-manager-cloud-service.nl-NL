@@ -1,6 +1,6 @@
 ---
 title: Middelen zoeken in Content Hub
-description: Leer hoe u middelen kunt zoeken in [!DNL Content Hub]
+description: Leer hoe te om activa in  [!DNL Content Hub] te zoeken
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
@@ -12,51 +12,51 @@ ht-degree: 0%
 
 # Assets zoeken in [!DNL Content Hub] {#search-assets}
 
-![Bannerafbeelding voor delen](assets/search.png)
+![ de bannerbeeld van het Aandeel activa ](assets/search.png)
 
-Als u een groot aantal middelen in uw opslagplaats hebt, is het tijdrovend om naar het juiste middel te zoeken. [!DNL The Content Hub] het onderzoek voorziet u van de capaciteit om de goedgekeurde activa te zoeken zodat u extra acties op hen kunt uitvoeren, zoals downloaden, delen, of inzamelingen tot stand brengen. U kunt verschillende mogelijkheden gebruiken om uw zoekresultaten te beperken, zoals het uitvoeren van op tekst gebaseerde zoekopdrachten, het gebruik van filters, het uitvoeren van tags of een specifieke zoekopdracht met slimme tags, het zoeken naar een bepaalde bestandsindeling, enzovoort.
+Als u een groot aantal middelen in uw opslagplaats hebt, is het tijdrovend om naar het juiste middel te zoeken. Met de zoekfunctie van [!DNL The Content Hub] kunt u zoeken naar de goedgekeurde elementen, zodat u er aanvullende handelingen op kunt uitvoeren, zoals downloaden, delen of verzamelingen maken. U kunt verschillende mogelijkheden gebruiken om uw zoekresultaten te beperken, zoals het uitvoeren van op tekst gebaseerde zoekopdrachten, het gebruik van filters, het uitvoeren van tags of een specifieke zoekopdracht met slimme tags, het zoeken naar een bepaalde bestandsindeling, enzovoort.
 
 ## Vereisten {#prerequisites}
 
-[Content Hub-gebruikers](deploy-content-hub.md#onboard-content-hub-users) kan handelingen uitvoeren die in dit artikel worden genoemd.
+[ de gebruikers van Content Hub ](deploy-content-hub.md#onboard-content-hub-users) kunnen acties uitvoeren die in dit artikel worden vermeld.
 
 ## Wat u kunt zoeken  {#what-you-can-search}
 
-De [!DNL Content Hub] zoekopdracht levert resultaten op basis van:
+De zoekopdracht [!DNL Content Hub] biedt resultaten op basis van:
 
-* **Overeenkomende tekst:** De [!DNL Content Hub] met een zoekopdracht kunt u zoeken naar een element op basis van de naam of beschrijving. U kunt op trefwoorden gebaseerde zoekopdrachten uitvoeren waarbij het trefwoord wordt vergeleken met de tekst die beschikbaar is in de eigenschappen van een element.
+* **Vergelijkende tekst:** het [!DNL Content Hub] onderzoek staat u toe om naar activa te zoeken gebruikend zijn naam of beschrijving. U kunt op trefwoorden gebaseerde zoekopdrachten uitvoeren waarbij het trefwoord wordt vergeleken met de tekst die beschikbaar is in de eigenschappen van een element.
 
-* **Overeenkomende context:** [!DNL Content Hub] de lijst met zoekresultaten bevat geschatte resultaten van elementen die u krijgt op basis van de overeenkomende context. Als u bijvoorbeeld `cool` in de zoekbalk, de elementen die betrekking hebben op `winter`, `snow`, `cold surroundings`in de zoeklijst.
+* **het Aanpassen context:** [!DNL Content Hub] de lijst van onderzoeksresultaten bevat geschatte resultaten van activa die u op de passende context wordt gebaseerd. Als u bijvoorbeeld `cool` typt in de zoekbalk, worden de elementen die verwant zijn aan `winter` , `snow` en `cold surroundings` weergegeven in de zoeklijst.
 
-* **Informatie over element (titel, tags of slimme tags):** [!DNL Content Hub] gebruikt een slim zoekalgoritme om zoekresultaten nauwkeurig en zo relevant mogelijk te rangschikken. [Metagegevens](#asset-properties.md) de verzameling van alle gegevens die beschikbaar zijn voor een actief, maar het mag niet noodzakelijk in dat actief zijn. [Het helpt u om elementen verder te categoriseren en is nuttig aangezien de hoeveelheid digitale informatie groeit](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub).
+* **informatie van Activa (titel, markeringen, of slimme markeringen):** [!DNL Content Hub] gebruikt slim onderzoeksalgoritme om onderzoeksresultaten nauwkeurig en als relevant te rangschikken als mogelijk. [ Meta-gegevens ](#asset-properties.md) is de inzameling van alle gegevens beschikbaar voor activa, maar het kan niet noodzakelijk in dat activa worden bevat. [ het helpt u verder categoriseren activa en is nuttig aangezien de hoeveelheid digitale informatie ](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub) groeit.
 
-* **Datum van laatste wijziging:** De elementen die onlangs zijn gewijzigd, staan boven aan de lijst met zoekresultaten. U kunt het datumbereik naar wens filteren.
+* **Laatste gewijzigde datum:** De activa die onlangs werden gewijzigd verschijnen op de bovenkant van de lijst van onderzoeksresultaten. U kunt het datumbereik naar wens filteren.
 
-* **Gebruik:** De algemeen gebruikte elementen staan boven aan de zoeklijst.
+* **Gebruik:** de algemeen gebruikte activa verschijnen op de bovenkant van de onderzoekslijst.
 
-* **Zoekgeschiedenis:** Klik in het zoekvak zonder een teken te typen voor de zoekgeschiedenis. U kunt ook een bepaald trefwoord uit de geschiedenis verwijderen. De zoekgeschiedenis wordt opgeslagen in het cachegeheugen van een webbrowser, wat betekent dat als u de [!DNL Content Hub] Als u in een andere browser of in een ander cachegeheugen van de browser zoekt, kunt u de zoekgeschiedenis niet meer weergeven.
+* **geschiedenis van het Onderzoek:** klik binnen het onderzoeksvakje zonder een karakter te typen om uw onderzoeksgeschiedenis te krijgen. U kunt ook een bepaald trefwoord uit de geschiedenis verwijderen. De zoekgeschiedenis wordt opgeslagen in het cachegeheugen van een webbrowser. Dit betekent dat u de zoekgeschiedenis niet meer kunt weergeven als u de zoekopdracht in [!DNL Content Hub] opent in een andere browser of als u het cachegeheugen van de browser wist.
 
-* **Zoeken terwijl u typt:** De [!DNL Content Hub] zoekopdrachten verbeteren de zoekervaring door tijdens het typen automatisch aangevulde suggesties op te geven.
+* **Onderzoek terwijl u typt:** het [!DNL Content Hub] onderzoek verbetert uw onderzoekservaring door autocomplete suggesties te verstrekken aangezien u begint te typen.
 
 ## Basiszoekopdracht {#basic-search}
 
-Basiszoekopdracht uitvoeren op [!DNL the Content Hub], navigeert u naar de zoekbalk en geeft u het trefwoord op dat u wilt zoeken. Navigeer naar de filters die beschikbaar zijn in het linkervenster en pas deze toe om de zoekresultaten te beperken.
+Als u een standaardzoekopdracht wilt uitvoeren op [!DNL the Content Hub] , navigeert u naar de zoekbalk en geeft u het trefwoord op dat u wilt zoeken. Navigeer naar de filters die beschikbaar zijn in het linkervenster en pas deze toe om de zoekresultaten te beperken.
 
-Zoek bijvoorbeeld naar alle **[!UICONTROL JPEG]** afbeeldingen met trefwoord `architect` in de richtlijn, die in het laatste jaar is gewijzigd. Voer de volgende stappen uit om dit scenario uit te voeren:
+Zoek bijvoorbeeld naar alle **[!UICONTROL JPEG]** -afbeeldingen met trefwoord `architect` in de afbeelding, die in het laatste jaar zijn gewijzigd. Voer de volgende stappen uit om dit scenario uit te voeren:
 
-1. Opgeven `architect` als het zoekwoord.
+1. Geef `architect` op als zoektrefwoord.
 
-1. Navigeren naar het deelvenster Filters > **[!UICONTROL Format]** > selecteren **[!UICONTROL JPEG]**.
+1. Navigeer naar het deelvenster Filters > **[!UICONTROL Format]** > selecteer **[!UICONTROL JPEG]** .
 
-1. Navigeren naar **[!UICONTROL Modified]** > geef het datumbereik op.
+1. Navigeer naar **[!UICONTROL Modified]** > geef het datumbereik op.
 
-   ![Basiszoekopdracht](assets/basic-search.png)
+   ![ Basis onderzoek ](assets/basic-search.png)
 
 ## De zoekresultaten verfijnen met filters {#narrow-down-search-results}
 
 Gebruik het deelvenster Filters om te zoeken naar elementen op basis van metagegevens. U kunt zoekresultaten filteren op basis van verschillende zoekvoorspelling. U kunt alle geschikte voorspelling selecteren om uw zoekresultaten te minimaliseren of te verkleinen. Wanneer u meerdere opties in een filter selecteert, geeft Content Hub de elementen weer die overeenkomen met een van de opties die in een filter zijn geselecteerd. Wanneer u echter meerdere opties voor meerdere filters selecteert, geeft Content Hub alleen de elementen weer die overeenkomen met alle opties die voor de verschillende filters zijn geselecteerd om de zoekresultaten te beperken.
 
-De standaardfilters bevatten bestandsindeling, goedgekeurd op, datum van goedkeuring, verlopen en niet verlopen elementen en vervaldatum. Beheerders kunnen ook de filters configureren die in de lijst met filters worden weergegeven. Zie voor meer informatie [Content Hub-gebruikersinterface configureren](configure-content-hub-ui-options.md#configure-filters-content-hub).
+De standaardfilters bevatten bestandsindeling, goedgekeurd op, datum van goedkeuring, verlopen en niet verlopen elementen en vervaldatum. Beheerders kunnen ook de filters configureren die in de lijst met filters worden weergegeven. Voor meer informatie, zie [ Content Hub gebruikersinterface ](configure-content-hub-ui-options.md#configure-filters-content-hub) vormen.
 
 <!--
 
@@ -152,4 +152,4 @@ De standaardfilters bevatten bestandsindeling, goedgekeurd op, datum van goedkeu
 
 ## Doe meer met zoeken {#do-more-with-search}
 
-[!DNL The Content Hub] is niet beperkt tot zoeken, maar stelt u in staat aanvullende handelingen uit te voeren, zoals [downloaden](download-assets-content-hub.md), [delen](share-assets-content-hub.md), en [elementen toevoegen aan verzameling](collections-content-hub.md), rechtstreeks vanuit de interface voor zoeken of voorvertonen. Selecteer de elementen op de pagina met zoekresultaten om deze opties weer te geven.
+[!DNL The Content Hub] is niet beperkt tot onderzoek, in plaats daarvan staat het u toe om extra acties uit te voeren, zoals [ download ](download-assets-content-hub.md), [ aandeel ](share-assets-content-hub.md), en [ voegt activa aan inzameling ](collections-content-hub.md), recht van het onderzoek of voorproefinterface toe. Selecteer de elementen op de pagina met zoekresultaten om deze opties weer te geven.

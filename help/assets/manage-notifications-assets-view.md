@@ -1,6 +1,6 @@
 ---
 title: Meldingen beheren
-description: De bewerkingen die worden uitgevoerd op de middelen of mappen die beschikbaar zijn in de opslagplaats, controleren met behulp van de meldingen in de middelenweergave.
+description: Met de Assets-weergavemeldingen kunt u de bewerkingen controleren die worden uitgevoerd op de middelen of mappen die beschikbaar zijn in de opslagplaats.
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Middelen, mappen en verzamelingen controleren {#watch-assets-folders}
 
-Met de middelenweergavemeldingen kunt u de bewerkingen controleren die worden uitgevoerd op de middelen, mappen of verzamelingen in de opslagplaats. U moet de inhoud selecteren en zich erop abonneren waarvoor de meldingen naar u worden verzonden. U kunt ook de categorieën configureren waarvoor de meldingen naar u worden verzonden.
+Met Assets-weergavemeldingen kunt u de bewerkingen controleren die worden uitgevoerd op de middelen, mappen of verzamelingen die beschikbaar zijn in de opslagplaats. U moet de inhoud selecteren en zich erop abonneren waarvoor de meldingen naar u worden verzonden. U kunt ook de categorieën configureren waarvoor de meldingen naar u worden verzonden.
 
 ## Abonneren op berichtcategorieën {#subscribe-to-notification-categories}
 
-U kunt een keuze maken in een lijst met categorieën en u kunt zich hierop abonneren. In de weergave Middelen worden de meldingen alleen naar u verzonden voor de categorieën die u selecteert uit de beschikbare opties:
+U kunt een keuze maken in een lijst met categorieën en u kunt zich hierop abonneren. De Assets-weergave verzendt de meldingen alleen naar de categorieën die u selecteert uit de beschikbare opties:
 
 <table>
     <tbody>
@@ -62,44 +62,44 @@ U kunt een keuze maken in een lijst met categorieën en u kunt zich hierop abonn
 
 Abonneer u op de berichtcategorieën:
 
-1. Klikken ![belpictogram](assets/bell-icon.svg) rechts van de menubalk in de gebruikersinterface van de middelenweergave.
+1. Klik ![ belpictogram ](assets/bell-icon.svg) bij het rechtereind van de menubar op het de meningsgebruikersinterface van Assets.
 
-1. Klikken ![instellingenpictogram](assets/settings-icon.svg) om de [!UICONTROL Experience Cloud preferences] pagina.
+1. Klik ![ montagespictogram ](assets/settings-icon.svg) om de [!UICONTROL Experience Cloud preferences] pagina te bekijken.
 
-1. Klik op de knop **[!UICONTROL Notifications]** beschikbaar in het linkerdeelvenster.
+1. Klik op de optie **[!UICONTROL Notifications]** in het linkerdeelvenster.
 
-1. In de **[!UICONTROL Notifications]** , naar de sectie [!UICONTROL Assets view] en zorgt u ervoor dat de schakeloptie wordt overgeschakeld naar de status ON.
+1. Navigeer in de sectie **[!UICONTROL Notifications]** naar de sectie [!UICONTROL Assets view] en controleer of de schakeloptie is ingesteld op Aan.
 
-   ![Meldingen in middelenweergave](assets/enable-notifications.png)
+   ![ Meldingen in de mening van Assets ](assets/enable-notifications.png)
 
-1. Klikken **[!UICONTROL Customize]** om de berichtcategorieën te bekijken.
-   ![Meldingen in middelenweergave](assets/enable-notification-categories.png)
+1. Klik op **[!UICONTROL Customize]** om de berichtcategorieën weer te geven.
+   ![ Meldingen in de mening van Assets ](assets/enable-notification-categories.png)
 
 1. Selecteer de berichtcategorieën waarvoor u op de hoogte moet worden gesteld.
 
 ## Mappen, elementen of verzamelingen controleren en de controle ervan opheffen {#watch-unwatch-assets}
 
-Na [abonneren op de berichtcategorieën](#subscribe-to-notification-categories), moet u zich op de inhoud abonneren om meldingen te ontvangen.
+Na [ het intekenen aan de berichtcategorieën ](#subscribe-to-notification-categories), moet u aan de inhoud intekenen beginnen berichten te ontvangen.
 
 >[!NOTE]
 >
->* Voor **[!UICONTROL Requests]** en **[!UICONTROL Assigned to me]** berichtcategorieën. U hoeft zich niet op de inhoud te abonneren nadat u zich hebt geabonneerd op de berichtcategorieën. Meldingen worden automatisch naar u verzonden voor aanvragen die u hebt gemaakt en wanneer een taak aan u is toegewezen.
->* In de weergave Elementen worden alleen meldingen verzonden wanneer andere gebruikers handelingen op de geabonneerde inhoud uitvoeren. U ontvangt geen meldingen voor de acties die u uitvoert op de geabonneerde inhoud.
+>* Voor de berichtcategorieën **[!UICONTROL Requests]** en **[!UICONTROL Assigned to me]** hoeft u zich niet op de inhoud te abonneren nadat u zich hebt geabonneerd op de berichtcategorieën. Meldingen worden automatisch naar u verzonden voor aanvragen die u hebt gemaakt en wanneer een taak aan u is toegewezen.
+>* In de Assets-weergave worden alleen meldingen verzonden wanneer andere gebruikers handelingen op de geabonneerde inhoud uitvoeren. U ontvangt geen meldingen voor de acties die u uitvoert op de geabonneerde inhoud.
 
-Als u zich wilt abonneren op de inhoud, selecteert u de map, het middel of de verzameling waarop u zich wilt abonneren en klikt u **[!UICONTROL Watch]**.
+Als u zich wilt abonneren op de inhoud, selecteert u de map, het element of de verzameling waarop u zich wilt abonneren en klikt u op **[!UICONTROL Watch]** .
 
-In de weergave Elementen wordt een succesbericht weergegeven. U kunt op **[!UICONTROL Go to notification preferences]** beschikbaar op het succesbericht om uw [abonnement op berichtcategorieën](#subscribe-to-notification-categories).
+In de Assets-weergave wordt een succesbericht weergegeven. U kunt **[!UICONTROL Go to notification preferences]** beschikbaar op het succesbericht klikken om uw [ abonnement aan berichtcategorieën ](#subscribe-to-notification-categories) uit te geven.
 
-![Meldingen in middelenweergave](assets/watch-assets.png)
+![ Meldingen in de mening van Assets ](assets/watch-assets.png)
 
-In de weergave Elementen worden nu meldingen verzonden voor de geabonneerde categorieën. U kunt ook meerdere elementen, mappen of verzamelingen selecteren en op **[!UICONTROL Watch]** tijd besparen. Als u echter meerdere entiteiten selecteert waarop een aantal van deze al is geabonneerd, **[!UICONTROL Watch]** wordt niet weergegeven.
+De Assets-weergave verzendt nu berichten voor de geabonneerde rubrieken. U kunt ook meerdere elementen, mappen of verzamelingen selecteren en op **[!UICONTROL Watch]** klikken om tijd te besparen. Als u echter meerdere entiteiten selecteert waarvan sommige al zijn geabonneerd, wordt de optie **[!UICONTROL Watch]** niet weergegeven.
 
-Als u uw abonnement wilt opzeggen, selecteert u het element, de map of de verzameling waarvoor u een abonnement hebt genomen en klikt u op **[!UICONTROL Unwatch]**.
+Als u een abonnement wilt opzeggen, selecteert u het element, de map of de verzameling waarvoor u een abonnement hebt genomen en klikt u op **[!UICONTROL Unwatch]** .
 
 ## Meldingen weergeven {#view-notifications}
 
-De meldingen worden rechts op de menubalk in de gebruikersinterface van de weergave Elementen weergegeven.
+De meldingen worden rechts op de menubalk in de gebruikersinterface van de Assets-weergave weergegeven.
 
-![Meldingen in middelenweergave](assets/notifications-assets-essentials.png)
+![ Meldingen in de mening van Assets ](assets/notifications-assets-essentials.png)
 
-Wanneer u op een melding klikt, navigeert de middelenweergave u naar het juiste middel of de juiste map waarnaar in het bericht wordt verwezen.
+Wanneer u op een melding klikt, navigeert de Assets-weergave u naar het juiste middel of de juiste map waarnaar in het bericht wordt verwezen.

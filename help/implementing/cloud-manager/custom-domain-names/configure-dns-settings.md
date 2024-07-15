@@ -18,9 +18,9 @@ Nadat uw naam van het douanedomein met succes wordt geverifieerd en opgesteld, b
 
 ## Wat zijn DNS-instellingen? {#dns-settings}
 
-A `CNAME` of Een record: wanneer provisioned is, wordt al het internetverkeer voor het domein doorgestuurd naar de locatie waar het naartoe wijst. Als die plaats niet provisioned is om het verkeer te dienen, is er een stroomonderbreking. Als het niet is getest, kunnen er fouten in de inhoud optreden. Daarom wordt deze stap altijd uitgevoerd nadat het testen is voltooid en u klaar bent om live te gaan.
+Een `CNAME` - of A-record leidt na provisioned al het internetverkeer voor het domein naar de locatie waar het naartoe wijst. Als die plaats niet provisioned is om het verkeer te dienen, is er een stroomonderbreking. Als het niet is getest, kunnen er fouten in de inhoud optreden. Daarom wordt deze stap altijd uitgevoerd nadat het testen is voltooid en u klaar bent om live te gaan.
 
-Om deze montages te vormen, moet u bepalen als `CNAME` of Apex-record moet zo zijn geconfigureerd dat uw aangepaste domeinnaam naar de domeinnaam van Cloud Manager wordt verwezen. De volgende secties zullen u helpen bepalen welk type van verslag voor uw DNS configuratie aangewezen is.
+Als u deze instellingen wilt configureren, moet u bepalen of een `CNAME` - of Apex-record moet zijn geconfigureerd om de aangepaste domeinnaam te laten verwijzen naar de Cloud Manager-domeinnaam. De volgende secties zullen u helpen bepalen welk type van verslag voor uw DNS configuratie aangewezen is.
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ Om deze montages te vormen, moet u bepalen als `CNAME` of Apex-record moet zo zi
 
 ## CNAME-record {#cname-record}
 
-Een canonieke naam of CNAME-record is een type DNS-record dat een aliasnaam toewijst aan een echte of canonieke domeinnaam. CNAME-records worden doorgaans gebruikt om een subdomein toe te wijzen, zoals `www.example.com` naar het domein dat de inhoud van dat subdomein host.
+Een canonieke naam of CNAME-record is een type DNS-record dat een aliasnaam toewijst aan een echte of canonieke domeinnaam. CNAME-records worden doorgaans gebruikt om een subdomein, zoals `www.example.com` , toe te wijzen aan het domein dat de inhoud van dat subdomein host.
 
-Meld u aan bij uw domeinregistrar en maak een `CNAME` registreert om uw naam van het douanedomein aan het doel zoals in de volgende lijst te richten.
+Meld u aan bij uw domeinregistrar en maak een `CNAME` -record om de aangepaste domeinnaam naar het doel te verwijzen, zoals in de volgende tabel.
 
 | CNAME | Aangepast domeinnaampunt voor doel |
 |--- |--- |
@@ -38,9 +38,9 @@ Meld u aan bij uw domeinregistrar en maak een `CNAME` registreert om uw naam van
 
 ## APEX-record {#apex-record}
 
-Een apex-domein is een aangepast domein dat geen subdomein bevat, zoals `example.com`. Een apex domein wordt gevormd met een `A` , `ALIAS` , of `ANAME` neemt door uw DNS leverancier op. Apex-domeinen moeten verwijzen naar specifieke IP-adressen.
+Een apex-domein is een aangepast domein dat geen subdomein bevat, zoals `example.com` . Een ex-domein wordt geconfigureerd met een `A` , `ALIAS` of `ANAME` -record via uw DNS-provider. Apex-domeinen moeten verwijzen naar specifieke IP-adressen.
 
-Voeg het volgende toe `A` records naar de DNS-instellingen van uw domein via uw domeinprovider.
+Voeg de volgende `A` verslagen aan DNS montages van uw domein als uw domeinleverancier toe.
 
 * `A RECORD`
 

@@ -1,5 +1,5 @@
 ---
-title: Hoe wijzigt u de pagina Nul-inhoud in Designer?
+title: Hoe wijzigt u de pagina Nulinhoud in Designer?
 description: Wijzig het bericht dat wordt weergegeven op Pagina Nul van een XFA-PDF voor niet-Adobe PDF-viewers.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -14,21 +14,21 @@ ht-degree: 0%
 
 # Pagina-nulinhoud wijzigen in Designer {#changing-page-zero-content-in-designer}
 
-Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer, zoals de standaard PDF-viewer in [!DNL Chrome] of [!DNL Firefox], kan de inhoud van het PDF/XFA-formulier niet lezen. Het standaardbericht Pagina Nul wordt hieronder weergegeven.
+Pagina-inhoud nul wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer, zoals de standaardviewer voor PDF in [!DNL Chrome] of [!DNL Firefox] , de inhoud van het PDF/XFA-formulier niet kan lezen. Het standaardbericht Pagina Nul wordt hieronder weergegeven.
 
-![defaultPage0message](assets/defaultpage0message.png)
+![ defaultPage0message ](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] Met de versie van Designer kunt u het bericht wijzigen dat wordt weergegeven op Pagina Nul. Voer de volgende stappen uit om het bericht Pagina nul te wijzigen:
+Met de [!DNL AEM Forms] -versie van Designer kunt u het bericht wijzigen dat wordt weergegeven op Pagina Nul. Voer de volgende stappen uit om het bericht Pagina nul te wijzigen:
 
-1. Zorg ervoor dat u de [!DNL AEM Forms] versie van Designer geïnstalleerd. U kunt de versie controleren van het ongeveer scherm van ontwerper.
+1. Zorg ervoor dat de [!DNL AEM Forms] -versie van Designer is geïnstalleerd. U kunt de versie controleren van het ongeveer scherm van ontwerper.
 
 1. Open het formulier waarvoor u de inhoud Pagina nul wilt wijzigen.
 
-1. Klikken **[!UICONTROL File]** > **[!UICONTROL Form Properties]**.
+1. Klik op **[!UICONTROL File]** > **[!UICONTROL Form Properties]** .
 
-1. In de [!UICONTROL Form Properties] dialoogvenster, klikt u op ![plus](assets/plus.png) (Plus-pictogram) om een aangepaste eigenschap toe te voegen.
+1. In de [!UICONTROL Form Properties] dialoog, klik ![ plus ](assets/plus.png) (plus pictogram) om een douanebezit toe te voegen.
 
-1. Opgeven **_pagezerocontent** als de naam van de eigenschap.
+1. Specificeer **_pagezerocontent** als naam van het bezit.
 1. Voeg het nieuwe bericht Pagina Nul, in Rich Text-indeling, als waarde toe. Bijvoorbeeld:
 
 
@@ -38,7 +38,7 @@ Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer,
 
 1. Bekijk het formulier PDF in browser om te bevestigen dat het bericht is bijgewerkt. De bovenstaande voorbeeldwaarde ziet er als volgt uit:
 
-   ![gewijzigd bericht](assets/changedmessage.png)
+   ![ veranderd bericht ](assets/changedmessage.png)
 
 >[!NOTE]
 >
@@ -46,5 +46,5 @@ Pagina Nul-inhoud wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer,
 
 >[!MORELIKETHIS]
 >
->* [Forms Designer downloaden en installeren om Document of Record-sjablonen te maken](/help/forms/installing-configuring-designer.md)
->* [Met Forms Designer kunt u DoR-sjablonen (Document of Record) en formulierfragmenten maken?](/help/forms/use-forms-designer.md)
+>* [ Download en installeer Forms Designer om Document van de malplaatjes van het Verslag te creëren ](/help/forms/installing-configuring-designer.md)
+>* [ Forms Designer van het gebruik om Document van de malplaatjes en vormfragmenten van het Verslag (van Dor) te creëren?](/help/forms/use-forms-designer.md)

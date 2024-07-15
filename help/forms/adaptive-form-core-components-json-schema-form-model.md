@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| Stichting | [Klik hier](/help/forms/adaptive-form-json-schema-form-model.md) |
+| Stichting | [ klik hier ](/help/forms/adaptive-form-json-schema-form-model.md) |
 | Kernonderdelen | Dit artikel |
 
 
@@ -26,18 +26,18 @@ ht-degree: 0%
 Voor het ontwerpen van een adaptief formulier op basis van kerncomponenten met behulp van een JSON-schema als formuliermodel is basiskennis van het JSON-schema vereist. Het wordt aanbevolen de volgende inhoud vóór dit artikel te lezen.
 
 * [Een adaptief formulier maken op basis van kerncomponenten](/help/forms/creating-adaptive-form-core-components.md)
-* [JSON Schema](https://json-schema.org/)
+* [ JSON Schema ](https://json-schema.org/)
 
 ## Een JSON-schema gebruiken als formuliermodel  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms ondersteunt het maken van een adaptief formulier op basis van kerncomponenten door een bestaand JSON-schema als formuliermodel te gebruiken. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet compatibel zijn met [v4-specificaties](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms ondersteunt het maken van een adaptief formulier op basis van kerncomponenten door een bestaand JSON-schema als formuliermodel te gebruiken. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het Schema JSON u gebruikt zou met [ v4 specificaties ](https://json-schema.org/draft-04/schema) volgzaam moeten zijn.
 
 De belangrijkste eigenschappen van het gebruiken van een Schema JSON zijn:
 
 * De structuur van JSON wordt als een structuur weergegeven op het tabblad Inhoudszoeker in de ontwerpmodus voor een adaptief formulier. U kunt elementen vanuit de JSON-hiërarchie naar het adaptieve formulier slepen op basis van kerncomponenten.
 * U kunt het formulier vooraf invullen met JSON dat voldoet aan het bijbehorende schema.
 * Bij verzending worden de gegevens die door de gebruiker zijn ingevoerd, verzonden als JSON die wordt uitgelijnd met het bijbehorende schema.
-* U kunt het formulier ook maken op basis van het JSON-schema volgens de specificaties van het dialoogvenster [Versie 2012-20](https://json-schema.org/draft/2020-12/release-notes).
+* U kunt de vorm ook tot stand brengen die op het schema JSON volgens de specificaties van [ wordt gebaseerd 2012-20 versie ](https://json-schema.org/draft/2020-12/release-notes).
 
 Een JSON-schema bestaat uit eenvoudige en complexe elementtypen. De elementen hebben attributen die regels aan het element toevoegen. Wanneer deze elementen en kenmerken naar een adaptief formulier worden gesleept, worden ze automatisch toegewezen aan de corresponderende componenten Adaptief formulier.
 
@@ -83,24 +83,24 @@ Deze toewijzing van JSON-elementen met componenten Adaptief formulier ziet er al
    <td><br /> <br /> Tekstveld<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>number, eigenschap<br /> </td>
-   <td>Numeriek veld met subtype ingesteld op zwevend<br /> </td>
+   <td>number, eigenschap <br /> </td>
+   <td>Numeriek veld met subtype ingesteld op zwevend <br /> </td>
   </tr>
   <tr>
-   <td>integer, eigenschap<br /> </td>
-   <td>Numeriek veld met subtype ingesteld op geheel getal<br /> </td>
+   <td>integer, eigenschap <br /> </td>
+   <td>Numeriek veld met subtype ingesteld op geheel getal <br /> </td>
   </tr>
   <tr>
-   <td>boolean, eigenschap<br /> </td>
-   <td>Overschakelen<br /> </td>
+   <td>boolean, eigenschap <br /> </td>
+   <td>Overschakelen <br /> </td>
   </tr>
   <tr>
-   <td>objecteigenschap<br /> </td>
-   <td>Deelvenster<br /> </td>
+   <td>objecteigenschap <br /> </td>
+   <td>Deelvenster <br /> </td>
   </tr>
   <tr>
    <td>array, eigenschap</td>
-   <td>Herhaalbaar deelvenster met min en max. gelijk aan minItems respectievelijk maxItems. Alleen homogene arrays worden ondersteund. De itembeperking moet dus een object zijn en geen array.<br /> </td>
+   <td>Herhaalbaar deelvenster met min en max. gelijk aan minItems respectievelijk maxItems. Alleen homogene arrays worden ondersteund. Zo moet de puntenbeperking een voorwerp en niet een serie zijn.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -109,23 +109,23 @@ Deze toewijzing van JSON-elementen met componenten Adaptief formulier ziet er al
 
 Het adaptieve formulier gebruikt informatie die beschikbaar is in het JSON-schema om elk gegenereerd veld in kaart te brengen. Met name:
 
-* De `title` Deze eigenschap fungeert als label voor de componenten Adaptief formulier.
-* De `description` wordt ingesteld als lange beschrijving voor een component Adaptief formulier.
-* De `default` Deze eigenschap fungeert als de beginwaarde van een veld Adaptief formulier.
-* De `maxLength` eigenschap is ingesteld als `maxlength` kenmerk van de tekstveldcomponent.
-* De `minimum`, `maximum`, `exclusiveMinimum`, en `exclusiveMaximum` worden gebruikt voor de component Numeriek vak.
-* Om waaier voor te steunen `DatePicker component` aanvullende JSON-schemaeigenschappen `minDate` en `maxDate` worden opgegeven.
-* De `minItems` en `maxItems` worden gebruikt om het aantal items/velden te beperken dat kan worden toegevoegd aan of verwijderd uit een deelvenstercomponent.
-* De `readOnly` eigenschap stelt de `readonly` kenmerk van een component Adaptief formulier.
-* De `required` geeft de eigenschap aan dat het veld Adaptief formulier verplicht is, terwijl in het deelvenster (waar het type object is) de uiteindelijke JSON-gegevens velden hebben met een lege waarde die overeenkomt met dat object.
-* De `pattern` Deze eigenschap wordt ingesteld als het validatiepatroon (reguliere expressie) in Adaptief formulier.
-* De extensie van het JSON-schemabestand moet .schema.json blijven. Bijvoorbeeld: &lt;filename>.schema.json.
+* De eigenschap `title` fungeert als label voor de componenten Adaptief formulier.
+* De eigenschap `description` wordt ingesteld als lange beschrijving voor een component Adaptief formulier.
+* De eigenschap `default` fungeert als beginwaarde van een veld Adaptief formulier.
+* De eigenschap `maxLength` wordt ingesteld als `maxlength` -kenmerk van de tekstveldcomponent.
+* De eigenschappen `minimum`, `maximum`, `exclusiveMinimum` en `exclusiveMaximum` worden gebruikt voor de component NumericBox.
+* Als u een bereik voor `DatePicker component` extra JSON-schemaeigenschappen `minDate` en `maxDate` wilt ondersteunen, worden deze opgegeven.
+* De eigenschappen `minItems` en `maxItems` worden gebruikt om het aantal items/velden te beperken dat kan worden toegevoegd aan of verwijderd uit een deelvenstercomponent.
+* Met de eigenschap `readOnly` wordt het kenmerk `readonly` van een component Adaptief formulier ingesteld.
+* De eigenschap `required` markeert het veld Adaptief formulier als verplicht, terwijl in het deelvenster (waar type object is) de uiteindelijke JSON-gegevens velden bevatten met een lege waarde die overeenkomt met dat object.
+* De eigenschap `pattern` wordt ingesteld als het validatiepatroon (reguliere expressie) in Adaptief formulier.
+* De extensie van het JSON-schemabestand moet .schema.json blijven. Bijvoorbeeld &lt;filename>.schema.json.
 
 ## Voorbeeld JSON-schema {#sample-json-schema}
 
 >[!BEGINTABS]
 
->[!TAB JSON Schema v4]
+>[!TAB  JSON Schema v4 ]
 
 ```json
 {
@@ -302,7 +302,7 @@ Het adaptieve formulier gebruikt informatie die beschikbaar is in het JSON-schem
 ```
 
 
->[!TAB JSON Schema 2012-20]
+>[!TAB  JSON Schema 2012-20 ]
 
 
 ```json
@@ -773,7 +773,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
    <td>
     <ul>
      <li>Numeriek vak</li>
-     <li>Numerieke stap<br /> </li>
+     <li>Numerieke stap <br /> </li>
      <li>Datumkiezer</li>
     </ul> </td>
   </tr>
@@ -857,13 +857,13 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
 
 Voer de volgende stappen uit om alle op JSON-schema&#39;s gebaseerde Adaptieve Forms in staat te stellen schema-compatibele gegevens te genereren bij het verzenden van formulieren:
 
-1. Ga naar Experience Manager webconsole op `https://server:host/system/console/configMgr`.
-1. Zoeken **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**.
+1. Ga naar de webconsole van de Experience Manager op `https://server:host/system/console/configMgr` .
+1. Zoek **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]** .
 1. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
-1. Selecteer de **[!UICONTROL Generate Schema Compliant Data]** selectievakje.
+1. Schakel het selectievakje **[!UICONTROL Generate Schema Compliant Data]** in.
 1. Sla de instellingen op.
 
-![adaptieve vorm en interactieve communicatie webkanaalconfiguratie](/help/forms/assets/af-ic-web-channel-configuration.png)
+![ adaptieve vorm en interactieve configuratie van het communicatieWebkanaal ](/help/forms/assets/af-ic-web-channel-configuration.png)
 
 
 ## Niet-ondersteunde constructies  {#non-supported-constructs}
@@ -878,22 +878,22 @@ Adaptive Forms biedt geen ondersteuning voor de volgende JSON-schemaconstructies
 
 ## Veelgestelde vragen {#frequently-asked-questions}
 
-**Waarom kan ik geen afzonderlijke elementen van een subformulier (structuur gegenereerd van een complex type) slepen voor herhaalbare subformulieren (waarden voor minOccurs of maxOccurs zijn groter dan 1)?**
+**waarom ik niet individuele elementen van een subformulier (structuur die van om het even welk complex type wordt geproduceerd) voor herhaalbare subforms (minOccurs of maxOccurs waarden zijn groter dan 1) kan slepen?**
 
 In een herhaalbaar subformulier moet u het volledige subformulier gebruiken. Als u alleen selectieve velden wilt, gebruikt u de volledige structuur en verwijdert u de ongewenste velden.
 
-**Ik heb een lange complexe structuur in de Inhoudszoeker. Hoe kan ik een specifiek element vinden?**
+**ik heb een lange complexe structuur in de Vinder van de Inhoud. Hoe kan ik een specifiek element vinden?**
 
 U hebt twee opties:
 
 * Door de boomstructuur schuiven
 * Gebruik het vak Zoeken om een element te zoeken
 
-**Wat moet de extensie van het JSON-schemabestand zijn?**
+**wat de uitbreiding van het JSON schemadossier zou moeten zijn?**
 
-De extensie van het JSON-schemabestand moet .schema.json zijn. Bijvoorbeeld: &lt;filename>.schema.json.
+De extensie van het JSON-schemabestand moet .schema.json zijn. Bijvoorbeeld &lt;filename>.schema.json.
 
-**Is `aem:afProperties` ondersteund als onderdeel van JSON-schema in Adaptive Forms op basis van kerncomponenten?**
+**wordt `aem:afProperties` gesteund als deel van schema JSON in Aangepast Forms dat op kerncomponenten wordt gebaseerd?**
 
 Nee, `aem:afProperties` wordt niet ondersteund voor kerncomponenten. Deze eigenschap wordt alleen ondersteund voor basiscomponenten.
 

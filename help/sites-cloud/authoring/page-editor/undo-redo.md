@@ -24,7 +24,7 @@ U kunt bijvoorbeeld:
 
 * Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u Ongedaan maken hebt gebruikt.
 * U kunt maximaal 20 bewerkingen ongedaan maken (standaardinstelling).
-* Ook gebruiken [Sneltoetsen](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) voor ongedaan maken en opnieuw uitvoeren.
+* Gebruik ook [ kortere weg van het Toetsenbord ](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) voor ongedaan maken en opnieuw doen.
 
 U kunt de volgende typen paginawijzigingen ongedaan maken en opnieuw uitvoeren:
 

@@ -15,11 +15,11 @@ ht-degree: 0%
 
 # Concepten ontwerpen en publiceren {#authoring-publishing}
 
-Voor een inhoudontwerper, kan een AEM as a Cloud Service installatie als drie primaire lagen op zijn meest basisniveau worden beschouwd
+Een AEM as a Cloud Service-installatie kan voor een auteur van inhoud worden beschouwd als drie primaire lagen op het meest elementaire niveau
 
 * Auteurslijst
 * Voorvertoning van rij
-* Lijst publiceren
+* Publish-niveau
 
 Deze lagen hebben invloed op de manier waarop u inhoud op uw website kunt plaatsen, zodat uw bezoekers er toegang toe hebben. De basisworkflow is:
 
@@ -29,9 +29,9 @@ Deze lagen hebben invloed op de manier waarop u inhoud op uw website kunt plaats
 
 Inhoud kan van verschillende typen zijn, zoals pagina&#39;s, elementen en publicaties. Voorvertoningen van inhoud kunnen naar goeddunken van de auteur worden overgeslagen.
 
-![Diagram van auteur, uitgever, en verzenders](assets/author-publish.jpg)
+![ Diagram van auteur, uitgever, en verzenders ](assets/author-publish.jpg)
 
-Zie het document voor meer informatie over de technische architectuur van AEM as a Cloud Service [Een introductie van de Architectuur van Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+Voor verdere details over de technische architectuur van AEM as a Cloud Service, te zien gelieve het document [ Een Inleiding aan de Architectuur van Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
 
 {{edge-delivery-authoring}}
 
@@ -54,20 +54,20 @@ Bovendien zijn er beheertaken die u helpen uw inhoud te beheren:
 
 AEM wordt ook vanuit de auteursomgeving beheerd.
 
-Zie het document [Handleiding Snel aan de slag voor ontwerpen](/help/sites-cloud/authoring/quick-start.md) voor een overzicht van het ontwerpproces.
+Gelieve te zien de document [ Snelle Gids van het Begin aan Authoring ](/help/sites-cloud/authoring/quick-start.md) voor een overzicht van het auteursproces.
 
 ## Inhoud voorvertonen {#previewing-content}
 
 AEM biedt ook een voorbeeldservice waarmee ontwikkelaars en makers van inhoud de uiteindelijke ervaring van een website kunnen voorvertonen voordat deze de publicatieomgeving bereikt en deze openbaar beschikbaar is.
 
-Zie het document [Inhoud voorvertonen](/help/sites-cloud/authoring/sites-console/previewing-content.md) voor nadere bijzonderheden.
+Gelieve te zien het document [ Previewing Inhoud ](/help/sites-cloud/authoring/sites-console/previewing-content.md) voor verdere details.
 
-## Publicatie-omgeving {#publish-environment}
+## Publish-omgeving {#publish-environment}
 
 Als de inhoud van uw site gereed is, wordt deze gepubliceerd naar de publicatieomgeving van de publicatielaag. Hier worden de pagina&#39;s van de website beschikbaar gesteld aan het beoogde publiek in overeenstemming met de vormgeving van uw inhoudssjabloon.
 
-Zie het document [Pagina&#39;s publiceren](/help/sites-cloud/authoring/sites-console/publishing-pages.md) voor meer informatie over het publiceren en het ongedaan maken van het publiceren van pagina&#39;s.
+Gelieve te zien het document [ Publiceren Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/publishing-pages.md) voor meer informatie over het publiceren en het unpublishing van pagina&#39;s.
 
 ## Dispatcher {#dispatcher}
 
-Om de prestaties voor bezoekers van uw website te optimaliseren, **[Dispatcher](/help/implementing/dispatcher/overview.md)** Hiermee implementeert u taakverdeling en caching voor zowel de publicatielagen als de voorvertoningslagen.
+Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher](/help/implementing/dispatcher/overview.md)** lading het in evenwicht brengen en het in cache plaatsen voor zowel uit publiceren als voorproeflijsten.

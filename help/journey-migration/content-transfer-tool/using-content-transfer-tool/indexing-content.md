@@ -20,13 +20,13 @@ ht-degree: 0%
 >title="Indexering van inhoud"
 >abstract="AEM Indexering verwijst naar het indexeren van de inhoud op de instantie Cloud Service na het migreren van inhoud naar de instantie. Indexering is vereist om het zoeken naar inhoud voor die instantie te ondersteunen."
 
-Zodra de Cloud Acceleration Manager de opname van inhoud in de Cloud Service-instantie heeft voltooid, kan deze worden gebruikt. In eerste instantie wordt de inhoud niet geïndexeerd, wat waarschijnlijk resulteert in een instabiele omgeving waarin problemen zoals ondoorzoekbare inhoud en verminderde prestaties kunnen worden verwacht. Voor optimale prestaties op de instantie wordt de inhoud automatisch geïndexeerd tijdens het migratieproces. Er hoeft niets te worden gedaan, behalve om de voortgang van de indexering te volgen.
+Zodra de Cloud Acceleration Manager de inhoud in uw Cloud Service-instantie heeft opgenomen, is deze klaar om te worden gebruikt. In eerste instantie wordt de inhoud niet geïndexeerd, wat waarschijnlijk resulteert in een instabiele omgeving waarin problemen zoals ondoorzoekbare inhoud en verminderde prestaties kunnen worden verwacht. Voor optimale prestaties op de instantie wordt de inhoud automatisch geïndexeerd tijdens het migratieproces. Er hoeft niets te worden gedaan, behalve om de voortgang van de indexering te volgen.
 
-> Voor informatie over het starten van een inname raadpleegt u [Inhoud in Cloud Service invoegen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
+> Voor informatie over hoe te om een opname te beginnen, zie [ Ingesterend Inhoud in Cloud Service ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
 De volgende stappen tonen de algemene stroom u in UI tijdens het indexeren kunt verwachten te zien. Sommige labels bieden handige context in knopinfo. Houd de muisaanwijzer boven items om meer te weten te komen over de huidige indexstatus.
 
-Ga om te beginnen naar Cloud Acceleration Manager. Klik op de projectkaart en klik vervolgens op de kaart voor inhoudsoverdracht. Navigeren naar **Ingestietaken** en zie de vermelde banen.
+Ga eerst naar Cloud Acceleration Manager. Klik op de projectkaart en klik vervolgens op de kaart voor inhoudsoverdracht. Navigeer aan **IngestieBanen** en zie de vermelde banen.
 
 >[!NOTE]
 >U kunt de indexerende logboeken bekijken of downloaden door de acties van de innametaak te gebruiken, gebruikend.. drop-down lijst. De logbestanden zijn beschikbaar in het
@@ -56,7 +56,7 @@ Het indexeren van de instantie van de bestemmings Cloud Service zal zeer waarsch
 
 >[!TIP]
 >
-> Als de indexeertaak te lang lijkt te duren, moet u ervoor zorgen dat een [IP de Lijst van gewenste personen is niet toegepast](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager als dit Cloud Acceleration Manager verhindert de migratieservice te bereiken.
+> Als de het indexeren baan te lang schijnt te lopen, zorg ervoor dat een [ IP Lijst van gewenste personen niet ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) door Cloud Manager is toegepast aangezien het Cloud Acceleration Manager van het bereiken van de migratiedienst verhindert.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

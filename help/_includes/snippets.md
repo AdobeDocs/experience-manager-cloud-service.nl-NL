@@ -9,18 +9,18 @@ ht-degree: 0%
 
 ## Aanbieding voor proefdrukken zonder koptekst {#headless-trials-promotion}
 
-[![Ontdek onze headless CMS met proefversie van 30 dagen](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
+[![ krijgen om onze hoofdCMS met 30 dagproef te kennen ](./assets/aem-headless-trial-promo.png){align="left"} ](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
 
 ## Authoring Edge Delivery Services {#edge-delivery-authoring}
 
-[!BADGE Klik hier voor het ontwerpen AEM inhoud voor Edge Delivery Services.]{type=Positive url="/help/edge/overview.md" tooltip="AEM inhoud voor Edge Delivery Services ontwerpen"}
+[!BADGE  voor het ontwerpen AEM inhoud voor Edge Delivery Services, klik hier.]{type=Positive url="/help/edge/overview.md" tooltip="AEM inhoud voor Edge Delivery Services ontwerpen"}
 
 ## Zie ook {#see-also}
 
 * [Een AEM adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
 * [Een AEM adaptief formulier toevoegen aan de AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Thema&#39;s toepassen op een AEM adaptief formulier](/help/forms/using-themes-in-core-components.md)
-* [Componenten toevoegen aan een AEM adaptief formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+* [ voegt componenten aan een AEM Aangepaste Vorm ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components) toe
 * [CAPTCHA gebruiken in een AEM adaptieve vorm](/help/forms/captcha-adaptive-forms-core-components.md)
 * [PDF-versie (DoR) van een AEM adaptief formulier genereren](/help/forms/generate-document-of-record-core-components.md)
 * [Een AEM adaptief formulier vertalen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -32,7 +32,7 @@ ht-degree: 0%
 * [Aangepast formulier verbinden met Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Adobe Sign gebruiken in een AEM adaptief formulier](/help/forms/working-with-adobe-sign.md)
 * [Een nieuwe landinstelling toevoegen voor een adaptief formulier](/help/forms/supporting-new-language-localization-core-components.md)
-* [Adaptieve formuliergegevens naar een database verzenden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [ verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
 * [Verzend AanpassingsGegevens van de Vorm naar een eindpunt REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Adaptieve formuliergegevens naar AEM workflow verzenden](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Forms Portal gebruiken om AEM Adaptive Forms op een AEM website weer te geven](/help/forms/configure-forms-portal.md)
@@ -59,7 +59,7 @@ ht-degree: 0%
 * [Aan de slag met AEM Forms-Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [Een formulier maken met Google Sheets of Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Stel uw Google-werkbladen of Microsoft Excel-bestanden in om te beginnen met het accepteren van &#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Uw formulier publiceren en gegevens verzamelen](/help/edge/docs/forms/publish-forms.md)
+* [Publish uw formulier en begin gegevens te verzamelen](/help/edge/docs/forms/publish-forms.md)
 * [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [Herhaalbare secties toevoegen aan een &#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Een aangepast bedankbericht weergeven na &#x200B; verzenden van formulier](/help/edge/docs/forms/thank-you-page-form.md)
@@ -80,7 +80,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
   </tr>
   <tr>
     <td>Opties voor de vervolgkeuzelijst instellen </td>
-    <td>De opties voor de vervolgkeuzelijst worden ingesteld met behulp van de opties van de Regeleditor <b>Opties instellen voor</b> eigenschap.</td>
+    <td>De opties van de dropdown lijst worden geplaatst gebruikend de 2} Vastgestelde Opties van de Redacteur van de Regel van </b> bezit.<b></td>
     <td>De dropdown opties worden geplaatst gebruikend de douanefuncties. 
    </td>
    </tr>
@@ -107,8 +107,8 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
    </tr>
    <tr>
    <td>Service-uitvoereigenschap</td>
-   <td> Het de outputbezit van de Dienst wordt gesteund in <b>Waarde instellen van</b> optie van de Redacteur van de Regel. </td>
-   <td>De <b>Waarde instellen van</b> biedt geen ondersteuning voor de <b>Service-uitvoer</b> eigenschap voor het aanroepen van API's in de Rule Editor.
+   <td> Het de outputbezit van de Dienst wordt gesteund in de <b> Vastgestelde Waarde van </b> optie van de Redacteur van de Regel. </td>
+   <td>De <b> Vastgestelde Waarde van </b> optie steunt niet het <b> 3} bezit van de output van de Dienst {voor het aanhalen van APIs in de Redacteur van de Regel.</b>
    </td>
    </tr>
    </tr>

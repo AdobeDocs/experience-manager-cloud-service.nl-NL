@@ -25,45 +25,45 @@ U moet beheerdersrechten hebben om beperkingen voor het uploaden van elementen t
 
 ## Beperkingen toepassen voor het uploaden van middelen {#apply-restrictions-asset-uploadsssssss}
 
-Om te vormen [!DNL Experience Manager] om gebruikers te beperken tot het uploaden van bestanden van specifieke MIME-typen:
+Om [!DNL Experience Manager] te vormen om gebruikers te beperken om dossiers van specifieke types te uploaden MIME:
 
-1. Navigeren naar **[!UICONTROL Tools > Assets > Assets Configurations]**.
+1. Navigeer naar **[!UICONTROL Tools > Assets > Assets Configurations]** .
 
 1. Klik op **[!UICONTROL Upload Restrictions]**.
 
-1. Klikken **[!UICONTROL Add]** om de toegestane MIME-typen te definiëren.
+1. Klik op **[!UICONTROL Add]** om de toegestane MIME-typen te definiëren.
 
-1. Geef het MIME-type op in het tekstvak. U kunt op **[!UICONTROL Add]** nogmaals om meer toegestane MIME-typen op te geven. U kunt ook op ![verwijderpictogram](assets/delete-icon.svg) om een MIME-type uit de lijst te verwijderen.
+1. Geef het MIME-type op in het tekstvak. U kunt nogmaals op **[!UICONTROL Add]** klikken om meer toegestane MIME-typen op te geven. U kunt ![ schrappingspictogram ](assets/delete-icon.svg) ook klikken om het even welk type MIME van de lijst te schrappen.
 
 1. Klik op **[!UICONTROL Save]**.
 
-**Voorbeeld 1: het uploaden van alle afbeeldingen en PDF-bestanden naar Experience Manager Assets toestaan**
+**Voorbeeld 1: Toestaan uploadt van alle beelden en PDF dossiers aan Experience Manager Assets**
 
 Voer de volgende instellingen uit om het uploaden van afbeeldingen in alle indelingen en PDF-bestanden naar Experience Manager Assets toe te staan:
 
-![Beperkingen voor het uploaden van middelen](assets/asset-upload-restrictions.png)
+![ Activa uploadt beperkingen ](assets/asset-upload-restrictions.png)
 
-`image/*` aangezien het MIME-type het uploaden van afbeeldingen in alle indelingen toestaat. `application/pdf` aangezien het MIME-type het uploaden van PDF-bestanden naar Experience Manager Assets toestaat.
+`image/*` als het MIME-type het uploaden van afbeeldingen in alle indelingen toestaat. `application/pdf` als het MIME-type het uploaden van PDF-bestanden naar Experience Manager Assets toestaat.
 
 Als u probeert een bestand te uploaden dat niet is opgenomen in de lijst met toegestane MIME-typen, geeft Experience Manager Assets het volgende foutbericht weer:
 
-![Beperkte bestanden](assets/asset-upload-restricted-files.png)
+![ Beperkte dossiers ](assets/asset-upload-restricted-files.png)
 
 `Screen Recording 2022-08-31 at 3.36.09 PM.mov` verwijst naar een bestandsnaam die niet is opgenomen in de toegestane MIME-typen.
 
-**Voorbeeld 2: uploaden van specifieke afbeeldingsindelingen naar Experience Manager Assets toestaan**
+**Voorbeeld 2: Toestaan upload van specifieke beeldformaten aan Experience Manager Assets**
 
 Voer de volgende instellingen uit om specifieke afbeeldingsindelingen toe te voegen aan de toegestane MIME-typen en het uploaden van alle andere elementindelingen te beperken:
 
-![Beperkingen op activa](assets/asset-restrictions.png)
+![ de beperkingen van Activa ](assets/asset-restrictions.png)
 
 Op basis van de instellingen in de afbeelding kunt u afbeeldingen in de indelingen .JPG, .PNG en .GIF uploaden naar Experience Manager Assets.
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -73,4 +73,4 @@ Op basis van de instellingen in de afbeelding kunt u afbeeldingen in de indeling
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -27,7 +27,7 @@ U kunt in-context hulp specificeren gebruikend de volgende opties in de sectie v
 * [Korte beschrijving](authoring-in-field-help.md#p-short-description-p)
 * [Lange beschrijving](authoring-in-field-help.md#p-long-description-p)
 
-![In-context Help voor formuliervelden](assets/descriptions.png)
+![ In-context hulp voor vormgebieden ](assets/descriptions.png)
 
 >[!NOTE]
 >
@@ -37,35 +37,35 @@ U kunt in-context hulp specificeren gebruikend de volgende opties in de sectie v
 
 In het veld Korte beschrijving kunt u snelle en korte aanwijzingen geven over het invullen van een formulierveld. De tekst die in het veld Korte beschrijving is opgegeven, wordt als knopinfo weergegeven wanneer u de muis boven het veld houdt.
 
-![Korte beschrijving voor het toevoegen van hulp in context voor formuliervelden](assets/tooltip.png)
+![ Korte beschrijving voor het toevoegen van in-context hulp voor vormgebieden ](assets/tooltip.png)
 
 >[!NOTE]
 >
->Selecteren **Altijd korte beschrijving tonen** om de Help-tekst permanent onder het veld weer te geven.
+>Selecteer **altijd tonen korte beschrijving** om de hulptekst onder het gebied permanent te tonen.
 
-![Permanente korte hulp in de context onder het veld](assets/short1.png)
+![ Permanente korte in-context hulp onder het gebied ](assets/short1.png)
 
 ### Lange beschrijving {#long-description}
 
 U kunt het lange beschrijvingsgebied gebruiken om lange teksten te specificeren of rijke media inhoud, met inbegrip van video&#39;s in te bedden, als in-context hulp. In de volgende afbeelding ziet u bijvoorbeeld hoe u een video kunt insluiten als in-context-Help.
 
-![Veelzijdige media toevoegen als in-context Help voor formuliervelden](assets/long-descriptions.png)
+![ Toevoegend rijke media als in-context hulp voor vormgebieden ](assets/long-descriptions.png)
 
-Een lange beschrijving wordt weergegeven als **?** naast het veld. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de lange beschrijving.
+Als u een lange beschrijving toevoegt, wordt een **weergegeven?** naast het veld. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de lange beschrijving.
 
-![Voorbeeld van uitgebreide media in-context-Help](assets/photoshop.png)
+![ Voorbeeld van rijke media in-context hulp ](assets/photoshop.png)
 
 ### Help op deelvensterniveau {#panel-level-help}
 
 Naast de contextHelp voor formuliervelden kunt u op deelvensterniveau Help opgeven op het tabblad Help-inhoud van het dialoogvenster Bewerken van het deelvenster.
 
-![In-context-Help toevoegen voor een formuliervenster](assets/panel-level-help.png)
+![ Toevoegend in-context hulp voor een vormpaneel ](assets/panel-level-help.png)
 
-Wanneer u Help voor een deelvenster toevoegt, wordt een **?** naast de beschrijving van het deelvenster. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de sectie Help-inhoud van het dialoogvenster voor het bewerken van deelvensters.
+Wanneer u Help voor het deelvenster toevoegt, wordt een **weergegeven?** naast de beschrijving van het deelvenster. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de sectie Help-inhoud van het dialoogvenster voor het bewerken van deelvensters.
 
-![Voorbeeld van in-context Help op het niveau van het formulierdeelvenster](assets/photoshop-1.png)
+![ Voorbeeld van in-context hulp op het niveau van het vormpaneel ](assets/photoshop-1.png)
 
 >[!MORELIKETHIS]
 >
->* [Plaatsaanduidingstekst toevoegen aan formuliervelden](/help/forms/placeholder-text-in-aem-forms.md)
->* [Voetnoot toevoegen aan een adaptief formulier voor RTF-tekst](/help/forms/footnotes-richtextsupport.md)
+>* [ voeg placeholder tekst aan vormgebieden toe ](/help/forms/placeholder-text-in-aem-forms.md)
+>* [ voeg Voetnoot aan een adaptieve vorm voor rijke teksten ](/help/forms/footnotes-richtextsupport.md) toe

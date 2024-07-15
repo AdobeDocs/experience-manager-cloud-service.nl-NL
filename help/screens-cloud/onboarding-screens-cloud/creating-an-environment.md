@@ -16,23 +16,23 @@ ht-degree: 1%
 In deze sectie wordt beschreven hoe u een omgeving voor uw programma kunt maken in Cloud Manager.
 
 >[!NOTE]
->Zie [Omgevingen beheren in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) om te leren hoe de gebruiker een omgeving kan maken.
+>Zie [ het Leiden Milieu&#39;s in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) om te leren hoe de gebruiker een milieu kan creëren.
 
 ## Doelstelling {#objective}
 
 In de volgende sectie wordt beschreven hoe u een omgeving voor uw programma kunt maken in Cloud Manager.
 
-## Stappen om een omgeving voor uw schermproject te maken in Cloud Manager {#steps-branch-creation}
+## Stappen om een omgeving te maken voor uw Screens-project in Cloud Manager {#steps-branch-creation}
 
-Nadat het project met succes wordt gecreeerd, kunt u de vraag-aan-actie kaartupdate in de pagina van het Overzicht van de Manager van de Wolk zien.
+Nadat de projectverwezenlijking met succes wordt voltooid, kunt u de vraag-aan-actie kaartupdate in de pagina van het Overzicht van de Cloud Manager zien.
 
-1. Ga naar Cloud Manager en selecteer het pictogram zodat u naar Cloud Manager kunt gaan **Overzicht** pagina.
+1. Navigeer aan Cloud Manager en selecteer het pictogram zodat kunt u aan Cloud Manager **krijgen overzicht** pagina.
 
-1. Klikken **Omgeving toevoegen** van de Cloud Manager **Overzicht** pagina.
+1. Klik **toevoegen Milieu** van de Cloud Manager **pagina van het Overzicht**.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. Selecteer de omgevingsdetails in het menu **Omgeving toevoegen** en klik op **Opslaan**.
+1. Selecteer de omgevingsdetails van **voeg milieu** dialoogdoos toe en klik **sparen**.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
@@ -42,4 +42,4 @@ Nadat het project met succes wordt gecreeerd, kunt u de vraag-aan-actie kaartupd
 
 ## Volgende functies {#whats-next}
 
-Nadat u hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u verdergaan. De volgende stap in het proces Onboarding is [De pijplijn uitvoeren](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+Nadat u hebt geleerd hoe u een omgeving voor uw programma kunt instellen in Cloud Manager, kunt u verdergaan. De volgende stap in het proces Onboarding is [ Lopend de Pijpleiding ](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

@@ -1,5 +1,5 @@
 ---
-title: Van spreadsheets tot Forms - Mastering Form Fragments for Edge Delivery Forms
+title: Van spreadsheets tot Forms - Mastering Form Fracies voor Edge Delivery Forms
 description: Krachtige formulieren sneller maken met formulierfragmenten
 feature: Edge Delivery Services
 hide: true
@@ -13,4 +13,4 @@ ht-degree: 0%
 
 ---
 
-# Mastering-formulierkaders voor AEM Forms Edge Delivery Service
+# Mastering Form Fraisions for AEM Forms Edge Delivery Service

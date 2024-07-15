@@ -1,6 +1,6 @@
 ---
 title: Inhoud zoeken en indexeren
-description: Meer informatie over Inhoud zoeken en indexeren in AEM as a Cloud Service.
+description: Meer informatie over zoeken en indexeren van inhoud in AEM as a Cloud Service.
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
@@ -15,61 +15,61 @@ ht-degree: 0%
 
 ## Wijzigingen in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Met AEM as a Cloud Service, beweegt de Adobe zich van een AEM instantie-centric model aan een op dienst-gebaseerde mening met n-x AEM Containers, die door CI/CD pijpleidingen in de Manager van de Wolk wordt gedreven. In plaats van het vormen van en het handhaven van Indexen op enige AEM instanties, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als niet nader aangegeven, getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
+Met AEM as a Cloud Service beweegt de Adobe zich van een AEM instantie-centric model naar een op dienst-gebaseerde mening met n-x AEM Containers, die door CI/CD pijpleidingen in Cloud Manager wordt aangedreven. In plaats van het vormen van en het handhaven van Indexen op enige AEM instanties, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als niet nader aangegeven, getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
 
 Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 6.5 en eerdere versies:
 
 1. De gebruikers hebben geen toegang tot de Manager van de Index van één enkele AEMInstantie om, indexeren te zuiveren te vormen of te handhaven. Het wordt alleen gebruikt voor lokale ontwikkeling en on-prem-implementaties.
 1. De gebruikers veranderen geen Indexen op één enkel AEMInstantie noch moeten zij zich over consistentiecontroles of het opnieuw indexeren meer ongerust maken.
-1. Over het algemeen worden indexwijzigingen doorgevoerd voordat naar de productie wordt gegaan om kwaliteitsgateways in de CBI/CD-leidingen van de Cloud Manager niet te omzeilen en geen invloed te hebben op KPI&#39;s van bedrijven in de productie.
+1. Over het algemeen worden indexwijzigingen aangevangen voordat naar de productie wordt gegaan om de kwaliteitsgateways in de Cloud Manager-CBI/Cd-pijpleidingen niet te omzeilen en geen invloed te hebben op de KPI&#39;s van de bedrijfsvoering in de productie.
 1. Alle verwante metriek, met inbegrip van onderzoeksprestaties in productie, is beschikbaar voor klanten bij runtime om de holistische mening over de onderwerpen van Onderzoek en het Indexeren te verstrekken.
 1. Klanten kunnen waarschuwingen instellen op basis van hun behoeften.
 1. SRE&#39;s controleren de systeemgezondheid 24/7 en er wordt zo snel mogelijk actie ondernomen.
 1. Indexconfiguratie wordt gewijzigd via implementaties. Wijzigingen in indexdefinities worden net als andere wijzigingen in de inhoud geconfigureerd.
-1. Op hoog niveau voor AEM as a Cloud Service, met de invoering van de [implementatiemodel](#index-management-using-rolling-deployments)Er zijn twee indexen: een voor de oude versie en een voor de nieuwe versie.
-1. Klanten kunnen zien of de indexeertaak is voltooid op de pagina voor het bouwen van Cloud Manager en ontvangen een melding wanneer de nieuwe versie klaar is om verkeer te nemen.
+1. Op een hoog niveau op AEM as a Cloud Service, met de introductie van het [ het rollen plaatsingsmodel ](#index-management-using-rolling-deployments), bestaan twee reeksen indexen: voor de oude versie, en voor de nieuwe versie.
+1. Klanten kunnen zien of de indexerende baan op Cloud Manager volledig is bouwt pagina en ontvangt een bericht wanneer de nieuwe versie klaar is om verkeer te nemen.
 
 Beperkingen:
 
-* Indexbeheer op AEM as a Cloud Service wordt momenteel alleen ondersteund voor indexen van het type `lucene`.
+* Indexbeheer op AEM as a Cloud Service wordt momenteel alleen ondersteund voor indexen van het type `lucene` .
 * Alleen standaardanalysatoren worden ondersteund (dat wil zeggen de analysatoren die bij het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
-* Intern, zouden andere indexen voor vragen kunnen worden gevormd en worden gebruikt. Bijvoorbeeld, vragen die tegen `damAssetLucene` De index zou, op Skyline, in feite tegen een versie van de Elasticsearch van deze index kunnen worden uitgevoerd. Dit verschil is doorgaans niet zichtbaar voor de toepassing en de gebruiker, maar voor bepaalde gereedschappen, zoals de `explain` een andere index rapporteren. Voor verschillen tussen Lucene-indexen en Elastic-indexen raadpleegt u [de Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten hoeven en kunnen Elasticsearch-indexen niet rechtstreeks configureren.
-* Zoeken op vergelijkbare vakvectoren (`useInSimilarity = true`) wordt niet ondersteund.
+* Intern, zouden andere indexen voor vragen kunnen worden gevormd en worden gebruikt. Bijvoorbeeld, zouden de vragen die tegen de `damAssetLucene` index worden geschreven, op Skyline, in feite tegen een versie van de Elasticsearch van deze index kunnen worden uitgevoerd. Dit verschil is doorgaans niet zichtbaar voor de toepassing en de gebruiker, maar bepaalde gereedschappen, zoals de functie `explain` , rapporteren een andere index. Voor verschillen tussen de indexen van Lucene en Elastische indexen, zie [ de Elastische documentatie in Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten hoeven en kunnen Elasticsearch-indexen niet rechtstreeks configureren.
+* Zoeken op vergelijkbare eigenschapvectoren (`useInSimilarity = true`) wordt niet ondersteund.
 
 >[!TIP]
 >
->Voor meer informatie over de indexering en de Vragen van het Eak, met inbegrip van een gedetailleerde beschrijving van geavanceerde onderzoek en het indexeren eigenschappen, zie [Documentatie voor Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
+>Voor meer details op Oak Indexeren en Vragen, met inbegrip van een gedetailleerde beschrijving van geavanceerde onderzoek en het indexeren eigenschappen, zie de [ Documentatie van Apache Oak ](https://jackrabbit.apache.org/oak/docs/query/query.html).
 
 
 ## Hoe wordt het gebruikt {#how-to-use}
 
 Indexdefinities kunnen als volgt in drie gevallen van primair gebruik worden ingedeeld:
 
-1. **Toevoegen** een nieuwe aangepaste indexdefinitie.
-2. **Bijwerken** een bestaande indexdefinitie door een nieuwe versie toe te voegen.
-3. **Verwijderen** een indexdefinitie die niet meer nodig is.
+1. **voeg** een nieuwe definitie van de douaneindex toe.
+2. **werk** een bestaande indexdefinitie bij door een nieuwe versie toe te voegen.
+3. **verwijder** een indexdefinitie die niet meer noodzakelijk is.
 
-Voor zowel de punten 1 als 2 hierboven moet u een indexdefinitie maken als onderdeel van uw aangepaste codebasis in het respectievelijke releaseprogramma voor Cloud Manager. Zie de klasse [Distribueren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentatie.
+Voor zowel de punten 1 als 2 hierboven, moet u een indexdefinitie als deel van uw basis van douanecode in het respectieve de versieschema van Cloud Manager tot stand brengen. Voor meer informatie, zie [ het Opstellen aan AEM as a Cloud Service ](/help/implementing/deploying/overview.md) documentatie.
 
 ## Indexnamen {#index-names}
 
 Een indexdefinitie kan in één van de volgende categorieën vallen:
 
-1. De OOTB-index (Out-of-the-box). Bijvoorbeeld: `/oak:index/cqPageLucene-2` of `/oak:index/damAssetLucene-8`.
+1. De OOTB-index (Out-of-the-box). Bijvoorbeeld: `/oak:index/cqPageLucene-2` of `/oak:index/damAssetLucene-8` .
 
-2. Aanpassing van een OOTB-index. Deze worden aangegeven door toevoegen `-custom-` gevolgd door een numerieke id van de oorspronkelijke indexnaam. Bijvoorbeeld: `/oak:index/damAssetLucene-8-custom-1`.
+2. Aanpassing van een OOTB-index. Deze worden aangegeven door `-custom-` toe te voegen, gevolgd door een numerieke id aan de oorspronkelijke indexnaam. Bijvoorbeeld: `/oak:index/damAssetLucene-8-custom-1` .
 
-3. Volledig aangepaste index: het is mogelijk een geheel nieuwe geheel nieuwe index te maken. Hun naam moet een voorvoegsel hebben om naamconflicten te voorkomen. Bijvoorbeeld: `/oak:index/acme.product-1-custom-2`, waarbij het voorvoegsel `acme.`
+3. Volledig aangepaste index: het is mogelijk een geheel nieuwe geheel nieuwe index te maken. Hun naam moet een voorvoegsel hebben om naamconflicten te voorkomen. Bijvoorbeeld: `/oak:index/acme.product-1-custom-2` , waarbij het voorvoegsel `acme.` is
 
 >[!NOTE]
 >
->Nieuwe indexen introduceren op de `dam:Asset` nodetype (in het bijzonder fulltext-indexen) wordt sterk afgeraden, omdat deze in conflict kunnen komen met OOTB-productkenmerken, wat kan leiden tot functionele en prestatieproblemen. In het algemeen voegt u aanvullende eigenschappen toe aan de huidige `damAssetLucene-*` indexversie is de meest geschikte manier om query&#39;s te indexeren op de `dam:Asset` nodetype (deze wijzigingen worden automatisch samengevoegd in een nieuwe productversie van de index als deze daarna wordt vrijgegeven). In geval van twijfel kunt u contact opnemen met de Adobe Support voor advies.
+>Het introduceren van nieuwe indexen op het `dam:Asset` nodetype (in het bijzonder fulltext indexen) wordt sterk afgeraden, omdat deze een conflict kunnen veroorzaken met OOTB-productfuncties, wat tot functionele en prestatieproblemen kan leiden. Over het algemeen is het toevoegen van extra eigenschappen aan de huidige `damAssetLucene-*` indexversie de meest aangewezen manier om vragen op `dam:Asset` nodetype te indexeren (deze veranderingen zullen automatisch in een nieuwe productversie van de index worden samengevoegd als het daarna wordt vrijgegeven). In geval van twijfel kunt u contact opnemen met de Adobe Support voor advies.
 
 ## De nieuwe indexdefinitie voorbereiden {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Als u bijvoorbeeld een index buiten het vak aanpast, `damAssetLucene-8`, kopieert u de meest recente out-of-box-indexdefinitie van een *Cloud Service* met behulp van CRX DE Package Manager (`/crx/packmgr/`). Naam wijzigen in `damAssetLucene-8-custom-1` (of hoger) en voeg uw aanpassingen toe in het XML-bestand. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. Bijvoorbeeld de `tika` knooppunt onder `/oak:index/damAssetLucene-8/tika` is vereist in de aangepaste index die wordt geïmplementeerd in een AEM Cloud Service-omgeving, maar niet in de lokale AEM SDK.
+>Als het aanpassen van een uit-van-de-doos index, bijvoorbeeld, `damAssetLucene-8`, kopieer de recentste uit-van-de-doos indexdefinitie van het milieu van de a *Cloud Service* gebruikend de Manager van het Pakket CRX DE (`/crx/packmgr/`). Wijzig de naam in `damAssetLucene-8-custom-1` (of hoger) en voeg uw aanpassingen toe in het XML-bestand. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. Het knooppunt `tika` onder `/oak:index/damAssetLucene-8/tika` is bijvoorbeeld vereist in de aangepaste index die wordt geïmplementeerd in een AEM Cloud Service-omgeving, maar bestaat niet in de lokale AEM SDK.
 
 Maak voor aanpassingen van een OOTB-index een nieuw pakket met de feitelijke indexdefinitie die volgt op dit naamgevingspatroon:
 
@@ -85,7 +85,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Voor elk inhoudspakket met indexdefinities moeten de volgende eigenschappen worden ingesteld in het dialoogvenster `properties.xml` van het inhoudspakket. `properties.xml` wordt standaard gemaakt in een nieuw pakket en bevindt zich op `<package_name>/META-INF/vault/properties.xml`:
+>Voor inhoudspakketten met indexdefinities moeten de volgende eigenschappen zijn ingesteld in het `properties.xml` -bestand van het inhoudspakket. `properties.xml` wordt standaard gemaakt in een nieuw pakket en bevindt zich op `<package_name>/META-INF/vault/properties.xml` :
 >
 > * `noIntermediateSaves=true`
 >
@@ -93,12 +93,13 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ## Aangepaste indexdefinities gebruiken {#deploying-custom-index-definitions}
 
-Om de plaatsing van een aangepaste versie van de uit-van-doos index te illustreren `damAssetLucene-8`, zullen wij een stapsgewijze gids verstrekken. In dit voorbeeld wordt de naam gewijzigd in `damAssetLucene-8-custom-1`. Dan is het proces als volgt:
+Om de plaatsing van een aangepaste versie van de uit-van-de-doos index `damAssetLucene-8` te illustreren, zullen wij een geleidelijke gids verstrekken. In dit voorbeeld wordt de naam gewijzigd in `damAssetLucene-8-custom-1` . Dan is het proces als volgt:
 
-1. Maak een nieuwe map met de bijgewerkte indexnaam in het dialoogvenster `ui.apps` map:
+1. Maak een nieuwe map met de bijgewerkte indexnaam in de map `ui.apps` :
    * Voorbeeld: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Een configuratiebestand toevoegen `.content.xml` met de aangepaste configuraties in de gemaakte map. Hieronder ziet u een voorbeeld van een aanpassing: Bestandsnaam: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. Voeg een configuratiebestand `.content.xml` toe met de aangepaste configuraties in de gemaakte map. Hieronder ziet u een voorbeeld van een aanpassing:
+Bestandsnaam: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -134,7 +135,7 @@ Om de plaatsing van een aangepaste versie van de uit-van-doos index te illustrer
    </jcr:root>
    ```
 
-3. Voeg een item toe aan het FileVault-filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+3. Voeg een item toe aan het FileVault-filter in `ui.apps/src/main/content/META-INF/vault/filter.xml` :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -144,7 +145,7 @@ Om de plaatsing van een aangepaste versie van de uit-van-doos index te illustrer
    </workspaceFilter>
    ```
 
-4. Voeg een configuratiebestand voor Apache Tika toe in: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
+4. Voeg een configuratiebestand voor Apache Tika toe in: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`
 
    ```xml
    <properties>
@@ -160,13 +161,13 @@ Om de plaatsing van een aangepaste versie van de uit-van-doos index te illustrer
    </properties>
    ```
 
-5. Zorg ervoor dat uw configuratie voldoet aan de richtlijnen die zijn vermeld in het dialoogvenster [Projectconfiguratie](#project-configuration) sectie. Breng de nodige aanpassingen aan.
+5. Zorg ervoor dat uw configuratie met de richtlijnen in de [ sectie van de Configuratie van het Project ](#project-configuration) wordt verstrekt in overeenstemming is. Breng de nodige aanpassingen aan.
 
 ## Projectconfiguratie
 
-We raden u aan versie >= te gebruiken `1.3.2` van het jasje `filevault-package-maven-plugin`. U kunt dit als volgt in uw project opnemen:
+We raden u ten zeerste aan versie >= `1.3.2` van het Jackrabbit `filevault-package-maven-plugin` te gebruiken. U kunt dit als volgt in uw project opnemen:
 
-1. De versie op het hoogste niveau bijwerken `pom.xml`:
+1. Werk de versie op het hoogste niveau bij `pom.xml` :
 
    ```xml
    <plugin>
@@ -188,7 +189,7 @@ We raden u aan versie >= te gebruiken `1.3.2` van het jasje `filevault-package-m
    </jackrabbit-packagetype>
    ```
 
-   Hier volgt een voorbeeld van het bovenste niveau van het project `pom.xml` dossier met de bovengenoemde configuraties omvatten:
+   Hier volgt een voorbeeld van het bestand op hoofdniveau van het project `pom.xml` met de bovenstaande configuraties:
 
    Bestandsnaam: `pom.xml`
 
@@ -211,7 +212,7 @@ We raden u aan versie >= te gebruiken `1.3.2` van het jasje `filevault-package-m
    </plugin>
    ```
 
-3. In `ui.apps/pom.xml` en `ui.apps.structure/pom.xml` het is noodzakelijk `allowIndexDefinitions` en `noIntermediateSaves` in de `filevault-package-maven-plugin`. Inschakelen `allowIndexDefinitions` staat voor aangepaste indexdefinities toe, terwijl `noIntermediateSaves` zorgt ervoor dat de configuraties automatisch worden toegevoegd.
+3. In `ui.apps/pom.xml` en `ui.apps.structure/pom.xml` is het nodig om de opties `allowIndexDefinitions` en `noIntermediateSaves` in te schakelen in het dialoogvenster `filevault-package-maven-plugin` . Als u `allowIndexDefinitions` inschakelt, zijn aangepaste indexdefinities mogelijk, terwijl `noIntermediateSaves` ervoor zorgt dat de configuraties automatisch worden toegevoegd.
 
    Bestandsnamen: `ui.apps/pom.xml` en `ui.apps.structure/pom.xml`
 
@@ -229,7 +230,7 @@ We raden u aan versie >= te gebruiken `1.3.2` van het jasje `filevault-package-m
    </plugin>
    ```
 
-4. Een filter toevoegen voor `/oak:index` in `ui.apps.structure/pom.xml`:
+4. Voeg een filter voor `/oak:index` in `ui.apps.structure/pom.xml` toe:
 
    ```xml
    <filters>
@@ -238,17 +239,17 @@ We raden u aan versie >= te gebruiken `1.3.2` van het jasje `filevault-package-m
    </filters>
    ```
 
-Nadat u de nieuwe indexdefinitie hebt toegevoegd, implementeert u de nieuwe toepassing met Cloud Manager. Deze implementatie start twee taken, die verantwoordelijk zijn voor het toevoegen (en indien nodig samenvoegen) van de indexdefinities aan respectievelijk MongoDB en Azure Segment Store voor auteur en publicatie. Vóór de omschakeling, ondergaan de onderliggende bewaarplaatsen opnieuw in overeenstemming met de bijgewerkte indexdefinities.
+Implementeer de nieuwe toepassing met Cloud Manager nadat u de nieuwe indexdefinitie hebt toegevoegd. Deze implementatie start twee taken, die verantwoordelijk zijn voor het toevoegen (en indien nodig samenvoegen) van de indexdefinities aan respectievelijk MongoDB en Azure Segment Store voor auteur en publicatie. Vóór de omschakeling, ondergaan de onderliggende bewaarplaatsen opnieuw in overeenstemming met de bijgewerkte indexdefinities.
 
 >[!TIP]
 >
->Ga voor meer informatie over de vereiste pakketstructuur voor AEM as a Cloud Service naar [AEM projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Voor meer details over de vereiste pakketstructuur voor AEM as a Cloud Service, zie [ AEM de Structuur van het Project ](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Indexbeheer met behulp van rollende implementaties {#index-management-using-rolling-deployments}
 
 ### Wat is indexbeheer {#what-is-index-management}
 
-Indexbeheer gaat over het toevoegen, verwijderen en wijzigen van indexen. Het wijzigen van *definitie* van een index is snel, maar het toepassen van de wijziging (vaak &#39;&#39;een index samenstellen&#39;&#39; genoemd, of, voor bestaande indexen, &#39;&#39;opnieuw indexeren&#39;&#39;) vereist tijd. Het is niet onmiddellijk: de gegevensopslagruimte moet gescand worden om de gegevens te indexeren.
+Indexbeheer gaat over het toevoegen, verwijderen en wijzigen van indexen. Het veranderen van de *definitie* van een index is snel, maar het toepassen van de verandering (vaak genoemd &quot;bouwend een index&quot;, of, voor bestaande indexen, &quot;het opnieuw indexeren&quot;vereist tijd. Het is niet onmiddellijk: de gegevensopslagruimte moet gescand worden om de gegevens te indexeren.
 
 ### Wat zijn de Rolling Plaatsingen {#what-are-rolling-deployments}
 
@@ -256,19 +257,19 @@ Een rolplaatsing kan onderbreking verminderen. Het staat ook voor nul downtime v
 
 ### Alleen-lezen en Gebieden lezen/schrijven {#read-only-and-read-write-areas}
 
-Bepaalde delen van de opslagplaats (alleen-lezen onderdelen van de opslagplaats) kunnen verschillend zijn in de oude en de nieuwe versie van de toepassing. De gebieden met het kenmerk Alleen-lezen van de gegevensopslagruimte zijn doorgaans `/app` en `/libs`. In het volgende voorbeeld wordt cursief gebruikt voor het markeren van alleen-lezen gebieden, terwijl vet wordt gebruikt voor lezen-schrijven gebieden.
+Bepaalde delen van de opslagplaats (alleen-lezen onderdelen van de opslagplaats) kunnen verschillend zijn in de oude en de nieuwe versie van de toepassing. De gebieden met het kenmerk Alleen-lezen van de gegevensopslagruimte zijn doorgaans `/app` en `/libs` . In het volgende voorbeeld wordt cursief gebruikt voor het markeren van alleen-lezen gebieden, terwijl vet wordt gebruikt voor lezen-schrijven gebieden.
 
 * **/**
 * */apps (alleen-lezen)*
 * **/content**
 * */libs (alleen-lezen)*
-* **/oak:index**
-* **/oak:index/acme.**
+* **/eak:index**
+* **/eak:index/acme.**
 * **/jcr:system**
 * **/system**
 * **/var**
 
-De read-write gebieden van de bewaarplaats worden gedeeld tussen alle versies van de toepassing, terwijl voor elke versie van de toepassing, er een specifieke reeks is van `/apps` en `/libs`.
+De lees-schrijfgebieden van de opslagplaats worden gedeeld tussen alle versies van de toepassing, terwijl er voor elke versie van de toepassing een specifieke set `/apps` en `/libs` is.
 
 ### Indexbeheer zonder doorlopende implementaties {#index-management-without-rolling-deployments}
 
@@ -280,11 +281,11 @@ Met het rollen plaatsingen, is er geen onderbreking. Gedurende een update worden
 
 Nadat de upgrade naar de nieuwe versie is voltooid, kunnen oude indexen door het systeem worden opgeschoond. De oude indexen blijven misschien nog een tijdje, om terugdraaiversies te versnellen (als een terugdraaiing nodig zou moeten zijn).
 
-De volgende tabel bevat vijf indexdefinities: index `cqPageLucene` wordt gebruikt in beide versies terwijl index `damAssetLucene-custom-1` wordt alleen gebruikt in versie 2.
+In de volgende tabel worden vijf indexdefinities weergegeven: index `cqPageLucene` wordt in beide versies gebruikt, terwijl index `damAssetLucene-custom-1` alleen in versie 2 wordt gebruikt.
 
 >[!NOTE]
 >
->De `<indexName>-custom-<customerVersionNumber>` is nodig om AEM as a Cloud Service te markeren als vervanging voor een bestaande index.
+>AEM as a Cloud Service heeft `<indexName>-custom-<customerVersionNumber>` nodig om deze te markeren als vervanging voor een bestaande index.
 
 | Index | Index buiten de box | Gebruiken in versie 1 | Gebruiken in versie 2 |
 |---|---|---|---|
@@ -294,11 +295,11 @@ De volgende tabel bevat vijf indexdefinities: index `cqPageLucene` wordt gebruik
 | /oak:index/acme.product-custom-2 | Nee | Nee | Ja |
 | /oak:index/cqPageLucene | Ja | Ja | Ja |
 
-Het versienummer wordt telkens verhoogd wanneer de index wordt gewijzigd. Als u wilt voorkomen dat aangepaste indexnamen botsen met indexnamen van het product zelf, moeten aangepaste indexen en wijzigingen in indexen buiten het vak eindigen met `-custom-<number>`.
+Het versienummer wordt telkens verhoogd wanneer de index wordt gewijzigd. Als u wilt voorkomen dat aangepaste indexnamen botsen met indexnamen van het product zelf, moeten aangepaste indexen en wijzigingen in indexen die buiten het vak staan, eindigen met `-custom-<number>` .
 
 ### Wijzigingen in indexen buiten de box {#changes-to-out-of-the-box-indexes}
 
-Nadat de Adobe een uit-van-de-doos index zoals &quot;damAssetLucene&quot;of &quot;cqPageLucene&quot;verandert, een nieuwe index genoemd `damAssetLucene-2` of `cqPageLucene-2` wordt gemaakt. Of als de index al is aangepast, wordt de aangepaste indexdefinitie samengevoegd met de wijzigingen in de index buiten het vak, zoals hieronder wordt weergegeven. Het samenvoegen van wijzigingen gebeurt automatisch. Dat betekent dat u niets hoeft te doen als een index buiten de doos verandert. Het is echter mogelijk de index later opnieuw aan te passen.
+Nadat de Adobe een uit-van-de-doos index zoals &quot;damAssetLucene&quot;of &quot;cqPageLucene&quot;verandert, wordt een nieuwe index genoemd `damAssetLucene-2` of `cqPageLucene-2` gecreeerd. Of als de index al is aangepast, wordt de aangepaste indexdefinitie samengevoegd met de wijzigingen in de index buiten het vak, zoals hieronder wordt weergegeven. Het samenvoegen van wijzigingen gebeurt automatisch. Dat betekent dat u niets hoeft te doen als een index buiten de doos verandert. Het is echter mogelijk de index later opnieuw aan te passen.
 
 | Index | Index buiten de box | Gebruiken in versie 2 | Gebruiken in versie 3 |
 |---|---|---|---|
@@ -309,25 +310,25 @@ Nadat de Adobe een uit-van-de-doos index zoals &quot;damAssetLucene&quot;of &quo
 
 ### Huidige beperkingen {#current-limitations}
 
-Indexbeheer wordt alleen ondersteund voor typeindexen `lucene`, met `compatVersion` instellen op `2`. Intern, zouden andere indexen voor vragen, bijvoorbeeld, Elasticsearch indexen kunnen worden gevormd en worden gebruikt. Vragen die worden geschreven tegen de `damAssetLucene` index zou, op AEM as a Cloud Service, in feite tegen een Elasticsearch versie van deze index kunnen worden in werking gesteld. Dit verschil is onzichtbaar voor de gebruiker van de toepassing, maar bepaalde gereedschappen, zoals de `explain` deze functie rapporteert een andere index. Voor verschillen tussen indexen van Lucene en van de Elasticsearch, zie [de documentatie over de Elasticsearch in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten kunnen en hoeven Elasticsearch-indexen niet rechtstreeks te configureren.
+Indexbeheer wordt alleen ondersteund voor indexen van het type `lucene` met `compatVersion` ingesteld op `2` . Intern, zouden andere indexen voor vragen, bijvoorbeeld, Elasticsearch indexen kunnen worden gevormd en worden gebruikt. Query&#39;s die op basis van de `damAssetLucene` -index zijn geschreven, kunnen in AEM as a Cloud Service worden uitgevoerd op een versie van deze index die Elasticsearch is. Dit verschil is onzichtbaar voor de gebruiker van de toepassing, maar bepaalde gereedschappen, zoals de functie `explain` , rapporteren een andere index. Voor verschillen tussen Lucene en Elasticsearch indexen, zie [ de documentatie van de Elasticsearch in Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten kunnen en hoeven Elasticsearch-indexen niet rechtstreeks te configureren.
 
 Alleen ingebouwde analysatoren worden ondersteund (dat wil zeggen de analysatoren die bij het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
 
-Voor de beste operationele prestaties, zouden de indexen niet bovenmatig groot moeten zijn. De totale grootte van alle indexen kan als richtlijn worden gebruikt. Als deze grootte na het toevoegen van aangepaste indexen met meer dan 100% toeneemt en de standaardindexen in een ontwikkelomgeving zijn aangepast, moeten de aangepaste indexdefinities worden aangepast. AEM as a Cloud Service kan de plaatsing van indexen verhinderen die de systeemstabiliteit en prestaties negatief zouden beïnvloeden.
+Voor de beste operationele prestaties, zouden de indexen niet bovenmatig groot moeten zijn. De totale grootte van alle indexen kan als richtlijn worden gebruikt. Als deze grootte na het toevoegen van aangepaste indexen met meer dan 100% toeneemt en de standaardindexen in een ontwikkelomgeving zijn aangepast, moeten de aangepaste indexdefinities worden aangepast. AEM as a Cloud Service kan voorkomen dat indexen worden geïmplementeerd die de stabiliteit en prestaties van het systeem negatief beïnvloeden.
 
 ### Een index toevoegen {#adding-an-index}
 
-Een volledig aangepaste index toevoegen met de naam `/oak:index/acme.product-custom-1`, die in een nieuwe versie van de toepassing en later moet worden gebruikt, moet de index als volgt worden gevormd:
+Als u een volledig aangepaste index met de naam `/oak:index/acme.product-custom-1` wilt toevoegen die in een nieuwe versie van de toepassing en hoger wordt gebruikt, moet de index als volgt worden geconfigureerd:
 
 `acme.product-1-custom-1`
 
-Deze configuratie werkt door een aangepaste id voor te bereiden op de indexnaam, gevolgd door een punt (**`.`**). De id moet uit 2 tot 5 tekens bestaan.
+Deze configuratie werkt door een douane herkenningsteken aan de indexnaam vooraf in te stellen, die door een punt (**`.`**) wordt gevolgd. De id moet uit 2 tot 5 tekens bestaan.
 
 Zoals hierboven, zorgt deze configuratie ervoor dat de index slechts door de nieuwe versie van de toepassing wordt gebruikt.
 
 ### Index wijzigen {#changing-an-index}
 
-Wanneer een bestaande index wordt gewijzigd, moet een nieuwe index met de gewijzigde indexdefinitie worden toegevoegd. Neem bijvoorbeeld de bestaande index `/oak:index/acme.product-custom-1` is gewijzigd. De oude index is opgeslagen onder `/oak:index/acme.product-custom-1`en de nieuwe index wordt opgeslagen onder `/oak:index/acme.product-custom-2`.
+Wanneer een bestaande index wordt gewijzigd, moet een nieuwe index met de gewijzigde indexdefinitie worden toegevoegd. Stel bijvoorbeeld dat de bestaande index `/oak:index/acme.product-custom-1` is gewijzigd. De oude index wordt opgeslagen onder `/oak:index/acme.product-custom-1` en de nieuwe index wordt opgeslagen onder `/oak:index/acme.product-custom-2` .
 
 De oude versie van de toepassing gebruikt de volgende configuratie:
 
@@ -339,17 +340,17 @@ De nieuwe versie van de toepassing gebruikt de volgende (veranderde) configurati
 
 >[!NOTE]
 >
->Indexdefinities op AEM as a Cloud Service komen mogelijk niet volledig overeen met de indexdefinities op een lokale ontwikkelingsinstantie. De ontwikkelingsinstantie heeft geen configuratie Tika, terwijl de instanties van AEM as a Cloud Service één hebben. Als u een index met een configuratie van de Tika aanpast, behoud de configuratie van de Tika.
+>Indexdefinities in AEM as a Cloud Service komen mogelijk niet volledig overeen met de indexdefinities in een lokale ontwikkelingsinstantie. Het ontwikkelingsexemplaar heeft geen configuratie Tika, terwijl de instanties van AEM as a Cloud Service één hebben. Als u een index met een configuratie van de Tika aanpast, behoud de configuratie van de Tika.
 
 ### Een wijziging ongedaan maken {#undoing-a-change}
 
-Soms wordt het nodig om een wijziging in een indexdefinitie ongedaan te maken. Dit kan gebeuren als er een onbedoelde fout optreedt of als de wijziging niet langer vereist is. Neem bijvoorbeeld de indexdefinitie `damAssetLucene-8-custom-3,` die per ongeluk is gecreëerd en al is ingezet. Daarom wilt u terugkeren naar de vorige indexdefinitie, `damAssetLucene-8-custom-2.` Hiervoor moet u een nieuwe index met de naam `damAssetLucene-8-custom-4` die de definitie van de vorige index omvat, `damAssetLucene-8-custom-2.`
+Soms wordt het nodig om een wijziging in een indexdefinitie ongedaan te maken. Dit kan gebeuren als er een onbedoelde fout optreedt of als de wijziging niet langer vereist is. Neem bijvoorbeeld de indexdefinitie `damAssetLucene-8-custom-3,` die per ongeluk is gemaakt en al is geïmplementeerd. Daarom wilt u terugkeren naar de vorige indexdefinitie, `damAssetLucene-8-custom-2.` hiervoor moet u een nieuwe index met de naam `damAssetLucene-8-custom-4` invoeren die de definitie van de vorige index bevat, `damAssetLucene-8-custom-2.`
 
 ### Een index verwijderen {#removing-an-index}
 
 Het volgende is alleen van toepassing op aangepaste indexen. Productindexen kunnen niet worden verwijderd omdat ze door AEM worden gebruikt.
 
-Als een index in een recentere versie van de toepassing wordt verwijderd, kunt u een lege index (een lege index bepalen die nooit wordt gebruikt, en geen gegevens bevat), met een nieuwe naam. In dit voorbeeld kunt u het een naam geven `/oak:index/acme.product-custom-3`. Deze naam vervangt de index `/oak:index/acme.product-custom-2`. Na `/oak:index/acme.product-custom-2` wordt verwijderd door het systeem, de lege index `/oak:index/acme.product-custom-3` kan vervolgens worden verwijderd. Een voorbeeld van een dergelijke lege index is:
+Als een index in een recentere versie van de toepassing wordt verwijderd, kunt u een lege index (een lege index bepalen die nooit wordt gebruikt, en geen gegevens bevat), met een nieuwe naam. In dit voorbeeld kunt u de naam `/oak:index/acme.product-custom-3` geven. Deze naam vervangt de index `/oak:index/acme.product-custom-2`. Nadat `/oak:index/acme.product-custom-2` is verwijderd door het systeem, kan de lege index `/oak:index/acme.product-custom-3` vervolgens worden verwijderd. Een voorbeeld van een dergelijke lege index is:
 
 ```xml
 <acme.product-custom-3
@@ -372,10 +373,10 @@ Als een index in een recentere versie van de toepassing wordt verwijderd, kunt u
 </acme.product-custom-3>
 ```
 
-Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de uit-van-de-doos indexdefinitie kopiëren. Als u bijvoorbeeld al hebt geïmplementeerd `damAssetLucene-8-custom-3`, maar u hebt de aanpassingen niet meer nodig en u wilt terugschakelen naar de standaardinstelling `damAssetLucene-8` index, dan moet u een index toevoegen `damAssetLucene-8-custom-4` die de indexdefinitie van `damAssetLucene-8`.
+Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de uit-van-de-doos indexdefinitie kopiëren. Als u bijvoorbeeld `damAssetLucene-8-custom-3` al hebt geïmplementeerd, maar de aanpassingen niet meer nodig hebt en wilt terugschakelen naar de standaard `damAssetLucene-8` -index, moet u een index `damAssetLucene-8-custom-4` toevoegen die de indexdefinitie van `damAssetLucene-8` bevat.
 
 ## Optimalisatie van index en query {#index-query-optimizations}
 
-Apache Jackrabbit Oak maakt flexibele indexconfiguraties mogelijk om zoekopdrachten efficiënt af te handelen. Indexen zijn vooral belangrijk voor grotere opslagplaatsen. Zorg ervoor dat alle vragen door een aangewezen index worden gesteund. De vragen zonder een geschikte index kunnen duizenden knopen lezen, die dan als waarschuwing worden geregistreerd.
+Met Apache Jackrabbit Oak kunnen flexibele indexconfiguraties zoekopdrachten efficiënt verwerken. Indexen zijn vooral belangrijk voor grotere opslagplaatsen. Zorg ervoor dat alle vragen door een aangewezen index worden gesteund. De vragen zonder een geschikte index kunnen duizenden knopen lezen, die dan als waarschuwing worden geregistreerd.
 
-Zie [dit document](query-and-indexing-best-practices.md) voor informatie over hoe vragen en indexen kunnen worden geoptimaliseerd.
+Zie [ dit document ](query-and-indexing-best-practices.md) voor informatie over hoe de vragen en de indexen kunnen worden geoptimaliseerd.

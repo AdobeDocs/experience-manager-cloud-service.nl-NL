@@ -21,89 +21,89 @@ De omgevingen van een sandboxprogramma gaan in op een slaapstand als er gedurend
 
 Sluimerstand kan automatisch of handmatig plaatsvinden.
 
-* **Automatisch** - Sandbox-programmaomgevingen worden automatisch gehiberd na acht uur inactiviteit. Inactiviteit wordt gedefinieerd als het ontvangen van aanvragen door de auteurservice of door voorvertonings- of publicatieservices.
-* **Handmatig** - Als gebruiker kunt u de omgeving van een sandboxprogramma handmatig moderniseren. Dit is niet verplicht, aangezien de herberging automatisch plaatsvindt, zoals eerder beschreven.
+* **Automatisch** - De milieu&#39;s van het Sandbox programma worden automatisch gehiberneerd na acht uren van inactiviteit. Inactiviteit wordt gedefinieerd als het ontvangen van aanvragen door de auteurservice of door voorvertonings- of publicatieservices.
+* **Handboek** - als gebruiker kunt u een milieu van het zandbakprogramma manueel hiberneren. Dit is niet verplicht, aangezien de herberging automatisch plaatsvindt, zoals eerder beschreven.
 
 Het kan een paar minuten duren voordat de slaapstand wordt geactiveerd in sandboxprogrammaomgevingen. De gegevens blijven behouden tijdens de winterslaap.
 
 ### Handmatige slaapstand gebruiken {#using-manual-hibernation}
 
-U kunt uw sandboxprogramma handmatig via de ontwikkelaarsconsole herbergen. Alle gebruikers van Cloud Manager hebben toegang tot de Developer Console voor een sandboxprogramma.
+U kunt uw sandboxprogramma handmatig via de Developer Console herbergen. Alle gebruikers van Cloud Manager hebben toegang tot Developer Console voor een sandboxprogramma.
 
 Voer de volgende stappen uit om de omgevingen van uw sandboxprogramma handmatig te hiberneren.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** tikken of op het programma klikken dat u wilt herbergen om de details weer te geven.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, tik of klik het programma u wilt hiberneren om zijn details te tonen.
 
-1. Op de **Omgevingen** kaart, klikt u op de knop voor ovaal en selecteert u **Ontwerpconsole**.
+1. Op de **kaart van Milieu&#39;s**, klik de elliptische knoop en selecteer **Developer Console**.
 
-   * Zie [Developer Console openen](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor meer informatie over de Developer Console.
+   * Zie [ Toegang hebbend tot Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor extra details over Developer Console.
 
-   ![Optie in het menu Developer Console](assets/developer-console-menu-option.png)
+   ![ het menuoptie van Developer Console ](assets/developer-console-menu-option.png)
 
-1. Klik in de Developer Console op **Sluimerstand**.
+1. In Developer Console, klik **Sluimerstand**.
 
-   ![Sluimerknop](assets/hibernate-1.png)
+   ![ knoop van de Slaapsteen ](assets/hibernate-1.png)
 
-1. Klikken **Sluimerstand** om de stap te bevestigen.
+1. Klik **Sluimerstand** om de stap te bevestigen.
 
-   ![Horizontaal bevestigen](assets/hibernate-2.png)
+   ![ Bevestig hibernatie ](assets/hibernate-2.png)
 
-Wanneer de winterslaap succesvol is, ziet u het hibernatieproces volledige melding voor uw milieu in **Ontwerpconsole** scherm.
+Wanneer de hibernatie succesvol is, ziet u het volledige bericht van het hibernatieproces voor uw milieu in het **Developer Console** scherm.
 
-![Sluimerbevestiging](assets/hibernate-4.png)
+![ Bevestiging van de Slaapstand ](assets/hibernate-4.png)
 
-In de Developer Console kunt u ook op de knop **Omgevingen** link in de breadcrumbs boven de **Pod** vervolgkeuzelijst voor een lijst met omgevingen die u wilt hiberneren.
+In Developer Console kunt u ook de **Milieu** verbinding in de broodkruimels boven de **Peul** drop-down lijst voor een lijst van milieu&#39;s aan hibernate klikken.
 
-![Lijst met omgevingen die moeten worden gewinterd](assets/hibernate-1b.png)
+![ Lijst van milieu&#39;s aan hibernate ](assets/hibernate-1b.png)
 
 ## De-Hibernatie {#de-hibernation-introduction}
 
-U kunt uw Sandbox-programma handmatig via de ontwikkelaarsconsole herbergen.
+U kunt uw Sandbox-programma handmatig van de Developer Console voorzien.
 
 >[!IMPORTANT]
 >
->Een gebruiker met een **Ontwikkelaar** Deze rol kan een sandboxprogrammaomgeving dehiberneren.
+>Een gebruiker met de rol van de a **Ontwikkelaar** kan een milieu van het zandbakprogramma ontruimen-onderbreken.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)** tikken of op het programma klikken dat u wilt dehiberneren om de details weer te geven.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, ontruim of klik het programma u zijn details wilt tonen.
 
-1. Op de **Omgevingen** kaart, klikt u op de knop voor ovaal en selecteert u **Ontwerpconsole**.
+1. Op de **kaart van Milieu&#39;s**, klik de elliptische knoop en selecteer **Developer Console**.
 
-   * Zie [Developer Console openen](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor meer informatie over de Developer Console.
+   * Zie [ Toegang hebbend tot Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) voor extra details over Developer Console.
 
-1. Klikken **De-hibernate**.
+1. Klik **de-hibernate**.
 
-   ![De-hibernate knop](assets/de-hibernation-img1.png)
+   ![ De-hibernate knoop ](assets/de-hibernation-img1.png)
 
-1. Klikken **De-Hibernate** om de stap te bevestigen.
+1. Klik **de-Sluimerstand** om de stap te bevestigen.
 
-   ![De-hibernatie bevestigen](assets/de-hibernation-img2.png)
+   ![ bevestigt de-hibernatie ](assets/de-hibernation-img2.png)
 
 1. U ontvangt een melding dat het dehibernatieproces is gestart en met de voortgang is bijgewerkt.
 
-   ![Voortgangsmelding sluimerstand](assets/de-hibernation-img3.png)
+   ![ bericht van de de vooruitgangsvooruitgang van de Slaapstand ](assets/de-hibernation-img3.png)
 
 1. Zodra het proces is voltooid, is de sandboxprogrammaomgeving weer actief.
 
-   ![De-hibernatie voltooid](assets/de-hibernation-img4.png)
+   ![ De-hibernatie voltooide ](assets/de-hibernation-img4.png)
 
 
-In de Developer Console kunt u ook op de knop **Omgevingen** link in de breadcrumbs boven de **Pod** vervolgkeuzelijst voor een lijst met omgevingen die moeten worden gedehiberneerd.
+In Developer Console kunt u ook de **Milieu** verbinding in de broodkruimels boven de **Peul** drop-down lijst voor een lijst van milieu&#39;s aan dehibernate klikken.
 
-![Lijst met gedownloade pods](assets/de-hibernate-1b.png)
+![ Lijst van hibernated pods ](assets/de-hibernate-1b.png)
 
 ### Machtigingen om de-Slaapstand te verwijderen {#permissions-de-hibernate}
 
-Elke gebruiker met een productprofiel die hem toegang geeft tot AEM as a Cloud Service moet toegang hebben tot de **Ontwerpconsole**, waardoor zij het milieu kunnen ontberen.
+Om het even welke gebruiker met een productprofiel dat hen toegang tot AEM as a Cloud Service geeft zou tot **Developer Console** moeten kunnen toegang hebben, toestaand hen om het milieu te ontruimen-hiberneren.
 
 ## Een gedownloade omgeving openen {#accessing-hibernated-environment}
 
-Wanneer het doen van om het even welke browser verzoeken tegen de auteur, de voorproef, of de publicatieservice van een hibernated milieu, zal de gebruiker een landende pagina ontmoeten die de geminimaliseerde status van het milieu samen met een verbinding aan de Console van de Ontwikkelaar beschrijft waar de dienst kan worden ontruimd-hibernated.
+Wanneer de gebruiker om het even welke browser verzoeken tegen de auteur, voorproef, of publicatieservice van een gehiberneerde milieu, zal de gebruiker een landende pagina ontmoeten die de gehiberneerde status van het milieu samen met een verbinding aan Developer Console beschrijft waar de dienst kan worden ontruimd-hibernated.
 
-![Opgeslagen bestemmingspagina](assets/de-hibernation-img5.png)
+![ Gesamberneerde dienst die pagina ](assets/de-hibernation-img5.png) landen
 
 ## Implementaties en AEM updates {#deployments-updates}
 
@@ -111,13 +111,13 @@ In gesluimerde omgevingen zijn implementaties en handmatige AEM nog steeds mogel
 
 * Een gebruiker kan een pijpleiding gebruiken om douanecode aan gehiberneerde milieu&#39;s op te stellen. Het milieu zal gehiberneerd blijven en de nieuwe code zal in het milieu verschijnen zodra ontruimd-hibernated.
 
-* AEM upgrades kunnen worden toegepast op gehiberde omgevingen en kunnen handmatig worden geactiveerd via Cloud Manager. Het milieu zal gehiberneerd blijven en de nieuwe introductie zal in het milieu verschijnen zodra het wordt gedehiberneerd.
+* AEM upgrades kunnen worden toegepast op gehiberde omgevingen en kunnen handmatig worden geactiveerd vanuit Cloud Manager. Het milieu zal gehiberneerd blijven en de nieuwe introductie zal in het milieu verschijnen zodra het wordt gedehiberneerd.
 
 ## Sluimerstand en verwijdering {#hibernation-deletion}
 
 * De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genummerd.
    * Inactiviteit wordt gedefinieerd als het ontvangen van aanvragen door de auteurservice of door voorvertonings- of publicatieservices.
-   * Als ze eenmaal zijn gehiberd, kunnen ze [handmatig ontbonden.](#de-hibernation-introduction)
+   * Zodra hibernated, kunnen zij [ manueel worden ontruimd-hibernated.](#de-hibernation-introduction)
 * Sandboxprogramma&#39;s worden verwijderd na zes maanden van continuhibernatiemodus, waarna ze opnieuw kunnen worden gemaakt.
 
 >[!NOTE]

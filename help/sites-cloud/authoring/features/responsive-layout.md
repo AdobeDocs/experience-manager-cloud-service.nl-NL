@@ -11,9 +11,9 @@ ht-degree: 5%
 
 # Responsieve lay-out {#responsive-layout}
 
-Met AEM kunt u een responsieve indeling voor uw pagina&#39;s gebruiken met behulp van de **Layout Container** component.
+AEM laat u een ontvankelijke lay-out voor uw pagina&#39;s door de **component van de Container van de Lay-out te gebruiken 0} hebben.**
 
-Dit biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt in combinatie met de [**Layout** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), waarmee u uw responsieve lay-out afhankelijk van het apparaat kunt maken en bewerken.
+Dit biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt samen met de **wijze van de Lay-out[** ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), die u laat uw ontvankelijke lay-out afhankelijk van apparaat tot stand brengen en uitgeven.
 
 De container layout:
 
@@ -26,13 +26,13 @@ De gebruiker kan dan zien hoe de inhoud wordt gerenderd voor specifieke apparate
 
 AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinatie mechanismen:
 
-* [**Layout Container**](#adding-a-layout-container-and-its-content-edit-mode) component
+* **](#adding-a-layout-container-and-its-content-edit-mode)component van de Container van 0} Lay-out[**
 
-  Deze component is beschikbaar in het dialoogvenster [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) en biedt een rasteralineasysteem waarmee u componenten kunt toevoegen en positioneren binnen een responsief raster. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
+  Deze component is beschikbaar in [ componentenbrowser ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) en verstrekt een net-paragraaf systeem om u toe te staan om componenten binnen een ontvankelijk net toe te voegen en te plaatsen. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
 
 * [**Lay-outmodus**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-  Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om de inhoud binnen het responsieve raster te plaatsen.
+  Zodra de lay-outcontainer op uw pagina wordt geplaatst kunt u de **wijze van de Lay-out** gebruiken om inhoud binnen het ontvankelijke net te plaatsen.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
 Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
@@ -49,7 +49,7 @@ Afhankelijk van uw project, zou de Container van de Lay-out als standaardparagra
 
 >[!TIP]
 >
->Adobe biedt [GitHub-documentatie](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) van de responsieve lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het AEM net buiten AEM te gebruiken, bijvoorbeeld, wanneer het creëren van statische HTML mock-ups voor een toekomstige AEM plaats.
+>Adobe verstrekt [ documentatie GitHub ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) van de ontvankelijke lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het AEM net buiten AEM te gebruiken, bijvoorbeeld, wanneer het creëren van statische HTML mock-ups voor een toekomstige AEM plaats.
 
 >[!NOTE]
 >
@@ -61,14 +61,14 @@ Wanneer u uw website-inhoud maakt, moet u ervoor zorgen dat uw inhoud correct wo
 
 Met AEM kunt u lay-outs definiëren die afhankelijk zijn van de breedte van het apparaat:
 
-* Met de emulator kunt u deze lay-outs emuleren op een reeks apparaten. Naast het apparaattype is de stand geselecteerd door de **Apparaat draaien** kan dit invloed hebben op het geselecteerde onderbrekingspunt wanneer de breedte verandert.
+* Met de emulator kunt u deze lay-outs emuleren op een reeks apparaten. Naast het apparatentype, kan de richtlijn, die door de **wordt geselecteerd het apparaat van de Roteren** optie, het breekpunt beïnvloeden dat wordt geselecteerd aangezien de breedte verandert.
 * Onderbrekingspunten zijn de punten die de layoutdefinities scheiden.
    * Ze definiëren in feite de maximale breedte (in pixels) van elk apparaat met een specifieke layout.
    * De onderbrekingspunten zijn gewoonlijk geldig voor een selectie van apparaten, afhankelijk van de breedte van hun vertoningen.
    * Het bereik van een onderbrekingspunt loopt door tot het volgende onderbrekingspunt.
    * U kunt het onderbrekingspunt niet specifiek selecteren, zal selecteren een apparaat en de richtlijn automatisch het aangewezen breekpunt selecteren.
 
-Het apparaat **Desktop**, die geen specifieke breedte heeft, heeft betrekking op het standaardbreekpunt (dat wil zeggen alles boven het laatst geconfigureerde onderbrekingspunt).
+Het apparaat **Desktop**, dat geen specifieke breedte heeft, heeft op het standaardbreekpunt (namelijk alles boven het laatste gevormde breekpunt) betrekking.
 
 >[!NOTE]
 >
@@ -76,9 +76,9 @@ Het apparaat **Desktop**, die geen specifieke breedte heeft, heeft betrekking op
 
 Wanneer u de emulator gebruikt, selecteert u een specifiek apparaat voor emulatie- en layoutdefinitie en wordt het verwante onderbrekingspunt ook gemarkeerd. Wijzigingen in de layout zijn van toepassing op andere apparaten waarop het onderbrekingspunt van toepassing is. Namelijk om het even welke apparaten die aan de linkerzijde van de actieve breekpuntteller worden geplaatst, maar vóór de volgende breekpuntteller.
 
-Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd met een breedte van 540 pixels) voor emulatie en lay-out, het onderbrekingspunt **Telefoon** (gedefinieerd als 768 pixels) wordt ook geactiveerd. Alle indelingswijzigingen die u aanbrengt voor de **IPHONE 6** van toepassing zijn op andere voorzieningen onder de **Telefoons** onderbrekingspunten, zoals **IPHONE 5** (gedefinieerd als 320 pixels).
+Bijvoorbeeld, wanneer u het apparaat **iPhone 6 plus** (die met een breedte van 540 pixel wordt bepaald) voor wedijver en lay-out selecteert, wordt de breekpunt **Telefoon** (die als 768 pixel wordt bepaald) geactiveerd ook. Om het even welke lay-outveranderingen u voor **iPhone 6** aanbrengt zijn van toepassing op andere apparaten onder **Telefoons** breekpunt, zoals **iPhone 5** (die als 320 pixel wordt bepaald).
 
-![Emulators](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
+![ Emulators ](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
 ## Een apparaat selecteren om te emuleren {#selecting-a-device-to-emulate}
 
@@ -86,24 +86,24 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 
    `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
-1. Selecteer de **Emulator** pictogram van de bovenste werkbalk:
+1. Selecteer het **pictogram van de Mededinger** van de hoogste toolbar:
 
-   ![Emulator-knop](/help/sites-cloud/authoring/assets/emulator.png)
+   ![ knoop van de Mededinger ](/help/sites-cloud/authoring/assets/emulator.png)
 
 1. De emulatorwerkbalk wordt geopend.
 
-   ![Emulator, werkbalk](/help/sites-cloud/authoring/assets/responsive-layout-emulator-toolbar.png)
+   ![ toolbar van de Mededinger ](/help/sites-cloud/authoring/assets/responsive-layout-emulator-toolbar.png)
 
    Op de emulatorwerkbalk worden extra layoutopties weergegeven:
 
-   * **Apparaat draaien** - Hiermee kunt u een apparaat roteren van verticale (staande) richting naar horizontale (liggende) richting en omgekeerd.
+   * **roteer apparaat** - laat u een apparaat van verticale (staande) richtlijn aan horizontale (landschaps) richtlijn roteren en omgekeerd.
 
-   ![De knop Apparaat liggend roteren](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
-   ![De knop Staand apparaat roteren](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
+   ![ roteer apparaat liggend knoop ](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
+   ![ roteer apparatenportretknoop ](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
 
-   * **Apparaat selecteren** - Definieer een specifiek apparaat dat u wilt emuleren vanuit een lijst (zie de volgende stap voor meer informatie)
+   * **Uitgezochte Apparaat** - bepaal een specifiek apparaat om van een lijst (zie volgende stap voor details) na te streven
 
-   ![Apparaat selecteren, knop](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
+   ![ Uitgezochte knoop van het Apparaat ](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
 
 1. Als u een specifiek apparaat wilt selecteren om te emuleren, kunt u:
 
@@ -114,19 +114,19 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 
 1. Nadat een specifiek apparaat is geselecteerd, kunt u:
 
-   * Zie de actieve markering voor het geselecteerde apparaat, bijvoorbeeld **iPad.**
-   * Zie de actieve markering voor de juiste [breekpunt](#layout-definitions-device-emulation-and-breakpoints) zoals **Tablet.**
-   * De blauwe stippellijn geeft de *vouwen* voor het geselecteerde apparaat (hier **iPhone 6 Plus** liggend).
+   * Zie de actieve teller voor het geselecteerde apparaat, zoals **iPad.**
+   * Zie de actieve teller voor het aangewezen [ breekpunt ](#layout-definitions-device-emulation-and-breakpoints) zoals **Tablet.**
+   * De blauwe gestippelde lijn vertegenwoordigt de *plooi* voor het geselecteerde apparaat (hier een **iPhone 6 plus** in landschap).
 
-   ![De vouw](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
+   ![ vouwt ](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * De vouw kan ook worden beschouwd als het pagina-regeleinde (niet te verwarren met het [onderbrekingspunten](#layout-definitions-device-emulation-and-breakpoints)) voor de inhoud. Dit wordt voor het gemak weergegeven om aan te geven welk deel van de inhoud de gebruiker op het apparaat ziet voordat hij of zij schuift.
+   * De vouw kan ook als de onderbreking van de paginalijn (niet om met de [ breekpunten ](#layout-definitions-device-emulation-and-breakpoints) worden verward) voor de inhoud worden beschouwd. Dit wordt voor het gemak weergegeven om aan te geven welk deel van de inhoud de gebruiker op het apparaat ziet voordat hij of zij schuift.
    * De lijn voor de vouw wordt niet getoond als de hoogte van het apparaat dat wordt geëmuleerd hoger is dan de het schermgrootte.
    * De vouw wordt getoond voor het gemak van de auteur en niet op de gepubliceerde pagina getoond.
 
 ## Een container voor lay-out en de bijbehorende inhoud toevoegen (modus Bewerken) {#adding-a-layout-container-and-its-content-edit-mode}
 
-A **Layout Container** is een alineasysteem dat:
+A **de Container van de Lay-out** is een paragraafsysteem dat:
 
 * Bevat andere componenten.
 * Definieert de layout.
@@ -134,16 +134,16 @@ A **Layout Container** is een alineasysteem dat:
 
 >[!NOTE]
 >
->Indien niet reeds beschikbaar, **Layout Container** moet expliciet worden geactiveerd voor een alineasysteem/pagina. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
+>Als niet reeds beschikbaar, moet de **Container van de Lay-out** uitdrukkelijk voor een paragraafsysteem/pagina worden geactiveerd. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. De **lay-outcontainer** is beschikbaar als standaardcomponent in de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Hier kunt u het naar de gewenste locatie op de pagina slepen waarna u de **Componenten hierheen slepen** plaatsaanduiding.
+1. De **lay-outcontainer** is beschikbaar als standaardcomponent in de [componentbrowser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Van hier kunt u het aan de vereiste plaats op de pagina slepen waarna u de **Componenten van de Belemmering hier** placeholder kunt zien.
 1. Vervolgens kunt u componenten aan de lay-outcontainer toevoegen. Deze componenten bevatten de werkelijke inhoud:
 
-   ![Lay-outcontainer](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
+   ![ container van de Lay-out ](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
 ## Handeling selecteren en uitvoeren in een container Layout (modus Bewerken) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Net als bij andere componenten kunt u een Layout Container selecteren en vervolgens een handeling uitvoeren (knippen, kopiëren, verwijderen) (wanneer u zich **Bewerken** modus):
+Zoals met andere componenten, kunt u selecteren en dan op (besnoeiing, exemplaar, schrapping) een Container van de Lay-out (wanneer in **uitgeven** wijze) handelen:
 
 >[!CAUTION]
 >
@@ -151,92 +151,92 @@ Net als bij andere componenten kunt u een Layout Container selecteren en vervolg
 
 1. Als u de muis boven de tijdelijke aanduiding voor het raster houdt of deze selecteert, wordt het actiemenu weergegeven.
 
-   ![Toevoegen aan de lay-outcontainer](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
+   ![ voeg aan de lay-outcontainer ](/help/sites-cloud/authoring/assets/responsive-layout-container.png) toe
 
-   U moet de **Bovenliggend** -optie.
+   U moet de **Ouder** optie selecteren.
 
-   ![Bovenliggende knop](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+   ![ Bovenliggende knoop ](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. Als de lay-outcomponent genest is, selecteert u de **Bovenliggend** wordt een vervolgkeuzelijst weergegeven, waarin u de geneste lay-outcontainer of de bovenliggende items kunt selecteren.
+1. Als de lay-outcomponent wordt genest, die de **ouder** optie selecteren stelt een drop-down selectie voor, latend u om de genestelde lay-outcontainer of zijn ouders te selecteren.
 
    Wanneer u de muis boven de containernamen in de vervolgkeuzelijst plaatst, worden de contouren ervan weergegeven op de pagina.
 
    * De laagst geneste container voor de layout is blauw.
    * Elke volgende container krijgt een omtrek van een lichtere kleur met blauw.
 
-   ![Geneste containers](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
+   ![ Geneste containers ](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-1. Het volledige raster wordt gemarkeerd met de inhoud ervan. De werkbalk Handeling wordt weergegeven, waar u een handeling kunt selecteren, zoals **Verwijderen.**
+1. Het volledige raster wordt gemarkeerd met de inhoud ervan. De actietoolbar wordt getoond, van waar u een actie zoals **Schrapping kunt selecteren.**
 
 ## Indelingen definiëren (modus Indeling) {#defining-layouts-layout-mode}
 
 >[!NOTE]
 >
->U kunt een afzonderlijke lay-out definiëren voor elk [breekpunt](#layout-definitions-device-emulation-and-breakpoints) (bepaald aan de hand van het geëmuleerde type en de stand van de voorziening).
+>U kunt een afzonderlijke lay-out voor elk [ breekpunt ](#layout-definitions-device-emulation-and-breakpoints) (zoals die door geëmuleerd apparatentype en richtlijn wordt bepaald) bepalen.
 
-Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay-out wordt uitgevoerd moet u gebruiken **Layout** -modus.
+Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay-out wordt uitgevoerd moet u de **wijze van de Lay-out** gebruiken.
 
-**Layout** Deze modus kan op twee manieren worden gestart.
+**de wijze van de Lay-out** kan op twee manieren worden begonnen.
 
 * Gebruik het [modusmenu op de werkbalk](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en kies de modus **Lay-out**
    * Selecteer de modus **Lay-out** op dezelfde manier als wanneer u schakelt naar de modus **Bewerken** of de modus **Targeting**.
    * De modus **Lay-out** is permanent en u verlaat de modus **Lay-out** pas wanneer u een andere modus selecteert via de moduskiezer.
-* Wanneer [bewerken van een afzonderlijke component](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
-   * Met de opdracht **Layout** in het snelmenu van de component kunt u schakelen naar **Layout** -modus.
-   * **Layout** modus blijft bestaan tijdens het bewerken van de component en keert terug naar **Bewerken** modus als focus verandert in een andere component.
+* Wanneer [ het uitgeven van een individuele component ](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
+   * Door de **optie van de Lay-out** in het snelle actiemenu van de component te gebruiken, kunt u op **Lay-out** wijze schakelen.
+   * **de wijze van de Lay-out 1} blijft terwijl het uitgeven van de component en keert terug naar** geef **wijze uit zodra de nadruk in een andere component verandert.**
 
 In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
 * Wijzig de grootte van de inhoudcomponenten met de blauwe stippen. Het resizing zal altijd breken-aan-net. Bij het wijzigen van de grootte wordt het achtergrondraster weergegeven als hulpmiddel bij de uitlijning:
 
-  ![Formaat van componenten wijzigen](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+  ![ Resize componenten ](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
   >[!NOTE]
   >
-  >Verhoudingen en verhoudingen blijven behouden wanneer componenten zoals **Afbeeldingen** worden vergroot of verkleind.
+  >De verhoudingen en de verhoudingen worden gehandhaafd wanneer de componenten zoals **Beelden** resized.
 
 * Selecteer een inhoudcomponent, laat de toolbar u:
-   * **Bovenliggend** - Hiermee kunt u de volledige containercomponent voor de lay-out selecteren om actie te ondernemen over het geheel.
-   * **Zweven naar nieuwe regel** - De component wordt naar een nieuwe regel verplaatst, afhankelijk van de ruimte die beschikbaar is in het raster.
-   * **Component verbergen** - De component is onzichtbaar gemaakt (u kunt deze herstellen vanaf de werkbalk van de container voor lay-outs).
+   * **Ouder** - laat u de volledige component van de lay-outcontainer voor het nemen van actie op het geheel selecteren.
+   * **Vloeiend aan nieuwe lijn** - de component wordt bewogen aan een nieuwe lijn, afhankelijk van de ruimte beschikbaar binnen het net.
+   * **de component van de Huid** - de component wordt gemaakt onzichtbaar (het kan van de toolbar van de lay-outcontainer worden hersteld).
 
-  ![Component verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+  ![ de component van de Huid ](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In **Layout** -modus kunt u **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk wordt weergegeven voor deze modus.
+* Op **Lay-out** wijze kunt u de **componenten van de Belemmering hier** selecteren om de volledige component te selecteren. De werkbalk wordt weergegeven voor deze modus.
 
   De werkbalk heeft verschillende opties, afhankelijk van de status van de lay-outcomponent en de onderdelen ervan. Bijvoorbeeld:
 
-   * **Bovenliggend** - Selecteer de bovenliggende component.
+   * **Ouder** - selecteer de oudercomponent.
 
-     ![Bovenliggende knop](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+     ![ Bovenliggende knoop ](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   * **Verborgen componenten tonen** - Alle of afzonderlijke componenten zichtbaar maken. Het getal geeft aan hoeveel verborgen componenten er momenteel zijn. De teller toont hoeveel componenten verborgen zijn.
+   * **toon verborgen componenten** - openbaart alle of individuele componenten. Het getal geeft aan hoeveel verborgen componenten er momenteel zijn. De teller toont hoeveel componenten verborgen zijn.
 
-     ![Knop Verborgen componenten tonen](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+     ![ toon verborgen componentenknoop ](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-   * **De indeling van het onderbrekingspunt herstellen** - De standaardlayout herstellen. Er wordt geen aangepaste indeling opgelegd.
+   * **keert breekpuntlay-out** terug - keer aan de standaardlay-out terug. Er wordt geen aangepaste indeling opgelegd.
 
-     ![De knop voor de lay-out van een onderbrekingspunt herstellen](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+     ![ keert de knoop van de breekpuntlay-out terug ](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
-   * **Zweven naar nieuwe regel** - Verplaats de component omhoog als de afstand dit toestaat.
+   * **Vloeiend aan nieuwe lijn** - beweeg de component omhoog een positie als het uit elkaar plaatsen toestaat.
 
-     ![Zweven naar nieuwe regelknop](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+     ![ drijft aan een nieuwe lijnknoop ](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
-   * **Component verbergen** - Verberg de huidige component.
+   * **de component van de Huid** - verberg de huidige component.
 
-     ![Component-knop verbergen](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
+     ![ de componentenknoop van de Huid ](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
 
   >[!NOTE]
   >
   >In het bovenstaande voorbeeld zijn de acties voor zweven en verbergen beschikbaar omdat deze container van de layout is genest in een bovenliggende container van de layout.
 
-   * **Componenten zichtbaar maken**
-Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de opdracht **Verborgen componenten tonen** -optie. In dit voorbeeld zijn twee componenten verborgen.
+   * **unhide componenten**
+Selecteer de oudercomponenten om de actietoolbar met **te tonen verborgen componenten** optie. In dit voorbeeld zijn twee componenten verborgen.
 
-     ![Componenten zichtbaar maken](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
+     ![ unhide componenten ](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
   Als u de optie **Verborgen componenten weergeven** selecteert, worden de componenten die momenteel op hun oorspronkelijke positie zijn verborgen, blauw weergegeven.
 
-  ![Alle knoppen herstellen](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+  ![ herstel alle knoop ](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
 
-  Selecteren **Alles herstellen** alle verborgen componenten zichtbaar maken.
+  Het selecteren **herstelt alle** zal alle verborgen componenten onthullen.

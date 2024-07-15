@@ -15,7 +15,7 @@ ht-degree: 0%
 Een AEM installatie bestaat meestal uit minstens twee omgevingen:
 
 * Auteur
-* Publiceren
+* Publish
 
 Deze omgevingen hebben invloed op het beschikbaar stellen van inhoud op uw website, zodat uw bezoekers er toegang toe hebben.
 
@@ -24,7 +24,7 @@ De auteursomgeving verstrekt de mechanismen om, deze inhoud tot stand te brengen
 * Een auteur maakt de inhoud en bekijkt deze. Inhoud kan van verschillende typen zijn, zoals pagina&#39;s, elementen en publicaties.
 * Deze inhoud wordt op een gegeven moment gepubliceerd op uw website.
 
-![Diagram van auteur, uitgever, en verzenders](/help/sites-cloud/authoring/assets/author-publish.png)
+![ Diagram van auteur, uitgever, en verzenders ](/help/sites-cloud/authoring/assets/author-publish.png)
 
 In de auteursomgeving, wordt de functionaliteit van AEM ter beschikking gesteld door AEM auteursgebruikersinterface. Voor het publicatiemilieu, ontwerpt u het volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
 
@@ -32,7 +32,7 @@ In de auteursomgeving, wordt de functionaliteit van AEM ter beschikking gesteld 
 
 ## Auteursomgeving {#author-environment}
 
-De auteur werkt in wat als **auteursomgeving**. Deze omgeving biedt een gebruiksvriendelijke interface (GUI of UI) voor het maken van de inhoud. De auteur moet zich aanmelden met een account waaraan de juiste toegangsrechten zijn toegewezen.
+De auteur werkt in wat als het **auteursmilieu** wordt bekend. Deze omgeving biedt een gebruiksvriendelijke interface (GUI of UI) voor het maken van de inhoud. De auteur moet zich aanmelden met een account waaraan de juiste toegangsrechten zijn toegewezen.
 
 >[!NOTE]
 >
@@ -59,14 +59,14 @@ Bovendien zijn er beheertaken die u helpen uw inhoud te beheren:
 
 AEM biedt ook een Sites Preview-service waarmee ontwikkelaars en makers van inhoud de uiteindelijke ervaring van een website kunnen voorvertonen voordat deze de publicatieomgeving bereikt en openbaar beschikbaar is.
 
-Zie [Inhoud voorvertonen](/help/sites-cloud/authoring/fundamentals/previewing-content.md) voor nadere bijzonderheden.
+Zie [ het Voorproeven van Inhoud ](/help/sites-cloud/authoring/fundamentals/previewing-content.md) voor verdere details.
 
-## Publicatie-omgeving {#publish-environment}
+## Publish-omgeving {#publish-environment}
 
-Als de inhoud van uw site gereed is, wordt deze gepubliceerd naar de **publicatieomgeving**. Hier worden de pagina&#39;s van de website beschikbaar gemaakt voor het beoogde publiek, in overeenstemming met de vormgeving van de ontworpen interface.
+Wanneer klaar, wordt de inhoud van uw plaats gepubliceerd aan **publiceert milieu**. Hier worden de pagina&#39;s van de website beschikbaar gemaakt voor het beoogde publiek, in overeenstemming met de vormgeving van de ontworpen interface.
 
-Zie het document voor meer informatie over het publiceren en ongedaan maken van de publicatie van pagina&#39;s [Pagina&#39;s publiceren](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
+Voor meer informatie over het publiceren en het unpublishing van pagina&#39;s, zie het document [ Publiceren Pagina&#39;s ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
 ## Dispatcher {#dispatcher}
 
-Om de prestaties voor bezoekers van uw website te optimaliseren, **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementeert taakverdeling en caching.
+Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher](/help/implementing/dispatcher/overview.md)** lading het in evenwicht brengen en het in cache plaatsen uit.

@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release 2022.1.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Opmerkingen bij de release 2022.1.0 van [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Nota's van de versie voor 2022.1.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Nota's van de versie voor 2022.1.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
 feature: Release Information
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release 202.1.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Opmerkingen bij de release 2022.1.0 voor [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-In de volgende sectie worden de opmerkingen bij de release met functies voor de versie 2022.1.0 van [!DNL Experience Manager] as a Cloud Service.
+In de volgende sectie worden de opmerkingen bij de functierelease voor de versie 2022.1.0 van [!DNL Experience Manager] as a Cloud Service beschreven.
 
 >[!NOTE]
 >
@@ -21,66 +21,66 @@ In de volgende sectie worden de opmerkingen bij de release met functies voor de 
 
 >[!NOTE]
 >
->Zie [Recente documentatieupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor meer informatie over documentatie-updates die niet rechtstreeks verband houden met een release.
+>Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) voor details van documentatieupdates niet direct met een versie verwant.
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als [!DNL Cloud Service] huidige release (2022.1.0) is 3 februari 2022.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release (2022.1.0) is 3 februari 2022.
 De volgende release (2022.3.0) is op 31 maart 2022.
 
 ## Video vrijgeven {#release-video}
 
-Kijk eens naar de [Overzicht release januari 2022](https://video.tv.adobe.com/v/340120) video voor een overzicht van de functies die in de release 2022.1.0 zijn toegevoegd.
+Heb een blik bij de [ Januari 2022 het Overzicht van de Versie ](https://video.tv.adobe.com/v/340120) video voor een samenvatting van de eigenschappen die in de versie 2022.1.0 worden toegevoegd.
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* De **[Vooruiteinde pijplijn inschakelen](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** is beschikbaar in het dialoogvenster **Site** rail van de Sites-console voor sites die versie 2 van de Page Core-component gebruiken. Deze knoop vormt de plaats om de thema&#39;s te laden die met de Voorste Pijpleiding van het Eind bovenop de bestaande cliëntbibliotheken worden opgesteld.
+* **[laat Voorste knoop van de Pijl van het Eind toe](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** is beschikbaar in het **spoor van de Plaats** van de console van Plaatsen voor plaatsen die v2 van de Component van de Kern van de Pagina gebruiken. Deze knoop vormt de plaats om de thema&#39;s te laden die met de Voorste Pijpleiding van het Eind bovenop de bestaande cliëntbibliotheken worden opgesteld.
 
-## [!DNL Experience Manager Assets] als [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
 ### Nieuwe functies in [!DNL Assets] {#assets-features}
 
-* [!DNL Dynamic Media] - U kunt nu AEM Dynamic Media-interface gebruiken om Algemene instellingen en Publicatie-instellingen te configureren in plaats van de Dynamic Media Classic-bureaubladtoepassing te doorlopen.
+* [!DNL Dynamic Media] - U kunt nu AEM Dynamic Media-interface gebruiken om Algemene instellingen en Publish Setup te configureren in plaats van de Dynamic Media Classic-bureaubladtoepassing te doorlopen.
 
 * [!DNL Dynamic Media] ondersteunt nu opname, voorvertoning, afspelen en publiceren voor MXF-video&#39;s. Annotatie en verbluffende video voor MXF-video&#39;s worden nog niet ondersteund.
 
-* Nadat u een verbinding tussen externe DAM- en Sites-implementaties hebt geconfigureerd, worden de middelen op externe DAM beschikbaar gesteld op de implementatie van Sites. U kunt nu de opdracht [bewerkingen bijwerken, verwijderen, hernoemen en verplaatsen](/help/assets/use-assets-across-connected-assets-instances.md) op de externe DAM-middelen of -mappen. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen.
+* Nadat u een verbinding tussen externe DAM- en Sites-implementaties hebt geconfigureerd, worden de middelen op externe DAM beschikbaar gesteld op de implementatie van Sites. U kunt de [ update nu uitvoeren, schrappen, hernoemen, en bewegingsverrichtingen ](/help/assets/use-assets-across-connected-assets-instances.md) op de verre activa DAM of de omslagen anders. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen.
 
-### Nieuwe functies in het dialoogvenster [!DNL Assets] prerelease-kanaal {#assets-prerelease-features}
+### Nieuwe functies in het [!DNL Assets] pre-releasekanaal {#assets-prerelease-features}
 
-* [!DNL AEM Dynamic Media] biedt nu de flexibiliteit om [één alias-account configureren](/help/assets/dynamic-media/dm-alias-account.md) in de gebruikersinterface, waarbij ervoor wordt gezorgd dat Dynamic Media-URL&#39;s en code voor insluiten van de viewer buiten de box worden bijgewerkt. Dit heeft een positieve invloed op SEO om de updates te weerspiegelen die zijn aangebracht in uw zakelijke context, zoals herbranding.
+* [!DNL AEM Dynamic Media] verstrekt nu de flexibiliteit om [ één alias rekening ](/help/assets/dynamic-media/dm-alias-account.md) in het gebruikersinterface te vormen, daardoor het verzekeren van uit-van-de-doos Dynamic Media URLs en de Kijker bedt code wordt bijgewerkt. Dit heeft een positieve invloed op SEO om de updates te weerspiegelen die zijn aangebracht in uw zakelijke context, zoals herbranding.
 
-* U kunt nu de opdracht [!DNL Experience Manager Assets] gebruikersinterface naar:
+* U kunt nu de gebruikersinterface van [!DNL Experience Manager Assets] gebruiken om:
 
    * Configureer de detectie van dubbele elementen in een opslagplaats.
 
    * Configureer het toevoegen van digitale watermerken aan afbeeldingen.
 
-* De beheerders kunnen nu de e-mailservice configureren voor grote downloads. Hiermee kunnen gebruikers [e-mailmeldingen inschakelen voor grote downloads](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) van de [!DNL Experience Manager Assets] interface. De gebruiker ontvangt een e-mailbericht met de downloadkoppeling van de gearchiveerde ZIP-map na voltooiing van het downloadproces.
+* De beheerders kunnen nu de e-mailservice configureren voor grote downloads. Het staat de gebruikers toe om [ e-mailberichten voor grote downloads ](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) van de [!DNL Experience Manager Assets] interface toe te laten. De gebruiker ontvangt een e-mailbericht met de downloadkoppeling van de gearchiveerde ZIP-map na voltooiing van het downloadproces.
 
 
-* De [Publicatie beheren](/help/assets/manage-publication.md) wordt verbeterd met een verbeterde gebruikersinterface. De gebruikers kunnen inhoud publiceren of unpublish aan en van de geselecteerde bestemming. [Inhoud toevoegen](/help/assets/manage-publication.md#add-content) naar de publicatielijst vanuit de DAM-opslagplaats, [Inclusief mapinstellingen](/help/assets/manage-publication.md#include-folder-settings) om inhoud van de geselecteerde omslagen te publiceren en filters toe te passen, en [publiceren plannen](/help/assets/manage-publication.md#publish-assets-later) naar een latere datum of tijd.
+* [ leidt de eigenschap van de Publicatie ](/help/assets/manage-publication.md) wordt verbeterd met een beter gebruikersinterface. De gebruikers kunnen inhoud publiceren of unpublish aan en van de geselecteerde bestemming, [ toevoegen Inhoud ](/help/assets/manage-publication.md#add-content) aan de het publiceren lijst van over de bewaarplaats DAM, [ omvatten de Montages van de Omslag ](/help/assets/manage-publication.md#include-folder-settings) om inhoud van de geselecteerde omslagen te publiceren en filters toe te passen, en [ plannen het publiceren ](/help/assets/manage-publication.md#publish-assets-later) aan een recentere datum of een tijd.
 
 ### Opgeloste problemen {#bug-fixes}
 
 * Niet-verwerkte middelen zonder oorspronkelijke uitvoering worden naar de Asset compute verzonden voor verwerking terwijl de middelen van AEM on-premise naar cloudservices worden gemigreerd.
 
-## [!DNL Experience Manager Forms] als [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) hulp u een malplaatje en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    * Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    * Formulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    * Afdruk-PDF genereren op basis van XFA-formulier-PDF.
    * Genereer PDF-, PostScript-, PCL- en ZPL-documenten in bulk door meerdere gegevenssets samen te voegen met bronsjablonen.
 
-* **Aangepaste lettertypen voor document van record- en PDF-documenten die zijn gemaakt met communicatie-API&#39;s**: U kunt nu met een merk goedgekeurde lettertypen gebruiken in PDF-documenten die zijn gegenereerd met communicatie-API&#39;s en die aan uw organisatorische vereisten voldoen.
+* **de doopvonten van de Douane voor Document van Verslag en PDF documenten die met Mededelingen APIs** worden gecreeerd: U kunt merk goedgekeurde doopvonten in de documenten van PDF nu gebruiken die Communicatie APIs worden geproduceerd om op uw organisatorische vereisten te richten.
 
-### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms}
+### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#prerelease-features-forms}
 
-* **[Assembler API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler-API&#39;s om PDF-documenten te combineren, opnieuw te rangschikken, te vergroten en te verkrijgen.
+* **[Assembler API ](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: Assembler APIs om te combineren, te herschikken, te verhogen en informatie over de documenten van PDF te verkrijgen.
 
 
 ## CIF invoegtoepassing {#cloud-services-cif}
@@ -101,12 +101,12 @@ Kijk eens naar de [Overzicht release januari 2022](https://video.tv.adobe.com/v/
 
 ### Releasedatum {#release-date-cm}
 
-De releasedatum voor Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 januari 2022. De volgende release is gepland voor 10 februari 2022.
+De releasedatum voor Cloud Manager is 20 januari 2022.01.0 in AEM as a Cloud Service. De volgende release is gepland voor 10 februari 2022.
 
 ### Wat is er nieuw? {#what-is-new-cm}
 
-* Cloud Manager wordt [vermijd het opnieuw samenstellen van de codebasis wanneer het ontdekt dat het zelfde git begaan wordt gebruikt](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in veelvoudige full-stack pijpleidingexecuties.
-* Voor het openen van het AEM-omgevingslogboek is nu de **Implementatiebeheer** productprofiel. Gebruikers zonder dit profiel zien een uitgeschakelde knop in de gebruikersinterface.
+* Cloud Manager zal [ vermijden herbouwend de codebasis wanneer het ontdekt dat het zelfde gat ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in veelvoudige full-stack pijpleidingsuitvoeringen wordt gebruikt.
+* De toegang tot van het AEM milieulogboek vereist nu het **productprofiel van de Manager van de Plaatsing 0}.** Gebruikers zonder dit profiel zien een uitgeschakelde knop in de gebruikersinterface.
 * UI zal niet front-end pijpleidingsconfiguratie voor een programma toestaan waar de Plaatsen niet als oplossing wordt toegelaten.
 * Bij het genereren van een wachtwoord voor een kit wordt de vervaldatum weergegeven.
 
@@ -125,7 +125,7 @@ De releasedatum voor Content Transfer Tool v1.8.6 is 3 februari 2022.
 
 ### Wat is er nieuw? {#what-is-new-ctt}
 
-* Inhoudsvalidatie - Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Als u deze functie wilt gebruiken, schakelt u deze in het dialoogvenster `System Console` van de bron AEM omgeving. Zie [Inhoudsoverdrachten valideren - Aan de slag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) voor meer informatie .
+* Inhoudsvalidatie - Gebruikers kunnen betrouwbaar bepalen of alle inhoud die met het gereedschap Inhoud overbrengen is uitgepakt, is opgenomen in de doelinstantie. Als u deze functie wilt gebruiken, schakelt u deze in in de `System Console` AEM van de bronomgeving. Zie [ Bevaliderende Inhoudsoverdrachten - Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) voor meer details.
 
 ### Opgeloste problemen {#bug-fixes-ctt}
 
@@ -141,7 +141,7 @@ De releasedatum voor de analyse van best practices v2.1.24 is 1 februari 2022.
 
 * Mogelijkheid om het aantal elementen met en zonder slimme tags te detecteren en hierover te rapporteren.
 * Mogelijkheid om de gebruikte versie van de Core Component te detecteren en hierover verslag uit te brengen.
-* Mogelijkheid om het type bronlaag (Auteur of Publiceren) waar BPA is uitgevoerd, op te sporen en te rapporteren.
+* Mogelijkheid om het type bronlaag (Auteur of Publish) waar BPA werd uitgevoerd op te sporen en te rapporteren.
 
 ### Opgeloste problemen {#bug-fixes-bpa}
 

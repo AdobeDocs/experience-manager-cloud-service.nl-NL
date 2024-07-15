@@ -1,5 +1,5 @@
 ---
-title: Opties vervolgkeuzelijst laden van een URL of een ander blad voor Edge Delivery Services voor as a Cloud Service AEM Forms
+title: Opties vervolgkeuzelijst laden van een URL of een ander blad voor Edge Delivery Services voor AEM Forms as a Cloud Service
 description: De opties voor de vervolgkeuzelijst worden opgenomen in een afzonderlijk spreadsheet en vervolgens geïmporteerd in het primaire spreadsheet via de opgegeven URL.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Opties van een URL of een ander blad voor Edge Delivery Services voor as a Cloud Service AEM Forms
+# Opties van een URL of een ander blad voor Edge Delivery Services voor AEM Forms as a Cloud Service
 
 Forms bevat vaak vervolgkeuzemenu&#39;s die gebruikers kunnen selecteren op basis van vooraf gedefinieerde opties. Deze opties worden doorgaans in het formulier zelf gedefinieerd, maar het beheren van lange lijsten kan lastig zijn. In deze handleiding wordt beschreven hoe u het ontwerpen van formulieren kunt verbeteren door meerkeuzeopties te laden vanuit een afzonderlijk spreadsheet via een URL.
 
@@ -25,7 +25,7 @@ De voordelen van het laden van een meerkeuzeoptie uit een afzonderlijk spreadshe
 
 
 
-![Vervolgkeuzemogelijkheden](/help/forms/assets/drop-down-options.png)
+![ drop-down opties ](/help/forms/assets/drop-down-options.png)
 
 
 Aan het einde van dit artikel leert u:
@@ -40,7 +40,8 @@ Opties definiëren in een afzonderlijk werkblad
 1. Een werkblad maken:
    1. Zoek de AEM projectmap in Microsoft® SharePoint of Google Drive.
    1. Voeg een nieuw blad toe. Bijvoorbeeld &#39;gezamenlijk-land&#39;.
-1. Optie-kolommen definiëren: twee kolommen toevoegen: &quot;Optie&quot; en &quot;Waarde&quot;.
+1. Optie-kolommen definiëren:
+Voeg twee kolommen toe: &quot;Optie&quot; en &quot;Waarde&quot;.
    * Met Option wordt de tekst gedefinieerd die in het vervolgkeuzemenu wordt weergegeven.
    * &quot;Waarde&quot; definieert de verzonden waarde wanneer een gebruiker de optie selecteert.
 
@@ -48,39 +49,41 @@ Opties definiëren in een afzonderlijk werkblad
    >
    >Als zowel de optie als de waarde identiek zijn, is alleen de kolom &quot;Optie&quot; vereist.
 
-1. Vul het werkblad: voer uw landopties in de kolom &quot;Optie&quot; (en &quot;Waarde&quot;, indien nodig).
+1. Werkblad vullen:
+Voer uw landopties in de kolom &quot;Optie&quot; (en &quot;Waarde&quot;, indien nodig) in.
 
    Zie het onderstaande voorbeeld voor structuur.
 
-   ![Vervolgkeuzelijst voor land](/help/forms/assets/drop-down-country-options.png)
+   ![ drop-down voor land ](/help/forms/assets/drop-down-country-options.png)
 
-1. De voorvertoning en de publicatie van de `shared-country` blad gebruiken [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Voorproef en publiceer het `shared-country` blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Raadpleeg de URL die de `shared-country` sheet: https://main—wefinance—wkndforms.hlx.live/inquiry.json?sheet=country
+   Raadpleeg de URL die het `shared-country` -blad weergeeft:
+https://main—wefinance—wkndforms.hlx.live/inquiry.json?sheet=country
 
 >[!NOTE]
 >
-> `?sheet=country` is een queryparameter die aan de URL is toegevoegd. Deze parameter geeft de JSON aan die is gefilterd op basis van de `shared-country` blad. Het wordt doorgestuurd naar het JSON-bestand met informatie over verschillende landen.
+> `?sheet=country` is een queryparameter die aan de URL is toegevoegd. Deze parameter geeft aan welke JSON is gefilterd op basis van het `shared-country` sheet. Het wordt doorgestuurd naar het JSON-bestand met informatie over verschillende landen.
 
 ## URL toevoegen om opties voor vervolgkeuzelijsten te laden{#add-url}
 
-De `Options` eigenschap van een `select` -veld accepteert een URL. De URL retourneert een JSON-array die wordt gebruikt als opties voor de `Destination` vervolgkeuzelijst. U voegt als volgt de URL toe voor het laden van opties in de vervolgkeuzelijst:
+De eigenschap `Options` van een `select` -veld accepteert een URL. De URL retourneert een JSON-array die wordt gebruikt als opties voor de vervolgkeuzelijst `Destination` . U voegt als volgt de URL toe voor het laden van opties in de vervolgkeuzelijst:
 
 1. Ga naar de map AEM Project op Microsoft® SharePoint of Google Drive en open uw spreadsheet. U kunt ook een nieuw werkblad voor een formulier maken.
-1. De URL kopiëren van `shared-country` blad en plak het in het `Options` kolom voor de `Destination` veld.
+1. Kopieer de URL van `shared-country` sheet en plak deze in de `Options` kolom voor het `Destination` veld.
 
-   ![Opzoekblad](/help/forms/assets/drop-down-enquiry.png)
+   ![ Opiniepeiling spreadsheet ](/help/forms/assets/drop-down-enquiry.png)
 
-1. Het blad voorvertonen en publiceren met [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Voorproef en publiceer het blad gebruikend [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
 
-   ![Vervolgkeuzelijst voor land](/help/forms/assets/load-dropdown-options-form.png)
+   ![ drop-down voor land ](/help/forms/assets/load-dropdown-options-form.png)
 
-U kunt verwijzen naar de [spreadsheet vragen](/help/forms/assets/enquiry-options.xlsx) om de URL toe te voegen voor het laden van opties in de vervolgkeuzelijst.
+U kunt naar [ onderzoeksspreadsheet ](/help/forms/assets/enquiry-options.xlsx) verwijzen om URL toe te voegen om drop-down lijstopties te laden.
 
-Nadat u de URL in de formulierdefinitie hebt geïntegreerd om vervolgkeuzelijstopties te laden, kunt u de opties voor de `Destination` drop-down begin verschijnt van URL.
+Nadat u de URL in de formulierdefinitie hebt geïntegreerd om vervolgkeuzelijstopties te laden, worden de opties voor de vervolgkeuzelijst `Destination` weergegeven via de URL.
 
-Raadpleeg de onderstaande URL, die de `enquiry` formulier met de opties die op het afzonderlijke blad zijn opgeslagen:
+Raadpleeg de onderstaande URL, die het `enquiry` -formulier weergeeft met de opties die op het afzonderlijke blad zijn opgeslagen:
 
 https://main--wefinance--wkndforms.hlx.live/enquiry-form
 

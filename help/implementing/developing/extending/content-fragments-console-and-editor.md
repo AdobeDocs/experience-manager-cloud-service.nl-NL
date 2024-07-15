@@ -13,20 +13,20 @@ ht-degree: 0%
 
 # De console en Editor voor inhoudsfragmenten aanpassen {#customizing-content-fragment-console-and-editor}
 
-Zowel zijn de Console als de Redacteur van de Fragmenten van de Inhoud verlengbaar en kunnen aan uw behoeften worden aangepast gebruikend de Bouwer van de Adobe App.
+Zowel de Console als de Redacteur van de Fragmenten van de Inhoud zijn verlengbaar en kunnen aan uw behoeften worden aangepast gebruikend de Adobe App Builder.
 
 Zie voor volledige informatie:
 
 * voor beide scenario&#39;s
 
-   * [Hoe te om Toegang te krijgen](https://developer.adobe.com/uix/docs/guides/get-access/)
+   * [ hoe te om Toegang ](https://developer.adobe.com/uix/docs/guides/get-access/) te krijgen
 
-   * [UI-uitbreidbaarheid](https://developer.adobe.com/uix/docs/)
+   * [ Uitbreidbaarheid UI ](https://developer.adobe.com/uix/docs/)
 
 * de Content Fragment Console:
 
-   * [Stapsgewijze ontwikkeling van extensies voor AEM Content Fragments Console](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/)
+   * [ Stap voor stap AEM de Ontwikkeling van de Uitbreiding van de Console van de Fragmenten van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/)
 
 * De Inhoudsfragmenteditor
 
-   * [Extensiepunten AEM Inhoudsfragmenten bewerken](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)
+   * [ AEM de Punten van de Uitbreiding van de Redacteur van de Fragmenten van de Inhoud ](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/)

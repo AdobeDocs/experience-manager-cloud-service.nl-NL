@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # App Builder-toepassingen publiceren
 
-Leer hoe u uw app Builder-toepassing ter controle en goedkeuring kunt verzenden en hoe u een nieuw gepubliceerde toepassing kunt uitvoeren.
+Leer hoe u uw App Builder-toepassing ter controle en goedkeuring kunt verzenden en hoe u een nieuw gepubliceerde toepassing kunt uitvoeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)

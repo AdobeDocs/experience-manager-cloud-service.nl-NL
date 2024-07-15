@@ -17,19 +17,19 @@ De plaatsaanduidingstekst vertegenwoordigt een woord of korte woordgroep. Het is
 >
 >De plaatsaanduidingstekst moet, indien opgegeven, een waarde hebben die geen nieuwe regeltekens bevat.
 
-![Datumcomponent met en zonder plaatsaanduidingstekst](assets/dat-picker-place-holder-text.png)
+![ component van de Datum met en zonder placeholder tekst ](assets/dat-picker-place-holder-text.png)
 
-**A.** De component van de datum met placeholder tekst **B.** Datumcomponent zonder plaatsaanduidingstekst
+**A.** component van de Datum met placeholder tekst **B.** component van de Datum zonder placeholder tekst
 
-[!DNL AEM Forms] ondersteuning voor plaatsaanduidingstekst voor de velden Wachtwoord, Datumkiezer, Numeriek vak en Tekstvak.\
+[!DNL AEM Forms] biedt ondersteuning voor plaatsaanduidingstekst voor de velden Wachtwoord, Datumkiezer, Numeriek vak en Tekstvak.\
 Plaatsaanduidingsteksten worden niet ondersteund voor de native HTML5-datumwidget. Een plaatsaanduidingstekst opgeven:
 
-1. Klik met de rechtermuisknop op een component die plaatsaanduidingstekst ondersteunt en klik op **Bewerken**. Het dialoogvenster Component bewerken wordt geopend.
+1. Klik met de rechtermuisknop op een component die Plaatsaanduidingstekst ondersteunt en klik op **Bewerken** . Het dialoogvenster Component bewerken wordt geopend.
 
-1. Open de **Titel en tekst** tab.
-1. Geef een woord of korte woordgroep op in het dialoogvenster **Tekstvak voor plaatsaanduiding**. Klikken **OK**.
+1. Open de **Titel en tekst** tabel.
+1. Specificeer een woord of een korte uitdrukking in het **Placeholder tekstvakje**. Klik **OK**.
 
 >[!NOTE]
 >
->Plaatsaanduidingstekst wordt niet ondersteund op [!DNL Microsoft Internet Explorer 9].
+>Plaatsaanduidingstekst wordt niet ondersteund in [!DNL Microsoft Internet Explorer 9] .
 

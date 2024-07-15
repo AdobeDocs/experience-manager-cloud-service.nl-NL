@@ -19,9 +19,9 @@ Leer hoe de Controle van de Ervaring uw plaatsingsproces valideert en helpt ervo
 
 >[!NOTE]
 >
->Deze functie is alleen beschikbaar voor [het programma voor vroegtijdige adoptie .](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Deze eigenschap is slechts beschikbaar aan [ het vroege adopterprogramma.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 >
->Raadpleeg het document voor meer informatie over de bestaande functie Experience Audit voor AEM as a Cloud Service [Ervaring controleren testen](/help/implementing/cloud-manager/experience-audit-testing.md)
+>Voor details over de bestaande eigenschap van de Controle van de Ervaring voor AEM as a Cloud Service, gelieve het document [ Testen van de Controle van de Ervaring te zien ](/help/implementing/cloud-manager/experience-audit-testing.md)
 
 ## Overzicht {#overview}
 
@@ -31,23 +31,23 @@ De Controle van de ervaring bevestigt het plaatsingsproces en de hulp zorgt ervo
 
 1. Breng geen regressies aan.
 
-De controle van de ervaring in de Manager van de Wolk zorgt ervoor dat de ervaring van de gebruiker op de plaats van de hoogste normen is.
+De controle van de ervaring in Cloud Manager zorgt ervoor dat de ervaring van de gebruiker op de plaats van de hoogste normen is.
 
 De controleresultaten zijn informatief en staan de plaatsingsmanager toe om de scores en de verandering tussen de huidige en vorige scores te zien. Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing werd geïntroduceerd.
 
-De controle van de ervaring wordt aangedreven door [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), een opensource-programma uit Google, en is ingeschakeld in alle productiepijpleidingen van Cloud Manager.
+De Controle van de ervaring wordt aangedreven door [ Lighthouse van Google ](https://developer.chrome.com/docs/lighthouse/overview/), een open bronhulpmiddel van Google, en in alle de productiepijpleidingen van Cloud Manager toegelaten.
 
 ## Beschikbaarheid {#availability}
 
-Experience Audit is beschikbaar voor Cloud Manager:
+Er is een Experience Audit beschikbaar voor Cloud Manager:
 
 * Sites, productiepijpleidingen, standaard
 * De volledige pijpleidingen van de ontwikkeling, facultatief
 * Ontwikkeling front-end pijpleidingen, optioneel
 
-Zie de [Configuratiesectie](#configuration) voor meer informatie over hoe te om de controle voor de facultatieve milieu&#39;s te vormen.
+Zie de [ sectie van de Configuratie ](#configuration) voor meer informatie over hoe te om de controle voor de facultatieve milieu&#39;s te vormen.
 
-Audits worden uitgevoerd als onderdeel van de pijpleiding. Audits kunnen ook [op aanvraag worden uitgevoerd](#on-demand) buiten de pijpleidingen.
+Audits worden uitgevoerd als onderdeel van de pijpleiding. De controles kunnen ook [ in werking worden gesteld op bestelling ](#on-demand) buiten pijpleidingen.
 
 ## Configuratie {#configuration}
 
@@ -55,158 +55,158 @@ De Experience Audit is standaard beschikbaar voor productiepijpleidingen. Het ka
 
 1. Afhankelijk van het type van pijpleiding u wenst te vormen, volg de richtingen aan:
 
-   * Een nieuwe toevoegen [productiepijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) als u de wegen wilt bepalen die door de controle moeten worden geëvalueerd.
-   * Een nieuwe toevoegen [niet-productiepijpleiding,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) als u wenst om de controle op een front-end of ontwikkelings volledig-stapelpijpleiding toe te laten.
-   * Of u kunt [een bestaande pijpleiding bewerken;](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) en werkt de bestaande opties bij.
+   * Voeg een nieuwe [ productiepijpleiding toe, ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) als u wenst om de wegen te bepalen die door de controle moeten worden geëvalueerd.
+   * Voeg een nieuwe [ niet-productiepijplijn toe, ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) als u wenst om de controle op een front-end of ontwikkelings volledig-stapelpijpleiding toe te laten.
+   * Of u kunt [ een bestaande pijpleiding uitgeven, ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) en de bestaande opties bijwerken.
 
-1. Als u toevoegt of een niet productiepijplijn uitgeeft waarvoor u de Controle van de Ervaring wilt gebruiken, moet u selecteren **Experience Audit** Selectievakje op de **Broncode** tab.
+1. Als u toevoegt of een niet-productiepijplijn uitgeeft waarvoor u de Controle van de Ervaring wilt gebruiken, moet u **checkbox van de Controle van de Ervaring {op het** Source Code **tabel selecteren.**
 
-   ![Ervaring controleren inschakelen](assets/experience-audit-enable.jpg)
+   ![ toelatend de Controle van de Ervaring ](assets/experience-audit-enable.jpg)
 
    * Dit is alleen nodig voor niet-productiepijpleidingen.
-   * De **Experience Audit** wordt weergegeven wanneer het selectievakje is ingeschakeld.
+   * Het **lusje van de Controle van de Ervaring** verschijnt wanneer checkbox wordt geselecteerd.
 
-1. Voor zowel productie als niet productie pijpleidingen, bepaalt u de wegen die in de Controle van de Ervaring op moeten worden omvat **Experience Audit** tab.
+1. Voor zowel productie als niet productiepijpleidingen, bepaalt u de wegen die in de Controle van de Ervaring op de **Controle van de Ervaring** tabel moeten worden omvat.
 
    * Pagina-paden moeten beginnen met `/` en zijn relatief ten opzichte van uw site.
-   * Als uw site bijvoorbeeld `wknd.site` en zou graag `https://wknd.site/us/en/about-us.html` Voer in de Experience Audit het pad in `/us/en/about-us.html`.
+   * Als uw site bijvoorbeeld `wknd.site` is en u `https://wknd.site/us/en/about-us.html` wilt opnemen in de Experience Audit, voert u het pad in `/us/en/about-us.html` .
 
-   ![Een pad definiëren voor de Experience Audit](assets/experience-audit-add-page.png)
+   ![ die een weg voor de Controle van de Ervaring bepalen ](assets/experience-audit-add-page.png)
 
-1. Tik of klik op **Pagina toevoegen** en het pad wordt automatisch ingevuld met het adres van de omgeving en toegevoegd aan de padlijst.
+1. Tik of klik **toevoegen de Pagina** en de weg wordt auto-voltooid met het adres van uw milieu en toegevoegd aan de lijst van wegen.
 
-   ![Pad naar tabel opslaan](assets/experience-audit-page-added.png)
+   ![ het Opslaan weg aan de lijst ](assets/experience-audit-page-added.png)
 
 1. U kunt paden naar wens toevoegen door de vorige twee stappen te herhalen.
 
    * U kunt maximaal 25 paden toevoegen.
    * Als u geen paden definieert, wordt de homepage van de site standaard opgenomen in de Experience Audit.
 
-1. Klikken **Opslaan** om uw pijpleiding te redden.
+1. Klik **sparen** om uw pijpleiding te bewaren.
 
 ## Resultaten controle ervaring {#results}
 
-De resultaten van de Experience Audit worden weergegeven in de **Werkgebied testen** fase van de productiepijpleiding via de [pagina voor de uitvoering van de productiepijplijn.](/help/implementing/cloud-manager/deploy-code.md)
+De resultaten van de Controle van de Ervaring worden voorgesteld in de **testende fase van het Stadium** van de productiepijpleiding via de [ pagina van de de uitvoeringspijplijn van de productiepijplijn.](/help/implementing/cloud-manager/deploy-code.md)
 
-![Dashboard in pijplijn](assets/experience-audit-dashboard.jpg)
+![ Dashboard in de pijpleiding ](assets/experience-audit-dashboard.jpg)
 
-De Experience Audit biedt de mediane Google Lighthouse scores voor de [geconfigureerde pagina&#39;s](#configuration) en het verschil in score met de vorige scan.
+De Controle van de ervaring verstrekt de mediane Emissiescore van Google voor de [ gevormde pagina&#39;s ](#configuration) en het verschil in score aan het vorige aftasten.
 
-Uit deze overzichtsweergave in het dialoogvenster **Werkgebiedtests** de fase van de pijpleiding, hebt u twee opties:
+Van deze summiere mening in de **het Testen van het Stadium** fase van de pijpleiding, hebt u twee opties:
 
-* **[Langzaamste pagina&#39;s weergeven](#view-slowest-pages)**
-* **[Volledig rapport weergeven](#view-full-report)**
+* **[de langzaamste pagina&#39;s van de Mening](#view-slowest-pages)**
+* **[Volledige het rapport van de Mening](#view-full-report)**
 
-Naast de samenvatting die in de details van een pijpleidingslooppas wordt voorgesteld, kunt u tot de volledige resultaten van de controle ook direct toegang hebben door **Rapporten** tabblad van het dashboard voor Cloud Manager voor toegang [het volledige verslag](#view-full-report) rechtstreeks.
+Naast de samenvatting die in de details van een pijpleidingslooppas wordt voorgesteld, kunt u tot de volledige resultaten van de controle ook direct toegang hebben door het **lusje van Rapporten** van het dashboard van Cloud Manager te gebruiken [ het volledige rapport ](#view-full-report) direct toegang te hebben.
 
 >[!TIP]
 >
 >In de volgende secties wordt beschreven hoe u de resultaten van de Experience Audit kunt bekijken.
 >
->* Zie de sectie voor meer informatie over de manier waarop de controle werkt [De Gegevens van de Evaluatie van de Controle van de ervaring.](#details)
->* Als u wilt weten hoe u een ervaringscontrole op aanvraag kunt uitvoeren, raadpleegt u de sectie [Controleverslagen op aanvraag.](#on-demand)
->* Als u problemen ondervindt met de controle, raadpleegt u de sectie [De controle van de ervaring ontmoet kwesties.](#issues)
->* Zie de sectie voor algemene prestatietips [Algemene prestatietips.](#performance-tips)
+>* Als u details op zou willen hoe de controlewerken, gelieve de details van de Evaluatie van de sectie [ van de Controle van de Ervaring te zien.](#details)
+>* Als u zou willen weten hoe te om een ervaringscontrole op bestelling in werking te stellen, gelieve de sectie [ Rapporten van de Controle op bestelling te zien.](#on-demand)
+>* Als u kwesties met de controle ervaart, te zien gelieve de sectie [ Problemen van de Controles van de Ervaring.](#issues)
+>* Voor algemene prestatiesuiteinden, te zien gelieve de sectie [ Algemene Tips van Prestaties.](#performance-tips)
 
 ### Langzame pagina&#39;s weergeven {#view-slowest-pages}
 
-Tikken of klikken **Langzaamste pagina&#39;s weergeven** opent de **Langzaam 5 pagina&#39;s** wordt weergegeven met de vijf pagina&#39;s die u het slechtst presteert [geconfigureerd voor controle.](#configuration)
+Tapping of het klikken van **Mening langzaamste pagina&#39;s** opent de **langzaamste 5 pagina&#39;s** dialoog, die de vijf laagste-presterende pagina&#39;s tonen die u [ aan controle vormde.](#configuration)
 
-![Langzaamste vijf](assets/experience-audit-slowest-five.jpg)
+![ langzaamst vijf ](assets/experience-audit-slowest-five.jpg)
 
-De scores zijn onderverdeeld op **Prestaties**, **Toegankelijkheid**, **Aanbevolen procedures**, en **SEO** samen met de afwijking van elke meeteenheid ten opzichte van de laatste controle.
+De scores worden onderverdeeld door **Prestaties**, **Toegankelijkheid**, **Beste praktijken**, en **SEO** samen met de afwijking van elke metrisch van de laatste controle.
 
-Standaard wordt het dialoogvenster geopend met de scores voor mobiele apparaten. U kunt dit wijzigen in desktopscores met de opdracht **Apparaten** bovenaan in het dialoogvenster schakelen.
+Standaard wordt het dialoogvenster geopend met de scores voor mobiele apparaten. U kunt dit in Desktopscores veranderen gebruikend **Apparaten** knevel bij de bovenkant van de dialoog.
 
-Het dialoogvenster is bedoeld voor een snel overzicht. Tik of klik op **Volledig rapport weergeven**.
+Het dialoogvenster is bedoeld voor een snel overzicht. Voor volledige details, tik of klik **Volledige het rapport van de Mening**.
 
 ### Volledig rapport weergeven {#view-full-report}
 
 U kunt het volledige rapport van de Controle van de Ervaring bekijken door:
 
-* Tikken of klikken **Volledig rapport weergeven** in de **[Langzaam 5 pagina&#39;s](#view-slowest-pages)** in.
-* Tikken of klikken **Volledig rapport weergeven** wanneer u de [uitvoering van een pijpleiding.](#results)
-* Tikken of klikken op de knop **Rapporten** in Cloud Manager.
+* Tapping of het klikken van **Volledige rapport van de Mening** in de **[Geleidelijke 5 pagina&#39;s](#view-slowest-pages)** dialoog.
+* Tapping of het klikken van **Mening volledig rapport** wanneer het bekijken van de [ uitvoering van een pijpleiding.](#results)
+* Tapping of het klikken van het **lusje van Rapporten** in Cloud Manager.
 
-De **Rapporten** tabblad van Cloud Manager wordt geopend, met daarin de **Ervaring audit**.
+Het **lusje van Rapporten** van Cloud Manager wordt geopend, tonend de **controle van de Ervaring**.
 
-![Ervaringsauditverslagen](assets/experience-audit-reports.png)
+![ de controlerapporten van de Ervaring ](assets/experience-audit-reports.png)
 
 Het verslag is opgesplitst in twee gebieden:
 
-* **[Paginascore - trend](#trend)**
-* **[De resultaten van de controle van de ervaring](#results)**
+* **[de scores van de Pagina - trend](#trend)**
+* **[de resultaten van het de controleonderzoek van de Ervaring](#results)**
 
 #### Paginascore - trend {#trend}
 
-Standaard wordt de geselecteerde weergave **Paginascore - trend** is **mediaanscores** voor de **Laatste 6 maanden**.
+Door gebrek, is de geselecteerde mening voor **scores van de Pagina - trend** **mediaanscores** voor **Laatste 6 maanden**.
 
-Gebruik de **Selecteren** en **Weergave** drop-down bij de bovenkant en de bodem van de grafiekknop om pagina-specifieke details en verschillende tijdkaders, respectievelijk te selecteren. Tik of klik op de knop **trend bijwerken** knoop bij de bovenkant van de grafiek om de selecties toe te passen en de grafiek te verfrissen.
+Gebruik **Uitgezochte** en **drop-down van de Mening** bij de bovenkant en de bodem van de grafiekknop om pagina-specifieke details en verschillende tijdkaders, respectievelijk te selecteren. Tik of klik de en **update trend** knoop bij de bovenkant van de grafiek om de selecties toe te passen en de grafiek te verfrissen.
 
 Wanneer u de muis over het diagram beweegt, wordt knopinfo weergegeven met de waarden voor de categorieën van Google Lighthouse op bepaalde tijdpunten.
 
-![Details van trend](assets/experience-audit-trend-details.png)
+![ Details van de Tendens ](assets/experience-audit-trend-details.png)
 
-Als u op een bepaald moment op het diagram tikt of op het diagram klikt, wordt een pop-up geopend met details van de scan. Tik of klik op de knop **auditscan met open ervaring** om de resultaten van die scan in de **[De resultaten van de controle van de ervaring](#scan-results)** sectie.
+Als u op een bepaald moment op het diagram tikt of op het diagram klikt, wordt een pop-up geopend met details van de scan. Tik of klik het **open aftasten van de ervaringscontrole** om te laden dat aftasten resultaten in de **[controle van de Ervaring aftasten resultaten](#scan-results)** sectie.
 
-![Andere scan selecteren](assets/experience-audit-open-scan.png)
+![ Uitgezochte verschillende aftasten ](assets/experience-audit-open-scan.png)
 
 #### Resultaten van controle door ervaring {#scan-results}
 
-De **De resultaten van de controle van de ervaring** in deze sectie worden aanbevelingen gedaan voor het verbeteren van de score en voor het weergeven van details over alle gescande pagina&#39;s. Het bestaat uit twee delen:
+De **de controleresultaten van het de controleonderzoek van de Ervaring** sectie geeft aanbevelingen op hoe te om uw score en details van alle gescande pagina&#39;s te verbeteren. Het bestaat uit twee delen:
 
 * **[Recommendations](#recommendations)**
 * **[Gescande pagina&#39;s](#scanned-pages)**
 
 ##### Recommendations {#recommendations}
 
-De **Recommendations** in dit gedeelte wordt een geaggregeerde set inzichten weergegeven. Door gebrek, aanbevelingen voor **prestaties** worden weergegeven. Gebruik de vervolgkeuzelijst naast de knop **Recommendations** om naar een andere categorie te gaan.
+De **Recommendations** sectie toont een gezamenlijke reeks inzichten. Door gebrek, worden de aanbevelingen voor **prestaties** getoond. Gebruik drop-down naast de **Recommendations** rubriek om in een andere categorie te veranderen.
 
-![Recommendations](assets/experience-audit-recommendations.png)
+![ Recommendations ](assets/experience-audit-recommendations.png)
 
 Tik op het chevron of klik op een aanbeveling om details ervan weer te geven.
 
-![Aanbevelingen](assets/experience-audit-recommendation-details.png)
+![ details van de Aanbeveling ](assets/experience-audit-recommendation-details.png)
 
 Indien beschikbaar, bevatten de uitgebreide aanbevelingen details ook het percentage van het effect van de aanbevelingen, helpen nadruk op de meest impactful veranderingen.
 
-Tik of klik op de knop **pagina&#39;s weergeven** in de weergave Details de pagina&#39;s bekijken waarop de aanbeveling van toepassing is.
+Tik of klik de **verbinding van meningspagina&#39;s** in de detailsmening om de pagina&#39;s te zien waarop de aanbeveling van toepassing is.
 
-![Pagina&#39;s voor de details van de aanbeveling](assets/experience-audit-details-pages.png)
+![ Pagina&#39;s voor de aanbevelingsdetails ](assets/experience-audit-details-pages.png)
 
 ##### Gescande pagina&#39;s {#scanned-pages}
 
-De **Gescande pagina&#39;s** in deze sectie worden de detailscores voor alle gescande pagina&#39;s weergegeven. U kunt de **Vorige** en **Volgende** knoppen om door de resultaten te bladeren en te bepalen hoeveel de weergave moet pagineren.
+De **Gescande pagina&#39;s** sectie geeft detailscores op alle gescande pagina&#39;s. U kunt **gebruiken prev** en **daarna** knopen aan pagina door de resultaten en kiezen op hoeveel de vertoning zou moeten pagineren.
 
-![Gescande pagina&#39;s](assets/experience-audit-scanned-pages.png)
+![ Gescande pagina&#39;s ](assets/experience-audit-scanned-pages.png)
 
-Als u op de koppeling van een bepaalde pagina tikt of erop klikt, wordt het dialoogvenster **Selecteren** filter van de [**Paginascore - trend** sectie](#trend) en toont de **Scores en aanbevelingen** voor de geselecteerde pagina.
+Tapping of het klikken van de verbinding van een bepaalde pagina werkt **Uitgezochte** filter van de [**scores van de Pagina - trendmatige** sectie ](#trend) bij en toont het **Scores &amp; aanbevelingen** lusje voor de geselecteerde pagina.
 
-![Paginaresultaten](assets/experience-audit-page-results.png)
+![ de resultaten van de Pagina ](assets/experience-audit-page-results.png)
 
-De **Raw-rapporten** geeft u scores voor elke controle van de pagina. Tik of klik op de knop **Downloaden** om een JSON-bestand met de onbewerkte gegevens op te halen.
+Het **Ruwe rapporten** lusje geeft u scores voor elke controle van de pagina. Tik of klik het **pictogram van de Download** om een JSON- dossier van de ruwe gegevens terug te winnen.
 
-![Raw-rapport](assets/experience-audit-raw-reports.png)
+![ Onbewerkt rapport ](assets/experience-audit-raw-reports.png)
 
-Hiermee wordt een nieuw tabblad in uw browser geopend, waarin naar `https://googlechrome.github.io/lighthouse/viewer/` met een ondertekende URL van het rapport JSON (Raw JavaScript Object Notation) voor de geselecteerde pagina, die automatisch wordt geopend voor uw gedetailleerde inspectie
+Hiermee wordt een nieuw tabblad in uw browser geopend, waarin naar `https://googlechrome.github.io/lighthouse/viewer/` wordt verwezen met een ondertekende URL van het rapport Lighthouse raw JavaScript Object Notation (JSON) voor de geselecteerde pagina. Dit rapport wordt automatisch geopend voor uw gedetailleerde inspectie
 
-![Raw-rapport weergeven](assets/experience-audit-view-raw-report.png)
+![ bekijkend onbewerkt rapport ](assets/experience-audit-view-raw-report.png)
 
 ## Controleverslagen op aanvraag {#on-demand}
 
 Naast het worden in werking gesteld tijdens pijpleidingsuitvoering, kunnen de rapporten van de Controle van de Ervaring ook op bestelling worden geproduceerd. Dit is een goede oplossing om uw pagina&#39;s snel af te tasten, zonder het moeten een pijpleiding in werking stellen.
 
-Navigeer naar de  **Rapporten** om het volledige auditrapport te bekijken en dan tikken of klikken op **Scan uitvoeren** knop.
+Om een aftasten op bestelling in werking te stellen, navigeer aan het **lusje van Rapporten** om het volledige controlerapport te zien en dan de **aftasten van de Looppas** knoop te ontlopen of te klikken.
 
-![Scannen op aanvraag](assets/experience-audit-on-demand.png)
+![ Scannen op bestelling ](assets/experience-audit-on-demand.png)
 
-Scans op aanvraag activeren een Experience Audit voor de nieuwste 25 [geconfigureerde pagina&#39;s](#configuration) en wordt meestal binnen een paar minuten voltooid.
+De aftasten op bestelling brengen een Controle van de Ervaring voor de recentste 25 [ gevormde pagina&#39;s ](#configuration) teweeg en beëindigen typisch in een paar notulen.
 
 Na voltooiing wordt het scorediagram automatisch bijgewerkt en kunt u de resultaten precies zo controleren als bij een scan van de uitvoering van een pijpleiding.
 
-U kunt het scores-diagram filteren op basis van het triggertype met de opdracht **Trigger** kiezer.
+U kunt het scoregrafiek filtreren dat op het trekkertype door de **selecteur te gebruiken 0} Trigger {wordt gebaseerd.**
 
-![Trigger, filter](assets/experience-audit-on-demand-trigger.png)
+![ de filter van de Trekker ](assets/experience-audit-on-demand-trigger.png)
 
 >[!NOTE]
 >
@@ -214,15 +214,15 @@ U kunt het scores-diagram filteren op basis van het triggertype met de opdracht 
 
 ## Problemen met de controle van de ervaring {#issues}
 
-Indien [pagina&#39;s die u hebt geconfigureerd](#configuration) die niet konden worden gecontroleerd, blijkt uit de ervaringscontrole dat dit het geval is.
+Als [ pagina&#39;s u ](#configuration) vormde te controleren niet beschikbaar waren, weerspiegelt de Controle van de Ervaring dit.
 
 De pijpleiding toont een uitbreidbare foutensectie om de relatieve wegen URL te bekijken het niet kon toegang hebben.
 
-![Problemen ondervonden door Experience Audit](assets/experience-audit-issues.jpg)
+![ Kwesties die door de Controle van de Ervaring worden ontmoet ](assets/experience-audit-issues.jpg)
 
-Als u het volledige rapport weergeeft, worden de details weergegeven in het dialoogvenster **[De resultaten van de controle van de ervaring](#results)** sectie.
+Als het bekijken van het volledige rapport, worden de details getoond in de **[controle van de Ervaring aftasten resultaten](#results)** sectie.
 
-![Volledige rapportkwesties](assets/experience-audit-issues-reports.jpeg)
+![ Volledige rapportkwesties ](assets/experience-audit-issues-reports.jpeg)
 
 De pagina&#39;s zijn mogelijk niet beschikbaar omdat:
 
@@ -234,7 +234,7 @@ De pagina&#39;s zijn mogelijk niet beschikbaar omdat:
 
 >[!TIP]
 >
->[De onbewerkte rapporten openen](#scanned-pages) voor een pagina kunt u aangeven waarom de pagina niet kon worden gecontroleerd.
+>[ die tot de ruwe rapporten ](#scanned-pages) voor een pagina toegang hebben kan details op verstrekken waarom de pagina niet kon worden gecontroleerd.
 
 ## Algemene prestatietips {#performance-tips}
 
@@ -244,22 +244,22 @@ Deze kunnen worden verbeterd door:
 
 * Laad de afbeeldingen niet lui boven de vouw (de inhoud is zichtbaar in de browser zonder dat u omlaag hoeft te schuiven).
 * Correcte prioritering van de manier waarop bronnen worden geladen (bijvoorbeeld door de afbeeldingen onder de voud asynchroon te laden nadat het document is geladen).
-* JavaScript- en CSS-bestanden die worden gebruikt om inhoud boven de vouw weer te geven (indien nodig), vooraf instellen.
+* JavaScript- en CSS-bestanden die worden gebruikt om inhoud boven de vouw weer te geven (indien nodig).
 * De verticale ruimte behouden door een hoogte-breedteverhouding toe te wijzen aan containers die langzaam worden geladen of later worden gerenderd.
 * Afbeeldingen converteren naar WebP-indeling om de grootte ervan te beperken.
-* Gebruiken `<picture>` en afbeelding `srcset` met verschillende afbeeldingsgrootten voor verschillende viewportgrootten (en zorgen dat de grootte werkt).
+* Het gebruik van `<picture>` en de afbeelding `srcset` met verschillende afbeeldingsgrootten voor verschillende viewportgrootten (en om ervoor te zorgen dat het formaat werkt).
 
 ## Evaluatiegegevens controle van ervaring {#details}
 
 De volgende details bieden aanvullende informatie over hoe de Experience Audit uw site evalueert. Ze zijn niet nodig voor algemeen gebruik van de functie en worden hier gegeven voor de volledigheid.
 
-* Hoewel de [gevormde de de de paginaden van de Controle van de Ervaring](#configuration) tonen `.com` het domein van de uitgever, de controle scant de oorsprong (`.net`), om ervoor te zorgen dat tijdens de ontwikkeling geïntroduceerde problemen worden gedetecteerd.
-   * De `.com` gebruikt een CDN en levert betere scores op of bevat resultaten in cache.
+* Hoewel de [ gevormde de de paginawegen van de Controle van de Ervaring ](#configuration) het `.com` domein van de uitgever tonen, scant de controle het oorsprongdomein (`.net`), om kwesties te verzekeren die tijdens ontwikkeling worden geïntroduceerd worden ontdekt.
+   * Het domein `.com` gebruikt een CDN en kan betere scores opleveren of cacheresultaten bevatten.
 * Bij de productie van volledige-stapelpijpleidingen wordt de testomgeving gescand.
    * Om ervoor te zorgen dat de audit relevante details verschaft tijdens de controle, moet de inhoud van de testomgeving zo dicht mogelijk bij de productieomgeving liggen.
-* De pagina&#39;s die worden weergegeven in het dialoogvenster **Selecteren** vervolgkeuzelijst [**Paginascore - trend** sectie](#trend) Dit zijn alle bekende pagina&#39;s die in het verleden zijn gescand door de Experience Audit.
-* [Een aanbeveling](#recommendations) kan een potentiële winst en een verschil met vorige aftasten hebben.
+* De pagina&#39;s die in **worden getoond Uitgezochte** dropdown in de [**scores van de Pagina - trendmatige** sectie ](#trend) zijn alle bekende pagina&#39;s die in het verleden door de Controle van de Ervaring werden gescand.
+* [ de aanbeveling van A ](#recommendations) kan een potentiële winst en een verschil van het vorige aftasten hebben.
    * De Controle van de ervaring schat de potentiële winst door het ruwe rapport voor elke pagina te verwerken en correlerend de verspilde bytes of milliseconden met een inzicht dat een gewogen effect op de prestatiesscore heeft.
    * De controle verschaft deze informatie (en de betrokken pagina&#39;s) om te helpen beslissen welke aanbeveling moet worden gevolgd.
-   * Zie voor meer informatie de [Sectie Algemene prestatietips](#performance-tips)
+   * Voor meer details, gelieve te zien de [ Algemene sectie van Tips van Prestaties ](#performance-tips)
 * Aangezien een frontend pijpleiding aan een bestaand milieu (of er veelvoudige frontend pijpleidingen die zich richten op het zelfde milieu) zou kunnen opstellen, en de aftastenresultaten worden samengevoegd op een milieuniveau, worden de scores, de tendensen, en de aanbevelingen getoond in het zelfde geselecteerde milieu, ongeacht de pijpleidingsuitvoering die de aftasten teweegbracht.

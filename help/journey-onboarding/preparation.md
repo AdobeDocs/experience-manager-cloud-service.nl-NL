@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Voorbereiding aan boord {#onboarding-preparation}
 
-Nu weet u wat er voor u in het instapproces in opslag is door het artikel te hebben gelezen [AEM as a Cloud Service introductie van on-boarding Journey,](overview.md) u bent waarschijnlijk klaar om binnen te springen. Nochtans, alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
+Nu u weet wat voor u in opslag in het onboarding proces door het artikel [ AEM as a Cloud Service onboarding Inleiding van de ReisInleiding van de Reis is te lezen, ](overview.md) u waarschijnlijk klaar bent binnen te springen. Nochtans, alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren.
 
 ## Doelstelling {#objective}
 
-AEM as a Cloud Service is een krachtig en flexibel hulpmiddel met talrijke oplossingen, toe:voegen-ons, en beschikbare plaatsingsmodellen. De oplossing die uw organisatie mag gebruiken, wordt gedefinieerd in uw contract met Adobe, dat het begin van het instapproces begeleidt.
+AEM as a Cloud Service is een krachtig en flexibel hulpprogramma met tal van oplossingen, invoegtoepassingen en beschikbare implementatiemodellen. De oplossing die uw organisatie mag gebruiken, wordt gedefinieerd in uw contract met Adobe, dat het begin van het instapproces begeleidt.
 
 Nadat u dit document hebt gelezen, moet u
 
@@ -36,7 +36,7 @@ Deze video geeft een overzicht van het instapproces dat in deze reis wordt besch
 
 ## Uw contract {#contract}
 
-Aan boord gaan op AEM as a Cloud Service begint met een ondertekend contract tussen uw organisatie en Adobe. De reden hiervoor is dat in het contract verschillende belangrijke overeenkomsten tussen Adobe en uw organisatie zijn opgenomen, zoals:
+Bij instapweigering op AEM as a Cloud Service begint een ondertekend contract tussen uw organisatie en Adobe. De reden hiervoor is dat in het contract verschillende belangrijke overeenkomsten tussen Adobe en uw organisatie zijn opgenomen, zoals:
 
 * Welke oplossingen en toe:voegen-ons uw organisatie kan gebruiken.
 * Het aantal en de typen omgevingen waartoe u toegang hebt
@@ -50,7 +50,7 @@ Zodra het contract wordt ondertekend, wordt de bepalingen van de Adobe uw milieu
 
 ## Systeemprovisioning {#provisioning}
 
-Nadat het contract is ondertekend, worden alle AEM cloudomgevingen die onder het contract vallen automatisch door Adobe voorzien. Deze omgevingen worden ook gekoppeld aan uw programma&#39;s in Cloud Manager (meer over dit onderwerp verderop in de reis). Deze AEM wolkenmilieu&#39;s zijn inbegrepen in elk AEM as a Cloud Service abonnement, en zijn gewoonlijk samengesteld uit minstens één productiemilieu, één het opvoeren milieu, en naar keuze één of meerdere ontwikkelings of testmilieu&#39;s.
+Nadat het contract is ondertekend, worden alle AEM cloudomgevingen die onder het contract vallen automatisch door Adobe voorzien. Deze omgevingen zullen ook worden gekoppeld aan uw programma&#39;s in Cloud Manager (meer over dit onderwerp later op de reis). Deze AEM cloudomgevingen zijn inbegrepen in elk AEM as a Cloud Service-abonnement en bestaan gewoonlijk uit minstens één productieomgeving, één testomgeving en optioneel één of meer ontwikkelings- of testomgevingen.
 
 ## On-boarding Call {#onboarding-call}
 
@@ -90,4 +90,4 @@ U zou nu een basisbegrip moeten hebben van:
 * Hoe dat contract het instapproces beïnvloedt.
 * Hoe te op uw onboarding vraag voor te bereiden.
 
-Nu u bekend bent met deze voorbereidingsstappen, bent u bijna klaar om u aan te melden bij het systeem zelf. Maar eerst hebt u een kort overzicht nodig van hoe AEM as a Cloud Service is gestructureerd vanuit het standpunt van een systeembeheerder en om wat belangrijke terminologie te leren kennen. Doorgaan naar het volgende deel van de reis, [as a Cloud Service terminologie AEM](terminology.md).
+Nu u bekend bent met deze voorbereidingsstappen, bent u bijna klaar om u aan te melden bij het systeem zelf. Maar eerst hebt u een kort overzicht nodig van hoe AEM as a Cloud Service vanuit het standpunt van de systeembeheerder gestructureerd is en om wat belangrijke terminologie te leren kennen. Ga aan het volgende deel van de reis, [ Terminologie van AEM as a Cloud Service ](terminology.md) verder.

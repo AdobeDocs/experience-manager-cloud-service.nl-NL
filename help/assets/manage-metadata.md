@@ -1,6 +1,6 @@
 ---
 title: Metagegevens van digitale elementen beheren
-description: Meer informatie over de typen metagegevens en hoe [!DNL Adobe Experience Manager Assets] helpt metagegevens voor elementen te beheren om elementen gemakkelijker in te delen en te ordenen. [!DNL Experience Manager] kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
+description: Leer over de types van meta-gegevens en hoe  [!DNL Adobe Experience Manager Assets]  hulp meta-gegevens voor activa beheert om gemakkelijkere categorisering en organisatie van activa toe te staan. [!DNL Experience Manager]  maakt het mogelijk om activa automatisch te organiseren en te verwerken die op hun meta-gegevens worden gebaseerd.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management, Metadata
@@ -17,10 +17,10 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
-[!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Met de mogelijkheid om metagegevens te extraheren uit bestanden die zijn geüpload naar [!DNL Experience Manager Assets], kan het beheer van metagegevens worden geïntegreerd met de creatieve workflow. Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
+[!DNL Adobe Experience Manager Assets] houdt metagegevens bij voor elk element. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid om metagegevens te extraheren uit bestanden die zijn geüpload naar [!DNL Experience Manager Assets] , kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -38,7 +38,7 @@ Metagegevens zijn de verzameling van alle gegevens die beschikbaar zijn voor een
 * Naam van de map waarin de map zich bevindt.
 * Gerelateerde elementen of toegepaste tags.
 
-Het bovenstaande zijn de basiseigenschappen van metagegevens die [!DNL Experience Manager] kan beheren voor elementen, waardoor gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde of gewijzigde elementen probeert te detecteren.
+Het bovenstaande zijn de basiseigenschappen van metagegevens die [!DNL Experience Manager] kan beheren voor elementen, zodat gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde of gewijzigde elementen probeert te detecteren.
 
 U kunt meer gegevens op hoog niveau toevoegen aan digitale elementen, bijvoorbeeld:
 
@@ -56,7 +56,7 @@ Als er metagegevens worden toegevoegd, neemt de waarde van een digitaal element 
 * Gemakkelijker te beheren - u kunt gemakkelijker middelen met de zelfde reeks eigenschappen vinden en veranderingen op hen toepassen.
 * Volledig - asset bevat meer informatie en context met meer metagegevens.
 
-Om deze redenen [!DNL Assets] biedt u de juiste middelen voor het maken, beheren en uitwisselen van metagegevens voor uw digitale elementen.
+Daarom biedt [!DNL Assets] u de juiste middelen om metagegevens voor uw digitale elementen te maken, beheren en uit te wisselen.
 
 ## Typen metagegevens {#types-of-metadata}
 
@@ -76,11 +76,11 @@ Dit type metagegevens helpt gebruikers om digitale elementen te begrijpen en eff
 
 ### Informatieve metagegevens
 
-Informatiemetagegevens bieden beschrijvende informatie om het begrip van de inhoud te verbeteren, waardoor de inhoud gemakkelijker kan worden opgespoord en doorzocht. Het bevat trefwoorden, bijschriften en beschrijvingen. <br>Wanneer u bijvoorbeeld een video beheert in Experience Manager Assets, kunnen we de volgende metagegevens over informatie opnemen:
+Informatiemetagegevens bieden beschrijvende informatie om het begrip van de inhoud te verbeteren, waardoor de inhoud gemakkelijker kan worden opgespoord en doorzocht. Het bevat trefwoorden, bijschriften en beschrijvingen. <br> Bijvoorbeeld, wanneer het beheren van een video in Experience Manager Assets, kunnen wij de volgende informatieve meta-gegevens omvatten:
 
-* **Trefwoorden**: marketing, productintroductie, promotie
-* **Bijschrift**: Maak kennis met ons nieuwste product met spannende functies
-* **Beschrijving**: Een gedetailleerd overzicht van de video-inhoud.
+* **Sleutelwoorden**: Marketing, de lancering van het Product, Bevordering
+* **Bijschrift**: Introduceer ons recentste product met opwindende eigenschappen
+* **Beschrijving**: Een gedetailleerd overzicht van de videoinhoud.
 
 ### Administratieve metagegevens
 
@@ -127,14 +127,14 @@ De laatste wijzigingsdatum en -gebruiker worden niet gewijzigd:
 
 Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Er wordt ondersteuning geboden voor een selectie coderingsstandaarden:
 
-* XMP: gebruikt door [!DNL Assets] om de geëxtraheerde metagegevens op te slaan in de gegevensopslagruimte.
+* XMP: wordt gebruikt door [!DNL Assets] om de geëxtraheerde metagegevens op te slaan in de gegevensopslagruimte.
 * ID3: voor audio- en videobestanden.
 * Exif: voor afbeeldingsbestanden.
-* Overig/Verouderd: van [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
+* Anders/Verouderd: van [!DNL Microsoft Word] , [!DNL PowerPoint] , [!DNL Excel] , enzovoort.
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) is een open standaard die wordt gebruikt door [!DNL Experience Manager Assets] voor alle metagegevensbeheer. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen XMP standaard omdat deze een Rich Content-model biedt. Gebruikers van XMP norm en van [!DNL Experience Manager Assets] beschikken over een krachtig platform waarop kan worden voortgebouwd. Zie voor meer informatie [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door [!DNL Experience Manager Assets] wordt gebruikt voor alle metagegevensbeheer. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen XMP standaard omdat deze een Rich Content-model biedt. Gebruikers van XMP standaard en van [!DNL Experience Manager Assets] hebben een krachtig platform waarop u kunt bouwen. Voor meer informatie, zie [ XMP ](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -150,42 +150,42 @@ ID3-tags zijn ontworpen voor de MP3-bestandsindeling. Aanvullende informatie ove
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in een groot aantal bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze naam-waarde-paren voor metagegevens worden ook wel tags genoemd en mogen niet worden verward met de tags in [!DNL Experience Manager]. Moderne digitale camera&#39;s maken Exif-metagegevens en de moderne grafische software ondersteunt deze. De EXIF-indeling is de kleinste gemene deler voor het beheer van metagegevens, met name voor afbeeldingen.
+Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in een groot aantal bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze naam-waarde-paren van metagegevens worden ook wel tags genoemd, niet om te worden verward met de tags in [!DNL Experience Manager] . Moderne digitale camera&#39;s maken Exif-metagegevens en de moderne grafische software ondersteunt deze. De EXIF-indeling is de kleinste gemene deler voor het beheer van metagegevens, met name voor afbeeldingen.
 
 Een belangrijke beperking van Exif is dat een aantal populaire indelingen voor afbeeldingsbestanden, zoals BMP, GIF of PNG, dit niet ondersteunen.
 
-Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Daarom [!DNL Experience Manager Assets] biedt toewijzing van EXIF-eigenschappen in [algemene metagegevensschema&#39;s](metadata-schemas.md) en in XMP.
+Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Om deze reden, [!DNL Experience Manager Assets] biedt afbeelding van eigenschappen Exif in [ gemeenschappelijke meta-gegevensschemata ](metadata-schemas.md) en in XMP aan.
 
 #### Overige metagegevens {#other-metadata}
 
-Andere metagegevens die kunnen worden ingesloten vanuit bestanden, zijn onder andere [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
+Andere metagegevens die kunnen worden ingesloten vanuit bestanden zijn [!DNL Microsoft Word] , [!DNL PowerPoint] , [!DNL Excel] , enzovoort.
 
 ## Metagegevens van uw digitale elementen beheren {#manage-assets-metadata}
 
-Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in meerdere elementen kunt doorgeven. Gebruik de [!UICONTROL Properties] pagina om de eigenschappen van metagegevens te wijzigen in een algemene waarde of om tags toe te voegen of te wijzigen. Gebruik de Schema-editor om de pagina Eigenschappen van metagegevens aan te passen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens.
+Met Enterprise Manager Assets kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in meerdere elementen samen kunt doorgeven. Met de pagina [!UICONTROL Properties] kunt u eigenschappen van metagegevens wijzigen in een algemene waarde of tags toevoegen of wijzigen. Gebruik de Schema-editor om de pagina Eigenschappen van metagegevens aan te passen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens.
 
 >[!NOTE]
 >
->De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de elementen die beschikbaar zijn in verschillende mappen of die overeenkomen met een algemeen criterium, is het mogelijk om [bulkupdate van metagegevens na het zoeken](/help/assets/search-assets.md#metadata-updates).
+>De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk aan [ bulkupdate de meta-gegevens na het zoeken ](/help/assets/search-assets.md#metadata-updates).
 
 1. Navigeer naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
-1. Selecteer op de werkbalk de optie **[!UICONTROL Properties]** om de [!UICONTROL Properties] pagina voor de geselecteerde elementen.
+1. Selecteer op de werkbalk **[!UICONTROL Properties]** om de pagina [!UICONTROL Properties] voor de geselecteerde elementen te openen.
 
    >[!NOTE]
    >
-   >Wanneer u meerdere elementen selecteert, wordt het laagste gebruikelijke bovenliggende formulier geselecteerd voor de elementen. Met andere woorden: [!UICONTROL Properties] op de pagina worden alleen metagegevensvelden weergegeven die in de [!UICONTROL Properties] pagina&#39;s van alle afzonderlijke elementen.
+   >Wanneer u meerdere elementen selecteert, wordt het laagste gebruikelijke bovenliggende formulier geselecteerd voor de elementen. Met andere woorden, op de pagina [!UICONTROL Properties] worden alleen metagegevensvelden weergegeven die op alle [!UICONTROL Properties] -pagina&#39;s van alle afzonderlijke elementen gemeenschappelijk zijn.
 
 1. Wijzig de eigenschappen van metagegevens voor geselecteerde elementen onder de verschillende tabbladen.
 1. Als u de metagegevenseditor voor een bepaald element wilt weergeven, annuleert u de selectie van de overige elementen in de lijst. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor het bepaalde middel.
 
    >[!NOTE]
    >
-   >* In de [!UICONTROL Properties] pagina, kunt u elementen uit de elementenlijst verwijderen door de selectie te annuleren. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
-   >* Selecteer boven aan de lijst met elementen het selectievakje bij **[!UICONTROL Title]** schakelen tussen het selecteren van de elementen en het wissen van de lijst.
+   >* Op de pagina [!UICONTROL Properties] kunt u elementen uit de elementenlijst verwijderen door de selectie te annuleren. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
+   >* Selecteer boven aan de lijst met elementen het selectievakje bij **[!UICONTROL Title]** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
-1. Selecteer een ander metagegevensschema voor de elementen door **[!UICONTROL Settings]** op de werkbalk en selecteer het gewenste schema. Sla de wijzigingen op.
-1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Selecteren **[!UICONTROL Submit]**.
+1. Als u een ander metagegevensschema voor de elementen wilt selecteren, selecteert u **[!UICONTROL Settings]** op de werkbalk en selecteert u het gewenste schema. Sla de wijzigingen op.
+1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Selecteer **[!UICONTROL Submit]** .
 
    >[!CAUTION]
    >
@@ -193,9 +193,9 @@ Met Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen te
 
 ## Aangepaste metagegevens met verwerkingsprofiel {#metadata-compute-service}
 
-Activa als een [!DNL Cloud Service] U kunt aangepaste metagegevens voor een element genereren met gebruik van services in de cloud. Configureer een verwerkingsprofiel om aangepaste metagegevens te genereren. Zie [verwerkingsprofiel gebruiken](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets als [!DNL Cloud Service] kan aangepaste metagegevens voor een element genereren met gebruik van services die zijn gebaseerd op de cloud. Configureer een verwerkingsprofiel om aangepaste metagegevens te genereren. Zie [ hoe te om verwerkingsprofiel ](/help/assets/asset-microservices-configure-and-use.md#use-profiles) te gebruiken.
 
-![Metagegevensuitvoering in verwerkingsprofiel](assets/processing-profile-metadata.png)
+![ de vertoning van Meta-gegevens in verwerkingsprofiel ](assets/processing-profile-metadata.png)
 
 >[!TIP]
 >
@@ -224,54 +224,54 @@ De ondersteunde metagegevensschema&#39;s worden hieronder weergegeven.
 
 * DC - [!DNL Dublin Core] is een belangrijke en veelgebruikte reeks metagegevens.
 * DICOM - Digital Imaging and Communications in Medicine.
-* `Iptc4xmpCore` en `iptc4xmpExt` - De International Press Communications Standard bevat veel onderwerpspecifieke metagegevens.
+* `Iptc4xmpCore` en `iptc4xmpExt` - International Press Communications Standard bevat veel metagegevens die specifiek zijn voor het onderwerp.
 * RDF - Resource Description Framework - voor algemene semantische webmetagegevens.
-* XMP - [!DNL Extensible Metadata Platform].
+* XMP - [!DNL Extensible Metadata Platform] .
 * `xmpBJ` - Basic Job Ticketing.
 
 ### Toepassingsspecifieke metagegevens {#application-specific-metadata}
 
-De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metagegevens. Als u dergelijke metagegevens gebruikt, kunnen andere toepassingen de metagegevens mogelijk niet gebruiken. Een andere toepassing voor het renderen van afbeeldingen kan bijvoorbeeld geen toegang krijgen tot [!DNL Adobe Photoshop] metagegevens. U kunt een workflowstap maken waarmee een toepassingsspecifieke eigenschap wordt gewijzigd in een standaardeigenschap.
+De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metagegevens. Als u dergelijke metagegevens gebruikt, kunnen andere toepassingen de metagegevens mogelijk niet gebruiken. Een andere toepassing voor het renderen van afbeeldingen heeft bijvoorbeeld wellicht geen toegang tot [!DNL Adobe Photoshop] -metagegevens. U kunt een workflowstap maken waarmee een toepassingsspecifieke eigenschap wordt gewijzigd in een standaardeigenschap.
 
-* ACDSee - Metagegevens beheerd door de [!DNL ACDSee] programma. Zie [www.acdsee.com/](https://www.acdsee.com/).
-* Album - [!DNL Adobe Photoshop Album].
-* CQ - Gebruikt door [!DNL Experience Manager Assets].
-* DAM - Gebruikt door [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description Explorer](https://www.optimasc.com/products/dex/index.html) is een inzameling van hulpmiddelen voor meta-gegevens en dossierbeheer voor werkende systemen van Vensters.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
-* LR - [!DNL Adobe Lightroom].
-* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
+* ACDSee - Metagegevens die door het [!DNL ACDSee] programma worden beheerd. Zie [ www.acdsee.com/](https://www.acdsee.com/).
+* Album - [!DNL Adobe Photoshop Album] .
+* CQ - Wordt gebruikt door [!DNL Experience Manager Assets] .
+* DAM - Wordt gebruikt door [!DNL Experience Manager Assets] .
+* DEX - [ de Optimale ontdekkingsreiziger van de Beschrijving van SC ](https://www.optimasc.com/products/dex/index.html) is een inzameling van hulpmiddelen voor meta-gegevens en dossierbeheer voor de werkende systemen van Vensters.
+* CRS - [ Ruwe Adobe Photoshop Camera ](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom] .
+* MediaPro - [ iView MediaPro ](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto en MP - Microsoft Photo.
 * PDF en PDF/X.
-* Photoshop en psAux - [!DNL Adobe Photoshop].
+* Photoshop en psAux - [!DNL Adobe Photoshop] .
 
 ### Metagegevens Digital Rights Management {#digital-rights-management-metadata}
 
-* CC - [!DNL Creative Commons].
+* CC - [!DNL Creative Commons] .
 * [!DNL XMPRights].
-* PLUS - [Universal System met afbeeldingslicentie](https://www.useplus.com).
+* PLUS - [ het Verlenen van vergunningen van het Beeld Universele Systeem ](https://www.useplus.com).
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL - PRISM Rights Language.
 * PUR - PRISM-gebruiksrechten.
-* `xmpPlus` - integratie van PLUS met XMP.
+* `xmpPlus` - Integratie van PLUS met XMP.
 
 ### Specifieke metagegevens voor fotografie {#photography-specific-metadata}
 
 * EXIF - Technische informatie van camera, inclusief GPS-positie.
 * CRS - [!DNL Camera Raw] schema.
-* `iptc4xmpCore` en `iptc4xmpExt`.
+* `iptc4xmpCore` en `iptc4xmpExt` .
 * TIFF - metagegevens van afbeeldingen (niet alleen voor TIFF-afbeeldingen).
 
 ### Afdrukspecifieke metagegevens {#print-specific-metadata}
 
 * PDF en PDF/X - Adobe PDF en toepassingen van derden.
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
-* XMP - [!DNL Extensible Metadata Platform].
+* XMP - [!DNL Extensible Metadata Platform] .
 * `xmpPG` - XMP metagegevens voor gepagineerde tekst.
 
 ### Multimediaspecifieke metagegevens {#multimedia-specific-metadata}
 
-* `xmpDM` - [!DNL Dynamic Media].
+* `xmpDM` - [!DNL Dynamic Media] .
 * `xmpMM` - Mediabeheer.
 
 ## Workflows met metagegevens {#metadata-driven-workflows}
@@ -280,13 +280,13 @@ Door workflows te maken die op metagegevens zijn gebaseerd, kunt u bepaalde proc
 
 * De workflow kan controleren of een afbeelding een titel heeft of niet. Als dit niet het geval is, wordt een melding weergegeven om een titel toe te voegen.
 * De workflow kan controleren of een copyrightkennisgeving op een middel distributie toestaat of niet. Het systeem verzendt het middel dus naar de ene of de andere server.
-* Een workflow kan controleren op elementen zonder vooraf gedefinieerde, verplichte metagegevens of elementen *ongeldig* metagegevens.
+* Een werkschema kan activa zonder vooraf bepaalde, verplichte meta-gegevens of activa met *ongeldige* meta-gegevens controleren.
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -295,9 +295,9 @@ Door workflows te maken die op metagegevens zijn gebaseerd, kunt u bepaalde proc
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [XMP-metadata](xmp-metadata.md)
->* [Metagegevens bewerken of toevoegen](meta-edit.md)
+>* [ om meta-gegevens uit te geven of toe te voegen ](meta-edit.md)

@@ -18,7 +18,7 @@ Edge Delivery Services worden losgekoppeld van de inhoudsbron en kunnen inhoud v
 
 Met Edge Delivery Services kunt u snelle ontwikkelomgevingen maken waarin auteurs inhoud snel kunnen bijwerken en publiceren en nieuwe sites snel kunnen worden gestart. Het duurt slechts een paar seconden om van bewerken naar live op internet te gaan.
 
-![Inhoudsbronnen voor Edge Delivery](assets/content-sources.png)
+![ Inhoudsbronnen voor Edge Delivery ](assets/content-sources.png)
 
 Het gebruik van meerdere inhoudsbronnen biedt maximale flexibiliteit voor de gebruiker. De Adobe biedt begeleiding om u te helpen kiezen welke inhoudsbronnen het beste geschikt voor uw project zijn.
 
@@ -26,28 +26,28 @@ Er zijn gevallen waarin de inhoudsbron vooraf is gedefinieerd of anderszins niet
 
 Eenvoudigheid is het leidend beginsel van de Adobe. Begin met op documenten gebaseerde ontwerpen en voeg waar nodig complexiteit toe. Als een hulpprogramma moet worden gewijzigd, heeft AEM integratie van Edge Delivery Services betrekking op de migratie van inhoud.
 
-![Flexibiliteit inhoudsbron](assets/content-source-flexiblity.png)
+![ de bronflexibiliteit van de inhoudsbron ](assets/content-source-flexiblity.png)
 
 ## Authoring {#authoring-edge}
 
 Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U kunt de auteur kiezen met behulp van op documenten gebaseerde ontwerpen of WYSIWYG-ontwerpen met behulp van de Universal Editor.
 
-Zie het document [Inhoud ontwerpen voor Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) voor meer informatie .
+Gelieve te zien het document [ Authoring Inhoud voor Edge Delivery Services ](/help/edge/wysiwyg-authoring/authoring.md) voor meer informatie.
 
 ## Publiceren {#publishing-edge}
 
 Bij Edge Delivery Services verloopt het publiceren van inhoud naadloos, ongeacht de inhoudsbron.
 
-Zie het document [Inhoud voor Edge Delivery Services publiceren](/help/edge/wysiwyg-authoring/publishing.md) voor meer informatie .
+Gelieve te zien het document [ het Publiceren Inhoud voor Edge Delivery Services ](/help/edge/wysiwyg-authoring/publishing.md) voor meer informatie.
 
 ## Ontwikkelen {#developing-edge}
 
 Edge Delivery Services zijn gebaseerd op het concept van blokken. AEM wordt geleverd met een uitgebreide bibliotheek met vooraf gedefinieerde blokken, die kan worden uitgebreid om aan uw projectbehoeften te voldoen. De code voor de projecten van Edge Delivery Services wordt beheerd in GitHub.
 
-Zie het document [Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG-authoring met Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) voor meer informatie .
+Gelieve te zien het document [ Begonnen Begeleidende Gids van de Ontwikkelaar Begonnen voor WYSIWYG Authoring met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) voor meer informatie.
 
 ## Bestaande AEM projecten {#existing-projects}
 
 U hoeft niet te wachten tot een nieuw AEM project van Edge Delivery Services profiteert. Edge Delivery Services kunnen worden geïntegreerd in uw bestaande AEM-project, zodat u de prestatiewinst direct kunt benutten.
 
-Zie het document [Edge Delivery Services gebruiken met bestaande AEM projecten](/help/edge/wysiwyg-authoring/existing-projects.md) voor meer informatie .
+Gelieve te zien het document [ Gebruikend Edge Delivery Services met Bestaande AEM Projecten ](/help/edge/wysiwyg-authoring/existing-projects.md) voor meer informatie.

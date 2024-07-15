@@ -1,6 +1,6 @@
 ---
-title: Kanaal toewijzen aan een as a Cloud Service weergave in schermen
-description: Op deze pagina wordt beschreven hoe u een kanaal toewijst aan een weergave in as a Cloud Service schermen.
+title: Kanaal toewijzen aan een weergave in Screens as a Cloud Service
+description: Op deze pagina wordt beschreven hoe u een kanaal toewijst aan een weergave in Screens as a Cloud Service.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
 feature: Authoring Screens
 role: Admin, Developer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Kanaal toewijzen aan een as a Cloud Service weergave in schermen {#assign-channel-displays-screens-cloud}
+# Kanaal toewijzen aan een weergave in Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
 
 Nadat de projectopstelling volledig is, moet u het kanaal aan een vertoning toewijzen om de inhoud te bekijken.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe u een kanaal aan een vertoning kunt toewijzen, zodra uw vertoning klaar is en u inhoud aan uw kanaal hebt toegevoegd en het gepubliceerd. Na het lezen, zou u moeten kunnen begrijpen hoe te om een kanaal aan een vertoning van de Leverancier van de Diensten van het Scherm toe te wijzen.
+Dit document helpt u begrijpen hoe u een kanaal aan een vertoning kunt toewijzen, zodra uw vertoning klaar is en u inhoud aan uw kanaal hebt toegevoegd en het gepubliceerd. Na het lezen, zou u moeten kunnen begrijpen hoe te om een kanaal aan een vertoning van de Leverancier van de Diensten van Screens toe te wijzen.
 
 ## Vereisten {#prerequisites}
 
@@ -30,13 +30,13 @@ Voordat u de onderstaande stappen uitvoert om een kanaal toe te wijzen aan een w
 
 Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
 
-1. Navigeer naar de Serviceverlener voor schermen en selecteer **Weergaven** in het navigatievenster aan de linkerkant.
+1. Navigeer aan de Leverancier van de Diensten van Screens en selecteer **Vertoningen** van het linkernavigatievenster.
 
-1. Klikken **Kanaal toewijzen** op het scherm.
+1. Klik **toewijzen Kanaal** aan de vertoning.
 
    ![afbeelding](/help/screens-cloud/assets/display/assignchannel-1.png)
 
-1. De volgende velden vullen vanuit **Een kanaal toewijzen** in.
+1. Vul de volgende gebieden van **toewijzen een kanaal** dialoogdoos.
 
    ![afbeelding](/help/screens-cloud/assets/display/assignchannel-2.png)
 
@@ -46,9 +46,9 @@ Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
       >[!NOTE]
       >Prioriteit wordt gebruikt om de toewijzingen te bestellen als meerdere toewijzingen voldoen aan de afspeelcriteria. De waarde met de hoogste waarde heeft altijd voorrang op lagere waarden. Bijvoorbeeld, als er twee kanalen A en B zijn. A heeft een prioriteit van 1 en B heeft een prioriteit van 2, dan wordt kanaal B getoond, aangezien het een hogere prioriteit dan A heeft.
 
-   1. Selecteer de begin- en einddatum van **Activering**.
+   1. Selecteer de begindatum en einddatum van **Activering**.
 
-1. Klikken **+ Herhaling toevoegen** om een terugkerend programma voor uw kanaal toe te voegen.
+1. Klik op **+ Herhaling toevoegen** om een herhalingsschema voor uw kanaal toe te voegen.
 
    ![afbeelding](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
@@ -57,18 +57,18 @@ Voer de onderstaande stappen uit om een kanaal toe te wijzen aan een weergave:
 
    U kunt de volgende opties instellen:
 
-   * **Naam**: Titel van uw terugkerend schema.
-   * **Herhalen**: Kies of de planning Dagelijks, Wekelijks, Maandelijks, of Jaarlijks loopt.
-   * **Start**: De begintijd voor uw schema.
-   * **Einde**: De eindtijd voor uw schema. U kunt de waarde instellen op tijd of duur.
-   * **Tijd**: Het schema eindigt op een bepaald tijdstip.
-   * **Duur**: De planning loopt gedurende een bepaalde tijdsduur in uren of minuten.
+   * **Naam**: Titel van uw herhalingsprogramma.
+   * **Herhaal**: Kies of de programma&#39;s Dagelijks, Wekelijks, Maandelijks, of Jaarlijks lopen.
+   * **Begin**: De begintijd voor uw programma.
+   * **Eind**: De beëindigende tijd voor uw programma. U kunt de waarde instellen op tijd of duur.
+   * **Tijd**: Het programma beëindigt bij een gespecificeerde tijd.
+   * **Duur**: De programmalooppas voor een bepaalde duur van tijd in uren of notulen.
 
-1. Klikken **Maken**. U kunt zien dat een kanaal voor die vertoning, zoals aangetoond in het hieronder cijfer wordt toegewezen.
+1. Klik **creëren**. U kunt zien dat een kanaal voor die vertoning, zoals aangetoond in het hieronder cijfer wordt toegewezen.
 
    ![afbeelding](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
 ## Volgende functies {#whats-next}
 
-Nu u het kanaal aan een vertoning hebt toegewezen, zou u uw as a Cloud Service reis van de Schermen door het document opnieuw te bekijken moeten voortzetten [Schermspeler voor AEM as a Cloud Service installeren en configureren](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Nu, dat u het kanaal aan een vertoning hebt toegewezen, zou u uw as a Cloud Service reis van Screens moeten voortzetten door het document [ te herzien Installing en het Vormen de Speler van Screens voor AEM as a Cloud Service ](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

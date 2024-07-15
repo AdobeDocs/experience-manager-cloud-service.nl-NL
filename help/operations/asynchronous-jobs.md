@@ -23,7 +23,7 @@ Deze bewerkingen omvatten:
 * Assets die boven de ingestelde drempelwaarde liggen, importeren vanaf een externe Experience Manager-implementatie
 * Actieve exemplaren uitrollen
 
-U kunt de status van asynchrone taken weergeven in het menu **[!UICONTROL Background Operations]** dashboard op **Algemene navigatie** > **Gereedschappen** > **Algemeen** > **Taken**.
+U kunt het statuut van asynchrone banen van het **[!UICONTROL Background Operations]** dashboard bij **Globale Navigatie** bekijken > **Hulpmiddelen** > **Algemeen** > **Banen**.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Wanneer AEM een bewerking asynchroon verwerkt, ontvangt u een bericht in uw [inb
 
 Navigeer naar de pagina **[!UICONTROL Background Operations]** om de status van de asynchrone bewerkingen in detail weer te geven.
 
-1. Selecteer in de interface Experience Manager **Algemene navigatie** > **Gereedschappen** > **Algemeen** > **Taken**.
+1. In de interface van de Experience Manager selecteert de uitgezochte **Globale Navigatie** > **Hulpmiddelen** > **Algemeen** > **Banen**.
 
 1. Controleer op de pagina **[!UICONTROL Background Operations]** de details van de bewerkingen.
 
@@ -57,7 +57,7 @@ Navigeer naar de pagina **[!UICONTROL Background Operations]** om de status van 
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Als u meer details wilt weergeven, bijvoorbeeld een beschrijving en logbestand, selecteert u de bewerking en klikt u op **[!UICONTROL Open]** op de werkbalk.
+1. Als u meer details wilt weergeven, bijvoorbeeld een beschrijving en logboekbestanden, selecteert u de bewerking en klikt u op **[!UICONTROL Open]** op de werkbalk.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -77,7 +77,7 @@ Er zijn verscheidene opties rond asynchrone banen die kunnen worden gevormd. De 
 
 >[!NOTE]
 >
->[OSGi-configuraties](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) worden beschouwd als muteerbare inhoud en dergelijke configuraties moeten worden geïmplementeerd als een inhoudspakket voor een productieomgeving.
+>[ OSGi configuraties ](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) worden beschouwd als veranderlijke inhoud en om het even welke dergelijke configuraties moeten als inhoudspakket voor een productiemilieu worden opgesteld.
 
 ### Voltooide taken wissen {#purging-completed-jobs}
 
@@ -85,8 +85,8 @@ AEM voert elke dag om 10:00 een zuiveringstaak uit om voltooide asynchrone banen
 
 U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooide taken bewaard blijven voordat ze worden verwijderd. U kunt ook het maximum aantal voltooide taken configureren waarvoor de details tot een gewenst tijdstip bewaard blijven.
 
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder gebruiker.
-1. Navigeren naar **OSGi** > **Configuratie**
+1. Meld u aan bij de AEM Web-console van QuickStart Jar van AEM SDK op `https://<host>:<port>/system/console` als de beheerder gebruiker.
+1. Ga aan **OSGi** > **Configuratie**
 1. Open de taak **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]**.
 1. Geef het volgende op:
    * Het maximum aantal dagen waarna voltooide taken worden verwijderd.
@@ -101,8 +101,8 @@ U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooid
 
 Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wordt de verwijderingsbewerking asynchroon uitgevoerd.
 
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder gebruiker.
-1. Navigeren naar **OSGi** > **Configuratie**
+1. Meld u aan bij de AEM Web-console van QuickStart Jar van AEM SDK op `https://<host>:<port>/system/console` als de beheerder gebruiker.
+1. Ga aan **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Process Default Queue Configuration.]**
 1. Geef in het vak **[!UICONTROL Threshold number of assets]** het drempelaantal assets/mappen op voor de asynchrone verwerking van verwijderingsbewerkingen.
 
@@ -115,8 +115,8 @@ Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wo
 
 Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder gebruiker.
-1. Navigeren naar **OSGi** > **Configuratie**
+1. Meld u aan bij de AEM Web-console van QuickStart Jar van AEM SDK op `https://<host>:<port>/system/console` als de beheerder gebruiker.
+1. Ga aan **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Move Operation Job Processing Configuration.]**
 1. Geef in het vak **[!UICONTROL Threshold number of assets/references]** het drempelaantal assets/mappen of verwijzingen op voor de asynchrone verwerkings- of verplaatsingsbewerkingen.
 
@@ -127,8 +127,8 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 
 ### Asynchrone MSM-bewerkingen configureren {#configuring-asynchronous-msm-operations}
 
-1. Meld u aan bij de AEM SDK QuickStart Jar&#39;s AEM webconsole op `https://<host>:<port>/system/console` als de beheerder gebruiker.
-1. Navigeren naar **OSGi** > **Configuratie**
+1. Meld u aan bij de AEM Web-console van QuickStart Jar van AEM SDK op `https://<host>:<port>/system/console` als de beheerder gebruiker.
+1. Ga aan **OSGi** > **Configuratie**
 1. Open vanuit de webconsole de **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld, succes, mislukt.
 
@@ -138,6 +138,6 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 
 >[!MORELIKETHIS]
 >
->* [Pagina&#39;s beheren](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+>* [ het Leiden Pagina&#39;s ](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Importeer/exporteer metadata van assets bulksgewijs](/help/assets/metadata-import-export.md).
 >* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).

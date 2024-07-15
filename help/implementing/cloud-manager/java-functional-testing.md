@@ -1,6 +1,6 @@
 ---
-title: Java&trade; functietests
-description: Leer hoe u Java&trade schrijft; functionele tests voor AEM as a Cloud Service
+title: Java&trade; functionele tests
+description: Leer hoe u Java&amp schrijft;handel; functionele tests voor AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -18,33 +18,33 @@ Meer informatie over het schrijven van functionele Java™-tests voor AEM as a C
 
 ## Aan de slag met functionele tests {#getting-started-functional-tests}
 
-Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager, kunt u `it.tests` De map wordt automatisch gemaakt met voorbeelden van testgevallen.
+Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager, wordt er automatisch een map `it.tests` gemaakt met voorbeelden van testgevallen.
 
 >[!NOTE]
 >
->Als uw opslagplaats is gemaakt voordat Cloud Manager automatisch is gemaakt `it.tests` mappen, kunt u ook de meest recente versie genereren met de [AEM Projectarchetype.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Als uw bewaarplaats vóór Cloud Manager automatisch creeerde `it.tests` omslagen werd gecreeerd, kunt u de recentste versie ook produceren gebruikend [ AEM Archetype van het Project.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
-Wanneer u de inhoud van de `it.tests` kunt u de map gebruiken als basis voor uw eigen tests en vervolgens:
+Als u de inhoud van de map `it.tests` hebt, kunt u deze gebruiken als basis voor uw eigen tests en vervolgens:
 
 1. [Ontwikkel uw testdoosjes.](#writing-functional-tests)
 1. [Voer de tests lokaal uit.](#local-test-execution)
-1. Leg uw code vast in de gegevensopslagruimte van Cloud Manager en voer een pijplijn van Cloud Manager uit.
+1. Leg uw code vast in de Cloud Manager-opslagplaats en voer een Cloud Manager-pijplijn uit.
 
 ## Aangepaste functionele tests schrijven {#writing-functional-tests}
 
-De zelfde hulpmiddelen die de Adobe gebruikt om product functionele tests te schrijven kunnen worden gebruikt om uw douane functionele tests te schrijven. Gebruik de [functionele producttests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
+De zelfde hulpmiddelen die de Adobe gebruikt om product functionele tests te schrijven kunnen worden gebruikt om uw douane functionele tests te schrijven. Gebruik de [ product functionele tests ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
 
-De code voor een aangepaste functionele test is Java™-code in het dialoogvenster `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. [Zie het AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor monstertests.
+De code voor aangepaste functionele test is Java™-code in de map `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. [ zie het AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor steekproeftests.
 
-De tests worden in werking gesteld op Adobe-onderhouden testende infrastructuur met inbegrip van minstens twee auteurinstanties, twee publiceer instanties, en een configuratie van de Verzender. Deze opstelling betekent dat uw douane functionele tests tegen de volledige AEM stapel in werking stellen.
+De tests worden uitgevoerd op testinfrastructuur die door de Adobe wordt onderhouden, inclusief ten minste twee auteur-instanties, twee publiceer-instanties en een Dispatcher-configuratie. Deze opstelling betekent dat uw douane functionele tests tegen de volledige AEM stapel in werking stellen.
 
 ### Structuur van functionele tests {#functional-tests-structure}
 
-Aangepaste functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden ingezet voor AEM. Over het algemeen zou deze build een aparte module Maven zijn. Het resulterende JAR-bestand moet alle vereiste afhankelijkheden bevatten en wordt gewoonlijk gemaakt met de opdracht `maven-assembly-plugin` met de `jar-with-dependencies` descriptor.
+Aangepaste functionele tests moeten worden verpakt als een afzonderlijk JAR-bestand dat wordt geproduceerd door dezelfde Maven-build als de artefacten die moeten worden ingezet voor AEM. Over het algemeen zou deze build een aparte module Maven zijn. Het resulterende JAR-bestand moet alle vereiste afhankelijkheden bevatten en wordt doorgaans gemaakt met de `maven-assembly-plugin` met behulp van de `jar-with-dependencies` -descriptor.
 
-Bovendien moet de JAR de `Cloud-Manager-TestType` manifestkoptekst ingesteld op `integration-test`.
+Daarnaast moet voor de JAR de header `Cloud-Manager-TestType` manifest zijn ingesteld op `integration-test` .
 
-Hier volgt een voorbeeldconfiguratie voor de `maven-assembly-plugin`.
+Hier volgt een voorbeeldconfiguratie voor de `maven-assembly-plugin` .
 
 ```XML
 <build>
@@ -78,23 +78,23 @@ Hier volgt een voorbeeldconfiguratie voor de `maven-assembly-plugin`.
 </build>
 ```
 
-Binnen dit JAR-bestand moeten de klassenamen van de werkelijke uit te voeren tests eindigen in `IT`.
+In dit JAR-bestand moeten de klassenamen van de tests die daadwerkelijk moeten worden uitgevoerd, eindigen in `IT` .
 
-Een klasse met de naam `com.myco.tests.aem.it.ExampleIT` zou worden uitgevoerd, maar een klasse met de naam `com.myco.tests.aem.it.ExampleTest` niet.
+Een klasse met de naam `com.myco.tests.aem.it.ExampleIT` wordt bijvoorbeeld uitgevoerd, maar een klasse met de naam `com.myco.tests.aem.it.ExampleTest` niet.
 
-Bovendien moet de testcode onder een pakket met de naam `it` (Het filter voor uitsluitingen van dekking is `**/it/**/*.java`).
+Bovendien moet de testcode zich onder een pakket met de naam `it` bevinden om testcode uit te sluiten van de dekkingscontrole van de codescanfunctie (het filter voor dekkingsuitsluiting is `**/it/**/*.java` ).
 
-De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is zodanig ontworpen en geconfigureerd dat deze compatibel is met de conventies die door de `aem-testing-clients` testbibliotheek. Ontwikkelaars worden aangeraden deze bibliotheek te gebruiken en de beste praktijken ervan te volgen.
+De testklassen moeten normale JUnit-tests zijn. De testinfrastructuur is zodanig ontworpen en geconfigureerd dat deze compatibel is met de conventies die worden gebruikt in de testbibliotheek van `aem-testing-clients` . Ontwikkelaars worden aangeraden deze bibliotheek te gebruiken en de beste praktijken ervan te volgen.
 
-Zie [`aem-testing-clients` GitHub-repo](https://github.com/adobe/aem-testing-clients) voor meer informatie .
+Zie [`aem-testing-clients` reactie GitHub ](https://github.com/adobe/aem-testing-clients) voor meer details.
 
 >[!TIP]
 >
->[Deze video bekijken](https://www.youtube.com/watch?v=yJX6r3xRLHU) over hoe u aangepaste functionele tests kunt gebruiken om uw vertrouwen in uw CI/CD pijpleidingen te verbeteren.
+>[ bekijk deze video ](https://www.youtube.com/watch?v=yJX6r3xRLHU) over hoe u douane functionele tests kunt gebruiken om uw vertrouwen in uw pijpleidingen te verbeteren CI/CD.
 
 ### Vereisten {#prerequisites}
 
-1. De tests in Cloud Manager worden uitgevoerd met een technische beheerder.
+1. De tests in Cloud Manager worden uitgevoerd met een technische admin-gebruiker.
 
 >[!NOTE]
 >
@@ -118,8 +118,8 @@ Zie [`aem-testing-clients` GitHub-repo](https://github.com/adobe/aem-testing-cli
 
 * aem-cloud-testing-clients:
 
-Voor de komende wijzigingen in de containerinfrastructuur die wordt gebruikt om functionele tests uit te voeren, is de bibliotheek vereist [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) gebruikt in uw aangepaste functionele test die moet worden bijgewerkt naar ten minste versie **1.**
-Zorg ervoor dat uw afhankelijkheid binnen `it.tests/pom.xml` is bijgewerkt.
+De aanstaande veranderingen in de containerized infrastructuur die wordt gebruikt om functionele tests uit te voeren, zullen de bibliotheek [ aem-wolk-test-cliënten ](https://github.com/adobe/aem-testing-clients) vereisen die in uw douane functionele test wordt gebruikt om aan minstens versie **1.2.1** worden bijgewerkt
+Zorg ervoor dat uw afhankelijkheid in `it.tests/pom.xml` is bijgewerkt.
 
 ```
 <dependency>
@@ -136,25 +136,25 @@ Zorg ervoor dat uw afhankelijkheid binnen `it.tests/pom.xml` is bijgewerkt.
 
 ### Uitvoering lokale test {#local-test-execution}
 
-Alvorens functionele tests in een pijplijn van de Manager van de Wolk te activeren, adviseert het om de functionele tests plaatselijk in werking te stellen gebruikend [AS A CLOUD SERVICE SDK AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of een werkelijk AEM as a Cloud Service instantie.
+Alvorens functionele tests in een pijpleiding van Cloud Manager te activeren, wordt het geadviseerd om de functionele tests plaatselijk in werking te stellen gebruikend [ AEM as a Cloud Service SDK ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) of een daadwerkelijke instantie van AEM as a Cloud Service.
 
 #### Het lopen in winde {#running-in-an-ide}
 
 Omdat testklassen JUnit-tests zijn, kunnen ze worden uitgevoerd vanuit mainstream Java™ IDE&#39;s zoals Eclipse, IntelliJ en NetBeans. Omdat zowel de functionele tests van het product als de douane functionele tests op de zelfde technologie gebaseerd zijn, kunnen allebei plaatselijk worden in werking gesteld door de producttests in uw douanetests te kopiëren.
 
-Bij het uitvoeren van deze tests is het echter noodzakelijk verschillende systeemeigenschappen in te stellen die door de `aem-testing-clients` (en de onderliggende Sling Testing Clients)-bibliotheek.
+Wanneer u deze tests uitvoert, moet u echter verschillende systeemeigenschappen instellen die door de bibliotheek `aem-testing-clients` (en de onderliggende testclients) worden verwacht.
 
 De systeemeigenschappen zijn als volgt.
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | aantal instanties dat moet worden ingesteld op `2` | `2` |
+| `sling.it.instances` | aantal instanties dat moet worden ingesteld op `2` om overeen te komen met de cloudservice | `2` |
 | `sling.it.instance.url.1` | moet worden ingesteld op de URL van de auteur | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | uitvoeringsmodus van de eerste instantie, moet worden ingesteld op `author` | `author` |
 | `sling.it.instance.adminUser.1` | moet worden ingesteld op de scriptgebruiker. | `admin` |
 | `sling.it.instance.adminPassword.1` | moet worden ingesteld op het beheerderswachtwoord van de auteur. |                         |
 | `sling.it.instance.url.2` | moet worden ingesteld op de publicatie-URL | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | uitvoeringsmodus van de tweede instantie, moet worden ingesteld op `publish` | `publish` |
+| `sling.it.instance.runmode.2` | uitvoeringsmodus van de tweede instantie, moet zijn ingesteld op `publish` | `publish` |
 | `sling.it.instance.adminUser.2` | moet worden ingesteld op de gebruiker van de publicatiebeheerder. | `admin` |
 | `sling.it.instance.adminPassword.2` | moet worden ingesteld op het wachtwoord voor publicatiebeheer. |                         |
 
@@ -162,7 +162,7 @@ De systeemeigenschappen zijn als volgt.
 
 #### Alle tests uitvoeren met Maven {#using-maven}
 
-1. Open een shell en navigeer naar `it.tests` in uw opslagplaats.
+1. Open een shell en navigeer naar de `it.tests` map in uw repository.
 
 1. Voer het volgende bevel uit die de noodzakelijke parameters verstrekken om de tests te beginnen gebruikend Maven.
 

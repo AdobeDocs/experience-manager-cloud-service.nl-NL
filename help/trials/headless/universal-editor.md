@@ -24,7 +24,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="De Universal Editor starten"
->abstract="In deze handleiding verkent u de Universal Editor en hoe iedereen hiermee elk aspect van uw inhoud in een implementatie kan bewerken. Dit leidt tot een hogere snelheid van de inhoud.<br><br>Start deze module op een nieuw tabblad door hieronder te klikken en volg deze handleiding."
+>abstract="In deze handleiding verkent u de Universal Editor en hoe iedereen hiermee elk aspect van uw inhoud in een implementatie kan bewerken. Dit leidt tot een hogere snelheid van de inhoud.<br><br> lanceer deze module in een nieuw lusje door hieronder te klikken, dan deze gids te volgen."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
@@ -37,17 +37,17 @@ Het op plaats en in context bewerken kan vaak voordelig zijn in vergelijking met
 
 >[!NOTE]
 >
->Als u de Universal Editor in deze proefversie wilt gebruiken, moet u Chrome gebruiken als uw browser en niet in de incognitomodus. Dit is een beperking van de proefversie, niet van de Universal Editor.
+>Als u de Universal Editor in deze proefversie wilt gebruiken, moet u Chrome gebruiken als browser en niet in de incognitomodus. Dit is een beperking van de proefversie, niet van de Universal Editor.
 
 Met de Universal Editor kunt u tekst op een flexibele manier in context en op zijn plaats bewerken, zodat u eenvoudig en intuïtief inhoud kunt ontwerpen.
 
 1. Dubbelklik om de titel van het meest recente artikel te selecteren en te bewerken.
 
-   ![De Universal Editor](assets/do-not-localize/ue-component-mode.png)
+   ![ Universele Redacteur ](assets/do-not-localize/ue-component-mode.png)
 
-1. De component wordt geselecteerd zoals aangegeven door een blauwe rand met een tab die aangeeft dat het een tekstcomponent is. Er bevindt zich een cursor in de rand die op tekstinvoer wacht. De tekst wijzigen in `Aloha Spirit in Lofoten`.
+1. De component wordt geselecteerd zoals aangegeven door een blauwe rand met een tab die aangeeft dat het een tekstcomponent is. Er bevindt zich een cursor in de rand die op tekstinvoer wacht. Wijzig de tekst in `Aloha Spirit in Lofoten` .
 
-   ![Tekst bewerken in de Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
+   ![ het Uitgeven tekst in de Universele Redacteur ](assets/do-not-localize/ue-edit-text-2.png)
 
 1. Selecteer buiten de tekstcomponent en uw wijzigingen worden automatisch opgeslagen.
 
@@ -59,15 +59,15 @@ Met de Universal Editor kunt u ook afbeeldingen omwisselen terwijl u in de conte
 
 1. Selecteer de afbeelding van de surfer om deze te selecteren.
 
-1. In de componentrail kunt u de details van het element zien. Selecteer de **Aanbevolen afbeelding** miniatuur.
+1. In de componentrail kunt u de details van het element zien. Selecteer de **Aanbevolen duimnagel van het Beeld**.
 
-   ![Een afbeelding selecteren om te bewerken](assets/do-not-localize/ue-edit-media.png)
+   ![ Selecterend een beeld om uit te geven ](assets/do-not-localize/ue-edit-media.png)
 
-1. In de **Elementen selecteren** venster, omlaag schuiven en de `surfer-wave-02.JPG` afbeelding om deze te selecteren.
+1. In het **Uitgezochte Assets** venster, scrol neer en selecteer het `surfer-wave-02.JPG` beeld om het te selecteren.
 
-1. Selecteren **Selecteren** in de **Elementen selecteren** venster.
+1. Selecteer **Uitgezocht** in het **Uitgezochte Assets** venster.
 
-   ![Een afbeelding selecteren met het venster Element selecteren](assets/do-not-localize/ue-select-asset.png)
+   ![ Gebruikend het Uitgezochte venster van Activa om een beeld ](assets/do-not-localize/ue-select-asset.png) te selecteren
 
 De afbeelding wordt vervangen door de afbeelding die u hebt geselecteerd.
 
@@ -77,11 +77,11 @@ Met de Universal Editor kunt u in de context van de editor communiceren met uw i
 
 1. Standaard rendert de editor de bureaubladversie van uw inhoud. Selecteer de emulatorknop rechtsboven op de werkbalk van de Universal Editor om het doelapparaat te wijzigen.
 
-   ![Het menu-item Emulator](assets/do-not-localize/ue-emulator-1.png)
+   ![ het punt van het emulatormenu ](assets/do-not-localize/ue-emulator-1.png)
 
 1. Readers kunnen zich op verschillende apparaten met verschillende hoogte-breedteverhoudingen bevinden, zodat de editor emulatiemodi aanbiedt om te zien hoe de pagina aan gebruikers wordt weergegeven. Selecteer bijvoorbeeld de optie Mobiel apparaat in de staande modus.
 
-   ![Het menu-item Emulator](assets/do-not-localize/ue-emulator-2.png)
+   ![ het punt van het emulatormenu ](assets/do-not-localize/ue-emulator-2.png)
 
 1. Zie de inhoudswijziging in de editor. Het pictogram voor de emulator verandert ook om de modus aan te geven waarin deze zich bevindt. Selecteer een willekeurige locatie buiten het emulatormenu om het te sluiten en te communiceren met de inhoud.
 
@@ -93,19 +93,19 @@ U kunt ook exacte afmetingen voor de emulator opgeven en het geëmuleerde appara
 
 Omdat u de inhoud moet selecteren om deze in de editor te wijzigen, kunt u in de editor geen koppelingen volgen of communiceren met de inhoud door erop te tikken of te klikken. In de voorbeeldmodus kunt u de koppelingen in de inhoud volgen en ervaart u deze net als uw gebruikers voordat u gaat publiceren.
 
-1. Selecteer op de werkbalk van de Universal Editor de optie **Voorvertoning**.
+1. In de Universele toolbar van de Redacteur, uitgezochte **Voorproef**.
 
-1. Selecteer nu de optie **Meer informatie** koppeling voor het hoofdartikel.
+1. Nu selecteer **Lees meer** verbinding voor het belangrijkste artikel.
 
-   ![Voorvertoningsmodus](assets/do-not-localize/ue-preview-publish-1.png)
+   ![ wijze van de Voorproef ](assets/do-not-localize/ue-preview-publish-1.png)
 
-1. Blader door het artikel en gebruik vervolgens de knop **Vorige** koppeling om terug te keren naar de hoofdpagina.
+1. Doorblader het artikel, dan gebruik de **Vorige** verbinding om aan de belangrijkste pagina terug te keren.
 
-   ![Terug naar de hoofdpagina met de koppeling Terug](assets/do-not-localize/ue-preview-publish-3.png)
+   ![ Terugkeer aan belangrijkste pagina gebruikend de verbinding van de Terugkeer ](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Selecteer nu de optie **Publiceren** klikt u rechtsboven in de editor om uw inhoud te publiceren.
+1. Nu selecteer de **knoop van Publish** bij het hoogste recht van de redacteur om uw inhoud te publiceren.
 
-   ![De menu-items Voorvertoning en Publiceren](assets/do-not-localize/ue-preview-publish-4.png)
+   ![ de voorproef en publiceert menupunten ](assets/do-not-localize/ue-preview-publish-4.png)
 
 Uw inhoud is gepubliceerd.
 
@@ -113,19 +113,19 @@ Uw inhoud is gepubliceerd.
 
 Als u het schrijven van inhoud wilt versnellen terwijl het gestructureerd bewerken van inhoud zonder kop voordeliger is dan het bewerken op plaats, biedt de Universal Editor u ook snel toegang tot de editor voor inhoudsfragmenten.
 
-1. De voorvertoningsmodus uitschakelen door te tikken op de **Voorvertoning** op de werkbalk van de Universal Editor.
+1. De draai van voorproefwijze door de **knoop van de Voorproef** op de Universele toolbar van de Redacteur te tikken.
 
-   ![Voorvertoningsmodus uitschakelen](assets/do-not-localize/ue-toggle-off-preview.png)
+   ![ Draai van voorproefwijze ](assets/do-not-localize/ue-toggle-off-preview.png)
 
-1. Verschuiven verder omlaag op de pagina naar de **avonturen** sectie.
+1. De rol verder neer op de pagina aan de **Adventures** sectie.
 
-1. Selecteer een van de avonturen, zoals **Bali Surf Camp** om het te selecteren.
+1. Selecteer één van de avonturen zoals **Bali Surf Camp** om het te selecteren.
 
    * Maak een notitie van de blauwe omtrek van de geselecteerde component. Wanneer u een inhoudsfragment selecteert, moet op het tabblad de naam van het inhoudsfragment worden weergegeven. In dit geval **Bali Surf Camp**.
    * Omdat in de Universal Editor elk object op de pagina kan worden geselecteerd, kunnen componenten die onderdeel zijn van een inhoudsfragment ook afzonderlijk worden geselecteerd. Selecteer de locatie die in de illustratie wordt aangegeven om de volledige component Content Fragment te selecteren.
 
-1. De **Bewerken** verschijnt op de componentrail. Selecteer de **Bewerken** pictogram om de editor voor inhoudsfragmenten te openen op een nieuw tabblad.
+1. Het **geeft** pictogram uit verschijnt op componentenspoor. Selecteer **uitgeven** pictogram om de redacteur van het Fragment van de Inhoud op een nieuw lusje te openen.
 
-![Inhoudsfragmenten selecteren in de Universal Editor](assets/do-not-localize/ue-content-fragments.png)
+![ Selecterend de Fragmenten van de Inhoud in de Universele Redacteur ](assets/do-not-localize/ue-content-fragments.png)
 
 Op het nieuwe tabblad kunt u nu het inhoudsfragment bewerken dat u hebt geselecteerd in de universele editor.

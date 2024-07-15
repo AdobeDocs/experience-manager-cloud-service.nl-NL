@@ -1,6 +1,6 @@
 ---
-title: Screeningmeldingsservice in as a Cloud Service schermen
-description: Deze pagina beschrijft hoe te om de Dienst van het Bericht in as a Cloud Service Schermen te vormen.
+title: Screens Notification Service in Screens as a Cloud Service
+description: Deze pagina beschrijft hoe te om de Dienst van het Bericht in Screens as a Cloud Service te vormen.
 index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 feature: Developing Screens
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Service voor schermmeldingen {#notification-service}
+# Screens Notification Service {#notification-service}
 
 ## Inleiding {#introduction}
 
@@ -35,4 +35,4 @@ In AEM Screens Cloud kunnen klanten een rapport aanvragen over de status van ina
 
 ### Voorbeeld: hoofdletter gebruiken
 
-Als u de rapporttijd als 5 am plaatst en pingelt onderbreking als 1 uur, dan als uw apparaat van de Schermen niet tussen 4:00 am - 5:00 am pingelt, zult u een e-mailbericht ontvangen die apparateninactiviteit bevestigt.
+Als u de rapporttijd als 5 am plaatst en pingelt onderbreking als 1 uur, dan als uw Screens apparaat niet tussen 4:00 uur - 5:00 am pingelt, zult u een e-mailbericht ontvangen die apparateninactiviteit bevestigen.

@@ -26,47 +26,47 @@ Aan het einde van dit artikel leert u:
 
 Door een herhaalbare sectie in een formulier te maken, kunnen gebruikers meerdere exemplaren van dezelfde set gegevens invoeren, zodat herhalende informatie efficiënt kan worden verzameld. Een herhaalbare sectie maken in een formulier:
 
-1. Ga naar uw Edge Deliver-projectmap op de Microsoft SharePoint- of Google Workspace en open uw spreadsheet.
+1. Ga naar uw Edge Deliver-projectmap op Microsoft SharePoint of Google Workspace en open uw spreadsheet.
 
-1. Voeg een formulierveld toe met de `type` eigenschap ingesteld op `fieldset`
-1. Opgeven `Name` van het veld. De eigenschap name wordt gebruikt om een herhaalbare sectie te maken.
-1. herhaalbaarheid inschakelen door deze in te stellen `repeatable` tot `true`.
-1. Een beschrijvende waarde opgeven `label` voor het veld. Het fungeert als kop voor de herhaalbare sectie.
+1. Voeg een formulierveld toe met de eigenschap `type` ingesteld op `fieldset`
+1. Geef `Name` van het veld op. De eigenschap name wordt gebruikt om een herhaalbare sectie te maken.
+1. Schakel herhaalbaarheid in door `repeatable` in te stellen op `true` .
+1. Geef een beschrijving `label` voor het veld op. Het fungeert als kop voor de herhaalbare sectie.
 
    Zie de onderstaande afbeelding voor een illustratie van een sectie over de arbeidsgeschiedenis in een sollicitatieformulier.
 
    ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
 
-1. Voor elk veld dat u in de sectie wilt opnemen, stelt u de `Fieldset` aan de naam die u in stap 3 hebt gekozen.
+1. Stel voor elk veld dat u in de sectie wilt opnemen, de eigenschap `Fieldset` ervan in op dezelfde naam die u in stap 3 hebt gekozen.
 
-   Wijs bijvoorbeeld `experience` in de veldseteigenschap van alle relevante velden die in de `employment history` sectie.
+   Wijs bijvoorbeeld `experience` aan in de eigenschap Veldset van alle relevante velden die moeten worden opgenomen in de sectie `employment history` .
 
-   ![voorbeeld van een herhaalbaar sectieveld en de bijbehorende eigenschappen](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
+   ![ voorbeeld van een herhaalbaar sectieveld en zijn eigenschappen ](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
-1. Gebruiken [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om een voorvertoning van het blad weer te geven en het te publiceren. De herhaalbare sectie wordt toegevoegd aan het formulier.
+1. Gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef en publiceer het blad. De herhaalbare sectie wordt toegevoegd aan het formulier.
 
-   Onder de herhaalbare sectie vinden gebruikers een intuïtief **Toevoegen** gemakkelijk meerdere secties toe te voegen.
+   Onder de herhaalbare sectie, vinden de gebruikers intuïtieve **toevoegen** knoop, die de toevoeging van veelvoudige secties met gemak vergemakkelijkt.
 
-   ![herhaalbare sectie, knop Toevoegen, om meerdere secties toe te voegen ](/help/edge/assets/repeatable-section-example.png)
+   ![ herhaalbare sectie, voegt knoop toe, om veelvoudige secties toe te voegen ](/help/edge/assets/repeatable-section-example.png)
 
 
 ## Minimale en maximale herhalingen instellen
 
 In formulierontwerp is het nuttig minimale en maximale herhalingen voor herhaalbare secties in te stellen. Op deze manier kunt u controle en consistentie instellen en gebruikers effectief begeleiden. Het minimum- of maximumaantal herhalingen instellen:
 
-1. Ga naar uw Edge Deliver-projectmap op de Microsoft SharePoint- of Google Workspace en open uw spreadsheet.
+1. Ga naar uw Edge Deliver-projectmap op Microsoft SharePoint of Google Workspace en open uw spreadsheet.
 
-1. Voor een veld van `type` `fieldset` en `repeatable` eigenschap ingesteld op `true`:
+1. Voor een veld van de eigenschappen `type` `fieldset` en `repeatable` ingesteld op `true` :
 
-   * instellen `min` eigenschap om het minimale aantal keren op te geven dat de sectie kan worden herhaald.
+   * Stel de eigenschap `min` in om het minimale aantal keren op te geven dat de sectie kan worden herhaald.
 
-   * instellen `max` eigenschap om het maximale aantal keren op te geven dat de sectie kan worden herhaald.
+   * Stel de eigenschap `max` in om het maximale aantal keren op te geven dat de sectie kan worden herhaald.
 
-   ![Stel de eigenschap min en max in om op te geven hoe vaak de sectie kan worden herhaald](/help/edge/assets/repeatable-section-set-min-max.png)
+   ![ plaats min en max bezit om het aantal tijden te specificeren de sectie kan worden herhaald ](/help/edge/assets/repeatable-section-set-min-max.png)
 
-1. Gebruiken [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) om een voorvertoning van het blad weer te geven en het te publiceren.
+1. Gebruik [ AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) aan voorproef en publiceer het blad.
 
-   Bij het toevoegen van een herhaalbare sectie, vinden de gebruikers intuïtief **Verwijderen** pictogram, zodat secties die u kunt herhalen, gemakkelijker kunnen worden verwijderd. Als deze secties eenmaal zijn toegevoegd, kunnen ze niet worden verkleind tot minder exemplaren dan opgegeven door de `min` eigenschap. Op die manier wordt voldaan aan de minimumvereisten die voor het invullen van het formulier zijn ingesteld.
+   Bij het toevoegen van een herhaalbare sectie, vinden de gebruikers een intuïtief **pictogram van de Schrapping**, makend het gemakkelijker om herhaalbare secties te verwijderen. Nadat deze secties zijn toegevoegd, kunnen ze niet worden verkleind tot minder instanties dan opgegeven door de eigenschap `min` . Op die manier wordt voldaan aan de minimumvereisten die voor het invullen van het formulier zijn ingesteld.
 
 <!--
 

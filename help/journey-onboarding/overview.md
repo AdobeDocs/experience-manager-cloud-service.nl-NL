@@ -1,5 +1,5 @@
 ---
-title: AEM as a Cloud Service introductie van on-boarding
+title: AEM as a Cloud Service On-boarding Journey Introduction
 description: Begin hier voor een overzicht van de begeleide journey via het onboarding proces naar AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
@@ -19,30 +19,30 @@ Gefeliciteerd met het kiezen van AEM as a Cloud Service! Dit document is het uit
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager is een krachtige suite van composable content services die snel indrukwekkende, persoonlijke ervaringen bieden over elk kanaal, waardoor inhoud voor iedereen wordt ontgrendeld. **Edge Delivery Services** Dit is de nieuwste innovatie in Adobe Experience Manager die de snelheid van de content kan verhogen en uitzonderlijke ervaringen oplevert. Leer hoe u aan de slag kunt met Edge Delivery Services, door te gaan [deze pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Als u wilt weten hoe u Edge Delivery Services gebruikt, raadpleegt u de [Zelfstudie voor ontwikkelaars](https://www.hlx.live/developer/tutorial) pagina.
+Adobe Experience Manager is een krachtige suite van composable content services die snel indrukwekkende, persoonlijke ervaringen bieden over elk kanaal, waardoor inhoud voor iedereen wordt ontgrendeld. **Edge Delivery Services** is de recentste innovatie in Adobe Experience Manager die extreme inhoudssnelheid toelaat en uitzonderlijke ervaringen levert. Leer hoe te beginnen met Edge Delivery Services, door [ deze pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) te bezoeken. Om te begrijpen hoe te om Edge Delivery Services te gebruiken, zie de ](https://www.hlx.live/developer/tutorial) pagina van het Leerprogramma van de 1} Ontwikkelaar.[
 
-Onboarding is het proces waarin een aangewezen systeembeheerder opstelling AEM as a Cloud Service voor uw organisatie. Dit proces omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid zich aanmelden en tot hun middel toegang hebben op AEM as a Cloud Service.
+Onboarding is het proces waarbij een aangewezen systeembeheerder AEM as a Cloud Service voor uw organisatie instelt. Dit proces omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid zich aanmelden en tot hun middel op AEM as a Cloud Service toegang hebben.
 
-![De instapreis](/help/journey-onboarding/assets/onboarding-journey.png)
+![ de reis onboarding ](/help/journey-onboarding/assets/onboarding-journey.png)
 
 Deze gids leidt u door de belangrijkste onboarding onderwerpen zodat wanneer u klaar bent het volgende heeft:
 
 * Volledige kennis van de verschillende voorwaarden, services en gebruikers die bij het instapproces betrokken zijn.
-* Uw team kon aan de slag gaan en de eerste stappen nemen in de richting van het leren hoe te om inhoud voor uw AEM as a Cloud Service toepassing te ontwerpen en te ontwikkelen.
+* Uw team kon aan de slag en de eerste stappen nemen in de richting van het leren om inhoud voor uw AEM as a Cloud Service-toepassing te ontwerpen en te ontwikkelen.
 
 Dientengevolge:
 
 * Uw team is ingesteld en heeft toegang tot cloudbronnen.
 * AEM auteurs hebben toegang tot AEM as a Cloud Service en kunnen beginnen met het maken van inhoud.
-* AEM ontwikkelaars en plaatsingsmanagers hebben toegang tot AEM as a Cloud Service en kunnen beginnen creërend en plaatsend douanetoepassingen.
+* AEM ontwikkelaars en implementatiemanagers hebben toegang tot AEM as a Cloud Service en kunnen aangepaste toepassingen gaan maken en implementeren.
 
 ## Concepten en doelstellingen {#concepts}
 
-Hoewel er veel te leren kan zijn wanneer begonnen met AEM as a Cloud Service, conceptueel zijn er slechts een paar, logische stukken.
+Hoewel er wellicht veel te leren valt wanneer men met AEM as a Cloud Service aan de slag gaat, zijn er conceptueel slechts een paar logische stukken.
 
-* **Het contract** - U moet bekend zijn met uw contract voor Adobe, aangezien hierin aspecten van het instapproces worden gedefinieerd.
-* **Admin Console** - Waar gebruikers worden beheerd en rollen worden toegewezen.
-* **Cloud Manager** - Het hulpmiddel om middelen zoals programma&#39;s en milieu&#39;s op te zetten. Het is ook waar u toegang hebt tot it en pijpleidingen creeert om uw douanecode te beheren en op te stellen.
+* **het Contract** - u moet met uw Adobe contract vertrouwd zijn aangezien het aspecten van het onboarding proces bepaalt.
+* **Admin Console** - waar de gebruikers worden geleid en de rollen worden toegewezen.
+* **Cloud Manager** - het hulpmiddel aan opstellingsmiddelen zoals programma&#39;s en milieu&#39;s. Het is ook waar u toegang hebt tot it en pijpleidingen creeert om uw douanecode te beheren en op te stellen.
 
 Deze begrippen worden in detail uiteengezet in deze instapreis. Het doel is dat je aan het einde van de reis:
 
@@ -50,11 +50,11 @@ Deze begrippen worden in detail uiteengezet in deze instapreis. Het doel is dat 
 * De eerste cloudbronnen voor uw project hebben ingesteld.
 * Weet hoe u uw eerste code kunt implementeren en uw eerste inhoud kunt ontwerpen.
 
-In feite heb je de grond bereikt met je nieuwe AEM as a Cloud Service project.
+In feite heb je de grond op de grond gelopen met je nieuwe AEM as a Cloud Service-project!
 
 ## Publiek {#audience}
 
-De instapreis wordt specifiek geschreven voor de **systeembeheerder** van de nieuwe klant om as a Cloud Service en AEM in het algemeen te AEM. De systeembeheerder is het individu dat eerst door Adobe wordt gecontacteerd nadat uw AEM as a Cloud Service contract wordt ondertekend. Zij zijn typisch de eerste persoon aan toegang en opstelling uw middelen op AEM as a Cloud Service. Als u dit onderwerp leest, is het waarschijnlijk dat u de systeembeheerder bent.
+De onboarding reis wordt geschreven specifiek voor de **systeembeheerder** van klant nieuw aan AEM as a Cloud Service en aan AEM in het algemeen. De systeembeheerder is de persoon met wie de Adobe eerst contact opneemt nadat uw AEM as a Cloud Service-contract is ondertekend. Meestal zijn ze de eerste die toegang krijgt tot en middelen instelt op AEM as a Cloud Service. Als u dit onderwerp leest, is het waarschijnlijk dat u de systeembeheerder bent.
 
 De systeembeheerder beheert alle aspecten van de gebruikers AEMaaCS van hun organisatie, van toegang tot toestemmingen. Nochtans moet de systeembeheerder met andere persona&#39;s in wisselwerking staan langs de weg.
 
@@ -69,40 +69,40 @@ Deze instapkaartgids illustreert het volledige proces van instapweigering als sy
 
 >[!TIP]
 >
->Als u as a Cloud Service bent om te AEM en vertrouwd met AEM bent en van op-gebouw of Adobe Managed Services migreert, ben zeker om uit te checken [AEM as a Cloud Service migratiereis](/help/journey-migration/getting-started.md).
+>Als u aan AEM as a Cloud Service en vertrouwd met AEM bent en van op-gebouw of Adobe Managed Services migreert, ben zeker om de [ Reis van de Migratie van AEM as a Cloud Service ](/help/journey-migration/getting-started.md) te controleren.
 
 ## Reisoverzicht aan boord {#overview}
 
-De volgende artikelen beschrijven in detail de kernconcepten op het instapniveau en geven u fundamentele kennis van AEM as a Cloud Service. Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom, als u nieuw aan het instappen bent, adviseert de Adobe dat u bij het begin begint en opeenvolgend vordert.
+De volgende artikelen beschrijven in detail de kernconcepten voor instapweigering en geven u grondkennis van AEM as a Cloud Service. Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom, als u nieuw aan het instappen bent, adviseert de Adobe dat u bij het begin begint en opeenvolgend vordert.
 
 | Aantal | Artikel | Beschrijving | Publiek |
 |---|---|---|---|
 | 0 | Onboarding Journaal | Dit document | Systeembeheerder |
-| 1 | [Voorbereiding aan boord](preparation.md) | Alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren. | Systeembeheerder |
-| 2 | [as a Cloud Service terminologie AEM](terminology.md) | Voordat u zich voor het eerst aanmeldt bij AEMaaCS, is het nuttig om enkele terminologie van het systeem en de basisstructuur te begrijpen. | Systeembeheerder |
-| 3 | [De Admin Console](admin-console.md) | Leer wat de Admin Console is, hoe te login, en hoe te om uw profiel als systeembeheerder te verifiëren. | Systeembeheerder |
-| 4 | [Productprofielen voor Cloud Manager toewijzen](assign-profiles-cloud-manager.md) | Bekijk de productprofielen van Cloud Manager en leer hoe u teamleden toewijst aan productprofielen van Cloud Manager. | Systeembeheerder |
-| 5 | [Cloud Manager openen](cloud-manager.md) | Leer hoe u toegang krijgt tot Cloud Manager zodat u uw projectbronnen kunt instellen. | Systeembeheerder |
-| 6 | [Een programma maken](create-program.md) | Leer hoe u een programma maakt met Cloud Manager. | Systeembeheerder |
-| 7 | [Omgevingen maken](create-environments.md) | Leer hoe u een omgeving kunt maken met Cloud Manager. | Systeembeheerder |
-| 8 | [AEM productprofielen toewijzen](assign-profiles-aem.md) | Leer hoe de Beheerder van het Systeem uw teamleden aan productprofielen in AEM as a Cloud Service toewijst. | Systeembeheerder |
-| 9 | [Taken van ontwikkelaar- en implementatiebeheer](developers.md) | Optioneel - Leer als ontwikkelaar hoe u toegang krijgt tot de Cloud Manager Git en hoe u als implementatiebeheerder pijpleidingen kunt instellen en code kunt implementeren in Cloud Manager. | Ontwikkelaars en implementatiemanagers |
-| 10 | [AEM](aem-users.md) | Optioneel - Leer als AEM auteur hoe u toegang kunt krijgen tot AEM as a Cloud Service instantie en hoe u vertrouwd bent met het ontwerpen van inhoud voor AEM as a Cloud Service. | AEM |
+| 1 | [ on boarding Preparation ](preparation.md) | Alvorens het aan boord gaan proces begint, zijn er een aantal of voorbereidende stappen die de systeembeheerder moet begrijpen alvorens in het systeem te registreren. | Systeembeheerder |
+| 2 | [ Terminologie van AEM as a Cloud Service ](terminology.md) | Voordat u zich voor het eerst aanmeldt bij AEMaaCS, is het nuttig om enkele terminologie van het systeem en de basisstructuur te begrijpen. | Systeembeheerder |
+| 3 | [ de Admin Console ](admin-console.md) | Leer wat de Admin Console is, hoe te login, en hoe te om uw profiel als systeembeheerder te verifiëren. | Systeembeheerder |
+| 4 | [ Toewijzend de Profielen van het Product van Cloud Manager ](assign-profiles-cloud-manager.md) | Bekijk Cloud Manager-productprofielen en leer hoe u teamleden kunt toewijzen aan Cloud Manager-productprofielen. | Systeembeheerder |
+| 5 | [ Toegang Cloud Manager ](cloud-manager.md) | Leer hoe u toegang krijgt tot Cloud Manager zodat u uw projectbronnen kunt instellen. | Systeembeheerder |
+| 6 | [ creeer een Programma ](create-program.md) | Leer hoe u een programma maakt met Cloud Manager. | Systeembeheerder |
+| 7 | [ creeer milieu&#39;s ](create-environments.md) | Leer hoe u een omgeving kunt maken met Cloud Manager. | Systeembeheerder |
+| 8 | [ Toewijzend AEM Profielen van het Product ](assign-profiles-aem.md) | Leer hoe de Beheerder van het Systeem uw teamleden aan productprofielen in AEM as a Cloud Service toewijst. | Systeembeheerder |
+| 9 | [ Taken van de Manager van de Ontwikkelaar en van de Plaatsing ](developers.md) | Optioneel - Leer als ontwikkelaar hoe u toegang krijgt tot Cloud Manager Git en hoe u als implementatiebeheerder pijpleidingen kunt instellen en code kunt implementeren in Cloud Manager. | Ontwikkelaars en implementatiemanagers |
+| 10 | [ AEM de Taken van de Gebruiker ](aem-users.md) | Optioneel - Leer als AEM auteur hoe u toegang krijgt tot een AEM as a Cloud Service-exemplaar en hoe u vertrouwd bent met de ontwerpinhoud voor AEM as a Cloud Service. | AEM |
 
 ## Volgende functies {#what-is-next}
 
-U bent nu klaar om uw AEM as a Cloud Service instapreis te beginnen. U wordt aangemoedigd om door te gaan naar het volgende deel van de reis en het artikel te lezen [Voorbereiding aan boord](preparation.md)
+Je bent nu klaar om je AEM as a Cloud Service-instapreis te starten. U wordt aangemoedigd om aan het volgende deel van de reis verder te gaan en het artikel [ te lezen Onboarding Preparation ](preparation.md)
 
 ## AEM Documentenreizen {#documentation-journeys}
 
-[Een documentatiereis](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende, gecompliceerde onderwerpen en eigenschappen samen. Het verstrekt een verhaal dat een lezer nieuw helpt om een bedrijfsprobleem van begin tot eind te AEM begrijpen en op te lossen, terwijl het veronderstellen van minimaal voorafgaand onderwerp of AEM kennis.
+[ de Reis van de Documentatie van A ](/help/journey-documentation/documentation-journeys.md) verbindt vele verschillende, gecompliceerde onderwerpen en eigenschappen. Het verstrekt een verhaal dat een lezer nieuw helpt om een bedrijfsprobleem van begin tot eind te AEM begrijpen en op te lossen, terwijl het veronderstellen van minimaal voorafgaand onderwerp of AEM kennis.
 
 Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als u wilt weten welke Adobe u adviseert om uw team op uw nieuwe AEM as a Cloud Service toepassing in te laten gaan, begin hier!
+Als u wilt weten welke Adobe u adviseert om uw team op uw nieuwe toepassing van AEM as a Cloud Service te laten inloggen, begin hier!
 
 ## Aanvullende bronnen {#additional-resources}
 
 Hieronder volgen aanvullende, optionele bronnen als u verder wilt gaan dan de inhoud van de instapreis.
 
-* [Aan boord gaan naar AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - In deze korte video wordt een overzicht gegeven van het proces voor het aan boord nemen van Cloud Servicen voor AEM.
+* [ Op het instappen aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - Deze korte video geeft een overzicht van de Cloud Service op het instappen proces voor AEM.

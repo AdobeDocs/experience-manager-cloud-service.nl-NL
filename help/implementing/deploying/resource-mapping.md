@@ -20,10 +20,10 @@ De afbeelding van het middel wordt gebruikt om omleidingen, ijdelheid URLs, en v
 
 U kunt bijvoorbeeld de volgende toewijzingen gebruiken:
 
-* Alle aanvragen vooraf bevestigen met `/content` zodat de interne structuur verborgen is voor de bezoekers van uw website.
-* Definieer een omleiding, zodat alle verzoeken aan de `/content/en/gateway` pagina van uw website wordt omgeleid naar `https://gbiv.com/`.
+* Plaats een voorvoegsel voor alle aanvragen bij `/content` , zodat de interne structuur verborgen is voor de bezoekers van uw website.
+* Definieer een omleiding zodat alle aanvragen naar de pagina `/content/en/gateway` van uw website worden omgeleid naar `https://gbiv.com/` .
 
-Eén mogelijke HTTP-toewijzing vooraf bepaalt alle aanvragen aan `localhost:4503` with `/content`. Een dergelijke afbeelding kan worden gebruikt om de interne structuur te verbergen voor bezoekers van de website, voor zover dat mogelijk is:
+Een mogelijke HTTP-toewijzing vooraf bepaalt alle aanvragen aan `localhost:4503` met `/content` . Een dergelijke afbeelding kan worden gebruikt om de interne structuur te verbergen voor bezoekers van de website, voor zover dat mogelijk is:
 
 `localhost:4503/content/we-retail/en/products.html`
 
@@ -31,7 +31,7 @@ Te benaderen via:
 
 `localhost:4503/we-retail/en/products.html`
 
-Als de toewijzing automatisch het voorvoegsel toevoegt `/content` tot `/we-retail/en/products.html`.
+Als de toewijzing het voorvoegsel `/content` automatisch aan `/we-retail/en/products.html` toevoegt.
 
 >[!CAUTION]
 >
@@ -39,27 +39,29 @@ Als de toewijzing automatisch het voorvoegsel toevoegt `/content` tot `/we-retai
 
 >[!NOTE]
 >
->Zie de documentatie over verkopers, en [Toewijzingen voor resolutie van bronnen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) en [Bronnen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) voor nadere informatie.
+>Zie de het Verdelen documentatie, en [ Toewijzingen voor de Resolutie van het Middel ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) en [ Middelen ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) voor verdere informatie.
 
 ## Definities voor weergavetoewijzing {#viewing-mapping-definitions}
 
 De toewijzingen uit twee lijsten die de Resolver van het Middel JCR (top-down) evalueert om een gelijke te vinden.
 
-Deze lijsten kunnen (samen met configuratiegegevens) onder de **JCR ResourceResolver** optie van de Felix-console, bijvoorbeeld `https://<*host*>:<*port*>/system/console/jcrresolver`:
+Deze lijsten kunnen (samen met configuratieinformatie) onder **JCR ResourceResolver** optie van de console van de Felix worden bekeken; bijvoorbeeld, `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
-* De configuratie toont de huidige configuratie (zoals die voor [Resolver Apache Sling-resource](/help/overview/seo-and-url-management.md#etc-map)).
+* Configuratie
+Toont de huidige configuratie (zoals die voor [ Apache het Verdelen Resolver van het Middel ](/help/overview/seo-and-url-management.md#etc-map) wordt bepaald).
 
-* De Test van de configuratie dit laat u een URL of middelweg ingaan. Klikken **Oplossen** of **Kaart** om te bevestigen hoe het systeem de ingang transformeert.
+* Configuratietest
+Hiermee kunt u een URL of een bronpad invoeren. Klik **oplossen** of **Kaart** om te bevestigen hoe het systeem de ingang transformeert.
 
-* **Resolver Map-items**
+* **Ingangen van de Kaart van de Resolver**
 De lijst van ingangen die door de methodes ResourceResolver.resolve worden gebruikt om URLs aan Middelen in kaart te brengen.
 
-* **Toewijzingskaartitems**
+* **de Berichten van de Kaart van de Toewijzing**
 De lijst van ingangen die door de methodes ResourceResolver.map worden gebruikt om de Wegen van het Middel aan URLs in kaart te brengen.
 
 De twee lijsten tonen verschillende ingangen, met inbegrip van die ingangen die als gebreken door de toepassingen worden bepaald. Deze ingangen zijn vaak bedoeld om URLs voor de gebruiker te vereenvoudigen.
 
-De lijsten vormen een paar **Patroon**, een reguliere expressie die overeenkomt met de aanvraag, met een **Vervanging** Hiermee definieert u de omleiding die moet worden toegepast.
+Het lijstpaar a **Patroon**, een regelmatige uitdrukking die aan het verzoek wordt aangepast, met a **Vervanging** die de op te leggen herleiding bepaalt.
 
 Bijvoorbeeld:
 
@@ -81,7 +83,7 @@ Er worden nieuwe toewijzingsdefinities gemaakt in de repository.
 
 >[!NOTE]
 >
->Er zijn vele beschikbare middelen die helpen verklaren hoe te om regelmatige uitdrukkingen te bepalen. Bijvoorbeeld: [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Er zijn vele beschikbare middelen die helpen verklaren hoe te om regelmatige uitdrukkingen te bepalen. Bijvoorbeeld, [ https://www.regular-expressions.info/ ](https://www.regular-expressions.info/).
 
 ### Toewijzingsdefinities maken in AEM {#creating-mapping-definitions-in-aem}
 
@@ -89,13 +91,13 @@ In een standaardinstallatie van AEM kunt u de map vinden:
 
 `/etc/map/http`
 
-Deze map is de structuur die wordt gebruikt bij het definiëren van toewijzingen voor het HTTP-protocol. Overige mappen ( `sling:Folder`) kan worden gemaakt onder `/etc/map` voor andere protocollen die u in kaart wilt brengen.
+Deze map is de structuur die wordt gebruikt bij het definiëren van toewijzingen voor het HTTP-protocol. Andere mappen ( `sling:Folder`) kunnen onder `/etc/map` worden gemaakt voor alle andere protocollen die u wilt toewijzen.
 
 #### Het vormen van Intern Redirect aan /content {#configuring-an-internal-redirect-to-content}
 
-Om de afbeelding tot stand te brengen die om het even welk verzoek aan https://localhost:4503/ met prefixen `/content`:
+U kunt als volgt de toewijzing maken die een eventuele aanvraag vooraf instelt op https://localhost:4503/ met `/content` :
 
-1. Met CRXDE navigeert u naar `/etc/map/http`.
+1. Als u CRXDE gebruikt, gaat u naar `/etc/map/http` .
 
 1. Een knooppunt maken:
 
@@ -104,8 +106,8 @@ Dit knooppunttype is bedoeld voor dergelijke afbeeldingen, hoewel het gebruik er
 
    * **Naam** `localhost_any`
 
-1. Klikken **Alles opslaan**.
-1. **Toevoegen** de volgende eigenschappen voor dit knooppunt:
+1. Klik **sparen allen**.
+1. **voeg** de volgende eigenschappen aan deze knoop toe:
 
    * **Naam** `sling:match`
 
@@ -119,7 +121,7 @@ Dit knooppunttype is bedoeld voor dergelijke afbeeldingen, hoewel het gebruik er
 
       * **Waarde** `/content/`
 
-1. Klikken **Alles opslaan**.
+1. Klik **sparen allen**.
 
 Deze afbeelding behandelt een verzoek zoals:
 `localhost:4503/geometrixx/en/products.html`
@@ -129,9 +131,9 @@ is aangevraagd.
 
 >[!NOTE]
 >
->Zie [Bronnen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) in de Verschuivende Documentatie voor verdere informatie over de beschikbare hellingseigenschappen en hoe zij kunnen worden gevormd.
->Bijvoorbeeld: [Tekenreeksinterpolatie](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) is nuttig omdat het u een afbeelding laat vormen die per milieuwaarden door omgevingsvariabelen krijgt.
+>Zie [ Middelen ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) in de het Verdelen Documentatie voor verdere informatie over de beschikbare hellingseigenschappen en hoe zij kunnen worden gevormd.
+>Bijvoorbeeld, [ Interpolatie van het Koord ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) is nuttig omdat het u een afbeelding laat vormen die per milieuwaarden door omgevingsvariabelen krijgt.
 
 >[!NOTE]
 >
->U kunt `/etc/map.publish` om de configuraties voor het publicatiemilieu te houden. Deze configuraties moeten worden gerepliceerd en de nieuwe locatie ( `/etc/map.publish`) geconfigureerd voor de **Toewijzingslocatie** van de [Resolver Apache Sling-resource](/help/overview/seo-and-url-management.md#etc-map) van de publicatieomgeving.
+>U kunt `/etc/map.publish` gebruiken om de configuraties voor de publicatieomgeving te houden. Deze configuraties moeten worden herhaald, en de nieuwe plaats ( `/etc/map.publish`) die voor de **Plaats van de Afbeelding** van de [ Apache het Verdelen Resolver van het Middel ](/help/overview/seo-and-url-management.md#etc-map) van het publicatiemilieu wordt gevormd.

@@ -1,23 +1,23 @@
 ---
-title: Opmerkingen bij de as a Cloud Service release van AEM Forms
-description: Meer informatie over nieuwe functies, bètareleases, pre-release informatie en meer voor AEM Forms as a Cloud Service.
+title: AEM Forms as a Cloud Service release notes
+description: Meer informatie over nieuwe functies, bètareleases, pre-releasegegevens en meer voor AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 2%
+source-wordcount: '2003'
+ht-degree: 1%
 
 ---
 
 
-# [!DNL Experience Manager Forms] as a Cloud Service releaseopmerking {#overview}
+# [!DNL Experience Manager Forms] Opmerking bij as a Cloud Service release {#overview}
 
 Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service ontvangt voortdurend verbeteringen. Bezoek deze pagina regelmatig om op de hoogte te blijven van de meest recente ontwikkelingen. Op deze pagina vindt u informatie over:
 
 - Nieuwe functies
 - Verbeteringen
 - Functies vóór de release
-- Bètafuncties
+- Beta-functies
 - Bugfixes
 - Afgekeurde functionaliteit
 - Speciale instructies
@@ -25,45 +25,45 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service ontvangt voortduren
 
 >[!NOTE]
 >
->Voor versienota&#39;s van alle andere AEM as a Cloud Service versiecomponenten, zie [Opmerkingen bij de huidige release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>Voor versienota&#39;s van alle andere de versiecomponenten van AEM as a Cloud Service, zie [ Huidige Nota&#39;s van de Versie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
-## 2021.10.0 {#sep-2021-10-0}
+## 2021 10,0 {#sep-2021-10-0}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-- **Analyses voor Adaptive Forms**: U kunt nu het gedrag vastleggen en bijhouden van zowel aangemelde als niet-aangemelde (anonieme) bewerkingen via Adobe Analytics for Adaptive Forms om gebruikersinzichten te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+- **Analytics voor Aanpassings Forms**: U kunt gedrag van zowel het programma geopende als niet het programma geopende (Anoniem) registreren nu vangen en volgen via Adobe Analytics voor Aanpassings Forms om gebruikersinzichten te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms-oct-2021}
+### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#prerelease-features-forms-oct-2021}
 
-- **Externe AEM workflowgegevens voor veilige verwerking**: U kunt in-process AEM Workflows gegevens (AEM gegevens van de Variabelen van het Werkschema) opslaan die de gevoelige elementen van Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
+- **externaliseer AEM gegevens van het Werkschema voor veilige verwerking**: U kunt in-proces AEM gegevens van de Werkschema&#39;s (AEM gegevens van de Variabelen van het Werkschema) opslaan die Gevoelige Persoonlijke Gegevens (SPD) elementen in een klant-beheerde bewaarplaats voor veilige verwerking bevatten. De gegevenselementen en workflowvariabelen worden niet opgeslagen in AEM opslagplaats en worden op verzoek opgehaald van een door de klant beheerde opslagplaats tijdens de verwerking van de Workflow.
 
-### Bètafuncties van [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
+### Beta-functies van [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](aem-forms-cloud-service-communications.md) Hiermee kunt u een sjabloon en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](aem-forms-cloud-service-communications.md) hulp u een malplaatje en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten genereren in synchrone modus en in batchmodus. Met de API&#39;s kunt u toepassingen maken waarmee u:
 
    - Genereer documenten door sjabloonbestanden (PDF en XDP) te vullen met XML-gegevens.
    - Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
 
 U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
 
-## 2021.9.0 {#sep-2021-09-0}
+## 2021,9,0 {#sep-2021-09-0}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-- **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu [elke ontvanger van de overeenkomst de mogelijkheid bieden zijn rol in een adaptief formulier te configureren](working-with-adobe-sign.md#addsignerstoanadaptiveform), waarbij Ondertekenaar de standaardrol is.
+- **de rollen van Adobe Sign van het Gebruik in een Aangepaste Vorm**: Adobe Sign voor zaken en ondernemingsde dienstniveaus hebben de optie om de rollen voor de ontvangers van de Overeenkomst, voorbij enkel de Ondertekenaar, uit te breiden om hun werkschemavereisten beter aan te passen. U kunt [ elke ontvanger van overeenkomst nu toelaten om hun rol in een Aangepaste Vorm ](working-with-adobe-sign.md#addsignerstoanadaptiveform) te vormen, met Ondertekenaar die de standaardrol is.
 
-- **Analyses voor Adaptive Forms**: U kunt nu vastleggen en [gebruikersgedrag via Adobe Analytics volgen](integrate-aem-forms-with-adobe-analytics.md) voor Adaptive Forms om inzichten van gebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+- **Analytics voor Aanpassings Forms**: U kunt nu vangen en [ gebruikersgedrag als Adobe Analytics ](integrate-aem-forms-with-adobe-analytics.md) voor Aanpassings Forms volgen om gebruikersinzichten te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-- **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce**: De dienst verstrekt uit de doos configuratie van de gegevensbron en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ontwikkelaars kunnen Microsoft Dynamics en Salesforce sneller en eenvoudiger configureren als gegevensbronnen voor een adaptief formulier](configure-msdynamics-salesforce.md).
+- **verbindt gemakkelijk AEM Forms met de Dynamica en Salesforce van Microsoft**: De dienst verstrekt uit de configuratie van de doosgegevensbron en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ sneller en gemakkelijker voor ontwikkelaars om de Dynamiek en Salesforce van Microsoft als gegevensbronnen voor een adaptieve vorm ](configure-msdynamics-salesforce.md) te vormen.
 
-- **Een adaptief formulier elektronisch ondertekenen met DocuSign:** [Met DocuSign kunt u een adaptief formulier elektronisch ondertekenen](integrate-docusign-adaptive-forms.md). De service biedt een aangepaste verzendactie om DocuSign te gebruiken met een adaptief formulier.
+- **e-Onderteken een adaptieve vorm gebruikend DocuSign:** [ u kunt DocuSign gebruiken om een adaptieve vorm ](integrate-docusign-adaptive-forms.md) elektronisch te ondertekenen. De service biedt een aangepaste verzendactie om DocuSign te gebruiken met een adaptief formulier.
 
-### Bètafuncties van [!DNL Forms] {#sep-what-is-new-forms-prerelease}
+### Beta-functies van [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-- **Unified Storage-connector:** Gebruik Unified Storage Connector om procesgegevens in door de klant beheerde opslagruimten extern te maken. Bijvoorbeeld, kunt u in-proces AEM de gegevens van Werkstromen (AEM gegevens van de Variabelen van het Werkschema) opslaan die Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats bevatten.
+- **Verenigde Schakelaar van de Opslag:** Gebruik Verenigde Schakelaar van de Opslag om in-procesgegevens in klant-beheerde bewaarplaatsen uit te voeren. Bijvoorbeeld, kunt u in-proces AEM de gegevens van Werkstromen (AEM gegevens van de Variabelen van het Werkschema) opslaan die Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats bevatten.
   <!--* Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](aem-forms-cloud-service-communications.md) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](aem-forms-cloud-service-communications.md) hulp u XDP malplaatjes en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    - Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    - Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    - Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
@@ -94,63 +94,63 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
 
   -->
 
-## 2021.8.0 {#aug-2021-08-0}
+## 2021,8,0 {#aug-2021-08-0}
 
 ### Nieuwe functies in [!DNL Forms] {#what-is-new-forms-aug-2021}
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-- AEM Archetype-project voor Forms as a Cloud Service omvat nu [modellen met formuliergegevens voor Microsoft Dynamics en Salesforce](setup-local-development-environment.md).
+- AEM project Archetype voor Forms as a Cloud Service omvat [ modellen van vormgegevens voor de Dynamiek van Microsoft en Salesforce ](setup-local-development-environment.md).
 
-- **Op acroform gebaseerd document of record**: as a Cloud Service AEM Forms-ondersteuning voor [Adobe Acrobat Form PDF (Acroform PDF)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) als een sjabloon voor Document of Record naast XFA-formuliersjabloon.
+- **op acroform-Gebaseerd Document van Verslag**: De as a Cloud Service steunen van AEM Forms die [ de Vorm van Adobe Acrobat PDF (Acroform PDF) gebruiken ](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje.
 
-- **Microsoft Azure Data Store-connector**: U kunt nu [Formuliergegevensmodel verbinden met Microsoft Azure Storage](configure-azure-storage.md). Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft Azure Storage als een BLOB.
+- **Microsoft Azure schakelaar van de gegevensopslag**: U kunt [ het Model van de Gegevens van de Vorm aan Microsoft Azure Opslag ](configure-azure-storage.md) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft Azure Storage als een BLOB.
 
 ### Beta-functie van [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
-- **Unified Storage-connector:** Gebruik Unified Storage Connector om procesgegevens in door de klant beheerde opslagruimten extern te maken. U kunt bijvoorbeeld
+- **Verenigde Schakelaar van de Opslag:** Gebruik Verenigde Schakelaar van de Opslag om in-procesgegevens in klant-beheerde bewaarplaatsen uit te voeren. U kunt bijvoorbeeld
 
    - Schakel de functie Opslaan en hervatten van Forms Portal in en sla adaptieve formulierconcepten op in een gegevensopslagruimte onder beheer van de klant.
    - Sla AEM werkstroomgegevens (AEM gegevens van de Variabelen van het Werkschema) op die Gevoelige Persoonlijke Gegevens (SPD) in een klant-beheerde bewaarplaats bevatten.
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](aem-forms-cloud-service-communications.md) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](aem-forms-cloud-service-communications.md) hulp u XDP malplaatjes en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    - Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    - Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    - Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
 
 U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
 
-### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#prerelease-features-forms-aug-2021}
+### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#prerelease-features-forms-aug-2021}
 
-- **Adobe Sign-rollen gebruiken in een adaptief formulier**: Adobe Sign for business and enterprise service levels hebben de mogelijkheid om de rollen voor overeenkomstontvangers uit te breiden, tot buiten alleen de ondertekenaar, zodat ze beter kunnen voldoen aan hun workflowvereisten. U kunt nu [elke ontvanger van de overeenkomst de mogelijkheid bieden zijn rol in een adaptief formulier te configureren](working-with-adobe-sign.md#addsignerstoanadaptiveform), waarbij Ondertekenaar de standaardrol is.
+- **de rollen van Adobe Sign van het Gebruik in een Aangepaste Vorm**: Adobe Sign voor zaken en ondernemingsde dienstniveaus hebben de optie om de rollen voor de ontvangers van de Overeenkomst, voorbij enkel de Ondertekenaar, uit te breiden om hun werkschemavereisten beter aan te passen. U kunt [ elke ontvanger van overeenkomst nu toelaten om hun rol in een Aangepaste Vorm ](working-with-adobe-sign.md#addsignerstoanadaptiveform) te vormen, met Ondertekenaar die de standaardrol is.
 
-- **Analyses voor Adaptive Forms**: U kunt nu gebruikersgedrag vastleggen en bijhouden via Adobe Analytics for Adaptive Forms om inzichten van gebruikers te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
+- **Analytics voor Aanpassings Forms**: U kunt gebruikersgedrag nu vangen en volgen als Adobe Analytics voor Aanpassings Forms om gebruikersinzichten te verzamelen. Het helpt geïnformeerde beslissingen te nemen op basis van gegevens om de gebruikerservaring te verbeteren.
 
-- **Verbind AEM Forms eenvoudig met Microsoft Dynamics en Salesforce**: De dienst verstrekt uit de doos configuratie van de gegevensbron en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ontwikkelaars kunnen Microsoft Dynamics en Salesforce sneller en eenvoudiger configureren als gegevensbronnen voor een adaptief formulier](configure-msdynamics-salesforce.md).
+- **verbindt gemakkelijk AEM Forms met de Dynamica en Salesforce van Microsoft**: De dienst verstrekt uit de configuratie van de doosgegevensbron en gegevensmodellen voor de Dynamica en Salesforce van Microsoft, makend het [ sneller en gemakkelijker voor ontwikkelaars om de Dynamiek en Salesforce van Microsoft als gegevensbronnen voor een adaptieve vorm ](configure-msdynamics-salesforce.md) te vormen.
 
-## 2021.7.0 {#july-2021-07-0}
+## 2021,7,0 {#july-2021-07-0}
 
 ### Nieuwe functies in [!DNL Forms] {#july-what-is-new-forms}
 
-- U kunt nu de service Automatede form conversion gebruiken voor [PDF forms converteren in het Frans, Duits en Spaans](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) aan adaptieve formulieren.
+- U kunt de dienst van de Automatede form conversion nu gebruiken om [ PDF forms in het Frans, Duits, en Spaans taal ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in aanpassingsvormen om te zetten.
 - Er is een apart deelvenster toegevoegd aan de sjablooneditor om fouten weer te geven die betrekking hebben op adaptieve formuliercomponenten. Hiermee kunt u alle adaptieve formulierfouten op één locatie consolideren en de resolutietijd verminderen.
 
-### Nieuwe functies beschikbaar in [!DNL Forms] prerelease-kanaal {#july-prerelease-features-forms}
+### Nieuwe functies beschikbaar in [!DNL Forms] prereleasekanaal {#july-prerelease-features-forms}
 
-- **Op acroform gebaseerd document of record**: U kunt ook [Adobe Acrobat Form PDF gebruiken (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als een sjabloon voor Document of Record naast XFA-formuliersjabloon.
+- **op acroform-Gebaseerd Document van Verslag**: U kunt ook [ de Vorm van Adobe Acrobat PDF (Acroform PDF) ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) als malplaatje voor Document van Verslag naast op XFA-Gebaseerd vormmalplaatje gebruiken.
 
-- **Microsoft Azure Data Store-connector**: U kunt nu [Formuliergegevensmodel verbinden met Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft Azure Storage als een BLOB.
+- **Microsoft Azure schakelaar van de gegevensopslag**: U kunt [ het Model van de Gegevens van de Vorm aan Microsoft Azure Opslag ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html) nu verbinden. Hiermee kunt u adaptieve formuliergegevens ophalen en opslaan naar Microsoft Azure Storage als een BLOB.
 
-- **Variabele-gegevensexternalizer**: U kunt gegevens van AEM workflowvariabelen opslaan op een extern opslagsysteem dat wordt beheerd door uw organisatie.
+- **Variabele die Extern van Gegevens**: U kunt gegevens van AEM variabelen van het Werkschema op een extern opslagsysteem bewaren door uw organisatie wordt geleid.
 
 ### Beta-functie van [!DNL Forms] {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communicatie-API&#39;s](aem-forms-cloud-service-communications.md) Hiermee kunt u XDP-sjablonen en XML-gegevens combineren om afdrukdocumenten in verschillende indelingen te genereren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [ Communicatie APIs ](aem-forms-cloud-service-communications.md) hulp u XDP malplaatjes en de gegevens van XML combineert om drukdocumenten in diverse formaten te produceren. Met de service kunt u documenten in synchrone modus genereren. Met de API&#39;s kunt u toepassingen maken waarmee u:
    - Genereer documenten door sjabloonbestanden te vullen met XML-gegevens.
    - Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    - Afdruk-PDF-bestanden genereren op basis van een XFA-formulier met PDF en Adobe Acrobat-formulier.
 
-## 2021.6.0 {#july-2021-06-0}
+## 2021,6,0 {#july-2021-06-0}
 
 ### Nieuwe functies in [!DNL Forms] {#june-what-is-new-forms}
 
@@ -167,23 +167,23 @@ U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het b
    - Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-afdrukstromen.
    - Afdruk-PDF genereren op basis van een XFA-formulier PDF en een Adobe Acrobat-formulier (AcroForm).
 
-- **Variabele-gegevensexternalizer**: U kunt gegevens van AEM workflowvariabelen opslaan op een extern opslagsysteem dat wordt beheerd door uw organisatie.
+- **Variabele die Extern van Gegevens**: U kunt gegevens van AEM variabelen van het Werkschema op een extern opslagsysteem bewaren door uw organisatie wordt geleid.
 
 U kunt schrijven naar [!DNL formscsbeta@adobe.com] om u aan te melden voor het bètaprogramma.
 
-### Buizen vastgesteld in [!DNL Forms] {#june-forms-bugs-fixed}
+### Buizen gecorrigeerd in [!DNL Forms] {#june-forms-bugs-fixed}
 
 - Wanneer een veld wordt gevalideerd voordat gegevens via FDM (Form Data Model) naar de service Backend worden verzonden, slagen validaties erin, maar wordt postvalidatie niet aangeroepen door de service Form Data Model.
 - Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 byte ontvangen. Apple iOS 15.1 biedt een oplossing voor het probleem.
 
-## 2021.5.0 {#may-2021-05-0}
+## 2021,5,0 {#may-2021-05-0}
 
-## [!DNL Adobe Experience Manager Forms] als [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies in [!DNL Forms] {#may-what-is-new-forms}
 
-- **Contextafhankelijke Help**: Er is contextafhankelijke Help toegevoegd voor een aangepaste formuliereditor, sjablooneditor en themaeditor om auteurs te helpen verschillende functies van editors beter te begrijpen.
-- **Foutberichten in de browser Eigenschappen**: Foutberichten toegevoegd voor elke eigenschap in de browser Adaptive Forms Properties. Met deze berichten kunt u de toegestane waarden voor een veld beter begrijpen.
+- **Contextafhankelijke hulp**: Toegevoegde contextafhankelijke hulp voor adaptieve vormenredacteur, malplaatjeredacteur, en themaredacteur om auteurs te helpen diverse eigenschappen van redacteurs beter begrijpen.
+- **de berichten van de Fout in browser van Eigenschappen**: Toegevoegde foutenmeldingen voor elk bezit in Adaptieve browser van Eigenschappen van Forms. Met deze berichten kunt u de toegestane waarden voor een veld beter begrijpen.
 
 ### De aanstaande bètafunctie van [!DNL Forms] {#may-what-is-new-forms-prerelease}
 
@@ -195,38 +195,38 @@ Uitvoer als cloudservice: de uitvoerservice helpt u bij het combineren van XDP-s
 
 U kunt schrijven naar formscsbeta@adobe.com om u aan te melden voor het bètaprogramma.
 
-### Buizen vastgesteld in [!DNL Forms] {#may-forms-bugs-fixed}
+### Buizen gecorrigeerd in [!DNL Forms] {#may-forms-bugs-fixed}
 
 - Wanneer u in een taakstap toewijzen van AEM Forms Workflows het standaardpictogram van de actieknoppen vervangt door een koraalpictogram, wordt de workflow beëindigd en wordt een uitzondering geregistreerd. De workflow wordt op de verwachte wijze uitgevoerd wanneer standaardpictogrammen worden gebruikt.
 - Als u in de lay-outlaag het aantal kolommen wijzigt, de bewerkingslaag opent en enkele componenten in een deelvenster sleept, verschijnen er vierkante blauwe vakken in het inhoudsgebied van de adaptieve formuliereditor en reageert de editor niet meer.
 - Foutbericht van een optie voor een regeleditor die betrekking heeft op het opgeven van een URL van een adaptief of extern element, is te lang en is niet gebruikersvriendelijk.
 
-## 2021.4.0 {#april-2021-04-0}
+## 2021,4,0 {#april-2021-04-0}
 
 ### Nieuwe functies in [!DNL Forms] {#april-what-is-new-forms}
 
-- **Gebruik de methode voor identiteitsverificatie van overheidsidentiteiten in met Adobe Sign ingeschakelde Adaptieve Forms**
+- **Identiteitsauthentificatiemethode van identiteitskaart van de Overheid van het Gebruik in Adobe Sign toegelaten Aangepaste Forms**
 
   Met behulp van geavanceerde computerleeralgoritmen kunnen bedrijven over de hele wereld dankzij het Adobe Sign-proces voor overheidsidentiteitskaart een kwalitatief hoogstaande verificatie van de identiteit van hun ontvanger krijgen. Nu kunt u de methode voor identiteitsverificatie van overheidsidentiteiten gebruiken in met Adobe Sign ingeschakelde Adaptive Forms.
 
-  De identiteitskaart van de overheid is een methode van de identiteitsauthentificatie van de premie die de ontvanger aan opdraagt [het beeld uploaden van een door de overheid afgegeven identiteitsdocument (rijbewijs, nationale identiteitskaart, paspoort)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)en evalueert vervolgens dat document om te controleren of het authentiek is.
+  Identiteitskaart van de overheid is een methode van de identiteitsauthentificatie van de premie die de ontvanger opdraagt [ het beeld van een door de overheid uitgegeven identiteitsdocument (rijbewijs, nationale identiteitskaart, paspoort) ](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) te uploaden, en dan dat document te evalueren om het authentiek te verzekeren.
 
-- **Ondersteuning voor het gebruik van ondertekeningservaring in formulieren voor asynchrone, adaptieve verzending van formulieren**
+- **Steun om in-vorm het ondertekenen ervaring voor asynchrone adaptieve vormverzendingen te gebruiken**
 
-  U kunt de ondertekeningservaring in formulieren nu gebruiken voor asynchrone, adaptieve verzending van formulieren. U kunt ook een adaptief formulier insluiten in een [!DNL Experience Manager Sites] pagina en gebruik de ondertekeningservaring in formulieren voor het verzenden van aangepaste formulieren.
+  U kunt de ondertekeningservaring in formulieren nu gebruiken voor asynchrone, adaptieve verzending van formulieren. U kunt ook een adaptief formulier insluiten in een [!DNL Experience Manager Sites] -pagina en de ondertekeningservaring in formulieren gebruiken voor het verzenden van aangepaste formulieren.
 
-- **Ondersteuning voor het gebruik van een variabele om een bijlage op te geven terwijl een adaptief formulier vooraf wordt ingevuld voor een taakstap Toewijzen**
+- **Steun om een variabele te gebruiken om een gehechtheid te specificeren terwijl het prepopuleren van een AanpassingsVorm voor een Assign stap van de Taak**
 
   Terwijl u een adaptief formulier vooraf invult voor een toewijzingsstap, kunt u nu een variabele van het documenttype gebruiken om een invoerbijlage te selecteren voor het adaptieve formulier.
 
-- **Ondersteuning voor het gebruik van de letterlijke optie voor het instellen van de waarde voor een JSON-type variabele**
+- **Steun om de letterlijke optie te gebruiken om waarde voor een JSON type variabele** te plaatsen
 
   U kunt letterlijke optie gebruiken om waarde voor een JSON typevariabele in de vastgestelde veranderlijke stap van een AEM Werkstroom te plaatsen. Met de letterlijke optie kunt u een JSON opgeven in de vorm van een tekenreeks.
 
-- **De lokale ontwikkelomgeving gebruiken om Document of Record (DoR) te maken**
+- **de lokale ontwikkelomgeving van het Gebruik om Document van Verslag tot stand te brengen (DoR)**
 
   U kunt een XDP als Document van het malplaatje van het Verslag op de instanties van de Cloud Service en as a Cloud Service SDK van AEM Forms (Lokale ontwikkelomgeving) gebruiken. Eerder was de ondersteuning beperkt tot alleen Cloud Servicen.
 
-### Bugfixes in [!DNL Forms] {#april-bug-fixes-forms}
+### Opgeloste problemen in [!DNL Forms] {#april-bug-fixes-forms}
 
 - Wanneer een Adaptief formulier dat is geconfigureerd om Document of Record niet te genereren, wordt verzonden naar een AEM Workflow die is geconfigureerd om Document of Record te genereren, wordt geen foutbericht weergegeven en kan de taak niet worden verzonden.

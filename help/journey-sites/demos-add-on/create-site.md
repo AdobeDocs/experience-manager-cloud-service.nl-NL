@@ -17,9 +17,9 @@ Maak een demosite in AEM op basis van een bibliotheek met vooraf geconfigureerde
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM Reference Demos Add-on trip, [Programma maken](create-program.md) u nam de eerste configuratiestap om een programma voor testende doeleinden tot stand te brengen en gebruikte een pijpleiding om toe:voegen-op inhoud op te stellen. Nu moet u:
+In het vorige document van de AEM Toelating van de Demos van de Verwijzing, [ creeer Programma, ](create-program.md) u de eerste configuratiestap nam om een programma voor het testen doeleinden tot stand te brengen en gebruikte een pijpleiding om de toe:voegen-op inhoud op te stellen. Nu moet u:
 
-* Begrijp hoe u met Cloud Manager een programma kunt maken.
+* Begrijp hoe u Cloud Manager kunt gebruiken om een programma te maken.
 * Zorg dat u weet hoe u de Add-on Reference Demos voor het nieuwe programma activeert.
 * Kan een pijpleiding in werking stellen om toe:voegen-op inhoud op te stellen.
 
@@ -33,37 +33,37 @@ Dit document helpt u begrijpen hoe te om een plaats tot stand te brengen die op 
 * Weet hoe u een site kunt maken op basis van een sjabloon.
 * Begrijp de grondbeginselen van het navigeren van de plaatsstructuur en het uitgeven van een pagina.
 
-## Een demopsite of schermproject maken {#create-site}
+## Een demo-site of Screens-project maken {#create-site}
 
 Zodra de pijpleiding toe:voegen-aan van de Demo van de Verwijzing heeft opgesteld, kunt u tot het AEM auteursmilieu toegang hebben om demoplaatsen tot stand te brengen die op de toe:voegen-op inhoud worden gebaseerd.
 
 1. Selecteer op de pagina met het programmaoverzicht in Cloud Manager de koppeling naar de AEM ontwerpomgeving.
 
-   ![Toegang tot ontwerpomgeving](assets/access-author.png)
+   ![ Toegang creërend milieu ](assets/access-author.png)
 
-1. Selecteer in het hoofdmenu van AEM **Sites**.
+1. Van het belangrijkste menu van AEM, uitgezochte **Plaatsen**.
 
-   ![Toegang tot sites](assets/access-sites.png)
+   ![ plaatsen van de Toegang ](assets/access-sites.png)
 
-1. Selecteer in de siteconsole de optie **Maken** rechtsboven in het scherm en selecteert u **Site van sjabloon** in de vervolgkeuzelijst.
+1. Van de plaatsenconsole, creeert de uitgezochte **** bij het hoogste recht van het scherm en selecteert **Plaats van malplaatje** in drop-down.
 
-   ![Site maken van sjabloon](assets/create-site-from-template.png)
+   ![ creeer plaats van malplaatje ](assets/create-site-from-template.png)
 
-1. De wizard voor het maken van de site wordt gestart. In de linkerkolom kunt u de demo malplaatjes zien die de pijpleiding aan uw auteursinstantie opstelde. Selecteer een optie om deze te selecteren en geef details weer in de rechterkolom. Als u AEM Screens wilt testen of demo, moet u **We.Cafe-sitesjabloon**. Selecteren **Volgende**.
+1. De wizard voor het maken van de site wordt gestart. In de linkerkolom kunt u de demo malplaatjes zien die de pijpleiding aan uw auteursinstantie opstelde. Selecteer een optie om deze te selecteren en geef details weer in de rechterkolom. Als u AEM Screens wilt testen of demo, ben zeker om het **Sjabloon van de Plaats te kiezen Web.Cafe**. Selecteer **daarna**.
 
-   ![Wizard Site maken](assets/site-creation-wizard.png)
+   ![ tovenaar van de creatie van de Plaats ](assets/site-creation-wizard.png)
 
-1. Geef in het volgende scherm een titel op voor uw site of schermproject. U kunt een sitenaam opgeven of genereren op basis van de titel, als u deze weglaat. Selecteren **Maken**.
+1. Geef in het volgende scherm een titel op voor uw site of Screens-project. U kunt een sitenaam opgeven of genereren op basis van de titel, als u deze weglaat. Selecteer **creeer**.
 
    * De titel van de site wordt weergegeven in de titelbalk van browsers.
    * De sitenaam wordt onderdeel van de URL.
-   * De sitenaam moet voldoen aan AEM conventies voor paginanamen, waarvan de details beschikbaar zijn in het dialoogvenster [Aanvullende bronnen](#additional-resources) sectie.
+   * De plaatsnaam moet AEM pagina het noemen overeenkomsten naleven, waarvan de details in de [ Extra sectie van Middelen ](#additional-resources) beschikbaar zijn.
 
-   ![Sitegegevens](assets/site-details.png)
+   ![ de details van de Plaats ](assets/site-details.png)
 
-1. Het maken van de site wordt bevestigd door een dialoogvenster. Selecteren **Gereed**.
+1. Het maken van de site wordt bevestigd door een dialoogvenster. Selecteer **Gereed**.
 
-   ![Site maken voltooid](assets/site-creation-complete.png)
+   ![ volledige de verwezenlijking van de Plaats ](assets/site-creation-complete.png)
 
 U hebt nu uw eigen demo-site gemaakt!
 
@@ -73,23 +73,23 @@ Nu uw demosite is gemaakt, kunt u deze op dezelfde manier gebruiken als elke and
 
 1. De site wordt nu weergegeven in de siteconsole.
 
-   ![Nieuwe demosite in siteconsole](assets/new-demo-site.png)
+   ![ Nieuwe demoplaats in plaatsenconsole ](assets/new-demo-site.png)
 
-1. Zorg ervoor dat in de rechterbovenhoek van het scherm de consoleweergave is ingesteld op **Kolomweergave**.
+1. In de hoger-juiste hoek van het scherm, zorg ervoor dat de consolemening aan **Mening van de Kolom** wordt geplaatst.
 
-   ![Kolomweergave](assets/column-view.png)
+   ![ mening van de Kolom ](assets/column-view.png)
 
 1. Selecteer de site om de structuur en inhoud ervan te bekijken. De kolomweergave wordt voortdurend uitgebreid terwijl u door de inhoudsstructuur van de demosite navigeert.
 
-   ![Sitestructuur](assets/site-structure.png)
+   ![ de structuur van de Plaats ](assets/site-structure.png)
 
-1. Selecteer een pagina om deze te selecteren en selecteer vervolgens **Bewerken** in de werkbalk.
+1. Selecteer een pagina om het te selecteren en dan **te selecteren geef** in de toolbar uit.
 
-   ![Pagina selecteren](assets/select-page.png)
+   ![ Uitgezochte pagina ](assets/select-page.png)
 
 1. U kunt de pagina net als elke andere AEM inhoudspagina bewerken, zoals onderdelen of elementen toevoegen of bewerken en de functionaliteit van AEM testen.
 
-   ![Pagina bewerken](assets/edit-page.png)
+   ![ geef pagina ](assets/edit-page.png) uit
 
 Gefeliciteerd! U kunt nu de inhoud van uw demo-site verder verkennen en alles ontdekken wat AEM te bieden heeft via de inhoud met best practices van de Add-on voor demo-weergave van verwijzingen.
 
@@ -105,12 +105,12 @@ Nu u dit deel van de AEM Toelage van de Demo van de Verwijzing hebt voltooid zou
 
 U kunt nu de functies van AEM testen met add-on inhoud. U hebt twee opties om uw reis voort te zetten:
 
-* Als u AEM Screens-inhoud volledig wilt demo- en testen, controleert u of u een site hebt geïmplementeerd op basis van de **We.Cafe-sitesjabloon** zoals hierboven beschreven en doorgaan [Schakel AEM Screens for Your Demo Site in.](screens.md)
-* Als u alleen Sites-inhoud wilt demo, gaat u verder [Uw demosites beheren,](manage.md) waar u meer te weten komt over de gereedschappen die beschikbaar zijn om u te helpen uw demosites te beheren en hoe u deze kunt verwijderen.
+* Als u de inhoud van AEM Screens volledig wilt demo en testen, zorg ervoor dat u een plaats hebt opgesteld die op het **wordt gebaseerd Web.Cafe Sjabloon van de Plaats** zoals eerder beschreven en [ AEM Screens voor Uw Plaats van de Demo blijft toelaten.](screens.md)
+* Als u slechts met om de inhoud van Plaatsen te demonstreren, [ Uw Plaatsen van de Demo, ](manage.md) blijft beheren waar u over de hulpmiddelen beschikbaar leert om u te helpen uw demoplaatsen beheren en hoe te om hen te verwijderen.
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Documentatie van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Als u meer informatie wilt over de functies van Cloud Manager, kunt u de diepgaande technische documenten direct raadplegen.
-* [Site maken](/help/sites-cloud/administering/site-creation/create-site.md) - Leer hoe u AEM kunt gebruiken om een site te maken met behulp van sitesjablonen om de stijl en structuur van uw site te definiëren.
-* [Naamconventies voor pagina&#39;s AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Zie deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
-* [AEM basisverwerking](/help/sites-cloud/authoring/basic-handling.md) - Onderzoek dit document als u nieuw bent om basisconcepten zoals navigatie en consoleorganisatie AEM te begrijpen.
+* [ documentatie van Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - als u meer details over de eigenschappen van Cloud Manager zou willen, kunt u de diepgaande technische documenten direct willen raadplegen.
+* [ creeer Plaats ](/help/sites-cloud/administering/site-creation/create-site.md) - leer hoe te om AEM te gebruiken om een plaats tot stand te brengen gebruikend plaatssjablonen om de stijl en de structuur van uw plaats te bepalen.
+* [ AEM pagina noemende overeenkomsten ](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - Zie deze pagina voor meer informatie over de conventies voor het ordenen van AEM pagina&#39;s.
+* [ AEM Basisbehandeling ](/help/sites-cloud/authoring/basic-handling.md) - onderzoek dit document als u nieuw bent om basisconcepten zoals navigatie en consoleorganisatie AEM te begrijpen.

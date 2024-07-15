@@ -28,9 +28,9 @@ Zodra gevormd voor een bepaalde component, begint het geheime voorgeheugen Graph
 
 Er is geen cachevervalsing, dus wees voorzichtig wanneer het plaatsen van de geheim voorgeheugenduur.
 
-Wanneer het vormen caching voor componenten, moet de geheim voorgeheugennaam de naam van zijn **proxy** componenten die u in uw project definieert.
+Wanneer het vormen caching voor componenten, moet de geheim voorgeheugennaam de naam van de **volmacht** componenten zijn die u in uw project bepaalt.
 
-Voordat de client een GraphQL-aanvraag verzendt, wordt gecontroleerd of **exact** dezelfde GraphQL-aanvraag is al in de cache opgeslagen en retourneert mogelijk de in de cache opgeslagen reactie. Om overeen te komen, de GraphQL-aanvraag _moet_ exact overeenkomen. Dat wil zeggen: de query, de naam van de bewerking (indien aanwezig), variabelen (indien aanwezig) _moet_ allen zijn gelijk aan het caching verzoek. En alle aangepaste HTTP-headers die kunnen worden ingesteld _moet_ ook hetzelfde zijn. De Adobe Commerce `Store` header _moet_ match.
+Alvorens de cliënt een verzoek van GraphQL verzendt, controleert het als dat **nauwkeurig** zelfde verzoek van GraphQL reeds in het voorgeheugen ondergebracht is en misschien de caching reactie terugkeert. Om aan te passen, moet het verzoek van GraphQL __ precies aanpassen. Namelijk de vraag, verrichtingsnaam (als om het even welk), variabelen (als om het even welk) _moet_ allen aan het caching verzoek gelijk zijn. En, moeten alle kopballen van douaneHTTP die _zouden kunnen worden geplaatst_ ook het zelfde zijn. Bijvoorbeeld, moet de Adobe Commerce `Store` kopbal __ aanpassen.
 
 ### Voorbeelden {#examples}
 
@@ -48,26 +48,26 @@ Een ander voorbeeldscenario waar de eigenschap GraphQl caching voor gebruik word
 venia/components/structure/navigation:true:10:600
 ```
 
-Overwegende dat de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) wordt gebruikt. Let op het gebruik van de naam van de componentproxy `venia/components/structure/navigation`, en **niet** de naam van de CIF navigatiecomponent (`core/cif/components/structure/navigation/v1/navigation`).
+Ervan uitgaande dat de [ opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia) wordt gebruikt. Neem nota van het gebruik van de naam van de componentenvolmacht `venia/components/structure/navigation`, en **niet** de naam van de CIF navigatiecomponent (`core/cif/components/structure/navigation/v1/navigation`).
 
-Caching voor andere componenten zou op een projectbasis, gewoonlijk in coördinatie met caching moeten worden bepaald die op het niveau van de Verzender wordt gevormd. Herinner dat er geen actieve ongeldigverklaring van deze geheime voorgeheugens is, zodat zou de caching duur zorgvuldig moeten worden geplaatst. Er zijn geen standaardwaarden die overeenkomen met alle mogelijke projecten en gebruiksgevallen. Zorg ervoor dat u een caching strategie op het projectniveau bepaalt die het best de vereisten van uw project aanpast.
+Caching voor andere componenten zou op projectbasis, gewoonlijk in coördinatie met caching moeten worden bepaald die op het niveau van Dispatcher wordt gevormd. Herinner dat er geen actieve ongeldigverklaring van deze geheime voorgeheugens is, zodat zou de caching duur zorgvuldig moeten worden geplaatst. Er zijn geen standaardwaarden die overeenkomen met alle mogelijke projecten en gebruiksgevallen. Zorg ervoor dat u een caching strategie op het projectniveau bepaalt die het best de vereisten van uw project aanpast.
 
-## Caching van Dispatcher {#dispatcher}
+## Dispatcher Caching {#dispatcher}
 
-Pagina&#39;s of fragmenten in cache AEM in het deelvenster [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is een beste praktijk voor om het even welk AEM project. Doorgaans is dit afhankelijk van validatietechnieken die ervoor zorgen dat inhoud die in AEM is gewijzigd, correct wordt bijgewerkt in de Dispatcher. Deze functie is de kern van de strategie voor het in cache plaatsen van AEM Dispatcher.
+Het in cache plaatsen AEM pagina&#39;s of fragmenten in [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is een beste praktijk voor om het even welk AEM project. Doorgaans is dit afhankelijk van validatietechnieken die ervoor zorgen dat inhoud die in AEM is gewijzigd, correct wordt bijgewerkt in de Dispatcher. Deze functie vormt de kern van de strategie voor het in cache plaatsen van AEM Dispatcher.
 
 Naast zuivere AEM-beheerde inhoud CIF, kan een pagina handelsgegevens typisch tonen die dynamisch van Adobe Commerce via GraphQL wordt opgehaald. Hoewel de paginastructuur zelf misschien nooit verandert, kan de commerciële inhoud veranderen. Als productgegevens, zoals naam en prijs, bijvoorbeeld veranderen in Adobe Commerce.
 
-Om ervoor te zorgen dat CIF pagina&#39;s gedurende een beperkte tijd in de AEM Dispatcher in het cachegeheugen worden opgeslagen, raadt de Adobe aan [Tijdgebaseerde cachevalidatie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (ook wel op TTL gebaseerd caching genoemd) wanneer het caching CIF pagina&#39;s in de AEM Dispatcher. Deze functie kan worden geconfigureerd in AEM met de extra [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket.
+Om ervoor te zorgen dat de CIF pagina&#39;s voor een beperkte tijd in AEM Dispatcher in het voorgeheugen ondergebracht worden, adviseert de Adobe het gebruiken van [ Op tijd-Gebaseerde Bevestiging van het Geheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (die als op TTL-Gebaseerd caching wordt bekend) wanneer het in het voorgeheugen onderbrengen CIF pagina&#39;s in Dispatcher. Deze eigenschap kan in AEM met het gebruiken van het extra [ ACS AEM Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket worden gevormd.
 
-Met op TTL gebaseerde caching, bepaalt een ontwikkelaar typisch één of veelvoudige caching duur voor geselecteerde AEM pagina&#39;s. Deze duur zorgt ervoor dat CIF pagina&#39;s slechts in het voorgeheugen ondergebracht in de AEM Dispatcher tot de gevormde duur zijn en dat de inhoud vaak wordt bijgewerkt.
+Met op TTL gebaseerde caching, bepaalt een ontwikkelaar typisch één of veelvoudige caching duur voor geselecteerde AEM pagina&#39;s. Deze duur zorgt ervoor dat CIF pagina&#39;s slechts in het voorgeheugen ondergebracht in AEM Dispatcher tot de gevormde duur zijn en dat de inhoud vaak wordt bijgewerkt.
 
 >[!NOTE]
 >
->Hoewel gegevens aan de serverzijde door de AEM Dispatcher in het cachegeheugen kunnen worden opgeslagen, zijn er enkele CIF `product`, `productlist`, en `searchresults` de componenten veranderen typisch altijd productprijzen in een cliënt-zijbrowser verzoek wanneer de pagina wordt geladen. Zo zorgt u ervoor dat cruciale dynamische inhoud altijd bij het laden van een pagina wordt opgehaald.
+>Hoewel gegevens aan de serverzijde door de AEM Dispatcher in cache kunnen worden opgeslagen, worden in sommige CIF componenten zoals de componenten `product` , `productlist` en `searchresults` doorgaans altijd de productprijzen in een browserverzoek aan de clientzijde aangepast wanneer de pagina wordt geladen. Zo zorgt u ervoor dat cruciale dynamische inhoud altijd bij het laden van een pagina wordt opgehaald.
 
 ## Aanvullende bronnen {#additional}
 
-* [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [GraphQL-cacheconfiguratie](https://github.com/adobe/commerce-cif-graphql-client#caching)
-* [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [ de opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia)
+* [ GraphQL caching configuratie ](https://github.com/adobe/commerce-cif-graphql-client#caching)
+* [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

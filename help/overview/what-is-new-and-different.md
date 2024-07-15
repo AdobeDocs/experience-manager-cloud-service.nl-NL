@@ -38,13 +38,13 @@ Er zijn intrinsieke verschillen tussen deze eerdere benaderingen en AEM as a Clo
 
 >[!NOTE]
 >
->Voor meer details over de Versies van de Dienst Op locatie en Beheerde, zie [AEM 6.5-documentatie](https://experienceleague.adobe.com/docs/experience-manager-65.html) .
+>Voor meer details op de Versies van de Dienst Op locatie en Beheerde, zie [ AEM 6.5 documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65.html).
 
 ## Architectuur {#architecture}
 
 >[!NOTE]
 >
->Zie voor meer informatie [Architectuur](/help/overview/architecture.md).
+>Voor meer details, zie [ Architectuur ](/help/overview/architecture.md).
 
 AEM as a Cloud Service heeft nu:
 
@@ -69,27 +69,27 @@ Hierdoor is automatische schaling mogelijk voor variërende gebruikspatronen:
 
 ## Updates AEM {#aem-updates}
 
-AEM as a Cloud Service gebruikt nu ononderbroken integratie en ononderbroken levering (CI/CD) om ervoor te zorgen dat uw projecten op de huidigste AEM versie zijn. Dit betekent dat de productie en het opvoeren instanties aan de recentste AEM versie zonder enige onderbreking van de dienst voor gebruikers worden bijgewerkt.
+AEM as a Cloud Service gebruikt nu continue integratie en doorlopende levering (CI/CD) om ervoor te zorgen dat uw projecten de meest actuele AEM versie hebben. Dit betekent dat de productie en het opvoeren instanties aan de recentste AEM versie zonder enige onderbreking van de dienst voor gebruikers worden bijgewerkt.
 
 >[!NOTE]
 >
->Als de update naar de productieomgeving mislukt, wordt de testomgeving automatisch teruggedraaid in Cloud Manager. Dit wordt automatisch gedaan om ervoor te zorgen dat nadat een update voltooit, zowel de het opvoeren als productiemilieu&#39;s op de zelfde AEM versie zijn.
+>Als de update naar de productieomgeving mislukt, zal Cloud Manager automatisch de testomgeving terugdraaien. Dit wordt automatisch gedaan om ervoor te zorgen dat nadat een update voltooit, zowel de het opvoeren als productiemilieu&#39;s op de zelfde AEM versie zijn.
 
 Er zijn twee typen AEM versie-updates:
 
-* **AEM onderhoudsupdates**
+* **AEM de Updates van het Onderhoud**
 
    * Kunnen dagelijks worden uitgebracht.
    * Deze bestanden zijn vooral bedoeld voor onderhoudsdoeleinden, zoals de nieuwste oplossingen voor problemen en beveiligingsupdates.
    * minimaal effect hebben, aangezien de wijzigingen regelmatig worden toegepast.
 
-* **Nieuwe functies bijwerken**
+* **Nieuwe Updates van de Eigenschap**
 
    * Wordt vrijgegeven via een voorspelbaar maandschema.
 
 >[!TIP]
 >
->Zie voor meer informatie [Versie-updates AEM](/help/implementing/deploying/aem-version-updates.md).
+>Voor meer details, zie {de Updates van de Versie 0} AEM ](/help/implementing/deploying/aem-version-updates.md).[
 
 ## Cloud Manager {#cloud-manager}
 
@@ -115,11 +115,11 @@ Met name het aantal en het type AEM-programma&#39;s dat met Cloud Manager kan wo
 
 Cloud Manager heeft zich ontwikkeld als een zelfbedieningsportal waar de belangrijkste onderdelen van AEM as a Cloud Service kunnen worden gemaakt en geconfigureerd:
 
-* Nieuwe programma&#39;s maken en beheren. Zie [Programma&#39;s en programmatypen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer informatie .
+* Nieuwe programma&#39;s maken en beheren. Zie [ Begrijpend Programma&#39;s en de Types van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor meer details.
 
-* De AEM omgevingen binnen deze programma&#39;s maken en beheren. Zie [Omgevingen beheren](/help/implementing/cloud-manager/manage-environments.md) voor meer informatie .
+* De AEM omgevingen binnen deze programma&#39;s maken en beheren. Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.md) voor meer details.
 
-* Het creëren van en het leiden van de pijpleidingen voor het opstellen van de klantencode en de verwante configuratie aan een specifiek milieu. Zie [Het vormen van uw CI-CD Pijpleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer informatie .
+* Het creëren van en het leiden van de pijpleidingen voor het opstellen van de klantencode en de verwante configuratie aan een specifiek milieu. Zie [ Vormend uw CI-CD Pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) voor meer details.
 
 * Meldingen ontvangen van belangrijke levenscyclusgebeurtenissen voor deze onderdelen (zoals productupdates).
 
@@ -152,13 +152,13 @@ Er zijn ook aanzienlijke verschillen door de aanwezigheid van:
 
 >[!TIP]
 >
->Voor een volledig overzicht van het instapproces raadpleegt u de [instapreis](/help/journey-onboarding/overview.md).
+>Voor een volledig overzicht van het onboarding proces, zie [ onboarding reis ](/help/journey-onboarding/overview.md).
 
 ## Ontwikkelen {#developing}
 
 >[!NOTE]
 >
->Voor meer details kunt u beginnen met [Richtlijnen voor ontwikkeling](/help/implementing/developing/introduction/development-guidelines.md) en [Ontwikkelen - De WKND-zelfstudie](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>Voor meer details, kunt u met [ Richtlijnen van de Ontwikkeling ](/help/implementing/developing/introduction/development-guidelines.md) en [ het Ontwikkelen beginnen - het leerprogramma WKND ](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 De nieuwe architectuur die AEM as a Cloud Service ondersteunt, omvat een paar belangrijke wijzigingen in de algemene ontwikkelaarservaring. Een van de belangrijkste doelstellingen voor AEM as a Cloud Service is om ervaren klanten (die AEM op locatie of in de context van Adobe Managed Services hebben gebruikt) de mogelijkheid te bieden om zo snel mogelijk te migreren naar AEM as a Cloud Service, zonder het grootste deel van hun aangepaste code te hoeven herschrijven. Hiervoor zijn mogelijk wat aanpassingen vereist.
 
@@ -174,7 +174,7 @@ Voor bestaande AEM-applicaties die worden uitgevoerd in AEM as a Cloud Service, 
 
 Dit proces wordt meestal &#39;Cloud-first&#39;-ontwikkeling genoemd. Aangezien de &#39;end-to-end&#39; duur naar verwachting minuten in beslag zal nemen (van 20 tot 50, afhankelijk van de complexiteit van de applicatie), is het noodzakelijk om methoden voor snelle ontwikkeling te gebruiken voordat de code en configuratiewijzigingen in de cloud worden uitgeprobeerd.
 
-De console van het Web, waar de bundels OSGI en hun bijbehorende configuratie worden beheerd, en eerder deel van AEM QuickStart, is niet meer beschikbaar in AEM as a Cloud Service. De nieuwe ontwikkelaarsconsole verstrekt een read-only interface voor de meeste runtime informatie. Met deze console, kunnen de ontwikkelaars en login rechtstreeks aan om het even welk bepaald knooppunt van een auteur selecteren of de publicatieservice, en de relevante informatie bekijken.
+De console van het Web, waar de bundels OSGI en hun bijbehorende configuratie worden beheerd, en vroeger deel van AEM QuickStart, is niet meer beschikbaar in AEM as a Cloud Service. De nieuwe ontwikkelaarsconsole verstrekt een read-only interface voor de meeste runtime informatie. Met deze console, kunnen de ontwikkelaars en login rechtstreeks aan om het even welk bepaald knooppunt van een auteur selecteren of de publicatieservice, en de relevante informatie bekijken.
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ Een andere veelvoorkomende eis voor ontwikkelaars is snelle toegang tot de logbe
 
 Dankzij de duidelijke scheiding van code en content kunnen ontwikkelaars een bepaald proces gebruiken voor het bijwerken van content als onderdeel van een implementatie. Vaak voorkomende gebruiksgevallen van veranderlijke content zijn:
 
-* Standaard *default* inhoud die deel uitmaakt van het klantenproject (bijvoorbeeld mappen, sjablonen, workflows, enzovoort)
+* Standaard *standaard* inhoud die deel van het klantenproject (bijvoorbeeld, omslagen, malplaatjes, werkschema&#39;s, etc.) uitmaakt
 
 * Zoekindexdefinities
 
@@ -194,7 +194,7 @@ Dankzij de duidelijke scheiding van code en content kunnen ontwikkelaars een bep
 
 ### Lokale ontwikkeling {#aem-as-a-cloud-service-developing-local-development}
 
-Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AEM toepassingen buiten de AEM as a Cloud Service context te ontwikkelen. Daarvoor worden de volgende artefacten aan de ontwikkelaars ter beschikking gesteld:
+Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AEM toepassingen buiten de context van AEM as a Cloud Service te ontwikkelen. Daarvoor worden de volgende artefacten aan de ontwikkelaars ter beschikking gesteld:
 
 * AEM as a Cloud Service QuickStart: een `.jar`-gebaseerd, zelfstandig installatieprogramma van de nieuwste AEM-codebase, met hetzelfde functionele en API-oppervlak.
 
@@ -208,7 +208,7 @@ Om snelle herhalingen en ontwikkeling te ondersteunen, is het ook mogelijk om AE
 
 >[!NOTE]
 >
->Voor meer details, begin met [inhoudsherstel](/help/operations/restore.md), [Indexeren](/help/operations/indexing.md), en [overige onderhoudstaken](/help/operations/maintenance.md).
+>Voor meer details, begin met [ inhoudsherstel ](/help/operations/restore.md), [ het Indexeren ](/help/operations/indexing.md), en [ andere Taken van het Onderhoud ](/help/operations/maintenance.md).
 
 Met AEM as a Cloud Service worden dergelijke bewerkingen geautomatiseerd, zodat de service niet meer hoeft te worden onderbroken.
 
@@ -226,7 +226,7 @@ Bewerkingen voor AEM as a Cloud Service worden ook ondersteund door een nieuwe i
 
 >[!NOTE]
 >
->Zie [Beveiliging - IMS-ondersteuning](/help/security/ims-support.md).
+>Zie [ Veiligheid - Steun IMS ](/help/security/ims-support.md).
 
 Een belangrijke wijziging in AEM as Cloud Service is het volledig geïntegreerde gebruik van Adobe ID&#39;s voor toegang tot de authoringlaag.
 
@@ -242,7 +242,7 @@ Dit biedt een combinatie van de volgende voordelen:
 
 >[!NOTE]
 >
->Voor meer details, [Basisverwerking](/help/sites-cloud/authoring/basic-handling.md) is een goed uitgangspunt.
+>Voor meer details, is de [ Basis Behandeling ](/help/sites-cloud/authoring/basic-handling.md) een goed uitgangspunt.
 
 De basisbeginselen van de authoringgebruikersinterface (UI), zowel voor Sites als Assets, zullen heel vertrouwd zijn voor iedereen die AEM vroeger heeft gebruikt.
 
@@ -256,7 +256,7 @@ Zie het overzicht van [Wijzigingen in Sites](/help/sites-cloud/sites-cloud-chang
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service biedt een cloud-native PaaS-oplossing voor bedrijven om niet alleen hun activiteiten op het gebied van Digital Asset Management en Dynamic Media met snelheid en impact uit te voeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerend is.
+Adobe Experience Manager Assets as a Cloud Service biedt een native, PaaS-oplossing voor bedrijven om niet alleen hun activiteiten op het gebied van Digital Asset Management en Dynamic Media met snelheid en impact uit te voeren, maar ook slimme mogelijkheden van de volgende generatie, zoals AI/ML, te gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerend is.
 
 Het Assets-aanbod omvat assetverwerking van de volgende generatie in de cloud, en hoogkwalitatieve opname en zoekfunctie van assets.
 
@@ -276,6 +276,6 @@ Zie voor meer informatie:
 
 >[!TIP]
 >
->Wanneer u een overzicht hebt van AEM as a Cloud Service, kunt u snel aan boord gaan door het [Onboarding Journaal](/help/journey-onboarding/overview.md).
+>Wanneer u een overzicht van AEM as a Cloud Service hebt, kunt u aan boord snel door de [ Onboarding Reis ](/help/journey-onboarding/overview.md) te herzien.
 >
->Hebt u al een functie voor het testen van AEM? Installeer de [AEM Reference Demos Add-on](/help/journey-sites/demos-add-on/overview.md) om AEM krachtige functies te verkennen aan de hand van rijke voorbeelden.
+>Hebt u al een functie voor het testen van AEM? Installeer de [ AEM toe:voegen-aan van de Demo van de Verwijzing ](/help/journey-sites/demos-add-on/overview.md) om AEM het gebruiken van rijke voorbeelden te onderzoeken krachtige eigenschappen.

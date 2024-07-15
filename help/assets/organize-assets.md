@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | Dit artikel |
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft® Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Het onderzoek staat verfijnd het filtreren op activa toe en eerbiedigt volledig de juiste toestemmingen. Metagegevens worden in detail besproken in Metagegevens in Digital Asset Management.
@@ -59,67 +59,67 @@ Date24/08/2021
 
 ## Elementen in mappen ordenen {#organize-using-folders}
 
-De eenvoudigste manier om elementen te ordenen is het opslaan van de elementen in mappen. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Voor meer informatie over het maken en beheren van mappen raadpleegt u [Elementen beheren](manage-digital-assets.md). Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
+De eenvoudigste manier om elementen te ordenen is het opslaan van de elementen in mappen. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Voor meer informatie over om omslagen tot stand te brengen en te beheren, zie [ activa ](manage-digital-assets.md) beheren. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
 
 * Gewoonlijk groeit de opslagplaats voor digitale middelen altijd. Daarom is het belangrijk om het gebruik van metagegevens, de mapstructuur en de naamgeving van bestanden vroegtijdig te formaliseren in de cyclus waarin de inhoud wordt gemaakt.
 * Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Deze consistentie helpt uw proces en beheert uw activa beter. Met middelen die bijvoorbeeld in de volgende typen mappen worden geplaatst, kunt u uw elementen segregeren:
 
-   * **Ontwikkelingsmappen**: bevat digitale elementen waaraan u momenteel werkt.
-   * **Clientmappen**: bevat digitale elementen die zijn gebaseerd op clients of projectnamen.
-   * **Primaire mappen**: bevat originele, brondigitale elementen.
-   * **Uitvoermappen**: bevat vertoningen en kopieën van de originele, brondigitale elementen.
-   * **Bestandsgrootten, mappen**: bevat digitale elementen die zijn gebaseerd op kleine, middelgrote of grote bestanden.
-   * **Mappen stapelen**: bevat digitale elementen die klaar zijn om live op uw website te publiceren.
-   * **MIME-tekstmappen**: bevat digitale elementen die specifiek zijn voor MIME-typen, zoals afbeeldingen, documenten en multimedia.
-   * **Mappen archiveren**: bevat gepensioneerde digitale elementen.
-   * **Op datum gebaseerde mappen**: bevat digitale elementen die zijn gebaseerd op een aanmaakdatum of een datum die als laatste is gewijzigd.
+   * **de omslagen van de Ontwikkeling**: bevat digitale activa die u momenteel werkt aan.
+   * **omslagen van de Cliënt**: bevat digitale activa die op cliënten of projectnamen worden gebaseerd.
+   * **Primaire omslagen**: bevat originele, bron digitale activa.
+   * **omslagen van de Vertoning**: bevat vertoningen en exemplaren van de originele, bron digitale activa.
+   * **omslagen van de Grootte van het Dossier**: bevat digitale activa die op kleine, middelgrote, of grote dossiergrootte worden gebaseerd.
+   * **het Opvoeren omslagen**: bevat digitale activa die bereid zijn om live op uw website te publiceren.
+   * **MIME typemappen**: bevat digitale activa die voor types MIME zoals beelden, documenten, en multimedia specifiek zijn.
+   * **omslagen van het Archief**: bevat gepensioneerde digitale activa.
+   * **op datum-gebaseerde omslagen**: bevat digitale activa die op een aanmaakdatum of een laatste gewijzigde datum worden gebaseerd.
 
 * Maak een map met mappen die waarschijnlijk niet worden gewijzigd, zodat aanpassingen of automatisering gewoon kunnen doorgaan. De toegewezen verwerkingsprofielen werken bijvoorbeeld nog steeds.
-* Als een element al is gepubliceerd, gebruikt u [!DNL Experience Manager] om het element naar een andere map te verplaatsen en opnieuw te publiceren vanaf de nieuwe locatie. De oorspronkelijke locatie van het gepubliceerde element is nog steeds beschikbaar samen met het nieuw gepubliceerde element. Het oorspronkelijke gepubliceerde middel is echter *verloren* tot [!DNL Experience Manager] en kan niet ongepubliceerd zijn. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
+* Als een element al is gepubliceerd, gebruikt u [!DNL Experience Manager] om het element naar een andere map te verplaatsen en opnieuw te publiceren vanaf de nieuwe locatie. De oorspronkelijke locatie van het gepubliceerde element is nog steeds beschikbaar samen met het nieuw gepubliceerde element. De originele gepubliceerde activa, echter, worden *verloren* aan [!DNL Experience Manager] en kunnen niet unpublished. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
 
 ## Elementen ordenen met tags {#use-tags-to-organize-assets}
 
 Als u tags aan elementen toevoegt, kunt u deze tijdens een zoekopdracht gemakkelijker terugvinden, verzamelingen maken met behulp van de zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en AI-algoritmen van Adobe Sensei toepassen voor het detecteren van elementen.
 
-[!DNL Adobe Experience Manager Assets] maakt gebruik van een zelfstudie-algoritme om zeer beschrijvende tags te maken waarmee u het juiste element met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, artificiële intelligentie en het leerframework voor machines, die kunnen worden opgeleid om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen.
+[!DNL Adobe Experience Manager Assets] gebruikt een zelfstudie-algoritme om zeer beschrijvende tags te maken waarmee u het juiste element met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, artificiële intelligentie en het leerframework voor machines, die kunnen worden opgeleid om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen.
 
 Hieronder vindt u de stappen voor het toevoegen van codes aan een element:
 
-1. Aanmelden bij [!DNL Experience Manager Assets].
-1. Klikken **[!UICONTROL Assets]** > **[!UICONTROL Files]** selecteert u het element en klikt u op **[!UICONTROL Properties]** om de eigenschappen van het element te openen.
-1. In de **[!UICONTROL Basic]** klikt u op het mappictogram in **[!UICONTROL Tags]** metagegevens. Er wordt een pop-upvenster geopend.
-1. Zoek of selecteer de juiste tags van de bestaande tags in `cq-tags`. U kunt meerdere tags toewijzen aan het element.
+1. Meld u aan bij [!DNL Experience Manager Assets] .
+1. Klik op **[!UICONTROL Assets]** > **[!UICONTROL Files]** , selecteer het element en klik op **[!UICONTROL Properties]** om de eigenschappen van het element te openen.
+1. Klik op het tabblad **[!UICONTROL Basic]** op het mappictogram in de metagegevens van **[!UICONTROL Tags]** . Er wordt een pop-upvenster geopend.
+1. Zoek of selecteer de juiste tags van de bestaande tags in `cq-tags` . U kunt meerdere tags toewijzen aan het element.
 
-   U kunt de codestructuur in oplopende of aflopende volgorde sorteren op basis van de opties **[!UICONTROL Name]** (alfabetische volgorde), **[!UICONTROL Created]** datum, of **[!UICONTROL Modified]** datum. In de volgende afbeelding wordt de codestructuur alfabetisch gesorteerd op basis van de **[!UICONTROL Name]**.
+   U kunt de codestructuur in oplopende of aflopende volgorde sorteren op basis van de datum **[!UICONTROL Name]** (alfabetische volgorde), **[!UICONTROL Created]** date of **[!UICONTROL Modified]** . In de volgende afbeelding wordt de codestructuur alfabetisch gesorteerd op basis van de **[!UICONTROL Name]** .
 
-   ![add-tags](assets/add-tags-to-asset.png)
+   ![ toe:voegen-markeringen ](assets/add-tags-to-asset.png)
 
-1. Klikken **Opslaan** om de wijzigingen in de metagegevens van de elementen bij te werken.
+1. Klik **sparen** om de veranderingen van activa meta-gegevens bij te werken.
 
 Raadpleeg de volgende artikelen voor meer informatie:
 
 * [Metagegevens van elementen bewerken](meta-edit.md)
-* [Slimme tags in elementen](smart-tags.md)
+* [Slimme tags in Assets](smart-tags.md)
 * [Voorspelende tags toevoegen aan het zoekvenster](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Indelen als verzamelingen {#organize-as-collections}
 
-Met verzamelingen van middelen in [!DNL Experience Manager Assets], kunt u de mogelijkheid om elementen te maken, te bewerken en te delen tussen gebruikers stroomlijnen. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen die een statische referentielijst met elementen, mappen en verzamelingen bevatten, en verzamelingen die op basis van zoekcriteria elementen in elementen trekken. U kunt verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
+Met de functie voor het verzamelen van middelen in [!DNL Experience Manager Assets] kunt u de mogelijkheid om elementen te maken, te bewerken en te delen, stroomlijnen tussen gebruikers. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen die een statische referentielijst met elementen, mappen en verzamelingen bevatten, en verzamelingen die op basis van zoekcriteria elementen in elementen trekken. U kunt verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
 
-Zie voor meer informatie [verzamelingen beheren](manage-collections.md)
+Voor meer informatie, zie [ inzamelingen ](manage-collections.md) beheren
 
 
 ## Profielen gebruiken om uw elementen te ordenen {#organize-to-use-profiles}
 
-Een verwerkingsprofiel bevat [!DNL Assets] opdrachten verwerken die van toepassing zijn op elementen die worden geüpload naar vooraf gedefinieerde mappen. Profielen worden gebruikt om de verwerking van inhoud van een map of nieuw geüploade elementen te automatiseren. U kunt profielen gebruiken om uw elementen beter te ordenen.
+Een verwerkingsprofiel bevat [!DNL Assets] -verwerkingsopdrachten die van toepassing zijn op elementen die worden geüpload naar vooraf gedefinieerde mappen. Profielen worden gebruikt om de verwerking van inhoud van een map of nieuw geüploade elementen te automatiseren. U kunt profielen gebruiken om uw elementen beter te ordenen.
 
 Als u het gebruik van metagegevens, de naamgeving van bestanden en de mapstructuur gestandaardiseerd, bent u er zeker van dat u verwerkingsprofielen met grotere nauwkeurigheid en consistentie kunt toepassen op mappen wanneer de pool met digitale elementen toeneemt.
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
-* [Ondersteunde bestandsindelingen](file-format-support.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
+* [Door Assets ondersteunde bestandsindelingen](file-format-support.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -129,12 +129,12 @@ Als u het gebruik van metagegevens, de naamgeving van bestanden en de mapstructu
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
->* [Middelenmicroservices en verwerkingsprofielen gebruiken](asset-microservices-configure-and-use.md)
+>* [ de activa microservices en verwerkingsprofielen van het Gebruik ](asset-microservices-configure-and-use.md)
 >* [Metadataprofielen](metadata-profiles.md)
->* [Videoprofielen](/help/assets/dynamic-media/video-profiles.md)
->* [Dynamic Media-afbeeldingsprofielen](/help/assets/dynamic-media/image-profiles.md)
+>* [ Videoprofielen ](/help/assets/dynamic-media/video-profiles.md)
+>* [ de beeldprofielen van Dynamic Media ](/help/assets/dynamic-media/image-profiles.md)
 

@@ -16,28 +16,28 @@ ht-degree: 0%
 
 Met Edge Delivery Services verloopt het publiceren van inhoud naadloos, ongeacht de inhoudsbron:
 
-* Op documenten gebaseerde inhoud - Zie [Sectie Publiceren](/help/edge/docs/authoring.md) van de documentatie bij Edge Delivery Services.
+* Op document-gebaseerde inhoud - gelieve te zien {de sectie van 0} Publish ](/help/edge/docs/authoring.md) van de documentatie van Edge Delivery Services.[
 * AEM inhoud - Zie de onderstaande details.
 
 ## Stroom publiceren vanuit AEM {#publishing-flow}
 
-Wanneer u de Universal Editor gebruikt om AEM inhoud te schrijven, kunt u alleen publiceren als u op de knop **Publiceren** in de Universal Editor. Zie het document [Inhoud publiceren met de Universal Editor.](/help/sites-cloud/authoring/universal-editor/publishing.md)
+Wanneer het gebruiken van de Universele Redacteur aan auteur AEM inhoud, is het publiceren zo eenvoudig zoals het klikken van de **Publish** knoop in de Universele Redacteur. Gelieve te zien het document [ het Publiceren Inhoud met de Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 De informatiestroom bij publicatie ziet er als volgt uit. Zodra de auteur begint met de publicatie, is deze stroom automatisch en wordt deze hier ter informatie weergegeven.
 
 >[!NOTE]
 >
->Per dag zijn maximaal 5000 paden toegestaan die zijn gepubliceerd vanuit de ontwerpinterface of via workflows. Integraties die werklasten voor bulkpublicaties maken, worden niet ondersteund. Als uw project meer capaciteit vereist, gelieve voor te stellen het voor [VIP](https://www.aem.live/vip/intake).
+>Per dag zijn maximaal 5000 paden toegestaan die zijn gepubliceerd vanuit de ontwerpinterface of via workflows. Integraties die werklasten voor bulkpublicaties maken, worden niet ondersteund. Als u project hogere capaciteit vereist, gelieve het voor het [ VIP Programma ](https://www.aem.live/vip/intake) voor te stellen.
 
-![De stroom van informatie wanneer het publiceren van AEM aan Edge Delivery Services](assets/publishing-flow.png)
+![ de stroom van informatie wanneer het publiceren van AEM aan Edge Delivery Services ](assets/publishing-flow.png)
 
 1. De auteur van de inhoud publiceert AEM inhoud in de Universal Editor.
 1. Een publicatiegebeurtenis wordt geduwd aan de pijpleidingsrij van de Adobe.
 1. De Edge Delivery Services publiceren de dienst door:sturen de relevante gebeurtenissen aan Edge Delivery Services admin API.
-1. De Levering van de rand trekt en neemt semantische HTML van AEM auteur op.
+1. Edge Delivery trekt semantische HTML in van AEM auteur.
 1. AEM wordt bijgewerkt met publicatiestatus.
 
 >[!NOTE]
 >
->Standaard is de API voor beheer van Edge Delivery Services niet beveiligd en kan deze worden gebruikt om documenten zonder verificatie te publiceren of de publicatie ervan ongedaan te maken. Voor het configureren van verificatie voor de API voor beheer, zoals beschreven in [Verificatie voor auteurs configureren](https://www.aem.live/docs/authentication-setup-authoring)moet uw project voorzien zijn van een API_KEY, die toegang tot de publicatieservice verleent. [Neem contact op met het team Adobe voor Slack](/help/edge/docs/slack.md) ter begeleiding.
+>Standaard is de API voor beheer van Edge Delivery Services niet beveiligd en kan deze worden gebruikt om documenten zonder verificatie te publiceren of de publicatie ervan ongedaan te maken. Om authentificatie voor admin API zoals die in [ wordt gedocumenteerd Vormende Authentificatie voor Auteurs ](https://www.aem.live/docs/authentication-setup-authoring) te vormen, moet uw project voorzien zijn van API_KEY, die toegang tot de publicatiedienst verleent. [ te bereiken gelieve uit aan het team van de Adobe op Slack ](/help/edge/docs/slack.md) voor begeleiding.
 

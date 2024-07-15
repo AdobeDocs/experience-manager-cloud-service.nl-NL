@@ -1,6 +1,6 @@
 ---
 title: CDN-foutpagina's configureren
-description: Leer hoe u de standaardfoutpagina kunt overschrijven door statische bestanden te hosten in zelfgehoste opslag zoals Amazon S3 of Azure Blob Storage, en ernaar te verwijzen in een configuratiebestand dat wordt geïmplementeerd met de configuratiepijplijn van Cloud Manager.
+description: Leer hoe u de standaardfoutpagina kunt overschrijven door statische bestanden te hosten in zelfgehoste opslag zoals Amazon S3 of Azure Blob Storage, en ernaar te verwijzen in een configuratiebestand dat wordt geïmplementeerd met behulp van de Cloud Manager Configuration Pipeline.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # CDN-foutpagina&#39;s configureren {#cdn-error-pages}
 
-In het onwaarschijnlijke geval dat [CDN met beheerde Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) kan niet de AEM oorsprong bereiken, CDN door gebrek dient een unbranded, generische foutenpagina die erop wijst dat de server niet kan worden bereikt. U kunt de standaardfoutenpagina met voeten treden door statische dossiers in zelf-ontvangen opslag zoals Amazon S3 of Azure Blob Storage te ontvangen, en van verwijzingen te voorzien in een configuratiedossier dat door het gebruiken van wordt opgesteld [Cloud Manager Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+In de onwaarschijnlijke gebeurtenis dat [ Adobe-geleide CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) niet de AEM oorsprong kan bereiken, dient CDN door gebrek een unbranded, generische foutenpagina die erop wijst dat de server niet kan worden bereikt. U kunt de standaardfoutenpagina met voeten treden door statische dossiers in zelf-ontvangen opslag zoals de Opslag van Amazon S3 of van Azure Blob te ontvangen, en hen van verwijzingen te voorzien in een configuratiedossier dat door de [ Pijpleiding van de Configuratie van Cloud Manager te gebruiken ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) wordt opgesteld.
 
 ## Instellen {#setup}
 
@@ -26,14 +26,14 @@ config/
      cdn.yaml
 ```
 
-* De `cdn.yaml` Het configuratiebestand moet zowel metagegevens als de regels bevatten die in de onderstaande voorbeelden worden beschreven. De `kind` parameter moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie die momenteel is `1`.
+* Het configuratiebestand van `cdn.yaml` moet zowel metagegevens als de regels bevatten die in de onderstaande voorbeelden worden beschreven. De parameter `kind` moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie, die momenteel `1` is.
 
-* Maak een gerichte configuratiepijplijn voor implementatie in Cloud Manager. Zie [productiepijpleidingen configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [configureren van niet-productiepijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* Creeer een gerichte plaatsing config pijpleiding in Cloud Manager. Zie [ vormend productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [ vormend niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-**Notities**
+**Nota&#39;s**
 
 * RDEs steunt momenteel niet de configuratiepijplijn.
-* U kunt `yq` om de opmaak van uw configuratiebestand lokaal te valideren (bijvoorbeeld `yq cdn.yaml`).
+* Met `yq` kunt u de YAML-opmaak van uw configuratiebestand lokaal valideren (bijvoorbeeld `yq cdn.yaml` ).
 
 ### Configuratie {#configuration}
 

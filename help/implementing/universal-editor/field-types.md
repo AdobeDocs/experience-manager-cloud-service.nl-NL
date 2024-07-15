@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1146'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Dit document biedt een overzicht van een modeldefinitie en van de velden en comp
 
 >[!TIP]
 >
->Als u niet bekend bent met het instrumenteren van uw app voor de Universal Editor, raadpleegt u het document [Overzicht van de Universal Editor voor AEM ontwikkelaars.](/help/implementing/universal-editor/developer-overview.md)
+>Als u niet vertrouwd met bent hoe te om uw app voor de Universele Redacteur van een instrument te voorzien, te zien gelieve het document [ Universeel Overzicht van de Redacteur voor AEM Ontwikkelaars.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Modeldefinitiestructuur {#model-structure}
 
@@ -41,9 +41,9 @@ De modeldefinitie is een JSON-structuur, te beginnen met een array van modellen.
 ]
 ```
 
-Zie de **[Velden](#fields)** voor meer informatie over het definiëren van uw `fields` array.
+Zie de **[sectie van Gebieden](#fields)** van dit document voor meer informatie over hoe te om uw `fields` serie te bepalen.
 
-Als u de modeldefinitie met een component wilt gebruiken, `data-aue-model` kan worden gebruikt.
+Als u de modeldefinitie met een component wilt gebruiken, kunt u het attribuut `data-aue-model` gebruiken.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
@@ -77,11 +77,11 @@ Een veldobject heeft de volgende typedefinitie.
 | `description` | `FieldDescription` | Beschrijving van het veld | Nee |
 | `placeholder` | `string` | Plaatsaanduiding voor het veld | Nee |
 | `value` | `FieldValue` | Standaardwaarde | Nee |
-| `valueType` | `ValueType` | Standaardvalidatie, kan `string`, `string[]`, `number`, `date`, `boolean` | Nee |
+| `valueType` | `ValueType` | Standaardvalidatie, kan `string`, `string[]`, `number`, `date`, `boolean` zijn | Nee |
 | `required` | `boolean` | Is het vereiste veld | Nee |
 | `readOnly` | `boolean` | Is het veld alleen-lezen | Nee |
 | `hidden` | `boolean` | Is het veld standaard verborgen | Nee |
-| `condition` | `RulesLogic` | Regel om het gebied te tonen of te verbergen dat op een [conditie](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Nee |
+| `condition` | `RulesLogic` | Regel om het gebied te tonen of te verbergen dat op a [ wordt gebaseerd voorwaarde ](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Nee |
 | `multi` | `boolean` | Is het veld een veld met meerdere velden | Nee |
 | `validation` | `ValidationType` | Validatieregel(s) voor het veld | Nee |
 | `raw` | `unknown` | Onbewerkte gegevens die door de component kunnen worden gebruikt | Nee |
@@ -92,21 +92,21 @@ Hieronder vindt u de componenttypen die u kunt gebruiken voor het weergeven van 
 
 | Beschrijving | Componenttype |
 |---|---|
-| [AEM](#aem-tag) | `aem-tag` |
-| [Inhoud AEM](#aem-content) | `aem-content` |
-| [Boolean](#boolean) | `boolean` |
-| [Groep selectievakjes](#checkbox-group) | `checkbox-group` |
-| [Container](#container) | `container` |
-| [Inhoudsfragment](#content-fragment) | `aem-content-fragment` |
-| [Datum en tijd](#date-time) | `date-time` |
-| [Multiselect](#multiselect) | `multiselect` |
-| [Getal](#number) | `number` |
-| [Groep keuzerondjes](#radio-group) | `radio-group` |
-| [Referentie](#reference) | `reference` |
-| [RTF](#rich-text) | `richtext` |
-| [Selecteren](#select) | `select` |
-| [Tab](#tab) | `tab` |
-| [Tekst](#text) | `text` |
+| [ AEM markering ](#aem-tag) | `aem-tag` |
+| [ AEM Inhoud ](#aem-content) | `aem-content` |
+| [ Van Boole ](#boolean) | `boolean` |
+| [ Checkbox Groep ](#checkbox-group) | `checkbox-group` |
+| [ Container ](#container) | `container` |
+| [ het Fragment van de Inhoud ](#content-fragment) | `aem-content-fragment` |
+| [ Tijd van de Datum ](#date-time) | `date-time` |
+| [ Multiselect ](#multiselect) | `multiselect` |
+| [ Aantal ](#number) | `number` |
+| [ Groep van de Keuzerondjes ](#radio-group) | `radio-group` |
+| [ Verwijzing ](#reference) | `reference` |
+| [ Rijke Tekst ](#rich-text) | `richtext` |
+| [ Uitgezocht ](#select) | `select` |
+| [ Lusje ](#tab) | `tab` |
+| [ Tekst ](#text) | `text` |
 
 #### AEM {#aem-tag}
 
@@ -114,7 +114,7 @@ Een AEM-tagcomponenttype maakt een AEM tagkiezer mogelijk, die kan worden gebrui
 
 >[!BEGINTABS]
 
->[!TAB Monster]
+>[!TAB  Steekproef ]
 
 ```json
 {
@@ -130,9 +130,9 @@ Een AEM-tagcomponenttype maakt een AEM tagkiezer mogelijk, die kan worden gebrui
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van AEM type tagcomponent](assets/component-types/aem-tag-picker.png)
+![ Screenshot van AEM type van markeringscomponent ](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
@@ -142,7 +142,7 @@ Een AEM type inhoudcomponent laat een AEM inhoudkiezer toe, die kan worden gebru
 
 >[!BEGINTABS]
 
->[!TAB Monster]
+>[!TAB  Steekproef ]
 
 ```json
 {
@@ -159,9 +159,9 @@ Een AEM type inhoudcomponent laat een AEM inhoudkiezer toe, die kan worden gebru
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van AEM type inhoudcomponent](assets/component-types/aem-content-picker.png)
+![ Screenshot van AEM type van inhoudcomponent ](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
@@ -175,7 +175,7 @@ Een type van booleaanse component slaat een eenvoudige waar/vals waarde op die a
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld 1]
+>[!TAB  Steekproef 1 ]
 
 ```json
 {
@@ -191,7 +191,7 @@ Een type van booleaanse component slaat een eenvoudige waar/vals waarde op die a
 }
 ```
 
->[!TAB Voorbeeld 2]
+>[!TAB  Steekproef 2 ]
 
 ```json
 {
@@ -210,9 +210,9 @@ Een type van booleaanse component slaat een eenvoudige waar/vals waarde op die a
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van het type Boolean-component](assets/component-types/boolean.png)
+![ Schermafbeelding van componenttype boolean ](assets/component-types/boolean.png)
 
 >[!ENDTABS]
 
@@ -222,7 +222,7 @@ Net als bij een booleaanse component staat een componenttype voor selectievakjes
 
 >[!BEGINTABS]
 
->[!TAB Monster]
+>[!TAB  Steekproef ]
 
 ```json
 {
@@ -242,9 +242,9 @@ Net als bij een booleaanse component staat een componenttype voor selectievakjes
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van het componenttype van de checkbox groep](assets/component-types/checkbox-group.png)
+![ Schermafbeelding van het type van checkbox component van de groep ](assets/component-types/checkbox-group.png)
 
 >[!ENDTABS]
 
@@ -258,7 +258,7 @@ Met een containercomponenttype kunnen componenten worden gegroepeerd. Het biedt 
 
 >[!BEGINTABS]
 
->[!TAB Monster]
+>[!TAB  Steekproef ]
 
 ```json
  {
@@ -289,15 +289,15 @@ Met een containercomponenttype kunnen componenten worden gegroepeerd. Het biedt 
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van het type containercomponent](assets/component-types/container.png)
+![ Screenshot van het type van containercomponent ](assets/component-types/container.png)
 
 >[!ENDTABS]
 
 #### Inhoudsfragment {#content-fragment}
 
-De kiezer voor het inhoudsfragment kan worden gebruikt om een [Inhoudsfragment](/help/sites-cloud/authoring/fragments/content-fragments.md) en de variaties ervan (indien nodig). Het biedt een extra configuratie aan.
+De plukker van het Fragment van de Inhoud kan worden gebruikt om a [ het Fragment van de Inhoud ](/help/sites-cloud/authoring/fragments/content-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -305,7 +305,7 @@ De kiezer voor het inhoudsfragment kan worden gebruikt om een [Inhoudsfragment](
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld 1]
+>[!TAB  Steekproef 1 ]
 
 ```json
 [
@@ -324,9 +324,9 @@ De kiezer voor het inhoudsfragment kan worden gebruikt om een [Inhoudsfragment](
 ]
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van de kiezer voor inhoudsfragment](assets/component-types/aem-content-fragment.png)
+![ Schermafbeelding van de plukker van het Fragment van de Inhoud ](assets/component-types/aem-content-fragment.png)
 
 >[!ENDTABS]
 
@@ -343,11 +343,11 @@ Het biedt ook een aanvullend validatietype.
 
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
-| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `valueFormat` is niet voldaan | Nee |
+| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `valueFormat` niet wordt gehaald | Nee |
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld 1]
+>[!TAB  Steekproef 1 ]
 
 ```json
 {
@@ -363,7 +363,7 @@ Het biedt ook een aanvullend validatietype.
 }
 ```
 
->[!TAB Voorbeeld 2]
+>[!TAB  Steekproef 2 ]
 
 ```json
 {
@@ -415,15 +415,15 @@ Het biedt ook een aanvullend validatietype.
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van componenttype voor datumtijd](assets/component-types/date-time.png)
+![ Schermafbeelding van het type van de component van de datumtijd ](assets/component-types/date-time.png)
 
 >[!ENDTABS]
 
 #### Ervaar fragment {#experience-fragment}
 
-Met de fragmentkiezer voor ervaring kunt u een [Ervaar fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) en de variaties ervan (indien nodig). Het biedt een extra configuratie aan.
+De plukker van het Fragment van de Ervaring kan worden gebruikt om een [ Fragment van de Ervaring ](/help/sites-cloud/authoring/fragments/experience-fragments.md) en zijn variaties (indien vereist) te selecteren. Het biedt een extra configuratie aan.
 
 | Configuratie | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
@@ -431,7 +431,7 @@ Met de fragmentkiezer voor ervaring kunt u een [Ervaar fragment](/help/sites-clo
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld 1]
+>[!TAB  Steekproef 1 ]
 
 ```json
 [
@@ -450,9 +450,9 @@ Met de fragmentkiezer voor ervaring kunt u een [Ervaar fragment](/help/sites-clo
 ]
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Schermafbeelding van de fragmentkiezer van Experience](assets/component-types/aem-experience-fragment.png)
+![ Schermafbeelding van de plukker van het Fragment van de Ervaring ](assets/component-types/aem-experience-fragment.png)
 
 >[!ENDTABS]
 
@@ -463,7 +463,7 @@ Een multiselect componenttype stelt veelvoudige punten voor selectie in een drop
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld 1]
+>[!TAB  Steekproef 1 ]
 
 ```json
 {
@@ -483,7 +483,7 @@ Een multiselect componenttype stelt veelvoudige punten voor selectie in een drop
 }
 ```
 
->[!TAB Voorbeeld 2]
+>[!TAB  Steekproef 2 ]
 
 ```json
 {
@@ -518,10 +518,10 @@ Een multiselect componenttype stelt veelvoudige punten voor selectie in een drop
 }
 ```
 
->[!TAB Screenshots]
+>[!TAB  Screenshots ]
 
-![Screenshot van multiselect componenttype](assets/component-types/multiselect.png)
-![Screenshot van multiselect componenttype met groepering](assets/component-types/multiselect-group.png)
+![ Schermafbeelding van multiselect componenttype ](assets/component-types/multiselect.png)
+![ Schermafbeelding van multiselect componenttype met groepering ](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
 
@@ -533,11 +533,11 @@ Een type van aantalcomponent staat voor de input van een aantal toe. Er zijn aan
 |---|---|---|---|
 | `numberMin` | `number` | Minimaal toegestane aantal | Nee |
 | `numberMax` | `number` | Maximaal toegestaan aantal | Nee |
-| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `numberMin` of `numberMax` is niet voldaan | Nee |
+| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `numberMin` of `numberMax` niet wordt gehaald | Nee |
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld 1]
+>[!TAB  Steekproef 1 ]
 
 ```json
 {
@@ -554,7 +554,7 @@ Een type van aantalcomponent staat voor de input van een aantal toe. Er zijn aan
 }
 ```
 
->[!TAB Voorbeeld 2]
+>[!TAB  Steekproef 2 ]
 
 ```json
 {
@@ -578,9 +578,9 @@ Een type van aantalcomponent staat voor de input van een aantal toe. Er zijn aan
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van type Number-component](assets/component-types/number.png)
+![ Schermafbeelding van type van aantalcomponent ](assets/component-types/number.png)
 
 >[!ENDTABS]
 
@@ -590,7 +590,7 @@ Een componenttype voor een groep keuzerondjes maakt het mogelijk om meerdere opt
 
 >[!BEGINTABS]
 
->[!TAB Monster]
+>[!TAB  Steekproef ]
 
 ```json
 {
@@ -610,9 +610,9 @@ Een componenttype voor een groep keuzerondjes maakt het mogelijk om meerdere opt
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van het componenttype van de groep keuzerondjes](assets/component-types/radio.png)
+![ Schermafbeelding van het type van de component van de radiagroep ](assets/component-types/radio.png)
 
 >[!ENDTABS]
 
@@ -622,7 +622,7 @@ Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject 
 
 >[!BEGINTABS]
 
->[!TAB Monster]
+>[!TAB  Steekproef ]
 
 ```json
 {
@@ -638,9 +638,9 @@ Een type referentiecomponent maakt een verwijzing naar een ander gegevensobject 
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van referentiecomponenttype](assets/component-types/reference.png)
+![ Schermafbeelding van type van verwijzingscomponent ](assets/component-types/reference.png)
 
 >[!ENDTABS]
 
@@ -651,11 +651,11 @@ RTF-tekst staat toe dat tekst met meerdere regels wordt ingevoerd. Er zijn aanvu
 | Validatietype | Type waarde | Beschrijving | Vereist |
 |---|---|---|---|
 | `maxSize` | `number` | Maximum aantal toegestane tekens | Nee |
-| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `maxSize` is overschreden | Nee |
+| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `maxSize` wordt overschreden | Nee |
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld 1]
+>[!TAB  Steekproef 1 ]
 
 ```json
 {
@@ -671,7 +671,7 @@ RTF-tekst staat toe dat tekst met meerdere regels wordt ingevoerd. Er zijn aanvu
 }
 ```
 
->[!TAB Voorbeeld 2]
+>[!TAB  Steekproef 2 ]
 
 ```json
 {
@@ -691,9 +691,9 @@ RTF-tekst staat toe dat tekst met meerdere regels wordt ingevoerd. Er zijn aanvu
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van het type tekstgebiedcomponent](assets/component-types/richtext.png)
+![ Schermafbeelding van het type van de component van het tekstgebied ](assets/component-types/richtext.png)
 
 >[!ENDTABS]
 
@@ -703,7 +703,7 @@ Met een componenttype select kunt u één optie selecteren in een lijst met voor
 
 >[!BEGINTABS]
 
->[!TAB Monster]
+>[!TAB  Steekproef ]
 
 ```json
 {
@@ -723,9 +723,9 @@ Met een componenttype select kunt u één optie selecteren in een lijst met voor
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van select componenttype](assets/component-types/select.png)
+![ Schermafbeelding van uitgezochte componenttype ](assets/component-types/select.png)
 
 >[!ENDTABS]
 
@@ -733,13 +733,13 @@ Met een componenttype select kunt u één optie selecteren in een lijst met voor
 
 Met een componenttype tab kunt u andere invoervelden groeperen op meerdere tabbladen om de indeling van de auteurs te verbeteren.
 
-A `tab` definitie kan worden beschouwd als een scheidingsteken in de array van `fields`. Alles wat na een `tab` wordt op dat tabblad geplaatst totdat er een nieuwe `tab` aangetroffen, waarbij de volgende items op het nieuwe tabblad worden geplaatst.
+Een definitie `tab` kan worden beschouwd als een scheidingsteken in de array van `fields` . Alles wat na een `tab` wordt geleverd, wordt op dat tabblad geplaatst totdat er een nieuwe `tab` wordt gevonden. Hierna worden de volgende items op het nieuwe tabblad geplaatst.
 
 Als u items boven alle tabbladen wilt weergeven, moet u deze vóór alle tabbladen definiëren.
 
 >[!BEGINTABS]
 
->[!TAB Monster]
+>[!TAB  Steekproef ]
 
 ```json
 {
@@ -771,9 +771,9 @@ Als u items boven alle tabbladen wilt weergeven, moet u deze vóór alle tabblad
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Screenshot van type component tab](assets/component-types/tab.png)
+![ Schermafbeelding van type van lusjescomponent ](assets/component-types/tab.png)
 
 >[!ENDTABS]
 
@@ -786,11 +786,11 @@ Met tekst kunt u één regel tekst invoeren.  Het bevat aanvullende validatietyp
 | `minLength` | `number` | Minimum aantal toegestane tekens | Nee |
 | `maxLength` | `number` | Maximaal aantal tekens toegestaan | Nee |
 | `regExp` | `string` | Gewone expressie die moet overeenkomen met de invoertekst | Nee |
-| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `minLength`, `maxLength`, en/of `regExp` is/is overtreden | Nee |
+| `customErrorMsg` | `string` | Bericht dat wordt weergegeven als `minLength` , `maxLength` en/of `regExp` wordt/worden overtreden | Nee |
 
 >[!BEGINTABS]
 
->[!TAB Voorbeeld 1]
+>[!TAB  Steekproef 1 ]
 
 ```json
 {
@@ -806,7 +806,7 @@ Met tekst kunt u één regel tekst invoeren.  Het bevat aanvullende validatietyp
 }
 ```
 
->[!TAB Voorbeeld 2]
+>[!TAB  Steekproef 2 ]
 
 ```json
 {
@@ -830,8 +830,8 @@ Met tekst kunt u één regel tekst invoeren.  Het bevat aanvullende validatietyp
 }
 ```
 
->[!TAB Schermafbeelding]
+>[!TAB  Screenshot ]
 
-![Schermafbeelding van type tekstcomponent](assets/component-types/simpletext.png)
+![ Schermafbeelding van type van tekstcomponent ](assets/component-types/simpletext.png)
 
 >[!ENDTABS]

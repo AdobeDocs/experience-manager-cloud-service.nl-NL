@@ -1,6 +1,6 @@
 ---
 title: Ondersteunde bestandsindelingen en MIME-typen
-description: Bestandsindelingen en MIME-typen ondersteund door [!DNL Experience Manager Assets] als [!DNL Cloud Service].
+description: De formaten van het dossier en MIME types die door  [!DNL Experience Manager Assets]  als a  [!DNL Cloud Service] worden gesteund.
 contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 # [!DNL Assets] ondersteunde bestandsindelingen {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] als [!DNL Cloud Service] ondersteunt de basismogelijkheden voor inhoudsbeheer — opslag, beheer van metagegevens online, versioning, uploaden en downloaden, enzovoort — voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
+[!DNL Adobe Experience Manager] als [!DNL Cloud Service] biedt ondersteuning voor elementaire mogelijkheden voor inhoudsbeheer, zoals online opslag, beheer van metagegevens, versioning, uploaden en downloaden, enzovoort, voor elk binair bestand, onafhankelijk van de indeling. [!DNL Adobe Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke productfunctie biedt verschillende ondersteuning voor verschillende indelingen.
 
-Daarnaast [!DNL Experience Manager Assets] biedt uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide ondersteuning wordt geleverd met [microservices voor bedrijfsmiddelen](asset-microservices-configure-and-use.md).
+Daarnaast biedt [!DNL Experience Manager Assets] uitgebreide ondersteuning voor het genereren van voorvertoningen en vertoningen en voor het extraheren van metagegevens en tekst voor full-text indexering. Deze uitgebreide steun wordt verleend gebruikend [ activa microservices ](asset-microservices-configure-and-use.md).
 
 De hoogtepunten voor activaomzetting die de diensten van activa microservices gebruiken omvatten:
 
-* Sleutel [Bestandsindelingen voor Adoben](#adobe-formats) geproduceerd door Adobe van toepassingen en diensten, waaronder [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF.
-* Sleutel [afbeeldingsbestandsindelingen](#image-formats).
-* [Camera Raw bestandsindelingen](#camera-raw-formats) voor een groot aantal camera&#39;s, waaronder Canon, Nikon, Fujifilm, Olympus en andere fabrikanten (aangedreven door Adobe Camera Raw).
-* Vaak [documentindelingen](#document-formats), inclusief Microsoft® Office en Open Document-indelingen.
-* Breed bereik van [video](#video-formats) en [audio](#audio-formats) indelingen.
+* De zeer belangrijke [ formaten van het dossier van de Adobe ](#adobe-formats) die door de toepassingen en de diensten van de Adobe, met inbegrip van [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], en [!DNL Adobe Acrobat] of PDF worden geproduceerd.
+* Belangrijke [ beeldende dossierformaten ](#image-formats).
+* [ Camera Raw dossierformaten ](#camera-raw-formats) voor een brede waaier van camera&#39;s, met inbegrip van Canon, Nikon, Fujifilm, Olympus, en andere fabrikanten (aangedreven door Adobe Camera Raw).
+* Gemeenschappelijke [ documentformaten ](#document-formats), met inbegrip van Microsoft® Office en Open formaten van het Document.
+* Brede waaier van [ video ](#video-formats) en [ audio ](#audio-formats) formaten.
 
 De volgende legenda beschrijft het niveau van steun voor elk formaat.
 
@@ -51,7 +51,7 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Voor [!DNL Adobe InDesign] bestanden (INDD), wordt de grootte van uitvoeringen bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Voorkeuren configureren in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]**), zodat u grotere uitvoeringen kunt insluiten.
+\* Voor [!DNL Adobe InDesign] bestanden (INDD) wordt de grootte van uitvoeringen bepaald door de voorvertoning die is ingesloten in het INDD-bestand. Configureer de voorkeuren in [!DNL InDesign] (**[!UICONTROL Preferences > File Handling > Always Save Preview Images with Documents, Preview Size]** ), zodat u grotere uitvoeringen kunt insluiten.
 
 ## Afbeeldingsindelingen {#image-formats}
 
@@ -73,7 +73,7 @@ De volgende legenda beschrijft het niveau van steun voor elk formaat.
 
 De volgende 3D-indelingen worden ondersteund.
 
-Zie ook [Werken met 3D-middelen in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Zie ook [ Werk met 3D activa in Dynamic Media ](/help/assets/dynamic-media/assets-3d.md).
 
 | Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -87,7 +87,7 @@ Zie ook [Werken met 3D-middelen in Dynamic Media](/help/assets/dynamic-media/ass
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## [!DNL Camera Raw] formaten {#camera-raw-formats}
+## [!DNL Camera Raw] indelingen {#camera-raw-formats}
 
 | Bestandsindeling | Miniaturen genereren | Metagegevensextractie | Breedte/Hoogte |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -175,7 +175,7 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 
 ## Audio-indelingen {#audio-formats}
 
-[!DNL Assets] als [!DNL Cloud Service] biedt XMP ondersteuning voor het ophalen van metagegevens voor de audio-indelingen AIF, ASF, M4A, MP3, WAV en WMA.
+[!DNL Assets] als [!DNL Cloud Service] biedt ondersteuning voor XMP metagegevensextractie voor AIF-, ASF-, M4A-, MP3-, WAV- en WMA-audio-indelingen.
 
 ## Ondersteunde indelingen voor audio- en video-transcriptie {#audio-video-transcription-formats}
 
@@ -229,23 +229,23 @@ De volgende documentindelingen worden ondersteund voor functies voor middelenbeh
 | Indeling | Uploaden (invoerindeling) | Afbeeldingsvoorinstelling maken (uitvoerindeling) | Dynamische vertoning voorvertonen | Dynamische uitvoering leveren | Dynamische uitvoering downloaden | Typen instellen die deze indeling ondersteunen |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | - | - | - | ✓ | - | - |
-| BMP | ✓ | - | - | - | - | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
-| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| BMP | ✓ | - | - | - | - | [ Beeld ](/help/assets/dynamic-media/image-sets.md), [ Gemengde Media ](/help/assets/dynamic-media/mixed-media-sets.md), en [ Spin ](/help/assets/dynamic-media/spin-sets.md) |
+| [ EPS ](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | HEIC | - | - | - | ✓ | - | - |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [ Beeld ](/help/assets/dynamic-media/image-sets.md), [ Gemengde Media ](/help/assets/dynamic-media/mixed-media-sets.md), en [ Spin ](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [ Beeld ](/help/assets/dynamic-media/image-sets.md), [ Gemengde Media ](/help/assets/dynamic-media/mixed-media-sets.md), en [ Spin ](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | - | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/dynamic-media/image-sets.md), [Gemengde media](/help/assets/dynamic-media/mixed-media-sets.md), en [Draaien](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [ Beeld ](/help/assets/dynamic-media/image-sets.md), [ Gemengde Media ](/help/assets/dynamic-media/mixed-media-sets.md), en [ Spin ](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | - | - | - | ✓ | - | - |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
-‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die wordt gegenereerd door [!DNL Adobe Photoshop] en die wordt opgenomen in het PSD-bestand. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
 ## Dynamic Media - Niet-ondersteunde rasterafbeeldingsindelingen {#unsupported-raster-image-formats-dm}
 
-De volgende subtypen van rasterafbeeldingsbestandsindelingen die *niet* ondersteund in [!DNL Dynamic Media]:
+De volgende subtypes van het dossierformaten van het roosterbeeld die *niet* in [!DNL Dynamic Media] worden gesteund:
 
 * PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
 * PSB-bestanden
@@ -256,19 +256,19 @@ De volgende subtypen van rasterafbeeldingsbestandsindelingen die *niet* onderste
 
 ## Dynamic Media - Ondersteunde 3D-bestandsindelingen {#support-3d-formats-dynamic-media}
 
-Zie ook [Ondersteunde 3D-indelingen](/help/assets/file-format-support.md#support-3d-formats)
+Zie ook [ 3D gesteunde formaten ](/help/assets/file-format-support.md#support-3d-formats)
 
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
 | GLB | Binaire GL-transmissie | model/gltf-binair | Hiermee neemt u de materialen en structuren op als één enkel element. |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif | |
 | STL | Stereolithografie | application/vnd.ms-pki.stl | |
-| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Ondersteuning voor insluiten en het genereren van miniaturen. 3D-voorvertoningen worden nog niet ondersteund.* USDZ is een 3D-indeling die door Safari of iOS kan worden weergegeven. |
+| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Steun voor opname en duimnagelgeneratie; 3D voorproeven nog niet gesteund.* USDZ is een 3D-indeling die door Safari of iOS kan worden weergegeven. |
 
-**Zie ook**
+**zie ook**
 
-* [Elementen vertalen](translate-assets.md)
-* [Elementen HTTP-API](mac-api-assets.md)
+* [Assets vertalen](translate-assets.md)
+* [ASSETS HTTP API](mac-api-assets.md)
 * [Zoeken in middelen](search-assets.md)
 * [Verbonden elementen](use-assets-across-connected-assets-instances.md)
 * [Elementen rapporteren](asset-reports.md)
@@ -278,9 +278,9 @@ Zie ook [Ondersteunde 3D-indelingen](/help/assets/file-format-support.md#support
 * [Zoeken in facetten](search-facets.md)
 * [Verzamelingen beheren](manage-collections.md)
 * [Bulkmetagegevens importeren](metadata-import-export.md)
-* [Middelen publiceren naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
->* [Verwerking van bedrijfsmiddelen met behulp van asset microservices](asset-microservices-overview.md).
->* [Ondersteunde bestandsindelingen voor slimme tags van op tekst gebaseerde elementen](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [ verwerking van Activa gebruikend activa microservices ](asset-microservices-overview.md).
+>* [ Gesteunde dossierformaten voor slimme het etiketteren van op tekst-gebaseerde activa ](/help/assets/smart-tags.md#smart-tags-supported-file-formats)

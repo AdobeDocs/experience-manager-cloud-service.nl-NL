@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # Een adaptief formulier verzenden naar Azure Blob Storage
 
-De **[!UICONTROL Submit to Azure Blob Storage]**  Met Actie verzenden wordt een adaptief formulier verbonden met een Microsoft® Azure-portal. U kunt de formuliergegevens, bestanden, bijlagen of Document of Record verzenden naar de aangesloten Azure Storage-containers.
+Met de **[!UICONTROL Submit to Azure Blob Storage]** -actie Verzenden wordt een adaptief formulier verbonden met een Microsoft® Azure-portal. U kunt de formuliergegevens, bestanden, bijlagen of Document of Record verzenden naar de aangesloten Azure Storage-containers.
 
-AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. Meer informatie over deze opties vindt u in het gedeelte [Handeling Adaptief verzenden van formulier](/help/forms/configure-submit-actions-core-components.md) artikel.
+AEM as a Cloud Service biedt verschillende mogelijkheden in het vak Acties verzenden voor het verwerken van verzonden formulieren. U kunt meer over deze opties leren in het [ AanpassingsVorm voorlegt Artikel van de Actie ](/help/forms/configure-submit-actions-core-components.md).
 
 ## Voordelen
 
@@ -30,22 +30,22 @@ De voordelen van de integratie van Azure Blob Storage met AEM Forms zijn:
 
 Om Azure Blob Storage te gebruiken in Adaptive Forms Submit Action:
 
-1. [Een Azure Blob Storage Container maken](#create-a-azure-blob-storage-container-create-azure-configuration): AEM Forms wordt aangesloten op Azure Storage containers.
-2. [Azure Storage Configuration in een Adaptive Form gebruiken](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Het verbindt uw Adaptief Vorm met gevormde Azure opslagcontainers.
+1. [ creeer een Azure BlobContainer van de Opslag ](#create-a-azure-blob-storage-container-create-azure-configuration): Het verbindt AEM Forms met de containers van de Azure Opslag.
+2. [ Gebruik de Azure Configuratie van de Opslag in een AanpassingsVorm ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Het verbindt uw AanpassingsVorm met gevormde de containers van de Opslag Azure.
 
 ### Een Azure Blob Storage Container maken {#create-azure-configuration}
 
 AEM Forms aansluiten op uw Azure Storage-containers:
-1. Ga naar uw **AEM Forms-auteur** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure Storage]**.
-1. Wanneer u de **[!UICONTROL Azure Storage]**, u wordt doorgestuurd naar **[!UICONTROL Azure Storage Browser]**.
-1. Selecteer een **Configuratie-container**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
+1. Ga naar uw **1} instantie van de Auteur van AEM Forms >**[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**>**[!UICONTROL Azure Storage]**.**
+1. Nadat u de **[!UICONTROL Azure Storage]** hebt geselecteerd, wordt u omgeleid naar **[!UICONTROL Azure Storage Browser]** .
+1. Selecteer de Container van de a **Configuratie**. De configuratie wordt opgeslagen in de geselecteerde Container van de Configuratie.
 1. Klik op **[!UICONTROL Create]**. De wizard Azure Storage Configuration wordt weergegeven.
 
-   ![Azure Storage Configuration](/help/forms/assets/azure-storage-configuration.png)
+   ![ Azure Configuratie van de Opslag ](/help/forms/assets/azure-storage-configuration.png)
 
-1. Geef de **[!UICONTROL Title]**, **[!UICONTROL Azure Storage Account]** en **[!UICONTROL Azure Access key]**.
+1. Geef de waarden **[!UICONTROL Title]** , **[!UICONTROL Azure Storage Account]** en **[!UICONTROL Azure Access key]** op.
 
-   * U kunt `Azure Storage Account` naam en `Azure Access key` van de Opslagaccounts in de Microsoft® Azure-portal.
+   * U kunt `Azure Storage Account` name and `Azure Access key` ophalen van Storage Accounts in de Microsoft® Azure-portal.
 <!--
 
     >[!NOTE]
@@ -63,21 +63,21 @@ Nu kunt u deze Azure Storage Container-configuratie gebruiken voor de verzendact
 ### Azure Storage Configuration in een Adaptive Form gebruiken {#use-azure-storage-configuartion-in-af}
 
 U kunt de gemaakte Azure Storage Container-configuratie in een Adaptief formulier gebruiken om gegevens of gegenereerd Document of Record in Azure Storage-container op te slaan. Voer de volgende stappen uit om de configuratie van de Azure Storage container in een Adaptief formulier te gebruiken als:
-1. Een [Adaptief formulier](/help/forms/creating-adaptive-form-core-components.md).
+1. Creeer een [ Aangepaste Vorm ](/help/forms/creating-adaptive-form-core-components.md).
 
    >[!NOTE]
    >
-   > * Hetzelfde selecteren [!UICONTROL Configuration Container] voor een adaptief formulier, waar u uw OneDrive-opslag hebt gemaakt.
-   > * Indien niet [!UICONTROL Configuration Container] is geselecteerd, dan is de globale [!UICONTROL Storage Configuration] worden weergegeven in het eigenschappenvenster Handeling verzenden.
+   > * Selecteer hetzelfde [!UICONTROL Configuration Container] voor een adaptief formulier, waar u OneDrive-opslagruimte hebt gemaakt.
+   > * Als er geen [!UICONTROL Configuration Container] is geselecteerd, worden de algemene [!UICONTROL Storage Configuration] -mappen weergegeven in het eigenschappenvenster Handeling verzenden.
 
-1. Selecteren **Handeling verzenden** als **[!UICONTROL Submit to Azure Blob Storage]**.
-   ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
+1. Selecteer **voorleggen Actie** als **[!UICONTROL Submit to Azure Blob Storage]**.
+   ![ Azure Blob Storage GIF ](/help/forms/assets/azure-submit-video.gif)
 
-1. Selecteer de **[!UICONTROL Storage Configuration]**, waar u de gegevens wilt opslaan.
-1. Klikken **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
+1. Selecteer **[!UICONTROL Storage Configuration]** waar u de gegevens wilt opslaan.
+1. Klik op **[!UICONTROL Save]** om de verzendinstellingen op te slaan.
 
 Wanneer u het formulier verzendt, worden de gegevens opgeslagen in de opgegeven configuratie van de Azure Storage Container.
-De mapstructuur voor het opslaan van gegevens is `/configuration_container/form_name/year/month/date/submission_id/data`.
+De mapstructuur voor het opslaan van gegevens is `/configuration_container/form_name/year/month/date/submission_id/data` .
 
 ## Verwante artikelen
 

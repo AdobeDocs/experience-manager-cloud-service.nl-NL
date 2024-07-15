@@ -28,7 +28,7 @@ Ontwikkelaars profiteren van de veelzijdigheid van de Universal Editor, omdat de
 
 De Universal Editor kan van instrumenten worden voorzien voor elke implementatie, voor elke inhoud en voor elk aspect van de inhoud.
 
-![Wat maakt het universeel?](assets/universal.png)
+![ wat maakt het universeel ](assets/universal.png)
 
 ### Willekeurige implementatie {#any-implementation}
 
@@ -38,33 +38,33 @@ Gebruikers denken vaak dat een implementatie zonder kop de auteurs beperkt tot h
 
 De vereisten voor een implementatie om de Universele Redacteur te gebruiken zijn recht-voorwaarts en steunen het volgende:
 
-* **Elke architectuur** - Server-side rendering, edge-side rendering, client-side rendering, enzovoort.
-* **Willekeurig kader** - Vanilla AEM, of een ander framework van derden zoals React, Next.js, Angular enzovoort.
-* **Willekeurig hosten** - Kan lokaal worden gehost op AEM of op een extern domein
+* **Om het even welke Architectuur** - server-kant teruggeven, rand-kant teruggeven, cliënt-kant teruggeven, etc.
+* **Om het even welk Kader** - Vanilla AEM, of om het even welk derdekader zoals React, Next.js, Angular, etc.
+* **om het even welk Hosting** - kan plaatselijk aan AEM, of op een ver domein worden ontvangen
 
 ### Willekeurige inhoud {#any-content}
 
-De auteur van een inhoud moet dezelfde krachtige bewerkingservaring hebben als de AEM pagina-editor. Maar in de Universal Editor kunnen auteurs van inhoud bewerken **alle** inhoud visueel en in context en ondersteunt:
+De auteur van een inhoud moet dezelfde krachtige bewerkingservaring hebben als de AEM pagina-editor. Maar de Universele Redacteur staat inhoudsauteurs toe om **om het even welke** inhoud visueel en in context uit te geven en steunt:
 
-* **Paginastructuren AEM** - Genest `cq:Components` van `cq:Pages`, inclusief ervaringsfragmenten
-* **Inhoudsfragmenten AEM** - Inhoud uit inhoudsfragmenten bewerken zoals deze in de context van de ervaring worden weergegeven.
-* **Documenten** - Het bewijs van concepten heeft getoond dat ook Word, Excel, de Documenten van Google of van de Prijsverhoging de zelfde manier (dit is WIP) kunnen worden uitgegeven.
+* **AEM de Structuren van de Pagina** - genestelde `cq:Components` van `cq:Pages`, met inbegrip van de Fragmenten van de Ervaring
+* **AEM de Fragmenten van de Inhoud** - geef inhoud van de Fragmenten van de Inhoud uit aangezien zij in-context van de ervaring verschijnen.
+* **Documenten** - het Bewijs van concepten heeft getoond dat ook Word, Excel, de Documenten van Google of de documenten van de Prijsverhoging de zelfde manier (dit is WIP) kunnen ook worden uitgegeven.
 
 ### Willekeurig aspect {#any-aspect}
 
 Voor de auteur van inhoud gaat de inhoud niet alleen over de informatie in de inhoud, maar ook over de manier waarop deze wordt gerenderd en ontvangen. De inhoud wordt geleverd met extra meta-gegevens en instrumentatieregels, die de Universele Redacteur kan begrijpen en uitgeven met inbegrip van:
 
-* **Lay-out en stijl toepassen** - Door gebruik te maken van een stijlsysteem kunnen de marketingdeskundige en de auteur van de inhoud verschillende stijlen toepassen op de inhoud ervan en verschillende lay-outs maken voor de inhoud, zoals kolommen, carrousels, tabs, accordeons, enzovoort.
+* **Toepassend Lay-out &amp; Stijl** - door een stijlsysteem te gebruiken, kunnen de marketing deskundige en de inhoudauteur verschillende stijlen op hun inhoud toepassen en verschillende lay-outs voor de inhoud zoals kolommen, carrousels, lusjes, accordeons, etc. tot stand brengen.
 
 ## Waarde {#value}
 
 Door de ervaring voor het bewerken van inhoud los te koppelen van een bepaald systeem voor het leveren van inhoud, wordt de editor echt universeel en flexibel, zodat de auteur van de inhoud uitzonderlijke ervaringen kan opdoen, de snelheid van de inhoud kan verhogen en een geavanceerde ontwikkelaarservaring kan bieden.
 
-![De waarde van de universele editor](assets/value.png)
+![ de waarde van de Universele Redacteur ](assets/value.png)
 
-* **Uitzonderlijke ervaringen leveren** - Om artsen in staat te stellen een aantrekkelijke ervaring voor bezoekers te creëren, staat de Universele Redacteur artsen toe om de inhoud in de context van de voorproef tot stand te brengen en uit te geven. Hierdoor kunnen ze inhoud maken die past bij het ontwerp van de ervaring en die een zinvolle reis voor bezoekers is.
-* **Snelheid van inhoud verhogen** - Als u de beheerworkflow van artsen wilt stroomlijnen, kunt u met de Universal Editor inhoud bewerken in de voorvertoning. Zo kunt u artsen begeleiden door alleen de opties weer te geven die relevant zijn voor die context en de workflow onafhankelijk te maken van de inhoudsbronnen.
-* **Recentere ontwikkelaarservaring** - Om het heterogene toepassingslandschap in de wereld te ondersteunen, is de Universal Editor volledig ontkoppeld en is hij technologisch gezien niet-afhankelijk, zodat ontwikkelaars hun voorkeurstechnologie kunnen gebruiken om de ervaring te implementeren.
+* **lever Uitzonderlijke Ervaringen** - om artsen toe te laten om een dwingende ervaring voor bezoekers tot stand te brengen, staat de Universele Redacteur artsen toe om de inhoud in de context van de voorproef tot stand te brengen en uit te geven. Hierdoor kunnen ze inhoud maken die past bij het ontwerp van de ervaring en die een zinvolle reis voor bezoekers is.
+* **Verhoog de Snelheid van de Inhoud** - om het beheerswerkschema van artsen te stroomlijnen, staat de Universele Redacteur het uitgeven inhoud binnen de voorproef toe om artsen te begeleiden door slechts de opties te tonen die voor die context relevant zijn en het werkschema onafhankelijk van de inhoudsbronnen maakt.
+* **Van de meest recente Ervaring van de Ontwikkelaar van 0} - om echt-wereld heterogeen toepassingslandschap te steunen, is de Universele Redacteur volledig ontkoppeld en technologie-agnostisch, toestaand ontwikkelaars om hun aangewezen technologiestapel te gebruiken om de ervaring uit te voeren.**
 
 ## De Universal Editor en de Content Fragment Editor {#universal-editor-content-fragment-editor}
 
@@ -86,12 +86,12 @@ Een marketingdeskundige wil inhoud maken die is toegesneden op de lay-out van ee
 
 Houd rekening met de volgende beperkingen wanneer u de Universal Editor verkent en de implementatie ervan in uw eigen projecten doorvoert.
 
-* Maximaal 25 AEM (Content Fragments, pages, Experience Fragments, Assets, etc.) moeten verwijzingen als instrumentatie op één enkele pagina zijn.
-* AEM as a Cloud Service is de enige ondersteunde AEM achterkant.
-* AEM as a Cloud Service release `2023.8.13099` of hoger is vereist.
+* Maximaal 25 AEM bronnen (Content Fragments, pages, Experience Fragments, Assets, enz.) moeten verwijzingen als instrumentatie op één enkele pagina zijn.
+* AEM as a Cloud Service is de enige ondersteunde AEM.
+* AEM as a Cloud Service-release `2023.8.13099` of hoger is vereist.
 * Inhoudsauteurs moeten hun eigen individuele Experience Cloud-accounts hebben.
 * Chrome en Edge zijn de ondersteunde browsers
 
 ## Volgende stappen {#next-steps}
 
-Zie het document [De universele Redacteur gebruikt Gevallen en Lerende Wegen](/help/implementing/universal-editor/use-cases.md) om meer over gemeenschappelijke gebruiksgevallen voor de Universele Redacteur te leren en de juiste documentatiemiddelen te ontdekken om u in uw project te steunen.
+Gelieve te zien het document [ Universele Gevallen van het Gebruik van de Redacteur en het Leren Wegen ](/help/implementing/universal-editor/use-cases.md) om meer over gemeenschappelijke gebruiksgevallen voor de Universele Redacteur te leren en de juiste documentatiemiddelen te ontdekken om u in uw project te steunen.

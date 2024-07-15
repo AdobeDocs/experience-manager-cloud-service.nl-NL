@@ -1,6 +1,6 @@
 ---
 title: Data Protection and Data Privacy Regulations - Adobe Experience Manager as a Cloud Service Foundation Readiness
-description: Meer informatie over Adobe Experience Manager as a Cloud Service Foundation-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations. Dit artikel omvat de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act, en hoe te om te voldoen wanneer het uitvoeren van een nieuw AEM as a Cloud Service project.
+description: Meer informatie over Adobe Experience Manager as a Cloud Service Foundation-ondersteuning voor de verschillende Data Protection and Data Privacy Regulations. Dit artikel omvat de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act, en de manier waarop een nieuw AEM as a Cloud Service-project moet worden uitgevoerd.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 feature: Compliance
 role: Admin, Architect, Developer, Leader
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat het voor u als Adobe klant betekent, zie [Privacy Center van Adobe](https://www.adobe.com/privacy.html).
+>Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat het voor u als Adobe klant betekent, zie ](https://www.adobe.com/privacy.html) het Centrum van de Privacy van de Adobe van 0} {.[
 
 ## Ondersteuning voor gegevensprivacy en -bescherming van AEM Stichting {#aem-foundation-data-privacy-and-protection-support}
 
@@ -31,7 +31,7 @@ Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt op
 
 ### Handmatige stappen {#manual-steps}
 
-1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Tools - Security - Users]** of door rechtstreeks te bladeren naar `https://<serveraddress>:<serverport>/security/users.html`
+1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Tools - Security - Users]** te bladeren of door rechtstreeks naar `https://<serveraddress>:<serverport>/security/users.html` te bladeren
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -39,32 +39,32 @@ Op het niveau van de AEM Stichting, wordt het Persoonlijke Gegevens die wordt op
 
 1. Zoek vervolgens naar de desbetreffende gebruiker door de naam in de zoekbalk boven aan de pagina te typen:
 
-   ![zoeken naar account](assets/dpp-foundation-01.png)
+   ![ onderzoek naar rekening ](assets/dpp-foundation-01.png)
 
-1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder **[!UICONTROL Details]** tab.
+1. Open ten slotte het gebruikersprofiel door erop te klikken en controleer het vervolgens onder de tab **[!UICONTROL Details]** .
 
-   ![gebruikersprofiel](assets/dpp-foundation-02.png)
+   ![ gebruikersprofiel ](assets/dpp-foundation-02.png)
 
 ### HTTP-API {#http-api}
 
 Zoals vermeld, verstrekt de Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
 
-**UserProperties-API**
+**UserProperties API**
 
 ```shell
 curl -u user:password http://localhost:4502/libs/granite/security/search/profile.userproperties.json\?authId\=cavery
 ```
 
-**Verkopen-API**
+**het Verdelen API**
 
-**De startpagina van de gebruiker opzoeken:**
+**het ontdekken van het gebruikershuis:**
 
 ```xml
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-**Gebruikersgegevens ophalen:**
+**het Terugwinnen van gebruikersgegevens:**
 
 Gebruikend de knoopweg van het huisbezit van de nuttige lading JSON die van het bovengenoemde bevel is teruggekeerd:
 
@@ -83,34 +83,34 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Open de console van het Beleid van de Gebruiker en onderzoek naar de gebruiker in kwestie, zoals hierboven beschreven.
 2. Houd de muisaanwijzer boven de gebruiker en klik op het pictogram Selecteren. Het profiel wordt grijs weergegeven om aan te geven dat het is geselecteerd.
 
-3. Klik in het bovenste menu op **Uitschakelen** om de gebruiker uit te schakelen (uit):
+3. In het hogere menu, klik **onbruikbaar maken** om (draai weg) de gebruiker onbruikbaar te maken:
 
-   ![account uitschakelen](assets/dpp-foundation-03.png)
+   ![ maak rekening ](assets/dpp-foundation-03.png) onbruikbaar
 
 4. Ten slotte, bevestig de actie.
 
    De gebruikersinterface geeft aan dat de gebruikersaccount is gedeactiveerd door uit te schakelen en een vergrendeling toe te voegen aan de profielkaart:
 
-   ![account uitgeschakeld](assets/dpp-foundation-04.png)
+   ![ gehandicapte rekening ](assets/dpp-foundation-04.png)
 
 ### Gebruikersprofielgegevens verwijderen {#delete-user-profile-information}
 
 >[!NOTE]
 >
->Voor AEM as a Cloud Service, is er geen handprocedure beschikbaar van UI voor de schrapping van een gebruikersprofiel, aangezien CRXDE niet toegankelijk is.
+>Voor AEM as a Cloud Service is er geen handmatige procedure beschikbaar in de UI voor het verwijderen van een gebruikersprofiel, aangezien CRXDE niet toegankelijk is.
 
 ### HTTP-API {#http-api-1}
 
-Bij de volgende procedures worden de `curl` opdrachtregelprogramma om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en verwijdert u de profielen die beschikbaar zijn op de standaardlocatie.
+In de volgende procedures wordt het opdrachtregelprogramma `curl` gebruikt om aan te geven hoe u de gebruiker kunt uitschakelen met het gereedschap **[!UICONTROL cavery]** `userId` en hoe u de gebruikersprofielen kunt verwijderen die beschikbaar zijn op de standaardlocatie.
 
-**De startpagina van de gebruiker opzoeken:**
+**het ontdekken van het gebruikershuis:**
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-**De gebruiker uitschakelen:**
+**onbruikbaar makend de gebruiker:**
 
 Gebruikend de knoopweg van het huisbezit van de nuttige lading JSON die van het bovengenoemde bevel is teruggekeerd:
 
@@ -118,7 +118,7 @@ Gebruikend de knoopweg van het huisbezit van de nuttige lading JSON die van het 
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-**Gebruikersprofielen verwijderen**
+**het Schrappen van gebruikersprofielen**
 
 Het gebruiken van de knoopweg van het huisbezit van de nuttige lading JSON die van het bevel van de rekeningsontdekking en het gekende uit de knoopplaatsen van het kaderprofiel is teruggekeerd:
 

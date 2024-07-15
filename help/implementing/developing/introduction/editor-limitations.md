@@ -21,13 +21,13 @@ Een auteur kan de volgende functionele beperkingen tegenkomen wanneer hij de edi
 
 ### Koppelingen niet actief {#links-not-active}
 
-Wanneer [pagina&#39;s bewerken](/help/sites-cloud/authoring/page-editor/edit-content.md), zijn koppelingen niet actief.
+Wanneer [ het uitgeven van een pagina ](/help/sites-cloud/authoring/page-editor/edit-content.md), zijn de verbindingen niet actief.
 
-* [Overschakelen op **Voorvertoning** mode](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) om te navigeren met de koppelingen in uw inhoud.
+* [ Schakelaar aan **Voorproef** wijze ](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) om het gebruiken van de verbindingen in uw inhoud te navigeren.
 
 ### Structuurpagina&#39;s {#structure-pages}
 
-Pagescann krijgt geen naam `structure`. Benoemde pagina&#39;s `structure` kan niet worden bewerkt in de pagina-editor.
+De naam van Pagescan is niet `structure` . Pagina&#39;s met de naam `structure` kunnen niet worden bewerkt in de pagina-editor.
 
 ## CSS-beperkingen {#css-limitations}
 
@@ -41,13 +41,13 @@ Absoluut gepositioneerde elementen kunnen problemen veroorzaken in de positie va
 
 ### vh Eenheden {#vh-units}
 
-`vh` De eenheden worden niet ondersteund omdat de hoogte van het iframe automatisch moet worden aangepast door AEM.
+`vh` -eenheden worden niet ondersteund, omdat de hoogte van het iframe automatisch moet worden aangepast door AEM.
 
 ### Vaste achtergrondafbeeldingen {#fixed-background-images}
 
 Vaste achtergrondafbeeldingen worden mogelijk niet als vast weergegeven tijdens het schuiven omdat deze zijn ingesloten in een iframe.
 
-* Selecteren **Pagina weergeven zoals gepubliceerd** in de koptekstbalk geeft de actie de pagina correct weer.
+* Het selecteren van **Pagina van de Mening zoals Gepubliceerd** in de acties van de kopbalbar toont behoorlijk de pagina.
 
 ### 100% hoogte {#height}
 

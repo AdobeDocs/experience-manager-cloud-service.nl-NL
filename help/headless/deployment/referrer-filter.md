@@ -19,16 +19,16 @@ Met het filter Adobe Experience Manager Referrer kunt u toegang krijgen van ande
 Een configuratie OSGi voor de Filter van de Referateur is nodig om toegang tot het eindpunt van GraphQL voor hoofdloze toepassingen over de POST van HTTP toe te laten. Wanneer het gebruiken van AEM Zwaarteloze Vraag die tot AEM over de GET van HTTP toegang hebben, is een configuratie van de Filter van de Referateur niet nodig.
 
 >[!WARNING]
-> AEM de Filter van de Referateur is geen OSGi- configuratiemotor, die betekent slechts één configuratie op de AEM dienst tegelijkertijd actief is. Voeg waar mogelijk geen aangepaste filterconfiguraties van Referrer toe, aangezien dit AEM native configuraties overschrijft en de productfunctionaliteit kan onderbreken.
+> AEM de Filter van de Referateur is geen OSGi- configuratiemechanisme, die betekent slechts één configuratie actief op de AEM dienst tegelijkertijd is. Voeg waar mogelijk geen aangepaste filterconfiguraties van Referrer toe, aangezien dit AEM native configuraties overschrijft en de productfunctionaliteit kan onderbreken.
 
 Dit wordt gedaan door een aangewezen configuratie OSGi voor de Filter toe te voegen Referrer die:
 
-* geeft een hostnaam voor een vertrouwde website op; ofwel `allow.hosts` of `allow.hosts.regexp`,
+* geeft de hostnaam van een vertrouwde website op; ofwel `allow.hosts` ofwel `allow.hosts.regexp` ,
 * verleent toegang voor deze gastheernaam.
 
-De naam van het bestand moet `org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
+De bestandsnaam moet `org.apache.sling.security.impl.ReferrerFilter.cfg.json` zijn.
 
-Bijvoorbeeld om toegang voor verzoeken met de Referiteur te verlenen `my.domain` u kunt:
+Als u bijvoorbeeld toegang wilt verlenen voor aanvragen bij de Referenter `my.domain` , kunt u:
 
 ```xml
 {
@@ -58,10 +58,10 @@ Bijvoorbeeld om toegang voor verzoeken met de Referiteur te verlenen `my.domain`
 >
 >* alleen toegang verlenen tot vertrouwde domeinen
 >* ervoor zorgen geen gevoelige informatie wordt blootgesteld
->* geen jokerteken gebruiken [*] syntaxis; dit zal zowel voor authentiek verklaarde toegang tot het eindpunt van GraphQL onbruikbaar maken als het aan de volledige wereld blootstellen.
+>* Gebruik geen vervangingswaarde [ * ] syntaxis; dit zal zowel voor authentiek verklaarde toegang tot het eindpunt van GraphQL onbruikbaar maken als het aan de volledige wereld blootstellen.
 
 >[!CAUTION]
 >
->Alle GraphQL [schema&#39;s](#schema-generation) (afgeleid van Content Fragment Models die **Ingeschakeld**) zijn leesbaar via het GraphQL-eindpunt.
+>Alle schema&#39;s van GraphQL [ ](#schema-generation) (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **** zijn toegelaten) zijn leesbaar door het eindpunt van GraphQL.
 >
 >Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden uitgelekt; dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.

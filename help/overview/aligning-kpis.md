@@ -23,23 +23,23 @@ ht-degree: 0%
 In een digitale wereld kun je bijna alles meten. Als u drie KPI&#39;s kiest voor uw Adobe Experience Manager-implementatie, helpt u uw team zich te richten op wat het belangrijkst is.
 
 
-## **Voer deze zes stappen uit om te bepalen wat u moet meten en hoe u kunt bepalen**
+## **volg deze zes stappen zodat kunt u beslissen wat te meten en hoe**
 
 
-1. **Begin met uw bedrijfsdoelstellingen.** Uw bedrijfsdoelstellingen kunnen bijvoorbeeld zijn om uw online-inkomsten te verhogen, de operationele kosten te verlagen of de juridische kosten te verlagen die samenhangen met schendingen van Digital Rights Managementen (DRM).
+1. **Begin met uw bedrijfsdoelstellingen.** Uw bedrijfsdoelstellingen kunnen bijvoorbeeld zijn om uw online-inkomsten te verhogen, de operationele kosten te verlagen of de juridische kosten te verlagen die gepaard gaan met schendingen van Digital Rights Managementen (DRM).
 
-1. **Bepaal op basis van uw doelstellingen uw doelen.** Uw doelstellingen zijn de specifieke resultaten die u wilt bereiken door Experience Manager als uw platform voor inhoudsbeheer aan te nemen. Als uw doelstelling is om online opbrengst te groeien, zou uw doel kunnen zijn om een 2 punttoename in omzetting voor alle pagina&#39;s met marketing inhoud te bereiken. Als u uw operationele uitgaven wilt verlagen, kunt u de productiviteit van teams die digitale inhoud maken met 20% verhogen.
+1. **Gebaseerd op uw doelstellingen, bepaal uw doelstellingen.** Uw doelstellingen zijn de specifieke resultaten die u wilt bereiken door Experience Manager aan te nemen als uw platform voor inhoudsbeheer. Als uw doelstelling is om online opbrengst te groeien, zou uw doel kunnen zijn om een 2 punttoename in omzetting voor alle pagina&#39;s met marketing inhoud te bereiken. Als u uw operationele uitgaven wilt verlagen, kunt u de productiviteit van teams die digitale inhoud maken met 20% verhogen.
 
    Idealiter heeft elk doel een basisnummer, zoals de huidige conversiesnelheid voor een specifieke paginacategorie. Basisnummers met betrekking tot bezoeken ter plaatse of conversie of online-inkomsten zijn relatief gemakkelijk te vinden. Voor doelstellingen met betrekking tot productiviteit of tijd aan markt, vergt het waarschijnlijk wat werk om een basislijn te berekenen. Het is echter de moeite waard, omdat duidelijke doelen u helpen meer waarde te krijgen van uw investering in Experience Manager.
 
-1. **Voor elk doel, identificeer prestatiesindicatoren.** Het kan bijvoorbeeld uw doel zijn om de juridische kosten voor DRM-overtredingen met $100.000 te verlagen. Een goede prestatie-indicator kan zijn &quot;100% van de verlopen elementen worden verwijderd uit digitale eigenschappen op of vóór de vervaldatum.&quot; Probeer om met veelvoudige indicatoren voor elk doel te komen. Als u met 2-3 bedrijfsdoelstellingen en 3-5 doelstellingen bent begonnen, zou u een lijst van 15-20 prestatiesindicatoren kunnen hebben.
+1. **voor elk doel, identificeer prestatiesindicatoren.** Het kan bijvoorbeeld uw doel zijn om de juridische kosten die aan DRM-overtredingen zijn gekoppeld, met $100.000 te verlagen. Een goede prestatie-indicator kan zijn &quot;100% van de verlopen elementen worden verwijderd uit digitale eigenschappen op of vóór de vervaldatum.&quot; Probeer om met veelvoudige indicatoren voor elk doel te komen. Als u met 2-3 bedrijfsdoelstellingen en 3-5 doelstellingen bent begonnen, zou u een lijst van 15-20 prestatiesindicatoren kunnen hebben.
 
-1. **Kies de drie indicatoren die het belangrijkst voor uw zaken zijn.** Deze indicatoren zijn uw KPIs. Ze zouden zich kunnen aanpassen aan drie bedrijfsdoelstellingen — elk bepleit door een verschillende manager op C-niveau — of alle drie KPI&#39;s zouden hetzelfde doel kunnen ondersteunen, als iedereen het ermee eens is dat het de belangrijkste is.
+1. **kies de drie indicatoren die het belangrijkst voor uw zaken zijn.** Dit zijn uw KPI&#39;s. Ze zouden zich kunnen aanpassen aan drie bedrijfsdoelstellingen — elk bepleit door een verschillende manager op C-niveau — of alle drie KPI&#39;s zouden hetzelfde doel kunnen ondersteunen, als iedereen het ermee eens is dat het de belangrijkste is.
 
-1. **Maak een meetbare methode voor elke PKI.** Nadat u KPIs hebt gekozen, download de malplaatje van de Methodologie van KPI van de Adobe, die u door de rest van het proces begeleidt.
+1. **creeer een meetbare methodologie voor elke KPI.** Nadat u de KPI&#39;s hebt gekozen, downloadt u de sjabloon KPI-methodologie van de Adobe, die u door de rest van het proces begeleidt.
 
-1. **Bepaal het publiek voor elke KPI.** Uw laatste stap voor deze week is het identificeren van de groep belanghebbenden die het meest om elk KPI geeft. Volgende week werkt u met elke groep om KPI te bevestigen, de methodologie te verfijnen en akkoord te gaan over de indeling en het tijdstip van uw rapporten.
+1. **bepaal het publiek voor elke KPI.** Uw laatste stap voor deze week is het identificeren van de groep belanghebbenden die het meest om elke PKI geeft. Volgende week werkt u met elke groep om KPI te bevestigen, de methodologie te verfijnen en akkoord te gaan over de indeling en het tijdstip van uw rapporten.
 
 >[!TIP]
 >
->[**De sjabloon voor de KPI-methodologie downloaden**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+>[**Download het malplaatje van Methodologie KPI** ](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)

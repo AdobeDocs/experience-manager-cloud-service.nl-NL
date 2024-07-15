@@ -15,25 +15,25 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Als caching in de Dispatcher wordt toegelaten dan [CORS-filter](/help/headless/deployment/cross-origin-resource-sharing.md) is niet nodig, zodat die sectie kan worden genegeerd.
+>Als het in het voorgeheugen onderbrengen in Dispatcher dan wordt toegelaten is de [ filter CORS ](/help/headless/deployment/cross-origin-resource-sharing.md) niet nodig, en zodat kan die sectie worden genegeerd.
 
-Caching van persisted query&#39;s wordt niet standaard ingeschakeld in de Dispatcher. De standaard enablement is niet mogelijk aangezien de klanten die CORS (het Delen van het Middel van de Cross-Origin) met veelvoudige oorsprong gebruiken hun configuratie van de Verzender moeten herzien en misschien bijwerken.
-
->[!NOTE]
->
->De Dispatcher slaat de `Vary` header.
->
->Caching van andere CORS-verwante kopballen kan in de Dispatcher worden toegelaten, maar zou ontoereikend kunnen zijn wanneer er veelvoudige CORS oorsprong zijn.
+Het in cache plaatsen van doorlopende query&#39;s is niet standaard ingeschakeld in de Dispatcher. Standaardactivering is niet mogelijk omdat klanten die gebruikmaken van CORS (Cross-Origin Resource Sharing) met meerdere origines hun Dispatcher-configuratie moeten controleren en mogelijk bijwerken.
 
 >[!NOTE]
 >
->Voor gedetailleerde documentatie over de Dispatcher raadpleegt u de [Handleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
+>De Dispatcher slaat de header `Vary` niet in cache op.
+>
+>Caching van andere CORS-verwante kopballen kan in de Dispatcher worden toegelaten, maar zou ontoereikend kunnen zijn wanneer er veelvoudige oorsprong CORS zijn.
+
+>[!NOTE]
+>
+>Voor gedetailleerde documentatie over Dispatcher, zie de [ Gids van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
 ## Het in cache plaatsen van doorlopende query&#39;s inschakelen {#enable-caching-persisted-queries}
 
-Om het in cache plaatsen van persistente query&#39;s in te schakelen, definieert u de variabele Dispatcher `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+Definieer de Dispatcher-variabele `CACHE_GRAPHQL_PERSISTED_QUERIES` als u het in cache plaatsen van voortgezette query&#39;s wilt inschakelen:
 
-1. De variabele toevoegen aan het Dispatcher-bestand `global.vars`:
+1. Voeg de variabele toe aan het Dispatcher-bestand `global.vars` :
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -41,7 +41,7 @@ Om het in cache plaatsen van persistente query&#39;s in te schakelen, definieert
 
 >[!NOTE]
 >
->Om individuele `ETag` koptekstberekening op de gepresteerde vragen in de cache (voor *elk* reactie die uniek is) `FileETag Digest` het plaatsen moet in de configuratie virtuele gastheer van de verzender configuratie worden gebruikt (als het niet reeds bestaat):
+>Om individuele `ETag` kopbalberekening op de caching persisted vragen (voor *te bereiken elk* antwoord dat uniek is) `FileETag Digest` het plaatsen moet in de virtuele gastheerconfiguratie van de vraagconfiguratie worden gebruikt (als het niet reeds bestaat):
 >
 >```xml
 ><Directory />    
@@ -52,18 +52,18 @@ Om het in cache plaatsen van persistente query&#39;s in te schakelen, definieert
 
 >[!NOTE]
 >
->Als u zich aan de [Vereisten van de verzender voor documenten die in cache kunnen worden geplaatst](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), voegt de Dispatcher het achtervoegsel toe `.json` aan alle persisted query-URL&#39;s, zodat het resultaat in de cache kan worden opgeslagen.
+>Om aan de [ Dispatcher vereisten voor documenten in overeenstemming te zijn die ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F) in het voorgeheugen kunnen worden opgeslagen, voegt Dispatcher het achtervoegsel `.json` aan alle voortgeduurde vraagURL&#39;s toe, zodat het resultaat in het voorgeheugen kan worden opgeslagen.
 >
 >Dit achtervoegsel wordt toegevoegd door herschrijft regel, zodra het voortbestaan vraagcaching wordt toegelaten.
 
 ## CORS-configuratie in de Dispatcher {#cors-configuration-in-dispatcher}
 
-Klanten die CORS-verzoeken gebruiken, moeten mogelijk hun CORS-configuratie in de Dispatcher controleren en bijwerken.
+Klanten die CORS-aanvragen gebruiken, moeten mogelijk hun CORS-configuratie in de Dispatcher controleren en bijwerken.
 
-* De `Origin` header mag niet worden doorgegeven aan AEM publish via Dispatcher:
-   * Controleer de `clientheaders.any` bestand.
-* In plaats daarvan, moeten de verzoeken CORS voor toegestane oorsprong op het niveau van de Verzender worden geëvalueerd. Deze benadering zorgt er ook voor dat aan CORS gerelateerde koppen in alle gevallen correct worden ingesteld op één plaats.
-   * Een dergelijke configuratie moet worden toegevoegd aan de `vhost` bestand. Hieronder wordt een voorbeeldconfiguratie gegeven; voor de eenvoud is alleen het gedeelte met betrekking tot CORS opgenomen. U kunt deze aanpassen voor uw specifieke gebruiksgevallen.
+* De header `Origin` mag niet worden doorgegeven aan AEM die publiceert via de Dispatcher:
+   * Controleer het `clientheaders.any` -bestand.
+* In plaats daarvan moeten CORS-aanvragen worden beoordeeld op toegestane oorsprong op Dispatcher-niveau. Deze benadering zorgt er ook voor dat aan CORS gerelateerde koppen in alle gevallen correct worden ingesteld op één plaats.
+   * Een dergelijke configuratie moet worden toegevoegd aan het `vhost` -bestand. Hieronder wordt een voorbeeldconfiguratie gegeven; voor de eenvoud is alleen het gedeelte met betrekking tot CORS opgenomen. U kunt deze aanpassen voor uw specifieke gebruiksgevallen.
 
   ```xml
   <VirtualHost *:80>

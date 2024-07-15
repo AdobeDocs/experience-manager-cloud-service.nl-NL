@@ -1,6 +1,6 @@
 ---
-title: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.9.0
-description: Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.9.0
+title: Opmerkingen bij de release AEM as a Cloud Service 2022.9.0 voor migratiehulpprogramma's
+description: Opmerkingen bij de release AEM as a Cloud Service 2022.9.0 voor migratiehulpprogramma's
 feature: Release Information
 exl-id: 581370ba-e3e8-487e-af83-a1eacbda2763
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 1%
 
 ---
 
-# Opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service versie 2022.9.0 {#release-notes}
+# Opmerkingen bij de release AEM as a Cloud Service 2022.9.0 voor migratiehulpprogramma&#39;s {#release-notes}
 
-Deze pagina schetst de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.9.0.
+Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2022.9.0.
 
 ## Analysator van best practices {#bpa-release}
 
@@ -23,7 +23,7 @@ De releasedatum voor de analyse van best practices v2.1.34 is 12 september 2022.
 
 ### Wat is er nieuw? {#what-is-new-bpa}
 
-* BPA kan nu ontdekken en rapporteren of de klant een configuratie van het douaneregistreerapparaat heeft toegevoegd. AEM as a Cloud Service ondersteunt geen aangepaste logbestanden. Alle logbestanden moeten naar `error.log`
+* BPA kan nu ontdekken en rapporteren of de klant een configuratie van het douaneregistreerapparaat heeft toegevoegd. AEM as a Cloud Service biedt geen ondersteuning voor aangepaste logbestanden. Alle logbestanden moeten worden geleid naar `error.log`
 * BPA kan nu over de verschillende binaire MIME types rapporteren die in de bewaarplaats van de klant aanwezig zijn en tellingen verbonden aan hen.
 
 ### Opgeloste problemen {#bug-fixes-bpa}

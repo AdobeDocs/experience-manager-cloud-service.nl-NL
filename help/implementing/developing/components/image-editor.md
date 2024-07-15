@@ -21,7 +21,7 @@ In de Afbeeldingseditor blijven afbeeldingskaartgebieden behouden als absolute e
 
 ### imageMap, eigenschap {#imagemap-property}
 
-De coördinaten van de afbeeldingskaart blijven als een `imageMap` door de Afbeeldingseditor. Deze heeft de volgende indeling.
+De coördinaten van de afbeeldingskaart worden door de afbeeldingseditor als een `imageMap` -eigenschap aan de JCR doorgegeven. Deze heeft de volgende indeling.
 
 In de eigenschap worden kaartgebieden als volgt opgeslagen:
 
@@ -46,13 +46,13 @@ Scalable Vector Graphics (SVG) wordt ondersteund door de Afbeeldingseditor.
 
 In bepaalde situaties moeten ontwerpacties voor bepaalde MIME-typen worden beperkt, omdat er geen ondersteuning is voor verwerking op de server. Het bewerken van SVG-afbeeldingen is bijvoorbeeld niet toegestaan.
 
-Plug-ins in de Afbeeldingseditor kunnen selectief worden ingeschakeld door een MIME-type in te stellen `supportedMimeTypes` eigenschap op het configuratieknooppunt van de individuele plug-in.
+Plug-ins in de Afbeeldingseditor kunnen selectief worden ingeschakeld door het MIME-type door de eigenschap `supportedMimeTypes` in te stellen op het configuratienode van de afzonderlijke plug-in.
 
 ### Voorbeeld {#example}
 
 Laten we bijvoorbeeld zeggen dat de mogelijkheid om uit te snijden alleen moet worden toegestaan voor GIF-, JPEG-, PNG-, WEBP- en TIFF-afbeeldingen.
 
-De `supportedMimeTypes` eigenschap moet vervolgens worden ingesteld als een tekenreeks van de toegestane MIME-typen op het configuratieknooppunt van de plug-in op het tabblad `cq:editConfig` knooppunt van de afbeeldingscomponent.
+De eigenschap `supportedMimeTypes` moet vervolgens worden ingesteld als een tekenreeks van de toegestane MIME-typen op het configuratieknooppunt van de insteekmodule op het knooppunt `cq:editConfig` van de afbeeldingscomponent.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

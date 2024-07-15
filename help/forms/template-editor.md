@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Een adaptieve formuliersjabloon maken {#adaptive-form-templates}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/creating-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/creating-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM 6,5 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
+| AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
 | AEM as a Cloud Service | Dit artikel |
 
-Wanneer u een formulier ontwerpt, voegt u velden en componenten toe om de formulierstructuur, inhoud en handelingen in de editor te definiëren. U voegt velden en componenten toe in het dialoogvenster `guideRootPanel` van de formuliercontainer. Met de Sjablooneditor kunt u een sjabloon maken met een basisstructuur en eerste inhoud die auteurs kunnen gebruiken om formulieren te maken.
+Wanneer u een formulier ontwerpt, voegt u velden en componenten toe om de formulierstructuur, inhoud en handelingen in de editor te definiëren. U voegt velden en componenten toe in `guideRootPanel` van de formuliercontainer. Met de Sjablooneditor kunt u een sjabloon maken met een basisstructuur en eerste inhoud die auteurs kunnen gebruiken om formulieren te maken.
 
 U wilt bijvoorbeeld dat alle formulierauteurs bepaalde tekstvakken, navigatieknoppen en een verzendknop in een inschrijvingsformulier hebben. U kunt een sjabloon maken met de componenten die auteurs kunnen gebruiken om een formulier te maken dat consistent is met andere inschrijvingsformulieren. Wanneer auteurs de sjabloon gebruiken om een adaptief formulier te maken, neemt het nieuwe formulier de structuur en componenten over die u in de sjabloon hebt opgegeven. Met de Sjablooneditor kunt u:
 
@@ -28,41 +28,41 @@ U wilt bijvoorbeeld dat alle formulierauteurs bepaalde tekstvakken, navigatiekno
 * Geef de initiële inhoud voor het formulier op.
 * Geef een thema op, namelijk Handelingen verzenden.
 
-U kunt downloaden en installeren [!DNL AEM Forms] referentie-inhoudspakket van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal voor het importeren van referentiethema&#39;s en sjablonen naar uw omgeving.
+U kunt [!DNL AEM Forms] pakket van de verwijzingsinhoud van [ het portaal van de Distributie van de Software downloaden en installeren ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) om verwijzingsthema&#39;s en malplaatjes in uw milieu in te voeren.
 
 ## Werken met sjablonen {#working-with-templates}
 
-U kunt tot malplaatjeredacteur van het menu van Hulpmiddelen toegang hebben door aan te navigeren **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]**. Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen.
+U kunt de sjablooneditor openen via het menu Gereedschappen door te navigeren naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** . Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen.
 
-Experience Manager biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Ga voor meer informatie over het maken van mappen naar [Sjabloonmappen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
+Experience Manager biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Voor meer informatie over hoe te om omslagen tot stand te brengen, zie {de Mappen van het 0} Malplaatje ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).[
 
 ### Een sjabloon maken {#create-template}
 
 Nadat u een map hebt gemaakt, opent u de map en voert u de volgende stappen uit om een sjabloon te maken:
 
-1. Selecteren **[!UICONTROL Create]** in de map die u hebt gemaakt.
-1. Selecteer in de sectie Sjabloontype kiezen de optie **[!UICONTROL Adaptive Form template]** en selecteert u **[!UICONTROL Next]**.
+1. Selecteer **[!UICONTROL Create]** in de map die u hebt gemaakt.
+1. Selecteer **[!UICONTROL Adaptive Form template]** in de sectie Sjabloontype kiezen en selecteer **[!UICONTROL Next]** .
 
-1. Geef in de sectie Sjabloondetails een sjabloontitel op en selecteer **[!UICONTROL Create]**.
+1. Geef in de sectie Sjabloondetails een sjabloontitel op en selecteer **[!UICONTROL Create]** .
 U kunt ook een beschrijving opgeven.
 
-1. Selecteren **[!UICONTROL Done]** om naar de console terug te keren, of selecteer **[!UICONTROL Open]** om de sjabloon in de editor te openen.
+1. Selecteer **[!UICONTROL Done]** om terug te keren naar de console of selecteer **[!UICONTROL Open]** om de sjabloon te openen in de editor.
 
 ### UI voor sjablooneditor {#template-editor-ui}
 
 Wanneer u een sjabloon opent voor bewerking, kunt u de volgende AEM Editor-componenten zien:
 
-* **Pagina, werkbalk**
+* **de toolbar van de Pagina**
 Bevat de volgende opties:
 
-   * **Zijpaneel in-/uitschakelen**: Hiermee kunt u het zijpaneel weergeven of verbergen.
-   * **Pagina-informatie**: Hier kunt u informatie opgeven zoals de publicatie-/publicatietijd, miniaturen, bibliotheken aan de clientzijde, het paginabeleid en de clientbibliotheek van het paginaontwerp.
+   * **Knevel Zijpaneel**: Laat u sidebar tonen of verbergen.
+   * **Informatie van de Pagina**: Laat u informatie zoals publiceren/unpublish tijd, duimnagels, cliënt-zijbibliotheken, paginabeleid, en cliënt-zijbibliotheek van het paginaontwerp specificeren.
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Modus selecteren:** Hiermee kunt u de modus wijzigen. U kunt **[!UICONTROL Structure]** modus, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** -modus. In de structuurmodus kunt u de kop- en voettekst toevoegen en aanpassen. In de modus Initiële inhoud kunt u de inhoud van het formulier aanpassen.
-   * **Voorvertoning:** Hiermee kunt u een voorvertoning weergeven van het uiterlijk van de sjabloon wanneer u de sjabloon publiceert. U kunt Laagkiezer en Voorvertoning gebruiken om de bewerkings- en voorvertoningsmodi in en uit te schakelen.
-* **Zijbalk:** Verstrekt de Inhoud, Eigenschappen, Assets, en de browsers van Componenten.
-* **Component, werkbalk:** Wanneer u een component selecteert, ziet u een werkbalk waarin u de component kunt aanpassen.
-* **Pagina**: Het gebied waar u inhoud toevoegt om de sjabloon te maken.
+   * **de selecteur van de Wijze:** laat u de wijze veranderen.U kunt **[!UICONTROL Structure]** wijze, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** wijze kiezen. In de structuurmodus kunt u de kop- en voettekst toevoegen en aanpassen. In de modus Initiële inhoud kunt u de inhoud van het formulier aanpassen.
+   * **Voorproef:** laat u voorproef hoe het malplaatje kijkt wanneer u het publiceert. U kunt Laagkiezer en Voorvertoning gebruiken om de bewerkings- en voorvertoningsmodi in en uit te schakelen.
+* **Sidebar:** verstrekt de Inhoud, Eigenschappen, Assets, en de browsers van Componenten.
+* **de toolbar van de Component:** wanneer u een component selecteert, ziet u een toolbar die u de component laat aanpassen.
+* **Pagina**: Het gebied waar u inhoud toevoegt om het malplaatje tot stand te brengen.
 
 <!-- See [Introduction to authoring Adaptive Forms](introduction-forms-authoring.md) to understand the Touch UI editor. -->
 
@@ -79,17 +79,17 @@ De laagkiezer is beschikbaar naast de optie Voorvertoning in de rechterbovenhoek
 
 Wanneer u de structuurlaag selecteert in de Sjablooneditor, ziet u de lay-outcontainers boven en onder de container voor adaptieve formulieren. Auteurs kunnen deze lay-outcontainers voor kopbal en footer gebruiken. U kunt de kop- en voettekst toevoegen, bewerken of aanpassen. Sleep de component Adaptief koptekst van formulier naar de lay-outcontainer boven de container voor adaptieve formulieren om de sjabloonkoptekst aan te passen. Sleep de component Aangepaste formuliervoettekst naar de lay-outcontainer onder de container voor adaptieve formulieren om de sjabloonvoettekst aan te passen.
 
-![Lay-outcontainer in de structuurlaag](assets/header-layer-selector.png)
+![ container van de Lay-out in de structuurlaag ](assets/header-layer-selector.png)
 
 Lay-outcontainers in de structuurlaag
 
-**A.** Indelingscontainer voor koptekstcomponent **B.** Lay-outcontainer voor voettekstcomponent
+**A.** container van de Lay-out voor de component van de Kopbal **B.** container van de Lay-out voor de component van de Voettekst
 
 Sleep de component Adaptief koptekst van formulier naar de lay-outcontainer boven de container voor adaptieve formulieren. Nadat u de component hebt toegevoegd, kunt u de eigenschappen ervan opgeven waarmee u een logo kunt toevoegen en de titel kunt opgeven.
 
 Op dezelfde manier kunt u de copyrightinformatie en bedrijfsgegevens opgeven wanneer u de voettekstcomponent in de lay-outcontainer onder de container voor adaptieve formulieren sleept.
 
-![Koptekst en voettekst toegevoegd aan de laag Structuur](assets/header-and-footer.png)
+![ Kopbal en footer die in de laag van de Structuur wordt toegevoegd ](assets/header-and-footer.png)
 
 Koptekst en voettekst toegevoegd aan de laag Structuur
 
@@ -107,7 +107,7 @@ U voegt bijvoorbeeld de koptekstcomponent in de sjabloon toe. Wanneer u de compo
 
 Als de optie Begininhoud is geselecteerd, wordt de container van het adaptieve formulier van de sjabloon geopend als een adaptief formulier voor bewerking. Net als bij het ontwerpen van een adaptief formulier kunt u initiële instellingen opgeven, zoals een thema selecteren en Handelingen verzenden.
 
-Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, selecteert u voordat u een voorbeeld weergeeft op de pagina-werkbalk ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Initial Content]**.
+Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Om aan het uitgeven van aanvankelijke inhoud van het vormmalplaatje, vóór Voorproef in de paginagoolbar, uitgezochte ![ canvas-drop-down ](assets/canvas-drop-down.png) **>** **[!UICONTROL Initial Content]** te schakelen.
 
 
 In de Eerste laag van de Inhoud, creeert u het Adaptieve malplaatje van de Vorm dat uw auteurs als basis gebruiken. Het ontwerpen van een sjabloon lijkt op het ontwerpen van een formulier. U gebruikt de opties in de zijbalk. Sidebar verstrekt inhoud, eigenschappen, activa, en componentenbrowsers.
@@ -129,18 +129,18 @@ U hebt een logo toegevoegd, een titel opgegeven en een voettekst toegevoegd aan 
 
 Wijzig de laag van Structuur in Begininhoud en voeg inhoud toe aan het formulier. Als u een structuur met tabbladen wilt maken, voegt u een onderliggend deelvenster toe in het guideRootPanel van de container van het adaptieve formulier. Een deelvenster toevoegen:
 
-* U kunt een deelvenster toevoegen door te tikken op de knop **[!UICONTROL +]** wanneer u de optie **[!UICONTROL Drag components here]** -optie.
+* U kunt een deelvenster toevoegen door op de knop **[!UICONTROL +]** te tikken wanneer u de optie **[!UICONTROL Drag components here]** selecteert.
 
 * U kunt de deelvenstercomponent slepen en neerzetten vanuit de deelvensterbrowser in de zijbalk.
-* U kunt een onderliggend deelvenster van het dialoogvenster `guideRootPanel` op de werkbalk van de component.
+* U kunt onderliggende deelvensters van de `guideRootPanel` toevoegen vanaf de componentwerkbalk.
 
-Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster met onderliggende items van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en selecteer ![cmppr](assets/configure-icon.svg) om de eigenschappen in de zijbalk te openen. De elementnamen wijzigen als `general-info` en `professional-info`en titels als algemene informatie en beroepsinformatie. Selecteer in het zijpaneel de inhoud die u wilt openen in de inhoudbrowser. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Selecteren ![cmppr](assets/configure-icon.svg) in de componentwerkbalk om de eigenschappen te openen. Selecteer in het veld Indeling van deelvenster de optie **[!UICONTROL Tabs on Top]** en selecteert u **[!UICONTROL Done]**. De sjabloonstructuur met tabs wordt toegepast.
+Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster Onderliggend item van het dialoogvenster `guideRootPanel` . Selecteer de panelen en selecteer ![ cmp ](assets/configure-icon.svg) om de eigenschappen in sidebar te openen. Wijzig de elementnamen als `general-info` en `professional-info` , en de titels als Algemene informatie en Professionele informatie. Selecteer in het zijpaneel de inhoud die u wilt openen in de inhoudbrowser. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel` . In de redacteur, wordt guideRootPanel geselecteerd. Selecteer ![ cmp ](assets/configure-icon.svg) in de componententoolbar om zijn eigenschappen te openen. Selecteer **[!UICONTROL Tabs on Top]** in het veld Indeling deelvenster en selecteer **[!UICONTROL Done]** . De sjabloonstructuur met tabs wordt toegepast.
 
 #### Inhoud toevoegen op tabbladen {#adding-content-in-tabs}
 
-Nadat u deelvensters hebt toegevoegd en deze hebt gestructureerd als tabbladen, kunt u velden toevoegen binnen de tabbladen. Wanneer u een tabblad selecteert in de editor, kunt u de opties **[!UICONTROL Drag components here]** -optie. U kunt componenten zoals tekstvakken, lijstitems en knoppen slepen en neerzetten. U kunt componenten slepen-dalingscomponenten van componentenbrowser in sidebar.
+Nadat u deelvensters hebt toegevoegd en deze hebt gestructureerd als tabbladen, kunt u velden toevoegen binnen de tabbladen. Wanneer u een tabblad selecteert in de editor, wordt de optie **[!UICONTROL Drag components here]** weergegeven. U kunt componenten zoals tekstvakken, lijstitems en knoppen slepen en neerzetten. U kunt componenten slepen-dalingscomponenten van componentenbrowser in sidebar.
 
-Elke component bevat eigenschappen die het vastleggen en bewerken van gegevens verbeteren. U kunt bijvoorbeeld de opdracht **[!UICONTROL Required field]** eigenschap van een component. Uw auteurs kunnen een bericht specificeren dat uw klanten zien wanneer zij het vullen van een vereist gebied overslaan. Geef het bericht op in **[!UICONTROL Required Field Message]** eigenschap.
+Elke component bevat eigenschappen die het vastleggen en bewerken van gegevens verbeteren. U kunt bijvoorbeeld de eigenschap **[!UICONTROL Required field]** van een component inschakelen. Uw auteurs kunnen een bericht specificeren dat uw klanten zien wanneer zij het vullen van een vereist gebied overslaan. Geef het bericht op in de eigenschap **[!UICONTROL Required Field Message]** .
 
 In de voorbeeldsjabloon worden de velden Naam, Telefoonnummer en Geboortedatum toegevoegd op het tabblad Algemene informatie. Op het tabblad Professionele informatie, momenteel gebruikt, worden het werkgelegenheidstype en de kwalificatievelden voor het onderwijs toegevoegd.
 
@@ -150,37 +150,37 @@ Nadat u velden hebt toegevoegd, kunt u knoppen toevoegen, zoals Verzenden en Her
 
 Wanneer u een sjabloon maakt, wordt deze toegevoegd als concept. Schakel de sjabloon in om deze te gebruiken voor het maken van Adaptive Forms. Een sjabloon inschakelen:
 
-1. Navigeren naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Templates]** en opent u de map waarin u de sjabloon hebt gemaakt.
+1. Navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Templates]** en open de map waarin u de sjabloon hebt gemaakt.
 
 1. De sjabloon die u hebt gemaakt, is gemarkeerd als Concept.
-1. Selecteer de sjabloon en selecteer **[!UICONTROL Enable]** in de werkbalk.
+1. Selecteer de sjabloon en selecteer **[!UICONTROL Enable]** op de werkbalk.
 Wanneer u een adaptief formulier maakt, wordt de sjabloon weergegeven wanneer u wordt gevraagd een sjabloon te kiezen.
 
 ## Een sjabloon importeren of exporteren {#importing-or-exporting-a-template}
 
-Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt dat is gemaakt met een aangepaste sjabloon, wordt de sjabloon niet gedownload. Wanneer u het formulier importeert op een ander formulier [!DNL AEM Forms] wordt geïmporteerd zonder de sjabloon. Als een formulier wordt geïmporteerd maar de sjabloon ervan niet beschikbaar is, wordt het formulier niet gegenereerd. U kunt de aangepaste sjabloon verpakken vanuit `/conf` node in `https://<server>:<port>/crx/packmgr`en deze in de [!DNL AEM Forms] -instantie waarin u het formulier wilt uploaden. U kunt [Creeer een malplaatje gebruikend AEM Archeype en stel het aan uw instantie van Cloud Servicen op](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt dat is gemaakt met een aangepaste sjabloon, wordt de sjabloon niet gedownload. Wanneer u het formulier in een ander [!DNL AEM Forms] -exemplaar importeert, wordt het zonder de sjabloon geïmporteerd. Als een formulier wordt geïmporteerd maar de sjabloon ervan niet beschikbaar is, wordt het formulier niet gegenereerd. U kunt de aangepaste sjabloon verpakken vanuit het knooppunt `/conf` in `https://<server>:<port>/crx/packmgr` en deze poort in het exemplaar [!DNL AEM Forms] plaatsen waar u het formulier wilt uploaden. U kunt [ een malplaatje ook creëren gebruikend AEM Archeype en het aan uw instantie van Cloud Servicen ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites) opstellen.
 
 >[!NOTE]
 >
-> * U kunt ook de [!UICONTROL Document of Record] rechtstreeks vanuit de editor voor adaptieve formulieren of de sjablooneditor voor adaptieve formulieren. Zie voor meer informatie [Document met record genereren voor adaptieve Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * U kunt de sjabloon [!UICONTROL Document of Record] ook rechtstreeks configureren vanuit de editor voor adaptieve formulieren of de sjablooneditor voor adaptieve formulieren. Voor meer informatie, zie [ Document van Verslag voor Aanpassings Forms ](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform) produceren.
 
 
 ## Een formuliergegevensmodelschema koppelen aan een sjabloon {#associating-form-data-model-schema-in-template}
 
-Auteurs kunnen een [!UICONTROL Form Data Model Schema] naar een sjabloon voor een adaptief formulier in de sjablooneditor. Auteurs kunnen een schema in de sjablooneditor selecteren. Wanneer u een schema aan een sjabloon koppelt en een auteur van een formulier een formulier maakt op basis van de sjabloon, wordt het schema vooraf geselecteerd voor het formulier. Hiermee kunnen auteurs van formulieren het gebruik van schema&#39;s reguleren en besparen ze ook tijd voor de auteur van formulieren. Een formuliergegevensmodelschema selecteren in een sjablooneditor:
+Auteurs kunnen een [!UICONTROL Form Data Model Schema] koppelen aan een sjabloon voor een adaptief formulier in de sjablooneditor. Auteurs kunnen een schema in de sjablooneditor selecteren. Wanneer u een schema aan een sjabloon koppelt en een auteur van een formulier een formulier maakt op basis van de sjabloon, wordt het schema vooraf geselecteerd voor het formulier. Hiermee kunnen auteurs van formulieren het gebruik van schema&#39;s reguleren en besparen ze ook tijd voor de auteur van formulieren. Een formuliergegevensmodelschema selecteren in een sjablooneditor:
 
-1. Selecteren **[!UICONTROL Content Browser]** aan de linkerkant.
-1. Ga naar de formuliercontainer **[!UICONTROL Setting]**.
-1. Selecteren **[!UICONTROL Data Model]**.
+1. Selecteer **[!UICONTROL Content Browser]** aan de linkerkant.
+1. Ga naar de formuliercontainer **[!UICONTROL Setting]** .
+1. Selecteer **[!UICONTROL Data Model]** .
 1. Kies het formuliergegevensmodel via **[!UICONTROL Select Form Data Model]** en sla de configuratie op.
 
-![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
+![ vorm-gegevens-model-vereniging-in-Forms ](/help/forms/assets/select-form-data-model-img.png)
 
 
 
 ## Een adaptief formulier maken met de sjabloon {#creating-an-adaptive-form-using-the-template}
 
-Nadat u een sjabloon hebt gemaakt en ingeschakeld, is deze beschikbaar in Formulierbeheer wanneer u een adaptief formulier maakt. Als u een sjabloon wilt gebruiken en een adaptief formulier wilt maken, raadpleegt u [Een adaptief formulier maken](creating-adaptive-form.md).
+Nadat u een sjabloon hebt gemaakt en ingeschakeld, is deze beschikbaar in Formulierbeheer wanneer u een adaptief formulier maakt. Om een malplaatje te gebruiken en een AanpassingsVorm tot stand te brengen, zie [ Creërend een AanpassingsVorm ](creating-adaptive-form.md).
 
 
 <!--
@@ -209,10 +209,10 @@ U kunt een adaptief formulier ook opslaan als een sjabloon voor toekomstig gebru
 
 1. Selecteer een adaptief formulier om het als sjabloon op te slaan.
 1. Klik op **[!UICONTROL Save as Template]**. Er wordt een dialoogvenster weergegeven.
-1. Opgeven **[!UICONTROL Title]** (verplicht veld), **[!UICONTROL Location]** (verplicht veld) en **[!UICONTROL Description]** (optioneel veld) voor de sjabloon.
+1. Geef **[!UICONTROL Title]** (verplicht veld), **[!UICONTROL Location]** (verplicht veld) en **[!UICONTROL Description]** (optioneel veld) op voor de sjabloon.
 1. Klik op **[!UICONTROL Create]**.
 
-   ![Opslaan als formulier als sjabloon](/help/forms/assets/saveformastemplate.png)
+   ![ sparen als Vorm als Malplaatje ](/help/forms/assets/saveformastemplate.png)
 
 
 
@@ -224,7 +224,7 @@ U kunt een adaptief formulier ook opslaan als een sjabloon voor toekomstig gebru
 
 * Wanneer u eigenschappen van het formulier in de sjablooneditor wijzigt, gebruikt u de eigenschap BindReference niet.
 * Als u een onderbrekingspunt wilt toevoegen, creeer het wanneer u een Adaptief malplaatje van de Vorm ontwerpt.
-Voor meer informatie over breekpunten raadpleegt u [Responsieve lay-out](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
+Voor meer informatie over breekpunten, zie [ Responsieve Lay-out ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
 
 
 ## Zie ook {#see-also}

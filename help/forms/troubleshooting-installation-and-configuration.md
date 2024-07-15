@@ -18,21 +18,21 @@ U kunt een aantal van de volgende kwesties ontmoeten terwijl het vormen van een 
 
 ## Forms-optie is niet beschikbaar
 
-De **[!UICONTROL Forms]** deze optie is niet beschikbaar op de **[!UICONTROL Navigation]** pagina.
+De optie **[!UICONTROL Forms]** is niet beschikbaar op de pagina van **[!UICONTROL Navigation]** .
 
-![Forms-optie is niet beschikbaar](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
+![ de optie van Forms is niet beschikbaar ](assets/installation-configuration-forms-option-unavailable-troubleshooting.png)
 
-Om het **[!UICONTROL Forms]** optie:
+De optie **[!UICONTROL Forms]** inschakelen:
 
-1. Aanmelden bij de [Cloud Manager](https://experience.adobe.com/)
-1. Zoek uw programma en klik op de knop ![Forms-optie is niet beschikbaar](assets/Smock_Edit_18_N.svg) pictogram. Hiermee wordt de pagina Programma bewerken voor uw programma geopend.
-1. Open de **[!UICONTROL Solutions & Add-ons]** tab.
-1. Selecteer de **[!UICONTROL Forms]** en klik op **[!UICONTROL Save]**.
+1. Login aan [ Cloud Manager ](https://experience.adobe.com/)
+1. Bepaal de plaats van uw programma en klik de ![ optie van Forms is niet beschikbaar ](assets/Smock_Edit_18_N.svg) pictogram. Hiermee wordt de pagina Programma bewerken voor uw programma geopend.
+1. Open de tab **[!UICONTROL Solutions & Add-ons]** .
+1. Selecteer de optie **[!UICONTROL Forms]** en klik op **[!UICONTROL Save]** .
 
-   ![Selecteer de optie Forms](assets/installation-configuration-select-forms-option.png)
-1. [Maken](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) en [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) zowel productiepijpleidingen als niet-productiepijpleidingen.
+   ![ selecteer de optie van Forms ](assets/installation-configuration-select-forms-option.png)
+1. [ creeer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) en [ stel ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) zowel productie als niet-productie pijpleidingen in werking.
 
-Nadat de pijpleiding wordt gebouwd en opgesteld, **[!UICONTROL Forms]** de optie **[!UICONTROL Navigation]** pagina.
+Nadat de pijpleiding wordt gebouwd en opgesteld, de **[!UICONTROL Forms]** optie op de **[!UICONTROL Navigation]** pagina.
 
 <!--  
 ## Environment creation fails {#environment-creation-fails}
@@ -52,7 +52,7 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 
 De gebruikers kunnen niet bouwstijlpijpleiding in werking stellen. De pijpleiding ontbreekt na het runnen voor wat tijd.
 
-Als u het probleem wilt oplossen, opent u Cloud Manager en selecteert u de optie **[!UICONTROL Update]** optie voor uw milieu, en stel de pijpleiding in werking.
+Als u het probleem wilt oplossen, opent u Cloud Manager, selecteert u de optie **[!UICONTROL Update]** voor uw omgeving en voert u de pijplijn uit.
 
 
 ## Bundels bevinden zich niet in de actieve status {#bundles-inactive-state}
@@ -61,5 +61,5 @@ Voer de volgende stappen uit om het probleem op te lossen:
 
 1. Start AEM en wacht tot het programma volledig is gestart tot alle bundels zijn opgestart.
 1. Stop AEM (Ctrl + C).
-1. De Forms plaatsen `.far` in de installatiemap.
+1. Plaats het Forms `.far` -bestand in de installatiemap.
 1. Start de AEM server opnieuw.

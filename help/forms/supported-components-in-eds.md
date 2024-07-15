@@ -14,23 +14,23 @@ ht-degree: 0%
 
 
 
-# HTML-componenten die worden ondersteund in leveren van formulierblokranden
+# HTML-componenten ondersteund in Form Block Edge Delivery
 
 AEM Forms Edge Delivery bevat een formulierblok. Met het formulierblok kunt u eenvoudig formulieren maken voor het vastleggen en opslaan van vastgelegde gegevens.
 
-Het formulierblok ondersteunt OTB HTML-5-componenten zoals tekst, e-mail, nummer, datum en nog veel meer. De klasse biedt ook ondersteuning voor tekstgebied-, selectie- en veldsetelementen en bevat functies voor invoervalidatie die eigen zijn aan HTML-5. Met het formulierblok wordt een uniforme HTML-structuur gemaakt voor alle veldtypen en -containers, zodat de consistentie wordt gewaarborgd. U kunt ook [stijl toepassen op de veldtypen](https://adobe-rnd.github.io/form-block/customization/styling_form) met de `form.css` bestand.
+Het formulierblok ondersteunt OTB HTML-5-componenten zoals tekst, e-mail, nummer, datum en nog veel meer. De klasse biedt ook ondersteuning voor tekstgebied-, selectie- en veldsetelementen en bevat functies voor invoervalidatie die eigen zijn aan HTML-5. Met het formulierblok wordt een uniforme HTML-structuur gemaakt voor alle veldtypen en -containers, zodat de consistentie wordt gewaarborgd. U ook [ stijl de gebiedstypes ](https://adobe-rnd.github.io/form-block/customization/styling_form) gebruikend het `form.css` dossier.
 
 ## Ondersteunde invoertypen voor HTML 5 in formulierblok
 
 Het formulierblok ondersteunt een reeks invoertypen van HTML 5 en het geeft ook formulieren die zijn gemaakt met AEM kerncomponenten naadloos weer.
 
-Hier is de lijst die beschrijft hoe de kerncomponenten aan hun HTML-5 inputtypes in de Levering van de Rand beantwoorden:
+Hier volgt de tabel waarin wordt beschreven hoe de kerncomponenten overeenkomen met hun invoertypen HTML-5 in Edge Delivery:
 
 <table>
  <tbody>
   <tr>
-   <td><b>Kernonderdelen</b> </td>
-   <td><b>HTML 5-invoertype</b> </td>
+   <td><b> Componenten van de Kern </b> </td>
+   <td><b> HTML 5 inputtype </b> </td>
    <td><b>Details</b></td>
   </tr>
   <tr>

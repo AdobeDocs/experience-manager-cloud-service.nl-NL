@@ -1,6 +1,6 @@
 ---
-title: Scherminvoegtoepassing toevoegen aan een nieuw programma in Cloud Manager
-description: Leer hoe u een insteekmodule voor schermen toevoegt aan een nieuw programma in Cloud Manager for Screens as a Cloud Service.
+title: Screens Add-on toevoegen aan een nieuw programma in Cloud Manager
+description: Meer informatie over het toevoegen van een Screens-invoegtoepassing aan een nieuw programma in Cloud Manager for Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
 feature: Screens Deployments
 role: Admin, Developer, User
@@ -11,42 +11,42 @@ ht-degree: 1%
 
 ---
 
-# Schermen toevoegen als invoegtoepassing aan een nieuw programma in Cloud Manager {#create-programs-screens-cloud}
+# Screens toevoegen als invoegtoepassing aan een nieuw programma in Cloud Manager {#create-programs-screens-cloud}
 
-In deze sectie wordt beschreven hoe u schermen kunt toevoegen als een invoegtoepassing aan een nieuw programma in Cloud Manager.
+In deze sectie wordt beschreven hoe u Screens kunt toevoegen als een invoegtoepassing aan een nieuw programma in Cloud Manager.
 
 >[!NOTE]
->Zie [Programma&#39;s en programmatypen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) voor meer informatie over programma&#39;s van Cloud Manager.
+>Zie [ Begrijpend Programma&#39;s en de Types van Programma ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) om meer over de programma&#39;s van Cloud Manager te leren.
 
 ## Doelstelling {#objective}
 
-In de volgende sectie wordt beschreven hoe u schermen als een invoegtoepassing kunt toevoegen aan een nieuw programma in Cloud Manager.
+In de volgende sectie wordt beschreven hoe u Screens kunt toevoegen als een invoegtoepassing aan een nieuw programma in Cloud Manager.
 
-## Stappen voor het toevoegen van schermen als invoegtoepassing aan een nieuw programma in Cloud Manager {#add-screens-add-on}
+## Stappen om Screens toe te voegen als een invoegtoepassing aan een nieuw programma in Cloud Manager {#add-screens-add-on}
 
-Voer de onderstaande stappen uit om schermen toe te voegen aan een nieuw programma in Cloud Manager:
+Voer de onderstaande stappen uit om Screens toe te voegen aan een nieuw programma in Cloud Manager:
 
-1. Navigeren naar [Cloud Manager](https://my.cloudmanager.adobe.com/).
+1. Navigeer aan [ Cloud Manager ](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Zie [Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html) voor meer informatie over Cloud Manager.
+   >Zie [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html) om over Cloud Manager te leren.
 
-1. Klikken **Programma toevoegen** op de landingspagina van Cloud Manager.
+1. Klik **toevoegen Programma** van de Cloud Manager het landen pagina.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/onboard-screens-addon1.png)
 
-1. Selecteren **Instellen voor productie** in de wizard Programma maken om een productieprogramma te maken. De gebruiker kan de standaardprogrammanaam accepteren of deze bewerken voordat hij of zij **Doorgaan**.
+1. Selecteer **Opstelling voor Productie** in de Create tovenaar van het Programma om een programma van de Productie tot stand te brengen. De gebruiker kan de standaardprogrammanaam goedkeuren of het uitgeven alvorens **te selecteren gaat** verder.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/onboard-screens-addon2.png)
 
-1. Selecteren **Schermen** als een invoegpunt van de **Instellen voor productie** van deze stap van de wizard en klik op **Maken**.
+1. Selecteer **Screens** als toe:voegen-op van de **Opstelling voor productie** scherm van deze stap van de tovenaar en klik **creëren**.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/onboard-screens-addon3.png)
 
-1. Nadat de instellingen voor het maken van uw programma zijn voltooid, kunt u het programma Cloud Manager weergeven. Bijvoorbeeld de **ScreensCloud-demo-programma**, zoals weergegeven in de onderstaande afbeelding, met Schermen als een invoegtoepassing in uw programma.
+1. Nadat de instellingen voor het programma zijn voltooid, kunt u het Cloud Manager-programma bekijken. Bijvoorbeeld, het **Programma van de Demo van ScreensCloud**, zoals aangetoond in het hieronder cijfer, met Screens als toe:voegen-op in uw programma.
 
    ![afbeelding](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
 ## Volgende functies {#whats-next}
 
-Wanneer u hebt geleerd hoe u schermen kunt toevoegen als invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Programma&#39;s en Producten van Cloud Manager ziet, kunt u verdergaan. De volgende stap in het instapproces is [Een vertakking voor uw project maken in Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Wanneer u hebt geleerd hoe u Screens kunt toevoegen als een invoegtoepassing aan een bestaand Cloud Manager-programma en uw programma onder Cloud Manager-programma&#39;s en -producten ziet, kunt u verdergaan. De volgende stap in het onboarding proces is [ Creërend een tak voor uw Project in Cloud Manager ](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

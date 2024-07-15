@@ -20,7 +20,7 @@ U hoeft niet te wachten tot een nieuw AEM project van Edge Delivery Services pro
 
 Voor de komst van Edge Delivery Services werd in AEM beheerde inhoud bewerkt met de AEM Pagina-editor. Als uw project vóór de introductie van Edge Delivery Services begon, is het bijna zeker dat u de Redacteur van de Pagina gebruikt.
 
-De AEM Pagina-editor werkt alleen met [AEM componenten](/help/implementing/developing/components/overview.md) zoals de [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Deze componenten zijn niet compatibel met Edge Delivery Services. Wegens dit, worden twee fasen vereist om Edge Delivery Services aan een bestaand AEM project te introduceren:
+De AEM Redacteur van de Pagina werkt slechts met [ AEM componenten ](/help/implementing/developing/components/overview.md) zoals de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Deze componenten zijn niet compatibel met Edge Delivery Services. Wegens dit, worden twee fasen vereist om Edge Delivery Services aan een bestaand AEM project te introduceren:
 
 * [Fase 1 - Voorste einde vervangen](#replace-front-end)
 * [Fase 2 - Overschakelen naar Universal Editor](#switch-ue)
@@ -29,13 +29,13 @@ De AEM Pagina-editor werkt alleen met [AEM componenten](/help/implementing/devel
 
 In fase één kunt u de bestaande AEM sitestructuur, componenten en ontwerpgereedschappen blijven gebruiken. De websiterendering wordt herbouwd met behulp van blokken die JavaScript en CSS gebruiken en wordt via Edge Delivery Services geleverd.
 
-Zie de [Sectie Samenstellen](/help/edge/developer/block-collection.md) van de documentatie van Edge Delivery Services voor meer informatie over blokken en hoe te om voor de diensten van de Levering van de Rand te ontwikkelen.
+Gelieve te zien de [ sectie van de Bouwstijl ](/help/edge/developer/block-collection.md) van de documentatie van Edge Delivery Services voor meer details op blokken en hoe te zich voor de diensten van Edge Delivery ontwikkelen.
 
-Een converter in App Builder is vereist om de AEM gerenderde HTML-uitvoer te converteren en naar Edge Delivery Services te verzenden.
+Een converter op App Builder is vereist om de AEM gerenderde HTML uitvoer om te zetten en naar Edge Delivery Services te verzenden.
 
-![De inhoudconverter in de publicatiestroom](assets/content-converter.png)
+![ de inhoudsomzetter in de het publiceren stroom ](assets/content-converter.png)
 
-Fase twee voltooit het proces door de technologieoverlapping te elimineren: AEM de Componenten van de Kern met HTML en Java op AEM Auteur, op JS-Gebaseerde Blokken op levering van de Rand, en een op knoopJS-Gebaseerde converter.
+Fase twee voltooit het proces door de technologieoverlapping te elimineren: AEM de Componenten van de Kern met HTML en Java op AEM Auteur, op JS-Gebaseerde Blokken op Edge Delivery, en een op knoopJS-Gebaseerde converter.
 
 ## Fase 2 - Overschakelen naar Universal Editor {#switch-ue}
 
