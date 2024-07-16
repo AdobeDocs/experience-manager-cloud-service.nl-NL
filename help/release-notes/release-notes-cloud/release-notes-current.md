@@ -3,9 +3,9 @@ title: De huidige Nota's van de Versie voor  [!DNL Adobe Experience Manager]  as
 description: Huidige versienota's voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1566963898fb7f6999e3fad796b938128521bcce
+source-git-commit: 445d15c1449b968325c77becce8b0a547ba151d6
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1941'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 >[!NOTE]
 >
->Zie [ Recente Updates van de Documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) voor details van documentatieupdates niet direct met een versie verwant.
+>Om een maandelijks e-mailbericht over updates over de versienota&#39;s van de Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit van de Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Releasedatum {#release-date}
 
@@ -253,4 +253,3 @@ U kunt een volledige lijst van Generate de versies van Variaties [ hier ](/help/
 ## Opmerkingen bij de release Experience Cloud {#experience-cloud}
 
 U kunt informatie over versies van andere toepassingen van het Experience Cloud [ hier ](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) vinden.
-Om een maandelijks e-mailbericht over updates over de versienota&#39;s van de Experience Cloud te ontvangen, onderteken aan de [ Update van het Product van de Prioriteit van de Adobe ](https://www.adobe.com/subscription/priority-product-update.html).
