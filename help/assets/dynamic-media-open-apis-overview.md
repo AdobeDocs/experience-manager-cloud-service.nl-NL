@@ -2,9 +2,9 @@
 title: Dynamic Media met OpenAPI-mogelijkheden
 description: Leer belangrijke concepten zoals waarom Dynamic Media met OpenAPI-mogelijkheden wordt gebruikt en hoe u dit kunt inschakelen.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -117,6 +117,10 @@ Nadat u het ondersteuningsticket hebt verzonden, biedt Adobe Dynamic Media met O
 </td>
 </table>
 <table>
+
+
+
+<table>
 <td>
    <a href="/help/assets/search-assets-api.md">
    <img alt="Zoeken in Experience Manager Assets-opslagplaats" src="./assets/search-assets-api-overview.png" />
@@ -156,5 +160,48 @@ Nadat u het ondersteuningsticket hebt verzonden, biedt Adobe Dynamic Media met O
       <em> DAM Admin of Merk Managers beperken de toegang door rollen voor goedgekeurde activa op de het auteursinstantie van AEM as a Cloud Service te vormen.</em>
    </p>
 </td>
+
+</table>
+<table>
+<td>
+   <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+   <img alt="AEM Assets op afstand integreren met AEM Sites" src="./assets/connected-assets-rdam.png" />
+   </a>
+   <div>
+      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+      <strong> integreer verre AEM Assets met AEM Sites </strong>
+      </a>
+   </div>
+   <p>
+      <em> Leer hoe te om verre AEM Assets met het milieu van AEM Sites te integreren. </em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+   <img alt="Dynamic Media met OpenAPI-mogelijkheden heeft vaak vragen gesteld" src="./assets/dynamic-media-faqs.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+      <strong> Dynamic Media met mogelijkheden OpenAPI stelde vaak vragen </strong>
+      </a>
+   </div>
+   <p>
+      <em> krijg een antwoord op de meest gestelde Dynamic Media met mogelijkheden OpenAPI vaak gestelde vragen.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/configure-custom-domain.md">
+   <img alt="Aangepast domein configureren" src="./assets/configure-custom-domain.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/configure-custom-domain.md">
+      <strong> vorm douanedomein </strong>
+      </a>
+   </div>
+   <p>
+      <em> terwijl AEM as a Cloud Service met een standaarddomein komt, kunt u het aanpassen zoals aan uw behoeften.</em>
+   </p>
+</td>
+
 </table>
 
