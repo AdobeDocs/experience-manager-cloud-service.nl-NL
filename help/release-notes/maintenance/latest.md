@@ -4,109 +4,58 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9303ecadea38d83bd71ed0d440067bae5c419940
+source-git-commit: 573de431328650778b3ef0979a24190477382310
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 0%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
+
 
 # Opmerkingen bij de onderhoudsrelease {#maintenance-release-notes}
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 16971 {#release-16971}
+## Release 17098 {#release-17098}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 16971 samengevat, die op 3 juli 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 16799.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 17098 samengevat, die op 16 juli 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 16971.
 
-2024.7.0 Activering van de functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2024.7.0-functie biedt de volledige functionaliteit die is ingesteld voor deze onderhoudsrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-16971}
+### Verbeteringen {#enhancements-17098}
 
-* SITES-22948: Verwijder handelsverwijzingen in stichtingsinhoud voor AEM CS.
-* SITES-22141: [ de Fragmenten van de Inhoud ] SegmentNotFoundException van CFM ModelChangeRepositoryImpl na OnRC.
-* SITES-21893: Uitsnijdprobleem van afbeeldingen bij de auteur-instantie.
-* SITES-21788: ] NOTA van de Vertoning van de Fragmenten van de Inhoud [ in het modelredacteur van CF en van CF wanneer uiSchema voor het model wordt toegelaten.
-* SITES-21688: Bij MSM-rollout wordt het fragmentpad (XF) niet bijgewerkt op pagina&#39;s met live kopieën.
-* SITES-21659: Terugkeer volledige naam van de gebruiker die een Model middel creeert/wijzigt/repliceert.
-* SITES-21609: eindpunt OpenAPI om inhoudsfragmenten van één model aan andere te migreren.
-* SITES-21598: [ Open API ] creeer CFM - terugkeerfout als de bepaalde Weg van de Configuratie niet bestaat.
-* SITES-21491: [ Open API ] het eindpunt van de PATCH van CF zou levende verhoudingen op gebiedsniveau moeten respecteren.
-* SITES-21434: [ Open API ] het eindpunt van de GET van CF zou levende verhoudingen op gebiedsniveau moeten respecteren.
-* SITES-21415: CF Editor - ondersteuning UUID-verwijzingen.
-* SITES-21326: [ Open API ] verstrekt informatie over de aanwezigheid van verwijzingen voor een Fragment van de Inhoud.
-* SITES-21310: [ Open API ] voegt identiteitskaart van het Fragment van de Inhoud in vertalingen API reactie toe.
-* SITES-20859: CF Open API - Return references when retrieve a fragment by path.
-* SITES-20687: [ Open API ] Eindpunt voor de herwinning van de partijverwerkingsstatus.
-* SITES-20657: [ Open API ] verstrekt optie om heel woord aan te passen wanneer het vervangen van een koord gebruikend `FindAndReplace` eindpunt.
-* SITES-20587: [ Open API ] creeer `COPY` eindpunt voor de Fragmenten van de Inhoud.
-* SITES-20584: [ Open API ] optimaliseer verwijzingsherwinning.
-* SITES-20308: [ Open API ] laat partijverwerking op API toe.
-* SITES-19976: [ Open API ] Algemeen schema UI voor voorwaardelijke gebieden.
-* SITES-19556: [ de Fragmenten van de Inhoud ] Update uiSchema als het bestaat wanneer het model wordt uitgegeven.
-* SITES-18056: [ Open API ] wanneer het publiceren van een inhoudsfragment aan Voorproef, omvat verwijzingen.
-* SITES-16898: [ het eindpunt van het Schema ] OpenAPI om inhoudsfragmenten van één model aan andere te migreren.
-* SITES-16609: Het eindpunt van Lanceringen van de Lijst.
-* SITES-16606: Create Launch Endpoint.
-* SITES-21617: [ Xwalk ] maakt de Eigenschappen/de Meta-gegevens van de Pagina editable binnen UE.
-* SITES-19614: [ Xwalk ] paginering van de redacteur van het Spreadsheet en oneindige rol.
-* SITES-22163: [ Xwalk ] Verbeterde steun voor inhoud die van publicatielaag voor de Plaatsen van Edge Delivery wordt gediend.
-* SITES-22109: [ Xwalk ] Verbeterde behandeling van richtext prijsup na verwerking.
-* SITES-22035: [ Xwalk ] Verbeterde behandeling van MSM en Lanceringen.
-* SITES-21839: [ Xwalk ] Verbeterde wegafbeelding en ontsmetting voor inhoud niet die door Edge Delivery wordt gediend.
+- SKYOPS-79817: Laat de Taak van de Analysator van de Eigenschap van de Verkoop voor de Toewijzingen van de Gebruiker van de Dienst toe
 
-### Opgeloste problemen {#fixed-issues-16971}
+### Opgeloste problemen {#fixed-issues-17098}
 
-* CQ-4356898: [ Vertaling ] outOfMemory fout voor CF die een ongebruikelijk groot aantal verbindingen bevat.
-* CQ-4357055: ] de Auto vertaling van de Vertaling [ het werken niet gebruikend Rest API.
-* CQ-4353931: [ Vertaling ] voegt jcr toe:uuid in vertaalbronpagina/xf/activa wanneer het mist.
-* CQ-4357591: [ Vertaling ] wijzig &quot;Associate JCR:UID&quot;werkschema om voor Pagina&#39;s/XF te werken.
-* FORMS-14844: Adaptive Forms staat het verzenden van formulieren toe, ondanks onvoldoende reCAPTCHA-verificatie.
-* FORMS-14984: Forms met CAPTCHA slaat validatie over als &quot;submitMetaData&quot; niet aanwezig is in de verzonden gegevens.
-* FORMS-14477: De opties &#39;Is na&#39; en &#39;Is voor&#39; in de regeleditor functioneren niet naar behoren in de datumkiezervalidatie.
-* FORMS-14019: De functie &quot;Invoke Service&quot; van de redacteur van de Regel werkt niet in Universele Redacteur.
-* FORMS-14336: Als er geen formulierveld is geselecteerd, moet de editor worden geopend met focus op het gehele formulierelement.
-* FORMS-15061: De cirkel van de Lader blijft eindeloos bij het gebruiken aanhalen van de de dienstoptie in de regelredacteur.
-* SITES-22457: Het bevorderen van een lancering die niet diep is werkt broninhoud niet bij.
-* SITES-22748: [ de Fragmenten van de Inhoud ] verbeteren fout behandeling voor de Baan van de Update van het Fragment van de Inhoud
-* SITES-22349: [ de Fragmenten van de Inhoud ] ContentType voor lege multiline cf-elementen kunnen niet worden veranderd.
-* SITES-22343: {de Fragmenten van de Inhoud ] Semantische type &quot;opsomming&quot;wordt gebroken.[
-* SITES-22194: Na het instellen van de omleiding werkt model.json niet meer.
-* SITES-21953: [ Open API ] Etag wordt veranderd gebaseerd op de orde van validationStatus.
-* SITES-21894: [ Open API ] verbeter de bevestiging van de ouderweg wanneer het creëren van CFs.
-* SITES-21887: [ Open API ] Ongeldige ETag die door POST variaties eindpunt is teruggekeerd.
-* SITES-21657: [ Open API ] verbetert bevestiging op het bezit van de Weg van het Onderzoek van CF.
-* SITES-21949: ongeldige cursor voor zoek-API&#39;s retourneert 500.
-* SITES-20927: zoek APIs keert 500 terug wanneer de vraag mist.
-* SITES-20544: [ Open API ] Verandering de generatie van publiceer pakketnamen om eikeconflicten te vermijden.
-* SITES-19710: CVE-2022-47937 - Verwijder alle toepassingen van org.apache.sling.commons.json uit de Pagina-editor.
-* SITES-11992: ] de selecteursknoop van het de staalmonster van de Annotatie van de Toegankelijkheid [ mist een toegankelijke naam.
-* SITES-10979: [ het Etiket van de Toegankelijkheid ] is niet blijvend.
-* SITES-10962: [ Knoop van de Toegankelijkheid ]: Knoop heeft geen rol.
-* SITES-10905: ] De Staat van de Toegankelijkheid [ van actieve component mist een contrastverhouding van 3 tot 1.
-* SITES-2974: [ Toegankelijkheid ] - Horizontaal het scrollen bij breedte 320px.
-* SITES-22026: Kan ervaringsfragmenten niet verplaatsen tussen mappen in AEM
-* SITES-22106: Taalswitchfunctionaliteit in de nieuwe editor voor contentfragmenten
-* SITES-21980: Inconsistente verwerking voor op UUID-gebaseerde verwijzingstypen.
-* SITES-7257: NPE in ThumbnailServlet.
+- ASSETS-39665: Smart Crops Sync werkt niet na migratie van 6.5 naar AEMCS
+- FORMS-14993: Forms API retourneert 500 voor het eerder gebruikte onderpand
+- GRANITE-52120: CRXDE die 500 terugkeren wanneer het tonen van de gegevens van het Toegangsbeheer
+- GRANITE-52573: Verzoeken die 400 retourneren bij gebruik van // in opnieuw geschreven URL&#39;s
+- GRANITE-52746: Alle knooppunttypen die niet zijn geladen in het dialoogvenster Knooppunt maken
+- GRANITE-52777: Gebroken behandeling van 404s wanneer het verzoek is verpakt
+- GRANITE-52871: Zorg ervoor dat de publicatiewerker wordt gesynchroniseerd met gouden publicatie en wordt voltooid vóór de compactie
+- SKYOPS-79173: Replicator die niet aan veelvoudige agenten herhaalt die een bepaalde AgentIdFilter aanpassen
+- SKYOPS-80075: Problemen met Umlauts in namen van bedrijfsmiddelen die de Blockage van de Gepubliceerde Rij (Mac) veroorzaken
+- SKYOPS-81032: Filter uit logboeken die door verzoeken worden geproduceerd om logboeken te krijgen wanneer het gebruiken van Verbeterde het Registreren
 
-### Bekende problemen {#known-issues-16971}
+### Bekende problemen {#known-issues-17098}
 
-Geen.
+Geen
 
-### Kennisgeving wijzigen {#change-notice-16971}
+### Kennisgeving wijzigen {#change-notice-17098}
 
-* Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [ de documentatie ](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) voor meer details.
+- Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [ de documentatie ](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) voor meer details.
 
-### Verouderde functies en API&#39;s {#deprecated-16971}
+### Verouderde functies en API&#39;s {#deprecated-17098}
 
-Om te weten wat wordt afgekeurd of verwijderd in AEM as a Cloud Service, zie [ Afgekeurde en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md).
+Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Ingesloten technologieën {#embedded-tech-16971}
+### Ingesloten technologieën {#embedded-tech-17098}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 64,0 | [ Oak API 1.64.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.64.0/index.html) |
+| AEM Oak | 1 66,0 | [ Oak API 1.66.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.66.0/index.html) |
 | AEM SLING-API | 2.27.2. | [ Apache Sling API 2.27.2 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | 1.4.22-1.4.0 | {de Specificatie van de Taal van het Malplaatje 0} HTML ](https://github.com/adobe/htl-spec)[ |
+| AEM HTL | 1.4.24-1.4.0 | {de Specificatie van de Taal van het Malplaatje 0} HTML ](https://github.com/adobe/htl-spec)[ |
 | AEM-kerncomponenten | 2,25,4 | [ AEM de Componenten van de Kern WCM ](https://github.com/adobe/aem-core-wcm-components) |
