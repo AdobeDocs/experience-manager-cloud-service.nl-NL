@@ -4,7 +4,7 @@ description: Leer hoe u aan de slag kunt met het gereedschap Inhoud overbrengen
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 2%
@@ -88,7 +88,7 @@ De volgende sectie is van toepassing op de nieuwe versie van het gereedschap Inh
 
    >[!NOTE]
    >
-   >Per project in Cloud Acceleration Manager kunnen maximaal 20 migratiesets worden gemaakt, inclusief verlopen sets.
+   >Per project in Cloud Acceleration Manager kunnen maximaal 10 migratiesets worden gemaakt, inclusief verlopen sets.
 
    ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 

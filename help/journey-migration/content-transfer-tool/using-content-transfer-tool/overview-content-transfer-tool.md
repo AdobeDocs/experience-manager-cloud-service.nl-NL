@@ -4,7 +4,7 @@ description: Leer hoe u met het gereedschap Inhoud overbrengen inhoud van een on
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 28%
@@ -68,7 +68,7 @@ Als u in de opnamefase de deltacontent boven op de huidige content wilt toepasse
 >title="Verlopen van een migratieset"
 >abstract="Meer informatie over het verlopen van een migratieset."
 
-Alle migratiesets zullen uiteindelijk verlopen na een langdurige periode van inactiviteit van ongeveer 90 dagen. Nadat de indicatoren gedurende een bepaalde periode op de projectkaart en de rijen van de migratietabel worden getoond, zal de migratieset verlopen en zijn gegevens zullen niet meer beschikbaar zijn. De verlooptijd kan eenvoudig worden verlengd door op de migratie te reageren die wordt ingesteld door:
+Alle migratiesets zullen uiteindelijk verlopen na een verlengde periode van inactiviteit van ongeveer 45 dagen. Nadat de indicatoren gedurende een bepaalde periode op de projectkaart en de rijen van de migratietabel worden getoond, zal de migratieset verlopen en zijn gegevens zullen niet meer beschikbaar zijn. De verlooptijd kan eenvoudig worden verlengd door op de migratie te reageren die wordt ingesteld door:
 
 * beschrijving bewerken
 * extractietoets
