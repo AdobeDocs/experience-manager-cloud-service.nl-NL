@@ -1,7 +1,7 @@
 ---
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -87,8 +87,8 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
      </tr>
    <tr>
     <td>Wiskundige bewerkingen uitvoeren in het veld van het herhaalbare deelvenster </td>
-    <td>OTB Wiskundige functies kunnen worden toegepast op herhaalbare deelvenstervelden om functies uit te voeren zoals de som en het gemiddelde. </td>
-    <td>Wiskundige bewerkingen in het veld van het herhaalbare deelvenster kunnen worden uitgevoerd met behulp van aangepaste functies.
+    <td>De functies OTB Wiskunde kunnen op herhaalbare paneelgebieden worden toegepast om functies zoals som uit te voeren, gemiddeld gebruikend regelredacteur. Er moeten twee argumenten worden opgegeven: het eerste geeft het herhaalbare deelvenster met het veld op, terwijl het tweede het veld binnen het overeenkomende herhaalbare deelvenster aangeeft. </td>
+    <td>Wiskundige bewerkingen in het veld van het herhaalbare deelvenster kunnen worden uitgevoerd met behulp van aangepaste functies. U kunt de wiskundige functies ook rechtstreeks toepassen op de velden van het herhaalbare deelvenster met de regeleditor.
    </td>
    </tr>
       <tr>

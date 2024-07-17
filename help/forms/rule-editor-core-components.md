@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
 workflow-type: tm+mt
-source-wordcount: '5426'
+source-wordcount: '5534'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 Als er problemen optreden met de toegestane meerdere velden in de functie Wanneer voorwaarde, volgt u de stappen voor het oplossen van problemen:
 
-1. Open het formulier in de bewerkmodus.
+1. Open het formulier in de bewerkingsmodus.
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
 1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op Gereed en sla het dialoogvenster opnieuw op.
@@ -483,7 +483,7 @@ In het gedeelte met vereisten voor leningen in het voorbeeldformulier voor het a
 * Het veld Salaris van de echtgenoot wordt alleen weergegeven wanneer de huwelijksstatus wordt gehuwd.
 * De beleenbaarheid van de lening bedraagt 50% van het totale salaris.
 
-Voer de volgende stappen uit om regels te schrijven:
+Als u regels wilt schrijven, voert u de volgende stappen uit:
 
 1. Schrijf eerst de regel om de zichtbaarheid van het veld Salaris van echtgenoot te regelen op basis van de optie die de gebruiker selecteert voor het keuzerondje Burgerlijke status.
 
@@ -594,7 +594,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    * U kunt een keuze maken **[!UICONTROL is equal to]** uit het **[!UICONTROL Select Operator]** veld.
 
-   * Selecteer Tekenreeks in het andere **[!UICONTROL Drop object or select here]** veld en geef **[!UICONTROL Married]** het op in het **[!UICONTROL Enter a String]** veld.
+   * Selecteer String in het andere veld **[!UICONTROL Drop object or select here]** en geef **[!UICONTROL Married]** op in het veld **[!UICONTROL Enter a String]** .
 
    De regel wordt uiteindelijk als volgt weergegeven in de regeleditor.  ![ schrijven-regels-visueel-redacteur-16 ](assets/write-rules-visual-editor-16-cc.png)
 
@@ -602,7 +602,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Herhaal stap 7 tot en met 14 om een andere regel te definiëren om de beleenbaarheid van de lening te berekenen als de burgerlijke stand eenmalig is. De regel wordt als volgt weergegeven in de regeleditor.
 
-   ![ schrijven-regels-visueel-redacteur-17 ](assets/write-rules-visual-editor-17-cc.png)
+   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17-cc.png)
 
 U kunt ook de regel Waarde instellen gebruiken om te bepalen of de lening in aanmerking komt in de Regel Wanneer die u hebt gemaakt om het veld Salaris van echtgenote te verbergen. De resulterende gecombineerde regel wanneer de Status van het Samenhang Enige is verschijnt als volgt in de regelredacteur.
 
@@ -900,6 +900,15 @@ In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.
 Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
 
 ## Voorbeelden van regels {#example}
+
+### Complexe berekeningen stroomlijnen in herhaalbare deelvensters met ingebouwde functies
+
+De regelredacteur staat u toe om uit-van-de-doos functies zoals Som, Min, Max, en verbind rechtstreeks op gebieden binnen herhaalbare panelen te gebruiken. Dit ontgrendelt krachtige automatisering, die u toestaat om complexe bedrijfslogica zonder douanecode uit te voeren.
+Stel je een formulier voor met een herhaalbaar deelvenster. Elke instantie van het deelvenster kan gegevens zoals producthoeveelheden verzamelen. Met de functie Som kunt u automatisch het totale aantal in alle deelvensters berekenen, zodat handmatige berekeningen en mogelijke fouten worden voorkomen.
+
+![ Steun voor herhaalbare paneelgebieden in functies OOTB ](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+Dit is slechts één voorbeeld! Onderzoek de beschikbare [ functies ](#b-form-objects-and-functions-br) om werkschema&#39;s te vereenvoudigen en gegevensnauwkeurigheid binnen uw vormen te verbeteren.
 
 ### Service Formuliergegevensmodel aanroepen {#invoke}
 
