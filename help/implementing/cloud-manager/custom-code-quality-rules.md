@@ -5,9 +5,9 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
+source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
 workflow-type: tm+mt
-source-wordcount: '4482'
+source-wordcount: '4513'
 ht-degree: 0%
 
 ---
@@ -1267,3 +1267,12 @@ AEM Cloud Service staat het maken van kenizers met onjuiste namen in analysatore
 >[!WARNING]
 >
 >U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+
+### Configuratie van indexdefinities mag geen spaties bevatten {#oakpal-indexing-definitions-spaces}
+
+* **Sleutel**: PathSpacesCheck
+* **Type**: Verbetering
+* **Ernst**: Klein
+* **sinds**: Versie 2024.7.0
+
+AEM Cloud Service staat het maken van indexeringsdefinities die eigenschappen met spaties bevatten, niet toe.

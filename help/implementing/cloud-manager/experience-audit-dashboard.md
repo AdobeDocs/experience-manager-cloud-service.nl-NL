@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1995'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Naast de samenvatting die in de details van een pijpleidingslooppas wordt voorge
 
 Tapping of het klikken van **Mening langzaamste pagina&#39;s** opent de **langzaamste 5 pagina&#39;s** dialoog, die de vijf laagste-presterende pagina&#39;s tonen die u [ aan controle vormde.](#configuration)
 
-![ langzaamst vijf ](assets/experience-audit-slowest-five.jpg)
+![ langzaamst vijf ](assets/experience-audit-slowest-five.png)
 
 De scores worden onderverdeeld door **Prestaties**, **Toegankelijkheid**, **Beste praktijken**, en **SEO** samen met de afwijking van elke metrisch van de laatste controle.
 
@@ -166,7 +166,7 @@ De **Recommendations** sectie toont een gezamenlijke reeks inzichten. Door gebre
 
 Tik op het chevron of klik op een aanbeveling om details ervan weer te geven.
 
-![ details van de Aanbeveling ](assets/experience-audit-recommendation-details.png)
+![ details van de Aanbeveling ](assets/experience-audit-recommendations-details.png)
 
 Indien beschikbaar, bevatten de uitgebreide aanbevelingen details ook het percentage van het effect van de aanbevelingen, helpen nadruk op de meest impactful veranderingen.
 
@@ -184,7 +184,7 @@ Tapping of het klikken van de verbinding van een bepaalde pagina werkt **Uitgezo
 
 ![ de resultaten van de Pagina ](assets/experience-audit-page-results.png)
 
-Het **Ruwe rapporten** lusje geeft u scores voor elke controle van de pagina. Tik of klik het **pictogram van de Download** om een JSON- dossier van de ruwe gegevens terug te winnen.
+Het **Ruwe rapporten** lusje geeft u scores voor elke controle van de pagina. Tik of klik de rapportdatum in de **kolom van het Rapport van de Lighthouse** om een JSON- dossier van de ruwe gegevens terug te winnen.
 
 ![ Onbewerkt rapport ](assets/experience-audit-raw-reports.png)
 
@@ -200,6 +200,10 @@ Om een aftasten op bestelling in werking te stellen, navigeer aan het **lusje va
 
 ![ Scannen op bestelling ](assets/experience-audit-on-demand.png)
 
+De **aftasten van de Looppas** knoop wordt niet beschikbaar en met een klokpictogram wanneer een aftasten op bestelling reeds loopt.
+
+![ Scannen op bestelling ](assets/experience-audit-on-demand-running.png)
+
 De aftasten op bestelling brengen een Controle van de Ervaring voor de recentste 25 [ gevormde pagina&#39;s ](#configuration) teweeg en beëindigen typisch in een paar notulen.
 
 Na voltooiing wordt het scorediagram automatisch bijgewerkt en kunt u de resultaten precies zo controleren als bij een scan van de uitvoering van een pijpleiding.
@@ -214,15 +218,15 @@ U kunt het scoregrafiek filtreren dat op het trekkertype door de **selecteur te 
 
 ## Problemen met de controle van de ervaring {#issues}
 
-Als [ pagina&#39;s u ](#configuration) vormde te controleren niet beschikbaar waren, weerspiegelt de Controle van de Ervaring dit.
+Als [ pagina&#39;s u ](#configuration) vormde om worden gecontroleerd niet beschikbaar waren of er andere fouten in de controle waren, weerspiegelt de Controle van de Ervaring dit.
 
 De pijpleiding toont een uitbreidbare foutensectie om de relatieve wegen URL te bekijken het niet kon toegang hebben.
 
 ![ Kwesties die door de Controle van de Ervaring worden ontmoet ](assets/experience-audit-issues.jpg)
 
-Als het bekijken van het volledige rapport, worden de details getoond in de **[controle van de Ervaring aftasten resultaten](#results)** sectie.
+Als het bekijken van het volledige rapport, worden de details getoond in de **[controle van de Ervaring aftasten resultaten](#results)** sectie, die ook uitzetbaar is.
 
-![ Volledige rapportkwesties ](assets/experience-audit-issues-reports.jpeg)
+![ Volledige rapportkwesties ](assets/experience-audit-issues-report.png)
 
 De pagina&#39;s zijn mogelijk niet beschikbaar omdat:
 
@@ -253,8 +257,7 @@ Deze kunnen worden verbeterd door:
 
 De volgende details bieden aanvullende informatie over hoe de Experience Audit uw site evalueert. Ze zijn niet nodig voor algemeen gebruik van de functie en worden hier gegeven voor de volledigheid.
 
-* Hoewel de [ gevormde de de paginawegen van de Controle van de Ervaring ](#configuration) het `.com` domein van de uitgever tonen, scant de controle het oorsprongdomein (`.net`), om kwesties te verzekeren die tijdens ontwikkeling worden geïntroduceerd worden ontdekt.
-   * Het domein `.com` gebruikt een CDN en kan betere scores opleveren of cacheresultaten bevatten.
+* De controle scant het oorsprongs (`.com`) domein zoals die in de [ gevormde de de paginawegen van de Controle van de Ervaring ](#configuration) van de uitgever wordt bepaald om echte gebruikerservaring nauwkeuriger te simuleren en helpt u meer geïnformeerde besluiten nemen over het beheren en optimaliseren van uw websites.
 * Bij de productie van volledige-stapelpijpleidingen wordt de testomgeving gescand.
    * Om ervoor te zorgen dat de audit relevante details verschaft tijdens de controle, moet de inhoud van de testomgeving zo dicht mogelijk bij de productieomgeving liggen.
 * De pagina&#39;s die in **worden getoond Uitgezochte** dropdown in de [**scores van de Pagina - trendmatige** sectie ](#trend) zijn alle bekende pagina&#39;s die in het verleden door de Controle van de Ervaring werden gescand.

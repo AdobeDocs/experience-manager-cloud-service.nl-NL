@@ -4,12 +4,13 @@ description: Leer hoe AEM as a Cloud Service extra publicatiegebieden ondersteun
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
+
 
 # Extra Publish-regio&#39;s {#additional-publish-regions}
 
@@ -22,7 +23,9 @@ Organisaties kunnen maximaal drie extra publicatiegebieden licenties verlenen.
 
 >[!NOTE]
 >
->Deze functie is momenteel alleen beschikbaar voor AEM Sites. Het kan ook niet worden toegepast op sandboxprogramma&#39;s. Voor aanvullende publicatiegebieden is het vereist dat uw programma wordt bijgewerkt om versie 12142 of hoger AEM te kunnen uitbrengen.
+>* Deze functie is beschikbaar voor de Sites- en Forms-oplossingen.
+>* Deze eigenschap kan niet op [ zandbakprogramma&#39;s worden toegepast.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* Voor deze functie moet uw programma worden bijgewerkt naar AEM versie 12142 of hoger.
 
 ## Gevallen gebruiken {#use-cases}
 
@@ -57,7 +60,9 @@ Als extra publicatiegebieden zijn ingeschakeld, worden afzonderlijke logbestande
 
 Houd rekening met de volgende beperkingen wanneer u overweegt extra publicatiegebieden te gebruiken.
 
-* Aanvullende publicatiegebieden mogen alleen aan AEM Sites worden toegevoegd. De extra publicatiegebieden strekken zich niet tot andere AEM oplossingen of verwante functionaliteit uit die in het zelfde programma (bijvoorbeeld, AEM Forms of Adobe Learning Manager) worden opgesteld.
+* Aanvullende publicatiegebieden mogen alleen aan AEM Sites of AEM Forms worden toegevoegd.
+   * De extra publicatiegebieden strekken zich niet tot andere AEM oplossingen of verwante functionaliteit uit die in het zelfde programma (bijvoorbeeld, AEM Assets of Adobe Learning Manager) worden opgesteld.
+   * Deze oplossingen kunnen echter aan een programma worden toegevoegd zolang er ten minste één Sites of Forms-oplossing op van toepassing is.
 * Aanvullende regio&#39;s kunnen alleen worden toegevoegd als de bijbehorende rechten beschikbaar en ongebruikt zijn in de huurder.
 * Er kunnen maximaal drie extra publicatiegebieden worden toegevoegd aan elke afzonderlijke omgeving.
 * Aanvullende regio&#39;s zijn alleen beschikbaar voor productieprogramma&#39;s. De functie is niet beschikbaar in sandboxprogramma&#39;s.

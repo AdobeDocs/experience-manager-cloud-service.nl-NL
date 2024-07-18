@@ -5,9 +5,9 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,15 @@ De milieu&#39;s die in een zandbakprogramma worden gecreeerd worden niet gevormd
 
 ### Geen aangepaste domeinen of IP-Lijsten van gewenste personen {#ip-allow}
 
-Aangepaste domeinen en IP-lijsten van gewenste personen zijn niet beschikbaar in sandboxprogramma&#39;s.
+[ de domeinen van de Douane ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) en [ IP lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) zijn niet beschikbaar in zandbakprogramma&#39;s.
+
+### Geen extra Publish-regio&#39;s {#additional-publish-regions}
+
+[ extra publiceer gebieden ](/help/operations/additional-publish-regions.md) zijn niet beschikbaar in zandbakprogramma&#39;s.
+
+### Nr. 99,99% SLA {#999-sla}
+
+[ 99.99% SLA ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) is niet op zandbakprogramma&#39;s van toepassing.
 
 ### Geen geavanceerde netwerken {#advanced-networking}
 

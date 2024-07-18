@@ -1,20 +1,20 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager 2024.6.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2024.6.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release voor Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service
+description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2024.7.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 6ca376bda8055d62e35e13053ff21f861c12b292
+source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release voor Cloud Manager 2024.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 2024.6.0 in AEM as a Cloud Service gepubliceerd.
+Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 2024.7.0 in AEM as a Cloud Service gepubliceerd.
 
 >[!NOTE]
 >
@@ -22,19 +22,23 @@ Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 20
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager release 2024.6.0 in AEM as a Cloud Service is 6 juni 2024. De volgende release is gepland voor 18 juli 2024.
+De releasedatum voor Cloud Manager versie 2024.7.0 in AEM as a Cloud Service is 18 juli 2024. De volgende release is gepland voor 8 augustus 2024.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* U kunt [ uw eigen bewaarplaatsen GitHub ](/help/implementing/cloud-manager/managing-code/private-repositories.md) nu gebruiken als bronnen voor zowel volledig-stapel als frontend pijpleidingen.
-   * Bovendien, kunt u uit bewaarplaatsen GitHub met [ git submodules voordeel halen, ](/help/implementing/cloud-manager/managing-code/git-submodules.md) die u van verbeterde controle over de auto-geproduceerde pijpleidingen voorzien die voor de bevestiging van het trekkingsverzoek worden gebruikt en die u toestaan om gedrag voor cruciale metriek tijdens de fase van het codescanningsprogramma te bepalen.
-   * [ u hebt ook de keus ](/help/implementing/cloud-manager/managing-code/github-check-config.md) om de rapportgeschiedenis op GitHub te bewaren, de pijpleiding te noemen, en pijpleidingsvariabelen te plaatsen om uw behoeften aan te passen.
-* [ Zelfinhoud herstelt ](/help/operations/restore.md) reserverestauratie voor maximaal zeven dagen en eigenschappen:
-   * Point-in-time back-upherstel voor de voorgaande 24 uur
-   * Herstel van vaste tijd tot zeven dagen
-* [ de Nieuwe regels OakPal ](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) werden toegevoegd aan het aftasten van de Kwaliteit van de Code van Cloud Manager.
-   * Elke nieuwe regel die vanaf juni 2024 wordt toegevoegd, is een onverbrekelijke verandering.
-   * U wordt aangespoord deze problemen zo snel mogelijk aan te pakken, aangezien deze nieuwe regels ertoe zullen leiden dat pijpleidingen vanaf de release van Cloud Manager augustus 2024 mislukken.
+* De [ productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) en [ niet-productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) trekker **op de Veranderingen van het Git** om de pijpleiding op te starten begaat is nu beschikbaar voor [ privé bewaarplaatsen.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+   * Dit zal gefaseerd worden uitgevoerd en medio augustus voltooid zijn.
+* Wanneer het toevoegen van een [ Adobe-geleid DV certificaat, ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) u één enkel certificaat kunt nu toevoegen dat veelvoudige domeinen in plaats van het creëren van een certificaat voor elk domein behandelt.
+* De oplossingen die geen [ extra hebben publiceren gebieden ](/help/operations/additional-publish-regions.md) kunnen nu aan een programma worden toegevoegd zolang het programma minstens een oplossing van Plaatsen of van Forms op het van toepassing is.
+* De oplossingen die geen [ 99.99% SLA ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) hebben kunnen nu aan een programma worden toegevoegd zolang het programma minstens een oplossing van Plaatsen of van Forms op het van toepassing is.
+* Het [ Dashboard van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md) is op een aantal manieren verbeterd.
+   * Audits worden nu uitgevoerd tegen `.com` eindpunten via CDN, waarbij de vorige `.net` -benadering wordt vervangen.
+      * Deze verandering simuleert echte gebruikerservaring nauwkeuriger en helpt u meer geïnformeerde besluiten over het beheren en optimaliseren van uw website nemen.
+   * Er zijn meerdere verbeteringen aangebracht in de gebruikersinterface van de Experience Audit, waaronder:
+      * Er is een trendweergave van prestaties, aanbevolen procedures, SEO en toegankelijkheid toegevoegd.
+      * De koppeling voor het RAW-rapport in Lighthouse is nu intuïtiever zichtbaar, rechtstreeks in het deelvenster met details voor momentopnamen scannen.
+      * De sectie met aanbevelingen voor Lighthouse is uitgebreid.
+   * De PWA-waarde is verwijderd in overeenstemming met Lightroom-versie 12.0.0, waardoor deze waarde is verwijderd.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
@@ -53,14 +57,6 @@ Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mai
 Cloud Manager staat nu u toe [ zelfbediening produceert en beheert domein bevestigde (DV) SSL certificaten.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Dit biedt u de snelste, eenvoudigste en voordeligste oplossing om een veilige website voor uw onlinebedrijf te maken.
 
 Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `Grp-aemcs-dv-dert-adopter@adobe.com` via het e-mailadres dat bij uw Adobe ID hoort.
-
-<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
-
-You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
-
-Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
-
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited.-->
 
 ### Experience Audit Dashboard {#experience-audit-dashboard}
 

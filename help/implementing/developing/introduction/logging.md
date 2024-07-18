@@ -4,7 +4,7 @@ description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebru
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 0%
@@ -561,9 +561,9 @@ AEM as a Cloud Service-logbestanden voor cloudservices kunnen worden geopend doo
 
 ### Logbestanden voor extra Publish-regio&#39;s {#logs-for-additional-publish-regions}
 
-Als Extra Publish-regio&#39;s zijn ingeschakeld voor een bepaalde omgeving, kunnen logbestanden voor elke regio worden gedownload van Cloud Manager, zoals hierboven vermeld.
+Als voor een bepaalde omgeving extra publicatiegebieden zijn ingeschakeld, kunnen de logbestanden voor elke regio worden gedownload van Cloud Manager, zoals hierboven vermeld.
 
-De AEM logboeken en de verzender logboeken voor de Extra Gebieden van Publish zullen het gebied in de eerste 3 brieven na milieu identiteitskaart specificeren, zoals die door **wordt geïllustreerd nld2** in de steekproef hieronder, die naar een extra AEM verwijst publiceer instantie die in Nederland wordt gevestigd:
+De AEM logboeken en de verzender logboeken voor extra publiceren gebieden zullen het gebied in de eerste 3 brieven na milieu identiteitskaart specificeren, zoals die door **wordt geïllustreerd nld2** in de steekproef hieronder, die naar een extra AEM verwijst publiceer instantie die in Nederland wordt gevestigd:
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

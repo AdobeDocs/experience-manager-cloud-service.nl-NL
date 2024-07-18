@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Adobe HIPAA-compatibel en Web Application Firewall (WAF) vereenvoudigt beveiligi
 
 Als u de noodzakelijke rechten hebt, zal het **SLA** lusje als tweede of derde lusje in de **Opstelling voor de dialoog van de Productie** worden getoond.
 
-AEM Sites biedt een standaardovereenkomst voor 99,9% serviceniveau (SLA). De **optie van de Overeenkomst van het Niveau van de Dienst 0} 99.99% laat een minimumuptime van 99.99% voor uw productiemilieu&#39;s toe.**
+AEM Sites en Forms bieden een standaardovereenkomst voor 99,9% serviceniveau (SLA). De **optie van de Overeenkomst van het Niveau van de Dienst 0} 99.99% laat een minimumuptime van 99.99% voor uw productiemilieu&#39;s voor Plaatsen en/of Forms toe.**
 
 99.99% SLA biedt voordelen met inbegrip van hogere beschikbaarheid en lagere latentie aan, en vereist een [ extra publiceer gebied ](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) om op het productiemilieu in het programma worden toegepast.
 
@@ -105,8 +105,8 @@ Naast de vereiste rechten heeft 99,99% SLA extra gebruiksvereisten.
 * Opdat 99.99% SLA en het melden worden geactiveerd, moet het [ productie/stadium milieu ](/help/implementing/cloud-manager/manage-environments.md#adding-environments) zijn gecreeerd en minstens één extra publicatiegebied moet op het productie/stadium milieu zijn toegepast.
    * Als het gebruiken van [ geavanceerd voorzien van een netwerk, ](/help/security/configuring-advanced-networking.md) zorg ervoor om [ het Toevoegen van Veelvoudige Gebieden van Publish aan een Nieuw milieu ](/help/implementing/cloud-manager/manage-environments.md#adding-regions) document voor aanbevelingen te controleren zodat de connectiviteit in het geval van regionale mislukking wordt gehandhaafd.
 * Er moet minstens één extra publicatiegebied in uw SLA-programma van 99,99% overblijven. Gebruikers mogen het laatste aanvullende publicatiegebied niet verwijderen uit uw SLA-programma van 99,99%.
-* 99.99% SLA wordt gesteund voor productieprogramma&#39;s die de toegelaten oplossing van Plaatsen hebben.
-* U moet a [ volledige stapelpijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) in werking stellen om (of, wanneer het uitgeven van een programma, deactief) 99.99% SLA te activeren.
+* 99,99% SLA wordt gesteund voor productieprogramma&#39;s die de oplossing van Plaatsen of van Forms toegelaten hebben.
+* U moet a [ volledige stapelpijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) in werking stellen om (of, wanneer het uitgeven van een programma, deactivate) 99.99% SLA te activeren.
 
 ## Toegang tot uw programma {#accessing}
 
