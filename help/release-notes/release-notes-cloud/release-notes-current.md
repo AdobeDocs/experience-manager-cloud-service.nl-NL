@@ -3,9 +3,9 @@ title: De huidige Nota's van de Versie voor  [!DNL Adobe Experience Manager]  as
 description: Huidige versienota's voor  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 445d15c1449b968325c77becce8b0a547ba151d6
+source-git-commit: 544fa6be686071275abd34a76f785c89b5ac3ed9
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1965'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,11 @@ De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service]
 
 U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
 
-<!--  ## Release Video {#release-video}
+## Video vrijgeven {#release-video}
 
-Have a look at the June 2024 Release Overview video for a summary of the features added in the 2024.6.0 release:
+Bekijk de video Overzicht van de release van juni 2024 voor een overzicht van de functies die in de release van 2024.6.0 zijn toegevoegd:
 
->[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3430779?quality=12)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
