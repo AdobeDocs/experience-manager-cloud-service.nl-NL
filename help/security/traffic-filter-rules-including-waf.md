@@ -4,7 +4,7 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
+source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
 workflow-type: tm+mt
 source-wordcount: '3938'
 ht-degree: 0%
@@ -207,7 +207,7 @@ Een groep Voorwaarden bestaat uit meerdere Eenvoudige en/of Groepsvoorwaarden.
 | reqHeader | `string` | Hiermee wordt aanvraagheader met de opgegeven naam geretourneerd |
 | queryParam | `string` | Hiermee wordt de query-parameter met de opgegeven naam geretourneerd |
 | reqCookie | `string` | Retourneert cookie met opgegeven naam |
-| postParam | `string` | Retourneert de Post-parameter met de opgegeven naam van de aanvraaginstantie. Werkt alleen als de hoofdtekst van het inhoudstype is `application/x-www-form-urlencoded` |
+| postParam | `string` | Keert de Parameter van het Post met gespecificeerde naam van het lichaam van het Verzoek terug. Werkt alleen als de hoofdtekst van het inhoudstype is `application/x-www-form-urlencoded` |
 
 **Predicate**
 
@@ -531,7 +531,7 @@ Een ](/help/operations/actions-center.md) e-mailbericht van het Centrum van Acti
 
 Als deze greep wordt voldaan aan, zal de Adobe verkeer van dat IP adres blokkeren, maar het wordt geadviseerd om extra maatregelen te nemen om uw oorsprong te beschermen, met inbegrip van het vormen van de regels van de de filterfilter van de tariefgrens om verkeerspikes bij lagere drempels te blokkeren. Zie [ het Blokkeren Dos en aanvallen DDoS gebruikend het leerprogramma van verkeersregels ](#tutorial-blocking-DDoS-with-rules) voor een geleide looppas-door.
 
-Dit alarm wordt toegelaten door gebrek, maar het kan worden onbruikbaar gemaakt gebruikend het *enable_ddos_alarm* bezit, dat aan vals wordt geplaatst. Zodra de waarschuwing in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC).
+Dit alarm wordt toegelaten door gebrek, maar het kan worden onbruikbaar gemaakt gebruikend het *defaultTrafficAlerts* bezit, dat aan vals wordt geplaatst. Zodra de waarschuwing in werking wordt gesteld, zal het niet opnieuw weg tot de volgende dag (UTC).
 
 ```
 kind: "CDN"
@@ -540,7 +540,7 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    enable_ddos_alerts: false
+   defaultTrafficAlerts: false
 ```
 
 ## CDN-logs {#cdn-logs}
