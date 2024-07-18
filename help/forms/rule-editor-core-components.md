@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
+source-git-commit: a9596774326d5756477c0a44c2715fc5c3561e2a
 workflow-type: tm+mt
-source-wordcount: '5534'
+source-wordcount: '5586'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 Als er problemen optreden met de toegestane meerdere velden in de functie Wanneer voorwaarde, volgt u de stappen voor het oplossen van problemen:
 
-1. Open het formulier in de bewerkingsmodus.
+1. Open het formulier in de bewerkmodus.
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
 1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op Gereed en sla het dialoogvenster opnieuw op.
@@ -483,7 +483,7 @@ In het gedeelte met vereisten voor leningen in het voorbeeldformulier voor het a
 * Het veld Salaris van de echtgenoot wordt alleen weergegeven wanneer de huwelijksstatus wordt gehuwd.
 * De beleenbaarheid van de lening bedraagt 50% van het totale salaris.
 
-Als u regels wilt schrijven, voert u de volgende stappen uit:
+Voer de volgende stappen uit om regels te schrijven:
 
 1. Schrijf eerst de regel om de zichtbaarheid van het veld Salaris van echtgenoot te regelen op basis van de optie die de gebruiker selecteert voor het keuzerondje Burgerlijke status.
 
@@ -594,7 +594,7 @@ Als u regels wilt schrijven, voert u de volgende stappen uit:
 
    * U kunt een keuze maken **[!UICONTROL is equal to]** uit het **[!UICONTROL Select Operator]** veld.
 
-   * Selecteer String in het andere veld **[!UICONTROL Drop object or select here]** en geef **[!UICONTROL Married]** op in het veld **[!UICONTROL Enter a String]** .
+   * Selecteer Tekenreeks in het andere **[!UICONTROL Drop object or select here]** veld en geef **[!UICONTROL Married]** het op in het **[!UICONTROL Enter a String]** veld.
 
    De regel wordt uiteindelijk als volgt weergegeven in de regeleditor.  ![ schrijven-regels-visueel-redacteur-16 ](assets/write-rules-visual-editor-16-cc.png)
 
@@ -602,7 +602,7 @@ Als u regels wilt schrijven, voert u de volgende stappen uit:
 
 1. Herhaal stap 7 tot en met 14 om een andere regel te definiëren om de beleenbaarheid van de lening te berekenen als de burgerlijke stand eenmalig is. De regel wordt als volgt weergegeven in de regeleditor.
 
-   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17-cc.png)
+   ![ schrijven-regels-visueel-redacteur-17 ](assets/write-rules-visual-editor-17-cc.png)
 
 U kunt ook de regel Waarde instellen gebruiken om te bepalen of de lening in aanmerking komt in de Regel Wanneer die u hebt gemaakt om het veld Salaris van echtgenote te verbergen. De resulterende gecombineerde regel wanneer de Status van het Samenhang Enige is verschijnt als volgt in de regelredacteur.
 
@@ -904,9 +904,17 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 ### Complexe berekeningen stroomlijnen in herhaalbare deelvensters met ingebouwde functies
 
 De regelredacteur staat u toe om uit-van-de-doos functies zoals Som, Min, Max, en verbind rechtstreeks op gebieden binnen herhaalbare panelen te gebruiken. Dit ontgrendelt krachtige automatisering, die u toestaat om complexe bedrijfslogica zonder douanecode uit te voeren.
-Stel je een formulier voor met een herhaalbaar deelvenster. Elke instantie van het deelvenster kan gegevens zoals producthoeveelheden verzamelen. Met de functie Som kunt u automatisch het totale aantal in alle deelvensters berekenen, zodat handmatige berekeningen en mogelijke fouten worden voorkomen.
+Stel u een formulier voor met een herhaalbaar deelvenster, waarin elke deelvensterinstantie informatie verzamelt over de gedeclareerde waarde van elementen.
+
+![ Herhaalbare vorm ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+
+Met de functie `Sum` kunt u automatisch de waarde van de totale elementen in alle deelvensters berekenen, zodat handmatige berekeningen overbodig zijn en de kans op fouten kleiner wordt.
 
 ![ Steun voor herhaalbare paneelgebieden in functies OOTB ](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+Wanneer u een formulier invult en exemplaren toevoegt om de elementwaarden te declareren, berekent de knop `Calculate Asset Value` de totale som van alle gedeclareerde elementwaarden en wordt het resultaat in het totaal weergegeven in `assetvalue` textbox.
+
+![ Steun voor herhaalbare paneelgebieden in functies OOTB ](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 Dit is slechts één voorbeeld! Onderzoek de beschikbare [ functies ](#b-form-objects-and-functions-br) om werkschema&#39;s te vereenvoudigen en gegevensnauwkeurigheid binnen uw vormen te verbeteren.
 
