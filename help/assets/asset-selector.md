@@ -3,8 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 contentOwner: KK
 role: Admin,User
+feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
+source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
 workflow-type: tm+mt
 source-wordcount: '4713'
 ht-degree: 0%
