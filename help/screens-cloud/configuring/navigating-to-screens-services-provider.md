@@ -4,10 +4,10 @@ description: In deze pagina wordt beschreven hoe u naar Screens Services Provide
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,11 +33,11 @@ Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
    >[!CAUTION]
    >Als u toegang tot veelvoudige organisaties hebt, zorg ervoor dat u in correcte Organisatie hebt geregistreerd. Als u uw organisatie wilt wijzigen, klikt u op de naam van de organisatie in de rechterbovenhoek van het scherm en kiest u de gewenste organisatie waartoe u toegang nodig hebt.
 
-2. Klik op het tandwielpictogram naast Project (linkerbovenhoek)
+1. Klik op het tandwielpictogram naast Project (linkerbovenhoek)
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens0.png)
 
-3. Voer in het dialoogvenster Instellingen bewerken de volgende gegevens in.
+1. Voer in het dialoogvenster Instellingen bewerken de volgende gegevens in.
    * **URL van Publish** - AEM publiceert URL (bijvoorbeeld, `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **Auteur URL** - AEM auteur URL (bijvoorbeeld, `https://author-p12345-e12345.adobeaemcloud.com`)
 
@@ -46,13 +46,49 @@ Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Klik **sparen** om met de inhoudsleverancier van Screens te verbinden
+1. Klik **sparen** om met de inhoudsleverancier van Screens te verbinden.
 
-5. Selecteer **Kanalen** van de linkernavigatiebar en klik **open in inhoudsleverancier**.
+1. In u hebt AEM gevormd publiceer instantie om toegang slechts tot vertrouwde op IP adressen door de eigenschap van de Lijst van gewenste personen van de Cloud Manager IP toe te staan, moet u een kopbal met een zeer belangrijke waarde in de instellingendialoog zoals hieronder getoond vormen.
+IPs die aan whitelisted ook moet worden bewogen aan het configuratiedossier en moet [ niet worden toegepast ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) van de montages van Cloud Manager zijn.
+
+   ![afbeelding](/help/screens-cloud/assets/configure/configure-screens20.png)
+
+De zelfde sleutel moet bij AEM configuratie worden gevormd CDN.  Het wordt geadviseerd om de kopbalwaarde niet direct in GITHub te zetten en a [ geheime verwijzing ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets) te gebruiken.
+Een steekproef [ CDN config ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) wordt hieronder gegeven:
+
+     soort: &quot;CDN&quot;
+     versie: &quot;1&quot;
+     meta-gegevens:
+     envTypes: [&quot;dev&quot;, &quot;stadium&quot;, &quot;prod&quot;] 
+     gegevens:
+     verkeerFilters:
+     regels:
+     - naam: &quot;blok-verzoek-van-niet-toegestaan-ips&quot;
+     wanneer:
+     allOf:
+     - reqProperty: clientIp 
+     notIn: [&quot;101.41.112.0/24&quot;] 
+     - reqProperty: rij 
+     evenaart: publiceer 
+     actie: blok 
+     - naam: &quot;allow-request-with-header&quot;
+     wanneer:
+     allOf:
+     - req Bezit: rij 
+     evenaart: publiceer 
+     - reqProperty: weg 
+     evenaart: /screens/channels.json
+     - reqHeader: x-screens-lijst van gewenste personen-sleutel 
+     evenaart: $ {\ 
+     {CDN_HEADER_KEY} 
+     actie:
+     type: staat 
+ toe
+1. Selecteer **Kanalen** van de linkernavigatiebar en klik **open in inhoudsleverancier**.
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. De Screens Content Provider wordt geopend op een ander tabblad waarop u uw inhoud kunt maken.
+1. De Screens Content Provider wordt geopend op een ander tabblad waarop u uw inhoud kunt maken.
 
    ![afbeelding](/help/screens-cloud/assets/configure/configure-screens2.png)
 
