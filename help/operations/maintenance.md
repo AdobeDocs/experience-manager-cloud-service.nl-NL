@@ -4,9 +4,9 @@ description: Meer informatie over onderhoudstaken in AEM as a Cloud Service en h
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
+source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2107'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>
     <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst met [OSGI-eigenschappen](/help/implementing/deploying/configuring-osgi.md) onder **Adobe Projecten leegmaken**.</p>
+    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst van <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi"> Eigenschappen OSGi </a> voor <b> de Configuratie van de Woorden van de Projecten van de Adobe </b>.</p>
   </td>
   </tr>
   </tbody>
