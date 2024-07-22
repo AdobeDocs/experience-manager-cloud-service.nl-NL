@@ -2,7 +2,7 @@
 title: Leverings-API's
 description: Leer hoe u de leverings-API's kunt gebruiken.
 role: User
-source-git-commit: 6fdc44b93e11a20b6859419813fd7eadbefd95c1
+source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In de volgende tabel wordt het gebruik van de verschillende beschikbare API&#39;
 
 | Leverings-API | Beschrijving |
 |---|---|
-| [ Web-geoptimaliseerde binaire vertegenwoordiging van de activa in gevraagd uitvoerformaat ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Retourneert de voor het web geoptimaliseerde binaire representatie van het element in de gevraagde uitvoerindeling op basis van de element-id die in de aanvraag is verzonden. Bovendien kunt u diverse beeldbepalingen zoals, breedte, hoogte bepalen, roteren, afknippen, kwaliteit, gewas, formaat, en [ slimme gewas ](/help/assets/dynamic-media/image-profiles.md). Zie [ API details ](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) voor gesteunde formaten en beeldbepalingen.<br> Adobe adviseert gebruikend dit API voor alle types van beeldformaat. |
+| [ Web-geoptimaliseerde binaire vertegenwoordiging van de activa in gevraagd uitvoerformaat ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Retourneert de voor het web geoptimaliseerde binaire representatie van het element in de gevraagde uitvoerindeling op basis van de element-id die in de aanvraag is verzonden. Bovendien kunt u diverse beeldbepalingen zoals, breedte, hoogte bepalen, roteren, afknippen, kwaliteit, gewas, formaat, en [ slimme gewas ](/help/assets/dynamic-media/image-profiles.md). Zie [ API details ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) voor gesteunde formaten en beeldbepalingen.<br> Adobe adviseert gebruikend dit API voor alle types van beeldformaat. |
 | [ Web-geoptimaliseerde binaire vertegenwoordiging van de activa ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | API voor gebruiksgemak die standaard wordt toegepast op een voor het web geoptimaliseerde binaire representatie van het element dat in de reactie wordt geretourneerd. De standaardinstellingen zijn onder andere de standaardinstellingen JPEG/WEBP, quality => 65 en width => 1024. |
 | [ Origineel geupload binair getal van de activa ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Retourneert de oorspronkelijk geüploade binaire bestanden voor het element. Adobe raadt u aan deze API te gebruiken voor typen documentindelingen en SVG-afbeeldingen. |
 | [ pre-geproduceerde vertoning van de activa beschikbaar op het auteursmilieu van AEM Assets ](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | Retourneert de bitstream van de elementuitvoering die beschikbaar is in de AEM Assets-ontwerpomgeving op basis van de element-id en de naam van de uitvoering die in de aanvraag is verzonden. |
