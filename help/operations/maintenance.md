@@ -4,9 +4,9 @@ description: Meer informatie over onderhoudstaken in AEM as a Cloud Service en h
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
+source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2110'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ De volgende tabel illustreert de onderhoudstaken die beschikbaar zijn.
     <td>Klant</td>
     <td>
     <p>Moet in de put worden gedaan. Overschrijf het uit-van-de-doos de configuratieknooppunt van het Venster van het Onderhoud onder <code>/libs</code> door eigenschappen onder de omslag <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> of <code>granite_monthly</code> te creëren. Zie de lijst van het Venster van het Onderhoud hieronder voor extra configuratiedetails.</p>
-    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst van eigenschappen OSGI onder "de Projecten van de Adobe zuiveren Configuratie".</p>
+    <p>Schakel de onderhoudstaak in door een ander knooppunt onder het bovenstaande knooppunt toe te voegen (noem het knooppunt <code>granite_ProjectPurgeTask</code> ) met de juiste eigenschappen. Zie de lijst met [OSGI-eigenschappen](/help/implementing/deploying/configuring-osgi.md) onder **Adobe Projecten leegmaken**.</p>
   </td>
   </tr>
   </tbody>
