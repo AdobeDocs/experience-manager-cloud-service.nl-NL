@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,9 @@ Wanneer een certificaat verloopt, werken domeinen die in gebruik zijn met het ve
 1. Navigeer aan het **SSL Certificaten** scherm van het **milieu&#39;s** scherm.
 1. U ziet een tabel met een rij voor elk SSL-certificaat dat in uw programma is geïnstalleerd. Klik de ellipsis knoop bij uiterst rechts in de rij van het certificaat u **Mening &amp; Update** bijwerken en wilt selecteren.
 1. De certificaatdetails worden weergegeven en kunnen worden bijgewerkt.
-1. Stel de pijpleiding in werking om het bijgewerkte certificaat op te stellen.
+1. Sla uw wijzigingen op.
+
+Nadat u de wijzigingen hebt opgeslagen, worden deze automatisch toegepast.
 
 >[!NOTE]
 >
