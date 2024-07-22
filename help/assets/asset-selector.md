@@ -5,9 +5,9 @@ contentOwner: KK
 role: Admin,User
 feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
+source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
 workflow-type: tm+mt
-source-wordcount: '4713'
+source-wordcount: '4859'
 ht-degree: 0%
 
 ---
@@ -812,6 +812,60 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het object Sele
 | *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | getal | De hoogte van de vertoning. |
 
 Voor een volledige lijst van eigenschappen en gedetailleerd voorbeeld, bezoek [ Voorbeeld van de Code van de Selecteur van Activa ](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
+### Contextafhankelijke aanroepfilter{#contextual-invocation-filter}
+
+Met Asset Selector kunt u een tagkiezerfilter toevoegen. De tag wordt ondersteund door een taggroep waarin alle relevante tags worden gecombineerd met een bepaalde taggroep. Bovendien kunt u extra tags selecteren die overeenkomen met het element dat u zoekt. Bovendien kunt u de standaardtaggroepen onder het contextafhankelijke aanroepingsfilter die meestal door u worden gebruikt, ook instellen zodat ze onderweg toegankelijk zijn voor u.
+
+> 
+>
+> * U moet een codefragment voor contextafhankelijke aanroepcode toevoegen om een tagfilter in de zoekopdracht in te schakelen.
+> * Het is verplicht de eigenschap name te gebruiken die overeenkomt met het type taggroep `(property=xcm:keywords.id=)` .
+
+Syntaxis:
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+Als u labelgroepen wilt toevoegen aan het deelvenster Filters, is het verplicht ten minste één taggroep als standaardgroep toe te voegen. Bovendien kunt u met het codefragment eronder de standaardtags toevoegen die vooraf zijn geselecteerd in de taggroep.
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![ filter van de markeringsgroep ](assets/tag-group.gif)
 
 ## Selectie van Assets afhandelen met behulp van objectschema {#handling-selection}
 
