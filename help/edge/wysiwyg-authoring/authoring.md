@@ -1,18 +1,18 @@
 ---
-title: Inhoud ontwerpen voor Edge Delivery Services
+title: WYSIWYG-inhoud ontwerpen voor Edge Delivery Services
 description: Leer hoe u inhoud ontwerpt met Edge Delivery Services en hoe u AEM inhoud ontwerpt met Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 
-# Inhoud ontwerpen voor Edge Delivery Services {#authoring-edge}
+# WYSIWYG-inhoud ontwerpen voor Edge Delivery Services {#authoring-edge}
 
 Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U hebt twee opties om inhoud voor Edge Delivery Services te ontwerpen:
 
@@ -25,7 +25,7 @@ Als u Edge Delivery Services gebruikt met AEM as a Cloud Service, is het meest f
 
 ![ hoe WYSIWYG Authoring met Edge Delivery Services ](assets/how-aem-edge-works.png)
 
-1. [ het WYSIWYG Authoring milieu ](/help/sites-cloud/authoring/quick-start.md) wordt gebruikt voor inhoudsbeheer zoals het creëren van nieuwe pagina&#39;s, de Fragmenten van de Ervaring, de Fragmenten van de Inhoud, enz.
+1. [ het milieu van AEM Sites ](/help/sites-cloud/authoring/quick-start.md) wordt gebruikt voor inhoudsbeheer zoals het creëren van nieuwe pagina&#39;s, de Fragmenten van de Ervaring, de Fragmenten van de Inhoud, enz.
    * Alle functies van AEM zijn beschikbaar, zoals workflows, MSM, transleren, Starten, enz.
 1. [ de Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) wordt gebruikt aan auteur de inhoud die in AEM wordt beheerd.
    * De Universal Editor biedt een nieuwe en moderne UI voor het schrijven van inhoud.
@@ -52,9 +52,8 @@ Voor details op hoe te om auteur te gebruiken de Universele Redacteur, te zien g
 
 Gelieve te zien de [ Begonnen Gids van de Ontwikkelaar Begonnen voor WYSIWYG Authoring met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) om te leren hoe te om uw eigen project aan auteur met AEM en Edge Delivery Services te beginnen.
 
-## Authoring op basis van documenten  {#document-based}
+## Aanvullende ontwerpmethoden  {#authoring-methods}
 
-Wanneer u op documenten gebaseerde documenten gebruikt, kunt u met diverse bronnen werken, zoals Microsoft Word- en Google Docs-documenten. Documenten uit deze bronnen worden pagina&#39;s op uw website. Koppen, lijsten, afbeeldingen, lettertype-elementen en video&#39;s kunnen allemaal van de oorspronkelijke bron naar uw website worden overgebracht. U kunt metagegevens toevoegen voor SEO-doeleinden of blokken gebruiken om met gestructureerde inhoud te werken en functionaliteit toe te voegen.
+WYSIWYG-authoring is een krachtig en intuïtief hulpmiddel voor inhoudsauteurs. Nochtans, zijn er vele verschillende auteursgebruiksgevallen, en daarom biedt AEM extra auteursoplossingen aan.
 
-Voor verdere details op document-gebaseerde creatie, gelieve te verwijzen naar [ dit document in de documentatie van Edge Delivery Services.](/help/edge/docs/authoring.md)
-
+Gelieve te zien het document [ Kiezen een Authoring Methode ](/help/edge/authoring-methods.md) om meer over de auteursoplossingen te leren AEM aanbiedingen met inbegrip van op document-gebaseerde creatie en zonder kop.

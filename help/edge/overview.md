@@ -4,10 +4,10 @@ description: Ontdek hoe AEM as a Cloud Service baat kan hebben bij de prestaties
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 3%
+source-wordcount: '1356'
+ht-degree: 1%
 
 ---
 
@@ -19,10 +19,32 @@ Met Edge Delivery Services biedt AEM buitengewone ervaringen die de betrokkenhei
 Door Edge Delivery Services te gebruiken, kunt u:
 
 * Maak snelle sites met een perfecte Lighthouse Score en controleer de prestaties van uw site voortdurend via de bewaking voor echt gebruik (RUM).
-* Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel WYSIWYG als Document-based Authoring gebruiken. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
+* Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel WYSIWYG- als op documenten gebaseerde ontwerpen gebruiken. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
 * Gebruik een ingebouwd raamwerk voor experimenteren dat het mogelijk maakt snel tests te maken, uit te voeren zonder invloed op de prestaties en snel vrij te maken voor de productie van een testwinnaar.
 
-## Overzicht {#overview}
+## Gelijke reactie op zakelijke behoeften {#agile-reaction}
+
+Adobe is al lang een toonaangevende brancheleider en weet hoe belangrijk het is om snel nieuwe, zinvolle inhoud voor uw klanten te kunnen maken en publiceren. De markt heeft de gemeenschappelijke uitdagingen op het gebied van het schalen van inhoud duidelijk gemaakt, waaronder:
+
+1. **De vraag naar inhoud blijft groeien.**
+   * Nieuwe auteurs van inhoud moeten worden ontgrendeld om aan deze vraag te voldoen.
+   * Het proces voor het maken van inhoud moet effectief worden geschaald in het hele bedrijf.
+   * Auteurs moeten snel kunnen reageren op veranderende trends.
+1. **er is een behoefte aan omni-kanaal inhoud.**
+   * Layoutbeheer is nodig, ongeacht de levering van inhoud.
+   * Auteurs moeten de bevoegdheid krijgen om de inhoudslay-out rechtstreeks te wijzigen.
+1. **de Druk groeit om ROI op inhoud te drijven.**
+   * Auteurs zelf moeten de inhoud die ze maken, kunnen optimaliseren.
+
+Deze tendensen zijn in de hele bedrijfstak consistent gebleken. Individuele vereisten variëren echter onvermijdelijk van project tot project. Het doel van om het even welk project van Edge Delivery Services wordt geconcentreerd op het vinden van de oplossing die voor uw gebruikers werkt.
+
+1. **Nadruk op waarde in plaats van eigenschappen.** - Bepaal de meest geoptimaliseerde workflow voor uw auteurs in plaats van dat deze verloren gaat in AEM uitgebreide functieset.
+1. **voordeel halen uit AEM flexibiliteit.** - AEM functies hoeven niet in een vacuüm te worden gebruikt. Gebruik de functies die u nodig hebt voor het gebruik van hoofdletters en kleine letters.
+1. **hefboomwerking de deskundigheid van uw auteur.** - Neem van meet af aan echte auteurs van inhoud aan het project deel om ervoor te zorgen dat u de gewenste waarde krijgt door de functies te implementeren die zinnig zijn.
+
+Door uw aandacht toe te spitsen op de waarde voor uw auteurs, kan uw Edge Delivery Services-project voldoen aan de moderne eisen van de industrie waarmee uw makers van inhoud worden geconfronteerd en kan het snel inhoud bieden om uw klanten te verrukken.
+
+## Flexibele ontwerpgereedschappen voor uw makers van inhoud {#overview}
 
 Edge Delivery Services is een samenstellbare set services die u in staat stelt om op zeer flexibele wijze inhoud op uw website te schrijven. U kunt zowel [ AEM inhoudsbeheer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) gebruiken en het schrijven WYSIWYG gebruikend de [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) evenals [ op document-gebaseerd schrijven.](https://www.aem.live/docs/authoring)
 
@@ -30,15 +52,51 @@ In het volgende diagram ziet u hoe u inhoud in Microsoft Word (op documenten geb
 
 ![ Architectuur van Edge Delivery ](assets/AEM-with-EDS-publishing-simple2.png)
 
-U kunt inhoud rechtstreeks vanuit Microsoft Word of Google Docs gebruiken, zodat deze bronnen pagina&#39;s op uw website worden. Daarnaast kunnen koppen, lijsten, afbeeldingen en lettertype-elementen allemaal van de oorspronkelijke bron naar de website worden overgebracht. De nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
+De Edge Delivery Services gebruiken GitHub zodat kunt u code van uw bewaarplaats beheren en opstellen GitHub. Nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
 
-De Edge Delivery Services gebruiken GitHub zodat kunt u code van uw bewaarplaats beheren en opstellen GitHub. Bijvoorbeeld, schrijft u inhoud in of Google Docs of Microsoft Word en de functionaliteit van uw plaats kan worden ontwikkeld door CSS en JavaScript in GitHub te gebruiken. Wanneer u klaar bent, gebruikt u de browserextensie van de Sidekick om inhoudsupdates voor te vertonen en te publiceren.
+### Authoring op basis van documenten {#document-based}
 
-Lees verder in de documentatie van de Edge Delivery Services:
+Met documentgebaseerde ontwerpfuncties kunt u inhoud rechtstreeks vanuit Microsoft Word of Google Docs gebruiken, zodat deze bronnen pagina&#39;s op uw website worden. Koppen, lijsten, afbeeldingen en lettertype-elementen kunnen allemaal van de oorspronkelijke bron naar de website worden overgebracht.
+
+* Bij documentgebaseerde ontwerpfuncties is elke markering ingeschakeld om snel inhoud te maken met bekende ontwerpgereedschappen (Microsoft Word, Google Docs, enz.).
+* Het maken van inhoud wordt gestroomlijnd door het rechtstreeks in de brondocumenten maken, controleren en publiceren toe te staan.
+* Omdat bekende gereedschappen worden gebruikt, is geen instaptoegang vereist voor auteurs van inhoud, waardoor de snelheid van de inhoud toeneemt.
+* De functionaliteit van uw site kan worden ontwikkeld met CSS en JavaScript in GitHub.
+
+![ op document-Gebaseerde creatie ](assets/document-based-authoring.png)
+
+Lees verder in de op documenten gebaseerde ontwerpdocumentatie:
 
 * Voor details op hoe te om met Edge Delivery te worden begonnen zie de [ sectie van de Bouwstijl.](https://www.aem.live/docs/#build)
 * Om te begrijpen om inhoud te schrijven en te publiceren door Edge Delivery te gebruiken zie de [ sectie van Publish.](https://www.aem.live/docs/authoring)
 * Om te begrijpen hoe te om uw websiteproject behoorlijk te lanceren zie de [ sectie van de Lancering.](https://www.aem.live/docs/#launch)
+
+### WYSIWYG Authoring {#wysiwyg-authoring}
+
+Wat-u-ziet-is-wat-u-krijgt (WYSIWYG) creatie gebruikt de Universele Redacteur, een klantgerichte, one-stop plaats om inhoud levend en in-context met een visuele voorproef uit te geven.
+
+* Met WYSIWYG-authoring verhoogt u de efficiëntie van de auteur, of u nu koploos of kopend bent.
+* U kunt profiteren van AEM uitgebreide mogelijkheden voor inhoudsbeheer, waaronder workflow en governance.
+* Gebruikt talrijke uitbreidingspunten om uw eigen processen en integratie te steunen.
+* De functionaliteit van uw site kan worden ontwikkeld met CSS en JavaScript in GitHub.
+
+![ WYSIWYG authoring ](assets/wysiwyg-authoring.png)
+
+Lees verder in de WYSIWYG-ontwerpdocumentatie:
+
+* Voor een overzicht van de Universele Redacteur en het schrijven WYSIWYG zien het document [ WYSIWYG Inhoud Authoring voor Edge Delivery Services.](/help/edge/wysiwyg-authoring/authoring.md)
+* Voor een ontwikkelaarsoverzicht zie het document [ Begonnen Begeleidende Gids van de Ontwikkelaar voor WYSIWYG Authoring met Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+
+### Beslissen op uw auteursmethode {#authoring-method}
+
+AEM flexibiliteit zorgt ervoor dat uw ontwerpbehoeften worden gedekt. Adobe kan u helpen bepalen welke methode (of methodes) beste aan uw vereisten passen.
+
+* Zorg altijd dat de auteurs van de inhoud bij de beslissing zijn betrokken.
+* U kunt meerdere ontwerpmethoden implementeren.
+* U kunt uw auteursmethode altijd veranderen na-het-feit.
+* U moet niet voor de implementatie, maar eerder als deel van de implementatie beslissen.
+
+Gelieve te zien het document [ Kiezen een Authoring Methode ](authoring-methods.md) voor meer informatie.
 
 ## Edge Delivery Services en andere producten van Adobe Experience Cloud {#edge-other-products}
 
