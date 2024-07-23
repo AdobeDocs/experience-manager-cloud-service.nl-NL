@@ -4,7 +4,7 @@ description: Leer hoe u met het gereedschap Inhoud overbrengen inhoud van een on
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
+source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 28%
@@ -49,7 +49,7 @@ De overdracht van content bestaat uit twee fasen:
 
 Een migratieset heeft de volgende kenmerken:
 
-* Met de nieuwe versie kunt u maximaal twintig migratiesets maken in een project dat in Cloud Acceleration Manager is gemaakt.
+* Met de nieuwe versie kunt u maximaal tien migratiesets maken in een project dat in Cloud Acceleration Manager is gemaakt.
 * Elke migratieset moet een unieke naam hebben.
 
 De Content Transfer-tool heeft een functie die ondersteuning biedt voor differentiële aanvulling van content. Hierbij worden alleen die wijzigingen overgedragen die zijn aangebracht sinds de vorige activiteit voor contentoverdracht.
