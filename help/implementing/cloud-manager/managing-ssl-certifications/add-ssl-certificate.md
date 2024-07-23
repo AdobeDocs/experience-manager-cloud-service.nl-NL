@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
+source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -63,14 +63,6 @@ Als het certificaat eenmaal is opgeslagen, wordt het weergegeven als een nieuwe 
 ## Certificaatfouten {#certificate-errors}
 
 Er kunnen bepaalde fouten optreden als een certificaat niet correct is geïnstalleerd of voldoet aan de eisen van Cloud Manager.
-
-### Correcte opmaak van regels garanderen {#line-formatting}
-
-Wanneer het kleven van waarden voor **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat**, zouden de nieuwe lijnen slechts na BEGIN CERTIFICAAT en vóór EIND CERTIFICAAT moeten zijn. De geplakte waarden moeten dus als volgt worden samengesteld:
-
-* `-----BEGIN CERTIFICATE-----` moet op een eigen regel worden weergegeven.
-* `-----END CERTIFICATE-----` moet op een eigen regel worden weergegeven.
-* De certificaatinhoud moet op zijn eigen lijn als één lange koord **zonder om het even welke nieuwe lijnen** binnen tussen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` verschijnen.
 
 ### Clientcertificaten verwijderen {#client-certificates}
 
