@@ -4,9 +4,9 @@ description: Leer over het door:sturen van logboeken aan Splunk en andere regist
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Dit artikel is als volgt geordend:
             enabled: false
    ```
 
-1. Voor milieutypes buiten RDE (die momenteel niet wordt gesteund), creeer een gerichte plaatsing config pijpleiding in Cloud Manager.
+1. Voor milieutypes buiten RDE (die momenteel niet wordt gesteund), creeer een gerichte plaatsing config pijpleiding in Cloud Manager; merk op dat de Volledige pijpleidingen van de Stapel en de pijpleidingen van de RDE van het Web niet het configuratiedossier opstellen.
 
    * [ zie het vormen productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [ zie het vormen niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+Overwegingen:
+
+* Het url koord moet **https://** omvatten of de bevestiging zal ontbreken. Als er geen poort is opgenomen in de URL-tekenreeks, wordt poort 443 (de standaard-HTTPS-poort) gebruikt.
+* Als u een andere poort dan 443 wilt gebruiken, moet u deze als onderdeel van de URL opgeven.
 
 #### HTTPS CDN-logbestanden {#https-cdn}
 
@@ -267,8 +272,7 @@ Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde 
 
 >[!NOTE]
 >
-> Voordat de eerste CDN-logbestandvermelding wordt verzonden, moet de HTTP-server een eenmalige controle uitvoeren: een aanvraag die naar het pad ``wellknownpath`` wordt verzonden, moet reageren met ``*`` .
-
+> Voordat de eerste CDN-logbestandvermelding wordt verzonden, moet uw HTTP-server een eenmalige controle uitvoeren: een aanvraag die naar het pad ``/.well-known/fastly/logging/challenge`` wordt verzonden, moet reageren met een asterisk ``*`` in de hoofdtekst en de statuscode van 200.
 
 #### HTTPS-AEM {#https-aem}
 
