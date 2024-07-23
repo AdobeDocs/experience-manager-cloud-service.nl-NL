@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
+source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
 workflow-type: tm+mt
-source-wordcount: '5160'
+source-wordcount: '5265'
 ht-degree: 3%
 
 ---
@@ -241,7 +241,7 @@ ht-degree: 3%
    + [Gereedheidsfase](/help/journey-migration/readiness.md)
    + [Implementatiefase](/help/journey-migration/implementation.md)
    + [Live gaan](/help/journey-migration/go-live.md)
-   + [Post Go Live](/help/journey-migration/post-go-live.md)
+   + [Publiceren en live gaan](/help/journey-migration/post-go-live.md)
    + [De Gids van de migratie aan Experience Manager as a Cloud Service voor Partners](/help/journey-migration/getting-started-partners.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Inleiding tot Cloud Acceleration Manager {#introduction-cam}
@@ -335,7 +335,7 @@ ht-degree: 3%
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + [Reis van de Auteur van de Inhoud zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html) Reis van de Auteur van de Inhoud zonder hoofd [
       + Projecten {#projects}
          + [Werken met projecten](/help/sites-cloud/authoring/projects/overview.md)
          + [Projecten beheren](/help/sites-cloud/authoring/projects/managing.md)
@@ -692,13 +692,21 @@ ht-degree: 3%
             + [Draaien in een adaptieve vorm gebruiken](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Aangepaste fouthandler toevoegen in een adaptief formulier](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Een landinstelling toevoegen voor Adaptive Forms op basis van Core Components](/help/forms/supporting-new-language-localization-core-components.md)
-            + [Aangepaste functies maken en gebruiken](/help/forms/create-and-use-custom-functions.md)
-            + [Regels toevoegen aan een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components.md)
             + [JSON-schema ontwerpen voor een adaptief formulier (kerncomponenten)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Versies, opmerkingen en annotaties toevoegen aan een adaptief formulier](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [ vergelijk Adaptieve Forms ](/help/forms/compare-forms.md)
             + [Adaptieve Forms op basis van basiscomponenten converteren naar Core-componentformulieren met migratiehulpprogramma](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Een adaptief formulier opslaan als concept](/help/forms/save-core-component-based-form-as-draft.md)
+            + Inleiding aan de Redacteur van de Regel voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd {#rule-editor-core-components}
+               + [Inleiding aan de Redacteur van de Regel voor AanpassingsForms die op de Componenten van de Kern wordt gebaseerd](/help/forms/rule-editor-core-components.md)
+               + [De gebruikersinterface van de Redacteur van de regel voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd](/help/forms/rule-editor-core-components-user-interface.md)
+               + [Verschil tussen de Redacteur van de Regel van de Stichting en de Redacteur van de Regel van de Component van de Kern](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [Operator- en gebeurtenistypen beschikbaar in de regeleditor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-events-operators.md)
+               + [Voorbeelden voor een Regeleditor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-usecases.md)
+            + Inleiding aan de Functies van de Douane voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd {#create-and-use-custom-function-core-component}
+               + [Inleiding tot aangepaste functies voor adaptieve Forms op basis van kerncomponenten](/help/forms/create-and-use-custom-functions.md)
+               + [Een aangepaste functie maken en gebruiken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)
+               + [Voorbeelden van aangepaste functies voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-components-use-cases.md)
       + Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + Uw PDF forms converteren naar Adaptieve Forms {#afcs}
             + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
