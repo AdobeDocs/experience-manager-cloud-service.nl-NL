@@ -4,9 +4,9 @@ description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2024.7.0 
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
+source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ De releasedatum voor Cloud Manager versie 2024.7.0 in AEM as a Cloud Service is 
       * De koppeling voor het RAW-rapport in Lighthouse is nu intuïtiever zichtbaar, rechtstreeks in het deelvenster met details voor momentopnamen scannen.
       * De sectie met aanbevelingen voor Lighthouse is uitgebreid.
    * De PWA-waarde is verwijderd in overeenstemming met Lightroom-versie 12.0.0, waardoor deze waarde is verwijderd.
+* [ Het AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) is bijgewerkt aan [ versie 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
