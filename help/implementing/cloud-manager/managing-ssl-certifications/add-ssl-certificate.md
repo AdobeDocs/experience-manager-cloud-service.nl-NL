@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ Ga als volgt te werk om een certificaat toe te voegen met Cloud Manager.
    * Ga een naam voor uw certificaat in **Naam van het Certificaat** in.
       * Dit is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar uw certificaat kunt verwijzen.
    * Plak het **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat** waarden in hun respectieve gebieden. Alle drie velden zijn verplicht.
-   * In sommige gevallen kan het certificaat van de eindgebruiker in de keten worden opgenomen en moet het worden verwijderd voordat de keten in het veld wordt geplakt.
 
    ![ voeg SSL de dialoog van het Certificaat toe ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -61,13 +60,27 @@ Als het certificaat eenmaal is opgeslagen, wordt het weergegeven als een nieuwe 
 >
 >Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** zijn om een SSL certificaat in Cloud Manager te installeren.
 
->[!NOTE]
->
->Als u een fout ontvangt die vergelijkbaar is met `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.` , hebt u waarschijnlijk het clientcertificaat opgenomen in de certificaatketen. Zorg ervoor dat het clientcertificaat niet in de keten is opgenomen en probeer het opnieuw.
-
 ## Certificaatfouten {#certificate-errors}
 
 Er kunnen bepaalde fouten optreden als een certificaat niet correct is geïnstalleerd of voldoet aan de eisen van Cloud Manager.
+
+### Correcte opmaak van regels garanderen {#line-formatting}
+
+Wanneer het kleven van waarden voor **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat**, zouden de nieuwe lijnen slechts na BEGIN CERTIFICAAT en vóór EIND CERTIFICAAT moeten zijn. De geplakte waarden moeten dus als volgt worden samengesteld:
+
+* `-----BEGIN CERTIFICATE-----` moet op een eigen regel worden weergegeven.
+* `-----END CERTIFICATE-----` moet op een eigen regel worden weergegeven.
+* De certificaatinhoud moet op zijn eigen lijn als één lange koord **zonder om het even welke nieuwe lijnen** binnen tussen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----` verschijnen.
+
+### Clientcertificaten verwijderen {#client-certificates}
+
+Wanneer u een certificaat toevoegt, als er een fout optreedt die lijkt op het volgende:
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+Waarschijnlijk hebt u het clientcertificaat opgenomen in de certificaatketen. Zorg ervoor dat het clientcertificaat niet in de keten is opgenomen en probeer het opnieuw.
 
 ### Certificaatbeleid {#certificate-policy}
 
