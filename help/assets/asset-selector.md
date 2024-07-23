@@ -4,7 +4,7 @@ description: Gebruik de functie Asset Selector om de metagegevens en vertoningen
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e357dd0b9b2e67d4989a34054737a91743d0933a
+source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
 workflow-type: tm+mt
 source-wordcount: '4529'
 ht-degree: 0%
@@ -745,7 +745,7 @@ Gebruik het volgende codefragment om pop-upbericht voor het gebruik van een verl
 
 Met Asset Selector kunt u een tagkiezerfilter toevoegen. De tag wordt ondersteund door een taggroep waarin alle relevante tags worden gecombineerd met een bepaalde taggroep. Bovendien kunt u extra tags selecteren die overeenkomen met het element dat u zoekt. Bovendien kunt u de standaardtaggroepen onder het contextafhankelijke aanroepingsfilter die meestal door u worden gebruikt, ook instellen zodat ze onderweg toegankelijk zijn voor u.
 
-> 
+>
 >
 > * U moet een codefragment voor contextafhankelijke aanroepcode toevoegen om een tagfilter in de zoekopdracht in te schakelen.
 > * Het is verplicht de eigenschap name te gebruiken die overeenkomt met het type taggroep `(property=xcm:keywords.id=)` .
