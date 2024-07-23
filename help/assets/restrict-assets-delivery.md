@@ -2,7 +2,8 @@
 title: Levering van activa in Experience Manager beperken
 description: Leer hoe te om de levering van activa in  [!DNL Experience Manager] te beperken.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -19,7 +20,7 @@ De gebruikers [ die ](search-assets-api.md) zoeken of gebruiken [ levering URLs 
 
 ## Beperkte levering met een IMS-token {#restrict-delivery-ims-token}
 
-In de Experience Manager bestaat een beperkte levering via IMS uit twee belangrijke stappen:
+In Experience Manager Assets bestaat een beperkte levering via IMS uit twee belangrijke stappen:
 
 * Authoring
 * Aflevering
@@ -43,7 +44,7 @@ Als het veld niet beschikbaar is, voert u de volgende stappen uit om het veld to
       1. Werk **[!UICONTROL Map to property]** aan _bij./jcr:content/metadata/dam:rollen_.
 
 1. Haal de IMS-groepen op die moeten worden toegevoegd aan de metagegevens voor rollen van het element. Voer de volgende stappen uit om de IMS-groepen op te halen:
-   1. Aanmelden bij https://adminconsole.adobe.com/.
+   1. Aanmelden bij `https://adminconsole.adobe.com/.`
    1. Ga naar uw respectievelijke organisatie en navigeer naar **[!UICONTROL User Groups]** .
    1. Selecteer de **[!UICONTROL User Group]** die u wilt toevoegen en extraheer de **[!UICONTROL orgID]** en **[!UICONTROL userGroupID]** uit de URL of gebruik uw organisatie-id, zoals `{orgID}@AdobeOrg:{usergroupID}` .
 
