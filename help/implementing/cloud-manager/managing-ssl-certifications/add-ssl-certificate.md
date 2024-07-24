@@ -5,12 +5,13 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
+
 
 # Een SSL-certificaat toevoegen {#adding-an-ssl-certificate}
 
@@ -18,7 +19,7 @@ Leer hoe u uw eigen SSL-certificaat kunt toevoegen met de zelfbedieningsprogramm
 
 >[!TIP]
 >
->Een certificaat kan een paar dagen aan levering vergen. De Adobe beveelt daarom aan dat het certificaat ruim van tevoren wordt verstrekt.
+>Een certificaat kan een paar dagen aan levering vergen. De Adobe beveelt daarom aan dat het certificaat ruim vóór een bepaalde uiterste datum of datum van inbedrijfstelling wordt verstrekt.
 
 ## Certificaatvereisten {#certificate-requirements}
 
@@ -42,7 +43,8 @@ Ga als volgt te werk om een certificaat toe te voegen met Cloud Manager.
 
    * Ga een naam voor uw certificaat in **Naam van het Certificaat** in.
       * Dit is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar uw certificaat kunt verwijzen.
-   * Plak het **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat** waarden in hun respectieve gebieden. Alle drie velden zijn verplicht.
+   * Plak het **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat** waarden in hun respectieve gebieden.
+      * Alle drie velden zijn verplicht.
 
    ![ voeg SSL de dialoog van het Certificaat toe ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -63,6 +65,32 @@ Als het certificaat eenmaal is opgeslagen, wordt het weergegeven als een nieuwe 
 ## Certificaatfouten {#certificate-errors}
 
 Er kunnen bepaalde fouten optreden als een certificaat niet correct is geïnstalleerd of voldoet aan de eisen van Cloud Manager.
+
+### Certificaatvolgorde corrigeren {#correct-certificate-order}
+
+De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn.
+
+Tussentijdse certificaatbestanden moeten eindigen met het basiscertificaat of het certificaat dat zich het dichtst bij het basiscertificaat bevindt. Ze moeten in aflopende volgorde staan, van het `main/server` -certificaat tot aan het basiscertificaat.
+
+U kunt de orde van uw middendossiers bepalen gebruikend het volgende bevel.
+
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
+
+Met de volgende opdrachten kunt u controleren of de persoonlijke sleutel en het `main/server` -certificaat overeenkomen.
+
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
+
+>[!NOTE]
+>
+>De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel voor uw `main/server` -certificaat kunt vinden, moet u het certificaat opnieuw sleutelken door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
 
 ### Clientcertificaten verwijderen {#client-certificates}
 
@@ -124,32 +152,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### Certificaatvolgorde corrigeren {#correct-certificate-order}
-
-De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn.
-
-Tussentijdse certificaatbestanden moeten eindigen met het basiscertificaat of het certificaat dat zich het dichtst bij het basiscertificaat bevindt. Ze moeten in aflopende volgorde staan, van het `main/server` -certificaat tot aan het basiscertificaat.
-
-U kunt de orde van uw middendossiers bepalen gebruikend het volgende bevel.
-
-```shell
-openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-```
-
-Met de volgende opdrachten kunt u controleren of de persoonlijke sleutel en het `main/server` -certificaat overeenkomen.
-
-```shell
-openssl x509 -noout -modulus -in certificate.pem | openssl md5
-```
-
-```shell
-openssl rsa -noout -modulus -in ssl.key | openssl md5
-```
-
->[!NOTE]
->
->De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel voor uw `main/server` -certificaat kunt vinden, moet u het certificaat opnieuw sleutelken door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
-
 ### Geldigheidsdatums certificaat {#certificate-validity-dates}
 
 Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is vanaf de huidige datum. Controleer de geldigheid van de certificaatketen.
+
+## Volgende stappen {#next-steps}
+
+Gefeliciteerd! U hebt nu een werkend SSL-certificaat voor uw project. Dit is vaak een eerste stap bij het instellen van een aangepaste domeinnaam.
+
+* Zie het document [ Toevoegend een Naam van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) aan opstelling een naam van het douanedomein voort te zetten.
+* Zie het document [ Leiden SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) om over het bijwerken van en het beheren van uw SSL certificaten in Cloud Manager te leren.

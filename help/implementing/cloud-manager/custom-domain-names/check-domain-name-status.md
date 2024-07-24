@@ -5,15 +5,25 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 
 # Status domeinnaam controleren {#check-status}
+
+Leer hoe u kunt bepalen of uw aangepaste domeinnaam is geverifieerd door Cloud Manager.
+
+## Vereisten {#requirements}
+
+U moet aan deze vereisten voldoen voordat u de status van uw domeinnaam in Cloud Manager kunt controleren.
+
+* U moet eerst een verslag TXT voor uw douanedomein toevoegen zoals die in het document [ wordt beschreven Toevoegend een Verslag TXT.](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+
+## De status van uw aangepaste domeinnaam controleren {#how-to}
 
 U kunt de status van uw aangepaste domeinnaam bepalen in Cloud Manager.
 
@@ -27,16 +37,25 @@ U kunt de status van uw aangepaste domeinnaam bepalen in Cloud Manager.
 
 1. Klik het **pictogram van de Status** voor de domeinnaam.
 
-Cloud Manager verifieert de eigendom van het domein via de TXT-waarde en geeft een van de volgende statusberichten weer.
+Het statusdetail wordt weergegeven. Uw douanedomein is klaar om te worden gebruikt wanneer het status **Geverifieerde en Geïmporteerde Domein** wordt getoond. Zie de [ volgende sectie ](#statuses) voor details op de verschillende statussen en wat zij betekenen.
+
+>[!NOTE]
+>
+>Cloud Manager zal automatisch verificatie teweegbrengen wanneer u **** op de verificatiestap van **selecteert creeer de Add tovenaar van het Domein van de Douane** wanneer [ toevoegend een nieuwe naam van het douanedomein aan Cloud Manager.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) Voor volgende controles moet u actief het pictogram Verifiëren opnieuw selecteren naast de status.
+
+## Verificatiestatus begrijpen {#statuses}
+
+Cloud Manager zal domeineigendom via de [ TXT waarde ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) verifiëren en één van de volgende statusberichten toont.
 
 * **Ontbroken Controle van het Domein** - de waarde TXT of mist of met fouten ontdekt.
 
-   * Volg de instructies die worden gegeven om het probleem op te lossen.
+   * Volg de instructies in het statusbericht om het probleem op te lossen.
    * Wanneer klaar, moet u **opnieuw verifiëren** pictogram naast de status selecteren.
 
 * **Bezig de Verificatie van het Domein 1} - de Verificatie is lopend.**
 
    * Deze status wordt typisch gezien nadat u **selecteert verifieer opnieuw** pictogram naast de status.
+   * DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.
 
 * **Verified, Mislukte Plaatsing** - de controle TXT was succesvol, maar de plaatsing CDN ontbrak.
 
@@ -53,11 +72,9 @@ Cloud Manager verifieert de eigendom van het domein via de TXT-waarde en geeft e
 
    * Zie [ het Leiden Namen van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) om meer te leren.
 
-Cloud Manager zal automatisch een TXT controle teweegbrengen wanneer u **sparen** op de verificatiestap van **selecteert voeg de tovenaar van het Domein van de Douane** toe. Voor verdere controles, moet u actief selecteren opnieuw verifieert pictogram naast de status.
-
 ## Fouten in domeinnaam {#domain-error}
 
-Hieronder vindt u een aantal fouten met algemene domeinnamen en de bijbehorende resoluties.
+Hier volgen enkele algemene fouten bij de verificatie van domeinnamen en de bijbehorende resoluties.
 
 ### Fout domein niet geïnstalleerd {#domain-not-installed}
 
@@ -92,3 +109,7 @@ Als u een reeds bestaande configuratie CDN voor uw namen van het douanedomein he
 Het bericht verdwijnt zodra alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
 Zie [ Toevoegend een Naam van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) voor meer details.
+
+## Volgende stappen {#next-steps}
+
+Zodra u uw domeinstatus in Cloud Manager hebt geverifieerd, zult u DNS montages moeten vormen door DNS CNAME of verslagen toe te voegen APEX die aan AEM as a Cloud Service richten. Ga aan het document [ Vormende DNS Montages ](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) te werk om vestiging uw naam van het douanedomein te blijven.

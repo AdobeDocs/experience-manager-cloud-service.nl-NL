@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a95da7f8cc0f16445970f13c1acad28b14daae44
+source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
 workflow-type: tm+mt
 source-wordcount: '5270'
 ht-degree: 3%
@@ -335,7 +335,7 @@ ht-degree: 3%
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + [Reis van de Auteur van de Inhoud zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html) Reis van de Auteur van de Inhoud zonder hoofd [
       + Projecten {#projects}
          + [Werken met projecten](/help/sites-cloud/authoring/projects/overview.md)
          + [Projecten beheren](/help/sites-cloud/authoring/projects/managing.md)
@@ -861,7 +861,7 @@ ht-degree: 3%
 + Edge Delivery Services {#edge-delivery}
    + [Overzicht Edge Delivery Services](/help/edge/overview.md)
    + [Edge Delivery Services met AEM gebruiken](/help/edge/using.md)
-   + [Methode kiezen en schrijven](/help/edge/authoring-methods.md)
+   + [Een ontwerpmethode kiezen](/help/edge/authoring-methods.md)
    + WYSIWYG Authoring {#wysiwyg-authoring}
       + [WYSIWYG Content Authoring for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
       + [Inhoud publiceren voor Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
