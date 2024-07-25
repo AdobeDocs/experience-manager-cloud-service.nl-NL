@@ -4,9 +4,9 @@ description: Gebruik de functie Asset Selector om de metagegevens en vertoningen
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
+source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4540'
 ht-degree: 0%
 
 ---
@@ -424,8 +424,7 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *dialogSize* | overnemen op klein, middelgroot, groot, volledig scherm of volledig scherm | String | Optioneel | U kunt de lay-out bepalen door zijn grootte te specificeren gebruikend de bepaalde opties. |
 | *colorScheme* | Licht of donker | Nee | | Deze eigenschap wordt gebruikt om het thema van een toepassing Asset Selector in te stellen. U kunt kiezen tussen licht of donker thema. |
 | *filterRepoList* | Functie | Nee |  | U kunt de callback-functie `filterRepoList` gebruiken die de gegevensopslagruimte van de Experience Manager aanroept en een gefilterde lijst met opslagruimten retourneert. |
-| *getExpiryStatus* | Functie | Nee | | Deze geeft de status van een verlopen element. De functie retourneert `EXPIRED` , `EXPIRING_SOON` of `NOT_EXPIRED` op basis van de vervaldatum van een element dat u opgeeft. Zie [ verlopen activa ](#customize-expired-assets) aanpassen. |
-| *allowSelectionAndDrag* | Boolean | Nee | Onwaar | De waarde van de functie kan `true` of `false` zijn. Wanneer de waarde is ingesteld op `false` , kan het verlopen element niet worden geselecteerd of gesleept op het canvas. |
+| *endOptions* | Functie | | | U kunt tussen de volgende twee eigenschappen gebruiken: **getExpiryStatus** die status van een verlopen activa verstrekt. De functie retourneert `EXPIRED` , `EXPIRING_SOON` of `NOT_EXPIRED` op basis van de vervaldatum van een element dat u opgeeft. Zie [ verlopen activa ](#customize-expired-assets) aanpassen. Bovendien, kunt u **allowSelectionAndDrag** gebruiken waarin de waarde van de functie of `true` of `false` kan zijn. Wanneer de waarde is ingesteld op `false` , kan het verlopen element niet worden geselecteerd of gesleept op het canvas. |
 | *showToast* | | Nee | | Hierdoor kan de Asset Selector een aangepast pop-upbericht weergeven voor het verlopen element. |
 <!--
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
