@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: "Hoe te om een Submit Actie voor een Aangepast Vorm te vormen?"
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5e1d08e82cafc3a8a715653727f42ce0048f2b1f
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,12 @@ AEM Forms verbinden met uw Microsoft® SharePoint Document Library-opslagruimte:
 1. Geef de waarden **[!UICONTROL Title]** , **[!UICONTROL Client ID]** , **[!UICONTROL Client Secret]** en **[!UICONTROL OAuth URL]** op. Voor informatie over hoe te om identiteitskaart van de Cliënt terug te winnen, Geheime cliënt, identiteitskaart van de Aannemer voor OAuth URL, zie [ Documentatie Microsoft® ](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * U kunt de `Client ID` en `Client Secret` van uw app ophalen via de Microsoft® Azure-portal.
    * Voeg in de Microsoft® Azure-portal de Redirect URI toe als `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html` . Vervang `[author-instance]` door de URL van de instantie Auteur.
-   * Voeg de API-machtigingen `offline_access` en `Sites.Manage.All` toe voor lees- en schrijfmachtigingen.
+   * Voeg de API-machtigingen `offline_access` en `Sites.Manage.All` toe om lees- en schrijfmachtigingen te bieden. `Sites.Manage.All` is een machtigingsbereik in de Microsoft Graph-API waarmee een toepassing alle aspecten van SharePoint-sites kan beheren, zoals het verwijderen of wijzigen van sites.
+
+     >[!NOTE]
+     >
+     > U kunt de Plaatsen van SharePoint met beperkte toegang ](/help/forms/configure-sharepoint-site-limited-access.md) ook vormen door het `Sites.Selected` toestemmingswerkingsgebied in de Grafiek API van Microsoft te gebruiken. [ `Sites.Selected` is een machtigingsbereik in de Microsoft Graph API die gedetailleerdere en beperkte toegang tot SharePoint-sites toestaat.
+
    * Gebruik OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Vervang `<tenant-id>` door `tenant-id` van uw app via de Microsoft® Azure-portal.
 
    >[!NOTE]

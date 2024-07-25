@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
+source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
 workflow-type: tm+mt
-source-wordcount: '5283'
+source-wordcount: '5297'
 ht-degree: 3%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 3%
    + Opmerkingen bij de release AEMaaCS-functies {#release-notes}
       + [Opmerkingen bij de huidige release](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Opmerkingen bij de release 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [Opmerkingen bij de release 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
          + [Opmerkingen bij de release 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [Opmerkingen bij de release 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -686,6 +687,7 @@ ht-degree: 3%
             + [Een adaptief formulier verzenden naar Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Een adaptief formulier verzenden naar Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Een adaptief formulier verbinden met Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [SharePoint-site configureren met beperkte toegang met behulp van machtigingsbereik](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integreer AEM adaptief formulier met AEM workflow](/help/forms/configure-submit-action-workflow.md)
             + [Verzenden naar REST Endpoint-verzendactie configureren voor Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [De handeling E-mail verzenden voor een adaptief formulier configureren](/help/forms/configure-submit-action-send-email.md)

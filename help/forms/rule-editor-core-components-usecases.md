@@ -4,13 +4,13 @@ description: Het artikel schetst diverse gebruiksgevallen voor een regelredacteu
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
-
 
 # Verschillende gevallen van gebruik van de regeleditor
 
@@ -18,9 +18,10 @@ Het artikel verstrekt gedetailleerde voorbeelden van een Redacteur van de Regel 
 Nu, laten wij de verschillende implementaties voor een regelredacteur bespreken.
 
 
-## Complexe berekeningen stroomlijnen in herhaalbare deelvensters met ingebouwde functies
+## Complexe berekeningen stroomlijnen in herhaalbare deelvensters met functies
 
-De regelredacteur staat u toe om uit-van-de-doos functies zoals Som, Min, Max, en verbind rechtstreeks op gebieden binnen herhaalbare panelen te gebruiken. Dit ontgrendelt krachtige automatisering, die u toestaat om complexe bedrijfslogica zonder douanecode uit te voeren.
+De regelredacteur staat u toe om uit-van-de-doos functies zoals Som, Min, Max, en verbind rechtstreeks op gebieden binnen herhaalbare panelen te gebruiken. U kunt ook een waarde in een herhaalbaar deelvensterveld doorgeven aan de functie die numerieke arrays, tekenreeksarrays, Booleaanse arrays enzovoort accepteert. Dit ontgrendelt krachtige automatisering, die u toestaat om complexe bedrijfslogica zonder douanecode uit te voeren.
+
 Stel u een formulier voor met een herhaalbaar deelvenster, waarin elke deelvensterinstantie informatie verzamelt over de gedeclareerde waarde van elementen.
 
 ![ Herhaalbare vorm ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ Met de functie `Sum` kunt u automatisch de waarde van de totale elementen in all
 Wanneer u een formulier invult en exemplaren toevoegt om de elementwaarden te declareren, berekent de knop `Calculate Asset Value` de totale som van alle gedeclareerde elementwaarden en wordt het resultaat in het totaal weergegeven in `assetvalue` textbox.
 
 ![ Steun voor herhaalbare paneelgebieden in functies OOTB ](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> Als de waarde van het veld van het herhaalbare deelvenster wordt doorgegeven aan een functie die geen array accepteert, wordt de veldwaarde van de laatste instantie van het herhaalbare deelvenster doorgegeven aan de functie.
 
 Dit is slechts één voorbeeld! Onderzoek de beschikbare [ functies ](#b-form-objects-and-functions-br) om werkschema&#39;s te vereenvoudigen en gegevensnauwkeurigheid binnen uw vormen te verbeteren.
 

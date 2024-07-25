@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -91,8 +91,6 @@ Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelco
 * Als een regel op een voorwaarde controleert en een actie onmiddellijk bij het verstrekken van een waarde op een gebied of het weggaan van een gebied uitvoert, wordt het geadviseerd om een regel met een voorwaarde-actie constructie of het wanneer regeltype op het gebied te schrijven waarop de voorwaarde wordt geëvalueerd.
 * De voorwaarde in wanneer regel wordt geëvalueerd wanneer een gebruiker de waarde van het voorwerp verandert waarop wanneer regel wordt toegepast. Als u echter wilt dat de actie wordt geactiveerd wanneer de waarde aan de serverzijde verandert, bijvoorbeeld bij het vooraf invullen van de waarde, kunt u het beste een When-regel schrijven die de actie activeert wanneer het veld wordt geïnitialiseerd.
 * Wanneer u regels schrijft voor vervolgkeuzelijsten, keuzerondjes of selectievakjes, worden de opties of waarden van deze formulierobjecten in het formulier vooraf ingevuld in de regeleditor.
-
-## Volgende stap
 
 Om te begrijpen hoe te om het gebruikersinterface voor het schrijven van en het leiden van regels in een Redacteur van de Regel te gebruiken, verwijs naar het [ Gebruikersinterface van de Redacteur van de Regel voor Aangepast Forms dat op het artikel van de Componenten van de Kern wordt gebaseerd ](/help/forms/rule-editor-core-components-user-interface.md).
 

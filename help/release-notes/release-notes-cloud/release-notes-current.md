@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
+source-git-commit: e11c869c2f8cc8847869ad67a2c752e7239bd44c
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.6.0) is 27 juni 2024. De volgende release met functies (2024.7.0) is gepland voor 25 juli 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.7.0) is 25 juli 2024. De volgende release met functies (2024.8.0) is gepland voor 29 augustus 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
@@ -36,17 +36,13 @@ U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-no
 
 ## Video vrijgeven {#release-video}
 
-Bekijk de video Overzicht van de release van juni 2024 voor een overzicht van de functies die in de release van 2024.6.0 zijn toegevoegd:
+Bekijk de video Overzicht van de release van juli 2024 voor een overzicht van de functies die zijn toegevoegd in de release van 2024.7.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3430779?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functie in Experience Manager Sites {#new-feature-sites}
-
-**Echte Dienst van Gegevens van de Controle van het Gebruik (RUM)** {#real-use-monitoring}
-
-De [ Echte Dienst van Gegevens van de Controle van het Gebruik (RUM) ](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) is nu algemeen beschikbaar, toelatend cliënt-zijgegevensinzameling voor AEM as a Cloud Service. Deze service biedt een nauwkeurigere weergave van gebruikersinteracties en zorgt voor een betrouwbare maatstaf voor de betrokkenheid van websites. Het biedt klanten geavanceerde inzichten in hun paginaverkeer en prestaties aan, die een waardevolle kans bieden om paginaprestaties te begrijpen en te verbeteren.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
@@ -64,36 +60,21 @@ Wilt u de functie proberen en feedback delen? Stuur een e-mail naar aemcs-headle
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-### Nieuwe functies in Experience Manager Assets {#new-features-assets}
+**uploadt activa gebruikend de Selecteur van Activa**
 
-
-
-**Content Hub**
-
-Content Hub is beschikbaar als onderdeel van Experience Manager Assets as a Cloud Service voor het democratiseren van de toegang tot online-inhoud voor organisaties en hun zakelijke partners. Met Content Hub kunt u eenvoudig middelen zoeken en distribueren, nieuwe on-brand variaties hergebruiken en maken en de activering op schaal versnellen.
-
-![ Content Hub gebruikersinterface ](/help/release-notes/assets/content-hub-ui.png)
-
-**Dynamic Media met Mogelijkheden OpenAPI**
-
-Dynamic Media met OpenAPI-mogelijkheden breidt de DAM uit tussen Adobe- en externe toepassingen, waardoor toegang mogelijk is tot door een merk goedgekeurde digitale middelen in elk kanaal, via Asset Selector of OpenAPI-stack. Belangrijke elementen - geen binaire kopieën, elementen zijn geoptimaliseerd en getransformeerd aan de rand voor snelle prestaties, leveren elementen openbaar of veilig.
-
-![ Nieuw de gegevensstroomdiagram van Dynamic Media ](/help/assets/assets/dm-openapi-dfd.png)
-
+Met Asset Selector kunnen auteurs van inhoud nu de definitieve elementen rechtstreeks vanuit de kiezer uploaden door ze te slepen of door vanuit het lokale bestandssysteem te bladeren. Hierdoor kunnen de uiteindelijke middelen naar de DAM worden geüpload vanuit de toepassing van uw keuze.
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
 
-**Meer opties zijn beschikbaar in het dashboard van de Inzichten van Assets**
+**de integratie van Content credentials**
 
-Asset Count op type en grootte zijn nu beschikbaar op het Assets Insights-dashboard. Deze opties leveren realtime gegevens in uw Assets-weergaveomgeving. Ze geven een gedetailleerd overzicht van het aantal en het percentage van de elementen per grootteklasse en type element.
+Experience Manager Assets ondersteunt nu content credentials voor ondersteunde afbeeldingsindelingen. Dit biedt informatie over de relatie tussen het actief en de manier waarop het is gemaakt, inclusief of het is gewijzigd met behulp van GenAI.
 
-**Updates aan ingebedde redacteur van de Adobe Express**
+![ Content credentials ](/help/assets/assets/content-credentials.png)
 
-* Verbeterde gebruikerservaring voor het opslaan als een nieuw element in plaats van het opslaan als een nieuwe versie.
+**Visuele voorproeven van omslaginhoud**
 
-* Exporteren van uit meerdere pagina&#39;s bestaande Express-documenten (voorheen werd slechts één pagina ondersteund) in zowel de PDF- als afbeeldingsindeling met meerdere pagina&#39;s. Als u afbeeldingsindelingen selecteert, wordt elke pagina opgeslagen als een afzonderlijk element in de DAM voor downstreamdistributie.
-
-* Ondersteuning voor het toevoegen van metagegevens in het dialoogvenster Opslaan terwijl u een element opslaat.
+Experience Manager Assets geeft nu visuele voorvertoningen van de inhoud van de map weer op de miniatuur van de map wanneer u naar inhoud bladert of zoekt, waardoor de beschikbare middelen in de AEM Assets-opslagruimte beter kunnen worden ontdekt.
 
 <!--
 
@@ -110,25 +91,11 @@ When looking at the asset details, any image with content credentials added, suc
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
-<!-- 
-
-* **Configure a shard for Adobe Sign for AEM Forms**: Adobe distributes Acrobat Sign API around the globe in many deployment units called "shards." Each shard serves a customer's account, such as NA1, NA2, NA3, EU1, JP1, AU1, IN1, and others. The shard names correspond to geographic locations. You can now use more than one shard while using Adobe Sign integration with AEM Forms. 
-
--->
-
 ### Nieuwe functies in AEM Forms {#forms-new-prerelease-features}
 
 #### Verbeterde Visual Rule Editor voor op kerncomponenten gebaseerde adaptieve Forms
 
-Deze versie brengt een significante verbetering aan de Visuele Redacteur van de Regel voor adaptieve vormen die op kerncomponenten worden gebaseerd. U kunt nu het volgende doen:
-
-* Creeer regels in de Visuele Redacteur van de Regel aan [ met voeten treden de standaardberichten van de vormvoorlegging succes/mislukking ](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
-
-* In de Adaptieve Redacteur van de Regel van Forms, voegde de capaciteit toe om [ verschillende types van gebieden voor de WHEN verrichting ](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when) te selecteren.
-
-* Een vormauteur kan douanefuncties op [ preprocess gegevens vóór voorlegging ](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server) nu toepassen.
-
-* Gebruik [**sparen als 1} functionaliteit van het Ontwerp {om gedeeltelijk voltooide vormen voor recentere voorlegging te bewaren.**](/help/forms/save-core-component-based-form-as-draft.md) Deze functionaliteit is handig in situaties waarin gebruikers het invullen van een formulier moeten onderbreken en er later op moeten terugkomen.
+Auteurs van adaptieve formulieren kunnen herhaalbare formuliervelden gebruiken vanuit de functies in de visuele regeleditor, zodat kerncomponenten complexe bedrijfslogica in de formulieren kunnen bouwen zonder dat hiervoor hulp van het ontwikkelingsteam of aanpassings- of ontwikkelingsteam nodig is.
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
@@ -136,33 +103,54 @@ Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusiev
 
 Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
-#### Verbeterde methoden voor botbeveiliging
+#### Aangepaste formulieren maken met Universal Editor
 
-AEM Forms heeft zijn beveiligingsfuncties verbeterd door ondersteuning toe te voegen voor twee populaire CAPTCHA-oplossingen: Cloudflare Turnstile en hCaptcha. Deze functionaliteit is een aanvulling op de bestaande Google reCAPTCHA en biedt gebruikers extra opties. Het vergroot de flexibiliteit om hun formulieren te beschermen tegen bots en spam.
-
-* **Wolkenflare Turnstile**: Dit frictionless CAPTCHA verifieert gebruikers door een eenvoudige uitdaging die geen expliciete interactie vereist. De toepassing wordt naadloos geïntegreerd in uw formulieren, waardoor de gebruikerservaring wordt verbeterd.
-* **hCaptcha**: Deze privacy-geconcentreerde CAPTCHA biedt een gebruikersvriendelijk alternatief met een nadruk op gegevensprivacy aan. Het is bedoeld om een evenwicht te vinden tussen veiligheid en gebruikerservaring.
-* **Google reCAPTCHA**: AEM Forms blijft zowel reCAPTCHA v2 als reCAPTCHA Onderneming steunen, die een betrouwbare en gevestigde oplossing aanbieden.
-
-Door meerdere CAPTCHA-opties aan te bieden, hebt AEM Forms u de mogelijkheid om de oplossing te selecteren die het beste aansluit bij uw specifieke behoeften.
-
-Klaar om een van deze CAPTCHA-oplossingen te integreren met uw Adaptive Forms? De documentatie van de Adobe verstrekt gedetailleerde instructies voor elk: [ Cloudflare Turnstile ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [ hCaptcha ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), en [ Google reCAPTCHA ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
-
-
-### Forms Service
-
-Forms-service genereert interactieve PDF forms voor het vastleggen van gegevens. Het kan ook worden gebruikt om gegevens naar en van een bestaand interactief PDF formulier te importeren of te exporteren en ingediende gegevens te valideren. Hier volgt een uitsplitsing van de functies:
-
-* **teruggevend Forms**: Produceer een interactieve vorm van PDF van een malplaatje dat gebruikend AEM Forms Designer en, naar keuze, de gegevens van XML wordt gecreeerd. Met deze functie wordt een optioneel vooraf ingevuld PDF-formulier gemaakt.
-* **Extractie en de Invoer van Gegevens**: De gegevens van de invoer in een bestaande vorm van PDF evenals extraheren gegevens uit een gevulde vorm van PDF. Zowel XDP- als XML-gegevensindelingen worden ondersteund en het importeren naar niet-XFA-PDF forms (ook wel AcroForms genoemd) biedt daarnaast ondersteuning voor FDF- en XFDF-gegevens.
-* **Bevestiging van Gegevens**: Valideer voorgelegde gegevens, in formaat XDP of van XML, tegen een malplaatje dat gebruikend AEM Forms Designer wordt gecreeerd.
+Hefboomwerking de Universele Redacteur van Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) om adaptieve vormen tot stand te brengen gebruikend WYSIWYG belemmering-daling authoring, voor zowel hoofd als krachtige inschrijvingservaringen, die via de Dienst van Edge Delivery worden geleverd. [ Auteurs van adaptieve formulieren kunnen eenvoudig experimenten maken en starten met variaties in de formulieren op de webpagina&#39;s en bepalen wat de beste prestaties zijn voor eindgebruikers.
 
 >[!IMPORTANT]
 >
 > Als u in het aansluiten van bij het Vroege Programma van de Toegang van de Adobe voor om het even welke vroege toegangsinnovatie geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken. U kunt toegang vragen tot alle of tot specifieke innovaties.
 
-
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
+
+### Inhoud op de CDN wissen met een Self-Serve API-sleutel {#purge-cdn}
+
+Het plaatsen van TTL gebruikend HTTP Cachebeheer kopbal is een efficiënte benadering om de prestaties van de inhoudslevering en inhoudsversheid in evenwicht te brengen. In gevallen waarin het van essentieel belang is om onmiddellijk bijgewerkte inhoud te leveren, kan het echter nuttig zijn om de CDN-cache rechtstreeks te wissen.
+
+[ Leer hoe ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om een purge API teken te vormen gebruikend de de configuratiepijplijn van Cloud Manager, zodat kunt u [ zuiveren APIs ](/help/implementing/dispatcher/cdn-cache-purge.md), met om het even welk van deze variaties aanhalen:
+* Eén URL
+* Meerdere URL&#39;s die een tag gebruiken
+* Volledige CDN-cache leegmaken
+
+### Self-Serve Configuratie van x-AEM-Edge-Sleutel voor klant-Beheerde CDN {#customermanaged-keys}
+
+Eerder, was een steunkaartje nodig om X-AEM-Edge-Sleutel te produceren die voor configuratie van een klant-beheerde CDN wordt vereist. Dit is nu zelfbediening door de belangrijkste waarde in een configuratiedossier te verklaren dat gebruikend de Pijpleiding van de Configuratie wordt opgesteld, verwijderend om het even welke vertraging in het aan boord gaan van een nieuw milieu. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+
+### Waarschuwing verkeersfilterregels {#traffic-filter-rules-alerts}
+
+De Regels van de Filter van het verkeer, die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden geblokkeerd.
+
+Nu kunt u [ aan alarm ](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) intekenen wanneer uw regels van de verkeersfilter worden teweeggebracht. Met e-mailmeldingen van het Actions Center kunt u op de hoogte worden gehouden wanneer bepaalde verkeersvoorwaarden zich voordoen, zodat u de juiste maatregelen kunt nemen.
+
+### Inhoudsgerelateerde programma&#39;s voor vroege adoptie {#foundation-early-adopter}
+
+E-mail **<aemcs-cdn-config-adopter@adobe.com>** waarin wordt aangegeven in welke van de onderstaande programma&#39;s voor vroege adoptie u geïnteresseerd bent.
+
+#### Basisverificatie bij de CDN (programma voor vroege adopters) {#basicauth-cdn}
+
+Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden in beheerd door een configuratiedossier in git dat via de Pijpleiding van de Configuratie, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+
+#### Client-Side Redirects (Early-adopter-programma) {#client-side-redirects-early-adopter}
+
+Vorm 301/302 cliënt-zij richt in broncontrole, en stel aan CDN op. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Merk op dat er verscheidene andere eigenschappen reeds beschikbaar met betrekking tot [ CDN configuratie ](/help/implementing/dispatcher/cdn-configuring-traffic.md) zijn, met inbegrip van verzoek en reactietransformaties, en verpletterend verkeer aan off-AEM plaatsen.
+
+#### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (vroege adopter-programma) {#apache-rewritemaps-early-adopter}
+
+Net als AEM 6.5 voert Apache/dispatcher opnieuw schrijfkaarten in die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en laadt ze, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Deze benadering laat bedrijfsgebruikers redirects verklaren gebruikend een spreadsheet of een UI, zoals ACS Commons Redirect de Manager van de Kaart of een douanetoepassing. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+
+#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Introducter Program) {#esi-early-adopter}
+
+De Adobe beheerde CDN steunt nu [ Kant van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ### Kennisgevingen van het Centrum voor activiteiten in verband met de gezondheid van de inhoud Vroege adopter-programma {#actions-center-notifications}
 
@@ -191,44 +179,6 @@ Het Centrum van acties brengt proactief u op de hoogte wanneer voltooide werksch
 #### Ontbrekende verkoopbron {#sling-resource}
 
 Het Centrum van acties brengt pro-actief u op de hoogte wanneer een ontbrekende het verdelen middel wordt ontdekt. Op deze manier kunt u de ontbrekende bron toevoegen en het mislukken van bepaalde AEM Assets-functies voorkomen.
-
-### Inhoudsgerelateerde programma&#39;s voor vroege adoptie {#foundation-early-adopter}
-
-E-mail **<aemcs-cdn-config-adopter@adobe.com>** waarin wordt aangegeven in welke van de onderstaande programma&#39;s voor vroege adoptie u geïnteresseerd bent.
-
-#### Basisverificatie bij de CDN (programma voor vroege adopters) {#basicauth-cdn}
-
-Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden in beheerd door een configuratiedossier in git dat via de Pijpleiding van de Configuratie, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
-
-#### Inhoud op de CDN wissen met een zelfbedieningsAPI-sleutel (programma voor vroege adopters) {#purge-cdn}
-
-Registreer een CDN zuivering API sleutel op een zelfbediening manier, en gebruik het om inhoud bij CDN, of globaal, of voor één of meerdere middelen ongeldig te maken. [ leer meer ](/help/implementing/dispatcher/cdn-cache-purge.md).
-
-<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
-
-#### Self-Serve Creatie van x-AEM-Edge-Sleutel voor klant-Beheerde CDN (BYOCDN) (Vroege Programma van de Aannemer) {#byocdn-keys}
-
-Eerder, was een steunkaartje nodig om X-AEM-Edge-Sleutel te produceren die voor configuratie van een klant-beheerde CDN wordt vereist. Dit resultaat kan nu op een zelfbediende manier door een configuratiedossier worden verwezenlijkt dat gebruikend de Pijpleiding van de Configuratie wordt opgesteld, verwijderend om het even welke vertraging in het aan boord gaan van een nieuw milieu. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
-
-<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
-
-#### Client-Side Redirects (Early-adopter-programma) {#client-side-redirects-early-adopter}
-
-Vorm 301/302 cliënt-zij richt in broncontrole, en stel aan CDN op. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Merk op dat er verscheidene andere eigenschappen reeds beschikbaar met betrekking tot [ CDN configuratie ](/help/implementing/dispatcher/cdn-configuring-traffic.md) zijn, met inbegrip van verzoek en reactietransformaties, en verpletterend verkeer aan off-AEM plaatsen.
-
-#### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
-
-Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web omvatten (WAF), laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
-
-Sluit zich aan bij het vroege adoptieprogramma zodat kunt u worden gealarmeerd wanneer uw regels van de verkeersfilter worden teweeggebracht. Met e-mailmeldingen van het Actions Center kunt u op de hoogte worden gehouden wanneer bepaalde verkeersvoorwaarden zich voordoen, zodat u de juiste maatregelen kunt nemen.
-
-#### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (vroege adopter-programma) {#apache-rewritemaps-early-adopter}
-
-Net als AEM 6.5 voert Apache/dispatcher opnieuw schrijfkaarten in die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en laadt ze, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Deze benadering laat bedrijfsgebruikers redirects verklaren gebruikend een spreadsheet of een UI, zoals ACS Commons Redirect de Manager van de Kaart of een douanetoepassing. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
-
-#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Introducter Program) {#esi-early-adopter}
-
-De Adobe beheerde CDN steunt nu [ Kant van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
    </tr>
    <tr>
     <td>ES10-ondersteuning </td>
-    <td>ES10 wordt nog niet ondersteund. </td>
+    <td>ES10 wordt nog niet ondersteund. Deze biedt alleen ondersteuning voor ES5 JavaScript-functies. </td>
     <td>Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen aangepaste functies. 
    </td>
    </tr>
