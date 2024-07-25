@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -115,9 +115,9 @@ De pijpleiding wordt bewaard en u kunt uw pijpleidingen ](managing-pipelines.md)
 
 Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM toepassing op. In zulk een plaatsing kunt u verkiezen om **** één van de volgende soorten code te omvatten:
 
-* **Config** - vorm montages voor de regels van de verkeersfilter op uw AEM milieu.
-   * Zie de regels van de Filter van het document [ Verkeer met inbegrip van de Regels van WAF ](/help/security/traffic-filter-rules-including-waf.md) leren hoe te om de regels van de verkeersfilter in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
-   * Wanneer het runnen van een gerichte plaatsingspijpleiding, configuraties [ zoals configuraties WAF ](/help/security/traffic-filter-rules-including-waf.md) zullen worden opgesteld, op voorwaarde dat zij aan milieu, bewaarplaats, en tak worden bewaard u in de pijpleiding bepaalde.
+* **Config** - vorm montages voor diverse eigenschappen op uw AEM milieu.
+   * Zie [ Gebruikend Artikel Config Pipelines ](/help/operations/config-pipeline.md) voor een lijst van gesteunde configuraties, die logboek het door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN omvat, en om hen in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
+   * Wanneer het runnen van een gerichte plaatsingspijpleiding, zullen de configuraties worden opgesteld, op voorwaarde dat zij aan milieu, bewaarplaats, en tak worden bewaard u in de pijpleiding bepaalde.
    * Op elk ogenblik, kan er slechts één config pijpleiding per milieu zijn.
 * **Voorste Code van het Eind** - vorm JavaScript en CSS voor het vooreind van uw AEM toepassing.
    * Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.

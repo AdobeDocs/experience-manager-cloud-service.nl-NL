@@ -6,9 +6,9 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,8 @@ Een niet-productiepijpleiding dient hoofdzakelijk om codescannen in werking te s
 Naast productie en niet-productie kunnen pijpleidingen worden gedifferentieerd naar het type code dat zij invoeren.
 
 * **[Volledige Pijpleidingen van de Stapel](#full-stack-pipeline)** - stelt gelijktijdig achterste en front-end codebouwstijlen op die één of meerdere AEM servertoepassingen samen met configuraties HTTPD/Dispatcher bevatten
-* **[Pijpleidingen Config](#config-deployment-pipeline)** - vorm en stel de regels van de verkeersfilter, met inbegrip van de regels van WAF, binnen notulen op
+* **[Pijpleidingen Config](#config-deployment-pipeline)** - stel snel configuraties voor eigenschappen zoals logboek op door:sturen, purge-verwante onderhoudstaken, en diverse configuraties CDN zoals de regels van de verkeersfilter (met inbegrip van de regels van WAF), verzoek en reactietransformaties, oorsprongskiezers, cliënt-zijomleidingen, foutenpagina&#39;s, klant-beheerde sleutels CDN, zuiveren API sleutels, en basisgezag op.
+   * Gelieve te zien het document [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md) voor details.
 * **[voorste-Eind Pijpleidingen](#front-end)** - stel front-end code op bouwt die één of meerdere cliënt-zij toepassingen UI bevatten
 * **[de Lijnen van het Web Config Pipelines](#web-tier-config-pipelines)** - stelt configuraties HTTPD/Dispatcher op
 
@@ -71,11 +72,10 @@ De volgende tabel geeft een overzicht van de in Cloud Manager beschikbare pijple
 | Productie of niet-productie | Implementatie | Volledig stapel | Implementeert tegelijkertijd back-end- en front-end code samen met de configuraties HTTPD/Dispatcher | Wanneer front-end code met AEM servercode moet worden opgesteld.<br> wanneer front-end pijpleidingen of Web-rij config pijpleidingen nog niet zijn goedgekeurd. |
 | Productie of niet-productie | Implementatie | Voorkant | Implementeert front-end code-build die een of meer client-side UI-toepassingen bevat | Steunt veelvoudige, gezamenlijke front-end pijpleidingen <br> veel sneller dan volledig-stapelplaatsingen |
 | Productie of niet-productie | Implementatie | Config. web | HTML/Dispatcher-configuraties implementeren | Binnen enkele minuten implementeren |
-| Productie of niet-productie | Implementatie | Config | Plaatst verkeer het filtreren regels | Binnen enkele minuten implementeren |
+| Productie of niet-productie | Implementatie | Config | Stelt [ configuratie voor een aantal eigenschappen ](/help/operations/config-pipeline.md) met betrekking tot CDN op, logboek het door:sturen, en zuivert onderhoudstaken | Binnen enkele minuten implementeren |
 | Niet-productie | Codekwaliteit | Volledig stapel | Hiermee wordt de codekwaliteit zonder implementatie gescand op een full-stack code | Ondersteunt meerdere pijpleidingen |
 | Niet-productie | Codekwaliteit | Voorkant | Hiermee wordt de codekwaliteit zonder implementatie gescand op de front-end code | Ondersteunt meerdere pijpleidingen |
 | Niet-productie | Codekwaliteit | Config. web | Hiermee wordt de codekwaliteit zonder implementatie gescand op de configuraties van de verzender | Ondersteunt meerdere pijpleidingen |
-| Niet-productie | Codekwaliteit | Config | Plaatst verkeer het filtreren regels |  |
 
 In het volgende diagram worden Cloud Manager-pijpleidingconfiguraties geïllustreerd met traditionele, single front-end opslagsystemen of onafhankelijke front-end opslagsystemen.
 
@@ -116,9 +116,9 @@ Leren hoe te om volledig-stapelpijpleidingen te vormen, zie de volgende document
 
 ## Config Pipelines {#config-deployment-pipeline}
 
-Met een config pijpleiding kunt u de regels van de verkeersfilter, met inbegrip van de regels van WAF, binnen notulen vormen en opstellen.
+Met een config pijpleiding kunt u configuraties voor logboek snel opstellen door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN zoals de regels van de verkeersfilter (met inbegrip van de regels van WAF), verzoek en reactietransformaties, oorsprongskiezers, cliënt-zijomleidingen, foutenpagina&#39;s, klant-beheerde sleutels CDN, zuiveren API sleutels, en basiscontrole.
 
-Zie [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](/help/security/traffic-filter-rules-including-waf.md) leren hoe te om de configuraties in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
+Gelieve te zien het document [ Gebruikend Pijpleidingen Config ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) voor een uitvoerige lijst van gesteunde eigenschappen en te leren hoe te om de configuraties in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
 
 ### Config Pipelines configureren {#configure-config-deployment}
 

@@ -4,12 +4,13 @@ description: Meer informatie over onderhoudstaken in AEM as a Cloud Service en h
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2055'
 ht-degree: 0%
 
 ---
+
 
 # Onderhoudstaken in AEM as a Cloud Service {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -215,27 +216,23 @@ De standaardwaarden voor leegmaken kunnen worden overschreven door een configura
 Declareer een configuratiedossier en stel het op zoals die in de volgende stappen wordt beschreven.
 
 >[!NOTE]
->Zodra u de versie zuivert knoop in het configuratiedossier opstelt, moet u het houden gedeclareerd en niet het verwijderen. De configuratiepijplijn zal ontbreken als u probeert om dit te doen.
+>Zodra u de versie zuivert knoop in het configuratiedossier opstelt, moet u het houden gedeclareerd en niet het verwijderen. De config pijpleiding zal ontbreken als u probeert om dit te doen.
 > 
 >Op dezelfde manier zodra u de knoop van de zuivering van het controlelogboek in het configuratiedossier opstelt, moet u het gedeclareerd houden en niet het verwijderen.
 
-**1** - creeer de volgende omslag en dossierstructuur in de top-level omslag van uw project in Git:
+**1** creeer een dossier genoemd `mt.yaml` of gelijkaardig.
 
-```
-config/
-     mt.yaml
-```
+**`config`** Plaats het dossier ergens onder een top niveauomslag genoemd  of gelijkaardig, zoals die in het [ wordt beschreven config pijpleidingsartikel.](/help/operations/config-pipeline.md#folder-structure)
 
-**2** - verklaar eigenschappen in het configuratiedossier, die omvatten:
+**3** - verklaar eigenschappen in het configuratiedossier, die omvatten:
 
-* een &quot;kind&quot;bezit met de waarde &quot;MaintenanceTasks&quot;.
-* een eigenschap &quot;version&quot; (momenteel is dit versie 1).
-* een optioneel object ‘metadata’ met de eigenschap `envTypes` met een door komma&#39;s gescheiden lijst van het omgevingstype (dev, stage, prod) waarvoor deze configuratie geldig is. Als er geen object metadata wordt gedeclareerd, is de configuratie geldig voor alle omgevingstypen.
+* a paar eigenschappen boven de gegevensknoop — zie het [ config pijpleidingsartikel ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving. De `kind` bezitswaarde zou *MaintenanceTasks* moeten zijn en de versie zou aan *1* moeten worden geplaatst.
+
 * een gegevensobject met zowel `versionPurge` - als `auditLogPurge` -objecten.
 
 Zie de definities en syntaxis van de objecten `versionPurge` en `auditLogPurge` hieronder.
 
-U zou de configuratie gelijkend op het volgende voorbeeld moeten structureren:
+Structuur de configuratie gelijkend op het volgende voorbeeld:
 
 ```
 kind: "MaintenanceTasks"
@@ -270,14 +267,7 @@ Houd er rekening mee dat de configuratie alleen geldig is als:
 * alle eigenschappen moeten worden gedefinieerd. Er zijn geen overgeërfde standaardinstellingen.
 * de typen (gehele getallen, tekenreeksen, booleans, enz.) in de onderstaande eigenschappentabellen moeten in acht worden genomen.
 
->[!NOTE]
->Met `yq` kunt u de YAML-opmaak van het configuratiebestand lokaal valideren (bijvoorbeeld `yq mt.yaml` ).
-
-**3** - vorm de pijpleidingen van de niet-productie en van de productieconfiguratie.
-
-Rapid Development Environment (RDE&#39;s) bieden geen ondersteuning voor leegmaken. Voor andere milieutypes in productie (niet zandbak) programma&#39;s, creeer een gerichte plaatsing config pijpleiding in Cloud Manager.
-
-Zie [ vormend productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [ vormend niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) voor meer details.
+**4** - creeer een config pijpleiding in Cloud Manager, zoals die in het [ wordt beschreven config pijpleidingsartikel.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Sandboxen en RDE&#39;s (rapid development environment) bieden geen ondersteuning voor leegmaken.
 
 ### Versie wissen {#version-purge}
 

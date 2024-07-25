@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '3938'
+source-wordcount: '3939'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ De filterregels van het verkeer kunnen worden gebruikt om verzoeken bij de laag 
 
 De meeste van deze verkeersfilterregels zijn beschikbaar aan alle klanten van AEM as a Cloud Service Sites en van Forms. Zij werken hoofdzakelijk op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, hostname, weg, en gebruikersagent.
 
-Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of een vergunning van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het WAF (van de Firewall van de Toepassing van het Web) (of de regels van WAF voor kort) en hebben toegang tot de [ Vlaggen van WAF ](#waf-flags-list) later in dit artikel wordt beschreven.
+Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of een vergunning van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het het verkeersfilter van WAF (of de regels van WAF voor kort) en hebben toegang tot de [ Vlaggen van WAF ](#waf-flags-list) die later in dit artikel worden beschreven.
 
-De filterregels van het verkeer kunnen via de configuratiepijpleidingen van Cloud Manager worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Steun voor RDEs zal in de toekomst komen.
+De filterregels van het verkeer kunnen via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Steun voor RDEs zal in de toekomst komen.
 
 [ volg door een leerprogramma ](#tutorial) om concrete deskundigheid op deze eigenschap snel te bouwen.
 
@@ -39,7 +39,7 @@ Dit artikel is onderverdeeld in de volgende secties:
 * **overzicht van de bescherming van het Verkeer:** leer hoe u tegen kwaadwillig verkeer wordt beschermd.
 * **Voorgesteld proces om regels te vormen:** las over een methodologie op hoog niveau voor het beschermen van uw website.
 * **Opstelling:** ontdekt hoe te opstelling, vorm, en stel de regels van de verkeersfilter, met inbegrip van de geavanceerde regels van WAF op.
-* **syntaxis van Regels:** las over hoe te om de regels van de verkeersfilter in het `cdn.yaml` configuratiedossier te verklaren. Dit omvat zowel de regels van de verkeersfilter beschikbaar aan alle klanten van Plaatsen en van Forms, als de subcategorie van de regels van WAF voor degenen die van dat vermogen vergunning geven.
+* **syntaxis van Regels:** las over hoe te om de regels van de verkeersfilter in het `cdn.yaml` configuratiedossier te verklaren. Dit omvat zowel de regels van de verkeersfilter beschikbaar aan alle Sites en klanten van Forms, als de subcategorie van de regels van WAF voor degenen die van dat vermogen vergunning geven.
 * **de voorbeelden van Regels:** zie voorbeelden van verklaarde regels om u op uw manier te krijgen.
 * **de grensregels van het Tarief:** leer hoe te om tarief te gebruiken die regels beperken om uw plaats tegen hoge volumeaanvallen te beschermen.
 * **de Regels van de Filter van het Verkeer Alarm** vormt alarm om op de hoogte te worden gebracht wanneer uw regels worden teweeggebracht.
@@ -64,14 +64,14 @@ De klanten kunnen pro-actieve maatregelen nemen om de aanvallen van de toepassin
 
 Bijvoorbeeld, bij de laag Apache, kunnen de klanten of de [ module van Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) of [ ModSecurity ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) vormen om toegang tot bepaalde inhoud te beperken.
 
-Zoals dit artikel beschrijft, kunnen de regels van de verkeersfilter aan de Adobe Geleide CDN worden opgesteld, gebruikend de configuratiepijplijn van Cloud Manager. Naast de regels van de verkeersfilter die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
+Aangezien dit artikel beschrijft, kunnen de regels van de verkeersfilter aan de Adobe Geleide CDN worden opgesteld, gebruikend Cloud Manager [ config pijpleidingen.](/help/operations/config-pipeline.md) Naast verkeersfilterregels die op eigenschappen zoals IP adres, weg, en kopballen, of regels worden gebaseerd die op het plaatsen van tariefgrenzen worden gebaseerd, kunnen de klanten een krachtige subcategorie van de regels van de verkeersfilter ook vergunning geven genoemd de regels van WAF.
 
 ## Voorgesteld proces {#suggested-process}
 
 Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor het komen met de juiste regels van de verkeersfilter:
 
-1. Vorm niet-productie en de pijpleidingen van de productieconfiguratie, zoals die in de [ sectie van de Opstelling ](#setup) worden beschreven.
-1. Klanten die een vergunning hebben verleend voor de subcategorie van WAF-verkeersfilterregels moeten deze in Cloud Manager inschakelen.
+1. Vorm niet-productie en productie config pijpleidingen, zoals die in de [ sectie van de Opstelling ](#setup) worden beschreven.
+1. Klanten die een licentie voor de subcategorie van WAF-verkeersfilterregels hebben, moeten deze in Cloud Manager inschakelen.
 1. Lees en probeer uit het leerprogramma om concreet te begrijpen hoe te om de regels van de verkeersfilter, met inbegrip van de regels van WAF te gebruiken als zij vergunning hebben gekregen. Het leerprogramma begeleidt u door het opstellen van regels aan een dev milieu, dat kwaadwillig verkeer simuleert, de [ CDN- logboeken ](#cdn-logs) downloadt, en hen analyseert in [ dashboard tooling ](#dashboard-tooling).
 1. Kopieer de aanbevolen startregels naar `cdn.yaml` en implementeer de configuratie in de logmodus in de productieomgeving.
 1. Na het verzamelen van wat verkeer, analyseer de resultaten gebruikend [ dashboard tooling ](#dashboard-tooling) om te zien of waren er om het even welke gelijken. Lookout voor valse positieven, en maak om het even welke noodzakelijke aanpassingen, uiteindelijk toelatend de starterregels op blokwijze.
@@ -80,14 +80,7 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
 
 ## Instellen {#setup}
 
-1. Maak eerst de volgende map en bestandsstructuur in de map op hoofdniveau in uw project in Git:
-
-   ```
-   config/
-        cdn.yaml
-   ```
-
-1. `cdn.yaml` moet metagegevens en een lijst met regels voor verkeersfilters en WAF-regels bevatten.
+1. Maak een bestand `cdn.yaml` met een set verkeersfilterregels, waaronder WAF-regels.
 
    ```
    kind: "CDN"
@@ -108,33 +101,22 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
          action: block
    ```
 
-De parameter `kind` moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie, namelijk `1` . Zie de volgende voorbeelden.
+   Zie het [ config pijpleidingsartikel ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de `data` knoop. De `kind` bezitswaarde zou aan *CDN* moeten worden geplaatst en de versie zou aan `1` moeten worden geplaatst.
 
 
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+1. Als WAF-regels een licentie hebben, moet u de functie in Cloud Manager inschakelen, zoals hieronder wordt beschreven voor zowel de nieuwe als de bestaande programmascenario&#39;s.
 
-1. Als de regels van WAF vergunning hebben, zou u de eigenschap in Cloud Manager moeten toelaten, zoals hieronder voor zowel de nieuwe als bestaande programmascenario&#39;s wordt beschreven.
+   1. Om WAF op een nieuw programma te vormen, controleer **WAF-DDOS Beveiliging** controle-doos op het **3} lusje van de Veiligheid {wanneer u [ een productieprogramma toevoegt.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)**
 
-   1. Om WAF op een nieuw programma te vormen, controleer de **WAF-DDOS Bescherming** controle-doos op het **3} lusje van de Veiligheid {wanneer u [ een productieprogramma toevoegt.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)**
+   1. Om WAF op een bestaand programma te vormen, [ geef uw programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op het **3} lusje van de Veiligheid {uit uncheck of controleer op elk ogenblik de** WAF-DDOS **optie.**
 
-   1. Om WAF op een bestaand programma te vormen, [ het uitgeven van uw programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op het **lusje van de Veiligheid** uncheck of controleer de **WAF-DDOS** optie op elk ogenblik.
-
-1. Voor milieutypes buiten RDE, creeer een gerichte plaatsing config pijpleiding in Cloud Manager.
-
-   * [ zie het vormen productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [ zie het vormen niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-
-Voor RDEs, wordt de bevellijn gebruikt, maar RDE wordt momenteel niet gesteund.
-
-**Nota&#39;s**
-
-* Met `yq` kunt u de YAML-opmaak van uw configuratiebestand lokaal valideren (bijvoorbeeld `yq cdn.yaml` ).
+1. Creeer een config pijpleiding in Cloud Manager, zoals die in [ wordt beschreven config pijpleidingsartikel.](/help/operations/config-pipeline.md#managing-in-cloud-manager) de pijpleiding zal een hoogste niveau `config` omslag met het `cdn.yaml` dossier verwijzen dat ergens onder wordt geplaatst, zoals [ hier wordt beschreven ](/help/operations/config-pipeline.md#folder-structure).
 
 ## Syntaxis verkeersfilterregels {#rules-syntax}
 
-U kunt `traffic filter rules` zo configureren dat deze overeenkomt met patronen zoals IP&#39;s, gebruikersagent, aanvraagheaders, hostnaam, geo en url.
+U kunt *regels van de verkeersfilter* vormen om op patronen zoals IPs, gebruikersagent, verzoekkopballen, hostname, geo, en url aan te passen.
 
-De klanten die van de Uitgebreide Veiligheid of WAF-DoS het aanbieden van de Veiligheid van de Bescherming ook een speciale categorie van geroepen de regels van de verkeersfilter `WAF traffic filter rules` (of de regels van WAF voor kort) vormen die één of meerdere [ vlaggen van WAF ](#waf-flags-list) van verwijzingen voorzien.
+De klanten die van Verbeterde Veiligheid of WAF-DDoS het aanbieden van de Veiligheid van de Bescherming ook vergunning geven kunnen een speciale categorie van de regels van de verkeersfilter vormen genoemd *de regels van de het verkeersfilter van 0} WAF (of de regels van WAF voor kort) die één of meer [ vlaggen van WAF ](#waf-flags-list) van verwijzingen voorzien.*
 
 Hier is een voorbeeld van een reeks regels van de verkeersfilter, die ook een regel van WAF omvat.
 
@@ -252,7 +234,7 @@ De acties worden geprioriteerd volgens hun types in de volgende lijst, die wordt
 
 ### Lijst met WAF-markeringen {#waf-flags-list}
 
-De eigenschap `wafFlags`, die kan worden gebruikt in de regels voor het licentiebare WAF-verkeersfilter, kan naar het volgende verwijzen:
+De eigenschap `wafFlags` , die kan worden gebruikt in de licentieable WAF-regels voor verkeersfilters, kan naar het volgende verwijzen:
 
 | **identiteitskaart van de Vlag** | **de Naam van de Vlag** | **Beschrijving** |
 |---|---|---|
@@ -280,6 +262,8 @@ De eigenschap `wafFlags`, die kan worden gebruikt in de regels voor het licentie
 | SCANNER | Scanner | Identificeert populaire scanservices en -gereedschappen |
 | RESPONSESPLIT | HTTP-antwoordsplitsing | Identificeert wanneer CRLF-tekens als invoer naar de toepassing worden verzonden om headers in de HTTP-reactie te injecteren |
 | XML-ERROR | XML-coderingsfout | Een POST, PUT, of PATCH aanvraaglichaam dat als bevattende XML binnen de &quot;Inhoud-Type&quot;verzoekkopbal wordt gespecificeerd maar XML het ontleden fouten bevat. Dit heeft vaak te maken met een programmeerfout of een geautomatiseerd of kwaadaardig verzoek. |
+| DATACENTER | Datacenter | Identificeert de aanvraag als afkomstig van een bekende hostingprovider. Dit type van verkeer wordt niet algemeen geassocieerd met een echt eind - gebruiker. |
+
 
 ## Overwegingen {#considerations}
 
@@ -291,7 +275,7 @@ De eigenschap `wafFlags`, die kan worden gebruikt in de regels voor het licentie
 
 * IP de lijsten van gewenste personen die in Cloud Manager worden bepaald hebben voorrang op de Regels van de Filters van het Verkeer.
 
-* De de regelovereenkomsten van WAF verschijnen slechts in CDN- logboeken voor CDN mist en passen, niet klappen.
+* WAF-regelovereenkomsten worden alleen weergegeven in CDN-logboeken voor CDN-fouten en -controles, niet-treffers.
 
 ## Voorbeelden van regels {#examples}
 
@@ -568,7 +552,7 @@ De regels gedragen zich als volgt:
 * Als de WAF in licentie wordt gegeven en ingeschakeld, geeft het kenmerk `waf` alle WAF-markeringen weer (bijvoorbeeld SQLI) die zijn gedetecteerd. Dit is waar ongeacht of de vlaggen van WAF in om het even welke regels werden vermeld. Dit moet inzicht verschaffen in mogelijke nieuwe regels die moeten worden gedeclareerd.
 * Als er geen door de klant gedeclareerde regels overeenkomen en er geen waf-regels overeenkomen, is de eigenschap `rules` leeg.
 
-Zoals eerder vermeld, verschijnen de de regelovereenkomsten van WAF slechts in CDN- logboeken voor CDN missen en overgaan, niet klappen.
+Zoals eerder vermeld, verschijnen de regelovereenkomsten van WAF slechts in CDN- logboeken voor CDN missen en overgaan, niet klappen.
 
 In het onderstaande voorbeeld ziet u een voorbeeld `cdn.yaml` en twee CDN-logitems:
 
@@ -655,7 +639,7 @@ Hieronder vindt u een lijst met veldnamen die in CDN-logbestanden worden gebruik
 
 ## Dashboard Tooling {#dashboard-tooling}
 
-Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar uw computer om CDN-logbestanden in te voeren die via Cloud Manager zijn gedownload. Met dit tooling, kunt u uw verkeer analyseren om omhoog met de aangewezen regels van de verkeersfilter te komen om te verklaren, met inbegrip van de regels van WAF.
+Adobe biedt een mechanisme voor het downloaden van dashboardgereedschappen naar uw computer om CDN-logbestanden in te voeren die via Cloud Manager zijn gedownload. Met dit hulpmiddel, kunt u uw verkeer analyseren om omhoog met de aangewezen regels van de verkeersfilter te komen om te verklaren, met inbegrip van de regels van WAF.
 
 Het tooling van het dashboard kan direct van de [ worden gekloond AEMCS-CDN-Logboek-Analyse-Tooling ](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) bewaarplaats GitHub.
 
@@ -752,7 +736,7 @@ Er zijn twee zelfstudies beschikbaar.
 
 De zelfstudie begeleidt u door:
 
-* De Cloud Manager-configuratiepijplijn instellen
+* De Cloud Manager config-pijplijn instellen
 * Het gebruiken van hulpmiddelen om kwaadwillig verkeer te simuleren
 * Regels voor het declareren van verkeersfilters, inclusief WAF-regels
 * Resultaten analyseren met dashboardgereedschappen

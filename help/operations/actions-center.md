@@ -4,9 +4,9 @@ description: Gebruik het actiecentrum om incidenten en andere belangrijke inform
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 7630481aab89b31057509f23aab334e17c537257
+source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,7 @@ In de volgende tabel worden de berichttypen weergegeven die momenteel worden ond
 | Geblokkeerde replicatiewachtrij | Incident | Ontgrendel rij door instructies in de [ Documentatie van de Replicatie ](/help/operations/replication.md#troubleshooting) te volgen |
 | Ongeldige aaneengesloten GraphQL-query | Incident | Verbeter de ongeldige vraag van GraphQL door naar de [ Persisted GraphQL van verwijzingen te verwijzen het oplossen van problemendocumentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Verkeerspiek bij oorsprong | Incident | Protect uw oorsprong door de regels van de het verkeersfilter van de tariefgrens te vormen die bij lagere drempels dan de standaardverkeerspiek bij oorsprongsalarm teweegbrengen.  Zie [ het Blokkeren Dos en aanvallen DDoS gebruikend verkeersregels ](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) sectie van de documentatie van de Regels van de Filter van het Verkeer, die verwijzingen een leerprogramma. |
+| Regels voor CDN-verkeersfilters geactiveerd | Incident | Als de aangepaste regel van de verkeersfilter op een aanval wijst, en uw plaats dat verkeer niet blokkeert, beschermt uw plaats door een regel van de verkeersfilter op het blokkeren wijze te vormen. Zie [ Beschermend websites met de regels van de verkeersfilter (met inbegrip van de regels van WAF) ](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) sectie van de documentatie van de Regels van de Filter van het Verkeer, die verwijzingen een leerprogramma. |
 | Pagina&#39;s bevatten veel knooppunten | Proactief | Het totale aantal knooppunten op een pagina verminderen. Verwijs naar [ documentatie van de Complexiteit van de Pagina ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Groot aantal actieve workflowinstanties | Proactief | Beëindig actieve workflows die niet meer nodig zijn. Leer hoe te [ een zuiveringsbaan ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance) vormen |               |
 | S2S-certificaat vervalt | Proactief | Leer hoe te om een referentie in [ te verfrissen die Tokens van de Toegang voor de Server Zijde APIs documentatie produceren ](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Aantal hoge verbindingen | Proactief | Leer over verbinding het pooling in [ Pooling van de Verbinding naast de Geavanceerde documentatie van het Voorzien van een netwerk ](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

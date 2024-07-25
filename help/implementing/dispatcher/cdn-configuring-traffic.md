@@ -1,15 +1,16 @@
 ---
 title: Het vormen van Verkeer bij CDN
-description: Leer hoe te om verkeer te vormen CDN door regels en filters in een configuratiedossier te verklaren en hen op te stellen aan CDN door de Pijpleiding van de Configuratie van Cloud Manager te gebruiken.
+description: Leer hoe te om verkeer te vormen CDN door regels en filters in een configuratiedossier te verklaren en hen op te stellen aan CDN door een Cloud Manager config pijpleiding te gebruiken.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
+
 
 # Het vormen van Verkeer bij CDN {#cdn-configuring-cloud}
 
@@ -20,11 +21,11 @@ AEM as a Cloud Service biedt een inzameling van eigenschappen aan configureerbaa
 * [ cliënt-kant richt ](#client-side-redirectors) opnieuw - teweegbrengt browser omleiding. Deze functie is nog niet GA, maar is beschikbaar voor vroege gebruikers.
 * [ de selecteurs van de Oorsprong ](#origin-selectors) - volmacht aan een verschillende oorsprong achterkant.
 
-Ook configureerbaar bij CDN zijn de Regels van de Filter van het Verkeer (met inbegrip van WAF), die controleert welk verkeer door CDN wordt toegestaan of wordt ontkend. Deze eigenschap wordt reeds vrijgegeven en u kunt meer over het in de [ Regels van de Filter van het Verkeer met inbegrip van de pagina van de regels van WAF ](/help/security/traffic-filter-rules-including-waf.md) leren.
+Ook configureerbaar bij CDN zijn de Regels van de Filter van het Verkeer (met inbegrip van WAF), die controleert welk verkeer door CDN wordt toegestaan of wordt ontkend. Deze eigenschap wordt reeds vrijgegeven en u kunt meer over het in de [ Regels van de Filter van het Verkeer leren met inbegrip van WAF regels ](/help/security/traffic-filter-rules-including-waf.md) pagina.
 
 Bovendien, als CDN niet zijn oorsprong kan contacteren, kunt u een regel schrijven die verwijzingen een zelf-ontvangen pagina van de douanefout (die dan wordt teruggegeven). Leer meer over dit door [ te lezen Vormend CDN foutenpagina&#39;s ](/help/implementing/dispatcher/cdn-error-pages.md) artikel.
 
-Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door [ de Pijpleiding van de Configuratie van Cloud Manager te gebruiken ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
+Al deze regels, die in een configuratiedossier in broncontrole worden verklaard, worden opgesteld door de Cloud Manager [ te gebruiken config pijpleiding.](/help/operations/config-pipeline.md) Houd er rekening mee dat de cumulatieve grootte van het configuratiebestand, inclusief de regels voor verkeersfilters, niet groter kan zijn dan 100 kB.
 
 ## Evaluatievolgorde {#order-of-evaluation}
 
@@ -36,23 +37,24 @@ Functioneel worden de verschillende eerder vermelde functies in de volgende volg
 
 Alvorens u verkeer bij CDN kunt vormen moet u het volgende doen:
 
-* Maak deze map en bestandsstructuur in de map op hoofdniveau van uw Git-project:
+1. Maak een bestand met de naam `cdn.yaml` of een vergelijkbaar bestand, waarbij u verwijst naar de verschillende configuratiefragmenten in de onderstaande secties.
 
-```
-config/
-     cdn.yaml
-```
+   Alle fragmenten hebben deze gemeenschappelijke eigenschappen, die in het [ artikel van de Pijpleiding Config ](/help/operations/config-pipeline.md#common-syntax) worden beschreven. De `kind` bezitswaarde zou *CDN* moeten zijn en het `version` bezit zou aan *1* moeten worden geplaatst.
 
-* Het configuratiebestand van `cdn.yaml` moet zowel metagegevens als de regels bevatten die in de onderstaande voorbeelden worden beschreven. De parameter `kind` moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie, die momenteel `1` is.
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   ```
 
-* Creeer een gerichte plaatsing config pijpleiding in Cloud Manager. Zie [ vormend productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [ vormend niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+1. Plaats het dossier ergens onder een top niveauomslag genoemd *config* of gelijkaardig, zoals die in [ wordt beschreven Artikel van de Pijpleiding Config ](/help/operations/config-pipeline.md#folder-structure).
 
-**Nota&#39;s**
+1. Creeer een Pijpleiding Config in Cloud Manager, zoals die in het [ wordt beschreven Config Artikel van de Pijpleiding ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
-* RDEs steunt momenteel niet de configuratiepijplijn.
-* Met `yq` kunt u de YAML-opmaak van uw configuratiebestand lokaal valideren (bijvoorbeeld `yq cdn.yaml` ).
+1. Implementeer de configuratie.
 
-## Syntaxis {#configuration-syntax}
+## Syntaxis regels {#configuration-syntax}
 
 De regeltypen in de onderstaande secties hebben dezelfde syntaxis.
 
@@ -313,7 +315,7 @@ Verbindingen met oorsprong zijn alleen SSL en gebruiken poort 443.
 Er zijn scenario&#39;s waar de oorsprongsselecteurs zouden moeten worden gebruikt om verkeer door AEM Publish aan AEM Edge Delivery Services te leiden:
 
 * Sommige inhoud wordt geleverd door een domein dat wordt beheerd door AEM Publish, terwijl andere inhoud van hetzelfde domein door Edge Delivery Services wordt geleverd
-* De inhoud die door Edge Delivery Services wordt geleverd zou van regels profiteren die via de Pijpleiding van de Configuratie, met inbegrip van de regels van de verkeersfilter of verzoek/reactietransformaties worden opgesteld
+* De inhoud die door Edge Delivery Services wordt geleverd zou van regels profiteren die via config pijpleiding, met inbegrip van de regels van de verkeersfilter of verzoek/reactietransformaties worden opgesteld
 
 Hier volgt een voorbeeld van een regel voor de oorspronkelijke kiezer waarmee u dit kunt bereiken:
 

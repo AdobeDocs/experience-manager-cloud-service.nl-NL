@@ -1,41 +1,34 @@
 ---
 title: CDN-foutpagina's configureren
-description: Leer hoe u de standaardfoutpagina kunt overschrijven door statische bestanden te hosten in zelfgehoste opslag zoals Amazon S3 of Azure Blob Storage, en ernaar te verwijzen in een configuratiebestand dat wordt geïmplementeerd met behulp van de Cloud Manager Configuration Pipeline.
+description: Leer hoe te om de standaardfoutenpagina met voeten te treden door statische dossiers in zelf-ontvangen opslag zoals Amazon S3 of Azure Blob Storage te ontvangen, en van verwijzingen te voorzien hen in een configuratiedossier dat gebruikend de configuratiepijplijn van Cloud Manager wordt opgesteld.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
 
+
 # CDN-foutpagina&#39;s configureren {#cdn-error-pages}
 
-In de onwaarschijnlijke gebeurtenis dat [ Adobe-geleide CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) niet de AEM oorsprong kan bereiken, dient CDN door gebrek een unbranded, generische foutenpagina die erop wijst dat de server niet kan worden bereikt. U kunt de standaardfoutenpagina met voeten treden door statische dossiers in zelf-ontvangen opslag zoals de Opslag van Amazon S3 of van Azure Blob te ontvangen, en hen van verwijzingen te voorzien in een configuratiedossier dat door de [ Pijpleiding van de Configuratie van Cloud Manager te gebruiken ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) wordt opgesteld.
+In de onwaarschijnlijke gebeurtenis dat [ Adobe-geleide CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) niet de AEM oorsprong kan bereiken, dient CDN door gebrek een unbranded, generische foutenpagina die erop wijst dat de server niet kan worden bereikt. U kunt de standaardfoutenpagina met voeten treden door statische dossiers in zelf-ontvangen opslag zoals Amazon S3 of Azure BlobOpslag te ontvangen, en hen van verwijzingen te voorzien in een configuratiedossier dat door de Cloud Manager [ config pijpleiding te gebruiken wordt opgesteld.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ## Instellen {#setup}
 
 Voordat u de standaardfoutpagina kunt overschrijven, moet u het volgende doen:
 
-* Maak deze map en bestandsstructuur in de map op hoofdniveau van uw Git-project:
+1. Maak een bestand met de naam `cdn.yaml` of een vergelijkbaar bestand en verwijs naar de onderstaande syntaxissectie.
 
-```
-config/
-     cdn.yaml
-```
+1. Plaats het dossier ergens onder een top niveauomslag genoemd *config* of gelijkaardig, zoals die in [ wordt beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#folder-structure).
 
-* Het configuratiebestand van `cdn.yaml` moet zowel metagegevens als de regels bevatten die in de onderstaande voorbeelden worden beschreven. De parameter `kind` moet worden ingesteld op `CDN` en de versie moet worden ingesteld op de schemaversie, die momenteel `1` is.
+1. Creeer een configuratiepijpleiding in Cloud Manager, zoals die in het [ wordt beschreven config pijpleidingsartikel ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
-* Creeer een gerichte plaatsing config pijpleiding in Cloud Manager. Zie [ vormend productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en [ vormend niet-productiepijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+1. Implementeer de configuratie.
 
-**Nota&#39;s**
-
-* RDEs steunt momenteel niet de configuratiepijplijn.
-* Met `yq` kunt u de YAML-opmaak van uw configuratiebestand lokaal valideren (bijvoorbeeld `yq cdn.yaml` ).
-
-### Configuratie {#configuration}
+### Syntaxis {#syntax}
 
 De foutpagina wordt geïmplementeerd als een toepassing van één pagina (SPA) en verwijst naar een handvol eigenschappen, zoals in het onderstaande voorbeeld wordt getoond.  De statische bestanden waarnaar wordt verwezen door de URL&#39;s, moeten door u worden gehost op een service die toegankelijk is voor internet, zoals Amazon S3 of Azure Blob Storage.
 
@@ -54,6 +47,8 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+Zie het [ config pijpleidingsartikel ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de gegevensknoop. De waarde van het typebezit zou *CDN* moeten zijn en het `version` bezit zou aan *1* moeten worden geplaatst.
+
 
 | Naam | Toegestane eigenschappen | Betekenis |
 |-----------|--------------------------|-------------|

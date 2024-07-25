@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '5270'
+source-wordcount: '5273'
 ht-degree: 3%
 
 ---
@@ -335,7 +335,7 @@ ht-degree: 3%
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + [Reis van de Auteur van de Inhoud zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html) Reis van de Auteur van de Inhoud zonder hoofd [
       + Projecten {#projects}
          + [Werken met projecten](/help/sites-cloud/authoring/projects/overview.md)
          + [Projecten beheren](/help/sites-cloud/authoring/projects/managing.md)
@@ -1251,6 +1251,7 @@ ht-degree: 3%
    + [Onderhoudstaken](/help/operations/maintenance.md)
    + [Self-Service terugzetten](/help/operations/restore.md)
    + [Asynchrone taken](/help/operations/asynchronous-jobs.md)
+   + [Config Pipelines gebruiken](/help/operations/config-pipeline.md)
    + [Verwijdering van de generieke index van de lucene](/help/operations/removal-generic-lucene-index.md)
    + [ Vraag en het Indexeren Beste Praktijken ](/help/operations/query-and-indexing-best-practices.md)
 + Compatibiliteit {#compliance}

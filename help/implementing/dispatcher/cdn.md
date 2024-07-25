@@ -4,12 +4,13 @@ description: Leer hoe te om AEM-geleide CDN te gebruiken en hoe te om uw eigen C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1128'
 ht-degree: 5%
 
 ---
+
 
 # CDN in AEM as a Cloud Service {#cdn}
 
@@ -43,7 +44,7 @@ Zie [ het Leiden IP Lijsten van gewenste personen ](/help/implementing/cloud-man
 
 ### Het vormen van Verkeer bij CDN {#cdn-configuring-cloud}
 
-De regels om verkeer CDN en de filters te vormen kunnen in een configuratiedossier worden verklaard en aan CDN worden opgesteld, door de [ pijplijn van de Configuratie van Cloud Manager te gebruiken ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Voor meer details, zie [ Vormend Verkeer bij CDN ](/help/implementing/dispatcher/cdn-configuring-traffic.md) en [ de regels van de Filter van het Verkeer met inbegrip van de regels van WAF ](/help/security/traffic-filter-rules-including-waf.md).
+De regels om verkeer CDN en de filters te vormen kunnen in een configuratiedossier worden verklaard en aan CDN worden opgesteld, door de [ Cloud Manager config pijpleidingen te gebruiken.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) voor meer details, zie [ Vormend Verkeer bij CDN ](/help/implementing/dispatcher/cdn-configuring-traffic.md) en [ de regels van de Filter van het Verkeer met inbegrip van de regels van WAF ](/help/security/traffic-filter-rules-including-waf.md).
 
 ### CDN-foutpagina&#39;s configureren {#cdn-error-pages}
 
@@ -70,7 +71,7 @@ Configuratieinstructies:
 1. Stel SNI in op de invoer van de Adobe CDN.
 1. Stel de Hostkop in op het oorspronkelijke domein. Bijvoorbeeld: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` .
 1. Stel de header `X-Forwarded-Host` in met de domeinnaam, zodat AEM de hostheader kan bepalen. Bijvoorbeeld: `X-Forwarded-Host:example.com` .
-1. Stel `X-AEM-Edge-Key` in. De waarde moet afkomstig zijn van Adobe.
+1. Stel `X-AEM-Edge-Key` in. De waarde zou moeten worden gevormd gebruikend een Cloud Manager config pijpleiding, zoals die in [ wordt beschreven dit artikel.](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value)
 
    * Nodig zodat de Adobe CDN de bron van de verzoeken kan bevestigen en `X-Forwarded-*` kopballen tot de AEM toepassing kan overgaan. Bijvoorbeeld, `X-Forwarded-For` wordt gebruikt om cliëntIP te bepalen. Zo, wordt het de verantwoordelijkheid van de vertrouwde op bezoeker (namelijk klant-beheerde CDN) om de juistheid van de `X-Forwarded-*` kopballen te verzekeren (zie de nota hieronder).
    * De toegang tot de ingangen van de Adobe CDN kan optioneel worden geblokkeerd wanneer er geen `X-AEM-Edge-Key` aanwezig is. Informeer Adobe als u directe toegang tot de ingangen van CDN van de Adobe (moet worden geblokkeerd) nodig hebt.
@@ -79,7 +80,7 @@ Zie de [ sectie van de de verkopersconfiguraties van de Steekproef CDN ](#sample
 
 Alvorens levend verkeer goed te keuren, zou u met klantensteun van de Adobe moeten bevestigen dat het verkeer dat van begin tot eind correct functioneert.
 
-Nadat u `X-AEM-Edge-Key` hebt opgehaald, kunt u testen of de aanvraag correct is gerouteerd. Dit wordt als volgt weergegeven.
+Nadat u `X-AEM-Edge-Key` hebt ingesteld, kunt u testen of de aanvraag correct is gerouteerd. Dit wordt als volgt weergegeven.
 
 In Linux®:
 
