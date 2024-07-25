@@ -4,9 +4,9 @@ description: Leer hoe Adobe Experience Manager (AEM) as a Cloud Service ononderb
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Door NIMU, kan de klant de pijpleiding op elk ogenblik gebruiken, zelfs als een 
 #### Activiteiten bijwerken
 
 De huidige AEM kan nog steeds voor elke omgeving worden gecontroleerd, zoals eerder, met behulp van het deelvenster Cloud Manager UI-omgevingen. De zelfde kwaliteitsspoorten die in de pijpleiding worden gebruikt worden door de Updates van het Onderhoud van het Non-Intrusive, met inbegrip van de klant geschreven tests.
-Er wordt een Cloud Manager UI-melding verzonden wanneer een niet-indringende onderhoudsupdate wordt toegepast op de omgevingen van uw programma. U kunt instellen dat deze ook naar uw e-mail wordt verzonden.
+A [ het bericht van Cloud Manager UI ](/help/implementing/cloud-manager/notifications.md) zal worden verzonden wanneer een Niet-Intrusieve Update van het Onderhoud wordt toegepast op de milieu&#39;s van uw programma. U kunt instellen dat deze ook naar uw e-mail wordt verzonden.
 
 >[!NOTE]
 >
@@ -102,3 +102,11 @@ Meestal worden updates zonder downtime uitgevoerd, inclusief voor de ontwerpinst
 Met deze functie kunnen AEM tegelijkertijd verwijzen naar meerdere opslagplaatsen. In a [ het rollen plaatsing ](/help/implementing/deploying/overview.md#how-rolling-deployments-work), bevat de nieuwe AEM versie zijn eigen `/libs` (de op TarMK gebaseerde onveranderlijke bewaarplaats). Deze gegevensopslagruimte verschilt van de oudere AEM, hoewel beide verwijzen naar een gezamenlijke, op DocumentMK gebaseerde, veranderbare gegevensopslagruimte die gebieden als `/content` , `/conf` , `/etc` en andere bevat.
 
 Omdat zowel de oude als de nieuwe versie een eigen versie van `/libs` hebben, kunnen beide actief zijn tijdens de actieve update. En, kunnen beide verkeer nemen tot de oude volledig door nieuwe wordt vervangen.
+
+## Aanvullende informatie {#further-information}
+
+Voor meer informatie over verwante thema&#39;s:
+
+* [Cloud Manager CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Cloud Manager UI-melding](/help/implementing/cloud-manager/notifications.md)
+* [de Architectuur van Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)
