@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
 workflow-type: tm+mt
-source-wordcount: '5273'
+source-wordcount: '5283'
 ht-degree: 3%
 
 ---
@@ -330,12 +330,14 @@ ht-degree: 3%
          + [Stijlsysteem](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [Opnieuw Beperkingen ongedaan maken](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universele editor {#universal-editor}
+         + [Navigeren door de Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Inhoud publiceren met de Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [Overerving van inhoud in de Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + [Reis van de Auteur van de Inhoud zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html) Reis van de Auteur van de Inhoud zonder hoofd [
       + Projecten {#projects}
          + [Werken met projecten](/help/sites-cloud/authoring/projects/overview.md)
          + [Projecten beheren](/help/sites-cloud/authoring/projects/managing.md)
