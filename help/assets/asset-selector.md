@@ -4,9 +4,9 @@ description: Gebruik de functie Asset Selector om de metagegevens en vertoningen
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
+source-git-commit: cdb35a56c1337012fa099135470b91e162e8e902
 workflow-type: tm+mt
-source-wordcount: '4540'
+source-wordcount: '5318'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,7 @@ U kunt Asset Selector integreren met verschillende toepassingen, zoals:
 
 * [Integreer de Selecteur van Activa met een  [!DNL Adobe]  toepassing](#adobe-app-integration-vanilla)
 * [Asset Selector integreren met een toepassing zonder Adobe](#adobe-non-app-integration)
+* [Integratie voor Dynamic Media met OpenAPI-mogelijkheden](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -386,6 +387,171 @@ De Selecteur van activa wordt teruggegeven op het `<div>` containerelement, zoal
 >
 >Als u Asset Selector hebt geïntegreerd met de workflow Aanmelden maar nog steeds geen toegang hebt tot de gegevensopslagruimte, moet u ervoor zorgen dat browsercookies worden opgeschoond. Anders krijgt u de fout `invalid_credentials All session cookies are empty` in de console.
 
++++
+
+<!--Integration with Polaris application content starts here-->
+
+>[!TAB  Integratie voor Dynamic Media met mogelijkheden OpenAPI ]
+
+### Vereisten {#prereqs-polaris}
+
+Gebruik de volgende voorwaarden als u Asset Selector integreert met Dynamic Media met OpenAPI-mogelijkheden:
+
+* [Communicatiemethoden](#prereqs)
+* Voor toegang tot Dynamic Media met OpenAPI-mogelijkheden hebt u licenties nodig voor:
+   * Assets repository (bijvoorbeeld Experience Manager Assets as a Cloud Service).
+   * AEM Dynamic Media.
+* Slechts [ goedgekeurde activa ](#approved-assets.md) zijn beschikbaar voor gebruik die merkconsistentie verzekeren.
+
+### Integratie voor Dynamic Media met OpenAPI-mogelijkheden{#adobe-app-integration-polaris}
+
+De integratie van Asset Selector met het Dynamic Media OpenAPI-proces omvat verschillende stappen, zoals het maken van een aangepaste dynamische media-URL of het kiezen van de URL voor dynamische media, enz.
+
++++**integreer de Selector van Activa voor Dynamic Media met mogelijkheden OpenAPI**
+
+De eigenschappen `rootPath` en `path` mogen geen deel uitmaken van de Dynamic Media met OpenAPI-mogelijkheden. In plaats daarvan kunt u de eigenschap `aemTierType` configureren. Hier volgt de syntaxis van de configuratie:
+
+```
+aemTierType:[1: "delivery"]
+```
+
+Met deze configuratie kunt u alle goedgekeurde elementen weergeven zonder mappen of als een platte structuur. Voor meer informatie, navigeer aan `aemTierType` bezit onder [ de eigenschappen van de Selecteur van Activa ](#asset-selector-properties)
+
++++
+
++++**creeer een Dynamische Levering URL van goedgekeurde activa**
+Nadat u Asset Selector hebt ingesteld, wordt een objectschema gebruikt om een URL voor dynamische levering te maken van de geselecteerde elementen.
+Bijvoorbeeld een schema van één object van een array met objecten die wordt ontvangen bij de selectie van een element:
+
+```
+{
+"dc:format": "image/jpeg",
+"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+"repo:name": "image-7.jpg",
+"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
+...
+}
+```
+
+Alle geselecteerde elementen worden gedragen door de functie `handleSelection` die als een JSON-object fungeert. Bijvoorbeeld `JsonObj` . De dynamische leverings-URL wordt gemaakt door de onderstaande dragers te combineren:
+
+| Object | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| API-hoofdmap | `/adobe/dynamicmedia/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
+| format | `.jpg` |
+
+**Goedgekeurde API specificatie van de middelenlevering**
+
+URL-indeling:
+`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+
+Wanneer
+
+* Host is `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* API-hoofdmap is `"/adobe/dynamicmedia/deliver"`
+* `<asset-id>` is element-id
+* `<seo-name>` is de naam van een element
+* `<format>` is de uitvoerindeling
+* `<image modification query parameters>` als ondersteuning door de API-specificatie voor levering van goedgekeurde middelen
+
+**Goedgekeurde activa leverings API**
+
+De dynamische leverings-URL heeft de volgende syntaxis:
+`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>` , waarbij:
+
+* Host is `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* API-hoofdmap voor originele uitvoering is `"/adobe/assets/deliver"`
+* `<asset-id>` is element-id
+* `<seo-name>` is naam van de activa die al dan niet een uitbreiding kunnen hebben
+
++++
+
++++**Klaar om dynamische levering URL** te kiezen
+Alle geselecteerde elementen worden gedragen door de functie `handleSelection` die als een JSON-object fungeert. Bijvoorbeeld `JsonObj` . De dynamische leverings-URL wordt gemaakt door de onderstaande dragers te combineren:
+
+| Object | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| API-hoofdmap | `/adobe/assets/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"]` |
+
+Hieronder ziet u de twee manieren waarop u het JSON-object kunt doorlopen:
+
+![ Dynamische levering url ](assets/dynamic-delivery-url.png)
+
+* **Duimnagel:** de duimnagels kunnen beelden zijn en de activa zijn PDF, video, beelden, etc. Hoewel u de hoogte- en breedtekenmerken van de miniatuur van een element kunt gebruiken als de dynamische uitvoering van het element.
+De volgende set uitvoeringen kan worden gebruikt voor de elementen van het type PDF:
+Als er eenmaal een PDF is geselecteerd in sidekick, wordt in de selectiecontext de onderstaande informatie weergegeven. Hieronder ziet u de manier waarop u het JSON-object kunt doorlopen:
+
+  <!--![Thumbnail dynamic delivery url](image-1.png)-->
+
+  U kunt naar `selection[0].....selection[4]` verwijzen voor de array van vertoningskoppelingen uit de bovenstaande schermafbeelding. De belangrijkste eigenschappen van een van de miniatuuruitvoeringen zijn bijvoorbeeld:
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+In het bovenstaande scherm moet de bezorgings-URL van de oorspronkelijke uitvoering worden opgenomen in de doelervaring als PDF vereist is en niet de bijbehorende miniatuur. Bijvoorbeeld: `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+
+* **Video:** u videospeler URL voor de videotypeactiva kunt gebruiken die ingebedde iFrame gebruiken. U kunt de volgende arrayuitvoeringen gebruiken in de doelervaring:
+  <!--![Video dynamic delivery url](image.png)-->
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+  U kunt naar `selection[0].....selection[4]` verwijzen voor de array van vertoningskoppelingen uit de bovenstaande schermafbeelding. De belangrijkste eigenschappen van een van de miniatuuruitvoeringen zijn bijvoorbeeld:
+
+  Het codefragment in de bovenstaande schermafbeelding is een voorbeeld van een video-element. De array met uitvoeringen bevat koppelingen. `selection[5]` in het fragment is het voorbeeld van een afbeeldingsminiatuur die kan worden gebruikt als tijdelijke aanduiding voor een videominiatuur in de doelervaring. De `selection[5]` in de array van uitvoeringen is voor de videospeler. Dit dient een HTML en kan worden ingesteld als `src` van het iframe. De functie ondersteunt adaptieve bitsnelheidstreaming, dat wil zeggen, voor het web geoptimaliseerde levering van de video.
+
+  In het bovenstaande voorbeeld is de URL van de videospeler `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+
++++**de gebruikersinterface van de Selecteur van Activa voor Dynamic Media met mogelijkheden OpenAPI**
+
+Na integratie met de Micro-Frontend Asset Selector van de Adobe, kunt u de activa slechts structuur van alle goedgekeurde activa zien beschikbaar in de opslagplaats van activa van de Experience Manager.
+
+![ Dynamic Media met OpenAPI mogelijkheden UI ](assets/polaris-ui.png)
+
+* **A**: [ verberg/toon paneel ](#hide-show-panel)
+* **B**: [ Assets ](#repository)
+* **C**: [ Sorterend ](#sorting)
+* **D**: [ Filters ](#filters)
+* **E**: [ bar van het Onderzoek ](#search-bar)
+* **F**: [ Sorterend in het stijgen of dalende orde ](#sorting)
+* **G**: Cancel Selectie
+* **H**: Selecteer enige of veelvoudige activa
+
++++
+
++++**vorm douanefilters**
+Met Asset Selector for Dynamic Media met OpenAPI-mogelijkheden kunt u aangepaste eigenschappen en de daarop gebaseerde filters configureren. De eigenschap `filterSchema` wordt gebruikt om dergelijke eigenschappen te configureren. De aanpassing kan worden weergegeven als `metadata.<metadata bucket>.<property name>.` waartegen de filters kunnen worden geconfigureerd, waarbij:
+
+* `metadata` is de informatie van een element
+* `embedded` de statische parameter is die voor configuratie wordt gebruikt, en
+* `<propertyname>` is de filternaam die u configureert
+
+Voor de configuratie worden eigenschappen die op `jcr:content/metadata/` niveau worden bepaald blootgesteld als `metadata.<metadata bucket>.<property name>.` voor de filters die u wilt vormen.
+
+In Asset Selector for Dynamic Media met OpenAPI-mogelijkheden wordt bijvoorbeeld een eigenschap op `asset jcr:content/metadata/client_name:market` omgezet in `metadata.embedded.client_name:market` voor filterconfiguratie.
+
+Voor het ophalen van de naam moet een eenmalige activiteit worden uitgevoerd. Maak een onderzoek API vraag naar de activa, en krijg de bezitsnaam (de emmer, hoofdzakelijk).
+
++++
+
 >[!ENDTABS]
 
 ## Eigenschappen van Asset Selector {#asset-selector-properties}
@@ -398,8 +564,6 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *imsOrg* | String | Ja | | Adobe Identity Management System (IMS) ID die tijdens de provisioning [!DNL Adobe Experience Manager] is toegewezen als een [!DNL Cloud Service] voor uw organisatie. De `imsOrg` -toets is vereist om te verifiëren of de organisatie waartoe u toegang hebt, onder Adobe IMS valt of niet. |
 | *imsToken* | String | Nee | | IMS-token voor toonder die wordt gebruikt voor verificatie. `imsToken` is vereist als u een [!DNL Adobe] -toepassing voor de integratie gebruikt. |
 | *apiKey* | String | Nee | | API-sleutel die wordt gebruikt voor toegang tot de AEM Discovery-service. `apiKey` is vereist als u een [!DNL Adobe] -toepassingsintegratie gebruikt. |
-| *rootPath* | String | Nee | /content/dam/ | Mappad waaruit de middelen worden weergegeven door de Asset Selector. `rootPath` kan ook in de vorm van inkapseling worden gebruikt. Met het volgende pad, `/content/dam/marketing/subfolder/` , kunt u met Asset Selector bijvoorbeeld niet door een bovenliggende map bladeren, maar worden alleen de onderliggende mappen weergegeven. |
-| *weg* | String | Nee | | Pad dat wordt gebruikt om naar een specifieke map met elementen te navigeren wanneer de Asset Selector wordt weergegeven. |
 | *filterSchema* | Array | Nee | | Model dat wordt gebruikt om filtereigenschappen te vormen. Dit is handig wanneer u bepaalde filteropties in de Asset Selector wilt beperken. |
 | *filterFormProps* | Object | Nee | | Geef de filtereigenschappen op die u nodig hebt om de zoekopdracht te verfijnen. Voor! Voorbeeld: MIME-type JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | Nee |                 | Geef de geselecteerde Assets op wanneer de Asset Selector wordt weergegeven. Een array van objecten is vereist die een id-eigenschap van de elementen bevat. `[{id: 'urn:234}, {id: 'urn:555'}]` Een element moet bijvoorbeeld beschikbaar zijn in de huidige map. Als u een andere map moet gebruiken, geeft u ook een waarde op voor de eigenschap `path` . |
@@ -427,6 +591,8 @@ U kunt de eigenschappen van de Asset Selector gebruiken om de manier aan te pass
 | *endOptions* | Functie | | | U kunt tussen de volgende twee eigenschappen gebruiken: **getExpiryStatus** die status van een verlopen activa verstrekt. De functie retourneert `EXPIRED` , `EXPIRING_SOON` of `NOT_EXPIRED` op basis van de vervaldatum van een element dat u opgeeft. Zie [ verlopen activa ](#customize-expired-assets) aanpassen. Bovendien, kunt u **allowSelectionAndDrag** gebruiken waarin de waarde van de functie of `true` of `false` kan zijn. Wanneer de waarde is ingesteld op `false` , kan het verlopen element niet worden geselecteerd of gesleept op het canvas. |
 | *showToast* | | Nee | | Hierdoor kan de Asset Selector een aangepast pop-upbericht weergeven voor het verlopen element. |
 <!--
+| *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
 -->
