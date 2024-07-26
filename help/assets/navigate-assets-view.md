@@ -4,9 +4,9 @@ description: Begrijp gebruikersinterface van en navigatie in  [!DNL Assets view]
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,8 @@ Wanneer u zich aanmeldt bij [!DNL Assets view] , ziet u de volgende interface.
 
 ## Door elementen en mappen bladeren en deze weergeven {#browse-repository}
 
-U kunt door de mappen bladeren vanuit de hoofdgebruikersinterface of vanuit de linkerzijbalk. Wanneer u bladert, kunt u de interface gebruiken om elementminiaturen weer te geven en visueel door de opslagplaats te bladeren of elementdetails weer te geven om snel het gewenste element te vinden. In de linkerzijbalk zijn de volgende opties beschikbaar:
+U kunt door de mappen bladeren vanuit de hoofdgebruikersinterface of vanuit de linkerzijbalk. Experience Manager Assets geeft nu visuele voorvertoningen van de inhoud van de map weer op de miniatuur van de map wanneer u naar inhoud bladert of zoekt, waardoor de beschikbare middelen in de AEM Assets-opslagruimte beter kunnen worden ontdekt. Met deze mapminiatuur bespaart u tijd die u hebt besteed aan het zoeken naar specifieke middelen in een map in de AEM Assets-opslagruimte.
+Wanneer u door elementen in een map bladert, kunt u met de interface elementminiaturen weergeven om visueel door de opslagplaats te bladeren of elementdetails te bekijken om snel het gewenste element te vinden. In de linkerzijbalk zijn de volgende opties beschikbaar:
 
 * [ Mijn Workspace ](/help/assets/my-workspace-assets-view.md): Assets omvat nu een klantgerichte werkruimte die widgets voor gemakkelijke toegang tot zeer belangrijke gebieden van het gebruikersinterface van Assets en informatie verstrekt die voor u het meest relevant is. Deze pagina dient als een one-stop oplossing om een overzicht van uw het werkpunten te verstrekken en snelle toegang tot zeer belangrijke werkschema&#39;s te geven. Een handiger toegang tot deze opties verhoogt de efficiëntie en snelheid van de inhoud.
 * [ Taken ](/help/assets/my-workspace-assets-view.md): U kunt de taken bekijken die aan u onder **worden toegewezen Mijn taken** tabel. Terwijl, de taken die door u worden gecreeerd onder **kunnen worden bekeken Toegewezen taken** tabel. Ook, worden de taken die u voltooit gevestigd onder **Voltooide taken** tabel.
