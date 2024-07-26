@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
+source-git-commit: 06fc5cd31b07fcd8bf085b41bc5f39907d4f5a79
 workflow-type: tm+mt
-source-wordcount: '5297'
+source-wordcount: '5299'
 ht-degree: 3%
 
 ---
@@ -596,7 +596,9 @@ ht-degree: 3%
       + [Middelen, mappen en verzamelingen controleren](/help/assets/manage-notifications-assets-view.md)
       + [Rapporten beheren](/help/assets/manage-reports-assets-view.md)
       + [Tags beheren](/help/assets/tagging-management-assets-view.md)
+      + [Content credentials](/help/assets/content-credentials.md)
       + [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
 
    + Content Hub {#content-hub}
       + [Overzicht](/help/assets/product-overview.md)
