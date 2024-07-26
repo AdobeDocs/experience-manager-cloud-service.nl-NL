@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a1b0d37b2f2f4e58b491651cb8e6504a6909393e
+source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Er bestaan regels om bekende bots uit te sluiten, waaronder bekende services die
 | --- | --- | --- |
 | HTTP-code 100-299 | Opgenomen | Dit zijn regelmatige verzoeken die alle of gedeeltelijke inhoud leveren. |
 | HTTP-bibliotheken voor automatisering | Opgenomen | Voorbeelden:<br>・ Amazon CloudFront <br>・ Apache Http Client <br>・ Asynchronous Http Client <br>・ Axios <br>・ Azureus <br>・ Curl <br>・ GitHub Node Fetch <br>・ Guzzle <br>・ Go-http-client <br>・ Headless Chrome <br>・ Java™ Client 1}・ Jersey <br>・ Node Oembed <br>・ okhttp <br>・ Python-verzoeken <br>・ Reactor Netty <br>・ Wget <br>・ WinHTTP<br> |
-| Gereedschappen voor toezicht en gezondheidscontrole | Opgenomen | Deze worden opgezet door de klant om een bepaald aspect van de plaats te controleren. Bijvoorbeeld beschikbaarheid of real-world gebruikersprestaties. Gebruik het eindpunt `/system/probes/health` en niet de werkelijke HTML-pagina&#39;s van de site.<br> Voorbeelden:<br>・ Amazon-Route53-Health-Check-Service <br>・ EyeMonIT_bot_version_0.1_[ (https://www.eyemon.it/) ](https://www.eyemon.it/) <br>・ Investis-Site24x7 <br>・ Mozilla/5.0+ (compatibel; UptimeRobot/2.0; [ https://uptimerobot.com/ ](https://uptimerobot.com/)) <br>}・ ThousandEyes-Dragonfly-x1 <br>・ OmtrBot/1.0 <br>・ WebMon/2.0.0 |
+| Gereedschappen voor toezicht en gezondheidscontrole | Opgenomen | Deze worden opgezet door de klant om een bepaald aspect van de plaats te controleren. Bijvoorbeeld, beschikbaarheid of real-world gebruikersprestaties.Als deze specifieke eindpunten zoals /system/sonds/gezondheid voor gezondheidscontroles richten, adviseren wij dat u `/system/probes/health` eindpunt en niet de daadwerkelijke HTML pagina&#39;s van de plaats gebruikt.[ zie hieronder ](#excluded-content-request)<br> Voorbeelden:<br>・ Amazon-Route53-Health-Check-Service <br>・ EyeMonIT_bot_version_0.1_[ (https://www.eyemon.it/) ](https://www.eyemon.it/) <br>・ Investis-Site24x7 <br>・ Mozilla/5.0+ (compatibel; UptimeRobot/2.0; [ https://uptimerobot.com/ 9}) <br>・ ThousandEyes-Dragonfly-x1 ](https://uptimerobot.com/)・ OmtrBot/1.0 <br>・ WebMon/2.0.0<br> |
 | `<link rel="prefetch">` aanvragen | Opgenomen | Om de snelheid van het laden van de volgende pagina te verhogen, kunnen klanten browser een reeks pagina&#39;s hebben laden alvorens de gebruiker verbinding-zodat zij reeds in het geheime voorgeheugen zijn. *Gedacht: Dit verhoogt significant het verkeer* - afhankelijk van hoeveel van deze pagina&#39;s vooraf ingesteld zijn. |
 | Het verkeer dat Adobe Analytics of Googles Analytics het melden blokkeert | Opgenomen | Het is meer gebruikelijk dat bezoekers van sites privacysoftware (Ad-blockers, enzovoort) hebben geïnstalleerd die van invloed is op de nauwkeurigheid van Googles Analytics of Adobe Analytics. AEM as a Cloud Service telt verzoeken op het eerste ingangspunt in de door de Adobe beheerde infrastructuur en niet op de client. |
 
@@ -73,7 +73,7 @@ Zie ook [ Dashboard van de Vergunning ](/help/implementing/cloud-manager/license
 | Verzoeken naar /libs/* | Uitgesloten | AEM interne JSON-aanvragen, zoals de CSRF-token die niet kan worden opgevraagd. |
 | Verkeer van aanvallen DDOS | Uitgesloten | DDOS-bescherming. AEM detecteert sommige DDOS-aanvallen automatisch en blokkeert deze. DDOS-aanvallen indien gedetecteerd, kunnen niet worden opgeladen. |
 | AEM as a Cloud Service New Relic Monitoring | Uitgesloten | AEM as a Cloud Service global monitoring. |
-| URL voor klanten om hun programma van de Cloud Service te controleren | Uitgesloten | Aanbevolen URL om de beschikbaarheid extern te controleren.<br><br>`/system/probes/health` |
+| URL voor klanten om hun programma van de Cloud Service te controleren | Uitgesloten | Wij adviseerden om URL te gebruiken om de beschikbaarheid of de gezondheidscontrole extern te controleren.<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod Warm-up Service | Uitgesloten |
 | Agent: skyline-service-warmup/1.* |
 | Bekende zoekmachines, sociale netwerken en HTTP-bibliotheken (getagd door Snelst) | Uitgesloten | De bekende diensten die de plaats regelmatig bezoeken om hun onderzoeksindex of de dienst te verfrissen:<br><br> Voorbeelden:<br>・ AddSearchBot <br>・ AhrefsBot <br>・ Applebot <br>・ Vraag Jeeves Corporate Spider <br>・ Bingbot <br>・ BingPreview <br>・ BLEXBot <br>・ BouwtWith <br> <br>・ CrawlerKengo <br>・ Facebookexternalhit <br>・ Google AdsBot <br>・ Google AdsBot Mobile <br>・ Googlebot <br>・ Googlebot Mobile <br>・ lmspin <br>・ LucidWorks <br>・ MJ12bot <br>・ Prité <br>・ Pinterest <br>・ SembrushBot <br>・ SiteImproved <br>・ StashBot <br>・ StatusCake <br>・ YandexBot |
