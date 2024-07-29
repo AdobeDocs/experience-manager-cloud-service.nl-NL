@@ -8,14 +8,16 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
 
 # Inleiding
+
+<span class="preview"> De functie is beschikbaar in het programma voor vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
 Het Nut van de Omzetting van Forms, deel van [ AEM de Reeks van het Hulpmiddel van de Modernisering ](https://opensource.adobe.com/aem-modernize-Tools/), helpt u Aanpassings Forms gemakkelijk omzetten die met de componenten van de erfenisStichting aan vormen wordt gebouwd die hefboomwerking de moderne, gesteunde mogelijkheden van de Componenten van de Kern.
 
