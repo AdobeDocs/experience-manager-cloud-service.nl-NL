@@ -63,7 +63,7 @@ In de editor voor inhoudsfragmenten wordt de basislay-out van de app weergegeven
 
    ![ demo app voorproef ](assets/do-not-localize/edit-header-5-6.png)
 
-Zo eenvoudig is het om inhoud in een React-app bij te werken wanneer deze is geïntegreerd in AEM CMS zonder kop.
+Zo eenvoudig is het om inhoud bij te werken in een React-app wanneer deze is geïntegreerd in AEM CMS zonder kop.
 
 ## Een afbeelding wisselen in de app {#change-image}
 
