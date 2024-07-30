@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 0%
@@ -122,7 +122,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 * [Inleiding aan de Redacteur van de Regel voor AanpassingsForms die op de Componenten van de Kern wordt gebaseerd](/help/forms/rule-editor-core-components.md)
 * [De types en de gebeurtenissen van de exploitant in regelredacteur van een Adaptief Vorm die op de Componenten van de Kern wordt gebaseerd](/help/forms/rule-editor-core-components-events-operators.md)
 * [De Redacteur van de regel Gebruikersinterface voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd](/help/forms/rule-editor-core-components-user-interface.md)
-* [Verschillende gevallen van gebruik van de Rule Editor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-user-interface.md)
+* [Verschillende gevallen van gebruik van de Rule Editor voor een adaptief formulier op basis van kerncomponenten](/help/forms/rule-editor-core-components-usecases.md)
 * [Verschil in verschillende versies van de redacteur van de Regel](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Inleiding tot aangepaste functies voor adaptieve Forms op basis van kerncomponenten](/help/forms/create-and-use-custom-functions.md)
 * [Een aangepaste functie maken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)
