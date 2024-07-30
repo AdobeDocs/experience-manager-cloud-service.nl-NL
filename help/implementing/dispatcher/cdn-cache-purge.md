@@ -4,20 +4,17 @@ description: Leer hoe te om caching voorwerpen uit het geheime voorgeheugen van 
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
 # De CDN-cache leegmaken {#cdn-purge-cache}
 
->[!NOTE]
->Deze functie is nog niet algemeen beschikbaar. E-mail `aemcs-cdn-config-adopter@adobe.com` om deel te nemen aan het programma voor vroegtijdige adoptie.
-
 Het zuiveren verwijdert een voorwerp uit het geheime voorgeheugen van de Adobe CDN, resulterend in toekomstige verzoeken die aan de oorsprong als geheim voorgeheugenmissen, eerder dan worden gediend van geheim voorgeheugen.
-Met AEM as a Cloud Service kunt u een token voor de paars-API configureren. Deze token kan vervolgens worden gebruikt in API-aanroepen. Lees het [ Vormen CDN Credentials en artikel van de Authentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijpleiding van de Configuratie van Cloud Manager.
+Met AEM as a Cloud Service kunt u een token voor de paars-API configureren. Deze token kan vervolgens worden gebruikt in opschoonAPI-aanroepen. Lees het [ Vormen CDN Credentials en artikel van de Authentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijpleiding van Cloud Manager Config.
 
 Er zijn drie ondersteunde variaties voor het wissen:
 
