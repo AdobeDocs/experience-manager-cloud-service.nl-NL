@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
+source-git-commit: 5296d46658f591d7736587c98b112006d947321d
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,6 @@ Inhoudsverzoeken zijn aanvragen die in AEM Sites (inclusief in verband met Edge 
 ## Inhoudsverzoeken van Cloud Servicen begrijpen {#understanding-cloud-service-content-requests}
 
 Voor klanten die uit-van-de-doos CDN gebruiken, worden de de inhoudsverzoeken van de Cloud Service gemeten via server-zijinzameling van gegevens. Deze inzameling wordt toegelaten via CDN logboekanalyse. Aanvragen voor inhoud worden automatisch op de server aan de rand van Adobe Experience Manager as a Cloud Service verzameld, via automatische analyse van de logbestanden die afkomstig zijn van AEM as a Cloud Service CDN. Hiervoor isoleert u de aanvragen die HTML `(text/html)` - of JSON `(application/json)` -inhoud retourneren van de CDN en is de CDN-naam gebaseerd op verschillende hieronder beschreven insluitings- en uitsluitingsregels. Een inhoudsverzoek komt onafhankelijk van de teruggekeerde inhoud voor die van CDN caches wordt gediend of de inhoud die terug naar de oorsprong van CDN (AEM verzenders) gaat.
-
-Voor klanten die hun eigen CDN gebruiken, biedt de cliënt-zijinzameling een nauwkeurigere bezinning van interactie aan, die een betrouwbare maatregel van websiteovereenkomst door de [ Echte dienst van de Controle van het Gebruik ](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) verzekeren. Dit geeft klanten geavanceerde inzichten in hun paginaverkeer en prestaties. Hoewel deze service alle klanten ten goede komt, biedt deze een representatieve weergave van gebruikersinteracties, zodat een betrouwbare mate van betrokkenheid van websites wordt gewaarborgd door het aantal paginaweergaven van de zijde van de client vast te leggen.
-
-Voor klanten die hun eigen CDN bovenop AEM as a Cloud Service brengen, leidt de server-zijrapportering in aantallen die niet kunnen worden gebruikt om met de vergunning gegeven inhoudsverzoeken te vergelijken. Met de [ Echte Controle van het Gebruik ](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), kan de Adobe op een betrouwbare maatregel van websiteovereenkomst wijzen.
-
 
 ### Variaties in aanvragen voor inhoud van Cloud Servicen {#content-requests-variances}
 
