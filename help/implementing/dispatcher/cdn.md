@@ -4,10 +4,10 @@ description: Leer hoe te om AEM-geleide CDN te gebruiken en hoe te om uw eigen C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4c145559d1ad18d31947c0437d6d1d31fb3af1bb
+source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 5%
+source-wordcount: '1552'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,8 @@ Zie [ het Leiden IP Lijsten van gewenste personen ](/help/implementing/cloud-man
 
 ### Het vormen van Verkeer bij CDN {#cdn-configuring-cloud}
 
-Vorm verkeer bij CDN op diverse manieren, die omvatten:
+U kunt verkeer bij CDN op diverse manieren vormen, die omvatten:
+
 * het blokkeren van kwaadwillig verkeer met [ Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md) (met inbegrip van naar keuze licentiable geavanceerde regels van WAF)
 * het wijzigen van de aard van het [ verzoek en de reactie ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
 * het toepassen van 301/302 [ cliënt-zijredirects ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
@@ -64,7 +65,7 @@ Lees over [ vormend een zuiveringsAPI teken ](/help/implementing/dispatcher/cdn-
 
 ### Basisverificatie bij de CDN {#basic-auth}
 
-Voor lichte gevallen waarin verificatie wordt gebruikt, inclusief zakelijke belanghebbenden die inhoud controleren, moet u de inhoud beschermen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord vereist zijn. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md) en sluit zich aan bij het vroege adopterprogramma.
+Voor lichte gebruikersverificatiegevallen, waaronder die van zakelijke belanghebbenden die inhoud controleren, moet u de inhoud beschermen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord vereist zijn. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md) en sluit zich aan bij het vroege adopterprogramma.
 
 ## CDN van de klant wijst aan AEM beheerde CDN {#point-to-point-CDN}
 
@@ -145,6 +146,26 @@ Hieronder worden verschillende configuratievoorbeelden van verschillende toonaan
 
 ![ Cloudflare1 ](assets/cloudflare1.png " Cloudflare ")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+### Algemene fouten {#common-errors}
+
+De verstrekte steekproefconfiguraties tonen de basismontages nodig, maar een klantenconfiguratie kan andere beïnvloedende regels hebben die, de kopballen verwijderen wijzigen of herschikken nodig voor AEM as a Cloud Service om het verkeer te dienen. Hieronder vindt u een aantal algemene fouten die optreden wanneer u een door de klant beheerde CDN configureert om naar AEM as a Cloud Service te wijzen.
+
+**Redirection aan het Eindpunt van de Dienst van Publish**
+
+Wanneer een verzoek een verboden antwoord van 403 ontvangt, betekent dit dat in het verzoek een aantal vereiste koppen ontbreken. Een algemene reden hiervoor is dat de CDN zowel het apex- als het `www` -domeinverkeer beheert, maar niet de juiste header voor het `www` -domein toevoegt. Dit probleem kan worden opgelost door de AEM as a Cloud Service CDN-logboeken te controleren en de benodigde aanvraagheaders te controleren.
+
+**Te veel richt Lijn** om
+
+Wanneer een pagina een &quot;Te veel Redirect&quot;lijn krijgt, wordt één of andere verzoekkopbal toegevoegd bij CDN die redirect aanpast die het terug naar zich dwingt. Als voorbeeld:
+
+* Er wordt een CDN-regel gemaakt die overeenkomt met het apex-domein of het www-domein en de X-Forwarded-Host-header van alleen het apex-domein toevoegt.
+* Een verzoek om een apex domein past deze CDN regel aan, die het apex domein als X-Door:sturen-Gastheer kopbal toevoegt.
+* Er wordt een aanvraag verzonden naar de oorsprong waar een omleiding expliciet overeenkomt met de hostheader voor het apex-domein (bijvoorbeeld ^example.com).
+* Er wordt een herschrijfregel geactiveerd die de aanvraag voor het apex-domein herschrijft naar https met het www-subdomein.
+* Die omleiding wordt dan verzonden naar de rand van de klant, waar de CDN regel opnieuw teweeggebracht re-toevoegend de x-Door:sturen-Gastheer kopbal voor het apex domein niet www subdomain. Dan begint het proces opnieuw tot het verzoek ontbreekt.
+
+Om dit probleem op te lossen, evalueert uw SSL omleidingsstrategie, CDN regels, richt en herschrijf regelcombinaties opnieuw.
 
 ## Geolocatie-headers {#geo-headers}
 
