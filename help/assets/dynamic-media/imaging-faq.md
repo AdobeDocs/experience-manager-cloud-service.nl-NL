@@ -6,7 +6,7 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
 workflow-type: tm+mt
 source-wordcount: '3401'
 ht-degree: 0%
@@ -30,6 +30,7 @@ En nu een betere Google Core Web Vital score voor LCP (de grootste Inhoudelijke 
 >Probeer uit en ontdek de voordelen van de beeldbepalingen van Dynamic Media en Slimme Beeldvorming, gebruikend de Momentopname van Dynamic Media [__ ](https://snapshot.scene7.com/).
 >
 > Momentopname is een visueel demonstratieprogramma dat is ontworpen om de kracht van Dynamic Media te illustreren voor geoptimaliseerde en dynamische beeldlevering. Experimenteer met testafbeeldingen of Dynamic Media-URL&#39;s om visueel de uitvoer van verschillende Dynamic Media-afbeeldingsmodifiers en Smart Imaging-optimalisaties te bekijken voor:
+>
 >* Bestandsgrootte (met WebP en AVIF levering)
 >* Netwerkbandbreedte
 >* DPR (Pixelverhouding apparaat)
@@ -133,13 +134,15 @@ Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de geb
 * Automatisch converteren naar AVIF als de browser de indeling ondersteunt
 * Automatisch converteren naar WebP als AVIF-conversie niet gunstig was of als AVIF niet door de browser wordt ondersteund
 * Automatisch converteren naar JPEG2000 als WebP niet wordt ondersteund door Safari
-* Automatisch converteren naar JPEGXR voor IE 9+ of als Edge WebP niet ondersteunt\
+* Automatisch converteren naar JPEGXR voor IE 9+ of als Edge WebP niet ondersteunt
+
   | Afbeeldingsindeling | Ondersteunde browsers |
-|—|—|
-| AVIF | [ https://caniuse.com/avif](https://caniuse.com/avif) |
-| WebP | [ https://caniuse.com/webp](https://caniuse.com/webp) |
-| JPEG 2000 | [ https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-| JPEGXR | [ https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  |---|---|
+  | AVIF | [ https://caniuse.com/avif](https://caniuse.com/avif) |
+  | WebP | [ https://caniuse.com/webp](https://caniuse.com/webp) |
+  | JPEG 2000 | [ https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGXR | [ https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * Voor browsers die deze indelingen niet ondersteunen, wordt de oorspronkelijk aangevraagde afbeeldingsindeling weergegeven.
 
 Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
@@ -477,5 +480,5 @@ See also [When working with images](/help/assets/dynamic-media/adding-dynamic-me
 
 >[!MORELIKETHIS]
 >
->* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
->>
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) 
+-->

@@ -4,7 +4,7 @@ description: In deze pagina wordt beschreven hoe u spelers in Screens as a Cloud
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -71,10 +71,12 @@ De volgende eigenschappen worden in elke `ping` opgenomen:
 | lastContentChange {string} | tijdstempel van de laatste inhoudswijziging |
 
 >[!NOTE]
+>
 >U kunt desgewenst een geavanceerdere eigenschap inschakelen via de voorkeuren voor de speler (Afspeelcontrole inschakelen):
->|Eigenschap|Beschrijving|
->|—|—|
->|isContentRendering {boolean}|true als de GPU kan bevestigen dat de werkelijke inhoud wordt afgespeeld (op basis van pixelanalyse)|
+>
+>| Eigenschap | Beschrijving |
+>|---|---|
+>| isContentRendering {boolean} | true als de GPU kan bevestigen dat de werkelijke inhoud wordt afgespeeld (op basis van pixelanalyse) |
 
 ### Beperkingen {#limitations}
 
