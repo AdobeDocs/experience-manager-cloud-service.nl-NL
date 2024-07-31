@@ -1,6 +1,6 @@
 ---
 title: Aanbevolen procedures voor Dynamic Media
-description: Meer informatie over de beste praktijken in Dynamic Media wanneer het gaat om het werken met beelden en video.
+description: Meer informatie over de beste praktijken in Dynamic Media als het gaat om het werken met beelden en video en best practices voor Dynamic Media Viewers.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: de1116ee39024d30e14838f8b36f9ab087a45f85
+source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '4105'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,23 @@ Na het synchroniseren van uw middelen, geeft de Selectieve Publish u controle ov
 Deze twee beste praktijken helpen u betere controle, bestuur, en productiviteit over uw rijke-media inhoud bereiken.
 
 Meer informatie? Ga naar [ vormen Selectieve Publish op het omslagniveau in Dynamic Media ](/help/assets/dynamic-media/selective-publishing.md).
+
+
+## Dynamic Media Viewers
+
+De beste werkwijzen van de Dynamic Media Viewer zijn essentiële richtlijnen die zijn ontworpen om de prestaties, functionaliteit en gebruikerservaring van Dynamic Media-middelen op AEM te optimaliseren. Deze praktijken zorgen ervoor dat de activa behoorlijk worden gesynchroniseerd, gepubliceerd, en gevormd om de volledige mogelijkheden van Dynamic Media te gebruiken.
+
+Door deze beste praktijken te volgen, kunt u naadloze integratie, efficiënt middelenbeheer, en verbeterde kijkersinteractie bereiken. Het synchroniseren van elementen, het gebruik van slim uitsnijden en het volgen van de richtlijnen voor het opnemen van JavaScript-bestanden zijn allemaal belangrijke werkwijzen. Deze aanbevelingen helpen de integriteit en betrouwbaarheid van media levering over diverse platforms en apparaten handhaven.
+
+* **Synchronize de Kijker Assets:** zorg ervoor dat alle vieweractiva met Dynamic Media alvorens de speler worden gesynchroniseerd te gebruiken. Voor het oplossen van problemenkijker, ga naar het [ Problemen oplossen van de Kijkers van Dynamic Media ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) artikel.
+* **Pagina van de Manager van de Steekproef:** heb toegang tot de pagina van de steekproefmanager bij `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+* **Publish Assets:** zorg ervoor dat de activa alvorens hen in leveringskijkers worden gepubliceerd te bekijken.
+* **Gemorst Video&#39;s Autoplay:** voor autoplay functionaliteit in video&#39;s, gebruik gedempte videomontages omdat browsers het spelen video met volume beperken.
+* **het Slimme Uitsnijden:** gebruik de component van het Beeld v3 voor slim het bebouwen om de presentatie van afbeeldingsactiva te verbeteren.
+* **Insluiting van het Dossier van JavaScript:** omvat slechts het primaire dossier van de kijkerJavaScript op uw pagina. Verwijs niet naar extra JavaScript-bestanden die de runtimelogica van de viewer kan downloaden. Koppel niet rechtstreeks vanuit het `/s7viewers` -contextpad (ook wel de geconsolideerde SDK-indeling genoemd) naar de HTML5 SDK `Utils.js` -bibliotheek. De logica van de viewer beheert de locatie van `Utils.js` of soortgelijke runtimeviewerbibliotheken, die tussen releases kunnen worden gewijzigd. Bij Adobe blijven oudere versies van de secundaire viewer-include-bestanden op de server niet behouden, zodat het rechtstreeks verwijzen naar deze versies de viewerfunctionaliteit in toekomstige updates kan onderbreken.
+* **het Inbedden Richtlijnen:** gebruik de documentatie voor het inbedden richtlijnen die voor elke kijker specifiek zijn.
+Meer informatie? Ga naar [ Kijkers voor AEM Assets ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+* **SDK Leerprogramma en Voorbeelden:** herzie het [ Leerprogramma van SDK van de Kijker ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) en [ HTML5 de toepassingsvoorbeelden van SDK ](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) voor een grondig inzicht in de component APIs van SDK.
 
 
 ## Elementen voorbereiden voor levering
@@ -156,7 +173,6 @@ Houd er rekening mee dat deze aanbevolen procedures goed overeenkomen met de SEO
 
 Meer informatie? Ga naar [ URL structuur beste praktijken voor Google ](https://developers.google.com/search/docs/crawling-indexing/url-structure) en [ het beeldSEO beste praktijken van Google ](https://developers.google.com/search/docs/appearance/google-images)
 
-
 ### Afbeeldingen dynamisch verbeteren en visuele effecten maken met behulp van opdrachten
 
 **Bedrijfs geval:** *pas rijke visuele gevolgen op beelden toe.*
@@ -191,7 +207,7 @@ Als u een logo of pictogram op een bestaande afbeelding wilt plaatsen, biedt Dyn
 | --- | --- |
 | **uploadt en publiceert het basisbeeld** | Eerst uploadt en publiceert u de basisafbeelding waarop u het logo of pictogram wilt plaatsen. U kunt elke afbeelding als basis gebruiken.<br> bijvoorbeeld, hier is een basisbeeld:<br>[ https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa ](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **uploadt en publiceert het embleem of pictogrambeeld** | Vervolgens uploadt en publiceert u de afbeelding die u over de basisafbeelding wilt plaatsen. Deze afbeelding moet een transparant PNG-bestand zijn met het logo of pictogram dat u wilt bedekken.<br> hier is het transparante beeld PNG van een stervoorwerp met transparantiegevolgen die zullen worden bovenop gelegd:<br>[ https://s7g2.scene7.com/is/image/genaibeta/decorate-star ](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **pas Dynamic Media URL** toe | Maak nu een Dynamic Media-URL waarin de basisafbeelding en het logo of de pictogramafbeelding worden gecombineerd. U kunt URL-opdrachten gebruiken om dit effect te bereiken.<br> de structuur URL kijkt iets als dit:<br>[ https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png ](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png) <br> waar <br>・ `hotspotRetailBaseImage` het basisbeeld is.<br>・ `starxp` is het logo/pictogram.<br>・ `layer=1` geeft aan dat het logo of pictogram in een laag over de basisafbeelding moet worden geplaatst.<br>・ `scale=1.25` past de grootte van het logo/pictogram aan.<br>・ `posN=0.33,-.25` bepaalt de positie van het logo/pictogram ten opzichte van de basisafbeelding.<br>・ `fmt=png` zorgt ervoor dat de uitvoer de PNG-indeling heeft. |
+| **pas Dynamic Media URL** toe | Maak nu een Dynamic Media-URL waarin de basisafbeelding en het logo of de pictogramafbeelding worden gecombineerd. U kunt URL-opdrachten gebruiken om dit effect te bereiken.<br> de structuur URL kijkt iets als dit:<br>[ https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png ](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png) <br> waar de activa <br>・ `hotspotRetailBaseImage` het basisbeeld is.<br>・ `starxp` is het logo/pictogram.<br>・ `layer=1` geeft aan dat het logo of pictogram in een laag over de basisafbeelding moet worden geplaatst.<br>・ `scale=1.25` past de grootte van het logo/pictogram aan.<br>・ `posN=0.33,-.25` bepaalt de positie van het logo/pictogram ten opzichte van de basisafbeelding.<br>・ `fmt=png` zorgt ervoor dat de uitvoer de PNG-indeling heeft. |
 
 Meer informatie? Ga naar [ src ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) voor meer details op het `src` bevel en andere bevelen van Dynamic Media URL.
 
@@ -246,6 +262,28 @@ Voortgekomen uit de oorspronkelijke afbeelding, waarbij de ruimte wordt benadruk
 
 Voel u vrij om deze variaties voor uw specifieke behoeften te onderzoeken.
 Wilt u meer weten over de opdrachten in een URL? Ga naar [ verwijzing van het Bevel ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+
+### Afbeeldingen van GIFFEN leveren
+
+**Bedrijfs geval:** *GIFFEN die van de Stroom Dynamic Media gebruiken*
+
+U kunt GIFFEN uploaden en leveren via Dynamic Media. Als u een bewegend GIF wilt renderen, vervangt u `is/image` door `is/content` in de URL. Als u bijvoorbeeld `abc.gif` hebt geüpload, gebruikt u het volgende:
+
+* Met dit URL-pad wordt een statische weergave van het GIF weergegeven:
+
+  ```
+  https://your.domain.com/is/image/yourfolder/abc
+  ```
+
+* Met dit URL-pad wordt de animatieweergave van het GIF weergegeven:
+
+  ```
+  https://your.domain.com/is/content/yourfolder/abc
+  ```
+
+>[!NOTE]
+>
+>Wanneer u `is/content` gebruikt in het URL-pad, worden opdrachten voor afbeeldingstransformatie niet toegepast op het element.
 
 ### Publish a video for my website
 
@@ -349,3 +387,11 @@ Om de beste indeling voor het web te garanderen, kunt u Slim beeld gebruiken om 
 Door op Smart Imaging te vertrouwen, kunt u ervoor zorgen dat uw afbeeldingen zo efficiënt mogelijk worden geleverd, op maat van de bladeromgeving van elke gebruiker. Deze aanpak vereenvoudigt het proces en kan leiden tot betere prestaties op het gebied van het laden van afbeeldingen en de algehele gebruikerservaring.
 
 Meer informatie? Ga naar [ Slimme Beeldvorming ](/help/assets/dynamic-media/imaging-faq.md).
+
+### Na levering van activa aan klanten
+
+**Bedrijfs geval:** *na het publiceren van nieuwe inhoud of het beschrijven van bestaande inhoud, hoe kan het worden gewaarborgd dat de veranderingen onmiddellijk op CDN verschijnen?*
+
+CDN (Content Delivery Network) plaatst Dynamic Media-elementen in cache voor snelle levering aan klanten. Wanneer deze middelen worden bijgewerkt, is het belangrijk dat de wijzigingen onmiddellijk op de website van kracht worden. Door de CDN-cache leeg te maken of te wissen, kunnen elementen die door Dynamic Media worden geleverd snel worden bijgewerkt. Deze benadering elimineert de behoefte om op het geheime voorgeheugen te wachten die op de waarde van TTL (Tijd aan Levend) wordt gebaseerd verlopen, die typisch aan tien uren wordt geplaatst. In plaats daarvan kan vanuit de Dynamic Media-gebruikersinterface een aanvraag worden verzonden om de cache binnen enkele minuten te laten verlopen.
+
+Meer informatie? Ga naar [ ongeldig maakt het CDN geheime voorgeheugen als Dynamic Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
