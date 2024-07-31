@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
 workflow-type: tm+mt
-source-wordcount: '3939'
+source-wordcount: '3932'
 ht-degree: 0%
 
 ---
@@ -506,10 +506,6 @@ data:
 ```
 
 ## Standaardverkeersspiegel bij oorspronkelijke waarschuwing {#traffic-spike-at-origin-alert}
-
->[!NOTE]
->
->Dit onderdeel wordt geleidelijk ingevoerd.
 
 Een ](/help/operations/actions-center.md) e-mailbericht van het Centrum van Acties 1} zal worden verzonden wanneer er een significante hoeveelheid verkeer is dat naar de oorsprong wordt verzonden, waar een hoge drempel van verzoeken uit het zelfde IP adres komt, zo wijzend op een aanval DDoS.[
 
