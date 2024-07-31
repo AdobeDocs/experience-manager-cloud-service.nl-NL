@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 0%
@@ -76,15 +76,23 @@ De beste werkwijzen van de Dynamic Media Viewer zijn essentiële richtlijnen die
 
 Door deze beste praktijken te volgen, kunt u naadloze integratie, efficiënt middelenbeheer, en verbeterde kijkersinteractie bereiken. Het synchroniseren van elementen, het gebruik van slim uitsnijden en het volgen van de richtlijnen voor het opnemen van JavaScript-bestanden zijn allemaal belangrijke werkwijzen. Deze aanbevelingen helpen de integriteit en betrouwbaarheid van media levering over diverse platforms en apparaten handhaven.
 
-* **Synchronize de Kijker Assets:** zorg ervoor dat alle vieweractiva met Dynamic Media alvorens de speler worden gesynchroniseerd te gebruiken. Voor het oplossen van problemenkijker, ga naar het [ Problemen oplossen van de Kijkers van Dynamic Media ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) artikel.
-* **Pagina van de Manager van de Steekproef:** heb toegang tot de pagina van de steekproefmanager bij `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
-* **Publish Assets:** zorg ervoor dat de activa alvorens hen in leveringskijkers worden gepubliceerd te bekijken.
-* **Gemorst Video&#39;s Autoplay:** voor autoplay functionaliteit in video&#39;s, gebruik gedempte videomontages omdat browsers het spelen video met volume beperken.
-* **het Slimme Uitsnijden:** gebruik de component van het Beeld v3 voor slim het bebouwen om de presentatie van afbeeldingsactiva te verbeteren.
-* **Insluiting van het Dossier van JavaScript:** omvat slechts het primaire dossier van de kijkerJavaScript op uw pagina. Verwijs niet naar extra JavaScript-bestanden die de runtimelogica van de viewer kan downloaden. Koppel niet rechtstreeks vanuit het `/s7viewers` -contextpad (ook wel de geconsolideerde SDK-indeling genoemd) naar de HTML5 SDK `Utils.js` -bibliotheek. De logica van de viewer beheert de locatie van `Utils.js` of soortgelijke runtimeviewerbibliotheken, die tussen releases kunnen worden gewijzigd. Bij Adobe blijven oudere versies van de secundaire viewer-include-bestanden op de server niet behouden, zodat het rechtstreeks verwijzen naar deze versies de viewerfunctionaliteit in toekomstige updates kan onderbreken.
-* **het Inbedden Richtlijnen:** gebruik de documentatie voor het inbedden richtlijnen die voor elke kijker specifiek zijn.
+* **Synchronize Kijker Assets:**
+Zorg ervoor dat alle viewerelementen zijn gesynchroniseerd met Dynamic Media voordat u de speler gebruikt. Voor het oplossen van problemenkijker, ga naar het [ Problemen oplossen van de Kijkers van Dynamic Media ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) artikel.
+* **Pagina van de Manager van de Steekproef:**
+Open de pagina met voorbeeldbeheer op `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` .
+* **Publish Assets:**
+Zorg ervoor dat de elementen zijn gepubliceerd voordat u deze weergeeft in de viewers voor levering.
+* **Automatisch spelende Video&#39;s Gedemd:**
+Voor automatisch afspelen in video&#39;s gebruikt u gedempte video-instellingen, omdat browsers het afspelen van video&#39;s met volume beperken.
+* **het Slimme Uitsnijden:**
+Gebruik de component Afbeelding v3 voor slim uitsnijden om de presentatie van afbeeldingselementen te verbeteren.
+* **Insluiting van het Dossier van JavaScript:**
+Neem alleen het JavaScript-bestand van de primaire viewer op uw pagina. Verwijs niet naar extra JavaScript-bestanden die de runtimelogica van de viewer kan downloaden. Koppel niet rechtstreeks vanuit het `/s7viewers` -contextpad (ook wel de geconsolideerde SDK-indeling genoemd) naar de HTML5 SDK `Utils.js` -bibliotheek. De logica van de viewer beheert de locatie van `Utils.js` of soortgelijke runtimeviewerbibliotheken, die tussen releases kunnen worden gewijzigd. Bij Adobe blijven oudere versies van de secundaire viewer-include-bestanden op de server niet behouden, zodat het rechtstreeks verwijzen naar deze versies de viewerfunctionaliteit in toekomstige updates kan onderbreken.
+* **Inbeddende Richtlijnen:**
+Gebruik de documentatie voor het insluiten van richtlijnen die specifiek zijn voor elke kijker.
 Meer informatie? Ga naar [ Kijkers voor AEM Assets ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
-* **SDK Leerprogramma en Voorbeelden:** herzie het [ Leerprogramma van SDK van de Kijker ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) en [ HTML5 de toepassingsvoorbeelden van SDK ](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) voor een grondig inzicht in de component APIs van SDK.
+* **SDK Leerprogramma en Voorbeelden:**
+Herzie het [ leerprogramma van SDK van de Kijker ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) en [ HTML5 SDK toepassingsvoorbeelden ](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) voor een grondig inzicht in de component APIs van SDK.
 
 
 ## Elementen voorbereiden voor levering
