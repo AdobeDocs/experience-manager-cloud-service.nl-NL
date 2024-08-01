@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 0%
 
 ---
@@ -77,9 +77,11 @@ De beste werkwijzen van de Dynamic Media Viewer zijn essentiële richtlijnen die
 Door deze beste praktijken te volgen, kunt u naadloze integratie, efficiënt middelenbeheer, en verbeterde kijkersinteractie bereiken. Het synchroniseren van elementen, het gebruik van slim uitsnijden en het volgen van de richtlijnen voor het opnemen van JavaScript-bestanden zijn allemaal belangrijke werkwijzen. Deze aanbevelingen helpen de integriteit en betrouwbaarheid van media levering over diverse platforms en apparaten handhaven.
 
 * **Synchronize Kijker Assets:**
-Zorg ervoor dat alle viewerelementen zijn gesynchroniseerd met Dynamic Media voordat u de speler gebruikt. Voor het oplossen van problemenkijker, ga naar het [ Problemen oplossen van de Kijkers van Dynamic Media ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) artikel.
-* **Pagina van de Manager van de Steekproef:**
-Open de pagina met voorbeeldbeheer op `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` .
+Zorg ervoor dat alle viewerelementen zijn gesynchroniseerd met Dynamic Media voordat u de speler gebruikt.
+
+   * Open de pagina met voorbeeldbeheer op `/libs/dam/gui/content/s7dam/samplemanager/samplemanager` . Op deze pagina kunt u de elementen van een viewer opnieuw synchroniseren, inclusief pictogrammen voor een uitgeverfde viewer, CSS-bestanden en voorinstellingen.
+   * Als u om het even welke kijkerskwesties ontmoet, ga [ problemen oplossen Dynamic Media Viewers ](/help/assets/dynamic-media/troubleshoot-dm.md#viewers) artikel.
+
 * **Publish Assets:**
 Zorg ervoor dat de elementen zijn gepubliceerd voordat u deze weergeeft in de viewers voor levering.
 * **Automatisch spelende Video&#39;s Gedemd:**
@@ -400,6 +402,7 @@ Meer informatie? Ga naar [ Slimme Beeldvorming ](/help/assets/dynamic-media/imag
 
 **Bedrijfs geval:** *na het publiceren van nieuwe inhoud of het beschrijven van bestaande inhoud, hoe kan het worden gewaarborgd dat de veranderingen onmiddellijk op CDN verschijnen?*
 
-CDN (Content Delivery Network) plaatst Dynamic Media-elementen in cache voor snelle levering aan klanten. Wanneer deze middelen worden bijgewerkt, is het belangrijk dat de wijzigingen onmiddellijk op de website van kracht worden. Door de CDN-cache leeg te maken of te wissen, kunnen elementen die door Dynamic Media worden geleverd snel worden bijgewerkt. Deze benadering elimineert de behoefte om op het geheime voorgeheugen te wachten die op de waarde van TTL (Tijd aan Levend) wordt gebaseerd verlopen, die typisch aan tien uren wordt geplaatst. In plaats daarvan kan vanuit de Dynamic Media-gebruikersinterface een aanvraag worden verzonden om de cache binnen enkele minuten te laten verlopen.
+CDN (Content Delivery Network) plaatst Dynamic Media-elementen in cache voor snelle levering aan klanten. Wanneer deze middelen worden bijgewerkt, is het belangrijk dat de wijzigingen onmiddellijk op de website van kracht worden. Door de CDN-cache leeg te maken of te wissen, kunnen elementen die door Dynamic Media worden geleverd snel worden bijgewerkt. Deze benadering elimineert de behoefte om op het geheime voorgeheugen te wachten die op de waarde van TTL (Tijd aan Levend) wordt gebaseerd verlopen, die typisch aan tien uren wordt geplaatst.
+Afhankelijk van uw specifieke gebruiksgeval, kunt u de montages van CDN TTL (Tijd aan Levend) dienovereenkomstig bijwerken.
 
 Meer informatie? Ga naar [ ongeldig maakt het CDN geheime voorgeheugen als Dynamic Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
