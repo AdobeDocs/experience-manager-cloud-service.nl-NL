@@ -3,9 +3,9 @@ title: Levering van activa in Experience Manager beperken
 description: Leer hoe te om de levering van activa in  [!DNL Experience Manager] te beperken.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
+source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Als het veld niet beschikbaar is, voert u de volgende stappen uit om het veld to
    1. Selecteer de **[!UICONTROL User Group]** die u wilt toevoegen en extraheer de **[!UICONTROL orgID]** en **[!UICONTROL userGroupID]** uit de URL of gebruik uw organisatie-id, zoals `{orgID}@AdobeOrg:{usergroupID}` .
 
 1. Voeg de Group-id toe aan het veld **[!UICONTROL Roles]** met de eigenschappen van Asset. <br>
-De groep-id&#39;s die in het veld **[!UICONTROL Roles]** zijn gedefinieerd, zijn de enige gebruikers die toegang hebben tot het element. U kunt ook IMS-client-id en IMS-profiel-id toevoegen in het veld **[!UICONTROL Roles]** . Bijvoorbeeld `{orgId}@AdobeOrg:{profileId}` .
+De groep-id&#39;s die in het veld **[!UICONTROL Roles]** zijn gedefinieerd, zijn de enige gebruikers die toegang hebben tot het element. Naast de IMS-groep-id kunt u ook de IMS-gebruikers-id en de IMS-profiel-id toevoegen in het veld **[!UICONTROL Roles]** . Bijvoorbeeld `{orgId}@AdobeOrg:{profileId}` .
 
    >[!NOTE]
    >
