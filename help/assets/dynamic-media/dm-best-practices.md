@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
+source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -162,14 +162,17 @@ Gebruik regelmatig de volgende aanbevelingen om ervoor te zorgen dat uw afbeeldi
 
 * **Betekenisvolle namen van beelddossier:**
 Gebruik beschrijvende bestandsnamen die de afbeeldingsinhoud weerspiegelen. Bijvoorbeeld:
+
    * use `myCompany-Silver-Wrist-Watch`
    * *vermijd* `myCompany_Silver_Wrist_Watch` of `myCompanySilverWristWatch`
 
   Zodoende kunnen zoekprogramma&#39;s de context van de afbeelding begrijpen en de SEO verbeteren. Google geeft de voorkeur aan afbreekstreepjes boven onderstrepingstekens of spaties in een bestandsnaam. Vermijd ook het samenvoegen van woorden in een bestandsnaam.
 * **Eigen domein:**
 Implementeer een aangepast domein dat uw bedrijf of merknaam bevat om de herkenning en het vertrouwen van merken te versterken. Bijvoorbeeld:
+
    * use `http://images.mycompany.com/is/image/companyname/`
    * *vermijd* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **SEO-vriendschappelijke omslagstructuur:**
 Organiseer uw afbeeldingen in een mappenstructuur die uw bedrijfsnaam of merk bevat voor een betere indexering, zoals `http://images.mycompany.com/is/image/companyname/` .
 * **de regelreeksen van Dynamic Media:**
@@ -309,6 +312,7 @@ Upload het originele videobestand. Zorg ervoor dat het een video met hoge resolu
 Bekijk een voorvertoning van de video, zodat u zeker weet dat alles er naar behoren uitziet. Ga door en publiceer de opmerking als u tevreden bent. Deze stap maakt de video toegankelijk voor uw publiek.
 * **Verbinding of bedt in:**
 Na publicatie hebt u twee opties.
+
    * **Verbinding direct:**
 Gebruik de opgegeven URL om rechtstreeks te koppelen aan de video. Hyperlink het geschikt op uw marketingsite.
    * **bed de video in:**
