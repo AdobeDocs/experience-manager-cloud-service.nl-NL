@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
+source-git-commit: 220a8d8aecde76c7d77ebab16fda2158316c08dd
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -406,7 +406,6 @@ Meer informatie? Ga naar [ Slimme Beeldvorming ](/help/assets/dynamic-media/imag
 
 **Bedrijfs geval:** *na het publiceren van nieuwe inhoud of het beschrijven van bestaande inhoud, hoe kan het worden gewaarborgd dat de veranderingen onmiddellijk op CDN verschijnen?*
 
-CDN (Content Delivery Network) plaatst Dynamic Media-elementen in cache voor snelle levering aan klanten. Wanneer deze middelen worden bijgewerkt, is het belangrijk dat de wijzigingen onmiddellijk op de website van kracht worden. Door de CDN-cache leeg te maken of te wissen, kunnen elementen die door Dynamic Media worden geleverd snel worden bijgewerkt. Deze benadering elimineert de behoefte om op het geheime voorgeheugen te wachten die op de waarde van TTL (Tijd aan Levend) wordt gebaseerd verlopen, die typisch aan tien uren wordt geplaatst.
-Afhankelijk van uw specifieke gebruiksgeval, kunt u de montages van CDN TTL (Tijd aan Levend) dienovereenkomstig bijwerken.
+CDN (Content Delivery Network) plaatst Dynamic Media-elementen in cache voor snelle levering aan klanten. Wanneer deze middelen worden bijgewerkt, is het belangrijk dat de wijzigingen onmiddellijk op de website van kracht worden. Door de CDN-cache leeg te maken of te wissen, kunnen elementen die door Dynamic Media worden geleverd snel worden bijgewerkt. Deze benadering elimineert de behoefte om op het geheime voorgeheugen te wachten die op de waarde van TTL (Tijd aan Levend) wordt gebaseerd verlopen, die typisch aan tien uren wordt geplaatst. Afhankelijk van uw specifieke gebruiksgeval, kunt u de montages van CDN TTL (Tijd aan Levend) dienovereenkomstig bijwerken.
 
 Meer informatie? Ga naar [ ongeldig maakt het CDN geheime voorgeheugen als Dynamic Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
