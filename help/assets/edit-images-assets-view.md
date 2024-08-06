@@ -4,16 +4,18 @@ description: Bewerk beelden gebruikend  [!DNL Adobe Express]  aangedreven opties
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
+source-git-commit: 610da7c1e8f20156b165d819a4bb91ec5ffcad80
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
 
 # Afbeeldingen bewerken in [!DNL Assets view] {#edit-images-in-assets-view}
 
-In de Assets-weergave kunt u basisafbeeldingen bewerken, zoals vergroten/verkleinen, verwijderen van de achtergrond, uitsnijden en omzetten tussen de JPEG- en PNG-indeling. Bovendien is geavanceerde bewerking mogelijk dankzij integratie met Adobe Express. Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een nieuwe versie. Met Versioning kunt u het oorspronkelijke element later herstellen als dat nodig is. Om een beeld uit te geven, [ open zijn voorproef ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) en klik **geef Beeld** uit.
+De interface van de Assets-weergave maakt basisbewerkingen van afbeeldingen mogelijk die worden aangedreven door Adobe Express en die zijn geïntegreerd in de gebruikersinterface. Deze bewerking omvat het wijzigen van het formaat, het verwijderen van de achtergrond, het uitsnijden en het omzetten tussen de JPEG- en PNG-indeling. Bovendien is geavanceerde bewerking mogelijk via de interface Adobe Express ingesloten in de interface van de Assets-weergave.
+
+Nadat u een afbeelding hebt bewerkt, kunt u de nieuwe afbeelding opslaan als een nieuwe versie. Met Versioning kunt u het oorspronkelijke element later herstellen als dat nodig is. Om een beeld uit te geven, [ open zijn voorproef ](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) en klik **geef Beeld** uit.
 
 >[!NOTE]
 >
@@ -23,7 +25,7 @@ In de Assets-weergave kunt u basisafbeeldingen bewerken, zoals vergroten/verklei
 
 ## Afbeelding bewerken {#edit-image}
 
-Land op de Mening van Assets, gebruikend de verbinding - [ Mening van Assets ](https://experience.adobe.com/#/assets) en het selecteren van de juiste bewaarplaats. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
+Ga naar de mening UI van Assets, gebruikend de verbinding - [ Mening van Assets ](https://experience.adobe.com/#/assets) en het selecteren van de juiste bewaarplaats. Neem contact op met de beheerder van uw organisatie om toegang te krijgen.
 Voor om het even welke extra verwijzingsinformatie verwijs - [ begonnen worden gebruikend de Mening van Adobe Experience Manager Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [ het gebruikersinterface van de mening van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) begrijpen, en [ het gebruiksgevallen van de Mening van Assets ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -33,13 +35,13 @@ Voor om het even welke extra verwijzingsinformatie verwijs - [ begonnen worden g
 
 ### Afbeelding bewerken in Assets-weergave met Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Na het landen op de Mening van Assets, klik **Assets**, selecteer een beeld, en klik dan **uitgeven** van hoogste spoor. In het nieuwe scherm worden de beschikbare bewerkingsopties weergegeven, zoals vergroten/verkleinen, verwijderen van de achtergrond, uitsnijden en omzetten tussen de JPEG- en PNG-indeling.
+Na het navigeren aan de Mening van Assets, klik **Assets**, selecteer een beeld, en klik dan **uitgeven** van de hoogste spoorstaaf. In het nieuwe scherm worden de beschikbare bewerkingsopties weergegeven die worden aangedreven door Adobe Express. Deze opties omvatten formaatwijziging, verwijdering van de achtergrond, bijsnijden en converteren tussen de JPEG- en PNG-indeling.
 
 #### Grootte afbeelding wijzigen {#resize-image-using-express}
 
 Een afbeelding vergroten of verkleinen tot een bepaalde grootte is een veelgebruikte optie. Met de Assets-weergave kunt u snel de grootte van afbeeldingen aanpassen aan de gangbare fotoformaten door vooraf berekende nieuwe resoluties voor specifieke fotoformaten te bieden. Voer de onderstaande stappen uit als u het formaat van de afbeelding wilt wijzigen met Assets View:
 
-1. Klik **Resize Beeld** van de linkerruit.
+1. Klik **Resize Beeld** van de linkerruit. In een dialoogvenster ziet u de mogelijkheden voor het wijzigen van de grootte van afbeeldingen op basis van Adobe Express.
 1. Selecteer het juiste sociale-mediaplatform in de vervolgkeuzelijst Formaat wijzigen en selecteer de afbeeldingsgrootte in de weergegeven opties.
 1. Schaal het beeld, indien vereist, gebruikend het **gebied van de Schaal van het Beeld**.
 1. Klik op **[!UICONTROL Apply]** om de wijzigingen toe te passen.
@@ -68,7 +70,7 @@ U kunt een afbeelding eenvoudig transformeren tot een perfecte grootte met inges
    ![ sparen beeld met Adobe Express ](assets/adobe-express-crop-image.png)
 De uitgesneden afbeelding kan worden gedownload. U kunt het bewerkte element opslaan als een nieuwe versie van hetzelfde element of het opslaan als een nieuw element.
 
-#### Omzetten tussen afbeeldingsbestandstypen {#convert-image-types-using-express}
+#### JPEG omzetten in PNG {#convert-image-types-using-express}
 
 U kunt met Adobe Express snel JPEG- en PNG-afbeeldingsindelingen omzetten. Voer de volgende stappen uit:
 
@@ -79,33 +81,27 @@ U kunt met Adobe Express snel JPEG- en PNG-afbeeldingsindelingen omzetten. Voer 
 #### Beperkingen {#limitations-adobe-express}
 
 * Ondersteunde afbeeldingsresolutie: minimaal - 50 pixels, maximaal - 6000 pixels per afmeting.
-
 * Maximale ondersteunde bestandsgrootte: 17 MB.
 
 ### Afbeeldingen bewerken in ingesloten Adobe Express-editor {#edit-images-in-adobe-express-embedded-editor}
 
-Gebruikers met Express-machtiging kunnen de ingesloten Express-editor vanuit de Assets-weergave gebruiken om inhoud eenvoudig te bewerken en nieuwe inhoud te maken met GenAI vanaf de Adobe Firefly. Hiermee verbetert u het hergebruik van inhoud en versnelt u de snelheid van de inhoud. U kunt ook vooraf gedefinieerde elementen gebruiken om uw elementen er verbluffend uit te laten zien of snelle acties uitvoeren om uw afbeelding met slechts een paar klikken te bewerken.
+Gebruikers met Express-machtiging kunnen de ingesloten Express-editor vanuit de Assets-weergave gebruiken om inhoud eenvoudig te bewerken en nieuwe inhoud te maken met GenAI vanaf de Adobe Firefly. Deze functie verbetert het hergebruik van inhoud en versnelt de snelheid van de inhoud. U kunt ook vooraf gedefinieerde elementen gebruiken om uw elementen er verbluffend uit te laten zien of snelle acties uitvoeren om uw afbeelding met slechts een paar klikken te bewerken.
 ![ uitdrukken in essentiële UI ](/help/assets/assets/express-in-essentials-ui.jpg)
 Voer de onderstaande stappen uit als u afbeeldingen wilt bewerken met de ingesloten editor van [!DNL Adobe Express] :
 
-1. Land op aan de Mening van AEM Assets gebruikend de verbinding - [ Mening van AEM Assets ](https://experience.adobe.com/#/assets) en selecteer de juiste bewaarplaats.
+1. Ga naar de Mening van AEM Assets gebruikend de verbinding - [ Mening van AEM Assets ](https://experience.adobe.com/#/assets) en selecteer de juiste bewaarplaats.
 1. Klik **Assets**, ga een omslag in, en selecteer een beeld.
 1. Klik **Open in Adobe Express**. De afbeelding wordt geopend op een express canvas.
 1. Breng de gewenste wijzigingen in de afbeelding aan.
 1. Als uw project u vereist om meer pagina&#39;s toe te voegen, **** klikt, selecteert activa, gaat een omslag in, selecteert een beeld om op de canvaspagina te brengen, en voert dan de vereiste uitgeeft aan het beeld uit.
-1. Om beeld(s) te bewaren, klik **sparen**. Het dialoogvenster Opslaan wordt weergegeven.
+1. Om één of meerdere activa te bewaren, klik **sparen**. In het dialoogvenster Opslaan worden de opslagopties weergegeven. Als u een keuze wilt maken tussen de opslagopties, volgt u een van de onderstaande instructies die op uw vereiste is afgestemd:
+   1. Om één enkele pagina te bewaren, klik **sparen als Versie** om het beeld als nieuwe versie (het behouden van het originele formaat) uit te voeren, en het te bewaren in de zelfde omslag.
 
-   >[!NOTE]
-   >
-   > **1. Voor één pagina**
-   >
-   > **sparen als Versie:** Deze eigenschap steunt het bewaren van één enkel middel slechts. Selecteer deze optie om de afbeelding als een nieuwe versie te exporteren (met behoud van de oorspronkelijke indeling) en deze op te slaan in dezelfde map.
-   > **sparen als Nieuw Activum:** selecteer deze optie om het middel in een verschillend formaat uit te voeren dan origineel en het te bewaren aan om het even welke omslag als nieuw middel.
-   >  
-   > **2. Voor meerdere pagina&#39;s**
-   >
-   > **sparen als Versie:** Deze eigenschap steunt het bewaren van één enkel middel slechts. Als u één pagina van veelvoudige pagina&#39;s wilt bewaren, selecteer deze optie om het middel in zijn originele formaat en plaats op te slaan.\
-   > **sparen als Nieuw Middel:** met deze optie, voert u of veelvoudige activa of één enkel middel naar om het even welke omslag uit en bewaart hen als nieuw(e) element(en) met hun dossierformaat als origineel of verschillend.
+   1. Om één enkele pagina te bewaren, klik **sparen als nieuw Middel** om de activa in een verschillend formaat uit te voeren en het te bewaren aan om het even welke omslag als nieuw middel.
+
+   1. Om één enkele pagina van veelvoudige pagina&#39;s te bewaren, klik **sparen als Versie** om de activa in zijn origineel formaat en plaats te bewaren.
+
+   1. Om veelvoudige pagina&#39;s of één enkele pagina onder veelvoudige pagina&#39;s te bewaren, klik **sparen als Nieuwe Activa**. Met deze actie exporteert u de enkele of meerdere elementen naar een willekeurige map en slaat u deze op als nieuwe elementen of elementen in de oorspronkelijke of een andere indeling.
 
 1. In het dialoogvenster Opslaan:
    1. Ga een naam voor het dossier op **sparen als** gebied in.
