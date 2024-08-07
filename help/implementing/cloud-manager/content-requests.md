@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Variaties in aanvragen voor inhoud van Cloud Servicen {#content-requests-variances}
 
-De verzoeken van de inhoud kunnen variaties binnen de analytische rapporteringshulpmiddelen van een organisatie zoals samengevat in de volgende lijst hebben. In het algemeen, *gebruiken geen* analysehulpmiddelen die gegevens als cliënt-zijinstrumentatie verzamelen om over het aantal inhoudverzoeken voor een bepaalde plaats te rapporteren, eenvoudig omdat zij vaak van gebruikerstoestemming afhangen om worden teweeggebracht, daarom ontbrekend een significante fractie van het verkeer. De hulpmiddelen van de analyse die gegevensserver-kant in logboekdossiers verzamelen, of CDN- rapporten voor klanten die hun eigen CDN bovenop AEM as a Cloud Service toevoegen, zullen betere tellingen verstrekken. Voor het melden van paginameningen en hun bijbehorende prestaties, is de [ Dienst van de Gegevens van de Adobe RUM ](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) de Adobe geadviseerde optie.
+De verzoeken van de inhoud kunnen variaties binnen de analytische rapporteringshulpmiddelen van een organisatie zoals samengevat in de volgende lijst hebben. In het algemeen, *gebruiken geen* analysehulpmiddelen die gegevens als cliënt-zijinstrumentatie verzamelen om over het aantal inhoudverzoeken voor een bepaalde plaats te rapporteren, eenvoudig omdat zij vaak van gebruikerstoestemming afhangen om worden teweeggebracht, daarom ontbrekend een significante fractie van het verkeer. De hulpmiddelen van de analyse die gegevensserver-kant in logboekdossiers verzamelen, of CDN- rapporten voor klanten die hun eigen CDN bovenop AEM as a Cloud Service toevoegen, zullen betere tellingen verstrekken.
 
 | Reden voor variantie | Toelichting |
 |---|---|
