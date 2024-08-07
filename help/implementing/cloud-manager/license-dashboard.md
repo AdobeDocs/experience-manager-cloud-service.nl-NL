@@ -5,16 +5,23 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
 
+
 # Licentiedashboard {#license-dashboard}
 
 Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-productrechten die beschikbaar zijn voor uw organisatie of huurder.
+
+>[!IMPORTANT]
+>
+>Het licentiedashboard geldt alleen voor de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het vergunningsdashboard.
+>
+>Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), gelieve het document [ te zien navigerend Cloud Manager UI.](/help/implementing/cloud-manager/navigation.md#program-cards)
 
 ## Overzicht {#overview}
 
@@ -32,8 +39,8 @@ Ga als volgt te werk om het licentiedashboard te openen.
 >Een gebruiker in de **rol van de BedrijfsEigenaar** moet worden het programma geopend om het Dashboard van de Vergunning te bekijken.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
-
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, schakelaar aan de **Vergunning** tabel.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, ontgrendel of klik de hamburger menuknoop op de [ Kopbal van Cloud Manager.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) De tabbladen worden dan weergegeven.
+1. Tik of klik de **optie van de Vergunning** in het lusje.
 
 ![ Dashboard van de Vergunning ](assets/license-dashboard.png)
 
@@ -41,18 +48,56 @@ Het dashboard bestaat uit drie gedeelten die u laten zien:
 
 * **Oplossingen** - Deze sectie vat welke oplossingen samen die u zoals Plaatsen of Assets hebt vergunning gegeven.
 * **toe:voegen-ons** - Deze sectie vat welke toe:voegen-ons aan uw vergunning gegeven oplossingen samen die u beschikbaar hebt.
-* **zandbak &amp; de Milieu&#39;s van de Ontwikkeling** - Deze sectie vat welke milieu&#39;s samen die u beschikbaar hebt.
+* **Andere Entitlements** - Deze sectie vat samen welke zandbak en dev milieu evenals andere rechten die binnen uw huurder kunnen worden verbruikt.
 
-Elke sectie vat samen wat beschikbaar is en hoe het, als bij allen wordt gebruikt. Momenteel slechts worden de oplossingen van Plaatsen getoond zelfs als andere oplossingen in de huurder bestaan.
+Elke sectie vat samen wat beschikbaar is en hoe het, als bij allen wordt gebruikt. Momenteel slechts worden de Plaatsen en de oplossingen van Assets getoond zelfs als andere oplossingen in de huurder bestaan.
 
 * De **kolom van de Status** toont het aantal ongebruikte rechten tegenover het totaal beschikbaar voor de huurder.
 * **die op** wordt gevormd wijst op de programma&#39;s waarop de oplossingsbevoegdheid is toegepast.
    * Een recht wordt beschouwd als gebruikt slechts wanneer een productiemilieu is gecreeerd of als één bestaat, als een updatepijpleiding op het is in werking gesteld.
-* De **kolom van het Gebruik** toont de inhoudsverzoeken die in de afgelopen 12 maanden als grafiek worden verbruikt wanneer geklikt.
+   * Slechts een beperkt aantal programma&#39;s wordt afzonderlijk vermeld in de kolom, de rest wordt vertegenwoordigd door een `+x` -item.
+   * Houd de muisaanwijzer boven het item `+x` voor een pop-up met de details van alle programma&#39;s.
+* De **kolom van het Gebruik** {toont a **[het gebruiksdetails van de Mening](#view-usage-details)** knoop om gebruiksstatistieken voor de oplossing te tonen.
 
 >[!TIP]
 >
 >Leren hoe te om uw rechten van de Adobe over uw volledige organisatie van Admin Console te beheren, zie het [ overzicht van de Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
+
+## Gebruiksgegevens weergeven {#view-usage-details}
+
+De **het gebruiksdetails van de Mening** knoop geeft toegang tot het 2} venster van de Details van het Gebruik van de gekozen oplossing **.** In dit venster vindt u een gedetailleerde uitsplitsing, inclusief grafieken, van het gebruik van uw oplossing. Hoe dat gebruik wordt gemeten, hangt af van de gekozen oplossing.
+
+### Gebruiksgegevens sites {#sites-usage-details}
+
+Het **venster van de het gebruikdetails van Plaatsen**, stelt grafieken voor die een overzicht van het gebruik van uw vergunningen geven van Plaatsen die op [ worden gebaseerd inhoudsverzoeken.](#what-is-a-content-request)
+
+![ het venster van de het gebruikdetails van Plaatsen ](assets/sites-usage-details.png)
+
+De linkerkant van het venster stelt een cirkeldiagram voor dat de contractverdeling voor het contractjaar toont dat in het **het contractjaar van de Mening** dropdown wordt geselecteerd.
+
+De rechterzijde van het venster geeft een vlakgrafiek weer waarin het gebruik per programma in de loop van de tijd voor het geselecteerde contractjaar wordt uitgesplitst. Een muisaanwijzer toont een pop-up met details per programma voor het geselecteerde punt in de tijd.
+
+### Assets-gebruiksgegevens {#assets-usage-details}
+
+Het **venster van de gebruiksdetails van Assets**, stelt grafieken voor die een overzicht geven van het gebruik van uw die vergunningen van Assets op [ worden gebaseerd opslag ](#storage) en [ standaardgebruikers.](#standard-users) Selecteer het juiste tabblad om te schakelen tussen de weergaven.
+
+Voor zowel opslag als standaardgebruikersmeningen, kunt u het **Type van Milieu** dropdown gebruiken om de mening tussen productie, stadium, en ontwikkelomgevingen van een knevel te voorzien.
+
+#### Opslag {#storage}
+
+![ het venster van de gebruiksdetails van Assets voor opslag ](assets/assets-usage-details-storage.png)
+
+De linkerkant van het venster stelt een cirkeldiagram voor dat de contractverdeling voor het contractjaar toont dat in het **het contractjaar van de Mening** dropdown wordt geselecteerd.
+
+De rechterzijde van het venster geeft een vlakgrafiek weer waarin het gebruik per programma in de loop van de tijd voor het geselecteerde contractjaar wordt uitgesplitst. Een muisaanwijzer toont een pop-up met details per programma voor het geselecteerde punt in de tijd.
+
+#### Standaardgebruikers {#standard-users}
+
+![ het venster van de gebruiksdetails van Assets voor standaard-gebruikers ](assets/assets-usage-details-standard-users.png)
+
+De linkerkant van het venster stelt een cirkeldiagram voor dat de contractverdeling voor het contractjaar toont dat in het **het contractjaar van de Mening** dropdown wordt geselecteerd.
+
+De rechterzijde van het venster geeft een vlakgrafiek weer waarin het gebruik per programma in de loop van de tijd voor het geselecteerde contractjaar wordt uitgesplitst. Een muisaanwijzer toont een pop-up met details per programma voor het geselecteerde punt in de tijd.
 
 ## Veelgestelde vragen {#faq}
 
