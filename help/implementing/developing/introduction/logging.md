@@ -4,7 +4,7 @@ description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebru
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 0%
@@ -617,9 +617,9 @@ CDN de logboeken zullen aan Splunk voor nieuwe verzoeken van het steunkaartje do
 
 >[!NOTE]
 >
->De specifieke logboeken, en de specifieke Logboeken van de Gebruiker, kunnen niet aan Splunk door:sturen.
+>*Specifieke* logboeken, en *specifieke* Logboeken van de Gebruiker, kunnen niet aan Splunk door:sturen.
 >
->Alle logboeken zullen aan Splunk door:sturen, waar om het even welk verder filtreren door de klant kan worden gedaan die op hun vereisten wordt gebaseerd.
+>**Alle** logboeken zullen aan Splunk door:sturen, waar om het even welk verder filtreren door de klant kan worden gedaan die op hun vereisten wordt gebaseerd.
 
 ### Splunk Forwarding inschakelen {#enabling-splunk-forwarding}
 
