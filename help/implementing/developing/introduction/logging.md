@@ -4,9 +4,9 @@ description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebru
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
+source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2829'
 ht-degree: 0%
 
 ---
@@ -614,6 +614,12 @@ Klanten die Splunk-accounts hebben, kunnen via een ticket voor klantenondersteun
 De netwerkbandbreedte verbonden aan logboeken die naar Splunk worden verzonden wordt beschouwd als deel van het I/O gebruik van het Netwerk van de klant.
 
 CDN de logboeken zullen aan Splunk voor nieuwe verzoeken van het steunkaartje door:sturen worden doorgestuurd; de klanten die reeds Splunk hebben toegelaten zullen CDN- logboeken in de toekomst kunnen toevoegen.
+
+>[!NOTE]
+>
+>De specifieke logboeken, en de specifieke Logboeken van de Gebruiker, kunnen niet aan Splunk door:sturen.
+>
+>Alle logboeken zullen aan Splunk door:sturen, waar om het even welk verder filtreren door de klant kan worden gedaan die op hun vereisten wordt gebaseerd.
 
 ### Splunk Forwarding inschakelen {#enabling-splunk-forwarding}
 
