@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4f5346200499f125ea986bc094446359ed10bd81
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -34,15 +34,20 @@ De volgende vertaalverkopers verstrekken een implementatie van AEM API voor vert
 
 * [Microsoft](connect-ms-translator.md)
 * [ Translations.com ](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [ De Technologieën van de Bekleding Tablet ](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [ Lionbridge ](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [ Memsource ](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
-* [ Cloudwords ](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [ de Wolk van XTM ](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
-* [ Lingotek ](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-<!-- THIS URL IS 404 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html) -->
+* [ Memsource ](https://exchange.adobe.com/apps/ec/103166/memsource-connector-for-adobe-experience-manager)
+* [ de Wolk van XTM ](https://exchange.adobe.com/apps/ec/105037/xtm-connect-for-adobe-experience-manager)
+* [ Lingotek ](https://exchange.adobe.com/apps/ec/90088/lingotek-collaborative-translation-platform)
+* [ RWS ](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
 * [ Smartling ](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-* [ Systran ](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
+
+>[!NOTE]
+>
+>Bekijk de volgende pagina&#39;s voor de meest recente lijst met aanbieders van vertalingen voor mensen en machines:
+>
+>* [ AEM Menselijke Vertaling ](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=aem+human+translation&amp;sort=RELEVANCE)
+>* [ AEM de Vertaling van de Machine ](https://exchange.adobe.com/apps/browse/ec?q=AEM+machine+translation&amp;product=All&amp;partnerLevel=All&amp;sort=RELEVANCE)
+>
 
 Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar creëren. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een wolkenconfiguratie voor de Vertaalschakelaar Microsoft®, zie [ Integrerend met Vertaler Microsoft® ](connect-ms-translator.md).
 
