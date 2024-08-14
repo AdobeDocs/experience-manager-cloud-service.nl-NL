@@ -1,20 +1,19 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service
-description: Dit zijn de opmerkingen bij de release voor Cloud Manager 2024.7.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release voor Cloud Manager 2024.8.0 in Adobe Experience Manager as a Cloud Service
+description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.8.0 in AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d9f5296a2e79ee5560d1ede967b3eb2155cd151
+source-git-commit: bf8bab5a195dde6cf15a2fd52e51d58c0215fdf3
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release voor Cloud Manager 2024.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager 2024.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 2024.7.0 in AEM as a Cloud Service gepubliceerd.
+Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 2024.8.0 in AEM as a Cloud Service gepubliceerd.
 
 >[!NOTE]
 >
@@ -22,47 +21,40 @@ Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 20
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2024.7.0 in AEM as a Cloud Service is 18 juli 2024. De volgende release is gepland voor 12 augustus 2024.
+De releasedatum voor Cloud Manager versie 2024.8.0 in AEM as a Cloud Service is 12 augustus 2024. De volgende release is gepland voor 14 september 2024.
 
-## Wat is er nieuw? {#what-is-new}
+## Nieuwe functies {#what-is-new}
 
-* De [ productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) en [ niet-productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) trekker **op de Veranderingen van het Git** om de pijpleiding op te starten begaat is nu beschikbaar voor [ privé bewaarplaatsen.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-   * Dit zal gefaseerd worden uitgevoerd en medio augustus voltooid zijn.
-* Wanneer het toevoegen van een [ Adobe-geleid DV certificaat, ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) u één enkel certificaat kunt nu toevoegen dat veelvoudige domeinen in plaats van het creëren van een certificaat voor elk domein behandelt.
-* De oplossingen die geen [ extra hebben publiceren gebieden ](/help/operations/additional-publish-regions.md) kunnen nu aan een programma worden toegevoegd zolang het programma minstens een oplossing van Plaatsen of van Forms op het van toepassing is.
-* De oplossingen die geen [ 99.99% SLA ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) hebben kunnen nu aan een programma worden toegevoegd zolang het programma minstens een oplossing van Plaatsen of van Forms op het van toepassing is.
-* Het [ Dashboard van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md) is op een aantal manieren verbeterd.
-   * Audits worden nu uitgevoerd tegen `.com` eindpunten via CDN, waarbij de vorige `.net` -benadering wordt vervangen.
-      * Deze verandering simuleert echte gebruikerservaring nauwkeuriger en helpt u meer geïnformeerde besluiten over het beheren en optimaliseren van uw website nemen.
-   * Er zijn meerdere verbeteringen aangebracht in de gebruikersinterface van de Experience Audit, waaronder:
-      * Er is een trendweergave van prestaties, aanbevolen procedures, SEO en toegankelijkheid toegevoegd.
-      * De koppeling voor het RAW-rapport in Lighthouse is nu intuïtiever zichtbaar, rechtstreeks in het deelvenster met details voor momentopnamen scannen.
-      * De sectie met aanbevelingen voor Lighthouse is uitgebreid.
-   * De PWA-waarde is verwijderd in overeenstemming met Lightroom-versie 12.0.0, waardoor deze waarde is verwijderd.
-* [ Het AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) is bijgewerkt aan [ versie 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+* [ extra publiceer gebieden ](/help/operations/additional-publish-regions.md) en a [ 99.99% SLA ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (de Overeenkomst van het Niveau van de Dienst) zijn nu beschikbaar voor AEM Forms as a Cloud Service.
+   * Deze verbetering laat u hogere SLAs met verhoogde uptime en lagere latentie bereiken, die beste-in-klassenervaringen voor uw globaal verdeelde gebruikers verzekert.
 
-## Programma voor vroegtijdige adoptie {#early-adoption}
+## Programma voor vroegtijdige goedkeuring {#early-adoption}
 
 Een kans om een aantal van de komende eigenschappen te testen, maakt deel uit van het programma van de Adobe voor vroegtijdige goedkeuring.
 
 ### Ondersteuning voor Edge Delivery Services in Cloud Manager {#edge-delivery-services}
 
-Als u Edge Delivery Services als deel van Adobe Experience Manager Sites in licentie hebt gegeven, [ kunt u nu aan boord van uw plaats met Edge Delivery Services direct in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery-services.md) gaan en het gebruiken van een geleide, zelfbediening ervaring gaan.
+Als u Edge Delivery Services als deel van AEM Sites in licentie hebt gegeven, [ kunt u nu aan boord van uw plaats met Edge Delivery Services direct in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery-services.md) gaan en het gebruiken van een geleide, zelfbediening ervaring gaan.
 
-Dit maakt een verenigde ervaring voor al uw AEM eigenschappen mogelijk, die consistentie met alle kritieke werkschema&#39;s met inbegrip van het beheer van domeinnamen, SSL certificaatbeheer, en afbeeldingen CDN verzekeren.
+Dit vermogen verstrekt een verenigde ervaring voor al uw AEM eigenschappen. Het verzekert consistentie over kritieke werkschema&#39;s zoals het beheer van domeinnamen, SSL certificaatbeheer, en afbeeldingen CDN.
 
 Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `aemcs-cmedgedelsvs-program-adopter@adobe.com` via het e-mailadres dat bij uw Adobe ID hoort.
 
-### DV-certificaten (Domain Validated)
+### DV-certificaten (Domain Validated, domein)
 
-Cloud Manager staat nu u toe [ zelfbediening produceert en beheert domein bevestigde (DV) SSL certificaten.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Dit biedt u de snelste, eenvoudigste en voordeligste oplossing om een veilige website voor uw onlinebedrijf te maken.
+Met Cloud Manager, kunt u nu zelfbediening [ produceren en domein bevestigde (DV) SSL certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) beheren. Deze mogelijkheid biedt u de snelste, eenvoudigste en voordeligste oplossing om een veilige website voor uw online bedrijf te maken.
 
-Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `Grp-aemcs-dv-dert-adopter@adobe.com` via het e-mailadres dat bij uw Adobe ID hoort.
+Als u deze nieuwe functie wilt testen en feedback wilt geven, stuurt u een e-mail naar `Grp-aemcs-dv-dert-adopter@adobe.com` met het e-mailadres dat is gekoppeld aan uw Adobe ID.
 
 ### Experience Audit Dashboard {#experience-audit-dashboard}
 
 [ het dashboard van de Controle van de Ervaring van Cloud Manager ](/help/implementing/cloud-manager/experience-audit-dashboard.md) omvat een trended mening van uw scores van paginaprestaties samen met inzichten en aanbevelingen om u te helpen hen verbeteren. De Experience Audit is opgenomen als een stap in de Cloud Manager-productiepijplijn.
 
-Het dashboard gebruikt Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het tegen om het even welke Web-pagina in werking stellen, openbaar, of het vereisen van authentificatie. Er zijn audits voor prestaties, toegankelijkheid, progressieve webapps, SEO en meer.
+Het dashboard gebruikt Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het gebruiken om het even welke Web-pagina, of openbaar of vereisen authentificatie te controleren. Het biedt beoordelingen voor prestaties, toegankelijkheid, progressieve web-apps, SEO en meer.
 
-Geïnteresseerd in het testen van het nieuwe dashboard? Om aan de slag te gaan, stuurt u een e-mail naar `aem-lighthouse-pilot@adobe.com` vanuit de e-mail die aan uw Adobe ID is gekoppeld.
+Vreemd om het nieuwe dashboard uit te proberen? Stuur eerst een e-mail naar `aem-lighthouse-pilot@adobe.com` met het e-mailbericht dat aan uw Adobe ID is gekoppeld.
+
+## Opgeloste problemen
+
+* Een zeldzame kwestie werd verbeterd waar de pijpleidingsstappen bleken te lopen nadat de pijpleiding werd geschrapt.
+* Een probleem met configuratiepijpleidingen waarbij de status `FAILED` in zeldzame gevallen onjuist wordt weergegeven, is opgelost.
