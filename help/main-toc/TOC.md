@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1baa7f29c6e15af11347debdd341f9972c06e83
+source-git-commit: bd5f77e8e27b55c538bbe50d28ae56f6e983f541
 workflow-type: tm+mt
-source-wordcount: '5315'
+source-wordcount: '5320'
 ht-degree: 3%
 
 ---
@@ -342,7 +342,7 @@ ht-degree: 3%
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + [Reis van de Auteur van de Inhoud zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html) Reis van de Auteur van de Inhoud zonder hoofd [
       + Projecten {#projects}
          + [Werken met projecten](/help/sites-cloud/authoring/projects/overview.md)
          + [Projecten beheren](/help/sites-cloud/authoring/projects/managing.md)
@@ -859,6 +859,7 @@ ht-degree: 3%
          + [URL&#39;s configureren voor SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [Cacheopties](/help/commerce-cloud/configuring/caching.md)
          + [Aangepaste HTTP-headers](/help/commerce-cloud/configuring/custom-http-headers.md)
+         + [Winkelwagentje en Dispatcher Setup](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
       + Ontwikkeling {#developing}
          + [Ontwikkelen met AEM Cloud Service SDK](/help/commerce-cloud/develop.md)
          + [CIF opmaken](/help/commerce-cloud/customizing/style-cif-component.md)
