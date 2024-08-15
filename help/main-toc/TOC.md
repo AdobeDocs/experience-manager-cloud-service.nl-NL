@@ -347,7 +347,7 @@ ht-degree: 3%
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html) Reis van de Auteur van de Inhoud zonder hoofd [
+         + [Reis van de Auteur van de Inhoud zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + Projecten {#projects}
          + [Werken met projecten](/help/sites-cloud/authoring/projects/overview.md)
          + [Projecten beheren](/help/sites-cloud/authoring/projects/managing.md)
