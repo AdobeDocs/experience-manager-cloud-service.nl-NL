@@ -4,9 +4,9 @@ description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen z
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '5744'
+source-wordcount: '5743'
 ht-degree: 0%
 
 ---
@@ -787,7 +787,7 @@ Als een geavanceerde voorzien van een netwerkconfiguratie reeds in het primaire 
 De procedure is grotendeels vergelijkbaar met de voorgaande instructies. Nochtans, als het productiemilieu nog niet voor geavanceerd voorzien van een netwerk is toegelaten, is er een kans om de configuratie te testen door het in een het opvoeren milieu eerst toe te laten:
 
 1. Creeer voorzien van een netwerkinfrastructuur voor alle gebieden door de vraag van de POST aan [ Cloud Manager creeert de Infrastructuur API van het Netwerk ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). Het enige verschil in de configuratie JSON van de nuttige lading met betrekking tot primair gebied is het gebiedbezit.
-1. Voor de het opvoeren milieu, laat en vormt het milieu scoped geavanceerde voorzien van een netwerk toe door `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` in werking te stellen. Voor meer informatie, zie de API documentatie [ hier ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. Voor de het opvoeren milieu, laat en vormt het milieu scoped geavanceerde voorzien van een netwerk toe door `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` in werking te stellen. Voor meer informatie, zie [ de API documentatie ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. Sluit indien nodig externe infrastructuur af, bij voorkeur met FQDN (bijvoorbeeld `p1234.external.adobeaemcloud.com` ). U kunt het anders doen door IP adres
 1. Als het het opvoeren milieu zoals verwacht werkt, laat en vormt de milieu-scoped geavanceerde voorzien van een netwerkconfiguratie voor productie toe.
 

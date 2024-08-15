@@ -4,9 +4,9 @@ description: Op deze pagina wordt beschreven hoe u kanalen in Screens as a Cloud
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ De volgende malplaatjes zijn beschikbaar terwijl het gebruiken van **creeer** ka
 
 Met deze functie kunt u een standaard activeringsschema voor een kanaal definiëren en dit standaard gebruiken voor elke toewijzing voor een weergave. Dit verstrekt een methode zodat de lastige programmadefinitie niet te hoeven worden herhaald.
 
-1. Navigeer aan de Leverancier van de Diensten van Screens van [ hier ](https://experience.adobe.com/screens).
+1. Navigeer aan de [ Leverancier van de Diensten van Screens ](https://experience.adobe.com/screens).
 
 ### Standaardtoewijzingsdetails maken voor een kanaal {#create-default}
 

@@ -4,9 +4,9 @@ description: Meer informatie over de basisbeginselen van Caching in AEM as a Clo
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2897'
 ht-degree: 0%
 
 ---
@@ -245,7 +245,7 @@ Voor milieu&#39;s die in Oktober 2023 of recenter worden gecreeerd, aan betere g
 
 Verzend een ondersteuningsticket als u dit gedrag wilt uitschakelen.
 
-Voor milieu&#39;s die vóór Oktober 2023 worden gecreeerd, wordt het geadviseerd om het 2} bezit van de configuratie van Dispatcher te vormen `ignoreUrlParams` zoals [ hier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters) wordt gedocumenteerd.
+Voor milieu&#39;s die vóór Oktober 2023 worden gecreeerd, wordt het geadviseerd om het 2} bezit van de configuratie van Dispatcher te vormen `ignoreUrlParams`; zie [ Vormend Dispatcher - het Negeren van Parameters URL ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 Er zijn twee mogelijkheden om marketingparameters te negeren. (Waar de eerste voorkeur cachebusting via queryparameters negeert):
 

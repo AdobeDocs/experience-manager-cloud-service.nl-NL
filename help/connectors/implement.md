@@ -4,9 +4,9 @@ description: Meer informatie over connectoren, wat ze kunnen doen en hoe u deze 
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '936'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ AEM as a Cloud Service-pakketten, waarvan connectors voorbeelden zijn, hebben ee
 * `/apps`
 * `/content` en `/conf`
 
-De schakelaars zouden aan deze verpakkingsrichtlijnen moeten houden, die in [ dit artikel ](/help/implementing/developing/introduction/aem-project-content-package-structure.md) worden beschreven. De bestaande schakelaars zouden moeten worden gerefactored om, eveneens in overeenstemming te zijn.
+De schakelaars zouden aan deze verpakkingsrichtlijnen moeten houden, die onder [ worden beschreven AEM de Structuur van het Project ](/help/implementing/developing/introduction/aem-project-content-package-structure.md). De bestaande schakelaars zouden moeten worden gerefactored om, eveneens in overeenstemming te zijn.
 
 Daarnaast moet alleen Adobe code schrijven naar `/libs` , met klanten en partners die schrijven naar `/apps` .
 

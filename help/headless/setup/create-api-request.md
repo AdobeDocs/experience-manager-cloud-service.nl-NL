@@ -4,9 +4,9 @@ description: Leer hoe u de GraphQL API kunt gebruiken voor koploze levering van 
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Voordat de GraphQL API&#39;s kunnen worden gebruikt, moet een GraphQL-eindpunt w
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-Meer details over het toelaten van [ eindpunten van GraphQL kunnen hier ](/help/headless/graphql-api/graphql-endpoint.md) worden gevonden.
+Voor meer details over het toelaten van eindpunten van GraphQL zie [ GraphQL eindpunten in AEM beheren ](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Inhoud opvragen met GraphQL met GraphiQL
 

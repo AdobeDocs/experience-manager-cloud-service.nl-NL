@@ -4,7 +4,7 @@ description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service e
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2745'
 ht-degree: 0%
@@ -184,7 +184,7 @@ Bij lokale ontwikkeling (met behulp van de SDK) kunnen `/apps` en `/libs` rechts
 
 Klanten hebben toegang tot de CRXDE-lijst in de ontwikkelomgeving van de auteur, maar niet in het stadium of de productie. Er kan niet bij uitvoering naar de onveranderlijke opslagplaats (`/libs`, `/apps` ) worden geschreven, zodat dit tot fouten leidt.
 
-In plaats daarvan kan de Repository Browser worden gestart vanuit de AEM as a Cloud Service Developer Console, waarmee een alleen-lezen weergave in de opslagplaats wordt geboden voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen. Lees meer over Browser van de Bewaarplaats [ hier ](/help/implementing/developing/tools/repository-browser.md).
+In plaats daarvan kan de Repository Browser worden gestart vanuit de AEM as a Cloud Service Developer Console, waarmee een alleen-lezen weergave in de opslagplaats wordt geboden voor alle omgevingen op auteur-, publicatie- en voorvertoningslagen. Voor meer informatie zie [ Browser van de Bewaarplaats ](/help/implementing/developing/tools/repository-browser.md).
 
 Er is een set tools beschikbaar voor foutopsporing in AEM as a Cloud Service-ontwikkelomgevingen in de AEM as a Cloud Service Developer Console for RDE-, Dev-, stage- en productieomgevingen. De URL kan worden bepaald door de URL van de Auteur of Publish-service als volgt aan te passen:
 
@@ -194,7 +194,7 @@ Als sneltoets kunt u de volgende Cloud Manager CLI-opdracht gebruiken om de AEM 
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-Zie [ deze pagina ](/help/release-notes/home.md) voor meer informatie.
+Zie [ de Informatie van de Versie ](/help/release-notes/home.md) voor meer informatie.
 
 Ontwikkelaars kunnen statusinformatie genereren en diverse bronnen oplossen.
 

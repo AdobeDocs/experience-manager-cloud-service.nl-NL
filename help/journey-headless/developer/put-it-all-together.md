@@ -5,9 +5,9 @@ exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ De AEM SDK wordt gebruikt om aangepaste code te maken en in te voeren. Het is he
 
 Verschil van de AEM SDK, AEM **Koploze SDK** wordt geplaatst van bibliotheken die door cliënten kunnen worden gebruikt om met AEM Koploze APIs over HTTP snel en gemakkelijk in wisselwerking te staan.
 
-Voor meer informatie over de AEM Hoofdloze SDK, zie hier de [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
+Voor meer informatie zie [ AEM Koploze SDK ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
 
 ## Aanvullende ontwikkelingsinstrumenten {#additional-development-tools}
 
@@ -117,6 +117,6 @@ Ga uw AEM headless reis door het document [ te herzien hoe te met Uw Zwaarloze T
 * [ AEM Koploze SDK voor cliënt-zijbrowsers (JavaScript) ](https://github.com/adobe/aem-headless-client-js)
 * [ AEM Headless SDK voor server-side/Node.js (JavaScript) ](https://github.com/adobe/aem-headless-client-nodejs)
 * [ AEM Headless SDK voor Java™ ](https://github.com/adobe/aem-headless-client-java)
-* [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
+* [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
 * [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

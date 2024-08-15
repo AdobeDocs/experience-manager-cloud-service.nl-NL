@@ -4,7 +4,7 @@ description: Meer informatie over de gegevensstroom voor de levering van inhoud 
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -36,4 +36,4 @@ In de volgende secties vindt u meer informatie over de levering van inhoud:
 * [Caching](/help/implementing/dispatcher/caching.md)
 
 
-De informatie over replicatie van de auteursdienst aan de publicatiedienst is beschikbaar [ hier ](/help/operations/replication.md).
+Voor informatie over replicatie van de auteursdienst aan de publicatiedienst zie [ Replicatie ](/help/operations/replication.md).

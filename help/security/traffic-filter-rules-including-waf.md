@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3937'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ De filterregels van het verkeer kunnen worden gebruikt om verzoeken bij de laag 
 
 De meeste van deze verkeersfilterregels zijn beschikbaar aan alle klanten van AEM as a Cloud Service Sites en van Forms. Zij werken hoofdzakelijk op verzoekeigenschappen en verzoekkopballen, met inbegrip van IP, hostname, weg, en gebruikersagent.
 
-Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of een vergunning van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het het verkeersfilter van WAF (of de regels van WAF voor kort) en hebben toegang tot de [ Vlaggen van WAF ](#waf-flags-list) die later in dit artikel worden beschreven.
+Een subcategorie van verkeersfilterregels vereist of een vergunning van Uitgebreide Veiligheid of van de Bescherming WAF-DDoS. Deze krachtige regels zijn gekend als het verkeersfilterregels van het het verkeersfilter van WAF (of de regels van WAF voor kort) en hebben toegang tot de [ Vlaggen van WAF ](#waf-flags-list) die later in dit artikel worden beschreven.
 
 De filterregels van het verkeer kunnen via Cloud Manager config pijpleidingen worden opgesteld om, stadium, en de types van productiemilieu in productie (niet zandbak) programma&#39;s te ontwikkelen. Steun voor RDEs zal in de toekomst komen.
 
@@ -101,7 +101,7 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
          action: block
    ```
 
-   Zie het [ config pijpleidingsartikel ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de `data` knoop. De `kind` bezitswaarde zou aan *CDN* moeten worden geplaatst en de versie zou aan `1` moeten worden geplaatst.
+   Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving van de eigenschappen boven de `data` knoop. De `kind` bezitswaarde zou aan *CDN* moeten worden geplaatst en de versie zou aan `1` moeten worden geplaatst.
 
 
 1. Als WAF-regels een licentie hebben, moet u de functie in Cloud Manager inschakelen, zoals hieronder wordt beschreven voor zowel de nieuwe als de bestaande programmascenario&#39;s.
@@ -110,7 +110,7 @@ Het volgende is een geadviseerd proces op hoog niveau van begin tot eind voor he
 
    1. Om WAF op een bestaand programma te vormen, [ geef uw programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) en op het **3} lusje van de Veiligheid {uit uncheck of controleer op elk ogenblik de** WAF-DDOS **optie.**
 
-1. Creeer een config pijpleiding in Cloud Manager, zoals die in [ wordt beschreven config pijpleidingsartikel.](/help/operations/config-pipeline.md#managing-in-cloud-manager) de pijpleiding zal een hoogste niveau `config` omslag met het `cdn.yaml` dossier verwijzen dat ergens onder wordt geplaatst, zoals [ hier wordt beschreven ](/help/operations/config-pipeline.md#folder-structure).
+1. Creeer een config pijpleiding in Cloud Manager, zoals die in [ wordt beschreven config pijpleidingsartikel.](/help/operations/config-pipeline.md#managing-in-cloud-manager) de pijpleiding zal een hoogste niveau `config` omslag met het `cdn.yaml` dossier verwijzen dat ergens onder wordt geplaatst, zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
 
 ## Syntaxis verkeersfilterregels {#rules-syntax}
 
@@ -215,7 +215,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* De Adobe adviseert het gebruik van [ regex101 ](https://regex101.com/) en [ Fastly verdwijnt ](https://fiddle.fastly.dev/) wanneer het werken met regex. U kunt meer over leren hoe de Snelle handvatten regex in dit [ artikel ](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* De Adobe adviseert het gebruik van [ regex101 ](https://regex101.com/) en [ Fastly verdwijnt ](https://fiddle.fastly.dev/) wanneer het werken met regex. U kunt meer over leren hoe de Snelle handvatten regex van [ dure documentatie - Reguliere uitdrukkingen in VCL van de Snelheid {](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Handelingsstructuur {#action-structure}
@@ -348,7 +348,7 @@ data:
 
 **Voorbeeld 4**
 
-Deze regel blokkeert aanvragen om een pad `/block-me` bij publicatie en blokkeert elke aanvraag die overeenkomt met een patroon `SQLI` of `XSS` . Dit voorbeeld omvat een het verkeersfilterregels van WAF, die verwijzingen `SQLI` en `XSS` [ Vlaggen van WAF ](#waf-flags-list), en zo vereist een afzonderlijke vergunning.
+Deze regel blokkeert aanvragen om een pad `/block-me` bij publicatie en blokkeert elke aanvraag die overeenkomt met een patroon `SQLI` of `XSS` . Dit voorbeeld omvat een het verkeersfilterregels van WAF, die `SQLI` en `XSS` [ Vlaggen van WAF ](#waf-flags-list) van verwijzingen voorzien, en zo een afzonderlijke vergunning vereist.
 
 ```
 kind: "CDN"
@@ -545,7 +545,7 @@ De regels gedragen zich als volgt:
 
 * De door de klant gedeclareerde regelnaam van overeenkomende regels wordt vermeld in het kenmerk `match` .
 * Het attribuut `action` bepaalt of de regels blokkeren, toestaan, of logboek.
-* Als de WAF in licentie wordt gegeven en ingeschakeld, geeft het kenmerk `waf` alle WAF-markeringen weer (bijvoorbeeld SQLI) die zijn gedetecteerd. Dit is waar ongeacht of de vlaggen van WAF in om het even welke regels werden vermeld. Dit moet inzicht verschaffen in mogelijke nieuwe regels die moeten worden gedeclareerd.
+* Als de WAF een licentie heeft en is ingeschakeld, geeft het kenmerk `waf` alle eventuele WAF-markeringen weer (bijvoorbeeld SQLI) die zijn gedetecteerd. Dit geldt ongeacht of de WAF-vlaggen in enige regelgeving zijn vermeld. Dit moet inzicht verschaffen in mogelijke nieuwe regels die moeten worden gedeclareerd.
 * Als er geen door de klant gedeclareerde regels overeenkomen en er geen waf-regels overeenkomen, is de eigenschap `rules` leeg.
 
 Zoals eerder vermeld, verschijnen de regelovereenkomsten van WAF slechts in CDN- logboeken voor CDN missen en overgaan, niet klappen.

@@ -4,9 +4,9 @@ description: Begrijp de vereiste verificatie voor externe Adobe Experience Manag
 feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ Alle die verzoeken worden gemaakt gebruikend het toegangstoken worden gemaakt *d
 
 Dit gebruikersaccount houdt in dat u moet controleren of de account de machtigingen heeft die vereist zijn om GraphQL-query&#39;s uit te voeren.
 
-U kunt deze toestemmingen controleren door GraphiQL op de lokale instantie te gebruiken. Meer details over [ toestemmingen kunnen hier ](/help/headless/security/permissions.md) worden gevonden.
+U kunt deze toestemmingen controleren door GraphiQL op de lokale instantie te gebruiken. Voor meer details zie [ overwegingen van de Toestemming voor hoofdloze inhoud ](/help/headless/security/permissions.md).

@@ -4,9 +4,9 @@ description: De Dispatcher is een caching- en beveiligingslaag voor Adobe Experi
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,4 @@ Het verzoek om Persisted query wordt ingediend tegen een verschillend eindpunt. 
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-U kunt blijvende query&#39;s aanvragen met `GET` door de reactie in de cache op Dispatcher- en CDN-niveau te plaatsen. Meer details over caching en geheim voorgeheugenongeldigverklaring kunnen [ hier ](/help/implementing/dispatcher/caching.md) worden gevonden.
+U kunt blijvende query&#39;s aanvragen met `GET` door de reactie in de cache op Dispatcher- en CDN-niveau te plaatsen. Meer details over caching en geheim voorgeheugenongeldigverklaring kunnen onder [ worden gevonden Inleiding aan Caching in AEM as a Cloud Service ](/help/implementing/dispatcher/caching.md).

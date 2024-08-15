@@ -4,9 +4,9 @@ description: Leer hoe te om caching voorwerpen uit het geheime voorgeheugen van 
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # De CDN-cache leegmaken {#cdn-purge-cache}
 
 Het zuiveren verwijdert een voorwerp uit het geheime voorgeheugen van de Adobe CDN, resulterend in toekomstige verzoeken die aan de oorsprong als geheim voorgeheugenmissen, eerder dan worden gediend van geheim voorgeheugen.
-Met AEM as a Cloud Service kunt u een token voor de paars-API configureren. Deze token kan vervolgens worden gebruikt in opschoonAPI-aanroepen. Lees het [ Vormen CDN Credentials en artikel van de Authentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijpleiding van Cloud Manager Config.
+Met AEM as a Cloud Service kunt u een token voor de paars-API configureren. Deze token kan vervolgens worden gebruikt in opschoonAPI-aanroepen. Lees [ het Vormen CDN Geloofsbrieven en Authentificatie ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om te leren hoe te om dit teken te vormen gebruikend de richtlijnen van de Authentificatie van de Pijpleiding van Cloud Manager Config.
 
 Er zijn drie ondersteunde variaties voor het wissen:
 
@@ -75,4 +75,4 @@ Houd er rekening mee dat de header `X-AEM-Purge` de waarde &#39;all&#39; moet be
 
 ## Interacties met de laag Apache/Dispatcher {#apache-layer}
 
-Zoals die in het [ artikel van de Stroom van de Levering van de Inhoud ](/help/implementing/dispatcher/overview.md) wordt beschreven, terugwint CDN inhoud van de laag Apache/Dispatcher, als het geheime voorgeheugen is verlopen. Dit houdt in dat u, voordat u een bron op de CDN wist, ervoor moet zorgen dat er ook een nieuwe versie van de inhoud beschikbaar is op de Dispatcher. Voor verdere details zie ook [ de Invalidatie van het Geheime voorgeheugen van Dispatcher ](/help/implementing/dispatcher/caching.md#disp).
+Zoals die onder [ de Stroom van de Levering van de Inhoud ](/help/implementing/dispatcher/overview.md) wordt beschreven, wint CDN inhoud van de laag Apache/Dispatcher terug, als het geheime voorgeheugen is verlopen. Dit houdt in dat u, voordat u een bron op de CDN wist, ervoor moet zorgen dat er ook een nieuwe versie van de inhoud beschikbaar is op de Dispatcher. Voor verdere details zie ook [ de Invalidatie van het Geheime voorgeheugen van Dispatcher ](/help/implementing/dispatcher/caching.md#disp).

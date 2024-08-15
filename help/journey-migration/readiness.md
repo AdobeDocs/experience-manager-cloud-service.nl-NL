@@ -4,9 +4,9 @@ description: Leer meer over de stappen die u moet ondernemen om ervoor te zorgen
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1907'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ AEM as a Cloud Service biedt veel nieuwe functies en mogelijkheden voor het behe
 
 Samen met deze verbeteringen zijn er verschillende verschillen ontstaan tussen installaties op locatie van AEM en Adobe Managed Services, in vergelijking met AEM as a Cloud Service.
 
-De lijst met items in de onderstaande tabel is de subset van de wijzigingen die het meest relevant zijn voor een migratie naar AEM as a Cloud Service. U kunt de volledige lijst van opmerkelijke veranderingen [ hier ](/help/release-notes/aem-cloud-changes.md) raadplegen.
+De lijst met items in de onderstaande tabel is de subset van de wijzigingen die het meest relevant zijn voor een migratie naar AEM as a Cloud Service. U kunt de volledige lijst van [ Notable Veranderingen in Adobe Experience Manager as a Cloud Service ](/help/release-notes/aem-cloud-changes.md) raadplegen.
 
 <table>
 <thead>
@@ -117,7 +117,7 @@ De lijst met items in de onderstaande tabel is de subset van de wijzigingen die 
   <tr>
     <td>Workflowstartprogramma's</td>
     <td></td>
-    <td>Verwijder om het even welke Lanceerders van het Werkschema die of uit-van-de-doos of de douaneWerkschema van het Activa van de Update DAM uit uw code teweegbrengen. <br> alle activa die in AEM as a Cloud Service worden geupload zullen door de Dienst van de Verwerking van Activa worden verwerkt. Voor douanestappen, zie <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> de Werkschema's van de Verwerking van Post </a> op hoe te opstelling en postverwerkingswerkschema's te vormen.</td>
+    <td>Verwijder om het even welke Lanceerders van het Werkschema die of uit-van-de-doos of de douaneWerkschema van het Activa van de Update DAM uit uw code teweegbrengen. <br> alle activa die in AEM as a Cloud Service worden geupload zullen door de Dienst van de Verwerking van Activa worden verwerkt. Voor douanestappen, zie <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> de Werkschema's van de Na-Verwerking </a> op hoe te opstelling en postverwerkingswerkschema's te vormen.</td>
   </tr>
   <tr>
     <td>Aangepaste stappen voor vertoning</td>

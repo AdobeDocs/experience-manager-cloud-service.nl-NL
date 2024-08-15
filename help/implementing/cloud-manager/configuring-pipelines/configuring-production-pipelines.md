@@ -6,9 +6,9 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ De pijpleiding wordt bewaard en u kunt uw pijpleidingen ](managing-pipelines.md)
 Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM toepassing op. In zulk een plaatsing kunt u verkiezen om **** één van de volgende soorten code te omvatten:
 
 * **Config** - vorm montages voor diverse eigenschappen op uw AEM milieu.
-   * Zie [ Gebruikend Artikel Config Pipelines ](/help/operations/config-pipeline.md) voor een lijst van gesteunde configuraties, die logboek het door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN omvat, en om hen in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
+   * Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md) voor een lijst van gesteunde configuraties, die logboek het door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN omvat, en om hen in uw bewaarplaats te beheren zodat zij behoorlijk worden opgesteld.
    * Wanneer het runnen van een gerichte plaatsingspijpleiding, zullen de configuraties worden opgesteld, op voorwaarde dat zij aan milieu, bewaarplaats, en tak worden bewaard u in de pijpleiding bepaalde.
    * Op elk ogenblik, kan er slechts één config pijpleiding per milieu zijn.
 * **Voorste Code van het Eind** - vorm JavaScript en CSS voor het vooreind van uw AEM toepassing.

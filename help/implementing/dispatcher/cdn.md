@@ -4,9 +4,9 @@ description: Leer hoe te om AEM-geleide CDN te gebruiken en hoe te om uw eigen C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1555'
 ht-degree: 4%
 
 ---
@@ -178,7 +178,7 @@ De AEM-beheerde CDN voegt kopballen aan elk verzoek met toe:
 >
 >Als er een klant-geleide CDN is, wijzen deze kopballen op de plaats van de klantenCDN volmachtsserver eerder dan de daadwerkelijke cliënt. Daarom voor klant-beheerde CDN, zouden de geolocatiekopballen door klanten CDN moeten worden beheerd.
 
-De waarden voor de landcodes zijn Alpha-2 die codes [ hier ](https://en.wikipedia.org/wiki/ISO_3166-1) worden beschreven.
+De waarden voor de landcodes zijn Alpha-2 codes die onder [ worden beschreven ISO 3166-1 ](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 De waarden voor de continentale codes zijn:
 

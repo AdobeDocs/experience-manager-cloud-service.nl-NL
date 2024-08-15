@@ -4,7 +4,7 @@ description: Gebruik het actiecentrum om incidenten en andere belangrijke inform
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Vanuit het Actions Center kunt u een specifiek programma en een specifieke omgev
 
 ## Configuratie {#configuration}
 
-Om het ontvangen E-mailberichten van het Centrum van Acties te vormen, creeer de Profielen van het Product die [ in dit artikel ](/help/journey-onboarding/notification-profiles.md) worden beschreven, namelijk Bericht van het Ongeval - Cloud Service en Proactief Bericht - Cloud Service. Wijs ook de juiste Adobe-id&#39;s van uw organisatie toe aan die profielen. Hierdoor kan een beheerder bepalen welke gebruikers in aanmerking komen om deze e-mailberichten te ontvangen.
+Om het ontvangen de e-mailberichten van het Centrum van Acties te vormen, creeer de Profielen van het Product zoals die onder [ Profielen van het Bericht ](/help/journey-onboarding/notification-profiles.md) worden beschreven, namelijk Bericht van het Ongeval - Cloud Service en Proactief Bericht - Cloud Service. Wijs ook de juiste Adobe-id&#39;s van uw organisatie toe aan die profielen. Hierdoor kan een beheerder bepalen welke gebruikers in aanmerking komen om deze e-mailberichten te ontvangen.
 
 >[!NOTE]
 >De e-mailberichten van het Centrum van acties functioneren op het organisatieniveau zodat zullen de abonnees berichten voor alle programma&#39;s en milieu&#39;s binnen die programma&#39;s ontvangen.
@@ -65,7 +65,7 @@ AEM as a Cloud Service heeft verschillende soorten meldingen, maar er wordt alle
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Operationele incidenten | Kritieke incidenten die onmiddellijke actie vereisen | Gebruiker toegewezen aan productprofiel &quot;Incident Notification - Cloud Service&quot; | X |
 | Proactieve aanbevelingen | Optimalisaties die moeten worden gepland | Gebruiker toegewezen aan productprofiel &quot;Proactieve kennisgeving - Cloud Service&quot; | X |
-| Cloud Manager-pijpleidingstatussen | Informatie over de toestand van uw pijpleidingen | Gebruiker met BedrijfsEigenaar, de Manager van het Programma, of de rollen van de Manager van de Plaatsing, &quot;Andere&quot;checkbox die in [ de Voorkeur van het Experience Cloud ](https://experience.adobe.com/preferences) wordt geselecteerd, zoals [ hier ](/help/implementing/cloud-manager/notifications.md) wordt beschreven. |                           |
+| Cloud Manager-pijpleidingstatussen | Informatie over de toestand van uw pijpleidingen | Gebruiker met BedrijfsEigenaar, de Manager van het Programma, of de rollen van de Manager van de Plaatsing, &quot;Andere&quot;checkbox die in [ de Voorkeur van het Experience Cloud ](https://experience.adobe.com/preferences) wordt geselecteerd, zie [ Meldingen ](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Ondersteunde berichttypen {#supported-notification-types}
 

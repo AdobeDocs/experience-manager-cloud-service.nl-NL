@@ -4,9 +4,9 @@ description: Meer informatie over onderhoudstaken in AEM as a Cloud Service en h
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 0%
 
 ---
@@ -222,11 +222,11 @@ Declareer een configuratiedossier en stel het op zoals die in de volgende stappe
 
 **1** creeer een dossier genoemd `mt.yaml` of gelijkaardig.
 
-**`config`** Plaats het dossier ergens onder een top niveauomslag genoemd  of gelijkaardig, zoals die in het [ wordt beschreven config pijpleidingsartikel.](/help/operations/config-pipeline.md#folder-structure)
+**`config`** plaats het dossier ergens onder een top niveauomslag genoemd  of gelijkaardig, zoals die onder [ wordt beschreven Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure).
 
 **3** - verklaar eigenschappen in het configuratiedossier, die omvatten:
 
-* a paar eigenschappen boven de gegevensknoop — zie het [ config pijpleidingsartikel ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving. De `kind` bezitswaarde zou *MaintenanceTasks* moeten zijn en de versie zou aan *1* moeten worden geplaatst.
+* a paar eigenschappen boven de gegevensknoop — zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#common-syntax) voor een beschrijving. De `kind` bezitswaarde zou *MaintenanceTasks* moeten zijn en de versie zou aan *1* moeten worden geplaatst.
 
 * een gegevensobject met zowel `versionPurge` - als `auditLogPurge` -objecten.
 

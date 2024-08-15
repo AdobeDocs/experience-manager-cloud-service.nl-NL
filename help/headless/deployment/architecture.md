@@ -4,9 +4,9 @@ description: Meer informatie over de architectuur op hoog niveau voor Adobe Expe
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Een typische AEM omgeving bestaat uit een Auteur Service, Publish Service en een
 
 * **Dispatcher** is een statische Webserver die met de AEM verzender module wordt uitgebreid. Het verstrekt caching mogelijkheden en een andere laag van veiligheid. De **Dispatcher** zit vóór de **Publish** en **Voorproef** diensten.
 
-Binnen een AEM as a Cloud Service-programma kunt u meerdere omgevingen hebben: Dev, Stage en Prod. Elk milieu zou zijn eigen unieke **Auteur**, **Publish**, en **Voorproef** diensten hebben. U kunt meer leren over het beheren van [ milieu&#39;s hier ](/help/implementing/cloud-manager/manage-environments.md)
+Binnen een AEM as a Cloud Service-programma kunt u meerdere omgevingen hebben: Dev, Stage en Prod. Elk milieu zou zijn eigen unieke **Auteur**, **Publish**, en **Voorproef** diensten hebben. Zie [ het Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.md) om meer te leren.
 
 ## Publish-model auteur
 

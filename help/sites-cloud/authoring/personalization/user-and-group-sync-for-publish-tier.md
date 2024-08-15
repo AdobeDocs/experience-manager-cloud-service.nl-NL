@@ -5,9 +5,9 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 54159c25b60277268ade16b437891f268873fecf
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ een verzoek aan de Klantenondersteuning met vermelding van het juiste programma 
 
 ## Machtigingen (gesloten gebruikersgroepen) {#permissions-closed-user-groups}
 
-Publish-rij toegangsbeleid, ook genoemd Gesloten Gebruikersgroepen (CUGs), wordt bepaald in de AEM auteur zoals [ hier wordt beschreven ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Als u bepaalde gedeelten of pagina&#39;s van een website van bepaalde gebruikers wilt beperken, past u de CUG&#39;s waar nodig toe met de auteur van de AEM, zoals hier beschreven. U kopieert deze secties of pagina&#39;s vervolgens naar de publicatielijst.
+Publish-rij toegangsbeleid, ook genoemd Gesloten Gebruikersgroepen (CUGs), wordt bepaald in de AEM auteur, zie [ Creërend een Gesloten Groep van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Als u bepaalde gedeelten of pagina&#39;s van een website van bepaalde gebruikers wilt beperken, past u de CUG&#39;s waar nodig toe met de auteur van de AEM, zoals hier beschreven. U kopieert deze secties of pagina&#39;s vervolgens naar de publicatielijst.
 
 * Als de gebruikers login door met een identiteitsleverancier (IdP) het gebruiken van SAML voor authentiek te verklaren, zal de authentificatiemanager de groepslidmaatschappen van de gebruiker identificeren (die CUGs op publiceren rij zouden moeten aanpassen), en zal de vereniging tussen de gebruiker en de groep door een verslag van de bewaarplaats aanhouden
 * Als login zonder integratie IdP wordt verwezenlijkt, kan de douanecode de zelfde de structuurverhoudingen van de bewaarplaats toepassen.

@@ -5,9 +5,9 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -132,4 +132,4 @@ Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [ configuraties 
 
 ### Pipetvariabelen {#pipeline}
 
-Naast milieuvariabelen, zijn er ook pijpleidingsvariabelen, die tijdens de bouwstijlfase worden blootgesteld. [ leer meer over pijpleidingsvariabelen hier ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+Naast milieuvariabelen, zijn er ook pijpleidingsvariabelen, die tijdens de bouwstijlfase worden blootgesteld. Leer meer over pijpleidingsvariabelen onder [ Bouwstijl Milieu ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

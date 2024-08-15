@@ -4,9 +4,9 @@ description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wo
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Omdat dit voorbeeld is gebaseerd op het React-framework, zijn er twee React-spec
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-De verdere details over het kunnen [ op GitHub hier ](https://github.com/wcm-io-frontend/aem-clientlib-generator) worden gevonden.
+Voor verdere details zie [ aem-clientlib-generator op GitHub ](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 `aem-clientlib-generator` wordt als volgt geconfigureerd in het `clientlib.config.js` -bestand.
 

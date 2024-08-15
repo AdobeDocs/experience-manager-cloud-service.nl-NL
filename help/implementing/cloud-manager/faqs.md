@@ -5,9 +5,9 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In dit document worden antwoorden gegeven op de meest gestelde vragen over Cloud
 
 Ja. Voeg de `maven-toolchains-plugin` toe met de juiste instellingen voor Java™ 11.
 
-Het proces wordt gedocumenteerd [ hier ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+Het proces wordt gedocumenteerd - zie {de Tovenaar van de Aanmaak van het 0} Project ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).[
 
 Bijvoorbeeld, zie de [ code van het de projectsteekproef van de projectsteekproef van het Web ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -33,7 +33,7 @@ Uw AEM Cloud Manager-build kan mislukken wanneer u probeert de build over te sch
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
-Voor instructies op hoe te om deze stop te verwijderen, zie [ hier ](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+Voor instructies op hoe te om deze stop te verwijderen, zie [ Van SCR annotaties aan annotaties OSGI ](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## Mijn build mislukt met een fout met betrekking tot RequireJavaVersion na het schakelen van Java™ 8 naar Java™ 11. Wat kan ik doen? {#build-fails-requirejavaversion}
 
@@ -61,11 +61,11 @@ Met deze waarde kan de volgende implementatie nog steeds worden geïnstalleerd w
 
 U kunt de versie ook instellen op `-SNAPSHOT` voor stadium- en productiebuilds of -implementaties. Cloud Manager stelt automatisch een correct versienummer in en maakt een tag voor u in de it. Indien nodig kunt u later naar dit label verwijzen.
 
-De verdere details over versie behandeling worden [ hier gedocumenteerd ](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Voor verdere details over versie behandeling zie [ GeMaven de Afhandeling van de Versie van het Project ](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Hoe werkt het pakket en de bundelversioning voor stadium en productieplaatsingen? {#snapshot-version}
 
-In stadium en productieplaatsingen, wordt een automatische versie geproduceerd zoals [ hier ](/help/implementing/cloud-manager/managing-code/project-version-handling.md) wordt gedocumenteerd.
+In stadium en productieplaatsingen, wordt een automatische versie geproduceerd - zie [ Gemaakt de Behandeling van de Versie van het Project ](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Stel voor aangepaste versies in werkgebied- en productieimplementaties een geschikte versie met drie delen in, zoals `1.0.0` . Verhoog de versie telkens wanneer u aan productie opstelt.
 

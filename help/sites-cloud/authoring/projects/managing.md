@@ -5,9 +5,9 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '876'
 ht-degree: 9%
 
 ---
@@ -92,7 +92,7 @@ Items toevoegen aan een tegel:
 
    ![ voeg punt aan een tegel ](/help/sites-cloud/authoring/assets/project-workflows.png) toe
 
-1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een tegel. De tegels van het project worden beschreven [ hier ](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In dit voorbeeld is een andere workflow toegevoegd.
+1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een tegel. Zie [ tegels van het Project ](/help/sites-cloud/authoring/projects/overview.md#project-tiles) voor meer details. In dit voorbeeld is een andere workflow toegevoegd.
 
 ### Een tegel openen {#opening-a-tile}
 

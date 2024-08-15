@@ -4,9 +4,9 @@ description: Paginasjablonen worden gebruikt bij het maken van een pagina die al
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3267'
+source-wordcount: '3268'
 ht-degree: 0%
 
 ---
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, kunt u deze sjabloon kopiëren als een sjabloontype.
 
-1. Creeer een malplaatje zoals u om het even welk Malplaatje van de Pagina [ zoals hier gedocumenteerd ](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author), dat als basis van uw malplaatjetype zal dienen.
+1. Maak een sjabloon op dezelfde manier als een paginasjabloon. Zie [ Creërend de Malplaatjes van de Pagina ](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author). Dit zal als basis van uw malplaatjetype dienen.
 1. Gebruikend CRXDE Lite, kopieer het gecreeerde malplaatje van de `templates` knoop aan de `template-types` knoop onder de [ malplaatjeomslag ](#template-folders).
 1. Schrap het malplaatje van de `templates` knoop onder de [ malplaatjeomslag ](#template-folders).
 1. Verwijder in de kopie van de sjabloon onder het knooppunt `template-types` alle eigenschappen `cq:template` en `cq:templateType` uit alle `jcr:content` knooppunten.

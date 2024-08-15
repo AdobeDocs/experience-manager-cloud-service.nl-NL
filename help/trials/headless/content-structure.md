@@ -6,9 +6,9 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ U hebt al een veld voor de titel van het avontuur. Nu moet u velden toevoegen om
 
 >[!TIP]
 >
->Het **1} model van het Avontuur is gebaseerd op de WKND steekproefplaats voor AEM.** U kunt [ de plaats hier bezoeken ](https://wknd.site/us/en/adventures/yosemite-backpacking.html) om inhoud te zien die het **3} model van het Avontuur {gebruikt.**
+>Het **1} model van het Avontuur is gebaseerd op de WKND steekproefplaats voor AEM.** U kunt [ de plaats van WKND hier bezoeken ](https://wknd.site/us/en/adventures/yosemite-backpacking.html) om inhoud te zien die het **3} model van het Avontuur {gebruikt.**
 
 Voer dezelfde stappen uit als hierboven om deze extra velden toe te voegen. Het enige verschil is de eigenschappen die u moet instellen.
 

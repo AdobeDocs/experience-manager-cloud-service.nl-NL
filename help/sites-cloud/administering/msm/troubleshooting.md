@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 Als u ervaart wat u denkt is onjuist gedrag of een fout in MSM, alvorens en het gedetailleerde oplossen van problemen zeker te zijn:
 
 * Controleer [ Veelgestelde vragen MSM ](#faq) omdat uw problemen of vragen daar kunnen reeds worden gericht.
-* Controleer het [ MSM beste praktijkartikel ](best-practices.md) aangezien verscheidene uiteinden daar samen met verduidelijkingen van sommige misconcepties worden aangeboden.
+* Controle [ MSM beste praktijken ](best-practices.md) voor verscheidene uiteinden, samen met verduidelijking van bepaalde misconcepties.
 
 ## Geavanceerde informatie over uw blauwdruk en status van Live Copy zoeken {#advanced-info}
 
@@ -68,7 +68,7 @@ Hier volgen enkele veelgestelde vragen over MSM en Live Copy.
 
 De acties van de synchronisatie MSM zijn hoogst configureerbaar. Welke eigenschappen of componenten tijdens rollouts direct worden gewijzigd hangt van de eigenschappen van die configuraties af.
 
-Zie [ dit artikel ](best-practices.md) voor meer informatie over dit onderwerp.
+Zie [ MSM Beste praktijken ](best-practices.md) voor meer informatie over dit onderwerp.
 
 ### Hoe kan ik rollout toestemmingen voor een groep auteurs verwijderen? {#remove-rollout-permissions}
 

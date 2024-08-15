@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3c546a05cf91dd8dcba39e42cd0f19857713f130
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1314'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Alvorens u verkeer bij CDN kunt vormen moet u het volgende doen:
 
 1. Maak een bestand met de naam `cdn.yaml` of een vergelijkbaar bestand, waarbij u verwijst naar de verschillende configuratiefragmenten in de onderstaande secties.
 
-   Alle fragmenten hebben deze gemeenschappelijke eigenschappen, die in het [ artikel van de Pijpleiding Config ](/help/operations/config-pipeline.md#common-syntax) worden beschreven. De `kind` bezitswaarde zou *CDN* moeten zijn en het `version` bezit zou aan *1* moeten worden geplaatst.
+   Alle fragmenten hebben deze gemeenschappelijke eigenschappen, die onder [ worden beschreven Config Pijpleiding ](/help/operations/config-pipeline.md#common-syntax). De `kind` bezitswaarde zou *CDN* moeten zijn en het `version` bezit zou aan *1* moeten worden geplaatst.
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ Alvorens u verkeer bij CDN kunt vormen moet u het volgende doen:
      envTypes: ["dev"]
    ```
 
-1. Plaats het dossier ergens onder een top niveauomslag genoemd *config* of gelijkaardig, zoals die in [ wordt beschreven Artikel van de Pijpleiding Config ](/help/operations/config-pipeline.md#folder-structure).
+1. Plaats het dossier ergens onder een top niveauomslag genoemd *config* of gelijkaardig, zoals die onder [ wordt beschreven Pijpleiding Config ](/help/operations/config-pipeline.md#folder-structure).
 
-1. Creeer een Pijpleiding Config in Cloud Manager, zoals die in het [ wordt beschreven Config Artikel van de Pijpleiding ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Creeer een Pijpleiding Config in Cloud Manager, zoals die onder [ wordt beschreven Config Pijpleiding ](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Implementeer de configuratie.
 

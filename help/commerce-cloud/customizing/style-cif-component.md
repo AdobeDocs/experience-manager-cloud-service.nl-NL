@@ -12,7 +12,7 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -436,7 +436,7 @@ Terugkeer aan winde en het geproduceerde project.
 
    ![ het teaserveranderingen van de Server van de Dev van de Pakket Dev ](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   De wijzigingen zijn echter nog niet AEM. U kunt het [ oplossingsdossier hier downloaden ](../assets/style-cif-component/_productteaser.scss).
+   De wijzigingen zijn echter nog niet AEM. U kunt [ het oplossingsdossier hier ](../assets/style-cif-component/_productteaser.scss) downloaden.
 
 1. Stel de updates op om AEM te gebruiken uw Maven vaardigheden, van een bevel-lijn terminal:
 

@@ -5,7 +5,7 @@ hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De server-aan-server stroom wordt hieronder beschreven, samen met een vereenvoud
 
 ## De server-naar-server stroom {#the-server-to-server-flow}
 
-Een gebruiker met een IMS org beheerderrol, en die ook een lid van het Profiel van het Product van de AEMGebruikers of AEM van Beheerders op AEM Auteur is, kan een credentie van AEM as a Cloud Service produceren. Die referentie kan later worden opgehaald door een gebruiker met de AEM as a Cloud Service Environment Administrator-rol en moet op de server worden geïnstalleerd en moet zorgvuldig worden behandeld als een geheime sleutel. Dit JSON-indelingsbestand bevat alle gegevens die vereist zijn voor integratie met een AEM as a Cloud Service API. De gegevens worden gebruikt om een ondertekende JWT-token te maken, die met IMS wordt uitgewisseld voor een IMS-toegangstoken. Dit toegangstoken kan dan als het authentificatietoken van de Drager worden gebruikt om verzoeken aan AEM as a Cloud Service te doen. De geloofsbrieven verlopen na één jaar door gebrek, maar zij kunnen worden verfrist wanneer nodig, zoals beschreven [ hier ](#refresh-credentials).
+Een gebruiker met een IMS org beheerderrol, en die ook een lid van het Profiel van het Product van de AEMGebruikers of AEM van Beheerders op AEM Auteur is, kan een credentie van AEM as a Cloud Service produceren. Die referentie kan later worden opgehaald door een gebruiker met de AEM as a Cloud Service Environment Administrator-rol en moet op de server worden geïnstalleerd en moet zorgvuldig worden behandeld als een geheime sleutel. Dit JSON-indelingsbestand bevat alle gegevens die vereist zijn voor integratie met een AEM as a Cloud Service API. De gegevens worden gebruikt om een ondertekende JWT-token te maken, die met IMS wordt uitgewisseld voor een IMS-toegangstoken. Dit toegangstoken kan dan als het authentificatietoken van de Drager worden gebruikt om verzoeken aan AEM as a Cloud Service te doen. De geloofsbrieven verlopen na één jaar door gebrek, maar zij kunnen worden verfrist wanneer nodig, zie [ Vernieuwen Geloofsbrieven ](#refresh-credentials).
 
 De server-aan-server stroom impliceert de volgende stappen:
 

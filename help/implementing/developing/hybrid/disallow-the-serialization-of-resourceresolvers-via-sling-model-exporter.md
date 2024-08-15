@@ -4,9 +4,9 @@ description: De serialisatie van ResourceResolvers via Sling Model Exporter niet
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Met de functie Sling Model Exporter kunt u Sling Models-objecten serialiseren in een JSON-indeling. Deze functie wordt op grote schaal gebruikt omdat SPA (toepassingen van één pagina) gemakkelijk toegang hebben tot gegevens van AEM. Op de implementatiezijde wordt de bibliotheek van het Gegevensbestand van Jacson gebruikt om deze voorwerpen in series te vervaardigen.
 
-De rangschikking is een recursieve verrichting. Vanaf een &quot;wortelvoorwerp&quot;, herhaalt het recursief door alle in aanmerking komende voorwerpen en rangschikt hen en hun kinderen. U kunt een beschrijving vinden welke gebieden in [ dit artikel ](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) in series worden vervaardigd.
+De rangschikking is een recursieve verrichting. Vanaf een &quot;wortelvoorwerp&quot;, herhaalt het recursief door alle in aanmerking komende voorwerpen en rangschikt hen en hun kinderen. U kunt een beschrijving vinden van welke gebieden in het artikel [ worden in series vervaardigd Jackson - besluit welke Gebieden in series vervaardigd/Deserialized ](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not) krijgen.
 
 Deze benadering serialiseert alle types van voorwerpen in JSON, en natuurlijk kan het een Sling `ResourceResolver` voorwerp ook serialiseren, als het door de rangschikkingsregels wordt behandeld. Dit is problematisch, omdat de `ResourceResolver` -service (en dus ook het serviceobject dat deze vertegenwoordigt) mogelijk gevoelige informatie bevat, die niet openbaar moet worden gemaakt. Bijvoorbeeld:
 

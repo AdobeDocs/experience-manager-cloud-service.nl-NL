@@ -4,10 +4,10 @@ description: Ondersteuning voor Image Management System voor Adobe Experience Ma
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 29%
+source-wordcount: '1941'
+ht-degree: 25%
 
 ---
 
@@ -60,9 +60,9 @@ Nadat een klant als IMS Organisatie bestaat, moeten zij hun systeem vormen zoals
 1. De systeembeheerder voert IDP-configuratie in Admin Console uit om Single Sign-On in te stellen.
 1. De AEM-beheerder beheert de lokale groepen en toestemmingen en machtigingen, zoals gebruikelijk.
 
-De basisbeginselen van Adobe Identity Management, inclusief de IDP-configuratie, worden [hier](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) besproken.
+De grondbeginselen van Identity Management van de Adobe met inbegrip van configuratie IDP zijn behandeld onder [ Identiteit van de Opstelling en Enige Sign-On ](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html).
 
-Het gebruik van het Beleid van de onderneming en van de Admin Console zijn behandeld [ hier ](https://helpx.adobe.com/enterprise/admin-guide.html).
+Het gebruik van het Beleid van de onderneming en van de Admin Console zijn behandeld onder [ Onthaal aan de onderneming en de teamadmin gids ](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ### Gebruikers aan boord in Admin Console {#onboarding-users-in-admin-console}
 
@@ -96,27 +96,29 @@ Het Hulpmiddel van de Synchronisatie van de gebruiker wordt verdeeld door de bew
 
 >[!NOTE]
 >
->Er is een pre-releaseversie **2.4RC1** beschikbaar met ondersteuning voor het maken van dynamische groepen, die u [hier](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1) vindt.
+>Een prereleaseversie **2.4RC1** is beschikbaar met de dynamische steun van de groepsverwezenlijking onder [ het Hulpmiddel van de Synchronisatie van de Gebruiker v2.4rc1 op GitHub ](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
 
 De belangrijkste functies voor deze release zijn de mogelijkheid om nieuwe LDAP-groepen dynamisch toe te wijzen voor gebruikerslidmaatschap in de Admin Console en om een dynamische gebruikersgroep te maken.
 
-Meer informatie over de nieuwe groepsfuncties vindt u [op deze locatie](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options).
+Meer informatie over de nieuwe groepseigenschappen kan bij [ het Hulpmiddel van de Synchronisatie van de Gebruiker van de Adobe - de Extra Opties van de Groep ](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options) worden gevonden.
 
 **User Sync-documentatie**
 
-Zie [ MAG documentatie ](https://adobe-apiplatform.github.io/user-sync.py/en/) voor meer details.
+Zie:
 
-Het hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe Developer registreren gebruikend de procedure [ hier ](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+* [ MAG documentatie ](https://adobe-apiplatform.github.io/user-sync.py/en/)
 
-De Documentatie van Adobe Developer Console kan [ hier ](https://developer.adobe.com/developer-console/) worden gevonden.
+* Het hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe Developer registreren gebruikend de procedure van [ Authentificatie voor API Toegang ](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)
 
-De User Management-API die door de User Sync Tool wordt gebruikt, wordt [hier](https://adobe-apiplatform.github.io/user-sync.py/en/) besproken.
+* de [ Documentatie van Adobe Developer Console ](https://developer.adobe.com/developer-console/)
+
+* Het [ Beheer API van de Gebruiker die door het Hulpmiddel van de Synchronisatie van de Gebruiker ](https://adobe-apiplatform.github.io/user-sync.py/en/) wordt gebruikt
 
 ## Adobe Ervaar as a Cloud Service Configuratie {#aem-configuration}
 
 >[!NOTE]
 >
->De vereiste AEM IMS-configuratie wordt automatisch geconfigureerd wanneer de AEM omgevingen en instanties worden ingericht. De beheerder kan dit echter naar wens wijzigen volgens de [hier](/help/implementing/deploying/overview.md) beschreven methode.
+>De vereiste AEM IMS-configuratie wordt automatisch geconfigureerd wanneer de AEM omgevingen en instanties worden ingericht. Nochtans, kan de beheerder het zoals per hun vereisten wijzigen, zie [ het Opstellen aan AEM as a Cloud Service ](/help/implementing/deploying/overview.md).
 
 De vereiste AEM IMS-configuratie wordt automatisch geconfigureerd wanneer de AEM omgevingen en instanties worden ingericht. Klantbeheerders kunnen een deel van de configuratie naar wens van de klanten wijzigen
 

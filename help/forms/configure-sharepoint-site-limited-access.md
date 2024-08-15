@@ -4,9 +4,9 @@ Description: Learn how to configure SharePoint Site with limited access using th
 keywords: Hoe te om de Plaats van SharePoint met beperkte toegang te vormen?, vorm SharePoint met beperkte toegang, Gebruikend vergunningswerkingsgebied om toegang voor de Plaats van SharePoint te beperken.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 4962c058e2cc2135dd3626655ba7b21dbdcbd455
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Voor informatie over hoe te om `Client ID` terug te winnen, `Client Secret` en `
 
 Voor het gebruik van de API-machtiging `Sites.Selected` is een toepassing vereist die is geregistreerd in de Azure-portal en waarvoor de juiste machtigingen zijn ingesteld voor SharePoint Online-sites. Deze instelling zorgt ervoor dat de toepassing over de benodigde toestemming beschikt om te communiceren met de SharePoint-site binnen het gedefinieerde bereik, waardoor de vereiste beperkte toegang wordt geboden.
 
-Verwijs naar het [ artikel ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) voor instructies bij het ontwikkelen van toepassingen die `Sites.Selected` toestemmingen voor de Plaatsen van SharePoint Online gebruiken.
+Verwijs naar het [ blogartikel - ontwikkelt Toepassingen die de toestemmingen Sites.Selected voor SPO plaatsen ](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) voor instructies bij het ontwikkelen van toepassingen gebruiken die `Sites.Selected` toestemmingen voor de Plaatsen van SharePoint Online gebruiken.
 
 ### Reeks vergunningswerkingsgebied in AEM geval
 

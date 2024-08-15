@@ -5,9 +5,9 @@ feature: Integration
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 Door Adobe Analytics en AEM as a Cloud Service te integreren, kunt u de activiteiten van uw webpagina bijhouden. De integratie vereist:
 
 * met de Touch-gebruikersinterface een analytische configuratie in AEM as a Cloud Service maken. IMS-verificatie is vereist voor integratie van Adobe Analytics met AEM as a Cloud Service.
-* het toevoegen van en het vormen van Adobe Analytics als uitbreiding in [ Lancering van de Adobe ](#analytics-launch). Voor meer details over de Lancering van de Adobe, zie [ deze pagina ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* het toevoegen van en het vormen van Adobe Analytics als uitbreiding in [ Lancering van de Adobe ](#analytics-launch). Voor meer details over de Lancering van de Adobe, kunt u met de [ gids van QuickStart ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) beginnen.
 
 In vergelijking met eerdere versies van AEM wordt frameondersteuning niet geleverd in de Analytics Configuration in AEM as a Cloud Service. In plaats daarvan gebeurt dit nu via het starten van de Adobe. Dit is het feitelijke hulpmiddel voor het instrumenteren van een AEM site met analysemogelijkheden (JS-bibliotheken). In de Lancering van de Adobe, wordt een bezit gecreeerd waar de uitbreiding van Adobe Analytics kan worden gevormd en de regels worden gecreeerd om gegevens naar Adobe Analytics te verzenden. Adobe Launch heeft in de plaats getreden van de door de sitecatalyst geleverde analytische taak.
 
@@ -43,7 +43,7 @@ De velden in het configuratievenster zijn als volgt:
 |---|---|
 | Titel | De configuratienaam |
 | IMS-configuratie | De IMS-configuratie selecteren (zie het hoofdstuk hieronder) |
-| Segment | Optie voor het gebruik van een analysesegment dat is gedefinieerd in de huidige rapporteringssuite. De analyserapporten worden gefilterd op basis van het segment. Zie [ deze pagina ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) voor extra details. |
+| Segment | Optie voor het gebruik van een analysesegment dat is gedefinieerd in de huidige rapporteringssuite. De analyserapporten worden gefilterd op basis van het segment. Zie [ Ongeveer segmenten ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) voor extra details. |
 | Rapportageopties | Een opslagplaats waar u gegevens en trekkingsrapporten verzendt. Een rapportsuite definieert de volledige, onafhankelijke rapportage op een gekozen website, een set websites of een subset van websitepagina&#39;s. U kunt de rapporten bekijken die van één enkele rapportreeks worden gehaald en kunt dit gebied in een configuratie op elk ogenblik overeenkomstig uw vereisten uitgeven. |
 
 ### Adobe Analytics met IMS-verificatie {#configuration-parameters-ims}
@@ -68,7 +68,7 @@ Adobe Analytics kan als extensie worden toegevoegd aan de eigenschap Launch. De 
 
 * Controle [ deze video ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) leren hoe te om de uitbreiding van Analytics in Lancering voor een basisplaats te vormen.
 
-* Zie [ deze pagina ](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) voor details op hoe te om regels tot stand te brengen en gegevens naar Adobe Analytics te verzenden.
+* Zie [ Adobe Analytics ](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) voor details op toevoegen hoe te om regels tot stand te brengen en gegevens naar Adobe Analytics te verzenden.
 
 >[!NOTE]
 >

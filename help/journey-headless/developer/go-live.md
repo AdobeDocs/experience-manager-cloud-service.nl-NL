@@ -5,9 +5,9 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Zodra u ervoor zorgt dat alles is getest en behoorlijk werkt, bent u bereid om u
 
 Nadat de updates aan Cloud Manager zijn geupload, kunnen zij aan AEM as a Cloud Service worden opgesteld gebruikend [ Cloud Manager CI/CD pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
-U kunt beginnen uw code op te stellen door de pijpleiding van Cloud Manager te gebruiken CI/CD, die uitgebreid [ hier ](/help/implementing/deploying/overview.md) wordt behandeld.
+U kunt beginnen uw code op te stellen door de pijpleiding van Cloud Manager te gebruiken CI/CD, die uitgebreid onder [ het Opstellen van de Pakketten van de Inhoud als Manager van Cloud Manager en van het Pakket ](/help/implementing/deploying/overview.md) wordt behandeld.
 
 ## Prestatiebewaking {#performance-monitoring}
 
@@ -133,7 +133,7 @@ Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga op het facu
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Inleiding tot AEM als een headless CMS](/help/headless/introduction.md)
+* [Inleiding tot AEM als een CMS zonder kop](/help/headless/introduction.md)
 * [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 * [Een overzicht van de implementatie op AEM as a Cloud Service](/help/implementing/deploying/overview.md)

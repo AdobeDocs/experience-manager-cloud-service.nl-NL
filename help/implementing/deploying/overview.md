@@ -4,9 +4,9 @@ description: Meer informatie over de basisbeginselen en de beste werkwijzen van 
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Net als bij bestaande niet-cloud AEM versies, wordt een lokale, offline ontwikke
 >[!NOTE]
 >Er zijn subtiele operationele verschillen tussen de werking van de toepassing op een lokale computer en die van de Adobe Cloud. Deze architecturale verschillen moeten tijdens de lokale ontwikkeling worden gerespecteerd en kunnen bij de implementatie op de cloudinfrastructuur tot een ander gedrag leiden. Vanwege deze verschillen is het belangrijk om de uitgebreide tests uit te voeren op ontwikkelings- en werkgebiedomgevingen voordat nieuwe aangepaste code in productie wordt geïmplementeerd.
 
-Om douanecode voor een interne versie te ontwikkelen, zou de relevante versie van [ AEM as a Cloud Service SDK ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) moeten worden gedownload en worden geïnstalleerd. Voor extra informatie over het gebruiken van de Hulpmiddelen van AEM as a Cloud Service Dispatcher, zie [ deze pagina ](/help/implementing/dispatcher/disp-overview.md).
+Om douanecode voor een interne versie te ontwikkelen, zou de relevante versie van [ AEM as a Cloud Service SDK ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) moeten worden gedownload en worden geïnstalleerd. Voor extra informatie over het gebruiken van de Hulpmiddelen van AEM as a Cloud Service Dispatcher, zie [ Dispatcher in de Wolk ](/help/implementing/dispatcher/disp-overview.md).
 
 De volgende video biedt een overzicht op hoog niveau over hoe u code kunt implementeren in AEM as a Cloud Service:
 
@@ -56,7 +56,8 @@ De volgende video biedt een overzicht op hoog niveau over hoe u code kunt implem
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Klanten implementeren aangepaste code in cloudomgevingen via Cloud Manager. Cloud Manager transformeert lokaal geassembleerde inhoudspakketten naar een artefact dat voldoet aan het Sling Feature Model, dat is hoe een toepassing op AEM as a Cloud Service wordt beschreven wanneer deze in een cloudomgeving wordt uitgevoerd. Dientengevolge, wanneer het bekijken van de pakketten in [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op de milieu&#39;s van de Wolk, omvat de naam &quot;cp2fm&quot;en de getransformeerde pakketten hebben alle meta-gegevens verwijderd. Er kan geen interactie met deze toepassingen plaatsvinden, wat betekent dat ze niet kunnen worden gedownload, gerepliceerd of geopend. De gedetailleerde documentatie over converter kan [ hier ](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) worden gevonden.
+Klanten implementeren aangepaste code in cloudomgevingen via Cloud Manager. Cloud Manager transformeert lokaal geassembleerde inhoudspakketten naar een artefact dat voldoet aan het Sling Feature Model, dat is hoe een toepassing op AEM as a Cloud Service wordt beschreven wanneer deze in een cloudomgeving wordt uitgevoerd. Dientengevolge, wanneer het bekijken van de pakketten in [ Manager van het Pakket ](/help/implementing/developing/tools/package-manager.md) op de milieu&#39;s van de Wolk, omvat de naam &quot;cp2fm&quot;en de getransformeerde pakketten hebben alle meta-gegevens verwijderd. Er kan geen interactie met deze toepassingen plaatsvinden, wat betekent dat ze niet kunnen worden gedownload, gerepliceerd of geopend. Zie [ voor gedetailleerde documentatie over de converter.
+sling-org-apache-sling-feature-cpconverter op GitHub ](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Inhoudspakketten die voor toepassingen op AEM as a Cloud Service zijn geschreven, moeten een duidelijke scheiding hebben tussen onveranderbare en muteerbare inhoud en Cloud Manager installeert alleen de veranderbare inhoud en voert ook een bericht uit zoals:
 
@@ -252,7 +253,7 @@ Als AEM updates, worden de klantenversies opgesteld gebruikend een het rollen pl
 
 ## Indexen {#indexes}
 
-Nieuwe of gewijzigde indexen veroorzaken een extra indexerende of herindexerende stap alvorens de nieuwe versie verkeer kan nemen. De details over indexbeheer in AEM as a Cloud Service kunnen in [ dit artikel ](/help/operations/indexing.md) worden gevonden. U kunt de indexerende status van bouwstijlpagina&#39;s op Cloud Manager controleren, en een bericht ontvangen wanneer de nieuwe versie klaar is om verkeer te nemen.
+Nieuwe of gewijzigde indexen veroorzaken een extra indexerende of herindexerende stap alvorens de nieuwe versie verkeer kan nemen. De details over indexbeheer in AEM as a Cloud Service kunnen onder [ Inhoud Onderzoek en het Indexeren ](/help/operations/indexing.md) worden gevonden. U kunt de indexerende status van bouwstijlpagina&#39;s op Cloud Manager controleren, en een bericht ontvangen wanneer de nieuwe versie klaar is om verkeer te nemen.
 
 >[!NOTE]
 >
@@ -278,7 +279,7 @@ Het veranderen van de dienstgebruikers, of ACLs die tot inhoud of code toegang h
 
 ### Indexwijzigingen {#index-changes}
 
-Als er wijzigingen in indexen worden aangebracht, is het belangrijk dat de nieuwe versie de indexen blijft gebruiken totdat deze worden beëindigd, terwijl de oude versie een eigen aangepaste set indexen gebruikt. De ontwikkelaar zou de beschreven technieken van het indexbeheer [ in dit artikel ](/help/operations/indexing.md) moeten volgen.
+Als er wijzigingen in indexen worden aangebracht, is het belangrijk dat de nieuwe versie de indexen blijft gebruiken totdat deze worden beëindigd, terwijl de oude versie een eigen aangepaste set indexen gebruikt. De ontwikkelaar zou de technieken moeten volgen van het indexbeheer die onder [ Inhoud Onderzoek en het Indexeren ](/help/operations/indexing.md) worden beschreven.
 
 ### Conservatieve codering voor terugdraaiversies {#conservative-coding-for-rollbacks}
 
@@ -333,4 +334,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## Configuratie van onderhoudstaken in Source Control {#maintenance-tasks-configuration-in-source-control}
 
-De configuraties van de Taak van het onderhoud moeten in broncontrole worden voortgeduurd omdat het **Hulpmiddelen > het scherm van Verrichtingen** niet beschikbaar in de milieu&#39;s van de Wolk is. Dit voordeel zorgt ervoor dat veranderingen opzettelijk worden voortgeduurd eerder dan reactief worden toegepast en worden vergeten. Zie {het artikel van de Taak van 0} Onderhoud ](/help/operations/maintenance.md) voor extra informatie.[
+De configuraties van de Taak van het onderhoud moeten in broncontrole worden voortgeduurd omdat het **Hulpmiddelen > het scherm van Verrichtingen** niet beschikbaar in de milieu&#39;s van de Wolk is. Dit voordeel zorgt ervoor dat veranderingen opzettelijk worden voortgeduurd eerder dan reactief worden toegepast en worden vergeten. Zie [ Taken van het Onderhoud in AEM as a Cloud Service ](/help/operations/maintenance.md) voor extra informatie.

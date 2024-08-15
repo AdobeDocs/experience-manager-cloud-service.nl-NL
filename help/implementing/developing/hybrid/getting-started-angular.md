@@ -4,9 +4,9 @@ description: Dit artikel presenteert een voorbeeld SPA toepassing, legt uit hoe 
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Het bestand `package.json` definieert de vereisten van het algemene SPA. De mini
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-De verdere details over het kunnen [ op GitHub hier ](https://github.com/wcm-io-frontend/aem-clientlib-generator) worden gevonden.
+Voor verdere details zie [ aem-clientlib-generator op GitHub ](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 `aem-clientlib-generator` wordt als volgt geconfigureerd in het `clientlib.config.js` -bestand.
 

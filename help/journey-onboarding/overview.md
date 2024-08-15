@@ -5,9 +5,9 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1292'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Gefeliciteerd met het kiezen van AEM as a Cloud Service! Dit document is het uit
 
 ## Inleiding {#introduction}
 
-Adobe Experience Manager is een krachtige suite van composable content services die snel indrukwekkende, persoonlijke ervaringen bieden over elk kanaal, waardoor inhoud voor iedereen wordt ontgrendeld. **Edge Delivery Services** is de recentste innovatie in Adobe Experience Manager die extreme inhoudssnelheid toelaat en uitzonderlijke ervaringen levert. Leer hoe te beginnen met Edge Delivery Services, door [ deze pagina ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) te bezoeken. Om te begrijpen hoe te om Edge Delivery Services te gebruiken, zie de ](https://www.hlx.live/developer/tutorial) pagina van het Leerprogramma van de 1} Ontwikkelaar.[
+Adobe Experience Manager is een krachtige suite van composable content services die snel indrukwekkende, persoonlijke ervaringen bieden over elk kanaal, waardoor inhoud voor iedereen wordt ontgrendeld. **Edge Delivery Services** is de recentste innovatie in Adobe Experience Manager die extreme inhoudssnelheid toelaat en uitzonderlijke ervaringen levert. Leer hoe te beginnen met Edge Delivery Services, door [ Overzicht van Edge Delivery Services te raadplegen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Om te begrijpen hoe te om Edge Delivery Services te gebruiken, zie de ](https://www.hlx.live/developer/tutorial) pagina van het Leerprogramma van de 1} Ontwikkelaar.[
 
 Onboarding is het proces waarbij een aangewezen systeembeheerder AEM as a Cloud Service voor uw organisatie instelt. Dit proces omvat de eerste levering van cloudbronnen en het toewijzen van gebruikers aan rollen op basis van hun taakverantwoordelijkheden. Dientengevolge, kan elk lid zich aanmelden en tot hun middel op AEM as a Cloud Service toegang hebben.
 

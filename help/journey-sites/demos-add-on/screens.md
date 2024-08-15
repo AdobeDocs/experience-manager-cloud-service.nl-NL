@@ -4,9 +4,9 @@ description: Leer de stappen voor het inschakelen van de volledige as a Cloud Se
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2654'
+source-wordcount: '2666'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Leer de stappen die de volledige as a Cloud Service ervaring van AEM Screens op 
 
 >[!NOTE]
 >
->AEM Screens Demo vereist dat de invoegtoepassing Screens wordt toegevoegd aan het Cloud Manager-programma. Leer [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) hoe te om het toe te voegen.
+>AEM Screens Demo vereist dat de invoegtoepassing Screens wordt toegevoegd aan het Cloud Manager-programma. Leer hoe met [ het Toevoegen van Screens als toe:voegen-op aan een Nieuw Programma in Cloud Manager ](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) hoe te om het toe te voegen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 

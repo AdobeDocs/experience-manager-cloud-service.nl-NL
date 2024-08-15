@@ -4,7 +4,7 @@ description: Opmerkingen bij de release AEM as a Cloud Service 2021.11.0 voor mi
 feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 1%
@@ -16,7 +16,8 @@ ht-degree: 1%
 Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratiehulpmiddelen in AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Om de huidige Nota&#39;s van de Versie voor Adobe Experience Manager as a Cloud Service te zien, klik [ hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>
+>Zie [ Huidige Nota&#39;s van de Versie voor Adobe Experience Manager as a Cloud Service ](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de recentste versienota&#39;s.
 
 ## Inhoud overbrengen {#ctt-release}
 

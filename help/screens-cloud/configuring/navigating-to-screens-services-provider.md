@@ -4,9 +4,9 @@ description: In deze pagina wordt beschreven hoe u naar Screens Services Provide
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ De volgende sectie om de Leverancier van de Diensten van Screens te vormen en te
 
 Voer de onderstaande stappen uit om Screens Services Provider in te stellen:
 
-1. Navigeer aan de Leverancier van de Diensten van Screens van [ hier ](https://experience.adobe.com/screens).
+1. Navigeer aan de [ Leverancier van de Diensten van Screens ](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Als u toegang tot veelvoudige organisaties hebt, zorg ervoor dat u in correcte Organisatie hebt geregistreerd. Als u uw organisatie wilt wijzigen, klikt u op de naam van de organisatie in de rechterbovenhoek van het scherm en kiest u de gewenste organisatie waartoe u toegang nodig hebt.

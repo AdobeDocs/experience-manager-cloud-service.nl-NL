@@ -4,9 +4,9 @@ description: Leer hoe u Rapid Development Environment kunt gebruiken voor snelle
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '4215'
+source-wordcount: '4241'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ Voor omgevingen waar geen enkele gebruiker de hierboven beschreven opstellingsop
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Uw eigen organisatie ID kan worden opgezocht gebruikend de methode [ hier gedocumenteerd.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * Uw eigen organisatieidentiteitskaart kan omhoog worden gezocht gebruikend de methode die onder [ wordt gedocumenteerd Mening uw organisatieidentiteitskaart ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Configureer vervolgens uw programma-id:
 
@@ -167,7 +167,7 @@ Voor omgevingen waar geen enkele gebruiker de hierboven beschreven opstellingsop
 
    `aio login`
 
-   Deze stappen vereisen u om een lid van de Ontwikkelaar van Cloud Manager **te zijn - Cloud Service** Profiel van het Product. Zie [ deze pagina ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details.
+   Deze stappen vereisen u om een lid van de Ontwikkelaar van Cloud Manager **te zijn - Cloud Service** Profiel van het Product. Zie [ de Leden van het Team aan de Profielen van het Product van Cloud Manager toewijzen - wijs het Profiel van het Product van de Ontwikkelaar ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details toe.
 
 Voor meer informatie en demonstratie, bekijk het videoleerprogramma [ hoe te opstelling RDE (06:24) ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 </details>
@@ -1005,7 +1005,7 @@ Bij het maken worden RDE&#39;s ingesteld op de laatst beschikbare Adobe Experien
 
 ### Fouten met betrekking tot ontoereikende machtigingen {#insufficient-permissions}
 
-Om de stop van RDE te gebruiken, vereist het u om een lid van de Ontwikkelaar van Cloud Manager **te zijn - Cloud Service** Profiel van het Product. Zie [ deze pagina ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details.
+Om de stop van RDE te gebruiken, vereist het u om een lid van de Ontwikkelaar van Cloud Manager **te zijn - Cloud Service** Profiel van het Product. Zie [ de Leden van het Team aan de Profielen van het Product van Cloud Manager toewijzen - wijs het Profiel van het Product van de Ontwikkelaar ](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) voor meer details toe.
 
 Alternatief, kunt u bevestigen dat u deze ontwikkelaarrol hebt als u login aan de ontwikkelaarsconsole kunt door dit bevel in werking te stellen:
 

@@ -4,9 +4,9 @@ description: Voeg ContextHub aan uw pagina's toe om de eigenschappen ContextHub 
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ De opslagkandidaten van de douane kunnen extra functies bepalen die toegang verl
 >
 >ContextHub is niet door gebrek zich bewust van momenteel het programma geopend op publiceer servers en dergelijke gebruikers worden beschouwd door ContextHub als &quot;Anoniem.&quot;
 >
->U kunt ContextHub bewust maken van het programma geopende gebruikers door de profielopslag te laden. Zie [ steekproefcode op GitHub hier ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>U kunt ContextHub bewust maken van het programma geopende gebruikers door de profielopslag te laden. Zie de steekproefcode: [ aem-sample-wij-retail op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### ContextHub Event {#contexthub-eventing}
 

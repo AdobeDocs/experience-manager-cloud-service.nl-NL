@@ -4,9 +4,9 @@ description: Leer hoe u AEM Core Components (Basiscomponenten) kunt aanpassen. I
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: ef58cf5b216ef308cc65436f2eed2e500fb2bd96
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2300'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Gebruik vervolgens een GraphQL IDE om te controleren of het kenmerk `eco_friendl
 
    >[!TIP]
    >
-   > Lees hier meer gedetailleerde documentatie over [ Adobe Commerce GraphQL ](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > Voor meer informatie zie [ Adobe Commerce GraphQL ](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Het verkoopmodel voor de producttaser bijwerken {#updating-sling-model-product-teaser}
 
@@ -385,7 +385,7 @@ In dit geval, wilt u een banner op de teaser teruggeven om erop te wijzen dat he
 
    Wanneer u een methode van het Sling Model in HTML aanroept, wordt het `get` - en `is` -gedeelte van de methode verwijderd en wordt de eerste letter verlaagd. Dus `isShowBadge()` wordt `.showBadge` en `isEcoFriendly` wordt `.ecoFriendly` . Op basis van de Booleaanse waarde die door `.isEcoFriendly()` wordt geretourneerd, wordt bepaald of de `<span>Eco Friendly</span>` wordt weergegeven.
 
-   Meer informatie over `data-sly-test` en andere [ het blokverklaringen van HTML kan hier ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html) worden gevonden.
+   Meer informatie over `data-sly-test` en andere het blokverklaringen van HTML kan in [ de Specificatie van HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html) worden gevonden.
 
 1. Sparen de veranderingen en stel de updates in om AEM te gebruiken uw Maven vaardigheden, van een bevel-lijn terminal op te stellen:
 
@@ -479,7 +479,7 @@ Op dit punt werkt de logica voor wanneer om **vriendschappelijk Eco** badge te t
 
 ## Gefeliciteerd {#congratulations}
 
-U hebt uw eerste AEM CIF component aangepast! Download de [ gebeëindigde oplossingsdossiers hier ](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+U hebt uw eerste AEM CIF component aangepast! U kunt [ de oplossingsdossiers hier ](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip) downloaden.
 
 ## Bonus Challenge {#bonus-challenge}
 
