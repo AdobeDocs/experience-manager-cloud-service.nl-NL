@@ -4,9 +4,9 @@ description: Leer over de verschillende uitbreidingspunten en andere eigenschapp
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -110,11 +110,23 @@ De voorwaarden kunnen worden bepaald gebruikend [ schema JsonLogic.](https://jso
 
 ![ Verborgen tekstgebied ](assets/hidden.png)
 
->[!TAB  de Toestand van 0} Waar {]
+>] de Toestand van 0} Waar {[!TAB 
 
 ![ Getoonde tekstgebied ](assets/shown.png)
 
 >[!ENDTABS]
+
+### Aangepaste voorbeeld-URL&#39;s {#custom-preview-urls}
+
+U kunt een douanevoorproef URL via a `urn:adobe:aue:config:preview` metaconfiguratie specificeren, die wanneer het klikken van de **Open pagina** knoop in de [ top-right toolbar van de redacteur zal openen.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+Dit is met name nuttig voor toepassingen met specifieke voorproefvereisten, zoals die [ gebruikend Edge Delivery Services met het schrijven WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+
+Hiervoor neemt u gewoon de gewenste voorvertoning-URL op in een metatag van de van instrumenten voorziene app, zoals in het volgende voorbeeld.
+
+```html
+<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
+```
 
 ## De gebruikersinterface van de Universal Editor uitbreiden {#extending}
 

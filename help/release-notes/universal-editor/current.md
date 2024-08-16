@@ -4,9 +4,9 @@ description: Dit zijn de releaseopmerkingen voor de release 2024.08.13 van de Un
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: d71d3481004f2429c018c536b3e12784cf597f85
+source-git-commit: aad4d0353fb5e2eacb518b72e935def931d0798a
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Dit zijn de opmerkingen bij de release van 13 augustus 2024 van de Universal Edi
 
 * **de Types van Gegevens van de Douane**: Tailor de redacteur aan uw unieke gegevensbehoeften met de capaciteit om douanegebieden binnen het eigenschappen paneel tot stand te brengen.
    * Of u nu een aangepaste productkiezer ontwikkelt voor gebruik in handelsversies of een vervolgkeuzelijst vult met waarden uit uw achtergronden, deze functie geeft u de controle die u nodig hebt over de gegevens die auteurs gebruiken om inhoud samen te stellen.
-* **slepen &amp; Daling van de dwars-Container**: Geniet van grotere flexibiliteit in lay-outsamenstelling met de capaciteit om componenten over verschillende containers te bewegen via belemmering en daling binnen het [ paneel van de Boom van de Inhoud.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **de Belemmering &amp; Daling van 0} dwars-Container: Geniet van grotere flexibiliteit in lay-outsamenstelling met de capaciteit om componenten over verschillende containers te bewegen via belemmering en daling ](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) binnen het [ paneel van de Boom van de Inhoud.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)**[
 * **Geoptimaliseerde Integratie GitHub**: Het coderen voor reacties GitHub is geïntroduceerd, beduidend sneller terugwinning van markeringen en `universal-editor-cors-library`, resulterend in een snellere en vlottere gebruikerservaring.
 * **Managed Services RPM Pakket**: De Adobe biedt nu een pakket van RPM aan om de plaatsing en het beheer van de Universele Dienst van de Redacteur te stroomlijnen, die onderhoud vereenvoudigen en operationele overheadkosten voor de beheerde diensten verminderen.
 * **configureerbare IMS Symbolische Bevestiging**: Om flexibiliteit in symbolisch beheer te verhogen, is IMS symbolische bevestiging nu facultatief.
    * Met deze configuratieoptie kunt u validatie desgewenst uitschakelen en de instellingen van uw cloudgateway vereenvoudigen.
-* **de Integratie van het Splunk**: Het registreren van het spleet is geïntegreerd in de Universele Uitdrukkelijke Dienst van de Redacteur, die controle en diagnostiek verbetert.
+* **de Integratie van het Splunk**: Het registreren van het spleet is geïntegreerd in de [ Universele Dienst van de Redacteur voor lokale ontwikkeling, ](/help/implementing/universal-editor/local-dev.md) verbeterend toezicht en diagnostiek.
    * Deze integratie zorgt voor een efficiënte logboekregistratie, vloeiendere bewerkingen en snellere probleemoplossing.
 
 ## Opgeloste problemen {#bug-fixes}

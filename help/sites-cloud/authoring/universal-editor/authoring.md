@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1297'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Hiervoor verschaft de Universal Editor de auteur van inhoud een intuïtieve gebr
 
 ## Inhoud bewerken {#editing-content}
 
-Inhoud bewerken is eenvoudig en intuïtief. Terwijl u de muis over de inhoud in de editor beweegt, wordt bewerkbare inhoud gemarkeerd met een blauw vak.
+Inhoud bewerken is eenvoudig en intuïtief. Terwijl u de muis over de inhoud in de editor beweegt, wordt bewerkbare inhoud gemarkeerd met een dunne blauwe omtrek.
 
 ![ Bewerkbare inhoud wordt benadrukt door een blauw vakje ](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ U kunt de tekst op zijn plaats bewerken door te dubbelklikken op de component of
 
 ![ het Uitgeven inhoud ](assets/editing-content.png)
 
-Druk op Enter/Return of selecteer buiten het tekstvak om uw wijzigingen op te slaan.
+De dunne blauwe omtrek wordt omgezet in een zware blauwe omtrek om de selectie aan te geven en er wordt een cursor weergegeven. Breng de wijzigingen aan en druk vervolgens op Enter/Return of selecteer buiten het tekstvak om de wijzigingen op te slaan.
 
 Wanneer u selecteert om de tekstcomponent te selecteren, worden zijn details getoond in het [ eigenschappen spoor.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) U kunt de tekst ook in de rails bewerken.
 
@@ -65,10 +65,21 @@ U kunt de tekst op zijn plaats bewerken door te dubbelklikken op de component of
 
 Voor uw gemak zijn opmaakopties en details op uw tekst beschikbaar op twee plaatsen.
 
-* Het **contextmenu** opent boven het rijke tekstblok en biedt basishet formatteren opties in context aan. Vanwege ruimtebeperkingen kunnen sommige opties achter de knop voor ovaal worden verborgen.
-* De **[eigenschappen spoorstaaf](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)** toont alle het formatteren opties beschikbaar samen met de tekst.
+#### Het contextmenu {#context-menu}
+
+Het contextmenu wordt boven het tekstblok met tekstopmaak geopend en biedt in de context basisopmaakopties. Vanwege ruimtebeperkingen kunnen sommige opties achter de knop voor ovaal worden verborgen.
+
+![ Rich text context menu ](assets/rich-text-context-menu.png)
 
 Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat.
+
+#### Het deelvenster Eigenschappen {#properties-rail}
+
+De [ eigenschappen spoorstaaf ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) toont een punt voor de geselecteerde tekst. Tik op het item om een dialoogvenster te openen waarin een groter canvas wordt weergegeven om de tekst te bewerken.
+
+![ rijke tekst het uitgeven dialoog ](assets/rich-text-canvas.png)
+
+Tik of klik **annuleer** of **Gedaan** om de veranderingen, respectievelijk te verwerpen of te bewaren.
 
 ### Media bewerken {#edit-media}
 
@@ -95,9 +106,19 @@ Als u een veld selecteert dat verwant is aan een inhoudsfragment, wordt het inho
 
 Wijzigingen worden automatisch opgeslagen als de focus het bewerkte veld verlaat in de eigenschappenrails.
 
-Als u uw Fragment van de Inhoud in de [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) in plaats daarvan wilt uitgeven, klik [ uitgeven knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) in de eigenschappen spoorstaaf.
+Als u uw Fragment van de Inhoud in de [ redacteur van het Fragment van de Inhoud ](/help/sites-cloud/administering/content-fragments/authoring.md) in plaats daarvan wilt uitgeven, tik of klik [**Open in de Redacteur van het CF** knoop ](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) in het eigenschappen spoor.
+
+>[!TIP]
+>
+>Gebruik de sneltoets `e` om het geselecteerde inhoudsfragment te bewerken in de inhoudsfragmenteditor.
 
 Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht bewerken in de universele editor of rechtstreeks in de editor voor inhoudsfragmenten.
+
+>[!NOTE]
+>
+>De Universele Redacteur [ bevestigt de gebieden van het Fragment van de Inhoud die op hun modellen ](/help/assets/content-fragments/content-fragments-models.md#validation) worden gebaseerd die u toestaan om de regels van de gegevensintegriteit zoals regex patronen en uniqueness beperkingen af te dwingen.
+>
+>Dit zorgt ervoor dat uw inhoud aan specifieke bedrijfsvereisten alvorens het wordt gepubliceerd voldoet.
 
 ### Componenten toevoegen aan containers {#adding-components}
 
@@ -110,7 +131,7 @@ De component wordt opgenomen in de container en kan in de redacteur worden uitge
 
 >[!TIP]
 >
->Gebruik de sneltoets `A` om een component aan de geselecteerde container toe te voegen.
+>Gebruik de sneltoets `a` om een component aan de geselecteerde container toe te voegen.
 
 ### Componenten uit containers verwijderen {#deleting-components}
 

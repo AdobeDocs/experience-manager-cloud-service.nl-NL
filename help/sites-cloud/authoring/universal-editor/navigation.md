@@ -4,9 +4,9 @@ description: Leer de basisbeginselen van toegang tot en navigatie in de Universa
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 58c58243dc98a21161afe0976da4dcdc235da0d3
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Op de locatiebalk ziet u het adres van de pagina die u bewerkt. Selecteer deze o
 
 >[!TIP]
 >
->Open de adresbalk met de sneltoets `L` .
+>Open de adresbalk met de sneltoets `l` (de letter l).
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ In voorproefwijze, de pagina die in de redacteur wordt teruggegeven zoals het op
 
 >[!TIP]
 >
->Met de sneltoets `P` kunt u schakelen van en naar de voorvertoningsmodus.
+>Met de sneltoets `p` kunt u schakelen van en naar de voorvertoningsmodus.
 
 #### App-voorvertoning openen {#open-app-preview}
 
@@ -185,7 +185,11 @@ Selecteer het pictogram voor de voorvertoning van de geopende app om de pagina d
 
 >[!TIP]
 >
->Gebruik de sneltoets `O` (de letter O) om de voorvertoning van de app te openen.
+>Gebruik de sneltoets `o` (de letter o) om de voorvertoning van de app te openen.
+
+>[!TIP]
+>
+>De voorproef URL voor uw app [ kan worden aangepast.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
 
 #### Publish {#publish}
 
@@ -196,6 +200,14 @@ Selecteer de knop Publiceren zodat u de wijzigingen in de inhoud live kunt publi
 >[!TIP]
 >
 >Zie het document [ het Publiceren Inhoud met de Universele Redacteur ](publishing.md) voor meer informatie bij het publiceren met de Universele Redacteur.
+
+#### Weglatingsteken {#ellipsis}
+
+Aanvullende standaardopties zijn toegankelijk met de knop Ovaal.
+
+![ knoop van de Ellipsis ](assets/ellipsis.png)
+
+Bijvoorbeeld, is de capaciteit om een pagina (d.w.z. omgekeerd de actie van [**Publish** knoop ](#publish)) te publiceren toegankelijk via de ellipsieknoop.
 
 #### Aanvullende knoppen {#additional-toolbar-buttons}
 
@@ -216,7 +228,7 @@ Als de redacteur op [ voorproefwijze is, ](#preview-mode) zal de inhoud navigeer
 
 De eigenschap rail is altijd aanwezig langs de rechterkant van de redacteur. Afhankelijk van de modus, kunnen er details worden weergegeven voor een component die is geselecteerd in de inhoud of de hiërarchie van de pagina-inhoud.
 
-![ de eigenschappen spoorstaaf ](assets/component-rail.png)
+![ de eigenschappen spoorstaaf ](assets/properties-rail.png)
 
 #### Eigenschappenmodus {#properties-mode}
 
@@ -232,7 +244,7 @@ Niet alle componenten hebben details die kunnen worden getoond en/of worden uitg
 
 >[!TIP]
 >
->Gebruik de sneltoets `D` om over te schakelen naar de modus Eigenschappen.
+>Gebruik de sneltoets `d` om over te schakelen naar de modus Eigenschappen.
 
 #### Modus Inhoudsstructuur {#content-tree-mode}
 
@@ -246,21 +258,21 @@ Wanneer het selecteren van een punt in de inhoudsboom, scrolt de redacteur aan d
 
 >[!TIP]
 >
->Gebruik de hete sleutel `F` om over te schakelen op de modus van de inhoudstructuur.
+>Gebruik de hete sleutel `f` om over te schakelen op de modus van de inhoudstructuur.
 
-##### Bewerken {#edit}
+##### Openen in CF-editor {#edit}
 
-Tijdens het bewerken worden de opties voor de geselecteerde component weergegeven in de eigenschappenbalk, waar u de geselecteerde component kunt bewerken. Als de geselecteerde component een inhoudsfragment is, kunt u ook de knop Bewerken selecteren.
+Tijdens het bewerken worden de opties voor de geselecteerde component weergegeven in de eigenschappenbalk, waar u de geselecteerde component kunt bewerken. Als de geselecteerde component een Fragment van de Inhoud is, kunt u **Open in de redacteur van het CF** knoop ook selecteren.
 
-![ geef pictogram ](assets/edit.png) uit
+![ Open in het pictogram van de Redacteur van CF ](assets/open-in-cf-editor.png)
 
-Tapping of het klikken van uitgeven knoop opent de [ redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in een nieuw lusje. Hierdoor hebt u toegang tot alle mogelijkheden van de Content Fragment Editor om het bijbehorende Content Fragment te bewerken.
+Tapping of het klikken van **Open in de redacteur van het CF** knoop opent de [ redacteur van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in een nieuw lusje. Op deze manier hebt u toegang tot alle mogelijkheden van de editor voor inhoudsfragmenten om het bijbehorende inhoudsfragment te bewerken.
 
 Afhankelijk van de behoeften van uw workflow wilt u het inhoudsfragment wellicht bewerken in de universele editor of rechtstreeks in de editor voor inhoudsfragmenten.
 
 >[!TIP]
 >
->Gebruik de sneltoets `E` om een geselecteerde component te bewerken.
+>Gebruik de sneltoets `e` om een geselecteerd inhoudsfragment te openen in de inhoudsfragmenteditor.
 
 ##### Toevoegen {#add}
 
@@ -274,7 +286,7 @@ Het tikken of het klikken van toevoegen knoop opent een drop-down menu van compo
 
 >[!TIP]
 >
->Gebruik de sneltoets `A` om een component aan een geselecteerde containercomponent toe te voegen.
+>Gebruik de sneltoets `a` om een component aan een geselecteerde containercomponent toe te voegen.
 
 ##### Verwijderen {#delete}
 
