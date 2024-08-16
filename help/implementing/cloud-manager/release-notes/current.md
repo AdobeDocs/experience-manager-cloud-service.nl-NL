@@ -3,7 +3,7 @@ title: Opmerkingen bij de release voor Cloud Manager 2024.8.0 in Adobe Experienc
 description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.8.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: bf8bab5a195dde6cf15a2fd52e51d58c0215fdf3
+source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 20
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2024.8.0 in AEM as a Cloud Service is 12 augustus 2024. De volgende release is gepland voor 14 september 2024.
+De releasedatum voor Cloud Manager versie 2024.8.0 in AEM as a Cloud Service is 14 augustus 2024. De volgende release is gepland voor 14 september 2024.
 
 ## Nieuwe functies {#what-is-new}
 
