@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -23,40 +23,33 @@ Leer hoe u uw eigen SSL-certificaat kunt toevoegen met de zelfbedieningsprogramm
 
 ## Certificaatvereisten {#certificate-requirements}
 
-Herzie de sectie **Vereisten van het Certificaat** van de document [ Inleiding aan het Leiden SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) om ervoor te zorgen dat het certificaat u wilt toevoegen door AEM as a Cloud Service wordt gesteund.
+Herzie **Vereisten van het Certificaat** in [ Inleiding aan het Leiden SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) om ervoor te zorgen AEM as a Cloud Service het certificaat steunt dat u wilt toevoegen.
 
 ## Een certificaat toevoegen {#adding-a-cert}
-
-Ga als volgt te werk om een certificaat toe te voegen met Cloud Manager.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Navigeer aan **Milieu&#39;s** scherm van de **pagina van het Overzicht**.
+1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
-1. Klik **SSL Certificaten** van het linkernavigatievenster. Een tabel met details van bestaande SSL-certificaten wordt weergegeven op het hoofdscherm.
+1. Van het linkernavigatievenster, onder **Diensten**, klik **SSL Certificaten**. (Mogelijk moet u in de linkerbovenhoek op het hamburgerpictogram klikken om het navigatievenster te kunnen gebruiken. Er wordt een tabel weergegeven met de details van bestaande SSL-certificaten.
 
    ![ Toevoegend een SSL cert ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
 1. Klik **toevoegen SSL Certificaat** om **te openen voeg SSL de dialoogdoos van het Certificaat** toe.
 
-   * Ga een naam voor uw certificaat in **Naam van het Certificaat** in.
-      * Dit is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar uw certificaat kunt verwijzen.
-   * Plak het **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat** waarden in hun respectieve gebieden.
-      * Alle drie velden zijn verplicht.
+   * Ga een naam voor uw certificaat in **Naam van het Certificaat** in. Dit veld is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar het certificaat kunt verwijzen.
+   * Plak het **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat** waarden in hun respectieve gebieden. Alle drie velden zijn verplicht.
 
-   ![ voeg SSL de dialoog van het Certificaat toe ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![ voeg SSL de dialoogdoos van het Certificaat toe ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * Eventuele fouten worden weergegeven.
-      * U moet alle fouten aanpakken voordat uw certificaat kan worden opgeslagen.
-      * Zie [ sectie van de Fouten van het Certificaat ](#certificate-errors) om meer over het richten van gemeenschappelijke fouten te leren.
+   * Eventuele gevonden fouten in waarden worden weergegeven. Voordat u het certificaat kunt opslaan, moet u alle fouten verhelpen.
+Zie [ de fouten van het Certificaat ](#certificate-errors) om meer over het richten van gemeenschappelijke fouten te leren.
 
-1. Klik **sparen** om uw certificaat te bewaren.
+1. Klik **sparen**.
 
-Als het certificaat eenmaal is opgeslagen, wordt het weergegeven als een nieuwe rij in de tabel.
-
-![ Opgeslagen SSL certificaat ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![ Opgeslagen SSL certificaat ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png) Uw certificaat wordt nu getoond als nieuwe rij in de lijst, gelijkend op het beeld hierboven.
 
 >[!NOTE]
 >
@@ -100,7 +93,7 @@ Wanneer u een certificaat toevoegt, als er een fout optreedt die lijkt op het vo
 The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
 ```
 
-Waarschijnlijk hebt u het clientcertificaat opgenomen in de certificaatketen. Zorg ervoor dat het clientcertificaat niet in de keten is opgenomen en probeer het opnieuw.
+Waarschijnlijk hebt u het clientcertificaat opgenomen in de certificaatketen. Zorg ervoor dat de keten het clientcertificaat niet bevat en probeer het opnieuw.
 
 ### Certificaatbeleid {#certificate-policy}
 
@@ -110,7 +103,7 @@ Controleer het beleid van uw certificaat als de volgende fout optreedt.
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Het certificaatbeleid wordt gewoonlijk bepaald door ingesloten OID-waarden. Als u een certificaat op tekst uitvoert en naar de OID zoekt, wordt het beleid van het certificaat weergegeven.
+Ingesloten OID-waarden identificeren gewoonlijk het certificaatbeleid. Het uitvoeren van een certificaat naar tekst en het zoeken naar OID onthult het beleid van het certificaat.
 
 U kunt de certificaatdetails als tekst uitvoeren gebruikend het volgende voorbeeld als gids.
 
@@ -152,13 +145,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### Geldigheidsdatums certificaat {#certificate-validity-dates}
+### Geldigheidsdatums van certificaten {#certificate-validity-dates}
 
 Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is vanaf de huidige datum. Controleer de geldigheid van de certificaatketen.
 
 ## Volgende stappen {#next-steps}
 
-Gefeliciteerd! U hebt nu een werkend SSL-certificaat voor uw project. Dit is vaak een eerste stap bij het instellen van een aangepaste domeinnaam.
+Gefeliciteerd! U hebt nu een werkend SSL-certificaat voor uw project. Deze stap is vaak de eerste die een aangepaste domeinnaam instelt.
 
-* Zie het document [ Toevoegend een Naam van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) aan opstelling een naam van het douanedomein voort te zetten.
-* Zie het document [ Leiden SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) om over het bijwerken van en het beheren van uw SSL certificaten in Cloud Manager te leren.
+* Aan opstelling ziet een naam van het douanedomein, [ een Naam van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen.
+* Om over het bijwerken van en het beheren van uw SSL certificaten in Cloud Manager te leren, zie [ SSL Certificaten beheren ](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).
