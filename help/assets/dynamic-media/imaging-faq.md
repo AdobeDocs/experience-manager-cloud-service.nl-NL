@@ -6,9 +6,9 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3401'
+source-wordcount: '3402'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **Voordelen van Slimme Beeldvorming**
 
-Slimme afbeeldingen zorgen voor betere prestaties bij het leveren van afbeeldingen doordat de bestandsgrootte van afbeeldingen automatisch wordt geoptimaliseerd op basis van de clientbrowser die wordt gebruikt, de apparaatweergave en de netwerkvoorwaarden. Omdat de beelden het grootste deel van de ladingstijd van een pagina vormen, kan om het even welke prestatiesverbetering een diepgaande invloed op zaken KPIs zoals hogere omzettingspercentages, tijd die aan een plaats wordt doorgebracht, en lagere plaats hebben stuitende tarieven.
+Slimme afbeeldingen zorgen voor betere prestaties bij het leveren van afbeeldingen door de bestandsgrootte van de afbeelding automatisch te optimaliseren op basis van de gebruikte clientbrowser, de apparaatweergave en de netwerkvoorwaarden. Omdat de beelden het grootste deel van de ladingstijd van een pagina vormen, kan om het even welke prestatiesverbetering een diepgaande invloed op zaken KPIs zoals hogere omzettingspercentages, tijd die aan een plaats wordt doorgebracht, en lagere plaats hebben stuitende tarieven.
 
 De nieuwste belangrijkste voordelen van de nieuwste Smart Imaging zijn onder andere:
 
@@ -73,7 +73,7 @@ De nieuwste belangrijkste voordelen van de nieuwste Smart Imaging zijn onder and
 * [Pixelverhouding apparaat](#dpr)
 * [Netwerkbandbreedte](#bandwidth)
 
-### Over omzetten in browserindeling {#bfc}
+### Omzetting in browserindeling {#bfc}
 
 Als u Omzetting browserformaat inschakelt door `bfc=on` aan de URL van de afbeelding toe te voegen, worden JPEG en PNG voor verschillende browsers automatisch omgezet in een wegwerpversie met verlies in AVIF, WebP met verlies, JPEGXR met verlies en JPEG2000 met verlies. Voor browsers die deze indelingen niet ondersteunen, blijft Smart Imaging de JPEG of PNG gebruiken. De kwaliteit van de nieuwe indeling wordt samen met de indeling opnieuw berekend door Slimme afbeeldingen te maken.
 
@@ -81,7 +81,7 @@ U kunt Smart Imaging ook uitschakelen door `bfc=off` aan de URL van de afbeeldin
 
 Zie ook [ bfc ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) in het Beeld van Dynamic Media die en API teruggeven.
 
-### Info over de optimalisatie van de pixelverhouding van apparaten {#dpr}
+### Optimalisatie van apparaatpixelverhoudingen {#dpr}
 
 Pixelverhouding van apparaat (DPR) - ook wel CSS-pixelverhouding genoemd - is de relatie tussen de fysieke pixels van een apparaat en logische pixels. Vooral met de komst van Retina-schermen groeit de pixelresolutie van moderne mobiele apparaten snel.
 
@@ -106,7 +106,7 @@ Momenteel is de pixeldichtheid van het beeldscherm afkomstig van Akamai CDN-head
 
 Zie ook [ wanneer het werken met beelden ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [ wanneer het werken met Slim Uitsnijden ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### Info over netwerkbandbreedte optimaliseren {#bandwidth}
+### Informatie over netwerkbandbreedteoptimalisatie {#bandwidth}
 
 Als u Netwerkbandbreedte inschakelt, wordt automatisch de beeldkwaliteit aangepast die wordt aangeboden op basis van de werkelijke netwerkbandbreedte. Voor een slechte netwerkbandbreedte wordt DPR (Device Pixel Ratio)-optimalisatie automatisch uitgeschakeld, zelfs als deze al is ingeschakeld.
 
