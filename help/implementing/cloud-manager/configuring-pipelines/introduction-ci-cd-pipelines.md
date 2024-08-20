@@ -6,9 +6,9 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
+source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 # Cloud Manager CI/CD Pipelines {#intro-cicd}
 
-Leer meer over Cloud Manager CI/CD pijpleidingen en hoe zij kunnen worden gebruikt om uw code efficiënt op te stellen.
+Leer meer over Cloud Manager CI/CD (Continuous Integration/Continuous Delivery) pijpleidingen en hoe zij kunnen worden gebruikt om uw code efficiënt op te stellen.
 
 ## Inleiding {#introduction}
 
-Een CI/CD pijpleiding in Cloud Manager is een mechanisme om code van een bronbewaarplaats te bouwen en het in een milieu op te stellen. Een pijpleiding kan door een gebeurtenis, zoals een trekkrachtverzoek van een broncodebewaarplaats (namelijk een codeverandering), of op een regelmatige planning worden teweeggebracht om een versiecadence aan te passen.
+Een CI/CD pijpleiding in Cloud Manager is een mechanisme om code van een bronbewaarplaats te bouwen en het in een milieu op te stellen. Een gebeurtenis activeert een pijpleiding, zoals een trekkrachtverzoek van een broncodebewaarplaats zoals Git (namelijk een codeverandering). Of het kan worden geactiveerd volgens een regulier schema om overeen te komen met een releasecadence.
 
-Om een pijpleiding te vormen, moet u:
+Om een pijpleiding te vormen, moet u het volgende doen:
 
-* Bepaal de trekker die de pijpleiding zal beginnen.
-* Definieer de parameters die de productieimplementatie bepalen.
+* Bepaal de trekker die de pijpleiding begint.
+* Definieer de parameters die de productieplaatsing controleren.
 * Configureer de testparameters voor prestaties.
 
 Cloud Manager biedt twee soorten pijpleidingen:
@@ -41,55 +41,54 @@ Een productiepijpleiding is een doelgerichte pijpleiding die een reeks georkestr
 
 >[!TIP]
 >
->Zie [ Vormend een Pijpleiding van de Productie ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) voor meer details.
+>Zie [ een productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) vormen.
 
-## Niet-productiepijpleiding {#non-prod-pipeline}
+## Niet-productiepijpleidingen {#non-prod-pipeline}
 
 Een niet-productiepijpleiding dient hoofdzakelijk om codescannen in werking te stellen of broncode in een ontwikkelomgeving op te stellen.
 
 >[!TIP]
 >
->Zie [ Vormend een niet-Productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) voor meer details.
+>Zie [ een non-production pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) vormen.
 
 ## Codebronnen {#code-sources}
 
-Naast productie en niet-productie kunnen pijpleidingen worden gedifferentieerd naar het type code dat zij invoeren.
+De pijpleidingen kunnen ook verschillen door het type van code zij, naast productie en niet-productiemilieu&#39;s opstellen.
 
-* **[Volledige Pijpleidingen van de Stapel](#full-stack-pipeline)** - stelt gelijktijdig achterste en front-end codebouwstijlen op die één of meerdere AEM servertoepassingen samen met configuraties HTTPD/Dispatcher bevatten
-* **[Pijpleidingen Config](#config-deployment-pipeline)** - stel snel configuraties voor eigenschappen zoals logboek op door:sturen, purge-verwante onderhoudstaken, en diverse configuraties CDN zoals de regels van de verkeersfilter (met inbegrip van de regels van WAF), verzoek en reactietransformaties, oorsprongskiezers, cliënt-zijomleidingen, foutenpagina&#39;s, klant-beheerde sleutels CDN, zuiveren API sleutels, en basisgezag op.
-   * Gelieve te zien het document [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md) voor details.
-* **[voorste-Eind Pijpleidingen](#front-end)** - stel front-end code op bouwt die één of meerdere cliënt-zij toepassingen UI bevatten
-* **[de Lijnen van het Web Config Pipelines](#web-tier-config-pipelines)** - stelt configuraties HTTPD/Dispatcher op
+* **[Volledige stapelpijpleidingen](#full-stack-pipeline)** - stelt gelijktijdig achterste en front-end codebouwstijlen op die één of meerdere AEM servertoepassingen samen met configuraties HTTPD/Dispatcher bevatten.
+* **[Config pijpleidingen](#config-deployment-pipeline)** - u kunt configuraties voor eigenschappen zoals logboek snel opstellen door:sturen en op zuivering betrekking hebbende onderhoudstaken. Het omvat ook diverse configuraties CDN (het Netwerk van de Levering van de Inhoud), zoals de regels van de verkeersfilter, met inbegrip van de regels van de Firewall van de Toepassing van het Web (WAF). Daarnaast kunt u verzoek- en responstransformaties, oorspronkelijke kiezers, omleidingen aan de clientzijde, foutpagina&#39;s, CDN-sleutels, opruimAPI-sleutels en basisverificatie beheren. Zie [ pijpleidingen van Configuratie van het Gebruik ](/help/operations/config-pipeline.md) voor details.
+* **[voorste-eindpijpleidingen](#front-end)** - stel front-end code bouwt die één of meerdere cliënt-zijtoepassingen van het gebruikersinterface bevatten.
+* **[de pijpleidingen van Config van de rij van het Web](#web-tier-config-pipelines)** - stelt configuraties HTTPD/Dispatcher op.
 
-Deze worden later in dit document uitgebreid beschreven.
+Deze pijpleidingstypes worden beschreven in detail later in dit document.
 
-### KCI-CD-pijpleidingen in Cloud Manager {#understand-pipelines}
+### I.C.-CD pijpleidingen in Cloud Manager begrijpen {#understand-pipelines}
 
 De volgende tabel geeft een overzicht van de in Cloud Manager beschikbare pijpleidingen en het gebruik ervan.
 
 | Type pijpleiding | Implementatie- of codekwaliteit | Source-code | Doel | Notities |
-|--- |--- |--- |---|---|
-| Productie of niet-productie | Implementatie | Volledig stapel | Implementeert tegelijkertijd back-end- en front-end code samen met de configuraties HTTPD/Dispatcher | Wanneer front-end code met AEM servercode moet worden opgesteld.<br> wanneer front-end pijpleidingen of Web-rij config pijpleidingen nog niet zijn goedgekeurd. |
-| Productie of niet-productie | Implementatie | Voorkant | Implementeert front-end code-build die een of meer client-side UI-toepassingen bevat | Steunt veelvoudige, gezamenlijke front-end pijpleidingen <br> veel sneller dan volledig-stapelplaatsingen |
-| Productie of niet-productie | Implementatie | Config. web | HTML/Dispatcher-configuraties implementeren | Binnen enkele minuten implementeren |
+| --- | --- | --- | --- | ---|
+| Productie of niet-productie | Implementatie | Volledig stapel | Implementeert tegelijkertijd back-end- en front-end code samen met de configuraties HTTPD/Dispatcher | Gebruikt wanneer front-end code met AEM servercode moet worden opgesteld. Gebruikt wanneer de pijpleidingen aan de voorzijde of de configuratieleidingen aan de voorzijde nog niet zijn goedgekeurd. |
+| Productie of niet-productie | Implementatie | Voorkant | Implementeert front-end code-build die een of meer client-side UI-toepassingen bevat | Steunt veelvoudige, gezamenlijke front-end pijpleidingen <br> veel sneller dan volledig-stapel plaatsingen. |
+| Productie of niet-productie | Implementatie | Webconfiguratie | HTML/Dispatcher-configuraties implementeren | Binnen enkele minuten implementeren |
 | Productie of niet-productie | Implementatie | Config | Stelt [ configuratie voor een aantal eigenschappen ](/help/operations/config-pipeline.md) met betrekking tot CDN op, logboek het door:sturen, en zuivert onderhoudstaken | Binnen enkele minuten implementeren |
-| Niet-productie | Codekwaliteit | Volledig stapel | Hiermee wordt de codekwaliteit zonder implementatie gescand op een full-stack code | Ondersteunt meerdere pijpleidingen |
+| Niet-productie | Codekwaliteit | Volledige stapel | Hiermee wordt de codekwaliteit zonder implementatie gescand op een full-stack code | Ondersteunt meerdere pijpleidingen |
 | Niet-productie | Codekwaliteit | Voorkant | Hiermee wordt de codekwaliteit zonder implementatie gescand op de front-end code | Ondersteunt meerdere pijpleidingen |
-| Niet-productie | Codekwaliteit | Config. web | Hiermee wordt de codekwaliteit zonder implementatie gescand op de configuraties van de verzender | Ondersteunt meerdere pijpleidingen |
+| Niet-productie | Codekwaliteit | Webconfiguratie | Voert scans van de codekwaliteit op configuraties van Dispatcher zonder plaatsing in werking | Ondersteunt meerdere pijpleidingen |
 
 In het volgende diagram worden Cloud Manager-pijpleidingconfiguraties geïllustreerd met traditionele, single front-end opslagsystemen of onafhankelijke front-end opslagsystemen.
 
 ![ de pijpleidingsconfiguraties van Cloud Manager ](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
-## Full-Stack Pipelines {#full-stack-pipeline}
+## Pijpleidingen met volledige stapel {#full-stack-pipeline}
 
-De volledig-stapel pijpleidingen voeren achterste-eindcode, front-end code, en de configuraties van de Webrij op om runtime allen tezelfdertijd te AEM.
+De volledig-stapel pijpleidingen voeren achterste-eindcode, front-end code, en de configuraties van de Webrij aan AEM runtime allen tezelfdertijd op.
 
 * Back-endcode - Onveranderbare inhoud zoals Java-code, OSGi-configuraties, opnieuw aanwijzen en muteerbare inhoud
 * Front-end Code - Application UI-bronnen zoals JavaScript, CSS, lettertypen
 * Configuratie van de Rij van het Web - configuraties HTTPD/Dispatcher
 
-De full-stack pijpleiding vertegenwoordigt een &#39;uber&#39; pijpleiding, die alles in één keer doet, terwijl het geven van gebruikers de opties om hun front-end code of configuraties van Dispatcher via de front-end pijpleiding en de Web-rij config pijpleidingen exclusief op te stellen.
+De pijpleiding van de volledig-stapel vertegenwoordigt een &quot;uber&quot;pijpleiding. Het behandelt alles gelijktijdig, terwijl ook het toestaan van gebruikers om hun front-end code of configuraties van Dispatcher afzonderlijk op te stellen. Deze plaatsing is door de front-end pijpleiding en de Web-rij config pijpleidingen, respectievelijk.
 
 De volledig-stapel pijpleidingen verpakken front-end code (JavaScript/CSS) als [ AEM cliëntbibliotheken ](/help/implementing/developing/introduction/clientlibs.md).
 
@@ -102,36 +101,32 @@ De volgende beperkingen zijn van toepassing.
 
 Bovendien ben zich bewust van hoe de volledig-stapelpijpleiding zich gedraagt als u verkiest om a [ Web rij config pijpleiding te introduceren.](#web-tier-config-pipelines)
 
-* De volledig-stapelpijpleiding voor een milieu zal de configuratie van Dispatcher negeren als de overeenkomstige Web rij config pijpleiding bestaat.
+* De volledig-stapelpijpleiding voor een milieu negeert de configuratie van Dispatcher als de overeenkomstige Web rij config pijpleiding bestaat.
 * Als de overeenkomstige web rij config pijpleiding voor het milieu niet bestaat, kan de gebruiker de volledig-stapelpijpleiding vormen omvat of negeert de configuratie van Dispatcher.
 
 De volledig-stapel pijpleidingen kunnen de pijpleidingen of plaatsing van de codekwaliteit zijn.
 
-### Het vormen volledig-Stapel Pijpleidingen {#configure-full-stack}
+### Alle-stapelpijpleidingen configureren {#configure-full-stack}
 
-Leren hoe te om volledig-stapelpijpleidingen te vormen, zie de volgende documenten:
+Zie [ een productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code) toevoegen.
+Zie [ een niet productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code) toevoegen.
 
-* [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
-* [Een niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+## Config-pijpleidingen {#config-deployment-pipeline}
 
-## Config Pipelines {#config-deployment-pipeline}
+Gebruikend een config pijpleiding, kunt u montages voor logboek opstellen door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN, met inbegrip van de regels van de verkeersfilter (zoals de Firewall van de Toepassing van het Web van WAF). Daarnaast kunt u verzoek- en responstransformaties, oorspronkelijke kiezers, omleidingen aan de clientzijde, foutpagina&#39;s, door de klant beheerde CDN-sleutels, de API-sleutels en de basisverificatie beheren.
 
-Met een config pijpleiding kunt u configuraties voor logboek snel opstellen door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN zoals de regels van de verkeersfilter (met inbegrip van de regels van WAF), verzoek en reactietransformaties, oorsprongskiezers, cliënt-zijomleidingen, foutenpagina&#39;s, klant-beheerde sleutels CDN, zuiveren API sleutels, en basiscontrole.
+Zie [ het Gebruik config pijpleidingen van het Gebruik ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) voor een uitvoerige lijst van gesteunde eigenschappen en te leren hoe te om de configuraties in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
 
-Gelieve te zien het document [ Gebruikend Pijpleidingen Config ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) voor een uitvoerige lijst van gesteunde eigenschappen en te leren hoe te om de configuraties in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
+### Configuratiepijplijnen configureren {#configure-config-deployment}
 
-### Config Pipelines configureren {#configure-config-deployment}
-
-Leren hoe te om config pijpleidingen te vormen, zie de volgende documenten:
-
-* [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
-* [Een niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+Zie [ een productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) toevoegen.
+Zie [ een niet productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment) toevoegen.
 
 ## Pijpleidingen aan de voorzijde {#front-end}
 
 Voorste code is elke code die als statische bestanden wordt gebruikt. Het is verschillend van code UI die door AEM wordt gediend en kan plaatsthema&#39;s, klant-bepaalde SPA, SPA, en andere oplossingen omvatten.
 
-De front-end pijpleidingen helpen uw teams uw ontwerp en ontwikkelingsproces stroomlijnen door versnelde plaatsing van front-end code asynchroon van achterste-eindontwikkeling toe te laten. Deze speciale pijpleiding stelt JavaScript en CSS aan de AEM distributielaag als thema op, resulterend in een nieuwe themaversie die van pagina&#39;s door AEM kan worden van verwijzingen voorzien.
+De front-end pijpleidingen helpen uw teams uw ontwerp en ontwikkelingsproces stroomlijnen door versnelde plaatsing van front-end code, asynchroon van achterste-eindontwikkeling toe te laten. Deze speciale pijpleiding stelt JavaScript en CSS aan de AEM distributielaag als thema op, resulterend in een nieuwe themaversie, die van pagina&#39;s door AEM kan worden van verwijzingen voorzien.
 
 >[!NOTE]
 >
@@ -141,35 +136,33 @@ De front-end pijpleidingen helpen uw teams uw ontwerp en ontwikkelingsproces str
 
 Voorste pijpleidingen kunnen pijpleidingen van codekwaliteit zijn of uitzetpijpleidingen.
 
-### Alvorens u Voorste-Eind Pijpleidingen vormt {#before-start}
+### Voordat u front-end pijpleidingen configureert {#before-start}
 
-Alvorens u front-end pijpleidingen vormt, herzie de [ AEM Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md) voor een gids van begin tot eind door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Aanmaak van de Plaats. Deze reis zal u helpen uw front-end ontwikkeling stroomlijnen en u toestaan om uw plaats snel aan te passen zonder achterste-AEM kennis.
+Alvorens u front-end pijpleidingen vormt, herzie de [ AEM Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md) voor een gids van begin tot eind door het makkelijk te gebruiken AEM Snelle hulpmiddel van de Aanmaak van de Plaats. Deze reis helpt u uw front-end ontwikkeling te stroomlijnen en laat u uw plaats snel aanpassen zonder achterste-AEM kennis.
 
-### Vorm een Voorste-Eind Pijpleiding {#configure-front-end}
+### Vorm een front-end pijpleiding {#configure-front-end}
 
-Leren hoe te om front-end pijpleidingen te vormen, zie het volgende:
+Zie [ een productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) toevoegen.
+Zie [ een niet productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) toevoegen.
 
-* [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Een niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
-
-### Sites ontwikkelen met behulp van de voorste pijplijn {#developing-with-front-end-pipeline}
+### Sites ontwikkelen met de front-end pijplijn {#developing-with-front-end-pipeline}
 
 Met frontend pijpleidingen wordt meer onafhankelijkheid gegeven aan front-end ontwikkelaars en kan het ontwikkelingsproces worden versneld.
 
-Zie [ het Ontwikkelen Plaatsen met de Voorste-Eind Pijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) voor hoe dit proces samen met sommige overwegingen werkt om zich bewust te zijn van om het volledige potentieel uit dit proces te krijgen.
+Zie [ Ontwikkelen Plaatsen met de front-end pijpleiding ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) voor hoe dit proces samen met sommige overwegingen werkt om zich bewust te zijn van om het volledige potentieel uit dit proces te krijgen.
 
-## Webservicepijpleidingen {#web-tier-config-pipelines}
+## Webconfiguratieleidingen {#web-tier-config-pipelines}
 
-De configuratiepijpleidingen van het Web laten exclusieve plaatsing van configuratie HTTPD/Dispatcher aan AEM runtime toe door het van andere codeveranderingen te ontkoppelen. Het is een gestroomlijnde pijpleiding die gebruikers verstrekt die de configuratieveranderingen van de verzender slechts willen opstellen, een versnelde manier om dit in slechts een paar minuten te doen.
+De configuratiepijpleidingen van het Web staan exclusieve plaatsing van configuratie HTTPD/Dispatcher aan AEM runtime toe, die het van andere codeveranderingen loskoppelt. Het is een gestroomlijnde pijpleiding die gebruikers verstrekt die slechts de configuratieveranderingen van Dispatcher willen opstellen, een versnelde manier om dit in slechts een paar minuten te doen.
 
 >[!TIP]
 >
->Met de configuratiepijpleidingen van de Webrij, kunt u tussen het opslaan van uw Webconfig in de zelfde bronplaats kiezen zoals voor de volledige stapelpijpleiding of in een verschillende plaats, afhankelijk van welke structuur beter uw project aanpast.
+>De lijst van het Web config pijpleidingen laten u uw Webconfig in de zelfde of een verschillende bronplaats opslaan zoals de volledige stapelpijpleiding, afhankelijk van wat het beste uw projectstructuur aanpast.
 
 De volgende beperkingen zijn van toepassing.
 
-* U moet AEM versie `2021.12.6151.20211217T120950Z` of nieuwer zijn om config-pijpleidingen op het web te gebruiken.
-* U moet [ kiezen binnen aan de flexibele wijze van de dispatcherhulpmiddelen ](/help/implementing/dispatcher/disp-overview.md#validation-debug) om web-rij config pijpleidingen te gebruiken.
+* Gebruik AEM versie `2021.12.6151.20211217T120950Z` of hoger als u configuratieleidingen op het web wilt gebruiken.
+* [ Opt binnen aan de flexibele wijze van de hulpmiddelen van Dispatcher ](/help/implementing/dispatcher/disp-overview.md#validation-debug) om web-rij config pijpleidingen te gebruiken.
 * Een gebruiker moet met de **rol van de Manager van de Plaatsing worden geregistreerd 0} om pijpleidingen te vormen of in werking te stellen.**
 * Op elk ogenblik, kan er slechts één Web rij config pijpleiding per milieu zijn.
 * De gebruiker kan geen Web rij config pijpleiding vormen wanneer zijn overeenkomstige volledig-stapelpijpleiding loopt.
@@ -177,21 +170,19 @@ De volgende beperkingen zijn van toepassing.
 
 Bovendien ben zich bewust van hoe de [ volledige stapelpijpleiding ](#full-stack-pipeline) zich gedraagt wanneer het introduceren van een pijpleiding van de Webrij.
 
-* Als een Web rij config pijpleiding niet voor een milieu is gevormd, kan de gebruiker een selectie maken terwijl het vormen van zijn overeenkomstige volledig-stapelpijpleiding om de configuratie van Dispatcher tijdens uitvoering en plaatsing te omvatten of te negeren.
-* Zodra een Web rij config pijpleiding voor een milieu is gevormd, zal zijn overeenkomstige volledig-stapelpijpleiding (als één bestaat) de dispatcherconfiguratie tijdens uitvoering en plaatsing negeren.
+* Als een web rij config pijpleiding niet opstelling voor een milieu is, kan de gebruiker verkiezen om de configuratie van Dispatcher te omvatten of te negeren terwijl het vormen van de full-stack pijpleiding. Deze selectie wordt gemaakt tijdens uitvoering en implementatie.
+* Zodra een Web rij config pijpleiding voor een milieu wordt gevormd, zijn overeenkomstige volledig-stapelpijpleiding (als één bestaat) negeert de configuratie van Dispatcher tijdens uitvoering en plaatsing.
 * Nadat een configuratiepijplijn van de Webrij wordt geschrapt, wordt zijn overeenkomstige full-stack pijpleiding teruggesteld om de configuraties van Dispatcher tijdens zijn uitvoering op te stellen.
 
-De configuratiepijpleidingen van het Web kunnen van het type code kwaliteit of plaatsing zijn.
+Webniveau config-pijpleidingen kunnen van het type `Code quality` of `Deployment` zijn.
 
-### Het vormen Pijpleidingen van de Rij van het Web {#configure-web-tier}
+### Weblaagpijpleidingen configureren {#configure-web-tier}
 
-Raadpleeg de volgende documenten voor informatie over het configureren van pijpleidingen voor het web:
+Zie [ een productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) toevoegen.
+Zie [ een niet productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment) toevoegen.
 
-* [Een productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
-* [Een niet-productiepijpleiding toevoegen](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+## Video-overzicht van pijpleidingtypen {#video}
 
-## Video Overzicht van de Types van Pijpleiding {#video}
-
-Voor een snel overzicht van pijpleidingstypes, bekijk deze korte video.
+Bekijk de volgende video (2 minuten, 26 seconden) voor een snel overzicht van pijpleidingtypen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342363)
