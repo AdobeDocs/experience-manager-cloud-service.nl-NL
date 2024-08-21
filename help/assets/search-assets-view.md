@@ -4,7 +4,7 @@ description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Ass
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 0%
@@ -239,7 +239,7 @@ U kunt een voorvertoning weergeven om de lay-out en opmaak van de eerste homepag
 1. Ga naar **[!UICONTROL Customize search first homepage]** en klik op **[!UICONTROL Preview]** . Schakel de knop **[!UICONTROL Dark theme]** in en uit om een voorvertoning van de homepage weer te geven in donker of licht thema.
 1. Klik op **[!UICONTROL Close]** om het voorvertoningsscherm te sluiten.
 
-   ![ Onderzoek eerste homepage voorproef ](assets/search-first-preview.gif)
+   ![ Onderzoek eerste homepage voorproef ](/help/assets/assets/search-first-preview.gif)
 
 ## Contextueel zoeken {#contextual-search}
 
@@ -255,7 +255,7 @@ Toegang krijgen tot contextafhankelijke zoekopdrachten in Experience Manager Ass
 
 1. Definieer de tekstprompt in het tekstvak Zoeken en klik op **[!UICONTROL Contextual Search]** .
 
-   ![ Contextual de tekstherinnering van het Onderzoek ](assets/contextual-search-text-prompt.png)
+   ![ Contextual de tekstherinnering van het Onderzoek ](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets] geeft de zoekresultaten weer.
 
