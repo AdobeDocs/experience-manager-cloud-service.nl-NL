@@ -1,7 +1,7 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Aanbieding voor proefdrukken zonder koptekst {#headless-trials-promotion}
 
-[![ krijgen om onze hoofdCMS met 30 dagproef te kennen ](./assets/aem-headless-trial-promo.png){align="left"} ](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
+[![ krijgen om onze hoofd-loze CMS met 30 dagproef te kennen ](./assets/aem-headless-trial-promo.png){align="left"} ](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
 
 ## Authoring Edge Delivery Services {#edge-delivery-authoring}
 
@@ -127,3 +127,10 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 * [Inleiding tot aangepaste functies voor adaptieve Forms op basis van kerncomponenten](/help/forms/create-and-use-custom-functions.md)
 * [Een aangepaste functie maken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)
 * [Voorbeelden van het ontwikkelen en gebruiken van douanefunctie](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## IP-Lijsten van gewenste personen en pijpleidingen aan de voorzijde {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>Voeg hier de belangrijke opmerking toe.
