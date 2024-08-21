@@ -2,13 +2,13 @@
 title: Implementeren  [!DNL Content Hub]
 description: Leer hoe u Content Hub kunt implementeren en activeren en gebruikers toegang kunt bieden met verschillende typen rechten (middelen uploaden, gebruikers van Adoben Express) en hoe u beheerdersrechten kunt bieden aan gebruikers.
 role: Admin
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: 58194858-6e1c-460b-bab3-3496176b2851
+source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
-
 
 # Content Hub implementeren {#deploy-content-hub}
 
@@ -64,15 +64,23 @@ Als u nog geen ervaring hebt met Experience Manager Assets, klikt u op **[!UICON
 
 ### Content Hub-exemplaar en productprofiel op Admin Console{#content-hub-instance-product-profile}
 
-Na [ toelatend Content Hub voor Assets as a Cloud Service gebruikend Cloud Manager ](#enable-content-hub), is er een nieuwe instantie die binnen de Admin Console van AEM Assets as a Cloud Service met `contenthub` als achtervoegsel wordt gecreeerd:
+Na [ toelatend Content Hub voor Assets as a Cloud Service gebruikend Cloud Manager ](#enable-content-hub), is er een nieuwe instantie die binnen de Admin Console van AEM Assets as a Cloud Service met `delivery` als achtervoegsel wordt gecreeerd:
 
 ![ Nieuwe instantie voor Content Hub ](assets/new-instance-content-hub.png)
+
+>[!NOTE]
+>
+>Als u Content Hub vóór 14 augustus 2024 hebt ingericht, wordt de nieuwe instantie gemaakt met `contenthub` als achtervoegsel.
 
 De instantienaam voor Content Hub bevat geen `author` of `publish` .
 
 Klik op de instantienaam om het Content Hub-productprofiel weer te geven.
 
 ![ het productprofiel van Content Hub ](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>Als u Content Hub vóór 14 augustus 2024 hebt ingericht, wordt het Content Hub-productprofiel `contenthub` vermeld na `Limited Users` in plaats van `delivery` .
 
 ## Stap 2: on-board Content Hub-beheerder {#onboard-content-hub-administrator}
 
@@ -192,6 +200,3 @@ Experience Manager Assets-gebruikers configureren:
    >[!NOTE]
    >
    > U te hoeven niet aan het [ het productprofiel van Content Hub ](#onboard-content-hub-users) voor de gebruikers van Experience Manager Assets worden toegevoegd.
-
-
-
