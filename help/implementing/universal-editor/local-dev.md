@@ -4,9 +4,9 @@ description: Leer hoe de Universele Redacteur het uitgeven op lokale AEM instant
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5a6795056090908652a72730939024e974a9a697
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Hiervoor moet u AEM instellen voor uitvoering op HTTPS. Voor ontwikkelingsdoelei
 
 De Universele Dienst van de Redacteur is geen volledig exemplaar van de Universele Redacteur, maar slechts een ondergroep van zijn eigenschappen om ervoor te zorgen dat de vraag van uw lokale AEM milieu niet over Internet wordt verpletterd, maar van een bepaald eindpunt u controleert.
 
-[ versie 16 NodeJS ](https://nodejs.org/en/download/releases) wordt vereist om een lokaal exemplaar van de Universele Dienst van de Redacteur in werking te stellen.
+[ versie NodeJS 20 ](https://nodejs.org/en/download/releases) wordt vereist om een lokaal exemplaar van de Universele Dienst van de Redacteur in werking te stellen.
 
 De Universal Editor Service is beschikbaar via Software Distribution. Gelieve te zien de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) voor details op hoe te om tot het toegang te hebben.
 
@@ -63,18 +63,36 @@ Een aantal omgevingsvariabelen moet in NodeJS worden ingesteld om de Universal E
 Maak een `.env` -bestand met de volgende inhoud op hetzelfde pad als de `universal-editor-service.cjs` -, `key.pem` - en `certificate.pem` -bestanden.
 
 ```text
-EXPRESS_PORT=8000
-EXPRESS_PRIVATE_KEY=./key.pem
-EXPRESS_CERT=./certificate.pem
-NODE_TLS_REJECT_UNAUTHORIZED=0
+UES_PORT=8000
+UES_PRIVATE_KEY=./key.pem
+UES_CERT=./certificate.pem
+UES_TLS_REJECT_UNAUTHORIZED=false
 ```
 
-De variabele heeft de volgende betekenis:
+Dit zijn de minimumwaarden die vereist zijn voor lokale ontwikkeling in ons voorbeeld. In de volgende tabel worden deze en aanvullende waarden beschreven.
 
-* `EXPRESS_PORT`: definieert op welke poort de Universal Editor Service luistert
-* `EXPRESS_PRIVATE`: Punten aan uw [ eerder-gecreeerde privé sleutel, ](#ue-https) `key.pem`
-* `EXPRESS_CERT`: Punten aan uw [ eerder-gecreeerd certificaat, ](#ue-https) `certificate.pem`
-* `NODE_TLS_REJECT_UNAUTHORIZED=0`: accepteert zelfondertekende certificaten
+| Waarde | Optioneel | Standaard | Beschrijving |
+|---|---|---|---|
+| `UES_PORT` | Ja | `8080` | Poort waarop de server wordt uitgevoerd |
+| `UES_PRIVATE_KEY` | Ja | Geen | Pad naar de persoonlijke sleutel voor de HTTPS-server |
+| `UES_CERT` | Ja | Geen | Pad naar het certificeringsbestand voor de HTTPS-server |
+| `UES_TLS_REJECT_UNAUTHORIZED` | Ja | `true` | Niet-geautoriseerde TLS-verbindingen negeren |
+| `UES_DISABLE_IMS_VALIDATION` | Ja | `false` | IMS-validatie uitschakelen |
+| `UES_ENDPOINT_MAPPING` | Ja | Leeg | Toewijzing van de eindpunten voor intern herschrijft <br> Voorbeeld: `UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br> Resultaat: De Universele Dienst van de Redacteur zal met `http://10.0.0.1:4502` in plaats van de verstrekte verbinding `https://your-public-facing-author-domain.net` verbinden |
+| `UES_LOG_LEVEL` | Ja | `info` | Logniveau voor de server, mogelijke waarden zijn `silly`, `trace`, `debug`, `verbose`, `info`, `log`, `warn`, `error` en `fatal` |
+| `UES_SPLUNK_HEC_URL` | Ja | Geen | HEC URL aan Splunk eindpunt |
+| `UES_SPLUNK_TOKEN` | Ja | Geen | Splunk-token |
+| `UES_SPLUNK_INDEX` | Ja | Geen | Index die moet worden gebruikt voor het schrijven van logbestanden naar |
+| `UES_SPLUNK_SOURCE` | Ja | `universal-editor-service` | Naam van de bron in de splunklogboeken |
+
+>[!NOTE]
+>
+>Voorafgaand aan de [ versie 2024.08.13 ](/help/release-notes/universal-editor/current.md) van de Universele Redacteur, werden de volgende variabelen vereist in het `.env` dossier. Deze waarden worden tot 1 oktober 2024 ondersteund voor achterwaartse compatibiliteit.
+>
+>`EXPRESS_PORT=8000`
+>`EXPRESS_PRIVATE_KEY=./key.pem`
+>`EXPRESS_CERT=./certificate.pem`
+>`NODE_TLS_REJECT_UNAUTHORIZED=0`
 
 ## De Universal Editor-service uitvoeren {#running-ue}
 
