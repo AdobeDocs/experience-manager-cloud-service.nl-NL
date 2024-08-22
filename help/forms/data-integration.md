@@ -4,9 +4,9 @@ description: Haal gegevens op en sla deze op voor RESTful-webservices, SOAP webs
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,10 @@ Lees het volgende om gegevensintegratie te beginnen, te begrijpen en te implemen
 * [Werken met het formuliergegevensmodel (FDM)](work-with-form-data-model.md)
 * [Formuliergegevensmodel (FDM) gebruiken](using-form-data-model.md)
 
+<!--
+
 >[!NOTE]
 >
->[!UICONTROL Experience Manager Forms] biedt geen ondersteuning voor relationele databases.
+>[!UICONTROL Experience Manager Forms] does not support relational database.
+
+-->

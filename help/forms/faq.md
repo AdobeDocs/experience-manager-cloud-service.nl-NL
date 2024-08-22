@@ -6,9 +6,9 @@ role: User
 feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -76,8 +76,8 @@ Nee, de stap Verifiëren is niet beschikbaar voor [!DNL Forms] as a Cloud Servic
 * **Kan ik grafieken aan een Aangepast Vorm toevoegen?**
 Ja, u kunt grafieken toevoegen aan Adaptive Forms. Adaptive Forms biedt een diagramcomponent. U kunt hiermee grafieken toevoegen aan een adaptief formulier.
 
-* **kan ik een Model van de Gegevens van de Vorm (FDM) met een relationeel gegevensbestandmodel verbinden?**
-U kunt een formuliergegevensmodel (FDM) verbinden met [!DNL RESTful web services] , [!DNL SOAP-based web services] , [!DNL OData services] en een gebruikersprofiel voor Experience Managers als gegevensbronnen. Ondersteuning voor het verbinden van een formuliergegevensmodel (FDM) met een relationele database is niet beschikbaar.
+* **Kan ik een Model van de Gegevens van de Vorm met een relationeel gegevensbestandmodel verbinden?**
+U kunt een formuliergegevensmodel verbinden met een gebruikersprofiel voor [!DNL RESTful web services] , [!DNL SOAP-based web services] , [!DNL OData services] en Experience Managers als gegevensbronnen. <!--Support to connect a Form Data Model with a relational database is not available.-->
 
 * **Kan ik douanecertificaten met het Model van de Gegevens van de Vorm (FDM) voor authentificatie gebruiken?**
 FDM (Form Data Model) biedt geen methode om aangepaste certificaten voor verificatie te gebruiken. De aangepaste certificaten zoals x509 en 2-way SSL worden dus niet ondersteund.
