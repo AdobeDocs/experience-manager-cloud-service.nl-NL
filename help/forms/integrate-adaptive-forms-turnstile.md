@@ -7,12 +7,15 @@ hide: true
 hidefromtoc: true
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: d69d64a02c62b9a796188107cfe1ab7543b5a2be
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
+
+
+# Turnstile CAPTCHA integreren met Adaptieve Forms
 
 <span class="preview"> Deze functie valt onder het programma Vroege adoptie. U kunt vanaf uw officiële e-mailadres naar aem-forms-ea@adobe.com schrijven om deel te nemen aan het programma voor vroege adoptie en toegang tot de functie te vragen. </span>
 
