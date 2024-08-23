@@ -4,9 +4,9 @@ description: Meer informatie over zoeken en indexeren van inhoud in AEM as a Clo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 65e67225a6a91d871218c12c4696dd281787cd58
+source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
 workflow-type: tm+mt
-source-wordcount: '2449'
+source-wordcount: '2531'
 ht-degree: 0%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 0%
 
 ## Wijzigingen in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Met AEM as a Cloud Service beweegt de Adobe zich van een AEM instantie-centric model naar een op dienst-gebaseerde mening met n-x AEM Containers, die door CI/CD pijpleidingen in Cloud Manager wordt aangedreven. In plaats van het vormen van en het handhaven van Indexen op enige AEM instanties, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als niet nader aangegeven, getest en opnieuw geïndexeerd voordat deze in productie worden genomen.
+Met AEM as a Cloud Service beweegt de Adobe zich van een AEM instantie-centric model naar een op dienst-gebaseerde mening met n-x AEM Containers, die door CI/CD pijpleidingen in Cloud Manager wordt aangedreven. In plaats van het vormen van en het handhaven van Indexen op enige AEM instanties, moet de configuratie van de Index vóór een plaatsing worden gespecificeerd. De veranderingen van de configuratie in productie zijn duidelijk het beleid van CI/CD breken. Hetzelfde geldt voor indexwijzigingen, aangezien dit van invloed kan zijn op de stabiliteit en de prestaties van het systeem als deze niet worden gespecificeerd, getest en opnieuw worden gedestilleerd voordat ze in productie worden genomen.
 
 Hieronder volgt een lijst met de belangrijkste wijzigingen ten opzichte van AEM 6.5 en eerdere versies:
 
 1. De gebruikers hebben geen toegang tot de Manager van de Index van één enkele AEMInstantie om, indexeren te zuiveren te vormen of te handhaven. Het wordt alleen gebruikt voor lokale ontwikkeling en on-prem-implementaties.
 1. De gebruikers veranderen geen Indexen op één enkel AEMInstantie noch moeten zij zich over consistentiecontroles of het opnieuw indexeren meer ongerust maken.
 1. Over het algemeen worden indexwijzigingen aangevangen voordat naar de productie wordt gegaan om de kwaliteitsgateways in de Cloud Manager-CBI/Cd-pijpleidingen niet te omzeilen en geen invloed te hebben op de KPI&#39;s van de bedrijfsvoering in de productie.
-1. Alle verwante metriek, met inbegrip van onderzoeksprestaties in productie, is beschikbaar voor klanten bij runtime om de holistische mening over de onderwerpen van Onderzoek en het Indexeren te verstrekken.
+1. Alle verwante metriek, met inbegrip van onderzoeksprestaties in productie, zijn beschikbaar voor klanten bij runtime om de holistische mening over de onderwerpen van Onderzoek en het Indexeren te verstrekken.
 1. Klanten kunnen waarschuwingen instellen op basis van hun behoeften.
 1. SRE&#39;s controleren de systeemgezondheid 24/7 en er wordt zo snel mogelijk actie ondernomen.
 1. Indexconfiguratie wordt gewijzigd via implementaties. Wijzigingen in indexdefinities worden net als andere wijzigingen in de inhoud geconfigureerd.
@@ -71,11 +71,11 @@ Een indexdefinitie kan in één van de volgende categorieën vallen:
 >
 >Als het aanpassen van een uit-van-de-doos index, bijvoorbeeld, `damAssetLucene-8`, kopieer de recentste uit-van-de-doos indexdefinitie van het milieu van de a *Cloud Service* gebruikend de Manager van het Pakket CRX DE (`/crx/packmgr/`). Wijzig de naam in `damAssetLucene-8-custom-1` (of hoger) en voeg uw aanpassingen toe in het XML-bestand. Dit zorgt ervoor dat de vereiste configuraties niet per ongeluk worden verwijderd. Het knooppunt `tika` onder `/oak:index/damAssetLucene-8/tika` is bijvoorbeeld vereist in de aangepaste index die wordt geïmplementeerd in een AEM Cloud Service-omgeving, maar bestaat niet in de lokale AEM SDK.
 
-Maak voor aanpassingen van een OOTB-index een nieuw pakket met de feitelijke indexdefinitie die volgt op dit naamgevingspatroon:
+Voor aanpassingen van een OOTB-index bereidt u een nieuw pakket voor dat de feitelijke indexdefinitie bevat die volgt op dit naamgevingspatroon:
 
 `<indexName>-<productVersion>-custom-<customVersion>`
 
-Voor een volledig aangepaste index bereidt u een nieuw indexdefinitiepakket voor dat de indexdefinitie bevat die volgt op dit naamgevingspatroon:
+Voor een volledig aangepaste index maakt u een nieuw indexdefinitiepakket dat de indexdefinitie bevat die volgt op dit naamgevingspatroon:
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
@@ -165,7 +165,7 @@ Bestandsnaam: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-cus
 
 ## Projectconfiguratie
 
-We raden u ten zeerste aan versie >= `1.3.2` van het Jackrabbit `filevault-package-maven-plugin` te gebruiken. U kunt dit als volgt in uw project opnemen:
+We raden u ten zeerste aan om versie >= `1.3.2` van het Jackrabbit `filevault-package-maven-plugin` te gebruiken. U kunt dit als volgt in uw project opnemen:
 
 1. Werk de versie op het hoogste niveau bij `pom.xml` :
 
@@ -308,11 +308,22 @@ Nadat de Adobe een uit-van-de-doos index zoals &quot;damAssetLucene&quot;of &quo
 | /oak:index/cqPageLucene | Ja | Ja | Nee |
 | /oak:index/cqPageLucene-2 | Ja | Nee | Ja |
 
+Het is belangrijk om op te merken dat de milieu&#39;s op verschillende AEM versies zouden kunnen zijn. De `dev` -omgeving staat bijvoorbeeld op de release `X+1` terwijl het werkgebied en de prod nog steeds op de release staan `X` en wachten op upgrade tot de `X+1` -omgeving wordt uitgebracht nadat de vereiste tests op `dev` zijn uitgevoerd. Als release `X+1` wordt geleverd met een nieuwere versie van een productindex die is aangepast en een nieuwe aanpassing van die index is vereist, wordt in de volgende tabel uitgelegd welke versies moeten worden ingesteld in omgevingen die zijn gebaseerd op de AEM release:
+
+| Omgeving (versie AEM release) | Versie van productindex | Bestaande aangepaste indexversie | Nieuwe aangepaste indexversie |
+|-----------------------------------|-----------------------|-------------------------------|----------------------------|
+| Dev (X+1) | damAssetLucene-11 | damAssetLucene-11-custom-1 | damAssetLucene-11-custom-2 |
+| Werkgebied (X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+| Prod (X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
+
+
 ### Huidige beperkingen {#current-limitations}
 
 Indexbeheer wordt alleen ondersteund voor indexen van het type `lucene` met `compatVersion` ingesteld op `2` . Intern, zouden andere indexen voor vragen, bijvoorbeeld, Elasticsearch indexen kunnen worden gevormd en worden gebruikt. Query&#39;s die op basis van de `damAssetLucene` -index zijn geschreven, kunnen in AEM as a Cloud Service worden uitgevoerd op een versie van deze index die Elasticsearch is. Dit verschil is onzichtbaar voor de gebruiker van de toepassing, maar bepaalde gereedschappen, zoals de functie `explain` , rapporteren een andere index. Voor verschillen tussen Lucene en Elasticsearch indexen, zie [ de documentatie van de Elasticsearch in Apache Jackrabbit Oak ](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Klanten kunnen en hoeven Elasticsearch-indexen niet rechtstreeks te configureren.
 
 Alleen ingebouwde analysatoren worden ondersteund (dat wil zeggen de analysatoren die bij het product worden geleverd). Aangepaste analysatoren worden niet ondersteund.
+
+Het indexeren van de inhoud van `/oak:index` wordt momenteel niet ondersteund.
 
 Voor de beste operationele prestaties, zouden de indexen niet bovenmatig groot moeten zijn. De totale grootte van alle indexen kan als richtlijn worden gebruikt. Als deze grootte na het toevoegen van aangepaste indexen met meer dan 100% toeneemt en de standaardindexen in een ontwikkelomgeving zijn aangepast, moeten de aangepaste indexdefinities worden aangepast. AEM as a Cloud Service kan voorkomen dat indexen worden geïmplementeerd die de stabiliteit en prestaties van het systeem negatief beïnvloeden.
 
@@ -350,30 +361,7 @@ Soms wordt het nodig om een wijziging in een indexdefinitie ongedaan te maken. D
 
 Het volgende is alleen van toepassing op aangepaste indexen. Productindexen kunnen niet worden verwijderd omdat ze door AEM worden gebruikt.
 
-Als een index in een recentere versie van de toepassing wordt verwijderd, kunt u een lege index (een lege index bepalen die nooit wordt gebruikt, en geen gegevens bevat), met een nieuwe naam. In dit voorbeeld kunt u de naam `/oak:index/acme.product-custom-3` geven. Deze naam vervangt de index `/oak:index/acme.product-custom-2`. Nadat `/oak:index/acme.product-custom-2` is verwijderd door het systeem, kan de lege index `/oak:index/acme.product-custom-3` vervolgens worden verwijderd. Een voorbeeld van een dergelijke lege index is:
-
-```xml
-<acme.product-custom-3
-        jcr:primaryType="oak:QueryIndexDefinition"
-        async="async"
-        compatVersion="2"
-        includedPaths="/dummy"
-        queryPaths="/dummy"
-        type="lucene">
-        <indexRules jcr:primaryType="nt:unstructured">
-            <rep:root jcr:primaryType="nt:unstructured">
-                <properties jcr:primaryType="nt:unstructured">
-                    <dummy
-                        jcr:primaryType="nt:unstructured"
-                        name="dummy"
-                        propertyIndex="{Boolean}true"/>
-                </properties>
-            </rep:root>
-        </indexRules>
-</acme.product-custom-3>
-```
-
-Als het niet meer nodig is om een uit-van-de-doos index te hebben, dan moet u de uit-van-de-doos indexdefinitie kopiëren. Als u bijvoorbeeld `damAssetLucene-8-custom-3` al hebt geïmplementeerd, maar de aanpassingen niet meer nodig hebt en wilt terugschakelen naar de standaard `damAssetLucene-8` -index, moet u een index `damAssetLucene-8-custom-4` toevoegen die de indexdefinitie van `damAssetLucene-8` bevat.
+Een aangepaste index kan in een recentere versie van de klantentoepassing worden verwijderd, door het uit de klantenbewaarplaats te verwijderen. Een index die uit de gegevensopslagplaats wordt verwijderd wordt niet gebruikt voor vragen in AEM hoewel het nog wel een tijdje aanwezig kan zijn in de instanties. Er is een opschoningsmechanisme aanwezig dat regelmatig wordt uitgevoerd en oudere versies van indexen van de instanties opruimt.
 
 ## Optimalisatie van index en query {#index-query-optimizations}
 
