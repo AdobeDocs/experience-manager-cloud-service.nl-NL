@@ -4,7 +4,7 @@ description: Leer hoe u middelen kunt zoeken en ontdekken in de weergave AEM Ass
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
+source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 0%
@@ -149,7 +149,7 @@ Nieuwe elementen genereren met [!DNL Adobe Firefly] :
 
    * Ga een naam voor het dossier op **sparen als** gebied in.
    * Selecteer een doelmap.
-   * Geef details op zoals de naam van het project of de campagne, Trefwoorden, kanalen, het tijdframe en het gebied.
+   * Voer details in, zoals de naam van een project of campagne, Trefwoorden, kanalen, het tijdframe en het gebied.
 
    ![ integratie van de Firefly ](assets/save-generated-asset.png)
 
