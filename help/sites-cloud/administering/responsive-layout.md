@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 0%
@@ -223,9 +223,9 @@ Voor een effectieve responsieve lay-out moet de auteur van de inhoud instanties 
 
 Auteurs kunnen meer responsieve rasters toevoegen aan de inhoudspagina&#39;s als u de component Layout Container voor uw pagina wilt inschakelen. U kunt dit doen door:
 
-* **via het Milieu van de Auteur** - [ geeft uw paginasjablonen ](/help/sites-cloud/authoring/sites-console/templates.md) uit om de Container van de Lay-out voor een pagina toe te laten.
+* **via het Milieu van de Auteur** - [ geeft uw paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) uit om de Container van de Lay-out voor een pagina toe te laten.
 * **de Definitie van de Component** - Gebruik `allowedComponent` of statisch omvat wanneer het bepalen van de component.
 
 ### Het raster van de container van de layout configureren {#configure-the-grid-of-the-layout-container}
 
-U kunt het aantal kolommen beschikbaar voor elke specifieke instantie van lay-outcontainer [ vormen door uw paginasjablonen uit te geven.](/help/sites-cloud/authoring/sites-console/templates.md)
+U kunt het aantal kolommen beschikbaar voor elke specifieke instantie van lay-outcontainer [ vormen door uw paginasjablonen uit te geven.](/help/sites-cloud/authoring/page-editor/templates.md)

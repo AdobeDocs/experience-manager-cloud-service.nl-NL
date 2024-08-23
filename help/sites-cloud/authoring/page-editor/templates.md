@@ -2,9 +2,12 @@
 title: Paginasjablonen maken
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: c79aeaab9d33f1c2a15f93d58847798c6caff31c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4524'
 ht-degree: 7%
 
 ---
@@ -13,7 +16,7 @@ ht-degree: 7%
 
 Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt als basis voor het maken van de nieuwe pagina. De sjabloon definieert de structuur van de resulterende pagina, eventuele eerste inhoud en de componenten die kunnen worden gebruikt.
 
-Met de **Redacteur van het Malplaatje**, die en malplaatjes creëren handhaven is geen ontwikkelaar-enige taak. Een hoofdgebruiker die ook **maker van sjablonen** wordt genoemd, kan ook worden betrokken. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de **maker van sjablonen** sjablonen maken en configureren zonder een ontwikkelingsproject.
+Met de **Sjablooneditor** is het creëren en onderhouden van sjablonen niet meer alleen een taak voor ontwikkelaars. Een hoofdgebruiker die ook **maker van sjablonen** wordt genoemd, kan ook worden betrokken. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de **maker van sjablonen** sjablonen maken en configureren zonder een ontwikkelingsproject.
 
 De **Console van Malplaatjes** staat malplaatjeauteurs toe om:
 
@@ -78,7 +81,7 @@ Bij het maken van een bewerkbare sjabloon:
    * [ Structuur ](#editing-a-template-structure-template-author) - vooraf bepaalde inhoud die niet op pagina&#39;s kan worden veranderd die met het malplaatje worden gecreeerd.
    * [ Aanvankelijke Inhoud ](#editing-a-template-initial-content-author) - vooraf bepaalde inhoud die op pagina&#39;s kan worden veranderd die met het malplaatje worden gecreeerd.
    * [ Lay-out ](#editing-a-template-layout-template-author) - voor een waaier van apparaten.
-   * [ Stijlen ](/help/sites-cloud/authoring/features/style-system.md) - bepaal de stijlen die met het malplaatje en zijn componenten moeten worden gebruikt.
+   * [ Stijlen ](/help/sites-cloud/authoring/page-editor/style-system.md) - bepaal de stijlen die met het malplaatje en zijn componenten moeten worden gebruikt.
 * [ laat het malplaatje ](#enabling-a-template-template-author) voor gebruik toe wanneer het creëren van een pagina
 * [ sta het malplaatje ](#allowing-a-template-author) voor de vereiste pagina of tak van uw website toe
 * [ Publish het malplaatje ](#publishing-a-template-template-author) om het op te stellen publiceert milieu
@@ -184,7 +187,7 @@ Een malplaatje kan worden toegelaten of worden onbruikbaar gemaakt om het beschi
 
 1. In de **Console van Malplaatjes**, selecteer het malplaatje.
 1. Selecteer **toelaten** of **onbruikbaar maken** van de toolbar, en opnieuw in de bevestigingsdialoog.
-1. U kunt uw malplaatje nu gebruiken wanneer [ creërend een pagina ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), hoewel u waarschijnlijk het malplaatje [ ](#editing-templates-template-authors) volgens uw vereisten zult willen uitgeven.
+1. U kunt uw malplaatje nu gebruiken wanneer [ creërend een pagina ](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), hoewel u waarschijnlijk het malplaatje [ ](#editing-templates-template-authors) volgens uw vereisten zult willen uitgeven.
 
 >[!NOTE]
 >
@@ -194,7 +197,7 @@ Een malplaatje kan worden toegelaten of worden onbruikbaar gemaakt om het beschi
 
 Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
 
-1. Open de [ Eigenschappen van de Pagina ](/help/sites-cloud/authoring/fundamentals/page-properties.md) voor de wortelpagina van de tak waar u het malplaatje beschikbaar wilt zijn.
+1. Open de [ Eigenschappen van de Pagina ](/help/sites-cloud/authoring/sites-console/page-properties.md) voor de wortelpagina van de tak waar u het malplaatje beschikbaar wilt zijn.
 1. Open het **Geavanceerde** lusje.
 1. Gebruik onder **Sjablooninstellingen** de optie **Veld toevoegen** om het pad of de paden naar de sjabloon of sjablonen op te geven.
 
@@ -270,7 +273,7 @@ Wanneer een component is ontgrendeld kunt u de [ aanvankelijke inhoud ](#editing
 
 #### Layout {#template-layout}
 
-Met de [lay-out](#editing-a-template-layout-template-author) kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf bepalen. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus [**Lay-out** voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+Met de [lay-out](#editing-a-template-layout-template-author) kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf bepalen. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus [**Lay-out** voor het ontwerpen van pagina&#39;s](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Paginabeleid {#template-page-policies}
 
@@ -278,9 +281,9 @@ Met de [lay-out](#editing-a-template-layout-template-author) kunt u de sjabloonl
 
 #### Stijlen {#template-styles}
 
-Het [ Systeem van de Stijl ](/help/sites-cloud/authoring/features/style-system.md) staat een malplaatjeauteur toe om stijlklassen in het inhoudsbeleid van een component te bepalen zodat een inhoudsauteur hen kan selecteren wanneer het uitgeven van de component op een pagina. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
+Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 
-Zie de [ documentatie van het Systeem van de Stijl ](/help/sites-cloud/authoring/features/style-system.md) voor meer informatie.
+Gelieve te zien de [ documentatie van het Systeem van de Stijl ](/help/sites-cloud/authoring/page-editor/style-system.md) voor meer informatie.
 
 ### Een sjabloon bewerken - Structuur - Sjabloonauteur {#editing-a-template-structure-template-author}
 
@@ -319,7 +322,7 @@ Na toevoeging wordt elke component gemarkeerd met:
 
 >[!NOTE]
 >
->Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen aan gelijkaardige acties wanneer [ pagina creatie ](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+>Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen aan gelijkaardige acties wanneer [ pagina creatie.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 #### Componenthandelingen {#component-actions}
 
@@ -536,7 +539,7 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 
 ### Een sjabloon bewerken - Layout - Sjabloonauteur {#editing-a-template-layout-template-author}
 
-U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [ Responsieve lay-out ](/help/sites-cloud/authoring/features/responsive-layout.md) voor malplaatjes werkt aangezien het voor pagina creatie doet.
+U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [ Responsieve lay-out ](/help/sites-cloud/authoring/page-editor/responsive-layout.md) voor malplaatjes werkt aangezien het voor pagina creatie doet.
 
 >[!NOTE]
 >
@@ -611,7 +614,7 @@ Gebruikend paginaeigenschappen, kunt u de vereiste cliënt-zijbibliotheken bepal
 
 ### Een sjabloon bewerken - Initiële pagina-eigenschappen - Auteur {#editing-a-template-initial-page-properties-author}
 
-Gebruikend de **Aanvankelijke optie van de Eigenschappen van de Pagina**, kunt u de aanvankelijke [ pagina eigenschappen ](/help/sites-cloud/authoring/fundamentals/page-properties.md) bepalen die moeten worden gebruikt wanneer het creëren van resulterende pagina&#39;s.
+Gebruikend de **Aanvankelijke optie van de Eigenschappen van de Pagina**, kunt u de aanvankelijke [ pagina eigenschappen ](/help/sites-cloud/authoring/sites-console/page-properties.md) bepalen die moeten worden gebruikt wanneer het creëren van resulterende pagina&#39;s.
 
 1. Van de malplaatjedacteur, uitgezochte **Informatie van de Pagina** van de toolbar, toen **Aanvankelijke Eigenschappen van de Pagina** om de dialoog te openen.
 

@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Zodra uw pagina in de [**console van Plaatsen** wordt gecreeerd, ](/help/sites-c
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de **console van de Plaatsen[**, ](/help/sites-cloud/authoring/sites-console/introduction.md) zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina openen:](/help/sites-cloud/authoring/sites-console/templates.md) of de paginaredacteur die in dit document wordt beschreven, of [ Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md)[
+>Wanneer het uitgeven van een pagina in de **console van de Plaatsen[**, ](/help/sites-cloud/authoring/sites-console/introduction.md) zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina openen:](/help/sites-cloud/authoring/page-editor/templates.md) of de paginaredacteur die in dit document wordt beschreven, of [ Universele Redacteur.](/help/sites-cloud/authoring/universal-editor/authoring.md)[
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Zo hebt u toegang tot gedetailleerde pagina-informatie, waaronder paginagegevens
 * [Pagina vergrendelen](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [Publish-pagina](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [Publicatie van pagina ongedaan maken](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [Sjabloon bewerken](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Sjabloon bewerken](/help/sites-cloud/authoring/page-editor/templates.md)
 * [Weergeven als gepubliceerd](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [Weergeven in Admin](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-cloud/authoring/basic-handling.md#accessing-help)

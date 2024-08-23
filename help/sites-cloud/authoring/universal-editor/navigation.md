@@ -4,7 +4,7 @@ description: Leer de basisbeginselen van toegang tot en navigatie in de Universa
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Zodra de app van instrumenten is voorzien om met de Universal Editor te werken, 
 
 >[!NOTE]
 >
->Wanneer het uitgeven van een pagina in de **console van de Plaatsen[**, ](/help/sites-cloud/authoring/sites-console/introduction.md) zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina openen:](/help/sites-cloud/authoring/sites-console/templates.md) of de Universele Redacteur die in dit document wordt beschreven, of de [ paginaredacteur.](/help/sites-cloud/authoring/page-editor/introduction.md)[
+>Wanneer het uitgeven van een pagina in de **console van de Plaatsen[**, ](/help/sites-cloud/authoring/sites-console/introduction.md) zal de console de redacteur aangewezen aan het 3} malplaatje van de pagina openen:](/help/sites-cloud/authoring/page-editor/templates.md) of de Universele Redacteur die in dit document wordt beschreven, of de [ paginaredacteur.](/help/sites-cloud/authoring/page-editor/introduction.md)[
 
 ### Direct toegang {#accessing-directly}
 

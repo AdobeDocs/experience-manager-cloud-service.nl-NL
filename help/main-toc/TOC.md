@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
+source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
 workflow-type: tm+mt
-source-wordcount: '5340'
+source-wordcount: '5348'
 ht-degree: 3%
 
 ---
@@ -319,7 +319,6 @@ ht-degree: 3%
          + [Pagina-eigenschappen](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [Pagina&#39;s voorvertonen](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Pagina&#39;s publiceren](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-         + [Paginasjablonen](/help/sites-cloud/authoring/sites-console/templates.md)
          + [Paginaversies](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [Pagina grijs](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [Tags gebruiken](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -330,6 +329,7 @@ ht-degree: 3%
          + [De pagina-editor](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [Editor zijpaneel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [Pagina&#39;s bewerken](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [Paginasjablonen](/help/sites-cloud/authoring/page-editor/templates.md)
          + [Paginaannotaties toevoegen](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [De Rich Text Editor](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
          + [Responsieve lay-out](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
@@ -344,10 +344,11 @@ ht-degree: 3%
          + [Inhoud ontwerpen met de Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Inhoud publiceren met de Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Overerving van inhoud in de Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [Paginasjablonen](/help/edge/wysiwyg-authoring/templates.md)
       + Fragmenten {#fragments}
          + [Inhoudsfragmenten](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Ervaar fragmenten](/help/sites-cloud/authoring/fragments/experience-fragments.md)
-         + [Reis van de Auteur van de Inhoud zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+         + ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html) Reis van de Auteur van de Inhoud zonder hoofd [
       + Projecten {#projects}
          + [Werken met projecten](/help/sites-cloud/authoring/projects/overview.md)
          + [Projecten beheren](/help/sites-cloud/authoring/projects/managing.md)
@@ -886,6 +887,8 @@ ht-degree: 3%
       + [Inhoud modelleren](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [Tabelgegevens en spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Bestaande projecten en Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
+      + [Taxonomiegegevens beheren](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [Functies voor WIP-sites](/help/edge/wysiwyg-authoring/wip-features.md)
    + Authoring op basis van documenten {#document-authoring}
       + [Authoring](/help/edge/docs/authoring.md)
       + [Bulkmetagegevens](/help/edge/docs/bulk-metadata.md)
@@ -947,7 +950,7 @@ ht-degree: 3%
          + [ Github Bot ](https://github.com/apps/aem-code-sync)
          + [Controlelogboek](/help/edge/docs/auditlog.md)
 + Koploos {#headless}
-   + [Wat is een headless CMS?](/help/headless/what-is-headless.md)
+   + [Wat is een Headless CMS?](/help/headless/what-is-headless.md)
    + [Inleiding tot AEM zonder kop](/help/headless/introduction.md)
    + [ Portaal van de Ontwikkelaar (Aanvullende Middelen) ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [Beste praktijken - Opstelling en Gebruik](/help/headless/best-practices-setup-use.md)
@@ -1071,7 +1074,7 @@ ht-degree: 3%
          + [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md)
       + [Aangepaste machtigingen](/help/implementing/cloud-manager/custom-permissions.md)
-      + [SLA-rapportage](/help/implementing/cloud-manager/sla-reporting.md)
+      + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Meldingen](/help/implementing/cloud-manager/notifications.md)

@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Sjablonen zijn krachtig omdat ze opnieuw kunnen worden gebruikt en aanpasbaar zi
 
 >[!NOTE]
 >
->AEM plaatssjablonen zouden niet met [ paginasjablonen ](/help/sites-cloud/authoring/sites-console/templates.md) moeten worden verward. Sitesjablonen definiëren de algehele structuur van een site. Een paginasjabloon definieert de structuur en initiële inhoud van een afzonderlijke pagina.
+>AEM plaatssjablonen zouden niet met [ paginasjablonen ](/help/sites-cloud/authoring/page-editor/templates.md) moeten worden verward. Sitesjablonen definiëren de algehele structuur van een site. Een paginasjabloon definieert de structuur en initiële inhoud van een afzonderlijke pagina.
 >
 >AEM plaatssjablonen zouden niet met [ AEM plaatsthema&#39;s ](site-themes.md) moeten worden verward. AEM sitethema&#39;s bevatten alleen de opmaakgegevens voor een AEM site. AEM plaatssjablonen bepalen plaatsstructuur en aanvankelijke inhoud, en bevatten een AEM plaatsthema om voor [ snelle plaatsverwezenlijking ](create-site.md) toe te staan.
 

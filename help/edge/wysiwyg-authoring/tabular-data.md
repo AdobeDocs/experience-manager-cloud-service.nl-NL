@@ -4,9 +4,9 @@ description: Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschill
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -130,6 +130,7 @@ Nu u weet hoe u een spreadsheet voor omleidingen kunt maken, kunt u elk ander st
 * Metagegevens
 * Kopteksten
 * Configuratie
+* [Taxonomie](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Volg eenvoudig de zelfde stappen in de secties [ creëren Spreadsheet ](#spreadsheet) en [ Update paths.json ](#paths-json) en kies het aangewezen malplaatje en werk het `paths.json` dossier dienovereenkomstig bij.
 
@@ -138,6 +139,7 @@ Voor [ Configuratie ](https://www.aem.live/docs/configuration), [ Kopballen ](ht
 * Configuratie: `/.helix/config.json`
 * Kopteksten: `/.helix/headers.json`
 * Metagegevens: `/metadata.json`
+* Taxonomie: Gelieve te zien het document [ Leiden Gegevens van de Taxonomie ](/help/edge/wysiwyg-authoring/taxonomy.md) voor meer informatie.
 
 Bovendien, kunt u [ uw eigen spreadsheet ](#own-spreadsheet) met willekeurige kolommen voor uw eigen gebruik tot stand brengen.
 

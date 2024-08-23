@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 2%
@@ -118,7 +118,7 @@ Wanneer u een pagina **Naam** wanneer het creëren van een pagina levert, AEM [ 
 
 ## Sjablonen {#templates}
 
-In AEM, is a [ malplaatje ](/help/sites-cloud/authoring/sites-console/templates.md) een gespecialiseerd type van pagina die als basis voor om het even welke nieuwe pagina wordt gebruikt die wordt gecreeerd.
+In AEM, is a [ malplaatje ](/help/sites-cloud/authoring/page-editor/templates.md) een gespecialiseerd type van pagina die als basis voor om het even welke nieuwe pagina wordt gebruikt die wordt gecreeerd.
 
 De sjabloon definieert de structuur van een pagina, inclusief een miniatuurafbeelding en andere eigenschappen. U hebt bijvoorbeeld aparte sjablonen voor productpagina&#39;s, sitemaps en contactgegevens. De malplaatjes worden samengesteld uit [ componenten ](#components).
 

@@ -4,7 +4,7 @@ description: De voorwaarden van de huid kunnen worden gebruikt om te bepalen als
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Voorwaarden verbergen gebruiken {#using-hide-conditions}
 
-De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet. Een voorbeeld van dit zou zijn wanneer een malplaatjeauteur de de lijstcomponent van de Component van de Kern [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) in de [ malplaatjedacteur ](/help/sites-cloud/authoring/sites-console/templates.md) vormt en besluit om de opties onbruikbaar te maken om de lijst te bouwen die op kindpagina&#39;s wordt gebaseerd. Als u deze optie in het ontwerpdialoogvenster uitschakelt, wordt een eigenschap zo ingesteld dat wanneer de component List wordt gerenderd, de voorwaarde hide wordt geëvalueerd en de optie om onderliggende pagina&#39;s weer te geven niet wordt weergegeven.
+De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet. Een voorbeeld van dit zou zijn wanneer een malplaatjeauteur de de lijstcomponent van de Component van de Kern [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) in de [ malplaatjedacteur ](/help/sites-cloud/authoring/page-editor/templates.md) vormt en besluit om de opties onbruikbaar te maken om de lijst te bouwen die op kindpagina&#39;s wordt gebaseerd. Als u deze optie in het ontwerpdialoogvenster uitschakelt, wordt een eigenschap zo ingesteld dat wanneer de component List wordt gerenderd, de voorwaarde hide wordt geëvalueerd en de optie om onderliggende pagina&#39;s weer te geven niet wordt weergegeven.
 
 ## Overzicht {#overview}
 
@@ -53,7 +53,7 @@ Houd rekening met het volgende wanneer u de expressie hide definieert:
 
 De voorbeelden van verborgen voorwaarden kunnen door AEM en de [ kerncomponenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in het bijzonder worden gevonden. Bijvoorbeeld, overweeg de [ component van de lijstkern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) zoals die in het [ WKND leerprogramma ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) wordt uitgevoerd.
 
-[ Gebruikend de malplaatjeredacteur ](/help/sites-cloud/authoring/sites-console/templates.md), kan de malplaatjeauteur in de ontwerpdialoog bepalen welke opties van de lijstcomponent die aan de paginaauteur beschikbaar zijn. U kunt bijvoorbeeld instellen of de lijst een statische lijst moet zijn, een lijst met onderliggende pagina&#39;s, een lijst met gecodeerde pagina&#39;s enzovoort in- of uitschakelen.
+[ Gebruikend de malplaatjeredacteur ](/help/sites-cloud/authoring/page-editor/templates.md), kan de malplaatjeauteur in de ontwerpdialoog bepalen welke opties van de lijstcomponent die aan de paginaauteur beschikbaar zijn. U kunt bijvoorbeeld instellen of de lijst een statische lijst moet zijn, een lijst met onderliggende pagina&#39;s, een lijst met gecodeerde pagina&#39;s enzovoort in- of uitschakelen.
 
 Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit te schakelen, wordt een ontwerpeigenschap ingesteld en wordt een voorwaarde voor verbergen aan de hand hiervan geëvalueerd. Hierdoor wordt de optie niet gerenderd voor de auteur van de pagina.
 

@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 2%
@@ -39,7 +39,7 @@ U kunt Experience Fragments gebruiken:
 * Als een auteur onderdelen (een fragment van een ervaring) van een pagina opnieuw wil gebruiken.
 Zonder Fragments van de Ervaring, zou de auteur dat fragment moeten kopiëren en kleven. Het maken en onderhouden van deze kopiëren/plakken-ervaringen kost veel tijd en is vaak het gevolg van gebruikersfouten.
 De Fragmenten van de ervaring elimineren de behoefte aan exemplaar/deeg.
-* Om het hoofdloze gebruik-geval CMS te steunen.
+* Om de hoofdloze CMS-use-case te ondersteunen.
 Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan de klant. Een systeem/aanraakpunt van derden zou deze ervaring gebruiken en vervolgens leveren aan de gebruiker.
 * Met [ Multisite Beheer (MSM) ](/help/sites-cloud/administering/msm/overview.md); als Fragment van de Ervaring maakt deel uit van een pagina. Dit geldt zowel voor de afzonderlijke fragmenten als voor de mappen waarin deze zich bevinden.
 
@@ -95,7 +95,7 @@ Door mappen te maken kunt u:
 
   >[!NOTE]
   >
-  >U kunt de [ malplaatjeredacteur ](/help/sites-cloud/authoring/sites-console/templates.md) gebruiken om uw eigen malplaatje tot stand te brengen.
+  >U kunt de [ malplaatjeredacteur ](/help/sites-cloud/authoring/page-editor/templates.md) gebruiken om uw eigen malplaatje tot stand te brengen.
 
 Het WKND-project structureert een aantal Experience Fragments volgens `Contributors` . De gebruikte structuur illustreert ook hoe andere functies, zoals beheer voor meerdere sites (inclusief taalkopieën), kunnen worden gebruikt.
 

@@ -4,7 +4,7 @@ description: Een naslaggids voor ontwikkelaars voor de details van componenten e
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 0%
@@ -223,9 +223,9 @@ In het dialoogvenster worden de afzonderlijke velden gedefinieerd:
 
 ### Ontwerpdialoogvensters {#design-dialogs}
 
-De dialoogvensters van het ontwerp zijn gelijkaardig aan de dialogen die worden gebruikt om inhoud uit te geven en te vormen, maar zij verstrekken de interface voor malplaatjeauteurs om ontwerpdetails voor die component op een paginasjabloon pro-vormen en te verstrekken. Paginasjablonen worden vervolgens door de auteurs van de inhoud gebruikt om inhoudspagina&#39;s te maken. Zie de [ malplaatjedocumentatie ](/help/sites-cloud/authoring/sites-console/templates.md) voor details op hoe de malplaatjes worden gecreeerd.
+De dialoogvensters van het ontwerp zijn gelijkaardig aan de dialogen die worden gebruikt om inhoud uit te geven en te vormen, maar zij verstrekken de interface voor malplaatjeauteurs om ontwerpdetails voor die component op een paginasjabloon pro-vormen en te verstrekken. Paginasjablonen worden vervolgens door de auteurs van de inhoud gebruikt om inhoudspagina&#39;s te maken. Zie de [ malplaatjedocumentatie ](/help/sites-cloud/authoring/page-editor/templates.md) voor details op hoe de malplaatjes worden gecreeerd.
 
-[ de dialogen van het Ontwerp worden gebruikt wanneer het uitgeven van een paginamalplaatje ](/help/sites-cloud/authoring/sites-console/templates.md), hoewel zij niet nodig voor alle componenten zijn. Bijvoorbeeld, hebben de **Titel** en **Componenten van het Beeld** allebei ontwerpdialogen, terwijl de **Sociale Media die Component delen** niet.
+[ de dialogen van het Ontwerp worden gebruikt wanneer het uitgeven van een paginamalplaatje ](/help/sites-cloud/authoring/page-editor/templates.md), hoewel zij niet nodig voor alle componenten zijn. Bijvoorbeeld, hebben de **Titel** en **Componenten van het Beeld** allebei ontwerpdialogen, terwijl de **Sociale Media die Component delen** niet.
 
 ### Gebruikersinterface voor koralen en graniet {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Nadat u een component hebt gecreeerd, moet u het toelaten om het te gebruiken. H
 
 Nadat een component is gedefinieerd, moet deze beschikbaar worden gesteld voor gebruik. Als u een component beschikbaar wilt maken voor gebruik in een sjabloon, moet u de component inschakelen in het beleid van de lay-outcontainer van de sjabloon.
 
-Zie de [ malplaatjedocumentatie ](/help/sites-cloud/authoring/sites-console/templates.md) voor details op hoe de malplaatjes worden gecreeerd.
+Zie de [ malplaatjedocumentatie ](/help/sites-cloud/authoring/page-editor/templates.md) voor details op hoe de malplaatjes worden gecreeerd.
 
 ### Componenten en de inhoud die ze maken {#components-and-the-content-they-create}
 

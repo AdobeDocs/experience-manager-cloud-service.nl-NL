@@ -4,7 +4,7 @@ description: Begrijp Adobe Experience Manager (AEM) configuraties en hoe zij wer
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Configuraties kunnen worden gemaakt voor vele verschillende functies in AEM.
 
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Bewerkbare sjablonen](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Bewerkbare sjablonen](/help/sites-cloud/authoring/page-editor/templates.md)
 * diverse cloudconfiguraties
 
 ### Voorbeeld {#administrator-example}
@@ -83,7 +83,7 @@ Het is eenvoudig om een configuratie in AEM tot stand te brengen gebruikend Brow
 1. Controleer het type configuraties dat u wilt toestaan.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Modellen van inhoudsfragmenten](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [Bewerkbare sjablonen](/help/sites-cloud/authoring/sites-console/templates.md)
+   * [Bewerkbare sjablonen](/help/sites-cloud/authoring/page-editor/templates.md)
    * diverse cloudconfiguraties
 1. Selecteer **creeer**.
 

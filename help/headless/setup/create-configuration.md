@@ -4,7 +4,7 @@ description: Een configuratie maken als eerste stap om in AEM as a Cloud Service
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Browser van de Configuratie verstrekt een generische configuratie API, inhoudsst
 
 In de context van het beheer van inhoud zonder kop in AEM, denk aan een configuratie als werkplaats binnen AEM waar u uw Modellen van de Inhoud kunt tot stand brengen, die de structuur van uw toekomstige inhoud en de Fragmenten van de Inhoud bepalen. U kunt veelvoudige configuraties hebben om deze modellen te scheiden.
 
-Als u met [ paginasjablonen in een volledig-stapel AEM implementatie vertrouwd bent, ](/help/sites-cloud/authoring/sites-console/templates.md) is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
+Als u met [ paginasjablonen in een volledig-stapel AEM implementatie vertrouwd bent, ](/help/sites-cloud/authoring/page-editor/templates.md) is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
 
 ## Hoe te om een Configuratie te creëren {#how-to-create-a-configuration}
 

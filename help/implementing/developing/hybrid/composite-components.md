@@ -4,7 +4,7 @@ description: Leer hoe u uw eigen samengestelde componenten maakt, componenten di
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
@@ -158,7 +158,7 @@ U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
     itemPath='root/responsivegrid' />
    ```
 
-1. Voeg de gecreeerde `wknd-spa/components/imagecard` component aan de toegestane componenten voor de containercomponent [ in het paginamalplaatje ](/help/sites-cloud/authoring/sites-console/templates.md) toe.
+1. Voeg de gecreeerde `wknd-spa/components/imagecard` component aan de toegestane componenten voor de containercomponent [ in het paginamalplaatje ](/help/sites-cloud/authoring/page-editor/templates.md) toe.
 
 De component `imagecard` kan nu rechtstreeks aan de container worden toegevoegd in de AEM-editor.
 
