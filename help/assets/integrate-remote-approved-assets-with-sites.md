@@ -1,13 +1,13 @@
 ---
 title: AEM Assets op afstand integreren met AEM Sites
-description: Leer hoe u AEM sites kunt configureren en verbinden met Approved AEM Assets in Creative Cloud.
-source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
+description: Leer hoe u AEM sites kunt configureren en verbinden met Goedgekeurde AEM Assets.
+exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
+source-git-commit: e2c0c848c886dc770846d064e45dcc52523ed8e3
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
-
 
 # AEM Assets op afstand integreren met AEM Sites  {#integrate-approved-assets}
 
@@ -23,7 +23,13 @@ Na de eerste installatie kunnen gebruikers pagina&#39;s op het AEM Sites-exempla
 
 Dynamic Media met OpenAPI-mogelijkheden biedt verschillende andere voordelen, zoals toegang tot en gebruik van externe middelen in Content Fragment, het ophalen van metagegevens van de externe middelen en nog veel meer. Wis meer over de andere [ voordelen van Dynamic Media met mogelijkheden OpenAPI over Verbonden Assets ](/help/assets/dynamic-media-open-apis-faqs.md).
 
-## Voordat u begint {#pre-requisits-sites-integration}
+## Voordat u begint {#pre-requisites-sites-integration}
+
+Ondersteuning voor externe middelen met Dynamic Media met OpenAPI-mogelijkheden is vereist:
+
+* AEM 6.5 SP 18+ of AEM as a Cloud Service
+
+* Core Components release 2.23.2 of hoger
 
 * Opstelling de volgende [ milieuvariabelen ](/help/implementing/cloud-manager/environment-variables.md#add-variables) voor AEM as a Cloud Service:
 
@@ -31,21 +37,47 @@ Dynamic Media met OpenAPI-mogelijkheden biedt verschillende andere voordelen, zo
      `pXXXX` verwijst naar de programma-id <br>
      `eYYYY` verwijst naar de milieu-id
 
-   * ASSET_DELIVERY_IMS_CLIENT= [ IMSClientId ]
+  Deze variabelen worden ingesteld via de Cloud Manager-gebruikersinterface van de AEM as a Cloud Service-omgeving die fungeert als uw lokale Sites-instantie.
 
-  of vorm de [ montages OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) voor AEM 6.5 in de instantie van AEM Sites door deze stappen te volgen:
+   * ASSET_DELIVERY_IMS_CLIENT= [ IMSClientId ]: U moet een Adobe steunkaartje voorleggen om identiteitskaart van de Cliënt IMS te krijgen.
+
+     of vorm de [ montages OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) voor AEM 6.5 in de instantie van AEM Sites door deze stappen te volgen:
 
    1. Meld u aan bij de console en klik op **[!UICONTROL OSGi]>** of
-gebruik de directe URL, bijvoorbeeld: `http://localhost:4502/system/console/configMgr`
+gebruik de directe URL, bijvoorbeeld: `https://localhost:4502/system/console/configMgr`
 
-   1. Voeg **[!UICONTROL repositoryID]**= &quot;levering-xxxxx-eyyyyy.adobeaemcloud.com&quot;en **[!UICONTROL imsClient]**= [ IMSClientId ] toe
-Leer meer over [ authentificatie IMS ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+   1. Vorm de **Volgende Generatie Dynamic Media Config** (`NextGenDynamicMediaConfigImpl`) configuratie OSGi als volgt, die de waarden met die van uw verre activa milieu vervangen.
 
-* IMS-toegang om u aan te melden bij een externe DAM AEM as a Cloud Service-instantie.
+      ```text
+        imsClient="<ims-client-ID>"
+        enabled=B"true"
+        imsOrg="<ims-org>@AdobeOrg"
+        repositoryId="<repo-id>.adobeaemcloud.com"
+      ```
 
-* Schakel de schakeloptie Dynamic Media met OpenAPI-mogelijkheden in op de externe DAM.
+      `imsOrg` is geen verplichte invoer.
+      `repositoryId` = &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot;
+waarbij `pXXXX` verwijst naar de programma-id
+      `eYYYY` verwijst naar de milieu-id
+
+      ![ het volgende de configuratievenster van Dynamic Media Config OSGi van de Generatie ](/help/assets/assets/remote-assets-osgi.png)
+
+  Leer meer over [ authentificatie IMS ](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+
+  Voor details op hoe te om OSGi te vormen, gelieve de volgende documenten te zien:
+
+   * [ het Vormen OSGi voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html) voor AEM as a Cloud Service
+   * [ Vormend OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html) voor AEM 6.5
+
+* IMS-toegang om u aan te melden bij een externe DAM AEM as a Cloud Service-instantie. Het verwijst naar de auteur van Plaatsen die IMS toegang tot het verre milieu van DAM heeft.
 
 * Configureer de component Image v3 in de AEM Sites-instantie. Als de component niet aanwezig is, download en installeer het [ inhoudspakket ](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0).
+
+## HTTPS configureren {#https}
+
+Het wordt over het algemeen aanbevolen om al uw productie AEM instanties in werking te stellen die HTTPs gebruiken. Uw lokale ontwikkelomgevingen kunnen echter niet als zodanig worden ingesteld. Externe elementen die Dynamic Media met OpenAPI gebruiken, kunnen echter alleen functioneren als HTTPS is vereist.
+
+[ Gebruik deze gids ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) om HTTPS te vormen waar u wenst om verre activa, met inbegrip van ontwikkelomgevingen te gebruiken.
 
 ## Elementen benaderen vanaf externe DAM {#fetch-assets}
 
@@ -58,7 +90,6 @@ Met Dynamic Media met OpenAPI-mogelijkheden hebt u toegang tot middelen die besc
 Voer de onderstaande stappen uit om externe middelen te gebruiken in AEM Pagina-editor voor uw AEM Sites-exemplaar. U kunt deze integratie doen in AEM as a Cloud Service en AEM 6.5.
 
 1. Ga naar **[!UICONTROL Sites]** > _uw website_ waar de AEM **[!UICONTROL Page]** aanwezig is waarin u de verre activa moet toevoegen.
-1. Navigeer naar de specifieke AEM **[!UICONTROL Page]** op uw website onder de sectie **[!UICONTROL Sites]** waar u het externe element wilt toevoegen.
 1. Selecteer de pagina en klik **[!UICONTROL Edit (_e _)]**. De AEM **[!UICONTROL Page Editor]**wordt geopend.
 1. Klik op de container voor lay-out en voeg een component **[!UICONTROL Image]** toe.
 1. Klik de **[!UICONTROL Image]** component en klik ![ montagespictogram ](/help/assets/assets/do-not-localize/settings-icon.svg) pictogram.
