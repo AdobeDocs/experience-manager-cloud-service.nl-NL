@@ -5,9 +5,9 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,53 @@ ht-degree: 0%
 
 AEM als cloudservice is standaard toegankelijk via internet. Terwijl de veiligheid door gebruikersauthentificatie en vergunning wordt behandeld, IP staat-lijst toe om toegang tot slechts vertrouwde op IP adressen te beperken.
 
-De Lijsten van gewenste personen van Cloud Manager IP kunnen worden gebruikt om toegang tot slechts dergelijke vertrouwde op IP adressen te beperken en te controleren. De gebruikers van Cloud Manager met aangewezen toestemmingen kunnen [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) van vertrouwde op IP adressen tot stand brengen waarvan de gebruikers van hun plaats tot hun AEM kunnen toegang hebben.
+De Lijsten van gewenste personen van Cloud Manager IP kunnen worden gebruikt om toegang tot slechts dergelijke vertrouwde op IP adressen te beperken en te controleren. De gebruikers van Cloud Manager met aangewezen toestemmingen kunnen [ tot IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) van vertrouwde op IP adressen leiden en toevoegen waarvan de gebruikers van hun plaats tot hun AEM kunnen toegang hebben.
 
 Na het toevoegen, [ IP kunnen de Lijsten van gewenste personen worden toegepast of ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) veelvoudige tijden als eenheid of entiteit aan de auteursdienst, of een uitgeversdienst, of allebei, in een milieu ongedaan worden gemaakt.
 
 >[!NOTE]
 >
 >Als geen IP Lijst van gewenste personen wordt toegepast, door gebrek worden alle IP adressen toegestaan. Wanneer een IP Lijst van gewenste personen wordt toegepast, worden geen IP adressen toegestaan behalve adressen op de IP Lijst van gewenste personen.
+
+## Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding {#allowlists-frontend-pipeline}
+
+Als u gebruikt-of voorgenomen om te gebruiken-de [ front-end pijpleiding om plaatsen ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) te ontwikkelen, moet de volgende Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
+
+Wanneer u [ de IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist) toevoegt, noem het *`Cloud Manager`*, dan kopieer de lijst van hieronder adressen en kleef hen in het IP de dialoogvakje van de Lijst van gewenste personen.
+
+**Cloud Manager IP Lijst van gewenste personen**
+
+```text
+52.254.106.192/28
+20.186.185.181
+52.254.106.240/28
+52.254.107.128/28
+52.254.105.192/28
+52.254.106.176/28
+20.186.185.227
+52.254.106.144/28
+52.254.107.64/28
+20.186.185.239
+20.22.83.112
+52.254.107.80/28
+52.254.107.144/28
+52.254.106.224/28
+20.14.241.153
+52.254.107.0/28
+52.254.107.32/28
+52.254.106.208/28
+40.70.154.136/29
+52.254.106.160/28
+52.254.107.16/28
+52.254.106.0/28
+4.152.211.251
+```
+
+Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze Lijst van gewenste personen van Cloud Manager IP wordt toegevoegd. Dan, pas de lijst op het milieu van de Auteur *toe alvorens* u de pijpleiding toelaat.
+
+Zie [ IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) toepassen.
+Zie [ front-end pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) toelaten.
+
 
 ## Beperkingen {#limitations}
 

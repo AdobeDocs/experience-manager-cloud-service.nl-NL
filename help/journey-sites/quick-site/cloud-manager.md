@@ -5,7 +5,7 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 0%
@@ -112,6 +112,8 @@ De algehele stroom is eenvoudig en intuïtief, zelfs als u nog geen uitgebreide 
 ![ Snelle stroom van de Verwezenlijking van de Plaats ](assets/qsc-flow.png)
 
 Het belangrijkste voordeel van het gebruik van het gereedschap Snel maken is dat de zuivere front-end ontwikkelaar alleen verantwoordelijk is voor de werkelijke aanpassing. De front-end ontwikkelaar heeft geen interactie met AEM of heeft enige kennis van AEM nodig.
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 ## Volgende functies {#what-is-next}
 

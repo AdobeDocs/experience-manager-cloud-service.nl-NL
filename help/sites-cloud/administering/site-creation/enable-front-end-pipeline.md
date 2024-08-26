@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -20,33 +20,35 @@ Leer hoe u de front-end pijpleiding voor bestaande plaatsen kunt toelaten om pla
 
 De front-end pijpleiding is een mechanisme dat enkel de front-end code van uw websites kan snel opstellen die op [ wordt gebaseerd plaatsenthema&#39;s ](site-themes.md) en [ plaatssjablonen.](site-templates.md)
 
-In plaats van de full-stack te implementeren, wordt alleen front-end code afgehandeld door deze pijplijn, waardoor het proces sneller verloopt. Bovendien kunnen front-end ontwikkelaars uw site eenvoudig en snel aanpassen zonder kennis van AEM.
+Deze pijpleiding behandelt slechts front-end code, die het plaatsingsproces sneller dan volledig-stapel plaatsingen maakt. Met deze functie kunnen ontwikkelaars aan de voorzijde uw site eenvoudig aanpassen zonder dat ze kennis van AEM nodig hebben.
 
 De plaatsen die op plaatsmalplaatjes worden gebaseerd kunnen de front-end pijpleiding door gebrek gebruiken. Dit document beschrijft hoe u uw bestaande plaatsen kunt aanpassen om uit de front-end pijpleiding voordeel te halen.
 
 >[!TIP]
 >
->Als u niet vertrouwd met de front-end pijpleiding bent en hoe te om plaatsen snel op te stellen gebruikend het en plaatssjablonen, zie {de reis van de Verwezenlijking van 0} Snelle Plaats ](/help/journey-sites/quick-site/overview.md) voor een inleiding.[
+>Als u niet vertrouwd met de front-end pijpleiding bent en hoe te om plaatsen op te stellen snel gebruikend het en plaatssjablonen, zie ](/help/journey-sites/quick-site/overview.md) de Reis van de Aanmaak van de Snelle Plaats [ voor een inleiding.
 
-Als u uw bestaande site niet hebt gemaakt op basis van sitesjablonen en -thema&#39;s, kunt AEM uw site zodanig configureren dat de thema&#39;s worden geladen die worden geïmplementeerd met de Front End Pipeline boven op de bestaande clientbibliotheken.
+AEM kunt uw site configureren om thema&#39;s te laden die zijn geïmplementeerd met de Front End Pipeline, zelfs als uw site niet is gemaakt met sitesjablonen en -thema&#39;s, door deze in lagen boven op bestaande clientbibliotheken te plaatsen.
 
 ## Technische details {#technical-details}
 
 Wanneer u de front-end pijplijn voor een plaats activeert, AEM brengt de volgende veranderingen in uw plaatsstructuur aan.
 
 * Alle pagina&#39;s van de site bevatten één extra CSS- en JS-bestand, dat kan worden gewijzigd door updates te implementeren via een speciale Cloud Manager front-end pipe.
-* De toegevoegde CSS- en JS-bestanden zijn aanvankelijk leeg, maar u kunt een map met &quot;themabronnen&quot; downloaden om de mapstructuur te starten waarmee u CSS- en JS-code-updates via die pijplijn kunt implementeren.
-* Deze wijziging kan alleen ongedaan worden gemaakt door een ontwikkelaar, door de knooppunten `SiteConfig` en `HtmlPageItemsConfig` te verwijderen die met deze bewerking onder `/conf/<site-name>/sling:configs` worden gemaakt.
+* De toegevoegde CSS- en JS-bestanden zijn aanvankelijk leeg. U kunt echter een map met &quot;themabronnen&quot; downloaden om de mappenstructuur in te stellen die nodig is om CSS- en JS-code-updates via de pijplijn te implementeren.
+* Alleen ontwikkelaars kunnen de wijziging ongedaan maken door de knooppunten `SiteConfig` en `HtmlPageItemsConfig` die met deze bewerking onder `/conf/<site-name>/sling:configs` worden gemaakt, te verwijderen.
 
 >[!NOTE]
 >
->Deze actie zal niet automatisch de bestaande cliëntbibliotheken van de plaats omzetten om de doopvont-eind pijpleiding te gebruiken. Het verplaatsen van deze bronnen van de omslag van de cliëntbibliotheek naar de front-end pijpleidingsomslag is een taak die handwerk door een front-end ontwikkelaar vereist.
+>Met deze actie worden de bestaande clientbibliotheken van de site niet automatisch omgezet voor gebruik van de eindpijplijn voor lettertypen. Het verplaatsen van deze bronnen van de omslag van de cliëntbibliotheek naar de front-end pijpleidingsomslag is een taak die handwerk door een front-end ontwikkelaar vereist.
 
 ## Vereisten {#requirements}
 
-AEM kan uw bestaande plaats automatisch aanpassen om de front-end pijpleiding te gebruiken. Om dit te kunnen doen, moet uw plaats [ v2 of nieuwer van de Component van de Pagina van de Componenten van de Kern gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/page.html)
+AEM kan uw bestaande plaats automatisch aanpassen om de front-end pijpleiding te gebruiken. Om dit werkschema te kunnen doen, moet uw plaats [ v2 of nieuwer van de Component van de Pagina van de Componenten van de Kern gebruiken.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)
 
 ## Het toelaten van Voorste Pijl-Eind {#enabling}
+
+{{add-cm-allowlist-frontend-pipeline}}
 
 Het toelaten van uw plaats wordt gedaan van de console van Plaatsen gebruikend het [ spoor van de Plaats.](site-rail.md)
 
@@ -57,9 +59,9 @@ Het toelaten van uw plaats wordt gedaan van de console van Plaatsen gebruikend h
 
    ![ laat front-end pijpleiding ](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png) toe
 
-1. AEM vraagt u om te bevestigen met een overzicht van de aangebrachte wijzigingen. Bevestig en uw site is aangepast.
+1. AEM vraagt u de aangebrachte wijzigingen te bevestigen met een overzicht. Bevestig en uw site is aangepast.
 
-Nu is uw plaats klaar om de front-end pijpleiding te gebruiken. Meer over de front-end pijpleiding en het beheren van uw plaatsthema leren zie:
+Nu, is uw plaats klaar om de front-end pijpleiding te gebruiken. Meer over de front-end pijpleiding en het beheren van uw plaatsthema leren zie:
 
 * [Het Siterail gebruiken om uw Sitethema te beheren](site-rail.md)
 * [ Snelle Reis van de Aanmaak van de Plaats ](/help/journey-sites/quick-site/overview.md) - Deze documentatierit geeft u en overzicht van begin tot eind van het proces om snel een plaats op te stellen gebruikend de front-end pijpleiding en het Snelle hulpmiddel van de Aanmaak van de Plaats.

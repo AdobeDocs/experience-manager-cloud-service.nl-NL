@@ -1,7 +1,7 @@
 ---
-source-git-commit: 90bc7320899053b6b1d6cf0d1b06b193ad1c68f3
+source-git-commit: 8728af7d9baee0c9324c1e9be1ae66d105396c40
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 * [Een AEM adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
 * [Een AEM adaptief formulier toevoegen aan de AEM Sites-pagina](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Thema&#39;s toepassen op een AEM adaptief formulier](/help/forms/using-themes-in-core-components.md)
-* [ voegt componenten aan een AEM Aangepaste Vorm ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components) toe
+* [ voegt componenten aan een AEM Aangepaste Vorm ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components) toe
 * [CAPTCHA gebruiken in een AEM adaptieve vorm](/help/forms/captcha-adaptive-forms-core-components.md)
-* [PDF-versie (DoR) van een AEM adaptief formulier genereren](/help/forms/generate-document-of-record-core-components.md)
+* [Een PDF-versie (DoR) van een AEM adaptief formulier genereren](/help/forms/generate-document-of-record-core-components.md)
 * [Een AEM adaptief formulier vertalen](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Adobe Analytics inschakelen voor een adaptief formulier om het formuliergebruik bij te houden](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Aangepast formulier verbinden met Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -32,7 +32,7 @@ ht-degree: 0%
 * [Aangepast formulier verbinden met Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Adobe Sign gebruiken in een AEM adaptief formulier](/help/forms/working-with-adobe-sign.md)
 * [Een nieuwe landinstelling toevoegen voor een adaptief formulier](/help/forms/supporting-new-language-localization-core-components.md)
-* [ verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [ verzendt de Adaptieve gegevens van de Vorm naar een gegevensbestand ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Verzend AanpassingsGegevens van de Vorm naar een eindpunt REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Adaptieve formuliergegevens naar AEM workflow verzenden](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Forms Portal gebruiken om AEM Adaptive Forms op een AEM website weer te geven](/help/forms/configure-forms-portal.md)
@@ -66,7 +66,7 @@ ht-degree: 0%
 * [Aangepaste componenten van het Blok van de Vorm en hun eigenschappen](/help/edge/docs/forms/form-components.md)
 
 
-## Verschil tussen de redacteur van de Regel in de Componenten van de Kern en de Redacteur van de Regel in de Componenten van de Stichting  {#rule-editor-diff}
+## Verschil tussen de Redacteur van de Regel in de Componenten van de Kern en de Redacteur van de Regel in de Componenten van de Stichting {#rule-editor-diff}
 
 De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de Componenten van de Kern van de Redacteur van de Regel en de Componenten van de Stichting van de Redacteur van de Regel aan:
 
@@ -74,28 +74,28 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
   <tbody>
   <tr>
     <td><strong>Functies</strong></td>
-    <td><strong>Adptive Form Foundation Components</strong></td>
-    <td><strong>Adptive Form Core-componenten</strong></td>   
+    <td><strong>Aangepaste componenten van de Stichting van vormen</strong></td>
+    <td><strong>Adaptieve Core-componenten van formulieren</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>Opties voor de vervolgkeuzelijst instellen </td>
-    <td>De opties van de dropdown lijst worden geplaatst gebruikend de 2} Vastgestelde Opties van de Redacteur van de Regel van </b> bezit.<b></td>
+    <td>De vervolgkeuzelijst met opties instellen </td>
+    <td>De drop-down lijst van opties wordt geplaatst gebruikend de ReeksOpties van de Redacteur van de Regel <b> van </b> bezit.</td>
     <td>De dropdown opties worden geplaatst gebruikend de douanefuncties. 
    </td>
    </tr>
      </tr>
    <tr>
     <td>Wiskundige bewerkingen uitvoeren in het veld van het herhaalbare deelvenster </td>
-    <td>De functies OTB Wiskunde kunnen op herhaalbare paneelgebieden worden toegepast om functies zoals som uit te voeren, gemiddeld gebruikend regelredacteur. Er moeten twee argumenten worden opgegeven: het eerste geeft het herhaalbare deelvenster met het veld op, terwijl het tweede het veld binnen het overeenkomende herhaalbare deelvenster aangeeft. </td>
-    <td>Wiskundige bewerkingen in het veld van het herhaalbare deelvenster kunnen worden uitgevoerd met behulp van aangepaste functies. U kunt de wiskundige functies ook rechtstreeks toepassen op de velden van het herhaalbare deelvenster met de regeleditor.
+    <td>OOTB Wiskundige functies kunnen worden toegepast op herhaalbare deelvenstervelden om functies uit te voeren zoals de som, gemiddeld met de Regeleditor. Er moeten twee argumenten worden opgegeven: het eerste geeft het herhaalbare deelvenster met het veld op, terwijl het tweede het veld binnen het overeenkomende herhaalbare deelvenster aangeeft. </td>
+    <td>Wiskundige bewerkingen in het veld van het herhaalbare deelvenster kunnen worden uitgevoerd met behulp van aangepaste functies. U kunt de wiskundige functies ook rechtstreeks toepassen op de velden van het herhaalbare deelvenster in de regeleditor.
    </td>
    </tr>
       <tr>
     <td>Veld/deelvenster/formulierregel valideren/opnieuw instellen in 'Dan' </td>
-    <td>Validatie- en herstelfuncties ondersteunen alleen formulierobjecten in de regeleditor. 
+    <td>Validatie- en herstelfuncties ondersteunen alleen formulierobjecten in de Regeleditor. 
    </td>
-    <td>Validatie- en herstelfuncties ondersteunen formulier-, deelvenster- en veldobject in de Regeleditor. 
+    <td>Validatie- en herstelfuncties ondersteunen formulier-/deelvenster-/veldobject in de Regeleditor. 
    </td>
    </tr>
    <tr>
@@ -126,17 +126,12 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 * [Verschil in verschillende versies van de redacteur van de Regel](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Inleiding tot aangepaste functies voor adaptieve Forms op basis van kerncomponenten](/help/forms/create-and-use-custom-functions.md)
 * [Een aangepaste functie maken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)
-* [Voorbeelden van het ontwikkelen en gebruiken van douanefunctie](/help/forms/custom-function-core-components-use-cases.md)
+* [Voorbeelden van het ontwikkelen en gebruiken van een aangepaste functie](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## Cloud Manager IP Lijst van gewenste personen en front-end pijpleidingen {#allowlist-frontend-pipeline}
+## Voeg een Lijst van gewenste personen van Cloud Manager IP en front-end pijpleidingen toe {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->De front-end pijpleiding vereist dat de volgende IP Lijst van gewenste personen vooraf aan Cloud Manager wordt toegevoegd.
->Indien nodig, [ voeg de IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) toe door het blok van hieronder adressen te kopiëren. Elk adres wordt gescheiden door een komma. Plak het blok in het **IP adres/CIDR.** gebied van **voeg IP de dialoogdoos van de Lijst van gewenste personen** toe. Plaats de curseur enkel na de eerste komma in de adreslijst en druk **binnengaan**. Sla de lijst op.
->Om verstoring van het in werking stellen van de voorste-eindduplijn te vermijden, zorg ervoor dat deze IP Lijst van gewenste personen aan Cloud Manager *wordt toegevoegd alvorens* u pipleline toelaat.
->
->**Cloud Manager IP Lijst van gewenste personen**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
->   
+>Als u gebruikt-of voorgenomen om te gebruiken-front-end pijpleiding om plaatsen te ontwikkelen, moet de Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
+>Zie [ Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
