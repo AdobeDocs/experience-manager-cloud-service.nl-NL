@@ -4,9 +4,9 @@ description: In deze video ziet u voorbeelden van velden en componenttypen die d
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
+source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 1%
 
 ---
@@ -99,6 +99,7 @@ Hieronder vindt u de componenttypen die u kunt gebruiken voor het weergeven van 
 | [ Container ](#container) | `container` |
 | [ het Fragment van de Inhoud ](#content-fragment) | `aem-content-fragment` |
 | [ Tijd van de Datum ](#date-time) | `date-time` |
+| [ Fragment van de Ervaring ](#experience-fragment) | `aem-experience-fragment` |
 | [ Multiselect ](#multiselect) | `multiselect` |
 | [ Aantal ](#number) | `number` |
 | [ Groep van de Keuzerondjes ](#radio-group) | `radio-group` |
