@@ -1,7 +1,9 @@
 ---
 title: Nota's van de versie voor 2024.6.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Nota's van de versie voor 2024.6.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: effb2f01dc26a7ab80b18c9e80ecc7286cb67284
+feature: Release Information
+role: Admin
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 0%
@@ -214,7 +216,7 @@ Vorm 301/302 cliënt-zij richt in broncontrole, en stel aan CDN op. [ leer meer 
 
 #### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
 
-Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web omvatten (WAF), laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
+Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
 
 Sluit zich aan bij het vroege adoptieprogramma zodat kunt u worden gealarmeerd wanneer uw regels van de verkeersfilter worden teweeggebracht. Met e-mailmeldingen van het Actions Center kunt u op de hoogte worden gehouden wanneer bepaalde verkeersvoorwaarden zich voordoen, zodat u de juiste maatregelen kunt nemen.
 

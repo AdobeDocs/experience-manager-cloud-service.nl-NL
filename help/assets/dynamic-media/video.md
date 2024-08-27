@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
+source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
 workflow-type: tm+mt
 source-wordcount: '9284'
 ht-degree: 0%
@@ -143,7 +143,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * Configureer videospelers om aan uw brandingbehoeften te voldoen.
 * Video met een eenvoudige URL of insluitcode integreren in uw website, mobiele site of mobiele toepassing.
 
-Zie [ Dynamische videoplayback ](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) steekproef.
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 Zie ook [ Kijkers voor Experience Manager Assets en Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) en [ Kijkers voor Experience Manager Assets slechts ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) in de [ Gids van de Verwijzing van de Kijkers van Dynamic Media ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
@@ -562,7 +562,7 @@ Als u een van de drie bovengenoemde mogelijkheden inschakelt, kunnen alle mogeli
 
 ## Ondersteuning voor meerdere bijschriften en audiotracks voor video&#39;s in Dynamic Media{#about-msma}
 
-Met de mogelijkheden voor meerdere bijschriften en audiotracks in Dynamic Media kunt u eenvoudig meerdere bijschriften en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+Met de mogelijkheden voor meerdere bijschriften en audiotracks in Dynamic Media kunt u eenvoudig meerdere bijschriften en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een wereldwijd publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
 ![ Bijschriften en audiosporen lusje in Dynamic Media samen met een lijst die geüploade .VTT titeldossiers en geüploade .MP3 audiospoordossiers voor een video tonen.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
@@ -601,7 +601,7 @@ Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen We
 1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
 1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
 
-   ![ de eigenschappen van Activa knoop.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Geselecteerde videoactiva in de mening van de Kaart.*
+   ![ de eigenschappen van Activa knoop.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Geselecteerde videoactiva in de Mening van de Kaart.*
 
 1. Selecteer de tab **[!UICONTROL Captions & Audio Tracks]** op de pagina Eigenschappen van video.
 
@@ -609,16 +609,16 @@ Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen We
    >[!TIP]
    >Als u het tabblad [!UICONTROL Captions & Audio Tracks] niet ziet, betekent dit een van de volgende twee dingen:
    >* Aan de map waarin de geselecteerde video zich bevindt, is geen videoprofiel toegewezen. In welk geval, zie [ een videoprofiel op de omslag ](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders) toepassen
-   >* Of de video moet opnieuw worden verwerkt door Dynamic Media. In welk geval, zie [ de activa van Dynamic Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
+   >* Of Dynamic Media moet de video opnieuw verwerken. In welk geval, zie [ de activa van Dynamic Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
 
    Als u een van de bovenstaande taken hebt uitgevoerd, gaat u terug naar deze stappen.
 
-   ![ eigenschappen van Activa ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Bijschriften en Audiosporen lusje op de pagina van de Eigenschappen van de video.*
+   ![ de eigenschappen van Activa ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Bijschriften en audiosporen tabel op de pagina van de Eigenschappen van de video.*
 
 1. (Optioneel) Ga als volgt te werk om een of meer bijschriftbestanden aan een video toe te voegen:
 
    * Selecteer **[!UICONTROL Upload Captions]** .
-   * Navigeer naar en selecteer een of meer .vtt-bestanden (videoteksttracks) en open deze.
+   * Navigeer naar en selecteer een of meer `.vtt` (Video Text Tracks)-bestanden en open deze.
    * Als u wilt dat bijschriften zichtbaar zijn op de mediaspeler, moet u vereiste gegevens (metagegevens) toevoegen over elk bijschriftbestand dat u hebt geüpload. Selecteer het potloodpictogram rechts van de bestandsnaam van een bijschrift. Voer in het dialoogvenster Bijschrift bewerken de volgende vereiste gegevens over het bestand in en selecteer vervolgens **[!UICONTROL Save]** . Herhaal dit proces voor elk bijschriftbestand dat u hebt geüpload:
 
 
@@ -626,7 +626,7 @@ Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen We
    | --- | --- | 
    | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br> zelfde filename kan niet voor extra titeldossiers en audiospoordossiers worden gebruikt. |
    | Taal | Selecteer de taal van het bijschrift. |
-   | Type | Selecteer het type bijschrift dat u gebruikt.<br>**Ondertitel** - de titeltekst die met de video wordt getoond die vertaalt of de dialoog transcripting.<br>**Titel** - de bijschrifttekst omvat ook achtergrondgeluiden, sprekersdifferentiatie, en andere relevante informatie, samen met de vertaling of transcriptie van de dialoog, die de inhoud toegankelijker maken voor individuen die doof of moeilijk zijn te horen. |
+   | Type | Selecteer het type bijschrift dat u gebruikt.<br>**Ondertitel** - de titeltekst die met de video wordt getoond die vertaalt of de dialoog transcripting.<br>**Titel** - de bijschrifttekst omvat achtergrondgeluiden en sprekersidentificatie. Het bevat ook andere relevante details naast de vertaling of transcriptie van de dialoog. Deze functionaliteit maakt de inhoud toegankelijker voor doven of slechthorenden. |
    | Label | De tekst die voor de naam van het bijschrift wordt weergegeven in de pop-uplijst **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld Engels (CC). |
 
    U kunt de metagegevens van bijschriften indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
@@ -635,7 +635,7 @@ Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen We
 
    * Selecteer **[!UICONTROL Upload Audio Tracks]** .
    * Navigeer naar en selecteer een of meer MP3-bestanden en open deze.
-   * Als u audiotracks wilt weergeven in de pop-uplijst van **[!UICONTROL Select audio or caption]** op de mediaspeler, moet u vereiste gegevens toevoegen over elk audiotrackbestand dat u hebt toegevoegd. Selecteer het potloodpictogram rechts van de bestandsnaam van een audiotrack. Voer in het dialoogvenster Audiotrack bewerken de volgende vereiste gegevens in en selecteer vervolgens **[!UICONTROL Save]** . Herhaal dit proces voor elk audiospoordossier dat u uploadde.
+   * Als u audiotracks zichtbaar wilt maken in de pop-uplijst van **[!UICONTROL Select audio or caption]** op de mediaspeler, voegt u de vereiste gegevens voor elk audiotrackbestand toe. Zorg ervoor dat u alle benodigde informatie opneemt voor een juiste weergave. Selecteer het potloodpictogram rechts van de bestandsnaam van een audiotrack. Voer in het dialoogvenster Audiotrack bewerken de volgende vereiste gegevens in en selecteer vervolgens **[!UICONTROL Save]** . Herhaal dit proces voor elk audiospoordossier dat u uploadde.
 
    | Metagegevens audiotrack | Beschrijving |
    | --- | --- |
@@ -931,7 +931,7 @@ In de **Reeks als standaard** dialoogdoos, uitgezochte **[!UICONTROL Replace]**.
 1. Selecteer **[!UICONTROL Save & Close]** in de rechterbovenhoek.
 1. Publish the video. Zie [ de activa van Publish ](publishing-dynamicmedia-assets.md).
 
-### Een voorvertoning weergeven van een video met meerdere bijschriften en audiotracks{#preview-video-audio-subtitle}
+### Een voorvertoning weergeven van een video met meerdere bijschriften en audiotracks {#preview-video-audio-subtitle}
 
 Nadat bijschriftbestanden en audiotrackbestanden naar een video zijn geüpload en zijn verwerkt, kunt u met de Dynamic Media-videoviewer een voorvertoning van alle verschillende tracks weergeven. Zo kunt u zien hoe de video er uitziet en hoe de video er voor de klant uitziet en zorgt u ervoor dat de video zich naar behoren gedraagt.
 
@@ -993,7 +993,7 @@ De oorspronkelijke audiotrack die uit een primair videobestand is gehaald, kan n
 
 **geval van het Gebruik:** het downloaden van een titeldossier zou noodzakelijk kunnen zijn als u een fout in a `.vtt` dossier vindt. U hoeft alleen het onjuiste `.vtt` -bestand te downloaden, het bestand te openen in een teksteditor zonder opmaak en de correcties aan te brengen. Nadat u het `.vtt` -bestand hebt opgeslagen, uploadt u het opnieuw. Gebruik vervolgens de optie **[!UICONTROL Translate Captions]** om het gecorrigeerde `.vtt` -bestand opnieuw te vertalen.
 
-**om titel of audiospoordossiers van een video te downloaden:**
+**om titel of audiospoordossiers te downloaden die aan een video werden geupload:**
 
 1. Navigeer naar het video-element waarvan u de standaardaudiotrack wilt instellen.
 1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
