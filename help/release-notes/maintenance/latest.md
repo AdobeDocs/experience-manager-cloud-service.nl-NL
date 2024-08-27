@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
+source-git-commit: 82be9b2b328343e827b90bd8266d93127757f477
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -16,107 +16,82 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 17465 {#release-17465}
+## Release 17569 {#release-17569}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 17465 samengevat, die op 14 augustus 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 17258.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 17569 samengevat, die op 27 augustus 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 17465.
 
-De activering van de 2024.8.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
+De activering van de 2024.9.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-17465}
+### Verbeteringen {#enhancements-17569}
 
-* FORMS-15436 - Gracously behandelt uitzondering in de planner van de Status van Adobe Sign.
-* FORMS-15362 - Voeg configuratie voor vorm-stichting in middelen toe om login toe te laten.
-* FORMS-15261 - SPA wordt niet weergegeven in de Forms-editor.
-* FORMS-15138 - Verwerking voor Dubbele gegevens achterwaartse verenigbaarheid toe te schrijven aan sling commons json verbetering.
-* FORMS-15113 - De Veranderende Zeer belangrijke naam in sid from vistorId voor het volgen RUM.
-* FORMS-15103 - Assets die in een formulier is bijgevoegd, wordt niet gepubliceerd bij levering aan de rand.
-* FORMS-15082 - JSON-schema om toe te wijzen aan aangepaste formuliercomponenten.
-* FORMS-15002 - Sjabloontype-registratie van v1-fragmenten.
-* FORMS-14845 - Ondersteuning voor xdpRef in basisonderdelen van kerncomponenten via formulierbeheer.
-* FORMS-14840 - Forms Prefill Service-fouten.
-* FORMS-14836 - Verbeter vormen manager UI, aan lijst AF1 fragmentmalplaatjes.
-* FORMS-14834 - Sjabloonondersteuning voor fragmenten in AF1.
-* FORMS-14275 - Het met voeten treden van Dank u pagina en Dank u Bericht in Embed Container.
-* FORMS-13623 - Functionaliteit voor het automatisch opslaan van tijd inschakelen voor V2.
-* FORMS-8651 - Waarschuwingsvenster voor het wijzigen van de configuratie van het gegevensmodel op de pagina met formuliereigenschappen.
-* SITES-23310 - Content Fragments REST API: Prevent Circular Dependency in Nested References for Content Fragments.
-* SITES-23285 - de Fragmenten van de Inhoud REST API: creeer eindpunt om van alle beschikbare Talen een lijst te maken.
-* SITES-22857 - Content Fragments REST API: Checkbox enumeration fields should not allow multiple property set to false.
-* SITES-22813 - Content Fragments REST API: Definieer min/max eigenschappen voor opsommingsvelden.
-* SITES-22031 - Content Fragments REST API: Get allowed content fragment models for a Fragment&#39;s folder.
-* SITES-17640 - Content Fragments REST API: Content Fragment Publish operation validation.
-* SITES-22677 - Content Fragments REST API: Win een vlakke lijst van afstammende verwijzingen terug.
-* SITES-22207 - Model gedupliceerd bij het maken van inhoudsfragmenten.
-* SITES-23093 - Eventing: voeg tags toe aan ladingen voor gebeurtenissen van het Content Fragment Model.
-* SITES-23092 - Eventing: voeg labels toe aan ladingen voor gebeurtenissen van het Fragment van de Inhoud.
-* SITES-22447 - Voeg Ervaring toe de eigenschappen overervingssteun van het Fragment aan de Basis eigenschappen tabel.
-* SITES-12209 - Verbeter de prestaties van de Redacteur van het Beleid door cq toe te voegen:beleid aan index.
+* CQ-4353778: Gebeurtenissen vertaalproces.
+* CQ-4354583: Verstuur vertaalprocesgebeurtenissen via Adobe Pipeline.
+* CQ-4356479: Alleen Adobe-code toestaan om de /adobe servlet-context te gebruiken.
+* CQ-4358133: Jenkins-arbeidersgebruik optimaliseren.
+* CQ-4358226: De functionaliteit van het sleutelwoord van de Bewaarvertaling werkt niet voor bepaalde formaat van het Koord.
+* CQ-4358270: AEM Vertaalkit: 8 augustus.
+* CQ-4358310: Voeg eak-compat-query-spi-1.2 toe aan snelstart.
+* GRANITE-36205: Automated update for internal eak release in QS.
+* GRANITE-49833: Batching support for event sender and proxy.
+* GRANITE-52053: Verwijder het gebruik van Commons Collections 3: Platform anderen.
+* GRANITE-52492: Elastische async catchup in geval van PIT-herstel.
+* GRANITE-53086: Werk de versie van de jacoco-plug-in bij naar 0.8.12 in AEMaaCS.
+* GRANITE-53099: Bijwerken naar Apache Felix HTTP Jetty 5.1.24.
+* GRANITE-53125: Voeg classificatie toe aan CloudEvent.
+* GRANITE-53328: Werk FileVault bij tot 3.8.0-T20240726111512-3cc11d50 met verbeteringen voor het strepen van logboekregistratie.
+* GRANITE-53340: AEM660: correcte versioning en vertakking voor 660 CQ/Platform.
+* GRANITE-53341: Let niet op het gebruik van ACS-commons 6.
+* GRANITE-53453: update commons-lang tot 3.15.0.
+* GRANITE-53473: Instellingen voor onbewerkte verkoop.
+* GRANITE-53478: Werk FileVault bij naar versie 3.8.0.
+* GRANITE-53505: Werk QS aan commons-collections-3.2.2-adobe-2 bij.
+* GRANITE-53528: Update version of platform artifacts.
+* GRANITE-53547: Alternatieve API aanbieden om het gebruik van Apache Commons Lang 2 te voorkomen.
+* GRANITE-53575: gebruik BSAFE 6.2.5 in CS.
+* GRANITE-53608: Update Oak to latest public release (1.68.0).
+* SITES-23583: De tests van Evergreen van Sites mislukken op Java 17.
+* SKYOPS-79535: Bijwerken naar rum script v2.
+* SKYOPS-79816: Laat de Taak van de Analysator van de Eigenschap van de Verkoop voor de Toewijzingen van de Gebruiker van de Dienst in het Hulpmiddel van FEIT toe.
+* SKYOPS-81179: AEM bouwt het testen voor bundeltogging.
+* SKYOPS-81866: Rapporteer waarschuwingen voor bundels waarvan bekend is dat ze niet compatibel zijn met Java 21.
+* SKYOPS-82660: Update Sling API to 2.27.6.
+* SKYOPS-82961: Update aan Sling ResourceResolver 1.12.0-T20240723153354-a0270a0.
+* SKYOPS-83356: Maak een globaal dashboard voor het bijhouden van JVM-versies die worden gebruikt in AEM implementaties.
+* SKYOPS-83436: Java Runtime 21 rollout break creation of adaptive forms AEM Forms.
+* SKYOPS-84272: Logboek de Java-versie die bij het opstarten van de aem-lancering wordt gebruikt.
 
-### Opgeloste problemen {#fixed-issues-17465}
+### Opgeloste problemen {#fixed-issues-17569}
 
-* CQ-4358028 - Kan geen project maken als de miniatuur wordt geüpload.
-* CQ-4357891 - Sequence Issue of Exported XLIFF.
-* CQ-4357059 - Het voltooien van de Vertaaltaak duurt uren, wat leidt tot een time-out van 503 in AEMaaCS.
-* FORMS-15320 - E-mailverzending werkt niet in een basisformulier voor componenten.
-* FORMS-15272 - AEM Forms - Checkbox-groep verzendt slechts 1 waarde.
-* FORMS-15269 - Facing product related issues after Maintenance release 16461.
-* FORMS-15174 - JsonSchemaParser isValid issue.
-* FORMS-15095 - TextBox met meerdere regels kan worden uitgerekt tot voorbij het bevatten van deelvensters in AEM Forms.
-* FORMS-15057 - FDM SharePoint-lijst die bijlage fout voor voorlegging > 999 werpt.
-* FORMS-15011 - de Redacteur van de Kern veroorzaakt consolefout terwijl het openen van een Vorm in redacteur.
-* FORMS-14809 - SDK-map wordt niet automatisch gemaakt in de gedeelde tijdelijke map.
-* FORMS-14327 - Forms Service API&#39;s: extraheren gegevens:- geeft 500 responscode wanneer een niet-interactieve pdf wordt ingevoerd.
-* FORMS-7475 - Sorteren werkt niet op de pagina Adaptief formulier maken.
-* FORMS-3309 - Als bij het verzenden van een formulier meerdere opties zijn geselecteerd, wordt in een gegenereerde DoR slechts één optie weergegeven.
-* SITES-23646 - het modeleindpunt van GraphQL ontbreekt voor modellen die met OpenAPI worden gecreeerd als de gebieden uniek bevatten.
-* SITES-23637 - Content Fragments REST API: OpenAPI gebruikt niet het juiste waardetype voor opsommingen.
-* SITES-23573 - Content Fragments REST API: Live-relaties worden niet gerespecteerd bij uuid-fragmenten voor GET-inhoud.
-* SITES-23535 - Content Fragments REST API: Content Fragment Model enumeration multi-fields have empty values.
-* SITES-23534 - Content Fragments REST API: Content Fragment Validation ClassCastException.
-* SITES-23524 - Pas het modeleindpunt van GraphQL BFF aan om multi-field opsommingsgebieden te steunen.
-* SITES-23467 - Content Fragments REST API: De Modellen van het onderzoek ontbreken wegens curseurkwestie.
-* SITES-23327 - ArrayIndexOutOfBoundsException in AuditLogTimelineEventProvider tijdens de beschrijving van de tijdlijngebeurtenisverwerking.
-* SITES-23277 - Content Fragments REST API: Content Fragment Field live relationship check should only be made for live copies.
-* SITES-23232 - De bevestiging van de Douane werkt niet in nieuwe redacteur CF UI.
-* SITES-23090 - Content Fragments REST API: Cannot update title of a locked Content Fragment.
-* SITES-22981 - Het bevorderen van een geneste lancering die niet diep is publiceert niet.
-* SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException.
-* SITES-22814 - Content Fragments REST API: Checkbox Enumeration fragment fields values should be ordered by the keys defined in the model.
-* SITES-22716 - Issue with OTB components live usage List.
-* SITES-22457 - Het bevorderen van een lancering die niet diep is werkt broninhoud niet bij.
-* SITES-22449 - Kan wijzigingen in inhoudsfragmenten niet opslaan na AEM P20-upgrade.
-* SITES-22279 - Content Fragments REST API: Content Fragment mist het unieke kenmerk voor opsommingstypen.
-* SITES-22203 - Content Fragments REST API: Align Management APIs to response the same situatie.
-* SITES-21973 - Content Fragments REST API: Model mist het unieke attribuut voor opsommingstypen.
-* SITES-20364 - 302 leidt het Werken niet met selecteur in URL om.
-* SITES-21198 - VersionPreviewServlet: Overbodig verwijderen wordt gelijktijdig uitgevoerd op alle clusterknooppunten die samenvoegconflicten en blokverbintenissen veroorzaken.
+* CMGR-60225: uitvoeringsfout van de pijpleiding die bij een AEM Sites CS-klant wordt geïdentificeerd tijdens de validatie van een update naar AEM versie 17486.
+* GRANITE-45919: landen waarvoor een embargo geldt in de lijst Land/regio in Gebruikersinstellingen bewerken.
+* GRANITE-51715: de kiezer voert de selectie soms niet in het tekstveld in.
+* GRANITE-53290: controleer correct het protocol wanneer het ontleden van URL in de controle XSS.
+* GRANITE-53576: Verkeerde definitie van de dienstrangschikking in configuraties OSGi.
+* SKYOPS-82129: Memoryleak in Sling Models.
 
-### Bekende problemen {#known-issues-17465}
+### Bekende problemen {#known-issues-17569}
 
-* ASSETS-40875 - De klasse AssetDeleteHandler luistert naar gebeurtenissen voor het verwijderen van elementen en voert specifieke handelingen uit op basis van het type delete-gebeurtenis (PRE_DELETE of POST_DELETE). In bepaalde scenario&#39;s, veroorzaakt het type van POST_DELETE gebeurtenis een NullPointerException.
-* FORMS-14340 - Fout in het concretiseren van FormsAndDocumentOmniSearchHandler en CloudStorageSubmitActionInserter. Dit zijn ongevaarlijke loginstructies.
-* FORMS-15818 - Component descriptor entry &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; niet gevonden instructies in serverlogboeken. Dit zijn ongevaarlijke loginstructies.
-* SITES-23662 - Gebruiker die een publicatie activeert, kan niet worden geëxtraheerd uit JCR-loginstructies in serverlogboeken. Dit is voor een eigenschap onder ontwikkeling die intermitterende en ongevaarlijke &quot;kan geen geldige gebruiker - identiteitskaart in de partij van gebeurtenissen vinden OSGI&quot;fouten in het logboek zou kunnen veroorzaken.
+Geen.
 
-### Kennisgeving wijzigen {#change-notice-17465}
+### Kennisgeving wijzigen {#change-notice-17569}
 
 * Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [ de documentatie ](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) voor meer details.
 
-### Verouderde functies en API&#39;s {#deprecated-17465}
+### Verouderde functies en API&#39;s {#deprecated-17569}
 
 We zijn bezig met het bijwerken van `com.day.cq.wcm.api` en met de huidige release hebben we een aantal methoden en klassen gemarkeerd als `@Deprecated` . Deze zullen in toekomstige versies worden verwijderd, dus gelieve te overwegen aan hun voorgestelde alternatieven over te schakelen als u om het even welk van hen gebruikt.
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-17465}
+### Beveiligingsproblemen {#security-17569}
 
-AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 7 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
+AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 4 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-17465}
+### Ingesloten technologieën {#embedded-tech-17569}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
-| AEM Oak | 1 66,0 | [ Oak API 1.66.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.66.0/index.html) |
-| AEM SLING-API | 2.27.2. | [ Apache Sling API 2.27.2 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM Oak | 1 68,0 | [ Oak API 1.68.0 ](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html) |
+| AEM SLING-API | 2,27,6 | [ Apache Sling API 2.27.6 API ](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | {de Specificatie van de Taal van het Malplaatje 0} HTML ](https://github.com/adobe/htl-spec)[ |
-| AEM-kerncomponenten | 2,25,4 | [ AEM de Componenten van de Kern WCM ](https://github.com/adobe/aem-core-wcm-components) |
+| AEM-kerncomponenten | 2.26.0. | [ AEM de Componenten van de Kern WCM ](https://github.com/adobe/aem-core-wcm-components) |
