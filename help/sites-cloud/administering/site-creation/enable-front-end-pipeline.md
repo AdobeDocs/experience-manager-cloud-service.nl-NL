@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -50,7 +50,7 @@ AEM kan uw bestaande plaats automatisch aanpassen om de front-end pijpleiding te
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-Het toelaten van uw plaats wordt gedaan van de console van Plaatsen gebruikend het [ spoor van de Plaats.](site-rail.md)
+Het toelaten van uw plaats wordt gedaan van de console van Plaatsen gebruikend het [ spoor van de Plaats ](site-rail.md).
 
 1. Logboek in AEM en navigeer aan uw plaats via **Globale Navigatie** > **Plaatsen**.
 1. Selecteer uw site in de console. Selecteer de hoofdmap van de site en geen onderliggende pagina&#39;s.
