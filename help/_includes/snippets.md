@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8728af7d9baee0c9324c1e9be1ae66d105396c40
+source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -133,5 +133,5 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 
 >[!IMPORTANT]
 >
->Als u gebruikt-of voorgenomen om te gebruiken-front-end pijpleiding om plaatsen te ontwikkelen, moet de Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
+>Als u gebruikt-of van plan bent te gebruiken-front-end pijpleiding om plaatsen te ontwikkelen, moet de Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
 >Zie [ Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).

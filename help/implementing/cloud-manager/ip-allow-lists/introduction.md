@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Na het toevoegen, [ IP kunnen de Lijsten van gewenste personen worden toegepast 
 
 ## Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding {#allowlists-frontend-pipeline}
 
-Als u gebruikt-of voorgenomen om te gebruiken-de [ front-end pijpleiding om plaatsen ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) te ontwikkelen, moet de volgende Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
+Als u gebruik-of van plan bent te gebruiken-de [ front-end pijpleiding om plaatsen ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) te ontwikkelen, moet de volgende Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
 
 Wanneer u [ de IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist) toevoegt, noem het *`Cloud Manager`*, dan kopieer de lijst van hieronder adressen en kleef hen in het IP de dialoogvakje van de Lijst van gewenste personen.
 
