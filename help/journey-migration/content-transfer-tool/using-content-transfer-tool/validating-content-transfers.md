@@ -4,12 +4,13 @@ description: Gebruik het gereedschap Inhoud overbrengen om inhoudsoverdrachten t
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
+
 
 # Inhoudsoverdrachten valideren {#validating-content-transfers}
 
@@ -134,23 +135,28 @@ Naast wordt inbegrepen in het innamelogboek, kan het bevestigingsrapport ook van
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## Hoe te om de Belangrijkste Migratie te bevestigen {#how-to-validate-principal-migration}
+## Hoe te om de Belangrijkste Migratie te bevestigen {#how-to-validate-group-migration}
 
-Zie [ Toewijzing van de Gebruiker en Belangrijkste Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) om de belangrijkste migratiedetails te lezen en waarom het noodzakelijk is.
+Zie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) de Migratie van de Groep van 0} om de belangrijkste migratiedetails te lezen en waarom het noodzakelijk is.[
 
-Nadat de extractie en inname met succes zijn voltooid, is een samenvatting en rapport van de belangrijkste migratie beschikbaar. Deze informatie kan worden gebruikt om te valideren welke gebruikers en groepen met succes zijn gemigreerd, en misschien om te bepalen waarom sommige niet.
+Nadat de extractie en inname met succes zijn voltooid, is een samenvatting en rapport van de belangrijkste migratie beschikbaar. Deze informatie kan worden gebruikt om te valideren welke groepen succesvol zijn gemigreerd, en misschien om te bepalen waarom sommige niet.
 
 Ga naar Cloud Acceleration Manager om deze gegevens te bekijken. Klik op de projectkaart en klik op de kaart voor inhoudsoverdracht. Navigeer aan **Banen van de Opname** en bepaal de plaats van de opname die u wilt verifiëren. Klik de drie punten (**...**) voor die opname, dan klik **belangrijkste samenvatting van de Mening** in drop-down.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Er wordt een dialoogvenster weergegeven met de overzichtsgegevens. Gebruik de Help-pictogrammen om een meer volledige beschrijving te lezen. Klik het **rapport van de Download** knoop om het volledige komma-gescheiden (CSV) rapport te downloaden.
+Er wordt een dialoogvenster weergegeven met de overzichtsgegevens. Gebruik de Help-pictogrammen om een meer volledige beschrijving te lezen. Klik het **rapport van de Download** knoop om het volledige komma-gescheiden (CSV) rapport te downloaden.  Merk ook op dat aan het eind van dit rapport het Rapport van de Gebruiker is, dat voor post-migratie gebruikersbeheer kan worden gebruikt.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->Als gebruikerstoewijzing is uitgeschakeld, wordt een andere variant van dit dialoogvenster weergegeven. Dit geeft aan dat gebruikerstoewijzing is uitgeschakeld en dat de drie velden met gebruikerstoewijzingswaarden niet worden weergegeven.
+In het rapport &quot;Belangrijkste migratie&quot; wordt het volgende vermeld:
+
+* Elke groep is gemigreerd en het eerste inhoudspad dat ertoe heeft geleid dat die groep is gemigreerd. De groep kan zich ook op andere paden bevinden, maar alleen het eerste pad dat voor een bepaalde groep is gevonden, wordt gerapporteerd. Het meldt ook of het in ACL of een beleid van de CUG werd gevonden.
+* Elke groep is niet gemigreerd en de reden waarom deze niet is gemigreerd.  Doorgaans is dit een van de volgende redenen:
+   * Het is een ingebouwde groep
+   * Het bevindt zich al op het doelsysteem
+   * Het is niet in ACL of het beleid van de CUG over de inhoud die wordt gemigreerd
+   * Het heeft een dubbel uniek gebied (één van rep:principalName, rep:authorizableId, jcr:uid of rep:externalId is reeds op de bestemming, maar deze allen moeten uniek zijn)
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -166,6 +172,6 @@ Sommige paden uit de extractie- en innamesamenvattingen worden doelbewust uitges
 
 De paden die we momenteel uitsluiten van de samenvattingen zijn: `cqdam.text.txt` uitvoeringen, knooppunten binnen `/home` en knooppunten binnen `/jcr:system` .
 
-### Gesloten gebruikersgroepen functioneren niet {#validating-cugs}
+### Gesloten gebruikersgroepen {#validating-cugs}
 
 Zie [ het Migreren van Gesloten Groepen van de Gebruiker ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen wanneer het gebruiken van een Gesloten beleid van de Groep van de Gebruiker (CUG).

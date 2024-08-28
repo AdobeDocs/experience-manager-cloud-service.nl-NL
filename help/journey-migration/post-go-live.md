@@ -4,7 +4,7 @@ description: Leer hoe u op problemen kunt controleren en de prestaties kunt verb
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM voor probleemoplossing"
->abstract="De beste praktijken van het overzicht voor ononderbroken ontwikkeling en beheert logboeken samen met hulpmiddelen zoals de console &amp; CRXDE Lite van de Ontwikkelaar om met het oplossen van problemenkwesties met AEM te helpen"
+>abstract="De beste praktijken van het overzicht voor ononderbroken ontwikkeling en beheert logboeken samen met hulpmiddelen zoals de console van de Ontwikkelaar &amp; CRXDE Lite om met het oplossen van problemenkwesties met AEM te helpen"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Logbestanden openen en beheren"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service-ontwikkelingstools"
 

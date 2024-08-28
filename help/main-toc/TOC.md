@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
 workflow-type: tm+mt
-source-wordcount: '5478'
+source-wordcount: '5481'
 ht-degree: 3%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 3%
       + [Omgevingen maken](/help/journey-onboarding/create-environments.md)
       + [AEM productprofielen toewijzen](/help/journey-onboarding/assign-profiles-aem.md)
       + [Taken van ontwikkelaar- en implementatiebeheer](/help/journey-onboarding/developers.md)
+      + [Belangrijkste functies beheren](/help/journey-migration/managing-principals.md)
       + [AEM](/help/journey-onboarding/aem-users.md)
       + [Live checklist](/help/journey-onboarding/go-live-checklist.md)
    + AEM Referentie demos Add-On-reis {#demo-add-on}
@@ -276,13 +277,14 @@ ht-degree: 3%
          + [Inhoudsoverdrachten valideren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Gesloten gebruikersgroepen migreren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [Afhandeling van grote opslagplaatsen voor inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Toewijzing van gebruikers en belangrijkste migratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [Groepsmigratie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
          + [Inhoud uit Source extraheren](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Inhoud in Cloud Service invoegen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Indexeren na migreren van inhoud](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [Logboeken voor een migratieset weergeven](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Een migratieset verwijderen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Het gereedschap Inhoud overbrengen uitvoeren op een Publish-instantie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+         + [Belangrijkste functies beheren na migratie](/help/journey-migration/managing-principals-after-migration.md)
          + [Problemen met het gereedschap Inhoud overbrengen oplossen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Het Verouderde Hulpmiddel van de Toewijzing van de Gebruiker (Verouderd) {#legacy-user-mapping-tool}
             + [Overzicht](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)

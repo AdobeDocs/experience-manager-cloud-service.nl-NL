@@ -4,9 +4,9 @@ description: Leer hoe u de migratie uitvoert als de code en de inhoud klaar zijn
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,6 @@ Houd er rekening mee dat de volledige inname mislukt als een van de volgende bep
 
 * Een JCR-knooppunt met een naam van meer dan 150 tekens
 * Een JCR-knooppunt dat groter is dan 16 MB
-* Elke gebruiker/groep met `rep:AuthorizableID` die wordt ingevoerd en al aanwezig is op AEM as a Cloud Service
 * Als een middel dat wordt geëxtraheerd en ingepakt, naar een ander pad wordt verplaatst op de bron of de bestemming vóór de volgende herhaling van de migratie.
 
 ## Systeemgezondheid {#asset-health}
@@ -119,4 +118,4 @@ Voor meer informatie, raadpleeg de [ Go-Live Checklist ](/help/journey-onboardin
 
 ## Volgende functies {#what-is-next}
 
-Zodra u begrijpt hoe te om de migratie aan AEM as a Cloud Service uit te voeren, kunt u [ Post-gaan-Levende ](/help/journey-migration/post-go-live.md) pagina controleren om uw instantie te houden die regelmatig loopt.
+Zodra u begrijpt hoe te om de migratie aan AEM as a Cloud Service uit te voeren, kunt u de [ post-gaan-Levende ](/help/journey-migration/post-go-live.md) pagina controleren om uw instantie te houden die regelmatig loopt.

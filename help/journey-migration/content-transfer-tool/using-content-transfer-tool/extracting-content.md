@@ -4,7 +4,7 @@ description: Leer hoe u inhoud van een Adobe Experience Manager-broninstantie (A
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 9%
@@ -41,7 +41,7 @@ Voer de onderstaande stappen uit om uw migratieset te extraheren uit de Content 
 
 1. Hiermee wordt het dialoogvenster Extractie weergegeven. Klik **Extraheren** om de extractiefase te beginnen.
 
-   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >U kunt optioneel de container overschrijven tijdens de extractiefase. Als **staging container** wordt onbruikbaar gemaakt overschrijven, kan het extracties voor verdere migraties versnellen waar de inhoudspaden of versiemontages omvatten niet zijn veranderd. Nochtans, als de inhoudspaden of versiemontages omvatten zijn veranderd, dan **zou de staging container** moeten worden toegelaten.

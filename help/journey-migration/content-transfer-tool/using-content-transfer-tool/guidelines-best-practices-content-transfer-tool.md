@@ -4,12 +4,13 @@ description: Leer de richtlijnen en de beste werkwijzen voor het gebruik van het
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1368'
 ht-degree: 11%
 
 ---
+
 
 # Richtlijnen en aanbevolen procedures voor het gebruik van het gereedschap Inhoud overbrengen {#guidelines}
 
@@ -22,24 +23,24 @@ ht-degree: 11%
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users" 
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
 
-Er is een nieuwe versie van het gereedschap Inhoud overbrengen beschikbaar waarin het proces voor het overbrengen van inhoud wordt geïntegreerd met Cloud Acceleration Manager. U wordt ten zeerste aangeraden over te schakelen naar deze nieuwe versie om alle voordelen van de toepassing te benutten:
+Met het gereedschap Inhoud overbrengen wordt het proces voor inhoudsoverdracht geïntegreerd met Cloud Acceleration Manager. U moet deze versie (2.0 of hoger, maar versie 3.0 wordt nu aanbevolen) gebruiken om alle voordelen te behalen die deze biedt:
 
 * Zelfbediening om een migratieset één keer uit te pakken en tegelijkertijd in meerdere omgevingen in te voeren
 * Verbeterde gebruikerservaring dankzij betere laadstatussen, instructies en foutafhandeling
 * Logbestanden voor insluiting blijven bestaan en zijn altijd beschikbaar voor probleemoplossing
 
-Als u de nieuwe versie wilt gebruiken, verwijdert u oudere versies van het gereedschap Inhoud overbrengen. Dit is nodig omdat de nieuwe versie een grote architectonische verandering heeft. Met versie 2.x maakt u migratiesets en voert u de extractie en inname van de sets opnieuw uit.
+Als u de nieuwste versie wilt gebruiken, verwijdert u oudere versies van het gereedschap Inhoud overbrengen. Met versie 2.0 en hoger kunt u migratiesets maken en extractie en inname van de sets opnieuw uitvoeren.
 Versies die ouder zijn dan 2.0.0 worden niet ondersteund en u wordt geadviseerd de meest recente versie te gebruiken.
 
 De volgende Richtlijnen en Beste praktijken zijn op de nieuwe versie van het Hulpmiddel van de Overdracht van de Inhoud van toepassing:
 
 * De opruiming van de Herziening van de looppas ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) en [ de controles van de gegevensopslag ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) op de **bron** bewaarplaats zodat kunt u potentiële problemen identificeren en de grootte van de bewaarplaats verminderen.[
 
-* In de innamefase, adviseert de Adobe dat u inname gebruikend *in werking stelt veegt* wijze toegelaten waar de bestaande bewaarplaats (auteur of publiceert) in het milieu van de Cloud Service van doelAdobe Experience Manager (AEM) wordt geschrapt. Werk vervolgens bij met de gegevens van de migratieset. Deze modus is sneller dan de modus Vegen, waarbij de migratieset boven op de huidige inhoud wordt toegepast.
+* In de innamefase, adviseert de Adobe dat u de inname gebruikend *in werking stelt veegt* wijze toegelaten waar de bestaande bewaarplaats (Auteur of Publish) in het milieu van de Cloud Service van doelAdobe Experience Manager (AEM) wordt geschrapt. Werk vervolgens bij met de gegevens van de migratieset. Deze modus is sneller dan de modus Vegen, waarbij de migratieset boven op de huidige inhoud wordt toegepast.
 
 * Wanneer alle content is verplaatst, is de juiste projectstructuur in de Cloud Service-omgeving vereist. Anders wordt de content niet correct weergegeven in de Cloud Service-omgeving.
 
@@ -47,8 +48,8 @@ De volgende Richtlijnen en Beste praktijken zijn op de nieuwe versie van het Hul
 De algemene formule voor het berekenen van de vereiste vrije schijfruimte is als volgt:
   `data store size + node store size * 1.5`
 
-   * *Grootte van dataopslagplaats*: De Content Transfer-tool gebruikt 64 GB, ook als de werkelijke dataopslagplaats groter is.
-   * *Grootte van node-opslagplaats*: De grootte van de segmentopslagdirectory of de grootte van de MongoDB-database.
+* *Grootte van dataopslagplaats*: De Content Transfer-tool gebruikt 64 GB, ook als de werkelijke dataopslagplaats groter is.
+* *Grootte van node-opslagplaats*: De grootte van de segmentopslagdirectory of de grootte van de MongoDB-database.
 Voor een segmentopslagplaats van 20 GB is dus 94 GB aan vrije schijfruimte vereist.
 
 * Een migratieset moet gedurende de gehele activiteit van de inhoudsoverdracht worden gehandhaafd om de aanvulling van de inhoud te steunen. Er kunnen maximaal 20 migratiesets per project in Cloud Acceleration Manager worden gemaakt en onderhouden op een moment tijdens de activiteit voor inhoudsoverdracht. Als er meer dan 20 migratiesets nodig zijn, maakt u een tweede project in Cloud Acceleration Manager. Dit vereist echter extra projectbeheer en beheer buiten het product om te voorkomen dat inhoud op het doel door meerdere gebruikers wordt overschreven.
@@ -75,13 +76,13 @@ Bekijk de onderstaande sectie om inzicht te krijgen in de belangrijke overweging
 
 * De extractietoets is 14 dagen geldig vanaf het moment dat deze is gemaakt of vernieuwd. Het kan op elk ogenblik worden verlengd. Als de extractietoets is verlopen, kunt u geen extractie uitvoeren.
 
-* Met het gereedschap Inhoud overbrengen (CTT) kunt u geen inhoudanalyse uitvoeren voordat u inhoud van de broninstantie naar de doelinstantie overbrengt. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een Publish-omgeving. De inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. Gebruiker kan een migratieset opnemen in een Author-instantie of Publish-instantie of beide. De Adobe beveelt aan dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT op de instantie van de bronauteur wordt geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen. En installeer op dezelfde manier CTT op de Publish-broninstantie om inhoud naar de Publish-doelinstantie te verplaatsen. Zie [ Lopend het Hulpmiddel van de Overdracht van de Inhoud op een instantie van Publish ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) voor meer details.
+* Met het gereedschap Inhoud overbrengen (CTT) kunt u geen inhoudanalyse uitvoeren voordat u inhoud van de broninstantie naar de doelinstantie overbrengt. CTT maakt bijvoorbeeld geen onderscheid tussen gepubliceerde en niet-gepubliceerde inhoud wanneer inhoud wordt ingesloten in een Publish-omgeving. De inhoud die in de migratieset wordt opgegeven, wordt in de gekozen doelinstantie opgenomen. Een gebruiker kan een migratieset opnemen in een instantie Auteur, een instantie Publish of beide. De Adobe beveelt aan dat terwijl het bewegen van inhoud naar een instantie van de Productie, CTT op de instantie van de bronauteur wordt geïnstalleerd om inhoud naar de instantie van de doelauteur te verplaatsen. En installeer op dezelfde manier CTT op de Publish-broninstantie om inhoud naar de Publish-doelinstantie te verplaatsen. Zie [ Lopend het Hulpmiddel van de Overdracht van de Inhoud op een instantie van Publish ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) voor meer details.
 
-* De gebruikers en de Groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die die door de inhoud worden vereist om aan toestemmingen te voldoen. Het _proces van de Uitwinning_ kopieert het volledige `/home` in de migratiereeks, en het doet Toewijzing van de Gebruiker door een gebied toe te voegen dat van het e-mailadres van elke gebruiker wordt gemaakt. Voor meer informatie, zie [ Toewijzing van de Gebruiker en Belangrijkste Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Het _1} proces van de Opname {kopieert alle gebruikers en groepen die in gemigreerde inhoud ACLs van verwijzingen worden voorzien._ Zie [ het Migreren van Gesloten Groepen van de Gebruiker ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen voor groepen die in een gesloten beleid van de Groep van de Gebruiker (CUG) worden gebruikt.
+* De groepen die door het Hulpmiddel van de Overdracht van de Inhoud worden overgebracht zijn slechts die groepen die door de inhoud worden vereist om toestemmingen tevreden te stellen. Het _proces van de Extractie_ kopieert het volledige `/home/groups` in de migratiereeks. Voor meer informatie, zie [ Migratie van de Groep ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md). Het _1} proces van de Opname {kopieert alle groepen die in gemigreerde inhoud ACLs van verwijzingen worden voorzien._ Zie [ het Migreren van Gesloten Groepen van de Gebruiker ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) voor extra overwegingen voor groepen die in een gesloten beleid van de Groep van de Gebruiker (CUG) worden gebruikt.
 
 * Tijdens de extractiefase wordt de Content Transfer-tool uitgevoerd op een actieve AEM-broninstantie.
 
-* De *Fase van de Ingestie* voor de auteursschalen neer de volledige auteursplaatsing. Dit betekent dat de AEM van de auteur niet beschikbaar is tijdens het hele innameproces. Zorg ook ervoor dat geen pijpleidingen van Cloud Manager worden uitgevoerd terwijl u de *1} fase van de Opname {in werking stelt.*
+* De *Fase van de Opname* voor de Schalen van de Auteur onderaan de volledige plaatsing van de Auteur. Dit betekent dat de AEM van de auteur niet beschikbaar is tijdens het hele innameproces. Zorg ook ervoor dat geen pijpleidingen van Cloud Manager worden uitgevoerd terwijl u de *1} fase van de Opname {in werking stelt.*
 
 * Wanneer u `Amazon S3` of `Azure` gebruikt als gegevensopslag op het AEM van de bron, moet de gegevensopslag zo worden geconfigureerd dat de opgeslagen balken niet kunnen worden verwijderd (opschoning). Dit verzekert integriteit van indexgegevens en het nalaten om deze manier te vormen kan in ontbroken extracties wegens gebrek aan integriteit van deze indexgegevens resulteren.
 

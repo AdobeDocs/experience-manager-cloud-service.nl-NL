@@ -6,18 +6,19 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
+
 
 # Het gereedschap Toewijzing gebruiker gebruiken (verouderd) {#using-user-mapping-tool}
 
 >[!INFO]
 >
->Deze documentatie verwijst naar een verouderde versie van het hulpmiddel. Voor meer informatie over de recentste versie, zie [ Toewijzing van de Gebruiker en Belangrijkste Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Deze documentatie verwijst naar een verouderde versie van het hulpmiddel. Voor meer informatie over de recentste versie, zie [ de Migratie van de Groep ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
 Het hulpmiddel van de Toewijzing van de Gebruiker gebruikt API die het toestaat om Adobe gebruikers van het Systeem van Identity Management (IMS) per e-mail op te zoeken en hun IMS IDs terug te keren. Deze API vereist de gebruiker om een identiteitskaart van de Cliënt voor hun organisatie, een Geheim van de Cliënt, en een Token van de Toegang of van de Drager tot stand te brengen.
 

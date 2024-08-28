@@ -4,24 +4,25 @@ description: Leer hoe u met het gereedschap Inhoud overbrengen inhoud van een on
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
+source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 28%
+source-wordcount: '612'
+ht-degree: 29%
 
 ---
+
 
 # Overzicht {#overview-content-transfer-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Overzicht"
->abstract="Het hulpmiddel van de Overdracht van de inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen. Met de tool worden &#39;principals&#39; (gebruikers of groepen) automatisch overgedragen."
+>abstract="Het hulpmiddel van de Overdracht van de inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen. Met dit gereedschap worden ook groepen automatisch overgedragen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Richtlijnen en beste praktijken"
 
 Het hulpmiddel van de Overdracht van de Inhoud is een hulpmiddel dat door Adobe wordt ontwikkeld die kan worden gebruikt om de migratie van bestaande inhoud van een bron AEM instantie (op-gebouw of AMS) aan de doelinstantie van AEM Cloud Service in werking te stellen.
 
-Met dit gereedschap worden ook opdrachtgevers (gebruikers of groepen) automatisch overgedragen.  Zie [ Toewijzing van de Gebruiker en Belangrijkste Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer informatie.
+Met dit gereedschap worden ook groepen automatisch overgedragen.  Zie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) van de Migratie van de Groep 0} voor meer informatie.[
 
 Met het gereedschap Inhoud overbrengen wordt het proces voor inhoudsoverdracht geïntegreerd met Cloud Acceleration Manager. Hierdoor krijgt de gebruiker alle voordelen die het biedt:
 
@@ -37,9 +38,6 @@ De overdracht van content bestaat uit twee fasen:
 1. **Extractie**: Dit heeft betrekking op het extraheren van content van de AEM-broninstantie naar een tijdelijke locatie, de zogenaamde *migratieset*. Een *migratieset* is een opslaggebied op de cloud dat door Adobe wordt geleverd om overgedragen content tijdelijk op te slaan tussen de AEM-broninstantie en de AEM Cloud Service-instantie.
 
    Zie [ Proces van de Opwinning in de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) voor meer details.
-
-   >[!NOTE]
-   >Toewijzing van gebruikers wordt nu automatisch uitgevoerd als onderdeel van de extractiefase bij de auteur (maar kan optioneel worden uitgeschakeld bij de auteur of ingeschakeld bij publicatie). Zie [ Toewijzing van de Gebruiker en Belangrijkste Migratie ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) voor meer details.
 
 1. **Opname**: Dit verwijst naar het verplaatsen en opnemen van content uit de *migratieset* naar de Cloud Service-doelinstantie.
 
@@ -78,7 +76,6 @@ Alle migratiesets zullen uiteindelijk verlopen na een verlengde periode van inac
 Het verstrijken van een migratieset kan op de rij van de Plaats van de Migratie worden gecontroleerd. Een nuttige visuele indicator dat een migratieset zijn vervaldatum nadert voegde ook de kaart van het project toe.
 
 ![afbeelding](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
-
 
 ## Volgende functies {#whats-next}
 

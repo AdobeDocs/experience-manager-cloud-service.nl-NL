@@ -6,12 +6,13 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
+
 
 # Gesloten gebruikersgroepen migreren {#migrating-closed-user-groups}
 
@@ -23,24 +24,15 @@ ht-degree: 0%
 
 Momenteel, hebben de Gesloten Gebruikersgroepen (CUG) sommige extra stappen nodig om in het bestemmingsmilieu van een migratie functioneel te zijn. Dit document verklaart het scenario, en de stappen die worden vereist om hen te hebben knopen op de voorgenomen manier beschermen.
 
-## Migratie van groepen
+## Migratie van gesloten gebruikersgroepen (CUG&#39;s)
 
-Principals (met inbegrip van groepen) worden automatisch opgenomen in een migratie naar Adobe Experience Manager as a Cloud Service als zij aan de gemigreerde inhoud door ACL van die inhoud worden geassocieerd, en zij zijn ook inbegrepen als zij in een beleid van de GIDS over die inhoud van verwijzingen worden voorzien.
+De groepen zijn automatisch inbegrepen in een migratie CTT/CAM aan Adobe Experience Manager as a Cloud Service als zij aan de gemigreerde inhoud via ACL van die inhoud of zijn beleidsknoop van de GIDS worden geassocieerd. De verificatie van het bestaan van de groep en haar leden dient te worden uitgevoerd voordat zij live gaan. De groepen die op een beleid van de CUG van verwijzingen worden voorzien worden bedoeld hier als &quot;groepen CUGs.&quot;
 
-## Gesloten gebruikersgroepen in migratie
+Als u CUG&#39;s wilt gebruiken in AEM as a Cloud Service, moeten gebruikers aanwezig zijn op de instantie Auteur en lid zijn van de relevante CUG&#39;s-groepen.  Dit kan worden verwezenlijkt gebruikend pakketten, of als de gebruikers van CUGs gebruikers IMS zijn, kunnen zij reeds aanwezig zijn.  De gebruikers van CUGs moeten dan tot leden van de groepen van AEMCUGs worden gemaakt.
 
-De verificatie van de groep en haar leden moet plaatsvinden voordat zij live gaat. Het Belangrijkste Rapport, dat door de mening van de Baan van Ingesties wordt gedownload, kan worden gebruikt om te zien of was de groep in kwestie inbegrepen, of was niet omdat het niet in ACL of een beleid van de CUG was.
+Het gedrag CUG&#39;s inschakelen op de Publish-instantie
+1. De CUGs-groepen moeten worden geactiveerd (waardoor ze en hun leden naar de Publish-instantie worden gerepliceerd), en
+1. De pagina&#39;s die met het beleid van CUGs worden beschermd moeten worden gepubliceerd (dat de instantie van Publish toelaat en het beleid registreert).
+1. Nadat alle pagina&#39;s zijn gepubliceerd, controleert u de functionaliteit voor elke pagina die met CUG is beveiligd.
 
-Vervolgens moeten processen worden geactiveerd en moeten eigenschappen worden ingesteld om CUG&#39;s in te schakelen. Hiertoe publiceert u alle pagina&#39;s die aan een CUG-beleid zijn gekoppeld opnieuw. Dit kalibreert de instantie van Publish om het beleid te volgen.
-
-Dit laat het beleid van de GECG op Publish toe, en de inhoud is slechts toegankelijk voor die voor authentiek verklaarde gebruikers die lid van de groep zijn verbonden aan het beleid.
-
-## Samenvatting
-
-Samengevat, zijn deze stappen om CUG na een migratie toe te laten:
-
-1. Zorg ervoor dat elke groep die in het CUG-beleid wordt gebruikt, na de migratie op Publish aanwezig is.
-   - Een groep kan bestaan als inbegrepen in het beleid van de GIDS van een gemigreerde inhoud, of in ACL van die inhoud.
-   - Als dit niet het geval is, gebruikt u Packages om de toepassing op de doelinstantie te installeren (of maakt u deze daar handmatig) en activeert u de instantie en de betreffende leden. Controleer vervolgens of het bestand op Publish bestaat.
-1. Publiceer alle pagina&#39;s verbonden aan een beleid van de GING, die ervoor zorgen het door, bijvoorbeeld, eerst het uitgeven van de pagina wordt gepubliceerd. Het is van belang dat ze allemaal opnieuw worden gepubliceerd.
-   - Nadat alle pagina&#39;s opnieuw zijn gepubliceerd, controleert u de functionaliteit voor elke pagina die met CUG is beveiligd.
+Voor extra informatie, zie [ Gesloten Gebruikersgroepen ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html).
