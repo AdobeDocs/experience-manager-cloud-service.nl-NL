@@ -3,8 +3,9 @@ title: Hoe wijzigt u de pagina Nulinhoud in Designer?
 description: Wijzig het bericht dat wordt weergegeven op Pagina Nul van een XFA-PDF voor niet-Adobe PDF-viewers.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-docset: aem65
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms
+role: User
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%

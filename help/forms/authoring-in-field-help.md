@@ -3,10 +3,13 @@ title: Hoe kunt u Help-tekst toevoegen voor AEM Adaptive Forms-velden?
 description: Met AEM Forms kunt u in de context Help toevoegen aan velden en deelvensters voor adaptieve formulieren als tekst of rich media, waaronder video's.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -64,8 +67,3 @@ Naast de contextHelp voor formuliervelden kunt u op deelvensterniveau Help opgev
 Wanneer u Help voor het deelvenster toevoegt, wordt een **weergegeven?** naast de beschrijving van het deelvenster. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de sectie Help-inhoud van het dialoogvenster voor het bewerken van deelvensters.
 
 ![ Voorbeeld van in-context hulp op het niveau van het vormpaneel ](assets/photoshop-1.png)
-
->[!MORELIKETHIS]
->
->* [ voeg placeholder tekst aan vormgebieden toe ](/help/forms/placeholder-text-in-aem-forms.md)
->* [ voeg Voetnoot aan een adaptieve vorm voor rijke teksten ](/help/forms/footnotes-richtextsupport.md) toe

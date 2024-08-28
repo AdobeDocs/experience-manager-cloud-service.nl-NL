@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
-source-wordcount: '5348'
+source-wordcount: '5478'
 ht-degree: 3%
 
 ---
@@ -681,6 +681,7 @@ ht-degree: 3%
          + [Formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
          + [Werken met formuliergegevensmodel](/help/forms/work-with-form-data-model.md)
          + [Formuliergegevensmodel gebruiken](/help/forms/using-form-data-model.md)
+         + [XML-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-xml-schema-form-model.md)
    + Adaptieve Forms {#adaptive-forms-authoring}
       + [Een adaptief formulier maken](/help/forms/create-an-adaptive-form.md)
       + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments.md)
@@ -730,12 +731,17 @@ ht-degree: 3%
             + [Geconverteerde formulieren controleren en corrigeren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html#welcome-to-review-and-correct-editor)
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Inleiding tot het ontwerpen van een adaptieve Forms](/help/forms/introduction-forms-authoring.md)
+            + [Contextassistentie voor het ontwerpen van formuliervelden](/help/forms/authoring-in-field-help.md)
             + [Een adaptief formulier maken](/help/forms/creating-adaptive-form.md)
             + [Referentiethema&#39;s, sjablonen en gegevensmodellen](/help/forms/reference-themes-templates-data-models.md)
             + [Een sjabloon maken](/help/forms/template-editor.md)
             + [Een thema maken](/help/forms/themes.md)
+            + [Referentie adaptieve formulierfragmenten](/help/forms/reference-adaptive-form-fragments.md)
+            + [Adaptieve Forms synchroniseren met XFA-formuliersjablonen](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [XFA-ondersteuning in adaptieve Forms op basis van XDP](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [JSON-schema ontwerpen voor een adaptief formulier](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Verbeter de prestaties van grote formulieren met het laden van de formulieren](/help/forms/lazy-loading-adaptive-forms.md)
+            + [Formulieren en documenten publiceren en de publicatie ervan opheffen](/help/forms/publishing-unpublishing-forms.md)
          + Componenten toevoegen aan een adaptief formulier {#add-components-to-an-adaptive-form}
             + [CAPTCHA gebruiken in een adaptieve vorm](/help/forms/captcha-adaptive-forms.md)
             + [Captcha gebruiken in een adaptieve vorm](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -748,10 +754,15 @@ ht-degree: 3%
             + [De indeling van een adaptief formulier instellen](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Gebruik de modus Lay-out om het formaat van componenten te wijzigen](/help/forms/resize-using-layout-mode.md)
             + [Ervaring met het vastleggen van gegevens in meerdere stappen maken](/help/forms/introduction-form-sequence.md)
+            + [Stijlconstructies voor adaptieve Forms](/help/forms/styling-constructs-adaptive-forms.md)
             + [Inline CSS-stijlen toepassen op afzonderlijke componenten van adaptieve formulieren](/help/forms/inline-style-adaptive-forms.md)
+            + [Hoe wordt de separatorcomponent gebruikt in Adaptive Forms?](/help/forms/separator-component-in-adaptive-forms.md)
          + Regels toevoegen en expressies gebruiken in een adaptieve vorm {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Regels toevoegen aan een adaptief formulier](/help/forms/rule-editor.md)
             + [Voeg de manager van de douanefout toe gebruikend de Invoke van de Redacteur van de Regel dienst](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen](/help/forms/rule-editor-access-user-groups.md)
+            + [SOM-expressies gebruiken in Adaptive Forms](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [Adaptieve formulierexpressies](/help/forms/adaptive-form-expressions.md)
          + Gebruik [!DNL Adobe Sign] {#use-adobe-sign}
             + [Adobe Sign gebruiken om een adaptief formulier elektronisch te ondertekenen](/help/forms/working-with-adobe-sign.md)
          + Handelingen voor verzending en verzending van metagegevens configureren {#configure-submit-actions-and-metadata-submission}
@@ -759,6 +770,8 @@ ht-degree: 3%
             + [Omleidingspagina configureren](/help/forms/configuring-redirect-page.md)
             + [Asynchrone verzending voor een adaptief formulier configureren](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Een aangepaste verzendhandeling maken](/help/forms/custom-submit-action-form.md)
+            + [Informatie uit gebruikersgegevens toevoegen aan metagegevens voor het verzenden van formulieren](/help/forms/form-submission-metadata.md)
+            + [API om de FDM-service (Form Data Model) aan te roepen vanuit Adaptive Forms](/help/forms/invoke-form-data-model-services.md)
          + [Aangepaste formuliervelden vooraf invullen](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Document van record genereren](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Ondersteuning voor nieuwe landinstellingen toevoegen aan een adaptief formulier](/help/forms/supporting-new-language-localization.md)
@@ -769,11 +782,16 @@ ht-degree: 3%
             + [Een toegankelijk adaptief formulier maken](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms Portal configureren](/help/forms/configure-forms-portal.md)
          + [Revisies maken en beheren](/help/forms/create-reviews-forms.md)
+         + [Verzendrevisoren koppelen aan een formulier](/help/forms/adding-reviewers-form.md)
+         + [Revisies maken en beheren voor een adaptief formulier](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Trefwoorden voor adaptieve formulieren](/help/forms/adaptive-forms-keywords.md)
       + [Een voorbeeld van een formulier bekijken](/help/forms/previewing-forms.md)
    + Forms Centric Workflows {#create-form-centric-workflows}
+      + [Inleiding tot Forms-centric workflow](/help/forms/aem-forms-workflow.md)
       + [Forms-centric stappen gebruiken in een workflow + stapsgewijze verwijzing](/help/forms/aem-forms-workflow-step-reference.md)
       + [Variabelen gebruiken in een Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
+      + [Dynamische selectie van gebruiker of groep in AEM workflow](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+      + [Forms-toepassingen en -taken beheren in AEM Postvak In](/help/forms/manage-applications-inbox.md)
       + [De optie Buiten kantoor gebruiken](/help/forms/configure-out-of-office-settings.md)
    + Communicatie-API&#39;s {#using-communications}
       + [Inleiding tot communicatie-API&#39;s](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -781,6 +799,7 @@ ht-degree: 3%
       + [Communicatie-API&#39;s - Batch-verwerking](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Forms Designer installeren en configureren](/help/forms/installing-configuring-designer.md)
       + [Forms Designer gebruiken om sjablonen te maken](/help/forms/use-forms-designer.md)
+      + [Pagina-nulinhoud wijzigen in Designer](/help/forms/changing-page-zero-content-designer.md)
       + [Aangepaste lettertypen gebruiken in PDF-documenten](/help/forms/use-custom-fonts.md)
       + [Lijst met ondersteunde lettertypen in PDF-documenten](/help/forms/supported-out-of-the-box-fonts.md)
       + [Bekende problemen, aanbevolen procedures en veelgestelde vragen](/help/forms/communications-known-issues-limitations.md)
@@ -926,6 +945,7 @@ ht-degree: 3%
          + [Opties vanuit een URL laden naar een formulier](/help/edge/docs/forms/load-options-from-url.md)
          + [De weergave van uw formulieren aanpassen &#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [Regels gebruiken om dynamisch gedrag aan een formulier toe te voegen](/help/edge/docs/forms/rules-forms.md)
+         + [Regex-expressies voor validaties](/help/edge/docs/forms/regex-forms.md)
          + [Een aangepast bedankbericht weergeven na het verzenden van het formulier](/help/edge/docs/forms/thank-you-page-form.md)
       + Mogelijkheden {#advanced-features-edge-delivery-services-forms}
          + [Formulierfragmenten gebruiken](/help/edge/docs/forms/form-fragments.md)

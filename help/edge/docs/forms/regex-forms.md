@@ -2,9 +2,10 @@
 title: AEM Forms Edge Delivery Services gebruikt vaak regex-expressies voor validatie van formuliervelden
 description: AEM Forms Edge Delivery Services gebruikt vaak regex-expressies voor validatie van formuliervelden
 feature: Edge Delivery Services
+role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
