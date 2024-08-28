@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82be9b2b328343e827b90bd8266d93127757f477
+source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -27,22 +27,16 @@ De activering van de 2024.9.0-functie biedt de volledige functie die is ingestel
 * CQ-4353778: Gebeurtenissen vertaalproces.
 * CQ-4354583: Verstuur vertaalprocesgebeurtenissen via Adobe Pipeline.
 * CQ-4356479: Alleen Adobe-code toestaan om de /adobe servlet-context te gebruiken.
-* CQ-4358133: Jenkins-arbeidersgebruik optimaliseren.
 * CQ-4358226: De functionaliteit van het sleutelwoord van de Bewaarvertaling werkt niet voor bepaalde formaat van het Koord.
 * CQ-4358270: AEM Vertaalkit: 8 augustus.
 * CQ-4358310: Voeg eak-compat-query-spi-1.2 toe aan snelstart.
-* GRANITE-36205: Automated update for internal eak release in QS.
 * GRANITE-49833: Batching support for event sender and proxy.
 * GRANITE-52053: Verwijder het gebruik van Commons Collections 3: Platform anderen.
 * GRANITE-52492: Elastische async catchup in geval van PIT-herstel.
-* GRANITE-53086: Werk de versie van de jacoco-plug-in bij naar 0.8.12 in AEMaaCS.
 * GRANITE-53099: Bijwerken naar Apache Felix HTTP Jetty 5.1.24.
 * GRANITE-53125: Voeg classificatie toe aan CloudEvent.
 * GRANITE-53328: Werk FileVault bij tot 3.8.0-T20240726111512-3cc11d50 met verbeteringen voor het strepen van logboekregistratie.
-* GRANITE-53340: AEM660: correcte versioning en vertakking voor 660 CQ/Platform.
-* GRANITE-53341: Let niet op het gebruik van ACS-commons 6.
 * GRANITE-53453: update commons-lang tot 3.15.0.
-* GRANITE-53473: Instellingen voor onbewerkte verkoop.
 * GRANITE-53478: Werk FileVault bij naar versie 3.8.0.
 * GRANITE-53505: Werk QS aan commons-collections-3.2.2-adobe-2 bij.
 * GRANITE-53528: Update version of platform artifacts.
@@ -71,7 +65,10 @@ De activering van de 2024.9.0-functie biedt de volledige functie die is ingestel
 
 ### Bekende problemen {#known-issues-17569}
 
-Geen.
+* ASSETS-40875 - De klasse AssetDeleteHandler luistert naar gebeurtenissen voor het verwijderen van elementen en voert specifieke handelingen uit op basis van het type delete-gebeurtenis (PRE_DELETE of POST_DELETE). In bepaalde scenario&#39;s, veroorzaakt het type van POST_DELETE gebeurtenis een NullPointerException.
+* FORMS-14340 - Fout in het concretiseren van FormsAndDocumentOmniSearchHandler en CloudStorageSubmitActionInserter. Dit zijn ongevaarlijke loginstructies.
+* FORMS-15818 - Component descriptor entry &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; niet gevonden instructies in serverlogboeken. Dit zijn ongevaarlijke loginstructies.
+* SITES-23662 - Gebruiker die een publicatie activeert, kan niet worden geëxtraheerd uit JCR-loginstructies in serverlogboeken. Dit is voor een eigenschap onder ontwikkeling die intermitterende en ongevaarlijke &quot;kan geen geldige gebruiker - identiteitskaart in de partij van gebeurtenissen vinden OSGI&quot;fouten in het logboek zou kunnen veroorzaken.
 
 ### Kennisgeving wijzigen {#change-notice-17569}
 
