@@ -4,9 +4,9 @@ description: Leer hoe u Real Use Monitoring (RUM) gebruikt om de digitale gebrui
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
+source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 >[!INFO]
 >
->De controle van de cliënt-kant werkt slechts voor klanten met versie van AEM Cloud Service **2024.5.16461** en hierboven.
+>De controle van de cliënt-kant werkt slechts voor klanten met AEM (Adobe Experience Manager) versie van de Cloud Service **2024.5.16461** en hierboven.
 
 ## Overzicht {#overview}
 
-De Real Use Monitoring-service (RUM) is een technologie voor het bewaken van de prestaties die de digitale gebruikerservaring van een website of toepassing in real-time vastlegt en analyseert. Het biedt inzicht in de real-time prestaties van een webtoepassing en biedt meer inzicht in de gebruikerservaring. De service richt zich op het optimaliseren van de prestaties door het controleren van websiteverbindingen in plaats van op de gebruikers zelf.
+De service RUM (Real Use Monitoring) is een technologie voor prestatiebewaking die de digitale gebruikerservaring van een website of toepassing in real-time vastlegt en analyseert. Het biedt inzicht in de real-time prestaties van een webtoepassing en biedt meer inzicht in de gebruikerservaring. De service richt zich op het optimaliseren van de prestaties door het controleren van websiteverbindingen in plaats van op de gebruikers zelf.
 
 Met RUM, worden de zeer belangrijke prestatiesmetriek van de aanvang van URL gevolgd tot het verzoek aan browser wordt teruggegeven. Ontwikkelaars kunnen de toepassing verbeteren, zodat deze eenvoudig kan worden gebruikt voor eindgebruikers.
 
@@ -33,9 +33,8 @@ Met RUM, worden de zeer belangrijke prestatiesmetriek van de aanvang van URL gev
 
 ## Wie kan van een echte dienst van de Controle van het Gebruik profiteren? {#who-can-benefit-from-rum-service}
 
-De Echte dienst van de Controle van het Gebruik is voordelig voor alle klanten. Deze weergave biedt een representatieve weergave van gebruikersinteracties en zorgt voor een betrouwbare maatstaf voor de betrokkenheid van websites door het aantal weergaven van de pagina&#39;s aan de clientzijde vast te leggen.
+AEM heeft RUM ontwikkeld om klanten en Adobe te helpen begrijpen hoe bezoekers met AEM sites communiceren. RUM kan worden gebruikt om prestatieproblemen te diagnostiseren en de doeltreffendheid van experimenten te meten. RUM behoudt de privacy van bezoekers door middel van steekproeven - slechts een klein deel van alle paginameningen wordt gecontroleerd - en geen persoonlijk identificeerbare informatie (PII) wordt verzameld.
 
-Voor alle klanten van de Adobe, verstrekt deze dienst waardevolle inzichten in gebruikersinteractie. De klanten die hun eigen CDN in dienst nemen kunnen van vereenvoudigde verkeer profiteren dat rapporteert, aangezien de Adobe nu direct de gegevensinzameling integreert, die de behoefte aan afzonderlijke rapporten tijdens vernieuwingscycli elimineert.
 
 ## Begrijp hoe de Echte Dienst van de Controle van het Gebruik werkt {#understand-how-the-rum-service-works}
 
@@ -110,7 +109,7 @@ Tijdens het analyseren van RUM-gegevens kunnen er verschillen zijn in paginaweer
 
 1. **de `/.rum` weg wordt geblokkeerd op mijn plaats, hoe zou ik moeten bevestigen?**
 
-   De weg `/.rum` wordt vereist voor de inzameling van het RUM om te werken. Als u een CDN hebt vóór wat Adobe als deel van AEM as a Cloud Service verstrekt, zorg ervoor dat de `/.rum` weg naar de zelfde AEM oorsprong zoals de rest van uw AEM inhoud door:sturen. En zorg ervoor dat het op geen enkele manier wordt aangepast.
+   De weg `/.rum` wordt vereist voor de inzameling van het RUM om te werken. Als u een CDN gebruikt vóór de AEM as a Cloud Service van de Adobe, zorg ervoor dat de `/.rum` weg naar de zelfde AEM oorsprong zoals uw andere AEM inhoud door:sturen. En zorg ervoor dat het op geen enkele manier wordt aangepast.
 
 1. **telt de inzamelingstelling RUM naar inhoudsverzoeken voor contractuele doeleinden?**
 
