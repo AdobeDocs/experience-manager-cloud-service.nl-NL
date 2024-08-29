@@ -4,7 +4,7 @@ description: De lay-out en vormgeving van Adaptief Forms op verschillende appara
 feature: Adaptive Forms, Core Components
 keywords: Indeling van adaptief formulier op basis van kerncomponenten, verschillende indelingen voor formulieren, dynamische formulierindelingen AEM, AEM Cloud Service-formulierindelingen, formulierindelingstypen in AEM kerncomponenten, adaptieve formulierindelingen
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -138,10 +138,10 @@ Laten we het stapsgewijze proces verkennen om een lay-out in te voegen en er com
 
 1. Zoek de sectie in de formuliereditor waarin u een indeling kunt toevoegen.
 
-   ![ redacteur van de Vorm ](/help/forms/assets/form-editor.png){width="200" align="center"}
+   ![ redacteur van de Vorm ](/help/forms/assets/form-editor.png)
 1. Klik **toevoegen** pictogram. Het pictogram is een plusteken (+) waarmee u nieuwe componenten kunt toevoegen.
 
-   ![ lay-out van het Tussenvoegsel ](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+   ![ lay-out van het Tussenvoegsel ](/help/forms/assets/insert-layout-add-icon.png)
 
    Het klikken **voegt** pictogram toe toont een **Nieuwe de dialoogdoos van de Component van het Tussenvoegsel** die diverse componenten voor toevoeging toont.
 
@@ -151,20 +151,20 @@ Laten we het stapsgewijze proces verkennen om een lay-out in te voegen en er com
 
 1. Blader door de beschikbare componenten in het dialoogvenster en selecteer de gewenste indeling in de lijst. In ons geval selecteert u de component Horizontale tabbladen om de horizontale tabs-lay-out in te voegen.
 
-   ![ Uitgezochte horizontale lusjes ](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
+   ![ Uitgezochte horizontale lusjes ](/help/forms/assets/select-horizontal-tab.png)
 
    Wanneer u de component met horizontale tabbladen aan het formulier toevoegt, bestaat deze in eerste instantie uit twee lege deelvensters, standaard genaamd Item1 en Item2. U moet handmatig formuliercomponenten aan deze deelvensters toevoegen.
 
-   ![ Horizontale lusjes ](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
+   ![ Horizontale lusjes ](/help/forms/assets/insert-tabs-on-top.png)
 
 1. Open de eigenschappen van de component met horizontale tabbladen en geef de naam voor de component op.
 In dit geval voegen we bijvoorbeeld de naam van de horizontale tabbladcomponent toe als aanvraagformulier voor IT.
 
-   ![ voeg naam voor Horizontale lusjes toe ](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
+   ![ voeg naam voor Horizontale lusjes toe ](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. Klik **Gedaan**.
 
-   ![ Horizontale lusjes ](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+   ![ Horizontale lusjes ](/help/forms/assets/tabs-on-top-rename-component.png)
 
 Nadat de indelingscomponent in het formulier is toegevoegd, wijzigt u het aantal deelvensters volgens de vereisten.
 
@@ -174,43 +174,43 @@ Nieuw deelvenster toevoegen aan de component met horizontale tabbladen:
 
 1. Open de horizontale eigenschappen van de lusjescomponent en klik de **Punten** tabel.
 
-   ![ lusje van het Punt voor Horizontale lusjes ](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+   ![ lusje van het Punt voor Horizontale lusjes ](/help/forms/assets/tabs-on-top-items-tab.png)
 
 1. Klik **toevoegen** pictogram om nieuw paneel toe te voegen.
 
-   ![ voeg nieuw paneel ](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"} toe
+   ![ voeg nieuw paneel ](/help/forms/assets/tabs-on-top-add-panel.png) toe
 
    Wanneer u **klikt voeg** pictogram toe, verschijnt het **Nieuwe de dialoogvakje van de Component van het Tussenvoegsel**.
 
 1. Selecteer de deelvenstercomponent.
 
-   ![ voeg nieuw paneel ](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"} toe
+   ![ voeg nieuw paneel ](/help/forms/assets/tabs-on-top-new-panel.png) toe
 
    Wanneer u de deelvenstercomponent selecteert, wordt het nieuwe deelvenster toegevoegd aan de horizontale lay-out.
 
-   ![ voeg nieuw paneel ](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"} toe
+   ![ voeg nieuw paneel ](/help/forms/assets/tabs-on-top-add-new-panel.png) toe
 
    Geef een naam op voor het nieuwe deelvenster, anders kunt u de eigenschappen van de component met horizontale tabbladen niet opslaan.
 
 1. Geef de namen van de deelvensters op, zoals in de onderstaande afbeelding wordt getoond:
 
-   ![ de namen van het Comité ](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+   ![ de namen van het Comité ](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. Klik **Gedaan**.
 
    Zodra u **Gedaan** klikt, verschijnen de drie panelen naast elkaar in een rij. De deelvensternamen worden als koppen voor elk deelvenster weergegeven en u kunt formuliercomponenten aan elk deelvenster toevoegen.
 
-   ![ de namen van het Comité ](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+   ![ de namen van het Comité ](/help/forms/assets/tabs-on-top-initial-view.png)
 
    U kunt de eigenschappen van een deelvenstercomponent configureren. Het IT-aanvraagformulier bevat bijvoorbeeld geen titels van deelvensters. Hier volgen de stappen voor het configureren van eigenschappen van een deelvenstercomponent.
 
 1. Open de eigenschappen van het eerste deelvenster.
 
-   ![ Comité 1 Eigenschappen ](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+   ![ Comité 1 Eigenschappen ](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
 1. Selecteer **titel** checkbox van de Huid van **Basis** tabel.
 
-   ![ Verberg titel ](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+   ![ Verberg titel ](/help/forms/assets/tabs-on-top-hide-panel.png)
 
 1. Klik **Gedaan**.
 
@@ -224,41 +224,41 @@ Op dezelfde manier kunt u ook titels voor de andere twee deelvensters verbergen.
 
 1. Zoek de sectie in het deelvenster waarin u componenten kunt toevoegen.
 1. Klik **toevoegen** pictogram. Het pictogram is een plusteken (+) waarmee u nieuwe componenten kunt toevoegen.
-   ![ lay-out van het Tussenvoegsel ](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
+   ![ lay-out van het Tussenvoegsel ](/help/forms/assets/tabs-on-top-add-component.png)
 
    Het klikken **voegt** pictogram toe toont een **Nieuwe de dialoogdoos van de Component van het Tussenvoegsel** die diverse componenten voor toevoeging toont.
 
-   ![ de Doos van de Dialoog van de Component van het Tussenvoegsel Nieuwe ](/help/forms/assets/insert-new-component.png){width="200" align="center"}
+   ![ de Doos van de Dialoog van de Component van het Tussenvoegsel Nieuwe ](/help/forms/assets/insert-new-component.png)
 
 1. Blader door de beschikbare componenten in het dialoogvenster dat wordt weergegeven en selecteer de gewenste component. Selecteer in ons geval de component Tekstvak.
 1. Open de eigenschappen van de toegevoegde component en geef de naam ervan op. Hiermee kunt u de eigenschappen van de toegevoegde component Tekstvak bewerken en de naam ervan opgeven.
-   ![ lay-out van het Tussenvoegsel ](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+   ![ lay-out van het Tussenvoegsel ](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. Voeg op dezelfde manier nog twee tekstvakcomponenten toe en noem de componenten als e-mailadres en afdeling.\
-   ![ Eerste Comité ](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
+   ![ Eerste Comité ](/help/forms/assets/tabs-on-tops-first-panel.png)
 
    Nu de componenten in het eerste deelvenster zijn toegevoegd, kunt u doorgaan met het toevoegen van de componenten aan het tweede deelvenster.
 
 1. Om het paneel te schakelen, klik **Uitgezochte Comité** van de toolbar.
 
-   ![ Deelvenster van de Schakelaar ](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
+   ![ Deelvenster van de Schakelaar ](/help/forms/assets/tabs-on-top-select-panel.png)
 
    Wanneer u het **Uitgezochte Comité** klikt, verschijnt de lijst van de toegevoegde panelen in de Horizontale component van Lusjes.
 
-   ![ Deelvenster van de Schakelaar ](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+   ![ Deelvenster van de Schakelaar ](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. Selecteer **2 Comité** van de paneellijst en de meningsveranderingen van het eerste paneel aan het tweede paneel.
 
-   ![ Tweede Comité ](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+   ![ Tweede Comité ](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. Herhaal de stappen die van Stap 2 aan Stap 4 voor het toevoegen van de gewenste componenten in paneel 2 zoals aangetoond in het hieronder cijfer worden geschetst:
 
-   ![ Tweede de componenten van het Comité ](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+   ![ Tweede de componenten van het Comité ](/help/forms/assets/panel-2-components.png)
 
 1. Schakelaar aan het **3 Comité** door de stappen te volgen die in Stap 6 en Stap 7 worden geschetst.
 
 1. Herhaal de stappen die van Stap 2 tot Stap 4 worden beschreven voor het toevoegen van de gewenste component in paneel 3:
 
-   ![ De componenten van het Derde Comité ](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+   ![ De componenten van het Derde Comité ](/help/forms/assets/panel-3-component.png)
 
 1. Klik op **[!UICONTROL Preview]** in de rechterbovenhoek van de ontwerpomgeving.
 
@@ -319,7 +319,7 @@ U kunt ook [ slepen-en-daling de componenten ](#extra-bytes) om de vormcomponent
 
 U kunt vormcomponent van het paneel ook schrappen gebruikend het ![ pictogram van de Schrapping ](/help/forms/assets/Smock_Delete_18_N.svg).
 
-![ Deleting a component ](/help/forms/assets/delete-component.png){width="200" align="center"}
+![ Deleting a component ](/help/forms/assets/delete-component.png)
 
 U kunt desgewenst ook de vereiste validaties voor de componenten toevoegen.
 
@@ -333,11 +333,11 @@ Voer de volgende stappen uit om de bestaande indeling van een formulier te verva
 
 1. Klik op het pictogram Vervangen op de werkbalk van de lay-outcomponent en het dialoogvenster **[!UICONTROL Replace Component]** wordt weergegeven.
 
-   ![ vervangt Lay-out ](/help/forms/assets/replace-layout.png){width="200" align="center"}
+   ![ vervangt Lay-out ](/help/forms/assets/replace-layout.png)
 
 1. Selecteer de gewenste indeling in het dialoogvenster **[!UICONTROL Replace Component]** .
 
-   ![ vervangt de dialoogdoos van de Component ](/help/forms/assets/replace-component.png){width="200" align="center"}
+   ![ vervangt de dialoogdoos van de Component ](/help/forms/assets/replace-component.png)
 
    Nadat u de lay-out hebt geselecteerd, wordt de rangschikking van de componenten in de lay-out dienovereenkomstig gewijzigd. Selecteer bijvoorbeeld de component met verticale tabbladen in het dialoogvenster **[!UICONTROL Replace Component]** . De rangschikking van het deelvenster verandert in tabbladen aan de linkerkant:
 
@@ -350,11 +350,11 @@ Voer de volgende stappen uit om componenten naar de formuliereditor te slepen:
 1. Zoek de sectie waarin u componenten kunt toevoegen.
 1. Navigeer aan het linkerpaneel binnen uw auteursmilieu en klik **Componenten**.
 
-   ![ Deelvenster van de Component ](/help/forms/assets/add-new-component.png){width="200" align="center"}
+   ![ Deelvenster van de Component ](/help/forms/assets/add-new-component.png)
 
    Wanneer u de **optie van Componenten** klikt, verschijnt de lijst van de beschikbare componenten.
 
-   ![ Deelvenster van de Component ](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+   ![ Deelvenster van de Component ](/help/forms/assets/add-new-component2.png)
 
 1. Blader door de beschikbare componenten en selecteer de gewenste component.
 
