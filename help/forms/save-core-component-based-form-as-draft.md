@@ -3,8 +3,8 @@ title: Hoe te om de op componenten gebaseerde Aangepaste Vorm van de Kern te bew
 description: Leer hoe u op kerncomponenten gebaseerde adaptieve formulieren als concept opslaat. Begrijp ook hoe te om de component van Concepten en van Verzending aan lijstconcepten en voorlegging voor het programma geopende gebruikers te gebruiken?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+role: User, Developer
+source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
 workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 0%
@@ -83,7 +83,7 @@ U kunt uit-van-de-doos componenten van Forms Portal gebruiken om concepten en bi
    ![ de Selectie van het Beleid ](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Klik op **[!UICONTROL Done]**.
-1. Open nu de AEM Sites-pagina opnieuw in de ontwerpmodus.
+1. Open de AEM Sites-pagina nu opnieuw in de ontwerpmodus.
 1. Zoek de sectie in de pagina-editor waarin u de Forms Portal-component kunt toevoegen.
 1. Klik **toevoegen** pictogram. Het pictogram is een plusteken (+) waarmee u nieuwe componenten kunt toevoegen.
 
