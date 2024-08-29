@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,14 @@ Sitethema&#39;s worden op twee verschillende manieren gebruikt:
 
 ## Structuur van sitethema {#structure}
 
-Sitethema&#39;s zijn eenvoudig pakketten met een logische structuur die duidelijk het doel van de pakketinhoud weerspiegelt. Een site-thema heeft de volgende structuur die kenmerkend is voor een front-end project.
+Sitethema&#39;s zijn eenvoudig pakketten met een logische structuur die duidelijk het doel van de pakketinhoud weerspiegelt. Voor een typisch front-end project, adviseert de Adobe de volgende structuur voor een plaatsthema:
 
-* `src/main.ts`: Het belangrijkste ingangspunt van uw JS &amp; CSS-thema
+* `src/theme.ts`: Het belangrijkste ingangspunt van uw JS &amp; CSS-thema
 * `src/site`: JS- en CSS-bestanden die van toepassing zijn op de gehele site
 * `src/components`: JS- en CSS-bestanden die specifiek zijn voor AEM componenten
 * `src/resources`: statische bestanden zoals pictogrammen, logo&#39;s en lettertypen
+
+Afhankelijk van de specifieke projectbehoeften, kan de themastructuur variëren zolang het hoofdingangspunt, `src/theme.ts`, behouden blijft.
 
 ## Standaardsitethema {#standard-site-theme}
 
