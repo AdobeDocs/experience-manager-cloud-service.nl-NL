@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e11c869c2f8cc8847869ad67a2c752e7239bd44c
+source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -28,21 +28,35 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.7.0) is 25 juli 2024. De volgende release met functies (2024.8.0) is gepland voor 29 augustus 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.8.0) is 29 augustus 2024. De volgende release met functies (2024.9.0) is gepland voor 26 september 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
 U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
 
-## Video vrijgeven {#release-video}
+<!-- ## Release Video {#release-video}
 
-Bekijk de video Overzicht van de release van juli 2024 voor een overzicht van de functies die zijn toegevoegd in de release van 2024.7.0:
+Have a look at the August 2024 Release Overview video for a summary of the features added in the 2024.8.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functie in Experience Manager Sites {#new-feature-sites}
+
+**AEM Authoring voor Edge Delivery Services**
+
+De bestaande functionaliteit van de Overerving van Plaatsen [ ](/help/sites-cloud/authoring/universal-editor/inheritance.md) wordt nu gesteund met inbegrip van:
+
+* [AEM starten](/help/sites-cloud/authoring/launches/overview.md)
+* [ MSM ](/help/sites-cloud/administering/msm/overview.md) op het paginaniveau
+
+Bovendien worden de volgende functies voor paginabeheer nu ondersteund:
+
+* [ AEM de Markeringen ](/help/sites-cloud/authoring/sites-console/tags.md) kunnen als a [ taxonomie ](/help/edge/wysiwyg-authoring/taxonomy.md) aan Edge Delivery Services worden uitgevoerd.
+* [ Malplaatjes ](/help/edge/wysiwyg-authoring/templates.md) voor Edge Delivery Services komen binnenkort!
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
@@ -50,87 +64,70 @@ Bekijk de video Overzicht van de release van juli 2024 voor een overzicht van de
 
 Hefboomgaard GenAI door AEM nieuwe eigenschap, [ produceert variaties ](/help/generative-ai/generate-variations.md), nu toegankelijk in Cloud Service. Met het genereren van variaties kunt u inhoud genereren en schalen met behulp van generatieve AI. Neem contact op met het accountteam van uw Adobe voor advies in het programma.
 
-**het doorbladeren van activa in de Console van het Fragment van de Inhoud**
-
-Inhoudsauteurs kunnen nu door afbeeldingen en andere elementen bladeren, deze weergeven en deze activeren zonder dat ze de Content Fragment Console hoeven te verlaten.
-
-![ het Bladeren van activa ](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
-
-Wilt u de functie proberen en feedback delen? Stuur een e-mail naar aemcs-headless-adopter@adobe.com vanuit uw officiële e-mailadres voor meer informatie over het programma voor vroege adoptie.
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
-**uploadt activa gebruikend de Selecteur van Activa**
-
-Met Asset Selector kunnen auteurs van inhoud nu de definitieve elementen rechtstreeks vanuit de kiezer uploaden door ze te slepen of door vanuit het lokale bestandssysteem te bladeren. Hierdoor kunnen de uiteindelijke middelen naar de DAM worden geüpload vanuit de toepassing van uw keuze.
-
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
 
-**de integratie van Content credentials**
+**bijgewerkte Generatie van het Beeld van de Adobe Firefly**
 
-Experience Manager Assets ondersteunt nu content credentials voor ondersteunde afbeeldingsindelingen. Dit biedt informatie over de relatie tussen het actief en de manier waarop het is gemaakt, inclusief of het is gewijzigd met behulp van GenAI.
+Assets as a Cloud Service gebruikt nu de nieuwste widget van Firefly waarmee u afbeeldingen in verschillende stijlen kunt genereren met Adobe Firefly. Door zijn stijl, samenstelling, dimensies, en meer te bepalen, gebruikend de ingebouwde redacteur van de Firefly, kunt u de activa snel tot stand brengen en opslaan u direct binnen de bewaarplaats van AEM Assets voor onmiddellijk gebruik nodig hebt.
 
-![ Content credentials ](/help/assets/assets/content-credentials.png)
+![ de afbeeldingsgeneratie van de Adobe Firefly ](/help/assets/assets/bugatti-type-57.png)
 
-**Visuele voorproeven van omslaginhoud**
+**PSB- dossiersteun**
 
-Experience Manager Assets geeft nu visuele voorvertoningen van de inhoud van de map weer op de miniatuur van de map wanneer u naar inhoud bladert of zoekt, waardoor de beschikbare middelen in de AEM Assets-opslagruimte beter kunnen worden ontdekt.
+Assets as a Cloud Service biedt nu naast de bestaande ondersteuning voor PSD-bestanden ook ondersteuning voor grote documenten (PSB-bestanden) van Photoshop.
 
-<!--
+### Nieuwe verbeteringen in Content Hub {#content-hub-new-enhancements}
 
+* Betere verwerking van lange bestandsnamen, eenvoudige uitbreiding van de volledige naam via knopinfo.
+* Verbeterde miniaturen voor een betere verhouding tussen de inhoud en een groter inhoudsgebied.
+* Aangepaste miniatuurervaring van AEM ondersteund in de inhoudshub.
+* Verbeteringen in het zoeken naar kleuren.
+* Verbeteringen in configuraties besparen ervaring.
+* Verbeterde informatiepagina van verzamelingen om de auteursnaam te weerspiegelen.
 
-**Content Credentials**
-
-Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
-
-When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
-
-![check publish status1](/help/release-notes/assets/content-credentials.png)
-
--->
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
-### Nieuwe functies in AEM Forms {#forms-new-prerelease-features}
+### Nieuwe functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
 
-#### Verbeterde Visual Rule Editor voor op kerncomponenten gebaseerde adaptieve Forms
+#### Een concept voor adaptieve Forms op basis van Core Components automatisch opslaan
 
-Auteurs van adaptieve formulieren kunnen herhaalbare formuliervelden gebruiken vanuit de functies in de visuele regeleditor, zodat kerncomponenten complexe bedrijfslogica in de formulieren kunnen bouwen zonder dat hiervoor hulp van het ontwikkelingsteam of aanpassings- of ontwikkelingsteam nodig is.
+Gebruikers kunnen nu profiteren van een functie voor automatisch opslaan, waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversiesnelheden voor organisaties verhoogd door het aantal gebruikers dat het formulier verlaat te verminderen, aangezien gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
+
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
-Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties voordat iemand anders ze ontwikkelt. Het programma biedt toegang tot meerdere innovaties.
+Het AEM Forms Early Access-programma biedt u een unieke gelegenheid om exclusieve toegang te krijgen tot geavanceerde innovaties en om de ontwikkeling ervan vorm te geven.
 
 Deze release bevat een overzicht van de innovaties die in de huidige release worden geleverd. Voor de volledige lijst van innovaties beschikbaar onder het Vroege Programma van de Toegang, zie {de documentatie van het Programma van de Vroege Toegang van AEM Forms ](/help/forms/early-access-ea-features.md).[
 
-#### Aangepaste formulieren maken met Universal Editor
+#### AEM Forms AI Assistant
 
-Hefboomwerking de Universele Redacteur van Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) om adaptieve vormen tot stand te brengen gebruikend WYSIWYG belemmering-daling authoring, voor zowel hoofd als krachtige inschrijvingservaringen, die via de Dienst van Edge Delivery worden geleverd. [ Auteurs van adaptieve formulieren kunnen eenvoudig experimenten maken en starten met variaties in de formulieren op de webpagina&#39;s en bepalen wat de beste prestaties zijn voor eindgebruikers.
+Generative AI voor Adaptive Forms biedt een heel nieuw niveau van kracht en maakt het ontwikkelen van formulieren eenvoudiger. Hierdoor kunt u sneller dan ooit betere formulieren maken.
+
+![ Generatieve AI Medewerker, Aangepaste Forms ](/help/forms/assets/generative-ai-assistant.png)
+
+De beschikbare Generative AI-mogelijkheden zijn:
+
+* **AI Medewerker voor de Vragen van het Product**: Krijg onmiddellijke antwoorden op uw AEM vorm-verwante vragen. De AI-assistent fungeert als uw eigen persoonlijke kennisbasis en biedt direct binnen het platform inzichtelijke begeleiding en aanbevelingen.
+
+* **Aangepaste Generatie van de Vorm**: Creëer gemakkelijk volledige vormen met Generatieve Herinneringen AI. Onze generatieve AI genereert automatisch gebruikersvriendelijke formulieren die keuzemogelijkheden verkleinen en de ervaring aanpassen.
+
+* **de Generatie van het Comité voor Forms**: produceer vormsecties die aan specifieke behoeften van de gegevensinzameling worden aangepast. U kunt bijvoorbeeld secties genereren voor het verzamelen van betalingsgegevens, voorkeuren van klanten of reisgegevens.
+
+* **Veranderend de Lay-outs van de Vorm**: Experimenteer met verschillende lay-outs en ontwerpen gebruikend Generatieve Herinneringen AI. Probeer verschillende indelingen, zoals de wizard of de tabsgewijze weergave, uit om te zien wat het beste bij uw formulier past. Gebruik Generative AI-herinneringen om uw formulieren te optimaliseren voor een mobiel reactievermogen en visueel aantrekkelijke formulieren te maken waar gebruikers van houden.
+
+* **vormt Verzenden Actie**: De Generatieve herinneringen van AI van het gebruik om een voorleggingsactie voor uw vorm moeiteloos te vormen. Maak een keuze uit een bibliotheek met vooraf gebouwde verzendacties of uit een lijst met aangepaste verzendacties die zijn gemaakt en geïmplementeerd door uw eigen ontwikkelingsteam.
 
 >[!IMPORTANT]
 >
-> Als u in het aansluiten van bij het Vroege Programma van de Toegang van de Adobe voor om het even welke vroege toegangsinnovatie geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) om toegang te verzoeken. U kunt toegang vragen tot alle of tot specifieke innovaties.
+> Als u in het aansluiten bij het Vroege Programma van de Toegang voor om het even welke innovatie geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden u in geinteresseerd bent.
+
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
-
-### Inhoud op de CDN wissen met een Self-Serve API-sleutel {#purge-cdn}
-
-Het plaatsen van TTL gebruikend HTTP Cachebeheer kopbal is een efficiënte benadering om de prestaties van de inhoudslevering en inhoudsversheid in evenwicht te brengen. In gevallen waarin het van essentieel belang is om onmiddellijk bijgewerkte inhoud te leveren, kan het echter nuttig zijn om de CDN-cache rechtstreeks te wissen.
-
-[ Leer hoe ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om een purge API teken te vormen gebruikend de de configuratiepijplijn van Cloud Manager, zodat kunt u [ zuiveren APIs ](/help/implementing/dispatcher/cdn-cache-purge.md), met om het even welk van deze variaties aanhalen:
-* Eén URL
-* Meerdere URL&#39;s die een tag gebruiken
-* Volledige CDN-cache leegmaken
-
-### Self-Serve Configuratie van x-AEM-Edge-Sleutel voor klant-Beheerde CDN {#customermanaged-keys}
-
-Eerder, was een steunkaartje nodig om X-AEM-Edge-Sleutel te produceren die voor configuratie van een klant-beheerde CDN wordt vereist. Dit is nu zelfbediening door de belangrijkste waarde in een configuratiedossier te verklaren dat gebruikend de Pijpleiding van de Configuratie wordt opgesteld, verwijderend om het even welke vertraging in het aan boord gaan van een nieuw milieu. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
-
-### Waarschuwing verkeersfilterregels {#traffic-filter-rules-alerts}
-
-De Regels van de Filter van het verkeer, die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden geblokkeerd.
-
-Nu kunt u [ aan alarm ](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) intekenen wanneer uw regels van de verkeersfilter worden teweeggebracht. Met e-mailmeldingen van het Actions Center kunt u op de hoogte worden gehouden wanneer bepaalde verkeersvoorwaarden zich voordoen, zodat u de juiste maatregelen kunt nemen.
 
 ### Inhoudsgerelateerde programma&#39;s voor vroege adoptie {#foundation-early-adopter}
 
@@ -152,33 +149,6 @@ Net als AEM 6.5 voert Apache/dispatcher opnieuw schrijfkaarten in die op een spe
 
 De Adobe beheerde CDN steunt nu [ Kant van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-### Kennisgevingen van het Centrum voor activiteiten in verband met de gezondheid van de inhoud Vroege adopter-programma {#actions-center-notifications}
-
-[ Centrum van Acties ](/help/operations/actions-center.md) verzendt e-mailberichten wanneer de belangrijke incidenten gebeuren, of als iets over uw code of configuratie wordt opgemerkt waar u proactieve actie zou moeten nemen. Adobe heeft nu verschillende nieuwe typen berichten geïntroduceerd die zijn gekoppeld aan de status van uw inhoud. Deze functie is beschikbaar via een programma voor vroege adoptie. Neem contact op met de klantenservice van de Adobe om deel te nemen.
-
-#### Pagina&#39;s bevatten veel knooppunten {#page-nodes}
-
-Een groot aantal knooppunten kan de renderprestaties verlagen en de laadtijden van de pagina verminderen. Ontvang een pro-actieve melding via het Actions Center wanneer een groot aantal knooppunten op een pagina wordt gedetecteerd, zodat u de nodige stappen kunt ondernemen om het totale aantal knooppunten op een pagina te verminderen.
-
-#### Groot aantal actieve workflowinstanties {#running-workflows}
-
-De prestaties van de workflowengine worden beïnvloed wanneer er een groot aantal actieve workflows is in de ontwerpomgeving. U ontvangt een proactief bericht via het Actions Center wanneer een groot aantal actieve workflowinstanties wordt gedetecteerd. Met dit proces kunt u een opschoningstaak configureren om overbodige workflows te beëindigen.
-
-#### Gebruikers die rechtstreeks aan aangepaste groepen zijn toegevoegd {#users-customgroups}
-
-U ontvangt een proactief bericht via het Actions Center wanneer gebruikers rechtstreeks aan aangepaste groepen worden toegevoegd. Met dit proces kunt u de best practices van IMS volgen door gebruikers toe te voegen aan relevante IMS-groepen en deze IMS-groepen vervolgens als leden van AEM groepen op te nemen.
-
-#### Ontbrekende JCR-inhoud {#jcr-content}
-
-Het Centrum van acties brengt u proactief op de hoogte wanneer het missen van inhoud JCR wordt ontdekt. Op deze manier kunt u de ontbrekende inhoud toevoegen en het mislukken van bepaalde AEM Assets-functies voorkomen.
-
-#### Voltooide workflows niet gewist {#workflows}
-
-Het Centrum van acties brengt proactief u op de hoogte wanneer voltooide werkschema&#39;s ouder dan 90 dagen niet zijn gezuiverd. Deze aanpak verbetert de prestaties van de workflowengine door het aantal workflowexemplaren te verminderen.
-
-#### Ontbrekende verkoopbron {#sling-resource}
-
-Het Centrum van acties brengt pro-actief u op de hoogte wanneer een ontbrekende het verdelen middel wordt ontdekt. Op deze manier kunt u de ontbrekende bron toevoegen en het mislukken van bepaalde AEM Assets-functies voorkomen.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
