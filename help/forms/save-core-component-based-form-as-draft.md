@@ -4,19 +4,21 @@ description: Leer hoe u op kerncomponenten gebaseerde adaptieve formulieren als 
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
 
 
-# Formulieren opslaan en weergeven als concepten op de sitepagina
+# Formulieren opslaan als concepten en deze weergeven op de pagina Sites
+
+<span class="preview"> Dit artikel bevat inhoud over **Auto sparen** eigenschap, een pre-versieeigenschap. De pre-vrijlatingseigenschap is toegankelijk slechts door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Neem bijvoorbeeld een gebruiker die begint met het invullen van een formulier, maar later moet pauzeren en terugsturen. AEM bevat een optie `save-as-draft` waarmee de gebruiker het formulier kan opslaan als concept dat in de toekomst kan worden ingevuld. Om dit te vergemakkelijken, verstrekt AEM de **Concepten &amp; van het Portaal van het Forsm** component van het Portaal van het Forsm uit de doos, die concepten en voorlegging op de pagina&#39;s van AEM Sites toont. De component bevat formulieren die zijn opgeslagen als concepten die later kunnen worden ingevuld, en formulieren die zijn verzonden. Alleen aangemelde gebruikers kunnen hun concepten bewerken of hun verzonden formulieren weergeven. Nochtans, als een anonieme gebruiker door de lijst van vormen navigeert gebruikend de **component van het Onderzoek &amp; van het Registreren** en een vorm als ontwerp opslaat, wordt dat ontwerp niet vermeld door de **Concepten &amp; van Submissies** component. Gebruikers moeten zich bij het verzenden van het formulier hebben aangemeld om concepten en verzendingen weer te geven.
 
-![ pictogram Concepten ](assets/drafts-component.png){width="250" align="center"}
+![ pictogram Concepten ](assets/drafts-component.png)
 
 ## Voorwaarden
 
@@ -32,16 +34,16 @@ De **componenten van Concepten &amp; van Verzending** heeft een opslagopstelling
 
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]** .
 
-   ![ Azure selectie van de Kaart van de Opslag ](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
+   ![ Azure selectie van de Kaart van de Opslag ](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Selecteer een configuratiemap om de configuratie te maken en selecteer **[!UICONTROL Create]** .
 
-   ![ Uitgezochte de Omslag van de Configuratie van de Azure Opslag ](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
+   ![ Uitgezochte de Omslag van de Configuratie van de Azure Opslag ](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Geef een titel voor de configuratie op in het veld **[!UICONTROL Title]** .
 1. Geef de naam van de [!DNL Azure] -opslagaccount op in de velden **[!UICONTROL Azure Storage Account]** en **[!UICONTROL Azure Access Key]** .
 
-   ![ Azure Configuratie van de Opslag ](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
+   ![ Azure Configuratie van de Opslag ](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
 1. Klik **sparen**.
 
@@ -53,12 +55,12 @@ De **componenten van Concepten &amp; van Verzending** heeft een opslagopstelling
 
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]** .
 
-   ![ Verenigde schakelaarOpslag ](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
+   ![ Verenigde schakelaarOpslag ](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. Selecteer **[!UICONTROL Azure]** in de vervolgkeuzelijst **[!UICONTROL Storage]** in de sectie **[!UICONTROL Forms Portal]** .
 1. Geef het configuratiepad voor de Azure-opslagconfiguratie op in het veld **[!UICONTROL Storage Configuration Path]** .
 
-   ![ Verenigde schakelaarOpslag die ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"} plaatst
+   ![ Verenigde schakelaarOpslag die ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png) plaatst
 
 1. Selecteer **[!UICONTROL Save]** .
 
@@ -74,11 +76,11 @@ U kunt uit-van-de-doos componenten van Forms Portal gebruiken om concepten en bi
 
 1. Open de pagina van AEM Sites op een **geeft** wijze uit.
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
-   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"} uit
+   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png) uit
 
 1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Drafts & Submissions]** checkbox onder **[AEM de Naam van het Project van Archetype ] - Forms en Communicatie Portaal**.
 
-   ![ de Selectie van het Beleid ](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
+   ![ de Selectie van het Beleid ](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Klik op **[!UICONTROL Done]**.
 1. Open nu de AEM Sites-pagina opnieuw in de ontwerpmodus.
@@ -93,7 +95,7 @@ U kunt uit-van-de-doos componenten van Forms Portal gebruiken om concepten en bi
 
 1. Blader door de beschikbare componenten in het dialoogvenster en selecteer de gewenste component in de lijst. Bijvoorbeeld, selecteer de **componenten van Concepten &amp; van Verzending** van de lijst om de **Concepten &amp; van Verzending** Forms Portal component toe te voegen.
 
-   ![ voeg Ontwerp en de Component van de Verzending ](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"} toe
+   ![ voeg Ontwerp en de Component van de Verzending ](/help/forms/assets/save-form-as-draft-add-dns.png) toe
 
 Nu, vorm de eigenschappen van de **Concepten en de component van Verzending** volgens de vereisten.
 
@@ -107,7 +109,7 @@ U kunt de eigenschappen van de **Concepten &amp; Verzendingen** vormen:
    * **Uitgezochte Type**: Om op de vormlijst als ontwerp of voorgelegde vormen te wijzen. Als u **Ontwerp Forms** kiest, worden de vormen bewaard als concepten getoond. Alternatief, die **voorgelegde Forms** selecteren toont de vormen die door het programma geopende gebruikers worden voorgelegd.
    * **Lay-out**: Om de vormen van het lijstontwerp of voorgelegde vormen in het kaart of lijstformaat te tonen.
 
-   ](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"} eigenschappen van het Ontwerp en van de Component van de Verzending ![
+   ](/help/forms/assets/save-form-as-draft-dns-properties.png) eigenschappen van het Ontwerp en van de Component van de Verzending ![
 
 ## Formulieren configureren om op te slaan als concepten
 
@@ -129,13 +131,11 @@ Om een vorm als Ontwerp te bewaren, creeer a **sparen de regel van de Vorm** op 
 1. In de **[!UICONTROL When]** sectie, wordt de uitgezochte **geklikt** en in de **[!UICONTROL Then]** sectie, selecteert **sparen Vorm** optie.
 1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
 
-   ![ creeer regel voor knoop ](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
+   ![ creeer regel voor knoop ](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
 Wanneer u voorproef een Aangepast Vorm, vult het uit, en klikt **sparen Vorm** knoop, wordt de vorm bewaard als ontwerp.
 
 ### Automatisch opslaan
-
-<span class="preview"> Dit artikel bevat inhoud over **Auto sparen** eigenschap, een pre-versieeigenschap. De pre-vrijlatingseigenschap is toegankelijk slechts door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ U kunt ook een adaptief formulier zo configureren dat het automatisch wordt opge
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
 1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram en open het **[!UICONTROL Auto-Save]** lusje.
 
-   ![ auto-sparen ](/help/forms/assets/auto-save.png){width="250" align="center"}
+   ![ auto-sparen ](/help/forms/assets/auto-save.png)
 
 1. Schakel het selectievakje **[!UICONTROL Enable]** in om het formulier automatisch op te slaan.
 1. Vorm **[!UICONTROL Trigger]** als **Gebaseerde Tijd**, om de vorm <!--based on the occurrence of an event or--> na een specifiek tijdsinterval auto-sparen.
@@ -159,11 +159,11 @@ U kunt ook een adaptief formulier zo configureren dat het automatisch wordt opge
 Om opgeslagen ontwerpen of voorgelegde vormen te bekijken, gebruik de **Concepten &amp; van Indieningen** de Poortcomponent van Forms.
 Wanneer **[!UICONTROL Select Type]** als **Concept Forms** in [ wordt geselecteerd vormt dialoog van de componenten Concepten &amp; van Verzending ](#configure-properties-of-the-drafts--submissions-component), verschijnen de vormen bewaard als concepten op de pagina van Plaatsen. U kunt de concepten openen door op de ellips (...) te klikken om het formulier in te vullen.
 
-![ pictogram Concepten ](assets/drafts-component.png){width="250" align="center"}
+![ pictogram Concepten ](assets/drafts-component.png)
 
 Wanneer **[!UICONTROL Select Type]** als **Voorgelegde Forms** in [ wordt geselecteerd vormt dialoog van de componenten van Concepten &amp; van Verzending ](#configure-properties-of-the-drafts--submissions-component), verschijnen de voorgelegde vormen. U kunt de verzonden formulieren weergeven, maar niet bewerken.
 
-![ het pictogram van Verzending ](assets/submission-listing.png){width="250" align="center"}
+![ het pictogram van Verzending ](assets/submission-listing.png)
 
 U kunt de formulieren ook verwijderen door te klikken op de ellips (...) in de rechterbenedenhoek van het formulier.
 

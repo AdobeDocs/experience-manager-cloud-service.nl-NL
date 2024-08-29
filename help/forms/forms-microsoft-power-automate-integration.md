@@ -5,9 +5,9 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: Sluit AEM formules aan op automatisering, automatisering van Power Automate AEM Forms, integreer stroom automatisch op Adaptive Forms, verzend gegevens van Adaptive Forms naar Power Automate
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ae2815a49a674521344ded8da009290c4d999fdf
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -72,14 +72,14 @@ Voer de volgende handelingen uit om uw Forms as a Cloud Service instantie te ver
    * Toegangstokens (gebruikt voor impliciete stromen)
    * ID-tokens (gebruikt voor impliciete en hybride stromen)
 
-1. Klik op de pagina met API-machtigingen op Een machtiging toevoegen.
-1. Selecteer onder Microsoft® API&#39;s de Flow Service en selecteer de volgende machtigingen.
+1. Klik op `Add a permission` op de pagina met API-machtigingen.
+
+1. Selecteer onder Microsoft® API&#39;s de `Power Automate` en selecteer de volgende machtigingen.
    * Flows.Manage.All
    * Flows.Read.All
-
-   Klik op Machtigingen toevoegen om de machtigingen op te slaan.
-1. Klik op de pagina met API-machtigingen op Een machtiging toevoegen. Selecteer API&#39;s die mijn organisatie gebruikt en zoek `DataVerse` .
-1. Enable user_imitation en klik toevoegen toestemmingen.
+   * GCC-machtiging (optioneel als u verbinding wilt maken met een GCC-gebruiker (Government Cloud Computing))
+Klik op `Add permissions` om de machtigingen op te slaan.
+1. Klik op `Add a permission` op de pagina met API-machtigingen. Selecteer API&#39;s die mijn organisatie gebruikt en zoek `DataVerse` naar en schakel `user_impersonation` Click `Add` -machtigingen in.
 1. (Optioneel) Klik op de pagina Certificates &amp; secrets op Nieuw clientgeheim. Voor Add een Geheim scherm van de Cliënt, verstrek een beschrijving en een tijdspanne voor het geheim om te verlopen, en de klik voegt toe. Er wordt een geheime tekenreeks gegenereerd.
 1. Houd een nota van uw organisatie-specifieke [ milieu URL van de Dynamica ](https://docs.microsoft.com/en-us/power-automate/web-api#compose-http-requests).
 
@@ -88,15 +88,15 @@ Voer de volgende handelingen uit om uw Forms as a Cloud Service instantie te ver
 1. Op de auteursinstantie van AEM Forms, navigeer aan **[!UICONTROL Tools]** ![ hammer ](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
 1. Selecteer op de pagina **[!UICONTROL Configuration Browser]** de optie **[!UICONTROL Create]** .
 1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een **[!UICONTROL Title]** voor de configuratie op, schakel **[!UICONTROL Cloud Configurations]** in en selecteer **[!UICONTROL Create]** . Het leidt tot een configuratiecontainer om Cloud Servicen op te slaan. Zorg ervoor dat de mapnaam geen ruimte bevat.
-1. Navigeer aan **[!UICONTROL Tools]** ![ hamer ](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]** en open de configuratiecontainer u in de vorige stap creeerde.
+1. Navigeer aan **[!UICONTROL Tools]** ![ hamer ](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** en open de configuratiecontainer u in de vorige stap creeerde.
 
 
    >[!NOTE]
    >
    >Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het veld **[!UICONTROL Configuration Container]** .
 
-1. Selecteer op de configuratiepagina **[!UICONTROL Create]** om [!DNL Microsoft®®® Power Automate Flow Service] -configuratie te maken in AEM Forms.
-1. Geef op de pagina **[!UICONTROL Configure Dataverse Service for Microsoft®®® Power Automate]** de waarden **[!UICONTROL Client ID]** (ook wel toepassings-id genoemd), **[!UICONTROL Client Secret]** , **[!UICONTROL OAuth URL]** en **[!UICONTROL Dynamic Environment URL]** op. Gebruik identiteitskaart van de Cliënt, Geheime Cliënt, OAuth URL, en Dynamische Milieu URL van [ Microsoft® Azure Actieve Toepassing van de Folder ](#ms-power-automate-application) u in de vorige sectie creeerde. De optie Eindpunten van het gebruik in Microsoft® Azure Actieve de toepassingsUI van de Folder om OAuth URL te vinden
+1. Selecteer op de configuratiepagina **[!UICONTROL Create]** om [!DNL Microsoft® Power Automate Flow Service] -configuratie te maken in AEM Forms.
+1. Geef op de pagina **[!UICONTROL Configure Dataverse Service for Microsoft® Power Automate]** de waarden **[!UICONTROL Client ID]** (ook wel toepassings-id genoemd), **[!UICONTROL Client Secret]** , **[!UICONTROL OAuth URL]** en **[!UICONTROL Dynamic Environment URL]** op. Gebruik identiteitskaart van de Cliënt, Geheime Cliënt, OAuth URL, en Dynamische Milieu URL van [ Microsoft® Azure Actieve Toepassing van de Folder ](#ms-power-automate-application) u in de vorige sectie creeerde. De optie Eindpunten van het gebruik in Microsoft® Azure Actieve de toepassingsUI van de Folder om OAuth URL te vinden
 
    ![ optie van Eindpunten van het Gebruik in Microsoft Power Automate toepassing UI om OAuth URL ](assets/endpoints.png) te vinden
 
@@ -112,7 +112,18 @@ Voer de volgende handelingen uit om uw Forms as a Cloud Service instantie te ver
    >Wanneer u een adaptief formulier maakt, geeft u de naam van de container op in het veld **[!UICONTROL Configuration Container]** .
 
 1. Selecteer op de configuratiepagina **[!UICONTROL Create]** om [!DNL Microsoft® Power Automate Flow Service] -configuratie te maken in AEM Forms.
+
+1. (Optioneel) Schakel het selectievakje `Connect to Microsoft GCC` in om verbinding te maken met de GCC-gebruiker.
+
+   >[!NOTE]
+   >
+   > Als u verbinding wilt maken met een GCC-huurder (Government Cloud Computing), selecteert u de GCC-machtiging in Microsoft Azure Portal.
+
+
+   ![ Macht Automate de Configuratie van de Wolk ](/help/forms/assets/power-automate.png)
+
 1. Geef op de pagina **[!UICONTROL Configure Dataverse for Microsoft® Power Automate]** de waarden **[!UICONTROL Client ID]** (ook wel toepassings-id genoemd), **[!UICONTROL Client Secret]** , **[!UICONTROL OAuth URL]** en **[!UICONTROL Dynamic Environment URL]** op. Gebruik identiteitskaart van de Cliënt, Geheime cliënt, OAuth URL, en identiteitskaart van het Milieu van de Dynamiek. Gebruik de optie Eindpunten in de gebruikersinterface van de Microsoft® Azure Active Directory-toepassing om OAuth URL te zoeken. Open [ Mijn stromen ](https://us.flow.microsoft.com) verbinding en selecteer Mijn die Stromen gebruiken identiteitskaart in URL als identiteitskaart van het Milieu van de Dynamiek wordt vermeld.
+
 1. Selecteer **[!UICONTROL Connect]**. Meld u desgevraagd aan bij uw Microsoft® Azure-account. Selecteer **[!UICONTROL Save]** .
 
 ### Publish zowel de Microsoft® Power Automate Data verse als de Microsoft® Power Automate Flow Service Cloud Configurations {#publish-microsoft-power-automate-dataverse-cloud-configuration}

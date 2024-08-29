@@ -3,7 +3,7 @@ title: Hoe kunt u formulierkoppelingen toevoegen op de AEM Sites-pagina met behu
 description: Leer hoe u koppelingen naar formulieren toevoegt aan de AEM Sites-pagina.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 In het scenario van de bankenwebsite, verbetert de **Portaal van de Verbinding** de component van Forms navigatie door gebruikers aan specifieke vormen over diverse secties van de plaats te leiden. Het bevat directe verwijzingen naar formulieren zoals aanvragen voor leningen, formulieren voor het openen van accounts of feedbackenquêtes, die strategisch op de hele website worden geplaatst. De **component van de Verbinding** neemt verbindingen op die gebruikers aan specifieke Aanpassings Forms binnen de pagina van Plaatsen leiden. Zo hebben anonieme gebruikers op de website van de bank toegang tot een algemeen onderzoeksformulier, terwijl aangemelde gebruikers rechtstreeks toegang hebben tot veiligere formulieren, zoals leningsaanvragen of formulieren voor het verlenen van vergunningen voor transacties.
 
-![ het pictogram van de Verbinding ](/help/forms/assets/link-forms.png){width="250" align="center"}
+![ het pictogram van de Verbinding ](/help/forms/assets/link-forms.png)
 
 ## Voorwaarde
 
@@ -29,11 +29,11 @@ Om de **poortcomponent van de Verbinding** {aan uw pagina van Plaatsen toe te vo
 
 1. Open de pagina van AEM Sites op een **geeft** wijze uit.
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
-   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"} uit
+   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png) uit
 
 1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Link]** checkbox onder **[AEM de Naam van het Project van Archetype ] - Forms en Communicatie Portaal**.
 
-   ![ de Selectie van het Beleid ](/help/forms/assets/add-link.png){width="250" align="center"}
+   ![ de Selectie van het Beleid ](/help/forms/assets/add-link.png)
 
 1. Klik op **[!UICONTROL Done]**.
 1. Open nu de AEM Sites-pagina opnieuw in de ontwerpmodus.
@@ -49,7 +49,7 @@ Om de **poortcomponent van de Verbinding** {aan uw pagina van Plaatsen toe te vo
 
 1. Blader door de beschikbare componenten in het dialoogvenster en selecteer de gewenste component in de lijst. Bijvoorbeeld, selecteer de **component van de Verbinding** van de lijst om de **Component van de Verbinding** van Forms Portal toe te voegen component.
 
-   ![ component van de Verbinding ](/help/forms/assets/add-link-in-sites.png){width="250" align="center"}
+   ![ component van de Verbinding ](/help/forms/assets/add-link-in-sites.png)
 
 Nu, vorm de eigenschappen van de **component van de Verbinding**.
 
@@ -59,19 +59,19 @@ U kunt **eigenschappen van de 1} component van de Verbinding {gemakkelijk aanpas
 
 ### Tabblad weergeven
 
-![ het Lusje van de Vertoning ](/help/forms/assets/link-asset-tab.png){width="250" align="center"}
+![ het Lusje van de Vertoning ](/help/forms/assets/link-asset-tab.png)
 
 Geef op het tabblad **[!UICONTROL Display]** het bijschrift en de knopinfo voor koppelingen op om de formulieren die door de koppeling worden vertegenwoordigd, gemakkelijker te kunnen identificeren.
 
 ### Tabblad Informatie over element
 
-![ het Lusje van Info van Assets ](/help/forms/assets/link-asset-info.png){width="250" align="center"}
+![ het Lusje van Info van Assets ](/help/forms/assets/link-asset-info.png)
 
 Geef op het tabblad **[!UICONTROL Asset Info]** het pad naar de opslagplaats op waar het element wordt opgeslagen.
 
 ### Zoekparameters, tabblad
 
-![ het Lusje van de Params van de Vraag ](/help/forms/assets/link-query-tab.png){width="250" align="center"}
+![ het Lusje van de Params van de Vraag ](/help/forms/assets/link-query-tab.png)
 
 Geef op het tabblad **[!UICONTROL Query Params]** de aanvullende parameters op in de indeling sleutelwaardepaar. Wanneer op de koppeling wordt geklikt, worden deze aanvullende parameters doorgegeven en samen met het formulier doorgegeven.
 
@@ -79,7 +79,7 @@ Geef op het tabblad **[!UICONTROL Query Params]** de aanvullende parameters op i
 
 Voorproef de pagina van Plaatsen om de verbinding aan een Aangepaste Vorm te bekijken, die in het **Info van Assets** eigenschappen lusje van de **** component van de Verbinding wordt gespecificeerd. Als u op de koppeling klikt, wordt het formulier op het scherm weergegeven voor gebruikers die het op basis van de machtigingen kunnen openen.
 
-![ het Lusje van de Params van de Vraag ](/help/forms/assets/link-forms.png){width="250" align="center"}
+![ het Lusje van de Params van de Vraag ](/help/forms/assets/link-forms.png)
 
 ## Verwante artikelen
 

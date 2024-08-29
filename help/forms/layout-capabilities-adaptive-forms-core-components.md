@@ -4,7 +4,7 @@ description: De lay-out en vormgeving van Adaptief Forms op verschillende appara
 feature: Adaptive Forms, Core Components
 keywords: Indeling van adaptief formulier op basis van kerncomponenten, verschillende indelingen voor formulieren, dynamische formulierindelingen AEM, AEM Cloud Service-formulierindelingen, formulierindelingstypen in AEM kerncomponenten, adaptieve formulierindelingen
 role: User, Developer, Admin
-source-git-commit: b06d86ffc620327a744f53733e3bf84fe8c03f2f
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Adaptief formulier op basis van kerncomponenten ondersteunt de volgende typen in
 
 De indeling van deelvensters is handig om verwante velden zo te ordenen dat u gemakkelijker kunt navigeren en de bijbehorende inhoud kunt vinden. In de indeling van het deelvenster worden formuliercomponenten in afzonderlijke secties of deelvensters gerangschikt in een adaptief formulier.
 
-![ Lay-out van het Comité ](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![ Lay-out van het Comité ](/help/forms/assets/panel-layout.png)
 
 Layout deelvenster
 
@@ -54,7 +54,7 @@ U kunt de [ paneelcomponent ](https://experienceleague.adobe.com/en/docs/experie
 
 De indeling van de wizard helpt een complex formulier te vereenvoudigen door het op te splitsen in afzonderlijke stappen. Elke stap vertegenwoordigt een verschillend deel van het proces, en de gebruikers navigeren opeenvolgend door de stappen, vaak met **Volgende** en **Vorige** knopen. U kunt de indeling van de wizard gebruiken om een formulier te maken dat uit meerdere secties of stappen bestaat.
 
-![ Lay-out van de Tovenaar ](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![ Lay-out van de Tovenaar ](/help/forms/assets/wizard-layout-compare.gif)
 
 Wizard Layout
 
@@ -64,7 +64,7 @@ U kunt de [ tovenaar component ](https://experienceleague.adobe.com/en/docs/expe
 
 De lay-out van verticale tabbladen wordt ook wel tabbladen in de linkerlay-out genoemd. Met de verticale tabs-indeling ordent u deelvensters of secties langs de linkerzijde van een formulier. Dit is een algemene indeling voor formulieren waarbij deelvensters/secties verticaal worden gestapeld om gemakkelijk te kunnen lezen en navigeren.
 
-![ Verticale Lay-out ](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![ Verticale Lay-out ](/help/forms/assets/vertical-tab.gif)
 
 Lay-out verticale tabs
 
@@ -76,7 +76,7 @@ U kunt de [ verticale component van lusjes ](https://experienceleague.adobe.com/
 De lay-out Horizontale tabbladen wordt ook wel Tabs in de bovenste lay-out genoemd. Met de lay-out Horizontale tabbladen rangschikt u deelvensters of secties naast elkaar in een rij. In deze indeling worden de formuliersecties lineair weergegeven over de breedte van het formulier of deelvenster.
 
 
-![ Horizontale Lay-out ](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![ Horizontale Lay-out ](/help/forms/assets/horizontal-layout.gif)
 
 Lay-out horizontale tabs
 
@@ -87,7 +87,7 @@ U kunt de [ horizontale component van lusjes ](https://experienceleague.adobe.co
 
 De accordeonindeling geeft de inhoud in inklapbare secties of deelvensters weer in een adaptief formulier. Wanneer een sectie wordt uitgevouwen, geeft deze de inhoud binnen weer, terwijl andere secties worden samengevouwen. Deze indeling is ideaal voor het weergeven van grote hoeveelheden gegevens in een compacte vorm.
 
-![ Lay-out van de Accordeon ](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![ Lay-out van de Accordeon ](/help/forms/assets/accordion-layout-compare.gif)
 
 Accordeonlay-out
 
@@ -132,7 +132,7 @@ Laten we het stapsgewijze proces verkennen om een lay-out in te voegen en er com
 1. Selecteer in de linkerbovenhoek **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 1. Open een bestaand adaptief formulier in een bewerkingsmodus als dit al is gemaakt.
 
-   ![ Open een AanpassingsVorm ](/help/forms/assets/insert-layout.png){width="250" align="center"}
+   ![ Open een AanpassingsVorm ](/help/forms/assets/insert-layout.png)
 
    Alternatief, kunt u [ nieuwe AanpassingsVorm ](/help/forms/creating-adaptive-form-core-components.md) ook creëren.
 
@@ -176,13 +176,13 @@ Nieuw deelvenster toevoegen aan de component met horizontale tabbladen:
 
    ![ lusje van het Punt voor Horizontale lusjes ](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-2. Klik **toevoegen** pictogram om nieuw paneel toe te voegen.
+1. Klik **toevoegen** pictogram om nieuw paneel toe te voegen.
 
    ![ voeg nieuw paneel ](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"} toe
 
    Wanneer u **klikt voeg** pictogram toe, verschijnt het **Nieuwe de dialoogvakje van de Component van het Tussenvoegsel**.
 
-3. Selecteer de deelvenstercomponent.
+1. Selecteer de deelvenstercomponent.
 
    ![ voeg nieuw paneel ](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"} toe
 
@@ -192,11 +192,11 @@ Nieuw deelvenster toevoegen aan de component met horizontale tabbladen:
 
    Geef een naam op voor het nieuwe deelvenster, anders kunt u de eigenschappen van de component met horizontale tabbladen niet opslaan.
 
-4. Geef de namen van de deelvensters op, zoals in de onderstaande afbeelding wordt getoond:
+1. Geef de namen van de deelvensters op, zoals in de onderstaande afbeelding wordt getoond:
 
    ![ de namen van het Comité ](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-5. Klik **Gedaan**.
+1. Klik **Gedaan**.
 
    Zodra u **Gedaan** klikt, verschijnen de drie panelen naast elkaar in een rij. De deelvensternamen worden als koppen voor elk deelvenster weergegeven en u kunt formuliercomponenten aan elk deelvenster toevoegen.
 
@@ -204,15 +204,15 @@ Nieuw deelvenster toevoegen aan de component met horizontale tabbladen:
 
    U kunt de eigenschappen van een deelvenstercomponent configureren. Het IT-aanvraagformulier bevat bijvoorbeeld geen titels van deelvensters. Hier volgen de stappen voor het configureren van eigenschappen van een deelvenstercomponent.
 
-6. Open de eigenschappen van het eerste deelvenster.
+1. Open de eigenschappen van het eerste deelvenster.
 
    ![ Comité 1 Eigenschappen ](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-7. Selecteer **titel** checkbox van de Huid van **Basis** tabel.
+1. Selecteer **titel** checkbox van de Huid van **Basis** tabel.
 
    ![ Verberg titel ](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-8. Klik **Gedaan**.
+1. Klik **Gedaan**.
 
 Op dezelfde manier kunt u ook titels voor de andere twee deelvensters verbergen. Als u klaar bent, kunt u doorgaan met het toevoegen van formuliercomponenten aan elk deelvenster.
 
@@ -262,7 +262,7 @@ Op dezelfde manier kunt u ook titels voor de andere twee deelvensters verbergen.
 
 1. Klik op **[!UICONTROL Preview]** in de rechterbovenhoek van de ontwerpomgeving.
 
-   ![ Horizontale Lay-out ](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+   ![ Horizontale Lay-out ](/help/forms/assets/horizontal-layout.gif)
 
 U kunt ook [ slepen-en-daling de componenten ](#extra-bytes) om de vormcomponenten aan elk paneel toe te voegen.
 
@@ -341,7 +341,7 @@ Voer de volgende stappen uit om de bestaande indeling van een formulier te verva
 
    Nadat u de lay-out hebt geselecteerd, wordt de rangschikking van de componenten in de lay-out dienovereenkomstig gewijzigd. Selecteer bijvoorbeeld de component met verticale tabbladen in het dialoogvenster **[!UICONTROL Replace Component]** . De rangschikking van het deelvenster verandert in tabbladen aan de linkerkant:
 
-   ![ Verticale Lay-out ](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+   ![ Verticale Lay-out ](/help/forms/assets/vertical-tab.gif)
 
 ## Extra bytes
 

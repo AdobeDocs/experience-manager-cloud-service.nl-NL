@@ -3,7 +3,7 @@ title: Hoe kan ik formulieren op een Adobe Experience Manager Sites-pagina weerg
 description: Leer hoe u formulieren kunt weergeven op een AEM Sites-pagina.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Stel je voor dat een gebruiker de website van de bank bezoekt op zoek naar een f
 
 De **Onderzoek &amp; van het Registreren** component van het Portaal van Forms staat u toe om vormen op een pagina van Plaatsen te tonen en te maken. Gebruikers kunnen een uitgebreide lijst met formulieren configureren en presenteren op basis van specifieke criteria om aan de organisatorische vereisten te voldoen. Anonieme gebruikers kunnen de pagina Sites bezoeken om de beschikbare formulieren weer te geven en te bladeren. De vermelde vormen kunnen in stijgende of dalende orde worden gesorteerd gebruikend de **Soort door** drop-down optie die in de hoger-juiste hoek van het scherm wordt gevestigd.
 
-![ Onderzoek en het pictogram van de Registratie ](assets/search-and-lister-component.png){width="250" align="center"}
+![ Onderzoek en het pictogram van de Registratie ](assets/search-and-lister-component.png)
 
 ## Voorwaarde
 
@@ -58,11 +58,11 @@ Om de **Onderzoek &amp; van het Registreren** poortcomponent aan uw pagina van P
 
 1. Open de pagina van AEM Sites op een **geeft** wijze uit.
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
-   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"} uit
+   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png) uit
 
 1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Search & Lister]** checkbox onder **[AEM de Naam van het Project van Archetype ] - Forms en Communicatie Portaal**.
 
-   ![ de Selectie van het Beleid ](/help/forms/assets/search-lister-enable-policy.png){width="250" align="center"}
+   ![ de Selectie van het Beleid ](/help/forms/assets/search-lister-enable-policy.png)
 
 1. Klik op **[!UICONTROL Done]**.
 1. Open nu de AEM Sites-pagina opnieuw in de ontwerpmodus.
@@ -78,7 +78,7 @@ Om de **Onderzoek &amp; van het Registreren** poortcomponent aan uw pagina van P
 
 1. Blader door de beschikbare componenten in het dialoogvenster en selecteer de gewenste component in de lijst. Bijvoorbeeld, selecteer het **Onderzoek en de component van het Registreren** van de lijst om het **Onderzoek &amp; van het Registreertoestel** Forms Portal component toe te voegen.
 
-   ![ Onderzoek &amp; component van de Registratie ](/help/forms/assets/add-search-lister.png){width="250" align="center"}
+   ![ Onderzoek &amp; component van de Registratie ](/help/forms/assets/add-search-lister.png)
 
 Nu, vorm de eigenschappen van het **Onderzoek en de component van het Registreren**.
 
@@ -88,7 +88,7 @@ U kunt **Onderzoek en 1} componenteneigenschappen gemakkelijk aanpassen Lister g
 
 ### Tabblad Weergave
 
-![ het Lusje van de Vertoning ](/help/forms/assets/search-and-lister-display-tab.png){width="250" align="center"}
+![ het Lusje van de Vertoning ](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. Geef in **[!UICONTROL Title]** de titel op voor de component Zoeken &amp; register. Een indicatieve titel biedt de gebruikers de mogelijkheid snel te zoeken in de formulierlijst.
 1. Selecteer in de lijst **[!UICONTROL Layout]** de indeling die u wilt gebruiken voor de weergave van de formulieren in de kaart- of lijstindeling.
@@ -97,14 +97,14 @@ U kunt **Onderzoek en 1} componenteneigenschappen gemakkelijk aanpassen Lister g
 
 ### Tabblad Element
 
-![ het lusje van Activa ](/help/forms/assets/search-and-lister-asset-tab.png){width="250" align="center"}
+![ het lusje van Activa ](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. Geef op het tabblad **[!UICONTROL Asset Folder]** de locatie op vanwaar de formulieren worden opgehaald en weergegeven op de pagina.
 1. Met de **[!UICONTROL Add another location]** kunt u meerdere maplocaties configureren.
 
 ### Resultaten, tabblad
 
-![ het Lusje van de Vertoning ](/help/forms/assets/search-and-lister-result-tab.png){width="250" align="center"}
+![ het Lusje van de Vertoning ](/help/forms/assets/search-and-lister-result-tab.png)
 
 Configureer op het tabblad **[!UICONTROL Results]** het maximum aantal formulieren dat per pagina wordt weergegeven. Standaard zijn dit acht formulieren per pagina.
 
@@ -112,7 +112,7 @@ Configureer op het tabblad **[!UICONTROL Results]** het maximum aantal formulier
 
 Om de lijst van vormen te bekijken, gebruik het **Onderzoek &amp; van het Registreren** de Portaalcomponent van Forms. Voorproef de pagina van AEM Sites om de lijst van vormen van de **omslag van Assets** te zien die op het scherm wordt getoond. U kunt ook naar een specifiek formulier zoeken met de zoekbalk.
 
-![ Onderzoek en het pictogram van de Registratie ](assets/search-and-lister-component.png){width="250" align="center"}
+![ Onderzoek en het pictogram van de Registratie ](assets/search-and-lister-component.png)
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}
