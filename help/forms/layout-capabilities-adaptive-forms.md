@@ -4,9 +4,9 @@ description: De lay-out en vormgeving van Adaptief Forms op verschillende appara
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ba98b4e17a1245a5a5d208b4bf8698b4da4e9f6b
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
-| AEM as a Cloud Service | Dit artikel |
+| AEM as a Cloud Service (Core Components) | [ klik hier ](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
+| AEM as a Cloud Service (Foundation Components) | Dit artikel |
 
 Met [!DNL Adobe Experience Manager] kunt u gebruiksvriendelijke adaptieve Forms maken die eindgebruikers een dynamische ervaring biedt. De formulierindeling bepaalt hoe items of componenten in een adaptieve vorm worden weergegeven.
 

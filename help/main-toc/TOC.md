@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
+source-git-commit: 9c6cf85ccc4e15671669b2fc59b01e7c0cef10e2
 workflow-type: tm+mt
-source-wordcount: '5481'
+source-wordcount: '5528'
 ht-degree: 3%
 
 ---
@@ -691,6 +691,7 @@ ht-degree: 3%
       + Core Components {#authoring-adaptive-forms-core-components}
          + Een adaptief formulier maken {#create-an-adaptive-form-on-forms-cs}
             + [Een adaptief formulier maken](/help/forms/creating-adaptive-form-core-components.md)
+            + [De indeling van een adaptief formulier instellen op basis van kerncomponenten](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Een adaptief formulierfragment maken](/help/forms/adaptive-form-fragments-core-components.md)
             + [Thema&#39;s maken voor een adaptief formulier - Core Components](/help/forms/using-themes-in-core-components.md)
             + [Een adaptieve formuliersjabloon maken op basis van kerncomponenten](/help/forms/template-editor-core-components.md)
@@ -715,7 +716,6 @@ ht-degree: 3%
             + [Versies, opmerkingen en annotaties toevoegen aan een adaptief formulier](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [ vergelijk Adaptieve Forms ](/help/forms/compare-forms.md)
             + [Adaptieve Forms op basis van basiscomponenten converteren naar Core-componentformulieren met migratiehulpprogramma](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Een adaptief formulier opslaan als concept](/help/forms/save-core-component-based-form-as-draft.md)
             + Inleiding aan de Redacteur van de Regel voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd {#rule-editor-core-components}
                + [Inleiding aan de Redacteur van de Regel voor AanpassingsForms die op de Componenten van de Kern wordt gebaseerd](/help/forms/rule-editor-core-components.md)
                + [De gebruikersinterface van de Redacteur van de regel voor Adaptieve Forms die op de Componenten van de Kern wordt gebaseerd](/help/forms/rule-editor-core-components-user-interface.md)
@@ -726,6 +726,11 @@ ht-degree: 3%
                + [Inleiding tot aangepaste functies voor adaptieve Forms op basis van kerncomponenten](/help/forms/create-and-use-custom-functions.md)
                + [Een aangepaste functie maken en gebruiken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)
                + [Voorbeelden van aangepaste functies voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-components-use-cases.md)
+            + Inleiding aan het Portaal van Forms en zijn componenten {#introduction-to-forms-portal}
+               + [Inleiding tot Forms Portal-component](/help/forms/configure-forms-portal.md)
+               + [Formulieren weergeven op de pagina Sites met de component Zoeken en register](/help/forms/list-forms-on-sites-page.md)
+               + [Formulieren opslaan en als concepten op de sitepagina weergeven met de component Concepten en verzendingen](/help/forms/save-core-component-based-form-as-draft.md)
+               + [Formulierkoppelingen aan de pagina Sites toevoegen met de component Link](/help/forms/add-form-link-to-aem-sites-page.md)
       + Elementaire componenten {#authoring-adaptive-forms-foundation-components}
          + Uw PDF forms converteren naar Adaptieve Forms {#afcs}
             + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -782,7 +787,6 @@ ht-degree: 3%
             + [Eigenschappen van metagegevens van een adaptief formulier opnieuw gebruiken](/help/forms/reusing-adaptive-forms.md)
          + De toegankelijkheid van een adaptief formulier verbeteren {#accessible-adaptive-forms}
             + [Een toegankelijk adaptief formulier maken](/help/forms/creating-accessible-adaptive-forms.md)
-         + [Forms Portal configureren](/help/forms/configure-forms-portal.md)
          + [Revisies maken en beheren](/help/forms/create-reviews-forms.md)
          + [Verzendrevisoren koppelen aan een formulier](/help/forms/adding-reviewers-form.md)
          + [Revisies maken en beheren voor een adaptief formulier](/help/forms/review-adaptiveforms-in-sites-page.md)

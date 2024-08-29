@@ -1,228 +1,180 @@
 ---
-title: Hoe te om de kern component gebaseerde Aangepaste Vorm als ontwerp te bewaren?
-description: Leer hoe u op basiscomponenten gebaseerde adaptieve formulieren als concept opslaat en een Forms Portal maakt en kerncomponenten buiten de box op een AEM Sites-pagina gebruikt.
+title: Hoe te om de op componenten gebaseerde Aangepaste Vorm van de Kern te bewaren als ontwerp en de component van Concepten en van Verzending te gebruiken om concepten en bijdragen te vermelden?
+description: Leer hoe u op kerncomponenten gebaseerde adaptieve formulieren als concept opslaat. Begrijp ook hoe te om de component van Concepten en van Verzending aan lijstconcepten en voorlegging voor het programma geopende gebruikers te gebruiken?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
+source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1309'
 ht-degree: 0%
 
 ---
 
 
-# Adaptief formulier op basis van kerncomponent opslaan als concept {#save-af-form}
+# Formulieren opslaan en weergeven als concepten op de sitepagina
 
-Het opslaan van een adaptief formulier als concept is een essentiële functie die de efficiëntie en nauwkeurigheid van de gebruiker verbetert. Met deze functionaliteit kunnen gebruikers de voortgang opslaan en de taken later voltooien zonder dat ze ingevoerde informatie verliezen. Het bieden van een `save-as-draft` optie verzekert flexibiliteit in het beheren van tijd, vermindert het risico van gegevensverlies, en handhaaft de precisie van voorlegging. U kunt formulieren opslaan als concepten en deze later voltooien.
+Neem bijvoorbeeld een gebruiker die begint met het invullen van een formulier, maar later moet pauzeren en terugsturen. AEM bevat een optie `save-as-draft` waarmee de gebruiker het formulier kan opslaan als concept dat in de toekomst kan worden ingevuld. Om dit te vergemakkelijken, verstrekt AEM de **Concepten &amp; van het Portaal van het Forsm** component van het Portaal van het Forsm uit de doos, die concepten en voorlegging op de pagina&#39;s van AEM Sites toont. De component bevat formulieren die zijn opgeslagen als concepten die later kunnen worden ingevuld, en formulieren die zijn verzonden. Alleen aangemelde gebruikers kunnen hun concepten bewerken of hun verzonden formulieren weergeven. Nochtans, als een anonieme gebruiker door de lijst van vormen navigeert gebruikend de **component van het Onderzoek &amp; van het Registreren** en een vorm als ontwerp opslaat, wordt dat ontwerp niet vermeld door de **Concepten &amp; van Submissies** component. Gebruikers moeten zich bij het verzenden van het formulier hebben aangemeld om concepten en verzendingen weer te geven.
 
-## Overwegingen
+![ pictogram Concepten ](assets/drafts-component.png){width="250" align="center"}
 
-* [Aangepaste Forms-kerncomponenten voor uw omgeving inschakelen.](/help/forms/enable-adaptive-forms-core-components.md)
+## Voorwaarden
 
-* Zorg ervoor dat de [ kerncomponent aan versie 3.0.24 of recenter ](https://github.com/adobe/aem-core-forms-components) wordt geplaatst om deze eigenschap te gebruiken.
-* Zorg ervoor dat u een [ Azure opslagrekening en een toegangssleutel ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) hebt om toegang tot de Azure opslagrekening toe te staan.
+* [Schakel Adaptieve Forms Core-componenten in voor uw omgeving.](/help/forms/enable-adaptive-forms-core-components.md)
 
-## Een adaptief formulier opslaan als concept
+  Nadat u de nieuwste Core Components in uw omgeving hebt geïmplementeerd, zijn de Forms Portal-componenten toegankelijk in uw ontwerpomgeving.
 
-[!DNL Experience Manager Forms] Gegevensintegratie (data-integration.md) biedt [!DNL Azure] opslagconfiguratie voor de integratie van formulieren met [!DNL Azure] -opslagservices. Met FDM (Form Data Model) kunt u Adaptive Forms maken die met de [!DNL Azure] -server werkt om bedrijfsworkflows in te schakelen.
+* [ vorm Azure Opslag en Verenigde Schakelaar van de Opslag voor Concepten &amp; de Portaalcomponent van Forms van de Verzending ](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-Als u het formulier wilt opslaan als concept, moet u zorgen dat u een Azure-opslagaccount en een toegangstoets hebt om toegang tot het [!DNL Azure] -opslagaccount te autoriseren. Voer de volgende stappen uit om het formulier op te slaan als concept:
+### Azure Storage- en Unified Storage-connector configureren voor concepten en verzendingen voor Forms Portal-component
 
-1. [Azure Storage Configuration maken](#create-azure-storage-configuration)
-1. [Unified Storage-connector configureren voor Forms Portal](#configure-usc-forms-portal)
-1. [Regel maken om een adaptief formulier op te slaan als concept](#rule-to-save-adaptive-form-as-draft)
-
-
-### 1. Maak een Azure Storage Configuration {#create-azure-storage-configuration}
-
-Zodra u beschikt over een Azure-opslagaccount en een toegangstoets om toegang tot de [!DNL Azure] -opslagaccount te verlenen, voert u de volgende stappen uit om een Azure-opslagconfiguratie te maken:
+De **componenten van Concepten &amp; van Verzending** heeft een opslagopstelling voor het bewaren van en het van een lijst maken van concepten op de pagina van AEM Sites nodig. De Unified Storage-connector biedt een framework om AEM te koppelen aan externe opslag. Als u het formulier wilt opslaan als concept, zorgt u ervoor dat u een Azure-opslagaccount en een toegangstoets hebt om toegang tot het [!DNL Azure] -opslagaccount te verlenen. Eenmaal beschikt u over een Azure-opslagaccount en de toegangstoets, voert u de volgende stappen uit om een Azure-opslagconfiguratie te maken:
 
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure Storage]** .
 
-   ![ Azure selectie van de Kaart van de Opslag ](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![ Azure selectie van de Kaart van de Opslag ](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
 
 1. Selecteer een configuratiemap om de configuratie te maken en selecteer **[!UICONTROL Create]** .
 
-   ![ Uitgezochte de Omslag van de Configuratie van de Azure Opslag ](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![ Uitgezochte de Omslag van de Configuratie van de Azure Opslag ](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
 
 1. Geef een titel voor de configuratie op in het veld **[!UICONTROL Title]** .
 1. Geef de naam van de [!DNL Azure] -opslagaccount op in de velden **[!UICONTROL Azure Storage Account]** en **[!UICONTROL Azure Access Key]** .
 
-   ![ Azure Configuratie van de Opslag ](/help/forms/assets/save-form-as-draft-azure-storage.png)
+   ![ Azure Configuratie van de Opslag ](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
 
 1. Klik **sparen**.
 
->[!NOTE]
->
-> U kunt **[!UICONTROL Azure Storage Account]** en **[!UICONTROL Azure Access Key]** van [ Microsoft Azure Portal ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) terugwinnen.
+   >[!NOTE]
+   >
+   > U kunt **[!UICONTROL Azure Storage Account]** en **[!UICONTROL Azure Access Key]** van [ Microsoft Azure Portal ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) terugwinnen.
 
-
-### 2. Configureer Unified Storage Connector voor Forms Portal {#configure-usc-forms-portal}
-
-Nadat u de Azure Storage Configuration hebt gemaakt, configureert u de Unified Storage Connector voor Forms Portal met de volgende stappen:
+   Nadat u de Azure Storage Configuration hebt gemaakt, configureert u de Unified Storage Connector voor Forms Portal met de volgende stappen:
 
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Unified Storage Connector]** .
 
-   ![ Verenigde schakelaarOpslag ](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![ Verenigde schakelaarOpslag ](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
 
 1. Selecteer **[!UICONTROL Azure]** in de vervolgkeuzelijst **[!UICONTROL Storage]** in de sectie **[!UICONTROL Forms Portal]** .
-1. Specificeer de [ configuratieweg voor de Azure opslagconfiguratie ](#create-azure-storage-configuration) op het **[!UICONTROL Storage Configuration Path]** gebied.
+1. Geef het configuratiepad voor de Azure-opslagconfiguratie op in het veld **[!UICONTROL Storage Configuration Path]** .
 
-   ![ Verenigde schakelaarOpslag die ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png) plaatst
+   ![ Verenigde schakelaarOpslag die ](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"} plaatst
 
-1. Selecteer **[!UICONTROL Save]** en selecteer vervolgens **[!UICONTROL Publish]** om de configuratie te publiceren.
+1. Selecteer **[!UICONTROL Save]** .
 
-### 3. Maak regels om een adaptief formulier op te slaan als concept {#rule-to-save-adaptive-form-as-draft}
+>[!NOTE]
+>
+> Als u een andere opslagoptie dan Azure moet configureren, schrijft u vanuit uw officiële e-mailadres naar aem-forms-ea@adobe.com met uw gedetailleerde vereisten.
 
-Om een vorm als Ontwerp te bewaren, creeer a **sparen de regel van de Vorm** op een vormcomponent, zoals een knoop. Wanneer op de knop wordt geklikt, wordt de regel geactiveerd en wordt het formulier opgeslagen als concept. Voer de volgende stappen uit om **sparen de regel van de Vorm** op een knoopcomponent tot stand te brengen:
+Zodra u met succes de Schakelaar van de Opslag van de Azure en van de Verenigde Opslag voor het opslaan van de concepten en voorgelegde vormen hebt gevormd, voeg de **Concepten &amp; van de Verzending** component op de pagina van AEM Sites toe.
 
-1. Open in de instantie Auteur een adaptief formulier in de bewerkingsmodus.
-1. Van de linkerruit, uitgezochte ![ pictogram van Componenten ](assets/components_icon.png) en sleep de **[!UICONTROL Button]** component aan de vorm.
-1. Selecteer de **[!UICONTROL Button]** component en selecteer dan ![ Configure pictogram ](assets/configure_icon.png).
-1. Selecteer het pictogram **[!UICONTROL Edit Rules]** om de Regeleditor te openen.
-1. Selecteer **[!UICONTROL Create]** om de regel te configureren en te maken.
-1. In de **[!UICONTROL When]** sectie, wordt de uitgezochte **geklikt** en in de **[!UICONTROL Then]** sectie, selecteert **sparen Vorm** optie.
-1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
+## Hoe kunt u de component Concepten en verzendingen toevoegen aan een AEM Sites-pagina?
 
-![ creeer regel voor knoop ](/help/forms/assets/save-form-as-drfat-create-rule.png)
-
-Wanneer u voorproef een Aangepast Vorm, vult het uit, en klikt **sparen Vorm** knoop, wordt de vorm bewaard als ontwerp voor later gebruik.
-
-## Concepten en verzendingen om concepten op de AEM Sites-pagina weer te geven
-
-AEM Forms verstrekt de **de portalcomponent van Concepten &amp; van Verzending** uit de doos aan vertoning bewaarde vormen op de pagina&#39;s van AEM Sites. De {**component 0} Concepten &amp; van Verzending toont vormen die als concepten voor recentere voltooiing, evenals voorgelegde vormen worden bewaard.** Deze component biedt een persoonlijke ervaring voor elke aangemelde gebruiker door concepten en verzendingen weer te geven die betrekking hebben op de Adaptive Forms die door de gebruiker is gemaakt.
-
-U kunt de uit-van-de-doos componenten van het Portaal van Forms gebruiken om vormontwerpen op de pagina van AEM Sites weer te geven. Voer de volgende stappen uit om de **Concepten &amp; van Submissies** poortcomponent te gebruiken:
-
-1. [Concepten en verzenden Forms Portal-component inschakelen](#enable-component)
-2. [Concepten en verzendingen toevoegen aan AEM Sites-pagina](#Add-drafts-submissions-component)
-3. [Concepten en verzendingen configureren](#configure-drafts-submissions-component)
-
-### 1. Concepten en verzendingen inschakelen Forms Portal-component{#enable-component}
-
-Voer de volgende stappen uit om de component **[!UICONTROL Drafts & Submissions]** in het sjabloonbeleid in te schakelen:
+U kunt uit-van-de-doos componenten van Forms Portal gebruiken om concepten en bijdragen op de pagina van Plaatsen een lijst te maken. Voer de volgende stappen uit om de **Concepten &amp; Submissions** poortcomponent toe te voegen:
 
 1. Open de pagina van AEM Sites op een **geeft** wijze uit.
 1. Ga naar **[!UICONTROL Page Information]** > **[!UICONTROL Edit Template]**
-   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png) uit
+   ![ geef malplaatjebeleid ](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"} uit
 
 1. Klik **[!UICONTROL Policy]** en selecteer **[!UICONTROL Drafts & Submissions]** checkbox onder **[AEM de Naam van het Project van Archetype ] - Forms en Communicatie Portaal**.
 
-   ![ de Selectie van het Beleid ](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![ de Selectie van het Beleid ](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
 
 1. Klik op **[!UICONTROL Done]**.
+1. Open nu de AEM Sites-pagina opnieuw in de ontwerpmodus.
+1. Zoek de sectie in de pagina-editor waarin u de Forms Portal-component kunt toevoegen.
+1. Klik **toevoegen** pictogram. Het pictogram is een plusteken (+) waarmee u nieuwe componenten kunt toevoegen.
 
-Wanneer een portalcomponent is ingeschakeld, kunt u deze gebruiken in de auteurinstantie van uw AEM Sites-pagina.
+   Het klikken **voegt** pictogram toe toont een **Nieuwe de dialoogdoos van de Component van het Tussenvoegsel** die diverse componenten voor toevoeging toont.
 
-### 2. Voeg concepten en verzendingen toe aan AEM Sites-pagina{#Add-drafts-submissions-component}
+   >[!NOTE]
+   >
+   > U kunt ook de component slepen en neerzetten.
 
-U kunt Forms Portal maken en aanpassen op websites die zijn gemaakt met AEM door de portalcomponenten toe te voegen en te configureren. Zorg ervoor dat de [ componenten van Concepten &amp; van Verzending ](#enable-component) wordt toegelaten alvorens hen in de pagina van AEM Sites te gebruiken.
+1. Blader door de beschikbare componenten in het dialoogvenster en selecteer de gewenste component in de lijst. Bijvoorbeeld, selecteer de **componenten van Concepten &amp; van Verzending** van de lijst om de **Concepten &amp; van Verzending** Forms Portal component toe te voegen.
 
-Om een component toe te voegen, of sleep en laat vallen de component van **trekt &amp; de componentenruit van Verzending** aan de lay-outcontainer op de pagina, of selecteer het add pictogram op de lay-outcontainer en voeg de component van de **[!UICONTROL Insert New Component]** dialoog toe.
+   ![ voeg Ontwerp en de Component van de Verzending ](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"} toe
 
-![ voeg Ontwerp en de Component van de Verzending ](/help/forms/assets/save-form-as-draft-add-dns.png) toe
+Nu, vorm de eigenschappen van de **Concepten en de component van Verzending** volgens de vereisten.
 
-### 3. Concepten en verzendingen configureren {#configure-drafts-submissions-component}
+## Eigenschappen van de component Concepten en verzendingen configureren
 
-De **componenten van Concepten &amp; van Verzending** toont vormen die als ontwerp voor de voltooiing later en voorgelegde vormen worden bewaard. Om **Concepten &amp; Submissions** te vormen, voer de volgende stappen uit:
+U kunt de eigenschappen van de **Concepten &amp; Verzendingen** vormen:
 1. Selecteer de **componenten van Concepten &amp; van Verzending**.
 1. Klik ![ vormen pictogram ](assets/configure_icon.png) en de dialoogdoos verschijnt.
 1. Geef in het dialoogvenster **[!UICONTROL Drafts and Submissions]** het volgende op:
    * **Titel** om een component in een pagina van Plaatsen en door gebrek te identificeren, verschijnt de titel bovenop de component.
-   * **Type**: Om op de vormlijst als ontwerp of voorgelegde vormen te wijzen.
-   * **Lay-out**: Om de vormen van het lijstontwerp of voorgelegde vormen in kaart of lijstformaat te tonen.
+   * **Uitgezochte Type**: Om op de vormlijst als ontwerp of voorgelegde vormen te wijzen. Als u **Ontwerp Forms** kiest, worden de vormen bewaard als concepten getoond. Alternatief, die **voorgelegde Forms** selecteren toont de vormen die door het programma geopende gebruikers worden voorgelegd.
+   * **Lay-out**: Om de vormen van het lijstontwerp of voorgelegde vormen in het kaart of lijstformaat te tonen.
 
-   ](/help/forms/assets/save-form-as-draft-dns-properties.png) eigenschappen van het Ontwerp en van de Component van de Verzending ![
+   ](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"} eigenschappen van het Ontwerp en van de Component van de Verzending ![
 
-1. Klik **Gedaan**.
+## Formulieren configureren om op te slaan als concepten
 
-Wanneer **[!UICONTROL Select Type]** als **Ontwerp Forms** wordt geselecteerd, verschijnen de vormen die als concepten worden bewaard:
-![ pictogram Concepten ](assets/drafts-component.png)
+U kunt Adaptive Forms op de volgende twee manieren configureren om deze als concepten voor later gebruik op te slaan:
+* [Handeling door gebruiker](#user-action)
+* [Automatisch opslaan](#auto-save)
 
-Wanneer **[!UICONTROL Select Type]** als **Voorgelegde Forms** wordt geselecteerd, verschijnen de voorgelegde vormen:
+### Handeling door gebruiker
 
-![ het pictogram van Verzending ](assets/submission-listing.png)
+>[!NOTE]
+>
+> Zorg ervoor dat de [ versie van de Componenten van de Kern aan 3.0.24 of later ](https://github.com/adobe/aem-core-forms-components) wordt geplaatst om vormen als concepten te bewaren gebruikend **sparen de regel van de Vorm**.
 
-U kunt het formulier openen door op het desbetreffende formulier te klikken.
+Om een vorm als Ontwerp te bewaren, creeer a **sparen de regel van de Vorm** op een vormcomponent, zoals een knoop. Wanneer op de knop wordt geklikt, wordt de regel geactiveerd en wordt het formulier opgeslagen als concept. Voer de volgende stappen uit om a **sparen de regel van de Vorm** op een knoopcomponent tot stand te brengen:
 
-<!--
+1. Open een adaptief formulier in de bewerkingsmodus.
+1. Selecteer het **[!UICONTROL Edit Rules]** pictogram om de Redacteur van de Regel voor de **2} component van de Knoop {te openen.**
+1. Selecteer **[!UICONTROL Create]** om de regel voor knoop te vormen en tot stand te brengen.
+1. In de **[!UICONTROL When]** sectie, wordt de uitgezochte **geklikt** en in de **[!UICONTROL Then]** sectie, selecteert **sparen Vorm** optie.
+1. Selecteer **[!UICONTROL Done]** om de regel op te slaan.
 
-### Configure Search & Lister Component {#configure-search-lister-component}
+   ![ creeer regel voor knoop ](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
 
-The Search & Lister component is used to list adaptive forms on a page and to implement search on the listed forms. 
+Wanneer u voorproef een Aangepast Vorm, vult het uit, en klikt **sparen Vorm** knoop, wordt de vorm bewaard als ontwerp.
 
-![Search and Lister icon](assets/search-and-lister-component.png)
+### Automatisch opslaan
 
-To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Search and Lister] dialog opens.
+<span class="preview"> Dit artikel bevat inhoud over **Auto sparen** eigenschap, een pre-versieeigenschap. De pre-vrijlatingseigenschap is toegankelijk slechts door ons [ pre-vrijgavekanaal ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
-1. In the [!UICONTROL Display] tab, configure the following:
-    * In **[!UICONTROL Title]**, specify the title for the Search & Lister component. An indicative title enables the users perform quick search across the list of forms.
-    * From the **[!UICONTROL Layout]** list, select the layout to represent the forms in card or list format.
-    * Select **[!UICONTROL Hide Search]** and **[!UICONTROL Hide Sorting]** to hide the search and sort by features.
-    * In **[!UICONTROL Tooltip]**, provide the tooltip that appears when you hover over the component. 
-1. In the [!UICONTROL Asset Folder] tab, specify the location from where the forms are pulled and listed on the page. You can configure multiple folder locations.
-1. In the [!UICONTROL Results] tab, configure the maximum number of forms to display per page. The default is eight forms per page.
+>[!NOTE]
+>
+> Zorg ervoor dat de [ versie van de Componenten van de Kern aan 3.0.52 of later ](https://github.com/adobe/aem-core-forms-components) wordt geplaatst om vormen als concepten te bewaren gebruikend de auto sparen eigenschap.
 
-### Configure Link Component {#configure-link-component}
+U kunt ook een adaptief formulier zo configureren dat het automatisch wordt opgeslagen op basis van een gebeurtenis op basis van een tijd, zodat u zeker weet dat het formulier na de opgegeven duur wordt opgeslagen. Wanneer u [ de Poortcomponenten van Forms voor uw milieu ](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment) toelaat, **Auto sparen** tabel verschijnt in de containereigenschappen van Forms. U kunt de functie voor automatisch opslaan configureren voor een adaptief formulier:
 
-The link component enables you to provide links to an adaptive form on the page. To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Edit Link Component] dialog opens.
+1. Open in de auteur een adaptief formulier in de bewerkingsmodus.
+1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/assets/configure-icon.svg) pictogram en open het **[!UICONTROL Auto-Save]** lusje.
 
-1. In the [!UICONTROL Display] tab, provide the link caption and tooltip to ease identification of the forms represented by the link.
-1. In the [!UICONTROL Asset Info] tab, specify the repository path where the asset is stored. 
-1. In the [!UICONTROL Query Params] tab, specify the additional parameters in the key-value pair format. When the link is clicked, these additional parameters and passed along with the form.
+   ![ auto-sparen ](/help/forms/assets/auto-save.png){width="250" align="center"}
 
-## Configure Asynchronous Form Submission Using Adobe Sign {#configure-asynchronous-form-submission-using-adobe-sign}
+1. Schakel het selectievakje **[!UICONTROL Enable]** in om het formulier automatisch op te slaan.
+1. Vorm **[!UICONTROL Trigger]** als **Gebaseerde Tijd**, om de vorm <!--based on the occurrence of an event or--> na een specifiek tijdsinterval auto-sparen.
+1. Geef het tijdsinterval in **[!UICONTROL Auto save on this interval (In seconds)]** op om de duur in te stellen waarmee het automatisch opslaan van het formulier met het gedefinieerde interval wordt geactiveerd.
+1. Klik op **[!UICONTROL Done]**.
 
-You can configure to submit an adaptive form only when all the recipients have completed the signing ceremony. Follow the steps below to configure the setting using Adobe Sign.
+## Concepten/verzonden formulieren op de pagina Sites weergeven met de component Concepten en verzendingen
 
-1. In the author instance, open an Adaptive Form in the edit mode.
-1. From the left pane, select the Properties icon and expand the **[!UICONTROL ELECTRONIC SIGNTATURE]** option.
-1. Select **[!UICONTROL Enable Adobe Sign]**. Various configuration options display. 
-1. In the [!UICONTROL Submit the form] section, select the **[!UICONTROL after every recipient completes signing ceremony]** option to configure the Submit Form action, where the form is first sent to all the recipients for signing. Once all the recipients have signed the form, only then the form is submitted. 
+Om opgeslagen ontwerpen of voorgelegde vormen te bekijken, gebruik de **Concepten &amp; van Indieningen** de Poortcomponent van Forms.
+Wanneer **[!UICONTROL Select Type]** als **Concept Forms** in [ wordt geselecteerd vormt dialoog van de componenten Concepten &amp; van Verzending ](#configure-properties-of-the-drafts--submissions-component), verschijnen de vormen bewaard als concepten op de pagina van Plaatsen. U kunt de concepten openen door op de ellips (...) te klikken om het formulier in te vullen.
 
-## Save Adaptive Forms As Drafts {#save-adaptive-forms-as-drafts}
+![ pictogram Concepten ](assets/drafts-component.png){width="250" align="center"}
 
-You can save forms as Drafts for completing them later. There are two ways in which a form is saved as a draft:
+Wanneer **[!UICONTROL Select Type]** als **Voorgelegde Forms** in [ wordt geselecteerd vormt dialoog van de componenten van Concepten &amp; van Verzending ](#configure-properties-of-the-drafts--submissions-component), verschijnen de voorgelegde vormen. U kunt de verzonden formulieren weergeven, maar niet bewerken.
 
-* Create a "Save Form" rule on a form component, for example, a button. On clicking the button, the rule triggers and the form are saved a draft.
-* Enable Auto-Save feature, which saves the form as per the specified event or after a configured interval of time.
+![ het pictogram van Verzending ](assets/submission-listing.png){width="250" align="center"}
 
-### Create Rules to Save an Adaptive Form as Draft {#rule-to-save-adaptive-form-as-draft}
+U kunt de formulieren ook verwijderen door te klikken op de ellips (...) in de rechterbenedenhoek van het formulier.
 
-To create a "Save Form" rule on a form component, for example, a button, follow the steps below:
+## Volgende stappen
 
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select ![Components icon](assets/components_icon.png) and drag the [!UICONTROL Button] component to the form.
-1. Select the [!UICONTROL Button] component and then select the ![Configure icon](assets/configure_icon.png). 
-1. Select the [!UICONTROL Edit Rules] icon to open the Rule Editor. 
-1. Select **[!UICONTROL Create]** to configure and create the rule.
-1. In the [!UICONTROL When] section, select "is clicked" and in the [!UICONTROL Then] section, select the "Save Form" options.
-1. Select **[!UICONTROL Done]** to save the rule.
+In het volgende artikel, laat ons [ leren hoe te om verwijzingen naar vormen op de pagina van Plaatsen toe te voegen gebruikend de Component van Forms Portal van de Verbinding ](/help/forms/add-form-link-to-aem-sites-page.md).
 
-### Enable Auto-save {#enable-auto-save}
+## Verwante artikelen
 
-You can configure the auto-save feature for an adaptive form as follows:
-
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select the ![Properties icon](assets/configure_icon.png) and expand the [!UICONTROL AUTO-SAVE] option.
-1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
-* By default, the [!UICONTROL Adaptive Form Event] is set to "true", which implies that the form is auto-saved after every event.
-* In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
--->
+{{forms-portal-see-also}}
 
 ## Zie ook {#see-also}
 
 {{see-also}}
-
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
->* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
-
--->

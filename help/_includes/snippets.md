@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
+source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -128,6 +128,26 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 * [Een aangepaste functie maken voor een adaptief formulier op basis van kerncomponenten](/help/forms/custom-function-core-component-create-function.md)
 * [Voorbeelden van het ontwikkelen en gebruiken van een aangepaste functie](/help/forms/custom-function-core-components-use-cases.md)
 
+
+## Forms Portal{#forms-portal-see-also}
+
+* [Inleiding tot Forms Portal-componenten](/help/forms/configure-forms-portal.md)
+* [Formulieren weergeven op sitepagina](/help/forms/list-forms-on-sites-page.md)
+* [Uw formulieren opslaan als concepten](/help/forms/save-core-component-based-form-as-draft.md)
+* [Formulierkoppelingen toevoegen aan een sitepagina](/help/forms/add-form-link-to-aem-sites-page.md)
+
+
+## Cloud Manager IP Lijst van gewenste personen en front-end pijpleidingen {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>De front-end pijpleiding vereist dat de volgende IP Lijst van gewenste personen vooraf aan Cloud Manager wordt toegevoegd.
+>Indien nodig, [ voeg de IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) toe door het blok van hieronder adressen te kopiëren. Elk adres wordt gescheiden door een komma. Plak het blok in het **IP adres/CIDR.** gebied van **voeg IP de dialoogdoos van de Lijst van gewenste personen** toe. Plaats de curseur enkel na de eerste komma in de adreslijst en druk **binnengaan**. Sla de lijst op.
+>Om verstoring van het in werking stellen van de voorste-eindduplijn te vermijden, zorg ervoor dat deze IP Lijst van gewenste personen aan Cloud Manager *wordt toegevoegd alvorens* u pipleline toelaat.
+>
+>**Cloud Manager IP Lijst van gewenste personen**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
 
 ## Voeg een Lijst van gewenste personen van Cloud Manager IP en front-end pijpleidingen toe {#add-cm-allowlist-frontend-pipeline}
 
