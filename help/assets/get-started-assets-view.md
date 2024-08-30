@@ -4,9 +4,9 @@ description: Hoe te om tot, login ervaring van, gesteunde gebruiksgevallen van, 
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: d71107be2831bf00bff3856d7cd0e10818ec6be5
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Als u deel uitmaakt van verschillende organisaties, kunt u ook de organisatie wi
 Klik op [!UICONTROL Preferences] om de [!UICONTROL Experience Cloud preferences] -toets te wijzigen.
 
 ![ Voorkeur om donker en licht thema ](assets/theme-change.png) te schakelen
+
+>[!NOTE]
+>
+>Als u aan de mening van Assets navigeert en een `Network Error` bericht ziet, zorg ervoor dat u de instructies uitvoert die in [ worden vermeld het Middel van de Cross-Origin die (CORS) configuratie ](/help/headless/deployment/cross-origin-resource-sharing.md) artikel delen.
 
 ## [!DNL Assets View] gebruik gevallen {#use-cases}
 

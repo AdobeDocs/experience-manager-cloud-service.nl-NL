@@ -2,9 +2,10 @@
 title: Elementen in Experience Manager goedkeuren
 description: Leer hoe te om activa in  [!DNL Experience Manager] goed te keuren.
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ Als u de eigenschap wilt weergeven waaraan het veld **[!UICONTROL Review Status]
 
 ## Elementen goedkeuren {#approve-assets}
 
-U kunt elementen zowel in [!DNL Experience Manager] als in [!DNL Experience Manager Assets] goedkeuren. Voer de volgende stappen uit om elementen in [!DNL Experience Manager] goed te keuren:
+Voer de volgende stappen uit om elementen in [!DNL Experience Manager Admin view] goed te keuren:
 
 1. Selecteer de elementen en klik op **[!UICONTROL Properties]** in het bovenste deelvenster.
 1. Schuif omlaag naar **[!UICONTROL Review Status]** op het tabblad **[!UICONTROL Basic]** .
@@ -51,7 +52,7 @@ U kunt elementen zowel in [!DNL Experience Manager] als in [!DNL Experience Mana
 ## Elementen in bulk goedkeuren {#bulk-approve-assets}
 
 Stroomlijn uw workflow door snel meerdere middelen tegelijk goed te keuren. U kunt in bulk goedgekeurde activa goedkeuren om het goedkeuringsproces te versnellen, tijd te besparen en productiviteit te verbeteren.
-<br> volg deze stappen om bulkactiva in [!DNL Experience Manager] goed te keuren:
+<br> volg deze stappen om bulkactiva in [!DNL Experience Manager Admin view] goed te keuren:
 
 1. Maak een map in de ontwerpomgeving (https://author-pXXX-eYYY.adobeaemcloud.com). Vervang _XXX_ met uw programma identiteitskaart en _JJJ_ met milieu identiteitskaart van de Experience Manager.
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** .
@@ -102,4 +103,3 @@ Om levering URL voor een goedgekeurd middel binnen de bewaarplaats te kopiëren:
    >[!NOTE]
    >
    >De optie voor het kopiëren van de URL voor levering voor goedgekeurde middelen is alleen beschikbaar in de weergave Assets.
-
