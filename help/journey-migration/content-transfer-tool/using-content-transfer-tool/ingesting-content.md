@@ -4,9 +4,9 @@ description: Leer hoe u de Cloud Acceleration Manager gebruikt om inhoud van uw 
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
+source-wordcount: '2982'
 ht-degree: 1%
 
 ---
@@ -214,11 +214,20 @@ De beste praktijken wijzen erop dat als a **niet-Wipe** ingestie moet worden in 
 >abstract="Een veelvoorkomende oorzaak van een mislukte opname is dat de maximale grootte van eigenschapswaarden voor knooppunten wordt overschreden. Volg de documentatie, met inbegrip van de documentatie met betrekking tot het BPA-verslag, om deze situatie te verhelpen."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Migratievereisten"
 
-Eigenschapwaarden voor knooppunten die zijn opgeslagen in MongoDB, mogen niet groter zijn dan 16 MB. Als een nodewaarde de gesteunde grootte overschrijdt, ontbreekt de opname en het logboek zal een `BSONObjectTooLarge` fout bevatten en specificeert welke knoop het maximum overschrijdt. Dit is een MongoDB-beperking.
+Eigenschapwaarden voor knooppunten die zijn opgeslagen in MongoDB, mogen niet groter zijn dan 16 MB. Als een nodewaarde de gesteunde grootte overschrijdt, ontbreekt het opnemen en het logboek zal of bevatten:
+
+* een `BSONObjectTooLarge` -fout en geef op welk knooppunt het maximum heeft overschreden, of
+* a `BsonMaximumSizeExceededException` fout, die aangeeft dat er een knooppunt is dat waarschijnlijk Unicode-tekens bevat die de maximumgrootte overschrijden **
+
+Dit is een MongoDB-beperking.
 
 Zie de `Node property value in MongoDB` nota in [ Eerste vereisten voor het Hulpmiddel van de Overdracht van de Inhoud ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) voor meer informatie en een verbinding aan een hulpmiddel van Oak dat alle grote knopen kon helpen vinden. Als alle knooppunten met grote afmetingen zijn verholpen, voert u de extractie en inname opnieuw uit.
 
 Om deze beperking mogelijk te vermijden, stel de [ Analysator van Beste praktijken ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) op de bron AEM instantie in werking en herzie de bevindingen het voorstelt, met name [ &quot;Niet gestaafde Structuur van de Bewaarplaats&quot; (URS) ](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) patroon.
+
+>[!NOTE]
+>
+>](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versie 2.1.50+ van de Analysator van Beste praktijken van 0} zal over grote knopen rapporteren die unicode karakters bevatten die de maximumgrootte overschrijden. [ Zorg ervoor dat u de nieuwste versie uitvoert. In BPA-versies vóór 2.1.50 worden deze grote knooppunten niet geïdentificeerd en gerapporteerd. Deze knooppunten moeten afzonderlijk worden gedetecteerd met behulp van de hiervoor genoemde Oak-voorwaarde.
 
 ### Ingestie gestopt {#ingestion-rescinded}
 
