@@ -4,9 +4,9 @@ description: Meer informatie over de basisbeginselen en de beste werkwijzen van 
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3440'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 De grondbeginselen van codeontwikkeling zijn in AEM as a Cloud Service vergelijkbaar met de oplossingen AEM On Premise en Managed Services. Ontwikkelaars schrijven code en testen deze lokaal, wat vervolgens wordt doorgegeven aan externe omgevingen op AEM as a Cloud Service. Cloud Manager, een optioneel hulpprogramma voor het leveren van inhoud voor Managed Services, is vereist. Dit leveringshulpmiddel is nu het enige mechanisme voor het opstellen van code aan AEM as a Cloud Service dev, stadium, en productiemilieu&#39;s. Voor snelle eigenschapbevestiging en het zuiveren alvorens die eerder vermelde milieu&#39;s op te stellen, kan de code van een lokaal milieu aan a [ Snelle Milieu van de Ontwikkeling ](/help/implementing/developing/introduction/rapid-development-environments.md) worden gesynchroniseerd.
 
-De update van [ AEM versie ](/help/implementing/deploying/aem-version-updates.md) is altijd een afzonderlijke plaatsingsgebeurtenis van het duwen van [ douanecode ](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is omdat dat is wat het op de bovenkant wordt opgesteld. AEM versies die daarna plaatsvinden, die regelmatig voorkomen en automatisch worden toegepast. Ze zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantcode.
+De update van [ AEM versie ](/help/implementing/deploying/aem-version-updates.md) is altijd een afzonderlijke plaatsingsgebeurtenis van het duwen van [ douanecode ](#customer-releases). Op een andere manier bekeken, zouden de versies van de douanecode tegen de AEM versie moeten worden getest die op productie is omdat dat is wat het op de bovenkant wordt opgesteld. AEM versie-updates die daarna plaatsvinden (die vaak voorkomen en automatisch worden toegepast), zijn bedoeld om achterwaarts compatibel te zijn met de reeds geïmplementeerde klantencode.
 
 In de rest van dit document wordt beschreven hoe ontwikkelaars hun praktijken moeten aanpassen zodat ze zowel met de updates van de AEM as a Cloud Service-versie als met de updates van de klant werken.
 
