@@ -4,7 +4,7 @@ description: De lay-out en vormgeving van Adaptief Forms op verschillende appara
 feature: Adaptive Forms, Core Components
 keywords: Indeling van adaptief formulier op basis van kerncomponenten, verschillende indelingen voor formulieren, dynamische formulierindelingen AEM, AEM Cloud Service-formulierindelingen, formulierindelingstypen in AEM kerncomponenten, adaptieve formulierindelingen
 role: User, Developer, Admin
-source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
+source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -326,8 +326,6 @@ U kunt desgewenst ook de vereiste validaties voor de componenten toevoegen.
 ## Hoe te om een bestaande lay-out met een nieuwe lay-out te vervangen?
 
 U kunt een indeling van een formulier vervangen door een nieuwe indeling. Hierbij moet u wijzigen hoe componenten worden gerangschikt en weergegeven in een formulier.
-
-
 
 Voer de volgende stappen uit om de bestaande indeling van een formulier te vervangen:
 
