@@ -2,17 +2,19 @@
 title: Upload uw door uw merk goedgekeurde middelen naar  [!DNL Content Hub]
 description: Leer hoe u uw door een merk goedgekeurde middelen uploadt naar Content Hub
 role: User
-source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
+exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
+source-git-commit: 85fbbcf77bd5b2ef1a68454e2cf1d2202c8f90c4
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
 
-
 # Door een merk goedgekeurde middelen uploaden naar Content Hub {#upload-brand-approved-assets-content-hub}
 
 [ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen activa aan Content Hub of van lokaal dossiersysteem of de invoeractiva van OneDrive of de gegevensbronnen van de Dropbox toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of de gegevensbronnen OneDrive en Dropbox om de zoekmogelijkheden te verbeteren.
+
+De elementen die zijn gemarkeerd als `Approved` in Assets as a Cloud Service, zijn automatisch beschikbaar in Content Hub. Voor meer informatie, zie [ activa voor Content Hub ](/help/assets/approve-assets-content-hub.md) goedkeuren.
 
 Content Hub biedt u de volgende mogelijkheden om uw assetzoekopdracht verder te verbeteren:
 
@@ -72,3 +74,14 @@ Middelen toevoegen aan Content Hub vanaf OneDrive- of Dropbox-gegevensbronnen:
 
 Beheerders kunnen ook de verplichte en optionele velden configureren die worden weergegeven tijdens het uploaden van elementen, zoals de naam van een campagne, trefwoorden, kanalen enzovoort. Voor meer informatie, zie [ het gebruikersinterface van Content Hub ](configure-content-hub-ui-options.md#configure-upload-options-content-hub) vormen.
 
+## Middelen beheren die met Content Hub zijn geüpload {#manage-assets-uploaded-using-content-hub}
+
+[ de gebruikers van Content Hub met rechten om activa ](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) toe te voegen kunnen [ activa aan Content Hub ](/help/assets/upload-brand-approved-assets.md) of van lokaal dossiersysteem of de invoeractiva van OneDrive of de gegevensbronnen van de Dropbox toevoegen. Alle middelen worden op het hoogste niveau weergegeven in Content Hub, ongeacht de mapstructuur die beschikbaar is op uw lokale bestandssysteem of de gegevensbronnen OneDrive en Dropbox om de zoekmogelijkheden te verbeteren.
+
+De vertoning van activa die gebruikend Content Hub worden geupload hangt af van als u [ de auto-goedkeuringsknevel ](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) hebt toegelaten:
+
+* Als de schakeloptie **[!UICONTROL Auto-approval]** is ingeschakeld, zijn de elementen die u uploadt met Content Hub automatisch beschikbaar.
+
+* Als de schakeloptie **[!UICONTROL Auto-approval]** is uitgeschakeld, worden de elementen die u uploadt met Content Hub niet automatisch weergegeven. De middelen zijn beschikbaar in de `hydrated-assets` map van uw as a Cloud Service omgeving van Assets. Navigeer aan de omslag en [ bulkgeef ](#bulk-approve-assets-content-hub) het statuut van die activa `Approved` voor die activa uit om in Content Hub te tonen.
+
+![ Content Hub goedkeuringsproces ](/help/assets/assets/content-hub-approval.png)
