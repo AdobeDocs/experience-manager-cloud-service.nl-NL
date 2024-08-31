@@ -4,9 +4,9 @@ description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
+source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,29 @@ Tot de aanvullende eigenschappen behoren:
 
 >[!NOTE]
 >De sleutel van Edge moet als a [ geheim typeCloud Manager milieu variabele ](/help/operations/config-pipeline.md#secret-env-vars) worden gevormd, alvorens de configuratie die het van verwijzingen voorziet wordt opgesteld.
+
+### Veilig migreren om het risico van geblokkeerd verkeer te verminderen {#migrating-safely}
+
+Als uw plaats reeds levend is, oefen voorzichtigheid wanneer het migreren aan klant-geleide CDN aangezien een misconfiguration openbaar verkeer kan blokkeren; dit is omdat slechts de verzoeken met de verwachte x-AEM-Edge-Zeer belangrijke kopbalwaarde door Adobe CDN zullen worden goedgekeurd. Een benadering wordt geadviseerd wanneer een extra voorwaarde tijdelijk inbegrepen in de authentificatieregel is, die het ertoe brengt om het verzoek slechts te evalueren als een testkopbal wordt omvat:
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:  
+            - { reqProperty: tier, equals: "publish" }
+            - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+U kunt het volgende `curl` aanvraagpatroon gebruiken:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
+```
+
+Na het met succes testen, kan de extra voorwaarde worden verwijderd en de configuratie wordt opnieuw opgesteld.
 
 ## API-token wissen {#purge-API-token}
 
