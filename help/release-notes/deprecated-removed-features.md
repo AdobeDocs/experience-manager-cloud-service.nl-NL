@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2172'
 ht-degree: 0%
 
 ---
@@ -95,12 +95,6 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>Detectie-API van Sling gebruiken als alternatief</td>
     <td>2015</td>
     <td>verwijderd</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.settings</td>
-    <td>AEM as a Cloud Service biedt geen ondersteuning voor runmodi of toegang tot het bestandssysteem tijdens runtime. </td>
-    <td>05-10-20</td>
-    <td>Eind 2021</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
