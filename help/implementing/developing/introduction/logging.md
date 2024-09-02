@@ -4,9 +4,9 @@ description: Leer hoe te om het Registreren voor AEM as a Cloud Service te gebru
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2834'
 ht-degree: 0%
 
 ---
@@ -144,12 +144,13 @@ AEM de niveaus van het Logboek worden geplaatst per milieutype via configuratie 
 
 AEM Java-logboeken worden gedefinieerd als OSGi-configuratie en richten zich dus op specifieke AEM as a Cloud Service-omgevingen met behulp van runmode-mappen.
 
-Configureer Java-logboekregistratie voor aangepaste Java-pakketten via OSGi-configuraties voor de Sling LogManager-fabriek. Er zijn twee ondersteunde configuratie-eigenschappen:
+Configureer Java-logboekregistratie voor aangepaste Java-pakketten via OSGi-configuraties voor de Sling LogManager-fabriek. Er zijn drie ondersteunde configuratie-eigenschappen:
 
 | OSGi Configuration, eigenschap | Beschrijving |
 |---|---|
-| org.apache.sling.commons.log.names | De Java-pakketten waarvoor loginstructies moeten worden verzameld. |
-| org.apache.sling.commons.log.level | Het logniveau waarop de Java-pakketten moeten worden geregistreerd, opgegeven door org.apache.sling.commons.log.names |
+| `org.apache.sling.commons.log.names` | De Java-pakketten waarvoor loginstructies moeten worden verzameld. |
+| `org.apache.sling.commons.log.level` | Het logniveau waarop de Java-pakketten moeten worden geregistreerd, opgegeven door `org.apache.sling.commons.log.names` |
+| `org.apache.sling.commons.log.file` | Geef het doel voor de uitvoer op: `logs/error.log` |
 
 Het veranderen van andere Logmanager OSGi configuratieeigenschappen kan in beschikbaarheidskwesties in AEM as a Cloud Service resulteren.
 
@@ -163,6 +164,7 @@ Hieronder volgen voorbeelden van de aanbevolen logboekconfiguraties (met behulp 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -174,6 +176,7 @@ Hieronder volgen voorbeelden van de aanbevolen logboekconfiguraties (met behulp 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -185,6 +188,7 @@ Hieronder volgen voorbeelden van de aanbevolen logboekconfiguraties (met behulp 
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
