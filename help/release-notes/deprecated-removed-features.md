@@ -4,7 +4,7 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
+source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
 workflow-type: tm+mt
 source-wordcount: '2172'
 ht-degree: 0%
@@ -18,8 +18,7 @@ ht-degree: 0%
 >title="Verouderde en verwijderde functies in AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service heeft een implementatiemodel in de cloud. Bepaalde mogelijkheden en functies zijn vervangen door in de cloud geïntegreerde tegenhangers en op dit tabblad worden die functies weergegeven."
 
-
-Adobe evalueert voortdurend de productmogelijkheden, om oudere eigenschappen met modernere alternatieven te heruitvinden of te vervangen om de algemene waarde van de klant te verbeteren, altijd onder zorgvuldige overweging van achterwaartse verenigbaarheid. Aangezien [!DNL Adobe Experience Manager] als [!DNL Cloud Service] een implementatiemodel in de cloud biedt, zijn ook bepaalde mogelijkheden en functies vervangen door in de cloud geïntegreerde tegenhangers.
+Adobe evalueert constant productmogelijkheden om, in tijd, oudere eigenschappen opnieuw uit te vinden of te vervangen met modernere alternatieven om algemene klantenwaarde te verbeteren, altijd onder zorgvuldig onderzoek van achterwaartse verenigbaarheid. Aangezien [!DNL Adobe Experience Manager] als [!DNL Cloud Service] een implementatiemodel in de cloud biedt, zijn ook bepaalde mogelijkheden en functies vervangen door in de cloud geïntegreerde tegenhangers.
 
 Om de aanstaande verwijdering/vervanging van [!DNL Experience Manager] mogelijkheden mee te delen, zijn de volgende regels van toepassing:
 
