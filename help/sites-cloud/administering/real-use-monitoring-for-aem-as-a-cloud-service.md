@@ -4,9 +4,9 @@ description: Leer hoe u Real Use Monitoring (RUM) gebruikt om de digitale gebrui
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
+source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -34,11 +34,6 @@ Met RUM, worden de zeer belangrijke prestatiesmetriek van de aanvang van URL gev
 ## Wie kan van de Echte dienst van de Controle van het Gebruik profiteren? {#who-can-benefit-from-rum-service}
 
 AEM heeft RUM ontwikkeld om klanten en Adobe te helpen begrijpen hoe bezoekers met AEM sites communiceren. RUM kan worden gebruikt om prestatieproblemen te diagnostiseren en de doeltreffendheid van experimenten te meten. RUM behoudt de privacy van bezoekers door middel van steekproeven - slechts een klein deel van alle paginameningen wordt gecontroleerd - en geen persoonlijk identificeerbare informatie (PII) wordt verzameld.
-
-
-## Begrijp hoe de Echte dienst van de Controle van het Gebruik werkt {#understand-how-the-rum-service-works}
-
-AEM gebruikt RUM om klanten en Adobe te helpen begrijpen hoe de bezoekers met AEM plaatsen in wisselwerking staan. Het helpt hen prestatieskwesties diagnostiseren, en de doeltreffendheid van experimenten meten. RUM behoudt de privacy van bezoekers door middel van steekproeven - slechts een klein deel van alle paginameningen wordt gecontroleerd - en geen persoonlijk identificeerbare informatie (PII) wordt verzameld.
 
 ## Real Use Monitoring Service en privacy {#rum-service-and-privacy}
 
