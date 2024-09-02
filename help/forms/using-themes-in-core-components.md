@@ -3,11 +3,10 @@ title: Hoe kunnen we thema's maken en gebruiken in Adaptive Forms?
 description: Met thema's kunt u een adaptief formulier vormgeven en een visuele identiteit geven met behulp van Core Components. U kunt een thema delen voor elk gewenst aantal Adaptive Forms.
 keywords: Aangepaste formulieren met stijl Core Components. thema gebruiken in Core Components, aanpassen van vorm opmaken en thema's aanpassen
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -172,7 +171,7 @@ Voer de volgende instructies uit om een thema te klonen:
 
 #### 3. Een thema aanpassen {#customize-the-theme}
 
-U kunt afzonderlijke componenten aanpassen of wijzigingen op themaniveau aanbrengen met algemene variabelen van een thema. Wijzigingen in algemene variabelen zijn van invloed op alle afzonderlijke componenten. U kunt bijvoorbeeld algemene variabelen gebruiken om de randkleur te wijzigen van alle componenten van een adaptief formulier en een heldere vulkleur om CTA (Call to action) in te stellen met behulp van knopcomponent:
+U kunt afzonderlijke componenten aanpassen of wijzigingen op themaniveau aanbrengen met algemene variabelen van een thema. Wijzigingen in algemene variabelen zijn van invloed op alle afzonderlijke componenten. U kunt algemene variabelen bijvoorbeeld gebruiken om de randkleur te wijzigen van alle componenten van een adaptief formulier en een heldere vulkleur om CTA (Call to action) in te stellen met behulp van knopcomponent:
 
 * [Stijlen voor themaniveau instellen](#theme-customization-global-level)
 
@@ -428,11 +427,6 @@ De thema&#39;s Adaptief formulier worden gebruikt als onderdeel van een adaptiev
 * **Veranderend de lay-outbreedte van het containerpaneel**
 
   Het wordt niet aanbevolen de lay-outbreedte van het containervenster te wijzigen. Wanneer u de breedte van een containerdeelvenster opgeeft, wordt het statisch en wordt het niet aangepast aan verschillende weergaven.
-
-* **Gebruikend een vormredacteur of themaredacteur voor het werken met kopbal en footer**
-
-  Gebruik een themaeditor als u de kop- en voettekst wilt opmaken met opmaakopties zoals lettertypestijl, achtergrond en transparantie.
-Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals een logoafbeelding, de bedrijfsnaam in de koptekst en copyrightinformatie in de voettekst.
 
 ## Veelgestelde vragen {#faq}
 
