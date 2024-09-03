@@ -3,9 +3,9 @@ title: Implementeren  [!DNL Content Hub]
 description: Leer hoe u Content Hub kunt implementeren en activeren en gebruikers toegang kunt bieden met verschillende typen rechten (middelen uploaden, gebruikers van Adoben Express) en hoe u beheerdersrechten kunt bieden aan gebruikers.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
+source-git-commit: ea5ce2f443f1502a690b34cbf1b951ecf6aae9b2
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1471'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,29 @@ De verschillende privileges in Content Hub zijn onder meer:
 
 * [ de gebruikers van Content Hub ](#onboard-content-hub-users): De merkgoedgekeurde activa van de toegang op het portaal van Content Hub.
 
-* [ de Beheerders van Content Hub ](#onboard-content-hub-administrator): Toegang tot het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md) op Content Hub naast de toegang tot van merk-goedgekeurde activa, het uploaden van activa aan Content Hub, Adobe Express integratie om beelden uit te geven (als u Adobe Express rechten hebt).
+* [ de beheerders van Content Hub ](#onboard-content-hub-administrator): Toegang tot het [ Gebruikersinterface van de Configuratie ](/help/assets/configure-content-hub-ui-options.md) op Content Hub naast de toegang tot van merk-goedgekeurde activa, het uploaden van activa aan Content Hub, Adobe Express integratie om beelden uit te geven (als u Adobe Express rechten hebt).
 
 * [ de gebruikers van Content Hub met rechten om activa ](#onboard-content-hub-users-add-assets) toe te voegen: Mogelijkheid om [ activa aan Content Hub ](/help/assets/upload-brand-approved-assets.md) te uploaden naast de toegang tot van merk goedgekeurde activa op het portaal van Content Hub.
 
 * [ de gebruikers van Content Hub met rechten om activa aan nieuwe variaties ](#onboard-content-hub-users-remix-assets) opnieuw te mengen: [ de Integratie van de Adobe Express ](/help/assets/edit-images-content-hub.md) (als u Adobe Express rechten hebt) naast de toegang tot van merk goedgekeurde activa op het portaal van Content Hub.
 
 * [ de gebruikers van Experience Manager Assets ](#experience-manager-assets-users): Mogelijkheid om activa op Experience Manager Assets as a Cloud Service goed te keuren om die activa op Content Hub ter beschikking te stellen.
+
+De volgende tabel geeft een overzicht van de beschikbare Content Hub-gebruikerstypen, de rechten waarover deze beschikken en de productprofielen die zijn vereist om deze rechten te verkrijgen:
+
+| Gebruikersrol | Content Hub-gebruikers | Content Hub-gebruikers met rechten om elementen toe te voegen | Content Hub-gebruikers met rechten om middelen opnieuw te mixen | Content Hub-beheerders |
+|---------------|----------|----------|-------------------------|---|
+| **Mogelijkheden** |
+| Gebruik merkgoedgekeurde middelen op de Content Hub-portal | ✓ | ✓ | ✓ | ✓ |
+| Elementen uploaden vanaf Content Hub Portal | - | ✓ | ✓ | ✓ |
+| Afbeeldingen bewerken met Adobe Express-integratie | - | - | ✓ | - |
+| De Content Hub-configuratie-interface openen | - | - | - | ✓ |
+| **Gebruiker moet in deze productprofielen (Admin Console) zijn** |
+| AEM > Delivery Instance > AEM Assets Limited Users | ✓ | ✓ | ✓ | ✓ |
+| AEM > Production Author Instance > AEM Users | - | ✓ | ✓ | - |
+| AEM > Productie-auteur-instantie > AEM | - | - | - | ✓ |
+| Adobe Express | - | - | ✓ | - |
+| **Meer informatie** | Zie [ de gebruikers van Content Hub ](#onboard-content-hub-users) | Zie [ de gebruikers van Content Hub met rechten om activa ](#onboard-content-hub-users-add-assets) toe te voegen | Zie [ de gebruikers van Content Hub met rechten om activa aan nieuwe variaties opnieuw te mengen ](#onboard-content-hub-users-remix-assets) | Zie [ de beheerders van Content Hub ](#onboard-content-hub-administrator) |
 
 ## Stap 1: Content Hub for Experience Manager Assets inschakelen met Cloud Manager {#enable-content-hub}
 
@@ -53,7 +69,7 @@ Om toegang te krijgen tot het Content Hub-portaal, moeten beheerders eerst Conte
 
 1. Klik op **[!UICONTROL Update]**.
 
-Content Hub is nu ingeschakeld voor Experience Manager Assets as a Cloud Service.
+Content Hub is nu ingeschakeld voor Experience Manager Assets as a Cloud Service. Nadat u Content Hub hebt ingeschakeld in een productieomgeving, kunt u deze niet op een zelfbedieningsmanier uitschakelen.
 
 >[!NOTE]
 >
