@@ -1,7 +1,7 @@
 ---
-source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -155,3 +155,9 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >
 >Als u gebruikt-of van plan bent te gebruiken-front-end pijpleiding om plaatsen te ontwikkelen, moet de Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
 >Zie [ Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+
+## Werken met Dynamic Media {#work-with-dynamic-media}
+
+>[!TIP]
+>
+>Ben je nieuw voor Dynamic Media? Voor snel, overzicht op hoog niveau van Dynamic Media, zie [ Werk met Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md).

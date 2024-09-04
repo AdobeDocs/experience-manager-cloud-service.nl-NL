@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '2334'
 ht-degree: 0%
@@ -20,6 +20,8 @@ ht-degree: 0%
 
 <!-- hide: yes
 hidefromtoc: yes -->
+
+{{work-with-dynamic-media}}
 
 Het configureren van **[!UICONTROL Dynamic Media General Settings]** is alleen beschikbaar als:
 
@@ -95,7 +97,7 @@ Bij het aanmaken van accounts verschaft Adobe Dynamic Media automatisch de toege
 
 Met dit filter kunt u een verscherpingsfiltereffect op de uiteindelijke gedownsampelde afbeelding perfectioneren. Hiermee kunt u de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd.
 
-Voor het effect Onscherp masker worden dezelfde opties gebruikt als voor het filter Onscherp masker van Photoshop. In tegenstelling tot wat de naam suggereert, is Onscherp masker een verscherpingsfilter.
+Voor het effect Onscherp masker worden dezelfde opties gebruikt als voor het filter Onscherp masker in Photoshop. In tegenstelling tot wat de naam suggereert, is Onscherp masker een verscherpingsfilter.
 
 | Onscherpe maskeropties | Beschrijving |
 | --- | --- |

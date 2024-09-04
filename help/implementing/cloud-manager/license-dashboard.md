@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '925'
 ht-degree: 0%
 
 ---
@@ -63,11 +63,14 @@ Elke sectie vat samen wat beschikbaar is en hoe het, als bij allen wordt gebruik
 >
 >Leren hoe te om uw rechten van de Adobe over uw volledige organisatie van Admin Console te beheren, zie het [ overzicht van de Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
 
-## Gebruiksgegevens weergeven {#view-usage-details}
+## Gebruiksdetails weergeven {#view-usage-details}
 
-De **het gebruiksdetails van de Mening** knoop geeft toegang tot het 2} venster van de Details van het Gebruik van de gekozen oplossing **.** In dit venster vindt u een gedetailleerde uitsplitsing, inclusief grafieken, van het gebruik van uw oplossing. Hoe dat gebruik wordt gemeten, hangt af van de gekozen oplossing.
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-### Gebruiksgegevens sites {#sites-usage-details}
+De **knoop van de het gebruikdetails van de Mening** in het gebied van de Vergunning van Cloud Manager verstrekt een gedetailleerde uitsplitsing van uw huidige middelgebruik. Wanneer geklikt, opent het een rapport of dashboard dat belangrijke metriek met betrekking tot uw vergunning toont. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Deze functionaliteit helpt u te controleren en ervoor te zorgen dat u binnen de grenzen van uw contract blijft terwijl u inzichten voor betere middelplanning en optimalisering aanbiedt.
+
+### Gebruiksgegevens voor sites {#sites-usage-details}
 
 Het **venster van de het gebruikdetails van Plaatsen**, stelt grafieken voor die een overzicht van het gebruik van uw vergunningen geven van Plaatsen die op [ worden gebaseerd inhoudsverzoeken.](#what-is-a-content-request)
 
@@ -77,27 +80,28 @@ De linkerkant van het venster stelt een cirkeldiagram voor dat de contractverdel
 
 De rechterzijde van het venster geeft een vlakgrafiek weer waarin het gebruik per programma in de loop van de tijd voor het geselecteerde contractjaar wordt uitgesplitst. Een muisaanwijzer toont een pop-up met details per programma voor het geselecteerde punt in de tijd.
 
-### Assets-gebruiksgegevens {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-Het **venster van de gebruiksdetails van Assets**, stelt grafieken voor die een overzicht geven van het gebruik van uw die vergunningen van Assets op [ worden gebaseerd opslag ](#storage) en [ standaardgebruikers.](#standard-users) Selecteer het juiste tabblad om te schakelen tussen de weergaven.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
-Voor zowel opslag als standaardgebruikersmeningen, kunt u het **Type van Milieu** dropdown gebruiken om de mening tussen productie, stadium, en ontwikkelomgevingen van een knevel te voorzien.
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
-#### Opslag {#storage}
+#### Storage {#storage}
 
-![ het venster van de gebruiksdetails van Assets voor opslag ](assets/assets-usage-details-storage.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-De linkerkant van het venster stelt een cirkeldiagram voor dat de contractverdeling voor het contractjaar toont dat in het **het contractjaar van de Mening** dropdown wordt geselecteerd.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-De rechterzijde van het venster geeft een vlakgrafiek weer waarin het gebruik per programma in de loop van de tijd voor het geselecteerde contractjaar wordt uitgesplitst. Een muisaanwijzer toont een pop-up met details per programma voor het geselecteerde punt in de tijd.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-#### Standaardgebruikers {#standard-users}
+#### Standard Users {#standard-users}
 
-![ het venster van de gebruiksdetails van Assets voor standaard-gebruikers ](assets/assets-usage-details-standard-users.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-De linkerkant van het venster stelt een cirkeldiagram voor dat de contractverdeling voor het contractjaar toont dat in het **het contractjaar van de Mening** dropdown wordt geselecteerd.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-De rechterzijde van het venster geeft een vlakgrafiek weer waarin het gebruik per programma in de loop van de tijd voor het geselecteerde contractjaar wordt uitgesplitst. Een muisaanwijzer toont een pop-up met details per programma voor het geselecteerde punt in de tijd.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## Veelgestelde vragen {#faq}
 
