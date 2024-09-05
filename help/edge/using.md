@@ -4,9 +4,9 @@ description: Leer hoe AEM as a Cloud Service kan worden gebruikt met Edge Delive
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 16531cf084ad1b9619f4dffc6d028c7df4002ff5
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Eenvoudigheid is het leidend beginsel van de Adobe. Begin met op documenten geba
 
 ## Authoring {#authoring-edge}
 
-Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U kunt de auteur kiezen met behulp van op documenten gebaseerde ontwerpen of WYSIWYG-ontwerpen met behulp van de Universal Editor.
+Met Edge Delivery Services is ontwerpen eenvoudig, snel en flexibel. U kunt de auteur kiezen met behulp van op documenten gebaseerde ontwerpen of met behulp van WYSIWYG-authoring met behulp van de Universal Editor.
 
 Gelieve te zien het document [ Authoring Inhoud voor Edge Delivery Services ](/help/edge/wysiwyg-authoring/authoring.md) voor meer informatie.
 
@@ -44,10 +44,4 @@ Gelieve te zien het document [ het Publiceren Inhoud voor Edge Delivery Services
 
 Edge Delivery Services zijn gebaseerd op het concept van blokken. AEM wordt geleverd met een uitgebreide bibliotheek met vooraf gedefinieerde blokken, die kan worden uitgebreid om aan uw projectbehoeften te voldoen. De code voor de projecten van Edge Delivery Services wordt beheerd in GitHub.
 
-Gelieve te zien het document [ Begonnen Begeleidende Gids van de Ontwikkelaar Begonnen voor WYSIWYG Authoring met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) voor meer informatie.
-
-## Bestaande AEM projecten {#existing-projects}
-
-U hoeft niet te wachten tot een nieuw AEM project van Edge Delivery Services profiteert. Edge Delivery Services kunnen worden geïntegreerd in uw bestaande AEM-project, zodat u de prestatiewinst direct kunt benutten.
-
-Gelieve te zien het document [ Gebruikend Edge Delivery Services met Bestaande AEM Projecten ](/help/edge/wysiwyg-authoring/existing-projects.md) voor meer informatie.
+Gelieve te zien de document [ Begonnen Gids van de Ontwikkelaar Begonnen voor het Authoring van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) voor meer informatie.

@@ -1,20 +1,20 @@
 ---
-title: Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG-authoring met Edge Delivery Services
-description: Deze gids zal u aan de slag met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor WYSIWYG inhoud authoring krijgen.
+title: Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG Authoring met Edge Delivery Services
+description: Deze gids zal u aan de slag met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor de inhoud van WYSIWYG authoring krijgen.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
 
 
-# Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG-authoring met Edge Delivery Services {#edge-dev-getting-started}
+# Aan de slag-handleiding voor ontwikkelaars voor WYSIWYG Authoring met Edge Delivery Services {#edge-dev-getting-started}
 
-Deze gids zal u aan de slag met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor WYSIWYG inhoud authoring krijgen.
+Deze gids zal u aan de slag met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor de inhoud van WYSIWYG authoring krijgen.
 
 ## Vereisten {#prerequisites}
 
@@ -23,15 +23,6 @@ Voordat u met deze handleiding begint, dient u al op de hoogte te zijn van de ba
 * U hebt de [ zelfstudie van de Dienst van Edge Delivery voltooid.](/help/edge/developer/tutorial.md)
 * U hebt toegang tot een [ zandbak van AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * U hebt [ de Universele Redacteur op het zelfde zandbakmilieu toegelaten.](/help/implementing/universal-editor/getting-started.md)
-
-## Kies de rechtereditor {#editor-choice}
-
-AEM biedt twee verschillende inhoudeditors en de keuze van wie u wilt gebruiken hangt af van uw situatie.
-
-* **Universele Redacteur** - dit zou de standaardkeus voor nieuwe plaatsen moeten zijn.
-* **AEM de Redacteur van de Pagina** - dit zou voor een bestaande migratie van AEM Sites aan Edge Delivery Services moeten worden gekozen.
-
-Deze gids concentreert zich op AEM projecten op Edge Delivery Services gebruikend de Universele Redacteur. Zie het document [ Gebruikend Edge Delivery Services met AEM ](/help/edge/using.md) voor meer details bij het kiezen van de juiste redacteur en de migratie van bestaande AEM plaatsen aan Edge Delivery Services.
 
 ## Basisconcepten bij het ontwikkelen voor Edge Delivery Services {#core-concepts}
 
@@ -131,7 +122,7 @@ Nu u een project GitHub hebt, moet u een nieuwe AEM tot stand brengen plaats die
 >
 >Als u uw site wilt bewerken met de Universal Editor, moet u een op chroom gebaseerde browser gebruiken.
 
-1. Download recentste WYSIWYG creatie met het malplaatje van de Edge Delivery Services plaats van GitHub in [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases` ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Download het recentste WYSIWYG auteursrecht met het malplaatje van de Edge Delivery Services plaats van GitHub in [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases` ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Teken binnen aan uw het auteursinstantie van AEM as a Cloud Service en navigeer aan de console van Plaatsen en tik of klik **creeer** -> **Plaats van malplaatje**.
 
@@ -141,7 +132,7 @@ Nu u een project GitHub hebt, moet u een nieuwe AEM tot stand brengen plaats die
 
    ![ het Invoeren malplaatjes ](assets/edge-dev-getting-started/site-templates.png)
 
-1. Upload het schrijven WYSIWYG met het malplaatje van de Edge Delivery Services plaats dat u van GitHub downloadde.
+1. Upload het WYSIWYG auteursrecht met het malplaatje van de Edge Delivery Services plaats dat u van GitHub downloadde.
 
    * De sjabloon mag slechts eenmaal worden geüpload. Na het uploaden kan het opnieuw worden gebruikt om extra sites te maken.
 
@@ -199,4 +190,4 @@ Gelieve te zien de gids [ Creërend Blokken Instrumented voor gebruik met de Uni
 
 >[!TIP]
 >
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor het schrijven WYSIWYG met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

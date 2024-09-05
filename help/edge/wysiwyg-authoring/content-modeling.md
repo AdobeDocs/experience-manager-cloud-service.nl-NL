@@ -1,12 +1,12 @@
 ---
 title: Inhoud modelleren voor WYSIWYG Authoring met Edge Delivery Services Projecten
-description: Leer hoe het modelleren van inhoud voor WYSIWYG Authoring met Edge Delivery Services projecten en hoe te om uw eigen inhoud te modelleren.
+description: Leer hoe contentmodellering werkt voor WYSIWYG Authoring met Edge Delivery Services projecten en hoe u uw eigen inhoud kunt modelleren.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 8d9ae4c7512198bd3e01a881665621d3ecbcd98d
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2242'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Inhoud modelleren voor WYSIWYG Authoring met Edge Delivery Services Projecten {#content-modeling}
 
-Leer hoe het modelleren van inhoud voor WYSIWYG Authoring met Edge Delivery Services projecten en hoe te om uw eigen inhoud te modelleren.
+Leer hoe contentmodellering werkt voor WYSIWYG Authoring met Edge Delivery Services projecten en hoe u uw eigen inhoud kunt modelleren.
 
 ## Vereisten {#prerequisites}
 
-De projecten die WYSIWYG Authoring met Edge Delivery Services gebruiken erven de meerderheid van de mechanica van een ander Edge Delivery Services project, onafhankelijk van de inhoudsbron of [ auteursmethode.](/help/edge/wysiwyg-authoring/authoring.md)
+De projecten die WYSIWYG Authoring met Edge Delivery Services gebruiken erven de meerderheid van de mechanica van een ander Edge Delivery Services-project, onafhankelijk van de inhoudsbron of [ auteursmethode.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Voordat u begint met het modelleren van inhoud voor uw project, moet u eerst de volgende documentatie lezen.
 
@@ -26,7 +26,7 @@ Voordat u begint met het modelleren van inhoud voor uw project, moet u eerst de 
 * [Markeringen, secties, blokken en automatische blokkering](/help/edge/developer/markup-sections-blocks.md)
 * [Blokverzameling](/help/edge/developer/block-collection.md)
 
-Het is van essentieel belang dat u deze concepten begrijpt om te komen tot een aansprekend inhoudsmodel dat op een bronagnostische manier werkt. Dit document bevat details over de mechanismen die specifiek zijn geïmplementeerd voor WYSIWYG-authoring.
+Het is van essentieel belang dat u deze concepten begrijpt om te komen tot een aansprekend inhoudsmodel dat op een bronagnostische manier werkt. Dit document bevat informatie over de mechanismen die specifiek zijn geïmplementeerd voor WYSIWYG-authoring.
 
 ## Standaardinhoud {#default-content}
 
@@ -39,17 +39,17 @@ In AEM, wordt deze inhoud uitgevoerd als componenten met zeer eenvoudige, vooraf
 * **Beeld**: Source, beschrijving
 * **Knoop**: Tekst, titel, url, type (gebrek, primair, secundair)
 
-Het model van deze componenten maakt deel uit van [ Boilerplate voor het schrijven WYSIWYG met Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+Het model van deze componenten maakt deel uit van [ Boilerplate voor WYSIWYG creatie met Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## Blokken {#blocks}
 
-Blokken worden gebruikt om rijkere inhoud met specifieke stijlen en functionaliteit te maken. In tegenstelling tot de standaardinhoud, vereisen de blokken extra semantiek. De blokken kunnen met [ componenten in de AEM paginaredacteur worden vergeleken.](/help/implementing/developing/components/overview.md)
+Blokken worden gebruikt om rijkere inhoud met specifieke stijlen en functionaliteit te maken. In tegenstelling tot de standaardinhoud, vereisen de blokken extra semantiek.
 
 Blokken zijn in wezen stukken inhoud die door JavaScript zijn versierd en met een stijlblad zijn opgemaakt.
 
 ### Blokmodeldefinitie {#model-definition}
 
-Wanneer het gebruiken van WYSIWYG creatie met Edge Delivery Services, moet de inhoud van blokken uitdrukkelijk worden gemodelleerd om de auteur de interface te verstrekken om inhoud tot stand te brengen. In principe moet u een model maken, zodat de ontwerpgebruikersinterface weet welke opties op basis van het blok aan de auteur moeten worden voorgesteld.
+Wanneer u WYSIWYG-authoring met Edge Delivery Services gebruikt, moet de inhoud van blokken expliciet worden gemodelleerd om de auteur de interface te bieden voor het maken van inhoud. In principe moet u een model maken, zodat de ontwerpgebruikersinterface weet welke opties op basis van het blok aan de auteur moeten worden voorgesteld.
 
 Het [`component-models.json` ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) dossier bepaalt het model van blokken. De velden die in het componentmodel worden gedefinieerd, blijven behouden als eigenschappen in AEM en worden weergegeven als cellen in de tabel waaruit een blok bestaat.
 
@@ -326,7 +326,7 @@ Met de [ mechanica van verklaarde blokstructuur, ](#block-structure) is het moge
 
 Vroeg in elk project, moet een inhoudsmodel zorgvuldig worden overwogen voor elk blok. De functie moet niet op de hoogte zijn van de inhoudsbron en de ervaring die u hebt opgedaan om auteurs de mogelijkheid te geven om te schakelen of te combineren terwijl ze blokimplementaties en -stijlen opnieuw gebruiken. Meer details en algemene begeleiding kunnen in [ het Model van David worden gevonden (neem 2).](https://www.aem.live/docs/davidsmodel) Specifieker, bevat de [ blokinzameling ](/help/edge/developer/block-collection.md) een uitgebreide reeks inhoudsmodellen voor specifieke gebruiksgevallen van gemeenschappelijke gebruikersinterfacepatronen.
 
-Voor WYSIWYG creatie met Edge Delivery Services, roept dit de vraag op hoe te om een dwingende semantische inhoudsmodel te dienen wanneer de informatie met vormen wordt authored die uit veelvoudige gebieden in plaats van het uitgeven semantische prijsverhoging in-context zoals rijke teksten worden samengesteld.
+Voor WYSIWYG-authoring met Edge Delivery Services roept dit de vraag op hoe een aansprekend semantisch inhoudsmodel kan worden gebruikt wanneer de informatie wordt geschreven met formulieren die uit meerdere velden bestaan, in plaats van semantische opmaak in context te bewerken, zoals RTF-tekst.
 
 U kunt dit probleem oplossen door drie methoden te gebruiken waarmee u een aansprekend inhoudsmodel kunt maken:
 
@@ -650,13 +650,13 @@ Hiertoe maakt u een componentmodel met de id `page-metadata` .
 
 ## Volgende stappen {#next-steps}
 
-Nu u weet hoe te om inhoud te modelleren, kunt u blokken voor uw eigen Edge Delivery Services met WYSIWYG auteursproject tot stand brengen.
+Nu u weet hoe te om inhoud te modelleren, kunt u blokken voor uw eigen Edge Delivery Services met het auteursproject van WYSIWYG tot stand brengen.
 
 Zie het document [ Creërend Blokken Instrumented voor gebruik met de Universele Redacteur ](/help/edge/wysiwyg-authoring/create-block.md) om te leren hoe te tot blokken die voor gebruik met de Universele Redacteur in WYSIWYG authoring met de projecten van Edge Delivery Services tot stand brengen.
 
-Als u reeds vertrouwd met het creëren van blokken bent, te zien gelieve de document [ Begonnen Gids van de Ontwikkelaar die voor het schrijven WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) wordt begonnen om u met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoudsauthoring op te halen.
+Als u reeds vertrouwd met het creëren van blokken bent, te zien gelieve de document [ Begonnen Gids van de Ontwikkelaar Begonnen voor het auteursrecht van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) om u aan de slag te krijgen met een nieuwe plaats van Adobe Experience Manager gebruikend Edge Delivery Services en de Universele Redacteur voor inhoud authoring.
 
 >[!TIP]
 >
->Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor het schrijven WYSIWYG met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>Voor een analyse van begin tot eind van het creëren van een nieuw project van Edge Delivery Services dat voor WYSIWYG creatie met AEM as a Cloud Service als inhoudsbron wordt toegelaten, gelieve te bekijken [ dit AEM webinar GEMs.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 
