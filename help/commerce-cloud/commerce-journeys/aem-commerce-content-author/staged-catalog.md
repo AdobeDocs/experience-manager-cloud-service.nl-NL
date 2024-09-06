@@ -4,9 +4,9 @@ description: Leer hoe u ervaringen met gefaseerde productcatalogi beheert.
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ Dit artikel bouwt voort op die grondbeginselen.
 
 Dit document helpt u te begrijpen hoe u de ervaring van de productcatalogus kunt beheren op basis van gefaseerde productgegevens en AEM Launches. Vaak moeten auteurs zich tegelijkertijd voorbereiden op een volgende productintroductie (bijvoorbeeld een nieuwe kledingcollectie). Dit vereist toegang tot gefaseerde productgegevens (nog niet live) en de mogelijkheid om de inhoud voor te bereiden. Deze nieuwe inhoud wordt live weergegeven met de introductie van het product.
 
-    >[!NOTE] 
-    > 
-    >Deze eigenschap is slechts beschikbaar met Adobe Commerce of de Uitgave van de Wolk en derdeschakelaars die op teken-gebaseerde authentificatie steunen. Zie [Getting Started] (https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) voor meer informatie.
+>[!NOTE]
+>
+>Deze functie is alleen beschikbaar bij Adobe Commerce of Cloud Edition en connectors van derden die tokenverificatie ondersteunen. Zie [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) voor extra informatie.
 
 Eerst, zien wij hoe de auteurs tot gefaseerde productgegevens met CIF kunnen toegang hebben.
 
@@ -45,9 +45,9 @@ U kunt nu door de catalogus bladeren met de gegevens in het werkgebied. Als u ee
 
 ![ stadium plp ](assets/staged-plp.png)
 
-    >[!NOTE] 
-    > 
-    >Omnissearch heeft geen context en retourneert dus alleen live productcatalogusgegevens 
+>[!NOTE]
+>
+>Omnissearch heeft geen context en retourneert dus alleen live productcatalogusgegevens
 
 ## AEM starten {#launches}
 

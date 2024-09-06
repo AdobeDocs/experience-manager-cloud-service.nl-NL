@@ -4,9 +4,9 @@ description: Leer hoe u op efficiënte wijze ervaringen met betrekking tot hande
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Deze kiezer kan door de catalogusstructuur bladeren om de categorie te zoeken.
 
 ![ component Carousel zonder selectie ](../assets/authoring/carousel_component_without_selection.png)
 
-Het configuratiedialoogvenster van deze component vereist 1 : n-categorieën. CIF gebruikt de UID /-id als de categorie-id. Auteurs kunnen de id handmatig invoeren of op het mappictogram klikken om de categoriekiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster dat de component bevat de naam van de geselecteerde categorie weergegeven.
+Het configuratiedialoogvenster van deze component vereist 1 : n-categorieën. CIF gebruikt de UID / ID als de categorie-id. Auteurs kunnen de UID handmatig invoeren of op het mappictogram klikken om de categoriekiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster dat de component bevat de naam van de geselecteerde categorie weergegeven.
 
 ![ component Carousel met selectie ](../assets/authoring/carousel_component_with_selection.png)
 
@@ -71,9 +71,9 @@ CIF productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden we
 
 ![ RTE ](../assets/authoring/RTE.png)
 
-    >[!NOTA] 
-    > 
-    > als zowel de categorie als het product wordt geselecteerd, wordt het product genomen.
+>[!NOTE]
+>
+> Als zowel de categorie als het product wordt geselecteerd, wordt het product genomen.
 
 Hierdoor wordt een koppeling voor plaatsaanduidingen gemaakt die wordt vervangen door een echte koppeling wanneer de pagina wordt weergegeven.
 
