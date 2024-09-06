@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
+source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,11 @@ ht-degree: 0%
 
 Ontdek hoe de Controle van de Ervaring uw plaatsingsproces bevestigt, die ervoor zorgt dat de veranderingen basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO voldoen. Het verstrekt een duidelijke en informatieve dashboardinterface om deze metriek te volgen.
 
->[!NOTE]
->
->Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
->
->Voor details op de bestaande eigenschap van de Controle van de Ervaring voor AEM as a Cloud Service, zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-testing.md).
-
 ## Overzicht {#overview}
 
 De Controle van de ervaring bevestigt het plaatsingsproces en de hulp zorgt ervoor dat de veranderingen worden opgesteld:
 
-1. Voldoe aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, SEO (de Optimalisering van de Motor van het Onderzoek), en PWA (de Progressieve App van het Web).
+1. Voldoe aan basislijnnormen voor prestaties, toegankelijkheid, beste praktijken, en SEO (de Optimalisering van de Motor van het Onderzoek).
 
 1. Breng geen regressies aan.
 
@@ -88,7 +82,7 @@ De Experience Audit is standaard beschikbaar voor productiepijpleidingen. Het ka
 
 De resultaten van de Controle van de Ervaring worden voorgesteld in de **testende fase van het Stadium** van de productiepijpleiding via de [ pagina van de de uitvoeringspijplijn van de productiepijplijn ](/help/implementing/cloud-manager/deploy-code.md).
 
-![ Dashboard in de pijpleiding ](assets/experience-audit-dashboard.jpg)
+![ Dashboard in de pijpleiding ](assets/experience-audit-dashboard.png)
 
 De Controle van de ervaring verstrekt de mediane Emissiescore van Google voor de [ gevormde pagina&#39;s ](#configuration) en het verschil in score aan het vorige aftasten.
 
@@ -139,9 +133,17 @@ Het verslag is opgesplitst in twee gebieden:
 
 #### Paginascore — trend {#trend}
 
-Door gebrek, is de geselecteerde mening voor **de scores van de Pagina — trend** **mediaanscores** voor **Laatste 6 maanden**.
+Door gebrek, is de geselecteerde mening voor **scores van de Pagina — trend** **mediaanscores** voor **Vorig jaar**.
 
-Gebruik **Uitgezochte** en **drop-down van de Mening** bij de bovenkant en de bodem van de grafiekknop om pagina-specifieke details en verschillende tijdkaders, respectievelijk te selecteren. Klik **updatetrend** bij de bovenkant van de grafiek om de selecties toe te passen en de grafiek te verfrissen.
+U kunt de trends voor specifieke categorieën Lighthouse weergeven door op de categorienaam in de legenda te klikken.
+
+![ Keuze Trend ](assets/experience-audit-trend-selectable.png)
+
+Gebruik **Uitgezochte** drop-down bij de bovenkant van de grafiek om pagina-specifieke details te selecteren, en de **Mening** en **Trekker** drop-down bij de bodem om verschillende tijdkaders en het trekkertype te kiezen, respectievelijk.
+
+De **drop-down Mening** biedt de mogelijkheid om een vooraf ingesteld tijdkader, of een douaneinterval voor een specifiekere mening te selecteren.
+
+![ Mening van de Trend ](assets/experience-audit-trend-view.png)
 
 Wanneer u de muis over het diagram beweegt, wordt knopinfo weergegeven met de waarden voor de categorieën van Google Lighthouse op bepaalde tijdpunten.
 
@@ -164,13 +166,13 @@ De **Recommendations** sectie toont een gezamenlijke reeks inzichten. Door gebre
 
 ![ Recommendations ](assets/experience-audit-recommendations.png)
 
-Klik op het chevron voor een aanbeveling om details over het pictogram weer te geven.
+Klik op een aanbeveling om details ervan weer te geven.
 
 ![ details van de Aanbeveling ](assets/experience-audit-recommendations-details.png)
 
-Indien beschikbaar, bevatten de uitgebreide aanbevelingen details ook het percentage van het effect van de aanbevelingen, helpen nadruk op de meest impactful veranderingen.
+Indien beschikbaar, bevatten de uitgebreide aanbevelingen details ook het percentage van het effect van de aanbevelingen, helpen nadruk op de meest impactful veranderingen. Daarnaast kunnen uitgebreide aanbevelingen relevante AEM documentatiekoppelingen en tips bevatten die u kunnen begeleiden bij het implementeren van de voorgestelde oplossingen.
 
-Klik de **verbinding van meningspagina&#39;s** in de detailsmening om de pagina&#39;s te zien waarop de aanbeveling van toepassing is.
+Klik **zie pagina** verbinding in de detailmening om de pagina&#39;s te zien waarop de aanbeveling van toepassing is.
 
 ![ Pagina&#39;s voor de aanbevelingsdetails ](assets/experience-audit-details-pages.png)
 
@@ -222,7 +224,7 @@ Als [ pagina&#39;s u ](#configuration) vormde om worden gecontroleerd niet besch
 
 De pijpleiding toont een uitbreidbare foutensectie om de relatieve wegen URL te bekijken het niet kon toegang hebben.
 
-![ Kwesties die door de Controle van de Ervaring worden ontmoet ](assets/experience-audit-issues.jpg)
+![ Kwesties die door de Controle van de Ervaring worden ontmoet ](assets/experience-audit-issues.png)
 
 Als het bekijken van het volledige rapport, worden de details getoond in de **[Scanresultaten van de Controle van de Ervaring](#results)** sectie, die ook uitzetbaar is.
 
