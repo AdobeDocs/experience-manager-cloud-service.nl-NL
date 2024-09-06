@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -59,10 +59,10 @@ Met behulp van deze referenties kunt u een lokale kopie van de opslagplaats klon
 
 ## Toegang tot gegevens opslagplaats vanuit het venster Opslagplaatsen {#repositories-window}
 
-Een **knoop van Info van de Reactie van de Toegang** is ook beschikbaar in de toolbar van het [**Venster van Bewaarplaatsen**.In ](managing-repositories.md) wordt dezelfde informatie weergegeven over de toegang tot opslagruimten met beheerde Adoben.
+Een **knoop van Info van de Reactie van de Toegang** is ook beschikbaar in de toolbar van het [**venster van Bewaarplaatsen** ](managing-repositories.md). Het toont de zelfde informatie over de toegang tot van Adobe-beheerde bewaarplaatsen.
 
 ## Een toegangswachtwoord intrekken {#revoke-password}
 
-U kunt een toegangswachtwoord op elk ogenblik intrekken. Om dit te doen, gelieve [ een steunkaartje voor dit verzoek tot stand te brengen.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+U kunt een toegangswachtwoord op elk ogenblik intrekken. Om dit te doen, [ creeer een steunkaartje voor dit verzoek ](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support).
 
 Het kaartje zal met hoge prioriteit worden behandeld en moet binnen één dag worden ingetrokken.

@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
 * Apache Maven 3.9.4 is geïnstalleerd.
-   * Adobe adviseert gebruikers [ hun Geweven bewaarplaatsen om HTTPS in plaats van HTTP bij te gebruiken.](#https-maven)
+   * De Adobe adviseert gebruikers [ hun Geweven bewaarplaatsen bij te werken om HTTPS in plaats van HTTP ](#https-maven) te gebruiken.
 * De geïnstalleerde Java-versies zijn Oracle JDK 11.0.22 en Oracle JDK 8u401.
 * **BELANGRIJK**: Door gebrek, wordt de `JAVA_HOME` milieuvariabele geplaatst aan `/usr/lib/jvm/jdk1.8.0_401` die Oracle JDK 8u401 bevat. *_Dit gebrek zou voor AEM Projecten van de Wolk moeten worden met voeten getreden om JDK 11_* te gebruiken. Zie [ Plaatsend de Geweven sectie van de Versie JDK ](#alternate-maven-jdk-version) voor meer details.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn.
@@ -32,7 +32,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Andere pakketten kunnen bij bouwstijltijd zoals die in de sectie [ wordt beschreven worden geïnstalleerd die de Extra Pakketten van het Systeem installeren.](#installing-additional-system-packages)
+* Andere pakketten kunnen bij bouwstijltijd zoals die in de sectie [ wordt beschreven worden geïnstalleerd die de Extra Pakketten van het Systeem ](#installing-additional-system-packages) installeert.
 * Elke build wordt uitgevoerd in een ongerepte omgeving; de constructiecontainer bewaart geen status tussen executies.
 * Maven wordt altijd uitgevoerd met de volgende drie opdrachten.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
@@ -46,7 +46,7 @@ Cloud Manager bouwt en test uw code gebruikend een gespecialiseerde bouwstijlmil
 
 ## Via HTTPS gemaakte opslagplaatsen {#https-maven}
 
-Cloud Manager [ versie 2023.10.0 ](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [ Gemaakt versienota&#39;s worden geschetst.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [ versie 2023.10.0 ](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [ Gemaakt versienota&#39;s ](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291) worden geschetst.
 
 Als gevolg van deze beveiligingsuitbreiding kunnen sommige gebruikers problemen ondervinden tijdens de constructiestap, met name wanneer ze artefacten downloaden van Geweven opslagplaatsen die onveilige HTTP-verbindingen gebruiken.
 

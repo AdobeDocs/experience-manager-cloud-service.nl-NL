@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 0%
@@ -102,11 +102,11 @@ Om de configuratie van de full-stack de productiepijplijn van de codeproductie t
 
 1. Verstrek wegen die in de Controle van de Ervaring moeten worden omvat.
 
-   * Zie het document [ Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) voor details.
+   * Zie het document [ Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) voor details.
 
 1. Klik **sparen** om uw pijpleiding te bewaren.
 
-De wegen die voor de Controle van de Ervaring worden gevormd worden voorgelegd aan de dienst en worden geëvalueerd volgens de prestaties, de toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests wanneer de pijpleiding loopt. Zie [ Begrijpend de Resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer details.
+De wegen die voor de Controle van de Ervaring worden gevormd worden voorgelegd aan de dienst en worden geëvalueerd volgens de prestaties, de toegankelijkheid, SEO (de Optimalisering van de Motor van het Onderzoek), beste praktijken, en PWA (Progressieve App van het Web) tests wanneer de pijpleiding loopt. Zie [ Begrijpend de Resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md) voor meer details.
 
 De pijpleiding wordt bewaard en u kunt uw pijpleidingen ](managing-pipelines.md) op de **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** nu beheren.[
 

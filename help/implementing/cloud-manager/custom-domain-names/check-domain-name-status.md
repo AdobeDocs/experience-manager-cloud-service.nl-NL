@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Leer hoe u kunt bepalen of uw aangepaste domeinnaam is geverifieerd door Cloud M
 
 U moet aan deze vereisten voldoen voordat u de status van uw domeinnaam in Cloud Manager kunt controleren.
 
-* U moet eerst een verslag TXT voor uw douanedomein toevoegen zoals die in het document [ wordt beschreven Toevoegend een Verslag TXT.](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+* U moet eerst een verslag TXT voor uw douanedomein toevoegen zoals die in het document [ wordt beschreven Toevoegend een Verslag TXT ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md).
 
 ## De status van uw aangepaste domeinnaam controleren {#how-to}
 
@@ -41,7 +41,7 @@ Het statusdetail wordt weergegeven. Uw douanedomein is klaar om te worden gebrui
 
 >[!NOTE]
 >
->Cloud Manager zal automatisch verificatie teweegbrengen wanneer u **** op de verificatiestap van **selecteert creeer de Add tovenaar van het Domein van de Douane** wanneer [ toevoegend een nieuwe naam van het douanedomein aan Cloud Manager.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) Voor volgende controles moet u actief het pictogram Verifiëren opnieuw selecteren naast de status.
+>Cloud Manager zal automatisch verificatie teweegbrengen wanneer u **** op de verificatiestap van **selecteert creeer de tovenaar van het Domein van de Douane** wanneer [ toevoegend een nieuwe naam van het douanedomein aan Cloud Manager ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). Voor verdere controles, moet u actief selecteren opnieuw verifieert pictogram naast de status.
 
 ## Verificatiestatus begrijpen {#statuses}
 

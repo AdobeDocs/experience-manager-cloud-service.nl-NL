@@ -4,9 +4,9 @@ description: Leer hoe u uw git-opslagruimten in Cloud Manager maakt, weergeeft e
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -71,17 +71,17 @@ Cloud Manager steunt beide bewaarplaatsen die door Adobe (**worden beheerd de Be
 
 ## Repo-info openen {#repo-info}
 
-Wanneer het bekijken van uw bewaarplaatsen in het **** venster van Bewaarplaatsen {, kunt u de details op bekijken hoe te tot Adobe-geleide bewaarplaatsen programmatically toegang te hebben door te tikken of de **knoop van Info van de Reparatie van de Toegang** in de toolbar te klikken.
+Wanneer het bekijken van uw bewaarplaatsen in het **** venster van Bewaarplaatsen {, kunt u de details op bekijken hoe te tot Adobe-geleide bewaarplaatsen programmatically toegang te hebben door de **knoop van Info van de Reparatie van de Toegang** in de toolbar te klikken.
 
 ![ informatie van de Bewaarplaats ](assets/repo-info.png)
 
-Het **venster van Info van de Bewaarplaats** opent met de details. Voor meer informatie bij de toegang tot van bewaarplaats informatie, zie gelieve het document [ Toegang hebbend tot de Informatie van de Bewaarplaats.](accessing-repos.md)
+Het **venster van Info van de Bewaarplaats** opent met de details. Voor meer informatie bij de toegang tot van bewaarplaats informatie, zie het document [ Toegang tot de Informatie van de Bewaarplaats ](accessing-repos.md).
 
 ## Branches controleren / Project maken {#check-branches}
 
 De **Tak van de Controle / leidt de actie van het Project** voert twee functies afhankelijk van de staat van de bewaarplaats uit.
 
-* Als de bewaarplaats nieuw-gecreeerd is, leidt de actie tot een steekproefproject dat op [ wordt gebaseerd het AEM projectarchetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Als de bewaarplaats nieuw-gecreeerd is, leidt de actie tot een steekproefproject dat op [ wordt gebaseerd het AEM projectarchetype ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Als de gegevensopslagplaats reeds het steekproefproject heeft gecreeerd, controleert het de staat van de bewaarplaats en zijn takken en meldt terug als het steekproefproject reeds bestaat.
 
 ![ de bijwerkingsacties van de Controle ](assets/check-branches.png)

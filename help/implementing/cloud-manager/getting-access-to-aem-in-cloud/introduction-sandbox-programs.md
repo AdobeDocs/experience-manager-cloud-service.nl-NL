@@ -1,34 +1,37 @@
 ---
 title: Inleiding tot Sandbox-programma's
-description: Leer welke sandboxprogramma's verschillen van productieprogramma's.
+description: Leer welke sandboxprogramma's zijn en hoe ze verschillen van productieprogramma's.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
+source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
 
 
-# Inleiding tot Sandbox-programma&#39;s {#sandbox-programs}
+# Inleiding tot sandboxprogramma&#39;s {#sandbox-programs}
 
-Leer welke sandboxprogramma&#39;s verschillen van productieprogramma&#39;s.
+Leer welke sandboxprogramma&#39;s zijn en hoe ze verschillen van productieprogramma&#39;s.
 
 ## Inleiding {#introduction}
 
 Een zandbakprogramma wordt typisch gecreeerd om ten behoeve van opleiding, lopende demo&#39;s, enablement, of het bewijs van concepten (POCs) te dienen en daarom niet bedoeld om levend verkeer te vervoeren.
 
-Een zandbakprogramma is één van de twee soorten programma&#39;s beschikbaar in AEM Cloud Service, andere die a [ productieprogramma zijn.](introduction-production-programs.md) zie [ Begrijpend Programma&#39;s en de Types van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) om meer over programmatypes te leren.
+Een zandbakprogramma is één van de twee soorten programma&#39;s beschikbaar in AEM Cloud Service, andere die a [ productieprogramma ](introduction-production-programs.md) zijn. Zie [ Begrijpend Programma&#39;s en de Types van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) om meer over programmatypes te leren.
 
 ## Automatisch maken {#auto-creation}
 
-Sandboxprogramma&#39;s maken automatisch ontwerp mogelijk. Wanneer u een sandboxprogramma maakt, wordt Cloud Manager automatisch:
+Sandboxprogramma&#39;s maken automatisch ontwerp mogelijk. Wanneer u [ een zandbakprogramma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) creeert, automatisch Cloud Manager:
 
-* Hiermee voegt u AEM Sites en AEM Assets toe als oplossingen in uw programma.
-* Plaatst omhoog een opslagplaats van de projectgit met een steekproefproject dat op het [ wordt gebaseerd AEM Archetype van het Project.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* Hiermee voegt u AEM Sites, Assets en Edge Delivery Services als standaardoplossingen toe aan uw programma.
+
+  ![ Uitgezochte oplossingen en toe:voegen-ons voor een zandbak ](assets/sandbox-solutions-add-ons.png)
+
+* Plaatst omhoog een opslagplaats van de projectgit met een steekproefproject dat op [ wordt gebaseerd AEM Archetype van het Project ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Maakt een ontwikkelomgeving.
 * Creeert een niet-productiepijpleiding die aan de ontwikkelomgeving opstelt.
 
@@ -36,51 +39,16 @@ Een sandboxprogramma heeft slechts één ontwikkelomgeving.
 
 ## Beperkingen en voorwaarden {#limitations}
 
-Omdat ze niet voor levend verkeer bedoeld zijn, hebben sandboxprogramma&#39;s bepaalde beperkingen en voorwaarden voor hun gebruik, waardoor ze van productieprogramma&#39;s worden onderscheiden.
+Omdat ze niet voor levend verkeer bedoeld zijn, hebben sandboxprogramma&#39;s bepaalde beperkingen en voorwaarden voor hun gebruik, waardoor ze zich onderscheiden van productieprogramma&#39;s.
 
-### Geen actief verkeer {#live-traffic}
-
-De programma&#39;s van zandbak zijn niet bedoeld om levend verkeer te dragen en zijn daarom niet onderworpen aan [ verbintenissen van AEM as a Cloud Service.](https://www.adobe.com/legal/service-commitments.html)
-
-### Geen automatische schaling {#auto-scaling}
-
-De milieu&#39;s die in een zandbakprogramma worden gecreeerd worden niet gevormd voor auto-schrapen. Daarom zijn deze omgevingen niet geschikt voor het testen van prestaties of belasting.
-
-### Geen aangepaste domeinen of IP-Lijsten van gewenste personen {#ip-allow}
-
-[ de domeinen van de Douane ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) en [ IP lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) zijn niet beschikbaar in zandbakprogramma&#39;s.
-
-### Geen extra Publish-regio&#39;s {#additional-publish-regions}
-
-[ extra publiceer gebieden ](/help/operations/additional-publish-regions.md) zijn niet beschikbaar in zandbakprogramma&#39;s.
-
-### Nr. 99,99% SLA {#999-sla}
-
-[ 99.99% SLA ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) is niet op zandbakprogramma&#39;s van toepassing.
-
-### Geen geavanceerde netwerken {#advanced-networking}
-
-[ Geavanceerde voorzien van een netwerkeigenschappen ](/help/security/configuring-advanced-networking.md) (bijvoorbeeld, self-serve levering van VPN, niet-standaardhavens, specifieke IP adressen van de uitgang, etc.) zijn niet beschikbaar in zandbakprogramma&#39;s.
-
-### Handmatige AEM {#updates}
-
-AEM updates worden niet automatisch doorgegeven aan sandboxprogramma&#39;s, maar kunnen handmatig worden toegepast op de omgevingen in uw sandboxprogramma.
-
-* Een handupdate kan slechts worden in werking gesteld wanneer het gerichte milieu een behoorlijk gevormde pijpleiding heeft.
-* Een handmatige update van een productie- of testomgeving werkt automatisch de andere bij. De Production+Stage-omgeving moet zich op dezelfde AEM bevinden.
-
-Zie [ AEM versie updates ](/help/implementing/deploying/aem-version-updates.md) voor meer details.
-
-Zie [ Bijwerkend Milieu ](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) leren hoe te om een milieu bij te werken.
-
-### Sluimerstand en verwijdering {#hibernation}
-
-De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genummerd. Sandbox-omgevingen worden verwijderd na zes opeenvolgende maanden van hibernatie.
-
-Zie [ Sluimerende en De-hibernating Zandbakmilieu&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) voor meer details over hoe te om milieu&#39;s en automatische zandbakschrapping te ontruimen.
-
-### Geen technische ondersteuning {#no-support}
-
-Aangezien een sandboxprogramma doorgaans wordt gemaakt voor trainingsdoeleinden, het uitvoeren van demo&#39;s, activering of concepttest (POC&#39;s), is technische ondersteuning niet beschikbaar voor problemen die worden ervaren in een sandboxprogramma.
-
-Als u problemen ondervindt bij het maken en beheren van uw sandboxprogramma&#39;s, kunt u dit alsnog doen met technische ondersteuning.
+| Beperking/voorwaarde | Beschrijving |
+| --- | --- |
+| Geen live verkeer | De programma&#39;s van zandbak zijn niet bedoeld om levend verkeer te dragen en zijn daarom niet onderworpen aan [ verbintenissen van AEM as a Cloud Service ](https://www.adobe.com/legal/service-commitments.html). |
+| Geen automatische schaling | De milieu&#39;s die in een zandbakprogramma worden gecreeerd worden niet gevormd voor auto-schrapen. Daarom zijn deze omgevingen niet geschikt voor het testen van prestaties of belasting. |
+| Geen aangepaste domeinen of IP-Lijsten van gewenste personen | [ de domeinen van de Douane ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) en [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) zijn niet beschikbaar in zandbakprogramma&#39;s. |
+| Geen publicatiegebieden meer | [ extra publiceer gebieden ](/help/operations/additional-publish-regions.md) zijn niet beschikbaar in zandbakprogramma&#39;s. |
+| Nr. 99,99% SLA | [ 99.99% SLA ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) is niet op zandbakprogramma&#39;s van toepassing. |
+| Geen geavanceerde netwerken | [ Geavanceerde voorzien van een netwerkeigenschappen ](/help/security/configuring-advanced-networking.md) (bijvoorbeeld, self-serve levering van VPN, niet-standaardhavens, specifieke IP adressen van de uitgang, etc.) zijn niet beschikbaar in zandbakprogramma&#39;s. |
+| Geen automatische AEM updates | AEM updates worden niet automatisch doorgegeven aan sandboxprogramma&#39;s, maar kunnen handmatig worden toegepast op de omgevingen in uw sandboxprogramma.<br>・ Een handmatige update kan alleen worden uitgevoerd wanneer de beoogde omgeving een correct geconfigureerde pijplijn heeft.<br>・ Een handmatige update van een productie- of testomgeving werkt automatisch de andere bij. De Production+Stage-omgeving moet zich op dezelfde AEM bevinden.<br> zie [ AEM versie updates ](/help/implementing/deploying/aem-version-updates.md) voor meer details.<br> zie [ Bijwerkend Milieu ](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) leren hoe te om een milieu bij te werken. |
+| Geen technische ondersteuning | Aangezien een sandboxprogramma doorgaans wordt gemaakt voor trainingsdoeleinden, het uitvoeren van demo&#39;s, activering of concepttest, is technische ondersteuning niet beschikbaar voor problemen die worden ervaren in een sandboxprogramma.<br> als u problemen ervaart die tot uw zandbakprogramma&#39;s leiden, zijn deze kwesties binnen het werkingsgebied van technische steun. |
+| Sluimerstand en verwijdering | De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genummerd. Sandbox-omgevingen worden verwijderd na zes opeenvolgende maanden van hibernatie.<br> zie [ Sluipende en Sneeuwende Milieu&#39;s van Sandbox ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) voor meer details over hoe te om milieu&#39;s en automatische zandbakschrapping te ontruimen. |

@@ -5,7 +5,7 @@ exl-id: d441de29-af41-4d3e-9155-531af9702841
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%
@@ -29,13 +29,13 @@ U moet aan deze vereisten voldoen voordat u een TXT-record toevoegt.
 
 * U moet uw domeinhost of -registrar identificeren als u dit nog niet weet.
 * U moet de DNS verslagen voor het domein van uw organisatie kunnen uitgeven, of de aangewezen persoon kunnen contacteren die kan.
-* U moet een naam van het douanedomein zoals die in het document [ wordt beschreven eerst toevoegen een Naam van het Domein van de Douane.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* U moet een naam van het douanedomein zoals die in het document [ wordt beschreven eerst toevoegen een Naam van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 ## Een TXT-record toevoegen voor verificatie {#verification}
 
 Er wordt een TXT-record toegevoegd als onderdeel van de verificatie van een aangepaste domeinnaam die in Cloud Manager moet worden gebruikt.
 
-1. U moet een naam van het douanedomein zoals die in het document [ wordt beschreven eerst toevoegen een Naam van het Domein van de Douane.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. U moet een naam van het douanedomein zoals die in het document [ wordt beschreven eerst toevoegen een Naam van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 1. Wanneer op het **lusje van de Verificatie** van **voeg de dialoog van de Naam van het Domein** toe, toont Cloud Manager de naam en TXT waarde om voor controle te gebruiken. Deze waarde kopiëren.
 
@@ -45,7 +45,7 @@ Er wordt een TXT-record toegevoegd als onderdeel van de verificatie van een aang
 
 1. Voeg `_aemverification.[yourdomainname]` als **Naam** van de waarde toe en voeg precies de waarde TXT toe aangezien het in **verschijnt voeg de dialoog van de Naam van het Domein** toe.
 
-   * Zie de [ voorbeelden in de volgende sectie.](#examples)
+   * Zie de [ voorbeelden in de volgende sectie ](#examples).
 
 1. Sla de TXT-record op uw domeinhost op.
 

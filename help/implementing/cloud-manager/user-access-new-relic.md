@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 0%
@@ -109,7 +109,7 @@ Voer de volgende stappen uit om uw account als New Relic-gebruiker te activeren.
 
 1. New Relic stuurt je een e-mail met een link om het account te bevestigen.
 
-Als u geen bevestigingse-mail van New Relic ontvangt, zie [ het oplossen van problemensectie.](#troubshooting)
+Als u geen bevestigingse-mail van New Relic ontvangt, zie [ het oplossen van problemensectie ](#troubshooting).
 
 ## New Relic One openen {#accessing-new-relic}
 
@@ -159,7 +159,7 @@ Als u als gebruiker van New Relic One zoals die in de sectie [ wordt beschreven 
 
 1. New Relic stuurt je een e-mail met een link om het account te bevestigen.
 
-Als u het aanmeldingsproces voltooit en niet aan uw rekening wegens e-mail of wachtwoordfoutenmeldingen kan aanmelden, registreer een steunkaartje als [ Admin Console.](https://adminconsole.adobe.com/)
+Als u het aanmeldingsproces voltooit en niet aan uw rekening wegens e-mail of wachtwoordfoutenmeldingen kan aanmelden, registreer een steunkaartje als [ Admin Console ](https://adminconsole.adobe.com/).
 
 Als je geen e-mail van New Relic ontvangt:
 
@@ -172,7 +172,7 @@ Als je geen e-mail van New Relic ontvangt:
 Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperkingen:
 
 * Er kunnen maximaal 30 gebruikers worden toegevoegd. Als het maximumaantal gebruikers is bereikt, verwijdert u gebruikers om nieuwe gebruikers toe te voegen.
-* De gebruikers die aan New Relic worden toegevoegd zijn van het type **Beperkt**, zie [ de documentatie van New Relic voor details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuen%20who,change)
+* De gebruikers die aan New Relic worden toegevoegd zijn van het type **Beperkt**, zie [ de documentatie van New Relic voor details ](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuen%20who,change).
 * AEM as a Cloud Service biedt alleen de New Relic One APM-oplossing en biedt geen ondersteuning voor waarschuwingen, logboekregistratie of API-integratie.
 
 >[!NOTE]
@@ -181,7 +181,7 @@ Voor het toevoegen van gebruikers aan New Relic One gelden de volgende beperking
 >
 >Volg de zelfde stappen in [ activeer Uw sub-Rekening van New Relic One ](#activate-sub-account) sectie van dit document om uw sub-rekening van New Relic One opnieuw te activeren.
 
-Voor meer hulp of extra begeleiding op het dienstenaanbod van New Relic One voor uw Programma van AEM as a Cloud Service, open een steunkaartje via het [ AEM Portaal van de Steun.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
+Voor meer hulp of extra begeleiding op het dienstenaanbod van New Relic One voor uw Programma van AEM as a Cloud Service, open een steunkaartje via het [ AEM Portaal van de Steun ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Veelgestelde vragen over New Relic One {#faqs}
 
@@ -203,7 +203,7 @@ Opmerking:
 
 ### Verstuurt de Adobe waarschuwingsberichten van New Relic One? {#alerting-new-relic}
 
-Adobe biedt New Relic One alleen toegang voor observatiedoeleinden en maakt er geen gebruik van voor klantwaarschuwingen of interne operationele waarschuwingen. De berichten voor om het even welke incidenten worden verzonden gebruikend [ profielen van het gebruikersbericht.](/help/journey-onboarding/notification-profiles.md)
+Adobe biedt New Relic One alleen toegang voor observatiedoeleinden en maakt er geen gebruik van voor klantwaarschuwingen of interne operationele waarschuwingen. De berichten voor om het even welke incidenten worden verzonden gebruikend [ profielen van het gebruikersbericht ](/help/journey-onboarding/notification-profiles.md).
 
 ### Wie heeft toegang tot de gegevens van de New Relic One Cloud Service? {#access-new-relic-cloud}
 

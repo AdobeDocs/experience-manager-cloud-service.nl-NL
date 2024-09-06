@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Leer hoe AEM projecten met Maven en de normen worden gebouwd u moet waarnemen wa
 
 Om met Cloud Manager succesvol te bouwen en op te stellen, moeten AEM projecten aan de volgende richtlijnen voldoen:
 
-* De projecten moeten worden gebouwd gebruikend [ Apache Maven.](https://maven.apache.org)
+* De projecten moeten worden gebouwd gebruikend [ Apache Maven ](https://maven.apache.org).
 * Er moet een `pom.xml` -bestand aanwezig zijn in de hoofdmap van de it-opslagplaats. Dit bestand van `pom.xml` kan verwijzen naar zoveel submodules (die op hun beurt weer andere submodules kunnen hebben, enzovoort) als dat nodig is.
 * U kunt verwijzingen naar extra bewaarplaatsen van het Artefact toevoegen Maven in uw `pom.xml` dossiers.
    * De toegang tot [ wachtwoord-beschermde artefactrepositories ](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.

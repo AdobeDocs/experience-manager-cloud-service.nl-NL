@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
+source-git-commit: 2bf129d763fcad024eb3799cdf2a97bdbc2472c5
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5586'
 ht-degree: 3%
 
 ---
@@ -105,6 +105,7 @@ ht-degree: 3%
    + Opmerkingen bij de release voor Cloud Manager {#cloud-manager}
       + [Opmerkingen bij de huidige release](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [Opmerkingen bij de release 2024.8.0](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [Opmerkingen bij de release 2024.7.0](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [Opmerkingen bij de release 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
          + [Opmerkingen bij de release 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -1073,7 +1074,6 @@ ht-degree: 3%
          + [Sandbox-programma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Programma&#39;s bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Sluimeromgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-         + [Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery-services.md)
       + Een AEM-toepassingsproject maken {#create-application-project}
          + [Wizard Project maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Projectinstelling](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1107,7 +1107,6 @@ ht-degree: 3%
             + [Overzicht van functionele tests](/help/implementing/cloud-manager/functional-testing.md)
             + [Functioneel testen in Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI-tests](/help/implementing/cloud-manager/ui-testing.md)
-         + [Ervaring controleren testen](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Logbestanden openen en beheren](/help/implementing/cloud-manager/manage-logs.md)
       + [Aangepaste machtigingen](/help/implementing/cloud-manager/custom-permissions.md)
@@ -1116,11 +1115,9 @@ ht-degree: 3%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Meldingen](/help/implementing/cloud-manager/notifications.md)
       + [ Geavanceerde Voorzien van een netwerk ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
-      + SSL-certificaten {#manage-ssl-certificates}
-         + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Aangepaste domeinnamen {#custom-domain-names}
+      + Edge Delivery-sites {#edge-delivery-sites}
+         + [Edge Delivery-ondersteuning in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + Domeininstellingen {#custom-domain-names}
          + [Inleiding](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Een TXT-record toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -1128,7 +1125,12 @@ ht-degree: 3%
          + [DNS-instellingen configureren](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [DV-certificaten (Domain Validated)](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+      + SSL-certificaten {#manage-ssl-certificates}
+         + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      + CDN-configuraties {#cdn-configurations}
+         + [Een CDN-configuratie toevoegen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + IP-Lijsten van gewenste personen {#ip-allow-lists}
          + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

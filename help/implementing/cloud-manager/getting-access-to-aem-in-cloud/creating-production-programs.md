@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
+source-git-commit: 6a3d2d484bde20586b329010cdfe156570e736f5
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -15,50 +15,59 @@ ht-degree: 0%
 
 # Productieprogramma&#39;s maken {#create-production-program}
 
-Een productieprogramma is bedoeld voor een gebruiker die vertrouwd is met AEM en Cloud Manager en klaar is om te beginnen met het schrijven, bouwen en testen van code met als doel het op te stellen om levend verkeer te ontvangen.
+Een productieprogramma is voor gebruikers vertrouwd met AEM en Cloud Manager, klaar om te schrijven, te bouwen, en code te testen, met het doel het op te stellen om levend verkeer te behandelen.
 
-Leer meer over programmatypes in het document [ Begrijpend Programma en de Types van Programma.](program-types.md)
+Leer meer over programmatypes in het document [ Begrijpend Programma en de Types van Programma ](program-types.md).
 
 ## Een productieprogramma maken {#create}
 
-Ga als volgt te werk om een productieprogramma te maken. Merk op dat afhankelijk van de rechten van uw organisatie, u [ extra opties ](#options) kunt zien wanneer het toevoegen van uw programma.
+Afhankelijk van de rechten van uw organisatie, kunt u [ extra opties ](#options) zien wanneer het toevoegen van uw programma.
+
+**om een productieprogramma tot stand te brengen:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, tikt of klikt **Programma** in de hoogste juiste hoek van het scherm toevoegen.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, dichtbij de hoger-juiste hoek, klik **Programma** toevoegen.
 
-   ![ manager die van de Wolk pagina ](assets/log-in.png) landt
+   ![ Cloud Manager landende pagina ](assets/log-in.png)
 
-1. Selecteer **Opstelling voor Productie** in de Create tovenaar van het Programma om een productieprogramma tot stand te brengen en een programmanaam te verstrekken.
+1. In *maak uw programma* tovenaar, op het **naam van het Programma** tekstgebied, typ de naam u voor het programma wilt.
+
+1. Onder **Doelstelling van het Programma**, uitgezochte **`Set up for production`**.
 
    ![ Creërend programmatovenaar ](assets/create-production-program.png)
 
-1. Naar keuze, kunt u een beeld aan het programma toevoegen door een beelddossier aan **te slepen en te laten vallen voeg een doel van het programmabeeld** toe of klikkend het om een beeld van een dossierbrowser te selecteren. Selecteer **verdergaan**.
+1. (Optioneel) Voer in de rechterbenedenhoek van het dialoogvenster Wizard een van de volgende handelingen uit:
 
-1. Op het **Oplossingen &amp; toe:voegen-ons** lusje, selecteer de oplossingen om in het programma te omvatten.
+   * Sleep en laat vallen een beelddossier op **een doel van het programmabeeld** toevoegen.
+   * Klik **voeg een programmabeeld** toe, dan selecteer een beeld van dossierbrowser.
+   * Klik op het prullenbakpictogram om een afbeelding te verwijderen die u hebt toegevoegd.
+
+1. Klik **verdergaan**.
+
+1. In de **Oplossingen &amp; toe:voegen-ons** lijstdoos, selecteer één of meerdere oplossingen om in het programma te omvatten.
 
    * Als u niet zeker weet of u een of meerdere programma&#39;s nodig hebt voor de verschillende beschikbare oplossingen, selecteert u de meest interessante oplossing. U kunt extra oplossingen activeren door [ het programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later uit te geven. Zie de [ Inleiding aan het document van de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer aanbevelingen van de programmaopstelling.
    * Er is minstens één oplossing vereist voor het maken van programma&#39;s.
-   * Als u **[selecteerde laat Verbeterde Veiligheid](#security)** optie toe, wordt u toegestaan om slechts zo vele oplossingen te selecteren waarvoor de aanspraken van HIPAA beschikbaar zijn.
+   * Selecteer **Edge levert de Diensten** voor een volledig beheerde oplossing CDN die digitale ervaringen optimaliseert. Zie [ Ongeveer gebruikend Edge Delivery Services om uw project van Cloud Manager te leveren ](#edge-overview)
+   * Als u **[selecteerde laat Verbeterde Veiligheid](#security)** optie toe, kunt u slechts zo vele oplossingen selecteren waarvoor de aanspraken van HIPAA beschikbaar zijn.
 
-   ![ Uitgezochte oplossingen ](assets/setup-prod-select.png)
+   ![ Uitgezochte oplossingen ](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-1. Klik de chevron vóór de oplossingsnamen om facultatieve toe:voegen-ons te openbaren zoals het selecteren van **Commerce** toe:voegen-op optie onder **Plaatsen**.
+1. Klik de chevron aan de linkerzijde van een oplossingsnaam om het even welke facultatieve toe:voegen-ons, zoals **toe:voegen-op optie van Commerce** onder **Plaatsen** te openbaren.
 
    ![ Uitgezochte toe:voegen-ons ](assets/setup-prod-commerce.png)
 
 1. Met uw geselecteerde oplossingen en toe:voegen-ons, klik **verdergaan**.
 
-1. Op **gaan-Levende Datum** lusje, ga de datum in u uw productieprogramma om levend te gaan.
+1. Op **gaan-Levende Datum** lusje, ga de datum in die u van plan bent om uw productieprogramma te hebben Levend gaan.
 
    ![ bepalen geplande go-live datum ](assets/set-up-go-live.png)
 
-   * Deze datum kan op elk moment worden bewerkt.
-   * Deze datum is slechts voor informatief gebruik en brengt Go Live widget op het **pagina van het Overzicht van het Programma[** ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) in werking om in-productverbindingen aan de beste praktijkdocumentatie van AEM as a Cloud Service op geschikte wijze te verstrekken om zich met uw reis te richten die in een succesvolle en vlotte Go Levende ervaring culmineert.
+   * U kunt deze datum op elk gewenst moment bewerken.
+   * De datum dient informatiedoeleinden en brengt Go Live widget op het **pagina van het Overzicht van het Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) in werking.[** Deze functionaliteit biedt tijdige productafhankelijke koppelingen naar de beste praktijken van AEM as a Cloud Service ter ondersteuning van een vloeiende Go Live-ervaring.
 
-1. Klik **creëren**.
-
-Uw programma is gemaakt door Cloud Manager en wordt weergegeven en geselecteerd op de bestemmingspagina.
+1. Klik **creëren**. Cloud Manager maakt uw programma en geeft het voor selectie weer op de bestemmingspagina.
 
 ![ het beheeroverzicht van de Wolk ](assets/navigate-cm.png)
 
@@ -68,47 +77,47 @@ Afhankelijk van de rechten waarover uw organisatie beschikt, hebt u mogelijk ext
 
 ### Beveiliging {#security}
 
-Als u de noodzakelijke rechten hebt, zal het **lusje van de Veiligheid** als eerste lusje in de **Opstelling voor de dialoog van de Productie** worden getoond.
-
-Het **lusje van de Veiligheid** verstrekt de opties om **HIPAA** en/of **WAF-DDOS Bescherming** voor uw productieprogramma te activeren.
-
-Adobe HIPAA-compatibel en Web Application Firewall (WAF) vereenvoudigt beveiliging op basis van cloud als onderdeel van een meerlagige aanpak ter bescherming tegen kwetsbaarheden.
-
-* **HIPAA** - deze optie laat Adobe toe HIPPA-klaar oplossingsimplementatie.
-   * [ Leer meer ](https://www.adobe.com/go/hipaa-ready) over HIPAA van de Adobe klaar oplossingsimplementatie.
-   * HIPAA kan na het maken van het programma niet worden in- of uitgeschakeld.
-* **WAF-DDOS Bescherming** - deze optie laat de firewall van de Webtoepassing via regels toe om uw toepassing te beschermen.
-   * Zodra geactiveerd, kan de bescherming WAF-DDOS dan worden gevormd door opstelling a [ non-production pijpleiding.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-   * Zie de regels van de Filter van het document [ Verkeer met inbegrip van de Regels van WAF ](/help/security/traffic-filter-rules-including-waf.md) leren hoe te om de regels van de verkeersfilter in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
+Als u de noodzakelijke rechten hebt, wordt het **lusje van de Veiligheid** getoond als eerste lusje in het **`Set up for production`** dialoogvakje.
 
 ![ de opties van de Veiligheid ](assets/create-production-program-security.png)
 
+Het **lusje van de Veiligheid** verstrekt de opties om **HIPAA**, of **bescherming WAF-DDOS**, of allebei, voor uw productieprogramma te activeren.
+
+Adobe HIPAA-compatibel en WAF-DDOS (Web Application Firewall - Distributed Denial of Service) vereenvoudigt beveiliging op basis van de cloud als onderdeel van een meerlagige aanpak ter bescherming tegen kwetsbaarheden.
+
+* **HIPAA** - deze optie laat Adobe toe HIPPA-klaar oplossingsimplementatie.
+   * [ Leer meer ](https://www.adobe.com/trust/compliance/hipaa-ready.html) over HIPAA van de Adobe klaar oplossingsimplementatie.
+   * HIPAA kan na het maken van het programma niet worden in- of uitgeschakeld.
+* **bescherming WAF-DDOS** - Deze optie laat de Firewall van de Toepassing van het Web als regels toe om uw toepassing te beschermen.
+   * Zodra geactiveerd, kan de bescherming WAF-DDOS dan worden gevormd door opstelling a [ niet productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * Zie [ Regels van de Filter van het Verkeer met inbegrip van de Regels van WAF ](/help/security/traffic-filter-rules-including-waf.md) leren hoe te om de regels van de verkeersfilter in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
+
 ### SLA {#sla}
 
-Als u de noodzakelijke rechten hebt, zal het **SLA** lusje als tweede of derde lusje in de **Opstelling voor de dialoog van de Productie** worden getoond.
+Als u de noodzakelijke rechten hebt, wordt het **SLA** lusje getoond als tweede of derde lusje in het **`Set up for production`** dialoogvakje.
 
-AEM Sites en Forms bieden een standaardovereenkomst voor 99,9% serviceniveau (SLA). De **optie van de Overeenkomst van het Niveau van de Dienst 0} 99.99% laat een minimumuptime van 99.99% voor uw productiemilieu&#39;s voor Plaatsen en/of Forms toe.**
+![ de opties van SLA ](assets/create-production-program-sla.png)
+
+AEM Sites en Forms bieden een standaard 99,9% service level agreement (SLA). De **optie van de Overeenkomst van het Niveau van de Dienst 0} 99.99% laat een minimumuptime van 99.99% voor uw productiemilieu&#39;s voor Plaatsen en/of Forms toe.**
 
 99.99% SLA biedt voordelen met inbegrip van hogere beschikbaarheid en lagere latentie aan, en vereist een [ extra publiceer gebied ](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) om op het productiemilieu in het programma worden toegepast.
 
-![ SLA opties ](assets/create-production-program-sla.png)
-
-Zodra de [ vereisten ](#sla-requirements) voor het toelaten van 99.99% SLA worden voldaan, moet u a [ volledige stapelpijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) in werking stellen om het te activeren.
+Wanneer de [ vereisten ](#sla-requirements) voor het toelaten van 99.99% SLA worden voldaan, moet u a [ volledige stapelpijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) in werking stellen om het te activeren.
 
 #### Eisen voor 99,99% SLA {#sla-requirements}
 
-Naast de vereiste rechten heeft 99,99% SLA extra gebruiksvereisten.
+Naast de vereiste rechten heeft 99,99% SLA extra gebruiksvoorwaarden.
 
-* Zowel 99,99% SLA als extra rechten voor publicatiegebieden moeten beschikbaar zijn voor de organisatie op het moment dat zij 99,99% SLA toepast op het programma.
-* Om 99.99% SLA op het programma toe te passen, zal Cloud Manager controleren om ervoor te zorgen dat een onverbruikte [ extra publiceer gebied ](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) recht ook beschikbaar is en op het programma kan worden toegepast.
+* De organisatie moet 99,99% SLA en aanvullende rechten voor publicatiegebieden beschikbaar hebben bij de toepassing van 99,99% SLA op het programma.
+* Cloud Manager verifieert dat een ongebruikte [ extra publiceer gebied ](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) recht beschikbaar is alvorens 99.99% SLA op het programma toe te passen.
 * Als Cloud Manager bij het bewerken van een programma al een productieomgeving met minstens één extra publicatiegebied bevat, controleert alleen of een SLA-machtiging van 99,99% beschikbaar is.
-* Opdat 99.99% SLA en het melden worden geactiveerd, moet het [ productie/stadium milieu ](/help/implementing/cloud-manager/manage-environments.md#adding-environments) zijn gecreeerd en minstens één extra publicatiegebied moet op het productie/stadium milieu zijn toegepast.
-   * Als het gebruiken van [ geavanceerd voorzien van een netwerk, ](/help/security/configuring-advanced-networking.md) zorg ervoor om [ het Toevoegen van Veelvoudige Gebieden van Publish aan een Nieuw milieu ](/help/implementing/cloud-manager/manage-environments.md#adding-regions) document voor aanbevelingen te controleren zodat de connectiviteit in het geval van regionale mislukking wordt gehandhaafd.
-* Er moet minstens één extra publicatiegebied in uw SLA-programma van 99,99% overblijven. Gebruikers mogen het laatste aanvullende publicatiegebied niet verwijderen uit uw SLA-programma van 99,99%.
-* 99,99% SLA wordt gesteund voor productieprogramma&#39;s die de oplossing van Plaatsen of van Forms toegelaten hebben.
-* U moet a [ volledige stapelpijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) in werking stellen om (of, wanneer het uitgeven van een programma, deactivate) 99.99% SLA te activeren.
+* Voor activering van 99.99% SLA en rapportering, moet het [ productie/stadium milieu ](/help/implementing/cloud-manager/manage-environments.md#adding-environments) zijn gecreeerd en minstens één extra publicatiegebied moet op het productie/stadium milieu zijn toegepast.
+   * Als het gebruiken van [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanced-networking.md), zorg ervoor om [ het Toevoegen van Veelvoudige Gebieden van Publish aan een Nieuw milieu ](/help/implementing/cloud-manager/manage-environments.md#adding-regions) document voor aanbevelingen te controleren zodat de connectiviteit wordt gehandhaafd als er regionale mislukking is.
+* Er moet minstens één extra publicatiegebied in uw 99,99% SLA-programma overblijven. Gebruikers mogen het laatste aanvullende publicatiegebied niet verwijderen uit uw 99,99% SLA-programma.
+* 99,99% SLA wordt ondersteund voor productieprogramma&#39;s waarvoor de Sites- of Forms-oplossing is ingeschakeld.
+* Stel a [ volledige stapelpijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) in werking om te activeren of — wanneer het uitgeven van een programma — de 99.99% SLA deactiveren.
 
-## Toegang tot uw programma {#accessing}
+## Open uw programma {#accessing}
 
 1. Wanneer u uw programmacokaart op de landingspagina ziet, selecteer de elliptische knoop om de menuopties te bekijken beschikbaar aan u.
 
@@ -116,14 +125,16 @@ Naast de vereiste rechten heeft 99,99% SLA extra gebruiksvereisten.
 
 1. Selecteer **Overzicht van het Programma** om aan de Cloud Manager **pagina van het Overzicht** te navigeren.
 
-1. De belangrijkste vraag-aan-actie kaart op de overzichtspagina zal u door het creëren van een milieu, een niet productiepijplijn, en tenslotte een productiepijplijn begeleiden.
+1. De belangrijkste vraag-aan-actie kaart op de overzichtspagina begeleidt u door het creëren van een milieu, een niet productiepijpleiding, en tenslotte een productiepijpleiding.
 
    ![ Overzicht van het Programma ](assets/set-up-prod5.png)
 
 >[!TIP]
 >
->Gelieve te zien het document [ Navigerend Cloud Manager UI ](/help/implementing/cloud-manager/navigation.md) voor details op hoe te Cloud Manager navigeren en het begrijpen van de **Mijn console van Programma&#39;s**.
+>Zie [ de UI van Cloud Manager ](/help/implementing/cloud-manager/navigation.md) voor details op navigeren Cloud Manager en het begrijpen van de **Mijn console van Programma&#39;s** navigeren.
 
 >[!NOTE]
 >
->In tegenstelling tot het programma van de a [ zandbak, ](introduction-sandbox-programs.md#auto-creation) zal een productieprogramma de gebruiker in de aangewezen rol van Cloud Manager vereisen om het project tot stand te brengen en een milieu door zelfbediening UI toe te voegen.
+>In tegenstelling tot het programma van de a [ zandbak ](introduction-sandbox-programs.md#auto-creation), vereist een productieprogramma de gebruiker in de aangewezen rol van Cloud Manager om het project tot stand te brengen en een milieu door zelfbediening UI toe te voegen.
+
+

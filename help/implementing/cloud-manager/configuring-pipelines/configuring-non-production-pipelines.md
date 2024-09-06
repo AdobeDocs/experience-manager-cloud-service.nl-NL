@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Om de configuratie van de full-stack code non-production pijpleiding te beëindi
       * **Functionele het Testen van het Product** - voer [ product functionele tests ](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) tegen het ontwikkelmilieu uit.
       * **Functionele het Testen van de Douane** - voer [ douane functionele tests ](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) tegen het ontwikkelmilieu uit.
       * **het Testen van de Douane UI** - voer [ tests van douaneUI ](/help/implementing/cloud-manager/ui-testing.md) voor douanetoepassingen uit.
-      * **Controle van de Ervaring** - voer [ Controle van de Ervaring uit ](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **Controle van de Ervaring** - voer [ Controle van de Ervaring uit ](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![ volledig-stapelpijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -152,13 +152,13 @@ De stappen om de verwezenlijking van uw niet-productie, gerichte plaatsingspijpl
    * **Tak van het Git** - Deze optie bepaalt waarvan de tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * Voer de eerste paar tekens in van de naam van de vertakking en de functie voor automatisch aanvullen van dit veld. U vindt de overeenkomende vertakkingen die u kunt selecteren.
    * **Plaats van de Code** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
-   * **Pijpleiding** - voor front-end niet productiepijpleidingen, hebt u de optie om **[Controle van de Ervaring toe te laten.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Pijpleiding** - voor front-end niet productiepijpleidingen, hebt u de optie om **[Controle van de Ervaring](/help/implementing/cloud-manager/experience-audit-dashboard.md)** toe te laten.
 
    ![ Config pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. Als u de Controle van de Ervaring toeliet, blijf of klik **** {om aan de **Controle van de Ervaring** tabel verder te gaan waar u de wegen kunt bepalen die altijd in de Controle van de Ervaring zouden moeten worden omvat.
 
-   * Als u **de Controle van de Ervaring** toeliet, gelieve de controle van de de 2} Ervaring van het document ](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) voor details op te zien hoe te vormen.[
+   * Als u **de Controle van de Ervaring** toeliet, zie de controle van de de 2} Ervaring van het document ](/help/implementing/cloud-manager/experience-audit-dashboard.md) voor details op hoe te vormen.[
    * Als u dit niet hebt gedaan, slaat u deze stap over.
 
 1. Tik of klik **sparen** om de pijpleiding te bewaren.

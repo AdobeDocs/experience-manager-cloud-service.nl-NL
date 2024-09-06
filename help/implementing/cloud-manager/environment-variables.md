@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontw
 
 ### Dispatcher {#dispatcher}
 
-Slechts kunnen de regelmatige milieuvariabelen met [ worden gebruikt de verzender.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Secrets kan niet worden gebruikt.
+Slechts kunnen de regelmatige milieuvariabelen met [ worden gebruikt de verzender ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) geheimen niet worden gebruikt.
 
 Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` -instructies.
 

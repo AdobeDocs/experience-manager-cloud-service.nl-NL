@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Leer hoe u een aangepaste domeinnaam kunt toevoegen met Cloud Manager.
 
 ## Vereisten {#requirements}
 
-U moet aan deze vereisten voldoen voordat u een aangepaste domeinnaam in Cloud Manager toevoegt.
+Voldoe aan deze vereisten voordat u een aangepaste domeinnaam in Cloud Manager toevoegt.
 
-* U moet een domeinSSL certificaat voor het domein hebben toegevoegd u wenst om toe te voegen alvorens een naam van het douanedomein toe te voegen zoals die in het document [ wordt beschreven Toevoegend een SSL Certificaat.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* U moet een domeinSSL certificaat voor het domein hebben toegevoegd u wenst toe te voegen alvorens een naam van het douanedomein toe te voegen zoals die in het document [ wordt beschreven Toevoegend een SSL Certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * U moet de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** hebben om een naam van het douanedomein in Cloud Manager toe te voegen.
-* U moet de snelste CDN gebruiken.
+* Gebruik de snelste CDN.
 
 ## Waar kunt u aangepaste domeinnamen toevoegen {#where}
 
@@ -34,9 +34,9 @@ U kunt een aangepaste domeinnaam vanuit twee locaties in Cloud Manager toevoegen
 
 Wanneer u een aangepaste domeinnaam toevoegt, wordt het domein gediend met het meest specifieke, geldige certificaat. Als meerdere certificaten hetzelfde domein hebben, wordt de meest recente bijgewerkte versie gekozen. Adobe raadt u aan certificaten zodanig te beheren dat er geen overlappende domeinen zijn.
 
-De stappen die in dit document worden beschreven, zijn gebaseerd op Snelheid. Als u een verschillende CDN gebruikt, moet u uw domein met CDN vormen u om hebt gekozen te gebruiken.
+De stappen die in dit document worden beschreven, zijn gebaseerd op Snelheid. Als u een verschillende CDN gebruikte, vorm uw domein met CDN u aan gebruik hebt gekozen.
 
-## Een aangepaste domeinnaam toevoegen vanaf de pagina Domeininstellingen {#adding-cdn-settings}
+## Een aangepaste domeinnaam toevoegen via de pagina Domeininstellingen {#adding-cdn-settings}
 
 Volg deze stappen om een naam van het douanedomein van de **pagina van de Montages van het Domein** toe te voegen.
 
@@ -50,7 +50,7 @@ Volg deze stappen om een naam van het douanedomein van de **pagina van de Montag
 
 1. Klik **voeg de knoop van het Domein** bij top-right toe om **te openen voeg de dialoog van de Naam van het Domein** toe.
 
-   ![ voeg de dialoog van het Domein toe ](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
+   ![ voeg de dialoogdoos van het Domein toe ](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. Op het **lusje van de Naam van het Domein**, ga de naam van het douanedomein op het **3} gebied van de Naam van het Domein in.**
 
@@ -69,29 +69,29 @@ Volg deze stappen om een naam van het douanedomein van de **pagina van de Montag
    ![ de naamcontrole van het Domein ](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
    * Het **lusje van de Verificatie** beschrijft de volgende stappen om uw naam van het douanedomein te vormen, die een noodzakelijk TXT- verslag creeert.
-   * U kunt dit onmiddellijk doen (alvorens te tikken of **te klikken creeert** in de dialoog) of nadat u tikt of **klikt creeert** in de dialoog.
+   * U kunt deze stap onmiddellijk doen (alvorens **te klikken creeert** in de dialoogdoos) of nadat u **klikt creeer** in de dialoogdoos.
    * De opties en volgende stappen worden hieronder beschreven.
 
-1. Tik of klik **creeer** om de naam van het douanedomein in Cloud Manager te bewaren.
+1. Klik **creëren** om de naam van het douanedomein in Cloud Manager te bewaren.
 
-Cloud Manager zal automatisch een TXT controle teweegbrengen wanneer u **** op de verificatiestap van de **selecteert voeg de tovenaar van het Domein van de Douane** toe, zodat wordt geadviseerd dat u het TXT- verslag op verwezenlijking van de naam van het douanedomein in Cloud Manager creeert. Dit is echter niet nodig. Voor verdere controles, moet u actief selecteren opnieuw verifieert pictogram naast de status.
+Wanneer u **selecteert creeer** in **voeg de tovenaar van het Domein van de Douane** toe, brengt Cloud Manager een TXT controle teweeg. Maak de TXT-record wanneer u de aangepaste domeinnaam in Cloud Manager instelt. Deze stap is echter niet vereist. Voor verdere controles, moet u actief selecteren **verifieer opnieuw** pictogram naast de status.
 
-De naam wordt pas actief nadat het TXT-item is toegevoegd en door Cloud Manager is geverifieerd. De succesvolle controle TXT wordt vermeld door de status **Verified en Geïmporteerde**.
+De naam is pas actief nadat Cloud Manager heeft gecontroleerd of het TXT-item is toegevoegd en geverifieerd. De status van **Verified en Geïmporteerde** wijst op een succesvolle TXT controle.
 
-* Zie [ Toevoegend een Verslag TXT ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) om meer over verslagen te leren TXT.
-* Zie [ Controlerend de Status van de Naam van het Domein ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details over hoe Cloud Manager de naam van het douanedomein en zijn ingang TXT verifieert.
+* Zie [ een verslag van TXT ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) toevoegen om meer over verslagen te leren TXT.
+* Zie [ de status van de domeinnaam van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details op hoe Cloud Manager de naam van het douanedomein en zijn ingang TXT verifieert.
 
 ## Volgende stappen {#next-steps}
 
-Nadat u de aangepaste domeinnaam in Cloud Manager hebt gemaakt, moet u een TXT-item toevoegen om te controleren of het domein eigendom is. Ga aan het document [ te werk Toevoegend een Verslag TXT ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) om vestiging uw naam van het douanedomein voort te zetten.
+Nadat u uw aangepaste domeinnaam in Cloud Manager hebt gemaakt, voegt u een TXT-item toe om te controleren of het domein eigendom is. Ga aan het document [ te werk Toevoegend een Verslag TXT ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) om vestiging uw naam van het douanedomein voort te zetten.
 
-## Een aangepaste domeinnaam toevoegen vanaf de pagina Omgevingen {#adding-cdn-environments}
+## Een aangepaste domeinnaam toevoegen op de pagina Environment {#adding-cdn-environments}
 
-De stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** toe te voegen zijn het zelfde als wanneer [ toevoegend een naam van het douanedomein van de pagina van de Montages van het Domein, ](#adding-cdn-settings) maar het ingangspunt verschilt. Volg deze stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** toe te voegen.
+De stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** toe te voegen zijn het zelfde als wanneer [ toevoegend een naam van het douanedomein van de pagina van de Montages van het Domein ](#adding-cdn-settings), maar het ingangspunt verschilt. Volg deze stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** toe te voegen.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan **het Detail van Milieu** pagina voor het milieu van belang.
+1. Navigeer aan de **pagina van het Detail van Milieu** voor het milieu van belang.
 
    ![ die domeinnaam op de pagina van de Details van het Milieu ingaan ](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
 
@@ -101,6 +101,6 @@ De stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** t
    1. Selecteer het SSL-certificaat dat aan deze naam is gekoppeld in de vervolgkeuzelijst.
    1. Klik **+ toevoegen**.
 
-   ![ voeg de Naam van het Domein van de Douane toe ](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+   ![ voeg een naam van het douanedomein toe ](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. **voegt de dialoogdoos van de Naam van het Domein** toe opent aan de **Naam van het Domein** tabel. Ga zoals u voor [ verder toevoegend een naam van het douanedomein van de pagina van de Montages van het Domein.](#adding-cdn-settings)
+1. **voegt domeinnaam** dialoogdoos toe opent aan de **Naam van het Domein** tabel. Ga zoals u voor [ verder toevoegend een naam van het douanedomein van de pagina van de Montages van het Domein ](#adding-cdn-settings).

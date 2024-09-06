@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '4513'
 ht-degree: 0%
@@ -645,7 +645,7 @@ Zie [ het indexeren documentatie ](/help/operations/indexing.md#preparing-the-ne
 * **Ernst**: Blocker
 * **sinds**: 2021.8.0
 
-Oak-indexen van het type `lucene` moeten altijd asynchroon worden geïndexeerd. Als u dit niet doet, kan dit leiden tot instabiliteit van het systeem. Meer informatie over de structuur van de indexen van Lucene kan in de [ documentatie van Oak worden gevonden.](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
+Oak-indexen van het type `lucene` moeten altijd asynchroon worden geïndexeerd. Als u dit niet doet, kan dit leiden tot instabiliteit van het systeem. Meer informatie over de structuur van de indexen van Lucene kan in de [ documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition) worden gevonden.
 
 #### Niet-compatibele code {#non-compliant-code-indexasync}
 
@@ -897,7 +897,7 @@ Het migratiehulpmiddel in de [ as a Cloud Service bewaarplaats van Assets GitHub
 
 Terwijl het gebruik van statische malplaatjes historisch algemeen in de projecten van de Experience Manager is, adviseert de Adobe editable malplaatjes omdat zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie kan in het document [ Malplaatjes van de Pagina ](/help/implementing/developing/components/templates.md) worden gevonden.
 
-De migratie van statisch aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend de [ Hulpmiddelen van de Modernisering van de Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
+De migratie van statisch aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend de [ Hulpmiddelen van de Modernisering van de Experience Manager ](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### Het gebruik van oudere basiscomponenten wordt afgeraden {#oakpal-usage-legacy}
 
@@ -908,7 +908,7 @@ De migratie van statisch aan editable malplaatjes kan grotendeels worden geautom
 
 De oudere Foundation Components (componenten onder `/libs/foundation`) zijn afgekeurd voor verschillende versies van Experience Managers ten gunste van Core Components. Het gebruik van de Componenten van de Stichting als basis voor douanecomponenten (hetzij door bedekking of erfenis) wordt ontmoedigd en zou in de overeenkomstige Componenten van de Kern moeten worden omgezet.
 
-Deze omzetting kan door de [ Hulpmiddelen van de Modernisering van de Experience Manager worden vergemakkelijkt.](https://opensource.adobe.com/aem-modernize-tools/)
+Deze omzetting kan door de [ Hulpmiddelen van de Modernisering van de Experience Manager ](https://opensource.adobe.com/aem-modernize-tools/) worden vergemakkelijkt.
 
 ### Gebruik alleen ondersteunde namen van de uitvoermodi en de volgorde {#oakpal-supported-runmodes}
 
@@ -953,7 +953,7 @@ Problemen kunnen moeilijk worden opgelost wanneer een definitieknooppunt van een
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex moet een onderliggend knooppunt met de naam `indexRules` bevatten, dat op zijn beurt minstens één onderliggend knooppunt moet hebben. Meer informatie kan in de [ documentatie van Oak worden gevonden.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex moet een onderliggend knooppunt met de naam `indexRules` bevatten, dat op zijn beurt minstens één onderliggend knooppunt moet hebben. Meer informatie kan in de [ documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/query/lucene.html) worden gevonden.
 
 ### Definitieknooppunten van aangepaste zoekindex moeten de naamgevingsconventies volgen {#oakpal-custom-search-definitions}
 
@@ -1207,7 +1207,7 @@ AEM Cloud Service staat toe dat definities van aangepaste zoekindexen (knooppunt
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Aangepaste full-text indexdefinitie van type damAssetLucene moet correct worden voorgefixeerd met &#39;damAssetLucene&#39; {#oakpal-dam-asset-lucene}
 
@@ -1220,7 +1220,7 @@ AEM Cloud Service staat toe dat aangepaste full-text indexdefinities van het typ
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### De knooppunten van de indexdefinitie mogen geen eigenschappen met dezelfde naam bevatten {#oakpal-index-property-name}
 
@@ -1233,7 +1233,7 @@ AEM Cloud Service staat definities van aangepaste zoekindexen (knooppunten van h
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Het aanpassen van bepaalde OTB-indexdefinities is verboden {#oakpal-customizing-ootb-index}
 
@@ -1253,7 +1253,7 @@ AEM Cloud Service staat ongeoorloofde wijzigingen van de volgende OOTB-indexen n
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### De conkenizers in de analysatoren moeten worden geconfigureerd met de naam &#39;tokenizer&#39;. {#oakpal-tokenizer}
 
@@ -1266,7 +1266,7 @@ AEM Cloud Service staat het maken van kenizers met onjuiste namen in analysatore
 
 >[!WARNING]
 >
->U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/implementing/cloud-manager/release-notes/current.md)
+>U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024 ](/help/implementing/cloud-manager/release-notes/current.md).
 
 ### Configuratie van indexdefinities mag geen spaties bevatten {#oakpal-indexing-definitions-spaces}
 

@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1499'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,8 @@ De console Mijn Programma&#39;s biedt een overzicht van alle programma&#39;s waa
 1. [ Toolbars ](#toolbars-my-programs-toolbars) voor organisatieselectie, alarm, en rekeningsmontages
 1. Tabs waarmee u de huidige weergave van uw programma&#39;s kunt schakelen.
    * **Begin** mening (gebrek) die **Mijn mening van Programma&#39;s** met een overzicht van alle programma&#39;s selecteert
-   * **Vergunning** die tot het [ dashboard van de Vergunning toegang heeft.](/help/implementing/cloud-manager/license-dashboard.md)
-   * Merk op dat het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend het hamburgermenu in de [ kopbal van Cloud Manager.](#cloud-manager-header)
+   * **Vergunning** die tot het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) toegang heeft.
+   * Merk op dat het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend het hamburgermenu in de [ kopbal van Cloud Manager ](#cloud-manager-header).
 1. [ Statistieken en vraag-aan-actie ](#statistics) voor een overzicht van uw recente activiteit
 1. [**Mijn Programma&#39;s** sectie ](#my-programs-section) met een overzicht van al uw programma&#39;s
 1. [ Snelle verbindingen ](#quick-links-section) om tot verwante middelen gemakkelijk toegang te hebben
@@ -63,7 +63,7 @@ De eerste is de Cloud Manager header, die blijvend is terwijl je door Cloud Mana
 1. De organisatieselecteur toont de organisatie u momenteel wordt ondertekend in (in dit voorbeeld, Interne Stichting). Tik of klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere.
 1. Als u op de schakeloptie voor oplossingen tikt of erop klikt, kunt u snel naar andere oplossingen voor Experiencen Cloud gaan.
 1. Met het Help-pictogram hebt u snel toegang tot leermiddelen en ondersteuningsbronnen.
-1. Het berichtpictogram is badged met het aantal momenteel toegewezen onvolledige [ berichten.](/help/implementing/cloud-manager/notifications.md)
+1. Het berichtpictogram is badged met het aantal momenteel toegewezen onvolledige [ berichten ](/help/implementing/cloud-manager/notifications.md).
 1. Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmontages toegang te hebben. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 #### Programmawerkbalk {#program-toolbar}
@@ -183,7 +183,7 @@ In het programmaoverzicht hebt u toegang tot alle details van een Cloud Manager-
 
 ### Werkbalken {#program-overview-toolbar}
 
-De toolbars voor het programmaoverzicht zijn zeer gelijkaardig aan die van de [ Mijn console van Programma&#39;s.](#my-programs-toolbars) Alleen de verschillen worden hier weergegeven.
+De toolbars voor het programmaoverzicht zijn gelijkaardig aan die van de [ Mijn console van Programma&#39;s ](#my-programs-toolbars). Alleen de verschillen worden hier geïllustreerd.
 
 #### Cloud Manager-koptekst {#cloud-manager-header-2}
 
@@ -225,7 +225,7 @@ Gebruik het hamburger menu in de [ kopbal van Cloud Manager ](#cloud-manager-hea
 
 ### Oproep tot actie {#cta}
 
-De vraag-aan-actie sectie zal u nuttige informatie afhankelijk van de status van uw programma geven. Voor een nieuw programma kunt u volgende stappen zien die evenals een herinnering van een go-live datum worden aangeboden, [ tijdens programmaverwezenlijking wordt geplaatst.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+De vraag-aan-actie sectie zal u nuttige informatie afhankelijk van de status van uw programma geven. Voor een nieuw programma kunt u volgende aangeboden stappen evenals een herinnering van een go-live datum zien, [ plaats tijdens programmaverwezenlijking ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![ vraag-aan-actie voor een nieuw programma ](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -251,7 +251,7 @@ Gelieve te zien het document [ Leiden Pijpleidingen ](/help/implementing/cloud-m
 
 ### Prestatiekaart {#performance}
 
-De **kaart van Prestaties** geeft een overzicht van **[CDN Dashboard.](/help/implementing/cloud-manager/cdn-performance.md)**
+De **kaart van Prestaties** geeft een overzicht van het **[CDN Dashboard](/help/implementing/cloud-manager/cdn-performance.md)**.
 
 ![ kaart van Prestaties ](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

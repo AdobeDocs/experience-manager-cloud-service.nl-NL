@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1c9924b4477d53d86bb72eda8597a02304450195
+source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -36,33 +36,33 @@ U kunt een domeinnaam kopen van een registrar van domeinnamen, een bedrijf of or
 >
 >Cloud Manager is geen registrar voor domeinnamen en biedt geen DNS-services.
 
-## Aangepaste domeinnamen en BYO CDN&#39;s {#byo-cdn}
+## De domeinnamen van de douane en brengen uw eigen CDNs {#byo-cdn}
 
-AEM as a Cloud Service biedt de ingebouwde dienst van het netwerk van de inhoudslevering (CDN) aan, maar laat u ook uw-uw-eigen (BYO) CDN aan gebruik met AEM brengen. Aangepaste domeinen kunnen worden geïnstalleerd in de CDN met AEM beheer of in een CDN die u beheert.
+AEM as a Cloud Service biedt een ingebouwde dienst van het netwerk van de inhoudslevering (CDN) aan, maar laat u ook BYO (breng Uw Eigen) CDN aan gebruik met AEM. Aangepaste domeinen kunnen worden geïnstalleerd in de CDN met AEM beheer of in een CDN die u beheert.
 
-* De domeinnamen van de douane (en certificaten) die in AEM-beheerde CDN worden geïnstalleerd worden beheerd via Cloud Manager.
-* De domeinnamen van de douane (en certificaten) die in uw eigen CDN worden geïnstalleerd worden beheerd in die specifieke CDN.
+* Cloud Manager beheert de namen van douanedomeinen en certificaten die in AEM-beheerde CDN worden geïnstalleerd.
+* De domeinnamen en de certificaten van de douane die in een BYO CDN worden geïnstalleerd worden beheerd direct binnen die CDN.
 
-**Domeinen die in uw eigen CDN worden beheerd te hoeven niet om door Cloud Manager worden geïnstalleerd.** Ze worden beschikbaar gesteld aan AEM via X-Forwarded-Host en komen overeen met de hosts die zijn gedefinieerd in de Dispatcher. Zie de [ CDN documentatie.](/help/implementing/dispatcher/cdn.md)
+**Domeinen die in uw eigen CDN worden beheerd vereisen geen installatie door Cloud Manager** - zij worden ter beschikking gesteld aan AEM als x-Door:sturen-Gastheer en passen de gastheren aan die in Dispatcher worden bepaald. Zie de [ CDN documentatie ](/help/implementing/dispatcher/cdn.md).
 
-In één milieu kunt u beide domeinen hebben die in AEM-beheerde CDN worden geïnstalleerd en in uw eigen CDN worden geïnstalleerd.
+In één milieu, kunt u beide domeinen hebben die in AEM-beheerde CDN worden geïnstalleerd en in een CDN BYO worden geïnstalleerd.
 
 ## Workflow {#workflow}
 
-Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-service en Cloud Manager vereist. Wegens dit zijn er verscheidene stappen die worden vereist om de namen van het douanedomein te installeren, te vormen en te verifiëren. In de volgende tabel vindt u een overzicht van de vereiste stappen, waaronder koppelingen naar documentatiebronnen om deze stappen te voltooien.
+Voor het toevoegen van een aangepaste domeinnaam is interactie tussen de DNS-service en Cloud Manager vereist. Vanwege deze workflow zijn er verschillende stappen vereist voor het installeren, configureren en verifiëren van aangepaste domeinnamen. In de volgende tabel vindt u een overzicht van de vereiste stappen, waaronder koppelingen naar documentatiebronnen om deze stappen te voltooien.
 
 | Stap | Beschrijving | Documentatie |
 |---|---|---|
-| 1 | SSL-certificaat toevoegen aan Cloud Manager | [ Toevoegend een SSL Certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | Aangepast domein toevoegen aan Cloud Manager | [ Toevoegend een Naam van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | TXT-record toevoegen om domein te verifiëren | [ Toevoegend een Verslag TXT ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
-| 4 | Status van domeinverificatie controleren | [ Controlerend de Status van de Naam van het Domein ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | DNS-instellingen configureren door DNS CNAME- of APEX-records toe te voegen die naar AEM as a Cloud Service wijzen | [ Vormend DNS Montages ](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | DNS-recordstatus controleren | [ het Controleren DNS Status van het Verslag ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 1 | SSL-certificaat toevoegen aan Cloud Manager | [ voeg een SSL certificaat toe ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | Aangepast domein toevoegen aan Cloud Manager | [ voeg een naam van het douanedomein toe ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | TXT-record toevoegen om domein te verifiëren | [ voeg een verslag TXT ](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) toe |
+| 4 | Status van domeinverificatie controleren | [ de status van de domeinnaam van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | DNS-instellingen configureren door DNS CNAME- of APEX-records toe te voegen die naar AEM as a Cloud Service wijzen | [ vorm DNS montages ](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
+| 6 | DNS-recordstatus controleren | [ DNS van de Controle verslagstatus ](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
->Het instellen van aangepaste domeinnamen met AEM als cloudservice is doorgaans een eenvoudig proces. Nochtans, in geval van domeindomeindelegatie kunnen de kwesties voorkomen die 1 tot 2 werkdagen kunnen vergen om op te lossen. Daarom wordt het ten zeerste aanbevolen de domeinen ruim vóór hun live datum te installeren. Zie het document [ Controlerend de Status van de Naam van het Domein ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie.
+>Het instellen van aangepaste domeinnamen met AEM als cloudservice is doorgaans een eenvoudig proces. Soms kunnen echter problemen met domeindelegatie optreden die 1 tot 2 werkdagen in beslag kunnen nemen om op te lossen. Daarom wordt het ten zeerste aanbevolen de domeinen ruim vóór hun live datum te installeren. Zie het document [ status van de domeinnaam van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer informatie.
 
 ## Beperkingen {#limitations}
 
@@ -72,12 +72,12 @@ Er gelden verschillende beperkingen voor het gebruik van aangepaste domeinnamen 
    * Aangepaste domeinen voor auteursservices worden niet ondersteund.
 * Elke Cloud Manager-omgeving kan maximaal 500 aangepaste domeinen per omgeving hosten.
 * De namen van het domein kunnen niet aan milieu&#39;s worden toegevoegd terwijl er een huidige lopende pijpleiding in bijlage aan die milieu&#39;s is.
-* Dezelfde domeinnaam kan niet op meer dan één omgeving worden gebruikt.
+* Dezelfde domeinnaam kan niet in meer dan één omgeving worden gebruikt.
 * Er kan slechts één domeinnaam tegelijk worden toegevoegd.
 * AEM as a Cloud Service ondersteunt geen jokertekendomeinen zoals `*.example.com` .
 * Voordat u een aangepaste domeinnaam kunt toevoegen, moet een geldig SSL-certificaat met de aangepaste domeinnaam (jokertekens zijn geldig) voor uw programma zijn geïnstalleerd.
 
-## Aan de slag! {#get-started}
+## Aan de slag {#get-started}
 
-* Krijg begonnen een nieuwe naam van het douanedomein voor uw project te vormen door een SSL certificaat toe te voegen.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)[
-* Beheer uw bestaande domeinnamen door het document [ te herzien Managing de Namen van het Domein van de Douane.](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+* Krijg begonnen een nieuwe naam van het douanedomein voor uw project te vormen door een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toe te voegen.[
+* Beheer uw bestaande domeinnamen door het document [ te herzien beheert de namen van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).

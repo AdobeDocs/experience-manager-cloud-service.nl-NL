@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
 1. Het **venster van de Configuratie van Variabelen** opent. Ga de veranderlijke details in de eerste rij van de lijst in en tik of klik **toevoegen**.
 
-   * **de Naam van de Configuratie** is een uniek herkenningsteken voor uw variabele, die [ pijpleidingsvariabele het noemen overeenkomsten moet leiden.](#naming-conventions)
+   * **de Naam van de Configuratie** is een uniek herkenningsteken voor uw variabele, die [ pijpleidingsvariabele het noemen overeenkomsten ](#naming-conventions) moet leiden.
    * **Waarde** is de waarde die de variabele houdt.
    * **Toegepaste Stap** is de stap in de pijpleiding waarop de variabele van toepassing is. Dit is verplicht.
       * **bouwt**

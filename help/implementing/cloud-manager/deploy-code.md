@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 0%
@@ -64,7 +64,7 @@ De **fase van de Plaatsing van het Stadium**. Deze stappen worden uitgevoerd.
 * **Scannen van de Code** - Deze stap evalueert de kwaliteit van uw toepassingscode.
    * Zie [ het Testen van de Kwaliteit van de Code ](/help/implementing/cloud-manager/code-quality-testing.md) voor details op het het testen proces.
 * **bouwt Beelden** - Dit proces is verantwoordelijk voor het transformeren van de inhoud en de dispatcherpakketten die door de bouwstijlstap in de beelden van het Docker en configuraties Kubernetes worden geproduceerd.
-* **opstellen aan Stadium** - het beeld wordt opgesteld aan het opvoeren milieu in voorbereiding op het [ het testen van het Stadium stadium.](#stage-testing)
+* **stelt aan Stadium** op - het beeld wordt opgesteld aan het het opvoeren milieu in voorbereiding op het [ Stadium testende stadium ](#stage-testing).
 
 ![ Plaatsing van het Stadium ](assets/stage-deployment.png)
 
@@ -86,7 +86,7 @@ De **testende 1} fase van het Stadium {impliceert deze stappen.**
    * De pagina&#39;s die worden gevormd worden voorgelegd aan de dienst en geëvalueerd.
    * De resultaten zijn informatief en tonen de scores en de verandering tussen de huidige en vorige scores.
    * Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing wordt geïntroduceerd.
-   * Zie [ Begrijpend de resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer details.
+   * Zie [ Begrijpend de resultaten van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md) voor meer details.
 
 ![ het Testen van het Stadium ](assets/stage-testing.png)
 

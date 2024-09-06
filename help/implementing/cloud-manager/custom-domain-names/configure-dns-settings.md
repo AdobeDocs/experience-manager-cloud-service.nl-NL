@@ -5,7 +5,7 @@ exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -29,7 +29,7 @@ U moet aan deze vereisten voldoen alvorens uw DNS verslagen te vormen.
 
 * U moet uw domeinhost of -registrar identificeren als u dit nog niet weet.
 * U moet de DNS verslagen voor het domein van uw organisatie kunnen uitgeven, of de aangewezen persoon kunnen contacteren die kan.
-* U moet reeds uw gevormde naam van het douanedomein zoals die in het document [ wordt beschreven Controlerend de Status van de Naam van het Domein hebben geverifieerd.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+* U moet reeds uw gevormde naam van het douanedomein zoals die in het document [ wordt beschreven Controlerend de Status van de Naam van het Domein ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) hebben geverifieerd.
 
 ## CNAME-record {#cname-record}
 

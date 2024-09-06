@@ -5,9 +5,9 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Cloud Manager is opgebouwd rond een hiërarchie van entiteiten. De details hierv
 ![ hiërarchie van Cloud Manager ](assets/program-types1.png)
 
 * **TENANT** - dit is de bovenkant van de hiërarchie. Elke klant is provisioned met een huurder.
-* **PROGRAMMA&#39;S** - Elke huurder heeft één of meerdere programma&#39;s, [ die vaak op de gelicentieerde oplossingen van de klant wijzen.](introduction-production-programs.md)
+* **PROGRAMMA&#39;S** - Elke huurder heeft één of meerdere programma&#39;s, [ die vaak op de gelicentieerde oplossingen van de klant ](introduction-production-programs.md) wijzen.
 * **OMGEVINGEN** - Elk programma heeft veelvoudige milieu&#39;s zoals productie voor levende inhoud, voor het opvoeren, en voor ontwikkelingsdoeleinden.
    * Elk programma kan slechts één productiemilieu, maar veelvoudige non-production milieu&#39;s hebben.
 * **REPOSITORY** - De programma&#39;s hebben git bewaarplaatsen waar toepassing en front-end code voor de milieu&#39;s wordt gehandhaafd.
@@ -54,13 +54,13 @@ De workflow is dus een standaard git-workflow.
 
 Het enige verschil is dat de externe git-opslagplaats deel uitmaakt van Cloud Manager, dat transparant is voor de ontwikkelaar.
 
-## Programmatypen {#program-types}
+## Programmotypes {#program-types}
 
 Een gebruiker kan a **productie** programma of a **zandbak** programma tot stand brengen.
 
 * A **productieprogramma** wordt gecreeerd om levend verkeer voor uw plaats toe te laten.
    * Zie [ Inleiding aan de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) voor meer details.
 * A **zandbakprogramma** wordt typisch gecreeerd om de doeleinden van opleiding, lopende demo&#39;s, enablement, POCs, of documentatie te dienen.
-   * Een zandbakomgeving is niet bedoeld voor het vervoer van levend verkeer en zal beperkingen hebben die een productieprogramma niet zal hebben.
-   * Het omvat Plaatsen en Assets en wordt geleverd automatisch bevolkt met een git tak die steekproefcode, een ontwikkelomgeving, en een niet productiepijplijn omvat.
+   * Een zandbakomgeving is niet bedoeld voor het vervoer van levend verkeer en heeft beperkingen die een productieprogramma niet kent.
+   * Het omvat Plaatsen, Assets, en Edge Delivery Services, en wordt geleverd automatisch bevolkt met een git tak die steekproefcode, een ontwikkelomgeving, en een niet productiepijplijn omvat.
    * Zie [ Inleiding aan Programma&#39;s Sandbox ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) voor meer details.

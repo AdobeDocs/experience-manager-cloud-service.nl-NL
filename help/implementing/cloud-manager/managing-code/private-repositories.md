@@ -4,7 +4,7 @@ description: Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarp
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -110,7 +110,7 @@ Wanneer het trekkingsverzoek wordt gesloten of samengevoegd, wordt de volledige 
 
 ## Particuliere opslagplaatsen koppelen aan pijpleidingen {#pipelines}
 
-Gevalideerde privé bewaarplaatsen kunnen met [ volledig-stapel en frontend pijpleidingen worden geassocieerd.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+Gevalideerde privé bewaarplaatsen kunnen met [ volledig-stapel en frontend pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) worden geassocieerd.
 
 >[!NOTE]
 >

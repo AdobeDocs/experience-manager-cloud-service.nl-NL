@@ -5,7 +5,7 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -22,12 +22,12 @@ Nadat u een nieuwe gegevensopslagruimte voor code hebt gemaakt in Cloud Manager,
 
 >[!NOTE]
 >
->Als uw bewaarplaats vóór Cloud Manager automatisch creeerde `it.tests` omslagen werd gecreeerd, kunt u de recentste versie ook produceren gebruikend [ AEM Archetype van het Project.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Als uw bewaarplaats vóór Cloud Manager automatisch creeerde `it.tests` omslagen werd gecreeerd, kunt u de recentste versie ook produceren gebruikend [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Als u de inhoud van de map `it.tests` hebt, kunt u deze gebruiken als basis voor uw eigen tests en vervolgens:
 
-1. [Ontwikkel uw testdoosjes.](#writing-functional-tests)
-1. [Voer de tests lokaal uit.](#local-test-execution)
+1. [ ontwikkelt uw testgevallen ](#writing-functional-tests).
+1. [ stel de tests plaatselijk in werking ](#local-test-execution).
 1. Leg uw code vast in de Cloud Manager-opslagplaats en voer een Cloud Manager-pijplijn uit.
 
 ## Aangepaste functionele tests schrijven {#writing-functional-tests}

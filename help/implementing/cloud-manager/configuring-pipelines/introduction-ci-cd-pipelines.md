@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%
@@ -99,7 +99,7 @@ De volgende beperkingen zijn van toepassing.
 * Een gebruiker moet met de **rol van de Manager van de Plaatsing worden geregistreerd 0} om pijpleidingen te vormen of in werking te stellen.**
 * Op elk ogenblik, kan er slechts één volledig-stapelpijpleiding per milieu zijn.
 
-Bovendien ben zich bewust van hoe de volledig-stapelpijpleiding zich gedraagt als u verkiest om a [ Web rij config pijpleiding te introduceren.](#web-tier-config-pipelines)
+Bovendien ben zich bewust van hoe de volledig-stapelpijpleiding zich gedraagt als u verkiest om de configuratiepijplijn van de a [ Webrij ](#web-tier-config-pipelines) te introduceren.
 
 * De volledig-stapelpijpleiding voor een milieu negeert de configuratie van Dispatcher als de overeenkomstige Web rij config pijpleiding bestaat.
 * Als de overeenkomstige web rij config pijpleiding voor het milieu niet bestaat, kan de gebruiker de volledig-stapelpijpleiding vormen omvat of negeert de configuratie van Dispatcher.

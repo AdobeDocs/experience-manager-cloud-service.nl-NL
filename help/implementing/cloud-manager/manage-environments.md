@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2375'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, ontgrendel of klik het programma waarvoor u een milieu wilt toevoegen.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik het programma waarvoor u een milieu wilt toevoegen.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik **voegt Milieu** op de **kaart van Milieu** toe om een milieu toe te voegen.
 
@@ -58,7 +58,7 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
 1. In **voeg milieu** dialoog toe die verschijnt:
 
-   * Selecteer een [**milieutype**.](#environment-types)
+   * Selecteer een [**milieutype**](#environment-types).
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter de naam van het omgevingstype weergegeven.
    * Verstrek een milieu **Naam**.
       * De naam van de omgeving kan niet worden gewijzigd nadat de omgeving is gemaakt.
@@ -74,7 +74,7 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
 Het **scherm van het Overzicht** toont nu uw nieuw milieu in de **** kaart van Milieu&#39;s. U kunt nu pijpleidingen instellen voor uw nieuwe omgeving.
 
-## Meerdere Publish-regio&#39;s {#multiple-regions}
+## Meerdere publicatiegebieden {#multiple-regions}
 
 Een gebruiker met de **rol van de BedrijfsEigenaar** kan productie en het opvoeren milieu&#39;s vormen om tot drie extra te omvatten publiceren gebieden naast het primaire gebied. Aanvullende publicatiegebieden kunnen de beschikbaarheid verbeteren. Zie de [ Extra documentatie van de Gebieden van Publish ](/help/operations/additional-publish-regions.md) voor meer details.
 
@@ -82,7 +82,7 @@ Een gebruiker met de **rol van de BedrijfsEigenaar** kan productie en het opvoer
 >
 >U kunt [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) gebruiken om een huidige lijst van beschikbare gebieden te vragen.
 
-### Meerdere Publish-regio&#39;s toevoegen aan een nieuwe omgeving {#add-regions}
+### Meerdere publicatiegebieden toevoegen aan een nieuwe omgeving {#add-regions}
 
 Wanneer u een omgeving toevoegt, kunt u ervoor kiezen om naast het primaire gebied ook andere gebieden te configureren.
 
@@ -99,11 +99,11 @@ Wanneer u een omgeving toevoegt, kunt u ervoor kiezen om naast het primaire gebi
 
 De geselecteerde gebieden zijn van toepassing op zowel productie als het opvoeren milieu&#39;s.
 
-Als u geen extra gebieden specificeert, [ kunt u dit later doen nadat de milieu&#39;s worden gecreeerd.](#edit-regions)
+Als u geen extra gebieden specificeert, [ kunt u dit later doen nadat de milieu&#39;s ](#edit-regions) worden gecreeerd.
 
 Als u [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) voor het programma wilt voorzien, adviseert men dat deze levering wordt gedaan alvorens extra toe te voegen publiceer gebieden aan de milieu&#39;s door Cloud Manager API te gebruiken. Anders, gaat het extra publiceer gebiedsverkeer door de volmacht van het primaire gebied.
 
-### Meerdere Publish-gebieden bewerken {#edit-regions}
+### Meerdere publicatiegebieden bewerken {#edit-regions}
 
 Als u in eerste instantie geen extra gebieden hebt opgegeven, kunt u dat doen nadat de omgevingen zijn gemaakt als u over de benodigde rechten beschikt.
 
@@ -153,7 +153,7 @@ Alternatief, klik de elliptische knoop van het milieu u wilt en dan **Details va
 >
 >De **kaart van Milieu** maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** zoals eerder beschreven om alle milieu&#39;s van het programma te zien.
 
-### Toegang tot de voorvertoningsservice {#access-preview-service}
+### De voorbeeldservice openen {#access-preview-service}
 
 Cloud Manager biedt een voorbeeldservice (geleverd als een extra publicatieservice) aan elke AEM as a Cloud Service-omgeving.
 
@@ -179,7 +179,7 @@ Nadat de functie is geactiveerd, kunt u inhoud publiceren naar de voorbeeldservi
 >
 >Uw omgeving moet AEM versie `2021.05.5368.20210529T101701Z` of hoger zijn om de voorvertoningsservice te kunnen gebruiken. Zorg ervoor dat een updatepijpleiding op uw milieu met succes heeft gelopen zodat kunt u de voorproefdienst gebruiken.
 
-### Status van extra Publish-regio&#39;s {#additional-region-status}
+### Status van aanvullende publicatiegebieden {#additional-region-status}
 
 Als u extra hebt geactiveerd publiceer gebieden, kunt u het statuut van deze gebieden van de **kaart van Milieu** controleren.
 
@@ -209,9 +209,9 @@ Als er problemen zijn gemeld met extra publicatiegebieden:
 
 Hoe lang u wacht tot het systeem op zich terugkrijgt alvorens extra actie te ondernemen hangt van de invloed af het mislukken van dat gebied op uw systemen heeft.
 
-In elk geval, wordt het [ verkeer altijd verpletterd aan het andere dichtstbijzijnde gebied dat online is.](/help/operations/additional-publish-regions.md) Neem contact op met de klantenservice van de Adobe als de problemen zich blijven voordoen.
+In elk geval, [ verkeer wordt altijd verpletterd aan het andere dichtstbijzijnde gebied dat online ](/help/operations/additional-publish-regions.md) is. Neem contact op met de klantenservice van de Adobe als de problemen zich blijven voordoen.
 
-## Bijwerken van omgevingen {#updating-dev-environment}
+## Omgevingen bijwerken {#updating-dev-environment}
 
 Als cloudservice worden updates van uw ontwikkelings-, staging- en productieomgevingen binnen productieprogramma&#39;s automatisch door Adobe beheerd.
 
@@ -221,7 +221,7 @@ Updates voor omgevingen in sandboxprogramma&#39;s worden echter binnen de progra
 
 ### Updates en pijpleidingen {#updates-pipelines}
 
-De pijpleidingen zijn de enige manier aan [ code aan de milieu&#39;s van AEM as a Cloud Service op te stellen.](deploy-code.md) Om deze reden, wordt elke pijpleiding geassocieerd met een bepaalde AEM versie.
+De pijpleidingen zijn de enige manier om [ code aan de milieu&#39;s van AEM as a Cloud Service ](deploy-code.md) op te stellen. Daarom wordt elke pijpleiding geassocieerd met een bepaalde AEM versie.
 
 Als Cloud Manager ontdekt dat er een nieuwere versie van AEM beschikbaar is dan wat het laatst met de pijpleiding werd opgesteld, toont het de **Beschikbare Update** status voor het milieu.
 
@@ -230,7 +230,7 @@ Het proces van actualisering bestaat daarom uit twee stappen:
 1. De pijpleiding bijwerken met de recentste AEM versie
 1. De pijpleiding in werking stellen om de nieuwe versie van AEM aan een milieu op te stellen
 
-### Uw omgevingen bijwerken {#updating-your-environments}
+### Werk uw omgevingen bij {#updating-your-environments}
 
 >[!NOTE]
 > Vanaf 2024 worden ontwikkelingsinstanties en sommige sandboxprogramma&#39;s al automatisch bijgewerkt, zodat er geen noodzaak is om updates voor deze instanties handmatig te beheren. Als resultaat van deze overgang, zou de optie om milieu voor ontwikkelingsinstanties manueel bij te werken niet aan _kunnen beschikbaar zijn wat_ van uw programma&#39;s.
@@ -282,7 +282,7 @@ Selecteer **beheert Toegang** van het ellipsmenu van het milieu op de **kaart va
 >
 >Zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md) als u wilt leren hoe het team en de productprofielen van AEM as a Cloud Service toegang tot uw vergunning gegeven oplossingen van de Adobe kunnen verlenen en beperken.
 
-## Toegang tot de Developer Console {#accessing-developer-console}
+## Toegang tot de console van de Ontwikkelaar {#accessing-developer-console}
 
 Selecteer **Developer Console** van het ellipsmenu van het milieu op de **kaart van Milieu**. Een nieuw lusje wordt geopend in uw browser met het logboek op pagina aan **Developer Console**.
 
@@ -310,7 +310,7 @@ In Cloud Manager for Sites worden aangepaste domeinnamen ondersteund voor zowel 
 
 >[!TIP]
 >
->Voor meer informatie, te zien gelieve de document [ Inleiding aan de Namen van het Domein van de Douane.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+>Voor meer informatie, te zien gelieve de document [ Inleiding aan de namen van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## IP-Lijsten van gewenste personen beheren {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ Het toepassen van een IP lijst van gewenste personen associeert alle IP waaiers 
 
 >[!TIP]
 >
->Voor meer informatie, te zien gelieve de document [ Inleiding aan IP Lijsten van gewenste personen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>Voor meer informatie, te zien gelieve de document [ Inleiding aan IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

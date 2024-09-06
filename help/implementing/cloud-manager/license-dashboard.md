@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ec95438d704568076af045d8933be2125885f482
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-produ
 >
 >Het licentiedashboard geldt alleen voor de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het vergunningsdashboard.
 >
->Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), gelieve het document [ te zien navigerend Cloud Manager UI.](/help/implementing/cloud-manager/navigation.md#program-cards)
+>Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), gelieve het document [ te zien navigerend de UI van Cloud Manager ](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Overzicht {#overview}
 
@@ -39,7 +39,7 @@ Ga als volgt te werk om het licentiedashboard te openen.
 >Een gebruiker in de **rol van de BedrijfsEigenaar** moet worden het programma geopend om het Dashboard van de Vergunning te bekijken.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, ontgrendel of klik de hamburger menuknoop op de [ Kopbal van Cloud Manager.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) De tabbladen worden dan weergegeven.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik de hamburger menuknoop op de [ Kopbal van Cloud Manager ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Dit onthult de tabbladen.
 1. Tik of klik de **optie van de Vergunning** in het lusje.
 
 ![ Dashboard van de Vergunning ](assets/license-dashboard.png)
@@ -72,7 +72,7 @@ De **knoop van de het gebruikdetails van de Mening** in het gebied van de Vergun
 
 ### Gebruiksgegevens voor sites {#sites-usage-details}
 
-Het **venster van de het gebruikdetails van Plaatsen**, stelt grafieken voor die een overzicht van het gebruik van uw vergunningen geven van Plaatsen die op [ worden gebaseerd inhoudsverzoeken.](#what-is-a-content-request)
+Het **venster van de het gebruikdetails van Plaatsen**, stelt grafieken voor die een overzicht van het gebruik van uw vergunningen geven van Plaatsen die op [ worden gebaseerd inhoudsverzoeken ](#what-is-a-content-request).
 
 ![ het venster van de het gebruikdetails van Plaatsen ](assets/sites-usage-details.png)
 
@@ -83,7 +83,7 @@ De rechterzijde van het venster geeft een vlakgrafiek weer waarin het gebruik pe
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
-The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
 
 For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
@@ -113,7 +113,7 @@ Een inhoudsverzoek is een verzoek dat in AEM Sites of om het even welk klant-ver
 
 Inhoudsverzoeken sluiten verzoeken of activiteiten uit die door of namens Adobe worden geïnitieerd met als enig doel het aanbieden van producten en diensten. Adobe-geïdentificeerd gebruikersagent verkeer van bots, kruiplers, en spinnen met betrekking tot gemeenschappelijke onderzoeksmotoren en sociale media diensten is ook uitgesloten.
 
-Zie ook [ Begrijpend de Verzoeken van de Inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
+Zie ook [ verzoeken van de inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md) begrijpen.
 
 ### Hoe meet Adobe Experience Manager verzoeken om inhoud? {#how-are-content-requests-measured}
 

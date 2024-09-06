@@ -5,7 +5,7 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1515'
 ht-degree: 1%
@@ -36,9 +36,9 @@ Met aangepaste machtigingen kunnen gebruikers aangepaste machtigingsprofielen ma
 
 Voor het maken en gebruiken van uw eigen aangepaste machtigingen zijn drie stappen vereist:
 
-1. [Een productprofiel maken.](#create)
-1. [Wijs aangepaste machtigingen toe aan het productprofiel.](#assign-permissions)
-1. [Gebruikers toewijzen aan het productprofiel.](#assign-users)
+1. [ creeer een productprofiel ](#create).
+1. [ wijs douanetoestemmingen aan het productprofiel ](#assign-permissions) toe.
+1. [ wijs gebruikers aan het productprofiel ](#assign-users) toe.
 
 In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om [ Termijnen ](#terms) en [ Configurable 3} secties van Toestemmingen te zien aangezien u uw eigen douanetoestemmingen creeert.](#configurable-permissions)
 
@@ -104,7 +104,7 @@ Uw nieuwe productprofiel wordt nu opgeslagen met de aangepaste machtigingen.
 
 U kunt nu gebruikers toewijzen aan het nieuwe productprofiel dat u met aangepaste machtigingen hebt gemaakt.
 
-1. In de Admin Console, selecteer de naam van het [ nieuwe productprofiel waaraan u douanetoestemmingen toewees.](#assign-permissions)
+1. In de Admin Console, selecteer de naam van het [ nieuwe productprofiel waaraan u douanetoestemmingen ](#assign-permissions) toewees.
 
 1. In het venster dat opent, selecteer de **Gebruikers** tabel.
 
@@ -164,7 +164,7 @@ De volgende termen worden gebruikt bij het maken en beheren van aangepaste macht
 
 | Term | Beschrijving |
 |---|---|
-| Vooraf gedefinieerde machtigingen | Vooraf bepaalde rollen zoals **BedrijfsEigenaar** en **Manager van de Plaatsing** om diverse eigenschappen van Cloud Manager te regeren. Voor details op vooraf bepaalde rollen, zie [ het Team van AEM as a Cloud Service en de Profielen van het Product.](/help/onboarding/aem-cs-team-product-profiles.md) |
+| Vooraf gedefinieerde machtigingen | Vooraf bepaalde rollen zoals **BedrijfsEigenaar** en **Manager van de Plaatsing** om diverse eigenschappen van Cloud Manager te regeren. Voor details op vooraf bepaalde rollen, zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md). |
 | Aangepaste machtigingen | Met Cloud Manager-functies kunnen gebruikers machtigingsprofielen maken om rollen te definiëren die de ondersteunde functies van Cloud Manager bepalen |
 | Productprofiel | Gemaakt in de Admin Console voor het beheer van configureerbare machtigingen die van toepassing zijn op gebruikers die deel uitmaken van het machtigingsprofiel |
 | Configureerbare machtiging | Cloudbeheermachtigingen die kunnen worden geconfigureerd in machtigingsprofiel |
@@ -196,7 +196,7 @@ Houd rekening met de volgende beperkingen wanneer u aangepaste machtigingen gebr
 * Deployment Manager
 * Developer
 
-Voor details op vooraf bepaalde rollen, zie [ het Team van AEM as a Cloud Service en de Profielen van het Product.](/help/onboarding/aem-cs-team-product-profiles.md)
+Voor details op vooraf bepaalde rollen, zie [ het Team van AEM as a Cloud Service en de Profielen van het Product ](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### Wat gebeurt er met vooraf gedefinieerde machtigingsprofielen met inleiding tot aangepaste profielen?
 

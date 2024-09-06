@@ -4,7 +4,7 @@ description: "[!DNL Adobe Experience Manager] as a Cloud Service opmerkingen bij
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 0%
@@ -84,7 +84,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] versie 2020.8.0 is 6 augustus 20
   >[!NOTE]
   >De naam van Content Audit is sindsdien gewijzigd in Experience Audit.
 
-  Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer details.
+  Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md) voor meer details.
 
 * Nieuwe omgevingen in Assets-programma&#39;s worden nu automatisch geconfigureerd met Smart Content Services.
 

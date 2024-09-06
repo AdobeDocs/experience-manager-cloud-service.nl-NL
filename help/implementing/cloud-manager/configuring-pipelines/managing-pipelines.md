@@ -6,9 +6,9 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Onder aan de lijst met pijpleidingen staan algemene opties.
 
 ## Venster Pijpleidingen {#pipelines}
 
-Het **venster van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Dit is nuttig aangezien het uitvoerigere informatie dan voorstelt wat in de [ Kaart van de Pijpleiding beschikbaar is.](#pipeline-card)
+Het **venster van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Dit is nuttig aangezien het uitvoerigere informatie dan voorstelt wat in de [ Kaart van de Pijpleiding ](#pipeline-card) beschikbaar is.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
@@ -50,13 +50,13 @@ Het **venster van Pijpleidingen** toont een volledige lijst van alle pijpleiding
 
 1. Hier kunt u een lijst van alle pijpleidingen voor het programma zien en pijpleidingsuitvoering beginnen en tegenhouden zoals u in de **Kaart van Pijpleidingen**.
 
-Als een pijpleiding uitvoert, zal het tikken van het informatiepictogram in de **kolom van de Status** details over de uitvoering openbaren.
+Als een pijpleiding uitvoert, die het informatiepictogram in de **kolom van de Status** klikken openbaart details over de uitvoering.
 
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-Tapping of het klikken van **details van de Mening** zullen u aan de [ details van de pijpleidingsuitvoering nemen.](#view-details)
+Het klikken **details van de Mening** neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
 
-U kunt ook de ellipsknoop van de pijpleiding tikken of klikken om extra acties aangewezen aan de pijpleidingsstaat zoals [ te nemen die ](#editing-pipelines) het uitgeven of [ uitvoering annuleert.](#cancel)
+U kunt de elliptische knoop van de pijpleiding ook klikken om extra acties aangewezen aan de pijpleidingsstaat te nemen zoals [ het uitgeven ](#editing-pipelines) het of [ het annuleren van uitvoering ](#cancel).
 
 ![ Acties van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
@@ -70,13 +70,13 @@ Het **venster van de Activiteit** toont een volledige lijst van alle pijpleiding
 
 1. Hier ziet u een lijst van alle pijpleiding uitvoeringen voor het programma met inbegrip van huidige en historische executies.
 
-Als een pijpleiding uitvoert, zal het tikken van het informatiepictogram in de **kolom van de Status** details over de uitvoering openbaren.
+Als een pijpleiding uitvoert, zal het klikken van het informatiepictogram in de **kolom van de Status** details over de uitvoering openbaren.
 
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Tapping of het klikken van de rij die de pijpleidingsuitvoering vertegenwoordigen zal u aan de [ details van de pijpleidingsuitvoering nemen.](#view-details)
+Tapping of het klikken van de rij die de pijpleidingsuitvoering vertegenwoordigt neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
 
-U kunt ook de ellipsknoop tikken of klikken om verdere actie op de pijpleidingsuitvoering, zoals mening zijn details of download het logboek, dat u aan de [ pagina van de pijpleidingsdetails neemt.](#view-details)
+U kunt de ellipsis knoop ook klikken om verdere actie op de pijpleidingsuitvoering, zoals mening zijn details of download het logboek, dat u aan de [ pagina van de pijpleidingsdetails ](#view-details) neemt.
 
 ![ de uitvoeringshandelingen van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
@@ -88,7 +88,7 @@ U kunt ook de ellipsknoop tikken of klikken om verdere actie op de pijpleidingsu
 
 1. De pijpleidingslooppas begint en door de **Status** kolom wordt vermeld.
 
-U kunt de details van de looppas zien door de ellipsknoop opnieuw te klikken en **[details van de Mening te selecteren.](#view-details)**
+U kunt de details van de looppas zien door de ellipsknoop opnieuw te klikken en **[details van de Mening](#view-details)** te selecteren.
 
 Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren door de ellipsknoop opnieuw te klikken en **te selecteren annuleert**.
 

@@ -1,60 +1,52 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager 2024.8.0 in Adobe Experience Manager as a Cloud Service
-description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.8.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release voor Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service
+description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.9.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: a823bcd1461b847983d0243cd9abd59efd8d7b6f
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
+# Opmerkingen bij de release voor Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-# Opmerkingen bij de release voor Cloud Manager 2024.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
-
-Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 2024.8.0 in AEM as a Cloud Service gepubliceerd.
+Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 2024.9.0 in AEM as a Cloud Service gepubliceerd.
 
 >[!NOTE]
 >
->Zie [ deze pagina ](/help/release-notes/release-notes-cloud/release-notes-current.md) voor de huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service.
+>Zie de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager versie 2024.8.0 in AEM as a Cloud Service is 14 augustus 2024. De volgende release is gepland voor 14 september 2024.
+De releasedatum voor Cloud Manager release 2024.9.0 in AEM as a Cloud Service is 5 september 2024. De volgende release is gepland voor 3 oktober 2024.
 
 ## Nieuwe functies {#what-is-new}
 
-* [ extra publiceer gebieden ](/help/operations/additional-publish-regions.md) en a [ 99.99% SLA ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (de Overeenkomst van het Niveau van de Dienst) zijn nu beschikbaar voor AEM Forms as a Cloud Service.
-   * Deze verbetering laat u hogere SLAs met verhoogde uptime en lagere latentie bereiken, die beste-in-klassenervaringen voor uw globaal verdeelde gebruikers verzekert.
+* **Dashboard van de Controle van de Ervaring:**
 
-## Programma voor vroegtijdige goedkeuring {#early-adoption}
+  De Adobe Cloud Manager [ verbeterde Dashboard van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md), aangedreven door de Lighthouse van Google, verstrekt inzicht in de kwaliteit en de prestaties van AEM Sites door kernWeb vitals, SEO, en toegankelijkheidsmetriek te evalueren. Het helpt gebruikers gebieden voor verbetering identificeren door activeerbare aanbevelingen aan te bieden, toelatend teams om gebruikerservaring, pagina ladingstijden, en plaatsnaleving te verbeteren. Dit dashboard vereenvoudigt de controle van kritieke plaatsmetriek en zorgt ervoor dat AEM toepassingen aan hoge prestaties en toegankelijkheidsnormen voldoen.
 
-Een kans om een aantal van de komende eigenschappen te testen, maakt deel uit van het programma van de Adobe voor vroegtijdige goedkeuring.
+* **geproduceerde Adobe en beheerde certificaten van de Bevestiging van het Domein:**
 
-### Ondersteuning voor Edge Delivery Services in Cloud Manager {#edge-delivery-services}
+  Met Cloud Manager, kunt u nu aan [ zelf-dienst Adobe produceren en beheerde (de Bevestiging van het Domein) SSL certificaten DV ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) leiden. Deze mogelijkheid biedt u de snelste, eenvoudigste en voordeligste oplossing voor het maken van een veilige website voor uw onlineorganisatie of bedrijf. <!-- CMGR-52403 -->
 
-Als u Edge Delivery Services als deel van AEM Sites in licentie hebt gegeven, [ kunt u nu aan boord van uw plaats met Edge Delivery Services direct in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery-services.md) gaan en het gebruiken van een geleide, zelfbediening ervaring gaan.
+* **Edge Delivery Services steun in Cloud Manager:**
 
-Dit vermogen verstrekt een verenigde ervaring voor al uw AEM eigenschappen. Het verzekert consistentie over kritieke werkschema&#39;s zoals het beheer van domeinnamen, SSL certificaatbeheer, en afbeeldingen CDN.
+  Als u Edge Delivery Services vergunning als deel van AEM Sites hebt, [ kunt u nu aan boord uw plaats met Edge Delivery Services direct door Cloud Manager ](/help/implementing/cloud-manager/edge-delivery-services.md). Met deze functie beschikt u over een begeleide, zelfbediening voor Go Live-ervaring. Het verenigt ook essentiële werkschema&#39;s zoals het beheer van domeinnamen, SSL certificaten, en afbeeldingen CDN over al uw AEM eigenschappen, die consistentie en efficiency verzekeren. <!-- CMGR-49859 -->
 
-Als u deze nieuwe functie wilt testen en feedback wilt delen, stuurt u een e-mail naar `aemcs-cmedgedelsvs-program-adopter@adobe.com` via het e-mailadres dat bij uw Adobe ID hoort.
+* De klanten die bewaarplaatsen GitHub gebruiken hebben nu de capaciteit om de pijpleidingen van Config van de Rij van het Web tot stand te brengen en te gebruiken. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
-### DV-certificaten (Domain Validated, domein)
+<!--
+## Early adoption program {#early-adoption}
 
-Met Cloud Manager, kunt u nu zelfbediening [ produceren en domein bevestigde (DV) SSL certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) beheren. Deze mogelijkheid biedt u de snelste, eenvoudigste en voordeligste oplossing om een veilige website voor uw online bedrijf te maken.
+For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
 
-Als u deze nieuwe functie wilt testen en feedback wilt geven, stuurt u een e-mail naar `Grp-aemcs-dv-dert-adopter@adobe.com` met het e-mailadres dat is gekoppeld aan uw Adobe ID.
 
-### Experience Audit Dashboard {#experience-audit-dashboard}
+## Bugfixes
 
-[ het dashboard van de Controle van de Ervaring van Cloud Manager ](/help/implementing/cloud-manager/experience-audit-dashboard.md) omvat een trended mening van uw scores van paginaprestaties samen met inzichten en aanbevelingen om u te helpen hen verbeteren. De Experience Audit is opgenomen als een stap in de Cloud Manager-productiepijplijn.
+* Paginering voor de tabel SSL-certificaten werkt nu zoals u had verwacht. <!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
+* De verkeerde artefactversie werd bevorderd wanneer het gebruiken van **bevordert bouwstijl** knoop van een uitvoering. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
 
-Het dashboard gebruikt Google Lighthouse, een opensource, geautomatiseerd programma voor het verbeteren van de kwaliteit van uw webapps. U kunt het gebruiken om het even welke Web-pagina, of openbaar of vereisen authentificatie te controleren. Het biedt beoordelingen voor prestaties, toegankelijkheid, progressieve web-apps, SEO en meer.
-
-Vreemd om het nieuwe dashboard uit te proberen? Stuur eerst een e-mail naar `aem-lighthouse-pilot@adobe.com` met het e-mailbericht dat aan uw Adobe ID is gekoppeld.
-
-## Opgeloste problemen
-
-* Een zeldzame kwestie werd verbeterd waar de pijpleidingsstappen bleken te lopen nadat de pijpleiding werd geschrapt.
-* Een probleem met configuratiepijpleidingen waarbij de status `FAILED` in zeldzame gevallen onjuist wordt weergegeven, is opgelost.
+<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>

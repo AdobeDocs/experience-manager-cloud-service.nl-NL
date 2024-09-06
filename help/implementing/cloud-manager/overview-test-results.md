@@ -5,7 +5,7 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Cloud Manager ondersteunt drie categorieën tests voor Cloud Servicen-pijpleidin
 
    * Het functionele testen is een deel van de stadium het testen fase van a [ productiepijplijn ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) en naar keuze deel van het testen fase van a [ niet-productiepijplijn ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-1. [Ervaring controleren testen](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [Ervaring controleren testen](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    * In alle Cloud Manager-productiepijpleidingen is het uitvoeren van een ervaringscontrole mogelijk en deze controle kan niet worden overgeslagen.
 

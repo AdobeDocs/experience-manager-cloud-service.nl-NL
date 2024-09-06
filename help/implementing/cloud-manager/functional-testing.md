@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 0%
@@ -97,7 +97,7 @@ De tests worden verpakt in een Docker-afbeelding - ontworpen om zo vluchtig moge
 >
 >Aangepaste UI-tests worden uitgevoerd in de productie- en niet-productie (opt-in) pijpleidingen die worden gebruikt door de implementatie van de AEM toepassing en AEM productpush-updates, en vormen daarom een belangrijke bijdrage aan het goed functioneren van uw toepassing en het verhogen van de veiligheid van de release. De tests van de klantengebruikersinterface worden ook uitgevoerd in interne pre-releasebevestigingspijpleidingen voor elke klant, die hulp vroege terugkoppelt verstrekt.
 >
->De niet-Seleniumcontainers zouden tests moeten uitvoeren gebruikend een volmacht van HTTP die op de milieuvariabelen in de [ wordt gebaseerd UI die Sectie testen.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>De containers niet-Selenium zouden tests moeten uitvoeren gebruikend een volmacht van HTTP die op de milieuvariabelen in de [ wordt gebaseerd UI die Sectie ](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) testen.
 
 Om pijpleiding efficiënte uitvoeringen te houden, adviseren wij zich op zeer belangrijke eigenschappen en belangrijkste gebruikersinteractiestromen te concentreren. Volledige UI-testsuites die niet in deze kwaliteitspoort passen, worden aanbevolen als onderdeel van algemene klantvalidatiepijpleidingen tijdens de ontwikkelingsstroom van de klant.
 
@@ -111,7 +111,7 @@ De gate van de ervaringscontrole van de kwaliteit voert [ Lighthouse van Google 
 
 Deze kwaliteitspoort wordt geleverd door AEM kant-en-klaar, maar blokkeert de uitrol van pijpleidingen niet. Door gebrek, wordt een controle tegen de wortelpagina (`/`) van de publiceer instantie uitgevoerd. U kunt bijdragen door maximaal 25 douanewegen te vormen die voor controles worden overwogen.
 
-Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-testing.md) voor meer informatie.
+Zie [ het Testen van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md) voor meer informatie.
 
 ### Klantenvalidaties
 

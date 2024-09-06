@@ -5,7 +5,7 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -36,4 +36,4 @@ In de volgende tabel worden de algemene scenario&#39;s beschreven van de beschik
 
 >[!NOTE]
 >
->De programma&#39;s van de productie [ kunnen worden uitgegeven maar niet worden geschrapt.](editing-programs.md)
+>De programma&#39;s van de productie [ kunnen worden uitgegeven maar niet worden geschrapt ](editing-programs.md).

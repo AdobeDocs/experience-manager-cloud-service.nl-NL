@@ -5,9 +5,9 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ In gesluimerde omgevingen zijn implementaties en handmatige AEM nog steeds mogel
 
 * De omgevingen in een sandboxprogramma worden na acht uur inactiviteit automatisch genummerd.
    * Inactiviteit wordt gedefinieerd als het ontvangen van aanvragen door de auteurservice of door voorvertonings- of publicatieservices.
-   * Zodra hibernated, kunnen zij [ manueel worden ontruimd-hibernated.](#de-hibernation-introduction)
+   * Zodra hibernated, kunnen zij [ manueel worden ontruimd-hibernated ].(#de-hibernation-Introduction)
 * Sandboxprogramma&#39;s worden verwijderd na zes maanden van continuhibernatiemodus, waarna ze opnieuw kunnen worden gemaakt.
 
 >[!NOTE]
