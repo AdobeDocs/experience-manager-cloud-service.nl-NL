@@ -2,13 +2,13 @@
 title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
 
 ---
-
 
 # Bestanden en mappen uploaden naar Asset Selector {#upload-files-folders}
 
@@ -28,13 +28,13 @@ Voer de volgende stappen uit om elementen toe te voegen aan Asset Selector:
 
    U kunt geselecteerde afbeeldingen ook voorvertonen met behulp van de miniaturen en op het X-pictogram klikken om een bepaalde afbeelding uit de lijst te verwijderen. Het X-pictogram wordt alleen weergegeven wanneer u de muis boven de naam of grootte van de afbeelding houdt. U kunt ook op **[!UICONTROL Remove all]** klikken om alle items uit de uploadlijst te verwijderen.
 
-1. Klik op **[!UICONTROL Upload]** om het uploadproces te voltooien. Uw geüploade elementen worden weergegeven. Zie [ basisupload ](asset-selector-customization.md#basic-upload) voor de configureerbare code.
+1. Klik op **[!UICONTROL Upload]** om het uploadproces te voltooien. Uw geüploade elementen worden weergegeven. Zie [ basisupload ](/help/assets/asset-selector-customization.md#basic-upload) voor de configureerbare code.
 
 ## Elementen uploaden met metagegevens {#upload-assets-with-metadata}
 
-U kunt metagegevens aan de elementen toevoegen terwijl u deze direct in de toepassing uploadt. Metagegevens omvatten diverse velden, zoals de onderwerpregel van het bedrijf, productdetails, campagne enzovoort. Hiervoor wordt de eigenschap `metadataSchema` gebruikt. Ga naar [ eigenschappen van de activaselecteur ](asset-selector-properties.md) om meer over `metadataSchema` bezit te weten.
+U kunt metagegevens aan de elementen toevoegen terwijl u deze direct in de toepassing uploadt. Metagegevens omvatten diverse velden, zoals de onderwerpregel van het bedrijf, productdetails, campagne enzovoort. Hiervoor wordt de eigenschap `metadataSchema` gebruikt. Ga naar [ eigenschappen van de activaselecteur ](/help/assets/asset-selector-properties.md) om meer over `metadataSchema` bezit te weten.
 
-Zie [ uploaden met meta-gegevens ](#upload-with-metadata) voor het codefragment dat voor de configuratie wordt vereist.
+Zie [ uploaden met meta-gegevens ](/help/assets/asset-selector-customization.md#upload-with-metadata) voor het codefragment dat voor de configuratie wordt vereist.
 
 ![ upload activa met meta-gegevens ](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ Zie [ uploaden met meta-gegevens ](#upload-with-metadata) voor het codefragment 
 
 ## Aangepaste upload {#customize-upload}
 
-Met Asset Selector kunt u een aangepast uploadformulier toevoegen. Er zijn verschillende aanpassingen beschikbaar. Bijvoorbeeld staat het [ hideUploadButton ](#asset-selector-properties.md) bezit u toe om uploadt knoop te verbergen die door gebrek in de toepassing wordt getoond. In plaats daarvan, kunt u het aanpassen om buiten de MFE toepassing zoals vereist terug te geven. Zie [ aangepaste upload ](#asset-selector-customization.md#customized-upload) voor de configuratie.
+Met Asset Selector kunt u een aangepast uploadformulier toevoegen. Er zijn verschillende aanpassingen beschikbaar. Bijvoorbeeld staat het [ hideUploadButton ](/help/assets/asset-selector-properties.md) bezit u toe om uploadt knoop te verbergen die door gebrek in de toepassing wordt getoond. In plaats daarvan, kunt u het aanpassen om buiten de MFE toepassing zoals vereist terug te geven. Zie [ aangepaste upload ](/help/assets/asset-selector-customization.md#customized-upload) voor de configuratie.
 
 ![ Aangepaste upload ](assets/customized-upload.png)
-

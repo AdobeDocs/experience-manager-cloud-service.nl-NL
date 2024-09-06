@@ -2,7 +2,8 @@
 title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
 description: Integreer de selecteur van Activa met diverse Adobe, niet-Adobe, en derdetoepassingen.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 0%
@@ -18,11 +19,11 @@ Met Asset Selector kunt u de verschillende toepassingen voor Adobe integreren, z
 
 Gebruik de volgende voorwaarden als u Asset Selector integreert met Dynamic Media met OpenAPI-mogelijkheden:
 
-* [Communicatiemethoden](#overview-asset-selector.md#prereqs)
+* [Communicatiemethoden](/help/assets/overview-asset-selector.md#prereqs)
 * Voor toegang tot Dynamic Media met OpenAPI-mogelijkheden hebt u licenties nodig voor:
    * Assets repository (bijvoorbeeld Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Slechts [ goedgekeurde activa ](#approved-assets.md) zijn beschikbaar voor gebruik die merkconsistentie verzekeren.
+* Slechts [ goedgekeurde activa ](/help/assets/approve-assets.md) zijn beschikbaar voor gebruik die merkconsistentie verzekeren.
 
 ## Integratie voor Dynamic Media met OpenAPI-mogelijkheden {#adobe-app-integration-polaris}
 
@@ -36,7 +37,7 @@ De eigenschappen `rootPath` en `path` mogen geen deel uitmaken van de Dynamic Me
 aemTierType:[1: "delivery"]
 ```
 
-Met deze configuratie kunt u alle goedgekeurde elementen weergeven zonder mappen of als een platte structuur. Voor meer informatie, navigeer aan `aemTierType` bezit onder [ de eigenschappen van de Selecteur van Activa ](#asset-selector-properties.md).
+Met deze configuratie kunt u alle goedgekeurde elementen weergeven zonder mappen of als een platte structuur. Voor meer informatie, navigeer aan `aemTierType` bezit onder [ de eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md).
 
 
 ### Een URL voor dynamische levering maken op basis van goedgekeurde elementen {#create-dynamic-media-url}

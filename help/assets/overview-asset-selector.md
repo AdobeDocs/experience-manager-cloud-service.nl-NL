@@ -2,7 +2,8 @@
 title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 0%
@@ -19,7 +20,7 @@ De gebruikersinterface van Micro-Frontend wordt beschikbaar gesteld in uw toepas
 
 Asset Selector biedt vele voordelen, zoals:
 
-* Versnelling van integratie met om het even welke [ Adobe ](#integrate-asset-selector-adobe-app.md) of [ niet-Adobe ](#integrate-asset-selector.md) toepassingen die de bibliotheek van JavaScript Vanilla gebruiken.
+* Versnelling van integratie met om het even welke [ Adobe ](/help/assets/integrate-asset-selector-adobe-app.md) of [ niet-Adobe ](/help/assets/integrate-asset-selector-non-adobe-app.md) toepassingen die de bibliotheek van JavaScript Vanilla gebruiken.
 * Eenvoudig te onderhouden, aangezien updates van het Assets Selector-pakket automatisch worden geïmplementeerd op de Asset Selector die beschikbaar is voor uw toepassing. Uw toepassing hoeft geen updates uit te voeren om de laatste wijzigingen te laden.
 * Gemakkelijk aanpassen aangezien er eigenschappen beschikbaar zijn die de vertoning van de Selecteur van Activa binnen uw toepassing controleren.
 * In de volledige tekst doorzoeken, uit-van-de-doos, en aangepaste filters om snel aan activa voor gebruik binnen de auteurservaring te navigeren.
@@ -51,8 +52,8 @@ Gebruik de bovenstaande voorwaarden als u de IMS-verificatieworkflow van de Asse
 
 **zie meer**
 
-* [Asset Selector integreren met een Adobe-app](#integrate-asset-selector-adobe-app.md)
-* [Asset Selector integreren met een app die geen Adobe is](#integrate-asset-selector-non-adobe-app.md)
+* [Asset Selector integreren met een Adobe-app](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Asset Selector integreren met een app die geen Adobe is](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Dynamische API&#39;s voor het openen van media voor middelenselectie integreren](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -124,7 +125,7 @@ De Kiezer van activa verstrekt ook uit-van-de-doos filteropties om uw onderzoeks
 
 * **[!UICONTROL Status]:** bevat de huidige status van het element tussen `all` , `approved`, `rejected` of `no status` .
 * **[!UICONTROL File type]:** includes `folder`, `file`, `images`, `documents` of `video` .
-* **[!UICONTROL Expiration status]:** verwijst naar de elementen op basis van de vervalduur. U kunt het selectievakje `[!UICONTROL Expired]` inschakelen om verlopen elementen te filteren, of u kunt `[!UICONTROL Expiration Duration]` van een element instellen om elementen weer te geven op basis van de vervaldatum. Wanneer een element al is verlopen of bijna is verlopen, lijkt een badge om het zelfde aan te geven. Bovendien kunt u bepalen of u het gebruik (of slepen en neerzetten) van een verlopen element wilt toestaan. Zie meer over [ verlopen activa ](#asset-selector-customization.md#customize-expired-assets) aanpassen. Door gebrek, wordt het **Verlopen Soon** badge getoond voor activa die in de volgende 30 dagen verlopen. U kunt de vervaldatum echter configureren met de eigenschap `expirationDate` .
+* **[!UICONTROL Expiration status]:** verwijst naar de elementen op basis van de vervalduur. U kunt het selectievakje `[!UICONTROL Expired]` inschakelen om verlopen elementen te filteren, of u kunt `[!UICONTROL Expiration Duration]` van een element instellen om elementen weer te geven op basis van de vervaldatum. Wanneer een element al is verlopen of bijna is verlopen, lijkt een badge om het zelfde aan te geven. Bovendien kunt u bepalen of u het gebruik (of slepen en neerzetten) van een verlopen element wilt toestaan. Zie meer over [ verlopen activa ](/help/assets/asset-selector-customization.md#customize-expired-assets) aanpassen. Door gebrek, wordt het **Verlopen Soon** badge getoond voor activa die in de volgende 30 dagen verlopen. U kunt de vervaldatum echter configureren met de eigenschap `expirationDate` .
 
   >[!TIP]
   >

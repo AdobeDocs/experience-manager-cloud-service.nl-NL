@@ -2,13 +2,13 @@
 title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
 description: Gebruik functies om de kiezer van het element in uw toepassing aan te passen.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
-
 
 # Aanpassingen voor Asset Selector {#asset-selector-customization}
 
@@ -21,7 +21,7 @@ Met Asset Selector kunt u verschillende componenten aanpassen op basis van voork
 * [Verlopen elementen aanpassen](#customize-expired-assets)
 * [Contextafhankelijke aanroepfilter](#contextual-invocation-filter)
 
-U moet de voorwaarden definiëren in het `index.html` -bestand of een vergelijkbaar bestand in de implementatie van uw toepassing om de verificatiegegevens te definiëren voor toegang tot de [!DNL Experience Manager Assets] -opslagplaats. Als u klaar bent, kunt u naar wens codefragmenten toevoegen.
+U moet de eerste vereisten in het {**dossier 0} index.html of een gelijkaardig dossier binnen uw toepassingsimplementatie bepalen om de authentificatiedetails te bepalen om tot de [!DNL Experience Manager Assets] bewaarplaats toegang te hebben.** Als u klaar bent, kunt u naar wens codefragmenten toevoegen.
 
 ## Deelvenster Filter aanpassen {#customize-filter-panel}
 
@@ -186,12 +186,12 @@ In de volgende tabel worden enkele belangrijke eigenschappen van het object Sele
 | *tiff:imageLength* | getal | De hoogte van een element. |
 | *computedMetadata* | `Record<string, any>` | Een object dat een emmertje vertegenwoordigt voor alle soorten metagegevens van het element (gegevensopslagruimte, toepassing of ingesloten metagegevens). |
 | *_links* | `Record<string, any>` | Hypermediakoppelingen voor het bijbehorende element. Bevat koppelingen voor bronnen zoals metagegevens en uitvoeringen. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Array met objecten die informatie bevatten over uitvoeringen van het element. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | De URI naar de vertoning. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | Het MIME-type van de vertoning. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size> &quot;* | getal | De grootte van de vertoning in bytes. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | getal | De breedte van de vertoning. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | getal | De hoogte van de vertoning. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | Array met objecten die informatie bevatten over uitvoeringen van het element. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | string | De URI naar de vertoning. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | string | Het MIME-type van de vertoning. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | getal | De grootte van de vertoning in bytes. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | getal | De breedte van de vertoning. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | getal | De hoogte van de vertoning. |
 
 ### Selectie van Assets afhandelen met behulp van objectschema {#handling-selection}
 

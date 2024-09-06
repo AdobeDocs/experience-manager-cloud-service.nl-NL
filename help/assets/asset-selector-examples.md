@@ -2,17 +2,17 @@
 title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
 description: Voorbeelden om Asset Selector te gebruiken om naar wens aan te passen.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
-
 # Voorbeelden voor het gebruik van de eigenschappen van Asset Selector {#usage-examples}
 
-U kunt de Eigenschappen van de Selecteur van Activa [ ](#asset-selector-properties.md) in het `index.html` dossier bepalen om de vertoning van de Selecteur van Activa binnen uw toepassing aan te passen.
+U kunt de Eigenschappen van de Selecteur van Activa [ ](/help/assets/asset-selector-properties.md) in het **index.html** dossier bepalen om de vertoning van de Selecteur van Activa binnen uw toepassing aan te passen.
 
 ## Voorbeeld 1: Kiezer voor bedrijfsmiddelen in spoorwegweergave
 
@@ -55,4 +55,3 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 >* [ de aanpassing van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)
 >* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
 >* [ integreer de dynamische media van de Selecteur van Activa open APIs ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-

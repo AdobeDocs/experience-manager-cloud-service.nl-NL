@@ -2,13 +2,13 @@
 title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!DNL Cloud Service]
 description: Integreer de selecteur van Activa met diverse Adobe, niet-Adobe, en derdetoepassingen.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 55848de0-aff2-42a0-b959-c771235d9425
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
 
 ---
-
 
 # Integratie met een toepassing zonder Adobe {#integrate-asset-selector-non-adobe-app}
 
@@ -18,7 +18,7 @@ Met Asset Selector kunt u toepassingen van andere leveranciers of leveranciers i
 
 Gebruik de volgende voorwaarden als u Asset Selector integreert met een toepassing zonder Adobe:
 
-* [Communicatiemethoden](#overview-asset-selector.md#prereqs)
+* [Communicatiemethoden](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
 * imsScope
 * redirectUrl
