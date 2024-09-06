@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
+source-wordcount: '5578'
 ht-degree: 3%
 
 ---
@@ -456,7 +456,17 @@ ht-degree: 3%
    + [Overzicht van microservices voor bedrijfsmiddelen](/help/assets/asset-microservices-overview.md)
    + [Toegankelijkheid in  [!DNL Assets]](/help/assets/accessibility.md)
    + Digitale middelen beheren {#manage}
-      + [Micro-Frontend element selecteren](/help/assets/asset-selector.md)
+      + Micro-Frontend element selecteren {#asset-selector}
+         + [Overzicht van Asset Selector](/help/assets/overview-asset-selector.md)
+         + Integraties van Asset Selector {#asset-selector-integration}
+            + [Overzicht van de integratie van Asset Selector](/help/assets/integrate-asset-selector.md)
+            + [Asset Selector integreren met een Adobe-toepassing](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Asset Selector integreren met een toepassing zonder Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Asset Selector voor Dynamic Media integreren met OpenAPI-mogelijkheden](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Eigenschappen van Asset Selector](/help/assets/asset-selector-properties.md)
+         + [Voorbeelden van Asset Selector](/help/assets/asset-selector-examples.md)
+         + [Aanpassingen voor Asset Selector](/help/assets/asset-selector-customization.md)
+         + [Uploaden van middelenkiezer](/help/assets/asset-selector-upload.md)
       + [Micro-front-bestemmingskiezer](/help/assets/destination-selector.md)
       + [Elementen delen](/help/assets/share-assets.md)
       + [Verwerking van middelen](/help/assets/reprocessing.md)

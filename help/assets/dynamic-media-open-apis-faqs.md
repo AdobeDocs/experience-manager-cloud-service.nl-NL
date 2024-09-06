@@ -2,9 +2,10 @@
 title: Dynamic Media met OpenAPI-mogelijkheden heeft vaak vragen gesteld
 description: Dynamic Media met OpenAPI-mogelijkheden heeft vaak vragen gesteld
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
+source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1478'
 ht-degree: 0%
 
 ---
@@ -108,14 +109,14 @@ Hier volgen enkele belangrijke verschillen tussen Dynamic Media met OpenAPI-moge
 | [ Beschikbaar slechts met Assets as a Cloud Service ](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Ook beschikbaar met On-premise of Adobe Managed Services met extra configuratie en leveringsstappen. |
 | [ Beperkte reeks gesteunde beeldbepalingen, zoals breedte, hoogte, roteert, omkeert, kwaliteit, en formaat ](/help/assets/deliver-assets-apis.md) | Rijke set met beschikbare afbeeldingsopties |
 | [ Beperkte die activalevering op gebruikers, rollen, datum, en tijd wordt gebaseerd ](/help/assets/restrict-assets-delivery.md) | Assets gepubliceerd naar Dynamic Media is toegankelijk voor alle gebruikers |
-| De meeste ontwikkelaars zijn bekend met OpenAPI-specificaties. De rekbaarheid van AEM Assets wordt werkelijk eenvoudig door [ Micro Frontend de Selector van Activa te gebruiken ](/help/assets/asset-selector.md). | Op SOAP gebaseerde API&#39;s, die een barrière worden tijdens het ontwikkelen van integratieaanpassingen. |
+| De meeste ontwikkelaars zijn bekend met OpenAPI-specificaties. De rekbaarheid van AEM Assets wordt werkelijk eenvoudig door [ Micro-Frontend de Selector van Activa te gebruiken ](/help/assets/overview-asset-selector.md). | Op SOAP gebaseerde API&#39;s, die een barrière worden tijdens het ontwikkelen van integratieaanpassingen. |
 | Wijzigingen die worden aangebracht in goedgekeurde elementen in DAM, inclusief versies-updates en wijzigingen in metagegevens, worden automatisch doorgevoerd in de URL&#39;s van de levering. Met een korte TTL-waarde (Time-to-Live) van 10 minuten die voor Dynamic Media met OpenAPI mogelijkheden via CDN wordt gevormd, worden de updates zichtbaar over alle creatie en gepubliceerde interfaces binnen 10 minuten. | Aanbevolen CDN TTL van 10 uur. U kunt de waarde van TTL met de actie van de geheim voorgeheugenontbinding met voeten treden. |
 | Alleen goedgekeurde bedrijfsmiddelen zijn beschikbaar voor de levering van bedrijfsmiddelen aan downstreamtoepassingen, waardoor in digitale ervaringen goedgekeurde bedrijfsmiddelen onder een merknaam kunnen worden geplaatst. | Wijzigingen van gepubliceerde Dynamic Media-middelen worden automatisch gepubliceerd zonder enige goedkeuringswerkstroom. Dit betekent niet dat goedgekeurde middelen in digitale ervaringen automatisch worden bijgewerkt. |
 | Gebruiksrapporten op basis van het aantal geleverde elementen. Deze functie is binnenkort beschikbaar. | Gebruiksrapporten zijn niet beschikbaar. Deze functie is binnenkort beschikbaar. |
 | Assets gemarkeerd als Verlopen op Assets as a Cloud Service dataopslag is niet meer beschikbaar voor downstreamtoepassingen. | Geen intrinsieke vervaldatum van activa. Een middel blijft openbaar tot het uit de bewaarplaats van AEM as a Cloud Service wordt geschrapt. |
 | Biedt geen ondersteuning voor voorinstellingen voor afbeeldingen en mogelijkheden voor slim uitsnijden voor video. | Ondersteunt voorinstellingen voor afbeeldingen en mogelijkheden voor slim uitsnijden voor video. |
 | Dynamische videocoderingscodes die ervoor zorgen dat de beste coderingen worden uitgevoerd op basis van de invoervideo. Er is geen installatie vereist voor native video-levering. | Standaard 3-coderingen, ongeacht de invoervideo (kan van invloed zijn op de prestaties van de video). U moet handmatig verschillende coderingen instellen voor verschillende bitsnelheden voor video. |
-| URL&#39;s op basis van UID-elementen (maakt URL-verwarring mogelijk) zijn moeilijk te raden, maar SEO is geoptimaliseerd. | URL-verwarring is alleen beschikbaar voor URL-queryparameters. Assets-id&#39;s (elementnamen) in URL&#39;s kunnen worden opgenomen. |
+| Moeilijk om op UID gebaseerde URL&#39;s met middelen te raden (maakt URL-verwarring mogelijk), maar SEO geoptimaliseerd. | URL-verwarring is alleen beschikbaar voor URL-queryparameters. Assets-id&#39;s (elementnamen) in URL&#39;s kunnen worden opgenomen. |
 
 +++
 
@@ -135,6 +136,3 @@ De onderstaande tabel geeft een overzicht van de belangrijkste verschillen tusse
 | Metagegevens van middelen op externe DAM zijn ook beschikbaar in AEM Sites-instantie. | Metagegevens van middelen op externe DAM zijn niet beschikbaar op AEM Sites-instanties. |
 
 +++
-
-
-

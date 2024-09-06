@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 0%
@@ -88,7 +88,7 @@ U kunt zijn details in het [ eigenschappen spoor bekijken.](/help/sites-cloud/au
 ![ het Uitgeven media ](assets/ue-edit-media.png)
 
 1. Tik of klik op de voorvertoning van de geselecteerde afbeelding in de eigenschappenbalk.
-1. Het [ activa selecteur ](/help/assets/asset-selector.md#using-asset-selector) venster opent om u toe te staan om activa te selecteren.
+1. Het [ activa selecteur ](/help/assets/overview-asset-selector.md#using-asset-selector) venster opent om u toe te staan om activa te selecteren.
 1. Selecteer deze optie om een nieuw element te selecteren.
 1. Selecteer **Uitgezochte** om aan eigenschappen spoor terug te keren waar de activa werd vervangen.
 

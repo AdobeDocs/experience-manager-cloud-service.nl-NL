@@ -2,7 +2,8 @@
 title: Dynamic Media met OpenAPI-mogelijkheden
 description: Leer belangrijke concepten zoals waarom Dynamic Media met OpenAPI-mogelijkheden wordt gebruikt en hoe u dit kunt inschakelen.
 role: User
-source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
+exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
+source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Dynamic Media met OpenAPI-mogelijkheden plaatst DAM centraal in een flexibel en 
 
 Dynamic Media met OpenAPI-mogelijkheden biedt de volgende belangrijke voordelen:
 
-* **Naadloze integraties**: Dynamic Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om levering van activa met hun toepassingen ](/help/assets/integrate-dynamic-media-open-apis.md) gemakkelijk [ te integreren. De toepassingen omvatten Adobe evenals derdetoepassingen. Het verstrekt a [ Micro Frontend activa selecteerde gebruikersinterface ](/help/assets/asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
+* **Naadloze integraties**: Dynamic Media met mogelijkheden OpenAPI biedt een uitvoerige reeks onderzoek en levering APIs aan. Het staat uw ontwikkelaars toe om levering van activa met hun toepassingen ](/help/assets/integrate-dynamic-media-open-apis.md) gemakkelijk [ te integreren. De toepassingen omvatten Adobe evenals derdetoepassingen. Het verstrekt a [ Micro Frontend activa selecteerde gebruikersinterface ](/help/assets/overview-asset-selector.md) om goedgekeurde activa te zoeken en te selecteren. De kiezer kan moeiteloos worden geïntegreerd met elke toepassing die is gebaseerd op JavaScript-frameworks zoals React JS, Angular JS en Vanilla JS.
 
 * **Gecentraliseerd beheer van digitale activa**: DAM is de enige bron van waarheid voor alle digitale activa. Uw digitale middelen worden centraal beheerd in AEM Assets en worden aan verbruikende toepassingen geleverd door verwijzing gebruikend levering URLs, zonder activa te kopiëren binaries.
 
@@ -103,11 +104,11 @@ Nadat u het ondersteuningsticket hebt verzonden, biedt Adobe Dynamic Media met O
    </p>
 </td>
 <td>
-   <a href="/help/assets/asset-selector.md">
+   <a href="/help/assets/overview-asset-selector.md">
    <img alt="Asset Selector van Adobe" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/asset-selector.md">
+      <a href="/help/assets/overview-asset-selector.md">
       <strong> de Micro-Frontend selecteur van Activa van de Adobe </strong>
       </a>
    </div>
@@ -204,4 +205,3 @@ Nadat u het ondersteuningsticket hebt verzonden, biedt Adobe Dynamic Media met O
 </td>
 
 </table>
-
