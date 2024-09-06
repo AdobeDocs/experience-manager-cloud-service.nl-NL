@@ -3,7 +3,7 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Integreer de selecteur van Activa met diverse Adobe, niet-Adobe, en derdetoepassingen.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: b85363b0a284929a2308ebee24888937f7c32841
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -29,9 +29,9 @@ U kunt verificatie uitvoeren zonder enkele IMS-eigenschappen te definiëren, als
 
 U kunt Asset Selector integreren met verschillende toepassingen, zoals:
 
-* [Integreer de Selecteur van Activa met een  [!DNL Adobe]  toepassing](#integrate-asset-selector.md)
-* [Asset Selector integreren met een toepassing zonder Adobe](#integrate-asset-selector-non-adobe.md)
-* [Integratie voor Dynamic Media met OpenAPI-mogelijkheden](#integrate-asset-selector-dynamic-media-open-api.md)
+* [Integreer de Selecteur van Activa met een  [!DNL Adobe]  toepassing](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Asset Selector integreren met een toepassing zonder Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [Integratie voor Dynamic Media met OpenAPI-mogelijkheden](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!MORELIKETHIS]
