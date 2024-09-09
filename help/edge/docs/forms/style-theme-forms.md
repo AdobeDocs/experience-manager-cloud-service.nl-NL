@@ -1,12 +1,12 @@
 ---
-title: Thema en stijl aanpassen voor een AEM Forms Edge Delivery ServicesForm
-description: Thema en stijl aanpassen voor een AEM Forms Edge Delivery ServicesForm
+title: Thema en stijl aanpassen voor Edge Delivery Services voor AEM Forms
+description: Thema en stijl aanpassen voor Edge Delivery Services voor AEM Forms
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---

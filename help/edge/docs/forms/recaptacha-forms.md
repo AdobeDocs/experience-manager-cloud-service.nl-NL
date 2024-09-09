@@ -1,12 +1,12 @@
 ---
 title: reCAPTCHA gebruiken met Edge Delivery Services voor AEM Forms as a Cloud Service
-description: Google reCAPTCHA gebruiken in een EDS-formulier
+description: Google reCAPTCHA gebruiken in een formulier voor Edge Delivery Services voor AEM Forms
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: fe45123b3aefddaf02bc8584283941db168ba174
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # reCAPTCHA gebruiken met Edge Delivery Services voor AEM Forms as a Cloud Service
 
-<span> **reCAPTCHA** eigenschap is onder het pre-versieprogramma. Om toegang tot **reCAPTCHA** eigenschap voor de Edge Delivery Services van AEM Forms te verzoeken, verzend een e-mail van uw het werkadres naar mailto:aem-forms-ea@adobe.com.</span>
+<span> **reCAPTCHA** eigenschap is onder het pre-versieprogramma. Om toegang tot **reCAPTCHA** eigenschap voor Edge Delivery Services voor AEM Forms te verzoeken, verzend een e-mail van uw werkadres naar mailto:aem-forms-ea@adobe.com.</span>
 
 reCAPTCHA is een populair hulpmiddel dat wordt gebruikt om websites te beschermen tegen frauduleuze activiteiten, spam en misbruik. In Edge Delivery Services biedt het Adaptive Forms Block de mogelijkheid om Google reCAPTCHA toe te voegen om onderscheid te maken tussen mensen en bots. Met deze functie kunnen gebruikers hun website beschermen tegen spam en misbruik.
 Neem bijvoorbeeld een enquêteformulier waarin gegevens worden verzameld zoals begin- en eindreisdatums, kamerbudget, geschatte reiskosten en reizigersinformatie. In dergelijke gevallen bestaat het risico dat kwaadwillende gebruikers het formulier exploiteren voor doeleinden als het verzenden van phishinge-mails of het overlopen van het formulier met irrelevante of schadelijke inhoud met behulp van spambots. De integratie van reCAPTCHA biedt extra veiligheid door te verifiëren dat de bijdragen van echte gebruikers zijn, effectief minimaliserend spamingingingangen.

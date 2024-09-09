@@ -1,19 +1,19 @@
 ---
 title: Aangepaste componenten van het Blok van de Vorm en hun eigenschappen
-description: Dit document bevat een overzicht van de formuliercomponenten en hun eigenschappen die beschikbaar zijn in AEM Forms Edge Delivery Service.
+description: Dit document biedt een overzicht van de formuliercomponenten en hun eigenschappen die beschikbaar zijn in Edge Delivery Services voor AEM Forms.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1009'
 ht-degree: 0%
 
 ---
 
 # Aangepaste componenten van het Blok van de Vorm en hun eigenschappen
 
-Met AEM Forms Edge Delivery Services kunt u gebruikersvriendelijke en interactieve formulieren maken met behulp van verschillende componenten. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
+Met Edge Delivery Services voor AEM Forms kunt u gebruikersvriendelijke en interactieve formulieren maken met behulp van verschillende componenten. Deze componenten zijn geschikt voor verschillende soorten gegevensverzameling en kunnen eenvoudig aan uw specifieke behoeften worden aangepast.
 
 
 ![ een steekproefspreadsheet van A met sommige componenten en eigenschappen ](/help/edge/assets/sample-form-in-spreadsheet.png)

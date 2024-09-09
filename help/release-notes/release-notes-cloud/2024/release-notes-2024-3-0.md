@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2024.3.0 versie van  [!DNL Adobe Experien
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2292'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Voor meer informatie, zie de [ documentatie ](/help/edge/overview.md) en bekijk 
 
 **Universele Redacteur voor Hoofdloze Implementaties**
 
-De Universele Redacteur laat ook ontkoppelde Webtoepassingen toe om het zelfde intuïtieve in-contextWYSIWYG te gebruiken die eerder exclusief aan traditionele plaatsen was. Inhoudsmakers kunnen nu lay-outs visueel samenstellen met gebruik van Content Fragments met dezelfde snelheid als componenten binnen pagina&#39;s.
+Met de Universal Editor kunnen ook ontkoppelde webtoepassingen dezelfde intuïtieve in-context WYSIWYG-authoring gebruiken die voorheen exclusief was voor traditionele sites. Inhoudsmakers kunnen nu lay-outs visueel samenstellen met gebruik van Content Fragments met dezelfde snelheid als componenten binnen pagina&#39;s.
 
 Wat de Universele Redacteur onderscheidt is zijn aanpassingsvermogen aan diverse Webarchitecturen, die zowel server-als cliënt-zijteruggeven aanpassen, die kader-agnostiek blijven, en de noodzaak voor AEM het ontvangen elimineren. Het is eenvoudig om bestaande webtoepassingen te integreren met de Universal Editor voor het bewerken van inhoud, waarbij ontwikkelaars vooral specifieke gegevenskenmerken moeten opnemen in hun opmaak.
 
@@ -116,7 +116,7 @@ Met Assets Essentials kunnen beheerders toegangsniveaus beheren voor privéverza
 
 ### Nieuwe functies voor AEM Forms {#forms-new-features}
 
-* **[de Edge Delivery Services van Adobe Experience Manager Forms](/help/edge/docs/forms/overview.md)**: De Edge Delivery Services van AEM Forms zijn een composable reeks diensten die een snelle ontwikkelomgeving toelaat waar de auteurs, nieuwe vormen kunnen bijwerken publiceren en snel lanceren. Deze services bieden buitengewone en zeer belangrijke vormen van ervaring die de betrokkenheid en conversies stimuleren. Deze formulieren zijn gemakkelijk te ontwerpen en te ontwikkelen.
+* **[de Edge Delivery Services van Adobe Experience Manager Forms](/help/edge/docs/forms/overview.md)**: Edge Delivery Services voor AEM Forms is een composable reeks diensten die een snelle ontwikkelomgeving toelaat waar de auteurs, nieuwe vormen kunnen bijwerken publiceren en snel lanceren. Deze services bieden buitengewone en zeer belangrijke vormen van ervaring die de betrokkenheid en conversies stimuleren. Deze formulieren zijn gemakkelijk te ontwerpen en te ontwikkelen.
 
   ![ EDS Forms Eigenschappen ](/help/edge/assets/eds-forms-features.png)
 
@@ -197,13 +197,13 @@ De gegevensservice Real Use Monitoring (RUM) biedt een preciezere weergave van g
 
 #### Waarschuwingen over verkeersfilterregels (vroege adopter-programma) {#traffic-filter-rules-alerts-early-adopter}
 
-Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web omvatten (WAF), laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
+Onlangs vrijgegeven {de Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden toegestaan of worden ontkend.[
 
 Nu kunt u **<aemcs-cdn-config-adopter@adobe.com>** per e-mail verzenden om deel te nemen aan het vroege adoptieprogramma zodat kunt u worden gewaarschuwd wanneer uw regels van de verkeersfilter worden teweeggebracht. De e-mailberichten van het Centrum van acties zullen u op de hoogte houden wanneer bepaalde verkeersvoorwaarden voorkomen zodat kunt u aangewezen maatregelen nemen.
 
 #### CDN-configuratie (programma voor vroege adoptie) {#cdn-config-early-adopter}
 
-Naast onlangs vrijgegeven [ Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web omvatten (WAF), is er een kans om de Pijpleiding van de Configuratie te gebruiken om andere types van configuratie te verklaren en op te stellen CDN. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md) en sluit zich aan bij het vroege adopterprogramma door **<aemcs-cdn-config-adopter@adobe.com>** te e-mailen om toegang te krijgen tot:
+Naast onlangs vrijgegeven [ Regels van de Filter van het Verkeer ](/help/security/traffic-filter-rules-including-waf.md), die de naar keuze licentiebare regels van de Firewall van de Toepassing van het Web (WAF) omvatten, is er een kans om de Pijpleiding van de Configuratie te gebruiken om andere types van configuratie te verklaren en op te stellen CDN. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md) en sluit zich aan bij het vroege adopterprogramma door **<aemcs-cdn-config-adopter@adobe.com>** te e-mailen om toegang te krijgen tot:
 
 * 301/302 omleidingen op de client
 * verzoeken aan de rand van willekeurige oorsprong opnieuw exporteren (zoals niet-AEM toepassingen)

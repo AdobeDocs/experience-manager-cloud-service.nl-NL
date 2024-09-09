@@ -1,12 +1,12 @@
 ---
-title: Aan de slag met AEM Forms Edge Delivery Service. Maak een formulier.
+title: Aan de slag met Edge Delivery Services voor AEM Forms. Maak een formulier.
 description: Creëer snelle perfecte formulieren! ⚡ op AEM Forms Edge Delivery gebaseerde authoring = razendsnelheid en SEO-vriendelijke formulieren voor gelukkige gebruikers en zoekmachines.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: f6a320b0f3960ae789559b837995986bf0a4bbad
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---

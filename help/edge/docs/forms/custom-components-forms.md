@@ -6,16 +6,16 @@ hide: true
 hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
-source-git-commit: 4356fcc73a9c33a11365b1eb3f2ebee5c9de24f0
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '665'
 ht-degree: 1%
 
 ---
 
 # Aangepaste componenten maken
 
-De Edge Delivery Services van AEM Forms staan u toe om de [ inheemse HTML vormcomponenten ](/help/edge/docs/forms/form-components.md) aan te passen en gebruikersvriendelijke en interactieve vormen tot stand te brengen. Het laat u toe om de vormcomponenten met vooraf bepaalde prijsverhoging te wijzigen, zoals die in [ wordt verklaard het Stijlen van vormgebieden ](/help/edge/docs/forms/style-theme-forms.md) gebruikend douane CSS (Cascading Style Sheets) en douanecode voor het versieren van de component, zo verbeterend de verschijning van vormgebieden binnen een Aangepast Blok van Forms.
+De Edge Delivery Services voor AEM Forms staan u toe om de [ inheemse HTML vormcomponenten ](/help/edge/docs/forms/form-components.md) aan te passen en gebruikersvriendelijke en interactieve vormen tot stand te brengen. Het laat u toe om de vormcomponenten met vooraf bepaalde prijsverhoging te wijzigen, zoals die in [ wordt verklaard het Stijlen van vormgebieden ](/help/edge/docs/forms/style-theme-forms.md) gebruikend douane CSS (Cascading Style Sheets) en douanecode voor het versieren van de component, zo verbeterend de verschijning van vormgebieden binnen een Aangepast Blok van Forms.
 
 ![ de component van de Douane ](/help/edge/assets/custom-component-image.png)
 

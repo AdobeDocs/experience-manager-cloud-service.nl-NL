@@ -1,20 +1,20 @@
 ---
-title: Een AEM Forms Edge Delivery ServicesForm vertalen en lokaliseren
-description: Een AEM Forms Edge Delivery ServicesForm vertalen en lokaliseren
+title: Een Edge Delivery Services voor AEM Forms vertalen en lokaliseren
+description: Een Edge Delivery Services voor AEM Forms vertalen en lokaliseren
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 
-# Een AEM Forms Edge Delivery ServicesForm vertalen en lokaliseren
+# Een Edge Delivery Services voor AEM Forms vertalen en lokaliseren
 
 Bij het vertalen van formulieren in Edge Delivery Services gaat het om het omzetten van formulierinhoud van de ene taal naar de andere, waarbij de nadruk ligt op nauwkeurigheid, helderheid en consistentie. Vertaalde of gelokaliseerde formulieren maken een breder bereik voor het publiek mogelijk op verschillende geografische locaties, waardoor de gebruikerservaring toeneemt en een betere communicatie tussen verschillende taalvoorkeuren mogelijk wordt.
 
