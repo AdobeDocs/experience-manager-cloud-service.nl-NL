@@ -3,9 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Integreer de selecteur van Activa met diverse Adobe, niet-Adobe, en derdetoepassingen.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -141,3 +141,9 @@ De Selecteur van activa wordt teruggegeven op het `<div>` containerelement, zoal
 >
 >Als u Asset Selector hebt geïntegreerd met de workflow Aanmelden maar nog steeds geen toegang hebt tot de gegevensopslagruimte, moet u ervoor zorgen dat browsercookies worden opgeschoond. Anders krijgt u de fout `invalid_credentials All session cookies are empty` in de console.
 
+>[!MORELIKETHIS]
+>
+>* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
+>* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
+>* [ integreer de Selector van Activa met Dynamic Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [ de aanpassingen van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)

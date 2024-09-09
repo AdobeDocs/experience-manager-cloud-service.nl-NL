@@ -3,9 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -219,13 +219,19 @@ Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
         <em> vormt en past diverse componenten van de Selecteur van Activa aan die op uw bruikbaarheid worden gebaseerd. </em>
         </p>
     </td>
-    <td></td>
+    <td>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Uploadafbeelding voor middelenkiezer"><br/>
+        <a href="asset-selector-upload.md"> Aanpassingen van de Selecteur van Activa </a>
+        <p>
+        <em> Leer hoe u dossiers of omslagen aan de Selecteur van Activa van uw lokaal of derdedossiersysteem kunt uploaden. </em>
+        </p>
+    </td>
 </tr>
 </table>
 
 >[!MORELIKETHIS]
 >
->* [ de aanpassing van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)
+>* [ de aanpassingen van de Selecteur van Activa ](/help/assets/asset-selector-customization.md)
 >* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
 >* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
->* [ integreer de dynamische media van de Selecteur van Activa open APIs ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [ integreer de Selector van Activa met Dynamic Media met mogelijkheden OpenAPI ](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

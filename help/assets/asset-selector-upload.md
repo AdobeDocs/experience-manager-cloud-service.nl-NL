@@ -3,9 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -54,3 +54,9 @@ Zie [ uploaden met meta-gegevens ](/help/assets/asset-selector-customization.md#
 Met Asset Selector kunt u een aangepast uploadformulier toevoegen. Er zijn verschillende aanpassingen beschikbaar. Bijvoorbeeld staat het [ hideUploadButton ](/help/assets/asset-selector-properties.md) bezit u toe om uploadt knoop te verbergen die door gebrek in de toepassing wordt getoond. In plaats daarvan, kunt u het aanpassen om buiten de MFE toepassing zoals vereist terug te geven. Zie [ aangepaste upload ](/help/assets/asset-selector-customization.md#customized-upload) voor de configuratie.
 
 ![ Aangepaste upload ](assets/customized-upload.png)
+
+>[!MORELIKETHIS]
+>
+>* [ Voorbeelden van de Selecteur van Activa ](/help/assets/asset-selector-examples.md)
+>* [ integreer de Selector van Activa met diverse toepassingen ](/help/assets/integrate-asset-selector.md)
+>* [ Eigenschappen van de Selecteur van Activa ](/help/assets/asset-selector-properties.md)
