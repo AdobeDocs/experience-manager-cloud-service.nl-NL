@@ -3,9 +3,10 @@ title: Opmerkingen bij de release voor Cloud Manager 2024.9.0 in Adobe Experienc
 description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.9.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -32,9 +33,17 @@ De releasedatum voor Cloud Manager release 2024.9.0 in AEM as a Cloud Service is
 
   Met Cloud Manager, kunt u nu aan [ zelf-dienst Adobe produceren en beheerde (de Bevestiging van het Domein) SSL certificaten DV ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) leiden. Deze mogelijkheid biedt u de snelste, eenvoudigste en voordeligste oplossing voor het maken van een veilige website voor uw onlineorganisatie of bedrijf. <!-- CMGR-52403 -->
 
+  >[!NOTE]
+  >
+  >[ Content Hub ](/help/assets/product-overview.md) klanten zijn gepland om deze eigenschap in fasen als deel van een geleidelijke uitlooptraject te ontvangen.
+
 * **Edge Delivery Services steun in Cloud Manager:**
 
-  Als u Edge Delivery Services vergunning als deel van AEM Sites hebt, [ kunt u nu aan boord uw plaats met Edge Delivery Services direct door Cloud Manager ](/help/implementing/cloud-manager/edge-delivery-services.md). Met deze functie beschikt u over een begeleide, zelfbediening voor Go Live-ervaring. Het verenigt ook essentiële werkschema&#39;s zoals het beheer van domeinnamen, SSL certificaten, en afbeeldingen CDN over al uw AEM eigenschappen, die consistentie en efficiency verzekeren. <!-- CMGR-49859 -->
+  Als u een Edge Delivery Services vergunning als deel van AEM Sites hebt, [ kunt u nu aan boord uw plaats met Edge Delivery Services direct door Cloud Manager ](/help/implementing/cloud-manager/edge-delivery-services.md). Met deze functie beschikt u over een begeleide, zelfbediening voor Go Live-ervaring. Het verenigt ook essentiële werkschema&#39;s zoals het beheer van domeinnamen, SSL certificaten, en afbeeldingen CDN over al uw AEM eigenschappen, die consistentie en efficiency verzekeren. <!-- CMGR-49859 -->
+
+  >[!NOTE]
+  >
+  >[ Content Hub ](/help/assets/product-overview.md) klanten zijn gepland om deze eigenschap in fasen als deel van een geleidelijke uitlooptraject te ontvangen.
 
 * De klanten die bewaarplaatsen GitHub gebruiken hebben nu de capaciteit om de pijpleidingen van Config van de Rij van het Web tot stand te brengen en te gebruiken. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
