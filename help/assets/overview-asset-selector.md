@@ -3,7 +3,7 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 0%
@@ -221,7 +221,7 @@ Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
     </td>
     <td>
         <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Uploadafbeelding voor middelenkiezer"><br/>
-        <a href="asset-selector-upload.md"> Aanpassingen van de Selecteur van Activa </a>
+        <a href="asset-selector-upload.md"> de Selecteur van Activa uploadt </a>
         <p>
         <em> Leer hoe u dossiers of omslagen aan de Selecteur van Activa van uw lokaal of derdedossiersysteem kunt uploaden. </em>
         </p>
