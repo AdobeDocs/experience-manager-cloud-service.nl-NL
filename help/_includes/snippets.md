@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -161,3 +161,22 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >[!TIP]
 >
 >Ben je nieuw voor Dynamic Media? Voor snel, overzicht op hoog niveau van Dynamic Media, zie [ Werk met Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md).
+
+## Zie ook voor Dynamic Media {#see-also-dm}
+
+>[!NOTE]
+>
+>* Ben je nieuw voor Dynamic Media? Voor snel, overzicht op hoog niveau van Dynamic Media, zie [ Werk met Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md).
+>
+>* Volg [ Beste praktijken van Dynamic Media ](/help/assets/dynamic-media/dm-best-practices.md) om de meeste waarde te krijgen.
+>
+>* Probeer uit de beeldmogelijkheden van Dynamic Media met [ hulpmiddel van de Momentopname ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>
+>* Verzeker vlotte videoplayback met [ adaptieve video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>
+>* Automatiseer het bebouwen van [ beelden met het Slimme Gewas ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>
+>* Automatiseer het bebouwen van [ video&#39;s met het Slimme Gewas ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>
+>* Lever [ interactieve 3D-Aangedreven ervaring ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Andere [ Dynamic Media middelbank ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).

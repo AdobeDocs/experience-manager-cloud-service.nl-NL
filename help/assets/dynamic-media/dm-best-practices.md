@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -411,3 +411,5 @@ Meer informatie? Ga naar [ Slimme Beeldvorming ](/help/assets/dynamic-media/imag
 CDN (Content Delivery Network) plaatst Dynamic Media-elementen in cache voor snelle levering aan klanten. Wanneer deze middelen worden bijgewerkt, is het belangrijk dat de wijzigingen onmiddellijk op de website van kracht worden. Door de CDN-cache leeg te maken of te wissen, kunnen elementen die door Dynamic Media worden geleverd snel worden bijgewerkt. Deze benadering elimineert de behoefte om op het geheime voorgeheugen te wachten die op de waarde van TTL (Tijd aan Levend) wordt gebaseerd verlopen, die typisch aan tien uren wordt geplaatst. Afhankelijk van uw specifieke gebruiksgeval, kunt u de montages van CDN TTL (Tijd aan Levend) dienovereenkomstig bijwerken.
 
 Meer informatie? Ga naar [ ongeldig maakt het CDN geheime voorgeheugen als Dynamic Media ](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+
+{{see-also-dm}}

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '3671'
+source-wordcount: '3612'
 ht-degree: 0%
 
 ---
@@ -268,18 +268,20 @@ De bovenstaande vertoning is live! [ probeer het ](https://s7d1.scene7.com/s7vie
 
 Deel I van deze reis ging over de grondbeginselen van verschillende Dynamic Media-onderwerpen. Als u meer wilt weten over wat u leest, gebruikt u de onderstaande materialen om concepten in detail te verkennen. Anders kunt u doorgaan met deel II van uw reis. Zie [ wat volgende in deze Reis van Dynamic Media ](#whats-next) is.
 
-_de onderwerpen van de Hulp van Dynamic Media_
+{{see-also-dm}}
+<!--
+_Dynamic Media Help topics_
 
-* [Werken met Dynamic Media in Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
-* [Slimme afbeeldingen](/help/assets/dynamic-media/imaging-faq.md)
-* [Aangepaste videosets maken](/help/assets/dynamic-media/video.md)
-* [Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Elementen uploaden](/help/assets/add-assets.md#upload-assets)
-* [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
-* [Een voorvertoning weergeven van 3D-elementen](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Dynamic Media Assets leveren](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [Elementen publiceren](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [Werken met Selectieve Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
+* [Work with Dynamic Media in Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
+* [About Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+* [How to create Adaptive Video Sets](/help/assets/dynamic-media/video.md)
+* [Best practices for optimizing the quality of your images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
+* [How to upload assets](/help/assets/add-assets.md#upload-assets)
+* [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
+* [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [How to deliver Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
 
 _zelfstudies van Dynamic Media_
 

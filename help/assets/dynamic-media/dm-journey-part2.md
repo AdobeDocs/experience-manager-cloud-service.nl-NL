@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '2647'
+source-wordcount: '2591'
 ht-degree: 0%
 
 ---
@@ -212,15 +212,18 @@ U leest alleen over afbeeldingssets en viewers. Laten we naar een paar andere ki
 
 Als u meer wilt weten over wat u zojuist leest, gebruikt u de onderstaande materialen om concepten in detail te verkennen. Anders is de Dynamic Media-reis voltooid!
 
-_de onderwerpen van de Hulp van Dynamic Media_
+{{see-also-dm}}
 
-* [Voorinstellingen voor afbeeldingen maken](/help/assets/dynamic-media/image-presets.md)
-* Een lijst van [ parameters van de beeldverwerking ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) die u in het gebied van de Modifier van het Beeld kunt gebruiken wanneer u een beeld vooraf ingesteld creeert
-* [Elementen voorvertonen](/help/assets/dynamic-media/previewing-assets.md)
-* [Een voorvertoning weergeven van 3D-elementen](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Afbeeldingssets maken](/help/assets/dynamic-media/image-sets.md)
-* [Spin-sets maken](/help/assets/dynamic-media/spin-sets.md)
-* [Gemengde mediasets maken](/help/assets/dynamic-media/mixed-media-sets.md)
+<!--
+_Dynamic Media Help topics_
+
+* [How to create image presets](/help/assets/dynamic-media/image-presets.md)
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
+* [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
+* [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
+* [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md) -->
 
 _zelfstudies van Dynamic Media_
 
