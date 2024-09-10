@@ -4,9 +4,9 @@ description: Leer hoe u Cloud Manager-projecten kunt leveren met behulp van Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
+source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Als u een contract hebt met licenties voor AEM as a Cloud Service Sites-Edge Del
 * Toegang SLA die (*binnenkort komt*) <!-- ADD LINK TO IT WHEN FINALLY ADDED --> meldt
 * Ondersteuning voor Adobe. Zorg ervoor dat de sites van uw Edge Delivery Services zijn geregistreerd via een productieprogramma in Cloud Manager voor een correcte herkenning en ondersteuning door de Adobe.
 
-## Een site voor Edge Delivery Services toevoegen {#eds-add-site}
+## Een Edge Delivery-site toevoegen {#eds-add-site}
 
 Nadat u Edge Delivery Services aan een productieprogramma hebt toegevoegd, wordt uw licentie voor Edge Delivery Services erop toegepast.
 
