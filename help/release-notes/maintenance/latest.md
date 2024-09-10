@@ -4,10 +4,10 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
+source-git-commit: 9323464610b804ff407f5eedf404ab2cca93a8da
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 0%
+source-wordcount: '572'
+ht-degree: 1%
 
 ---
 
@@ -16,75 +16,60 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 17569 {#release-17569}
+## Release 17689 {#release-17689}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 17569 samengevat, die op 27 augustus 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 17465.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 17689 samengevat, die op 10 september 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 17569.
 
 De activering van de 2024.9.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-17569}
+### Verbeteringen {#enhancements-17689}
 
-* CQ-4353778: Gebeurtenissen vertaalproces.
-* CQ-4354583: Verstuur vertaalprocesgebeurtenissen via Adobe Pipeline.
-* CQ-4356479: Alleen Adobe-code toestaan om de /adobe servlet-context te gebruiken.
-* CQ-4358226: De functionaliteit van het sleutelwoord van de Bewaarvertaling werkt niet voor bepaalde formaat van het Koord.
-* CQ-4358270: AEM Vertaalkit: 8 augustus.
-* CQ-4358310: Voeg eak-compat-query-spi-1.2 toe aan snelstart.
-* GRANITE-49833: Batching support for event sender and proxy.
-* GRANITE-52053: Verwijder het gebruik van Commons Collections 3: Platform anderen.
-* GRANITE-52492: Elastische async catchup in geval van PIT-herstel.
-* GRANITE-53099: Bijwerken naar Apache Felix HTTP Jetty 5.1.24.
-* GRANITE-53125: Voeg classificatie toe aan CloudEvent.
-* GRANITE-53328: Werk FileVault bij tot 3.8.0-T20240726111512-3cc11d50 met verbeteringen voor het strepen van logboekregistratie.
-* GRANITE-53453: update commons-lang tot 3.15.0.
-* GRANITE-53478: Werk FileVault bij naar versie 3.8.0.
-* GRANITE-53505: Werk QS aan commons-collections-3.2.2-adobe-2 bij.
-* GRANITE-53528: Update version of platform artifacts.
-* GRANITE-53547: Alternatieve API aanbieden om het gebruik van Apache Commons Lang 2 te voorkomen.
-* GRANITE-53575: gebruik BSAFE 6.2.5 in CS.
-* GRANITE-53608: Update Oak to latest public release (1.68.0).
-* SITES-23583: De tests van Evergreen van Sites mislukken op Java 17.
-* SKYOPS-79535: Bijwerken naar rum script v2.
-* SKYOPS-79816: Laat de Taak van de Analysator van de Eigenschap van de Verkoop voor de Toewijzingen van de Gebruiker van de Dienst in het Hulpmiddel van FEIT toe.
-* SKYOPS-81179: AEM bouwt het testen voor bundeltogging.
-* SKYOPS-81866: Rapporteer waarschuwingen voor bundels waarvan bekend is dat ze niet compatibel zijn met Java 21.
-* SKYOPS-82660: Update Sling API to 2.27.6.
-* SKYOPS-82961: Update aan Sling ResourceResolver 1.12.0-T20240723153354-a0270a0.
-* SKYOPS-83356: Maak een globaal dashboard voor het bijhouden van JVM-versies die worden gebruikt in AEM implementaties.
-* SKYOPS-83436: Java Runtime 21 rollout break creation of adaptive forms AEM Forms.
-* SKYOPS-84272: Logboek de Java-versie die bij het opstarten van de aem-lancering wordt gebruikt.
+* ASSETS-41404: Wijzigingen voor ondersteuning van DRM-verbeteringen.
+* ASSETS-41621: Actualiseerde async Asset Copy-taak.
+* ASSETS-32166: Bijgewerkte async Asset Move Job.
+* ASSETS-41429: ondersteuning voor voorinstellingen voor afbeeldingen in DM OpenAPI.
+* ASSETS-38968: Verbeterde weergave van verwijzingen naar inhoudsfragmenten.
+* ASSETS-41787, ASSETS-41183: Improvements for Assets Bulk Operations Framework.
+* GRANITE-52917: Optimalisaties om de installatietijden van het pakket voor het kopiëren van inhoud te verbeteren.
+* SCRNS-3980: Detect Grijs scherm op spelers die opeenvolgingen zonder gepland middel hebben.
 
-### Opgeloste problemen {#fixed-issues-17569}
+### Opgeloste problemen {#fixed-issues-17689}
 
-* CMGR-60225: uitvoeringsfout van de pijpleiding die bij een AEM Sites CS-klant wordt geïdentificeerd tijdens de validatie van een update naar AEM versie 17486.
-* GRANITE-45919: landen waarvoor een embargo geldt in de lijst Land/regio in Gebruikersinstellingen bewerken.
-* GRANITE-51715: de kiezer voert de selectie soms niet in het tekstveld in.
-* GRANITE-53290: controleer correct het protocol wanneer het ontleden van URL in de controle XSS.
-* GRANITE-53576: Verkeerde definitie van de dienstrangschikking in configuraties OSGi.
-* SKYOPS-82129: Memoryleak in Sling Models.
+* ASSETS-40875: Onbedoelde NPE geregistreerd door AssetDeleteHandler.
+* ASSETS-42422: Vermijd het activeren van een asynchrone taak voor het verplaatsen van één element.
+* ASSETS-41234: Verenigde Shell - Globale nav zou niet kunnen werken als geopend wanneer de onderzoeksbar open is.
+* ASSETS-42256: Verenigde Shell - Tag/Badge die op milieu wijzen werkt slechts periodiek.
+* ASSETS-41271: Voorkom dat Assets tijdens verplaatsingsbewerkingen opnieuw wordt gepubliceerd.
+* ASSETS-38894: Limit Retries by processing watchdog.
+* ASSETS-40815: Voorvertoning van PDF-uitvoering gebruiken voor het weergeven van PPT-bestand in de gebruikersinterface voor delen van koppeling.
+* ASSETS-37123: Kan voorvertoning van element niet laden in het dialoogvenster Delen van koppeling.
+* CQ-4358156: update-backs met tag die worden verwijderd.
+* SCRNS-4495: Vaste knoop van het Deeg functioneert niet behoorlijk voor verschillende gebruikersgroepen.
+* SCRNS-4512: Verwijder componenten met betrekking tot apparaat uit schermen AEMaaCS.
+* SCRNS-4466: Op het Dashboard van het Kanaal, verberg - meningsmanifest, produceer off-line inhoud, werk manifestgeheime voorgeheugen bij, vertoningspaneel.
+* SCRNS-4513: Voeg kolomkopballen voor de pagina van onderzoeksresultaten in lijstmening toe.
 
-### Bekende problemen {#known-issues-17569}
+### Bekende problemen {#known-issues-17689}
 
-* ASSETS-40875 - De klasse AssetDeleteHandler luistert naar gebeurtenissen voor het verwijderen van elementen en voert specifieke handelingen uit op basis van het type delete-gebeurtenis (PRE_DELETE of POST_DELETE). In bepaalde scenario&#39;s, veroorzaakt het type van POST_DELETE gebeurtenis een NullPointerException.
-* FORMS-14340 - Fout in het concretiseren van FormsAndDocumentOmniSearchHandler en CloudStorageSubmitActionInserter. Dit zijn ongevaarlijke loginstructies.
-* FORMS-15818 - Component descriptor entry &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; niet gevonden instructies in serverlogboeken. Dit zijn ongevaarlijke loginstructies.
-* SITES-23662 - Gebruiker die een publicatie activeert, kan niet worden geëxtraheerd uit JCR-loginstructies in serverlogboeken. Dit is voor een eigenschap onder ontwikkeling die intermitterende en ongevaarlijke &quot;kan geen geldige gebruiker - identiteitskaart in de partij van gebeurtenissen vinden OSGI&quot;fouten in het logboek zou kunnen veroorzaken.
+* FORMS-14340: fout in het concretiseren van FormsAndDocumentOmniSearchHandler en CloudStorageSubmitActionInserter. Dit zijn ongevaarlijke loginstructies.
+* FORMS-15818: Component descriptor-item &quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&quot; niet gevonden instructies in serverlogboeken. Dit zijn ongevaarlijke loginstructies.
+* SITES-23662: Gebruiker die een publicatie activeert, kan niet uit JCR-loginstructies in serverlogboeken worden geëxtraheerd. Dit is voor een eigenschap onder ontwikkeling die intermitterende en ongevaarlijke &quot;kan geen geldige gebruiker - identiteitskaart in de partij van gebeurtenissen vinden OSGI&quot;fouten in het logboek zou kunnen veroorzaken.
 
-### Kennisgeving wijzigen {#change-notice-17569}
+### Kennisgeving wijzigen {#change-notice-17689}
 
 * Vanaf september 2024 zal AEM as a Cloud Service de serialisatie van Resolvers van Middel via het Sling ModelExporter kader onbruikbaar maken. Zie [ de documentatie ](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) voor meer details.
 
-### Verouderde functies en API&#39;s {#deprecated-17569}
+### Verouderde functies en API&#39;s {#deprecated-17689}
 
 We zijn bezig met het bijwerken van `com.day.cq.wcm.api` en met de huidige release hebben we een aantal methoden en klassen gemarkeerd als `@Deprecated` . Deze zullen in toekomstige versies worden verwijderd, dus gelieve te overwegen aan hun voorgestelde alternatieven over te schakelen als u om het even welk van hen gebruikt.
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
-### Beveiligingsproblemen {#security-17569}
+### Beveiligingsproblemen {#security-17689}
 
 AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt 4 geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-17569}
+### Ingesloten technologieën {#embedded-tech-17689}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
