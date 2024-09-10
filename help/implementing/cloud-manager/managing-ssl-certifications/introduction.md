@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,14 @@ Cloud Manager biedt zelfbedieningsgereedschappen voor het installeren en beheren
 
 <!-- CQDOC-21758, #1 -->
 
-* **Geval 1 van het Gebruik:** Cloud Manager gebruikt de dienst van platformTLS (de Veiligheid van de Laag van het Vervoer) om klant-bezeten SSL certificaten en privé sleutels van de Autoriteiten van het Certificaat van de derde te beheren, zoals *laat versleutelen*.
-* **Geval 2 van het Gebruik:** Cloud Manager laat gebruikers een DV (de Bevestiging van het Domein) certificaat vormen dat uit Adobe voor snelle domeinopstelling komt. DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [ productie als zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+| | Hoofdletters gebruiken | Beschrijving |
+| --- | --- | --- |
+| 1 | **Adobe beheerde certificaat (DV)** | Met Cloud Manager kunnen gebruikers een DV-certificaat (Domain Validation) configureren dat afkomstig is van Adobe voor snelle domeininstallatie. DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [ productie als zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). |
+| 2 | **Klant beheerde certificaat (OV/EV)** | Cloud Manager gebruikt de dienst van platformTLS (de Veiligheid van de Laag van het Vervoer) om klant-bezeten SSL certificaten en privé sleutels van de Autoriteiten van het Certificaat van de derde te beheren, zoals *laten versleutelen*. |
 
-  >
-  >
-  >Klanten mogen geen DV-certificaten (Domain Validation) uploaden.
+>[!NOTE]
+>
+>Klanten mogen geen DV-certificaten (Domain Validation) uploaden.
 
 
 ## Inleiding tot certificaten {#certificates}

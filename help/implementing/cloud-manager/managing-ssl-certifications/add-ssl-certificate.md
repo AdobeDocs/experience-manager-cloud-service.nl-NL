@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: 3aec9d13e2eb4bbc9a972e28195a6f43e92c1842
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -44,12 +44,12 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 1. Vlak de hoger-juiste hoek van de pagina, klik **voeg SSL Certificaat** toe.
 
-1. In **voeg SSL certificaat** dialoogdoos toe, die op uw bijzonder gebruiksgeval wordt gebaseerd, doe één van het volgende:
+1. In **voeg SSL certificaat** dialoogdoos toe, die op [ uw bijzonder gebruiksgeval ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) wordt gebaseerd, doe één van het volgende:
 
-   | Hoofdletters gebruiken | Stappen |
-   | --- | --- |
-   | **voeg een Adobe geleid certificaat (DV) toe** | **om een Adobe beheerde certificaat (DV) toe te voegen:**<br> a. Selecteer de beheerde Adobe van het certificaattype **(DV)**.<br>![ voeg een DV- certificaat ](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br> b toe. In de **Uitgezochte domeinen** drop-down lijst, selecteer één of meerdere domeinen die u verbonden aan het DV- certificaat wilt.<br> Geen domeinen om te selecteren? Als dat het geval is, moet u een aangepast domein toevoegen. Zie [ een douanedomein ](#add-custom-domain) toevoegen. Wanneer u wordt gebeëindigd toevoegend een naam van het douanedomein, terugkeer aan dit onderwerp en begin opnieuw bij stap 1.<br> d. Ga verder met stap 7. |
-   | **voeg een klant geleid certificaat (OV/EV) toe** | **om een klant geleid certificaat (OV/EV) toe te voegen:**<br> a. Selecteer de beheerde Klant van het certificaattype **(OV/EV)**.<br> b. Op het **gebied van de Naam van het Certificaat**, ga een naam voor uw certificaat in. Dit veld is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar het certificaat kunt verwijzen.<br> c. In het **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat** gebieden, kleef de vereiste waarden in hun respectieve gebieden.<br>![ voeg SSL doos van de certificaatdialoog ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br> toe om het even welke ontdekte fouten in waarden worden getoond. Voordat u het certificaat kunt opslaan, moet u alle fouten verhelpen. Zie [ de Fouten van het Certificaat ](#certificate-errors) om meer over het oplossen van problemen gemeenschappelijke fouten te leren.<br> d. Ga verder met stap 7. |
+   | | Hoofdletters gebruiken | Stappen |
+   | --- | --- | --- |
+   | 1 | **voeg een Adobe geleid certificaat (DV) toe** | **om een Adobe beheerde certificaat (DV) toe te voegen:**<br> a. Selecteer de beheerde Adobe van het certificaattype **(DV)**.<br>![ voeg een DV- certificaat ](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br> b toe. In de **Uitgezochte domeinen** drop-down lijst, selecteer één of meerdere domeinen die u verbonden aan het DV- certificaat wilt.<br> Geen domeinen om te selecteren? Als dat het geval is, moet u een aangepast domein toevoegen. Zie [ een douanedomein ](#add-custom-domain) toevoegen. Wanneer u wordt gebeëindigd toevoegend een naam van het douanedomein, terugkeer aan dit onderwerp en begin opnieuw bij stap 1.<br> d. Ga verder met stap 7. |
+   | 2 | **voeg een klant geleid certificaat (OV/EV) toe** | **om een klant geleid certificaat (OV/EV) toe te voegen:**<br> a. Selecteer de beheerde Klant van het certificaattype **(OV/EV)**.<br> b. Op het **gebied van de Naam van het Certificaat**, ga een naam voor uw certificaat in. Dit veld is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar het certificaat kunt verwijzen.<br> c. In het **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat** gebieden, kleef de vereiste waarden in hun respectieve gebieden.<br>![ voeg SSL doos van de certificaatdialoog ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br> toe om het even welke ontdekte fouten in waarden worden getoond. Voordat u het certificaat kunt opslaan, moet u alle fouten verhelpen. Zie [ de Fouten van het Certificaat ](#certificate-errors) om meer over het oplossen van problemen gemeenschappelijke fouten te leren.<br> d. Ga verder met stap 7. |
 
 <!--
     **Add an SSL certificate:**
@@ -98,109 +98,101 @@ Voordat u een Adobe kunt toevoegen die is gegenereerd en beheerd Domain Validate
 
 Er kunnen bepaalde fouten optreden als een certificaat niet correct is geïnstalleerd of niet voldoet aan de eisen van Cloud Manager.
 
-+++
++++**Correcte certificaatorde**
 
-* **Correcte certificaatorde**
+De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn.
 
-  De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn.
+Tussentijdse certificaatbestanden moeten eindigen met het basiscertificaat of het certificaat dat zich het dichtst bij het basiscertificaat bevindt. Ze moeten in aflopende volgorde staan, van het `main/server` -certificaat tot aan het basiscertificaat.
 
-  Tussentijdse certificaatbestanden moeten eindigen met het basiscertificaat of het certificaat dat zich het dichtst bij het basiscertificaat bevindt. Ze moeten in aflopende volgorde staan, van het `main/server` -certificaat tot aan het basiscertificaat.
+U kunt de orde van uw middendossiers bepalen gebruikend het volgende bevel.
 
-  U kunt de orde van uw middendossiers bepalen gebruikend het volgende bevel.
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
 
-  ```shell
-  openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-  ```
+Met de volgende opdrachten kunt u controleren of de persoonlijke sleutel en het `main/server` -certificaat overeenkomen.
 
-  Met de volgende opdrachten kunt u controleren of de persoonlijke sleutel en het `main/server` -certificaat overeenkomen.
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
 
-  ```shell
-  openssl x509 -noout -modulus -in certificate.pem | openssl md5
-  ```
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
 
-  ```shell
-  openssl rsa -noout -modulus -in ssl.key | openssl md5
-  ```
-
-  >[!NOTE]
-  >
-  >De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel voor uw `main/server` -certificaat kunt vinden, moet u het certificaat opnieuw sleutelken door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
+>[!NOTE]
+>
+>De uitvoer van deze twee opdrachten moet exact hetzelfde zijn. Als u geen overeenkomende persoonlijke sleutel voor uw `main/server` -certificaat kunt vinden, moet u het certificaat opnieuw sleutelken door een nieuwe CSR te genereren en/of een bijgewerkt certificaat aan te vragen bij uw SSL-leverancier.
 
 +++
 
-+++
++++**verwijder cliëntcertificaten**
 
-* **verwijder cliëntcertificaten**
+Wanneer u een certificaat toevoegt, als er een fout optreedt die lijkt op het volgende:
 
-  Wanneer u een certificaat toevoegt, als er een fout optreedt die lijkt op het volgende:
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
 
-  ```text
-  The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
-  ```
-
-  Waarschijnlijk hebt u het clientcertificaat opgenomen in de certificaatketen. Zorg ervoor dat de keten het clientcertificaat niet bevat en probeer het opnieuw.
+Waarschijnlijk hebt u het clientcertificaat opgenomen in de certificaatketen. Zorg ervoor dat de keten het clientcertificaat niet bevat en probeer het opnieuw.
 
 +++
 
-+++
++++**beleid van het Certificaat**
 
-* **beleid van het Certificaat**
+Controleer het beleid van uw certificaat als de volgende fout optreedt.
 
-  Controleer het beleid van uw certificaat als de volgende fout optreedt.
+```text
+Certificate policy must conform with EV or OV, and not DV policy.
+```
 
-  ```text
-  Certificate policy must conform with EV or OV, and not DV policy.
-  ```
+Ingesloten OID-waarden identificeren gewoonlijk het certificaatbeleid. Het uitvoeren van een certificaat naar tekst en het zoeken naar OID onthult het beleid van het certificaat.
 
-  Ingesloten OID-waarden identificeren gewoonlijk het certificaatbeleid. Het uitvoeren van een certificaat naar tekst en het zoeken naar OID onthult het beleid van het certificaat.
+U kunt de certificaatdetails als tekst uitvoeren gebruikend het volgende voorbeeld als gids.
 
-  U kunt de certificaatdetails als tekst uitvoeren gebruikend het volgende voorbeeld als gids.
+```text
+openssl x509 -in 9178c0f58cb8fccc.pem -text
+certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            91:78:c0:f5:8c:b8:fc:cc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
+        Validity
+            Not Before: Nov 10 22:55:36 2021 GMT
+            Not After : Dec  6 15:35:06 2022 GMT
+        Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
+        Subject Public Key Info:
+...
+```
 
-  ```text
-  openssl x509 -in 9178c0f58cb8fccc.pem -text
-  certificate:
-      Data:
-         Version: 3 (0x2)
-         Serial Number:
-             91:78:c0:f5:8c:b8:fc:cc
-         Signature Algorithm: sha256WithRSAEncryption
-         Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
-          Validity
-              Not Before: Nov 10 22:55:36 2021 GMT
-              Not After : Dec  6 15:35:06 2022 GMT
-          Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
-          Subject Public Key Info:
-  ...
-  ```
+Het OID-patroon in de tekst definieert het beleidstype van het certificaat.
 
-  Het OID-patroon in de tekst definieert het beleidstype van het certificaat.
+| Patroon | Beleid | Aanvaardbaar in Cloud Manager |
+|---|---|---|
+| `2.23.140.1.1` | EV | Ja |
+| `2.23.140.1.2.2` | OV | Ja |
+| `2.23.140.1.2.1` | DV | Nee |
 
-  | Patroon | Beleid | Aanvaardbaar in Cloud Manager |
-  |---|---|---|
-  | `2.23.140.1.1` | EV | Ja |
-  | `2.23.140.1.2.2` | OV | Ja |
-  | `2.23.140.1.2.1` | DV | Nee |
+Door `grep` voor de patronen OID in de tekst van het outputcertificaat te pingelen, kunt u uw certificaatbeleid bevestigen.
 
-  Door `grep` voor de patronen OID in de tekst van het outputcertificaat te pingelen, kunt u uw certificaatbeleid bevestigen.
+```shell
+# "EV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
 
-  ```shell
-  # "EV Policy"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
-  
-  # "OV Policy"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
-  
-  # "DV Policy - Not Accepted"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
-  ```
+# "OV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
+
+# "DV Policy - Not Accepted"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
+```
 
 +++
 
-+++
++++**de geldigheidsdata van het Certificaat**
 
-* **de geldigheidsdata van het Certificaat**
-
-  Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is vanaf de huidige datum. Controleer de geldigheid van de certificaatketen.
+Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is vanaf de huidige datum. Controleer de geldigheid van de certificaatketen.
 
 +++
 

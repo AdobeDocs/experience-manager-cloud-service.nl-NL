@@ -4,9 +4,9 @@ description: Leer hoe u Cloud Manager-projecten kunt leveren met behulp van Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Als u een contract hebt met licenties voor AEM as a Cloud Service Sites-Edge Del
 
 Nadat u Edge Delivery Services aan een productieprogramma hebt toegevoegd, wordt uw licentie voor Edge Delivery Services erop toegepast.
 
-Een nieuw, klikbaar lusje genoemd **Edge Delivery** wordt gezien op de pagina van het Overzicht. Als u op het tabblad klikt, wordt een tabel weergegeven met elke Edge Delivery-site die u hebt toegevoegd. In het linkernavigatievenster, onder de **Diensten** groepering, zult u een menuoptie genoemd **plaatsen van Edge Delivery** opmerken.
+Een klikbaar lusje genoemd **Edge Delivery** wordt gezien op de pagina van het Overzicht. Als u op het tabblad klikt, wordt een tabel weergegeven met elke Edge Delivery-site die u hebt toegevoegd. In het linkernavigatievenster, onder de **Diensten** groepering, merk de menuoptie genoemd **de Plaatsen van Edge Delivery** op.
 
 ![ pagina van het Overzicht die de Plaatsen van Edge Delivery in linkernavigatievenster en het lusje van Edge Delivery rechts van het lusje van de Levering van Publish tonen ](/help/implementing/cloud-manager/assets/cm-overview-eds.png)
 
@@ -127,7 +127,7 @@ De **Edge Delivery om lijst** te doen is een onboarding taak controlelijst die w
 | 5 | SSL-certificaat toevoegen | Zie [ SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen. |
 | 6 | De CDN van uw Edge Delivery-site configureren | Zie [ een configuratie CDN ](#add-cdn) toevoegen. |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on) (2 minuten, 13 seconden)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Een CDN-configuratie toevoegen aan uw Edge Delivery-site {#add-cdn}
 

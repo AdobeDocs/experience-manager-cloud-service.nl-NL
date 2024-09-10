@@ -5,7 +5,7 @@ exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 80206fc1396896fe45e2c959c78a0bf30eba71c5
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Adobe Cloud Manager wordt geleverd met één git-opslagplaats die wordt gebruikt
 
 U kunt de Cloud Manager git-opslagplaats uit de verpakking gebruiken, maar u hebt ook de mogelijkheid om een door de klant beheerde git-opslagplaats te integreren met Cloud Manager.
 
-## Overzicht van GIT-integratie {#git-integration-overview}
+## Overzicht van Git-integratie {#git-integration-overview}
 
 Deze videoreeks verkent verschillende gebruiksgevallen bij de integratie van een door de klant beheerde it-opslagplaats met Cloud Manager, waaronder:
 
@@ -34,7 +34,7 @@ De videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie d
 
 De stappen en naamgevingsconventies die in deze videoreeks worden beschreven, zijn enkele aanbevolen werkwijzen voor het werken met een door de klant beheerde it-opslagplaats in Cloud Manager. Verwacht wordt dat de getoonde conventies en workflows zijn aangepast voor individuele gevallen van gebruik.
 
-## Beginsynchronisatie {#initial-sync}
+## Eerste synchronisatie {#initial-sync}
 
 In deze video leert u de eerste stappen voor het synchroniseren van een door de klant beheerde Git-opslagplaats met de Cloud Manager Git-opslagplaats.
 
@@ -46,7 +46,7 @@ In deze video leert u basisvertakkingsstrategieën.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
-## Ontwikkeling van de functiescherm {#feature-development}
+## Ontwikkeling van filialen {#feature-development}
 
 Gebruik een eigenschapvertakking om codeveranderingen in een klant-beheerde git bewaarplaats te isoleren en met Cloud Manager te synchroniseren git bewaarplaats om een niet productiepijplijn voor codekwaliteit en bevestigingstests te gebruiken.
 
@@ -58,7 +58,7 @@ Code voorbereiden voor een productieleserie in een door de klant beheerde it-ops
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
-## Releasetags synchroniseren {#sync-tags}
+## Release-labels synchroniseren {#sync-tags}
 
 Synchroniseer releasetags van een Cloud Manager-it-opslagplaats naar een door de klant beheerde it-opslagplaats, zodat u kunt zien welke code is geïmplementeerd in testomgevingen en productieomgevingen.
 
@@ -66,6 +66,6 @@ Synchroniseer releasetags van een Cloud Manager-it-opslagplaats naar een door de
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Middelen GitHub ](https://try.github.io)
+* [ Middelen GitHub ](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
 * [ Atlassian Tutorials van het Git ](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [ Git Cheat Sheet ](https://education.github.com/git-cheat-sheet-education.pdf)
