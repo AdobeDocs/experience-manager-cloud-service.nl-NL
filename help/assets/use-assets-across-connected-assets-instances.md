@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 638b18beb5202ec34c1957a74d5b293236c2cf4e
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3756'
 ht-degree: 12%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 12%
 | AEM as a Cloud Service | Dit artikel |
 
 In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch gedistribueerde bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen overnames zijn die leiden tot heterogene infrastructuren, waaronder verschillende [!DNL Experience Manager] -versies, die het moederbedrijf samen wil gebruiken.
+
+>[!NOTE]
+>
+>Adobe raadt u aan Dynamic Media te gebruiken met OpenAPI-mogelijkheden om AEM Assets as a Cloud Service en AEM Sites aan te sluiten. Zie [ verre AEM Assets met AEM Sites ](/help/assets/integrate-remote-approved-assets-with-sites.md) integreren.
 
 De Connected Assets-functionaliteit ondersteunt de bovenstaande gebruiksscenario&#39;s door [!DNL Experience Manager Sites] en [!DNL Experience Manager Assets] te integreren. Gebruikers kunnen in [!DNL Sites] webpagina&#39;s maken die de digitale elementen van afzonderlijke [!DNL Assets] -implementaties gebruiken.
 
