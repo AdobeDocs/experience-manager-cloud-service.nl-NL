@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 26225938ff525a782314820f32f28c5af98c3669
+source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
 workflow-type: tm+mt
-source-wordcount: '5598'
+source-wordcount: '5602'
 ht-degree: 3%
 
 ---
@@ -1066,6 +1066,8 @@ ht-degree: 3%
    + [Variaties genereren](/help/generative-ai/generate-variations.md)
 + Implementatie {#implementing}
    + [Toepassingen voor AEM as a Cloud Service](/help/implementing/home.md)
+
+
    + Cloud Manager gebruiken {#using-cloud-manager}
       + [Navigatie](/help/implementing/cloud-manager/navigation.md)
       + Programma&#39;s {#programs}
@@ -1084,7 +1086,7 @@ ht-degree: 3%
       + Uw code beheren {#managing-code}
          + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Opslagplaatsen in Cloud Manager beheren](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Opslagplaatsen voor Adoben toevoegen](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Opslagplaatsen voor Adobe toevoegen](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Persoonlijke opslagplaatsen toevoegen](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Toegang tot opslagplaatsen](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Ondersteuning voor Git-submodule](/help/implementing/cloud-manager/managing-code/git-submodules.md)
@@ -1128,18 +1130,21 @@ ht-degree: 3%
       + SSL-certificaten {#manage-ssl-certificates}
          + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [SSL-certificaatfouten oplossen](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN-configuraties {#cdn-configurations}
          + [Een CDN-configuratie toevoegen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + IP-Lijsten van gewenste personen {#ip-allow-lists}
          + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [IP-Lijsten van gewenste personen toepassen en niet toepassen](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [IP-Lijsten van gewenste personen toepassen en ongedaan maken](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Licentiedashboard](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Inhoudsverzoeken van Cloud Servicen begrijpen](/help/implementing/cloud-manager/content-requests.md)
+      + [Verzoeken om Cloud Service-inhoud begrijpen](/help/implementing/cloud-manager/content-requests.md)
       + [Dashboard voor CDN-prestaties](/help/implementing/cloud-manager/cdn-performance.md)
       + [Veelgestelde vragen over Cloud Manager](/help/implementing/cloud-manager/faqs.md)
+
+
    + Ontwikkelen voor AEM as a Cloud Service {#developing}
       + [AEM projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Structuurpakket projectopslagplaats AEM](/help/implementing/developing/introduction/repository-structure-package.md)

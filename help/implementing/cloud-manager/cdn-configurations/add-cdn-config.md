@@ -5,39 +5,47 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
+
 # Een CDN-configuratie toevoegen {#add-cdn}
 
-Het toevoegen van een configuratie CDN moet worden voltooid om een domein met SSL te vormen.
+Als u een domein wilt koppelen aan een SSL-certificaat op de door Adobe beheerde CDN binnen uw programma, moet u een CDN-configuratie (Content Delivery Network) toevoegen.
 
+Voor Adobe beheerde CDNs, wanneer het gebruiken van DV certificaten, slechts worden de plaatsen met de bevestiging van ACME toegelaten.
+
+>[!IMPORTANT]
 >
->
->Voor Adobe-geleide CDNs, wanneer het gebruiken van DV certificaten, slechts worden de plaatsen met de bevestiging van ACME toegelaten.
+>Hebt u [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toegevoegd en [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toegevoegd, respectievelijk? Als niet, moet u deze twee taken voltooien alvorens u een configuratie kunt toevoegen CDN.
 
 **om een configuratie toe te voegen CDN:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Klik **configuraties CDN**.
+1. In het linkernavigatievenster, onder **Diensten**, klik **Configuraties CDN**.
 
 1. Bij de hoger-juiste hoek van de CDN pagina van Configuraties, voegt de klik **** toe.
 
    ![ vorm CDN dialoogdoos ](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
-1. In **vorm CDN** dialoogdoos, verstrek de noodzakelijke informatie.
+1. In **vorm CDN** dialoogdoos, in de **Vervolgkeuzelijst van de Oorsprong**, selecteer één van het volgende:
 
-   * Van de **drop-down lijst van de Oorsprong 0}, doe één van het volgende:**
-      * **Plaatsen:** selecteer een plaats van Edge Delivery Services.
-      * **Milieu&#39;s:** selecteer een milieu van de Cloud Service.
-         * **Rij:** selecteer a **Publish** of **Voorproef** Webrij voor het geselecteerde milieu.
-   * Selecteer uw type CDN: **beheerde Adobe CDN** of **Andere leverancier CDN**.
-   * Selecteer het domein.
-   * Selecteer het SSL-certificaat. Slechts vereist als u **Adobe beheerde CDN** als uw type CDN selecteerde.
+   | Oorsprong | Beschrijving |
+   | --- | --- |
+   | Sites | Selecteer een Edge Delivery-site. |
+   | Omgeving | Selecteer een specifieke omgeving voor Cloud Servicen waarop u zich wilt richten binnen de AEM.<br> in de **Rij** drop-down lijst, selecteer één van het volgende:<br>・ Selecteer **Publish** om een levend, productiemilieu te richten waar de inhoud aan eind - gebruikers wordt geleverd.<br>・ Selecteer **Voorproef** voor het opvoeren of niet-productie milieu&#39;s waar u veranderingen test alvorens zij levend gaan. |
+
+1. Selecteer uw type CDN door één van het volgende te kiezen:
+
+   | CDN-type | Beschrijving |
+   | --- | --- |
+   | CDN met beheerde Adobe | a. In de **drop-down lijst van het Domein**, selecteer de domeinnaam die u wilt gebruiken.<br> Geen geverifieerde domeinen beschikbaar in de drop-down lijst? Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen.<br> b. Selecteer in de vervolgkeuzelijst SSL-certificaat een certificaat dat u wilt gebruiken.<br> Geen SSL certificaten beschikbaar in de drop-down lijst? Zie [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen. |
+   | Andere CDN-provider. | Selecteer deze optie als u uw eigen leverancier CDN en niet de Adobe beheerde CDN gebruikt die aan u beschikbaar is.<br> in de **2} drop-down lijst van het Domein {, selecteer de domeinnaam die u wilt gebruiken.**<br> Geen beschikbare SSL certificaten in de drop-down lijst? Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. |
+
 
 1. Klik **sparen**.
