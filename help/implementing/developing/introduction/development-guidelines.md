@@ -4,7 +4,7 @@ description: Leer richtsnoeren voor de ontwikkeling van AEM as a Cloud Service e
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ea631743af99879d2a76d3a4a78ecf5883f39c69
+source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 0%
@@ -183,7 +183,7 @@ Bij lokale ontwikkeling (met behulp van de SDK) kunnen `/apps` en `/libs` rechts
 >
 
 >[!NOTE]
->Sommige klanten hebben de mogelijkheid om een vernieuwde ervaring uit te proberen voor de AEM Cloud Service Developer Console. Zie [ dit artikel ](/help/implementing/developing/introduction/developer-console.md) voor meer informatie.]
+>Sommige klanten hebben de mogelijkheid om een vernieuwde ervaring uit te proberen voor de AEM Cloud Service Developer Console. Zie [ dit artikel ](/help/implementing/developing/introduction/aem-developer-console.md) voor meer informatie.]
 
 Klanten hebben toegang tot de CRXDE-lijst in de ontwikkelomgeving van de auteur, maar niet in het stadium of de productie. Er kan niet bij uitvoering naar de onveranderlijke opslagplaats (`/libs`, `/apps` ) worden geschreven, zodat dit tot fouten leidt.
 
