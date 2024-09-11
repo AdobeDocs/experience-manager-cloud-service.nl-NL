@@ -4,7 +4,7 @@ description: Leer hoe u de Analysator voor aanbevolen werkwijzen gebruikt om de 
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 31%
@@ -35,7 +35,7 @@ Volg de sectie hieronder om de belangrijke overwegingen voor het runnen van de A
 * BPA kan op om het even welk milieu in werking stellen, maar het heeft de voorkeur om het op het milieu van het a *Stadium* te hebben.
 
   >[!NOTE]
-  >Om een effect op bedrijfskritieke instanties te vermijden, adviseert men dat u BPA op een *milieu van de Auteur* in werking stelt dat zo dicht mogelijk aan het *milieu van de Productie* op de gebieden van aanpassingen, configuraties, inhoud en gebruikerstoepassingen is. CRA kan ook worden uitgevoerd op een kloon van de *auteur* laag van de productieomgeving.
+  >Om een effect op bedrijfskritieke instanties te vermijden, adviseert men dat u BPA op een *milieu van het Stadium* in werking stelt dat zo dicht mogelijk aan het *milieu van de Productie* op de gebieden van aanpassingen, configuraties, inhoud en gebruikerstoepassingen is. CRA kan ook worden uitgevoerd op een kloon van de *auteur* laag van de productieomgeving.
 
 * Het genereren van de inhoud van het BPA-rapport kan een aanzienlijke hoeveelheid tijd in beslag nemen, van enkele minuten tot een paar uur. De benodigde tijd is in hoge mate afhankelijk van de grootte en aard van de AEM-repository-content, de AEM-versie en andere factoren.
 
