@@ -3,9 +3,10 @@ title: Opmerkingen bij de release AEM as a Cloud Service 2024.05.0 voor migratie
 description: Opmerkingen bij de release AEM as a Cloud Service 2024.05.0 voor migratiehulpprogramma's
 feature: Release Information
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+exl-id: f50a74fa-ad7d-4837-b0a1-9945c32af02f
+source-git-commit: 3b2ed44b438fe8587a9b9603ddfacc41111fb903
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '208'
 ht-degree: 2%
 
 ---
@@ -18,11 +19,16 @@ Deze pagina bevat een overzicht van de opmerkingen bij de release voor migratieh
 
 ### Releasedatum {#release-date-bpa}
 
-De releasedatum voor de analyse van best practices v2.1.48 is 9 mei 2024.
+De releasedatum voor de analyse van best practices v2.1.50 is mei 2024.
 
 ### Wat is er nieuw? {#what-is-new-bpa}
 
 * De analyse van Beste praktijken (BPA) steunt nu automatisch het uploaden van BPA geproduceerde rapporten direct aan Cloud Acceleration Manager (CAM). Gebruikers hoeven het rapport niet meer handmatig te downloaden en te uploaden naar CAM. Voor meer details, zie [ Gebruikend Analysator van Beste praktijken ](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+
+### Bugfixes {#bug-fixes-bpa}
+
+* De analyse van Beste praktijken ontdekt nu alle knopen groter dan 16MB
+* Onvoorziene omstandigheden met betrekking tot ras die leiden tot het voorvallen van NCC-bevindingen.
 
 ## Cloud Acceleration Manager {#cam-release}
 
