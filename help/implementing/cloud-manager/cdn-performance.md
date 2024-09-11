@@ -5,14 +5,14 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-# Dashboard voor CDN-prestaties {#cdn-performance}
+# CDN-prestatiedashboard {#cdn-performance}
 
 Begrijp hoe Cloud Manager de prestaties van het inhoudsleveringsnetwerk (CDN) evalueert en wat u van het dashboard kunt leren.
 
@@ -54,7 +54,7 @@ Voor suggesties op hoe te om uw prestaties te verbeteren CDN, selecteer het **Re
 
 Tik of klik op het chevron naast een aanbeveling in de lijst om meer informatie te bekijken over de stappen die u moet ondernemen om de situatie te verbeteren en de oorzaak van het probleem.
 
-## Definitie cachegeheugen {#cache-hit}
+## Cachehit-definitie {#cache-hit}
 
 De cache-raakverhouding is een maat voor het aantal aanvragen dat een cache kan invullen in de cache, vergeleken met het aantal aanvragen dat de cache ontvangt. Hoe hoger een cache-hit-verhouding, hoe beter een CDN wordt uitgevoerd.
 
@@ -75,4 +75,4 @@ De cijfers van het geheime voorgeheugen worden bijgewerkt om de 24 uur.
 
 >[!TIP]
 >
->Voor verdere details op hoe Cloud Manager en CDN met Dispatcher in wisselwerking staan, gelieve het document [ Caching in AEM as a Cloud Service ](/help/implementing/dispatcher/caching.md) te zien.
+>Voor meer details op hoe Cloud Manager en CDN met Dispatcher in wisselwerking staan, zie [ Caching in AEM as a Cloud Service ](/help/implementing/dispatcher/caching.md).
