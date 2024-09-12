@@ -5,7 +5,7 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
@@ -25,15 +25,15 @@ De status van uw SSL certificaten kan in een blik van de **SSL Certificaten** pa
 | --- | --- |
 | Groen | Het certificaat is ten minste 14 dagen geldig vanaf de huidige datum. |
 | Oranje | Het certificaat verloopt over minder dan 14 dagen.<br>・ Zorg ervoor dat u een abonnement hebt om uw certificaat te vernieuwen en dit te vervangen door de gebruikersinterface van Cloud Manager om mogelijke toegang tot of uitval van de site te voorkomen.<br>・ Cloud Manager verzendt regelmatig meldingen in de gebruikersinterface om u te waarschuwen voor een aanstaande vervaldatum van een certificaat. |
-| Rood | Het SSL-certificaat is verlopen.<br> zie [ Update een verlopen, klant beheerde SSL certificaat ](#update-ssl-certificate) of [ Schrapping een SSL certificaat ](#deleting-an-ssl-certificate). |
+| Rood | Het SSL-certificaat is verlopen.<br> zie [ Update een verlopen klant beheerde SSL certificaat ](#update-ssl-certificate) of [ Schrap een SSL certificaat ](#deleting-an-ssl-certificate). |
 
-## Een verlopen, door de klant beheerd SSL-certificaat bijwerken {#update-ssl-certificate}
+## Een verlopen door de klant beheerd SSL-certificaat bijwerken {#update-ssl-certificate}
 
 Wanneer een door klant beheerd certificaat verloopt, werken domeinen die in gebruik zijn met het verlopen certificaat niet meer. Als u uw certificaten bijwerkt, blijft uw domein naar wens werken.
 
 Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Manager van de Plaatsing** om deze taak te voltooien.
 
-**om een verlopen, klant beheerde SSL certificaat bij te werken:**
+**om een verlopen klant beheerde SSL certificaat bij te werken:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
@@ -52,7 +52,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 1. Klik **Update** om uw veranderingen te bewaren en hen automatisch toe te passen.
 
-## Vervang een verlopen, door de klant beheerd SSL-certificaat {#replace-ssl-certificate}
+## Een verlopen door de klant beheerd SSL-certificaat vervangen {#replace-ssl-certificate}
 
 Volg de zelfde stappen die in [ worden beschreven Werk een verlopen SSL Certificaat ](#update-ssl-certificate) bij om een verlopen, klant beheerde SSL certificaat te vervangen.
 
@@ -85,6 +85,6 @@ Als u reeds een configuratie CDN voor uw SSL certificaat hebt, toont de **SSL Ce
 
 Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
 
-Zie [ een SSL Certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer details toevoegen.
+Zie [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer details toevoegen.
 
 Een gelijkaardig bericht wordt ook verstrekt op de **IP Lijst van gewenste personen** en de **milieu&#39;s** pagina&#39;s voor milieu&#39;s die reeds bestaande CDN configuraties voor IP lijsten van gewenste personen of de namen van het douanedomein hebben.

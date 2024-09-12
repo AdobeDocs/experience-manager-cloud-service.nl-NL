@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -46,6 +46,5 @@ Voor Adobe beheerde CDNs, wanneer het gebruiken van DV certificaten, slechts wor
    | --- | --- |
    | CDN met beheerde Adobe | a. In de **drop-down lijst van het Domein**, selecteer de domeinnaam die u wilt gebruiken.<br> Geen geverifieerde domeinen beschikbaar in de drop-down lijst? Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen.<br> b. Selecteer in de vervolgkeuzelijst SSL-certificaat een certificaat dat u wilt gebruiken.<br> Geen SSL certificaten beschikbaar in de drop-down lijst? Zie [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen. |
    | Andere CDN-provider. | Selecteer deze optie als u uw eigen leverancier CDN en niet de Adobe beheerde CDN gebruikt die aan u beschikbaar is.<br> in de **2} drop-down lijst van het Domein {, selecteer de domeinnaam die u wilt gebruiken.**<br> Geen beschikbare SSL certificaten in de drop-down lijst? Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. |
-
 
 1. Klik **sparen**.
