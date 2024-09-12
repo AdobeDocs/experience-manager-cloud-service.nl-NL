@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -153,6 +153,21 @@ In de onderstaande tabel worden de beschikbare acties beschreven.
 |         | queryParamMatch | Verwijdert alle queryparameters die overeenkomen met een opgegeven reguliere expressie. |
 | **transformatie** | op:replace, (reqProperty of reqHeader of queryParam of reqCookie), match, replacement | Vervangt een deel van de aanvraagparameter (alleen eigenschap &quot;path&quot; wordt ondersteund) of verzoek header, query parameter of cookie door een nieuwe waarde. |
 |              | op:tolower, (reqProperty of reqHeader of queryParam of reqCookie) | Stelt de parameter request (alleen eigenschap &quot;path&quot; wordt ondersteund), of aanvraagheader, queryparameter of cookie in op de waarde in kleine letters. |
+
+Vervang acties om vastgelegde groepen te ondersteunen, zoals hieronder wordt geïllustreerd:
+
+```
+      - name: replace-jpg-with-jpeg
+        when:
+          reqProperty: path
+          like: /mypath          
+        actions:
+          - type: transform
+            reqProperty: path
+            op: replace
+            match: (.*)(\.jpg)$
+            replacement: "\1\.jpeg"          
+```
 
 Handelingen kunnen aan elkaar worden gekoppeld. Bijvoorbeeld:
 
@@ -384,3 +399,31 @@ data:
 |-----------|--------------------------|-------------|
 | **redirect** | locatie | Waarde voor de koptekst &#39;Locatie&#39;. |
 |     | status (optioneel, standaard is 301) | De HTTP-status die standaard moet worden gebruikt in het omleidingsbericht, is 301. De toegestane waarden zijn: 301, 302, 303, 307, 308. |
+
+De locaties van een omleiding kunnen letterlijke tekenreeksen zijn (bijvoorbeeld https://www.example.com/page) of het resultaat van een eigenschap (bijvoorbeeld pad) die optioneel wordt getransformeerd, met de volgende syntaxis:
+
+```
+experimental_redirects:
+  rules:
+    - name: country-code-redirect
+      when: { reqProperty: path, like: "/" }
+      action:
+        type: redirect
+        location:
+          reqProperty: clientCountry
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1/home'
+            - op: tolower
+    - name: www-redirect
+      when: { reqProperty: domain, equals: "example.com" }
+      action:
+        type: redirect
+        location:
+          reqProperty: path
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1'
+```
