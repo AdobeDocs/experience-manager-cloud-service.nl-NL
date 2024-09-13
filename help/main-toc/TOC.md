@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5615'
 ht-degree: 3%
 
 ---
@@ -1123,13 +1123,13 @@ ht-degree: 3%
       + Edge Delivery-sites {#edge-delivery-sites}
          + [Edge Delivery-ondersteuning in Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
       + Domeininstellingen {#custom-domain-names}
-         + [Inleiding](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         + [Inleiding tot domeininstellingen](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Een aangepaste domeinnaam toevoegen](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Status aangepaste domeinnaam controleren](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [DNS-recordstatus controleren](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Aangepaste domeinnamen beheren](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL-certificaten {#manage-ssl-certificates}
-         + [Inleiding](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [Inleiding tot SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Een SSL-certificaat toevoegen](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL-certificaatfouten oplossen](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
@@ -1137,7 +1137,7 @@ ht-degree: 3%
          + [Een CDN-configuratie toevoegen](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
          + [CDN-configuraties beheren](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP-Lijsten van gewenste personen {#ip-allow-lists}
-         + [Inleiding](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+         + [Inleiding aan IP Lijsten van gewenste personen](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Een IP-Lijst van gewenste personen toevoegen](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
          + [IP-Lijsten van gewenste personen toepassen en ongedaan maken](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP-Lijsten van gewenste personen beheren](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)

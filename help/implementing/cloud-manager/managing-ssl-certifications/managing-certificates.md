@@ -5,7 +5,7 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 1. Van het **scherm van Milieu&#39;s**, navigeer aan het **SSL Certificaten** scherm.
 1. In de rij van het verlopen klant beheerde certificaat dat u wilt bijwerken, klik de elliptische knoop bij uiterst rechts, dan selecteren de uitgezochte **Mening en Update**.
 
-   ![ Update een verlopen, klant beheerde SSL certificatie ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![ werk een verlopen klant beheerde SSL certificatie bij ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. In het **de dialoogvakje van de Mening &amp; van het Certificaat van de Update SSL**, doe het volgende:
 
@@ -54,7 +54,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 ## Een verlopen door de klant beheerd SSL-certificaat vervangen {#replace-ssl-certificate}
 
-Volg de zelfde stappen die in [ worden beschreven Werk een verlopen SSL Certificaat ](#update-ssl-certificate) bij om een verlopen, klant beheerde SSL certificaat te vervangen.
+Volg de zelfde stappen die in [ worden beschreven Werk een verlopen SSL certificaat ](#update-ssl-certificate) bij om een verlopen, klant beheerde SSL certificaat te vervangen.
 
 ## Een SSL-certificaat verwijderen {#deleting-an-ssl-certificate}
 
@@ -87,4 +87,4 @@ Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreer
 
 Zie [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer details toevoegen.
 
-Een gelijkaardig bericht wordt ook verstrekt op de **IP Lijst van gewenste personen** en de **milieu&#39;s** pagina&#39;s voor milieu&#39;s die reeds bestaande CDN configuraties voor IP lijsten van gewenste personen of de namen van het douanedomein hebben.
+Een gelijkaardig bericht wordt ook verstrekt op de **IP Lijst van gewenste personen** en de **milieu&#39;s** pagina&#39;s voor milieu&#39;s die reeds bestaande CDN configuraties voor IP Lijsten van gewenste personen of de namen van het douanedomein hebben.

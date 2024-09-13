@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6fb672e03fe28ae8af6dc873791c7d1ac1fb8fd7
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -13,12 +13,11 @@ ht-degree: 0%
 ---
 
 
-# Een SSL-certificaat toevoegen
+# Een SSL-certificaat toevoegen {#add-ssl-cert}
 
 Leer hoe u een door de klant beheerd SSL-certificaat of een Adobe die is gegenereerd en beheerd DV-certificaat (Domeinvalidatie) toevoegt met behulp van de Cloud Manager-tools voor zelfbediening.
 
 Zie ook [ problemen oplossen SSL certificaatfouten ](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md).
-
 
 ## Een SSL-certificaat toevoegen {#adding-an-ssl-certificate}
 

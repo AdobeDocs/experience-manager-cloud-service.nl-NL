@@ -1,19 +1,19 @@
 ---
-title: Inleiding tot het beheren van SSL-certificaten
+title: Inleiding tot SSL-certificaten
 description: Leer hoe u met Cloud Manager zelfbedieningstools SSL-certificaten kunt installeren.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
 
 
-# Inleiding tot het beheren van SSL-certificaten{#introduction}
+# Inleiding tot SSL-certificaten{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -37,7 +37,7 @@ Cloud Manager biedt zelfbedieningsgereedschappen voor het installeren en beheren
 >Klanten mogen geen DV-certificaten (Domain Validation) uploaden.
 
 
-## Inleiding tot certificaten {#certificates}
+## Inleiding tot SSL-certificaten {#certificates}
 
 Bedrijven en organisaties gebruiken SSL-certificaten om hun websites te beveiligen en hun klanten in staat te stellen er vertrouwen in te stellen. Voor gebruik van het SSL-protocol vereist een webserver het gebruik van een SSL-certificaat.
 
@@ -46,8 +46,6 @@ Wanneer een entiteit, zoals een organisatie of bedrijf, een certificaat aanvraag
 >[!IMPORTANT]
 >
 >Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze zaken moeten van een CertificatieAutoriteit, een vertrouwde op derdeorganisatie worden verkregen. Sommige bekende Autoriteiten van het Certificaat omvatten *DigiCert*, *versleutelings*, *GlobalSign*, *Vertrouwen*, en *Verisign*.
-
-## Cloud Manager SSL-beheerfuncties {#features}
 
 Cloud Manager biedt ondersteuning voor de volgende gebruiksopties voor SSL-certificaten van klanten.
 
@@ -58,14 +56,9 @@ Cloud Manager biedt ondersteuning voor de volgende gebruiksopties voor SSL-certi
 * De platformTLS de dienstroutes verzoeken aan de dienst CDN van de klant die op het SSL certificaat wordt gebaseerd dat wordt gebruikt om te eindigen en de dienst CDN die gastheren dat domein.
 * AEM as a Cloud Service accepteert SSL-jokertekens voor een domein.
 
-## Recommendations {#recommendations}
+AEM as a Cloud Service ondersteunt alleen beveiligde `https` sites. Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden. Dergelijke klanten profiteren door één certificaat met veelvoudige domeinen te krijgen.
 
-AEM as a Cloud Service ondersteunt alleen beveiligde `https` sites.
-
-* Klanten met meerdere aangepaste domeinen willen niet telkens wanneer zij een domein toevoegen, een certificaat uploaden.
-* Dergelijke klanten profiteren door één certificaat met veelvoudige domeinen te krijgen.
-
-## Certificaatvereisten {#requirements}
+## SSL-certificaatvereisten {#requirements}
 
 * AEM as a Cloud Service accepteert certificaten die voldoen aan het beleid OV (Organisation Validation), EV (Extended Validation) of DV (Domain Validation). <!-- CQDOC-21758, #2 -->
 * Elk certificaat moet een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie met een overeenkomende persoonlijke RSA-sleutel van 2048 bits.
@@ -73,7 +66,7 @@ AEM as a Cloud Service ondersteunt alleen beveiligde `https` sites.
 
 OV- en EV-certificaten bieden voor CA gevalideerde informatie. Met deze informatie kunnen gebruikers beoordelen of de eigenaar van de website, de e-mailafzender of de digitale handtekening van code- of PDF-documenten kan worden vertrouwd. DV-certificaten staan een dergelijke eigendomsverificatie niet toe.
 
-### Door de klant beheerde certificaatindeling {#certificate-format}
+### Door de klant beheerde SSL-certificaatindeling {#certificate-format}
 
 <!-- CQDOC-21758, #3 -->
 
@@ -99,14 +92,11 @@ De volgende `openssl` -opdrachten kunnen worden gebruikt om niet-PEM-certificate
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## Beperkingen {#limitations}
+## Beperking van het aantal geïnstalleerde SSL-certificaten {#limitations}
 
 Cloud Manager staat op elk moment maximaal 50 geïnstalleerde SSL-certificaten toe. Deze certificaten kunnen aan één of meerdere milieu&#39;s over uw programma worden geassocieerd en ook om het even welke verlopen certificaten omvatten.
 
-Als u de limiet hebt bereikt, controleert u uw certificaten en overweegt u:
-
-* Verlopen certificaten verwijderen.
-* Meerdere domeinen in hetzelfde certificaat groeperen, aangezien een certificaat meerdere domeinen kan bestrijken (maximaal 100 SAN&#39;s).
+Als u de limiet hebt bereikt, controleert u uw certificaten en kunt u eventueel verlopen certificaten verwijderen. U kunt ook meerdere domeinen in hetzelfde certificaat groeperen omdat een certificaat meerdere domeinen kan bestrijken (maximaal 100 SAN&#39;s).
 
 ## Meer informatie {#learn-more}
 
