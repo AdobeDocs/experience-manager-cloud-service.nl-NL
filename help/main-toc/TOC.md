@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 34904bc7cd0f13d7f2bccb6f6e21057cb7eb9a4f
 workflow-type: tm+mt
-source-wordcount: '5615'
+source-wordcount: '5621'
 ht-degree: 3%
 
 ---
@@ -629,8 +629,8 @@ ht-degree: 3%
    + Content Hub {#content-hub}
       + [Overzicht](/help/assets/product-overview.md)
       + [Content Hub implementeren](/help/assets/deploy-content-hub.md)
-      + [Content Hub-gebruikersinterface configureren](/help/assets/configure-content-hub-ui-options.md)
       + [Door een merk goedgekeurde middelen uploaden of importeren naar Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [Content Hub-gebruikersinterface configureren](/help/assets/configure-content-hub-ui-options.md)
       + [Assets goedkeuren voor Content Hub](/help/assets/approve-assets-content-hub.md)
       + [Middelen zoeken in Content Hub](/help/assets/search-assets-content-hub.md)
       + [Elementen](/help/assets/asset-properties-content-hub.md)
@@ -638,7 +638,8 @@ ht-degree: 3%
       + [Elementen downloaden met Content Hub](/help/assets/download-assets-content-hub.md)
       + [Verzamelingen beheren in Content Hub](/help/assets/collections-content-hub.md)
       + [Afbeeldingen bewerken met Adobe Express in Content Hub](/help/assets/edit-images-content-hub.md)
-      + [ Inzichten van Activa in Content Hub ](/help/assets/insights-content-hub.md)
+      + [Asset Insights in Content Hub](/help/assets/insights-content-hub.md)
+      + [ vaak gestelde vragen voor Content Hub ](/help/assets/frequently-asked-questions-content-hub.md)
    + Aanbevolen werkwijzen {#best-practices}
       + [Beste werkwijzen zoeken](/help/assets/search-best-practices.md)
       + [Metagegevensbeheer en best practices](/help/assets/metadata-best-practices.md)
