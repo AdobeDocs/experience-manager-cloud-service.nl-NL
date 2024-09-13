@@ -3,9 +3,10 @@ title: Nota's van de versie voor 2024.7.0 versie van  [!DNL Adobe Experience Man
 description: Nota's van de versie voor 2024.7.0 versie van  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 2edaca5637c735645e2b761377b9681d9b48daa1
+exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
@@ -60,13 +61,19 @@ Wilt u de functie proberen en feedback delen? Stuur een e-mail naar aemcs-headle
 
 **uploadt activa gebruikend de Selecteur van Activa**
 
-Met Asset Selector kunnen auteurs van inhoud nu de definitieve elementen rechtstreeks vanuit de kiezer uploaden door ze te slepen of door vanuit het lokale bestandssysteem te bladeren. Hierdoor kunnen de uiteindelijke middelen naar de DAM worden geüpload vanuit de toepassing van uw keuze.
+Met Asset Selector kunnen auteurs van inhoud nu de definitieve elementen rechtstreeks vanuit de kiezer uploaden door te slepen of door te bladeren vanuit het lokale bestandssysteem. Met deze functionaliteit kunnen definitieve elementen vanuit de toepassing van uw keuze naar de DAM worden geüpload.
+
+### Functie voor vroege toegang in Dynamic Media {#dm-early-access}
+
+**op AI-Gebaseerde videotitels**
+
+Op AI gebaseerde videobijschriften in Adobe Dynamic Media gebruiken artificiële intelligentie om titels automatisch voor videoinhoud te produceren. Deze functie is ontworpen om de toegankelijkheid te verbeteren en de gebruikerservaring te verbeteren door nauwkeurige, real-time bijschriften te bieden. De AI analyseert de audiotrack van de video om spraak te transcriperen en bijschriften te maken, die kunnen worden bewerkt voor nauwkeurigheid of aanpassing. Deze bijschriften helpen te voldoen aan toegankelijkheidsvereisten en verbeteren de videobetrokkenheid van gebruikers die op tekst gebaseerde videoondersteuning gebruiken of verkiezen.
 
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
 
 **de integratie van Content credentials**
 
-Experience Manager Assets ondersteunt nu content credentials voor ondersteunde afbeeldingsindelingen. Dit biedt informatie over de relatie tussen het actief en de manier waarop het is gemaakt, inclusief of het is gewijzigd met behulp van GenAI.
+Experience Manager Assets ondersteunt nu content credentials voor ondersteunde afbeeldingsindelingen. Deze mogelijkheid biedt informatie over de relatie tussen het actief en de manier waarop het is gemaakt, inclusief of het is gewijzigd met behulp van GenAI.
 
 ![ Content credentials ](/help/assets/assets/content-credentials.png)
 
@@ -93,7 +100,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Verbeterde Visual Rule Editor voor op kerncomponenten gebaseerde adaptieve Forms
 
-Auteurs van adaptieve formulieren kunnen herhaalbare formuliervelden gebruiken vanuit de functies in de visuele regeleditor, zodat kerncomponenten complexe bedrijfslogica in de formulieren kunnen bouwen zonder dat hiervoor hulp van het ontwikkelingsteam of aanpassings- of ontwikkelingsteam nodig is.
+Aangepaste auteurs van formulieren kunnen herhaalbare formuliervelden en functies van de out-of-the-box visuele regeleditor gebruiken om complexe bedrijfslogica in formulieren te maken zonder dat ze aanpassingen of ondersteuning van het ontwikkelingsteam nodig hebben.
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
 
@@ -103,7 +110,7 @@ Deze release bevat een overzicht van de innovaties die in de huidige release wor
 
 #### Aangepaste formulieren maken met Universal Editor
 
-Hefboomwerking de Universele Redacteur van Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) om adaptieve vormen tot stand te brengen gebruikend WYSIWYG belemmering-daling authoring, voor zowel hoofd als krachtige inschrijvingservaringen, die via de Dienst van Edge Delivery worden geleverd. [ Auteurs van adaptieve formulieren kunnen eenvoudig experimenten maken en starten met variaties in de formulieren op de webpagina&#39;s en bepalen wat de beste prestaties zijn voor eindgebruikers.
+Hefboomwerking de Universele Redacteur van Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) om adaptieve vormen tot stand te brengen gebruikend WYSIWYG belemmering-daling authoring, voor zowel hoofd als krachtige inschrijvingservaringen, die via de Dienst van Edge Delivery worden geleverd. [ Auteurs van adaptieve formulieren kunnen eenvoudig experimenten maken en starten voor variaties van de formulieren op de webpagina&#39;s. Hierdoor kunnen ze de best presterende ervaringen voor eindgebruikers bepalen.
 
 >[!IMPORTANT]
 >
@@ -113,22 +120,23 @@ Hefboomwerking de Universele Redacteur van Adobe Experience Manager ](https://ex
 
 ### Inhoud op de CDN wissen met een Self-Serve API-sleutel {#purge-cdn}
 
-Het plaatsen van TTL gebruikend HTTP Cachebeheer kopbal is een efficiënte benadering om de prestaties van de inhoudslevering en inhoudsversheid in evenwicht te brengen. In gevallen waarin het van essentieel belang is om onmiddellijk bijgewerkte inhoud te leveren, kan het echter nuttig zijn om de CDN-cache rechtstreeks te wissen.
+Het plaatsen van TTL gebruikend HTTP Cachebeheer kopbal is een efficiënte benadering om de prestaties van de inhoudslevering en inhoudsversheid in evenwicht te brengen. In scenario&#39;s waarin het van essentieel belang is om bijgewerkte inhoud direct te leveren, kan het echter nuttig zijn om de CDN-cache rechtstreeks te wissen.
 
-[ Leer hoe ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om een purge API teken te vormen gebruikend de de configuratiepijplijn van Cloud Manager, zodat kunt u [ zuiveren APIs ](/help/implementing/dispatcher/cdn-cache-purge.md), met om het even welk van deze variaties aanhalen:
+[ Leer hoe ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) om de configuratie van een purge API teken zelf-dienen gebruikend de de configuratiepijplijn van Cloud Manager, zodat kunt u [ zuiveren APIs ](/help/implementing/dispatcher/cdn-cache-purge.md), met om het even welk van deze variaties aanhalen:
+
 * Eén URL
 * Meerdere URL&#39;s die een tag gebruiken
 * Volledige CDN-cache leegmaken
 
 ### Self-Serve Configuratie van x-AEM-Edge-Sleutel voor klant-Beheerde CDN {#customermanaged-keys}
 
-Eerder, was een steunkaartje nodig om X-AEM-Edge-Sleutel te produceren die voor configuratie van een klant-beheerde CDN wordt vereist. Dit is nu zelfbediening door de belangrijkste waarde in een configuratiedossier te verklaren dat gebruikend de Pijpleiding van de Configuratie wordt opgesteld, verwijderend om het even welke vertraging in het aan boord gaan van een nieuw milieu. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Eerder, was een steunkaartje nodig om X-AEM-Edge-Sleutel te produceren die voor configuratie van een klant-beheerde CDN wordt vereist. Dit werkschema is nu zelfbediening door de zeer belangrijke waarde in een configuratiedossier te verklaren dat gebruikend de Pijpleiding van de Configuratie wordt opgesteld, verwijderend om het even welke vertraging in het aan boord gaan van een nieuw milieu. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### Waarschuwing verkeersfilterregels {#traffic-filter-rules-alerts}
 
-De Regels van de Filter van het verkeer, die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden geblokkeerd.
+De de filterregels van het verkeer, die de naar keuze licentiable regels van de Firewall van de Toepassing van het Web (WAF) omvatten, laat u vormen welk verkeer zou moeten worden geblokkeerd.
 
-Nu kunt u [ aan alarm ](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) intekenen wanneer uw regels van de verkeersfilter worden teweeggebracht. Met e-mailmeldingen van het Actions Center kunt u op de hoogte worden gehouden wanneer bepaalde verkeersvoorwaarden zich voordoen, zodat u de juiste maatregelen kunt nemen.
+Nu, kunt u [ aan alarm ](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) intekenen wanneer uw regels van de verkeersfilter worden teweeggebracht. Met e-mailmeldingen van het Actions Center kunt u op de hoogte worden gehouden wanneer bepaalde verkeersvoorwaarden zich voordoen, zodat u de juiste maatregelen kunt nemen.
 
 ### Inhoudsgerelateerde programma&#39;s voor vroege adoptie {#foundation-early-adopter}
 

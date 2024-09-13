@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 99a36bab3ca8d5e6a64e1fdb9c179cf8a3190a14
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,12 @@ Hefboomgaard GenAI door AEM nieuwe eigenschap, [ produceert variaties ](/help/ge
 
 ## [!DNL Experience Manager Assets] als een [!DNL Cloud Service] {#assets}
 
+### Functie voor vroege toegang in Dynamic Media {#dm-early-access}
+
+**op AI-Gebaseerde videotitels**
+
+Op AI gebaseerde videobijschriften in Adobe Dynamic Media gebruiken artificiële intelligentie om titels automatisch voor videoinhoud te produceren. Deze functie is ontworpen om de toegankelijkheid te verbeteren en de gebruikerservaring te verbeteren door nauwkeurige, real-time bijschriften te bieden. De AI analyseert de audiotrack van de video om spraak te transcriperen en bijschriften te maken, die kunnen worden bewerkt voor nauwkeurigheid of aanpassing. Deze bijschriften helpen te voldoen aan toegankelijkheidsvereisten en verbeteren de videobetrokkenheid van gebruikers die op tekst gebaseerde videoondersteuning gebruiken of verkiezen.
+
 ### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
 
 **bijgewerkte Generatie van het Beeld van de Adobe Firefly**
@@ -80,11 +86,11 @@ Assets as a Cloud Service biedt nu naast de bestaande ondersteuning voor PSD-bes
 ### Nieuwe verbeteringen in Content Hub {#content-hub-new-enhancements}
 
 * Betere verwerking van lange bestandsnamen, eenvoudige uitbreiding van de volledige naam via knopinfo.
-* Verbeterde miniaturen voor een betere verhouding tussen de inhoud en een groter inhoudsgebied.
+* Verbeterde miniaturen om de hoogte-breedteverhouding van de inhoud beter aan te passen en om een groter inhoudsgebied te bedekken.
 * Aangepaste miniatuurervaring van AEM ondersteund in de inhoudshub.
 * Verbeteringen in het zoeken naar kleuren.
 * Verbeteringen in configuraties besparen ervaring.
-* Verbeterde informatiepagina van verzamelingen om de auteursnaam te weerspiegelen.
+* Verbeterde informatiepagina van verzamelingen waarin de naam van de maker wordt weergegeven.
 
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
@@ -93,7 +99,7 @@ Assets as a Cloud Service biedt nu naast de bestaande ondersteuning voor PSD-bes
 
 #### Een concept voor adaptieve Forms op basis van Core Components automatisch opslaan
 
-Gebruikers kunnen nu profiteren van een functie voor automatisch opslaan, waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversiesnelheden voor organisaties verhoogd door het aantal gebruikers dat het formulier verlaat te verminderen, aangezien gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
+Gebruikers kunnen nu profiteren van een functie voor automatisch opslaan, waarmee een gedeeltelijk ingevuld formulier automatisch als concept wordt opgeslagen. Ze kunnen later terugkeren om de vulling op hetzelfde of een ander apparaat te voltooien. Met deze functie worden de conversietarieven voor organisaties verbeterd doordat het aantal gebruikers dat het formulier afsluit, wordt verminderd, omdat gebruikers niet vanaf het begin hoeven te beginnen met het invullen van het formulier.
 
 
 ### Functies voor vroege toegang in AEM Forms {#forms-new-early-access-features}
@@ -112,17 +118,17 @@ De beschikbare Generative AI-mogelijkheden zijn:
 
 * **AI Medewerker voor de Vragen van het Product**: Krijg onmiddellijke antwoorden op uw AEM vorm-verwante vragen. De AI-assistent fungeert als uw eigen persoonlijke kennisbasis en biedt direct binnen het platform inzichtelijke begeleiding en aanbevelingen.
 
-* **Aangepaste Generatie van de Vorm**: Creëer gemakkelijk volledige vormen met Generatieve Herinneringen AI. Onze generatieve AI genereert automatisch gebruikersvriendelijke formulieren die keuzemogelijkheden verkleinen en de ervaring aanpassen.
+* **Aangepaste Generatie van de Vorm**: Creëer gemakkelijk volledige vormen met generatieve herinneringen AI. De generatieve AI van de Adobe produceert automatisch gebruikersvriendelijke vormen die drop-outs verminderen en de ervaring personaliseren.
 
 * **de Generatie van het Comité voor Forms**: produceer vormsecties die aan specifieke behoeften van de gegevensinzameling worden aangepast. U kunt bijvoorbeeld secties genereren voor het verzamelen van betalingsgegevens, voorkeuren van klanten of reisgegevens.
 
-* **Veranderend de Lay-outs van de Vorm**: Experimenteer met verschillende lay-outs en ontwerpen gebruikend Generatieve Herinneringen AI. Probeer verschillende indelingen, zoals de wizard of de tabsgewijze weergave, uit om te zien wat het beste bij uw formulier past. Gebruik Generative AI-herinneringen om uw formulieren te optimaliseren voor een mobiel reactievermogen en visueel aantrekkelijke formulieren te maken waar gebruikers van houden.
+* **Veranderend de Lay-outs van de Vorm**: Experimenteer met verschillende lay-outs en ontwerpen gebruikend generatieve herinneringen AI. Probeer verschillende indelingen, zoals de wizard of de tabsgewijze weergave, uit om te zien wat het beste bij uw formulier past. Gebruik generatieve AI-aanwijzingen om uw formulieren te optimaliseren voor een mobiel reactievermogen en visueel aantrekkelijke formulieren te maken waar gebruikers van houden.
 
-* **vormt Verzenden Actie**: De Generatieve herinneringen van AI van het gebruik om een voorleggingsactie voor uw vorm moeiteloos te vormen. Maak een keuze uit een bibliotheek met vooraf gebouwde verzendacties of uit een lijst met aangepaste verzendacties die zijn gemaakt en geïmplementeerd door uw eigen ontwikkelingsteam.
+* **vormt Voorlegt Actie**: De generatieve herinneringen van AI van het gebruik om een voorlegt actie voor uw vorm te vormen. Maak een keuze uit een bibliotheek met vooraf gebouwde verzendacties of aangepaste verzendacties die zijn gemaakt en geïmplementeerd door uw ontwikkelingsteam.
 
 >[!IMPORTANT]
 >
-> Als u in het aansluiten bij het Vroege Programma van de Toegang voor om het even welke innovatie geinteresseerd bent, verzend eenvoudig een e-mail van uw officieel adres aan [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden u in geinteresseerd bent.
+> Wil je deelnemen aan het programma voor vroege toegang voor Forms-innovatie? Verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden die u in geinteresseerd bent.
 
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
