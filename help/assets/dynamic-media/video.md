@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '9284'
+source-wordcount: '9280'
 ht-degree: 0%
 
 ---
@@ -526,7 +526,7 @@ U kunt ondersteuning inschakelen in Dynamic Media voor:
 * Meerdere bijschriften en audiotracks
 * Door AI gegenereerde bijschriften (Vroege toegang)
 
-In de vorm van een Adobe voor klantenondersteuning die u maakt en verzendt.
+Door een Adobe voor klantenondersteuning te maken en in te dienen.
 
 Als u een van de drie bovengenoemde mogelijkheden inschakelt, kunnen alle mogelijkheden worden benut. Dus als je alleen DASH ingeschakeld wilt hebben, maak je alle drie de mogelijkheden die hierboven zijn vermeld mogelijk.
 
