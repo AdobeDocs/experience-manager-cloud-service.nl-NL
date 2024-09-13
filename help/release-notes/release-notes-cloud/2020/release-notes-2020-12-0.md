@@ -4,9 +4,9 @@ description: Nota's van de versie voor 2020.12.0 versie van  [!DNL Adobe Experie
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De volgende release (2021.1.0) is 28 januari 2021.
 
 * De mogelijkheden van [!DNL Dynamic Media] zijn nu toegankelijk via AEM [!DNL Sites] op afbeeldingen gebaseerde Core Components. Auteurs kunnen snel componenten configureren voor het gebruik van Voorinstellingen voor afbeeldingen, SmartCrop en Image Modifiers bij het maken van webpagina&#39;s. Zie {de versie van de Componenten 2.13.0 van de Kern van 0} ](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).[
 
-* Met de bureaubladtoepassing [!DNL Experience Manager] kunnen gebruikers bestanden en mappen uploaden door de bestanden vanuit Windows Explorer of Mac Finder naar de interface van de bureaubladtoepassing te slepen. Zie [ activa toevoegen gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* Met de bureaubladtoepassing [!DNL Experience Manager] kunnen gebruikers bestanden en mappen uploaden door de bestanden vanuit Windows Explorer of Mac Finder naar de interface van de bureaubladtoepassing te slepen. Zie [ activa toevoegen gebruikend Desktop app ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -50,7 +50,7 @@ De Releasedatum voor Cloud Manager in Adobe Experience Manager (AEM) as a Cloud 
 
 ### Nieuwe functies in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Zelfbediening beheer van [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) en [ Namen van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Zelfbediening beheer van [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) en [ Inleiding aan de Namen van het Domein van de Douane ](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 * Zelfbediening beheer van [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
@@ -66,7 +66,7 @@ De Releasedatum voor Cloud Manager in Adobe Experience Manager (AEM) as a Cloud 
 
 ### Nieuwe functies in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) waar u meer over deze elektrisch toestel kunt leren.
+* Nieuwe versie van AIO-CLI-plug-in uitgebracht. De meest recente versie van deze plug-in bevat foutoplossingen voor de AEM Dispatcher Converter en de Repository Modernizer en biedt ook ondersteuning voor een nieuw hulpprogramma - Index Converter. Zie [ Verenigde Ervaring ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) waar u meer over deze elektrisch toestel kunt leren.
 
 * Indexconverter is een hulpprogramma waarmee de aangepaste Oak-indexdefinities van een klant kunnen worden getransformeerd naar Oak-compatibele indexdefinities. Zie [ Omzetter van de Index ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) voor meer details.
 
@@ -86,6 +86,6 @@ De releasedatum voor Content Transfer Tool v1.1.20 is 8 januari 2021.
 
 ### Opgeloste problemen {#ctt-bug-fixes}
 
-* De status van de gebruikersinterface van Content Transfer Tool (CTT) voor een migratieset bleef niet bestaan en werd niet gewijzigd na een periode van inactiviteit. Dit is opgelost.
-* De optie voor het weergeven van logboeken is uitgeschakeld als de logboeken niet beschikbaar waren. Dit is opgelost en het overseinen is toegevoegd om gebruikers mee te delen waarom de logboeken ontbreken.
-* De gebruikersinterfacestatus van het hulpmiddel van de Overdracht van de inhoud toonde *MISLUKT* toen de gebruiker een opname tegenhield. Dit is bevestigd aan vertoning *GESTOPT* in plaats daarvan.
+* De status van de gebruikersinterface van Content Transfer Tool (CTT) voor een migratieset bleef niet bestaan en werd niet gewijzigd na een periode van inactiviteit. Dit probleem is nu opgelost.
+* De optie voor het weergeven van logboeken is uitgeschakeld als de logboeken niet beschikbaar waren. Deze kwestie is nu opgelost en het overseinen wordt nu toegevoegd om gebruikers mee te delen waarom de logboeken ontbreken.
+* De gebruikersinterfacestatus van het hulpmiddel van de Overdracht van de inhoud toonde *MISLUKT* toen de gebruiker een opname tegenhield. Deze kwestie wordt nu bevestigd om *GESTOPT* te tonen.

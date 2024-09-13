@@ -4,9 +4,9 @@ description: Meer informatie over alle elementen die nodig zijn voor een geslaag
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Controleer deze lijst met activiteiten om ervoor te zorgen dat Go-Live probleeml
       * Vorm SSL en DNS volgens de documentatie van uw verkoper CDN.
    * Als u geen extra CDN gebruikt, beheer SSL en DNS volgens de volgende documentatie:
       * SSL-certificaten beheren
-         * [Inleiding tot het beheren van SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Inleiding tot SSL-certificaten](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [SSL-certificaten beheren](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Aangepaste domeinnamen (DNS) beheren
          * Zorg ervoor dat de DNS-cutover geen onverwachte problemen veroorzaakt. Creeer testsubdomain om uw productieinstantie met aan te sluiten alvorens u gaat-leven en een ronde van het testen van UAT doet. Dus als uw domein example.com is, kunt u een subdomein maken test.example.com en dit toepassen op productie. Tijdens het testen van UAT van het domein, zoek dingen zoals juiste verbindingsredirection, caching, en de configuraties van Dispatcher.

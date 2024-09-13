@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Zie ook [ problemen oplossen SSL certificaatfouten ](/help/implementing/cloud-ma
 
 Een certificaat kan een paar dagen aan levering vergen. Daarom beveelt de Adobe aan dat het certificaat ruim vóór een eventuele deadline of doorlopende datum wordt verstrekt.
 
-Ben zeker u herziet **vereisten van het Certificaat** in [ Inleiding aan het Leiden SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) om ervoor te zorgen AEM as a Cloud Service het certificaat steunt dat u wilt toevoegen.
+Ben zeker u herziet **vereisten van het Certificaat** in [ Inleiding aan het Leiden SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) om ervoor te zorgen AEM as a Cloud Service het certificaat steunt dat u wilt toevoegen.
 
 Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Manager van de Plaatsing** om deze taak te voltooien.
 
@@ -45,7 +45,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 1. Vlak de hoger-juiste hoek van de pagina, klik **voeg SSL Certificaat** toe.
 
-1. In **voeg SSL certificaat** dialoogdoos toe, die op [ uw bijzonder gebruiksgeval ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) wordt gebaseerd, doe één van het volgende:
+1. In **voeg SSL certificaat** dialoogdoos toe, die op [ uw bijzonder gebruiksgeval ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) wordt gebaseerd, doe één van het volgende:
 
    | | Hoofdletters gebruiken | Stappen |
    | --- | --- | --- |

@@ -5,7 +5,7 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -41,7 +41,7 @@ U kunt [ de zelfde stappen volgen om een naam van het douanedomein ](#view-and-u
 
 >[!NOTE]
 >
->Het SSL certificaat moet geldig zijn, [ reeds gevormd ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), en bevat de naam van het douanedomein u bijwerkt.
+>Het SSL certificaat moet geldig zijn, [ reeds gevormd ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), en bevat de naam van het douanedomein u bijwerkt.
 
 ## Een aangepaste domeinnaam verwijderen {#deleting}
 

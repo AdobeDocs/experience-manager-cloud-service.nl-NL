@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt
 
 De interface voor cloud-beheer bestaat voornamelijk uit twee grafische interfaces:
 
-* [ De Mijn console van Programma&#39;s ](#my-programs-console) waar u al uw programma&#39;s kunt bekijken en beheren.
-* [ het venster van het Overzicht van het Programma ](#program-overview) waar u het detail van kunt zien en een individueel programma beheren.
+* [ de Mijn console van Programma&#39;s ](#my-programs-console) is waar u al uw programma&#39;s kunt bekijken en beheren.
+* [ het venster van het Overzicht van het Programma ](#program-overview) is waar u het detail van kunt zien en een individueel programma beheren.
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ De console Mijn Programma&#39;s biedt een overzicht van alle programma&#39;s waa
    * Merk op dat het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend het hamburgermenu in de [ kopbal van Cloud Manager ](#cloud-manager-header).
 1. [ Statistieken en vraag-aan-actie ](#statistics) voor een overzicht van uw recente activiteit
 1. [**Mijn Programma&#39;s** sectie ](#my-programs-section) met een overzicht van al uw programma&#39;s
-1. [ Snelle verbindingen ](#quick-links-section) om tot verwante middelen gemakkelijk toegang te hebben
+1. [ Snelle verbindingen ](#quick-links-section) om tot verwante middelen gemakkelijk toegang te hebben.
 
 >[!TIP]
 >
@@ -51,16 +51,16 @@ De console Mijn Programma&#39;s biedt een overzicht van alle programma&#39;s waa
 
 Er staan twee werkbalken boven op elkaar.
 
-#### Cloud Manager-koptekst {#cloud-manager-header}
+#### Cloud Manager header {#cloud-manager-header}
 
 De eerste is de Cloud Manager header, die blijvend is terwijl je door Cloud Manager navigeert. Het is een anker dat u toegang geeft tot instellingen en informatie die van toepassing zijn op alle Cloud Manager-programma&#39;s.
 
 ![ de kopbal van het Experience Cloud ](assets/experience-cloud-header.png)
 
-1. Het hamburger menu dat toegang tot lusjes geeft die u aan specifieke delen van a in individueel programma kunnen nemen of tussen het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) en de **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van context schakelen.
+1. Het hamburgermenu dat toegang geeft tot tabbladen die u naar specifieke onderdelen van een afzonderlijk programma kunnen brengen. Of, kunt u tussen het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) en de **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van de context schakelen.
 1. Met de knop Cloud Manager gaat u terug naar de console Mijn programma&#39;s van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
 1. Tik of klik op Feedback om feedback te geven aan de Adobe over Cloud Manager.
-1. De organisatieselecteur toont de organisatie u momenteel wordt ondertekend in (in dit voorbeeld, Interne Stichting). Tik of klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere.
+1. De organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Tik of klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere.
 1. Als u op de schakeloptie voor oplossingen tikt of erop klikt, kunt u snel naar andere oplossingen voor Experiencen Cloud gaan.
 1. Met het Help-pictogram hebt u snel toegang tot leermiddelen en ondersteuningsbronnen.
 1. Het berichtpictogram is badged met het aantal momenteel toegewezen onvolledige [ berichten ](/help/implementing/cloud-manager/notifications.md).
@@ -76,7 +76,7 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
 1. De het worden begonnen verbinding geeft u toegang tot [ op het instappen documentatiereis ](/help/journey-onboarding/overview.md) om u met Cloud Manager op te halen.
 1. Met de knop Handeling kunt u contextgerichte acties uitvoeren, zoals het maken van een nieuw programma.
 
-### Statistieken en Vraag-aan-Acties {#statistics}
+### Statistieken en oproep tot actie {#statistics}
 
 De statistiek en de vraag-aan-actie sectie verstrekt gezamenlijke gegevens voor uw organisatie, bijvoorbeeld, als u met succes uw programma&#39;s hebt opgezet, zouden de statistieken van uw activiteiten in de afgelopen 90 dagen kunnen tonen, die omvatten:
 
@@ -96,7 +96,8 @@ De **Mijn van Programma&#39;s** sectie maakt een lijst van kaarten die elk progr
 >
 >Afhankelijk van uw rechten kunt u bepaalde programma&#39;s mogelijk niet selecteren.
 
-Gebruik de sorteeropties om het gewenste programma te vinden.
+
+Gebruik de sorteeropties om het gewenste programma gemakkelijker te vinden.
 
 ![ het Sorteren opties ](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
@@ -110,7 +111,7 @@ Gebruik de sorteeropties om het gewenste programma te vinden.
 
 #### Programmakaarten {#program-cards}
 
-Elk programma wordt vertegenwoordigd door een kaart (of rij in een lijst), die een overzicht van het programma en snelle verbindingen verstrekt om actie te ondernemen.
+Een kaart (of rij in een tabel) vertegenwoordigt elk programma en biedt een overzicht van het programma en snelle koppelingen om actie te ondernemen.
 
 ![ kaart van het Programma ](assets/program-card.png)
 
@@ -158,22 +159,23 @@ Het ellipsiepictogram geeft u toegang tot extra acties u het programma kunt neme
 >Raadpleeg de volgende documenten voor meer informatie over programma&#39;s en het maken en beheren van programma&#39;s.
 >
 >* [ Programma&#39;s en de Types van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
->* [ Creërend Sandbox Programma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [ Creërend de Programma&#39;s van de Productie ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [ creeer productieprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [ creeer zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+
 
 ### Sectie Snelle koppelingen {#quick-links-section}
 
-De snelle sectie van verbindingen geeft u toegang tot algemeen gebruikte, verwante middelen.
+De snelle sectie van verbindingen geeft u toegang tot algemeen gebruikte middelen die verwant zijn.
 
 ## Venster Overzicht van programma {#program-overview}
 
-Zodra u een programma in de **[Mijn console van Programma&#39;s](#my-programs-console)** selecteert, wordt u genomen aan het **venster van het Overzicht van het Programma**.
+Wanneer een programma in de **[Mijn console van Programma&#39;s](#my-programs-console)** wordt geselecteerd, wordt u genomen aan het **venster van het Overzicht van het Programma**.
 
 ![ Overzicht van het Programma ](assets/program-overview.png)
 
 In het programmaoverzicht hebt u toegang tot alle details van een Cloud Manager-programma. Als **Mijn console van Programma&#39;s**, wordt het gemaakt van verscheidene delen.
 
-1. [ Toolbars ](#program-overview-toolbar) om snel terug naar de Mijn console van Programma&#39;s te springen evenals het programma te navigeren
+1. [ Toolbars ](#program-overview-toolbar) om terug naar de Mijn console van Programma&#39;s snel te springen, en het programma te navigeren
 1. [ Lusjes ](#program-tabs) om tussen verschillende aspecten van het programma te schakelen
 1. A [ vraag-aan-actie ](#cta) die op de laatste acties van het programma wordt gebaseerd
 1. Een [ overzicht van de milieu&#39;s ](#environments) van het programma
@@ -183,9 +185,9 @@ In het programmaoverzicht hebt u toegang tot alle details van een Cloud Manager-
 
 ### Werkbalken {#program-overview-toolbar}
 
-De toolbars voor het programmaoverzicht zijn gelijkaardig aan die van de [ Mijn console van Programma&#39;s ](#my-programs-toolbars). Alleen de verschillen worden hier geïllustreerd.
+De toolbars voor het programmaoverzicht zijn gelijkaardig aan die toolbars van de [ Mijn console van Programma&#39;s ](#my-programs-toolbars). Alleen de verschillen worden hier geïllustreerd.
 
-#### Cloud Manager-koptekst {#cloud-manager-header-2}
+#### Cloud Manager header {#cloud-manager-header-2}
 
 De Cloud Manager-header heeft een hamburgermenu dat automatisch wordt geopend om de navigeerbare tabbladen van het programmaoverzicht weer te geven.
 
@@ -199,33 +201,43 @@ Op de werkbalk van het programma hebt u nog steeds toegang om snel over te schak
 
 ![ de toolbar van het Programma ](assets/cloud-manager-program-toolbar.png)
 
-Bovendien geeft de werkbalk altijd aan op welk tabblad u de tabbladen wilt verbergen via het hamburgermenu.
+Op de werkbalk wordt altijd het tabblad weergegeven dat u momenteel hebt ingeschakeld, zelfs als u de tabbladen hebt verborgen via het hamburgermenu.
 
-### Programmatabs {#program-tabs}
+### Tabbladen van programma {#program-tabs}
 
-Elk programma heeft een heleboel opties en gegevens verbonden aan het. Deze gegevens worden verzameld in lusjes om het navigeren van het programma eenvoudiger te maken. Met de tabbladen hebt u toegang tot:
+Elk programma heeft talrijke opties en gegevens verbonden aan het. Deze opties en gegevens worden in tabbladen verzameld om het navigeren door het programma eenvoudiger te maken. Met de tabbladen hebt u toegang tot:
+
+**Programma**
 
 * Overzicht - Het programma-overzicht zoals beschreven in het huidige document
 * [ Activiteit ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - de geschiedenis van pijpleidingslooppas van het programma
 * [ Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - Alle pijpleidingen die voor het programma worden gevormd
 * [ Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - Alle bewaarplaatsen die voor het programma worden gevormd
 * [ Rapporten ](/help/implementing/cloud-manager/sla-reporting.md) - Metriek zoals de gegevens van SLA
+
+**de Diensten**
+
 * [ Milieu&#39;s ](/help/implementing/cloud-manager/manage-environments.md) - Alle milieu&#39;s die voor het programma worden gevormd
+* [ de Plaatsen van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - beheer de plaatsen van Edge Delivery
 * [ Montages van het Domein ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer de namen van het douanedomein voor het programma
-* [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) - beheer SSL certificaten voor het programma
+* [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - beheer SSL certificaten voor het programma
+* [ CDN Configurations ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer configuraties CDN
 * [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - bepaal lijsten van gewenste personen voor bepaalde IP adressen
 * [ Reeksen van de Inhoud ](/help/implementing/developing/tools/content-copy.md) - Reeksen van inhoud die voor exemplaardoeleinden wordt gecreeerd
 * [ Activiteit van de Inhoud van het Exemplaar ](/help/implementing/developing/tools/content-copy.md) - de activiteiten van het Inhoudsexemplaar
 * [ Infrastructuur van het Netwerk ](/help/security/configuring-advanced-networking.md) - beheer geavanceerde voorzien van een netwerkopties voor het programma
+
+**Middelen**
+
 * Leerpaden - Aanvullende leerbronnen over Cloud Manager
 
 Door gebrek, wanneer u een programma opent u op het **Overzicht** tabel aankomt. Het huidige tabblad wordt gemarkeerd. Selecteer een ander tabblad om de details ervan weer te geven.
 
 Gebruik het hamburger menu in de [ kopbal van Cloud Manager ](#cloud-manager-header-2) om de lusjes te verbergen.
 
-### Oproep tot actie {#cta}
+### Vraag-aan-sction {#cta}
 
-De vraag-aan-actie sectie zal u nuttige informatie afhankelijk van de status van uw programma geven. Voor een nieuw programma kunt u volgende aangeboden stappen evenals een herinnering van een go-live datum zien, [ plaats tijdens programmaverwezenlijking ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+De vraag-aan-actie sectie geeft u nuttige informatie afhankelijk van de status van uw programma. Voor een nieuw programma, kunt u volgende stappen zien gegeven en een herinnering van een go-live datum, [ die tijdens programmaverwezenlijking ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) wordt geplaatst.
 
 ![ vraag-aan-actie voor een nieuw programma ](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 

@@ -4,7 +4,7 @@ description: Meer informatie over de opmerkingen bij de release voor Cloud Manag
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -39,7 +39,7 @@ De releasedatum voor Cloud Manager release 2024.9.0 in AEM as a Cloud Service is
 
 * **Edge Delivery Services steun in Cloud Manager:**
 
-  Als u een Edge Delivery Services vergunning als deel van AEM Sites hebt, [ kunt u nu aan boord uw plaats met Edge Delivery Services direct door Cloud Manager ](/help/implementing/cloud-manager/edge-delivery-services.md). Met deze functie beschikt u over een begeleide, zelfbediening voor Go Live-ervaring. Het verenigt ook essentiële werkschema&#39;s zoals het beheer van domeinnamen, SSL certificaten, en afbeeldingen CDN over al uw AEM eigenschappen, die consistentie en efficiency verzekeren. <!-- CMGR-49859 -->
+  Als u een Edge Delivery Services vergunning als deel van AEM Sites hebt, [ kunt u nu aan boord uw plaats met Edge Delivery Services direct door Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Met deze functie beschikt u over een begeleide, zelfbediening voor Go Live-ervaring. Het verenigt ook essentiële werkschema&#39;s zoals het beheer van domeinnamen, SSL certificaten, en afbeeldingen CDN over al uw AEM eigenschappen, die consistentie en efficiency verzekeren. <!-- CMGR-49859 -->
 
   >[!NOTE]
   >
