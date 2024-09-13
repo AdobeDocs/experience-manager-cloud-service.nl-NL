@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Cloud Manager biedt zelfbedieningsgereedschappen voor het installeren en beheren
 
 | | Hoofdletters gebruiken | Beschrijving |
 | --- | --- | --- |
-| 1 | **Adobe beheerde certificaat (DV)** | Met Cloud Manager kunnen gebruikers een DV-certificaat (Domain Validation) configureren dat afkomstig is van Adobe voor snelle domeininstallatie. DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [ productie als zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). |
+| 1 | **Adobe beheerde certificaat (DV)** | Met Cloud Manager kunnen gebruikers een DV-certificaat (Domain Validation) configureren dat afkomstig is van Adobe voor snelle domeininstallatie. DV-certificaten zijn het meest elementaire niveau van SSL-certificering en worden vaak gebruikt voor testdoeleinden of voor het beveiligen van websites met basiscodering. DV de certificaten zijn beschikbaar in zowel [ productieprogramma&#39;s als zandbakprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). Nadat het DV-certificaat is gemaakt, wordt dit door de Adobe automatisch elke drie maanden vernieuwd, tenzij het wordt verwijderd. |
 | 2 | **Klant beheerde certificaat (OV/EV)** | Cloud Manager gebruikt de dienst van platformTLS (de Veiligheid van de Laag van het Vervoer) om klant-bezeten SSL certificaten en privé sleutels van de Autoriteiten van het Certificaat van de derde te beheren, zoals *laten versleutelen*. |
 
 >[!NOTE]
@@ -41,7 +41,7 @@ Cloud Manager biedt zelfbedieningsgereedschappen voor het installeren en beheren
 
 Bedrijven en organisaties gebruiken SSL-certificaten om hun websites te beveiligen en hun klanten in staat te stellen er vertrouwen in te stellen. Voor gebruik van het SSL-protocol vereist een webserver het gebruik van een SSL-certificaat.
 
-Wanneer een entiteit, zoals een organisatie of bedrijf, een certificaat van een CA (Certificate Authority) aanvraagt, voltooit de CA een verificatieproces. Dit proces kan zich van het verifiëren van domeinnaamcontrole tot het verzamelen van de documenten van de bedrijfregistratie en abonneeovereenkomsten uitstrekken. Nadat de informatie van een entiteit is geverifieerd, ondertekent de CA hun openbare sleutel gebruikend de privé sleutel van CA. Omdat alle belangrijke Autoriteiten van het Certificaat wortelcertificaten in Webbrowsers hebben, wordt het certificaat van de entiteit verbonden door a *ketting van vertrouwen*, en Webbrowser erkent het als vertrouwd op certificaat.
+Wanneer een entiteit, zoals een organisatie of bedrijf, een certificaat aanvraagt van een certificeringsinstantie (CA), voltooit de CA een verificatieproces. Dit proces kan zich van het verifiëren van domeinnaamcontrole tot het verzamelen van de documenten van de bedrijfregistratie en abonneeovereenkomsten uitstrekken. Nadat de informatie van een entiteit is geverifieerd, ondertekent de CA hun openbare sleutel gebruikend de privé sleutel van CA. Omdat alle belangrijke Autoriteiten van het Certificaat wortelcertificaten in Webbrowsers hebben, wordt het certificaat van de entiteit verbonden door a *ketting van vertrouwen*, en Webbrowser erkent het als vertrouwd op certificaat.
 
 >[!IMPORTANT]
 >

@@ -4,9 +4,9 @@ description: Leer hoe u Cloud Manager-projecten kunt leveren met behulp van Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1516'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Voer afhankelijk van uw gebruiksgeval een van de volgende handelingen uit:
 
 ## Adobe aanbevolen pad voor gecontracteerde klanten {#recommended-path-eds}
 
-Als gecontracteerde klant kunt u ervoor zorgen dat u optimaal profiteert van de Adobe door toegang te krijgen tot uw licentie voor Edge Delivery Services en deze te verbruiken via Cloud Manager. Deze benadering laat u [ beheerde Adobe gebruiken CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) en uit zeer belangrijke voordelen zoals zelfbediening CDN beheer, met inbegrip van de configuratie en de installatie van DV of EV/OV certificaten voordeel halen. Als u geen Edge Delivery Services vergunning met Adobe hebt en besluit om die voordelen over te slaan, kunt u een klant-beheerde CDN slechts gebruiken. Deze opstelling moet op het platform aem.live zijn.
+Als gecontracteerde klant kunt u ervoor zorgen dat u optimaal profiteert van de Adobe door toegang te krijgen tot uw licentie voor Edge Delivery Services en deze te verbruiken via Cloud Manager. Deze benadering laat u [ beheerde Adobe gebruiken CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) en uit zeer belangrijke voordelen zoals zelfbediening CDN beheer, met inbegrip van de configuratie en de toevoeging van DV certificaten voordeel halen. Bovendien, nadat een DV- certificaat wordt gecreeerd, vernieuwt de Adobe het automatisch om de drie maanden, tenzij het wordt geschrapt. Als u geen Edge Delivery Services vergunning met Adobe hebt en besluit om deze voordelen over te slaan, kunt u een klant-beheerde CDN slechts gebruiken. Deze instelling moet zich op het `aem.live` -platform bevinden.
 
 Als u een contract hebt met licenties voor AEM as a Cloud Service Sites-Edge Delivery Services, meldt u zich aan bij Cloud Manager om ervoor te zorgen dat u het volgende kunt doen:
 
