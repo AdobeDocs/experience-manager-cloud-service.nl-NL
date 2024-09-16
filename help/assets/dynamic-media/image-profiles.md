@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 0ad506fc72cb73d3a6a8cdd9eee50f213b52665e
 workflow-type: tm+mt
-source-wordcount: '3409'
-ht-degree: 3%
+source-wordcount: '3372'
+ht-degree: 0%
 
 ---
 
@@ -22,11 +22,11 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 ## Onscherp masker, optie {#unsharp-mask}
 
-Wanneer u een afbeeldingsprofiel maakt, kunt u met de optie **[!UICONTROL Unsharp mask]** een verscherpingsfiltereffect perfectioneren voor de uiteindelijke gedownsampelde afbeelding. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker in Adobe Photoshop.
+Wanneer u een afbeeldingsprofiel maakt, kunt u met de optie **[!UICONTROL Unsharp mask]** een verscherpingsfiltereffect perfectioneren voor de uiteindelijke gedownsampelde afbeelding. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker in Adobe Photoshop.
 
 >[!NOTE]
 >
->Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dat betekent dat de grootst mogelijke uitvoeringen binnen het pad niet worden beïnvloed door een onscherp masker. Terwijl kleinere uitvoeringen, zoals miniaturen, worden gewijzigd (en het onscherpe masker worden weergegeven).
+>Het onscherp masker wordt alleen toegepast op geschaalde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Het onscherpe masker heeft geen invloed op de grootst mogelijke uitvoeringen binnen het pad. Terwijl kleinere uitvoeringen, zoals miniaturen, worden gewijzigd (en het onscherpe masker worden weergegeven).
 
 In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
 
@@ -38,15 +38,15 @@ In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
   </tr>
   <tr>
    <td>Hoeveelheid</td>
-   <td>Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde is 1,75. Voor afbeeldingen met een hoge resolutie kunt u de resolutie verhogen tot maximaal 5. Beschouw Hoeveelheid als een maat voor de filterintensiteit. Bereik is 0-5.</td>
+   <td>Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde is 1,75. Voor afbeeldingen met een hoge resolutie kunt u de resolutie verhogen tot maximaal 5. Beschouw Hoeveelheid als een maat voor de filterintensiteit. Het bereik is 0-5.</td>
   </tr>
   <tr>
    <td>Straal</td>
-   <td>Hiermee bepaalt u het aantal pixels rondom de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een waarde in tussen 1 en 2. Met een lage waarde worden alleen de randpixels verscherpt; met een hoge waarde wordt een bredere reeks pixels verscherpt. De juiste waarde is afhankelijk van de grootte van de afbeelding. De standaardwaarde is 0,2. Bereik is 0-250.</td>
+   <td>Hiermee bepaalt u het aantal pixels rondom de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een waarde in tussen 1 en 2. Met een lage waarde worden alleen de randpixels verscherpt; met een hoge waarde wordt een bredere reeks pixels verscherpt. De juiste waarde is afhankelijk van de grootte van de afbeelding. De standaardwaarde is 0,2. Het bereik is 0-250.</td>
   </tr>
   <tr>
    <td>Drempel</td>
-   <td><p>Hiermee bepaalt u het contrastbereik dat moet worden genegeerd wanneer het filter Onscherp masker wordt toegepast. Met andere woorden, met deze optie bepaalt u hoe verschillend de verscherpte pixels moeten zijn van het omringende gebied voordat ze als randpixels worden beschouwd en worden verscherpt. Experimenteer met waarden tussen 0 en 255 om ruis te voorkomen.</p> </td>
+   <td><p>Hiermee bepaalt u het contrastbereik dat moet worden genegeerd wanneer het filter Onscherp masker wordt toegepast. Met deze optie bepaalt u hoe verschillende verscherpte pixels moeten verschillen van de omgeving om als randpixels te worden beschouwd. Alleen pixels die aan deze drempelwaarde voldoen, worden verscherpt. Experimenteer met waarden tussen 0 en 255 om ruis te voorkomen.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -65,9 +65,9 @@ Zie ook {de beperkingen van 0} Dynamic Media ](/help/assets/dynamic-media/limita
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-De coördinaten voor slimme uitsnijdingen zijn afhankelijk van de hoogte-breedteverhouding. Als voor de instellingen Slim uitsnijden in een afbeeldingsprofiel de hoogte-breedteverhouding voor de toegevoegde afmetingen in het afbeeldingsprofiel gelijk is, wordt dezelfde hoogte-breedteverhouding naar Dynamic Media verzonden. Adobe raadt u aan hetzelfde snijgebied te gebruiken. Zo voorkomt u dat er invloed optreedt op verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt.
+De coördinaten voor slimme uitsnijdingen zijn afhankelijk van de hoogte-breedteverhouding. Als voor de instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel de hoogte-breedteverhouding voor de toegevoegde afmetingen in het afbeeldingsprofiel hetzelfde is, wordt dezelfde hoogte-breedteverhouding naar Dynamic Media verzonden. Adobe raadt u aan hetzelfde snijgebied te gebruiken. Zo voorkomt u dat er invloed optreedt op verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt.
 
-Voor elke slimme uitsnijdgeneratie die u maakt, is extra verwerkingstijd nodig. Als u bijvoorbeeld meer dan vijf hoogte-breedteverhoudingen voor slimme uitsnijden toevoegt, kan dit leiden tot een trage inname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Slim Uitsnijden op het omslagniveau kunt toepassen, adviseert de Adobe dat u het op omslagen *slechts* gebruikt waar het nodig is.
+Voor elke slimme uitsnijdgeneratie die u maakt, is extra verwerkingstijd nodig. Als u bijvoorbeeld meer dan vijf hoogte-breedteverhoudingen voor slimme uitsnijden toevoegt, kan dit leiden tot een trage inname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat slim uitsnijden kan worden toegepast op mapniveau, wordt het door de Adobe aanbevolen om het alleen te gebruiken voor mappen waar dat nodig is.
 
 **Richtlijnen voor het bepalen van Slimme Uitsnede in een Profiel van het Beeld**
 Om het gebruik van SmartCrop onder controle te houden en de verwerkingstijd en opslag van gewassen te optimaliseren, beveelt de Adobe de volgende richtlijnen en tips aan:
@@ -76,11 +76,11 @@ Om het gebruik van SmartCrop onder controle te houden en de verwerkingstijd en o
 * In het ideale geval hebt u 10-15 slimme gewassen per afbeelding om de beeldverhoudingen en de verwerkingstijd te optimaliseren.
 * Noem slimme gewassen die op gewassenafmetingen worden gebaseerd, niet op eindgebruik. Dit helpt u te optimaliseren voor duplicaten waarbij één dimensie op meerdere pagina&#39;s wordt gebruikt.
 * Maak paginagewijs/middelengewijs afbeeldingsprofielen voor specifieke mappen en submappen in plaats van een algemeen profiel voor slimme uitsnijdingen dat wordt toegepast op alle mappen of alle elementen.
-* Een afbeeldingsprofiel dat u op submappen toepast, overschrijft een afbeeldingsprofiel dat op de map is toegepast.
+* Een afbeeldingsprofiel dat u toepast op submappen, overschrijft een afbeeldingsprofiel dat is toegepast op de map.
 * Een afbeeldingsprofiel dat dubbele slimme-uitsnijdafmetingen bevat, is niet toegestaan.
 * Dubbele benoemde afbeeldingsprofielen waarvoor opties voor slim uitsnijden zijn ingesteld, zijn niet toegestaan.
 
-U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen: Uitsnijden van pixels en Slim uitsnijden. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
+U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen: pixeluitsnijding en slim uitsnijden. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
 
 >[!IMPORTANT]
 >
@@ -89,9 +89,9 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen: U
 | Optie | Wanneer gebruiken | Beschrijving |
 | --- | --- | --- |
 | **[!UICONTROL Pixel Crop]** | Bulk uitsnijdafbeeldingen alleen op basis van afmetingen. | Selecteer in de vervolgkeuzelijst **[!UICONTROL Cropping Options]** de optie **[!UICONTROL Pixel Crop]**.<br> om van de kanten van een beeld uit te snijden, gaat u het aantal pixel in om van om het even welke kant of elke kant van het beeld uit te snijden. Hoeveel van de afbeelding wordt uitgesneden, is afhankelijk van de ppi-instelling (pixels per inch) in het afbeeldingsbestand.<br> het pixeluitsnijding van het Profiel van het Beeld geeft op de volgende manier terug:<br>・ De waarden zijn Boven, Onder, Links, en Rechts.<br>・ Linksboven wordt beschouwd als `0,0` en de pixeluitsnede wordt daar berekend.<br>・ Beginpunt voor uitsnijden: Links is X en Boven is Y <br>・ Horizontale berekening: horizontale pixelgrootte van oorspronkelijke afbeelding min Links en vervolgens minus Rechts.<br>・ Verticale berekening: verticale pixelhoogte minus Boven en vervolgens minus Onder.<br> bijvoorbeeld, veronderstel u een 4000x 3000 pixelbeeld hebt. U gebruikt waarden: Top=250, Bottom=500, Left=300, Right=700.<br> van upper-left (300.250) gewas die de vullingsruimte van (4000-300-700, 300-250-500, of 3000.2250) gebruiken. |
-| **[!UICONTROL Smart Crop]** | Bulk uitsnijdafbeeldingen op basis van hun visuele brandpunt. | Smart Crop maakt gebruik van de kracht van kunstmatige intelligentie in Adobe Sensei om het uitsnijden van afbeeldingen in bulk te automatiseren. Slim uitsnijden detecteert automatisch het brandpunt in een afbeelding en snijdt dit bij tot het gewenste aandachtspunt, ongeacht de schermgrootte.<br> Van **[!UICONTROL Cropping Options]** drop-down lijst, uitgezochte **[!UICONTROL Smart Crop]**, dan rechts van **[!UICONTROL Responsive Image Crop]**, laat (zet) de eigenschap toe.<br> de standaardbreekpuntgrootte (**[!UICONTROL Large]**, **[!UICONTROL Medium]**, **[!UICONTROL Small]**) behandelt de volledige waaier van grootte die de meeste beelden op mobiele en tabletapparaten, Desktops, en banners worden gebruikt. Desgewenst kunt u de standaardnamen van Groot, Medium en Klein bewerken.<br> om meer breekpunten toe te voegen, selecteer **[!UICONTROL Add Crop]**; om een uitsnijding te schrappen, selecteer het pictogram van het Ongedaan maken kan. |
-| **[!UICONTROL Color and Image Swatch]** | Met Bulk wordt voor elke afbeelding een afbeeldingsstaal gegenereerd. | **Nota**: Het slimme Staal wordt niet gesteund in Dynamic Media Classic.<br> bepaal de plaats en produceert automatisch van uitstekende kwaliteit stalen van productbeelden die kleur of textuur tonen.<br> van de **[!UICONTROL Cropping Options]** drop-down lijst, uitgezochte **[!UICONTROL Smart Crop]**. Schakel vervolgens rechts van **[!UICONTROL Color and Image Swatch]** de functie in (schakel deze in). Geef een pixelwaarde op in de tekstvakken **[!UICONTROL Width]** en **[!UICONTROL Height]** .<br> terwijl alle beeldgewassen van het spoor van Vertoningen beschikbaar zijn, worden de monsters slechts gebruikt als **[!UICONTROL Copy URL]** eigenschap. Gebruik uw eigen weergavecomponent om het staal op uw site te renderen. De uitzondering op deze regel zijn carrouselbanners. Dynamic Media biedt de weergavecomponent voor het staal dat wordt gebruikt in carrouselbanners.<br><br>**Gebruikend beeldstalen**<br> URL voor beeldmonsters is ongecompliceerd:<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br> waar `:Swatch` aan het activaverzoek wordt toegevoegd.<br><br>**Gebruikend kleurenstalen**<br> om kleurenstalen te gebruiken, maakt u a `req=userdata` verzoek met het volgende:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br> Bijvoorbeeld, is het volgende een staalactiva in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br> en hier is het overeenkomstige de dienovereenkomstige van de staalactiva `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br> De `req=userdata` reactie is als volgt:<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br> u kunt een `req=userdata` reactie in of XML of formaat JSON, zoals in verzoeken respectieve URL voorbeelden:<br>・ `https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>・ `https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota**: U moet uw eigen component tot stand brengen WCM om een kleurenmonster te verzoeken en de `SmartSwatchColor` attributen te ontleden, die door een hexadecimale waarde met 24 bits van RGB worden vertegenwoordigd.<br> zie ook [`userdata` ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) in de Gids van de Verwijzing van Kijkers. |
-| **[!UICONTROL Preserve crop content across target resolutions]** | Uitsnijdinhoud in dezelfde verhouding behouden | Gebruik deze optie wanneer u een profiel voor slimme uitsnijdingen maakt.<br> om nieuwe gewasseninhoud - terwijl het handhaven van het brandpunt - voor een bepaalde aspectverhouding over verschillende resoluties te produceren, uncheck deze optie <br> als u besluit om dit vakje los te maken, zorg ervoor dat de originele beeldresolutie groter is dat de resoluties die u voor uw Slim profiel van het Gewas bepaalt.<br><br> als voorbeeld, veronderstel u de aspectverhoudingen bij 600 x 600 (Groot), 400 x 400 (Medium), en 300 x 300 (Klein) hebt geplaatst.<br> wanneer **[!UICONTROL Preserve crop content across target resolutions]** de optie wordt gecontroleerd **, ziet u het zelfde gewas over alle drie resoluties, gelijkend op de volgende steekproefoutput van beelden (voor illustratieve slechts doeleinden):<br>![ Uitgezochte Optie ](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br> wanneer **[!UICONTROL Preserve crop content across target resolutions]** optie *ongecontroleerd* is, is de gewasseninhoud nieuw voor alle drie resoluties, gelijkend op de volgende steekproefoutput van beelden (voor illustratieve slechts doeleinden):<br>![ Niet gecontroleerde Optie 1}:](/help/assets/dynamic-media/assets/preserve-unchecked.png) Geen Gecontroleerde Optie 1} 0} |
+| **[!UICONTROL Smart Crop]** | Bulk uitsnijdafbeeldingen op basis van hun visuele brandpunt. | Slim uitsnijden gebruikt de kracht van kunstmatige intelligentie in Adobe Sensei om het uitsnijden van afbeeldingen snel in bulk te automatiseren. Slim uitsnijden detecteert automatisch het brandpunt in een afbeelding en snijdt dit bij tot het gewenste aandachtspunt, ongeacht de schermgrootte.<br> Van **[!UICONTROL Cropping Options]** drop-down lijst, uitgezochte **[!UICONTROL Smart Crop]**, dan rechts van **[!UICONTROL Responsive Image Crop]**, laat (zet) de eigenschap toe.<br> de standaardbreekpuntgrootte (**[!UICONTROL Large]**, **[!UICONTROL Medium]**, **[!UICONTROL Small]**) behandelt de volledige waaier van grootte die de meeste beelden op mobiele en tabletapparaten, Desktops, en banners gebruiken. Desgewenst kunt u de standaardnamen van Groot, Medium en Klein bewerken.<br> om meer breekpunten toe te voegen, selecteer **[!UICONTROL Add Crop]**; om een uitsnijding te schrappen, selecteer het pictogram van het Ongedaan maken kan. |
+| **[!UICONTROL Color and Image Swatch]** | Met Bulk wordt voor elke afbeelding een afbeeldingsstaal gegenereerd. | **Nota**: Het slimme Staal wordt niet gesteund in Dynamic Media Classic.<br> bepaal de plaats en produceert automatisch van uitstekende kwaliteit stalen van productbeelden die kleur of textuur tonen.<br> van de **[!UICONTROL Cropping Options]** drop-down lijst, uitgezochte **[!UICONTROL Smart Crop]**. Schakel vervolgens rechts van **[!UICONTROL Color and Image Swatch]** de functie in (schakel deze in). Geef een pixelwaarde op in de tekstvakken **[!UICONTROL Width]** en **[!UICONTROL Height]** .<br> terwijl alle beeldgewassen van het spoor van Vertoningen beschikbaar zijn, worden de monsters slechts gebruikt als **[!UICONTROL Copy URL]** eigenschap. Gebruik uw eigen weergavecomponent om het staal op uw site te renderen. De uitzondering op deze regel zijn carrouselbanners. Dynamic Media biedt de weergavecomponent voor het staal dat wordt gebruikt in carrouselbanners.<br><br>**Gebruikend beeldstalen**<br> URL voor beeldmonsters is ongecompliceerd:<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br> waar `:Swatch` aan het activaverzoek wordt toegevoegd.<br><br>**Gebruikend kleurenstalen**<br> om kleurenstalen te gebruiken, maakt u a `req=userdata` verzoek met het volgende:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br> Bijvoorbeeld, is het volgende een staalactiva in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br> en hier is het overeenkomstige de dienovereenkomstige van de staalactiva `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br> De `req=userdata` reactie is als volgt:<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br> u kunt een `req=userdata` reactie in of XML of formaat JSON, zoals in verzoeken respectieve URL voorbeelden:<br>・ `https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>・ `https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota**: U moet uw eigen component tot stand brengen WCM om een kleurenmonster te verzoeken en de `SmartSwatchColor` attributen te ontleden, die door een hexadecimale waarde met 24 bits van RGB worden vertegenwoordigd.<br> zie ook [`userdata` ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata) in de Gids van de Verwijzing van Kijkers. |
+| **[!UICONTROL Preserve crop content across target resolutions]** | Uitsnijdinhoud in dezelfde verhouding behouden | Gebruik deze optie wanneer u een profiel voor slimme uitsnijdingen maakt.<br> om nieuwe gewasseninhoud - terwijl het handhaven van het brandpunt - voor een bepaalde aspectverhouding over verschillende resoluties te produceren, uncheck deze optie <br> als u besluit om dit vakje los te maken, zorg ervoor dat de originele beeldresolutie groter is dat de resoluties die u voor uw slim gewassenprofiel bepaalt.<br><br> als voorbeeld, veronderstel u de aspectverhoudingen bij 600 x 600 (Groot), 400 x 400 (Medium), en 300 x 300 (Klein) hebt geplaatst.<br> wanneer **[!UICONTROL Preserve crop content across target resolutions]** de optie wordt gecontroleerd **, ziet u het zelfde gewas over alle drie resoluties, gelijkend op de volgende steekproefoutput van beelden (voor illustratieve slechts doeleinden):<br>![ Uitgezochte Optie ](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br> wanneer **[!UICONTROL Preserve crop content across target resolutions]** optie *ongecontroleerd* is, is de gewasseninhoud nieuw voor alle drie resoluties, gelijkend op de volgende steekproefoutput van beelden (voor illustratieve slechts doeleinden):<br>![ Niet gecontroleerde Optie 1}:](/help/assets/dynamic-media/assets/preserve-unchecked.png) Geen Gecontroleerde Optie 1} 0} |
 
 ### Ondersteunde bestandsindelingen voor afbeeldingen met slimme uitsnijden en kleurstalen
 
@@ -128,7 +128,9 @@ Zie ook [ Beste praktijken voor het Organiseren van uw Digitale Assets voor het 
 1. Selecteer **[!UICONTROL Create]** als u een afbeeldingsprofiel wilt toevoegen.
 1. Voer een profielnaam en waarden in voor onscherp masker, uitsnijden of staal of voor beide.
 
-   Tip: gebruik een profielnaam die specifiek is voor het beoogde doel. Stel dat u een profiel wilt maken dat alleen stalen genereert. Slim uitsnijden is uitgeschakeld en Kleur en afbeeldingsstaal is ingeschakeld. In dergelijke gevallen kunt u de profielnaam &quot;Slimme stalen&quot; gebruiken.
+   >[!TIP]
+   >
+   >Gebruik een profielnaam die specifiek is voor het beoogde doel. Stel dat u een profiel wilt maken dat alleen stalen genereert. Slim uitsnijden is uitgeschakeld en Kleur en afbeeldingsstaal is ingeschakeld. In dergelijke gevallen kunt u de profielnaam &quot;Slim staal&quot; gebruiken.
 
    Zie ook [Opties voor slim bijsnijden en slimme stalen](#crop-options) en [Onscherp masker](#unsharp-mask).
 
@@ -151,7 +153,7 @@ Wanneer u een afbeeldingsprofiel toewijst aan een map, nemen eventuele submappen
 
 Als u een ander afbeeldingsprofiel aan een map hebt toegewezen, overschrijft het nieuwe profiel het vorige profiel. De vorige bestaande mapelementen blijven ongewijzigd. Het nieuwe profiel wordt toegepast op de elementen die later aan de map worden toegevoegd.
 
-Mappen waaraan een profiel is toegewezen, worden in de gebruikersinterface aangeduid met de naam van het profiel dat op de kaart wordt weergegeven.
+Mappen met een toegewezen profiel geven de naam van het profiel op de kaart weer.
 
 <!-- When you add smart crop to an existing Image Profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
@@ -163,7 +165,7 @@ U kunt elementen opnieuw verwerken in een map die al een bestaand afbeeldingspro
 
 U kunt vanuit het menu **[!UICONTROL Tools]** of vanuit **[!UICONTROL Properties]** een afbeeldingsprofiel toepassen op een map.
 
-Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+Mappen met een toegewezen profiel geven de naam van het profiel direct onder de mapnaam weer.
 
 U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [ activa in een omslag opnieuw verwerken nadat u zijn verwerkingsprofiel ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) hebt uitgegeven.
 
@@ -174,19 +176,19 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
    ![ chlimage_1-255 ](assets/chlimage_1-255.png)
 
-1. Selecteer **[!UICONTROL Apply Processing Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en selecteer **[!UICONTROL Apply]** . Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Selecteer **[!UICONTROL Apply Processing Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en selecteer **[!UICONTROL Apply]** . Mappen met een toegewezen profiel geven de naam van het profiel direct onder de mapnaam weer.
 
 #### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
 1. Selecteer het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** .
-1. Navigeer aan a *omslag* (niet een activa) waarop u een beeldprofiel wilt toepassen.
+1. Navigeer aan a *omslag* (niet een activa) waarop u een Profiel van het Beeld wilt toepassen.
 1. Voer afhankelijk van de weergave waarin u zich bevindt een van de volgende handelingen uit:
    * Houd de aanwijzer in de kaartweergave boven op de map en selecteer het vinkje om het te selecteren.
    * Schakel in de kolomweergave of de lijstweergave het selectievakje links van de mapnaam in.
 1. Selecteer **[!UICONTROL Properties]** op de werkbalk.
 1. Selecteer de tab **[!UICONTROL Dynamic Media Processing]** .
 1. Selecteer onder **[!UICONTROL Image Profile]** in de vervolgkeuzelijst **[!UICONTROL Profile Name]** het profiel dat u wilt toepassen.
-1. Selecteer **[!UICONTROL Save & Close]** in de rechterbovenhoek van de pagina. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Selecteer **[!UICONTROL Save & Close]** in de rechterbovenhoek van de pagina. Mappen met een toegewezen profiel geven de naam van het profiel direct onder de mapnaam weer.
 
    ![ chlimage_1-256 ](assets/chlimage_1-256.png)
 
@@ -216,16 +218,16 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 >
 >Adobe raadt u aan om gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
 
-U kunt het venster voor slimme uitsnijden van een afbeelding handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
+Als u het brandpunt van een afbeelding wilt verfijnen, kunt u de uitlijning handmatig aanpassen of het formaat van het venster voor slimme uitsnijden aanpassen.
 
 Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorgegeven overal waar u het uitsnijden voor de specifieke afbeeldingen gebruikt.
 
 >[!IMPORTANT]
 >
->Wanneer u het venster voor slim uitsnijden van een element handmatig opnieuw uitlijnt of het formaat ervan wijzigt, blijft die bewerking behouden, zelfs als u later besluit het element opnieuw te verwerken. Als u de breedte, hoogte of beide in het gedeelte **[!UICONTROL Responsive Image Crop]** van het afbeeldingsprofiel bewerkt, wordt het element opnieuw verwerkt.
+>Wanneer u het venster voor slim uitsnijden van een element handmatig aanpast, worden de wijzigingen opgeslagen. Deze bewerkingen blijven intact, zelfs als u het element later opnieuw verwerkt. Als u de breedte, hoogte of beide in het gedeelte **[!UICONTROL Responsive Image Crop]** van het afbeeldingsprofiel bewerkt, wordt het element opnieuw verwerkt.
 >Zie [ de activa van Dynamic Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
 
-U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnieuw wilt genereren.
+Herhaal de slimme uitsnijding om de extra uitsnijdingen indien nodig opnieuw te genereren.
 
 Zie ook [ uitgeven het slimme gewas of het slimme monster van veelvoudige beelden ](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
@@ -236,12 +238,16 @@ Zie ook [ uitgeven het slimme gewas of het slimme monster van veelvoudige beelde
 1. Selecteer de afbeelding waarvan u de slimme uitsnijding of het slimme staal wilt aanpassen.
 1. Selecteer **[!UICONTROL Smart Crop]** in de werkbalk.
 
+   >[!TIP]
+   >
+   >Gebruik de sneltoets `s` om de slimme gewassen of slimme stalen te bewerken.
+
 1. Voer een van de volgende handelingen uit:
 
    * Sleep de schuifregelaar naar links of rechts boven in de rechterbovenhoek van de pagina om respectievelijk de weergave van de afbeelding te vergroten of te verkleinen.
    * Sleep in de afbeelding een hoekgreep om de grootte van het zichtbare gebied van het uitsnijden of staal aan te passen.
    * Sleep het vak of het staal in de afbeelding naar een nieuwe locatie. U kunt alleen afbeeldingsstalen bewerken; kleurstalen zijn statisch.
-   * Selecteer **[!UICONTROL Revert]** boven de afbeelding om alle bewerkingen ongedaan te maken en het oorspronkelijke uitsnijd of staal te herstellen.
+   * Selecteer **[!UICONTROL Revert]** in de rechterbovenhoek van de afbeelding om alle bewerkingen ongedaan te maken en het oorspronkelijke uitsnijden of staal te herstellen.
    * Gebruik de pijltoetsen op het toetsenbord om de framegrootte bij te snijden, of om de positie van de afbeelding te wijzigen, of beide.
 
 1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina en selecteer **[!UICONTROL Close]** om terug te keren naar de map met elementen.
@@ -252,16 +258,16 @@ Zie ook [ uitgeven het slimme gewas of het slimme monster van veelvoudige beelde
 >
 >Adobe raadt u aan om gegenereerde slimme gewassen en slimme stalen te controleren om te controleren of deze geschikt en relevant zijn voor uw merk en waarden.
 
-Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Indien gewenst, kunt u *manueel* opnieuw uitlijnen of resize het slimme gewassenvenster in veelvoudige beelden om hun brandpunt verder te verfijnen.
+Nadat u een afbeeldingsprofiel (met slimme uitsnijding) hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Indien nodig kunt u de uitlijning handmatig aanpassen of het venster voor slimme uitsnijden op meerdere afbeeldingen vergroten of verkleinen om de brandpunten verder te perfectioneren.
 
 Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorgegeven overal waar u het uitsnijden voor de specifieke afbeeldingen gebruikt.
 
 >[!IMPORTANT]
 >
->Wanneer u het venster voor slimme uitsnijdingen van meerdere elementen handmatig opnieuw uitlijnt of het formaat ervan wijzigt, blijven deze bewerkingen behouden, zelfs als u later besluit deze elementen opnieuw te verwerken. Als u de breedte, hoogte of beide in het gedeelte **[!UICONTROL Responsive Image Crop]** van het afbeeldingsprofiel bewerkt, worden deze elementen opnieuw verwerkt.
+>Wanneer u het venster voor slimme uitsnijdingen van meerdere elementen handmatig aanpast, worden de wijzigingen opgeslagen. Deze bewerkingen blijven intact, zelfs als u de elementen later opnieuw verwerkt. Als u de breedte, hoogte of beide in het gedeelte **[!UICONTROL Responsive Image Crop]** van het afbeeldingsprofiel bewerkt, worden deze elementen opnieuw verwerkt.
 >Zie [ de activa van Dynamic Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
 
-U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnieuw wilt genereren.
+Herhaal de slimme uitsnijding om de extra uitsnijdingen indien nodig opnieuw te genereren.
 
 **om het slimme gewas of slim monster van veelvoudige beelden uit te geven:**
 
@@ -325,4 +331,4 @@ U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONT
 1. Selecteer de tab **[!UICONTROL Image Profiles]** .
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Profile Name]** eerst **[!UICONTROL None]** en vervolgens **[!UICONTROL Save & Close]** .
 
-   Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+   Mappen met een toegewezen profiel geven de naam van het profiel direct onder de mapnaam weer.
