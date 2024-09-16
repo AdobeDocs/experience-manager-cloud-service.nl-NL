@@ -1,12 +1,12 @@
 ---
 title: Real Use Monitoring voor AEM as a Cloud Service
-description: Leer hoe u Real Use Monitoring (RUM) gebruikt om de digitale gebruikerservaring van een website of toepassing in real-time vast te leggen en te analyseren.
+description: Leer over de Controle van het Echte Gebruik (RUM), een geautomatiseerde dienst die toestaat om de cliënt-zijinzameling van gegevens te controleren.
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: c0b86950e36b936d7d471b5bf7b671df7db5d317
+source-git-commit: ed52bac52618e23b9bcbe7c6767501c6711aff00
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -23,27 +23,21 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De service RUM (Real Use Monitoring) is een technologie voor prestatiebewaking die de digitale gebruikerservaring van een website of toepassing in real-time vastlegt en analyseert. Het biedt inzicht in de real-time prestaties van een webtoepassing en biedt meer inzicht in de gebruikerservaring. De service richt zich op het optimaliseren van de prestaties door het controleren van websiteverbindingen in plaats van op de gebruikers zelf.
-
-Met RUM, worden de zeer belangrijke prestatiesmetriek van de aanvang van URL gevolgd tot het verzoek aan browser wordt teruggegeven. Ontwikkelaars kunnen de toepassing verbeteren, zodat deze eenvoudig kan worden gebruikt voor eindgebruikers.
-
->[!INFO]
->
->&quot;Real User Monitoring&quot; is hernoemd naar &quot;Real Use Monitoring&quot;, omdat het de ware essentie van de service beter weerspiegelt.
+De RUM-service (Real Use Monitoring) is een prestatiebewakingstechnologie die het client-side verkeer op een website of een toepassing in real-time controleert. Deze service richt zich op het verzamelen van meetgegevens en gegevens die van essentieel belang zijn voor het optimaliseren van de prestaties door het controleren van websiteafspraken, in plaats van de gebruikers zelf. Met RUM, worden de zeer belangrijke prestatiesmetriek van de aanvang van URL gevolgd tot het verzoek aan browser wordt teruggegeven.
 
 ## Wie kan van de Echte dienst van de Controle van het Gebruik profiteren? {#who-can-benefit-from-rum-service}
 
-AEM heeft RUM ontwikkeld om klanten en Adobe te helpen begrijpen hoe bezoekers met AEM sites communiceren. RUM kan worden gebruikt om prestatieproblemen te diagnostiseren en de doeltreffendheid van experimenten te meten. RUM behoudt de privacy van bezoekers door middel van steekproeven - slechts een klein deel van alle paginameningen wordt gecontroleerd - en geen persoonlijk identificeerbare informatie (PII) wordt verzameld.
+AEM heeft de Controle van het Echte Gebruik ontwikkeld helpt klanten en Adobe om te begrijpen hoe de eindgebruikers met AEM plaatsen in wisselwerking staan. Real Use Monitoring diagnosticeert prestatieproblemen en meet de effectiviteit van experimenten. Met Real Use Monitoring blijft de privacy van bezoekers behouden door middel van steekproeven - slechts een klein deel van alle paginaweergaven wordt gecontroleerd - en er wordt geen persoonlijk identificeerbare informatie (PII) verzameld.
 
 ## Real Use Monitoring Service en privacy {#rum-service-and-privacy}
 
-De Echte dienst van de Controle van het Gebruik in AEM wordt ontworpen om bezoekersprivacy te bewaren en gegevensinzameling te minimaliseren. Als bezoeker betekent dit dat de site die u bezoekt of ter beschikking van de Adobe wordt gesteld, geen persoonlijke gegevens verzamelt.
+De Echte dienst van de Controle van het Gebruik in AEM bewaart bezoekersprivacy en minimaliseert gegevensinzameling. Als bezoeker betekent dit dat de site die u bezoekt of ter beschikking van de Adobe wordt gesteld, geen persoonlijke gegevens verzamelt.
 
 Als plaatsexploitant, wordt geen extra opt-in vereist om controle door deze eigenschap toe te laten. Er is geen extra pop-up of toestemmingsvorm voor de eindgebruikers om voor het toelaten RUM goed te keuren.
 
 ## Bemonstering van gegevens van de bewakingsservice &quot;Real Use Monitoring&quot; {#rum-service-data-sampling}
 
-Traditionele webanalytische oplossingen proberen gegevens te verzamelen voor elke bezoeker. AEM de dienst RUM vangt slechts informatie van een klein fractie van paginameningen. De dienst is bedoeld om te worden bemonsterd en geanonimiseerd in plaats van als vervanging voor analyses. Pagina&#39;s hebben standaard een bemonsteringsverhouding van 1:100. Site-operators kunnen de bemonsteringsfrequentie op dit moment niet verhogen of verlagen. Om totaal verkeer nauwkeurig te schatten, voor elke 100 paginameningen, worden de gegevens verzameld van 1, die u een betrouwbare benadering van algemeen verkeer geven.
+Traditionele webanalytische oplossingen proberen gegevens te verzamelen voor elke bezoeker. AEM de dienst van de Controle van het Echt van het Gebruik (RUM) vangt slechts informatie van een kleine fractie van paginameningen. De dienst is bedoeld om te worden bemonsterd en geanonimiseerd in plaats van als vervanging voor analyses. Pagina&#39;s hebben standaard een bemonsteringsverhouding van 1:100. Site-operators kunnen de bemonsteringsfrequentie op dit moment niet verhogen of verlagen. Om totaal verkeer nauwkeurig te schatten, voor elke 100 paginameningen, worden de gegevens verzameld van 1, die u een betrouwbare benadering van algemeen verkeer geven.
 
 Als u besluit of de gegevens worden verzameld, wordt deze per pagina weergegeven en is het vrijwel onmogelijk interacties op meerdere pagina&#39;s bij te houden. RUM heeft standaard geen concept van bezoekers of sessies, alleen van paginaweergaven.
 
@@ -65,31 +59,31 @@ De Echte dienst van de Controle van het Gebruik wordt ontworpen om de inzameling
 
 ## Hoe de Echte Controle van het Gebruik voor een klant werkt {#how-rum-works-for-a-customer}
 
-De echte Controle van het Gebruik controleert automatisch cliënt-zijverkeer om u van waardevolle inzichten te voorzien. Als klant van de Adobe, te hoeven u geen extra stappen te nemen, aangezien deze dienst naadloos in uw bestaande opstelling wordt geïntegreerd. Met de algemene beschikbaarheid (GA)-implementatie profiteert u automatisch van deze nieuwe functie.
+De echte Controle van het Gebruik controleert automatisch cliënt-zijverkeer. Als klant van de Adobe, te hoeven u geen extra stappen te nemen, aangezien deze dienst naadloos in uw bestaande opstelling wordt geïntegreerd. Als Real Use Monitoring (RUM) algemeen beschikbaar is (GA), profiteert u automatisch van deze nieuwe functie. De echte dienst van de Controle van het Gebruik stelt geen metriek vandaag door een visualisatiehulpmiddel bloot. We werken eraan om deze functionaliteit zo snel mogelijk aan u te leveren.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## Hoe de Echte gegevens van de Dienst van de Controle van het Gebruik worden gebruikt {#how-rum-service-data-is-being-used}
+## Hoe de Adobe Echte Controle van het Gebruik gebruikt {#how-rum-data-is-being-used}
 
-RUM-gegevens zijn nuttig voor de volgende doeleinden:
+Reëel gebruik de Gegevens van de Controle worden gebruikt voor de volgende doeleinden:
 
 * Om prestatiesknelpunten voor klantenplaatsen te identificeren en te bevestigen
-* Om geautomatiseerde verkeersraadpleging te stroomlijnen die paginameningen omvat.
 * Als u wilt begrijpen hoe AEM met andere scripts (zoals analyses, doelwitten of externe bibliotheken) op dezelfde pagina werkt, vergroot u de compatibiliteit.
+<!--
+## Limitations and understanding variance in page views and performance metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
-## Beperkingen en begrip van verschillen in paginaweergaven en prestatiemetriek {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+Here are key considerations for customers to keep in mind when interpreting their RUM data:
 
-Tijdens het analyseren van RUM-gegevens kunnen er verschillen zijn in paginaweergaven en andere maatstaven voor prestaties. Deze variaties kunnen worden toegeschreven aan verschillende factoren die inherent zijn aan realtime bewaking aan de clientzijde. Hier zijn belangrijke overwegingen voor klanten om in mening te houden wanneer het interpreteren van hun gegevens RUM:
+1. **Tracker blockers**
 
-1. **de blokkeerders van de Trekker**
+   * End-users employing tracker blockers or privacy extensions can impede RUM data collection, as these tools restrict the tracking scripts' execution. This restriction may lead to underreported page views and user interactions, creating a discrepancy between actual site activity and the data captured by RUM.
 
-   * Eindgebruikers die tracker-blokkers of privacy-extensies gebruiken, kunnen het verzamelen van RUM-gegevens belemmeren, aangezien deze gereedschappen de uitvoering van trackingscripts beperken. Deze beperking kan leiden tot ondergemelde paginaweergaven en gebruikersinteracties, waardoor een discrepantie ontstaat tussen de werkelijke siteactiviteit en de gegevens die door RUM worden vastgelegd.
+1. **Limitations in capturing headless API/JSON calls**
 
-1. **Beperkingen in het vangen van hoofd API/JSON vraag**
-
-   * De RUM gegevensdienst concentreert zich op de cliënt-zijervaring en vangt niet de achterste API of vraag JSON die van een niet AEM headless app op dit ogenblik wordt gemaakt. De uitsluiting van deze vraag van de dienstgegevens van het RUM leidt tot variaties van de inhoudsverzoeken die door Analytics CDN worden gemeten.
+   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls made from a non-AEM headless app at this time. The exclusion of these calls from RUM service data creates variances from the content requests measured by CDN Analytics.
+-->
 
 ## Veelgestelde vragen {#faq}
 
@@ -99,7 +93,7 @@ Tijdens het analyseren van RUM-gegevens kunnen er verschillen zijn in paginaweer
    Yes.
 -->
 
-1. **zijn &quot;Interactie aan volgende verf,&quot;Tijd aan eerste byte,&quot;en &quot;Eerste contenteuze verf&quot;Metriek van het Web dat wordt verzameld?**
+1. **zijn &quot;Interactie aan volgende verf,&quot;Tijd aan eerste byte,&quot;en &quot;Eerste contenteuze verf&quot;metriek die worden verzameld?**
 
    De interactie met volgende verf (INP) en Tijd aan Eerste Byte (TTFB) wordt verzameld.  De eerste inhoudelijke verf wordt momenteel niet verzameld.
 
@@ -113,6 +107,6 @@ Tijdens het analyseren van RUM-gegevens kunnen er verschillen zijn in paginaweer
 
 1. **Hoe kan ik opteren?**
 
-   Adobe raadt u aan de Real Use Monitoring (RUM) te gebruiken vanwege de grote voordelen ervan en om uw digitale ervaringen te optimaliseren. Het biedt waardevolle inzichten die de prestaties van websites kunnen verbeteren. De service is ontworpen om naadloos te zijn en heeft geen invloed op de prestaties van uw website.
+   Adobe raadt aan om de Real Use Monitoring (RUM) te gebruiken vanwege de aanzienlijke voordelen ervan en dat deze Adobe u helpt uw digitale ervaringen te optimaliseren door de prestaties van uw website te verbeteren. De service is ontworpen om naadloos te zijn en heeft geen invloed op de prestaties van uw website.
 
-   Weigeren betekent dat deze inzichten ontbreken. Als u echter problemen ondervindt, neemt u contact op met de ondersteuning van Adoben.
+   Weigeren kan betekenen dat er een kans ontbreekt om de betrokkenheid van het verkeer op uw website te verbeteren. Als u echter problemen ondervindt, neemt u contact op met de ondersteuning van Adoben.
