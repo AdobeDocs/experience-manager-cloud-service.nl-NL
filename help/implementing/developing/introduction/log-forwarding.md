@@ -4,9 +4,9 @@ description: Leer over het door:sturen van logboeken aan Splunk en andere regist
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -177,9 +177,10 @@ AEM logbestanden (inclusief Apache/Dispatcher) worden weergegeven onder een map 
 
 * amusement
 * aemfout
+* aemverzoek
 * amemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 Onder elke map wordt één bestand gemaakt en toegevoegd. Klanten zijn verantwoordelijk voor de verwerking en het beheer van dit bestand, zodat het niet te groot wordt.
 
@@ -209,6 +210,9 @@ Overwegingen:
 
 * Maak een API-sleutel zonder integratie met een specifieke cloud provider.
 * de eigenschap tags is optioneel
+* Voor AEM logs wordt de gegevenshondenbrontag ingesteld op `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
+* Voor CDN-logs wordt de gegevenshondenbrontag ingesteld op `aemcdn`
+* De Datadog-servicetag is ingesteld op `adobeaemcloud` , maar u kunt deze overschrijven in de sectie Tags
 
 
 ### Elasticsearch en OpenSearch {#elastic}
@@ -230,10 +234,12 @@ data:
 
 Overwegingen:
 
+* standaard is de poort 443 . Optioneel kan deze worden overschreven met de naam `port`
 * Voor geloofsbrieven, zorg ervoor om plaatsingsgeloofsbrieven te gebruiken, eerder dan rekeningsgeloofsbrieven. Dit zijn de referenties die worden gegenereerd in een scherm dat op deze afbeelding lijkt:
 
 ![ Elastische plaatsingsgeloofsbrieven ](/help/implementing/developing/introduction/assets/ec-creds.png)
 
+* Voor AEM logs wordt `index` ingesteld op een van `aemaccess` , `aemerror` , `aemrequest` , `aemdispatcher` , `aemhttpdaccess` of `aemhttpderror`
 * Het facultatieve pijpleidingsbezit zou aan de naam van de Elasticsearch of OpenSearch moeten worden geplaatst ingest pijpleiding, die kan worden gevormd om de logboekingang aan de aangewezen index te leiden. Het type van Bewerker van de pijpleiding moet aan *manuscript* worden geplaatst en de manuscripttaal zou aan *pijnloos* moeten worden geplaatst. Hier is een fragment van het steekproefmanuscript om logboekingangen in een index zoals aemaccess_dev_26_06_2024 te leiden:
 
 ```
@@ -254,15 +260,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com:8443/aem_logs/aem"
+      url: "https://example.com/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
 Overwegingen:
 
-* Het url koord moet **https://** omvatten of de bevestiging zal ontbreken. Als er geen poort is opgenomen in de URL-tekenreeks, wordt poort 443 (de standaard-HTTPS-poort) gebruikt.
-* Als u een andere poort dan 443 wilt gebruiken, moet u deze als onderdeel van de URL opgeven.
+* Het url koord moet **https://** omvatten of de bevestiging zal ontbreken.
+* De URL kan een poort bevatten. Bijvoorbeeld `https://example.com:8443/aem_logs/aem` . Als er geen poort is opgenomen in de URL-tekenreeks, wordt poort 443 (de standaard-HTTPS-poort) gebruikt.
 
 #### HTTPS CDN-logbestanden {#https-cdn}
 
@@ -278,13 +284,14 @@ Er is ook een eigenschap met de naam `sourcetype` die is ingesteld op de waarde 
 
 Voor AEM logboeken (met inbegrip van apache/dispacher), zullen de Webverzoeken (POSTs) onophoudelijk, met een json nuttige lading worden verzonden die een serie van logboekingangen is, met de diverse formaten van de logboekingang zoals die onder [ het Registreren voor AEM as a Cloud Service ](/help/implementing/developing/introduction/logging.md) worden beschreven. De extra eigenschappen worden vermeld in de ](#log-format) hieronder sectie van de Formaten van de Ingang van het Logboek van 0}.[
 
-Er is ook een eigenschap met de naam `sourcetype` die op een van de volgende waarden is ingesteld:
+Er is ook een eigenschap met de naam `Source-Type` die op een van de volgende waarden is ingesteld:
 
 * amusement
 * aemfout
+* aemverzoek
 * amemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 ### Splunk {#splunk}
 
@@ -299,8 +306,13 @@ data:
       enabled: true
       host: "splunk-host.example.com"
       token: "${{SPLUNK_TOKEN}}"
-      index: "AEMaaCS"
+      index: "aemaacs"
 ```
+
+Overwegingen:
+
+* standaard is de poort 443 . Optioneel kan deze worden overschreven door een eigenschap met de naam `port` .
+
 
 <!--
 ### Sumo Logic {#sumologic}
@@ -343,119 +355,26 @@ aem_tier: author
 
 ## Geavanceerde netwerken {#advanced-networking}
 
->[!NOTE]
->
->Deze functie is nog niet gereed voor vroege gebruikers.
-
-
 Sommige organisaties verkiezen om te beperken welk verkeer door de registrerenbestemmingen kan worden ontvangen.
 
-Voor het logboek CDN, kunt u toestaan-lijst van de IP adressen, zoals die in [ wordt beschreven dure documentatie - Openbare IP Lijst ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Als die lijst van gedeelde IP adressen te groot is, denk na verzendend verkeer naar (niet-Adobe) Azure Blob Store waar de logica kan worden geschreven om de logboeken van specifieke IP naar hun uiteindelijke bestemming te verzenden.
+Voor het logboek CDN, kunt u toestaan-lijst van de IP adressen, zoals die in [ wordt beschreven dure documentatie - Openbare IP Lijst ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Als die lijst van gedeelde IP adressen te groot is, denk na verzendend verkeer naar een https server of (niet-Adobe) Azure Blob Store waar de logica kan worden geschreven om de logboeken van bekende IP naar hun uiteindelijke bestemming te verzenden.
 
-Voor AEM logboeken (met inbegrip van Apache/Dispatcher), kunt u logboek vormen door:sturen om door [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) te gaan. Zie de patronen voor de drie onderstaande geavanceerde netwerktypen, waarbij gebruik wordt gemaakt van een optionele parameter `port` , samen met de parameter `host` .
-
-### Flexibele poortuitgang {#flex-port}
-
-Als het logboekverkeer naar een haven buiten 443 (b.v., 8443 hieronder) gaat, vorm geavanceerd voorzien van een netwerk als zo:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 8443, # something other than 443
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-en vorm het yaml dossier als zo:
+Voor AEM logboeken (met inbegrip van Apache/Dispatcher), als u [ geavanceerd voorzien van een netwerk ](/help/security/configuring-advanced-networking.md) hebt gevormd, kunt u het eigenschap advancedNetworking gebruiken om hen van een specifiek uitgangIP adres of over VPN door:sturen.
 
 ```
 kind: "LogForwarding"
 version: "1"
+metadata:
+  envTypes: ["dev"]
 data:
   splunk:
     default:
-      host: "${{AEM_PROXY_HOST}}"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
 ```
 
-### Speciale IP van de Afstuwing {#dedicated-egress}
-
-
-Als het logboekverkeer uit een specifiek uitgang IP moet komen, vorm geavanceerde voorzien van een netwerk als zo:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443, 
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-en vorm het yaml dossier als zo:
-
-```
-      
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443    
-```
-
-### VPN {#vpn}
-
-Als het logboekverkeer door VPN moet gaan, vorm geavanceerde voorzien van een netwerk als zo:
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443,
-            "portOrig": 30443
-        }    
-    ]
-}
-
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443     
-```
