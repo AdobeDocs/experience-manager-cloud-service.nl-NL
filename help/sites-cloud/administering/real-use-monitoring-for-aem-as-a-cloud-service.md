@@ -4,9 +4,9 @@ description: Leer over de Controle van het Echte Gebruik (RUM), een geautomatise
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ed52bac52618e23b9bcbe7c6767501c6711aff00
+source-git-commit: fbc3358f1be3ae7ce3142cdc84815d304a2d6c38
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1009'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ De RUM-service (Real Use Monitoring) is een prestatiebewakingstechnologie die he
 
 ## Wie kan van de Echte dienst van de Controle van het Gebruik profiteren? {#who-can-benefit-from-rum-service}
 
-AEM heeft de Controle van het Echte Gebruik ontwikkeld helpt klanten en Adobe om te begrijpen hoe de eindgebruikers met AEM plaatsen in wisselwerking staan. Real Use Monitoring diagnosticeert prestatieproblemen en meet de effectiviteit van experimenten. Met Real Use Monitoring blijft de privacy van bezoekers behouden door middel van steekproeven - slechts een klein deel van alle paginaweergaven wordt gecontroleerd - en er wordt geen persoonlijk identificeerbare informatie (PII) verzameld.
+De echte Controle van het Gebruik helpt klanten en Adobe om te begrijpen hoe de eindgebruikers met AEM plaatsen in wisselwerking staan. Real Use Monitoring diagnosticeert prestatieproblemen en meet de effectiviteit van experimenten. Met Real Use Monitoring blijft de privacy van bezoekers behouden door middel van steekproeven - slechts een klein deel van alle paginaweergaven wordt gecontroleerd - en er wordt geen persoonlijk identificeerbare informatie (PII) verzameld.
 
 ## Real Use Monitoring Service en privacy {#rum-service-and-privacy}
 
@@ -59,7 +59,7 @@ De Echte dienst van de Controle van het Gebruik wordt ontworpen om de inzameling
 
 ## Hoe de Echte Controle van het Gebruik voor een klant werkt {#how-rum-works-for-a-customer}
 
-De echte Controle van het Gebruik controleert automatisch cliënt-zijverkeer. Als klant van de Adobe, te hoeven u geen extra stappen te nemen, aangezien deze dienst naadloos in uw bestaande opstelling wordt geïntegreerd. Als Real Use Monitoring (RUM) algemeen beschikbaar is (GA), profiteert u automatisch van deze nieuwe functie. De echte dienst van de Controle van het Gebruik stelt geen metriek vandaag door een visualisatiehulpmiddel bloot. We werken eraan om deze functionaliteit zo snel mogelijk aan u te leveren.
+De echte Controle van het Gebruik controleert automatisch cliënt-zijverkeer. Als klant van de Adobe, te hoeven u geen extra stappen te nemen, aangezien deze dienst naadloos in uw bestaande opstelling wordt geïntegreerd. Met de Echte dienst van de Controle van het Gebruik (RUM) die algemeen beschikbaar is, profiteert u automatisch van deze nieuwe eigenschap. De echte dienst van de Controle van het Gebruik stelt geen klant bloot die metriek vandaag onder ogen ziet om te controleren. We werken eraan om deze functionaliteit zo snel mogelijk aan u te leveren.
 
 <!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
