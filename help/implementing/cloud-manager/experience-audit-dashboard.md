@@ -5,7 +5,7 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -47,11 +47,11 @@ Audits worden uitgevoerd als onderdeel van de pijpleiding. De controles kunnen o
 
 De Experience Audit is standaard beschikbaar voor productiepijpleidingen. Het kan naar keuze voor ontwikkeling van volledig-stapel en front-end pijpleidingen worden toegelaten. In alle gevallen, moet u bepalen welke inhoudswegen tijdens pijpleidingsuitvoering worden geëvalueerd.
 
-1. Afhankelijk van het type van pijpleiding u wenst te vormen, volg de richtingen aan:
+1. Afhankelijk van het type van pijpleiding u wilt vormen, doe één van het volgende:
 
    * Voeg een nieuwe [ productiepijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) toe om de wegen te bepalen u de controle wilt evalueren.
-   * Voeg een nieuwe [ niet-productiepijplijn toe, ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) als u wenst om de controle op een front-end of ontwikkelings volledig-stapelpijpleiding toe te laten.
-   * Of u kunt [ een bestaande pijpleiding uitgeven, ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) en de bestaande opties bijwerken.
+   * Voeg een nieuwe [ niet-productiepijplijn ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) toe, als u de controle op een front-end of ontwikkelings volledig-stapelpijpleiding wilt toelaten.
+   * Of, kunt u [ een bestaande pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) uitgeven, en de bestaande opties bijwerken.
 
 1. Om de Controle van de Ervaring te gebruiken wanneer het toevoegen van of het uitgeven van een niet productiepijplijn, selecteer het **checkbox van de Controle van de Ervaring 0}.** U kunt deze optie op het **Code van Source** lusje vinden.
 
@@ -236,7 +236,6 @@ De pagina&#39;s zijn mogelijk niet beschikbaar omdat:
 * De pagina bestaat niet.
 * De pagina wordt omgeleid waarvoor een andere verificatie dan basis vereist is.
 * Er is een interne fout opgetreden.
-* enz.
 
 >[!TIP]
 >
@@ -255,7 +254,7 @@ U kunt deze gebieden verbeteren door het volgende te doen:
 * Afbeeldingen converteren naar WebP-indeling om de grootte ervan te beperken.
 * Het gebruik van `<picture>` en de afbeelding `srcset` met verschillende afbeeldingsgrootten voor verschillende viewportgrootten (en om ervoor te zorgen dat het formaat werkt).
 
-## Evaluatiegegevens controle van ervaring {#details}
+## Gegevens van de evaluatie van de ervaring {#details}
 
 De volgende details bieden aanvullende informatie over hoe de Experience Audit uw site evalueert. Ze zijn niet nodig voor algemeen gebruik van de functie en worden hier gegeven voor de volledigheid.
 
