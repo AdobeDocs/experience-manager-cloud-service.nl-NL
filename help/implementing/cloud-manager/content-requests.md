@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
+source-git-commit: 9b31ea4218ce6a3a0f2a53e28efec4d9b98f9b38
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Er bestaan regels om bekende bots uit te sluiten, waaronder bekende services die
 | Type aanvraag | Content Request | Beschrijving |
 | --- | --- | --- |
 | HTTP-code 100-299 | Opgenomen | Dit zijn regelmatige verzoeken die alle of gedeeltelijke inhoud leveren. |
-| HTTP-bibliotheken voor automatisering | Opgenomen | Voorbeelden:<br>・ Amazon CloudFront <br>・ Apache Http Client <br>・ Asynchronous Http Client <br>・ Axios <br>・ Azureus <br>・ Curl <br>・ GitHub Node Fetch <br>・ Guzzle <br>・ Go-http-client <br>・ Headless Chrome <br>・ Java™ Client 1}・ Jersey <br>・ Node Oembed <br>・ okhttp <br>・ Python-verzoeken <br>・ Reactor Netty <br>・ Wget <br>・ WinHTTP<br> |
+| HTTP-bibliotheken voor automatisering | Opgenomen | Voorbeelden:<br>・ Amazon CloudFront <br>・ Apache Http Client <br>・ Asynchronous Http Client <br>・ Axios <br>・ Azureus <br>・ Curl <br>・ GitHub Node Fetch <br>・ Guzzle <br>・ Go-http-client <br>・ Headless Chrome <br>・ Java™ Client 1}・ Jersey <br>・ Node Oembed <br>・ okhttp <br>・ Python-verzoeken <br>・ Reactor Netty <br>・ Wget <br>・ WinHTTP <br>・ Fast HTTP <br>・ GitHub Node Fetch <br>・ Reactor Netty<br> |
 | Gereedschappen voor toezicht en gezondheidscontrole | Opgenomen | Deze worden opgezet door de klant om een bepaald aspect van de plaats te controleren. Bijvoorbeeld, beschikbaarheid of real-world gebruikersprestaties.Als deze specifieke eindpunten zoals /system/sonds/gezondheid voor gezondheidscontroles richten, adviseren wij dat u `/system/probes/health` eindpunt en niet de daadwerkelijke HTML pagina&#39;s van de plaats gebruikt.[ zie hieronder ](#excluded-content-request)<br> Voorbeelden:<br>・ Amazon-Route53-Health-Check-Service <br>・ EyeMonIT_bot_version_0.1_[ (https://www.eyemon.it/) ](https://www.eyemon.it/) <br>・ Investis-Site24x7 <br>・ Mozilla/5.0+ (compatibel; UptimeRobot/2.0; [ https://uptimerobot.com/ 9}) <br>・ ThousandEyes-Dragonfly-x1 ](https://uptimerobot.com/)・ OmtrBot/1.0 <br>・ WebMon/2.0.0<br> |
 | `<link rel="prefetch">` aanvragen | Opgenomen | Om de snelheid van het laden van de volgende pagina te verhogen, kunnen klanten browser een reeks pagina&#39;s hebben laden alvorens de gebruiker verbinding-zodat zij reeds in het geheime voorgeheugen zijn. *Gedacht: Dit verhoogt significant het verkeer* - afhankelijk van hoeveel van deze pagina&#39;s vooraf ingesteld zijn. |
 | Het verkeer dat Adobe Analytics of Googles Analytics het melden blokkeert | Opgenomen | Het is meer gebruikelijk dat bezoekers van sites privacysoftware (Ad-blockers, enzovoort) hebben geïnstalleerd die van invloed is op de nauwkeurigheid van Googles Analytics of Adobe Analytics. AEM as a Cloud Service telt verzoeken op het eerste ingangspunt in de door de Adobe beheerde infrastructuur en niet op de client. |
@@ -75,7 +75,8 @@ Zie ook [ Dashboard van de Vergunning ](/help/implementing/cloud-manager/license
 | URL voor klanten om hun programma van de Cloud Service te controleren | Uitgesloten | Wij adviseerden om URL te gebruiken om de beschikbaarheid of de gezondheidscontrole extern te controleren.<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod Warm-up Service | Uitgesloten |
 | Agent: skyline-service-warmup/1.* |
-| Bekende zoekmachines, sociale netwerken en HTTP-bibliotheken (getagd door Snelst) | Uitgesloten | De bekende diensten die de plaats regelmatig bezoeken om hun onderzoeksindex of de dienst te verfrissen:<br><br> Voorbeelden:<br>・ AddSearchBot <br>・ AhrefsBot <br>・ Applebot <br>・ Vraag Jeeves Corporate Spider <br>・ Bingbot <br>・ BingPreview <br>・ BLEXBot <br>・ BouwtWith <br> <br>・ CrawlerKengo <br>・ Facebookexternalhit <br>・ Google AdsBot <br>・ Google AdsBot Mobile <br>・ Googlebot <br>・ Googlebot Mobile <br>・ lmspin <br>・ LucidWorks <br>・ MJ12bot <br>・ Prité <br>・ Pinterest <br>・ SembrushBot <br>・ SiteImproved <br>・ StashBot <br>・ StatusCake <br>・ YandexBot |
+| Bekende zoekmachines, sociale netwerken en HTTP-bibliotheken (getagd door Snelst) | Uitgesloten | De bekende diensten die de plaats regelmatig bezoeken om hun onderzoeksindex of de dienst te verfrissen:<br><br> Voorbeelden:<br>・ AddSearchBot <br>・ AhrefsBot <br>・ Applebot <br>・ Vraag Jeeves Corporate Spider <br>・ Bingbot <br>・ BingPreview <br>・ BLEXBot <br>・ BouwtWith <br> <br>・ CrawlerKengo <br>・ Facebookexternalhit <br>・ Google AdsBot <br>・ Google AdsBot Mobile <br>・ Googlebot <br>・ Googlebot Mobile <br>・ lmspin <br>・ LucidWorks <br>・ MJ12bot <br>・ Pinterest <br>・ SemushBot <br>・ SiteImproved <br>・ StashBot <br>・ StatusCake <br>・ YandexBot <br>・ Claudebot |
 | Commerce integration framework-aanroepen uitsluiten | Uitgesloten | Dit zijn verzoeken aan AEM die door:sturen aan het Commerce integration framework-URL begint met `/api/graphql`-om dubbel tellen te vermijden, zijn zij niet factureerbaar voor Cloud Service. |
 | Uitsluiten `manifest.json` | Uitgesloten | Manifest is geen API-aanroep. Het is hier om informatie op te geven over het installeren van websites op computers of mobiele telefoons. Adobe mag JSON-aanvraag niet tellen naar `/etc.clientlibs/*/manifest.json` |
 | Uitsluiten `favicon.ico` | Uitgesloten | Terwijl de teruggekeerde inhoud niet HTML of JSON zou moeten zijn, zien wij dat in sommige scenario&#39;s zoals de authentificatiestromen van SAML, de favicons kunnen zijn teruggekeerd aangezien HTML daarom uitdrukkelijk van de telling wordt uitgesloten. |
+| CDN-proxy naar een andere achtergrond | Uitgesloten | De verzoeken die aan verschillende niet-AEM steunen worden verpletterd gebruikend de ](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) techniek van de Selectie van de Oorsprong 0} CDN worden uitgesloten aangezien zij niet AEM raken.[ |
