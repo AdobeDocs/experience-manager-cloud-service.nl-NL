@@ -4,7 +4,7 @@ description: Leer hoe u Cloud Manager-projecten kunt leveren met behulp van Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a51e2cf3f91b3bc1fe1600024943f6bd95f78352
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 1%
@@ -51,17 +51,16 @@ Een Edge Delivery Services kan op verschillende manieren worden toegevoegd afhan
 >* Uw organisatie moet een licentie voor ongebruikte Edge Delivery Services hebben voordat deze kan worden toegepast op een productieprogramma.
 >* Zodra de vergunning van Edge Delivery Services wordt toegepast op of uit een programma verwijderd, wordt de verandering onmiddellijk van kracht zonder de behoefte om een pijpleiding in werking te stellen.
 
-
 ## Adobe aanbevolen pad voor Edge Delivery Services {#recommended-path-eds}
 
-U kunt uw voordelen van Adobe maximaliseren door uw licentie voor Edge Delivery Services te openen en te gebruiken via Cloud Manager. Zo kunt u profiteren van verschillende belangrijke voordelen.
+Maximaliseer uw voordelen van Adobe door uw licentie voor Edge Delivery Services te openen en te gebruiken via Cloud Manager. Als u dit doet, kunt u verschillende belangrijke voordelen benutten.
 
-* [ Verbruik uw vergunning op uw gekozen programma ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) en/of [ werk andere programma&#39;s bij.](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+* [ Verbruik uw vergunning op uw gekozen programma ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md), of [ werk andere programma&#39;s ](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md) bij, of allebei.
 * Haal voordeel uit [ API-eerste ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) voordelen voor het uitvoeren van (creeer, Gelezen, Update, Schrapping) verrichtingen CRUD.
 * [ Toegang SLA die ](/help/implementing/cloud-manager/sla-reporting.md) meldt (*binnenkort komt*)
 * [ de toegang van de winst tot de steun van de Adobe ](/help/edge/overview.md#support-ticket) voor uw geregistreerde productieprogramma&#39;s.
 
-Bovendien het gebruiken van Cloud Manager laat u [ beheerde Adobe CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) voor uw plaats van Edge Delivery gebruiken en uit zeer belangrijke voordelen zoals zelfbediening CDN beheer, met inbegrip van de configuratie en de toevoeging van DV certificaten voordeel halen. Bovendien, nadat een DV- certificaat wordt gecreeerd, vernieuwt de Adobe het automatisch om de drie maanden, tenzij het wordt geschrapt. Als u geen Edge Delivery Services vergunning met Adobe hebt en besluit om deze voordelen over te slaan, kunt u uw zelf-beheerde CDN slechts gebruiken. Deze instelling moet zich op het [`aem.live` -platform bevinden. ](https://www.aem.live/docs/go-live-checklist#cdn-configuration)
+Bovendien het gebruiken van Cloud Manager laat u [ beheerde Adobe CDN ](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) voor uw plaats van Edge Delivery gebruiken en uit zeer belangrijke voordelen zoals zelfbediening CDN beheer, met inbegrip van de configuratie en de toevoeging van DV certificaten voordeel halen. Bovendien, nadat een DV- certificaat wordt gecreeerd, vernieuwt de Adobe het automatisch om de drie maanden, tenzij het wordt geschrapt. Als u geen Edge Delivery Services vergunning met Adobe hebt en besluit om deze voordelen over te slaan, kunt u uw zelf-beheerde CDN slechts gebruiken. Deze opstelling moet op het [`aem.live` platform ](https://www.aem.live/docs/go-live-checklist#cdn-configuration) zijn.
 
 ## De Edge Delivery-lijst met taken {#ed-todo-list}
 

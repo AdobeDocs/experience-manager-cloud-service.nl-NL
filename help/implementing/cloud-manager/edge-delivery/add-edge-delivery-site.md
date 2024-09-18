@@ -1,41 +1,36 @@
 ---
 title: Een Edge Delivery-site toevoegen aan Cloud Manager
-description: Leer hoe u een Edge Delivery-site toevoegt aan uw productieprogramma of sandboxprogramma en de voordelen ervan.
+description: Leer hoe u een Edge Delivery-site toevoegt aan uw productieprogramma of sandboxprogramma.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 68f05c49ebc3d46aa44b3998e6142ab8547e5455
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 
-# Een Edge Delivery-site toevoegen aan Cloud Manager {#eds-add-site}
+# Een Edge Delivery-site toevoegen aan Cloud Manager {#adding}
 
-Leer hoe u een Edge Delivery-site toevoegt aan uw productieprogramma of sandboxprogramma en de voordelen ervan.
+U kunt een Edge Delivery-site toevoegen aan uw productieprogramma of sandboxprogramma.
 
-## Inleiding {#introduction}
+Het toevoegen van een plaats van Edge Delivery aan Cloud Manager wordt vereist om [ een steunkaartje voor uw project van Edge Delivery ](/help/edge/overview.md##support-ticket) te registreren.
 
-Als onderdeel van uw Edge Delivery Services-project met AEM as a Cloud Service wordt u aangeraden uw Edge Delivery-site toe te voegen aan Cloud Manager. Als u uw Edge Delivery-website toevoegt aan Cloud Manager, krijgt u de volgende voordelen.
+Zie ook [ Inleiding aan Edge Delivery Services in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
-* [Toegang tot CDN met beheerde Adobe](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [Toegang tot SLA-rapporten](/help/implementing/cloud-manager/sla-reporting.md)
-* [Toegang tot gebruiksrapporten voor licenties](/help/implementing/cloud-manager/license-dashboard.md)
-
-Gelieve te merken op dat het toevoegen van uw Plaats van Edge Delivery aan Cloud Manager wordt vereist om [ een steunkaartje voor uw project van Edge Delivery te registreren.](/help/edge/overview.md##support-ticket)
-
-## Edge Delivery-site en toevoegen aan Cloud Manager {#adding}
+**om een plaats van Edge Delivery aan Cloud Manager toe te voegen:**
 
 1. Meld u aan bij Cloud Manager op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com/) en selecteer het gewenste programma.
 1. Voer een van de volgende handelingen uit:
+
    * Van de **pagina van het Overzicht van het Programma**, klik **Edge Delivery** tabel. Dan, dichtbij de laag-juiste hoek van de pagina, klik **toevoegen de plaats van Edge Delivery**.
 
-     ![ voeg de Plaats van Edge Delivery van het lusje van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
+     ![ voeg de plaats van Edge Delivery van het lusje van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
    * Klik in de linkerbovenhoek van de pagina op het hamburgerpictogram om het linkernavigatiemenu weer te geven. Onder de **rubriek van de Diensten**, klik **de Plaatsen van Edge Delivery**. Vlak de hoger-juiste hoek van de pagina, klik **plaats** toevoegen.
 
-     ![ voeg de Plaats van Edge Delivery van de knoop van Plaatsen van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
+     ![ voeg de plaats van Edge Delivery van de knoop van Plaatsen van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
 1. In **voeg de plaats van Edge Delivery** dialoogdoos toe, verstrek de volgende informatie op de vereiste gebieden:
 
@@ -59,11 +54,3 @@ Gelieve te merken op dat het toevoegen van uw Plaats van Edge Delivery aan Cloud
 1. Klik **verifieer**.
 
 Nadat de opslagplaats is geverifieerd, verandert de status in de tabel Edge Deliver Sites in een groene cirkel met daarin een wit vinkje.
-
-Nadat u Edge Delivery Services aan een productieprogramma hebt toegevoegd, wordt er een licentie voor Edge Delivery Services op toegepast.
-
-Elke plaats van Edge Delivery heeft a **Edge Delivery aan-doe lijst** om u door de verwezenlijking van uw plaats van Edge Delivery te begeleiden.
-
-![ Edge Delivery om app ](/help/implementing/cloud-manager/assets/edge-delivery-to-do-ist.png) te doen
-
-Gelieve te zien de document [ Inleiding aan Edge Delivery Services in Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) voor details op deze stappen.
