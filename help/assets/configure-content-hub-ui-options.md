@@ -1,14 +1,20 @@
 ---
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
 
 # Content Hub-gebruikersinterface configureren {#configure-content-hub-user-interface}
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="Content Hub-gebruikersinterface configureren"
+>abstract="Met Experience Manager Assets kunnen beheerders de opties configureren die beschikbaar zijn in de Content Hub-gebruikersinterface. Op basis van de configuratieopties die door de beheerders zijn geselecteerd, kunnen de Content Hub-gebruikers velden weergeven op Content Hub. De configuratieopties omvatten meta-gegevens terwijl het invoeren van activa, filters, activa eigenschappen, meta-gegevens terwijl het zoeken van activa, gepersonaliseerde branding, en om het even welke douaneverbindingen."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![ vorm activa op Content Hub ](assets/configure-assets.png)
@@ -43,7 +49,7 @@ Configuratieopties openen op Content Hub:
 
 ## Configuratieopties beheren in Content Hub {#manage-configuration-options}
 
-Beheer de volgende configuratieopties voor uw gebruikers:
+Als beheerder, beheer de volgende configuratieopties voor uw gebruikers:
 
 * [Importeren](#configure-import-options-content-hub)
 
@@ -184,5 +190,3 @@ Op dezelfde manier kunt u ![ klikken geeft pictogram ](assets/do-not-localize/ed
 De aangepaste koppeling wordt weergegeven als een nieuw tabblad naast het tabblad Inzichten op de startpagina van Content Hub.
 
 ![ UI van de Configuratie de lusjes van de Verbindingen van de Douane op Content Hub ](assets/configuration-ui-custom-link-tab.png)
-
-
