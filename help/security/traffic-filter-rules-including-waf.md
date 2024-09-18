@@ -4,9 +4,9 @@ description: Het vormen de Regels van de Filter van het Verkeer met inbegrip van
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
+source-git-commit: cf9e1b3c290d142095912c794de58547913faece
 workflow-type: tm+mt
-source-wordcount: '3928'
+source-wordcount: '4012'
 ht-degree: 0%
 
 ---
@@ -55,8 +55,7 @@ De Adobe nodigt u uit terugkoppelen of vragen over de regels van de verkeersfilt
 
 In het huidige digitale landschap is kwaadwillig verkeer een steeds grotere bedreiging. De Adobe erkent de ernst van het risico en biedt verscheidene benaderingen aan om klantentoepassingen te beschermen en aanvallen te verlichten wanneer zij voorkomen.
 
-Bij de rand, absorbeert de Adobe Beheerde CDN de aanvallen van Dos bij het netwerk
-laag (lagen 3 en 4), inclusief overstroming en reflectie-/versterkingsaanvallen.
+Bij de rand, absorbeert de Adobe Beheerde CDN de aanvallen van Dos bij de netwerklaag (lagen 3 en 4), met inbegrip van vloed en bezinning/versterkingsaanvallen.
 
 Door gebrek, neemt de Adobe maatregelen om prestatiesverslechtering te verhinderen toe te schrijven aan barsten van onverwacht hoog verkeer boven een bepaalde drempel. Als er een aanval van Dos is die plaatsbeschikbaarheid beïnvloedt, worden de verrichtingenteams van de Adobe gealarmeerd en nemen stappen om te verlichten.
 
@@ -475,6 +474,14 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+## CVE-regels {#cve-rules}
+
+Als WAF een licentie heeft, past de Adobe automatisch blokkeringsregels toe om te beschermen tegen veel bekende CVE&#39;s (Common Vulnerabilities and Exposure) en kunnen nieuwe CVE&#39;s kort na de ontdekking worden toegevoegd. Klanten moeten de CVE-regels zelf niet configureren en hoeven dat ook niet te doen.
+
+Als een verkeersverzoek een CVE aanpast, zal het in de overeenkomstige CDN logboekingang verschijnen.
+
+Neem contact op met de ondersteuning van de Adobe als er vragen zijn over een bepaalde CVE of als er een bepaalde CVE-regel is die uw organisatie wil uitschakelen.
 
 ## Waarschuwing verkeersfilterregels {#traffic-filter-rules-alerts}
 
