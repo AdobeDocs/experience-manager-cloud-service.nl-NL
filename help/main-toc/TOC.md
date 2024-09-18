@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f0dc6a753590a1aaddcf01b9766ab0ab6373187c
+source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
-source-wordcount: '5641'
+source-wordcount: '5651'
 ht-degree: 3%
 
 ---
@@ -625,8 +625,6 @@ ht-degree: 3%
       + [Tags beheren](/help/assets/tagging-management-assets-view.md)
       + [Content credentials](/help/assets/content-credentials.md)
       + [Publish Assets naar AEM en Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-
-
    + Content Hub {#content-hub}
       + [Overzicht](/help/assets/product-overview.md)
       + [Content Hub implementeren](/help/assets/deploy-content-hub.md)
@@ -1068,9 +1066,6 @@ ht-degree: 3%
    + [Variaties genereren](/help/generative-ai/generate-variations.md)
 + Implementatie {#implementing}
    + [Toepassingen voor AEM as a Cloud Service](/help/implementing/home.md)
-
-
-
    + Cloud Manager gebruiken {#using-cloud-manager}
       + [Navigatie](/help/implementing/cloud-manager/navigation.md)
       + Programma&#39;s {#programs}
@@ -1149,9 +1144,6 @@ ht-degree: 3%
       + [Verzoeken om Cloud Service-inhoud begrijpen](/help/implementing/cloud-manager/content-requests.md)
       + [Dashboard voor CDN-prestaties](/help/implementing/cloud-manager/cdn-performance.md)
       + [Veelgestelde vragen over Cloud Manager](/help/implementing/cloud-manager/faqs.md)
-
-
-
    + Ontwikkelen voor AEM as a Cloud Service {#developing}
       + [AEM projectstructuur](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Structuurpakket projectopslagplaats AEM](/help/implementing/developing/introduction/repository-structure-package.md)
@@ -1287,6 +1279,10 @@ ht-degree: 3%
       + [Pagina-eigenschappen uitbreiden](/help/implementing/developing/extending/page-properties.md)
       + [De Bulkeditor uitbreiden](/help/implementing/developing/extending/bulk-editor.md)
       + [MSM uitbreiden](/help/implementing/developing/extending/msm.md)
+      + Internationalisatie {#internationalization}
+         + [Internationaliserende componenten](/help/implementing/developing/extending/i18n/components.md)
+         + [Internationalisatie van UI-tekenreeksen](/help/implementing/developing/extending/i18n/dev.md)
+         + [Tekenreeksen uitnemen voor vertaling](/help/implementing/developing/extending/i18n/extract.md)
    + Implementeren naar AEM as a Cloud Service {#deploying}
       + [Distribueren naar AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [Versie-updates AEM](/help/implementing/deploying/aem-version-updates.md)
