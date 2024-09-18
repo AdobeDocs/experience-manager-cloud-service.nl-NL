@@ -3,9 +3,9 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Gebruik de functie Asset Selector om de metagegevens en vertoningen van elementen in uw toepassing te zoeken, te zoeken en op te halen.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -196,15 +196,15 @@ Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
         <em> Begrijp hoe te om de Selecteur van Activa met Dynamic Media te integreren Open APIs.</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Eigenschappen van Asset Selector, afbeelding"><br/>
         <a href="asset-selector-customization.md"> Eigenschappen van de Selecteur van Activa </a>
         <p>
         <em> Leer de grondbeginselen van het aanpassen van diverse componenten van de Selector van Activa, zoals filters, selectie van activa, verlopen activa, en veel meer. </em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Voorbeelden van Asset Selector"><br/>
         <a href="asset-selector-customization.md"> Voorbeelden van de Selecteur van Activa </a>
@@ -225,6 +225,15 @@ Met Asset Selector kunt u het element in vier verschillende weergaven weergeven:
         <p>
         <em> Leer hoe u dossiers of omslagen aan de Selecteur van Activa van uw lokaal of derdedossiersysteem kunt uploaden. </em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Verzamelingen voor middelenkiezer, afbeelding"><br/>
+        <a href="asset-selector-collections.md"> Verzamelingen van de Selecteur van Activa </a>
+        <p>
+        <em> Leer hoe te om inzamelingen binnen de Selector van Activa te gebruiken gebruikend de bewaarplaats van de Experience Manager. </em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
