@@ -4,9 +4,9 @@ description: Leer hoe u met Cloud Manager CDN-configuraties voor een Edge Delive
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -18,30 +18,32 @@ Leer hoe u met Cloud Manager CDN-configuraties voor een Edge Delivery-site of ee
 
 ## Een CDN-configuratie bewerken {#edit-cdn}
 
-Wanneer het uitgeven van een CDN configuratie, kunt u montages zoals de rij van het milieu (Publish of Voorproef), of SSL certificaten aanpassen, zonder de bestaande configuratie volledig te verwijderen. Wijzigingen worden toegepast op de geselecteerde omgeving, bijvoorbeeld in de testfase of de productieomgeving, en kunnen van invloed zijn op de manier waarop inhoud wordt geleverd en beveiligd.
+In Adobe Cloud Manager kunt u om verschillende redenen een CDN-configuratie bewerken, inclusief de milieulaag (Publish of Voorvertoning) en het SSL-certificaat.
+
+* **de veranderingen van het Milieu**: Het aanpassen van de rijhulp past de montages CDN met het correcte milieu aan, hetzij voor levende productie (Publish) of het testen (Voorproef).
+* **de verhogingen van de Veiligheid**: Het selecteren van een verschillend SSL certificaat kan noodzakelijk zijn wanneer het bijwerken van certificaten of het richten van naleving en veiligheidsbehoeften.
+* **Optimaliserend prestaties**: Het uitgeven van de configuratie verzekert de correcte montages CDN voor het leveren van inhoud die op veranderende operationele behoeften wordt gebaseerd.
+
+U kunt een configuratie bewerken zonder de bestaande configuratie volledig te verwijderen. Wijzigingen worden toegepast op de geselecteerde omgeving, bijvoorbeeld in de testfase of de productieomgeving, en kunnen van invloed zijn op de manier waarop inhoud wordt geleverd en beveiligd.
 
 Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Manager van de Plaatsing** om deze taak te voltooien.
 
 **om een configuratie uit te geven CDN:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-
 1. In het linkernavigatievenster, onder **Diensten**, klik **Configuraties CDN**.
-
-1. In de **CDN Configuraties** lijst, klik de ellips aan het eind van een rij waarvan CDN u wilt bijwerken.
+1. In de **CDN Configuraties** lijst, klik de ellips aan het eind van een rij waarvan configuratie CDN u wilt uitgeven.
 
    ![ Uitgevend een configuratie CDN ](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
 
 1. Klik **uitgeven**.
+1. In **geef CDN configuratie** dialoogdoos uit, plaats één of meerdere opties in de respectieve drop-down lijst.
 
-1. In **geef CDN** dialoogdoos uit, plaats één of meerdere opties in de respectieve drop-down lijst.
-
-   De opties die u in de dialoogdoos ziet kunnen variëren afhankelijk van als u Adobe-geleide CDN of een klant-beheerde CDN gebruikt.
+   De opties die u in de dialoogdoos ziet kunnen afhankelijk van variëren als u Adobe-geleide CDN of een klant-beheerde CDN gebruikt.
 
 1. Klik **Update**.
 
    Het statuut van uitgegeven CDN wordt bijgewerkt in de **CDN Configuratie** lijst om op de veranderingen te wijzen u aanbracht.
-
 
 ## Een CDN-configuratie verwijderen {#delete-cdn}
 

@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
    | | Hoofdletters gebruiken | Stappen |
    | --- | --- | --- |
-   | 1 | **voeg een Adobe geleid certificaat (DV) toe** | **om een Adobe beheerde certificaat (DV) toe te voegen:**<br> a. Selecteer de beheerde Adobe van het certificaattype **(DV)**.<br>![ voeg een DV- certificaat ](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br> b toe. In de **Uitgezochte domeinen** drop-down lijst, selecteer één of meerdere domeinen die u verbonden aan het DV- certificaat wilt.<br> Geen domeinen om te selecteren? Als dat het geval is, moet u een aangepast domein toevoegen. Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. Wanneer u wordt gebeëindigd toevoegend een naam van het douanedomein, terugkeer aan dit onderwerp en begin opnieuw bij stap 1.<br> d. Ga verder met stap 7. |
+   | 1 | **voeg een Adobe geleid certificaat (DV) toe** | **om een Adobe beheerde certificaat (DV) toe te voegen:**<br> a. Selecteer de beheerde Adobe van het certificaattype **(DV)**.<br>![ voeg een DV- certificaat ](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br> b toe. Op het **gebied van de Naam van het Certificaat**, ga een naam in u verbonden aan het certificaat wilt.<br> c. In de **Uitgezochte domeinen** drop-down lijst, selecteer één of meerdere domeinen die u verbonden aan het DV- certificaat wilt.<br> Geen domeinen om te selecteren? Als dat het geval is, moet u een aangepast domein toevoegen. Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. Wanneer u wordt gebeëindigd toevoegend een naam van het douanedomein, terugkeer aan dit onderwerp en begin opnieuw bij stap 1.<br> d. Ga verder met stap 7. |
    | 2 | **voeg een klant geleid certificaat (OV/EV) toe** | **om een klant geleid certificaat (OV/EV) toe te voegen:**<br> a. Selecteer de beheerde Klant van het certificaattype **(OV/EV)**.<br> b. Op het **gebied van de Naam van het Certificaat**, ga een naam voor uw certificaat in. Dit veld is alleen ter informatie en kan elke naam zijn waarmee u gemakkelijk naar het certificaat kunt verwijzen.<br> c. In het **Certificaat**, **Persoonlijke sleutel**, en **de ketting van het Certificaat** gebieden, kleef de vereiste waarden in hun respectieve gebieden.<br>![ voeg SSL doos van de certificaatdialoog ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br> toe om het even welke ontdekte fouten in waarden worden getoond. Voordat u het certificaat kunt opslaan, moet u alle fouten verhelpen. Zie [ de Fouten van het Certificaat ](#certificate-errors) om meer over het oplossen van problemen gemeenschappelijke fouten te leren.<br> d. Ga verder met stap 7. |
 
 <!--

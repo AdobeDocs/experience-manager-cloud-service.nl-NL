@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,30 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
    * Op het **Privé zeer belangrijke** gebied, werk dit gebied bij slechts als u veranderingen in het certificaat aanbracht.
    * Op het **gebied van de ketting van het Certificaat** (of ketting van vertrouwen), kleef de certificaatketting.
 
-1. Klik **Update** om uw veranderingen te bewaren en hen automatisch toe te passen.
+1. Klik **Update** om uw veranderingen te bewaren en hen automatisch toe te passen. —>
 
 ## Een verlopen door de klant beheerd SSL-certificaat vervangen {#replace-ssl-certificate}
 
 Volg de zelfde stappen die in [ worden beschreven Werk een verlopen SSL certificaat ](#update-ssl-certificate) bij om een verlopen, klant beheerde SSL certificaat te vervangen.
+
+## De naam van een door Adobe beheerd SSL-certificaat wijzigen (#rename-an-ssl-certificate)
+
+Hieronder volgen enkele redenen waarom u de naam van een SSL-certificaat wilt wijzigen:
+
+* **Verbeterde organisatie**: Het anders noemen van het certificaat kan helpen zijn doel verduidelijken, zoals het identificeren van welk milieu (bijvoorbeeld, het opvoeren, productie) of domein het voor is.
+* **vermijdend verwarring**: Als u veelvoudige certificaten beheert, kan een duidelijke, beschrijvende naam helpen fouten verhinderen, als het toepassen van het verkeerde certificaat op het verkeerde domein.
+* **Naleving en controle**: De behoorlijk genoemde certificaten kunnen gemakkelijker zijn om voor veiligheid en controledoeleinden te volgen.
+
+**om een Adobe te hernoemen beheerde SSL certificaat:**
+
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
+1. Klik in de linkerbovenhoek van de pagina op het hamburgerpictogram om het linkernavigatiemenu weer te geven.
+1. Onder de **rubriek van de Diensten**, klik **SSL Certificaten**.
+1. Voor de **SSL Certificaten** pagina, klik de ellips aan het eind van een rij waarvan certificaat u wilt anders noemen.
+1. Klik **anders noemen**.
+1. In **noem DV Certificaat** dialoogdoos anders, op het **de naam van het Certificaat** tekstgebied, ga de nieuwe naam van het certificaat in.
+1. Klik **anders noemen**.
 
 ## Een SSL-certificaat verwijderen {#deleting-an-ssl-certificate}
 
