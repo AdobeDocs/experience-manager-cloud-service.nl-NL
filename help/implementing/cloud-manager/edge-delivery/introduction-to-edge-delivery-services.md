@@ -4,7 +4,7 @@ description: Leer hoe u Cloud Manager-projecten kunt leveren met behulp van Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 1%
@@ -68,7 +68,7 @@ De **Edge Delivery om lijst** te doen is een onboarding taak controlelijst die w
 
 ![ de plaats van Edge Delivery om lijst ](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png) te doen
 
-|  | Taak | Beschrijving |
+|   | Taak | Beschrijving |
 | --- | --- | --- |
 | 1 | Deelnemen aan het samenwerkingskanaal voor producten | Het klikken **legt nu verzoek voor** legt een verzoek aan Adobe voor om een kanaal voor uw bedrijf tot stand te brengen. Als het kanaal reeds bestaat, door:sturen u aan het kanaal van uw bedrijf. |
 | 2 | Volledige voorwaarden | Het klikken van **Mening die Begonnen leerprogramma** krijgt, leidt u aan [ Begonnen het worden - Leerprogramma van de Ontwikkelaar ](https://www.aem.live/developer/tutorial). |
@@ -76,5 +76,7 @@ De **Edge Delivery om lijst** te doen is een onboarding taak controlelijst die w
 | 4 | Domein toevoegen | Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen. |
 | 5 | SSL-certificaat toevoegen | Zie [ SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen. |
 | 6 | De CDN van uw Edge Delivery-site configureren | Zie [ een configuratie CDN ](#add-cdn) toevoegen. |
+
+<!-- &#x2460; for "1" inside circle -->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
