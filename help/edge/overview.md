@@ -4,9 +4,9 @@ description: Ontdek hoe AEM as a Cloud Service baat kan hebben bij de prestaties
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
+source-git-commit: fa50e661d05a5083be3605a8c6e26450357f4aec
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1425'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Met Edge Delivery Services biedt AEM buitengewone ervaringen die de betrokkenhei
 Door Edge Delivery Services te gebruiken, kunt u:
 
 * Maak snelle sites met een perfecte Lighthouse Score en controleer de prestaties van uw site voortdurend via de bewaking voor echt gebruik (RUM).
-* Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel WYSIWYG- als op documenten gebaseerde ontwerpen gebruiken. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
+* Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel WYSIWYG als op documenten gebaseerd schrijven. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
 * Gebruik een ingebouwd raamwerk voor experimenteren dat het mogelijk maakt snel tests te maken, uit te voeren zonder invloed op de prestaties en snel vrij te maken voor de productie van een testwinnaar.
 
 ## Gelijke reactie op zakelijke behoeften {#agile-reaction}
@@ -46,9 +46,9 @@ Door uw aandacht toe te spitsen op de waarde voor uw auteurs, kan uw Edge Delive
 
 ## Flexibele ontwerpgereedschappen voor uw makers van inhoud {#overview}
 
-Edge Delivery Services is een samenstellbare set services die u in staat stelt om op zeer flexibele wijze inhoud op uw website te schrijven. U kunt zowel [ AEM inhoudsbeheer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) gebruiken en het schrijven WYSIWYG gebruikend de [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) evenals [ op document-gebaseerd schrijven.](https://www.aem.live/docs/authoring)
+Edge Delivery Services is een samenstellbare set services die u in staat stelt om op zeer flexibele wijze inhoud op uw website te schrijven. U kunt zowel [ AEM inhoudsbeheer ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) gebruiken en het auteursrecht van WYSIWYG gebruikend de [ Universele Redacteur ](/help/sites-cloud/authoring/universal-editor/authoring.md) evenals [ op document-gebaseerd schrijven.](https://www.aem.live/docs/authoring)
 
-In het volgende diagram ziet u hoe u inhoud in Microsoft Word (op documenten gebaseerd schrijven) kunt bewerken en naar Edge Delivery Services kunt publiceren. Het toont ook WYSIWYG het uitgeven gebruikend de Universele Redacteur.
+In het volgende diagram ziet u hoe u inhoud in Microsoft Word (op documenten gebaseerd schrijven) kunt bewerken en naar Edge Delivery Services kunt publiceren. Ook wordt de WYSIWYG-bewerking weergegeven met de Universal Editor.
 
 ![ Architectuur van Edge Delivery ](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -73,7 +73,7 @@ Lees verder in de op documenten gebaseerde ontwerpdocumentatie:
 
 ### WYSIWYG Authoring {#wysiwyg-authoring}
 
-Wat-u-ziet-is-wat-u-krijgt (WYSIWYG) creatie gebruikt de Universele Redacteur, een klantgerichte, one-stop plaats om inhoud levend en in-context met een visuele voorproef uit te geven.
+Wat-u-ziet-is-wat-u-krijgt (WYSIWYG) creatie hefboomwerkingen de Universele Redacteur, een aanpasbare, one-stop plaats om inhoud levend en in-context met een visuele voorproef uit te geven.
 
 * Met WYSIWYG-authoring verhoogt u de efficiëntie van de auteur, of u nu koploos of kopend bent.
 * U kunt profiteren van AEM uitgebreide mogelijkheden voor inhoudsbeheer, waaronder workflow en governance.
@@ -82,10 +82,10 @@ Wat-u-ziet-is-wat-u-krijgt (WYSIWYG) creatie gebruikt de Universele Redacteur, e
 
 ![ WYSIWYG authoring ](assets/wysiwyg-authoring.png)
 
-Lees verder in de WYSIWYG-ontwerpdocumentatie:
+Meer informatie in de WYSIWYG-ontwerpdocumentatie:
 
-* Voor een overzicht van de Universele Redacteur en het schrijven WYSIWYG zien het document [ WYSIWYG Inhoud Authoring voor Edge Delivery Services.](/help/edge/wysiwyg-authoring/authoring.md)
-* Voor een ontwikkelaarsoverzicht zie het document [ Begonnen Begeleidende Gids van de Ontwikkelaar voor WYSIWYG Authoring met Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Voor een overzicht van de Universele Redacteur en het schrijven van WYSIWYG zie het document [ Inhoud van WYSIWYG Authoring voor Edge Delivery Services.](/help/edge/wysiwyg-authoring/authoring.md)
+* Voor een ontwikkelaarsoverzicht zie de document [ Begonnen Gids van de Ontwikkelaar Begonnen voor het Authoring van WYSIWYG met Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 
 ### Beslissen op uw auteursmethode {#authoring-method}
 
@@ -120,7 +120,7 @@ Adobe biedt drie kanalen om u te helpen met Edge Delivery Services:
 
 ### Toegang tot communautaire bronnen {#community-resources}
 
-Adobe is vastbesloten u de beste betrokkenheid en ondersteuning van de gemeenschap te bieden voor Edge Delivery Services, WYSIWYG en documentgebaseerd schrijven.
+De Adobe is vastbesloten u de beste betrokkenheid en ondersteuning van de gemeenschap te bieden voor Edge Delivery Services, WYSIWYG en op documenten gebaseerde authoring.
 
 * Neem deel aan [ Gemeenschap van het Experience League ](https://adobe.ly/3Q6kTKl) om vragen te stellen, terugkoppelen te delen, besprekingen in werking te stellen, hulp van de deskundigen van de Adobe en Advisors/Kampen AEM, en met gelijkgestemde individuen in real time te verbinden.
 * Sluit me aan bij ons [ kanaal van het Overzicht, ](https://discord.gg/aem-live) een meer tijdelijk platform voor interactie in real time en snelle uitwisseling van ideeën.
@@ -135,7 +135,11 @@ U kunt met de productteams van de Adobe via uw geleverde kanaal van de productsa
 
 ### Een ondersteuningsticket aanmelden {#support-ticket}
 
-Als een productkwestie extra onderzoek en het oplossen van problemen vereist en reactie SLTs moet ontmoeten, kunt u een steunkaartje na dit proces voorleggen gebruikend de Admin Console:
+Als een productkwestie extra onderzoek en het oplossen van problemen vereist en reactie SLTs moet ontmoeten, kunt u een steunkaartje voorleggen.
+
+Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-site registreren in Cloud Manager. U wordt aangeraden uw website bij Cloud Manager te registreren voor alle AEM as a Cloud Service-gebruikers en [ biedt een aantal voordelen.](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) gelieve te zien [ de documentatie van Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) voor details als u uw plaats niet reeds hebt geregistreerd.
+
+Nadat uw website is geregistreerd bij Cloud Manager, volgt u dit proces met de Admin Console om een ondersteuningsticket te verzenden:
 
 1. [ na het standaardsteunproces, ](https://experienceleague.adobe.com/?support-tab=home#support) en creeer een kaartje.
 1. Voeg **Edge Delivery** in de titel van het kaartje toe.
