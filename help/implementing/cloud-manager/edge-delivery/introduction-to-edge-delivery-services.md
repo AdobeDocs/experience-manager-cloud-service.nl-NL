@@ -4,7 +4,7 @@ description: Leer hoe u Cloud Manager-projecten kunt leveren met behulp van Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
+source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 1%
@@ -80,10 +80,11 @@ De **Edge Delivery om lijst** te doen is een onboarding taak controlelijst die w
 | 5 | SSL-certificaat toevoegen | Zie [ SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen. |
 | 6 | De CDN van uw Edge Delivery-site configureren | Zie [ een configuratie CDN ](#add-cdn) toevoegen. |
 
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 
 {{support-ticket}}
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+
 

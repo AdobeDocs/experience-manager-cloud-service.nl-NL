@@ -3,9 +3,9 @@ title: Edge Delivery-sites beheren in Cloud Manager
 description: Leer hoe u een CDN-configuratie toevoegt aan een Edge Delivery-site of een Edge Delivery-site verwijdert.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
+source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -52,13 +52,12 @@ Als u een plaats van Edge Delivery Services schrapt, worden om het even welke bi
 1. Voer een van de volgende handelingen uit:
 
    * Van de **pagina van het Overzicht van het Programma**, klik **Edge Delivery** tabel. Klik in de Edge Delivery-sitetabel op de ellips aan het einde van een rij waarvan u de site wilt verwijderen.
-Klik **Schrapping**, dan klik **Schrapping** opnieuw om de verwijdering van de plaats te bevestigen.
+Klik ![ de plaats van Edge Delivery van de Schrapping ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Schrapping**, dan klik **Schrapping** opnieuw om de verwijdering van de plaats te bevestigen.
 
      ![ voeg de Plaats van Edge Delivery van het lusje van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * Klik in de linkerbovenhoek van de pagina op het hamburgerpictogram om het linkernavigatiemenu weer te geven. Onder de **rubriek van de Diensten**, klik **de Plaatsen van Edge Delivery**.
-Klik in de Edge Delivery-sitetabel op de ellips aan het einde van een rij waarvan u de site wilt verwijderen. Klik **Schrapping**, dan klik **Schrapping** opnieuw om de verwijdering van de plaats te bevestigen.
-
+   * In de upper-left hoek van de pagina, klik ![ tonen of verbergen zijnavigatie ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijnavigatiemenu te openbaren. Onder de **rubriek van de Diensten**, klik ![ Web-pagina voor de plaatsen van Edge Delivery ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.
+Klik in de Edge Delivery-sitetabel op de ellips aan het einde van een rij waarvan u de site wilt verwijderen. Klik ![ de plaats van Edge Delivery van de Schrapping ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Schrapping**, dan klik **Schrapping** opnieuw om de verwijdering van de plaats te bevestigen.
 
      ![ voeg de Plaats van Edge Delivery van de knoop van Plaatsen van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
