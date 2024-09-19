@@ -1,7 +1,7 @@
 ---
-source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
     <td>Veld/deelvenster/formulierregel valideren/opnieuw instellen in 'Dan' </td>
     <td>Validatie- en herstelfuncties ondersteunen alleen formulierobjecten in de Regeleditor. 
    </td>
-    <td>Validatie- en herstelfuncties ondersteunen formulier-/deelvenster-/veldobject in de Regeleditor. 
+    <td>Validatie- en herstelfuncties ondersteunen formulier-, deelvenster- en veldobject in de Regeleditor. 
    </td>
    </tr>
    <tr>
@@ -143,7 +143,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >
 >De front-end pijpleiding vereist dat de volgende IP Lijst van gewenste personen vooraf aan Cloud Manager wordt toegevoegd.
 >Indien nodig, [ voeg de IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) toe door het blok van hieronder adressen te kopiëren. Elk adres wordt gescheiden door een komma. Plak het blok in het **IP adres/CIDR.** gebied van **voeg IP de dialoogdoos van de Lijst van gewenste personen** toe. Plaats de curseur enkel na de eerste komma in de adreslijst en druk **binnengaan**. Sla de lijst op.
->Om verstoring van het in werking stellen van de voorste-eindduplijn te vermijden, zorg ervoor dat deze IP Lijst van gewenste personen aan Cloud Manager *wordt toegevoegd alvorens* u pipleline toelaat.
+>Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze IP Lijst van gewenste personen aan Cloud Manager *wordt toegevoegd alvorens* u de pijpleiding toelaat.
 >
 >**Cloud Manager IP Lijst van gewenste personen**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
@@ -160,17 +160,17 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 
 >[!TIP]
 >
->Ben je nieuw voor Dynamic Media? Voor snel, overzicht op hoog niveau van Dynamic Media, zie [ Werk met Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md).
+>Ben je nieuw voor Dynamic Media? Voor een snel, overzicht op hoog niveau van Dynamic Media, zie [ Werk met Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md).
 
 ## Zie ook voor Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* Ben je nieuw voor Dynamic Media? Voor snel, overzicht op hoog niveau van Dynamic Media, zie [ Werk met Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md).
+>* Ben je nieuw voor Dynamic Media? Voor een snel, overzicht op hoog niveau van Dynamic Media, zie [ Werk met Dynamic Media ](/help/assets/dynamic-media/dynamic-media.md).
 >
 >* Volg [ Beste praktijken van Dynamic Media ](/help/assets/dynamic-media/dm-best-practices.md) om de meeste waarde te krijgen.
 >
->* Probeer uit de beeldmogelijkheden van Dynamic Media met [ hulpmiddel van de Momentopname ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Probeer uit de beeldmogelijkheden van Dynamic Media met het [ hulpmiddel van de Momentopname ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
 >* Verzeker vlotte videoplayback met [ adaptieve video ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
@@ -178,6 +178,21 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >
 >* Automatiseer het bebouwen van [ video&#39;s met het Slimme Gewas ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Lever [ interactieve 3D-Aangedreven ervaring ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Lever een [ interactieve 3D-Aangedreven ervaring ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Andere [ Dynamic Media middelbank ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
+## Een ondersteuningsticket aanmelden {#support-ticket}
+
+Als een productkwestie extra onderzoek en het oplossen van problemen vereist en reactie SLTs moet ontmoeten, kunt u een steunkaartje voorleggen.
+
+Als u een ondersteuningsticket wilt aanmelden, moet u eerst uw Edge Delivery-site registreren in Cloud Manager. Het registreren van uw website bij Cloud Manager wordt geadviseerd aan alle gebruikers van AEM as a Cloud Service en [ brengt een aantal voordelen ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Zie [ de documentatie van Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) voor details als u nog niet uw plaats hebt geregistreerd.
+
+Nadat uw website is geregistreerd bij Cloud Manager, volgt u dit proces met de Admin Console om een ondersteuningsticket te verzenden:
+
+1. [ volg het standaardsteunproces ](https://experienceleague.adobe.com/?support-tab=home#support) en creeer een kaartje.
+1. Voeg **Edge Delivery** in de titel van het kaartje toe.
+1. Geef in de beschrijving naast de beschrijving van het probleem ook de volgende gegevens op:
+
+   * URL van de live website. Bijvoorbeeld: `www.mydomain.com` .
+   * URL van de oorspronkelijke website (`.hlx` URL).
 
