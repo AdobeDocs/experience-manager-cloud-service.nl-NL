@@ -3,7 +3,7 @@ title: Edge Delivery-sites beheren in Cloud Manager
 description: Leer hoe u een CDN-configuratie toevoegt aan een Edge Delivery-site of een Edge Delivery-site verwijdert.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -62,6 +62,8 @@ Klik in de Edge Delivery-sitetabel op de ellips aan het einde van een rij waarva
 
      ![ voeg de Plaats van Edge Delivery van de knoop van Plaatsen van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-### Een ondersteuningsticket vastleggen {#eds-support-ticket}
+## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 
 {{support-ticket}}
+
+

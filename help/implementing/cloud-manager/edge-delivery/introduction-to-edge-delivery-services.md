@@ -4,7 +4,7 @@ description: Leer hoe u Cloud Manager-projecten kunt leveren met behulp van Edge
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3db0b72a267a001b3fda5341a6c2c642babfb9eb
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 1%
@@ -62,7 +62,10 @@ Een Edge Delivery Services kan op verschillende manieren worden toegevoegd afhan
 >* Uw organisatie moet een licentie voor ongebruikte Edge Delivery Services hebben voordat deze kan worden toegepast op een productieprogramma.
 >* Zodra de vergunning van Edge Delivery Services wordt toegepast op of uit een programma verwijderd, wordt de verandering onmiddellijk van kracht zonder de behoefte om een pijpleiding in werking te stellen.
 
+
 ## De Edge Delivery-lijst met taken {#ed-todo-list}
+
+<!-- &#x2460; for "1" inside circle -->
 
 De **Edge Delivery om lijst** te doen is een onboarding taak controlelijst die wordt bedoeld om u door onboarding te begeleiden, uw plaats van Edge Delivery te beheren al manier aan [ gaan-leven ](/help/journey-onboarding/go-live-checklist.md).
 
@@ -77,7 +80,6 @@ De **Edge Delivery om lijst** te doen is een onboarding taak controlelijst die w
 | 5 | SSL-certificaat toevoegen | Zie [ SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegen. |
 | 6 | De CDN van uw Edge Delivery-site configureren | Zie [ een configuratie CDN ](#add-cdn) toevoegen. |
 
-<!-- &#x2460; for "1" inside circle -->
 
 ## Een ondersteuningsticket vastleggen {#eds-support-ticket}
 
