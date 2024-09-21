@@ -3,9 +3,9 @@ title: Een Edge Delivery-site toevoegen aan Cloud Manager
 description: Leer hoe u een Edge Delivery-site toevoegt aan uw productieprogramma of sandboxprogramma.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,8 @@ Zie ook [ Inleiding aan Edge Delivery Services in Cloud Manager ](/help/implemen
 
      ![ voeg de plaats van Edge Delivery van het lusje van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * In de upper-left hoek van de pagina, klik ![ tonen of verbergen zijnavigatie ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijnavigatiemenu te openbaren.
-Onder de **rubriek van de Diensten**, klik ![ Web-pagina voor de plaatsen van Edge Delivery ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **de Plaatsen van Edge Delivery**.
+   * In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijnavigatiemenu te openbaren.
+Onder de **rubriek van de Diensten**, klik ![ het paginapictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Plaatsen**.
 Vlak de hoger-juiste hoek van de pagina, klik **plaats** toevoegen.
 
      ![ voeg de plaats van Edge Delivery van de knoop van Plaatsen van Edge Delivery toe ](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
@@ -48,14 +48,14 @@ Vlak de hoger-juiste hoek van de pagina, klik **plaats** toevoegen.
 
    | Stapnummer | Beschrijving |
    | - | - |
-   | **1** | Voeg een dossier met de weg en de naam `well-known/adobe/cloudmanager-challenge.txt` aan de `main` tak van de bewaarplaats van het Git toe die in het **Repository URL** gebied wordt vermeld. Voeg *niet* een periode bij het begin van de plaatsweg toe.<br> indien nodig, klik ![ Exemplaar ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) om de weg aan het klembord te kopiëren. |
-   | **2** | Voeg de code die in het tekstveld in Stap 2 wordt weergegeven toe aan het bestand dat u net hebt gemaakt in Stap 1.<br> indien nodig, klik ![ Exemplaar ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) om de code aan het klembord te kopiëren. |
+   | **1** | Voeg een dossier met de weg en de naam `well-known/adobe/cloudmanager-challenge.txt` aan de `main` tak van de bewaarplaats van het Git toe die in het **Repository URL** gebied wordt vermeld. Voeg *niet* een periode bij het begin van de plaatsweg toe.<br> indien nodig, klik ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) om de weg aan het klembord te kopiëren. |
+   | **2** | Voeg de code die in het tekstveld in Stap 2 wordt weergegeven toe aan het bestand dat u net hebt gemaakt in Stap 1.<br> indien nodig, klik ![ Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) om de code aan het klembord te kopiëren. |
    | **3** | Maak een pull-verzoek in de Git-opslagplaats voor de wijzigingen die u net hebt gemaakt en voeg deze vervolgens samen tot `main` om de code vast te leggen. |
 
 1. Klik **verifieer**.
 
 Nadat de opslagplaats is geverifieerd, verandert de status in de Edge Delivery-sitetabel in een groene cirkel met daarin een wit vinkje.
 
-In de zelfde lijst, kunt u ![ Informatie over de plaats van Edge Delivery klikken.](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) voor meer informatie over uw site, zoals de geverifieerde URL van de opslagplaats en de URL van de website Voorbeeld en Productie.
+In de zelfde lijst, kunt u ![ Informatie over de plaats van Edge Delivery klikken.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) voor meer informatie over uw site, zoals de geverifieerde URL van de opslagplaats en de URL van de website Voorbeeld en Productie.
 
 
