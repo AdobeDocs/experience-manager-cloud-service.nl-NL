@@ -6,9 +6,9 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,7 @@ Voer dezelfde stappen uit als hierboven om deze extra velden toe te voegen. Het 
 
    * **geeft terug als:** **Gebied van de Tekst** - wanneer u een avontuur creeert, slaat dit gebied een korte beschrijving van de reis op.
    * **Etiket van het Gebied:** `Description` - het etiket dat voor dit gebied wanneer het creëren van een avontuur wordt getoond.
+   * **StandaardType**: **Onbewerkte Tekst** - het formaat dat voor dit voorbeeld wordt vereist.
 
 1. Voeg een gebied toe zodat kunt u de prijs van het avontuur opslaan door a **Enige lijntekst** gebied te slepen en te laten vallen en de volgende eigenschappen in te gaan:
 
