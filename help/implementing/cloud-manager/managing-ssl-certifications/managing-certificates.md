@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 **om een verlopen klant beheerde SSL certificaat bij te werken:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
-1. Van de **pagina van het Overzicht**, navigeer aan het **milieu&#39;s** scherm.
-1. Van het **scherm van Milieu&#39;s**, navigeer aan het **SSL Certificaten** scherm.
+1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
 1. In de rij van het verlopen klant beheerde certificaat dat u wilt bijwerken, klik de elliptische knoop bij uiterst rechts, dan selecteren de uitgezochte **Mening en Update**.
 
    ![ werk een verlopen klant beheerde SSL certificatie bij ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
@@ -50,7 +50,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
    * Op het **Privé zeer belangrijke** gebied, werk dit gebied bij slechts als u veranderingen in het certificaat aanbracht.
    * Op het **gebied van de ketting van het Certificaat** (of ketting van vertrouwen), kleef de certificaatketting.
 
-1. Klik **Update** om uw veranderingen te bewaren en hen automatisch toe te passen. —>
+1. Klik **Update** om uw veranderingen te bewaren en hen automatisch toe te passen.
 
 ## Een verlopen door de klant beheerd SSL-certificaat vervangen {#replace-ssl-certificate}
 
@@ -68,10 +68,10 @@ Hieronder volgen enkele redenen waarom u de naam van een SSL-certificaat wilt wi
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
-1. Klik in de linkerbovenhoek van de pagina op het hamburgerpictogram om het linkernavigatiemenu weer te geven.
-1. Onder de **rubriek van de Diensten**, klik **SSL Certificaten**.
-1. Voor de **SSL Certificaten** pagina, klik de ellips aan het eind van een rij waarvan certificaat u wilt anders noemen.
-1. Klik **anders noemen**.
+1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
+1. Op de **SSL Certificaten** pagina, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan *beheerde Adobe* certificaat u wilt anders noemen.
+1. In het drop-down menu, klik **anders noemen**.
 1. In **noem DV Certificaat** dialoogdoos anders, op het **de naam van het Certificaat** tekstgebied, ga de nieuwe naam van het certificaat in.
 1. Klik **anders noemen**.
 
@@ -87,10 +87,12 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 
 **om een SSL certificaat te schrappen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-1. Van de **pagina van het Overzicht**, navigeer aan het **milieu&#39;s** scherm.
-1. Van het **scherm van Milieu&#39;s**, navigeer aan het **SSL Certificaten** scherm.
-1. In de rij van het certificaat u wilt schrappen, klik de ellipsknoop bij uiterst rechts, dan selecteren **Schrapping**.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
+1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
+1. Op de SSL pagina van Certificaten, in de lijstrij van het certificaat u wilt schrappen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij uiterst rechts
+1. In het drop-down menu, klik **Schrapping**.
 Zie de opmerking hierboven als op de knop Verwijderen een informatiepictogram wordt weergegeven zoals in de volgende afbeelding.
 
    ![ knoop van de Schrapping met het pictogram van de Informatie ](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
@@ -102,8 +104,9 @@ Zie de opmerking hierboven als op de knop Verwijderen een informatiepictogram wo
 
 Als u reeds een configuratie CDN voor uw SSL certificaat hebt, toont de **SSL Certificaten** pagina een informatief bericht. Het moedigt u aan om deze configuraties via UI toe te voegen zodat zij in Cloud Manager zichtbaar en handelbaar zijn.
 
-Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan 1-2 werkdagen duren voordat het bericht verdwijnt.
+Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreerd met de interface. Het kan een tot twee werkdagen duren voordat het bericht verdwijnt.
 
 Zie [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer details toevoegen.
 
 Een gelijkaardig bericht wordt ook verstrekt op de **IP Lijst van gewenste personen** en de **milieu&#39;s** pagina&#39;s voor milieu&#39;s die reeds bestaande CDN configuraties voor IP Lijsten van gewenste personen of de namen van het douanedomein hebben.
+

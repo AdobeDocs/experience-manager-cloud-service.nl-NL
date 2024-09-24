@@ -5,9 +5,9 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -26,24 +26,24 @@ Leer meer over programmatypes in het document [ Begrijpend Programma en de Types
 
    ![ Cloud Manager landende pagina ](assets/log-in.png)
 
-1. In *maak uw programma* tovenaar, op het **naam van het Programma** tekstgebied, typ de naam u voor het programma wilt.
+1. In *maak uw tovenaar van het Programma*, op het **Naam van het Programma** tekstgebied, typ de naam u voor het programma wilt.
 
-1. Onder **Doelstelling van het Programma**, uitgezochte **`Set up a sandbox`**.
+1. Onder **Doelstelling van het Programma**, uitgezochte ![ Toverstaf pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **opstelling een zandbak**.
 
    ![ de typeverwezenlijking van het Programma ](assets/create-sandbox.png)
 
 1. (Optioneel) Voer in de rechterbenedenhoek van het dialoogvenster Wizard een van de volgende handelingen uit:
 
-   * Sleep en laat vallen een beelddossier op **een doel van het programmabeeld** toevoegen.
-   * Klik **voeg een programmabeeld** toe, dan selecteer een beeld van dossierbrowser.
-   * Klik op het prullenbakpictogram om een afbeelding te verwijderen die u hebt toegevoegd.
+   * Sleep en laat vallen een beelddossier op het ![ pictogram van het Beeld ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **een doel van het programmabeeld** toevoegen.
+   * Klik ![ pictogram van het Beeld ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **voeg een programmabeeld** toe, dan selecteer een beeld van een dossierbrowser.
+   * Klik ![ pictogram van de Schrapping ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) om een beeld te verwijderen dat u toevoegde.
 
 1. Klik **verdergaan**.
 
 1. In de **Oplossingen &amp; toe:voegen-ons** lijstdoos, selecteer één of meerdere oplossingen om in het programma te omvatten.
 
    * Klik op het chevron links van de naam van een oplossing om eventuele optionele invoegtoepassingen die u wilt opnemen in een geselecteerde oplossing, weer te geven.
-   * De **Plaatsen**, **Assets**, en **Edge leveren de Diensten** oplossingen altijd worden geselecteerd door gebrek wanneer u een zandbakprogramma creeert. U kunt de selectie niet opheffen.
+   * De **Plaatsen**, **Assets**, en **Edge leveren de oplossingen van de Diensten** altijd worden geselecteerd door gebrek wanneer u een zandbakprogramma creeert. U kunt de selectie niet opheffen.
 
    ![ Uitgezochte oplossingen en toe:voegen-ons voor een zandbak ](assets/sandbox-solutions-add-ons.png)
 
@@ -55,7 +55,7 @@ Leer meer over programmatypes in het document [ Begrijpend Programma en de Types
 
 Nadat een nieuw sandboxprogramma is gemaakt, kunt u de details van de sandboxinstelling bekijken en de omgeving openen door de overzichtspagina van het programma te bekijken.
 
-1. Klik op de Cloud Manager-landingspagina op de knop voor ovaal in het gemaakte sandboxprogramma.
+1. Van Cloud Manager die pagina, in het Sandbox programma landen, klik ![ Meer klein lijstpictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) op uw gecreeerd zandbakprogramma.
 
    ![ Toegang tot programma overzicht ](assets/program-overview-sandbox.png)
 

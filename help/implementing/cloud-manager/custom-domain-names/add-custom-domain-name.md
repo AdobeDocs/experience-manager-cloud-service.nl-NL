@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1489'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Voldoe aan deze vereisten voordat u een aangepaste domeinnaam in Cloud Manager t
 
 * U moet een domeinSSL certificaat voor het domein hebben toegevoegd u alvorens een naam van het douanedomein toe te voegen zoals die in het document [ wordt beschreven een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) toevoegt.
 * U moet de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** hebben om een naam van het douanedomein in Cloud Manager toe te voegen.
-* Gebruik de sneltoets of een andere CDN.
+* Gebruik de sneltoets of een andere CDN (Content Delivery Network).
 
 >[!IMPORTANT]
 >
@@ -31,22 +31,22 @@ Voldoe aan deze vereisten voordat u een aangepaste domeinnaam in Cloud Manager t
 
 ## Waar kunt u aangepaste domeinnamen toevoegen {#where-to-add-cdn}
 
-U kunt een aangepaste domeinnaam vanuit twee locaties in Cloud Manager toevoegen:
+U kunt een aangepaste domeinnaam op de volgende twee locaties in Cloud Manager toevoegen:
 
-* [Via de pagina Domeininstellingen](#adding-cdn-settings)
-* [Van de pagina Milieu&#39;s](#adding-cdn-environments)
+* [Pagina met domeininstellingen](#adding-cdn-settings)
+* [De pagina Omgevingen](#adding-cdn-environments)
 
 Wanneer u een aangepaste domeinnaam toevoegt, wordt het domein gediend met het meest specifieke, geldige certificaat. Als meerdere certificaten hetzelfde domein hebben, wordt de meest recente bijgewerkte versie gekozen. Adobe raadt u aan certificaten zodanig te beheren dat er geen overlappende domeinen zijn.
 
-De stappen voor beide methoden die in dit document worden beschreven, zijn gebaseerd op Snelheid. Als u een verschillende CDN gebruikte, vorm uw domein met CDN u aan gebruik hebt gekozen.
+De stappen voor beide methoden die in dit document worden beschreven, zijn gebaseerd op Snelheid. Als u een verschillende CDN (het Netwerk van de Levering van de Inhoud) gebruikte, vorm uw domein met CDN u om hebt gekozen te gebruiken.
 
-## Een aangepaste domeinnaam toevoegen via de pagina Domeininstellingen {#adding-cdn-settings}
+## Een aangepaste domeinnaam toevoegen {#adding-cdn-settings}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. In het linkernavigatievenster, selecteer het **lusje van de Montages van het Domein**
+1. In het zijmenu, onder **Diensten**, selecteer **Montages van het Domein**.
 
    ![ het venster van de Montages van het Domein ](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -59,7 +59,7 @@ Neem geen `http://`, `https://` of spaties op wanneer u een domein betreedt.
 
 1. In **verifieer de dialoogdoos van het Domein**, in **welk certificaattype u op het gebruiken van dit domein van plan bent?** selecteert u een van de volgende opties in de vervolgkeuzelijst:
 
-   | Certificaattype | Beschrijving |
+   | Certificaattype, optie | Beschrijving |
    | --- | --- |
    | Door Adobe beheerd certificaat | Selecteer deze optie als u een DV-certificaat (Domain Validation) wilt gebruiken. Deze optie is ideaal voor de meeste gevallen, die basisdomeinbevestiging verstrekken. Adobe beheert en vernieuwt het certificaat automatisch. |
    | Door de klant beheerd certificaat | Selecteer deze optie als u een EV/OV-certificaat wilt gebruiken. Deze optie biedt uitgebreide beveiliging met EV (Extended Validation) of OV (Organization Validation). Gebruik deze optie als u strengere controles, hogere vertrouwensniveaus of aangepaste controle over de certificaten nodig hebt. |
@@ -207,6 +207,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
 
 ## Een aangepaste domeinnaam toevoegen op de pagina Environment {#adding-cdn-environments}
+
+<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
 
 De stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** toe te voegen zijn het zelfde als wanneer [ toevoegend een naam van het douanedomein van de pagina van de Montages van het Domein ](#adding-cdn-settings), maar het ingangspunt verschilt. Volg deze stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** toe te voegen.
 

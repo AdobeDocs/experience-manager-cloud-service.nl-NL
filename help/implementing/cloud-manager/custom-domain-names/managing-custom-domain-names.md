@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ In Adobe Cloud Manager, zou u een configuratie van de douanedomeinnaam om de vol
 
 1. Klik in de linkerbovenhoek van de pagina op het hamburgerpictogram om het linkernavigatiemenu weer te geven.
 1. Onder de **rubriek van de Diensten**, klik **Configuraties CDN**.
-1. Voor de **CDN Configuraties** pagina, klik de ellips aan het eind van een rij waarvan CDN u wilt uitgeven.
+1. Voor de **CDN Configuraties** pagina, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het eind van een rij waarvan CDN u wilt uitgeven.
 1. Klik **uitgeven**.
 1. In **geef CDN configuratie** dialoogdoos uit, doe het volgende:
-   * In de **drop-down lijst 0} Rij, selecteer de rij (Auteur of Publish) u wilt gebruiken.**
-   * In de **SSL certificaat** drop-down lijst, selecteer het SSL certificaat u wilt gebruiken.
+   * In de **drop-down lijst 0} Rij, selecteer de rij (Publish of Voorproef) u wilt gebruiken.**
+   * In de **SSL certificaat** drop-down lijst, selecteer het SSL certificaat dat u wilt gebruiken.
 1. Klik **Update**.
 
 

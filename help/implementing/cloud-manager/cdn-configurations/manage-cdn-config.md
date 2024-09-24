@@ -4,15 +4,15 @@ description: Leer hoe u met Cloud Manager CDN-configuraties voor een Edge Delive
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
 
-# CDN-configuraties beheren {#manage-cdn-configurations}
+# CDN-configuraties (Content Delivery Network) beheren {#manage-cdn-configurations}
 
 Leer hoe u met Cloud Manager CDN-configuraties voor een Edge Delivery-site of een Cloud Manager-omgeving kunt bewerken en bijwerken of verwijderen.
 
@@ -31,7 +31,7 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
 **om een configuratie uit te geven CDN:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-1. In het linkernavigatievenster, onder **Diensten**, klik **Configuraties CDN**.
+1. In het zijpaneel, onder **Diensten**, klik **Configuraties CDN**.
 1. In de **CDN Configuraties** lijst, klik de ellips aan het eind van een rij waarvan configuratie CDN u wilt uitgeven.
 
    ![ Uitgevend een configuratie CDN ](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
