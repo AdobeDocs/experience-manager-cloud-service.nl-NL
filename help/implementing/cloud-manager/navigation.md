@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1574'
 ht-degree: 0%
 
 ---
@@ -57,14 +57,14 @@ De eerste is de Cloud Manager header, die blijvend is terwijl je door Cloud Mana
 
 ![ de kopbal van het Experience Cloud ](assets/experience-cloud-header.png)
 
-1. Het hamburgermenu dat toegang geeft tot tabbladen die u naar specifieke onderdelen van een afzonderlijk programma kunnen brengen. Of, kunt u tussen het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) en de **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van de context schakelen.
-1. Met de knop Cloud Manager gaat u terug naar de console Mijn programma&#39;s van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
-1. Tik of klik op Feedback om feedback te geven aan de Adobe over Cloud Manager.
-1. De organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Tik of klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere.
-1. Als u op de schakeloptie voor oplossingen tikt of erop klikt, kunt u snel naar andere oplossingen voor Experiencen Cloud gaan.
-1. Met het Help-pictogram hebt u snel toegang tot leermiddelen en ondersteuningsbronnen.
-1. Het berichtpictogram is badged met het aantal momenteel toegewezen onvolledige [ berichten ](/help/implementing/cloud-manager/notifications.md).
-1. Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmontages toegang te hebben. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
+1. Klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (toon/verberg zijmenu) om u toegang tot een verscheidenheid van lusjes te geven die u aan specifieke delen van een individueel programma kunnen nemen. Of, kunt u tussen het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) en de **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van de context schakelen.
+1. Klik op de knop Adobe Cloud Manager om terug te keren naar de console Mijn programma&#39;s van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
+1. Klik **Terugkoppeling** om terugkoppelen aan Adobe over Cloud Manager te verstrekken.
+1. Klik de organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Klik om over te schakelen naar een andere organisatie als uw Adobe ID aan meerdere organisaties is gekoppeld.
+1. Klik ![ Apps pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (de schakelaar van Oplossingen) om snel aan andere oplossingen van het Experience Cloud te springen.
+1. Klik ![ pictogram van de Hulp ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) om u snelle toegang tot het leren en steunmiddelen te geven.
+1. Klik ![ pictogram van de Bell ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([ Meldingen ](/help/implementing/cloud-manager/notifications.md)) om berichten en aankondigingen, onder andere te zien.
+1. Klik op het pictogram voor gebruikerstoegang tot uw gebruikersinstellingen. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 #### Programmawerkbalk {#program-toolbar}
 
@@ -72,9 +72,9 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
 
 ![ de toolbar van het Programma ](assets/program-toolbar.png)
 
-1. De programmakiezer wordt geopend in een vervolgkeuzelijst waar u snel andere programma&#39;s kunt selecteren of contextgerichte acties kunt uitvoeren, zoals het maken van een nieuw programma
-1. De het worden begonnen verbinding geeft u toegang tot [ op het instappen documentatiereis ](/help/journey-onboarding/overview.md) om u met Cloud Manager op te halen.
-1. Met de knop Handeling kunt u contextgerichte acties uitvoeren, zoals het maken van een nieuw programma.
+1. De **Mijn selecteur van Programma&#39;s** opent een drop-down waar u andere programma&#39;s kunt selecteren of context-aangewezen acties zoals het creëren van een nieuw programma nemen
+1. De **Begonnen** verbinding geeft u toegang tot [ op het instappen documentatiereis ](/help/journey-onboarding/overview.md) om u met Cloud Manager in werking te stellen.
+1. Met de knop Handeling kunt u contextgerichte acties uitvoeren, zoals het toevoegen van een programma.
 
 ### Statistieken en oproep tot actie {#statistics}
 
@@ -209,23 +209,23 @@ Elk programma heeft talrijke opties en gegevens verbonden aan het. Deze opties e
 
 **Programma**
 
-* Overzicht - Het programma-overzicht zoals beschreven in het huidige document
-* [ Activiteit ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - de geschiedenis van pijpleidingslooppas van het programma
-* [ Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - Alle pijpleidingen die voor het programma worden gevormd
-* [ Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - Alle bewaarplaatsen die voor het programma worden gevormd
-* [ Rapporten ](/help/implementing/cloud-manager/sla-reporting.md) - Metriek zoals de gegevens van SLA
+* ![ Modern pictogram van de netmening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ModernGridView_18_N.svg) Overzicht - het programmaoverzicht zoals die in het huidige document wordt beschreven
+* ![ het pictogram van de Bell ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [ Activiteit ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - de geschiedenis van pijpleidingslooppas van het programma
+* ![ pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [ Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - Alle pijpleidingen die voor het programma worden gevormd
+* ![ het pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [ Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - Alle bewaarplaatsen die voor het programma worden gevormd
+* ![ het schijfpictogram van de Grafiek ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [ Rapporten ](/help/implementing/cloud-manager/sla-reporting.md) - Metriek zoals de gegevens van SLA
 
 **de Diensten**
 
-* [ Milieu&#39;s ](/help/implementing/cloud-manager/manage-environments.md) - Alle milieu&#39;s die voor het programma worden gevormd
-* [ de Plaatsen van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - beheer de plaatsen van Edge Delivery
-* [ Montages van het Domein ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer de namen van het douanedomein voor het programma
-* [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - beheer SSL certificaten voor het programma
-* [ CDN Configurations ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer configuraties CDN
-* [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - bepaal lijsten van gewenste personen voor bepaalde IP adressen
-* [ Reeksen van de Inhoud ](/help/implementing/developing/tools/content-copy.md) - Reeksen van inhoud die voor exemplaardoeleinden wordt gecreeerd
-* [ Activiteit van de Inhoud van het Exemplaar ](/help/implementing/developing/tools/content-copy.md) - de activiteiten van het Inhoudsexemplaar
-* [ Infrastructuur van het Netwerk ](/help/security/configuring-advanced-networking.md) - beheer geavanceerde voorzien van een netwerkopties voor het programma
+* ![ het pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) [ Milieu&#39;s ](/help/implementing/cloud-manager/manage-environments.md) - Alle milieu&#39;s die voor het programma worden gevormd
+* ![ het pictogram van de Web-pagina&#39;s ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [ Plaatsen van Edge Delivery ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - beheert de plaatsen van Edge Delivery
+* ![ pictogram van Montages ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [ Montages van het Domein ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - beheer de namen van het douanedomein voor het programma
+* ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [ SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - beheer SSL certificaten voor het programma
+* ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [ CDN Configuraties ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) van het 0} Sociale netwerkpictogram {![
+* ![ het lijstpictogram van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [ IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - bepalen lijsten van gewenste personen voor bepaalde IP adressen
+* ![ het pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [ Reeksen van de Inhoud ](/help/implementing/developing/tools/content-copy.md) - Reeksen inhoud die voor exemplaardoeleinden wordt gecreeerd
+* ![ pictogram van de Geschiedenis ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [ de Activiteit van de Inhoud van het Exemplaar ](/help/implementing/developing/tools/content-copy.md) - de activiteiten van het Inhoudsexemplaar
+* ![ pictogram van het Kanaal ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [ de Infrastructuur van het Netwerk ](/help/security/configuring-advanced-networking.md) - beheer geavanceerde voorzien van een netwerkopties voor het programma
 
 **Middelen**
 

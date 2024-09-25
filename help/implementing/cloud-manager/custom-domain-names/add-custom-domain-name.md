@@ -1,13 +1,13 @@
 ---
 title: Een aangepaste domeinnaam toevoegen
-description: Leer hoe u een aangepaste domeinnaam kunt toevoegen met Cloud Manager.
+description: Leer hoe u een aangepaste domeinnaam kunt toevoegen met behulp van Domeininstellingen in Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Een aangepaste domeinnaam toevoegen {#adding-cdn}
 
-Leer hoe u een aangepaste domeinnaam kunt toevoegen met Cloud Manager.
+Leer hoe te om een naam van het douanedomein toe te voegen gebruikend **Montages van het Domein** in Cloud Manager.
 
 ## Vereisten {#requirements}
 
@@ -46,7 +46,7 @@ De stappen voor beide methoden die in dit document worden beschreven, zijn gebas
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. In het zijmenu, onder **Diensten**, selecteer **Montages van het Domein**.
+1. In het zijmenu, onder **Diensten**, uitgezochte ![ pictogram van Montages ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **Montages van het Domein**.
 
    ![ het venster van de Montages van het Domein ](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -61,8 +61,8 @@ Neem geen `http://`, `https://` of spaties op wanneer u een domein betreedt.
 
    | Certificaattype, optie | Beschrijving |
    | --- | --- |
-   | Door Adobe beheerd certificaat | Selecteer deze optie als u een DV-certificaat (Domain Validation) wilt gebruiken. Deze optie is ideaal voor de meeste gevallen, die basisdomeinbevestiging verstrekken. Adobe beheert en vernieuwt het certificaat automatisch. |
-   | Door de klant beheerd certificaat | Selecteer deze optie als u een EV/OV-certificaat wilt gebruiken. Deze optie biedt uitgebreide beveiliging met EV (Extended Validation) of OV (Organization Validation). Gebruik deze optie als u strengere controles, hogere vertrouwensniveaus of aangepaste controle over de certificaten nodig hebt. |
+   | Door Adobe beheerd certificaat | Selecteer dit certificaattype als u een DV-certificaat (Domain Validation) wilt gebruiken. Deze optie is ideaal voor de meeste gevallen, die basisdomeinbevestiging verstrekken. Adobe beheert en vernieuwt het certificaat automatisch. |
+   | Door de klant beheerd certificaat | Selecteer dit certificaattype als u een EV/OV-certificaat wilt gebruiken. Deze optie biedt uitgebreide beveiliging met EV (Extended Validation) of OV (Organization Validation). Gebruik deze optie als u strengere controles, hogere vertrouwensniveaus of aangepaste controle over de certificaten nodig hebt. |
 
 1. In **verifieer domein** dialoogdoos, die op het certificaattype wordt gebaseerd u selecteerde, doe één van het volgende:
 
@@ -77,7 +77,7 @@ Neem geen `http://`, `https://` of spaties op wanneer u een domein betreedt.
 
    >[!NOTE]
    >
-   >Als u een zelf-beheerd SSL certificaat en een zelf-geleide leverancier CDN gebruikt, kunt u deze stap overslaan en direct gaan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
+   >Als u een klant-geleid SSL certificaat en een klant-geleide leverancier CDN gebruikt, kunt u overslaan toevoegend een SSL certificaat en direct gaan [ een configuratie CDN ](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) toevoegen wanneer klaar.
 
 
 ### Door Adobe beheerde certificaatstappen {#adobe-managed-cert-steps}
@@ -222,8 +222,8 @@ De stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** t
 
    1. Voer de aangepaste domeinnaam in.
    1. Selecteer het SSL-certificaat dat aan deze naam is gekoppeld in de vervolgkeuzelijst.
-   1. Klik **+ toevoegen**.
+   1. Klik ![ toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **** toevoegen.
 
    ![ voeg een naam van het douanedomein toe ](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. **voegt domeinnaam** dialoogdoos toe opent aan de **Naam van het Domein** tabel. Ga zoals u voor [ verder toevoegend een naam van het douanedomein van de pagina van de Montages van het Domein ](#adding-cdn-settings). —>
+1. **voegt domeinnaam** dialoogdoos toe opent aan de **Naam van het Domein** tabel. Ga zoals u voor [ verder toevoegend een naam van het douanedomein van de pagina van de Montages van het Domein ](#adding-cdn-settings).

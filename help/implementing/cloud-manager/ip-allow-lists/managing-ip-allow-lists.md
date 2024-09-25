@@ -5,9 +5,9 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -20,74 +20,53 @@ Leer hoe te om, de status van IP Lijsten van gewenste personen in Cloud Manager 
 
 Een gebruiker in de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** kan deze stappen volgen en een IP Lijst van gewenste personen bijwerken.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
-1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
-1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
-1. Navigeer aan de **IP Lijsten van gewenste personen** pagina van het **milieu&#39;s** scherm.
+**om IP Lijsten van gewenste personen te bekijken en bij te werken:**
+
+1. Logon aan Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma.
+1. Van de **pagina van het Overzicht**, in het zijpaneel, onder **Diensten**, klik ![ het pictogram van de de lijstlijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
 1. Identificeer de rij voor de IP Lijsten van gewenste personen die u wilt bekijken of bijwerken.
-1. Klik op de knop met de ellips rechts van de rij.
-1. Selecteer de **Mening &amp; van de Update** optie.
-1. De **Mening &amp; van de Update** tovenaar toont de naam, IP adressen (of waaiers) die de regel samen met de milieu&#39;s en de diensten bepalen waarop de regel wordt toegepast.
-1. Wijzig desgewenst de naam of het IP-adres en bevestig uw verzending.
+1. Klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) bij het rechtereind van de rij.
+1. Van het drop-down menu, klik **Mening &amp; Update**.
+De **Mening &amp; van de Update IP de dialoogdoos van de Lijst van gewenste personen** toont de naam, IP adressen (of waaiers) die de regel samen met de milieu&#39;s en de diensten bepalen waarop de regel wordt toegepast.
+1. Wijzig desgewenst de naam of het IP-adres.
 
-Het toevoegen van of het verwijderen van een nieuwe IP waaier aan een IP Lijst van gewenste personen past automatisch het op alle overeenkomstige milieu/de diensten toe waarop het eerder werd toegepast.
+   Het toevoegen van of het verwijderen van een nieuwe IP waaier aan een IP Lijst van gewenste personen past automatisch het op alle overeenkomstige milieu/de diensten toe waarop het eerder werd toegepast.
 
-De updates kunnen niet aan een IP Lijst van gewenste personen worden gemaakt terwijl een vroegere update lopend is en niet is voltooid.
+   De updates kunnen niet aan een IP Lijst van gewenste personen worden gemaakt terwijl een vroegere update lopend is en niet is voltooid.
+
+1. Klik **Update**.
 
 ## Controleer het statuut van IP Lijsten van gewenste personen {#check-allow-list-status}
 
 1. Logon aan Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma.
 
-1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
+1. Van de **pagina van het Overzicht**, in het zijpaneel, onder **Diensten**, klik ![ het pictogram van de de lijstlijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
 
-1. Klik het **pictogram van de Status** voor de IP Lijst van gewenste personen van de lijst op het **scherm van Milieu&#39;s** en selecteer de **IP Lijsten van gewenste personen** pagina.
+1. In de **kolom van de Status** van de IP lijst van Lijsten van gewenste personen, bewaar de muiswijzer over een IP Lijst van gewenste personen die (in gebruik) groen is om één of meerdere diensten te zien die op het worden toegepast.
 
-1. Cloud Manager toont het statuut van de Lijst van gewenste personen zoals die [ in de volgende sectie ](#status) wordt beschreven.
+   De statuswaarden in de tabel hebben de volgende betekenis:
 
-### Status van een IP Lijst van gewenste personen {#status}
-
-[ wanneer het controleren van het statuut van IP Lijsten van gewenste personen ](#check-allow-list-status), kunnen zij één van de volgende waarden hebben.
-
-* **Toegepast** - de IP Lijst van gewenste personen wordt met succes toegepast op één of meerdere milieu&#39;s.
-
-* **het Bijwerken** - een update aan de IP Lijst van gewenste personen is lopend, die één of meerdere toepassing of unapplication van de lijst kan omvatten.
-
-   * Elke toepassing/niet-toepassing is vermeld samen met zijn eigen status van **niet begonnen**, **Bezig**, **Volledig**, of **Ontbroken**.
-
-* **Ontbroken** - één of meerdere toepassing of unapplication proces van een ontbroken update.
-   * Elke toepassing en toepassing wordt samen met de status vermeld.
-      * De status is **Ontbroken** als één toepassing/unapplication in de update ontbreekt.
-      * De status blijft als **Ontbroken** tot alle mislukkingen worden ontruimd.
-         * Selecteer **opnieuw** pictogram naast de status zodat kunt u de mislukking ontruimen.
-      * U kunt geen IP Lijst van gewenste personen met a **niet bijwerken of schrappen ontbrak** status.
-
-* **het Schrappen** - Een schrapping van een IP Lijst van gewenste personen is lopend.
-   * Bij verwijderen wordt de lijst uit alle services verwijderd.
-   * Elke unapplication wordt vermeld samen met zijn eigen status van **niet Begonnen**, **Bezig**, **Volledig**, of **Ontbroken**.
-   * Wanneer de verwijderbewerking is voltooid:
-      * De IP Lijst van gewenste personen verschijnt niet in de IP lijst van de Lijst van gewenste personen.
-      * De IP Lijst van gewenste personen wordt niet toegepast op om het even welke dienst in het programma in Cloud Manager.
-
-* **Ontbroken Schrapping** - één of meerdere unapplications ontbrak tijdens een schrappingsverrichting.
-
-   * Elke unapplication wordt vermeld samen met de status **Volledige** of **Ontbroken**.
-   * De status wordt **Ontbroken Schrapping** als één unapplication ontbreekt.
-   * De status blijft als **Ontbroken Schrapping** tot alle mislukkingen worden ontruimd. Helemaal rechts van de lijstrij, klik het elliptische menu, dan klik **Schrapping** zodat kunt u om het even welke mislukking ontruimen.
-   * U kunt geen IP Lijst van gewenste personen bijwerken terwijl de status **Ontbroken** is.
+   | Status van IP Lijst van gewenste personen | Beschrijving |
+   | --- | --- |
+   | Toegepast | De IP Lijst van gewenste personen wordt met succes toegepast op één of meerdere milieu&#39;s. |
+   | Bijwerken | Er wordt een update van de IP-Lijst van gewenste personen uitgevoerd, die een of meer toepassingen of het niet toepassen van de lijst kan omvatten. Elke toepassing/niet-toepassing is vermeld samen met zijn eigen status van **niet begonnen**, **Bezig**, **Volledig**, of **Ontbroken**. |
+   | Mislukt | Een of meer toepassings- of verwijderingsproces van een update is mislukt.<br>・ Elke toepassing en toepassing wordt samen met de status vermeld.<br>・ De status is **Ontbroken** als één toepassing/unapplication in de update ontbreekt. De status blijft als **Ontbroken** tot alle mislukkingen worden ontruimd.<br>・ Klik **opnieuw** pictogram naast de status zodat kunt u de mislukking ontruimen.<br>・ U kunt geen IP Lijst van gewenste personen met a **Ontbroken** status bijwerken of schrappen. |
+   | Verwijderen | Een schrapping van een IP Lijst van gewenste personen is lopend.<br>・ Bij verwijderen wordt de lijst uit alle services verwijderd.<br>・ Elke unapplication is vermeld samen met zijn eigen status van **niet Begonnen**, **Bezig**, **Volledig**, of **Ontbroken**.<br>・ Wanneer de schrappingsverrichting volledig is, verschijnt de IP Lijst van gewenste personen niet in de IP lijst van de Lijst van gewenste personen. Ook, wordt de IP Lijst van gewenste personen niet toegepast op om het even welke dienst in het programma in Cloud Manager. |
+   | Verwijderen is mislukt | Een of meer toepassingen zijn tijdens het verwijderen mislukt.<br>・ Elke unapplication is vermeld samen met de status **Volledig** of **Ontbroken**.<br>・ De status wordt **Ontbroken Schrapping** als één unapplication ontbreekt. De status blijft als **Ontbroken Schrapping** tot alle mislukkingen worden ontruimd. Helemaal rechts van de lijstrij, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), dan in het drop-down menu, klik **Schrapping** om het even welke mislukking te ontruimen.<br>・ U kunt geen IP Lijst van gewenste personen bijwerken terwijl de status **Ontbroken** is. |
 
 ## Een IP-Lijst van gewenste personen verwijderen {#delete-allow-list}
 
+Wanneer u een IP Lijst van gewenste personen schrapt, maakt het automatisch de lijst van alle diensten ongedaan en schrapt het van de IP lijst van de Lijst van gewenste personen.
+
 Een gebruiker in de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** kan deze stappen volgen en een IP Lijst van gewenste personen bijwerken.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
-1. Navigeer aan de **IP Lijsten van gewenste personen** pagina van het **milieu&#39;s** scherm.
-1. Identificeer de rij van de IP Lijst van gewenste personen die u wilt schrappen.
-1. Selecteer het ellipsmenu helemaal rechts van de rij.
-1. Klik **Schrapping**.
-1. Bevestig je verzending.
+**om een IP Lijst van gewenste personen te schrappen:**
 
-Het schrappen van een IP Lijst van gewenste personen maakt automatisch het van alle diensten ongedaan en schrapt het van de lijst.
+1. Logon aan Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma.
+1. Van de **pagina van het Overzicht**, in het zijpaneel, onder **Diensten**, klik ![ het pictogram van de de lijstlijst van de Taak ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP Lijsten van gewenste personen**.
+1. Identificeer de rij voor de IP Lijst van gewenste personen die u wilt schrappen, dan ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aan het rechtereind van de rij klikken.
+1. In het drop-down menu, klik **Schrapping**.
+1. In het de dialoogvakje van de Lijst van gewenste personen van de Schrapping IP, klik **Schrapping**.
 
 ## Bestaande CDN-configuraties {#pre-existing-cdn}
 
