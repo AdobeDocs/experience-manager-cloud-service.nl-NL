@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -57,13 +57,13 @@ De eerste is de Cloud Manager header, die blijvend is terwijl je door Cloud Mana
 
 ![ de kopbal van het Experience Cloud ](assets/experience-cloud-header.png)
 
-1. Klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (toon/verberg zijmenu) om u toegang tot een verscheidenheid van lusjes te geven die u aan specifieke delen van een individueel programma kunnen nemen. Of, kunt u tussen het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) en de **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van de context schakelen.
+1. Klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (toon of verberg zijmenu) om u toegang tot een verscheidenheid van lusjes te geven die u aan specifieke delen van een individueel programma kunnen nemen. Of, kunt u tussen het [ dashboard van de Vergunning ](/help/implementing/cloud-manager/license-dashboard.md) en de **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van de context schakelen.
 1. Klik op de knop Adobe Cloud Manager om terug te keren naar de console Mijn programma&#39;s van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
 1. Klik **Terugkoppeling** om terugkoppelen aan Adobe over Cloud Manager te verstrekken.
 1. Klik de organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Klik om over te schakelen naar een andere organisatie als uw Adobe ID aan meerdere organisaties is gekoppeld.
 1. Klik ![ Apps pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (de schakelaar van Oplossingen) om snel aan andere oplossingen van het Experience Cloud te springen.
 1. Klik ![ pictogram van de Hulp ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) om u snelle toegang tot het leren en steunmiddelen te geven.
-1. Klik ![ pictogram van de Bell ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([ Meldingen ](/help/implementing/cloud-manager/notifications.md)) om berichten en aankondigingen, onder andere te zien.
+1. Klik het pictogram van de Bell ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([ Meldingen ](/help/implementing/cloud-manager/notifications.md)) om berichten en aankondigingen, onder andere te zien.![
 1. Klik op het pictogram voor gebruikerstoegang tot uw gebruikersinstellingen. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 #### Programmawerkbalk {#program-toolbar}
@@ -90,7 +90,7 @@ Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stapp
 
 De belangrijkste inhoud van de **Mijn console van Programma&#39;s** is de lijst van programma&#39;s in de **Mijn 3} sectie van Programma&#39;s.**
 
-De **Mijn van Programma&#39;s** sectie maakt een lijst van kaarten die elk programma vertegenwoordigen. Tik of klik op een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
+De **Mijn van Programma&#39;s** sectie maakt een lijst van kaarten die elk programma vertegenwoordigen. Klik een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
 
 >[!NOTE]
 >
@@ -101,13 +101,13 @@ Gebruik de sorteeropties om het gewenste programma gemakkelijker te vinden.
 
 ![ het Sorteren opties ](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
-* Sorteren op
-   * Gemaakt op (standaard)
-   * Programmanaam
-   * Status
-* Oplopend (standaard) / Aflopend
-* Rasterweergave (standaard)
-* Lijstweergave
+* Sorteren op:
+   * **Gemaakte Datum** (gebrek)
+   * **Naam van het Programma**
+   * **Status**
+* ![ de orde van de Sortering neer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) Ascending (gebrek) / ![ de orde van de Sortering omhoog pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) Aflopend
+* ![ het Klassieke pictogram van de netmening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) Mening van het Net (gebrek)
+* ![ het lijstpictogram van de Mening van de Mening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)
 
 #### Programmakaarten {#program-cards}
 
@@ -115,48 +115,42 @@ Een kaart (of rij in een tabel) vertegenwoordigt elk programma en biedt een over
 
 ![ kaart van het Programma ](assets/program-card.png)
 
-* Programmaafbeelding (indien geconfigureerd)
-* Programmanaam
+* Beeld verbonden aan het Programma, indien gevormd. De bovenstaande afbeelding is &quot;WKND&quot;.
+* Naam die aan het Programma wordt toegewezen. In de bovenstaande afbeelding ziet u &quot;SecurBank Sample&quot; als de naam van het programma.
 * Servicetype:
-   * **Cloud van de Experience Manager** voor de programma&#39;s van AEM as a Cloud Service
-   * **Experience Manager** voor [ programma&#39;s van AMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Cloud van de Experience Manager** — voor de programma&#39;s van AEM as a Cloud Service
+   * **Experience Manager** — voor [ AMS (Adobe Managed Services) programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [ Type van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Productie
-* Status
-* Gevormde oplossingen
-* Aanmaakdatum
+* Status. In de bovenstaande afbeelding is de status Gereed met een vinkje.
+* Gevormde oplossingen. In de bovenstaande afbeelding zijn Sites en Assets de geconfigureerde oplossingen.
+* Aanmaakdatum.
 
-Afhankelijk van de opties die u tijdens het maken van het programma hebt gekozen, kan een productieprogramma worden gemarkeerd met extra functies.
+Een productieprogramma kan zijn voorzien van een badged om extra eigenschappen te tonen u op het tijdstip koos u het, zoals het volgende toevoegde:
 
-* [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+* ![ HIPAA badge ](assets/hipaa.png) [ HIPAA ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![ badge van HIPAA ](assets/hipaa.png)
+* ![ WAF-DDOS badge ](assets/waf-ddos-protection.png) [ bescherming WAF-DDOS ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [WAF-DOS-beveiliging](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
-
-  ![ WAF-DDOS badge ](assets/waf-ddos-protection.png)
-
-* [99,99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
-
-  ![ 99.99% de badge van SLA ](assets/9999-sla.png)
+* [99,99% SLA (Service Level Agreement)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 Met het informatiepictogram hebt u ook snel toegang tot aanvullende informatie over het programma (nuttig in de lijstweergave).
 
 ![ Informatie ](assets/information-list-view.png)
 
-Het ellipsiepictogram geeft u toegang tot extra acties u het programma kunt nemen.
+Het ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_22_N.svg) pictogram geeft u toegang tot extra acties u het programma kunt nemen.
 
 ![ knoop van de Ellipsis voor programma&#39;s ](assets/program-ellipsis.png)
 
-* Navigeer aan een bepaald [ milieu ](/help/implementing/cloud-manager/manage-environments.md) van het programma
-* Open het [ programmaoverzicht ](#program-overview)
-* [Het programma bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* [Een sandboxprogramma verwijderen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* Navigeer aan een bepaald ![ pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [ Milieu ](/help/implementing/cloud-manager/manage-environments.md) van het programma
+* Open het ![ pictogram van het Overzicht van het Programma ](/help/implementing/cloud-manager/assets/program-overview.svg) [ Overzicht van het Programma ](#program-overview)
+* ![ geef pictogram ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) uit [ geef het programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing) uit
+* ![ het pictogram van de Schrapping ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [ schrap een zandbakprogramma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
->Raadpleeg de volgende documenten voor meer informatie over programma&#39;s en het maken en beheren van programma&#39;s.
+>Raadpleeg de volgende secties voor meer informatie over programma&#39;s en het toevoegen en beheren van programma&#39;s:
 >
 >* [ Programma&#39;s en de Types van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 >* [ creeer productieprogramma&#39;s ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
@@ -167,9 +161,9 @@ Het ellipsiepictogram geeft u toegang tot extra acties u het programma kunt neme
 
 De snelle sectie van verbindingen geeft u toegang tot algemeen gebruikte middelen die verwant zijn.
 
-## Venster Overzicht van programma {#program-overview}
+## Pagina met overzicht van programma&#39;s {#program-overview}
 
-Wanneer een programma in de **[Mijn console van Programma&#39;s](#my-programs-console)** wordt geselecteerd, wordt u genomen aan het **venster van het Overzicht van het Programma**.
+Wanneer een programma in de **[Mijn console van Programma&#39;s](#my-programs-console)** wordt geselecteerd, wordt u genomen aan de **pagina van het Overzicht van het Programma**.
 
 ![ Overzicht van het Programma ](assets/program-overview.png)
 
@@ -189,11 +183,11 @@ De toolbars voor het programmaoverzicht zijn gelijkaardig aan die toolbars van d
 
 #### Cloud Manager header {#cloud-manager-header-2}
 
-De Cloud Manager-header heeft een hamburgermenu dat automatisch wordt geopend om de navigeerbare tabbladen van het programmaoverzicht weer te geven.
+In de linkerbovenhoek van de pagina bevindt zich de Adobe Cloud Manager-koptekst. U kunt ![ het menupictogram van de Zijde ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klikken om het zijmenu van lusjes aan andere gebieden van de software te tonen of te verbergen.
 
 ![ het hamburgermenu van Cloud Manager ](assets/cloud-manager-hamburger.png)
 
-Tik of klik op het hamburger-menupictogram om de tabbladen te verbergen.
+Klik op Adobe Cloud Manager om terug te keren naar Home.
 
 #### Programmawerkbalk {#program-toolbar-2}
 
@@ -229,11 +223,11 @@ Elk programma heeft talrijke opties en gegevens verbonden aan het. Deze opties e
 
 **Middelen**
 
-* Leerpaden - Aanvullende leerbronnen over Cloud Manager
+* ![ pictogram van het Boek ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Book_18_N.svg) het Leren Wegen - de Extra het leren middelen over Cloud Manager
 
 Door gebrek, wanneer u een programma opent u op het **Overzicht** tabel aankomt. Het huidige tabblad wordt gemarkeerd. Selecteer een ander tabblad om de details ervan weer te geven.
 
-Gebruik het hamburger menu in de [ kopbal van Cloud Manager ](#cloud-manager-header-2) om de lusjes te verbergen.
+In de upper-left hoek van de [ kopbal van Cloud Manager ](#cloud-manager-header-2), klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu van lusjes te tonen of te verbergen.
 
 ### Vraag-aan-sction {#cta}
 
