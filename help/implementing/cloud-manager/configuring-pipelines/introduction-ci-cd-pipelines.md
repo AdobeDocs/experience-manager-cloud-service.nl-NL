@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 0%
@@ -115,7 +115,7 @@ Zie [ een niet productiepijpleiding ](/help/implementing/cloud-manager/configuri
 
 Gebruikend een config pijpleiding, kunt u montages voor logboek opstellen door:sturen, zuivert-verwante onderhoudstaken, en diverse configuraties CDN, met inbegrip van de regels van de verkeersfilter (zoals de Firewall van de Toepassing van het Web van WAF). Daarnaast kunt u verzoek- en responstransformaties, oorspronkelijke kiezers, omleidingen aan de clientzijde, foutpagina&#39;s, door de klant beheerde CDN-sleutels, de API-sleutels en de basisverificatie beheren.
 
-Zie [ het Gebruik config pijpleidingen van het Gebruik ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) voor een uitvoerige lijst van gesteunde eigenschappen en te leren hoe te om de configuraties in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
+Zie [ het Gebruik config pijpleidingen van het Gebruik ](/help/operations/config-pipeline.md) voor een uitvoerige lijst van gesteunde eigenschappen en te leren hoe te om de configuraties in uw bewaarplaats te beheren zodat worden zij behoorlijk opgesteld.
 
 ### Configuratiepijplijnen configureren {#configure-config-deployment}
 
