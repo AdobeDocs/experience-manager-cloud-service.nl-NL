@@ -4,9 +4,9 @@ description: Leer hoe u met werkbladen tabelgegevens kunt beheren voor verschill
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Dit document gebruikt het voorbeeld van omleidingen om te illustreren hoe u derg
 
 Als u toewijzingen wilt maken met behulp van spreadsheets in uw AEM met Edge Delivery Services-project, moet u uw site hebben gemaakt met de nieuwste sitesjabloon.
 
-Gelieve te zien de document [ Begonnen Gids van de Ontwikkelaar krijgen voor het schrijven WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) voor meer informatie.
+Gelieve te zien de document [ Begonnen Gids van de Ontwikkelaar Begonnen voor het schrijven van WYSIWYG met Edge Delivery Services ](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) voor meer informatie.
 
 ## Een werkblad maken {#spreadsheet}
 
@@ -121,6 +121,10 @@ Als AEM de gegevens in uw spreadsheet wilt publiceren, moet u het `paths.json` -
    ![ bevestiging van de Banner van publicatie ](assets/tabular-data/tabular-data-publish-banner.png)
 
 Het spreadsheet voor omleiding wordt nu gepubliceerd en openbaar gemaakt.
+
+>[!TIP]
+>
+>Voor meer informatie over wegafbeeldingen, te zien gelieve het document [ Toewijzing van de Weg voor Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## Andere spreadsheettypen {#other}
 

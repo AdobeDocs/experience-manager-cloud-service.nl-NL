@@ -4,9 +4,9 @@ description: Deze gids zal u aan de slag met een nieuwe plaats van Adobe Experie
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -113,6 +113,10 @@ Eerst zult u een nieuw project op GitHub moeten tot stand brengen, dat op het ma
 1. Voeg toe begaat bericht zoals gewenst en klik dan **veranderingen** begaan, die hen direct aan de `main` tak begaan.
 
    ![ het Aanwijzen veranderingen ](assets/edge-dev-getting-started/commit-paths-changes.png)
+
+>[!TIP]
+>
+>Voor meer informatie over wegafbeeldingen, te zien gelieve het document [ Toewijzing van de Weg voor Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ### Een nieuwe AEM-site maken en bewerken {#create-aem-site}
 

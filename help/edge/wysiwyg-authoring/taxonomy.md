@@ -3,13 +3,13 @@ title: Taxonomiegegevens beheren
 description: Leer hoe u taxonomiegegevens beheert voor het gebruik van tags met uw AEM bij sites met Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
-
 
 # Taxonomiegegevens beheren {#managing-taxonomy-data}
 
@@ -108,6 +108,10 @@ Als wanneer [ het leiden en het publiceren van tabelgegevens voor uw plaats van 
    * Leg dit vast aan `main` of maak een pull-aanvraag volgens uw proces.
 
 Dit proces hoeft maar één keer per taxonomipagina te worden uitgevoerd. Als u klaar bent, kunt u uw taxonomie publiceren.
+
+>[!TIP]
+>
+>Voor meer informatie over wegafbeeldingen, te zien gelieve het document [ Toewijzing van de Weg voor Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## Een taxonomie publiceren {#publishing}
 
