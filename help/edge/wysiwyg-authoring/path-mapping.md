@@ -3,7 +3,7 @@ title: Padtoewijzing voor Edge Delivery Services
 description: Leer hoe u paginapaden die in de AEM ontwerpinstantie worden gebruikt, kunt toewijzen aan openbare paginapaden die op de website worden gebruikt en bepalen welke inhoud naar Edge Delivery Services wordt gepubliceerd.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 51a2b453ccce39cb42c927a088bc088083545542
+source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Uw wegtoewijzingen kunnen op één van twee manieren afhankelijk van de opstelli
    }'
    ```
 
-1. Als het project niet de configuratiedienst gebruikt, wordt de wegafbeelding gevormd via een paths.json- dossier in u de bewaarplaats van GitHub projecten.
+1. Als het project niet de configuratieservice gebruikt, wordt de wegafbeelding gevormd via een `paths.json` dossier in u de bewaarplaats van GitHub projecten.
 
-   * Zie [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) voor een voorbeeld.
+   * Zie [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json` ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json) voor een voorbeeld.
 
 In beide gevallen, zodra u uw wegafbeeldingen vormt, kunt u de configuratie controleren via openbaar-toegankelijke configuratie URL `https://<branch>--<site>--<org>.aem.page/config.json`.
