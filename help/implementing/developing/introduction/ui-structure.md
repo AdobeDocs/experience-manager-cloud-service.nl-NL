@@ -4,9 +4,9 @@ description: De AEM UI heeft verschillende onderliggende beginselen en bestaat u
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd5601661cd59c158802f900677855be76d5893b
+source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Voor meer technische informatie, zie de [ JS documentatiereeks ](https://develop
 
 Zie [ AEM as a Cloud Service op Verenigde Shell ](/help/overview/aem-cloud-service-on-unified-shell.md) als u Verenigde Shell als uw AEM UI gebruikt.
 
-Als u aanpassingen moet maken (of al hebt gemaakt), kunt u deze uitschakelen:
+Als u moet maken, of reeds gemaakt, om het even welke aanpassingen maken, verenigd zal kunnen worden onbruikbaar gemaakt:
 
 * [van de gebruikersinterface](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
