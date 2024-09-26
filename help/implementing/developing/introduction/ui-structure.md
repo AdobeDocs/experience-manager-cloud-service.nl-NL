@@ -4,9 +4,9 @@ description: De AEM UI heeft verschillende onderliggende beginselen en bestaat u
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -171,3 +171,15 @@ Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst b
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
 Voor meer technische informatie, zie de [ JS documentatiereeks ](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) voor de paginaredacteur.
+
+### Unified Shell {#unified-shell}
+
+Zie [ AEM as a Cloud Service op Verenigde Shell ](/help/overview/aem-cloud-service-on-unified-shell.md) als u Verenigde Shell als uw AEM UI gebruikt.
+
+Als u aanpassingen moet maken (of al hebt gemaakt), kunt u deze uitschakelen:
+
+* [van de gebruikersinterface](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
+
+* in uw projectcode door de eigenschap `Boolean` in te stellen:
+
+  `/conf/global/setting/unifiedshell` - `false`

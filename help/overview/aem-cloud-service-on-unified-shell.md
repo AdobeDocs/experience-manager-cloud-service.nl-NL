@@ -4,9 +4,9 @@ description: Leer over de voordelen van AEM as a Cloud Service op Verenigde Shel
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '408'
 ht-degree: 1%
 
 ---
@@ -44,6 +44,10 @@ AEM as a Cloud Service heeft shell verenigd ingeschakeld. Nochtans, als top-head
 
    ![afbeelding](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>De verenigde Shell kan ook van uw projectcode worden onbruikbaar gemaakt. Zie [ Structuur van AEM UI - verenigde Shell ](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
+
 ## Wijzigen in donker thema {#changing-to-dark-theme}
 
 Klik op het profielpictogram om het donkere thema te wijzigen. Deze actie toont popover zoals hieronder getoond. U kunt de knevel gebruiken om aan een donker thema voor Verenigde Shell over te schakelen.
@@ -73,3 +77,4 @@ U kunt het AEM Inbox openen door op het belpictogram in de verenigde shell te kl
 Klik op de knop Inbox in de pop-up zodat u naar de AEM Inbox kunt gaan:
 
 ![afbeelding](/help/overview/assets/unifiedshell6.png)
+
