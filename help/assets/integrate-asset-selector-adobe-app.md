@@ -3,7 +3,7 @@ title: De Selecteur van activa voor  [!DNL Adobe Experience Manager]  als a  [!D
 description: Integreer de selecteur van Activa met diverse Adobe, niet-Adobe, en derdetoepassingen.
 role: Admin, User
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 7590e0240f3f429831aee5d9620ea4fa6f32847b
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Als u deze stappen uitvoert, kunt u Asset Selector gebruiken met uw [!DNL Adobe]
 <html>
 <head>
     <title>Asset Selector</title>
-    <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+    <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
     <script>
         // get the container element in which we want to render the AssetSelector component
         const container = document.getElementById('asset-selector-container');
