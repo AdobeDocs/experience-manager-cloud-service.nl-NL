@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 22f8ffc3e3acec9846a2f868be48195ca62df88b
+source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ In het volgende gedeelte worden de opmerkingen bij de technische release voor de
 
 ## Release 17964 {#release-17964}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 17964 samengevat, die op 25 september 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 17689.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 17964 samengevat, die op 25 september 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 17689. Release 17882 is privé gemaakt vanwege een uitgave.
 
 De activering van de 2024.10.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
