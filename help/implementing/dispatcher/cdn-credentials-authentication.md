@@ -4,9 +4,9 @@ description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe-verstrekte CDN heeft verscheidene eigenschappen en de diensten, waarvan so
 
 * De x-AEM-Edge-Zeer belangrijke HTTP- kopbalwaarde die door Adobe CDN wordt gebruikt om verzoeken te bevestigen die uit een klant-beheerde CDN komen.
 * Het API-token dat wordt gebruikt om bronnen in de CDN-cache leeg te maken.
-* Een lijst met combinaties van gebruikersnaam en wachtwoord waarmee toegang kan worden verkregen tot beperkte inhoud door het verzenden van een Basic Authentication-formulier. [ Deze eigenschap is beschikbaar aan vroege adopters.](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
+* Een lijst met combinaties van gebruikersnaam en wachtwoord waarmee toegang kan worden verkregen tot beperkte inhoud door het verzenden van een Basic Authentication-formulier.
 
 Elk van deze, met inbegrip van de configuratiesyntaxis, wordt beschreven in zijn eigen sectie hieronder.
 
@@ -146,9 +146,6 @@ U kunt [ een leerprogramma ](https://experienceleague.adobe.com/en/docs/experien
 
 ## Basisverificatie {#basic-auth}
 
->[!NOTE]
->Deze functie is nog niet algemeen beschikbaar. E-mail `aemcs-cdn-config-adopter@adobe.com` om deel te nemen aan het programma voor vroegtijdige adoptie.
-
 Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze functie is vooral bedoeld voor eenvoudige gevallen van verificatiegebruik, zoals het beoordelen van inhoud door belanghebbenden uit het bedrijfsleven, in plaats van als een volledige oplossing voor toegangsrechten voor eindgebruikers.
 
 De eindgebruiker zal een basisauthandboek als het volgende ervaren:
@@ -164,7 +161,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: my-basic-authenticator
          type: basic
@@ -185,12 +182,12 @@ Zie [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#comm
 
 Daarnaast bevat de syntaxis:
 
-* een `data` -knooppunt dat een `experimental_authentication` -knooppunt bevat (het experimentele voorvoegsel wordt verwijderd wanneer de functie wordt losgelaten).
-* Onder `experimental_authentication` staan één `authenticators` node en één `rules` node, die beide arrays zijn.
+* een `data` -knooppunt dat een `authentication` -knooppunt bevat.
+* Onder `authentication` staan één `authenticators` node en één `rules` node, die beide arrays zijn.
 * Authenticators: in dit scenario verklaart basisauthenticator, die de volgende structuur heeft:
    * name - a descriptive string
    * type - must be `basic`
-   * een array met referenties, die elk de volgende naam/waarde-paren bevatten en die eindgebruikers kunnen invoeren in het standaarddialoogvenster voor de verificatie:
+   * een array met maximaal 10 referenties, die elk de volgende naam/waarde-paren bevatten, die eindgebruikers kunnen invoeren in het standaard dialoogvenster voor de verificatie:
       * gebruiker - de naam van de gebruiker
       * wachtwoord - zijn waarde moet a [ Cloud Manager geheim-type milieuvariabele ](/help/operations/config-pipeline.md#secret-env-vars) van verwijzingen voorzien, met **allen** geselecteerd als de dienstgebied.
 * Regels: laat u verklaren welke authentificators zouden moeten worden gebruikt, en welke middelen zouden moeten worden beschermd. Elke regel bevat:
@@ -208,7 +205,7 @@ Daarnaast bevat de syntaxis:
 1. Aanvankelijk is alleen `edgeKey1` gedefinieerd, in dit geval wordt `${{CDN_EDGEKEY_052824}}` genoemd. Dit wordt aanbevolen voor de datum waarop het is gemaakt.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -218,7 +215,7 @@ Daarnaast bevat de syntaxis:
 1. Verwijs er in de configuratie naar vanuit `edgeKey2` en implementeer deze.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -229,7 +226,7 @@ Daarnaast bevat de syntaxis:
 1. Als u zeker weet dat de oude Edge-toets niet meer wordt gebruikt, verwijdert u deze door `edgeKey1` uit de configuratie te verwijderen.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -240,7 +237,7 @@ Daarnaast bevat de syntaxis:
 1. Wanneer u gereed bent voor de volgende rotatie, volgt u dezelfde procedure, maar deze keer voegt u `edgeKey1` toe aan de configuratie en verwijst u naar een nieuw Cloud Manager-omgevingsgeheim met de naam `${{CDN_EDGEKEY_031426}}` .
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge

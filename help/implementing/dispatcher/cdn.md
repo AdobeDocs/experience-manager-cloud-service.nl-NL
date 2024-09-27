@@ -4,9 +4,9 @@ description: Leer hoe te om AEM-geleide CDN te gebruiken en hoe te om uw eigen C
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1602'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Lees over [ vormend een zuiveringsAPI teken ](/help/implementing/dispatcher/cdn-
 
 ### Basisverificatie bij de CDN {#basic-auth}
 
-Voor lichte gebruikersverificatiegevallen, waaronder die van zakelijke belanghebbenden die inhoud controleren, moet u de inhoud beschermen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord vereist zijn. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md) en sluit zich aan bij het vroege adopterprogramma.
+Voor lichte gebruikersverificatiegevallen, waaronder die van zakelijke belanghebbenden die inhoud controleren, moet u de inhoud beschermen door een standaarddialoogvenster weer te geven waarin een gebruikersnaam en wachtwoord vereist zijn. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
 ## Door de klant beheerde CDN verwijst naar AEM beheerde CDN {#point-to-point-CDN}
 

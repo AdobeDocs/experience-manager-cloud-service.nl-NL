@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
+source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
@@ -28,33 +28,27 @@ In de volgende sectie worden de opmerkingen bij de functierelease voor de huidig
 
 ## Releasedatum {#release-date}
 
-De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.8.0) is 29 augustus 2024. De volgende release met functies (2024.9.0) is gepland voor 26 september 2024.
+De releasedatum van [!DNL Adobe Experience Manager] als een [!DNL Cloud Service] huidige release met functies (2024.9.0) is 26 september 2024. De volgende release met functies (2024.10.0) is gepland voor 31 oktober 2024.
 
 ## Opmerkingen bij de onderhoudsrelease {#maintenance}
 
 U kunt de recentste nota&#39;s van de onderhoudsversie [ hier ](/help/release-notes/maintenance/latest.md) vinden.
 
-## Video vrijgeven {#release-video}
+<!--  ## Release Video {#release-video}
 
-Bekijk de video Overzicht van de release van augustus 2024 voor een overzicht van de functies die in de release van 2024.8.0 zijn toegevoegd:
+Have a look at the September 2024 Release Overview video for a summary of the features added in the 2024.9.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] als een [!DNL Cloud Service] {#sites}
 
 ### Nieuwe functie in Experience Manager Sites {#new-feature-sites}
 
-**AEM Authoring voor Edge Delivery Services**
+#### Vertaalbeheer {#translation-management}
 
-De bestaande functionaliteit van de Overerving van Plaatsen [ ](/help/sites-cloud/authoring/universal-editor/inheritance.md) wordt nu gesteund met inbegrip van:
-
-* [AEM starten](/help/sites-cloud/authoring/launches/overview.md)
-* [ MSM ](/help/sites-cloud/administering/msm/overview.md) op het paginaniveau
-
-Bovendien worden de volgende functies voor paginabeheer nu ondersteund:
-
-* [ AEM de Markeringen ](/help/sites-cloud/authoring/sites-console/tags.md) kunnen als a [ taxonomie ](/help/edge/wysiwyg-authoring/taxonomy.md) aan Edge Delivery Services worden uitgevoerd.
-* [ Malplaatjes ](/help/edge/wysiwyg-authoring/templates.md) voor Edge Delivery Services komen binnenkort!
+AEM vertaalworkflows en API-acties activeren nu gebeurtenissen om inzicht te krijgen in wijzigingen in de status van vertaaltaken. Gebruikers kunnen zich op deze gebeurtenissen abonneren via de Adobe Developer Console. Zie [ hier ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) voor meer informatie over AEM Vertaalbeheer API.
 
 ### Programma voor vroege adoptie {#sites-early-adopter}
 
@@ -73,27 +67,10 @@ Door AI gegenereerde videobijschriften in Adobe Dynamic Media gebruiken kunstmat
 
 Om vroege toegang tot AI-Gegenereerde titelsteun op uw rekening van Dynamic Media te krijgen, [ creeer en voorlegt een geval van de Steun van de Klant van de Adobe ](/help/assets/dynamic-media/video.md##enable-dash).
 
-### Nieuwe functies in de Assets-weergave {#assets-view-new-features}
+### Nieuwe functies in Asset Selector {#asset-selector-new-features}
 
-**bijgewerkte Generatie van het Beeld van de Adobe Firefly**
-
-Assets as a Cloud Service gebruikt nu de nieuwste widget van Firefly waarmee u afbeeldingen in verschillende stijlen kunt genereren met Adobe Firefly. Door zijn stijl, samenstelling, dimensies, en meer te bepalen, gebruikend de ingebouwde redacteur van de Firefly, kunt u de activa snel tot stand brengen en opslaan u direct binnen de bewaarplaats van AEM Assets voor onmiddellijk gebruik nodig hebt.
-
-![ de afbeeldingsgeneratie van de Adobe Firefly ](/help/assets/assets/bugatti-type-57.png)
-
-**PSB- dossiersteun**
-
-Assets as a Cloud Service biedt nu naast de bestaande ondersteuning voor PSD-bestanden ook ondersteuning voor grote documenten (PSB-bestanden) van Photoshop.
-
-### Nieuwe verbeteringen in Content Hub {#content-hub-new-enhancements}
-
-* Betere verwerking van lange bestandsnamen, eenvoudige uitbreiding van de volledige naam via knopinfo.
-* Verbeterde miniaturen om de hoogte-breedteverhouding van de inhoud beter aan te passen en om een groter inhoudsgebied te bedekken.
-* Aangepaste miniatuurervaring van AEM ondersteund in de inhoudshub.
-* Verbeteringen in het zoeken naar kleuren.
-* Verbeteringen in configuraties besparen ervaring.
-* Verbeterde informatiepagina van verzamelingen waarin de naam van de maker wordt weergegeven.
-
+Asset Selector biedt nu ondersteuning voor het bladeren in verzamelingen naar het gewenste element.
+![ de selecteursinzamelingen van Activa ](/help/assets/assets/collections-rail-modal-view.png)
 
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
@@ -132,29 +109,49 @@ De beschikbare Generative AI-mogelijkheden zijn:
 >
 > Wil je deelnemen aan het programma voor vroege toegang voor Forms-innovatie? Verzend een e-mail van uw officieel adres naar [ aem-forms-ea@adobe.com ](mailto:aem-forms-ea@adobe.com) met de lijst van mogelijkheden die u in geinteresseerd bent.
 
+## CIF invoegtoepassing {#cloud-services-cif}
+
+### Verbeteringen {#improvements-fixes-cif}
+
+* Categoriebeperking aanpasbaar maken.
+
+### Bugfixes {#bug-fixes-cif}
+
+* Commerce-velden zijn niet correct geïntegreerd met de Assets Metadata Schema-editor.
+* Probleem met multifield Carrouselproducten voor slepen en neerzetten.
+* Probleem met multiveld van categorie Carrousel voor slepen en neerzetten.
+* Klik niet op de menu&#39;s in de pagina Pagina-informatie op de pagina Categorie en producteditor.
+* Volgnummer is niet zichtbaar op de pagina voor bevestiging van bestelling.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
 
-### Inhoudsgerelateerde programma&#39;s voor vroege adoptie {#foundation-early-adopter}
+### Edge Side Includes (ESI) voor het laden van dynamische inhoud {#esi}
 
-E-mail **<aemcs-cdn-config-adopter@adobe.com>** waarin wordt aangegeven in welke van de onderstaande programma&#39;s voor vroege adoptie u geïnteresseerd bent.
+De Adobe beheerde CDN steunt nu [ Kant van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. Dit onderdeel wordt geleidelijk ingevoerd.
 
-#### Basisverificatie bij de CDN (programma voor vroege adopters) {#basicauth-cdn}
+### Basisverificatie bij de CDN {#basicauth-cdn}
 
-Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden in beheerd door een configuratiedossier in git dat via de Pijpleiding van de Configuratie, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Protect bepaalde inhoudsbronnen door een standaarddialoogvenster weer te geven waarvoor een gebruikersnaam en wachtwoord vereist zijn. Deze eigenschap richt hoofdzakelijk lichte kwesties van het authentificatiegebruik, zoals bedrijfsbelanghebbenden die inhoud herzien, eerder dan het dienen als een uitvoerige oplossing voor de rechten van de eindgebruikertoegang. De lijst van gebruikersbenaming en wachtwoorden wordt beheerd door een configuratiedossier in git dat via Pijpleiding Config, met een verwijzing naar geheim-type de milieuvariabelen van Cloud Manager wordt opgesteld. [ leer meer ](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-#### Client-Side Redirects (Early-adopter-programma) {#client-side-redirects-early-adopter}
+### Omleiding op de client {#client-side-redirects}
 
-Vorm 301/302 cliënt-zij richt in broncontrole, en stel aan CDN op. [ leer meer ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Merk op dat er verscheidene andere eigenschappen reeds beschikbaar met betrekking tot [ CDN configuratie ](/help/implementing/dispatcher/cdn-configuring-traffic.md) zijn, met inbegrip van verzoek en reactietransformaties, en verpletterend verkeer aan off-AEM plaatsen.
+Verklaar [ browser richt ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in een gebied van het configuratiedossier opnieuw dat aan wordt opgesteld en bij CDN geëvalueerd. Dit kan nuttig zijn voor scenario&#39;s zoals het schrappen van pagtes, veranderde plaatsstructuur, en optimalisering SEO.
 
-#### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (vroege adopter-programma) {#apache-rewritemaps-early-adopter}
+### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
 
-Net als AEM 6.5 voert Apache/dispatcher opnieuw schrijfkaarten in die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en laadt ze, zonder dat een pijpleiding op een webniveau hoeft te worden uitgevoerd. Deze benadering laat bedrijfsgebruikers redirects verklaren gebruikend een spreadsheet of een UI, zoals ACS Commons Redirect de Manager van de Kaart of een douanetoepassing. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+Probeer uit gevernieuwde [ AEM Developer Console ](/help/implementing/developing/introduction/aem-developer-console.md), die een meer interactieve ervaring voor het zuiveren van code in de milieu&#39;s van de Wolk aanbiedt.
 
-#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Introducter Program) {#esi-early-adopter}
+Iedereen kan tot de openbare bèta toegang hebben door de *Nieuwe Beschikbare Console* knoop van de Console in huidige AEM Developer Console te klikken. Adobe is verheugd over feedback, die u via e-mail kunt verzenden naar **<aemcs-new-devconsole-ui-beta@adobe.com>** .
 
-De Adobe beheerde CDN steunt nu [ Kant van Edge omvat (ESI) ](/help/implementing/dispatcher/edge-side-includes.md), een prijsverhogingstaal voor de dynamische assemblage van de Webinhoud van het randniveau. Door ESI fragmenten op te nemen, kunt u de algemene pagina van de HTML bij CDN met hogere TTLs in het voorgeheugen plaatsen, terwijl vaker het halen van van oorsprong die kleinere secties die hogere tijdigheidsupdates (lagere TTLs) vereisen. <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+![ het Scherm van Bundles OSGi in AEM Developer Console ](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
+### Zakelijke gebruikers kunnen omleidingen buiten Git declareren (vroege adopter-programma) {#apache-rewritemaps-early-adopter}
+
+Net als bij AEM 6.5 worden door Apache/dispatcher ingegrepen opnieuw kaarten geschreven die op een specifieke locatie in de publicatieopslagplaats zijn geplaatst, en worden deze geladen zonder dat een pijpleiding op de weblaag hoeft te worden uitgevoerd. Deze benadering laat bedrijfsgebruikers redirects verklaren gebruikend een spreadsheet of een UI, zoals ACS Commons Redirect de Manager van de Kaart of een douanetoepassing. U kunt deelnemen aan het programma voor vroege adoptie door een e-mail te verzenden **<aemcs-cdn-config-adopter@adobe.com>** .
+
+### Config Pipeline voor RDEs (Vroege Programma van de Aannemer) {#config-pipeline-rdes-early-adopter}
+
+De [ Pijpleiding Config ](/help/operations/config-pipeline.md) wordt gebruikt om uw dossierconfiguraties, met inbegrip van CDN opties (de regels van de verkeersfilter, verzoek/reactietransformaties, enz.) op te stellen. U kunt deelnemen aan het programma voor vroege adoptie door **<aemcs-cdn-config-adopter@adobe.com>** te e-mailen om dezelfde configuraties te implementeren in RDE&#39;s (Rapid Development Environment), die een CLI gebruiken.
 
 ## [!DNL Experience Manager] Hulplijnen {#guides}
 
