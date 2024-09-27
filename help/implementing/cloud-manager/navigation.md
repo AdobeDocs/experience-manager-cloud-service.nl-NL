@@ -5,7 +5,7 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
+source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
 workflow-type: tm+mt
 source-wordcount: '1677'
 ht-degree: 0%
@@ -145,8 +145,8 @@ Het ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_22/Smoc
 
 * Navigeer aan een bepaald ![ pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [ Milieu ](/help/implementing/cloud-manager/manage-environments.md) van het programma
 * Open het ![ pictogram van het Overzicht van het Programma ](/help/implementing/cloud-manager/assets/program-overview.svg) [ Overzicht van het Programma ](#program-overview)
-* ![ geef pictogram ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) uit [ geef het programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing) uit
-* ![ het pictogram van de Schrapping ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [ schrap een zandbakprogramma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![ geef pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) uit [ geef het programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing) uit
+* ![ het pictogram van de Schrapping ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [ schrap een zandbakprogramma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -183,9 +183,9 @@ De toolbars voor het programmaoverzicht zijn gelijkaardig aan die toolbars van d
 
 #### Cloud Manager header {#cloud-manager-header-2}
 
-In de linkerbovenhoek van de pagina bevindt zich de Adobe Cloud Manager-koptekst. U kunt ![ het menupictogram van de Zijde ](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klikken om het zijmenu van lusjes aan andere gebieden van de software te tonen of te verbergen.
+In de linkerbovenhoek van de pagina bevindt zich de Adobe Cloud Manager-koptekst. U kunt ![ het menupictogram van de Zijde ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) klikken om het zijmenu van lusjes aan andere gebieden van de software te tonen of te verbergen.
 
-![ het hamburgermenu van Cloud Manager ](assets/cloud-manager-hamburger.png)
+![ Cloud Manager zijmenu ](assets/cloud-manager-hamburger.png)
 
 Klik op Adobe Cloud Manager om terug te keren naar Home.
 

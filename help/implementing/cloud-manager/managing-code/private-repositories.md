@@ -1,19 +1,31 @@
 ---
-title: Persoonlijke opslagplaatsen toevoegen in Cloud Manager
+title: Particuliere GitHub-opslagplaatsen toevoegen in Cloud Manager
 description: Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarplaatsen te werken GitHub.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
-# Persoonlijke opslagplaatsen toevoegen in Cloud Manager {#private-repositories}
+# Persoonlijke opslagruimten toevoegen in Cloud Manager {#private-repositories}
 
-Door Cloud Manager te vormen om met uw eigen privé bewaarplaatsen te werken GitHub, kunt u uw code direct binnen uw bewaarplaats GitHub door Cloud Manager bevestigen, die de behoefte elimineert om uw code met de bewaarplaats van de Adobe constant te synchroniseren.
+Door vestiging Cloud Manager om met uw privé bewaarplaatsen te integreren GitHub, kunt u uw code direct binnen GitHub bevestigen gebruikend Cloud Manager. Deze configuratie verwijdert de vereiste om uw code regelmatig te synchroniseren met de opslagplaats van de Adobe.
+
+<!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
+
+* **Direct Integration**: With this setup, you can directly link your private GitHub repositories to Cloud Manager, allowing for seamless code validation, deployment, and CI/CD (Continuous Integration/Continuous Deployment) pipelines without needing to maintain a separate sync process with Adobe's default Git repository.
+
+* **Customization and Autonomy**: Companies often prefer managing their own source code repositories for security, control, and integration purposes. "Build your own GitHub" allows organizations to maintain their internal development processes while leveraging the full functionality of Cloud Manager for building, testing, and deploying AEM (Adobe Experience Manager) applications.
+
+* **Simplified Workflow**: It reduces the overhead of synchronizing code between multiple repositories by allowing Cloud Manager to access the organization's private repository directly, making the development cycle faster and more efficient.
+
+* **CI/CD Pipelines**: Teams can still benefit from Adobe Cloud Manager's automated build, test, and deployment processes, as the integration allows the CI/CD pipelines to pull code from the organization's own GitHub repository.
+
+In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to manage their own GitHub repositories while still using the robust deployment and validation capabilities of Cloud Manager. -->
 
 >[!NOTE]
 >
@@ -21,92 +33,102 @@ Door Cloud Manager te vormen om met uw eigen privé bewaarplaatsen te werken Git
 
 ## Configuratie {#configuration}
 
-De configuratie bestaat uit twee hoofdstappen:
+De configuratie van een privéopslagplaats in Cloud Manager bestaat uit twee stappen:
 
-1. [Opslagplaats toevoegen](#add-repo)
-1. [Eigendom van privéopslagplaats valideren](#validate-ownership)
+1. [ voeg een privé bewaarplaats ](#add-repo) aan een geselecteerd programma toe.
+1. Dan, [ bevestigt eigendom van de privé bewaarplaats ](#validate-ownership).
 
-### Opslagplaats toevoegen {#add-repo}
+### Een privéopslagruimte toevoegen aan een programma {#add-repo}
 
-1. In Cloud Manager, van de **pagina van het Overzicht van het Programma**, selecteer het **lusje van Bewaarplaatsen** om aan de **pagina van Bewaarplaatsen** te schakelen en **te klikken voeg Bewaarplaats** toe.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. In **voeg de dialoog van de Bewaarplaats** toe, selecteer **Privé Bewaarplaats** als bewaarplaatstype.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma waaraan u een privé bewaarplaats van het Git wilt verbinden.
 
-1. Geef de gegevens van uw opslagplaats op
+1. In het zijmenu, onder **Diensten**, uitgezochte ![ pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Bewaarplaatsen**.
 
-   * **Naam van de Bewaarplaats** - een expressieve naam
-   * **Repository URL** - URL van de bewaarplaats, die in `.git` moet beëindigen
-   * **Beschrijving** (facultatief) - een langere beschrijving van de bewaarplaats zonodig
+   ![ de pagina van Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
+
+1. Vlak de hoger-juiste hoek van de **pagina van Respositories**, klik **toevoegen Bewaarplaats**.
+
+1. In **voeg de dialoogdoos van de Bewaarplaats** toe, uitgezochte **Privé Bewaarplaats** als bewaarplaatstype.
 
    ![ voeg eigen bewaarplaats ](/help/implementing/cloud-manager/assets/repos/add-own-github.png) toe
 
+1. Geef in elk veld de volgende gegevens over uw opslagplaats op:
+
+   | Veld | Beschrijving |
+   | --- | --- |
+   | Naam opslagplaats | Een expressieve naam voor uw nieuwe opslagruimte. |
+   | URL opslagplaats | De URL van de privéopslagplaats, die moet eindigen in `.git`.<br> bijvoorbeeld, *`https://github.com/org-name/repo-name.git`* (De weg URL is slechts voor illustratiedoeleinden). |
+   | Beschrijving (optioneel) | Een gedetailleerde beschrijving van de gegevensopslagruimte. |
+
 1. Selecteer **sparen**.
+Nu kunt u [ eigendom van de privé bewaarplaats ](#validate-ownership) bevestigen.
 
 >[!TIP]
 >
 >Voor details over het beheren van bewaarplaatsen in Cloud Manager, zie [ Bewaarplaatsen van Cloud Manager ](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
-### Eigendom van privéopslagplaats valideren {#validate-ownership}
+### Eigendom van de privéopslagplaats valideren {#validate-ownership}
 
 Cloud Manager weet nu van uw bewaarplaats GitHub, maar het heeft nog toegang tot het nodig. Om toegang te verlenen, moet u de Adobe toepassing GitHub installeren en verifiëren dat u de gespecificeerde bewaarplaats bezit.
 
-1. Na het toevoegen van uw eigen bewaarplaats, opent de **dialoog van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé {.**
+**om eigendom van de privé bewaarplaats te bevestigen:**
+
+1. Na het toevoegen van uw eigen bewaarplaats, volg de resterende stappen in het **Privé de dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats van de Bewaarplaats**.
 
    ![ Persoonlijke Bevestiging van de Eigendom van de Bewaarplaats van de Bewaarplaats ](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
-1. Cloud Manager gebruikt een GitHub-app om veilig te communiceren met uw opslagplaats.
-   * Een eigenaar van uw GitHub-organisatie moet de toepassing in `https://github.com/apps/cloud-manager-for-aem` installeren en toegang verlenen tot de opslagplaats.
-   * Zie de documentatie van GitHub voor details over hoe dit wordt gedaan.
+   |  | Beschrijving |
+   | --- | --- |
+   | **Stap 1: App GitHub** | Cloud Manager gebruikt een GitHub-app om veilig te communiceren met uw persoonlijke opslagplaats.<br>・ Een eigenaar van uw GitHub-organisatie moet de toepassing in `https://github.com/apps/cloud-manager-for-aem` installeren en toegang verlenen tot de opslagplaats.<br>・ Voor details bij het installeren van en het verlenen van toegang wordt gedaan, zie de documentatie van GitHub. |
+   | **Stap 2: Geheime Dossier** | Om de beveiliging te verbeteren, moet u een geheim bestand maken in de standaardvertakking van uw opslagplaats.<br>・ Klik **produceren**, dan klik **bevestigen**. Cloud Manager produceert de inhoud van het privé dossier in het **Geheime dossier inhoud** tekstgebied.<br>・ Klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) om de inhoud van dat gebied te kopiëren. De inhoud van het geheime bestand wordt slechts eenmaal weergegeven. Als u de inhoud niet kopieert voordat u dit dialoogvenster sluit, moet u het geheim opnieuw genereren. |
 
-1. Om de beveiliging te verbeteren, moet u een geheim bestand maken in de standaardvertakking van uw opslagplaats. Selecteer **produceren**.
+1. Creeer een nieuw dossier in de standaardtak van uw geroepen reactie GitHub:
 
-1. Bevestig de generatie van het geheime dossier door te tikken of **te klikken bevestigt**.
+   `.well-known/adobe/cloud-manager-challenge`
 
-   ![ bevestigt geheime generatie ](/help/implementing/cloud-manager/assets/repos/confirm-generation.png)
+1. Plak de geheime bestandsinhoud in het nieuwe bestand dat u zojuist hebt gemaakt en sla het bestand op.
 
-1. Terug in het **venster van de Bevestiging van de Eigenaar van de Bewaarplaats van de 1} Privé van de Bewaarplaats**, heeft Cloud Manager de inhoud van het privé dossier in het **Geheime gebied van de dossierinhoud** geproduceerd. Kopieer de inhoud van dat veld.
+   Als de app is geïnstalleerd en het geheime bestand in de opslagplaats aanwezig is, gaat u verder met de stap.
 
-   * De inhoud van het geheime bestand wordt slechts eenmaal weergegeven. Als u de inhoud niet kopieert voordat u dit venster sluit, moet u het geheim opnieuw genereren.
+1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, klik** Valideren **.**
 
-   ![ het geheime dossierinhoud van het Exemplaar ](/help/implementing/cloud-manager/assets/repos/new-secret.png)
+De app kan worden geïnstalleerd en een geheim bestand kan in elke willekeurige volgorde worden gemaakt. Beide stappen moeten echter zijn voltooid voordat u de validatie kunt uitvoeren.
 
-1. Maak een nieuw bestand in de standaardvertakking van uw GitHub-repo met de naam `.well-known/adobe/cloud-manager-challenge` en plak de geheime bestandsinhoud in dat bestand en sla dit op.
-
-1. Zodra app wordt geïnstalleerd en het geheime dossier in de bewaarplaats bestaat, kunt u **selecteren bevestigt** in de **Privé dialoog van de Bevestiging van de Eigendom van de Bewaarplaats van de Bewaarplaats**.
-
-De app kan worden geïnstalleerd en een geheim bestand kan in elke willekeurige volgorde worden gemaakt. Beide stappen moeten echter worden uitgevoerd voordat u de validatie kunt uitvoeren.
-
-Tot de validatie wordt de repository weergegeven met een rood pictogram dat aangeeft dat het nog niet is gevalideerd en nog niet kan worden gebruikt.
+Tot de validatie wordt de repository weergegeven met een rood pictogram dat aangeeft dat deze nog niet is gevalideerd en nog niet kan worden gebruikt.
 
 ![ Unvalidate repo ](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-De **kolom van het Type** {identificeert gemakkelijk Adobe-verstrekte bewaarplaatsen (**Adobe**) en uw eigen bewaarplaatsen GitHub (**GitHub**).
+De **kolom van het Type** {in de lijst op de **pagina van Bewaarplaatsen** identificeert Adobe-verstrekte bewaarplaatsen (**Adobe**) en uw eigen privé bewaarplaatsen (**GitHub**).
 
-Als u aan de bewaarplaats op een recentere datum moet terugkeren om de bevestiging te voltooien, op de **pagina van Bewaarplaatsen**, selecteer de ellipsis knoop in de rij die de bewaarplaats vertegenwoordigt GitHub u enkel toevoegde en **Bevestiging van de Eigendom** van het drop-down menu selecteert.
+Als u aan de bewaarplaats moet terugkeren later om de bevestiging, op de **pagina van Bewaarplaatsen** te voltooien, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de rij die de bewaarplaats vertegenwoordigt GitHub u enkel toevoegde. In de drop-down lijst, uitgezochte **Bevestiging van de Eigendom**.
 
-## Persoonlijke opslagplaatsen gebruiken met Cloud Manager {#using}
+## Persoonlijke opslagruimten gebruiken met Cloud Manager {#using}
 
-Nadat de bewaarplaats GitHub in Cloud Manager wordt bevestigd wordt de integratie voltooid en u kunt de bewaarplaats met Cloud Manager gebruiken.
+Nadat de bewaarplaats GitHub in Cloud Manager wordt bevestigd, is de integratie volledig. U kunt de repository gebruiken met Cloud Manager.
 
-1. Wanneer u een trekkingsverzoek creeert, zal een controle GitHub automatisch beginnen.
+**om een privé bewaarplaats met Cloud Manager te gebruiken:**
+
+1. Wanneer u een trekkingsverzoek creeert, begint een controle GitHub automatisch.
 
    ![ controles GitHub ](/help/implementing/cloud-manager/assets/repos/github-checks.png)
 
-1. Voor elk trektrekkingsverzoek, zal de a [ volledige pijpleiding van de kwaliteit van de stapelcode ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) automatisch worden gecreeerd. Deze pijpleiding is begonnen bij elke update van het trekkingsverzoek.
+1. Voor elk trekkingsverzoek, wordt de a [ volledige pijpleiding van de kwaliteit van de stapelcode ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) automatisch gecreeerd. Deze pijpleiding is begonnen bij elke update van het trekkingsverzoek.
 
-1. De controle GitHub blijft in een lopende staat tot de controles van de codekwaliteit volledig. De resultaten van de codekwaliteit zullen dan aan de controle worden verspreid GitHub.
+1. De controle GitHub blijft in een lopende staat tot de controle van de codekwaliteit volledig is. De resultaten van de codekwaliteit worden dan verspreid aan de controle GitHub.
 
    ![ GitHub de controles van de codekwaliteit ](/help/implementing/cloud-manager/assets/repos/github-code-quality.png)
 
-Wanneer het trekkingsverzoek wordt gesloten of samengevoegd, wordt de volledige pijpleiding van de kwaliteit van de stapelcode gecreeerd automatisch geschrapt.
+Wanneer het trekkingsverzoek wordt samengevoegd of gesloten, wordt de volledige pijpleiding van de kwaliteit van de stapelcode gecreeerd automatisch geschrapt.
 
 >[!TIP]
 >
->Zie de Annotaties van de Controle van het document [ GitHub ](github-annotations.md) voor details over de informatie die via GitHub wordt verstrekt wanneer de controles van het trekkingsverzoek in werking worden gesteld.
+>Zie [ Annotaties van de Controle GitHub ](github-annotations.md) voor details over de informatie die als GitHub wordt verstrekt wanneer de controles van het trekkingsverzoek in werking worden gesteld.
 
 >[!TIP]
 >
->U kunt de pijpleidingen controleren die automatisch worden gecreeerd om elk trekkingsverzoek aan een privé bewaarplaats te bevestigen. Gelieve te zien de Configuratie van de Controle van het document [ GitHub voor Privé Bewaarplaatsen ](github-check-config.md) voor meer informatie.
+>U kunt de pijpleidingen controleren die automatisch worden gecreeerd om elk trekkingsverzoek aan een privé bewaarplaats te bevestigen. Zie {de Configuratie van de Controle van 0} GitHub voor Privé Opslagplaatsen ](github-check-config.md) voor meer informatie.[
 
 ## Particuliere opslagplaatsen koppelen aan pijpleidingen {#pipelines}
 
@@ -121,9 +143,9 @@ Gevalideerde privé bewaarplaatsen kunnen met [ volledig-stapel en frontend pijp
 Bij het gebruik van persoonlijke opslagruimten met Cloud Manager gelden bepaalde beperkingen.
 
 * U kunt niet de bevestiging van het trekkingsverzoek pauzeren gebruikend de controle GitHub van Cloud Manager.
-   * Als de bewaarplaats GitHub in Cloud Manager wordt bevestigd, zal Cloud Manager altijd proberen om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.
-* Als de Adobe GitHub app wordt verwijderd uit uw organisatie GitHb, zal dit de trekrekverzoekbevestigingseigenschap voor alle bewaarplaatsen verwijderen.
+Als de bewaarplaats GitHub in Cloud Manager wordt bevestigd, probeert Cloud Manager altijd om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.
+* Als de Adobe GitHub app van uw organisatie GitHub wordt verwijderd, verwijdert het de trekrekverzoekbevestigingseigenschap voor alle bewaarplaatsen.
 * De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen.
-* Er wordt geen tag git aangemaakt en geduwd wanneer particuliere opslagruimten worden gebruikt voor de productie van volledige stapelleidingen.
+* Er wordt geen tag Git gemaakt en geduwd wanneer u privéopslagruimten gebruikt bij de productie van volledige stapelleidingen.
 * De pijpleidingen die privé bewaarplaatsen gebruiken en de aanzetmachine op-verbind zijn niet automatisch begonnen wanneer nieuw verbindt in de geselecteerde tak wordt geduwd.
 * [ functionaliteit van het Hergebruik van Artefact ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) is niet op privé bewaarplaatsen van toepassing.

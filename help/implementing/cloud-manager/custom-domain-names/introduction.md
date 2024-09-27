@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -36,7 +36,7 @@ U kunt een domeinnaam kopen van een registrar van domeinnamen, een bedrijf of or
 >
 >Cloud Manager is geen registrar voor domeinnamen en biedt geen DNS-services.
 
-## De domeinnamen van de douane en brengen uw eigen CDNs {#byo-cdn}
+## Aangepaste domeinnamen en breng uw eigen CDN&#39;s {#byo-cdn}
 
 AEM as a Cloud Service biedt de ingebouwde dienst CDN (Content Delivery Network) aan, maar laat u ook BYO (breng Uw Eigen) CDN aan gebruik met AEM. Aangepaste domeinen kunnen worden geïnstalleerd in de CDN met AEM beheer of in een CDN die u beheert.
 
