@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
+source-git-commit: 708bf370c2843dd8e2937de8fbf77843e661cf02
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2220'
 ht-degree: 0%
 
 ---
@@ -271,11 +271,36 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>11-04-2022</td>
     <td>30-08-2024</td>
   </tr>
+  <tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
     <td>Gebruik van deze API wordt niet ondersteund in AEM as a Cloud Service.</td>
     <td>17-05-2024</td>
     <td>30-06-2024</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>Gebruik in plaats hiervan org.apache.sling.xss.</td>
+    <td>12-12-2023</td>
+    <td>30-06-2024</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>Merk op dat servlet in com.adobe.granite.xss.impl.servlets niet is afgekeurd</td>
+    <td>12-12-2023</td>
+    <td>30-06-2024</td>
   </tr>  
+  <tr>
+    <td>com.drew.*</td>
+    <td>Metagegevens uit afbeeldingen en video's worden geëxtraheerd via Asset compute in de Cloud Service of via Apache POI of Apache Tika.</td>
+    <td>17-09-2024</td>
+    <td>17-12-2024</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
+    <td></td>
+    <td>23-09-2024</td>
+    <td>23-12-2024</td>
+  </tr>       
 </tbody>
 </table>
 </details>
