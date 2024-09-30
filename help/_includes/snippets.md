@@ -1,7 +1,7 @@
 ---
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -155,6 +155,22 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >
 >Als u gebruikt-of van plan bent te gebruiken-front-end pijpleiding om plaatsen te ontwikkelen, moet de Lijst van gewenste personen van Cloud Manager IP vooraf worden toegevoegd.
 >Zie [ Gebruik van de Lijst van gewenste personen van Cloud Manager IP met de front-end pijpleiding ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+
+## IP Lijsten van gewenste personen en de Universele Redacteur {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[ de Universele Redacteur ](/help/implementing/universal-editor/introduction.md) is niet compatibel met IP lijsten van gewenste personen.
+>
+>Als u wenst om de Universele Redacteur te gebruiken, IP moeten de lijsten van gewenste personen niet worden toegelaten.
+
+## Universal Editor en IP-Lijsten van gewenste personen {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>De Universele Redacteur is niet compatibel met [ IP lijsten van gewenste personen.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>
+>Als u wenst om de Universele Redacteur te gebruiken, IP moeten de lijsten van gewenste personen niet worden toegelaten.
 
 ## Werken met Dynamic Media {#work-with-dynamic-media}
 

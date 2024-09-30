@@ -1,12 +1,12 @@
 ---
 title: Introductie van Universal Editor
-description: Leer hoe de Universele Redacteur wat-u-ziet-is-wat-u-krijgt (WYSIWYG) het uitgeven van om het even welke headless en belangrijke ervaring toelaat. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
+description: Leer hoe u met de Universal Editor het bewerken van 'what-you-see-is-what-you-get' (WYSIWYG) mogelijk maakt voor een headless- en headful-ervaring. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen te leveren, hun inhoudssnelheid te verhogen en hoe een geavanceerde ontwikkelaarservaring biedt.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Introductie van Universal Editor {#introduction}
 
-De Universal Editor is een veelzijdige visuele editor die deel uitmaakt van Adobe Experience Manager Sites. Auteurs kunnen hiermee WYSIWYG (what-you-see-is-what-you-get)-bewerkingen uitvoeren van elke headless- of headful-ervaring. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen en hoe het ongeëvenaarde vrijheid voor ontwikkelaars biedt.
+De Universal Editor is een veelzijdige visuele editor die deel uitmaakt van Adobe Experience Manager Sites. Auteurs kunnen hiermee &#39;what-you-see-is-what-you-get&#39; (WYSIWYG)-bewerkingen uitvoeren van elke headless- of headful-ervaring. Begrijp hoe het inhoudsauteurs kan helpen uitzonderlijke ervaringen en hoe het ongeëvenaarde vrijheid voor ontwikkelaars biedt.
 
 ## Achtergrond {#background}
 
@@ -91,6 +91,8 @@ Houd rekening met de volgende beperkingen wanneer u de Universal Editor verkent 
 * AEM as a Cloud Service-release `2023.8.13099` of hoger is vereist.
 * Inhoudsauteurs moeten hun eigen individuele Experience Cloud-accounts hebben.
 * Chrome en Edge zijn de ondersteunde browsers
+
+{{ue-ip-allow-lists}}
 
 ## Volgende stappen {#next-steps}
 
