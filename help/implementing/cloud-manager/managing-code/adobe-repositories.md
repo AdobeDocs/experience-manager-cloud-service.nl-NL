@@ -1,37 +1,46 @@
 ---
-title: Opslagplaatsen voor Adoben toevoegen in Cloud Manager
-description: Leer hoe u opslagruimten met beheerde Adoben maakt in Cloud Manager.
+title: Een opslagplaats voor Adoben toevoegen in Cloud Manager
+description: Leer hoe u een opslagplaats met beheerde Adobe in Cloud Manager toevoegt.
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
-# Opslagplaatsen voor Adoben toevoegen in Cloud Manager {#adobe-repositories}
+# Een opslagplaats voor Adoben toevoegen in Cloud Manager {#adobe-repositories}
 
-Leer hoe u opslagruimten met beheerde Adoben maakt in Cloud Manager.
+Leer hoe u een opslagplaats met beheerde Adobe in Cloud Manager toevoegt.
 
-## Een door Adoben beheerde opslagplaats toevoegen {#add-adobe-repository}
+De **pagina van Bewaarplaatsen** maakt het gemakkelijk om extra Adobe-geleide bewaarplaatsen aan een geselecteerd programma toe te voegen.
 
-Het **venster van Bewaarplaatsen** maakt het gemakkelijk om extra Adobe-geleide bewaarplaatsen voor uw programma toe te voegen.
+**om een bewaarplaats van de Adobe in Cloud Manager toe te voegen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma waaraan u een Adobe-beheerde bewaarplaats wilt toevoegen.
 
-1. Van de **pagina van het Overzicht van het Programma**, selecteer het **lusje van Bewaarplaatsen** om aan de **pagina van Bewaarplaatsen** over te schakelen.
+1. Van de **pagina van het Overzicht van het Programma**, in het zijmenu, klik ![ het pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Bewaarplaatsen** tabel. om aan de **pagina van Bewaarplaatsen** over te schakelen.
 
-1. Klik **toevoegen Bewaarplaats** in de toolbar.
+1. Op de **pagina van Bewaarplaatsen**, dichtbij het hoger-recht, klik **Add Bewaarplaats**.
 
    ![ toevoegen de knoop van de gegevensopslagplaats ](assets/add-repository.png)
 
-1. Ga de naam en de beschrijving in zoals gevraagd en klik **sparen**.
+1. In **voeg de dialoogdoos van de Bewaarplaats** toe, zorg ervoor dat **Repository van de Adobe** als bewaarplaatstype wordt geselecteerd.
+
+1. Voer in de desbetreffende tekstvelden het volgende in:
+
+   * **Naam van de Bewaarplaats** - een expressieve naam voor uw nieuwe bewaarplaats.
+   * **Bewaarplaats URL voorproef** - u te hoeven niet om een weg in te gaan URL of de bestaande weg uit te geven omdat de infrastructuur reeds op zijn plaats is en volledig geïntegreerd en door Adobe wordt geleid.
+   * **Beschrijving (facultatief)** - een gedetailleerde beschrijving van de bewaarplaats.
 
    ![ voeg de dialoog van de Bewaarplaats ](assets/add-adobe-repository.png) toe
 
-Wanneer de tovenaar sluit, wordt uw nieuwe bewaarplaats getoond in de lijst in het **venster van Bewaarplaatsen**. U kunt a [ CI/CD pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) met het nu associëren of het binnen het [**venster van Bewaarplaatsen** ](managing-repositories.md) beheren.
+1. Klik **sparen**.
+Uw nieuwe bewaarplaats wordt getoond in de lijst op de **pagina van Bewaarplaatsen**.
+
+U kunt a [ CI/CD pijpleiding ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) met het nu associëren of het binnen de [**Opslagplaatsen** pagina ](managing-repositories.md) beheren.
 
 >[!TIP]
 >

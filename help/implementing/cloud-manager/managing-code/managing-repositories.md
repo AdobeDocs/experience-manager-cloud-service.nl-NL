@@ -1,109 +1,99 @@
 ---
 title: Opslagplaatsen in Cloud Manager beheren
-description: Leer hoe u uw git-opslagruimten in Cloud Manager maakt, weergeeft en verwijdert.
+description: Leer hoe u GIT-opslagruimten in Cloud Manager maakt, weergeeft en verwijdert.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 
-# Opslagplaatsen in Cloud Manager beheren {#managing-repos}
+# repositories beheren in Cloud Manager {#managing-repos}
 
-Leer hoe u uw git-opslagruimten in Cloud Manager maakt, weergeeft en verwijdert.
+Leer hoe u uw git-opslagruimten in Cloud Manager kunt weergeven, toevoegen en verwijderen.
 
-## Overzicht {#overview}
+## Over opslagruimten in Cloud Manager {#overview}
 
-Opslagplaatsen worden gebruikt om de code van uw project op te slaan en te beheren met behulp van Git. Voor elk programma dat u in Cloud Manager maakt, is een opslagplaats met beheerde Adobe gemaakt.
+Opslagplaatsen in Cloud Manager worden gebruikt om de projectcode op te slaan en te beheren met Git. Voor elk *programma* u toevoegt, wordt een Adobe-beheerde bewaarplaats automatisch gecreeerd.
 
-U kunt desgewenst extra opslagruimten voor Adobe-beheer maken en ook uw eigen persoonlijke opslagruimten toevoegen. Alle bewaarplaatsen verbonden aan uw programma kunnen in het **venster van Bewaarplaatsen** worden bekeken.
+Daarnaast kunt u meer opslagruimten met beheerde Adobe maken of uw eigen persoonlijke opslagruimten toevoegen. Alle bewaarplaatsen verbonden aan uw programma kunnen op de **pagina van Bewaarplaatsen** worden bekeken.
 
-In Cloud Manager gemaakte opslagplaatsen kunnen ook worden geselecteerd wanneer u pijpleidingen toevoegt of bewerkt. Zie [ CI-CD Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) om meer te leren.
+In Cloud Manager gemaakte opslagplaatsen kunnen ook worden geselecteerd bij het toevoegen of bewerken van pijpleidingen. Voor meer informatie bij het vormen van pijpleidingen, zie [ CI-CD Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
-Er is één enkele primaire bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [ de steun van de it submodule, ](git-submodules.md) vele secundaire takken kunnen bij bouwstijltijd worden omvat.
+Elke pijpleiding is verbonden met een primaire bewaarplaats of tak. Nochtans, met [ submodule van de Git steun ](git-submodules.md), kunnen de veelvoudige secundaire takken tijdens het bouwstijlproces worden omvat.
 
-## Venster Opslagplaatsen {#repositories-window}
+## De pagina Opslagplaatsen weergeven {#repositories-window}
+
+Op de **pagina van Bewaarplaatsen**, kunt u details over de geselecteerde bewaarplaats bekijken. Deze informatie omvat het type opslagplaats dat in gebruik is. Als de bewaarplaats als **Adobe** duidelijk is, wijst het erop dat het een Adobe-beheerde bewaarplaats is. Als het als **GitHub** wordt geëtiketteerd, verwijst het naar een privé bewaarplaats GitHub die u beheert. Daarnaast bevat de pagina gegevens zoals wanneer de opslagplaats is gemaakt en de bijbehorende pijpleidingen.
+
+Om actie op een geselecteerde bewaarplaats te ondernemen, kunt u op de bewaarplaats klikken en ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) gebruiken om een drop-down menu te openen. Voor Adobe-geleide bewaarplaatsen, kunt u **[Tanden controleren/Project](#check-branches)** creëren.
+
+![ de acties van de Bewaarplaats ](assets/repository-actions.png)
+*drop-down menu op de pagina van Bewaarplaatsen.*
+
+Andere beschikbare acties op het drop-down menu omvatten **[Repository URL van het Exemplaar](#copy-url)**, **[Mening &amp; Update](#view-update)**, en **[Schrapping](#delete)** de bewaarplaats.
+
+**om de pagina van Bewaarplaatsen te bekijken:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht van het Programma**, selecteer het **lusje van Bewaarplaatsen** om aan de **pagina van Bewaarplaatsen** over te schakelen.
+1. Van de **pagina van het Overzicht van het 0} Programma, op het zijmenu, klik ![ pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)** Bewaarplaatsen **.**
 
-1. Het **venster van Bewaarplaatsen** toont alle bewaarplaatsen verbonden aan uw programma.
+1. De **pagina van Bewaarplaatsen** toont alle bewaarplaatsen verbonden aan uw geselecteerd programma.
 
-   ![ venster van Bewaarplaatsen ](assets/repositories.png)
+   ![ pagina van Bewaarplaatsen ](assets/repositories.png)
+   *de pagina van Bewaarplaatsen in Cloud Manager.*
 
-Het **venster van Bewaarplaatsen** verstrekt details over de bewaarplaatsen:
+## repositories toevoegen {#adding-repositories}
 
-* Het type gegevensopslagruimte
-   * **Adobe** wijst op Adobe-geleide bewaarplaatsen
-   * **GitHub** wijst op privé bewaarplaatsen GitHub die u beheert
-* Toen het werd gemaakt
-* Pijpleidingen die zijn gekoppeld aan de opslagplaats
+Op de **pagina van Bewaarplaatsen**, dichtbij de hoger-juiste hoek, klik **Add Bewaarplaats**
 
-U kunt de repository selecteren in het venster en op de elliptische knop klikken om actie te ondernemen in de geselecteerde repository.
+![ voeg bewaarplaats dialoogdoos toe.](assets/repository-add.png)
+*voeg de dialoogdoos van de Bewaarplaats toe.*
 
-* **[de Tak van de Controle / leidt Project](#check-branches)** (slechts beschikbaar voor Adobe bewaarplaatsen)
-* **[Repository URL van het Exemplaar](#copy-url)**
-* **[Mening &amp; Update](#view-update)**
-* **[Schrapping](#delete)**
+Cloud Manager steunt twee types van bewaarplaatsen: Adobe-beheerde bewaarplaatsen (**de Bewaarplaats van de Adobe**) en zelfbeheerde bewaarplaatsen (**Privé Bewaarplaats**). De vereiste velden voor installatie zijn afhankelijk van het type opslagplaats dat u wilt toevoegen. Raadpleeg de volgende secties voor meer informatie:
 
-![ de acties van de Bewaarplaats ](assets/repository-actions.png)
-
-## Opslagplaatsen toevoegen {#adding-repositories}
-
-Tik of klik **voeg de knoop van de Bewaarplaats** in het **venster van Bewaarplaatsen** toe om **te beginnen voeg de** tovenaar van de Bewaarplaats {toe.
-
-![ toevoegen de tovenaar van de bewaarplaats ](assets/add-repository-wizard.png)
-
-Cloud Manager steunt beide bewaarplaatsen die door Adobe (**worden beheerd de Bewaarplaats van de Adobe**) evenals uw zelf-beheerde bewaarplaatsen (**Privé Bewaarplaats**). De vereiste velden zijn afhankelijk van het type opslagplaats dat u wilt toevoegen. Raadpleeg de volgende documenten voor meer informatie.
-
-* [Opslagplaatsen voor Adoben toevoegen in Cloud Manager](adobe-repositories.md)
-* [Persoonlijke opslagplaatsen toevoegen in Cloud Manager](private-repositories.md)
+* [Adobe-opslagruimten toevoegen in Cloud Manager](adobe-repositories.md)
+* [Persoonlijke opslagruimten toevoegen in Cloud Manager](private-repositories.md)
 
 >[!NOTE]
 >
 >* Een gebruiker moet de rol **Manager van de Plaatsing** of **BedrijfsEigenaar** hebben om een bewaarplaats toe te voegen.
 >* Er geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepaalde onderneming of IMS-organisatie.
 
-## Repo-info openen {#repo-info}
-
-Wanneer het bekijken van uw bewaarplaatsen in het **** venster van Bewaarplaatsen {, kunt u de details op bekijken hoe te tot Adobe-geleide bewaarplaatsen programmatically toegang te hebben door de **knoop van Info van de Reparatie van de Toegang** in de toolbar te klikken.
-
-![ informatie van de Bewaarplaats ](assets/repo-info.png)
-
-Het **venster van Info van de Bewaarplaats** opent met de details. Voor meer informatie bij de toegang tot van bewaarplaats informatie, zie het document [ Toegang tot de Informatie van de Bewaarplaats ](accessing-repos.md).
 
 ## Branches controleren / Project maken {#check-branches}
 
-De **Tak van de Controle / leidt de actie van het Project** voert twee functies afhankelijk van de staat van de bewaarplaats uit.
+In **AEM Cloud Manager**, de **Tak van de Controle / creeer de actie van het Project** dient twee doeleinden, afhankelijk van de huidige staat van de bewaarplaats.
 
-* Als de bewaarplaats nieuw-gecreeerd is, leidt de actie tot een steekproefproject dat op [ wordt gebaseerd het AEM projectarchetype ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
-* Als de gegevensopslagplaats reeds het steekproefproject heeft gecreeerd, controleert het de staat van de bewaarplaats en zijn takken en meldt terug als het steekproefproject reeds bestaat.
+* Als de bewaarplaats nieuw wordt gecreeerd, produceert deze actie een steekproefproject gebruikend [ het AEM projectarchetype ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Als het voorbeeldproject reeds in de bewaarplaats wordt gecreeerd, controleert de actie de status van de bewaarplaats en zijn takken, die terugkoppelen op of het steekproefproject reeds bestaat.
 
-![ de bijwerkingsacties van de Controle ](assets/check-branches.png)
+  ![ de bijwerkingsacties van de Controle ](assets/check-branches.png)
 
 ## Repository-URL kopiëren {#copy-url}
 
-De **actie van Repository URL van het Exemplaar** kopieert URL van de bewaarplaats die in het **venster van Bewaarplaatsen** aan het klembord wordt geselecteerd om elders te worden gebruikt.
+De **actie van Repository URL van het Exemplaar van de Bewaarplaats** kopieert URL van de bewaarplaats die in de **wordt geselecteerd Repositories** pagina aan het klembord dat elders moet worden gebruikt.
 
-## Weergeven en bijwerken {#view-update}
+## Een opslagplaats weergeven en bijwerken {#view-update}
 
-De **Mening &amp; van de Update** actie opent de **dialoog van de Bewaarplaats van de Update**. Gebruikend het kunt u de **Naam** bekijken en **Voorproef URL van de Bewaarplaats** evenals de **Beschrijving** van de bewaarplaats bijwerken.
+De **Mening &amp; van de Update** actie opent de **Repository van de Update** dialoogdoos, waar u de 4} Naam van de bewaarplaats **en** Voorproef van Repository URL van de Bewaarplaats **kunt bekijken.** Bovendien, laat het u de **Beschrijving** van de bewaarplaats bijwerken.
 
-![ Mening en update bewaarplaats informatie ](assets/view-update.png)
+![ Mening en update bewaarplaats informatie ](assets/repository-view-update.png)
 
-## Verwijderen {#delete}
+## Een opslagplaats verwijderen {#delete}
 
 De **schrapping** actie verwijdert de bewaarplaats uit uw project. Een opslagplaats kan niet worden geschrapt als het met een pijpleiding wordt geassocieerd.
 
-![ Schrapping ](assets/delete.png)
+![ Schrapping ](assets/repository-delete.png)
 
-Als u een opslagplaats verwijdert, gebeurt het volgende:
+Als u een opslagplaats verwijdert, wordt de naam onbruikbaar voor nieuwe opslagplaatsen die in de toekomst worden gemaakt. Als u dezelfde naam probeert te gebruiken, wordt het volgende foutbericht weergegeven:
 
-* Maak de verwijderde opslagplaats onbruikbaar voor nieuwe opslagplaatsen die in de toekomst kunnen worden gecreeerd.
-   * In dergelijke gevallen wordt het foutbericht `Repository name should be unique within organization.` weergegeven.
-* Maak de verwijderde opslagplaats niet beschikbaar in Cloud Manager en niet beschikbaar voor koppelingen naar pijpleidingen.
+`Repository name should be unique within organization.`
+
+Bovendien is de verwijderde opslagplaats niet meer beschikbaar in Cloud Manager en kan deze niet worden gekoppeld aan pijpleidingen.
+
