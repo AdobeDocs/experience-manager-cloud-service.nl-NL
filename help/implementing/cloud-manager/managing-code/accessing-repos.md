@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,9 @@ De **eigenschap van Info van de Reactie van de Toegang** is zichtbaar aan gebrui
 
    ![ Info van de Reparatie van de Toegang op de kaart van Pijpleidingen ](assets/pipelines-card.png)
 
-1. Om tot het wachtwoord toegang te hebben, moet een nieuw wachtwoord worden geproduceerd. Klik in het dialoogvenster Info opslagplaats op **`Generate password`** .
+1. Om tot het wachtwoord toegang te hebben, moet een nieuw wachtwoord worden geproduceerd. In het **de dialoogvakje van Info van de Bewaarplaats**, uitgezochte **produceert wachtwoord**.
 
-1. Klik in het bevestigingsdialoogvenster op **`Generate password`** .
+1. In de bevestigingsdialoogdoos, produceert de uitgezochte **wachtwoord**.
 
    ![ Bevestig wachtwoordgeneratie ](assets/confirm-generated-password.png)
 

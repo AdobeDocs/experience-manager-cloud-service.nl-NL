@@ -4,9 +4,9 @@ description: Leer hoe u een opslagplaats met beheerde Adobe in Cloud Manager toe
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De **pagina van Bewaarplaatsen** maakt het gemakkelijk om extra Adobe-geleide be
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma waaraan u een Adobe-beheerde bewaarplaats wilt toevoegen.
 
-1. Van de **pagina van het Overzicht van het Programma**, in het zijmenu, klik ![ het pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Bewaarplaatsen** tabel. om aan de **pagina van Bewaarplaatsen** over te schakelen.
+1. Van de **pagina van het Overzicht van het Programma**, in het zijmenu, klik ![ het pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Bewaarplaatsen** tabel.
 
 1. Op de **pagina van Bewaarplaatsen**, dichtbij het hoger-recht, klik **Add Bewaarplaats**.
 
@@ -32,10 +32,10 @@ De **pagina van Bewaarplaatsen** maakt het gemakkelijk om extra Adobe-geleide be
 1. Voer in de desbetreffende tekstvelden het volgende in:
 
    * **Naam van de Bewaarplaats** - een expressieve naam voor uw nieuwe bewaarplaats.
-   * **Bewaarplaats URL voorproef** - u te hoeven niet om een weg in te gaan URL of de bestaande weg uit te geven omdat de infrastructuur reeds op zijn plaats is en volledig geïntegreerd en door Adobe wordt geleid.
+   * **Bewaarplaats URL voorproef** - u te hoeven niet om een weg in te gaan URL of de bestaande weg uit te geven omdat de gegevensopslaginfrastructuur reeds op zijn plaats is en volledig geïntegreerd en door Adobe wordt geleid.
    * **Beschrijving (facultatief)** - een gedetailleerde beschrijving van de bewaarplaats.
 
-   ![ voeg de dialoog van de Bewaarplaats ](assets/add-adobe-repository.png) toe
+   ![ voeg de dialoogdoos van de Bewaarplaats ](assets/add-adobe-repository.png) toe
 
 1. Klik **sparen**.
 Uw nieuwe bewaarplaats wordt getoond in de lijst op de **pagina van Bewaarplaatsen**.

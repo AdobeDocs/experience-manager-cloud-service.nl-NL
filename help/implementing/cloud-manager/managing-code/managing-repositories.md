@@ -1,12 +1,12 @@
 ---
 title: Opslagplaatsen in Cloud Manager beheren
-description: Leer hoe u GIT-opslagruimten in Cloud Manager maakt, weergeeft en verwijdert.
+description: Leer hoe u Git-opslagruimten in Cloud Manager toevoegt, weergeeft en verwijdert.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,9 @@ Andere beschikbare acties op het drop-down menu omvatten **[Repository URL van h
    ![ pagina van Bewaarplaatsen ](assets/repositories.png)
    *de pagina van Bewaarplaatsen in Cloud Manager.*
 
-## repositories toevoegen {#adding-repositories}
+## Een opslagplaats toevoegen {#adding-repositories}
+
+Een gebruiker moet de rol **Manager van de Plaatsing** of **BedrijfsEigenaar** hebben om een bewaarplaats toe te voegen.
 
 Op de **pagina van Bewaarplaatsen**, dichtbij de hoger-juiste hoek, klik **Add Bewaarplaats**
 
@@ -60,11 +62,15 @@ Cloud Manager steunt twee types van bewaarplaatsen: Adobe-beheerde bewaarplaatse
 * [Adobe-opslagruimten toevoegen in Cloud Manager](adobe-repositories.md)
 * [Persoonlijke opslagruimten toevoegen in Cloud Manager](private-repositories.md)
 
->[!NOTE]
->
->* Een gebruiker moet de rol **Manager van de Plaatsing** of **BedrijfsEigenaar** hebben om een bewaarplaats toe te voegen.
->* Er geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepaalde onderneming of IMS-organisatie.
+Er geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepaalde onderneming of IMS-organisatie.
 
+## Gegevens uit de gegevensopslagplaats {#repo-info}
+
+Wanneer het bekijken van uw bewaarplaatsen in het **** venster van Bewaarplaatsen {, kunt u de details op bekijken hoe te tot Adobe-geleide bewaarplaatsen programmatically toegang te hebben door de **knoop van Info van de Reparatie van de Toegang** op de toolbar te klikken.
+
+![ informatie van de Bewaarplaats ](assets/repository-access-repo-info2.png)
+
+Het **venster van Info van de Bewaarplaats** opent met de details. Voor meer informatie bij de toegang tot van bewaarplaats informatie, zie [ Toegang tot de Informatie van de Bewaarplaats ](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 ## Branches controleren / Project maken {#check-branches}
 
@@ -91,7 +97,7 @@ De **schrapping** actie verwijdert de bewaarplaats uit uw project. Een opslagpla
 
 ![ Schrapping ](assets/repository-delete.png)
 
-Als u een opslagplaats verwijdert, wordt de naam onbruikbaar voor nieuwe opslagplaatsen die in de toekomst worden gemaakt. Als u dezelfde naam probeert te gebruiken, wordt het volgende foutbericht weergegeven:
+Als u een opslagplaats verwijdert, wordt de naam onbruikbaar voor nieuwe opslagplaatsen die in de toekomst worden gemaakt. Als u probeert een gegevensopslagruimte toe te voegen met dezelfde naam als een verwijderde gegevensopslagruimte, wordt het volgende foutbericht weergegeven:
 
 `Repository name should be unique within organization.`
 
