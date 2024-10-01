@@ -2,9 +2,9 @@
 title: Content Hub-gebruikersinterface configureren
 description: Content Hub-gebruikersinterface configureren
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
+source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,8 @@ Als beheerder, beheer de volgende configuratieopties voor uw gebruikers:
 * [Zoeken](#configure-metadata-search-content-hub)
 
 * [Branding](#configure-branding-content-hub)
+
+* [Verlopen Assets](#expired-assets-content-hub)
 
 * [Aangepaste koppelingen](#configure-custom-links-content-hub)
 
@@ -168,6 +170,33 @@ Beheerders kunnen de titel en de tekst van de tekst op de banner van het Content
 De brandingsupdates die op de vertoning van het Gebruikersinterface van de Configuratie op de portaalbanner van Content Hub worden toegelaten:
 
 ![ het brandmerken van de Configuratie UI op Content Hub ](assets/configuration-ui-branding-updates.png)
+
+### Verlopen activa {#expired-assets-content-hub}
+
+Beheerders kunnen bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden.
+
+Verlopen elementen worden standaard niet weergegeven in Content Hub.
+
+Voer daartoe de volgende stappen uit:
+
+1. Voor het [ gebruikersinterface van Configuraties ](#access-configuration-options-content-hub), klik **[!UICONTROL Expired Assets]**.
+
+1. Schakel in de sectie **[!UICONTROL Visible]** de schakeloptie **[!UICONTROL Allow users to view expired assets]** in om alle verlopen elementen zichtbaar te maken op Content Hub.
+
+1. Nadat u de zichtbaarheid van elementen hebt ingeschakeld, kunt u de mogelijkheid om verlopen elementen te downloaden in- of uitschakelen met de schakeloptie **[!UICONTROL Allow users to download expired assets]** .
+
+1. Klik op **[!UICONTROL Save]** om de wijzigingen toe te passen.
+
+   ![ Verlopen activa op Content Hub ](assets/expired-assets-content-hub.png)
+
+Nadat u de zichtbaarheid van elementen hebt ingeschakeld, kunt u de verlopen elementen op Content Hub weergeven, zoals in de volgende afbeelding wordt getoond:
+
+![ Verlopen activa op Content Hub ](assets/view-download-expired-assets.png)
+
+Als de beheerder downloaden heeft ingeschakeld, kunnen de Content Hub-gebruikers deze ook downloaden, zoals in de afbeelding is aangegeven.
+
+Als de zichtbaarheid van verlopen elementen is ingeschakeld, markeert Content Hub ook elementen die binnen de komende 15 dagen verlopen met behulp van het `Expiring in n days` -bericht op de elementenkaart.
+
 
 ### Aangepaste koppelingen {#configure-custom-links-content-hub}
 
