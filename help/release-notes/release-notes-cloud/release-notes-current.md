@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+source-git-commit: 894c5df2cdc6637bae9b4b8f2cbdd1f1162b3942
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1289'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,12 @@ Om vroege toegang tot AI-Gegenereerde titelsteun op uw rekening van Dynamic Medi
 Asset Selector biedt nu ondersteuning voor het bladeren in verzamelingen naar het gewenste element.
 ![ de selecteursinzamelingen van Activa ](/help/assets/assets/collections-rail-modal-view.png)
 
+### Nieuwe functies in Content Hub {#content-hub-new-features}
+
+Beheerders kunnen nu bepalen of verlopen elementen zichtbaar moeten zijn op Content Hub. Als de verlopen elementen zichtbaar worden gemaakt, kunnen ze ook definiëren of gebruikers ze kunnen downloaden.
+
+![ Verlopen activa op Content Hub ](/help/assets/assets/view-download-expired-assets.png)
+
 ## [!DNL Experience Manager Forms] als een [!DNL Cloud Service] {#forms}
 
 ### Nieuwe functies voor pre-release in AEM Forms {#forms-new-prerelease-features}
@@ -120,7 +126,7 @@ De beschikbare Generative AI-mogelijkheden zijn:
 * Commerce-velden zijn niet correct geïntegreerd met de Assets Metadata Schema-editor.
 * Probleem met multifield Carrouselproducten voor slepen en neerzetten.
 * Probleem met multiveld van categorie Carrousel voor slepen en neerzetten.
-* Klik niet op de menu&#39;s in de pagina Pagina-informatie op de pagina Categorie en producteditor.
+* Klik niet voor de menu&#39;s op de pagina Pagina-informatie op de pagina Categorie en producteditor.
 * Volgnummer is niet zichtbaar op de pagina voor bevestiging van bestelling.
 
 ## [!DNL Experience Manager] als een [!DNL Cloud Service] Foundation {#foundation}
