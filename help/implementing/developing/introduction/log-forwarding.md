@@ -4,9 +4,9 @@ description: Leer over het door:sturen van logboeken aan Splunk en andere regist
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
+source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ Dit artikel is als volgt geordend:
 * Logboekdoelconfiguraties - elke bestemming heeft een lichtjes verschillende indeling
 * Indelingen voor logberichten - informatie over de indelingen van logberichten
 * Geavanceerde netwerken - het verzenden van AEM en Apache/Dispatcher logboeken door een specifiek uitgang of door VPN
+* Het migreren van erfenislogboek door:sturen - hoe te zich van logboek door:sturen eerder opstelling door Adobe aan de zelf-serverbenadering te bewegen
 
 
 ## Instellen {#setup}
@@ -369,4 +370,23 @@ data:
     aem:
       advancedNetworking: true
 ```
+
+## Migreren van verouderde logbestanden {#legacy-migration}
+
+Voordat de configuratie Log Forwarding via een zelfservermodel werd bereikt, werd klanten gevraagd om supporttickets te openen, waar Adobe de integratie zou starten.
+
+Klanten die op die manier door Adobe waren opgezet, zijn welkom om zich aan het model van het zelfdienen op hun gemak aan te passen. Er zijn verschillende redenen om deze overgang te maken:
+
+* Er is een nieuwe omgeving (bijvoorbeeld een nieuwe dev-server of RDE) ingericht.
+* Veranderingen in uw bestaand eindpunt of geloofsbrieven van de Splunk.
+* De Adobe had opstelling uw logboek door:sturen alvorens de logboeken CDN beschikbaar waren en u zou CDN logboeken willen ontvangen.
+* Een bewust besluit om zich proactief aan het zelf-servermodel aan te passen zodat heeft uw organisatie de kennis zelfs alvorens een tijdgevoelige verandering noodzakelijk is.
+
+Wanneer klaar om te migreren, vorm eenvoudig het dossier YAML zoals die in de voorafgaande secties wordt beschreven. Gebruik de Cloud Manager config pijpleiding om aan elk van de milieu&#39;s op te stellen waar de configuratie zou moeten worden toegepast.
+
+Het wordt geadviseerd, maar niet vereist, dat een configuratie aan alle milieu&#39;s wordt opgesteld zodat zij allen onder zelf-servercontrole zijn. Als niet, kunt u vergeten welke milieu&#39;s door Adobe tegenover die gevormd op een zelf-servermanier zijn gevormd.
+
+>[!NOTE]
+>
+>Wanneer het Door:sturen van het Logboek aan een milieu wordt opgesteld dat eerder door de steun van de Adobe wordt gevormd, kunt u dubbele logboeken tot een paar uren ontvangen. Dit zal uiteindelijk automatisch worden opgelost.
 
