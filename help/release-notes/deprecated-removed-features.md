@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 115c7e02b5f2fda8e57ad1f5bcbc40ff044eb23d
+source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2496'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
 <tbody>
   <tr>
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
-    <td>Gebruik Sling's Auth Core/Auth Core SPI interfaces als alternatief. [Zie de opmerkingen bij het verwijderen hieronder.](#org.apache.sling.commons.auth)</td>
+    <td>Gebruik Sling's Auth Core/Auth Core SPI interfaces als alternatief. <a href="#org.apache.sling.commons.auth"> zie hieronder verwijderingsnota's.</a></td>
     <td>2015</td>
     <td>30-07-21</td>
   </tr>
@@ -144,7 +144,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>30-07-21</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>De pakketten Eclipse Jetty en Felix HTTP Jetty worden niet meer ondersteund. [Zie de opmerkingen bij het verwijderen hieronder.](#org.eclipse.jetty)</td>
+    <td>De pakketten Eclipse Jetty en Felix HTTP Jetty worden niet meer ondersteund. <a href="#org.eclipse.jetty"> zie hieronder verwijderingsnota's.</a></td>
     <td>27-05-21</td>
     <td>26-08-21</td>
   </tr>
@@ -155,7 +155,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>26-08-21</td>
   </tr>  
   <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>Gebruik van deze API wordt niet ondersteund in AEM as a Cloud Service. [Zie de opmerkingen bij het verwijderen hieronder.](#com.mongodb)</td>
+    <td>Gebruik van deze API wordt niet ondersteund in AEM as a Cloud Service. <a href="#com.mongodb"> zie hieronder verwijderingsnota's.</a></td>
     <td>27-05-21</td>
     <td>30-07-21</td>
   </tr>
@@ -173,7 +173,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
-    <td>Deze API is verouderd omdat Apache Abdera sinds 2017 een gepensioneerd project is. [Zie de opmerkingen bij het verwijderen hieronder.](#org.apache.abdera_or_org.apache.sling.atom.taglib)</td>
+    <td>Deze API is verouderd omdat Apache Abdera sinds 2017 een gepensioneerd project is. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib"> zie hieronder verwijderingsnota's.</a></td>
     <td>29-07-21</td>
     <td>29-09-21</td>
   </tr>
@@ -202,13 +202,13 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>verwijderd</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>Verouderd AEM 6.x API. [Zie de opmerkingen bij het verwijderen hieronder.](#org.apache.abdera_or_org.apache.sling.atom.taglib)</td>
+    <td>Verouderd AEM 6.x API. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib"> zie hieronder verwijderingsnota's.</a></td>
     <td>08-04-19</td>
     <td>29-09-21</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Het Apache Felix Http-whiteboard wordt niet meer ondersteund. Migreer uw code naar het whiteboard van OSGi Http. [Zie de opmerkingen bij het verwijderen hieronder.](#org.apache.felix.http.whiteboard)</td>
+    <td>Het Apache Felix Http-whiteboard wordt niet meer ondersteund. Migreer uw code naar het whiteboard van OSGi Http. <a href="#org.apache.felix.http.whiteboard"> zie hieronder verwijderingsnota's.</a></td>
     <td>27-01-2022</td>
     <td>24-03-2022</td>
   </tr>
@@ -270,7 +270,7 @@ Hieronder vindt u een uitgebreide lijst met verouderde AEM API&#39;s en de verwa
     <td>15-06-2023</td>
   </tr>
   <tr>
-    <td>org.slf4j.event	</td>
+    <td>org.slf4j.event    </td>
     <td>Deze interne slf4j-API wordt niet ondersteund door AEM as a Cloud Service</td>
     <td>11-04-2022</td>
     <td>30-08-2024</td>
