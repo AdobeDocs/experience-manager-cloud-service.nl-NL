@@ -4,9 +4,9 @@ description: Leer hoe te om verkeer te vormen CDN door regels en filters in een 
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 7f7ecfcca77cc3a38f3a4517bf41c48565b9faea
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,14 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
-            
+      - name: set-header-with-reqproperty-rule
+        when:
+          reqProperty: path
+          like: /set-header
+        actions:
+          - type: set
+            reqHeader: x-some-header
+            value: {reqProperty: path}           
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -146,9 +153,9 @@ In de onderstaande tabel worden de beschikbare acties beschreven.
 
 | Naam | Eigenschappen | Betekenis |
 |-----------|--------------------------|-------------|
-| **plaats** | (reqProperty of reqHeader of queryParam of reqCookie), value | Stelt een opgegeven aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund) of aanvraagheader, queryparameter of cookie in op een bepaalde waarde. |
+| **plaats** | (reqProperty of reqHeader of queryParam of reqCookie), value | Stelt een opgegeven aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund) of aanvraagheader, queryparameter of cookie in op een bepaalde waarde, die een letterlijke tekenreeks of aanvraagparameter kan zijn. |
 |     | var, value | Stelt een opgegeven aanvraag-eigenschap in op een bepaalde waarde. |
-| **unset** | reqProperty | Hiermee wordt een opgegeven aanvraagparameter (alleen eigenschap &quot;path&quot; ondersteund) of aanvraagheader, queryparameter of cookie naar een bepaalde waarde verwijderd. |
+| **unset** | reqProperty | Hiermee wordt een opgegeven parameter request (alleen eigenschap &quot;path&quot; ondersteund) of een aanvraagheader, queryparameter of cookie verwijderd naar een bepaalde waarde, die een letterlijke tekenreeks of aanvraagparameter kan zijn. |
 |         | var | Hiermee wordt een opgegeven variabele verwijderd. |
 |         | queryParamMatch | Verwijdert alle queryparameters die overeenkomen met een opgegeven reguliere expressie. |
 | **transformatie** | op:replace, (reqProperty of reqHeader of queryParam of reqCookie), match, replacement | Vervangt een deel van de aanvraagparameter (alleen eigenschap &quot;path&quot; wordt ondersteund) of verzoek header, query parameter of cookie door een nieuwe waarde. |
