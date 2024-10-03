@@ -1,19 +1,18 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service
-description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.9.0 in AEM as a Cloud Service.
+title: Opmerkingen bij de release van Cloud Manager 2024.10.0 in Adobe Experience Manager as a Cloud Service
+description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.10.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: b90ace2250277005d8ac250c841104c93298a605
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager 2024.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager 2024.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 2024.9.0 in AEM as a Cloud Service gepubliceerd.
+Deze pagina documenteert de releaseopmerkingen voor Cloud Manager versie 2024.10.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,41 +20,64 @@ Op deze pagina worden de opmerkingen bij de release voor Cloud Manager versie 20
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor Cloud Manager release 2024.9.0 in AEM as a Cloud Service is 5 september 2024. De volgende release is gepland voor 3 oktober 2024.
+De releasedatum voor Cloud Manager release 2024.10.0 in AEM as a Cloud Service is 3 oktober 2024.
+
+De volgende release is gepland voor 14 november 2024.
 
 ## Nieuwe functies {#what-is-new}
 
-* **Dashboard van de Controle van de Ervaring:**
+* <!-- BOTH CS & AMS --> De in Cloud Manager gebruikte versie van AEM Archetype wordt nu bijgewerkt naar versie 26. Zie [ https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
-  De Adobe Cloud Manager [ verbeterde Dashboard van de Controle van de Ervaring ](/help/implementing/cloud-manager/experience-audit-dashboard.md), aangedreven door de Lighthouse van Google, verstrekt inzicht in de kwaliteit en de prestaties van AEM Sites door kernWeb vitals, SEO, en toegankelijkheidsmetriek te evalueren. Het helpt gebruikers gebieden voor verbetering identificeren door activeerbare aanbevelingen aan te bieden, toelatend teams om gebruikerservaring, pagina ladingstijden, en plaatsnaleving te verbeteren. Dit dashboard vereenvoudigt de controle van kritieke plaatsmetriek en zorgt ervoor dat AEM toepassingen aan hoge prestaties en toegankelijkheidsnormen voldoen.
+<!-- (CMGR-59817) -->
 
-* **geproduceerde Adobe en beheerde certificaten van de Bevestiging van het Domein:**
+* <!-- CS ONLY --> Wanneer u netwerkinfrastructuur toevoegt of bewerkt, worden de waarden in de IP-adres- en netwerkmaskervelden gevalideerd volgens de volgende regels:
 
-  Met Cloud Manager, kunt u nu aan [ zelf-dienst Adobe produceren en beheerde (de Bevestiging van het Domein) SSL certificaten DV ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) leiden. Deze mogelijkheid biedt u de snelste, eenvoudigste en voordeligste oplossing voor het maken van een veilige website voor uw onlineorganisatie of bedrijf. <!-- CMGR-52403 -->
+   * De adresruimte mag de adressen die in de verbindingsadresruimte zijn gedefinieerd, niet overlappen.
+   * DNS de adressen moeten of tot het netwerkmasker behoren dat in de ruimte van het verbindingsadres wordt bepaald of openbaar zijn.
 
-  >[!NOTE]
-  >
-  >[ Content Hub ](/help/assets/product-overview.md) klanten zijn gepland om deze eigenschap in fasen als deel van een geleidelijke uitlooptraject te ontvangen.
+  ![ voeg de dialoogdoos van de netwerkinfrastructuur toe ](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
 
-* **Edge Delivery Services steun in Cloud Manager:**
-
-  Als u een Edge Delivery Services vergunning als deel van AEM Sites hebt, [ kunt u nu aan boord uw plaats met Edge Delivery Services direct door Cloud Manager ](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Met deze functie beschikt u over een begeleide, zelfbediening voor Go Live-ervaring. Het verenigt ook essentiële werkschema&#39;s zoals het beheer van domeinnamen, SSL certificaten, en afbeeldingen CDN over al uw AEM eigenschappen, die consistentie en efficiency verzekeren. <!-- CMGR-49859 -->
+* <!-- CS ONLY --> Wijzigingen worden aangebracht in de indeling van de logbestanden voor omgevingsimplementatie voor het indexeren, installeren van veranderbare inhoud en transformatietaken.
 
   >[!NOTE]
   >
-  >[ Content Hub ](/help/assets/product-overview.md) klanten zijn gepland om deze eigenschap in fasen als deel van een geleidelijke uitlooptraject te ontvangen.
+  >Deze wijziging is gepland voor geleidelijke uitrol met een verwachte einddatum in december 2024.
 
-* De klanten die bewaarplaatsen GitHub gebruiken hebben nu de capaciteit om de pijpleidingen van Config van de Rij van het Web tot stand te brengen en te gebruiken. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
+  ![ opstellen aan productiekaart ](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
 
-<!--
-## Early adoption program {#early-adoption}
+  Het formaat van het logboek zal van een eenvoudige ingang veranderen die in het volgende wordt gezien:
 
-For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
+  ![ dossier van het Logboek dat eenvoudige ingangen toont ](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
+
+  Op een JSON-vermelding in het volgende voorbeeld:
+
+  ![ dossier van het Logboek dat json ingangen ](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png) toont
 
 
-## Bugfixes
+## Programma voor vroegtijdige goedkeuring {#early-adoption}
 
-* Paginering voor de tabel SSL-certificaten werkt nu zoals u had verwacht. <!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
-* De verkeerde artefactversie werd bevorderd wanneer het gebruiken van **bevordert bouwstijl** knoop van een uitvoering. <!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
+Maak deel uit van het Cloud Manager-programma voor vroege adoptie en heb de kans om toekomstige functies te testen.
 
-<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>
+### Kies voor uw eigen git - nu met ondersteuning voor GitLab en Bitbucket {#gitlab-bitbucket}
+
+<!-- BOTH CS & AMS -->
+
+**breng Uw Eigen eigenschap van het Git** is uitgebreid om steun voor externe bewaarplaatsen zoals GitLab en Bitbucket te omvatten. Deze nieuwe steun is naast reeds bestaande steun voor privé en ondernemingsbewaarplaatsen GitHub. Wanneer u deze nieuwe repo&#39;s toevoegt, kunt u deze ook rechtstreeks aan uw pijpleidingen koppelen. U kunt deze opslagruimten hosten op openbare cloudplatforms of binnen uw privécloud of infrastructuur. Deze integratie verwijdert ook de behoefte aan constante codesynchronisatie met de opslagplaats van de Adobe en verstrekt de capaciteit om trekkingsverzoeken te bevestigen alvorens hen in een hoofdtak samen te voegen.
+
+Zie [ externe bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/external-repositories.md) toevoegen.
+
+![ voeg de dialoogdoos van de Bewaarplaats ](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png) toe
+
+>[!NOTE]
+>
+>Momenteel, zijn de uit-van-de-doos controles van de trekkingsverzoekcodekwaliteit exclusief aan GitHub-ontvangen bewaarplaatsen, maar een update om deze functionaliteit tot andere verkopers van het Git uit te breiden is in de werken.
+
+Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:Grp-CloudManager_BYOG@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
+
+
+<!-- ## Bug fixes
+
+
+
+
+## Known Issues {#known-issues} -->

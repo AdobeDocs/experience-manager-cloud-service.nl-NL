@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Neem geen `http://`, `https://` of spaties op wanneer u een domein betreedt.
 
 1. Klik **creëren**.
 
-1. In **verifieer de dialoogdoos van het Domein**, in **welk certificaattype u op het gebruiken van dit domein van plan bent?** selecteert u een van de volgende opties in de vervolgkeuzelijst:
+1. In **verifieer domein** dialoogdoos, in **welk certificaattype u op het gebruiken van dit domein van plan bent?** selecteert u een van de volgende opties in de vervolgkeuzelijst:
 
    | Certificaattype, optie | Beschrijving |
    | --- | --- |
@@ -68,8 +68,8 @@ Neem geen `http://`, `https://` of spaties op wanneer u een domein betreedt.
 
    | Als u het certificaattype hebt geselecteerd | Beschrijving |
    | --- | ---  |
-   | Door Adobe beheerd certificaat | Voltooi de [ Adobe beheerde certificaatstappen ](#adobe-managed-cert-steps) alvorens aan de volgende stap verder te gaan. |
-   | Door de klant beheerd certificaat | Voltooi de [ Klant beheerde certificaatstappen ](#customer-managed-cert-steps) alvorens aan de volgende stap verder te gaan. |
+   | Door Adobe beheerd certificaat | Voltooi de [ Adobe beheerde certificaatstappen ](#adobe-managed-cert-steps) alvorens aan stap 9 verder te gaan. |
+   | Door de klant beheerd certificaat | Voltooi de [ Klant beheerde certificaatstappen ](#customer-managed-cert-steps) alvorens aan stap 9 verder te gaan. |
 
 1. Klik **verifieer**.
 
@@ -130,100 +130,95 @@ Voeg de volgende `A` verslagen aan DNS montages van uw domein als uw domeinlever
 
 * `A record for domain @ pointing to IP 151.101.195.10`
 
+>[!TIP]
+>
+>*CNAME* of *het Verslag van A* kan op de regerende DNS server worden geplaatst om u tijd te bewaren.
+
 
 ### Door de klant beheerde certificaatstappen {#customer-managed-cert-steps}
 
-Als u het certificaattype *Klant beheerde certificaat* selecteerde, voltooi de volgende stappen in **verifieer domein** dialoogdoos.
+Als u het certificaattype *Klant beheerde certificaat* selecteerde, voltooi de volgende stappen.
 
-![ Klant beheerde certificaatstappen ](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
+1. In **verifieer domein** dialoogdoos, upload een nieuw certificaat EV/OV dat het geselecteerde domein behandelt.
 
-Om het domein in gebruik te verifiëren, moet u een TXT-record toevoegen en verifiëren.
+   ![ verifieer domein voor een klant beheerd EV/OV- certificaat ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
-Een tekstrecord (ook wel een TXT-record genoemd) is een type resourcerecord in het Domain Name System (DNS). Hiermee kunt u willekeurige tekst aan een hostnaam koppelen. Deze tekst kan leesbare gegevens zoals server- of netwerkgegevens bevatten.
+1. Klik **OK**.
 
-Cloud Manager gebruikt een specifieke TXT-record om een domein te autoriseren dat in een CDN-service wordt gehost. Creeer een DNS TXT- verslag in de streek die Cloud Manager machtigt om de dienst CDN met het douanedomein op te stellen en het te associëren met de backenddienst. Deze vereniging is volledig onder uw controle en machtigt Cloud Manager om inhoud van de dienst aan een domein te dienen. Deze vergunning kan worden verleend en ingetrokken. De TXT-record is specifiek voor het domein en de Cloud Manager-omgeving.
+   Na het uploaden van een geldig certificaat EV/OV, wordt de status van het domein duidelijk als **Verified** in de **3} lijst van de Montages van het Domein {.**
 
-#### Vereisten {#customer-managed-cert-requirements}
+   ![ het Plaatsen van het Domein lijst die een Verified status toont.](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
 
-Voldoe aan deze vereisten voordat u een TXT-record toevoegt.
+<!--
+![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
 
-* Identificeer uw domeingastheer of registrar als u het nog niet kent.
-* U kunt de DNS-records voor het domein van uw organisatie bewerken of contact opnemen met de juiste persoon die dat kan.
-* Voeg eerst een aangepaste domeinnaam toe, zoals eerder in dit artikel wordt beschreven.
+To verify the domain in use, you are required to add and verify a TXT record.
 
-#### Een TXT-record toevoegen ter verificatie {#customer-managed-cert-verification}
+A text record (also known as a TXT record) is a type of resource record in the Domain Name System (DNS). It lets you associate arbitrary text with a hostname. This text could include human-readable details like server or network information.
 
-1. In **verifieer domein** dialoogdoos, toont Cloud Manager de naam en TXT waarde voor controle te gebruiken. Deze waarde kopiëren.
+Cloud Manager uses a specific TXT record to authorize a domain to be hosted in a CDN service. Create a DNS TXT record in the zone that authorizes Cloud Manager to deploy the CDN service with the custom domain and associate it with the backend service. This association is entirely under your control and authorizes Cloud Manager to serve content from the service to a domain. This authorization may be granted and withdrawn. The TXT record is specific to the domain and the Cloud Manager environment.
 
-1. Login aan uw DNS dienstverlener en vind de DNS archiefsectie.
+#### Requirements {#customer-managed-cert-requirements}
 
-1. Voeg `aemverification.[yourdomainname]` als **Naam** van de waarde toe en voeg precies de waarde TXT toe aangezien het op het **gebied van de Naam van het Domein** verschijnt.
+Fulfill these requirements before adding a TXT record.
 
-   **de verslagvoorbeelden van TXT**
+* Identify your domain host or registrar if you do not know it already.
+* Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
+* First, add a custom domain name as described earlier in this article.
 
-   | Domein | Naam | TXT-waarde |
+#### Add a TXT record for verification {#customer-managed-cert-verification}
+
+1. In the **Verify domain** dialog box, Cloud Manager displays the name and TXT value to use for verification. Copy this value.
+
+1. Log in to your DNS service provider and find the DNS records section. 
+
+1. Add `aemverification.[yourdomainname]` as the **Name** of the value and add the TXT value exactly as it appears in the **Domain Name** field.
+
+   **TXT record examples**
+
+   | Domain | Name | TXT Value |
    | --- | --- | --- |
-   | `example.com` | `_aemverification.example.com` | Kopieer de volledige waarde die wordt weergegeven in de gebruikersinterface van Cloud Manager. Deze waarde is specifiek voor het domein en de omgeving. Bijvoorbeeld:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
-   | `www.example.com` | `_aemverification.www.example.com` | Kopieer de volledige waarde die wordt weergegeven in de gebruikersinterface van Cloud Manager. Deze waarde is specifiek voor het domein en de omgeving. Bijvoorbeeld:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
+   | `example.com` | `_aemverification.example.com` | Copy the entire value displayed in the Cloud Manager UI. This value is specific to the domain and the environment. For example:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
+   | `www.example.com` | `_aemverification.www.example.com` | Copy the entire value displayed in the Cloud Manager UI. This value is specific to the domain and the environment. For example:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
 
-1. Sla de TXT-record op uw domeinhost op.
+1. Save the TXT record to your domain host.
 
-#### TXT-record verifiëren {#customer-managed-cert-verify}
+#### Verify TXT record {#customer-managed-cert-verify}
 
-Als u klaar bent, kunt u het resultaat controleren met de volgende opdracht.
+When you are done, you can verify the result by running the following command.
 
 ```shell
 dig _aemverification.[yourdomainname] -t txt
 ```
 
-Het verwachte resultaat zou de TXT-waarde moeten tonen die op het **lusje van de Verificatie** van **wordt verstrekt voegt de dialoog van de Naam van het Domein** van Cloud Manager UI toe.
+The expected result should display the TXT value provided on the **Verification** tab of the **Add Domain Name** dialog of the Cloud Manager UI.
 
-Als uw domein bijvoorbeeld `example.com` is, voert u het volgende uit:
+For example, if your domain is `example.com`, then run:
 
 ```shell
 dig TXT _aemverification.example.com -t txt
 ```
 
+
 >[!TIP]
 >
->Er zijn verscheidene [ DNS opzoekhulpmiddelen ](https://www.ultratools.com/tools/dnsLookup) beschikbaar. U kunt Google DoH gebruiken om TXT-recorditems op te zoeken en vast te stellen of de TXT-record ontbreekt of onjuist is.
+>There are several [DNS lookup tools](https://www.ultratools.com/tools/dnsLookup) available. Google DoH can be used to look up TXT record entries and identify if the TXT record is missing or erroneous.
+
+-->
 
 >[!NOTE]
 >
 >DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen.
 >
->Cloud Manager controleert het eigendom en werkt de status bij, die in de lijst van de Montages van het Domein kan worden gezien. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.
+>Cloud Manager verifieert eigendom en werkt de status bij, die in de **lijst van de Montages van het Domein** kan worden gezien. Zie [ de status van de naam van het douanedomein van de Controle ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) voor meer details.
 
 <!--
 ## Next Steps {#next-steps}
 
 Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name. -->
 
->[!TIP]
->
->De ingang TXT en CNAME of een Verslag kunnen gelijktijdig op de regerende DNS server worden geplaatst, waarbij tijd wordt bespaard.
+
+><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
 
-
-## Een aangepaste domeinnaam toevoegen op de pagina Environment {#adding-cdn-environments}
-
-<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
-
-De stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** toe te voegen zijn het zelfde als wanneer [ toevoegend een naam van het douanedomein van de pagina van de Montages van het Domein ](#adding-cdn-settings), maar het ingangspunt verschilt. Volg deze stappen om een naam van het douanedomein van de **pagina van Milieu&#39;s** toe te voegen.
-
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-
-1. Navigeer aan de **detailpagina van het Detail van Milieu** voor het milieu van belang.
-
-   ![ die domeinnaam op de pagina van de Details van het Milieu ingaan ](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
-
-1. Gebruik de **lijst van de Namen van het Domein** om de naam van het douanedomein voor te leggen.
-
-   1. Voer de aangepaste domeinnaam in.
-   1. Selecteer het SSL-certificaat dat aan deze naam is gekoppeld in de vervolgkeuzelijst.
-   1. Klik ![ toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **** toevoegen.
-
-   ![ voeg een naam van het douanedomein toe ](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
-
-1. **voegt domeinnaam** dialoogdoos toe opent aan de **Naam van het Domein** tabel. Ga zoals u voor [ verder toevoegend een naam van het douanedomein van de pagina van de Montages van het Domein ](#adding-cdn-settings).

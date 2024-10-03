@@ -1,20 +1,20 @@
 ---
-title: Niet-productiepijpleidingen configureren
-description: Leer hoe u niet-productiepijpleidingen configureert om de kwaliteit van uw code te testen voordat u deze implementeert in productieomgevingen.
+title: Een niet-productiepijplijn toevoegen
+description: Leer hoe te om een niet productiepijplijn toe te voegen om de kwaliteit van uw code te testen alvorens aan productiemilieu's op te stellen.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
 
 
-# Niet-productiepijpleidingen configureren {#configuring-non-production-pipelines}
+# Een niet-productiepijpleiding toevoegen {#configuring-non-production-pipelines}
 
 Leer hoe u niet-productiepijpleidingen configureert om de kwaliteit van uw code te testen voordat u deze implementeert in productieomgevingen.
 

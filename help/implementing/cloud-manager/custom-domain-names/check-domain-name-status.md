@@ -1,13 +1,13 @@
 ---
-title: Status domeinnaam controleren
+title: Status van domeinnaam controleren
 description: Leer hoe u kunt controleren of Cloud Manager uw aangepaste domeinnaam heeft bevestigd.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Leer hoe u kunt controleren of Cloud Manager uw aangepaste domeinnaam heeft beve
 
 Voldoe aan deze vereisten voordat u de status van uw domeinnaam in Cloud Manager controleert.
 
-* Voeg eerst een TXT- verslag voor uw douanedomein toe zoals die in het document [ wordt beschreven een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegt.
+* Voeg eerst een EV/OV- certificaat voor uw douanedomein toe zoals die in het document [ wordt beschreven een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegt.
 
 ## De status van uw aangepaste domeinnaam controleren {#how-to}
 
@@ -45,13 +45,13 @@ Het statusdetail wordt weergegeven. Uw douanedomein is klaar om te worden gebrui
 
 ## Verificatiestatus {#statuses}
 
-Cloud Manager verifieert domeineigendom door de [ TXT waarde ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) en toont één van de volgende statusberichten.
+Cloud Manager verifieert domeineigendom via het door de klant beheerde certificaat. Wanneer gereed, toont het één van de volgende statusberichten:
 
 | Status | Beschrijving |
 | --- | --- |
-| Domeinverificatie mislukt | De TXT-waarde ontbreekt of wordt met fouten gedetecteerd.<br> Volg de instructies in het statusbericht om het probleem op te lossen. Wanneer klaar, moet u **opnieuw verifiëren** pictogram naast de status selecteren. |
+| Domeinverificatie mislukt | Het door de klant beheerde EV/OV-certificaat ontbreekt of wordt met fouten gedetecteerd.<br> Volg de instructies in het statusbericht om het probleem op te lossen. Wanneer klaar, moet u **opnieuw verifiëren** pictogram naast de status selecteren. |
 | Domeinverificatie wordt uitgevoerd | De verificatie wordt uitgevoerd.<br> Deze status wordt typisch gezien nadat u **selecteert verifieer opnieuw** pictogram naast de status. DNS de controle kan een paar uren aan proces wegens DNS propagatievertragingen vergen. |
-| Geverifieerd - implementatie mislukt | De TXT-verificatie is gelukt, maar de CDN-implementatie is mislukt.<br> In dergelijke gevallen, contacteer uw Adobe vertegenwoordiger. |
+| Geverifieerd - implementatie mislukt | De verificatie van het EV/OV-certificaat is gelukt, maar de CDN-implementatie is mislukt.<br> In dergelijke gevallen, contacteer uw Adobe vertegenwoordiger. |
 | Geverifieerd en geïmplementeerd domein | Deze status geeft aan dat uw aangepaste domeinnaam klaar is om te worden gebruikt.<br> Op dit punt, is uw naam van het douanedomein klaar voor het testen en om aan de het domeinnaam van Cloud Manager worden gericht. Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen om meer te leren. |
 | Verwijderen | De verwijdering van een aangepaste domeinnaam wordt uitgevoerd. |
 | Verwijderen is mislukt | Het verwijderen van een aangepaste domeinnaam is mislukt en moet opnieuw worden geprobeerd.<br> zie [ de namen van het douanedomein beheren ](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) om meer te leren. |
@@ -63,7 +63,7 @@ Hier volgen enkele algemene fouten bij de verificatie van domeinnamen en de bijb
 
 ### Fout domein niet geïnstalleerd {#domain-not-installed}
 
-Deze fout kan tijdens domeinbevestiging van het TXT- verslag voorkomen zelfs nadat u hebt gecontroleerd dat het verslag geschikt is bijgewerkt.
+Deze fout kan optreden tijdens de domeinvalidatie van het EV/OV-certificaat, zelfs nadat u hebt gecontroleerd dat het certificaat op de juiste wijze is bijgewerkt.
 
 #### Foutoorzaak {#cause}
 

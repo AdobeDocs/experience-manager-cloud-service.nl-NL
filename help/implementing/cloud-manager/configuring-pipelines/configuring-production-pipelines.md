@@ -1,20 +1,20 @@
 ---
-title: Productiepijpleidingen configureren
-description: Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu's te bouwen en op te stellen.
+title: Een productiepijpleiding toevoegen
+description: Leer hoe te om een productiepijpleiding toe te voegen om uw code aan productiemilieu's te bouwen en op te stellen.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
 
 
-# Een productiepijpleiding configureren {#configure-production-pipeline}
+# Een productiepijplijn toevoegen {#configure-production-pipeline}
 
 Leer hoe te om productiepijpleidingen te vormen om uw code aan productiemilieu&#39;s te bouwen en op te stellen. Een productiepijpleiding stelt code eerst aan werkgebiedmilieu op, en bij goedkeuring stelt de zelfde code aan het productiemilieu op.
 
@@ -30,7 +30,7 @@ Voordat u de code gaat implementeren, moet u de pijpleidinginstellingen configur
 >
 >U kunt [ pijpleidingsmontages ](managing-pipelines.md) na de aanvankelijke opstelling uitgeven.
 
-## Een nieuwe productiepijpleiding toevoegen {#adding-production-pipeline}
+## Een nieuwe productiepijplijn toevoegen {#adding-production-pipeline}
 
 Zodra u opstelling uw programma hebt en minstens één milieu gebruikend [!UICONTROL Cloud Manager] UI heeft, bent u bereid om een productiepijplijn toe te voegen door deze stappen te volgen.
 

@@ -4,9 +4,9 @@ description: Leer hoe u SSL-certificaatfouten kunt oplossen door algemene oorzak
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,18 @@ ht-degree: 0%
 # SSL-certificaatfouten oplossen {#certificate-errors}
 
 Er kunnen bepaalde fouten optreden als een certificaat niet correct is geïnstalleerd of niet voldoet aan de eisen van Cloud Manager.
+
++++**Ongeldig certificaat**
+
+Deze fout treedt op omdat de klant een gecodeerde persoonlijke sleutel heeft toegevoegd en een persoonlijke sleutel met de indeling DER heeft gebruikt.
+
++++
+
++++**Persoonlijke sleutel moet formaat PKCS 8 zijn**
+
+Deze fout treedt op omdat de klant een gecodeerde persoonlijke sleutel heeft toegevoegd en een persoonlijke sleutel met de indeling DER heeft gebruikt.
+
++++
 
 +++**Correcte certificaatorde**
 

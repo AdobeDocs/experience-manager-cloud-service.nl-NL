@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 484f7b0fd8917902d028434451964dd9df3e3445
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Inleiding tot SSL-certificaten{#introduction}
 
-Voor meer informatie over de zelfbedieningsprogramma&#39;s van Cloud Manager kunt u SSL-certificaten installeren en beheren.
+In deze video ziet u hoe u SSL-certificaten (Secure Socket Layer) installeert en beheert.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -32,7 +32,7 @@ Wanneer een entiteit, zoals een organisatie of bedrijf, een certificaat aanvraag
 
 >[!IMPORTANT]
 >
->Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze moeten worden verkregen van een certificeringsinstantie, een vertrouwde externe organisatie. Sommige bekende Autoriteiten van het Certificaat omvatten *DigiCert*, *versleutelings*, *GlobalSign*, *Vertrouwen*, en *Verisign*.
+>Cloud Manager biedt geen SSL-certificaten of persoonlijke sleutels. Deze onderdelen moeten worden verkregen van een certificeringsinstantie, een vertrouwde externe organisatie. Sommige bekende Autoriteiten van het Certificaat omvatten *DigiCert*, *versleutelings*, *GlobalSign*, *Vertrouwen*, en *Verisign*.
 
 ## Certificaten beheren met Cloud Manager {#cloud-manager}
 
@@ -40,10 +40,10 @@ Cloud Manager biedt zelfbedieningstools voor het installeren en beheren van SSL-
 
 | | Model | Beschrijving |
 | --- | --- | --- |
-| 1 | **[Adobe beheerde certificaat (DV)](#adobe-managed)** | Met Cloud Manager kunnen gebruikers DV-certificaten (Domain Validation) configureren die via Adobe worden geleverd voor snelle domeininstallatie. |
-| 2 | **[Klant beheerde certificaat (OV/EV)](#customer-managed)** | Cloud Manager biedt de dienst van platformTLS (de Veiligheid van de Laag van het Vervoer) aan om u toe te staan om OV en SSL certificaten te beheren u evenals privé sleutels van de Autoriteiten van het Certificaat van de derde, zoals *laat zich* coderen. |
+| A | **[Adobe beheerde certificaat (DV)](#adobe-managed)** | Met Cloud Manager kunnen gebruikers DV-certificaten (Domain Validation) configureren die via Adobe worden geleverd voor snelle domeininstallatie. |
+| B | **[Klant beheerde certificaat (OV/EV)](#customer-managed)** | Cloud Manager biedt de dienst van platformTLS (de Veiligheid van de Laag van het Vervoer) aan om u te laten OV en EV SSL certificaten beheren die u en privé sleutels van de Autoriteiten van het Certificaat van de derde bezit, zoals *laat versleutelen*. |
 
-Beide modellen bieden de volgende algemene functies.
+Beide modellen bieden de volgende algemene functies voor het beheer van uw certificaten:
 
 * Elke Cloud Manager-omgeving kan meerdere certificaten gebruiken.
 * Een persoonlijke sleutel kan meerdere SSL-certificaten uitgeven.
@@ -51,7 +51,7 @@ Beide modellen bieden de volgende algemene functies.
 
 >[!IMPORTANT]
 >
->[ om een douanedomein aan een milieu toe te voegen en te associëren, ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) u moet een geldig SSL certificaat hebben dat het domein behandelt.
+>[ om een douanedomein met een milieu ](/help/implementing/cloud-manager/custom-domain-names/introduction.md) toe te voegen en te associëren, moet u een geldig SSL certificaat hebben dat het domein behandelt.
 
 ### Door Adobe beheerde certificaten {#adobe-managed}
 
@@ -72,24 +72,24 @@ OV en EV bieden deze functies bovendien via DV-certificaten in Cloud Manager.
 
 >[!TIP]
 >
->Als u meerdere aangepaste domeinen hebt en u niet elke keer een certificaat wilt uploaden wanneer u een domein toevoegt, kunt u er baat bij hebben één certificaat met meerdere domeinen te verkrijgen.
+>Als u meerdere aangepaste domeinen hebt, is het mogelijk dat u niet elke keer een certificaat wilt uploaden wanneer u een nieuw domein toevoegt. In dat geval kunt u profiteren van het verkrijgen van één certificaat dat meerdere domeinen bestrijkt.
 
 >[!NOTE]
 >
 >Als twee certificaten betrekking hebben op hetzelfde domein, wordt het certificaat dat nauwkeuriger is, toegepast.
 >
->Als uw domein bijvoorbeeld `dev.adobe.com` is en u een certificaat hebt dat `*.adobe.com` dekt en een certificaat dat `dev.adobe.com` dekt, wordt het laatste certificaat toegepast omdat het nauwkeuriger is.
+>Als uw domein bijvoorbeeld `dev.adobe.com` is en u een certificaat voor `*.adobe.com` en een ander certificaat voor `dev.adobe.com` hebt, wordt het specifiekere (`dev.adobe.com`) gebruikt.
 
-#### Vereisten voor door de klant beheerde certificaten {#requirements}
+#### Vereisten voor door klanten beheerde certificaten {#requirements}
 
-Als u ervoor kiest om uw eigen EV/OV-certificaat te uploaden, moet het aan de volgende vereisten voldoen.
+Als u ervoor kiest om uw eigen EV/OV-certificaat te uploaden, moet het aan de volgende vereisten voldoen:
 
 * AEM as a Cloud Service accepteert certificaten die voldoen aan het OV- (Organization Validation) of EV-beleid (Extended Validation).
    * Cloud Manager biedt geen ondersteuning voor het uploaden van uw eigen DV-certificaten (Domain Validation).
 * Elk certificaat moet een X.509 TLS-certificaat zijn van een vertrouwde certificeringsinstantie met een overeenkomende persoonlijke RSA-sleutel van 2048 bits.
 * Zelfondertekende certificaten worden niet geaccepteerd.
 
-#### Indeling voor door de klant beheerde certificaten {#certificate-format}
+#### Indeling voor door klanten beheerde certificaten {#certificate-format}
 
 SSL-certificaatbestanden moeten de PEM-indeling hebben om bij Cloud Manager te worden geïnstalleerd. Algemene bestandsextensies in de PEM-indeling zijn onder andere `.pem,` . `crt` , `.cer` en `.cert` .
 

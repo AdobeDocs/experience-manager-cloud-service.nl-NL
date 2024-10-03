@@ -1,7 +1,7 @@
 ---
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >
 >[ de Universele Redacteur ](/help/implementing/universal-editor/introduction.md) is niet compatibel met IP lijsten van gewenste personen.
 >
->Als u wenst om de Universele Redacteur te gebruiken, IP moeten de lijsten van gewenste personen niet worden toegelaten.
+>Als u de Universele Redacteur wilt gebruiken, IP moeten de lijsten van gewenste personen niet worden toegelaten.
 
 ## Universal Editor en IP-Lijsten van gewenste personen {#ue-ip-allow-lists}
 
@@ -197,7 +197,7 @@ De volgende lijst toont het verschil tussen de eigenschappen beschikbaar in de C
 >* Lever een [ interactieve 3D-Aangedreven ervaring ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Andere [ Dynamic Media middelbank ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Een ondersteuningsticket aanmelden {#support-ticket}
+## Een ondersteuningsticket vastleggen {#support-ticket}
 
 Als een productkwestie extra onderzoek en het oplossen van problemen vereist en reactie SLTs moet ontmoeten, kunt u een steunkaartje voorleggen.
 
