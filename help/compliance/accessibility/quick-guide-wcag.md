@@ -4,10 +4,10 @@ description: A Quick Guide to the Web Content Accessibility Guidelines (WCAG) ve
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 88%
+source-wordcount: '1749'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,9 @@ De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/T
 
 >[!NOTE]
 >
->Een [bijgewerkte versie van de richtlijnen, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) wordt momenteel ontwikkeld, maar wordt hier niet in overweging genomen.
+>Aangezien deze documenten de [ bijgewerkte versie van de richtsnoeren werden geschreven, WCAG 2.2 ](https://www.w3.org/TR/WCAG/) werd ter beschikking gesteld in oktober 2023.
+>
+>Zie [ Vergelijking met WCAG 2.1 ](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) en [ Nieuwe Eigenschappen in WCAG 2.2 ](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap. Zij adviseren auteurs, ontwerpers en ontwikkelaars van webcontent om ervoor te zorgen dat de bronnen die zij produceren, zo toegankelijk mogelijk zijn voor zoveel mogelijk mensen, ongeacht hun handicap, bijvoorbeeld een visuele handicap, gehoorverlies, leermoeilijkheden of leeftijdsgebonden beperkingen.
 
