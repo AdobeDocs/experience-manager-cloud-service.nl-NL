@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
+source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,6 @@ U kunt tot de volledige controleresultaten toegang hebben door het **lusje van R
 >* Om meer details op te leren hoe de controlewerken, zie {de Details van de Evaluatie van de Controle van 0} Ervaring ](#details).[
 >* Om te weten hoe te om een Controle van de Ervaring op bestelling in werking te stellen, zie [ Rapporten van de Controle op bestelling ](#on-demand).
 >* Als u kwesties met de controle ervaart, zie [ de Uitdagingen van de Controle van de Ervaring ](#issues).
->* Voor algemene prestatiesuiteinden, zie [ Algemene Tips van Prestaties ](#performance-tips).
 
 ### De langzaamste pagina&#39;s weergeven {#view-slowest-pages}
 
@@ -155,38 +154,11 @@ Als u op een bepaald tijdstip op het diagram klikt, wordt een pop-up geopend met
 
 #### Resultaten van de controle van de ervaring {#scan-results}
 
-De **de aftastenresultaten van de Controle van de Ervaring** sectie geeft aanbevelingen op hoe te om uw score en details van alle gescande pagina&#39;s te verbeteren. Het bestaat uit twee delen:
-
-* **[Recommendations](#recommendations)**
-* **[Gescande pagina&#39;s](#scanned-pages)**
-
-##### Recommendations {#recommendations}
-
-De **Recommendations** sectie toont een gezamenlijke reeks inzichten. Door gebrek, worden de aanbevelingen voor **prestaties** getoond. Gebruik drop-down naast de **Recommendations** rubriek om in een andere categorie te veranderen.
-
-![ Recommendations ](assets/experience-audit-recommendations.png)
-
-Klik op een aanbeveling om details ervan weer te geven.
-
-![ details van de Aanbeveling ](assets/experience-audit-recommendations-details.png)
-
-Indien beschikbaar, bevatten de uitgebreide aanbevelingen details ook het percentage van het effect van de aanbevelingen, helpen nadruk op de meest impactful veranderingen. Daarnaast kunnen uitgebreide aanbevelingen relevante AEM documentatiekoppelingen en tips bevatten die u kunnen begeleiden bij het implementeren van de voorgestelde oplossingen.
-
-Klik **zie pagina** verbinding in de detailmening om de pagina&#39;s te zien waarop de aanbeveling van toepassing is.
-
-![ Pagina&#39;s voor de aanbevelingsdetails ](assets/experience-audit-details-pages.png)
-
-##### Gescande pagina&#39;s {#scanned-pages}
-
-De **Gescande pagina&#39;s** sectie geeft details van scores op alle gescande pagina&#39;s. Gebruik **Vorige** en **Volgende** knopen aan pagina door de resultaten en kies op hoeveel de vertoning zou moeten pagineren.
+De **sectie van de het aftasten van de Controle van de Ervaring** geeft details van scores op alle afgescande pagina&#39;s. Gebruik **Vorige** en **Volgende** knopen aan pagina door de resultaten en kies op hoeveel de vertoning zou moeten pagineren.
 
 ![ Gescande pagina&#39;s ](assets/experience-audit-scanned-pages.png)
 
-Klik de verbinding van een bepaalde pagina werkt de **Uitgezochte** filter van de [**scores van de Pagina bij — trendmatige** sectie ](#trend) en toont het **Scores &amp; aanbevelingen** lusje voor de geselecteerde pagina.
-
-![ de resultaten van de Pagina ](assets/experience-audit-page-results.png)
-
-Het **Ruwe rapporten** lusje geeft u scores voor elke controle van de pagina. Klik de rapportdatum in de **kolom van het Rapport van de Lighthouse** om een JSON- dossier van de ruwe gegevens terug te winnen.
+Klik de verbinding van een bepaalde pagina werkt de **Uitgezochte** filter van de [**scores van de Pagina bij — trendmatige** sectie ](#trend) en toont het **Ruwe rapporten** lusje geeft u scores voor elke controle van de pagina. Klik de rapportdatum in de **kolom van het Rapport van de Lighthouse** om een JSON- dossier van de ruwe gegevens terug te winnen.
 
 ![ Onbewerkt rapport ](assets/experience-audit-raw-reports.png)
 
@@ -239,20 +211,7 @@ De pagina&#39;s zijn mogelijk niet beschikbaar omdat:
 
 >[!TIP]
 >
->[ die tot de ruwe rapporten ](#scanned-pages) voor een pagina toegang hebben kan details op verstrekken waarom de pagina niet kon worden gecontroleerd.
-
-## Algemene prestatietips {#performance-tips}
-
-Twee van de meest voorkomende problemen die eenvoudig te verhelpen zijn, hebben betrekking op Cumulatieve layoutverschuivingen (CLS) en de grootste inhoudelijke verf (LCP).
-
-U kunt deze gebieden verbeteren door het volgende te doen:
-
-* Het laden van de afbeeldingen boven de vouw is niet lui. Dit is de inhoud die in de browser zichtbaar is zonder dat u omlaag hoeft te schuiven.
-* Correcte prioritering van de manier waarop bronnen worden geladen (bijvoorbeeld door de afbeeldingen asynchroon onder de voud te laden nadat het document is geladen).
-* JavaScript- en CSS-bestanden die worden gebruikt om inhoud boven de vouw weer te geven (indien nodig).
-* De verticale ruimte behouden door een hoogte-breedteverhouding toe te wijzen aan containers die langzaam worden geladen of later worden gerenderd.
-* Afbeeldingen converteren naar WebP-indeling om de grootte ervan te beperken.
-* Het gebruik van `<picture>` en de afbeelding `srcset` met verschillende afbeeldingsgrootten voor verschillende viewportgrootten (en om ervoor te zorgen dat het formaat werkt).
+>[ die tot de ruwe rapporten ](#scan-results) voor een pagina toegang hebben kan details op verstrekken waarom de pagina niet kon worden gecontroleerd.
 
 ## Gegevens van de evaluatie van de ervaring {#details}
 
@@ -261,7 +220,3 @@ De volgende details bieden aanvullende informatie over hoe de Experience Audit u
 * De controle scant het oorsprongs (`.com`) domein van de [ gevormde de de paginawegen van de Controle van de Ervaring ](#configuration) van de uitgever om echte gebruikerservaringen te simuleren, die u helpen betere besluiten nemen over het beheren van en het optimaliseren van uw websites.
 * Bij de productie van volledige-stapelpijpleidingen wordt de testomgeving gescand. Om ervoor te zorgen dat de controle relevante details tijdens de controle verstrekt, moet de inhoud van de testomgeving zo dicht mogelijk bij de productieomgeving liggen.
 * De pagina&#39;s die in **worden getoond Uitgezochte** drop-down in de [**scores van de Pagina — trendmatige** sectie ](#trend) zijn alle bekende pagina&#39;s die de Controle van de Ervaring in het verleden wordt gescand.
-* [ de aanbeveling van A ](#recommendations) kan een potentiële winst en een verschil van het vorige aftasten hebben.
-* De controle van de ervaring schat potentiële verbeteringen door het ruwe rapport voor elke pagina te verwerken. Het correleert verspilde bytes of milliseconden met inzichten, die een gewogen effect op de prestatiesscore toewijzen. De controle verschaft deze informatie, en de betrokken pagina&#39;s, om te helpen beslissen welke aanbeveling moet worden gevolgd.
-Zie de [ Algemene sectie van de Uiteinden van Prestaties ](#performance-tips) voor meer details.
-* Een front-end pijpleiding kan aan een bestaand milieu opstellen, en de veelvoudige front-end pijpleidingen kunnen het zelfde milieu richten. Omdat de scanresultaten worden samengevoegd op het niveau van de omgeving, zijn de scores, trends en aanbevelingen consistent. Deze resultaten worden weergegeven in de geselecteerde omgeving, ongeacht welke pijpleiding de scan heeft geactiveerd.
