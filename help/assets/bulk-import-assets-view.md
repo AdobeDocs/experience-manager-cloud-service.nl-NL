@@ -4,9 +4,9 @@ description: Leer hoe u importmiddelen in bulk importeert met de nieuwe gebruike
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1701'
 ht-degree: 0%
 
 ---
@@ -125,11 +125,23 @@ Voer de volgende stappen uit om een configuratie voor bulkimport te maken in de 
    >* Als u **Volledige Dropbox** terwijl het creëren van de toepassing van de Dropbox en de omslag selecteert die de activa bevat bestaat bij `https://www.dropbox.com/home/bulkimport-assets`, dan specificeer `bulkimport-assets` op het **[!UICONTROL Source Folder]** gebied.
    >* Als u **omslag van de App** terwijl het creëren van de toepassing van de Dropbox en de omslag selecteert die de activa bevat bestaat bij `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`, dan specificeer `bulkimport-assets` in het **[!UICONTROL Source Folder]** gebied, waar `BulkImportAppFolderScope` naar de naam van de toepassing verwijst. `Apps` wordt in dit geval automatisch toegevoegd na `home` .
 
+   >[!NOTE]
+   >
+   >Als u OneDrive als gegevensbron gebruikt, geeft u het pad van de bronmap op op basis van de volgende regels:
+   >* Geef alleen de naam van de hoofdmap op, zonder het domein. Als het volledige URL-pad van de map `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/` is, geeft u `/Importfolder/` op in het veld **[!UICONTROL Source Folder]** .
+   >* Als de mapnaam meerdere woorden bevat, gescheiden door spaties, geeft u de naam op met de spaties in de configuratie Bulk importeren.
+   >* De bronmap moet zich in de hoofdmap van de map bevinden. Mappaden worden niet ondersteund.
+
 1. (Optioneel) Selecteer de optie **[!UICONTROL Delete source file after import]** om de oorspronkelijke bestanden uit de opslagplaats voor brongegevens te verwijderen nadat de bestanden in Experience Manager Assets zijn geïmporteerd.
 1. Selecteer de **[!UICONTROL Import Mode]** . Selecteer **[!UICONTROL Skip]**, **[!UICONTROL Replace]** of **[!UICONTROL Create Version]** . De modus Overslaan is de standaardinstelling en in deze modus slaat de functie Instantor over om een element te importeren als dit al bestaat.
    ![ de brondetails van de Invoer ](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Optioneel) Geef het metagegevensbestand op dat u wilt importeren, in CSV-indeling, in het veld **[!UICONTROL Metadata File]** . Het bronbestand voor metagegevens moet zich in de bronmap bevinden. Klik op **[!UICONTROL Next]** om naar **[!UICONTROL Location & Filters]** te navigeren.
+
+   >[!NOTE]
+   >
+   >Afhankelijk van de beveiligingsregels van uw organisatie is het mogelijk dat u beheerderstoestemming voor deze toepassing nodig hebt om verbinding te maken met het gereedschap Bulk importeren. Als dit wordt vereist, moet de beheerder toestemming verstrekken alvorens de bulkinvoerconfiguratie kan worden bewaard.
+
 1. Als u een locatie in DAM wilt definiëren waar elementen moeten worden geïmporteerd met het veld **[!UICONTROL Assets Target Folder]** , geeft u een pad op. Bijvoorbeeld `/content/dam/imported_assets` .
 1. (Optioneel) Geef in de sectie **[!UICONTROL Choose Filters]** de minimale bestandsgrootte van elementen op in MB om deze op te nemen in het innameproces in het veld **[!UICONTROL Filter by Min Size]** .
 1. (Optioneel) Geef de maximale bestandsgrootte van elementen op in MB om ze op te nemen in het innameproces in het veld **[!UICONTROL Filter by Max Size]** .
