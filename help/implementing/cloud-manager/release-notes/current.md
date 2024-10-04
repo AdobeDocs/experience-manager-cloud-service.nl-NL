@@ -3,9 +3,9 @@ title: Opmerkingen bij de release van Cloud Manager 2024.10.0 in Adobe Experienc
 description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.10.0 in AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,16 @@ De volgende release is gepland voor 14 november 2024.
 * <!-- BOTH CS & AMS --> De in Cloud Manager gebruikte versie van AEM Archetype wordt nu bijgewerkt naar versie 26. Zie [ https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
+
+* <!-- CS ONLY --> Bij het toevoegen van een nieuw aangepast domein maakte de vorige verificatiemethode een langdurig DNS-validatieproces nodig. Adobe heeft dit proces voor klanten vereenvoudigd. Nu hoeft u alleen een geldig SSL-certificaat (EV of OV) op te geven dat als bewijs van eigendom dient. Het is niet langer nodig om TXT-records in de DNS bij te werken.
+
+  >[!NOTE]
+  >
+  >Deze functie is alleen van toepassing op EV- en OV-certificaten die door de klant worden beheerd. DV-certificaten die door Adobe worden beheerd, vereisen nog steeds de aanwezigheid van een CNAME-record.
+
+  Zie [ een naam van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) toevoegen.
+
+  ![ verifieer domein voor een klant beheerd EV/OV- certificaat ](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> Wanneer u netwerkinfrastructuur toevoegt of bewerkt, worden de waarden in de IP-adres- en netwerkmaskervelden gevalideerd volgens de volgende regels:
 
