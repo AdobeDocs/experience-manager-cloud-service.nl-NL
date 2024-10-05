@@ -6,9 +6,9 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren doo
 
 >[!NOTE]
 >
->De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Gelieve te zien het document [ Toevoegend Privé Bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor details en de volledige lijst van beperkingen.
+>De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie [ een Privé Bewaarplaats in Cloud Manager ](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor details en de volledige lijst van beperkingen toevoegen.
 
 ## Verwijderen van pijpleidingen {#deleting-pipelines}
 

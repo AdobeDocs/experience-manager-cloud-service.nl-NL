@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ Een gerichte plaatsing stelt code slechts voor geselecteerde delen van uw AEM to
 
 >[!NOTE]
 >
->De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Gelieve te zien het document [ Toevoegend Privé Bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor details en de volledige lijst van beperkingen.
+>De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie [ Toevoegend Privé Bewaarplaatsen in Cloud Manager ](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor details en de volledige lijst van beperkingen.
 
 De stappen om de verwezenlijking van uw niet-productie, gerichte plaatsingspijpleiding te voltooien zijn het zelfde zodra u een plaatsingstype kiest.
 

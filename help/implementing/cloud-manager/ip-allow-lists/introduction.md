@@ -5,9 +5,9 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Na het toevoegen, [ IP kunnen de Lijsten van gewenste personen worden toegepast 
 
 ## Beperkingen {#limitations}
 
-Alvorens IP lijsten van gewenste personen te gebruiken, gelieve de volgende beperkingen in hun functionaliteit, gebruik, en effect op andere eigenschappen te begrijpen.
+Alvorens IP Lijsten van gewenste personen te gebruiken, begrijp de volgende beperkingen in hun functionaliteit, gebruik, en effect op andere eigenschappen.
 
 ### Algemene Beperkingen van IP Lijsten van gewenste personen {#general}
 
@@ -80,7 +80,7 @@ Wanneer u [ de IP Lijst van gewenste personen ](/help/implementing/cloud-manager
 
 Om verstoring van het runnen van de front-end pijpleiding te vermijden, zorg ervoor dat deze Lijst van gewenste personen van Cloud Manager IP wordt toegevoegd. Dan, pas de lijst op het milieu van de Auteur *toe alvorens* u de pijpleiding toelaat.
 
-Gelieve te zien de documenten [ IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) toepassen en [ vooraan-eindpijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) voor meer informatie toelaten.
+Zie [ IP Lijst van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) toepassen en [ eerst-eind pijpleiding ](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) voor meer informatie toelaten.
 
 ### Universal Editor en IP-Lijsten van gewenste personen {#universal-editor}
 

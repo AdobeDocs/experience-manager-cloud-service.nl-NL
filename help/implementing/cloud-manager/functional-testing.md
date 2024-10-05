@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: b8b1748f9c50178fbcb167370c53285b55d809b1
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Zie [ open-sourced voorbeeldtests ](https://github.com/adobe/aem-test-samples/tr
 
 Zie [ het Testen van UI van de Douane ](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) voor meer informatie.
 
-### Experience Audit
+### Ervaring audit
 
 De gate van de ervaringscontrole van de kwaliteit voert [ Lighthouse van Google ](https://developer.chrome.com/docs/lighthouse/overview/) controles tegen de webpagina van de klant uit.
 

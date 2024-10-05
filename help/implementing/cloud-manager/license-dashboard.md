@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,13 @@ Cloud Manager biedt een dashboard voor het eenvoudig weergeven van AEMaaCS-produ
 >
 >Het licentiedashboard geldt alleen voor de AEM as a Cloud Service-programma&#39;s. [ de programma&#39;s van AMS ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) zijn niet inbegrepen in het vergunningsdashboard.
 >
->Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), gelieve het document [ te zien navigerend de UI van Cloud Manager ](/help/implementing/cloud-manager/navigation.md#program-cards).
+>Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie [ Navigerend Cloud Manager UI ](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Overzicht {#overview}
 
-Het Cloud Manager-licentiedashboard biedt eenvoudige toegang tot de volgende informatie:
+Het Cloud Manager-licentiedashboard biedt eenvoudig toegang tot de oplossingsrechten die beschikbaar zijn in al uw programma&#39;s, inclusief wat er wordt gebruikt en wat er beschikbaar is. En, de verbruiksmetriek van het Verzoek van de Inhoud die door maand voor de oplossing van Plaatsen wordt getrend.
 
-1. De rechten van de oplossing zijn beschikbaar aan u over al uw programma&#39;s, met inbegrip van wat wordt gebruikt en wat beschikbaar is
-1. De verbruiksmetriek van het Verzoek van de inhoud die door maand voor de oplossing van Plaatsen wordt trendt
-
-## Het licentiedashboard gebruiken {#using-dashboard}
-
-Ga als volgt te werk om het licentiedashboard te openen.
+## Het licentiedashboard openen {#using-dashboard}
 
 >[!NOTE]
 >
@@ -40,7 +35,7 @@ Ga als volgt te werk om het licentiedashboard te openen.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, klik de hamburger menuknoop op de [ Kopbal van Cloud Manager ](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Dit onthult de tabbladen.
-1. Tik of klik de **optie van de Vergunning** in het lusje.
+1. Klik de **optie van de Vergunning** in het lusje.
 
 ![ Dashboard van de Vergunning ](assets/license-dashboard.png)
 
@@ -105,6 +100,8 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Veelgestelde vragen {#faq}
 
++++
+
 ### Wat is een inhoudsverzoek? {#what-is-a-content-request}
 
 Een inhoudsverzoek is een verzoek dat in AEM Sites of om het even welk klant-verstrekt in het voorgeheugen onderbrengend systeem zoals een netwerk van de inhoudslevering komt om inhoud of gegevens in één van beide formaat van de HTML als paginamening of in formaat JSON als API vraag te leveren.
@@ -114,6 +111,9 @@ Een inhoudsverzoek is een verzoek dat in AEM Sites of om het even welk klant-ver
 Inhoudsverzoeken sluiten verzoeken of activiteiten uit die door of namens Adobe worden geïnitieerd met als enig doel het aanbieden van producten en diensten. Adobe-geïdentificeerd gebruikersagent verkeer van bots, kruiplers, en spinnen met betrekking tot gemeenschappelijke onderzoeksmotoren en sociale media diensten is ook uitgesloten.
 
 Zie ook [ verzoeken van de inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md) begrijpen.
++++
+
++++
 
 ### Hoe meet Adobe Experience Manager verzoeken om inhoud? {#how-are-content-requests-measured}
 
@@ -122,15 +122,26 @@ Aanvragen voor inhoud worden bijgehouden op AEM as a Cloud Service Edge-servers.
 AEM heeft ook regels om bekende bots uit te sluiten, met inbegrip van bekende diensten die de site regelmatig bezoeken om hun zoekindex of service te vernieuwen.
 
 Zie ook [ Begrijpend de Verzoeken van de Inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Waarom toont mijn Analytics-rapport andere resultaten dan de AEM Content Requests? {#why-are-reports-different}
 
 Aanvragen voor inhoud kunnen variaties hebben met de rapportagehulpprogramma&#39;s Analytics van een organisatie. Voor meer informatie, zie [ Begrijpend de Verzoeken van de Inhoud van de Cloud Service ](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Wat als ik meer over mijn volume van de inhoudshulp zou willen leren? {#current-request-volumes}
 
 Als u meer inzichten in het volume van de inhoudsaanvraag wilt zien in het Dashboard van de Vergunning, kan uw team van de Adobe een rapport verstrekken dat de hoogste volumebestuurders van inhoudverzoeken toont. Neem contact op met uw Adobe-team of met de Adobe Klantenondersteuning om een rapport met het hoogste verbruik aan te vragen.
++++
+
++++
 
 ### Wat als ik mijn eigen CDN gebruik? {#using-own-cdn}
 
 Op het licentiedashboard worden alleen gegevens weergegeven die door de Cloud Service CDN worden bijgehouden. Als u verkiest om uw eigen CDN (BYOCDN) te brengen, rapporteert u het volume van uw inhoudsverzoek terug aan Adobe op jaarbasis, zoals die in uw contract wordt verklaard.
++++
+

@@ -5,9 +5,9 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ De details die voor connectiviteitsverzoeken worden vereist worden hieronder bes
 | **Gebied** | **Beschrijving** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | URL voor uw Dynatrace-omgeving.<br><br> voor klanten van Dynatrace SaaS, is het formaat `https://<your-environment-id>.live.dynatrace.com`.<br><br> Voor Dynatrace Managed-klanten is de indeling `https://<your-managed-url>/e/<environmentId>` |
-| [!DNL Dynatrace Environment ID] | Je Dynatrace-omgeving-id. Gelieve te zien [ hoe ik mijn Gegevens van de Verbinding van Dynatrace krijg?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u dit kunt verkrijgen. |
-| [!DNL Dynatrace Environment Token] | Uw Dynatrace-omgevingstoken. Gelieve te zien [ hoe ik mijn Gegevens van de Verbinding van Dynatrace krijg?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u dit kunt verkrijgen.<br><br> dit zou als geheim moeten worden beschouwd, zo gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien. |
-| [!DNL Dynatrace API access token] | Het API toegangstoken van uw milieu van Dynatrace.  Gelieve te zien [ tot een toegangstoken van Dynatrace API ](#create-dynatrace-access-token) voor hoe te om dit tot stand te brengen.<br><br> dit zou als geheim moeten worden beschouwd zodat gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien.<br><br> Nota: Dit wordt slechts vereist voor Beheerde Dynatrace. |
+| [!DNL Dynatrace Environment ID] | Je Dynatrace-omgeving-id. Zie [ hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u dit kunt verkrijgen. |
+| [!DNL Dynatrace Environment Token] | Uw Dynatrace-omgevingstoken. Zie [ hoe krijg ik mijn Gegevens van de Verbinding van Dynatrace?](#how-do-i-get-my-dynatrace-connection-details) voor hoe u dit kunt verkrijgen.<br><br> dit zou als geheim moeten worden beschouwd, zo gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien. |
+| [!DNL Dynatrace API access token] | Het API toegangstoken van uw milieu van Dynatrace. Zie [ tot een toegangstoken van Dynatrace API ](#create-dynatrace-access-token) voor hoe te om dit tot stand te brengen.<br><br> dit zou als geheim moeten worden beschouwd zodat gebruik aangewezen veiligheidspraktijken. Bijvoorbeeld, beschermt het wachtwoord het in een website zoals **zerobin.net**, die het kaartje van de klantensteun, samen met het wachtwoord kan van verwijzingen voorzien.<br><br> Nota: Dit wordt slechts vereist voor Beheerde Dynatrace. |
 | [!DNL Dynatrace ActiveGate Port] | De Dynatrace ActiveGate-poort waarmee de AEM verbinding moet maken.<br><br> Nota: Dit wordt slechts vereist voor Beheerde Dynatrace. |
 | [!DNL Dynatrace ActiveGate Network Zone] | Uw [ het netwerkstreek van Dynatrace ActiveGate ](https://docs.dynatrace.com/docs/manage/network-zones) om AEM controlegegevens over gegevenscentra en netwerkgebieden efficiënt te leiden.<br><br> Nota: Een het netwerkstreek van Dynatrace ActiveGate is facultatief. |
 | [!DNL AEM Environment ID(s)] | De AEM milieu-id(s) voor Dynatrace om te controleren. |

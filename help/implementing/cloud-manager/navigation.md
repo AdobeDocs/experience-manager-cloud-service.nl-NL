@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ De console Mijn Programma&#39;s biedt een overzicht van alle programma&#39;s waa
 
 >[!TIP]
 >
->Gelieve te zien het document [ Programma&#39;s en de Types van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor details op programma&#39;s.
+>Zie [ Programma&#39;s en de Types van Programma ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) voor details op programma&#39;s.
 
 ### Werkbalken {#my-programs-toolbars}
 
@@ -229,7 +229,7 @@ Door gebrek, wanneer u een programma opent u op het **Overzicht** tabel aankomt.
 
 In de upper-left hoek van de [ kopbal van Cloud Manager ](#cloud-manager-header-2), klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu van lusjes te tonen of te verbergen.
 
-### Vraag-aan-sction {#cta}
+### Oproep tot actie {#cta}
 
 De vraag-aan-actie sectie geeft u nuttige informatie afhankelijk van de status van uw programma. Voor een nieuw programma, kunt u volgende stappen zien gegeven en een herinnering van een go-live datum, [ die tijdens programmaverwezenlijking ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) wordt geplaatst.
 
@@ -241,19 +241,19 @@ Voor een levend programma, de status van uw laatste plaatsing met verbindingen v
 
 ### Milieukaart {#environments}
 
-De **kaart van Milieu** geeft u een overzicht van uw milieu&#39;s evenals verbindingen voor snelle acties.
+De **kaart van Milieu** geeft u een overzicht van uw milieu&#39;s en verbindingen voor snelle acties.
 
 De **kaart van Milieu** maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** om alle milieu&#39;s van het programma te zien.
 
-Gelieve te zien het document [ Leiden Milieu ](/help/implementing/cloud-manager/manage-environments.md) voor details op hoe te om uw milieu&#39;s te beheren.
+Zie ook [ Milieu ](/help/implementing/cloud-manager/manage-environments.md) beheren.
 
-### Pijppijplijnkaart {#pipelines}
+### Pipelkaart {#pipelines}
 
 De **Pijpleidingen** kaart geeft u een overzicht van uw pijpleidingen evenals verbindingen voor snelle acties.
 
 De **Pijpleidingen** kaart maakt slechts van drie pijpleidingen een lijst. Klik **tonen allen** om alle pijpleidingen van het programma te zien.
 
-Gelieve te zien het document [ Leiden Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) voor details op hoe te om uw pijpleidingen te beheren.
+Zie ook [ leiden Pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) voor details op hoe te om uw pijpleidingen te beheren.
 
 ### Prestatiekaart {#performance}
 

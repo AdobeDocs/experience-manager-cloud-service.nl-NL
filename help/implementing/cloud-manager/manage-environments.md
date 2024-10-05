@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2371'
 ht-degree: 0%
 
 ---
@@ -50,13 +50,13 @@ Om een milieu toe te voegen of uit te geven, moet een gebruiker een lid van de *
 
    ![ kaart van Milieu&#39;s ](assets/no-environments.png)
 
-   * **voegt de optie van het Milieu** toe is ook beschikbaar op **Milieu** tabel.
+   * **voegt de optie van het Milieu** toe is ook beschikbaar op het ![ pictogram van Gegevens ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Milieu** tabel.
 
      ![ Milieu&#39;s tabel ](assets/environments-tab.png)
 
    * **voeg Milieu** optie toe kan wegens gebrek aan toestemmingen of afhankelijk van de vergunning gegeven middelen worden onbruikbaar gemaakt.
 
-1. In **voeg milieu** dialoog toe die verschijnt:
+1. In **voeg milieu** dialoogdoos toe:
 
    * Selecteer een [**milieutype**](#environment-types).
       * Het aantal beschikbare/gebruikte omgevingen wordt tussen haakjes achter de naam van het omgevingstype weergegeven.
@@ -310,7 +310,7 @@ In Cloud Manager for Sites worden aangepaste domeinnamen ondersteund voor zowel 
 
 >[!TIP]
 >
->Voor meer informatie, te zien gelieve de document [ Inleiding aan de namen van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>Voor meer informatie, zie [ Inleiding aan de namen van het douanedomein ](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## IP-Lijsten van gewenste personen beheren {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ Het toepassen van een IP lijst van gewenste personen associeert alle IP waaiers 
 
 >[!TIP]
 >
->Voor meer informatie, te zien gelieve de document [ Inleiding aan IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Voor meer informatie, zie [ Inleiding aan IP Lijsten van gewenste personen ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

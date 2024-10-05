@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
    ![ Mening/geef pijpleidingsvariabelen uit ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Het **venster van de Configuratie van Variabelen** opent. Tik of klik de elliptische knoop van de variabele u wenst uit te geven en te selecteren **geeft** uit.
+1. Het **venster van de Configuratie van Variabelen** opent. Tik of klik de elliptische knoop van de variabele u **uitgeven en selecteren** uitgeeft.
 
    ![ geef veranderlijke ](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png) uit
 
@@ -81,7 +81,7 @@ Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
 1. Tik of klik **sparen** om de veranderingen te bewaren u aan de variabelen aan de pijpleiding aanbracht.
 
-Als u wenst om een variabele te schrappen, uitgezocht **Schrapping** in plaats van **geef** van het elliptische menu van de pijpleidingsvariabele in het **venster van de Configuratie van Variabelen** uit.
+Als u een variabele wilt schrappen, uitgezocht **Schrapping** in plaats van **geef** van het ellipsmenu van de pijpleidingsvariabele in het **venster van de Configuratie van Variabelen** uit.
 
 ## Cloud Manager CLI gebruiken {#cli}
 
