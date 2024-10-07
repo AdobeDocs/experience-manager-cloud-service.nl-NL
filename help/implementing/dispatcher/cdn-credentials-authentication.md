@@ -4,9 +4,9 @@ description: Leer hoe te om geloofsbrieven en authentificatie te vormen CDN door
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 83efc7298bc8d211d1014e8d8be412c6826520b8
+source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1486'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,10 @@ Zoals die in [ CDN in AEM as a Cloud Service ](/help/implementing/dispatcher/cdn
 
 Als deel van de opstelling, moeten CDN van de Adobe en CDN van de Klant over een waarde van de `X-AEM-Edge-Key` Kopbal van HTTP akkoord gaan. Deze waarde wordt geplaatst op elk verzoek, bij Klant CDN, alvorens het aan Adobe CDN wordt verpletterd, die dan bevestigt dat de waarde zoals verwacht is, zodat kan het andere kopballen van HTTP vertrouwen, met inbegrip van die die helpen het verzoek aan de aangewezen AEM oorsprong leiden.
 
-De *x-AEM-Edge-Zeer belangrijke* waarde wordt van verwijzingen voorzien door `edgeKey1` en `edgeKey2` eigenschappen in een dossier genoemd `cdn.yaml` of gelijkaardig, ergens onder een top-level `config` omslag. Lees [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure) voor details over de omslagstructuur en hoe te om de configuratie op te stellen.
+De *x-AEM-Edge-Zeer belangrijke* waarde wordt van verwijzingen voorzien door `edgeKey1` en `edgeKey2` eigenschappen in een dossier genoemd `cdn.yaml` of gelijkaardig, ergens onder een top-level `config` omslag. Lees [ Gebruikend Pijpleidingen Config ](/help/operations/config-pipeline.md#folder-structure) voor details over de omslagstructuur en hoe te om de configuratie op te stellen.  De syntaxis wordt beschreven in het onderstaande voorbeeld.
 
-De syntaxis wordt hieronder beschreven:
+>[!WARNING]
+>Rechtstreekse toegang zonder de juiste X-AEM-Edge-Key wordt geweigerd voor alle aanvragen die aan de voorwaarde voldoen (in de onderstaande steekproef betekent dit dat alle aanvragen naar de publicatielaag worden verzonden). Als u authentificatie moet geleidelijk introduceren gelieve te zien [ veilig migrerend het risico van geblokkeerd verkeer ](#migrating-safely) sectie verminderen.
 
 ```
 kind: "CDN"
@@ -78,7 +79,7 @@ Tot de aanvullende eigenschappen behoren:
 
 ### Veilig migreren om het risico van geblokkeerd verkeer te verminderen {#migrating-safely}
 
-Als uw plaats reeds levend is, oefen voorzichtigheid wanneer het migreren aan klant-geleide CDN aangezien een misconfiguration openbaar verkeer kan blokkeren; dit is omdat slechts de verzoeken met de verwachte x-AEM-Edge-Zeer belangrijke kopbalwaarde door Adobe CDN zullen worden goedgekeurd. Een benadering wordt geadviseerd wanneer een extra voorwaarde tijdelijk inbegrepen in de authentificatieregel is, die het ertoe brengt om het verzoek slechts te evalueren als een testkopbal wordt omvat:
+Als uw plaats reeds levend is, oefen voorzichtigheid wanneer het migreren aan klant-geleide CDN aangezien een misconfiguration openbaar verkeer kan blokkeren; dit is omdat slechts de verzoeken met de verwachte x-AEM-Edge-Zeer belangrijke kopbalwaarde door Adobe CDN zullen worden goedgekeurd. Een benadering wordt geadviseerd wanneer een extra voorwaarde tijdelijk inbegrepen in de authentificatieregel is, die het veroorzaakt om het verzoek slechts te blokkeren als een testkopbal inbegrepen is of als een weg wordt aangepast:
 
 ```
     - name: edge-auth-rule
@@ -86,6 +87,17 @@ Als uw plaats reeds levend is, oefen voorzichtigheid wanneer het migreren aan kl
           allOf:  
             - { reqProperty: tier, equals: "publish" }
             - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:
+            - { reqProperty: tier, equals: "publish" }
+            - { reqProperty: path, like: "/test*" }
         action:
           type: authenticate
           authenticator: edge-auth
