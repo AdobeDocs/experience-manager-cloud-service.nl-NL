@@ -1,22 +1,24 @@
 ---
-title: SSL-certificaatfouten oplossen
-description: Leer hoe u SSL-certificaatfouten kunt oplossen door algemene oorzaken aan te geven, zodat u veilige verbindingen kunt onderhouden.
+title: Problemen met SSL-certificaten oplossen
+description: Leer hoe u problemen met SSL-certificaten kunt oplossen door algemene oorzaken aan te geven, zodat u veilige verbindingen kunt onderhouden.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
+source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
 
-# SSL-certificaatfouten oplossen {#certificate-errors}
+# SSL-certificaatproblemen oplossen {#certificate-problems}
 
-Er kunnen bepaalde fouten optreden als een certificaat niet correct is geïnstalleerd of niet voldoet aan de eisen van Cloud Manager.
+Leer hoe u problemen met SSL-certificaten kunt oplossen door algemene oorzaken aan te geven, zodat u veilige verbindingen kunt onderhouden.
 
 +++**Ongeldig certificaat**
+
+## Ongeldig certificaat {#invalid-certificate}
 
 Deze fout treedt op omdat de klant een gecodeerde persoonlijke sleutel heeft gebruikt en de sleutel in DER-indeling heeft verstrekt.
 
@@ -24,11 +26,15 @@ Deze fout treedt op omdat de klant een gecodeerde persoonlijke sleutel heeft geb
 
 +++**Persoonlijke sleutel moet formaat PKCS 8 zijn**
 
+## Persoonlijke sleutel moet de PKCS 8-indeling hebben {#pkcs-8}
+
 Deze fout treedt op omdat de klant een gecodeerde persoonlijke sleutel heeft gebruikt en de sleutel in DER-indeling heeft verstrekt.
 
 +++
 
 +++**Correcte certificaatorde**
+
+## Certificaatvolgorde corrigeren {#certificate-order}
 
 De gemeenschappelijkste reden voor een certificaatplaatsing om te ontbreken is dat de midden of kettingcertificaten niet in de correcte orde zijn.
 
@@ -58,6 +64,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 +++**verwijder cliëntcertificaten**
 
+## Clientcertificaten verwijderen {#client-certificates}
+
 Wanneer u een certificaat toevoegt, als er een fout optreedt die lijkt op het volgende:
 
 ```text
@@ -69,6 +77,8 @@ Waarschijnlijk hebt u het clientcertificaat opgenomen in de certificaatketen. Zo
 +++
 
 +++**beleid van het Certificaat**
+
+## Certificaatbeleid {#policy}
 
 Controleer het beleid van uw certificaat als de volgende fout optreedt.
 
@@ -117,11 +127,26 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 # "DV Policy - Not Accepted"
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
++++
+
+++**Geldigheid van certificaat
+
+## Geldigheid van certificaat {#validity}
+
+Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is vanaf de huidige datum. Controleer de geldigheid van de certificaatketen.
 
 +++
 
-+++**de geldigheidsdata van het Certificaat**
++++**Onjuist SAN-certificaat is toegepast op mijn domein
 
-Cloud Manager verwacht dat het SSL-certificaat ten minste 90 dagen geldig is vanaf de huidige datum. Controleer de geldigheid van de certificaatketen.
+## Onjuist SAN-certificaat is toegepast op mijn domein {#wrong-san-cert}
+
+Laten we zeggen dat u `dev.yoursite.com` en `stage.yoursite.com` wilt koppelen aan uw niet-productieomgeving en `prod.yoursite.com` aan uw productieomgeving.
+
+Als u de CDN voor deze domeinen wilt configureren, hebt u een certificaat nodig dat voor elk domein is geïnstalleerd. U installeert dus één certificaat dat `*.yoursite.com` voor de niet-productiedomeinen dekt en een ander certificaat dat `*.yoursite.com` ook voor uw productiedomeinen dekt.
+
+Deze configuratie is geldig. Wanneer u echter een van de certificaten bijwerkt, omdat beide certificaten dezelfde SAN-invoer dekken, installeert de CDN het meest recente certificaat op alle toepasselijke domeinen, wat onverwacht kan lijken.
+
+Hoewel dit onverwacht kan zijn, is dit geen fout en is het standaardgedrag van onderliggende CDN. Als u twee of meer SAN-certificaten hebt die betrekking hebben op hetzelfde SAN-domeinitem en dat domein wordt gedekt door één certificaat en het andere wordt bijgewerkt, wordt het laatste domein nu geïnstalleerd voor het domein.
 
 +++

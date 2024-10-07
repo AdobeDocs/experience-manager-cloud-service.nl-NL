@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,18 @@ ht-degree: 0%
 
 # SSL-certificaten beheren {#managing-ssl-certificates}
 
-Leer hoe u Cloud Manager kunt gebruiken om de status te controleren van uw door Adobe beheerde en door de klant beheerde SSL-certificaten en hoe u deze verwijdert. Voor door klanten beheerde certificaten kunt u deze ook bewerken en bijwerken (vervangen).
+Leer hoe u Cloud Manager kunt gebruiken om de status van uw SSL-certificaten te controleren en hoe u deze kunt bewerken, vervangen, bijwerken en verwijderen.
 
 ## De status van SSL-certificaten controleren {#checking-status-an-ssl-certificate}
 
-De status van uw SSL certificaten kan in een blik van de **SSL Certificaten** pagina worden begrepen.
+Cloud Manager geeft een overzicht van de status van alle certificaten voor uw programma.
+
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer het aangewezen programma.
+1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
+1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het zijmenu te openbaren.
+1. Onder de **rubriek van de Diensten**, klik ![ Slot gesloten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificaten**.
+
+De **SSL Certificaten** pagina verstrekt de status van uw SSL certificaten.
 
 | Status van het SSL-certificaat | Beschrijving |
 | --- | --- |
@@ -51,6 +58,12 @@ Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol zijn van de Mana
    * Op het **gebied van de ketting van het Certificaat** (of ketting van vertrouwen), kleef de certificaatketting.
 
 1. Klik **Update** om uw veranderingen te bewaren en hen automatisch toe te passen.
+
+>[!NOTE]
+>
+>Als u twee of meer SAN-certificaten hebt die betrekking hebben op hetzelfde SAN-domeinitem en dat domein wordt gedekt door één certificaat en het andere wordt bijgewerkt, wordt het laatste domein nu geïnstalleerd voor het domein.
+>
+>Zie [ problemen oplossen SSL van het Certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) voor meer informatie.
 
 ## Een verlopen door de klant beheerd SSL-certificaat vervangen {#replace-ssl-certificate}
 
@@ -109,4 +122,3 @@ Het bericht verdwijnt nadat alle bestaande omgevingsconfiguraties zijn gemigreer
 Zie [ een SSL certificaat ](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) voor meer details toevoegen.
 
 Een gelijkaardig bericht wordt ook verstrekt op de **IP Lijst van gewenste personen** en de **milieu&#39;s** pagina&#39;s voor milieu&#39;s die reeds bestaande CDN configuraties voor IP Lijsten van gewenste personen of de namen van het douanedomein hebben.
-
