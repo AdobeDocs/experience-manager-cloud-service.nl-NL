@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
+source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1411'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ De activering van de 2024.10.0-functie biedt de volledige functie die is ingeste
 * SITES - 24166: Verre activa matiging voor redacteur touch-UI.
 * SITES - 24409: Registreer alle request processors op slechts één HTTP-methode.
 * SITES - 25008: Verbeter de behandeling van PersistenceExceptions en toestemmingsproblemen.
-* SITES - 24821: [ Xwalk ] Make aem.page / aem.live het gebrek.
+* SITES - 24821: Make aem.page / aem.live the default.
 
 ### Opgeloste problemen {#fixed-issues-17964}
 
@@ -123,7 +123,7 @@ De activering van de 2024.10.0-functie biedt de volledige functie die is ingeste
 * SITES - 24025: 302 Omleidt in AEM terugkerende plaatsheader gebruikend interne DNS in plaats van openbare DNS
 * SITES - 24036: Onderzoek vereist voor AEM blijvende tekens van RTE in ASCII-indeling
 * SITES - 24317: Proxyconfiguratie werkt niet met basisverificatie
-* SITES - 24918: [ Xwalk ] bevestigt 504 fouten die nu en dan zijn teruggekeerd wanneer het gebruiken van specifiek ip egress.
+* SITES - 24918: bevestig 504 fouten die af en toe zijn teruggekeerd wanneer het gebruiken van specifiek ip egress.
 
 ### Bekende problemen {#known-issues-17964}
 
@@ -131,9 +131,19 @@ De activering van de 2024.10.0-functie biedt de volledige functie die is ingeste
 
 ### Verouderde functies en API&#39;s {#deprecated-17964}
 
-We zijn bezig met het bijwerken van `com.day.cq.wcm.api` en met de huidige release hebben we een aantal methoden en klassen gemarkeerd als `@Deprecated` . Deze zullen in toekomstige versies worden verwijderd, dus gelieve te overwegen aan hun voorgestelde alternatieven over te schakelen als u om het even welk van hen gebruikt.
-
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
+
+Hieronder volgt een overzicht van onlangs vervangen functies of functies die verouderd zijn.
+
+#### JavaScript Use API {#javascript-use-api}
+
+[ het Gebruik API van JavaScript ](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) wordt officieel verouderd toe te schrijven aan uitdagingen hebben de gebruikers het zuiveren en het handhaven van code die hefboomwerkingen API, evenals prestatiesbeperkingen in vergelijking met het alternatief van Java.
+
+U zou overgang aan [ het Gebruik API van Java moeten overschakelen, ](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) dat betere prestaties, gemakkelijkere zuivering, en grotere steun op lange termijn aanbiedt.
+
+#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
+
+Houd er rekening mee dat de Adobe bezig is met het bijwerken van `com.day.cq.wcm.api` . Sommige methoden en klassen zijn in de huidige release gemarkeerd als `@Deprecated` . Deze worden in toekomstige versies verwijderd. Overstappen op de voorgestelde alternatieven.
 
 ### Beveiligingsproblemen {#security-17964}
 
