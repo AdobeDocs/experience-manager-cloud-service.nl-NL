@@ -3,14 +3,17 @@ title: AEM Assets integreren met downstreamtoepassingen
 description: AEM Assets integreren met downstreamtoepassingen
 role: User
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: 3022551a38ab287d4d6ea131dcee88fb1b40e5b7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
 
 # AEM Assets integreren met downstreamtoepassingen {#integrate-dynamic-media-open-apis}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Alle [ goedgekeurde activa ](/help/assets/approve-assets.md) beschikbaar in de gegevensopslagplaats van de Experience Manager zijn beschikbaar voor levering aan stroomafwaartse toepassingen.
 

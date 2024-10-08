@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2821'
 ht-degree: 0%
 
 ---
 
 # Middelenmicroservices en verwerkingsprofielen gebruiken {#get-started-using-asset-microservices}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Asset microservices zorgen voor schaalbare en veerkrachtige verwerking van middelen met behulp van cloudnative toepassingen (ook wel workers genoemd). Adobe beheert de services voor een optimale afhandeling van verschillende soorten bedrijfsmiddelen en verwerkingsopties.
 
@@ -181,11 +184,11 @@ Als u wilt controleren of elementen worden verwerkt, bekijkt u een voorvertoning
 
 *Cijfer: Voorbeeld van twee extra vertoningen die door een verwerkingsprofiel worden geproduceerd dat op de ouderomslag wordt toegepast.*
 
-## Post-verwerkingsworkflows {#post-processing-workflows}
+## Nabewerkingsworkflows {#post-processing-workflows}
 
-In een situatie waarin aanvullende verwerking van elementen vereist is die niet met de verwerkingsprofielen kan worden bereikt, kunnen extra nabewerkingsworkflows aan de configuratie worden toegevoegd. Met Post-verwerking kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset-microservices.
+In een situatie waarin aanvullende verwerking van elementen vereist is die niet met de verwerkingsprofielen kan worden bereikt, kunnen extra nabewerkingsworkflows aan de configuratie worden toegevoegd. Na de verwerking kunt u volledig aangepaste verwerking toevoegen bovenop de configureerbare verwerking met behulp van asset microservices.
 
-De werkschema&#39;s van Post-verwerkend, of [ auto-begin werkschema ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), als gevormd, automatisch uitgevoerd door [!DNL Experience Manager] nadat de microdienstenverwerking eindigt. Het is niet nodig om handmatig starters voor werkstromen toe te voegen om de werkstromen te activeren. De voorbeelden zijn:
+De werkschema&#39;s na verwerking, of [ auto-begin werkschema ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), indien gevormd, worden automatisch uitgevoerd door [!DNL Experience Manager] nadat de microdienstenverwerking eindigt. Het is niet nodig om handmatig starters voor werkstromen toe te voegen om de werkstromen te activeren. De voorbeelden zijn:
 
 * Aangepaste workflowstappen om elementen te verwerken.
 * Integraties om metagegevens of eigenschappen toe te voegen aan elementen van externe systemen, bijvoorbeeld product- of procesgegevens.
@@ -202,7 +205,7 @@ Voor details over welke standaardwerkschemastap in het post-verwerkingswerkschem
 
 ### Workflowmodellen voor naverwerking maken {#create-post-processing-workflow-models}
 
-Workflowmodellen voor Post-verwerking zijn gewone [!DNL Experience Manager] workflowmodellen. Maak verschillende modellen als u verschillende verwerkingen nodig hebt voor verschillende opslaglocaties of elementtypen.
+Workflowmodellen na verwerking zijn standaardworkflowmodellen van [!DNL Experience Manager] . Maak verschillende modellen als u verschillende verwerkingen nodig hebt voor verschillende opslaglocaties of elementtypen.
 
 De verwerkingsstappen worden indien nodig toegevoegd. U kunt zowel de ondersteunde stappen als aangepaste workflowstappen gebruiken.
 
@@ -229,8 +232,8 @@ Voor gangbare gebruiksgevallen na verwerking kunt u de methode gebruiken om een 
 
 U kunt de aangepaste workflowrunnerservice configureren voor de geavanceerde configuraties die niet gemakkelijk kunnen worden uitgevoerd door een workflow toe te passen op een map. Bijvoorbeeld een werkstroom die een reguliere expressie gebruikt. De Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) is een OSGi-service. Het verstrekt de volgende twee opties voor configuratie:
 
-* Post-verwerkingsworkflows per pad (`postProcWorkflowsByPath`): meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende repository paden. Scheid paden en modellen met een dubbele punt. Eenvoudige opslagpaden worden ondersteund. Wijs deze toe aan een werkschemamodel in de `/var` weg. Bijvoorbeeld: `/content/dam/my-brand:/var/workflow/models/my-workflow` .
-* Post-processing workflows by expression (`postProcWorkflowsByExpression`): Meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende reguliere expressies. Expressies en modellen moeten worden gescheiden door een dubbele punt. De reguliere expressie moet rechtstreeks naar het knooppunt Asset verwijzen en niet naar een van de uitvoeringen of bestanden. Bijvoorbeeld: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow` .
+* Workflows na verwerking volgens pad (`postProcWorkflowsByPath`): meerdere workflowmodellen kunnen worden weergegeven op basis van verschillende repository paden. Scheid paden en modellen met een dubbele punt. Eenvoudige opslagpaden worden ondersteund. Wijs deze toe aan een werkschemamodel in de `/var` weg. Bijvoorbeeld: `/content/dam/my-brand:/var/workflow/models/my-workflow` .
+* Workflows na verwerking op expressie (`postProcWorkflowsByExpression`): er kunnen meerdere workflowmodellen worden weergegeven op basis van verschillende reguliere expressies. Expressies en modellen moeten worden gescheiden door een dubbele punt. De reguliere expressie moet rechtstreeks naar het knooppunt Asset verwijzen en niet naar een van de uitvoeringen of bestanden. Bijvoorbeeld: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow` .
 
 Om te weten hoe te om een configuratie op te stellen OSGi, zie [ aan  [!DNL Experience Manager]](/help/implementing/deploying/overview.md) opstellen.
 

@@ -4,14 +4,17 @@ description: Bewerk video's gebruikend  [!DNL Adobe Express]  aangedreven opties
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
 
 # Video&#39;s bewerken in [!DNL Assets view] {#edit-videos}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Assets-gebruikers kunnen gemakkelijk variaties in video-inhoud maken met de ingesloten snelle handelingen voor video in [!DNL Adobe Express] . Snelle acties in [!DNL Assets view] , aangedreven door [!DNL Adobe Express] , bieden gebruikersvriendelijke opties voor het bewerken van video&#39;s, zoals het uitsnijden van video&#39;s, het vergroten of verkleinen van video, het bijsnijden van video en het omzetten van video in GIF.
 

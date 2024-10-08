@@ -2,14 +2,18 @@
 title: Elementen weergeven in Content Hub
 description: Leer hoe u inzicht in elementen kunt weergeven in  [!DNL Content Hub]
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Assets Insights in [!DNL Content Hub] {#assets-insights}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![ de inzichten van Assets ](assets/asset-insights-banner.jpg)
 
@@ -49,4 +53,3 @@ U kunt ook het volgende weergeven:
 * **[!UICONTROL Assets by Campaigns]**: Aantal elementen en respectieve percentage op basis van campagnes.
 * **[!UICONTROL Assets by Channels]**: Aantal activa en respectieve percentage op basis van gebruikte kanalen.
 * **[!UICONTROL Assets by Regions]**: Aantal activa en respectieve percentage gebaseerd op gebieden van middelengebruik.
-

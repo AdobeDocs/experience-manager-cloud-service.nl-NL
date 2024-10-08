@@ -3,14 +3,17 @@ title: Levering van activa in Experience Manager beperken
 description: Leer hoe te om de levering van activa in  [!DNL Experience Manager] te beperken.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
 
 # Toegang tot elementen beperken in [!DNL Experience Manager] {#restrict-access-to-assets}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Centrale beheer van bedrijfsmiddelen in Experience Manager stelt de DAM-beheerder of -bedrijfsleiders in staat de toegang tot bedrijfsmiddelen te beheren. Zij kunnen de toegang beperken door rollen voor goedgekeurde activa aan de auteurskant, specifiek op de auteursinstantie van AEM as a Cloud Service te vormen.
 

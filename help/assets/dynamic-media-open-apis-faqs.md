@@ -3,14 +3,17 @@ title: Dynamic Media met OpenAPI-mogelijkheden heeft vaak vragen gesteld
 description: Dynamic Media met OpenAPI-mogelijkheden heeft vaak vragen gesteld
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
 
 # Dynamic Media met OpenAPI-mogelijkheden heeft vaak vragen gesteld {#new-dynaminc-media-apis-frequently-asked-questions}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 +++**zijn alle activa in de as a Cloud Service bewaarplaats van Experience Manager Assets beschikbaar voor onderzoek en levering gebruikend Dynamic Media met mogelijkheden OpenAPI?**
 

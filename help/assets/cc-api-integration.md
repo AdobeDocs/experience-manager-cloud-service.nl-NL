@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
 
 # Variaties van elementen genereren met [!DNL Adobe Creative Cloud] -integratie {#content-automation}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Inhoudsautomatiseringsinvoegtoepassing integreert [!DNL Adobe Experience Manager Assets] als een [!DNL Cloud Service] - en [!DNL Adobe Creative Cloud] -API om uw elementen op schaal creatief te verwerken. [!DNL Experience Manager] gebruikt cloud-based [ activa microservices ](/help/assets/asset-microservices-overview.md) om de [!DNL Adobe Creative Cloud] eigenschappen te gebruiken en de activa verwezenlijking en media behandeling te automatiseren.
 

@@ -2,15 +2,18 @@
 title: Assets delen in  [!DNL the Content Hub]
 description: Assets delen in  [!DNL the Content Hub]
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
-
 # Elementen delen in Content Hub {#search-assets-as-a-link}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![ de bannerbeeld van het Aandeel activa ](assets/share-assets-banner.png)
 
@@ -61,7 +64,3 @@ Nadat de koppeling voor elementen is gedeeld, kunnen de geautoriseerde ontvanger
 Klik op de gedeelde koppeling en klik op het downloadpictogram op de elementenkaart om een element te downloaden.  U kunt ook meerdere elementen selecteren en op **[!UICONTROL Download]** klikken. <!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub] downloadt elk element één voor één naar het lokale bestandssysteem.
 
 ![ Toegang Gedeelde Verbindingen ](assets/content-hub-access-shared-links.png)
-
-
-
-

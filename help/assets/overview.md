@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Asset Management
 role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '945'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 2%
 # Introductie van Assets als [!DNL Cloud Service] voor Digital Asset Management in AEM {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager Assets als [!DNL Cloud Service] biedt een native PaaS-oplossing in de cloud waarmee bedrijven niet alleen hun activiteiten op het gebied van Digital Asset Management en Dynamic Media met snelheid en impact kunnen uitvoeren, maar ook intelligente mogelijkheden van de volgende generatie, zoals AI/ML, kunnen gebruiken vanuit een systeem dat altijd actueel, altijd beschikbaar en altijd leerzaam is.
 

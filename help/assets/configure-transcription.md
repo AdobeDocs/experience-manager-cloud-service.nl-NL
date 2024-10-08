@@ -9,14 +9,17 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1606'
+source-wordcount: '1624'
 ht-degree: 0%
 
 ---
 
 # Abonnement configureren in [!DNL Experience Manager Assets] {#configure-transcription-service}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Transcriptie is het proces waarbij de audio van een audio- of videobestand in tekst (spraak naar tekst) wordt omgezet met behulp van de spraakherkenningstechnologie.
 [!DNL Adobe Experience Manager Assets] is geconfigureerd met [!DNL Azure Media Services] , dat automatisch teksttranscriptie van de gesproken taal genereert in een ondersteund audio- of videobestand in de WebVTT-indeling (.vtt). Wanneer een audio- of video-element wordt verwerkt in [!DNL Experience Manager Assets] , genereert de transcriptieservice automatisch de tekstranscriptie-uitvoering van het audio- of videoelement en slaat deze op dezelfde locatie op in de Assets-opslagplaats waar het oorspronkelijke element zich bevindt. Met de transcriptieservice van [!DNL Experience Manager Assets] kunnen marketers hun audio- en video-inhoud effectief beheren, waarbij de tekstinhoud extra kan worden gedetecteerd en de ROI van deze elementen kan worden verhoogd door toegankelijkheid en lokalisatie te ondersteunen.

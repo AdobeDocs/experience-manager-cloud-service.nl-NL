@@ -4,14 +4,17 @@ description: Leer hoe AEM Assets en Dynamic Media effectief imagebeheer vereenvo
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
 # Uitvoeringen weergeven en beheren in Experience Manager Assets{#renditions}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Uitvoeringen in Adobe Experience Manager (AEM) zijn aangepaste versies van digitale elementen, zoals afbeeldingen, die zijn ontworpen voor verschillende apparaten en platforms voor optimale prestaties. AEM vergemakkelijkt het maken en beheren van deze uitvoeringen, waardoor de gebruikerservaring wordt verbeterd. U kunt miniaturen maken, afbeeldingen optimaliseren voor internet of mobiele apparaten, watermerken toevoegen, dynamische uitvoeringen of SmartCrop-uitvoeringen weergeven en downloaden en nog veel meer doen.
 

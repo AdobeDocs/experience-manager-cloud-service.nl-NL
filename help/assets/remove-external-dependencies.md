@@ -4,14 +4,17 @@ description: Externe afhankelijkheden voor bestaande installaties verwijderen
 feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 role: Admin
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
 
 # Externe afhankelijkheden voor bestaande installaties verwijderen {#remove-external-depedencies}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 De Adobe adviseert u om configuratiestappen voor bestaande verbeterde schakelaarinstallaties voor Workfront uit te voeren om de gebiedsdelen op de distributiepunten van de Hoodoo te verwijderen.
 

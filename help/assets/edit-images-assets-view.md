@@ -4,14 +4,17 @@ description: Bewerk beelden gebruikend  [!DNL Adobe Express]  aangedreven opties
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: af5ca9c436dce1929f310d40369abf05e60836f8
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
 
 # Afbeeldingen bewerken in [!DNL Assets view] {#edit-images-in-assets-view}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 De interface van de Assets-weergave maakt basisbewerkingen van afbeeldingen mogelijk die worden aangedreven door Adobe Express en die zijn geïntegreerd in de gebruikersinterface. Deze bewerking omvat het wijzigen van het formaat, het verwijderen van de achtergrond, het uitsnijden en het omzetten tussen de JPEG- en PNG-indeling. Bovendien is geavanceerde bewerking mogelijk via de interface Adobe Express ingesloten in de interface van de Assets-weergave.
 

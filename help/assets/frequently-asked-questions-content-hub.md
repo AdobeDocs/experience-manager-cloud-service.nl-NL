@@ -1,14 +1,17 @@
 ---
 title: Veelgestelde vragen (FAQ's) voor Content Hub
 description: Antwoorden op een aantal van de veelgestelde vragen (FAQ's) voor Content Hub.
-source-git-commit: 1d51a1e0858e975bc354ffd9c4b32c26aa1604af
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
 
 # Content Hub veelgestelde vragen {#content-hub-frequently-asked-questions}
+
+| [ Beste praktijken van het Onderzoek ](/help/assets/search-best-practices.md) | [ Beste praktijken van Meta-gegevens ](/help/assets/metadata-best-practices.md) | [ Content Hub ](/help/assets/product-overview.md) | [ Dynamic Media met mogelijkheden OpenAPI ](/help/assets/dynamic-media-open-apis-overview.md) | [ de ontwikkelaarsdocumentatie van AEM Assets ](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![ Content Hub vaak gestelde vraag ](assets/content-hub-faqs.png)
 
