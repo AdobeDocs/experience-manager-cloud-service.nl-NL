@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor afgekeurde en verwijderde ei
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
+source-git-commit: b64c8f16976988d04840f1006afe4f7c9b28c705
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2488'
 ht-degree: 0%
 
 ---
@@ -325,14 +325,14 @@ Als u iets uit het pakket `org.eclipse.jetty` of een van de subpakketten gebruik
 Handelingenlijst:
 * Gebruik van `org.eclipse.jetty` -pakketten vervangen door andere bibliotheken van derden/eigen code of
 * Selecteer in deze lijst de vereiste bundels en voeg deze toe aan uw project:
-   * org.eclipse.jetty:jetty-client:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-http:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-io:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-security:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-servlet:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-server:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util:9.4.54.v20240208
-   * org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208
+   * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-security:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-servlet:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-server:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
+   * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
 ### Verwijderen van `com.mongodb` {#com.mongodb}
 
