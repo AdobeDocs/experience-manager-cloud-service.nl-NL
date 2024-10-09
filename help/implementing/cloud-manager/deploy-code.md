@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ De **testende 1} fase van het Stadium {impliceert deze stappen.**
    * De tests UI zijn op selenium-Gebaseerde tests die in een beeld van de Docker worden verpakt om een brede keus in taal en kaders (zoals Java en Maven, Node en WebDriver.io, of om het even welk ander kader en technologie toe te staan die op Selenium worden voortgebouwd).
    * Zie [ het Testen van UI van de Douane ](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) voor meer details.
 
-* **Controle van de Ervaring** - Deze stap in de pijpleiding wordt altijd uitgevoerd en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles zal in werking stellen.
+* **Controle van de Ervaring** - Deze stap in de pijpleiding wordt altijd uitgevoerd en kan niet worden overgeslagen. Aangezien een productiepijplijn wordt uitgevoerd, is een stap van de ervaringscontrole inbegrepen na douane functionele het testen die de controles in werking stelt.
    * De pagina&#39;s die worden gevormd worden voorgelegd aan de dienst en geëvalueerd.
    * De resultaten zijn informatief en tonen de scores en de verandering tussen de huidige en vorige scores.
    * Dit inzicht is waardevol om te bepalen als er een regressie is die met de huidige plaatsing wordt geïntroduceerd.
@@ -110,7 +110,7 @@ Dit proces gaat verder tot de plaatsing alle uitgevers en verzenders in de topol
 
 ## Tijdstippen {#timeouts}
 
-Er wordt een time-out toegepast in de volgende stappen als er op feedback van gebruikers wordt gewacht:
+De volgende time-out voor stappen als er op feedback van gebruikers wordt gewacht:
 
 | Stap | Time-out |
 |--- |--- |
@@ -147,7 +147,7 @@ In dergelijke omstandigheden waar een heruitvoering mogelijk is, verstrekt de pa
 
 ### Beperkingen {#limitations}
 
-* Het opnieuw uitvoeren van de stap van de productieplaatsing zal slechts voor de laatste uitvoering beschikbaar zijn.
+* Het opnieuw uitvoeren van de stap van de productieplaatsing is slechts beschikbaar voor de laatste uitvoering.
 * Heruitvoering is niet beschikbaar voor het uitvoeren van push-updates.
    * Als de laatste uitvoering een uitvoering van een push-update is, is het niet mogelijk deze opnieuw uit te voeren.
 * Als de laatste uitvoering is mislukt op een willekeurig punt vóór de stap voor de implementatie van de productie, is het niet mogelijk de productie opnieuw uit te voeren.

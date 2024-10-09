@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Leer hoe Experience Manager as a Cloud Service werkt en wat de software voor u kan doen.
 breadcrumb-title: Handboek
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '5675'
-ht-degree: 3%
+source-wordcount: '5678'
+ht-degree: 2%
 
 ---
 
@@ -1081,7 +1081,7 @@ ht-degree: 3%
          + [Sandbox-programma&#39;s maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Programma&#39;s bewerken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Sluimeromgevingen](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + Een AEM-toepassingsproject maken {#create-application-project}
+      + Een AEM toepassingsproject maken {#create-application-project}
          + [Wizard Project maken](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Projectinstelling](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Build-omgeving](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
@@ -1101,7 +1101,7 @@ ht-degree: 3%
          + [GitHub-controleannotaties](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Omgevingsvariabelen](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
-         + [Inleiding](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [Inleiding van CI-CD-pijpleidingen](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Een productiepijpleiding configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Een niet-productiepijplijn configureren](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Pijpleidingen beheren](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)

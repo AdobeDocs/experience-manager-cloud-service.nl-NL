@@ -1,14 +1,14 @@
 ---
-title: CI/CD-pijpleidingen
+title: Inleiding tot CI/CD-pijpleidingen
 description: Leer meer over Cloud Manager CI/CD pijpleidingen en hoe zij kunnen worden gebruikt om uw code efficiënt op te stellen.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Leer meer over Cloud Manager CI/CD (Continuous Integration/Continuous Delivery) pijpleidingen en hoe zij kunnen worden gebruikt om uw code efficiënt op te stellen.
 
-## Inleiding {#introduction}
+## Inleiding tot CI/CD-pijpleidingen {#introduction}
 
 Een CI/CD pijpleiding in Cloud Manager is een mechanisme om code van een bronbewaarplaats te bouwen en het in een milieu op te stellen. Een gebeurtenis activeert een pijpleiding, zoals een trekkrachtverzoek van een broncodebewaarplaats zoals Git (namelijk een codeverandering). Of het kan worden geactiveerd volgens een regulier schema om overeen te komen met een releasecadence.
 

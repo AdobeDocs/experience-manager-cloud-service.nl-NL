@@ -4,7 +4,7 @@ description: Leer hoe u Git-opslagruimten in Cloud Manager toevoegt, weergeeft e
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Een gebruiker moet de rol **Manager van de Plaatsing** of **BedrijfsEigenaar** h
 
 Op de **pagina van Bewaarplaatsen**, dichtbij de hoger-juiste hoek, klik **Add Bewaarplaats**
 
-![ voeg bewaarplaats dialoogdoos toe.](assets/repository-add.png)
+![ toevoegen de dialoogdoos van de bewaarplaats ](assets/repository-add.png)
 *voeg de dialoogdoos van de Bewaarplaats toe.*
 
 Cloud Manager steunt twee types van bewaarplaatsen: Adobe-beheerde bewaarplaatsen (**de Bewaarplaats van de Adobe**) en zelfbeheerde bewaarplaatsen (**Privé Bewaarplaats**). De vereiste velden voor installatie zijn afhankelijk van het type opslagplaats dat u wilt toevoegen. Raadpleeg de volgende secties voor meer informatie:

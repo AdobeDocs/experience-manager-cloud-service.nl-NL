@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 0%
@@ -147,7 +147,7 @@ Als u het certificaattype *Klant beheerde certificaat* selecteerde, voltooi de v
 
    Na het uploaden van een geldig certificaat EV/OV, wordt de status van het domein duidelijk als **Verified** in de **3} lijst van de Montages van het Domein {.**
 
-   ![ het Plaatsen van het Domein lijst die een Verified status toont.](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
+   ![ het Plaatsen van het Domein lijst die een Verified status ](/help/implementing/cloud-manager/assets/domain-settings-verified.png) toont.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

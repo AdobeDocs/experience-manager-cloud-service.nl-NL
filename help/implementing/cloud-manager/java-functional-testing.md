@@ -1,13 +1,13 @@
 ---
 title: Java&trade; functionele tests
-description: Leer hoe u Java&amp schrijft;handel; functionele tests voor AEM as a Cloud Service
+description: Leer hoe u Java &amp schrijft;handel; functionele tests voor AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Als u de inhoud van de map `it.tests` hebt, kunt u deze gebruiken als basis voor
 
 De zelfde hulpmiddelen die de Adobe gebruikt om product functionele tests te schrijven kunnen worden gebruikt om uw douane functionele tests te schrijven. Gebruik de [ product functionele tests ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) in GitHub als voorbeeld van hoe te om uw tests te schrijven.
 
-De code voor aangepaste functionele test is Java™-code in de map `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. [ zie het AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor steekproeftests.
+De code voor aangepaste functionele test is Java™-code in de map `it.tests` van uw project. Het moet één JAR met alle functionele tests produceren. Als de build meer dan één testJAR produceert, is de geselecteerde JAR niet-deterministisch. Als er nultestJAR&#39;s worden geproduceerd, gaat de teststap standaard over. Zie [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) voor steekproeftests.
 
 De tests worden uitgevoerd op testinfrastructuur die door de Adobe wordt onderhouden, inclusief ten minste twee auteur-instanties, twee publiceer-instanties en een Dispatcher-configuratie. Deze opstelling betekent dat uw douane functionele tests tegen de volledige AEM stapel in werking stellen.
 
@@ -106,9 +106,9 @@ Zie [`aem-testing-clients` reactie GitHub ](https://github.com/adobe/aem-testing
 | Type | Waarde | Beschrijving |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0,5 | Hoeveelheid CPU-tijd gereserveerd per testuitvoering |
-| Geheugen | 0,5 Gi | Hoeveelheid geheugen dat aan de test is toegewezen, waarde in bytes |
-| Time-out | 30 m | De duur waarna de test wordt beëindigd. |
-| Aanbevolen duur | 15 m | De Adobe beveelt aan de tests te schrijven om deze tijd niet langer te laten duren. |
+| Geheugen | 0,5 Gi | Hoeveelheid aan de test toegewezen geheugen, waarde in bytes |
+| Time-out | 30 m | De termijn waarna de test wordt stopgezet. |
+| Aanbevolen duur | 15 m | De Adobe beveelt aan de tests te schrijven zodat deze niet langer duren. |
 
 >[!NOTE]
 >
@@ -118,8 +118,7 @@ Zie [`aem-testing-clients` reactie GitHub ](https://github.com/adobe/aem-testing
 
 * aem-cloud-testing-clients:
 
-De aanstaande veranderingen in de containerized infrastructuur die wordt gebruikt om functionele tests uit te voeren, zullen de bibliotheek [ aem-wolk-test-cliënten ](https://github.com/adobe/aem-testing-clients) vereisen die in uw douane functionele test wordt gebruikt om aan minstens versie **1.2.1** worden bijgewerkt
-Zorg ervoor dat uw afhankelijkheid in `it.tests/pom.xml` is bijgewerkt.
+De aanstaande veranderingen in de containerized infrastructuur voor het uitvoeren van functionele tests vereisen het bijwerken van [ aem-wolk-test-cliënten ](https://github.com/adobe/aem-testing-clients) bibliotheek in uw douane functionele tests aan versie **1.2.1** of hoger. Zorg ervoor dat de afhankelijkheid in het `it.tests/pom.xml` -bestand overeenkomstig wordt bijgewerkt.
 
 ```
 <dependency>
@@ -132,7 +131,7 @@ Zorg ervoor dat uw afhankelijkheid in `it.tests/pom.xml` is bijgewerkt.
 >[!NOTE]
 >
 >Deze wijziging moet worden uitgevoerd vóór 6 april 2024.
->Als u er niet in slaagt de afhankelijkheidsbibliotheek bij te werken, treedt er een fout op bij de stap Aangepast functioneel testen.
+>Als u er niet in slaagt de afhankelijkheidsbibliotheek bij te werken, kan dit leiden tot mislukte pijplijnen bij de stap Aangepast functioneel testen.
 
 ### Uitvoering lokale test {#local-test-execution}
 
@@ -140,7 +139,7 @@ Alvorens functionele tests in een pijpleiding van Cloud Manager te activeren, wo
 
 #### Het lopen in winde {#running-in-an-ide}
 
-Omdat testklassen JUnit-tests zijn, kunnen ze worden uitgevoerd vanuit mainstream Java™ IDE&#39;s zoals Eclipse, IntelliJ en NetBeans. Omdat zowel de functionele tests van het product als de douane functionele tests op de zelfde technologie gebaseerd zijn, kunnen allebei plaatselijk worden in werking gesteld door de producttests in uw douanetests te kopiëren.
+Omdat testklassen JUnit-tests zijn, kunnen ze worden uitgevoerd vanuit mainstream Java ™ IDE&#39;s zoals Eclipse, IntelliJ en NetBeans. Omdat zowel de functionele tests van het product als de douane functionele tests op de zelfde technologie gebaseerd zijn, kunnen allebei plaatselijk worden in werking gesteld door de producttests in uw douanetests te kopiëren.
 
 Wanneer u deze tests uitvoert, moet u echter verschillende systeemeigenschappen instellen die door de bibliotheek `aem-testing-clients` (en de onderliggende testclients) worden verwacht.
 
@@ -148,15 +147,15 @@ De systeemeigenschappen zijn als volgt.
 
 | Eigenschap | Beschrijving | Voorbeeld |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
-| `sling.it.instances` | aantal instanties dat moet worden ingesteld op `2` om overeen te komen met de cloudservice | `2` |
-| `sling.it.instance.url.1` | moet worden ingesteld op de URL van de auteur | `http://localhost:4502` |
-| `sling.it.instance.runmode.1` | uitvoeringsmodus van de eerste instantie, moet worden ingesteld op `author` | `author` |
-| `sling.it.instance.adminUser.1` | moet worden ingesteld op de scriptgebruiker. | `admin` |
-| `sling.it.instance.adminPassword.1` | moet worden ingesteld op het beheerderswachtwoord van de auteur. |                         |
-| `sling.it.instance.url.2` | moet worden ingesteld op de publicatie-URL | `http://localhost:4503` |
-| `sling.it.instance.runmode.2` | uitvoeringsmodus van de tweede instantie, moet zijn ingesteld op `publish` | `publish` |
-| `sling.it.instance.adminUser.2` | moet worden ingesteld op de gebruiker van de publicatiebeheerder. | `admin` |
-| `sling.it.instance.adminPassword.2` | moet worden ingesteld op het wachtwoord voor publicatiebeheer. |                         |
+| `sling.it.instances` | Aantal instanties dat overeenkomt met de cloudservice moet zijn ingesteld op `2` . | `2` |
+| `sling.it.instance.url.1` | Instellen op auteur-URL. | `http://localhost:4502` |
+| `sling.it.instance.runmode.1` | De modus Uitvoeren van de eerste instantie. Instellen op `author` . | `author` |
+| `sling.it.instance.adminUser.1` | Instellen op beheerder van auteur. | `admin` |
+| `sling.it.instance.adminPassword.1` | Instellen op beheerderswachtwoord van auteur. |                         |
+| `sling.it.instance.url.2` | instellen voor publiceren van URL. | `http://localhost:4503` |
+| `sling.it.instance.runmode.2` | De modus Uitvoeren van de tweede instantie. Instellen op `publish` . | `publish` |
+| `sling.it.instance.adminUser.2` | Instellen op publiceren van beheergebruiker. | `admin` |
+| `sling.it.instance.adminPassword.2` | Stel deze optie in om het beheerderswachtwoord te publiceren. |                         |
 
 
 

@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '4513'
 ht-degree: 0%
@@ -794,7 +794,7 @@ Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` 
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2019.6.0
 
-Gelijkaardig aan de [ Pakketten zouden de Dubbele regel van Configuraties niet moeten bevatten OSGi, ](#oakpal-package-osgi) dit is een gemeenschappelijk probleem op complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
+Gelijkaardig aan de [ Pakketten zouden niet Dubbele regel van de Configuraties moeten bevatten OSGi ](#oakpal-package-osgi), is dit een gemeenschappelijk probleem op complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
 
 ### Standaardontwerpmodus mag geen klassieke UI zijn {#oakpal-default-authoring}
 
@@ -853,7 +853,7 @@ De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve op
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Clientbibliotheken van Experience Managers kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in het document [ Gebruikend Voorbewerkers, ](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd `resources` worden bevat om effectief op te worden van verwijzingen voorzien te publiceren instanties.
+Clientbibliotheken van Experience Managers kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in het document [ Gebruikend Preprocessoren ](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd `resources` worden bevat om effectief op te worden van verwijzingen voorzien te publiceren instanties.
 
 #### Niet-compatibele code {#non-compliant-proxy-enabled}
 

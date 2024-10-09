@@ -6,9 +6,9 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren doo
 
 1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u **uitgeven en dan selecteren** van het menu uitgeven.
 
-1. De **geeft de pijpleiding van de Productie uit** of **geeft niet-Productie pijplijn** dialoogvakvertoningen uit, toestaand u om de zelfde details uit te geven die u toen het creëren van de pijpleiding inging.
+1. De **geeft de pijpleiding van de Productie uit** of **geeft niet-Productie pijplijn** dialoogvakvertoningen uit, latend u de zelfde details uit die u toen het creëren van de pijpleiding inging.
 
    * Zie de volgende pagina&#39;s voor details over de gebieden en configuratieopties beschikbaar voor pijpleidingen.
       * [Productiepijpleidingen configureren](configuring-production-pipelines.md)

@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 493c5729c3107f151685a243006b17196b74c1bd
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Leer hoe u uw eigen SSL-certificaat of een door Adobe beheerd DV-certificaat (Do
 ## Vereisten {#prerequisites}
 
 * Een gebruiker moet een lid van de **BedrijfsEigenaar** of **rol van de Manager van de Plaatsing** zijn om een certificaat toe te voegen.
-* Als u uw eigen certificaat installeert, ben zeker om **vereisten van het Certificaat** in [ Inleiding te herzien aan het Leiden SSL Certificaten.](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)
+* Als u uw eigen certificaat installeert, zie {de vereisten van het 0} Certificaat **in [ Inleiding aan het Leiden SSL Certificaten ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).**
 
 ## Een SSL-certificaat toevoegen {#add-certificate}
 
@@ -55,4 +55,4 @@ U hebt nu een werkend SSL-certificaat toegevoegd voor uw project. Deze stap is v
 
 >[!TIP]
 >
->Als u kwesties hebt die of uw certificaten toevoegen beheren, te zien gelieve het document [ SSL certificaatfouten oplossen.](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+>Als u kwesties hebt die of uw certificaten toevoegen beheren, zie [ SSL certificaatfouten oplossen ](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md).

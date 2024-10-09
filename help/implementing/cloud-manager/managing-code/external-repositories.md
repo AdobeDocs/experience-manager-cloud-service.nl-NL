@@ -3,7 +3,7 @@ title: Externe opslagplaatsen toevoegen in Cloud Manager (Vroege adopter)
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub-, GitLab- en Bitbucket-opslagruimten.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%

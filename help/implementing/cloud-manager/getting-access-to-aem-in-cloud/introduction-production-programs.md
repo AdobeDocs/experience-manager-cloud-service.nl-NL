@@ -5,7 +5,7 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Een productieprogramma is voorgenomen voor een team dat klaar is beginnen te schrijven, bouwend, en testend code met het doel om het op te stellen om levend verkeer te ontvangen.
 
-Nadat u [ uw productieprogramma creeert, ](creating-production-programs.md) de tovenaar van de a [ programmaverwezenlijking ](using-the-wizard.md) gidsen de gebruiker door selecties afhankelijk van het doel van de gebruiker in het creëren van het programma.
+Nadat u [ uw productieprogramma ](creating-production-programs.md) creeert, leidt de tovenaar van de a [ programmaverwezenlijking ](using-the-wizard.md) de gebruiker door selecties afhankelijk van het doel van de gebruiker in het creëren van het programma.
 
 ## Opties voor het maken van programma {#program-creation-options}
 

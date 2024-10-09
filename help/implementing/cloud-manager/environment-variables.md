@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Nadat u milieuvariabelen hebt gecreeerd, kunt u hen bijwerken gebruikend **toevo
 
 1. Nadat u de vereiste configuratieveranderingen hebt aangebracht, uitgezocht **sparen**.
 
-[ zoals wanneer het toevoegen van variabelen, ](#add-variables) een indicator met de status **het bijwerken** wordt getoond bij de bovenkant van de lijst en naast de onlangs bijgewerkte variabele(s) om erop te wijzen dat het milieu met de configuratie wordt bijgewerkt. Na voltooiing, zijn de bijgewerkte milieuvariabelen zichtbaar in de lijst.
+[ zoals wanneer het toevoegen van variabelen ](#add-variables), wordt een indicator met de status **die** bijwerkt getoond bij de bovenkant van de lijst en naast de onlangs bijgewerkte variabele(s) om erop te wijzen dat het milieu met de configuratie wordt bijgewerkt. Na voltooiing, zijn de bijgewerkte milieuvariabelen zichtbaar in de lijst.
 
 >[!TIP]
 >

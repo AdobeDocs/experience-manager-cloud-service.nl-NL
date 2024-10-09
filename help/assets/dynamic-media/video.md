@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '9280'
+source-wordcount: '10320'
 ht-degree: 0%
 
 ---
@@ -67,17 +67,17 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
    * Werken met videometagegevens
 
       * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
-        [ Uitgevend videoeigenschappen ](/help/assets/manage-digital-assets.md#editing-properties)
+        [ geef videoeigenschappen ](/help/assets/manage-digital-assets.md#editing-properties) uit
 
       * [Metagegevens voor digitale elementen beheren](/help/assets/manage-metadata.md)
       * [Metagegevensschema&#39;s](/help/assets/metadata-schemas.md)
 
    * Video&#39;s bekijken, goedkeuren en annoteren en volledige versiebeheer behouden
 
-      * [ Annoterend video ](/help/assets/manage-video-assets.md#annotate-video-assets) of [ Annoting activa ](/help/assets/manage-digital-assets.md#annotating)
+      * [ Annoteert video&#39;s ](/help/assets/manage-video-assets.md#annotate-video-assets) of [ Annoteren activa ](/help/assets/manage-digital-assets.md#annotating)
 
       * [Een versie maken](/help/assets/manage-digital-assets.md#asset-versioning)
-      * [Een workflow starten op een element](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+      * [Een workflow op een element starten](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
       * [Mapmiddelen controleren](/help/assets/bulk-approval.md)
       * [Projecten](/help/sites-cloud/authoring/projects/overview.md)
@@ -524,7 +524,7 @@ U kunt ondersteuning inschakelen in Dynamic Media voor:
 
 * DASH
 * Meerdere bijschriften en audiotracks
-* Door AI gegenereerde bijschriften (Vroege toegang)
+* Door AI gegenereerde bijschriften (beperkte beschikbaarheid)
 
 Door een Adobe voor klantenondersteuning te maken en in te dienen.
 
@@ -534,7 +534,7 @@ Als u een van de drie bovengenoemde mogelijkheden inschakelt, kunnen alle mogeli
 | --- | --- |
 | DASH | DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. U kunt ook kiezen voor beide opties met automatische schakelen tussen spelers als **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling van de viewer.<br> sommige zeer belangrijke voordelen van het toelaten van DASH op uw rekening omvatten het volgende:<br> ・ De stroomvideo van DASH van het Pakket voor het adaptieve bitrate stromen. Deze methode leidt tot een efficiëntere levering. Adaptieve streaming zorgt voor de beste kijkervaring voor uw klanten.<br>・Voor streaming via browser geoptimaliseerd met Dynamic Media-spelers wordt geschakeld tussen HLS- en DASH-streaming om de beste kwaliteit van de service te garanderen. Wanneer een Safari-browser wordt gebruikt, schakelt de videospeler automatisch over naar HLS.<br>・U kunt uw voorkeurstreaming methode (HLS of DASH) configureren door de voorinstelling voor de videoviewer te bewerken.<br>・Geoptimaliseerde videocodering zorgt ervoor dat er geen extra opslagruimte wordt gebruikt terwijl de DASH-mogelijkheid wordt ingeschakeld. Er wordt één set videocoderingen gemaakt voor zowel HLS als DASH om de opslagkosten voor video te optimaliseren.<br>・Helps maakt de levering van video toegankelijker voor uw klanten.<br>・Haal de URL voor streaming ook via API&#39;s op. |
 | Meerdere bijschriften en audiotracks | U kunt ervan profiteren dat ondersteuning voor meerdere bijschriften en audiotracks automatisch is ingeschakeld. Nadat u deze optie hebt ingeschakeld, worden alle volgende video&#39;s die u uploadt, verwerkt met een nieuwe back-endarchitectuur die ondersteuning biedt voor het toevoegen van meerdere bijschriften en audiotracks aan uw video&#39;s. |
-| Door AI gegenereerde bijschriften (Vroege toegang) | Maak bijschriften voor uw video&#39;s die worden aangedreven door AI. Met AI wordt de transcriptie van de video gemaakt en omgezet in bijschriften. Zelfs de tijdlijn is gedefinieerd. |
+| Door AI gegenereerde bijschriften (beperkte beschikbaarheid) | Maak bijschriften voor uw video&#39;s die worden aangedreven door AI. Met AI wordt de transcriptie van de video gemaakt en omgezet in bijschriften. Zelfs de tijdlijn is gedefinieerd. |
 
 >[!IMPORTANT]
 >
@@ -549,7 +549,7 @@ Als u een van de drie bovengenoemde mogelijkheden inschakelt, kunnen alle mogeli
    * De omgeving van uw Cloud Servicen (programma-id en milieu-id).
    * De naam van je Dynamic Media-bedrijfsaccount.
    * Uw Dynamic Media-regio: Noord-Amerika (NA), Azië-Stille Oceaan (APAC) of Europa-Midden-Oost-Azië (EMEA).
-   * Geef op of ondersteuning voor DASH, meervoudige ondertitels en audiotracks en door AI gegenereerde ondertitels (Early Access) ingeschakeld moet zijn op uw Dynamic Media-account, op AEM as a Cloud Service.
+   * Geef op of ondersteuning voor DASH, meervoudige ondertitels en meeraudiotracks en door AI gegenereerde ondertitels (beperkte beschikbaarheid) ingeschakeld moet zijn op uw Dynamic Media-account, op AEM as a Cloud Service.
 
 1. De Steun van de Klant van de Adobe voegt u aan de Klant toe wachtlijst op basis van de orde waarin de verzoeken worden voorgelegd.
 1. Wanneer de Adobe klaar is om uw verzoek te behandelen, contacteert de Steun van de Klant u om een doeldatum voor enablement te coördineren en te plaatsen.
@@ -560,132 +560,26 @@ Als u een van de drie bovengenoemde mogelijkheden inschakelt, kunnen alle mogeli
    * Creeer uw [ videoprofiel ](/help/assets/dynamic-media/video-profiles.md) zoals gebruikelijk.
    * [ voeg veelvoudige titels en audiosporen ](#add-msma) aan uw video toe.
 
-## Ondersteuning voor meerdere bijschriften en audiotracks voor video&#39;s in Dynamic Media{#about-msma}
 
-Met de mogelijkheden voor meerdere bijschriften en audiotracks in Dynamic Media kunt u eenvoudig meerdere bijschriften en audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een wereldwijd publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de bijschriften en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
-
-![ Bijschriften en audiosporen lusje in Dynamic Media samen met een lijst die geüploade .VTT titeldossiers en geüploade .MP3 audiospoordossiers voor een video tonen.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
-
-
-Een aantal van de gebruiksscenario&#39;s die u moet overwegen om meerdere bijschriften en audiotracks toe te voegen aan uw primaire video, zijn onder andere:
-
-
-| Type | Hoofdletters gebruiken |
-| --- | --- |
-| Bijschriften | De veelvoudige taalsteun <br> Beschrijvende tekst voor toegankelijkheid |
-| Audiotracks | De veelvoudige taalsteun <br> Begeleidende sporen <br> Beschrijvende audio |
-
-
-Alle [ video formaten die in Dynamic Media ](/help/assets/file-format-support.md) worden gesteund en al videoViewers-behalve Dynamic Media Video_360 viewer-worden gesteund voor gebruik met veelvoudige titels en audiosporen.
-
-Mogelijkheid voor meerdere bijschriften en audiotracks is beschikbaar voor uw Dynamic Media-account via een functiewissel die moet worden ingeschakeld (ingeschakeld) door de Adobe Klantenondersteuning.
-
-### Meerdere bijschriften en audiotracks toevoegen aan uw video {#add-msma}
-
-Voordat u meerdere bijschriften en audiotracks aan uw video toevoegt, moet u controleren of u al over het volgende beschikt:
-
-* Dynamic Media wordt ingesteld in een AEM omgeving.
-* A [ wordt het Videoprofiel van Dynamic Media toegepast op de omslag waar uw video&#39;s ](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders) worden opgenomen.
-* [ Multi-caption, en multi-audiospoor wordt toegelaten op uw rekening van Dynamic Media ](/help/assets/dynamic-media/video.md#enable-dash).
-
-Toegevoegde bijschriften en bijschriften worden ondersteund met de indelingen WebVTT en Adobe VTT. Toegevoegde audiotrackbestanden worden ook ondersteund in de MP3-indeling.
-
->[!IMPORTANT]
->
->Om het even welke video&#39;s die u alvorens veelvoudige titel en audiospoorsteun op uw rekening van Dynamic Media uploadde toe te laten, [ moet worden opnieuw verwerkt ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere bijschriften en audiotrackmogelijkheden beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
-
-**om veelvoudige titels en audiosporen aan uw video toe te voegen:**
-
-1. [ uploadt uw primaire video aan een omslag ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) die reeds een videoprofiel heeft dat aan het wordt toegewezen.
-1. Navigeer naar het geüploade video-element waaraan u meerdere bijschriften en audiotracks wilt toevoegen.
-1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
-1. Selecteer op de werkbalk het pictogram Eigenschappen (een cirkel met een &quot;i&quot; erin).
-
-   ![ de eigenschappen van Activa knoop.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Geselecteerde videoactiva in de Mening van de Kaart.*
-
-1. Selecteer de tab **[!UICONTROL Captions & Audio Tracks]** op de pagina Eigenschappen van video.
-
-
-   >[!TIP]
-   >Als u het tabblad [!UICONTROL Captions & Audio Tracks] niet ziet, betekent dit een van de volgende twee dingen:
-   >* Aan de map waarin de geselecteerde video zich bevindt, is geen videoprofiel toegewezen. In welk geval, zie [ een videoprofiel op de omslag ](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders) toepassen
-   >* Of Dynamic Media moet de video opnieuw verwerken. In welk geval, zie [ de activa van Dynamic Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
-
-   Als u een van de bovenstaande taken hebt uitgevoerd, gaat u terug naar deze stappen.
-
-   ![ de eigenschappen van Activa ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Bijschriften en audiosporen tabel op de pagina van de Eigenschappen van de video.*
-
-1. (Optioneel) Ga als volgt te werk om een of meer bijschriftbestanden aan een video toe te voegen:
-
-   * Selecteer **[!UICONTROL Upload Captions]** .
-   * Navigeer naar en selecteer een of meer `.vtt` (Video Text Tracks)-bestanden en open deze.
-   * Als u wilt dat bijschriften zichtbaar zijn op de mediaspeler, moet u vereiste gegevens (metagegevens) toevoegen over elk bijschriftbestand dat u hebt geüpload. Selecteer het potloodpictogram rechts van de bestandsnaam van een bijschrift. Voer in het dialoogvenster Bijschrift bewerken de volgende vereiste gegevens over het bestand in en selecteer vervolgens **[!UICONTROL Save]** . Herhaal dit proces voor elk bijschriftbestand dat u hebt geüpload:
-
-
-   | Metagegevens bijschrift | Beschrijving |
-   | --- | --- | 
-   | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br> zelfde filename kan niet voor extra titeldossiers en audiospoordossiers worden gebruikt. |
-   | Taal | Selecteer de taal van het bijschrift. |
-   | Type | Selecteer het type bijschrift dat u gebruikt.<br>**Ondertitel** - de titeltekst die met de video wordt getoond die vertaalt of de dialoog transcripting.<br>**Titel** - de bijschrifttekst omvat achtergrondgeluiden en sprekersidentificatie. Het bevat ook andere relevante details naast de vertaling of transcriptie van de dialoog. Deze functionaliteit maakt de inhoud toegankelijker voor doven of slechthorenden. |
-   | Label | De tekst die voor de naam van het bijschrift wordt weergegeven in de pop-uplijst **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld Engels (CC). |
-
-   U kunt de metagegevens van bijschriften indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
-
-1. (Optioneel) Ga als volgt te werk om een of meer audiotracks aan een video toe te voegen:
-
-   * Selecteer **[!UICONTROL Upload Audio Tracks]** .
-   * Navigeer naar en selecteer een of meer MP3-bestanden en open deze.
-   * Als u audiotracks zichtbaar wilt maken in de pop-uplijst van **[!UICONTROL Select audio or caption]** op de mediaspeler, voegt u de vereiste gegevens voor elk audiotrackbestand toe. Zorg ervoor dat u alle benodigde informatie opneemt voor een juiste weergave. Selecteer het potloodpictogram rechts van de bestandsnaam van een audiotrack. Voer in het dialoogvenster Audiotrack bewerken de volgende vereiste gegevens in en selecteer vervolgens **[!UICONTROL Save]** . Herhaal dit proces voor elk audiospoordossier dat u uploadde.
-
-   | Metagegevens audiotrack | Beschrijving |
-   | --- | --- |
-   | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br> zelfde filename kan niet voor extra audiospoordossiers of titeldossiers worden gebruikt. |
-   | Taal | Selecteer de taal van de audiotrack. |
-   | Type | Selecteer het type audiotrack dat u gebruikt.<br>**Origineel** - het audiospoor oorspronkelijk in bijlage aan de video en vertegenwoordigd als `[Original]` in het etiket met de Engelse taal die door gebrek wordt geselecteerd. Hoewel **[!UICONTROL Label]** en **[!UICONTROL Language]** kunnen worden gewijzigd in het dialoogvenster **[!UICONTROL Edit Audio Track]** , worden de oorspronkelijke waarden gebruikt als de primaire video opnieuw wordt verwerkt.<br>**Norm** - een toe:voegen-op audiospoor voor een taal buiten origineel.<br>**audiobeschrijving** - een audiospoor dat ook een beschrijvend verhaal van non-verbale acties en gebaren in de video omvat, die inhoud toegankelijker maken voor individuen die visueel gehandicapt zijn. |
-   | Label | De tekst die als naam van de audiotrack in de pop-uplijst **[!UICONTROL Select audio or caption]** in de mediaspeler wordt weergegeven. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld `English [Original]` . Het label van de audio die aan een video is gekoppeld, wordt standaard ingesteld op `[Original]` . |
-
-   U kunt deze metagegevens van de audiotrack indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
-
-1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL Save & Close]** . De bestanden worden geüpload en de verwerking van metagegevens wordt gestart, zoals in de kolom Status van de interface wordt getoond.
-
-   >[!NOTE]
-   >
-   >Op basis van de cacheinstellingen van uw instantie kan het verwerken van metagegevens enkele minuten duren voordat dit effect wordt weerspiegeld in de voorvertoning en in gepubliceerde URL&#39;s.
-
-1. (Optioneel) Als u **[!UICONTROL Save & Close]** in de vorige stap hebt geselecteerd in plaats van **[!UICONTROL Save]** te selecteren, kunt u nog steeds de verwerkingsstatus van de geüploade bestanden bekijken. Zie [ Mening de levenscyclusstatus van geupload titels en audiospoordossiers ](/help/assets/dynamic-media/video.md#lifecycle-status-video).
-
-1. (Optioneel) Geef een voorvertoning van de video weer voordat u de video publiceert, zodat de bijschriften en audio naar behoren werken. Zie [ Voorproef een video die veelvoudige titels en audiosporen ](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle) heeft.
-
-1. Publish the video. Zie [ de activa van Publish ](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
-
-
-
-<!--
+<!-- HIDDEN AS OF OCTOBER 7, 2024 AS PER EMAIL REQUEST FROM RIYA MIDHA ON SAME DATE 
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
-With multiple caption and audio track capability in Dynamic Media, you can easily add multiple audio tracks. You can also add multiple caption files using either your own `.vtt` (Video Text Track) files or AI-generated caption files. AI-generated captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Some key features of this technology include the following:
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
-* **Automatic Transcription:** The AI system transcribes spoken words into text in real-time, ensuring that captions are generated quickly and accurately.
-* **Multilingual Support:** Captions can be automatically delivered in more than 60 languages, making it easier to reach a global audience.
-* **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, or people who prefer to watch videos with the sound off.
-* **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
+   ![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
-These features make AI-powered captions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. 
-
-![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case |
-|--- |--- |
-| **Captions** | Multiple language support |
-|  | Descriptive text for accessibility |
-| **Audio tracks** | Multiple language support  |
-|  | Commentary tracks |
-|  | Descriptive audio |
 
-All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple captions and audio tracks.
+| Type | Use case | 
+| --- | --- |
+| Captions | Multiple language support<br>Descriptive text for accessibility |
+|Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |
+
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers-except the Dynamic Media Video_360 viewer-are supported for use with multiple captions and audio tracks.
 
 Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
 
@@ -695,163 +589,268 @@ Before you add multiple caption and audio tracks to your video, be sure you alre
 
 * Dynamic Media is set up in an AEM environment.
 * A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Multi-caption/audio tracks and AI-generated captions are enabled on your Dynamic Media account](#enable-dash).
+* [Multi-caption, and multi-audio track is enabled on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
 
-Added captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+Added captions and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
 
 >[!IMPORTANT]
 >
->For videos uploaded *before* enabling multiple caption/audio track support or AI-generated captions on your Dynamic Media account, [you need to reprocess them](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This reprocessing step ensures that these videos can use the multiple caption/audio track and AI-generated caption features. After reprocessing, the video URLs continue to function and play as usual.
+>Any videos that you uploaded before enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
 **To add multiple captions and audio tracks to your video:**
 
 1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
 1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, click the Properties icon (a circle with an "i" in it).
-![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+1. On the toolbar, select the Properties icon (a circle with an "i" in it). 
+
+   ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+
 1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 
+
    >[!TIP]
-   >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
-   >
+   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+    When you have completed either one of the above tasks, return to these steps.
+
+   ![Asset properties](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
+
+1. (Optional) To add one or more caption files to a video, do the following:
+
+    * Select **[!UICONTROL Upload Captions]**.
+    * Navigate to, and select, one or more `.vtt` (Video Text Tracks) files and open them.
+    * For captions to be visible on the media player, you must add required details (metadata) about each caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the Edit Caption dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
+
+
+    | Caption metadata | Description | 
+    | --- | --- | 
+    Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+    | Language | Select the language of the caption. |
+    | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker identification. It also includes other relevant details alongside the translation or transcription of dialogue. This functionality makes the content more accessible to individuals who are deaf or hard of hearing. |
+    | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, English (CC). |
+
+    You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. (Optional) To add one or more audio tracks to a video, do the following:
+
+    * Select **[!UICONTROL Upload Audio Tracks]**.
+    * Navigate to, and select, one or more .mp3 files and open them.
+    * To make audio tracks visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, add the required details for each audio track file. Ensure you include all necessary information for proper display. Select the pencil icon to the right of an audio track file name. In the Edit Audio Track dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+
+    | Audio Track metadata | Description |
+    | --- | --- |
+    | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files.| 
+    | Language | Select the language of the audio track. |
+    | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with English language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+    | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+
+    You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. In the upper-right corner of the page, from the **[!UICONTROL Save & Close]** drop-down list, select **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the Status column of the interface.
+
+    >[!NOTE]
+    >
+    >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](/help/assets/dynamic-media/video.md#lifecycle-status-video).
+
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
+
+1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
+
+
+
+## Ondersteuning voor meerdere bijschriften en audiotracks voor video&#39;s in Dynamic Media{#about-msma}
+
+Met de mogelijkheden voor meerdere bijschriften en audiotracks in Dynamic Media kunt u eenvoudig meerdere audiotracks toevoegen. U kunt ook bestanden met meerdere bijschriften toevoegen met behulp van uw eigen `.vtt` (Video Text Track)-bestanden of door AI gegenereerde bijschriftbestanden. Door AI gegenereerde bijschriften in Dynamic Media zijn ontworpen om de toegankelijkheid en betrokkenheid van video te verbeteren door automatisch nauwkeurige en gesynchroniseerde ondertitels te genereren. Deze technologie gebruikt geavanceerde AI algoritmen om gesproken inhoud in tekst om te zetten, die dan als titels op de video wordt getoond. Enkele belangrijke kenmerken van deze technologie zijn:
+
+* **Automatische Transcriptie:** het systeem AI transcripes gesproken woorden in tekst in real time, die ervoor zorgen dat de titels snel en nauwkeurig worden geproduceerd.
+* **Meertalige Steun:** de titels kunnen automatisch in meer dan 60 talen worden geleverd, makend het gemakkelijker om een globaal publiek te bereiken.
+* **Verbeterde Toegankelijkheid:** door titels te verstrekken, worden de video&#39;s toegankelijker voor kijkers die doof of hard van het horen zijn, of mensen die verkiezen video&#39;s met het geluid weg te letten.
+* **Verbeterde Betrokkenheid:** de Bijschriften kunnen helpen kijkeraandacht behouden en begrip verbeteren, vooral in lawaaierige milieu&#39;s of wanneer de inheemse taal van de kijker van de taal van de video verschillend is.
+
+Deze functies maken van door AI aangedreven bijschriften een waardevol hulpmiddel voor makers van inhoud die de toegankelijkheid en betrokkenheid van hun video-inhoud willen verbeteren.
+
+![ Bijschriften en audiosporen lusje in Dynamic Media samen met een lijst die geüploade .VTT titeldossiers en geüploade .MP3 audiospoordossiers voor een video tonen.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+
+Een aantal van de gebruiksscenario&#39;s die u moet overwegen om meerdere bijschriften en audiotracks toe te voegen aan uw primaire video, zijn onder andere:
+
+| Type | Hoofdletters gebruiken |
+|--- |--- |
+| **Bijschriften** | Ondersteuning voor meerdere talen |
+|  | Beschrijvende tekst voor toegankelijkheid |
+| **Audiosporen** | Ondersteuning voor meerdere talen |
+|  | Commentaartracks |
+|  | Beschrijvende audio |
+
+Alle [ video formaten die in Dynamic Media ](/help/assets/file-format-support.md) worden gesteund en alle videokijkers van Dynamic Media - behalve de Dynamic Media *Video_360* kijker - worden gesteund voor gebruik met veelvoudige titels en audiosporen.
+
+Mogelijkheid voor meerdere bijschriften en audiotracks is beschikbaar voor uw Dynamic Media-account via een functiewissel die moet worden ingeschakeld (ingeschakeld) door de Adobe Klantenondersteuning.
+
+### Meerdere bijschriften en audiotracks toevoegen aan uw video {#add-msma}
+
+Voordat u meerdere bijschriften en audiotracks aan uw video toevoegt, moet u controleren of u al over het volgende beschikt:
+
+* Dynamic Media wordt ingesteld in een AEM omgeving.
+* A [ wordt het Videoprofiel van Dynamic Media toegepast op de omslag waar uw video&#39;s ](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders) worden opgenomen.
+* [ de multi-caption/audiosporen en AI-Gegenereerde titels worden toegelaten op uw rekening van Dynamic Media ](#enable-dash).
+
+Toegevoegde bijschriften worden ondersteund met de indelingen WebVTT en Adobe VTT. Toegevoegde audiotrackbestanden worden ook ondersteund in de MP3-indeling.
+
+>[!IMPORTANT]
+>
+>Voor video&#39;s die *vóór* worden geupload toelatend veelvoudige titel/audiospoorsteun of AI-Gegenereerde titels op uw rekening van Dynamic Media, [ u hen ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) moet opnieuw verwerken. Deze opwerkingsstap zorgt ervoor dat deze video&#39;s de functies voor meervoudige bijschriften/audiotracks en door AI gegenereerde bijschriften kunnen gebruiken. De video-URL&#39;s werken na het verwerken verder en worden op de gebruikelijke wijze afgespeeld.
+
+**om veelvoudige titels en audiosporen aan uw video toe te voegen:**
+
+1. [ uploadt uw primaire video aan een omslag ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) die reeds een videoprofiel heeft dat aan het wordt toegewezen.
+1. Navigeer naar het geüploade video-element waaraan u meerdere bijschriften en audiotracks wilt toevoegen.
+1. Selecteer het video-element in de modus voor selectie van elementen in de lijstweergave of de kaartweergave.
+1. Klik op het pictogram Eigenschappen op de werkbalk (een cirkel met een &quot;i&quot; erin).
+   ![ Geselecteerde videoactiva met controleteken over videoduimnagelbeeld en Eigenschappen van de Mening die op de toolbar worden benadrukt.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Geselecteerde videoactiva in de Mening van de Kaart.*
+1. Selecteer de tab **[!UICONTROL Captions & Audio Tracks]** op de pagina Eigenschappen van video.
+
+   >[!TIP]
+   >Als u het tabblad **[!UICONTROL Captions & Audio Tracks]** niet ziet, betekent dit een van de volgende twee dingen:
    >
-   >When you have completed either one of the above tasks, return to these steps.
-  
-   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Captions and audio tracks tab on the video's Properties page.*
+   >* Aan de map waarin de geselecteerde video zich bevindt, is geen videoprofiel toegewezen. In welk geval, zie [ een videoprofiel op de omslag ](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders) toepassen
+   >* Of Dynamic Media moet de video opnieuw verwerken. In welk geval, zie [ de activa van Dynamic Media in een omslag ](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) opnieuw verwerken.
+   >
+   >Als u een van de bovenstaande taken hebt uitgevoerd, gaat u terug naar deze stappen.
 
-1. To add one or more audio tracks to a video, do the following:
-   1. Select **[!UICONTROL Upload Audio Tracks]**.
-   1. Navigate to, and select, one or more .mp3 files and open them.
-   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
-    
-      | Audio Track metadata | Description |
+   ![ Bijschriften en Audiosporen lusje op de pagina van Eigenschappen.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   *Bijschriften en audiosporen lusje op de pagina van de Eigenschappen van de video.*
+
+1. Ga als volgt te werk om een of meer audiotracks aan een video toe te voegen:
+   1. Selecteer **[!UICONTROL Upload Audio Tracks]** .
+   1. Navigeer naar en selecteer een of meer MP3-bestanden en open deze.
+   1. Als u audiotracks wilt weergeven in de pop-uplijst van **[!UICONTROL Select audio or caption]** op de mediaspeler, moet u vereiste gegevens over elk audiotrackbestand toevoegen. Hiermee zorgt u ervoor dat alle audiotracks correct worden weergegeven en toegankelijk zijn. Selecteer het potloodpictogram rechts van de bestandsnaam van een audiotrack. In **geef Audiospoor** dialoogdoos uit, ga de volgende vereiste details in:
+
+      | Metagegevens audiotrack | Beschrijving |
       |--- |--- |
-      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
-      | Language | Select the correct language of the audio track. |
-      | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
-      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+      | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br> zelfde filename kan niet voor extra audiospoordossiers of titeldossiers worden gebruikt. |
+      | Taal | Selecteer de juiste taal van de audiotrack. |
+      | Type | Selecteer het type audiotrack dat u gebruikt.<br>**Origineel** - het audiospoor oorspronkelijk in bijlage aan de video en vertegenwoordigd als `[Original]` in het etiket met `English` taal die door gebrek wordt geselecteerd. Hoewel **[!UICONTROL Label]** en **[!UICONTROL Language]** kunnen worden gewijzigd in het dialoogvenster **[!UICONTROL Edit Audio Track]** , worden de oorspronkelijke waarden gebruikt als de primaire video opnieuw wordt verwerkt.<br>**Norm** - een toe:voegen-op audiospoor voor een taal buiten origineel.<br>**audiobeschrijving** - een audiospoor dat ook een beschrijvend verhaal van non-verbale acties en gebaren in de video omvat, die inhoud toegankelijker maken voor individuen die visueel gehandicapt zijn. |
+      | Label | De tekst die als naam van de audiotrack in de pop-uplijst **[!UICONTROL Select audio or caption]** in de mediaspeler wordt weergegeven. Het label is wat een klant ziet die met een audiotrack correspondeert. Bijvoorbeeld `English [Original]` . Het label van de audio die aan een video is gekoppeld, wordt standaard ingesteld op `[Original]` . |
 
-      You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+      U kunt deze metagegevens van de audiotrack indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
-   1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**.
-   1. Do one of the following:
-        * Repeat this process for each audio track file that you upload.
-        * Continue to the next step to add captions to a video.
+   1. Klik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL Save & Close]** op **[!UICONTROL Save]** .
+   1. Voer een van de volgende handelingen uit:
+      * Herhaal dit proces voor elk audiotrackbestand dat u uploadt.
+      * Ga verder met de volgende stap om bijschriften toe te voegen aan een video.
 
-1. To add one or more caption files to a video, choose which one of the following use cases best fits your scenario:
-   
-   |  | Use case | Create Caption option to use |
+1. Als u een of meer bijschriftbestanden aan een video wilt toevoegen, kiest u welke van de volgende gebruiksscenario&#39;s het beste bij uw scenario past:
+
+   |  | Hoofdletters gebruiken | Te gebruiken optie Bijschrift maken |
    | --- | --- | --- |
-   | **Option 1** | I have my own pre-existing caption files that are in the languages that I want to use.<br>See **Option 1** below. | **[!UICONTROL Upload Files]** |
-   | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
-   | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
+   | **Optie 1** | Ik heb mijn eigen bestaande bijschriftbestanden die in de talen staan die ik wil gebruiken.<br> zie **Optie 1** hieronder. | **[!UICONTROL Upload Files]** |
+   | **Optie 2** | Ik wil dat AI mijn bijschriftbestanden in meerdere talen genereert.<br> zie **Optie 2** hieronder. | **[!UICONTROL Convert audio tracks]** |
+   | **Optie 3** | Tekst in een bijschriftbestand (`.vtt`) moet worden gecorrigeerd, opnieuw worden geüpload om het oude `.vtt` -bestand te vervangen en het gecorrigeerde bestand vervolgens door AI laten vertalen.<br> zie **Optie 3** hieronder. | **[!UICONTROL Translate caption]** |
 
-    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-    *The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
+   ![ creeer de opties van Bijschriften.](/help/assets/dynamic-media/assets/msma-createcaption.png)
+   *creeer drop-down menu Bijschriften geeft u drie opties: Upload Dossiers, zet audiosporen om, en vertaal titel.*
 
-    +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
++++**Optie 1:** *ik heb mijn eigen reeds bestaande titeldossiers die in de talen zijn die ik* (**[!UICONTROL Upload Files]** optie) wil gebruiken
 
-    1. Near the upper-right side of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]**.
-    1. Navigate to, and select, one or more of your pre-existing `.vtt` files and open them.
-    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
-    
-        | Caption metadata | Description |
-        |--- |--- |
-        | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
-        | Language | Select the language of the caption. After a caption file is processed, this language field becomes uneditable (dimmed) |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises, speaker differentiation, and other relevant details, along with dialogue translation or transcription, enhancing accessibility for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+   1. Klik rechtsboven op de pagina op **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]** .
+   1. Navigeer naar en selecteer een of meer van uw bestaande `.vtt` -bestanden en open deze.
+   1. Voor titels om op de media speler zichtbaar te zijn, moet u ** de vereiste details over *toevoegen elk* titeldossier dat u uploadt. Selecteer het potloodpictogram rechts van de bestandsnaam van een bijschrift. In **geef de dialoogdoos van de Titel** uit, ga de volgende vereiste details over het dossier in:
 
-        You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+      | Metagegevens bijschrift | Beschrijving |
+      |--- |--- |
+      | Bestandsnaam | De standaardbestandsnaam wordt afgeleid van de oorspronkelijke bestandsnaam. De bestandsnaam kan alleen tijdens het uploaden worden gewijzigd en kan later niet worden gewijzigd. De vereisten voor bestandsnaamtekens zijn gelijk aan die voor AEM Assets.<br> zelfde filename kan niet voor extra titeldossiers en audiospoordossiers worden gebruikt. |
+      | Taal | Selecteer de taal van het bijschrift. Nadat een bijschriftbestand is verwerkt, kan dit taalveld niet meer worden bewerkt (grijs weergegeven) |
+      | Type | Selecteer het type bijschrift dat u gebruikt.<br>**Ondertitel** - de titeltekst die met de video wordt getoond die vertaalt of de dialoog transcripting.<br>**Titel** - de bijschrifttekst omvat achtergrondgeluiden, sprekersdifferentiatie, en andere relevante details, samen met dialoogvertaling of transcriptie, die toegankelijkheid voor individuen verbeteren die doof of hard zijn om te horen. |
+      | Label | De tekst die voor de naam van het bijschrift wordt weergegeven in de pop-uplijst **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld `English (CC)` . |
 
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
+      U kunt de metagegevens van bijschriften indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze details weerspiegeld op openbare URLs in gepubliceerde video&#39;s.
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+   1. Klik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL Save & Close]** op **[!UICONTROL Save]** . De dossiers worden geupload en de meta-gegevensverwerking begint, zoals gezien in de **kolom van de Status** van de interface.
 
-    1. If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
-    1. Continue to step 8.
+      >[!NOTE]
+      >
+      >Op basis van de cacheinstellingen van uw instantie kan het verwerken van metagegevens enkele minuten duren voordat dit effect wordt weerspiegeld in de voorvertoning en in gepubliceerde URL&#39;s.
 
-    +++
+   1. Als u **[!UICONTROL Save & Close]** hebt geselecteerd in de vorige stap in plaats van **[!UICONTROL Save]** te selecteren, kunt u nog steeds de verwerkingsstatus van de geüploade bestanden bekijken. Zie [ Mening de levenscyclusstatus van geupload titels en audiospoordossiers ](#lifecycle-status-video).
+   1. Ga verder met stap 8.
 
-    +++**Option 2:** *I want AI to generate my caption files in multiple languages* (**[!UICONTROL Convert audio tracks]** option)
++++
 
-    1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
++++**Optie 2:** *ik wil AI mijn titeldossiers in veelvoudige talen* produceren (**[!UICONTROL Convert audio tracks]** optie)
 
-        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
-        *The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
+   1. Klik rechtsboven op de pagina op **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]** .
 
-    1. In the **Convert Audio Tracks** dialog box, set the following options:
-    
-        | Option | Description |
-        |--- |--- |
-        | Audio track to convert | In the drop-down list, choose the uploaded audio track file from which you want captions generated using AI.  |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+      ![ zet audiosporen dialoogdoos om.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
+      *het de dialoogvakje van de Sporen van de Audio van de Bekeerling gebruikt AI om titeldossiers in veelvoudige talen te produceren.*
 
-    1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
-    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+   1. In **zet Audiosporen** dialoogdoos om, plaats de volgende opties:
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+      | Optie | Beschrijving |
+      |--- |--- |
+      | Om te zetten audiotrack | Kies in de vervolgkeuzelijst het geüploade audiotrackbestand waaruit u bijschriften wilt genereren met AI. |
+      | Uitvoertalen | Selecteer in de vervolgkeuzelijst een of meer talen waarin u het bijschriftbestand wilt weergeven.<br> om een geselecteerde taal te verwijderen, klik **X**.<br> tijdens videoplayback, verschijnt de lijst van talen in de media speler in de orde dat u hen hier selecteert. |
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+   1. Klik op **[!UICONTROL Done]**.
+   1. Klik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL Save & Close]** op **[!UICONTROL Save]** .
+   1. Klik nogmaals op de tab **[!UICONTROL Captions & Audio tracks]** . Één of meerdere titeldossiers worden gecreeerd en de verwerking begint, zoals gezien in de **kolom van de Status** van de interface. Zie ook [ Mening de levenscyclusstatus van geupload titels en audiospoordossiers ](#lifecycle-status-video).
 
-        | Caption metadata | Description |
-        | --- | --- |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+      >[!NOTE]
+      >
+      >Op basis van de cacheinstellingen van uw instantie kan het verwerken van metagegevens enkele minuten duren voordat dit effect wordt weerspiegeld in de voorvertoning en in gepubliceerde URL&#39;s.
 
-        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
-    1. Continue to step 8.
+   1. (Optioneel) Selecteer het potloodpictogram rechts van de bestandsnaam van een bijschrift. In **geef de dialoogdoos van de Titel** uit, kunt u de volgende details over het dossier uitgeven:
 
-    +++
+      | Metagegevens bijschrift | Beschrijving |
+      | --- | --- |
+      | Type | Selecteer het type bijschrift dat u gebruikt.<br>**Ondertitel** - de titeltekst die met de video wordt getoond die vertaalt of de dialoog transcripting.<br>**Titel** - de bijschrifttekst omvat achtergrondgeluiden en sprekersdifferentiatie. Het omvat ook andere relevante informatie, samen met de vertaling of transcriptie van de dialoog. Deze aanpak maakt de inhoud toegankelijker voor doven of slechthorenden. |
+      | Label | De tekst die voor de naam van het bijschrift wordt weergegeven in de pop-uplijst **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld `English (CC)` . |
 
-    +++**Option 3:** *Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file* (**[!UICONTROL Translate captions]** option)
+      U kunt bepaalde metagegevens van bijschriften indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze metagegevens weerspiegeld in openbare URL&#39;s in gepubliceerde video&#39;s.
+   1. Ga verder met stap 8.
 
-    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
++++
 
-        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
-        *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
++++**Optie 3:** *Tekst in een titeldossier (`.vtt`) moet worden verbeterd, opnieuw geüpload om het oude `.vtt` dossier te vervangen, dan AI hebben het gecorrigeerde dossier* vertalen (**[!UICONTROL Translate captions]** optie)
 
-    1. In the **Translate caption** dialog box, set the following options:
+   1. Klik op **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]** . Deze optie is beschikbaar als een of meer bijschriftbestanden al zijn toegevoegd en verwerkt.
 
-        | Option | Description |
-        |--- |--- |
-        | Caption to translate | In the drop-down list, choose a caption file from which you want the captions generated using AI. |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+      ![ vertaal de dialoogdoos van Bijschriften.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
+      *het Vertaalde de dialoogvakje van Bijschriften laat u een bestaand bijschriftdossier gebruiken om AI te hebben produceren nieuwe bijschriftdossiers in veelvoudige talen.*
 
-    1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
-    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+   1. In het **Vertaal caption** dialoogvakje, plaats de volgende opties:
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+      | Optie | Beschrijving |
+      |--- |--- |
+      | Te vertalen bijschrift | Kies in de vervolgkeuzelijst een bijschriftbestand waaruit u de bijschriften wilt genereren met behulp van AI. |
+      | Uitvoertalen | Selecteer in de vervolgkeuzelijst een of meer talen waarin u het bijschriftbestand wilt weergeven.<br> om een geselecteerde taal te verwijderen, klik **X**.<br> tijdens videoplayback, verschijnt de lijst van talen in de media speler in de orde dat u hen hier selecteert. |
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+   1. Klik op **[!UICONTROL Done]**.
+   1. Klik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL Save & Close]** op **[!UICONTROL Save]** .
+   1. Klik nogmaals op de tab **[!UICONTROL Captions & Audio tracks]** . Één of meerdere titeldossiers worden gecreeerd en de verwerking begint, zoals gezien in de **kolom van de Status** van de interface. Zie ook [ Mening de levenscyclusstatus van geupload titels en audiospoordossiers ](#lifecycle-status-video).
 
-        | Caption metadata | Description |
-        | --- | --- |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text also includes background noises, speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+      >[!NOTE]
+      >
+      >Op basis van de cacheinstellingen van uw instantie kan het verwerken van metagegevens enkele minuten duren voordat dit effect wordt weerspiegeld in de voorvertoning en in gepubliceerde URL&#39;s.
 
-        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
+   1. (Optioneel) Selecteer het potloodpictogram rechts van de bestandsnaam van een bijschrift. In **geef de dialoogdoos van de Titel** uit, kunt u de volgende details over het dossier uitgeven:
 
-    1. Continue to step 8.
+      | Metagegevens bijschrift | Beschrijving |
+      | --- | --- |
+      | Type | Selecteer het type bijschrift dat u gebruikt.<br>**Ondertitel** - de titeltekst die met de video wordt getoond die vertaalt of de dialoog transcripting.<br>**Titel** - de bijschrifttekst omvat ook achtergrondgeluiden, sprekersdifferentiatie. Het omvat ook andere relevante informatie, samen met de vertaling of transcriptie van de dialoog. Deze aanpak maakt de inhoud toegankelijker voor doven of slechthorenden. |
+      | Label | De tekst die voor de naam van het bijschrift wordt weergegeven in de pop-uplijst **[!UICONTROL Select audio or caption]** in de mediaspeler. Het label is wat een klant ziet die met een ondertitel of bijschrifttrack correspondeert. Bijvoorbeeld `English (CC)` . |
 
-    +++
+      U kunt bepaalde metagegevens van bijschriften indien nodig later wijzigen of bewerken. Wanneer de video wordt gepubliceerd, worden deze metagegevens weerspiegeld in openbare URL&#39;s in gepubliceerde video&#39;s.
 
-1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
-1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
+   1. Ga verder met stap 8.
 
--->
++++
+
+1. (Optioneel) Geef een voorvertoning van de video weer voordat u de video publiceert, zodat de bijschriften en audio naar behoren werken. Zie [ Voorproef een video die veelvoudige titels en audiosporen ](#preview-video-audio-subtitle) heeft.
+1. Publish the video. Zie [ de activa van Publish ](publishing-dynamicmedia-assets.md).
 
 #### Bijschrift- en audiotrackbestanden toevoegen aan een video die al is gepubliceerd
 
