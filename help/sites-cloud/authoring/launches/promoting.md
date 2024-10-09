@@ -5,7 +5,7 @@ exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
@@ -74,7 +74,9 @@ U kunt lanceringen van of de **console van Plaatsen** of de **console van Lancer
      >[!NOTE]
      >
      >Dit behandelt één enkele lancering, als u genestelde lanceringen zie [ Bevorderend een Genestelde Lancering ](#promoting-a-nested-launch).
+
 1. Selecteer **daarna** te werk te gaan.
+
 1. U kunt de pagina&#39;s bekijken die u wilt promoten. Deze zijn afhankelijk van het gekozen paginabereik:
 
    ![ bevordering van het Overzicht ](/help/sites-cloud/authoring/assets/launches-promote-review.png)

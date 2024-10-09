@@ -5,9 +5,9 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1077'
 ht-degree: 11%
 
 ---
@@ -153,7 +153,15 @@ Om een genestelde lancering van de **console van Plaatsen** tot stand te brengen
 
 Als u **Gereed** selecteert, keert u terug naar het spoor met **Referenties** van de **Sites**-console. Als u de juiste pagina selecteert, wordt de nieuwe startpagina weergegeven.
 
-### Een Starten verwijderen {#deleting-a-launch}
+### Een Starten klonen {#cloning-a-launch}
+
+U kunt een lancering van de [ lanceert console ](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) klonen:
+
+* Selecteer de start door op de miniatuur te tikken of te klikken.
+* De werkbalk wordt weergegeven. Selecteer Klonen.
+   * De kloon zal in de console worden getoond.
+
+## Een Starten verwijderen {#deleting-a-launch}
 
 U kunt een lancering van de [ lanceert console ](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) schrappen:
 

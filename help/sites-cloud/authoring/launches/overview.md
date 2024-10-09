@@ -5,9 +5,9 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '897'
 ht-degree: 4%
 
 ---
@@ -105,9 +105,13 @@ Met Launches kunt u:
 
 ## De opstartconsole {#the-launches-console}
 
-De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u op die vermelde handelen. De console is toegankelijk via:
+De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u op die vermelde handelen.
 
-* De **Console van Hulpmiddelen**: **Hulpmiddelen**, **Plaatsen**, **Lanceringen**.
+![ Console van de Lancering - beheer Inhoud ](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+De console is toegankelijk via:
+
+* De **Console van Hulpmiddelen**: **Hulpmiddelen**, **Algemeen**, **Lanceringen**.
 
 * **Console van Lanceringen** bij de bodem van de **sectie van Lanceringen** van de **Verwijzingen** spoor wanneer het navigeren van broninhoud in de console van Plaatsen.
 
@@ -116,6 +120,3 @@ De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u 
 * De **Starten** knoop bij het hoogste recht, wanneer het navigeren van lanceringsinhoud in de console van Plaatsen:
 
   ![ optie van Lanceringen in de console van Plaatsen ](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* of rechtstreeks, bijvoorbeeld met:
-  `https://<host>:<port>/libs/launches/content/launches.html`

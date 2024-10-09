@@ -5,7 +5,7 @@ exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -42,6 +42,7 @@ Als u een specifieke lancering selecteert, kunt u **dan selecteren leidt Inhoud*
 
 * De **Console van Plaatsen**:
 Als u een specifieke bronpagina selecteert en **Verwijzingen** opent, kunt u **Lanceringen** dan selecteren die door **wordt gevolgd beheert Inhoud**:
+
   ![ Console van de Lancering - beheer Inhoud ](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
   >[!NOTE]
