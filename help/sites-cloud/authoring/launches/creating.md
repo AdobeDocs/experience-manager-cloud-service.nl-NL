@@ -5,9 +5,9 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1100'
 ht-degree: 11%
 
 ---
@@ -159,7 +159,8 @@ U kunt een lancering van de [ lanceert console ](/help/sites-cloud/authoring/lau
 
 * Selecteer de start door op de miniatuur te tikken of te klikken.
 * De werkbalk wordt weergegeven. Selecteer Klonen.
-   * De kloon zal in de console worden getoond.
+   * De kloon zal in de console worden gecreeerd en worden getoond.
+   * De **Titel van de Lancering** zal erop wijzen dat het een kloon is. U kunt de titel bijwerken door de [ Configuratie van de Lancering ](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) uit te geven (**Eigenschappen**).
 
 ## Een Starten verwijderen {#deleting-a-launch}
 
