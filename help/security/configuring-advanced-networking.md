@@ -4,9 +4,9 @@ description: Leer hoe te om geavanceerde voorzien van een netwerkeigenschappen z
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
+source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
 workflow-type: tm+mt
-source-wordcount: '5675'
+source-wordcount: '5676'
 ht-degree: 0%
 
 ---
@@ -299,7 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>HTTP- of https-protocol</b></td>
-    <td>Verkeer naar Azure- of Adobe-services</td>
+    <td>Verkeer naar Azure (*.windows.net) of Adobe-services</td>
     <td>Alle</td>
     <td>Via de gedeelde clusterIPs (niet specifieke IP)</td>
     <td>adobe.io<br>api.windows.net</td>
