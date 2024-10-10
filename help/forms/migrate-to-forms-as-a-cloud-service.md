@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -64,8 +64,7 @@ Voor een soepele overgang van AEM Forms 6.5 naar AEM as a Cloud Service-omgeving
 
   ![ Droog Resultaat van de Looppas ](assets/enable-add-on.png)
 
-* In een Cloud Service-omgeving werkt het migratiehulpprogramma samen met het Hulpprogramma voor het toewijzen van gebruikersgegevens en het gereedschap voor het overbrengen van inhoud. Het migratiehulpprogramma maakt [!DNL AEM Forms] -elementen compatibel met Cloud Service en het gereedschap voor het overbrengen van inhoud migreert de inhoud van uw [!DNL AEM Forms] -omgeving naar een [!DNL AEM] as a Cloud Service omgeving. Alvorens het Nut van de Migratie te gebruiken, leer het proces van [ zich het bewegen aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Het proces heeft twee gereedschappen:
-   * [ Hulpmiddel van de Toewijzing van de Gebruiker ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): Het hulpmiddel van de Toewijzing van de Gebruiker helpt u uw gebruikers met de overeenkomstige gebruikersrekeningen van Adobe in kaart brengen IMS.
+* In een Cloud Service-omgeving werkt het migratiehulpprogramma in combinatie met het Content Transfer Tool. Het migratiehulpprogramma maakt [!DNL AEM Forms] -elementen compatibel met Cloud Service en het gereedschap voor het overbrengen van inhoud migreert de inhoud van uw [!DNL AEM Forms] -omgeving naar een [!DNL AEM] as a Cloud Service omgeving. Alvorens het Nut van de Migratie te gebruiken, leer het proces van [ zich het bewegen aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). Voor het proces wordt het volgende gereedschap gebruikt:
    * [ het Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): Het hulpmiddel van de Overdracht van de Inhoud helpt u voorbereidingen treffen en inhoud van bestaand milieu overbrengen aan een milieu van de Cloud Service. Hiermee kunnen gebruikers eenvoudig upgraden van AEM Forms naar de cloud-omgeving.
 * Accounts met beheerderrechten op [!DNL AEM Forms] as a Cloud Service en uw lokale [!DNL AEM Forms] omgeving.
 * De download en installeert Analysator van Beste praktijken, het Hulpmiddel van de Overdracht van de Inhoud, en [!DNL AEM Forms] Nut van de Migratie van [ het Portaal van de Distributie van de Software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
@@ -86,11 +85,9 @@ Voer de volgende stappen uit om uw [!DNL AEM Forms] -elementen compatibel te mak
 
    >[!NOTE]
    >
-   > Wanneer u van 6.5 naar de cloudservice migreert, wordt u aangeraden de gekloonde omgeving te gebruiken om het gereedschap Inhoud overbrengen en het migratiehulpprogramma uit te voeren. Met het hulpprogramma voor het overbrengen van inhoud en het migratiehulpprogramma wijzigt u de inhoud en elementen. Voer dus het gereedschap Inhoud overbrengen en het migratiehulpprogramma niet uit in een productieomgeving.
+   > Wanneer u van 6.5 naar de cloudservice migreert, wordt u aangeraden een gekloonde omgeving te gebruiken voor het uitvoeren van het gereedschap Inhoud overbrengen en het migratiehulpprogramma. Met het hulpprogramma voor het overbrengen van inhoud en het migratiehulpprogramma wijzigt u de inhoud en elementen. Voer dus het gereedschap Inhoud overbrengen of het migratiehulpprogramma niet uit in een productieomgeving.
 
 1. Meld u met beheerdersrechten aan bij uw gekloonde omgeving.
-
-1. Stel het [ Hulpmiddel van de Toewijzing van de Gebruiker in werking ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) om uw gebruikers met de overeenkomstige gebruikersrekeningen van Adobe in kaart te brengen IMS. U hebt Adobe IMS-gebruikersaccounts nodig om u aan te melden bij een [!DNL AEM Forms] as a Cloud Service instantie.
 
 1. Download en installeer het [ Hulpmiddel van de Overdracht van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) en [!DNL AEM Forms] as a Cloud Service Nut van de Migratie van [ het Portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) op het gekloonde milieu. U kunt AEM Package Manager gebruiken om het hulpmiddel en het nut te installeren.
 
