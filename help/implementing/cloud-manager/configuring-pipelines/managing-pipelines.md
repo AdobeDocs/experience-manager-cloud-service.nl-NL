@@ -6,9 +6,9 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -24,162 +24,171 @@ De **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** 
 
 ![ de kaart van Pijpleidingen in Cloud Manager ](/help/implementing/cloud-manager/assets/configure-pipeline/pipelines-card.png)
 
-Door de ellipsieknoop naast elke pijpleiding te klikken kunt u de volgende acties voeren.
+Door ![ Ellipse te klikken - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast elke pijpleiding, kunt u de volgende acties nemen:
 
-* [De pijplijn uitvoeren](#running-pipelines)
-* [De pijplijn bewerken](#editing-pipelines)
-* [De pijplijn verwijderen](#deleting-pipelines)
-* [Details weergeven](#view-details)
+* [Een pijplijn uitvoeren](#running-pipelines)
+* [Een pijplijn annuleren](#cancel)
+* [Een pijplijn bewerken](#editing-pipelines)
+* [Een pijplijn verwijderen](#deleting-pipelines)
+* [Bekijk laatste looppas details van een pijpleiding](#view-details)
 
-Onder aan de lijst met pijpleidingen staan algemene opties.
+Onder aan de lijst met pijpleidingen staan de volgende algemene opties:
 
-* **voeg** toe - aan [ voeg een nieuwe productiepijpleiding ](configuring-production-pipelines.md) toe of [ voeg nieuwe niet-productiepijpleiding ](configuring-non-production-pipelines.md) toe
+* **voeg** toe - [ om een nieuwe productiepijpleiding ](configuring-production-pipelines.md) toe of [ voeg een nieuwe niet-productiepijpleiding ](configuring-non-production-pipelines.md) toe toe te voegen
 * **toon allen** - neemt de gebruiker aan het scherm van Pijpleidingen om alle pijpleidingen in een meer gedetailleerde lijst te bekijken.
 * **Info van de Reactie van de Toegang** - Toont de informatie noodzakelijk om tot de git van Cloud Manager toegang te hebben bewaarplaats
 * **leer Meer** - navigeert aan CI/CD de middelen van de pijpleidingsdocumentatie.
 
-## Venster Pijpleidingen {#pipelines}
+## Pagina met pijplijnen {#pipelines}
 
-Het **venster van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Dit is nuttig aangezien het uitvoerigere informatie dan voorstelt wat in de [ Kaart van de Pijpleiding ](#pipeline-card) beschikbaar is.
+De **pagina van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Deze informatie is nuttig omdat het uitvoerigere informatie dan voorstelt wat in de [ kaart van de Pijpleiding ](#pipeline-card) beschikbaar is.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecteer het programma.
 
-1. Van de **pagina van het Overzicht van het 0} Programma, selecteer het** Pijpleidingen **lusje om aan het** venster van de Pijpleidingen **over te schakelen.**
+1. Van de **pagina van het Overzicht van het 0} Programma, klik ![ het lusje van de Pijpleiding - het pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)** Pijpleidingen **tabel.**
 
-1. Hier kunt u een lijst van alle pijpleidingen voor het programma zien en pijpleidingsuitvoering beginnen en tegenhouden zoals u in de **Kaart van Pijpleidingen**.
+1. Op de **pagina van Pijpleidingen**, kunt u een lijst van alle pijpleidingen voor het programma zien en pijpleiding beginnen en ophouden uitvoeren zoals u in de **Kaart van Pijpleidingen** zou doen.
 
-Als een pijpleiding uitvoert, die het informatiepictogram in de **kolom van de Status** klikken openbaart details over de uitvoering.
+Als een pijpleiding uitvoert, klik ![ Info - middelgroot pictogram ](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) in de **3} kolom van de Status {om een pop-up met details over de uitvoering te tonen.** Binnen pop-up, klik **details van de Mening** om de [ details van de pijpleidingsuitvoering ](#view-details) te zien.
 
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-Het klikken **details van de Mening** neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
 
-U kunt de elliptische knoop van de pijpleiding ook klikken om extra acties aangewezen aan de pijpleidingsstaat te nemen zoals [ het uitgeven ](#editing-pipelines) het of [ het annuleren van uitvoering ](#cancel).
+U kunt ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de pijpleiding ook klikken om extra acties aangewezen aan de pijpleidingsstaat te nemen zoals [ het uitgeven ](#editing-pipelines) of [ annulerend uitvoering ](#cancel).
 
 ![ Acties van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
-## Activiteitenvenster {#activity}
+## Activiteitenpagina {#activity}
 
-Het **venster van de Activiteit** toont een volledige lijst van alle pijpleidingen uitvoeringen voor het geselecteerde programma evenals andere belangrijke programmagebeurtenissen.
+De **pagina van de Activiteit** toont een volledige lijst van alle pijpleidingen uitvoeringen voor het geselecteerde programma evenals andere belangrijke programmagebeurtenissen.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht van het Programma**, selecteer het **lusje van de Activiteit** om aan het **venster van de Activiteit** over te schakelen.
+1. Van de **pagina van het Overzicht van het Programma**, in het zijmenu, klik ![ het pictogram van de Bell ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Activiteit**.
 
-1. Hier ziet u een lijst van alle pijpleiding uitvoeringen voor het programma met inbegrip van huidige en historische executies.
+1. In de **pagina van de Activiteit**, kunt u een lijst van alle pijpleidingsuitvoeringen voor het programma, met inbegrip van huidige en historische uitvoeringen zien.
 
-Als een pijpleiding uitvoert, zal het klikken van het informatiepictogram in de **kolom van de Status** details over de uitvoering openbaren.
+Als een pijpleiding uitvoert, kunt u ![ Info - middelgroot pictogram ](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) in de **3} kolom van de Status {klikken om een pop-up te tonen die u informatie over de uitvoering toont.**
 
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Tapping of het klikken van de rij die de pijpleidingsuitvoering vertegenwoordigt neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
+Klik de rij die de pijpleidingsuitvoering vertegenwoordigen om de [ details van de pijpleidingsuitvoering ](#view-details) te bekijken.
 
-U kunt de ellipsis knoop ook klikken om verdere actie op de pijpleidingsuitvoering, zoals mening zijn details of download het logboek, dat u aan de [ pagina van de pijpleidingsdetails ](#view-details) neemt.
+U kunt ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) ook klikken om extra actie op de pijpleidingsuitvoering, zoals mening zijn details of download het logboek, dat u aan de [ pagina van de pijpleidingsdetails ](#view-details) neemt.
 
 ![ de uitvoeringshandelingen van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
-## Lopende pijpleidingen {#running-pipelines}
+## Een pijplijn uitvoeren {#running-pipelines}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u uitgezocht **Looppas** van het menu in werking stelt.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma**.
 
-1. De pijpleidingslooppas begint en door de **Status** kolom wordt vermeld.
+1. Klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de pijpleiding die u in werking stelt.
 
-U kunt de details van de looppas zien door de ellipsknoop opnieuw te klikken en **[details van de Mening](#view-details)** te selecteren.
+1. Van het drop-down menu, klik ![ Looppas - het pictogram van het Spel ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PlayCircle_18_N.svg) **Looppas**.
 
-Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren door de ellipsknoop opnieuw te klikken en **te selecteren annuleert**.
+   De pijpleidingslooppas begint, en de **Status** kolom toont zijn vooruitgang.
+
+U kunt de details van de looppas zien door ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) opnieuw te klikken en **[details van de Mening](#view-details)** te klikken.
+
+Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren door ![ Ellipse te klikken - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) opnieuw en **te klikken annuleert**.
 
 ## Een pijplijn bewerken {#editing-pipelines}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u **uitgeven en dan selecteren** van het menu uitgeven.
-
-1. De **geeft de pijpleiding van de Productie uit** of **geeft niet-Productie pijplijn** dialoogvakvertoningen uit, latend u de zelfde details uit die u toen het creëren van de pijpleiding inging.
-
-   * Zie de volgende pagina&#39;s voor details over de gebieden en configuratieopties beschikbaar voor pijpleidingen.
-      * [Productiepijpleidingen configureren](configuring-production-pipelines.md)
-      * [Niet-productiepijpleidingen configureren](configuring-non-production-pipelines.md)
-
-1. Klik **Update** zodra u het uitgeven van de pijpleiding wordt gedaan.
-
->[!NOTE]
->
->U kunt een lopende pijpleiding niet uitgeven.
-
->[!NOTE]
->
->De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie [ een Privé Bewaarplaats in Cloud Manager ](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor details en de volledige lijst van beperkingen toevoegen.
-
-## Verwijderen van pijpleidingen {#deleting-pipelines}
+U kunt een pijpleiding uitgeven als het niet loopt.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u uitgezocht **Schrapping** van het menu in werking stelt.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma**.
+
+1. Klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de pijpleiding die u wilt uitgeven.
+
+1. Van het drop-down menu, geeft de klik **** uit.
+
+1. In **geef de Pijpleiding van de Productie uit** of **geeft niet-Productie pijplijn** dialoogdoos uit, geef de zelfde details uit die u toen het creëren van de pijpleiding inging.
+
+   Zie de volgende pagina&#39;s voor details over de gebieden en configuratieopties beschikbaar voor pijpleidingen.
+   * [Een productiepijpleiding configureren](configuring-production-pipelines.md)
+   * [Een niet-productiepijplijn configureren](configuring-non-production-pipelines.md)
+
+1. Wanneer u wordt gedaan, klik **Update**.
 
 >[!NOTE]
 >
->U kunt geen lopende pijpleiding schrappen.
+>De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie [ een Privé Bewaarplaats GitHub in Cloud Manager ](/help/implementing/cloud-manager/managing-code/private-repositories.md) voor details en de volledige lijst van beperkingen toevoegen.
 
-## Details van pipet weergeven {#view-details}
+## Een pijplijn verwijderen {#deleting-pipelines}
 
-U kunt de details van een pijpleiding bekijken om de status en de logboeken van zijn laatste looppas te zien.
-
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
-
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u uitgezocht **details van de Mening** van het menu in werking stelt.
-
-1. U wordt genomen aan de detailspagina van de lopende pijpleiding.
-
-![ details van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
-
-Van hier kunt u het statuut van de diverse stappen van de pijpleiding zien en bouwstijllogboeken voor kenmerkende doeleinden terugwinnen. Zie het document [ Opstellend Uw Code ](/help/implementing/cloud-manager/deploy-code.md) voor meer informatie over codeplaatsing en tests in werking stellen.
-
-Alle stappen in een pijpleidingsuitvoering worden getoond met degenen die nog niet uit grijs begonnen. De voltooide stappen tonen hun duur.
-
-Zodra een pijpleidingsstap volledig is, wordt een samenvatting voorgesteld.
-
-![ Overzicht van de Stap ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
-
-Selecteer de **verbinding van de Details van de Mening** om de **sectie van de Duur** te openbaren. Dit omvat de gemiddelde duur van de pijpleiding op basis van de historische trend voor dat programma.
-
-![ Duur ](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
-
-Als uw pijpleiding a **Code Scanning** stap bevatte, die kwesties opriep, kunt u de **knoop van de Details van de Download** tikken of klikken om een lijst van [ tests van de codekwaliteit ](/help/implementing/cloud-manager/code-quality-testing.md) te bekijken die niet overgegaan.
-
-![ de kwaliteitskwesties van de Code ](assets/managing-pipelines-code-quality-issues.png)
-
-De kolom van de Plaats van het Dossier van het A **Project** is beschikbaar in het Csv- dossier om op de plaats van de beledigende code te wijzen. Deze kolom is de project-relatieve weg, terwijl de **kolom van de Plaats van het 0} Dossier {wordt geproduceerd.**
-
-![ van het de aftasten van de code van het Project details ](assets/managing-pipelines-code-quality-details.png)
-
->[!NOTE]
->
->U kunt details van een pijpleiding slechts bekijken die loopt of minstens eens in werking is gesteld.
-
-## Pijpleidingen annuleren {#cancel}
-
-Als een pijpleiding in de bevestiging of bouwt beeldfase is kunt u veilig de pijpleidingslooppas annuleren.
+U kunt een pijpleiding schrappen als het niet loopt.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de pagina van het programmaoverzicht, klik de elliptische knoop van de pijpleiding u op de **kaart van de Pijpleidingen** wilt annuleren.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma**.
+
+1. Klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de pijpleiding die u in werking stelt.
+
+1. Van het drop-down menu, klik **Schrapping**.
+
+
+## Bekijk laatste looppas details van een pijpleiding {#view-details}
+
+U kunt de details van een pijpleiding controleren om de status en de logboeken van zijn meest recente looppas te bekijken. Nochtans, kunt u tot de details slechts toegang hebben als de pijpleiding momenteel loopt of minstens eens uitgevoerd is.
+
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma**.
+
+1. Van het drop-down menu, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de pijpleiding die u in werking stelt.
+
+1. Van het drop-down menu, klik **Mening laatste uitvoering**.
+
+   U wordt genomen aan de detailspagina van de lopende pijpleiding.
+
+   ![ details van de Pijpleiding ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
+
+   Van hier, kunt u het statuut van de diverse stappen van de pijpleiding zien en bouwstijllogboeken voor kenmerkende doeleinden terugwinnen. Zie [ Uw Code ](/help/implementing/cloud-manager/deploy-code.md) voor meer informatie over codeplaatsing en tests opstellen.
+
+   Alle stappen in een pijpleidingsuitvoering worden getoond met degenen die nog niet uit grijs begonnen. De voltooide stappen tonen hun duur.
+
+   Nadat een pijpleidingsstap volledig is, wordt een samenvatting voorgesteld.
+
+   ![ Overzicht van de Stap ](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
+
+1. Klik **details van de Mening** om de **sectie van de Duur** uit te breiden, waar u de gemiddelde duur van de pijpleiding kunt zien die op de historische tendensen van het programma wordt gebaseerd.
+
+   ![ Duur ](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+1. Als uw pijpleiding a **Code Scanning** stap omvatte die kwesties markeerde, klik **Details van de Download** om tot een lijst van [ tests van de codekwaliteit ](/help/implementing/cloud-manager/code-quality-testing.md) toegang te hebben die ontbrak om over te gaan.
+
+   ![ de kwaliteitskwesties van de Code ](assets/managing-pipelines-code-quality-issues.png)
+
+   Het CSV- dossier omvat de kolom van de Plaats van het Dossier van het a ****, die de weg aan de problematische code met betrekking tot het project toont. In tegenstelling, wijst de **kolom van de Plaats van het 0} Dossier op de Gegenereerde weg.**
+
+   ![ van het de aftasten van de code van het Project details ](assets/managing-pipelines-code-quality-details.png)
+
+## Een pijplijn annuleren {#cancel}
+
+U kunt de pijpleidingslooppas veilig annuleren als het in de bevestiging of bouwt beeldfase is.
+
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+
+1. Van de pagina van het programmaoverzicht, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de pijpleiding u op de **Pijpleidingen** kaart wilt annuleren.
 
    ![ het Kantelen van een pijpleiding ](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
-1. Selecteer **annuleren**.
+1. Klik **annuleren**.
 
-Alternatief kunt u een pijpleiding van de pagina van pijpleidingsdetails annuleren.
+Alternatief, kunt u een pijpleiding van de pagina van pijpleidingsdetails annuleren.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan het **lusje van de Pijpleidingen** van de **pagina van het Overzicht van het Programma** en selecteer de pijpleiding u wilt annuleren.
+1. Navigeer aan het ![ lusje van Pijpleidingen - het pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pijpleidingen** lusje van het **Overzicht van het Programma** pagina en selecteer de pijpleiding u wilt annuleren.
 
-1. U wordt genomen aan de detailspagina van de lopende pijpleiding.
+   U wordt genomen aan de detailspagina van de lopende pijpleiding.
 
    ![ annuleert de details van de Pijpleiding ](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
-1. Selecteer **annuleren**.
+1. Klik **annuleren**.

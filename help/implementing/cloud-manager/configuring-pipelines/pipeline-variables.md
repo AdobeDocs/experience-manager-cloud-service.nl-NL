@@ -5,87 +5,101 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
 
 # pijpleidingsvariabelen configureren {#configuring-pipeline-variables}
 
-Uw bouwstijlproces kan van specifieke configuratievariabelen afhangen die om in de git bewaarplaats ongepast zouden zijn te plaatsen of u kunt hen tussen pijpleidinguitvoeringen moeten variëren gebruikend de zelfde tak. Cloud Manager staat u toe om deze gegevens als pijpleidingsvariabelen te beheren.
+Uw bouwstijlproces zou op specifieke configuratievariabelen kunnen baseren die niet in de bewaarplaats van het Git zouden moeten worden opgeslagen. Of, kunt u hen tussen pijpleidingslooppas op de zelfde tak moeten aanpassen. Met Cloud Manager kunt u deze instellingen als pijpleidingvariabelen beheren.
 
 ## Pipetvariabelen {#pipeline-variables}
 
 Met Cloud Manager kunt u pijpleidingvariabelen op verschillende manieren configureren.
 
-* [Via de gebruikersinterface van Cloud Manager](#ui)
+* [De gebruikersinterface van Cloud Manager gebruiken](#ui)
 * [Cloud Manager CLI gebruiken](#cli)
 * [ Gebruikend Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
 
-Variabelen kunnen worden opgeslagen als normale tekst of in rust worden versleuteld. In beide gevallen worden variabelen binnen de ontwikkelomgeving beschikbaar gemaakt als een omgevingsvariabele waarnaar vervolgens kan worden verwezen vanuit het `pom.xml` -bestand of andere constructiescripts.
+Variabelen kunnen worden opgeslagen als normale tekst of in rust worden versleuteld. In beide gevallen worden variabelen binnen de ontwikkelomgeving beschikbaar gemaakt als een omgevingsvariabele, waarnaar vervolgens kan worden verwezen vanuit het `pom.xml` -bestand of andere constructiescripts.
 
-### Regels voor variabelenamen van pijplijnen {#naming-conventions}
+## Pijpvariabelen toevoegen via Cloud Manager {#ui}
 
-Namen van variabelen moeten voldoen aan de volgende conventies:
+De variabelen van de pijpleiding kunnen door het gebruikersinterface van Cloud Manager worden gevormd en worden beheerd. Zij helpen pijpleidingsbeheer stroomlijnen, vooral wanneer de variërende configuraties over verschillende stappen worden vereist.
 
-* Variabelen mogen alleen alfanumerieke tekens en het onderstrepingsteken (`_`) bevatten.
-* De namen moeten allemaal hoofdletters zijn.
-* Er is een grens van 200 variabelen per pijpleiding.
-* Elke naam moet 100 tekens of minder zijn.
-* Elke `string` variabelewaarde moet minder dan 2048 tekens zijn.
-* Elke waarde van een variabele van het type `secretString` moet uit maximaal 500 tekens bestaan.
-
-## Via de gebruikersinterface van Cloud Manager {#ui}
-
-De variabelen van de pijpleiding kunnen door middel van het gebruikersinterface van Cloud Manager worden gevormd en worden beheerd. U moet toestemmingen hebben om de pijpleiding uit te geven om, pijpleidingsvariabelen toe te voegen uit te geven en te schrappen.
+U moet toestemmingen hebben om de pijpleiding uit te geven om, pijpleidingsvariabelen toe te voegen uit te geven en te schrappen.
 
 Als een pijpleiding loopt, veranderlijk beheer wordt geblokkeerd.
 
-### Pijpleidingsvariabelen toevoegen {#add-ui}
+### Voeg een pijpleidingsvariabele toe {#add-ui}
 
-1. Wanneer [ het leiden van uw pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), de elliptische knoop van de pijpleiding klikt waarvoor u pijpleidingsvariabelen wilt tot stand brengen en **Mening/geef variabelen** van het contextmenu selecteren.
+1. Wanneer [ het leiden van uw pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de pijpleiding waarvoor u pijpleidingsvariabelen wilt tot stand brengen.
 
-   ![ Mening/geef pijpleidingsvariabelen uit ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
+1. Van het drop-down menu, klik **Mening/geef variabelen** uit.
 
-1. Het **venster van de Configuratie van Variabelen** opent. Ga de veranderlijke details in de eerste rij van de lijst in en de klik **voegt** toe.
+   ![ Mening/geef pijpleidingsvariabelen ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png) uit
 
-   * **de Naam van de Configuratie** is een uniek herkenningsteken voor uw variabele, die [ pijpleidingsvariabele het noemen overeenkomsten ](#naming-conventions) moet leiden.
-   * **Waarde** is de waarde die de variabele houdt.
-   * **Toegepaste Stap** is de stap in de pijpleiding waarop de variabele van toepassing is. Dit is verplicht.
-      * **bouwt**
-      * **Functionele het testen**
-      * **UI het testen**
-   * **Type** bepaalt als de variabele gewone tekst is of als geheim wordt gecodeerd.
+1. In het **de dialoogvakje van de Configuratie van Variabelen**, ga de details in de eerste rij van de lijst in.
+
+   | Veld | Beschrijving |
+   | --- | --- |
+   | Naam | A unique name of the configuration variable. Het identificeert de specifieke variabele die in de pijpleiding wordt gebruikt. De toepassing moet de volgende naamconventies in acht nemen:<ul><li>Variabelen mogen alleen alfanumerieke tekens en het onderstrepingsteken (`_`) bevatten.</li><li>De namen moeten allemaal hoofdletters zijn.</li><li>Er is een grens van 200 variabelen per pijpleiding.</li><li>Elke naam moet 100 tekens of minder zijn.</li><li>Elke `string` variabelewaarde moet minder dan 2048 tekens zijn.</li><li>Elke waarde van een variabele van het type `secretString` moet uit maximaal 500 tekens bestaan.</li></ul> |
+   | Waarde | De waarde die de variabele aanhoudt. |
+   | Toegepaste stap | Vereist. De stap in de pijpleiding waarop de variabele van toepassing is:<ul><li>**bouwt** - de variabele wordt toegepast tijdens het bouwstijlproces.</li><li>**Functioneel het testen** - de variabele wordt gebruikt tijdens de functionele het testen stap.</li><li>**UI het testen** - de variabele wordt gebruikt tijdens UI het testen fase.</li></ul> |
+   | Type | Selecteer deze optie als de variabele onbewerkte tekst is of als geheim is gecodeerd. |
 
    ![ voeg veranderlijke ](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png) toe
 
-1. De naam wordt aan de tabel toegevoegd. Voeg extra variabelen toe zoals vereist en dan ontken of klik **sparen** om de variabelen te bewaren u aan de pijpleiding toevoegde.
+1. Klik **toevoegen**.
 
-### Variabelen voor pijplijn bewerken {#edit-ui}
-
-1. Wanneer [ het leiden van uw pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), de elliptische knoop van de pijpleiding klikt waarvoor u pijpleidingsvariabelen wilt tot stand brengen en **Mening/geef variabelen** van het contextmenu selecteren.
-
-   ![ Mening/geef pijpleidingsvariabelen uit ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
-
-1. Het **venster van de Configuratie van Variabelen** opent. Klik de elliptische knoop van de variabele u **uitgeven en wilt selecteren** uitgeven.
-
-   ![ geef veranderlijke ](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png) uit
-
-1. Werk de waarde van de variabele zoals vereist bij en klik **** (het controleteken aan het eind van de rij) van toepassing is om de verandering toe te passen of **verwerpen** (de achterste pijl) om de verandering terug te keren.
-
-   * Alleen de waarde van de variabele kan worden bewerkt.
-
-   ![ Uitgevend een variabele ](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
+   Voeg zo nodig extra variabelen toe.
 
 1. Klik **sparen**.
 
-Als u een variabele wilt schrappen, uitgezocht **Schrapping** in plaats van **geef** van het ellipsmenu van de pijpleidingsvariabele in het **venster van de Configuratie van Variabelen** uit.
+### Een pijpleidingsvariabele bewerken {#edit-ui}
 
-## Cloud Manager CLI gebruiken {#cli}
+1. Wanneer [ het leiden van uw pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de pijpleiding waarvoor u pijpleidingsvariabelen wilt uitgeven.
 
-Dit CLI bevel plaatst een variabele.
+1. In het drop-down menu, klik **Mening/geef variabelen** uit.
+
+   ![ Mening/geef pijpleidingsvariabelen ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png) uit
+
+1. In het **de dialoogvakje van de Configuratie van Variabelen 0} {, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de variabele die u wilt veranderen.**
+
+1. In het drop-down menu, geeft de klik **** uit.
+
+   ![ geef veranderlijke ](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png) uit
+
+1. Werk de waarde van de variabele bij zoals vereist.
+
+   Alleen de waarde van de variabele kan worden gewijzigd.
+
+1. Voer een van de volgende handelingen uit:
+
+   * Klik ![ toepassen - het pictogram van het Vinkje ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) om de verandering toe te passen.
+   * Klik ![ ongedaan maken pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) om de verandering terug te keren.
+
+1. Klik **sparen**.
+
+### Een pijpleidingsvariabele verwijderen {#delete-ui}
+
+1. Wanneer [ het leiden van uw pijpleidingen ](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de pijpleiding waarvoor u pijpleidingsvariabelen wilt schrappen.
+
+1. In het drop-down menu, klik **Mening/geef variabelen** uit.
+
+   ![ Mening/geef pijpleidingsvariabelen ](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png) uit
+
+1. In het **de dialoogvakje van de Configuratie van Variabelen 0} {, klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van de variabele u wilt verwijderen.**
+
+1. In het drop-down menu, klik **Schrapping**.
+
+
+## De pijpleidingsvariabelen van de reeks gebruikend Cloud Manager CLI {#cli}
+
+Dit bevel in CLI (de Interface van de Lijn van het Bevel) plaatst een variabele.
 
 ```shell
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
@@ -97,7 +111,7 @@ Deze opdracht geeft een overzicht van variabelen.
 $ aio cloudmanager:list-pipeline-variables PIPELINEID
 ```
 
-Bij gebruik in een Maven `pom.xml` -bestand is het doorgaans handig om deze variabelen toe te wijzen aan Maven-eigenschappen met een vergelijkbare syntaxis.
+Bij gebruik in een Maven `pom.xml` -bestand is het vaak handig om deze variabelen te koppelen aan Maven-eigenschappen met een syntaxis die lijkt op het volgende voorbeeld:
 
 ```xml
         <profile>

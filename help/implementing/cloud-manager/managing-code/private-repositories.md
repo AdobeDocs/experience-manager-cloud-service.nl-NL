@@ -1,17 +1,17 @@
 ---
-title: Particuliere GitHub-opslagplaatsen toevoegen in Cloud Manager
+title: Een persoonlijke GitHub-opslagplaats toevoegen in Cloud Manager
 description: Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarplaatsen te werken GitHub.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
 
-# Persoonlijke GitHub-opslagruimten toevoegen in Cloud Manager {#private-repositories}
+# Een persoonlijke GitHub-opslagplaats toevoegen in Cloud Manager {#private-repositories}
 
 Door vestiging Cloud Manager om met uw privé bewaarplaatsen te integreren GitHub, kunt u uw code direct binnen GitHub bevestigen gebruikend Cloud Manager. Deze configuratie verwijdert de vereiste om uw code regelmatig te synchroniseren met de opslagplaats van de Adobe.
 
@@ -48,7 +48,7 @@ De configuratie van een privé bewaarplaats GitHub in Cloud Manager bestaat uit 
 
    ![ de pagina van Bewaarplaatsen ](/help/implementing/cloud-manager/managing-code/assets/repositories-tab.png)
 
-1. Vlak de hoger-juiste hoek van de **pagina van Respositories**, klik **toevoegen Bewaarplaats**.
+1. Vlak de hoger-juiste hoek van de **pagina van Bewaarplaatsen**, klik **toevoegen Bewaarplaats**.
 
 1. In **voeg de dialoogdoos van de Bewaarplaats** toe, uitgezochte **Privé Bewaarplaats** als bewaarplaatstype.
 
@@ -58,12 +58,12 @@ De configuratie van een privé bewaarplaats GitHub in Cloud Manager bestaat uit 
 
    | Veld | Beschrijving |
    | --- | --- |
-   | Naam opslagplaats | Een expressieve naam voor uw nieuwe opslagruimte. |
+   | Naam opslagplaats | Een expressieve naam voor uw nieuwe opslagplaats. |
    | URL opslagplaats | De URL van de privéopslagplaats, die moet eindigen in `.git`.<br> bijvoorbeeld, *`https://github.com/org-name/repo-name.git`* (De weg URL is slechts voor illustratiedoeleinden). |
    | Beschrijving (optioneel) | Een gedetailleerde beschrijving van de gegevensopslagruimte. |
 
 1. Selecteer **sparen**.
-Nu kunt u [ eigendom van de privé bewaarplaats ](#validate-ownership) bevestigen.
+Nu, kunt u [ eigendom van de privé bewaarplaats ](#validate-ownership) bevestigen.
 
 >[!TIP]
 >
