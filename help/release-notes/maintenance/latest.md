@@ -4,9 +4,9 @@ description: De huidige Nota's van de Versie van het Onderhoud van  [!DNL Adobe 
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
+source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 In het volgende gedeelte worden de opmerkingen bij de technische release voor de huidige onderhoudrelease van Experience Manager as a Cloud Service beschreven.
 
-## Release 18099 {#release-18099}
+## Release 18175 {#release-18175}
 
-Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 18099 samengevat, die op 9 oktober 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 17964.
+Hieronder worden de voortdurende verbeteringen voor onderhoudsrelease 18175 samengevat, die op 10 oktober 2024 openbaar werd gemaakt. De vorige onderhoudsrelease was release 17964. Release 18099 is privé gemaakt vanwege een uitgave.
 
 De activering van de 2024.10.0-functie biedt de volledige functie die is ingesteld voor deze onderhoudsrelease. Zie de [ Experience Manager geeft Roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) voor meer informatie vrij.
 
-### Verbeteringen {#enhancements-18099}
+### Verbeteringen {#enhancements-18175}
 
 * ASSETS-38322: Het toelaten van de gebeurtenis van het HTTP- verzoek voor AEM.
 * ASSETS-41448: Update auth.ims bundle om FI aan groepstoewijzingen te steunen.
@@ -56,12 +56,11 @@ De activering van de 2024.10.0-functie biedt de volledige functie die is ingeste
 * SKYOPS-85336: Update Sling Commons Threads to 3.3.0.
 * SKYOPS-86329: het bijwerken van versies van platformtestmodules voor java 21 sdk steun.
 
-### Opgeloste problemen {#fixed-issues-18099}
+### Opgeloste problemen {#fixed-issues-18175}
 
 * CNTBF-298: verwijder jcr:uid uit CC-geëxporteerde pakketten.
 * SKYOPS-83910: Los problemen met gelijktijdige uitvoering op die in SKYOPS-82371 zijn aangetroffen.
 * GRANITE-52876: Bijwerken naar com.adobe.granite.ui.content 0.8.1448.
-* GRANITE-53088: Regressie ingevoerd bij de vaststelling van SITES-1992.
 * GUIDEN-14445: De inheemse generatie van PDF ontbreekt met een fout met betrekking tot het krijgen van gebiedsdelen voor Node.js.
 * HULPLIJNEN-16961: De titel met `<conref>` lost niet in Baseline en de Vertaaldashboards van de Redacteur van het Web op.
 * HULPLIJNEN-17283: Wanneer het selecteren van de **meta-gegevens van het Gebruik die in de topicmeta** optie worden toegevoegd, worden de meta-gegevenseigenschappen niet verspreid in de documenteigenschappen van de inheemse output van PDF.
@@ -69,11 +68,11 @@ De activering van de 2024.10.0-functie biedt de volledige functie die is ingeste
 
 Voor meer informatie over de nieuwe en verbeterde eigenschappen en de kwesties van Gidsen die in de versie worden bevestigd, bekijk de [ versie van Experience Manager Guides roadmap ](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Bekende problemen {#known-issues-18099}
+### Bekende problemen {#known-issues-18175}
 
 * FORMS-15818: Component descriptor-item `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` niet gevonden instructies in serverlogboeken. Dit zijn ongevaarlijke loginstructies.
 
-### Verouderde functies en API&#39;s {#deprecated-18099}
+### Verouderde functies en API&#39;s {#deprecated-18175}
 
 Vervangen en verwijderde eigenschappen en APIs in AEM as a Cloud Service zijn gedetailleerd in [ Vervangen en Verwijderde Eigenschappen en APIs ](/help/release-notes/deprecated-removed-features.md) document.
 
@@ -93,11 +92,11 @@ Houd er rekening mee dat de Adobe bezig is met het bijwerken van `com.day.cq.wcm
 
 * GRANITE-54165: Deprecate org.apache.jackrabbit.oak.plugins.blob in public API.
 
-### Beveiligingsproblemen {#security-18099}
+### Beveiligingsproblemen {#security-18175}
 
 AEM as a Cloud Service is gewijd aan het optimaliseren van de beveiliging en prestaties van uw platform. Deze onderhoudrelease verhelpt twee geïdentificeerde kwetsbaarheden en versterkt onze inzet voor robuuste systeembescherming.
 
-### Ingesloten technologieën {#embedded-tech-18099}
+### Ingesloten technologieën {#embedded-tech-18175}
 
 | Technologie | Versie | Koppeling |
 |---|---|---|
