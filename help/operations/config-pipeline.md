@@ -3,13 +3,13 @@ title: Config Pipelines gebruiken
 description: Leer hoe u config pijpleidingen kunt gebruiken om verschillende configuraties AEM as a Cloud Service zoals logboek op te stellen door:sturen montages, zuivert-verwante onderhoudstaken, en diverse configuraties CDN.
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
+source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
-
 
 # Config Pipelines gebruiken {#config-pipelines}
 
@@ -38,7 +38,7 @@ De volgende lijst biedt een uitvoerige lijst van dergelijke configuraties met ve
 | [ Regels van de Filter van het Verkeer, met inbegrip van WAF ](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Declareer regels om kwaadwillig verkeer te blokkeren |
 | [ Transformaties van het Verzoek ](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Declareer regels om de vorm van het verkeersverzoek om te zetten |
 | [ Transformaties van de Reactie ](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Declareer regels om de vorm van de reactie voor een bepaald verzoek om te zetten |
-| [ Cliënt-kant richt ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Declareer 301/302-stijl cliënt-zijomleidingen [ (beschikbaar aan vroege adopters slechts) ](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [ Cliënt-kant richt ](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Declareer 301/302-stijl cliënt-zijomleidingen |
 | [ de Selecteurs van de Oorsprong ](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Verklaar regels om verkeer aan verschillende achtergronden, met inbegrip van niet Adobe toepassingen te leiden |
 | [ CDN foutenpagina&#39;s ](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Overschrijf de standaardfoutenpagina als AEM oorsprong niet kan worden bereikt, verwijzend de plaats van zelf-ontvangen statische inhoud in het configuratiedossier |
 | [ CDN zuiveren ](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Declareer de Leegmaken API-sleutels die worden gebruikt om de CDN op te lossen |
