@@ -4,7 +4,7 @@ description: Leer de richtlijnen en de beste werkwijzen voor het gebruik van het
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 11%
@@ -52,7 +52,7 @@ De algemene formule voor het berekenen van de vereiste vrije schijfruimte is als
 * *Grootte van node-opslagplaats*: De grootte van de segmentopslagdirectory of de grootte van de MongoDB-database.
 Voor een segmentopslagplaats van 20 GB is dus 94 GB aan vrije schijfruimte vereist.
 
-* Een migratieset moet gedurende de gehele activiteit van de inhoudsoverdracht worden gehandhaafd om de aanvulling van de inhoud te steunen. Er kunnen maximaal 20 migratiesets per project in Cloud Acceleration Manager worden gemaakt en onderhouden op een moment tijdens de activiteit voor inhoudsoverdracht. Als er meer dan 20 migratiesets nodig zijn, maakt u een tweede project in Cloud Acceleration Manager. Dit vereist echter extra projectbeheer en beheer buiten het product om te voorkomen dat inhoud op het doel door meerdere gebruikers wordt overschreven.
+* Een migratieset moet gedurende de gehele activiteit van de inhoudsoverdracht worden gehandhaafd om de aanvulling van de inhoud te steunen. Er kunnen maximaal 10 migratiesets per project in Cloud Acceleration Manager worden gemaakt en onderhouden tijdens de activiteit voor het overbrengen van inhoud. Als er meer dan tien migratiesets nodig zijn, maakt u een tweede project in Cloud Acceleration Manager. Dit vereist echter extra projectbeheer en beheer buiten het product om te voorkomen dat inhoud op het doel door meerdere gebruikers wordt overschreven.
 
 * Wijzig de installatiemap van het gereedschap CTT niet. Standaard vindt de installatie plaats in het crx-quickstart/cloud-migratiepad. Deze specifieke locatie wordt intern gebruikt door andere bibliotheken. Als u dit pad wijzigt, kan dit leiden tot extractieproblemen.
 
