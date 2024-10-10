@@ -5,9 +5,9 @@ feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 solution: Experience Manager
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 3096436f8057833419249d51cb6c15e6c28e9e13
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,13 @@ Dit wordt gedaan door een aangewezen configuratie OSGi voor de Filter toe te voe
 
 De bestandsnaam moet `org.apache.sling.security.impl.ReferrerFilter.cfg.json` zijn.
 
+## Voorbeeldconfiguratie {#example-configuration}
+
 Als u bijvoorbeeld toegang wilt verlenen voor aanvragen bij de Referenter `my.domain` , kunt u:
+
+>[!CAUTION]
+>
+>Dit is een eenvoudig voorbeeld dat de standaardconfiguratie kan overschrijven. U moet ervoor zorgen dat productupdates altijd op om het even welke aanpassingen worden toegepast.
 
 ```xml
 {
@@ -52,16 +58,28 @@ Als u bijvoorbeeld toegang wilt verlenen voor aanvragen bij de Referenter `my.do
 }
 ```
 
->[!CAUTION]
->
->De klant blijft verantwoordelijk voor:
->
->* alleen toegang verlenen tot vertrouwde domeinen
->* ervoor zorgen geen gevoelige informatie wordt blootgesteld
->* Gebruik geen vervangingswaarde [ * ] syntaxis; dit zal zowel voor authentiek verklaarde toegang tot het eindpunt van GraphQL onbruikbaar maken als het aan de volledige wereld blootstellen.
+## Gegevensbeveiliging {#data-security}
 
 >[!CAUTION]
 >
->Alle schema&#39;s van GraphQL [ ](#schema-generation) (die uit de Modellen van het Fragment van de Inhoud worden afgeleid die **** zijn toegelaten) zijn leesbaar door het eindpunt van GraphQL.
->
->Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden uitgelekt; dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
+>Het blijft uw verantwoordelijkheid om de volgende punten volledig aan te pakken.
+
+Om ervoor te zorgen dat uw gegevens veilig blijven, moet u ervoor zorgen dat:
+
+* de toegang wordt **slechts** verleend aan vertrouwde op domeinen
+
+* de vervanging [`*`] syntaxis in **niet** gebruikte; dit maakt allebei voor authentiek verklaarde toegang tot het eindpunt van GraphQL onbruikbaar, en stelt het ook aan de volledige wereld bloot
+
+* De gevoelige informatie wordt **nooit** blootgesteld; noch direct, noch onrechtstreeks:
+
+   * Bijvoorbeeld, zijn alle [ schema&#39;s van GraphQL ](/help/headless/graphql-api/content-fragments.md#schema-generation):
+
+      * afgeleid uit de Modellen van het Fragment van de Inhoud die **** zijn toegelaten
+
+     **en**
+
+      * zijn leesbaar door het eindpunt van GraphQL
+
+     Dit betekent dat informatie die in de modeldefinitie als veldnamen voorkomt, beschikbaar kan komen.
+
+U moet ervoor zorgen dat er op geen enkele wijze gevoelige gegevens beschikbaar zijn, dus dergelijke details moeten zorgvuldig in overweging worden genomen.
